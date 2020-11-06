@@ -5,12 +5,12 @@ ms.date: 07/27/2020
 ms.topic: conceptual
 dev_langs:
 - CPP
-ms.openlocfilehash: a041ecd4053360ebfc0da198efe9a3decb73ffd2
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 4fb06b0f78c93e6b76e0b8d64d7dfbdc541cf299
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924788"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334149"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>C++ Temel Yönergeleri denetleyicilerini kullanma
 
@@ -130,7 +130,7 @@ C++ Temel Yönergeleri denetleyicisi 'ne yeni kurallar eklendikçe, önceden var
 
 - **Numaralandırma kuralları** : Bu kurallar [, C++ temel yönergeleri Enum ile ilgili denetimleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-enum)uygular. <sup>16,3</sup>
 
-- **Deneysel kurallar** Bunlar, çok yararlı olan ancak günlük kullanıma yönelik olmayan C++ Temel Denetimi kurallardır. Bunları deneyin ve [geri bildirim sağlayın](https://developercommunity.visualstudio.com/content/idea/post.html?space=62). <sup>16,0</sup>
+- **Deneysel kurallar** Bunlar, çok yararlı olan ancak günlük kullanıma yönelik olmayan C++ Temel Denetimi kurallardır. Bunları deneyin ve [geri bildirim sağlayın](https://aka.ms/feedback/suggest?space=62). <sup>16,0</sup>
 
 - **Işlev kuralları** : belirticinin benimsenmesine yardımcı olan iki denetim **`noexcept`** . [Açık işlev tasarımı ve uygulamasıyla](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)ilgili yönergelerin bir parçasıdır. <sup>15,5</sup>
 

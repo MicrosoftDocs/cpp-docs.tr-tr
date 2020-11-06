@@ -7,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1104
 ms.assetid: 9ca6f929-0efc-4055-8354-3cf5b4e636dc
-ms.openlocfilehash: aa7bcf34cddfa24956d807131b3c484e7d580e73
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2eea6885537037db496a2f42e0fff0ffa69127e3
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506031"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334214"
 ---
 # <a name="linker-tools-error-lnk1104"></a>Bağlayıcı Araçları Hatası LNK1104
 
-> '*filename*' dosyası açılamıyor
+> ' *filename* ' dosyası açılamıyor
 
 Bu hata, bağlayıcı dosyayı okumak ya da yazmak için bir dosya açamazsa raporlanır. Sorunun en yaygın iki nedeni şunlardır:
 
@@ -40,11 +40,11 @@ Virüsten koruma programları genellikle yeni oluşturulan dosyalara, özellikle
 
 ### <a name="windows-libraries-such-as-kernel32lib"></a>Kernel32. lib gibi Windows kitaplıkları
 
-Açılamadığı dosya Microsoft tarafından sunulan standart kitaplık dosyalarından biri olan *Kernel32. lib*gibi bir proje yapılandırma hatası veya yükleme hatası olabilir. Windows SDK yüklendiğini doğrulayın. Projeniz MFC gibi başka Microsoft kitaplıkları gerektiriyorsa, MFC bileşenlerinin Visual Studio yükleyicisi tarafından da yüklendiğinden emin olun. Dilediğiniz zaman isteğe bağlı bileşenler eklemek için yükleyiciyi yeniden çalıştırabilirsiniz. Daha fazla bilgi için bkz. [Visual Studio 'Yu değiştirme](/visualstudio/install/modify-visual-studio). Belirli kitaplıkları ve SDK 'Ları seçmek için yükleyicideki **bireysel bileşenler** sekmesini kullanın.
+Açılamadığı dosya Microsoft tarafından sunulan standart kitaplık dosyalarından biri olan *Kernel32. lib* gibi bir proje yapılandırma hatası veya yükleme hatası olabilir. Windows SDK yüklendiğini doğrulayın. Projeniz MFC gibi başka Microsoft kitaplıkları gerektiriyorsa, MFC bileşenlerinin Visual Studio yükleyicisi tarafından da yüklendiğinden emin olun. Dilediğiniz zaman isteğe bağlı bileşenler eklemek için yükleyiciyi yeniden çalıştırabilirsiniz. Daha fazla bilgi için bkz. [Visual Studio 'Yu değiştirme](/visualstudio/install/modify-visual-studio). Belirli kitaplıkları ve SDK 'Ları seçmek için yükleyicideki **bireysel bileşenler** sekmesini kullanın.
 
 ### <a name="versioned-vcruntime-libraries"></a>Sürümlü vcruntime kitaplıkları
 
-Hata iletisinde *Msvcr120. lib*gibi sürümlenmiş bir Microsoft kitaplığı varsa, bu derleyici sürümü için platform araç takımı yüklü olmayabilir. Bu sorunu onarmak için iki seçeneğiniz vardır: projeyi geçerli platform araç takımını kullanmak üzere yükseltin veya eski araç takımını yükleyip projeyi değiştirilmemiş olarak derleyin. Daha fazla bilgi için, bkz. [Visual C++ önceki sürümlerinden projeleri yükseltme](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) ve [Eski projeler oluşturmak için Visual Studio 'da yerel çoklu sürüm hedefleme kullanma](../../porting/use-native-multi-targeting.md).
+Hata iletisinde *Msvcr120. lib* gibi sürümlenmiş bir Microsoft kitaplığı varsa, bu derleyici sürümü için platform araç takımı yüklü olmayabilir. Bu sorunu onarmak için iki seçeneğiniz vardır: projeyi geçerli platform araç takımını kullanmak üzere yükseltin veya eski araç takımını yükleyip projeyi değiştirilmemiş olarak derleyin. Daha fazla bilgi için, bkz. [Visual C++ önceki sürümlerinden projeleri yükseltme](../../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md) ve [Eski projeler oluşturmak için Visual Studio 'da yerel çoklu sürüm hedefleme kullanma](../../porting/use-native-multi-targeting.md).
 
 ### <a name="retail-debug-or-platform-specific-libraries"></a>Perakende, hata ayıklama veya platforma özgü kitaplıklar
 
@@ -52,11 +52,11 @@ Yeni bir hedef platform veya bir yapılandırma (perakende ya da ARM64 gibi) iç
 
 ### <a name="the-vccorliblib-library"></a>Vccorlib. lib kitaplığı
 
-Evrensel Windows (UWP) uygulamaları veya bileşenleri için Spectre ile hafiflemesiz kitaplıklar yoktur. Hata iletisi *vccorlib. lib*IÇERIYORSA, UWP projesinde [/Qspectre](../../build/reference/qspectre.md) 'i etkinleştirmiş olabilirsiniz. Bu sorunu onarmak için **/Qspectre** derleyici seçeneğini devre dışı bırakın. Visual Studio 'da **Spectre azaltma** özelliğini değiştirin. Proje özellik sayfaları iletişim kutusunun **C/C++**  >  **kod üretimi** sayfasında bulunur. **Property Pages**
+Evrensel Windows (UWP) uygulamaları veya bileşenleri için Spectre ile hafiflemesiz kitaplıklar yoktur. Hata iletisi *vccorlib. lib* IÇERIYORSA, UWP projesinde [/Qspectre](../../build/reference/qspectre.md) 'i etkinleştirmiş olabilirsiniz. Bu sorunu onarmak için **/Qspectre** derleyici seçeneğini devre dışı bırakın. Visual Studio 'da **Spectre azaltma** özelliğini değiştirin. Proje özellik sayfaları iletişim kutusunun **C/C++**  >  **kod üretimi** sayfasında bulunur. **Property Pages**
 
 ### <a name="libraries-in-projects-from-online-or-other-sources"></a>Çevrimiçi veya diğer kaynaklardan gelen projelerde kitaplıklar
 
-Başka bir bilgisayardan kopyalanmış bir proje oluşturursanız, kitaplık yükleme konumları farklı olabilir. Komut satırı derlemeleri için, LıB ortam değişkeninin ve kitaplık yollarının derleme için doğru şekilde ayarlandığını doğrulayın. Visual Studio 'da, projenizin özellik sayfalarında ayarlanmış geçerli kitaplık yollarını görebilir ve düzenleyebilirsiniz. **VC + + dizinleri** sayfasında, **kitaplık dizinleri** özelliği için açılan denetimi seçin ve ardından **Düzenle**' yi seçin. **Kitaplık dizinleri** Iletişim kutusunun **değerlendirilen değer** bölümü, kitaplık dosyaları için aranan geçerli yolları listeler. Bu yolları yerel kitaplıklarınıza işaret etmek için güncelleştirin.
+Başka bir bilgisayardan kopyalanmış bir proje oluşturursanız, kitaplık yükleme konumları farklı olabilir. Komut satırı derlemeleri için, LıB ortam değişkeninin ve kitaplık yollarının derleme için doğru şekilde ayarlandığını doğrulayın. Visual Studio 'da, projenizin özellik sayfalarında ayarlanmış geçerli kitaplık yollarını görebilir ve düzenleyebilirsiniz. **VC + + dizinleri** sayfasında, **kitaplık dizinleri** özelliği için açılan denetimi seçin ve ardından **Düzenle** ' yi seçin. **Kitaplık dizinleri** Iletişim kutusunun **değerlendirilen değer** bölümü, kitaplık dosyaları için aranan geçerli yolları listeler. Bu yolları yerel kitaplıklarınıza işaret etmek için güncelleştirin.
 
 ### <a name="updated-windows-sdk-libraries"></a>Windows SDK kitaplıkları güncelleştirildi
 
@@ -82,7 +82,7 @@ Oluşturduğunuz yapılandırmaların her birinde gerekli olan tüm kitaplık s�
 
 Bağlayıcı ona erişmeyi denediğinde *dosya adı* henüz yoksa bu hatayı görebilirsiniz. Bir proje çözümdeki başka bir projeye bağımlıysa, ancak projeler yanlış sırada derleniyorsa bu durum oluşabilir. Bu sorunu onarmak için, proje başvurularınızın dosyayı kullanan projede ayarlandığından emin olun. Daha sonra, eksik dosya, gerekli olmadan önce oluşturulmuştur. Daha fazla bilgi için bkz. [Visual Studio C++ projelerinde başvuruları ekleme](../../build/adding-references-in-visual-cpp-projects.md) ve [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).
 
-## <a name="cannot-open-file-cprogramobj"></a>' C: \\ program. obj ' dosyası açılamıyor
+## <a name="cant-open-file-cprogramobj"></a>' C: \\ program. obj ' dosyası açılamıyor
 
 Hata iletisinde *C: \\ program. obj* dosya adını görürseniz, kitaplık yollarınızı çift tırnak içine sarın. Bu hata, *C: \\ Program dosyaları* ile başlayan sarmalanmamış bir yol bağlayıcıya geçirildiğinde oluşur. Sarmalanmamış yollar da benzer hatalara neden olabilir. Genellikle, sürücünüzün kökünde beklenmeyen bir. obj dosyası gösterir.
 
@@ -120,7 +120,7 @@ Dosya çok büyük olduğu için bu hata ortaya çıkabilir. Boyutlu bir gigabay
 
 ### <a name="incorrect-file-permissions"></a>Yanlış dosya izinleri
 
-Bu hata, dosya *adına*erişmek için yeterli dosya izinleriniz yoksa oluşabilir. Korumalı sistem dizinlerindeki kitaplık dosyalarına erişmek için sıradan bir kullanıcı hesabı kullanıyorsanız bu durum oluşabilir. Ya da hala özgün izinlerinin ayarlandığı diğer kullanıcılardan kopyalanan dosyaları kullanıyorsanız. Bu sorunu onarmak için dosyayı yazılabilir bir proje dizinine taşıyın. Taşınan dosyanın izinleri erişilemiyorsa, dosyanın sahipliğini almak için yönetici komut penceresinde takeown.exe komutunu çalıştırın.
+Bu hata, dosya *adına* erişmek için yeterli dosya izinleriniz yoksa oluşabilir. Korumalı sistem dizinlerindeki kitaplık dosyalarına erişmek için sıradan bir kullanıcı hesabı kullanıyorsanız bu durum oluşabilir. Ya da hala özgün izinlerinin ayarlandığı diğer kullanıcılardan kopyalanan dosyaları kullanıyorsanız. Bu sorunu onarmak için dosyayı yazılabilir bir proje dizinine taşıyın. Taşınan dosyanın izinleri erişilemiyorsa, dosyanın sahipliğini almak için yönetici komut penceresinde takeown.exe komutunu çalıştırın.
 
 ### <a name="insufficient-disk-space"></a>Yetersiz disk alanı
 
@@ -128,10 +128,10 @@ Yeterli disk alanınız olmadığında hata oluşabilir. Bağlayıcı, birkaç d
 
 ### <a name="problems-in-the-tmp-environment-variable"></a>TMP ortam değişkenindeki sorunlar
 
-*Dosya adı* lnk*nnn*olarak adlandırılmışsa, geçici bir dosya için bağlayıcı tarafından oluşturulan bir dosya adıdır. TMP ortam değişkeninde belirtilen dizin mevcut olmayabilir. Ya da, TMP ortam değişkeni için birden fazla dizin belirtilebilir. TMP ortam değişkeni için yalnızca bir dizin yolu belirtilmelidir.
+*Dosya adı* lnk *nnn* olarak adlandırılmışsa, geçici bir dosya için bağlayıcı tarafından oluşturulan bir dosya adıdır. TMP ortam değişkeninde belirtilen dizin mevcut olmayabilir. Ya da, TMP ortam değişkeni için birden fazla dizin belirtilebilir. TMP ortam değişkeni için yalnızca bir dizin yolu belirtilmelidir.
 
 ## <a name="help-my-issue-isnt-listed-here"></a>Yardım, sorunum burada listelenmedi!
 
-Burada listelenen sorunlardan hiçbiri uygulanmadığı zaman, yardım için Visual Studio 'daki geri bildirim araçlarını kullanabilirsiniz. IDE 'de, menü çubuğuna gidin ve **sorun bildirmek > yardım > geri bildirim gönder**' i seçin. Ya da bir öneri göndermek **> yardım > geri bildirim gönder**' i kullanarak bir öneride bulunun. Visual Studio C++ [Developer Community](https://developercommunity.visualstudio.com/spaces/62/index.html)) Web sitesini de kullanabilirsiniz. Soruların yanıtlarını aramak ve yardım istemek için bunu kullanın. Daha fazla bilgi için bkz. [Visual C++ araç takımı veya belgelerde sorun bildirme](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
+Burada listelenen sorunlardan hiçbiri uygulanmadığı zaman, yardım için Visual Studio 'daki geri bildirim araçlarını kullanabilirsiniz. IDE 'de, menü çubuğuna gidin ve **sorun bildirmek > yardım > geri bildirim gönder** ' i seçin. Ya da bir öneri göndermek **> yardım > geri bildirim gönder** ' i kullanarak bir öneride bulunun. Ayrıca, sorular ve Visual Studio C++ [Geliştirici topluluğu](https://aka.ms/vsfeedback/browsecpp) web sitesi [Microsoft docs&soru-cevap](/answers/topics/c%2B%2B.html) sitesini de kullanabilirsiniz. Soruların yanıtlarını aramak ve yardım istemek için bu siteleri kullanın. Daha fazla bilgi için bkz. [Visual C++ araç takımı veya belgelerde sorun bildirme](../../overview/how-to-report-a-problem-with-the-visual-cpp-toolset.md).
 
-Bu makaleye eklememiz gereken bu sorunu çözmek için yeni bir yol tespit ediyorsanız bize bize izin verin. **Bu sayfa**için aşağıdaki düğmeyi kullanarak bize geri bildirim gönderebilirsiniz. [C++ belgelerimizin GitHub](https://github.com/MicrosoftDocs/cpp-docs/issues)deposunda yeni bir sorun oluşturmak için bunu kullanın. Teşekkür ederiz!
+Bu makaleye eklememiz gereken bu sorunu çözmek için yeni bir yol tespit ediyorsanız bize bize izin verin. **Bu sayfa** için aşağıdaki düğmeyi kullanarak bize geri bildirim gönderebilirsiniz. [C++ belgelerimizin GitHub](https://github.com/MicrosoftDocs/cpp-docs/issues)deposunda yeni bir sorun oluşturmak için bunu kullanın. Teşekkür ederiz!

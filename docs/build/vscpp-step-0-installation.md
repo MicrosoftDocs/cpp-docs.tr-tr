@@ -1,17 +1,17 @@
 ---
 title: Visual Studio 'da C ve C++ desteğini yükler
-description: Visual C++ için Visual Studio desteğini yükler
+description: Visual Studio 'Yu Microsoft C/C++ ve ilgili iş yükleri desteğiyle yüklemeyi öğrenin.
 ms.custom: mvc
-ms.date: 04/02/2019
+ms.date: 11/05/2020
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 6f547b7e50d39b073232e913e660bf3ab96789cb
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 3f2d2ade54cb4db2cd692f044a5cd648600bc7f6
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92922133"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334188"
 ---
 # <a name="install-c-and-c-support-in-visual-studio"></a>Visual Studio 'da C ve C++ desteğini yükler
 
@@ -46,14 +46,14 @@ Visual Studio 'nun önceki sürümlerini Visual Studio 2019 ile yan yana çalı�
 
 ### <a name="step-2---download-visual-studio"></a>2. adım-Visual Studio 'Yu Indirme
 
-Ardından, Visual Studio önyükleyici dosyasını indirin. Bunu yapmak için, aşağıdaki düğmeyi seçin, istediğiniz Visual Studio sürümünü seçin, **Kaydet** ' i seçin ve sonra **klasörü aç** ' ı seçin.
+Ardından, Visual Studio önyükleyici dosyasını indirin. Bunu yapmak için, aşağıdaki düğmeyi seçerek Visual Studio indirme sayfasına gidin. İstediğiniz Visual Studio sürümünü seçin ve **ücretsiz deneme** sürümünü veya **ücretsiz indirme** düğmesini seçin.
 
  > [!div class="button"]
  > [Visual Studio’yu indirin](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
 ### <a name="step-3---install-the-visual-studio-installer"></a>3. adım-Visual Studio yükleyicisini yükleme
 
-Visual Studio Yükleyicisi yüklemek için önyükleyici dosyasını çalıştırın. Bu yeni basit yükleyici, Visual Studio 'Yu yüklemek ve özelleştirmek için ihtiyacınız olan her şeyi içerir.
+Visual Studio Yükleyicisi yüklemek için indirdiğiniz önyükleyici dosyasını çalıştırın. Bu yeni basit yükleyici, Visual Studio 'Yu yüklemek ve özelleştirmek için ihtiyacınız olan her şeyi içerir.
 
 1. **İndirmeler** klasöründen, eşleşen önyükleyiciyi çift tıklayın veya aşağıdaki dosyalardan birine benzer:
 
@@ -61,7 +61,7 @@ Visual Studio Yükleyicisi yüklemek için önyükleyici dosyasını çalıştı
    - Visual Studio Professional için **vs_professional.exe**
    - Visual Studio Enterprise için **vs_enterprise.exe**
 
-   Bir kullanıcı hesabı denetimi bildirimi alırsanız **Evet** ' i seçin.
+   Bir kullanıcı hesabı denetimi bildirimi alırsanız, önyükleyicinin çalışmasına izin vermek için **Evet** ' i seçin.
 
 1. Microsoft [Lisans koşulları](https://visualstudio.microsoft.com/license-terms/) ' nı ve Microsoft [Gizlilik bildirimi](https://privacy.microsoft.com/privacystatement)' ni kabul etmeniz istenir. **Devam** 'ı seçin.
 
@@ -143,15 +143,12 @@ Disk alanı ve işletim sistemi gereksinimleriyle ilgili ayrıntılı bilgi içi
 
 ### <a name="download-and-install"></a>İndirme ve yükleme
 
-1. Windows için en son Visual Studio 2017 yükleyicisini indirin.
-
-   > [!div class="nextstepaction"]
-   > [Visual Studio 2017 Community 'yi yükler](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+1. Windows için en son Visual Studio 2017 yükleyicisini indirmek için [eski indirmeler](https://www.visualstudio.com/vs/older-downloads/) Microsoft Visual Studio sayfasına gidin. **2017** bölümünü genişletin ve **İndir** düğmesini seçin.
 
    >[!Tip]
-   > Topluluk sürümü, bireysel geliştiriciler, ders öğrenimi, akademik araştırmalar ve açık kaynak geliştirmesi içindir. Diğer kullanımlar için, [Visual studio 2017 Professional](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) veya [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)'ı yükler.
+   > Topluluk sürümü, bireysel geliştiriciler, ders öğrenimi, akademik araştırmalar ve açık kaynak geliştirmesi içindir. Diğer kullanımlar için, Visual Studio 2017 Professional veya Visual Studio 2017 Enterprise 'ı yükler.
 
-1. İndirdiğiniz yükleyici dosyasını bulun ve çalıştırın. Bu, tarayıcınızda görüntülenebilir veya Indirmeler klasörünüzde bulunabilir. Yükleyicinin çalışması için yönetici ayrıcalıklarına ihtiyacı vardır. Yükleyicinin sisteminizde değişiklik yapmasına izin vermenizi isteyen bir **Kullanıcı hesabı denetimi** iletişim kutusu görebilirsiniz; **Evet** ' i seçin. Sorun yaşıyorsanız, dosya Gezgini 'nde indirilen dosyayı bulun, yükleyici simgesine sağ tıklayın ve bağlam menüsünde **yönetici olarak çalıştır** ' ı seçin.
+1. İndirdiğiniz yükleyici dosyasını bulun ve çalıştırın. İndirilen dosya tarayıcınızda görüntülenebilir veya Indirilenler klasörünüzde bulunabilir. Yükleyicinin çalışması için yönetici ayrıcalıklarına ihtiyacı vardır. Yükleyicinin sisteminizde değişiklik yapmasına izin vermenizi isteyen bir **Kullanıcı hesabı denetimi** iletişim kutusu görebilirsiniz; **Evet** ' i seçin. Sorun yaşıyorsanız, dosya Gezgini 'nde indirilen dosyayı bulun, yükleyici simgesine sağ tıklayın ve bağlam menüsünde **yönetici olarak çalıştır** ' ı seçin.
 
    ![Visual Studio Yükleyicisi indirin ve yükleyin](media/vscpp-concierge-run-installer.gif "Visual Studio Yükleyicisi indirin ve yükleyin")
 
@@ -185,7 +182,7 @@ Disk alanı ve işletim sistemi gereksinimleriyle ilgili ayrıntılı bilgi içi
 
 ## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 yüklemesi
 
-Visual Studio 2015 ' i yüklemek için [Visual Studio 'nun eski sürümlerini indirme](https://www.visualstudio.com/vs/older-downloads/)bölümüne gidin. Kurulum programını çalıştırın ve **özel yükleme** ' yi seçin ve ardından C++ bileşenini seçin. Var olan bir Visual Studio 2015 yüklemesine C ve C++ desteği eklemek için, Windows Başlat düğmesine tıklayın ve **Program Ekle Kaldır** yazın. Program sonuçlar listesinden açın ve ardından yüklü programlar listesinde Visual Studio 2015 yüklemenizi bulun. Çift tıklayın ve ardından **Değiştir** ' i seçin ve yüklenecek Visual C++ bileşenleri ' ni seçin.
+Visual Studio 2015 ' i yüklemek için Microsoft Visual Studio [eski indirmeler](https://www.visualstudio.com/vs/older-downloads/) sayfasına gidin. **2015** bölümünü genişletin ve **İndir** düğmesini seçin. İndirilen Kurulum programını çalıştırın ve **özel yükleme** ' yi seçin ve ardından C++ bileşenini seçin. Var olan bir Visual Studio 2015 yüklemesine C ve C++ desteği eklemek için, Windows Başlat düğmesine tıklayın ve **Program Ekle Kaldır** yazın. Program sonuçlar listesinden açın ve ardından yüklü programlar listesinde Visual Studio 2015 yüklemenizi bulun. Çift tıklayın ve ardından **Değiştir** ' i seçin ve yüklenecek Visual C++ bileşenleri ' ni seçin.
 
 Genel olarak, Visual Studio 2015 derleyicisini kullanarak kodunuzun derlenmesi gerekseniz bile Visual Studio 'nun en son sürümünü kullanmanızı öneririz. Daha fazla bilgi için bkz. [Eski projeler oluşturmak Için Visual Studio 'da yerel çoklu sürüm kullanımını kullanma](../porting/use-native-multi-targeting.md).
 

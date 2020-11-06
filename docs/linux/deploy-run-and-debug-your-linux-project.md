@@ -3,12 +3,12 @@ title: Visual Studio 'da Linux MSBuild C++ projenizi dağıtma, çalıştırma v
 description: Visual Studio 'da MSBuild tabanlı bir Linux C++ projesinin içinden uzak hedef üzerinde kod derlemeyi, yürütmeyi ve hata ayıklamanın nasıl yapılacağını açıklar.
 ms.date: 08/08/2020
 ms.assetid: f7084cdb-17b1-4960-b522-f84981bea879
-ms.openlocfilehash: a9feffbc86b50d510647776de6f1030f6986bef7
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 7c038e1903fe029e04e8e9e9e41c11c7bff61ee2
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921717"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334201"
 ---
 # <a name="deploy-run-and-debug-your-linux-msbuild-project"></a>Linux MSBuild projenizi dağıtma, çalıştırma ve projenizin hatalarını ayıklama
 
@@ -99,6 +99,8 @@ Linux projenizde etkileşimde bulunmak ve hata ayıklaması yapmak için birkaç
 - Özel hata ayıklayıcı seçenekleri **ek hata ayıklayıcı komutları** girişi kullanılarak gdb 'ye geçirilebilir.  Örneğin, SIGILL (geçersiz yönerge) sinyallerini yoksaymak isteyebilirsiniz.  Yukarıda gösterildiği gibi **ek hata ayıklayıcı komutları** girişine aşağıdakileri ekleyerek bunu gerçekleştirmek için **tanıtıcı** komutunu kullanabilirsiniz:
 
    `handle SIGILL nostop noprint`
+   
+- Projenin **hata ayıklama** Özellik sayfasında **gdb yol** öğesini kullanarak Visual Studio tarafından kullanılan gdb 'nin yolunu belirtebilirsiniz. Bu özellik Visual Studio 2019 sürüm 16,9 ve üzeri sürümlerde kullanılabilir.
 
 ## <a name="debug-with-attach-to-process"></a>Işleme Iliştir ile hata ayıkla
 

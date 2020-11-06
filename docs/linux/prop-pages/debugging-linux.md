@@ -1,13 +1,14 @@
 ---
 title: Hata ayıklayıcı özellikleri (Linux C++) | Microsoft Docs
+description: Linux C++ hata ayıklayıcısı özelliklerini Microsoft Visual Studio açıklar
 ms.date: 06/07/2019
 ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
-ms.openlocfilehash: 2b55a0db001c98be72ac88c17c62b21e98ec4888
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 0d43877df817f40cfd97a03c4f66730ab17138d8
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924518"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334227"
 ---
 # <a name="c-debugging-properties-linux-c"></a>C++ hata ayıklama özellikleri (Linux C++)
 
@@ -35,5 +36,6 @@ Linux desteği, Visual Studio 2017 ve üzeri sürümlerde kullanılabilir.
 | Python 'un düzgün yazdırılmasını etkinleştir | İfade değerlerini düzgün şekilde yazdırmayı etkinleştirin. Yalnızca gdb hata ayıklama modunda desteklenir. |
 | Görselleştirme dosyası | SLT türleri için görselleştirme yönergeleri içeren varsayılan yerel görselleştirme dosyası (. natvis). Geçerli çözüme ait olan diğer. natvis dosyaları otomatik olarak yüklenir. |
 | Ek kaynaklar dosya yolu eşlemesi | Hata ayıklayıcının Windows kaynak dosya adlarını Linux kaynak dosya adlarıyla eşlemek için kullanacağı ek yol denklikleri. Biçim " \<windows-path> = \<linux-path> ;..." biçimindedir. Windows yolu altında bulunan bir kaynak dosya adına, Linux yolu altındaki aynı göreli konumda bulunan gibi başvurulur. Yerel projede bulunan dosyalar için ek eşleme gerekmez. |
+| GDB yolu | **Visual studio 2019 sürüm 16,9** : Visual Studio tarafından kullanılacak gdb yürütülebilir dosyasının yolunu belirtir. |
 
 ::: moniker-end

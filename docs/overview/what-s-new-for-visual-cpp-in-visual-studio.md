@@ -4,18 +4,18 @@ description: Visual Studio 'daki Microsoft C/C++ derleyicisinde ve araçlarında
 ms.date: 05/19/2020
 ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
-ms.openlocfilehash: c5e1f368060b650781c413a03e1bc2f9e368941a
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: db328a5806ecb3e48a934d65854c14d424e018f1
+ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924842"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "94334175"
 ---
 # <a name="whats-new-for-c-in-visual-studio"></a>Visual Studio 2017’deki C++ yenilikleri
 
 ::: moniker range=">=msvc-160"
 
-Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltme getirir. Derleyicide ve araçlarda birçok hata ve sorunu düzelttik. Bu sorunların birçoğu, müşteriler tarafından [bir sorun bildir](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) ve **geri bildirim gönder** altında [bir öneri](https://developercommunity.visualstudio.com/spaces/62/index.html) seçenekleri sunarak gönderilmiştir. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio 'nun tüm yenilikleri hakkında daha fazla bilgi için [Visual studio 2019 'deki](/visualstudio/ide/whats-new-visual-studio-2019)yenilikler sayfasını ziyaret edin. Visual Studio 2017 ' de C++ yenilikleri hakkında daha fazla bilgi için bkz. [Visual studio 2017 ' de c++](?preserve-view=true&view=msvc-150)yenilikleri. Visual Studio 2015 ve önceki sürümlerde C++ yenilikleri hakkında daha fazla bilgi için, bkz. yenilikler [2003 ile 2015 Visual C++](../porting/visual-cpp-what-s-new-2003-through-2015.md).
+Visual Studio 2019, Microsoft C++ ortamına birçok güncelleştirme ve düzeltme getirir. Derleyicide ve araçlarda birçok hata ve sorunu düzelttik. Bu sorunların birçoğu, müşteriler tarafından [bir sorun bildir](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019&preserve-view=true) ve **geri bildirim gönder** altında [bir öneri](https://aka.ms/feedback/suggest?space=62) seçenekleri sunarak gönderilmiştir. Hataları bildirdiğiniz için teşekkür ederiz! Visual Studio 'nun tüm yenilikleri hakkında daha fazla bilgi için [Visual studio 2019 'deki](/visualstudio/ide/whats-new-visual-studio-2019)yenilikler sayfasını ziyaret edin. Visual Studio 2017 ' de C++ yenilikleri hakkında daha fazla bilgi için bkz. [Visual studio 2017 ' de c++](?preserve-view=true&view=msvc-150)yenilikleri. Visual Studio 2015 ve önceki sürümlerde C++ yenilikleri hakkında daha fazla bilgi için, bkz. yenilikler [2003 ile 2015 Visual C++](../porting/visual-cpp-what-s-new-2003-through-2015.md).
 
 ## <a name="c-compiler"></a>C++ derleyicisi
 
@@ -165,7 +165,7 @@ Intellicode artık C++ iş yüküyle **Masaüstü geliştirmede** isteğe bağl�
 
 - Bu `cmakeToolchain` ayar artık CMake komut satırını el ile değiştirmeden araç zincirlerini belirtmek için üzerinde CMakeSettings.jsdesteklenir.
 
-- Yeni bir **Yapı Oluştur** Menü kısayolu **CTRL + SHIFT + B** .
+- Yeni bir **Yapı Oluştur** Menü kısayolu **CTRL + SHIFT + B**.
 
 ##### <a name="visual-studio-2019-version-161"></a> Visual Studio 2019 sürüm 16.1
 
@@ -635,7 +635,7 @@ Artık Evrensel Windows Platformu ve Windows Mağazası için C++ uygulamaları 
 
 ##### <a name="visual-studio-2017-version-155"></a>Visual Studio 2017 sürüm 15.5
 
-Masaüstü ile masaüstü uygulamalarının paketlenmesi büyük ölçüde basitleşerek bir **Windows uygulaması paketleme projesi** proje şablonu eklenmiştir. Dosya | altında kullanılabilir **Yeni | Proje | Yüklendi | Visual C++ | Evrensel Windows Platformu** . Daha fazla bilgi için bkz. [Visual Studio (Masaüstü Köprüsü) kullanarak bir uygulamayı paketleme](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+Masaüstü ile masaüstü uygulamalarının paketlenmesi büyük ölçüde basitleşerek bir **Windows uygulaması paketleme projesi** proje şablonu eklenmiştir. Dosya | altında kullanılabilir **Yeni | Proje | Yüklendi | Visual C++ | Evrensel Windows Platformu**. Daha fazla bilgi için bkz. [Visual Studio (Masaüstü Köprüsü) kullanarak bir uygulamayı paketleme](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
 Yeni kod yazarken artık yalnızca başlık dosyalarında uygulanan Windows Çalışma Zamanı için standart bir C++ dil projeksiyonu olan C++/Wınrt ' i kullanabilirsiniz. Standartlara uygun C++ derleyicisini kullanarak Windows Çalışma Zamanı API 'Leri kullanmanıza ve yazmanıza olanak sağlar. C++/Wınrt, C++ geliştiricilerine modern Windows API 'sine birinci sınıf erişim sağlayacak şekilde tasarlanmıştır. Daha fazla bilgi için bkz. [C++/Wınrt](/windows/uwp/cpp-and-winrt-apis/).
 
