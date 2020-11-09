@@ -419,7 +419,7 @@ Sizin için en az bir konsol uygulama projesi oluşturulur. Ana kaynak dosyanın
 
 1. Oluşturduğunuz DLL 'yi kullanan bir C++ uygulaması oluşturmak için, menü çubuğunda **Dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** Visual C++ altında **Windows Masaüstü** ' nü seçin  >  **Visual C++** . Orta bölmede **Windows konsol uygulaması** ' nı seçin. *MathClient* adlı projenin adını **ad** düzenleme kutusunda belirtin.  Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** Visual C++ altında **Windows Masaüstü** ' nü seçin  >  **Visual C++**. Orta bölmede **Windows konsol uygulaması** ' nı seçin. *MathClient* adlı projenin adını **ad** düzenleme kutusunda belirtin.  Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
    ![Yeni proje iletişim kutusunun yüklü > Visual C Plus ve > Windows Masaüstü seçili, Windows konsol uygulaması vurgulanmış ve ad metin kutusuna yazılan matematik Istemcisi ekran görüntüsü.](media/mathclient-new-project-name-159.png "İstemci projesini adlandırın")
 
@@ -435,7 +435,7 @@ Sizin için en az bir konsol uygulama projesi oluşturulur. Ana kaynak dosyanın
 
 1. Oluşturduğunuz DLL 'yi kullanan bir C++ uygulaması oluşturmak için, menü çubuğunda **Dosya** > **Yeni** > **Proje** ' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** Şablonlar ' ın altında **Win32** ' ı seçin  >  **Templates**  >  **Visual C++** . Orta bölmede **Win32 konsol uygulaması** ' nı seçin. *MathClient* adlı projenin adını **ad** düzenleme kutusunda belirtin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** Şablonlar ' ın altında **Win32** ' ı seçin  >  **Templates**  >  **Visual C++**. Orta bölmede **Win32 konsol uygulaması** ' nı seçin. *MathClient* adlı projenin adını **ad** düzenleme kutusunda belirtin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
    ![Yüklü > şablonları olan yeni proje iletişim kutusunun ekran görüntüsü > Visual C Plus Plus > Win32 seçili, Win32 konsol uygulaması Visual C Plus Plus ve ad metin kutusuna yazılan matematik Istemcisi.](media/mathclient-project-name.png "İstemci projesini adlandırın")
 
