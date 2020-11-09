@@ -5,12 +5,12 @@ helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-ms.openlocfilehash: 3350af722993d6b23efa3dc9dbd5a7c33ee5165b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 15d54d139f086ce5bb025aaeab145c71d33903c0
+ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214951"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381603"
 ---
 # <a name="value-classes-and-structs-ccx"></a>Değer Sınıfları ve Yapıları (C++/CX)
 
@@ -52,19 +52,19 @@ Değer türünde bir değişken başka bir değişkene atandığında, bu değer
 
 *Değer sınıfı* , **`value struct`** alanları açıkça ortak erişilebilirlik olarak verilmelidir. **`value class`** Anahtar sözcüğü kullanılarak bildirilmiştir.
 
-Değer yapısı veya değer sınıfı, alan olarak yalnızca temel sayısal türler, Enum sınıfları, `Platform::String^` veya [Platform:: \<T> ^ ibox](../cppcx/platform-ibox-interface.md) olarak bulunabilir; burada T, bir sayısal tür veya sabit listesi sınıfı ya da değer sınıfı ya da struct. Bir `IBox<T>^` alan bir değere sahip olabilir **`nullptr`** ; Bu, C++ ' ın *null yapılabilir değer türleri*kavramını uyguladığı bir değerdir.
+Değer yapısı veya değer sınıfı, alan olarak yalnızca temel sayısal türler, Enum sınıfları, `Platform::String^` veya [Platform:: \<T> ^ ibox](../cppcx/platform-ibox-interface.md) olarak bulunabilir; burada T, bir sayısal tür veya sabit listesi sınıfı ya da değer sınıfı ya da struct. Bir `IBox<T>^` alan bir değere sahip olabilir **`nullptr`** ; Bu, C++ ' ın *null yapılabilir değer türleri* kavramını uyguladığı bir değerdir.
 
 Üye olarak bir veya türü içeren bir değer sınıfı veya değer yapısı `Platform::String^` `IBox<T>^` `memcpy` mümkün değildir.
 
 Tüm üyeleri bir **`value class`** veya ortak olduğundan **`value struct`** ve meta veriye yayıldığından, standart C++ türlerine üye olarak izin verilmez. Bu, **`private`** ya da standart C++ türlerini içerebilen başvuru sınıflarından farklıdır **`internal`** .
 
-Aşağıdaki kod parçası, `Coordinates` ve `City` türlerini değer yapıları olarak bildirir. `City`Veri üyelerinden birinin bir tür olduğuna dikkat edin `GeoCoordinates` . **`value struct`**, Diğer değer yapılarını üye olarak içerebilir.
+Aşağıdaki kod parçası, `Coordinates` ve `City` türlerini değer yapıları olarak bildirir. `City`Veri üyelerinden birinin bir tür olduğuna dikkat edin `GeoCoordinates` . **`value struct`** , Diğer değer yapılarını üye olarak içerebilir.
 
 [!code-cpp[cx_classes#07](../cppcx/codesnippet/CPP/classesstructs/class1.h#07)]
 
 ## <a name="parameter-passing-for-value-types"></a>Değer türleri için parametre geçirme
 
-Bir işlev veya yöntem parametresi olarak bir değer türüne sahipseniz, normalde değere göre geçirilir. Daha büyük nesneler için bu bir performans sorununa neden olabilir. Visual Studio2013 ve önceki sürümlerde, C++/CX içindeki değer türleri her zaman değere göre geçirilir. Visual Studio 2015 ve üzeri sürümlerde, değer türlerini başvuruya veya değere göre geçirebilirsiniz.
+Bir işlev veya yöntem parametresi olarak bir değer türüne sahipseniz, normalde değere göre geçirilir. Daha büyük nesneler için bu bir performans sorununa neden olabilir. Visual Studio 2013 ve önceki sürümlerde, C++/CX içindeki değer türleri her zaman değere göre geçirilir. Visual Studio 2015 ve üzeri sürümlerde, değer türlerini başvuruya veya değere göre geçirebilirsiniz.
 
 Değer türü değere göre geçen bir parametre bildirmek için, aşağıdaki gibi bir kod kullanın:
 

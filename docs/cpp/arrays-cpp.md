@@ -1,17 +1,18 @@
 ---
 title: Diziler (C++)
-ms.date: 08/03/2020
+description: Standart C++ programlama dilinde yerel dizi türünü nasıl tanımlayacağınızı ve kullanacağınızı öğrenin.
+ms.date: 11/08/2020
 helpviewer_keywords:
 - declaring arrays [C++], about declaring arrays
 - multidimensional arrays [C++]
 - arrays [C++]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-ms.openlocfilehash: 6d002f2baa6657c13ffc603e74828ab60585d3a9
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 2a84e5db04d0a37ebd65e0d979e9b075b7c23312
+ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352797"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381590"
 ---
 # <a name="arrays-c"></a>Diziler (C++)
 
@@ -44,7 +45,7 @@ C++ dizi bildiriminde, dizi boyutu diğer dillerdeki gibi tür adından sonra de
     }
 ```
 
-Dizideki ilk öğe, zerıse öğesidir. Son öğe (*n*-1) öğesidir; burada *n* , dizinin içerebileceği öğe sayısıdır. Bildirimdeki öğe sayısı bir integral türünde olmalı ve 0 ' dan büyük olmalıdır. Programınızın bir değeri hiçbir şekilde öğesinden daha büyük bir alt simge işlecine geçirdiğinden emin olmak sizin sorumluluğunuzdadır `(size - 1)` .
+Dizideki ilk öğe, zerıse öğesidir. Son öğe ( *n* -1) öğesidir; burada *n* , dizinin içerebileceği öğe sayısıdır. Bildirimdeki öğe sayısı bir integral türünde olmalı ve 0 ' dan büyük olmalıdır. Programınızın bir değeri hiçbir şekilde öğesinden daha büyük bir alt simge işlecine geçirdiğinden emin olmak sizin sorumluluğunuzdadır `(size - 1)` .
 
 Sıfır boyutlu bir dizi yalnızca, bir veya ' deki son alan olduğunda **`struct`** veya **`union`** Microsoft uzantıları etkinleştirildiğinde ( **`/Za`** veya **`/permissive-`** ayarlanmamışsa) geçerlidir.
 
@@ -131,12 +132,12 @@ Bir dizide, tek seferde bir öğe veya tek bir ifadede bir diziyi başlatabilirs
 
 ## <a name="passing-arrays-to-functions"></a>Dizileri işlevlere geçirme
 
-Bir dizi bir işleve geçirildiğinde, yığın tabanlı veya yığın tabanlı bir dizi olup olmadığı sürece ilk öğeye işaretçi olarak geçirilir. İşaretçi ek boyut veya tür bilgisi içermiyor. Bu davranışa *işaretçi kay*adı verilir. Bir diziyi bir işleve geçirdiğinizde, her zaman öğe sayısını ayrı bir parametrede belirtmeniz gerekir. Bu davranış, Array bir işleve geçirildiğinde dizi öğelerinin kopyalanmadığını da belirtir. İşlevin öğeleri değiştirmesini engellemek için, parametreyi öğe işaretçisi olarak belirtin **`const`** .
+Bir dizi bir işleve geçirildiğinde, yığın tabanlı veya yığın tabanlı bir dizi olup olmadığı sürece ilk öğeye işaretçi olarak geçirilir. İşaretçi ek boyut veya tür bilgisi içermiyor. Bu davranışa *işaretçi kay* adı verilir. Bir diziyi bir işleve geçirdiğinizde, her zaman öğe sayısını ayrı bir parametrede belirtmeniz gerekir. Bu davranış, Array bir işleve geçirildiğinde dizi öğelerinin kopyalanmadığını da belirtir. İşlevin öğeleri değiştirmesini engellemek için, parametreyi öğe işaretçisi olarak belirtin **`const`** .
 
 Aşağıdaki örnek bir diziyi ve uzunluğu kabul eden bir işlevi gösterir. İşaretçi, kopya değil, orijinal diziyi işaret eder. Parametresi olmadığından **`const`** , işlev dizi öğelerini değiştirebilir.
 
 ```cpp
-void process(double p*, const size_t len)
+void process(double *p, const size_t len)
 {
     std::cout << "process:\n";
     for (size_t i = 0; i < len; ++i)
@@ -146,10 +147,10 @@ void process(double p*, const size_t len)
 }
 ```
 
-İşlev bloğunda Salt okunabilir hale getirmek için diziyi const olarak bildirin:
+Dizi parametresini, `p` **`const`** işlev bloğunda Salt okunabilir hale getirmek için olarak bildirin ve tanımlayın:
 
 ```cpp
-void process(const double p*, const size_t len);
+void process(const double *p, const size_t len);
 ```
 
 Aynı işlev, davranış değişikliği olmadan bu yollarla da bildirilemez. Dizi, hala ilk öğeye bir işaretçi olarak geçirilir:
@@ -254,7 +255,7 @@ The minimum cost to Market 3 is: 17.29
 
 ## <a name="initializing-arrays"></a>Dizileri Başlatma
 
-Sınıf oluşturucusuna sahip nesne dizileri Oluşturucu tarafından başlatılır. Başlatıcı listesinde dizideki öğelerden daha az öğe olduğunda, kalan öğeler için varsayılan oluşturucu kullanılır. Sınıfı için varsayılan Oluşturucu tanımlanmazsa, başlatıcı listesi *tamamlanmış*olmalıdır, diğer bir deyişle dizideki her öğe için bir başlatıcı olmalıdır.
+Sınıf oluşturucusuna sahip nesne dizileri Oluşturucu tarafından başlatılır. Başlatıcı listesinde dizideki öğelerden daha az öğe olduğunda, kalan öğeler için varsayılan oluşturucu kullanılır. Sınıfı için varsayılan Oluşturucu tanımlanmazsa, başlatıcı listesi *tamamlanmış* olmalıdır, diğer bir deyişle dizideki her öğe için bir başlatıcı olmalıdır.
 
 İki oluşturucu tanımlayan `Point` sınıfını göz önünde bulundurun:
 

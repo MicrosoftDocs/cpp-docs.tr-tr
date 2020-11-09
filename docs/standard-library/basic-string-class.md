@@ -121,12 +121,12 @@ helpviewer_keywords:
 - std::basic_string [C++], substr
 - std::basic_string [C++], swap
 ms.assetid: a9c3e0a2-39bf-4c8a-b093-9abe30839591
-ms.openlocfilehash: fa2e6813d6cfb55ea1924bc976ef03396b88ca92
-ms.sourcegitcommit: 9c801a43ee0d4d84956b03fd387716c818705e0d
+ms.openlocfilehash: 87eda4064ff63a22add49b2872a26c76ac15bc6a
+ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92907578"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94381655"
 ---
 # <a name="basic_string-class"></a>`basic_string` Sınıfı
 
@@ -617,7 +617,7 @@ Parametre dizini tarafından belirtilen konumdaki dizenin karakteriyle bir başv
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizenin ilk öğesi sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluklu bir dize, n *-* 1 sayısı tarafından dizine alınmış bir *n* . öğesi vardır.
+Dizenin ilk öğesi sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluklu bir dize, n *-* 1 sayısı tarafından dizine alınmış bir *n*. öğesi vardır.
 
 Üye [ `operator`&#91;&#93;](#op_at) , `at` bir dizenin öğelerine okuma ve yazma erişimi sağlamak için üye işlevinden daha hızlıdır.
 
@@ -2179,7 +2179,7 @@ int main( )
       cout << "The index of the 1st element of sample "
            << "in str3 is: " << indexCh3a << endl;
    else
-      cout << "The substring 'perfect' was not found in str3 ."
+      cout << "The substring 'sample' was not found in str3 ."
            << endl;
 
    const char *cstr3b = "for";
@@ -3586,7 +3586,7 @@ Parametre dizini tarafından belirtilen konumdaki dizenin karakteriyle bir başv
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizenin ilk öğesi sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluklu bir dize, *n-1* sayısı tarafından dizine alınmış bir *n* . öğesi vardır.
+Dizenin ilk öğesi sıfır dizinine sahiptir ve aşağıdaki öğeler pozitif tamsayılar tarafından ardışık olarak dizinlenir, böylece *n* uzunluklu bir dize, *n-1* sayısı tarafından dizine alınmış bir *n*. öğesi vardır.
 
 `operator[]` , [`at`](#at) bir dizenin öğelerine okuma ve yazma erişimi sağlamak için üye işlevinden daha hızlıdır.
 
