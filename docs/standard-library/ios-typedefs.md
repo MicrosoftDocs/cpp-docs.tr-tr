@@ -9,12 +9,12 @@ f1_keywords:
 - iosfwd/std::streamsize
 - iosfwd/std::wios
 - iosfwd/std::wstreampos
-ms.openlocfilehash: 4af9636ab3317e7b81eb73dc74aef065b1287e21
-ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
+ms.openlocfilehash: b9dbed64c88a00f5ca065e23c4af2f3922634ece
+ms.sourcegitcommit: b38485bb3a9d479e0c5d64ffc3d841fa2c2b366f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381642"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94441274"
 ---
 # <a name="ios-typedefs"></a>`<ios>` tür tanımları
 
@@ -73,7 +73,7 @@ int main( )
    ofstream x( "iostream.txt" );
    x << "testing";
    streampos y = x.tellp( );
-   cout << streamoff(y) << '\n';
+   cout << streamoff( y ) << '\n';
 }
 ```
 
@@ -155,7 +155,7 @@ int main( )
    wofstream xw( "wiostream.txt" );
    xw << L"testing";
    wstreampos y = xw.tellp( );
-   cout << y << endl;
+   cout << streamoff( y ) << '\n';
 }
 ```
 

@@ -1,19 +1,21 @@
 ---
 title: C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
-ms.date: 11/04/2016
+description: Microsoft C çalışma zamanı başlatma kodunun, argv ve argc parametrelerini oluşturmak için komut satırı bağımsız değişkenlerini nasıl yorumlayacağını öğrenin.
+ms.date: 11/09/2020
 helpviewer_keywords:
 - quotation marks, command-line arguments
 - double quotation marks
+- double quote marks
 - command line, parsing
 - parsing, command-line arguments
 - startup code, parsing command-line arguments
 ms.assetid: ffce8037-2811-45c4-8db4-1ed787859c80
-ms.openlocfilehash: ace6d1b8295d0901ef22f3c354b32ad17e296e87
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 92921e91ee6bb37b2bf7b702a1b31ed045187b59
+ms.sourcegitcommit: b38485bb3a9d479e0c5d64ffc3d841fa2c2b366f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75299097"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94441261"
 ---
 # <a name="parsing-c-command-line-arguments"></a>C Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
 
@@ -23,32 +25,34 @@ Microsoft C başlangıç kodu, işletim sistemi komut satırında verilen bağı
 
 - Bağımsız değişkenler boşluk veya sekme olan boşluk ile sınırlandırılmıştır.
 
-- Çift tırnak işareti içine alınmış bir dize, içinde yer alan boşluk ne olursa olsun tek bir bağımsız değişken olarak yorumlanır. Tırnak içine alınmış bir dize bir bağımsız değişkene gömülebilir. Şapka işareti (**^**) bir kaçış karakteri veya sınırlayıcı olarak tanınmadığını unutmayın.
+- İlk bağımsız değişken ( `argv[0]` ) özel olarak değerlendirilir. Program adını temsil eder. Geçerli bir yol adı olması gerektiğinden, çift tırnak işaretleriyle () çevrelenen bölümlere **`"`** izin verilir. Çift tırnak işaretleri çıkışa dahil edilmez `argv[0]` . Çift tırnak işareti içine alınmış parçalar, bağımsız değişkenin sonuna kadar bir boşluk veya sekme karakterinin yorumlanmasını önler. Bu listedeki sonraki kurallar uygulanmaz.
 
-- Önünde ters eğik çizgi **"** ** \\**olan bir çift tırnak işareti ("), sabit değer çift tırnak işareti (") olarak yorumlanır.
+- Çift tırnak işaretleri içine alınmış bir dize, boşluk içerip içermediğini tek bir bağımsız değişken olarak yorumlanır. Tırnak içine alınmış bir dize bir bağımsız değişkene gömülebilir. Şapka işareti ( **`^`** ) bir kaçış karakteri veya sınırlayıcı olarak tanınmıyor. Tırnak içine alınmış bir dize içinde çift tırnak işareti çifti tek bir kaçan çift tırnak işareti olarak yorumlanır. Bir kapanış çift tırnak işareti olmadan önce komut satırı sona erdiğinde, son bağımsız değişken olarak o ana kadar okunan tüm karakterler çıktı olur.
+
+- Önünde ters eğik çizgi () olan bir çift tırnak işareti **`\"`** , sabit bir çift tırnak işareti () olarak yorumlanır **`"`** .
 
 - Ters eğik çizgiler, bir çift tırnak işaretinden hemen önce gelmedikleri takdirde tam olarak yorumlanır.
 
-- Çift sayıda ters eğik çizgiden sonra çift tırnak işareti varsa, bir ters eğik**\\**çizgi () her çift eğik çizgi ( `argv` **\\**) için diziye yerleştirilir ve çift tırnak işareti (**"**) dize sınırlayıcısı olarak yorumlanır.
+- İki ters eğik çizgi daha sonra çift tırnak işareti olursa, bir ters eğik çizgi () **`\`** `argv` , her ters eğik çizgi () için diziye yerleştirilir **`\\`** ve çift tırnak işareti ( **`"`** ) bir dize sınırlayıcısı olarak yorumlanır.
 
-- Tek bir ters eğik çizgiden sonra çift tırnak işareti varsa, her ters**\\**eğik çizgi ( `argv` **\\**) için diziye bir ters eğik çizgi () konur ve çift tırnak işareti kalan ters eğik çizgi tarafından bir kaçış sırası olarak yorumlanır ve bir sabit değer çift tırnak işareti (**"**) konur. `argv`
+- Tek bir ters eğik çizgiden sonra çift tırnak işareti varsa, **`\`** `argv` her ters eğik çizgi () çifti için diziye bir ters eğik çizgi () konur **`\\`** . Çift tırnak işareti, geri kalan ters eğik çizgi tarafından bir kaçış sırası olarak yorumlanır ve değişmez değer çift tırnak işareti ( **`"`** ) konur `argv` .
 
-Bu liste, komut satırı bağımsız değişkenlerinin çeşitli örnekleri `argv` için geçirilen yorumlanan sonucu göstererek yukarıdaki kuralları gösterir. İkinci, üçüncü ve dördüncü sütunlarda listelenen çıktı, bağımsız değişkenleri. Listeyi izleyen C programı.
+Bu liste, `argv` komut satırı bağımsız değişkenlerinin çeşitli örnekleri için geçirilen yorumlanan sonucu göstererek yukarıdaki kuralları gösterir. İkinci, üçüncü ve dördüncü sütunlarda listelenen çıktı, bağımsız değişkenleri. Listeyi izleyen C programı.
 
-|Komut satırı girişi|argv [1]|argv [2]|argv [3]|
+|Command-Line girişi|argv [1]|argv [2]|argv [3]|
 |-------------------------|---------------|---------------|---------------|
 |`"a b c" d e`|`a b c`|`d`|`e`|
 |`"ab\"c" "\\" d`|`ab"c`|`\`|`d`|
 |`a\\\b d"e f"g h`|`a\\\b`|`de fg`|`h`|
 |`a\\\"b c d`|`a\"b`|`c`|`d`|
 |`a\\\\"b c" d e`|`a\\b c`|`d`|`e`|
+|`a"b"" c d`|`ab" c d`|||
 
 ## <a name="example"></a>Örnek
 
 ### <a name="code"></a>Kod
 
 ```c
-// Parsing_C_Commandline_args.c
 // ARGS.C illustrates the following variables used for accessing
 // command-line arguments and environment variables:
 // argc  argv  envp
@@ -76,7 +80,7 @@ char **envp )      // Array of environment variable strings
 }
 ```
 
-## <a name="comments"></a>Açıklamalar
+## <a name="comments"></a>Yorumlar
 
 Bu programdan alınan bir çıkış örneği şunlardır:
 
@@ -99,4 +103,4 @@ Environment variables:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)
+[Main Işlevi ve program yürütme](../c-language/main-function-and-program-execution.md)
