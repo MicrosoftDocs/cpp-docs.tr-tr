@@ -1,14 +1,14 @@
 ---
 title: C++ uygunluk iyileştirmeleri
-ms.date: 08/04/2020
 description: Visual Studio 'da Microsoft C++, C++ 20 dil standardı ile tam uygunluğu doğru ilerliyor.
+ms.date: 11/10/2020
 ms.technology: cpp-language
-ms.openlocfilehash: fc88406a3d2e291d06e01c3e92261b8dfc624ced
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: ff4d75626b75c55e001601ef7005bc23be60869d
+ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921431"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94448496"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Visual Studio 2017’deki C++ uyumluluk geliştirmeleri
 
@@ -1155,6 +1155,338 @@ void f() {
 }
 ```
 
+## <a name="conformance-improvements-in-visual-studio-2019-version-168"></a><a name="improvements_168"></a> Visual Studio 2019 sürüm 16,8 ' de uyumluluk geliştirmeleri
+
+### <a name="class-rvalue-used-as-lvalue-extension"></a>' Sınıf rvalue değeri lvalue olarak kullanıldı ' uzantısı
+
+MSVC, bir lvalue olarak bir rvalue sınıfı kullanılmasına izin veren bir uzantıya sahiptir. Uzantı, rvalue sınıfının ömrünü genişletmez ve çalışma zamanında tanımsız davranışa yol açabilir. Şimdi standart kuralı uyguladık ve bu uzantıya izin vermeiyoruz **`/permissive-`** .
+**`/permissive-`** Henüz kullanmıyorsanız, **`/we4238`** uzantıya açıkça izin vermek için kullanabilirsiniz. Aşağıda bir örnek verilmiştir:
+
+```cpp
+// Compiling with /permissive- now gives:
+// error C2102: '&' requires l-value
+struct S {};
+
+S f();
+
+void g()
+{
+    auto p1 = &(f()); // The temporary returned by 'f' is destructed after this statement. So 'p1' points to an invalid object.
+
+    const auto &r = f(); // This extends the lifetime of the temporary returned by 'f'
+    auto p2 = &r; // 'p2' points to a valid object
+}
+```
+
+### <a name="explicit-specialization-in-non-namespace-scope-extension"></a>' Ad alanı olmayan kapsamda açık özelleştirme ' uzantısı
+
+MSVC, ad alanı olmayan kapsamda açık özelleşmeye izin veren bir uzantıya sahipti. CWG 727 çözümlendikten sonra artık standart bir parçasıdır. Ancak, davranış farklılıkları vardır. Standart ile hizalamak için derleyicimizin davranışını ayarladık.
+
+```cpp
+// Compiling with 'cl a.cpp b.cpp /permissive-' now gives:
+//   error LNK2005: "public: void __thiscall S::f<int>(int)" (??$f@H@S@@QAEXH@Z) already defined in a.obj
+// To fix the linker error,
+// 1. Mark the explicit specialization with 'inline' explicitly. Or,
+// 2. Move its definition to a source file.
+
+// common.h
+struct S {
+    template<typename T> void f(T);
+    template<> void f(int);
+};
+
+// This explicit specialization is implicitly inline in the default mode.
+template<> void S::f(int) {}
+
+// a.cpp
+#include "common.h"
+
+int main() {}
+
+// b.cpp
+#include "common.h"
+```
+
+### <a name="checking-for-abstract-class-types"></a>Soyut sınıf türleri denetleniyor
+
+C++ 20 standardı, bir Özet sınıf türünün işlev parametresi olarak kullanılması bir derleyici tarafından algılandığı süreci değiştirdi. Özellikle, artık bir SFıNAE hatası değildir. Daha önce, derleyici bir işlev şablonunun bir özelleştirmesi türü bir soyut sınıf türünün örneği olan bir işlev parametresine sahip olacağını algıladıysa, bu özelleştirme hatalı biçimlendirilmiş olarak değerlendirilir. Bu, uygulanabilir işlevler kümesine eklenmez. C++ 20 ' de, bir soyut sınıf türü parametresi için denetim, işlev çağrılana kadar gerçekleşmez. Derleme için kullanılan kodun bir hataya neden olmayacağı anlamına gelir. Aşağıda bir örnek verilmiştir:
+
+```cpp
+class Node {
+public:
+    int index() const;
+};
+
+class String : public Node {
+public:
+    virtual int size() const = 0;
+};
+
+class Identifier : public Node {
+public:
+    const String& string() const;
+};
+
+template<typename T>
+int compare(T x, T y)
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+
+int compare(const Node& x, const Node& y)
+{
+    return compare(x.index(), y.index());
+}
+
+int f(const Identifier& x, const String& y)
+{
+    return compare(x.string(), y);
+}
+```
+
+Daha önce, ' a yapılan çağrı, `compare` işlev şablonunu için `compare` şablon bağımsız değişkeni ile özelleştirecek şekilde denemekteydi `T` `String` . Soyut bir sınıf olduğundan, geçerli bir özelleştirme oluşturması başarısız olur `String` . Yalnızca uygulanabilir aday olacaktır `compare(const Node&, const Node&)` . Ancak, C++ 20 ' nin altında, işlev çağrılana kadar soyut sınıf türü denetimi gerçekleşmez. Bu nedenle, `compare(String, String)` özelleşme, önemli adaylar kümesine eklenir ve ' den ' e dönüştürme, ' dan ' `const String&` a dönüştürme `String` işleminden daha iyi bir dönüştürme sırası olduğundan en iyi aday olarak seçilir `const String&` `const Node&` .
+
+C++ 20 ' nin altında Bu örnek için olası bir çözüm kavramlardır; diğer bir deyişle, öğesinin tanımını `compare` olarak değiştirin:
+
+```cpp
+template<typename T>
+int compare(T x, T y) requires !std::is_abstract_v<T>
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+```
+
+Ya da, C++ kavramları kullanılamıyorsa, SFINAE ' ye geri dönebiliyor:
+
+```cpp
+template<typename T, std::enable_if_t<!std::is_abstract_v<T>, int> = 0>
+int compare(T x, T y)
+{
+    return x < y ? -1 : (x > y ? 1 : 0);
+}
+```
+
+### <a name="support-for-p0960r3---allow-initializing-aggregates-from-a-parenthesized-list-of-values"></a>P0960R3 için destek-parantez içine alınmış değerler listesinden toplamalar başlatmaya izin ver
+
+C++ 20, parantez içine alınmış Başlatıcı listesi kullanarak bir toplama başlatma desteği ekler. Örneğin, aşağıdaki kod C++ 20 ' de geçerlidir:
+
+```cpp
+struct S {
+    int i;
+    int j;
+};
+
+S s(1, 2);
+```
+
+Bu özelliğin çoğu eklenebilir, diğer bir deyişle, daha önce derlenmeyen kod artık derlenir. Ancak, davranışını değiştirir `std::is_constructible` . C++ 17 modunda bu **`static_assert`** başarısız olur, ancak c++ 20 modunda başarılı olur:
+
+`static_assert(std::is_constructible_v<S, int, int>, "Assertion failed!");`
+
+Bu tür-nitelik aşırı yükleme çözümlemesini denetlemek için kullanılırsa, C++ 17 ile C++ 20 arasındaki davranış değişikliğine yol açabilir.
+
+### <a name="overload-resolution-involving-function-templates"></a>İşlev şablonları içeren aşırı yükleme çözümlemesi
+
+Daha önce derleyici, derlenmemelidir bölümünde bazı kodların derlenmesine izin verilir **`/permissive-`** . Bu efekt, derleyici, çalışma zamanı davranışındaki bir değişikliğe yanlış işlev lideri olarak çağırdı:
+
+```cpp
+int f(int);
+
+namespace N
+{
+    using ::f;
+    template<typename T>
+    T f(T);
+}
+
+template<typename T>
+void g(T&& t)
+{
+}
+
+void h()
+{
+    using namespace N;
+    g(f);
+}
+```
+
+Çağrısı `g` iki işlev içeren bir aşırı yükleme kümesi kullanır `::f` ve `N::f` . `N::f`Bir işlev şablonu olduğundan, derleyici işlev bağımsız değişkenini *çıkarılamayan bir bağlam* olarak kabul etmelidir. Bu durumda, `g` derleyici şablon parametresi için bir tür belirleyemediği için çağrısının başarısız olması gerektiğini gösterir `T` . Ne yazık ki derleyici, `::f` işlev çağrısı için iyi bir eşleşme olduğuna karar verdi. Bir hata yaymanın yerine, derleyici `g` bağımsız değişken olarak kullanarak çağırmak için kod üretir `::f` .
+
+`::f`İşlevin bağımsız değişkeni olarak kullanıldığı birçok durumda, kullanıcının beklediği şeydir, yalnızca kod ile derlendiyse bir hata sunuyoruz **`/permissive-`** .
+
+### <a name="migrating-from-await-to-c20-coroutines"></a>`/await`C++ 20 eş 'e geçiş
+
+Standart C++ 20 eş değerleri artık altında varsayılan olarak üzerinde yapılır **`/std:c++latest`** . Bunlar, anahtar altındaki destekten ve bu uygulamalardan farklıdır **`/await`** . ' Den **`/await`** Standart eş ve arasında geçiş yapmak bazı kaynak değişiklikleri gerektirebilir.
+
+#### <a name="non-standard-keywords"></a>Standart olmayan anahtar sözcükler
+
+Eski **`await`** ve **`yield`** anahtar sözcükler c++ 20 modunda desteklenmez. Kod **`co_await`** , yerine kullanılmalıdır **`co_yield`** . Standart mod aynı zamanda bir eş yordamın kullanılmasına izin vermez `return` . **`return`** Bir eş yordamın her birinde kullanması gerekir **`co_return`** .
+
+```cpp
+// /await
+task f_legacy() {
+    ...
+    await g();
+    return n;
+}
+// /std:c++latest
+task f() {
+    ...
+    co_await g();
+    co_return n;
+}
+```
+
+#### <a name="types-of-initial_suspendfinal_suspend"></a>İnitial_suspend/final_suspend türleri
+
+' In altında **`/await`** , Promise INITIAL ve askıya alma işlevleri döndürülen olarak bildirilemez **`bool`** . Bu davranış standart değildir. C++ 20 ' de bu işlevler, genellikle bir `std::suspend_always` işlev daha önce döndürülürse veya döndürülürse, genellikle önemsiz awaitables ' ı bir awaıse sınıf türü döndürmelidir **`true`** `std::suspend_never` **`false`** .
+
+```cpp
+// /await
+struct promise_type_legacy {
+    bool initial_suspend() noexcept { return false; }
+    bool final_suspend() noexcept { return true; }
+    ...
+};
+
+// /std:c++latest
+struct promise_type {
+    auto initial_susepend() noexcept { return std::suspend_never{}; }
+    auto final_suspend() noexcept { return std::suspend_always{}; }
+    ...
+};
+```
+
+#### <a name="type-of-yield_value"></a>Türü `yield_value`
+
+C++ 20 ' de promise `yield_value` işlevinin bir awasever döndürmesi gerekir. **`/await`** Modunda, `yield_value` işlevin döndürmesine izin verildi **`void`** ve her zaman askıya alır. Bu tür işlevler, döndüren bir işlevle değiştirilebilir `std::suspend_always` .
+
+```cpp
+// /await
+struct promise_type_legacy {
+    ...
+    void yield_value(int x) { next = x; };
+};
+
+// /std:c++latest
+struct promise_type {
+    ...
+    auto yield_value(int x) { next = x; return std::suspend_always{}; }
+};
+```
+
+#### <a name="exception-handling-function"></a>Özel durum işleme işlevi
+
+**`/await`** özel durum işleme işlevi olmayan bir Promise türünü ya da ' i alan adlı bir özel durum işleme işlevini destekler `set_exception` `std::exception_ptr` . C++ 20 ' de Promise türü, bağımsız değişken alan adlı bir işleve sahip olmalıdır `unhandled_exception` . Özel durum nesnesi, gerektiğinde adresinden elde edilebilir `std::current_exception` .
+
+```cpp
+// /await
+struct promise_type_legacy {
+    void set_exception(std::exception_ptr e) { saved_exception = e; }
+    ...
+};
+// /std:c++latest
+struct promise_type {
+    void unhandled_exception() { saved_exception = std::current_exception(); }
+    ...
+};
+```
+
+#### <a name="deduced-return-types-of-coroutines-not-supported"></a>Çıkarılan dönüş türleri desteklenmiyor
+
+C++ 20, gibi bir yer tutucu türü içeren bir dönüş türü ile eş yordamları desteklemez **`auto`** . Eş yordamın dönüş türleri açıkça bildirilmelidir. Altında **`/await`** , bu çıkarılan türler her zaman deneysel bir tür içerir ve gerekli türü tanımlayan bir üst bilginin eklenmesini gerektirir: `std::experimental::task<T>` ,, `std::experimental::generator<T>` veya `std::experimental::async_stream<T>` .
+
+```cpp
+// /await
+auto my_generator() {
+    ...
+    co_yield next;
+};
+
+// /std:c++latest
+#include <experimental/generator>
+std::experimental::generator<int> my_generator() {
+    ...
+    co_yield next;
+};
+```
+
+#### <a name="return-type-of-return_value"></a>Dönüş türü `return_value`
+
+Promise işlevinin dönüş türü olmalıdır `return_value` **`void`** . **`/await`** Modunda, dönüş türü herhangi bir şey olabilir ve yok sayılır. Bu tanı, yazarın dönüş değerini bir çağırana döndürüldüğünde yanlış varsaydığı hafif hataları algılamaya yardımcı olabilir `return_value` .
+
+```cpp
+// /await
+struct promise_type_legacy {
+    ...
+    int return_value(int x) { return x; } // incorrect, the return value of this function is unused and the value is lost.
+};
+
+// /std:c++latest
+struct promise_type {
+    ...
+    void return_value(int x) { value = x; }; // save return value
+};
+```
+
+#### <a name="return-object-conversion-behavior"></a>Nesne dönüştürme davranışını döndür
+
+Bir eş yordamın belirtilen dönüş türü Promise işlevinin dönüş türüyle eşleşmiyorsa `get_return_object` , öğesinden döndürülen nesne `get_return_object` eş yordamın dönüş türüne dönüştürülür. Bu dönüştürme, altında, **`/await`** eş yordam olamaz gövdesinin yürütme şansı olmadan önce erken yapılır. **`/std:c++latest`** ' De, bu dönüştürme yalnızca değer çağrıyı yapana döndürüldüğünde gerçekleştirilir. Eş metin gövdesinin içinden döndürülen nesneyi kullanmasını sağlamak için ilk askıya alma noktasında askıya olmayan eş değerleri sağlar `get_return_object` .
+
+#### <a name="coroutine-promise-parameters"></a>Coroutine Promise parametreleri
+
+C++ 20 ' de, derleyici eş yordam olamaz parametrelerini (varsa) Promise türünün oluşturucusuna geçirmeye çalışır. Başarısız olursa, varsayılan bir Oluşturucu ile yeniden dener. **`/await`** Modunda, yalnızca varsayılan Oluşturucu kullanıldı. Bu değişiklik, taahhütde birden çok Oluşturucu varsa veya bir eş yordam olamaz parametresinden Promise türüne bir dönüşüm varsa, davranıştaki farka yol açabilir.
+
+```cpp
+struct coro {
+    struct promise_type {
+        promise_type() { ... }
+        promise_type(int x) { ... }
+        ...
+    };
+};
+
+coro f1(int x);
+
+// Under /await the promise gets constructed using the default constructor.
+// Under /std:c++latest the promise gets constructed using the 1-argument constructor.
+f1(0);
+
+struct Object {
+template <typename T> operator T() { ... } // Converts to anything!
+};
+
+coro f2(Object o);
+
+// Under /await the promise gets constructed using the default constructor
+// Under /std:c++latest the promise gets copy- or move-constructed from the result of
+// Object::operator coro::promise_type().
+f2(Object{});
+```
+
+### <a name="permissive--and-c20-modules-are-on-by-default-under-stdclatest"></a>`/permissive-` ve C++ 20 modülleri, varsayılan olarak `/std:c++latest`
+
+C++ 20 modülleri desteği varsayılan olarak ' ın altında bulunur **`/std:c++latest`** . Bu değişiklik hakkında daha fazla bilgi ve **`module`** ve **`import`** koşullu anahtar sözcük olarak kabul edilen senaryolar hakkında daha fazla bilgi için bkz. [Visual Studio 2019 sürüm 16,8 ' de MSVC ile Standart c++ 20 modülleri desteği](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/).
+
+Modül desteği için bir önkoşul olarak, **`permissive-`** belirtildiğinde artık etkindir **`/std:c++latest`** . Daha fazla bilgi için bkz. [`/permissive-`](../build/reference/permissive-standards-conformance.md).
+
+Daha önce altında derlenen **`/std:c++latest`** ve uyumsuz derleyici davranışları gerektiren kodda, **`permissive`** derleyicide katı uyumluluk modunu kapatmak için belirtilebilir. Derleyici seçeneği, **`/std:c++latest`** komut satırı bağımsız değişken listesinden sonra gelmelidir. Ancak, **`permissive`** modüller kullanımı ile karşılaşıldığında hata oluşur:
+
+> hata C1214: modüller ' *Option* ' aracılığıyla istenen standart olmayan davranışla çakışıyor
+
+*Seçeneğinin* en yaygın değerleri şunlardır:
+
+| Seçenek | Açıklama |
+|--|--|
+| **`/Zc:twoPhase-`** | C++ 20 modülleri için iki aşamalı ad arama gerekir ve tarafından kapsanıyor **`permissive-`** . |
+| **`/Zc:hiddenFriend-`** | Standart gizli arkadaş adı arama kurallarını izin vermez. C++ 20 modülleri için gereklidir ve tarafından kapsanıyor **`permissive-`** . |
+| **`/Zc:preprocessor-`** | Yalnızca C++ 20 başlık birimi kullanımı ve oluşturma için uyumlu ön işlemci gereklidir. Adlandırılmış modüller bu seçeneği gerektirmez. |
+
+[`/experimental:module`](../build/reference/experimental-module.md) *`std.*`* Henüz standartlaştırılmış olmadığından, Visual Studio ile birlikte gelen modülleri kullanmak için bu seçenek hala gereklidir.
+
+**`/experimental:module`** Seçeneği de ve anlamına **`/Zc:twoPhase`** gelir **`/Zc:hiddenFriend`** . Daha önce modüllerle derlenen kod bazen **`/Zc:twoPhase-`** Yalnızca modül tüketilmişse ile derlenebilir. Bu davranış artık desteklenmiyor.
+
 ## <a name="bug-fixes-and-behavior-changes-in-visual-studio-2019"></a><a name="update_160"></a> Visual Studio 2019 'de hata düzeltmeleri ve davranış değişiklikleri
 
 ### <a name="reinterpret_cast-in-a-constexpr-function"></a>`reinterpret_cast` bir `constexpr` işlevde
@@ -1566,7 +1898,7 @@ Bu tür değişkenler, içinde kullanıldıkları aynı çeviri biriminde tanım
 
 C++ 20 ' den önceki C++ standartları ' nda, türetilmiş bir sınıftan taban sınıfa dönüştürme, türetilmiş sınıfın bir bütün sınıf türü olmasını gerektirmez. C++ standart Komitesi, C++ dilinin tüm sürümleri için geçerli olan geriye dönük etkin bir hata raporu değişikliğini onayladı. Bu değişiklik, `std::is_base_of` türetilmiş sınıfın bir bütün sınıf türü olmasını gerektiren gibi tür nitelikleri ile dönüştürme işlemini hizalar.
 
-İşte bir örnek:
+Aşağıda bir örnek verilmiştir:
 
 ```cpp
 template<typename A, typename B>

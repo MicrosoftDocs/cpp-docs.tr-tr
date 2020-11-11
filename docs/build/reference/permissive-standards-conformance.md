@@ -1,7 +1,7 @@
 ---
 title: /permissive- (Standartlara uyumluluk)
 description: Microsoft C++/Permissive-(standartlar uygunluğu) derleyici seçeneği için başvuru kılavuzu.
-ms.date: 06/04/2020
+ms.date: 10/28/2020
 f1_keywords:
 - /permissive
 - VC.Project.VCCLCompilerTool.ConformanceMode
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Standards conformance compiler options
 - permissive compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 36861705acf0328af5c1207c3bf33a098fc3b348
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: ae4ab62f6027d984217d750294f16138a6969f16
+ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520557"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94448483"
 ---
 # <a name="permissive--standards-conformance"></a>/permissive- (Standartlara uyumluluk)
 
@@ -24,25 +24,28 @@ Derleyiciye standartlar uygunluk modunu belirtin. Kodunuzda uyumluluk sorunları
 
 ## <a name="syntax"></a>Syntax
 
-> **`/permissive-`**
+> **`/permissive-`**\
+> **`/permissive`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, Visual Studio 2017 ve üzeri sürümlerde desteklenir.
+Bu **`/permissive-`** seçenek, Visual Studio 2017 ve üzeri sürümlerde desteklenir. **`/permissive`** Visual Studio 2019 sürüm 16,8 ve sonraki sürümlerde desteklenir.
 
-**`/permissive-`** Standartlara uygun derleyici davranışını belirtmek için derleyici seçeneğini kullanabilirsiniz. Bu seçenek, izin veren davranışları devre dışı bırakır ve [**`/Zc`**](zc-conformance.md) derleme seçeneklerini katı uyumluluk için ayarlar. IDE 'de, bu seçenek IntelliSense altyapısının duyarlı olmayan kodun altını çizerken de olmasını sağlar.
+**`/permissive-`** Standartlara uygun derleyici davranışını belirtmek için derleyici seçeneğini kullanabilirsiniz. Bu seçenek, izin veren davranışları devre dışı bırakır ve [`/Zc`](zc-conformance.md) derleme seçeneklerini katı uyumluluk için ayarlar. IDE 'de, bu seçenek IntelliSense altyapısının duyarlı olmayan kodun altını çizerken de olmasını sağlar.
+
+**`/permissive-`** Seçeneği, hangi dil yapılarının uyumsuz olduğunu anlamak için geçerli derleyici sürümündeki uygunluk desteğini kullanır. Bu seçenek, kodunuzun C++ standardının belirli bir sürümüne uyup uymadığını belirleyemez. En son taslak standardı için uygulanan tüm derleyici desteğini etkinleştirmek için [`/std:c++latest`](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini Şu anda uygulanmış olan C++ 17 standardına göre kısıtlamak için [`/std:c++17`](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini C++ 14 standardına daha yakından eşleşecek şekilde kısıtlamak için, [`/std:c++14`](std-specify-language-standard-version.md) varsayılan olan seçeneğini kullanın.
+
+Visual Studio 2019 sürüm 16,8 ' den başlayarak, **`/std:c++latest`** seçeneği seçeneği örtülü olarak ayarlar **`/permissive-`** . C++ 20 modülleri desteği için gereklidir. Kodunuzda modül desteği gerekmez, ancak altında etkinleştirilmiş diğer özellikler gerekir **`/std:c++latest`** . Son tire olmadan seçeneğini kullanarak Microsoft uzantı desteğini açık bir şekilde etkinleştirebilirsiniz **`/permissive`** .
 
 Varsayılan olarak, bu **`/permissive-`** seçenek Visual Studio 2017 sürüm 15,5 ve sonraki sürümleri tarafından oluşturulan yeni projelerde ayarlanır. Bu, önceki sürümlerde varsayılan olarak ayarlanmamış. Seçenek ayarlandığında, kodunuzda standart olmayan dil yapıları algılandığında derleyici tanılama hataları veya uyarılar üretir. Bu yapılar, pre-C + + 11 kodundaki bazı yaygın hataları içerir.
 
 **`/permissive-`** Bu seçenek, Windows Fall CREATORS SDK (10.0.16299.0) ' den başlayarak, yazılım geliştirme seti (SDK) veya Windows Sürücü Seti (WDK) gibi en son Windows setlerinden tüm üstbilgi dosyalarının neredeyse tümüyle uyumludur. Diğer kaynak kodu uyumluluk nedenleriyle, SDK 'nın daha eski sürümleri tarafından derlenmesi başarısız olabilir **`/permissive-`** . Derleyici ve SDK 'lar farklı sürüm zaman çizelgeleriyle birlikte bulunduğundan bazı sorunlar daha vardır. Belirli üstbilgi dosyası sorunları için aşağıdaki [Windows üst bilgi sorunları](#windows-header-issues) bölümüne bakın.
 
-**`/permissive-`** Seçeneği [**`/Zc:referenceBinding`**](zc-referencebinding-enforce-reference-binding-rules.md) ,, [**`/Zc:strictStrings`**](zc-strictstrings-disable-string-literal-type-conversion.md) ve [**`/Zc:rvalueCast`**](zc-rvaluecast-enforce-type-conversion-rules.md) seçeneklerini uyumlu davranış olarak ayarlar. Bu seçenekler varsayılan olarak duyarlı olmayan davranışa sahiptir. **`/Zc`** **`/permissive-`** Bu davranışı geçersiz kılmak için komut satırından sonra belirli seçenekleri geçirebilirsiniz.
+**`/permissive-`** Seçeneği [`/Zc:referenceBinding`](zc-referencebinding-enforce-reference-binding-rules.md) ,, [`/Zc:strictStrings`](zc-strictstrings-disable-string-literal-type-conversion.md) ve [`/Zc:rvalueCast`](zc-rvaluecast-enforce-type-conversion-rules.md) seçeneklerini uyumlu davranış olarak ayarlar. Bu seçenekler varsayılan olarak duyarlı olmayan davranışa sahiptir. **`/Zc`** **`/permissive-`** Bu davranışı geçersiz kılmak için komut satırından sonra belirli seçenekleri geçirebilirsiniz.
 
-Derleyicinin Visual Studio 2017 sürüm 15,3 ' den başlayarak sürümünde seçeneği, seçeneğini **`/permissive-`** Ayarlar [**`/Zc:ternary`**](zc-ternary.md) . Derleyici Ayrıca iki aşamalı ad araması için gereksinimlerin daha fazlasını uygular. **`/permissive-`** Seçenek ayarlandığında, derleyici işlev ve sınıf şablonu tanımlarını ayrıştırır ve şablonlarda kullanılan bağımlı ve bağımlı olmayan adları tanımlar. Bu sürümde, yalnızca ad bağımlılığı Analizi gerçekleştirilir.
+Derleyicinin Visual Studio 2017 sürüm 15,3 ' den başlayarak sürümünde seçeneği, seçeneğini **`/permissive-`** Ayarlar [`/Zc:ternary`](zc-ternary.md) . Derleyici Ayrıca iki aşamalı ad araması için gereksinimlerin daha fazlasını uygular. **`/permissive-`** Seçenek ayarlandığında, derleyici işlev ve sınıf şablonu tanımlarını ayrıştırır ve şablonlarda kullanılan bağımlı ve bağımlı olmayan adları tanımlar. Bu sürümde, yalnızca ad bağımlılığı Analizi gerçekleştirilir.
 
 Standart uygulamaya kaydolan ortama özgü uzantılar ve dil alanı tarafından etkilenmemektedir **`/permissive-`** . Örneğin, Microsoft 'a özgü **`__declspec`** , çağırma kuralı ve yapılandırılmış özel durum işleme anahtar sözcükleri ve derleyiciye özgü pragma yönergeleri ya da öznitelikleri, derleyici tarafından mod 'da bayraklamaz **`/permissive-`** .
-
-**`/permissive-`** Seçeneği, hangi dil yapılarının uyumsuz olduğunu anlamak için geçerli derleyici sürümündeki uygunluk desteğini kullanır. Bu seçenek, kodunuzun C++ standardının belirli bir sürümüne uyup uymadığını belirleyemez. En son taslak standardı için uygulanan tüm derleyici desteğini etkinleştirmek için [**`/std:c++latest`**](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini Şu anda uygulanmış olan C++ 17 standardına göre kısıtlamak için [**`/std:c++17`**](std-specify-language-standard-version.md) seçeneğini kullanın. Derleyici desteğini C++ 14 standardına daha yakından eşleşecek şekilde kısıtlamak için, [**`/std:c++14`**](std-specify-language-standard-version.md) varsayılan olan seçeneğini kullanın.
 
 Tüm C++ 11, C++ 14 ve C++ 17 standartlarına uygun kod, Visual Studio 2017 ' nin tüm sürümlerinde MSVC derleyicisi tarafından desteklenmez. Visual Studio sürümüne bağlı olarak, bu **`/permissive-`** seçenek iki aşamalı ad aramasının bazı yönlerinde sorunları tespit edebilir, const olmayan bir başvuruyu geçici olarak bağlayarak, başlangıç olarak doğrudan başlatma olarak, başlatma sırasında birden fazla Kullanıcı tanımlı dönüştürmeye izin verir, veya mantıksal işleçler için alternatif belirteçler ve desteklenmeyen diğer uygunluk alanları. Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md). En iyi şekilde yararlanmak için **`/permissive-`** Visual Studio 'yu en son sürüme güncelleştirin.
 
@@ -426,7 +429,7 @@ Bu sorunlar, Windows Fall Creators Update SDK 'daki (10.0.16299.0) Kullanıcı m
    typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
    ```
 
-   Kapsamlı olmayan numaralandırmanın ileri bildirim bir Microsoft uzantısıdır. Bu sorunu gidermek için, seçeneği olmadan cellularapi_oem. h içeren dosyaları derleyin **`/permissive-`** veya [**`/wd`**](compiler-option-warning-level.md) C4471 uyarı seçeneğini kullanın.
+   Kapsamlı olmayan numaralandırmanın ileri bildirim bir Microsoft uzantısıdır. Bu sorunu gidermek için, seçeneği olmadan cellularapi_oem. h içeren dosyaları derleyin **`/permissive-`** veya [`/wd`](compiler-option-warning-level.md) C4471 uyarı seçeneğini kullanın.
 
 - Um/omscript. h 'de sorun
 
@@ -466,4 +469,4 @@ Visual Studio 2017 sürüm 15,5 ' den önceki sürümlerde şu yordamı kullanı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)\
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

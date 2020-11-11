@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - /guard:ehcont
 - /guard:ehcont compiler option
-ms.openlocfilehash: 0c5a49d578e626d052aa9d132afbaee5686cb7a7
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: ea6a225dce9bf76ff2dc69945916c006a0d5ec0b
+ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520531"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94448379"
 ---
-# <a name="guardehcont-enable-eh-continuation-metadata"></a>/guard:ehcont (EH Devamlılık Meta Verilerini Etkinleştir)
+# <a name="guardehcont-enable-eh-continuation-metadata"></a>`/guard:ehcont` (EH devamlılık meta verilerini etkinleştir)
 
 Derleyiciye göre EH devamlılık (EHCONT) meta verilerini oluşturmayı mümkün.
 
 ## <a name="syntax"></a>Syntax
 
-> **`/guard:ehcont`**[**`-`**]
+> **`/guard:ehcont`** [ **`-`** ]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -29,13 +29,13 @@ Derleyiciye göre EH devamlılık (EHCONT) meta verilerini oluşturmayı mümkü
 
 Bu **`/guard:ehcont`** seçenek, Visual Studio 2019 sürüm 16,7 ve sonraki sürümlerinde kullanılabilir. Özelliği, 64 bit IŞLETIM sisteminde 64 bitlik süreçler için desteklenir.
 
-[Denetim akışı zorlama teknolojisi (CET)](https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf) , return-odaklı programlama (ROP) tabanlı saldırılara karşı koruyan donanım tabanlı bir güvenlik özelliğidir. Denetim akışı bütünlüğünü zorlamak için her çağrı yığını için bir "gölge yığını" sağlar.
+[Denetim akışı zorlama teknolojisi (CET)](https://software.intel.com/sites/default/files/managed/4d/2a/control-flow-enforcement-technology-preview.pdf) , Return-Oriented programlama (ROP) tabanlı saldırılara karşı koruyan donanım tabanlı bir güvenlik özelliğidir. Denetim akışı bütünlüğünü zorlamak için her çağrı yığını için bir "gölge yığını" sağlar.
 
 Gölge yığınları, ROP saldırılarını engellemek için kullanılabilir olduğunda, saldırganlar diğer yararlanma tekniklerini kullanmak üzere taşınır. Kullanmanın bir tekniği, [bağlam](/windows/win32/api/winnt/ns-winnt-context) yapısının içindeki yönerge işaretçisi değerini bozmasıdır. Bu yapı,, ve gibi bir iş parçacığının yürütmesini yeniden yönlendiren Sistem çağrılarına geçirilir `NtContinue` [`RtlRestoreContext`](/windows/win32/api/winnt/nf-winnt-rtlrestorecontext) [`SetThreadContext`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadcontext) . `CONTEXT`Yapı bellekte depolanır. İçerdiği yönerge işaretçisini bozan, sistem çağrılarının bir saldırgan denetimli adrese aktarılmasına neden olabilir. Şu anda `NTContinue` herhangi bir devamlılık noktasıyla çağrılabilir. Bu nedenle, gölge yığınları etkinleştirildiğinde yönerge işaretçisini doğrulamak önemlidir.
 
-`RtlRestoreContext`ve `NtContinue` , yapılandırılmış özel durum işleme (SEH) özel durumu bloğunu içeren hedef çerçeveye geriye doğru geri sarma sırasında kullanılır **`__except`** . **`__except`** Blok işaretçisi doğrulamasında başarısız olacağından, bloğun yönerge işaretçisinin gölge yığında olması beklenmez. **`/guard:ehcont`** Derleyici anahtarı bir "Eh devamlılık tablosu" oluşturur. İkili içindeki tüm geçerli özel durum işleme devam hedeflerinin RVA bir sıralanmış listesini içerir. `NtContinue`önce Kullanıcı tarafından sağlanan yönerge işaretçisinin gölge yığınını denetler ve yönerge işaretçisi orada bulunmazsa, yönerge işaretçisini içeren ikiliden EH devamlılık tablosunu denetlemeye devam eder. Kapsayan ikili tablo ile derlenmediyse, eski ikili dosyalarla uyumluluk için `NtContinue` devam etmesine izin verilir. Bir EHCONT verisi olmayan eski ikililer arasında ayrım yapmak önemlidir ve EHCONT verileri içeren ikili dosyalar ancak tablo girişi yoktur. Eski, ikilinin içindeki tüm adreslere geçerli devamlılık hedefleri olarak izin verir. İkinci değer, geçerli bir devamlılık hedefi olarak ikili içindeki hiçbir adrese izin vermez.
+`RtlRestoreContext` ve `NtContinue` , yapılandırılmış özel durum işleme (SEH) özel durumu bloğunu içeren hedef çerçeveye geriye doğru geri sarma sırasında kullanılır **`__except`** . **`__except`** Blok işaretçisi doğrulamasında başarısız olacağından, bloğun yönerge işaretçisinin gölge yığında olması beklenmez. **`/guard:ehcont`** Derleyici anahtarı bir "Eh devamlılık tablosu" oluşturur. İkili içindeki tüm geçerli özel durum işleme devam hedeflerinin RVA bir sıralanmış listesini içerir. `NtContinue` önce Kullanıcı tarafından sağlanan yönerge işaretçisinin gölge yığınını denetler ve yönerge işaretçisi orada bulunmazsa, yönerge işaretçisini içeren ikiliden EH devamlılık tablosunu denetlemeye devam eder. Kapsayan ikili tablo ile derlenmediyse, eski ikili dosyalarla uyumluluk için `NtContinue` devam etmesine izin verilir. Bir EHCONT verisi olmayan eski ikililer arasında ayrım yapmak önemlidir ve EHCONT verileri içeren ikili dosyalar ancak tablo girişi yoktur. Eski, ikilinin içindeki tüm adreslere geçerli devamlılık hedefleri olarak izin verir. İkinci değer, geçerli bir devamlılık hedefi olarak ikili içindeki hiçbir adrese izin vermez.
 
-**`/guard:ehcont`** Bir ikili IÇIN Eh devamlılık hedefi RVA oluşturmak üzere hem derleyiciye hem de bağlayıcıya geçirilmesi gerekir. İkili 'niz tek bir komut kullanılarak derlenirse `cl` , derleyici seçeneği bağlayıcıya geçirir. Derleyici Ayrıca [**`/guard:cf`**](guard-enable-control-flow-guard.md) seçeneğini bağlayıcıya geçirir. Ayrı olarak derleyip bağlarsanız, bu seçeneklerin hem derleyici hem de bağlayıcı komutlarında ayarlanması gerekir.
+**`/guard:ehcont`** Bir ikili IÇIN Eh devamlılık hedefi RVA oluşturmak üzere hem derleyiciye hem de bağlayıcıya geçirilmesi gerekir. İkili 'niz tek bir komut kullanılarak derlenirse `cl` , derleyici seçeneği bağlayıcıya geçirir. Derleyici Ayrıca [`/guard:cf`](guard-enable-control-flow-guard.md) seçeneğini bağlayıcıya geçirir. Ayrı olarak derleyip bağlarsanız, bu seçeneklerin hem derleyici hem de bağlayıcı komutlarında ayarlanması gerekir.
 
 Kullanılarak derlenen kodu, **`/guard:ehcont`** Kitaplıklar ve derleme olmadan derlenen nesne dosyaları için bağlayabilirsiniz. Bağlayıcı aşağıdaki senaryolardan birinde önemli bir hata döndürür:
 
@@ -47,7 +47,7 @@ Kullanılarak derlenen kodu, **`/guard:ehcont`** Kitaplıklar ve derleme olmadan
 
 Bağlayıcı önemli bir hata döndürür, çünkü bu senaryolarda meta veriler üretemiyor. Bunun anlamı, bir özel durumun oluşturulmasından dolayı çalışma zamanında kilitlenmeye neden olabilir.
 
-Comamats 'de bulunan ancak kullanılarak derlenmediği SEH bölüm bilgileri için **`/guard:ehcont`** bağlayıcı, uyarı **LNK4291**yayar. Bu durumda bağlayıcı, bölüm için doğru ancak klasik meta veriler üretir. Bu uyarıyı yoksaymak için [/Ignore (belirli uyarıları yoksay)](ignore-ignore-specific-warnings.md)seçeneğini kullanın.
+Comamats 'de bulunan ancak kullanılarak derlenmediği SEH bölüm bilgileri için **`/guard:ehcont`** bağlayıcı, uyarı **LNK4291** yayar. Bu durumda bağlayıcı, bölüm için doğru ancak klasik meta veriler üretir. Bu uyarıyı yoksaymak için [/Ignore (belirli uyarıları yoksay)](ignore-ignore-specific-warnings.md)seçeneğini kullanın.
 
 Bağlayıcı meta veriler üretemiyor, aşağıdaki hatalardan birini yayar:
 
@@ -91,4 +91,4 @@ e:\>link /dump /loadconfig CETTest.exe
 
 [/Guard (denetim akışı korumasını etkinleştir)](guard-enable-control-flow-guard.md)\
 [MSVC derleyici seçenekleri](compiler-options.md)\
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)
