@@ -5,12 +5,12 @@ ms.date: 10/18/2020
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.openlocfilehash: 5718642f6a7f714dd0a38ec34211ddc0be4e8fd2
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 1fdc4f79a7ae3cd45b66cb312a9297754acfc964
+ms.sourcegitcommit: 1f85841f403e76d041c34a7c77089dab389960a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924700"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518823"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
@@ -45,7 +45,7 @@ Derleyicinin bu sürümleri yeni uyarılar sunmuştur:
 |  Visual Studio 2019 sürüm 16.4 | 19.24.28314.0 |
 | Visual Studio 2019 sürüm 16,5 | 19.25.28610.0 |
 | Visual Studio 2019 sürüm 16,6 | 19.26.28805.0 |
-| Visual Studio 2019 sürüm 16,7 | 19.26.29112.0 |
+| Visual Studio 2019 sürüm 16,7 | 19.27.29112.0 |
 
 Seçeneğe yalnızca büyük sayıyı, büyük ve küçük rakamları veya ana, alt ve yapı numaralarını belirtebilirsiniz **`/Wv`** . Derleyici, belirtilen sayıyla başlayan sürümlerle eşleşen tüm uyarıları raporlar. Belirtilen sayıdan daha büyük sürümlere ait tüm uyarıları bastırır. Örneğin, **`/Wv:17`** Visual Studio 2012 ' nin herhangi bir sürümünde veya üzerinde tanıtılan uyarıları raporlar ve Visual Studio 2013 (sürüm 18) veya daha sonraki bir derleyici tarafından tanıtılan uyarıları göstermez. Visual Studio 2015 güncelleştirme 2 ve sonrasında tanıtılan uyarıları gizlemek için kullanabilirsiniz **`/Wv:19.00.23506`** . Visual Studio **`/Wv:19.11`** 2017 sürüm 15,5 ' den önceki herhangi bir Visual Studio sürümünde tanıtılan uyarıları raporlamak için kullanın, ancak Visual studio 2017 sürüm 15,5 ve sonrasında sunulan uyarıları gizleyin.
 

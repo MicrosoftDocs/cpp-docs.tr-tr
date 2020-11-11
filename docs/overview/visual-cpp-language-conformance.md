@@ -1,17 +1,17 @@
 ---
 title: Microsoft C++ dil uygunluğu tablosu
 description: Visual Studio sürümüne göre Microsoft C++ Uyumluluk güncelleştirmeleri tablosu.
-ms.date: 08/06/2020
+ms.date: 11/10/2020
 ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: c046bec3f1ebad4441e3ec51a123bd8c28a4d871
-ms.sourcegitcommit: f656092eebbcb148ca4d3b7a6a8508eff8f7e85f
+ms.openlocfilehash: 0b00268f09d6a4da64ab0eb8ab8e60e368bbf1b8
+ms.sourcegitcommit: 1f85841f403e76d041c34a7c77089dab389960a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90836621"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518810"
 ---
 # <a name="microsoft-c-language-conformance-table"></a>Microsoft C++ dil uygunluğu tablosu
 
@@ -92,11 +92,11 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0588R1 Simplifying implicit lambda capture`](https://wg21.link/p0588r1) | VS 2019 16,4 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P1771R1 [[nodiscard]] for constructors`](https://wg21.link/p1771r1) | VS 2019 16,4 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P1825R0 Merged wording for P0527R1 and P1155R3, more implicit moves`](https://wg21.link/p1825r0) | VS 2019 16,4 <sup> [17](#note_17)</sup> |
-| &nbsp;&nbsp;[`P0929R2 Checking for abstract class types`](https://wg21.link/P0929R2) | Hayır |
-| &nbsp;&nbsp;[`P0962R2 Relaxing the range-for loop customization point finding rules`](https://wg21.link/p0962r1) | Hayır |
+| &nbsp;&nbsp;[`P0929R2 Checking for abstract class types`](https://wg21.link/P0929R2) | VS 2019 16,5 <sup> [17](#note_17)</sup> |
+| &nbsp;&nbsp;[`P0962R2 Relaxing the range-for loop customization point finding rules`](https://wg21.link/p0962r1) | VS 2019 16,5 <sup> [17](#note_17)</sup> |
 | &nbsp;&nbsp;[`P0859R0 CWG 1581: When are constexpr member functions defined`](https://wg21.link/p0859r0) | Hayır |
-| &nbsp;&nbsp;[`P1009R2 Array size deduction in new-expressions`](https://wg21.link/P1009R2) | Hayır |
-| &nbsp;&nbsp;[`P1286R2 Contra CWG DR1778`](https://wg21.link/P1286R2) | Hayır |
+| &nbsp;&nbsp;[`P1009R2 Array size deduction in new-expressions`](https://wg21.link/P1009R2) | VS 2019 16,7 <sup> [17](#note_17)</sup> |
+| &nbsp;&nbsp;[`P1286R2 Contra CWG DR1778`](https://wg21.link/P1286R2) | VS 2019 16,8 <sup> [17](#note_17)</sup> |
 | __C++ 20 çekirdek dil özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`P0704R1 Fixing const lvalue ref-qualified pointers to members`](https://wg21.link/p0704r1) | VS 2015 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`P1041R4 Make char16_t/char32_t string literals be UTF-16/32`](https://wg21.link/P1041R4) | VS 2015 <sup> [14](#note_14)</sup> |
@@ -137,6 +137,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P1907R1 Inconsistencies with non-type template parameters`](https://wg21.link/P1907R1) | VS 2019 16,6 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1971R0 US053: Mandate the return type for return_void and return_value to be void`](https://wg21.link/P1971R0) | VS 2019 16,6 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1971R0 US065: Apply Coroutines issue 24 from P0664R8`](https://wg21.link/P1971R0) | VS 2019 16,6 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1979R0 Resolution to US086`](https://wg21.link/P1979R0) | VS 2019 16,6 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0388R4 Permit conversions to arrays of unknown bound`](https://wg21.link/P0388R4) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0466R5 Layout-compatibility and Pointer-interconvertibility Traits`](https://wg21.link/P0466R5) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0722R3 Efficient sized delete for variable sized classes`](https://wg21.link/P0722R3) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
@@ -154,35 +155,34 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P1969R0 CWG 2382: Array allocation overhead for non-allocating placement new`](https://wg21.link/p1969r0#2382) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1969R0 CWG 2441: Inline function parameters`](https://wg21.link/p1969r0#2441) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1971R0 US052: Non-executed return statements in coroutines`](https://wg21.link/P1971R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1972R0 US105: Check satisfaction of constraints for non-templates when forming pointer to function`](https://wg21.link/P1972R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1980R0 CA096: Declaration matching for non-dependent requires-clauses`](https://wg21.link/P1980R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2082R1 Fixing CTAD for aggregates`](https://wg21.link/P2082R1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2085R0 Consistent defaulted comparisons`](https://wg21.link/P2085R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2103R0 US033: Allow "import" inside linkage-specifications`](https://wg21.link/P2103R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2107R0 US064: Copy semantics of coroutine parameters`](https://wg21.link/P2107R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0912R5 Coroutines`](https://wg21.link/P0912R5) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1103R3 Modules`](https://wg21.link/P1103R3) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0315R4 Allowing lambdas in unevaluated contexts`](https://wg21.link/P0315R4) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0848R3 Conditionally trivial special member functions`](https://wg21.link/P0848R3) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0960R3 Allow initializing aggregates from a parenthesized list of values`](https://wg21.link/P0960R3) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1766R1 Mitigating minor modules maladies`](https://wg21.link/P1766R1) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1811R0 Relaxing redefinition restrictions for re-exportation robustness`](https://wg21.link/P1811R0) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1874R1 Dynamic Initialization Order of Non-Local Variables in Modules`](https://wg21.link/P1874R1) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1975R0 Fixing the wording of parenthesized aggregate-initialization`](https://wg21.link/P1975R0) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0641R2 const mismatch with defaulted copy constructor`](https://wg21.link/P0641R2) | Kısmi |
-| &nbsp;&nbsp;[`P0912R5 Coroutines`](https://wg21.link/P0912R5) | Kısmi |
-| &nbsp;&nbsp;[`P1103R3 Modules`](https://wg21.link/P1103R3) | Kısmi |
 | &nbsp;&nbsp;[`P1141R2 Yet another approach for constrained declarations`](https://wg21.link/P1141R2) | Kısmi |
-| &nbsp;&nbsp;[`P0315R4 Allowing lambdas in unevaluated contexts`](https://wg21.link/P0315R4) | Hayır |
 | &nbsp;&nbsp;[`P0634R3 Down with typename!`](https://wg21.link/P0634R3) | Hayır |
-| &nbsp;&nbsp;[`P0735R1 Interaction of memory_order_consume with release sequences`](https://wg21.link/P0735R1) | Hayır |
 | &nbsp;&nbsp;[`P0784R7 More constexpr containers`](https://wg21.link/P0784R7) | Hayır |
 | &nbsp;&nbsp;[`P0840R2 [[no_unique_address]] attribute`](https://wg21.link/P0840R2) | Hayır |
-| &nbsp;&nbsp;[`P0848R3 Conditionally trivial special member functions`](https://wg21.link/P0848R3) | Hayır |
-| &nbsp;&nbsp;[`P0960R3 Allow initializing aggregates from a parenthesized list of values`](https://wg21.link/P0960R3) | Hayır |
 | &nbsp;&nbsp;[`P1064R0 Allowing virtual function calls in constant expressions`](https://wg21.link/P1064R0) | Hayır |
 | &nbsp;&nbsp;[`P1073R3 Immediate functions`](https://wg21.link/P1073R3) | Hayır |
 | &nbsp;&nbsp;[`P1143R2 constinit`](https://wg21.link/P1143R2) | Hayır |
-| &nbsp;&nbsp;[`P1236R1 Signed integers are two's complement`](https://wg21.link/P1236R1) | Yok |
 | &nbsp;&nbsp;[`P1327R1 Allowing dynamic_cast, polymorphic typeid in constant expressions`](https://wg21.link/P1327R1) | Hayır |
 | &nbsp;&nbsp;[`P1353R0 Missing feature-test macros`](https://wg21.link/P1353R0) | Hayır |
 | &nbsp;&nbsp;[`P1668R1 Permitting unevaluated inline assembly in constexpr functions`](https://wg21.link/P1668R1) | Hayır |
-| &nbsp;&nbsp;[`P1766R1 Mitigating minor modules maladies`](https://wg21.link/P1766R1) | Hayır |
-| &nbsp;&nbsp;[`P1811R0 Relaxing redefinition restrictions for re-exportation robustness`](https://wg21.link/P1811R0) | Hayır |
-| &nbsp;&nbsp;[`P1874R1 Dynamic Initialization Order of Non-Local Variables in Modules`](https://wg21.link/P1874R1) | Hayır |
-| &nbsp;&nbsp;[`P1972R0 US105: Check satisfaction of constraints for non-templates when forming pointer to function`](https://wg21.link/P1972R0) | Hayır |
-| &nbsp;&nbsp;[`P1975R0 Fixing the wording of parenthesized aggregate-initialization`](https://wg21.link/P1975R0) | Hayır |
-| &nbsp;&nbsp;[`P1979R0 Resolution to US086`](https://wg21.link/P1979R0) | Hayır |
-| &nbsp;&nbsp;[`P1980R0 CA096: Declaration matching for non-dependent requires-clauses`](https://wg21.link/P1980R0) | Hayır |
+| &nbsp;&nbsp;[`P0735R1 Interaction of memory_order_consume with release sequences`](https://wg21.link/P0735R1) | Yok |
+| &nbsp;&nbsp;[`P1236R1 Signed integers are two's complement`](https://wg21.link/P1236R1) | Yok |
 
 ## <a name="standard-library-features"></a>Standart Kitaplık Özellikleri
 
@@ -219,7 +219,7 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0340R3 SFINAE-Friendly underlying_type`](https://wg21.link/P0340R3) | VS 2019 16,5 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`P0356R5 bind_front()`](https://wg21.link/P0356R5) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0439R0 enum class memory_order`](https://wg21.link/p0439r0) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
-| &nbsp;&nbsp;[`P0553R4 <bit> Rotating And Counting Functions`](https://wg21.link/P0553R4) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0553R4 <bit> Rotating And Counting Functions`](https://wg21.link/P0553R4) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0556R3 <bit> ispow2(), ceil2(), floor2(), log2p1()`](https://wg21.link/P0556R3) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0595R2 is_constant_evaluated()`](https://wg21.link/P0595R2) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0631R8 <numbers> Math Constants`](https://wg21.link/P0631R8) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
@@ -231,9 +231,9 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P1227R2 Signed std::ssize(), Unsigned span::size()`](https://wg21.link/P1227R2) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1355R2 Narrow Contract For ceil2()`](https://wg21.link/P1355R2) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1357R1 is_bounded_array, is_unbounded_array`](https://wg21.link/P1357R1) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
-| &nbsp;&nbsp;[`P1612R1 Relocating endian To <bit>`](https://wg21.link/P1612R1) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
-| &nbsp;&nbsp;[`P1651R0 bind_front() Should Not Unwrap reference_wrapper`](https://wg21.link/P1651R0) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
-| &nbsp;&nbsp;[`P1690R1 Refining Heterogeneous Lookup For Unordered Containers`](https://wg21.link/P1690R1) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1612R1 Relocating endian To <bit>`](https://wg21.link/P1612R1) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1651R0 bind_front() Should Not Unwrap reference_wrapper`](https://wg21.link/P1651R0) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1690R1 Refining Heterogeneous Lookup For Unordered Containers`](https://wg21.link/P1690R1) | VS 2019 16,5 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1902R1 Missing Feature-Test Macros 2017-2019`](https://wg21.link/P1902R1) | VS 2019 16,5 <sup> [14](#note_14)</sup> |
 | &nbsp;&nbsp;[`P0122R7 <span>`](https://wg21.link/p0122r7)<br/>&nbsp;&nbsp;[`P1024R3 Enhancing span usability`](https://wg21.link/p1024r3)<br/>&nbsp;&nbsp;[`P1085R2 Removing span comparisons`](https://wg21.link/p1085r2)<br/>&nbsp;&nbsp;[`P1394R4 Range constructor for span`](https://wg21.link/p1394r4)<br/>&nbsp;&nbsp;[`P1872R0 span should have size_type, not index_type`](https://wg21.link/p1872r0) | VS 2019 16,6 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0202R3 constexpr for <algorithm> and exchange()`](https://wg21.link/p0202r3) | VS 2019 16,6 <sup> [20](#note_20)</sup> |
@@ -249,48 +249,50 @@ Visual Studio 2017 veya Visual Studio 2019 MSVC uyumluluk geliştirmeleri hakkı
 | &nbsp;&nbsp;[`P0415R1 constexpr For <complex> (Again)`](https://wg21.link/p0415r1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0476R2 <bit> bit_cast`](https://wg21.link/P0476R2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0528R3 Atomic Compare-And-Exchange With Padding Bits`](https://wg21.link/P0528R3) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0586R2 Integer comparison functions`](https://wg21.link/P0586R2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0674R1 make_shared() For Arrays`](https://wg21.link/p0674r1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0718R2 atomic<shared_ptr<T>>, atomic<weak_ptr<T>>`](https://wg21.link/p0718r2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1023R0 constexpr For std::array Comparisons`](https://wg21.link/P1023R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1115R3 erase()/erase_if() Return size_type`](https://wg21.link/P1115R3) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1831R1 Deprecating volatile in the standard library`](https://wg21.link/P1831R1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1871R1 Concept traits should be named after concepts`](https://wg21.link/P1831R1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1956R1 <bit> has_single_bit(), bit_ceil(), bit_floor(), bit_width()`](https://wg21.link/P1956R1) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1964R2 Replacing boolean With boolean-testable`](https://wg21.link/P1964R2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1976R2 Fixed-size span construction from dynamic range`](https://wg21.link/P1976R2) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2091R0 Issues with range access CPOs`](https://wg21.link/P2091R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2102R0 Make "implicit expression variations" more explicit`](https://wg21.link/P2102R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P2116R0 Remove tuple-like protocol support from fixed-extent span`](https://wg21.link/P2116R0) | VS 2019 16,7 <sup> [20](#note_20)</sup> |
-| &nbsp;&nbsp;[`P0019R8 atomic_ref`](https://wg21.link/P0019R8) | Hayır |
+| &nbsp;&nbsp;[`P0019R8 atomic_ref`](https://wg21.link/P0019R8) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0528R3 Library support for atomic compare-and-exchange with padding bits`](https://wg21.link/P0528R3) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0811R3 midpoint(), lerp()`](https://wg21.link/P0811R3) | Kısmi olarak VS 2019 16,3, 16,8 20 ' de tamamlanır <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0912R5 Library Support For Coroutines`](https://wg21.link/P0912R5) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1001R2 execution::unseq`](https://wg21.link/P1001R2) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1032R1 Miscellaneous constexpr`](https://wg21.link/P1032R1) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1065R2 constexpr INVOKE`](https://wg21.link/P1065R2) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1123R0 Editorial Guidance for merging P0019r8 and P0528r3`](https://wg21.link/P1123R0) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1135R6 The C++20 Synchronization Library`](https://wg21.link/P1135R6) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P1960R0 NB Comment Changes Reviewed by SG1`](https://wg21.link/P1960R0) | VS 2019 16,8 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0053R7 <syncstream>`](https://wg21.link/p0053r7)<br/>&nbsp;&nbsp;[`P0753R2 osyncstream Manipulators`](https://wg21.link/p0753r2) | Hayır |
 | &nbsp;&nbsp;[`P0339R6 polymorphic_allocator<>`](https://wg21.link/P0339R6) | Hayır |
 | &nbsp;&nbsp;[`P0355R7 <chrono> Calendars And Time Zones`](https://wg21.link/p0355r7) | Hayır |
 | &nbsp;&nbsp;[`P0408R7 Efficient access To basic_stringbuf's buffer`](https://wg21.link/p0408r7) | Hayır |
 | &nbsp;&nbsp;[`P0466R5 Library support for layout-compatibility and pointer-interconvertibility traits`](https://wg21.link/p0466r5) | Hayır |
 | &nbsp;&nbsp;[`P0475R1 Guaranteed Copy Elision For Piecewise Construction`](https://wg21.link/P0475R1) | Hayır |
-| &nbsp;&nbsp;[`P0528R3 Library support for atomic compare-and-exchange with padding bits`](https://wg21.link/P0528R3) | Hayır |
-| &nbsp;&nbsp;[`P0551R3 Thou Shalt Not Specialize std Function Templates!`](https://wg21.link/P0551R3) | Hayır |
-| &nbsp;&nbsp;[`P0586R2 Integer comparison functions`](https://wg21.link/P0586R2) | Hayır |
 | &nbsp;&nbsp;[`P0591R4 Utility Functions For Uses-Allocator Construction`](https://wg21.link/P0591R4) | Hayır |
 | &nbsp;&nbsp;[`P0608R3 Improving variant's Converting Constructor/Assignment`](https://wg21.link/P0608R3) | Hayır |
 | &nbsp;&nbsp;[`P0645R10 <format> Text Formatting`](https://wg21.link/p0645r10) | Hayır |
 | &nbsp;&nbsp;[`P0660R10 <stop_token> and jthread`](https://wg21.link/p0660r10) | Hayır |
 | &nbsp;&nbsp;[`P0768R1 Library Support For The Spaceship Comparison Operator <=>`](https://wg21.link/p0768r1) | Kısmi in VS 2019 16,0 <sup> [20](#note_20)</sup> |
-| &nbsp;&nbsp;[`P0784R7 Library support for more constexpr containers`](https://wg21.link/P0784R7) | Hayır |
-| &nbsp;&nbsp;[`P0811R3 midpoint(), lerp()`](https://wg21.link/P0811R3) | Kısmi in VS 2019 16,3 <sup> [20](#note_20)</sup> |
-| &nbsp;&nbsp;[`P0896R4 <ranges>`](https://wg21.link/P0896R4) | Hayır |
-| &nbsp;&nbsp;[`P0912R5 Library Support For Coroutines`](https://wg21.link/P0912R5) | Hayır |
+| &nbsp;&nbsp;[`P0784R7 Library support for more constexpr containers`](https://wg21.link/P0784R7) | Kısmi in VS 2019 16,7 <sup> [20](#note_20)</sup> |
+| &nbsp;&nbsp;[`P0896R4 <ranges>`](https://wg21.link/P0896R4) | Kısmi in VS 2019 16,8 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P0980R1 constexpr std::string`](https://wg21.link/P0980R1) | Hayır |
-| &nbsp;&nbsp;[`P1001R2 execution::unseq`](https://wg21.link/P1001R2) | Hayır |
 | &nbsp;&nbsp;[`P1004R2 constexpr std::vector`](https://wg21.link/P1004R2) | Hayır |
 | &nbsp;&nbsp;[`P1007R3 assume_aligned()`](https://wg21.link/P1007R3) | Hayır |
 | &nbsp;&nbsp;[`P1020R1 Smart Pointer Creation With Default Initialization`](https://wg21.link/P1020R1) | Hayır |
-| &nbsp;&nbsp;[`P1032R1 Miscellaneous constexpr`](https://wg21.link/P1032R1) | Hayır |
-| &nbsp;&nbsp;[`P1065R2 constexpr INVOKE`](https://wg21.link/P1065R2) | Hayır |
-| &nbsp;&nbsp;[`P1135R6 The C++20 Synchronization Library`](https://wg21.link/P1135R6) | Hayır |
 | &nbsp;&nbsp;[`P1208R6 <source_location>`](https://wg21.link/P1208R6) | Hayır |
 | &nbsp;&nbsp;[`P1285R0 Improving Completeness Requirements For Type Traits`](https://wg21.link/P1285R0) | Hayır |
 | &nbsp;&nbsp;[`P1502R1 Standard Library Header Units`](https://wg21.link/P1502R1) | Hayır |
-| &nbsp;&nbsp;[`P1614R2 Adding Spaceship <=> To The Library`](https://wg21.link/P1614R2) | Hayır |
+| &nbsp;&nbsp;[`P1614R2 Adding Spaceship <=> To The Library`](https://wg21.link/P1614R2) | Kısmi in VS 2019 16,7 <sup> [20](#note_20)</sup> |
 | &nbsp;&nbsp;[`P1771R1 Library support for [[nodiscard]] for constructors`](https://wg21.link/P1771R1) | Hayır |
 | __C++ 17 standart kitaplığı özellikleri__ | __Desteklenir__ |
 | &nbsp;&nbsp;[`LWG 2221 Formatted output operator for nullptr`](https://cplusplus.github.io/LWG/issue2221) | VS 2019 16,1 |
@@ -423,7 +425,8 @@ __VS 2019 16,3__ , Visual Studio 2019 sürüm 16,3 ' te desteklenen özellikleri
 __VS 2019 16,4__ , Visual Studio 2019 sürüm 16,4 ' te desteklenen özellikleri belirtir. \
 __VS 2019 16,5__ , Visual Studio 2019 sürüm 16,5 ' te desteklenen özellikleri belirtir. \
 __VS 2019 16,6__ , Visual Studio 2019 sürüm 16,6 ' te desteklenen özellikleri belirtir. \
-__VS 2019 16,7__ , Visual Studio 2019 sürüm 16,7 ' te desteklenen özellikleri gösterir.
+__VS 2019 16,7__ , Visual Studio 2019 sürüm 16,7 ' te desteklenen özellikleri belirtir. \
+__VS 2019 16,8__ , Visual Studio 2019 sürüm 16,8 ' te desteklenen özellikleri gösterir.
 
 ### <a name="notes"></a>Notlar
 
