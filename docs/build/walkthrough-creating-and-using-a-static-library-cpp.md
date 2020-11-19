@@ -44,9 +44,9 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows** 'a ayarlayın ve **proje türünü** **kitaplık** olarak ayarlayın.
+1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **kitaplık** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **Windows Masaüstü Sihirbazı** ' nı seçin ve ardından **İleri** ' yi seçin.
+1. Filtre uygulanmış proje türleri listesinden **Windows Masaüstü Sihirbazı**' nı seçin ve ardından **İleri**' yi seçin.
 
 1. **Yeni projenizi yapılandırın** sayfasında, proje için bir ad belirtmek üzere **Proje adı** kutusuna *MathLibrary* girin. **Çözüm adı** kutusuna *staticmath* girin. **Windows Masaüstü projesi** iletişim kutusunu açmak için **Oluştur** düğmesini seçin.
 
@@ -62,11 +62,11 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 ### <a name="to-create-a-static-library-project-in-visual-studio-2017"></a>Visual Studio 2017 ' de statik kitaplık projesi oluşturmak için
 
-1. Menü çubuğunda **Dosya** > **Yeni** > **Proje** ' yi seçin.
+1. Menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunda, **Installed**  >  **Visual C++**  >  **Windows Masaüstü** Visual C++ yüklü ' ı seçin. Orta bölmede **Windows Masaüstü Sihirbazı** ' nı seçin.
+1. **Yeni proje** iletişim kutusunda, **Installed**  >  **Visual C++**  >  **Windows Masaüstü** Visual C++ yüklü ' ı seçin. Orta bölmede **Windows Masaüstü Sihirbazı**' nı seçin.
 
-1. **Ad** kutusuna proje için bir ad (örneğin, *MathLibrary* ) belirtin. Çözüm **adı** kutusunda çözüm için bir ad (örneğin, *staticmath* ) belirtin. **Tamam** düğmesini seçin.
+1. **Ad** kutusuna proje için bir ad (örneğin, *MathLibrary*) belirtin. Çözüm **adı** kutusunda çözüm için bir ad (örneğin, *staticmath*) belirtin. **Tamam** düğmesini seçin.
 
 1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türü** altında, **statik kitaplık (. lib)** öğesini seçin.
 
@@ -80,15 +80,15 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 ### <a name="to-create-a-static-library-project-in-visual-studio-2015"></a>Visual Studio 2015 ' de statik kitaplık projesi oluşturmak için
 
-1. Menü çubuğunda **Dosya** > **Yeni** > **Proje** ' yi seçin.
+1. Menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunda, **yüklü**  >  **Şablonlar**  >  **Visual C++**  >  **Win32** ' i seçin. Orta bölmede **Win32 konsol uygulaması** ' nı seçin.
+1. **Yeni proje** iletişim kutusunda, **yüklü**  >  **Şablonlar**  >  **Visual C++**  >  **Win32**' i seçin. Orta bölmede **Win32 konsol uygulaması**' nı seçin.
 
-1. **Ad** kutusuna proje için bir ad (örneğin, *MathLibrary* ) belirtin. Çözüm **adı** kutusunda çözüm için bir ad (örneğin, *staticmath* ) belirtin. **Tamam** düğmesini seçin.
+1. **Ad** kutusuna proje için bir ad (örneğin, *MathLibrary*) belirtin. Çözüm **adı** kutusunda çözüm için bir ad (örneğin, *staticmath*) belirtin. **Tamam** düğmesini seçin.
 
-1. **Win32 uygulama sihirbazında** **İleri** ' yi seçin.
+1. **Win32 uygulama sihirbazında** **İleri**' yi seçin.
 
-1. **Uygulama ayarları** sayfasında, **uygulama türü** altında, **statik kitaplık** ' ı seçin. **Ek seçenekler** altında, **önceden derlenmiş üstbilgi** onay kutusunun işaretini kaldırın. Projeyi oluşturmak için **son** ' a tıklayın.
+1. **Uygulama ayarları** sayfasında, **uygulama türü** altında, **statik kitaplık**' ı seçin. **Ek seçenekler** altında, **önceden derlenmiş üstbilgi** onay kutusunun işaretini kaldırın. Projeyi oluşturmak için **son** ' a tıklayın.
 
 ::: moniker-end
 
@@ -96,9 +96,9 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 ### <a name="to-add-a-class-to-the-static-library"></a>Statik kitaplığa bir sınıf eklemek için
 
-1. Yeni bir sınıf için üst bilgi dosyası oluşturmak üzere, **Çözüm Gezgini** ' de **MathLibrary** projesinin kısayol menüsünü açmak için sağ tıklayın ve sonra **Add**  >  **Yeni öğe** Ekle ' yi seçin.
+1. Yeni bir sınıf için üst bilgi dosyası oluşturmak üzere, **Çözüm Gezgini**' de **MathLibrary** projesinin kısayol menüsünü açmak için sağ tıklayın ve sonra **Add**  >  **Yeni öğe** Ekle ' yi seçin.
 
-1. **Yeni öğe Ekle** iletişim kutusunda **Visual C++**  >  **kodu** ' nu seçin. Orta bölmede **üst bilgi dosyası (. h)** öğesini seçin. Üstbilgi dosyası için bir ad belirtin — örneğin, *MathLibrary. h* — ve sonra **Ekle** düğmesini seçin. Neredeyse boş bir üst bilgi dosyası görüntülenir.
+1. **Yeni öğe Ekle** iletişim kutusunda **Visual C++**  >  **kodu**' nu seçin. Orta bölmede **üst bilgi dosyası (. h)** öğesini seçin. Üstbilgi dosyası için bir ad belirtin — örneğin, *MathLibrary. h*— ve sonra **Ekle** düğmesini seçin. Neredeyse boş bir üst bilgi dosyası görüntülenir.
 
 1. `Arithmetic`Toplama, çıkarma, çarpma ve bölme gibi genel matematik işlemlerini yapmak için adlı bir sınıf için bildirim ekleyin. Kod şöyle olmalıdır:
 
@@ -126,9 +126,9 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
     }
     ```
 
-1. Yeni sınıf için bir kaynak dosyası oluşturmak için, **Çözüm Gezgini** ' de **MathLibrary** projesinin kısayol menüsünü açın ve **Add**  >  **Yeni öğe** Ekle ' yi seçin.
+1. Yeni sınıf için bir kaynak dosyası oluşturmak için, **Çözüm Gezgini**' de **MathLibrary** projesinin kısayol menüsünü açın ve **Add**  >  **Yeni öğe** Ekle ' yi seçin.
 
-1. **Yeni öğe Ekle** iletişim kutusunda, Orta bölmede, **C++ dosyası (. cpp)** öğesini seçin. Kaynak dosya için bir ad belirtin — örneğin, *MathLibrary. cpp* — ve sonra **Ekle** düğmesini seçin. Boş bir kaynak dosyası görüntülenir.
+1. **Yeni öğe Ekle** iletişim kutusunda, Orta bölmede, **C++ dosyası (. cpp)** öğesini seçin. Kaynak dosya için bir ad belirtin — örneğin, *MathLibrary. cpp*— ve sonra **Ekle** düğmesini seçin. Boş bir kaynak dosyası görüntülenir.
 
 1. Sınıfa yönelik işlevselliği uygulamak için bu kaynak dosyayı kullanın `Arithmetic` . Kod şöyle olmalıdır:
 
@@ -174,11 +174,11 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 ### <a name="to-create-a-c-console-app-that-references-the-static-library-in-visual-studio-2019"></a>Visual Studio 2019 ' de statik kitaplığa başvuran bir C++ konsol uygulaması oluşturmak için
 
-1. **Çözüm Gezgini** ' de, üst düğüme sağ tıklayın, **' Staticmath ' çözümü** , kısayol menüsünü açmak için. Yeni proje **Ekle**  >  iletişim kutusunu açmak için **Add a New Project** **Yeni proje** Ekle ' yi seçin.
+1. **Çözüm Gezgini**' de, üst düğüme sağ tıklayın, **' Staticmath ' çözümü**, kısayol menüsünü açmak için. Yeni proje **Ekle**  >  iletişim kutusunu açmak için **Add a New Project** **Yeni proje** Ekle ' yi seçin.
 
 1. İletişim kutusunun üst kısmında, **Proje türü** filtresini **konsol** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri** ' yi seçin. Bir sonraki sayfada, proje için bir ad belirtmek üzere **ad** kutusuna *MathClient* girin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Bir sonraki sayfada, proje için bir ad belirtmek üzere **ad** kutusuna *MathClient* girin.
 
 1. İstemci projesini oluşturmak için **Oluştur** düğmesini seçin.
 
@@ -190,11 +190,11 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 ### <a name="to-create-a-c-console-app-that-references-the-static-library-in-visual-studio-2017"></a>Visual Studio 2017 ' de statik kitaplığa başvuran bir C++ konsol uygulaması oluşturmak için
 
-1. **Çözüm Gezgini** ' de, üst düğüme sağ tıklayın, **' Staticmath ' çözümü** , kısayol menüsünü açmak için. Yeni proje **Ekle**  >  iletişim kutusunu açmak için **Add a New Project** **Yeni proje** Ekle ' yi seçin.
+1. **Çözüm Gezgini**' de, üst düğüme sağ tıklayın, **' Staticmath ' çözümü**, kısayol menüsünü açmak için. Yeni proje **Ekle**  >  iletişim kutusunu açmak için **Add a New Project** **Yeni proje** Ekle ' yi seçin.
 
-1. **Yeni Proje Ekle** iletişim kutusunda, **Installed**  >  **Visual C++**  >  **Windows Masaüstü** Visual C++ yüklü ' ı seçin. Orta bölmede **Windows Masaüstü Sihirbazı** ' nı seçin.
+1. **Yeni Proje Ekle** iletişim kutusunda, **Installed**  >  **Visual C++**  >  **Windows Masaüstü** Visual C++ yüklü ' ı seçin. Orta bölmede **Windows Masaüstü Sihirbazı**' nı seçin.
 
-1. **Ad** kutusuna proje için bir ad (örneğin, *MathClient* ) belirtin. **Tamam** düğmesini seçin.
+1. **Ad** kutusuna proje için bir ad (örneğin, *MathClient*) belirtin. **Tamam** düğmesini seçin.
 
 1. **Windows Masaüstü projesi** iletişim kutusunda, **uygulama türü** altında, **konsol uygulaması (. exe)** öğesini seçin.
 
@@ -210,19 +210,19 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 ### <a name="to-create-a-c-console-app-that-references-the-static-library-in-visual-studio-2015"></a>Visual Studio 2015 ' de statik kitaplığa başvuran bir C++ konsol uygulaması oluşturmak için
 
-1. **Çözüm Gezgini** ' de, üst düğüme sağ tıklayın, **' Staticmath ' çözümü** , kısayol menüsünü açmak için. Yeni proje **Ekle**  >  iletişim kutusunu açmak için **Add a New Project** **Yeni proje** Ekle ' yi seçin.
+1. **Çözüm Gezgini**' de, üst düğüme sağ tıklayın, **' Staticmath ' çözümü**, kısayol menüsünü açmak için. Yeni proje **Ekle**  >  iletişim kutusunu açmak için **Add a New Project** **Yeni proje** Ekle ' yi seçin.
 
-1. **Yeni Proje Ekle** iletişim kutusunda, **Installed**  >  **Visual C++**  >  **Win32** Visual C++ yüklendi ' yi seçin. Orta bölmede **Win32 konsol uygulaması** ' nı seçin.
+1. **Yeni Proje Ekle** iletişim kutusunda, **Installed**  >  **Visual C++**  >  **Win32** Visual C++ yüklendi ' yi seçin. Orta bölmede **Win32 konsol uygulaması**' nı seçin.
 
-1. **Ad** kutusuna proje için bir ad (örneğin, *MathClient* ) belirtin. **Tamam** düğmesini seçin.
+1. **Ad** kutusuna proje için bir ad (örneğin, *MathClient*) belirtin. **Tamam** düğmesini seçin.
 
-1. **Win32 uygulama Sihirbazı** Iletişim kutusunda **İleri** ' yi seçin.
+1. **Win32 uygulama Sihirbazı** Iletişim kutusunda **İleri**' yi seçin.
 
 1. **Uygulama ayarları** sayfasında, **uygulama türü** altında, **konsol uygulamasının** seçildiğinden emin olun. **Ek seçenekler** altında, **önceden derlenmiş üstbilginin** Işaretini kaldırın, sonra **boş proje** onay kutusunu işaretleyin. Projeyi oluşturmak için **son** ' a tıklayın.
 
-1. Boş projeye bir kaynak dosyası eklemek için, **Çözüm Gezgini** ' de **MathClient** projesinin kısayol menüsünü açmak için sağ tıklayın ve sonra **Add** > **Yeni öğe** Ekle ' yi seçin.
+1. Boş projeye bir kaynak dosyası eklemek için, **Çözüm Gezgini**' de **MathClient** projesinin kısayol menüsünü açmak için sağ tıklayın ve sonra **Add** > **Yeni öğe** Ekle ' yi seçin.
 
-1. **Yeni öğe Ekle** iletişim kutusunda **Visual C++**  >  **kodu** ' nu seçin. Orta bölmede **C++ dosyası (. cpp)** öğesini seçin. Kaynak dosya için bir ad belirtin — örneğin, *MathClient. cpp* — ve sonra **Ekle** düğmesini seçin. Boş bir kaynak dosyası görüntülenir.
+1. **Yeni öğe Ekle** iletişim kutusunda **Visual C++**  >  **kodu**' nu seçin. Orta bölmede **C++ dosyası (. cpp)** öğesini seçin. Kaynak dosya için bir ad belirtin — örneğin, *MathClient. cpp*— ve sonra **Ekle** düğmesini seçin. Boş bir kaynak dosyası görüntülenir.
 
 ::: moniker-end
 
@@ -230,11 +230,11 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 ### <a name="to-use-the-functionality-from-the-static-library-in-the-app"></a>Uygulamadaki statik kitaplıktan işlevselliği kullanmak için
 
-1. Statik kitaplıkta matematik yordamlarını kullanabilmeniz için, buna başvurmanız gerekir. **Çözüm Gezgini** ' de **MathClient** projesi için kısayol menüsünü açın ve ardından başvuru **Ekle** ' yi seçin  >  **Reference** .
+1. Statik kitaplıkta matematik yordamlarını kullanabilmeniz için, buna başvurmanız gerekir. **Çözüm Gezgini**' de **MathClient** projesi için kısayol menüsünü açın ve ardından başvuru **Ekle**' yi seçin  >  **Reference**.
 
 1. **Başvuru Ekle** iletişim kutusu, başvurekleyebileceğiniz kitaplıkları listeler. **Projeler** sekmesi geçerli çözümdeki projeleri ve bunların başvurdukları kitaplıkları listeler. **Projeler** sekmesini açın, **MathLibrary** onay kutusunu işaretleyin ve ardından **Tamam** düğmesini seçin.
 
-1. `MathLibrary.h`Üstbilgi dosyasına başvurmak için, eklenen dizinler yolunu değiştirmelisiniz. **Çözüm Gezgini** ' de, kısayol menüsünü açmak için **MathClient** ' a sağ tıklayın. **Özellikler** ' i seçerek **MathClient Özellik sayfaları** iletişim kutusunu açın.
+1. `MathLibrary.h`Üstbilgi dosyasına başvurmak için, eklenen dizinler yolunu değiştirmelisiniz. **Çözüm Gezgini**' de, kısayol menüsünü açmak için **MathClient** ' a sağ tıklayın. **Özellikler** ' i seçerek **MathClient Özellik sayfaları** iletişim kutusunu açın.
 
 1. **MathClient Özellik sayfaları** iletişim kutusunda, **yapılandırma** açılan kutusunu **tüm yapılandırmalar** olarak ayarlayın. **Platform** açılır öğesini **tüm platformlar** olarak ayarlayın.
 
@@ -242,9 +242,9 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
    Dizin yoluna gitmek için:
 
-   1. **Ek ekleme dizinleri** Özellik değeri açılan listesini açın ve ardından **Düzenle** ' yi seçin.
+   1. **Ek ekleme dizinleri** Özellik değeri açılan listesini açın ve ardından **Düzenle**' yi seçin.
 
-   1. **Ek dizinler Ekle** iletişim kutusunda metin kutusunun en üstüne çift tıklayın. Ardından satırın sonundaki üç nokta düğmesini ( **...** ) seçin.
+   1. **Ek dizinler Ekle** iletişim kutusunda metin kutusunun en üstüne çift tıklayın. Ardından satırın sonundaki üç nokta düğmesini (**...**) seçin.
 
    1. **Dizin Seç** iletişim kutusunda, bir düzey yukarı gidin ve **MathLibrary** dizinini seçin. Seçiminizi kaydetmek için **Klasör Seç** düğmesini seçin.
 
@@ -285,9 +285,9 @@ Projenin nasıl oluşturulacağı hakkında yönergeler, Visual Studio sürümü
 
 ### <a name="to-run-the-app"></a>Uygulamayı çalıştırmak için
 
-1. **MathClient** 'in varsayılan proje olarak seçildiğinden emin olun. Bunu seçmek için sağ tıklayıp **Çözüm Gezgini** içindeki **MathClient** için kısayol menüsünü açın ve ardından **Başlangıç projesi olarak ayarla** ' yı seçin.
+1. **MathClient** 'in varsayılan proje olarak seçildiğinden emin olun. Bunu seçmek için sağ tıklayıp **Çözüm Gezgini** içindeki **MathClient** için kısayol menüsünü açın ve ardından **Başlangıç projesi olarak ayarla**' yı seçin.
 
-1. Projeyi çalıştırmak için menü çubuğunda **hata ayıklama**  >  **başlatma hatası olmadan Başlat** ' ı seçin. Çıktı şuna benzemelidir:
+1. Projeyi çalıştırmak için menü çubuğunda **hata ayıklama**  >  **başlatma hatası olmadan Başlat**' ı seçin. Çıktı şuna benzemelidir:
 
     ```Output
     a + b = 106.4
