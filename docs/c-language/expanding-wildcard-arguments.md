@@ -1,36 +1,34 @@
 ---
-title: Joker Karakter Bağımsız Değişkenlerini Genişletme
-ms.date: 11/04/2016
+title: Joker karakter bağımsız değişkenlerini genişletme
+description: Programlarınızda joker karakter komut satırı bağımsız değişkenlerini işlemek için bağlayıcı seçeneği kullanma.
+ms.date: 11/20/2020
 helpviewer_keywords:
 - asterisk wildcard
 - question mark, wildcard
 - expanding wildcard arguments
 - wildcards, expanding
-ms.assetid: 80a11c4b-0199-420e-a342-cf1d803be5bc
-ms.openlocfilehash: f1fb964fe98223fb7187b83c7101027ed1f9cbea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b847a5dd8af577a4e30edcd9bc7fc34add296c17
+ms.sourcegitcommit: b02c61667ff7f38e7add266d0aabd8463f2dbfa1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233823"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95483314"
 ---
-# <a name="expanding-wildcard-arguments"></a>Joker Karakter Bağımsız Değişkenlerini Genişletme
+# <a name="expanding-wildcard-arguments"></a>Joker karakter bağımsız değişkenlerini genişletme
 
-**Microsoft'a Özgü**
+Joker karakter bağımsız değişkeni genişletmesi Microsoft 'a özgüdür.
 
-C programını çalıştırdığınızda, komut satırında dosya adı ve yol bağımsız değişkenlerini belirtmek için iki joker karakter (soru işareti (?) ve yıldız işareti (*)) kullanabilirsiniz.
+C programını çalıştırdığınızda, **`?`** **`*`** komut satırında dosya adı ve yol bağımsız değişkenlerini belirtmek için iki joker karakter, soru işareti () ve yıldız işareti () kullanabilirsiniz.
 
-Varsayılan olarak, komut satırı bağımsız değişkenlerinde joker karakterler genişletilmez. Normal bağımsız değişken vektör `argv` yükleme yordamını, Setargv. obj veya Wsetargv. obj dosyasıyla bağlantı kurarak joker karakterleri genişletmenizi sağlayan bir sürümle değiştirebilirsiniz. Programınız bir `main` işlev kullanıyorsa, Setargv. obj ile bağlayın. Programınız bir `wmain` işlev kullanıyorsa, Wsetargv. obj ile bağlayın. Bunların her ikisi de eşdeğer davranışa sahiptir.
+Varsayılan olarak, komut satırı bağımsız değişkenlerinde joker karakterler genişletilmez. Normal bağımsız değişken vektör `argv` yükleme yordamını, veya dosyasıyla bağlantı kurarak joker karakterleri genişleterek bir sürümle değiştirebilirsiniz *`setargv.obj`* *`wsetargv.obj`* . Programınız bir `main` işlev kullanıyorsa, ile bağlantısını yapın *`setargv.obj`* . Programınız bir `wmain` işlev kullanıyorsa, ile bağlantısını yapın *`wsetargv.obj`* . Bunların her ikisi de eşdeğer davranışa sahiptir. 
 
-Setargv. obj veya Wsetargv. obj ile bağlantı için, **/Link** seçeneğini kullanın. Örneğin:
+Veya ile bağlantı yapmak için *`setargv.obj`* *`wsetargv.obj`* seçeneğini kullanın **`/link`** . Örnek:
 
-**CL example. c/link Setargv. obj**
+**`cl example.c /link setargv.obj`**
 
-Joker karakterler, işletim sistemi komutlarıyla aynı şekilde genişletilir. (Joker karakterler hakkında bilginiz yoksa, işletim sistemi Kullanıcı Kılavuzumuza bakın.)
-
-**SON Microsoft 'a özgü**
+Joker karakterler, işletim sistemi komutlarıyla aynı şekilde genişletilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlantı Seçenekleri](../c-runtime-library/link-options.md)<br/>
-[main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)
+[Bağlantı seçenekleri](../c-runtime-library/link-options.md)\
+[`main` işlev ve program yürütme](../c-language/main-function-and-program-execution.md)

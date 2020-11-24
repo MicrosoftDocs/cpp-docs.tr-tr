@@ -1,6 +1,7 @@
 ---
-title: C Komut Satırı İşlemini Özelleştirme
-ms.date: 11/04/2016
+title: C komut satırı işlemini özelleştirme
+description: '`main`Çalışma zamanı başlangıç kodunda işlev bağımsız değişkenini ve ortam parametresi işlemeyi gizleme.'
+ms.date: 11/19/2020
 helpviewer_keywords:
 - _spawn functions
 - command line, processing
@@ -11,22 +12,24 @@ helpviewer_keywords:
 - command line, processing arguments
 - suppressing environment processing
 - _exec function
-ms.assetid: c20fa11d-b35b-4f3e-93b6-2cd5a1c3c993
-ms.openlocfilehash: 1abdb0c104755efc86543ac4773359078e855999
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc306172491cd401caeecb3c87c0711f8b4ef911
+ms.sourcegitcommit: b02c61667ff7f38e7add266d0aabd8463f2dbfa1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290696"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95483301"
 ---
-# <a name="customizing-c-command-line-processing"></a>C Komut Satırı İşlemini Özelleştirme
+# <a name="customizing-c-command-line-processing"></a>C komut satırı işlemini özelleştirme
 
-Programınız komut satırı bağımsız değişkenleri içermiyorsa, komut satırı işlemeyi gerçekleştiren kitaplık yordamının kullanımını kaldırarak az miktarda alan kaydedebilirsiniz. Bu yordam, [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md)bölümünde açıklandığı gibi **_setargv** (veya geniş karakterli ortamda **_wsetargv** ) olarak adlandırılır. Kullanımını bastırmak için, **ana** işlevi içeren dosyada hiçbir şey yapmaz ve **_setargv** (veya geniş karakter ortamında **_wsetargv** ) adını belirleyin. **_Setargv** veya **_wsetargv** çağrısı daha sonra **_setargv** veya **_wsetargv** tanımınız tarafından karşılanır ve kitaplık sürümü yüklenmez.
+Programınız komut satırı bağımsız değişkenleri içermiyorsa, az miktarda alan kaydetmek için komut satırı işleme yordamını gizleyebilirsiniz. Kullanımını bastırmak için, *`noarg.obj`* `main` `wmain` **`/link`** derleyici seçeneklerinizde veya **`LINK`** komut satırlarınızın dosyasını (hem hem de için) dahil edin.
 
-Benzer şekilde, ortam tablosuna hiçbir daha `envp` bağımsız değişken aracılığıyla erişemiyorsanız, ortam işleme yordamının **_setenvp** (veya **_wsetenvp**) yerine kendi boş bir yordamını sağlayabilirsiniz.
+Benzer şekilde, ortam tablosuna hiçbir daha bağımsız değişken aracılığıyla erişemiyorsanız *`envp`* , iç ortam işleme yordamını gizleyebilirsiniz. Kullanımını bastırmak için, *`noenv.obj`* `main` `wmain` **`/link`** derleyici seçeneklerinizde veya **`LINK`** komut satırlarınızın dosyasını (hem hem de için) dahil edin.
 
-Programınız, C çalışma zamanı kitaplığındaki **_spawn** veya **_exec** aile ailesine çağrılar yapıyorsa, bu yordam, bir ortamı oluşturma işleminden yeni işleme geçirmek için kullanıldığından, ortam işleme yordamını gizmemelisiniz.
+Çalışma zamanı başlatma bağlayıcı seçenekleri hakkında daha fazla bilgi için bkz. [bağlantı seçenekleri](../c-runtime-library/link-options.md).
+
+Programınız, `spawn` `exec` C çalışma zamanı kitaplığı 'nda veya yordam ailesine çağrı yapabilir. Varsa, bir ortamı üst işlemden alt işleme geçirmek için kullanıldığından, ortam işleme yordamını gizmemelisiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)
+[`main` işlev ve program yürütme](../c-language/main-function-and-program-execution.md)\
+[Bağlantı seçenekleri](../c-runtime-library/link-options.md).

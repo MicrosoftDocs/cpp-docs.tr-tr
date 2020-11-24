@@ -1,32 +1,33 @@
 ---
 title: __raise
-ms.date: 11/04/2016
+description: Yerel olay işleme için Microsoft C++ uzantısı anahtar sözcüğünü nasıl kullanacağınızı öğrenin `__raise` .
+ms.date: 11/20/2020
 f1_keywords:
 - __raise
 - __raise_cpp
 helpviewer_keywords:
 - __raise keyword [C++]
-ms.assetid: 6f1ae418-5f0f-48b6-9f6e-8ea7e66b239a
-ms.openlocfilehash: db6ba1693e4d3144b95530646b061e9cd7a58a5a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c9df602803062bc51b8c0cee13f17263cdc91786
+ms.sourcegitcommit: b02c61667ff7f38e7add266d0aabd8463f2dbfa1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227133"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95483158"
 ---
-# <a name="__raise"></a>__raise
+# <a name="__raise-keyword"></a>`__raise` sözcükle
 
 Bir olayın çağrı sitesini vurgular.
 
-## <a name="syntax"></a>Sözdizimi
+> [!NOTE]
+> Yerel C++ içindeki olay öznitelikleri standart C++ ile uyumsuzdur. Uyumluluk modunu belirttiğinizde derlenirler [`/permissive-`](../build/reference/permissive-standards-conformance.md) .
 
-```
-__raise method-declarator;
-```
+## <a name="syntax"></a>Syntax
+
+> **`__raise`** *`method-declarator`* **`;`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilen koddan bir olay yalnızca tanımlandığı sınıfın içinden oluşturulabilir. Daha fazla bilgi için bkz. [olay](../extensions/event-cpp-component-extensions.md) .
+Yönetilen koddan bir olay yalnızca tanımlandığı sınıf içinden oluşturulabilir. Daha fazla bilgi için bkz. [`event`](../extensions/event-cpp-component-extensions.md).
 
 **`__raise`** Bir olay olmayan bir çağrı yaparsanız anahtar sözcüğü bir hata oluşturulmasına neden olur.
 
@@ -61,6 +62,9 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[Olay Işleme](../cpp/event-handling.md)<br/>
-[Çalışma Zamanı Platformları için Bileşen Uzantıları](../extensions/component-extensions-for-runtime-platforms.md)
+[Lerimi](../cpp/keywords-cpp.md)\
+[Olay işleme](../cpp/event-handling.md)\
+[`__event`](../cpp/event.md)\
+[`__hook`](../cpp/hook.md)\
+[`__unhook`](../cpp/unhook.md)\
+[.NET ve UWP için bileşen uzantıları](../extensions/component-extensions-for-runtime-platforms.md)
