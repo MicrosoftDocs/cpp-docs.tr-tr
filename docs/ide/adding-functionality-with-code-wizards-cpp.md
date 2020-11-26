@@ -5,11 +5,11 @@ helpviewer_keywords:
 - code wizards [C++]
 ms.assetid: 6afb7ef9-7056-423d-b244-91bb4236d1d7
 ms.openlocfilehash: 651eac8c630636455dd1ffa04fdd02b71fa3cf62
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509698"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96188919"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>Kod Sihirbazlarıyla İşlevsellik Ekleme (C++)
 

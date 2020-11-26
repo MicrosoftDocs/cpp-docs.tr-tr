@@ -10,11 +10,11 @@ helpviewer_keywords:
 - Add Class dialog box
 ms.assetid: c34b5f70-4e72-4faa-ba21-e2b05361c4d9
 ms.openlocfilehash: b1c64505a63b8720ed7aee855f2bbbbdb9134e28
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505988"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96188841"
 ---
 # <a name="add-a-class"></a>Sınıf ekleme
 
@@ -31,7 +31,7 @@ Proje adlandırma kuralınızın varolan bir adı kullanmanızı gerektiriyorsa,
 
 ## <a name="what-kind-of-class-do-you-want-to-add"></a>Ne tür bir sınıf eklemek istiyorsunuz?
 
-**Sınıf Ekle** iletişim kutusunda, sol bölmedeki **Visual C++** düğümünü genişlettiğinizde, yüklenmiş şablonların çeşitli gruplandırmaları görüntülenir. Gruplar **clr**, **ATL**, **MFC**ve **C++** içerir. Bir grup seçtiğinizde, bu gruptaki kullanılabilir şablonların bir listesi Ortadaki bölmede görüntülenir. Her şablon, bir sınıf için gereken dosyaları ve kaynak kodunu içerir.
+**Sınıf Ekle** iletişim kutusunda, sol bölmedeki **Visual C++** düğümünü genişlettiğinizde, yüklenmiş şablonların çeşitli gruplandırmaları görüntülenir. Gruplar **clr**, **ATL**, **MFC** ve **C++** içerir. Bir grup seçtiğinizde, bu gruptaki kullanılabilir şablonların bir listesi Ortadaki bölmede görüntülenir. Her şablon, bir sınıf için gereken dosyaları ve kaynak kodunu içerir.
 
 Yeni bir sınıf oluşturmak için orta bölmedeki bir şablonu seçin, **ad** kutusuna sınıf için bir ad yazın ve **Ekle**' yi seçin. Bu, sınıf seçeneklerini belirleyebilmeniz için **sınıf ekleme Sihirbazı** ' nı açar.
 
@@ -56,7 +56,7 @@ MFC, ATL veya CLR kullanmayan bir C++ sınıfı oluşturmak için, yüklü şabl
 
 - Projenize uygun dosya ve kaynak kodu ekleyerek otomatik olarak yeni sınıfınızı oluşturun.
 
-**Proje** menüsünden **Sınıf Ekle** iletişim kutusuna, **Çözüm Gezgini**veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code)erişebilirsiniz.
+**Proje** menüsünden **Sınıf Ekle** iletişim kutusuna, **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code)erişebilirsiniz.
 
 > [!NOTE]
 > Geçerli projenize uygun olmayan bir sınıf eklemeye çalıştığınızda bir hata iletisi alırsınız. **Sınıf Ekle** iletişim kutusuna dönmek için **Tamam ' ı** seçin.

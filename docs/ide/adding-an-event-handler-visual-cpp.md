@@ -10,11 +10,11 @@ helpviewer_keywords:
 - event handler wizard [C++]
 ms.assetid: 050bebf0-a9e0-474b-905c-796fe5ac8fc3
 ms.openlocfilehash: b1928de1aacb9c66c9f784f4eee41ce2c444b820
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499639"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96188945"
 ---
 # <a name="add-an-event-handler"></a>Olay işleyicisi ekleme
 
