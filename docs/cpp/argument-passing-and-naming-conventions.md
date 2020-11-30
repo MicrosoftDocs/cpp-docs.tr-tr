@@ -13,12 +13,12 @@ helpviewer_keywords:
 - passing arguments [C++], conventions
 - conventions [C++], argument names
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
-ms.openlocfilehash: b6b65b4e0cc33ea384eff306952589a49e7ad41a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 32f32ceb56267dc39b58b8eed1b30af697ca6d74
+ms.sourcegitcommit: d5a7ea8e462f555fbb3852d6fe5112521fef3133
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229239"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96324182"
 ---
 # <a name="argument-passing-and-naming-conventions"></a>Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları
 
@@ -26,7 +26,7 @@ ms.locfileid: "87229239"
 
 Microsoft C++ derleyicileri, bağımsız değişkenleri geçirme ve işlevler ile çağıranlar arasında değer döndürme kurallarını belirtmenize olanak tanır. Tüm kurallar desteklenen platformlarda kullanılabilir değildir ve bazı kurallar platforma özgü uygulamalar kullanır. Çoğu durumda, belirli bir platformda desteklenmeyen bir kural belirten anahtar sözcükler veya derleyici anahtarları yok sayılır ve platform varsayılan kuralı kullanılır.
 
-X86 plaftorms 'de, tüm bağımsız değişkenler geçirildiğinde 32 iletildiklerinde bittir. Dönüş değerleri Ayrıca 32 bite iletildiklerinde ve EAX kaydındaki, EDX: EAX kayıt çiftinin döndürdüğü 8 baytlık yapılar hariç döndürülür. Daha büyük yapılar, EAX kaydındaki gizli dönüş yapılarına işaretçiler olarak döndürülür. Parametreler, sağdan sola yığına gönderilir. PODs olmayan yapılar, Yazmaçlarda döndürülmeyecektir.
+X86 platformlarında, tüm bağımsız değişkenler iletildiklerinde bit, geçirildiğinde 32 bittir. Dönüş değerleri Ayrıca 32 bite iletildiklerinde ve EAX kaydındaki, EDX: EAX kayıt çiftinin döndürdüğü 8 baytlık yapılar hariç döndürülür. Daha büyük yapılar, EAX kaydındaki gizli dönüş yapılarına işaretçiler olarak döndürülür. Parametreler, sağdan sola yığına gönderilir. PODs olmayan yapılar, Yazmaçlarda döndürülmeyecektir.
 
 Derleyici, işlevinde kullanılıyorsa ESI, EDI, EBX ve EBP yazmaçlarını kaydetmek ve geri yüklemek için giriş ve bitiş kodu oluşturur.
 
