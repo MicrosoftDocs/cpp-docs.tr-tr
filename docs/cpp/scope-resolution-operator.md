@@ -1,6 +1,7 @@
 ---
-title: 'Kapsam Çözümü İşleci: ::'
-ms.date: 11/04/2016
+title: 'Kapsam çözümleme işleci: `::`'
+description: Kapsam çözümleme işlecinin `::` Standart C++ ' da nasıl çalıştığını öğrenin.
+ms.date: 12/06/2020
 f1_keywords:
 - '::'
 helpviewer_keywords:
@@ -8,33 +9,44 @@ helpviewer_keywords:
 - operators [C++], scope resolution
 - scope resolution operator
 - ':: operator'
-ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
-ms.openlocfilehash: 07c2884ed0ba114c22a0c71bbaf7268d6f6931a4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ff774d9fcca9f68cb2925af82c55ef438ab4d71a
+ms.sourcegitcommit: 7b131db4ed39bddb4a456ebea402f47c5cbd69d3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178892"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96776537"
 ---
-# <a name="scope-resolution-operator-"></a>Kapsam Çözümü İşleci: ::
+# <a name="scope-resolution-operator-"></a>Kapsam çözümleme işleci: `::`
 
-Kapsam çözümleme işleci **::** farklı kapsamlarda kullanılan tanımlayıcıları tanımlamak ve belirsizliğini belirlemek için kullanılır. Kapsam hakkında daha fazla bilgi için bkz. [scope](../cpp/scope-visual-cpp.md).
+Kapsam çözümleme işleci, **`::`** Farklı kapsamlarda kullanılan tanımlayıcıları tanımlamak ve belirsizliğini belirlemek için kullanılır. Kapsam hakkında daha fazla bilgi için bkz. [scope](../cpp/scope-visual-cpp.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-```
-:: identifier
-class-name :: identifier
-namespace :: identifier
-enum class :: identifier
-enum struct :: identifier
-```
+> *`qualified-id`*:\
+> &emsp;*`nested-name-specifier`***`template`** <sub>opt</sub>*`unqualified-id`*
+
+> *`nested-name-specifier`*:\
+> &emsp;**`::`**\
+> &emsp;*`type-name`* **`::`**\
+> &emsp;*`namespace-name`* **`::`**\
+> &emsp;*`decltype-specifier`* **`::`**\
+> &emsp;*`nested-name-specifier`* *`identifier`* **`::`**\
+> &emsp;*`nested-name-specifier`***`template`** <sub>opt</sub> opt *`simple-template-id`***`::`**
+
+> *`unqualified-id`*:\
+> &emsp;*`identifier`*\
+> &emsp;*`operator-function-id`*\
+> &emsp;*`conversion-function-id`*\
+> &emsp;*`literal-operator-id`*\
+> &emsp;**`~`** *`type-name`*\
+> &emsp;**`~`** *`decltype-specifier`*\
+> &emsp;*`template-id`*
 
 ## <a name="remarks"></a>Açıklamalar
 
-`identifier` bir değişken, bir işlev veya bir numaralandırma değeri olabilir.
+`identifier`Bir değişken, bir işlev veya bir numaralandırma değeri olabilir.
 
-## <a name="with-classes-and-namespaces"></a>Sınıflar ve ad alanları
+## <a name="use--for-classes-and-namespaces"></a>`::`Sınıflar ve ad alanları için kullanın
 
 Aşağıdaki örnek, kapsam çözümleme işlecinin ad alanları ve sınıflarla nasıl kullanıldığını göstermektedir:
 
@@ -80,7 +92,7 @@ int main() {
 }
 ```
 
-Bir ad alanının üyesini tanımlamak veya bir using yönergesinde üyenin ad alanını gösteren bir ad alanını tanımlamak için kapsam çözümleme işlecini kullanabilirsiniz. Aşağıdaki örnekte, `NamespaceB`, bir using yönergesi tarafından `NamespaceC` aday olduğundan, `ClassB` ad alanı `NamespaceB`içinde bildirildiği halde `ClassB`nitelemek için `NamespaceC` kullanabilirsiniz.
+Bir öğesinin üyesini tanımlamak **`namespace`** veya bir yönergede üyenin ad alanını gösteren bir ad alanını tanımlamak için kapsam çözümleme işlecini kullanabilirsiniz **`using`** . Aşağıdaki örnekte, `NamespaceC` `ClassB` `ClassB` `NamespaceB` `NamespaceB` `NamespaceC` bir yönergesi tarafından aday olduğundan, ad alanı içinde bildirildiği halde nitelendirmek için kullanabilirsiniz **`using`** .
 
 ```cpp
 namespace NamespaceB {
@@ -91,18 +103,19 @@ namespace NamespaceB {
 }
 
 namespace NamespaceC{
-    using namespace B;
+    using namespace NamespaceB;
 }
-int main() {
-    NamespaceB::ClassB c_b;
-    NamespaceC::ClassB c_c;
 
-    c_b.x = 3;
-    c_c.x = 4;
+int main() {
+    NamespaceB::ClassB b_b;
+    NamespaceC::ClassB c_b;
+
+    b_b.x = 3;
+    c_b.x = 4;
 }
 ```
 
-Kapsam çözümleme işleçlerinin zincirlerini kullanabilirsiniz. Aşağıdaki örnekte, `NamespaceD::NamespaceD1` iç içe geçmiş ad alanını `NamespaceD1`tanımlar ve `NamespaceE::ClassE::ClassE1` iç içe sınıf `ClassE1`tanımlar.
+Kapsam çözümleme işleçlerinin zincirlerini kullanabilirsiniz. Aşağıdaki örnekte, `NamespaceD::NamespaceD1` iç içe geçmiş ad alanını tanımlar `NamespaceD1` ve `NamespaceE::ClassE::ClassE1` iç içe yerleştirilmiş sınıfı tanımlar `ClassE1` .
 
 ```cpp
 namespace NamespaceD{
@@ -128,7 +141,7 @@ int main() {
 }
 ```
 
-## <a name="with-static-members"></a>Statik üyelere sahip
+## <a name="use--for-static-members"></a>`::`Statik üyeler için kullanın
 
 Sınıfların statik üyelerini çağırmak için kapsam çözümleme işlecini kullanmanız gerekir.
 
@@ -148,7 +161,7 @@ int main() {
 }
 ```
 
-## <a name="with-scoped-enumerations"></a>Kapsamlı numaralandırmalar
+## <a name="use--for-scoped-enumerations"></a>`::`Kapsamlı Numaralandırmalar için kullanın
 
 Kapsamlı çözümleme işleci, aşağıdaki örnekte olduğu gibi kapsamlı numaralandırma [Listeleme bildirimlerinin](../cpp/enumerations-cpp.md)değerleriyle de kullanılır:
 
@@ -166,5 +179,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ yerleşik işleçleri, önceliği ve ilişkilendirilebilirlik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [Ad Alanları](../cpp/namespaces-cpp.md)
