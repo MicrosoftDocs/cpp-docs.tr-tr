@@ -1,15 +1,15 @@
 ---
 title: Visual Studio 'da CMake hata ayıklama oturumlarını yapılandırma
 description: CMake hata ayıklayıcı ayarlarını yapılandırmak için Visual Studio 'Nun nasıl kullanılacağını açıklar.
-ms.date: 04/02/2020
+ms.date: 12/07/2020
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: 74be1f07b838cd77f4ee87f5e9d245410fe716de
-ms.sourcegitcommit: 432c24dde31c400437c4320e8432b1ddb232f844
+ms.openlocfilehash: b289acf8d0aa89cef1d2a72c988b41d99914f828
+ms.sourcegitcommit: 102bd6f7a878d85c8ceab8f28d0359f562850ea0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96440294"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862574"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>CMake hata ayıklama oturumlarını yapılandırma
 
@@ -112,6 +112,8 @@ Visual Studio 2019 sürüm 16,6 ' de, `type: cppgdb` uzak sistemlerde ve WSL 'de
 #### <a name="additional-options-allowed-with-the-gdbserver-configuration-167-or-later"></a>Yapılandırmaya izin verilen ek seçenekler `gdbserver` (16,7 veya üzeri)
 
 - `program`: Varsayılan olarak olur `"${debugInfo.fullTargetPath}"` . Hata ayıklaması yapılacak uygulamanın UNIX yolu. Yalnızca derleme veya dağıtım konumundaki hedef yürütülebilir dosyadan farklıysa gereklidir.
+> [!TIP]
+> Dağıtım henüz yerel çapraz derleme senaryolarında desteklenmiyor. Windows üzerinde çapraz derleme yapıyorsanız (örneğin, Windows 'da bir Linux ARM yürütülebilir dosyası oluşturmak için bir çapraz derleyicisini kullanarak), `program` hata ayıklamadan önce, ikili dosyayı uzak ARM makinesinde belirtilen konuma el ile kopyalamanız gerekir.
 - `remoteMachineName`: Varsayılan olarak olur `"${debugInfo.remoteMachineName}"` . Hata ayıklama için programı barındıran uzak sistemin adı. Yalnızca yapı sisteminden farklıysa gereklidir. [Bağlantı yöneticisinde](../linux/connect-to-your-remote-linux-computer.md)mevcut bir giriş olmalıdır. Var olan tüm uzak bağlantıların listesini görüntülemek için **CTRL + boşluk** tuşlarına basın.
 - `cwd`: Varsayılan olarak olur `"${debugInfo.defaultWorkingDirectory}"` . Çalıştıran uzak sistemdeki dizinin tam UNIX yolu `program` . Dizinin var olması gerekir.
 - `gdbPath`: Varsayılan olarak olur `${debugInfo.vsInstalledGdb}` . `gdb`Hata ayıklama için kullanılan tam Windows yolu. , `gdb` C/C++ iş yüküyle Linux geliştirmeyle birlikte yüklenir.

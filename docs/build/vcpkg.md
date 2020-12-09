@@ -4,12 +4,12 @@ description: vcpkg, Windows, macOS ve Linux 'ta açık kaynaklı C++ kitaplıkla
 ms.date: 07/06/2020
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 7131f301a22b2834b04ef932f3cee426b04dc7e5
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: ec908824c19099ad6eaa46a4d85c0187ef12b3fd
+ms.sourcegitcommit: 102bd6f7a878d85c8ceab8f28d0359f562850ea0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373638"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862561"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux ve macOS için C++ Paket Yöneticisi
 
@@ -34,7 +34,7 @@ GitHub 'dan vcpkg deposunu kopyalayın: [https://github.com/Microsoft/vcpkg](htt
 Vcpkg kök dizininde vcpkg Önyükleyicisi çalıştırın:
 
 - **`bootstrap-vcpkg.bat`** Pencerelerin
-- **`./bootstrap-vcpkg.sh`**(Linux, macOS)
+- **`./bootstrap-vcpkg.sh`** (Linux, macOS)
 
 Linux veya macOS 'ta, aşağıdaki örneklerde, vcpkg komutlarına önek uygulamanız gerekebilir **`./`** . Bu komutları vcpkg kök dizininden çalıştırmayı unutmayın.
 
@@ -169,7 +169,7 @@ Bir kitaplığın, etkin vcpkg örneğindeki sürümden farklı olan belirli bir
 
 Linux için Windows alt sistemini veya WSL 'yi kullanarak bir Windows makinesinde Linux ikilileri oluşturabilirsiniz. [Windows 10 ' da WSL 'Yi ayarlamak](/windows/wsl/install-win10)için yönergeleri izleyin. Ardından, [Linux Için Visual Studio uzantısıyla](https://devblogs.microsoft.com/cppblog/targeting-windows-subsystem-for-linux-from-visual-studio/)yapılandırın. Windows ve Linux için tüm yerleşik kitaplıklarınızı aynı klasöre yerleştirmekle sorunsuz. Bunlar hem Windows hem de WSL 'den erişilebilir.
 
-## <a name="export-compiled-binaries-and-headers"></a><a name="export_binaries_per_project"></a>Derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma
+## <a name="export-compiled-binaries-and-headers"></a><a name="export_binaries_per_project"></a> Derlenmiş ikili dosyaları ve üstbilgileri dışarı aktarma
 
 Bir ekibin ortak kitaplıklarını indirmesi ve derlemesi için herkese açık hale getirmek verimsiz olur. Tek bir takım üyesi, **`vcpkg export`** ikili dosyaları ve üstbilgileri veya bir NuGet paketini ortak bir ZIP dosyası oluşturmak için komutunu kullanabilir. Daha sonra, diğer ekip üyeleriyle kolayca paylaşabilirsiniz.
 
@@ -185,10 +185,10 @@ Varsayılan olarak, **`vcpkg upgrade`** komut yalnızca güncel olmayan kitaplı
 
 ### <a name="upgrade-options"></a>Yükseltme seçenekleri
 
-- **`--no-dry-run`** Yükseltmeyi gerçekleştirin; belirtilmediğinde, komut yalnızca güncel olmayan paketleri listeler.
-- **`--keep-going`** Başarısız olsa bile paketleri yüklemeye devam edin.
-- **`--triplet <t>`** Nitelenmemiş paketler için varsayılan Üçlü değer ayarla ' yı ayarlayın.
-- **`--vcpkg-root <path>`** Geçerli dizin veya araç dizini yerine kullanılacak vcpkg dizinini belirtin.
+- **`--no-dry-run`**  Yükseltmeyi gerçekleştirin; belirtilmediğinde, komut yalnızca güncel olmayan paketleri listeler.
+- **`--keep-going`**  Başarısız olsa bile paketleri yüklemeye devam edin.
+- **`--triplet <t>`**  Nitelenmemiş paketler için varsayılan Üçlü değer ayarla ' yı ayarlayın.
+- **`--vcpkg-root <path>`**  Geçerli dizin veya araç dizini yerine kullanılacak vcpkg dizinini belirtin.
 
 ### <a name="upgrade-example"></a>Yükseltme örneği
 
@@ -227,6 +227,8 @@ Vcpkg Paket Yöneticisi GitHub 'da düzenli olarak güncelleştirilir. Vcpkg klo
 
 Vcpkg 'yi kaldırmak için vcpkg dizinini silmeniz yeterlidir. Bu dizinin silinmesi vcpkg dağıtımını kaldırır ve vcpkg 'nin yüklü olduğu tüm kitaplıkları kaldırır.
 
+Ancak, yürütülürse **`vcpkg integrate install`** **`vcpkg integrate remove`** , klasör kaldırılmadan önce tümleştirmenin temizlendiğinden emin olmak için yürütmelisiniz.
+
 ## <a name="send-feedback-about-vcpkg"></a>Vcpkg hakkında geri bildirim gönderin
 
 **`vcpkg contact --survey`** Hata raporları ve özellikler için öneriler de dahil olmak üzere Microsoft 'a vcpkg hakkında geri bildirim göndermek için komutunu kullanın.
@@ -249,10 +251,10 @@ Vcpkg örneğinin içeriği şunlardır:
 
 ## <a name="command-line-reference"></a>Komut satırı başvurusu
 
-|Komut|Description|
+|Komut|Açıklama|
 |---------|---------|
 |**`vcpkg search [pat]`**|Yüklemek için kullanılabilir paketleri ara|
-|**`vcpkg install <pkg>...`**|Paket yükler|
+|**`vcpkg install <pkg>...`**|Paketi yükleme|
 |**`vcpkg remove <pkg>...`**|Bir paketi kaldırma|
 |**`vcpkg remove --outdated`**|Tüm güncel paketleri kaldır|
 |**`vcpkg list`**|Yüklü paketleri Listele|
