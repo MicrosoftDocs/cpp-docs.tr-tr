@@ -1,58 +1,77 @@
 ---
-title: /CLI ile C++.NET programlama (görsel C++)
-ms.date: 09/18/2018
+title: C++/CLI ile .NET programlama
+description: C++/CLı kullanarak Visual Studio 'da .NET uygulamaları ve bileşenleri oluşturma hakkında bilgi edinin.
+ms.date: 12/08/2020
 helpviewer_keywords:
 - programming [C++], .NET programming
 - .NET Framework [C++]
 - .NET applications [C++]
 - Visual C++, .NET programming
-ms.assetid: 2c7f3b0f-a266-4f0e-b318-d6f1371e04a9
-ms.openlocfilehash: 5ac73ec4921b57f5a4c8e1fdeb16edc4d92f57e1
-ms.sourcegitcommit: 40ffe764244784c715b086c79626ac390b855d47
+ms.openlocfilehash: 80a9743016976e307158608134155dc7272d44a8
+ms.sourcegitcommit: 754df5278f795f661d4eeb0d4cacc908aa630159
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711131"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933189"
 ---
-# <a name="net-programming-with-ccli-visual-c"></a>/CLI ile C++.NET programlama (görsel C++)
+# <a name="net-programming-with-ccli"></a>C++/CLI ile .NET programlama
 
-**Visual Studio 2015**: Varsayılan olarak, 4.5.2 .NET Framework Visual Studio 2015 Target ile oluşturulan CLR projeleri. Yeni bir proje oluşturduğunuzda .NET Framework 4,6 hedeflemek için, **Yeni proje** iletişim kutusunda, iletişim kutusunun üst ortasındaki açılan menüde hedef çerçevesini değiştirin. Mevcut bir projenin hedef çerçevesini değiştirmek için projeyi kapatın, proje dosyasını (. vcxproj) düzenleyin ve hedef Framework sürümünün değerini 4,6 olarak değiştirin. Projeyi bir sonraki açışınızda ayarlar geçerli olur.
+::: moniker range="msvc-140"
 
-**Visual Studio 2017**: Visual Studio 2017 ' de varsayılan çerçeve 4.6.1 ' dir ve Framework sürüm Seçicisi **Yeni proje Iletişim kutusunun**en altında bulunur. C++/CLı, varsayılan olarak yüklenmez. Bileşeni yüklemek için Visual Studio Yükleyicisi açın ve görsel C++ C++altında/CLI bileşenini seçin.
+Varsayılan olarak, 4.5.2 .NET Framework Visual Studio 2015 Target ile oluşturulan CLR projeleri. Yeni bir proje oluştururken .NET Framework 4,6 ' i hedefleyebilirsiniz. **Yeni proje** iletişim kutusunda, iletişim kutusunun üst ortasındaki açılan menüde hedef çerçevesini değiştirin. Mevcut bir projenin hedef çerçevesini değiştirmek için projeyi kapatın, proje dosyasını ( *`.vcxproj`* ) düzenleyin ve hedef Framework sürümü değerini 4,6 olarak değiştirin. Değişiklikler projeyi bir sonraki açışınızda etkili olur.
 
-## <a name="in-this-section"></a>Bu Bölümde
+::: moniker-end
+::: moniker range="msvc-150"
 
-[C++/CLI Görevleri](../dotnet/cpp-cli-tasks.md)
+Visual Studio 2017 ' de, varsayılan hedef .NET Framework 4.6.1 ' dir. Framework sürüm Seçicisi, **Yeni proje** iletişim kutusunun en altında bulunur.
 
-[Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)
+## <a name="install-ccli-support-in-visual-studio-2017"></a>Visual Studio 2017 ' de C++/CLı desteğini yükler
 
-[Saf ve Doğrulanabilen Kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)
+C++/CLı, Visual Studio C++ iş yükünü yüklediğinizde varsayılan olarak yüklenmez. Visual Studio yüklendikten sonra bileşeni yüklemek için Visual Studio Yükleyicisi açın. Visual Studio 'nun yüklü sürümünüzün yanındaki **Değiştir** düğmesini seçin. **Yüklü bileşenler** sekmesini seçin. **Derleyiciler, derleme araçları ve çalışma zamanları** bölümüne gidin ve **C++/CLI desteği**' ni seçin. Visual Studio 'Yu güncelleştirmek için **Değiştir** ' i seçin.
 
-[Normal İfadeler (C++/CLI)](../dotnet/regular-expressions-cpp-cli.md)
+::: moniker-end
+::: moniker range="msvc-160"
 
-[Dosya Işleme ve g/ç (C++/CLI)](../dotnet/file-handling-and-i-o-cpp-cli.md)
+Visual Studio 2019 ' de, .NET Core projeleri için varsayılan hedef Framework 5,0 ' dir. .NET Framework projeleri için varsayılan değer 4.7.2 ' dir. .NET Framework sürüm Seçicisi **Yeni proje oluştur** iletişim kutusunun **yeni projenizi yapılandırın** sayfasında bulunur.
+## <a name="install-ccli-support-in-visual-studio-2019"></a>Visual Studio 2019 ' de C++/CLı desteğini yükler
 
-[Grafik İşlemleri (C++/CLI)](../dotnet/graphics-operations-cpp-cli.md)
+C++/CLı, Visual Studio C++ iş yükünü yüklediğinizde varsayılan olarak yüklenmez. Visual Studio yüklendikten sonra bileşeni yüklemek için Visual Studio Yükleyicisi açın. Visual Studio 'nun yüklü sürümünüzün yanındaki **Değiştir** düğmesini seçin. **Yüklü bileşenler** sekmesini seçin. **Derleyiciler, derleme araçları ve çalışma zamanları** bölümüne gidin ve **v142 derleme araçları bileşeni için en son C++/CLI desteğini** seçin. Visual Studio 'Yu güncelleştirmek için **Değiştir** ' i seçin.
 
-[Windows İşlemleri (C++/CLI)](../dotnet/windows-operations-cpp-cli.md)
+::: moniker-end
 
-[ADO.NET Kullanarak Veri Erişimi (C++/CLI)](../dotnet/data-access-using-adonet-cpp-cli.md)
+## <a name="in-this-section"></a>Bu bölümde
 
-[Diğer .NET Dilleri ile Birlikte Çalışabilirlik (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)
+[C++/CLI görevleri](../dotnet/cpp-cli-tasks.md)
+
+[Yerel ve.NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)
+
+[Saf ve Doğrulanabilen kod (C++/CLı)](../dotnet/pure-and-verifiable-code-cpp-cli.md)
+
+[Normal ifadeler (C++/CLı)](../dotnet/regular-expressions-cpp-cli.md)
+
+[Dosya işleme ve g/ç (C++/CLı)](../dotnet/file-handling-and-i-o-cpp-cli.md)
+
+[Grafik işlemleri (C++/CLı)](../dotnet/graphics-operations-cpp-cli.md)
+
+[Windows işlemleri (C++/CLı)](../dotnet/windows-operations-cpp-cli.md)
+
+[ADO.NET kullanarak veri erişimi (C++/CLı)](../dotnet/data-access-using-adonet-cpp-cli.md)
+
+[Diğer .NET dilleri ile birlikte çalışabilirlik (C++/CLı)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)
 
 [Seri Hale Getirme (C++/CLI)](../dotnet/serialization-cpp-cli.md)
 
-[Yönetilen Türler (C++/CLI)](../dotnet/managed-types-cpp-cli.md)
+[Yönetilen türler (C++/CLı)](../dotnet/managed-types-cpp-cli.md)
 
 [Yansıma (C++/CLI)](../dotnet/reflection-cpp-cli.md)
 
-[Tanımlayıcı Ad Derlemeleri (Derleme İmzalama) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)
+[Tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLı)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)
 
-[Hata Ayıklama Sınıfı (C++/CLI)](../dotnet/debug-class-cpp-cli.md)
+[Hata ayıklama sınıfı (C++/CLı)](../dotnet/debug-class-cpp-cli.md)
 
-[STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)
+[STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md)
 
-[C++ Support Library](../dotnet/cpp-support-library.md)
+[C++ destek kitaplığı](../dotnet/cpp-support-library.md)
 
 [C++/CLI Özel Durumları](../dotnet/exceptions-in-cpp-cli.md)
 
@@ -60,4 +79,4 @@ ms.locfileid: "68711131"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)
+[Yerel ve.NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)
