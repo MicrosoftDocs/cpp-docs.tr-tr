@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C Dili Çalıştırılabilirlerinde kullanmak için C++ Işlevlerini dışa aktarma'
 title: C Dili Yürütülebilir Öğelerinde Kullanmak için C++ İşlevlerini Dışarı Aktarma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - exporting functions [C++], C++ functions in C executables
 - functions [C++], exporting
 ms.assetid: 80b9e982-f52d-4312-a891-f73cc69f3c2b
-ms.openlocfilehash: 38b13c1fc9c57354ba8160f6dbe0df6546fe7b5f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c11ee56afb6fc99dbdf5a795cb8551e54835cd67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156625"
 ---
 # <a name="exporting-c-functions-for-use-in-c-language-executables"></a>C Dili Yürütülebilir Öğelerinde Kullanmak için C++ İşlevlerini Dışarı Aktarma
 

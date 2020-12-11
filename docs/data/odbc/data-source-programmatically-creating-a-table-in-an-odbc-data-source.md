@@ -1,5 +1,6 @@
 ---
-title: ODBC Veri Kaynağında Programlı Bir Tablo Oluşturma
+description: 'Hakkında daha fazla bilgi edinin: veri kaynağı: program aracılığıyla ODBC veri kaynağında tablo oluşturma'
+title: ODBC veri kaynağında program aracılığıyla tablo oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - programmatically creating ODBC tables [C++]
@@ -7,31 +8,31 @@ helpviewer_keywords:
 - ODBC data sources, creating tables in
 - tables [C++], creating programmatically
 ms.assetid: 9ca68fb5-c3df-424a-a75c-e3fb01cc1b18
-ms.openlocfilehash: 6cf26cad7fe39f374daf371902525087b446658c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b195cc4fb81f1caed0b280c5df6a2032f4944ddf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81358834"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155715"
 ---
 # <a name="data-source-programmatically-creating-a-table-in-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağında Tablo Oluşturma
 
-Bu konu, sınıfın `ExecuteSQL` `CDatabase`üye işlevini kullanarak, create **TABLE** SQL deyimi içeren bir dize geçirerek, veri kaynağınız için nasıl bir tablo oluşturulutamamgerektiğini açıklar.
+Bu konuda, `ExecuteSQL` sınıfının üye işlevini kullanarak ve `CDatabase` işlevi bir **Create Table** SQL ifadesini içeren bir dize geçirerek veri kaynağınız için bir tablo oluşturma işlemi açıklanmaktadır.
 
-MFC'deki ODBC veri kaynakları hakkında genel bilgi için [bkz.](../../data/odbc/data-source-odbc.md) Konu [Veri Kaynağı: Bir ODBC Veri Kaynağının Programlı olarak yapılandırılarak](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md) yapılandırılması, veri kaynakları oluşturmayı açıklar.
+MFC 'deki ODBC veri kaynakları hakkında genel bilgi için bkz. [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md). Konu [veri kaynağı: program aracılığıyla ODBC veri kaynağını yapılandırma](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md) veri kaynakları oluşturmayı açıklar.
 
-Veri kaynağını oluşturduğunuzda, üye işlevve CREATE `ExecuteSQL` **TABLE** SQL deyimini kullanarak kolayca tablo oluşturabilirsiniz. Örneğin, adında `CDatabase` `myDB`bir nesneniz varsa, tablo oluşturmak için aşağıdaki MFC kodunu kullanabilirsiniz:
+Veri kaynağı oluşturulduğunda, `ExecuteSQL` üye işlevini ve **Create Table** SQL ifadesini kullanarak tabloları kolayca oluşturabilirsiniz. Örneğin, `CDatabase` adlı bir nesneniz varsa `myDB` , bir tablo oluşturmak IÇIN aşağıdaki MFC kodunu kullanabilirsiniz:
 
 ```
 myDB.ExecuteSQL("CREATE TABLE OFFICES (OfficeID TEXT(4)" ",
                          OfficeName TEXT(10))");
 ```
 
-Bu kod örneği, `myDB`Microsoft Access veri kaynağı bağlantısında "OFFICE" adlı bir tablo oluşturur; tabloda "OfficeID" ve "OfficeName" olmak için iki alan bulunmaktadır.
+Bu kod örneği, tarafından korunan Microsoft Access veri kaynağı bağlantısında "OFISLERI" adlı bir tablo oluşturur `myDB` ; tablo, "OfficeId" ve "OfficeName" olmak üzere iki alan içerir.
 
 > [!NOTE]
-> **CREATE TABLE** SQL deyiminde belirtilen alan türleri, kullanmakta olduğunuz ODBC sürücüsüne göre değişiklik gösterebilir. Microsoft Sorgu programı (Visual C++ 1.5 ile dağıtılır) bir veri kaynağı için hangi alan türlerinin kullanılabilerini keşfetmenin bir yoludur. Microsoft Sorgusu'nda **Dosya'yı**tıklatın, **Table_Definition**tıklatın, veri kaynağından bir tablo seçin ve **Tür** açılan kutusunda gösterilen türe bakın. Dizinoluşturmak için SQL sözdizimi de vardır.
+> **Create Table** SQL ifadesinde belirtilen alan türleri, kullanmakta olduğunuz ODBC sürücüsüne göre değişiklik gösterebilir. Microsoft sorgu programı (Visual C++ 1,5 ile dağıtılır), bir veri kaynağı için hangi alan türlerinin kullanılabilir olduğunu keşfetmenin bir yoludur. Microsoft Query 'de **Dosya**' ya tıklayın, **Table_Definition**' a tıklayın, veri kaynağından bir tablo seçin ve **tür** Birleşik giriş kutusunda gösterilen türe bakın. Dizinler oluşturmak için SQL sözdizimi de mevcuttur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)
+[Veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)

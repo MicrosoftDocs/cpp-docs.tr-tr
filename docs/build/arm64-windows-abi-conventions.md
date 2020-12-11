@@ -1,12 +1,13 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ARM64 ABı kurallarına genel bakış'
 title: ARM64 ABI kurallarına genel bakış
 ms.date: 03/27/2019
-ms.openlocfilehash: bfe55513ffd24175dbe62efc6d5afcfd82f71e4c
-ms.sourcegitcommit: 7f378314c5692d897ead10b7f6c96d4cb2abd266
+ms.openlocfilehash: fbdb709eaa960446bb76712962dbbc3bfb66d38a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88972679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157119"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -31,7 +32,7 @@ Son olarak, veri türlerine başvururken, ARM 'deki aşağıdaki tanımlara baş
 
 - **Kısa vektör** : bir veri türü doğrudan Simd 'de, 8 baytlık bir vektör veya 16 bayt/öğe olarak gösterilebilir. Her bir öğenin 1, 2, 4 veya 8 bayt olabilecek boyutu 8 bayt veya 16 bayt olarak hizalanır.
 - **HFA (homojen nokta toplama)** – 2 ile 4 özdeş kayan nokta üyelerine sahip bir veri türü, float veya Double.
-- **HVA (homojen kısa vektör toplama)** – 2 ile 4 özdeş kısa vektör üyesine sahip bir veri türüdür.
+- **HVA (homojen Short-Vector toplama)** : 2 ile 4 arasında özdeş Short-Vector üyesi olan bir veri türü.
 
 ## <a name="base-requirements"></a>Temel gereksinimler
 

@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: liste denetimlerinde bildirim Iletilerini Işleme'
 title: Liste Denetimlerinde Bildirim İletilerini İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - processing notifications [MFC]
 - CListCtrl class [MFC], processing notifications
 ms.assetid: 1f0e296e-d2a3-48fc-ae38-51d7fb096f51
-ms.openlocfilehash: 92111e3e0a4869ca06b89d2d18d38aab9f10ab7d
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: b761f5213a73ce31484a7a252b9b441da2fe154d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70908089"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154805"
 ---
 # <a name="processing-notification-messages-in-list-controls"></a>Liste Denetimlerinde Bildirim İletilerini İşleme
 

@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: nesne durumu makroları'
 title: Nesne durumu makroları
 ms.date: 11/04/2016
 f1_keywords:
 - atlcom/ATL::DECLARE_OLEMISC_STATUS
 ms.assetid: 727dbef2-a342-4157-9d64-a421805d9747
-ms.openlocfilehash: d9e2223739dc3d0636337e2e2f713c80dff50131
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7aac547ac0b63a7db9ceea3b58befdea3e076f3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835239"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157912"
 ---
 # <a name="object-status-macros"></a>Nesne durumu makroları
 

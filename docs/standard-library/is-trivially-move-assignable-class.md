@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_trivially_move_assignable sınıfı'
 title: is_trivially_move_assignable sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_move_assignable
 ms.assetid: 374f7322-0706-4bc1-a1a5-4191d0315e28
-ms.openlocfilehash: 4b349d328da995105a6217f4ab597da5d7eafc38
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 3f852bd2b1ccf3647a4aa05bb5996f015341b342
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154337"
 ---
 # <a name="is_trivially_move_assignable-class"></a>is_trivially_move_assignable sınıfı
 
@@ -26,7 +27,7 @@ struct is_trivially_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* \
+*Kalite*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -43,7 +44,7 @@ Sınıf *Ty* için bir taşıma atama işleci şu durumlarda önemsiz:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2723'
 title: Derleyici hatası C2723
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2723
 ms.assetid: 86925601-2297-4cfd-94e2-2caf27c474c4
-ms.openlocfilehash: f723fcc0a3d9626f01f2059a3d9363801221bca0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ab6eacd4279f0fd7b1c44b86b72cbe62ee51020e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155520"
 ---
 # <a name="compiler-error-c2723"></a>Derleyici hatası C2723
 

@@ -1,27 +1,28 @@
 ---
+description: 'Daha fazla bilgi edinin: değiştirilebilir parametreler kullanma (kayıt&#39;'
 title: Değiştirilebilen parametreleri kullanma (ATL kaydedici)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - '%MODULE%'
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
-ms.openlocfilehash: debbccea5836fa63282b62ff87573160069fb169
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 5b8b8071115186a462bbf9ca0b12d869458dd925
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157208"
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>Değiştirilebilen parametreleri kullanma (kaydedici&#39;s Önişlemci)
 
 Değiştirilebilen parametreler, bir kaydedici istemcisinin çalışma zamanı verilerini belirtmesini sağlar. Bunu yapmak için, kaydedici, betiğinizdeki değiştirilebilen parametrelerle ilişkili değerleri girdiği bir değiştirme haritası sağlar. Kaydedici bu girişleri çalışma zamanında yapar.
 
-## <a name="using-module"></a><a name="_atl_using_.25.module.25"></a>% MODULE% kullanılıyor
+## <a name="using-module"></a><a name="_atl_using_.25.module.25"></a> % MODULE% kullanılıyor
 
-[Atl Denetim Sihirbazı](../atl/reference/atl-control-wizard.md) tarafından kullanılan `%MODULE%`bir betiği otomatik olarak oluşturur. ATL, sunucunuzun DLL veya EXE 'sinin gerçek konumu için bu değiştirilebilir parametreyi kullanır.
+[Atl Denetim Sihirbazı](../atl/reference/atl-control-wizard.md) tarafından kullanılan bir betiği otomatik olarak oluşturur `%MODULE%` . ATL, sunucunuzun DLL veya EXE 'sinin gerçek konumu için bu değiştirilebilir parametreyi kullanır.
 
-## <a name="concatenating-run-time-data-with-script-data"></a>Çalışma zamanı verilerini betik verileriyle birleştirerek
+## <a name="concatenating-run-time-data-with-script-data"></a>Betik verileriyle Run-Time verileri bitiştirme
 
-Önişlemci 'nin başka bir kullanımı, çalışma zamanı verilerini betik verileriyle birleştirmek için kullanılır. Örneğin, sonuna "`, 1`" dizesinin bulunduğu bir modülün tam yolunu içeren bir girdinin gerekli olduğunu varsayalım. İlk olarak, aşağıdaki genişletmeyi tanımlayın:
+Önişlemci 'nin başka bir kullanımı, çalışma zamanı verilerini betik verileriyle birleştirmek için kullanılır. Örneğin, sonuna "" dizesinin bulunduğu bir modülün tam yolunu içeren bir girdinin gerekli olduğunu varsayalım `, 1` . İlk olarak, aşağıdaki genişletmeyi tanımlayın:
 
 ```rgs
 'MySampleKey' = s '%MODULE%, 1'
@@ -31,7 +32,7 @@ Ardından, [betikleri çağırma](../atl/invoking-scripts.md)bölümünde listel
 
 [!code-cpp[NVC_ATL_Utilities#113](../atl/codesnippet/cpp/using-replaceable-parameters-the-registrar-s-preprocessor_1.cpp)]
 
-Betiği ayrıştırma sırasında, kaydedici öğesine `'%MODULE%, 1'` `c:\mycode\mydll.dll, 1`genişletilir.
+Betiği ayrıştırma sırasında, kaydedici `'%MODULE%, 1'` öğesine genişletilir `c:\mycode\mydll.dll, 1` .
 
 > [!NOTE]
 > Bir kaydedici betiğinde, 4K en büyük belirteç boyutudur. (Belirteç söz diziminde tanınabilir bir öğedir.) Bu, Önişlemci tarafından oluşturulan veya genişletilen belirteçleri içerir.

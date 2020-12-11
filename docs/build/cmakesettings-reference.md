@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CMakeSettings.jsşema başvurusu'
 title: Şema başvurusunda CMakeSettings.js
 ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 61da0fd70ad68928872a2212b70377ab8a83a76a
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 2be5edb616764d56e7c08a51be19aab11a62f227
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156911"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>Şema başvurusunda CMakeSettings.js
 
@@ -71,9 +72,9 @@ IDE 'ye yapılandırma ekleyebilir veya kaldırabilir ve ardından bunları doğ
 
 Dokja esneklik ve işlev yerine hızlı derleme hızları için tasarlandığından, varsayılan olarak ayarlanır. Ancak, bazı CMake projeleri Dokja kullanarak doğru şekilde derlemeyebilir. Böyle bir durumla karşılaşırsanız, CMake 'in bunun yerine Visual Studio projeleri oluşturmasını sağlayabilirsiniz.
 
-Visual Studio 2017 ' de bir Visual Studio üreteci belirtmek için CMake ' i seçerek ana menüden Ayarlar düzenleyicisini açın. **CMake ayarlarını değiştirin** . "Dokja" ve "V" yazın. Bu, istediğiniz oluşturucuyu seçmenizi sağlayan IntelliSense 'i etkinleştirir.
+Visual Studio 2017 ' de bir Visual Studio üreteci belirtmek için CMake ' i seçerek ana menüden Ayarlar düzenleyicisini açın. **CMake ayarlarını değiştirin**. "Dokja" ve "V" yazın. Bu, istediğiniz oluşturucuyu seçmenizi sağlayan IntelliSense 'i etkinleştirir.
 
-Visual Studio 2019 ' de bir Visual Studio Oluşturucusu belirtmek için, **Çözüm Gezgini** *CMakeLists.txt* dosyasına sağ tıklayın ve **CMake ayarları proje için CMake ayarlarını** seçin > **Show Advanced Settings** > **CMake oluşturucuyu** göster ' i seçin.
+Visual Studio 2019 ' de bir Visual Studio Oluşturucusu belirtmek için, **Çözüm Gezgini** *CMakeLists.txt* dosyasına sağ tıklayın ve **CMake ayarları proje için CMake ayarlarını** seçin >  > **CMake oluşturucuyu** göster ' i seçin.
 
 Etkin yapılandırma bir Visual Studio Oluşturucusu belirttiğinde, varsayılan olarak MSBuild.exe `-m -v:minimal` bağımsız değişkenlerle çağrılır. Derlemeyi özelleştirmek için, dosyadaki  *CMakeSettings.js* içinde, özelliği aracılığıyla yapı sistemine geçirilecek ek [MSBuild komut satırı bağımsız değişkenleri](../build/reference/msbuild-visual-cpp-overview.md) belirtebilirsiniz `buildCommandArgs` :
 
@@ -180,7 +181,7 @@ Bir CMakeLists.txt dosyasından, tüm ortam değişkenlerine sözdizimi tarafın
 
 **Visual Studio 2019 sürüm 16,4 ve üzeri:** Hata ayıklama hedefleri, *üzerindeCMakeSettings.js* belirttiğiniz ortamda otomatik olarak başlatılır. [Üzerindelaunch.vs.js](launch-vs-schema-reference-cpp.md) ve [tasks.vs.jsüzerinde](tasks-vs-json-schema-reference-cpp.md), ortam değişkenlerini, hedef başına veya görev başına temelinde geçersiz kılabilir veya ekleyebilirsiniz.
 
-Aşağıdaki örnek, hem x86-hata ayıklama hem de x64-hata ayıklama yapılandırmalarında devralınan bir genel değişkeni ( **BuildDir** ) tanımlar. Her yapılandırma, bu yapılandırma için **buildroot** özelliğinin değerini belirtmek için değişkenini kullanır. Ayrıca, her yapılandırmanın yalnızca bu yapılandırma için geçerli olan bir değişken belirtmek üzere **ınherenler** özelliğini nasıl kullandığını unutmayın.
+Aşağıdaki örnek, hem x86-hata ayıklama hem de x64-hata ayıklama yapılandırmalarında devralınan bir genel değişkeni ( **BuildDir**) tanımlar. Her yapılandırma, bu yapılandırma için **buildroot** özelliğinin değerini belirtmek için değişkenini kullanır. Ayrıca, her yapılandırmanın yalnızca bu yapılandırma için geçerli olan bir değişken belirtmek üzere **ınherenler** özelliğini nasıl kullandığını unutmayın.
 
 ```json
 {

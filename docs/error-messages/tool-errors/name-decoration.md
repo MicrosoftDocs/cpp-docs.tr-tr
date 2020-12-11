@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ad dekorasyonu'
 title: Düzenlemeyi Adlandır
 ms.date: 04/22/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - names [C++], decorated
 - decorated names, calling conventions
 ms.assetid: 8327a27b-bb4f-49f2-8218-b851b9d2a463
-ms.openlocfilehash: 6a43b952b2f8f9bcbb5e835bf8e20682c99f2935
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 36360a1e313aba17a203fd1c2c4412cb927d1591
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155143"
 ---
 # <a name="name-decoration"></a>Düzenlemeyi Adlandır
 
@@ -21,14 +22,14 @@ Ad dekorasyonu genellikle C++ adlandırma kurallarına başvurur, ancak çeşitl
 
 Aşağıdaki tabloda çeşitli çağırma kuralları için bağlayıcı adı gösterilmektedir.
 
-|Çağırma kuralı|`extern "C"`veya `.c` dosya|`.cpp``.cxx`veya`/TP`|
+|Çağırma kuralı|`extern "C"` veya `.c` dosya|`.cpp``.cxx`veya`/TP`|
 |------------------------|---------------------------|------------------------|
 |C adlandırma kuralı ( **`__cdecl`** )|`_test`|`?test@@ZAXXZ`|
 |Hızlı çağrı adlandırma kuralı ( **`__fastcall`** )|`@test@0`|`?test@@YIXXZ`|
 |Standart çağrı adlandırma kuralı ( **`__stdcall`** )|`_test@0`|`?test@@YGXXZ`|
 |Vektör çağrısı adlandırma kuralı ( **`__vectorcall`** )|`test@@0`|`?test@@YQXXZ`|
 
-`extern "C"`C++ ' dan C işlevini çağırmak için kullanın. `extern "C"`sınıf olmayan C++ işlevleri için C adlandırma kuralını kullanmaya zorlar. Derleyiciye dosya adı uzantısını yok saymasını ve dosyayı sırasıyla C veya C++ olarak derlemeyi söyleyen **/TC** veya **/TP**derleyici anahtarlarına dikkat edin. Bu seçenekler, beklemediğinizi bağlayıcı adlarına neden olabilir.
+`extern "C"`C++ ' dan C işlevini çağırmak için kullanın. `extern "C"` sınıf olmayan C++ işlevleri için C adlandırma kuralını kullanmaya zorlar. Derleyiciye dosya adı uzantısını yok saymasını ve dosyayı sırasıyla C veya C++ olarak derlemeyi söyleyen **/TC** veya **/TP** derleyici anahtarlarına dikkat edin. Bu seçenekler, beklemediğinizi bağlayıcı adlarına neden olabilir.
 
 Eşleşmeyen parametrelere sahip işlev prototiptürleri de bu hataya neden olabilir. Ad dekorasyonu, bir işlevin parametrelerini, son düzenlenmiş işlev adına ekler. İşlev bildirimiyle eşleşmeyen parametre türleriyle bir işlevi çağırmak, LNK2001 de neden olabilir.
 

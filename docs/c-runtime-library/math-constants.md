@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: matematik sabitleri'
 title: Matematik Sabitleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,16 +23,16 @@ helpviewer_keywords:
 - M_SQRT2 constant
 - M_LN2 constant
 ms.assetid: db533c3f-6ae8-4520-9d35-c8fabbef3529
-ms.openlocfilehash: 156e4df4bcd4be457f2d14e7e5f5531d93d642be
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 4591376b6320d9768acb1ed8ecc0d5098a046bf6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156118"
 ---
 # <a name="math-constants"></a>Matematik Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #define _USE_MATH_DEFINES // for C++
@@ -45,7 +46,7 @@ ms.locfileid: "79438269"
 
 Aşağıdaki semboller, belirtilen ifadelerin değerleri için tanımlanmıştır:
 
-|Sembol|İfadeler|Değer|
+|Sembol|Expression|Değer|
 |------------|----------------|-----------|
 |M_E|e|2.71828182845904523536|
 |M_LOG2E|log2 (e)|1.44269504088896340736|
@@ -61,10 +62,10 @@ Aşağıdaki semboller, belirtilen ifadelerin değerleri için tanımlanmıştı
 |M_SQRT2|sqrt (2)|1.41421356237309504880|
 |M_SQRT1_2|1/Sqrt (2)|0.707106781186547524401|
 
-Matematik sabitleri standart C/C++içinde tanımlanmamıştır. Bunları kullanmak için öncelikle `_USE_MATH_DEFINES` tanımlamanız ve sonra cmath veya Math. h öğesini eklemeniz gerekir.
+Matematik sabitleri standart C/C++ içinde tanımlanmamıştır. Bunları kullanmak için, önce `_USE_MATH_DEFINES` cmath veya Math. h öğesini tanımlamanız ve ardından eklemeniz gerekir.
 
-ATLComTime. h dosyası, projeniz serbest bırakma modunda yapılandırıldığında Math. h içerir. Bir projede ATLComTime. h içeren bir veya daha fazla matematik sabitiniz kullanırsanız, ATLComTime. h öğesini eklemeden önce `_USE_MATH_DEFINES` tanımlamanız gerekir.
+ATLComTime. h dosyası, projeniz serbest bırakma modunda yapılandırıldığında Math. h içerir. ATLComTime. h içeren bir projede bir veya daha fazla matematik sabitiniz kullanırsanız, `_USE_MATH_DEFINES` ATLComTime. h öğesini eklemeden önce tanımlamanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

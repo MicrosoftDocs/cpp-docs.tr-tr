@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Header-Control bildirimleri Işleme'
 title: Üstbilgi Denetimi Bildirimlerini İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - header controls [MFC], processing notifications
 - header control notifications
 ms.assetid: e6c6af7c-d458-4d33-85aa-48014ccde5f6
-ms.openlocfilehash: c313382b8be7538ba5bb465c6ba383955e414662
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ac1cdbf5efc3e82cdf417a38072cf344ca2ee1a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154857"
 ---
 # <a name="processing-header-control-notifications"></a>Üstbilgi Denetimi Bildirimlerini İşleme
 

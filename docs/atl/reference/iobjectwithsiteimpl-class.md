@@ -1,5 +1,6 @@
 ---
-title: IObjectWithSiteImpl Sınıfı
+description: 'Daha fazla bilgi edinin: IObjectWithSiteImpl sınıfı'
+title: IObjectWithSiteImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IObjectWithSiteImpl
@@ -11,16 +12,16 @@ f1_keywords:
 helpviewer_keywords:
 - IObjectWithSiteImpl class
 ms.assetid: 4e1f774f-bc3d-45ee-9a1c-c3533a511588
-ms.openlocfilehash: 034e5dd42f6e10286520bb2a08effc40b0aca71a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 100a4d16bea63d573fe4fb00bc37e656a7c2c483
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158302"
 ---
-# <a name="iobjectwithsiteimpl-class"></a>IObjectWithSiteImpl Sınıfı
+# <a name="iobjectwithsiteimpl-class"></a>IObjectWithSiteImpl sınıfı
 
-Bu sınıf, bir nesnenin kendi sitesiyle iletişim kurmasına izin veren yöntemler sağlar.
+Bu sınıf, bir nesnenin sitesiyle iletişim kurmasına izin veren yöntemler sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,31 +34,31 @@ template <class T>
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınızdan `IObjectWithSiteImpl`türetilmiştir.
+Sınıfınız, öğesinden türetilir `IObjectWithSiteImpl` .
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[IObjectWithSiteImpl::GetSite](#getsite)|Bir arabirim işaretçisi için siteyi sorgular.|
-|[IObjectWithSiteImpl::SetChildSite](#setchildsite)|Nesneye sitenin `IUnknown` işaretçisini sağlar.|
-|[IObjectWithSiteImpl::SetSite](#setsite)|Nesneye sitenin `IUnknown` işaretçisini sağlar.|
+|[IObjectWithSiteImpl:: GetSite](#getsite)|Siteyi bir arabirim işaretçisi için sorgular.|
+|[IObjectWithSiteImpl:: SetChildSite](#setchildsite)|Nesneyi sitenin `IUnknown` işaretçiyle birlikte sağlar.|
+|[IObjectWithSiteImpl:: SetSite](#setsite)|Nesneyi sitenin `IUnknown` işaretçiyle birlikte sağlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[IObjectWithSiteImpl::m_spUnkSite](#m_spunksite)|Sitenin `IUnknown` işaretçisini yönetir.|
+|[IObjectWithSiteImpl:: m_spUnkSite](#m_spunksite)|Sitenin `IUnknown` işaretçisini yönetir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) arabirimi, bir nesnenin kendi sitesiyle iletişim kurmasını sağlar. Sınıf `IObjectWithSiteImpl` bu arabirimin varsayılan bir `IUnknown` uygulamasını sağlar ve hata ayıklama oluştururda dökümü aygıtına bilgi göndererek uygular.
+[IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) arabirimi bir nesnenin sitesiyle iletişim kurmasına izin verir. Sınıfı, `IObjectWithSiteImpl` Bu arabirimin varsayılan bir uygulamasını sağlar ve `IUnknown` hata ayıklama yapılarında döküm cihazına bilgi göndererek uygular.
 
-`IObjectWithSiteImpl`iki yöntem belirtir. İstemci `SetSite`ilk olarak sitenin `IUnknown` işaretçisini geçerek çağırır. Bu işaretçi nesneiçinde depolanır ve daha sonra `GetSite`bir çağrı yoluyla alınabilir.
+`IObjectWithSiteImpl` iki yöntemi belirtir. İstemci ilk kez çağırır `SetSite` ve site `IUnknown` işaretçisini geçiyor. Bu işaretçi nesne içinde depolanır ve daha sonra öğesine çağrısıyla alınabilir `GetSite` .
 
-Genellikle, denetim olmayan bir `IObjectWithSiteImpl` nesne oluştururken sınıfTürüntürün. Denetimler için, aynı zamanda bir site işaretçisi sağlar [IOleObjectImpl](../../atl/reference/ioleobjectimpl-class.md), sınıf türetmek. Sınıfınızı her ikisinden `IObjectWithSiteImpl` de `IOleObjectImpl`türetetmeyin ve.
+Genellikle, `IObjectWithSiteImpl` bir denetim olmayan bir nesne oluştururken sınıfınızı sınıfından türetirsiniz. Denetimler için, sınıfınızı bir site işaretçisi de sağlayan [IOleObjectImpl](../../atl/reference/ioleobjectimpl-class.md)' dan türetirsiniz. Sınıfınızı ve ' den türemeyin `IObjectWithSiteImpl` `IOleObjectImpl` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -67,11 +68,11 @@ Genellikle, denetim olmayan bir `IObjectWithSiteImpl` nesne oluştururken sını
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="iobjectwithsiteimplgetsite"></a><a name="getsite"></a>IObjectWithSiteImpl::GetSite
+## <a name="iobjectwithsiteimplgetsite"></a><a name="getsite"></a> IObjectWithSiteImpl:: GetSite
 
-Tarafından tanımlanan arabirimi işaretçisi `riid`için siteyi sorgular.
+Sitesini tarafından tanımlanan arabirime yönelik bir işaretçi için sorgular `riid` .
 
 ```
 STDMETHOD(GetSite)(
@@ -81,11 +82,11 @@ STDMETHOD(GetSite)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Site bu arabirimi destekliyorsa, `ppvSite`işaretçi . Aksi `ppvSite` takdirde, NULL olarak ayarlanır.
+Site bu arabirimi destekliyorsa, işaretçi aracılığıyla döndürülür `ppvSite` . Aksi takdirde, `ppvSite` null olarak ayarlanır.
 
-Bkz. [IObjectWithSite::Windows](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-getsite) SDK'daki Site.
+Windows SDK bkz. [IObjectWithSite:: GetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-getsite) .
 
-## <a name="iobjectwithsiteimplm_spunksite"></a><a name="m_spunksite"></a>IObjectWithSiteImpl::m_spUnkSite
+## <a name="iobjectwithsiteimplm_spunksite"></a><a name="m_spunksite"></a> IObjectWithSiteImpl:: m_spUnkSite
 
 Sitenin `IUnknown` işaretçisini yönetir.
 
@@ -95,11 +96,11 @@ CComPtr<IUnknown> m_spUnkSite;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_spUnkSite`başlangıçta [SetSite'ye](#setsite)bir çağrı yoluyla bu işaretçi alır.
+`m_spUnkSite` Başlangıçta bu işaretçiyi bir [SetSite](#setsite)çağrısıyla alır.
 
-## <a name="iobjectwithsiteimplsetchildsite"></a><a name="setchildsite"></a>IObjectWithSiteImpl::SetChildSite
+## <a name="iobjectwithsiteimplsetchildsite"></a><a name="setchildsite"></a> IObjectWithSiteImpl:: SetChildSite
 
-Nesneye sitenin `IUnknown` işaretçisini sağlar.
+Nesneyi sitenin `IUnknown` işaretçiyle birlikte sağlar.
 
 ```
 HRESULT SetChildSite(IUnknown* pUnkSite);
@@ -108,15 +109,15 @@ HRESULT SetChildSite(IUnknown* pUnkSite);
 ### <a name="parameters"></a>Parametreler
 
 *pUnkSite*<br/>
-[içinde] Bu nesneyi yöneten sitenin `IUnknown` arabirim işaretçisine işaretçi. NULL ise, nesne, `IUnknown::Release` nesnenin artık sitesini bilmediği herhangi bir varolan siteyi çağırmalıdır.
+'ndaki `IUnknown` Bu nesneyi yöneten sitenin arabirim işaretçisine yönelik işaretçi. NULL ise, nesne, `IUnknown::Release` nesnenin artık sitesini bilmediği, var olan herhangi bir sitede çağırmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 S_OK döndürür.
 
-## <a name="iobjectwithsiteimplsetsite"></a><a name="setsite"></a>IObjectWithSiteImpl::SetSite
+## <a name="iobjectwithsiteimplsetsite"></a><a name="setsite"></a> IObjectWithSiteImpl:: SetSite
 
-Nesneye sitenin `IUnknown` işaretçisini sağlar.
+Nesneyi sitenin `IUnknown` işaretçiyle birlikte sağlar.
 
 ```
 STDMETHOD(SetSite)(IUnknown* pUnkSite);
@@ -124,8 +125,8 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. [IObjectWithSite::Windows](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) SDK'da SetSite.
+Windows SDK bkz. ' de [IObjectWithSite:: SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

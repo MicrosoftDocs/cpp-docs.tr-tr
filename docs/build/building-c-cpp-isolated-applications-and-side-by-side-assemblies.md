@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C/C++ yalıtılmış uygulamaları ve yan yana derlemeler oluşturma'
 title: C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - side-by-side applications [C++]
 - builds [C++], side-by-side assemblies
 ms.assetid: 9465904e-76f7-48bd-bb3f-c55d8f1699b6
-ms.openlocfilehash: db2978c054362b6c329fb786d0f7da322d4c9201
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a48e0e63b78e72d99241df84cdd9709198c1aa82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157080"
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 
@@ -30,15 +31,15 @@ Bu bölümde, C/C++ uygulamanızı yalıtılmış bir uygulama olarak nasıl olu
 
 [C/C++ yalıtılmış uygulamaları oluşturma](building-c-cpp-isolated-applications.md)
 
-[C/C++ Yan Yana Derlemeleri Oluşturma](building-c-cpp-side-by-side-assemblies.md)
+[C/C++ yan yana derlemeleri oluşturma](building-c-cpp-side-by-side-assemblies.md)
 
-[Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme](how-to-build-registration-free-com-components.md)
+[Nasıl yapılır: Registration-Free COM bileşenleri oluşturma](how-to-build-registration-free-com-components.md)
 
-[Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](how-to-build-isolated-applications-to-consume-com-components.md)
+[Nasıl yapılır: COM bileşenlerini kullanmak için yalıtılmış uygulamalar oluşturma](how-to-build-isolated-applications-to-consume-com-components.md)
 
-[C/C++ Programları Bildirim Üretimini Anlama](understanding-manifest-generation-for-c-cpp-programs.md)
+[C/C++ programları için bildirim oluşturmayı anlama](understanding-manifest-generation-for-c-cpp-programs.md)
 
-[C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[C/C++ yalıtılmış uygulamaları ve yan yana derlemeler sorunlarını giderme](troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 
 ## <a name="related-sections"></a>İlgili Bölümler
 

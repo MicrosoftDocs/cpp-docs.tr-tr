@@ -1,27 +1,28 @@
 ---
+description: 'Daha fazla bilgi edinin: Visual Studio proje ayarlarını paylaşma veya yeniden kullanma'
 title: Visual Studio proje ayarlarını paylaşma veya yeniden kullanma-C++
 ms.date: 07/17/2019
 helpviewer_keywords:
 - project properties [C++], reusable
-ms.openlocfilehash: bcf54be0531c7150c1506eb6f5dda2b5bc95161f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5108bba6526c6c3140680cc12013b0c6232c9a0e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156846"
 ---
 # <a name="share-or-reuse-visual-studio-project-settings"></a>Visual Studio projelerinin ayarlarını paylaşma veya yeniden kullanma
 
-Birden çok projede başkalarıyla paylaşabileceğiniz veya yeniden kullanabileceğiniz özel bir ayarlar grubu oluşturmak için Özellik Yöneticisi kullanarak, yeniden kullanmak veya başkalarıyla paylaşmak istediğiniz her bir proje türü için ayarları depolamak üzere bir *özellik sayfası* (. props dosyası) oluşturmak için **Property Manager** kullanın. Özellik sayfalarını kullanmak, "genel" ayarları oluşturmanın diğer yöntemlerinden çok daha az hataya açıktır.
+Birden çok projede başkalarıyla paylaşabileceğiniz veya yeniden kullanabileceğiniz özel bir ayarlar grubu oluşturmak için Özellik Yöneticisi kullanarak, yeniden kullanmak veya başkalarıyla paylaşmak istediğiniz her bir proje türü için ayarları depolamak üzere bir *özellik sayfası* (. props dosyası) oluşturmak için  kullanın. Özellik sayfalarını kullanmak, "genel" ayarları oluşturmanın diğer yöntemlerinden çok daha az hataya açıktır.
 
 > [!IMPORTANT]
 > **. Kullanıcı dosyaları ve neden sorunlu olma**
 >
-> Visual Studio 'nun eski sürümleri, \<. User dosya adı uzantısına sahip olan ve userprofıle> \AppData\Local\Microsoft\MSBuild\v4.0\ klasöründe yer alan genel özellik sayfaları kullanıyordu. Bu dosyalar, proje yapılandırmalarına ilişkin özellikleri kullanıcı başına ve bilgisayar başına temelinde ayarladığından artık bu dosyaları önermiyoruz. Bu tür "genel" ayarlar, özellikle de yapı bilgisayarınızda birden fazla platformu hedef aldığınızda yapıları engelleyebilir. Örneğin, hem MFC projeniz hem de Windows Phone projeniz varsa, .user özellikleri bunlardan biri için geçersiz olur. Yeniden kullanılabilir özellik sayfaları daha esnek ve daha güçlüdür.
+> Visual Studio 'nun eski sürümleri,. User dosya adı uzantısına sahip olan ve \<userprofile> \Appdata\local\microsoft\msbuild\v4.0\ klasöründe yer alan genel özellik sayfaları kullanıyordu. Bu dosyalar, proje yapılandırmalarına ilişkin özellikleri kullanıcı başına ve bilgisayar başına temelinde ayarladığından artık bu dosyaları önermiyoruz. Bu tür "genel" ayarlar, özellikle de yapı bilgisayarınızda birden fazla platformu hedef aldığınızda yapıları engelleyebilir. Örneğin, hem MFC projeniz hem de Windows Phone projeniz varsa, .user özellikleri bunlardan biri için geçersiz olur. Yeniden kullanılabilir özellik sayfaları daha esnek ve daha güçlüdür.
 >
 > .user dosyaları halen Visual Studio tarafından yüklenmesine ve özellik devralımında rol oynamasına karşın, bu dosyalar varsayılan olarak boştur. En iyi **Özellik Yöneticisi** Yöntem, projelerinizin Kullanıcı başına, bilgisayar başına ayarlarından bağımsız olarak çalıştığından emin olmak için, bir SCC (kaynak kodu denetimi) ortamında doğru davranışı sağlamak açısından önemlidir.
 
-**Özellik Yöneticisi**görüntülemek için, menü çubuğunda**Özellik Yöneticisi** **görüntüle** > ' yi seçin veya ayarlarınıza bağlı olarak**diğer Windows** > **Özellik Yöneticisi** **görüntüleyin** > .
+**Özellik Yöneticisi** görüntülemek için, menü çubuğunda Özellik Yöneticisi **görüntüle**' yi seçin  >   veya   >  ayarlarınıza bağlı olarak **diğer Windows**  >  **Özellik Yöneticisi** görüntüleyin.
 
 Birden çok projeye uygulamak istediğiniz ortak, sık kullanılan bir özellik kümesine sahipseniz, bunları kural tarafından bir. props dosya adı uzantısına sahip olan, yeniden kullanılabilir bir *özellik sayfası* dosyasında yakalamak için **Özellik Yöneticisi** kullanabilirsiniz. Özelliklerini sıfırdan ayarlamanıza gerek kalmaması için sayfayı (veya sayfaları) yeni projelere uygulayabilirsiniz.
 
@@ -44,7 +45,7 @@ Birçok projesi olacak büyük çözümlerde, çözüm düzeyinde bir özellik s
 
 #### <a name="to-create-a-property-sheet"></a>Bir özellik sayfası oluşturmak için
 
-1. Menü çubuğunda**Özellik Yöneticisi** **görüntüle** > ' yi seçin veya**diğer Windows** > **Özellik Yöneticisi** **görüntüleyin** > . **Özellik Yöneticisi** açılır.
+1. Menü çubuğunda Özellik Yöneticisi **görüntüle**' yi seçin  >   veya   >  **diğer Windows**  >  **Özellik Yöneticisi** görüntüleyin. **Özellik Yöneticisi** açılır.
 
 2. Özellik sayfasının kapsamını tanımlamak için, geçerli olduğu öğeyi seçin. Bu, belirli bir yapılandırma veya başka bir özellik sayfası olabilir. Bu öğe için kısayol menüsünü açın ve **Yeni proje özellik sayfası ekle**' yi seçin. Bir ad ve konum belirtin.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _cputs _cputws'
 title: _cputs, _cputws
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - console, sending strings to
 - cputws function
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
-ms.openlocfilehash: 469b39e4e08f13af8d8ac3e679ed55c7afb240d2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7a519064b2a4318b5064074fbe9a0f09a3708d01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155923"
 ---
 # <a name="_cputs-_cputws"></a>_cputs, _cputws
 
@@ -74,7 +75,7 @@ Başarılı olursa **_cputs** 0 döndürür. İşlev başarısız olursa, sıfı
 
 **_Cputs** işlevi, *Str* tarafından doğrudan konsola işaret edilen null ile sonlandırılmış dizeyi yazar. Satır başı satır besleme (CR-LF) birleşimi dizeye otomatik olarak eklenmez.
 
-Bu işlev, parametresini doğrular. *Str* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve-1 döndürülür.
+Bu işlev, parametresini doğrular. *Str* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve-1 döndürülür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -88,8 +89,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_cputs**|\<conio. h>|\<errno. h>|
-|**_cputws**|\<conio. h>|\<errno. h>|
+|**_cputs**|\<conio.h>|\<errno.h>|
+|**_cputws**|\<conio.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -156,5 +157,5 @@ Hello world (courtesy of _cputws)!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_putch, _putwch](putch-putwch.md)<br/>

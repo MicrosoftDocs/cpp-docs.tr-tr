@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Visual Studio projeleri-C++'
 title: Visual Studio projeleri-C++
 ms.date: 10/25/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Visual Studio C++ projects
 - ATL projects
 ms.assetid: 11003cd8-9046-4630-a189-a32bf3b88047
-ms.openlocfilehash: a8e23a3c384ce9b5ac7e73d18958246b52eb95b5
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 07c7c0394c7b1a49bd4b8861540e540b095fae5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919390"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156820"
 ---
 # <a name="visual-studio-projects---c"></a>Visual Studio projeleri - C++
 
@@ -23,7 +24,7 @@ ms.locfileid: "92919390"
 
 ::: moniker range="msvc-160"
 
-**Dosya**  >  **Yeni**  >  **Proje** ' yi seçerek ve ardından **dili** c++ olarak ayarlayarak c++ projeleri oluşturabilirsiniz. Sonuçlar listesinde, **Platform** veya **proje türünü** ayarlayarak ve arama kutusuna anahtar sözcükleri yazarak filtreleyebileceğiniz proje şablonlarının listesini görürsünüz.
+**Dosya**  >  **Yeni**  >  **Proje**' yi seçerek ve ardından **dili** c++ olarak ayarlayarak c++ projeleri oluşturabilirsiniz. Sonuçlar listesinde, **Platform** veya **proje türünü** ayarlayarak ve arama kutusuna anahtar sözcükleri yazarak filtreleyebileceğiniz proje şablonlarının listesini görürsünüz.
 
    ![Visual Studio 2019 proje şablonları](../build/media/vs2019-choose-console-app.png "Visual Studio 2019 yeni proje Iletişim kutusu")
 
@@ -31,7 +32,7 @@ ms.locfileid: "92919390"
 
 ::: moniker range="msvc-150"
 
-**Dosya**  >  **Yeni**  >  **Proje** ' yi seçerek ve ardından sol bölmedeki Visual C++ ' yi seçerek C++ projeleri oluşturabilirsiniz. Orta bölmede proje şablonlarının bir listesini görürsünüz:
+**Dosya**  >  **Yeni**  >  **Proje**' yi seçerek ve ardından sol bölmedeki Visual C++ ' yi seçerek C++ projeleri oluşturabilirsiniz. Orta bölmede proje şablonlarının bir listesini görürsünüz:
 
    ![Proje şablonları](../overview/media/vs2017-new-project.png "Visual Studio 2017 yeni proje Iletişim kutusu")
 
@@ -55,7 +56,7 @@ Yeni bir proje oluşturduğunuzda, bir çözüm dosyası (. sln) de oluşturulur
 
 ## <a name="set-compiler-options-and-other-build-properties"></a>Derleyici seçeneklerini ve diğer derleme özelliklerini ayarlama
 
-Bir projenin yapı ayarlarını yapılandırmak için, **Çözüm Gezgini** içinde projeye sağ tıklayın ve **Özellikler** ' i seçin. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](working-with-project-properties.md).
+Bir projenin yapı ayarlarını yapılandırmak için, **Çözüm Gezgini** içinde projeye sağ tıklayın ve **Özellikler**' i seçin. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](working-with-project-properties.md).
 
 ## <a name="compile-and-run"></a>Derle ve Çalıştır
 

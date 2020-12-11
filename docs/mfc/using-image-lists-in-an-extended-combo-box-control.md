@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Genişletilmiş Birleşik giriş kutusu denetiminde görüntü listeleri kullanma'
 title: Genişletilmiş Birleşik Giriş Kutusu Denetiminde Görüntü Listeleri Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,34 +7,34 @@ helpviewer_keywords:
 - extended combo boxes [MFC], images
 - images [MFC], combo box items
 ms.assetid: dfff25fe-af70-47a2-8032-3901d1e6842d
-ms.openlocfilehash: 6e4d983d53e49fc8d9c80c206f1a23078eb82f61
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9fb4b70f91a8ffc3d0175ec855cd005de10da280
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154376"
 ---
 # <a name="using-image-lists-in-an-extended-combo-box-control"></a>Genişletilmiş Birleşik Giriş Kutusu Denetiminde Görüntü Listeleri Kullanma
 
-Genişletilmiş Birleşik giriş kutusu denetimleri'nin ana özelliği bir birleşik giriş kutusu denetimi öğeleri ayrı ayrı bir görüntü listesinden görüntü ilişkilendirmek yeteneğidir. Üç farklı resimleri görüntülemek her bir öğe bulabildiği: Seçili durumuna, nonselected durumu ve bir üçüncü katman görüntü için bir tane.
+Genişletilmiş Birleşik giriş kutusu denetimlerinin ana özelliği, görüntüleri bir açılan kutu denetimindeki tek tek öğelerle bir görüntü listesinden ilişkilendirme olanağıdır. Her öğe üç farklı görüntüyü görüntüleyebilir: biri seçili durum için, biri seçili olmayan bir durum ve bir kaplama görüntüsü için üçüncü.
 
-Aşağıdaki yordam bir görüntü listesi bir Genişletilmiş Birleşik giriş kutusu denetimi ile ilişkilendirir:
+Aşağıdaki yordam bir görüntü listesini Genişletilmiş Birleşik giriş kutusu denetimiyle ilişkilendirir:
 
-### <a name="to-associate-an-image-list-with-an-extended-combo-box-control"></a>Görüntü listesi bir Genişletilmiş Birleşik giriş kutusu denetimi ile ilişkilendirmek için
+### <a name="to-associate-an-image-list-with-an-extended-combo-box-control"></a>Bir görüntü listesini Genişletilmiş Birleşik giriş kutusu denetimiyle ilişkilendirme
 
-1. Yeni bir görüntü listesi oluşturun (veya varolan bir görüntü listesi nesnesi kullanma) kullanarak [Cımagelist](../mfc/reference/cimagelist-class.md) oluşturucusu ve sonuçta elde edilen işaretçi depolama.
+1. [CImageList](../mfc/reference/cimagelist-class.md) oluşturucusunu kullanarak ve sonuç işaretçisini depolayarak yeni bir görüntü listesi oluşturun (veya var olan bir görüntü listesi nesnesini kullanın).
 
-1. Yeni görüntü listesi nesnesi çağırarak başlatılmaya [CImageList::Create](../mfc/reference/cimagelist-class.md#create). Aşağıdaki kod, bu çağrının bir örnektir.
+1. Yeni görüntü listesi nesnesini, [CImageList:: Create](../mfc/reference/cimagelist-class.md#create)öğesini çağırarak başlatın. Aşağıdaki kod bu çağrının bir örneğidir.
 
    [!code-cpp[NVC_MFCControlLadenDialog#10](../mfc/codesnippet/cpp/using-image-lists-in-an-extended-combo-box-control_1.cpp)]
 
-1. Olası her durum için isteğe bağlı görüntü ekleme: seçilen veya nonselected ve bir katmana. Aşağıdaki kod üç önceden tanımlanmış görüntüler ekler.
+1. Her olası durum için isteğe bağlı görüntüler ekleyin: seçili veya seçili olmayan ve bir kaplama. Aşağıdaki kod önceden tanımlanmış üç görüntü ekler.
 
    [!code-cpp[NVC_MFCControlLadenDialog#11](../mfc/codesnippet/cpp/using-image-lists-in-an-extended-combo-box-control_2.cpp)]
 
-1. Görüntü listesi denetimi için bir çağrı ile ilişkilendirmek [CComboBoxEx::SetImageList](../mfc/reference/ccomboboxex-class.md#setimagelist).
+1. Görüntü listesini bir [CComboBoxEx:: SetImageList](../mfc/reference/ccomboboxex-class.md#setimagelist)çağrısıyla birlikte denetimiyle ilişkilendirin.
 
-Görüntü listesi denetimi ile ilişkilendirildikten sonra tek tek her öğe için üç olası durum kullanacağı görüntüleri belirtebilirsiniz. Daha fazla bilgi için [ayrı bir öğe için görüntüleri ayarlama](../mfc/setting-the-images-for-an-individual-item.md).
+Görüntü listesi denetimle ilişkilendirildiğinde, her bir öğenin her bir olası durum için kullanacağı görüntüleri tek tek belirleyebilirsiniz. Daha fazla bilgi için bkz. [tek bir öğe Için görüntüleri ayarlama](../mfc/setting-the-images-for-an-individual-item.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

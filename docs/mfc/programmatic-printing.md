@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: programlı yazdırma'
 title: Program Aracılığıyla Yazdırma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - IPrint interface
 - printing [MFC]
 ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
-ms.openlocfilehash: eb8804610832f91f4b24487fddfe9c24a3799117
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: c97a3938a97970e1479add4f62b68250845ba7e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342088"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154701"
 ---
 # <a name="programmatic-printing"></a>Program Aracılığıyla Yazdırma
 
-OLE sağlanan kalıcı belgeleri benzersiz olarak tanımlanabilmesi için anlamına gelir (`GetClassFile`) ve bunları kendi ilişkili koda yük (`CoCreateInstance`, `QueryInterface(IID_IPersistFile)`, `QueryInterface(IID_IPersistStorage)`, `IPersistFile::Load`, ve `IPersistStorage::Load`). Etkin belge kapsaması (OLE 2.0 ilk olarak gönderilmeyen varolan bir OLE tasarımı kullanarak) daha fazla yazdırma belgeleri etkinleştirmek için bir temel standart yazdırma arabirimi tanıtır `IPrint`, yükleyebilir ve herhangi bir nesne üzerinden kullanıma sunuldu kalıcı durum belge türü. Her bir etkin belge görünümü isteğe bağlı olarak destekleyebilir `IPrint` bu yetenekleri sağlamak için arabirim.
+OLE, kalıcı belgeleri () benzersiz bir şekilde tanımlamak `GetClassFile` ve bunları ilişkili kodlarına (,,, `CoCreateInstance` `QueryInterface(IID_IPersistFile)` `QueryInterface(IID_IPersistStorage)` `IPersistFile::Load` , ve `IPersistStorage::Load` ) yüklemek için Araçlar sağladı. Yazdırma belgelerini daha fazla etkinleştirmek için, etkin belge kapsama (OLE 2,0 ile birlikte sunulmayan mevcut bir OLE tasarımı kullanılarak), `IPrint` genellikle belge türünün kalıcı durumunu yükleyebilecek herhangi bir nesne aracılığıyla kullanılabilen temel standart bir yazdırma arabirimi sunar. Etkin bir belgenin her bir görünümü, `IPrint` Bu özellikleri sağlamak için isteğe bağlı olarak arabirimi destekleyebilir.
 
-`IPrint` Arabirimi şu şekilde tanımlanır:
+`IPrint`Arabirim aşağıdaki gibi tanımlanır:
 
 ```
 interface IPrint : IUnknown
@@ -40,17 +41,17 @@ interface IPrint : IUnknown
     };
 ```
 
-İstemcileri ve kapsayıcıları kullanmanız yeterlidir `IPrint::Print` belgenin belge yüklendiğinde yazdırma denetim bayrakları, hedef cihaz, yazdırmak için sayfaları belirtme IOleCommandTarget komutunu almasını ve ek seçenekler. İstemci arabirimi yoluyla yazdırma devamlılık de denetleyebilirsiniz `IContinueCallback` (aşağıya bakın).
+İstemciler ve kapsayıcılar yalnızca belge yüklendikten `IPrint::Print` sonra belgenin kendisini yazdırmasını, yazdırma denetim bayraklarını, hedef cihazı, yazdırılacak sayfaları ve ek seçenekleri belirtmek için kullanılır. İstemci Ayrıca, arabirim üzerinden yazdırmanın devamını denetleyebilir `IContinueCallback` (aşağıya bakın).
 
-Ayrıca, `IPrint::SetInitialPageNum` bir numaralandırma sorunsuz bir şekilde, açıkça için etkin belge kapsayıcıları Office Binder gibi bir avantajı sayfaları gibi bir dizi belgeleri yazdırma özelliğini destekler. `IPrint::GetPageInfo` Başlangıç almak çağırıcı sağlayarak basit sayfalandırma bilgileri görüntüleme yapar sayfa numarası daha önce geçirilen `SetInitialPageNum` (veya belgenin iç varsayılan başlangıç sayfa numarası) ve belgedeki sayfa sayısı.
+Ayrıca, `IPrint::SetInitialPageNum` sayfaları sorunsuz bir şekilde numaralandırarak bir dizi belgeyi yazdırma özelliğini destekler, bu da Office Ciltçi gibi etkin belge kapsayıcıları avantajına açıktır. `IPrint::GetPageInfo` , çağıranın daha önce geçirilen başlangıç sayfası numarasını `SetInitialPageNum` (veya belgenin iç varsayılan başlangıç sayfası numarası) ve belgedeki sayfa sayısını almasına izin vererek sayfalandırma bilgilerinin basit görüntülenmesini sağlar.
 
-Nesneleri destekleyen `IPrint` kayıt defterinde nesnenin CLSID altında depolanan "Printable" anahtarı ile işaretlenir:
+Destekleyen nesneler, `IPrint` kayıt defterinde NESNENIN CLSID altında depolanan "yazdırılabilir" anahtarıyla işaretlenir:
 
-HKEY_CLASSES_ROOT\CLSID\\{...}\Printable
+HKEY_CLASSES_ROOT\CLSID\\ {...} \ Yazdırılabilir
 
-`IPrint` genellikle ya da destekleyen aynı nesne üzerinde uygulanan `IPersistFile` veya `IPersistStorage`. Çağıranlar "Printable" anahtarı için kayıt defterinde bakarak bazı sınıfı kalıcı durumunu program aracılığıyla yazdırma olanağı unutmayın. Şu anda "Yazdırılabilir" desteği için en az gösterir `IPrint`; diğer arabirimleri, ardından aracılığıyla kullanılabilirdi gelecekte tanımlanabilir `QueryInterface` burada `IPrint` yalnızca temel düzeyde desteği temsil eder.
+`IPrint` genellikle ya da destekleyen aynı nesne üzerinde uygulanır `IPersistFile` `IPersistStorage` . Çağıranlar, "yazdırılabilir" anahtarı için kayıt defterine bakarak bazı bir sınıfın kalıcı durumunu program aracılığıyla nasıl yazdırabileceğinizi göz önünde. Şu anda, "yazdırılabilir" desteği en az ' `IPrint` ı gösterir; diğer arabirimler gelecekte tanımlanacağından `QueryInterface` `IPrint` temel destek düzeyini temsil eder.
 
-Yazdırma işlemi sırasında istemci veya yazdırma devam denetlemek için yazdırma başlatılan kapsayıcı isteyebilirsiniz. Örneğin, kapsayıcı, yazdırma işi olabildiğince çabuk sonlandırması gerektiğini "yazdırma Durdur" komutu destekleyebilir. Bu özelliği desteklemek için istemci yazdırılabilir bir nesnenin küçük bildirim havuz nesnesiyle arabirimi uygulayabilir `IContinueCallback`:
+Yazdırma yordamı sırasında, yazdırma işlemini başlatan istemcinin veya kapsayıcının, yazdırmanın devam edip etmediğini denetlemesini isteyebilirsiniz. Örneğin, kapsayıcı, yazdırma işini mümkün olan en kısa sürede sonlanacak bir "yazdırmayı Durdur" komutu destekleyebilir. Bu özelliği desteklemek için, yazdırılabilir bir nesnenin istemcisi arabirimiyle küçük bir bildirim havuzu nesnesi uygulayabilir `IContinueCallback` :
 
 ```
 interface IContinueCallback : IUnknown
@@ -63,12 +64,12 @@ interface IContinueCallback : IUnknown
     };
 ```
 
-Bu arabirim Win32 API çeşitli devamlılık yordamlarda yer alan genel devamlılık geri çağırma işlevi olarak yararlı olacak şekilde tasarlanmıştır (gibi `AbortProc` yazdırma ve `EnumMetafileProc` meta sabit listesi için). Bu nedenle bu arabirimi tasarımı çok çeşitli uzun süren işlemlerin yararlı olur.
+Bu arabirim, Win32 API çeşitli devamlılık yordamlarının yerini alan genel devamlılık geri çağırma işlevi olarak (örneğin, `AbortProc` yazdırma için ve `EnumMetafileProc` meta dosyası numaralandırması için) yararlı olacak şekilde tasarlanmıştır. Bu nedenle, bu arabirim tasarımı çok çeşitli zaman alan işlemlerde yararlı olur.
 
-En genel durumlarda `IContinueCallback::FContinue` işlevi düzenli aralıklarla uzun herhangi bir işlem tarafından çağrılır. Havuz nesneyi S_OK işleme devam etmek ve yordamı olabildiğince çabuk durdurmak için S_FALSE döndürür.
+Çoğu genel durumda, `IContinueCallback::FContinue` işlevi uzun bir işlem tarafından düzenli aralıklarla çağrılır. Havuz nesnesi işleme devam etmek için S_OK döndürür ve yordamı en kısa sürede durdurmak için S_FALSE.
 
-`FContinue`, ancak bağlamında kullanılmaz `IPrint::Print`; bunun yerine, kullandığı yazdırma `IContinueCallback::FContinuePrint`. Herhangi bir yazdırma nesnesi düzenli aralıklarla çağırmalıdır `FContinuePrinting` yazdırma sayfa sayısı, yazdırılmasını sayfa numarası ve istemci (örneğin, "sayfası kullanıcıya tercih edebilirsiniz yazdırma durumunu açıklayan bir ek dize geçirme 5 / 19").
+`FContinue`Ancak,, öğesinin bağlamında kullanılmaz `IPrint::Print` ; bunun yerine, yazdırma kullanır `IContinueCallback::FContinuePrint` . Herhangi bir yazdırma nesnesi düzenli aralıklarla `FContinuePrinting` , yazdırılan sayfa sayısını, Yazdırılmakta olan sayfanın sayısını ve istemcinin kullanıcıya görüntülemeyi seçebilecekleri yazdırma durumunu tanımlayan ek bir dizeyi ("sayfa 5/19" gibi) düzenli olarak çağırmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Etkin Belge Kapsayıcıları](../mfc/active-document-containers.md)
+[Etkin belge kapsayıcıları](../mfc/active-document-containers.md)

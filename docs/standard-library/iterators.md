@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: yineleyiciler'
 title: Yineleyiciler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - iterator conventions
 - C++ Standard Library, iterator conventions
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-ms.openlocfilehash: c3bb2825ec6ad98f523fa4c3a616d0807eac50a8
-ms.sourcegitcommit: 5ef9697b4cb1947bec9669be57bc920d2c4d82a6
+ms.openlocfilehash: 98263f69c49e0d645106e1ce29e6bb1a4330acea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87870158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112251"
 ---
 # <a name="iterators"></a>Yineleyiciler
 
@@ -45,7 +46,7 @@ Yineleyicilerin beş kategorisi vardır. Güç artırma sırasıyla kategoriler 
 
 - **Giriş**. Bir *giriş Yineleyici* `X` , işlecini kullanarak bir dizi üzerinde ileri doğru bir şekilde yineleyebilirsiniz `++` ve işlecini kullanarak herhangi bir sayıda öğeyi okuyabilir `*` . Ve işleçlerini kullanarak giriş yineleyicilerini karşılaştırabilirsiniz `==` `!=` . Bir giriş yineleyicisinin herhangi bir kopyasını artırdıktan sonra, diğer kopyaların hiçbiri daha sonra güvenli bir şekilde karşılaştırılamaz, başvurulduktan veya artmaz.
 
-- **İleri**. Bir *ileriye doğru yineleyici* `X` , + + işlecini kullanarak bir dizi üzerinde ileri doğru yineleyebilir ve işlecini kullanarak herhangi bir öğeyi okuyabilir veya const olmayan öğeleri yazabilir `*` . İşlecini kullanarak öğe üyelerine erişebilir `->` ve ve işleçlerini kullanarak ileriye doğru yineleyiciler karşılaştırabilirsiniz `==` `!=` . Bir ileri yineleyicisinin, her biri başvurusu kaldırılmış ve bağımsız olarak arttırılan birden çok kopyasını oluşturabilirsiniz. Herhangi bir kapsayıcıya başvuru olmadan başlatılan bir ileri Yineleyici, *null ileri Yineleyici*olarak adlandırılır. Null ileri yineleyiciler her zaman eşit olarak Karşılaştır.
+- **İleri**. Bir *ileriye doğru yineleyici* `X` , + + işlecini kullanarak bir dizi üzerinde ileri doğru yineleyebilir ve işlecini kullanarak herhangi bir öğeyi okuyabilir veya const olmayan öğeleri yazabilir `*` . İşlecini kullanarak öğe üyelerine erişebilir `->` ve ve işleçlerini kullanarak ileriye doğru yineleyiciler karşılaştırabilirsiniz `==` `!=` . Bir ileri yineleyicisinin, her biri başvurusu kaldırılmış ve bağımsız olarak arttırılan birden çok kopyasını oluşturabilirsiniz. Herhangi bir kapsayıcıya başvuru olmadan başlatılan bir ileri Yineleyici, *null ileri Yineleyici* olarak adlandırılır. Null ileri yineleyiciler her zaman eşit olarak Karşılaştır.
 
 - **Çift yönlü**. *Çift yönlü bir yineleyici* `X` , ileriye doğru bir yineleyicinin yerini alabilir. Bununla birlikte,, veya ' de olduğu gibi çift yönlü yineleyiciyi de azaledebilirsiniz `--X` `X--` `(V = *X--)` . Öğe üyelerine erişebilir ve çift yönlü yineleyiciler ileri yineleyiciler ile aynı şekilde karşılaştırabilirsiniz.
 

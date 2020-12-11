@@ -1,5 +1,6 @@
 ---
-title: IPropertyNotifySinkCP Sınıfı
+description: ': IPropertyNotifySinkCP sınıfı hakkında daha fazla bilgi'
+title: IPropertyNotifySinkCP sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IPropertyNotifySinkCP
@@ -9,19 +10,19 @@ helpviewer_keywords:
 - sinks, notifying of changes
 - IPropertyNotifySinkCP class
 ms.assetid: 1b41445e-bc88-4fa6-bb62-d68aacec2bd5
-ms.openlocfilehash: c6d98bf5a6dfe5566839eb22bcd2bab2a9c28e4d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 096a24a22634be23c7ede955c7ae49c3dd963f66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158367"
 ---
-# <a name="ipropertynotifysinkcp-class"></a>IPropertyNotifySinkCP Sınıfı
+# <a name="ipropertynotifysinkcp-class"></a>IPropertyNotifySinkCP sınıfı
 
-Bu sınıf, bağlanabilen bir nesne üzerinde giden bir arabirim olarak [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimini ortaya çıkarır.
+Bu sınıf, [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimini bağlanılabilir bir nesne üzerinde giden arabirim olarak gösterir.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,27 +35,27 @@ class IPropertyNotifySinkCP
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınızdan `IPropertyNotifySinkCP`türetilmiştir.
+Sınıfınız, öğesinden türetilir `IPropertyNotifySinkCP` .
 
-*Cdv*<br/>
-Bağlantı noktası ile lavaboları arasındaki bağlantıları yöneten sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız bağlantı sağlar. Sabit sayıda bağlantı belirten [CComUnkArray'i](../../atl/reference/ccomunkarray-class.md)de kullanabilirsiniz.
+*CDV*<br/>
+Bağlantı noktası ve havuzları arasındaki bağlantıları yöneten bir sınıf. Varsayılan değer, sınırsız bağlantılara izin veren [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)' dir. Ayrıca, sabit sayıda bağlantıyı belirten [CComUnkArray](../../atl/reference/ccomunkarray-class.md)' i de kullanabilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IPropertyNotifySinkCP`taban sınıf, [iConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md)üzerinden tüm yöntemleri devralır.
+`IPropertyNotifySinkCP` tüm yöntemleri kendi temel sınıfı, [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md)aracılığıyla devralır.
 
-[IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimi, bir lavabo nesnesinin özellik değişiklikleri yle ilgili bildirimler almasını sağlar. Sınıf, `IPropertyNotifySinkCP` bu arabirimi bağlanabilir bir nesneüzerinde giden bir arabirim olarak ortaya çıkarır. İstemci lavaboda `IPropertyNotifySink` yöntemleri uygulamalıdır.
+[IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimi, bir havuz nesnesinin özellik değişiklikleri hakkında bildirimler almasına izin verir. Sınıfı, `IPropertyNotifySinkCP` Bu arabirimi bağlanılabilir bir nesne üzerinde giden bir arabirim olarak kullanıma sunar. İstemci, `IPropertyNotifySink` havuzu üzerinde yöntemleri uygulamalıdır.
 
-Arabirimi temsil `IPropertyNotifySinkCP` eden bir bağlantı noktası oluşturmak istediğinizde sınıfınızı türetin. `IPropertyNotifySink`
+`IPropertyNotifySinkCP`Arabirimini temsil eden bir bağlantı noktası oluşturmak istediğinizde sınıfınızı sınıfından türetebilirsiniz `IPropertyNotifySink` .
 
-ATL'de bağlantı noktalarını kullanma hakkında daha fazla bilgi için [Bağlantı Noktaları](../../atl/atl-connection-points.md)makalesine bakın.
+ATL 'de bağlantı noktalarını kullanma hakkında daha fazla bilgi için, [bağlantı noktaları](../../atl/atl-connection-points.md)makalesine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlctl.h
+**Üstbilgi:** atlctl. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IConnectionPointImpl Sınıfı](../../atl/reference/iconnectionpointimpl-class.md)<br/>
-[IConnectionPointContainerImpl Sınıfı](../../atl/reference/iconnectionpointcontainerimpl-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Inewctionpointımpl sınıfı](../../atl/reference/iconnectionpointimpl-class.md)<br/>
+[Inewctionpointcontainerımpl sınıfı](../../atl/reference/iconnectionpointcontainerimpl-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

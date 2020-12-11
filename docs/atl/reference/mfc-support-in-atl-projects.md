@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL projelerinde MFC desteği'
 title: ATL projelerinde MFC desteği
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - ATL projects, MFC support
 ms.assetid: f90b4276-cb98-4c11-902c-9ebcfe6f954b
-ms.openlocfilehash: 0aece6805f1de987b0164f405e50b99fd706fef4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8614bfdd5320e0ecdf34cc96251fa8a20f2dede9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275431"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157925"
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL projelerinde MFC desteği
 
-Seçerseniz **destek MFC** ATL Proje Sihirbazı'nda uygulamayı bir MFC uygulaması nesne (sınıfı) olarak projenize bildirir. Proje MFC Kitaplığı başlatır ve bir sınıf oluşturur (sınıfı *ProjName*) sınıfından türetilen [CWinApp](../../mfc/reference/cwinapp-class.md).
+ATL proje sihirbazında **MFC desteği** ' ni seçerseniz, projeniz uygulamayı bir MFC Uygulama nesnesi (sınıf) olarak bildirir. Proje MFC kitaplığını başlatır ve [CWinApp](../../mfc/reference/cwinapp-class.md)'dan türetilmiş bir sınıfı (sınıf *ProjName*) başlatır.
 
-Bu seçenek yalnızca nonattributed ATL DLL projelerinde kullanılabilir.
+Bu seçenek yalnızca öznitelik olmayan ATL DLL projeleri için kullanılabilir.
 
 ```
 class CProjNameApp : public CWinApp
@@ -48,10 +49,10 @@ int CProjNameApp::ExitInstance()
 }
 ```
 
-Uygulama nesnesi sınıfı görüntüleyebilir ve `InitInstance` ve `ExitInstance` Sınıf Görünümü'nde işlevleri.
+Uygulama nesne sınıfını ve `InitInstance` ' `ExitInstance` de işlevlerini sınıf görünümü görüntüleyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)<br/>
-[Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+[Varsayılan ATL Proje yapılandırması](../../atl/reference/default-atl-project-configurations.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma'
 title: 'Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 'msbuild (c++), howto: use build events in projects'
 ms.assetid: 2a58dc9d-3d50-4e49-97c1-86c5a05ce218
-ms.openlocfilehash: 7c35abbcabe62da2e60fbc2393c575e7c3872cf3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0c94f02851df3fa41791542841f8ed84305cc9e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224012"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156209"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 
@@ -17,7 +18,7 @@ Yapı olayı, MSBuild 'in derleme işlemindeki belirli bir aşamada gerçekleşt
 
 Üç derleme olayının her biri, bir öğe tanımı grubunda yürütülen bir komut öğesi ( `<Command>` ) ve `<Message>` **MSBuild** derleme olayını gerçekleştirdiğinde görüntülenen bir ileti öğesi () tarafından temsil edilir. Her öğe isteğe bağlıdır ve aynı öğeyi birden çok kez belirtirseniz, son oluşum öncelik kazanır.
 
-*use-in-build* `<` Derleme olayının yürütülüp yürütülmediğini göstermek için bir özellik grubunda isteğe bağlı bir Use-Build öğesi (*derleme-olay* `UseInBuild>` ) belirtilebilir. Bir *Use derlemesi* öğesinin içerik değeri ya da ' dir **`true`** **`false`** . Varsayılan olarak, karşılık gelen *derleme kullanımı* öğesi olarak ayarlanmadığı takdirde bir yapı olayı yürütülür **`false`** .
+ `<` Derleme olayının yürütülüp yürütülmediğini göstermek için bir özellik grubunda isteğe bağlı bir Use-Build öğesi (*derleme-olay* `UseInBuild>` ) belirtilebilir. Bir *Use derlemesi* öğesinin içerik değeri ya da ' dir **`true`** **`false`** . Varsayılan olarak, karşılık gelen *derleme kullanımı* öğesi olarak ayarlanmadığı takdirde bir yapı olayı yürütülür **`false`** .
 
 Aşağıdaki tabloda her derleme olay XML öğesi listelenmektedir:
 

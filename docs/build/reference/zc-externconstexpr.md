@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `/Zc:externConstexpr` (extern constexpr değişkenlerini etkinleştir)'
 title: /Zc:externConstexpr (extern constexpr değişkenlerini etkinleştir)
 ms.date: 02/28/2018
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - -Zc:externConstexpr compiler option (C++)
 - extern constexpr variables (C++)
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
-ms.openlocfilehash: db5a8892bcc11538c3ff883a0e9a3a27db0ee14f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5f3120ba467c70cde2d0deb6932e408a2cd688c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156131"
 ---
 # <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>`/Zc:externConstexpr` (Extern constexpr değişkenlerini etkinleştir)
 
 **`/Zc:externConstexpr`** Derleyici seçeneği derleyicinin C++ standardına uymasını ve değişkenler için dış bağlantıya izin vermesini söyler **`constexpr`** . Varsayılan olarak, **`constexpr`** anahtar sözcüğünü belirtseniz bile Visual Studio her zaman bir iç bağlantı sağlar **`extern`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:externConstexpr`**[**`-`**]
 

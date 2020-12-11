@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: length_error sınıfı'
 title: length_error Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - length_error class
 ms.assetid: d53c46c5-4626-400d-bd76-bf3e1e0f64ae
-ms.openlocfilehash: 740ae69948a8f1975872f223ba51fb669121a891
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 051f79da569a153413a88af4976cb619e4b04e66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112056"
 ---
 # <a name="length_error-class"></a>length_error Sınıfı
 

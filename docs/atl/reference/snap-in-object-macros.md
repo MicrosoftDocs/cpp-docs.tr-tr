@@ -1,5 +1,6 @@
 ---
-title: Ek bileşen nesne makroları
+description: 'Hakkında daha fazla bilgi edinin: Snap-In nesne makroları'
+title: Nesne makrolarını Snap-In
 ms.date: 11/04/2016
 f1_keywords:
 - atlsnap/ATL::BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP
@@ -11,27 +12,27 @@ f1_keywords:
 - atlsnap/ATL::SNAPINMENUID
 - atlsnap/ATL::SNAPINTOOLBARID_ENTRY
 ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
-ms.openlocfilehash: 7e006a17ad480ea79f6aeec224278815c8c3f164
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d775c1d5f66f16fb63b9a7adeda2bc8e74046acf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835200"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157691"
 ---
-# <a name="snap-in-object-macros"></a>Ek bileşen nesne makroları
+# <a name="snap-in-object-macros"></a>Nesne makrolarını Snap-In
 
 Bu makrolar ek bileşen uzantıları için destek sağlar.
 
 |Ad|Açıklama|
 |-|-|
-|[BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map)|Ek bileşen nesnesi için ek bileşen uzantısı veri sınıfı eşlemesinin başlangıcını işaretler.|
-|[BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map)|Bir ek bileşen nesnesi için araç çubuğu eşlemesinin başlangıcını işaretler.|
-|[END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map)|Ek bileşen nesnesi için ek bileşen uzantısı veri sınıfı eşlemesinin sonunu işaretler.|
-|[END_SNAPINTOOLBARID_MAP](#end_snapintoolbarid_map)|Bir ek bileşen nesnesi için araç çubuğu eşlemesinin sonunu işaretler.|
+|[BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map)|Snap-In nesnesi için ek bileşen uzantısı veri sınıfı eşlemesinin başlangıcını işaretler.|
+|[BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map)|Snap-In nesnesi için araç çubuğu eşlemesinin başlangıcını işaretler.|
+|[END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map)|Snap-In nesnesi için ek bileşen uzantısı veri sınıfı eşlemesinin sonunu işaretler.|
+|[END_SNAPINTOOLBARID_MAP](#end_snapintoolbarid_map)|Snap-In nesne için araç çubuğu eşlemesinin sonunu işaretler.|
 |[EXTENSION_SNAPIN_DATACLASS](#extension_snapin_dataclass)|Ek bileşen uzantısının veri sınıfı için bir veri üyesi oluşturur.|
-|[EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry)|Ek bileşen nesnesinin ek bileşen uzantısı veri sınıfı eşlemesine bir ek bileşen uzantısı veri sınıfı girer.|
-|[SNAPıNMENUID](#snapinmenuid)|Ek bileşen nesnesi tarafından kullanılan bağlam menüsünün KIMLIĞINI bildirir.|
-|[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|Ek bileşen nesnesinin araç çubuğu eşlemesine bir araç çubuğu girer.|
+|[EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry)|Snap-In nesnesinin ek bileşen uzantısı veri sınıfı eşlemesine bir ek bileşen uzantısı veri sınıfı girer.|
+|[SNAPıNMENUID](#snapinmenuid)|Snap-In nesnesi tarafından kullanılan bağlam menüsünün KIMLIĞINI bildirir.|
+|[SNAPINTOOLBARID_ENTRY](#snapintoolbarid_entry)|Snap-In nesnesinin araç çubuğu eşlemesine bir araç çubuğu girer.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -60,7 +61,7 @@ Ek bileşen uzantınızı BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP makroyla başlatı
 
 ## <a name="begin_snapintoolbarid_map"></a><a name="begin_snapintoolbarid_map"></a> BEGIN_SNAPINTOOLBARID_MAP
 
-Ek bileşen nesnesi için araç çubuğu KIMLIĞI eşlemesinin başlangıcını bildirir.
+Snap-In nesnesi için araç çubuğu KIMLIĞI eşlemesinin başlangıcını bildirir.
 
 ```
 BEGIN_SNAPINTOOLBARID_MAP(_class)
@@ -69,7 +70,7 @@ BEGIN_SNAPINTOOLBARID_MAP(_class)
 ### <a name="parameters"></a>Parametreler
 
 *_class*<br/>
-'ndaki Ek bileşen nesne sınıfını belirtir.
+'ndaki Snap-In nesne sınıfını belirtir.
 
 ### <a name="example"></a>Örnek
 
@@ -93,7 +94,7 @@ Ek bileşen uzantınızı [BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension
 
 ## <a name="end_snapintoolbarid_map"></a><a name="end_snapintoolbarid_map"></a> END_SNAPINTOOLBARID_MAP
 
-Ek bileşen nesnesi için araç çubuğu KIMLIĞI eşlemesinin sonunu bildirir.
+Snap-In nesnesi için araç çubuğu KIMLIĞI eşlemesinin sonunu bildirir.
 
 ```
 END_SNAPINTOOLBARID_MAP( _class )
@@ -102,7 +103,7 @@ END_SNAPINTOOLBARID_MAP( _class )
 ### <a name="parameters"></a>Parametreler
 
 *_class*<br/>
-'ndaki Ek bileşen nesne sınıfını belirtir.
+'ndaki Snap-In nesne sınıfını belirtir.
 
 ### <a name="example"></a>Örnek
 
@@ -152,7 +153,7 @@ Ek bileşen uzantısı veri sınıfı eşlemenizi [BEGIN_EXTENSION_SNAPIN_NODEIN
 
 ## <a name="snapinmenuid"></a><a name="snapinmenuid"></a> SNAPıNMENUID
 
-Ek bileşen nesnesinin bağlam menüsü kaynağını bildirmek için bu makroyu kullanın.
+Snap-In nesnenin bağlam menüsü kaynağını bildirmek için bu makroyu kullanın.
 
 ```
 SNAPINMENUID( id )
@@ -161,11 +162,11 @@ SNAPINMENUID( id )
 ### <a name="parameters"></a>Parametreler
 
 *id*<br/>
-'ndaki Ek bileşen nesnesinin bağlam menüsünü tanımlar.
+'ndaki Snap-In nesnesinin bağlam menüsünü tanımlar.
 
 ## <a name="snapintoolbarid_entry"></a><a name="snapintoolbarid_entry"></a> SNAPINTOOLBARID_ENTRY
 
-Ek bileşen nesnesinin araç çubuğu KIMLIĞI eşlemesine bir araç çubuğu KIMLIĞI girmek için bu makroyu kullanın.
+Snap-In nesnenin araç çubuğu KIMLIĞI eşlemesine bir araç çubuğu KIMLIĞI girmek için bu makroyu kullanın.
 
 ```
 SNAPINTOOLBARID_ENTRY( id )

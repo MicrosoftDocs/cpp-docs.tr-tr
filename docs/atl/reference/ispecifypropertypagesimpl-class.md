@@ -1,5 +1,6 @@
 ---
-title: ISpecifyPropertyPagesImpl Sınıfı
+description: 'Şu konuda daha fazla bilgi edinin: ıdiifypropertypagesimpl sınıfı'
+title: Idiifyıpropertypagesimpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - ISpecifyPropertyPagesImpl
@@ -10,19 +11,19 @@ helpviewer_keywords:
 - ISpecifyPropertyPages
 - ISpecifyPropertyPagesImpl class
 ms.assetid: 4e4b9795-b656-4d56-9b8c-85941e7731f9
-ms.openlocfilehash: 06b6b60227a659bd35e042952c7464971fc40bdc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 528fafa0473a4aa803e1c1d17a24b2d27584c33a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326408"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158055"
 ---
-# <a name="ispecifypropertypagesimpl-class"></a>ISpecifyPropertyPagesImpl Sınıfı
+# <a name="ispecifypropertypagesimpl-class"></a>Idiifyıpropertypagesimpl sınıfı
 
-Bu `IUnknown` [sınıf, iSpecifyPropertyPages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypages) arabiriminin varsayılan uygulamasını uygular ve sağlar.
+Bu sınıf `IUnknown` , [ıdiifıpropertypages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypages) arabiriminin varsayılan bir uygulamasını uygular ve sunar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,24 +36,24 @@ class ATL_NO_VTABLE ISpecifyPropertyPagesImpl
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınızdan `ISpecifyPropertyPagesImpl`türetilmiştir.
+Sınıfınız, öğesinden türetilir `ISpecifyPropertyPagesImpl` .
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[ISpecifyPropertyPagesImpl::GetPages](#getpages)|UUID değerlerinin Sayılan Dizisini doldurur. Her UUID, nesnenin özellik sayfasında görüntülenebilen özellik sayfalarından biri için CLSID'ye karşılık gelir.|
+|[Idiifypropertypagesimpl:: GetPages](#getpages)|Bir UUID değerlerinin sayılan dizisini doldurur. Her UUID, nesnenin özellik sayfasında görüntülenebilen Özellik sayfalarından birinin CLSID 'sine karşılık gelir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[ISpecifyPropertyPages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypages) arabirimi, istemcinin bir nesne tarafından desteklenen özellik sayfaları için CLSID'lerin listesini almasına olanak tanır. Sınıf `ISpecifyPropertyPagesImpl` bu arabirimin varsayılan bir `IUnknown` uygulamasını sağlar ve hata ayıklama oluştururda dökümü aygıtına bilgi göndererek uygular.
+[Idiifıpropertypages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypages) arabirimi, bir istemcinin bir nesne tarafından desteklenen özellik sayfaları için CLSID listesi almasına izin verir. Sınıfı, `ISpecifyPropertyPagesImpl` Bu arabirimin varsayılan bir uygulamasını sağlar ve `IUnknown` hata ayıklama yapılarında döküm cihazına bilgi göndererek uygular.
 
 > [!NOTE]
-> Nesneniz özellik `ISpecifyPropertyPages` sayfalarını desteklemiyorsa arabirimi ifşa etmeyin.
+> `ISpecifyPropertyPages`Nesneniz özellik sayfalarını desteklemiyorsa arabirimi kullanıma sunmayın.
 
-**İlgili Makaleler** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)
+**Ilgili makaleler** [ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -62,11 +63,11 @@ Sınıfınızdan `ISpecifyPropertyPagesImpl`türetilmiştir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="ispecifypropertypagesimplgetpages"></a><a name="getpages"></a>ISpecifyPropertyPagesImpl::GetPages
+## <a name="ispecifypropertypagesimplgetpages"></a><a name="getpages"></a> Idiifypropertypagesimpl:: GetPages
 
-[CAUUID](/windows/win32/api/ocidl/ns-ocidl-cauuid) yapısındaki diziyi, nesnenin özellik sayfasında görüntülenebilecek özellik sayfaları için CLSID'lerle doldurur.
+[Cauuid](/windows/win32/api/ocidl/ns-ocidl-cauuid) yapısındaki diziyi, nesnenin özellik sayfasında görüntülenebilen Özellik sayfaları için CLSID 'ler ile doldurur.
 
 ```
 STDMETHOD(GetPages)(CAUUID* pPages);
@@ -74,12 +75,12 @@ STDMETHOD(GetPages)(CAUUID* pPages);
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL, her CLSID'yi almak için nesnenin özellik eşlesini kullanır.
+ATL her bir CLSID 'yi almak için nesnenin özellik eşlemesini kullanır.
 
-Bkz. [ISpecifyPropertyPages::Windows](/windows/win32/api/ocidl/nf-ocidl-ispecifypropertypages-getpages) SDK'daki Sayfaları Alın.
+Windows SDK [ıdiifypropertypages:: GetPages](/windows/win32/api/ocidl/nf-ocidl-ispecifypropertypages-getpages) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[IPropertyPageImpl Sınıfı](../../atl/reference/ipropertypageimpl-class.md)<br/>
-[IPerPropertyBrowsingImpl Sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[IPropertyPageImpl sınıfı](../../atl/reference/ipropertypageimpl-class.md)<br/>
+[Iperpropertybrowsingimpl sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l'
 title: _cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -46,16 +47,16 @@ helpviewer_keywords:
 - cprintf_s_l function
 - cwprintf_s_l function
 ms.assetid: c28504fe-0d20-4f06-8f97-ee33225922ad
-ms.openlocfilehash: c14da7158a3e15a74a01630a8a1b475d3e496de9
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0a6529a6a2861829028f11dd25e2b044faa498a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155962"
 ---
 # <a name="_cprintf_s-_cprintf_s_l-_cwprintf_s-_cwprintf_s_l"></a>_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l
 
-Konsola biçimlendirir ve yazdırır. Bu [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md) sürümlerinin [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
+Konsola biçimlendirir ve yazdırır. [_Cprintf, _cprintf_l, _cwprintf _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md) bu SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
@@ -85,13 +86,13 @@ int _cwprintf_s_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *değişkendir*<br/>
 İsteğe bağlı parametreler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -100,16 +101,16 @@ Yazdırılan karakterlerin sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, bir dizi karakteri ve değeri doğrudan konsola biçimlendirir ve bu karakterleri almak için **_putch** işlevini ( **_putwch** for **_cwprintf_s**) kullanın. Her *bağımsız değişken* (varsa), karşılık *gelen biçim belirtimine*göre dönüştürülür ve çıktı. Biçim, [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) işlevi için *Biçim* parametresi ile aynı form ve işleve sahiptir. **Fprintf_s**, **printf_s**ve **sprintf_s** işlevlerinin aksine, ne **_cprintf_s** ne de **_cwprintf_s** satır besleme karakterlerini çıkış sırasında satır başı besleme (CR-LF) birleşimlerine çevirir.
+Bu işlevler, bir dizi karakter ve değeri, **_putch** işlevi ( **_cwprintf_s** için **_putwch** ) kullanarak, yalnızca konsola biçimlendirir ve yazdırır. Her *bağımsız değişken* (varsa), karşılık *gelen biçim belirtimine* göre dönüştürülür ve çıktı. Biçim, [printf_s](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) işlevi için *Biçim* parametresi ile aynı form ve işleve sahiptir. **Fprintf_s**, **printf_s** ve **sprintf_s** işlevlerinin aksine, ne **_cprintf_s** ne de **_cwprintf_s** , çıkış sırasında satır besleme karakterlerini satırbaşı satır besleme (CR-LF) birleşimlerine çevirir.
 
-Önemli bir ayrım, **_Cwprintf_s** Windows NT 'de kullanıldığında Unicode karakterlerin görüntülenmesini göstermektedir. **_Cprintf_s**aksine, **_cwprintf_s** geçerli konsol yerel ayarını kullanır
+Önemli bir ayrım, **_Cwprintf_s** Windows NT 'de kullanıldığında Unicode karakterleri görüntülemektedir. **_Cprintf_s** farklı olarak, **_cwprintf_s** geçerli konsol yerel ayarını kullanır
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 > [!IMPORTANT]
 > *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
 
-Güvenli olmayan sürümler gibi (bkz. [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)), bu işlevler parametrelerini doğrular ve *Biçim* null ise [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. çağrısı. Bu işlevler, biçim dizesinin kendisinin de doğrulandığı güvenli olmayan sürümlerden farklıdır. Bilinmeyen veya hatalı biçimlendirilmiş biçimlendirme belirticileri varsa, bu işlevler geçersiz parametre işleyicisini çağırır. Her durumda, yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Güvenli olmayan sürümler gibi (bkz. [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)), bu işlevler parametrelerini doğrular ve *Biçim* null işaretçisiyse [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Bu işlevler, biçim dizesinin kendisinin de doğrulandığı güvenli olmayan sürümlerden farklıdır. Bilinmeyen veya hatalı biçimlendirilmiş biçimlendirme belirticileri varsa, bu işlevler geçersiz parametre işleyicisini çağırır. Her durumda, yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -122,8 +123,8 @@ Güvenli olmayan sürümler gibi (bkz. [_cprintf, _cprintf_l, _cwprintf, _cwprin
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cprintf_s**, **_cprintf_s_l**|\<conio. h >|
-|**_cwprintf_s**, **_cwprintf_s_l**|\<conio. h >|
+|**_cprintf_s**, **_cprintf_s_l**|\<conio.h>|
+|**_cwprintf_s**, **_cwprintf_s_l**|\<conio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -166,4 +167,4 @@ int main( void )
 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)<br/>
 [vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l](vfprintf-s-vfprintf-s-l-vfwprintf-s-vfwprintf-s-l.md)<br/>
-[Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[Biçim belirtimi sözdizimi: printf ve wprintf Işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>

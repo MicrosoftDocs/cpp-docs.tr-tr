@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme'
 title: 'Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme'
 ms.date: 10/16/2019
 helpviewer_keywords:
 - 'msbuild (c++), howto: add a custom build step'
 ms.assetid: a20a0c47-4df4-4754-a1f0-a94a99958916
-ms.openlocfilehash: 78d40a5b4a02fe9b065bbbdde33afc6180d75381
-ms.sourcegitcommit: 9aab425662a66825772f091112986952f341f7c8
+ms.openlocfilehash: 1373aa2333fda6e0be9c7c574c5acc7840b9721a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72444923"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156404"
 ---
 # <a name="how-to-add-a-custom-build-step-to-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme
 

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. IDataObjectImpl sınıfı
 title: IDataObjectImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - IDataObjectImpl class
 - IDataObject, ATL implementation
 ms.assetid: b680f0f7-7795-40a1-a0f6-f48768201c89
-ms.openlocfilehash: 379dd3304d96afcd2b0e98ec4a98f1bac64d4ad9
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: e1335312cd793ae93003fc37572d984c58e82dec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158406"
 ---
 # <a name="idataobjectimpl-class"></a>IDataObjectImpl sınıfı
 
@@ -34,7 +35,7 @@ Bu sınıf Tekdüzen Veri Aktarımı desteklemek ve bağlantıları yönetmek i�
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template<class T>
@@ -65,9 +66,9 @@ Sınıfınız, öğesinden türetilir `IDataObjectImpl` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-[IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) arabirimi Tekdüzen veri aktarımı desteklemek için yöntemler sağlar. `IDataObject`verileri almak ve depolamak için [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) ve [stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) standart biçim yapılarını kullanır.
+[IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) arabirimi Tekdüzen veri aktarımı desteklemek için yöntemler sağlar. `IDataObject` verileri almak ve depolamak için [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) ve [stgmedium](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) standart biçim yapılarını kullanır.
 
-`IDataObject`Ayrıca, veri değişikliği bildirimlerini işlemek üzere öneri havuzları bağlantılarını yönetir. İstemcinin veri nesnesinden veri değişikliği bildirimleri alabilmesi için, istemci, bir öneri havuzu adlı bir nesneye [ıvısesink](/windows/win32/api/objidl/nn-objidl-iadvisesink) arabirimini gerçekleştirmelidir. İstemci daha sonra çağırdığında `IDataObject::DAdvise` , veri nesnesi ve öneri havuzu arasında bir bağlantı oluşturulur.
+`IDataObject` Ayrıca, veri değişikliği bildirimlerini işlemek üzere öneri havuzları bağlantılarını yönetir. İstemcinin veri nesnesinden veri değişikliği bildirimleri alabilmesi için, istemci, bir öneri havuzu adlı bir nesneye [ıvısesink](/windows/win32/api/objidl/nn-objidl-iadvisesink) arabirimini gerçekleştirmelidir. İstemci daha sonra çağırdığında `IDataObject::DAdvise` , veri nesnesi ve öneri havuzu arasında bir bağlantı oluşturulur.
 
 Sınıfı, `IDataObjectImpl` `IDataObject` `IUnknown` hata ayıklama yapılarında döküm cihazına bilgi göndererek varsayılan bir uygulamasını sağlar ve uygular.
 
@@ -83,7 +84,7 @@ Sınıfı, `IDataObjectImpl` `IDataObject` `IUnknown` hata ayıklama yapıların
 
 **Üstbilgi:** atlctl. h
 
-## <a name="idataobjectimpldadvise"></a><a name="dadvise"></a>IDataObjectImpl::D Advise
+## <a name="idataobjectimpldadvise"></a><a name="dadvise"></a> IDataObjectImpl::D Advise
 
 Veri nesnesi ve öneri havuzu arasında bir bağlantı kurar.
 
@@ -103,7 +104,7 @@ Bağlantıyı sonlandırmak için [DUnadvise](#dunadvise)çağırın.
 
 Windows SDK için bkz. IDataObject [::D Advise](/windows/win32/api/objidl/nf-objidl-idataobject-dadvise) .
 
-## <a name="idataobjectimpldunadvise"></a><a name="dunadvise"></a>IDataObjectImpl::D Unadvise
+## <a name="idataobjectimpldunadvise"></a><a name="dunadvise"></a> IDataObjectImpl::D Unadvise
 
 Daha önce [dadtıon](#dadvise)aracılığıyla kurulan bir bağlantıyı sonlandırır.
 
@@ -115,7 +116,7 @@ HRESULT DUnadvise(DWORD dwConnection);
 
 Bkz. IDataObject [: Windows SDK:D Unadvise](/windows/win32/api/objidl/nf-objidl-idataobject-dunadvise) .
 
-## <a name="idataobjectimplenumdadvise"></a><a name="enumdadvise"></a>IDataObjectImpl:: enumdadmen
+## <a name="idataobjectimplenumdadvise"></a><a name="enumdadvise"></a> IDataObjectImpl:: enumdadmen
 
 Geçerli danışmanlık bağlantılarında yinelemek için bir Numaralandırıcı oluşturur.
 
@@ -131,7 +132,7 @@ HRESULT DAdvise(
 
 Windows SDK için bkz. IDataObject [:: Enumdadmenlik](/windows/win32/api/objidl/nf-objidl-idataobject-enumdadvise) .
 
-## <a name="idataobjectimplenumformatetc"></a><a name="enumformatetc"></a>IDataObjectImpl:: EnumFormatEtc
+## <a name="idataobjectimplenumformatetc"></a><a name="enumformatetc"></a> IDataObjectImpl:: EnumFormatEtc
 
 Veri nesnesi tarafından desteklenen yapılar arasında yinelemek için bir Numaralandırıcı oluşturur `FORMATETC` .
 
@@ -149,7 +150,7 @@ Windows SDK bkz. [IDataObject:: EnumFormatEtc](/windows/win32/api/objidl/nf-obji
 
 E_NOTIMPL döndürür.
 
-## <a name="idataobjectimplfiredatachange"></a><a name="firedatachange"></a>IDataObjectImpl:: FireDataChange
+## <a name="idataobjectimplfiredatachange"></a><a name="firedatachange"></a> IDataObjectImpl:: FireDataChange
 
 Şu anda yönetilmekte olan her bir öneri havuzuna bir değişiklik bildirimi gönderir.
 
@@ -161,7 +162,7 @@ HRESULT FireDataChange();
 
 Standart bir HRESULT değeri.
 
-## <a name="idataobjectimplgetcanonicalformatetc"></a><a name="getcanonicalformatetc"></a>IDataObjectImpl:: GetCanonicalFormatEtc
+## <a name="idataobjectimplgetcanonicalformatetc"></a><a name="getcanonicalformatetc"></a> IDataObjectImpl:: GetCanonicalFormatEtc
 
 Mantıksal olarak eşdeğer bir `FORMATETC` yapıyı daha karmaşık bir yapıya alır.
 
@@ -177,7 +178,7 @@ E_NOTIMPL döndürür.
 
 Windows SDK bkz. [IDataObject:: GetCanonicalFormatEtc](/windows/win32/api/objidl/nf-objidl-idataobject-getcanonicalformatetc) .
 
-## <a name="idataobjectimplgetdata"></a><a name="getdata"></a>IDataObjectImpl:: GetData
+## <a name="idataobjectimplgetdata"></a><a name="getdata"></a> IDataObjectImpl:: GetData
 
 Veri nesnesinden istemciye veri aktarır.
 
@@ -193,7 +194,7 @@ HRESULT GetData(
 
 Windows SDK için bkz. [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) .
 
-## <a name="idataobjectimplgetdatahere"></a><a name="getdatahere"></a>IDataObjectImpl:: GetDataHere
+## <a name="idataobjectimplgetdatahere"></a><a name="getdatahere"></a> IDataObjectImpl:: GetDataHere
 
 Benzer şekilde `GetData` , istemci yapıyı ayırmalıdır `STGMEDIUM` .
 
@@ -211,7 +212,7 @@ E_NOTIMPL döndürür.
 
 Windows SDK [buraya IDataObject:: GetDataHere](/windows/win32/api/objidl/nf-objidl-idataobject-getdatahere) yazın.
 
-## <a name="idataobjectimplquerygetdata"></a><a name="querygetdata"></a>IDataObjectImpl:: QueryGetData
+## <a name="idataobjectimplquerygetdata"></a><a name="querygetdata"></a> IDataObjectImpl:: QueryGetData
 
 Veri nesnesinin veri aktarmaya yönelik belirli bir yapıyı destekleyip desteklemediğini belirler `FORMATETC` .
 
@@ -227,7 +228,7 @@ E_NOTIMPL döndürür.
 
 Windows SDK bkz. [IDataObject:: QueryGetData](/windows/win32/api/objidl/nf-objidl-idataobject-querygetdata) .
 
-## <a name="idataobjectimplsetdata"></a><a name="setdata"></a>IDataObjectImpl:: SetData
+## <a name="idataobjectimplsetdata"></a><a name="setdata"></a> IDataObjectImpl:: SetData
 
 İstemciden veri nesnesine veri aktarır.
 

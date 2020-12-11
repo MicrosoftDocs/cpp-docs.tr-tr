@@ -1,19 +1,20 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: IDispEventImpl kullanma'
 title: IDispEventImpl (ATL) kullanma
 ms.date: 08/19/2019
 helpviewer_keywords:
 - IDispEventImpl class, using
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
-ms.openlocfilehash: 9684781ba99d96e2c58d450ee0ff892374e33aef
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 4ddab52eeac3c409b32393e8b8b07a85019143c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630593"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157184"
 ---
 # <a name="using-idispeventimpl"></a>IDispEventImpl kullanma
 
-Olayları işlemek `IDispEventImpl` için kullanırken şunları yapmanız gerekir:
+`IDispEventImpl`Olayları işlemek için kullanırken şunları yapmanız gerekir:
 
 - Sınıfınızı [IDispEventImpl](../atl/reference/idispeventimpl-class.md)konumundan türet.
 
@@ -27,7 +28,7 @@ Olayları işlemek `IDispEventImpl` için kullanırken şunları yapmanız gerek
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte, Word 'ün **uygulama** nesnesi tarafından `DocumentChange` tetiklenen olayın nasıl işleneceği gösterilmektedir. Bu olay, `ApplicationEvents` dispınterface üzerinde bir yöntem olarak tanımlanır.
+Aşağıdaki örnekte, `DocumentChange` Word 'Ün **uygulama** nesnesi tarafından tetiklenen olayın nasıl işleneceği gösterilmektedir. Bu olay, dispınterface üzerinde bir yöntem olarak tanımlanır `ApplicationEvents` .
 
 Örnek, [ATLEventHandling](../overview/visual-cpp-samples.md)örneğinden yapılır.
 
@@ -47,7 +48,7 @@ methods:
 };
 ```
 
-Örnek, Word `#import` 'ün tür kitaplığından gerekli üst bilgi dosyalarını oluşturmak için kullanır. Bu örneği Word 'ün diğer sürümleriyle birlikte kullanmak istiyorsanız, doğru mso dll dosyasını belirtmeniz gerekir. Örneğin, Office 2000 Mso9. dll ve OfficeXP, Mso. dll dosyasını sağlar. Bu kod, *pch. h* 'Den (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) basitleştirilmiştir:
+Örnek, `#import` Word 'ün tür kitaplığından gerekli üst bilgi dosyalarını oluşturmak için kullanır. Bu örneği Word 'ün diğer sürümleriyle birlikte kullanmak istiyorsanız, doğru mso dll dosyasını belirtmeniz gerekir. Örneğin, Office 2000 mso9.dll sağlar ve OfficeXP mso.dll sağlar. Bu kod, *pch. h* 'Den (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ) basitleştirilmiştir:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventimpl_1.h)]
 
@@ -57,5 +58,5 @@ Aşağıdaki kod NotSoSimple. h içinde görüntülenir. İlgili kod açıklamal
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Olay İşleme](../atl/event-handling-and-atl.md)<br/>
+[Olay Işleme](../atl/event-handling-and-atl.md)<br/>
 [ATLEventHandling örneği](../overview/visual-cpp-samples.md)

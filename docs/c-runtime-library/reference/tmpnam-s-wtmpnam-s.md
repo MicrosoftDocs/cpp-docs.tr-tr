@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tmpnam_s _wtmpnam_s'
 title: tmpnam_s, _wtmpnam_s
 ms.date: 4/2/2020
 api_name:
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - file names [C++], temporary
 - wtmpnam_s function
 ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
-ms.openlocfilehash: 2168a1bef5b8eb20a1f59460146559f4fa9f2645
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fefaa0ca54ecd1a4ae0a61f10ab502cf5310648a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155793"
 ---
 # <a name="tmpnam_s-_wtmpnam_s"></a>tmpnam_s, _wtmpnam_s
 
 Geçici dosyalar oluşturmak için kullanabileceğiniz adlar oluşturun. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [tmpnam ve _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) sürümleridir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t tmpnam_s(
@@ -82,20 +83,20 @@ Bu işlevlerin her ikisi de başarılı olursa 0 veya hata durumunda bir hata nu
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-| *üstbilgisine* | *Sizeınchars* | **Dönüş Değeri** | **Contents of** *Str* içeriği |
+| *üstbilgisine* | *Sizeınchars* | **Dönüş Değeri** |  *Str* içeriği |
 |--|--|--|--|
 | **DEĞER** | herhangi biri | **EıNVAL** | değiştirilmedi |
 | **null** değil (geçerli belleğe işaret eder) | çok kısa | **ERANGE** | değiştirilmedi |
 
-*Str* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
+*Str* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu işlevlerin her biri, şu anda mevcut olmayan bir dosyanın adını döndürür. **tmpnam_s** , [Gettemppathw](/windows/win32/api/fileapi/nf-fileapi-gettemppathw)tarafından döndürülen belirlenmiş Windows geçici dizininde benzersiz bir ad döndürür. Bir dosya adının ters eğik çizgiyle ön halden önceden sonlandırıldığına ve \fname21 gibi yol bilgilerine sahip olmadığına, bu adın geçerli çalışma dizini için geçerli olduğunu gösterir.
 
-**Tmpnam_s**için, bu oluşturulan dosya adını *Str*içinde saklayabilirsiniz. **Tmpnam_s** tarafından döndürülen bir dizenin en fazla uzunluğu, **L_tmpnam_s**, stdio içinde tanımlanır. Olsun. *Str* **null**ise **tmpnam_s** , sonucu iç statik bir arabellekte bırakır. Bu nedenle, sonraki çağrılar bu değeri yok eder. **Tmpnam_s** tarafından oluşturulan ad, program tarafından oluşturulan bir dosya adından ve **tmpnam_s**ilk çağrıdan sonra, 32 (. 1-. 1vvvvvu, stdio 'da **TMP_MAX_S** olduğunda). H **INT_MAX**).
+**Tmpnam_s** için, bu oluşturulan dosya adını *Str* içinde saklayabilirsiniz. **Tmpnam_s** tarafından döndürülen bir dizenin en fazla uzunluğu, **L_tmpnam_s**, stdio. H içinde tanımlanır. *Str* **null** ise **tmpnam_s** , sonucu iç statik bir arabellekte bırakır. Bu nedenle, sonraki çağrılar bu değeri yok eder. **Tmpnam_s** tarafından oluşturulan ad, program tarafından oluşturulan bir dosya adından ve **tmpnam_s** ilk çağrıdan sonra, 32 (. 1-. 1vvvvvu, stdio 'da **TMP_MAX_S** olduğunda). H **INT_MAX**).
 
-**tmpnam_s** çok baytlı karakter dizesi bağımsız değişkenlerini, uygun şekilde otomatik olarak işler ve işletim SISTEMINDEN alınan OEM kod sayfasına göre çok baytlı karakter dizilerini tanıyor. **_wtmpnam_s** , **tmpnam_s**geniş karakterli bir sürümüdür; **_wtmpnam_s** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_wtmpnam_s** ve **tmpnam_s** , **_wtmpnam_s** çok baytlı karakter dizelerini işleyememesi dışında aynı şekilde davranır.
+**tmpnam_s** çok baytlı karakter dizesi bağımsız değişkenlerini, uygun şekilde otomatik olarak işler ve işletim SISTEMINDEN alınan OEM kod sayfasına göre çok baytlı karakter dizilerini tanıyor. **_wtmpnam_s** , **tmpnam_s** geniş karakterli bir sürümüdür; **_wtmpnam_s** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. **_wtmpnam_s** ve **tmpnam_s** , **_wtmpnam_s** çok baytlı karakter dizelerini işleyememesi dışında aynı şekilde davranır.
 
 C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 

@@ -1,4 +1,5 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: __declspec (dllexport) kullanarak DLL 'den dışarı aktarma"
 title: __declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 ms.date: 05/06/2019
 f1_keywords:
@@ -9,22 +10,22 @@ helpviewer_keywords:
 - export directives [C++]
 - exporting DLLs [C++], __declspec(dllexport) keyword
 ms.assetid: a35e25e8-7263-4a04-bad4-00b284458679
-ms.openlocfilehash: 77dc6dc14efe2a7ccf46c41477ed4fd6d1956856
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e662563e63881d893b9ef717b160844e9995eb0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224038"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156547"
 ---
 # <a name="exporting-from-a-dll-using-__declspecdllexport"></a>__declspec(dllexport) Kullanarak DLL'den Dışarı Aktarma
 
-Anahtar sözcüğünü kullanarak bir DLL 'den verileri, işlevleri, sınıfları veya sınıf üye işlevlerini dışarı aktarabilirsiniz **`__declspec(dllexport)`** . **`__declspec(dllexport)`**. def dosyası kullanmanıza gerek kalmaması için, nesne dosyasına dışarı aktarma yönergesini ekler.
+Anahtar sözcüğünü kullanarak bir DLL 'den verileri, işlevleri, sınıfları veya sınıf üye işlevlerini dışarı aktarabilirsiniz **`__declspec(dllexport)`** . **`__declspec(dllexport)`** . def dosyası kullanmanıza gerek kalmaması için, nesne dosyasına dışarı aktarma yönergesini ekler.
 
 Bu kolaylık, düzenlenmiş C++ işlev adlarını dışa aktarmaya çalışırken en belirgin şekilde görünür. Ad dekorasyonu için standart belirtim olmadığından, bir içe aktarılmış işlevin adı derleyici sürümleri arasında değişebilir. Kullanırsanız **`__declspec(dllexport)`** , dll ve Dependent. exe dosyalarını yeniden derleme yalnızca adlandırma kuralı değişikliklerinin hesabında gereklidir.
 
 Sıra sayısı, NONAME ve PRIVATE gibi birçok dışarı aktarma yönergesi yalnızca bir. def dosyasında yapılabilir ve bu öznitelikleri. def dosyası olmadan belirtmenin bir yolu yoktur. Ancak, **`__declspec(dllexport)`** bir. def dosyası kullanmanın yanı sıra derleme hatalarına neden olmaz.
 
-İşlevleri dışarı aktarmak için anahtar sözcük **`__declspec(dllexport)`** belirtilmişse, çağırma kuralı anahtar sözcüğünün sol tarafında görünür olmalıdır. Örnek:
+İşlevleri dışarı aktarmak için anahtar sözcük **`__declspec(dllexport)`** belirtilmişse, çağırma kuralı anahtar sözcüğünün sol tarafında görünür olmalıdır. Örneğin:
 
 ```
 __declspec(dllexport) void __cdecl Function1(void);
@@ -38,7 +39,7 @@ class __declspec(dllexport) CExampleExport : public CObject
 ```
 
 > [!NOTE]
-> `__declspec(dllexport)`çağırma kuralına sahip bir işleve uygulanamaz `__clrcall` .
+> `__declspec(dllexport)` çağırma kuralına sahip bir işleve uygulanamaz `__clrcall` .
 
 DLL 'nizi oluştururken genellikle, dışarı aktardığınız işlev prototiplerini ve/veya sınıflarını içeren bir üst bilgi dosyası oluşturun ve **`__declspec(dllexport)`** üstbilgi dosyasındaki bildirimlere ekleyin. Kodunuzu daha okunabilir hale getirmek için bir makro tanımlayın **`__declspec(dllexport)`** ve dışarı aktardığınız her sembol ile makroyu kullanın:
 

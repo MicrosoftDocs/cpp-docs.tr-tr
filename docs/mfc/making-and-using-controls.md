@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetimleri oluşturma ve kullanma'
 title: Denetimleri Yapma ve Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Windows common controls [MFC], about common controls
 - common controls [MFC], about common controls
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
-ms.openlocfilehash: f5fcb15a0cb7e336f6c818eb39b271f5f6e74af5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: eaf0c25fefe327b20e859adab5e1addf6771328b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621348"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112352"
 ---
 # <a name="making-and-using-controls"></a>Denetimleri Yapma ve Kullanma
 
@@ -25,13 +26,13 @@ Visual C++ [iletişim kutusu düzenleyicisinde](../windows/dialog-editor.md)bir�
 
 - [El ile denetim ekleme](adding-controls-by-hand.md) (iletişim kutusu Düzenleyicisi olmadan)
 
-- [Standart denetimden denetim türetme](deriving-controls-from-a-standard-control.md)
+- [Standart bir denetimden denetim türetme](deriving-controls-from-a-standard-control.md)
 
 - [Bir ortak denetimi alt pencere olarak kullanma](using-a-common-control-as-a-child-window.md)
 
 - [Ortak denetimlerden bildirim alma](receiving-notification-from-common-controls.md)
 
-- [İletişim Kutusu Veri Değişimi ve Doğrulaması](dialog-data-exchange-and-validation.md)
+- [İletişim kutusu veri değişimi ve doğrulaması](dialog-data-exchange-and-validation.md)
 
 - [Kod sihirbazları Ile denetimlere tür kullanımı uyumlu erişim](type-safe-access-to-controls-with-code-wizards.md)
 
@@ -39,7 +40,7 @@ Visual C++ [iletişim kutusu düzenleyicisinde](../windows/dialog-editor.md)bir�
 
 - [İletişim kutuları](dialog-boxes.md)
 
-- [İletişim çubukları](dialog-bars.md)
+- [İletişim kutusu çubukları](dialog-bars.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

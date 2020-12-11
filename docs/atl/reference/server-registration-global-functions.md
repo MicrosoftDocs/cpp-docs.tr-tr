@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sunucu kaydı genel Işlevleri'
 title: Sunucu kaydı genel Işlevleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 - atlbase/ATL::AtlComModuleRevokeClassObjects
 - atlbase/ATL::AtlComModuleGetClassObject
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
-ms.openlocfilehash: 4a84c311e34f1bc37b2f51e2152b6fcf2e46e2a3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7841c162c2c7c0c93cd8edcd8fd6d78ae4bb2b1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835226"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157743"
 ---
 # <a name="server-registration-global-functions"></a>Sunucu kaydı genel Işlevleri
 
@@ -173,7 +174,7 @@ Oluşturulacak nesnenin CLSID değeri.
 İstenen arabirimin IID 'si.
 
 *PPV*<br/>
-*Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
+*Riıd* tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

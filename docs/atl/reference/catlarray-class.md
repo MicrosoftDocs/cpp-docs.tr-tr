@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAtlArray Class'
 title: CAtlArray sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,18 +26,18 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlArray class
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-ms.openlocfilehash: c4a4cd509a5d3078c6587ba7b29179a68912a258
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0ae3f5aef84cac64adba20ef438f5063abda098e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833848"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158432"
 ---
 # <a name="catlarray-class"></a>CAtlArray sınıfı
 
 Bu sınıf bir dizi nesnesi uygular.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename E, class ETraits = CElementTraits<E>>
@@ -66,7 +67,7 @@ Dizide depolanacak veri türü.
 |[FreeExtra](#freeextra)|Dizideki boş öğeleri kaldırmak için bu yöntemi çağırın.|
 |[GetAt](#getat)|Dizi nesnesinden tek bir öğe almak için bu yöntemi çağırın.|
 |[GetCount](#getcount)|Dizide depolanan öğelerin sayısını döndürmek için bu yöntemi çağırın.|
-|[GetData](#getdata)|Dizideki ilk öğeye bir işaretçi döndürmek için bu yöntemi çağırın.|
+|[Veri Al](#getdata)|Dizideki ilk öğeye bir işaretçi döndürmek için bu yöntemi çağırın.|
 |[Insertarrayat](#insertarrayat)|Bir diziyi diğerine eklemek için bu yöntemi çağırın.|
 |[InsertAt](#insertat)|Dizi nesnesine yeni bir öğe (veya bir öğenin birden çok kopyasını) eklemek için bu yöntemi çağırın.|
 |[IsEmpty](#isempty)|Dizinin boş olup olmadığını test etmek için bu yöntemi çağırın.|
@@ -333,7 +334,7 @@ Eklenecek dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dizideki öğeler, öğe *ıBaşlat*öğesinden *başlayarak dizi nesnesine* kopyalanır. Geçersiz kılınmamak için mevcut dizi öğeleri taşınır.
+Dizideki öğeler, öğe *ıBaşlat* öğesinden *başlayarak dizi nesnesine* kopyalanır. Geçersiz kılınmamak için mevcut dizi öğeleri taşınır.
 
 Hata ayıklama yapılarında, `CAtlArray` nesne geçerli değilse veya *paneni* işaretçisi null ya da GEÇERSIZ Ise BIR ATLASSERT tetiklenir.
 
@@ -365,7 +366,7 @@ Eklenecek öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*IElement*dizininde başlayan diziye bir veya daha fazla öğe ekler. Varolan öğeler, üzerine yazılmaması için taşınır.
+*IElement* dizininde başlayan diziye bir veya daha fazla öğe ekler. Varolan öğeler, üzerine yazılmaması için taşınır.
 
 Hata ayıklama yapılarında, `CAtlArray` nesne geçersiz ise, eklenecek öğe sayısı sıfırdır veya dizinin içermesi için öğe sayısı çok büyük olduğunda BIR ATLASSERT tetiklenir. Perakende derlemelerde, geçersiz parametrelerin geçirilmesi öngörülemeyen sonuçlara neden olabilir.
 

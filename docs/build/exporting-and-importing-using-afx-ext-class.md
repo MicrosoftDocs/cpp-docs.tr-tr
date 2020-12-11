@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: AFX_EXT_CLASS kullanarak dışarı aktarma ve Içeri aktarma'
 title: AFX_EXT_CLASS Kullanarak İçeri ve Dışarı Aktarma
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - executable files [C++], importing classes
 - exporting DLLs [C++], AFX_EXT_CLASS macro
 ms.assetid: 6b72cb2b-e92e-4ecd-bcab-c335e1d1cfde
-ms.openlocfilehash: 95c72f8251a8a59833483eb948709c80a69d03d7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9c82874b1e5e8791f2825cf6874399fab0e10eaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328606"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156690"
 ---
 # <a name="exporting-and-importing-using-afx_ext_class"></a>AFX_EXT_CLASS Kullanarak İçeri ve Dışarı Aktarma
 
@@ -31,9 +32,9 @@ class AFX_EXT_CLASS CMyClass : public CDocument
 };
 ```
 
-Bu makro, önişlemci sembolleri `__declspec(dllexport)` `_AFXDLL` ve `_AFXEXT` tanımlandığı gibi MFC tarafından tanımlanır. Ancak makro tanımlandığı gibi `__declspec(dllimport)` `_AFXDLL` tanımlanır ve `_AFXEXT` tanımlı değildir. Tanımlandığında, Önişlemci sembolü `_AFXDLL` , MFC 'nin paylaşılan sürümünün hedef yürütülebilir (bir dll veya bir uygulama) tarafından kullanıldığını gösterir. Hem hem `_AFXDLL` de `_AFXEXT` tanımlandığında bu, hedef yürütülebilirin bir MFC uzantı dll olduğunu gösterir.
+Bu makro `__declspec(dllexport)` , önişlemci sembolleri `_AFXDLL` ve TANıMLANDıĞı gibi MFC tarafından tanımlanır `_AFXEXT` . Ancak makro tanımlandığı gibi tanımlanır `__declspec(dllimport)` `_AFXDLL` ve `_AFXEXT` tanımlı değildir. Tanımlandığında, Önişlemci sembolü, `_AFXDLL` MFC 'nin paylaşılan sürümünün hedef yürütülebilir (BIR DLL veya bir uygulama) tarafından kullanıldığını gösterir. Hem hem `_AFXDLL` de `_AFXEXT` tanımlandığında bu, hedef YÜRÜTÜLEBILIRIN bir MFC uzantı dll olduğunu gösterir.
 
-`AFX_EXT_CLASS` , Bir MFC uzantı `__declspec(dllexport)` dll 'sinden dışarı aktarılırken olduğu gibi tanımlandığından, tüm sınıfları, bu sınıfın tüm sembolleri için düzenlenmiş adları. def dosyasına yerleştirmeksizin dışarı aktarabilirsiniz.
+, `AFX_EXT_CLASS` `__declspec(dllexport)` Bir MFC uzantı dll 'sinden dışarı aktarılırken olduğu gibi tanımlandığından, tüm sınıfları, bu sınıfın tüm sembolleri için düzenlenmiş adları. def dosyasına yerleştirmeksizin dışarı aktarabilirsiniz.
 
 Bu yöntemle bir. def dosyası ve sınıfın tüm düzenlenmiş adlarını oluşturmaktan kaçınabilseniz de, adlar sıralı olarak verilebildiğinden. def dosyası oluşturulması daha etkilidir. Dışarı aktarma işlemi için. def dosya yöntemini kullanmak için, üst bilgi dosyanızın başına ve sonuna aşağıdaki kodu yerleştirin:
 
@@ -50,7 +51,7 @@ Bu yöntemle bir. def dosyası ve sınıfın tüm düzenlenmiş adlarını oluş
 
 ## <a name="exporting-individual-members-in-a-class"></a>Bir sınıftaki tek tek üyeleri dışarı aktarma
 
-Bazen sınıfınızın tek tek üyelerini dışarı aktarmak isteyebilirsiniz. Örneğin, bir `CDialog`türetilmiş sınıfı dışarı aktarıyorsanız, yalnızca oluşturucuyu ve `DoModal` çağrısını dışarı aktarmanız gerekebilir. ' İ dışa `AFX_EXT_CLASS` aktarmanız gereken ayrı Üyeler üzerinde kullanabilirsiniz.
+Bazen sınıfınızın tek tek üyelerini dışarı aktarmak isteyebilirsiniz. Örneğin, bir `CDialog` türetilmiş sınıfı dışarı aktarıyorsanız, yalnızca oluşturucuyu ve çağrısını dışarı aktarmanız gerekebilir `DoModal` . `AFX_EXT_CLASS`' İ dışa aktarmanız gereken ayrı Üyeler üzerinde kullanabilirsiniz.
 
 Örneğin:
 
@@ -68,7 +69,7 @@ public:
 
 Artık sınıfın tüm üyelerini dışarı aktaramadığından, MFC makrolarının çalışma biçimi nedeniyle ek bir sorunla karşılaşabilirsiniz. MFC 'nin yardımcı makrolarının bazıları aslında veri üyelerini bildirir veya tanımlar. Bu nedenle, bu veri üyeleri DLL 'nizden de verilmelidir.
 
-Örneğin, `DECLARE_DYNAMIC` makro MFC uzantı dll 'si oluştururken aşağıdaki gibi tanımlanır:
+Örneğin, `DECLARE_DYNAMIC` makro MFC uzantı DLL 'si oluştururken aşağıdaki gibi tanımlanır:
 
 ```cpp
 #define DECLARE_DYNAMIC(class_name) \
@@ -79,7 +80,7 @@ public: \
    virtual CRuntimeClass* GetRuntimeClass() const; \
 ```
 
-Static `AFX_DATA` ile başlayan çizgi, sınıfınızın içinde statik bir nesne bildiriyor. Bu sınıfı doğru dışarı aktarmak ve bir istemci yürütülebilirinin çalışma zamanı bilgilerine erişmek için bu statik nesneyi dışarı aktarmanız gerekir. Statik `AFX_DATA`nesne değiştiriciyle `AFX_DATA` BILDIRILDIĞI için `__declspec(dllexport)` , yalnızca dll 'nizi oluştururken ve bunu istemci yürütülebilir dosyanızı oluştururken olduğu gibi `__declspec(dllimport)` tanımlayarak tanımlamanız gerekir. `AFX_EXT_CLASS` Bu şekilde zaten tanımlandığından, sınıf tanımınızın `AFX_EXT_CLASS` etrafında aynı olması için yalnızca yeniden tanımlamanız `AFX_DATA` gerekir.
+Static ile başlayan çizgi, `AFX_DATA` sınıfınızın içinde statik bir nesne bildiriyor. Bu sınıfı doğru dışarı aktarmak ve bir istemci yürütülebilirinin çalışma zamanı bilgilerine erişmek için bu statik nesneyi dışarı aktarmanız gerekir. Statik nesne değiştiriciyle bildirildiği `AFX_DATA` için, yalnızca `AFX_DATA` `__declspec(dllexport)` DLL 'nizi oluştururken ve bunu `__declspec(dllimport)` istemci yürütülebilir dosyanızı oluştururken olduğu gibi tanımlayarak tanımlamanız gerekir. `AFX_EXT_CLASS`Bu şekilde zaten tanımlandığından, `AFX_DATA` sınıf tanımınızın etrafında aynı olması için yalnızca yeniden tanımlamanız gerekir `AFX_EXT_CLASS` .
 
 Örneğin:
 
@@ -97,7 +98,7 @@ class CExampleView : public CView
 #define AFX_DATA
 ```
 
-MFC her zaman kendi makroları `AFX_DATA` içinde tanımladığı veri öğelerinde sembol kullandığından, bu teknik tüm senaryolar için de kullanılır. Örneğin, için `DECLARE_MESSAGE_MAP`geçerlidir.
+MFC her zaman `AFX_DATA` kendi makroları içinde tanımladığı veri öğelerinde sembol kullandığından, bu teknik tüm senaryolar için de kullanılır. Örneğin, için geçerlidir `DECLARE_MESSAGE_MAP` .
 
 > [!NOTE]
 > Sınıfın seçili üyeleri yerine sınıfının tamamını dışarı aktarıyorsanız statik veri üyeleri otomatik olarak dışarı aktarılabilir.

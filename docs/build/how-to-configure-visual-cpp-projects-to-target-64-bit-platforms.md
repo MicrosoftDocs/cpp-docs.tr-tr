@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: Visual Studio C++ projelerini 64 bit, x64 platformları hedefleyecek şekilde yapılandırma'
 title: 'Nasıl yapılır: Visual Studio C++ projelerini 64 bit, x64 platformları hedefleyecek şekilde yapılandırma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-ms.openlocfilehash: 762fd5d6ddbb55713cf2fc5e34cb33fb91b08eb9
-ms.sourcegitcommit: ce3393846c86e7905ff0c86e4cd6610476809585
+ms.openlocfilehash: 717f9db302f4a7bfef12d30830336b22f9fc5169
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68492236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156378"
 ---
 # <a name="how-to-configure-visual-studio-c-projects-to-target-64-bit-x64-platforms"></a>Nasıl yapılır: Visual Studio C++ projelerini 64 bit, x64 platformları hedefleyecek şekilde yapılandırma
 
@@ -24,11 +25,11 @@ Visual Studio IDE 'deki proje yapılandırmalarının, C++ uygulamalarını 64 b
 1. Bu projenin özellik sayfalarını açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](working-with-project-properties.md).
 
    > [!NOTE]
-   > .NET projeleri için, **yapılandırma özellikleri** düğümünün veya alt düğümlerinden birinin, ** \<ProjectName> Özellik sayfaları** iletişim kutusunda seçildiğinden emin olun; Aksi takdirde **Configuration Manager** düğmesi kullanılamaz durumda kalır.
+   > .NET projeleri için **yapılandırma özellikleri** düğümünün veya alt düğümlerinden birinin **\<Projectname> Özellik sayfaları** iletişim kutusunda seçildiğinden emin olun; Aksi takdirde, **Configuration Manager** düğmesi kullanılamaz durumda kalır.
 
 1. **Configuration Manager** iletişim kutusunu açmak için **Configuration Manager** düğmesini seçin.
 
-1. **Etkin çözüm platformu** açılan listesinde yeni ** \<... >** seçeneğini seçerek **yeni çözüm platformu** iletişim kutusunu açın.
+1. **Etkin çözüm platformu** açılan listesinde, **\<New...>** **yeni çözüm platformu** iletişim kutusunu açma seçeneğini belirleyin.
 
 1. **Yeni platform açılır listesini yazın veya seçin** , 64 bit hedef platformu seçin.
 
@@ -37,17 +38,17 @@ Visual Studio IDE 'deki proje yapılandırmalarının, C++ uygulamalarını 64 b
 
 1. **Tamam** düğmesini seçin. Önceki adımda seçtiğiniz platform, **Configuration Manager** Iletişim kutusunda **etkin çözüm platformu** altında görüntülenir.
 
-1. **Configuration Manager** iletişim kutusunda **Kapat** düğmesini seçin ve sonra ** \<ProjectName> Özellik sayfaları** iletişim kutusunda **Tamam** düğmesini seçin.
+1. **Configuration Manager** Iletişim kutusunda **Kapat** düğmesini seçin ve sonra **\<Projectname> Özellik sayfaları** iletişim kutusunda **Tamam** düğmesini seçin.
 
 ### <a name="to-copy-win32-project-settings-into-a-64-bit-project-configuration"></a>Win32 Proje ayarlarını 64 bitlik bir proje yapılandırmasına kopyalamak için
 
-- **Yeni çözüm platformu** iletişim kutusu açık olduğunda, bir projeyi bir 64-bit platformunu hedeflemek üzere ayarlarken, ayarları açılan listeden **Kopyala** listesinden **Win32**öğesini seçin. Bu proje ayarları proje düzeyinde otomatik olarak güncelleştirilir:
+- **Yeni çözüm platformu** iletişim kutusu açık olduğunda, bir projeyi bir 64-bit platformunu hedeflemek üzere ayarlarken, ayarları açılan listeden **Kopyala** listesinden **Win32** öğesini seçin. Bu proje ayarları proje düzeyinde otomatik olarak güncelleştirilir:
 
-  - [/Machine](reference/machine-specify-target-platform.md) bağlayıcı seçeneği **/Machine: x64**olarak ayarlanır.
+  - [/Machine](reference/machine-specify-target-platform.md) bağlayıcı seçeneği **/Machine: x64** olarak ayarlanır.
 
   - **Çıktıyı kaydet** kapatılmış. Daha fazla bilgi için bkz. [bağlayıcı özellik sayfaları](reference/linker-property-pages.md).
 
-  - **Hedef ortam** , **/env x64**olarak ayarlanmıştır. Daha fazla bilgi için bkz. [MIDL özellik sayfaları](reference/midl-property-pages.md).
+  - **Hedef ortam** , **/env x64** olarak ayarlanmıştır. Daha fazla bilgi için bkz. [MIDL özellik sayfaları](reference/midl-property-pages.md).
 
   - **Validate parametreleri** temizlenir ve varsayılan değere sıfırlanır. Daha fazla bilgi için bkz. [MIDL özellik sayfaları](reference/midl-property-pages.md).
 

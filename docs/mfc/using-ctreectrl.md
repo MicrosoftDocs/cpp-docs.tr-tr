@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Ctreeci kullanma'
 title: CTreeCtrl Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CTreeCtrl class [MFC], about CTreeCtrl
 - tree controls [MFC], using
 ms.assetid: 6a262f2c-3540-43e5-b03f-e4b6f9cb0325
-ms.openlocfilehash: 443ad948e7d48eaefbb74165a0072966b22439b9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 3a8c3b9b9365faf5f2d0e4b100a1239311c5d57d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154584"
 ---
 # <a name="using-ctreectrl"></a>CTreeCtrl Kullanma
 
@@ -18,33 +19,33 @@ ms.locfileid: "79442196"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Ctreec, ile CTreeView](../mfc/ctreectrl-vs-ctreeview.md)
+- [CTreeCtrl ile CTreeView karşılaştırması](../mfc/ctreectrl-vs-ctreeview.md)
 
-- [Ağaç Denetimlerini Kullanma](../mfc/using-tree-controls.md)
+- [Ağaç denetimlerini kullanma](../mfc/using-tree-controls.md)
 
-- [Ağaç Denetimi ile İletişim](../mfc/communicating-with-a-tree-control.md)
+- [Ağaç denetimiyle iletişim kurma](../mfc/communicating-with-a-tree-control.md)
 
-- [Ağaç Denetimi Stilleri](../mfc/tree-control-styles.md)
+- [Ağaç denetim stilleri](../mfc/tree-control-styles.md)
 
-- [Ağaç Denetimi Üst ve Alt Öğeleri](../mfc/tree-control-parent-and-child-items.md)
+- [Ağaç denetimi üst ve alt öğeleri](../mfc/tree-control-parent-and-child-items.md)
 
-- [Ağaç Denetim Öğesi Konumu](../mfc/tree-control-item-position.md)
+- [Ağaç Denetim öğesi konumu](../mfc/tree-control-item-position.md)
 
-- [Ağaç Denetim Öğesi Etiketleri](../mfc/tree-control-item-labels.md)
+- [Ağaç Denetim öğesi etiketleri](../mfc/tree-control-item-labels.md)
 
-- [Ağaç Denetimi Etiketini Düzenleme](../mfc/tree-control-label-editing.md)
+- [Ağaç Denetim etiketi düzenlemesi](../mfc/tree-control-label-editing.md)
 
-- [Ağaç Denetim Öğesi Durumlarına Genel Bakış](../mfc/tree-control-item-states-overview.md)
+- [Ağaç Denetim öğesi durumlarına genel bakış](../mfc/tree-control-item-states-overview.md)
 
-- [Ağaç Denetim Görüntü Listeleri](../mfc/tree-control-image-lists.md)
+- [Ağaç Denetim görüntü listeleri](../mfc/tree-control-image-lists.md)
 
-- [Ağaç Denetim Öğesi Seçimi](../mfc/tree-control-item-selection.md)
+- [Ağaç Denetim öğesi seçimi](../mfc/tree-control-item-selection.md)
 
-- [Ağaç Denetimi Sürükle ve Bırak İşlemleri](../mfc/tree-control-drag-and-drop-operations.md)
+- [Ağaç denetimi sürükle ve bırak Işlemleri](../mfc/tree-control-drag-and-drop-operations.md)
 
-- [Ağaç Denetim Öğesi Bilgileri](../mfc/tree-control-item-information.md)
+- [Ağaç Denetim öğesi bilgileri](../mfc/tree-control-item-information.md)
 
-- [Ağaç Denetimi Bildirim İletileri](../mfc/tree-control-notification-messages.md)
+- [Ağaç denetimi bildirim Iletileri](../mfc/tree-control-notification-messages.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

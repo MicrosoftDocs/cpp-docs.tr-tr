@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Iş parçacığı havuzu sınıfları'
 title: İş parçacığı havuzu sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,23 +8,23 @@ helpviewer_keywords:
 - threading [ATL], pooling
 - pooling worker threads
 ms.assetid: 01fa2c1c-12ae-4781-b772-0a74b6365a8c
-ms.openlocfilehash: d4ca779d45f927b033e2da9533aedcc6db8d8a48
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 201fd49b4daa36d4847c68cc58da93e3951b061d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274241"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157366"
 ---
 # <a name="thread-pooling-classes"></a>İş parçacığı havuzu sınıfları
 
-Aşağıdaki sınıflar, iş parçacığı havuzu destekler:
+Aşağıdaki sınıflar iş parçacığı kuyruğunu destekler:
 
-- [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) birden çok iş parçacığı havuza apartmanlar desteğiyle bir EXE modül uygular.
+- [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) Birden çok iş parçacığı havuza alınmış apartmanları destekleyen bir EXE modülü uygular.
 
-- [CComApartment](../atl/reference/ccomapartment-class.md) bir iş parçacığı havuza EXE modülü bir grupta yönetir.
+- [CComApartment](../atl/reference/ccomapartment-class.md) Bir grubu iş parçacığı havuza alınmış bir EXE modülünde yönetir.
 
-- [CComSimpleThreadAllocator](../atl/reference/ccomsimplethreadallocator-class.md) EXE modülü için iş parçacığı seçimi yönetir.
+- [Ccomsimplethreadayırıcı](../atl/reference/ccomsimplethreadallocator-class.md) Bir EXE modülü için iş parçacığı seçimini yönetir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../atl/atl-class-overview.md)

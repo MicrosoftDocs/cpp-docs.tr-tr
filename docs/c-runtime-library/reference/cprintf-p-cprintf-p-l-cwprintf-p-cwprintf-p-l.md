@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l'
 title: _cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - tcprintf_p function
 - cprintf_p function
 ms.assetid: 1f82fd7d-13c8-4c4a-a3e4-db0df3873564
-ms.openlocfilehash: a02de28a61812147c192495c4794830f85567a10
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 63b02da66c3eb8856e735eb8445bd688fc1636aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156007"
 ---
 # <a name="_cprintf_p-_cprintf_p_l-_cwprintf_p-_cwprintf_p_l"></a>_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l
 
@@ -85,13 +86,13 @@ int _cwprintf_p_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *değişkendir*<br/>
 İsteğe bağlı parametreler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -100,16 +101,16 @@ Bir hata oluşursa yazdırılan karakterlerin sayısı veya negatif bir değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, karakter ve değerleri bir dizi karakter ve değeri biçimlendirir ve bu karakterleri, **_putch** ve **_putwch** işlevlerini kullanarak doğrudan konsola yazdırır. Her *bağımsız değişken* (varsa), karşılık *gelen biçim belirtimine*göre dönüştürülür ve çıktı. Biçim, [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) işlevi için *Biçim* parametresi ile aynı form ve işleve sahiptir. **_Cprintf_p** ve **cprintf_s** arasındaki fark, **_cprintf_p** 'in biçim dizesinde bağımsız değişkenlerin kullanıldığı sırayı belirtmeye izin veren konumsal parametreleri desteklemeleridir. Daha fazla bilgi için bkz. [Printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+Bu işlevler, bir dizi karakter ve değeri, **_putch** ve **_putwch** işlevlerini kullanarak doğrudan konsola biçimlendirir ve bu karakterleri yazdırır. Her *bağımsız değişken* (varsa), karşılık *gelen biçim belirtimine* göre dönüştürülür ve çıktı. Biçim, [printf_p](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md) işlevi için *Biçim* parametresi ile aynı form ve işleve sahiptir. **_Cprintf_p** ve **cprintf_s** arasındaki fark, **_cprintf_p** konumsal parametreleri desteklediğinden, bağımsız değişkenlerin biçim dizesinde kullanıldığı sırayı belirtmeye olanak tanır. Daha fazla bilgi için bkz. [Printf_p Konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**Fprintf_p**, **printf_p**ve **sprintf_p** işlevlerinin aksine, ne **_cprintf_p** ne de **_cwprintf_p** satır besleme karakterlerini çıkış sırasında satır başı besleme (CR-LF) birleşimlerine çevirir. Önemli bir ayrım, **_Cwprintf_p** Windows NT 'de kullanıldığında Unicode karakterlerin görüntülenmesini göstermektedir. **_Cprintf_p**aksine, **_cwprintf_p** geçerli konsol yerel ayarlarını kullanır.
+**Fprintf_p**, **printf_p** ve **sprintf_p** işlevlerinin aksine, ne **_cprintf_p** ne de **_cwprintf_p** , çıkış sırasında satır besleme karakterlerini satırbaşı satır besleme (CR-LF) birleşimlerine çevirir. Önemli bir ayrım, **_Cwprintf_p** Windows NT 'de kullanıldığında Unicode karakterleri görüntülemektedir. **_Cprintf_p** aksine, **_cwprintf_p** geçerli konsol yerel ayarlarını kullanır.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 > [!IMPORTANT]
 > *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
 
-Ayrıca, **_cprintf_s** ve **_cwprintf_s**gibi, giriş işaretçisini ve biçim dizesini doğrular. *Biçim* veya *bağımsız değişken* **null**veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Ayrıca, **_cprintf_s** ve **_cwprintf_s** gibi, giriş işaretçisini ve biçim dizesini doğrular. *Biçim* veya *bağımsız değişken* **null** veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -122,8 +123,8 @@ Ayrıca, **_cprintf_s** ve **_cwprintf_s**gibi, giriş işaretçisini ve biçim 
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cprintf_p**, **_cprintf_p_l**|\<conio. h >|
-|**_cwprintf_p**, **_cwprintf_p_l**|\<conio. h >|
+|**_cprintf_p**, **_cprintf_p_l**|\<conio.h>|
+|**_cwprintf_p**, **_cwprintf_p_l**|\<conio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -167,5 +168,5 @@ int main( void )
 [_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l](sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)<br/>
 [_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l](vfprintf-p-vfprintf-p-l-vfwprintf-p-vfwprintf-p-l.md)<br/>
 [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)<br/>
-[printf_p Konumsal Parametreler](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
-[Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[printf_p Konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
+[Biçim belirtimi sözdizimi: printf ve wprintf Işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>

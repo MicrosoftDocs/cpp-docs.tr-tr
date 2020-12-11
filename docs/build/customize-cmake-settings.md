@@ -1,14 +1,15 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CMake derleme ayarlarını özelleştirme'
 title: Visual Studio 'da CMake derleme ayarlarını özelleştirme
 ms.date: 08/20/2019
 helpviewer_keywords:
 - CMake build settings
-ms.openlocfilehash: 9fa1a21b26088482fb64441d0ccf0ad968bd480f
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: a7a0dcf946d4bef3a1dc7eb63fd2c22be6740682
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919273"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156859"
 ---
 # <a name="customize-cmake-build-settings"></a>CMake derleme ayarlarını özelleştirme
 
@@ -16,7 +17,7 @@ ms.locfileid: "92919273"
 
 Visual Studio 2019 ve üzeri sürümlerde, **CMake ayarları düzenleyicisini** kullanarak yapılandırma ekleyebilir ve ayarlarını özelleştirebilirsiniz. Düzenleyicinin dosyada *CMakeSettings.js* el ile düzenlenmesi için daha basit bir alternatif olması amaçlanmıştır, ancak dosyayı doğrudan düzenlemek isterseniz, düzenleyicinin sağ üst köşesindeki **JSON bağlantısını Düzenle** ' ye tıklayabilirsiniz.
 
-Düzenleyiciyi açmak için ana araç çubuğunda **yapılandırma** açılan düğmesine tıklayın ve **yapılandırmaları Yönet** ' i seçin.
+Düzenleyiciyi açmak için ana araç çubuğunda **yapılandırma** açılan düğmesine tıklayın ve **yapılandırmaları Yönet**' i seçin.
 
 ![CMake yapılandırma açılır](media/vs2019-cmake-manage-configurations.png)
 
@@ -160,7 +161,7 @@ Dosyadaki özelliklerin her biri hakkında daha fazla bilgi için bkz. [ şema b
 
 ::: moniker range="<=msvc-150"
 
-Visual Studio 2017, belirli bir proje için CMake önbelleğini oluşturmak üzere CMake.exe nasıl çağrılacağını tanımlayan birkaç CMake yapılandırması sunar. Yeni bir yapılandırma eklemek için, araç çubuğunda yapılandırma açılır listesini tıklatın ve **yapılandırmaları Yönet** ' i seçin:
+Visual Studio 2017, belirli bir proje için CMake önbelleğini oluşturmak üzere CMake.exe nasıl çağrılacağını tanımlayan birkaç CMake yapılandırması sunar. Yeni bir yapılandırma eklemek için, araç çubuğunda yapılandırma açılır listesini tıklatın ve **yapılandırmaları Yönet**' i seçin:
 
    ![CMake yönetme yapılandırması](media/cmake-manage-configurations.png)
 
@@ -170,11 +171,11 @@ Visual Studio 2017, belirli bir proje için CMake önbelleğini oluşturmak üze
 
 İlk kez bir yapılandırma seçtiğinizde, Visual Studio projenizin kök klasöründe bir *CMakeSettings.js* dosya oluşturur. Bu dosya, CMake önbellek dosyasını yeniden oluşturmak için kullanılır, örneğin bir **Temizleme** işleminden sonra.
 
-Ek bir yapılandırma eklemek için *CMakeSettings.jsüzerinde* sağ tıklayın ve **yapılandırma Ekle** ' yi seçin.
+Ek bir yapılandırma eklemek için *CMakeSettings.jsüzerinde* sağ tıklayın ve **yapılandırma Ekle**' yi seçin.
 
    ![CMake yapılandırma Ekle](media/cmake-add-configuration.png "CMake yapılandırma Ekle")
 
-Ayrıca, **CMake ayarları düzenleyicisini** kullanarak dosyayı düzenleyebilirsiniz. **Çözüm Gezgini** *üzerindeCMakeSettings.js* sağ tıklayın ve **CMake ayarlarını Düzenle** ' yi seçin. Ya da düzenleyici penceresinin en üstündeki yapılandırma açılır listesinden **yapılandırmaları Yönet** ' i seçin.
+Ayrıca, **CMake ayarları düzenleyicisini** kullanarak dosyayı düzenleyebilirsiniz. **Çözüm Gezgini** *üzerindeCMakeSettings.js* sağ tıklayın ve **CMake ayarlarını Düzenle**' yi seçin. Ya da düzenleyici penceresinin en üstündeki yapılandırma açılır listesinden **yapılandırmaları Yönet** ' i seçin.
 
 Ayrıca, özel yapılandırma oluşturmak için *CMakeSettings.js* doğrudan düzenleyebilirsiniz. Aşağıdaki örnekte, bir başlangıç noktası olarak kullanabileceğiniz örnek bir yapılandırma gösterilmektedir:
 

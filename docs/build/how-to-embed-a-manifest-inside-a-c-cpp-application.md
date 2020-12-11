@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: bir bildirimi C/C++ uygulamasına ekleme'
 title: 'Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma'
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - embedding manifests
 - makefiles, updating to embed manifest
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
-ms.openlocfilehash: 2f125ee445d4ee9efdf21c37134d4c5adbca256d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ce3bdd56b994498b223857b80989247fe9919e4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81322995"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156352"
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma
 
@@ -27,7 +28,7 @@ Bildirimi bir uygulama veya kitaplık içine gömmenin iki yolu vardır.
    mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1
    ```
 
-   or
+   veya
 
    ```cmd
    mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2
@@ -37,7 +38,7 @@ Bildirimi bir uygulama veya kitaplık içine gömmenin iki yolu vardır.
 
 - Artımlı derleme yapıyorsanız aşağıdaki adımları kullanın:
 
-  - MyApp. exe. manifest dosyasını oluşturmak için ikiliyi bağlayın.
+  - MyApp.exe. manifest dosyasını oluşturmak için ikiliyi bağlayın.
 
   - Bildirimi bir kaynak dosyasına dönüştürün.
 
@@ -47,7 +48,7 @@ Aşağıdaki örneklerde, her iki tekniği de içerecek şekilde derleme görevl
 
 ## <a name="makefiles-before"></a>Makefiles (önceki)
 
-Tek bir dosyadan oluşturulan basit bir uygulama olan MyApp. exe için nmake betiğini göz önünde bulundurun:
+Tek bir dosyadan oluşturulan basit bir uygulama olan MyApp.exe için nmake betiğini göz önünde bulundurun:
 
 ```
 # build MyApp.exe
@@ -67,9 +68,9 @@ clean :
     del MyApp.obj MyApp.exe
 ```
 
-Bu betik, Visual Studio ile değişmeden çalışıyorsa, MyApp. exe ' yi başarıyla oluşturur. Ayrıca, çalışma zamanında bağımlı derlemeleri yüklemek için işletim sistemi tarafından kullanılmak üzere MyApp. exe. manifest dış bildirim dosyasını da oluşturur.
+Bu betik, Visual Studio ile değişmeden çalışıyorsa, MyApp.exe başarıyla oluşturulur. Ayrıca, çalışma zamanında bağımlı derlemeleri yüklemek için işletim sistemi tarafından kullanılmak üzere MyApp.exe. manifest dış bildirim dosyasını da oluşturur.
 
-MyLibrary. dll için nmake betiği çok benzer şekilde görünür:
+MyLibrary.dll için nmake betiği çok benzer şekilde görünür:
 
 ```
 # build MyLibrary.dll
@@ -94,7 +95,7 @@ clean :
 
 ## <a name="makefiles-after"></a>Makefiles (sonra)
 
-Katıştırılmış bildirimlerle derlemek için özgün makefiles üzerinde dört küçük değişiklik yapmanız gerekir. MyApp. exe makefile için:
+Katıştırılmış bildirimlerle derlemek için özgün makefiles üzerinde dört küçük değişiklik yapmanız gerekir. MyApp.exe makefile için:
 
 ```
 # build MyApp.exe
@@ -124,7 +125,7 @@ clean :
 #^^^^^^^^^^^^^^^^^^^^^^^^^ Change #4. (Add full path if necessary.)
 ```
 
-MyLibrary. dll derleme görevleri dosyası için:
+MyLibrary.dll makefile için:
 
 ```
 # build MyLibrary.dll
@@ -259,4 +260,4 @@ $(_VC_MANIFEST_BASENAME).auto.manifest :
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Programları Bildirim Üretimini Anlama](understanding-manifest-generation-for-c-cpp-programs.md)
+[C/C++ programları için bildirim oluşturmayı anlama](understanding-manifest-generation-for-c-cpp-programs.md)

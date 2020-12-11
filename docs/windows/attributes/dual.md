@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Çift'
 title: Dual (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - dual attribute
 ms.assetid: 5d4a9069-d819-42cd-ba56-bbcda17157d9
-ms.openlocfilehash: 4cc974bef46a403cbdc5b290f623acb06f40722f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d1e72bd787bc73042b4f4a180ea119712021edaf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112030"
 ---
 # <a name="dual"></a>çift
 
@@ -58,7 +59,7 @@ __interface IStatic : IDispatch
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**arayüz**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|`dispinterface`|
 
@@ -68,7 +69,7 @@ Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#
 
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Kullanıma göre öznitelikler](attributes-by-usage.md)<br/>
-[özel](custom-cpp.md)<br/>
+[Özel](custom-cpp.md)<br/>
 [dispinterface](dispinterface.md)<br/>
 [object](object-cpp.md)<br/>
 [__interface](../../cpp/interface.md)

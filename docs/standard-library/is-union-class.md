@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_union sınıfı'
 title: is_union Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_union class
 - is_union
 ms.assetid: 80eda256-40b8-4db5-9ac1-d58bb8032a3e
-ms.openlocfilehash: 3b4383fd96c359661d225433dbe9e7dd8b7f939f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: be095053523a0348632d2c81c3a3a7eafe8593d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458895"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154311"
 ---
-# <a name="isunion-class"></a>is_union Sınıfı
+# <a name="is_union-class"></a>is_union Sınıfı
 
 Tür bir Union ise sınar.
 
@@ -32,7 +33,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri bir birleşim türü veya `cv-qualified` birleşim türünde bir form ise *,* türü koşulun bir örneği true, aksi takdirde false değerini taşır.
+*Tür değeri* bir birleşim türü veya birleşim türünde bir form ise, türü koşulun bir örneği true `cv-qualified` , aksi takdirde false değerini taşır.
 
 ## <a name="example"></a>Örnek
 
@@ -74,11 +75,11 @@ is_union<ints> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_class Sınıfı](../standard-library/is-class-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_class sınıfı](../standard-library/is-class-class.md)

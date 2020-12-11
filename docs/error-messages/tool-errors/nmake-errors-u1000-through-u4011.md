@@ -1,23 +1,24 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: NMAKE hataları ve uyarıları (uXXXX)'
 title: NMAKE hataları ve uyarıları
 ms.date: 04/16/2019
 f1_keywords:
 - nmake
 ms.assetid: 9dbe2e12-88ca-4df4-b935-17756112bb79
-ms.openlocfilehash: 230389215525871578cad1a1a676995588bdd5ca
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: b3e79f13832b2861be31c6229f48aa1282500a96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856979"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155156"
 ---
 # <a name="nmake-errors-and-warnings-uxxxx"></a>NMAKE hataları ve uyarıları (Uxxxx)
 
-Bu bölüm hatalara bir başvurudur ve aracı NMAKE tarafından oluşturulan uyarılar oluşturun. NMAKE hataları ve Uyarıları olan form U*xxxx*burada *xxxx* bir dört basamaklı sayıdır.
+Bu bölüm, NMAKE derleme aracı tarafından oluşturulan hatalara ve uyarılara yönelik bir başvurudur. NMAKE hatası ve uyarılar, *xxxx* 'in dört basamaklı bir sayı olduğu yerde U *xxxx* biçiminde olur.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
-## <a name="nmake-fatal-errors"></a>NMAKE önemli hataları
+## <a name="nmake-fatal-errors"></a>NÖnemli hataları oluştur
 
 [NMAKE önemli hatası U1000](nmake-fatal-error-u1000.md) \
 [NMAKE önemli hatası U1001](nmake-fatal-error-u1001.md) \
@@ -53,14 +54,14 @@ Bu bölüm hatalara bir başvurudur ve aracı NMAKE tarafından oluşturulan uya
 
 ## <a name="nmake-warnings"></a>NMAKE uyarıları
 
-[NMAKE uyarısı U4001](nmake-warning-u4001.md) \
-[NMAKE uyarısı U4004](nmake-warning-u4004.md) \
-[NMAKE uyarısı U4006](nmake-warning-u4006.md) \
-[NMAKE uyarısı U4007](nmake-warning-u4007.md) \
-[NMAKE uyarısı U4010](nmake-warning-u4010.md) \
+[NMAKE Uyarısı U4001](nmake-warning-u4001.md) \
+[NMAKE Uyarısı U4004](nmake-warning-u4004.md) \
+[NMAKE Uyarısı U4006](nmake-warning-u4006.md) \
+[NMAKE Uyarısı U4007](nmake-warning-u4007.md) \
+[NMAKE Uyarısı U4010](nmake-warning-u4010.md) \
 [NMAKE uyarısı U4011](nmake-warning-u4011.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/C++ derleyicisi ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
 [NMAKE başvurusu](../../build/reference/nmake-reference.md)

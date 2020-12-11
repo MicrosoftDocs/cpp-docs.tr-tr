@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: uygulama Sihirbazı tarafından oluşturulan sınıflar Frame-Window'
 title: Uygulama Sihirbazı Tarafından Oluşturulan Çerçeve Pencere Sınıfları
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - frame window classes [MFC], created by application wizards
 - CMainFrame class [MFC]
 ms.assetid: 9947df73-4470-49a0-ac61-7b6ee401a74e
-ms.openlocfilehash: 00254bdf49015f26ac257789a15afd1e7f5cc31f
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 38ed83d56737d0a26d9025a9940b34d3bd6d6126
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621703"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154987"
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>Uygulama Sihirbazı Tarafından Oluşturulan Çerçeve Pencere Sınıfları
 
@@ -35,5 +36,5 @@ Bu çerçeve pencere sınıfları oluşturulan olarak çalışır, ancak işlevl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çerçeve Penceresi Sınıfları](frame-window-classes.md)<br/>
+[Çerçeve pencere sınıfları](frame-window-classes.md)<br/>
 [MFC programı veya denetim kaynağı ve üstbilgi dosyaları](../build/reference/mfc-program-or-control-source-and-header-files.md)

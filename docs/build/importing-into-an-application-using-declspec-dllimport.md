@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __declspec (dllimport) kullanarak bir uygulamaya aktarma'
 title: __declspec(dllimport) kullanarak bir uygulamaya aktarma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
-ms.openlocfilehash: 50b630334cfd8752935b54549190d698fa5136bb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 946ec6b4b06b22dd7dd68be2478a0b0571aa641c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156183"
 ---
 # <a name="import-into-an-application-using-__declspecdllimport"></a>__declspec(dllimport) kullanarak bir uygulamaya aktarma
 
@@ -27,7 +28,7 @@ DllImport void func();
 
 **`__declspec(dllimport)`** İşlevi, işlev bildirimlerinde isteğe bağlıdır, ancak bu anahtar sözcüğü kullanırsanız derleyici daha verimli kod üretir. Ancak, **`__declspec(dllimport)`** DLL 'nin ortak veri sembollerine ve nesnelerine erişmek için içeri aktarma yürütülebilir dosyası için kullanmanız gerekir. DLL 'nizin kullanıcılarının hala bir içeri aktarma kitaplığıyla bağlanması gerektiğini unutmayın.
 
-Aynı üstbilgi dosyasını hem DLL hem de istemci uygulaması için kullanabilirsiniz. Bunu yapmak için, DLL oluşturmayı veya istemci uygulamasını oluşturmayı belirten özel bir ön işlemci sembolünü kullanın. Örnek:
+Aynı üstbilgi dosyasını hem DLL hem de istemci uygulaması için kullanabilirsiniz. Bunu yapmak için, DLL oluşturmayı veya istemci uygulamasını oluşturmayı belirten özel bir ön işlemci sembolünü kullanın. Örneğin:
 
 ```
 #ifdef _EXPORTING

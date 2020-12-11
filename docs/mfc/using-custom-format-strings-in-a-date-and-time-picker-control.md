@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Tarih ve saat seçici denetiminde özel biçim dizeleri kullanma'
 title: Tarih ve Saat Seçici Denetiminde Özel Biçim Dizeleri Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,30 +7,30 @@ helpviewer_keywords:
 - DateTimePicker control [MFC], display styles
 - DateTimePicker control [MFC]
 ms.assetid: 7d577f03-6ca0-4597-9093-50b78f304719
-ms.openlocfilehash: 8da5ecaf473d6d3c35ddc1b95ac856ce8c12f163
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91add199ffd852a107588617d47a2fd51136596d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154558"
 ---
 # <a name="using-custom-format-strings-in-a-date-and-time-picker-control"></a>Tarih ve Saat Seçici Denetiminde Özel Biçim Dizeleri Kullanma
 
-Varsayılan olarak, geçerli tarih ve saati görüntülemek için üç türleri (benzersiz stiline karşılık gelen her biçim) biçimlendirmek tarih ve Saat Seçici denetimleri sağlayın:
+Varsayılan olarak, tarih ve saat seçici denetimleri, geçerli tarih veya saati görüntülemek için üç biçim türü (benzersiz bir stile karşılık gelen her biçim) sağlar:
 
-- **DTS_LONGDATEFORMAT** uzun biçimde, "Çarşamba, 3 Şubat 2000" gibi bir çıktı üretir tarihi görüntüler.
+- **dts_longdateformat** Tarihi uzun biçimde görüntüler, "Çarşamba, Ocak 3, 2000" gibi bir çıktı üretir.
 
-- **DTS_SHORTDATEFORMAT** "1/3/00" gibi bir çıktı üretir kısa biçimindeki tarihi görüntüler.
+- **dts_shortdateformat** Tarihi, "1/3/00" gibi bir çıktı üreten kısa biçimde görüntüler.
 
-- **DTS_TIMEFORMAT** "-17:31:42" gibi bir çıktı üretir uzun biçimde süreyi görüntüler.
+- **DTS_TIMEFORMAT** "5:31:42 PM" gibi çıktıyı üreten süreyi uzun biçimde görüntüler.
 
-Ancak, bir özel biçim dizesi kullanarak tarih ve saati görünümünü özelleştirebilirsiniz. Bu özel bir dize, var olan biçim karakterleri, nonformat karakter veya her ikisinin bir birleşimi yapılır. Özel bir dize oluşturulduktan sonra bir çağrı yapmak [CDateTimeCtrl::SetFormat](../mfc/reference/cdatetimectrl-class.md#setformat) geçirme, özel bir dize. Tarih ve Saat Seçici denetimini daha sonra özel biçim dizesi kullanarak geçerli değeri görüntüler.
+Ancak, bir özel biçim dizesi kullanarak tarih veya saatin görünümünü özelleştirebilirsiniz. Bu özel dize, varolan biçim karakterlerinden, biçim olmayan karakterlerden veya her ikisinin birleşimini oluşur. Özel dize derlendikten sonra, özel dizeniz içinde [CDateTimeCtrl:: SetFormat](../mfc/reference/cdatetimectrl-class.md#setformat) geçişine yönelik bir çağrı yapın. Tarih ve saat seçici denetimi, geçerli değeri özel biçim dizenizi kullanarak görüntüler.
 
-Aşağıdaki kod örneği (burada *m_dtPicker* olduğu `CDateTimeCtrl` nesnesi) bir olası çözümü göstermektedir:
+Aşağıdaki örnek kod ( *m_dtPicker* `CDateTimeCtrl` nesne) olası bir çözümü gösterir:
 
 [!code-cpp[NVC_MFCControlLadenDialog#7](../mfc/codesnippet/cpp/using-custom-format-strings-in-a-date-and-time-picker-control_1.cpp)]
 
-Özel biçim dizelerine ek olarak, tarih ve Saat Seçici desteği de denetimleri [geri çağrı alanlarını](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md).
+Özel biçim dizelerine ek olarak tarih ve saat seçici denetimleri de [geri arama alanlarını](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md)destekler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

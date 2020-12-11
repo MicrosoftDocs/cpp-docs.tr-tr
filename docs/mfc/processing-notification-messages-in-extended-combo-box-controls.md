@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Genişletilmiş Birleşik giriş kutusu denetimlerinde bildirim Iletilerini Işleme'
 title: Genişletilmiş Birleşik Giriş Kutusu Denetimlerinde Bildirim İletilerini İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - extended combo boxes [MFC], notifications
 - notifications [MFC], extended combo box controls
 ms.assetid: 4e442758-d054-4746-bb1a-6ff84accb127
-ms.openlocfilehash: 58a7c5ec36807489d24014055c39775b4552be03
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ef004c3649ce78b24aa1c77aa90488ae6391dcca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620993"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154818"
 ---
 # <a name="processing-notification-messages-in-extended-combo-box-controls"></a>Genişletilmiş Birleşik Giriş Kutusu Denetimlerinde Bildirim İletilerini İşleme
 

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: ARM özel durum Işleme'
 title: ARM özel durum Işleme
 ms.date: 07/11/2018
 ms.assetid: fe0e615f-c033-4ad5-97f4-ff96af45b201
-ms.openlocfilehash: 4bdf0c88f0c2fe445f3a8865353ca1259ba586fa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d37d0ad65f436d1ff67677032f378a30b44e32a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81323218"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157132"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum Işleme
 
@@ -88,13 +89,13 @@ Yukarıdaki kodlamalarda olası artıklıkları nedeniyle bu kısıtlamalar geç
 
   - Çerçeve zinciri hem R11 hem de LR gerektirdiğinden *L* bayrağı da 1 olarak ayarlanmalıdır.
 
-  - R11, *reg*tarafından tanımlanan kayıt kümesine dahil edilmemelidir. Diğer bir deyişle, R4-R11 itilmesi durumunda *reg* yalnızca r4-r10 ' i tanımlıyor çünkü *C* bayrağı R11 ' ı gösterir.
+  - R11, *reg* tarafından tanımlanan kayıt kümesine dahil edilmemelidir. Diğer bir deyişle, R4-R11 itilmesi durumunda *reg* yalnızca r4-r10 ' i tanımlıyor çünkü *C* bayrağı R11 ' ı gösterir.
 
 - *Ret* alanı 0 olarak ayarlandıysa, *L* bayrağının 1 olarak ayarlanması gerekir.
 
 Bu kısıtlamaları ihlal etmek desteklenmeyen bir diziye neden olur.
 
-Aşağıdaki tartışmanın amaçları doğrultusunda, *yığın ayarlamalarından*iki sözde bayrak türetilir:
+Aşağıdaki tartışmanın amaçları doğrultusunda, *yığın ayarlamalarından* iki sözde bayrak türetilir:
 
 - *PF* veya "prolog katlaması", *yığın Ayarlanmesinin* 0x3F4 veya daha büyük olduğunu ve bit 2 ' nin ayarlandığını gösterir.
 
@@ -113,30 +114,30 @@ Kurallı işlevler için prologues, en fazla 5 yönerge içerebilir (3A ve 3B bi
 
 Yönerge 1, *H* bit 1 olarak ayarlandıysa her zaman vardır.
 
-Çerçeve zincirlemesini ayarlamak için, *C* bit ayarlandıysa yönerge 3A veya 3B vardır. R11 ve LR dışındaki hiçbir kayıt `mov` yoksa, 16 bit olur; Aksi takdirde, 32 bittir `add`.
+Çerçeve zincirlemesini ayarlamak için, *C* bit ayarlandıysa yönerge 3A veya 3B vardır. `mov`R11 ve LR dışında bir kayıt yoksa, 16 bittir; Aksi takdirde, 32 bittir `add` .
 
 Katsız bir ayarlama belirtilirse, yönerge 5 açık yığın ayarlamadır.
 
-Yönergeler 2 ve 4, bir gönderme gerekli olup olmadığına göre ayarlanır. Bu tablo, *C*, *L*, *R*ve *PF* alanlarına göre hangi yazmaçların kaydedileceğini özetler. Her durumda, *N* , *reg* + 4 ' e eşittir, *E* de *reg* + 8 ' e eşittir ve *S* şuna eşittir (~*Stack ayarlaması*) & 3.
+Yönergeler 2 ve 4, bir gönderme gerekli olup olmadığına göre ayarlanır. Bu tablo, *C*, *L*, *R* ve *PF* alanlarına göre hangi yazmaçların kaydedileceğini özetler. Her durumda, *N* , *reg* + 4 ' e eşittir, *E* de *reg* + 8 ' e eşittir ve *S* şuna eşittir (~*Stack ayarlaması*) & 3.
 
 |C|L|R|PF|Gönderilen tamsayı Yazmaçları|VFP kayıtları gönderildi|
 |-------|-------|-------|--------|------------------------------|--------------------------|
-|0|0|0|0|R4-r*N*|yok|
-|0|0|0|1|r*S*-r*N*|yok|
-|0|0|1|0|yok|D8-d*E*|
-|0|0|1|1|r*S*-R3|D8-d*E*|
-|0|1|0|0|R4-r*N*, LR|yok|
-|0|1|0|1|r*S*-r*N*, LR|yok|
-|0|1|1|0|LR|D8-d*E*|
-|0|1|1|1|r*S*-R3, LR|D8-d*E*|
-|1|0|0|0|R4-r*N*, R11|yok|
-|1|0|0|1|r*S*-r*N*, R11|yok|
-|1|0|1|0|r11|D8-d*E*|
-|1|0|1|1|r*S*-R3, R11|D8-d*E*|
-|1|1|0|0|R4-r*N*, R11, LR|yok|
-|1|1|0|1|r*S*-r*N*, R11, LR|yok|
-|1|1|1|0|R11, LR|D8-d*E*|
-|1|1|1|1|r*S*-R3, R11, LR|D8-d*E*|
+|0|0|0|0|R4-r *N*|yok|
+|0|0|0|1|r *S*-r *N*|yok|
+|0|0|1|0|yok|D8-d *E*|
+|0|0|1|1|r *S*-R3|D8-d *E*|
+|0|1|0|0|R4-r *N*, LR|yok|
+|0|1|0|1|r *S*-r *N*, LR|yok|
+|0|1|1|0|LR|D8-d *E*|
+|0|1|1|1|r *S*-R3, LR|D8-d *E*|
+|1|0|0|0|R4-r *N*, R11|yok|
+|1|0|0|1|r *S*-r *N*, R11|yok|
+|1|0|1|0|r11|D8-d *E*|
+|1|0|1|1|r *S*-R3, R11|D8-d *E*|
+|1|1|0|0|R4-r *N*, R11, LR|yok|
+|1|1|0|1|r *S*-r *N*, R11, LR|yok|
+|1|1|1|0|R11, LR|D8-d *E*|
+|1|1|1|1|r *S*-R3, R11, LR|D8-d *E*|
 
 Kurallı işlevler için epıtes benzer bir biçimde, ancak ters ve bazı ek seçeneklerle birlikte izler. Epıg en fazla 5 yönerge uzunluğunda olabilir ve kendi formu, her zaman bir başlangıç biçimi tarafından tamamen dikte edilir.
 
@@ -156,7 +157,7 @@ Yönerge 6, katsız bir düzeltme belirtilmişse açık yığın ayarlamadır. *
 
 *H* ayarlandıysa, her iki yönerge 9A veya 9B vardır. Of yönergesi, *l* 0 olduğunda, LR 'in yığında olmadığını belirtmek için kullanılır. Bu durumda, yığın el ile ayarlanır ve açık bir dönüş belirtmek için *ret* 1 veya 2 olmalıdır. Yönerge 9B, *L* 1 olduğunda, ön tarihte erken bir başlangıç olduğunu göstermek ve yığını aynı anda döndürmek ve ayarlamak için kullanılır.
 
-Epıg zaten bitdiyse, bir 16 bit veya 32 bitlik dalı, *ret*değerine göre göstermek için, her iki yönerge 10A veya 10B vardır.
+Epıg zaten bitdiyse, bir 16 bit veya 32 bitlik dalı, *ret* değerine göre göstermek için, her iki yönerge 10A veya 10B vardır.
 
 ### <a name="xdata-records"></a>. xdata kayıtları
 
@@ -175,7 +176,7 @@ Paketlenmiş bırakma biçimi, bir işlevin geri sarılini anlatmak için yeters
    |0|28-31|*Kod sözcükleri* , Bölüm 4 ' teki tüm bırakma kodlarını içermesi için gereken 32 bitlik sözcüklerin sayısını belirten 4 bitlik bir alandır. 63 ' den fazla bırakma kodu baytı için 15 ' ten fazla sözcük gerekliyse, bir uzantı sözcüğünün gerekli olduğunu göstermek için bu alanın ve *Epıg Count* alanının her ikisi de 0 olarak ayarlanmalıdır.|
    |1|0-15|*Genişletilmiş* ön ek sayısı, alışılmadık çok sayıda epıte daha fazla alan sağlayan 16 bitlik bir alandır. Bu alanı içeren uzantı sözcüğü yalnızca ilk üstbilgi kelimesinin *Epıg Count* ve *Code Words* alanlarının her ikisi de 0 olarak ayarlandığında bulunur.|
    |1|16-23|*Genişletilmiş kod sözcükleri* , alışılmadık çok sayıda bırakma kodu sözcüklerini kodlamak için daha fazla alan sağlayan 8 bitlik bir alandır. Bu alanı içeren uzantı sözcüğü yalnızca ilk üstbilgi kelimesinin *Epıg Count* ve *Code Words* alanlarının her ikisi de 0 olarak ayarlandığında bulunur.|
-   |1|24-31|Ayrıldı|
+   |1|24-31|Ayrılmıştır|
 
 1. Özel durum verileri (üstbilgideki *E* biti 0 olarak ayarlandıysa), bir sözcüğe paketlenmiş ve başlangıç sapmasını artırma sırasına göre depolanan epıg kapsamları hakkında bilgi listesidir. Her kapsam şu alanları içerir:
 
@@ -263,11 +264,11 @@ Aşağıdaki tabloda, bırakma kodlarından opkodlara eşleme gösterilmektedir.
 |KARAKTERLER||||32|son + 32 bitlik NOP, epıg|
 |BENZERI||||-|end|
 
-Bu, bir geriye doğru izleme kodu *kodundaki*her bir bayt için onaltılık değerlerin aralığını, *Opsize* ve karşılık gelen orijinal yönerge yorumunu gösterir. Boş hücreler daha kısa bırakma kodlarını gösterir. Birden çok bayt kapsayan büyük değerlere sahip yönergelerde, en önemli bitler önce depolanır. *Opsize* alanı her Thumb-2 işlemiyle ilişkili örtük Opcode boyutunu gösterir. Farklı kodlarla tablodaki görünen yinelenen girişler, farklı Opcode boyutlarını ayırt etmek için kullanılır.
+Bu, bir geriye doğru izleme kodu *kodundaki* her bir bayt için onaltılık değerlerin aralığını, *Opsize* ve karşılık gelen orijinal yönerge yorumunu gösterir. Boş hücreler daha kısa bırakma kodlarını gösterir. Birden çok bayt kapsayan büyük değerlere sahip yönergelerde, en önemli bitler önce depolanır. *Opsize* alanı her Thumb-2 işlemiyle ilişkili örtük Opcode boyutunu gösterir. Farklı kodlarla tablodaki görünen yinelenen girişler, farklı Opcode boyutlarını ayırt etmek için kullanılır.
 
 Geriye doğru izleme kodları, kodun ilk baytlık her ikisi de kodun baytındaki toplam boyutu ve yönerge akışındaki karşılık gelen Opcode boyutunu söylerken tasarlanmıştır. İşlem veya başlangıç boyutunu hesaplamak için, sıranın başından sonuna kadar geriye doğru izleme kodları yapın ve ilgili Opcode 'ın ne kadar süreyle olduğunu anlamak için bir arama tablosu veya benzer bir yöntem kullanın.
 
-Geriye doğru izleme kodları 0xFD ve 0xFE, normal bitiş kodu 0xFF ile eşdeğerdir, ancak epıg durumunda 16 bit ya da 32 bit olan bir ek NOP işlem kodunun hesabıdır. Prologues için, 0xFD, 0xFE ve 0xFF kodları tam olarak eşdeğerdir. Bu hesap, yaygın olarak kullanılan ve eşdeğer bir `bx lr` prolog yönergesi olmayan bir veya `b <tailcall-target>`daha fazla. Bu, geri bırakma sıralarının, prolog ve epengues arasında paylaşılabilmesi olasılığını artırır.
+Geriye doğru izleme kodları 0xFD ve 0xFE, normal bitiş kodu 0xFF ile eşdeğerdir, ancak epıg durumunda 16 bit ya da 32 bit olan bir ek NOP işlem kodunun hesabıdır. Prologues için, 0xFD, 0xFE ve 0xFF kodları tam olarak eşdeğerdir. Bu hesap, yaygın olarak kullanılan ve `bx lr` `b <tailcall-target>` eşdeğer bir prolog yönergesi olmayan bir veya daha fazla. Bu, geri bırakma sıralarının, prolog ve epengues arasında paylaşılabilmesi olasılığını artırır.
 
 Çoğu durumda, prolog ve tüm epenler için aynı bırakma kodları kümesini kullanmak mümkün olmalıdır. Ancak, kısmen yürütülen prologues ve epıtes 'nin geriye doğru listesini işlemek için, sıralama veya davranışta değişen birden fazla bırakma kodu sırası olması gerekebilir. Bu nedenle, her bir epıg 'nin yürütme işlemini nereden başlayabileceğiniz göstermek için geriye doğru bırakma dizisine sahip olduğu.
 
@@ -360,7 +361,7 @@ ShrinkWrappedFunction
     pop    {r4, pc}          ; C:
 ```
 
-Daraltma Sarmalanan işlevler genellikle, ek kayıt için alanın önceden ayrılması, normal bir `str` `stm` `push`prolog 'da kaydedilir ve ardından kayıt işlemini veya yerine kullanarak kaydeder. Bu, işlevin özgün prolog öğesinde tüm yığın işaretçisi işlemesini korur.
+Daraltma Sarmalanan işlevler genellikle, ek kayıt için alanın önceden ayrılması, normal bir prolog 'da kaydedilir ve ardından kayıt işlemini `str` veya yerine kullanarak kaydeder `stm` `push` . Bu, işlevin özgün prolog öğesinde tüm yığın işaretçisi işlemesini korur.
 
 Örnek küçültme Sarmalanan işlev, açıklamalarda bir, B ve C olarak işaretlenen üç bölgeye bölünmemelidir. İlk A bölgesi, diğer geçici olmayan kaydetme işlemi boyunca işlevin başlangıcını ele alır. Bir. pdata veya. xdata kaydı, bu parçayı, bir prolog ve epıtes yok olarak anlatmak için oluşturulmalıdır.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel durum Işleme (C++/CLı ve C++/CX)'
 title: Özel Durum İşleme (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - exception handling, types of
 - System::Exception class in managed applications
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
-ms.openlocfilehash: 23d65bb8056672d12e3d40f9fcab1e58bab65a3d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 73299cf8b562c3572452e6efd1e8d2fa65aff84c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219709"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155065"
 ---
 # <a name="exception-handling--ccli-and-ccx"></a>Özel Durum İşleme (C++/CLI ve C++/CX)
 

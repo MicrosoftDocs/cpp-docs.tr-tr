@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: dosyaları açma'
 title: Dosyaları Açma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - opening files [MFC]
 - exception handling [MFC], opening files
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
-ms.openlocfilehash: 73407eba802b7640e880b821144954fa6442f177
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cad847dc74cd32f93cc8a4a13e4bbe1bd815d815
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112888"
 ---
 # <a name="opening-files"></a>Dosyaları Açma
 

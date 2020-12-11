@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt defteri komut dosyası örnekleri'
 title: Kayıt defteri komut dosyası örnekleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - scripts, Registrar scripts
 - registry, Registrar
 ms.assetid: b6df80e1-e08b-40ee-9243-9b381b172460
-ms.openlocfilehash: 0e225ce28309aa619fd9436d8f4b93e60544e86c
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 716aa69ed95c784079e72f9b785fedd8c07b0563
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157548"
 ---
 # <a name="registry-scripting-examples"></a>Kayıt defteri komut dosyası örnekleri
 
@@ -20,7 +21,7 @@ Bu konudaki komut dosyası örnekleri, sistem kayıt defterine nasıl anahtar ek
 
 ## <a name="add-a-key-to-hkey_current_user"></a>HKEY_CURRENT_USER bir anahtar ekleyin
 
-Aşağıdaki ayrıştırma ağacı, sistem kayıt defterine tek bir anahtar ekleyen basit bir komut dosyası gösterir. Özellikle, komut dosyası, `MyVeryOwnKey`' a anahtarını öğesine `HKEY_CURRENT_USER`ekler. Ayrıca, öğesinin `HowGoesIt` varsayılan dize değerini yeni anahtara atar:
+Aşağıdaki ayrıştırma ağacı, sistem kayıt defterine tek bir anahtar ekleyen basit bir komut dosyası gösterir. Özellikle, komut dosyası, ' a anahtarını `MyVeryOwnKey` öğesine ekler `HKEY_CURRENT_USER` . Ayrıca, öğesinin varsayılan dize değerini `HowGoesIt` Yeni anahtara atar:
 
 ```rgs
 HKEY_CURRENT_USER
@@ -45,9 +46,9 @@ HKCU
 }
 ```
 
-Şimdi, komut dosyası öğesine `HasASubkey` `MyVeryOwnKey`bir alt anahtar ekler. Bu alt anahtarda, `PrettyCool` hem alt anahtarı (varsayılan `DWORD` değer 55 ile) hem de `ANameValue` adlandırılmış değeri (dize değeri ile `WithANamedValue`) ekler.
+Şimdi, komut dosyası öğesine bir alt anahtar ekler `HasASubkey` `MyVeryOwnKey` . Bu alt anahtarda, hem `PrettyCool` alt anahtarı (varsayılan `DWORD` değer 55 ile) hem de `ANameValue` adlandırılmış değeri (dize değeri ile `WithANamedValue` ) ekler.
 
-## <a name="register-the-registrar-com-server"></a><a name="_atl_register_the_registrar_com_server"></a>Kaydedici COM sunucusunu kaydetme
+## <a name="register-the-registrar-com-server"></a><a name="_atl_register_the_registrar_com_server"></a> Kaydedici COM sunucusunu kaydetme
 
 Aşağıdaki betik, kaydedici COM sunucusunun kendisini kaydeder.
 
@@ -72,29 +73,29 @@ HKCR
 }
 ```
 
-Çalışma zamanında, bu ayrıştırma ağacı `ATL.Registrar` anahtarını öğesine `HKEY_CLASSES_ROOT`ekler. Bu yeni anahtara daha sonra:
+Çalışma zamanında, bu ayrıştırma ağacı `ATL.Registrar` anahtarını öğesine ekler `HKEY_CLASSES_ROOT` . Bu yeni anahtara daha sonra:
 
-- Anahtarın `ATL Registrar Class` varsayılan dize değerini belirtir.
+- `ATL Registrar Class`Anahtarın varsayılan dize değerini belirtir.
 
-- Alt `CLSID` anahtar olarak ekler.
+- `CLSID`Alt anahtar olarak ekler.
 
-- İçin `{44EC053A-400F-11D0-9DCD-00A0C90391D3}` `CLSID`belirtir. (Bu değer, ile `CoCreateInstance`kullanmak için kayıt sahibinin CLSID değeridir.)
+- `{44EC053A-400F-11D0-9DCD-00A0C90391D3}`İçin belirtir `CLSID` . (Bu değer, ile kullanmak için kayıt sahibinin CLSID değeridir `CoCreateInstance` .)
 
-`CLSID` Paylaşıldığından, kayıt silme modunda kaldırılmamalıdır. , `NoRemove CLSID`, Bu, kayıt modunda açılması `CLSID` gerektiğini ve kayıt silme modunda yoksayılmayı belirterek bunu yapar.
+`CLSID`Paylaşıldığından, kayıt silme modunda kaldırılmamalıdır. , `NoRemove CLSID` , Bu, `CLSID` kayıt modunda açılması gerektiğini ve kayıt silme modunda yoksayılmayı belirterek bunu yapar.
 
-`ForceRemove` İfade, anahtarı yeniden oluşturmadan önce bir anahtarı ve tüm alt anahtarlarını kaldırarak bir temizlik işlevi sağlar. Bu, alt anahtarların adları değiştiyse yararlı olabilir. Bu komut dosyası örneğinde, `ForceRemove` zaten mevcut olup `{44EC053A-400F-11D0-9DCD-00A0C90391D3}` olmadığını denetler. Varsa `ForceRemove`:
+`ForceRemove`İfade, anahtarı yeniden oluşturmadan önce bir anahtarı ve tüm alt anahtarlarını kaldırarak bir temizlik işlevi sağlar. Bu, alt anahtarların adları değiştiyse yararlı olabilir. Bu komut dosyası örneğinde, `ForceRemove` zaten mevcut olup olmadığını denetler `{44EC053A-400F-11D0-9DCD-00A0C90391D3}` . Varsa `ForceRemove` :
 
-- Tüm alt `{44EC053A-400F-11D0-9DCD-00A0C90391D3}` anahtarlarını yinelemeli olarak siler.
+- `{44EC053A-400F-11D0-9DCD-00A0C90391D3}`Tüm alt anahtarlarını yinelemeli olarak siler.
 
-- Yeniden oluşturur `{44EC053A-400F-11D0-9DCD-00A0C90391D3}`.
+- Yeniden oluşturur `{44EC053A-400F-11D0-9DCD-00A0C90391D3}` .
 
-- İçin `ATL Registrar Class` `{44EC053A-400F-11D0-9DCD-00A0C90391D3}`varsayılan dize değeri olarak ekler.
+- `ATL Registrar Class`İçin varsayılan dize değeri olarak ekler `{44EC053A-400F-11D0-9DCD-00A0C90391D3}` .
 
-Ayrıştırma ağacı artık ' ye `{44EC053A-400F-11D0-9DCD-00A0C90391D3}`iki yeni alt anahtar ekliyor. İlk anahtar `ProgID`, ProgID olan varsayılan bir dize değerini alır. İkinci anahtar `InprocServer32`, bu makalenin `%MODULE%` [değiştirilebilen parametre (kaydedici 'nin ön işlemcisi) kullanılarak](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)bölümünde açıklanan bir Önişlemci değeri olan varsayılan bir dize değerini alır. `InprocServer32`Ayrıca `ThreadingModel`, dize değeri olan adlandırılmış bir değer alır `Apartment`.
+Ayrıştırma ağacı artık ' ye iki yeni alt anahtar ekliyor `{44EC053A-400F-11D0-9DCD-00A0C90391D3}` . İlk anahtar, `ProgID` ProgID olan varsayılan bir dize değerini alır. İkinci anahtar, `InprocServer32` `%MODULE%` Bu makalenin [değiştirilebilen parametre (kaydedici 'nin ön işlemcisi) kullanılarak](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)bölümünde açıklanan bir Önişlemci değeri olan varsayılan bir dize değerini alır. `InprocServer32` Ayrıca `ThreadingModel` , dize değeri olan adlandırılmış bir değer alır `Apartment` .
 
 ## <a name="specify-multiple-parse-trees"></a>Birden fazla ayrıştırma ağacı belirtme
 
-Bir betikte birden fazla ayrıştırma ağacı belirtmek için, diğerinin sonuna bir ağaç yerleştirebilirsiniz. Örneğin, aşağıdaki betik anahtarını `MyVeryOwnKey`ve `HKEY_CLASSES_ROOT` `HKEY_CURRENT_USER`için ayrıştırma ağaçlarına her ikisi için de ekler:
+Bir betikte birden fazla ayrıştırma ağacı belirtmek için, diğerinin sonuna bir ağaç yerleştirebilirsiniz. Örneğin, aşağıdaki betik anahtarını `MyVeryOwnKey` ve için ayrıştırma ağaçlarına her ikisi için de ekler `HKEY_CLASSES_ROOT` `HKEY_CURRENT_USER` :
 
 ```rgs
 HKCR
@@ -108,7 +109,7 @@ HKEY_CURRENT_USER
 ```
 
 > [!NOTE]
-> Bir kaydedici betiğinde, 4K en büyük belirteç boyutudur. (Belirteç söz diziminde tanınabilir bir öğedir.) Önceki `HKCR`komut dosyası örneğinde `HKEY_CURRENT_USER` `'MyVeryOwnKey'`,,, ve `'HowGoesIt'` tüm belirteçlerdir.
+> Bir kaydedici betiğinde, 4K en büyük belirteç boyutudur. (Belirteç söz diziminde tanınabilir bir öğedir.) Önceki komut dosyası örneğinde,, `HKCR` , `HKEY_CURRENT_USER` `'MyVeryOwnKey'` ve `'HowGoesIt'` Tüm belirteçlerdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

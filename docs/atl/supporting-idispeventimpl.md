@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: IDispEventImpl 'yi destekleme"
 title: IDispEventImpl desteği
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,53 +11,53 @@ helpviewer_keywords:
 - BEGIN_SINK_MAP macro
 - IDispEventImpl class, declaring
 ms.assetid: b957f930-6a5b-4598-8e4d-8027759957e7
-ms.openlocfilehash: 31beff30a067416f71029c18051f214c8d4429de
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6a5c12e011ad0dc0f27594325a22dadddd5b92c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157379"
 ---
 # <a name="supporting-idispeventimpl"></a>IDispEventImpl desteği
 
-Şablon sınıfı [IDispEventImpl,](../atl/reference/idispeventimpl-class.md) ATL sınıfınızdaki bağlantı noktası lavaboları için destek sağlamak için kullanılabilir. Bağlantı noktası lavabosu, sınıfınızın dış COM nesnelerinden ateşlenen olayları işlemesini sağlar. Bu bağlantı noktası lavaboları, sınıfınız tarafından sağlanan bir olay lavabo haritasıyla eşlenir.
+[IDispEventImpl](../atl/reference/idispeventimpl-class.md) şablon sınıfı, ATL sınıfınıza bağlantı noktası havuzları için destek sağlamak üzere kullanılabilir. Bir bağlantı noktası havuzu, sınıfınızın dış COM nesnelerinden tetiklenen olayları işlemesini sağlar. Bu bağlantı noktası havuzları, sınıfınızın sağlandığı bir olay havuzu eşlemesi ile eşleştirilir.
 
-Sınıfınız için bir bağlantı noktası lavabosu düzgün uygulamak için aşağıdaki adımların tamamlanması gerekir:
+Sınıfınız için bir bağlantı noktası havuzunu doğru şekilde uygulamak için aşağıdaki adımların tamamlanması gerekir:
 
-- Her dış nesne için tür kitaplıklarını alma
+- Her dış nesne için tür kitaplıklarını içeri aktar
 
-- Arabirimleri `IDispEventImpl` bildirin
+- Arabirimleri bildirme `IDispEventImpl`
 
-- Olay lavabo haritasını bildirme
+- Olay havuzu eşlemesi bildirme
 
-- Bağlantı noktalarını tavsiye edin ve bildirmeyin
+- Bağlantı noktalarını önerme ve önerme
 
-Bağlantı noktası lavabosunu uygulamayla ilgili adımların tümü, sınıfınızın yalnızca üstbilgi dosyasını (.h) değiştirerek gerçekleştirilir.
+Bir bağlantı noktası havuzunu uygulamayla ilgili adımlar yalnızca sınıfınızın başlık dosyası (. h) değiştirilerek gerçekleştirilir.
 
-## <a name="importing-the-type-libraries"></a>Tür Kitaplıklarını Alma
+## <a name="importing-the-type-libraries"></a>Tür kitaplıklarını içeri aktarma
 
-Olayları işlemek istediğiniz her dış nesne için tür kitaplığını almanız gerekir. Bu adım, işlenebilir olayları tanımlar ve olay lavabo eşlemi bildirirken kullanılan bilgileri sağlar. bunu gerçekleştirmek için [#import](../preprocessor/hash-import-directive-cpp.md) yönergesi kullanılabilir. Destekleyeceğiniz `#import` her gönderiaramı için gerekli yönerge satırlarını sınıfınızın üstbilgi dosyasına (.h) ekleyin.
+Olaylarını işlemek istediğiniz her dış nesne için tür kitaplığını içeri aktarmanız gerekir. Bu adım, işlenebilen olayları tanımlar ve olay havuzu eşlemesini bildirirken kullanılan bilgileri sağlar. [#İmport](../preprocessor/hash-import-directive-cpp.md) yönergesi bunu gerçekleştirmek için kullanılabilir. `#import`Sınıfınızın başlık dosyasına (. h) destekleyeceği her bir dağıtım arabirimi için gerekli yönerge satırlarını ekleyin.
 
-Aşağıdaki örnek, harici bir COM sunucusunun`MSCAL.Calendar.7`tür kitaplığını içeri aktarma ( ):
+Aşağıdaki örnek, bir dış COM sunucusunun () tür kitaplığını içeri aktarır `MSCAL.Calendar.7` :
 
 [!code-cpp[NVC_ATL_Windowing#141](../atl/codesnippet/cpp/supporting-idispeventimpl_1.h)]
 
 > [!NOTE]
-> Destekleyeceğiniz her `#import` dış tür kitaplığı için ayrı bir deyiminolması gerekir.
+> `#import`Destekleyeceği her bir dış tür kitaplığı için ayrı bir deyiminiz olmalıdır.
 
-## <a name="declaring-the-idispeventimpl-interfaces"></a>IDispEventImpl Arayüzlerini Bildirme
+## <a name="declaring-the-idispeventimpl-interfaces"></a>IDispEventImpl arabirimlerini bildirme
 
-Artık her gönderi arabiriminin tür kitaplıklarını içe `IDispEventImpl` aktardığınıza göre, her dış gönderme arabirimi için ayrı arabirimler bildirmeniz gerekir. Her dış nesne için bir `IDispEventImpl` arabirim bildirimi ekleyerek sınıfınızın bildirimini değiştirin. Parametreler hakkında daha fazla bilgi için [bkz.](../atl/reference/idispeventimpl-class.md)
+Her dağıtım arabiriminin tür kitaplıklarını içeri aktardığınıza göre, `IDispEventImpl` her harici dağıtım arabirimi için ayrı arabirimler bildirmeniz gerekir. `IDispEventImpl`Her dış nesne için bir arabirim bildirimi ekleyerek sınıfınızın bildirimini değiştirin. Parametreler hakkında daha fazla bilgi için, bkz. [IDispEventImpl](../atl/reference/idispeventimpl-class.md).
 
-Aşağıdaki kod, sınıf `DCalendarEvents` `CMyCompositCtrl2`tarafından uygulanan COM nesnesi için arabirim için iki bağlantı noktası batması bildirir:
+Aşağıdaki kod, `DCalendarEvents` sınıfına göre uygulanan com nesnesi için arabirimi için iki bağlantı noktası havuzları bildirir `CMyCompositCtrl2` :
 
 [!code-cpp[NVC_ATL_Windowing#142](../atl/codesnippet/cpp/supporting-idispeventimpl_2.h)]
 
-## <a name="declaring-an-event-sink-map"></a>Olay Lavabo HaritasıNı Bildirme
+## <a name="declaring-an-event-sink-map"></a>Olay havuzu haritasını bildirme
 
-Olay bildirimlerinin uygun işlev tarafından işleyebilmesi için, sınıfınızın her olayı doğru işleyicisine yönlendirmesi gerekir. Bu bir olay lavabo haritası ilan ederek elde edilir.
+Olay bildirimlerinin uygun işlev tarafından işlenebilmesi için, sınıfınızın her bir olayı doğru işleyiciye yönlendirmelidir. Bu, bir olay havuzu eşlemesi bildirerek elde edilir.
 
-ATL, bu eşlemi kolaylaştıran çeşitli makrolar, [BEGIN_SINK_MAP,](reference/composite-control-macros.md#begin_sink_map) [END_SINK_MAP](reference/composite-control-macros.md#end_sink_map)ve [SINK_ENTRY_EX](reference/composite-control-macros.md#sink_entry_ex)sağlar. Standart biçimi aşağıdaki gibidir:
+ATL, bu eşlemeyi daha kolay hale getirmek için [BEGIN_SINK_MAP](reference/composite-control-macros.md#begin_sink_map), [END_SINK_MAP](reference/composite-control-macros.md#end_sink_map)ve [SINK_ENTRY_EX](reference/composite-control-macros.md#sink_entry_ex)çeşitli makroları sağlar. Standart biçim aşağıdaki gibidir:
 
 ```cpp
 BEGIN_SINK_MAP(comClass)
@@ -65,20 +66,20 @@ BEGIN_SINK_MAP(comClass)
 END_SINK_MAP()
 ```
 
-Aşağıdaki örnekte, iki olay işleyicisi olan bir olay lavabo haritası bildirir:
+Aşağıdaki örnek, iki olay işleyicileriyle bir olay havuzu eşlemesi bildirir:
 
 [!code-cpp[NVC_ATL_Windowing#136](../atl/codesnippet/cpp/supporting-idispeventimpl_3.h)]
 
-Uygulama neredeyse tamamlandı. Son adım, dış arabirimlerin tavsiye ve eksikliği ile ilgilidir.
+Uygulama neredeyse tamamlanmıştır. Son adım, dış arabirimlerin geri karşılanarak ve açığa sürme ile ilgilidir.
 
-## <a name="advising-and-unadvising-the-idispeventimpl-interfaces"></a>IDispEventImpl Arayüzleri Tavsiye ve Tavsiye Dışı
+## <a name="advising-and-unadvising-the-idispeventimpl-interfaces"></a>IDispEventImpl arabirimlerini Inceleme ve geri getirme
 
-Son adım, tüm bağlantı noktalarını uygun zamanlarda önerecek (veya tavsiye edilmeyen) bir yöntem uygulamaktır. Bu danışmanlık dış istemciler ve nesne arasında iletişim gerçekleşmeden önce yapılmalıdır. Nesneniz görünür hale gelmeden önce, nesneniz tarafından desteklenen her dış gönderme arabirimi giden arabirimler için sorgulanır. Bir bağlantı kurulur ve nesnedeki olayları işlemek için giden arabirime bir başvuru kullanılır. Bu yordam "danışmanlık" olarak adlandırılır.
+Son adım, tüm bağlantı noktalarını uygun zamanlarda planlayarak (veya geri alacak) bir yöntemi uygulamaktır. Bu danışmanın, dış istemciler ve nesneniz arasındaki iletişimin gerçekleşmesi için yapılması gerekir. Nesneniz görünür hale gelmeden önce, nesnenizin desteklediği her dış dağıtım arabirimi giden arabirimler için sorgulanır. Bir bağlantı oluşturulur ve nesneden olayları işlemek için giden arabirimine bir başvuru kullanılır. Bu yordam "danışmanlama" olarak adlandırılır.
 
-Nesneniz dış arabirimlerle tamamlandıktan sonra, giden arabirimler artık sınıfınız tarafından kullanılmadığını bildirmelidir. Bu işlem "tavsiye edilmez" olarak adlandırılır.
+Nesneniz dış arabirimler ile bittikten sonra, giden arabirimlere artık sınıfınız tarafından kullanıldıklarından bildirimde bulunulmalıdır. Bu işlem "geri alınıyor" olarak anılacaktır.
 
-COM nesnelerinin benzersiz doğası nedeniyle, bu yordam, ayrıntılı olarak ve yürütme, uygulamalar arasında değişir. Bu ayrıntılar bu konunun kapsamı dışındadır ve ele alınmaz.
+COM nesnelerinin benzersiz yapısı nedeniyle, bu yordam, uygulamalar arasında ayrıntılı ve yürütme olarak değişir. Bu ayrıntılar, bu konunun kapsamı dışındadır ve değinilmemiş.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)
+[ATL COM nesnelerinin temelleri](../atl/fundamentals-of-atl-com-objects.md)

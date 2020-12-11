@@ -1,40 +1,41 @@
 ---
-title: ATL pencere özelliklerini
+description: 'Daha fazla bilgi edinin: pencere niteliklerini anlama'
+title: ATL penceresi nitelikleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - window traits
 ms.assetid: c90cf850-9e91-49da-9cf3-ad4efb30347d
-ms.openlocfilehash: 29549e54051405fc3dd4d5d7ae70a382ad7a62ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a42ef66afe09e0e528f05419799dce48c43b1bbf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157301"
 ---
-# <a name="understanding-window-traits"></a>Pencere özelliklerini anlama
+# <a name="understanding-window-traits"></a>Pencere niteliklerini anlama
 
-Pencere özellikler sınıfları bir ATL pencere nesnesi oluşturmak için kullanılan stilleri Standartlaştırma için basit bir yöntem sağlar. Pencere özelliklerini şablon parametreleri olarak kabul edilir [Cwindowımpl](../atl/reference/cwindowimpl-class.md) ve diğer sınıf düzeyinde pencere stilleri varsayılan sağlamanın bir yolu olarak ATL pencere sınıfları.
+Pencere nitelikleri sınıfları, ATL pencere nesnesi oluşturmak için kullanılan stilleri standartlaştırarak basit bir yöntem sağlar. Pencere nitelikleri, sınıf düzeyinde varsayılan pencere stilleri sağlamanın bir yolu olarak [CWindowImpl](../atl/reference/cwindowimpl-class.md) ve diğer atl pencere sınıfları tarafından şablon parametreleri olarak kabul edilir.
 
-Bir pencere örneği oluşturan çağrısı açıkça stillerde sağlamıyorsa [Oluştur](../atl/reference/cwindowimpl-class.md#create), pencerenin hala doğru stilleri ile oluşturulan emin olmak için nitelikler sınıfı kullanabilirsiniz. Bile belirli stilleri o pencereyi sınıfın tüm örnekleri için diğer stilleri kullanılmasına da izin veren bir örneği başına temelinde ayarlamak için ayarlandığından emin olun.
+Bir pencere örneğinin Oluşturucusu, [oluşturma](../atl/reference/cwindowimpl-class.md#create)çağrısında açıkça stil sağlamıyorsa, pencerenin doğru stillerle oluşturulduğundan emin olmak için bir nitelikler sınıfı kullanabilirsiniz. Diğer stillerin örnek temelinde ayarlanmaya izin verirken, belirli stillerin bu pencere sınıfının tüm örnekleri için ayarlanmış olmasına de dikkat edin.
 
-## <a name="atl-window-traits-templates"></a>ATL pencere nitelikler şablonları
+## <a name="atl-window-traits-templates"></a>ATL pencere nitelikleri şablonları
 
-ATL, kendi şablon parametrelerini kullanarak derleme zamanında varsayılan stillerini ayarlamanıza olanak sağlayan iki penceresi nitelikler şablonları sağlar.
+ATL, şablon parametrelerini kullanarak derleme zamanında varsayılan stilleri ayarlamanıza olanak tanıyan iki pencere nitelikleri şablonu sağlar.
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-----------|-----------------|
-|[CWinTraits](../atl/reference/cwintraits-class.md)|Diğer bir stilleri çağrısında belirtildiğinde, kullanılacak pencere stilleri varsayılan sağlamak istediğinizde bu şablonu kullanın `Create`. Derleme zamanı sırasında çalışma zamanı önceliklidir ayarlanan stilleri üzerinden sağlanan stilleri.|
-|[CWinTraitsOR](../atl/reference/cwintraitsor-class.md)|Bu sınıf, her zaman için pencere sınıfını ayarlanmalıdır stilleri belirtmek istediğinizde kullanın. Çalışma zamanında sağlanan stilleri, bit düzeyinde OR işleci kullanılarak derleme zamanında ayarlama stilleri ile birleştirilir.|
+|[CWinTraits](../atl/reference/cwintraits-class.md)|Çağrıda yalnızca başka bir stil belirtilmediğinde kullanılacak varsayılan pencere stilleri sağlamak istediğinizde bu şablonu kullanın `Create` . Çalışma zamanında belirtilen stiller, derleme zamanında ayarlanan stillerdeki önceliğe sahip olur.|
+|[CWinTraitsOR](../atl/reference/cwintraitsor-class.md)|Pencere sınıfı için her zaman ayarlanması gereken stilleri belirtmek istediğinizde bu sınıfı kullanın. Çalışma zamanında belirtilen stiller, bit düzeyinde OR işleci kullanılarak derleme zamanında ayarlanan stillerle birleştirilir.|
 
-Bu şablonlara ek olarak, ATL önceden tanımlanmış uzmanlıkları sayısını sağlar. `CWinTraits` pencere stilleri yaygın olarak kullanılan birleşimleri için şablon. Bkz: [CWinTraits](../atl/reference/cwintraits-class.md) başvuru tüm ayrıntılar için belgeleri.
+Bu şablonların yanı sıra, ATL, `CWinTraits` pencere stillerinin yaygın olarak kullanılan birleşimleri için şablon için önceden tanımlanmış birçok özelleştirilmiş öğe sağlar. Tüm ayrıntılar için [CWinTraits](../atl/reference/cwintraits-class.md) başvuru belgelerine bakın.
 
-## <a name="custom-window-traits"></a>Özel pencere özelliklerini
+## <a name="custom-window-traits"></a>Özel pencere nitelikleri
 
-ATL tarafından sağlanan şablonları özelleştirilmiş birinin olası durumda yeterli olmadığından ve kendi nitelikler sınıfı oluşturmak için ihtiyacınız, iki statik işlevler uygulayan bir sınıf oluşturmak yeterlidir: `GetWndStyle` ve `GetWndStyleEx`:
+ATL tarafından sunulan şablonlardan birini özelleştirmenin yeterli olmaması durumunda ve kendi nitelikler sınıfınızı oluşturmanız gerekiyorsa, yalnızca iki statik işlevi uygulayan bir sınıf oluşturmanız gerekir: `GetWndStyle` ve `GetWndStyleEx` :
 
 [!code-cpp[NVC_ATL_Windowing#68](../atl/codesnippet/cpp/understanding-window-traits_1.h)]
 
-Bu işlevlerin her biri bazı stil değeri yeni bir stil değer oluşturmak için kullanabileceğiniz çalışma zamanında geçirilir. Pencere nitelikler sınıfınızın bir ATL pencere sınıfı için şablon bağımsız değişkeni olarak kullanılıyorsa, bu statik işlevlere geçirilen stil değerleri ne olursa olsun stil bağımsız değişken olarak geçirilen olacaktır [Oluştur](../atl/reference/cwindowimpl-class.md#create).
+Bu işlevlerin her biri, yeni bir stil değeri oluşturmak için kullanabileceği çalışma zamanında bazı stil değerlerini geçirilecek. Pencere nitelikleri sınıfınız bir ATL pencere sınıfına şablon bağımsız değişkeni olarak kullanılıyorsa, bu statik işlevlere geçirilen stil değerleri, [oluşturulacak](../atl/reference/cwindowimpl-class.md#create)stil bağımsız değişkenleri olarak geçirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

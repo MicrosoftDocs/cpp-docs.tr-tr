@@ -1,5 +1,6 @@
 ---
-title: _ATL_WIN_MODULE70 Yapısı
+description: 'Daha fazla bilgi edinin: _ATL_WIN_MODULE70 yapısı'
+title: _ATL_WIN_MODULE70 yapısı
 ms.date: 11/04/2016
 f1_keywords:
 - _ATL_WIN_MODULE70
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - _ATL_WIN_MODULE70 structure
 - ATL_WIN_MODULE70 structure
 ms.assetid: a0aaf3ea-ca77-46ec-bd53-4dfb61dffbea
-ms.openlocfilehash: 770e78e4ad87338528aa654f5ecaa08b45315846
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 11b7fdad71fa8c7b615a0e6873571c38420c9b5d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168559"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158627"
 ---
-# <a name="_atl_win_module70-structure"></a>_ATL_WIN_MODULE70 Yapısı
+# <a name="_atl_win_module70-structure"></a>_ATL_WIN_MODULE70 yapısı
 
 ATL 'de Pencereleme kodu tarafından kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct _ATL_WIN_MODULE70 {
@@ -47,7 +48,7 @@ Pencere sınıfı kayıtlarını, sonlandırmada düzgün şekilde kaydettirilme
 
 ## <a name="remarks"></a>Açıklamalar
 
-[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module) , bir typedef olarak tanımlanır `_ATL_WIN_MODULE70`.
+[_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module) , bir typedef olarak tanımlanır `_ATL_WIN_MODULE70` .
 
 ## <a name="requirements"></a>Gereksinimler
 

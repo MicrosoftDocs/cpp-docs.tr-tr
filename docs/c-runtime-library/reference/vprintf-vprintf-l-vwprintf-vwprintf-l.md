@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: vprintf, _vprintf_l, eprintf, _vwprintf_l'
 title: vprintf, _vprintf_l, vwprintf, _vwprintf_l
 ms.date: 11/04/2016
 api_name:
@@ -37,16 +38,16 @@ helpviewer_keywords:
 - _vtprintf_l function
 - formatted text [C++]
 ms.assetid: 44549505-00a0-4fa7-9a85-f2e666f55a38
-ms.openlocfilehash: b9b20e2c75c4819e966b42e6ae382fe041f8c4b0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f403d7b3cce54495bf7118017e348fa144b0fd8d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945491"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155780"
 ---
 # <a name="vprintf-_vprintf_l-vwprintf-_vwprintf_l"></a>vprintf, _vprintf_l, vwprintf, _vwprintf_l
 
-Bağımsız değişken listesi için bir işaretçi kullanarak biçimlendirilen çıktıyı yazar. Bu işlevlerin daha güvenli sürümleri mevcuttur, bkz. [vprintf_s, _vprintf_s_l, vwprintf_s, _vwprintf_s_l](vprintf-s-vprintf-s-l-vwprintf-s-vwprintf-s-l.md).
+Bağımsız değişken listesi için bir işaretçi kullanarak biçimlendirilen çıktıyı yazar. Bu işlevlerin daha güvenli sürümleri mevcuttur, bkz. [vprintf_s, _vprintf_s_l, vwprintf_s _vwprintf_s_l](vprintf-s-vprintf-s-l-vwprintf-s-vwprintf-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -73,20 +74,20 @@ int _vwprintf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
 Bağımsız değişken listesi işaretçisi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**vprintf** ve **eprintf** , yazılan karakter sayısını, Sonlandırıcı null karakterini veya bir çıkış hatası oluşursa negatif bir değeri geri döndürür. *Biçim* null işaretçisiyse veya biçim dizesi geçersiz biçimlendirme karakterleri Içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+**vprintf** ve **eprintf** , yazılan karakter sayısını, Sonlandırıcı null karakterini veya bir çıkış hatası oluşursa negatif bir değeri geri döndürür. *Biçim* null işaretçisiyse veya biçim dizesi geçersiz biçimlendirme karakterleri Içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -103,7 +104,7 @@ Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alı
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vtprintf**|**vprintf**|**vprintf**|**diğer bir deyişle**|
 |**_vtprintf_l**|**_vprintf_l**|**_vprintf_l**|**_vwprintf_l**|
@@ -112,18 +113,18 @@ Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alı
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**vprintf**, **_vprintf_l**|\<stdio. h > ve \<stdarg. h >|\<varargs. h > *|
-|**öprintf**, **_vwprintf_l**|\<stdio. h > veya \<wchar. h > ve \<stdarg. h >|\<varargs. h > *|
+|**vprintf**, **_vprintf_l**|\<stdio.h> ve \<stdarg.h>|\<varargs.h>*|
+|**öprintf**, **_vwprintf_l**|\<stdio.h> or \<wchar.h> ve \<stdarg.h>|\<varargs.h>*|
 
-\*UNIX V uyumluluğu için gereklidir.
+\* UNIX V uyumluluğu için gereklidir.
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
+[vprintf Işlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>

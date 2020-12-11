@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; Yineleyici&gt;'
 title: '&lt;iden&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - iterator header
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
-ms.openlocfilehash: 08e2051db70ee1891c7b60860c7ea0b423855be5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9c40d46c5cde45baa66c8173d2b6d8f0186d1bc9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112069"
 ---
 # <a name="ltiteratorgt"></a>&lt;iden&gt;
 

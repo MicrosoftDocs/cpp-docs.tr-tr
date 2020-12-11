@@ -1,40 +1,41 @@
 ---
-title: ATL denetimi Sihirbazı, arabirimler
+description: 'Daha fazla bilgi edinin: arabirimler, ATL Denetim Sihirbazı'
+title: Arabirimler, ATL Denetim Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
 - vc.codewiz.class.atl.control.interfaces
 helpviewer_keywords:
 - ATL Control Wizard, interfaces
 ms.assetid: 971eadcd-6a1e-46f2-b8fe-ee6b53dfe3ea
-ms.openlocfilehash: f19df1723a4e115ca7f8e314bd5ea423082417e1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: abc0980588c3340277704b0084334a7d15fc1c6a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158354"
 ---
-# <a name="interfaces-atl-control-wizard"></a>ATL denetimi Sihirbazı, arabirimler
+# <a name="interfaces-atl-control-wizard"></a>Arabirimler, ATL Denetim Sihirbazı
 
-Sihirbazın bu sayfası denetimi destekleyen arabirimlerini tanımlar. Varsayılan olarak, genellikle çoğu kapsayıcıları tarafından kullanılan desteklenen arabirimleri olanlardır.
+Sihirbazın bu sayfası, denetimin desteklediği arabirimleri tanımlar. Varsayılan olarak, desteklenen arabirimler genellikle çoğu kapsayıcı tarafından kullanılır.
 
 > [!NOTE]
-> Seçtiyseniz **en az bir denetim** üzerinde [seçenekleri](../../atl/reference/options-atl-control-wizard.md) sekmesinde, arabirimlerine varsayılan olarak görünen **desteklenen** liste kutusu.
+> [Seçenekler](../../atl/reference/options-atl-control-wizard.md) sekmesinde **en az denetim** ' i seçtiyseniz, **desteklenen** liste kutusunda hiçbir arabirim varsayılan olarak görünmez.
 
 - **Desteklenmiyor**
 
    Denetim için şu anda desteklenmeyen kullanılabilir arabirimleri gösterir.
 
-- **Destekleniyor**
+- **Desteklenir**
 
    Denetim için şu anda desteklenen arabirimleri gösterir.
 
-   |Aktarım düğmesi|Açıklama|
+   |Aktar düğmesi|Açıklama|
    |---------------------|-----------------|
-   |**>**|Ekler **desteklenen** geçerli seçili arabirim adı listesi **desteklenmiyor** listesi.|
-   |**>>**|Ekler **desteklenen** bulunan tüm arabirimi adlarını listelemek **desteklenmiyor** listesi.|
-   |**\<**|Şu anda seçili arabirim adını kaldırır **desteklenen** listesi.|
-   |**\<\<**|Şu anda listelenen adları tüm arabirim kaldırır **desteklenen** listesi.|
+   |**>**|**Desteklenen listeye,** **Desteklenmeyen** listede şu anda seçili olan arabirim adını ekler.|
+   |**>>**|Desteklenen **listede,** **Desteklenmeyen** listede bulunan tüm arabirim adlarını ekler.|
+   |**\<**|**Desteklenen** listede şu anda seçili olan arabirim adını kaldırır.|
+   |**\<\<**|**Desteklenen** listede şu anda listelenen tüm arabirim adlarını kaldırır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)
+[ATL Denetim Sihirbazı](../../atl/reference/atl-control-wizard.md)
