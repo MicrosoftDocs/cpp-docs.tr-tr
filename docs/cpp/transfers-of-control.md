@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: denetim aktarımları'
 title: Denetim Taşıma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - control flow, branching
 - control flow, transferring control
 ms.assetid: aa51e7f2-060f-4106-b0fe-331f04357423
-ms.openlocfilehash: ef437d0a691ceff72485be1ff9584052f540031a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 263c30877100ec37768313fa64e7562a06096396
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161617"
 ---
 # <a name="transfers-of-control"></a>Denetim Taşıma
 
@@ -50,4 +51,4 @@ int main()
 
 Önceki örnekte,, ' **`goto`** nin başlatılmasından sonra Denetim aktarmaya çalışır `i` . Ancak, `i` bildirilirse, ancak başlatılmamışsa, aktarım geçerli olur.
 
-`total` `ch` *statement* **`while`** Bir blok deyimleri kullanılarak çıkış yapıldığında, ve deyimin açıklaması olarak işlev gören blok içinde belirtilen nesneler yok edilir **`break`** .
+`total` `ch`  **`while`** Bir blok deyimleri kullanılarak çıkış yapıldığında, ve deyimin açıklaması olarak işlev gören blok içinde belirtilen nesneler yok edilir **`break`** .

@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL OLE DB tüketicisi ekleme'
 title: ATL OLE DB Tüketicisi Ekleme
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL OLE DB consumers
 ms.assetid: f940a513-4e42-4148-b521-dd0d7dc89fa2
-ms.openlocfilehash: c298a841bf0d37f90bcd6b53bc0c6cdf501f4dd3
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: cfd88524e369781b239bb0246ab59fcf0080a144
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159108"
 ---
 # <a name="adding-an-atl-ole-db-consumer"></a>ATL OLE DB Tüketicisi Ekleme
 
@@ -28,9 +29,9 @@ Bir projeye ATL OLE DB tüketicisi eklemek için bu sihirbazı kullanın. ATL OL
 
 ## <a name="to-add-an-atl-ole-db-consumer-to-your-project"></a>Projenize ATL OLE DB tüketicisi eklemek için
 
-1. **Sınıf görünümü** , projeye sağ tıklayın. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle** ' ye tıklayın.
+1. **Sınıf görünümü**, projeye sağ tıklayın. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
-1. Visual C++ klasöründe, **ATL OLE DB tüketicisi** simgesine çift tıklayın veya seçin ve **Aç** ' a tıklayın.
+1. Visual C++ klasöründe, **ATL OLE DB tüketicisi** simgesine çift tıklayın veya seçin ve **Aç**' a tıklayın.
 
    ATL OLE DB Tüketici Sihirbazı açılır.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _variant_t ayıklayıcıları'
 title: _variant_t Ayıklayıcıları
 ms.date: 11/04/2016
 f1_keywords:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - operator BYTE
 - operator IUnknown
 ms.assetid: 33c1782f-045a-4673-9619-1d750efc83a9
-ms.openlocfilehash: a1b7c713b5d82ff54250b622f2d4afe17abac468
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 55a02fdf422388b0e44a9aad77e86f7a76e80e3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161604"
 ---
 # <a name="_variant_t-extractors"></a>_variant_t Ayıklayıcıları
 
@@ -61,7 +62,7 @@ ms.locfileid: "87185612"
 
 Encapsulated nesneden veri ayıklayın `VARIANT` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 operator short( ) const;
@@ -107,9 +108,9 @@ Kapsülden ham verileri ayıklar `VARIANT` . `VARIANT`Zaten uygun tür değilse,
 
 - **işleç _bstr_t ()** Bir nesne içinde kapsüllenmiş bir dize ayıklar `_bstr_t` .
 
-- **Işleç IDispatch \* ()** , kapsüllenmiş bir dispınterface işaretçisi ayıklar `VARIANT` . `AddRef`elde edilen işaretçi üzerinde çağrılır `Release` . bu nedenle, serbest bırakmak için çağırmak sizin için kullanılır.
+- **Işleç IDispatch \* ()** , kapsüllenmiş bir dispınterface işaretçisi ayıklar `VARIANT` . `AddRef` elde edilen işaretçi üzerinde çağrılır `Release` . bu nedenle, serbest bırakmak için çağırmak sizin için kullanılır.
 
-- **IUnknown \* () işleci** , kapsüllenmiş bir com arabirim işaretçisini ayıklar `VARIANT` . `AddRef`elde edilen işaretçi üzerinde çağrılır `Release` . bu nedenle, serbest bırakmak için çağırmak sizin için kullanılır.
+- **IUnknown \* () işleci** , kapsüllenmiş bir com arabirim işaretçisini ayıklar `VARIANT` . `AddRef` elde edilen işaretçi üzerinde çağrılır `Release` . bu nedenle, serbest bırakmak için çağırmak sizin için kullanılır.
 
 **SON Microsoft 'a özgü**
 

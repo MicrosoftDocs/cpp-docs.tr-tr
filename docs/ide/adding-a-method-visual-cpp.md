@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: yöntem ekleme'
 title: Metot ekleme
 ms.date: 11/09/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - methods [C++], adding using wizards
 - IDL attributes, add method wizard
 ms.assetid: 4ba4e45f-fa38-4d5e-af44-cbec0a7ab558
-ms.openlocfilehash: b0c8ddabc4ed08fd217545bad269f0b2e48dd49e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fb472bd5df2709bc0d7115540f78e18b70d02528
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160031"
 ---
 # <a name="add-a-method"></a>Metot ekleme
 
@@ -51,7 +52,7 @@ Arabirime bir yöntem eklemek için bu sihirbazı kullanın. Bir yöntemi ekledi
 
 - **Dönüş türü**
 
-  Yöntemi tarafından döndürülen veri türü. `HRESULT`Tüm arabirim türleri için önerilir, çünkü hataları döndürmek için standart bir yol sağlar.
+  Yöntemi tarafından döndürülen veri türü. `HRESULT` Tüm arabirim türleri için önerilir, çünkü hataları döndürmek için standart bir yol sağlar.
 
   |Arabirim türü|Açıklama|
   |--------------------|-----------------|
@@ -59,7 +60,7 @@ Arabirime bir yöntem eklemek için bu sihirbazı kullanın. Bir yöntemi ekledi
   |Özel arabirim|`HRESULT`. Değiştirilemez.|
   |Yerel özel arabirim|Kendi dönüş türünü sağlayın veya listeden seçin.|
   |Dispinterface|Kendi dönüş türünü sağlayın veya listeden seçin.|
-  |MFC ActiveX denetimi dispınterface|Bir stok yöntemi uygularsanız, dönüş türü uygun değere ayarlanır ve değiştirilemez. **Yöntem adı** listesinden bir yöntem seçerseniz ve **Yöntem türü seç**altında **özel** ' i seçerseniz, listeden bir dönüş türü seçin.|
+  |MFC ActiveX denetimi dispınterface|Bir stok yöntemi uygularsanız, dönüş türü uygun değere ayarlanır ve değiştirilemez. **Yöntem adı** listesinden bir yöntem seçerseniz ve **Yöntem türü seç** altında **özel** ' i seçerseniz, listeden bir dönüş türü seçin.|
 
 - **Yöntem adı**
 
@@ -69,7 +70,7 @@ Arabirime bir yöntem eklemek için bu sihirbazı kullanın. Bir yöntemi ekledi
   |--------------------|-----------------|
   |ATL Dual Interface, özel arabirim ve yerel özel arabirim|Kendi yönteminizin adını sağlayın.|
   |MFC dispınterface|Kendi yöntem adınızı sağlayın veya listeden önerilen bir yöntem adı seçin. Listeden bir ad seçerseniz, **dönüş türü** kutusunda uygun değer görünür ve değiştirilemez olur.|
-  |MFC ActiveX denetimi dispınterface|Kendi kendinize girin veya borsa yöntemlerinden birini seçin [Dotıkla](../mfc/reference/colecontrol-class.md#doclick) ve [Yenile](../mfc/reference/colecontrol-class.md#refresh). Daha fazla bilgi için bkz [. MFC ActiveX denetimleri: Stok yöntemleri](../mfc/mfc-activex-controls-adding-stock-methods.md)ekleniyor.|
+  |MFC ActiveX denetimi dispınterface|Kendi kendinize girin veya borsa yöntemlerinden birini seçin [Dotıkla](../mfc/reference/colecontrol-class.md#doclick) ve [Yenile](../mfc/reference/colecontrol-class.md#refresh). Daha fazla bilgi için bkz. [MFC ActiveX denetimleri: stok yöntemleri ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md).|
 
 - **Yöntem türü**
 
@@ -84,7 +85,7 @@ Arabirime bir yöntem eklemek için bu sihirbazı kullanın. Bir yöntemi ekledi
 
 - **İç ad**
 
-  Yalnızca bir MFC görüntüleme arabirimine eklenen özel yöntemler için kullanılabilir. Dağıtım haritasında kullanılan adı, üst bilgi (. h) dosyasını ve uygulama (. cpp) dosyasını ayarlar. Varsayılan olarak, bu ad **Yöntem adıyla**aynıdır. MFC dispınterface ile çalışıyorsanız veya bir MFC ActiveX denetimi görüntüleme arabirimine özel bir yöntem ekliyorsanız yöntem adını değiştirebilirsiniz.
+  Yalnızca bir MFC görüntüleme arabirimine eklenen özel yöntemler için kullanılabilir. Dağıtım haritasında kullanılan adı, üst bilgi (. h) dosyasını ve uygulama (. cpp) dosyasını ayarlar. Varsayılan olarak, bu ad **Yöntem adıyla** aynıdır. MFC dispınterface ile çalışıyorsanız veya bir MFC ActiveX denetimi görüntüleme arabirimine özel bir yöntem ekliyorsanız yöntem adını değiştirebilirsiniz.
 
   |Arabirim türü|Açıklama|
   |--------------------|-----------------|
@@ -94,12 +95,12 @@ Arabirime bir yöntem eklemek için bu sihirbazı kullanın. Bir yöntemi ekledi
 
 - **Parametre öznitelikleri**
 
-  **Parametre adında**belirtilen parametre için ek öznitelikleri ayarlar.
+  **Parametre adında** belirtilen parametre için ek öznitelikleri ayarlar.
 
   |Parameter özniteliği|Açıklama|İzin verilen birleşimler|
   |-------------------------|-----------------|--------------------------|
-  |**'Ndaki**|Parametrenin çağıran yordamdan çağrılan yordama geçtiğini gösterir.|`in`yalnızca<br /><br /> `in` ve `out`|
-  |**Dışı**|İşaretçi parametresinin çağrılan yordamdan çağıran yordama (sunucudan istemciye) döndürüldüğünü gösterir.|`out`yalnızca<br /><br /> `in` ve `out`<br /><br /> `out` ve `retval`|
+  |**İçinde**|Parametrenin çağıran yordamdan çağrılan yordama geçtiğini gösterir.|`in` yalnızca<br /><br /> `in` ve `out`|
+  |**Dışı**|İşaretçi parametresinin çağrılan yordamdan çağıran yordama (sunucudan istemciye) döndürüldüğünü gösterir.|`out` yalnızca<br /><br /> `in` ve `out`<br /><br /> `out` ve `retval`|
   |**Retval**|Parametrenin, üyenin dönüş değerini alacağını belirtir.|`retval` ve `out`|
 
 - **Parametre türü**
@@ -110,14 +111,14 @@ Arabirime bir yöntem eklemek için bu sihirbazı kullanın. Bir yöntemi ekledi
 
   Yöntemi aracılığıyla geçirilecek parametrenin adını ayarlar. Adı yazdıktan sonra, yönteminizi kullanarak geçirilecek parametreler listesine eklemek için **Ekle** ' yi seçin. Parametre adı sağlamazsanız, sihirbaz herhangi bir parametre özniteliğini (yalnızca ATL) veya **parametre türü** seçimlerini yoksayar.
 
-  **Ekle**' yi seçtiğinizde parametre adı **parametre listesinde**görünür.
+  **Ekle**' yi seçtiğinizde parametre adı **parametre listesinde** görünür.
 
   > [!NOTE]
   > Bir parametre adı girip **Ekle**' yi seçmeden önce **son** ' u seçerseniz, parametre yöntemine eklenmez. Yöntemi bulmanız ve parametresini el ile eklemeniz gerekir.
 
-- **Add**
+- **Ekle**
 
-  Parametre **adı**' nda belirttiğiniz parametreyi ve tür ve parametre özniteliklerini **parametre listesine**ekler. Listeye bir parametre eklemek için **Ekle** ' yi seçin.
+  Parametre **adı**' nda belirttiğiniz parametreyi ve tür ve parametre özniteliklerini **parametre listesine** ekler. Listeye bir parametre eklemek için **Ekle** ' yi seçin.
 
 - **Kaldır**
 
@@ -139,7 +140,7 @@ Yöntem için herhangi bir arabirim tanım dili (IDL) ayarı belirtmek üzere Y�
 
 - `call_as`
 
-  Bu yerel yöntemin eşleştiribileceği uzak metodun adını belirtir. Daha fazla bilgi için *MIDL başvurusunda* [call_as](/windows/win32/Midl/call-as) bakın.
+  Bu yerel yöntemin eşleştiribileceği uzak metodun adını belirtir. Daha fazla bilgi için bkz. *MIDL başvurusunda* [call_as](/windows/win32/Midl/call-as) .
 
   MFC dispınterfaces için kullanılamaz.
 
@@ -162,7 +163,7 @@ Yöntem için herhangi bir arabirim tanım dili (IDL) ayarı belirtmek üzere Y�
   |Öznitelik|Açıklama|
   |---------------|-----------------|
   |`hidden`|Yöntemin var olduğunu ancak kullanıcıya dayalı bir tarayıcıda gösterilmemesi gerektiğini gösterir. Daha fazla bilgi için bkz. *MIDL başvurusunda* [gizli](/windows/win32/Midl/hidden) .|
-  |`source`|Yöntemin bir üyesinin bir olay kaynağı olduğunu gösterir. Daha fazla bilgi için bkz. *MIDL başvurusu*içindeki [kaynak](/windows/win32/Midl/source) .|
+  |`source`|Yöntemin bir üyesinin bir olay kaynağı olduğunu gösterir. Daha fazla bilgi için bkz. *MIDL başvurusu* içindeki [kaynak](/windows/win32/Midl/source) .|
   |`local`|MıDL derleyicisine yöntemin uzak olmadığını belirtir. Daha fazla bilgi için bkz. *MIDL başvurusunda* [Yerel](/windows/win32/Midl/local) .|
   |`restricted`|Metodun rastgele çağrlamayacağını belirtir. Daha fazla bilgi için bkz. *MIDL başvurusunda* [Kısıtlanmış](/windows/win32/Midl/restricted) .|
-  |`vararg`|Yöntemin değişken sayıda bağımsız değişken aldığını belirtir. Bunu gerçekleştirmek için son bağımsız değişken, bağımsız değişkenlerin geri kalanını içeren `VARIANT` türde güvenli bir dizi olmalıdır. Daha fazla bilgi için *MIDL başvurusundaki* [vararg](/windows/win32/Midl/vararg) bölümüne bakın.|
+  |`vararg`|Yöntemin değişken sayıda bağımsız değişken aldığını belirtir. Bunu gerçekleştirmek için son bağımsız değişken, `VARIANT` bağımsız değişkenlerin geri kalanını içeren türde güvenli bir dizi olmalıdır. Daha fazla bilgi için *MIDL başvurusundaki* [vararg](/windows/win32/Midl/vararg) bölümüne bakın.|

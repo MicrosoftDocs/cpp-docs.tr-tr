@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ODBC temelleri'
 title: ODBC Temelleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ODBC, about ODBC
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-ms.openlocfilehash: 042b1ce6d12e4f4a2be57c0e2e8e01d9750f5357
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 94482abd046645e445ffae7f85f192514f4fff78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213219"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161188"
 ---
 # <a name="odbc-basics"></a>ODBC Temelleri
 
@@ -45,7 +46,7 @@ ODBC bileşenleri aşağıda verilmiştir:
 
 - ODBC Sürücü Yöneticisi
 
-   ODBC veritabanı sürücülerini uygulama adına yükleyen bir dinamik bağlantı kitaplığı (Odbc32. dll). Bu DLL, uygulamanız için saydamdır.
+   ODBC veritabanı sürücülerini uygulama adına yükleyen bir dinamik bağlantı kitaplığı (Odbc32.dll). Bu DLL, uygulamanız için saydamdır.
 
 - ODBC veritabanı sürücüleri
 
@@ -53,7 +54,7 @@ ODBC bileşenleri aşağıda verilmiştir:
 
 - [ODBC Imleç kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)
 
-   ODBC Sürücü Yöneticisi ve sürücüler arasında bulunan dinamik bağlantı kitaplığı (ODBCCR32. dll) ve veriler arasında kaydırma gerçekleştirir.
+   ODBC Sürücü Yöneticisi ile sürücüler arasında bulunan dinamik bağlantı kitaplığı (Odbccr32.dll) ve veriler arasında kaydırma gerçekleştirir.
 
 - [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md)
 
@@ -63,8 +64,8 @@ Uygulama, doğrudan DBMS ile çalışmak yerine DBMS için yazılmış bir ODBC 
 
 Veritabanı sınıfları, ODBC sürücünüze sahip olduğunuz tüm veri kaynaklarını destekler. Bu, örneğin, ilişkisel bir veritabanı, dizinli sıralı erişim yöntemi (ISAM) veritabanı, Microsoft Excel elektronik tablosu veya metin dosyası içerebilir. ODBC sürücüleri veri kaynağıyla bağlantıları yönetir ve SQL, veritabanından kayıtları seçmek için kullanılır.
 
-Visual C++ 'in bu sürümünde yer alan ODBC sürücülerinin bir listesi ve ek sürücü alma hakkında bilgi için bkz. [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
+Bu Visual C++ sürümünde yer alan ODBC sürücülerinin bir listesi ve ek sürücü alma hakkında bilgi için bkz. [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+[Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

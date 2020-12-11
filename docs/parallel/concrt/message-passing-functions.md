@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Ileti geçirme Işlevleri'
 title: İleti Geçirme İşlevleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - message passing functions
 ms.assetid: 42477c9e-a8a6-4dc4-a98e-93c6dc8c4dd0
-ms.openlocfilehash: 3709e7b5280b96b2b77ec850a06ed15d0e42a7e5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 77e221f5d2116c1bfc2690d247161979af04ac06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194634"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159862"
 ---
 # <a name="message-passing-functions"></a>İleti Geçirme İşlevleri
 
@@ -17,7 +18,7 @@ Zaman uyumsuz aracılar Kitaplığı, bileşenler arasında ileti iletmenizi sa�
 
 Bu ileti geçirme işlevleri çeşitli ileti bloğu türleriyle kullanılır. Eşzamanlılık Çalışma Zamanı tarafından tanımlanan ileti bloğu türleri hakkında daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md).
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 Bu konuda aşağıdaki ileti geçirme işlevleri açıklanmaktadır:
 
@@ -27,7 +28,7 @@ Bu konuda aşağıdaki ileti geçirme işlevleri açıklanmaktadır:
 
 - [Örnekler](#examples)
 
-## <a name="send-and-asend"></a><a name="send"></a>gönderme ve asend
+## <a name="send-and-asend"></a><a name="send"></a> gönderme ve asend
 
 [Concurrency:: Send](reference/concurrency-namespace-functions.md#send) işlevi belirtilen hedefe zaman uyumlu bir ileti gönderir ve [concurrency:: asend](reference/concurrency-namespace-functions.md#asend) işlevi belirtilen hedefe zaman uyumsuz bir ileti gönderir. Hem `send` hem de `asend` işlevleri, hedefin iletiyi kabul edeceğini veya reddetmesi gerektiğini belirten bir süre kadar bekler.
 
@@ -37,7 +38,7 @@ Buna karşılık, `asend` işlev, hedefin döndürülmeden önce iletiyi kabul e
 
 [[Üst](#top)]
 
-## <a name="receive-and-try_receive"></a><a name="receive"></a>alma ve try_receive
+## <a name="receive-and-try_receive"></a><a name="receive"></a> alma ve try_receive
 
 [Concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) ve [concurrency:: try_receive](reference/concurrency-namespace-functions.md#try_receive) işlevleri belirli bir kaynaktaki verileri okur. İşlev, `receive` verilerin kullanılabilir hale gelmesini bekler, ancak `try_receive` işlev hemen döndürülür.
 
@@ -45,13 +46,13 @@ Buna karşılık, `asend` işlev, hedefin döndürülmeden önce iletiyi kabul e
 
 [[Üst](#top)]
 
-## <a name="examples"></a><a name="examples"></a>Örnekler
+## <a name="examples"></a><a name="examples"></a> Örnekler
 
 Ve işlevlerini kullanan örnekler için `send` `asend` `receive` aşağıdaki konulara bakın:
 
 - [Zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)
 
-- [Nasıl yapılır: çeşitli üretici tüketicisi desenleri uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)
+- [Nasıl yapılır: çeşitli Producer-Consumer desenleri uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)
 
 - [Nasıl yapılır: çağrıya ve transformatör sınıflarına çalışma Işlevleri sağlama](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ATL projesini değiştirme'
 title: ATL projesini değiştirme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,22 +7,22 @@ helpviewer_keywords:
 - Dialog editor, working with composite controls
 - composite controls, adding controls
 ms.assetid: 59984518-748f-4b8b-875f-3e97d22d0b0f
-ms.openlocfilehash: 15a8f20f8618f77c8da3637e94c75adc772319cc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 804e9a983db11af67c2a03690667cffab3385592
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250296"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159446"
 ---
 # <a name="modifying-the-atl-project"></a>ATL projesini değiştirme
 
-Bu noktada, bileşik denetim projenize gerekli nesneleri bileşik denetiminizin uygular. Sonraki adım, bileşik denetim içerir ve tüm gerekli olayları işlemek tüm denetimleri eklemektir.
+Bu noktada, bileşik denetim projeniz bileşik denetiminiz için gerekli nesneleri uygular. Sonraki adım, bileşik denetimin içereceği denetimleri eklemek ve gerekli tüm olayları işlemek olacaktır.
 
-Ek Windows ya da ActiveX denetimleri eklemek için yeni bir kaynak betik ekleyin ve sonra iletişim kutusu düzenleyicisini kullanın. Denetimler (ve ilgili görevleri) ekleme hakkında daha fazla bilgi için bkz. [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md).
+Ek ActiveX veya Windows denetimleri eklemek için yeni bir kaynak betiği ekleyin ve ardından Iletişim kutusu düzenleyicisini kullanın. Denetimleri (ve ilgili görevleri) ekleme hakkında daha fazla bilgi için bkz. [Iletişim kutusu düzenleyici](../windows/dialog-editor.md).
 
-ActiveX denetimlerini gerekli tüm olayları işlemek için bkz: [bileşik denetime işlevsellik ekleme](../atl/adding-functionality-to-the-composite-control.md).
+ActiveX denetimlerinden gerekli olayları işlemek için bkz. [bileşik denetime Işlevsellik ekleme](../atl/adding-functionality-to-the-composite-control.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)<br/>
+[Bileşik denetim temelleri](../atl/atl-composite-control-fundamentals.md)<br/>
 [Nasıl yapılır: Kaynak Betik Dosyası Oluşturma](../windows/how-to-create-a-resource-script-file.md)

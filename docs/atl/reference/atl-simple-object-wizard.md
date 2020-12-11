@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL basit nesne Sihirbazı'
 title: ATL Basit Nesne Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - ATL projects, adding objects
 - ATL Simple Object Wizard
 ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
-ms.openlocfilehash: 8bc611442e98e467a174ebd52ea3c540cf72975f
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: c19613e1b1b6bd746106ff57a87dcf0f7d3ad838
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352695"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158666"
 ---
 # <a name="atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı
 
@@ -22,11 +23,11 @@ Nesnenin iş parçacığı modelini, toplama desteğini ve çift arabirimleri ve
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2008 ile başlayarak, bu sihirbaz tarafından oluşturulan kayıt betiği, COM bileşenlerini **HKEY_LOCAL_MACHINE**yerine **HKEY_CURRENT_USER** altına kaydeder. Bu davranışı değiştirmek için, ATL sihirbazının **tüm kullanıcılar Için kayıt bileşeni** seçeneğini ayarlayın.
+Visual Studio 2008 ile başlayarak, bu sihirbaz tarafından oluşturulan kayıt betiği, COM bileşenlerini **HKEY_LOCAL_MACHINE** yerine **HKEY_CURRENT_USER** altına kaydeder. Bu davranışı değiştirmek için, ATL sihirbazının **tüm kullanıcılar Için kayıt bileşeni** seçeneğini ayarlayın.
 
 ## <a name="names"></a>Adlar
 
-Projenize eklenecek nesne, arabirim ve sınıfların adlarını belirtin. **Kısa ad**dışında, diğer tüm kutular diğerlerinden bağımsız olarak düzenlenebilir. **Kısa ad**için metni değiştirirseniz, değişiklik bu sayfadaki diğer tüm kutuların adlarına yansıtılır. COM bölümünde **coclass** adını değiştirirseniz, değişiklik **Type** ve **ProgID** kutularına yansıtılır, ancak **arabirim** adı değişmez. Bu adlandırma davranışı, denetiminizi geliştirirken tüm adların sizin için kolayca tanımlanabilir olmasını sağlayacak şekilde tasarlanmıştır.
+Projenize eklenecek nesne, arabirim ve sınıfların adlarını belirtin. **Kısa ad** dışında, diğer tüm kutular diğerlerinden bağımsız olarak düzenlenebilir. **Kısa ad** için metni değiştirirseniz, değişiklik bu sayfadaki diğer tüm kutuların adlarına yansıtılır. COM bölümünde **coclass** adını değiştirirseniz, değişiklik **Type** ve **ProgID** kutularına yansıtılır, ancak **arabirim** adı değişmez. Bu adlandırma davranışı, denetiminizi geliştirirken tüm adların sizin için kolayca tanımlanabilir olmasını sağlayacak şekilde tasarlanmıştır.
 
 > [!NOTE]
 > **Coclass** yalnızca öznitelik atanmış olmayan projelerde düzenlenebilir. Projeniz öznitelik içeriyorsa, **coclass**'ı düzenleyemezsiniz.
@@ -47,7 +48,7 @@ Nesnesi için oluşturulan C++ sınıfı için bilgiler sağlar.
 
 - **Sınıf**
 
-   Oluşturulacak sınıfın adını ayarlar. Bu ad, ' C ' öncesinde, bir sınıf adı için tipik ön ek olan **kısa ad**içinde sağladığınız adı temel alır.
+   Oluşturulacak sınıfın adını ayarlar. Bu ad, ' C ' öncesinde, bir sınıf adı için tipik ön ek olan **kısa ad** içinde sağladığınız adı temel alır.
 
 - **. cpp dosyası**
 

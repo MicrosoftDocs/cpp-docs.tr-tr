@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: MFC uzantı dll 'Leri: genel bakış"
 title: "Uzantı DLL'leri: Genel Bakış"
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -8,14 +9,14 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
-ms.openlocfilehash: ea8e950e28907ea1a4a85c1f39392d5505f08c49
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: b877eeaae2e67466d4b695820659c5718d552d0e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221364"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162930"
 ---
-# <a name="mfc-extension-dlls-overview"></a>MFC uzantı DLL'leri: Genel Bakış
+# <a name="mfc-extension-dlls-overview"></a>MFC uzantısı DLL’leri: Genel Bakış
 
 MFC uzantı DLL 'si, genellikle varolan Microsoft Foundation Class Kitaplığı sınıflarından türetilen yeniden kullanılabilir sınıfları uygulayan bir DLL 'dir. MFC uzantı dll 'Leri MFC 'nin dinamik bağlantı kitaplığı sürümü (MFC 'nin paylaşılan sürümü olarak da bilinir) kullanılarak oluşturulmuştur. MFC 'nin paylaşılan sürümüyle oluşturulmuş yalnızca MFC yürütülebilir dosyaları (uygulamalar veya normal MFC DLL 'Leri) MFC uzantısı DLL kullanabilir. MFC uzantısı DLL 'SI ile MFC 'den yeni özel sınıflar türetebilir ve ardından bu genişletilmiş sürümü MFC 'nin DLL 'nizi çağıran uygulamalara sunabilirsiniz.
 
@@ -29,7 +30,7 @@ MFC uzantısı DLL 'inin temel gereksinimlerini karşılayan bir DLL örneği i�
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-- [MFC uzantı dll 'Leri](extension-dlls.md)
+- [MFC uzantısı DLL’leri](extension-dlls.md)
 
 - [Normal MFC DLL 'Lerinde Database, OLE ve Sockets MFC uzantı dll 'Lerini kullanma](using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 

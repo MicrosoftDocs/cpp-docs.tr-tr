@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: üye işlevi ekleme'
 title: Üye işlevi ekleme
 ms.date: 11/09/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - classes [C++], adding members
 - add member function wizard [C++]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
-ms.openlocfilehash: 0e63771e3e01c3829e20d2fe62fa2caf0f8b26f5
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7e40cd3b70b90026ebaebe2ec0af2224d89868f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040788"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160161"
 ---
 # <a name="add-a-member-function"></a>Üye işlevi ekleme
 
@@ -22,7 +23,7 @@ ms.locfileid: "90040788"
 
 **Bir sınıfa üye işlevi eklemek için:**
 
-1. **Sınıf görünümü**, projedeki sınıfları göstermek için proje düğümünü genişletin. ( **Sınıf görünümü**açmak için, menü çubuğunda **Görünüm**, **sınıf görünümü**' i seçin.)
+1. **Sınıf görünümü**, projedeki sınıfları göstermek için proje düğümünü genişletin. ( **Sınıf görünümü** açmak için, menü çubuğunda **Görünüm**, **sınıf görünümü**' i seçin.)
 
 1. Üye işlevi eklemek istediğiniz sınıf için kısayol menüsünü açın ve **Ekle**, **işlev Ekle**' yi seçin.
 
@@ -104,7 +105,7 @@ Sihirbazı kullanarak üye işlevini ekledikten sonra, geliştirme ortamındaki 
 
   - [genel](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)
-  - [private](../cpp/private-cpp.md)
+  - [özelleştirme](../cpp/private-cpp.md)
 
   Yeni üye işlevinin statik mi, sanal mi olduğunu ve satır içi veya saf olduğunu kontrol edin. Üye işlevini saf olacak şekilde ayarlarsanız, **sanal** onay kutusu seçilidir ve **satır içi** onay kutusu kullanılamaz hale gelir. Varsayılan değer statik olmayan, sanal olmayan bir üye işlevdir.
 

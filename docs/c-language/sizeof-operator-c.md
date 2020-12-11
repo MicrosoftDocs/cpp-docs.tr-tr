@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sizeof Işleci (C)'
 title: sizeof İşleci (C)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof operator
 ms.assetid: 70826d03-3451-41e4-bebb-a820ae66d53f
-ms.openlocfilehash: 1d06fc8b541cbce3771a485c8f71953be8f7d552
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a67a7068d6fa14ad3fc35fc9909251ff7e304341
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229525"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162410"
 ---
 # <a name="sizeof-operator-c"></a>sizeof İşleci (C)
 
 **`sizeof`** İşleci, işlenen türünde bir nesneyi depolamak için gereken depolama alanı miktarını bayt olarak verir. Bu işleç, programlarınızda makineye bağımlı veri boyutları belirtmekten kaçınmanızı sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 sizeof unary-expression
@@ -26,7 +27,7 @@ sizeof ( type-name )
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlenen, *birli ifade*veya tür atama ifadesi (yani parantez içine alınmış bir tür Belirleyicisi) olan bir tanıtıcıdır. *Birli ifade* , bir bit alanı nesnesini, tamamlanmamış bir türü veya bir işlev göstergesini temsil edemez. Sonuç, işaretsiz bir tamsayı sabitidir. Standart üst bilgi STDDEF. H bu türü **size_t**olarak tanımlar.
+İşlenen, *birli ifade* veya tür atama ifadesi (yani parantez içine alınmış bir tür Belirleyicisi) olan bir tanıtıcıdır. *Birli ifade* , bir bit alanı nesnesini, tamamlanmamış bir türü veya bir işlev göstergesini temsil edemez. Sonuç, işaretsiz bir tamsayı sabitidir. Standart üst bilgi STDDEF. H bu türü **size_t** olarak tanımlar.
 
 **`sizeof`** İşleci bir dizi tanımlayıcısına uyguladığınızda, sonuç dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutu yerine tüm dizinin boyutudur.
 

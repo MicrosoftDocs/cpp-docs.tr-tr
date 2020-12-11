@@ -1,4 +1,5 @@
 ---
+description: ': Vprintf Işlevleri hakkında daha fazla bilgi'
 title: vprintf İşlevleri
 ms.date: 11/04/2016
 api_location:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - vprintf function
 - formatted text [C++]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-ms.openlocfilehash: 2455655404bd61c220ebe4e3d018bc81204fa51e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 54490518fd083826108da6a87e4a759fc2aa6227
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845373"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162132"
 ---
 # <a name="vprintf-functions"></a>vprintf İşlevleri
 
@@ -75,7 +76,7 @@ Bu işlevler, hedeflere yönelik verileri aşağıdaki gibi biçimlendirir.
 |`_vsnprintf`|[_snprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|hayır|
 |`_vsnwprintf`|[_snwprintf](../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)|*arabelleğe* göre işaret edilen bellek|Null denetimi yapın.|hayır|
 
-`argptr`Bağımsız değişkeni `va_list` , VARARGS içinde tanımlanan, türündedir. H ve STDARG. Olsun. `argptr`Değişken **va_start** tarafından başlatılmalıdır ve sonraki çağrılar tarafından `va_arg` yeniden başlatılabilir; ardından, `argptr` *Biçim* bağımsız değişkeninde karşılık gelen belirtimlere göre, çıkış için dönüştürülen ve aktarılan bağımsız değişkenlerin listesinin başlangıcına işaret eder. *Biçim* , [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Bu işlevlerden hiçbiri çağırmaktadır `va_end` . Her bir işlevin daha ayrıntılı bir açıklaması için `vprintf` , önceki tabloda listelenen karşılık gelen işlevinin açıklamasına bakın.
+`argptr`Bağımsız değişkeni `va_list` , VARARGS içinde tanımlanan, türündedir. H ve STDARG. H. `argptr`Değişken **va_start** tarafından başlatılmalıdır ve sonraki çağrılar tarafından `va_arg` yeniden başlatılabilir; ardından, `argptr` *Biçim* bağımsız değişkeninde karşılık gelen belirtimlere göre, çıkış için dönüştürülen ve aktarılan bağımsız değişkenlerin listesinin başlangıcına işaret eder. *Biçim* , [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Bu işlevlerden hiçbiri çağırmaktadır `va_end` . Her bir işlevin daha ayrıntılı bir açıklaması için `vprintf` , önceki tabloda listelenen karşılık gelen işlevinin açıklamasına bakın.
 
 `_vsnprintf`, 10.000'den **INTF** öğesinden, *arabelleğe* *Count* bayttan fazlasını yazmadığından farklıdır.
 
@@ -85,7 +86,7 @@ Bu işlevlerin adı içindeki **w** /düzeltmesini içeren sürümleri, ilgili i
 
 **_P** sonekine sahip bu işlevlerin sürümleri, sağlanan bağımsız değişkenlerin biçim dizesinde yerine geçen sırayı belirtme olanağı sağlar. Daha fazla bilgi için bkz. [Printf_p Konumsal parametreler](../c-runtime-library/printf-p-positional-parameters.md).
 
-**Vsprintf**için `vswprintf` `_vsnprintf` ve `_vsnwprintf` Çakışan dizeler arasında kopyalama gerçekleşirse, davranış tanımsızdır.
+**Vsprintf** için `vswprintf` `_vsnprintf` ve `_vsnwprintf` Çakışan dizeler arasında kopyalama gerçekleşirse, davranış tanımsızdır.
 
 > [!IMPORTANT]
 > *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns). Bu işlevlerin güvenli sürümlerini ( **_s** veya **_p** sonekleri) kullanıyorsanız, Kullanıcı tarafından sağlanan dize geçersiz biçimlendirme karakterleri içeriyorsa, Kullanıcı tarafından sağlanan bir biçim dizesi geçersiz bir parametre özel durumu tetikleyebilir.

@@ -1,5 +1,6 @@
 ---
-title: Özellikler ve özellik sayfası sınıfları (ATL)
+description: 'Daha fazla bilgi edinin: Özellikler ve özellik sayfaları sınıfları'
+title: Özellikler ve özellik sayfaları sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,38 +8,38 @@ helpviewer_keywords:
 - properties [ATL], classes
 - properties [ATL]
 ms.assetid: 31616f98-69f8-48b2-8d58-b8e7d1c2b2d8
-ms.openlocfilehash: 05c3a67e278389bb2ab1b07e9d6cf63cbe347c63
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1fddb9626afcab908ae6f7ffb085c263b7a84af7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62249632"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159199"
 ---
-# <a name="properties-and-property-pages-classes"></a>Özellikler ve özellik sayfası sınıfları
+# <a name="properties-and-property-pages-classes"></a>Özellikler ve özellik sayfaları sınıfları
 
-Aşağıdaki sınıflar, özellikler ve özellik sayfaları destekler:
+Aşağıdaki sınıflar özellikleri ve özellik sayfalarını destekler:
 
-- [CComDispatchDriver](../atl/reference/atl-typedefs.md#ccomdispatchdriver) alır veya bir nesnenin özellikleri aracılığıyla ayarlar bir `IDispatch` işaretçi.
+- [CComDispatchDriver](../atl/reference/atl-typedefs.md#ccomdispatchdriver) Nesnenin özelliklerini bir işaretçi aracılığıyla alır veya ayarlar `IDispatch` .
 
-- [Cstockpropımpl](../atl/reference/cstockpropimpl-class.md) ATL tarafından desteklenen stok özellikleri uygular
+- [CStockPropImpl](../atl/reference/cstockpropimpl-class.md) ATL tarafından desteklenen hisse senedi özelliklerini uygular.
 
-- [Iperpropertybrowsingımpl](../atl/reference/iperpropertybrowsingimpl-class.md) bilgilerin bir nesnenin özellik sayfalarındaki erişir.
+- [Iperpropertybrowsingimpl](../atl/reference/iperpropertybrowsingimpl-class.md) Bir nesnenin özellik sayfalarındaki bilgilere erişir.
 
-- [Ipersistpropertybagımpl](../atl/reference/ipersistpropertybagimpl-class.md) bir nesnenin özelliklerinde bir istemci tarafından sağlanan özellik paketi içinde depolar.
+- [Ipersistpropertybagimpl](../atl/reference/ipersistpropertybagimpl-class.md) Bir nesnenin özelliklerini, istemci tarafından sağlanan Özellik paketinde depolar.
 
-- [Ipropertypageımpl](../atl/reference/ipropertypageimpl-class.md) bir özellik sayfası içinde belirli bir özellik sayfası yönetir.
+- [IPropertyPageImpl](../atl/reference/ipropertypageimpl-class.md) Özellik sayfası içinde belirli bir özellik sayfasını yönetir.
 
-- [Ipropertypage2ımpl](../atl/reference/ipropertypage2impl-class.md) benzer `IPropertyPageImpl`, ancak bir özellik sayfasında belirli bir özelliği seçmek bir istemci de sağlar.
+- [IPropertyPage2Impl](../atl/reference/ipropertypage2impl-class.md) Benzer şekilde `IPropertyPageImpl` , bir istemcinin Özellik sayfasında belirli bir özelliği seçmesine de olanak tanır.
 
-- [Ispecifypropertypagesımpl](../atl/reference/ispecifypropertypagesimpl-class.md) nesne tarafından desteklenen özellik sayfaları için CLSID alır.
+- [Idiifyıpropertypagesimpl](../atl/reference/ispecifypropertypagesimpl-class.md) Bir nesne tarafından desteklenen özellik sayfaları için CLSID 'leri alır.
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
-[ATL öğretici](../atl/active-template-library-atl-tutorial.md)
+[ATL öğreticisi](../atl/active-template-library-atl-tutorial.md)
 
-[ATL COM Özellik Sayfaları](../atl/atl-com-property-pages.md)
+[ATL COM özellik sayfaları](../atl/atl-com-property-pages.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)<br/>
-[Özellik Eşleme Makroları](../atl/reference/property-map-macros.md)
+[Sınıfa genel bakış](../atl/atl-class-overview.md)<br/>
+[Özellik eşleme makroları](../atl/reference/property-map-macros.md)

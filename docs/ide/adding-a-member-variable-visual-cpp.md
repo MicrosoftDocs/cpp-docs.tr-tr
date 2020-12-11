@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: üye değişkeni ekleme'
 title: Üye değişkeni ekleme
 ms.date: 11/09/2018
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - dialog box controls, variable types
 - variables, dialog box control member variables
 ms.assetid: 437783bd-8eb4-4508-8b73-7380116e9d71
-ms.openlocfilehash: e7fd5bd93198c494f18fe18755d13d40fe7fbf96
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b3af5c5920e465545623e9fa7239662954df2d66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160122"
 ---
 # <a name="add-a-member-variable"></a>Üye değişkeni ekleme
 
@@ -37,7 +38,7 @@ Sınıf Görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. 
 1. Kısayol menüsünde, **değişken Ekle** ' yi seçerek [üye değişkeni Ekleme Sihirbazı](#add-member-variable-wizard)' nı görüntüleyin.
 
    > [!NOTE]
-   > **DENETIM kimliğinde**varsayılan bir değer zaten sağlanmış.
+   > **DENETIM kimliğinde** varsayılan bir değer zaten sağlanmış.
 
 1. İlgili sihirbaz kutularındaki bilgileri sağlayın. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
 
@@ -70,7 +71,7 @@ Bu sihirbaz başlık dosyasına bir üye değişkeni bildirimi ekler. Seçenekle
 
   - [genel](../cpp/public-cpp.md)
   - [protected](../cpp/protected-cpp.md)
-  - [private](../cpp/private-cpp.md)
+  - [özelleştirme](../cpp/private-cpp.md)
 
 - **Değişken türü**
 
@@ -104,7 +105,7 @@ Bu sihirbaz başlık dosyasına bir üye değişkeni bildirimi ekler. Seçenekle
 
 - **Denetim KIMLIĞI**
 
-  Eklemekte olduğunuz denetim değişkeninin KIMLIĞINI ayarlar. Üye değişkenini eklemekte olduğunuz denetim türünün KIMLIĞINI listeden seçin. Liste yalnızca **denetim değişkeni** kutusu seçildiğinde etkindir ve iletişim kutusuna zaten eklenmiş olan denetimler için kimlikler ile sınırlıdır. Örneğin, standart **Tamam** düğmesi Için, denetim kimliği **IDOK**olur.
+  Eklemekte olduğunuz denetim değişkeninin KIMLIĞINI ayarlar. Üye değişkenini eklemekte olduğunuz denetim türünün KIMLIĞINI listeden seçin. Liste yalnızca **denetim değişkeni** kutusu seçildiğinde etkindir ve iletişim kutusuna zaten eklenmiş olan denetimler için kimlikler ile sınırlıdır. Örneğin, standart **Tamam** düğmesi Için, denetim kimliği **IDOK** olur.
 
   |Seçenek|Açıklama|
   |------------|-----------------|
@@ -117,7 +118,7 @@ Bu sihirbaz başlık dosyasına bir üye değişkeni bildirimi ekler. Seçenekle
 
 - **Denetim türü**
 
-  Eklenmekte olan denetimin türünü ayarlar. Bu kutu değiştirilemez. Örneğin, bir düğmenin denetim türü **düğmesi**vardır ve bir açılan kutuda denetim türü **ComboBox**bulunur. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
+  Eklenmekte olan denetimin türünü ayarlar. Bu kutu değiştirilemez. Örneğin, bir düğmenin denetim türü **düğmesi** vardır ve bir açılan kutuda denetim türü **ComboBox** bulunur. Daha fazla bilgi için bkz. [iletişim kutusu denetimleri ve değişken türleri](#dialog-box-controls-and-variable-types).
 
 - **En fazla karakter**
 
@@ -151,21 +152,21 @@ Aşağıdaki tabloda, MFC ve [iletişim kutusu düzenleyicisinde](../windows/dia
 
 |Denetim|Denetim türü|Denetim değişkeni türü|Değer değişken türü|Min/Max değerleri (yalnızca değer türü)|
 |-------------|------------------|---------------------------|-------------------------|-----------------------------------------|
-|Animasyon denetimi|SysAnimate32|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|Seçim yalnızca denetim|YOK|
-|Düğme|Bu|[CButton](../mfc/reference/cbutton-class.md)|Seçim yalnızca denetim|YOK|
+|Animasyon denetimi|SysAnimate32|[CAnimateCtrl](../mfc/reference/canimatectrl-class.md)|Seçim yalnızca denetim|Yok|
+|Düğme|Bu|[CButton](../mfc/reference/cbutton-class.md)|Seçim yalnızca denetim|Yok|
 |Onay kutusu|DENETLEMEZ|[CButton](../mfc/reference/cbutton-class.md)|`BOOL`|En düşük değer/en büyük değer|
 |Açılır kutu|Öğesı|[CComboBox](../mfc/reference/ccombobox-class.md)|[CString](../atl-mfc-shared/reference/cstringt-class.md)|En fazla karakter|
 |Tarih saat seçici denetimi|SysDateTimePick32|[CDateTimeCtrl](../mfc/reference/cdatetimectrl-class.md)|[CTime](../atl-mfc-shared/reference/ctime-class.md)|En düşük değer/en büyük değer|
 |Düzenleme kutusu|DÜZENLE|[CEdit](../mfc/reference/cedit-class.md)|`CString`, int, UINT, Long, DWORD, float, Double, BYTE, Short, BOOL, `COleDateTime` veya `COleCurrency`|En küçük değer/en büyük değer; bazı destek en fazla karakter|
-|Kısayol denetimi|msctls_hotkey32|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|Seçim yalnızca denetim|YOK|
+|Kısayol denetimi|msctls_hotkey32|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|Seçim yalnızca denetim|Yok|
 |Liste kutusu|KUTUSUNA|[CListBox](../mfc/reference/clistbox-class.md)|`CString`|En fazla karakter|
-|Liste denetimi|SysListView32|[CListCtrl](../mfc/reference/clistctrl-class.md)|Seçim yalnızca denetim|YOK|
+|Liste denetimi|SysListView32|[CListCtrl](../mfc/reference/clistctrl-class.md)|Seçim yalnızca denetim|Yok|
 |Aylık Takvim denetimi|SysMonthCal32|[CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)|`CTime`|En düşük değer/en büyük değer|
-|İlerleme denetimi|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|Seçim yalnızca denetim|YOK|
+|İlerleme denetimi|msctls_progress32|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|Seçim yalnızca denetim|Yok|
 |Zengin düzenleme 2 denetimi|RichEdit20A|[CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)|`CString`|En fazla karakter|
 |Zengin düzenleme denetimi|RICHEDIT|`CRichEditCtrl`|`CString`|En fazla karakter|
 |Kaydırma çubuğu (dikey veya yatay|KAYDıRMA çubuğu|[CScrollBar](../mfc/reference/cscrollbar-class.md)|**`int`**|En düşük değer/en büyük değer|
 |Kaydırıcı denetimi|msctls_trackbar32|[CSliderCtrl](../mfc/reference/csliderctrl-class.md)|**`int`**|En düşük değer/en büyük değer|
-|Döndürme denetimi|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|Seçim yalnızca denetim|YOK|
-|Sekme denetimi|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|Seçim yalnızca denetim|YOK|
-|Ağaç denetimi|SysTreeView32|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|Seçim yalnızca denetim|YOK|
+|Döndürme denetimi|msctls_updown32|[CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)|Seçim yalnızca denetim|Yok|
+|Sekme denetimi|SysTabControl32|[CTabCtrl](../mfc/reference/ctabctrl-class.md)|Seçim yalnızca denetim|Yok|
+|Ağaç denetimi|SysTreeView32|[CTreeCtrl](../mfc/reference/ctreectrl-class.md)|Seçim yalnızca denetim|Yok|

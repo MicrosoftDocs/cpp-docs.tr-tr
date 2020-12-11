@@ -1,16 +1,17 @@
 ---
+description: "Daha fazla bilgi edinin: DLL 'de Otomasyon"
 title: DLL'de Otomasyon
 ms.date: 11/04/2016
 helpviewer_keywords:
 - DLLs [C++], Automation
 - Automation [C++], DLLs
 ms.assetid: 2728ecd1-14e2-4ae0-a946-e749e11dbb74
-ms.openlocfilehash: dedc832d6726dccf8c0c2e88f9f4d5c67590c1c2
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: e0d6d0beec71f3994f6e726c6946b2069d1b081b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163242"
 ---
 # <a name="automation-in-a-dll"></a>DLL'de Otomasyon
 

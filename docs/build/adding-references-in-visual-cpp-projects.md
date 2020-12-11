@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kitaplıkları ve bileşenleri kullanma'
 title: C++ projelerinde kitaplıkları ve bileşenleri kullanma
 ms.date: 12/10/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: 37c0120b7879678ad65dfbbffc17bd6d6791fdfe
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a8933afc1d3d9257e4a8b1d80a39c5fa15a9d438
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229915"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163268"
 ---
 # <a name="consuming-libraries-and-components"></a>Kitaplıkları ve bileşenleri kullanma
 
@@ -32,8 +33,8 @@ Statik kitaplık projeniz aynı çözümde oluşturulmakta ise:
 Statik kitaplık çözümün bir parçası değilse:
 
 1. **Çözüm Gezgini** ' de uygulama projesi düğümüne sağ tıklayın ve ardından **Özellikler**' i seçin.
-2. **VC + + dizinleri** Özellik sayfasında, yolu. lib dosyasının **kitaplık yollarında** bulunduğu dizine ekleyin ve yolu **Include dizinlerinde**kitaplık üst bilgi dosyasına (ler) ekleyin.  
-3. **Bağlayıcı > girişi** özelliği sayfasında,. lib dosyasının adını **ek bağımlılıklara**ekleyin.
+2. **VC + + dizinleri** Özellik sayfasında, yolu. lib dosyasının **kitaplık yollarında** bulunduğu dizine ekleyin ve yolu **Include dizinlerinde** kitaplık üst bilgi dosyasına (ler) ekleyin.  
+3. **Bağlayıcı > girişi** özelliği sayfasında,. lib dosyasının adını **ek bağımlılıklara** ekleyin.
 
 ## <a name="dynamic-link-libraries"></a>Dinamik bağlantı kitaplıkları
 
@@ -54,7 +55,7 @@ UWP veya C++/CLı projelerinde, derleme veya bileşene bir *başvuru* ekleyerek 
 
 ## <a name="reference-properties"></a>Başvuru özellikleri
 
-Her bir başvuru türü için özellikler vardır. Çözüm Gezgini içindeki başvuruyu seçerek ve **Alt + Enter**tuşlarına basarak veya sağ tıklayıp **Özellikler**' i seçerek özellikleri görüntüleyebilirsiniz. Bazı özellikler salt okunurdur ve bazıları değiştirilebilir. Ancak, bu özellikleri genellikle el ile değiştirmeniz gerekmez.
+Her bir başvuru türü için özellikler vardır. Çözüm Gezgini içindeki başvuruyu seçerek ve **Alt + Enter** tuşlarına basarak veya sağ tıklayıp **Özellikler**' i seçerek özellikleri görüntüleyebilirsiniz. Bazı özellikler salt okunurdur ve bazıları değiştirilebilir. Ancak, bu özellikleri genellikle el ile değiştirmeniz gerekmez.
 
 ### <a name="activex-reference-properties"></a>ActiveX başvuru özellikleri
 
@@ -110,7 +111,7 @@ Aşağıdaki özellikler, **Başvurular** bölmesinde seçilen projeden projeden
 
 - **Bağlantı kitaplığı bağımlılıkları**
 
-   Bu özellik **true**olduğunda, proje sistemi bağımsız proje tarafından üretilen. lib dosyalarını bağımlı projeye bağlar. Genellikle, **doğru değerini**belirtmeniz gerekir.
+   Bu özellik **true** olduğunda, proje sistemi bağımsız proje tarafından üretilen. lib dosyalarını bağımlı projeye bağlar. Genellikle, **doğru değerini** belirtmeniz gerekir.
 
 - **Proje tanımlayıcısı**
 
@@ -118,7 +119,7 @@ Aşağıdaki özellikler, **Başvurular** bölmesinde seçilen projeden projeden
 
 - **Kitaplık Bağımlılığı Girişlerini Kullan**
 
-   Bu özellik **false**olduğunda, proje sistemi bağımsız proje tarafından üretilen kitaplık için. obj dosyalarını bağımlı projeye bağmaz. Sonuç olarak, bu değer artımlı bağlamayı devre dışı bırakır. Genellikle, birden çok bağımsız projenin olması halinde uygulamanın oluşturulması uzun zaman sürebileceğinden **yanlış değerini** belirtirsiniz.
+   Bu özellik **false** olduğunda, proje sistemi bağımsız proje tarafından üretilen kitaplık için. obj dosyalarını bağımlı projeye bağmaz. Sonuç olarak, bu değer artımlı bağlamayı devre dışı bırakır. Genellikle, birden çok bağımsız projenin olması halinde uygulamanın oluşturulması uzun zaman sürebileceğinden **yanlış değerini** belirtirsiniz.
 
 ### <a name="read-only-reference-properties-com--net"></a>Salt okuma başvuru özellikleri (COM & .NET)
 
@@ -128,7 +129,7 @@ Aşağıdaki özellikler COM ve .NET derleme başvurularında bulunur ve değiş
 
    Başvurulan derleme için derleme adını görüntüler.
 
-- **Culture (Kültür)**
+- **Kültür**
 
    Seçili başvurunun kültürünü görüntüler.
 

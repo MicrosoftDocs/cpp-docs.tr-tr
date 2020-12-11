@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bir çerçeve penceresinde dosyaları sürükleme ve bırakma'
 title: Bir Çerçeve Penceresinde Dosyaları Sürükleme ve Bırakma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - frame windows [MFC], dragging and dropping files in
 - drag and drop [MFC], Windows Explorer
 ms.assetid: 85560fe9-121b-4105-bd7b-216b966e19fa
-ms.openlocfilehash: 42f21e2441f8ba3d2c6a13503c928880fe100f04
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: dafbeca8b74ee07c80315c15ab93097977125d89
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159953"
 ---
 # <a name="dragging-and-dropping-files-in-a-frame-window"></a>Bir Çerçeve Penceresinde Dosyaları Sürükleme ve Bırakma
 

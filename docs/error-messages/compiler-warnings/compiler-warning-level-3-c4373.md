@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4373'
 title: Derleyici Uyarısı (düzey 3) C4373
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4373
 ms.assetid: 670c0ba3-b7d6-4aed-b207-1cb84da3bcde
-ms.openlocfilehash: b3ab8a0c5d826aa44eee3fea53908091ef0c6803
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a0688f8ed0af1c2854a4449a2fcba31d412a9e4f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225325"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160460"
 ---
 # <a name="compiler-warning-level-3-c4373"></a>Derleyici Uyarısı (düzey 3) C4373
 

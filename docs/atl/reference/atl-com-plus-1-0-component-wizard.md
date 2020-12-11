@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL COM+ 1,0 Bileşen Sihirbazı'
 title: ATL COM+ 1.0 Bileşeni Sihirbazı
 ms.date: 05/08/2019
 helpviewer_keywords:
 - ATL projects, adding components
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
-ms.openlocfilehash: c4e77c7f3c17a90ddd09661b5fea5bad984d3245
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 774accfac1d3481270c70b39d8ec96260a790663
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923808"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158913"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM+ 1.0 Bileşeni Sihirbazı
 
@@ -35,23 +36,23 @@ Projenize eklenecek nesne, arabirim ve sınıfların adlarını belirtin. **Kıs
 
 - **Kısa ad**
 
-   Nesne için kısaltılmış adı ayarlar. Sağladığınız ad, `Class` `Coclass` Bu alanları ayrı olarak değiştirmediğiniz müddetçe, ve adlarını, **. cpp dosyasını** ve **. h dosya** adlarını, **arabirim** adını, **tür** adlarını ve **ProgID** 'yi belirler.
+   Nesne için kısaltılmış adı ayarlar. Sağladığınız ad, `Class` `Coclass` Bu alanları ayrı olarak değiştirmediğiniz müddetçe, ve adlarını, **. cpp dosyasını** ve **. h dosya** adlarını, **arabirim** adını, **tür** adlarını ve **ProgID**'yi belirler.
 
 - **. h dosyası**
 
-   Yeni nesnenin sınıfının başlık dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad** 'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini tıklatın. Var olan bir dosyayı seçerseniz, sihirbazda **son** ' a tıklaana kadar sihirbaz onu seçilen konuma kaydetmez.
+   Yeni nesnenin sınıfının başlık dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad**'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini tıklatın. Var olan bir dosyayı seçerseniz, sihirbazda **son** ' a tıklaana kadar sihirbaz onu seçilen konuma kaydetmez.
 
-   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son** ' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
+   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
 
 - **Sınıf**
 
-   Oluşturulacak sınıfın adını ayarlar. Bu ad, bir sınıf adı için tipik ön ek olan **kısa ad** ' C ' ile verdiğiniz adı temel alır.
+   Oluşturulacak sınıfın adını ayarlar. Bu ad, bir sınıf adı için tipik ön ek olan **kısa ad**' C ' ile verdiğiniz adı temel alır.
 
 - **. cpp dosyası**
 
-   Yeni nesnenin sınıfının uygulama dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad** 'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek için üç nokta düğmesine tıklayın. Bu dosya, sihirbazda **son** ' a tıklaana kadar seçili konuma kaydedilmez.
+   Yeni nesnenin sınıfının uygulama dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad**'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek için üç nokta düğmesine tıklayın. Bu dosya, sihirbazda **son** ' a tıklaana kadar seçili konuma kaydedilmez.
 
-   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son** ' a tıkladığınızda sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
+   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
 
 - **İlişkilendirilmesi**
 

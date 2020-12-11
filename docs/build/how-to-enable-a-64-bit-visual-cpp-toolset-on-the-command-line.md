@@ -1,4 +1,5 @@
 ---
+description: "Şu konuda daha fazla bilgi edinin: nasıl yapılır: 64 bit, x64 'te barındırılan MSVC araç takımını komut satırında etkinleştirme"
 title: 'Nasıl yapılır: komut satırında 64-bit MSVC araç takımını etkinleştirme'
 ms.date: 07/24/2019
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - IPF, command-line compiler
 - x64 [C++], command-line compiler
 ms.assetid: 4da93a19-e20d-4778-902a-5eee9a6a90b5
-ms.openlocfilehash: 60399994cd5fc2f39efeadc6ffcf917138aada37
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: d5e712802f420d425f4a0291d88220c22d4aeb62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078535"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162735"
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-msvc-toolset-on-the-command-line"></a>Nasıl yapılır: komut satırında 64 bit, x64 içinde barındırılan MSVC araç takımını etkinleştirme
 
@@ -25,15 +26,15 @@ Visual Studio, 32 bit, 64 bit veya ARM tabanlı Windows işletim sistemlerinde �
 
 ## <a name="use-a-64-bit-hosted-developer-command-prompt-shortcut"></a>64 bitlik bir barındırılan Geliştirici komut istemi kısayolu kullanın
 
-Windows 10 ' da bu komut istemlerini erişmek için, **Başlat** menüsünde, Visual Studio sürümünüz için klasörü açın, örneğin **Visual Studio 2019**ve ardından x64 yerel veya çapraz araç Geliştirici komut istemlerinin birini seçin.
+Windows 10 ' da bu komut istemlerini erişmek için, **Başlat** menüsünde, Visual Studio sürümünüz için klasörü açın, örneğin **Visual Studio 2019** ve ardından x64 yerel veya çapraz araç Geliştirici komut istemlerinin birini seçin.
 
 ![x64 Yerel Araçları Komut İstemi](media/x64-native-tools-command-prompt.png "Başlangıç menüsünde x64 yerel araçları")
 
-Bu komut istemlerini Windows 8 ' de erişmek için, **Başlangıç** ekranında **tüm uygulamalar**' ı açın. Visual Studio 'nun yüklü sürümü için başlık altında, **Visual Studio** klasörünü açın (Visual Studio 'nun eski sürümlerinde, **Visual Studio Araçları**adlandırılmış olabilir). Windows 'un önceki sürümlerinde **Başlat**' ı, **tüm programlar**' ı, **Visual Studio** sürümünüz için klasörü (ve Visual Studio 'nun eski sürümlerinde **Visual Studio Araçları**) seçin. Daha fazla bilgi için bkz. [Geliştirici komut istemi kısayolları](building-on-the-command-line.md#developer_command_prompt_shortcuts).
+Bu komut istemlerini Windows 8 ' de erişmek için, **Başlangıç** ekranında **tüm uygulamalar**' ı açın. Visual Studio 'nun yüklü sürümü için başlık altında, **Visual Studio** klasörünü açın (Visual Studio 'nun eski sürümlerinde, **Visual Studio Araçları** adlandırılmış olabilir). Windows 'un önceki sürümlerinde **Başlat**' ı, **tüm programlar**' ı, **Visual Studio** sürümünüz için klasörü (ve Visual Studio 'nun eski sürümlerinde **Visual Studio Araçları**) seçin. Daha fazla bilgi için bkz. [Geliştirici komut istemi kısayolları](building-on-the-command-line.md#developer_command_prompt_shortcuts).
 
-## <a name="use-vcvarsallbat-to-set-a-64-bit-hosted-build-architecture"></a>64 bitlik bir barındırılan derleme mimarisi ayarlamak için vcvarsall. bat kullanın
+## <a name="use-vcvarsallbat-to-set-a-64-bit-hosted-build-architecture"></a>64 bitlik bir barındırılan derleme mimarisi ayarlamak için Vcvarsall.bat kullanma
 
-Tüm yerel veya çapraz derleyici araçları derleme yapılandırmalarının, vcvarsall. bat komut dosyası çalıştırılarak komut satırında kullanılabilir. Bu komut dosyası, varolan bir komut istemi penceresinde belirli bir yapı mimarisini etkinleştiren yolu ve ortam değişkenlerini yapılandırır. Belirli yönergeler için bkz. [Geliştirici komut dosyası konumları](building-on-the-command-line.md#developer_command_file_locations).
+Herhangi bir yerel veya çapraz derleyici araçları derleme yapılandırması, vcvarsall.bat komut dosyası çalıştırılarak komut satırında kullanılabilir. Bu komut dosyası, varolan bir komut istemi penceresinde belirli bir yapı mimarisini etkinleştiren yolu ve ortam değişkenlerini yapılandırır. Belirli yönergeler için bkz. [Geliştirici komut dosyası konumları](building-on-the-command-line.md#developer_command_file_locations).
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: TZNAME_MAX'
 title: TZNAME_MAX
 ms.date: 10/22/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - TZNAME_MAX constant
 ms.assetid: e2286cb8-751d-4557-9650-5c4b98a8f7be
-ms.openlocfilehash: 71e5becd39f49d86573483c5451a9a2415d84181
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1c426c82bd198998169c385366ae5188cabd02d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304273"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162176"
 ---
-# <a name="tznamemax"></a>TZNAME_MAX
+# <a name="tzname_max"></a>TZNAME_MAX
 
-**Eski**. Bir saat dilimi adı değişkeni için izin verilen maksimum dize uzunluğu. Bu makro tanımlandığı \<lımıts.h > Visual Studio 2012 ve önceki sürümleri. Visual Studio 2013 ve üzeri sürümlerde tanımlanmadı. Geçerli saat dilimi adını barındırmak için gereken uzunluk almak için kullanın [_get_tzname](../c-runtime-library/reference/get-tzname.md).
+**Kullanımdan kalktı**. Bir saat dilimi ad değişkeni için izin verilen en büyük dize uzunluğu. Bu makro, \<limits.h> Visual Studio 2012 ve önceki sürümlerde tanımlanmıştır. Visual Studio 2013 ve sonraki sürümlerde tanımlı değildir. Geçerli saat dilimi adını tutmak için gereken uzunluğu almak için [_get_tzname](../c-runtime-library/reference/get-tzname.md)kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <limits.h>
@@ -25,6 +26,6 @@ ms.locfileid: "62304273"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ortam Sabitleri](../c-runtime-library/environmental-constants.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)<br/>
+[Çevresel sabitler](../c-runtime-library/environmental-constants.md)<br/>
+[Global sabitler](../c-runtime-library/global-constants.md)<br/>
 [_get_tzname](../c-runtime-library/reference/get-tzname.md)

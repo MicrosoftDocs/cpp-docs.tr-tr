@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _variant_t Ilişkisel Işleçler'
 title: _variant_t İlişkisel İşleçleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - operator != [C++], relational operators
 - == operator [C++], with specific Visual C++ objects
 ms.assetid: 141bacb8-41a2-44dd-b3c0-4ad1f884f4ea
-ms.openlocfilehash: 6e0296a2bf4ce97e41fdf6208c3dd1c6b91215dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0a9c339bc67527e258c0d1f69060cde251c8adb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226951"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161435"
 ---
 # <a name="_variant_t-relational-operators"></a>_variant_t İlişkisel İşleçleri
 
@@ -28,7 +29,7 @@ ms.locfileid: "87226951"
 
 `_variant_t`Eşitlik veya eşitsizlik için iki nesneyi karşılaştırın.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 bool operator==(

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL basit nesnesi ekleme'
 title: ATL Basit Nesnesi Ekleme
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - objects [ATL]
 - ATL, simple objects
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
-ms.openlocfilehash: 85c19c483ff27bd34431ec163e3baadac1855236
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9e354f7d361c64f20657190bc53696f9878fa134
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158951"
 ---
 # <a name="adding-an-atl-simple-object"></a>ATL Basit Nesnesi Ekleme
 

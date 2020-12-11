@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önceden derlenmiş üst bilgi dosyaları'
 title: Önceden Derlenmiş Başlık Dosyaları
 ms.date: 10/24/2019
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - cl.exe compiler, precompiling code
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-ms.openlocfilehash: c68de0ee8e6376731254adf965fb9a81f10f2861
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9f3d6847043f988f4b0ef57df9b1558c1cd5655c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163138"
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Başlık Dosyaları
 
-Visual Studio 'da yeni bir proje oluşturduğunuzda, projeye *pch. h* adlı *önceden derlenmiş bir üstbilgi dosyası* eklenir. (Visual Studio 2017 ve önceki sürümlerde dosya *stbafx. h*olarak adlandırılmıştı.) Dosyanın amacı, yapı sürecini hızlandırmaya yönelik olur. Tüm kararlı üstbilgi dosyaları, örneğin gibi standart kitaplık üstbilgileri dahil edilmelidir `<vector>` . Ön derlenmiş üstbilgi yalnızca, veya içerdiği herhangi bir dosya değiştirildiğinde derlenir. Yalnızca proje kaynak kodunuzda değişiklik yaparsanız, derleme ön derlenmiş üst bilgi için derlemeyi atlar.
+Visual Studio 'da yeni bir proje oluşturduğunuzda, projeye *pch. h* adlı *önceden derlenmiş bir üstbilgi dosyası* eklenir. (Visual Studio 2017 ve önceki sürümlerde dosya *stbafx. h* olarak adlandırılmıştı.) Dosyanın amacı, yapı sürecini hızlandırmaya yönelik olur. Tüm kararlı üstbilgi dosyaları, örneğin gibi standart kitaplık üstbilgileri dahil edilmelidir `<vector>` . Ön derlenmiş üstbilgi yalnızca, veya içerdiği herhangi bir dosya değiştirildiğinde derlenir. Yalnızca proje kaynak kodunuzda değişiklik yaparsanız, derleme ön derlenmiş üst bilgi için derlemeyi atlar.
 
-Önceden derlenmiş üst bilgiler için derleyici seçenekleri [/y](reference/y-precompiled-headers.md). Proje özelliği sayfalarında, Seçenekler, **önceden derlenmiş üst bilgiler > > C/C++ yapılandırma özellikleri**altında bulunur. Önceden derlenmiş üst bilgileri kullanmayı seçebilirsiniz ve çıkış dosyasının adını ve yolunu belirtebilirsiniz.
+Önceden derlenmiş üst bilgiler için derleyici seçenekleri [/y](reference/y-precompiled-headers.md). Proje özelliği sayfalarında, Seçenekler, **önceden derlenmiş üst bilgiler > > C/C++ yapılandırma özellikleri** altında bulunur. Önceden derlenmiş üst bilgileri kullanmayı seçebilirsiniz ve çıkış dosyasının adını ve yolunu belirtebilirsiniz.
 
 ## <a name="custom-precompiled-code"></a>Özel önceden derlenmiş kod
 
@@ -148,7 +149,7 @@ Bu pragmalar, önceden derlenmiş üstbilginin bir parçası olarak tutulur ve �
 
 Bu tabloda, ön derlenmiş üst bilgi kullanılırken tutarsızlık uyarısı tetikleyebilen derleyici seçenekleri listelenmektedir:
 
-|Seçenek|Name|Kural|
+|Seçenek|Ad|Kural|
 |------------|----------|----------|
 |Belirtilmediyse|Sabitleri ve makroları tanımlama|Ön derlenmiş üstbilgiyi ve geçerli derlemeyi oluşturan derleme arasında aynı olmalıdır. Tanımlı sabitlerin durumu işaretli değil, ancak dosyalarınız değiştirilen sabitlerin değerlerine bağlıysa öngörülemeyen sonuçlar ortaya çıkabilir.|
 |/E veya/EP|Önişlemci çıkışını standart çıktıya Kopyala|Önceden derlenmiş üstbilgiler/E veya/EP seçeneğiyle çalışmaz.|

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: ortak Visual C++ ARM geçiş sorunları'
 title: Genel Visual C++ ARM Geçiş Sorunları
 ms.date: 05/06/2019
 ms.assetid: 0f4c434e-0679-4331-ba0a-cc15dd435a46
-ms.openlocfilehash: 889eed2b02362f33446cd9441ef84f406817b01a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4b867d94fa8b80bd1a5be12b50718b979ee92a69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224077"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163086"
 ---
 # <a name="common-visual-c-arm-migration-issues"></a>Genel Visual C++ ARM Geçiş Sorunları
 
@@ -54,7 +55,7 @@ Kaynak türündeki bitlerin sayısını aşan bir vardiya işleminin sonucu tan�
 
 ### <a name="variable-arguments-varargs-behavior"></a>Değişken bağımsız değişkenler (varargs) davranışı
 
-ARM mimarisinde, yığına geçirilen değişken bağımsız değişken listesindeki parametreler hizalamasına tabidir. Örneğin, 64 bitlik bir parametre 64 bit sınırında hizalanır. X86 ve x64 üzerinde, yığına geçirilen bağımsız değişkenler hizalama ve paket sıkı bir şekilde uygulanmaz. Bu fark, `printf` değişken bağımsız değişken listesinin beklenen düzeni tam olarak eşleşmiyorsa, örneğin, x86 veya x64 mimarilerinde bazı değerlerin bir alt kümesi için çalışsa bile, ARM 'de doldurma olarak tasarlanan bellek adreslerini okuma gibi değişen bir işlev oluşmasına neden olabilir. Şu örneği göz önünde bulundurun:
+ARM mimarisinde, yığına geçirilen değişken bağımsız değişken listesindeki parametreler hizalamasına tabidir. Örneğin, 64 bitlik bir parametre 64 bit sınırında hizalanır. X86 ve x64 üzerinde, yığına geçirilen bağımsız değişkenler hizalama ve paket sıkı bir şekilde uygulanmaz. Bu fark, `printf` değişken bağımsız değişken listesinin beklenen düzeni tam olarak eşleşmiyorsa, örneğin, x86 veya x64 mimarilerinde bazı değerlerin bir alt kümesi için çalışsa bile, ARM 'de doldurma olarak tasarlanan bellek adreslerini okuma gibi değişen bir işlev oluşmasına neden olabilir. Bu örneği ele alalım:
 
 ```C
 // notice that a 64-bit integer is passed to the function, but '%d' is used to read it.

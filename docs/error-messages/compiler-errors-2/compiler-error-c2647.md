@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2647'
 title: Derleyici hatası C2647
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2647
 ms.assetid: 1034589e-bc3e-41a6-831f-2a1a4b8a2500
-ms.openlocfilehash: 9553c85efeedb4d3eee4bd40f9e3b86707fd7eb1
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: df434adde457ea9a3300291ec6fac2f49d806699
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758391"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160798"
 ---
 # <a name="compiler-error-c2647"></a>Derleyici hatası C2647
 
 ' operator ': ' type2 ' üzerinde bir ' type1 ' başvurusu yapılamıyor
 
-Üye işaretçisi işlecinin (`->*` veya `.*`) sol işleneni örtük olarak sağ işleçle ilgili bir türe dönüştürülemez.
+Bir işaretçiden üyeye işlecinin ( `->*` veya) sol işleneni `.*` örtük olarak sağ işleçle ilgili bir türe dönüştürülemez.
 
 Aşağıdaki örnek C2647 oluşturur:
 

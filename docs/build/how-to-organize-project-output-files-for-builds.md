@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: derlemeler için proje çıktı dosyalarını düzenleme'
 title: 'Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme'
 ms.date: 05/06/2019
 helpviewer_keywords:
 - C++, output files
 - output files, organizing
 ms.assetid: 521d95ea-2dcc-4da0-b5eb-ac3e57941446
-ms.openlocfilehash: 13aa3d1f8e2993ca34163ecbc0515948db56eb79
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c1283cb1cc275100551eb9de0a2c0af370aaec51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328523"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162670"
 ---
 # <a name="how-to-organize-project-output-files-for-builds"></a>Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme
 
@@ -20,7 +21,7 @@ Bu konuda, proje çıktı dosyalarını düzenlemek için en iyi yöntemler aç�
 
 #### <a name="to-reference-assemblies-with-using"></a>#Using bütünleştirilmiş kodlara başvurmak için
 
-1. Bir derlemeye, gibi #using yönergesini kullanarak doğrudan kodunuzda başvurabilirsiniz `#using <System.Data.dll>`. Daha fazla bilgi için bkz. [#using yönergesi](../preprocessor/hash-using-directive-cpp.md).
+1. Bir derlemeye, gibi #using yönergesini kullanarak doğrudan kodunuzda başvurabilirsiniz `#using <System.Data.dll>` . Daha fazla bilgi için bkz. [#using yönergesi](../preprocessor/hash-using-directive-cpp.md).
 
    Belirtilen dosya, MSIL 'de olduğu sürece bir. dll,. exe,. netmodule veya. obj olabilir. Başvurulan bileşen herhangi bir dilde oluşturulabilir. Bu seçeneği kullanarak, meta verilerin MSIL 'den ayıklanmasından bu yana IntelliSense 'e erişebilirsiniz. Söz konusu dosya projenin yolunda olmalıdır; Aksi takdirde, proje derlenmez ve IntelliSense kullanılabilir olmaz. Dosyanın yolda olup olmadığını belirlemenin kolay bir yolu #using satırına sağ tıklayıp **belgeyi aç** komutunu kullanmaktır. Dosya bulunamazsa size bildirim gönderilir.
 
@@ -62,11 +63,11 @@ Varsayılan olarak, projeler, tüm çıktı dosyaları proje dizininin bir alt d
 
 Tüm gerekli çıkış dosyaları (yürütülebilir dosyalar, artımlı bağlayıcı dosyaları ve PDB dosyaları gibi) ortak bir çözüm dizinine kopyalanır. Bu nedenle, benzer yapılandırmalara sahip bir dizi C++ projesi içeren bir çözümle çalışırken, Basitleştirilmiş bağlama ve dağıtım için tüm çıkış dosyaları merkezi hale getirilmiş olur. Uygulama/kitaplık, bu dosyaları birlikte tutduklarında (dosyaların yolda olması garanti edildiğinden) beklendiği gibi çalıştığından emin olabilirsiniz.
 
-Çıkış dosyalarının konumu, üretim ortamına dağıtım yaparken önemli bir sorun olabilir. IDE 'de projeleri çalıştırırken, dahil edilen kitaplıkların yollarının üretim ortamındaki ile aynı olması gerekmez. Örneğin, kodunuzda varsa `#using "../../lib/debug/mylib.dll"` ve daha sonra MyLib. dll dosyasını farklı bir göreli konuma dağıtırsanız, uygulama çalışma zamanında başarısız olur. Bunu önlemek için kodunuzda #include deyimlerde göreli yollar kullanmaktan kaçının. Gerekli dosyaların proje derleme yolunda olduğundan ve benzer şekilde karşılık gelen üretim dosyalarının düzgün yerleştirildiğinden emin olmanın daha iyi bir yoludur.
+Çıkış dosyalarının konumu, üretim ortamına dağıtım yaparken önemli bir sorun olabilir. IDE 'de projeleri çalıştırırken, dahil edilen kitaplıkların yollarının üretim ortamındaki ile aynı olması gerekmez. Örneğin, kodunuzda varsa ve `#using "../../lib/debug/mylib.dll"` sonra farklı bir göreli konuma mylib.dll dağıtırsanız, uygulama çalışma zamanında başarısız olur. Bunu önlemek için kodunuzda #include deyimlerde göreli yollar kullanmaktan kaçının. Gerekli dosyaların proje derleme yolunda olduğundan ve benzer şekilde karşılık gelen üretim dosyalarının düzgün yerleştirildiğinden emin olmanın daha iyi bir yoludur.
 
 #### <a name="how-to-specify-where-output-files-go"></a>Çıkış dosyalarının nereye gitbağlanacağını belirtme
 
-1. Proje çıkış ayarlarının konumu projenin **özellik sayfalarında**bulunabilir. **Yapılandırma özellikleri** ' nin yanındaki düğümü genişletin ve **genel**' i seçin. Çıkış **dizini**' nin yanında çıktı konumu belirtilir. Daha fazla bilgi için bkz. [genel özellik sayfası (proje)](reference/general-property-page-project.md).
+1. Proje çıkış ayarlarının konumu projenin **özellik sayfalarında** bulunabilir. **Yapılandırma özellikleri** ' nin yanındaki düğümü genişletin ve **genel**' i seçin. Çıkış **dizini**' nin yanında çıktı konumu belirtilir. Daha fazla bilgi için bkz. [genel özellik sayfası (proje)](reference/general-property-page-project.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

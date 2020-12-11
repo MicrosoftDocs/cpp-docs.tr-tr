@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IEEE Floating-Point temsili'
 title: IEEE Kayan Noktası Temsili
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - long double
 - real*4 value
 ms.assetid: 537833e8-fe05-49fc-8169-55fd0314b195
-ms.openlocfilehash: 47802a32d43824b4e568ca520c360dc7b12cbf8c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9de48975ba13fae6117b095565f22265e28edf07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231552"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162657"
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE Kayan Noktası Temsili
 
@@ -29,7 +30,7 @@ Değerler aşağıdaki gibi depolanır:
 |tek duyarlıklı|imza biti, 8 bit üs, 23 bit mantisinin|
 |Çift duyarlıklı|imza biti, 11 bit üs, 52-bit mantisinin|
 
-Tek duyarlıklı ve çift duyarlıklı biçimlerdeki kesirli bölümünde önde gelen 1 ' de bir varsayılır. Kesirli parçaya *mantisinin* denir (bazen *Mantis*olarak bilinir). Bu önde gelen 1 bellekte depolanmaz, bu nedenle katsayılar gerçekten 24 veya 53 bittir, ancak bir daha az bit depolansa bile. Çift genişletilmiş duyarlık biçimi aslında bu biti depolar.
+Tek duyarlıklı ve çift duyarlıklı biçimlerdeki kesirli bölümünde önde gelen 1 ' de bir varsayılır. Kesirli parçaya *mantisinin* denir (bazen *Mantis* olarak bilinir). Bu önde gelen 1 bellekte depolanmaz, bu nedenle katsayılar gerçekten 24 veya 53 bittir, ancak bir daha az bit depolansa bile. Çift genişletilmiş duyarlık biçimi aslında bu biti depolar.
 
 Üsler, olası değerinin yarısını altına alınır. Gerçek üs değeri almak için bu farkı depolanan üsden çıkarsbir hale getirmek anlamına gelir. Depolanan üs, sapma değerinden küçükse, aslında negatif bir üs olur.
 
@@ -42,7 +43,7 @@ Tek duyarlıklı ve çift duyarlıklı biçimlerdeki kesirli bölümünde önde 
 
 Bu üsler on üsleri değildir; ikisi de iki üsüsleri olur. Diğer bir deyişle, 8 bit depolanan üsler-127 ile 127 arasında, 0 ile 254 arasında depolanabilir. 2<sup>127</sup> değeri kabaca, tek duyarlıklı gerçek limiti olan 10<sup>38</sup>ile eşdeğerdir.
 
-Mantisinin 1.XXX... biçiminin ikili bir kesri olarak depolanır. Bu kesir 1 ' den büyük veya buna eşit ve 2 ' den küçük bir değere sahip. Gerçek sayılar her zaman *normalleştirilmiş biçimde*depolanır. Diğer bir deyişle, mantisinin, mantisinin 'ın yüksek sıra biti her zaman 1 olacak şekilde sola kaydır. Bu bit *her zaman* 1 olduğundan, tek duyarlıklı ve çift duyarlıklı biçimlerdeki (depolanmamış) varsayılır. İkili (ondalık değil) noktasının yalnızca önünde 1 ' in sağında olduğu varsayılır.
+Mantisinin 1.XXX... biçiminin ikili bir kesri olarak depolanır. Bu kesir 1 ' den büyük veya buna eşit ve 2 ' den küçük bir değere sahip. Gerçek sayılar her zaman *normalleştirilmiş biçimde* depolanır. Diğer bir deyişle, mantisinin, mantisinin 'ın yüksek sıra biti her zaman 1 olacak şekilde sola kaydır. Bu bit *her zaman* 1 olduğundan, tek duyarlıklı ve çift duyarlıklı biçimlerdeki (depolanmamış) varsayılır. İkili (ondalık değil) noktasının yalnızca önünde 1 ' in sağında olduğu varsayılır.
 
 Kayan nokta gösteriminin biçimi aşağıdaki gibidir:
 
@@ -51,7 +52,7 @@ Kayan nokta gösteriminin biçimi aşağıdaki gibidir:
 |tek duyarlıklı| `SXXXXXXX`|`XMMMMMMM`|`MMMMMMMM`|`MMMMMMMM`|||
 |Çift duyarlıklı|`SXXXXXXX`|`XXXXMMMM`|`MMMMMMMM`|`MMMMMMMM`|...|`MMMMMMMM`|
 
-`S`işaret bitini temsil eder, bu, ' `X` nin taraflı üs bitleridir ve `M` mantisinin bitleridir. En soldaki bit tek duyarlıklı ve çift duyarlıklı biçimlerde varsayılır.
+`S` işaret bitini temsil eder, bu, ' `X` nin taraflı üs bitleridir ve `M` mantisinin bitleridir. En soldaki bit tek duyarlıklı ve çift duyarlıklı biçimlerde varsayılır.
 
 İkili noktayı düzgün bir şekilde kaydırmak için, öncelikle üs değeri kaldırır ve ardından ikili noktayı sağ veya uygun bit sayısının soluna taşıyın.
 
@@ -73,7 +74,7 @@ Normalleştirilmiş biçimdeki en küçük sayıdan daha küçük olan sayılar�
 
 ### <a name="nan---not-a-number"></a>NaN-sayı değil
 
-IEEE kayan nokta biçiminde 0/0 gibi gerçek sayı olmayan değerleri temsil etmek mümkündür. Bu türden bir değere *Nan*adı verilir. Bir NaN, hepsi bir üssün ve sıfır olmayan bir mantisinin temsil edilir. İki tür NaNs, *sessiz* nans, veya qnans, ve nans veya snans *sinyalleri* vardır. Sessiz NaNs, mantisinin içinde önde gelen bir ifadeye sahiptir ve bir ifadeyle yayılamaz. Sonsuz bir değeri temsil eder, sonsuz ile bölme sonucu veya sonsuz değeri sıfıra çarpar. NaNs sinyalin mantisinin içinde önünde sıfır var. Bunlar, kayan nokta donanım özel durumu sinyali vermek için geçerli olmayan işlemler için kullanılırlar.
+IEEE kayan nokta biçiminde 0/0 gibi gerçek sayı olmayan değerleri temsil etmek mümkündür. Bu türden bir değere *Nan* adı verilir. Bir NaN, hepsi bir üssün ve sıfır olmayan bir mantisinin temsil edilir. İki tür NaNs, *sessiz* nans, veya qnans, ve nans veya snans *sinyalleri* vardır. Sessiz NaNs, mantisinin içinde önde gelen bir ifadeye sahiptir ve bir ifadeyle yayılamaz. Sonsuz bir değeri temsil eder, sonsuz ile bölme sonucu veya sonsuz değeri sıfıra çarpar. NaNs sinyalin mantisinin içinde önünde sıfır var. Bunlar, kayan nokta donanım özel durumu sinyali vermek için geçerli olmayan işlemler için kullanılırlar.
 
 ## <a name="examples"></a>Örnekler
 
@@ -135,4 +136,4 @@ Aşağıda, tek duyarlıklı biçimdeki bazı örnekler verilmiştir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan noktalı sayıların neden duyarlık Kaybedemeyebilir](why-floating-point-numbers-may-lose-precision.md)
+[Floating-Point sayıların neden duyarlık Kaybedemeyebilir](why-floating-point-numbers-may-lose-precision.md)

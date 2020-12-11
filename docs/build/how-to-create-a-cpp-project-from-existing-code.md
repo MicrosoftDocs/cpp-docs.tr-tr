@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: Varolan koddan C++ projesi oluşturma'
 title: 'Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma'
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 - vc.appwiz.importwiz.debugsettings
 - vc.appwiz.importwiz.releasesettings
 ms.assetid: e328a938-395c-48ea-9e35-dd433de12b31
-ms.openlocfilehash: 5e59230186380b787c95dbe08914bcd9d3ca2407
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 0bd08275a812ebc6a2a99d0e12c8b71e30a24b90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162787"
 ---
 # <a name="how-to-create-a-c-project-from-existing-code"></a>Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma
 
@@ -25,7 +26,7 @@ Varolan kod dosyalarının bir C++ projesine taşıma, IDE içinde yerleşik ola
 
 ### <a name="to-create-a-c-project-from-existing-code"></a>Varolan koddan bir C++ projesi oluşturmak için
 
-1. **Dosya** menüsünde,**Varolan koddan** **Yeni** > proje ' yi seçin.
+1. **Dosya** menüsünde,   >  **Varolan koddan yeni proje**' yi seçin.
 
 1. Proje konumunuzu, kaynak dosyalarınızın dizinini ve sihirbazın yeni projeye aktardığı dosya türlerini belirtin. Devam etmek için **İleri**’yi seçin.
 
@@ -42,7 +43,7 @@ Varolan kod dosyalarının bir C++ projesine taşıma, IDE içinde yerleşik ola
 
     | Ayar | Açıklama |
     | --- | --- |
-    | **Visual Studio kullanma** | Yeni projeyi oluşturmak için Visual Studio 'ya dahil edilen derleme araçlarının kullanılacağını belirtir. Bu seçenek varsayılan olarak seçilidir.<br/><br/>Sihirbazın oluşturduğu proje türünü belirtmek için **proje türünü** seçin. **Windows uygulama projesi**, **konsol uygulama projesi**, **dınamık olarak bağlı kitaplık (dll) PROJESI**veya **statik kitaplık (LIB) projesi**seçin.<br/><br/>Yeni projeye ATL desteği eklemek için **atl desteği ekle** ' ye bakın.<br/><br/>Yeni projeye MFC desteği eklemek için **MFC desteği ekleyin** ' i işaretleyin.<br/><br/>Projeye CLR programlama desteği eklemek için **ortak dil çalışma zamanı desteği ekleyin** ' i işaretleyin. C++ için Yönetilen Uzantılar sözdizimiyle uyumluluk için **ortak dil çalışma zamanı (eski sözdizimi)** , Visual Studio 2005 ' den önceki CLR programlama sözdizimi gibi uyumluluk türü Için **ortak dil çalışma zamanı desteğini** seçin. |
+    | **Visual Studio kullanma** | Yeni projeyi oluşturmak için Visual Studio 'ya dahil edilen derleme araçlarının kullanılacağını belirtir. Bu seçenek varsayılan olarak seçilidir.<br/><br/>Sihirbazın oluşturduğu proje türünü belirtmek için **proje türünü** seçin. **Windows uygulama projesi**, **konsol uygulama projesi**, **dınamık olarak bağlı kitaplık (dll) PROJESI** veya **statik kitaplık (LIB) projesi** seçin.<br/><br/>Yeni projeye ATL desteği eklemek için **atl desteği ekle** ' ye bakın.<br/><br/>Yeni projeye MFC desteği eklemek için **MFC desteği ekleyin** ' i işaretleyin.<br/><br/>Projeye CLR programlama desteği eklemek için **ortak dil çalışma zamanı desteği ekleyin** ' i işaretleyin. C++ için Yönetilen Uzantılar sözdizimiyle uyumluluk için **ortak dil çalışma zamanı (eski sözdizimi)** , Visual Studio 2005 ' den önceki CLR programlama sözdizimi gibi uyumluluk türü Için **ortak dil çalışma zamanı desteğini** seçin. |
     | **Dış yapı sistemi kullan** | Yeni projeyi oluşturmak için Visual Studio 'ya dahil olmayan yapı araçlarının kullanılacağını belirtir. Bu seçenek belirlendiğinde, **hata ayıklama yapılandırma ayarlarını belirtin** ve **Yayın yapılandırma ayarlarını belirtin** sayfasında derleme komut satırları ' nı belirtebilirsiniz. |
 
     ![Proje ayarları](media/settings.png)

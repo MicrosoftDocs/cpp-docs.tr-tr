@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: COM arabirimi giriş noktaları'
 title: COM Arabirimi Giriş Noktaları
 ms.date: 03/27/2019
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - MFC, managing state data
 - COM interfaces, entry points
 ms.assetid: 9e7421dc-0731-4748-9e1b-90acbaf26d77
-ms.openlocfilehash: 132dd7394119081dcaeb098c2088782ff5d40ae4
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 805ac906c3ccca246d1af71c689aaf768f789999
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619337"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160018"
 ---
 # <a name="com-interface-entry-points"></a>COM Arabirimi Giriş Noktaları
 
 Bir COM arabiriminin üye işlevleri için, bir `METHOD_PROLOGUE` içe aktarılmış arabirimin yöntemlerini çağırırken doğru genel durumu korumak için makrosunu kullanın.
 
-Genellikle, türetilmiş nesneler tarafından uygulanan arabirimlerin üye işlevleri `CCmdTarget` , işaretçinin otomatik olarak başlatılmasını sağlamak için bu makroyu zaten kullanır `pThis` . Örnek:
+Genellikle, türetilmiş nesneler tarafından uygulanan arabirimlerin üye işlevleri `CCmdTarget` , işaretçinin otomatik olarak başlatılmasını sağlamak için bu makroyu zaten kullanır `pThis` . Örneğin:
 
 [!code-cpp[NVC_MFCConnectionPoints#5](codesnippet/cpp/com-interface-entry-points_1.cpp)]
 

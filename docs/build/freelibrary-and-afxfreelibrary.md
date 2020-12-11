@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: FreeLibrary ve AfxFreeLibrary'
 title: FreeLibrary ve AfxFreeLibrary
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - explicit linking [C++]
 - DLLs [C++], unloading
 ms.assetid: 4a48d290-3971-43e9-8e97-ba656cd0c8f8
-ms.openlocfilehash: 0b530aca2ab036de186ff3fdb11be23f41e12d05
-ms.sourcegitcommit: b8c22e6d555cf833510753cba7a368d57e5886db
+ms.openlocfilehash: ea4da8c69aa663add85e740d99b68731e263b442
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821557"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162800"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary ve AfxFreeLibrary
 
 Bir DLL 'ye açıkça bağlanan süreçler, DLL modülüne artık gerek kalmadığında [FreeLibrary](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) işlevini çağırır. Bu işlev, modülün başvuru sayısını azaltır. Ve başvuru sayısı sıfırsa, işlemin adres alanından eşlenmemiş olur.
 
-Bir MFC uygulamasında, bir MFC uzantı DLL 'sini kaldırmak `FreeLibrary` Için yerine [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) ' i kullanın. İçin `AfxFreeLibrary` Arabirim (işlev prototipi) ile `FreeLibrary`aynıdır.
+Bir MFC uygulamasında, bir MFC uzantı DLL 'sini kaldırmak için yerine [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) ' i kullanın `FreeLibrary` . İçin arabirim (işlev prototipi) `AfxFreeLibrary` ile aynıdır `FreeLibrary` .
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 

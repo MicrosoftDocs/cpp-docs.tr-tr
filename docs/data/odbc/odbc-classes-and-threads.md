@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ODBC sınıfları ve Iş parçacıkları'
 title: ODBC Sınıfları ve İş Parçacıkları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,27 +7,27 @@ helpviewer_keywords:
 - ODBC, multithreaded applications
 - threading [MFC], ODBC support
 ms.assetid: 16543926-7331-41a6-ba50-72288f2a61b7
-ms.openlocfilehash: aaf54a3a1d616cde5742dad45955bd415f612d60
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bff5ef5a53543b2e0ffa7888f469ed4ce1e54a37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368696"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161085"
 ---
 # <a name="odbc-classes-and-threads"></a>ODBC Sınıfları ve İş Parçacıkları
 
-MFC 4.2 ile başlayarak, MFC ODBC sınıfları için çok iş parçacığı desteği vardır. Ancak, MFC'nin DAO sınıfları için çok iş parçacığı desteği sağlamadığını unutmayın.
+MFC 4,2 ' den başlayarak MFC ODBC sınıfları için çoklu iş parçacıklı destek vardır. Ancak, MFC 'nin DAO sınıfları için çoklu iş parçacıklı destek sağlamayacağını unutmayın.
 
-ODBC sınıfları için çok iş parçacığı desteği bazı sınırlamalar vardır. Bu sınıflar ODBC API'sini sardığından, üzerinde üretildikleri bileşenlerin çok iş parçacığı desteğiyle sınırlıdır. Örneğin, birçok ODBC sürücüsü iş parçacığı için güvenli değildir; bu nedenle, bu sürücülerden biriyle kullanırsanız MFC ODBC sınıfları iş parçacığı için güvenli değildir. Belirli bir sürücünün iş parçacığı için güvenli olup olmadığını doğrulamanız gerekir.
+ODBC sınıfları için çoklu iş parçacığı desteğinin bazı sınırlamaları vardır. Bu sınıflar ODBC API 'sini sardığı için, bunların derlendikleri bileşenlerin çoklu iş parçacıklı desteğiyle kısıtlıdır. Örneğin, birçok ODBC sürücüsü iş parçacığı açısından güvenli değildir; Bu nedenle, MFC ODBC sınıfları bu sürücülerden biriyle kullanıyorsanız iş parçacığı güvenli değildir. Belirli sürücünüzün iş parçacığı açısından güvenli olup olmadığını doğrulamanız gerekir.
 
-Çok iş parçacığı uygulaması oluştururken, aynı nesneyi işlemek için birden çok iş parçacığı kullanırken çok dikkatli olmalısınız. Örneğin, iki iş `CRecordset` parçacığı aynı nesnenin kullanılması veri alırken sorunlara neden olabilir; bir iş parçacığı bir getir işlemi diğer iş parçacığı getirilen verileri üzerine yazabilirsiniz. MFC ODBC sınıflarının ayrı iş parçacıklarında daha yaygın `CDatabase` kullanımı, her iş parçacığında ayrı `CRecordset` bir nesneyle aynı ODBC bağlantısını kullanmak için açık bir nesneyi iş parçacıkları arasında paylaşmaktır. Açılmamış `CDatabase` bir nesneyi başka bir `CRecordset` iş parçacığındaki bir nesneye geçirmemeniz gerektiğini unutmayın.
+Çok iş parçacıklı bir uygulama oluştururken, aynı nesneyi işlemek için birden çok iş parçacığı kullanırken çok dikkatli olmanız gerekir. Örneğin, `CRecordset` iki iş parçacığında aynı nesnenin kullanılması veri alınırken sorunlara neden olabilir; bir iş parçacığında bir getirme işlemi, diğer iş parçacığında getirilen verilerin üzerine yazabilir. MFC ODBC sınıflarının ayrı iş parçacıklarında daha yaygın bir şekilde kullanılması, `CDatabase` her iş parçacığında ayrı bir nesne ile aynı ODBC bağlantısını kullanmak üzere iş parçacıkları arasında açık bir nesne paylaşmaktır `CRecordset` . Açık olmayan bir `CDatabase` nesneyi `CRecordset` başka bir iş parçacığındaki bir nesneye geçirmemelisiniz.
 
 > [!NOTE]
-> Aynı nesneyi birden çok iş parçacığının işlemesi gerekiyorsa, kritik bölümler gibi uygun eşitleme mekanizmalarını uygulamanız gerekir. Belirli işlemlerin `Open`korunmadığını unutmayın. Bu işlemlerin aynı anda ayrı iş parçacıklarından çağrılmadığından emin olmalısınız.
+> Aynı nesneyi işleyen birden çok iş parçacığı varsa, kritik bölümler gibi uygun eşitleme mekanizmalarını uygulamanız gerekir. Gibi bazı işlemlerin korunmuyor olduğunu unutmayın `Open` . Bu işlemlerin ayrı iş parçacıklarında aynı anda çağrılmayacak olduğundan emin olmanız gerekir.
 
-Çok iş parçacığı uygulamaları oluşturma hakkında daha fazla bilgi için, [Multithreading Konular](../../parallel/multithreading-support-for-older-code-visual-cpp.md)bakın.
+Çoklu iş parçacıklı uygulamalar oluşturma hakkında daha fazla bilgi için bkz. [Çoklu kullanım konuları](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
-[Veri Erişim Programlama (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)
+[Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)<br/>
+[Veri erişim programlama (MFC/ATL)](../../data/data-access-programming-mfc-atl.md)

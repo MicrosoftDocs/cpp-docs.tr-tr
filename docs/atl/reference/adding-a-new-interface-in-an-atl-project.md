@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL projesinde yeni arabirim ekleme'
 title: ATL Projesine Yeni Arabirim Ekleme
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - controls [ATL], interfaces
 - ATL projects, adding interfaces
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
-ms.openlocfilehash: 8bf0138f85929e06b67e9a2e294eda8a2f385e1a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7db5cd5f613985caf22253736ae691f3af9240ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159147"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL Projesine Yeni Arabirim Ekleme
 
@@ -44,6 +45,6 @@ Yeni bir arabirimi, denetiyinize iki şekilde ekleyebilirsiniz: el ile veya Sın
 
 [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual Studio 'da C++ proje türleri](../../build/reference/visual-cpp-project-types.md)<br/>
-[ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[ATL ve C Run-Time kodla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Varsayılan ATL Proje yapılandırması](../../atl/reference/default-atl-project-configurations.md)

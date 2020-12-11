@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL Özellik sayfası ekleme'
 title: ATL Özellik Sayfası Ekleme
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding property pages
 - controls [ATL], property pages
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
-ms.openlocfilehash: 4cd7444d18d26124f8c3c642bba55fb7592f5c8b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7b2798cca257f0ab80c27a6e18a23b173f1d93a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499317"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159043"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL Özellik Sayfası Ekleme
 

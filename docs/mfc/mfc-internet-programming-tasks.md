@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC Internet programlama görevleri'
 title: MFC Internet Programlama Görevleri
 ms.date: 09/12/2018
 helpviewer_keywords:
 - Internet applications [MFC], getting started
 - Internet applications [MFC], first steps
 ms.assetid: 6377e9b8-07c4-4380-b63b-05f5a9061313
-ms.openlocfilehash: 6d8a542ada94bc52ee2000bc92ae0457ec87609c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 26823dbd85222998ebf20947ac2af30a6b11e987
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617958"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159940"
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC Internet Programlama Görevleri
 
@@ -32,9 +33,9 @@ Aşağıdaki tabloda, bu teknolojilerle yapabileceklerinizden bazıları açıkl
 
 Başlamanıza daha fazla bilgi için aşağıdaki konulara bakın:
 
-- [Uygulama Tasarımı Seçimleri](application-design-choices.md)
+- [Uygulama tasarımı seçimleri](application-design-choices.md)
 
-- [MFC Uygulamaları Yazma](writing-mfc-applications.md)
+- [MFC uygulamaları yazma](writing-mfc-applications.md)
 
 - [Internet 'te ActiveX denetimleri](activex-controls-on-the-internet.md)
 
@@ -42,7 +43,7 @@ Başlamanıza daha fazla bilgi için aşağıdaki konulara bakın:
 
 - [Internet 'te zaman uyumsuz bilinen adlar](asynchronous-monikers-on-the-internet.md)
 
-- [Internet Uygulamalarını Test Etme](testing-internet-applications.md)
+- [Internet uygulamalarını test etme](testing-internet-applications.md)
 
 - [Internet güvenliği](internet-security-cpp.md)
 

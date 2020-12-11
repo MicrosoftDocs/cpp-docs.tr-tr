@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _unlock'
 title: _unlock
 ms.date: 11/04/2016
 api_name:
@@ -23,19 +24,19 @@ helpviewer_keywords:
 - unlock function
 - _unlock function
 ms.assetid: 2eda2507-a134-4997-aa12-f2f8cb319e14
-ms.openlocfilehash: 73eec2b05b1d321bfc8ac61e743459bf2323fb8e
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: ca3b31dd2b1ff12f5dd98d93e12e76c3cc4f0864
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162173"
 ---
 # <a name="_unlock"></a>_unlock
 
-Çok iş parçacığı kilidi serbest bırakır.
+Çoklu iş parçacığı kilidi yayınlar.
 
 > [!IMPORTANT]
-> Bu işlev geçersizdir. Visual Studio 2015'ten itibaren CRT'de kullanılamaz.
+> Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,11 +49,11 @@ void __cdecl _unlock(
 #### <a name="parameters"></a>Parametreler
 
 *locknum*<br/>
-[içinde] Serbest bırakmak için kilidin tanımlayıcısı.
+'ndaki Yayın kilidinin tanıtıcısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Kaynak:** mlock.c
+**Kaynak:** MLOCK. c
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

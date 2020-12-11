@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tür denetimi (CRT)'
 title: Tür Denetleme (CRT)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,29 +9,29 @@ helpviewer_keywords:
 - variable argument functions
 - type checking
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
-ms.openlocfilehash: bb5aecc2b47aa8e88666f42d8022395bf99fd85e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cf27847bf2aeef278fb4699cea5a0cf74a961086
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62304325"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162365"
 ---
 # <a name="type-checking-crt"></a>Tür Denetleme (CRT)
 
-Derleyici, sınırlı tür, değişken sayıda bağımsız değişken şu şekilde gerçekleştirebileceği işlevleri gerçekleştirir:
+Derleyici, aşağıdaki gibi değişken sayıda bağımsız değişken alan işlevler üzerinde sınırlı tür denetimi gerçekleştirir:
 
-|İşlev çağrısı|Bağımsız değişken türü işaretli|
+|İşlev çağrısı|Tür denetimli bağımsız değişkenler|
 |-------------------|-----------------------------|
 |`_cprintf_s`, `_cscanf_s`, `printf_s`, `scanf_s`|İlk bağımsız değişken (biçim dizesi)|
-|`fprintf_s`, `fscanf_s`, `sprintf_s`, `sscanf_s`|İlk iki bağımsız değişken (dosya veya arabellek ve biçim dizesini)|
-|`_snprintf_s`|İlk üç bağımsız değişken (dosya veya arabellek sayısı ve biçim dizesi)|
-|`_open`|İlk iki bağımsız değişken (yolu ve `_open` bayrağı)|
-|`_sopen_s`|İlk üç bağımsız değişken (yol, `_open` bayrağı ve Paylaşım modu)|
-|`_execl`, `_execle`, `_execlp`, `_execlpe`|İlk iki bağımsız değişken (yolu ve ilk bağımsız değişken işaretçi)|
-|`_spawnl`, `_spawnle`, `_spawnlp`, `_spawnlpe`|İlk üç bağımsız değişken (modu bayrağını, yol ve ilk bağımsız değişken işaretçi)|
+|`fprintf_s`, `fscanf_s`, `sprintf_s`, `sscanf_s`|İlk iki bağımsız değişken (dosya veya arabellek ve biçim dizesi)|
+|`_snprintf_s`|İlk üç bağımsız değişken (dosya veya arabellek, sayı ve biçim dizesi)|
+|`_open`|İlk iki bağımsız değişken (yol ve `_open` bayrak)|
+|`_sopen_s`|İlk üç bağımsız değişken (yol, `_open` bayrak ve Paylaşım modu)|
+|`_execl`, `_execle`, `_execlp`, `_execlpe`|İlk iki bağımsız değişken (yol ve ilk bağımsız değişken işaretçisi)|
+|`_spawnl`, `_spawnle`, `_spawnlp`, `_spawnlpe`|İlk üç bağımsız değişken (mod bayrağı, yol ve ilk bağımsız değişken işaretçisi)|
 
-Derleyici, bu işlevlerin geniş karakter karşılıkları üzerinde aynı sınırlı tür gerçekleştirir.
+Derleyici, bu işlevlerin geniş karakterli karşılıklarıyla aynı sınırlı tür denetimini gerçekleştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4398'
 title: Derleyici Uyarısı (düzey 3) C4398
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4398
 ms.assetid: b6221432-9fed-4272-a547-a73f587904e6
-ms.openlocfilehash: 041bf9f6bfce17b16f301604bb8706be30095c13
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ea88f81e44fe0520cd096e1904c49a306863496a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198672"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160434"
 ---
 # <a name="compiler-warning-level-3-c4398"></a>Derleyici Uyarısı (düzey 3) C4398
 
@@ -21,9 +22,9 @@ ms.locfileid: "80198672"
 
 Yerel bir türde [__clrcall](../../cpp/clrcall.md) çağırma kuralına sahip sanal bir işlev, uygulama etki alanı vtable başına oluşturulmasına neden olur. Bu tür bir değişken, birden çok uygulama etki alanında kullanıldığında doğru şekilde doğru çalışmayabilir.
 
-`__declspec(appdomain)`değişkeni açıkça işaretleyerek bu uyarıyı çözebilirsiniz. Visual Studio 2017 ' den önceki Visual Studio sürümlerinde, varsayılan olarak AppDomain başına genel değişkenleri oluşturan **/clr: Pure**ile derleme yaparak bu uyarıyı çözebilirsiniz. **/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
+Değişkeni açıkça işaretleyerek bu uyarıyı çözebilirsiniz `__declspec(appdomain)` . Visual Studio 2017 ' den önceki Visual Studio sürümlerinde, varsayılan olarak AppDomain başına genel değişkenleri oluşturan **/clr: Pure** ile derleme yaparak bu uyarıyı çözebilirsiniz. **/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-Daha fazla bilgi için bkz. [AppDomain](../../cpp/appdomain.md) ve [uygulama etki alanları C++ve görsel ](../../dotnet/application-domains-and-visual-cpp.md).
+Daha fazla bilgi için bkz. [AppDomain](../../cpp/appdomain.md) ve [uygulama etki alanları ve Visual C++](../../dotnet/application-domains-and-visual-cpp.md).
 
 ## <a name="example"></a>Örnek
 

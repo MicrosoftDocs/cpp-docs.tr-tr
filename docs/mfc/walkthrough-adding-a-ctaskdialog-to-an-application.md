@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: bir uygulamaya CTaskDialog ekleme'
 title: 'İzlenecek yol: Bir Uygulamaya CTaskDialog Ekleme'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - CTaskDialog, adding
 - walkthroughs [MFC], dialogs
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-ms.openlocfilehash: 3a970df4911fed643045a1c6b59fcda1a853dbcf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f7462551af785b85156f3f0b0f83b2ff3ddbf4c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159901"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>İzlenecek yol: Bir Uygulamaya CTaskDialog Ekleme
 
@@ -94,13 +95,13 @@ Aşağıdaki yordamda, önceki yordamda oluşturduğunuz öğesine nasıl işlev
 
 ### <a name="to-add-functionality-to-the-ctaskdialog"></a>CTaskDialog 'a Işlevsellik eklemek için
 
-1. **Kaynak görünümü**gidin. **Kaynak görünümü**göremiyorsanız, **Görünüm** menüsünden açabilirsiniz.
+1. **Kaynak görünümü** gidin. **Kaynak görünümü** göremiyorsanız, **Görünüm** menüsünden açabilirsiniz.
 
 1. **Dize tablosu** klasörünü seçip **kaynak görünümü** genişletin. Genişletin ve **dize tablosu** girişine çift tıklayın.
 
-1. Dize tablosunun en altına kaydırın ve yeni bir giriş ekleyin. KIMLIĞI olarak değiştirin `TEMP_LINE1` . Başlığı **komut satırı 1**olarak ayarlayın.
+1. Dize tablosunun en altına kaydırın ve yeni bir giriş ekleyin. KIMLIĞI olarak değiştirin `TEMP_LINE1` . Başlığı **komut satırı 1** olarak ayarlayın.
 
-1. Başka bir yeni girdi ekleyin. KIMLIĞI olarak değiştirin `TEMP_LINE2` . Yazı başlığını **komut satırı 2**olarak ayarlayın.
+1. Başka bir yeni girdi ekleyin. KIMLIĞI olarak değiştirin `TEMP_LINE2` . Yazı başlığını **komut satırı 2** olarak ayarlayın.
 
 1. MyProject. cpp öğesine geri gidin.
 

@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: üye Işlev şablonları'
 title: Üye İşlev Şablonları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - function templates, member functions
 ms.assetid: 83d51835-6a27-40ed-997c-7d90dc9182d8
-ms.openlocfilehash: 8514c8ffe630f5bc44d8d287d6ccf08c7755e3a0
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: ebeaab90c1ea21e70433fd969e7ee8185b5dcd22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161695"
 ---
 # <a name="member-function-templates"></a>Üye İşlev Şablonları
 

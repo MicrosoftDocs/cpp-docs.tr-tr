@@ -1,36 +1,37 @@
 ---
-title: İleti eşlemeleri (ATL)
+description: 'Hakkında daha fazla bilgi edinin: Ileti haritaları (ATL)'
+title: İleti haritaları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340
-ms.openlocfilehash: 1b8b3fcb2f10f975ebdf68a285c7d5e364b9e1b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c5b3340abbfbc66ac710ab716e3daa38dd7cd6df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250138"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159524"
 ---
-# <a name="message-maps-atl"></a>İleti eşlemeleri (ATL)
+# <a name="message-maps-atl"></a>İleti haritaları (ATL)
 
-İleti eşlemesi işleyici işlevi, belirli bir ileti, komut veya bildirim ile ilişkilendirir. ATL kullanarak [ileti eşleme makroları](../atl/reference/message-map-macros-atl.md), bir pencere için ileti eşlemesi belirtebilirsiniz. Pencere yordamları `CWindowImpl`, `CDialogImpl`, ve `CContainedWindowT` kendi ileti eşlemesi bir pencere iletilerini yönlendirmek.
+İleti eşleme, bir işleyici işlevini belirli bir ileti, komut veya bildirimle ilişkilendirir. ATL 'nin [ileti eşleme makrolarını](../atl/reference/message-map-macros-atl.md)kullanarak, bir pencere için bir ileti haritası belirtebilirsiniz. , Ve içindeki pencere `CWindowImpl` yordamları `CDialogImpl` `CContainedWindowT` ileti eşlemesine bir pencerenin iletilerini doğrudan yönlendirir.
 
-[İleti işleyici işlevlerini](../atl/message-handler-functions.md) ek bağımsız değişken türü kabul `BOOL&`. Bu bağımsız değişken, bir ileti işlendikten ve varsayılan olarak TRUE olarak ayarlanmış olup olmadığını gösterir. İşleyici işlevi, ardından bağımsız değişken, bir ileti işlenmemiş olduğunu göstermek için FALSE olarak ayarlayabilirsiniz. Bu durumda, ATL ileti Haritası'nda daha fazla işleyici işlevi aramaya devam eder. Bu bağımsız değişken FALSE olarak ayarlayarak, öncelikle bir iletiye yanıt olarak bazı eylemler gerçekleştirme ve varsayılan işlem veya başka bir işleyici işlevi iletiyi işlemeyi tamamladıktan sonra izin.
+[İleti işleyici işlevleri](../atl/message-handler-functions.md) , türünde ek bir bağımsız değişken kabul eder `BOOL&` . Bu bağımsız değişken, bir iletinin işlenip işlenmediğini belirtir ve varsayılan olarak TRUE olarak ayarlanır. Bir işleyici işlevi daha sonra bir ileti işlenmemiş olduğunu göstermek için bağımsız değişkenini FALSE olarak ayarlayabilir. Bu durumda, ATL ileti eşlemesinde bir işleyici işlevini daha fazla aramaya devam eder. Bu bağımsız değişkeni FALSE olarak ayarlayarak, önce bir iletiye yanıt olarak bazı eylemler gerçekleştirebilir ve ardından varsayılan işleme ya da başka bir işleyici işlevinin iletiyi işlemeyi bitirmesini izin verebilirsiniz.
 
-## <a name="chained-message-maps"></a>Zincirleme ileti eşlemeleri
+## <a name="chained-message-maps"></a>Zincirleme Ileti haritaları
 
-ATL zinciri ileti eşlemeleri için bu ileti başka bir sınıf içinde tanımlanan ileti eşlemesi için işleme yönlendirir sağlar. Örneğin, tüm windows o sınıfın zincirleme Tekdüzen davranışı sağlamak için ortak ileti ayrı bir sınıf içinde uygulayabilirsiniz. Bir temel sınıf veya bir veri üyesinin sınıfınızın zincirleyebilirsiniz.
+ATL Ayrıca, ileti işlemeyi başka bir sınıfta tanımlanan bir ileti eşlemesine yönlendiren ileti eşlemelerini zincirlemenize de olanak tanır. Örneğin, bu sınıfa tüm Windows zincirleme için Tekdüzen davranışı sağlamak üzere ayrı bir sınıfta ortak ileti işleme uygulayabilirsiniz. Bir temel sınıfa veya sınıfınızın bir veri üyesine zincirleyebilirsiniz.
 
-ATL ayrıca dinamik bağlama, başka bir nesnenin ileti eşlemesi zincirdeki çalışma zamanında sağlayan destekler. Dinamik zincirleme uygulamak için sizin sınıfınızdan türetilmelidir [CDynamicChain](../atl/reference/cdynamicchain-class.md). Ardından bildirmek [CHAIN_MSG_MAP_DYNAMIC](reference/message-map-macros-atl.md#chain_msg_map_dynamic) makro, ileti eşlemesi. Nesne ve zincirleme ileti eşlemesi tanımlayan benzersiz bir numara CHAIN_MSG_MAP_DYNAMIC gerektirir. Bu benzersiz değer yapılan bir çağrıyla tanımlamalıdır `CDynamicChain::SetChainEntry`.
+ATL Ayrıca, çalışma zamanında başka bir nesnenin ileti eşlemesine zincirlemenize olanak tanıyan dinamik zincirlemeyi de destekler. Dinamik zincirleme uygulamak için, sınıfı [cdynamiczincirinden](../atl/reference/cdynamicchain-class.md)türetmeniz gerekir. Ardından ileti Haritalarınızın [CHAIN_MSG_MAP_DYNAMIC](reference/message-map-macros-atl.md#chain_msg_map_dynamic) makrosunu bildirin. CHAIN_MSG_MAP_DYNAMIC, nesne ve zincirleme yaptığınız ileti haritasını tanımlayan benzersiz bir sayı gerektirir. Bu benzersiz değeri öğesine çağrısıyla tanımlamanız gerekir `CDynamicChain::SetChainEntry` .
 
-Bu sınıfın türetildiği sağlanan bildiren bir ileti eşlemesi herhangi bir sınıf için zincirleyebilirsiniz [CMessageMap](../atl/reference/cmessagemap-class.md). `CMessageMap` diğer nesnelere kendi ileti eşlemeleri kullanıma sunmak bir nesne sağlar. Unutmayın `CWindowImpl` zaten türetildiği `CMessageMap`.
+Sınıfın [CMessageMap](../atl/reference/cmessagemap-class.md)öğesinden türediği bir ileti eşlemesi bildiren herhangi bir sınıfa zincirleyebilirsiniz. `CMessageMap` bir nesnenin ileti eşlemelerini diğer nesnelerle kullanıma almasına izin verir. `CWindowImpl`Zaten öğesinden türetildiğine unutmayın `CMessageMap` .
 
-## <a name="alternate-message-maps"></a>Diğer ileti eşlemeleri
+## <a name="alternate-message-maps"></a>Alternatif Ileti eşlemeleri
 
-Son olarak, diğer ileti eşlemeleri ile bildirilen, ATL destekler [ALT_MSG_MAP](reference/message-map-macros-atl.md#alt_msg_map) makrosu. Her alternatif ileti eşlemesi için ALT_MSG_MAP geçirdiğiniz benzersiz bir numara tarafından tanımlanır. Alternatif bir iletiyi kullanarak eşler, bir eşlem içindeki birden çok windows iletileri işleyebilir. Varsayılan olarak, dikkat `CWindowImpl` diğer ileti eşlemeleri kullanmaz. Bu desteği eklemek için geçersiz kılma `WindowProc` yönteminde, `CWindowImpl`-türetilmiş sınıf ve çağrı `ProcessWindowMessage` ileti eşlemesi tanımlayıcısına sahip.
+Son olarak, ATL [ALT_MSG_MAP](reference/message-map-macros-atl.md#alt_msg_map) makrolarıyla belirtilen alternatif ileti eşlemelerini destekler. Her alternatif ileti eşlemesi, ALT_MSG_MAP geçirdiğiniz benzersiz bir sayı ile tanımlanır. Alternatif ileti eşlemelerini kullanarak, bir haritada birden çok pencere iletilerini işleyebilirsiniz. Varsayılan olarak, `CWindowImpl` alternatif ileti haritaları kullanmaz. Bu desteği eklemek için, `WindowProc` `CWindowImpl` türetilmiş sınıfdaki yöntemi geçersiz kılın ve `ProcessWindowMessage` ileti haritası tanımlayıcısıyla çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Uygulama](../atl/implementing-a-window.md)
+[Pencere uygulama](../atl/implementing-a-window.md)

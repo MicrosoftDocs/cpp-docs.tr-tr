@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2646'
 title: Derleyici hatası C2646
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2646
 ms.assetid: 92ff1f02-5eaf-40a5-8b7a-a682f149e967
-ms.openlocfilehash: a05c98564c4e45dc380690c1b8c9bace5fc14cf4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7aa378a0a2dbaeae78a63f97e83a84d94d861c72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216160"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160824"
 ---
 # <a name="compiler-error-c2646"></a>Derleyici hatası C2646
 

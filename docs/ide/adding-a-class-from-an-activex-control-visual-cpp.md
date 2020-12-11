@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ActiveX denetiminden sınıf ekleme'
 title: ActiveX denetiminden sınıf ekleme
 ms.date: 11/08/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - ActiveX Control Wizard
 - add class from ActiveX control wizard [C++]
 ms.assetid: 729fcb37-54b8-44d5-9b4e-50bb16e0eea4
-ms.openlocfilehash: d63f73e17e47f2cabb8f1a55c71325ec7068a2c8
-ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
+ms.openlocfilehash: 3a5ad387abb061ca554074002d4a8fab87fd529a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96188932"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160239"
 ---
 # <a name="add-a-class-from-an-activex-control"></a>ActiveX denetiminden sınıf ekleme
 

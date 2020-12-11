@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _TRUNCATE'
 title: _TRUNCATE
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - TRUNCATE constant
 - _TRUNCATE constant
 ms.assetid: ad093dbf-1aa5-4bd2-9268-efc68afd8434
-ms.openlocfilehash: b472fceffa6284baaaf4dc1780ab54399fdd42c7
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: ea8a1517db8b270e03c5767838f3965cdea8b36f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301684"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162371"
 ---
 # <a name="_truncate"></a>_TRUNCATE
 
 Dize kesme davranışını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <stdlib.h>
@@ -27,7 +28,7 @@ Dize kesme davranışını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_TRUNCATE`, bu işlevlere `count` parametresi olarak geçirildiğinde kesme davranışını sağlar:
+`_TRUNCATE` Şu işlevlere parametre olarak geçirildiğinde kesme davranışını sağlar `count` :
 
 [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)
 
@@ -45,9 +46,9 @@ Dize kesme davranışını belirtir.
 
 [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md)
 
-Hedef arabellek tüm dizeyi tutamayacak kadar küçükse, bu işlevlerin normal davranışı bir hata durumu olarak değerlendirilir (bkz. [parametre doğrulama](../c-runtime-library/parameter-validation.md)). Ancak, `_TRUNCATE`geçirerek dize kesilmesi etkinleştirilmişse, bu işlevler yalnızca dizenin büyük bir kısmını sığacak şekilde, hedef arabelleği null ile sonlandırılmış şekilde bırakarak kopyalanır ve başarıyla döndürülür.
+Hedef arabellek tüm dizeyi tutamayacak kadar küçükse, bu işlevlerin normal davranışı bir hata durumu olarak değerlendirilir (bkz. [parametre doğrulama](../c-runtime-library/parameter-validation.md)). Ancak, dize kesilmesi geçiş ile etkinleştirilmişse, `_TRUNCATE` Bu işlevler yalnızca dizenin büyük bir kısmını sığacak şekilde, hedef arabelleği null ile sonlandırılmış şekilde bırakarak kopyalanır ve başarıyla döndürülür.
 
-Dize kesilmesi etkilenen işlevlerin dönüş değerlerini değiştirir. Aşağıdaki işlevler, kesme gerçekleşmezse 0 döndürür veya kesme gerçekleşirse `STRUNCATE`:
+Dize kesilmesi etkilenen işlevlerin dönüş değerlerini değiştirir. Aşağıdaki işlevler, kesme gerçekleşmezse veya kesme gerçekleşirse 0 döndürür `STRUNCATE` :
 
 [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)
 
@@ -88,4 +89,4 @@ truncation occurred!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

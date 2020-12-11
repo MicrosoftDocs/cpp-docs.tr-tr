@@ -1,16 +1,17 @@
 ---
+description: Hakkında daha fazla bilgi &lt; edinin:&gt;
 title: '&lt;tümü&gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - <any>
 helpviewer_keywords:
 - <any>
-ms.openlocfilehash: 5039c1499e423af6eedbe26b0b20f57b316648b6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 314bc96b8cd64d51b728b7a2303b90732b822deb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844736"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163385"
 ---
 # <a name="ltanygt"></a>&lt;tümü&gt;
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l'
 title: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 ms.date: 11/04/2016
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - cwprintf_l function
 - _cprintf function
 ms.assetid: 67ffefd4-45b3-4be0-9833-d8d26ac7c4e2
-ms.openlocfilehash: aa0dfe22312f5a4736a6bc1b7a52e90dfa425a14
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a935f43c00fab31a582012e938db16e3aa1a5f6e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942657"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162384"
 ---
 # <a name="_cprintf-_cprintf_l-_cwprintf-_cwprintf_l"></a>_cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 
@@ -83,13 +84,13 @@ int _cwprintf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *argument_list*<br/>
 Biçim dizesi için isteğe bağlı parametreler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -98,13 +99,13 @@ Yazdırılan karakterlerin sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, bir dizi karakter ve değeri doğrudan konsola, **_putch** işlevini ( **_putwch** for **_cwprintf**), çıkış karakterlerine göre biçimlendirir ve yazdırır. *Argument_list* (varsa) içindeki her bağımsız değişken, karşılık *gelen biçim belirtimine*göre dönüştürülür ve çıktı. *Biçim* bağımsız değişkeni, [printf ve wprintf işlevleri için biçim belirtimi sözdizimini](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)kullanır. **Fprintf**, **printf**ve **sprintf** işlevlerinin aksine, çıkış sırasında **_cprintf** veya **_cwprintf** , satır besleme karakterlerini satır başı satır besleme (CR-LF) birleşimlerine dönüştürür.
+Bu işlevler, bir dizi karakter ve değeri, **_putch** işlevi ( **_cwprintf** için **_putwch** ) kullanarak, yalnızca konsola biçimlendirir ve yazdırır. *Argument_list* (varsa) içindeki her bağımsız değişken, karşılık *gelen biçim belirtimine* göre dönüştürülür ve çıktı. *Biçim* bağımsız değişkeni, [printf ve wprintf işlevleri için biçim belirtimi sözdizimini](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)kullanır. **Fprintf**, **printf** ve **sprintf** işlevlerinin aksine, ne **_cprintf** ne de **_cwprintf** , çıkış sırasında satır besleme karakterlerini satır başı satır besleme (CR-LF) birleşimlerine çevirir.
 
-Önemli bir ayrım, **_cwprintf** , Windows 'Da kullanıldığında Unicode karakterler görüntülüyor. **_Cprintf**'den farklı olarak, **_cwprintf** geçerli konsol yerel ayarlarını kullanır.
+Önemli bir ayrım, **_Cwprintf** Windows 'Da kullanıldığında Unicode karakterleri görüntülemektedir. **_Cprintf** aksine, **_cwprintf** geçerli konsol yerel ayarlarını kullanır.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-**_cprintf** *Biçim* parametresini doğrular. *Biçim* null işaretçisiyse, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar.
+**_cprintf** *Biçim* parametresini doğrular. *Biçim* null işaretçisiyse, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL** olarak ayarlar.
 
 > [!IMPORTANT]
 > *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
@@ -120,8 +121,8 @@ Bu işlevler, bir dizi karakter ve değeri doğrudan konsola, **_putch** işlevi
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cprintf**, **_cprintf_l**|\<conio. h >|
-|**_cwprintf**, **_cwprintf_l**|\<conio. h >|
+|**_cprintf**, **_cprintf_l**|\<conio.h>|
+|**_cwprintf**, **_cwprintf_l**|\<conio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -159,8 +160,8 @@ int main( void )
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md)<br/>
 [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)<br/>
 [_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l](cprintf-p-cprintf-p-l-cwprintf-p-cwprintf-p-l.md)<br/>
-[Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[Biçim belirtimi sözdizimi: printf ve wprintf Işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>

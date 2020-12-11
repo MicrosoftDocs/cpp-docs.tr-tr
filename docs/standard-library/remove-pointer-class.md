@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: remove_pointer sınıfı'
 title: remove_pointer Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - remove_pointer class
 - remove_pointer
 ms.assetid: 2cd4e417-32fb-4f53-bd16-4e8a98240832
-ms.openlocfilehash: 786a1cba5fc35014e33e3e19245271adefec1372
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8739fcd197dc59f5163740d1290abd3faee1922a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451249"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159667"
 ---
-# <a name="removepointer-class"></a>remove_pointer Sınıfı
+# <a name="remove_pointer-class"></a>remove_pointer Sınıfı
 
 Türü işaretçiden türe ayarlar.
 
@@ -30,12 +31,12 @@ using remove_pointer_t = typename remove_pointer<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `remove_pointer<T>` örneği, *t* , `T1*` `T1` ,veya`T1* volatile` , değilse t biçiminde olan bir değiştirilmiş türü tutar. `T1* const volatile` `T1* const`
+Bir örneği, `remove_pointer<T>` `T1` *t* `T1*` ,, veya, `T1* const` `T1* volatile` `T1* const volatile` değilse *t* biçiminde olan bir değiştirilmiş türü tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -61,11 +62,11 @@ remove_pointer_t<int *> == int
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[add_pointer Sınıfı](../standard-library/add-pointer-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[add_pointer sınıfı](../standard-library/add-pointer-class.md)
