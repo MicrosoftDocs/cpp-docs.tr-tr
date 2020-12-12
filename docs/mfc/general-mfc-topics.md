@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: genel MFC konuları'
 title: Genel MFC Konuları
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - class libraries [MFC], MFC
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-ms.openlocfilehash: effab556277b3cd9ca072798bea3a77dbde58620
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a0e19a205e29297bf6808d6d979b9e27366b3e4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234364"
 ---
 # <a name="general-mfc-topics"></a>Genel MFC Konuları
 
@@ -25,29 +26,29 @@ MFC çerçevesi, Windows için uzman programcıların çalışmasına olanak tan
 
 [MFC örnekleri](../overview/visual-cpp-samples.md#mfc-samples)
 
-[MFC Kaynak Dosyalarını Kullanma](using-the-mfc-source-files.md)
+[MFC kaynak dosyalarını kullanma](using-the-mfc-source-files.md)
 
 [MFC kitaplık sürümleri](mfc-library-versions.md)
 
-[Windows Uygulamaları Yazmak için Sınıfları Kullanma](using-the-classes-to-write-applications-for-windows.md)
+[Windows uygulamaları yazmak için sınıfları kullanma](using-the-classes-to-write-applications-for-windows.md)
 
-[Framework'te Derleme](building-on-the-framework.md)
+[Çerçevede derleme](building-on-the-framework.md)
 
-[CWinApp: Uygulama Sınıfı](cwinapp-the-application-class.md)
+[CWinApp: uygulama sınıfı](cwinapp-the-application-class.md)
 
-[Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi](document-templates-and-the-document-view-creation-process.md)
+[Belge şablonları ve belge/görünüm oluşturma Işlemi](document-templates-and-the-document-view-creation-process.md)
 
 [MFC modüllerinin durum verilerini yönetme](managing-the-state-data-of-mfc-modules.md)
 
 [Boşta döngüsü Işleme](idle-loop-processing.md)
 
-[MFC Modül Durumunda Etkinleştirme Bağlamları Desteği](support-for-activation-contexts-in-the-mfc-module-state.md)
+[MFC modül durumunda etkinleştirme bağlamları desteği](support-for-activation-contexts-in-the-mfc-module-state.md)
 
-[MFC Ortak Denetimler Kitaplığını Yalıtma](isolation-of-the-mfc-common-controls-library.md)
+[MFC ortak denetimler kitaplığı yalıtımı](isolation-of-the-mfc-common-controls-library.md)
 
-[Windows Vista Ortak Denetimleri için Derleme Gereksinimleri](build-requirements-for-windows-vista-common-controls.md)
+[Windows Vista ortak denetimleri için derleme gereksinimleri](build-requirements-for-windows-vista-common-controls.md)
 
-[Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](how-to-add-restart-manager-support.md)
+[Nasıl yapılır: yeniden başlatma Yöneticisi desteği ekleme](how-to-add-restart-manager-support.md)
 
 [Dinamik düzen](dynamic-layout.md)
 

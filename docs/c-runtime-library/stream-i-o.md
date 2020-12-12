@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: akış g/ç'
 title: Akış G/Ç
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - I/O [CRT], stream
 - stream I/O
 ms.assetid: dc7874d3-a91b-456a-9015-4748bb358217
-ms.openlocfilehash: 8bff3cd74dfe4b1e3aa749ec28a361dd4a09c2f7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a787d83390239679ad48c2ca09b41f567a0a8c95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231253"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235677"
 ---
 # <a name="stream-io"></a>Akış G/Ç
 
@@ -23,21 +24,21 @@ Bu işlevler, verileri farklı boyutlarda ve biçimlerdeki, tek karakterlerden b
 |-------------|---------|
 |[clearerr](../c-runtime-library/reference/clearerr.md), [clearerr_s](../c-runtime-library/reference/clearerr-s.md)|Akış için hata göstergesini temizle|
 |[fclose](../c-runtime-library/reference/fclose-fcloseall.md)|Akışı kapat|
-|[_fcloseall](../c-runtime-library/reference/fclose-fcloseall.md)|**STDIN**, **stdout**ve **stderr** hariç tüm açık akışları kapat|
+|[_fcloseall](../c-runtime-library/reference/fclose-fcloseall.md)|**STDIN**, **stdout** ve **stderr** hariç tüm açık akışları kapat|
 |[_fdopen, wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)|Akışı açık dosyanın dosya tanımlayıcısıyla ilişkilendir|
 |[feof](../c-runtime-library/reference/feof.md)|Akışta dosya sonu için test|
 |[ferror](../c-runtime-library/reference/ferror.md)|Akışta hata için test|
 |[fflush](../c-runtime-library/reference/fflush.md)|Akışı arabelleğe veya depolama cihazına Temizleme|
-|[fgetc, fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md)|Akıştan karakter oku ( **getc** ve **getwc**işlevinin işlev sürümleri)|
-|[_fgetchar, _fgetwchar](../c-runtime-library/reference/fgetc-fgetwc.md)|**STDIN** 'den karakter oku ( **GetChar** ve **getwchar**işlev sürümleri)|
+|[fgetc, fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md)|Akıştan karakter oku ( **getc** ve **getwc** işlevinin işlev sürümleri)|
+|[_fgetchar, _fgetwchar](../c-runtime-library/reference/fgetc-fgetwc.md)|**STDIN** 'den karakter oku ( **GetChar** ve **getwchar** işlev sürümleri)|
 |[fgetpos](../c-runtime-library/reference/fgetpos.md)|Akışın konum göstergesini al|
 |[fgets, fgetws](../c-runtime-library/reference/fgets-fgetws.md)|Akıştan dize oku|
 |[_fileno](../c-runtime-library/reference/fileno.md)|Stream ile ilişkili dosya tanımlayıcısını al|
 |[_flushall](../c-runtime-library/reference/flushall.md)|Tüm akışları arabelleğe veya depolama cihazına yasla|
 |[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md)|Akışı aç|
 |[fprintf, _fprintf_l, fwprintf, _fwprintf_l](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md), [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|Biçimli verileri akışa yaz|
-|[fputc, fputwc](../c-runtime-library/reference/fputc-fputwc.md)|Akışa bir karakter yazma ( **putc** ve **putwc**işlev sürümleri)|
-|[_fputchar, _fputwchar](../c-runtime-library/reference/fputc-fputwc.md)|**Stdout** 'a karakter yazma ( **putchar** ve **putwchar**işlev sürümleri)|
+|[fputc, fputwc](../c-runtime-library/reference/fputc-fputwc.md)|Akışa bir karakter yazma ( **putc** ve **putwc** işlev sürümleri)|
+|[_fputchar, _fputwchar](../c-runtime-library/reference/fputc-fputwc.md)|**Stdout** 'a karakter yazma ( **putchar** ve **putwchar** işlev sürümleri)|
 |[fputs, fputws](../c-runtime-library/reference/fputs-fputws.md)|Akışa dize yaz|
 |[fread](../c-runtime-library/reference/fread.md)|Akıştan biçimlendirilmemiş verileri oku|
 |[serbest açık, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s _wfreopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md)|**Dosya** akışı işaretçisini yeni dosya veya cihaza yeniden ata|
@@ -47,14 +48,14 @@ Bu işlevler, verileri farklı boyutlarda ve biçimlerdeki, tek karakterlerden b
 |[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)|Dosya paylaşımı ile açık akış|
 |[ftell, _ftelli64](../c-runtime-library/reference/ftell-ftelli64.md)|Geçerli dosya konumunu al|
 |[fwrite](../c-runtime-library/reference/fwrite.md)|Biçimlendirilmemiş veri öğelerini akışa yaz|
-|[getc, getwc](../c-runtime-library/reference/getc-getwc.md)|Akıştan karakter oku ( **fgetc** ve **fgetwc**makro sürümleri)|
-|[getchar, getwchar](../c-runtime-library/reference/getc-getwc.md)|**Stdin** 'den karakter oku ( **fgetchar** ve **fgetwchar**makro sürümleri)|
+|[getc, getwc](../c-runtime-library/reference/getc-getwc.md)|Akıştan karakter oku ( **fgetc** ve **fgetwc** makro sürümleri)|
+|[getchar, getwchar](../c-runtime-library/reference/getc-getwc.md)|**Stdin** 'den karakter oku ( **fgetchar** ve **fgetwchar** makro sürümleri)|
 |[_getmaxstdio](../c-runtime-library/reference/getmaxstdio.md)|Akış g/ç düzeyinde izin verilen aynı anda açık dosya sayısını döndürür.|
 |[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|**STDIN** 'den satırı oku|
 |[_getw](../c-runtime-library/reference/getw.md)|Akıştan binary oku **`int`**|
 |[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md),[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|**Stdout** 'a biçimlendirilen verileri yazma|
-|[putc, putwc](../c-runtime-library/reference/putc-putwc.md)|Akışa karakter yazma ( **fputc** ve **fputwc**makro sürümleri)|
-|[putchar, putwchar](../c-runtime-library/reference/putc-putwc.md)|**Stdout** 'a karakter yazma ( **fputchar** ve **fputwchar**makro sürümleri)|
+|[putc, putwc](../c-runtime-library/reference/putc-putwc.md)|Akışa karakter yazma ( **fputc** ve **fputwc** makro sürümleri)|
+|[putchar, putwchar](../c-runtime-library/reference/putc-putwc.md)|**Stdout** 'a karakter yazma ( **fputchar** ve **fputwchar** makro sürümleri)|
 |[puts, _putws](../c-runtime-library/reference/puts-putws.md)|Satırı akışa yaz|
 |[_putw](../c-runtime-library/reference/putw.md)|İkiliden **`int`** akışa yazma|
 |[geri sar](../c-runtime-library/reference/rewind.md)|Dosya konumunu akışın başına taşı|
@@ -77,7 +78,7 @@ Bu işlevler, verileri farklı boyutlarda ve biçimlerdeki, tek karakterlerden b
 |[_vsnprintf, _vsnwprintf](../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md), [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md)|Belirtilen uzunlukta biçimlendirilen verileri arabelleğe yaz|
 |[vsprintf, vswprintf](../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md), [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md)|Biçimlendirilen verileri arabelleğe yaz|
 
-Bir program yürütmeye başladığında, başlangıç kodu birkaç akışı otomatik olarak açar: standart giriş ( **stdin**tarafından işaret edilen), standart çıkış ( **stdout**tarafından işaret edilen) ve standart hata ( **stderr**tarafından işaret edilen). Bu akışlar, varsayılan olarak konsola (klavye ve ekran) yönlendirilir. **STDIN**, **stdout**veya **stderr** 'i bir disk dosyasına veya cihaza yeniden yönlendirmek için **freopen** 'ı kullanın.
+Bir program yürütmeye başladığında, başlangıç kodu birkaç akışı otomatik olarak açar: standart giriş ( **stdin** tarafından işaret edilen), standart çıkış ( **stdout** tarafından işaret edilen) ve standart hata ( **stderr** tarafından işaret edilen). Bu akışlar, varsayılan olarak konsola (klavye ve ekran) yönlendirilir. **STDIN**, **stdout** veya **stderr** 'i bir disk dosyasına veya cihaza yeniden yönlendirmek için **freopen** 'ı kullanın.
 
 Akış yordamları kullanılarak açılan dosyalar varsayılan olarak arabelleğe alınır. **Stdout** ve **stderr** işlevleri her dolduğunda silinir veya bir karakter cihazına yazıyorsanız, her kitaplık çağrısından sonra temizlenir. Bir program anormal bir şekilde sonlandırılırsa, çıkış arabellekleri temizlenmeyebilir ve veri kaybına neden olabilir. Belirtilen bir dosyayla ilişkili arabelleğin veya tüm açık arabelleklerin işletim sistemine temizlendiğinden emin olmak için **fflush** veya **_flushall** kullanın. Bu, verileri diske yazmadan önce önbelleğe alabilir. Diske Yürüt özelliği, bir sistem hatası durumunda boşaltılan arabellek içeriğinin kaybolmamasını sağlar.
 
@@ -85,13 +86,13 @@ Arabellek içeriğini diske kaydetmenin iki yolu vardır:
 
 - Dosya COMMODE ile bağlantı. OBJ bir genel COMMIT bayrağı ayarlamak için. "No-COMMIT" için genel bayrağın varsayılan ayarı **n**' dir.
 
-- Mode bayrağını **fopen** veya **_fdopen**ile **c** olarak ayarlayın.
+- Mode bayrağını **fopen** veya **_fdopen** ile **c** olarak ayarlayın.
 
 Özellikle **c** veya **n** bayrağıyla açılan herhangi bir dosya, Genel tamamlama/No-COMMIT bayrağının durumundan bağımsız olarak, bayrağa göre davranır.
 
 Programınız bir akışı açıkça kapatmadıysa, program sonlandırıldığında akış otomatik olarak kapatılır. Ancak, bir kerede açık olabilecek akışların sayısı sınırlı olduğundan, programınız onunla bittiğinde bir akışı kapatmanız gerekir. Bu limit hakkında bilgi için bkz. [_setmaxstdio](../c-runtime-library/reference/setmaxstdio.md) .
 
-Giriş yalnızca bir **fflush** veya dosya konumlandırma işlevine (**fseek**, **fsetpos**veya **geri sarma**) aradaki bir çağrı ile doğrudan çıktıyı izleyebilir. Giriş işlemi dosyanın sonuyla karşılaştığında, çıkış bir dosya konumlandırma işlevine araya giren bir çağrı olmadan girişi izleyebilir.
+Giriş yalnızca bir **fflush** veya dosya konumlandırma işlevine (**fseek**, **fsetpos** veya **geri sarma**) aradaki bir çağrı ile doğrudan çıktıyı izleyebilir. Giriş işlemi dosyanın sonuyla karşılaştığında, çıkış bir dosya konumlandırma işlevine araya giren bir çağrı olmadan girişi izleyebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

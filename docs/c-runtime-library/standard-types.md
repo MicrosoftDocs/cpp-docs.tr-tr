@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: standart türler'
 title: Standart Türler
 ms.date: 11/04/2016
 f1_keywords:
@@ -160,12 +161,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: 376c29371fb9213ed46435b41bea1666058c7b4e
-ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
+ms.openlocfilehash: 49a8e877987af97e961bb32f47bd857b4eceddfc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91765314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235755"
 ---
 # <a name="standard-types"></a>Standart Türler
 
@@ -173,7 +174,7 @@ Microsoft çalışma zamanı kitaplığı, aşağıdaki standart türleri ve tü
 
 ### <a name="fixed-width-integral-types-stdinth"></a>Sabit genişlikli integral türler (stdint. h)
 
-|Adı|Eşdeğer yerleşik tür|
+|Ad|Eşdeğer yerleşik tür|
 |----------|-------------------------------|
 |int8 \_ t, uint8 \_ t|işaretli char, işaretsiz karakter|
 |Int16 \_ t, UI \_|kısa, işaretsiz kısa|

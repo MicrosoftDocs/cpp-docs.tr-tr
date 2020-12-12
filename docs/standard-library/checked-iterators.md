@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işaretli yineleyiciler'
 title: Denetlenmiş Yineleyiciler
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: 2327638208f30908cd3429ae656ce569f5821195
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: affa280bf967727a08449cc4f488c3a984e32b0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684909"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234286"
 ---
 # <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler
 

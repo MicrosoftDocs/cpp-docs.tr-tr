@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: extreme_value_distribution sınıfı'
 title: extreme_value_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-ms.openlocfilehash: b086638d02afb929d18daad76716a12704585108
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d4abd89ae7fee6ab170f5d827281146d703a6f97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835902"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232492"
 ---
 # <a name="extreme_value_distribution-class"></a>extreme_value_distribution Sınıfı
 
 Aşırı değerli bir dağıtım üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class RealType = double>
@@ -203,9 +204,9 @@ explicit extreme_value_distribution(const param_type& parm);
 
 **Önkoşul:**`0.0 < b`
 
-İlk Oluşturucu, saklı `a` değeri *a_value* değeri tutan ve depolanan `b` değeri *b_value*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı `a` değeri *a_value* değeri tutan ve depolanan `b` değeri *b_value* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="extreme_value_distributionparam_type"></a><a name="param_type"></a> extreme_value_distribution::p aram_type
 

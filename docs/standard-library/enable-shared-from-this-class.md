@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: enable_shared_from_this sınıfı'
 title: enable_shared_from_this Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - enable_shared_from_this class
 - enable_shared_from_this
 ms.assetid: 9237603d-22e2-421f-b070-838ac006baf5
-ms.openlocfilehash: 9b417eabdaf6002724a0fa947dd97dea6f0df0a5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6c6103846810bee07000821f4613c8f7979174ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232674"
 ---
 # <a name="enable_shared_from_this-class"></a>enable_shared_from_this Sınıfı
 
 Bir oluşturulmasına yardımcı olur `shared_ptr` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class enable_shared_from_this {
@@ -49,7 +50,7 @@ Oluşturucular, yıkıcı ve atama işleci yanlışlıkla kötüye kullanımı �
 
 Kullanım örneği için bkz. [enable_shared_from_this:: shared_from_this](#shared_from_this).
 
-## <a name="shared_from_this"></a><a name="shared_from_this"></a>shared_from_this
+## <a name="shared_from_this"></a><a name="shared_from_this"></a> shared_from_this
 
 `shared_ptr`Örneği, var olan sahiplerin sahipliğini paylaşan bir oluşturur `shared_ptr` .
 
@@ -96,7 +97,7 @@ int main()
 sp2->val == 3
 ```
 
-## <a name="weak_from_this"></a><a name="weak_from_this"></a>weak_from_this
+## <a name="weak_from_this"></a><a name="weak_from_this"></a> weak_from_this
 
 ```cpp
 weak_ptr<T> weak_from_this() noexcept;

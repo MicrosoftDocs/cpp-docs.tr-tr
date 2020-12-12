@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; özel durum &gt; işlevleri'
 title: '&lt;özel durum &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,16 +25,16 @@ helpviewer_keywords:
 - std::terminate [C++]
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
-ms.openlocfilehash: 849f3c8406c43b0efc2d34837e00fee6ff64e52a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f885b75462c2c7e20552d33e63048e7a55a51d67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193789"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232570"
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;özel durum &gt; işlevleri
 
-## <a name="current_exception"></a><a name="current_exception"></a>current_exception
+## <a name="current_exception"></a><a name="current_exception"></a> current_exception
 
 Geçerli özel durum için bir akıllı işaretçi alır.
 
@@ -55,7 +56,7 @@ Geçerli özel durumu işaret eden bir [exception_ptr](../standard-library/excep
 
 İşleve art arda yapılan çağrılar `current_exception` `exception_ptr` , geçerli özel durumun farklı kopyalarına başvuran nesneler döndürür. Sonuç olarak, kopyalar aynı ikili değerde olsalar da farklı kopyalara başvurduklarından, nesneler eşit olmayarak karşılaştırılır.
 
-## <a name="make_exception_ptr"></a><a name="make_exception_ptr"></a>make_exception_ptr
+## <a name="make_exception_ptr"></a><a name="make_exception_ptr"></a> make_exception_ptr
 
 Bir özel durumun kopyasını tutan [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) nesnesi oluşturur.
 
@@ -79,7 +80,7 @@ Kopyalanacak özel duruma sahip sınıf. Genellikle, işlev bağımsız değişk
 
 Uygulama genellikle `make_exception_ptr` işlevi gerektirmez ve kullanımını önermiyoruz.
 
-## <a name="rethrow_exception"></a><a name="rethrow_exception"></a>rethrow_exception
+## <a name="rethrow_exception"></a><a name="rethrow_exception"></a> rethrow_exception
 
 Bir parametre olarak geçirilen bir özel durum oluşturur.
 
@@ -96,7 +97,7 @@ Yeniden oluşturulması için bir özel durum yakalandı. *P* null [exception_pt
 
 Bir nesnede yakalanan bir özel durum depoladıktan sonra `exception_ptr` , birincil iş parçacığı nesneyi işleyebilir. Birincil iş parçacığın `rethrow_exception` `exception_ptr` bağımsız değişkeni olarak nesnesiyle birlikte işlevi çağırın. `rethrow_exception`İşlevi nesnesinden özel durumu ayıklar `exception_ptr` ve ardından birincil iş parçacığı bağlamında özel durumu oluşturur.
 
-## <a name="get_terminate"></a><a name="get_terminate"></a>get_terminate
+## <a name="get_terminate"></a><a name="get_terminate"></a> get_terminate
 
 Geçerli işlevi alır `terminate_handler` .
 
@@ -104,7 +105,7 @@ Geçerli işlevi alır `terminate_handler` .
 terminate_handler get_terminate();
 ```
 
-## <a name="set_terminate"></a><a name="set_terminate"></a>set_terminate
+## <a name="set_terminate"></a><a name="set_terminate"></a> set_terminate
 
 `terminate_handler`Programın sonlandırılması sırasında çağrılması için yeni bir oluşturur.
 
@@ -123,7 +124,7 @@ Sonlandırma sırasında çağrılması için kullanılan önceki işlevin adres
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, * *fnew*işlevi olarak yeni bir [terminate_handler](../standard-library/exception-typedefs.md#terminate_handler) oluşturur. Bu nedenle, *fnew* bir null işaretçi olmamalıdır. İşlevi, önceki sonlandırma işleyicisinin adresini döndürür.
+İşlevi, * *fnew* işlevi olarak yeni bir [terminate_handler](../standard-library/exception-typedefs.md#terminate_handler) oluşturur. Bu nedenle, *fnew* bir null işaretçi olmamalıdır. İşlevi, önceki sonlandırma işleyicisinin adresini döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -153,7 +154,7 @@ int main()
 }
 ```
 
-## <a name="get_unexpected"></a><a name="get_unexpected"></a>get_unexpected
+## <a name="get_unexpected"></a><a name="get_unexpected"></a> get_unexpected
 
 Geçerli işlevi alır `unexpected_handler` .
 
@@ -161,7 +162,7 @@ Geçerli işlevi alır `unexpected_handler` .
 unexpected_handler get_unexpected();
 ```
 
-## <a name="rethrow_if_nested"></a><a name="rethrow_if_nested"></a>rethrow_if_nested
+## <a name="rethrow_if_nested"></a><a name="rethrow_if_nested"></a> rethrow_if_nested
 
 ```cpp
 template <class E>
@@ -172,7 +173,7 @@ template <class E>
 
 Polimorfik bir sınıf türü değilse veya `nested_exception` erişilemez ya da belirsiz ise, hiçbir etkisi olmaz. Aksi takdirde, dinamik bir dönüştürme gerçekleştirir.
 
-## <a name="set_unexpected"></a><a name="set_unexpected"></a>set_unexpected
+## <a name="set_unexpected"></a><a name="set_unexpected"></a> set_unexpected
 
 `unexpected_handler`Beklenmeyen bir özel durumla karşılaşıldığında yeni bir oluşturur.
 
@@ -220,7 +221,7 @@ int main()
 }
 ```
 
-## <a name="terminate"></a><a name="terminate"></a>sonlandırmayı
+## <a name="terminate"></a><a name="terminate"></a> sonlandırmayı
 
 Bir sonlandırıcı işleyici çağırır.
 
@@ -236,9 +237,9 @@ Bir sonlandırma işleyicisi çağırana geri dönemeyebilir. Program başlangı
 
 ### <a name="example"></a>Örnek
 
-Öğesinin [set_unexpected](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek için bkz. set_unexpected `terminate` .
+Öğesinin [](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek için bkz. set_unexpected `terminate` .
 
-## <a name="throw_with_nested"></a><a name="throw_with_nested"></a>throw_with_nested
+## <a name="throw_with_nested"></a><a name="throw_with_nested"></a> throw_with_nested
 
 ```cpp
 template <class T> [[noreturn]]
@@ -249,7 +250,7 @@ template <class T> [[noreturn]]
 
 İç içe özel durumlarla özel durum oluşturur.
 
-## <a name="uncaught_exception"></a><a name="uncaught_exception"></a>uncaught_exception
+## <a name="uncaught_exception"></a><a name="uncaught_exception"></a> uncaught_exception
 
 **`true`** Yalnızca oluşturulan bir özel durum şu anda işleniyorsa döndürür.
 
@@ -314,7 +315,7 @@ In Test::~Test("outside try block")
         std::uncaught_exception( ) = 0
 ```
 
-## <a name="unexpected"></a><a name="unexpected"></a>bek
+## <a name="unexpected"></a><a name="unexpected"></a> bek
 
 Beklenmeyen işleyiciyi çağırır.
 
@@ -340,4 +341,4 @@ Program başlangıcında, beklenmeyen işleyici, [Sonlandır](../standard-librar
 
 ### <a name="example"></a>Örnek
 
-Öğesinin [set_unexpected](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek için bkz. set_unexpected `unexpected` .
+Öğesinin [](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek için bkz. set_unexpected `unexpected` .

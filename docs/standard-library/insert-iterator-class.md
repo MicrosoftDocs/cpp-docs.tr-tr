@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: insert_iterator sınıfı'
 title: insert_iterator Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - std::insert_iterator [C++], container_type
 - std::insert_iterator [C++], reference
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
-ms.openlocfilehash: 530168f5e259934f7d614b305e6ac1092ba68f4d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d9089e0ab592ed6c8289570cc422aa6183444d55
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233164"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231582"
 ---
 # <a name="insert_iterator-class"></a>insert_iterator Sınıfı
 
 Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin üzerine yazar ve bu nedenle C++ dizisi ve ilişkili kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. `insert_iterator`Sınıfı, uyarlanmakta olan kapsayıcının türü üzerinde şablonlanmıştır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Container>
@@ -60,11 +61,11 @@ Türünün kapsayıcısı, `Container` değişken boyutlu bir kapsayıcı için 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**:\<iterator>
+**Üst bilgi**: \<iterator>
 
 **Ad alanı:** std
 
-## <a name="insert_iteratorcontainer_type"></a><a name="container_type"></a>insert_iterator:: container_type
+## <a name="insert_iteratorcontainer_type"></a><a name="container_type"></a> insert_iterator:: container_type
 
 Genel ekleme yapılacak kapsayıcıyı temsil eden bir tür.
 
@@ -74,7 +75,7 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *kapsayıcısının*eşanlamlısıdır.
+Tür, şablon parametresi *kapsayıcısının* eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -106,7 +107,7 @@ The list L2 is: ( 40 20 10 ).
 */
 ```
 
-## <a name="insert_iteratorinsert_iterator"></a><a name="insert_iterator"></a>insert_iterator:: insert_iterator
+## <a name="insert_iteratorinsert_iterator"></a><a name="insert_iterator"></a> insert_iterator:: insert_iterator
 
 Bir `insert_iterator` kapsayıcıda belirtilen konuma bir öğe ekleyen bir oluşturur.
 
@@ -172,7 +173,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_star"></a>insert_iterator:: operator *
+## <a name="insert_iteratoroperator"></a><a name="op_star"></a> insert_iterator:: operator *
 
 Ekleme yineleyicisinin, öğeyi döndüren adresler olduğunu ortadan kaldırır.
 
@@ -186,7 +187,7 @@ insert_iterator<Container>& operator*();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıkış Yineleyici ifadesi ** \* Iter**değerini uygulamak için kullanılır  =  **value**. `Iter`Bir dizideki bir öğeyi ele alan bir yineleyici ise, ** \* Iter**  =  **değeri** bu öğenin değerini değeri ile değiştirir ve dizideki toplam öğe sayısını değiştirmez.
+Çıkış Yineleyici ifadesi **\* Iter** değerini uygulamak için kullanılır  =  . `Iter`Bir dizideki bir öğeyi ele alan bir yineleyici ise, **\* Iter**  =  **değeri** bu öğenin değerini değeri ile değiştirir ve dizideki toplam öğe sayısını değiştirmez.
 
 ### <a name="example"></a>Örnek
 
@@ -232,7 +233,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_add_add"></a>insert_iterator:: operator + +
+## <a name="insert_iteratoroperator"></a><a name="op_add_add"></a> insert_iterator:: operator + +
 
 Değerini, `insert_iterator` bir değerin depolanabileceği bir sonraki konuma arttırır.
 
@@ -296,7 +297,7 @@ After the insertions, the vector vec becomes:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_eq"></a>insert_iterator:: operator =
+## <a name="insert_iteratoroperator"></a><a name="op_eq"></a> insert_iterator:: operator =
 
 Kapsayıcıya bir değer ekler ve yeni öğeye işaret etmek için güncelleştirilmiş yineleyici döndürür.
 
@@ -379,7 +380,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratorreference"></a><a name="reference"></a>insert_iterator:: Reference
+## <a name="insert_iteratorreference"></a><a name="reference"></a> insert_iterator:: Reference
 
 İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: stdin, stdout, stderr'
 title: stdin, stdout, stderr
 ms.date: 10/23/2018
 f1_keywords:
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - standard input stream
 - stderr function
 ms.assetid: badd4735-596d-4498-857c-ec8b7e670e4c
-ms.openlocfilehash: 5de1ff01282f30ad133f909cb87f5d7c8d521ae5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba31487c472bd714560e919f45ec9e9aa5acd717
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62267760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235729"
 ---
 # <a name="stdin-stdout-stderr"></a>stdin, stdout, stderr
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 FILE *stdin;
@@ -33,11 +34,11 @@ FILE *stderr;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu giriş, çıkış ve hata çıktısı için standart akışlarıdır.
+Bunlar giriş, çıkış ve hata çıktısı için standart akışlardır.
 
-Standart çıktı ve standart hata ekrana yazdırılır sırasında varsayılan olarak, standart giriş klavyeden okunur.
+Standart giriş, standart çıktı ve standart hata ekranda yazdırıldığında varsayılan olarak klavyeden okunurdur.
 
-Aşağıdaki akış işaretçiler standart akışları erişmek kullanılabilir:
+Aşağıdaki akış işaretçileri standart akışlara erişmek için kullanılabilir:
 
 |İşaretçi|Akış|
 |-------------|------------|
@@ -45,11 +46,11 @@ Aşağıdaki akış işaretçiler standart akışları erişmek kullanılabilir:
 |`stdout`|Standart çıktı|
 |`stderr`|Standart hata|
 
-Bu işaretçiler, işlev bağımsız değişkenleri olarak kullanılabilir. Gibi bazı işlevler [getchar](../c-runtime-library/reference/getchar-getwchar.md) ve [putchar](../c-runtime-library/reference/putchar-putwchar.md), kullanın `stdin` ve `stdout` otomatik olarak.
+Bu işaretçiler, işlevlerde bağımsız değişkenler olarak kullanılabilir. [GetChar](../c-runtime-library/reference/getchar-getwchar.md) ve [putchar](../c-runtime-library/reference/putchar-putwchar.md)gibi bazı işlevler, `stdin` ve `stdout` otomatik olarak kullanılır.
 
-Bu işaretçileri sabittir ve yeni değerler atanamaz. [Freopen](../c-runtime-library/reference/freopen-wfreopen.md) işlevi, disk dosyaları veya diğer cihazlar için akışları yönlendirmek için kullanılabilir. İşletim sistemi, bir programın standart giriş ve çıkış komut düzeyinde yönlendirmenizi sağlar.
+Bu işaretçiler sabittir ve yeni değerler atanamaz. [Serbest aç](../c-runtime-library/reference/freopen-wfreopen.md) işlevi, akışları disk dosyalarına veya diğer cihazlara yeniden yönlendirmek için kullanılabilir. İşletim sistemi, bir programın standart giriş ve çıkışını komut düzeyinde yeniden yönlendirmenize olanak tanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../c-runtime-library/stream-i-o.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Akış G/Ç](../c-runtime-library/stream-i-o.md)<br/>
+[Global sabitler](../c-runtime-library/global-constants.md)

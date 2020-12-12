@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Eşzamanlılık Çalışma Zamanı özel durum Işleme'
 title: Eşzamanlılık Çalışma Zamanında Özel Durum İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - agents, exception handling [Concurrency Runtime]
 - task groups, exception handling [Concurrency Runtime]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-ms.openlocfilehash: f85bf5c96ef31944e84473f1fedb077123801153
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4613c2b11102c3468bfb3fa5976f8aeeeeb73be3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230408"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234312"
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanında Özel Durum İşleme
 
@@ -33,7 +34,7 @@ Eşzamanlılık Çalışma Zamanı birçok hata türüyle iletişim kurmak için
 
 - Çalışma zamanı, hafif görevler ve aracılar için özel durumları yönetmez.
 
-## <a name="in-this-document"></a><a name="top"></a>Bu belgede
+## <a name="in-this-document"></a><a name="top"></a> Bu belgede
 
 - [Görevler ve devamlılıklar](#tasks)
 
@@ -43,13 +44,13 @@ Eşzamanlılık Çalışma Zamanı birçok hata türüyle iletişim kurmak için
 
 - [Birden çok özel durum](#multiple)
 
-- [İptal Etme](#cancellation)
+- [İptal](#cancellation)
 
 - [Hafif görevler](#lwts)
 
 - [Zaman uyumsuz aracılar](#agents)
 
-## <a name="tasks-and-continuations"></a><a name="tasks"></a>Görevler ve devamlılıklar
+## <a name="tasks-and-continuations"></a><a name="tasks"></a> Görevler ve devamlılıklar
 
 Bu bölüm, çalışma zamanının [concurrency:: Task](../../parallel/concrt/reference/task-class.md) nesneleri ve devamlılıkları tarafından oluşturulan özel durumları nasıl işlediğini açıklar. Görev ve devamlılık modeli hakkında daha fazla bilgi için bkz. [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
@@ -81,7 +82,7 @@ Bu belgedeki [çalışma zamanı tarafından oluşturulan bölüm özel durumlar
 
 [[Üst](#top)]
 
-## <a name="task-groups-and-parallel-algorithms"></a><a name="task_groups"></a>Görev grupları ve paralel algoritmalar
+## <a name="task-groups-and-parallel-algorithms"></a><a name="task_groups"></a> Görev grupları ve paralel algoritmalar
 
 Bu bölüm, çalışma zamanının görev grupları tarafından oluşturulan özel durumları nasıl işlediğini açıklar. Bu bölüm aynı zamanda [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for)gibi paralel algoritmalar için de geçerlidir çünkü bu algoritmalar görev grupları üzerinde oluşturur.
 
@@ -106,7 +107,7 @@ Bir görev grubunda özel durum işlemeyi kullanan tüm bir örnek için bkz. [n
 
 [[Üst](#top)]
 
-## <a name="exceptions-thrown-by-the-runtime"></a><a name="runtime"></a>Çalışma zamanı tarafından oluşturulan özel durumlar
+## <a name="exceptions-thrown-by-the-runtime"></a><a name="runtime"></a> Çalışma zamanı tarafından oluşturulan özel durumlar
 
 Bir özel durum, çalışma zamanına yapılan çağrıdan kaynaklanabilir. [Concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) ve [concurrency:: operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md)dışında çok sayıda özel durum türü, bir programlama hatası gösterir. Bu hatalar genellikle kurtarılamaz olur ve bu nedenle uygulama kodu tarafından yakalanmamalıdır veya işlenmemelidir. Programlama hatalarını tanılamanıza gerek duyduğunuzda yalnızca uygulama kodunuzda kurtarılamaz hataları yakalamanızı veya işlemenizi öneririz. Ancak, çalışma zamanı tarafından tanımlanan özel durum türlerini anlamak programlama hatalarını tanılamanıza yardımcı olabilir.
 
@@ -126,7 +127,7 @@ Uygulamanızı olağan dışı sonlandırmasını engellemek için, kodunuzun ç
 
 [[Üst](#top)]
 
-## <a name="multiple-exceptions"></a><a name="multiple"></a>Birden çok özel durum
+## <a name="multiple-exceptions"></a><a name="multiple"></a> Birden çok özel durum
 
 Bir görev veya paralel algoritma birden çok özel durum alırsa, çalışma zamanı bu özel durumların yalnızca birini çağıran bağlama göre sıralarar. Çalışma zamanı, hangi özel durumun sıraladığında garanti etmez.
 
@@ -142,19 +143,19 @@ Aşağıda bu örnek için örnek çıktı gösterilmektedir.
 
 [[Üst](#top)]
 
-## <a name="cancellation"></a><a name="cancellation"></a>Kin
+## <a name="cancellation"></a><a name="cancellation"></a> Kin
 
 Tüm özel durumlar bir hata göstermiyor. Örneğin, bir arama algoritması, sonucu bulduğunda ilişkili görevini durdurmak için özel durum işlemeyi kullanabilir. Kodunuzda iptal mekanizmalarının nasıl kullanılacağı hakkında daha fazla bilgi için bkz. [PPL 'de iptal](../../parallel/concrt/cancellation-in-the-ppl.md).
 
 [[Üst](#top)]
 
-## <a name="lightweight-tasks"></a><a name="lwts"></a>Hafif görevler
+## <a name="lightweight-tasks"></a><a name="lwts"></a> Hafif görevler
 
 Hafif görev, doğrudan bir [eşzamanlılık:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) nesnesinden zamanladığınız bir görevdir. Hafif görevler sıradan görevlerden daha az yük taşır. Ancak çalışma zamanı, hafif görevler tarafından oluşturulan özel durumları yakalamaz. Bunun yerine, özel durum işlenmemiş özel durum işleyicisi tarafından yakalanır, varsayılan olarak işlemi sonlandırır. Bu nedenle, uygulamanızda uygun bir hata işleme mekanizması kullanın. Hafif görevler hakkında daha fazla bilgi için bkz. [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
 [[Üst](#top)]
 
-## <a name="asynchronous-agents"></a><a name="agents"></a>Zaman uyumsuz aracılar
+## <a name="asynchronous-agents"></a><a name="agents"></a> Zaman uyumsuz aracılar
 
 Hafif görevler gibi, çalışma zamanı, zaman uyumsuz aracılar tarafından oluşturulan özel durumları yönetmez.
 
@@ -181,7 +182,7 @@ Zaman uyumsuz aracılar hakkında daha fazla bilgi için bkz. [zaman uyumsuz ara
 
 [[Üst](#top)]
 
-## <a name="summary"></a><a name="summary"></a>Özetleme
+## <a name="summary"></a><a name="summary"></a> Özetleme
 
 [[Üst](#top)]
 

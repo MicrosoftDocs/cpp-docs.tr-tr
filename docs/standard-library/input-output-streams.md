@@ -1,16 +1,17 @@
 ---
-title: Giriş çıkış akışları
+description: Daha fazla bilgi için bkz. giriş/çıkış akışları
+title: Input-Output akışlar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - I/O [C++], stream
 - stream I/O
 ms.assetid: 21a97566-91a7-42d6-b2f8-a4c16bc926f1
-ms.openlocfilehash: 54b53f96d487e466106fe92a01affa7bd3e55c16
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd261bfdac5b9ce95b04430e9d77c6bd1df56c7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228264"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231647"
 ---
 # <a name="inputoutput-streams"></a>Giriş/Çıkış Akışları
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Duration sınıfı'
 title: duration Sınıfı
 ms.date: 03/27/2016
 f1_keywords:
@@ -11,18 +12,18 @@ f1_keywords:
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 helpviewer_keywords:
 - std::chrono [C++], duration
-ms.openlocfilehash: 454c03aeb1a4666543a28759d02405a512453ffc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9a37d3682e70f840c6c32eed55eb52ce133ab6f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217798"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232739"
 ---
 # <a name="duration-class"></a>duration Sınıfı
 
-İki zaman noktası arasındaki geçen süre olan *zaman aralığını*tutan bir türü açıklar.
+İki zaman noktası arasındaki geçen süre olan *zaman aralığını* tutan bir türü açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Rep, class Period = ratio<1>>
@@ -50,7 +51,7 @@ class duration <duration<Rep, Period1>, Period2>;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[sürenin](#duration)|Bir `duration` nesnesi oluşturur.|
+|[süre](#duration)|Bir `duration` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
@@ -81,7 +82,7 @@ class duration <duration<Rep, Period1>, Period2>;
 
 **Ad alanı:** std:: hatası
 
-## <a name="durationcount"></a><a name="count"></a>Duration:: Count
+## <a name="durationcount"></a><a name="count"></a> Duration:: Count
 
 Zaman aralığındaki saat işaretleri sayısını alır.
 
@@ -93,7 +94,7 @@ constexpr Rep count() const;
 
 Zaman aralığındaki saat işaretleri sayısı.
 
-## <a name="durationduration-constructor"></a><a name="duration"></a>süre::d uration Oluşturucusu
+## <a name="durationduration-constructor"></a><a name="duration"></a> süre::d uration Oluşturucusu
 
 Bir `duration` nesnesi oluşturur.
 
@@ -119,23 +120,23 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 Varsayılan dönemin işaret sayısı.
 
 *Hecesi*\
-*Period2*tarafından belirtilen dönem aralığı sayısı.
+*Period2* tarafından belirtilen dönem aralığı sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Varsayılan Oluşturucu başlatılmamış bir nesne oluşturur. Boş küme ayraçları kullanılarak değer başlatma, sıfır saat işaretleri zaman aralığını temsil eden bir nesne başlatır.
 
-İkinci, bir şablon bağımsız değişken Oluşturucusu, varsayılan bir süre kullanarak *R* saat aralığı zaman aralığını temsil eden bir nesne oluşturur `std::ratio<1>` . Değer sayımlarının hepsini kapatmamak için, kayan nokta *Rep2* `duration::rep` türü olarak değerlendirilemez olduğunda kayan nokta türü olarak değerlendirilemez bir gösterim türünden Rep2 bir duration nesnesi oluşturmak hatadır.
+İkinci, bir şablon bağımsız değişken Oluşturucusu, varsayılan bir süre kullanarak *R* saat aralığı zaman aralığını temsil eden bir nesne oluşturur `std::ratio<1>` . Değer sayımlarının hepsini kapatmamak için, kayan nokta  `duration::rep` türü olarak değerlendirilemez olduğunda kayan nokta türü olarak değerlendirilemez bir gösterim türünden Rep2 bir duration nesnesi oluşturmak hatadır.
 
-Üçüncü, iki şablon bağımsız değişken Oluşturucusu, *uzunluğu süre olan*zaman aralığı olan bir zaman aralığını temsil eden bir nesne oluşturur. Değer sayımlarının kesilmesinden kaçınmak için, türü, hedef *türü ile ilgili olan başka* bir Duration nesnesinden bir duration nesnesi oluşturmak hatadır.
+Üçüncü, iki şablon bağımsız değişken Oluşturucusu, *uzunluğu süre olan* zaman aralığı olan bir zaman aralığını temsil eden bir nesne oluşturur. Değer sayımlarının kesilmesinden kaçınmak için, türü, hedef *türü ile ilgili olan başka* bir Duration nesnesinden bir duration nesnesi oluşturmak hatadır.
 
-Bir süre türü `D1` , *incommensurable* `D2` `D2` kayan nokta türü olarak değerlendirilemez ve [ratio_divide \<D1::period, D2::period> :: Type::d en](../standard-library/ratio.md) 1 değilse, başka bir süre türü ile erişilebilir.
+Bir süre türü `D1` ,  `D2` `D2` kayan nokta türü olarak değerlendirilemez ve [ratio_divide \<D1::period, D2::period> :: Type::d en](../standard-library/ratio.md) 1 değilse, başka bir süre türü ile erişilebilir.
 
-*Rep2* örtük olarak dönüştürülemediği `rep` ve `treat_as_floating_point<rep>` *doğru* veya `treat_as_floating_point<Rep2>` *yanlış tutan*değilse, ikinci Oluşturucu aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz. [<type_traits>](../standard-library/type-traits.md).
+*Rep2* örtük olarak dönüştürülemediği `rep` ve `treat_as_floating_point<rep>` *doğru* veya `treat_as_floating_point<Rep2>` *yanlış tutan* değilse, ikinci Oluşturucu aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz. [<type_traits>](../standard-library/type-traits.md).
 
 Dönüştürmede taşma yoksa ve `treat_as_floating_point<rep>` *true*, ya da 1 ' e `ratio_divide<Period2, period>::den` eşit tutar ve yanlış bir değer `treat_as_floating_point<Rep2>` *tutuyorsa*, üçüncü Oluşturucu aşırı yükleme çözümüne katılmaz. Daha fazla bilgi için bkz. [<type_traits>](../standard-library/type-traits.md).
 
-## <a name="durationmax"></a><a name="max"></a>süre:: Max
+## <a name="durationmax"></a><a name="max"></a> süre:: Max
 
 Şablon parametre türünün değerleri için üst sınırı döndüren statik yöntem `Ref` .
 
@@ -147,7 +148,7 @@ static constexpr duration max();
 
 Aslında, döndürür `duration(duration_values<rep>::max())` .
 
-## <a name="durationmin"></a><a name="min"></a>süre:: dk
+## <a name="durationmin"></a><a name="min"></a> süre:: dk
 
 Şablon parametre türünün değerleri için alt sınır döndüren statik yöntem `Ref` .
 
@@ -159,7 +160,7 @@ static constexpr duration min();
 
 Aslında, döndürür `duration(duration_values<rep>::min())` .
 
-## <a name="durationoperator-"></a><a name="operator-"></a>Duration:: operator-
+## <a name="durationoperator-"></a><a name="operator-"></a> Duration:: operator-
 
 `duration`Bir iç içe değer sayısı ile birlikte nesnenin bir kopyasını döndürür.
 
@@ -167,7 +168,7 @@ Aslında, döndürür `duration(duration_values<rep>::min())` .
 constexpr duration operator-() const;
 ```
 
-## <a name="durationoperator--"></a><a name="operator--"></a>Duration:: operator--
+## <a name="durationoperator--"></a><a name="operator--"></a> Duration:: operator--
 
 Depolanan değer sayısını azaltır.
 
@@ -183,7 +184,7 @@ duration operator--(int);
 
 İkinci yöntem, **`*this`** azaltmadan önce yapılan bir kopyasını döndürür.
 
-## <a name="durationoperator"></a><a name="op_eq"></a>Duration:: operator =
+## <a name="durationoperator"></a><a name="op_eq"></a> Duration:: operator =
 
 Depolanan değer sayısını belirtilen bir değere düşürür.
 
@@ -202,7 +203,7 @@ duration& operator%=(const duration& Div);
 
 `duration`Modül işlemi gerçekleştirildikten sonra nesnesi.
 
-## <a name="durationoperator"></a><a name="op_star_eq"></a>Duration:: operator * =
+## <a name="durationoperator"></a><a name="op_star_eq"></a> Duration:: operator * =
 
 Depolanan değer sayısını belirtilen bir değerle çarpar.
 
@@ -219,7 +220,7 @@ Tarafından belirtilen türün değeri `duration::rep` .
 
 `duration`Çarpma gerçekleştirildikten sonra nesnesi.
 
-## <a name="durationoperator"></a><a name="op_div_eq"></a>Duration:: operator/=
+## <a name="durationoperator"></a><a name="op_div_eq"></a> Duration:: operator/=
 
 Depolanan değer sayısını belirtilen değere böler.
 
@@ -236,7 +237,7 @@ Tarafından belirtilen türün değeri `duration::rep` .
 
 `duration`Bölüm gerçekleştirildikten sonra nesnesi.
 
-## <a name="durationoperator"></a><a name="op_add"></a>Duration:: operator +
+## <a name="durationoperator"></a><a name="op_add"></a> Duration:: operator +
 
 Döndürür **`*this`** .
 
@@ -244,7 +245,7 @@ Döndürür **`*this`** .
 constexpr duration operator+() const;
 ```
 
-## <a name="durationoperator"></a><a name="op_add_add"></a>Duration:: operator + +
+## <a name="durationoperator"></a><a name="op_add_add"></a> Duration:: operator + +
 
 Depolanan değer sayısını artırır.
 
@@ -260,7 +261,7 @@ duration operator++(int);
 
 İkinci yöntem, **`*this`** arttırmadan önce yapılan bir kopyasını döndürür.
 
-## <a name="durationoperator"></a><a name="op_add_eq"></a>Duration:: operator + =
+## <a name="durationoperator"></a><a name="op_add_eq"></a> Duration:: operator + =
 
 Belirtilen bir nesnenin değer sayısını `duration` depolanan değer sayısına ekler.
 
@@ -277,7 +278,7 @@ Bir `duration` nesnesi.
 
 `duration`Ekleme gerçekleştirildikten sonra nesnesi.
 
-## <a name="durationoperator-"></a><a name="operator-_eq"></a>Duration:: operator-=
+## <a name="durationoperator-"></a><a name="operator-_eq"></a> Duration:: operator-=
 
 Belirtilen bir nesnenin değer sayısını `duration` depolanan değer sayısı 'ndan çıkartır.
 
@@ -294,7 +295,7 @@ Bir `duration` nesnesi.
 
 `duration`Çıkarma gerçekleştirildikten sonra nesnesi.
 
-## <a name="durationzero"></a><a name="zero"></a>süre:: sıfır
+## <a name="durationzero"></a><a name="zero"></a> süre:: sıfır
 
 `duration(duration_values<rep>::zero())` döndürür.
 
@@ -302,7 +303,7 @@ Bir `duration` nesnesi.
 static constexpr duration zero();
 ```
 
-## <a name="durationoperator-mod"></a><a name="op_mod_eq"></a>Duration:: operator mod =
+## <a name="durationoperator-mod"></a><a name="op_mod_eq"></a> Duration:: operator mod =
 
 Depolanan değer sayısı mod div veya div. Count () değerini azaltır.
 

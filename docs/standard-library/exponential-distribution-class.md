@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: exponential_distribution sınıfı'
 title: exponential_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,18 +24,18 @@ helpviewer_keywords:
 - std::exponential_distribution [C++], param_type
 - std::exponential_distribution [C++], param_type
 ms.assetid: d54f3126-a09b-45f9-a30b-0d94d03bcdc9
-ms.openlocfilehash: dbb8425047d9076343922dfbcf5c6162b6054c3b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f89976cf4da829f5778070079691b20371b0cd67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835915"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232469"
 ---
 # <a name="exponential_distribution-class"></a>exponential_distribution Sınıfı
 
 Üstel bir dağıtım üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class RealType = double>
@@ -190,9 +191,9 @@ Dağıtımı oluşturmak için kullanılan parametre paketi.
 
 **Önkoşul:**`0.0 < lambda`
 
-İlk Oluşturucu, saklı `lambda` değeri *lambda*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı `lambda` değeri *lambda* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="exponential_distributionparam_type"></a><a name="param_type"></a> exponential_distribution::p aram_type
 

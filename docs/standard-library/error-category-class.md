@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: error_category sınıfı'
 title: error_category Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::error_category::message
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
-ms.openlocfilehash: 218596ff5b81e99f4787efe2582fdc2752533cec
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 25ad7f6acfe50cdcc0c4b9df44fb3b8b6244f569
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840173"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232661"
 ---
 # <a name="error_category-class"></a>error_category Sınıfı
 
@@ -200,7 +201,7 @@ Eşitsizlik için test edilecek nesne.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-**`true`**`error_category`nesne `error_category` *sağa*geçirilen nesneye eşit değilse, tersi durumda **`false`** .
+**`true`**`error_category`nesne `error_category` *sağa* geçirilen nesneye eşit değilse, tersi durumda **`false`** .
 
 #### <a name="remarks"></a>Açıklamalar
 

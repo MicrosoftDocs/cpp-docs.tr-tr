@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: fisher_f_distribution sınıfı'
 title: fisher_f_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: 6f8c60b5f4523caf19e432ff853d49ad57fd277a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3020faef2ada6254fde940c89a60630816109863
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835811"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232479"
 ---
 # <a name="fisher_f_distribution-class"></a>fisher_f_distribution Sınıfı
 
 Bir Fisher F dağıtımı oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class RealType = double>
@@ -155,7 +156,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 İlk çalıştırma:
 
@@ -259,9 +260,9 @@ explicit fisher_f_distribution(const param_type& parm);
 
 **Önkoşul:** `0.0 < m` ' `0.0 < n`
 
-İlk Oluşturucu, saklı `m` değeri *k* değerini tutan ve saklı `n` değeri *n*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı `m` değeri *k* değerini tutan ve saklı `n` değeri *n* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="fisher_f_distributionparam_type"></a><a name="param_type"></a> fisher_f_distribution::p aram_type
 

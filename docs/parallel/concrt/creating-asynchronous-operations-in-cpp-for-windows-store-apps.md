@@ -1,16 +1,17 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: UWP uygulamaları için C++ ' da zaman uyumsuz Işlemler oluşturma"
 title: UWP uygulamaları için C++ ' da zaman uyumsuz Işlemler oluşturma
 ms.date: 11/19/2018
 helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: 0361da761b9b05e75233711df9e826c15aa14e28
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2c7ec1a6fc469bf56faa746f11b52547cbf9ac8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234507"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP uygulamaları için C++ ' da zaman uyumsuz Işlemler oluşturma
 
@@ -43,7 +44,7 @@ Zaman uyumsuz programlama kullanımı, uygulamaların kullanıcı girişine yan�
 
 - [Örnek: C++ ve XAML ile Windows Çalışma Zamanı uygulamasında yürütmeyi denetleme](#example-app)
 
-## <a name="creating-asynchronous-operations"></a><a name="create-async"></a>Zaman uyumsuz Işlemler oluşturma
+## <a name="creating-asynchronous-operations"></a><a name="create-async"></a> Zaman uyumsuz Işlemler oluşturma
 
 Paralel Desenler kitaplığındaki (PPL) görev ve devamlılık modelini, önceki görev tamamlandığında çalışan ek görevlerin yanı sıra arka plan görevlerini tanımlamak için de kullanabilirsiniz. Bu işlevsellik [concurrency:: Task](../../parallel/concrt/reference/task-class.md) sınıfı tarafından sağlanır. Bu model ve sınıf hakkında daha fazla bilgi için `task` bkz. [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
@@ -77,10 +78,10 @@ Dönüş türü, `create_async` bağımsız değişkenlerinin türüne göre bel
 
 Aşağıdaki tabloda, uygulamanızda zaman uyumsuz işlemleri tanımlamak için kullanabileceğiniz birleşimler özetlenmektedir.
 
-|Bu Windows Çalışma Zamanı arabirimini oluşturmak için|Bu türü buradan döndür`create_async`|Örtük bir iptal belirteci kullanmak için bu parametre türlerini iş işlevinize geçirin|Açık bir iptal belirteci kullanmak için bu parametre türlerini iş işlevinize geçirin|
+|Bu Windows Çalışma Zamanı arabirimini oluşturmak için|Bu türü buradan döndür `create_async`|Örtük bir iptal belirteci kullanmak için bu parametre türlerini iş işlevinize geçirin|Açık bir iptal belirteci kullanmak için bu parametre türlerini iş işlevinize geçirin|
 |----------------------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-|`IAsyncAction`|**`void`** veya`task<void>`|(yok)|(`cancellation_token`)|
-|`IAsyncActionWithProgress<TProgress>`|**`void`** veya`task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
+|`IAsyncAction`|**`void`** veya `task<void>`|(yok)|(`cancellation_token`)|
+|`IAsyncActionWithProgress<TProgress>`|**`void`** veya `task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
 |`IAsyncOperation<TResult>`|`T` veya `task<T>`|(yok)|(`cancellation_token`)|
 |`IAsyncActionOperationWithProgress<TProgress, TProgress>`|`T` veya `task<T>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
 
@@ -90,7 +91,7 @@ Aşağıdaki örnek, `IAsyncAction` başka bir Windows çalışma zamanı bileş
 
 [!code-cpp[concrt-windowsstore-primes#100](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_1.cpp)]
 
-## <a name="example-creating-a-c-windows-runtime-component-and-consuming-it-from-c"></a><a name="example-component"></a>Örnek: C++ Windows Çalışma Zamanı bileşeni oluşturma ve C 'den kullanma\#
+## <a name="example-creating-a-c-windows-runtime-component-and-consuming-it-from-c"></a><a name="example-component"></a> Örnek: C++ Windows Çalışma Zamanı bileşeni oluşturma ve C 'den kullanma\#
 
 İşlem yoğunluklu işlemleri gerçekleştirmek için UI ve C++ Windows Çalışma Zamanı bileşeni tanımlamak üzere XAML ve C# kullanan bir uygulamayı düşünün. Bu örnekte, C++ bileşeni belirli bir aralıktaki hangi sayıların asal olduğunu hesaplar. Dört Windows Çalışma Zamanı zaman uyumsuz görev arabirimleri arasındaki farkları göstermek için, Visual Studio 'da, **boş bir çözüm** oluşturup dosyayı adlandırarak başlatın `Primes` . Ardından **Windows çalışma zamanı bileşen** projesi çözümüne ekleyin ve bunu yeniden adlandırın `PrimesLibrary` . Oluşturulan C++ üst bilgi dosyasına aşağıdaki kodu ekleyin (Bu örnek, bu örnekte Class1. h 'yi, Primes. h olarak yeniden adlandırır). Her **`public`** Yöntem dört zaman uyumsuz arabirimden birini tanımlar. Bir değer döndüren yöntemler bir [Windows:: Foundation:: Collections:: IVector \<int> ](/uwp/api/windows.foundation.collections.ivector-1) nesnesi döndürür. İlerlemeyi rapor eden yöntemler, **`double`** tamamlanan genel çalışmanın yüzdesini tanımlayan değerler üretir.
 
@@ -128,7 +129,7 @@ Aşağıdaki çizimde `Primes` her bir seçenek seçildikten sonra uygulama gös
 
 `create_async`Diğer diller tarafından tüketilen zaman uyumsuz görevler oluşturmak için kullanan bir örnek için, bkz. [Bing Haritalar seyahat Iyileştirici örneğinde C++ kullanma](/previous-versions/windows/apps/hh699891(v=vs.140)).
 
-## <a name="controlling-the-execution-thread"></a><a name="exethread"></a>Yürütme Iş parçacığını denetleme
+## <a name="controlling-the-execution-thread"></a><a name="exethread"></a> Yürütme Iş parçacığını denetleme
 
 Windows Çalışma Zamanı COM iş parçacığı modelini kullanır. Bu modelde, nesneler kendi eşitlemesini nasıl işleydiklerine bağlı olarak farklı apartmanlar halinde barındırılır. İş parçacığı güvenli nesneleri, çok iş parçacıklı grupta (MTA) barındırılır. Tek bir iş parçacığı tarafından erişilmesi gereken nesneler tek iş parçacıklı bir grupta (STA) barındırılır.
 
@@ -153,7 +154,7 @@ Aşağıdaki bölümde, diskten bir dosyayı okuyan bir uygulama gösterilmekted
 > [!IMPORTANT]
 > [Concurrency:: task::](reference/task-class.md#wait) STA üzerinde çalışan devamlılık gövdesinde bekle. Aksi takdirde, çalışma zamanı [eşzamanlılık:: invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) oluşturur, çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt vermemesine neden olabilir. Ancak, görev tabanlı devamlılık içinde öncül görevin sonucunu almak için [concurrency:: task:: Get](reference/task-class.md#get) yöntemini çağırabilirsiniz.
 
-## <a name="example-controlling-execution-in-a-windows-runtime-app-with-c-and-xaml"></a><a name="example-app"></a>Örnek: C++ ve XAML ile Windows Çalışma Zamanı uygulamasında yürütmeyi denetleme
+## <a name="example-controlling-execution-in-a-windows-runtime-app-with-c-and-xaml"></a><a name="example-app"></a> Örnek: C++ ve XAML ile Windows Çalışma Zamanı uygulamasında yürütmeyi denetleme
 
 Diskten bir dosyayı okuyan bir C++ XAML uygulamasını düşünün, bu dosyadaki en yaygın kelimeleri bulur ve ardından Kullanıcı arabirimindeki sonuçları gösterir. Bu uygulamayı oluşturmak için, Visual Studio 'da, **boş bir uygulama (Evrensel Windows)** projesi oluşturup dosyayı adlandırarak başlatın `CommonWords` . Uygulama bildiriminizde, uygulamanın Belgeler klasörüne erişmesini sağlamak için **belge kitaplığı** özelliğini belirtin. Ayrıca, uygulama bildiriminin bildirimler bölümüne metin (. txt) dosya türünü de ekleyin. Uygulama özellikleri ve bildirimler hakkında daha fazla bilgi için bkz. [Windows uygulamalarının paketlenmesi, dağıtılması ve sorgu](/windows/win32/appxpkg/appx-portal).
 
@@ -161,7 +162,7 @@ Diskten bir dosyayı okuyan bir C++ XAML uygulamasını düşünün, bu dosyadak
 
 [!code-xml[concrt-windowsstore-commonwords#1](../../parallel/concrt/codesnippet/xaml/creating-asynchronous-operations-in-cpp-for-windows-store-apps_6.xaml)]
 
-Aşağıdaki `#include` deyimlerini *pch. h*öğesine ekleyin.
+Aşağıdaki `#include` deyimlerini *pch. h* öğesine ekleyin.
 
 [!code-cpp[concrt-windowsstore-commonwords#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_7.h)]
 
@@ -177,7 +178,7 @@ MainPage. cpp içinde,, `MainPage::MakeWordList` `MainPage::FindCommonWords` ve 
 
 [!code-cpp[concrt-windowsstore-commonwords#5](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_10.cpp)]
 
-Oluşturucuyu, `MainPage` Kullanıcı arabiriminde ortak kelimeleri barındırıcı tarafından görünen bir devamlılık görevlerinin zinciri oluşturacak *The Iliad* şekilde değiştirin. Metni tek tek sözcüklere bölmek ve ortak sözcükleri bulmak için ilk iki devamlılık görevi zaman alıcı olabilir ve bu nedenle açıkça arka planda çalışacak şekilde ayarlanır. Kullanıcı arabirimini güncelleştiren son devamlılık görevi, devamlılık bağlamı olmadığını belirtir ve bu nedenle apartman iş parçacığı kurallarını izler.
+Oluşturucuyu, `MainPage` Kullanıcı arabiriminde ortak kelimeleri barındırıcı tarafından görünen bir devamlılık görevlerinin zinciri oluşturacak  şekilde değiştirin. Metni tek tek sözcüklere bölmek ve ortak sözcükleri bulmak için ilk iki devamlılık görevi zaman alıcı olabilir ve bu nedenle açıkça arka planda çalışacak şekilde ayarlanır. Kullanıcı arabirimini güncelleştiren son devamlılık görevi, devamlılık bağlamı olmadığını belirtir ve bu nedenle apartman iş parçacığı kurallarını izler.
 
 [!code-cpp[concrt-windowsstore-commonwords#6](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_11.cpp)]
 
