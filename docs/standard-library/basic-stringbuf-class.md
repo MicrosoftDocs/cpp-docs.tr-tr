@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: basic_stringbuf sınıfı'
 title: basic_stringbuf Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,16 +31,16 @@ helpviewer_keywords:
 - std::basic_stringbuf [C++], str
 - std::basic_stringbuf [C++], underflow
 ms.assetid: 40c85f9e-42a5-4a65-af5c-23c8e3bf8113
-ms.openlocfilehash: 578d0e31e08f3e077a908c4344f77da5495df40d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2b39c1808a896c79d5c9e938a0a9cc03251c11cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325605"
 ---
 # <a name="basic_stringbuf-class"></a>basic_stringbuf Sınıfı
 
-Karakter özellikleri sınıf `Elem` `Tr`tarafından belirlenen tür öğelerinin iletimini denetleyen bir akış arabelleği, bir dizi nesnesinde depolanan öğeler dizisine ve bu tür öğelerin iletimini açıklar.
+`Elem`Karakter nitelikleri, `Tr` bir dizi nesnesinde depolanan öğelerin dizisine ve türüne göre belirlenen, türü öğelerin aktarımını denetleyen bir akış arabelleğini açıklar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,71 +52,71 @@ class basic_stringbuf : public basic_streambuf<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ayırma*\
+*Tahsis*\
 Ayırıcı sınıf.
 
 *Elem*\
-Dize temel öğenin türü.
+Dizenin temel öğe öğesi türü.
 
 *Tr*\
-Karakter özellikleri dize temel öğesi üzerinde uzmanlaşmıştır.
+Dizenin temel öğesi üzerinde özelleştirilmiş karakter nitelikleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne, dizideki değişiklikleri karşılamak için gerektiğinde ayrılır, genişletilir ve serbest bırakılır.
+Nesne, dizideki değişikliklere uyum sağlamak için gereken şekilde ayrılır, genişletilir ve serbest bırakılır.
 
-`Elem`Sınıf basic_stringbuf< bir `Tr` `Alloc` nesne , , `ios_base::`> `stringbuf` kendi mod **modu**olarak kendi oluşturucudan [openmode](../standard-library/ios-base-class.md#openmode) bağımsız değişkeninin bir kopyasını depolar:
+Basic_stringbuf< sınıfının bir nesnesi, `Elem` `Tr` `Alloc`> bir `ios_base::` [OpenMode](../standard-library/ios-base-class.md#openmode) bağımsız değişkeninin bir kopyasını kendi mod modu olarak oluşturucudan depolar `stringbuf` : 
 
-- `mode & ios_base::in` Sıfır değilse, giriş arabelleği erişilebilir. Daha fazla bilgi için [basic_streambuf Sınıfı'na](../standard-library/basic-streambuf-class.md)bakın.
+- `mode & ios_base::in`Sıfır değilse, giriş arabelleğine erişilebilir. Daha fazla bilgi için bkz. [Basic_streambuf sınıfı](../standard-library/basic-streambuf-class.md).
 
-- `mode & ios_base::out` Sıfır değilse, çıktı arabelleği erişilebilir.
+- `mode & ios_base::out`Sıfır değilse, çıkış arabelleği erişilebilir olur.
 
 ### <a name="constructors"></a>Oluşturucular
 
 |Oluşturucu|Açıklama|
 |-|-|
-|[basic_stringbuf](#basic_stringbuf)|Türünde `basic_stringbuf`bir nesne oluşturuyor.|
+|[basic_stringbuf](#basic_stringbuf)|Türünde bir nesne oluşturur `basic_stringbuf` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
 |Tür adı|Açıklama|
 |-|-|
-|[Allocator_type](#allocator_type)|Tür, şablon parametresi *Alloc*ile eş anlamlıdır.|
-|[Char_type](#char_type)|Bir tür adını *Elem* şablon parametresi ile ilişkilendirer.|
-|[Int_type](#int_type)|Bu türü `basic_filebuf`Tr *kapsamındaki* aynı adın türüne eşdeğer 'kapsamda yapar.|
-|[off_type](#off_type)|Bu türü `basic_filebuf`Tr *kapsamındaki* aynı adın türüne eşdeğer 'kapsamda yapar.|
-|[pos_type](#pos_type)|Bu türü `basic_filebuf`Tr *kapsamındaki* aynı adın türüne eşdeğer 'kapsamda yapar.|
-|[traits_type](#traits_type)|Bir tür adını *Tr* şablon parametresi ile ilişkilendirer.|
+|[allocator_type](#allocator_type)|Tür, bir şablon parametresi *ayırma* için bir eş anlamlı.|
+|[char_type](#char_type)|Bir tür adını *elemtemplate* parametresiyle ilişkilendirir.|
+|[int_type](#int_type)|Bu türün kapsam içinde, `basic_filebuf` *tr* kapsamındaki aynı ada sahip türüne eşit olmasını sağlar.|
+|[off_type](#off_type)|Bu türün kapsam içinde, `basic_filebuf` *tr* kapsamındaki aynı ada sahip türüne eşit olmasını sağlar.|
+|[pos_type](#pos_type)|Bu türün kapsam içinde, `basic_filebuf` *tr* kapsamındaki aynı ada sahip türüne eşit olmasını sağlar.|
+|[traits_type](#traits_type)|Bir tür adını *tr* şablon parametresiyle ilişkilendirir.|
 
-### <a name="member-functions"></a>Üye işlevler
+### <a name="member-functions"></a>Üye işlevleri
 
-|Üye fonksiyonu|Açıklama|
+|Üye işlevi|Açıklama|
 |-|-|
-|[Taşma](#overflow)|Tam bir arabelleğe yeni bir karakter eklendiğinde çağrılabilen korumalı, sanal bir işlev.|
-|[pbackfail](#pbackfail)|Korumalı sanal üye işlev, bir öğeyi giriş arabelleğine geri koymaya çalışır, sonra onu geçerli öğe (bir sonraki işaretçitarafından işaret eder) yapar.|
-|[seekoff](#seekoff)|Korumalı sanal üye işlevi, denetitilen akışlar için geçerli konumları değiştirmeye çalışır.|
-|[seekpos](#seekpos)|Korumalı sanal üye işlevi, denetitilen akışlar için geçerli konumları değiştirmeye çalışır.|
-|[Str](#str)|Yazma konumunu değiştirmeden metni bir dize arabelleği içinde ayarlar veya alır.|
+|[taşma](#overflow)|Tam arabelleğe yeni bir karakter eklendiğinde çağrılabilen, korunan, sanal bir işlev.|
+|[pbackfail](#pbackfail)|Korumalı sanal üye işlevi, giriş arabelleğine bir öğe geri döndürmeye çalışır, ardından bunu geçerli öğe yapar (sonraki işaretçinin gösterdiği).|
+|[seekoff](#seekoff)|Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışır.|
+|[seekpos](#seekpos)|Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışır.|
+|[üstbilgisine](#str)|Yazma konumunu değiştirmeden bir dize arabelleğindeki metni ayarlar veya alır.|
 |swap||
-|[akış altı](#underflow)|Geçerli öğeyi giriş akışından ayıklamak için korunan sanal üye işlevi.|
+|[öğe](#underflow)|Giriş akışından geçerli öğeyi ayıklamak için korunan sanal üye işlevi.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<sstream>
+**Üst bilgi:**\<sstream>
 
 **Ad alanı:** std
 
-## <a name="basic_stringbufallocator_type"></a><a name="allocator_type"></a>basic_stringbuf:allocator_type
+## <a name="basic_stringbufallocator_type"></a><a name="allocator_type"></a> basic_stringbuf:: allocator_type
 
-Tür, şablon parametresi *Alloc*ile eş anlamlıdır.
+Tür, bir şablon parametresi *ayırma* için bir eş anlamlı.
 
 ```cpp
 typedef Alloc allocator_type;
 ```
 
-## <a name="basic_stringbufbasic_stringbuf"></a><a name="basic_stringbuf"></a>basic_stringbuf:basic_stringbuf
+## <a name="basic_stringbufbasic_stringbuf"></a><a name="basic_stringbuf"></a> basic_stringbuf:: basic_stringbuf
 
-Türünde `basic_stringbuf`bir nesne oluşturuyor.
+Türünde bir nesne oluşturur `basic_stringbuf` .
 
 ```cpp
 basic_stringbuf(
@@ -129,44 +130,44 @@ basic_stringbuf(
 ### <a name="parameters"></a>Parametreler
 
 *_Mode*\
-ios_base'daki sayısallaştırmalardan [biri::openmode](../standard-library/ios-base-class.md#openmode).
+[İos_base:: OpenMode](../standard-library/ios-base-class.md#openmode)içindeki Numaralandırmalardan biri.
 
-*Str*\
-Basic_string türünde [bir](../standard-library/basic-string-class.md)nesne.
+*üstbilgisine*\
+[Basic_string](../standard-library/basic-string-class.md)türünde bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu, giriş arabelleği ve çıktı arabelleği denetleyen tüm işaretçilerde bir null işaretçisi depolar. Daha fazla bilgi için basic_streambuf [Sınıfının](../standard-library/basic-streambuf-class.md)Açıklamalar bölümüne bakın. Ayrıca stringbuf modu olarak *_Mode* depolar. Daha fazla bilgi için basic_stringbuf [Sınıfının](../standard-library/basic-stringbuf-class.md)Açıklamalar bölümüne bakın.
+İlk Oluşturucu, giriş arabelleğini ve çıkış arabelleğini denetleyen tüm işaretçilerde boş bir işaretçi depolar. Daha fazla bilgi için [Basic_streambuf sınıfının](../standard-library/basic-streambuf-class.md)açıklamalar bölümüne bakın. Ayrıca, *_Mode* stringarabelleğe modu olarak depolar. Daha fazla bilgi için [basic_stringbuf sınıfının](../standard-library/basic-stringbuf-class.md)açıklamalar bölümüne bakın.
 
-İkinci oluşturucu dize *nesnesi str*tarafından denetlenir dizi bir kopyasını ayırır. `_Mode & ios_base::in` Sıfır değilse, giriş arabelleği sıranın başında okumaya başlamak için ayarlar. `_Mode & ios_base::out` Sıfır değilse, çıkış arabelleği sıranın başında yazmaya başlamak için ayarlar. Ayrıca stringbuf modu olarak *_Mode* depolar. Daha fazla bilgi için basic_stringbuf [Sınıfının](../standard-library/basic-stringbuf-class.md)Açıklamalar bölümüne bakın.
+İkinci Oluşturucu dize nesnesi *Str* tarafından denetlenen sıranın bir kopyasını ayırır. `_Mode & ios_base::in`Sıfır değilse, sıranın başlangıcında okumaya başlamak için giriş arabelleğini ayarlar. `_Mode & ios_base::out`Sıfır değilse, sıranın başlangıcında yazmaya başlamak için çıkış arabelleğini ayarlar. Ayrıca, *_Mode* stringarabelleğe modu olarak depolar. Daha fazla bilgi için [basic_stringbuf sınıfının](../standard-library/basic-stringbuf-class.md)açıklamalar bölümüne bakın.
 
-## <a name="basic_stringbufchar_type"></a><a name="char_type"></a>basic_stringbuf:char_type
+## <a name="basic_stringbufchar_type"></a><a name="char_type"></a> basic_stringbuf:: char_type
 
-Bir tür adını *Elem* şablon parametresi ile ilişkilendirer.
+Bir tür adını *elemtemplate* parametresiyle ilişkilendirir.
 
 ```cpp
 typedef Elem char_type;
 ```
 
-## <a name="basic_stringbufint_type"></a><a name="int_type"></a>basic_stringbuf::int_type
+## <a name="basic_stringbufint_type"></a><a name="int_type"></a> basic_stringbuf:: int_type
 
-Bu türü, basic_filebuf kapsamında, `Tr` kapsamdaki aynı adın türüne eşdeğer hale getirir.
+Bu türün basic_filebuf kapsamında kapsam içindeki aynı ada sahip olmasını sağlar `Tr` .
 
 ```cpp
 typedef typename traits_type::int_type int_type;
 ```
 
-## <a name="basic_stringbufoff_type"></a><a name="off_type"></a>basic_stringbuf:off_type
+## <a name="basic_stringbufoff_type"></a><a name="off_type"></a> basic_stringbuf:: off_type
 
-Bu türü, basic_filebuf kapsamında, `Tr` kapsamdaki aynı adın türüne eşdeğer hale getirir.
+Bu türün basic_filebuf kapsamında kapsam içindeki aynı ada sahip olmasını sağlar `Tr` .
 
 ```cpp
 typedef typename traits_type::off_type off_type;
 ```
 
-## <a name="basic_stringbufoverflow"></a><a name="overflow"></a>basic_stringbuf::taşma
+## <a name="basic_stringbufoverflow"></a><a name="overflow"></a> basic_stringbuf:: overflow
 
-Tam bir arabelleğe yeni bir karakter eklendiğinde çağrılabilen korumalı sanal işlev.
+Tam arabelleğe yeni bir karakter eklendiğinde çağrılabilen, korunan bir sanal işlev.
 
 ```cpp
 virtual int_type overflow(int_type _Meta = traits_type::eof());
@@ -175,23 +176,23 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 ### <a name="parameters"></a>Parametreler
 
 *_Meta*\
-Arabelleğe eklenecek karakter veya `traits_type::eof`.
+Arabelleğe eklenecek karakter veya `traits_type::eof` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olamazsa, döndürür. `traits_type::eof` Aksi takdirde, traits_type döndürür:: **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta).*
+İşlev başarılı olmazsa, döndürür `traits_type::eof` . Aksi takdirde, **traits_type::**[Not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *meta*) döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*\_*[to_char_type](../standard-library/char-traits-struct.md#to_char_type)[eof](../standard-library/char-traits-struct.md#eof) **traits_type::** * \_Meta* traits_type eşit karşılaştırmak değilse:: eof , korumalı sanal üye işlevi traits_type öğesi eklemek için **çalışır::** to_char_type ( Meta ) çıkış arabelleği içine. Bunu çeşitli şekillerde yapabilirsiniz:
+Eğer *\_ meta* şuna eşit **traits_type::**[EOF](../standard-library/char-traits-struct.md#eof)olarak karşılaştırmadığı takdirde, korunan sanal üye işlevi, **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_ meta*) öğesini çıkış arabelleğine eklemeyi dener. Bunu çeşitli yollarla yapabilirsiniz:
 
-- Bir yazma konumu varsa, öğeyi yazma konumuna depolayabilir ve çıktı arabelleği için bir sonraki işaretçiyi artım.
+- Bir yazma konumu varsa, öğeyi yazma konumuna kaydedebilir ve çıkış arabelleği için sonraki işaretçiyi artırabilirsiniz.
 
-- Çıktı arabelleği için yeni veya ek depolama alanı ayırarak yazma konumunu kullanılabilir hale getirebilir. Çıktı arabelleği bu şekilde genişletilmesi de ilişkili giriş arabellek genişletir.
+- Çıktı arabelleği için yeni veya ek depolama alanı ayırarak bir yazma konumu kullanılabilir hale getirir. Çıkış arabelleğini bu şekilde genişletmek, ilişkili giriş arabelleğini de genişletir.
 
-## <a name="basic_stringbufpbackfail"></a><a name="pbackfail"></a>basic_stringbuf::pbackfail
+## <a name="basic_stringbufpbackfail"></a><a name="pbackfail"></a> basic_stringbuf::p geri başarısız
 
-Korumalı sanal üye işlev, bir öğeyi giriş arabellesine geri koymaya ve sonra onu geçerli öğe (bir sonraki işaretçiye işaret eden) yapmaya çalışır.
+Korumalı sanal üye işlevi, giriş arabelleğine bir öğe geri döndürmeye çalışır ve sonra geçerli öğe (sonraki işaretçinin gösterdiği) yapar.
 
 ```cpp
 virtual int_type pbackfail(int_type _Meta = traits_type::eof());
@@ -200,31 +201,31 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 ### <a name="parameters"></a>Parametreler
 
 *_Meta*\
-Arabelleğe eklenecek karakter veya `traits_type::eof`.
+Arabelleğe eklenecek karakter veya `traits_type::eof` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olamazsa, döndürür. `traits_type::eof` Aksi takdirde, traits_type döndürür:: **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta).*
+İşlev başarılı olmazsa, döndürür `traits_type::eof` . Aksi takdirde, **traits_type::**[Not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *meta*) döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*_Meta* traits_type eşit karşılaştırırsa:: **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), geri itmek için öğe etkili bir geçerli öğe önce akışı zaten biridir. Aksi takdirde, bu öğe **bayt** = traits_type ile**değiştirilir::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(_ *Meta).* İşlev çeşitli şekillerde bir öğegeri koyabilirsiniz:
+*_Meta* , eşittir **traits_type::**[EOF](../standard-library/char-traits-struct.md#eof)olarak karşılaştırırsa, geri gönderme öğesi geçerli öğeden önceki akışta etkin bir şekilde zaten var. Aksi takdirde, bu öğe **byte**  =  **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(_ *meta*) ile değiştirilmiştir. İşlevi bir öğeyi çeşitli yollarla geri alabilir:
 
-- Bir geri alma konumu varsa ve orada depolanan öğe bayt ile karşılaştırırsa, giriş arabelleği için bir sonraki işaretçiyi atabilir.
+- Bir Putback konumu varsa ve depolanan öğe bayt ile eşit olarak karşılaştırıyorsa, giriş arabelleği için bir sonraki işaretçiyi azaledebilir.
 
-- Bir geri alma konumu varsa ve stringbuf modu dizinin değiştirilmesine izin verirse **(mod & ios_base::out** sıfır değildir), byte'yi putback konumuna depolayabilir ve giriş arabelleği için bir sonraki işaretçiyi bozabilir.
+- Bir Putback konumu varsa ve StringBuffer modu sıranın değiştirilmesini izin veriyorsa ( **mode & ios_base:: Out** sıfır değilse), bayt putback konumuna saklayabilir ve giriş arabelleği için bir sonraki işaretçiyi azaltır.
 
-## <a name="basic_stringbufpos_type"></a><a name="pos_type"></a>basic_stringbuf::pos_type
+## <a name="basic_stringbufpos_type"></a><a name="pos_type"></a> basic_stringbuf::p os_type
 
-Bu türü, basic_filebuf kapsamında, `Tr` kapsamdaki aynı adın türüne eşdeğer hale getirir.
+Bu türün basic_filebuf kapsamında kapsam içindeki aynı ada sahip olmasını sağlar `Tr` .
 
 ```cpp
 typedef typename traits_type::pos_type pos_type;
 ```
 
-## <a name="basic_stringbufseekoff"></a><a name="seekoff"></a>basic_stringbuf::seekoff
+## <a name="basic_stringbufseekoff"></a><a name="seekoff"></a> basic_stringbuf:: seekoff
 
-Korumalı sanal üye işlevi, denetitilen akışlar için geçerli konumları değiştirmeye çalışır.
+Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışır.
 
 ```cpp
 virtual pos_type seekoff(
@@ -235,14 +236,14 @@ virtual pos_type seekoff(
 
 ### <a name="parameters"></a>Parametreler
 
-*_off*\
-*_Way*göreli aramak için pozisyon . Daha fazla bilgi için [bkz: basic_stringbuf::off_type](#off_type).
+*_Off*\
+*_Way* göreli olarak arama konumu. Daha fazla bilgi için bkz. [basic_stringbuf:: off_type](#off_type).
 
-*_way*\
-Ofset işlemleri için başlangıç noktası. Bkz. [ios_base::olası](../standard-library/ios-base-class.md#seekdir) değerler için seekdir.
+*_Way*\
+Dengeleme işlemleri için başlangıç noktası. Olası değerler için [ios_base:: seekdir](../standard-library/ios-base-class.md#seekdir) öğesine bakın.
 
 *_Mode*\
-İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin vermektir. Daha fazla bilgi için [bkz: ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin verir. Daha fazla bilgi için bkz. [ios_base:: OpenMode](../standard-library/ios-base-class.md#openmode).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -250,23 +251,23 @@ Yeni konumu veya geçersiz akış konumunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfın bir nesnesi için `basic_stringbuf<Elem, Tr, Alloc>`akış konumu tamamen bir akış ofsetinden oluşur. Ofset sıfır, denetlenir dizinin ilk öğesini belirtir.
+Sınıfının bir nesnesi için `basic_stringbuf<Elem, Tr, Alloc>` bir akış konumu yalnızca bir akış sapmasını içerir. Sıfır değeri, denetlenen dizinin ilk öğesini belirler.
 
-Yeni pozisyon aşağıdaki gibi belirlenir:
+Yeni konum aşağıdaki gibi belirlenir:
 
-- `_Way`  == Eğer `ios_base::beg`, yeni pozisyon akışın başlangıcı artı *_Off.*
+- İse `_Way`  ==  `ios_base::beg` , yeni konum akışın başıdır ve *_Off*.
 
-- `_Way`  == Eğer `ios_base::cur`, yeni konum geçerli akış konumu artı *_Off*.
+- İse `_Way`  ==  `ios_base::cur` , yeni konum geçerli akış konumu artı *_Off*.
 
-- `_Way`  == Eğer `ios_base::end`, yeni pozisyon akışı artı *_Off*sonudur.
+- İse `_Way`  ==  `ios_base::end` , yeni konum akışın sonu artı *_Off*.
 
-Sıfır `_Mode & ios_base::in` değilse, işlev giriş arabelleği okumak için bir sonraki konumu değiştirir. Sıfır `_Mode & ios_base::out` değilse, işlev çıktı arabelleği yazmak için bir sonraki konumu değiştirir. Bir akışın etkilenmesi için arabelleği bulunması gerekir. Bir konumlandırma işleminin başarılı olabilmesi için, elde edilen akış konumunun denetlenme sırası içinde olması gerekir. İşlev her iki akış konumunu `ios_base::beg` da `ios_base::end` etkiliyorsa, *_Way* olması gerekir veya her iki akış da aynı öğede konumlandırılmış olmalıdır. Aksi takdirde (veya her iki konum etkilenmez), konumlandırma işlemi başarısız olur.
+`_Mode & ios_base::in`Sıfır değilse, işlev giriş arabelleğindeki bir sonraki konumu oku olarak değiştirir. `_Mode & ios_base::out`Sıfır değilse, işlev çıkış arabelleğine yazmak için bir sonraki konumu değiştirir. Bir akışın etkilenmesi için arabelleğinin mevcut olması gerekir. Konumlandırma işleminin başarılı olması için, elde edilen akış konumu denetimli sıra içinde olmalıdır. İşlev her iki akış konumunu da etkiliyorsa, *_Way* `ios_base::beg` veya `ios_base::end` her iki akış aynı öğeye konumlandırılmış olmalıdır. Aksi takdirde (veya hiçbir konum etkilenmezse), konumlandırma işlemi başarısız olur.
 
-İşlev akış konumlarından birini veya her ikisini değiştirmeyi başarırsa, ortaya çıkan akış konumunu döndürür. Aksi takdirde, başarısız olur ve geçersiz bir akış konumunu döndürür.
+İşlev, akış konumlarından birini ya da her ikisini de değiştirmek için başarılı olursa, sonuç akış konumunu döndürür. Aksi takdirde, başarısız olur ve geçersiz bir akış konumu döndürür.
 
-## <a name="basic_stringbufseekpos"></a><a name="seekpos"></a>basic_stringbuf::seekpos
+## <a name="basic_stringbufseekpos"></a><a name="seekpos"></a> basic_stringbuf:: seekpos
 
-Korumalı sanal üye işlevi, denetitilen akışlar için geçerli konumları değiştirmeye çalışır.
+Korumalı sanal üye işlevi, denetlenen akışlar için geçerli pozisyonları değiştirmeye çalışır.
 
 ```cpp
 virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in | ios_base::out);
@@ -275,24 +276,24 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in |
 ### <a name="parameters"></a>Parametreler
 
 *_Sp*\
-Aranacak pozisyon.
+Arama yapılacak konum.
 
 *_Mode*\
-İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin vermektir.
+İşaretçi konumunun modunu belirtir. Varsayılan değer, okuma ve yazma konumlarını değiştirmenize izin verir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev akış konumlarından birini veya her ikisini değiştirmeyi başarırsa, ortaya çıkan akış konumunu döndürür. Aksi takdirde, başarısız olur ve geçersiz bir akış konumunu döndürür. Akış konumunun geçersiz olup olmadığını belirlemek için, `pos_type(off_type(-1))`iade değerini .
+İşlev, akış konumlarından birini ya da her ikisini de değiştirmek için başarılı olursa, sonuç akış konumunu döndürür. Aksi takdirde, başarısız olur ve geçersiz bir akış konumu döndürür. Akış konumunun geçersiz olup olmadığını anlamak için dönüş değerini ile karşılaştırın `pos_type(off_type(-1))` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf basic_stringbuf< **Elem**, **Tr**Tr `Alloc` ,> bir akış konumu tamamen bir akış ofset oluşur bir nesne için. Ofset sıfır, denetlenir dizinin ilk öğesini belirtir. Yeni pozisyon _ *Sp*tarafından belirlenir.
+Basic_stringbuf< **Eled**, **tr**,> sınıfının bir nesnesi için `Alloc` bir akış konumu yalnızca bir akış kayından oluşur. Sıfır değeri, denetlenen dizinin ilk öğesini belirler. Yeni konum _ *SP* tarafından belirlenir.
 
-**Mod & ios_base::in** sıfır değilse, işlev giriş arabelleğinde okunacak bir sonraki konumu değiştirir. **Mod & ios_base::out** sıfır değilse, işlev çıktı arabellesine yazmak için bir sonraki konumu değiştirir. Bir akışın etkilenmesi için arabelleği bulunması gerekir. Bir konumlandırma işleminin başarılı olabilmesi için, elde edilen akış konumunun denetlenme sırası içinde olması gerekir. Aksi takdirde (veya her iki konum etkilenmez), konumlandırma işlemi başarısız olur.
+**Mod & ios_base:: ın** sıfır dışında ise, işlev giriş arabelleğinde okunacak bir sonraki konumu değiştirir. **Mod & ios_base:: Out** değeri sıfır değilse, işlev çıkış arabelleğine yazmak için bir sonraki konumu değiştirir. Bir akışın etkilenmesi için arabelleğinin mevcut olması gerekir. Konumlandırma işleminin başarılı olması için, elde edilen akış konumu denetimli sıra içinde olmalıdır. Aksi takdirde (veya hiçbir konum etkilenmezse), konumlandırma işlemi başarısız olur.
 
-## <a name="basic_stringbufstr"></a><a name="str"></a>basic_stringbuf::str
+## <a name="basic_stringbufstr"></a><a name="str"></a> basic_stringbuf:: Str
 
-Yazma konumunu değiştirmeden metni bir dize arabelleği içinde ayarlar veya alır.
+Yazma konumunu değiştirmeden bir dize arabelleğindeki metni ayarlar veya alır.
 
 ```cpp
 basic_string<Elem, Tr, Alloc> str() const;
@@ -307,19 +308,19 @@ Yeni dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**Elem**, **Tr**, Alloc **>,** kontrollü dizi ** \*bu**tarafından kontrol edilen sıranın bir kopyası olan sınıf [basic_string](../standard-library/basic-string-class.md) \< bir nesne döndürür .
+[Basic_string](../standard-library/basic-string-class.md) \< **Elem**, **Tr**, Alloc **> , * *, denetlenen sırası **\* Bu** tarafından denetlenen sıranın bir kopyası olan bir nesne döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlev, kontrol edilen dizi ** \*bu**tarafından `Alloc` kontrol edilen dizinin bir kopyası olan **Elem**, **Tr**,>< sınıf basic_string bir nesne döndürür. Kopyalanan sıra, depolanan stringbuf moduna bağlıdır:
+İlk üye işlevi, denetlenen sırası  `Alloc` **\* bu** tarafından denetlenen sıranın bir kopyası olan basic_string< eled, tr> sınıfının bir nesnesini döndürür. Kopyalanmış sıra depolanan dize arabelleği moduna bağlıdır:
 
-- **Mod & ios_base::out** sıfır değildir ve bir çıktı arabelleği varsa, dizi tüm çıkış arabelleğidir ( [epptr](../standard-library/basic-streambuf-class.md#epptr) - [pbase](../standard-library/basic-streambuf-class.md#pbase) elemanları ile `pbase`başlayan).
+- **Mod & ios_base:: Out** değeri sıfır değilse ve bir çıkış arabelleği varsa, sıra çıkış arabelleğinin tamamı (ile başlayan [epptr](../standard-library/basic-streambuf-class.md#epptr)  -  [pbase](../standard-library/basic-streambuf-class.md#pbase) öğeleri `pbase` ).
 
-- **Mod & ios_base::in** sıfır değildir ve bir giriş arabelleği varsa, dizi tüm giriş arabelleğidir `eback`( [egptr](../standard-library/basic-streambuf-class.md#egptr) - [eback](../standard-library/basic-streambuf-class.md#eback) elemanları ile başlayan).
+- **Mod & ios_base:: ın** sıfır değilse ve bir giriş arabelleği varsa, bu sıra tüm giriş arabelleğinin (ile başlayan [egptr](../standard-library/basic-streambuf-class.md#egptr)  -  [eback](../standard-library/basic-streambuf-class.md#eback) öğelerinden `eback` ) oluşur.
 
-- Aksi takdirde, kopyalanan sıra boştur.
+- Aksi takdirde, kopyalanmış dizi boştur.
 
-İkinci üye işlev şu anda ** \*bu**tarafından kontrol edilen herhangi bir dizi yer alır. Daha sonra *_Newstr*tarafından denetlenir dizi bir kopyasını ayırır. **mod & ios_base::in** sıfır değilse, giriş arabelleği sıranın başında okumaya başlamak için ayarlar. **mod & ios_base::out** sıfır değilse, çıkış arabellesini dizinin başında yazmaya başlamak üzere ayarlar.
+İkinci üye işlevi, şu anda **\* Bu** tarafından denetlenen herhangi bir sırayı kaldırır. Daha sonra *_Newstr* tarafından denetlenen sıranın bir kopyasını ayırır. **Mode & ios_base:: ın** değeri sıfır değilse, giriş arabelleğini sıranın başlangıcında okumayı başlatacak şekilde ayarlar. **Mod & ios_base:: Out** değeri sıfır değilse, sıranın başlangıcında yazmaya başlamak için çıkış arabelleğini ayarlar.
 
 ### <a name="example"></a>Örnek
 
@@ -353,9 +354,9 @@ zest
 be
 ```
 
-## <a name="basic_stringbuftraits_type"></a><a name="traits_type"></a>basic_stringbuf:traits_type
+## <a name="basic_stringbuftraits_type"></a><a name="traits_type"></a> basic_stringbuf:: traits_type
 
-Bir tür adını *Tr* şablon parametresi ile ilişkilendirer.
+Bir tür adını *tr* şablon parametresiyle ilişkilendirir.
 
 ```cpp
 typedef Tr traits_type;
@@ -363,9 +364,9 @@ typedef Tr traits_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü şablon parametresi *Tr*için eşanlamlıdır.
+Türü, *tr* şablon parametresi için bir eş anlamlı.
 
-## <a name="basic_stringbufunderflow"></a><a name="underflow"></a>basic_stringbuf::underflow
+## <a name="basic_stringbufunderflow"></a><a name="underflow"></a> basic_stringbuf:: yetersiz
 
 Geçerli öğeyi giriş akışından ayıklamak için korumalı, sanal işlev.
 
@@ -375,15 +376,15 @@ virtual int_type underflow();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fonksiyon başarılı **olamazsa, traits_type döndürür::**[eof](../standard-library/char-traits-struct.md#eof). Aksi takdirde, dönüştürülür giriş akışı, geçerli öğeyi döndürür.
+İşlev başarılı olmazsa **traits_type::**[EOF](../standard-library/char-traits-struct.md#eof)döndürür. Aksi takdirde, dönüştürülmüş giriş akışındaki geçerli öğeyi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlev, giriş `byte` arabelleğinden geçerli öğeyi ayıklamaya, geçerli akış konumunu ilerletmeye ve öğeyi traits_type olarak döndürmeye **çalışır:**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **bayt).** Bunu tek bir şekilde yapabilir: Okuma konumu varsa, `byte` okuma konumunda depolanan öğe olarak alır ve giriş arabelleği için bir sonraki işaretçiyi ilerler.
+Korumalı sanal üye işlevi, geçerli öğeyi `byte` giriş arabelleğinden çıkarmaya çalışır, geçerli akış konumunu ilerletin ve öğeyi **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **byte**) olarak döndürür. Bunu tek bir şekilde yapabilirsiniz: bir okuma konumu kullanılabiliyorsa, `byte` okuma konumunda depolanan öğesi olarak alır ve giriş arabelleği için sonraki işaretçiyi ilerletir.
 
-## <a name="basic_streambufswap"></a><a name="swap"></a>basic_streambuf::takas
+## <a name="basic_streambufswap"></a><a name="swap"></a> basic_streambuf:: swap
 
-Bu dize arabelleği içeriğini başka bir dize arabelleği ile değiştirir.
+Bu dize arabelleğinin içeriğini başka bir dize arabelleği ile değiştirir.
 
 ```cpp
 void basic_stringbuf<T>::swap(basic_stringbuf& other)
@@ -391,14 +392,14 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*\
-İçeriği bu basic_stringbuf takas edilecek basic_stringbuf.
+*farklı*\
+İçeriği bu basic_stringbuf ile takas edilecek basic_stringbuf.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="basic_stringbufoperator"></a><a name="op_eq"></a>basic_stringbuf::operator=
+## <a name="basic_stringbufoperator"></a><a name="op_eq"></a> basic_stringbuf:: operator =
 
-İşleticinin sağ tarafındaki basic_stringbuf içeriğini sol taraftaki basic_stringbuf atar.
+İşlecin sağ tarafındaki basic_stringbuf içeriğini sol taraftaki basic_stringbuf atar.
 
 ```cpp
 basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
@@ -406,13 +407,13 @@ basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*\
-Yerel özellikler de dahil olmak üzere içeriği olan bir basic_stringbuf, işlecinin sol tarafındaki stringbuf'a atanır.
+*farklı*\
+İçerikleri, yerel ayar nitelikleri de dahil olmak üzere, işlecin sol tarafındaki dize arabelleğe atanacak bir basic_stringbuf.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[iostream Programlama](../standard-library/iostream-programming.md)\
-[iostreams Kuralları](../standard-library/iostreams-conventions.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[iostream programlama](../standard-library/iostream-programming.md)\
+[iostreams kuralları](../standard-library/iostreams-conventions.md)

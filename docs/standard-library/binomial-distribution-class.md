@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: binomial_distribution sınıfı'
 title: binomial_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-ms.openlocfilehash: 3054a29bd1bc82861461851d4403a7095ac1fcbd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2cdb55fe312cd19c944ee6279286fe48e515b8a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846517"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325484"
 ---
 # <a name="binomial_distribution-class"></a>binomial_distribution Sınıfı
 
 Binom dağılımı üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class IntType = int>
@@ -253,9 +254,9 @@ explicit binomial_distribution(const param_type& parm);
 
 **Önkoşul:** `0 ≤ t` ' `0.0 ≤ p ≤ 1.0`
 
-İlk Oluşturucu, saklı *p* değeri *p* değerini tutan ve depolanan *t* değeri *t*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı *p* değeri *p* değerini tutan ve depolanan *t* değeri *t* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="binomial_distributionparam_type"></a><a name="param_type"></a> binomial_distribution::p aram_type
 

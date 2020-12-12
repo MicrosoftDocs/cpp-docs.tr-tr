@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bitset sınıfı'
 title: bitset Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - std::bitset [C++], to_ulong
 - std::bitset [C++], reference
 ms.assetid: 28b86964-87b4-429c-8124-b6c251b6c50b
-ms.openlocfilehash: 623593e723b26244cc82e9eeed3e32657cca0b94
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 061bbe77a701e2161b3a33ffa94d3b8231b9f541
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846491"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325471"
 ---
 # <a name="bitset-class"></a>bitset Sınıfı
 
 Öğelerin veya koşulların bir kümesi için bayrakları tutmanın kompakt bir yolunu sağlayan sabit bir bit sayısından oluşan bir diziyi depolayan bir nesne türünü tanımlar. Bitset sınıfı bit kümesi türündeki nesneler üzerinde işlemleri destekler ve her bir bit için sabit zamanlı erişim sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <size_t N>
@@ -59,7 +60,7 @@ Bit kümesi nesnesindeki bit sayısını, `size_t` derleme zamanında bilinmesi 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Benzer [vektör \<bool> sınıfından](../standard-library/vector-bool-class.md)farklı olarak, bitset Sınıfı yineleyiciler Içermez ve bir C++ standart kitaplık kapsayıcısı değildir. Ayrıca \<bool> , **bit kümesi \<N\> ** bildirildiği zaman, *N* şablon parametresi tarafından belirtilen boyuta uygun olarak, derleme zamanında düzeltilen belirli bir boyut kadar vektörden farklılık gösterir.
+Benzer [vektör \<bool> sınıfından](../standard-library/vector-bool-class.md)farklı olarak, bitset Sınıfı yineleyiciler Içermez ve bir C++ standart kitaplık kapsayıcısı değildir. Ayrıca \<bool> , **bit kümesi \<N\>** bildirildiği zaman, *N* şablon parametresi tarafından belirtilen boyuta uygun olarak, derleme zamanında düzeltilen belirli bir boyut kadar vektörden farklılık gösterir.
 
 Değeri 1 ise ve değeri 0 ise sıfırlandığında bir bit ayarlanır. Bir biti çevirmek veya tersine çevirmek için değerini 1 ' den 0 ' a veya 0 ' dan 1 ' e değiştirin. Bitset içindeki *N* bitleri, 0 ile *N* -1 arasındaki tamsayı değerleriyle dizinlenir; burada 0, Ilk bit konumu ve *n* -1 son bit konumunu oluşturur.
 
@@ -83,7 +84,7 @@ Değeri 1 ise ve değeri 0 ise sıfırlandığında bir bit ayarlanır. Bir biti
 |-|-|
 |[Bütün](#all)|`bitset`Bunların tümünün olarak ayarlanmış olup olmadığını anlamak için bu tüm bitleri sınar **`true`** .|
 |[kaydedilmemiş](#any)|Üye işlevi, dizideki herhangi bir bitin 1 olarak ayarlanmış olup olmadığını sınar.|
-|[count](#count)|Üye işlevi, bit dizisinde ayarlanan bit sayısını döndürür.|
+|[biriktirme](#count)|Üye işlevi, bit dizisinde ayarlanan bit sayısını döndürür.|
 |[yazmayı](#flip)|' Deki tüm bitlerin değerini tersine çevirir `bitset` veya belirtilen konumda tek bir bit 'e ters çevirir.|
 |[yok](#none)|Bir nesne içinde 1 olarak ayarlanmış bir bit yoksa sınar `bitset` .|
 |[döndürmek](#reset)|A içindeki tüm bitleri 0 ' a sıfırlar `bitset` veya belirtilen konumdaki bir biti 0 olarak sıfırlar.|
@@ -265,7 +266,7 @@ Ayrıca, iki Oluşturucu şablonu sağlanır:
 
 - İlk Oluşturucu şablonu, sınıfının bir nesnesini oluşturur `bitset\<N>` ve bir sıfır dizesinde belirtilen karakterlerden bitleri başlatır. Dizedeki herhangi bir karakter 0 veya 1 ' den büyükse, Oluşturucu [geçersiz bağımsız değişken](../standard-library/invalid-argument-class.md)sınıfından bir nesne oluşturur. Belirtilen konum (*_Pos*) dizenin uzunluğunun ötesinde, Oluşturucu [out_of_range](../standard-library/out-of-range-class.md)sınıfının bir nesnesini oluşturur. Oluşturucu yalnızca, konumdaki dizedeki karakteri 1 olan bit kümesinde *j* konumunda bulunan bitleri ayarlar `_Pos + j` . Varsayılan olarak, *_Pos* 0 ' dır.
 
-- İkinci Oluşturucu şablonu ilki ile benzerdir, ancak başlatılacak bit sayısını belirtmek için kullanılan ek bir parametre (*Count*) içerir. Ayrıca, *Str* içindeki hangi karakterin 0 bit ve 1 bit olmak üzere yorumlanması gerektiğini belirten *_Zero* ve *_One*iki isteğe bağlı parametreye sahiptir.
+- İkinci Oluşturucu şablonu ilki ile benzerdir, ancak başlatılacak bit sayısını belirtmek için kullanılan ek bir parametre (*Count*) içerir. Ayrıca, *Str* içindeki hangi karakterin 0 bit ve 1 bit olmak üzere yorumlanması gerektiğini belirten *_Zero* ve *_One* iki isteğe bağlı parametreye sahiptir.
 
 #### <a name="example"></a>Örnek
 
@@ -472,7 +473,7 @@ Değer ters çevrilme yapılacak bit konumu.
 
 #### <a name="remarks"></a>Açıklamalar
 
-İkinci üye işlevi, bir parametre olarak belirtilen konum, biti ters çevrilen **bitset \<** *N* **> ** değerinden büyükse [out_of_range](../standard-library/out-of-range-class.md) bir özel *N* durum oluşturur.
+İkinci üye işlevi, bir parametre olarak belirtilen konum, biti ters çevrilen **bitset \<** *N* **>** değerinden büyükse [out_of_range](../standard-library/out-of-range-class.md) bir özel  durum oluşturur.
 
 #### <a name="example"></a>Örnek
 
@@ -737,7 +738,7 @@ BITS ile değiştirilen bit kümesi, gereken sayıda konum için sola kaydırır
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işleci işlevi **bitset**( ** \* this**) **<<= POS döndürür,** burada [<<=](#op_lshift_eq) bit kümesindeki bitler belirtilen sayıda konum sola kayar ve sonuç hedeflenen bitset 'e döndürülür.
+Üye işleci işlevi **bitset**( **\* this**) **<<= POS döndürür,** burada [<<=](#op_lshift_eq) bit kümesindeki bitler belirtilen sayıda konum sola kayar ve sonuç hedeflenen bitset 'e döndürülür.
 
 #### <a name="example"></a>Örnek
 
@@ -1223,7 +1224,7 @@ public:
 **`bool`** Bit kümesindeki bir bite atanacak olan nesne değeri.
 
 *_Bitref*\
-*X [i]* biçimindeki bir, bitset *x*içinde *i* konumundaki bite bir başvuru.
+*X [i]* biçimindeki bir, bitset *x* içinde *i* konumundaki bite bir başvuru.
 
 #### <a name="return-value"></a>Dönüş Değeri
 
@@ -1231,14 +1232,14 @@ Bit kümesinde, sınıf başvurusunun birinci, ikinci ve beşinci üye işlevler
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sınıfı `reference` yalnızca bitset için yardımcı sınıf olarak mevcuttur `operator[]` . Üye sınıfı bir bit kümesindeki tek bir bite erişebilen bir nesneyi tanımlar. *B* 'nin bir nesne **`bool`** içinde ** \<** *N* **> bitset**ve *i* ve *j* türünde nesne türünde, *x* ve *y* nesnelerinin bir nesnesi olmasına izin verin. *X [i]* gösterimi bitset *x*içinde *i* konumundaki bit 'e başvuruyor. Sınıfının üye işlevleri, `reference` aşağıdaki işlemleri sırasıyla sağlar:
+Sınıfı `reference` yalnızca bitset için yardımcı sınıf olarak mevcuttur `operator[]` . Üye sınıfı bir bit kümesindeki tek bir bite erişebilen bir nesneyi tanımlar. *B* 'nin bir nesne **`bool`** içinde **\<** *N* **> bitset** ve *i* ve *j* türünde nesne türünde, *x* ve *y* nesnelerinin bir nesnesi olmasına izin verin. *X [i]* gösterimi bitset *x* içinde *i* konumundaki bit 'e başvuruyor. Sınıfının üye işlevleri, `reference` aşağıdaki işlemleri sırasıyla sağlar:
 
 |İşlem|Tanım|
 |---------------|----------------|
 |*x*[*i*] = *b*|**`bool`** *B* değerini bitset *x*' te *i* bit konumunda depolar.|
 |*x*[*i*] = *y*[*j*]|Bit *y*[ *j*] değerini bitset *x* *içinde bit* konumu olarak depolar.|
-|*b* = ~ *x*[*i*]|Bit *x*[ *i*] ile çevrilmiş değeri **`bool`** *b*içinde depolar.|
-|*b*  =  *x*[*i*]|Bit *x*[ *i*] değerini **`bool`** *b*içinde depolar.|
+|*b* = ~ *x*[*i*]|Bit *x*[ *i*] ile çevrilmiş değeri **`bool`** *b* içinde depolar.|
+|*b*  =  *x*[*i*]|Bit *x*[ *i*] değerini **`bool`** *b* içinde depolar.|
 |*x*[*i*]. `flip`( )|Bit *x*[ *i*] ile çevrilmiş değeri *x*' *i* bit konumu olarak saklar.|
 
 #### <a name="example"></a>Örnek
@@ -1459,7 +1460,7 @@ size_t size() const;
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Bitset içindeki bit, *N*sayısı \<N> .
+Bitset içindeki bit, *N* sayısı \<N> .
 
 #### <a name="example"></a>Örnek
 

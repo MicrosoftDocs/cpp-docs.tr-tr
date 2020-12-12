@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ikili çıktı dosyaları'
 title: İkili Çıktı Dosyaları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - files [C++], binary output files
 - binary data, binary output files
 ms.assetid: 180954af-8cd6-444b-9a76-2f630a3389d8
-ms.openlocfilehash: 4562f5c1167aeadc6689313e73545ed1ad9bbcf8
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: acbefe8eb7f091bf3d323f25ff00464068d9b1f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325524"
 ---
 # <a name="binary-output-files"></a>İkili Çıktı Dosyaları
 
@@ -30,7 +31,7 @@ int main( )
 }
 ```
 
-Bu programın {99, 0, 10, 0}; bayt dizisinin çıktısını almak için bekliyor olabilirsiniz Bunun yerine, ikili girişi bekleyen bir program için sorunlara neden olan {99, 0, 13, 10, 0} çıkışı verir. Doğru ikili çıktıya ihtiyacınız varsa, bu karakterlerin çevrilmeden yazıldığı, [ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream) Oluşturucu `openmode` bağımsız değişkenini kullanarak ikili çıkış belirtebilirsiniz:
+Bu programın {99, 0, 10, 0}; bayt dizisinin çıktısını almak için bekliyor olabilirsiniz Bunun yerine, ikili girişi bekleyen bir program için sorunlara neden olan {99, 0, 13, 10, 0} çıkışı verir. Doğru ikili çıktıya ihtiyacınız varsa, bu karakterlerin çevrilmeden yazıldığı, [ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream) Oluşturucu bağımsız değişkenini kullanarak ikili çıkış belirtebilirsiniz `openmode` :
 
 ```cpp
 // binary_output_files2.cpp
@@ -50,4 +51,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkış Akışları](../standard-library/output-streams.md)
+[Çıkış akışları](../standard-library/output-streams.md)

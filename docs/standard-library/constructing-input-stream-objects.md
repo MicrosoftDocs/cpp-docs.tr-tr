@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: giriş akışı nesneleri oluşturma'
 title: Giriş Akışı Oluşturma Nesneleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - input stream objects
 ms.assetid: ab94866e-6ffe-4f15-b4db-0bd23e636075
-ms.openlocfilehash: f281741979680fc03d3f96d2dbfbac6e1feefdea
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2ee1e0bb310c608b53a79afd101aaeafb3cb6645
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228316"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324925"
 ---
 # <a name="constructing-input-stream-objects"></a>Giriş Akışı Oluşturma Nesneleri
 
@@ -19,7 +20,7 @@ Yalnızca `cin` nesnesini kullanırsanız, bir giriş akışı oluşturmanız ge
 
 - [Giriş dizesi akış oluşturucuları](#vclrfinputstringstreamconstructorsanchor9)
 
-## <a name="input-file-stream-constructors"></a><a name="vclrfinputfilestreamconstructorsanchor8"></a>Giriş dosyası akış oluşturucuları
+## <a name="input-file-stream-constructors"></a><a name="vclrfinputfilestreamconstructorsanchor8"></a> Giriş dosyası akış oluşturucuları
 
 Bir giriş dosyası akışı oluşturmanın iki yolu vardır:
 
@@ -39,7 +40,7 @@ Bir giriş dosyası akışı oluşturmanın iki yolu vardır:
    ifstream myFile("filename");
    ```
 
-## <a name="input-string-stream-constructors"></a><a name="vclrfinputstringstreamconstructorsanchor9"></a>Giriş dizesi akış oluşturucuları
+## <a name="input-string-stream-constructors"></a><a name="vclrfinputstringstreamconstructorsanchor9"></a> Giriş dizesi akış oluşturucuları
 
 Giriş dizesi akış oluşturucuları, önceden ayrılan, önceden başlatılmış depolamanın adresini gerektirir:
 

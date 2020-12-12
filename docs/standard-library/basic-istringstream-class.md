@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: basic_istringstream sınıfı'
 title: basic_istringstream Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - std::basic_istringstream [C++], str
 - std::basic_istringstream [C++], swap
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
-ms.openlocfilehash: fd2ab79466c01343cbdadbcb649e3b05eee3c2a0
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 34073c660b5ede3d7df54e9e067ef5c3963671f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561784"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325686"
 ---
 # <a name="basic_istringstream-class"></a>basic_istringstream Sınıfı
 
 [Basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **eled**, **tr**,> sınıfının Akış arabelleğindeki öğelerin ve kodlanmış nesnelerin ayıklanmasını denetleyen bir nesne tanımlar `Alloc` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Elem, class Tr = char_traits<Elem>, class Alloc = allocator<Elem>>
@@ -45,7 +46,7 @@ Dizenin temel öğesi üzerinde özelleştirilmiş karakter nitelikleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, öğe ve kodlanmış nesneleri [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **eled**, **tr**,> sınıfının bir akış arabelleğinden `Alloc` ayıkladıktan sonra, karakter nitelikleri *tr*sınıfı tarafından belirlenen ve öğeleri bir sınıf *ayırma*ayırıcısı tarafından ayrılmış olan *eled*türünde öğeler içeren bir nesneyi tanımlar. Nesnesi basic_stringbuf< **Eled**, **tr**> sınıfının bir nesnesini saklar `Alloc` .
+Sınıf şablonu, öğe ve kodlanmış nesneleri [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **eled**, **tr**,> sınıfının bir akış arabelleğinden `Alloc` ayıkladıktan sonra, karakter nitelikleri *tr* sınıfı tarafından belirlenen ve öğeleri bir sınıf *ayırma* ayırıcısı tarafından ayrılmış olan *eled* türünde öğeler içeren bir nesneyi tanımlar. Nesnesi basic_stringbuf< **Eled**, **tr**> sınıfının bir nesnesini saklar `Alloc` .
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -116,11 +117,11 @@ Bir nesnenin rvalue başvurusu `basic_istringstream` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, [basic_istream](../standard-library/basic-istream-class.md) `sb` `sb` [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  `Elem` ,> sınıfının saklı nesnesi olduğu `Tr` `Alloc` basic_istream () çağırarak temel sınıfı başlatır. Ayrıca `sb` `basic_stringbuf` <  `Elem` , `Tr` `Alloc`> ( `_Mode` &#124; `ios_base::in` ) çağırarak da başlatılır.
+İlk Oluşturucu, [](../standard-library/basic-istream-class.md) `sb` `sb` [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  `Elem` ,> sınıfının saklı nesnesi olduğu `Tr` `Alloc` basic_istream () çağırarak temel sınıfı başlatır. Ayrıca `sb` `basic_stringbuf` <  `Elem` , `Tr` `Alloc`> ( `_Mode` &#124; `ios_base::in` ) çağırarak da başlatılır.
 
 İkinci Oluşturucu çağırarak temel sınıfı başlatır `basic_istream(sb)` . Ayrıca `sb` `basic_stringbuf` <  `Elem` , `Tr` `Alloc`> ( `str` , `_Mode` &#124; `ios_base::in` ) çağırarak da başlatılır.
 
-Üçüncü Oluşturucu nesneyi *sağ*içeriğiyle başlatır ve rvalue başvurusu olarak değerlendirilir.
+Üçüncü Oluşturucu nesneyi *sağ* içeriğiyle başlatır ve rvalue başvurusu olarak değerlendirilir.
 
 ## <a name="basic_istringstreamoperator"></a><a name="op_eq"></a> basic_istringstream:: operator =
 
@@ -137,7 +138,7 @@ Bir nesneye rvalue başvurusu `basic_istringstream` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci, nesne içeriğini *sağ*içeriğiyle değiştirir ve rvalue başvurusu taşıma ataması olarak işlenir.
+Üye işleci, nesne içeriğini *sağ* içeriğiyle değiştirir ve rvalue başvurusu taşıma ataması olarak işlenir.
 
 ## <a name="basic_istringstreamrdbuf"></a><a name="rdbuf"></a> basic_istringstream:: rdarabelleğe
 
@@ -173,7 +174,7 @@ Yeni dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[basic_string](../standard-library/basic-string-class.md) <  **Elem** **Tr** `Alloc` Denetlenen sırası ** \* Bu**tarafından denetlenen sıranın bir kopyası olan basic_string eled, tr,> sınıfının bir nesnesini döndürür.
+[](../standard-library/basic-string-class.md) <    `Alloc` Denetlenen sırası **\* Bu** tarafından denetlenen sıranın bir kopyası olan basic_string eled, tr,> sınıfının bir nesnesini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -198,7 +199,7 @@ Bir nesneye lvalue başvurusu `basic_istringstream` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi bu nesnenin değerlerini ve *sağ*değerlerini değiştirir.
+Üye işlevi bu nesnenin değerlerini ve *sağ* değerlerini değiştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

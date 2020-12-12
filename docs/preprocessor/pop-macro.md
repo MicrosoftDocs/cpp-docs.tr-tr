@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: pop_macro pragma'
 title: pop_macro pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,24 +9,24 @@ helpviewer_keywords:
 - pop_macro pragma
 - pragmas, pop_macro
 ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-ms.openlocfilehash: f9e097d139e1df5c9ba09ad9ca99f0cfe6bbbfb3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 395e107586b9534b2e9db616f30ddd88b15b93ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325712"
 ---
 # <a name="pop_macro-pragma"></a>pop_macro pragması
 
 *Makro adı* makrosunun değerini, bu makro için yığının en üstünde bulunan değere ayarlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#pragma pop_macro (** "*makro-adı*" **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir **pop_macro**yapabilmeniz için önce *makro adı* için bir [push_macro](../preprocessor/push-macro.md) verilmelidir.
+Bir **pop_macro** yapabilmeniz için önce *makro adı* [push_macro](../preprocessor/push-macro.md) verilmelidir.
 
 ## <a name="example"></a>Örnek
 

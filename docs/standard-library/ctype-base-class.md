@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ctype_base sınıfı'
 title: ctype_base Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - ctype_base class
 ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d
-ms.openlocfilehash: 4fac75d90c4e40a22e8ceae974c3f49c3d50a1d3
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 430e6fbf77842e61e662fd3024a54b418f487748
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324688"
 ---
 # <a name="ctype_base-class"></a>ctype_base Sınıfı
 
 Sınıfı, sınıf şablonu [CType](../standard-library/ctype-class.md)modelleri için bir temel sınıf işlevi görür. Karakterleri tek tek veya aralığın tamamında sınıflandırmak veya sınamak için kullanılan numaralandırma türleri tanımlamak için kullanılan ctype sınıfı için temel sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct ctype_base : public locale::facet
@@ -45,7 +46,7 @@ struct ctype_base : public locale::facet
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir numaralandırma maskesini tanımlar. Her numaralandırma sabiti, karakterleri \<ctype. h > üst bilgisinde bildirildiği benzer adlara sahip işlevler tarafından tanımlanan şekilde sınıflandırmaya yönelik farklı bir yol biçimlendirir. Sabitler şunlardır:
+Bir numaralandırma maskesini tanımlar. Her numaralandırma sabiti, üst bilgide belirtilen benzer adlara sahip işlevler tarafından tanımlanan şekilde karakterleri sınıflandırmakta farklı bir yol biçimlendirir \<ctype.h> . Sabitler şunlardır:
 
 - **boşluk** (işlev [ısspace](../standard-library/locale-functions.md#isspace))
 
@@ -69,14 +70,14 @@ Bir numaralandırma maskesini tanımlar. Her numaralandırma sabiti, karakterler
 
 - **Graf** (işlev [isgraf](../standard-library/locale-functions.md#isgraph))
 
-Sınıflandırmaların bir bileşimini bu sabitlerle ayırarak ayırdetmek için kullanabilirsiniz. Özellikle, **alnum** = = ( **Alfa** &#124; **basamak** \) ve **grafik** \= \= \( **alnum** &#124; **punct**) Bu her zaman doğrudur.
+Sınıflandırmaların bir bileşimini bu sabitlerle ayırarak ayırdetmek için kullanabilirsiniz. Özellikle, **alnum** = = ( **Alpha** &#124; **digit** \) ve **Graf** \= \= \( **alnum** &#124; **punct**) değeri her zaman doğrudur.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

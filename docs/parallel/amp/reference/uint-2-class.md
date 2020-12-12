@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: uint_2 sınıfı'
 title: uint_2 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,18 +29,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_2::operator++
 - amp_short_vectors/Concurrency::graphics::uint_2::rg
 ms.assetid: 9fcc9129-72b1-4da7-9012-4d3be15f1c52
-ms.openlocfilehash: 5f01e4d50dc3fab8d7cb909d1ea2f3d1801f0db0
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 6cf10e10baad6cedb06cef4358feebb11e6ce076
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126216"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325816"
 ---
 # <a name="uint_2-class"></a>uint_2 Sınıfı
 
 İki işaretsiz tamsayının kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class uint_2;
@@ -63,37 +64,37 @@ class uint_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|uint_2::get_x||
-|uint_2::get_xy||
-|uint_2::get_y||
-|uint_2::get_yx||
+|uint_2:: get_x||
+|uint_2:: get_xy||
+|uint_2:: get_y||
+|uint_2:: get_yx||
 |uint_2:: ref_g_Method||
 |uint_2:: ref_r_Method||
 |uint_2:: ref_x_Method||
 |uint_2:: ref_y_Method||
-|uint_2::set_x||
+|uint_2:: set_x||
 |uint_2:: set_xy||
-|uint_2::set_y||
-|uint_2::set_yx||
+|uint_2:: set_y||
+|uint_2:: set_yx||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|uint_2::operator--||
-|uint_2::operator%=||
-|uint_2:: operator & =||
+|uint_2:: operator--||
+|uint_2:: operator% =||
+|uint_2:: operator&=||
 |uint_2:: operator * =||
 |uint_2:: operator/=||
-|uint_2::operator^=||
+|uint_2:: operator ^ =||
 |uint_2:: operator&#124;=||
 |uint_2:: operator ~||
 |uint_2:: operator + +||
-|uint_2::operator+=||
-|uint_2:: operator <\<=||
-|uint_2::operator=||
-|uint_2::operator-=||
-|uint_2:: operator > > =||
+|uint_2:: operator + =||
+|uint_2:: operator<\<=||
+|uint_2:: operator =||
+|uint_2:: operator-=||
+|uint_2:: operator>>=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
@@ -108,11 +109,11 @@ class uint_2;
 |uint_2:: g||
 |uint_2:: gr||
 |uint_2:: r||
-|uint_2::rg||
+|uint_2:: RG||
 |uint_2:: x||
 |uint_2:: XY||
 |uint_2:: y||
-|uint_2::yx||
+|uint_2:: yx||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -124,7 +125,7 @@ class uint_2;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>uint_2
+## <a name="uint_2"></a><a name="ctor"></a> uint_2
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -180,7 +181,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="uint_2__size"></a>boyutla
+## <a name="size"></a><a name="uint_2__size"></a> boyutla
 
 ```cpp
 static const int size = 2;

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: basic_ofstream sınıfı'
 title: basic_ofstream Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - std::basic_ofstream [C++], rdbuf
 - std::basic_ofstream [C++], swap
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
-ms.openlocfilehash: d825dbbe278325e755af6fdffe01a34ac0a4080d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 10bb7ee14ea6b126ee907cbb8b56b3b3c31188a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325673"
 ---
 # <a name="basic_ofstream-class"></a>basic_ofstream Sınıfı
 
-Öğelerin ve kodlanmış nesnelerin, [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr` `Elem` karakter nitelikleri sınıf tarafından belirlendiği şekilde, türü öğelerin basic_filebuf,> `Tr` bir akış arabelleğine eklenmesini denetleyen bir nesne tanımlar.
+Öğelerin ve kodlanmış nesnelerin, [](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr` `Elem` karakter nitelikleri sınıf tarafından belirlendiği şekilde, türü öğelerin basic_filebuf,> `Tr` bir akış arabelleğine eklenmesini denetleyen bir nesne tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Elem, class Tr = char_traits<Elem>>
@@ -98,7 +99,7 @@ int main(int argc, char **argv)
 
 **Ad alanı:** std
 
-## <a name="basic_ofstreambasic_ofstream"></a><a name="basic_ofstream"></a>basic_ofstream:: basic_ofstream
+## <a name="basic_ofstreambasic_ofstream"></a><a name="basic_ofstream"></a> basic_ofstream:: basic_ofstream
 
 Türünde bir nesne oluşturur `basic_ofstream` .
 
@@ -135,11 +136,11 @@ Varsayılan dosya açma koruması, `shflag` [_fsopen _wfsopen](../c-runtime-libr
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, [basic_ostream](../standard-library/basic-ostream-class.md) `sb` `sb` [basic_filebuf](../standard-library/basic-filebuf-class.md)sınıfının saklı nesnesi olan> basic_ostream () çağırarak temel sınıfı başlatır <  `Elem` `Tr` . `sb`> çağırarak da başlatılır `basic_filebuf` <  `Elem` `Tr` .
+İlk Oluşturucu, [](../standard-library/basic-ostream-class.md) `sb` `sb` [basic_filebuf](../standard-library/basic-filebuf-class.md)sınıfının saklı nesnesi olan> basic_ostream () çağırarak temel sınıfı başlatır <  `Elem` `Tr` . `sb`> çağırarak da başlatılır `basic_filebuf` <  `Elem` `Tr` .
 
-İkinci ve üçüncü oluşturucular, temel sınıfı çağırarak `basic_ostream` ( **SB**) başlatır. Ayrıca `sb` `basic_filebuf` <  `Elem` , `Tr`> çağırarak ve sonra `sb` da başlatılır. [open](../standard-library/basic-filebuf-class.md#open)( `_Filename` , `_Mode` &#124;) öğesini açın `ios_base::out` . İkinci işlev null bir işaretçi döndürürse, Oluşturucu [SetState](../standard-library/basic-ios-class.md#setstate)() öğesini çağırır `failbit` .
+İkinci ve üçüncü oluşturucular, temel sınıfı çağırarak `basic_ostream` ( **SB**) başlatır. Ayrıca `sb` `basic_filebuf` <  `Elem` , `Tr`> çağırarak ve sonra `sb` da başlatılır. [](../standard-library/basic-filebuf-class.md#open)( `_Filename` , `_Mode` &#124;) öğesini açın `ios_base::out` . İkinci işlev null bir işaretçi döndürürse, Oluşturucu [SetState](../standard-library/basic-ios-class.md#setstate)() öğesini çağırır `failbit` .
 
-Dördüncü Oluşturucu bir kopyalama işlevidir. Nesneyi *sağ*içeriğiyle başlatır ve rvalue başvurusu olarak değerlendirilir.
+Dördüncü Oluşturucu bir kopyalama işlevidir. Nesneyi *sağ* içeriğiyle başlatır ve rvalue başvurusu olarak değerlendirilir.
 
 ### <a name="example"></a>Örnek
 
@@ -163,7 +164,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## <a name="basic_ofstreamclose"></a><a name="close"></a>basic_ofstream:: Close
+## <a name="basic_ofstreamclose"></a><a name="close"></a> basic_ofstream:: Close
 
 Bir dosyayı kapatır.
 
@@ -179,7 +180,7 @@ void close();
 
 ' In kullandığı bir örnek için bkz. [basic_filebuf:: Close](../standard-library/basic-filebuf-class.md#close) `close` .
 
-## <a name="basic_ofstreamis_open"></a><a name="is_open"></a>basic_ofstream:: is_open
+## <a name="basic_ofstreamis_open"></a><a name="is_open"></a> basic_ofstream:: is_open
 
 Bir dosyanın açık olup olmadığını gösterir.
 
@@ -217,7 +218,7 @@ int main( )
 }
 ```
 
-## <a name="basic_ofstreamopen"></a><a name="open"></a>basic_ofstream:: Open
+## <a name="basic_ofstreamopen"></a><a name="open"></a> basic_ofstream:: Open
 
 Bir dosya açar.
 
@@ -260,7 +261,7 @@ Varsayılan dosya açma koruması, `shflag` [_fsopen _wfsopen](../c-runtime-libr
 
 Tarafından kullanılan bir örnek için bkz. [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) `open` .
 
-## <a name="basic_ofstreamoperator"></a><a name="op_eq"></a>basic_ofstream:: operator =
+## <a name="basic_ofstreamoperator"></a><a name="op_eq"></a> basic_ofstream:: operator =
 
 Bu Stream nesnesinin içeriğini atar. Bu, `rvalue reference` arkasında bir kopya bırakmayan bir taşıma atamasıdır.
 
@@ -279,9 +280,9 @@ Döndürür **`*this`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci, bir rvalue başvurusu olarak kabul edilen, *sağ*içeriğini kullanarak nesnesinin içeriğini değiştirir.
+Üye işleci, bir rvalue başvurusu olarak kabul edilen, *sağ* içeriğini kullanarak nesnesinin içeriğini değiştirir.
 
-## <a name="basic_ofstreamrdbuf"></a><a name="rdbuf"></a>basic_ofstream:: rdarabelleğe
+## <a name="basic_ofstreamrdbuf"></a><a name="rdbuf"></a> basic_ofstream:: rdarabelleğe
 
 Depolanan akış arabelleğinin adresini döndürür.
 
@@ -297,7 +298,7 @@ Depolanan akış arabelleğinin adresini döndürür.
 
 ' In kullandığı bir örnek için bkz. [basic_filebuf:: Close](../standard-library/basic-filebuf-class.md#close) `rdbuf` .
 
-## <a name="basic_ofstreamswap"></a><a name="swap"></a>basic_ofstream:: swap
+## <a name="basic_ofstreamswap"></a><a name="swap"></a> basic_ofstream:: swap
 
 İki nesnenin içeriğini değiş tokuş eder `basic_ofstream` .
 
@@ -312,7 +313,7 @@ void swap(basic_ofstream& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, bu nesnenin içeriğini *sağ*İçindekiler olarak değiştirir.
+Üye işlevi, bu nesnenin içeriğini *sağ* İçindekiler olarak değiştirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

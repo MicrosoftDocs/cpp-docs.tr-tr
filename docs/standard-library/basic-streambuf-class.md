@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: basic_streambuf sınıfı'
 title: basic_streambuf Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -94,18 +95,18 @@ helpviewer_keywords:
 - std::basic_streambuf [C++], xsgetn
 - std::basic_streambuf [C++], xsputn
 ms.assetid: 136af6c3-13bf-4501-9288-b93da26efac7
-ms.openlocfilehash: 6c9a44f56e89baf32ba49241822bc4ba018f0701
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 7600c60c501c1922deeabca11d41c89bc37548a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561836"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325619"
 ---
 # <a name="basic_streambuf-class"></a>basic_streambuf Sınıfı
 
 Bir akışın belirli bir gösterimine ve öğesinden öğelerin aktarılmasını denetleyen bir akış arabelleği türetmek için soyut bir temel sınıf tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Elem, class Tr = char_traits<Elem>>
@@ -122,7 +123,7 @@ Karakter [traits_type](#traits_type).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, akış arabelleği türetmede bir soyut temel sınıf tanımlar. Bu, bir akışın belirli bir gösteriminden ve öğesinden öğelerin aktarılmasını denetler. Sınıfının bir nesnesi, `basic_streambuf` karakter nitelikleri [traits_type](#traits_type)olarak da bilinen sınıf [char_traits](../standard-library/char-traits-struct.md)tarafından belirlendiği şekilde, [char_type](#char_type)olarak da bilinen, *tr*türünde öğeleri olan bir akışı denetlemeye yardımcı olur.
+Sınıf şablonu, akış arabelleği türetmede bir soyut temel sınıf tanımlar. Bu, bir akışın belirli bir gösteriminden ve öğesinden öğelerin aktarılmasını denetler. Sınıfının bir nesnesi, `basic_streambuf` karakter nitelikleri [traits_type](#traits_type)olarak da bilinen sınıf [char_traits](../standard-library/char-traits-struct.md)tarafından belirlendiği şekilde, [char_type](#char_type)olarak da bilinen, *tr* türünde öğeleri olan bir akışı denetlemeye yardımcı olur.
 
 Her akış arabelleği kavramsal olarak iki bağımsız akışı denetler: biri ayıklamaları (input) ve biri Eklenenler (output) için. Ancak belirli bir gösterim, bu akışların her birini veya her ikisini de erişilemez hale getirebilir. Genellikle iki akış arasında bir ilişki sağlar. [Basic_stringbuf](../standard-library/basic-stringbuf-class.md)çıkış akışına ne eklediğiniz, <  `Elem` `Tr` Örneğin> nesnesinin, daha sonra giriş akışından ayıkladıklarınız. Bir [basic_filebuf](../standard-library/basic-filebuf-class.md)> nesnenin bir akışını konumlandırdığınızda <  `Elem` `Tr` , diğer akışı art arda yerleştirebilirsiniz.
 
@@ -249,7 +250,7 @@ basic_streambuf(const basic_streambuf& right);
 
 İlk korumalı Oluşturucu, giriş arabelleğini ve çıkış arabelleğini denetleyen tüm işaretçilerde boş bir işaretçi depolar. Ayrıca `locale::classic` yerel ayar nesnesinde depolar. Daha fazla bilgi için bkz. [locale:: klasik](../standard-library/locale-class.md#classic).
 
-İkinci korumalı Oluşturucu işaretçileri ve yerel ayarı *sağdan*kopyalar.
+İkinci korumalı Oluşturucu işaretçileri ve yerel ayarı *sağdan* kopyalar.
 
 ## <a name="basic_streambufchar_type"></a><a name="char_type"></a> basic_streambuf:: char_type
 
@@ -453,11 +454,11 @@ Arabelleğe eklenecek karakter veya **traits_type::**[EOF](../standard-library/c
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olmazsa, **traits_type:: EOF** döndürür veya bir özel durum oluşturur. Aksi takdirde, **traits_type::**[Not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *meta*) döndürür. Varsayılan davranış **traits_type:: EOF**döndürmelidir.
+İşlev başarılı olmazsa, **traits_type:: EOF** döndürür veya bir özel durum oluşturur. Aksi takdirde, **traits_type::**[Not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *meta*) döndürür. Varsayılan davranış **traits_type:: EOF** döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eğer * \_ meta* şuna eşit **traits_type:: EOF**, korumalı sanal üye işlevi endeavors **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(* \_ meta*) öğesini çıkış akışına eklemek için. Bunu çeşitli yollarla yapabilirsiniz:
+Eğer *\_ meta* şuna eşit **traits_type:: EOF**, korumalı sanal üye işlevi endeavors **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_ meta*) öğesini çıkış akışına eklemek için. Bunu çeşitli yollarla yapabilirsiniz:
 
 - Bir varsa `write position` , öğeyi yazma konumuna saklayabilir ve çıkış arabelleği için bir sonraki işaretçiyi artırabilirsiniz.
 
@@ -488,11 +489,11 @@ Arabelleğe eklenecek karakter veya **traits_type::**[EOF](../standard-library/c
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olmazsa, **traits_type:: EOF** döndürür veya bir özel durum oluşturur. Aksi takdirde, başka bir değer döndürür. Varsayılan davranış **traits_type:: EOF**döndürmelidir.
+İşlev başarılı olmazsa, **traits_type:: EOF** döndürür veya bir özel durum oluşturur. Aksi takdirde, başka bir değer döndürür. Varsayılan davranış **traits_type:: EOF** döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Eğer * \_ Meta* , **traits_type:: EOF**değerine eşitse, geri gönderme öğesi geçerli öğeden önceki akışta etkin bir şekilde zaten var. Aksi takdirde, bu öğe **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(* \_ meta*) ile değiştirilmiştir. İşlevi bir öğeyi çeşitli yollarla geri alabilir:
+Eğer *\_ Meta* , **traits_type:: EOF** değerine eşitse, geri gönderme öğesi geçerli öğeden önceki akışta etkin bir şekilde zaten var. Aksi takdirde, bu öğe **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_ meta*) ile değiştirilmiştir. İşlevi bir öğeyi çeşitli yollarla geri alabilir:
 
 - Bir Putback konumu varsa, öğesini putback konumuna saklayabilir ve giriş arabelleği için bir sonraki işaretçiyi azalsaklayabilir.
 
@@ -583,7 +584,7 @@ pos_type pubseekoff(off_type _Off,
 ### <a name="parameters"></a>Parametreler
 
 *_Off*\
-*_Way*göreli olarak arama konumu.
+*_Way* göreli olarak arama konumu.
 
 *_Way*\
 Dengeleme işlemleri için başlangıç noktası. Olası değerler için bkz. [seekdir](../standard-library/ios-base-class.md#seekdir) .
@@ -597,7 +598,7 @@ Yeni konumu veya geçersiz bir akış konumunu döndürür ( [seekoff](#seekoff)
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretçiyi *_Way*göre kaydırır.
+İşaretçiyi *_Way* göre kaydırır.
 
 ## <a name="basic_streambufpubseekpos"></a><a name="pubseekpos"></a> basic_streambuf::p ubseekpos
 
@@ -712,7 +713,7 @@ virtual pos_type seekoff(
 ### <a name="parameters"></a>Parametreler
 
 *_Off*\
-*_Way*göreli olarak arama konumu.
+*_Way* göreli olarak arama konumu.
 
 *_Way*\
 Dengeleme işlemleri için başlangıç noktası. Olası değerler için bkz. [seekdir](../standard-library/ios-base-class.md#seekdir) .
@@ -728,11 +729,11 @@ Yeni konumu ya da geçersiz bir akış konumunu döndürür ( `seekoff` (_ *off*
 
 Yeni konum aşağıdaki gibi belirlenir:
 
-- İse `_Way`  ==  `ios_base::beg` , yeni konum akışın başlangıcının ve _ *kapalı*olur.
+- İse `_Way`  ==  `ios_base::beg` , yeni konum akışın başlangıcının ve _ *kapalı* olur.
 
 - İse `_Way`  ==  `ios_base::cur` , yeni konum geçerli akış konumu artı _ *kapalı*' dır.
 
-- İse `_Way`  ==  `ios_base::end` , yeni konum akışın sonu artı _ *off*olur.
+- İse `_Way`  ==  `ios_base::end` , yeni konum akışın sonu artı _ *off* olur.
 
 Genellikle, **& ios_base:: ın** sıfır değilse, giriş akışı etkilenir ve **hangi & ios_base:: Out** sıfır değilse, çıkış akışı etkilenir. Bu parametrenin gerçek kullanımı, türetilmiş akış arabellekleri arasında farklılık gösterir.
 
@@ -867,7 +868,7 @@ int main( )
 
 ## <a name="basic_streambufsgetn"></a><a name="sgetn"></a> basic_streambuf:: sgetn
 
-Giriş arabelleğinden karakter *sayısına* kadar ayıklar ve bunları, belirtilen arabellek *PTR*içinde depolar.
+Giriş arabelleğinden karakter *sayısına* kadar ayıklar ve bunları, belirtilen arabellek *PTR* içinde depolar.
 
 Bu yöntem, geçilen değerlerin doğru olup olmadığını denetlemek için çağrıyı yapana bağlı olduğundan güvenli olmayabilir.
 
@@ -946,7 +947,7 @@ Akıştaki sonraki öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi [ssekmeli c](#sbumpc) çağırır ve bu işlev **traits_type::**[EOF](../standard-library/char-traits-struct.md#eof)döndürürse, **traits_type:: EOF**döndürür. Aksi takdirde, [sgetc](#sgetc)döndürür.
+Üye işlevi [ssekmeli c](#sbumpc) çağırır ve bu işlev **traits_type::**[EOF](../standard-library/char-traits-struct.md#eof)döndürürse, **traits_type:: EOF** döndürür. Aksi takdirde, [sgetc](#sgetc)döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -1249,11 +1250,11 @@ Korumalı sanal üye işlevi, giriş akışından o geçerli öğeyi çıkarmaya
 
 - Bir okuma konumu varsa, okuma konumunda depolanan öğe **olarak girer** ve giriş arabelleği için sonraki işaretçiyi ilerletir.
 
-- Bir öğeyi bir dış kaynaktan doğrudan okuyabilir ve bu değeri **ch**değeri olarak teslim edebilir.
+- Bir öğeyi bir dış kaynaktan doğrudan okuyabilir ve bu değeri **ch** değeri olarak teslim edebilir.
 
 - Ortak giriş ve Çıkış akışlarına sahip bir akış arabelleği için, bir okuma konumunu, bazı dış hedeflere, bazı veya tüm öğeleri, çıkış arabelleğinin başlangıç ve sonraki işaretçileri arasında yazarak kullanılabilir hale getirebilirsiniz. Ya da giriş arabelleği için yeni veya ek depolama alanı ayırabilirler. Daha sonra işlevi, bazı dış kaynaklardan, bir veya daha fazla öğeden ' de okur.
 
-İşlev başarılı olmazsa, **traits_type::**[EOF](../standard-library/char-traits-struct.md#eof)döndürür veya bir özel durum oluşturur. Aksi halde, `ch` yukarıda açıklandığı gibi dönüştürülmüş olarak çevrilmiş şekilde, giriş akışındaki geçerli öğeyi döndürür ve giriş arabelleği için sonraki işaretçiyi ilerletir. Varsayılan davranış, [yetersiz kalması](#underflow) ve bu işlev **traits_type::** eof ' u döndürürse **traits_type:: EOF**döndürmek için kullanılır. Aksi takdirde, işlev giriş akışında **ch** öğesini döndürür, daha önce açıklandığı gibi dönüştürülür ve giriş arabelleği için sonraki işaretçiyi ilerletir.
+İşlev başarılı olmazsa, **traits_type::**[EOF](../standard-library/char-traits-struct.md#eof)döndürür veya bir özel durum oluşturur. Aksi halde, `ch` yukarıda açıklandığı gibi dönüştürülmüş olarak çevrilmiş şekilde, giriş akışındaki geçerli öğeyi döndürür ve giriş arabelleği için sonraki işaretçiyi ilerletir. Varsayılan davranış, [yetersiz kalması](#underflow) ve bu işlev **traits_type::** eof ' u döndürürse **traits_type:: EOF** döndürmek için kullanılır. Aksi takdirde, işlev giriş akışında **ch** öğesini döndürür, daha önce açıklandığı gibi dönüştürülür ve giriş arabelleği için sonraki işaretçiyi ilerletir.
 
 ## <a name="basic_streambufunderflow"></a><a name="underflow"></a> basic_streambuf:: yetersiz
 
@@ -1269,7 +1270,7 @@ Geçerli öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi, geçerli akış konumunu ilerlemeden ve **ch** bunu `traits_type::` [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **ch**) olarak döndürecek şekilde, geçerli öğeyi giriş akışından ayıklamak için endeavors. Bunu çeşitli yollarla yapabilirsiniz:
+Korumalı sanal üye işlevi, geçerli akış konumunu ilerlemeden ve  bunu `traits_type::` [to_int_type](../standard-library/char-traits-struct.md#to_int_type)( **ch**) olarak döndürecek şekilde, geçerli öğeyi giriş akışından ayıklamak için endeavors. Bunu çeşitli yollarla yapabilirsiniz:
 
 - Bir okuma konumu varsa **ch** , okuma konumunda saklanan öğedir. Bunun hakkında daha fazla bilgi için [Basic_streambuf sınıfının](../standard-library/basic-streambuf-class.md)açıklamalar bölümüne bakın.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: binder2nd Class'
 title: binder2nd Sınıfı
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: 297f91dd9283b9f004247d2d1814b30a17e7ffa2
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: a3c76fcea22045ee7e723ad3ad51390c39f602ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890101"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325498"
 ---
 # <a name="binder2nd-class"></a>binder2nd Sınıfı
 
@@ -38,24 +39,24 @@ class binder2nd
 
 ### <a name="parameters"></a>Parametreler
 
-*func*\
+*melerinin*\
 Birli işlev nesnesine dönüştürülecek ikili işlev nesnesi.
 
-*sağ* \
+*Right*\
 İkili işlev nesnesinin ikinci bağımsız değişkeninin bağlanacağı değer.
 
-*sol* \
+*tarafta*\
 Uyarbınary nesnesinin, ikinci bağımsız değişkenin sabit değeriyle karşılaştırıldığı bağımsız değişkenin değeri.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-İkili işlev nesnesinin ikinci bağımsız değişkenini *sağ*değere bağlamakla sonuçlanan birli işlev nesnesi.
+İkili işlev nesnesinin ikinci bağımsız değişkenini *sağ* değere bağlamakla sonuçlanan birli işlev nesnesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, `op`bir ikili *işlev nesnesinin bir* kopyasını ve `value`*sağ* bir kopyasını depolar. `op(left, value)`döndüren `operator()` üye işlevini tanımlar.
+Sınıf şablonu, içinde bir ikili *işlev nesnesinin bir* kopyasını ve içindeki `op` bir kopyasını depolar  `value` . Üye işlevini `operator()` iade olarak tanımlar `op(left, value)` .
 
-*Func* , `Operation` türünde bir nesnedir ve c bir sabittir, [bind2nd](../standard-library/functional-functions.md#bind2nd)`(func, c)` `binder2nd` sınıf oluşturucusuna `binder2nd<Operation>(func, c)`ve daha uygun şekilde eşdeğerdir.
+*Func* , türünde bir nesnedir `Operation` ve c bir sabittir, [bind2nd](../standard-library/functional-functions.md#bind2nd) `(func, c)` `binder2nd` sınıf oluşturucusuna eşdeğerdir `binder2nd<Operation>(func, c)` ve daha uygundur.
 
 ## <a name="example"></a>Örnek
 

@@ -1,21 +1,22 @@
 ---
-title: '&lt;cstdint&gt;'
+description: 'Daha fazla bilgi edinin: &lt; cstdint&gt;'
+title: '&lt;cstdınt&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <cstdint>
 ms.assetid: 87afafb2-c630-4383-a2fc-a6b47c639e21
-ms.openlocfilehash: 142ea2b341dad307dea98d1406803a1e7eca5e78
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 3edaadf3a5f10e379d943460d24c75fbb0eb091e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324715"
 ---
-# <a name="ltcstdintgt"></a>&lt;cstdint&gt;
+# <a name="ltcstdintgt"></a>&lt;cstdınt&gt;
 
-Standart C Kitaplığı üst bilgisini \<stdint. h > içerir ve ilişkili adları `std` ad alanına ekler. Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
+Standart C Kitaplığı üst bilgisini içerir \<stdint.h> ve ilgili adları `std` ad alanına ekler. Bu üstbilginin dahil edilmesi, standart C Kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cstdint>
@@ -72,4 +73,4 @@ SIZE_MAX
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)

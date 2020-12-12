@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Eşzamanlılık Çalışma Zamanı'
 title: Eşzamanlılık Çalışma Zamanı
 ms.date: 07/20/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ConcRT (see Concurrency Runtime)
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-ms.openlocfilehash: ce75d7a78fec69922c08479f6c130c6b6ccec566
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1bc161e8c70f98fe469feffa1c472ecaf6a7f161
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325790"
 ---
 # <a name="concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanı
 
@@ -39,7 +40,7 @@ Başvuru belgeleri için bkz. [başvuru](../../parallel/concrt/reference/referen
 |-|-|
 |[Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br /><br /> [Nasıl yapılır: paralel sıralama yordamı yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br /><br /> [Nasıl yapılır: paralel Işlemleri yürütmek için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)<br /><br /> [Nasıl yapılır: bir gecikmeden sonra tamamlanan bir görev oluşturma](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|Zaman uyumsuz kod yazmanıza ve paralel çalışmayı daha küçük parçalara ayırmayı sağlamanıza yardımcı olan görevleri ve görev gruplarını açıklar.|
 |[İzlenecek yol: Futures uygulama](../../parallel/concrt/walkthrough-implementing-futures.md)|Daha fazla şey yapmak için Eşzamanlılık Çalışma Zamanı özelliklerinin nasıl birleştirileceğini gösterir.|
-|[İzlenecek yol: Kullanıcı arabirimi Iş parçacığından Iş kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)|Bir MFC uygulamasındaki UI iş parçacığı tarafından gerçekleştirilen çalışmanın bir çalışan iş parçacığına nasıl taşınacağını gösterir.|
+|[İzlenecek yol: User-Interface Iş parçacığından Iş kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)|Bir MFC uygulamasındaki UI iş parçacığı tarafından gerçekleştirilen çalışmanın bir çalışan iş parçacığına nasıl taşınacağını gösterir.|
 |[Paralel Desenler kitaplığındaki en iyi uygulamalar](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br /><br /> [Eşzamanlılık Çalışma Zamanı genel En Iyi Yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)|PPL ile çalışmaya yönelik ipuçları ve en iyi uygulamalar sağlar.|
 
 ## <a name="data-parallelism-in-the-ppl"></a>PPL'de Veri Paralelliği
@@ -69,9 +70,9 @@ Başvuru belgeleri için bkz. [başvuru](../../parallel/concrt/reference/referen
 
 |Makale|Açıklama|
 |-|-|
-|[Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)<br /><br /> [Zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br /><br /> [İleti geçirme Işlevleri](../../parallel/concrt/message-passing-functions.md)<br /><br /> [Nasıl yapılır: çeşitli üretici tüketicisi desenleri uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br /><br /> [Nasıl yapılır: çağrıya ve transformatör sınıflarına çalışma Işlevleri sağlama](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)<br /><br /> [Nasıl yapılır: bir veri ardışık düzeninde transformatör kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br /><br /> [Nasıl yapılır: tamamlanan görevler arasında seçim yapma](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br /><br /> [Nasıl yapılır: düzenli bir aralıkta Ileti gönderme](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)<br /><br /> [Nasıl yapılır: Ileti bloğu filtresini kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)|Eşzamanlılık Çalışma Zamanı veri akışı işlemleri gerçekleştirmeye yönelik yapı taşları olan zaman uyumsuz aracılar, ileti blokları ve ileti geçirme işlevlerini açıklar.|
-|[İzlenecek yol: aracı tabanlı uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br /><br /> [İzlenecek yol: veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)|Temel aracı tabanlı uygulamaların nasıl oluşturulacağını gösterir.|
-|[İzlenecek yol: görüntü Işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)|Görüntü işleme gerçekleştiren zaman uyumsuz ileti blokları ağının nasıl oluşturulacağını gösterir.|
+|[Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)<br /><br /> [Zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br /><br /> [İleti geçirme Işlevleri](../../parallel/concrt/message-passing-functions.md)<br /><br /> [Nasıl yapılır: çeşitli Producer-Consumer desenleri uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br /><br /> [Nasıl yapılır: çağrıya ve transformatör sınıflarına çalışma Işlevleri sağlama](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)<br /><br /> [Nasıl yapılır: bir veri ardışık düzeninde transformatör kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br /><br /> [Nasıl yapılır: tamamlanan görevler arasında seçim yapma](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br /><br /> [Nasıl yapılır: düzenli bir aralıkta Ileti gönderme](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)<br /><br /> [Nasıl yapılır: Ileti bloğu filtresini kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)|Eşzamanlılık Çalışma Zamanı veri akışı işlemleri gerçekleştirmeye yönelik yapı taşları olan zaman uyumsuz aracılar, ileti blokları ve ileti geçirme işlevlerini açıklar.|
+|[İzlenecek yol: Agent-Based uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br /><br /> [İzlenecek yol: veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)|Temel aracı tabanlı uygulamaların nasıl oluşturulacağını gösterir.|
+|[İzlenecek yol: Image-Processing ağ oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)|Görüntü işleme gerçekleştiren zaman uyumsuz ileti blokları ağının nasıl oluşturulacağını gösterir.|
 |[İzlenecek yol: kilitlenmeyi engellemek için birleştirmeyi kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)|, Uygulamanızda kilitlenmeyi engellemek için Eşzamanlılık Çalışma Zamanı nasıl kullanacağınızı göstermek için dinleme filozoflar sorununu kullanır.|
 |[İzlenecek yol: özel bir Ileti bloğu oluşturma](../../parallel/concrt/walkthrough-creating-a-custom-message-block.md)|Gelen iletileri önceliğe göre sipariş eden bir özel ileti bloğu türünün nasıl oluşturulacağını gösterir.|
 |[Zaman uyumsuz aracılar kitaplığındaki en iyi uygulamalar](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)<br /><br /> [Eşzamanlılık Çalışma Zamanı genel En Iyi Yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)|Aracılarla çalışmaya yönelik ipuçları ve en iyi uygulamalar sağlar.|

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tiled_index sınıfı'
 title: tiled_index Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -19,18 +20,18 @@ f1_keywords:
 helpviewer_keywords:
 - tiled_index class
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
-ms.openlocfilehash: 9d295093031eaee0a2d4dd83aa931060e6eebc07
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 072735a9f98efc522c2f054d837d3c2f89e8958b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832276"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325830"
 ---
 # <a name="tiled_index-class"></a>tiled_index Sınıfı
 
 [Tiled_extent](tiled-extent-class.md) nesnesine bir dizin sağlar. Bu sınıfın, yerel kutucuk kaynağına göre ve genel kaynağa göreli öğelere erişim özellikleri vardır. Döşeli boşluklar hakkında daha fazla bilgi için bkz. [kutucukları kullanma](../../../parallel/amp/using-tiles.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -75,7 +76,7 @@ En az önemli boyutun uzunluğu.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get_tile_extent](#tiled_index__get_tile_extent)|, [extent](extent-class.md) `tiled_index` Ve şablon bağımsız değişkenlerinin değerlerini içeren bir kapsam nesnesi döndürür `_Dim0` `_Dim1` `_Dim2` .|
+|[get_tile_extent](#tiled_index__get_tile_extent)|, [](extent-class.md) `tiled_index` Ve şablon bağımsız değişkenlerinin değerlerini içeren bir kapsam nesnesi döndürür `_Dim0` `_Dim1` `_Dim2` .|
 
 ### <a name="public-constants"></a>Genel sabitler
 
@@ -95,7 +96,7 @@ En az önemli boyutun uzunluğu.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[tile_extent](#tile_extent)|[extent](extent-class.md) `tiled_index` Şablon bağımsız değişkenleri `tiled_index` şablon bağımsız değişkenlerinin, ve değerlerini içeren bir kapsam nesnesi alır `_Dim0` `_Dim1` `_Dim2` .|
+|[tile_extent](#tile_extent)|[](extent-class.md) `tiled_index` Şablon bağımsız değişkenleri `tiled_index` şablon bağımsız değişkenlerinin, ve değerlerini içeren bir kapsam nesnesi alır `_Dim0` `_Dim1` `_Dim2` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -113,7 +114,7 @@ En az önemli boyutun uzunluğu.
 
 `tiled_index` sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 tiled_index(
@@ -133,7 +134,7 @@ tiled_index(
 Oluşturulan genel [Dizin](index-class.md) `tiled_index` .
 
 *_Local*<br/>
-Oluşturulan [index](index-class.md)`tiled_index`
+Oluşturulan [](index-class.md)`tiled_index`
 
 *_Tile*<br/>
 Oluşturulan öğesinin döşeme [dizini](index-class.md)`tiled_index`
@@ -156,7 +157,7 @@ Oluşturulan [tile_barrier](tile-barrier-class.md) nesnesi `tiled_index` .
 
 ## <a name="get_tile_extent"></a><a name="tiled_index__get_tile_extent"></a> get_tile_extent
 
-, [extent](extent-class.md) `tiled_index` Ve şablon bağımsız değişkenlerinin değerlerini içeren bir kapsam nesnesi döndürür `_Dim0` `_Dim1` `_Dim2` .
+, [](extent-class.md) `tiled_index` Ve şablon bağımsız değişkenlerinin değerlerini içeren bir kapsam nesnesi döndürür `_Dim0` `_Dim1` `_Dim2` .
 
 ### <a name="syntax"></a>Syntax
 
@@ -260,7 +261,7 @@ const index<rank> tile_origin
 
 ## <a name="tile_extent"></a><a name="tile_extent"></a> tile_extent
 
-[extent](extent-class.md) `tiled_index` Şablon bağımsız değişkenleri `tiled_index` şablon bağımsız değişkenlerinin, ve değerlerini içeren bir kapsam nesnesi alır `_Dim0` `_Dim1` `_Dim2` .
+[](extent-class.md) `tiled_index` Şablon bağımsız değişkenleri `tiled_index` şablon bağımsız değişkenlerinin, ve değerlerini içeren bir kapsam nesnesi alır `_Dim0` `_Dim1` `_Dim2` .
 
 ### <a name="syntax"></a>Syntax
 

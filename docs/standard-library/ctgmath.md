@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; ctgmath&gt;'
 title: '&lt;ctgmath&gt;'
 ms.date: 07/11/2019
 f1_keywords:
@@ -7,34 +8,34 @@ f1_keywords:
 helpviewer_keywords:
 - ctgmath header
 ms.assetid: ff521893-f445-4dc8-a2f6-699185bb7024
-ms.openlocfilehash: 30eca273ac41139251c024c27c16d4adefe7f784
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: f1033a944699f4c124114c49e0e30f8b30804a1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324701"
 ---
 # <a name="ltctgmathgt"></a>&lt;ctgmath&gt;
 
-Aslında, C++ \< \<TGT Math. h > eşdeğer tür genel matematik \<makroları sağlayan karmaşık > ve cmath > standart kitaplık üst bilgilerini içerir.
+Sonuç olarak, C++ standart kitaplığı üst bilgilerini \<complex> ve ile \<cmath> eşdeğer tür genel matematik makroları sağlayan, içerir \<tgmath.h> .
 
 > [!NOTE]
-> C standart \<kitaplığı tgmath. h > üstbilgisi, \<karmaşık > ve \< \<cmath > C++ aşırı yüklemeler tarafından etkin bir şekilde değiştirildiğinden, ctgmath > tarafından dahil değildir. Bu, \<ctgmath > üst bilgisini gereksiz hale getirir. TGT Math. h > üst bilgisi kullanım dışıdır C++ \< \<Ctgmath > üst bilgisi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardında kaldırılmıştır.
+> C standart kitaplık \<tgmath.h> üst bilgisi \<ctgmath> , ve içindeki C++ aşırı yüklemeleri tarafından etkin bir şekilde değiştirildiğinden, tarafından dahil \<complex> değildir \<cmath> . Bu, \<ctgmath> üstbilgiyi gereksiz hale getirir. \<tgmath.h>Üst bilgi C++ ' da kullanımdan kaldırılmıştır. \<ctgmath>Üst bilgi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardına göre kaldırılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ctgmath >
+**Üst bilgi:**\<ctgmath>
 
 **Ad alanı:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
-C standart kitaplık üstbilgisi \<TGT Math. h > işlevselliği, \<karmaşık > ve \<cmath > aşırı yüklemeleri tarafından sağlanır.
+C standart kitaplık üstbilgisinin işlevselliği \<tgmath.h> ve içindeki aşırı yüklemeler tarafından sağlanır \<complex> \<cmath> .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<karmaşık >](complex.md)\
-[\<cmath >](cmath.md)\
+[\<complex>](complex.md)\
+[\<cmath>](cmath.md)\
 [Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](cpp-standard-library-overview.md)\
-[C++ Standart kitaplıkta iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)

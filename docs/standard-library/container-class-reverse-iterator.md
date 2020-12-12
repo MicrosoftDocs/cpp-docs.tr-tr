@@ -1,24 +1,25 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kapsayıcı sınıfı:: reverse_iterator'
 title: Kapsayıcı Sınıfı::reverse_iterator
 ms.date: 11/04/2016
 helpviewer_keywords:
 - reverse_iterator method
 ms.assetid: 1d190c41-56b1-462e-b564-793b2a883c26
-ms.openlocfilehash: 1f65713050ec6c8c9675ce95b9affb7c7af533ec
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 013b0f6021c37833243a6b8ff6238c966379d2c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257864"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324834"
 ---
 # <a name="container-classreverse_iterator"></a>Kapsayıcı Sınıfı::reverse_iterator
 
 > [!NOTE]
-> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplığı 'nda kullanılan kapsayıcılardan oluşan işlevsel bir örnek olarak Microsoft C++ belgelerinde yer almaktadır. Daha fazla bilgi için bkz. [C++ standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
 Denetlenen sıra için ters Yineleyici işlevi görebilecek bir nesne tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T7 reverse_iterator;
@@ -26,8 +27,8 @@ typedef T7 reverse_iterator;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Burada belirtilmemiş tür `T7` (`reverse_iterator` genellikle **\<** [Yineleyici](../standard-library/container-class-iterator.md) **>** ) için bir eş anlamlı olarak açıklanmaktadır.
+Burada belirtilmeyen tür için bir eş anlamlı olarak açıklanmaktadır `T7` (genellikle `reverse_iterator` **\<**[iterator](../standard-library/container-class-iterator.md)**>** ).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)
+[Örnek kapsayıcı sınıfı](../standard-library/sample-container-class.md)

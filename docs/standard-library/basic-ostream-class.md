@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: basic_ostream sınıfı'
 title: basic_ostream Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - std::basic_ostream [C++], tellp
 - std::basic_ostream [C++], write
 ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
-ms.openlocfilehash: 972c21feec805e4c1032f0ebad1e3ac0d7daa7dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 19bcc5fddd7ae73a77492f88ed516beb03182839
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219241"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325660"
 ---
 # <a name="basic_ostream-class"></a>basic_ostream Sınıfı
 
 Bu sınıf şablonu, öğe ve kodlanmış nesnelerin `Elem` , [char_type](../standard-library/basic-ios-class.md#char_type)olarak da bilinen, karakter nitelikleri `Tr` [traits_type](../standard-library/basic-ios-class.md#traits_type)olarak da bilinen sınıf tarafından belirlendiği şekilde bir akış arabelleğine eklenmesini denetleyen bir nesne tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Elem, class Tr = char_traits<Elem>>
@@ -102,7 +103,7 @@ return (*this);
 
 Her iki işlev grubu, öğe eklenirken bir hatayla karşılaştıklarında [SetState](../standard-library/basic-ios-class.md#setstate)(**badbit**) çağrısı çağırır.
 
-Basic_istream sınıfının bir nesnesi \< **Elem**, **Tr**> , yalnızca basic_ios sınıfının bir sanal ortak taban nesnesini depolar [basic_ios](../standard-library/basic-ios-class.md) **\<Elem**, **Tr>** .
+Basic_istream sınıfının bir nesnesi \< **Elem**, **Tr**> , yalnızca basic_ios sınıfının bir sanal ortak taban nesnesini depolar [](../standard-library/basic-ios-class.md) **\<Elem**, **Tr>** .
 
 ## <a name="example"></a>Örnek
 
@@ -124,7 +125,7 @@ Basic_istream sınıfının bir nesnesi \< **Elem**, **Tr**> , yalnızca basic_i
 |[Nöbetçisi](#sentry)|İç içe yerleştirilmiş sınıf, bildirim yapılarını biçimlendirilen çıkış işlevlerini ve biçimlendirilmemiş çıkış işlevlerini içeren bir nesneyi tanımlar.|
 |[Kur](#swap)|Bu nesnenin değerlerini, `basic_ostream` belirtilen nesnenin değerleri için değiş tokuş eder `basic_ostream` .|
 |[tellp](#tellp)|Çıkış akışında rapor konumu.|
-|[yazarken](#write)|Bir akışa karakter koyar.|
+|[write](#write)|Bir akışa karakter koyar.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -139,7 +140,7 @@ Basic_istream sınıfının bir nesnesi \< **Elem**, **Tr**> , yalnızca basic_i
 
 **Ad alanı:** std
 
-## <a name="basic_ostreambasic_ostream"></a><a name="basic_ostream"></a>basic_ostream:: basic_ostream
+## <a name="basic_ostreambasic_ostream"></a><a name="basic_ostream"></a> basic_ostream:: basic_ostream
 
 Bir `basic_ostream` nesnesi oluşturur.
 
@@ -170,7 +171,7 @@ Türündeki bir nesneye rvalue başvurusu `basic_ostream` .
 
 Çıkış akışları hakkında daha fazla bilgi edinmek için [basic_ofstream:: basic_ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream) örneğe bakın.
 
-## <a name="basic_ostreamflush"></a><a name="flush"></a>basic_ostream:: Flush
+## <a name="basic_ostreamflush"></a><a name="flush"></a> basic_ostream:: Flush
 
 Arabelleği boşaltır.
 
@@ -184,7 +185,7 @@ Basic_ostream nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Rdarabelleğe](../standard-library/basic-ios-class.md#rdbuf) boş bir işaretçi değilse, işlev **rdarabelleğe->** [pubsync](../standard-library/basic-streambuf-class.md#pubsync)öğesini çağırır. Bu değer-1 döndürürse, işlev [SetState](../standard-library/basic-ios-class.md#setstate)(**badbit**) öğesini çağırır. ** \* Bunu döndürür.**
+[Rdarabelleğe](../standard-library/basic-ios-class.md#rdbuf) boş bir işaretçi değilse, işlev **rdarabelleğe->** [pubsync](../standard-library/basic-streambuf-class.md#pubsync)öğesini çağırır. Bu değer-1 döndürürse, işlev [SetState](../standard-library/basic-ios-class.md#setstate)(**badbit**) öğesini çağırır. **\* Bunu döndürür.**
 
 ### <a name="example"></a>Örnek
 
@@ -205,7 +206,7 @@ int main( )
 test
 ```
 
-## <a name="basic_ostreamoperatorltlt"></a><a name="basic_ostream_operator_lt_lt"></a>basic_ostream:: işleci&lt;&lt;
+## <a name="basic_ostreamoperatorltlt"></a><a name="basic_ostream_operator_lt_lt"></a> basic_ostream:: işleci&lt;&lt;
 
 Akışa yazar.
 
@@ -254,7 +255,7 @@ Basic_ostream nesnesine bir başvuru.
 
 \<ostream>Üst bilgi ayrıca birçok genel ekleme işlecini tanımlar. Daha fazla bilgi için bkz. [operatör<<](../standard-library/ostream-operators.md#op_lt_lt).
 
-İlk üye işlevi, formun bir ifadesinin `ostr << endl` [endl](../standard-library/ostream-functions.md#endl)**(OSTR)** çağırmasını sağlar ve ** \* bunu**döndürür. İkinci ve üçüncü işlevleri, [onaltılık](../standard-library/ios-functions.md#hex)gibi diğer işleicilere benzer şekilde davrandığından emin olmanızı sağlamaktır. Kalan işlevler tüm biçimli çıkış işlevleridir.
+İlk üye işlevi, formun bir ifadesinin `ostr << endl` [endl](../standard-library/ostream-functions.md#endl)**(OSTR)** çağırmasını sağlar ve **\* bunu** döndürür. İkinci ve üçüncü işlevleri, [onaltılık](../standard-library/ios-functions.md#hex)gibi diğer işleicilere benzer şekilde davrandığından emin olmanızı sağlamaktır. Kalan işlevler tüm biçimli çıkış işlevleridir.
 
 İşlevi
 
@@ -262,7 +263,7 @@ Basic_ostream nesnesine bir başvuru.
 basic_ostream<Elem, Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
 ```
 
-*strarabelleğe* bir null işaretçi değilse ve bunları eklediğinde öğeleri *strarabelleğe*ayıklar. Dosya sonunda ayıklama durduruluyor veya bir ayıklama bir özel durum oluşturursa (yeniden oluşturulur). Ayrıca, bir ekleme başarısız olursa, söz konusu öğeyi ayıklamadan da duraklar. İşlev hiçbir öğe eklediğinde veya bir ayıklama bir özel durum oluşturursa, işlev [SetState](../standard-library/basic-ios-class.md#setstate)(**failbit**) yöntemini çağırır. Herhangi bir durumda, işlev ** \* bunu**döndürür.
+*strarabelleğe* bir null işaretçi değilse ve bunları eklediğinde öğeleri *strarabelleğe* ayıklar. Dosya sonunda ayıklama durduruluyor veya bir ayıklama bir özel durum oluşturursa (yeniden oluşturulur). Ayrıca, bir ekleme başarısız olursa, söz konusu öğeyi ayıklamadan da duraklar. İşlev hiçbir öğe eklediğinde veya bir ayıklama bir özel durum oluşturursa, işlev [SetState](../standard-library/basic-ios-class.md#setstate)(**failbit**) yöntemini çağırır. Herhangi bir durumda, işlev **\* bunu** döndürür.
 
 İşlevi
 
@@ -270,7 +271,7 @@ basic_ostream<Elem, Tr>& operator<<(basic_streambuf<Elem, Tr>* strbuf);
 basic_ostream<Elem, Tr>& operator<<(bool val);
 ```
 
-`_Val`Boole alanına dönüştürür ve [use_facet](../standard-library/basic-filebuf-class.md#open) ** \<Elem, OutIt><num_put** `(` [getloc](../standard-library/ios-base-class.md#getloc)) çağırarak ekler. [PUT](#put)(**rdtıt**)[rdbuf](../standard-library/basic-ios-class.md#rdbuf), ** \* this**, `getloc` , **Val**). Burada `OutIt` [ostreambuf_iterator](../standard-library/ostreambuf-iterator-class.md)olarak tanımlanmıştır **\<Elem, Tr>** . İşlevi ** \* bunu**döndürür.
+`_Val`Boole alanına dönüştürür ve [use_facet](../standard-library/basic-filebuf-class.md#open) **\<Elem, OutIt><num_put** `(` [getloc](../standard-library/ios-base-class.md#getloc)) çağırarak ekler. [PUT](#put)(**rdtıt**)[](../standard-library/basic-ios-class.md#rdbuf), **\* this**, `getloc` , **Val**). Burada `OutIt` [ostreambuf_iterator](../standard-library/ostreambuf-iterator-class.md)olarak tanımlanmıştır **\<Elem, Tr>** . İşlevi **\* bunu** döndürür.
 
 İşlevler
 
@@ -286,7 +287,7 @@ basic_ostream<Elem, Tr>& operator<<(unsigned long long val);
 basic_ostream<Elem, Tr>& operator<<(const void* val);
 ```
 
-her dönüştürme bir sayısal alana *değer* girin ve **use_facet<num_put \<Elem, OutIt> **() çağırarak ekleyin `getloc` . **PUT**(**outit**( `rdbuf` ), ** \* Bu**, `getloc` , **Val**). Burada, **Utit** **ostreambuf_iterator \<Elem, Tr> **olarak tanımlanmıştır. İşlevi ** \* bunu**döndürür.
+her dönüştürme bir sayısal alana *değer* girin ve **use_facet<num_put \<Elem, OutIt>**() çağırarak ekleyin `getloc` . **PUT**(**outit**( `rdbuf` ), **\* Bu**, `getloc` , **Val**). Burada, **Utit** **ostreambuf_iterator \<Elem, Tr>** olarak tanımlanmıştır. İşlevi **\* bunu** döndürür.
 
 İşlevler
 
@@ -296,7 +297,7 @@ basic_ostream<Elem, Tr>& operator<<(double val);
 basic_ostream<Elem, Tr>& operator<<(long double val);
 ```
 
-her dönüştürme bir sayısal alana *değer* girin ve **use_facet<num_put \<Elem, OutIt> **( `getloc` )**. Put**(**OutIt**( `rdbuf` ), ** \* this**, `getloc` , **Val**) çağırarak ekleyin. Burada, **Utit** **ostreambuf_iterator \<Elem, Tr> **olarak tanımlanmıştır. İşlevi ** \* bunu**döndürür.
+her dönüştürme bir sayısal alana *değer* girin ve **use_facet<num_put \<Elem, OutIt>**( `getloc` )**. Put**(**OutIt**( `rdbuf` ), **\* this**, `getloc` , **Val**) çağırarak ekleyin. Burada, **Utit** **ostreambuf_iterator \<Elem, Tr>** olarak tanımlanmıştır. İşlevi **\* bunu** döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -348,7 +349,7 @@ int main()
 }
 ```
 
-## <a name="basic_ostreamoperator"></a><a name="op_eq"></a>basic_ostream:: operator =
+## <a name="basic_ostreamoperator"></a><a name="op_eq"></a> basic_ostream:: operator =
 
 Bu nesneye, belirtilen nesne parametresi için değerler atar `basic_ostream` .
 
@@ -365,7 +366,7 @@ basic_ostream& operator=(basic_ostream&& right);
 
 Member işleci Swap öğesini çağırır `(right)` .
 
-## <a name="basic_ostreamput"></a><a name="put"></a>basic_ostream::p UT
+## <a name="basic_ostreamput"></a><a name="put"></a> basic_ostream::p UT
 
 Bir akışa bir karakter koyar.
 
@@ -384,7 +385,7 @@ Basic_ostream nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Biçimlendirilmemiş output işlevi *_Ch*öğesi ekler. ** \* Bunu döndürür.**
+Biçimlendirilmemiş output işlevi *_Ch* öğesi ekler. **\* Bunu döndürür.**
 
 ### <a name="example"></a>Örnek
 
@@ -407,7 +408,7 @@ v
 l
 ```
 
-## <a name="basic_ostreamseekp"></a><a name="seekp"></a>basic_ostream:: seekp
+## <a name="basic_ostreamseekp"></a><a name="seekp"></a> basic_ostream:: seekp
 
 Çıkış akışındaki konumu sıfırlayın.
 
@@ -423,7 +424,7 @@ basic_ostream<Elem, Tr>& seekp(off_type _Off, ios_base::seekdir _Way);
 Akıştaki konum.
 
 *_Off*\
-*_Way*göreli konum.
+*_Way* göreli konum.
 
 *_Way*\
 [İos_base:: seekdir](../standard-library/ios-base-class.md#seekdir) Numaralandırmalardan biri.
@@ -434,7 +435,7 @@ Basic_ostream nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Başarısız](../standard-library/basic-ios-class.md#fail) olursa **`false`** , ilk üye işlevi bazı geçici nesneler için **newpos =** [rdarabelleğe](../standard-library/basic-ios-class.md#rdbuf) **->** [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos)(*_Pos*) öğesini çağırır `pos_type` `newpos` . `fail`Yanlışsa, ikinci işlev **newpos = rdarabelleğe->** [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)(*_Off, _Way*) yöntemini çağırır. Her iki durumda da ( `off_type` )**newpos = =** ( `off_type` ) (-1) (konumlandırma işlemi başarısız olursa), işlev **istr çağırır.** [SetState](../standard-library/basic-ios-class.md#setstate)(**failbit**). Her iki işlev de ** \* bunu**döndürür.
+[Başarısız](../standard-library/basic-ios-class.md#fail) olursa **`false`** , ilk üye işlevi bazı geçici nesneler için **newpos =** [rdarabelleğe](../standard-library/basic-ios-class.md#rdbuf) **->** [pubseekpos](../standard-library/basic-streambuf-class.md#pubseekpos)(*_Pos*) öğesini çağırır `pos_type` `newpos` . `fail`Yanlışsa, ikinci işlev **newpos = rdarabelleğe->** [pubseekoff](../standard-library/basic-streambuf-class.md#pubseekoff)(*_Off, _Way*) yöntemini çağırır. Her iki durumda da ( `off_type` )**newpos = =** ( `off_type` ) (-1) (konumlandırma işlemi başarısız olursa), işlev **istr çağırır.** [SetState](../standard-library/basic-ios-class.md#setstate)(**failbit**). Her iki işlev de **\* bunu** döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -466,7 +467,7 @@ int main()
 7
 ```
 
-## <a name="basic_ostreamsentry"></a><a name="sentry"></a>basic_ostream:: Sentry
+## <a name="basic_ostreamsentry"></a><a name="sentry"></a> basic_ostream:: Sentry
 
 İç içe yerleştirilmiş sınıf, bildirim yapılarını biçimlendirilen çıkış işlevlerini ve biçimlendirilmemiş çıkış işlevlerini içeren bir nesneyi tanımlar.
 
@@ -478,7 +479,7 @@ sınıf Sentry {public: açık Sentry (basic_ostream \<Elem, Tr>& _Ostr); operat
 
 `uncaught_exception`Döndürüyor **`false`** ve [Flags](../standard-library/ios-base-class.md#flags) **&** [unitarabelleğe](../standard-library/ios-functions.md#unitbuf) sıfır değilse, yıkıcı [Temizleme](#flush)çağırır.
 
-## <a name="basic_ostreamswap"></a><a name="swap"></a>basic_ostream:: swap
+## <a name="basic_ostreamswap"></a><a name="swap"></a> basic_ostream:: swap
 
 Bu nesnenin değerlerini, `basic_ostream` belirtilen değerleri için değiş tokuş eder `basic_ostream` .
 
@@ -493,9 +494,9 @@ Bir `basic_ostream` nesneye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, [basic_ios::swap](../standard-library/basic-ios-class.md#swap) `(right)` *sağ*içerikleri için bu nesnenin içeriğini değiş tokuş etmek üzere basic_ios:: Swap öğesini çağırır.
+Üye işlevi, [](../standard-library/basic-ios-class.md#swap) `(right)` *sağ* içerikleri için bu nesnenin içeriğini değiş tokuş etmek üzere basic_ios:: Swap öğesini çağırır.
 
-## <a name="basic_ostreamtellp"></a><a name="tellp"></a>basic_ostream:: tellp
+## <a name="basic_ostreamtellp"></a><a name="tellp"></a> basic_ostream:: tellp
 
 Çıkış akışında rapor konumu.
 
@@ -515,7 +516,7 @@ pos_type tellp();
 
 Örneği için bkz. [seekp](#seekp) `tellp` .
 
-## <a name="basic_ostreamwrite"></a><a name="write"></a>basic_ostream:: Write
+## <a name="basic_ostreamwrite"></a><a name="write"></a> basic_ostream:: Write
 
 Bir akışa karakter koyun.
 

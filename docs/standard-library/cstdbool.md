@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; cstdbool&gt;'
 title: '&lt;cstdbool&gt;'
 ms.date: 07/11/2019
 f1_keywords:
@@ -7,23 +8,23 @@ f1_keywords:
 helpviewer_keywords:
 - cstdbool header
 ms.assetid: 44ccb8b2-d808-4715-8097-58ba09ab33ed
-ms.openlocfilehash: ed780e059a5e456731fd6a4f651639e282016f5e
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: 0711c05ff136f90a701ff707976a172d2bcb1315
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341096"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324741"
 ---
 # <a name="ltcstdboolgt"></a>&lt;cstdbool&gt;
 
-, Stdbool. h > \<C standart kitaplığı başlığını içerir ve ilişkili adları `std` ad alanına ekler.
+C standart kitaplığı üst bilgisini içerir \<stdbool.h> ve ilgili adları `std` ad alanına ekler.
 
 > [!NOTE]
-> Stdbool. h > üst bilgisi, içinde C++anahtar sözcük olan makroları tanımladığından, bunun da bir etkisi yoktur. \< Stdbool. h > üst bilgisi kullanım dışıdır C++ \< \<Cstdbool > üst bilgisi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardında kaldırılmıştır.
+> \<stdbool.h>Üst bilgi C++ ' ta anahtar sözcük olan makroları tanımladığından, bunun da bir etkisi yoktur. \<stdbool.h>Üst bilgi C++ ' da kullanımdan kaldırılmıştır. \<cstdbool>Üst bilgi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardına göre kaldırılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<cstdbool >
+**Üst bilgi:**\<cstdbool>
 
 **Ad alanı:** std
 
@@ -34,5 +35,5 @@ Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](cpp-standard-library-overview.md)\
-[C++ Standart kitaplıkta iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)

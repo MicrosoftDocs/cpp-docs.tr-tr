@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; cstdalıgn&gt;'
 title: '&lt;cstdalign eklendi&gt;'
 ms.date: 07/11/2019
 f1_keywords:
@@ -11,29 +12,29 @@ helpviewer_keywords:
 - __alignas_is_defined
 - __alignof_is_defined
 ms.assetid: 9d570924-d299-4225-9a58-8c4c820f5903
-ms.openlocfilehash: 603a590190c50495aa80f1b41a574149eb8f760a
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: 149893b33ead3e66223b9124ff7c1b6346929799
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342250"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324754"
 ---
 # <a name="ltcstdaligngt"></a>&lt;cstdalign eklendi&gt;
 
-Bazı C++ standart kitaplık uygulamalarında bu üst bilgi, stdalıgn. h > C \<standart kitaplığı başlığını içerir ve `std` ilişkili adları ad alanına ekler. Bu üst bilgi MSVC içinde uygulanmadığından, \<cstdalıgn > üst bilgisi uyumluluk makrolarını `__alignas_is_defined` ve `__alignof_is_defined`tanımlar.
+Bazı C++ standart kitaplık uygulamalarında, bu üst bilgi C standart kitaplık üst bilgisini içerir \<stdalign.h> ve ilişkili adları `std` ad alanına ekler. Bu üst bilgi MSVC içinde uygulanmadığından, \<cstdalign> üst bilgi uyumluluk makrolarını ve ' ı tanımlar `__alignas_is_defined` `__alignof_is_defined` .
 
 > [!NOTE]
-> Stdalıgn. h > üst bilgisi, içinde C++anahtar sözcük olan makroları tanımladığından, bunun da bir etkisi yoktur. \< Stdalıgn. h > başlığı ' de C++kullanım dışıdır. \< \<Cstdalıgn > üst bilgisi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardında kaldırılmıştır.
+> \<stdalign.h>Üst bilgi C++ ' ta anahtar sözcük olan makroları tanımladığından, bunun da bir etkisi yoktur. \<stdalign.h>Üst bilgi C++ ' da kullanımdan kaldırılmıştır. \<cstdalign>Üst bilgi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardına göre kaldırılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<cstdalign >
+**Üst bilgi:**\<cstdalign>
 
 **Ad alanı:** std
 
 ## <a name="macros"></a>Makrolar
 
-| Makrosu | Açıklama |
+| Makroya | Açıklama |
 | - | - |
 | `__alignas_is_defined` | Tamsayı sabiti 1 ' i genişleten C uyumluluk makrosu. |
 | `__alignof_is_defined` | Tamsayı sabiti 1 ' i genişleten C uyumluluk makrosu. |
@@ -41,5 +42,5 @@ Bazı C++ standart kitaplık uygulamalarında bu üst bilgi, stdalıgn. h > C \<
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](cpp-standard-library-overview.md)\
-[C++ Standart kitaplıkta iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)

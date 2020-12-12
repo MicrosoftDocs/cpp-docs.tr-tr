@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: üst bilgi denetimi ve liste denetimi'
 title: Üstbilgi denetimi ve liste denetimi
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - header controls [MFC]
 - header controls [MFC], list controls used with
 ms.assetid: b20194b1-1a6b-4e2f-b890-1b3cca6650bc
-ms.openlocfilehash: f9dd34b27ddbdc0b99fafbb23ad1cf9782d98605
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d2301f82a76516a008de0a72e1c9288580b8f545
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325925"
 ---
 # <a name="header-control-and-list-control"></a>Üstbilgi denetimi ve liste denetimi
 
@@ -33,7 +34,7 @@ Katıştırılmış üstbilgi denetim nesnesine `CListCtrl` veya `CListView` ilg
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Başlık denetimleriyle birlikte görüntü listeleri kullanma](using-image-lists-with-header-controls.md)
+- [Üstbilgi denetimleriyle birlikte görüntü listeleri kullanma](using-image-lists-with-header-controls.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

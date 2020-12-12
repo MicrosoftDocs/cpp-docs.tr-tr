@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: double_4 sınıfı'
 title: double_4 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -268,18 +269,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_4::bag
 - amp_short_vectors/Concurrency::graphics::double_4::zwy
 ms.assetid: a81c1595-24c6-4b3f-9574-d5942275e5e8
-ms.openlocfilehash: a9ca413573ebd741ea2a9a813a25ec2679aff5b7
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: bb423c01a048ec8ce78abd79fe16d32635473471
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139351"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325884"
 ---
 # <a name="double_4-class"></a>double_4 Sınıfı
 
 Dört Double 'ın kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class double_4;
@@ -305,10 +306,10 @@ class double_4;
 |----------|-----------------|
 |double_4:: get_w||
 |double_4:: get_wx||
-|double_4::get_wxy||
-|double_4::get_wxyz||
-|double_4::get_wxz||
-|double_4::get_wxzy||
+|double_4:: get_wxy||
+|double_4:: get_wxyz||
+|double_4:: get_wxz||
+|double_4:: get_wxzy||
 |double_4:: get_wy||
 |double_4:: get_wyx||
 |double_4:: get_wyxz||
@@ -337,57 +338,57 @@ class double_4;
 |double_4:: get_xzyw||
 |double_4:: get_y||
 |double_4:: get_yw||
-|double_4::get_ywx||
-|double_4::get_ywxz||
+|double_4:: get_ywx||
+|double_4:: get_ywxz||
 |double_4:: get_ywz||
 |double_4:: get_ywzx||
-|double_4::get_yx||
-|double_4::get_yxw||
-|double_4::get_yxwz||
-|double_4::get_yxz||
-|double_4::get_yxzw||
+|double_4:: get_yx||
+|double_4:: get_yxw||
+|double_4:: get_yxwz||
+|double_4:: get_yxz||
+|double_4:: get_yxzw||
 |double_4:: get_yz||
 |double_4:: get_yzw||
 |double_4:: get_yzwx||
-|double_4::get_yzx||
-|double_4::get_yzxw||
-|double_4::get_z||
+|double_4:: get_yzx||
+|double_4:: get_yzxw||
+|double_4:: get_z||
 |double_4:: get_zw||
 |double_4:: get_zwx||
 |double_4:: get_zwxy||
 |double_4:: get_zwy||
 |double_4:: get_zwyx||
-|double_4::get_zx||
-|double_4::get_zxw||
+|double_4:: get_zx||
+|double_4:: get_zxw||
 |double_4:: get_zxwy||
-|double_4::get_zxy||
-|double_4::get_zxyw||
+|double_4:: get_zxy||
+|double_4:: get_zxyw||
 |double_4:: get_zy||
 |double_4:: get_zyw||
 |double_4:: get_zywx||
 |double_4:: get_zyx||
-|double_4::get_zyxw||
+|double_4:: get_zyxw||
 |double_4:: ref_a||
 |double_4:: ref_b||
 |double_4:: ref_g||
-|double_4::ref_r||
+|double_4:: ref_r||
 |double_4:: ref_w||
-|double_4::ref_x||
+|double_4:: ref_x||
 |double_4:: ref_y||
-|double_4::ref_z||
+|double_4:: ref_z||
 |double_4:: set_w||
-|double_4::set_wx||
+|double_4:: set_wx||
 |double_4:: set_wxy||
-|double_4::set_wxyz||
-|double_4::set_wxz||
-|double_4::set_wxzy||
+|double_4:: set_wxyz||
+|double_4:: set_wxz||
+|double_4:: set_wxzy||
 |double_4:: set_wy||
 |double_4:: set_wyx||
-|double_4::set_wyxz||
+|double_4:: set_wyxz||
 |double_4:: set_wyz||
-|double_4::set_wyzx||
-|double_4::set_wz||
-|double_4::set_wzx||
+|double_4:: set_wyzx||
+|double_4:: set_wz||
+|double_4:: set_wzx||
 |double_4:: set_wzxy||
 |double_4:: set_wzy||
 |double_4:: set_wzyx||
@@ -403,42 +404,42 @@ class double_4;
 |double_4:: set_xyz||
 |double_4:: set_xyzw||
 |double_4:: set_xz||
-|double_4::set_xzw||
-|double_4::set_xzwy||
+|double_4:: set_xzw||
+|double_4:: set_xzwy||
 |double_4:: set_xzy||
-|double_4::set_xzyw||
+|double_4:: set_xzyw||
 |double_4:: set_y||
-|double_4::set_yw||
-|double_4::set_ywx||
-|double_4::set_ywxz||
-|double_4::set_ywz||
-|double_4::set_ywzx||
+|double_4:: set_yw||
+|double_4:: set_ywx||
+|double_4:: set_ywxz||
+|double_4:: set_ywz||
+|double_4:: set_ywzx||
 |double_4:: set_yx||
-|double_4::set_yxw||
-|double_4::set_yxwz||
-|double_4::set_yxz||
-|double_4::set_yxzw||
-|double_4::set_yz||
-|double_4::set_yzw||
-|double_4::set_yzwx||
-|double_4::set_yzx||
-|double_4::set_yzxw||
-|double_4::set_z||
+|double_4:: set_yxw||
+|double_4:: set_yxwz||
+|double_4:: set_yxz||
+|double_4:: set_yxzw||
+|double_4:: set_yz||
+|double_4:: set_yzw||
+|double_4:: set_yzwx||
+|double_4:: set_yzx||
+|double_4:: set_yzxw||
+|double_4:: set_z||
 |double_4:: set_zw||
 |double_4:: set_zwx||
 |double_4:: set_zwxy||
 |double_4:: set_zwy||
 |double_4:: set_zwyx||
-|double_4::set_zx||
-|double_4::set_zxw||
+|double_4:: set_zx||
+|double_4:: set_zxw||
 |double_4:: set_zxwy||
-|double_4::set_zxy||
-|double_4::set_zxyw||
+|double_4:: set_zxy||
+|double_4:: set_zxyw||
 |double_4:: set_zy||
 |double_4:: set_zyw||
 |double_4:: set_zywx||
-|double_4::set_zyx||
-|double_4::set_zyxw||
+|double_4:: set_zyx||
+|double_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -602,7 +603,7 @@ class double_4;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>double_4
+## <a name="double_4"></a><a name="ctor"></a> double_4
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -666,7 +667,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="double_4__size"></a>boyutla
+## <a name="size"></a><a name="double_4__size"></a> boyutla
 
 ```cpp
 static const int size = 4;

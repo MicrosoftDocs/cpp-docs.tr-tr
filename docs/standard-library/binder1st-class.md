@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: binder1st Class'
 title: binder1st Sınıfı
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-ms.openlocfilehash: 15b704134d47b7bf7d8857bf380c756b0b03a1b0
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 1311d598c8300f3bba4d27acdaab879cbd054696
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325511"
 ---
 # <a name="binder1st-class"></a>binder1st Sınıfı
 
@@ -43,24 +44,24 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*binary_fn* \
+*binary_fn*\
 Birli işlev nesnesine dönüştürülecek ikili işlev nesnesi.
 
-*sol* \
+*tarafta*\
 İkili işlev nesnesinin ilk bağımsız değişkeninin bağlanacağı değer.
 
-*sağ* \
+*Right*\
 Uyarbınary nesnesinin, ikinci bağımsız değişkenin sabit değeriyle karşılaştırıldığı bağımsız değişkenin değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İkili işlev nesnesinin ilk bağımsız değişkenini *sol*değere bağlamayı sağlayan birli işlev nesnesi.
+İkili işlev nesnesinin ilk bağımsız değişkenini *sol* değere bağlamayı sağlayan birli işlev nesnesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, `op` bir ikili *işlev nesnesinin bir* kopyasını ve `value` *sol* bir kopyasını depolar. @No__t_1 döndüren `operator()` üye işlevini tanımlar.
+Sınıf şablonu, içinde *binary_fn* ikili işlev nesnesinin bir kopyasını `op` ve içindeki bir kopyasını depolar  `value` . Üye işlevini `operator()` iade olarak tanımlar `op(value, right)` .
 
-*Binary_fn* , `Operation` türünde bir nesnedir ve `c` bir sabittir, `bind1st(binary_fn, c)` `binder1st<Operation>(binary_fn, c)` daha kolay bir eşdeğerdir. Daha fazla bilgi için bkz. [bind1st](../standard-library/functional-functions.md#bind1st).
+*Binary_fn* türünde bir nesnedir `Operation` ve `c` sabittir, `bind1st(binary_fn, c)` daha kolay bir eşdeğerdir `binder1st<Operation>(binary_fn, c)` . Daha fazla bilgi için bkz. [bind1st](../standard-library/functional-functions.md#bind1st).
 
 ## <a name="example"></a>Örnek
 

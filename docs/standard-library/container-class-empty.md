@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kapsayıcı sınıfı:: boş'
 title: Kapsayıcı Sınıfı::empty
 ms.date: 11/04/2016
 helpviewer_keywords:
 - empty method
 ms.assetid: 2055418d-3c42-4d28-a7db-111586119ed9
-ms.openlocfilehash: ee837c058a5a6ed7ca4e8bd55e0b889f3246ee68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cf79c51ba7a6508f45e5f9e9859ddf638794bb17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217824"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324886"
 ---
 # <a name="container-classempty"></a>Kapsayıcı Sınıfı::empty
 
@@ -18,7 +19,7 @@ ms.locfileid: "87217824"
 
 **`true`** Boş denetimli bir sıra için döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 bool empty() const;

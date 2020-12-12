@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlamları'
 title: Bağlamlar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - contexts [Concurrency Runtime]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-ms.openlocfilehash: 7df75ae7c1ac2b1d8c0b73ff1f1e3f2800d559b9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70c97b74afaaa755a85532c7bc08a3a5c5fe3e17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325777"
 ---
 # <a name="contexts"></a>Bağlamlar
 
-Bu belgede Eşzamanlılık Çalışma Zamanı bağlamların rolü açıklanmaktadır. Bir Scheduler 'a bağlı olan iş parçacığı, *yürütme bağlamı*veya yalnızca *bağlam*olarak bilinir. [Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) işlevi ve concurrency::[Context sınıfı](../../parallel/concrt/reference/context-class.md) , bağlamların davranışını denetlemenize olanak tanır. `wait`Geçerli bağlamı belirli bir süre askıya almak için işlevini kullanın. `Context`Bağlamlar engellenme, engellemeyi kaldırma, ve yield işlemleri sırasında daha fazla denetime ihtiyacınız olduğunda ya da geçerli bağlamın üzerine fazla abone olmak istediğinizde, sınıfını kullanın.
+Bu belgede Eşzamanlılık Çalışma Zamanı bağlamların rolü açıklanmaktadır. Bir Scheduler 'a bağlı olan iş parçacığı, *yürütme bağlamı* veya yalnızca *bağlam* olarak bilinir. [Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) işlevi ve concurrency::[Context sınıfı](../../parallel/concrt/reference/context-class.md) , bağlamların davranışını denetlemenize olanak tanır. `wait`Geçerli bağlamı belirli bir süre askıya almak için işlevini kullanın. `Context`Bağlamlar engellenme, engellemeyi kaldırma, ve yield işlemleri sırasında daha fazla denetime ihtiyacınız olduğunda ya da geçerli bağlamın üzerine fazla abone olmak istediğinizde, sınıfını kullanın.
 
 > [!TIP]
 > Eşzamanlılık Çalışma Zamanı varsayılan bir Zamanlayıcı sağlar ve bu nedenle uygulamanızda bir tane oluşturmanız gerekmez. Görev Zamanlayıcı uygulamalarınızın performansını hassas bir şekilde ayarlamanıza yardımcı olduğundan, Eşzamanlılık Çalışma Zamanı yeni başladıysanız [paralel Desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) ile başlamanız önerilir.
@@ -40,7 +41,7 @@ Concurrency::[Context sınıfı](../../parallel/concrt/reference/context-class.m
 
 Bir bağlamı birlikte engellemek ve engelini kaldırmak için genellikle [eşzamanlılık:: Context:: CurrentContext](reference/context-class.md#currentcontext) ' i çağırıp `Context` geçerli iş parçacığıyla ilişkili nesneye yönelik bir işaretçi alır ve sonucu kaydeder. Ardından, `Context::Block` geçerli bağlamı engellemek için yöntemini çağırabilirsiniz. Daha sonra, `Context::Unblock` Engellenen bağlamın engelini kaldırmak için ayrı bir bağlamdan çağırın.
 
-Her bir çağrı çiftini ve ile eşleştirmelidir `Context::Block` `Context::Unblock` . Çalışma zamanı, [concurrency::context_unblock_unbalanced](../../parallel/concrt/reference/context-unblock-unbalanced-class.md) `Context::Block` veya `Context::Unblock` yöntemi diğer yönteme eşleşen bir çağrı olmadan arka arkaya çağrıldığında eşzamanlılık:: context_unblock_unbalanced oluşturur. Ancak, çağrısından önce ' yi çağırmanız gerekmez `Context::Block` `Context::Unblock` . Örneğin, bir bağlam `Context::Unblock` aynı bağlam için başka bir bağlam çağrısı yapmadan önce çağırırsa `Context::Block` , bu bağlam engellenmemiş olarak kalır.
+Her bir çağrı çiftini ve ile eşleştirmelidir `Context::Block` `Context::Unblock` . Çalışma zamanı, [](../../parallel/concrt/reference/context-unblock-unbalanced-class.md) `Context::Block` veya `Context::Unblock` yöntemi diğer yönteme eşleşen bir çağrı olmadan arka arkaya çağrıldığında eşzamanlılık:: context_unblock_unbalanced oluşturur. Ancak, çağrısından önce ' yi çağırmanız gerekmez `Context::Block` `Context::Unblock` . Örneğin, bir bağlam `Context::Unblock` aynı bağlam için başka bir bağlam çağrısı yapmadan önce çağırırsa `Context::Block` , bu bağlam engellenmemiş olarak kalır.
 
 [Concurrency:: Context:: yield](reference/context-class.md#yield) yöntemi, çalışma zamanının diğer görevleri gerçekleştirebilmesi ve sonra yürütme bağlamını yeniden zamanlayabilmesi için yürütmeyi verir. `Context::Block`Yöntemini çağırdığınızda, çalışma zamanı bağlamı yeniden zamanlamaz.
 

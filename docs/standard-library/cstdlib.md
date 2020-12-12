@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; cstdlib&gt;'
 title: '&lt;cstdlib&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - cstdlib header
 ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
-ms.openlocfilehash: 1b20e13a43c5d223332af70a91e096cedc284a43
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8ab3ecc7a2db1d1cf90c69230c34a301587fc1e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324728"
 ---
 # <a name="ltcstdlibgt"></a>&lt;cstdlib&gt;
 
 C standart kitaplığı üst bilgisini içerir \<stdlib.h> ve ilgili adları `std` ad alanına ekler. Bu üst bilgiyi dahil etmek, C standart kitaplığı üstbilgisinde harici bağlantı kullanılarak belirtilen adların `std` ad alanında bildirilmesini sağlar.
 
 > [!NOTE]
-> \<stdlib.h>türü içermez **`wchar_t`** .
+> \<stdlib.h> türü içermez **`wchar_t`** .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**:\<cstdlib>
+**Üst bilgi**: \<cstdlib>
 
 **Ad alanı:** std
 
@@ -65,7 +66,7 @@ extern "C++" using compare-pred = int(const void*, const void*);
 |[getenv](#getenv)|Bkz. C standart kitaplık başvurusu.|
 |[sistem](#system)|Bkz. C standart kitaplık başvurusu.|
 
-### <a name="_exit"></a><a name="_exit"></a>_Exit
+### <a name="_exit"></a><a name="_exit"></a> _Exit
 
 ```cpp
 [[noreturn]] void _Exit(int status) noexcept;
@@ -75,7 +76,7 @@ extern "C++" using compare-pred = int(const void*, const void*);
 
 Program, otomatik, iş parçacığı veya statik depolama süresi nesneleri için yok ediciler yürütmeden ve geçirilen işlevleri çağırmadan sonlandırılır `atexit()` . İşlev, `_Exit` sinyal açısından güvenlidir.
 
-### <a name="abort"></a><a name="abort"></a>durdurulmaya
+### <a name="abort"></a><a name="abort"></a> durdurulmaya
 
 ```cpp
 [[noreturn]] void abort() noexcept;
@@ -85,7 +86,7 @@ Program, otomatik, iş parçacığı veya statik depolama süresi nesneleri içi
 
 Program, otomatik, iş parçacığı veya statik depolama süresi nesneleri için yok ediciler yürütmeden ve geçirilen işlevleri çağırmadan sonlandırılır `atexit()` . İşlev, `abort` sinyal açısından güvenlidir.
 
-### <a name="at_quick_exit"></a><a name="at_quick_exit"></a>at_quick_exit
+### <a name="at_quick_exit"></a><a name="at_quick_exit"></a> at_quick_exit
 
 ```cpp
 int at_quick_exit(c-atexit-handler * func) noexcept;
@@ -98,9 +99,9 @@ Kayıt başarılı olursa sıfır olmayan, sıfır olmayan bir.
 
 #### <a name="remarks"></a>Açıklamalar
 
-`at_quick_exit()`İşlevler, çağrıldığında bağımsız değişken olmadan çağrılan işlev *Func*işlevini kaydeder `quick_exit` . ' A yapılan `at_quick_exit()` çağrılar başarısız olmadan önce `quick_exit` gerçekleşmeyecek bir çağrı başarısız olur. `at_quick_exit()`İşlevler bir veri yarış 'i sunmaz. Birden `at_quick_exit` fazla iş parçacığından çağrıldıysa kayıt sırası belirsiz olabilir. `at_quick_exit`Kayıtlar kayıtlardan farklı olduğundan `atexit` , uygulamaların aynı bağımsız değişkeni kullanarak her iki kayıt işlevini çağırması gerekebilir. MSVC, en az 32 işlev kaydını destekler.
+`at_quick_exit()`İşlevler, çağrıldığında bağımsız değişken olmadan çağrılan işlev *Func* işlevini kaydeder `quick_exit` . ' A yapılan `at_quick_exit()` çağrılar başarısız olmadan önce `quick_exit` gerçekleşmeyecek bir çağrı başarısız olur. `at_quick_exit()`İşlevler bir veri yarış 'i sunmaz. Birden `at_quick_exit` fazla iş parçacığından çağrıldıysa kayıt sırası belirsiz olabilir. `at_quick_exit`Kayıtlar kayıtlardan farklı olduğundan `atexit` , uygulamaların aynı bağımsız değişkeni kullanarak her iki kayıt işlevini çağırması gerekebilir. MSVC, en az 32 işlev kaydını destekler.
 
-### <a name="atexit"></a><a name="atexit"></a>atexit
+### <a name="atexit"></a><a name="atexit"></a> atexit
 
 ```cpp
 int atexit(c-atexit-handler * func) noexcept;
@@ -115,7 +116,7 @@ int atexit(atexit-handler * func) noexcept;
 
 Kayıt başarılı olduğunda sıfır, başarısız olursa sıfır değerini döndürür.
 
-### <a name="exit"></a><a name="exit"></a>çıkıp
+### <a name="exit"></a><a name="exit"></a> çıkıp
 
 ```cpp
 [[noreturn]] void exit(int status);
@@ -131,13 +132,13 @@ Daha sonra, tüm açık C akışları (' de belirtilen işlev imzaları tarafın
 
 Son olarak, denetim konak ortamına döndürülür. *Durum* sıfır veya EXIT_SUCCESS olduğunda, başarıyla sonlandırma durumunun uygulama tanımlı bir formu döndürülür. MSVC değeri 0 döndürür. *Durum* EXIT_FAILURE Ise, MSVC 3 değerini döndürür. Aksi takdirde, MSVC *durum* parametre değerini döndürür.
 
-### <a name="getenv"></a><a name="getenv"></a>getenv
+### <a name="getenv"></a><a name="getenv"></a> getenv
 
 ```cpp
 char* getenv(const char* name);
 ```
 
-### <a name="quick_exit"></a><a name="quick_exit"></a>quick_exit
+### <a name="quick_exit"></a><a name="quick_exit"></a> quick_exit
 
 ```cpp
 [[noreturn]] void quick_exit(int status) noexcept;
@@ -147,7 +148,7 @@ char* getenv(const char* name);
 
 Genellikle, çağrıları tarafından kaydedilen işlevler `at_quick_exit` kayıtlarının ters sırasına göre çağırılır. Bu sipariş, diğer kayıtlı işlevler zaten çağrıldıktan sonra kayıtlı işlevlere uygulanmaz. Çağrıldığında hiçbir nesne yok edilmez `quick_exit` . Eğer denetim `quick_exit` , oluşturulan bir özel durum için bir işleyici sağlamadığından, denetimi tarafından çağrılan kayıtlı bir işlevi bırakırsa, `std::terminate()` çağrılır. Aracılığıyla kaydedilen bir işlev, `at_quick_exit` öğesini çağıran iş parçacığı tarafından çağrılır `quick_exit` ve bu, kaydolenden farklı bir iş parçacığı olabilir. Bu, kayıtlı işlevlerin iş parçacığı depolama süresi olan nesnelerin kimliğine dayanmaması anlamına gelir. Kayıtlı işlevleri çağırdıktan sonra `quick_exit` çağrılar `_Exit(status)` . Standart dosya arabellekleri boşaltılamadı. `quick_exit`İle kaydedilen işlevler olduğunda, işlevi sinyal güvenlidir `at_quick_exit` .
 
-### <a name="system"></a><a name="system"></a>sistemin
+### <a name="system"></a><a name="system"></a> sistemin
 
 ```cpp
 int system(const char* string);

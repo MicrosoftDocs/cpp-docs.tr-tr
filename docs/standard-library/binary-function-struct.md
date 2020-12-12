@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: binary_function struct'
 title: binary_function Yapısı
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - binary_function class
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
-ms.openlocfilehash: acbcb7496b7e6b37af61c5eb7a113c77855e6928
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 3a38579cc5026903dc7c3b7743afd81773b895b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243397"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325551"
 ---
-# <a name="binaryfunction-struct"></a>binary_function Yapısı
+# <a name="binary_function-struct"></a>binary_function Yapısı
 
-Bir ikili bir işlev nesnesi sağlayan türetilen sınıfları tarafından devralındığından türlerini tanımlayan boş bir temel yapı. C ++ 17 sürümünde kaldırılmıştır C ++ 11'de kullanım dışı.
+Bir ikili işlev nesnesi sağlayan türetilmiş sınıflar tarafından devralınabilir olabilecek türleri tanımlayan boş bir temel yapı. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct binary_function {
@@ -29,11 +30,11 @@ struct binary_function {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapı biçiminde bir üye işlevi tanımlayan sınıflar için temel olarak hizmet eder:
+Şablon yapısı, formun üye işlevini tanımlayan sınıflar için temel görevi görür:
 
-> *result_type* ** operator() (const ** <em>first_argument_type</em> **&, const** <em>second_argument_type</em> **&) const**
+> *result_type* * * operator () (const * * <em>first_argument_type</em> **&, const** <em>second_argument_type</em> **&) const**
 
-İkili tüm bu işlevler, ilk bağımsız değişken türü başvurabilir *first_argument_type*, tür, ikinci bağımsız değişkeni olarak *second_argument_type*ve kendi dönüş türü olarak *result_type* .
+Bu tür tüm ikili işlevler, ilk bağımsız değişken türüne *first_argument_type*, ikinci bağımsız değişken türü *second_argument_type* olarak ve dönüş türü *result_type* olarak başvurabilir.
 
 ## <a name="example"></a>Örnek
 

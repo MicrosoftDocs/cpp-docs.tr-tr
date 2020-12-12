@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: binary_negate sınıfı'
 title: binary_negate Sınıfı
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - binary_negate class
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-ms.openlocfilehash: 01396384cbd551cca5682c7ffd1b31d89e6d1dc2
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: f97b1ec31623ece91c76b1195c87f75e8cdfd2eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688394"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325538"
 ---
 # <a name="binary_negate-class"></a>binary_negate Sınıfı
 
-Belirtilen bir ikili işlevin dönüş değerini geçersiz hale getirmeden bir üye işlevi sağlayan bir sınıf şablonu. [Not_fn](functional-functions.md#not_fn)için c++ 17 ' de kullanım dışı bırakılmıştır.
+Belirtilen bir ikili işlevin dönüş değerini geçersiz hale getirmeden bir üye işlevi sağlayan bir sınıf şablonu. [Not_fn](functional-functions.md#not_fn)yerine c++ 17 ' de kullanım dışı bırakılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,13 +34,13 @@ class binary_negate
 
 ### <a name="parameters"></a>Parametreler
 
-*Func* \
+*Melerinin*\
 Değillenmiş ikili işlev.
 
-*sol* \
+*tarafta*\
 İç içe yapılacak ikili işlevin sol işleneni.
 
-*sağ* \
+*Right*\
 İç içe yapılacak ikili işlevin sağ işleneni.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -48,9 +49,9 @@ Değillenmiş ikili işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, bir ikili işlev nesnesi *Func*öğesinin bir kopyasını depolar. @No__t_1 döndüren `operator()` üye işlevini tanımlar.
+Sınıf şablonu, bir ikili işlev nesnesi *Func* öğesinin bir kopyasını depolar. Üye işlevini `operator()` iade olarak tanımlar `!Func(left, right)` .
 
-@No__t_0 Oluşturucusu nadiren doğrudan kullanılır. [NOT2](../standard-library/functional-functions.md#not2) yardımcı işlevi, genellikle **binary_negator** bağdaştırıcı koşulunu bildirmek ve kullanmak için tercih edilir.
+Oluşturucusu `binary_negate` nadiren doğrudan kullanılır. [NOT2](../standard-library/functional-functions.md#not2) yardımcı işlevi, genellikle **binary_negator** bağdaştırıcı koşulunu bildirmek ve kullanmak için tercih edilir.
 
 ## <a name="example"></a>Örnek
 
