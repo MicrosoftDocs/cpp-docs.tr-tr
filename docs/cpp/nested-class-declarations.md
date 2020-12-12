@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Iç Içe sınıf bildirimleri'
 title: İç İçe Geçmiş Sınıf Bildirimleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - declaring classes [C++]
 - declarations, nested classes
 ms.assetid: c02e471d-b7f9-41b8-8ef6-2323f006dbd5
-ms.openlocfilehash: 672156e65e223be45c91558ed91065859566a8b9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8247a969be59cb35752f141ea281a271de24f87b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313690"
 ---
 # <a name="nested-class-declarations"></a>İç İçe Geçmiş Sınıf Bildirimleri
 
@@ -54,7 +55,7 @@ int main()
 }
 ```
 
-`BufferedIO::BufferedInput`ve `BufferedIO::BufferedOutput` içinde bildirilmiştir `BufferedIO` . Bu sınıf adları, sınıfının kapsamı dışında görünür değildir `BufferedIO` . Ancak, türünde bir nesne, `BufferedIO` ya da tür nesneleri içermez `BufferedInput` `BufferedOutput` .
+`BufferedIO::BufferedInput` ve `BufferedIO::BufferedOutput` içinde bildirilmiştir `BufferedIO` . Bu sınıf adları, sınıfının kapsamı dışında görünür değildir `BufferedIO` . Ancak, türünde bir nesne, `BufferedIO` ya da tür nesneleri içermez `BufferedInput` `BufferedOutput` .
 
 İç içe geçmiş sınıflar adları, tür adlarını, statik üyelerin adlarını ve yalnızca kapsayan sınıftan bulunan numaralandırıcıları doğrudan kullanabilir. Diğer sınıf üyelerinin adlarını kullanmak için işaretçiler, başvurular veya nesne adları kullanmanız gerekir.
 
@@ -63,7 +64,7 @@ int main()
 > [!NOTE]
 > İç içe sınıflar yalnızca sınıf kapsamı içindeki türleri bildirir. İç içe yerleştirilmiş sınıfın içerilen nesnelerinin oluşturulmasına neden olmaz. Yukarıdaki örnek, iki iç içe sınıf bildirir ancak bu sınıf türlerindeki herhangi bir nesne bildirmiyor.
 
-Bir iç içe sınıf bildiriminin kapsam görünürlüğü için bir özel durum, bir tür adının bir iletme bildirimiyle birlikte bildirildiği durumdur.  Bu durumda, iletme bildirimi tarafından belirtilen sınıf adı kapsayan sınıfın dışında görünür ve kapsamı, en küçük kapsayan sınıf olmayan kapsam olarak tanımlanır.  Örnek:
+Bir iç içe sınıf bildiriminin kapsam görünürlüğü için bir özel durum, bir tür adının bir iletme bildirimiyle birlikte bildirildiği durumdur.  Bu durumda, iletme bildirimi tarafından belirtilen sınıf adı kapsayan sınıfın dışında görünür ve kapsamı, en küçük kapsayan sınıf olmayan kapsam olarak tanımlanır.  Örneğin:
 
 ```cpp
 // nested_class_declarations_2.cpp
@@ -208,4 +209,4 @@ int GetExtendedErrorStatus( char *message )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)
+[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

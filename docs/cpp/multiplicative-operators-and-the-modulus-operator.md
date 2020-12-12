@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Çoğulereptive Işleçleri ve mod Işleci'
 title: Çarpan İşleçleri ve Modulus İşleci
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - multiplicative operators [C++]
 - division operator
 ms.assetid: b53ea5da-d0b4-40dc-98f3-0aa52d548293
-ms.openlocfilehash: c277c93640201de69a4cb29060bc5191aa91629c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e3e3e3823abb255922bf31be90b4a116fb100efe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313872"
 ---
 # <a name="multiplicative-operators-and-the-modulus-operator"></a>Çarpan İşleçleri ve Modulus İşleci
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 expression * expression
@@ -72,7 +73,7 @@ Microsoft C++'da, bir mod ifadesinin sonucu her zaman birinci işlenenin işaret
 
 Hesaplanan iki tamsayı bölümünü kesin değilse ve yalnızca tek bir işlenen negatif ise, sonuç bölme işleminin vereceği tam değerden daha küçük en büyük tamsayı (büyüklükte, işaret dikkate alınmadığında) olur. Örneğin,-11/3 hesaplanan değeri-3,666666666 ' dir. Bu integral bölümünün sonucu-3 ' tir.
 
-Çarpma işleçleri arasındaki ilişki kimlik (*E1*  /  *E2*) \* *E2*  +  *E1*  %  *E2*  ==  *E1*tarafından verilir.
+Çarpma işleçleri arasındaki ilişki kimlik (*E1*  /  *E2*) \* *E2*  +  *E1*  %  *E2*  ==  *E1* tarafından verilir.
 
 ## <a name="example"></a>Örnek
 

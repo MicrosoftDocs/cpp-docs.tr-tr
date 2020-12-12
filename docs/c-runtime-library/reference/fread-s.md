@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: fread_s'
 title: fread_s
 ms.date: 4/2/2020
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 - fread_s
 - stdio/fread_s
 ms.assetid: ce735de0-f005-435d-a8f2-6f4b80ac775e
-ms.openlocfilehash: 340d8188deb34166b1bea58cfc4fe7985cdc5e05
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 311184fc871e138675e2447b3f3ccdf2f7529325
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314080"
 ---
 # <a name="fread_s"></a>fread_s
 
@@ -73,9 +74,9 @@ Hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errl
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fread_s** işlevi, giriş *akışından* *ElementSize* bayt öğelerinin *sayısını saymak* ve *arabelleğe*kaydeder.  *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten okunan bayt sayısıyla artırılır. Verilen akış metin modunda açılırsa, satır başı satır besleme çiftleri tek satırlık akış karakterleriyle değiştirilmiştir. Değiştirme işleminin dosya işaretçisi veya dönüş değeri üzerinde hiçbir etkisi yoktur. Bir hata oluşursa dosya işaretçisi konumu belirsiz olur. Kısmen okunan öğenin değeri belirlenemiyor.
+**Fread_s** işlevi, giriş *akışından* *ElementSize* bayt öğelerinin *sayısını saymak* ve *arabelleğe* kaydeder.  *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten okunan bayt sayısıyla artırılır. Verilen akış metin modunda açılırsa, satır başı satır besleme çiftleri tek satırlık akış karakterleriyle değiştirilmiştir. Değiştirme işleminin dosya işaretçisi veya dönüş değeri üzerinde hiçbir etkisi yoktur. Bir hata oluşursa dosya işaretçisi konumu belirsiz olur. Kısmen okunan öğenin değeri belirlenemiyor.
 
-Bu işlev diğer iş parçacıklarını kilitler. Kilitleme dışı bir sürüm gerekliyse **_fread_nolock**kullanın.
+Bu işlev diğer iş parçacıklarını kilitler. Kilitleme dışı bir sürüm gerekliyse **_fread_nolock** kullanın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -83,7 +84,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fread_s**|\<stdio. h>|
+|**fread_s**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -156,6 +157,6 @@ Contents of buffer after write/read:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

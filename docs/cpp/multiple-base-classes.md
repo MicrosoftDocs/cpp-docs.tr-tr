@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: birden çok temel sınıf'
 title: Birden Çok Taban Sınıfı
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - multiple inheritance, class declaration
 - multiple base classes [C++]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
-ms.openlocfilehash: 0e663f33213a5fd57f2adbdcc53233c6af29954e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6e9e839e5906fba4a45e4e2edd4965817816a298
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227380"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314106"
 ---
 # <a name="multiple-base-classes"></a>Birden Çok Taban Sınıfı
 
@@ -31,14 +32,14 @@ class CollectionOfBook : public Book, public Collection {
 
 Temel sınıfların belirtilme sırası, oluşturucuların ve yıkıcıların çağrıldığı belirli durumlar haricinde önemli değildir. Bu durumlarda, temel sınıfların belirtilme sırası aşağıdakileri etkiler:
 
-- Oluşturucunun başlatılma sırası gerçekleşir. Kodunuz `Book` `CollectionOfBook` bölümden önce başlatılacak olan bölümünü kullanıyorsa `Collection` Belirtim sırası önemlidir. Başlatma, sınıfların *taban listede*belirtilene göre gerçekleşir.
+- Oluşturucunun başlatılma sırası gerçekleşir. Kodunuz `Book` `CollectionOfBook` bölümden önce başlatılacak olan bölümünü kullanıyorsa `Collection` Belirtim sırası önemlidir. Başlatma, sınıfların *taban listede* belirtilene göre gerçekleşir.
 
-- Yok edicilerin temizlemek için çağrıldığı sıra. Daha sonra, başka bir bölüm yok edildiğinde sınıfın belirli bir "bölümü" mevcut olması gerekiyorsa, sıralama önemlidir. Yok ediciler, *taban listesinde*belirtilen sınıfların ters sırasıyla çağrılır.
+- Yok edicilerin temizlemek için çağrıldığı sıra. Daha sonra, başka bir bölüm yok edildiğinde sınıfın belirli bir "bölümü" mevcut olması gerekiyorsa, sıralama önemlidir. Yok ediciler, *taban listesinde* belirtilen sınıfların ters sırasıyla çağrılır.
 
     > [!NOTE]
     >  Temel sınıfların belirtim sırası, sınıfının bellek düzenini etkileyebilir. Bellekteki temel üyelerin sırasına göre programlama kararları vermeyin.
 
-*Taban listesini*belirtirken, aynı sınıf adını birden çok kez belirtemezsiniz. Ancak, bir sınıfın türetilmiş bir sınıf için bir kereden fazla dolaylı temel olması mümkündür.
+*Taban listesini* belirtirken, aynı sınıf adını birden çok kez belirtemezsiniz. Ancak, bir sınıfın türetilmiş bir sınıf için bir kereden fazla dolaylı temel olması mümkündür.
 
 ## <a name="virtual-base-classes"></a>Sanal temel sınıflar
 

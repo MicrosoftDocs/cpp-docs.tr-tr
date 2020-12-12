@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fputc, fputwc'
 title: fputc, fputwc
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - fputwc function
 - fputc function
 ms.assetid: 5a0a593d-43f4-4fa2-a401-ec4e23de4d2f
-ms.openlocfilehash: 90091bff6a8ee3ced050c359ed540f45afe74f6b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 85958ce10bd70a13d246be70890d552b7ffdcd3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910203"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314188"
 ---
 # <a name="fputc-fputwc"></a>fputc, fputwc
 
@@ -68,13 +69,13 @@ Yazılacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri yazılan karakteri döndürür. **Fputc**Için, **EOF** dönüş değeri bir hatayı gösterir. **Fputwc**Için, **weof** 'ın dönüş değeri bir hatayı gösterir. *Stream* **null**Ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevlerin her biri yazılan karakteri döndürür. **Fputc** Için, **EOF** dönüş değeri bir hatayı gösterir. **Fputwc** Için, **weof** 'ın dönüş değeri bir hatayı gösterir. *Stream* **null** Ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **EOF** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, tek bir *c* karakterini ilişkili dosya konumu göstergesi (tanımlanmışsa) tarafından belirtilen konumdaki bir dosyaya yazar ve göstergeyi uygun şekilde ilerletir. **Fputc** ve **fputwc**durumunda, dosya *Stream*ile ilişkilendirilir. Dosya konumlandırma isteklerini desteklemez veya ekleme modunda açıldıysa, karakter akışın sonuna eklenir.
+Bu işlevlerin her biri, tek bir *c* karakterini ilişkili dosya konumu göstergesi (tanımlanmışsa) tarafından belirtilen konumdaki bir dosyaya yazar ve göstergeyi uygun şekilde ilerletir. **Fputc** ve **fputwc** durumunda, dosya *Stream* ile ilişkilendirilir. Dosya konumlandırma isteklerini desteklemez veya ekleme modunda açıldıysa, karakter akışın sonuna eklenir.
 
 Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **fputc** Şu anda bir UNICODE akışına çıktıyı desteklemiyor.
 
@@ -84,7 +85,7 @@ Rutin olarak özgü notlar izler.
 
 |Yordam|Açıklamalar|
 |-------------|-------------|
-|**fputc**|**Putc**ile eşdeğerdir, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır.|
+|**fputc**|**Putc** ile eşdeğerdir, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır.|
 |**fputwc**|**Fputc**'nin geniş karakterli sürümü. *Akış* metin modunda veya ikili modda açılıp açılmayacağı için çok baytlı bir karakter veya geniş karakter olarak *c* yazar.|
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
@@ -99,10 +100,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fputc**|\<stdio. h>|
-|**fputwc**|\<stdio. h> veya \<wchar. h>|
+|**fputc**|\<stdio.h>|
+|**fputwc**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout**ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout** ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -131,6 +132,6 @@ This is a test of fputc!!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

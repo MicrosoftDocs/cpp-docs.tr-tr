@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: freopen_s _wfreopen_s'
 title: freopen_s, _wfreopen_s
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - wfreopen_s function
 - freopen_s function
 ms.assetid: ad25a4da-6ad4-476b-a86d-660b221ca84d
-ms.openlocfilehash: 9ccd2f52f8d746c3e555c9ad04fc6ae07c53a665
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cbb10582128073501433a1a12c59e195bec011d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314015"
 ---
 # <a name="freopen_s-_wfreopen_s"></a>freopen_s, _wfreopen_s
 
@@ -83,9 +84,9 @@ Bu işlevlerin her biri bir hata kodu döndürür. Bir hata oluşursa, özgün d
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Freopen_s** işlevi, *Stream* ile ilişkili olan dosyayı kapatır ve Stream ile belirtilen dosyanın *akışını* yeniden *atar.* **_wfreopen_s** , **_freopen_s**geniş karakterli bir sürümüdür; _wfreopen_s *yol* ve *mod* bağımsız değişkenleri **_wfreopen_s** geniş karakterli dizelerdir. **_wfreopen_s** ve **_freopen_s** aynı şekilde davranır.
+**Freopen_s** işlevi, *Stream* ile ilişkili olan dosyayı kapatır ve Stream ile belirtilen dosyanın *akışını* yeniden *atar.* **_wfreopen_s** , **_freopen_s** geniş karakterli bir sürümüdür; _wfreopen_s *yol* ve *mod* bağımsız değişkenleri  geniş karakterli dizelerdir. **_wfreopen_s** ve **_freopen_s** aynı şekilde davranır.
 
-*Pfıle*, *Path*, *Mode*veya *Stream* herhangi biri **null**Ise veya *yol* boş bir dize ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
+*Pfıle*, *Path*, *Mode* veya *Stream* herhangi biri **null** Ise veya *yol* boş bir dize ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL** döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -95,9 +96,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tfreopen_s**|**freopen_s**|**freopen_s**|**_wfreopen_s**|
 
-**freopen_s** , genellikle, önceden açılan dosyaları **stdin**, **stdout**ve **stderr** 'i Kullanıcı tarafından belirtilen dosyalara yönlendirmek için kullanılır. *Stream* ile ilişkili yeni dosya, dosya için istenen erişimin türünü belirten, aşağıdaki gibi bir karakter dizesi olan *moduyla*açılır:
+**freopen_s** , genellikle, önceden açılan dosyaları **stdin**, **stdout** ve **stderr** 'i Kullanıcı tarafından belirtilen dosyalara yönlendirmek için kullanılır. *Stream* ile ilişkili yeni dosya, dosya için istenen erişimin türünü belirten, aşağıdaki gibi bir karakter dizesi olan *moduyla* açılır:
 
-|*modundaysa*|Erişim|
+|*modundaysa*|Access|
 |-|-|
 | **sağ** | Okuma için açılır. Dosya yoksa veya bulunamıyorsa, **freopen_s** çağrısı başarısız olur. |
 | **anlatımı** | Yazma için boş bir dosya açar. Verilen dosya varsa, içeriği yok edilir. |
@@ -121,7 +122,7 @@ Bir dosya, **"a"** veya **"a +"** erişim türüyle açıldığında, dosyanın 
 
 Metin (çevrilmiş) modunda, satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık akış (LF) karakterlerine çevrilir; LF karakterleri çıkışındaki CR-LF birleşimlerine çevrilir. Ayrıca CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. **"A +"** ile yazma ve okuma için açılan dosyalarda, çalışma zamanı kitaplığı dosyanın sonunda bir CTRL + Z 'yi denetler ve mümkünse onu kaldırır. Bu, bir dosya içinde geçiş yapmak için [fseek](fseek-fseeki64.md) ve [fsöyleyin](ftell-ftelli64.md) kullanmanın, [fseek](fseek-fseeki64.md) dosyasının sonuna doğru şekilde davranmasına neden olabileceği için yapılır. **T** SEÇENEĞI, ANSI taşınabilirliği istendiği yerde kullanılması gereken bir Microsoft uzantısıdır.
 
-**T** veya **b** *modda*verilmezse, varsayılan çeviri modu [_fmode](../../c-runtime-library/fmode.md)genel değişken tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve **null**değerini döndürür.
+**T** veya **b** *modda* verilmezse, varsayılan çeviri modu [_fmode](../../c-runtime-library/fmode.md)genel değişken tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve **null** değerini döndürür.
 
 Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
@@ -129,10 +130,10 @@ Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyas
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**freopen_s**|\<stdio. h>|
-|**_wfreopen_s**|\<stdio. h> veya \<wchar. h>|
+|**freopen_s**|\<stdio.h>|
+|**_wfreopen_s**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -171,7 +172,7 @@ This will go to the file 'freopen.out'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [freopen, _wfreopen](freopen-wfreopen.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>

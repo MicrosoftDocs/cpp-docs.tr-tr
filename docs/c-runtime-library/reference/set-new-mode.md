@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_new_mode'
 title: _set_new_mode
 ms.date: 4/2/2020
 api_name:
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - _set_new_mode function
 - set_new_mode function
 ms.assetid: 4d14039a-e54e-4689-8c70-74a4b9834768
-ms.openlocfilehash: aa21854f6a8c4b58a510b16e824449a53b91f329
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 233ab9cd4c74eaeb413d7c299620c29a52c41298
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314002"
 ---
 # <a name="_set_new_mode"></a>_set_new_mode
 
-**Malloc**için yeni bir işleyici modu ayarlar.
+**Malloc** için yeni bir işleyici modu ayarlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 int _set_new_mode( int newhandlermode );
@@ -49,11 +50,11 @@ int _set_new_mode( int newhandlermode );
 ### <a name="parameters"></a>Parametreler
 
 *newhandlermode*<br/>
-**Malloc**için yeni işleyici modu; geçerli değer 0 veya 1 ' dir.
+**Malloc** için yeni işleyici modu; geçerli değer 0 veya 1 ' dir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Malloc**için ayarlanan önceki işleyici modunu döndürür. 1 dönüş değeri, daha önce yeni işleyici yordamı olarak adlandırılan **malloc** , bellek ayırma hatası durumunda olduğunu gösterir; 0 dönüş değeri olmadığını gösterir. *Newhandlermode* bağımsız değişkeni 0 veya 1 değerine eşit değilse,-1 döndürür.
+**Malloc** için ayarlanan önceki işleyici modunu döndürür. 1 dönüş değeri, daha önce yeni işleyici yordamı olarak adlandırılan **malloc** , bellek ayırma hatası durumunda olduğunu gösterir; 0 dönüş değeri olmadığını gösterir. *Newhandlermode* bağımsız değişkeni 0 veya 1 değerine eşit değilse,-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 

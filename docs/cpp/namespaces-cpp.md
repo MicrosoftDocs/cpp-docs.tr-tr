@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ad alanları (C++)'
 title: Ad Alanları (C++)
 ms.date: 08/30/2017
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - namespaces [C++]
 ms.assetid: d1a5a9ab-1cad-47e6-a82d-385bb77f4188
-ms.openlocfilehash: 234df334a8c385859440175cb9a1aab5b2e26ead
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5a655b5e772d16df34e64c5e4808ce68de64f49f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313768"
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
 
@@ -58,7 +59,7 @@ mgr.DoSomething();
 Func(mgr);
 ```
 
-## <a name="using-directives"></a><a id="using_directives"></a>using yönergeleri
+## <a name="using-directives"></a><a id="using_directives"></a> using yönergeleri
 
 **`using`** Yönergesi, içindeki tüm adların **`namespace`** açık bir niteleyici olarak *ad alanı adı* olmadan kullanılmasına izin verir. Bir ad alanında birkaç farklı tanımlayıcı kullanıyorsanız, uygulama dosyasında (ör. *. cpp) bir using yönergesi kullanın; yalnızca bir veya iki tanımlayıcı kullanıyorsanız, bu tanımlayıcıları yalnızca kapsama getirmek için bir using bildirimi düşünün ve ad alanındaki tanımlayıcıların tümünü değil. Yerel bir değişken adı ad alanı değişkeniyle aynı ada sahipse, ad alanı değişkeni gizlenir. Genel bir değişken olarak aynı ada sahip ad alanı değişkeninin bulundurulması bir hatadır.
 
@@ -98,7 +99,7 @@ int ContosoDataServer::Bar(){return 0;}
 
 Bir ad alanı, tek bir dosyada ve birden çok dosyada birden çok blok halinde bildirilebilecek. Derleyici, ön işleme sırasında parçaları birleştirir ve sonuçta elde edilen ad alanı tüm parçalar içinde belirtilen tüm üyeleri içerir. Standart Kitaplığı 'ndaki üst bilgi dosyalarında belirtilen std ad alanı buna bir örnektir.
 
-Adlandırılmış bir ad alanının üyeleri, tanımlanmakta olan adın açık nitelikle bildirildiği ad alanı dışında tanımlanabilir. Ancak, tanım, bildirimin ad alanını içeren bir ad alanındaki bildirimin öğesinden sonra gelmelidir. Örnek:
+Adlandırılmış bir ad alanının üyeleri, tanımlanmakta olan adın açık nitelikle bildirildiği ad alanı dışında tanımlanabilir. Ancak, tanım, bildirimin ad alanını içeren bir ad alanındaki bildirimin öğesinden sonra gelmelidir. Örneğin:
 
 ```cpp
 // defining_namespace_members.cpp
@@ -241,9 +242,9 @@ namespace Contoso
 }
 ```
 
-## <a name="namespace-aliases"></a><a id="namespace_aliases"></a>Ad uzayı diğer adları
+## <a name="namespace-aliases"></a><a id="namespace_aliases"></a> Ad uzayı diğer adları
 
-Ad alanı adlarının benzersiz olması gerekir. Bu, genellikle çok kısa olmaması gereken anlamına gelir. Bir adın uzunluğu kodu okumayı zorlaştırıyorsa veya kullanım yönergelerinin kullanılması gereken bir üst bilgi dosyasını yazmak sıkıcı ise, gerçek ad için bir kısaltma görevi gören bir ad alanı diğer adı yapabilirsiniz. Örnek:
+Ad alanı adlarının benzersiz olması gerekir. Bu, genellikle çok kısa olmaması gereken anlamına gelir. Bir adın uzunluğu kodu okumayı zorlaştırıyorsa veya kullanım yönergelerinin kullanılması gereken bir üst bilgi dosyasını yazmak sıkıcı ise, gerçek ad için bir kısaltma görevi gören bir ad alanı diğer adı yapabilirsiniz. Örneğin:
 
 ```cpp
 namespace a_very_long_namespace_name { class Foo {}; }

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fkoyar, fputws'
 title: fputs, fputws
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - fputs function
 - fputts function
 ms.assetid: d48c82b8-aa17-4830-8c7d-30442ddbb326
-ms.openlocfilehash: 718bcd227e5821c85517ff7c0a1f195bd24d230b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bba51a6001d9ec27f39b590b2246a50409f5e47d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314119"
 ---
 # <a name="fputs-fputws"></a>fputs, fputws
 
@@ -68,7 +69,7 @@ int fputws(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarılı olursa negatif olmayan bir değer döndürür. Bir hatada, **ffıler** ve **fputws** , **EOF**döndürür. *Str* veya *Stream* null bir işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **sonra da** , **EOF** **fputws** , **fıof**öğesini döndürür.
+Bu işlevlerin her biri, başarılı olursa negatif olmayan bir değer döndürür. Bir hatada, **ffıler** ve **fputws** , **EOF** döndürür. *Str* veya *Stream* null bir işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **sonra da** ,  **fputws** , **fıof** öğesini döndürür.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
@@ -90,10 +91,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fkoyar**|\<stdio. h>|
-|**fputws**|\<stdio. h> veya \<wchar. h>|
+|**fkoyar**|\<stdio.h>|
+|**fputws**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout**ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Bu konsol ile ilişkili standart akış tutamaçları (**stdin**, **stdout** ve **stderr**), C çalışma zamanı işlevlerinin bunları UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -116,7 +117,7 @@ Hello world from fputs.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgets, fgetws](fgets-fgetws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [puts, _putws](puts-putws.md)<br/>
