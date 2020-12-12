@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: basit bir satır kümesinde geçiş yapma'
 title: Basit Bir Satır Kümesinde Geçiş Yapma
 ms.date: 10/19/2018
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - accessors [C++], rowsets
 ms.assetid: b45acf16-4029-429d-ab8d-b7fba98b9740
-ms.openlocfilehash: a6b2ebf918f42e274c372d1dda1e277f7fd49cd5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f2e0c1f9647e168d8de2a10eaea6425bf9ad5a88
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272636"
 ---
 # <a name="traversing-a-simple-rowset"></a>Basit Bir Satır Kümesinde Geçiş Yapma
 
-Aşağıdaki örnek, komutları içermeyen hızlı ve kolay veritabanı erişimini gösterir. Aşağıdaki tüketici kodu, bir ATL projesinde, ODBC için Microsoft OLE DB sağlayıcısı 'nı kullanarak Microsoft Access veritabanında bulunan *sanatçılar* adlı tablodaki kayıtları alır. Kod, Kullanıcı kayıt sınıfı `CArtists`temel alan bir erişimciye sahip bir [CTable](../../data/oledb/ctable-class.md) tablo nesnesi oluşturur. Bir bağlantı açar, bağlantıda bir oturum açar ve tabloyu oturum üzerinde açar.
+Aşağıdaki örnek, komutları içermeyen hızlı ve kolay veritabanı erişimini gösterir. Aşağıdaki tüketici kodu, bir ATL projesinde, ODBC için Microsoft OLE DB sağlayıcısı 'nı kullanarak Microsoft Access veritabanında bulunan *sanatçılar* adlı tablodaki kayıtları alır. Kod, Kullanıcı kayıt sınıfına dayalı bir erişimciye sahip bir [CTable](../../data/oledb/ctable-class.md) tablo nesnesi oluşturur `CArtists` . Bir bağlantı açar, bağlantıda bir oturum açar ve tabloyu oturum üzerinde açar.
 
 ```cpp
 #include <atldbcli.h>
@@ -54,7 +55,7 @@ int main()
 }
 ```
 
-Kullanıcı kaydı, `CArtists`Şu örneğe benzer şekilde görünür:
+Kullanıcı kaydı, aşağıdaki `CArtists` örneğe benzer şekilde görünür:
 
 ```cpp
 class CArtists
@@ -76,4 +77,4 @@ END_COLUMN_MAP()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+[OLE DB tüketici şablonlarıyla çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

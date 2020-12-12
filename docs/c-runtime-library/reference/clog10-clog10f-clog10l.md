@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: clog10, clog10f, clog10l'
 title: clog10, clog10f, clog10l
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - clog10f function
 - clog10l function
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
-ms.openlocfilehash: a840494caf3c34f09d8c90970988e847be712cb4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8f3112cec5d7f0d75435c1f47c8a28c9d3c93d69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277251"
 ---
 # <a name="clog10-clog10f-clog10l"></a>clog10, clog10f, clog10l
 
@@ -59,30 +60,30 @@ _Lcomplex clog10( _Lcomplex z );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
-Logaritmanın tabanı.
+*kadar*<br/>
+Logaritmanın tabanıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Olası dönüş değerleri şunlardır:
 
-|z parametresi|Dönüş değeri|
+|z parametresi|Döndürülen değer|
 |-----------------|------------------|
 |Pozitif|Z 'nin 10 tabanında logaritmasını|
-|Sıfırlama|- ∞|
+|Sıfır|- ∞|
 |Negatif|NaN|
 |NaN|NaN|
 |+ ∞|+ ∞|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **clog10** aşırı yüklerini çağırabilirsiniz. C programında, **clog10** her zaman bir **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **clog10** aşırı yüklerini çağırabilirsiniz. C programında, **clog10** her zaman **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**clog10**, **clog10f**, **clogl**|\<karmaşık. h >|\<ccomplex >|
+|**clog10**,               **clog10f**, **clogl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

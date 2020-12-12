@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CreateActivationFactory Işlevi'
 title: CreateActivationFactory İşlevi
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CreateActivationFactory function
 ms.assetid: a1a53e04-6757-4faf-a4c8-ecf06e43b959
-ms.openlocfilehash: ab03b15a968c6aba3fa6df8c975fb98e873f8e23
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 25f2181a00bb018361b05ea6570ebbadc6f7a975
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214077"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273117"
 ---
 # <a name="createactivationfactory-function"></a>CreateActivationFactory İşlevi
 
@@ -30,11 +31,11 @@ template<typename Factory>
 
 ### <a name="parameters"></a>Parametreler
 
-*larına*<br/>
+*bayraklar*<br/>
 Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırma değerinin birleşimi.
 
-*entry*<br/>
-Başlatma *ve parametreli parametre*hakkında bilgi Içeren bir [CreatorMap](creatormap-structure.md) işaretçisi.
+*girişte*<br/>
+Başlatma *ve parametreli parametre* hakkında bilgi Içeren bir [CreatorMap](creatormap-structure.md) işaretçisi.
 
 *riıd*<br/>
 Arabirim KIMLIĞINE başvuru.
@@ -48,7 +49,7 @@ Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon parametre *fabrikası* `IActivationFactory`arabiriminden türetilmezse bir onaylama hatası yayınlanır.
+Şablon parametresi *fabrikası* arabirimden türetilmezse bir onaylama hatası yayınlanır `IActivationFactory` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -58,4 +59,4 @@ Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Wrappers::Details Ad Alanı](microsoft-wrl-wrappers-details-namespace.md)
+[Microsoft:: WRL:: sarmalayıcılar::D euçlar ad alanı](microsoft-wrl-wrappers-details-namespace.md)

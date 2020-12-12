@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _alloca'
 title: _alloca
 ms.date: 11/04/2016
 api_name:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - alloca function
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
-ms.openlocfilehash: 159f474927b4aaf364ad6972450edbe513a3c0b0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 959478afac06c22181a595c00969690babbe6ade
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275197"
 ---
 # <a name="_alloca"></a>_alloca
 
 Yığında bellek ayırır. Daha güvenli bir sürüm kullanılabilir olduğundan bu işlev kullanım dışıdır; bkz. [_malloca](malloca.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 void *_alloca(
@@ -62,9 +63,9 @@ Boşluk ayrılabileceği takdirde bir yığın taşması özel durumu oluşturul
 
 Özel durum işleyicisinde (EH) **_alloca** açıkça çağırmak için kısıtlamalar vardır. X86 sınıfı işlemcilerde çalışan EH yordamları kendi bellek çerçevesinde çalışır: kendi görevlerini, kapsayan işlevin yığın işaretçisinin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirirler. En yaygın uygulamalar Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadelerini içerir. Bu nedenle, aşağıdaki senaryolardan herhangi birinde **_alloca** açıkça çağırmak, çağıran Eh yordamına geri dönme sırasında program hatasına neden olur:
 
-- Windows NT SEH özel durum filtresi ifadesi:`__except ( _alloca() )`
+- Windows NT SEH özel durum filtresi ifadesi: `__except ( _alloca() )`
 
-- Windows NT SEH son özel durum işleyicisi:`__finally { _alloca() }`
+- Windows NT SEH son özel durum işleyicisi: `__finally { _alloca() }`
 
 - C++ EH catch yan tümcesi ifadesi
 

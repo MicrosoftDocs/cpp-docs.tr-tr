@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C/C++ programları için bildirim oluşturmayı anlama'
 title: C/C++ Programları Bildirim Üretimini Anlama
 ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
-ms.openlocfilehash: 16d5efc5c5f7ce81b4b60269b0c666fd5d24266e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 78169dd6d8185e1ae8470dea93ab145fc05dbc7b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492519"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277277"
 ---
 # <a name="understanding-manifest-generation-for-cc-programs"></a>C/C++ Programları Bildirim Üretimini Anlama
 
@@ -22,4 +23,4 @@ Visual C++ kitaplıklarının üstbilgileri derleme bilgilerini içerir ve kitap
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Yalıtılmış uygulamalar ve yan yana derlemeler için kavramlar](concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
-[C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[C/C++ yalıtılmış uygulamaları ve yan yana derlemeler oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

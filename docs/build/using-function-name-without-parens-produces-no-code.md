@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: () olmadan Işlev adının kullanılması kod üretmez'
 title: () Olmadan İşlev Adının Kullanılması Kod Üretmez
 ms.date: 11/04/2016
 helpviewer_keywords:
 - functions [C++], without parentheses
 ms.assetid: edf4a177-a160-44aa-8436-e077b5b27809
-ms.openlocfilehash: 51be77dc8f4fe072ea6cc46dd51e38862649feda
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1fedc296422a759878c26469ccc20955043b3913
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314604"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277264"
 ---
 # <a name="using-function-name-without--produces-no-code"></a>() Olmadan İşlev Adının Kullanılması Kod Üretmez
 
@@ -23,7 +24,7 @@ a;      // no code generated here either
 
 Visual C++, uyarı düzeyi 4 ' ün kullanılması hiçbir Tanılama çıkışı oluşturmaz. Hiçbir uyarı verilmedi; kod üretilmedi.
 
-Aşağıdaki örnek kod, hata olmadan (bir uyarı ile) ve bağlantılarla doğru şekilde derlenir, ancak başvuru içinde kod üretmez `funcn( )`. Bunun düzgün çalışması için "()" işlev çağrısı işlecini ekleyin.
+Aşağıdaki örnek kod, hata olmadan (bir uyarı ile) ve bağlantılarla doğru şekilde derlenir, ancak başvuru içinde kod üretmez `funcn( )` . Bunun düzgün çalışması için "()" işlev çağrısı işlecini ekleyin.
 
 ```
 #include <stdio.h>
@@ -41,4 +42,4 @@ void funcn() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kodunuzu İyileştirme](optimizing-your-code.md)
+[Kodunuzu iyileştirme](optimizing-your-code.md)

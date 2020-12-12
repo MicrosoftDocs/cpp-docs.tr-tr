@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tabanlı Işaretçiler (C++)'
 title: Tabanlı İşaretçiler (C++)
 ms.date: 10/09/2018
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - based pointers
 - pointers, based
 ms.assetid: 1e5f2e96-c52e-4738-8e14-87278681205e
-ms.openlocfilehash: a76fe56e0e6bd0501bbc3e23e138cb2e75055c73
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 40f6a081081eebdff87a9682818de3f89a44b982
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229148"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273507"
 ---
 # <a name="based-pointers-c"></a>Tabanlı İşaretçiler (C++)
 
 **`__based`** Anahtar sözcüğü işaretçiler (varolan işaretçilerden uzaklık olan işaretçiler) temelinde işaretçiler bildirmenize olanak tanır. **`__based`** Anahtar sözcüğü, Microsoft 'a özgüdür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 type __based( base ) declarator
@@ -31,7 +32,7 @@ type __based( base ) declarator
 
 İşaretçi adreslerini temel alan işaretçiler, **`__based`** 32-bit veya 64 bit derlemelerde geçerli olan anahtar sözcüğünün tek biçimidir. Microsoft 32 bit C/C++ derleyicisi için temel alınan bir işaretçi, 32 bit işaretçi temeline göre 32 bit uzaklıktadır. Benzer bir kısıtlama, temel alınan bir işaretçinin 64 bit temelden 64 bit uzaklıkta olduğu 64 bit ortamlar için de geçerlidir.
 
-İşaretçilere göre işaretçilerin bir kullanımı da, işaretçiler içeren kalıcı tanımlayıcılara yöneliktir. İşaretçiye göre işaretçilerden oluşan bağlantılı bir liste diske kaydedilebilir ve daha sonra işaretçiler geçerli kalacak şekilde bellekte başka bir yere yeniden yüklenebilir. Örnek:
+İşaretçilere göre işaretçilerin bir kullanımı da, işaretçiler içeren kalıcı tanımlayıcılara yöneliktir. İşaretçiye göre işaretçilerden oluşan bağlantılı bir liste diske kaydedilebilir ve daha sonra işaretçiler geçerli kalacak şekilde bellekte başka bir yere yeniden yüklenebilir. Örneğin:
 
 ```cpp
 // based_pointers1.cpp
@@ -50,7 +51,7 @@ struct llist_t {
 
 Temel alınan işaretçinin başvurusu kaldırılırken, temel açıkça belirtilmeli veya bildirim aracılığıyla örtük olarak bilinmelidir.
 
-Önceki sürümlerle uyumluluk için, **_based** **`__based`** [/za \( Disable dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde _based için bir eş anlamlı.
+Önceki sürümlerle uyumluluk için,  **`__based`** [/za \( Disable dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde _based için bir eş anlamlı.
 
 ## <a name="example"></a>Örnek
 

@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: scanf Type alan karakterleri'
 title: scanf Türü Alan Karakterleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - scanf function, type field characters
 ms.assetid: 5d546a84-715b-44ca-b1c5-bbe997f9ff62
-ms.openlocfilehash: 8ea5f53f5c6039cf15836ba995df0d63bd6fcb23
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5a98b65b3c4e236a637d0e50c26c998e77657f31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233905"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273624"
 ---
 # <a name="scanf-type-field-characters"></a>scanf Türü Alan Karakterleri
 
@@ -48,10 +49,10 @@ Biçim dizesi, tek baytlı karakter veya işlevin geniş karakterli sürümünü
 
 |Karakteri şöyle okumak için|Bu işlevi kullanın|Bu biçim belirticileriyle|
 |--------------------------|-----------------------|----------------------------------|
-|tek bayt|`scanf` işlevleri|`c`, `hc` , veya`hC`|
-|tek bayt|`wscanf` işlevleri|`C`, `hc` , veya`hC`|
-|geniş|`wscanf` işlevleri|`c`, `lc` , veya`lC`|
-|geniş|`scanf` işlevleri|`C`, `lc` , veya`lC`|
+|tek bayt|`scanf` işlevleri|`c`, `hc` , veya `hC`|
+|tek bayt|`wscanf` işlevleri|`C`, `hc` , veya `hC`|
+|geniş|`wscanf` işlevleri|`c`, `lc` , veya `lC`|
+|geniş|`scanf` işlevleri|`C`, `lc` , veya `lC`|
 
 `scanf`İşlevleri işlevlerle ve işlevlerle taramak için `wscanf` Yukarıdaki tabloyu biçim türü tanımlayıcılarla, `s` `S` ve yerine kullanın `c` `C` .
 

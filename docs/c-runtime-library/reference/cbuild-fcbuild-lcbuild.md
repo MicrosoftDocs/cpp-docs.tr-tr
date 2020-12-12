@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _Cbuild, _FCbuild, _LCbuild'
 title: _Cbuild, _FCbuild, _LCbuild
 ms.date: 03/30/2018
 api_name:
@@ -32,18 +33,18 @@ helpviewer_keywords:
 - _Cbuild function
 - _FCbuild function
 - _LCbuild function
-ms.openlocfilehash: d521fdb0d79e1e4ff6e6c1b01ce40941ed5c8c0a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bbca2571a10badcfc02da3e0d2f404590a1d7eb3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221971"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275236"
 ---
 # <a name="_cbuild-_fcbuild-_lcbuild"></a>_Cbuild, _FCbuild, _LCbuild
 
 Gerçek ve sanal bölümlerden karmaşık bir sayı oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 _Dcomplex _Cbuild( double real, double imaginary );
@@ -53,7 +54,7 @@ _Lcomplex _LCbuild( long double real, long double imaginary );
 
 ### <a name="parameters"></a>Parametreler
 
-*gerçek*<br/>
+*real*<br/>
 Yapı için karmaşık sayının gerçek bölümü.
 
 *sanal*<br/>
@@ -61,11 +62,11 @@ Oluşturmak için karmaşık sayının sanal bölümü.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Fcomplex**Belirtilen **_Dcomplex**kayan nokta türünün değerleri için karmaşık sayıyı (*gerçek*, *sanal* i) temsil eden bir _Dcomplex, _Fcomplex veya **_Lcomplex** yapısı \* .
+Belirtilen kayan nokta türünün değerleri için karmaşık sayıyı (*gerçek*, *sanal* i) temsil eden bir _Dcomplex, _Fcomplex veya **_Lcomplex** yapısı \* .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cbuild**, **_FCbuild**ve **_LCbuild** işlevleri karmaşık türlerin oluşturulmasını basitleştirir. Temsil edilen karmaşık sayıların gerçek ve sanal kısımlarını almak için [creal, crealf, Creall](creal-crealf-creall.md) ve [cımag, cımıknatıf, cımagl](cimag-cimagf-cimagl.md) işlevlerini kullanın.
+**_Cbuild**, **_FCbuild** ve **_LCbuild** işlevleri karmaşık türlerin oluşturulmasını basitleştirir. Temsil edilen karmaşık sayıların gerçek ve sanal kısımlarını almak için [creal, crealf, Creall](creal-crealf-creall.md) ve [cımag, cımıknatıf, cımagl](cimag-cimagf-cimagl.md) işlevlerini kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,7 +74,7 @@ Oluşturmak için karmaşık sayının sanal bölümü.
 |-------------|--------------|------------------|
 |**_Cbuild**, **_FCbuild**, **_LCbuild**|\<complex.h>|\<ccomplex>|
 
-Bu işlevler, Microsoft 'a özgüdür. **_Dcomplex**, **_Fcomplex**ve **_Lcomplex** türleri, uygulanmayan C99 yerel türlerine **`double _Complex`** , **`float _Complex`** ve sırasıyla Microsoft 'a özgü eşdeğerlerdir **`long double _Complex`** . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlevler, Microsoft 'a özgüdür. **_Dcomplex**, **_Fcomplex** ve **_Lcomplex** türleri, uygulanmayan C99 yerel türlerine **`double _Complex`** , **`float _Complex`** ve sırasıyla Microsoft 'a özgü eşdeğerlerdir **`long double _Complex`** . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

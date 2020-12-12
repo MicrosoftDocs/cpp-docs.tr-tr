@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ComPtr sınıfı'
 title: ComPtr Sınıfı
 ms.date: 06/02/2020
 ms.topic: reference
@@ -51,18 +52,18 @@ helpviewer_keywords:
 - Microsoft::WRL::ComPtr::Swap method
 - Microsoft::WRL::ComPtr::~ComPtr, destructor
 ms.assetid: a6551902-6819-478a-8df7-b6f312ab1fb0
-ms.openlocfilehash: 4f9462ca15f5db5c3f8c0de88ce5a76b142065b4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a78264a0728382bf78b14193d130b19b0095240b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220554"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273182"
 ---
 # <a name="comptr-class"></a>ComPtr Sınıfı
 
-Şablon parametresi tarafından belirtilen arabirimi temsil eden *akıllı bir işaretçi* türü oluşturur. `ComPtr`, temel alınan arabirim işaretçisi için bir başvuru sayısını otomatik olarak tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.
+Şablon parametresi tarafından belirtilen arabirimi temsil eden *akıllı bir işaretçi* türü oluşturur. `ComPtr` , temel alınan arabirim işaretçisi için bir başvuru sayısını otomatik olarak tutar ve başvuru sayısı sıfıra gittiğinde arabirimi serbest bırakır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <typename T>
@@ -82,7 +83,7 @@ Geçerli `ComPtr` bir arkadaş olan sınıf. (Bu parametreyi kullanan şablon ko
 
 ## <a name="remarks"></a>Açıklamalar
 
-`ComPtr<>`temel alınan arabirim işaretçisini temsil eden bir tür bildirir. `ComPtr<>`Bir değişken bildirmek için kullanın ve ardından `->` bir arabirim üye işlevine erişmek için ok üye erişim işlecini () kullanın.
+`ComPtr<>` temel alınan arabirim işaretçisini temsil eden bir tür bildirir. `ComPtr<>`Bir değişken bildirmek için kullanın ve ardından `->` bir arabirim üye işlevine erişmek için ok üye erişim işlecini () kullanın.
 
 Akıllı işaretçiler hakkında daha fazla bilgi için [com kodlama uygulamaları](/windows/win32/LearnWin32/com-coding-practices) MAKALESININ "com akıllı işaretçiler" alt bölümüne bakın.
 
@@ -151,7 +152,7 @@ Ad                 | Açıklama
 
 **Ad alanı:** Microsoft:: WRL
 
-## <a name="comptrcomptr"></a><a name="tilde-comptr"></a>ComPtr:: ~ ComPtr
+## <a name="comptrcomptr"></a><a name="tilde-comptr"></a> ComPtr:: ~ ComPtr
 
 Bir örneğini kaldırır `ComPtr` .
 
@@ -159,7 +160,7 @@ Bir örneğini kaldırır `ComPtr` .
 WRL_NOTHROW ~ComPtr();
 ```
 
-## <a name="comptras"></a><a name="as"></a>ComPtr:: as
+## <a name="comptras"></a><a name="as"></a> ComPtr:: as
 
 `ComPtr`Belirtilen şablon parametresi tarafından tanımlanan arabirimi temsil eden bir nesne döndürür.
 
@@ -178,10 +179,10 @@ HRESULT As(
 ### <a name="parameters"></a>Parametreler
 
 *U*<br/>
-*P*parametresine göre temsil edilecek arabirim.
+*P* parametresine göre temsil edilecek arabirim.
 
 *Lama*<br/>
-`ComPtr` *U*parametresi tarafından belirtilen arabirimi temsil eden nesne. *P* parametresi geçerli nesneye başvurmamalıdır `ComPtr` .
+`ComPtr` *U* parametresi tarafından belirtilen arabirimi temsil eden nesne. *P* parametresi geçerli nesneye başvurmamalıdır `ComPtr` .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -191,7 +192,7 @@ HRESULT As(
 
 Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="comptrasiid"></a><a name="asiid"></a>ComPtr:: AsIID
+## <a name="comptrasiid"></a><a name="asiid"></a> ComPtr:: AsIID
 
 `ComPtr`Belirtilen ARABIRIM kimliği tarafından tanımlanan arabirimi temsil eden bir nesne döndürür.
 
@@ -208,13 +209,13 @@ WRL_NOTHROW HRESULT AsIID(
 Arabirim KIMLIĞI.
 
 *Lama*<br/>
-Nesnede, KIMLIĞI *riıd*değerine eşit olan bir arabirim varsa, bu değer, *riıd* parametresi tarafından belirtilen arabirime yönelik bir dolaylı olarak dolaylı bir işaretçi. Aksi takdirde, için bir işaretçisi `IUnknown` .
+Nesnede, KIMLIĞI *riıd* değerine eşit olan bir arabirim varsa, bu değer, *riıd* parametresi tarafından belirtilen arabirime yönelik bir dolaylı olarak dolaylı bir işaretçi. Aksi takdirde, için bir işaretçisi `IUnknown` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="comptrasweak"></a><a name="asweak"></a>ComPtr:: Aszayıf
+## <a name="comptrasweak"></a><a name="asweak"></a> ComPtr:: Aszayıf
 
 Geçerli nesneye zayıf bir başvuru alır.
 
@@ -233,7 +234,7 @@ Bu işlem tamamlandığında, zayıf başvuru nesnesine yönelik bir işaretçi.
 
 Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="comptrattach"></a><a name="attach"></a>ComPtr:: Attach
+## <a name="comptrattach"></a><a name="attach"></a> ComPtr:: Attach
 
 Bunu `ComPtr` geçerli şablon türü parametresi tarafından belirtilen arabirim türüyle ilişkilendirir.
 
@@ -248,7 +249,7 @@ void Attach(
 *farklı*<br/>
 Bir arabirim türü.
 
-## <a name="comptrcomptr"></a><a name="comptr"></a>ComPtr:: ComPtr
+## <a name="comptrcomptr"></a><a name="comptr"></a> ComPtr:: ComPtr
 
 `ComPtr` sınıfının yeni bir örneğini başlatır. Aşırı yüklemeler varsayılan, kopyalama, taşıma ve dönüştürme oluşturucuları sağlar.
 
@@ -290,7 +291,7 @@ WRL_NOTHROW ComPtr(
 *Diğer* parametrenin türü.
 
 *farklı*<br/>
-*U*türünde bir nesne.
+*U* türünde bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -304,7 +305,7 @@ Dördüncü ve beşinci oluşturucular kopya oluşturuculardır. Beşinci Oluşt
 
 Altıncı ve yedinci oluşturucular taşıma oluşturuculardır. Yedinci Oluşturucu geçerli türe dönüştürülebilir bir nesneyi taşımaktır.
 
-## <a name="comptrcopyto"></a><a name="copyto"></a>ComPtr:: CopyTo
+## <a name="comptrcopyto"></a><a name="copyto"></a> ComPtr:: CopyTo
 
 Bu ile ilişkili geçerli veya belirtilen arabirimi `ComPtr` belirtilen işaretçiye kopyalar.
 
@@ -345,9 +346,9 @@ Başarılı olursa S_OK; Aksi takdirde, örtük işlemin neden başarısız oldu
 
 İkinci işlev, `QueryInterface` `ComPtr` *riıd* parametresi tarafından belirtilen arabirim için bununla ilişkili arabirim üzerinde bir işlem gerçekleştirir.
 
-Üçüncü işlev, `QueryInterface` `ComPtr` *U* parametresinin temel arabirimi için bununla ilişkili arabirim üzerinde bir işlem gerçekleştirir.
+Üçüncü işlev, `QueryInterface` `ComPtr`  *U* parametresinin temel arabirimi için bununla ilişkili arabirim üzerinde bir işlem gerçekleştirir.
 
-## <a name="comptrdetach"></a><a name="detach"></a>ComPtr::D etach
+## <a name="comptrdetach"></a><a name="detach"></a> ComPtr::D etach
 
 Bu `ComPtr` nesneyi, temsil ettiği arabirimden kaldırır.
 
@@ -359,7 +360,7 @@ T* Detach();
 
 Bu nesne tarafından temsil edilen arabirime yönelik bir işaretçi `ComPtr` .
 
-## <a name="comptrget"></a><a name="get"></a>ComPtr:: Get
+## <a name="comptrget"></a><a name="get"></a> ComPtr:: Get
 
 Bu ile ilişkili arabirime bir işaretçi alır `ComPtr` .
 
@@ -371,7 +372,7 @@ T* Get() const;
 
 Bu ile ilişkili arabirime yönelik işaretçi `ComPtr` .
 
-## <a name="comptrgetaddressof"></a><a name="getaddressof"></a>ComPtr:: GetAddressOf
+## <a name="comptrgetaddressof"></a><a name="getaddressof"></a> ComPtr:: GetAddressOf
 
 Bu tarafından temsil edilen arabirime yönelik bir işaretçi içeren [ptr_](#ptr) veri üyesinin adresini alır `ComPtr` .
 
@@ -384,7 +385,7 @@ T** GetAddressOf();
 
 Bir değişkenin adresi.
 
-## <a name="comptrinternaladdref"></a><a name="internaladdref"></a>ComPtr:: InternalAddRef
+## <a name="comptrinternaladdref"></a><a name="internaladdref"></a> ComPtr:: InternalAddRef
 
 Bununla ilişkili arabirimin başvuru sayısını artırır `ComPtr` .
 
@@ -396,7 +397,7 @@ void InternalAddRef() const;
 
 Bu yöntem korunur.
 
-## <a name="comptrinternalrelease"></a><a name="internalrelease"></a>ComPtr:: InternalRelease
+## <a name="comptrinternalrelease"></a><a name="internalrelease"></a> ComPtr:: InternalRelease
 
 Bu ile ilişkili arabirim üzerinde bir COM yayın işlemi gerçekleştirir `ComPtr` .
 
@@ -408,7 +409,7 @@ unsigned long InternalRelease();
 
 Bu yöntem korunur.
 
-## <a name="comptroperatoramp"></a><a name="operator-ampersand"></a>ComPtr:: işleci&amp;
+## <a name="comptroperatoramp"></a><a name="operator-ampersand"></a> ComPtr:: işleci&amp;
 
 Bu nesneyle ilişkili arabirimi serbest bırakır `ComPtr` ve sonra nesnenin adresini alır `ComPtr` .
 
@@ -426,7 +427,7 @@ Geçerli bir zayıf başvuru `ComPtr` .
 
 Bu yöntem, bu yöntemin arabirim işaretçisine bir başvuru yayınlarsa [ComPtr:: GetAddressOf](#getaddressof) öğesinden farklıdır. `ComPtr::GetAddressOf`Arabirim işaretçisinin adresine ihtiyacınız olduğunda, ancak bu arabirimi yayınlamak istemediğinizde kullanın.
 
-## <a name="comptroperator-gt"></a><a name="operator-arrow"></a>ComPtr:: operator-&gt;
+## <a name="comptroperator-gt"></a><a name="operator-arrow"></a> ComPtr:: operator-&gt;
 
 Geçerli şablon parametresi tarafından belirtilen türe bir işaretçi alır.
 
@@ -442,7 +443,7 @@ Geçerli şablon türü adı tarafından belirtilen türe yönelik işaretçi.
 
 Bu yardımcı işlevi, STDMETHOD makrosunu kullanarak oluşan gereksiz yükü kaldırır. Bu işlev `IUnknown` yerine türlerini yapar **`private`** **`virtual`** .
 
-## <a name="comptroperator"></a><a name="operator-assign"></a>ComPtr:: operator =
+## <a name="comptroperator"></a><a name="operator-assign"></a> ComPtr:: operator =
 
 Geçerli bir değer atar `ComPtr` .
 
@@ -497,11 +498,11 @@ Dördüncü sürümde, atama değerinin arabirim işaretçisi geçerli `ComPtr` 
 
 Beşinci sürüm bir kopya işleçtir; geçerli öğesine bir başvurusu `ComPtr` atanır `ComPtr` .
 
-Altıncı sürüm, taşıma semantiğini kullanan bir kopya işleçtir; `ComPtr`herhangi bir tür statik atama ise ve sonra geçerli öğesine atanırsa bir rvalue başvurusu `ComPtr` .
+Altıncı sürüm, taşıma semantiğini kullanan bir kopya işleçtir; `ComPtr` herhangi bir tür statik atama ise ve sonra geçerli öğesine atanırsa bir rvalue başvurusu `ComPtr` .
 
-Yedinci sürüm, taşıma semantiğini kullanan bir kopya işleçtir; U türünde bir rvalue başvurusu `ComPtr` statik bir *U* tür oluşturup geçerli öğesine atanır `ComPtr` .
+Yedinci sürüm, taşıma semantiğini kullanan bir kopya işleçtir; U türünde bir rvalue başvurusu `ComPtr` statik bir  tür oluşturup geçerli öğesine atanır `ComPtr` .
 
-## <a name="comptroperator"></a><a name="operator-equality"></a>ComPtr:: operator = =
+## <a name="comptroperator"></a><a name="operator-equality"></a> ComPtr:: operator = =
 
 İki nesnenin eşit olup olmadığını gösterir `ComPtr` .
 
@@ -532,11 +533,11 @@ Başka bir nesneye başvuru `ComPtr` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk operatör, **`true`** nesne *b*nesnesine *a* eşitse, aksi takdirde, **`false`** .
+İlk operatör, **`true`** nesne *b* nesnesine  eşitse, aksi takdirde, **`false`** .
 
 İkinci ve üçüncü operatörler **`true`** nesne *a* eşitse **`nullptr`** , aksi takdirde, **`false`** .
 
-## <a name="comptroperator"></a><a name="operator-inequality"></a>ComPtr:: operator! =
+## <a name="comptroperator"></a><a name="operator-inequality"></a> ComPtr:: operator! =
 
 İki nesnenin eşit olup olmadığını gösterir `ComPtr` .
 
@@ -567,11 +568,11 @@ Başka bir nesneye başvuru `ComPtr` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk operatör, **`true`** nesne *b*nesnesine *a* eşit değilse, aksi takdirde, olur **`false`** .
+İlk operatör, **`true`** nesne *b* nesnesine  eşit değilse, aksi takdirde, olur **`false`** .
 
 İkinci ve üçüncü operatörler, **`true`** nesne *a* eşit değilse **`nullptr`** , aksi takdirde, **`false`** .
 
-## <a name="comptroperator-microsoftwrldetailsbooltype"></a><a name="operator-microsoft-wrl-details-booltype"></a>ComPtr:: operator Microsoft:: WRL::D euçlar:: BoolType
+## <a name="comptroperator-microsoftwrldetailsbooltype"></a><a name="operator-microsoft-wrl-details-booltype"></a> ComPtr:: operator Microsoft:: WRL::D euçlar:: BoolType
 
 Bir `ComPtr` arabirimin nesne ömrünü yönetip yönetmediğini belirtir.
 
@@ -583,7 +584,7 @@ WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
 
 Bir arabirim bu ile ilişkilendirilmişse `ComPtr` [BoolStruct:: member](boolstruct-structure.md#member) veri üyesinin adresi; Aksi takdirde, **`nullptr`** .
 
-## <a name="comptrptr_"></a><a name="ptr"></a>ComPtr::p tr_
+## <a name="comptrptr_"></a><a name="ptr"></a> ComPtr::p tr_
 
 İle ilişkili arabirime yönelik bir işaretçi içerir ve bu ile yönetilir `ComPtr` .
 
@@ -593,9 +594,9 @@ InterfaceType *ptr_;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ptr_`, dahili, korunan bir veri üyesidir.
+`ptr_` , dahili, korunan bir veri üyesidir.
 
-## <a name="comptrreleaseandgetaddressof"></a><a name="releaseandgetaddressof"></a>ComPtr:: ReleaseAndGetAddressOf
+## <a name="comptrreleaseandgetaddressof"></a><a name="releaseandgetaddressof"></a> ComPtr:: ReleaseAndGetAddressOf
 
 , Bununla ilişkili arabirimi serbest bırakır `ComPtr` ve sonra serbest olan arabirime yönelik bir işaretçi içeren [ptr_](#ptr) veri üyesinin adresini alır.
 
@@ -607,7 +608,7 @@ T** ReleaseAndGetAddressOf();
 
 Bunun [ptr_](#ptr) veri üyesinin adresi `ComPtr` .
 
-## <a name="comptrreset"></a><a name="reset"></a>ComPtr:: Reset
+## <a name="comptrreset"></a><a name="reset"></a> ComPtr:: Reset
 
 , Bununla ilişkili arabirimi yayınlar `ComPtr` ve yeni başvuru sayısını döndürür.
 
@@ -619,7 +620,7 @@ unsigned long Reset();
 
 Varsa, temel alınan arabirime kalan başvuruların sayısı.
 
-## <a name="comptrswap"></a><a name="swap"></a>ComPtr:: swap
+## <a name="comptrswap"></a><a name="swap"></a> ComPtr:: swap
 
 Geçerli tarafından yönetilen arabirimi, `ComPtr` belirtilen arabirimiyle yönetilen arabirim ile değiştirir `ComPtr` .
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fwrite'
 title: fwrite
 ms.date: 4/2/2020
 api_name:
@@ -27,18 +28,18 @@ helpviewer_keywords:
 - streams, writing data to
 - fwrite function
 ms.assetid: 7afacf3a-72d7-4a50-ba2e-bea1ab9f4124
-ms.openlocfilehash: b604819391629d057850c17466807e7c329c472d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6d650e03af95b527c3e0752f975d8dceb03e5eb8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87198599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273663"
 ---
 # <a name="fwrite"></a>fwrite
 
 Verileri bir akışa yazar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 size_t fwrite(
@@ -69,9 +70,9 @@ Yazılacak en fazla öğe sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fwrite** işlevi, sayı *uzunluğunun her biri,* *arabelleğe* çıkış *akışına*kadar olan öğeleri *say* için yazar. *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten yazılan bayt sayısıyla artırılır. *Akış* metin modunda açılırsa, her satır akışı bir satır başı satır besleme çiftiyle değiştirilmiştir. Değiştirme işleminin dönüş değeri üzerinde hiçbir etkisi yoktur.
+**Fwrite** işlevi, sayı *uzunluğunun her biri,* *arabelleğe* çıkış *akışına* kadar olan öğeleri *say* için yazar. *Stream* ile ilişkili dosya işaretçisi (varsa), gerçekten yazılan bayt sayısıyla artırılır. *Akış* metin modunda açılırsa, her satır akışı bir satır başı satır besleme çiftiyle değiştirilmiştir. Değiştirme işleminin dönüş değeri üzerinde hiçbir etkisi yoktur.
 
-*Akış* Unicode çeviri modunda açıldığında — Örneğin, *Stream* , **fopen** çağırarak ve **CCS = UNICODE**içeren BIR Mode PARAMETRESI kullanılarak açılırsa **CCS = UTF-16LE**veya **ccs = UTF-8**veya mod, **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**içeren bir mod parametresi **_setmode** kullanarak bir Unicode çeviri moduna değiştirildiyse,*Ara bellek* , **`wchar_t`** UTF-16 verileri içeren bir Array işaretçisi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+*Akış* Unicode çeviri modunda açıldığında — Örneğin, *Stream* , **fopen** çağırarak ve **CCS = UNICODE** içeren BIR Mode PARAMETRESI kullanılarak açılırsa **CCS = UTF-16LE** veya **ccs = UTF-8** veya mod, **_O_WTEXT**, **_O_U16TEXT** veya **_O_U8TEXT** içeren bir mod parametresi **_setmode** kullanarak bir Unicode çeviri moduna değiştirildiyse,*Ara bellek* , **`wchar_t`** UTF-16 verileri içeren bir Array işaretçisi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
 Bu işlev çağıran iş parçacığını kilitlediği için iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. **_fwrite_nolock**.
 

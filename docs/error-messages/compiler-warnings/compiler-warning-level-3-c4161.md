@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4161'
 title: Derleyici Uyarısı (düzey 3) C4161
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4161
 ms.assetid: 03d3be61-83f1-4009-8310-8758ab67055f
-ms.openlocfilehash: 94ff4b645ec704c1b17d3c74aba434cf3ac7f05e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6bb96fbee367751533fba769a6c56f01f94df19c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199010"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272194"
 ---
 # <a name="compiler-warning-level-3-c4161"></a>Derleyici Uyarısı (düzey 3) C4161
 
@@ -19,7 +20,7 @@ ms.locfileid: "80199010"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kaynak kodunuz pragma *pragma*için gönderimden daha fazla bir pop içerdiğinden, yığın beklendiği gibi davranmayabilir. Uyarıyı önlemek için, pop sayısının gönderim sayısını aşmadığından emin olun.
+Kaynak kodunuz pragma *pragma* için gönderimden daha fazla bir pop içerdiğinden, yığın beklendiği gibi davranmayabilir. Uyarıyı önlemek için, pop sayısının gönderim sayısını aşmadığından emin olun.
 
 ## <a name="example"></a>Örnek
 

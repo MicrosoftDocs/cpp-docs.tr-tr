@@ -1,5 +1,6 @@
 ---
-title: CMFCRibbonMiniToolTa Bar Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCRibbonMiniToolBar sınıfı'
+title: CMFCRibbonMiniToolBar sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonMiniToolBar
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - CMFCRibbonMiniToolBar [MFC], Show
 - CMFCRibbonMiniToolBar [MFC], ShowWithContextMenu
 ms.assetid: 7017e963-aeaf-4fe9-b540-e15a7ed41e94
-ms.openlocfilehash: 5e5ac6c923640b7584d89a9c6f75d941deadddf3
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 7215349323f8039bccb24860e4e5ad663bd24bcd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273949"
 ---
-# <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolTa Bar Sınıfı
+# <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar sınıfı
 
-Bağlamsal açılır pencere araç çubuğu uygular.
+Bağlamsal açılan araç çubuğunu uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCRibbonMiniToolBar : public CMFCRibbonPanelMenu
@@ -37,52 +38,52 @@ class CMFCRibbonMiniToolBar : public CMFCRibbonPanelMenu
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`CMFCRibbonMiniToolBar::CMFCRibbonMiniToolBar`|Varsayılan oluşturucu.|
+|`CMFCRibbonMiniToolBar::CMFCRibbonMiniToolBar`|Varsayılan Oluşturucu.|
 |`CMFCRibbonMiniToolBar::~CMFCRibbonMiniToolBar`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`CMFCRibbonMiniToolBar::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
-|`CMFCRibbonMiniToolBar::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
-|[CMFCRibbonMiniToolBar::IscontextMenuMode](#iscontextmenumode)||
-|[CMFCRibbonMiniToolBar::IsRibbonMiniToolBar](#isribbonminitoolbar)|(Geçersiz `CMFCPopupMenu::IsRibbonMiniToolBar`kılar .)|
-|[CMFCRibbonMiniToolBar::SetKomutları](#setcommands)|Araç çubuğunda görüntülenecek komutların listesini ayarlar.|
-|[CMFCRibbonMiniToolBar::Göster](#show)|Mini araç çubuğunu belirtilen ekran koordinatlarında görüntüler.|
-|[CMFCRibbonMiniToolBar::ShowWithContextMenu](#showwithcontextmenu)|Mini araç çubuğunu bağlam menüsüyle birlikte görüntüler.|
+|`CMFCRibbonMiniToolBar::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
+|`CMFCRibbonMiniToolBar::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
+|[CMFCRibbonMiniToolBar:: ıscontextmenumode](#iscontextmenumode)||
+|[CMFCRibbonMiniToolBar:: IsRibbonMiniToolBar](#isribbonminitoolbar)|(Geçersiz kılmalar `CMFCPopupMenu::IsRibbonMiniToolBar` .)|
+|[CMFCRibbonMiniToolBar:: SetCommands](#setcommands)|Araç çubuğunda görüntülenecek komutların listesini ayarlar.|
+|[Cmfcribbonmini araç çubuğu:: show](#show)|Belirtilen Ekran koordinatlarındaki Mini araç çubuğunu görüntüler.|
+|[CMFCRibbonMiniToolBar:: ShowWithContextMenu](#showwithcontextmenu)|Mini araç çubuğunu bir bağlam menüsü ile birlikte görüntüler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Mini araç çubuğu genellikle kullanıcı bir belgedeki bir nesneyi seçtikten sonra görüntülenir. Örneğin, kullanıcı bir sözcük işleme programında bir metin bloğu seçtikten sonra, uygulama metin biçimlendirme komutları içeren bir mini araç çubuğu görüntüler.
+Mini araç çubuğu, genellikle Kullanıcı belgedeki bir nesneyi seçtikten sonra görüntülenir. Örneğin, Kullanıcı bir sözcük işleme programında metin bloğunu seçtikten sonra, uygulama metin biçimlendirme komutlarını içeren bir mini araç çubuğunu görüntüler.
 
-Fare işaretçisi mini araç çubuğunun sınırları dışında olduğunda mini araç çubuğu saydam hale gelir.
+Mini araç çubuğu, fare işaretçisi Mini araç çubuğunun sınırları dışında olduğunda saydam hale gelir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 [CFrameWnd](../../mfc/reference/cframewnd-class.md)
 
 [CMiniFrameWnd](../../mfc/reference/cminiframewnd-class.md)
 
-[Cmfcpopupmenu](../../mfc/reference/cmfcpopupmenu-class.md)
+[CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)
 
 `CMFCRibbonPanelMenu`
 
-[CMFCRibbonMiniToolBar](../../mfc/reference/cmfcribbonminitoolbar-class.md)
+[Cmfcribbonmini araç çubuğu](../../mfc/reference/cmfcribbonminitoolbar-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxRibbonMiniToolBar.h
+**Üstbilgi:** afxRibbonMiniToolBar. h
 
-## <a name="cmfcribbonminitoolbarsetcommands"></a><a name="setcommands"></a>CMFCRibbonMiniToolBar::SetKomutları
+## <a name="cmfcribbonminitoolbarsetcommands"></a><a name="setcommands"></a> CMFCRibbonMiniToolBar:: SetCommands
 
 Araç çubuğunda görüntülenecek komutların listesini ayarlar.
 
@@ -94,11 +95,11 @@ void SetCommands(
 
 ### <a name="parameters"></a>Parametreler
 
-*pRibbonBar*<br/>
-[içinde] Mini araç çubuğunun görüntülenecek düğmeleri aradığı şerit çubuğu.
+*Pribbonçubuğu*<br/>
+'ndaki Mini araç çubuğunun görüntülenecek düğmeleri arayacağı şerit çubuğu.
 
-*lstKomutlar*<br/>
-[içinde] Mini araç çubuğunda görüntülenecek komutların listesi. İlişkili düğmeleri bulmak için tüm şerit kategorileri aranır.
+*lstCommands*<br/>
+'ndaki Mini araç çubuğunda görüntülenecek komutların listesi. Tüm Şerit kategorileri, ilişkili düğmeleri bulmak için aranır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -106,13 +107,13 @@ Mini araç çubuğunda görüntülenecek komutların listesini ayarlamak için b
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfın yönteminin `SetCommands` nasıl `CMFCRibbonMiniToolBar` kullanılacağını göstermektedir. Bu kod parçacığı MS Office [2007 Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfının yönteminin nasıl kullanılacağını gösterir `SetCommands` `CMFCRibbonMiniToolBar` . Bu kod parçacığı, [MS Office 2007 demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#9](../../mfc/reference/codesnippet/cpp/cmfcribbonminitoolbar-class_1.cpp)]
 
-## <a name="cmfcribbonminitoolbarshow"></a><a name="show"></a>CMFCRibbonMiniToolBar::Göster
+## <a name="cmfcribbonminitoolbarshow"></a><a name="show"></a> Cmfcribbonmini araç çubuğu:: show
 
-Mini araç çubuğunu belirtilen ekran koordinatlarında görüntüler.
+Belirtilen Ekran koordinatlarındaki Mini araç çubuğunu görüntüler.
 
 ```
 BOOL Show(
@@ -122,19 +123,19 @@ BOOL Show(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-[içinde] Ekran koordinatlarında mini araç çubuğunun yatay konumunu belirtir.
+*x*<br/>
+'ndaki Ekran koordinatlarındaki Mini araç çubuğunun yatay konumunu belirtir.
 
-*Y*<br/>
-[içinde] Ekran koordinatlarında mini araç çubuğunun dikey konumunu belirtir.
+*Iz*<br/>
+'ndaki Ekran koordinatlarındaki Mini araç çubuğunun dikey konumunu belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Mini araç çubuğu başarıyla görüntülendiyse DOĞRU; aksi takdirde, YANLIŞ.
+Mini araç çubuğu başarıyla görüntüleniyorsa doğru; Aksi takdirde, FALSE.
 
-## <a name="cmfcribbonminitoolbarshowwithcontextmenu"></a><a name="showwithcontextmenu"></a>CMFCRibbonMiniToolBar::ShowWithContextMenu
+## <a name="cmfcribbonminitoolbarshowwithcontextmenu"></a><a name="showwithcontextmenu"></a> CMFCRibbonMiniToolBar:: ShowWithContextMenu
 
-Mini araç çubuğunu bağlam menüsüyle birlikte görüntüler.
+Mini araç çubuğunu bir bağlam menüsü ile birlikte görüntüler.
 
 ```
 BOOL ShowWithContextMenu(
@@ -146,29 +147,29 @@ BOOL ShowWithContextMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-[içinde] Ekran koordinatlarında bağlam menüsünün yatay konumunu belirtir.
+*x*<br/>
+'ndaki Ekran koordinatlarındaki bağlam menüsünün yatay konumunu belirtir.
 
-*Y*<br/>
-[içinde] Ekran koordinatlarında bağlam menüsünün dikey konumunu belirtir.
+*Iz*<br/>
+'ndaki Ekran koordinatlarındaki bağlam menüsünün dikey konumunu belirtir.
 
-*uiMenuResID*<br/>
-[içinde] Görüntülenecek bağlam menüsünün kaynak kimliğini belirtir.
+*Uııd*<br/>
+'ndaki Görüntülenecek bağlam menüsünün kaynak KIMLIĞINI belirtir.
 
-*pWndSahibi*<br/>
-[içinde] Bağlam menüsünden ileti alan pencereyi tanımlar.
+*pWndOwner*<br/>
+'ndaki Bağlam menüsünden iletileri alan pencereyi tanımlar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağlam menüsü başarıyla görüntülendiyse DOĞRU; aksi takdirde, YANLIŞ.
+Bağlam menüsü başarıyla görüntüleniyorsa doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağlam menüsü olan bir mini araç çubuğu görüntülemek için bu işlevi kullanın. Bağlam menüsü mini araç çubuğunun 15 piksel altında konumlandırılmış.
+Bağlam menüsü olan Mini araç çubuğunu göstermek için bu işlevi kullanın. Bağlam menüsü, Mini araç çubuğunun altında 15 piksel konumlandırılır.
 
-## <a name="cmfcribbonminitoolbariscontextmenumode"></a><a name="iscontextmenumode"></a>CMFCRibbonMiniToolBar::IscontextMenuMode
+## <a name="cmfcribbonminitoolbariscontextmenumode"></a><a name="iscontextmenumode"></a> CMFCRibbonMiniToolBar:: ıscontextmenumode
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
 ```
 BOOL IsContextMenuMode() const;
@@ -178,9 +179,9 @@ BOOL IsContextMenuMode() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbonminitoolbarisribbonminitoolbar"></a><a name="isribbonminitoolbar"></a>CMFCRibbonMiniToolBar::IsRibbonMiniToolBar
+## <a name="cmfcribbonminitoolbarisribbonminitoolbar"></a><a name="isribbonminitoolbar"></a> CMFCRibbonMiniToolBar:: IsRibbonMiniToolBar
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
 ```
 virtual BOOL IsRibbonMiniToolBar() const;
@@ -192,5 +193,5 @@ virtual BOOL IsRibbonMiniToolBar() const;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

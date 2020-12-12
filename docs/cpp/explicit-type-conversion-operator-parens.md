@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: açık tür dönüştürme Işleci: ()'
 title: 'Açık Tür Dönüştürme İşleci: ()'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - data type conversion [C++], explicit
 - type conversion [C++], explicit conversions
 ms.assetid: 54272006-5ffb-45ed-8283-27152ab97529
-ms.openlocfilehash: c168653a82b4d4c5023de1f76a1e6269625c74d8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cb2a1ff742b71edf2f298512a55ab37dd3d37f77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81354857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273390"
 ---
 # <a name="explicit-type-conversion-operator-"></a>Açık Tür Dönüştürme İşleci: ()
 
 C++, işlev çağrısı sözdizimine benzer bir sözdizimi kullanarak açık tür dönüştürme sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 simple-type-name ( expression-list )
@@ -27,13 +28,13 @@ simple-type-name ( expression-list )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Parantez içinde ekteki bir *ifade listesi* nin ardından gelen *basit bir tür adı,* belirtilen ifadeleri kullanarak belirtilen türden bir nesne yi kurar. Aşağıdaki örnekte, int türüne yapılan açık tür dönüştürme gösterilmektedir:
+Bir *basit-tür adı* ve ardından ayraç içine alınmış bir *liste* , belirtilen ifadeleri kullanarak belirtilen türde bir nesne oluşturur. Aşağıdaki örnekte, int türüne yapılan açık tür dönüştürme gösterilmektedir:
 
 ```cpp
 int i = int( d );
 ```
 
-Aşağıdaki örnekbir `Point` sınıf gösterir.
+Aşağıdaki örnekte bir sınıfı gösterilmektedir `Point` .
 
 ## <a name="example"></a>Örnek
 
@@ -116,16 +117,16 @@ struct Point
 Point pt = Point( 3, 10 );
 ```
 
-İşlev stili dönüştürmeyi kullanan önceki örnek, iki değerin (biri *x* için, diğeri *y*için) kullanıcı tanımlı türe `Point`nasıl dönüştürüldüğünü gösterir.
+İşlev stili dönüştürme kullanan önceki örnek, iki değerin ( *x* için bir ve *y* için) Kullanıcı tanımlı türe nasıl dönüştürüleceğini gösterir `Point` .
 
 > [!CAUTION]
 > C++ derleyicisinin yerleşik tür denetimini geçersiz kıldıkları için açık tür dönüştürmelerini dikkatlice kullanın.
 
-[Döküm](../cpp/cast-operator-parens.md) gösterimi, basit tür *adı* olmayan türlere (örneğin işaretçi veya başvuru türleri) dönüşümler için kullanılmalıdır. Basit bir *tür adı* ile ifade edilebilir türlere dönüştürme her iki formda da yazılabilir.
+[Atama](../cpp/cast-operator-parens.md) gösterimi *basit tür adı* olmayan türlere Dönüştürmelere (örneğin, işaretçi veya başvuru türleri) sahip olmak için kullanılmalıdır. *Basit tür adı* ile ifade edilebilir türlere dönüştürme, herhangi bir biçimde yazılabilir.
 
-Dökümler içindeki tür tanımı yasa dışıdır.
+Atamalar içindeki tür tanımı geçersiz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sonek İfadeleri](../cpp/postfix-expressions.md)<br/>
+[Sonek Ifadeleri](../cpp/postfix-expressions.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

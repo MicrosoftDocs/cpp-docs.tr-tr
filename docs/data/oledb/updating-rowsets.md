@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: satır kümelerini güncelleştirme'
 title: Satır Kümelerini Güncelleştirme
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - updating rowsets
 - rowsets
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
-ms.openlocfilehash: 134ab73428b7535bb34094b7d5b1952fd61a3d69
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3e5fcd374e446670df586c27e6b6e89d5da30da6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272532"
 ---
 # <a name="updating-rowsets"></a>Satır Kümelerini Güncelleştirme
 
@@ -31,7 +32,7 @@ Müşteriler satır kümesi verilerinde aşağıdaki tür güncelleştirmeleri t
 > [!NOTE]
 > ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. İşlevselliği el ile de ekleyebilirsiniz. Daha fazla bilgi için bkz. [Sihirbaz kullanmadan tüketici oluşturma](creating-a-consumer-without-using-a-wizard.md).
 
-**ATL OLE DB tüketici sihirbazıyla**bir tüketici oluşturduğunuzda, üç onay kutusundan bir veya daha fazlasını **değiştirme**, **ekleme**ve **silme**işlemlerini seçerek güncelleştirme işlemlerini destekleyebilirsiniz. Bu seçenekleri belirlerseniz, sihirbaz seçtiğiniz değişikliklerin türünü desteklemek için kodu uygun şekilde değiştirir. Ancak Sihirbazı kullanmıyorsanız, güncelleştirmeleri desteklemek için aşağıdaki satır kümesi özelliklerini ayarlamanız gerekir `VARIANT_TRUE` :
+**ATL OLE DB tüketici sihirbazıyla** bir tüketici oluşturduğunuzda, üç onay kutusundan bir veya daha fazlasını **değiştirme**, **ekleme** ve **silme** işlemlerini seçerek güncelleştirme işlemlerini destekleyebilirsiniz. Bu seçenekleri belirlerseniz, sihirbaz seçtiğiniz değişikliklerin türünü desteklemek için kodu uygun şekilde değiştirir. Ancak Sihirbazı kullanmıyorsanız, güncelleştirmeleri desteklemek için aşağıdaki satır kümesi özelliklerini ayarlamanız gerekir `VARIANT_TRUE` :
 
 - `DBPROPVAL_UP_CHANGE` bir satırdaki veri değerlerini değiştirmenize izin verir.
 
@@ -133,7 +134,7 @@ HRESULT hr = product.Insert();
 
 Daha ayrıntılı bir örnek için bkz. [CRowset:: INSERT](./crowset-class.md#insert).
 
-Durum ve uzunluk veri üyelerini ayarlama hakkında daha fazla bilgi için, bkz. [sihirbaz tarafından oluşturulan Erişimcilerde alan durumu veri üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).
+Durum ve uzunluk veri üyelerini ayarlama hakkında daha fazla bilgi için, bkz. [Wizard-Generated erişimcileri Içindeki alan durumu verileri üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md).
 
 ## <a name="deleting-rows-from-rowsets"></a>Satır kümelerinde satırları silme
 
@@ -164,7 +165,7 @@ Güncelleştirme yöntemleri tarafından kullanılan güncelleştirme, komutta d
 
 Ertelenmiş güncelleştirmeler, örneğin, banka işlemleri dizisi gibi durumlarda faydalıdır; bir işlem iptal edilirse, son bir işlem tamamlanana kadar değişiklik serisini göndermediğinden değişikliği geri alabilirsiniz. Ayrıca sağlayıcı, değişiklikleri daha verimli bir şekilde tek bir ağ çağrısıyla paketleyip.
 
-Ertelenmiş güncelleştirmeleri desteklemek için `DBPROP_IRowsetChange` özelliği, **güncelleştirme işlemlerini destekleme**bölümünde açıklanan özelliklerle birlikte ayarlamanız gerekir:
+Ertelenmiş güncelleştirmeleri desteklemek için `DBPROP_IRowsetChange` özelliği, **güncelleştirme işlemlerini destekleme** bölümünde açıklanan özelliklerle birlikte ayarlamanız gerekir:
 
 ```cpp
 pPropSet->AddProperty(DBPROP_IRowsetUpdate, true);

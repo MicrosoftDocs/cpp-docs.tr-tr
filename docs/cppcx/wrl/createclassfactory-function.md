@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CreateClassFactory Işlevi'
 title: CreateClassFactory İşlevi
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CreateClassFactory function
 ms.assetid: 772d5d1b-8872-4745-81ca-521a39564713
-ms.openlocfilehash: 0467a9a1341e29a61a3b32d999769b01385f641f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 99565ee732843f57426f10375ffabc7680ef3c62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273065"
 ---
 # <a name="createclassfactory-function"></a>CreateClassFactory İşlevi
 
@@ -32,11 +33,11 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 
 ### <a name="parameters"></a>Parametreler
 
-*larına*<br/>
+*bayraklar*<br/>
 Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırma değerinin birleşimi.
 
-*entry*<br/>
-Başlatma *ve parametreli parametre*hakkında bilgi Içeren bir [CreatorMap](creatormap-structure.md) işaretçisi.
+*girişte*<br/>
+Başlatma *ve parametreli parametre* hakkında bilgi Içeren bir [CreatorMap](creatormap-structure.md) işaretçisi.
 
 *riıd*<br/>
 Arabirim KIMLIĞINE başvuru.
@@ -50,7 +51,7 @@ Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon parametre *fabrikası* `IClassFactory`arabiriminden türetilmezse bir onaylama hatası yayınlanır.
+Şablon parametresi *fabrikası* arabirimden türetilmezse bir onaylama hatası yayınlanır `IClassFactory` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -60,4 +61,4 @@ Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Wrappers::Details Ad Alanı](microsoft-wrl-wrappers-details-namespace.md)
+[Microsoft:: WRL:: sarmalayıcılar::D euçlar ad alanı](microsoft-wrl-wrappers-details-namespace.md)

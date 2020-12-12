@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: açık olarak varsayılan ve silinen Işlevler'
 title: Açıkça Varsayılan Haline Getirilen ve Silinen İşlevler
 ms.date: 11/04/2016
 ms.assetid: 5a588478-fda2-4b3f-a279-db3967f5e07e
-ms.openlocfilehash: fd3fb53dec0cc08274b7ea54176c2a15dbab45d7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a3c4789996d39acd4ddd3bbc186ce39509a1d62f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273364"
 ---
 # <a name="explicitly-defaulted-and-deleted-functions"></a>Açıkça Varsayılan Haline Getirilen ve Silinen İşlevler
 
@@ -15,7 +16,7 @@ C++ 11 ' de, varsayılan ve silinmiş işlevler özel üye işlevlerinin otomati
 
 ## <a name="benefits-of-explicitly-defaulted-and-deleted-functions"></a>Açıkça varsayılan olarak ayarlanmış ve silinen işlevlerin avantajları
 
-C ++'da, derleyici varsayılan oluşturucuyu, kopya oluşturucuyu, kopya atama işlecini ve yıkıcıyı bunları bildirmeyen bir tür için otomatik olarak atar. Bu işlevler *özel üye işlevleri*olarak bilinir ve C++ ' da basit kullanıcı tanımlı türler C 'de yapılar gibi davranır. Diğer bir deyişle, ek kodlama çabaları olmadan bunları oluşturabilir, kopyalayabilir ve yok edebilirsiniz. C++11, dil için daha fazla semantik sağlar ve taşıma oluşturucuyu ve taşıma atama oluşturucusunu derleyicinin otomatik olarak oluşturabileceği özel üye işlevleri listesine ekler.
+C ++'da, derleyici varsayılan oluşturucuyu, kopya oluşturucuyu, kopya atama işlecini ve yıkıcıyı bunları bildirmeyen bir tür için otomatik olarak atar. Bu işlevler *özel üye işlevleri* olarak bilinir ve C++ ' da basit kullanıcı tanımlı türler C 'de yapılar gibi davranır. Diğer bir deyişle, ek kodlama çabaları olmadan bunları oluşturabilir, kopyalayabilir ve yok edebilirsiniz. C++11, dil için daha fazla semantik sağlar ve taşıma oluşturucuyu ve taşıma atama oluşturucusunu derleyicinin otomatik olarak oluşturabileceği özel üye işlevleri listesine ekler.
 
 Bu basit türler için uygundur, ancak karmaşık türler genellikle bir veya daha fazla özel üye işlevi tanımlar ve bu, diğer özel üye işlevlerinin otomatik olarak oluşturulmasını engelleyebilir. Uygulamada:
 

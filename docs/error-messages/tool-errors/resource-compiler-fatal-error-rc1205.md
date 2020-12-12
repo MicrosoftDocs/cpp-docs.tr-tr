@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kaynak derleyicisi önemli hatası RC1205'
 title: Kaynak Derleyicisi Önemli Hatası RC1205
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC1205
 ms.assetid: 6cfbe019-ad8a-4267-b4b9-0d675bb3819a
-ms.openlocfilehash: 5a35b01ebd0b058a101bc41d7224ae79963ba3fe
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 72e834d43f83858c215647713c9279cf9d920c7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172873"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271960"
 ---
 # <a name="resource-compiler-fatal-error-rc1205"></a>Kaynak Derleyicisi Önemli Hatası RC1205
 

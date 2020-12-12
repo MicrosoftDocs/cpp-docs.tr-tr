@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: şema satır kümelerini destekleme'
 title: Şema Satır Kümelerini Destekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: 156fe9c7a2b15f7254fb0c83f8b25982aa5ad09a
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 029b05f594dda01112cd975543462f92e351b1c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924310"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272740"
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
 
@@ -146,7 +147,7 @@ if (InlineIsEqualGUID(rguidSchema[l], DBSCHEMA_TABLES))
     rgRestrictions[l] = 0x0C;
 ```
 
-Aşağıdaki `Execute` işlev normal satır kümelerinde benzerdir. Üç bağımsız değişkendir: *Pcrowsabetkilenen* , *CRestrictions* ve *rgRestrictions* . *Pcrowsaetkilenen* değişkeni, sağlayıcının şema satır kümesinde satır sayısını döndüre, bir çıkış parametresidir. *CRestrictions* parametresi, tüketici tarafından Sağlayıcıya geçirilen kısıtlamaların sayısını tutan bir giriş parametresidir. *RgRestrictions* parametresi, kısıtlama değerlerini tutan bir değişken değerleri dizisidir.
+Aşağıdaki `Execute` işlev normal satır kümelerinde benzerdir. Üç bağımsız değişkendir: *Pcrowsabetkilenen*, *CRestrictions* ve *rgRestrictions*. *Pcrowsaetkilenen* değişkeni, sağlayıcının şema satır kümesinde satır sayısını döndüre, bir çıkış parametresidir. *CRestrictions* parametresi, tüketici tarafından Sağlayıcıya geçirilen kısıtlamaların sayısını tutan bir giriş parametresidir. *RgRestrictions* parametresi, kısıtlama değerlerini tutan bir değişken değerleri dizisidir.
 
 ```cpp
 HRESULT Execute(DBROWCOUNT* pcRowsAffected, ULONG cRestrictions,

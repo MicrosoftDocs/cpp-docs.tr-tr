@@ -1,17 +1,18 @@
 ---
+description: 'Daha fazla bilgi edinin: başvuru sınıfları ve yapıları (C++/CX)'
 title: Başvuru Sınıfları ve Yapıları (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
-ms.openlocfilehash: d128734f8c78c9198f0731b415c1be35b0c58e65
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e87709febd03c185ec50845ff6fbb1a5ee27aba7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273234"
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Başvuru Sınıfları ve Yapıları (C++/CX)
 
-C++/CX Kullanıcı tanımlı *başvuru sınıflarını* ve *başvuru*yapılarını ve Kullanıcı tanımlı *değer sınıflarını* ve *değer*yapılarını destekler. Bu veri yapıları, C++/CX Windows Çalışma Zamanı tür sistemini desteklediği birincil kapsayıcılardır. İçerikleri belirli belirli kurallara göre meta verilere dağıtılır ve bu, C++ veya diğer dillerde yazılan Windows Çalışma Zamanı bileşenleri ve Evrensel Windows Platformu uygulamalar arasında geçirilmesini sağlar.
+C++/CX Kullanıcı tanımlı *başvuru sınıflarını* ve *başvuru* yapılarını ve Kullanıcı tanımlı *değer sınıflarını* ve *değer* yapılarını destekler. Bu veri yapıları, C++/CX Windows Çalışma Zamanı tür sistemini desteklediği birincil kapsayıcılardır. İçerikleri belirli belirli kurallara göre meta verilere dağıtılır ve bu, C++ veya diğer dillerde yazılan Windows Çalışma Zamanı bileşenleri ve Evrensel Windows Platformu uygulamalar arasında geçirilmesini sağlar.
 
 Bir başvuru sınıfı veya başvuru yapısına bu temel özellikler sahiptir:
 
@@ -19,7 +20,7 @@ Bir başvuru sınıfı veya başvuru yapısına bu temel özellikler sahiptir:
 
 - Bu, başvuru sınıfları, değer sınıfları, başvuru yapıları, değer yapıları veya null yapılabilir değer yapıları dahil olmak üzere, Üyeler C++/CX olarak içerebilir. Ayrıca, vb. gibi skaler türler de `float64` içerebilir **`bool`** . `std::vector`Ortak olmadığı sürece, veya özel bir sınıf gibi standart C++ türlerini de içerebilir. C++/CX yapıları,, **`public`** , **`protected`** **`internal`** **`private`** veya **`protected private`** erişilebilirliğine sahip olabilir. Tüm **`public`** veya **`protected`** Üyeler meta verilere dağıtılır. Standart C++ türlerinde,, **`private`** **`internal`** veya erişilebilirliği olmalıdır ve bu, **`protected private`** meta verilere yayılmasını önler.
 
-- Bir veya daha fazla *arabirim sınıfı* veya *arabirim yapıları*uygulayabilir.
+- Bir veya daha fazla *arabirim sınıfı* veya *arabirim yapıları* uygulayabilir.
 
 - Bir temel sınıftan devralınabilir ve temel sınıfların kendilerine ek kısıtlamalar vardır. Ortak başvuru sınıfı hiyerarşilerindeki devralmanın özel başvuru sınıflarında devralmayla daha fazla kısıtlaması vardır.
 
@@ -97,7 +98,7 @@ Farklı erişilebilirlik, sanallaştırlık ve mevsimlik birleşimine izin veril
 
 Zaten yıkıcı çalıştırması olan bir sınıfın üyelerine erişmeye çalışırsanız davranış tanımsızdır; büyük olasılıkla programın kilitlenmesine neden olur. `delete t`Ortak yok edici olmayan bir türün çağrılması hiçbir etkiye sahip değildir. `delete this`Türü hiyerarşisinde bilinen veya yıkıcıya sahip olan bir tür veya temel sınıfın çağrılması **`private`** **`protected private`** de etkisizdir.
 
-Ortak bir yıkıcı bildirdiğinizde, derleyici, başvuru sınıfının uyguladığı `Platform::IDisposable` ve yıkıcının yöntemi uyguladığı şekilde kodu oluşturur `Dispose` . `Platform::IDisposable`, C++/CX projeksiyonu `Windows::Foundation::IClosable` . Bu arabirimleri hiçbir daha açık olarak uygulamayın.
+Ortak bir yıkıcı bildirdiğinizde, derleyici, başvuru sınıfının uyguladığı `Platform::IDisposable` ve yıkıcının yöntemi uyguladığı şekilde kodu oluşturur `Dispose` . `Platform::IDisposable` , C++/CX projeksiyonu `Windows::Foundation::IClosable` . Bu arabirimleri hiçbir daha açık olarak uygulamayın.
 
 ## <a name="inheritance"></a>Devralma
 

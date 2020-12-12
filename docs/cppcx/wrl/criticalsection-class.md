@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Kritiksection sınıfı'
 title: CriticalSection Sınıfı
 ms.date: 09/24/2018
 ms.topic: reference
@@ -19,18 +20,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::CriticalSection::CriticalSection, constructor
 - Microsoft::WRL::Wrappers::CriticalSection::TryLock method
 ms.assetid: f2e0a024-71a3-4f6b-99ea-d93a4a608ac4
-ms.openlocfilehash: b95e512f89ee1ff32ca9f1bea51bce643d185a2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e570dfaef8fcf16084792d205fc3e322cf8be908
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220528"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273039"
 ---
 # <a name="criticalsection-class"></a>CriticalSection Sınıfı
 
 Kritik bir bölüm nesnesini temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CriticalSection;
@@ -69,7 +70,7 @@ Ad                        | Açıklama
 
 **Ad alanı:** Microsoft:: WRL:: sarmalayıcılar
 
-## <a name="criticalsectioncriticalsection"></a><a name="tilde-criticalsection"></a>Kritiksection:: ~ CriticalHandle bölümü
+## <a name="criticalsectioncriticalsection"></a><a name="tilde-criticalsection"></a> Kritiksection:: ~ CriticalHandle bölümü
 
 Geçerli nesneyi kaldırır ve yok eder `CriticalSection` .
 
@@ -77,7 +78,7 @@ Geçerli nesneyi kaldırır ve yok eder `CriticalSection` .
 WRL_NOTHROW ~CriticalSection();
 ```
 
-## <a name="criticalsectioncriticalsection"></a><a name="criticalsection"></a>Kritiksection:: Kritiksection
+## <a name="criticalsectioncriticalsection"></a><a name="criticalsection"></a> Kritiksection:: Kritiksection
 
 Bir mutex nesnesine benzer ancak yalnızca tek bir işlemin iş parçacıkları tarafından kullanılabilen bir eşitleme nesnesi başlatır.
 
@@ -96,7 +97,7 @@ Kritik bölüm nesnesi için döngü sayısı. Varsayılan değer 0’dır.
 
 Kritik bölümler ve spincounts hakkında daha fazla bilgi için, `InitializeCriticalSectionAndSpinCount` `Synchronization` Windows API 'si belgeleri bölümündeki işlevine bakın.
 
-## <a name="criticalsectioncs_"></a><a name="cs"></a>Kritiksection:: cs_
+## <a name="criticalsectioncs_"></a><a name="cs"></a> Kritiksection:: cs_
 
 Kritik bir bölüm veri üyesi bildirir.
 
@@ -108,7 +109,7 @@ CRITICAL_SECTION cs_;
 
 Bu veri üyesi korunuyor.
 
-## <a name="criticalsectionisvalid"></a><a name="isvalid"></a>Kritiksection:: IsValid
+## <a name="criticalsectionisvalid"></a><a name="isvalid"></a> Kritiksection:: IsValid
 
 Geçerli kritik bölümün geçerli olup olmadığını gösterir.
 
@@ -120,7 +121,7 @@ bool IsValid() const;
 
 Varsayılan olarak, her zaman döndürür **`true`** .
 
-## <a name="criticalsectionlock"></a><a name="lock"></a>Kritiksection:: Lock
+## <a name="criticalsectionlock"></a><a name="lock"></a> Kritiksection:: Lock
 
 Belirtilen kritik bölüm nesnesinin sahipliğini bekler. İşlev, çağıran iş parçacığına sahiplik verildiğinde döndürür.
 
@@ -145,7 +146,7 @@ Geçerli kritik bölümün kilidini açmak için kullanılabilecek bir kilit nes
 
 İlk `Lock` işlev geçerli kritik bölüm nesnesini etkiler. İkinci `Lock` işlev, Kullanıcı tarafından belirtilen bir kritik bölümü etkiler.
 
-## <a name="criticalsectiontrylock"></a><a name="trylock"></a>Kritiksection:: TryLock
+## <a name="criticalsectiontrylock"></a><a name="trylock"></a> Kritiksection:: TryLock
 
 Engellenmeden kritik bir bölüm girmeye çalışır. Çağrı başarılı olursa, çağıran iş parçacığı kritik bölümün sahipliğini alır.
 

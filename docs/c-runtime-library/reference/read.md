@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _read'
 title: _read
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - reading data [C++]
 - files [C++], reading
 ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
-ms.openlocfilehash: 2f43fc54a0092afc6ab5855c160a7879747faef7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f814c912c9f5d5e2dc7897cb3a2dcc8099503314
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274846"
 ---
 # <a name="_read"></a>_read
 
@@ -65,17 +66,17 @@ Okunacak en fazla bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_read** okunan bayt sayısını döndürür; bu, dosyada *Buffer_size* bayttan daha az veya dosya metin modunda açılırsa *Buffer_size* daha az olabilir. Metin modunda, her satır başı satır besleme çifti `\r\n` tek satırlık bir besleme karakteriyle `\n`değiştirilmiştir. Dönüş değerinde yalnızca tek satırlık akış karakteri sayılır. Değiştirme dosya işaretçisini etkilemez.
+**_read** okunan bayt sayısını döndürür; bu, dosyada *Buffer_size* bayttan daha az veya dosya metin modunda açılırsa *Buffer_size* daha az olabilir. Metin modunda, her satır başı satır besleme çifti `\r\n` tek satırlık bir besleme karakteriyle değiştirilmiştir `\n` . Dönüş değerinde yalnızca tek satırlık akış karakteri sayılır. Değiştirme dosya işaretçisini etkilemez.
 
-İşlev dosyanın sonunda okumaya çalışırsa, 0 döndürür. *FD* geçerli değilse, dosya okuma için açık değildir veya dosya kilitliyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** 'U **EBADF**olarak ayarlar.
+İşlev dosyanın sonunda okumaya çalışırsa, 0 döndürür. *FD* geçerli değilse, dosya okuma için açık değildir veya dosya kilitliyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** 'U **EBADF** olarak ayarlar.
 
-*Buffer* **null**ise veya *Buffer_size* > **INT_MAX**, geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Buffer* **null** ise veya *Buffer_size*  >  **INT_MAX**, geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Read** işlevi *FD*ile ilişkili dosyadan *arabelleğe* en fazla *Buffer_size* bayt okur. Okuma işlemi, belirtilen dosyayla ilişkili dosya işaretçisinin geçerli konumunda başlar. Okuma işleminden sonra, dosya işaretçisi sonraki okunmamış karakteri işaret eder.
+**_Read** işlevi *FD* ile ilişkili dosyadan *arabelleğe* en fazla *Buffer_size* bayt okur. Okuma işlemi, belirtilen dosyayla ilişkili dosya işaretçisinin geçerli konumunda başlar. Okuma işleminden sonra, dosya işaretçisi sonraki okunmamış karakteri işaret eder.
 
 Dosya metin modunda açılırsa, **_read** dosya sonu göstergesi olarak kabul EDILEN bir CTRL + Z karakteriyle karşılaştığında okuma işlemi sonlanır. Dosya sonu göstergesini temizlemek için [_lseek](lseek-lseeki64.md) kullanın.
 
@@ -85,7 +86,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_read**|\<GÇ. h>|
+|**_read**|\<io.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -133,7 +134,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_readtxt"></a>Giriş: crt_read. txt
+### <a name="input-crt_readtxt"></a>Giriş: crt_read.txt
 
 ```Input
 Line one.

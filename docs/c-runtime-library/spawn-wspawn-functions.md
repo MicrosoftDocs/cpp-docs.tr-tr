@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _spawn, _wspawn Işlevleri'
 title: _spawn, _wspawn İşlevleri
 ms.date: 11/04/2016
 api_location:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - tspawnlpe function
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-ms.openlocfilehash: 2f6aa420d7e6bb736721c4a68ff6451121da26ab
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4b5fe1b386358095880c69fbf956c7c0a4a08ba9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840420"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276913"
 ---
 # <a name="_spawn-_wspawn-functions"></a>_spawn, _wspawn İşlevleri
 
@@ -76,7 +77,7 @@ ms.locfileid: "88840420"
 
 İşlev adının sonundaki harfler çeşitlemesi tespit edin.
 
-|Harfi|Değişken|
+|Letter|Değişken|
 |-|-|
 | `e`  | `envp`, ortam ayarlarına işaretçiler dizisi yeni işleme geçirilir.  |
 | `l`  | Komut satırı bağımsız değişkenleri işleve tek tek geçirilir `_spawn` . Bu sonek genellikle yeni bir işleme yönelik bir dizi parametre önceden bilindiğinde kullanılır.  |
@@ -138,7 +139,7 @@ Bağımsız değişken işaretçilerini ayrı bağımsız değişkenler olarak (
 
 ## <a name="environment-of-the-spawned-process"></a>Oluşturulan Işlemin ortamı
 
-Bir çağrı yapıldığında açık olan dosyalar `_spawn` Yeni işlemde açık kalır. ,, `_spawnl` `_spawnlp` `_spawnv` Ve `_spawnvp` çağrılarında, yeni işlem çağıran işlemin ortamını devralır. `_spawnle` `_spawnlpe` `_spawnve` `_spawnvpe` Bir ortam ayarları listesini bağımsız değişken aracılığıyla geçirerek yeni işlem için ortamı değiştirmek üzere,, ve çağrılarını kullanabilirsiniz `envp` . Bağımsız değişkeni `envp` , bir ortam değişkenini tanımlayan null ile sonlandırılmış bir dizeye işaret eden, her öğe (Final öğesi hariç) bir karakter işaretçileri dizisidir. Bu tür bir dize genellikle `NAME` = `value` `NAME` bir ortam değişkeninin adı olduğu ve `value` söz konusu değişkenin ayarlandığı dize değerinin bulunduğu biçimdedir. ( `value` Çift tırnak işareti içine alınmadığını unutmayın.) Dizinin son öğesi `envp` **null**olmalıdır. `envp`Kendisi **null**olduğunda, oluşturulan işlem üst işlemin ortam ayarlarını devralır.
+Bir çağrı yapıldığında açık olan dosyalar `_spawn` Yeni işlemde açık kalır. ,, `_spawnl` `_spawnlp` `_spawnv` Ve `_spawnvp` çağrılarında, yeni işlem çağıran işlemin ortamını devralır. `_spawnle` `_spawnlpe` `_spawnve` `_spawnvpe` Bir ortam ayarları listesini bağımsız değişken aracılığıyla geçirerek yeni işlem için ortamı değiştirmek üzere,, ve çağrılarını kullanabilirsiniz `envp` . Bağımsız değişkeni `envp` , bir ortam değişkenini tanımlayan null ile sonlandırılmış bir dizeye işaret eden, her öğe (Final öğesi hariç) bir karakter işaretçileri dizisidir. Bu tür bir dize genellikle `NAME` = `value` `NAME` bir ortam değişkeninin adı olduğu ve `value` söz konusu değişkenin ayarlandığı dize değerinin bulunduğu biçimdedir. ( `value` Çift tırnak işareti içine alınmadığını unutmayın.) Dizinin son öğesi `envp` **null** olmalıdır. `envp`Kendisi **null** olduğunda, oluşturulan işlem üst işlemin ortam ayarlarını devralır.
 
 `_spawn`İşlevler, çeviri modu dahil olmak üzere açık dosyalarla ilgili tüm bilgileri yeni işleme geçirebilir. Bu bilgiler, ortamdaki giriş aracılığıyla gerçek modda geçirilir `C_FILE_INFO` . Başlangıç kodu normalde bu girişi işler ve sonra ortamdan siler. Ancak, bir `_spawn` Işlev C olmayan bir işleme giriş içeriyorsa, bu girdi ortamda kalır. Ortam bilgileri, gerçek modda ikili biçimde geçirildiğinden, ortamın yazdırılması Bu girdinin tanım dizesinde grafik karakterlerini gösterir. Normal işlemler üzerinde başka bir etkiye sahip olmamalıdır. Korumalı modda, ortam bilgileri metin biçiminde geçirilir ve bu nedenle grafik karakteri içermez.
 

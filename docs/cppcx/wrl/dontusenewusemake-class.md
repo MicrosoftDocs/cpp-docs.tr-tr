@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: DontUseNewUseMake sınıfı'
 title: DontUseNewUseMake Sınıfı
 ms.date: 09/21/2018
 ms.topic: reference
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::DontUseNewUseMake class
 - Microsoft::WRL::Details::DontUseNewUseMake::operator new operator
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
-ms.openlocfilehash: ae67373b4f2f2d4a199b939b06e6f526f1365446
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f6b6740e472123e59565e3bad16e4a535a4e17fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272909"
 ---
 # <a name="dontusenewusemake-class"></a>DontUseNewUseMake Sınıfı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class DontUseNewUseMake;
@@ -28,15 +29,15 @@ class DontUseNewUseMake;
 
 ## <a name="remarks"></a>Açıklamalar
 
-'de `RuntimeClass`operatör `new` kullanılmasını önler. Sonuç olarak, bunun yerine [Yap işlevini](make-function.md) kullanmanız gerekir.
+İçindeki işlecinin kullanımını `new` engeller `RuntimeClass` . Sonuç olarak, bunun yerine [Make işlevini](make-function.md) kullanmanız gerekir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-Adı                                             | Açıklama
+Ad                                             | Açıklama
 ------------------------------------------------ | ---------------------------------------------------------------------------
-[DontUseNewUseOlun::operatör yeni](#operator-new) | İşleticiaşırı `new` yükler ve 'de `RuntimeClass`kullanılmasını önler.
+[DontUseNewUseMake:: operator New](#operator-new) | Aşırı yüklemeler işleci `new` ve içinde kullanılmasını önler `RuntimeClass` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -44,13 +45,13 @@ Adı                                             | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** implements.h
+**Üst bilgi:** uygular. h
 
-**Ad alanı:** Microsoft::WRL::D etails
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="dontusenewusemakeoperator-new"></a><a name="operator-new"></a>DontUseNewUseOlun::operatör yeni
+## <a name="dontusenewusemakeoperator-new"></a><a name="operator-new"></a> DontUseNewUseMake:: operator New
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 void* operator new(
@@ -62,15 +63,15 @@ void* operator new(
 ### <a name="parameters"></a>Parametreler
 
 *__unnamed0*<br/>
-Ayrılacak bellek baytlarının sayısını belirten adsız bir parametre.
+Ayrılacak belleğin bayt sayısını belirten adlandırılmamış bir parametre.
 
-*Yerleşim*<br/>
-Tahsis edilecek tür.
+*yerleştirilmesine*<br/>
+Ayrılacak tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleç `new`aşırı yüklerseniz ek bağımsız değişkenleri geçirmek için bir yol sağlar.
+İşleci aşırı yüklüyorsanız ek bağımsız değişkenler geçirmek için bir yol sağlar `new` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleticiaşırı `new` yükler ve 'de `RuntimeClass`kullanılmasını önler.
+Aşırı yüklemeler işleci `new` ve içinde kullanılmasını önler `RuntimeClass` .

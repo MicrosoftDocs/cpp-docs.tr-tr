@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_app_type'
 title: _set_app_type
 ms.date: 4/2/2020
 api_name:
@@ -15,12 +16,12 @@ f1_keywords:
 - _set_app_type
 - corecrt_startup/_set_app_type
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
-ms.openlocfilehash: 2b78b7205b1e5dda7ac7062747c6dd1065ed1c94
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cd04f1c17f7876c08f8eafb4ef77960073fb3f33
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277108"
 ---
 # <a name="_set_app_type"></a>_set_app_type
 
@@ -54,7 +55,7 @@ Uygulama türünü gösteren bir değer. Olası değerler şunlardır:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Normalde, bu işlevi çağırmanız gerekmez. Uygulamanızda çağrılmadan önce `main` yürüten C çalışma zamanı başlangıç kodunun bir parçasıdır.
+Normalde, bu işlevi çağırmanız gerekmez. Uygulamanızda çağrılmadan önce yürüten C çalışma zamanı başlangıç kodunun bir parçasıdır `main` .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](global-state.md).
 

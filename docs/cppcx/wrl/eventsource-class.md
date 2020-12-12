@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: EventSource sınıfı'
 title: EventSource Sınıfı
 ms.date: 09/12/2018
 ms.topic: reference
@@ -23,16 +24,16 @@ helpviewer_keywords:
 - Microsoft::WRL::EventSource::targets_ data member
 - Microsoft::WRL::EventSource::targetsPointerLock_ data member
 ms.assetid: 91f1c072-6af4-44e6-b6d8-ac6d0c688dde
-ms.openlocfilehash: bb9151e55d133e3e5d8bf10baeb8448101ad6ce0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2553d82a0fc16cd759f43ef2e4ae9527884cab10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371536"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272818"
 ---
 # <a name="eventsource-class"></a>EventSource Sınıfı
 
-Çevik olmayan bir olayı temsil eder. `EventSource`üye işlevler olay işleyicileri ekleyin, kaldırın ve çağırır. Çevik olaylar için [AgileEventSource'u](agileeventsource-class.md)kullanın.
+Çevik olmayan bir olayı temsil eder. `EventSource` üye işlevleri olay işleyicilerini ekler, kaldırır ve çağırır. Çevik olaylar için [Agileeventsource](agileeventsource-class.md)kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,33 +44,33 @@ class EventSource;
 
 ### <a name="parameters"></a>Parametreler
 
-*TDelegateArayüzü*<br/>
-Olay işleyicisini temsil eden bir temsilcinin arabirimi.
+*Tdelegateınterface*<br/>
+Bir olay işleyicisini temsil eden bir temsilci için arabirim.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-| Adı                                     | Açıklama                                            |
+| Ad                                     | Açıklama                                            |
 | ---------------------------------------- | ------------------------------------------------------ |
-| [EventSource::EventSource](#eventsource) | `EventSource` sınıfının yeni bir örneğini başlatır. |
+| [EventSource:: EventSource](#eventsource) | `EventSource` sınıfının yeni bir örneğini başlatır. |
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-| Adı                                 | Açıklama                                                                                                                                                      |
+| Ad                                 | Açıklama                                                                                                                                                      |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [EventSource::Ekle](#add)             | Belirtilen temsilci arabirimi tarafından temsil edilen olay işleyicisini geçerli `EventSource` nesne için olay işleyicileri kümesine ekler.                     |
-| [EventSource::GetSize](#getsize)     | Geçerli `EventSource` nesneyle ilişkili olay işleyicilerinin sayısını alır.                                                                         |
-| [EventSource::InvokeAll](#invokeall) | Belirtilen bağımsız değişken türlerini `EventSource` ve bağımsız değişkenlerini kullanarak geçerli nesneyle ilişkili her olay işleyicisini çağırır.                                      |
-| [EventSource::Kaldır](#remove)       | Geçerli `EventSource` nesneyle ilişkili olay işleyicileri kümesinden belirtilen olay kaydı belirteci tarafından temsil edilen olay işleyicisini siler. |
+| [EventSource:: Add](#add)             | Belirtilen temsilci arabirimiyle temsil edilen olay işleyicisini geçerli nesne için olay işleyicileri kümesine ekler `EventSource` .                     |
+| [EventSource:: GetSize](#getsize)     | Geçerli nesneyle ilişkili olay işleyicilerinin sayısını alır `EventSource` .                                                                         |
+| [EventSource:: InvokeAll](#invokeall) | `EventSource`Belirtilen bağımsız değişken türlerini ve bağımsız değişkenlerini kullanarak geçerli nesneyle ilişkili her olay işleyicisini çağırır.                                      |
+| [EventSource:: Remove](#remove)       | Belirtilen olay kayıt belirteci tarafından temsil edilen olay işleyicisini geçerli nesneyle ilişkili olay işleyicileri kümesinden siler `EventSource` . |
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-| Adı                                                    | Açıklama                                                                                                                       |
+| Ad                                                    | Açıklama                                                                                                                       |
 | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| [EventSource:addRemoveLock_](#addremovelock)           | Olay işleyicileri eklerken, kaldırırken veya çağırırken [targets_](#targets) diziye erişimi eşitler.                          |
-| [EventSource:targets_](#targets)                       | Bir veya daha fazla olay işleyicisi dizisi.                                                                                           |
-| [OlayKaynak:targetsPointerLock_](#targetspointerlock) | Bu EventSource'un olay işleyicileri eklenirken, kaldırılırken veya çağrılsa bile dahili veri üyelerine erişimi eşitler. |
+| [EventSource:: addRemoveLock_](#addremovelock)           | Olay işleyicilerini eklerken, kaldırırken veya çağırırken [targets_](#targets) dizisine erişimi eşitler.                          |
+| [EventSource:: targets_](#targets)                       | Bir veya daha fazla olay işleyicilerinden oluşan bir dizi.                                                                                           |
+| [EventSource:: targetsPointerLock_](#targetspointerlock) | Bu EventSource için olay işleyicileri eklendikten, kaldırılmakta veya çağrıldığında bile iç veri üyelerine erişimi eşitler. |
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -77,13 +78,13 @@ Olay işleyicisini temsil eden bir temsilcinin arabirimi.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** event.h
+**Üstbilgi:** Event. h
 
-**Ad alanı:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
-## <a name="eventsourceadd"></a><a name="add"></a>EventSource::Ekle
+## <a name="eventsourceadd"></a><a name="add"></a> EventSource:: Add
 
-Belirtilen temsilci arabirimi tarafından temsil edilen olay işleyicisini geçerli `EventSource` nesne için olay işleyicileri kümesine ekler.
+Belirtilen temsilci arabirimiyle temsil edilen olay işleyicisini geçerli nesne için olay işleyicileri kümesine ekler `EventSource` .
 
 ```cpp
 HRESULT Add(
@@ -94,25 +95,25 @@ HRESULT Add(
 
 ### <a name="parameters"></a>Parametreler
 
-*delegeArayüz*<br/>
-Olay işleyicisini temsil eden bir temsilci nesnesine arabirim.
+*Delegateınterface*<br/>
+Bir olay işleyicisini temsil eden bir temsilci nesnesine arabirim.
 
-*token*<br/>
-Bu işlem tamamlandığında, olayı temsil eden bir tutamaç. Olay işleyicisini atmak için [Kaldır()](#remove) yönteminin parametresi olarak bu belirteci kullanın.
+*simgesinde*<br/>
+Bu işlem tamamlandığında, olayı temsil eden bir tanıtıcı. Olay işleyicisini atmak için [Remove ()](#remove) yöntemine parametre olarak bu belirteci kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="eventsourceaddremovelock_"></a><a name="addremovelock"></a>EventSource:addRemoveLock_
+## <a name="eventsourceaddremovelock_"></a><a name="addremovelock"></a> EventSource:: addRemoveLock_
 
-Olay işleyicileri eklerken, kaldırırken veya çağırırken [targets_](#targets) diziye erişimi eşitler.
+Olay işleyicilerini eklerken, kaldırırken veya çağırırken [targets_](#targets) dizisine erişimi eşitler.
 
 ```cpp
 Wrappers::SRWLock addRemoveLock_;
 ```
 
-## <a name="eventsourceeventsource"></a><a name="eventsource"></a>EventSource::EventSource
+## <a name="eventsourceeventsource"></a><a name="eventsource"></a> EventSource:: EventSource
 
 `EventSource` sınıfının yeni bir örneğini başlatır.
 
@@ -120,9 +121,9 @@ Wrappers::SRWLock addRemoveLock_;
 EventSource();
 ```
 
-## <a name="eventsourcegetsize"></a><a name="getsize"></a>EventSource::GetSize
+## <a name="eventsourcegetsize"></a><a name="getsize"></a> EventSource:: GetSize
 
-Geçerli `EventSource` nesneyle ilişkili olay işleyicilerinin sayısını alır.
+Geçerli nesneyle ilişkili olay işleyicilerinin sayısını alır `EventSource` .
 
 ```cpp
 size_t GetSize() const;
@@ -130,11 +131,11 @@ size_t GetSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[targets_'daki](#targets)olay işleyicilerinin sayısı.
+[Targets_](#targets)içindeki olay işleyicilerinin sayısı.
 
-## <a name="eventsourceinvokeall"></a><a name="invokeall"></a>EventSource::InvokeAll
+## <a name="eventsourceinvokeall"></a><a name="invokeall"></a> EventSource:: InvokeAll
 
-Belirtilen bağımsız değişken türlerini `EventSource` ve bağımsız değişkenlerini kullanarak geçerli nesneyle ilişkili her olay işleyicisini çağırır.
+`EventSource`Belirtilen bağımsız değişken türlerini ve bağımsız değişkenlerini kullanarak geçerli nesneyle ilişkili her olay işleyicisini çağırır.
 
 ```cpp
 void InvokeAll();
@@ -293,7 +294,7 @@ void InvokeAll(
 ### <a name="parameters"></a>Parametreler
 
 *T0*<br/>
-Sıfırıncı olay işleyicisi bağımsız değişkeninin türü.
+Diğer olay işleyicisi bağımsız değişkeninin türü.
 
 *T1*<br/>
 İlk olay işleyicisi bağımsız değişkeninin türü.
@@ -323,7 +324,7 @@ Sekizinci olay işleyicisi bağımsız değişkeninin türü.
 Dokuzuncu olay işleyicisi bağımsız değişkeninin türü.
 
 *arg0*<br/>
-Sıfırıncı olay işleyicisi bağımsız değişkeni.
+Diğer olay işleyicisi bağımsız değişkeni.
 
 *arg1*<br/>
 İlk olay işleyicisi bağımsız değişkeni.
@@ -352,9 +353,9 @@ Sekizinci olay işleyicisi bağımsız değişkeni.
 *arg9*<br/>
 Dokuzuncu olay işleyicisi bağımsız değişkeni.
 
-## <a name="eventsourceremove"></a><a name="remove"></a>EventSource::Kaldır
+## <a name="eventsourceremove"></a><a name="remove"></a> EventSource:: Remove
 
-Geçerli `EventSource` nesneyle ilişkili olay işleyicileri kümesinden belirtilen olay kaydı belirteci tarafından temsil edilen olay işleyicisini siler.
+Belirtilen olay kayıt belirteci tarafından temsil edilen olay işleyicisini geçerli nesneyle ilişkili olay işleyicileri kümesinden siler `EventSource` .
 
 ```cpp
 HRESULT Remove(
@@ -364,20 +365,20 @@ HRESULT Remove(
 
 ### <a name="parameters"></a>Parametreler
 
-*token*<br/>
-Olay işleyicisi temsil eden bir tanıtıcı. Bu belirteç, olay işleyicisi [Ekle()](#add) yöntemi yle kaydedildiğinde döndürüldü.
+*simgesinde*<br/>
+Olay işleyicisini temsil eden bir tanıtıcı. Bu belirteç, olay işleyicisi [Add ()](#add) yöntemiyle kaydedildiğinde döndürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapı hakkında daha fazla bilgi için **Windows::Foundation::EventRegistrationToken Yapı** konusuna bakın. **Windows Runtime** `EventRegistrationToken`
+Yapı hakkında daha fazla bilgi için `EventRegistrationToken` , **Windows çalışma zamanı** başvuru belgelerindeki **Windows:: Foundation:: EventRegistrationToken yapısı** konusuna bakın.
 
-## <a name="eventsourcetargets_"></a><a name="targets"></a>EventSource:targets_
+## <a name="eventsourcetargets_"></a><a name="targets"></a> EventSource:: targets_
 
-Bir veya daha fazla olay işleyicisi dizisi.
+Bir veya daha fazla olay işleyicilerinden oluşan bir dizi.
 
 ```cpp
 ComPtr<Details::EventTargetArray> targets_;
@@ -385,11 +386,11 @@ ComPtr<Details::EventTargetArray> targets_;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli `EventSource` nesne tarafından temsil edilen olay oluştuğunda, olay işleyicileri çağrılır.
+Geçerli nesne tarafından temsil edilen olay `EventSource` oluştuğunda, olay işleyicileri çağırılır.
 
-## <a name="eventsourcetargetspointerlock_"></a><a name="targetspointerlock"></a>OlayKaynak:targetsPointerLock_
+## <a name="eventsourcetargetspointerlock_"></a><a name="targetspointerlock"></a> EventSource:: targetsPointerLock_
 
-Bunun `EventSource` için olay işleyicileri eklenirken, kaldırılırken veya çağrılsa bile dahili veri üyelerine erişimi eşitler.
+Bu, için olay işleyicileri `EventSource` eklendikten, kaldırılmakta veya çağrıldığında bile iç veri üyelerine erişimi eşitler.
 
 ```cpp
 Wrappers::SRWLock targetsPointerLock_;

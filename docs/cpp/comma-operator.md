@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: virgül Işleci:,'
 title: 'Virgül İşleci: ,'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - comma operator
 ms.assetid: 38e0238e-19da-42ba-ae62-277bfdab6090
-ms.openlocfilehash: 6ea2bd5c0e7653ba7f81531a5c39df2da41662a9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1429e2ce444e0f253bffca795f36f4e6194e0395
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189773"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274781"
 ---
 # <a name="comma-operator-"></a>Virgül İşleci: ,
 
 Bir deyim beklenirken iki deyimin gruplandırılmasını sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 expression , expression
@@ -29,7 +30,7 @@ Virgül işleci soldan sağa ilişkilendiriledir. Virgülle ayrılmış iki ifad
 
 Virgüller, işlev bağımsız değişken listeleri gibi bazı bağlamlarda ayırıcılar olarak kullanılabilir. Ayırıcı olarak virgül kullanımını işleç olarak kullanımıyla karıştırmayın; iki kullanım birbirinden tamamen farklıdır.
 
-`e1, e2` ifadesini göz önünde bulundurun. İfadenin türü ve değeri, *E2*türü ve değeridir; *E1* 'ın değerlendirilme sonucu atılır. Sağ işlenen l değeriyse, sonuç bir l değeri olur.
+`e1, e2` ifadesini göz önünde bulundurun. İfadenin türü ve değeri, *E2* türü ve değeridir; *E1* 'ın değerlendirilme sonucu atılır. Sağ işlenen l değeriyse, sonuç bir l değeri olur.
 
 Virgülün normalde bir ayırıcı olarak kullanıldığı yerlerde (örneğin, işlevlerin veya toplama başlatıcılarının gerçek bağımsız değişkenlerinde), virgül işleci ve işlenenleri parantez içine alınmalıdır. Örneğin:
 
@@ -62,6 +63,6 @@ int main () {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İkili İşleçli İfadeler](../cpp/expressions-with-binary-operators.md)<br/>
+[Ikili Işleçlere sahip ifadeler](../cpp/expressions-with-binary-operators.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
-[Sıralı Değerlendirme İşleci](../c-language/sequential-evaluation-operator.md)
+[Sıralı değerlendirme Işleci](../c-language/sequential-evaluation-operator.md)

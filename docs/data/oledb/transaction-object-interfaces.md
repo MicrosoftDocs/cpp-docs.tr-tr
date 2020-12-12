@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlem nesnesi arabirimleri'
 title: İşlem Nesnesi Arabirimleri
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 - interfaces, list of
 ms.assetid: d2ce99ce-6f7a-4ff9-bc6e-acda3633d5c8
-ms.openlocfilehash: b86064c162dcacfbbc5877614c63d92d0f2bd347
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: bc8eec6ca5a962e825eafa12255d8a47a8a463f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272649"
 ---
 # <a name="transaction-object-interfaces"></a>İşlem Nesnesi Arabirimleri
 
@@ -30,4 +31,4 @@ Aşağıdaki tabloda, bir işlem nesnesi için OLE DB tarafından tanımlanan zo
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/ZW (Windows Çalışma Zamanı Derlemesi)
 title: /ZW (Windows Çalışma Zamanı Derlemesi)
 ms.date: 04/08/2019
 f1_keywords:
@@ -11,46 +12,46 @@ helpviewer_keywords:
 - -ZW
 - Windows Runtime compiler option
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
-ms.openlocfilehash: 0808f66c4d4c4e99b3038ea18a1f71f4ebaca89a
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: b2c39cdfb3f1d22d12c8d07b1e844c550a7a0e3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273923"
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW (Windows Çalışma Zamanı Derlemesi)
 
-Derler kaynak kodu Microsoft desteklemek için C++ bileşen uzantıları C++/CX için evrensel Windows Platformu (UWP) uygulamaları oluşturma.
+Evrensel Windows Platformu (UWP) uygulamaları oluşturmak için Microsoft C++ bileşen uzantıları C++/CX ' nı destekleyecek kaynak kodu derler.
 
-Kullanırken **/ZW** derlemek için her zaman belirtin **/ehsc** de.
+Derlemek için **/ZW** kullandığınızda her zaman **/EHsc** ' i de belirtin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```cpp
 /ZW /EHsc
 /ZW:nostdlib /EHsc
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Bağımsız değişkenler
 
 **nostdlib**<br/>
-Bu Platform.winmd Windows.Foundation.winmd ve diğer varsayılan Windows meta veri (.winmd) dosyalarını otomatik olarak bir derlemede yer almaz gösterir. Bunun yerine, kullanmalısınız [/FU (zorlanan adı #using)](fu-name-forced-hash-using-file.md) Windows meta veri dosyaları açıkça belirtmek için derleyici seçeneği.
+Platform. winmd, Windows. Foundation. winmd ve diğer varsayılan Windows meta veri (. winmd) dosyalarının derlemeye otomatik olarak dahil edilmediğini belirtir. Bunun yerine, Windows meta verileri dosyalarını açıkça belirtmek için [/Fu (zorlanan #using dosyası adı)](fu-name-forced-hash-using-file.md) derleyici seçeneğini kullanmanız gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirttiğinizde **/ZW** derleyici seçeneği, bu özellikleri destekler:
+**/ZW** seçeneğini belirttiğinizde, derleyici şu özellikleri destekler:
 
-- Gerekli meta veri dosyaları, ad alanları, veri türleri ve uygulamanız için Windows çalışma zamanı'nda yürütmek için gerekli işlevleri.
+- Gerekli meta veri dosyaları, ad alanları, veri türleri ve uygulamanızın Windows Çalışma Zamanı yürütülmesi gereken işlevler.
 
-- Otomatik başvuru sayımı Windows çalışma zamanı nesneleri ve otomatik bir nesne, başvuru sayısı sıfıra gittiğinde atılıyor.
+- Otomatik başvuru-Windows Çalışma Zamanı nesnelerinin sayımı ve başvuru sayısı sıfıra gittiğinde otomatik olarak bir nesne atma.
 
-Artımlı bağlayıcı kullanılarak .obj dosyalarında dahil Windows meta verileri desteklemediğinden **/ZW** seçeneği, kullanım dışı [/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](gm-enable-minimal-rebuild.md) seçenektir ileuyumsuz **/ZW**.
+Artımlı bağlayıcı, **/ZW** seçeneği kullanılarak. obj dosyalarında yer alan Windows meta verilerini desteklemediğinden, kullanım dışı olan [/GG (en az yeniden derlemeyi etkinleştir)](gm-enable-minimal-rebuild.md) seçeneği **/ZW** ile uyumsuzdur.
 
-Daha fazla bilgi için [Visual C++ dil başvurusu](../../cppcx/visual-c-language-reference-c-cx.md).
+Daha fazla bilgi için [Visual C++ dil başvurusu](../../cppcx/visual-c-language-reference-c-cx.md)' na bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

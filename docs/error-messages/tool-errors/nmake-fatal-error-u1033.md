@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: NMAKE önemli hatası U1033'
 title: NMAKE Önemli Hatası U1033
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1033
 ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
-ms.openlocfilehash: 4511b15c84479c3531a3bea85964e2768de0181f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e616e98a21c92137fab4b167318a9305a2175bb2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272142"
 ---
 # <a name="nmake-fatal-error-u1033"></a>NMAKE Önemli Hatası U1033
 
@@ -21,19 +22,19 @@ Dize, derleme görevleri dosyası için geçerli sözdiziminin bir parçası de�
 
 ### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri denetleyerek onarmak için
 
-1. Satır içi dosyanın açılı ayraç ( **<<** ) kapanış kümesi bir satırın başlangıcında yoksa, aşağıdaki hata oluşur:
+1. Satır içi dosyanın açılı ayraç () kapanış kümesi **<<** bir satırın başlangıcında yoksa, aşağıdaki hata oluşur:
 
     ```
     syntax error : 'EOF' unexpected
     ```
 
-1. Derleme görevleri dosyasında bir makro tanımı, önceki adı olmayan bir eşittir işareti ( **=** ) içeriyorsa veya tanımlanmakta olan ad hiçbir şey Nothing olarak genişleyen bir makrose aşağıdaki hata oluşur:
+1. Derleme görevleri dosyasında bir makro tanımı, **=** önceki adı olmayan eşittir işareti () içeriyorsa veya tanımlanmakta olan ad hiçbir şey Nothing olarak genişleyen bir makrose aşağıdaki hata oluşur:
 
     ```
     syntax error : '=' unexpected
     ```
 
-1. ARAÇLARıNDAKI bir yorum satırında noktalı virgül ( **;** ). INI satırın başlangıcında değil, aşağıdaki hata oluşur:
+1. TOOLS.INI bir yorum satırındaki noktalı virgül (**;**) satırın başlangıcında yoksa, aşağıdaki hata oluşur:
 
     ```
     syntax error : ';' unexpected

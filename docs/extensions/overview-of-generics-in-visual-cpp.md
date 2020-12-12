@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: C++/CLı ' da genel bakışa genel bakış"
 title: C++/CLı ' da Genel türlere genel bakış
 ms.date: 10/12/2018
 ms.topic: reference
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - open constructed types [C++]
 - constructed types, closed [C++]
 ms.assetid: 21f10637-0fce-4916-b925-6c86a126d3aa
-ms.openlocfilehash: 875fc3334d326315890396ee02e55b5880e8692e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4b84d16f7d76824f732865e3bf8b7bbfe674a1bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87195570"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274157"
 ---
 # <a name="overview-of-generics-in-ccli"></a>C++/CLı ' da Genel türlere genel bakış
 
@@ -43,7 +44,7 @@ Sözdiziminin açıklaması için bkz. [genel işlevler (C++/CLI)](generic-funct
 
 ### <a name="type-parameters"></a>Tür Parametreleri
 
-Genel bildirim, *tür parametreleri*olarak bilinen bir veya daha fazla bilinmeyen tür içeriyor. Tür parametrelerine, genel bildirimin gövdesinde türü temsil eden bir ad verilir. Tür parametresi, genel bildirimin gövdesinde bir tür olarak kullanılır. İçin genel bildirimi, `List<T>` T tür parametresini içerir.
+Genel bildirim, *tür parametreleri* olarak bilinen bir veya daha fazla bilinmeyen tür içeriyor. Tür parametrelerine, genel bildirimin gövdesinde türü temsil eden bir ad verilir. Tür parametresi, genel bildirimin gövdesinde bir tür olarak kullanılır. İçin genel bildirimi, `List<T>` T tür parametresini içerir.
 
 ### <a name="type-arguments"></a>Tür bağımsız değişkenleri
 
@@ -51,7 +52,7 @@ Genel bildirim, *tür parametreleri*olarak bilinen bir veya daha fazla bilinmeye
 
 ### <a name="constructed-type"></a>Oluşturulan tür
 
-Genel bir türden oluşturulan bir türe, *oluşturulan tür*olarak başvurulur. Tam olarak belirtilmeyen bir tür; Örneğin, `List<T>` açık bir *oluşturulmuş*tür; gibi tam olarak belirtilmiş bir tür `List<double>,` veya *özel tür*. *closed constructed type* Açık oluşturulmuş türler diğer genel türlerin veya yöntemlerin tanımında kullanılabilir ve kapsayan genel belirtilmediği sürece tam olarak belirtilemez. Örneğin, bir genel için temel sınıf olarak açık oluşturulmuş bir türün kullanımı aşağıda verilmiştir:
+Genel bir türden oluşturulan bir türe, *oluşturulan tür* olarak başvurulur. Tam olarak belirtilmeyen bir tür; Örneğin, `List<T>` açık bir *oluşturulmuş* tür; gibi tam olarak belirtilmiş bir tür `List<double>,` veya *özel tür*.  Açık oluşturulmuş türler diğer genel türlerin veya yöntemlerin tanımında kullanılabilir ve kapsayan genel belirtilmediği sürece tam olarak belirtilemez. Örneğin, bir genel için temel sınıf olarak açık oluşturulmuş bir türün kullanımı aşağıda verilmiştir:
 
 ```cpp
 // generics_overview.cpp
@@ -124,11 +125,11 @@ int main() {
 
 Bu kısıtlamalar operatörler için de geçerlidir. Kısıtlanmış olmayan genel tür parametresi, türün `==` `!=` Bu işleçleri desteklemediği durumlarda tür parametresinin iki örneğini karşılaştırmak için ve işleçlerini kullanamaz. Bu denetimler, genel türler için gereklidir, ancak şablonlar için değildir, çünkü genel türler, geçersiz üyelerin kullanımını denetlemek için çok geç olduğunda, kısıtlamaları karşılayan herhangi bir sınıfla çalışma zamanında özelleştirilebilir.
 
-İşleç kullanılarak tür parametresinin varsayılan bir örneği oluşturulabilir `()` . Örnek:
+İşleç kullanılarak tür parametresinin varsayılan bir örneği oluşturulabilir `()` . Örneğin:
 
 `T t = T();`
 
-`T`, bir genel sınıf veya yöntem tanımındaki bir tür parametresidir, değişkeni varsayılan değerine başlatır. `T`Bir başvuru sınıfındaysa, null bir işaretçi olacaktır; Eğer `T` bir değer sınıfdaysa, nesne sıfır olarak başlatılır. Bu, *varsayılan Başlatıcı*olarak adlandırılır.
+`T`, bir genel sınıf veya yöntem tanımındaki bir tür parametresidir, değişkeni varsayılan değerine başlatır. `T`Bir başvuru sınıfındaysa, null bir işaretçi olacaktır; Eğer `T` bir değer sınıfdaysa, nesne sıfır olarak başlatılır. Bu, *varsayılan Başlatıcı* olarak adlandırılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

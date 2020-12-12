@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kaynak derleyicisi önemli hatası RC1120'
 title: Kaynak Derleyicisi Önemli Hatası RC1120
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC1120
 ms.assetid: 4e462931-e42e-42e3-8bfc-847677194286
-ms.openlocfilehash: 855a76ff63145695a7063944701d7acc684e0084
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bc0c90bf5d8dd4290ab20369235c53fcd2c80182
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173016"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272038"
 ---
 # <a name="resource-compiler-fatal-error-rc1120"></a>Kaynak Derleyicisi Önemli Hatası RC1120
 
@@ -23,7 +24,7 @@ Kaynak derleyicisi, yığınında sakladığı öğeler için depolama alanını
 
 1. Windows takas dosyası alanını arttırın. Takas dosyası alanını artırma hakkında daha fazla bilgi için bkz. Windows yardımında sanal bellek.
 
-1. Gereksiz içerme dosyalarını, özellikle de gereksiz `#define`s ve işlev prototiplerini kaldırın.
+1. Gereksiz içerme dosyalarını, özellikle gereksiz `#define` öğeleri ve işlev prototiplerini kaldırın.
 
 1. Geçerli dosyayı iki veya daha fazla dosyaya bölmek ve ayrı olarak derlemek.
 

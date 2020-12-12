@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi edinin: işleç türü ^'
 title: işleç Türü^
 ms.date: 12/30/2016
 ms.assetid: b24ffc83-0780-4f9a-8ee0-f5725db339d1
-ms.openlocfilehash: 180efcac76b7f51291a47ee68508e7444a6c069c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6258da5f276313d28f56fe470849c929cc057a47
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161816"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276809"
 ---
 # <a name="operator-type"></a>işleç Türü^
 
-Dönüştürme sağlayan [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename) için `Platform::Type`.
+[Windows:: UI:: XAML:: Interop:: TypeName](/uwp/api/windows.ui.xaml.interop.typename) öğesine dönüştürmeyi sağlar `Platform::Type` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 Operator Type^(Windows::UI::Xaml::Interop::TypeName typeName);
@@ -21,11 +22,11 @@ Operator Type^(Windows::UI::Xaml::Interop::TypeName typeName);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Döndürür bir `Platform::Type` verildiğinde bir [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename).
+Bir `Platform::Type` [Windows:: UI:: XAML:: Interop:: TypeName](/uwp/api/windows.ui.xaml.interop.typename)verildiğinde bir döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`TypeName` tür bilgilerini temsil eden dilden Windows çalışma zamanı struct ' dir. [Platform::type](../cppcx/platform-type-class.md) C++ için özeldir ve uygulama ikili arabiriminde (ABI) geçirilemez. Bir işte `TypeName`, [Navigate](/uwp/api/windows.ui.xaml.controls.frame.navigate) işlevi:
+`TypeName` , tür bilgilerini temsil etmek için dilden bağımsız Windows Çalışma Zamanı struct. [Platform:: Type](../cppcx/platform-type-class.md) C++ için özeldir ve uygulama ikili ARABIRIMINE (ABI) geçirilememelidir. Aşağıda `TypeName` , [gezinme](/uwp/api/windows.ui.xaml.controls.frame.navigate) işlevinde bir kullanımı aşağıda verilmiştir:
 
 ```
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
@@ -33,7 +34,7 @@ rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 
 ### <a name="example"></a>Örnek
 
-Sonraki örnek arasında nasıl dönüştürme yapılacağını gösterir `TypeName` ve `Type`.
+Sonraki örnekte, ve arasında nasıl dönüştürme yapılacağı `TypeName` gösterilmektedir `Type` .
 
 ```
 
@@ -46,11 +47,11 @@ Type^ tx2 = (Type^)(tn);
 
 ## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
 
-.NET framework programlar proje `TypeName` olarak <xref:System.Type>
+Programlar projesini `TypeName` farklı .NET Framework <xref:System.Type>
 
 ### <a name="requirements"></a>Gereksinimler
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Windows::UI::Xaml::Interop::TypeName işleci](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
-[Platform::Type Sınıfı](../cppcx/platform-type-class.md)
+[işleç Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
+[Platform:: Type sınıfı](../cppcx/platform-type-class.md)

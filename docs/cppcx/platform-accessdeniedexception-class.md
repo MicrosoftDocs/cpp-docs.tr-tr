@@ -1,5 +1,6 @@
 ---
-title: Platform::AccessDeniedException sınıfı
+description: 'Daha fazla bilgi edinin: Platform:: AccessDeniedException Oluşturucusu sınıfı'
+title: 'Platform:: AccessDeniedException Oluşturucusu sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::AccessDeniedException
 ms.assetid: 6ae2155b-7b16-4587-8d2d-da05eab4c7e9
-ms.openlocfilehash: 4abbac977a256ff27f99caaf77393450d3ccf858
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2dd1e543093000521bceb0abed128a1dac27a6e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97276796"
 ---
-# <a name="platformaccessdeniedexception-class"></a>Platform::AccessDeniedException sınıfı
+# <a name="platformaccessdeniedexception-class"></a>Platform:: AccessDeniedException Oluşturucusu sınıfı
 
-Özel bir kaynağa eriştiğinizde veya özellik engellendi.
+Bir kaynağa veya özelliğe erişim reddedildiğinde oluşturulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public ref class AccessDeniedException : COMException,    IException,    IPrintable,   IEquatable
@@ -27,18 +28,18 @@ public ref class AccessDeniedException : COMException,    IException,    IPrinta
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu özel durumu, istenen uygun özellik ve gerekli bildirimleri uygulama paketi bildiriminde yapılan emin olun. Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfı.
+Bu özel duruma ulaşırsanız, uygun yeteneği istemiş olduğunuzdan ve uygulamanızın paket bildiriminde gerekli bildirimleri oluşturduğunuzdan emin olun. Daha fazla bilgi için bkz. [COMException](../cppcx/platform-comexception-class.md) sınıfı.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)
+[Platform:: COMException sınıfı](../cppcx/platform-comexception-class.md)

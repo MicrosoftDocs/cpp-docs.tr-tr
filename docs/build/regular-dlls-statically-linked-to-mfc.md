@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: MFC 'ye statik olarak bağlı normal MFC DLL 'Leri"
 title: MFC 'ye statik olarak bağlı normal MFC DLL 'Leri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - statically linked DLLs [C++]
 - regular MFC DLLs [C++], statically linked to MFC
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
-ms.openlocfilehash: 1f05b5e3c268935cf3161fb7184e04b3e3ea1446
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b213be6bf076557fc57a5bcac62cbf9767587bd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314786"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273806"
 ---
 # <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>MFC 'ye statik olarak bağlı normal MFC DLL 'Leri
 
@@ -62,7 +63,7 @@ Yalnızca verilerin bir kopyasını yaparsanız, bir uygulama ve DLL arasında C
 
 MFC 'ye statik olarak bağlı bir DLL Ayrıca paylaşılan MFC DLL 'Lerine dinamik olarak bağlanamaz. MFC 'ye statik olarak bağlı bir DLL, diğer tüm DLL gibi bir uygulamaya dinamik olarak bağlanır; uygulamalar, diğer herhangi bir DLL gibi buna bağlanır.
 
-Standart MFC statik bağlantı kitaplıkları, [MFC DLL 'leri Için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)bölümünde açıklanan kurala göre adlandırılır. Ancak, MFC sürüm 3,0 ve üzeri ile, bağlantılı olmasını istediğiniz MFC kitaplığının sürümünü bağlayıcıya el ile belirtmek artık gerekli değildir. Bunun yerine, MFC başlık dosyaları, ** \_ hata ayıklama** veya **_UNICODE**gibi Önişlemci TANıMLARıNı temel alarak bağlamak üzere MFC kitaplığının doğru sürümünü otomatik olarak belirler. MFC üst bilgi dosyaları, MFC kitaplığının belirli bir sürümünde bağlantı için bağlayıcı arabirimini veren/DEFAULTLIB yönergeleri ekler.
+Standart MFC statik bağlantı kitaplıkları, [MFC DLL 'leri Için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)bölümünde açıklanan kurala göre adlandırılır. Ancak, MFC sürüm 3,0 ve üzeri ile, bağlantılı olmasını istediğiniz MFC kitaplığının sürümünü bağlayıcıya el ile belirtmek artık gerekli değildir. Bunun yerine, MFC başlık dosyaları, **\_ hata ayıklama** veya **_UNICODE** gibi Önişlemci TANıMLARıNı temel alarak bağlamak üzere MFC kitaplığının doğru sürümünü otomatik olarak belirler. MFC üst bilgi dosyaları, MFC kitaplığının belirli bir sürümünde bağlantı için bağlayıcı arabirimini veren/DEFAULTLIB yönergeleri ekler.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
