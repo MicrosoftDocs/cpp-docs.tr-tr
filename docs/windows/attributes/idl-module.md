@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: idl_module'
 title: idl_module (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - idl_module attribute
 ms.assetid: 3578b337-e38a-4334-b747-15404c02dbc0
-ms.openlocfilehash: 651d2e133d7ef08fce48feded1b7a5aff458adb1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 01fbb6cb04f31d9df4466e148a89fccb012835e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845230"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183145"
 ---
 # <a name="idl_module"></a>idl_module
 
 Bir. dll dosyasında bir giriş noktası belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ idl_module (name=module_name, dllname=dll, uuid="uuid", helpstring="help text", helpstringcontext=helpcontextID, helpcontext=helpcontext, hidden, restricted) ]
@@ -44,7 +45,7 @@ Seçim Bir. hlp veya. chm dosyasındaki Yardım konusunun KIMLIĞI.
 *helpcontext*<br/>
 Seçim Bu tür kitaplığı için yardım KIMLIĞI.
 
-*gizli*<br/>
+*Lene*<br/>
 Seçim Kitaplığın görüntülenmesini önleyen bir parametre. Daha fazla bilgi için bkz. [Hidden](/windows/win32/Midl/hidden) MIDL özniteliği.
 
 *dığından*<br/>
@@ -81,7 +82,7 @@ void FuncName(int i);
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

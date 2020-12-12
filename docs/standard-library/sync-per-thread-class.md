@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sync_per_thread sınıfı'
 title: sync_per_thread Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - stdext::sync_per_thread [C++], deallocate
 - stdext::sync_per_thread [C++], equals
 ms.assetid: 47bf75f8-5b02-4760-b1d3-3099d08fe14c
-ms.openlocfilehash: 24c5463dc9fb80703361e374efb99fae9e103e7c
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: dbce0441e32c97907bdf2cc5831a94c9af125453
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562096"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183301"
 ---
 # <a name="sync_per_thread-class"></a>sync_per_thread Sınıfı
 
 Her iş parçacığı için ayrı bir önbellek nesnesi sağlayan bir [eşitleme filtresi](../standard-library/allocators-header.md) tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Cache>
@@ -45,7 +46,7 @@ Eşitleme filtresiyle ilişkili önbelleğin türü. [`cache_chunklist`](../stan
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
 |[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
-|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
+|[eşittir](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 

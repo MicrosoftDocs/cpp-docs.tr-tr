@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: komut satırı özellik sayfaları'
 title: Komut Satırı Özellik Sayfaları
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Command Line property pages
 ms.assetid: e1721b6c-8b39-4b44-a41e-69b5bb470cc9
-ms.openlocfilehash: 454317fca468a056380f69c1384a3d1e9842e63e
-ms.sourcegitcommit: 0f4ee9056d65043fa5a715f0ad1031c0ed30e2b6
+ms.openlocfilehash: d1b3617bb72406445f2df29e9c0ce580cca91263
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182391"
 ---
 # <a name="command-line-property-pages"></a>Komut Satırı Özellik Sayfaları
 
@@ -20,9 +21,9 @@ ms.locfileid: "77034577"
 
 Düzenleme kutusuna girdiğiniz herhangi bir komut, klasörü için araca geçirilir. Giriş üzerinde doğrulama veya denetim yapılmaz, aksi olarak herhangi bir bağımlılık denetimi olmayacaktır.
 
-**Komut satırı** özellik sayfalarına erişme hakkında daha fazla bilgi için bkz. [Visual Studio C++ 'Da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+**Komut satırı** özellik sayfalarına erişme hakkında daha fazla bilgi için bkz. [Visual Studio 'da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++Proje özellik sayfası başvurusu](property-pages-visual-cpp.md)<br>
-[Bağlayıcı Girişi olarak .Lib Dosyaları](dot-lib-files-as-linker-input.md)
+[C++ proje özellik sayfası başvurusu](property-pages-visual-cpp.md)<br>
+[. Bağlayıcı girişi olarak lib dosyaları](dot-lib-files-as-linker-input.md)

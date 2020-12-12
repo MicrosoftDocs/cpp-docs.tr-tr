@@ -1,5 +1,6 @@
 ---
-title: / CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute Kaldır)
+description: Daha fazla bilgi edinin:/CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute 'i Kaldır)
+title: /CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute çıkar)
 ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
@@ -10,44 +11,44 @@ helpviewer_keywords:
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: ecc560673a8e98752289ef0e0f89d3abfc1938e4
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: e08b7b4b18a463122316b041ad81d6ddd2598bca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837237"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182404"
 ---
-# <a name="clrunmanagedcodecheck-remove-suppressunmanagedcodesecurityattribute"></a>/ CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute Kaldır)
+# <a name="clrunmanagedcodecheck-remove-suppressunmanagedcodesecurityattribute"></a>/CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute çıkar)
 
-**/ CLRUNMANAGEDCODECHECK** bağlayıcı uygulanmaz belirtir <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> için bağlayıcı tarafından oluşturulan `PInvoke` yönetilen koddan yerel DLL'lere çağrılar.
+**/CLRUNMANAGEDCODECHECK** , bağlayıcının <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> `PInvoke` yönetilen koddan yerel dll 'lere bağlayıcı tarafından oluşturulan çağrılar için uygulanacağını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ CLRUNMANAGEDCODECHECK**[**: NO**]
+> **/CLRUNMANAGEDCODECHECK**[**: No**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bağlayıcı uygular **SuppressUnmanagedCodeSecurityAttribute** için bağlayıcı tarafından oluşturulan `PInvoke` çağırır. Zaman **/clrunmanagedcodecheck** kıyaslandığında geçerli **SuppressUnmanagedCodeSecurityAttribute** kaldırılır. Açıkça uygulamak için **SuppressUnmanagedCodeSecurityAttribute** için bağlayıcı tarafından oluşturulan `PInvoke` kullanabileceğiniz çağrıları **/CLRUNMANAGEDCODECHECK:NO**.
+Varsayılan olarak bağlayıcı, **SuppressUnmanagedCodeSecurityAttribute** öğesini bağlayıcı tarafından oluşturulan `PInvoke` çağrılara uygular. **/CLRUNMANAGEDCODECHECK** etkin olduğunda, **SuppressUnmanagedCodeSecurityAttribute** kaldırılır. **SuppressUnmanagedCodeSecurityAttribute** 'ı bağlayıcı tarafından oluşturulan çağrılara açık bir şekilde uygulamak için `PInvoke` **/CLRUNMANAGEDCODECHECK: No** komutunu kullanabilirsiniz.
 
-Bağlayıcı, yalnızca öznitelik kullanılarak derlenmiş nesneleri ekler **/CLR** veya **/CLR: pure**. Ancak, **/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017 ve sonraki sürümlerde desteklenmiyor.
+Bağlayıcı, özniteliği yalnızca **/clr** veya **/clr: Pure** kullanılarak derlenen nesnelere ekler. Ancak, **/clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ve sonrasında desteklenmez.
 
-A `PInvoke` çağrı, bağlayıcı tarafından oluşturulur, bağlayıcı yönetilen çağıran bir başvurudan karşılamak için yönetilen bir sembolü bulunamadı, ancak bu başvuruyu karşılamak için bir yerel sembol bulabilirsiniz. Hakkında daha fazla bilgi için `PInvoke`, bkz: [yönetilen koddan yerel işlevleri çağırma](../../dotnet/calling-native-functions-from-managed-code.md).
+`PInvoke`Bağlayıcı yönetilen bir çağıranın başvurusunu karşılamak için yönetilen bir sembol bulamadığında, ancak bu başvuruyu karşılamak için yerel bir sembol bulamadığında, bir çağrı bağlayıcı tarafından oluşturulur. Hakkında daha fazla bilgi için `PInvoke` bkz. [yönetilen koddan yerel işlevleri çağırma](../../dotnet/calling-native-functions-from-managed-code.md).
 
-Kullandığınız gerçekleştiriyorsanız <xref:System.Security.AllowPartiallyTrustedCallersAttribute> kodunuzda açıkça ayarlamalısınız **/clrunmanagedcodecheck** kaldırmak için **SuppressUnmanagedCodeSecurity** özniteliği. Görüntü her ikisi de içeriyorsa, olası bir güvenlik açığı olan **SuppressUnmanagedCodeSecurity** ve **AllowPartiallyTrustedCallers** öznitelikleri.
+<xref:System.Security.AllowPartiallyTrustedCallersAttribute>Kodunuzda kullanıyorsanız, **SuppressUnmanagedCodeSecurity** özniteliğini kaldırmak için açıkça **/CLRUNMANAGEDCODECHECK** ' i ayarlamanız gerektiğini unutmayın. Bir görüntü hem **SuppressUnmanagedCodeSecurity** hem de **Allowpartiallytrustedçağıranlar** özniteliklerini içeriyorsa, bu olası bir güvenlik açığıdır.
 
-Bkz: [güvenli kodlama kılavuzları yönetilmeyen kod için](/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code) kullanmanın etkileri hakkında daha fazla bilgi için **SuppressUnmanagedCodeSecurityAttribute**.
+**SuppressUnmanagedCodeSecurityAttribute** kullanmanın etkileri hakkında daha fazla bilgi için bkz. [yönetilmeyen kod Için güvenli kodlama yönergeleri](/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code) .
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **yapılandırma özellikleri** düğümü.
+1. **Yapılandırma özellikleri** düğümünü genişletin.
 
-1. Genişletin **bağlayıcı** düğümü.
+1. **Bağlayıcı** düğümünü genişletin.
 
-1. Seçin **Gelişmiş** özellik sayfası.
+1. **Gelişmiş** özellik sayfasını seçin.
 
-1. Değiştirme **CLR yönetilmeyen kod denetleyin** özelliği.
+1. **Clr yönetilmeyen kod denetimi** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -56,4 +57,4 @@ Bkz: [güvenli kodlama kılavuzları yönetilmeyen kod için](/dotnet/framework/
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [MSVC bağlayıcı başvurusu](linking.md)
-- [MSVC Bağlayıcı Seçenekleri](linker-options.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)

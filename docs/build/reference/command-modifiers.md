@@ -1,27 +1,28 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Komut değiştiriciler'
 title: Komut Değiştiriciler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - NMAKE program, command modifiers
 - command modifiers
 ms.assetid: b661c432-210f-4f05-bc56-744a46e0fc0b
-ms.openlocfilehash: 6131b94a6ee78026b8d5337061a6238df785b64d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d17d5f25719dfe5638ca6688105517d385bdf68e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182378"
 ---
 # <a name="command-modifiers"></a>Komut Değiştiriciler
 
-İsteğe bağlı olarak, boşluk veya sekme ile ayrılmış bir komut, önceki bir veya daha fazla komut değiştiriciler belirtebilirsiniz. Komutları gibi değiştiriciler girintili gerekir.
+Bir komuttan önce bir veya daha fazla komut değiştiricisi belirtebilir, isteğe bağlı olarak boşluklarla veya sekmeye ayrılabilir. Komutlarda olduğu gibi değiştiriciler de girintili olmalıdır.
 
 |Değiştirici|Amaç|
 |--------------|-------------|
-|\@*Komutu*|Komut görüntülenmesini önler. Ekran komutları tarafından gizlenen değil. Varsayılan olarak, tüm yürütülen komutlar NMAKE görüntülemektedir. /S görünen tüm görevleri için gizlemek için kullanın. kullanma **. Sessiz** görüntülenmesine için derleme görevleri dosyası bir parçası.|
-|**-**\[*number*] *command*|İçin hata denetimini kapatır *komut*. Varsayılan olarak, bir komut sıfır olmayan çıkış kodu döndürüldüğünde NMAKE durdurur. IF -*numarası* olan kullanıldığında, NMAKE çıkış kodu aşarsa durdurur *numarası*. Boşluk veya sekme çizgi bulunamaz ve *sayı.* En az bir boşluk veya sekme arasında görünmelidir `number` ve *komut*. /I hata tüm görevleri için denetimi devre dışı bırakmak için kullanın. kullanma **. Yoksay** hata derleme görevleri dosyası bir parçası için denetimi devre dışı bırakmak için.|
-|**\!** *Komutu*|Yürütür *komut* bağımlı her dosya için *komut* kullanan <strong>$ \* \*</strong> (bağımlılık içindeki tüm bağımlı dosyaları) veya **$?** (tüm bağımlı dosyaları hedef daha sonraki bir zaman damgasına sahip bağımlılık olarak).|
+|\@*komutundaki*|Komutun görüntülenmesini önler. Komutlara göre görüntüle bastırılmaz. Varsayılan olarak NMAKE tüm yürütülen komutları yankılar. Derleme görevleri dosyasının tamamının görüntülenmesini engellemek için/S kullanın; kullanın **.** Makefile 'ın bir parçası için ekranı bastırmak IÇIN sessiz.|
+|**-**\[*sayı*] *komut*|*Komut* için hata denetimini devre dışı bırakır. Varsayılan olarak, bir komut sıfır dışında bir çıkış kodu döndürdüğünde NMAKE durur. Eğer-*Number* kullanılırsa, çıkış kodu *SAYıYı* aşarsa NMAKE durdu. Tire ve sayı arasında boşluk veya sekme bulunamaz *.* And komutuyla en az bir boşluk veya sekme görünmelidir `number` .  Derleme görevleri dosyasının tamamında hata denetimini devre dışı bırakmak için/I kullanın; kullanın **.** Makefile 'ın bir parçası olarak hata denetimini devre dışı bırakmak IÇIN yoksayın.|
+|**!** *komutundaki*|*Komut* kullanılıyorsa her bağımlı dosya için *komutu* yürütür <strong>$\*\*</strong> (bağımlılıkta tüm bağımlı dosyalar) veya **$?** (hedeften daha sonraki bir zaman damgasına sahip olan bağımlılıkta tüm bağımlı dosyalar).|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme Görevleri Dosyası Komutları](commands-in-a-makefile.md)
+[Derleme görevleri dosyasındaki komutlar](commands-in-a-makefile.md)

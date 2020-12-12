@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: synchronized_pool_resource sınıfı'
 title: synchonized_pool_resource sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - memory_resource/std::synchronized_pool_resource
 helpviewer_keywords:
 - std::synchronized_pool_resource
-ms.openlocfilehash: 9d9486354447f12156a9bbcc530236dc4a337da7
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fa34765f75bb578fb49ffad27c3ade9306672ba9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183263"
 ---
-# <a name="synchronizedpoolresource-class"></a>synchronized_pool_resource sınıfı
+# <a name="synchronized_pool_resource-class"></a>synchronized_pool_resource sınıfı
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class synchronized_pool_resource : public memory_resource {

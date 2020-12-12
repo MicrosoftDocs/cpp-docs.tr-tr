@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/bigobj (içindeki bölüm sayısını artırın. Obj dosyası)
 title: /bigobj (.Obj Dosyasında Bölüm Sayısını Arttırma)
 ms.date: 03/26/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - /bigobj compiler option [C++]
 - bigobj compiler option [C++]
 ms.assetid: ba94d602-4015-4a8d-86ec-49241ab74c12
-ms.openlocfilehash: 30c02c72496e3bb91da3b39e1870f1dc5a2c040a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 4e820211ec46ad2a2d125552f95fb8a82c6f57ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493107"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182703"
 ---
 # <a name="bigobj-increase-number-of-sections-in-obj-file"></a>/bigobj (.Obj Dosyasında Bölüm Sayısını Arttırma)
 
 **/bigobj** bir nesne dosyasının içerebileceği bölüm sayısını artırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/bigobj**
 
@@ -33,9 +34,9 @@ PE COFF nesne dosyası biçimi hakkında bilgi için, Windows belgelerindeki [PE
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **CC++/** komut > **satırı** Özellik sayfası ' nı seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
 1. **Ek seçenekler** kutusuna **/bigobj** derleyici seçeneğini girin.
 
@@ -45,5 +46,5 @@ PE COFF nesne dosyası biçimi hakkında bilgi için, Windows belgelerindeki [PE
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

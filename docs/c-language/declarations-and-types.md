@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bildirimler ve türler'
 title: Bildirimler ve Türler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - declarations [C++], C
 - declarations [C++], types
 ms.assetid: 432a2286-cf42-42ce-8baf-c908ffb57ca8
-ms.openlocfilehash: 75ffbeda8b120b9a1bb9f1bb28c570695ed2c8c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9c2b277b49c08964d62b21570589cfd14ae9550a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182170"
 ---
 # <a name="declarations-and-types"></a>Bildirimler ve Türler
 
@@ -28,13 +29,13 @@ Bu bölümde, değişkenlerin, işlevlerin ve türlerin bildirimi ve başlatılm
 
 - [Bildirimciler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)
 
-- [Daha karmaşık bildirimcilerin yorumlanması](../c-language/interpreting-more-complex-declarators.md)
+- [Daha karmaşık bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md)
 
-- [Başlatılmasında](../c-language/initialization.md)
+- [Başlatma](../c-language/initialization.md)
 
-- [Temel türleri depolama](../c-language/storage-of-basic-types.md)
+- [Temel türlerin depolanması](../c-language/storage-of-basic-types.md)
 
-- [Tamamlanmamış türler](../c-language/incomplete-types.md)
+- [Eksik türler](../c-language/incomplete-types.md)
 
 - [Typedef bildirimleri](../c-language/typedef-declarations.md)
 

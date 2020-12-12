@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: system_error sınıfı'
 title: system_error Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - system_error class
 ms.assetid: 2eeaacbb-8a4a-4ad7-943a-997901a77f32
-ms.openlocfilehash: 7a18d2f9f229a62a539be072870e38a990677636
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 51e629e9fffca6ec82e06521d1d81174da5ff1f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183171"
 ---
 # <a name="system_error-class"></a>system_error Sınıfı
 
 Alt düzey sistem hatasını raporlamak için oluşturulan tüm özel durumların temel sınıfını temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class system_error : public runtime_error {
@@ -33,6 +34,6 @@ class system_error : public runtime_error {
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf [özel](../standard-library/exception-class.md) durumunda `what` tarafından döndürülen değer, `_Message` ve [error_code](../standard-library/error-code-class.md) türünde depolanan nesneden oluşturulur (`code` veya `error_code(_Errval, _Errcat)`).
+Sınıf özel durumunda tarafından döndürülen değer, `what` [](../standard-library/exception-class.md) `_Message` ve [error_code](../standard-library/error-code-class.md) (ya da) türündeki saklı nesneden oluşturulur `code` `error_code(_Errval, _Errcat)` .
 
-Üye işlevi `code` depolanan [error_code](../standard-library/error-code-class.md) nesnesini döndürür.
+Üye işlevi, `code` depolanan [error_code](../standard-library/error-code-class.md) nesnesini döndürür.

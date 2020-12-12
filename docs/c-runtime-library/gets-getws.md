@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Al, _getws'
 title: gets, _getws
 ms.date: 4/2/2020
 api_name:
@@ -34,16 +35,16 @@ helpviewer_keywords:
 - gets function
 - standard input, reading from
 ms.assetid: 1ec2dd4b-f801-48ea-97c2-892590f16024
-ms.openlocfilehash: 1c60cf14334a0dcc0492b23da10a36c3219bb699
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cb2bf89bfcec8e10e05fa479cd7c9d78d9c6d80e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919907"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181728"
 ---
 # <a name="gets-_getws"></a>gets, _getws
 
-`stdin` Akıştan bir satır alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).
+Akıştan bir satır alır `stdin` . Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).
 
 > [!IMPORTANT]
 > Bu işlevler artık kullanılmıyor. Visual Studio 2015 ' den başlayarak, bu dosyalar CRT içinde kullanılamaz. Bu işlevlerin güvenli sürümleri, gets_s ve _getws_s hala kullanılabilir. Bu alternatif işlevler hakkında daha fazla bilgi için bkz. [gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md).
@@ -77,11 +78,11 @@ Giriş dizesi için depolama konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa bağımsız değişkenini döndürür. **Null** işaretçisi bir hata veya dosya sonu koşulunu gösterir. Hangi birinin oluştuğunu öğrenmek için [ferror](../c-runtime-library/reference/ferror.md) veya [feof](../c-runtime-library/reference/feof.md) kullanın. NULL `buffer` ise **NULL**, bu işlevler [parametre doğrulama](../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve errno öğesini olarak `EINVAL`ayarlar.
+Başarılı olursa bağımsız değişkenini döndürür. **Null** işaretçisi bir hata veya dosya sonu koşulunu gösterir. Hangi birinin oluştuğunu öğrenmek için [ferror](../c-runtime-library/reference/ferror.md) veya [feof](../c-runtime-library/reference/feof.md) kullanın. `buffer` **Null** ise, bu işlevler [parametre doğrulama](../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve errno öğesini olarak ayarlar `EINVAL` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-`gets` İşlevi standart giriş akışından `stdin` bir satırı okur ve içinde `buffer`depolar. Satır, ilk yeni satır karakteri (' \n ') dahil olmak üzere tüm karakterlerden oluşur. `gets`sonra satırı döndürmeden önce yeni satır karakterini null karakteri (' \ 0 ') ile değiştirir. Buna karşılık `fgets` işlev, yeni satır karakterini korur. `_getws`, öğesinin `gets`geniş karakterli bir sürümüdür; bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir.
+`gets`İşlevi standart giriş akışından bir satırı okur `stdin` ve içinde depolar `buffer` . Satır, ilk yeni satır karakteri (' \n ') dahil olmak üzere tüm karakterlerden oluşur. `gets` sonra satırı döndürmeden önce yeni satır karakterini null karakteri (' \ 0 ') ile değiştirir. Buna karşılık işlev, `fgets` yeni satır karakterini korur. `_getws` , öğesinin geniş karakterli bir sürümüdür `gets` ; bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir.
 
 > [!IMPORTANT]
 > Tarafından okunan karakter sayısını sınırlamanın bir yolu olmadığından, güvenilmeyen giriş, arabellek taşmalarına kolayca neden olabilir. Bunun yerine `fgets` kullanın.
@@ -100,8 +101,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`gets`|\<stdio. h>|
-|`_getws`|\<stdio. h> veya \<wchar. h>|
+|`gets`|\<stdio.h>|
+|`_getws`|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
@@ -132,7 +133,7 @@ Hello there!The line entered was: Hello there!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../c-runtime-library/stream-i-o.md)<br/>
 [fgets, fgetws](../c-runtime-library/reference/fgets-fgetws.md)<br/>
 [fputs, fputws](../c-runtime-library/reference/fputs-fputws.md)<br/>
 [puts, _putws](../c-runtime-library/reference/puts-putws.md)

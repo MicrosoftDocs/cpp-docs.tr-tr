@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/await (eş yordam olamaz desteğini etkinleştir)
 title: /await (Eş yordam desteğini etkinleştir)
 ms.date: 08/15/2017
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - -await enable coroutine support [C++]
 - await enable coroutine support [C++]
 ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
-ms.openlocfilehash: 526216ba2ae259b53bcf77691ebd09a6152b83f0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a36c2233085a1c38ed61aed7d6ea757762179cc4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182768"
 ---
 # <a name="await-enable-coroutine-support"></a>/await (Eş yordam desteğini etkinleştir)
 
 Eş yordamları için derleyici desteğini etkinleştirmek üzere **/await** derleyici seçeneğini kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > /await
 
@@ -34,7 +35,7 @@ Eş yordamları için derleyici desteğini etkinleştirmek üzere **/await** der
 
 1. Projenizin **Özellik sayfaları** iletişim kutusunu açın.
 
-1. **Yapılandırma özellikleri**altında **C/C++** klasörünü genişletin ve **komut satırı** özellik sayfasını seçin.
+1. **Yapılandırma özellikleri** altında **C/C++** klasörünü genişletin ve **komut satırı** özellik sayfasını seçin.
 
 1. **Ek seçenekler** kutusuna **/await** derleyici seçeneğini girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** veya **Uygula** ' yı seçin.
 
@@ -45,4 +46,4 @@ Eş yordamları için derleyici desteğini etkinleştirmek üzere **/await** der
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

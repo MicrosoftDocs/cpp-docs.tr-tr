@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: iid_is'
 title: iid_is (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - iid_is attribute
 ms.assetid: 2f9b42a9-7130-4b08-9b1e-0d5d360e10ff
-ms.openlocfilehash: 6a8fe8c7481cd251baff65293607733573f46ea6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9de6d636fbb189ece9aedec95cb9460c2ccbb5a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183106"
 ---
 # <a name="iid_is"></a>iid_is
 
 Bir arabirim işaretçisi tarafından işaret edilen COM arabiriminin IID 'sini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ iid_is("expression") ]
@@ -25,7 +26,7 @@ Bir arabirim işaretçisi tarafından işaret edilen COM arabiriminin IID 'sini 
 
 ### <a name="parameters"></a>Parametreler
 
-*ifadesini*<br/>
+*expression*<br/>
 Bir arabirim işaretçisi tarafından işaret edilen bir COM arabiriminin IID öğesini belirten bir C dili ifadesi.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -34,7 +35,7 @@ Bir arabirim işaretçisi tarafından işaret edilen bir COM arabiriminin IID ö
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod **iid_is**kullanımını gösterir:
+Aşağıdaki kod **iid_is** kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_iid_is.cpp
@@ -56,7 +57,7 @@ __interface IFireTabCtrl : IDispatch
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Arabirim parametresi, veri üyesi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

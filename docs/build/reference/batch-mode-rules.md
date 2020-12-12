@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Batch-Mode kuralları'
 title: Toplu İş Modu Kuralları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - NMAKE program, inference rules
 - batch-mode inference rules in NMAKE
 ms.assetid: 0650b547-ef19-4455-9bba-fa567dcf88f2
-ms.openlocfilehash: 38402e7b8a937cebb823ce13fa1ac01fc1099878
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 73439082b4e2ad8e33b104329d861ddd1919ec63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328406"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182742"
 ---
 # <a name="batch-mode-rules"></a>Toplu İş Modu Kuralları
 
@@ -20,18 +21,18 @@ ms.locfileid: "81328406"
    commands
 ```
 
-Toplu iş modu çıkarım kuralları, N komutları bu çıkarım kuralından geçtiğinde çıkarım kuralının yalnızca bir çağrılması sağlar. Toplu iş modu çıkarım kuralları olmadan, N komutlarının çağrılmasını gerektirir. N, çıkarım kuralını tetikleyen bağımlı ların sayısıdır.
+Batch modu çıkarımı kuralları, N komutları bu çıkarım kuralına geldiğinde, çıkarım kuralının yalnızca bir çağrılmasını sağlar. Toplu işlem modu çıkarımı kuralları olmadan, N komutlarının çağrılması gerekir. N, çıkarım kuralını tetikleyen bağımlıların sayısıdır.
 
-Toplu iş modu çıkarım kuralları içeren makefiles NMAKE sürüm 1.62 veya daha yüksek kullanmalıdır. NMAKE sürümünü kontrol etmek için, NMAKE sürüm 1.62 veya daha yüksek _NMAKE_VER makroçalıştırın. Bu makro, Visual C++ ürün sürümünü temsil eden bir dize döndürür.
+Batch modu çıkarımı kuralları içeren makefiles, NMAKE sürüm 1,62 veya üstünü kullanmalıdır. NMAKE sürümünü denetlemek için NMAKE sürüm 1,62 veya üzeri ile birlikte _NMAKE_VER makrosunu çalıştırın. Bu makro, Visual C++ ürün sürümünü temsil eden bir dize döndürür.
 
-Standart çıkarım kuralından tek sözdizim farkı, toplu iş modu çıkarım kuralının çift iki nokta üst üste (::)) ile sonlandırılmasıdır.
+Standart çıkarım kuralından oluşan sözdizimsel fark, Batch modu çıkarımı kuralının çift iki nokta (::) ile sonlandırılacağı bir değer.
 
 > [!NOTE]
-> Çağrılan araç birden çok dosyayı işleyebilir. Toplu iş modu çıkarım kuralı `$<` bağımlı dosyalara erişmek için makro olarak kullanılmalıdır.
+> Çağrılan aracın birden çok dosyayı işleyebilmesi gerekir. Toplu işlem modundaki çıkarım kuralı, `$<` bağımlı dosyalara erişmek için makro olarak kullanılmalıdır.
 
-Toplu iş modu çıkarım kuralları yapı işlemini hızlandırabilir. Derleyici sürücüsü yalnızca bir kez çağrılır, çünkü toplu olarak derleyiciye dosya sağlamak daha hızlıdır. Örneğin, C ve C++ derleyicisi, işlem sırasında bellek tespüleden biri olarak kalabildiği için bir dosya kümesini işlerken daha iyi performans gösterir.
+Toplu işlem modu çıkarımı kuralları yapı sürecini hızlandırabilir. Derleyici sürücüsü yalnızca bir kez çağrıldığı için Batch 'de derleyiciye dosya sağlamak daha hızlıdır. Örneğin, C ve C++ derleyicisi işlem sırasında bellekte yer kalabileceğinden bir dosya kümesini işlerken daha iyi çalışır.
 
-Aşağıdaki örnek, toplu iş modu çıkarım kurallarının nasıl kullanılacağını gösterir:
+Aşağıdaki örnek, Batch modu çıkarımı kurallarının nasıl kullanılacağını gösterir:
 
 ```
 #
@@ -56,7 +57,7 @@ $(Objs) :
 #end of makefile
 ```
 
-NMAKE, toplu iş modu çıkarım kuralları olmadan aşağıdaki çıktıyı üretir:
+NMAKE, Batch modu çıkarımı kuralları olmadan aşağıdaki çıktıyı üretir:
 
 ```
 E:\tmp> nmake -f test.mak -a NOBatch=1
@@ -73,7 +74,7 @@ foo3.cpp
 foo4.cpp
 ```
 
-NMAKE, toplu iş modu çıkarım kurallarıyla aşağıdaki sonucu üretir:
+NMAKE, Batch modu çıkarımı kuralları ile aşağıdaki sonucu üretir:
 
 ```
 E:\tmp> nmake -f test.mak -a
@@ -91,4 +92,4 @@ Generating Code...
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkarsama Kuralları](inference-rules.md)
+[Çıkarım kuralları](inference-rules.md)

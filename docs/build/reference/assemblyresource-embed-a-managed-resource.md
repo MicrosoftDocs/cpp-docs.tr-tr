@@ -1,4 +1,5 @@
 ---
+description: :/ASSEMBLYRESOURCE (yönetilen kaynağı katıştır) hakkında daha fazla bilgi edinin
 title: /ASSEMBLYRESOURCE (Yönetilen Kaynağı Katıştır)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - assemblies [C++], linking resource files
 - /ASSEMBLYRESOURCE linker option
 ms.assetid: 0ce6e1fb-921b-4b1b-a59c-d35388d789f2
-ms.openlocfilehash: 1eac489ffd01f6bd79fc8c5bbda23adb751c9486
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f79cc177df72bb83288a0a229fdf47adb0e7fc0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295077"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182924"
 ---
 # <a name="assemblyresource-embed-a-managed-resource"></a>/ASSEMBLYRESOURCE (Yönetilen Kaynağı Katıştır)
 
@@ -26,47 +27,47 @@ ms.locfileid: "62295077"
 
 ## <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
-Bu derlemede katıştırmak için istediğiniz yönetilen kaynak.
+*filename*<br/>
+Bu derlemeye eklemek istediğiniz yönetilen kaynak.
 
-*Adı*<br/>
-İsteğe bağlı. Kaynağın mantıksal adı; Kaynak yüklemek için kullanılan ad. Varsayılan dosya adıdır.
+*ada*<br/>
+İsteğe bağlı. Kaynağın mantıksal adı; kaynağı yüklemek için kullanılan ad. Varsayılan değer, dosyanın adıdır.
 
-İsteğe bağlı olarak dosyanın derleme bildiriminde özel olup olmayacağını belirtebilirsiniz. Varsayılan olarak, *adı* derleme içinde geneldir.
+İsteğe bağlı olarak, dosyanın derleme bildiriminde özel olup olmadığını belirtebilirsiniz. Varsayılan olarak, *ad* derlemede ortak olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir kaynak derlemede katıştırmak için koduna konmaz seçeneği kullanın.
+Bir derlemeye kaynak eklemek için/ASSEMBLYRESOURCE seçeneğini kullanın.
 
-Bağlayıcı ile oluşturulan derleme içinde geneldir kaynaklardır. Bağlayıcı derlemedeki kaynağı yeniden adlandırmak izin vermez.
+Bağlayıcı ile oluşturulduğunda kaynaklar derlemede ortaktır. Bağlayıcı, derlemede kaynağı yeniden adlandırmanıza izin vermez.
 
-Varsa *filename* , örneğin, tarafından oluşturulmuş bir .NET Framework kaynak (.resources) dosyası [kaynak dosya oluşturucu (Resgen.exe)](/dotnet/framework/tools/resgen-exe-resource-file-generator) veya geliştirme ortamında, bu üye ile erişilebilir **System.Resources** ad alanı (bkz [System.Resources.ResourceManager](/dotnet/api/system.resources.resourcemanager) daha fazla bilgi için). Diğer tüm kaynaklar için kullanmak **T:System.Reflection.Assembly** \* yöntemleri **System.Reflection.Assembly** çalışma zamanında kaynağa erişmek için sınıf.
+*Dosya adı* , örneğin, [kaynak dosya üreticisi (Resgen.exe)](/dotnet/framework/tools/resgen-exe-resource-file-generator) veya geliştirme ortamında oluşturulmuş bir .NET Framework kaynak (. resources) dosyası Ise, **System. resources** ad alanındaki üyelerle erişilebilir (daha fazla bilgi için bkz. [System. resources. ResourceManager](/dotnet/api/system.resources.resourcemanager) ). Diğer tüm kaynaklar için,  \* çalışma zamanında kaynağa erişmek üzere **System. Reflection. Assembly** sınıfındaki GetManifestResource yöntemlerini kullanın.
 
-Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekleri şunlardır:
+Derleme üretimini etkileyen diğer bağlayıcı seçenekleri şunlardır:
 
-- [/ ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)
+- [/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)
 
-- [/ ASSEMBLYLINKRESOURCE](assemblylinkresource-link-to-dotnet-framework-resource.md)
+- [/ASSEMBLYLıNKRESOURCE](assemblylinkresource-link-to-dotnet-framework-resource.md)
 
-- [/ ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md)
+- [/ASSEMBLYMODULE](assemblymodule-add-a-msil-module-to-the-assembly.md)
 
-- [/ DELAYSIGN](delaysign-partially-sign-an-assembly.md)
+- [/DELAYSIGN](delaysign-partially-sign-an-assembly.md)
 
-- [/ KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)
+- [/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)
 
-- [/ KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)
+- [/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)
 
-- [/ NOASSEMBLY](noassembly-create-a-msil-module.md)
+- [/NOASSEMBLY](noassembly-create-a-msil-module.md)
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **giriş** özellik sayfası.
+1. **Giriş** Özellik sayfasına tıklayın.
 
-1. Değiştirme **yönetilen kaynak dosyasını katıştır** özelliği.
+1. **Yönetilen kaynak dosyası Ekle** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -75,4 +76,4 @@ Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekler
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

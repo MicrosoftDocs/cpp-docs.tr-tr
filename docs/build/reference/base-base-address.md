@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/BASE (temel adres)
 title: /BASE (Temel Adres)
 ms.date: 09/05/2018
 f1_keywords:
@@ -20,35 +21,35 @@ helpviewer_keywords:
 - executable files [C++], base address
 - at sign symbol for base address
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
-ms.openlocfilehash: dc6380903af0be2e6696ca3589813c249f71dd05
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 269911c7d9fce47be1b9755ddebf38170ea4e81c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64341019"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182781"
 ---
 # <a name="base-base-address"></a>/BASE (Temel Adres)
 
-Bir program için temel adresini belirtir.
+Bir programın temel adresini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ BASE:**{*adresi*[**,**<em>boyutu</em>] | **\@** <em>filename</em>**,**<em>anahtar</em>}
+> **/Base:**{*Address*[**,**<em>size</em>] | **\@** <em>dosya adı</em>**,**<em>anahtar</em>}
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Güvenlik nedenleriyle, Microsoft, kullanmanızı önerir [dynamıcbase](dynamicbase-use-address-space-layout-randomization.md) , yürütülebilir dosyalar için temel adresler belirtmek yerine seçeneği. Bu rastgele yükleme zamanında Windows'ın adres alanı düzenini (ASLR) rastgele özelliği temellendirilebilen bir yürütülebilir görüntü oluşturur. Dynamıcbase seçeneği varsayılan olarak açıktır.
+> Güvenlik nedenleriyle, Microsoft, yürütülebilir dosyalar için temel adresler belirtmek yerine [/DynamicBase](dynamicbase-use-address-space-layout-randomization.md) seçeneğini kullanmanızı önerir. Bu, Windows 'un adres alanı düzeni rastgele seçme (ASLR) özelliğini kullanarak yükleme zamanında rastgele bir şekilde yeniden temel alan yürütülebilir bir görüntü oluşturur. /DYNAMICBASE seçeneği varsayılan olarak açık olur.
 
-/ Temel seçeneği, .exe veya DLL dosyasının varsayılan konumunu geçersiz kılma program için temel adres ayarlar. Bir .exe dosyası için varsayılan taban adresi 32-bit görüntüleri 0x400000 veya 64-bit görüntüleri 0x140000000 ' dir. Bir DLL için varsayılan taban 0x10000000 32-bit görüntüleri veya 64-bit görüntüleri 0x180000000 adresidir. İşletim rastgele adres alanı düzenini (ASLR) desteklemez veya taban seçeneği ayarlandığında sistemlerinde işletim sistemi programı, belirtilen veya varsayılan taban adresi yüklemek önce çalışır. Sistem, yeterli alan yok kullanılabilir değilse, programın yeniden yerleştirir. Yeniden konumlandırma önlemek için [/FIXED](fixed-fixed-base-address.md) seçeneği.
+/BASE seçeneği, bir. exe veya DLL dosyası için varsayılan konumu geçersiz kılarak, program için bir temel adres ayarlar. Bir. exe dosyasının varsayılan temel adresi 32 bitlik görüntüler için 0x400000 veya 64 bit görüntüler için 0x140000000 şeklindedir. Bir DLL için, varsayılan temel adres 32 bitlik görüntüler için 0x10000000 veya 64 bit görüntüler için 0x180000000 şeklindedir. Adres alanı düzeni rastgele seçimini (ASLR) desteklemeyen işletim sistemlerinde veya/DYNAMICBASE: NO seçeneği belirlenmediğinden, işletim sistemi ilk olarak belirtilen veya varsayılan temel adresli bir programı yüklemeye çalışır. Yeterli kullanılabilir alan yoksa, sistem programı yeniden konumlandırır. Yeniden konumlandırma 'yı engellemek için [/fixed](fixed-fixed-base-address.md) seçeneğini kullanın.
 
-Bağlayıcı hata durumunda sorunları *adresi* 64 k katı değil. İsteğe bağlı olarak, program boyutunu belirtebilirsiniz; program, belirtilen boyutta sığdıramazsanız bağlayıcı bir uyarı verir.
+*Adres* 64K 'nın katı değilse bağlayıcı bir hata verir. İsteğe bağlı olarak programın boyutunu belirtebilirsiniz; program belirttiğiniz boyuta uymuyorsa, bağlayıcı bir uyarı verir.
 
-Komut satırında temel adresini belirtmek için başka bir temel adres bir yanıt dosyası kullanarak yoludur. Temel adres bir yanıt dosyası temel adresler ve isteğe bağlı boyutları programınızı kullanacağınız tüm DLL'ler ve her bir temel adres için benzersiz bir metin anahtarı içeren bir metin dosyasıdır. Temel adres bir yanıt dosyası kullanarak belirtmek için kullanın bir at işareti (**\@**) yanıt dosya adından önce gelen *filename*, bir virgül tarafından izlenen sonra *anahtarı*dosyasında kullanılacak temel adres için değer. Bağlayıcı arar *filename* ya da belirtilen yolda veya hiçbir yol belirtilmezse LIB ortam değişkeninde belirtilen dizinlerde. Her satırda *filename* bir DLL temsil eder ve sözdizimi aşağıdaki gibidir:
+Komut satırında, temel adresi belirtmenin başka bir yolu da temel adres yanıt dosyası kullanmaktır. Temel adres yanıt dosyası, programınızın kullanacağı tüm dll 'Lerin temel adreslerini ve isteğe bağlı boyutlarını ve her temel adres için benzersiz bir metin anahtarını içeren bir metin dosyasıdır. Bir yanıt dosyası kullanarak bir temel adres belirtmek için, bir at işareti ( **\@** ), ardından yanıt dosyasının adı, *Dosya* adı ve ardından virgül, sonra da dosya içinde kullanılacak temel adres için *anahtar* değeri kullanın. Bağlayıcı, belirtilen yolda *dosya adını* arar ya da LIB ortam değişkeninde belirtilen dizinlerde hiçbir yol belirtilmemişse. *Filename* içindeki her satır bir dll 'yi temsil eder ve aşağıdaki sözdizimine sahiptir:
 
-> *anahtar* *adresi* [*boyutu*] **;** *açıklaması*
+> *anahtar* *adresi* [*size*] **;** *Açıklama*
 
-*Anahtar* alfasayısal karakterden oluşan bir dizedir ve büyük/küçük harfe duyarlı değildir. Bu genellikle bir DLL'nin adıdır, ancak olmaması. *Anahtarı* temel tarafından izlenen *adresi* C dili, onaltılık veya ondalık gösterim ve isteğe bağlı bir maksimum *boyutu*. Tüm üç bağımsız değişken, boşluk veya sekme tarafından ayrılır. Bağlayıcı, yalnızca bir uyarı verir belirtilen *boyutu* program tarafından gereken sanal adres alanı'dan küçük. A *yorum* noktalı virgül belirtilirse (**;**) ve aynı ya da ayrı bir satır üzerinde olabilir. Bağlayıcı satırın sonuna noktalı virgülden tüm metni yok sayar. Bu örnekte, böyle bir dosya parçası gösterilmiştir:
+*Anahtar* alfasayısal karakterlerden oluşan bir dizedir ve büyük/küçük harfe duyarlı değildir. Genellikle bir DLL adıdır, ancak olması gerekmez. *Anahtarın* ardından C dili, onaltılı veya ondalık gösteriminde bir temel *Adres* ve isteğe bağlı en büyük *Boyut* gelir. Üç bağımsız değişken de boşluklarla veya sekmelerle ayrılır. Belirtilen *Boyut* , programın gerektirdiği sanal adres alanından küçükse bağlayıcı bir uyarı verir. *Açıklama* noktalı virgül (**;**) ile belirtilir ve aynı veya ayrı bir satırda olabilir. Bağlayıcı, noktalı virgülden tüm metni satır sonuna kadar yoksayar. Bu örnek, bu dosyanın bir parçasını gösterir:
 
 ```
 main   0x00010000    0x08000000    ; for PROJECT.exe
@@ -56,21 +57,21 @@ one    0x28000000    0x00100000    ; for DLLONE.DLL
 two    0x28100000    0x00300000    ; for DLLTWO.DLL
 ```
 
-Bu satırlar içeren dosyanın DLLS.txt çağrılırsa, bu bilgiler aşağıdaki örnekte komut geçerlidir:
+Bu satırları içeren dosya DLLS.txt çağrılırsa aşağıdaki örnek komut bu bilgileri uygular:
 
 ```
 link dlltwo.obj /dll /base:@dlls.txt,two
 ```
 
-Temel adresi ayarlamak için başka bir yolu kullanmaktır *temel* bağımsız değişkeni olarak bir [adı](name-c-cpp.md) veya [Kitaplığı](library.md) deyimi. / Base ve [/dll](dll-build-a-dll.md) seçenekler birbirine eşit **Kitaplığı** deyimi.
+Temel adresi ayarlamaya yönelik başka bir yol da bir [ad](name-c-cpp.md) veya [kitaplık](library.md) deyimindeki *temel* bağımsız değişkeni kullanmaktır. /BASE ve [/DLL](dll-build-a-dll.md) seçenekleri birlikte **LIBRARY** ifadesiyle eşdeğerdir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **Gelişmiş** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **Bağlayıcısı**  >  **Gelişmiş** özellik sayfasını seçin.
 
-1. Değiştirme **temel adresi** özelliği.
+1. **Temel adres** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -79,4 +80,4 @@ Temel adresi ayarlamak için başka bir yolu kullanmaktır *temel* bağımsız d
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

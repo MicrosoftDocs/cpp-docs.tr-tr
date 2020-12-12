@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: skaler türleri başlatma'
 title: Ölçekli Türleri Başlatma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - automatic storage class
 - types [C], initializing
 ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
-ms.openlocfilehash: 063761abcbb1541893b9cbab463e3d121684d00a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a9294f04f39e6984a2068c5c8f79e48641834236
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181838"
 ---
 # <a name="initializing-scalar-types"></a>Ölçekli Türleri Başlatma
 
 Skaler türleri başlatırken, değeri *`assignment-expression`* değişkenine atanır. Atama için dönüştürme kuralları geçerlidir. (Bkz. dönüştürme kuralları hakkında bilgi için [tür dönüştürmeleri](../c-language/type-conversions-c.md) .)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *`declaration`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`**`init-declarator-list`* <sub>opt</sub>**`;`**

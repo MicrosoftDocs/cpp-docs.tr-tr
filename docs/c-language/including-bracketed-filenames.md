@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: köşeli parantez içine alınmış dosya adları'
 title: Köşeli Parantez İçindeki Dosya Adlarını Dahil Etme
 ms.date: 11/04/2016
 ms.assetid: 6a4e5411-c35e-48b8-90ef-b37ac324ed94
-ms.openlocfilehash: 87de00814f58ed86ee33abdcf96dd210f418c5ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e54792b5feb7d5419896641c25a4367e97d80977
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182053"
 ---
 # <a name="including-bracketed-filenames"></a>Köşeli Parantez İçindeki Dosya Adlarını Dahil Etme
 
@@ -17,4 +18,4 @@ Köşeli ayraçlar içine alınan dosya belirtimleri için, önişlemci ana dosy
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)
+[Ön işleme yönergeleri](../c-language/preprocessing-directives.md)
