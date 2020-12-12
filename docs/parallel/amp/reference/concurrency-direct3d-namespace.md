@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: eşzamanlılık::d irect3d ad alanı'
 title: Concurrency::direct3d Ad Alanı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ f1_keywords:
 helpviewer_keywords:
 - direct3d namespace
 ms.assetid: 9566a2f1-4d5f-43e4-a3ac-676643d38420
-ms.openlocfilehash: e1374acbd7061afaba372100cf6e69d9d717da8a
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 9fb0e7d4f5abbccbd9cd931fe2c4520e9410cbc9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127039"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247741"
 ---
 # <a name="concurrencydirect3d-namespace"></a>Concurrency::direct3d Ad Alanı
 
-`direct3d` ad alanı, D3D birlikte çalışabilirliği destekleyen işlevler sağlar. Bu, AMP kodunda işlem için D3D kaynaklarını kullanmanıza olanak sağlar. Ayrıca, yedekli ara kopyalar oluşturmadan D3D kodunda AMP 'da oluşturulan kaynakların kullanılmasına de olanak tanır. Amp kullanarak C++ DirectX uygulamalarınızın yoğun işlem yoğunluğu bölümlerini artımlı olarak HıZLANDıRABILIR ve amp hesaplamalarından ÜRETILEN VERILERDE D3D API 'sini kullanabilirsiniz.
+`direct3d`Ad alanı, D3D birlikte çalışabilirliği destekleyen işlevler sağlar. Bu, AMP kodunda işlem için D3D kaynaklarını kullanmanıza olanak sağlar. Ayrıca, yedekli ara kopyalar oluşturmadan D3D kodunda AMP 'da oluşturulan kaynakların kullanılmasına de olanak tanır. C++ AMP kullanarak DirectX uygulamalarınızın yoğun işlem gücü olan bölümlerini artımlı olarak hızlandırabilir ve AMP hesaplamalarından üretilen verilerde D3D API 'sini kullanabilirsiniz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace direct3d;
@@ -33,7 +34,7 @@ namespace direct3d;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[scoped_d3d_access_lock Sınıfı](scoped-d3d-access-lock-class.md)|Bir `accelerator_view` nesnesi üzerinde D3D erişim kilidi için bir ÇII sarmalayıcı.|
+|[scoped_d3d_access_lock sınıfı](scoped-d3d-access-lock-class.md)|Bir nesne üzerinde D3D erişim kilidi için bir KORıı sarmalayıcısı `accelerator_view` .|
 
 ### <a name="structures"></a>Yapılar
 
@@ -55,7 +56,7 @@ namespace direct3d;
 |[firstbithigh](concurrency-direct3d-namespace-functions-amp.md#firstbithigh)|En yüksek sıra bitden başlayıp aşağı doğru çalışma _X, ilk küme bitinin konumunu alır.|
 |[firstbitlow](concurrency-direct3d-namespace-functions-amp.md#firstbitlow)|En düşük sıra bitden başlayıp yukarı doğru çalışarak _X ilk küme bitinin konumunu alır|
 |[get_buffer](concurrency-direct3d-namespace-functions-amp.md#get_buffer)|Bir diziyi temel alan D3D arabellek arabirimini alın.|
-|[IMAX](concurrency-direct3d-namespace-functions-amp.md#imax)|Daha büyük değer döndüren iki değeri karşılaştırır.|
+|[imax](concurrency-direct3d-namespace-functions-amp.md#imax)|Daha büyük değer döndüren iki değeri karşılaştırır.|
 |[imin](concurrency-direct3d-namespace-functions-amp.md#imin)|, Daha küçük değer döndüren iki değeri karşılaştırır.|
 |[is_timeout_disabled](concurrency-direct3d-namespace-functions-amp.md#is_timeout_disabled)|Belirtilen accelerator_view için zaman aşımının devre dışı bırakılıp bırakılmadığını belirten bir Boole bayrağı döndürür.|
 |[Mad](concurrency-direct3d-namespace-functions-amp.md#mad)|Fazla Yüklendi. Üç bağımsız değişken üzerinde aritmetik çarpma/ekleme işlemi gerçekleştirir: _X \* _Y + _Z|
@@ -79,4 +80,4 @@ namespace direct3d;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+[Eşzamanlılık ad alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

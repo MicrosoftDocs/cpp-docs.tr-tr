@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Queue (STL/CLR)'
 title: sıraya al (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -57,12 +58,12 @@ helpviewer_keywords:
 - to_array member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 9ea7dec3-ea98-48ff-87d0-a5afc924aaf2
-ms.openlocfilehash: 2d5c1d30704838cdb69516d68d328c90a094a08e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1cbe30dff567c81840f2b78498b04648954399dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245882"
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 
@@ -208,7 +209,7 @@ a b c
 
 Son öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reference back();
@@ -260,7 +261,7 @@ a b x
 
 Son öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property value_type back_item;
@@ -312,7 +313,7 @@ a b x
 
 Bir öğe için sabit bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% const_reference;
@@ -356,7 +357,7 @@ a b c
 
 Temel alınan kapsayıcının türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Container value_type;
@@ -398,7 +399,7 @@ a b c
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int difference_type;
@@ -456,7 +457,7 @@ popping 3 = 3
 
 Bir öğe olup olmadığını sınar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 bool empty();
@@ -510,7 +511,7 @@ empty() = True
 
 İlk öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reference front();
@@ -562,7 +563,7 @@ x b c
 
 İlk öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property value_type front_item;
@@ -614,7 +615,7 @@ x b c
 
 Kapsayıcı bağdaştırıcısının genel arabiriminin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::IQueue<Value>
@@ -677,7 +678,7 @@ a b c d e
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef GValue generic_value;
@@ -735,7 +736,7 @@ a b c
 
 Temel alınan kapsayıcıya erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 container_type^ get_container();
@@ -830,7 +831,7 @@ a b c
 
 Son öğeyi kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void pop();
@@ -878,7 +879,7 @@ b c
 
 Yeni bir son öğe ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void push(value_type val);
@@ -948,7 +949,7 @@ Oluşturucu:
 
 `queue(queue<Value, Container>% right);`
 
-bir kopyası olan sarmalanmış bir kapsayıcı oluşturur `right.get_container()` . Sıra nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+bir kopyası olan sarmalanmış bir kapsayıcı oluşturur `right.get_container()` . Sıra nesnesi *sağa* tarafından denetlenen sıranın bir kopyası olan bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
@@ -1012,7 +1013,7 @@ x x x x x
 
 Bir öğe için bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% reference;
@@ -1061,7 +1062,7 @@ a b x
 
 Öğe sayısını sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 size_type size();
@@ -1115,7 +1116,7 @@ size() = 4 after adding 2
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int size_type;
@@ -1164,7 +1165,7 @@ size difference = 2
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 cli::array<Value>^ to_array();
@@ -1214,7 +1215,7 @@ a b c
 
 Öğenin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value value_type;
@@ -1222,7 +1223,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametre *değeri*için bir eş anlamlı.
+Tür, şablon parametre *değeri* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1349,7 +1350,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, `left->` iki kuyruk öğe öğesine göre karşılaştırıldığı zaman, sol taraftaki bir süre önce sola doğru sıralı olup olmadığını test etmek için onu döndürür [:: size (STL/CLR)](#size) `() <` `right->size()` . *left* *right*
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi halde, `left->` iki kuyruk öğe öğesine göre karşılaştırıldığı zaman, sol taraftaki bir süre önce sola doğru sıralı olup olmadığını test etmek için onu döndürür [:: size (STL/CLR)](#size) `() <` `right->size()` .  
 
 ### <a name="example"></a>Örnek
 

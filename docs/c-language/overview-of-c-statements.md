@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C deyimlerine genel bakış'
 title: C Deyimlerine Genel Bakış
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - statements, about statements
 - Visual C, statements
 ms.assetid: 0d49837a-5399-4881-b60c-af5f4e9720de
-ms.openlocfilehash: 6b6cf9ee7aab3f14b3cb4b48c10e59125391c14c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d2d6e7161f63e8508cb7e94d28b7bbafe44146e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211781"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243178"
 ---
 # <a name="overview-of-c-statements"></a>C Deyimlerine Genel Bakış
 
 C deyimleri belirteçler, ifadeler ve diğer deyimlerden oluşur. Başka bir deyimin bileşenini oluşturan bir deyim, kapsayan deyiminin "gövdesi" olarak adlandırılır. Aşağıdaki sözdizimi tarafından belirtilen her deyim türü, bu bölümde ele alınmıştır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *Ekstre*: [etiketli ifade](../c-language/goto-and-labeled-statements-c.md)
 
@@ -33,7 +34,7 @@ C deyimleri belirteçler, ifadeler ve diğer deyimlerden oluşur. Başka bir dey
 
 [sıçrama-deyim](../c-language/break-statement-c.md)
 
-[try-except-deyimin](../c-language/try-except-statement-c.md) /* Microsoft 'a özgü\*/
+[try-except-deyimin](../c-language/try-except-statement-c.md) /* Microsoft 'a özgü \*/
 
 [try-finally-deyimin](../c-language/try-finally-statement-c.md)  / \* Microsoft 'a özgü\*/
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _local_unwind2'
 title: _local_unwind2
 ms.date: 11/04/2016
 api_name:
@@ -22,16 +23,16 @@ helpviewer_keywords:
 - _local_unwind2 function
 - local_unwind2 function
 ms.assetid: 44f1fa82-e01e-490f-a6e6-18fc6811c28c
-ms.openlocfilehash: cbcc0c6177ba4cc449daf6a385a7cce53b8c1230
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: b2e3ca2f792abaa3ace54b25131d82c21aadf972
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745334"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246415"
 ---
 # <a name="_local_unwind2"></a>_local_unwind2
 
-Dahili CRT fonksiyonu. Belirtilen kapsam tablosunda listelenen tüm sonlandırma işleyicilerini çalıştırın.
+İç CRT Işlevi. Belirtilen kapsam tablosunda listelenen tüm sonlandırma işleyicilerini çalıştırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,17 +45,17 @@ void _local_unwind2(
 
 #### <a name="parameters"></a>Parametreler
 
-*Xr*<br/>
-[içinde] Tek bir kapsam tablosuyla ilişkili bir kayıt kaydı.
+*XR*<br/>
+'ndaki Bir kapsam tablosuyla ilişkili bir kayıt kaydı.
 
-*Durdurmak*<br/>
-[içinde] Nerede `_local_unwind2` durması gerektiğini gösteren sözlü düzey.
+*durdurulması*<br/>
+'ndaki Nerede durması gerektiğini gösteren sözlü düzeyi `_local_unwind2` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu yöntem yalnızca çalışma zamanı ortamı tarafından kullanılır. Kodunuzdaki yöntemi aramayın.
+Bu yöntem yalnızca çalışma zamanı ortamı tarafından kullanılır. Kodunuzda yöntemini çağırmayın.
 
-Bu yöntem sonlandırma işleyicileri yürütür, geçerli sözlü düzeyde başlar ve tarafından `stop`belirtilen düzeye ulaşana kadar sözlük düzeylerde yolunda çalışır. Bu tarafından belirtilen düzeyde sonlandırma işleyicileri `stop`yürütmek değil.
+Bu yöntem sonlandırma işleyicilerini yürüttüğünde, bu, geçerli sözcük düzeyinde başlar ve tarafından belirtilen düzeye ulaşana kadar alt düzey düzeylerde çalışır `stop` . Sonlandırma işleyicilerini tarafından belirtilen düzeyde yürütmez `stop` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

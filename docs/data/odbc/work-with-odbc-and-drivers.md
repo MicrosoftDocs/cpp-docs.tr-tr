@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ODBC ve sürücülerle çalışma'
 title: ODBC ve Sürücülerle Çalışma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ODBC drivers, using
 ms.assetid: ae1bf357-4ca4-4748-9336-8fc317f294ab
-ms.openlocfilehash: 556c0e146d6b2b402b0b9f2c3a1d64b32b0c1f6c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6197805a2906480684cb866de2a451de70fdec9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212517"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246155"
 ---
 # <a name="work-with-odbc-and-drivers"></a>ODBC ve Sürücülerle Çalışma
 
@@ -29,4 +30,4 @@ ODBC, yalnızca bir veritabanı yönetim sistemine (DBMS) bağımlı olmayan uyg
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+[Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

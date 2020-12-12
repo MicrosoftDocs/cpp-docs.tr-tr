@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yerel ayar kategorileri'
 title: Yerel Ayar Kategorileri
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,16 +22,16 @@ helpviewer_keywords:
 - LC_NUMERIC constant
 - LC_COLLATE constant
 ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
-ms.openlocfilehash: 434500dab0c68aa9475f54e930b91da0b1cd2fc9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2c6bfa4b2d1d0b76520043ee5568d51cf28a23c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342919"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246389"
 ---
 # <a name="locale-categories"></a>Yerel Ayar Kategorileri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <locale.h>
@@ -38,26 +39,26 @@ ms.locfileid: "62342919"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yerel ayar kategorileri yerelleştirme yordamları tarafından kullanılacak olan bir programın yerel ayar bilgilerinin hangi kısmının belirtmek için kullanılan bildirim sabitleri ' dir. Yerel ayar, programınızın bazı yönlerini özelleştirilebilir konumu (veya ülke/bölge) ifade eder. Yerel ayara bağımlı alanları, örneğin, parasal değerlerin görüntülenme biçimini ve tarihleri biçimlendirme içerir.
+Yerel ayar kategorileri, bir programın yerel ayar bilgilerinin hangi kısmının kullanılacağını belirtmek için yerelleştirme yordamları tarafından kullanılan bildirim sabitleridir. Yerel ayar, programınızın belirli yönlerinin özelleştirilebilecek olduğu yere (veya ülkeye/bölgeye) başvurur. Yerel ayara bağımlı alanları, örneğin tarih biçimlendirmesini veya parasal değerler için görüntüleme biçimini içerir.
 
-|Yerel ayar kategorisi|Etkilenen programın bölümlerini|
+|Yerel ayar kategorisi|Programın etkilenen bölümleri|
 |---------------------|-------------------------------|
-|`LC_ALL`|Tüm yerel ayara özgü davranışın (tüm kategoriler)|
-|`LC_COLLATE`|Davranışını `strcoll` ve `strxfrm` işlevleri|
-|`LC_CTYPE`|Karakter işleme işlevleri davranışını (dışında `isdigit`, `isxdigit`, `mbstowcs`, ve `mbtowc`, Etkilenmeyen)|
+|`LC_ALL`|Yerel ayara özgü tüm davranışlar (tüm kategoriler)|
+|`LC_COLLATE`|`strcoll`Ve işlevlerinin davranışı `strxfrm`|
+|`LC_CTYPE`|Karakter işleme işlevlerinin davranışı ( `isdigit` etkilenmeden,, `isxdigit` `mbstowcs` ve hariç `mbtowc` )|
 |`LC_MAX`|Aynı `LC_TIME`|
 |`LC_MIN`|Aynı `LC_ALL`|
-|`LC_MONETARY`|Biçimlendirme bilgileri tarafından döndürülen para `localeconv` işlevi|
-|`LC_NUMERIC`|Ondalık nokta karakteri biçimlendirilen çıkış rutinleri (örneğin, `printf`), veri dönüştürme rutinleri ve tarafından döndürülen parasal biçimlendirme bilgileri `localeconv` işlevi|
-|`LC_TIME`|Davranışını `strftime` işlevi|
+|`LC_MONETARY`|İşlev tarafından döndürülen parasal biçimlendirme bilgileri `localeconv`|
+|`LC_NUMERIC`|İşlev tarafından döndürülen biçimlendirilmiş çıkış yordamları (örneğin, `printf` ), veri dönüştürme yordamları ve parasal olmayan biçimlendirme bilgileri için ondalık nokta karakteri `localeconv`|
+|`LC_TIME`|İşlevin davranışı `strftime`|
 
-Bkz: [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) örneği.
+Bir örnek için bkz. [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [localeconv](../c-runtime-library/reference/localeconv.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[strcoll İşlevleri](../c-runtime-library/strcoll-functions.md)<br/>
+[strcoll Işlevleri](../c-runtime-library/strcoll-functions.md)<br/>
 [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
 [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

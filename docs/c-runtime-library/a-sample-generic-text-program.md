@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: örnek Generic-Text program'
 title: Örnek Genel Metin Programı
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - TCHAR type
 - TCHAR.H data types, mapping
 ms.assetid: a03de0db-8118-4bd9-a03f-640e8dfc5ed3
-ms.openlocfilehash: bc339bb11d0910eea2ef115a8f9013fa5c0270a7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0c8b9e0d201cf4891f74e54a1f5ee929d864f6b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242788"
 ---
 # <a name="a-sample-generic-text-program"></a>Örnek Genel Metin Programı
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-Aşağıdaki program, GENTEXT. C TCHAR içinde tanımlanan genel metin eşlemeleri kullanımını daha ayrıntılı bir gösterim sağlar. Y:
+Aşağıdaki program, GENTEXT. C, TCHAR 'da tanımlanan genel metin eşlemelerinin kullanımına ilişkin daha ayrıntılı bir çizim sağlar. Olsun
 
 ```C
 // GENTEXT.C
@@ -59,7 +60,7 @@ int __cdecl _tmain(int argc, _TCHAR **argv, _TCHAR **envp)
 }
 ```
 
-Varsa `_MBCS` olmuştur GENTEXT tanımlı. Aşağıdaki MBCS program C eşlenir:
+`_MBCS`Tanımlanmışsa GENTEXT. C, aşağıdaki MBCS programına eşlenir:
 
 ```C
 // crt_mbcsgtxt.c
@@ -97,7 +98,7 @@ int __cdecl main(int argc, char **argv, char **envp)
 }
 ```
 
-Varsa `_UNICODE` olmuştur GENTEXT tanımlı. C programı aşağıdaki Unicode sürümü eşler. Kullanma hakkında daha fazla bilgi için `wmain` bir ardılı olarak Unicode programlarda `main`, bkz: [wmain kullanma](../c-language/using-wmain.md) içinde *C dil başvurusu*.
+`_UNICODE`Tanımlanmışsa GENTEXT. C, programın aşağıdaki Unicode sürümüne eşlenir. ' Nin yerini alacak Unicode programlarında kullanma hakkında daha fazla bilgi için `wmain` `main` , bkz. *C dil başvurusunda* [wmain kullanma](../c-language/using-wmain.md) .
 
 ```C
 // crt_unicgtxt.c
@@ -135,7 +136,7 @@ int __cdecl wmain(int argc, wchar_t **argv, wchar_t **envp)
 }
 ```
 
-Kullanılmazsa `_MBCS` ya da `_UNICODE` olmuştur GENTEXT tanımlı. C gibi tek baytlık ASCII koduna eşler:
+Ne `_MBCS` de `_UNICODE` TANıMLı DEĞILSE gentext. C, tek baytlı ASCII koduna aşağıdaki gibi eşlenir:
 
 ```C
 // crt_sbcsgtxt.c
@@ -172,12 +173,12 @@ int __cdecl main(int argc, char **argv, char **envp)
 }
 ```
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
-[Veri Türü Eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>
-[Sabit ve Global Değişken Eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[Rutin Eşlemeler](../c-runtime-library/routine-mappings.md)<br/>
-[Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)
+[Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
+[Veri türü eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>
+[Sabit ve global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
+[Rutin eşlemeler](../c-runtime-library/routine-mappings.md)<br/>
+[Generic-Text eşlemelerini kullanma](../c-runtime-library/using-generic-text-mappings.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_same sınıfı'
 title: is_same Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_same class
 - is_same
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d
-ms.openlocfilehash: f4e4babeef89960762ebb2ccf0f733f60eadfa47
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 19e0ecec009227c0785c263893aa32beff4049e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450051"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247728"
 ---
-# <a name="issame-class"></a>is_same Sınıfı
+# <a name="is_same-class"></a>is_same Sınıfı
 
 İki tür aynı ise sınar.
 
@@ -82,12 +83,12 @@ is_same<int, const int> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
+[<type_traits>](../standard-library/type-traits.md)\
 [is_convertible sınıfı](../standard-library/is-convertible-class.md)\
-[is_base_of Sınıfı](../standard-library/is-base-of-class.md)
+[is_base_of sınıfı](../standard-library/is-base-of-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: eşzamanlılık::d irect3d ad alanı işlevleri (AMP)'
 title: Concurrency::direct3d ad alanı işlevleri (AMP)
 ms.date: 08/31/2018
 f1_keywords:
@@ -21,12 +22,12 @@ f1_keywords:
 - amp/Concurrency::direct3d::step
 - amp/Concurrency::direct3d::umin
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
-ms.openlocfilehash: bf98249001c2b8227581fbbbcceeebd085e5d820
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c446e89835e49d9afd7b11abd73ccccd032a7321
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247832"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>Concurrency::direct3d ad alanı işlevleri (AMP)
 
@@ -140,7 +141,7 @@ _X içindeki küme bitlerinin sayısını döndürür
 
 Direct3D cihaz arabirimine yönelik bir işaretçiden [accelerator_view](accelerator-view-class.md) nesnesi oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 accelerator_view create_accelerator_view(

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _putch_nolock _putwch_nolock'
 title: _putch_nolock, _putwch_nolock
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - console, writing characters to
 - _putwch_nolock function
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
-ms.openlocfilehash: df32b156d8c57d51ee81c4b4893bf11887915672
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a300b70cc128ef1cbefcf745a0ed113f452f6ef3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246363"
 ---
 # <a name="_putch_nolock-_putwch_nolock"></a>_putch_nolock, _putwch_nolock
 
@@ -71,11 +72,11 @@ wchar_t c
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa *c* döndürür. **_Putch_nolock** başarısız olursa, **EOF**döndürür; **_putwch_nolock** başarısız olursa, **weof**döndürür.
+Başarılıysa *c* döndürür. **_Putch_nolock** başarısız olursa, **EOF** döndürür; **_putwch_nolock** başarısız olursa, **weof** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_putch_nolock** ve **_putwch_nolock** , sırasıyla **_putch** ve **_putwch**aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+**_putch_nolock** ve **_putwch_nolock** , sırasıyla **_putch** ve **_putwch** aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -89,8 +90,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putch_nolock**|\<conio. h>|
-|**_putwch_nolock**|\<conio. h>|
+|**_putch_nolock**|\<conio.h>|
+|**_putwch_nolock**|\<conio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -100,6 +101,6 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

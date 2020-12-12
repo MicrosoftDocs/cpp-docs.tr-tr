@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: matematik hatası M6201'
 title: Matematik Hatası M6201
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - M6201
 ms.assetid: 4041c331-d9aa-4dd4-b565-7dbe0218538c
-ms.openlocfilehash: 0b1cd0d3fcd86a2174b19da41176dd97f547a295
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 03588b7eed580b95cb263f6e4d71f5a793f4d392
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193712"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244322"
 ---
 # <a name="math-error-m6201"></a>Matematik Hatası M6201
 
@@ -26,4 +27,4 @@ result = sqrt(-1.0)   // C statement
 result = SQRT(-1.0)   !  FORTRAN statement
 ```
 
-Bu hata, işlev adı, bağımsız değişkenleri ve hata türü ile `_matherr` işlevini çağırır. Belirli çalışma zamanı kayan nokta matematik hatalarının işlenmesini özelleştirmek için `_matherr` işlevini yeniden yazabilirsiniz.
+Bu hata işlev `_matherr` adı, bağımsız değişkenleri ve hata türü ile işlevi çağırır. `_matherr`Belirli çalışma zamanı kayan nokta matematik hatalarının işlenmesini özelleştirmek için işlevi yeniden yazabilirsiniz.

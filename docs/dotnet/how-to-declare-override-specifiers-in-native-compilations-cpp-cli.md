@@ -1,15 +1,16 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: nasıl yapılır: yerel derlemelerde geçersiz kılma belirticileri bildirme (C++/CLı)'
 title: 'Nasıl yapılır: geçersiz kılma belirticilerini bildirme (C++/CLı)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - override specifiers in native compilation, overriding
 ms.assetid: d0551836-9ac7-41eb-a6e9-a4b3ef60767d
-ms.openlocfilehash: 92bdc41cf9ebe2389f2d22dab211029899283266
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 75e925e26dc62d87e40d56b05e3be6d2dbda3e4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246402"
 ---
 # <a name="how-to-declare-override-specifiers-in-native-compilations-ccli"></a>Nasıl yapılır: Yerel Derlemelerde Geçersiz Kılma Tanımlayıcılarını Bildirme (C++/CLI)
 
@@ -20,7 +21,7 @@ ms.locfileid: "91414600"
 
 ## <a name="example-sealed-is-valid"></a>Örnek: Sealed geçerli
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Aşağıdaki örnek, yerel derlemelerde **`sealed`** geçerli olduğunu gösterir.
 
@@ -49,7 +50,7 @@ public:
 
 ## <a name="example-override-is-valid"></a>Örnek: override geçerli
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Sonraki örnek, yerel derlemelerde `override` geçerli olduğunu gösterir.
 
@@ -71,7 +72,7 @@ public:
 
 ## <a name="example-abstract-is-valid"></a>Örnek: Özet geçerli
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Bu örnek **`abstract`** , yerel derlemelerde geçerli olduğunu gösterir.
 

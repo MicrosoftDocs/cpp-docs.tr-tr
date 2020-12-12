@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDateTimeCtrl sınıfı'
 title: CDateTimeCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: f04cce93aa6a86d11c2d9ec953992a0f90f635c5
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: cfed57d74e16f8433a5199ca912379b90a4f48cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561953"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247948"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 
@@ -130,7 +131,7 @@ Bu yöntem, Windows SDK açıklanan [DTM_CLOSEMONTHCAL](/windows/win32/Controls/
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, tarih ve saat Seçici denetimine programlı bir şekilde erişmek için kullanılan *m_dateTimeCtrl*değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, tarih ve saat Seçici denetimine programlı bir şekilde erişmek için kullanılan *m_dateTimeCtrl* değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
@@ -207,7 +208,7 @@ Bu yöntem, Windows SDK açıklanan [DTM_GETDATETIMEPICKERINFO](/windows/win32/C
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, tarih ve saat Seçici denetimine programlı bir şekilde erişmek için kullanılan *m_dateTimeCtrl*değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, tarih ve saat Seçici denetimine programlı bir şekilde erişmek için kullanılan *m_dateTimeCtrl* değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
@@ -362,7 +363,7 @@ Sistem saati bilgilerini almak için [SystemTime](/windows/win32/api/minwinbase/
 
 Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [DTM_GETSYSTEMTIME](/windows/win32/Controls/dtm-getsystemtime)davranışını uygular. MFC uygulamasında `GetTime` , `COleDateTime` veya `CTime` sınıflarını kullanabilir veya bir `SYSTEMTIME` yapıyı, zaman bilgilerini depolamak için kullanabilirsiniz.
 
-Yukarıdaki ikinci ve üçüncü sürümlerde DWORD dönüş değeri, tarih ve saat seçici denetiminin "Tarih yok" durumuna ayarlanmış olup olmadığını, [Nmdatetimechange](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) yapısı üye *dwFlags*bölümünde gösterildiği gibi gösterir. Döndürülen değer GDT_NONE eşitse, denetim "Tarih yok" durumuna ayarlanır ve DTS_SHOWNONE stilini kullanır. Döndürülen değer GDT_VALID eşitse, sistem saati hedef konumda başarıyla depolanır.
+Yukarıdaki ikinci ve üçüncü sürümlerde DWORD dönüş değeri, tarih ve saat seçici denetiminin "Tarih yok" durumuna ayarlanmış olup olmadığını, [Nmdatetimechange](/windows/win32/api/commctrl/ns-commctrl-nmdatetimechange) yapısı üye *dwFlags* bölümünde gösterildiği gibi gösterir. Döndürülen değer GDT_NONE eşitse, denetim "Tarih yok" durumuna ayarlanır ve DTS_SHOWNONE stilini kullanır. Döndürülen değer GDT_VALID eşitse, sistem saati hedef konumda başarıyla depolanır.
 
 ### <a name="example"></a>Örnek
 
@@ -391,7 +392,7 @@ Bu yöntem, Windows SDK açıklanan [DTM_GETIDEALSIZE](/windows/win32/Controls/d
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, tarih ve saat Seçici denetimine programlı bir şekilde erişmek için kullanılan *m_dateTimeCtrl*değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, tarih ve saat Seçici denetimine programlı bir şekilde erişmek için kullanılan *m_dateTimeCtrl* değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 
@@ -520,7 +521,7 @@ Bu yöntem, Windows SDK açıklanan [DTM_SETMCSTYLE](/windows/win32/Controls/dtm
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, tarih ve saat Seçici denetimine programlı bir şekilde erişmek için kullanılan *m_dateTimeCtrl*değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
+Aşağıdaki kod örneği, tarih ve saat Seçici denetimine programlı bir şekilde erişmek için kullanılan *m_dateTimeCtrl* değişkenini tanımlar. Bu değişken bir sonraki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CDateTimeCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cdatetimectrl-class_1.h)]
 

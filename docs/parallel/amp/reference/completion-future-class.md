@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: completion_future sınıfı'
 title: completion_future Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ f1_keywords:
 - AMPRT/Concurrency::completion_future::wait_for
 - AMPRT/Concurrency::completion_future::wait_until
 ms.assetid: 1303c62e-546d-4b02-a578-251ed3fc0b6b
-ms.openlocfilehash: 1863f0908753fb05abb01cf1bd2e34dc6649e0a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8cf252bc29dc85014cb6375eab18de98d6d31646
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247858"
 ---
 # <a name="completion_future-class"></a>completion_future Sınıfı
 
 C++ AMP zaman uyumsuz bir işleme karşılık gelen bir gelecekte temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class completion_future;
@@ -68,11 +69,11 @@ class completion_future;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="completion_future"></a><a name="ctor"></a>completion_future
+## <a name="completion_future"></a><a name="ctor"></a> completion_future
 
 `completion_future` sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 completion_future();
@@ -97,21 +98,21 @@ completion_future(
 |`completion_future(const completion_future& _Other);`|`completion_future`Bir oluşturucuyu kopyalayarak sınıfının yeni bir örneğini başlatır.|
 |`completion_future(completion_future&& _Other);`|`completion_future`Bir oluşturucuyu taşıyarak sınıfın yeni bir örneğini başlatır.|
 
-## <a name="get"></a><a name="get"></a>Al
+## <a name="get"></a><a name="get"></a> Al
 
 İlişkili zaman uyumsuz işlem tamamlanana kadar bekler. Zaman uyumsuz işlem sırasında bir tane ile karşılaşılırsa saklı özel durumu oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void get() const;
 ```
 
-## <a name="operator-stdshared_futurevoid"></a><a name="operator_shared_future"></a>işleç std:: shared_future\<void>
+## <a name="operator-stdshared_futurevoid"></a><a name="operator_shared_future"></a> işleç std:: shared_future\<void>
 
 Nesneyi örtük olarak nesnesine dönüştürür `completion_future` `std::shared_future` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 operator std::shared_future<void>() const;
@@ -121,11 +122,11 @@ operator std::shared_future<void>() const;
 
 Bir `std::shared_future` nesnesi.
 
-## <a name="operator"></a><a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 Belirtilen `completion_future` nesnenin içeriğini buna kopyalar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 completion_future&  operator= (const completion_future& _Other );
@@ -148,11 +149,11 @@ Bu nesneye bir başvuru `completion_future` .
 |`completion_future& operator=(const completion_future& _Other);`|`completion_future`Bir derin kopya kullanarak, belirtilen nesnenin içeriğini buna kopyalar.|
 |`completion_future& operator=(completion_future&& _Other);`|Belirtilen `completion_future` nesnenin içeriğini bir taşıma ataması kullanarak buna kopyalar.|
 
-## <a name="then"></a><a name="then"></a>ni
+## <a name="then"></a><a name="then"></a> ni
 
 `completion_future`İlişkili zaman uyumsuz işlem yürütmeyi bitirdiğinde yürütülecek nesneye bir geri çağırma işlevi nesnesi zincirler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <typename _Functor>
@@ -167,11 +168,11 @@ Geri çağırma, functor.
 *_Func*<br/>
 Geri çağırma işlevi nesnesi.
 
-## <a name="to_task"></a><a name="to_task"></a>to_task
+## <a name="to_task"></a><a name="to_task"></a> to_task
 
 `task`İlişkili zaman uyumsuz işleme karşılık gelen bir nesne döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 concurrency::task<void> to_task() const;
@@ -181,11 +182,11 @@ concurrency::task<void> to_task() const;
 
 `task`İlişkili zaman uyumsuz işleme karşılık gelen bir nesne.
 
-## <a name="valid"></a><a name="valid"></a>geçerli
+## <a name="valid"></a><a name="valid"></a> geçerli
 
 Nesnenin zaman uyumsuz bir işlemle ilişkili olup olmadığını gösteren bir Boole değeri alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 bool valid() const;
@@ -195,21 +196,21 @@ bool valid() const;
 
 **`true`** nesne bir zaman uyumsuz işlemle ilişkiliyse; Aksi takdirde, **`false`** .
 
-## <a name="wait"></a><a name="wait"></a>bekleneceğini
+## <a name="wait"></a><a name="wait"></a> bekleneceğini
 
 İlişkili zaman uyumsuz işlem tamamlanana kadar engeller.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void wait() const;
 ```
 
-## <a name="wait_for"></a><a name="wait_for"></a>wait_for
+## <a name="wait_for"></a><a name="wait_for"></a> wait_for
 
 İlişkili zaman uyumsuz işlem tamamlanana kadar veya tarafından belirtilen süre `_Rel_time` geçtiğinde engeller.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -235,17 +236,17 @@ Değer başına geçecek saniye sayısını temsil eden std:: Ratio.
 
 Şunu döndürür:
 
-- `std::future_status::deferred`ilişkili zaman uyumsuz işlem çalışmıyorsa.
+- `std::future_status::deferred` ilişkili zaman uyumsuz işlem çalışmıyorsa.
 
-- `std::future_status::ready`ilişkili zaman uyumsuz işlem tamamlanmıştır.
+- `std::future_status::ready` ilişkili zaman uyumsuz işlem tamamlanmıştır.
 
-- `std::future_status::timeout`belirtilen zaman aralığı geçtiğinde.
+- `std::future_status::timeout` belirtilen zaman aralığı geçtiğinde.
 
-## <a name="wait_until"></a><a name="wait_until"></a>wait_until
+## <a name="wait_until"></a><a name="wait_until"></a> wait_until
 
 İlişkili zaman uyumsuz işlem tamamlanana veya geçerli saat tarafından belirtilen değeri aşana kadar engeller `_Abs_time` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -271,17 +272,17 @@ Bu zaman noktasının ölçüldüğü saat.
 
 Şunu döndürür:
 
-1. `std::future_status::deferred`ilişkili zaman uyumsuz işlem çalışmıyorsa.
+1. `std::future_status::deferred` ilişkili zaman uyumsuz işlem çalışmıyorsa.
 
-1. `std::future_status::ready`ilişkili zaman uyumsuz işlem tamamlanmıştır.
+1. `std::future_status::ready` ilişkili zaman uyumsuz işlem tamamlanmıştır.
 
-1. `std::future_status::timeout`belirtilen zaman aralığı geçtiğinde.
+1. `std::future_status::timeout` belirtilen zaman aralığı geçtiğinde.
 
-## <a name="completion_future"></a><a name="dtor"></a>~ completion_future
+## <a name="completion_future"></a><a name="dtor"></a> ~ completion_future
 
 Nesneyi yok eder `completion_future` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 ~completion_future();

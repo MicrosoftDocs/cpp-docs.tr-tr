@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları uyarısı LNK4254'
 title: Bağlayıcı Araçları Uyarısı LNK4254
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4254
 ms.assetid: 6f41dfb3-ca21-40d3-bac7-b637e578efa4
-ms.openlocfilehash: 8431bd2d89fd5df5cf076ad006ab04006f552c4c
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 410a904af6af2015a817ac9e254dff7f09811b72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244478"
 ---
 # <a name="linker-tools-warning-lnk4254"></a>Bağlayıcı Araçları Uyarısı LNK4254
 
@@ -21,11 +22,11 @@ Bir bölümün içeriği birbiriyle birleştirildi, ancak iki bölümün öznite
 
 LNK4254 çözümlemek için birleştirme isteğini değiştirin veya kaldırın.
 
-X86 makinelerini ve Windows CE hedeflerini hedeflerken (ARM, MIPS, SH4 ve Thumb), Visual C++ile. CRT bölüm salt okunurdur. Kodunuz önceki davranışa bağımlıysa (. CRT bölümleri okuma/yazma), beklenmeyen bir davranış görebilirsiniz.
+X86 makinelerini ve Windows CE hedeflerini (ARM, MIPS, SH4 ve Thumb) hedeflerken, Visual C++. CRT bölüm salt okunurdur. Kodunuz önceki davranışa bağımlıysa (. CRT bölümleri okuma/yazma), beklenmeyen bir davranış görebilirsiniz.
 
 Daha fazla bilgi için bkz.,
 
-- [/MERGE (Bölümleri Birleştir)](../../build/reference/merge-combine-sections.md)
+- [/MERGE (bölümleri Birleştir)](../../build/reference/merge-combine-sections.md)
 
 - [comment (C/C++)](../../preprocessor/comment-c-cpp.md)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Array sınıfı'
 title: array Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - array class
 ms.assetid: 0832b6c1-40f0-421d-9104-6b1baa0c63a7
-ms.openlocfilehash: efea8dabb69a48e69d68a86110fdf9bc7664948b
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: df74ab714fc2865cce71300e094b693664694b31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247897"
 ---
 # <a name="array-class"></a>array Sınıfı
 
@@ -55,30 +56,30 @@ Dizinin derecesi.
 |Ad|Açıklama|
 |----------|-----------------|
 |[dizi Oluşturucusu](#ctor)|`array` sınıfının yeni bir örneğini başlatır.|
-|[~ dizi yok edici](#dtor)|`array` nesnesini yok eder.|
+|[~ dizi yok edici](#dtor)|Nesneyi yok eder `array` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |[copy_to](#copy_to)|Dizinin içeriğini başka bir diziye kopyalar.|
-|[verileri](#data)|Dizinin ham verisine bir işaretçi döndürür.|
+|[data](#data)|Dizinin ham verisine bir işaretçi döndürür.|
 |[get_accelerator_view](#get_accelerator_view)|Dizinin ayrıldığı konumu temsil eden [accelerator_view](accelerator-view-class.md) nesnesini döndürür. Bu özelliğe yalnızca CPU üzerinde erişilebilir.|
-|[get_associated_accelerator_view](#get_associated_accelerator_view)|`array` nesnesinin örneğini oluşturmak için bir hazırlama Oluşturucusu çağrıldığında parametre olarak geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesini alır.|
+|[get_associated_accelerator_view](#get_associated_accelerator_view)|Nesnenin örneğini oluşturmak için bir hazırlama Oluşturucusu çağrıldığında parametre olarak geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesini alır `array` .|
 |[get_cpu_access_type](#get_cpu_access_type)|Dizinin [access_type](concurrency-namespace-enums-amp.md#access_type) döndürür. Bu yönteme yalnızca CPU üzerinden erişilebilir.|
 |[get_extent](#get_extent)|Dizinin [kapsam](extent-class.md) nesnesini döndürür.|
-|[reinterpret_as](#reinterpret_as)|`array` nesnesindeki tüm öğeleri içeren tek boyutlu bir dizi döndürür.|
-|[section](#section)|Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu `array` nesnesinin bir alt bölümünü döndürür.|
-|[view_as](#view_as)|`array` nesnesinden oluşturulan [array_view](array-view-class.md) nesnesini döndürür.|
+|[reinterpret_as](#reinterpret_as)|Nesnedeki tüm öğeleri içeren tek boyutlu bir dizi döndürür `array` .|
+|[kısmı](#section)|`array`Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu nesnenin alt bölümünü döndürür.|
+|[view_as](#view_as)|Nesnesinden oluşturulan [array_view](array-view-class.md) nesnesini döndürür `array` .|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator std:: vector&lt;value_type&gt;](#operator_vec)|Diziyi bir std::[Vector](../../../standard-library/vector-class.md) nesnesine örtük olarak dönüştürmek için `copy(*this, vector)` kullanır.|
+|[operator std:: vector &lt; value_type&gt;](#operator_vec)|`copy(*this, vector)`Diziyi dolaylı olarak std::[Vector](../../../standard-library/vector-class.md) nesnesine dönüştürmek için kullanır.|
 |[operator ()](#operator_call)|Parametreler tarafından belirtilen öğe değerini döndürür.|
-|[işleç\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
-|[işleç =](#operator_eq)|Belirtilen `array` nesnesinin içeriğini buna kopyalar.|
+|[işlecinde\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
+|[işleç =](#operator_eq)|Belirtilen `array` nesnenin içeriğini buna kopyalar.|
 
 ### <a name="public-constants"></a>Genel sabitler
 
@@ -91,21 +92,21 @@ Dizinin derecesi.
 |Ad|Açıklama|
 |----------|-----------------|
 |[accelerator_view](#accelerator_view)|Dizinin ayrıldığı konumu temsil eden [accelerator_view](accelerator-view-class.md) nesnesini alır. Bu özelliğe yalnızca CPU üzerinde erişilebilir.|
-|[associated_accelerator_view](#associated_accelerator_view)|`array` nesnesinin örneğini oluşturmak için bir hazırlama Oluşturucusu çağrıldığında parametre olarak geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesini alır.|
+|[associated_accelerator_view](#associated_accelerator_view)|Nesnenin örneğini oluşturmak için bir hazırlama Oluşturucusu çağrıldığında parametre olarak geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesini alır `array` .|
 |[cpu_access_type](#cpu_access_type)|CPU 'nun dizinin depolamasına nasıl erişebileceğini temsil eden [access_type](concurrency-namespace-enums-amp.md#access_type) alır.|
 |[genişliğini](#extent)|Dizinin şeklini tanımlayan kapsamı alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür `array<T,N>`, Hızlandırıcı veya CPU gibi belirli bir konumda bulunan yoğun ve normal (pürüzlü olmayan) *N*boyutlu diziyi temsil eder. Dizideki öğelerin veri türü, hedef Hızlandırıcı ile uyumlu bir türde olması gereken `T`. Dizi `N`sırası statik olarak belirlendiği ve türün parçası olsa da, dizinin kapsamı çalışma zamanı tarafından belirlenir ve sınıf `extent<N>`kullanılarak ifade edilir.
+Tür, `array<T,N>` Hızlandırıcı veya CPU gibi belirli bir konumda bulunan yoğun ve normal (pürüzlü olmayan) *N* boyutlu diziyi temsil eder. Dizideki öğelerin veri türü `T` , hedef Hızlandırıcı ile uyumlu bir türde olmalıdır. Dizi derecesi statik olarak `N` belirlense ve türün parçası olsa da, dizinin kapsamı çalışma zamanı tarafından belirlenir ve sınıfı kullanılarak ifade edilir `extent<N>` .
 
-Bir dizide herhangi bir sayıda boyut olabilir, ancak bazı işlevler bir, iki ve üç dereceli `array` nesne için özelleştirilmiş olur. Boyut bağımsız değişkenini atlarsanız varsayılan değer 1 ' dir.
+Bir dizide herhangi bir sayıda boyut olabilir, ancak bazı işlevler `array` bir, iki ve üç dereceli nesneler için özelleştirilmiş olur. Boyut bağımsız değişkenini atlarsanız varsayılan değer 1 ' dir.
 
 Dizi verileri bellekte bitişik olarak düzenlenir. En az önemli boyutta bir öğe tarafından farklı olan öğeler bellekte bitişik olarak bulunur.
 
 Diziler mantıksal olarak değer türleri olarak değerlendirilir, çünkü bir dizi başka bir diziye kopyalanırsa derin bir kopya gerçekleştirilir. İki dizi hiçbir şekilde aynı verileri göstermiyor.
 
-`array<T,N>` türü çeşitli senaryolarda kullanılır:
+`array<T,N>`Tür çeşitli senaryolarda kullanılır:
 
 - Bir hızlandırıcı üzerinde hesaplamalar için kullanılabilen bir veri kapsayıcısı olarak.
 
@@ -123,15 +124,15 @@ Diziler mantıksal olarak değer türleri olarak değerlendirilir, çünkü bir 
 
 **Ad alanı:** Zamanlı
 
-## <a name="dtor"></a>~ dizi
+## <a name="array"></a><a name="dtor"></a> ~ dizi
 
-`array` nesnesini yok eder.
+Nesneyi yok eder `array` .
 
 ```cpp
 ~array() restrict(cpu);
 ```
 
-## <a name="accelerator_view"></a>accelerator_view
+## <a name="accelerator_view"></a><a name="accelerator_view"></a> accelerator_view
 
 Dizinin ayrıldığı konumu temsil eden [accelerator_view](accelerator-view-class.md) nesnesini alır. Bu özelliğe yalnızca CPU üzerinde erişilebilir.
 
@@ -139,9 +140,9 @@ Dizinin ayrıldığı konumu temsil eden [accelerator_view](accelerator-view-cla
 __declspec(property(get= get_accelerator_view)) Concurrency::accelerator_view accelerator_view;
 ```
 
-## <a name="ctor"></a>dizide
+## <a name="array"></a><a name="ctor"></a> dizide
 
-[Dizi sınıfının](array-class.md)yeni bir örneğini başlatır. `array<T,N>`için varsayılan oluşturucu yok. Tüm oluşturucular yalnızca CPU üzerinde çalıştırılır. Direct3D hedefinde yürütülemez.
+[Dizi sınıfının](array-class.md)yeni bir örneğini başlatır. İçin varsayılan Oluşturucu yoktur `array<T,N>` . Tüm oluşturucular yalnızca CPU üzerinde çalıştırılır. Direct3D hedefinde yürütülemez.
 
 ```cpp
 explicit array(
@@ -407,7 +408,7 @@ Dizinin tercih edilen hedef konumunu belirten bir accelerator_view.
 Dizinin konumunu belirten [accelerator_view](accelerator-view-class.md) nesnesi.
 
 *_Cpu_access_type*<br/>
-CPU üzerindeki dizi için istenen [access_type](concurrency-namespace-enums-amp.md#access_type) . Bu parametre, CPU `access_type` belirlemeyi çalışma zamanına bırakarak `access_type_auto` varsayılan değeri vardır. Dizinin gerçek CPU `access_type` `get_cpu_access_type` yöntemi kullanılarak sorgulanabilir.
+CPU üzerindeki dizi için istenen [access_type](concurrency-namespace-enums-amp.md#access_type)  . Bu parametrenin varsayılan değeri, `access_type_auto` CPU `access_type` belirleme çalışma zamanına bırakılır. Dizi için gerçek CPU, `access_type` yöntemi kullanılarak sorgulanabilecek `get_cpu_access_type` .
 
 *_Extent*<br/>
 Dizinin her boyutundaki kapsam.
@@ -442,17 +443,17 @@ Bölümün derecesi.
 *value_type*<br/>
 Kopyalanmış öğelerin veri türü.
 
-## <a name="associated_accelerator_view"></a>associated_accelerator_view
+## <a name="associated_accelerator_view"></a><a name="associated_accelerator_view"></a> associated_accelerator_view
 
-`array` nesnesinin örneğini oluşturmak için bir hazırlama Oluşturucusu çağrıldığında parametre olarak geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesini alır.
+Nesnenin örneğini oluşturmak için bir hazırlama Oluşturucusu çağrıldığında parametre olarak geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesini alır `array` .
 
 ```cpp
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;
 ```
 
-## <a name="copy_to"></a>copy_to
+## <a name="copy_to"></a><a name="copy_to"></a> copy_to
 
-`array` içeriğini başka bir `array`kopyalar.
+İçeriğini `array` diğerine kopyalar `array` .
 
 ```cpp
 void copy_to(
@@ -467,7 +468,7 @@ void copy_to(
 *_Dest*<br/>
 Kopyalamanın [array_view](array-view-class.md) nesnesi.
 
-## <a name="cpu_access_type"></a>cpu_access_type
+## <a name="cpu_access_type"></a><a name="cpu_access_type"></a> cpu_access_type
 
 Bu dizi için izin verilen CPU access_type alır.
 
@@ -475,9 +476,9 @@ Bu dizi için izin verilen CPU access_type alır.
 __declspec(property(get= get_cpu_access_type)) access_type cpu_access_type;
 ```
 
-## <a name="data"></a>verileri
+## <a name="data"></a><a name="data"></a> verileri
 
-`array`ham verisine bir işaretçi döndürür.
+Ham verilerine yönelik bir işaretçi döndürür `array` .
 
 ```cpp
 value_type* data() restrict(amp, cpu);
@@ -489,17 +490,17 @@ const value_type* data() const restrict(amp, cpu);
 
 Dizinin ham verilerine yönelik bir işaretçi.
 
-## <a name="extent"></a>genişliğini
+## <a name="extent"></a><a name="extent"></a> genişliğini
 
-`array`şeklini tanımlayan [kapsam](extent-class.md) nesnesini alır.
+Şeklini tanımlayan [kapsam](extent-class.md) nesnesini alır `array` .
 
 ```cpp
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
 ```
 
-## <a name="get_accelerator_view"></a>get_accelerator_view
+## <a name="get_accelerator_view"></a><a name="get_accelerator_view"></a> get_accelerator_view
 
-`array` nesnesinin ayrıldığı konumu temsil eden [accelerator_view](accelerator-view-class.md) nesnesini döndürür. Bu özelliğe yalnızca CPU üzerinde erişilebilir.
+Nesnenin ayrıldığı konumu temsil eden [accelerator_view](accelerator-view-class.md) nesnesini döndürür `array` . Bu özelliğe yalnızca CPU üzerinde erişilebilir.
 
 ```cpp
 Concurrency::accelerator_view get_accelerator_view() const;
@@ -507,11 +508,11 @@ Concurrency::accelerator_view get_accelerator_view() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`array` nesnesinin ayrıldığı konumu temsil eden `accelerator_view` nesnesi.
+`accelerator_view`Nesnenin ayrıldığı konumu temsil eden nesne `array` .
 
-## <a name="get_associated_accelerator_view"></a>get_associated_accelerator_view
+## <a name="get_associated_accelerator_view"></a><a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
 
-`array` nesnesinin örneğini oluşturmak için bir hazırlama Oluşturucusu çağrıldığında parametre olarak geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesini alır.
+Nesnenin örneğini oluşturmak için bir hazırlama Oluşturucusu çağrıldığında parametre olarak geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesini alır `array` .
 
 ```cpp
 Concurrency::accelerator_view get_associated_accelerator_view() const ;
@@ -521,7 +522,7 @@ Concurrency::accelerator_view get_associated_accelerator_view() const ;
 
 Hazırlama oluşturucusuna geçirilen ikinci [accelerator_view](accelerator-view-class.md) nesnesi.
 
-## <a name="get_cpu_access_type"></a>get_cpu_access_type
+## <a name="get_cpu_access_type"></a><a name="get_cpu_access_type"></a> get_cpu_access_type
 
 Bu dizi için izin verilen CPU access_type döndürür.
 
@@ -531,9 +532,9 @@ access_type get_cpu_access_type() const restrict(cpu);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="get_extent"></a>get_extent
+## <a name="get_extent"></a><a name="get_extent"></a> get_extent
 
-`array`'in [kapsam](extent-class.md) nesnesini döndürür.
+Öğesinin [uzantı](extent-class.md) nesnesini döndürür `array` .
 
 ```cpp
 Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
@@ -541,11 +542,11 @@ Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`array``extent` nesnesi.
+`extent`Nesnesi `array` .
 
-## <a name="operator_vec"></a>operator std:: vector&lt;value_type&gt;
+## <a name="operator-stdvectorltvalue_typegt"></a><a name="operator_vec"></a> operator std:: vector &lt; value_type&gt;
 
-Diziyi bir std:: Vector nesnesine örtük olarak dönüştürmek için `copy(*this, vector)` kullanır.
+`copy(*this, vector)`Diziyi dolaylı olarak std:: Vector nesnesine dönüştürmek için kullanır.
 
 ```cpp
 operator std::vector<value_type>() const restrict(cpu);
@@ -558,9 +559,9 @@ Vektör öğelerinin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizide yer alan verilerin bir kopyasını içeren `vector<T>` türünde bir nesne.
+`vector<T>`Dizide yer alan verilerin bir kopyasını içeren türünde bir nesne.
 
-## <a name="operator_call"></a>operator ()
+## <a name="operator"></a><a name="operator_call"></a> operator ()
 
 Parametreler tarafından belirtilen öğe değerini döndürür.
 
@@ -603,7 +604,7 @@ Bu bölümün kaynağının en az önemli bileşeni.
 
 Parametreler tarafından belirtilen öğe değeri.
 
-## <a name="operator_at"></a>operator []
+## <a name="operator"></a><a name="operator_at"></a> operator []
 
 Belirtilen dizindeki öğeyi döndürür.
 
@@ -630,9 +631,9 @@ Dizin.
 
 Belirtilen dizinde olan öğe.
 
-## <a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
-Belirtilen `array` nesnesinin içeriğini kopyalar.
+Belirtilen nesnenin içeriğini kopyalar `array` .
 
 ```cpp
 array& operator= (const array& _Other) restrict(cpu);
@@ -646,24 +647,24 @@ array& operator= (
 ### <a name="parameters"></a>Parametreler
 
 *_Other*<br/>
-Kopyalamanın `array` nesnesi.
+`array`Kopyalanacak nesne.
 
 *_Src*<br/>
-Kopyalamanın `array` nesnesi.
+`array`Kopyalanacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu `array` nesnesine bir başvuru.
+Bu nesneye bir başvuru `array` .
 
-## <a name="rank"></a>sırası
+## <a name="rank"></a><a name="rank"></a> sırası
 
-`array`derecesini depolar.
+Derecesini depolar `array` .
 
 ```cpp
 static const int rank = _Rank;
 ```
 
-## <a name="reinterpret_as"></a>reinterpret_as
+## <a name="reinterpret_as"></a><a name="reinterpret_as"></a> reinterpret_as
 
 İsteğe bağlı olarak, kaynak diziden farklı bir değer türüne sahip olabilecek tek boyutlu bir array_view diziyi yeniden yorumlar.
 
@@ -702,9 +703,9 @@ array_view<float,1> v = a.reinterpret_as<float>();
 assert(v.extent == 3*a.extent);
 ```
 
-## <a name="section"></a>kısmı
+## <a name="section"></a><a name="section"></a> kısmı
 
-Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu `array` nesnesinin bir alt bölümünü döndürür.
+`array`Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu nesnenin alt bölümünü döndürür.
 
 ```cpp
 array_view<value_type,_Rank> section(
@@ -804,9 +805,9 @@ Kopyalanmış öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu `array` nesnesinin bir alt bölümünü döndürür. Yalnızca `index` nesnesi belirtildiğinde alt bölüm, ilişkili kılavuzdaki, `index` nesnesindeki öğelerin dizinlerinden daha büyük dizinlere sahip olan tüm öğeleri içerir.
+`array`Belirtilen kaynak ve isteğe bağlı olarak belirtilen kapsamın bulunduğu nesnenin alt bölümünü döndürür. Yalnızca `index` nesne belirtildiğinde alt bölüm, ilişkili kılavuzdaki, nesne içindeki öğelerin dizinlerinden daha büyük dizinlere sahip olan tüm öğeleri içerir `index` .
 
-## <a name="view_as"></a>view_as
+## <a name="view_as"></a><a name="view_as"></a> view_as
 
 Bu diziyi farklı bir derece [array_view](array-view-class.md) olarak yeniden yorumlar.
 
@@ -823,13 +824,13 @@ array_view<const value_type,_New_rank> view_as(
 ### <a name="parameters"></a>Parametreler
 
 *_New_rank*<br/>
-`extent` nesnesinin bir parametre olarak geçirildiği derecesi.
+`extent`Parametre olarak geçirilen nesnenin sıralaması.
 
 *_View_extent*<br/>
 Yeni [array_view](array-view-class.md) nesnesini oluşturmak için kullanılan uzantı.
 
 *value_type*<br/>
-Hem özgün `array` nesnesindeki hem de döndürülen `array_view` nesnesindeki öğelerin veri türü.
+Hem özgün nesne hem de döndürülen nesne içindeki öğelerin veri türü `array` `array_view` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -837,4 +838,4 @@ Oluşturulan [array_view](array-view-class.md) nesnesi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+[Eşzamanlılık ad alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
