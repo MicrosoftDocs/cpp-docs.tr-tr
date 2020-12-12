@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: grafikler (C++ AMP)'
 title: Grafikler (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: 97fd433387aac809053ea6dd8ac59a56207a4fc8
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: 79e908ac673fb8fcc5ac370d6900697b3274585c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254553"
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 

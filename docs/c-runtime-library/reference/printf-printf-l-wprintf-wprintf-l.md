@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: printf, _printf_l, wprintf, _wprintf_l'
 title: printf, _printf_l, wprintf, _wprintf_l
 ms.date: 11/04/2016
 api_name:
@@ -41,18 +42,18 @@ helpviewer_keywords:
 - printf function, using
 - formatted text [C++]
 ms.assetid: 77a854ae-5b48-4865-89f4-f2dc5cf80f52
-ms.openlocfilehash: 73de90667479fff647e399068f9b97453819d27c
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: cd38713b4646536fb2ee5186810fd7630478743f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84507059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252837"
 ---
 # <a name="printf-_printf_l-wprintf-_wprintf_l"></a>printf, _printf_l, wprintf, _wprintf_l
 
 Biçimli çıktıyı standart çıkış akışına yazdırır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int printf(
@@ -83,20 +84,20 @@ Biçim denetimi.
 *değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluşursa yazdırılan karakter sayısını veya negatif bir değer döndürür. *Biçim* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar. *Bağımsız değişkende* **EOF** (0xFFFF) ile karşılaşılırsa, işlev-1 döndürür.
+Bir hata oluşursa yazdırılan karakter sayısını veya negatif bir değer döndürür. *Biçim* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL** olarak ayarlar. *Bağımsız değişkende* **EOF** (0xFFFF) ile karşılaşılırsa, işlev-1 döndürür.
 
 **Errno** ve hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Printf** işlevi, standart çıkış akışına, **stdout**öğesine bir dizi karakter ve değer yazar ve yazdırır. Bağımsız değişkenler *Biçim* dizesini izleyemiyorsa, *Biçim* dizesinin bağımsız değişkenlerin çıkış biçimini belirten belirtimleri içermesi gerekir. **printf** ve [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md) aynı şekilde davranır. Bu, **printf** çıkışı **Dosya**türü hedefi yerine **stdout** 'a yazar.
+**Printf** işlevi, standart çıkış akışına, **stdout** öğesine bir dizi karakter ve değer yazar ve yazdırır. Bağımsız değişkenler *Biçim* dizesini izleyemiyorsa, *Biçim* dizesinin bağımsız değişkenlerin çıkış biçimini belirten belirtimleri içermesi gerekir. **printf** ve [fprintf](fprintf-fprintf-l-fwprintf-fwprintf-l.md) aynı şekilde davranır. Bu, **printf** çıkışı **Dosya** türü hedefi yerine **stdout** 'a yazar.
 
-**wprintf** , **printf**öğesinin geniş karakterli bir sürümüdür; *Biçim* geniş karakterli bir dizedir. Akış ANSI modunda açılırsa **wprintf** ve **printf** aynı şekilde davranır. **printf** Şu anda bir UNICODE akışına çıktıyı desteklemez.
+**wprintf** , **printf** öğesinin geniş karakterli bir sürümüdür; *Biçim* geniş karakterli bir dizedir. Akış ANSI modunda açılırsa **wprintf** ve **printf** aynı şekilde davranır. **printf** Şu anda bir UNICODE akışına çıktıyı desteklemez.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
@@ -106,7 +107,7 @@ Bir hata oluşursa yazdırılan karakter sayısını veya negatif bir değer dö
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tprintf**|**printf**|**printf**|**wprintf**|
 
-*Biçim* bağımsız değişkeni, normal karakterlerden, kaçış dizilerinden ve (bağımsız değişkenlerin *biçimi*ise) biçim belirtimlerinden oluşur. Sıradan karakterler ve kaçış dizileri, kendi görünümleri sırasıyla **stdout** 'a kopyalanır. Örneğin, satır:
+*Biçim* bağımsız değişkeni, normal karakterlerden, kaçış dizilerinden ve (bağımsız değişkenlerin *biçimi* ise) biçim belirtimlerinden oluşur. Sıradan karakterler ve kaçış dizileri, kendi görünümleri sırasıyla **stdout** 'a kopyalanır. Örneğin, satır:
 
 ```C
 printf("Line one\n\t\tLine two\n");
@@ -138,7 +139,7 @@ Line one
 |**printf**, **_printf_l**|\<stdio.h>|
 |**wprintf**, **_wprintf_l**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 > [!IMPORTANT]
 > Windows 10 sürüm 2004 (derleme 19041) ' den başlayarak, `printf` işlev ailesi, yuvarlama IÇIN ıeee 754 kurallarına göre tam olarak gösterilemeyen kayan nokta numaralarını yazdırır. Önceki Windows sürümlerinde, ' 5 ' ile biten tam olarak gösterilemeyen kayan noktalı sayılar her zaman yukarı yuvarlar. IEEE 754, en yakın çift basamağa ("Banker ' de yuvarlama" olarak da bilinir) yuvarlayabilmeleri gerektiğini belirtir. Örneğin, 1,5 ve 2,5 her ikisi de 2 ' ye yuvarlanmalıdır. 1,5, daha önce 2,5 2 ' ye yuvarlayacağından, 3 ' e yuvarlanacak. Bu değişiklik yalnızca tam olarak gösterilebilir tablo numaralarını etkiler. Örneğin, 2,35 (bellekte temsil edildiğinde, 2.35000000000000008 'e yaklaşmışsa), 2,4 ' e yuvarlamaya devam eder. Bu işlevler tarafından yapılan yuvarlama artık [fesetround](fegetround-fesetround2.md)tarafından ayarlanan kayan nokta yuvarlama moduna de uyar. Daha önce, yuvarlama FE_TONEAREST davranışı her zaman seçti. Bu değişiklik yalnızca Visual Studio 2019 sürüm 16,2 ve üzeri kullanılarak oluşturulan programları etkiler. Eski kayan nokta yuvarlama davranışını kullanmak için [legacy_stdio_float_rounding. obj](../link-options.md)ile bağlayın.
@@ -234,7 +235,7 @@ Address as:   0012FF3C
 [Biçim belirtimi sözdizimi: printf ve wprintf Işlevleri](../format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>

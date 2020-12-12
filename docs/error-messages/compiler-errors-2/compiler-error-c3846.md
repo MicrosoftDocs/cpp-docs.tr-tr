@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3846'
 title: Derleyici hatası C3846
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3846
 ms.assetid: c470f8a5-106b-4efb-b8dc-e1319e04130f
-ms.openlocfilehash: a4c51ccfc724cf8309044812b287677f0f1a2ff0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 13c9cb7a9dde3710cac31d8ee79fb148f8ff67bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754907"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97255398"
 ---
 # <a name="compiler-error-c3846"></a>Derleyici hatası C3846
 

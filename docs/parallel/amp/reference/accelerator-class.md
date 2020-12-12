@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Hızlandırıcı sınıfı'
 title: accelerator Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,18 +41,18 @@ f1_keywords:
 helpviewer_keywords:
 - accelerator class
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
-ms.openlocfilehash: 99747899e9264404244d66f3f0d18bee5d2b0967
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f5c8ba2d68049097acb89e90caf83d92be6f7e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182713"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254540"
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 
 Hızlandırıcı, veri paralel bilgi işlem için iyileştirilmiş bir donanım özelliğidir. Hızlandırıcı, bir PCIe veri yoluna (örneğin, GPU) bağlı bir cihaz veya ana CPU üzerinde genişletilmiş bir yönerge olabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class accelerator;
@@ -133,7 +134,7 @@ Hızlandırıcı, veri paralel bilgi işlem için iyileştirilmiş bir donanım 
 
 **Ad alanı:** Zamanlı
 
-## <a name="a-accelerator"></a><a name="dtor"></a></a>~ Hızlandırıcı
+## <a name="a-accelerator"></a><a name="dtor"></a></a> ~ Hızlandırıcı
 
 Nesneyi yok eder `accelerator` .
 
@@ -143,7 +144,7 @@ Nesneyi yok eder `accelerator` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="accelerator"></a><a name="ctor"></a>hızlandır
+## <a name="accelerator"></a><a name="ctor"></a> hızlandır
 
 [Hızlandırıcı sınıfının](accelerator-class.md)yeni bir örneğini başlatır.
 
@@ -163,7 +164,7 @@ Fiziksel cihazın yolu.
 *_Other*<br/>
 Kopyalanacak hızlandırıcı.
 
-## <a name="cpu_accelerator"></a><a name="cpu_accelerator"></a>cpu_accelerator
+## <a name="cpu_accelerator"></a><a name="cpu_accelerator"></a> cpu_accelerator
 
 CPU Hızlandırıcısı için bir dize sabiti alır.
 
@@ -171,7 +172,7 @@ CPU Hızlandırıcısı için bir dize sabiti alır.
 static const wchar_t cpu_accelerator[];
 ```
 
-## <a name="create_view"></a><a name="create_view"></a>create_view
+## <a name="create_view"></a><a name="create_view"></a> create_view
 
 `accelerator_view`Belirtilen sıraya alma modunu kullanarak bu hızlandırıcıda bir nesne oluşturur ve döndürür. Sıraya alma modu belirtilmediğinde, yeni `accelerator_view` [queuing_mode:: ımı](concurrency-namespace-enums-amp.md#queuing_mode) sıraya alma modunu kullanır.
 
@@ -188,7 +189,7 @@ Sıraya alma modu.
 
 `accelerator_view`Belirtilen sıraya alma modunu kullanarak bu hızlandırıcıda yeni bir nesne.
 
-## <a name="dedicated_memory"></a><a name="dedicated_memory"></a>dedicated_memory
+## <a name="dedicated_memory"></a><a name="dedicated_memory"></a> dedicated_memory
 
 İçin ayrılmış belleği `accelerator` kilobayt cinsinden alır.
 
@@ -196,7 +197,7 @@ Sıraya alma modu.
 __declspec(property(get= get_dedicated_memory)) size_t dedicated_memory;
 ```
 
-## <a name="default_accelerator"></a><a name="default_accelerator"></a>default_accelerator
+## <a name="default_accelerator"></a><a name="default_accelerator"></a> default_accelerator
 
 Varsayılan için bir dize sabiti alır `accelerator` .
 
@@ -204,7 +205,7 @@ Varsayılan için bir dize sabiti alır `accelerator` .
 static const wchar_t default_accelerator[];
 ```
 
-## <a name="default_cpu_access_type"></a><a name="default_cpu_access_type"></a>default_cpu_access_type
+## <a name="default_cpu_access_type"></a><a name="default_cpu_access_type"></a> default_cpu_access_type
 
 Bu, diziler için varsayılan CPU [access_type](concurrency-namespace-enums-amp.md#access_type)ve bu, örtülü bellek ayırmaları için yapılır `accelerator` .
 
@@ -212,7 +213,7 @@ Bu, diziler için varsayılan CPU [access_type](concurrency-namespace-enums-amp.
 __declspec(property(get= get_default_cpu_access_type)) access_type default_cpu_access_type;
 ```
 
-## <a name="default_view"></a><a name="default_view"></a>default_view
+## <a name="default_view"></a><a name="default_view"></a> default_view
 
 İle ilişkili varsayılan Hızlandırıcı görünümünü alır `accelerator` .
 
@@ -220,7 +221,7 @@ __declspec(property(get= get_default_cpu_access_type)) access_type default_cpu_a
 __declspec(property(get= get_default_view)) accelerator_view default_view;
 ```
 
-## <a name="description"></a><a name="description"></a>açıklaması
+## <a name="description"></a><a name="description"></a> açıklaması
 
 Cihazın kısa bir açıklamasını alır `accelerator` .
 
@@ -228,7 +229,7 @@ Cihazın kısa bir açıklamasını alır `accelerator` .
 __declspec(property(get= get_description)) std::wstring description;
 ```
 
-## <a name="device_path"></a><a name="device_path"></a>device_path
+## <a name="device_path"></a><a name="device_path"></a> device_path
 
 Hızlandırıcının yolunu alır. Yol, sistemde benzersizdir.
 
@@ -236,7 +237,7 @@ Hızlandırıcının yolunu alır. Yol, sistemde benzersizdir.
 __declspec(property(get= get_device_path)) std::wstring device_path;
 ```
 
-## <a name="direct3d_ref"></a><a name="direct3d_ref"></a>direct3d_ref
+## <a name="direct3d_ref"></a><a name="direct3d_ref"></a> direct3d_ref
 
 Direct3D başvuru Hızlandırıcısı için bir dize sabiti alır.
 
@@ -244,7 +245,7 @@ Direct3D başvuru Hızlandırıcısı için bir dize sabiti alır.
 static const wchar_t direct3d_ref[];
 ```
 
-## <a name="direct3d_warp"></a><a name="direct3d_warp"></a>direct3d_warp
+## <a name="direct3d_warp"></a><a name="direct3d_warp"></a> direct3d_warp
 
 `accelerator`Streaming SIMD Extensions (SSE) kullanarak çok çekirdekli CPU 'larda C++ amp kodunuzu yürütmek için kullanabileceğiniz bir nesne için dize sabiti alır.
 
@@ -252,7 +253,7 @@ static const wchar_t direct3d_ref[];
 static const wchar_t direct3d_warp[];
 ```
 
-## <a name="get_all"></a><a name="get_all"></a>get_all
+## <a name="get_all"></a><a name="get_all"></a> get_all
 
 `accelerator`Tüm kullanılabilir hızlandırıcıları temsil eden nesnelerin bir vektörünü döndürür.
 
@@ -264,7 +265,7 @@ static inline std::vector<accelerator> get_all();
 
 Kullanılabilir Hızlandırıcılar 'ın vektörü
 
-## <a name="get_auto_selection_view"></a><a name="get_auto_selection_view"></a>get_auto_selection_view
+## <a name="get_auto_selection_view"></a><a name="get_auto_selection_view"></a> get_auto_selection_view
 
 Parallel_for_each hedef olarak belirtildiğinde, parallel_for_each çekirdeğini çalışma zamanı tarafından otomatik olarak seçilecek şekilde yürütmek için hedef accelerator_view accelerator_view otomatik seçimi döndürür. Diğer tüm amaçlar için, bu yöntemin döndürdüğü accelerator_view varsayılan hızlandırıcının varsayılan accelerator_view aynıdır
 
@@ -276,7 +277,7 @@ static accelerator_view __cdecl get_auto_selection_view();
 
 Otomatik seçim accelerator_view.
 
-## <a name="get_dedicated_memory"></a><a name="get_dedicated_memory"></a>get_dedicated_memory
+## <a name="get_dedicated_memory"></a><a name="get_dedicated_memory"></a> get_dedicated_memory
 
 İçin ayrılmış belleği `accelerator` kilobayt cinsinden döndürür.
 
@@ -288,7 +289,7 @@ size_t get_dedicated_memory() const;
 
 İçin ayrılmış bellek ( `accelerator` kilobayt cinsinden).
 
-## <a name="get_default_cpu_access_type"></a><a name="get_default_cpu_access_type"></a>get_default_cpu_access_type
+## <a name="get_default_cpu_access_type"></a><a name="get_default_cpu_access_type"></a> get_default_cpu_access_type
 
 Bu hızlandırıcıda oluşturulan arabellekler için varsayılan CPU access_type alır
 
@@ -300,7 +301,7 @@ access_type get_default_cpu_access_type() const;
 
 Bu hızlandırıcıda oluşturulan arabellekler için varsayılan CPU access_type.
 
-## <a name="get_default_view"></a><a name="get_default_view"></a>get_default_view
+## <a name="get_default_view"></a><a name="get_default_view"></a> get_default_view
 
 `accelerator_view`İle ilişkili varsayılan nesneyi döndürür `accelerator` .
 
@@ -312,7 +313,7 @@ accelerator_view get_default_view() const;
 
 `accelerator_view`İle ilişkili varsayılan nesne `accelerator` .
 
-## <a name="get_description"></a><a name="get_description"></a>get_description
+## <a name="get_description"></a><a name="get_description"></a> get_description
 
 Cihazın kısa bir açıklamasını döndürür `accelerator` .
 
@@ -324,7 +325,7 @@ std::wstring get_description() const;
 
 Cihazın kısa bir açıklaması `accelerator` .
 
-## <a name="get_device_path"></a><a name="get_device_path"></a>get_device_path
+## <a name="get_device_path"></a><a name="get_device_path"></a> get_device_path
 
 Hızlandırıcının yolunu döndürür. Yol, sistemde benzersizdir.
 
@@ -336,7 +337,7 @@ std::wstring get_device_path() const;
 
 Sistem genelindeki benzersiz cihaz örneği yolu.
 
-## <a name="get_has_display"></a><a name="get_has_display"></a>get_has_display
+## <a name="get_has_display"></a><a name="get_has_display"></a> get_has_display
 
 Bir ekran için çıkış yapıp kullanamayacağını belirten bir Boole değeri döndürür `accelerator` .
 
@@ -348,7 +349,7 @@ bool get_has_display() const;
 
 **`true`**`accelerator`bir ekran için çıkış yapabilir; Aksi takdirde, **`false`** .
 
-## <a name="get_is_debug"></a><a name="get_is_debug"></a>get_is_debug
+## <a name="get_is_debug"></a><a name="get_is_debug"></a> get_is_debug
 
 ' Nin, `accelerator` kapsamlı hata raporlama IÇIN hata ayıklama katmanının etkinleştirilip etkinleştirilmediğini belirler.
 
@@ -358,9 +359,9 @@ bool get_is_debug() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`**, için hata `accelerator` ayıklama katmanını kapsamlı hata raporlaması için etkinleştirmiştir. Aksi takdirde, **`false`** .
+**`true`** , için hata `accelerator` ayıklama katmanını kapsamlı hata raporlaması için etkinleştirmiştir. Aksi takdirde, **`false`** .
 
-## <a name="get_is_emulated"></a><a name="get_is_emulated"></a>get_is_emulated
+## <a name="get_is_emulated"></a><a name="get_is_emulated"></a> get_is_emulated
 
 ' `accelerator` Nin öykündüğü olup olmadığını belirler.
 
@@ -372,7 +373,7 @@ bool get_is_emulated() const;
 
 **`true`**`accelerator`öykündüğü takdirde. Aksi takdirde, **`false`** .
 
-## <a name="get_supports_cpu_shared_memory"></a><a name="get_supports_cpu_shared_memory"></a>get_supports_cpu_shared_memory
+## <a name="get_supports_cpu_shared_memory"></a><a name="get_supports_cpu_shared_memory"></a> get_supports_cpu_shared_memory
 
 Hızlandırıcının hem Hızlandırıcı hem de CPU tarafından erişilebilen belleği destekleyip desteklemediğini gösteren bir Boole değeri döndürür.
 
@@ -384,7 +385,7 @@ bool get_supports_cpu_shared_memory() const;
 
 **`true`** Hızlandırıcı, CPU paylaşılan belleğini destekliyorsa; Aksi takdirde, **`false`** .
 
-## <a name="get_supports_double_precision"></a><a name="get_supports_double_precision"></a>get_supports_double_precision
+## <a name="get_supports_double_precision"></a><a name="get_supports_double_precision"></a> get_supports_double_precision
 
 Hızlandırıcının, ve arasında fkullanılan çarpma ekleme (FMA), bölme, karşılıklı ve atama dahil olmak üzere çift duyarlıklı matematik desteği destekleyip desteklemediğini gösteren bir Boole değeri döndürür. **`int`****`double`**
 
@@ -396,7 +397,7 @@ bool get_supports_double_precision() const;
 
 **`true`** Hızlandırıcı çift duyarlıklı matematik 'yı destekliyorsa; Aksi takdirde, **`false`** .
 
-## <a name="get_supports_limited_double_precision"></a><a name="get_supports_limited_double_precision"></a>get_supports_limited_double_precision
+## <a name="get_supports_limited_double_precision"></a><a name="get_supports_limited_double_precision"></a> get_supports_limited_double_precision
 
 Hızlandırıcının çift duyarlıklı matematik için sınırlı desteğe sahip olup olmadığını gösteren bir Boole değeri döndürür. Hızlandırıcının yalnızca sınırlı desteği varsa, FIMI Add (FMA), bölme, karşılıklı ve ve arasında atama için çarpma **`int`** **`double`** desteklenmez.
 
@@ -408,7 +409,7 @@ bool get_supports_limited_double_precision() const;
 
 **`true`** Hızlandırıcının çift duyarlıklı matematik için sınırlı desteği varsa; Aksi takdirde, **`false`** .
 
-## <a name="get_version"></a><a name="get_version"></a>get_version
+## <a name="get_version"></a><a name="get_version"></a> get_version
 
 Sürümünü döndürür `accelerator` .
 
@@ -420,7 +421,7 @@ unsigned int get_version() const;
 
 Öğesinin sürümü `accelerator` .
 
-## <a name="has_display"></a><a name="has_display"></a>has_display
+## <a name="has_display"></a><a name="has_display"></a> has_display
 
 Bir ekran için çıkış yapıp kullanamayacağını belirten bir Boole değeri alır `accelerator` .
 
@@ -428,7 +429,7 @@ Bir ekran için çıkış yapıp kullanamayacağını belirten bir Boole değeri
 __declspec(property(get= get_has_display)) bool has_display;
 ```
 
-## <a name="is_debug"></a><a name="is_debug"></a>is_debug
+## <a name="is_debug"></a><a name="is_debug"></a> is_debug
 
 İçin `accelerator` hata ayıklama katmanının yoğun hata raporlama için etkin olup olmadığını gösteren bir Boole değeri alır.
 
@@ -436,7 +437,7 @@ __declspec(property(get= get_has_display)) bool has_display;
 __declspec(property(get= get_is_debug)) bool is_debug;
 ```
 
-## <a name="is_emulated"></a><a name="is_emulated"></a>is_emulated
+## <a name="is_emulated"></a><a name="is_emulated"></a> is_emulated
 
 Değerinin öykünmesinin yapılıp yapılmayacağını belirten bir Boole değeri alır `accelerator` .
 
@@ -444,7 +445,7 @@ Değerinin öykünmesinin yapılıp yapılmayacağını belirten bir Boole değe
 __declspec(property(get= get_is_emulated)) bool is_emulated;
 ```
 
-## <a name="operator"></a><a name="operator_neq"></a>işleç! =
+## <a name="operator"></a><a name="operator_neq"></a> işleç! =
 
 Bu `accelerator` nesneyi diğeri ile karşılaştırır ve **`false`** aynı ise öğesini döndürür; Aksi takdirde, döndürür **`true`** .
 
@@ -461,7 +462,7 @@ Bununla `accelerator` Karşılaştırılacak nesne.
 
 **`false`** iki `accelerator` nesne aynı ise, aksi durumda, **`true`** .
 
-## <a name="operator"></a><a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 Belirtilen `accelerator` nesnenin içeriğini buna kopyalar.
 
@@ -478,7 +479,7 @@ accelerator& operator= (const accelerator& _Other);
 
 Bu nesneye bir başvuru `accelerator` .
 
-## <a name="operator"></a><a name="operator_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> işleç = =
 
 Bu `accelerator` nesneyi diğeri ile karşılaştırır ve **`true`** aynı ise öğesini döndürür; Aksi takdirde, döndürür **`false`** .
 
@@ -495,7 +496,7 @@ Bununla `accelerator` Karşılaştırılacak nesne.
 
 **`true`** diğer `accelerator` nesne bu `accelerator` nesneyle aynıysa; Aksi takdirde, **`false`** .
 
-## <a name="set_default"></a><a name="set_default"></a>set_default
+## <a name="set_default"></a><a name="set_default"></a> set_default
 
 Varsayılan hızlandırıcıyı örtülü olarak kullanan herhangi bir işlem için kullanılacak varsayılan hızlandırıcıyı ayarlar. Bu yöntem yalnızca çalışma zamanı seçili varsayılan Hızlandırıcı, Varsayılan hızlandırıcıyı örtülü olarak kullanan bir işlemde henüz kullanılmıyorsa başarılı olur
 
@@ -512,7 +513,7 @@ Hızlandırıcının yolu.
 
 **`true`** çağrı Varsayılan hızlandırıcıyı ayarlamasında başarılı olursa. Aksi takdirde, **`false`** .
 
-## <a name="set_default_cpu_access_type"></a><a name="set_default_cpu_access_type"></a>set_default_cpu_access_type
+## <a name="set_default_cpu_access_type"></a><a name="set_default_cpu_access_type"></a> set_default_cpu_access_type
 
 Bu hızlandırıcıda veya bu hızlandırıcıda erişilen array_views bir parçası olarak örtük bellek ayırmaları için oluşturulan diziler için varsayılan CPU access_type ayarlayın. Bu yöntem yalnızca hızlandırıcının default_cpu_access_type önceki bir çağrı tarafından zaten geçersiz kılınmamışsa ve bu hızlandırıcı için seçilen çalışma zamanı default_cpu_access_type bir dizi ayırmak için veya bu hızlandırıcıda erişilen bir array_view yedekleyen bir örtülü bellek ayırma için henüz kullanılmamışsa başarılı olur.
 
@@ -529,7 +530,7 @@ Bu Hızlandırıcı 'daki dizi/array_view bellek ayırmaları için kullanılaca
 
 Hızlandırıcının varsayılan CPU access_type başarıyla ayarlandığını belirten bir Boole değeri.
 
-## <a name="supports_cpu_shared_memory"></a><a name="supports_cpu_shared_memory"></a>supports_cpu_shared_memory
+## <a name="supports_cpu_shared_memory"></a><a name="supports_cpu_shared_memory"></a> supports_cpu_shared_memory
 
 ' Nin `accelerator` paylaşılan belleği destekleyip desteklemediğini gösteren bir Boole değeri alır.
 
@@ -537,7 +538,7 @@ Hızlandırıcının varsayılan CPU access_type başarıyla ayarlandığını b
 __declspec(property(get= get_supports_cpu_shared_memory)) bool supports_cpu_shared_memory;
 ```
 
-## <a name="supports_double_precision"></a><a name="supports_double_precision"></a>supports_double_precision
+## <a name="supports_double_precision"></a><a name="supports_double_precision"></a> supports_double_precision
 
 Hızlandırıcının çift duyarlıklı matematik desteği destekleyip desteklemediğini gösteren bir Boole değeri alır.
 
@@ -545,7 +546,7 @@ Hızlandırıcının çift duyarlıklı matematik desteği destekleyip desteklem
 __declspec(property(get= get_supports_double_precision)) bool supports_double_precision;
 ```
 
-## <a name="supports_limited_double_precision"></a><a name="supports_limited_double_precision"></a>supports_limited_double_precision
+## <a name="supports_limited_double_precision"></a><a name="supports_limited_double_precision"></a> supports_limited_double_precision
 
 Hızlandırıcının çift duyarlıklı matematik için sınırlı desteğe sahip olup olmadığını gösteren bir Boole değeri alır. Hızlandırıcının yalnızca sınırlı desteği varsa, FIMI Add (FMA), bölme, karşılıklı ve ve arasında atama için çarpma **`int`** **`double`** desteklenmez.
 

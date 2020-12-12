@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C++ AMP genel bakış'
 title: C++ AMP'ye Genel Bakış
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 0eeda43a279be74ea71669b55356603e980cab40
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: edbf20385724c062deea00ff8ea159d7021f9c63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254644"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 
@@ -238,7 +239,7 @@ Aşağıdaki tabloda ve sınıfları arasındaki benzerlikler ve farklar özetle
 
 Paylaşılan bellek, hem CPU hem de hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımı, CPU ve Hızlandırıcı arasında veri kopyalama yükünü ortadan kaldırır veya önemli ölçüde azaltır. Bellek paylaşılsa da, hem CPU hem de hızlandırıcı tarafından aynı anda erişilemez ve bunun yapılması tanımsız davranışlara neden olur.
 
-`array` ilişkili Hızlandırıcı destekliyorsa, paylaşılan belleğin kullanımı üzerinde ayrıntılı denetim belirtmek için nesneler kullanılabilir. Hızlandırıcının paylaşılan belleği destekleyip desteklemediğini, [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** paylaşılan bellek desteklendiğinde döndüren hızlandırıcının supports_cpu_shared_memory özelliği tarafından belirlenir. Paylaşılan bellek destekleniyorsa, hızlandırıcının bellek ayırmaları için varsayılan [Access_type numaralandırması](reference/concurrency-namespace-enums-amp.md#access_type) özelliği tarafından belirlenir `default_cpu_access_type` . Varsayılan olarak, `array` ve `array_view` nesneleri ilişkili birincil ile aynı `access_type` şekilde sürer `accelerator` .
+`array` ilişkili Hızlandırıcı destekliyorsa, paylaşılan belleğin kullanımı üzerinde ayrıntılı denetim belirtmek için nesneler kullanılabilir. Hızlandırıcının paylaşılan belleği destekleyip desteklemediğini, [](reference/accelerator-class.md#supports_cpu_shared_memory) **`true`** paylaşılan bellek desteklendiğinde döndüren hızlandırıcının supports_cpu_shared_memory özelliği tarafından belirlenir. Paylaşılan bellek destekleniyorsa, hızlandırıcının bellek ayırmaları için varsayılan [Access_type numaralandırması](reference/concurrency-namespace-enums-amp.md#access_type) özelliği tarafından belirlenir `default_cpu_access_type` . Varsayılan olarak, `array` ve `array_view` nesneleri ilişkili birincil ile aynı `access_type` şekilde sürer `accelerator` .
 
 Açık bir şekilde [Array:: Cpu_access_type Data member](reference/array-class.md#cpu_access_type) özelliğini ayarlayarak `array` , paylaşılan belleğin nasıl kullanıldığı hakkında ayrıntılı denetim uygulayabilirsiniz. böylece, uygulamanın performans özelliklerine göre uygulamayı en iyi hale getirerek, hesaplama kerklerinin bellek erişimi düzenlerine göre uygulamayı iyileştirebilmenizi sağlayabilirsiniz. `array_view`, `cpu_access_type` İle ilişkili olduğu ile aynı şekilde yansıtır `array` ; veya array_view bir veri kaynağı olmadan oluşturulursa, `access_type` Bu, öncelikle depolama alanı ayırmasına neden olan ortamı yansıtır. Diğer bir deyişle, ana bilgisayar (CPU) tarafından ilk kez erişildiğinde, bir CPU veri kaynağı üzerinde oluşturulmuş gibi davranır ve `access_type` `accelerator_view` yakalama ile ilişkili ' ı paylaşır; ancak, bir tarafından ilk kez erişilirse `accelerator_view` , bu, üzerinde oluşturulmuş bir üzerinde oluşturulmuş gibi davranır ve ' ı `array` `accelerator_view` paylaşır `array` `access_type` .
 
