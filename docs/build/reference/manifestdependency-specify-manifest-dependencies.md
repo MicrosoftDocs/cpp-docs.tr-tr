@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/MANIFESTDEPENDENCY (Bildirim Bağımlılıklarını Belirt)
 title: /MANIFESTDEPENDENCY (Bildirim Bağımlılıklarını Belirt)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /MANIFESTDEPENDENCY linker option
 - -MANIFESTDEPENDENCY linker option
 ms.assetid: e4b68313-33a2-4c3e-908e-ac2b9f7d6a73
-ms.openlocfilehash: 43239efe70cc555d1a7e03c5d67e99e40ccd480e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 129dc84818b0bda9b2106c0d07dca5b605dc6f96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199174"
 ---
 # <a name="manifestdependency-specify-manifest-dependencies"></a>/MANIFESTDEPENDENCY (Bildirim Bağımlılıklarını Belirt)
 
@@ -23,11 +24,11 @@ ms.locfileid: "69492704"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/Manifestdependency, bildirim dosyasının \<bağımlılık > bölümüne yerleştirilecek öznitelikleri belirtmenize olanak tanır.
+/MANIFESTDEPENDENCY \<dependency> , bildirim dosyasının bölümüne yerleştirilecek öznitelikleri belirtmenizi sağlar.
 
 Bildirim dosyası oluşturma hakkında bilgi için bkz. [/manifest (yan yana derleme bildirimi oluşturma)](manifest-create-side-by-side-assembly-manifest.md) .
 
-Bildirim dosyasının \<bağımlılık > bölümü hakkında daha fazla bilgi için bkz. [Publisher yapılandırma dosyaları](/windows/win32/SbsCs/publisher-configuration-files).
+Bildirim dosyasının bölümü hakkında daha fazla bilgi için \<dependency> bkz. [Publisher yapılandırma dosyaları](/windows/win32/SbsCs/publisher-configuration-files).
 
 /MANIFESTDEPENDENCY bilgileri bağlayıcıya iki şekilde geçirilebilir:
 
@@ -61,9 +62,9 @@ Bağlayıcı/MANIFESTDEPENDENCY açıklamalarını toplar, yinelenen girdileri o
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > bağlayıcıbildirim > **dosyası** özellik sayfasını seçin.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **bildirim dosyası** özellik sayfasını seçin.
 
 1. **Ek bildirim bağımlılıkları** özelliğini değiştirin.
 
@@ -74,4 +75,4 @@ Bağlayıcı/MANIFESTDEPENDENCY açıklamalarını toplar, yinelenen girdileri o
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

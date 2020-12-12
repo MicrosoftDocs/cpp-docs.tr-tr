@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: belirli Zamanlayıcı Ilkeleri belirtme'
 title: 'Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - specifying scheduler policies [Concurrency Runtime]
 - scheduler policies, specifying [Concurrency Runtime]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-ms.openlocfilehash: bd5edfbdf6b0fda9c7e327dab9538bbf6b5e4b12
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: c4aeeea04d69613ef3eb80f36863b16530e18e37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142444"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197263"
 ---
 # <a name="how-to-specify-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme
 
@@ -45,12 +46,12 @@ Her iki görev kümesi de aynı sonucu oluşturuyor olsa da, özel bir ilke kull
 
 ## <a name="compiling-the-code"></a>Kod Derleniyor
 
-Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya `scheduler-policy.cpp` adlı bir dosyaya yapıştırın ve sonra bir Visual Studio komut Istemi penceresinde aşağıdaki komutu çalıştırın.
+Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlandırılmış bir dosyaya yapıştırın `scheduler-policy.cpp` ve sonra bir Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
 
-> **CL. exe/EHsc Scheduler-Policy. cpp**
+> **cl.exe/EHsc Scheduler-Policy. cpp**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Scheduler İlkeleri](../../parallel/concrt/scheduler-policies.md)<br/>
-[Nasıl yapılır: Zamanlayıcı Örneğini Yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
-[Nasıl yapılır: Belirli Zamanlayıcı İlkelerini Kullanan Aracılar Oluşturma](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
+[Zamanlayıcı Ilkeleri](../../parallel/concrt/scheduler-policies.md)<br/>
+[Nasıl yapılır: zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
+[Nasıl yapılır: belirli Zamanlayıcı Ilkelerini kullanan aracılar oluşturma](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)

@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/DELAYLOAD (yük Içeri aktarmayı geciktir)
 title: /DELAYLOAD (Yükü İçe Aktarmayı Geciktir)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,35 +11,35 @@ helpviewer_keywords:
 - /DELAYLOAD linker option
 - delayed loading of DLLs, /DELAYLOAD option
 ms.assetid: 39ea0f1e-5c01-450f-9c75-2d9761ff9b28
-ms.openlocfilehash: e92b470b7b5e76b39371f333cbbda150e7f6e8c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f6a91a102b66a16896d51b960d44273a7935d79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273368"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201501"
 ---
 # <a name="delayload-delay-load-import"></a>/DELAYLOAD (Yükü İçe Aktarmayı Geciktir)
 
-> **/ DELAYLOAD:**_dll adı_
+> **/Delayload:**_DLL adı_
 
 ## <a name="parameters"></a>Parametreler
 
-*dll adı*<br/>
-Yüklenmesinin ertelenmesini istediğiniz bir DLL'nin adı.
+*dll*<br/>
+Yük geciktirmesini istediğiniz DLL 'in adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Delayload seçeneği tarafından belirtilen DLL'yi `dllname` yalnızca ilk çağrıda bir işlev DLL içindeki program tarafından yüklenecek. Daha fazla bilgi için [Delay-Loaded DLL'ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md). İstediğiniz sayıda DLL'yi belirtmek için gerekli sayıda bu seçeneği kullanabilirsiniz. Programınızın ya da kendi gecikme yük yardımcı işlevinizi uygulayabilirsiniz, Delayimp.lib kullanmanız gerekir.
+/DELAYLOAD seçeneği, tarafından belirtilen DLL 'nin `dllname` yalnızca program tarafından bu DLL 'deki bir işleve olan ilk çağrıda yüklenmesine neden olur. Daha fazla bilgi için bkz. [Delay-Loaded dll 'ler Için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md). Bu seçeneği, seçtiğiniz sayıda dll 'yi belirtmek için gereken kadar çok kez kullanabilirsiniz. Programınızı bağladığınızda delayimp. lib kullanmanız gerekir veya kendi gecikme Yükleme Yardımcısı işlevinizi uygulayabilirsiniz.
 
-[/DELAY](delay-delay-load-import-settings.md) seçeneği, bağlama ve yükleme seçenekleri Gecikmeli yüklenen her DLL için belirtir.
+[/Delay](delay-delay-load-import-settings.md) seçeneği, Gecikmeli yüklenen her dll için bağlama ve yükleme seçeneklerini belirtir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. İçinde **bağlayıcı** klasörüne **giriş** özellik sayfası.
+1. **Bağlayıcı** klasöründe **giriş** özellik sayfasını seçin.
 
-1. Değiştirme **yüklü DLL'leri Geciktir** özelliği.
+1. **Yüklenen dll 'Leri geciktir** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -47,4 +48,4 @@ Yüklenmesinin ertelenmesini istediğiniz bir DLL'nin adı.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

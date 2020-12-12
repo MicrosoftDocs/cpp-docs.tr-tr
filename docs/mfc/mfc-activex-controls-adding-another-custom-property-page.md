@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: başka bir özel özellik sayfası ekleme'
 title: 'MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], property pages
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-ms.openlocfilehash: a749c5d8d676ac85c3c2085eb041328aff599ab8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3802a32ed86536850e3a15ae9ce4bb53feb1ff1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508875"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203035"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme
 
@@ -43,7 +44,7 @@ ActiveX denetiminde Özellik sayfaları kullanma hakkında daha fazla bilgi içi
 
 1. **Özellikler** penceresini yenilemek için yeni özellik sayfası şablonunu seçin ( **kaynak görünümü**).
 
-1. **ID** özelliği için yeni bir değer girin. Bu örnek **IDD_PROPPAGE_NEWPAGE**kullanır.
+1. **ID** özelliği için yeni bir değer girin. Bu örnek **IDD_PROPPAGE_NEWPAGE** kullanır.
 
 1. Araç çubuğunda **Kaydet** seçeneğine tıklayın.
 

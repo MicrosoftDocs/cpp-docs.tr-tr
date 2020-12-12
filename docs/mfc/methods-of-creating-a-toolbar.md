@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: araç çubuğu oluşturma yöntemleri'
 title: Araç Çubuğu Oluşturma Yöntemleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - toolbar controls [MFC], creating
 - CToolBarCtrl class [MFC], creating toolbars
 ms.assetid: f19d8d65-d49f-445c-abe8-d47d3e4101c8
-ms.openlocfilehash: b70e6f4dc15023b878bb58d6b7d0739eeb173d53
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 14626f398d3ccabd002cc21be682c1a5616a0410
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624258"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203087"
 ---
 # <a name="methods-of-creating-a-toolbar"></a>Araç Çubuğu Oluşturma Yöntemleri
 
-MFC araç çubukları oluşturmak için iki sınıf sağlar: [CToolBar](reference/ctoolbar-class.md) ve [CToolBarCtrl](reference/ctoolbarctrl-class.md) (Windows ortak denetim API 'sini sarmalayan). `CToolBar`araç çubuğu ortak denetiminin tüm işlevlerini sağlar ve sizin için gerekli ortak denetim ayarlarının ve yapıların çoğunu işler; Ancak, elde edilen yürütülebilir dosya genellikle kullanılarak oluşturulanlar daha büyük olur `CToolBarCtrl` .
+MFC araç çubukları oluşturmak için iki sınıf sağlar: [CToolBar](reference/ctoolbar-class.md) ve [CToolBarCtrl](reference/ctoolbarctrl-class.md) (Windows ortak denetim API 'sini sarmalayan). `CToolBar` araç çubuğu ortak denetiminin tüm işlevlerini sağlar ve sizin için gerekli ortak denetim ayarlarının ve yapıların çoğunu işler; Ancak, elde edilen yürütülebilir dosya genellikle kullanılarak oluşturulanlar daha büyük olur `CToolBarCtrl` .
 
-`CToolBarCtrl`genellikle daha küçük bir yürütülebilirle sonuçlanır ve `CToolBarCtrl` araç çubuğunu MFC mimarisine tümleştirmeyi düşünmüyorsanız kullanmayı tercih edebilirsiniz. `CToolBarCtrl`Araç çubuğunu MFC mimarisine göre kullanmayı ve tümleştirmeyi planlıyorsanız, araç çubuğu denetimi IŞLEMELERINI MFC 'ye iletmek için ek dikkatli olmanız gerekir. Bu iletişim zor değildir; Ancak, kullandığınızda gereksiz olan ek çalışmadır `CToolBar` .
+`CToolBarCtrl` genellikle daha küçük bir yürütülebilirle sonuçlanır ve `CToolBarCtrl` araç çubuğunu MFC mimarisine tümleştirmeyi düşünmüyorsanız kullanmayı tercih edebilirsiniz. `CToolBarCtrl`Araç çubuğunu MFC mimarisine göre kullanmayı ve tümleştirmeyi planlıyorsanız, araç çubuğu denetimi IŞLEMELERINI MFC 'ye iletmek için ek dikkatli olmanız gerekir. Bu iletişim zor değildir; Ancak, kullandığınızda gereksiz olan ek çalışmadır `CToolBar` .
 
 Visual C++ araç çubuğu ortak denetiminden faydalanmak için iki yol sağlar.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: Gelişmiş özellik uygulama'
 title: 'MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama'
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - properties [MFC], ActiveX controls
 - MFC ActiveX controls [MFC], properties
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
-ms.openlocfilehash: 017959c5809d324af6ab13247fd093a6df280dab
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3cdd4353348d4c233b71dd25d2950adaac2ef06f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502203"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202840"
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama
 
@@ -24,7 +25,7 @@ Bu makalede, ActiveX denetiminde gelişmiş özellikler uygulamayla ilgili konul
 
 - [Bir özellikten hata kodları döndürülüyor](#_core_returning_error_codes_from_a_property)
 
-## <a name="read-only-and-write-only-properties"></a><a name="_core_read2donly_and_write2donly_properties"></a> Salt okunurdur ve salt yazılır özellikler
+## <a name="read-only-and-write-only-properties"></a><a name="_core_read2donly_and_write2donly_properties"></a> Read-Only ve Write-Only özellikleri
 
 Özellik Ekleme Sihirbazı, denetimin salt okunurdur veya salt yazılır özelliklerini uygulamak için hızlı ve kolay bir yöntem sağlar.
 
@@ -42,13 +43,13 @@ Bu makalede, ActiveX denetiminde gelişmiş özellikler uygulamayla ilgili konul
 
 1. **Özellik adı** kutusuna, özelliğin adını yazın.
 
-1. **Uygulama türü**Için, **get/set yöntemleri**' ne tıklayın.
+1. **Uygulama türü** Için, **get/set yöntemleri**' ne tıklayın.
 
 1. **Özellik türü** kutusunda, özellik için uygun türü seçin.
 
 1. Salt okunurdur bir özelliği istiyorsanız, küme işlev adını temizleyin. Yalnızca bir salt yazılır özelliği istiyorsanız, Get işlev adını temizleyin.
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 Bunu yaptığınızda Özellik Ekleme Sihirbazı, `SetNotSupported` `GetNotSupported` normal bir set veya Get işlevinin yerine, veya dağıtım eşleme girişinde işlevi ekler.
 
@@ -58,7 +59,7 @@ Bir özelliğin koşullu olarak salt okunurdur veya salt yazılır olmasını is
 
 [!code-cpp[NVC_MFC_AxUI#29](codesnippet/cpp/mfc-activex-controls-advanced-property-implementation_1.cpp)]
 
-Bu kod örneği `SetNotSupported` , `m_bReadOnlyMode` veri üyesi **true**ise çağırır. **Yanlışsa**, özelliği yeni değere ayarlanır.
+Bu kod örneği `SetNotSupported` , `m_bReadOnlyMode` veri üyesi **true** ise çağırır. **Yanlışsa**, özelliği yeni değere ayarlanır.
 
 ## <a name="returning-error-codes-from-a-property"></a><a name="_core_returning_error_codes_from_a_property"></a> Bir özellikten hata kodları döndürülüyor
 

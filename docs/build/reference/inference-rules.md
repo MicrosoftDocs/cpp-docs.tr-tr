@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çıkarım kuralları'
 title: Çıkarsama Kuralları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - rules, inference
 - NMAKE program, inference rules
 ms.assetid: caff320f-fb07-4eea-80c3-a6a2133a8492
-ms.openlocfilehash: d3d7ca41d96d3845237b445edefff05044dacdc2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fc063f71ff88442ce6f7fc02c5b22f015ce0010c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199759"
 ---
 # <a name="inference-rules"></a>Çıkarsama Kuralları
 
@@ -23,13 +24,13 @@ Güncel olmayan bağımlılıkta bir komut yoksa ve varsa [. SONEKLER](dot-direc
 
 [Kural tanımlama](defining-a-rule.md)
 
-[Toplu işlem modu kuralları](batch-mode-rules.md)
+[Toplu iş modu kuralları](batch-mode-rules.md)
 
 [Önceden tanımlanmış kurallar](predefined-rules.md)
 
-[Gösterilen etkilenenler ve kurallar](inferred-dependents-and-rules.md)
+[Çıkarsanan bağımlılıklar ve kurallar](inferred-dependents-and-rules.md)
 
-[Çıkarım kurallarında öncelik](precedence-in-inference-rules.md)
+[Çıkarsama kurallarında öncelik](precedence-in-inference-rules.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

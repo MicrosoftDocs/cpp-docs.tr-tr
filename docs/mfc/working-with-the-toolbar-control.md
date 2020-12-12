@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: araç çubuğu denetimiyle çalışma'
 title: Araç Çubuğu Denetimiyle Çalışma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,29 +8,29 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], accessing toolbar
 - toolbar controls [MFC], accessing
 ms.assetid: b19409d5-3831-42c7-80ae-195c49dc9085
-ms.openlocfilehash: 371f1944fae655556bbc9f89d7ffcce7cc326e5e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bb5b14b35deeff515468a16c82a606704300a395
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365244"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197471"
 ---
 # <a name="working-with-the-toolbar-control"></a>Araç Çubuğu Denetimiyle Çalışma
 
-Bu makalede, araç çubukları üzerinde daha fazla denetim için bir [CToolBar](../mfc/reference/ctoolbar-class.md) altında yatan [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesneye nasıl erişebileceğinizaçıklanmaktadır. Bu gelişmiş bir konudur.
+Bu makalede, araç çubuklarınız üzerinde daha fazla denetim için [CToolBar](../mfc/reference/ctoolbar-class.md) 'ı temel alan [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesine nasıl erişebileceğiniz açıklanır. Bu, gelişmiş bir konudur.
 
 ## <a name="procedures"></a>Yordamlar
 
-#### <a name="to-access-the-toolbar-common-control-underlying-your-ctoolbar-object"></a>CToolBar nesnenizin altında yatan araç çubuğu ortak denetimine erişmek için
+#### <a name="to-access-the-toolbar-common-control-underlying-your-ctoolbar-object"></a>CToolBar nesnenizin temelindeki araç çubuğu ortak denetimine erişmek için
 
-1. Çağrı [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl).
+1. [CToolBar:: GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl)çağrısı yapın.
 
-`GetToolBarCtrl`bir [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesine bir başvuru döndürür. Başvuruyu araç çubuğu denetim sınıfının üye işlevlerini aramak için kullanabilirsiniz.
+`GetToolBarCtrl`[CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesine bir başvuru döndürür. Bu başvuruyu, ToolBar denetim sınıfının üye işlevlerini çağırmak için kullanabilirsiniz.
 
 > [!CAUTION]
-> `CToolBarCtrl` **İşlevbul'u** aramak güvenlidir, **Set** işlevlerini ararsanız dikkatli olun. Bu gelişmiş bir konudur. Normalde altta yatan araç çubuğu denetimine erişmeniz gerekmez.
+> `CToolBarCtrl` **Get** Işlevlerini çağırırken, **set** işlevlerini çağırdığınızda dikkatli olun. Bu, gelişmiş bir konudur. Normalde, temel alınan araç çubuğu denetimine erişmeniz gerekmez.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
+### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Denetimler (Windows ortak denetimleri)](../mfc/controls-mfc.md)
 
@@ -41,9 +42,9 @@ Bu makalede, araç çubukları üzerinde daha fazla denetim için bir [CToolBar]
 
 - [Araç çubuğu araç ipuçları](../mfc/toolbar-tool-tips.md)
 
-- [Flyby durum çubuğu güncellemeleri](../mfc/toolbar-tool-tips.md)
+- [Durum çubuğu güncelleştirmelerine göre daha fazla](../mfc/toolbar-tool-tips.md)
 
-- [Kullanım aracı ipucu bildirimleri](../mfc/handling-tool-tip-notifications.md)
+- [Araç ipucu bildirimlerini işleme](../mfc/handling-tool-tip-notifications.md)
 
 - [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) sınıfları
 
@@ -53,10 +54,10 @@ Bu makalede, araç çubukları üzerinde daha fazla denetim için bir [CToolBar]
 
 - [Eski araç çubuklarınızı kullanma](../mfc/using-your-old-toolbars.md)
 
-- [Kontrol çubukları](../mfc/control-bars.md)
+- [Denetim çubukları](../mfc/control-bars.md)
 
-Windows ortak denetimlerini kullanma hakkında genel bilgi için [Ortak Denetimler'e](/windows/win32/Controls/common-controls-intro)bakın.
+Windows ortak denetimlerini kullanma hakkında genel bilgi için bkz. [ortak denetimler](/windows/win32/Controls/common-controls-intro).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Araç Çubuğu Uygulaması](../mfc/mfc-toolbar-implementation.md)
+[MFC araç çubuğu uygulama](../mfc/mfc-toolbar-implementation.md)

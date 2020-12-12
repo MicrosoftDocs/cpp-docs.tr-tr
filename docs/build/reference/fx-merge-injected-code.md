@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/FX (eklenen kodu Birleştir)
 title: /Fx (Eklenen Kodu Birleştir)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - merging injected code
 - /Fx compiler option [C++]
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560
-ms.openlocfilehash: b928ca63171f0f6d28859d049a1ed5008b908686
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0c0aeea4c3a72f37848615d80c5ee6a5a807d838
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500102"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200357"
 ---
 # <a name="fx-merge-injected-code"></a>/Fx (Eklenen Kodu Birleştir)
 
 Kaynak ile birleştirilen eklenen kodla her kaynak dosyanın bir kopyasını oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /Fx
@@ -78,4 +79,4 @@ Programınız eklenen kodu kullanan bir üstbilgi dosyası içeriyorsa, **/FX** 
 
 [Çıktı dosyası (/F) seçenekleri](output-file-f-options.md)<br/>
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

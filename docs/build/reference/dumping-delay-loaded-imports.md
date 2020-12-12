@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Delay-Loaded Içeri aktarmalar dökümünü alma'
 title: Gecikmeli Yükleme İçe Aktarmalarını Dökme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,17 +7,17 @@ helpviewer_keywords:
 - imports (delay-loaded)
 - delay-loaded imports
 ms.assetid: f766acf4-9df8-4b85-8cf6-0be3ffc4c124
-ms.openlocfilehash: 368c6b851340dd2a39df9a758f15d52ff5104479
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c57ff6bb4a3dce16b4cb1eb85fdffff4ef272396
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271872"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201085"
 ---
 # <a name="dumping-delay-loaded-imports"></a>Gecikmeli Yükleme İçe Aktarmalarını Dökme
 
-Gecikmeli yüklenen içeri aktarmalar yazılan kullanarak [dumpbin/imports](imports-dumpbin.md) ve standart aktarır daha ile biraz farklı bilgiler gösterilir. Bunlar, kendi bölümüne dökme/imports arkadaşlarından ve açıkça Gecikmeli yüklenen içeri aktarmalar etiketlenir. Varsa görüntüyü mevcut bilgi kaldırma, belirtilir. Bağlama bilgileri mevcut ise, DLL hedef saat/tarih damgası ilişkili Imports adresleriyle birlikte belirtilir.
+Gecikmeli yüklenen içeri aktarmalar, [dumpbin/Imports](imports-dumpbin.md) kullanılarak dökülebilir ve standart içeri aktarımlara göre biraz farklı bilgilerle gösterilebilir. Bunlar,/Imports dökümünü kendi bölümlerine ayırır ve açıkça Gecikmeli yüklenen içeri aktarmalar olarak etiketlenir. Görüntüde bir kaldırma bilgisi varsa, bu belirtilir. Bağlama bilgileri varsa, hedef DLL 'nin saat/tarih damgası içeri aktarmaların bağlı adresleriyle birlikte belirtilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)
+[Delay-Loaded dll 'Ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)

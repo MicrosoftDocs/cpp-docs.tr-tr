@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: stok özellikleri ekleme'
 title: 'MFC ActiveX Denetimleri: Stok Özellikler Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - foreground colors, ActiveX controls
 - foreground colors [MFC]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
-ms.openlocfilehash: 27fed55ac8a5fc8b95f81c1bfd2c6edb3da6227d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1bcfc69fe5fd7cdcadcd641fb831c07bde79bbfe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502242"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202827"
 ---
 # <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX Denetimleri: Stok Özellikler Ekleme
 
@@ -53,7 +54,7 @@ Bu makalede Özellik Ekleme Sihirbazı kullanılarak bir ActiveX denetimine stok
 
 1. **Özellik adı** kutusunda, **başlık**' a tıklayın.
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 ## <a name="add-property-wizard-changes-for-stock-properties"></a><a name="_core_classwizard_changes_for_stock_properties"></a> Stok özellikleri için Özellik Ekleme Sihirbazı değişiklikleri
 

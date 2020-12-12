@@ -1,16 +1,17 @@
 ---
+description: 'Aşağıdakiler hakkında daha fazla bilgi edinin: nasıl yapılır: tamamlanan görevler arasında seçim yapma'
 title: 'Nasıl yapılır: Tamamlanan Görevler Arasında Seçim Yapma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - selecting among completed tasks [Concurrency Runtime]
 - completed tasks, selecting among [Concurrency Runtime]
 ms.assetid: c8ccc160-043f-4599-847b-32ed270bb257
-ms.openlocfilehash: fd9940dad0cd2f202bdc734a81a7eb37cd79420c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a23092e4572188898f5e544f25406febc63d0c06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197342"
 ---
 # <a name="how-to-select-among-completed-tasks"></a>Nasıl yapılır: Tamamlanan Görevler Arasında Seçim Yapma
 

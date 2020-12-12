@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Iletiler'
 title: İletiler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - messages, MFC
 - messages [MFC]
 ms.assetid: b1476310-a135-42ca-817c-444fb3675491
-ms.openlocfilehash: f36dab679a2e41910b2445a7dab36f5786081563
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: dbfec2794cc0dae5a7358b3c2ba39553643fb7c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624275"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203100"
 ---
 # <a name="messages"></a>İletiler
 
@@ -20,4 +21,4 @@ ms.locfileid: "84624275"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'teki İletiler ve Komutlar](messages-and-commands-in-the-framework.md)
+[Çerçevede iletiler ve komutlar](messages-and-commands-in-the-framework.md)

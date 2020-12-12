@@ -1,5 +1,6 @@
 ---
-title: '&lt;içerme > (C++ belge açıklamaları)'
+description: 'Şunlar hakkında daha fazla bilgi edinin: &lt;&gt;'
+title: '&lt;> dahil et (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - <include>
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - include C++ XML tag
 - <include> C++ XML tag
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
-ms.openlocfilehash: e1d6a26f28069cfb4a1c74bd591d63bc89352774
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 577281b293fcca9b9b0b9491dd239240d435f32c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439511"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199785"
 ---
 # <a name="ltincludegt"></a>&lt;include&gt;
 
-\<içerme > etiketi, kaynak kodunuzda türleri ve üyeleri tanımlayan başka bir dosyadaki açıklamalara başvurmanıza olanak sağlar. Bu, belge açıklamalarını doğrudan kaynak kodu dosyanıza yerleştirmeye alternatiftir.  Örneğin, takımınızın veya şirketinizin tamamında kullanılan standart "demirbaş" açıklamalarını eklemek için \<içerme > kullanabilirsiniz.
+\<include>Etiketi, kaynak kodunuzda türleri ve üyeleri tanımlayan başka bir dosyadaki açıklamalara başvurmanıza olanak sağlar. Bu, belge açıklamalarını doğrudan kaynak kodu dosyanıza yerleştirmeye alternatiftir.  Örneğin, \<include> takımınızın veya şirketinizin tamamında kullanılan standart "demirbaş" açıklamalarını eklemek için kullanabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,27 +27,27 @@ ms.locfileid: "79439511"
 
 #### <a name="parameters"></a>Parametreler
 
-*kısaltın*<br/>
-Belgeleri içeren dosyanın adı. Dosya adı bir yol ile nitelenebilir.  Adı tek veya çift tırnak içine alın.  Derleyici `filename`bulamazsa bir uyarı verir.
+*filename*<br/>
+Belgeleri içeren dosyanın adı. Dosya adı bir yol ile nitelenebilir.  Adı tek veya çift tırnak içine alın.  Derleyici bulamazsa bir uyarı verir `filename` .
 
 *tagpath*<br/>
 Dosyada bulunan istenen düğüm kümesini seçen geçerli bir XPath ifadesi.
 
 *ada*<br/>
-Yorumlarla önce gelen etiketteki ad Belirleyicisi; `name` bir `id`olacaktır.
+Yorumlarla önce gelen etiketteki ad Belirleyicisi; `name` , olur `id` .
 
 *id*<br/>
 Açıklamaların önündeki etiketin KIMLIĞI.  Adı tek veya çift tırnak içine alın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-\<içerme > etiketi XML XPath söz dizimini kullanır. \<ekleme > kullanarak özelleştirmenin yolları için XPath belgelerine bakın.
+\<include>Etiketi, XML XPath söz dizimini kullanır. Kullanarak özelleştirme yolları için XPath belgelerine bakın \<include> .
 
 Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
 ## <a name="example"></a>Örnek
 
-Bu çok dosyalı bir örnektir. > Dahil \<kullanan ilk dosya aşağıdaki belge açıklamalarını içerir:
+Bu çok dosyalı bir örnektir. Tarafından kullanılan ilk dosya \<include> aşağıdaki belge açıklamalarını içerir:
 
 ```cpp
 // xml_include_tag.cpp
@@ -66,7 +67,7 @@ public ref class Test2 {
 };
 ```
 
-İkinci dosya olan xml_include_tag. doc, aşağıdaki belge açıklamalarını içerir:
+İkinci dosya xml_include_tag.doc, aşağıdaki belge açıklamalarını içerir:
 
 ```xml
 <MyDocs>

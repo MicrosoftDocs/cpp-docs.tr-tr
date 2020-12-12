@@ -1,5 +1,6 @@
 ---
-title: CInvalidArgException Sınıf
+description: 'Daha fazla bilgi edinin: CInvalidArgException sınıfı'
+title: CInvalidArgException sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CInvalidArgException
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CInvalidArgException [MFC], CInvalidArgException
 ms.assetid: e43d7c67-1157-47f8-817a-804083e8186e
-ms.openlocfilehash: b28b6e84043b85a8117694a67ff5fff13e7c786b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f68642747a81d1c45a8246f4f25abfb8b79c81d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372372"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202801"
 ---
-# <a name="cinvalidargexception-class"></a>CInvalidArgException Sınıf
+# <a name="cinvalidargexception-class"></a>CInvalidArgException sınıfı
 
-Bu sınıf geçersiz bir bağımsız değişken özel durum temsil eder.
+Bu sınıf geçersiz bir bağımsız değişken özel durum koşulunu temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CInvalidArgException : public CSimpleException
@@ -29,31 +30,31 @@ class CInvalidArgException : public CSimpleException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CInvalidArgİst::CInvalidArgİstis](#cinvalidargexception)|Oluşturucu.|
+|[CInvalidArgException:: CInvalidArgException](#cinvalidargexception)|Oluşturucu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesne `CInvalidArgException` geçersiz bir bağımsız değişken özel durum temsil eder.
+`CInvalidArgException`Nesne geçersiz bir bağımsız değişken özel durum koşulunu temsil eder.
 
-Özel Durum İşleme hakkında daha fazla bilgi için [CException Class](../../mfc/reference/cexception-class.md) konusuna ve [Özel Durum İşleme (MFC)](../../mfc/exception-handling-in-mfc.md)konusuna bakın.
+Özel durum Işleme hakkında daha fazla bilgi için bkz. [CException sınıfı](../../mfc/reference/cexception-class.md) konusu ve [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cexception](../../mfc/reference/cexception-class.md)
+[CException](../../mfc/reference/cexception-class.md)
 
-[Csimpleexception](../../mfc/reference/csimpleexception-class.md)
+[CSimpleException](../../mfc/reference/csimpleexception-class.md)
 
 `CInvalidArgException`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afx.h
+**Üstbilgi:** AFX. h
 
-## <a name="cinvalidargexceptioncinvalidargexception"></a><a name="cinvalidargexception"></a>CInvalidArgİst::CInvalidArgİstis
+## <a name="cinvalidargexceptioncinvalidargexception"></a><a name="cinvalidargexception"></a> CInvalidArgException:: CInvalidArgException
 
 Oluşturucu.
 
@@ -63,9 +64,9 @@ CInvalidArgException();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucuya doğrudan kullanmayın; global fonksiyon **AfxThrowInvalidArgException**arayın.
+Bu oluşturucuyu doğrudan kullanmayın; **AfxThrowInvalidArgException** genel işlevini çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CSimpleException Sınıfı](../../mfc/reference/csimpleexception-class.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CSimpleException sınıfı](../../mfc/reference/csimpleexception-class.md)

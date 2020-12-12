@@ -1,4 +1,5 @@
 ---
+description: ': HLSL derleyici Özellik sayfaları hakkında daha fazla bilgi'
 title: HLSL Özellik Sayfaları
 ms.date: 07/24/2019
 ms.assetid: 0c65f5ec-a2a5-4f5b-8d4c-fa57113a5a1d
@@ -23,12 +24,12 @@ f1_keywords:
 - VC.Project.FXCompilerTool.AssemblerOutputFile
 - VC.Project.FXCompilerTool.CompileD2DCustomEffect
 - VC.Project.FXCompilerTool.MultiProcFXC
-ms.openlocfilehash: 629a242d3698c9c3c2d3c697298b5c6625e4768f
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: 3a374c36d87429fac9d9aee8dda2d1035da247c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199968"
 ---
 # <a name="hlsl-compiler-property-pages"></a>HLSL derleyici Özellik sayfaları
 

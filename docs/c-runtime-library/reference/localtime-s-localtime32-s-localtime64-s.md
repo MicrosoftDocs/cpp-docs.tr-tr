@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: localtime_s, _localtime32_s, _localtime64_s'
 title: localtime_s, _localtime32_s, _localtime64_s
 ms.date: 4/2/2020
 api_name:
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - time, converting values
 - localtime_s function
 ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
-ms.openlocfilehash: 26ebadf49632b9e312f3d0c0a0788720d3230312
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 856ab5610d176e3a5b2b928bda36154dd071fea5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218617"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198823"
 ---
 # <a name="localtime_s-_localtime32_s-_localtime64_s"></a>localtime_s, _localtime32_s, _localtime64_s
 
 Bir **time_t** zamanı değerini bir **TM** yapısına dönüştürür ve yerel saat dilimi için düzeltir. Bu sürümler, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [localtime, _localtime32 _localtime64](localtime-localtime32-localtime64.md) sürümleridir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t localtime_s(
@@ -82,24 +83,24 @@ Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodla
 
 |*tmDest*|*sourceTime*|Döndürülen değer|*Tmdest* değeri|Geçersiz parametre işleyicisini çağırır|
 |-----------|------------|------------------|--------------------|---------------------------------------|
-|**DEĞER**|herhangi biri|**EıNVAL**|Değiştirilmedi|Yes|
-|**Null** değil (geçerli belleğe işaret eder)|**DEĞER**|**EıNVAL**|Tüm alanlar-1 olarak ayarlandı|Yes|
+|**DEĞER**|herhangi biri|**EıNVAL**|Değiştirilmedi|Evet|
+|**Null** değil (geçerli belleğe işaret eder)|**DEĞER**|**EıNVAL**|Tüm alanlar-1 olarak ayarlandı|Evet|
 |**Null** değil (geçerli belleğe işaret eder)|0 ' dan küçük veya **_MAX__TIME64_T** değerinden büyük|**EıNVAL**|Tüm alanlar-1 olarak ayarlandı|Hayır|
 
-İlk iki hata koşulu durumunda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
+İlk iki hata koşulu durumunda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **Localtime_s** işlevi, [time_t](../../c-runtime-library/standard-types.md) değer olarak depolanan bir saati dönüştürür ve sonucu [TM](../../c-runtime-library/standard-types.md)türünde bir yapıda depolar. *Sourcetime* **time_t** değeri, gece yarısı (00:00:00), 1 Ocak 1970, UTC 'den beri geçen saniyeleri temsil eder. Bu değer genellikle [zaman](time-time32-time64.md) işlevinden elde edilir.
 
-**localtime_s** , Kullanıcı Ilk olarak **TZ**genel ortam değişkenini ayarladığında yerel saat dilimine göre düzeltir. **TZ** ayarlandığında, diğer üç ortam değişkeni (**_timezone**, **_daylight**ve **_tzname**) de otomatik olarak ayarlanır. **TZ** değişkeni ayarlanmamışsa, **localtime_s** Denetim Masası 'ndaki Tarih/Saat uygulamasında belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler alınamıyorsa, varsayılan olarak Pasifik saati dilimini belirten PST8PDT kullanılır. Bu değişkenlerin açıklaması için bkz. [_tzset](tzset.md) . **TZ** , bir Microsoft uzantısıdır ve **LOCALTIME**'ın ANSI standart tanımının bir parçası değildir.
+**localtime_s** , Kullanıcı Ilk olarak **TZ** genel ortam değişkenini ayarladığında yerel saat dilimine göre düzeltir. **TZ** ayarlandığında, diğer üç ortam değişkeni (**_timezone**, **_daylight** ve **_tzname**) de otomatik olarak ayarlanır. **TZ** değişkeni ayarlanmamışsa, **localtime_s** Denetim Masası 'ndaki Tarih/Saat uygulamasında belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler alınamıyorsa, varsayılan olarak Pasifik saati dilimini belirten PST8PDT kullanılır. Bu değişkenlerin açıklaması için bkz. [_tzset](tzset.md) . **TZ** , bir Microsoft uzantısıdır ve **LOCALTIME**'ın ANSI standart tanımının bir parçası değildir.
 
 > [!NOTE]
 > Hedef ortam, gün ışığından yararlanma saatinin etkin olup olmadığını belirlemeyi denemelidir.
 
 **__time64_t** yapısını kullanan **_localtime64_s**, tarihin 18 Ocak 3001, Eşgüdümlü Evrensel Saat (UTC) ile 23:59:59 arasında ifade etmesine izin verir, ancak **_localtime32_s** tarihleri 18 Ocak 2038, UTC 23:59:59 ile gösterir.
 
-**localtime_s** , **_localtime64_s**değerlendirilen ve **time_t** **__time64_t**eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t**olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T**tanımlayabilirsiniz. Bunu yapmak **localtime_s** **_localtime32_s**değerlendirmesine neden olur. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
+**localtime_s** , **_localtime64_s** değerlendirilen ve **time_t** **__time64_t** eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t** olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T** tanımlayabilirsiniz. Bunu yapmak **localtime_s** **_localtime32_s** değerlendirmesine neden olur. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
 
 [TM](../../c-runtime-library/standard-types.md) yapı türü alanları, her biri bir olan aşağıdaki değerleri depolar **`int`** .
 

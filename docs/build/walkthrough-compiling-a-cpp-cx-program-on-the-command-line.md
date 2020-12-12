@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Izlenecek yol: komut satırında C++/CX programı derleme'
 title: 'İzlenecek Yol: Komut Satırında C++/CX Programı Derleme'
 ms.date: 04/23/2019
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 8dcd27ca8fff826f33ee8bd752cd32f2d44d3691
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 10bee181f347864fdef1703f88ca002a6c7c40b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198953"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
 
@@ -35,7 +36,7 @@ C++/CX için derlemeyi etkinleştirmek üzere [/ZW](reference/zw-windows-runtime
 
    Bilgisayarın işletim sistemine ve yapılandırmasına bağlı olarak, kodu başarıyla derlemek için yönetici kimlik bilgileri gerekebilir. Komut Istemi penceresini yönetici olarak çalıştırmak için, **Geliştirici komut istemi** kısayol menüsünü açın ve ardından **yönetici olarak çalıştır**' ı seçin.
 
-1. Komut isteminde **Notepad basiccx. cpp**yazın.
+1. Komut isteminde **Notepad basiccx. cpp** yazın.
 
    Bir dosya oluşturmanız istendiğinde **Evet** ' i seçin.
 
@@ -54,9 +55,9 @@ C++/CX için derlemeyi etkinleştirmek üzere [/ZW](reference/zw-windows-runtime
 
    Windows Çalışma Zamanı [Platform ad](../cppcx/platform-namespace-c-cx.md) alanı ad alanını kullanan bir C++ kaynak dosyası oluşturdunuz.
 
-1. Komut isteminde **cl/EHsc/ZW basiccx. cpp/LINK/SUBSYSTEM: Console**yazın. cl.exe derleyicisi, kaynak kodu bir. obj dosyasına derler ve sonra basiccx.exe adlı yürütülebilir bir program oluşturmak için bağlayıcıyı çalıştırır. ( [/EHsc](reference/eh-exception-handling-model.md) derleyici seçeneği C++ özel durum işleme modelini belirtir ve [/Link](reference/link-pass-options-to-linker.md) bayrağı bir konsol uygulaması belirtir.)
+1. Komut isteminde **cl/EHsc/ZW basiccx. cpp/LINK/SUBSYSTEM: Console** yazın. cl.exe derleyicisi, kaynak kodu bir. obj dosyasına derler ve sonra basiccx.exe adlı yürütülebilir bir program oluşturmak için bağlayıcıyı çalıştırır. ( [/EHsc](reference/eh-exception-handling-model.md) derleyici seçeneği C++ özel durum işleme modelini belirtir ve [/Link](reference/link-pass-options-to-linker.md) bayrağı bir konsol uygulaması belirtir.)
 
-1. basiccx.exe programını çalıştırmak için komut isteminde **basiccx**yazın.
+1. basiccx.exe programını çalıştırmak için komut isteminde **basiccx** yazın.
 
    Program bu metni görüntüler ve çıkar:
 

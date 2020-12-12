@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/DLL (DLL derleme)
 title: /DLL (DLL Derleme)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - DLLs [C++], building
 - DLL linker option [C++]
 ms.assetid: c7685aec-31d0-490f-9503-fb5171a23609
-ms.openlocfilehash: 5f7907d659ee3bedc590b88320df03edce005b06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 42535fb15762e5c0f1691d5c28029c7368005f87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293764"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201410"
 ---
 # <a name="dll-build-a-dll"></a>/DLL (DLL Derleme)
 
@@ -25,31 +26,31 @@ ms.locfileid: "62293764"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ DLL seçeneği bir DLL ana çıkış dosyası oluşturur. Bir DLL, genellikle başka bir program tarafından kullanılabilecek dışarı aktarmaları içerir. Önerilen Kullanım sırasına göre listelenmiş dışa belirtmek için üç yöntem vardır:
+/DLL seçeneği, ana çıkış dosyası olarak bir DLL oluşturur. DLL, genellikle başka bir program tarafından kullanılabilen dışarı aktarmaları içerir. ' Nin önerilen kullanım sırasıyla listelenen dışarı aktarmaları belirtmek için üç yöntem vardır:
 
-1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak kodunda
+1. kaynak kodunda [__declspec (dllexport)](../../cpp/dllexport-dllimport.md)
 
-1. Bir [dışarı AKTARMALARI](exports.md) .def dosyası deyimi
+1. . Def dosyasındaki [dışarı aktarmalar](exports.md) deyimleri
 
-1. Bir [/dışarı aktarma](export-exports-a-function.md) bağlantı komut belirtimi
+1. BAĞLANTı komutunda bir [/Export](export-exports-a-function.md) belirtimi
 
-Bir program, birden fazla yöntemi kullanabilirsiniz.
+Bir program birden fazla yöntem kullanabilir.
 
-Bir DLL yapılandırmak için başka bir yöntem, **Kitaplığı** modül-tanımlama bildirimi. / Base ve/dll seçenekleri eşdeğer birbirine **Kitaplığı** deyimi.
+DLL oluşturmanın başka bir yolu da **kitaplık** Modülü tanım deyimidir. /BASE ve/DLL seçenekleri birlikte **LIBRARY** ifadesiyle eşdeğerdir.
 
-Geliştirme ortamındaki bu seçeneği belirtmeyin; Bu seçenek, yalnızca komut satırı kullanımı için geçerlidir. Bir uygulama Sihirbazı ile bir DLL projesi oluşturduğunuzda, bu seçeneği ayarlanır.
+Geliştirme ortamında bu seçeneği belirtmeyin; Bu seçenek yalnızca komut satırında kullanım içindir. Bu seçenek, bir uygulama sihirbazıyla bir DLL projesi oluşturduğunuzda ayarlanır.
 
-Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığı derlerken geçti olarak, aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.
+İçeri aktarma kitaplığınızı bir ön adımda oluşturursanız,. dll 'nizi oluşturmadan önce, içeri aktarma kitaplığını oluştururken geçirdiğiniz gibi,. dll dosyasını oluştururken aynı nesne dosyaları kümesini geçirmeniz gerekir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **yapılandırma özellikleri** klasör.
+1. **Yapılandırma özellikleri** klasörünü tıklatın.
 
-1. Tıklayın **genel** özellik sayfası.
+1. **Genel** Özellik sayfasına tıklayın.
 
-1. Değiştirme **yapılandırma türü** özelliği.
+1. **Yapılandırma türü** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -58,4 +59,4 @@ Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığın�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

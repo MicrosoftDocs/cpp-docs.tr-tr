@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/hotpatch (düzeltme eki eklenebilir görüntü oluşturma)
 title: /hotpatch (Düzeltme Eki Eklenebilen Görüntü Oluşturma)
 ms.date: 11/12/2018
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - /hotpatch compiler option [C++]
 - hotpatching
 ms.assetid: aad539b6-c053-4c78-8682-853d98327798
-ms.openlocfilehash: 8830b26b8fdfc3db2aa5fe31a52e6226fd554946
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2fc5fe629afcb1e721943b852c6f92351900ab7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199876"
 ---
 # <a name="hotpatch-create-hotpatchable-image"></a>/hotpatch (Düzeltme Eki Eklenebilen Görüntü Oluşturma)
 
-Görüntüyü Yeniden başlatmasız düzeltme için hazırlar.
+Sık yama için bir görüntü hazırlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /hotpatch
@@ -29,21 +30,21 @@ Görüntüyü Yeniden başlatmasız düzeltme için hazırlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman **/hotpatch** kullanılan bir derleme içinde derleyici Yeniden başlatmasız düzeltme için gerekli olan her işlevin ilk yönergesinin en az iki bayt olmasını sağlar.
+Bir derlemede **/hotpatch** kullanıldığında, derleyici, her işlevin ilk yönergesinin en az iki bayt olmasını sağlar ve bu, sık düzeltme eki uygulama için gereklidir.
 
-Kullandıktan sonra için bir resmi düzeltme eki eklenebilir hale getirme hazırlığını tamamlamak için **/hotpatch** derlemek için kullanmanız gerekir [/FUNCTIONPADMIN (düzeltme eki eklenebilen görüntü oluşturma)](functionpadmin-create-hotpatchable-image.md) bağlamak için. Derleme ve görüntü cl.exe, bir çağrı kullanılarak bağlantı **/hotpatch** gelir **/functionpadmin**.
+Bir görüntünün hotpatch hale getirme hazırlığını tamamlamaya yönelik olarak derlemek için **/hotpatch** kullandıktan sonra, bağlantı için [/functionpadmin (düzeltme eki uygulama oluştur)](functionpadmin-create-hotpatchable-image.md) kullanmanız gerekir. Bir cl.exe çağrısı kullanarak bir görüntüyü derleyip bağladığınızda **/hotpatch** **/FUNCTIONPADMIN**' i belirtir.
 
-Yönergeleri her zaman iki bayt olduğundan ARM mimarisi, daha büyük ve çünkü derleme her zaman kabul x64 gibi **/hotpatch** belirtilmiş belirtmek zorunda değilsiniz **/hotpatch** olduğunda Bu hedefler için derleme; Bununla birlikte, yine de kullanarak bağlamanız gerekir **/functionpadmin** kendileri için düzeltme eki eklenebilen görüntü oluşturma. **/Hotpatch** derleyici seçeneği yalnızca etkiler x86 derleme.
+Yönergeler ARM mimarisinde her zaman iki bayt veya daha büyük olduğundan ve x64 derlemesi **/hotpatch** belirtildiğinde her zaman kabul edildiğinden, bu hedeflere yönelik derleme yaparken **/hotpatch** belirtmeniz gerekmez; Ancak, bunlar için düzeltme eki uygulanmış görüntüler oluşturmak üzere **/FUNCTIONPADMIN** kullanarak yine de bağlantı oluşturmanız gerekir. **/Hotpatch** derleyici seçeneği yalnızca x86 derlemesini etkiler.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **C/C++** klasör.
+1. **C/C++** klasörünü seçin.
 
-1. Seçin **komut satırı** özellik sayfası.
+1. **Komut satırı** özellik sayfasını seçin.
 
-1. Derleyici seçeneğini ekleyin **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini ekleyin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -51,5 +52,5 @@ Yönergeleri her zaman iki bayt olduğundan ARM mimarisi, daha büyük ve çünk
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

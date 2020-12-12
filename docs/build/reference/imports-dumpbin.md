@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/ıMPORTS (DUMPBIN)
 title: /IMPORTS (DUMPBIN)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /IMPORTS dumpbin option
 - -IMPORTS dumpbin option
 ms.assetid: 6a296216-2b1b-40f8-8736-cd4553a22456
-ms.openlocfilehash: c8b0f88b38eb657fe4d3916ef0df13972e985cbe
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 86c428280bbca3a4957f7d7a0a640482607547de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62291850"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199798"
 ---
 # <a name="imports-dumpbin"></a>/IMPORTS (DUMPBIN)
 
@@ -21,9 +22,9 @@ ms.locfileid: "62291850"
 /IMPORTS[:file]
 ```
 
-Bu seçeneği DLL'lerin listesini görüntüler (her ikisi de statik olarak bağlanan ve [Gecikmeli yüklendi](linker-support-for-delay-loaded-dlls.md)), alma işlemi yürütülebilir bir dosya veya DLL ve tek tek tüm içe aktarmaları için her bu DLL'ler.
+Bu seçenek, yürütülebilir bir dosyaya veya DLL 'ye aktarılan dll 'lerin listesini (statik olarak bağlanmış ve [gecikmeli yüklendi](linker-support-for-delay-loaded-dlls.md)) ve bu DLL 'lerden her biri ayrı ayrı içeri aktarmaları görüntüler.
 
-İsteğe bağlı `file` belirtimi yalnızca DLL için içeri aktarmalar görüntülenir belirtmenize olanak verir. Örneğin:
+İsteğe bağlı `file` Belirtim yalnızca bu DLL için içeri aktarmaların görüntülenmesini belirtmenize olanak tanır. Örneğin:
 
 ```
 dumpbin /IMPORTS:msvcrt.dll
@@ -31,9 +32,9 @@ dumpbin /IMPORTS:msvcrt.dll
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek çıktıyı benzer [/EXPORTS](dash-exports.md) çıktı.
+Bu seçenekle görüntülenecek çıktı, [/dışarı aktarmalar](dash-exports.md) çıktısına benzerdir.
 
-Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
+[/GL](gl-whole-program-optimization.md) derleyici seçeneği ile oluşturulan dosyalarda yalnızca [/Headers](headers.md) dumpbin seçeneği kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

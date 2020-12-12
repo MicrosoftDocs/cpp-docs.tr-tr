@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bellek üzerine yazmayı denetlemek için hata ayıklama derlemesini kullanma'
 title: Belleğin Üzerine Yazma Denetimi için Hata Ayıklama Derlemesini Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - memory, overwrites
 ms.assetid: 1345eb4d-24ba-4595-b1cc-2da66986311e
-ms.openlocfilehash: 152f72749d2ebdacd46dd3e4db671bc5705d4b6a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 03981696a0314632aebb959d6fa1d986145c087c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213755"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199070"
 ---
 # <a name="using-the-debug-build-to-check-for-memory-overwrite"></a>Belleğin Üzerine Yazma Denetimi için Hata Ayıklama Derlemesini Kullanma
 
@@ -27,7 +28,7 @@ Hata ayıklama belleği ayırıcısı, tüm bellek ayırmalarının her türlü 
 Damage Occurred! Block=0x5533
 ```
 
-Bu iletilerden birini görürseniz, hasarın nerede oluştuğunu öğrenmek için kodunuzda ileretmeniz gerekir. Bellek üzerine yazma gerçekleştiği yerde daha kesin bir şekilde yalıtmak için kendinize açık çağrılar yapabilirsiniz `AfxCheckMemory` . Örnek:
+Bu iletilerden birini görürseniz, hasarın nerede oluştuğunu öğrenmek için kodunuzda ileretmeniz gerekir. Bellek üzerine yazma gerçekleştiği yerde daha kesin bir şekilde yalıtmak için kendinize açık çağrılar yapabilirsiniz `AfxCheckMemory` . Örneğin:
 
 ```
 ASSERT(AfxCheckMemory());

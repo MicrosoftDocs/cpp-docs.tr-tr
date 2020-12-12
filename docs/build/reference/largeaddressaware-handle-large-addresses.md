@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/LARGEADDRESSAWARE (büyük adresleri Işle)
 title: /LARGEADDRESSAWARE (Büyük Adresleri İşle)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -LARGEADDRESSAWARE linker option
 - /LARGEADDRESSAWARE linker option
 ms.assetid: a29756c8-e893-47a9-9750-1f0d25359385
-ms.openlocfilehash: 81a560ebf083e2f93d9bb514fc401186291d7f41
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72b2ba20b2ea2b91ecd234497c433bcdd9e9ee42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269561"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199577"
 ---
 # <a name="largeaddressaware-handle-large-addresses"></a>/LARGEADDRESSAWARE (Büyük Adresleri İşle)
 
@@ -24,19 +25,19 @@ ms.locfileid: "62269561"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Largeaddressaware seçeneği, bağlayıcıya uygulamanın 2 gigabayttan büyük adresleri işleyebileceğini bildirir. 64-bit derleyiciler bu seçenek varsayılan olarak etkindir. / Largeaddressaware bağlayıcı satırında aksi belirtilmediği takdirde, 32-bit derleyicilerde: No etkinleştirilir.
+/LARGEADDRESSAWARE seçeneği, bağlayıcıya uygulamanın 2 gigabayt 'tan daha büyük adresler işleyebileceğini söyler. 64 bit derleyicilerde, bu seçenek varsayılan olarak etkindir. Bağlayıcı satırında/LARGEADDRESSAWARE belirtilmemişse, 32 bit derleyicilerde/LARGEADDRESSAWARE: NO etkinleştirilir.
 
-/ Largeaddressaware ile DUMPBIN uygulamanın bağlı olduğu [OPTIONAL](headers.md) belirlememişse bu bağlamda bilgileri görüntüler.
+Bir uygulama/LARGEADDRESSAWARE ile bağlanmışsa, DUMPBIN [/Headers](headers.md) bu efekte bilgi görüntüler.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **sistem** özellik sayfası.
+1. **Sistem** Özellik sayfasına tıklayın.
 
-1. Değiştirme **büyük adresleri etkinleştir** özelliği.
+1. **Büyük adresleri etkinleştir** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -45,4 +46,4 @@ ms.locfileid: "62269561"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

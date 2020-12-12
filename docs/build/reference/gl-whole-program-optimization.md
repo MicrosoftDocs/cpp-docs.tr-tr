@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/GL (tüm program Iyileştirmesi)
 title: /GL (Bütün Program İyileştirmesi)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - -GL compiler option [C++]
 - GL compiler option [C++]
 ms.assetid: 09d51e2d-9728-4bd0-b5dc-3b8284aca1d1
-ms.openlocfilehash: 875865a32dcb80cb8a6d8fa53646260f3d9413a5
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: ad42eaeeacf897686831c9b415aa62026b5644f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439661"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200201"
 ---
 # <a name="gl-whole-program-optimization"></a>/GL (Bütün Program İyileştirmesi)
 
 Tüm program iyileştirmesini mümkün hale getirme.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /GL[-]
@@ -48,7 +49,7 @@ Programınızı **/GL** ve [/c](c-compile-without-linking.md)ile derlerseniz, ç
 
 [/Zi](z7-zi-zi-debug-information-format.md) **/GL** ile kullanılamaz
 
-Geçerli sürümde **/GL** ile oluşturulan dosyaların biçimi, sonraki görsel C++sürümleri tarafından okunabilir olmayabilir. Kullanıcılarınızın, şimdi ve gelecekte kullanmasını bekleyen tüm görsel C++ sürümleri için. lib dosyasının kopyalarını teslim etmek istemediğiniz müddetçe, **/GL** ile oluşturulan. obj dosyasını bir. lib dosyası göndermemelisiniz.
+Geçerli sürümde **/GL** ile oluşturulan dosyaların biçimi, sonraki Visual C++ sürümleri tarafından okunamayabilir. Kullanıcılarınızın, şimdi ve gelecekte kullanmasını istediğiniz tüm Visual C++ sürümleri için. lib dosyasının kopyalarını teslim etmek istemediğiniz müddetçe, **/GL** ile oluşturulan. lib dosyasını sunmamalıdır.
 
 **/GL** ve önceden derlenmiş üst bilgi dosyalarıyla oluşturulan. obj dosyaları,. lib dosyası **/GL** . obj dosyasını üreten aynı makineye bağlanmadığı müddetçe bir. lib dosyası oluşturmak için kullanılmamalıdır. . Obj dosyasının ön derlenmiş üstbilgi dosyasındaki bilgiler bağlantı zamanında gerekecektir.
 
@@ -64,5 +65,5 @@ Geçerli sürümde **/GL** ile oluşturulan dosyaların biçimi, sonraki görsel
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

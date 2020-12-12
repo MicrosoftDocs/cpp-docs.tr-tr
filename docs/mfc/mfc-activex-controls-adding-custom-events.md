@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: özel olaylar ekleme'
 title: 'MFC ActiveX Denetimleri: Özel Olaylar Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - custom events [MFC]
 - FireEvent method, adding custom events
 ms.assetid: c584d053-1e34-47aa-958e-37d3e9b85892
-ms.openlocfilehash: 70b0e08bc638b5f630d423ec0db8a169a0119175
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1c41db073e5cfd74861a1ca836916c2b4bfdc9b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203048"
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX Denetimleri: Özel Olaylar Ekleme
 
 Özel olaylar, otomatik olarak sınıf tarafından tetiklendikleri için stok olaylarından farklıdır `COleControl` . Özel bir olay, denetim geliştiricisi tarafından bir olay olarak belirlenen belirli bir eylemi algılar. Özel olaylara yönelik olay eşlemesi girdileri EVENT_CUSTOM makro tarafından temsil edilir. Aşağıdaki bölüm, ActiveX Denetim Sihirbazı kullanılarak oluşturulan bir ActiveX denetim projesi için özel bir olay uygular.
 
-## <a name="adding-a-custom-event-with-the-add-event-wizard"></a><a name="_core_adding_a_custom_event_with_classwizard"></a>Olay Ekleme Sihirbazı ile özel olay ekleme
+## <a name="adding-a-custom-event-with-the-add-event-wizard"></a><a name="_core_adding_a_custom_event_with_classwizard"></a> Olay Ekleme Sihirbazı ile özel olay ekleme
 
 Aşağıdaki yordam belirli bir özel olay ekler ve sonra da. Diğer özel olayları eklemek için bu yordamı kullanabilirsiniz. Özel olay adınızı ve parametrelerini, Click olay adı ve parametreleri için değiştirin.
 
@@ -34,7 +35,7 @@ Aşağıdaki yordam belirli bir özel olay ekler ve sonra da. Diğer özel olayl
 
 1. Denetiminizin projesini yükleyin.
 
-1. **Sınıf görünümü**menüsünde, ActiveX denetim sınıfınızı sağ tıklayıp kısayol menüsünü açın.
+1. **Sınıf görünümü** menüsünde, ActiveX denetim sınıfınızı sağ tıklayıp kısayol menüsünü açın.
 
 1. Kısayol menüsünde, **Ekle** ' ye ve ardından **olay Ekle**' ye tıklayın.
 
@@ -50,7 +51,7 @@ Aşağıdaki yordam belirli bir özel olay ekler ve sonra da. Diğer özel olayl
 
 1. Olayı oluşturmak için **son** ' a tıklayın.
 
-## <a name="add-event-wizard-changes-for-custom-events"></a><a name="_core_classwizard_changes_for_custom_events"></a>Özel olaylar için olay Sihirbazı değişiklikleri ekleme
+## <a name="add-event-wizard-changes-for-custom-events"></a><a name="_core_classwizard_changes_for_custom_events"></a> Özel olaylar için olay Sihirbazı değişiklikleri ekleme
 
 Özel bir olay eklediğinizde, olay Ekleme Sihirbazı denetim sınıfında değişiklikler yapar. H,. CPP ve. IDL dosyaları. Aşağıdaki kod örnekleri, Click olayına özeldir.
 
@@ -72,7 +73,7 @@ Son olarak, aşağıdaki satır denetiminizin öğesine eklenir. IDL dosyası:
 
 Bu satır, olay Ekle Sihirbazı olay listesi ' nde olayın konumundan alınan belirli bir KIMLIK numarası olan Click olayını atar. Olay listesindeki giriş, bir kapsayıcının olayı tahmin etmesine izin verir. Örneğin, olay harekete geçirildiğinde yürütülecek işleyici kodu sağlayabilir.
 
-## <a name="calling-fireclickin"></a><a name="_core_calling_fireclickin"></a>Firei 'yi çağırma
+## <a name="calling-fireclickin"></a><a name="_core_calling_fireclickin"></a> Firei 'yi çağırma
 
 Olay Ekleme Sihirbazı 'nı kullanarak ister özel olayını ekletireceğinize göre, bu olayın ne zaman tetiklendiğine karar vermelisiniz. Bunu `FireClickIn` , uygun eylem gerçekleştiğinde çağırarak yapabilirsiniz. Bu tartışma için denetim, bir `InCircle` `WM_LBUTTONDOWN` Kullanıcı dairesel veya eliptik bir bölgenin içini tıklattığında, bu olayı bir ileti işleyicisi içinde kullanır. Aşağıdaki yordam `WM_LBUTTONDOWN` işleyiciyi ekler.
 
@@ -86,7 +87,7 @@ Olay Ekleme Sihirbazı 'nı kullanarak ister özel olayını ekletireceğinize g
 
 1. İşlemek istediğiniz iletiyi seçin. Bu örnek için, öğesini seçin `WM_LBUTTONDOWN` .
 
-1. Sağdaki aşağı açılan liste kutusundan ** \<Add> onlbuttonlist**' i seçin.
+1. Sağdaki aşağı açılan liste kutusundan **\<Add> onlbuttonlist**' i seçin.
 
 1. Uygulamadaki ileti işleyici koduna geçmek için **sınıf görünümü** yeni işleyici işlevine çift tıklayın (. CPP) dosyası.
 
@@ -105,7 +106,7 @@ Ayrıca, denetimin üstbilgisine () işlevin aşağıdaki bildirimini eklemeniz 
 
 [!code-cpp[NVC_MFC_AxUI#12](codesnippet/cpp/mfc-activex-controls-adding-custom-events_6.h)]
 
-## <a name="custom-events-with-stock-names"></a><a name="_core_custom_events_with_stock_names"></a>Hisse senedi adlarıyla özel olaylar
+## <a name="custom-events-with-stock-names"></a><a name="_core_custom_events_with_stock_names"></a> Hisse senedi adlarıyla özel olaylar
 
 Hisse senedi olaylarıyla aynı ada sahip özel olaylar oluşturabilirsiniz, ancak her ikisini de aynı denetimde uygulayamamalıdır. Örneğin, bir özel olay oluşturmak isteyebilirsiniz. Bu, stok olayı tıklaması normalde başlatıldığında harekete geçmeyecektir. Ardından, tetikleme işlevini çağırarak istediğiniz zaman Click olayını tetikleyerek yapabilirsiniz.
 
@@ -115,15 +116,15 @@ Aşağıdaki yordam özel bir tıklama olayı ekler.
 
 1. Denetiminizin projesini yükleyin.
 
-1. **Sınıf görünümü**menüsünde, ActiveX denetim sınıfınızı sağ tıklayıp kısayol menüsünü açın.
+1. **Sınıf görünümü** menüsünde, ActiveX denetim sınıfınızı sağ tıklayıp kısayol menüsünü açın.
 
 1. Kısayol menüsünde, **Ekle** ' ye ve ardından **olay Ekle**' ye tıklayın.
 
    Bu, olay Ekleme Sihirbazı ' nı açar.
 
-1. **Olay adı** açılır listesinde bir stok olay adı seçin. Bu örnek için **tıklama ' yi**seçin.
+1. **Olay adı** açılır listesinde bir stok olay adı seçin. Bu örnek için **tıklama ' yi** seçin.
 
-1. **Olay türü**için **özel**' i seçin.
+1. **Olay türü** için **özel**' i seçin.
 
 1. Olayı oluşturmak için **son** ' a tıklayın.
 
@@ -132,5 +133,5 @@ Aşağıdaki yordam özel bir tıklama olayı ekler.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX denetimleri](mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Yöntemler](mfc-activex-controls-methods.md)<br/>
+[MFC ActiveX denetimleri: Yöntemler](mfc-activex-controls-methods.md)<br/>
 [Coelcontrol sınıfı](reference/colecontrol-class.md)

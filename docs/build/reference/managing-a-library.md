@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bir kitaplığı yönetme'
 title: Kitaplığı Yönetme
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,65 +41,65 @@ helpviewer_keywords:
 - LIST library manager option
 - /CONVERT library manager option
 ms.assetid: f56a8b85-fbdc-4c09-8d8e-00f0ffe1da53
-ms.openlocfilehash: de55059834a0887d487b7be38377af9984512b75
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f862dfd460bb51cdf6e855c87b08b7426a5642d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199135"
 ---
 # <a name="managing-a-library"></a>Kitaplığı Yönetme
 
-LIB için varsayılan mod, COFF nesnelerinin kitaplığını oluşturmak veya değiştirmektir. /EXTRACT (bir nesneyi bir dosyaya kopyalamak için) veya /DEF (alma kitaplığı oluşturmak için) belirtmediğinizde LIB bu modda çalışır.
+LıB için varsayılan mod, COFF nesnelerinin bir kitaplığını derlemek veya değiştirmektir. Bu modda,/EXTRACT (bir nesneyi bir dosyaya kopyalamak için) veya/DEF (içeri aktarma kitaplığı oluşturmak için) belirtmezseniz bu modda çalışır.
 
-Nesnelerden ve/veya kitaplıklardan kitaplık oluşturmak için aşağıdaki sözdizimini kullanın:
+Nesnelerden ve/veya kitaplıklarından bir kitaplık oluşturmak için aşağıdaki sözdizimini kullanın:
 
 ```
 LIB [options...] files...
 ```
 
-Bu komut, bir veya daha fazla giriş *dosyasından*kitaplık oluşturur. *Dosyalar* COFF nesne dosyaları, 32-bit OMF nesne dosyaları veya varolan COFF kitaplıkları olabilir. LIB, belirtilen dosyalardaki tüm nesneleri içeren bir kitaplık oluşturur. Giriş dosyası 32 bit OMF nesne dosyasıysa, LIB kitaplığı oluşturmadan önce dosyayı COFF'a dönüştürür. LIB, LIB'in 16 bit sürümü tarafından oluşturulan bir kitaplıkta bulunan 32 bit omf nesnesini kabul edemez. Nesneyi ayıklamak için önce 16 bit LIB kullanmanız gerekir; sonra çıkarılan nesne dosyasını 32-bit LIB'e giriş olarak kullanabilirsiniz.
+Bu komut bir veya daha *fazla giriş dosyasından* bir kitaplık oluşturur. *Dosyalar* , nesne dosyalarını, 32-BIT OMF nesne dosyalarını veya var olan COFF kitaplıklarını COFF olabilir. LıB belirtilen dosyalardaki tüm nesneleri içeren bir kitaplık oluşturur. Bir giriş dosyası 32-bit OMF nesne dosyası ise, LIB kitaplığı oluşturmadan önce onu COFF 'ye dönüştürür. LıB, LıB 'in 16 bit sürümü tarafından oluşturulmuş bir kitaplıkta olan 32 bitlik bir OMF nesnesini kabul edemez. Nesneyi ayıklamak için öncelikle 16 bit LIB kullanmanız gerekir; ardından, ayıklanan nesne dosyasını 32 bit LIB 'e giriş olarak kullanabilirsiniz.
 
-Varsayılan olarak, LIB ilk nesne veya kitaplık dosyasının temel adını ve uzantısı .lib kullanarak çıktı dosyasını adlandırır. Çıktı dosyası geçerli dizine konur. Bir dosya zaten aynı ada sahipse, çıktı dosyası varolan dosyanın yerini alır. Varolan bir kitaplığı korumak için, çıktı dosyası için bir ad belirtmek için /OUT seçeneğini kullanın.
+Varsayılan olarak, LIB ilk nesne veya kitaplık dosyasının temel adını ve. LIB uzantısını kullanarak çıkış dosyasını adlandırır. Çıkış dosyası geçerli dizine konur. Aynı ada sahip bir dosya zaten varsa, çıkış dosyası mevcut dosyanın yerini alır. Var olan bir kitaplığı korumak için, çıkış dosyası için bir ad belirtmek üzere/OUT seçeneğini kullanın.
 
-Aşağıdaki seçenekler kitaplık oluşturma ve değiştirme için geçerlidir:
+Aşağıdaki seçenekler bir kitaplığı oluşturmak ve değiştirmek için geçerlidir:
 
-**/LIBPATH:** *dir*<br/>
-Çevre kitaplığı yolunu geçersiz kılar. Ayrıntılar için LINK [/LIBPATH](libpath-additional-libpath.md) seçeneğinin açıklamasına bakın.
+**/Libpath:** *dir*<br/>
+Ortam kitaplığı yolunu geçersiz kılar. Ayrıntılar için bağlantı [/LIBPATH](libpath-additional-libpath.md) seçeneğinin açıklamasına bakın.
 
-**/Lİste**<br/>
-Çıktı kitaplığı hakkındaki bilgileri standart çıktıya görüntüler. Çıktı bir dosyaya yönlendirilebilir. Varolan bir kitaplığın içeriğini değiştirmeden belirlemek için /LIST'i kullanabilirsiniz.
+**/LIST**<br/>
+Standart çıktıya çıkış kitaplığıyla ilgili bilgileri görüntüler. Çıktı bir dosyaya yönlendirilebilir. Var olan bir kitaplığın içeriğini değiştirmeden anlamak için/LIST ' i kullanabilirsiniz.
 
-**/NAME:** *dosya adı*<br/>
-Bir alma kitaplığı oluştururken, içe aktarma kitaplığı için inşa edilmekte olan DLL'nin adını belirtir.
+**/Name:** *dosya adı*<br/>
+İçeri aktarma kitaplığı oluştururken, içeri aktarma kitaplığının oluşturulduğu DLL 'in adını belirtir.
 
-**/NODEFAULTLIB**<br/>
-Dış başvuruları çözerken aradığı kitaplıklar listesinden bir veya daha fazla varsayılan kitaplık kaldırır. Daha fazla bilgi için [/NODEFAULTLIB'e](nodefaultlib-ignore-libraries.md) bakın.
+**/NODEFAULTLıB**<br/>
+Dış başvuruları çözümlerken aradığı kitaplık listesinden bir veya daha fazla varsayılan kitaplığı kaldırır. Daha fazla bilgi için bkz. [/nodefaultlib](nodefaultlib-ignore-libraries.md) .
 
-**/OUT:** *dosya adı*<br/>
-Varsayılan çıktı dosya adını geçersiz kılar. Varsayılan olarak, çıktı kitaplığı, komut satırında ilk kitaplığın veya nesne dosyasının temel adı ve uzantı .lib ile geçerli dizinde oluşturulur.
+**/Out:** *filename*<br/>
+Varsayılan çıkış dosya adını geçersiz kılar. Varsayılan olarak, çıktı kitaplığı geçerli dizinde, komut satırındaki ilk kitaplığın veya nesne dosyasının temel adı ve. lib uzantısı ile oluşturulur.
 
-**/REMOVE:** *nesne*<br/>
-Belirtilen *nesneyi* çıkış kitaplığından atlar. LIB, tüm nesneleri (nesne dosyalarında veya kitaplıklarda) birleştirerek ve sonra /REMOVE ile belirtilen nesneleri silerek bir çıktı kitaplığı oluşturur.
+**/Remove:** *nesne*<br/>
+Çıkış kitaplığından belirtilen *nesneyi* atlar. LıB tüm nesneleri birleştirerek (nesne dosyalarında veya kitaplıklarda) ve sonra/REMOVE. ile belirtilen tüm nesneleri silerek bir çıktı kitaplığı oluşturur.
 
-**/ALT SİsteM:**{**KONSOL** &#124; **EFI_APPLICATION** &#124; **EFI_BOOT_SERVICE_DRIVER &#124;** &#124; **EFI_ROM** &#124; **EFI_RUNTIME_DRIVER &#124;** &#124; **YEREL** &#124; **POSIX** &#124; **WINDOWSCE** &#124; **WINDOWSCE**}[,####]]<br/>
-İşletim sistemine çıktı kitaplığına bağlanarak oluşturulan bir programın nasıl çalıştırılabildiğini söyler. Daha fazla bilgi için LINK [/SUBSYSTEM](subsystem-specify-subsystem.md) seçeneğinin açıklamasına bakın.
+**/Subsystem:**{**CONSOLE** &#124; **EFI_APPLICATION** &#124; **EFI_BOOT_SERVICE_DRIVER** &#124; **EFI_ROM** &#124; **EFI_RUNTIME_DRIVER** &#124; **Yerel** &#124; **POSIX** &#124; **WINDOWS** &#124; **WindowsCE**} [, # [. # #]]<br/>
+İşletim sistemine, çıkış kitaplığına bağlanarak oluşturulan bir programın nasıl çalıştırılacağını söyler. Daha fazla bilgi için LINK [/Subsystem](subsystem-specify-subsystem.md) seçeneğinin açıklamasına bakın.
 
-Komut satırında belirtilen LIB seçenekleri büyük/küçük harf duyarlı değildir.
+Komut satırında belirtilen LıB seçenekleri büyük/küçük harfe duyarlı değildir.
 
-Aşağıdaki kitaplık yönetimi görevlerini gerçekleştirmek için LIB'i kullanabilirsiniz:
+Aşağıdaki kitaplık yönetim görevlerini gerçekleştirmek için LIB 'i kullanabilirsiniz:
 
-- Kitaplıklara nesneler eklemek için, varolan kitaplığın dosya adını ve yeni nesnelerin dosya adlarını belirtin.
+- Bir kitaplığa nesne eklemek için, var olan kitaplığın dosya adını ve yeni nesneler için dosya adlarını belirtin.
 
-- Kitaplıkları birleştirmek için kitaplık dosya adlarını belirtin. Nesneler ekleyebilir ve kitaplıkları tek bir LIB komutuyla birleştirebilirsiniz.
+- Kitaplıkları birleştirmek için kitaplık dosyası adlarını belirtin. Nesneleri ekleyebilir ve kitaplıkları tek bir LIB komutuyla birleştirebilirsiniz.
 
-- Kitaplık üyesini yeni bir nesneyle değiştirmek için, değiştirilecek üye nesneyi içeren kitaplığı ve yeni nesnenin (veya onu içeren kitaplığın) dosya adını belirtin. Aynı ada sahip bir nesne birden fazla giriş dosyasında varsa, LIB, LIB komutunda belirtilen son nesneyi çıkış kitaplığına koyar. Bir kitaplık üyesini değiştirdiğinizde, eski nesneyi içeren kitaplıktan sonra yeni nesneyi veya kitaplığı belirttiğinden emin olun.
+- Bir kitaplık üyesini yeni bir nesneyle değiştirmek için, değiştirilecek üye nesnesini içeren kitaplığı ve yeni nesnenin (veya onu içeren kitaplığın) dosya adını belirtin. Birden fazla giriş dosyasında aynı ada sahip bir nesne varsa, LIB LIB komutunda belirtilen son nesneyi çıkış kitaplığına koyar. Bir kitaplık üyesini değiştirdiğinizde, eski nesneyi içeren kitaplıktan sonra yeni nesneyi veya kitaplığı belirttiğinizden emin olun.
 
-- Bir üyeyi kitaplıktan silmek için /REMOVE seçeneğini kullanın. LIB, komut satırı sırası ne olursa olsun tüm giriş nesnelerini birleştirdikten sonra /REMOVE'un tüm belirtimlerini işler.
+- Bir kitaplıktan üye silmek için/REMOVE seçeneğini kullanın. LıB, komut satırı sıralarından bağımsız olarak tüm giriş nesneleri birleştirildikten sonra/REMOVE 'ın tüm belirtimlerini işler.
 
 > [!NOTE]
-> Hem üyeyi siler hem de aynı adımda bir dosyaya ayıklayamazsınız. Önce /EXTRACT kullanarak üye nesneyi ayıklamanız, sonra /REMOVE kullanarak LIB'i yeniden çalıştırmanız gerekir. Bu davranış, diğer Microsoft ürünlerinde sağlanan 16 bit LIB'den (OMF kitaplıkları için) farklıdır.
+> Her ikisi de bir üyeyi silemez ve aynı adımda bir dosyaya ayıklayabilir. Önce/EXTRACT kullanarak üye nesnesini ayıklamanız, sonra/REMOVE. kullanarak LIB 'i yeniden çalıştırmanız gerekir. Bu davranış, diğer Microsoft ürünlerinde sağlanmış olan 16 bit LıB 'den (OMF kitaplıkları için) farklıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[LIB Referans](lib-reference.md)
+[LıB başvurusu](lib-reference.md)

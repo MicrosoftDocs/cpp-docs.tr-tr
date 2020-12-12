@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/ıDLOUT (MıDL çıktı dosyalarını Adlandır)
 title: /IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - -IDLOUT linker option
 - IDLOUT linker option
 ms.assetid: 10d00a6a-85b4-4de1-8732-e422c6931509
-ms.openlocfilehash: 8dc26a0564a979c918d1eb1eb85e63e9c73caba0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9835721d3e9b376feca51d87d375efa79dc43df7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506930"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199850"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
 
@@ -44,13 +45,13 @@ MıDL derleyicisi, [module](../../windows/attributes/module-cpp.md) özniteliği
 
 - *filename*. tlb
 
-- *filename*_p. c
+- *filename* _p. c
 
-- *filename*_i. c
+- *filename* _i. c
 
 - *filename*. h
 
-*filename* ,/ıdlout'e geçirdiğiniz parametredir. [/Tlhakkında](tlbout-name-dot-tlb-file.md) belirtilmişse,. tlb dosyasının adını/TLS *Dosya*adı ile alır.
+*filename* ,/ıdlout'e geçirdiğiniz parametredir. [/Tlhakkında](tlbout-name-dot-tlb-file.md) belirtilmişse,. tlb dosyasının adını/TLS *Dosya* adı ile alır.
 
 Ne/ıDLOUT ne de/TLI belirtirseniz, bağlayıcı vc70. tlb, vc70. IDL, vc70_p. c, vc70_i. c ve vc70. h oluşturur.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi için: derleme görevleri dosyasına satır Içi dosyalar'
 title: Derleme Görevleri Dosyasındaki Satır İçi Dosyalar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - makefiles, inline files
 - files [C++], inline
 ms.assetid: ff48a64f-773d-410c-9726-f867ad4c8030
-ms.openlocfilehash: cb04848a82a7074d9626a2d6dc0f5771414efb87
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0ce097792557e1935176e99b17a230cb25ca2f10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269889"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199746"
 ---
 # <a name="inline-files-in-a-makefile"></a>Derleme Görevleri Dosyasındaki Satır İçi Dosyalar
 
-Satır içi dosya derleme görevleri dosyasında belirttiğiniz metni içerir. Komutlar işletim sistemine geçirebilir veya adını komutlarını (örneğin, bir bağlantı komut dosyası) giriş olarak kullanılabilir. Dosyayı oluşturur bir komutu çalıştırdığınızda dosyanın disk üzerinde oluşturulur.
+Satır içi bir dosya, derleme görevleri dosyasında belirttiğiniz metni içerir. Adı, giriş olarak komutlar (örneğin, bir bağlantı komut dosyası) olarak veya işletim sistemine komutları geçirebilirler. Dosya oluşturan bir komut çalıştırıldığında dosya diskte oluşturulur.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
@@ -27,8 +28,8 @@ Satır içi dosya derleme görevleri dosyasında belirttiğiniz metni içerir. K
 
 [Satır içi dosyaları yeniden kullanma](reusing-inline-files.md)
 
-[Birden çok satır içi dosyalar](multiple-inline-files.md)
+[Birden çok satır içi dosya](multiple-inline-files.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme Görevleri Dosyası Komutları](commands-in-a-makefile.md)
+[Derleme görevleri dosyasındaki komutlar](commands-in-a-makefile.md)
