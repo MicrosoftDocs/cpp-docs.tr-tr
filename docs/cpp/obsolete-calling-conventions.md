@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: eski çağırma kuralları'
 title: Kullanılmayan Çağırma Kuralları
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,23 +13,23 @@ helpviewer_keywords:
 - __fortran keyword [C++]
 - calling conventions, obsolete
 ms.assetid: a91fc665-034a-48ce-b6bd-d27125f308a7
-ms.openlocfilehash: 156482a395c7dfc8711e273141a09a37ea3e135d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0dfbb34215ba79b54d01ce12fe4d543dbe1d6859
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188564"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146048"
 ---
 # <a name="obsolete-calling-conventions"></a>Kullanılmayan Çağırma Kuralları
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-**__Pascal**, **__fortran**ve **__syscall** çağırma kuralları artık desteklenmiyor. Desteklenen çağrı kurallarından birini ve uygun bağlayıcı seçeneklerini kullanarak işlevlerini benzebilirsiniz.
+**__Pascal**, **__fortran** ve **__syscall** çağırma kuralları artık desteklenmiyor. Desteklenen çağrı kurallarından birini ve uygun bağlayıcı seçeneklerini kullanarak işlevlerini benzebilirsiniz.
 
-\<Windows. h > artık, hedef için uygun çağırma kuralına çeviren WINAPı makrosunu desteklemektedir. Daha önce PASCAL veya **__far \__pascal**kullandığınız WinAPI 'yi kullanın.
+\<windows.h> Artık, hedef için uygun çağırma kuralına çeviren WINAPı makrosunu destekler. Daha önce PASCAL veya **__far \_ _PASCAL** kullandığınız WinAPI 'yi kullanın.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)
+[Bağımsız değişken geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)

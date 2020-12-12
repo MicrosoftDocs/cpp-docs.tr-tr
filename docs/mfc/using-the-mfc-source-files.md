@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: MFC kaynak dosyalarını kullanma'
 title: MFC kaynak dosyalarını kullanma
 ms.date: 08/19/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - protected member access
 - source files, MFC
 ms.assetid: 3230e8fb-3b69-4ddf-9538-365ac7ea5e72
-ms.openlocfilehash: acd702f5a032f9dca3480d287142583070701e84
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 42dc285bf4877c4bef70e430b6d2982f43e08d51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143266"
 ---
 # <a name="using-the-mfc-source-files"></a>MFC kaynak dosyalarını kullanma
 
@@ -38,7 +39,7 @@ MFC kaynak dosyalarında ve MFC Uygulama Sihirbazı 'Nın oluşturduğu üstbilg
 
 `// Implementation`
 
-## <a name="an-example-of-the-comments"></a><a name="an-example-of-the-comments"></a>Açıklamalara bir örnek
+## <a name="an-example-of-the-comments"></a><a name="an-example-of-the-comments"></a> Açıklamalara bir örnek
 
 Sınıfının aşağıdaki kısmi listesi, `CStdioFile` MFC 'nin sınıf üyelerini kullanıldıkları yöntemlerle bölmek için sınıflarında kullandığı standart yorumların çoğunu kullanır:
 
@@ -96,7 +97,7 @@ Bu açıklamalar, sınıf bildiriminin benzer tür sınıf üyelerini içeren b�
 
 `// Attributes`MFC sınıf bildiriminin bölümü nesnenin ortak özniteliklerini (veya özelliklerini) içerir. Öznitelikler genellikle üye değişkenlerdir veya Get/Set işlevleridir. "Get" ve "set" işlevleri sanal olabilir veya olmayabilir. Çoğu durumda yan etkileri olmadığı için, "Get" işlevleri genellikle vardır **`const`** . Bu üyeler genellikle geneldir. Korunan ve özel öznitelikler genellikle uygulama bölümünde bulunur.
 
-Sınıfın örnek listesinde `CStdioFile` , [yorumların bir örneği](#an-example-of-the-comments)altında, liste *m_pStream*bir üye değişkeni içerir. Sınıf, `CDC` Bu açıklamanın altındaki yaklaşık 20 üyeyi listeler.
+Sınıfın örnek listesinde `CStdioFile` , [yorumların bir örneği](#an-example-of-the-comments)altında, liste *m_pStream* bir üye değişkeni içerir. Sınıf, `CDC` Bu açıklamanın altındaki yaklaşık 20 üyeyi listeler.
 
 > [!NOTE]
 > Ve gibi büyük sınıflar, `CDC` `CWnd` tek bir gruptaki tüm öznitelikleri listelemek için çok sayıda üyenin daha fazla açıklık eklememesine neden olabilir. Bu gibi durumlarda, sınıf kitaplığı diğer açıklamaları, üyeleri daha fazla belirtmek için başlıklar olarak kullanır. Örneğin,, `CDC` , `// Device-Context Functions` `// Drawing Tool Functions` `// Drawing Attribute Functions` ve daha fazlasını kullanır. Öznitelikleri temsil eden gruplar, yukarıda açıklanan normal sözdizimini izler. Birçok OLE sınıfının adlı bir uygulama bölümü vardır `// Interface Maps` .

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: derleyici seçenekleri makroları'
 title: Derleyici seçenekleri makroları
 ms.date: 08/19/2019
 f1_keywords:
@@ -16,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
-ms.openlocfilehash: 90b80aaa34456677f2d7c2dd5717ae6837f4523f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 247ede37721d868c9c941ce85e024a55a2487947
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141277"
 ---
 # <a name="compiler-options-macros"></a>Derleyici seçenekleri makroları
 
@@ -69,13 +70,13 @@ Visual C++ .NET 2002 ' den önce, ATL çok sayıda uyarıyı devre dışı bıra
 
 Önceki sürümlerden dönüştürülen projelerde, bu uyarılar kitaplık üstbilgileri tarafından hala devre dışı bırakılır.
 
-Aşağıdaki satırı, kitaplık üstbilgilerini dahil etmeden önce *pch. h* (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) dosyasına ekleyerek bu davranış değiştirilebilir.
+Aşağıdaki satırı, kitaplık üstbilgilerini dahil etmeden önce *pch. h* (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ) dosyasına ekleyerek bu davranış değiştirilebilir.
 
 [!code-cpp[NVC_ATL_Utilities#97](../../atl/codesnippet/cpp/compiler-options-macros_1.h)]
 
 Bu `#define` eklenirse, ATL üstbilgileri, genel olarak devre dışı bırakılmaması için bu uyarıların durumunu korumak için dikkatli olur (veya kullanıcı açıkça uyarıları devre dışı bırakır, bunları etkinleştirmek için).
 
-Yeni projeler bu, `#define` Varsayılan olarak *pch. h* (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) ' de ayarlanır.
+Yeni projeler bu, `#define` Varsayılan olarak *pch. h* (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ) ' de ayarlanır.
 
 ## <a name="_atl_apartment_threaded"></a><a name="_atl_apartment_threaded"></a> _ATL_APARTMENT_THREADED
 
@@ -115,7 +116,7 @@ Tüm Oluşturucu dize bağımsız değişkenlerinde _T makrosunu kullanarak _ATL
 
 ATL ve MFC kitaplıkları, Microsoft C++ derleyicisinin geliştirilmiş standart C++ uyumluluğuyla eşleşecek şekilde değiştirilmiştir. ANSI C++ standardına göre, bir sınıf üye işlevine yönelik işaretçinin sözdizimi olmalıdır `&CMyClass::MyFunc` .
 
-[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) tanımlı olmadığında (varsayılan durum), ATL/MFC, daha önceki sürümlerde oluşturulan kodun daha önce olduğu gibi derlenmeye devam edebilmesi için makro haritaları 'nda (özellikle ileti haritaları) C4867 hatasını devre dışı bırakır. **_ATL_ENABLE_PTM_WARNING**tanımlarsanız, kodunuz C++ standart uyumlu olmalıdır.
+[_ATL_ENABLE_PTM_WARNING](#_atl_enable_ptm_warning) tanımlı olmadığında (varsayılan durum), ATL/MFC, daha önceki sürümlerde oluşturulan kodun daha önce olduğu gibi derlenmeye devam edebilmesi için makro haritaları 'nda (özellikle ileti haritaları) C4867 hatasını devre dışı bırakır. **_ATL_ENABLE_PTM_WARNING** tanımlarsanız, kodunuz C++ standart uyumlu olmalıdır.
 
 Ancak standart olmayan form kullanım dışı bırakılmıştır. Mevcut kodu C++ standart uyumlu sözdizimine taşımanız gerekir. Örneğin, aşağıdaki kod:
 

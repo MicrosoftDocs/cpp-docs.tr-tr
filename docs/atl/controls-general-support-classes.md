@@ -1,40 +1,41 @@
 ---
-title: 'ATL denetimleri: Genel destek sınıfları'
+description: 'Daha fazla bilgi edinin: denetimler: genel destek sınıfları'
+title: 'ATL denetimleri: genel destek sınıfları'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - controls [ATL]
 - general support classes
 ms.assetid: cf73f1d2-7542-48e3-b8c8-9d3abf29f85b
-ms.openlocfilehash: 3f00348ab0c9f25bdd4f6b7a2b05cd4b82ea48e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a5b147ef2b30f0cc209fdfdabd52b59d7112c475
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148219"
 ---
-# <a name="controls-general-support-classes"></a>Denetimler: Genel destek sınıfları
+# <a name="controls-general-support-classes"></a>Denetimler: genel destek sınıfları
 
-Aşağıdaki sınıflar, denetimleri için ATL genel destek sağlar:
+Aşağıdaki sınıflar, ATL denetimleri için genel destek sağlar:
 
-- [CComControl](../atl/reference/ccomcontrol-class.md) ATL denetimleri için gerekli olan yardımcı işlevler ve veriler üyeleri oluşur.
+- [CComControl](../atl/reference/ccomcontrol-class.md) ATL denetimleri için gerekli olan yardımcı işlevlerden ve veri üyelerinden oluşur.
 
-- [Iolecontrolımpl](../atl/reference/iolecontrolimpl-class.md) denetimler için gereken yöntemleri sağlar.
+- [IOleControlImpl](../atl/reference/iolecontrolimpl-class.md) Denetimler için gerekli yöntemleri sağlar.
 
-- [Ioleobjectımpl](../atl/reference/ioleobjectimpl-class.md) bir denetimle üzerinden iletişim kuran bir kapsayıcı asıl yöntemleri sağlar. Yerinde denetimleri devre dışı bırakma ve etkinleştirme yönetir.
+- [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) Bir kapsayıcının bir denetimle iletişim kurduğu asıl yöntemleri sağlar. Yerinde denetimlerin etkinleştirilmesini ve devre dışı bırakılması işlemini yönetir.
 
-- [Iquickactivateımpl](../atl/reference/iquickactivateimpl-class.md) başlatma kapsayıcıları denetimleri yüklenirken gecikmeleri önlemek amacıyla tek bir çağrı birleştirir.
+- [IQuickActivateImpl](../atl/reference/iquickactivateimpl-class.md) Denetimleri yüklerken yardım kapsayıcıları gecikmelerden kaçınmak için başlatmayı tek bir çağrıda birleştirir.
 
-- [Ipointerınactiveımpl](../atl/reference/ipointerinactiveimpl-class.md) aksi etkin olmayan bir denetim için en az bir fare etkileşimi sağlar.
+- [Ipoıb ınterınactiveımpl](../atl/reference/ipointerinactiveimpl-class.md) Devre dışı olmayan bir denetim için minimum fare etkileşimi sağlar.
 
-## <a name="sample-program"></a>Örnek Program
+## <a name="sample-program"></a>Örnek program
 
 [ATLFire](../overview/visual-cpp-samples.md)
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
-[ATL öğretici](../atl/active-template-library-atl-tutorial.md)
+[ATL öğreticisi](../atl/active-template-library-atl-tutorial.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../atl/atl-class-overview.md)

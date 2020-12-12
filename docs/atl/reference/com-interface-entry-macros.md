@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: COM_INTERFACE_ENTRY makrolar'
 title: COM arabirimi giriş makroları
 ms.date: 03/28/2017
 f1_keywords:
@@ -18,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-ms.openlocfilehash: 1358a51f6bcb65f9c54c2006a6a467cf96593b5f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0564c1e4ba6b9778865442d281453ff3a4a56d7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834706"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141368"
 ---
 # <a name="com_interface_entry-macros"></a>COM_INTERFACE_ENTRY makrolar
 
@@ -37,14 +38,14 @@ Bu makrolar, tarafından erişilebilmesi için COM eşlemesine bir nesnenin arab
 |[COM_INTERFACE_ENTRY2_IID](#com_interface_entry2_iid)|[COM_INTERFACE_ENTRY2](#com_interface_entry2)ile aynı, farklı bir IID belirtebileceğiniz sürece.|
 |[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)|*IID* tarafından tanımlanan arabirim için sorgulandığında, ' a `COM_INTERFACE_ENTRY_AGGREGATE` iletir `punk` .|
 |[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletilmesinin sonucu olduğu durumlar dışında.|
-|[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturur.|
-|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|COM_INTERFACE_ENTRY_AUTOAGGREGATE ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletime ve *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturan [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate).|
+|[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, *punk* null olması dışında, *CLSID* tarafından tanımlanan toplamı otomatik olarak oluşturur.|
+|[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|COM_INTERFACE_ENTRY_AUTOAGGREGATE ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletime ve *punk* null olması dışında, *CLSID* tarafından tanımlanan toplamı otomatik olarak oluşturan [](#com_interface_entry_autoaggregate).|
 |[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Belirtilen arabirim için sorgulandığında programınızın [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) ' i çağırmasını sağlar.|
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|Her örnek için arabirime özgü verileri kaydeder.|
 |[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|Yırma arabirimlerini gösterir.|
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|İşlem COM eşlemesinde bu girişe ulaştığında taban sınıfının COM haritasını işler.|
 |[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)|ATL 'nin mantığını aramak için genel bir mekanizma `QueryInterface` .|
-|[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)ile aynıdır, ancak HERHANGI bir IID sorgusu *Func*çağrısı ile sonuçlanır.|
+|[COM_INTERFACE_ENTRY_FUNC_BLIND](#com_interface_entry_func_blind)|[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)ile aynıdır, ancak HERHANGI bir IID sorgusu *Func* çağrısı ile sonuçlanır.|
 |[COM_INTERFACE_ENTRY_NOINTERFACE](#com_interface_entry_nointerface)|E_NOINTERFACE döndürür ve belirtilen arabirim için sorgulandığında COM eşleme işlemesini sonlandırır.|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -55,7 +56,7 @@ Bu makrolar, tarafından erişilebilmesi için COM eşlemesine bir nesnenin arab
 
 Arabirimleri COM arabirim eşlemesine girer.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 COM_INTERFACE_ENTRY( x )
@@ -122,7 +123,7 @@ COM_INTERFACE_ENTRY_IID(iid, x)
 'ndaki Sunulan arabirimin GUID 'SI.
 
 *x*<br/>
-'ndaki Vtable, *IID*tarafından tanımlanan arabirim olarak kullanıma sunulacak olan sınıfın adı.
+'ndaki Vtable, *IID* tarafından tanımlanan arabirim olarak kullanıma sunulacak olan sınıfın adı.
 
 ### <a name="example"></a>Örnek
 
@@ -194,7 +195,7 @@ Arabirim sorgusu başarısız olursa, COM haritasını işleme devam eder.
 
 ## <a name="com_interface_entry_autoaggregate"></a><a name="com_interface_entry_autoaggregate"></a> COM_INTERFACE_ENTRY_AUTOAGGREGATE
 
-[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturur.
+[COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate)ile aynı, *punk* null olması dışında, *CLSID* tarafından tanımlanan toplamı otomatik olarak oluşturur.
 
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
@@ -219,7 +220,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE(iid, punk, clsid)
 
 ## <a name="com_interface_entry_autoaggregate_blind"></a><a name="com_interface_entry_autoaggregate_blind"></a> COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND
 
-COM_INTERFACE_ENTRY_AUTOAGGREGATE ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletime ve *punk* null olması dışında, *CLSID*tarafından tanımlanan toplamı otomatik olarak oluşturan [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate).
+COM_INTERFACE_ENTRY_AUTOAGGREGATE ile aynı, hiçbir IID sorgusunun sorgu *punk*'a iletime ve *punk* null olması dışında, *CLSID* tarafından tanımlanan toplamı otomatik olarak oluşturan [](#com_interface_entry_autoaggregate).
 
 ```
 COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
@@ -328,7 +329,7 @@ COM_INTERFACE_ENTRY_CHAIN(classname)
 
 [!code-cpp[NVC_ATL_Windowing#116](../../atl/codesnippet/cpp/com-map-macros_9.h)]
 
-COM eşlemesindeki ilk girdinin COM eşlemesini içeren nesne üzerindeki bir arabirim olması gerektiğini unutmayın. Bu nedenle, com map girdilerinizi COM_INTERFACE_ENTRY_CHAIN ile başlatamazsınız. Bu, farklı bir nesnenin com eşlemesinin, nesnenizin com eşlemesinde **COM_INTERFACE_ENTRY_CHAIN (** `COtherObject` **)** göründüğü noktada aranmasına neden olur. Önce başka bir nesnenin COM haritasını aramak isterseniz, COM haritanız için bir arabirim girişi ekleyin `IUnknown` ve ardından diğer NESNENIN com eşlemesini zincirleyebilirsiniz. Örnek:
+COM eşlemesindeki ilk girdinin COM eşlemesini içeren nesne üzerindeki bir arabirim olması gerektiğini unutmayın. Bu nedenle, com map girdilerinizi COM_INTERFACE_ENTRY_CHAIN ile başlatamazsınız. Bu, farklı bir nesnenin com eşlemesinin, nesnenizin com eşlemesinde **COM_INTERFACE_ENTRY_CHAIN (** `COtherObject` **)** göründüğü noktada aranmasına neden olur. Önce başka bir nesnenin COM haritasını aramak isterseniz, COM haritanız için bir arabirim girişi ekleyin `IUnknown` ve ardından diğer NESNENIN com eşlemesini zincirleyebilirsiniz. Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#111](../../atl/codesnippet/cpp/com-map-macros_10.h)]
 
@@ -346,10 +347,10 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 'ndaki Sunulan arabirimin GUID 'SI.
 
 *DW*<br/>
-'ndaki *İşlev*işlevine geçirilen parametre.
+'ndaki *İşlev* işlevine geçirilen parametre.
 
 *func*<br/>
-'ndaki *IID*döndürecek işlev işaretçisi.
+'ndaki *IID* döndürecek işlev işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -361,7 +362,7 @@ COM_INTERFACE_ENTRY_FUNC(iid, dw, func)
 
 ## <a name="com_interface_entry_func_blind"></a><a name="com_interface_entry_func_blind"></a> COM_INTERFACE_ENTRY_FUNC_BLIND
 
-[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)ile aynıdır, ancak HERHANGI bir IID sorgusu *Func*çağrısı ile sonuçlanır.
+[COM_INTERFACE_ENTRY_FUNC](#com_interface_entry_func)ile aynıdır, ancak HERHANGI bir IID sorgusu *Func* çağrısı ile sonuçlanır.
 
 ```
 COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
@@ -370,7 +371,7 @@ COM_INTERFACE_ENTRY_FUNC_BLIND(dw, func)
 ### <a name="parameters"></a>Parametreler
 
 *DW*<br/>
-'ndaki *İşlev*işlevine geçirilen parametre.
+'ndaki *İşlev* işlevine geçirilen parametre.
 
 *func*<br/>
 'ndaki COM eşlemesindeki bu giriş işlendiğinde çağrılan işlev.

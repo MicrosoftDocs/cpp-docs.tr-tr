@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: birli Işleçleri aşırı yükleme'
 title: Aşırı Yükleme Birli İşleçleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,32 +12,32 @@ helpviewer_keywords:
 - pointer dereference operator overloading
 - plus operator
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
-ms.openlocfilehash: a21c62549f02dddda951c79a06617671ccfe2526
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e0a2d2b902403ee5ed34a95b6d282d7c2199795
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227224"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146061"
 ---
 # <a name="overloading-unary-operators"></a>Aşırı Yükleme Birli İşleçleri
 
 Aşırı yüklenebilen birli işleçler şunlardır:
 
-1. `!`([MANTıKSAL değil](../cpp/logical-negation-operator-exclpt.md))
+1. `!` ([MANTıKSAL değil](../cpp/logical-negation-operator-exclpt.md))
 
-1. `&`([Adres-of](../cpp/address-of-operator-amp.md))
+1. `&` ([Adres-of](../cpp/address-of-operator-amp.md))
 
-1. `~`([bir tane tamamlama](../cpp/one-s-complement-operator-tilde.md))
+1. `~` ([bir tane tamamlama](../cpp/one-s-complement-operator-tilde.md))
 
-1. `*`([işaretçi başvurusu](../cpp/indirection-operator-star.md))
+1. `*` ([işaretçi başvurusu](../cpp/indirection-operator-star.md))
 
-1. `+`([birli Plus](../cpp/additive-operators-plus-and.md))
+1. `+` ([birli Plus](../cpp/additive-operators-plus-and.md))
 
-1. `-`([birli olumsuzlama](../cpp/additive-operators-plus-and.md))
+1. `-` ([birli olumsuzlama](../cpp/additive-operators-plus-and.md))
 
-1. `++`([artış](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+1. `++` ([artış](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
 
-1. `--`([azaltma](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+1. `--` ([azaltma](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
 
 1. dönüştürme işleçleri
 

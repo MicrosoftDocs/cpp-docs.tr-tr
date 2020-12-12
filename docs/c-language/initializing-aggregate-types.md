@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: toplu türleri başlatma'
 title: Toplama Türlerini Başlatma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - union keyword [C]
 - aggregates [C++], initializing
 ms.assetid: a8f8ed75-39db-4592-93b9-d3920d915810
-ms.openlocfilehash: b4b0dd82263781966760b6e21ef24ded56b06a01
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a17e55f01e6a8844252dc0926942a27d40a6c7c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229629"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137624"
 ---
 # <a name="initializing-aggregate-types"></a>Toplama Türlerini Başlatma
 
 *Toplama* türü bir yapı, birleşim veya dizi türüdür. Toplama türü, toplama türlerinin üyelerini içeriyorsa, başlatma kuralları yinelemeli olarak uygulanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *Başlatıcı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;toplu başlatma için **{***Başlatıcı-listesi***}** /*    \*/<br/>
@@ -51,7 +52,7 @@ Ancak boyutu belirtir ve yanlış sayıda başlatıcıya sahipseniz, derleyici b
 
 **Microsoft'a Özgü**
 
-Bir dizi için en büyük boyut, **size_t**tarafından tanımlanır. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** **`unsigned int`** 0x00000000 Ile 0x7CFFFFFF arasındadır.
+Bir dizi için en büyük boyut, **size_t** tarafından tanımlanır. STDDEF başlık dosyasında tanımlanmıştır. H, **size_t** **`unsigned int`** 0x00000000 Ile 0x7CFFFFFF arasındadır.
 
 **SON Microsoft 'a özgü**
 

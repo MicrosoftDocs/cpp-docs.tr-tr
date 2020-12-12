@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/MP (birden çok Işlemle derleme)
 title: /MP (Birden Çok Süreçle Derleme)
 ms.date: 04/08/2019
 f1_keywords:
@@ -8,125 +9,125 @@ helpviewer_keywords:
 - /MP compiler option (C++)
 - MP compiler option (C++)
 - cl.exe compiler, multi-process build
-ms.openlocfilehash: e005b0314e87270e81dbb155dfdaa67be067cd3f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d5d4441be505dfc1251b099aa95a6ce1544289ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137793"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP (Birden Çok Süreçle Derleme)
 
-**/MP** seçeneği, komut satırında kaynak dosyalarını derlemek için toplam süreyi azaltabilir. **/MP** seçeneği her ayrı bir işlemde kendisinin, bir veya birden çok kopya oluşturmak derleyicinin neden olur. Ardından bu kopyaları, aynı anda kaynak dosyaları derleyin. Sonuç olarak, kaynak dosyaları oluşturmak için toplam süreyi önemli ölçüde azaltılabilir.
+**/MP** seçeneği, komut satırındaki Kaynak dosyaları derlemek için toplam süreyi azaltabilir. **/MP** seçeneği, derleyicinin her biri ayrı bir işlemde kendi kendisinin bir veya daha fazla kopyasını oluşturmasına neden olur. Bu kopyalar, kaynak dosyaları aynı anda derler. Sonuç olarak, kaynak dosyaları derlemek için toplam süre önemli ölçüde azaltılabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/MP**[*processMax*]
 
 ## <a name="arguments"></a>Arguments
 
 *processMax*<br/>
-(İsteğe bağlı) Derleyici oluşturabilirsiniz işlemlerin sayısı.
+Seçim Derleyicinin oluşturabileceğiniz en fazla işlem sayısı.
 
-*ProcessMax* bağımsız değişkeni 1 ile 65536 arasında aralığı gerekir. Aksi halde, derleyici uyarı iletisi yayınlar **D9014**, yoksayar *processMax* bağımsız değişkeni ve en fazla işlem sayısını 1 olduğunu varsayar.
+*ProcessMax* bağımsız değişkeni 1 ile 65536 arasında olmalıdır. Aksi takdirde, derleyici uyarı iletisi **D9014** yayınlar, *processMax* bağımsız değişkenini yoksayar ve en fazla işlem sayısı olan 1 olduğunu varsayar.
 
-Atlarsanız *processMax* bağımsız değişkeni, derleyici sayısını alır [etkili İşlemci](#effective_processors) işletim sisteminden bilgisayarınızdaki ve her işlemci için bir işlem oluşturur.
+*ProcessMax* bağımsız değişkenini atlarsanız, derleyici bilgisayarınızdaki [etkin işlemcilerin](#effective_processors) sayısını işletim sisteminden alır ve her işlemci için bir işlem oluşturur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/MP** derleyici seçeneği, derleme yaparken birçok dosya derleme süresi önemli ölçüde azaltabilirsiniz. Yapı süresini kısaltmak için derleyici en fazla oluşturur *processMax* kendisinin kopyalar ve aynı zamanda kaynak dosyalarını derlemek için bu kopyaları'i kullanır. **/MP** seçeneği, derlemeleri, ancak bağlama veya bağlama sırasında kod oluşturma için uygulanır. Varsayılan olarak **/MP** seçenek kapalıdır.
+**/MP** derleyici seçeneği, çok sayıda dosya derlerken derleme süresini önemli ölçüde azaltabilir. Derleme süresini geliştirmek için, derleyici kendisinin *en fazla processMax* kopyasını oluşturur ve ardından bu kopyaları, kaynak dosyalarınızı aynı anda derlemek için kullanır. **/MP** seçeneği derlemeler için geçerlidir ancak bağlama veya bağlama zamanı kod üretimi için kullanılamaz. Varsayılan olarak **/MP** seçeneği kapalıdır.
 
-Derleme zamanında geliştirme bir bilgisayardaki işlemci sayısını, derleme için dosya sayısını ve g/ç kapasitesi gibi sistem kaynaklarının bağlıdır. Denemeler **/MP** belirli bir projeyi oluşturmak için en iyi ayarını belirlemek üzere seçeneği. Bu kararı vermenize yardımcı olmak daha fazla öneri için bkz. [yönergeleri](#guidelines).
+Derleme zamanında geliştirme bir bilgisayardaki işlemci sayısına, Derlenecek dosya sayısına ve g/ç kapasitesi gibi sistem kaynaklarının kullanılabilirliğine bağlıdır. Belirli bir projeyi oluşturmak için en iyi ayarı öğrenmek üzere **/MP** seçeneğini deneyin. Bu kararı vermenize yardımcı olacak öneriler için bkz. [yönergeler](#guidelines).
 
 ## <a name="incompatible-options-and-language-features"></a>Uyumsuz seçenekler ve dil özellikleri
 
-**/MP** seçeneği, bazı derleyici seçenekleri ve dil özellikleri ile uyumlu değil. Uyumsuz derleyici seçeneği ile kullanırsanız **/MP** seçeneği, derleyicinin uyarı sorunları **D9030** ve yoksayar **/MP** seçeneği. Uyumsuz dil özelliği kullanırsanız, derleyici hata verir [C2813](../../error-messages/compiler-errors-2/compiler-error-c2813.md) sonra sona erer veya uyarı düzeyi seçeneği geçerli derleyici bağlı olarak devam eder.
+**/MP** seçeneği bazı derleyici seçenekleri ve dil özellikleriyle uyumlu değildir. **/MP** seçeneğiyle uyumsuz bir derleyici seçeneği kullanırsanız, derleyici uyarı **D9030** ' ı yayınlar ve **/MP** seçeneğini yoksayar. Uyumsuz bir dil özelliği kullanırsanız, derleyici hata [C2813](../../error-messages/compiler-errors-2/compiler-error-c2813.md) sorun ve geçerli derleyici uyarı düzeyi seçeneğine bağlı olarak sona erer veya devam eder.
 
 > [!NOTE]
-> Çoğu seçenekleri uyumsuz olduğu izin, eş zamanlı yürütme derleyiciler çıktılarını aynı anda konsola veya belirli bir dosya yazmalısınız. Sonuç olarak, çıktı intermix ve bozuk. Bazı durumlarda, seçenek birleşimi performansı daha da kötüsü hale getirir.
+> Çoğu seçenek, izin verildiğinde, eşzamanlı olarak çalıştırılan derleyicilerin çıktıları konsola veya belirli bir dosyaya aynı anda yazar. Sonuç olarak, çıkış birbirine karıştı ve karışacaktır. Bazı durumlarda, seçeneklerin birleşimi performansın daha kötüleştiğini getirir.
 
-Aşağıdaki tablo, derleyici seçenekleri ve ile uyumsuz dil özelliklerini listeler **/MP** seçeneği:
+Aşağıdaki tabloda, **/MP** seçeneğiyle uyumsuz olan derleyici seçenekleri ve dil özellikleri listelenmektedir:
 
-|Seçeneği veya dil özelliği|Açıklama|
+|Seçenek veya dil özelliği|Açıklama|
 |--------------------------------|-----------------|
-|[#import](../../preprocessor/hash-import-directive-cpp.md) önişlemci yönergesi|Bir tür kitaplığındaki tür C++ sınıflarına dönüştürür ve ardından söz konusu sınıfın bir üst bilgi dosyasına yazar.|
-|[/E](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıktısını standart çıktıya kopyalar (**stdout**).|
-|[/Gm](gm-enable-minimal-rebuild.md)|Kullanım dışı. Bir artımlı yeniden etkinleştirir.|
-|[/ showıncludes](showincludes-list-include-files.md)|Standart hatayı ekleme kodu dosyalarının bir listesini yazar (**stderr**).|
-|[/Yc](yc-create-precompiled-header-file.md)|Önceden derlenmiş üst bilgi dosyasına yazar.|
+|[#import](../../preprocessor/hash-import-directive-cpp.md) Önişlemci yönergesi|Bir tür kitaplığındaki türleri C++ sınıflarına dönüştürür ve sonra bu sınıfları bir başlık dosyasına yazar.|
+|[/e](e-preprocess-to-stdout.md), [/EP](ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıkışını standart çıktıya (**stdout**) kopyalar.|
+|[/GM](gm-enable-minimal-rebuild.md)|Kullanım dışı. Artımlı yeniden derlemeyi etkinleştirilir.|
+|[/showIncludes](showincludes-list-include-files.md)|Standart hata (**stderr**) için ekleme dosyaları listesini yazar.|
+|[/YC](yc-create-precompiled-header-file.md)|Önceden derlenmiş bir üstbilgi dosyası yazar.|
 
-## <a name="diagnostic-messages"></a>Tanılama iletileri
+## <a name="diagnostic-messages"></a>Tanılama Iletileri
 
-Uyumlu olmayan bir seçenek veya dil özelliği belirtirseniz **/MP** seçeneği, bir tanılama iletisi alırsınız. Aşağıdaki tabloda, iletileri ve derleyici davranışı listelenmektedir:
+**/MP** seçeneğiyle uyumsuz bir seçenek veya dil özelliği belirtirseniz, bir tanılama iletisi alırsınız. Aşağıdaki tabloda, derleyicisinin iletileri ve davranışı listelenmektedir:
 
-|Tanılama iletisi|Açıklama|Derleyici davranışı|
+|Tanılama İletisi|Açıklama|Derleyici davranışı|
 |------------------------|-----------------|-----------------------|
-|**C2813**|**#İmport** yönergesi ile uyumlu değil **/MP** seçeneği.|Derleme sürece biten bir [derleyici uyarı düzeyini](compiler-option-warning-level.md) seçeneği, aksi takdirde belirtir.|
-|**D9014**|Geçersiz bir değer için belirtilen *processMax* bağımsız değişken.|Derleyici, geçersiz bir değer yok sayar ve 1 değeri kabul eder.|
-|**D9030**|Belirtilen seçeneği ile uyumlu **/MP**.|Derleyicinin yoksaydığı **/MP** seçeneği.|
+|**C2813**|**#İmport** yönergesi **/MP** seçeneği ile uyumlu değil.|[Derleyici uyarı düzeyi](compiler-option-warning-level.md) seçeneği aksini belirtmediği takdirde derleme sonlanır.|
+|**D9014**|*ProcessMax* bağımsız değişkeni için geçersiz bir değer belirtildi.|Derleyici geçersiz değeri yoksayar ve 1 değerini varsayar.|
+|**D9030**|Belirtilen seçenek **/MP** ile uyumsuz.|Derleyici **/MP** seçeneğini yoksayar.|
 
-## <a name="guidelines"></a> Yönergeleri
+## <a name="guidelines"></a><a name="guidelines"></a> Giderme
 
-### <a name="measure-performance"></a>Ölçü performans
+### <a name="measure-performance"></a>Ölçüm performansı
 
-Performansını ölçmek için toplam derleme zamanını kullanın. Bir fiziksel saatiyle derleme zamanını ölçebilirsiniz veya derleme başlar ve durur arasındaki farkı hesaplar yazılımları kullanabilirsiniz. Bilgisayarınızda birden çok işlemci varsa, fiziksel bir saat daha doğru sonuçlar yazılım zaman ölçümü daha verimli.
+Performansı ölçmek için toplam derleme süresini kullanın. Derleme süresini fiziksel bir saatle ölçebilir veya yapı başladığında ve durdurulduğunda arasındaki farkı hesaplayan yazılımları kullanabilirsiniz. Bilgisayarınızda birden çok işlemci varsa, fiziksel saat bir yazılım süresi ölçümünden daha doğru sonuçlar verebilir.
 
-### <a name="effective_processors"></a> Etkili işlemcileri
+### <a name="effective-processors"></a><a name="effective_processors"></a> Etkin Işlemciler
 
-Bir bilgisayar olarak da bilinen olan bir veya daha fazla sanal işlemci, olabilir *etkili İşlemci*, her biri kendi fiziksel işlemcilerin için. Her fiziksel işlemci, bir veya daha fazla çekirdeğe sahip olabilir ve her bir temel işletim sistemi, hiper iş parçacığı için çekirdek etkinleştirirse, iki sanal işlemciler gibi görünüyor.
+Bir bilgisayarda, fiziksel işlemcilerin her biri için *etkin işlemciler* olarak da bilinen bir veya daha fazla sanal işlemci olabilir. Her fiziksel işlemci bir veya daha fazla çekirdeğe sahip olabilir ve işletim sistemi çekirdek için hiper iş parçacığı etkinleştirmesine sahipse, her çekirdek iki sanal işlemci gibi görünür.
 
-Örneğin, bir çekirdek içeren bir fiziksel işlemci varsa olan bir bilgisayarda etkin bir işlemci ve hiper iş parçacığı devre dışı bırakıldı. Buna karşılık, bir bilgisayar, her biri iki çekirdek sahip, iki fiziksel işlemciyi varsa ve hiper iş parçacıklı çekirdekleri sahip sekiz etkili işlemciye sahip. Diğer bir deyişle, (8 etkili işlemci) (2 fiziksel işlemci) = x (fiziksel işlemci başına 2 Çekirdek) x (2 etkin işlemci çekirdeği nedeniyle hiper iş parçacığı başına).
+Örneğin, bir bilgisayarda tek bir çekirdek içeren bir fiziksel işlemcisi varsa ve hiper iş parçacığı devre dışı bırakılmışsa bir bilgisayarın etkin bir işlemcisi vardır. Buna karşılık, her birinin iki çekirdeği olan iki fiziksel işlemcisi varsa ve tüm çekirdekler hiper iş parçacığına sahipse, bir bilgisayarın sekiz etkin işlemcisi vardır. Diğer bir deyişle, (8 etkin işlemci) = (fiziksel işlemci başına 2 çekirdek) x (hiper iş parçacığı nedeniyle çekirdek başına 2 çekirdek) x (2 adet etkin işlemci).
 
-Atlarsanız *processMax* değişkeninde **/MP** seçeneği, derleyicinin işletim sisteminden etkili işlemci sayısını alır ve ardından etkili işlemci başına bir işlem oluşturur. Ancak, derleyicinin hangi işlemin belirli bir işlemci üzerinde yürütür garanti edemez; işletim sistemi, karar verir.
+**/MP** seçeneğinde *processMax* bağımsız değişkenini atlarsanız, derleyici işletim sisteminden etkili işlemci sayısını edinir ve sonra etkili işlemci başına bir işlem oluşturur. Ancak, derleyici belirli bir işlemcide hangi işlemin yürütüldüğünü garanti edemez; Bu karar, işletim sistemi tarafından yapılır.
 
-### <a name="number-of-processes"></a>İşlem sayısı
+### <a name="number-of-processes"></a>Işlem sayısı
 
-Derleyici kaynak dosyalarını derlemek için kullanacağı işlem sayısını hesaplar. Değer, komut satırında belirttiğiniz kaynak dosya sayısını ve açıkça veya dolaylı olarak belirlediğiniz işlemlerin sayısı daha düşük olduğunu **/MP** seçeneği. Açıkça sağlarsanız maksimum işlem sayısını ayarlayabilirsiniz *processMax* bağımsız değişkeni **/MP** seçeneği. Veya atlarsanız bir bilgisayarda, sayısına eşit etkili işlemcileri için varsayılan, kullanabileceğiniz *processMax* bağımsız değişken.
+Derleyici, kaynak dosyaları derlemek için kullanacağı işlem sayısını hesaplar. Bu değer, komut satırında belirttiğiniz kaynak dosya sayısının küçüktür ve **/MP** seçeneğiyle açıkça veya örtük olarak belirttiğiniz işlem sayısıdır. **/MP** seçeneğinin *processMax* bağımsız değişkenini sağlarsanız, en fazla işlem sayısını açık bir şekilde ayarlayabilirsiniz. Ya da varsayılan değeri, bir bilgisayardaki etkin işlemci sayısına eşit olan, *processMax* bağımsız değişkenini atlarsanız kullanabilirsiniz.
 
-Örneğin, aşağıdaki komut satırını belirtin varsayalım:
+Örneğin, aşağıdaki komut satırını belirtdiğinizi varsayalım:
 
 `cl /MP7 a.cpp b.cpp c.cpp d.cpp e.cpp`
 
-Bu durumda, beş kaynak dosyaları ve en fazla yedi işlemden daha düşük olduğundan derleyici beş işlemleri kullanır. Alternatif olarak, bilgisayarınızda iki etkili işlemciye sahip ve aşağıdaki komut satırını belirtin varsayalım:
+Bu durumda, derleyici beş işlem kullanır çünkü bu, beş kaynak dosyası ve en fazla yedi işlem olur. Alternatif olarak, bilgisayarınızın iki etkin işlemciyi olduğunu ve aşağıdaki komut satırını belirtdiğinizi varsayalım:
 
 `cl /MP a.cpp b.cpp c.cpp`
 
-Bu durumda işletim sistemini iki işlemci bildirir; Bu nedenle, derleyici iki işlem ile kendi hesaplamaya kullanır. Sonuç olarak, iki işlem ile üç kaynak dosyaların ve daha düşük olduğundan derleyici derleme iki işlem ile çalıştırır.
+Bu durumda, işletim sistemi iki işlemciyi raporlar; Bu nedenle, derleyici hesaplamasında iki işlem kullanır. Sonuç olarak, derleme iki işlem ve üç kaynak dosyanın daha küçük olması nedeniyle derlemeyi iki işlemle yürütür.
 
-### <a name="source-files-and-build-order"></a>Kaynak dosyaları ve derleme sırası
+### <a name="source-files-and-build-order"></a>Kaynak dosyalar ve derleme sırası
 
-Kaynak dosyaları, komut satırında göründükleri sırayla derlenmeyebilir. Derleyici, derleyici bir kopyasını içeren işlemler kümesi oluşturur, ancak her bir işlemi yürüttüğünde işletim sistemi zamanlar. Sonuç olarak, kaynak dosyaları belirli bir sırada derlenecek garanti edemez.
+Kaynak dosyalar, komut satırında göründükleri sırada derlenmeyebilir. Derleyici derleyicinin kopyalarını içeren bir işlem kümesi oluştursa da, işletim sistemi her bir işlem yürütüldüğünde zamanlar. Sonuç olarak, kaynak dosyaların belirli bir sırada derlenip derlenemeyeceğini garanti edilemez.
 
-Bir işlem bu derleme kullanılabilir olduğunda, bir kaynak dosyası derlenir. Daha fazla dosyalardan işlemler varsa, ilk dosya kümesini kullanılabilir işlemler tarafından derlenir. Bir işlem önceki dosya işleme tamamlandıktan ve kalan dosyaları biri üzerinde çalışmak için uygun olduğunda kalan dosyaları işlenir.
+Bir işlem derlemek için kullanılabilir olduğunda bir kaynak dosya derlenir. İşlemlerden daha fazla dosya varsa, ilk dosya kümesi kullanılabilir süreçler tarafından derlenir. Kalan dosyalar, bir işlem önceki bir dosyayı işlemeyi tamamladığında ve kalan dosyalardan birinde çalışmak için kullanılabilir olduğunda işlenir.
 
-Aynı kaynak dosyası birden çok kez bir komut satırında belirtmeyin. Bir aracı otomatik olarak oluşturursa Bu, örneğin, durum ortaya çıkabilir bir [derleme görevleri dosyası](contents-of-a-makefile.md) bağımlılık bilgileri projesinde dayanır. Siz belirtmezseniz **/MP** seçeneği, derleyicinin dosyaların listesini sıralı olarak işlediğinden ve her oluşumu dosyanın yeniden derler. Ancak, belirtirseniz **/MP** seçeneği, farklı derleyiciler aynı anda aynı dosyanın derleme. Sonuç olarak, farklı derleyiciler aynı anda aynı çıktı dosyasına yazma dener. Bir derleyici özel çıkış dosyası yazma erişim kazanmak ve başarılı ve diğer derleyiciler bir dosya erişim hatası ile başarısız olur.
+Bir komut satırında aynı kaynak dosyayı birden çok kez belirtmeyin. Bu durum, örneğin bir araç otomatik olarak bir projedeki bağımlılık bilgilerini temel alan [derleme görevleri dosyasını](contents-of-a-makefile.md) oluşturduğunda meydana gelebilir. **/MP** seçeneğini belirtmezseniz, derleyici dosya listesini sırayla işler ve dosyanın her oluşumunu yeniden derler. Ancak **/MP** seçeneğini belirtirseniz, farklı derleyiciler aynı anda aynı dosyayı derleyebilir. Sonuç olarak, farklı derleyiciler aynı anda aynı çıkış dosyasına yazmaya çalışacaktır. Bir derleyici, çıkış dosyasına özel yazma erişimi elde eder ve başarılı olur ve diğer derleyiciler bir dosya erişim hatası ile başarısız olur.
 
-### <a name="using-type-libraries-import"></a>Tür kitaplıklarını (#import) kullanma
+### <a name="using-type-libraries-import"></a>Tür kitaplıklarını kullanma (#import)
 
-Derleyici kullanımını desteklemiyor [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesi ile **/MP** geçin. Mümkünse, bu sorunu çözmek için aşağıdaki adımları izleyin:
+Derleyici, **/MP** anahtarıyla [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesinin kullanımını desteklemez. Mümkünse, bu sorunu geçici olarak çözmek için aşağıdaki adımları izleyin:
 
-- Tüm taşımak `#import` yönergeleri, çeşitli kaynak dosyaları için bir veya daha fazla dosya ve ardından bu dosyalar olmadan derleme **/MP** seçeneği. Oluşturulan üst bilgi dosyaları sonucudur.
+- `#import`Çeşitli kaynak dosyalarınızın tüm yönergelerini bir veya daha fazla dosyaya taşıyın ve ardından bu dosyaları **/MP** seçeneği olmadan derleyin. Sonuç, oluşturulan bir üst bilgi dosyası kümesidir.
 
-- Kalan içindeki kaynak dosyaları, ekleme [#include](../../preprocessor/hash-include-directive-c-cpp.md) oluşturulan üst bilgileri belirtin ve ardından kalan derleme yönergeleri kaynak dosyaları kullanarak **/MP** seçeneği.
+- Kalan kaynak dosyalarınızda, oluşturulan üstbilgileri belirten [#include](../../preprocessor/hash-include-directive-c-cpp.md) yönergeler ekleyin ve ardından **/MP** seçeneğini kullanarak kalan kaynak dosyalarınızı derleyin.
 
-### <a name="visual-studio-project-settings"></a>Visual Studio Proje ayarları
+### <a name="visual-studio-project-settings"></a>Visual Studio proje ayarları
 
-#### <a name="the-msbuildexe-tool"></a>MSBUILD.exe aracının
+#### <a name="the-msbuildexe-tool"></a>MSBUILD.exe aracı
 
-Visual Studio kullanan [MSBuild.exe](/visualstudio/msbuild/msbuild-reference) çözümler ve projeler oluşturmak için aracı. **/Maxcpucount:**_numarası_ (veya **/m:**_numarası_) MSBuild.exe aracının komut satırı seçeneği, birden çok proje oluşturabilirsiniz aynı anda. Ve **/MP** derleyici seçeneği, aynı anda birden çok derleme birimi oluşturabilirsiniz. Uygulamanız için uygun durumda, çözümünüzün derleme süresi veya her ikisini kullanarak geliştirmek **/MP** ve **/maxcpucount**.
+Visual Studio, çözüm ve proje derlemek için [MSBuild.exe](/visualstudio/msbuild/msbuild-reference) aracını kullanır. MSBuild.exe aracının **/maxcpucount:**_Number_ (veya **/m:**_Number_) komut satırı seçeneği aynı anda birden çok proje oluşturabilir. Ve **/MP** derleyici seçeneği aynı anda birden çok derleme birimi oluşturabilir. Uygulamanız için uygun ise, hem **/MP** hem de **/maxcpucount** kullanarak çözümünüzün derleme süresini geliştirin.
 
-Derleme süresi çözümünüzün kısmen derlemeyi gerçekleştirmek işlemlerin sayısına bağlıdır. *Numarası* bağımsız değişkeni [/maxcpucount](/visualstudio/msbuild/msbuild-command-line-reference) MSBuild seçeneği projeleri aynı anda en fazla sayısını belirtir. Benzer şekilde, *processMax* bağımsız değişkeni **/MP** derleyici seçeneği, aynı anda oluşturmak için derleme biriminden maksimum sayısını belirtir. Varsa **/maxcpucount** seçeneği belirtir *P* projeleri ve **/MP** seçeneği belirtir *C* işler, en fazla *P*  x *C* işlemler aynı anda yürütme.
+Çözümünüzün derleme süresi kısmen, derlemeyi gerçekleştiren işlem sayısına bağlıdır. [/Maxcpucount](/visualstudio/msbuild/msbuild-command-line-reference) MSBuild seçeneğinin *Number* bağımsız değişkeni, aynı anda oluşturulacak en fazla proje sayısını belirtir. Benzer şekilde, **/MP** derleyici seçeneğinin *processMax* bağımsız değişkeni, aynı anda oluşturulacak en fazla derleme birimi sayısını belirtir. **/Maxcpucount** seçeneği *P* projelerini belirtiyorsa, **/MP** seçeneği *C* süreçlerini belirtiyorsa, aynı anda en fazla *P* x *C* işlemi yürütülür.
 
-MSBuild kullanılacak karar yönelik yönerge veya **/MP** teknoloji aşağıdaki gibidir:
+MSBuild veya **/MP** teknolojisinin kullanılıp kullanılmayacağını belirleme Kılavuzu aşağıdaki gibidir:
 
-- Birçok projeleriyle her projedeki bazı dosyalar varsa, MSBuild Aracı'nı kullanın.
+- Her projede birkaç dosya içeren çok sayıda proje varsa, MSBuild aracını kullanın.
 
-- Her proje içinde çok fazla dosya içeren birkaç projeler varsa, kullanmak **/MP** seçeneği.
+- Her projede çok sayıda dosya içeren birkaç proje varsa **/MP** seçeneğini kullanın.
 
-- Projeleri ve dosyaları proje başına sayısını dengeli hem MSBuild kullanın ve **/MP**. Başlangıçta ayarladığınız **/maxcpucount** derleme proje sayısı seçeneğine ve **/MP** bilgisayarınızda işlemci sayısını seçeneği. Performansı ölçme ve en iyi sonuçları elde etmek üzere ayarlarınızı yapın. Toplam derleme süresiyle memnun olana kadar bu döngüyü tekrarlayın.
+- Proje başına proje ve dosya sayısı dengeyse, hem MSBuild hem de **/MP** kullanın. İlk olarak **/maxcpucount** seçeneğini derlemek için proje sayısına ve **/MP** seçeneğini bilgisayarınızdaki işlemci sayısına ayarlayın. Performansı ölçün ve en iyi sonuçları verecek şekilde ayarlarınızı yapın. Toplam derleme süresi karşılanana kadar bu döngüyü tekrarlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md)<br/>
-[Komut Satırı Başvurusu](/visualstudio/msbuild/msbuild-command-line-reference)<br/>
+[Komut satırı başvurusu](/visualstudio/msbuild/msbuild-command-line-reference)<br/>
 [/ZF (Daha hızlı PDB oluşturma)](zf.md)<br/>

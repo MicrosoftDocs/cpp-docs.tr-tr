@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `.ERRNZ`'
 title: .ERRNZ
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - .ERRNZ directive
 ms.assetid: 373a9222-140f-4505-8dec-ef370a069ebf
-ms.openlocfilehash: dff5fa6a1b35387b625f1aaae20a71c2d2d7547b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 939846c7db604e383929386517be6c96b6f12785
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87190812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97131787"
 ---
 # `.ERRNZ`
 
 *İfade* true (sıfır dışında) olduğunda bir hata üretir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`.ERRNZ`***ifade* ⟦ **`,`** *iletisi*⟧
 

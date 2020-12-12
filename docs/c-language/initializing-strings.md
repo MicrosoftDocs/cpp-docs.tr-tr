@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: dizeleri başlatma'
 title: Başlatma Dizeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - strings [C++], initializing
 - initializing arrays, strings
 ms.assetid: 0ab8079d-d0d3-48f9-afd1-36a7bb439b29
-ms.openlocfilehash: c9dbad72314e9ce01d022d26209e2132c29c106a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 145fc55eaccd64b30bae2736dd78317dc5db7d7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326007"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137585"
 ---
 # <a name="initializing-strings"></a>Başlatma Dizeleri
 
@@ -54,4 +55,4 @@ Microsoft C'de, dize sabit değerlerinin uzunluğu en fazla 2048 bayt olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Başlatılmasında](../c-language/initialization.md)
+[Başlatma](../c-language/initialization.md)

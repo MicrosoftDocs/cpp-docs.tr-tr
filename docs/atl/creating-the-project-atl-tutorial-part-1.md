@@ -1,14 +1,15 @@
 ---
+description: 'Daha fazla bilgi edinin: proje oluşturma (ATL öğreticisi, Bölüm 1)'
 title: Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 ms.custom: get-started-article
 ms.date: 08/19/2019
 ms.assetid: f6b727d1-390a-4b27-b82f-daadcd9fc059
-ms.openlocfilehash: 8a0374fcaf9a18c82e90bde2abc032158ecc537a
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: f594294b5d97222791a3f3f43c147fae9514889b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923874"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148092"
 ---
 # <a name="creating-the-project-atl-tutorial-part-1"></a>Proje Oluşturma (ATL Eğitmeni, Bölüm 1)
 
@@ -37,16 +38,16 @@ Bu öğretici, bir çokgen görüntüleyen ActiveX nesnesi oluşturan, özniteli
 
 ### <a name="to-create-the-initial-atl-project-using-the-atl-project-wizard"></a>ATL Proje Sihirbazı 'Nı kullanarak ilk ATL projesini oluşturmak için
 
-1. Visual Studio 2017 ve önceki sürümlerde: **Dosya**  >  **Yeni**  >  **Proje** . **Visual C++** sekmesini açın ve **MFC/ATL** ' yi seçin. **ATL projesi** seçin.
+1. Visual Studio 2017 ve önceki sürümlerde: **Dosya**  >  **Yeni**  >  **Proje**. **Visual C++** sekmesini açın ve **MFC/ATL**' yi seçin. **ATL projesi** seçin.
 
-   Visual Studio 2019: **Dosya**  >  **Yeni**  >  **Proje** ' yi seçin, arama kutusuna "ATL" yazın ve **ATL projesi** ' ni seçin.
+   Visual Studio 2019: **Dosya**  >  **Yeni**  >  **Proje**' yi seçin, arama kutusuna "ATL" yazın ve **ATL projesi**' ni seçin.
 
 1. Proje adı olarak *Çokgen* yazın.
 
     Kaynak kodun konumu genellikle varsayılan \\ \<username> olarak \Users \source\repos olur ve yeni bir klasör otomatik olarak oluşturulur.
 
-1. Visual Studio 2019 ' de, varsayılan değerleri kabul edin ve **Tamam** ' ı tıklatın.
-   Visual Studio 2017 ' de, **atl Proje** Sihirbazı ' nı açmak için **Tamam** ' ı tıklatın. Kullanılabilir seçenekleri görmek için **uygulama ayarları** ' na tıklayın. Bu proje bir denetim oluşturduğundan ve bir denetimin işlem içi sunucu olması gerektiğinden, **uygulama türünü** dll olarak bırakın. **Tamam** ’a tıklayın.
+1. Visual Studio 2019 ' de, varsayılan değerleri kabul edin ve **Tamam**' ı tıklatın.
+   Visual Studio 2017 ' de, **atl Proje** Sihirbazı ' nı açmak için **Tamam** ' ı tıklatın. Kullanılabilir seçenekleri görmek için **uygulama ayarları** ' na tıklayın. Bu proje bir denetim oluşturduğundan ve bir denetimin işlem içi sunucu olması gerektiğinden, **uygulama türünü** dll olarak bırakın. **Tamam** düğmesine tıklayın.
 
 Visual Studio, birden çok dosya oluşturarak projeyi oluşturur. Nesneyi genişleterek bu dosyaları **Çözüm Gezgini** görüntüleyebilirsiniz `Polygon` . Dosyalar aşağıda listelenmiştir.
 
@@ -82,13 +83,13 @@ Visual Studio, birden çok dosya oluşturarak projeyi oluşturur. Nesneyi geniş
 
 ::: moniker-end
 
-1. **Çözüm Gezgini** , projeye sağ tıklayın `Polygon` .
+1. **Çözüm Gezgini**, projeye sağ tıklayın `Polygon` .
 
-1. Kısayol menüsünde, **Özellikler** ' e tıklayın.
+1. Kısayol menüsünde, **Özellikler**' e tıklayın.
 
-1. **Bağlayıcı** ' ya tıklayın. **Kullanıcı başına yeniden yönlendirme** seçeneğini **Evet** olarak değiştirin.
+1. **Bağlayıcı**' ya tıklayın. **Kullanıcı başına yeniden yönlendirme** seçeneğini **Evet** olarak değiştirin.
 
-1. **Tamam** ’a tıklayın.
+1. **Tamam** düğmesine tıklayın.
 
 Bir sonraki adımda projenize bir denetim ekleyeceksiniz.
 

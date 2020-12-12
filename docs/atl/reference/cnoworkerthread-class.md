@@ -1,5 +1,6 @@
 ---
-title: CNoWorkerThread Sınıfı
+description: 'Daha fazla bilgi edinin: CNoWorkerThread sınıfı'
+title: CNoWorkerThread sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CNoWorkerThread
@@ -14,21 +15,21 @@ f1_keywords:
 helpviewer_keywords:
 - CNoWorkerThread class
 ms.assetid: 29f06bae-b658-4aac-9c14-331e996d25d1
-ms.openlocfilehash: 90056e648a53218ac06083d43ca34870e1ca72fc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5159c04a8390f8933291f697faccedb7353fb48e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141420"
 ---
-# <a name="cnoworkerthread-class"></a>CNoWorkerThread Sınıfı
+# <a name="cnoworkerthread-class"></a>CNoWorkerThread sınıfı
 
-Dinamik önbellek bakımını `MonitorClass` devre dışı kıfsaytak etmek istiyorsanız, şablon parametresinin önbellek sınıflarını önbelleğe almak için bağımsız değişkenolarak bu sınıfı kullanın.
+`MonitorClass`Dinamik önbellek bakımını devre dışı bırakmak istiyorsanız bu sınıfı önbelleğe almak için şablon parametresinin bağımsız değişkeni olarak kullanın.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CNoWorkerThread
@@ -38,29 +39,29 @@ class CNoWorkerThread
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CNoWorkerThread::AddHandle](#addhandle)|CWorkerThread'in işlevsel olmayan [eşdeğeri::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).|
-|[CNoWorkerThread::AddTimer](#addtimer)|CWorkerThread'in işlevsel olmayan [eşdeğeri::AddTimer](../../atl/reference/cworkerthread-class.md#addtimer).|
-|[CNoWorkerThread::GetThreadHandle](#getthreadhandle)|CWorkerThread fonksiyonel olmayan [eşdeğer::GetThreadHandle](../../atl/reference/cworkerthread-class.md#getthreadhandle).|
-|[CNoWorkerThread::GetThreadid](#getthreadid)|CWorkerThread fonksiyonel olmayan [eşdeğer::GetThreadId](../../atl/reference/cworkerthread-class.md#getthreadid).|
-|[CNoWorkerThread::Initialize](#initialize)|CWorkerThread'in işlevsel olmayan [eşdeğeri::Initialize](../../atl/reference/cworkerthread-class.md#initialize).|
-|[CNoWorkerThread::RemoveHandle](#removehandle)|CWorkerThread'in işlevsel olmayan [eşdeğeri::RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle).|
-|[CNoWorkerThread::Kapatma](#shutdown)|CWorkerThread'in işlevsel olmayan [eşdeğeri::Kapatma](../../atl/reference/cworkerthread-class.md#shutdown).|
+|[CNoWorkerThread:: AddHandle](#addhandle)|[CWorkerThread:: AddHandle](../../atl/reference/cworkerthread-class.md#addhandle)'ın işlevsel olmayan eşdeğeri.|
+|[CNoWorkerThread:: AddTimer](#addtimer)|[CWorkerThread:: AddTimer](../../atl/reference/cworkerthread-class.md#addtimer)öğesinin işlevsel olmayan eşdeğeri.|
+|[CNoWorkerThread:: GetThreadHandle](#getthreadhandle)|[CWorkerThread:: GetThreadHandle](../../atl/reference/cworkerthread-class.md#getthreadhandle)'ın işlevsel olmayan eşdeğeri.|
+|[CNoWorkerThread:: GetThreadId](#getthreadid)|[CWorkerThread:: GetThreadId](../../atl/reference/cworkerthread-class.md#getthreadid)ile işlevsel olmayan eşdeğeri.|
+|[CNoWorkerThread:: Initialize](#initialize)|[CWorkerThread:: Initialize](../../atl/reference/cworkerthread-class.md#initialize)' ın işlevsel olmayan eşdeğeri.|
+|[CNoWorkerThread:: RemoveHandle](#removehandle)|[CWorkerThread:: RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle)'ın işlevsel olmayan eşdeğeri.|
+|[CNoWorkerThread:: kapanıyor](#shutdown)|[CWorkerThread:: kapanıyor](../../atl/reference/cworkerthread-class.md#shutdown)değerinin işlevsel olmayan eşdeğeri.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu [sınıf, CWorkerThread](../../atl/reference/cworkerthread-class.md)ile aynı ortak arabirimi sağlar. Bu arabirimin `MonitorClass` önbellek sınıflarına şablon parametresi tarafından sağlanması beklenir.
+Bu sınıf [CWorkerThread](../../atl/reference/cworkerthread-class.md)ile aynı ortak arabirimi sağlar. Bu arabirimin, `MonitorClass` Cache sınıfları için şablon parametresi tarafından sağlanması beklenmektedir.
 
-Bu sınıftaki yöntemler hiçbir şey yapmamak için uygulanır. HRESULT'i döndüren yöntemler her zaman S_OK döndürer ve HANDLE veya iş parçacığı kimliğini döndüren yöntemler her zaman 0 döndürer.
+Bu sınıftaki Yöntemler hiçbir şey yapmak için uygulanır. HRESULT döndüren yöntemler her zaman S_OK döndürür ve bir tanıtıcı veya iş parçacığı KIMLIĞI döndüren yöntemler her zaman 0 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlutil.h
+**Üstbilgi:** atlutil. h
 
-## <a name="cnoworkerthreadaddhandle"></a><a name="addhandle"></a>CNoWorkerThread::AddHandle
+## <a name="cnoworkerthreadaddhandle"></a><a name="addhandle"></a> CNoWorkerThread:: AddHandle
 
-CWorkerThread'in işlevsel olmayan [eşdeğeri::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).
+[CWorkerThread:: AddHandle](../../atl/reference/cworkerthread-class.md#addhandle)'ın işlevsel olmayan eşdeğeri.
 
 ```
 HRESULT AddHandle(HANDLE /* hObject */,
@@ -74,11 +75,11 @@ Her zaman S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
+Bu sınıf tarafından sunulan uygulama hiçbir şey yapmaz.
 
-## <a name="cnoworkerthreadaddtimer"></a><a name="addtimer"></a>CNoWorkerThread::AddTimer
+## <a name="cnoworkerthreadaddtimer"></a><a name="addtimer"></a> CNoWorkerThread:: AddTimer
 
-CWorkerThread'in işlevsel olmayan [eşdeğeri::AddTimer](../../atl/reference/cworkerthread-class.md#addtimer).
+[CWorkerThread:: AddTimer](../../atl/reference/cworkerthread-class.md#addtimer)öğesinin işlevsel olmayan eşdeğeri.
 
 ```
 HRESULT AddTimer(DWORD /* dwInterval */,
@@ -93,11 +94,11 @@ Her zaman S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
+Bu sınıf tarafından sunulan uygulama hiçbir şey yapmaz.
 
-## <a name="cnoworkerthreadgetthreadhandle"></a><a name="getthreadhandle"></a>CNoWorkerThread::GetThreadHandle
+## <a name="cnoworkerthreadgetthreadhandle"></a><a name="getthreadhandle"></a> CNoWorkerThread:: GetThreadHandle
 
-CWorkerThread fonksiyonel olmayan [eşdeğer::GetThreadHandle](../../atl/reference/cworkerthread-class.md#getthreadhandle).
+[CWorkerThread:: GetThreadHandle](../../atl/reference/cworkerthread-class.md#getthreadhandle)'ın işlevsel olmayan eşdeğeri.
 
 ```
 HANDLE GetThreadHandle() throw();
@@ -109,11 +110,11 @@ Her zaman NULL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
+Bu sınıf tarafından sunulan uygulama hiçbir şey yapmaz.
 
-## <a name="cnoworkerthreadgetthreadid"></a><a name="getthreadid"></a>CNoWorkerThread::GetThreadid
+## <a name="cnoworkerthreadgetthreadid"></a><a name="getthreadid"></a> CNoWorkerThread:: GetThreadId
 
-CWorkerThread fonksiyonel olmayan [eşdeğer::GetThreadId](../../atl/reference/cworkerthread-class.md#getthreadid).
+[CWorkerThread:: GetThreadId](../../atl/reference/cworkerthread-class.md#getthreadid)ile işlevsel olmayan eşdeğeri.
 
 ```
 DWORD GetThreadId() throw();
@@ -125,11 +126,11 @@ Her zaman 0 değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
+Bu sınıf tarafından sunulan uygulama hiçbir şey yapmaz.
 
-## <a name="cnoworkerthreadinitialize"></a><a name="initialize"></a>CNoWorkerThread::Initialize
+## <a name="cnoworkerthreadinitialize"></a><a name="initialize"></a> CNoWorkerThread:: Initialize
 
-CWorkerThread'in işlevsel olmayan [eşdeğeri::Initialize](../../atl/reference/cworkerthread-class.md#initialize).
+[CWorkerThread:: Initialize](../../atl/reference/cworkerthread-class.md#initialize)' ın işlevsel olmayan eşdeğeri.
 
 ```
 HRESULT Initialize() throw();
@@ -141,11 +142,11 @@ Her zaman S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
+Bu sınıf tarafından sunulan uygulama hiçbir şey yapmaz.
 
-## <a name="cnoworkerthreadremovehandle"></a><a name="removehandle"></a>CNoWorkerThread::RemoveHandle
+## <a name="cnoworkerthreadremovehandle"></a><a name="removehandle"></a> CNoWorkerThread:: RemoveHandle
 
-CWorkerThread'in işlevsel olmayan [eşdeğeri::RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle).
+[CWorkerThread:: RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle)'ın işlevsel olmayan eşdeğeri.
 
 ```
 HRESULT RemoveHandle(HANDLE /* hObject */) throw();
@@ -157,11 +158,11 @@ Her zaman S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
+Bu sınıf tarafından sunulan uygulama hiçbir şey yapmaz.
 
-## <a name="cnoworkerthreadshutdown"></a><a name="shutdown"></a>CNoWorkerThread::Kapatma
+## <a name="cnoworkerthreadshutdown"></a><a name="shutdown"></a> CNoWorkerThread:: kapanıyor
 
-CWorkerThread'in işlevsel olmayan [eşdeğeri::Kapatma](../../atl/reference/cworkerthread-class.md#shutdown).
+[CWorkerThread:: kapanıyor](../../atl/reference/cworkerthread-class.md#shutdown)değerinin işlevsel olmayan eşdeğeri.
 
 ```
 HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
@@ -173,4 +174,4 @@ Her zaman S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu sınıf tarafından sağlanan uygulama hiçbir şey yapmaz.
+Bu sınıf tarafından sunulan uygulama hiçbir şey yapmaz.

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ıNCLUDELIB'
 title: INCLUDELIB (MASM)
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - INCLUDELIB directive
 ms.assetid: 5455d004-8202-4b57-93f3-9aa66f133a2d
-ms.openlocfilehash: eff5b546aa10341434f2e34f03b9096d4c7f468a
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: bd6b12e60bc3be5191ded76d0ca77e9e09072947
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317210"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129953"
 ---
 # <a name="includelib"></a>INCLUDELIB
 
-Geçerli modülün *LibraryName*ile bağlanması gerektiğini bağlayıcıya bildirir.
+Geçerli modülün *LibraryName* ile bağlanması gerektiğini bağlayıcıya bildirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **Includelib** *LibraryName*
 

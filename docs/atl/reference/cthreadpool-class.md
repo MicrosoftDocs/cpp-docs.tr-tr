@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CThreadPool sınıfı'
 title: CThreadPool sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,18 +21,18 @@ f1_keywords:
 helpviewer_keywords:
 - CThreadPool class
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-ms.openlocfilehash: 12b28cd4f54fa426bb6ad2b2710d62b426ada2b6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 445b32ccff2df2456687e9b9ae34950c91c00613
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140367"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool sınıfı
 
 Bu sınıf iş öğelerinin bir kuyruğunu işleyen çalışan iş parçacıklarının havuzunu sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <class Worker, class ThreadTraits = DefaultThreadTraits>
@@ -76,7 +77,7 @@ Havuzdaki iş parçacıklarını oluşturmak için kullanılan işlevi sağlayan
 
 Havuzun başlatılması, yeniden boyutlandırılması veya kapatılması durumunda havuzdaki iş parçacıkları oluşturulur ve yok edilir. Havuzdaki her çalışan iş parçacığının yığınında, *çalışan* sınıfının bir örneği oluşturulacaktır. Her örnek iş parçacığının ömrü boyunca etkin olacaktır.
 
-İş parçacığı oluşturulduktan hemen sonra, iş *Worker* `Initialize` parçacığı ile Ilişkili nesne üzerinde çalışan:: çağırılır. Bir iş parçacığının yok edilmesiyle hemen önce, *Worker*:: `Terminate` çağrılır. Her iki yöntem de bir **`void`** <strong>\*</strong> bağımsız değişken kabul etmelidir. Bu bağımsız değişkenin değeri, [CThreadPool:: Initialize](#initialize)öğesinin *pvWorkerParam* parametresi aracılığıyla iş parçacığı havuzuna geçirilir.
+İş parçacığı oluşturulduktan hemen sonra, iş  `Initialize` parçacığı ile Ilişkili nesne üzerinde çalışan:: çağırılır. Bir iş parçacığının yok edilmesiyle hemen önce, *Worker*:: `Terminate` çağrılır. Her iki yöntem de bir **`void`** <strong>\*</strong> bağımsız değişken kabul etmelidir. Bu bağımsız değişkenin değeri, [CThreadPool:: Initialize](#initialize)öğesinin *pvWorkerParam* parametresi aracılığıyla iş parçacığı havuzuna geçirilir.
 
 Kuyrukta ve çalışan iş parçacıklarında iş öğeleri olduğunda, bir çalışan iş parçacığı kuyruktan bir öğe çeker ve `Execute` o iş parçacığı Için *çalışan* nesnesinin yöntemini çağırır. Daha sonra bu yönteme üç öğe geçirilir: kuyruktaki öğe, `pvWorkerParam` *Worker*:: `Initialize` ve *Worker*:: `Terminate` olarak ve g/ç tamamlama bağlantı noktası kuyruğu için kullanılan [örtüşen](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) yapıya yönelik bir işaretçi.
 
@@ -96,7 +97,7 @@ Kuyrukta ve çalışan iş parçacıklarında iş öğeleri olduğunda, bir çal
 
 **Üstbilgi:** atlutil. h
 
-## <a name="cthreadpooladdref"></a><a name="addref"></a>CThreadPool:: AddRef
+## <a name="cthreadpooladdref"></a><a name="addref"></a> CThreadPool:: AddRef
 
 Uygulamasının uygulamasıdır `IUnknown::AddRef` .
 
@@ -112,7 +113,7 @@ Her zaman 1 döndürür.
 
 Bu sınıf, başvuru sayımı kullanılarak yaşam süresi denetimini uygulamaz.
 
-## <a name="cthreadpoolcthreadpool"></a><a name="cthreadpool"></a>CThreadPool:: CThreadPool
+## <a name="cthreadpoolcthreadpool"></a><a name="cthreadpool"></a> CThreadPool:: CThreadPool
 
 İş parçacığı havuzu için Oluşturucu.
 
@@ -124,7 +125,7 @@ CThreadPool() throw();
 
 ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT için zaman aşımı değerini başlatır. Varsayılan süre 36 saniyedir. Gerekirse, atlutil. h 'yi dahil etmeden önce Bu sembol için kendi pozitif tamsayı değeri tanımlayabilirsiniz.
 
-## <a name="cthreadpoolcthreadpool"></a><a name="dtor"></a>CThreadPool:: ~ CThreadPool
+## <a name="cthreadpoolcthreadpool"></a><a name="dtor"></a> CThreadPool:: ~ CThreadPool
 
 İş parçacığı havuzu için yok edici.
 
@@ -136,7 +137,7 @@ ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT için zaman aşımı değerini başlatır
 
 [CThreadPool:: kapatılmasını](#shutdown)çağırır.
 
-## <a name="cthreadpoolgetnumthreads"></a><a name="getnumthreads"></a>CThreadPool:: GetNumThreads
+## <a name="cthreadpoolgetnumthreads"></a><a name="getnumthreads"></a> CThreadPool:: GetNumThreads
 
 Havuzdaki iş parçacığı sayısını almak için bu yöntemi çağırın.
 
@@ -148,7 +149,7 @@ int GetNumThreads() throw();
 
 Havuzdaki iş parçacıklarının sayısını döndürür.
 
-## <a name="cthreadpoolgetqueuehandle"></a><a name="getqueuehandle"></a>CThreadPool:: GetQueueHandle
+## <a name="cthreadpoolgetqueuehandle"></a><a name="getqueuehandle"></a> CThreadPool:: GetQueueHandle
 
 İş öğelerini kuyruğa almak için kullanılan GÇ tamamlama bağlantı noktasının tanıtıcısını almak için bu yöntemi çağırın.
 
@@ -160,7 +161,7 @@ HANDLE GetQueueHandle() throw();
 
 İş parçacığı havuzu başlatılmamışsa kuyruk tanıtıcısını veya NULL değerini döndürür.
 
-## <a name="cthreadpoolgetsize"></a><a name="getsize"></a>CThreadPool:: GetSize
+## <a name="cthreadpoolgetsize"></a><a name="getsize"></a> CThreadPool:: GetSize
 
 Havuzdaki iş parçacığı sayısını almak için bu yöntemi çağırın.
 
@@ -177,7 +178,7 @@ dışı Başarılı olan değişkenin, havuzdaki iş parçacığı sayısını a
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="cthreadpoolgettimeout"></a><a name="gettimeout"></a>CThreadPool:: GetTimeout
+## <a name="cthreadpoolgettimeout"></a><a name="gettimeout"></a> CThreadPool:: GetTimeout
 
 İş parçacığı havuzunun bir iş parçacığının kapatılmasını bekleyeceği en uzun süreyi milisaniye olarak almak için bu yöntemi çağırın.
 
@@ -198,7 +199,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 Bu zaman aşımı değeri, bu yönteme başka bir değer sağlanmadığında [CThreadPool:: kapanıyor](#shutdown) tarafından kullanılır.
 
-## <a name="cthreadpoolinitialize"></a><a name="initialize"></a>CThreadPool:: Initialize
+## <a name="cthreadpoolinitialize"></a><a name="initialize"></a> CThreadPool:: Initialize
 
 İş parçacığı havuzunu başlatmak için bu yöntemi çağırın.
 
@@ -232,7 +233,7 @@ Tamamlama bağlantı noktasıyla ilişkilendirilecek nesnenin tanıtıcısı.
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="cthreadpoolqueryinterface"></a><a name="queryinterface"></a>CThreadPool:: QueryInterface
+## <a name="cthreadpoolqueryinterface"></a><a name="queryinterface"></a> CThreadPool:: QueryInterface
 
 Uygulamasının uygulamasıdır `IUnknown::QueryInterface` .
 
@@ -244,7 +245,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppv) throw();
 
 Bu sınıfın nesneleri, `IUnknown` ve [IThreadPoolConfig](../../atl/reference/ithreadpoolconfig-interface.md) arabirimleri için başarıyla sorgulanabilir.
 
-## <a name="cthreadpoolqueuerequest"></a><a name="queuerequest"></a>CThreadPool:: QueueRequest
+## <a name="cthreadpoolqueuerequest"></a><a name="queuerequest"></a> CThreadPool:: QueueRequest
 
 Havuzdaki iş parçacığı tarafından işlenecek bir iş öğesini sıraya almak için bu yöntemi çağırın.
 
@@ -265,7 +266,7 @@ Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 Bu yöntem, kuyruğa bir iş öğesi ekler. Havuzdaki iş parçacıkları, öğeleri alındıkları sırada bir kuyruk dışında seçer.
 
-## <a name="cthreadpoolrelease"></a><a name="release"></a>CThreadPool:: Release
+## <a name="cthreadpoolrelease"></a><a name="release"></a> CThreadPool:: Release
 
 Uygulamasının uygulamasıdır `IUnknown::Release` .
 
@@ -281,7 +282,7 @@ Her zaman 1 döndürür.
 
 Bu sınıf, başvuru sayımı kullanılarak yaşam süresi denetimini uygulamaz.
 
-## <a name="cthreadpoolsetsize"></a><a name="setsize"></a>CThreadPool:: SetSize
+## <a name="cthreadpoolsetsize"></a><a name="setsize"></a> CThreadPool:: SetSize
 
 Havuzdaki iş parçacığı sayısını ayarlamak için bu yöntemi çağırın.
 
@@ -304,9 +305,9 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirtilen iş parçacığı sayısı, havuzdaki Şu anda iş parçacığı sayısından az ise, nesne bekleyen bir iş parçacığı tarafından çekilecek sıraya bir kapatılma iletisi koyar. Bekleyen bir iş parçacığı iletiyi kuyruktan çeker, iş parçacığı havuzuna bildirir ve iş parçacığı yordamından çıkar. Bu işlem, havuzdaki iş parçacığı sayısı belirtilen sayıya ulaşıncaya kadar veya [GetTimeout](#gettimeout)setTimeout tarafından belirtilen süre içinde çıkış yapana kadar yinelenir /  [SetTimeout](#settimeout). Bu durumda yöntem WAIT_TIMEOUT karşılık gelen bir HRESULT döndürür ve bekleyen kapatılma iletisi iptal edilir.
+Belirtilen iş parçacığı sayısı, havuzdaki Şu anda iş parçacığı sayısından az ise, nesne bekleyen bir iş parçacığı tarafından çekilecek sıraya bir kapatılma iletisi koyar. Bekleyen bir iş parçacığı iletiyi kuyruktan çeker, iş parçacığı havuzuna bildirir ve iş parçacığı yordamından çıkar. Bu işlem, havuzdaki iş parçacığı sayısı belirtilen sayıya ulaşıncaya kadar veya [GetTimeout](#gettimeout)setTimeout tarafından belirtilen süre içinde çıkış yapana kadar yinelenir /  [](#settimeout). Bu durumda yöntem WAIT_TIMEOUT karşılık gelen bir HRESULT döndürür ve bekleyen kapatılma iletisi iptal edilir.
 
-## <a name="cthreadpoolsettimeout"></a><a name="settimeout"></a>CThreadPool:: SetTimeout
+## <a name="cthreadpoolsettimeout"></a><a name="settimeout"></a> CThreadPool:: SetTimeout
 
 İş parçacığı havuzunun bir iş parçacığının kapatılmasını bekleyeceği en uzun süreyi milisaniye cinsinden ayarlamak için bu yöntemi çağırın.
 
@@ -329,7 +330,7 @@ Zaman aşımı ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT olarak başlatılır. Vars
 
 *DwMaxWait* 'in, havuzun tek bir iş parçacığının kapatılmasını bekleyeceği zaman olduğunu unutmayın. Havuzdan birden çok iş parçacığını kaldırmak için alınabilecek en uzun süre, iş parçacığı sayısıyla itibaren *dwMaxWait* 'tan biraz daha az olabilir.
 
-## <a name="cthreadpoolshutdown"></a><a name="shutdown"></a>CThreadPool:: kapanıyor
+## <a name="cthreadpoolshutdown"></a><a name="shutdown"></a> CThreadPool:: kapanıyor
 
 İş parçacığı havuzunu kapatmak için bu yöntemi çağırın.
 

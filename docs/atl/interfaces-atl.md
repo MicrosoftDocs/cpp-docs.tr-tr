@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: arabirimler (ATL)'
 title: Arabirimler (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -6,25 +7,25 @@ helpviewer_keywords:
 - COM interfaces
 - interfaces, COM
 ms.assetid: de6c8b12-6230-4fdc-af66-a28b91d5ee55
-ms.openlocfilehash: 56d5a010bc28257dce181ee33e0ddf74655ccd3c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d68f482d05ff828631f5f9f27085f24af188d643
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147699"
 ---
 # <a name="interfaces-atl"></a>Arabirimler (ATL)
 
-Arabirim, bir nesnenin işlevselliğini dış dünyaya nasıl ortaya çıkarır? COM'da arabirim, nesne tarafından uygulanan işlevlere işaretçiler tablosudur (C++ vtable gibi). Tablo arabirimi temsil eder ve işaret ettiği işlevler bu arabirimin yöntemleridir. Bir nesne istediği kadar arabirim ortaya çıkarabilir.
+Bir arabirim, bir nesnenin işlevlerini dış dünyaya sunma yöntemidir. COM 'da arabirim, nesne tarafından uygulanan işlevlerde (C++ vtable gibi) işaretçiler tablosudur. Tablo, arabirimi ve işaret ettiği işlevleri, bu arabirimin yöntemleri temsil eder. Bir nesne seçtiği kadar çok sayıda arabirim sunabilir.
 
-Her arabirim temel COM arabirimi, [IUnknown](../atl/iunknown.md)dayanmaktadır. Nesne tarafından `IUnknown` maruz kalan diğer arabirimlere gezinmeye izin verme yöntemleri.
+Her arabirim, [IUnknown](../atl/iunknown.md)temel com arabirimine dayalıdır. `IUnknown`Nesnesi tarafından kullanıma sunulan diğer arabirimlere gezinmeye izin verme yöntemleri.
 
-Ayrıca, her arabirim benzersiz bir arabirim kimliği (IID) verilir. Bu benzersizlik, arabirim sürümünü desteklemeyi kolaylaştırır. Arabirimin yeni bir sürümü, yeni bir IID ile sadece yeni bir arayüz.
+Ayrıca, her arabirime benzersiz bir arabirim KIMLIĞI (IID) verilir. Bu benzersizlik, arabirim sürümü oluşturmayı desteklemeyi kolaylaştırır. Bir arabirimin yeni sürümü yeni bir IID ile yalnızca yeni bir arabirimdir.
 
 > [!NOTE]
-> Standart COM ve OLE arabirimleri için iID'ler önceden tanımlanmıştır.
+> Standart COM ve OLE arabirimleri için IIDS önceden tanımlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [COM'a Giriş](../atl/introduction-to-com.md)<br/>
-[COM Nesneleri ve Arayüzleri](/windows/win32/com/com-objects-and-interfaces)
+[COM nesneleri ve arabirimleri](/windows/win32/com/com-objects-and-interfaces)

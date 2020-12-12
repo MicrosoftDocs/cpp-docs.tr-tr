@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtSetReportHook2 _CrtSetReportHookW2'
 title: _CrtSetReportHook2, _CrtSetReportHookW2
 ms.date: 11/04/2016
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _CrtSetReportHookW2 function
 - CrtSetReportHookW2 function
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0
-ms.openlocfilehash: 37ec0cea3fb558a5926e6f9c707e0e5033a17222
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: eab1ad4da90d5a86b821c374aae0aeceb97d7518
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135726"
 ---
 # <a name="_crtsetreporthook2-_crtsetreporthookw2"></a>_CrtSetReportHook2, _CrtSetReportHookW2
 
@@ -68,11 +69,11 @@ Bu işlevin dar karakter veya geniş karakter sürümünde yüklenmek veya kald�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtSetReportHook2** ve **_Crtsetreporthookw2** bir işlevi ayıklamanıza veya geri yüklemenize ımkan sağlarken, [_Crtsetreporthook](crtsetreporthook.md) yalnızca bir işlevi barındırmanıza izin verir.
+**_CrtSetReportHook2** ve **_CrtSetReportHookW2** bir işlevi dönüştürmenizi veya geri almanızı sağlar, ancak [_CrtSetReportHook](crtsetreporthook.md) yalnızca bir işlevi barındırmanıza olanak tanır.
 
-**_CrtSetReportHook2** veya **_Crtsetreporthookw2** yerine, bir dll 'de kanca çağrısı yapıldığında ve birden çok dll yüklenip kendi kanca Işlevlerini ayarlarken **_Crtsetreporthook** yerine kullanılmalıdır. Böyle bir durumda, dll 'Ler yüklenenden farklı bir sırayla kaldırılabilir ve kanca işlevi, yüklenmeyen bir DLL 'ye işaret ediyor olabilir. Kanca işlevleri **_Crtsetreporthook**ile eklendiyse, herhangi bir hata ayıklama çıkışı işlemi çöker.
+**_CrtSetReportHook2** veya **_CRTSETREPORTHOOKW2** , bir dll 'de kanca çağrısı yapıldığında ve birden çok dll yüklenip kendi kanca işlevlerini ayarlarken **_CrtSetReportHook** yerine kullanılmalıdır. Böyle bir durumda, dll 'Ler yüklenenden farklı bir sırayla kaldırılabilir ve kanca işlevi, yüklenmeyen bir DLL 'ye işaret ediyor olabilir. Kanca işlevleri **_CrtSetReportHook** ile eklendiyse, herhangi bir hata ayıklama çıkışı işlemi çöker.
 
-_Crtsetreporthook2 veya **_Crtsetreporthookw2** ile eklenen kanca işlevleri yoksa ve **_CrtSetReportHook2** ve _ Ile tüm kanca Işlevleri eklendiyse, **_CrtSetReportHook** ile eklenen tüm kanca işlevleri çağrılır  **CrtSetReportHookW2** geri dönüş **false**.
+**_CrtSetReportHook** ile eklenen tüm kanca işlevleri, **_CrtSetReportHook2** veya **_CrtSetReportHookW2** ile eklenen hiçbir kanca işlevi yoksa veya tüm kanca Işlevleri **_CrtSetReportHook2** ile eklenirse ve **_CrtSetReportHookW2** **false** döndürmesi durumunda çağrılır.
 
 Bu işlevin geniş karakterli sürümü kullanılabilir. Rapor kancası işlevleri, türü (geniş veya dar karakterler) kullanılan bu işlevin sürümüyle eşleşmesi gereken bir dize alır. Bu işlevin geniş karakterli sürümüyle kullanılan rapor kancaları için aşağıdaki işlev prototipini kullanın:
 
@@ -95,8 +96,8 @@ Bu işlevler, parametrelerini doğrular. *Mode* veya **pfnNewNook** geçersiz Is
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_CrtSetReportHook2**|\<Crtdbg. h >|\<errno. h >|
-|**_CrtSetReportHookW2**|\<Crtdbg. h >|\<errno. h >|
+|**_CrtSetReportHook2**|\<crtdbg.h>|\<errno.h>|
+|**_CrtSetReportHookW2**|\<crtdbg.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -238,7 +239,7 @@ int   main(int argc, char* argv[])
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 _CrtSetReportHook2(_CRT_RPTHOOK_INSTALL, TestHook1) returned 0
@@ -254,4 +255,4 @@ _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook1) returned 0
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>

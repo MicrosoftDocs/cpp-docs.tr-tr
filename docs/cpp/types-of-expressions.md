@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: deyim türleri'
 title: İfade Türleri
 ms.custom: index-page
 ms.date: 11/04/2016
 helpviewer_keywords:
 - expressions [C++], types
 ms.assetid: 1e7540b0-8fdb-49ab-b3e1-6ec439ff473a
-ms.openlocfilehash: 587715cd1fd38bf6481ba833b1532f5e492d4803
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c68f89ac981d8918c60e2d67418d3f00778ca664
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145788"
 ---
 # <a name="types-of-expressions"></a>İfade Türleri
 
-C++ifadeler çeşitli kategorilere ayrılmıştır:
+C++ ifadeleri çeşitli kategorilere ayrılmıştır:
 
 - [Birincil ifadeler](../cpp/primary-expressions.md). Bunlar, diğer tüm ifadelerin oluşturulduğu yapı taşlarıdır.
 
@@ -24,7 +25,7 @@ C++ifadeler çeşitli kategorilere ayrılmıştır:
 
 - [İkili işleçlerle oluşturulan ifadeler](../cpp/expressions-with-binary-operators.md). İkili işleçler bir ifadedeki iki işlenen üzerinde işlem yapar.
 
-- [Koşullu işleci olan ifadeler](../cpp/conditional-operator-q.md). Koşullu işleç, bir üçlü işleçtir — C++ dildeki tek bir operatör — ve üç işlenen alır.
+- [Koşullu işleci olan ifadeler](../cpp/conditional-operator-q.md). Koşullu işleç, C++ dilinde tek bir operatör olan ve üç işlenen olmak üzere üçlü bir işleçtir.
 
 - [Sabit ifadeler](../cpp/cpp-constant-expressions.md). Sabit ifadeler tamamen sabit veri olarak oluşturulur.
 

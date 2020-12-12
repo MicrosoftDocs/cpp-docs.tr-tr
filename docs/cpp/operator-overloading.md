@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: operatör aşırı yüklemesi'
 title: İşleç Aşırı Yüklemesi
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - operators [C++], overloading
 - operator overloading
 ms.assetid: 56ad4c4f-dd0c-45e0-adaa-08fe98cb1f8e
-ms.openlocfilehash: 822bd5efb3125e69ff60aa42ba6419969cace403
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 23a35a87f9f370a9bb8f268ac1637a4a899ee5f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227237"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146035"
 ---
 # <a name="operator-overloading"></a>İşleç aşırı yüklemesi
 
 **`operator`** Anahtar sözcüğü, bir sınıfın örneklerine uygulandığında *işleç sembolünün* ne anlama geldiğini belirten bir işlev bildirir. Bu, işleci birden çok anlamı veya "aşırı yükleme" sağlar. Derleyici, işlenenlerinin türlerini inceleyerek bir işlecin farklı anlamları arasında ayrım yapar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > *tür* **`operator`** *operator-symbol* **(** *parametre-listesi* **)**
 
@@ -30,11 +31,11 @@ ms.locfileid: "87227237"
 
 Birçok yerleşik işlecin işlevini küresel olarak veya sınıf sınıfı temelinde yeniden tanımlayabilirsiniz. Aşırı yüklenmiş işleçler işlev olarak uygulanır.
 
-Daha aşırı yüklenmiş bir işlecin adı **`operator`** *x*olur, burada *x* , aşağıdaki tabloda göründüğü gibi işleçtir. Örneğin, toplama işlecini aşırı yüklemek için **işleç +** adlı bir işlev tanımlarsınız. Benzer şekilde, toplama/atama işlecinin yükünü aşırı yüklemek için **+=** , **işleç + =** adlı bir işlev tanımlayın.
+Daha aşırı yüklenmiş bir işlecin adı **`operator`** *x* olur, burada *x* , aşağıdaki tabloda göründüğü gibi işleçtir. Örneğin, toplama işlecini aşırı yüklemek için **işleç +** adlı bir işlev tanımlarsınız. Benzer şekilde, toplama/atama işlecinin yükünü aşırı yüklemek için **+=** , **işleç + =** adlı bir işlev tanımlayın.
 
 ### <a name="redefinable-operators"></a>Yeniden tanımlanabilir operatörler
 
-|İşleç|Ad|Tür|
+|Operatör|Ad|Tür|
 |--------------|----------|----------|
 |**,**|Virgül|İkili|
 |**!**|Mantıksal NOT|Birli|
@@ -69,7 +70,7 @@ Daha aşırı yüklenmiş bir işlecin adı **`operator`** *x*olur, burada *x* ,
 |**=**|Atama|İkili|
 |**==**|Eşitlik|İkili|
 |**>**|Büyüktür|İkili|
-|**>=**|Büyüktür veya eşittir|İkili|
+|**>=**|Büyük veya eşittir|İkili|
 |**>>**|Sağa kaydırma|İkili|
 |**>>=**|Sağa kaydırma ataması|İkili|
 |**[ ]**|Dizi alt simgesi|—|
@@ -107,7 +108,7 @@ Aşağıdaki tabloda gösterilen işleçler aşırı yüklenemez. Tablo önişle
 
 ### <a name="nonredefinable-operators"></a>Yeniden tanımlanabilir Işleçler
 
-|İşleç|Ad|
+|Operatör|Ad|
 |-|-|
 |**.**|Üye seçimi|
 |**. &#42;**|Üye işaretçisi seçimi|

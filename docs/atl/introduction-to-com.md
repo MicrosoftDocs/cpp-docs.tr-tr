@@ -1,16 +1,17 @@
 ---
+description: "Daha fazla bilgi edinin: COM 'a giriş"
 title: COM'a Giriş
 ms.custom: index-page
 ms.date: 11/04/2016
 helpviewer_keywords:
 - COM
 ms.assetid: 120735d9-db71-4ad3-a730-ce576ea2354e
-ms.openlocfilehash: e29f761e0380357bc999af82cc4bde8bfbaf4d6e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 635bce8c1214dddfc258ae6d2d6c7e751f778e9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492353"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147673"
 ---
 # <a name="introduction-to-com"></a>COM'a Giriş
 
@@ -32,5 +33,5 @@ Temel-COM aşağıdaki kavramlardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM ve ATL’ye Giriş](../atl/introduction-to-com-and-atl.md)<br/>
+[COM ve ATL'ye Giriş](../atl/introduction-to-com-and-atl.md)<br/>
 [Bileşen nesne modeli](/windows/win32/com/the-component-object-model)

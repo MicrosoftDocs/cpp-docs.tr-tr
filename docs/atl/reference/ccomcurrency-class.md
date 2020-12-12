@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComCurrency sınıfı'
 title: CComCurrency sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,16 +16,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComCurrency class
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-ms.openlocfilehash: 2b3c260f250fdb198c8317355628fa2fe62c44eb
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: a53e4fe098d3f422b0ccab341f7d6f29d5fec49b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146724"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency sınıfı
 
-`CComCurrency`, bir para BIRIMI nesnesi oluşturmak ve yönetmek için yöntemler ve işleçler içerir.
+`CComCurrency` , bir para BIRIMI nesnesi oluşturmak ve yönetmek için yöntemler ve işleçler içerir.
 
 ## <a name="syntax"></a>Syntax
 
@@ -80,7 +81,7 @@ class CComCurrency
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComCurrency`, para BIRIMI veri türü için bir sarmalayıcıdır. PARA BIRIMI, 10.000 ile ölçeklendirilmiş bir 8 baytlık ikiye tamamlama tamsayı değeri olarak uygulanır. Bu, ondalık noktanın solunda 15 basamakla sabit noktalı bir sayı ve sağına 4 basamak verir. PARA BIRIMI veri türü, parayla ilgili hesaplamalar veya doğruluk açısından önemli olan sabit noktalı hesaplamalar için son derece kullanışlıdır.
+`CComCurrency` , para BIRIMI veri türü için bir sarmalayıcıdır. PARA BIRIMI, 10.000 ile ölçeklendirilmiş bir 8 baytlık ikiye tamamlama tamsayı değeri olarak uygulanır. Bu, ondalık noktanın solunda 15 basamakla sabit noktalı bir sayı ve sağına 4 basamak verir. PARA BIRIMI veri türü, parayla ilgili hesaplamalar veya doğruluk açısından önemli olan sabit noktalı hesaplamalar için son derece kullanışlıdır.
 
 `CComCurrency`Sarmalayıcı, bu sabit nokta türü için aritmetik, atama ve karşılaştırma işlemleri uygular. Desteklenen uygulamalar, sabit noktalı hesaplamalar sırasında oluşabilecek yuvarlama hatalarını denetlemek için seçilmiştir.
 
@@ -99,7 +100,7 @@ CY_MIN_FRACTION, CY_MAX_FRACTION ve CY_SCALE değerleri atlcur. h içinde tanım
 
 **Üstbilgi:** atlcur. h
 
-## <a name="ccomcurrencyccomcurrency"></a><a name="ccomcurrency"></a>CComCurrency:: CComCurrency
+## <a name="ccomcurrencyccomcurrency"></a><a name="ccomcurrency"></a> CComCurrency:: CComCurrency
 
 Oluşturucu.
 
@@ -157,7 +158,7 @@ Taşma gibi bir hata durumunda, oluşturucular, hatayı açıklayan bir HRESULT 
 
 Bir değer atamak için kayan nokta veya Double değerleri kullanırken, öğesinin eşdeğer olduğunu unutmayın `CComCurrency(10.50)` `CComCurrency(10,5000)` `CComCurrency(10,50)` .
 
-## <a name="ccomcurrencygetcurrencyptr"></a><a name="getcurrencyptr"></a>CComCurrency:: GetCurrencyPtr
+## <a name="ccomcurrencygetcurrencyptr"></a><a name="getcurrencyptr"></a> CComCurrency:: GetCurrencyPtr
 
 Bir veri üyesinin adresini döndürür `m_currency` .
 
@@ -169,7 +170,7 @@ CURRENCY* GetCurrencyPtr() throw();
 
 Bir veri üyesinin adresini döndürür `m_currency`
 
-## <a name="ccomcurrencygetfraction"></a><a name="getfraction"></a>CComCurrency:: Getkesir
+## <a name="ccomcurrencygetfraction"></a><a name="getfraction"></a> CComCurrency:: Getkesir
 
 Nesnenin kesirli bileşenini döndürmek için bu yöntemi çağırın `CComCurrency` .
 
@@ -183,13 +184,13 @@ Veri üyesinin kesirli bileşenini döndürür `m_currency` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kesirli bileşen-9999 (CY_MIN_FRACTION) ve + 9999 (CY_MAX_FRACTION) arasında 4 basamaklı bir tamsayı değeridir. `GetFraction`Bu değeri 10000 (CY_SCALE) ile ölçeklendirerek döndürür. CY_MIN_FRACTION, CY_MAX_FRACTION ve CY_SCALE değerleri atlcur. h içinde tanımlanır.
+Kesirli bileşen-9999 (CY_MIN_FRACTION) ve + 9999 (CY_MAX_FRACTION) arasında 4 basamaklı bir tamsayı değeridir. `GetFraction` Bu değeri 10000 (CY_SCALE) ile ölçeklendirerek döndürür. CY_MIN_FRACTION, CY_MAX_FRACTION ve CY_SCALE değerleri atlcur. h içinde tanımlanır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_ATL_Utilities#50](../../atl/codesnippet/cpp/ccomcurrency-class_1.cpp)]
 
-## <a name="ccomcurrencygetinteger"></a><a name="getinteger"></a>CComCurrency:: GetInteger
+## <a name="ccomcurrencygetinteger"></a><a name="getinteger"></a> CComCurrency:: GetInteger
 
 Bir nesnenin tamsayı bileşenini almak için bu yöntemi çağırın `CComCurrency` .
 
@@ -205,7 +206,7 @@ Veri üyesinin tamsayı bileşenini döndürür `m_currency` .
 
 [!code-cpp[NVC_ATL_Utilities#51](../../atl/codesnippet/cpp/ccomcurrency-class_2.cpp)]
 
-## <a name="ccomcurrencym_currency"></a><a name="m_currency"></a>CComCurrency:: m_currency
+## <a name="ccomcurrencym_currency"></a><a name="m_currency"></a> CComCurrency:: m_currency
 
 PARA BIRIMI veri üyesi.
 
@@ -217,7 +218,7 @@ CURRENCY m_currency;
 
 Bu üye, bu sınıfın yöntemleri tarafından erişilen ve yönetilen para birimini tutar.
 
-## <a name="ccomcurrencyoperator--"></a><a name="operator_-"></a>CComCurrency:: operator-
+## <a name="ccomcurrencyoperator--"></a><a name="operator_-"></a> CComCurrency:: operator-
 
 Bu işleç, bir nesne üzerinde çıkarma gerçekleştirmek için kullanılır `CComCurrency` .
 
@@ -239,7 +240,7 @@ Bir `CComCurrency` nesnesi.
 
 [!code-cpp[NVC_ATL_Utilities#55](../../atl/codesnippet/cpp/ccomcurrency-class_3.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_neq"></a>CComCurrency:: operator! =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_neq"></a> CComCurrency:: operator! =
 
 Bu işleç, eşitsizlik için iki nesneyi karşılaştırır.
 
@@ -260,7 +261,7 @@ Karşılaştırılan öğe nesneye eşitse TRUE `CComCurrency` , DEĞILSE false 
 
 [!code-cpp[NVC_ATL_Utilities#56](../../atl/codesnippet/cpp/ccomcurrency-class_4.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_star"></a>CComCurrency:: operator *
+## <a name="ccomcurrencyoperator-"></a><a name="operator_star"></a> CComCurrency:: operator *
 
 Bu işleç, bir nesne üzerinde çarpma gerçekleştirmek için kullanılır `CComCurrency` .
 
@@ -285,7 +286,7 @@ CComCurrency operator*(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#57](../../atl/codesnippet/cpp/ccomcurrency-class_5.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_star_eq"></a>CComCurrency:: işleci\*=
+## <a name="ccomcurrencyoperator-"></a><a name="operator_star_eq"></a> CComCurrency:: işleci \*=
 
 Bu işleç, bir nesne üzerinde çarpma gerçekleştirmek `CComCurrency` ve sonuca atamak için kullanılır.
 
@@ -310,7 +311,7 @@ Güncelleştirilmiş nesneyi döndürür `CComCurrency` . Taşma gibi bir hata d
 
 [!code-cpp[NVC_ATL_Utilities#58](../../atl/codesnippet/cpp/ccomcurrency-class_6.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_div"></a>CComCurrency:: operator/
+## <a name="ccomcurrencyoperator-"></a><a name="operator_div"></a> CComCurrency:: operator/
 
 Bu işleç, bir nesne üzerinde bölme gerçekleştirmek için kullanılır `CComCurrency` .
 
@@ -331,7 +332,7 @@ Bölen.
 
 [!code-cpp[NVC_ATL_Utilities#59](../../atl/codesnippet/cpp/ccomcurrency-class_7.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_div_eq"></a>CComCurrency:: operator/=
+## <a name="ccomcurrencyoperator-"></a><a name="operator_div_eq"></a> CComCurrency:: operator/=
 
 Bu işleç, bir nesne üzerinde bölme gerçekleştirmek `CComCurrency` ve sonuca atamak için kullanılır.
 
@@ -352,7 +353,7 @@ Güncelleştirilmiş nesneyi döndürür `CComCurrency` . Bölen 0 ise, bir onay
 
 [!code-cpp[NVC_ATL_Utilities#60](../../atl/codesnippet/cpp/ccomcurrency-class_8.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_add"></a>CComCurrency:: operator +
+## <a name="ccomcurrencyoperator-"></a><a name="operator_add"></a> CComCurrency:: operator +
 
 Bu işleç, bir nesnesine ekleme yapmak için kullanılır `CComCurrency` .
 
@@ -373,7 +374,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#61](../../atl/codesnippet/cpp/ccomcurrency-class_9.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_add_eq"></a>CComCurrency:: operator + =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_add_eq"></a> CComCurrency:: operator + =
 
 Bu işleç, bir nesnesine ekleme yapmak `CComCurrency` ve sonucu geçerli nesneye atamak için kullanılır.
 
@@ -394,7 +395,7 @@ Güncelleştirilmiş nesneyi döndürür `CComCurrency` . Taşma gibi bir hata d
 
 [!code-cpp[NVC_ATL_Utilities#62](../../atl/codesnippet/cpp/ccomcurrency-class_10.cpp)]
 
-## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt"></a>CComCurrency:: işleci&lt;
+## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt"></a> CComCurrency:: işleci &lt;
 
 Bu işleç, daha `CComCurrency` az anlamak için iki nesneyi karşılaştırır.
 
@@ -415,7 +416,7 @@ Bir `CComCurrency` nesnesi.
 
 [!code-cpp[NVC_ATL_Utilities#63](../../atl/codesnippet/cpp/ccomcurrency-class_11.cpp)]
 
-## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt_eq"></a>CComCurrency:: işleci&lt;=
+## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt_eq"></a> CComCurrency:: işleci &lt;=
 
 Bu işleç `CComCurrency` , eşitlik veya daha küçük bir şekilde belirlenmesi için iki nesneyi karşılaştırır.
 
@@ -436,7 +437,7 @@ Bir `CComCurrency` nesnesi.
 
 [!code-cpp[NVC_ATL_Utilities#64](../../atl/codesnippet/cpp/ccomcurrency-class_12.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_eq"></a>CComCurrency:: operator =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_eq"></a> CComCurrency:: operator =
 
 Bu işleç, `CComCurrency` nesneyi yeni bir değere atar.
 
@@ -473,7 +474,7 @@ Güncelleştirilmiş nesneyi döndürür `CComCurrency` . Taşma gibi bir hata d
 
 [!code-cpp[NVC_ATL_Utilities#65](../../atl/codesnippet/cpp/ccomcurrency-class_13.cpp)]
 
-## <a name="ccomcurrencyoperator--"></a><a name="operator_-_eq"></a>CComCurrency:: operator-=
+## <a name="ccomcurrencyoperator--"></a><a name="operator_-_eq"></a> CComCurrency:: operator-=
 
 Bu işleç, bir nesne üzerinde çıkarma gerçekleştirmek `CComCurrency` ve sonuca atamak için kullanılır.
 
@@ -494,7 +495,7 @@ Güncelleştirilmiş nesneyi döndürür `CComCurrency` . Taşma gibi bir hata d
 
 [!code-cpp[NVC_ATL_Utilities#66](../../atl/codesnippet/cpp/ccomcurrency-class_14.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_eq_eq"></a>CComCurrency:: operator = =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_eq_eq"></a> CComCurrency:: operator = =
 
 Bu işleç, `CComCurrency` eşitlik için iki nesneyi karşılaştırır.
 
@@ -515,7 +516,7 @@ Nesneler eşitse TRUE, bu, `m_currency` her iki nesnede de tamsayı ve kesir ola
 
 [!code-cpp[NVC_ATL_Utilities#67](../../atl/codesnippet/cpp/ccomcurrency-class_15.cpp)]
 
-## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt"></a>CComCurrency:: işleci&gt;
+## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt"></a> CComCurrency:: işleci &gt;
 
 Bu işleç `CComCurrency` , daha büyük olduğunu anlamak için iki nesneyi karşılaştırır.
 
@@ -536,7 +537,7 @@ Bir `CComCurrency` nesnesi.
 
 [!code-cpp[NVC_ATL_Utilities#68](../../atl/codesnippet/cpp/ccomcurrency-class_16.cpp)]
 
-## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt_eq"></a>CComCurrency:: işleci&gt;=
+## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt_eq"></a> CComCurrency:: işleci &gt;=
 
 Bu işleç `CComCurrency` , eşitlik veya daha büyük bir şekilde belirlenmesi için iki nesneyi karşılaştırır.
 
@@ -557,7 +558,7 @@ Bir `CComCurrency` nesnesi.
 
 [!code-cpp[NVC_ATL_Utilities#69](../../atl/codesnippet/cpp/ccomcurrency-class_17.cpp)]
 
-## <a name="ccomcurrencyoperator-currency"></a><a name="operator_currency"></a>CComCurrency:: operator para BIRIMI
+## <a name="ccomcurrencyoperator-currency"></a><a name="operator_currency"></a> CComCurrency:: operator para BIRIMI
 
 Bu işleçler, bir `CComCurrency` nesneyi BIR para birimi veri türüne dönüştürmek için kullanılır.
 
@@ -574,7 +575,7 @@ Bir para BIRIMI nesnesine bir başvuru döndürür.
 
 [!code-cpp[NVC_ATL_Utilities#70](../../atl/codesnippet/cpp/ccomcurrency-class_18.cpp)]
 
-## <a name="ccomcurrencyround"></a><a name="round"></a>CComCurrency:: Round
+## <a name="ccomcurrencyround"></a><a name="round"></a> CComCurrency:: Round
 
 Para birimini belirtilen sayıda ondalık basamağa yuvarlamak için bu yöntemi çağırın.
 
@@ -595,7 +596,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 [!code-cpp[NVC_ATL_Utilities#52](../../atl/codesnippet/cpp/ccomcurrency-class_19.cpp)]
 
-## <a name="ccomcurrencysetfraction"></a><a name="setfraction"></a>CComCurrency:: Setkesir
+## <a name="ccomcurrencysetfraction"></a><a name="setfraction"></a> CComCurrency:: Setkesir
 
 Bir nesnenin kesirli bileşenini ayarlamak için bu yöntemi çağırın `CComCurrency` .
 
@@ -616,7 +617,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 [!code-cpp[NVC_ATL_Utilities#53](../../atl/codesnippet/cpp/ccomcurrency-class_20.cpp)]
 
-## <a name="ccomcurrencysetinteger"></a><a name="setinteger"></a>CComCurrency:: Setınteger
+## <a name="ccomcurrencysetinteger"></a><a name="setinteger"></a> CComCurrency:: Setınteger
 
 Bir nesnenin tamsayı bileşenini ayarlamak için bu yöntemi çağırın `CComCurrency` .
 
@@ -642,5 +643,5 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Cotacurrency sınıfı](../../mfc/reference/colecurrency-class.md)<br/>
-[PARA BİRİMİ](/windows/win32/api/wtypes/ns-wtypes-cy-r1)<br/>
+[CURRENCY](/windows/win32/api/wtypes/ns-wtypes-cy-r1)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)

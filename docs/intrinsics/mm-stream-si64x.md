@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mm_stream_si64x'
 title: _mm_stream_si64x
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - movnti instruction
 - _mm_stream_si64x intrinsic
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
-ms.openlocfilehash: f6ed0f2482ecbcdaa4d50034e0d08381768847a2
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2a68437905c0d5dd56a522d15985db7179921852
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133230"
 ---
 # <a name="_mm_stream_si64x"></a>_mm_stream_si64x
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-MOVNTı yönergesini üretir. Önbellekleri yoklamadan, *kaynaktaki* verileri *hedef*tarafından belirtilen bir bellek konumuna yazar.
+MOVNTı yönergesini üretir. Önbellekleri yoklamadan, *kaynaktaki* verileri *hedef* tarafından belirtilen bir bellek konumuna yazar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,9 +42,9 @@ dışı Kaynak verilerin yazılacağı konuma yönelik bir işaretçi.
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`_mm_stream_si64x`|X64|
+|`_mm_stream_si64x`|x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

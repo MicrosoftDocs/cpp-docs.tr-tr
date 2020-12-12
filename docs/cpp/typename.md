@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: TypeName'
 title: typename
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - typename template specifier
 ms.assetid: 52e1d901-220d-4f0d-ab43-dae7e05fb491
-ms.openlocfilehash: 62e8a2026babbfea3cd1583def05a03b4bc4a229
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3bc1385412d23d947c75967c2dc79bee78bbcd28
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223530"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145801"
 ---
 # <a name="typename"></a>typename
 
 Şablon tanımlarında, derleyiciye bilinmeyen bir tanımlayıcının bir tür olduğunu belirten bir ipucu sağlar. Şablon parametresi listelerinde, bir tür parametresi belirtmek için kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 typename identifier;

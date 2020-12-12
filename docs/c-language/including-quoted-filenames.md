@@ -1,13 +1,14 @@
 ---
+description: 'Aşağıdakiler hakkında daha fazla bilgi edinin: alıntı dosya adları dahil'
 title: Tırnak İşaretli Dosya Adlarını Dahil Etme
 ms.date: 11/04/2016
 ms.assetid: 789a047e-ea38-4c99-b71d-a2ad9c81daee
-ms.openlocfilehash: 4083519d6f6b9b4d037b0c2998737f3a5062c6cf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b07d8dc04106a330644c30bffd1e8f36fc81fb6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137637"
 ---
 # <a name="including-quoted-filenames"></a>Tırnak İşaretli Dosya Adlarını Dahil Etme
 
@@ -19,4 +20,4 @@ Dahil edilecek dosya için, çift tırnak (" ") işareti içine alarak belirsiz 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)
+[Ön işleme yönergeleri](../c-language/preprocessing-directives.md)

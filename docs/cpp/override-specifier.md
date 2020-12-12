@@ -1,21 +1,22 @@
 ---
+description: 'Daha fazla bilgi edinin: geçersiz kılma belirticisi'
 title: override Tanımlayıcısı
 ms.date: 11/04/2016
 helpviewer_keywords:
 - override Identifier
 ms.assetid: b286fb46-9374-4ad8-b2e7-4607119b6133
-ms.openlocfilehash: 82837ae34ab786e607df54038493b14350574a15
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: da29c5c37ff834513736bda02745d031fe3d92aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146009"
 ---
 # <a name="override-specifier"></a>override Tanımlayıcısı
 
 Bir temel sınıftaki sanal işlevi geçersiz kılan üye işlevlerini belirlemek için **override** anahtar sözcüğünü kullanabilirsiniz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 function-declaration override;
@@ -27,7 +28,7 @@ function-declaration override;
 
 ## <a name="example"></a>Örnek
 
-Kodunuzda yanlışlıkla devralma davranışını önlemeye yardımcı olması için **geçersiz kılma** kullanın. Aşağıdaki örnek, **geçersiz kılma**kullanılmadan, türetilen sınıfın üye işlev davranışının amaçlanmadığını gösterir. Derleyici bu kod için herhangi bir hata oluşturmaz.
+Kodunuzda yanlışlıkla devralma davranışını önlemeye yardımcı olması için **geçersiz kılma** kullanın. Aşağıdaki örnek, **geçersiz kılma** kullanılmadan, türetilen sınıfın üye işlev davranışının amaçlanmadığını gösterir. Derleyici bu kod için herhangi bir hata oluşturmaz.
 
 ```cpp
 class BaseClass
@@ -51,7 +52,7 @@ class DerivedClass: public BaseClass
 };
 ```
 
-**Override**kullandığınızda, derleyici sessizce yeni üye işlevleri oluşturmak yerine hatalar oluşturur.
+**Override** kullandığınızda, derleyici sessizce yeni üye işlevleri oluşturmak yerine hatalar oluşturur.
 
 ```cpp
 class BaseClass
@@ -82,5 +83,5 @@ class DerivedClass: public BaseClass
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[final Tanımlayıcısı](../cpp/final-specifier.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Son belirtici](../cpp/final-specifier.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bağlantı noktası sınıfları'
 title: Bağlantı noktaları sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - classes [C++], connection points
 - connection points classes
 ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
-ms.openlocfilehash: 0dba06b072e1e9ca545ccbea196fcfe371b02157
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 28d41f15aeafd98c8c9bcac27fde25d0b2037765
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148245"
 ---
 # <a name="connection-points-classes"></a>Bağlantı noktaları sınıfları
 
@@ -35,12 +36,12 @@ Aşağıdaki sınıflar bağlantı noktaları için destek sağlar:
 
 ## <a name="related-articles"></a>İlgili Makaleler
 
-[Bağlantı Noktaları](../atl/atl-connection-points.md)
+[Bağlantı noktaları](../atl/atl-connection-points.md)
 
-[Olay İşleme ve ATL](../atl/event-handling-and-atl.md)
+[Olay Işleme ve ATL](../atl/event-handling-and-atl.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfa genel bakış](../atl/atl-class-overview.md)<br/>
-[Bağlantı Noktası Makroları](../atl/reference/connection-point-macros.md)<br/>
-[Bağlantı Noktası Genel İşlevleri](../atl/reference/connection-point-global-functions.md)
+[Bağlantı noktası makroları](../atl/reference/connection-point-macros.md)<br/>
+[Bağlantı noktası genel Işlevleri](../atl/reference/connection-point-global-functions.md)

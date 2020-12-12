@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Cstringrefelementnitelikler sınıfı'
 title: Cstringrefelementnitelikler sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ f1_keywords:
 helpviewer_keywords:
 - CStringRefElementTraits class
 ms.assetid: cc15062d-5627-46cc-ac2b-1744afdc2dbd
-ms.openlocfilehash: 6fa8772033a5a82940cf30b2a73d6ea356269d67
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5523a2a451fc1825c443cf2d2e518b1c8dc2b340
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226561"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140393"
 ---
 # <a name="cstringrefelementtraits-class"></a>Cstringrefelementnitelikler sınıfı
 
 Bu sınıf, koleksiyon sınıfı nesnelerinde depolanan dizelerle ilişkili statik işlevler sağlar. Dize nesneleri başvuru olarak ele alınır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <typename T>
@@ -59,7 +60,7 @@ Daha fazla bilgi için bkz. [ATL koleksiyon sınıfları](../../atl/atl-collecti
 
 **Üstbilgi:** atlcoll. h
 
-## <a name="cstringrefelementtraitscompareelements"></a><a name="compareelements"></a>Cstringrefelementnitelikler:: CompareElements
+## <a name="cstringrefelementtraitscompareelements"></a><a name="compareelements"></a> Cstringrefelementnitelikler:: CompareElements
 
 İki dize öğesini eşitlik için karşılaştırmak için bu statik işlevi çağırın.
 
@@ -79,7 +80,7 @@ static bool CompareElements(INARGTYPE element1, INARGTYPE element2) throw();
 
 Öğeler eşitse true, değilse false döndürür.
 
-## <a name="cstringrefelementtraitscompareelementsordered"></a><a name="compareelementsordered"></a>Cstringrefelementnitelikler:: Compareelementsorimli
+## <a name="cstringrefelementtraitscompareelementsordered"></a><a name="compareelementsordered"></a> Cstringrefelementnitelikler:: Compareelementsorimli
 
 İki dize öğesini karşılaştırmak için bu statik işlevi çağırın.
 
@@ -97,9 +98,9 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizeler aynıysa sıfır, *str1* < *0 ' dan*küçükse 0 veya *str1* *str2*büyükse 0 >. [CStringT:: Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi karşılaştırmaları gerçekleştirmek için kullanılır.
+Dizeler aynıysa sıfır, *str1* < *0 ' dan* küçükse 0 veya *str1* *str2* büyükse 0 >. [CStringT:: Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi karşılaştırmaları gerçekleştirmek için kullanılır.
 
-## <a name="cstringrefelementtraitshash"></a><a name="hash"></a>Cstringrefelementnitelikler:: Hash
+## <a name="cstringrefelementtraitshash"></a><a name="hash"></a> Cstringrefelementnitelikler:: Hash
 
 Verilen dize öğesi için bir karma değer hesaplamak üzere bu statik işlevi çağırın.
 

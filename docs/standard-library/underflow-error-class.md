@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: underflow_error sınıfı'
 title: underflow_error Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - underflow_error class
 ms.assetid: d632f1f9-9c6c-4954-b96b-03041bfab22d
-ms.openlocfilehash: 3f521e8ec083cd158212b3ae9cb9fcf26edc7e76
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 638f824ab5c74a57f7130ea4fdbb3aae3da27e18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132736"
 ---
 # <a name="underflow_error-class"></a>underflow_error Sınıfı
 

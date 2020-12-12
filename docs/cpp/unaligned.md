@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __unaligned'
 title: __unaligned
 ms.date: 12/17/2018
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - __unaligned keyword [C++]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
-ms.openlocfilehash: 2ab94a44d08165ca6e8f394278e24d7c8d201398
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f5afd0c6c1a506cbaeb03d497e64eac743ecc4df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145762"
 ---
 # <a name="__unaligned"></a>__unaligned
 
@@ -31,11 +32,11 @@ Hizalama hakkında daha fazla bilgi için bkz.
 
 - [`align`](../cpp/align-cpp.md)
 
-- [`alignof`İşlecinde](../cpp/alignof-operator.md)
+- [`alignof` İşlecinde](../cpp/alignof-operator.md)
 
 - [`pack`](../preprocessor/pack.md)
 
-- [`/Zp`(Struct üye hizalaması)](../build/reference/zp-struct-member-alignment.md)
+- [`/Zp` (Struct üye hizalaması)](../build/reference/zp-struct-member-alignment.md)
 
 - [Yapı Hizalama Örnekleri](../build/x64-software-conventions.md#examples-of-structure-alignment)
 

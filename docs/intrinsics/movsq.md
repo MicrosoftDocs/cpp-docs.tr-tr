@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __movsq'
 title: __movsq
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - rep movsq instruction
 - movsq instruction
 ms.assetid: be116a6e-2176-4ca4-93b1-9ccf3e7e7835
-ms.openlocfilehash: 66de1971c48f6697fd06579fac635cce31545e92
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5bd212e5ebd1b98a853fb782d7e45c1e7e001f44
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133165"
 ---
 # <a name="__movsq"></a>__movsq
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Yinelenen bir Move String (`rep movsq`) yönergesi üretir.
+Yinelenen bir Move String ( `rep movsq` ) yönergesi üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,9 +47,9 @@ dışı İşlemin hedefi.
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`__movsq`|X64|
+|`__movsq`|x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

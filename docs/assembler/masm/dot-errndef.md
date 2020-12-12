@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:. ERRNDEF
 title: .ERRNDEF
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - .ERRNDEF directive
 ms.assetid: 9fab57bb-02ad-486f-b46d-bcd23980f00d
-ms.openlocfilehash: 60682c052abbba566e0632405fc204a4170e0dca
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 95e1d389a2897e6e282089ba545fe75d779bdcb7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97131800"
 ---
 # <a name="errndef"></a>.ERRNDEF
 
 *Ad* tanımlanmamışsa bir hata oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **. Errndef** *Name* ⟦ __,__ *Message*⟧
+> **. Errndef** *Name* ⟦__,__ *Message*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

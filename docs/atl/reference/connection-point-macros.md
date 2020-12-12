@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bağlantı noktası makroları'
 title: Bağlantı noktası makroları
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - connection points [C++], macros
 ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
-ms.openlocfilehash: 6c716ad85ecb458b4be418a7e8554687dd19f3d8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bcb021abe128e15a598f485ab0c0a32a01f90327
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833523"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141134"
 ---
 # <a name="connection-point-macros"></a>Bağlantı noktası makroları
 

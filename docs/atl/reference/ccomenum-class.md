@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComEnum sınıfı'
 title: CComEnum sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-ms.openlocfilehash: 7241d903e44329eb8fd50155059355a470fb7b90
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0cee4129c0bc5129313b92e144c22de9d161c9cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146698"
 ---
 # <a name="ccomenum-class"></a>CComEnum sınıfı
 
 Bu sınıf bir diziyi temel alan bir COM Numaralandırıcı nesnesi tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <class Base,
@@ -48,7 +49,7 @@ Sınıfın iş parçacığı modeli. Bu parametrenin varsayılan değeri, projen
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComEnum`bir diziyi temel alan bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) 'e benzer ve bir C++ standart kitaplık kapsayıcısını temel alan bir Numaralandırıcı uygular. Bu sınıfı kullanmanın tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
+`CComEnum` bir diziyi temel alan bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md) 'e benzer ve bir C++ standart kitaplık kapsayıcısını temel alan bir Numaralandırıcı uygular. Bu sınıfı kullanmanın tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
 
 ## <a name="to-use-this-class"></a>Bu sınıfı kullanmak için:
 

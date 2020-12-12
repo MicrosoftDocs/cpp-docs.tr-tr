@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yönergeler başvurusu'
 title: Yönergeler Başvurusu
 ms.date: 07/15/2020
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
-ms.openlocfilehash: e3e4fa7fbf18fbb18096593042873106897c70ca
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5f4e4a75ce37b0d393bbc6a2a8fd45d16247dcff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132594"
 ---
 # <a name="directives-reference"></a>Yönergeler Başvurusu
 

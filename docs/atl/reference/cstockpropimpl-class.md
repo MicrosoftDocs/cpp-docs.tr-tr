@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CStockPropImpl Class'
 title: CStockPropImpl sınıfı
 ms.date: 05/06/2019
 f1_keywords:
@@ -64,12 +65,12 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: 9d54e4e5c49e73a12fc5d360c3963c2bcf5b2b38
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d2d71b4b318daeb6590e36d30f71e37a5d2b52b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835590"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140535"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl sınıfı
 
@@ -78,7 +79,7 @@ Bu sınıf, hisse senedi özellik değerlerini desteklemek için yöntemler sağ
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <
@@ -114,7 +115,7 @@ Tür kitaplığının ana sürümü. Varsayılan değer 1’dir.
 Tür kitaplığının ikincil sürümü. Varsayılan değer 0’dır.
 
 *tihclass*<br/>
-*T*için tür bilgilerini yönetmek için kullanılan sınıf. Varsayılan değer `CComTypeInfoHolder` .
+*T* için tür bilgilerini yönetmek için kullanılan sınıf. Varsayılan değer `CComTypeInfoHolder` .
 
 ## <a name="members"></a>Üyeler
 

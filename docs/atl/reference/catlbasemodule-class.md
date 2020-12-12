@@ -1,5 +1,6 @@
 ---
-title: CAtlBaseModule Sınıfı
+description: 'Daha fazla bilgi edinin: CAtlBaseModule sınıfı'
+title: CAtlBaseModule sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlBaseModule
@@ -15,18 +16,18 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlBaseModule class
 ms.assetid: 55ade80c-9b0c-4c51-933e-2158436c1096
-ms.openlocfilehash: d57d6e631cb287496a4ff5516e97e65ec0152e30
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 249b2ad2d133ba0f407e9c5fabcf716b09605972
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168299"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147543"
 ---
-# <a name="catlbasemodule-class"></a>CAtlBaseModule Sınıfı
+# <a name="catlbasemodule-class"></a>CAtlBaseModule sınıfı
 
 Bu sınıf, her ATL projesinde örneği oluşturulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CAtlBaseModule : public _ATL_BASE_MODULE
@@ -36,30 +37,30 @@ class CAtlBaseModule : public _ATL_BASE_MODULE
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlBaseModule:: CAtlBaseModule](#catlbasemodule)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlBaseModule:: Addresourceınstance](#addresourceinstance)|Depolanan tutamaçlar listesine bir kaynak örneği ekler.|
 |[CAtlBaseModule:: Gethınstanceat](#gethinstanceat)|Belirtilen kaynak örneğine bir tanıtıcı döndürür.|
-|[CAtlBaseModule:: GetModuleInstance](#getmoduleinstance)|Bir `CAtlBaseModule` nesneden modül örneğini döndürür.|
-|[CAtlBaseModule:: GetResourceInstance](#getresourceinstance)|Bir `CAtlBaseModule` nesneden kaynak örneğini döndürür.|
+|[CAtlBaseModule:: GetModuleInstance](#getmoduleinstance)|Bir nesneden modül örneğini döndürür `CAtlBaseModule` .|
+|[CAtlBaseModule:: GetResourceInstance](#getresourceinstance)|Bir nesneden kaynak örneğini döndürür `CAtlBaseModule` .|
 |[CAtlBaseModule:: Removeresourceınstance](#removeresourceinstance)|Depolanan tutamaçlar listesinden bir kaynak örneğini kaldırır.|
-|[CAtlBaseModule:: Setresourceınstance](#setresourceinstance)|Bir `CAtlBaseModule` nesnenin kaynak örneğini ayarlar.|
+|[CAtlBaseModule:: Setresourceınstance](#setresourceinstance)|Bir nesnenin kaynak örneğini ayarlar `CAtlBaseModule` .|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlBaseModule:: m_bInitFailed](#m_binitfailed)|Modül başlatmanın başarısız olup olmadığını gösteren bir değişken.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `CAtlBaseModule` adlandırılmış _AtlBaseModule örneği, modül örneğine bir tanıtıcı, kaynakları içeren modül tanıtıcısı (varsayılan olarak, bir ve aynı) ve birincil kaynakları sağlayan modüllerle bir dizi tanıtıcı IÇEREN her atl projesinde bulunur. `CAtlBaseModule`, birden fazla iş parçacığından güvenle erişilebilir.
+Bir `CAtlBaseModule` adlandırılmış _AtlBaseModule örneği, modül örneğine bir tanıtıcı, kaynakları içeren modül tanıtıcısı (varsayılan olarak, bir ve aynı) ve birincil kaynakları sağlayan modüllerle bir dizi tanıtıcı içeren her atl projesinde bulunur. `CAtlBaseModule` , birden fazla iş parçacığından güvenle erişilebilir.
 
 Bu sınıf, ATL 'nin önceki sürümlerinde kullanılan eski [CComModule](../../atl/reference/ccommodule-class.md) sınıfının yerini alır.
 
@@ -73,7 +74,7 @@ Bu sınıf, ATL 'nin önceki sürümlerinde kullanılan eski [CComModule](../../
 
 **Üstbilgi:** atlcore. h
 
-## <a name="catlbasemoduleaddresourceinstance"></a><a name="addresourceinstance"></a>CAtlBaseModule:: Addresourceınstance
+## <a name="catlbasemoduleaddresourceinstance"></a><a name="addresourceinstance"></a> CAtlBaseModule:: Addresourceınstance
 
 Depolanan tutamaçlar listesine bir kaynak örneği ekler.
 
@@ -90,7 +91,7 @@ Eklenecek kaynak örneği.
 
 Kaynak başarıyla eklendiyse true, aksi takdirde false döndürür.
 
-## <a name="catlbasemodulecatlbasemodule"></a><a name="catlbasemodule"></a>CAtlBaseModule:: CAtlBaseModule
+## <a name="catlbasemodulecatlbasemodule"></a><a name="catlbasemodule"></a> CAtlBaseModule:: CAtlBaseModule
 
 Oluşturucu.
 
@@ -100,9 +101,9 @@ CAtlBaseModule() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğesini oluşturur `CAtlBaseModule`.
+Öğesini oluşturur `CAtlBaseModule` .
 
-## <a name="catlbasemodulegethinstanceat"></a><a name="gethinstanceat"></a>CAtlBaseModule:: Gethınstanceat
+## <a name="catlbasemodulegethinstanceat"></a><a name="gethinstanceat"></a> CAtlBaseModule:: Gethınstanceat
 
 Belirtilen kaynak örneğine bir tanıtıcı döndürür.
 
@@ -112,16 +113,16 @@ HINSTANCE GetHInstanceAt(int i) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*kaydedemiyorum*<br/>
+*i*<br/>
 Kaynak örneğinin numarası.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Kaynak örneğine tanıtıcıyı döndürür veya karşılık gelen kaynak örneği yoksa NULL değeri döndürür.
 
-## <a name="catlbasemodulegetmoduleinstance"></a><a name="getmoduleinstance"></a>CAtlBaseModule:: GetModuleInstance
+## <a name="catlbasemodulegetmoduleinstance"></a><a name="getmoduleinstance"></a> CAtlBaseModule:: GetModuleInstance
 
-Bir `CAtlBaseModule` nesneden modül örneğini döndürür.
+Bir nesneden modül örneğini döndürür `CAtlBaseModule` .
 
 ```cpp
 HINSTANCE GetModuleInstance() throw();
@@ -131,7 +132,7 @@ HINSTANCE GetModuleInstance() throw();
 
 Modül örneğini döndürür.
 
-## <a name="catlbasemodulegetresourceinstance"></a><a name="getresourceinstance"></a>CAtlBaseModule:: GetResourceInstance
+## <a name="catlbasemodulegetresourceinstance"></a><a name="getresourceinstance"></a> CAtlBaseModule:: GetResourceInstance
 
 Kaynak örneğini döndürür.
 
@@ -143,7 +144,7 @@ HINSTANCE GetResourceInstance() throw();
 
 Kaynak örneğini döndürür.
 
-## <a name="catlbasemodulem_binitfailed"></a><a name="m_binitfailed"></a>CAtlBaseModule:: m_bInitFailed
+## <a name="catlbasemodulem_binitfailed"></a><a name="m_binitfailed"></a> CAtlBaseModule:: m_bInitFailed
 
 Modül başlatmanın başarısız olup olmadığını gösteren bir değişken.
 
@@ -155,7 +156,7 @@ static bool m_bInitFailed;
 
 Modül başlatılmışsa true, başlatılamadığından false.
 
-## <a name="catlbasemoduleremoveresourceinstance"></a><a name="removeresourceinstance"></a>CAtlBaseModule:: Removeresourceınstance
+## <a name="catlbasemoduleremoveresourceinstance"></a><a name="removeresourceinstance"></a> CAtlBaseModule:: Removeresourceınstance
 
 Depolanan tutamaçlar listesinden bir kaynak örneğini kaldırır.
 
@@ -172,9 +173,9 @@ Kaldırılacak kaynak örneği.
 
 Kaynak başarıyla kaldırılmışsa true, aksi takdirde false döndürür.
 
-## <a name="catlbasemodulesetresourceinstance"></a><a name="setresourceinstance"></a>CAtlBaseModule:: Setresourceınstance
+## <a name="catlbasemodulesetresourceinstance"></a><a name="setresourceinstance"></a> CAtlBaseModule:: Setresourceınstance
 
-Bir `CAtlBaseModule` nesnenin kaynak örneğini ayarlar.
+Bir nesnenin kaynak örneğini ayarlar `CAtlBaseModule` .
 
 ```cpp
 HINSTANCE SetResourceInstance(HINSTANCE hInst) throw();

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: goto ve etiketli deyimler (C)'
 title: goto ve Etiketli Deyimleri (C)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - statements, labeled
 - goto keyword [C]
 ms.assetid: 3d0473dc-4b18-4fcc-9616-31a38499d7d7
-ms.openlocfilehash: d84aa6701ef030dc494f6a40a7223d6f9bcd5073
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1372cd0699944449ccd44a76dd1d90206bfab68a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87199990"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137650"
 ---
 # <a name="goto-and-labeled-statements-c"></a>goto ve Etiketli Deyimleri (C)
 
 **`goto`** İfade denetimi bir etikete aktarır. Verilen etiket aynı işlevde bulunmalı ve aynı işlevde yalnızca bir deyimden önce görünebilirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *ifade*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Etiketli ifade*<br/>

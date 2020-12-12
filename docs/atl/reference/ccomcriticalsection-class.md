@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ccomkritiksection sınıfı'
 title: Ccomcriticalhandle bölüm sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComCriticalSection class
 ms.assetid: 44e1edd2-90be-4bfe-9739-58e8b419e7d1
-ms.openlocfilehash: 8cf590052dee9d0303ccfb102296fc66038aec57
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7a6a3efef68a14cbda513ee60ed3980293514ad6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224311"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146737"
 ---
 # <a name="ccomcriticalsection-class"></a>Ccomcriticalhandle bölüm sınıfı
 
 Bu sınıf, kritik bir bölüm nesnesinin sahipliğini almak ve serbest bırakmak için yöntemler sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CComCriticalSection
@@ -55,7 +56,7 @@ class CComCriticalSection
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComCriticalSection`, [Ccomautocriticalhandle bölümüne](../../atl/reference/ccomautocriticalsection-class.md)benzerdir, ancak kritik bölümü açıkça başlatıp serbest bırakmanız gerekir.
+`CComCriticalSection` , [Ccomautocriticalhandle bölümüne](../../atl/reference/ccomautocriticalsection-class.md)benzerdir, ancak kritik bölümü açıkça başlatıp serbest bırakmanız gerekir.
 
 Genellikle, `CComCriticalSection` **`typedef`** ad [CriticalHandle bölümünde](ccommultithreadmodel-class.md#criticalsection)kullanırsınız. Bu ad `CComCriticalSection` , [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) kullanılırken başvuruda bulunur.
 
@@ -65,7 +66,7 @@ Bu sınıfı çağırmadan daha güvenli bir yol için bkz. [CComCritSecLock sı
 
 **Üstbilgi:** atlcore. h
 
-## <a name="ccomcriticalsectionccomcriticalsection"></a><a name="ccomcriticalsection"></a>Ccomcriticalhandle Section:: Ccomcriticalhandle bölümü
+## <a name="ccomcriticalsectionccomcriticalsection"></a><a name="ccomcriticalsection"></a> Ccomcriticalhandle Section:: Ccomcriticalhandle bölümü
 
 Oluşturucu.
 
@@ -77,7 +78,7 @@ CComCriticalSection() throw();
 
 [M_sec](#m_sec) VERI üyesini null olarak ayarlar.
 
-## <a name="ccomcriticalsectioninit"></a><a name="init"></a>Ccomcriticalhandle bölümü:: Init
+## <a name="ccomcriticalsectioninit"></a><a name="init"></a> Ccomcriticalhandle bölümü:: Init
 
 [M_sec](#m_sec) veri üyesinde bulunan kritik bölüm nesnesini başlatan [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection)Win32 işlevini çağırır.
 
@@ -89,7 +90,7 @@ HRESULT Init() throw();
 
 Başarılı, E_OUTOFMEMORY veya E_FAIL hatada S_OK döndürür.
 
-## <a name="ccomcriticalsectionlock"></a><a name="lock"></a>Ccomcriticalhandle Section:: Lock
+## <a name="ccomcriticalsectionlock"></a><a name="lock"></a> Ccomcriticalhandle Section:: Lock
 
 , İş parçacığının [m_sec](#m_sec) veri üyesinde bulunan kritik bölüm nesnesinin sahipliğini alıp alamamasını bekleyen Win32 Işlevi [entercriticalhandle bölümünü](/windows/win32/api/synchapi/nf-synchapi-entercriticalsection)çağırır.
 
@@ -105,7 +106,7 @@ Başarılı, E_OUTOFMEMORY veya E_FAIL hatada S_OK döndürür.
 
 Kritik bölüm nesnesi önce [Init](#init) yöntemine yapılan bir çağrıyla başlatılmalıdır. Korunan kodun yürütülmesi tamamlandığında, kritik bölümün sahipliğini serbest bırakmak için iş parçacığının [kilit açma](#unlock) çağrısı gerekir.
 
-## <a name="ccomcriticalsectionm_sec"></a><a name="m_sec"></a>Ccomcriticalhandle bölümü:: m_sec
+## <a name="ccomcriticalsectionm_sec"></a><a name="m_sec"></a> Ccomcriticalhandle bölümü:: m_sec
 
 Tüm yöntemler tarafından kullanılan kritik bir bölüm nesnesi içerir `CComCriticalSection` .
 
@@ -113,7 +114,7 @@ Tüm yöntemler tarafından kullanılan kritik bir bölüm nesnesi içerir `CCom
 CRITICAL_SECTION m_sec;
 ```
 
-## <a name="ccomcriticalsectionterm"></a><a name="term"></a>Ccomcriticalhandle Section:: Term
+## <a name="ccomcriticalsectionterm"></a><a name="term"></a> Ccomcriticalhandle Section:: Term
 
 [M_sec](#m_sec) veri üyesinde bulunan kritik bölüm nesnesi tarafından kullanılan tüm kaynakları serbest bırakarak Win32 Işlevi [deletecriticalhandle bölümünü](/windows/win32/api/synchapi/nf-synchapi-deletecriticalsection)çağırır.
 
@@ -129,7 +130,7 @@ S_OK döndürür.
 
 Bir kez `Term` çağrıldıktan sonra, kritik bölüm artık eşitleme için kullanılamaz.
 
-## <a name="ccomcriticalsectionunlock"></a><a name="unlock"></a>Ccomcriticalhandle bölümü:: unlock
+## <a name="ccomcriticalsectionunlock"></a><a name="unlock"></a> Ccomcriticalhandle bölümü:: unlock
 
 [M_sec](#m_sec) veri üyesinde bulunan kritik bölüm nesnesinin sahipliğini serbest bırakır [LeaveCriticalSection](/windows/win32/api/synchapi/nf-synchapi-leavecriticalsection)Win32 işlevini çağırır.
 

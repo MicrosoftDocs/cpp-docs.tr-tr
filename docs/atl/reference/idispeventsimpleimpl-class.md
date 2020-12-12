@@ -1,5 +1,6 @@
 ---
-title: IDispEventSimpleImpl Sınıfı
+description: 'Daha fazla bilgi edinin: IDispEventSimpleImpl sınıfı'
+title: IDispEventSimpleImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IDispEventSimpleImpl
@@ -15,19 +16,19 @@ f1_keywords:
 helpviewer_keywords:
 - IDispEventSimpleImpl class
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
-ms.openlocfilehash: 779e143094760c7bd868ad33f590f7fd8f004762
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4b581f4e5714f595a29fb27bd6dbd45c7d5e401c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139509"
 ---
-# <a name="idispeventsimpleimpl-class"></a>IDispEventSimpleImpl Sınıfı
+# <a name="idispeventsimpleimpl-class"></a>IDispEventSimpleImpl sınıfı
 
-Bu sınıf, bir `IDispatch` tür kitaplığından tür bilgisi almadan yöntemlerin uygulamalarını sağlar.
+Bu sınıf `IDispatch` , bir tür kitaplığından tür bilgilerini almadan yöntemlerin uygulamalarını sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,54 +39,54 @@ class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 
 #### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-Kaynak nesne için benzersiz bir tanımlayıcı. Bileşik `IDispEventSimpleImpl` denetimin taban sınıfı ne zaman, bu parametre için istenen denetimin kaynak kimliğini kullanın. Diğer durumlarda, rasgele pozitif tamsayı kullanın.
+*NID*<br/>
+Kaynak nesne için benzersiz bir tanımlayıcı. `IDispEventSimpleImpl`Birleşik bir denetimin temel sınıfı olduğunda, bu parametre için istenen içerilen denetimin kaynak kimliğini kullanın. Diğer durumlarda rastgele pozitif bir tamsayı kullanın.
 
 *T*<br/>
-Kullanıcının sınıfından `IDispEventSimpleImpl`türetilen.
+' Den türetilen kullanıcının sınıfı `IDispEventSimpleImpl` .
 
-*pdiid*<br/>
-Bu sınıf tarafından uygulanan olay dispinterface IID işaretçisi.
+*pdiıd*<br/>
+Bu sınıf tarafından uygulanan olay görüntüleme arabiriminin IID 'sine yönelik işaretçi.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[IDispEventSimpleImpl::Tavsiye](#advise)|Varsayılan olay kaynağıyla bir bağlantı kurar.|
-|[IDispEventSimpleImpl::DispEventAdvise](#dispeventadvise)|Olay kaynağıyla bir bağlantı kurar.|
-|[IDispEventSimpleImpl::DispEventUnadvise](#dispeventunadvise)|Olay kaynağıyla bağlantıyı koparır.|
-|[IDispEventSimpleImpl::GetIDsOfNames](#getidsofnames)|E_NOTIMPL döndürür.|
-|[IDispEventSimpleImpl::GetTypeInfo](#gettypeinfo)|E_NOTIMPL döndürür.|
-|[IDispEventSimpleImpl::GetTypeInfoCount](#gettypeinfocount)|E_NOTIMPL döndürür.|
-|[IDispEventSimpleImpl::Invoke](#invoke)|Olay lavabo haritasında listelenen olay işleyicilerini çağırır.|
-|[IDispEventSimpleImpl::Tavsiye siz](#unadvise)|Varsayılan olay kaynağıyla bağlantıyı keser.|
+|[IDispEventSimpleImpl:: Advise](#advise)|Varsayılan olay kaynağıyla bir bağlantı kurar.|
+|[IDispEventSimpleImpl::D ıspeventadmenlik](#dispeventadvise)|Olay kaynağıyla bir bağlantı kurar.|
+|[IDispEventSimpleImpl::D ispEventUnadvise](#dispeventunadvise)|Olay kaynağıyla bağlantıyı keser.|
+|[IDispEventSimpleImpl:: GetIDsOfNames](#getidsofnames)|E_NOTIMPL döndürür.|
+|[IDispEventSimpleImpl:: GetTypeInfo](#gettypeinfo)|E_NOTIMPL döndürür.|
+|[IDispEventSimpleImpl:: GetTypeInfoCount](#gettypeinfocount)|E_NOTIMPL döndürür.|
+|[IDispEventSimpleImpl:: Invoke](#invoke)|Olay havuzu eşlemesinde listelenen olay işleyicilerini çağırır.|
+|[IDispEventSimpleImpl:: Unadvise](#unadvise)|Varsayılan olay kaynağıyla bağlantıyı keser.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IDispEventSimpleImpl`bu arabirimdeki her yöntem/olay için uygulama kodu sağlamanızı gerektirmeden bir olay dispinterface uygulama yöntemi sağlar. `IDispEventSimpleImpl`yöntemlerin `IDispatch` uygulamalarını sağlar. Yalnızca işlemek le ilgilendiğiniz olaylar için uygulamalar sağlamanız gerekir.
+`IDispEventSimpleImpl` Bu arabirimdeki her yöntem/olay için uygulama kodu vermenizi gerektirmeden bir olay görüntüleme arabirimi uygulamanın bir yolunu sağlar. `IDispEventSimpleImpl` yöntemlerin uygulamalarını sağlar `IDispatch` . Yalnızca işleme ilgilendiğiniz olaylara yönelik uygulamalar sağlamanız gerekir.
 
-`IDispEventSimpleImpl`olayları uygun işleyici işlevine yönlendirmek için sınıfınızdaki olay lavabo haritasıyla birlikte çalışır. Bu sınıfı kullanmak için:
+`IDispEventSimpleImpl` olayları uygun işleyici işlevine yönlendirmek için sınıfınızdaki olay havuzu eşlemesiyle birlikte çalışır. Bu sınıfı kullanmak için:
 
-- Işlemek istediğiniz her nesnedeki her olay için olay lavabo haritasına [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) makro ekleyin.
+- İşlemek istediğiniz her nesnedeki her bir olay için olay havuzu eşlemesine bir [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) makrosu ekleyin.
 
-- Her giriş için bir parametre olarak [bir işaretçi _ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) yapısına geçirerek her olay için tür bilgileri kaynağı. x86 platformunda, `_ATL_FUNC_INFO.cc` değer, __stdcall geri arama işlevi ile CC_CDECL olmalıdır.
+- Her bir olaya bir [_ATL_FUNC_INFO](../../atl/reference/atl-func-info-structure.md) yapısına bir işaretçi geçirerek her olay için tür bilgilerini sağlayın. X86 platformunda, `_ATL_FUNC_INFO.cc` değeri, geri çağırma işlevi çağırma __stdcall yöntemi ile CC_CDECL olmalıdır.
 
-- Kaynak nesne ve taban sınıf arasındaki bağlantıyı kurmak için [DispEventAdvise'i](#dispeventadvise) arayın.
+- Kaynak nesne ve temel sınıf arasındaki bağlantıyı kurmak için [Dispeventadmentıon](#dispeventadvise) çağırın.
 
-- Bağlantıyı kırmak için [DispEventUnadvise'i](#dispeventunadvise) arayın.
+- Bağlantıyı kesmek için [DispEventUnadvise](#dispeventunadvise) çağırın.
 
-Olayları işlemek için `IDispEventSimpleImpl` gereken her nesne için *(nID*için benzersiz bir değer kullanarak) türetmeniz gerekir. Bir kaynak nesneye karşı tavsiyede sonra farklı bir kaynak nesneye karşı tavsiyede bulunabilir, ancak aynı anda tek bir nesne tarafından işlenebilecek `IDispEventSimpleImpl` en fazla kaynak nesne sayısı temel sınıf sayısıyla sınırlıdır.
+`IDispEventSimpleImpl`Olayları işlemek için gereken her nesne için ( *NID* için benzersiz bir değer kullanarak) türetmeniz gerekir. Temel sınıfı, bir kaynak nesneye karşı geri yüklemeden sonra farklı bir kaynak nesnesine karşı daha sonra bir kez daha sonra, aynı anda tek bir nesne tarafından işlenebilen en fazla kaynak nesne sayısı, temel sınıf sayısıyla sınırlıdır `IDispEventSimpleImpl` .
 
-`IDispEventSimplImpl`[IDispEventImpl](../../atl/reference/idispeventimpl-class.md)ile aynı işlevselliği sağlar, ancak bir tür kitaplığından arabirim hakkında tür bilgisi almaz. Sihirbazlar yalnızca , ancak `IDispEventImpl`kodu elle `IDispEventSimpleImpl` ekleyerek kod alabildiğinizi temel alarak kod oluştururlar. Olay `IDispEventSimpleImpl` arabirimini açıklayan bir tür kitaplığınız yoksa veya tür kitaplığını kullanmakla ilişkili genel merkezlerden kaçınmak istediğinizde kullanın.
+`IDispEventSimplImpl`[IDispEventImpl](../../atl/reference/idispeventimpl-class.md)ile aynı işlevselliği sağlar, ancak bir tür kitaplığından arabirim hakkında tür bilgisi almaz. Sihirbazlar yalnızca ' i temel alan kod oluşturur `IDispEventImpl` , ancak `IDispEventSimpleImpl` kodu el ile ekleyerek kullanabilirsiniz. `IDispEventSimpleImpl`Olay arabirimini açıklayan bir tür kitaplığınız yoksa veya tür kitaplığını kullanarak ilişkili ek yükün oluşmasını önlemek istiyorsanız kullanın.
 
 > [!NOTE]
-> `IDispEventImpl`ve `IDispEventSimpleImpl` ana COM `IUnknown::QueryInterface` nesnenizdeki `IDispEventImpl` sınıf `IDispEventSimpleImpl` üyelerine doğrudan erişim sağlarken, her bir veya taban sınıfın ayrı bir COM kimliği olarak hareket etmesini etkinleştirme uygulamalarını sağlar.
+> `IDispEventImpl` ve `IDispEventSimpleImpl` `IUnknown::QueryInterface` `IDispEventImpl` `IDispEventSimpleImpl` aynı zamanda, ana com nesnenizin sınıf üyelerine doğrudan erişime izin verirken her bir veya temel sınıfın ayrı bir com kimliği olarak çalışmasını sağlama konusunda kendi uygulamasını sağlar.
 
-ActiveX olay lavabolarının CE ATL uygulaması yalnızca HRESULT türü veya olay işleyicisi yöntemlerinizden geçersiz olan iade değerlerini destekler; başka bir iade değeri desteklenmez ve davranışı tanımsızdır.
+ActiveX olay havuzları 'nın CE ATL uygulamasında yalnızca HRESULT veya olay işleyicisi yöntemlerinizin void türü dönüş değerleri desteklenir; diğer bir dönüş değeri desteklenmez ve davranışı tanımsız olur.
 
-Daha fazla bilgi için Bkz. [IDispEventImpl'i Destekleme](../../atl/supporting-idispeventimpl.md).
+Daha fazla bilgi için bkz. [IDispEventImpl 'Yi destekleme](../../atl/supporting-idispeventimpl.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -97,11 +98,11 @@ Daha fazla bilgi için Bkz. [IDispEventImpl'i Destekleme](../../atl/supporting-i
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="idispeventsimpleimpladvise"></a><a name="advise"></a>IDispEventSimpleImpl::Tavsiye
+## <a name="idispeventsimpleimpladvise"></a><a name="advise"></a> IDispEventSimpleImpl:: Advise
 
-*pUnk*tarafından temsil edilen olay kaynağı ile bağlantı kurmak için bu yöntemi arayın.
+*Punk* tarafından temsil edilen olay kaynağıyla bağlantı kurmak için bu yöntemi çağırın.
 
 ```
 HRESULT Advise(IUnknown* pUnk);
@@ -109,8 +110,8 @@ HRESULT Advise(IUnknown* pUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-[içinde] Olay kaynağı `IUnknown` nesnenin arabirimine bir işaretçi.
+*pUnk dili*<br/>
+'ndaki `IUnknown` Olay kaynağı nesnesinin arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -118,16 +119,16 @@ S_OK veya herhangi bir hata HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağlantı kurulduktan sonra, *pUnk'tan* ateşlenen olaylar, olay lavabo haritası ile sınıfınızdaki işleyicilere yönlendirilir.
+Bağlantı kurulduktan sonra, *punk* 'dan tetiklenen olaylar, olay havuzu eşlemesi yoluyla sınıfınıza olan işleyicilere yönlendirilir.
 
 > [!NOTE]
-> Sınıfınız birden çok `IDispEventSimpleImpl` sınıftan türetiliyorsa, çağrıyı ilgilendiğiniz taban sınıfla birlikte kapsama alarak bu yönteme çağrıları ayrıştırmanız gerekir.
+> Sınıfınız birden fazla sınıftan türetiliyorsa `IDispEventSimpleImpl` , bu yönteme yapılan çağrıları, ilgilendiğiniz belirli temel sınıfla tanımlayarak ayırt etmeniz gerekir.
 
-`Advise`varsayılan olay kaynağı ile bir bağlantı kurar, [atlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface)tarafından belirlenen nesnenin varsayılan olay kaynağının IID alır.
+`Advise` varsayılan olay kaynağıyla bir bağlantı kurar, [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface)tarafından belirlendiği şekilde nesnenin varsayılan olay kaynağının IID 'sini alır.
 
-## <a name="idispeventsimpleimpldispeventadvise"></a><a name="dispeventadvise"></a>IDispEventSimpleImpl::DispEventAdvise
+## <a name="idispeventsimpleimpldispeventadvise"></a><a name="dispeventadvise"></a> IDispEventSimpleImpl::D ıspeventadmenlik
 
-*pUnk*tarafından temsil edilen olay kaynağı ile bağlantı kurmak için bu yöntemi arayın.
+*Punk* tarafından temsil edilen olay kaynağıyla bağlantı kurmak için bu yöntemi çağırın.
 
 ```
 HRESULT DispEventAdvise(IUnknown* pUnk  const IID* piid);
@@ -135,11 +136,11 @@ HRESULT DispEventAdvise(IUnknown* pUnk  const IID* piid);
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-[içinde] Olay kaynağı `IUnknown` nesnenin arabirimine bir işaretçi.
+*pUnk dili*<br/>
+'ndaki `IUnknown` Olay kaynağı nesnesinin arabirimine yönelik bir işaretçi.
 
-*piid*<br/>
-Olay kaynağı nesnenin IID için bir işaretçi.
+*piıd*<br/>
+Olay kaynağı nesnesinin IID 'sine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -147,16 +148,16 @@ S_OK veya herhangi bir hata HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha sonra, *pUnk'tan* ateşlenen olaylar, olay lavabo haritası ile sınıfınızdaki işleyicilere yönlendirilecektir.
+Daha sonra, *punk* 'dan tetiklenen olaylar, olay havuzu eşlemesi yoluyla sınıfınıza olan işleyicilere yönlendirilir.
 
 > [!NOTE]
-> Sınıfınız birden çok `IDispEventSimpleImpl` sınıftan türetiliyorsa, çağrıyı ilgilendiğiniz taban sınıfla birlikte kapsama alarak bu yönteme çağrıları ayrıştırmanız gerekir.
+> Sınıfınız birden fazla sınıftan türetiliyorsa `IDispEventSimpleImpl` , bu yönteme yapılan çağrıları, ilgilendiğiniz belirli temel sınıfla tanımlayarak ayırt etmeniz gerekir.
 
-`DispEventAdvise`' de `pdiid`belirtilen olay kaynağı ile bir bağlantı kurar.
+`DispEventAdvise` içinde belirtilen olay kaynağıyla bağlantı kurar `pdiid` .
 
-## <a name="idispeventsimpleimpldispeventunadvise"></a><a name="dispeventunadvise"></a>IDispEventSimpleImpl::DispEventUnadvise
+## <a name="idispeventsimpleimpldispeventunadvise"></a><a name="dispeventunadvise"></a> IDispEventSimpleImpl::D ispEventUnadvise
 
-*pUnk*tarafından temsil edilen olay kaynağı ile bağlantıyı bozar.
+*Punk* tarafından temsil edilen olay kaynağıyla bağlantıyı keser.
 
 ```
 HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
@@ -164,11 +165,11 @@ HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-[içinde] Olay kaynağı `IUnknown` nesnenin arabirimine bir işaretçi.
+*pUnk dili*<br/>
+'ndaki `IUnknown` Olay kaynağı nesnesinin arabirimine yönelik bir işaretçi.
 
-*piid*<br/>
-Olay kaynağı nesnenin IID için bir işaretçi.
+*piıd*<br/>
+Olay kaynağı nesnesinin IID 'sine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -176,16 +177,16 @@ S_OK veya herhangi bir hata HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağlantı koptuktan sonra, olaylar artık olay lavabo haritasında listelenen işleyici işlevlerine yönlendirilmez.
+Bağlantı bozulur, olaylar artık olay havuzu eşlemesinde listelenen işleyici işlevlerine yönlendirilmeyecektir.
 
 > [!NOTE]
-> Sınıfınız birden çok `IDispEventSimpleImpl` sınıftan türetiliyorsa, çağrıyı ilgilendiğiniz taban sınıfla birlikte kapsama alarak bu yönteme çağrıları ayrıştırmanız gerekir.
+> Sınıfınız birden fazla sınıftan türetiliyorsa `IDispEventSimpleImpl` , bu yönteme yapılan çağrıları, ilgilendiğiniz belirli temel sınıfla tanımlayarak ayırt etmeniz gerekir.
 
-`DispEventAdvise`'de `pdiid`belirtilen olay kaynağıyla kurulan bağlantıyı bozar.
+`DispEventAdvise` içinde belirtilen olay kaynağıyla kurulan bir bağlantıyı keser `pdiid` .
 
-## <a name="idispeventsimpleimplgetidsofnames"></a><a name="getidsofnames"></a>IDispEventSimpleImpl::GetIDsOfNames
+## <a name="idispeventsimpleimplgetidsofnames"></a><a name="getidsofnames"></a> IDispEventSimpleImpl:: GetIDsOfNames
 
-İadelerin `IDispatch::GetIDsOfNames` bu uygulaması E_NOTIMPL.
+Bu uygulama `IDispatch::GetIDsOfNames` E_NOTIMPL döndürür.
 
 ```
 STDMETHOD(GetIDsOfNames)(
@@ -198,11 +199,11 @@ STDMETHOD(GetIDsOfNames)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. IDispatch::Windows SDK'daki [GetIDsOfNames.](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames)
+Windows SDK için bkz. [IDispatch:: GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) .
 
-## <a name="idispeventsimpleimplgettypeinfo"></a><a name="gettypeinfo"></a>IDispEventSimpleImpl::GetTypeInfo
+## <a name="idispeventsimpleimplgettypeinfo"></a><a name="gettypeinfo"></a> IDispEventSimpleImpl:: GetTypeInfo
 
-İadelerin `IDispatch::GetTypeInfo` bu uygulaması E_NOTIMPL.
+Bu uygulama `IDispatch::GetTypeInfo` E_NOTIMPL döndürür.
 
 ```
 STDMETHOD(GetTypeInfo)(
@@ -213,11 +214,11 @@ STDMETHOD(GetTypeInfo)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. IDispatch::Windows SDK'da [TypeInfo'yu alın.](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo)
+Windows SDK [IDispatch:: GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) bölümüne bakın.
 
-## <a name="idispeventsimpleimplgettypeinfocount"></a><a name="gettypeinfocount"></a>IDispEventSimpleImpl::GetTypeInfoCount
+## <a name="idispeventsimpleimplgettypeinfocount"></a><a name="gettypeinfocount"></a> IDispEventSimpleImpl:: GetTypeInfoCount
 
-İadelerin `IDispatch::GetTypeInfoCount` bu uygulaması E_NOTIMPL.
+Bu uygulama `IDispatch::GetTypeInfoCount` E_NOTIMPL döndürür.
 
 ```
 STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
@@ -225,11 +226,11 @@ STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. IDispatch::Windows SDK'da [TypeInfoCount'u alın.](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount)
+Windows SDK bkz. [IDispatch:: GetTypeInfoCount](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) .
 
-## <a name="idispeventsimpleimplinvoke"></a><a name="invoke"></a>IDispEventSimpleImpl::Invoke
+## <a name="idispeventsimpleimplinvoke"></a><a name="invoke"></a> IDispEventSimpleImpl:: Invoke
 
-Bu uygulama, olay lavabo haritasında listelenen olay işleyicilerini `IDispatch::Invoke` çağırır.
+Bu uygulama, `IDispatch::Invoke` olay havuzu eşlemesinde listelenen olay işleyicilerini çağırır.
 
 ```
 STDMETHOD(Invoke)(
@@ -245,11 +246,11 @@ STDMETHOD(Invoke)(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
+Bkz. [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
 
-## <a name="idispeventsimpleimplunadvise"></a><a name="unadvise"></a>IDispEventSimpleImpl::Tavsiye siz
+## <a name="idispeventsimpleimplunadvise"></a><a name="unadvise"></a> IDispEventSimpleImpl:: Unadvise
 
-*pUnk*tarafından temsil edilen olay kaynağı ile bağlantıyı bozar.
+*Punk* tarafından temsil edilen olay kaynağıyla bağlantıyı keser.
 
 ```
 HRESULT Unadvise(IUnknown* pUnk);
@@ -257,8 +258,8 @@ HRESULT Unadvise(IUnknown* pUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-[içinde] Olay kaynağı `IUnknown` nesnenin arabirimine bir işaretçi.
+*pUnk dili*<br/>
+'ndaki `IUnknown` Olay kaynağı nesnesinin arabirimine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -266,19 +267,19 @@ S_OK veya herhangi bir hata HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bağlantı koptuktan sonra, olaylar artık olay lavabo haritasında listelenen işleyici işlevlerine yönlendirilmez.
+Bağlantı bozulur, olaylar artık olay havuzu eşlemesinde listelenen işleyici işlevlerine yönlendirilmeyecektir.
 
 > [!NOTE]
-> Sınıfınız birden çok `IDispEventSimpleImpl` sınıftan türetiliyorsa, çağrıyı ilgilendiğiniz taban sınıfla birlikte kapsama alarak bu yönteme çağrıları ayrıştırmanız gerekir.
+> Sınıfınız birden fazla sınıftan türetiliyorsa `IDispEventSimpleImpl` , bu yönteme yapılan çağrıları, ilgilendiğiniz belirli temel sınıfla tanımlayarak ayırt etmeniz gerekir.
 
-`Unadvise`'de `pdiid`belirtilen varsayılan olay kaynağıyla kurulan bağlantıyı bozar.
+`Unadvise` ' de belirtilen varsayılan olay kaynağıyla kurulan bir bağlantıyı keser `pdiid` .
 
-`Unavise`varsayılan olay kaynağı ile bir bağlantı tatili, [atlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface)tarafından belirlenen nesnenin varsayılan olay kaynağının IID alır.
+`Unavise` varsayılan olay kaynağıyla bir bağlantıyı keser, [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface)tarafından belirlendiği şekilde nesnenin varsayılan olay kaynağının IID 'sini alır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_ATL_FUNC_INFO Yapısı](../../atl/reference/atl-func-info-structure.md)<br/>
-[IDispatchImpl Sınıfı](../../atl/reference/idispatchimpl-class.md)<br/>
-[IDispEventImpl Sınıfı](../../atl/reference/idispeventimpl-class.md)<br/>
+[_ATL_FUNC_INFO yapısı](../../atl/reference/atl-func-info-structure.md)<br/>
+[IDispatchImpl sınıfı](../../atl/reference/idispatchimpl-class.md)<br/>
+[IDispEventImpl sınıfı](../../atl/reference/idispeventimpl-class.md)<br/>
 [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

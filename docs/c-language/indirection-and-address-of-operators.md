@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yöneltme ve adres Işleçleri'
 title: İşleçlerin Yöneltmesi ve Adresi
 ms.date: 02/16/2018
 helpviewer_keywords:
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - '* operator, address-of operator'
 - operators [C++], indirection
 ms.assetid: 10d62b00-12ba-4ea9-a2d5-09ac29ca2232
-ms.openlocfilehash: e631959e69fbdf026886b7a67a3d4e4cd7266989
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bd05d9eee4a453d9d99198a1a8481fcebcf103dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229642"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137599"
 ---
 # <a name="indirection-and-address-of-operators"></a>İşleçlerin Yöneltmesi ve Adresi
 
 Birli yöneltme işleci (__&#42;__) bir işaretçi aracılığıyla bir değere dolaylı olarak erişir. İşlenen bir işaretçi türü olmalıdır. İşlemin sonucu, işlenen tarafından ele alınan değerdir; yani işlenenin işaret ettiği adresteki değerdir. Sonucun türü, işlenenin ele aldığı türdür.
 
-Terim türü *işaretçi*türünde ise, yöneltme işlecinin sonucu *tür* olur. İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir nesneye işaret ediyorsa, sonuç nesneyi atayan bir lvalue olur.
+Terim türü *işaretçi* türünde ise, yöneltme işlecinin sonucu *tür* olur. İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir nesneye işaret ediyorsa, sonuç nesneyi atayan bir lvalue olur.
 
 İşaretçi değeri geçerli değilse, yöneltme işlecinin sonucu tanımsız olur. Bunlar, bir işaretçi değerini geçersiz kılan en yaygın koşulların bazılarıdır:
 
@@ -38,7 +39,7 @@ Terim türü *işaretçi*türünde ise, yöneltme işlecinin sonucu *tür* olur.
 
 - İşaretçi, yürütülen program tarafından kullanılmayan bir adresi belirtir.
 
-Birli adres işleci ( **&** ), işleneninin adresini verir. İşlenen, __kayıt__ bildirilmemiş ve bir bit alanı olmayan bir nesne ya da bir birli __&#42;__ işlecinin veya dizi başvuru (__&#91;&#93;__) işlecinin veya bir işlev göstergesinin sonucu olan bir lvalue olmalıdır. Sonuç *tür türü işleneni*için *tür işaretçisinin* türü.
+Birli adres işleci ( **&** ), işleneninin adresini verir. İşlenen, __kayıt__ bildirilmemiş ve bir bit alanı olmayan bir nesne ya da bir birli __&#42;__ işlecinin veya dizi başvuru (__&#91;&#93;__) işlecinin veya bir işlev göstergesinin sonucu olan bir lvalue olmalıdır. Sonuç *tür türü işleneni* için *tür işaretçisinin* türü.
 
 İşlenen, birli __&#42;__ işlecinin sonucudur, hiçbir işleç değerlendirilir ve sonuç her ikisi de atlanmış gibi olur. Sonuç bir lvalue değil ve işleçlere ilişkin kısıtlamalar hala geçerlidir. İşlenen bir __&#91;&#93;__ işlecinin sonucu ise, __&__ __&#91;&#93;__ işleci tarafından kapsanan işleç veya birli __&#42;__ değerlendirilir. Sonuç, __&__ işleci kaldırma ve __&#91;&#93;__ işlecini bir işleçle değiştirme ile aynı etkiye sahiptir __+__ . Aksi takdirde sonuç, işlenen tarafından atanan nesne veya işleve yönelik bir işaretçidir.
 
@@ -58,7 +59,7 @@ Bu ifade, **&** dizinin altıncı öğesinin adresini almak için Address-of iş
 pa = &a[5];
 ```
 
-Bu örnekte,__ __ **`int`** içinde depolanan adresteki değere erişmek için yöneltme işleci (&#42;) kullanılır `pa` . Değer, tamsayı değişkenine atanır `x` :
+Bu örnekte,____ **`int`** içinde depolanan adresteki değere erişmek için yöneltme işleci (&#42;) kullanılır `pa` . Değer, tamsayı değişkenine atanır `x` :
 
 ```C
 x = *pa;

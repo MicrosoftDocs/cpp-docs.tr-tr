@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bileşik denetim makroları'
 title: Bileşik denetim makroları
 ms.date: 05/06/2019
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, macros
 ms.assetid: 17f2dd5e-07e6-4aa6-b965-7a361c78c45e
-ms.openlocfilehash: 7ac13a11646faca53b38ec610dc0388bdd14d251
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0107f91350516bd0f7e35cf82a49f79ff3c5797e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141199"
 ---
 # <a name="composite-control-macros"></a>Bileşik denetim makroları
 
@@ -72,7 +73,7 @@ ActiveX olay havuzları 'nın CE ATL uygulamasında yalnızca HRESULT veya olay 
 
 ## <a name="sink_entry"></a><a name="sink_entry"></a> SINK_ENTRY
 
-*Kimliği*tarafından tanımlanan denetimin belirtilen olay (*DISPID*) için işleyici işlevini (*FN*) bildirir.
+*Kimliği* tarafından tanımlanan denetimin belirtilen olay (*DISPID*) için işleyici işlevini (*FN*) bildirir.
 
 ```
 SINK_ENTRY( id, dispid, fn )
@@ -99,7 +100,7 @@ ActiveX olay havuzları 'nın CE ATL uygulamasında yalnızca HRESULT veya olay 
 
 ## <a name="sink_entry_ex-and-sink_entry_ex_p"></a><a name="sink_entry_ex"></a> SINK_ENTRY_EX ve SINK_ENTRY_EX_P
 
-*Kimliğe*göre tanımlanan denetim için, dağıtım arabiriminin (*IID*) belirtilen olay (*DISPID*) için işleyici işlevini (*FN*) bildirir.
+*Kimliğe* göre tanımlanan denetim için, dağıtım arabiriminin (*IID*) belirtilen olay (*DISPID*) için işleyici işlevini (*FN*) bildirir.
 
 ```
 SINK_ENTRY_EX( id, iid, dispid, fn )

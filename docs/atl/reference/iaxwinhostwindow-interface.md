@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IAxWinHostWindow arabirimi'
 title: IAxWinHostWindow arabirimi
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinHostWindow interface
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-ms.openlocfilehash: 44681b94e0bd1dfd757ebfa19f83074785dd95f5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 86cccd2b9ae19d5020cd1cf7ff2f0aff8759060e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833380"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139717"
 ---
 # <a name="iaxwinhostwindow-interface"></a>IAxWinHostWindow arabirimi
 
@@ -61,7 +62,7 @@ Bu arabirimin tanımı aşağıda gösterildiği gibi IDL veya C++ olarak kullan
 
 ## <a name="iaxwinhostwindowattachcontrol"></a><a name="attachcontrol"></a> IAxWinHostWindow:: AttachControl
 
-*HWND*tarafından tanımlanan pencereyi kullanarak, mevcut (ve daha önce başlatılmış) bir denetimi ana bilgisayar nesnesine iliştirir.
+*HWND* tarafından tanımlanan pencereyi kullanarak, mevcut (ve daha önce başlatılmış) bir denetimi ana bilgisayar nesnesine iliştirir.
 
 ```
 STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
@@ -81,7 +82,7 @@ Standart bir HRESULT değeri.
 
 ## <a name="iaxwinhostwindowcreatecontrol"></a><a name="createcontrol"></a> IAxWinHostWindow:: CreateControl
 
-Bir denetim oluşturur, onu başlatır ve *HWND*tarafından tanımlanan pencerede barındırır.
+Bir denetim oluşturur, onu başlatır ve *HWND* tarafından tanımlanan pencerede barındırır.
 
 ```
 STDMETHOD(CreateControl)(

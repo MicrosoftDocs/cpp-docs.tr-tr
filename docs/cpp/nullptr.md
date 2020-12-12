@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: nullptr'
 title: nullptr
 ms.date: 07/22/2020
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - nullptr keyword [C++]
 ms.assetid: e9d80ea6-2506-4eb5-b47b-2349df085832
-ms.openlocfilehash: 801ae927d6c9fb70c3187d10269e87097a879bfc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8d7eb3a578addc14b85c53c50ab81c6e5592d541
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146165"
 ---
 # <a name="nullptr"></a>nullptr
 
@@ -27,4 +28,4 @@ ms.locfileid: "87223635"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[`nullptr`(C++/CLı ve C++/CX)](../extensions/nullptr-cpp-component-extensions.md)
+[`nullptr` (C++/CLı ve C++/CX)](../extensions/nullptr-cpp-component-extensions.md)

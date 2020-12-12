@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: valarray Class'
 title: valarray Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - std::valarray [C++], sum
 - std::valarray [C++], swap
 ms.assetid: 19b862f9-5d09-4003-8844-6ddd02c1a3a7
-ms.openlocfilehash: 177840ffea711395b7cace6e47426d979f8fe329
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 53b2c2160b522bd28e316eb29f0661447fb84b11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840134"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132632"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 
@@ -77,7 +78,7 @@ Sınıfının bir nesnesi `Type` :
 |[cshift](#cshift)|Periyodik, içindeki tüm öğeleri `valarray` belirtilen sayıda konum ile kaydırır.|
 |[Süz](#free)|Tarafından kullanılan belleği serbest bırakır `valarray` .|
 |[Biçimlendir](#max)|İçindeki en büyük öğeyi bulur `valarray` .|
-|[dk](#min)|İçindeki en küçük öğeyi bulur `valarray` .|
+|[Min](#min)|İçindeki en küçük öğeyi bulur `valarray` .|
 |[yeniden boyutlandırma](#resize)|İçindeki öğe sayısını belirtilen sayı olarak değiştirir `valarray` , gerekli olarak öğeleri ekler veya kaldırır.|
 |[karakter](#shift)|İçindeki tüm öğeleri `valarray` belirtilen sayıda konum ile kaydırır.|
 |[boyutla](#size)|İçindeki öğe sayısını bulur `valarray` .|
@@ -129,7 +130,7 @@ Const için işlev nesnesi, valarray işleneninin her öğesine uygulanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, valarray sınıfının bir nesnesini döndürür [valarray](../standard-library/valarray-class.md) **\<Type>** . [Bu,](#size)öğelerinden her biri *olan* öğeleri `_Func((*this)[I])` .
+Üye işlevi, valarray sınıfının bir nesnesini döndürür [](../standard-library/valarray-class.md) **\<Type>** . [Bu,](#size)öğelerinden her biri *olan* öğeleri `_Func((*this)[I])` .
 
 ### <a name="example"></a>Örnek
 
@@ -269,7 +270,7 @@ void free();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu standart olmayan işlev boş bir valarray atama ile eşdeğerdir. Örnek:
+Bu standart olmayan işlev boş bir valarray atama ile eşdeğerdir. Örneğin:
 
 ```cpp
 valarray<T> v;
@@ -292,7 +293,7 @@ Valarray işleneninde öğelerin en büyük değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, sınıfının öğelerinin çiftleri arasında **işleç \<** or **operator> ** uygulayarak değerleri karşılaştırır `Type` . Bu öğe için işleç belirtilmelidir `Type` .
+Üye işlevi, sınıfının öğelerinin çiftleri arasında **işleç \<** or **operator>** uygulayarak değerleri karşılaştırır `Type` . Bu öğe için işleç belirtilmelidir `Type` .
 
 ### <a name="example"></a>Örnek
 
@@ -345,7 +346,7 @@ Valarray işleneninde öğelerin en küçük değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, sınıfının öğelerinin çiftleri arasında **işleç \<** or **operator> ** uygulayarak değerleri karşılaştırır `Type` . Bu öğe için işleç belirtilmelidir `Type` .
+Üye işlevi, sınıfının öğelerinin çiftleri arasında **işleç \<** or **operator>** uygulayarak değerleri karşılaştırır `Type` . Bu öğe için işleç belirtilmelidir `Type` .
 
 ### <a name="example"></a>Örnek
 
@@ -399,7 +400,7 @@ Valarray işleneninin öğe değerlerini olumsuzlama olan Boolean değerlerinin 
 
 Mantıksal işlem, tüm sıfırları bir değere dönüştürdüğünden ve sıfır dışında tüm değerleri sıfır olarak dönüştürerek **öğeleri geçersiz hale** getirir. Boole değerlerinin döndürülen valarray, valarray işleneni ile aynı boyutudır.
 
-Ayrıca, bir valarray öğesinin ikili temsilindeki tek tek bitlerin **düzeyinde geçersiz hale**gelen bir[valarray:: operator ~](#op_dtor) **`char`** **`int`** .
+Ayrıca, bir valarray öğesinin ikili temsilindeki tek tek bitlerin **düzeyinde geçersiz hale** gelen bir [valarray:: operator ~](#op_dtor) **`char`** **`int`** .
 
 ### <a name="example"></a>Örnek
 
@@ -532,7 +533,7 @@ valarray<Type>& operator&=(const Type& right);
 
 Bit düzeyinde bir işlem yalnızca,, **`char`** **`int`** **`float`** **`double`** **longdouble**, **`void`** , **`bool`** , veya diğer daha karmaşık veri türlerinde değil, BITS içindeki ve veri türlerinde ve değişkenlerde değişiklik yapmak için kullanılabilir.
 
-Bit düzeyinde ve mantıksal olarak aynı Truth tablosuna sahiptir, `AND` ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. B 1 ve *b*2 *olan bitler*, *b*1 `AND` *b*2, **`true`** her iki bit de true ise, **`false`** en az bir değer false ise.
+Bit düzeyinde ve mantıksal olarak aynı Truth tablosuna sahiptir, `AND` ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. B 1 ve *b* 2 *olan bitler*, *b* 1 `AND` *b* 2, **`true`** her iki bit de true ise, **`false`** en az bir değer false ise.
 
 ### <a name="example"></a>Örnek
 
@@ -670,7 +671,7 @@ valarray<Type>& operator<<=(const Type& right);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri *sağ tarafta*belirtilen miktarı sola kaydırılan bir valarray.
+Öğeleri *sağ tarafta* belirtilen miktarı sola kaydırılan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -743,7 +744,7 @@ valarray<Type>& operator*=(const Type& right);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri valarray ve *Right*işleneninin öğe odaklı ürünü olan bir valarray.
+Öğeleri valarray ve *Right* işleneninin öğe odaklı ürünü olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -862,7 +863,7 @@ valarray<Type>& operator+=(const Type& right);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri valarray ve *Right*işleneninin öğe temelinde toplamı olan bir valarray.
+Öğeleri valarray ve *Right* işleneninin öğe temelinde toplamı olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -982,7 +983,7 @@ Bir öğe türünün valarray veya değeri, öğe temelinde çıkarılacak valar
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri valarray ve *Right*işleneninin öğe temelinde farkı olan bir valarray.
+Öğeleri valarray ve *Right* işleneninin öğe temelinde farkı olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -1049,7 +1050,7 @@ valarray<Type>& operator/=(const Type& right);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri, valarray işlenenin öğe temelinde bölümü olan ve *sağ*tarafından bölünmüş bir.
+Öğeleri, valarray işlenenin öğe temelinde bölümü olan ve *sağ* tarafından bölünmüş bir.
 
 ### <a name="example"></a>Örnek
 
@@ -1141,11 +1142,11 @@ Valarray işlenene kopyalanacak indirect_array.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk üye işleci denetimli diziyi, *sağdan*denetlenen sıranın bir kopyasıyla değiştirir.
+İlk üye işleci denetimli diziyi, *sağdan* denetlenen sıranın bir kopyasıyla değiştirir.
 
 İkinci üye işleci ilki ile aynıdır, ancak [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-Üçüncü üye işleci, denetlenen sıranın her bir öğesini bir *Val*kopyasıyla değiştirir.
+Üçüncü üye işleci, denetlenen sıranın her bir öğesini bir *Val* kopyasıyla değiştirir.
 
 Kalan üye işleçleri, yalnızca [işleç&#91;&#93;](#op_at)tarafından oluşturulan, bağımsız değişkenlerine göre seçilen denetimli dizinin öğelerinin yerini alır.
 
@@ -1283,11 +1284,11 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri, öğe odaklı, valarray ve *Right*işleneninin dışlamalı mantıksal **Xor** olan bir valarray.
+Öğeleri, öğe odaklı, valarray ve *Right* işleneninin dışlamalı mantıksal **Xor** olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Xor**olarak adlandırılan dışlamalı mantıksal veya, aşağıdaki anlamlara sahiptir: *e*1 ve *d*2 öğeleri verildiğinde *e*1 **Xor** *e*2, **`true`** öğelerinden tam olarak biri true ise, **`false`** her iki öğe de true ise veya her iki öğe de doğruysa.
+**Xor** olarak adlandırılan dışlamalı mantıksal veya, aşağıdaki anlamlara sahiptir: *e* 1 ve *d* 2 öğeleri verildiğinde *e* 1 **Xor** *e* 2, **`true`** öğelerinden tam olarak biri true ise, **`false`** her iki öğe de true ise veya her iki öğe de doğruysa.
 
 ### <a name="example"></a>Örnek
 
@@ -1358,13 +1359,13 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri, valarray işlenenin öğe temelinde bit düzeyinde olan bir `OR` valarray. *right*
+Öğeleri, valarray işlenenin öğe temelinde bit düzeyinde olan bir `OR` valarray. 
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bit düzeyinde bir işlem yalnızca,, **`char`** **`int`** **`float`** **`double`** **longdouble**, **`void`** , **`bool`** , veya diğer daha karmaşık veri türlerinde değil, BITS içindeki ve veri türlerinde ve değişkenlerde değişiklik yapmak için kullanılabilir.
 
-Bit düzeyinde `OR` mantıksal olarak aynı Truth tablosu vardır, `OR` ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Bit *b*1 ve *b*2, *b*1 `OR` *b*2, **`true`** bitlerin en az biri true ise, **`false`** her iki bit de yanlış olursa.
+Bit düzeyinde `OR` mantıksal olarak aynı Truth tablosu vardır, `OR` ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Bit *b* 1 ve *b* 2, *b* 1 `OR` *b* 2, **`true`** bitlerin en az biri true ise, **`false`** her iki bit de yanlış olursa.
 
 ### <a name="example"></a>Örnek
 
@@ -1816,7 +1817,7 @@ void swap(valarray& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. Bu, sabit bir zamanda özel durum oluşturmaz ve iki denetimli sırada öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir . Bu, sabit bir zamanda özel durum oluşturmaz ve iki denetimli sırada öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar.
 
 ## <a name="valarray"></a><a name="valarray"></a> valarray
 
@@ -1893,7 +1894,7 @@ Kopyalanacak öğeleri içeren initializer_list.
 
 - Açık için `valarray(size_t Count)` her öğe varsayılan Oluşturucu ile başlatılır.
 
-- İçin `valarray(const Type& Val, Count)` her öğe *Val*ile başlatılır.
+- İçin `valarray(const Type& Val, Count)` her öğe *Val* ile başlatılır.
 
 - İçin `valarray(const Type* Ptr, Count)` , konumundaki öğesi `I` `Ptr` [] ile başlatılır `I` .
 

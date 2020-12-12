@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: EŞITTIR'
 title: EQU
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,28 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - EQU directive
 ms.assetid: 96db466a-1eab-45bd-a3c2-5a59bd754eab
-ms.openlocfilehash: f409110e665edc590383c438f12cc8b13084bc22
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: b62816d0d7d8890b3800db70c17997766bdcfd41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317350"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130474"
 ---
 # <a name="equ"></a>EQU
 
-İlk yönerge *ada*bir *ifadenin* sayısal değerini atar.
+İlk yönerge *ada* bir *ifadenin* sayısal değerini atar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > *ad* **eşittir** *ifadesi*
 >
-> *ad* **eşittir** __\<__ *metin* __>__
+> *ad* **eşittir**__\<__*text*__>__
 
 ## <a name="remarks"></a>Açıklamalar
 
 *Ad* daha sonra yeniden tanımlanamaz.
 
-İkinci yönerge, belirtilen *metni* *ada*atar. *Ada* daha sonra farklı bir *metin* atanabilir. Bkz. [TEXTEQU](textequ.md).
+İkinci yönerge, belirtilen *metni* *ada* atar. *Ada* daha sonra farklı bir *metin* atanabilir. Bkz. [TEXTEQU](textequ.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

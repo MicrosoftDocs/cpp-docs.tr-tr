@@ -1,21 +1,22 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Işlev şablonlarının kısmi sıralaması (C++)'
 title: İşlev Şablonlarının Kısmi Sıralanması (C++)
 ms.date: 07/30/2019
 helpviewer_keywords:
 - partial ordering of function templates
 ms.assetid: 0c17347d-0e80-47ad-b5ac-046462d9dc73
-ms.openlocfilehash: 0c4f11b4b3e02504c4786ea34441362b542959d6
-ms.sourcegitcommit: 725e86dabe2901175ecc63261c3bf05802dddff4
+ms.openlocfilehash: 701c97aa819d0294f69f2fe2a71ffb9bf0210afa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68682419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145906"
 ---
 # <a name="partial-ordering-of-function-templates-c"></a>İşlev Şablonlarının Kısmi Sıralanması (C++)
 
 İşlev çağrısının bağımsız değişken listesiyle eşleşen birden fazla işlev şablonu kullanılabilir. C++, hangi işlevin çağrılması gerektiğini belirtmek için işlev şablonlarının kısmi bir sıralamasını tanımlar. Sıralama, eşit şekilde özel olarak kabul edilen bazı şablonlar olabileceği için kısmidir.
 
-Derleyici, olası eşleşmeler arasından en özel şablon işlevini seçer. Örneğin, bir işlev şablonu bir tür `T` alırsa ve kullanılabilir başka bir işlev şablonu `T*` varsa, `T*` sürüm daha özelleştirilmiş olarak kabul edilir. Bağımsız değişken bir işaretçi türü olduğunda `T` , her ikisi de izin verilen eşleşmeler olsa da, genel sürüm üzerinden tercih edilir.
+Derleyici, olası eşleşmeler arasından en özel şablon işlevini seçer. Örneğin, bir işlev şablonu bir tür alırsa `T` ve kullanılabilir başka bir işlev şablonu varsa `T*` , `T*` sürüm daha özelleştirilmiş olarak kabul edilir. `T`Bağımsız değişken bir işaretçi türü olduğunda, her ikisi de izin verilen eşleşmeler olsa da, genel sürüm üzerinden tercih edilir.
 
 Bir işlev şablonu adayının daha özel olup olmadığını belirlemek için aşağıdaki işlemi kullanın:
 
@@ -33,11 +34,11 @@ Bir işlev şablonu adayının daha özel olup olmadığını belirlemek için a
 
    1. Belirli bir tür için bir şablonu özelleştirme, genel türden bir bağımsız değişken alan özelleştirmeye göre daha özeldir.
 
-   1. Bir şablon bağımsız değişkeni `T*` `X*` `T` için`X` geçerli bir bağımsız değişken olduğundan, yalnızca bir alma işlemi yalnızca bir tane daha özelleştirilmiştir. `T` `T*`şablon bağımsız değişkeni.
+   1. Bir şablon bağımsız değişken için geçerli bir bağımsız değişken olduğundan, ancak bir şablon bağımsız değişkeni için geçerli bir bağımsız değişken olmadığından yalnızca `T*` bir alma işlemi yalnızca bir tane daha özelleştirilmiştir `T` `X*` `T` `X` `T*` .
 
-   1. `const T``T`, bir `const T` `const X` `X` şablon bağımsız değişkeni için geçerli bir bağımsız değişken olduğundan, ancak şablon bağımsız değişkeni için geçerli bir bağımsız değişken olmadığından, daha özelleştirilmiş. `T`
+   1. `const T` , bir şablon bağımsız değişkeni için geçerli bir bağımsız değişken olduğundan, `T` `const X` `T` ancak `X` şablon bağımsız değişkeni için geçerli bir `const T` bağımsız değişken olmadığından, daha özelleştirilmiş.
 
-   1. `const T*``T*`, bir `const T*` `const X*` `X*` şablon bağımsız değişkeni için geçerli bir bağımsız değişken olduğundan, ancak şablon bağımsız değişkeni için geçerli bir bağımsız değişken olmadığından, daha özelleştirilmiş. `T*`
+   1. `const T*` , bir şablon bağımsız değişkeni için geçerli bir bağımsız değişken olduğundan, `T*` `const X*` `T*` ancak `X*` şablon bağımsız değişkeni için geçerli bir `const T*` bağımsız değişken olmadığından, daha özelleştirilmiş.
 
 ## <a name="example"></a>Örnek
 
@@ -73,7 +74,7 @@ int main() {
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Less specialized function called
@@ -83,4 +84,4 @@ Even more specialized function for const T*
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşlev Şablonları](../cpp/function-templates.md)
+[İşlev şablonları](../cpp/function-templates.md)
