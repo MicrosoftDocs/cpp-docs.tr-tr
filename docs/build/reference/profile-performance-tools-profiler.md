@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/PROFILE (performans araçları Profil Oluşturucusu)
 title: /PROFILE (Performans Araçları Profil Oluşturucusu)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - -PROFILE linker option
 - /PROFILE linker option
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699
-ms.openlocfilehash: 07952c979fd66291b1744521d83e4556f010d297
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fb9310bb782a4b321113155f01db2228e3a46e15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500784"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225797"
 ---
 # <a name="profile-performance-tools-profiler"></a>/PROFILE (Performans Araçları Profil Oluşturucusu)
 
 Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası üretir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /PROFILE
@@ -58,7 +59,7 @@ Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası ü
 
 ### <a name="to-set-this-linker-option-within-visual-studio-cmake-project"></a>Visual Studio CMake projesi içinde bu bağlayıcı seçeneğini ayarlamak için
 
-**CMake** projesinde **Özellik sayfaları**yok, bağlayıcı seçenekleri CMakeLists.txt modifgöre ayarlanabilir.
+**CMake** projesinde **Özellik sayfaları** yok, bağlayıcı seçenekleri CMakeLists.txt modifgöre ayarlanabilir.
 
 1. Proje kök dizininde CMakeLists.txt açın.
 

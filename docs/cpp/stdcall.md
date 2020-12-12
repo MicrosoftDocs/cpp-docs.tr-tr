@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __stdcall'
 title: __stdcall
 ms.date: 10/10/2018
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - __stdcall keyword [C++]
 ms.assetid: e212594b-1827-4d07-9527-7d412b300df8
-ms.openlocfilehash: 85d1b29fddece741aa94364bb6edfdf3b973faaf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 86ed4604eeb33c31f79ceac57b28f7f4655e78f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213183"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317941"
 ---
 # <a name="__stdcall"></a>__stdcall
 
 **`__stdcall`** Çağırma kuralı Win32 API işlevlerini çağırmak için kullanılır. Çağrılan yığını temizler, bu nedenle derleyici `vararg` işlevleri yapar **`__cdecl`** . Bu çağırma kuralını kullanan işlevler, bir işlev prototipi gerektirir. **`__stdcall`** Değiştirici, Microsoft 'a özgüdür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > *dönüş türü* **`__stdcall`** *işlev adı*[ **`(`** *bağımsız değişken-listesi* **`)`** ]
 
@@ -32,8 +33,8 @@ Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.
 |Bağımsız değişken geçirme sırası|Sağdan sola.|
 |Bağımsız değişken geçirme kuralı|Bir işaretçi veya başvuru türü geçirilmemişse değere göre.|
 |Yığın bakımı sorumluluğu|Çağrılan işlev, kendi bağımsız değişkenlerini yığından çıkarır.|
-|Ad düzenleme kuralı|Ada bir alt çizgi ( `_` ) ön eki eklenir. Adından sonra gelen işareti ( `@` ) ve ardından bağımsız değişken listesindeki bayt sayısı (ondalık olarak) gelir. Bu nedenle, olarak belirtilen işlev `int func( int a, double b )` Şu şekilde tasarlanmıştır:`_func@12`|
-|Durum çevirisi kuralları|Hiçbiri|
+|Ad düzenleme kuralı|Ada bir alt çizgi ( `_` ) ön eki eklenir. Adından sonra gelen işareti ( `@` ) ve ardından bağımsız değişken listesindeki bayt sayısı (ondalık olarak) gelir. Bu nedenle, olarak belirtilen işlev `int func( int a, double b )` Şu şekilde tasarlanmıştır: `_func@12`|
+|Durum çevirisi kuralları|Yok|
 
 [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneği, **`__stdcall`** farklı bir çağırma kuralıyla açıkça bildirilmeyen tüm işlevler için belirtir.
 

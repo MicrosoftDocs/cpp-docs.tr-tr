@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: checked_array_iterator sınıfı'
 title: checked_array_iterator Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - stdext::checked_array_iterator [C++], reference
 - stdext::checked_array_iterator [C++], base
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
-ms.openlocfilehash: 467a94212d7b1e9d28a3229660b8a8619993b201
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 0db327613826105ccd65800246ad1bd16ffbf923
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684947"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325200"
 ---
 # <a name="checked_array_iterator-class"></a>checked_array_iterator Sınıfı
 
@@ -139,13 +140,13 @@ int main()
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Description|
+|Oluşturucu|Açıklama|
 |-|-|
 |[checked_array_iterator](#checked_array_iterator)|`checked_array_iterator`Temel bir yineleyiciden varsayılan veya bir oluşturur `checked_array_iterator` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Description|
+|Tür adı|Açıklama|
 |-|-|
 |[difference_type](#difference_type)|`checked_array_iterator`Aynı kapsayıcı içindeki öğelere başvuran iki s arasındaki farkı sağlayan bir tür.|
 |[pointer](#pointer)|Tarafından bahsedilen bir öğeye işaretçi sağlayan bir tür `checked_array_iterator` .|
@@ -153,7 +154,7 @@ int main()
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Description|
+|Üye işlevi|Açıklama|
 |-|-|
 |[base](#base)|Temel yineleyiciyi öğesinden kurtarır `checked_array_iterator` .|
 

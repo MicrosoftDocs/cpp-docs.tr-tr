@@ -1,4 +1,5 @@
 ---
+description: Static_cast Işleci hakkında daha fazla bilgi edinin
 title: static_cast İşleci
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - static_cast keyword [C++]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-ms.openlocfilehash: 8551d41417647ee4f759e2547e2c1909c59d78cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7d76b4e21adea6561d7d6822871631c242aaf9c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213209"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317967"
 ---
 # <a name="static_cast-operator"></a>static_cast İşleci
 
 *İfadeyi* yalnızca ifadede bulunan türlere göre *tür kimliği* türüne dönüştürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 static_cast <type-id> ( expression )
@@ -51,7 +52,7 @@ void f(B* pb, D* pd) {
 
 [Dynamic_cast](../cpp/dynamic-cast-operator.md)aksine, dönüştürülürken hiçbir çalışma zamanı denetimi yapılmaz **`static_cast`** `pb` . Tarafından işaret `pb` edilen nesne, türünde bir nesne olmayabilir `D` , bu durumda, `*pd2` felaket olabilir. Örneğin, sınıfının bir üyesi olan `D` , ancak sınıfı olmayan bir işlevi çağırmak `B` , erişim ihlaline yol açabilir.
 
-**`dynamic_cast`** Ve **`static_cast`** işleçleri bir işaretçiyi bir sınıf hiyerarşisi boyunca taşır. Ancak, **`static_cast`** yalnızca cast ifadesinde belirtilen bilgilere güvenir ve bu nedenle güvenli olmayabilir. Örnek:
+**`dynamic_cast`** Ve **`static_cast`** işleçleri bir işaretçiyi bir sınıf hiyerarşisi boyunca taşır. Ancak, **`static_cast`** yalnızca cast ifadesinde belirtilen bilgilere güvenir ve bu nedenle güvenli olmayabilir. Örneğin:
 
 ```cpp
 // static_cast_Operator_2.cpp
@@ -76,7 +77,7 @@ Sonuç olarak, **`static_cast`** örtük dönüştürmelerin tersini yapabilir, 
 
 Bu davranış, sınıf türleri dışındaki türler için de geçerlidir. Örneğin, bir **`static_cast`** int 'den a 'ya dönüştürmek için kullanılabilir **`char`** . Ancak, sonuçta elde edilen **`char`** tüm değeri tutacak yeterli bit olmayabilir **`int`** . Bu, bir dönüştürmenin sonuçlarının güvenli olduğunu doğrulamak için programcıda kalır **`static_cast`** .
 
-**`static_cast`** İşleci, standart dönüşümler ve Kullanıcı tanımlı dönüştürmeler de dahil olmak üzere herhangi bir örtük dönüştürmeyi gerçekleştirmek için de kullanılabilir. Örnek:
+**`static_cast`** İşleci, standart dönüşümler ve Kullanıcı tanımlı dönüştürmeler de dahil olmak üzere herhangi bir örtük dönüştürmeyi gerçekleştirmek için de kullanılabilir. Örneğin:
 
 ```cpp
 // static_cast_Operator_3.cpp

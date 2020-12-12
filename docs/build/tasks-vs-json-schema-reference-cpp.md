@@ -1,19 +1,20 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: şema başvurusunda tasks.vs.js(C++)'
 title: Şema başvurusunda tasks.vs.js(C++)
 ms.date: 08/20/2019
 helpviewer_keywords:
 - tasks.vs.json file [C++]
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: a2aea1b64d5a6c62604c680bf1a4a26478b7b52a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1fd4cfb960afa1260c8ea85c0e7fe9274c77ac68
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844996"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275327"
 ---
 # <a name="tasksvsjson-schema-reference-c"></a>Şema başvurusunda tasks.vs.js(C++)
 
-Visual Studio 'Yu açık bir klasör projesinde kaynak kodunuzu nasıl derleyeceğinizi söylemek için dosyasına bir *tasks.vs.js* ekleyin. Burada herhangi bir rastgele görevi tanımlayabilir ve ardından **Çözüm Gezgini** bağlam menüsünden çağırabilirsiniz. Tüm derleme komutları *CMakeLists.txt*belirtildiğinden CMake projeleri bu dosyayı kullanmaz. CMake dışındaki derleme sistemlerinde, derleme komutlarını belirtebileceğiniz ve derleme betikleri çağırabileceğiniz *tasks.vs.js* . *Üzerindetasks.vs.js*kullanma hakkında genel bilgi için, bkz. ["klasör açma" geliştirmesi için derleme ve hata ayıklama görevlerini özelleştirme](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
+Visual Studio 'Yu açık bir klasör projesinde kaynak kodunuzu nasıl derleyeceğinizi söylemek için dosyasına bir *tasks.vs.js* ekleyin. Burada herhangi bir rastgele görevi tanımlayabilir ve ardından **Çözüm Gezgini** bağlam menüsünden çağırabilirsiniz. Tüm derleme komutları *CMakeLists.txt* belirtildiğinden CMake projeleri bu dosyayı kullanmaz. CMake dışındaki derleme sistemlerinde, derleme komutlarını belirtebileceğiniz ve derleme betikleri çağırabileceğiniz *tasks.vs.js* . *Üzerindetasks.vs.js* kullanma hakkında genel bilgi için, bkz. ["klasör açma" geliştirmesi için derleme ve hata ayıklama görevlerini özelleştirme](/visualstudio/ide/customize-build-and-debug-tasks-in-visual-studio).
 
 Bir görev, `type` dört değerden birine sahip olabilecek bir özelliğe sahiptir: `default` , `launch` , `remote` veya `msbuild` . Birçok görev `launch` , uzak bir bağlantı gerekmiyorsa kullanılmalıdır.
 
@@ -47,7 +48,7 @@ Görev türü olduğunda `launch` , bu özellikler kullanılabilir:
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki görevler, veritabanında *make.exe* bir derleme görevleri dosyası sağlandığında ve `Mingw64` ortam *CppProperties.js*' de tanımlandığı gibi, [şema başvurusundaCppProperties.js](cppproperties-schema-reference.md#user_defined_environments)gösterildiği gibimake.exeçağırır:
+Aşağıdaki görevler, veritabanında  bir derleme görevleri dosyası sağlandığında ve `Mingw64` ortam *CppProperties.js*' de tanımlandığı gibi, [şema başvurusundaCppProperties.js](cppproperties-schema-reference.md#user_defined_environments)gösterildiği gibimake.exeçağırır:
 
 ```json
  {
@@ -78,7 +79,7 @@ Aşağıdaki görevler, veritabanında *make.exe* bir derleme görevleri dosyas�
 }
 ```
 
-Bu görevler, **Çözüm Gezgini**bir *. cpp* dosyasına sağ tıkladığınızda bağlam menüsünden çağrılabilir.
+Bu görevler, **Çözüm Gezgini** bir *. cpp* dosyasına sağ tıkladığınızda bağlam menüsünden çağrılabilir.
 
 ## <a name="remote-properties"></a>Uzak Özellikler
 
@@ -88,7 +89,7 @@ Görev türü olduğunda `remote` , bu özellikler kullanılabilir:
 
 |Özellik|Tür|Description|
 |-|-|-|
-|`remoteMachineName`|dize|Uzak makinenin adı. **Bağlantı yöneticisinde**bir makine adıyla eşleşmelidir.|
+|`remoteMachineName`|dize|Uzak makinenin adı. **Bağlantı yöneticisinde** bir makine adıyla eşleşmelidir.|
 |`command`|string|Uzak makineye gönderme komutu. Varsayılan olarak komutlar, uzak sistemdeki $HOME dizininde yürütülür.|
 |`remoteWorkingDirectory`|string|Uzak makinedeki geçerli çalışma dizini.|
 |`localCopyDirectory`|string|Uzak makineye kopyalanacak yerel dizin. Geçerli çalışma dizinini varsayılan olarak belirler.|

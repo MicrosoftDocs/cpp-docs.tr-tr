@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel derleme araçlarını belirtme'
 title: Özel Derleme Araçlarını Belirtme
 ms.date: 06/05/2018
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - build tools (C++), specifying
 - custom build tools (C++), specifying
 - builds (C++), custom build tools
-ms.openlocfilehash: dbce226b34503a9e8e70b6f19d9aa0c68ef487f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db3162e3f7ad3f007d3f26e1ee2a279e5a132eb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275340"
 ---
 # <a name="specify-custom-build-tools"></a>Özel derleme araçlarını belirtme
 
@@ -52,7 +53,7 @@ ms.locfileid: "62314760"
 
       Birden çok giriş ve çıkış dosyası, MSBuild makroları ile sembosel olarak belirtilebilir. Dosyaların konumunu veya dosya kümelerinin adlarını belirtme hakkında bilgi için bkz. [derleme komutları ve özellikleri Için ortak makrolar](reference/common-macros-for-build-commands-and-properties.md).
 
-      '% ' Karakteri MSBuild tarafından ayrıldığından, bir ortam değişkeni belirtirseniz her **%** kaçış karakterini **%25** onaltılık kaçış dizisi ile değiştirin. Örneğin, **% windir%** öğesini **% 25windir %25**ile değiştirin. MSBuild, ortam değişkenine erişmeden önce her **%25** sırayı **%** karakteriyle değiştirir.
+      '% ' Karakteri MSBuild tarafından ayrıldığından, bir ortam değişkeni belirtirseniz her **%** kaçış karakterini **%25** onaltılık kaçış dizisi ile değiştirin. Örneğin, **% windir%** öğesini **% 25windir %25** ile değiştirin. MSBuild, ortam değişkenine erişmeden önce her **%25** sırayı **%** karakteriyle değiştirir.
 
    - **Açıklama**' da, bu özel derleme aracı hakkında açıklayıcı bir ileti girin. İleti, derleme sistemi bu aracı işlediğinde **Çıkış** penceresine yazdırılır.
 
@@ -64,7 +65,7 @@ Yapı sisteminin özel yapı aracı tarafından oluşturulan bir çıkış dosya
 
 ## <a name="example"></a>Örnek
 
-Projenize Parser. l adlı bir dosya eklemek istediğinizi varsayın. Yürütülebilir bir çözümleyiciniz, **sözcük temelli çözümleyici. exe**' dir ve yürütülebilir bir yoldur. Aynı temel ada (Parser. c) sahip bir. c dosyası üretmek için Parser. l öğesini işlemek üzere kullanmak istiyorsunuz.
+Projenize Parser. l adlı bir dosya eklemek istediğinizi varsayın. Yürütülebilir bir çözümleyiciniz **lexer.exe**. Aynı temel ada (Parser. c) sahip bir. c dosyası üretmek için Parser. l öğesini işlemek üzere kullanmak istiyorsunuz.
 
 İlk olarak, projeye Parser. l ve Parser. c ' yi ekleyin. Dosyalar henüz yoksa dosyalara bir başvuru ekleyin. Parser. l için özel bir derleme aracı oluşturun ve **Commands** özelliğine şunu girin:
 

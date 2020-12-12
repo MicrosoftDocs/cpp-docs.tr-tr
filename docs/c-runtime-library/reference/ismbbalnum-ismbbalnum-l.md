@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ismbbalnum _ismbbalnum_l'
 title: _ismbbalnum, _ismbbalnum_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-ms.openlocfilehash: abbc664170c274929875ef2e4b7af70bc5812a94
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e4caf523d788cba4466d3d21beb6470d80b9aefd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306345"
 ---
 # <a name="_ismbbalnum-_ismbbalnum_l"></a>_ismbbalnum, _ismbbalnum_l
 
@@ -70,7 +71,7 @@ Kullanılacak yerel ayar.
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-*c*için sıfır veya değilse 0 olur.
+*c* için sıfır veya değilse 0 olur.
 
 Bu işlevin **_l** sonekine sahip sürümü, yerel ayara bağlı davranışı için geçerli yerel ayar yerine geçirilen yerel ayarı kullanması dışında aynıdır.
 
@@ -82,8 +83,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbalnum**|\<Mbctype. h>|
-|**_ismbbalnum_l**|\<Mbctype. h>|
+|**_ismbbalnum**|\<mbctype.h>|
+|**_ismbbalnum_l**|\<mbctype.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -93,5 +94,5 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

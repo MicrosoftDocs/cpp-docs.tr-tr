@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; charconv&gt;'
 title: '&lt;charconv&gt;'
 ms.date: 07/22/2020
 f1_keywords:
 - <charconv>
 helpviewer_keywords:
 - charconv header
-ms.openlocfilehash: c9dfb8e18a8f7fd367ec4f6b52b1a0af74b3f939
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9faab40d2b601317e9dd739053c31000da5ea18b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507708"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325214"
 ---
 # <a name="ltcharconvgt"></a>&lt;charconv&gt;
 

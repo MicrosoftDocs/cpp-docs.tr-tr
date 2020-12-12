@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt görünümü tasarlama ve oluşturma (MFC veri erişimi)'
 title: Kayıt görünümü tasarlama ve oluşturma (MFC veri erişimi)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - application wizards [C++], creating record view classes
 - designing record views
 ms.assetid: 1d6f5439-754f-4b8b-a19d-841a4657827b
-ms.openlocfilehash: dfd486c397dffa87295839f5ef62de0bd1ba812a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6bcf388abb164c4f20bb639dc19c427bd3fbcad3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213427"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317915"
 ---
 # <a name="designing-and-creating-a-record-view--mfc-data-access"></a>Kayıt görünümü tasarlama ve oluşturma (MFC veri erişimi)
 
-Kayıt görünümü sınıfınızı [MFC Uygulama Sihirbazıyla](../mfc/reference/database-support-mfc-application-wizard.md)oluşturabilirsiniz. Bir uygulama Sihirbazı kullanırsanız, kayıt görünümü sınıfını ve BT için bir iletişim kutusu şablon kaynağı (denetimler olmadan) oluşturur. İletişim kutusu şablonu kaynağına denetim C++ eklemek için görsel iletişim düzenleyicisini kullanmanız gerekir. Öte yandan, **Sınıf Ekle**' yi kullanırsanız, önce iletişim kutusu düzenleyicisinde iletişim kutusu şablon kaynağını oluşturmanız ve ardından kayıt görünümü sınıfını oluşturmanız gerekir.
+Kayıt görünümü sınıfınızı [MFC Uygulama Sihirbazıyla](../mfc/reference/database-support-mfc-application-wizard.md)oluşturabilirsiniz. Bir uygulama Sihirbazı kullanırsanız, kayıt görünümü sınıfını ve BT için bir iletişim kutusu şablon kaynağı (denetimler olmadan) oluşturur. İletişim kutusu şablonu kaynağına denetim eklemek için Visual C++ Iletişim düzenleyicisini kullanmanız gerekir. Öte yandan, **Sınıf Ekle**' yi kullanırsanız, önce iletişim kutusu düzenleyicisinde iletişim kutusu şablon kaynağını oluşturmanız ve ardından kayıt görünümü sınıfını oluşturmanız gerekir.
 
 #### <a name="to-create-your-record-view-with-the-mfc-application-wizard"></a>MFC Uygulama Sihirbazı ile kayıt görünümünüzü oluşturmak için
 
@@ -44,4 +45,4 @@ Aşağıdaki konularda, kayıt görünümlerini kullanmayla ilgili ek ayrıntıl
 
 [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
 [Kayıt Kümesi (ODBC)](../data/odbc/recordset-odbc.md)<br/>
-[ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)
+[ODBC sürücü listesi](../data/odbc/odbc-driver-list.md)

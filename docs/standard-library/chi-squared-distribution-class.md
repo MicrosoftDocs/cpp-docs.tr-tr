@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: chi_squared_distribution sınıfı'
 title: chi_squared_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,18 +24,18 @@ helpviewer_keywords:
 - std::chi_squared_distribution [C++], param_type
 - std::chi_squared_distribution [C++], param_type
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
-ms.openlocfilehash: 5d7a7e2ba3c962a1ef63b14fed5d4bfb67c38b44
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5ee63e0331a8412ca5104dd7dfbfc427d6b7f627
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845685"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325174"
 ---
 # <a name="chi_squared_distribution-class"></a>chi_squared_distribution Sınıfı
 
 Çi-kare dağılımı üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class RealType = double>
@@ -74,7 +75,7 @@ Tekdüzen rastgele sayı Oluşturucu altyapısı. Olası türler için bkz [\<ra
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa, kikare dağıtımına göre dağıtılan bir dağıtımı açıklar. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değerlerini üreten bir dağılımı veya **`double`** hiçbir değer sağlanmazsa Chi-Squared dağıtımına göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 [chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)\
 [param_type](#param_type)
@@ -243,9 +244,9 @@ Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 **Önkoşul:**`0.0 < n`
 
-İlk Oluşturucu, saklı `n` değeri *n*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı `n` değeri *n* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="chi_squared_distributionparam_type"></a><a name="param_type"></a> chi_squared_distribution::p aram_type
 

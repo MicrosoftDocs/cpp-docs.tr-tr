@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: idl_quote'
 title: idl_quote (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: 1d0aa80f64593ed347720b84e4059a0c32dce4be
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5aa389214283c188f71190eec41e22d396d887cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844242"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275444"
 ---
 # <a name="idl_quote"></a>idl_quote
 
 Geçerli Visual C++ sürümünde desteklenmeyen IDL yapılarını kullanmanıza ve bunların oluşturulan. IDL dosyasına geçmesini sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ idl_quote(text) ]
@@ -25,7 +26,7 @@ Geçerli Visual C++ sürümünde desteklenmeyen IDL yapılarını kullanmanıza 
 
 ### <a name="parameters"></a>Parametreler
 
-*metinleri*<br/>
+*metin*<br/>
 Microsoft C++ derleyicisini bir derleyici hatası döndürmeden oluşturulan. IDL dosyasına geçirmek için planladığınız öznitelik adı.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -34,7 +35,7 @@ Microsoft C++ derleyicisini bir derleyici hatası döndürmeden oluşturulan. ID
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, desteklenmeyen bir özniteliği (desteklenen ' **de**kullanarak) ve tanımsız bir. IDL yapısını nasıl tanımlanacağını ve kullanacağınızı gösterir:
+Aşağıdaki kod, desteklenmeyen bir özniteliği (desteklenen ' **de** kullanarak) ve tanımsız bir. IDL yapısını nasıl tanımlanacağını ve kullanacağınızı gösterir:
 
 ```cpp
 // cpp_attr_ref_idl_quote.cpp
@@ -76,7 +77,7 @@ Bu kod, `MYFLOT` ve `MYDUB` ve *metin* girişinin oluşturulan. IDL dosyasına y
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: x64 Stack kullanımı'
 title: x64 yığın kullanımı
 ms.date: 12/17/2018
 ms.assetid: 383f0072-0438-489f-8829-cca89582408c
-ms.openlocfilehash: b1b1e0a8c30d5e24e81372912d5c488efce14841
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 564b5888f59d06199cd0f2c175b928c725e26e1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218942"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275366"
 ---
 # <a name="x64-stack-usage"></a>x64 yığın kullanımı
 
@@ -37,7 +38,7 @@ Bir çerçeve işaretçisi kullanılıyorsa, parametre yığın alanını dinami
 
 ## <a name="function-types"></a>İşlev türleri
 
-Temel olarak iki tür işlev vardır. Yığın çerçevesini gerektiren bir işleve *çerçeve işlevi*denir. Yığın çerçevesi gerektirmeyen bir işleve *yaprak işlevi*denir.
+Temel olarak iki tür işlev vardır. Yığın çerçevesini gerektiren bir işleve *çerçeve işlevi* denir. Yığın çerçevesi gerektirmeyen bir işleve *yaprak işlevi* denir.
 
 Çerçeve işlevi, yığın alanı ayıran, diğer işlevleri çağıran, kalıcı kayıtları kaydeden veya özel durum işlemeyi kullanan bir işlevdir. Ayrıca bir işlev tablosu girişi gerektirir. Çerçeve işlevi, giriş ve bitiş gerektirir. Çerçeve işlevi, yığın alanı dinamik olarak ayırabilir ve bir çerçeve işaretçisi kullanabilir. Çerçeve işlevi, bu çağrıyı yapan standart 'nin elden çıkarılmasında tam yeteneklere sahiptir.
 
@@ -49,7 +50,7 @@ Yaprak işlev, işlev tablosu girişi gerektirmeyen bir işlevdir. RSP de dahil 
 
 [malloc](../c-runtime-library/reference/malloc.md) , temel hizalaması olan ve ayrılan bellek miktarına uyalabilen herhangi bir nesneyi depolamak için uygun şekilde hizalı belleği döndürecek şekilde garanti edilir. *Temel hizalama* , bir hizalama belirtimi olmadan uygulamanın desteklediği en büyük hizalamadan küçük veya ona eşit olan hizalamadır. (Visual C++, bu, veya 8 bayt için gerekli olan hizalamadır **`double`** . 64 bitlik platformları hedefleyen kodda 16 bayttır.) Örneğin, dört baytlık bir ayırma dört baytlık veya daha küçük bir nesneyi destekleyen bir sınır üzerinde hizalanabilir.
 
-Visual C++, daha *fazla hizalanmış* türler olarak da bilinen, *genişletilmiş hizalaması*olan türlere izin verir. Örneğin, SSE türü [__m128](../cpp/m128.md) ve `__m256` ve ' `__declspec(align( n ))` `n` nin 8 ' den büyük olduğu, genişletilmiş hizalamadır. Genişletilmiş hizalama gerektiren bir nesne için uygun olan bir sınır üzerindeki bellek hizalaması tarafından garanti edilmez `malloc` . Fazla hizalanmış türler için bellek ayırmak üzere [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) ve ilgili işlevleri kullanın.
+Visual C++, daha *fazla hizalanmış* türler olarak da bilinen, *genişletilmiş hizalaması* olan türlere izin verir. Örneğin, SSE türü [__m128](../cpp/m128.md) ve `__m256` ve ' `__declspec(align( n ))` `n` nin 8 ' den büyük olduğu, genişletilmiş hizalamadır. Genişletilmiş hizalama gerektiren bir nesne için uygun olan bir sınır üzerindeki bellek hizalaması tarafından garanti edilmez `malloc` . Fazla hizalanmış türler için bellek ayırmak üzere [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) ve ilgili işlevleri kullanın.
 
 ## <a name="alloca"></a>alloca
 

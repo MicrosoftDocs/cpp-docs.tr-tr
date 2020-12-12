@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: codecvt_utf8_utf16'
 title: codecvt_utf8_utf16
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_utf8_utf16 class
 ms.assetid: 4c12c881-5dba-4e39-b338-0b9caff5af29
-ms.openlocfilehash: 879ebe6a75d76a84ef4250b95c41e02eccba5517
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e80cdaa01ef77b9ce28a773eb4e05056220718a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325081"
 ---
-# <a name="codecvtutf8utf16"></a>codecvt_utf8_utf16
+# <a name="codecvt_utf8_utf16"></a>codecvt_utf8_utf16
 
 UTF-16 olarak kodlanmış geniş karakterler ve UTF-8 olarak kodlanmış bir bayt akışı arasında dönüştüren bir [yerel ayar](../standard-library/locale-class.md) modeli temsil eder.
 
@@ -39,6 +40,6 @@ Bayt akışı bir ikili dosyaya veya bir metin dosyasına yazılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Üst bilgi \<: codecvt >
+Üst bilgi \<codecvt>
 
 Ad alanı: std

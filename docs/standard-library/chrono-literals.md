@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi için: Tarih/sabit değer'
 title: chrono değişmez değerleri
 ms.date: 11/04/2016
 ms.assetid: 1a9e23b1-256f-4570-8226-5fa7364fb032
-ms.openlocfilehash: d8416580df09a8a466678702cb20ba4ddf37eb28
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 497094d920a25635496fb0aa30295d378571418c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230162"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325161"
 ---
 # <a name="chrono-literals"></a>chrono değişmez değerleri
 
-(C++ 14) \<chrono>Üst bilgi, saat, dakika, saniye, milisaniye, mikrosaniye ve nanosaniye değerlerini temsil eden sabit değerleri kullanmayı kolaylaştırmak için 12 [Kullanıcı tanımlı sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar. Kullanıcı tanımlı her değişmez değer bir integral ve kayan nokta aşırı yüklemesi içerir. Sabit değerler, std:: hatası, kapsam içinde olduğunda otomatik olarak kapsama getirilen sabit değerler:: chrono_literals satır içi ad alanında tanımlanmıştır.
+(C++ 14) \<chrono> Üst bilgi, saat, dakika, saniye, milisaniye, mikrosaniye ve nanosaniye değerlerini temsil eden sabit değerleri kullanmayı kolaylaştırmak için 12 [Kullanıcı tanımlı sabit değerleri](../cpp/user-defined-literals-cpp.md) tanımlar. Kullanıcı tanımlı her değişmez değer bir integral ve kayan nokta aşırı yüklemesi içerir. Sabit değerler, std:: hatası, kapsam içinde olduğunda otomatik olarak kapsama getirilen sabit değerler:: chrono_literals satır içi ad alanında tanımlanmıştır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 inline namespace literals {

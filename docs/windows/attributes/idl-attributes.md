@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IDL öznitelikleri'
 title: IDL öznitelikleri (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - IDL files [C++], attributes
 - .idl files [C++]
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-ms.openlocfilehash: 8cceae2f1c4880b72f1ffc30070d6aa6bf8e3a51
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1db49b6c68d0dd4e4f4c6c5dcfb148cafc39159d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275470"
 ---
 # <a name="idl-attributes"></a>IDL Öznitelikleri
 
@@ -43,11 +44,11 @@ Geleneksel olarak, bir. IDL dosyasının saklanması şunları yapmak zorunda ol
 |[defaultbind](defaultbind.md)|Nesneyi en iyi şekilde temsil eden tek ve bağlanabilir özelliği gösterir.|
 |[defaultcollelem](defaultcollelem.md)|Visual Basic kodu iyileştirmesi için kullanılır.|
 |[defaultvalue](defaultvalue.md)|Türü belirtilmiş bir isteğe bağlı parametre için varsayılan değer belirtimine izin verir.|
-|[default](default-cpp.md)|Bir coclass içinde tanımlanan özel veya dispınterface 'in varsayılan programlama arabirimini temsil ettiğini belirtir.|
+|[varsayılanını](default-cpp.md)|Bir coclass içinde tanımlanan özel veya dispınterface 'in varsayılan programlama arabirimini temsil ettiğini belirtir.|
 |[defaultvtable](defaultvtable.md)|Bir denetim için varsayılan vtable arabirimi olarak bir arabirimi tanımlar.|
 |[dispinterface](dispinterface.md)|Bir arabirimi. IDL dosyasına bir dağıtım arabirimi olarak koyar.|
 |[displaybind](displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmesi gereken bir özelliği gösterir.|
-|[çift](dual.md)|. IDL dosyasına bir arabirimi çift arabirim olarak koyar.|
+|[Çift](dual.md)|. IDL dosyasına bir arabirimi çift arabirim olarak koyar.|
 |[girişte](entry.md)|DLL 'deki giriş noktasını tanımlayarak bir modülde, bir içe aktarılmış işlevi veya sabiti belirtir.|
 |[first_is](first-is.md)|İletilmek üzere ilk dizi öğesinin dizinini belirtir.|
 |[helpcontext](helpcontext.md)|Kullanıcının Yardım dosyasında bu öğeyle ilgili bilgileri görüntülemesine imkan tanıyan bir bağlam KIMLIĞI belirtir.|
@@ -55,7 +56,7 @@ Geleneksel olarak, bir. IDL dosyasının saklanması şunları yapmak zorunda ol
 |[helpstringcontext](helpstringcontext.md)|Bir. hlp veya. chm dosyasındaki Yardım konusunun KIMLIĞINI belirtir.|
 |[helpstringdll](helpstringdll.md)|Belge dizesi aramasını (Yerelleştirme) gerçekleştirmek için kullanılacak DLL 'in adını belirtir.|
 |[helpstring](helpstring.md)|Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir.|
-|[gizli](hidden.md)|Öğenin var olduğunu ancak kullanıcıya dayalı bir tarayıcıda gösterilmemelidir.|
+|[Lene](hidden.md)|Öğenin var olduğunu ancak kullanıcıya dayalı bir tarayıcıda gösterilmemelidir.|
 |[idl_module](idl-module.md)|DLL 'de bir giriş noktası belirtir.|
 |[idl_quote](idl-quote.md)|Geçerli Visual C++ sürümünde desteklenmeyen öznitelikleri veya IDL yapılarını kullanmanıza izin verir.|
 |[id](id.md)|Bir üye işlev için bir DISPID belirtir (bir özellik veya bir yöntem, bir arabirim ya da dispınterface).|
@@ -65,7 +66,7 @@ Geleneksel olarak, bir. IDL dosyasının saklanması şunları yapmak zorunda ol
 |[aktarmaya](import.md)|Main. IDL dosyanızda başvurmak istediğiniz tanımları içeren başka bir. IDL,. odl veya üst bilgi dosyasını belirtir.|
 |[içeriyor](include-cpp.md)|Oluşturulan. IDL dosyasına dahil edilecek bir veya daha fazla üst bilgi dosyasını belirtir.|
 |[INCLUDELIB](includelib-cpp.md)|Oluşturulan. IDL dosyasına bir. IDL veya. h dosyasının eklenmesine neden olur.|
-|[in](in-cpp.md)|Çağıran yordamdan çağrılan yordama bir parametre geçirilecek olduğunu gösterir.|
+|['ndaki](in-cpp.md)|Çağıran yordamdan çağrılan yordama bir parametre geçirilecek olduğunu gösterir.|
 |[last_is](last-is.md)|İletilmek üzere son dizi öğesinin dizinini belirtir.|
 |[lcid](lcid.md)|Bir işleve yerel ayar tanımlayıcıyı geçirmenize olanak sağlar.|
 |[length_is](length-is.md)|Aktarılacak dizi öğelerinin sayısını belirtir.|
@@ -99,12 +100,12 @@ Geleneksel olarak, bir. IDL dosyasının saklanması şunları yapmak zorunda ol
 |[retval](retval.md)|Üyenin dönüş değerini alan parametreyi belirler.|
 |[size_is](size-is.md)|Boyutlandırılmış işaretçiler için ayrılan bellek boyutunu, boyutlandırılmış işaretçilere boyutlandırılmış boyutları ve tek veya çok boyutlu dizileri belirtir.|
 |[kaynaktaki](source-cpp.md)|Bir sınıfın, özelliğin veya yöntemin bir üyesinin bir olay kaynağı olduğunu belirtir.|
-|[dizisinde](string-cpp.md)|Tek boyutlu **`char`** , **`wchar_t`** , `byte` veya denk dizi ya da bu dizi işaretçisinin bir dize olarak değerlendirilmesi gerektiğini gösterir.|
+|[string](string-cpp.md)|Tek boyutlu **`char`** , **`wchar_t`** , `byte` veya denk dizi ya da bu dizi işaretçisinin bir dize olarak değerlendirilmesi gerektiğini gösterir.|
 |[switch_is](switch-is.md)|Birleşim üyesini seçen birleşim ayırt edici olarak davranan ifade veya tanımlayıcıyı belirtir.|
 |[switch_type](switch-type.md)|UNION ayrımınant olarak kullanılan değişkenin türünü tanımlar.|
 |[transmit_as](transmit-as.md)|Derleyiciye, iletilen bir tür ile istemci ve sunucu uygulamalarının üzerinde bulunan, sunulan bir türü ilişkilendirmesini söyler.|
 |[uidefault](uidefault.md)|Tür bilgisi üyesinin Kullanıcı arabiriminde görüntülenmek üzere varsayılan üye olduğunu gösterir.|
-|[unique](unique-cpp.md)|Benzersiz bir işaretçi belirtir.|
+|[eşi](unique-cpp.md)|Benzersiz bir işaretçi belirtir.|
 |[usesgetlasterror](usesgetlasterror.md)|Çağrıyı yapana, bu işlevi çağırırken bir hata oluşursa, çağıranın `GetLastError` hata kodunu almak için çağırabileceklerini söyler.|
 |[uuid](uuid-cpp-attributes.md)|Bir sınıf veya arabirim için benzersiz KIMLIĞI belirtir.|
 |[v1_enum](v1-enum.md)|Belirtilen numaralandırılmış türün 16 bit varsayılan yerine 32 bitlik bir varlık olarak aktarılacağını yönlendirir.|

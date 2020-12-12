@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ismbbgraph _ismbbgraph_l'
 title: _ismbbgraph, _ismbbgraph_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbgraph function
 - ismbbgraph function
 ms.assetid: b60db718-134f-4796-acc1-592d0b9efbb7
-ms.openlocfilehash: 60b8a974ab27878a379e3a9ad2596a23ed31757f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 093d7d2ca9b9bde427078f390f2036866529d8da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306358"
 ---
 # <a name="_ismbbgraph-_ismbbgraph_l"></a>_ismbbgraph, _ismbbgraph_l
 
@@ -71,7 +72,7 @@ Kullanılacak yerel ayar.
 
 `isctype(c, ( _PUNCT | _UPPER | _LOWER | _DIGIT )) || _ismbbkprint(c)`
 
-*c*için sıfır veya değilse 0 olur. **_ismbbgraph** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbbgraph_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+*c* için sıfır veya değilse 0 olur. **_ismbbgraph** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_ismbbgraph_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -81,8 +82,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbgraph**|\<Mbctype. h>|
-|**_ismbbgraph_l**|\<Mbctype. h>|
+|**_ismbbgraph**|\<mbctype.h>|
+|**_ismbbgraph_l**|\<mbctype.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -92,5 +93,5 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

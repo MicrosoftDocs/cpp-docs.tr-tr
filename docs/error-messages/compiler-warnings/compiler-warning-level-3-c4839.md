@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4839'
 title: Derleyici Uyarısı (düzey 3) C4839
 ms.date: 09/13/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4839
 ms.assetid: f4f99066-9258-4330-81a8-f4a75a1d95ee
-ms.openlocfilehash: 2c238dc16359583bf55f7590d2ce7c0363d66df7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a8ae0d3e3c74c62d05163edd981679e5390fb184
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332065"
 ---
 # <a name="compiler-warning-level-3-c4839"></a>Derleyici Uyarısı (düzey 3) C4839
 
 > '*Type*' sınıfının, değişen sayıda bağımsız değişken işleve bağımsız değişken olarak standart olmayan kullanımı
 
-`printf` gibi farklı bir bağımsız işleve geçirilen sınıflar veya yapılar, Üçlü kopyalanabilir olmalıdır. Bu tür nesneler geçirilirken, derleyici yalnızca bit düzeyinde bir kopya yapar ve oluşturucuyu veya yıkıcıyı çağırmaz.
+Gibi farklı bir bağımsız değişken işleve geçirilen sınıflar veya yapılar, `printf` Üçlü kopyalanabilir olmalıdır. Bu tür nesneler geçirilirken, derleyici yalnızca bit düzeyinde bir kopya yapar ve oluşturucuyu veya yıkıcıyı çağırmaz.
 
 Bu uyarı, Visual Studio 2017 ' den başlayarak kullanılabilir.
 
@@ -51,7 +52,7 @@ Hatayı düzeltmek için, üç aylık kopyalanabilir türü döndüren bir üye 
     printf("%i\n", i.load());
 ```
 
-`CStringW`kullanılarak oluşturulan ve yönetilen dizeler için, `CStringW` nesnesini biçim dizesi tarafından beklenen C işaretçisine dönüştürmek için, belirtilen `operator LPCWSTR()` kullanılmalıdır.
+Kullanılarak oluşturulan ve yönetilen dizeler için `CStringW` , `operator LPCWSTR()` bir `CStringW` nesneyi biçim dizesi tarafından beklenen C işaretçisine dönüştürmek için kullanılmalıdır.
 
 ```cpp
     CStringW str1;

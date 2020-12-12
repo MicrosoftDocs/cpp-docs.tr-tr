@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; hatası&gt;'
 title: '&lt;Chrono&gt;'
 ms.date: 05/07/2019
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: b74c25e9c26d5767426576633e0999ae3ca44954
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a59ad0d88a1d9266e61a8ef49e7cf9184da803b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840654"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325147"
 ---
 # <a name="ltchronogt"></a>&lt;Chrono&gt;
 

@@ -1,5 +1,6 @@
 ---
-title: Platform::ınvalidargumentexception sınıfı
+description: 'Daha fazla bilgi edinin: Platform:: InvalidArgumentException Sınıfı'
+title: 'Platform:: InvalidArgumentException Sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::InvalidArgumentException
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
-ms.openlocfilehash: 1cc4b87ded26807066c81e5da6935548d1a5ad26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04d20a1e119aa4ffab0da498a9532c9acd4433b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384965"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295256"
 ---
-# <a name="platforminvalidargumentexception-class"></a>Platform::ınvalidargumentexception sınıfı
+# <a name="platforminvalidargumentexception-class"></a>Platform:: InvalidArgumentException Sınıfı
 
-Bir yöntem için sağlanan bağımsız değişkenlerden biri geçerli olmadığında oluşturulur.
+Bir yönteme verilen bağımsız değişkenlerden biri geçerli değilse oluşturulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public ref class InvalidArgumentException : COMException,    IException,    IPrintable,    IEquatable
@@ -27,18 +28,18 @@ public ref class InvalidArgumentException : COMException,    IException,    IPri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfı.
+Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfına bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)
+[Platform:: COMException sınıfı](../cppcx/platform-comexception-class.md)

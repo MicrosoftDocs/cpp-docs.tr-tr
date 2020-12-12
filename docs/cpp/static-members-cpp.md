@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: statik Üyeler (C++)'
 title: Statik Üyeler [C++]
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - instance constructors, shared members
 - class instances [C++], static members
 ms.assetid: 9cc8cf0f-d74c-46f2-8e83-42d4e42c8370
-ms.openlocfilehash: b79b65ab3cbf4565f31ad6717f8163c678697c9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2aad7c5ef70f319a976704ef36664459ca9ab252
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317954"
 ---
 # <a name="static-members-c"></a>Statik Üyeler [C++]
 
@@ -63,7 +64,7 @@ Statik veri üyelerine, sınıf türündeki bir nesneye başvurulmadan başvurul
 long nBytes = BufferedOutput::bytecount;
 ```
 
-Statik üyenin mevcut olması için, sınıf türündeki nesnelerin mevcut olması gerekmez. Statik üyelere Ayrıca üye seçimi (**.** ve **->** ) işleçlerini. Örnek:
+Statik üyenin mevcut olması için, sınıf türündeki nesnelerin mevcut olması gerekmez. Statik üyelere Ayrıca üye seçimi (**.** ve **->** ) işleçlerini. Örneğin:
 
 ```cpp
 BufferedOutput Console;
@@ -79,4 +80,4 @@ Statik üyenin türü, sınıf adı tarafından nitelendirilmez. Bu nedenle, tü
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)
+[Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

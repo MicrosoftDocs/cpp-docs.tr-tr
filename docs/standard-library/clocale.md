@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; clocale&gt;'
 title: '&lt;clocale&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - clocale header
 ms.assetid: 5bde3e01-cf67-4f1f-a383-447ec814d00e
-ms.openlocfilehash: 60d15795328de567a8ba626f5344b2fb08e57aa7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3a1efb972d33ccb5b28fac6d77803aa6de2e08c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325120"
 ---
 # <a name="ltclocalegt"></a>&lt;clocale&gt;
 
-Standart C Kitaplığı üstbilgisi \<locale. h > içerir ve ilişkili adları `std` ad alanına ekler.
+Standart C Kitaplığı üst bilgisini içerir \<locale.h> ve ilgili adları `std` ad alanına ekler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<clocale >
+**Üst bilgi:**\<clocale>
 
 **Ad alanı:** std
 
@@ -55,5 +56,5 @@ lconv* localeconv();
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

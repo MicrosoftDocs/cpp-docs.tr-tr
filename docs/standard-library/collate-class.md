@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: COLLATE sınıfı'
 title: collate Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - std::collate [C++], hash
 - std::collate [C++], transform
 ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
-ms.openlocfilehash: ccdf05a7a41fc7f646852e7d326832b86c41dde8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cef6d30167aa61c674913ac7844f6eb021a82529
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325068"
 ---
 # <a name="collate-class"></a>collate Sınıfı
 
 Bir dize içindeki karakterlerin sıralamasını ve gruplamasını denetlemek için bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu, aralarında karşılaştırmalar ve dizelerin karması.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType>
@@ -79,7 +80,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 **Ad alanı:** std
 
-## <a name="collatechar_type"></a><a name="char_type"></a>harmanlama:: char_type
+## <a name="collatechar_type"></a><a name="char_type"></a> harmanlama:: char_type
 
 Türünde bir karakteri tanımlayan tür `CharType` .
 
@@ -91,7 +92,7 @@ typedef CharType char_type;
 
 Tür, şablon parametresi için bir eş anlamlı `CharType` .
 
-## <a name="collatecollate"></a><a name="collate"></a>collate:: COLLATE
+## <a name="collatecollate"></a><a name="collate"></a> collate:: COLLATE
 
 Dize sıralama kurallarını işlemek için bir yerel ayar modeli olarak hizmet veren sınıf harmanlama nesneleri için Oluşturucu.
 
@@ -122,11 +123,11 @@ Yerel ayarın adı.
 
 - 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değil.
+- \> 1: Bu değerler tanımlı değil.
 
 Oluşturucu kendi temel nesnesini **locale::**[model](../standard-library/locale-class.md#facet_class)() ile başlatır `_Refs` .
 
-## <a name="collatecompare"></a><a name="compare"></a>collate:: Compare
+## <a name="collatecompare"></a><a name="compare"></a> collate:: Compare
 
 Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırır.
 
@@ -192,7 +193,7 @@ int main() {
 }
 ```
 
-## <a name="collatedo_compare"></a><a name="do_compare"></a>harmanlama::d o_compare
+## <a name="collatedo_compare"></a><a name="do_compare"></a> harmanlama::d o_compare
 
 Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırmak için çağrılan sanal işlev.
 
@@ -235,7 +236,7 @@ Korumalı sanal üye işlevi [* First1, last1) * konumundaki diziyi *[first2, la
 
 Öğesini çağıran [collate:: Compare](#compare)örneğine bakın `do_compare` .
 
-## <a name="collatedo_hash"></a><a name="do_hash"></a>harmanlama::d o_hash
+## <a name="collatedo_hash"></a><a name="do_hash"></a> harmanlama::d o_hash
 
 Kendi modeline özgü kurallara göre dizilerin karma değerini belirlemek için çağrılan sanal işlev.
 
@@ -263,7 +264,7 @@ Karma değer, örneğin bir liste dizisi genelinde rastgele dizileri rastgele da
 
 ' İ çağıran [karma](#hash)örneğine bakın `do_hash` .
 
-## <a name="collatedo_transform"></a><a name="do_transform"></a>harmanlama::d o_transform
+## <a name="collatedo_transform"></a><a name="do_transform"></a> harmanlama::d o_transform
 
 Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürmek için çağrılan bir sanal işlev.
 
@@ -291,7 +292,7 @@ Korumalı sanal üye işlevi, denetlenen sırası [,) sırasının bir kopyası 
 
 Öğesini çağıran [dönüştürme](#transform)örneğine bakın `do_transform` .
 
-## <a name="collatehash"></a><a name="hash"></a>collate:: Hash
+## <a name="collatehash"></a><a name="hash"></a> collate:: Hash
 
 Kendi modeline özgü kurallara göre dizilerin karma değerini belirler.
 
@@ -345,7 +346,7 @@ int main( )
 541187293 551279837
 ```
 
-## <a name="collatestring_type"></a><a name="string_type"></a>harmanlama:: string_type
+## <a name="collatestring_type"></a><a name="string_type"></a> harmanlama:: string_type
 
 Türünde karakter içeren türde bir dizeyi tanımlayan tür `basic_string` `CharType` .
 
@@ -361,7 +362,7 @@ Türü, bir sınıf şablonu [basic_string](../standard-library/basic-string-cla
 
 Bildirme ve kullanma hakkında bir örnek için `string_type` bkz. [Transform](#transform).
 
-## <a name="collatetransform"></a><a name="transform"></a>collate:: Transform
+## <a name="collatetransform"></a><a name="transform"></a> collate:: Transform
 
 Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürür.
 

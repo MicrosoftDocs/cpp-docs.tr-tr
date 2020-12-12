@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. strchr, wcschr, _mbschr _mbschr_l
 title: strchr, wcschr, _mbschr, _mbschr_l
 ms.date: 4/2/2020
 api_name:
@@ -47,21 +48,21 @@ helpviewer_keywords:
 - tcschr function
 - mbschr_l function
 ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
-ms.openlocfilehash: a7cea0b2c640b7cb87d7097cea7bdf94a73abfb8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8971022e529a03199a890d769843fd77ec44c5af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229317"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306228"
 ---
 # <a name="strchr-wcschr-_mbschr-_mbschr_l"></a>strchr, wcschr, _mbschr, _mbschr_l
 
 Geçerli yerel ayarı veya belirtilen LC_CTYPE dönüştürme durumu kategorisini kullanarak dizedeki bir karakter bulur.
 
 > [!IMPORTANT]
-> `_mbschr`ve `_mbschr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbschr` ve `_mbschr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 char *strchr(
@@ -125,18 +126,18 @@ Null ile sonlandırılmış kaynak dizesi.
 *,*<br/>
 Yer alan karakter.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, *Str*içindeki ilk *c* oluşumuna yönelik bir IŞARETÇI veya *c* bulunamazsa null değerini döndürür.
+Bu işlevlerin her biri, *Str* içindeki ilk *c* oluşumuna yönelik bir IŞARETÇI veya *c* bulunamazsa null değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`strchr`İşlevi *Str*içindeki ilk *c* oluşumunu bulur veya *c* bulunamazsa null değerini döndürür. Aramaya null sonlandırma karakteri eklenir.
+`strchr`İşlevi *Str* içindeki ilk *c* oluşumunu bulur veya *c* bulunamazsa null değerini döndürür. Aramaya null sonlandırma karakteri eklenir.
 
-`wcschr`, `_mbschr` ve `_mbschr_l` öğesinin geniş karakterli ve çok baytlı karakter sürümleridir `strchr` . Bağımsız değişkenleri ve dönüş değeri `wcschr` geniş karakterli dizelerdir; bunlar `_mbschr` çok baytlı karakter dizeleridir. `_mbschr`çok baytlı karakter dizilerini tanır. Ayrıca, dize null işaretçisiyse, `_mbschr` [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, `_mbschr` null döndürür ve `errno` EINVAL olarak ayarlar. `strchr`ve `wcschr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
+`wcschr`, `_mbschr` ve `_mbschr_l` öğesinin geniş karakterli ve çok baytlı karakter sürümleridir `strchr` . Bağımsız değişkenleri ve dönüş değeri `wcschr` geniş karakterli dizelerdir; bunlar `_mbschr` çok baytlı karakter dizeleridir. `_mbschr` çok baytlı karakter dizilerini tanır. Ayrıca, dize null işaretçisiyse, `_mbschr` [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, `_mbschr` null döndürür ve `errno` EINVAL olarak ayarlar. `strchr` ve `wcschr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
 Çıkış değeri yerel ayarın LC_CTYPE kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -221,8 +222,8 @@ Result:   last r found at position 30
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>

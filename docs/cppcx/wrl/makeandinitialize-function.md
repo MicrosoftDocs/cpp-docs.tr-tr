@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Makeanınvoınitialize Işlevi'
 title: MakeAndInitialize İşlevi
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::MakeAndInitialize
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
-ms.openlocfilehash: 28d9e586a766a131e7ab6280859845810c1d9814
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 108da1f19d6956527f06e5239f5ce2e14716d664
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317928"
 ---
 # <a name="makeandinitialize-function"></a>MakeAndInitialize İşlevi
 
@@ -46,8 +47,8 @@ HRESULT MakeAndInitialize(
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
-`WRL::RuntimeClass`devralan Kullanıcı tarafından belirtilen bir sınıf.
+*T*<br/>
+Öğesinden devralan Kullanıcı tarafından belirtilen bir sınıf `WRL::RuntimeClass` .
 
 *TArg1*<br/>
 Belirtilen çalışma zamanı sınıfına geçirilen bağımsız değişken 1 türü.
@@ -119,4 +120,4 @@ Bu işlev ile [Microsoft:: WRL:: Make](make-function.md)arasındaki farklılıkl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dosya özniteliği sabitleri'
 title: Dosya Öznitelik Sabitleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,16 +26,16 @@ helpviewer_keywords:
 - _A_HIDDEN constant
 - _A_RDONLY constant
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
-ms.openlocfilehash: 271459c33cdcc1110222871bdca06d3f04edb497
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8b57549b4a21cc5d699f933009c575b3f3fca81d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343803"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306371"
 ---
 # <a name="file-attribute-constants"></a>Dosya Öznitelik Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <io.h>
@@ -42,22 +43,22 @@ ms.locfileid: "62343803"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sabitler geçerli işlev tarafından belirtilen dizin ve dosya özniteliklerini belirtin.
+Bu sabitler, işlev tarafından belirtilen dosyanın veya dizinin geçerli özniteliklerini belirtir.
 
-Öznitelik, aşağıdaki bildirim sabitleriyle gösterilir:
+Öznitelikler aşağıdaki bildirim sabitleriyle temsil edilir:
 
 |Sabit|Açıklama|
 |-|-|
-|`_A_ARCH`| Arşiv. Dosya değiştirildi ve yedekleme komutu tarafından işaretli olduğunda ayarlayın. Değer: 0x20|
-|`_A_HIDDEN`| Gizli bir dosya. Normalde /AH seçeneği kullanılmadığı sürece DIR komutu ile görülür. Bu öznitelik dosyalarıyla yanı sıra normal dosya hakkındaki bilgileri döndürür. Değer: 0x02|
-|`_A_NORMAL`| Normal. Dosya okuma veya yazma kısıtlama. Değer: 0x00|
+|`_A_ARCH`| Arşivliyorsanız. Dosya her değiştirildiğinde ayarlanır ve BACKUP komutu tarafından temizlenir. Değer: 0x20|
+|`_A_HIDDEN`| Gizli dosya. /AH seçeneği kullanılmadığı takdirde normalde DIR komutuyla görünmez. Bu özniteliğe sahip dosyaların yanı sıra normal dosyalarla ilgili bilgileri döndürür. Değer: 0x02|
+|`_A_NORMAL`| Olağan. Dosya, kısıtlama olmadan okunabilir veya yazılabilir. Değer: 0x00|
 |`_A_RDONLY`| Salt okunur. Dosya yazma için açılamıyor ve aynı ada sahip bir dosya oluşturulamıyor. Değer: 0x01|
-|`_A_SUBDIR`| Alt. Değer: 0x10|
-|`_A_SYSTEM`| Sistem dosyası. Normalde /AS seçeneği kullanılmadığı sürece DIR komutu ile görülür. Değer: 0x04|
+|`_A_SUBDIR`| Dizin. Değer: 0x10|
+|`_A_SYSTEM`| Sistem dosyası. /AS seçeneği kullanılmadığı sürece normalde DIR komutuyla görülmez. Değer: 0x04|
 
-Birden fazla sabit veya işleci ile birleştirilebilir (&#124;).
+Birden çok sabit veya işleci (&#124;) ile birleştirilebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[fileName İşlevleri Ara](../c-runtime-library/filename-search-functions.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Dosya adı arama Işlevleri](../c-runtime-library/filename-search-functions.md)<br/>
+[Global sabitler](../c-runtime-library/global-constants.md)

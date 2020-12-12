@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _com_ptr_t sınıfı'
 title: _com_ptr_t Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - _com_ptr_t class
 ms.assetid: 3753a8a0-03d4-4cfd-8a9a-74872ea53971
-ms.openlocfilehash: 2c299ea4a5aaabba847c85500a6023d7b112d492
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a68b522806cec14baffe7857c71ac171ed0407f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838509"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295620"
 ---
 # <a name="_com_ptr_t-class"></a>_com_ptr_t Sınıfı
 
@@ -19,7 +20,7 @@ ms.locfileid: "88838509"
 
 Bir **_com_ptr_t** NESNESI bir com arabirim işaretçisini kapsüller ve "Smart" işaretçisi olarak adlandırılır. Bu şablon sınıfı, üye işlevlerine işlev çağrıları aracılığıyla kaynak ayırmayı ve ayırmayı yönetir `IUnknown` : `QueryInterface` , `AddRef` ve `Release` .
 
-Akıllı işaretçiye genellikle _COM_SMARTPTR_TYPEDEF makrosu tarafından verilen typedef tanımının başvurduğu. Bu makro bir arabirim adı ve IID alır ve bir **_com_ptr_t** özelleştirmeyi, arabirimin adı artı bir soneki olarak bildirir `Ptr` . Örnek:
+Akıllı işaretçiye genellikle _COM_SMARTPTR_TYPEDEF makrosu tarafından verilen typedef tanımının başvurduğu. Bu makro bir arabirim adı ve IID alır ve bir **_com_ptr_t** özelleştirmeyi, arabirimin adı artı bir soneki olarak bildirir `Ptr` . Örneğin:
 
 ```cpp
 _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
@@ -35,7 +36,7 @@ Bu şablon sınıfının üyesi olmayan bir dizi [işlev şablonu](../cpp/relati
 |-|-|
 |[_com_ptr_t](../cpp/com-ptr-t-com-ptr-t.md)|**_Com_ptr_t** nesnesi oluşturur.|
 
-### <a name="low-level-operations"></a>Düşük düzey Işlemler
+### <a name="low-level-operations"></a>Low-Level Işlemler
 
 | Ad | Açıklama |
 |-|-|

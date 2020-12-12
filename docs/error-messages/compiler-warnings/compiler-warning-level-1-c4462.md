@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4462'
 title: Derleyici Uyarısı (düzey 1) C4462
 ms.date: 10/25/2017
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4462
 ms.assetid: 4e20aca4-293e-4c75-a83d-961c27ab7840
-ms.openlocfilehash: bd4d5c1fd7dd8d7419fc901149ceab7e769e7076
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 81696df228b2cbe6278521f602d2a6f986cacb13
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62404058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97212538"
 ---
 # <a name="compiler-warning-level-1-c4462"></a>Derleyici Uyarısı (düzey 1) C4462
 
 > Türün GUID'i belirlenemiyor. Program çalışma zamanında başarısız olabilir.
 
-Bir Windows çalışma zamanı uygulama veya bileşen genel olduğunda c4462 uyarısı meydana gelir `TypedEventHandler` tür parametrelerinden biri olarak kapsayan sınıfa bir başvuru içeriyor.
+Uyarı C4462, bir ortak `TypedEventHandler` , tür parametrelerinden biri kapsayan sınıfa bir başvuru olarak olduğunda Windows çalışma zamanı bir uygulamada veya bileşende oluşur.
 
-Bu uyarı, bir hata için otomatik olarak yükseltilir. Bu davranışı değiştirmek istiyorsanız, [#pragma Uyarısı](../../preprocessor/warning.md). Örneğin, bir düzey 4 uyarısı sorunu C4462 yapmak için kaynak kodu dosyanızda bu satırı ekleyin:
+Bu uyarı otomatik olarak bir hataya yükseltilir. Bu davranışı değiştirmek isterseniz [#pragma uyarı](../../preprocessor/warning.md)kullanın. Örneğin, C4462 4. düzey bir uyarı sorununa dönüştürmek için, bu satırı kaynak kodu dosyanıza ekleyin:
 
 ```cpp
 #pragma warning(4:4462)
@@ -27,7 +28,7 @@ Bu uyarı, bir hata için otomatik olarak yükseltilir. Bu davranışı değişt
 
 ## <a name="example"></a>Örnek
 
-Bu örnek C4462 uyarısı oluşturur:
+Bu örnek, uyarı C4462 oluşturur:
 
 ```cpp
 namespace N
@@ -67,4 +68,4 @@ public ref struct R sealed : [Windows::Foundation::Metadata::Default] IR
 };
 ```
 
-Türün GUID'i `Windows::Foundation::TypedEventHandler<R^, EventArgs^>^` yalnızca türü başka bir bileşenden erişim sağlandığında kullanılır. İlk geçici çözüm, çözüm uygulandıktan sonra yalnızca kendi bileşeni içinden erişilebilir olduğu için işe yarayacaktır. Aksi durumda, derleyici en kötü durumu varsayarak uyarıyı yaymak zorunda kalır.
+Türün GUID 'ı `Windows::Foundation::TypedEventHandler<R^, EventArgs^>^` yalnızca türe başka bir bileşenden erişildiğinde kullanılır. İlk geçici çözüm, çözüm uygulandıktan sonra yalnızca kendi bileşeni içinden erişilebilir olduğu için işe yarayacaktır. Aksi durumda, derleyici en kötü durumu varsayarak uyarıyı yaymak zorunda kalır.
