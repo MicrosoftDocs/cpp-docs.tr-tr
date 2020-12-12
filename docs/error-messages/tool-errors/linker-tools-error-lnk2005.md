@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK2005'
 title: Bağlayıcı Araçları Hatası LNK2005
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2005
 ms.assetid: d9587adc-68be-425c-8a30-15dbc86717a4
-ms.openlocfilehash: 278f05b8338ac4238d6862fd7b9bd7744f6c8ee5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c6de300bc731104f51056911515d0cc7a95e05f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225221"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338498"
 ---
 # <a name="linker-tools-error-lnk2005"></a>Bağlayıcı Araçları Hatası LNK2005
 
@@ -23,7 +24,7 @@ Bu hatanın ardından önemli hata [LNK1169](../../error-messages/tool-errors/li
 
 ### <a name="possible-causes-and-solutions"></a>Olası nedenler ve çözümler
 
-Genellikle, bu hata, belirli bir nesne dosyasındaki kullanılan herhangi bir şablon, işlev, tür veya nesne için yalnızca bir tanıma izin veren *bir tanım kuralını*bozmış ve dışarıdan görünür nesneler veya işlevler için tek bir tanım sunan tek bir tanım kuralına sahip olduğunuz anlamına gelir.
+Genellikle, bu hata, belirli bir nesne dosyasındaki kullanılan herhangi bir şablon, işlev, tür veya nesne için yalnızca bir tanıma izin veren *bir tanım kuralını* bozmış ve dışarıdan görünür nesneler veya işlevler için tek bir tanım sunan tek bir tanım kuralına sahip olduğunuz anlamına gelir.
 
 Bu hatanın bazı yaygın nedenleri aşağıda verilmiştir.
 
@@ -93,7 +94,7 @@ Bu hatanın bazı yaygın nedenleri aşağıda verilmiştir.
 
 - Bu hata, standart kitaplığın veya CRT 'ın birden fazla sürümünü bağlarsanız meydana gelebilir. Örneğin, hem perakende hem de hata ayıklama CRT kitaplıklarını ya da bir kitaplığın statik ve dinamik sürümlerini ya da standart kitaplığın iki farklı sürümünü yürütülebilir dosyaya bağlamayı denerseniz, bu hata birçok kez bildirilebilir. Bu sorunu onarmak için, her kitaplığın bir kopyasını bağlantı komutundan kaldırın. Aynı yürütülebilir dosyada, perakende ve hata ayıklama kitaplıklarını ya da bir kitaplığın farklı sürümlerini karıştırmanızı önermiyoruz.
 
-   Bağlayıcının varsayılanlar dışındaki kitaplıkları kullanmasını söylemek için, komut satırında kullanılacak kitaplıkları belirtin ve varsayılan kitaplıkları devre dışı bırakmak için [/nodefaultlib](../../build/reference/nodefaultlib-ignore-libraries.md) seçeneğini kullanın. IDE 'de, kullanılacak kitaplıkları belirtmek için projenize başvurular ekleyin ve ardından projeniz için **Özellik sayfaları** iletişim kutusunu açın ve **bağlayıcı**, **giriş** özelliği sayfasında, varsayılan kitaplıkları devre dışı bırakmak Için **tüm varsayılan kitaplıkları Yoksay**veya **belirli varsayılan kitaplıkları Yoksay** özelliklerini belirleyin.
+   Bağlayıcının varsayılanlar dışındaki kitaplıkları kullanmasını söylemek için, komut satırında kullanılacak kitaplıkları belirtin ve varsayılan kitaplıkları devre dışı bırakmak için [/nodefaultlib](../../build/reference/nodefaultlib-ignore-libraries.md) seçeneğini kullanın. IDE 'de, kullanılacak kitaplıkları belirtmek için projenize başvurular ekleyin ve ardından projeniz için **Özellik sayfaları** iletişim kutusunu açın ve **bağlayıcı**, **giriş** özelliği sayfasında, varsayılan kitaplıkları devre dışı bırakmak Için **tüm varsayılan kitaplıkları Yoksay** veya **belirli varsayılan kitaplıkları Yoksay** özelliklerini belirleyin.
 
 - [/Clr](../../build/reference/clr-common-language-runtime-compilation.md) seçeneğini kullandığınızda, statik ve dinamik kitaplıkların kullanımını karıştırırsanız bu hata oluşabilir. Örneğin, çalıştırılabilir dosyada statik CRT ile bağlantı için bir DLL oluşturursanız bu hata oluşabilir. Bu sorunu onarmak için yalnızca statik kitaplıkları veya yalnızca dinamik kitaplıkları veya yürütülebilir dosyada kullanmak için oluşturduğunuz tüm kitaplıkları kullanın.
 
@@ -103,7 +104,7 @@ Bu hatanın bazı yaygın nedenleri aşağıda verilmiştir.
 
 - Bu hata `extern const` , bir değişken iki kez tanımlanmışsa ve her tanımda farklı bir değere sahip olduğunda meydana gelebilir. Bu sorunu onarmak için, sabiti yalnızca bir kez tanımlayın veya **`enum class`** sabitleri ayırt etmek için ad alanları veya tanımlar kullanın.
 
-- Bu hata, GUID 'Leri tanımlayan diğer. lib dosyalarıyla birlikte UUID. lib kullandığınızda ortaya çıkabilir (örneğin, OLEDB. lib ve adsiid. lib). Örnek:
+- Bu hata, GUID 'Leri tanımlayan diğer. lib dosyalarıyla birlikte UUID. lib kullandığınızda ortaya çıkabilir (örneğin, OLEDB. lib ve adsiid. lib). Örneğin:
 
     ```Output
     oledb.lib(oledb_i.obj) : error LNK2005: _IID_ITransactionObject

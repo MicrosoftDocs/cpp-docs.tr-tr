@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _com_ptr_t:: AddRef'
 title: _com_ptr_t::AddRef
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - AddRef method [C++], interface pointers
 ms.assetid: c104dac3-aad3-40bb-a298-75c6cd0e63a2
-ms.openlocfilehash: 4dcf643357c9b368d4b2ea3bc51e6567acf45a44
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0979245662a94596307b1a63af918d0ce67c7b6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745098"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295698"
 ---
 # <a name="_com_ptr_taddref"></a>_com_ptr_t::AddRef
 
 **Microsoft'a Özgü**
 
-Kapsüllü `AddRef` arabirim `IUnknown` işaretçisi üzerinde üye işlevini çağırır.
+`AddRef` `IUnknown` Kapsüllenmiş arabirim İşaretçisinde öğesinin üye işlevini çağırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 void AddRef( );
@@ -27,10 +28,10 @@ void AddRef( );
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsüllenmiş arabirim işaretçisini `IUnknown::AddRef` çağırır `E_POINTER` ve işaretçi NULL ise hata yükseltir.
+`IUnknown::AddRef`IŞARETÇI null ise, kapsüllenmiş arabirim İşaretçisinde bir `E_POINTER` hata ortaya koyar.
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)
+[_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)

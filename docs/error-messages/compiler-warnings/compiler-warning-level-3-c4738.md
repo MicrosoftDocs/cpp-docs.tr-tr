@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4738'
 title: Derleyici Uyarısı (düzey 3) C4738
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4738
 ms.assetid: 9094895f-7eec-46c2-83d3-249b761d585e
-ms.openlocfilehash: 639fb14fc409a9954315184bab7ae1127460ea0d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d57b992438148b3925b5366747db0b9de53ec87e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214418"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332146"
 ---
 # <a name="compiler-warning-level-3-c4738"></a>Derleyici Uyarısı (düzey 3) C4738
 

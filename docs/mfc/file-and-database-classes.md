@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dosya ve veritabanı sınıfları'
 title: Dosya ve Veritabanı Sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - database classes [MFC]
 - file classes [MFC]
 ms.assetid: 580b169c-e26e-4395-b128-5408d08c98fe
-ms.openlocfilehash: 8874b9f99d3a5756b4ce66e2f5732f856bdd7078
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ced377a1a23625f16ad3e42149859af220c7d7e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189294"
 ---
 # <a name="file-and-database-classes"></a>Dosya ve Veritabanı Sınıfları
 
@@ -23,9 +24,9 @@ Aşağıdaki sınıf kategorileri veri kalıcılığını destekler.
 
 - [OLE DB sınıfları](ole-db-classes.md)
 
-- [DAO Sınıfları](dao-classes.md)
+- [DAO sınıfları](dao-classes.md)
 
-- [ODBC Sınıfları](odbc-classes.md)
+- [ODBC sınıfları](odbc-classes.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK2001'
 title: Bağlayıcı Araçları Hatası LNK2001
 ms.date: 12/19/2019
 f1_keywords:
@@ -6,28 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2001
 ms.assetid: dc1cf267-c984-486c-abd2-fd07c799f7ef
-ms.openlocfilehash: 59915b3aa0ad25b5638a43a6d09dccc2b42825ab
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 790c75b290b49fe40362ad1bc4ee93e90cc2d018
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338521"
 ---
 # <a name="linker-tools-error-lnk2001"></a>Bağlayıcı Araçları Hatası LNK2001
 
 > çözümlenmemiş dış sembol "*symbol*"
 
-Derlenen kod, bir başvuru veya *sembol*çağrısı yapar. Sembol, bağlayıcı tarafından aranan herhangi bir kitaplık veya nesne dosyasında tanımlı değil.
+Derlenen kod, bir başvuru veya *sembol* çağrısı yapar. Sembol, bağlayıcı tarafından aranan herhangi bir kitaplık veya nesne dosyasında tanımlı değil.
 
 Bu hata iletisi, önemli hata [LNK1120](../../error-messages/tool-errors/linker-tools-error-lnk1120.md)tarafından izlenir. Hata LNK1120 onarmak için, önce tüm LNK2001 ve LNK2019 hatalarını düzeltir.
 
-LNK2001 hataları almanın birçok yolu vardır. Hepsi, bağlayıcının *çözememesi*veya bir tanımı bulmak için bir işlev veya değişken *başvurusu* içerir. Derleyici, kodunuzun ne zaman bir sembol *bildirmediğini* tanımlayabilir, ancak *tanımlamaz* . Bunun nedeni, tanımın farklı bir kaynak dosyasında veya kitaplıkta olabilir. Kodunuz bir sembole başvuruyorsa, ancak hiçbir şekilde tanımlanmamışsa, bağlayıcı bir hata oluşturur.
+LNK2001 hataları almanın birçok yolu vardır. Hepsi, bağlayıcının *çözememesi* veya bir tanımı bulmak için bir işlev veya değişken *başvurusu* içerir. Derleyici, kodunuzun ne zaman bir sembol *bildirmediğini* tanımlayabilir, ancak *tanımlamaz* . Bunun nedeni, tanımın farklı bir kaynak dosyasında veya kitaplıkta olabilir. Kodunuz bir sembole başvuruyorsa, ancak hiçbir şekilde tanımlanmamışsa, bağlayıcı bir hata oluşturur.
 
 ## <a name="what-is-an-unresolved-external-symbol"></a>Çözümlenmemiş dış sembol nedir?
 
 *Sembol* , bir işlevin veya genel değişkenin iç adıdır. Bu, derlenmiş bir nesne dosyasında ya da kitaplıkta kullanılan veya tanımlanmış olan addır. Genel bir değişken, depolama alanının kendisi için ayrıldığı nesne dosyasında tanımlanır. İşlev gövdesi için derlenmiş kodun yerleştirildiği nesne dosyasında bir işlev tanımlanır. *Dış simgeye* tek bir nesne dosyasında başvurulur, ancak farklı bir kitaplıkta veya nesne dosyasında tanımlanmıştır. *İçe aktarılmış bir sembol* , kendisini tanımlayan nesne dosyası veya kitaplık tarafından herkese açık şekilde oluşturulmuş bir simgedir.
 
-Bir uygulama veya DLL oluşturmak için, kullanılan her simgenin bir tanımı olmalıdır. Bağlayıcı, her bir nesne dosyası tarafından başvurulan her dış sembol için eşleşen tanımı *çözümlemelidir*veya bulur. Bağlayıcı, bir dış sembolü çözümleyemezse bir hata oluşturur. Bu, bağlayıcının bağlantılı dosyaların hiçbirinde eşleşen bir içe aktarılmış sembol tanımı bulamadığı anlamına gelir.
+Bir uygulama veya DLL oluşturmak için, kullanılan her simgenin bir tanımı olmalıdır. Bağlayıcı, her bir nesne dosyası tarafından başvurulan her dış sembol için eşleşen tanımı *çözümlemelidir* veya bulur. Bağlayıcı, bir dış sembolü çözümleyemezse bir hata oluşturur. Bu, bağlayıcının bağlantılı dosyaların hiçbirinde eşleşen bir içe aktarılmış sembol tanımı bulamadığı anlamına gelir.
 
 ## <a name="compilation-and-link-issues"></a>Derleme ve bağlantı sorunları
 
@@ -97,7 +98,7 @@ Bir. def dosyasında listelenen bir dışarı aktarma bulunamazsa bu hata oluşu
 
 ## <a name="use-the-decorated-name-to-find-the-error"></a>Hatayı bulmak için düzenlenmiş adı kullanın
 
-C++ derleyicisi ve bağlayıcı, Name *-değiştirmeyi*olarak da bilinen [ad dekorasyonu](../../error-messages/tool-errors/name-decoration.md)kullanır. Ad dekorasyonu, sembol adında bir değişkenin türü hakkında ek bilgiler kodlar. İşlevin sembol adı, dönüş türünü, parametre türlerini, kapsamı ve çağırma kuralını kodluyor. Bu düzenlenmiş ad, bağlayıcının dış sembolleri çözümlemek için aradığı sembol adıdır.
+C++ derleyicisi ve bağlayıcı, Name *-değiştirmeyi* olarak da bilinen [ad dekorasyonu](../../error-messages/tool-errors/name-decoration.md)kullanır. Ad dekorasyonu, sembol adında bir değişkenin türü hakkında ek bilgiler kodlar. İşlevin sembol adı, dönüş türünü, parametre türlerini, kapsamı ve çağırma kuralını kodluyor. Bu düzenlenmiş ad, bağlayıcının dış sembolleri çözümlemek için aradığı sembol adıdır.
 
 Bir işlev veya değişkenin bildirimi işlevin veya değişkenin tanımıyla *tam olarak* eşleşmiyorsa bir bağlantı hatası oluşur. Bunun nedeni, herhangi bir farkın eşleşme sembol adının bir parçası haline gelir. Hem çağıran kodda hem de tanımlama kodunda aynı üstbilgi dosyası kullanılıyorsa bile hata oluşabilir. Farklı derleyici bayraklarını kullanarak kaynak dosyaları derlerseniz, oluşabilecek bir yol vardır. Örneğin, kodunuz çağırma kuralını kullanacak şekilde derlenmişse **`__vectorcall`** , ancak varsayılan **`__cdecl`** veya çağırma kuralını kullanarak istemcilerin bunu aramasını bekleyen bir kitaplığa bağlantı oluşturduysanız **`__fastcall`** . Bu durumda, çağırma kuralları farklı olduğundan semboller eşleşmez.
 

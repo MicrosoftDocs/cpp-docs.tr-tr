@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; ccomplex&gt;'
 title: '&lt;ccomplex&gt;'
 ms.date: 07/11/2019
 f1_keywords:
@@ -7,34 +8,34 @@ f1_keywords:
 helpviewer_keywords:
 - ccomplex header
 ms.assetid: a9fcb5f0-88e3-464b-a5fd-d1afb8cd7e6f
-ms.openlocfilehash: 5b5383b1eca4fda72f5f9e3a78637373acbcf7ab
-ms.sourcegitcommit: 0867d648e0955ebad7260b5fbebfd6cd4d58f3c7
+ms.openlocfilehash: d657d7b0b2a203bcbad93ff1c78f6b78eb4d7707
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325321"
 ---
 # <a name="ltccomplexgt"></a>&lt;ccomplex&gt;
 
-, C++ [ \<Karmaşık >](complex.md)standart kitaplık üst bilgisini içerir.
+C++ standart kitaplığı üst bilgisini içerir [\<complex>](complex.md) .
 
 > [!NOTE]
-> C standart \<kitaplığı karmaşık. h > üstbilgisi, \<karmaşık > ve \< \<cmath > C++ aşırı yüklemeler tarafından etkin bir şekilde değiştirildiğinden ccomplex > tarafından dahil değildir. Bu, \<ccomplex > üst bilgisini gereksiz hale getirir. Karmaşık. h > üstbilgisi ' de C++kullanım dışıdır. \< \<Ccomplex > üst bilgisi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardında kaldırılmıştır.
+> C standart kitaplık \<complex.h> üst bilgisi \<ccomplex> , ve içindeki C++ aşırı yüklemeleri tarafından etkin bir şekilde değiştirildiğinden, tarafından dahil \<complex> değildir \<cmath> . Bu, \<ccomplex> üstbilgiyi gereksiz hale getirir. \<complex.h>Üst bilgi C++ ' da kullanımdan kaldırılmıştır. \<ccomplex>Üst bilgi c++ 17 ' de kullanımdan kaldırılmıştır ve taslak c++ 20 standardına göre kaldırılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<ccomplex >
+**Üst bilgi:**\<ccomplex>
 
 **Ad alanı:** std
 
 ## <a name="remarks"></a>Açıklamalar
 
-Karmaşık. `clog`h > olarak \<belirtilen ad, [ \<ıostream >](iostream.md)içinde belirtilen ile `clog` olası çakışmalar `std` nedeniyle ad alanında tanımlı değil.
+İçinde belirtilen ad, `clog` \<complex.h> `std` içinde belirtilen ile olası çakışmalar nedeniyle ad alanında tanımlı değil `clog` [\<iostream>](iostream.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<karmaşık >](complex.md)\
-[\<cmath >](cmath.md)\
+[\<complex>](complex.md)\
+[\<cmath>](cmath.md)\
 [Üst bilgi dosyaları başvurusu](cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](cpp-standard-library-overview.md)\
-[C++ Standart kitaplıkta iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)

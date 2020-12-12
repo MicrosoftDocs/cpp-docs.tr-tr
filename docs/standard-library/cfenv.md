@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; cfenv&gt;'
 title: '&lt;cfenv&gt;'
 ms.date: 11/04/2016
 ms.assetid: 6a17ad51-2182-4e91-8108-65997382acd3
-ms.openlocfilehash: b1ae987d49c95b781cb255a4d7e3a9a04ab6043a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e01a74b9df3431ed257cb015260d0775320a88ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325295"
 ---
 # <a name="ltcfenvgt"></a>&lt;cfenv&gt;
 
-Standart C Kitaplığı üstbilgisi \<fenv. h > içerir ve ilişkili adları `std` ad alanına ekler.
+Standart C Kitaplığı üst bilgisini içerir \<fenv.h> ve ilgili adları `std` ad alanına ekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cfenv>
@@ -63,5 +64,5 @@ int feupdateenv(const fenv_t* penv);
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

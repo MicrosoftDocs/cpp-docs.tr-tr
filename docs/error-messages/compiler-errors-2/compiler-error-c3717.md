@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3717'
 title: Derleyici hatası C3717
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3717
 ms.assetid: ae4fceb1-2583-4577-b2f1-40971a017055
-ms.openlocfilehash: cd9a97f1b0d9c9eecfa6a42f735f21a42fd846e9
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: fecd417af1eceb40ef8b8e48fda40b3ec5e5b36a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189437"
 ---
 # <a name="compiler-error-c3717"></a>Derleyici hatası C3717
 
 ' Method ': olayları harekete uygulayan bir yöntem tanımlanamaz
 
-Uygulama içeren bir olay yöntemi bildirdiniz. [__Event](../../cpp/event.md) yöntemi bildiriminin tanımı olamaz. Bu hatayı düzeltemedi, hiçbir olay yöntemi bildiriminin tanımlara sahip olmadığından emin olun. Örneğin, aşağıdaki kodda, açıklama ile gösterildiği gibi `event1` bildiriminden işlev gövdesini kaldırın.
+Uygulama içeren bir olay yöntemi bildirdiniz. [__Event](../../cpp/event.md) yöntemi bildiriminin tanımı olamaz. Bu hatayı düzeltemedi, hiçbir olay yöntemi bildiriminin tanımlara sahip olmadığından emin olun. Örneğin, aşağıdaki kodda, `event1` Açıklama ile gösterildiği gibi, işlev gövdesini bildirimden kaldırın.
 
 Aşağıdaki örnek C3717 oluşturur:
 

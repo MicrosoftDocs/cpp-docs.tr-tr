@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. Standart dönüştürmeler
 title: Standart dönüşümler
 ms.date: 10/02/2019
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - L-values [C++]
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-ms.openlocfilehash: cb4960c2f981b99fbc798098357a0ac65e8ddaa6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cfebc861fca1ccf8119c6055b37f112df7d4dca0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232228"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318045"
 ---
 # <a name="standard-conversions"></a>Standart dönüşümler
 
-C++ dili, temel türleri arasındaki dönüştürmeleri tanımlar. Ayrıca işaretçi, başvuru ve işaretçiden üyeye türetilmiş türler için dönüşümler tanımlar. Bu dönüşümler *Standart dönüşümler*olarak adlandırılır.
+C++ dili, temel türleri arasındaki dönüştürmeleri tanımlar. Ayrıca işaretçi, başvuru ve işaretçiden üyeye türetilmiş türler için dönüşümler tanımlar. Bu dönüşümler *Standart dönüşümler* olarak adlandırılır.
 
 Bu bölümde aşağıdaki standart dönüşümler ele alınmaktadır:
 
@@ -55,7 +56,7 @@ Bir dönüştürmenin sonucu yalnızca bir başvuru türü üretirse bir l değe
 
 ## <a name="integral-promotions"></a>Integral yükseltmeler
 
-İntegral türündeki nesneler, daha büyük bir değer kümesini temsil eden bir tür olan başka bir geniş integral türüne dönüştürülebilir. Bu dönüştürme türü, *integral yükseltme*olarak adlandırılır. İntegral yükseltme ile, başka bir integral türünün kullanılabileceği her yerde aşağıdaki türleri bir ifadede kullanabilirsiniz:
+İntegral türündeki nesneler, daha büyük bir değer kümesini temsil eden bir tür olan başka bir geniş integral türüne dönüştürülebilir. Bu dönüştürme türü, *integral yükseltme* olarak adlandırılır. İntegral yükseltme ile, başka bir integral türünün kullanılabileceği her yerde aşağıdaki türleri bir ifadede kullanabilirsiniz:
 
 - Ve türündeki nesneler, sabit değerler ve sabitler **`char`****`short int`**
 
@@ -69,7 +70,7 @@ Yükseltmeden sonraki değerin, yükseltmeden önceki değerle aynı olması gar
 
 Değer korumalı yükseltmeler ve işaretli durumu koruyan yükseltmeler normalde aynı sonuçları verir. Ancak, yükseltilen nesne şöyle görünüyorsa farklı sonuçlar üretebilirler:
 
-- ,,,,, `/` `%` `/=` `%=` `<` `<=` , `>` , Veya işleneni`>=`
+- ,,,,, `/` `%` `/=` `%=` `<` `<=` , `>` , Veya işleneni `>=`
 
    Bu işleçler sonucu belirlemek için işareti kullanırlar. Değer koruma ve oturum koruma yükseltmeleri, bu işlenenlere uygulandığında farklı sonuçlar üretir.
 
@@ -139,11 +140,11 @@ Türe göre maksimum değer gösterilebilir tablo, **`float`** 3.402823466 E38 �
 
 Belirli ifadeler, kayan türde nesneleri integral türlerine dönüştürebilirler veya tam tersi olabilir. İntegral türündeki bir nesne kayan bir türe dönüştürüldüğünde ve özgün değer tam olarak gösterilemeyen şekilde görüntülenmiyorsa, sonuç bir sonraki daha yüksek veya daha düşük bir sonraki değer olarak gösterilebilir.
 
-Kayan türden bir nesne integral türüne dönüştürüldüğünde kesirli bölüm *kesilir*veya sıfıra yuvarlanır. 1,3 gibi bir sayı 1 ' e dönüştürülüp-1,3-1 ' e dönüştürülür. Kesilen değer en yüksek gösterilemeyen değerden yüksekse veya en düşük gösterilemeyen değerden düşükse, sonuç tanımsızdır.
+Kayan türden bir nesne integral türüne dönüştürüldüğünde kesirli bölüm *kesilir* veya sıfıra yuvarlanır. 1,3 gibi bir sayı 1 ' e dönüştürülüp-1,3-1 ' e dönüştürülür. Kesilen değer en yüksek gösterilemeyen değerden yüksekse veya en düşük gösterilemeyen değerden düşükse, sonuç tanımsızdır.
 
 ## <a name="arithmetic-conversions"></a>Aritmetik dönüştürmeler
 
-Birçok ikili işleç ( [ikili işleçlere sahip ifadelerde](../cpp/expressions-with-binary-operators.md)açıklanmıştır) işlenenlerin dönüştürmelerine neden olur ve aynı şekilde sonuç verir. Bu işleçlerin dönüşümlerine neden olan dönüşümler, *Olağan aritmetik dönüştürmeler*olarak adlandırılır. Farklı yerel türlerine sahip işlenenlerin aritmetik dönüştürmeleri, aşağıdaki tabloda gösterildiği gibi yapılır. Typedef türleri, temel yerel türlerine göre davranır.
+Birçok ikili işleç ( [ikili işleçlere sahip ifadelerde](../cpp/expressions-with-binary-operators.md)açıklanmıştır) işlenenlerin dönüştürmelerine neden olur ve aynı şekilde sonuç verir. Bu işleçlerin dönüşümlerine neden olan dönüşümler, *Olağan aritmetik dönüştürmeler* olarak adlandırılır. Farklı yerel türlerine sahip işlenenlerin aritmetik dönüştürmeleri, aşağıdaki tabloda gösterildiği gibi yapılır. Typedef türleri, temel yerel türlerine göre davranır.
 
 ### <a name="conditions-for-type-conversion"></a>Tür dönüştürme koşulları
 
@@ -190,7 +191,7 @@ Bir sınıfa yönelik işaretçinin, temel sınıfa olan işaretçiye dönüşt�
 Temel bir sınıfa erişilebilir olup olmadığı, türetmede kullanılan devralmanın türüne bağlıdır. Aşağıdaki şekilde gösterilen devralmayı göz önünde bulundurun.
 
 ![Temel&#45;sınıfı erişilebilirliğini gösteren devralma grafiği](../cpp/media/vc38xa1.gif "Temel&#45;sınıfı erişilebilirliğini gösteren devralma grafiği") <br/>
-Temel sınıf erişilebilirliği çizimi için devralma grafiği
+Base-Class erişilebilirliği gösterimi için devralma grafiği
 
 Aşağıdaki tabloda, şekilde gösterildiği durumlar için temel sınıf erişilebilirliği gösterilmektedir.
 
@@ -198,17 +199,17 @@ Aşağıdaki tabloda, şekilde gösterildiği durumlar için temel sınıf eriş
 |----------------------|----------------|-------------------------------------------|
 |Dış (sınıf kapsamlı değil) işlevi|Özel|Hayır|
 ||Korumalı|Hayır|
-||Genel|Yes|
-|B üye işlevi (B kapsamında)|Özel|Yes|
-||Korumalı|Yes|
-||Genel|Yes|
+||Genel|Evet|
+|B üye işlevi (B kapsamında)|Özel|Evet|
+||Korumalı|Evet|
+||Genel|Evet|
 |C üye işlevi (C kapsamında)|Özel|Hayır|
-||Korumalı|Yes|
-||Genel|Yes|
+||Korumalı|Evet|
+||Genel|Evet|
 
 Bir sınıfa yönelik işaretçinin bir taban sınıfına bir işaretçiye dönüştürülebileceği ikinci durum, açık bir tür dönüştürmesi kullandığınız durumdur. Açık tür dönüştürmeleri hakkında daha fazla bilgi için bkz. [Açık tür dönüştürme işleci](explicit-type-conversion-operator-parens.md).
 
-Bu tür bir dönüştürmenin sonucu, nesnenin temel sınıf tarafından tamamen tanımlanan bölümü olan *alt nesne için*bir işaretçidir.
+Bu tür bir dönüştürmenin sonucu, nesnenin temel sınıf tarafından tamamen tanımlanan bölümü olan *alt nesne için* bir işaretçidir.
 
 Aşağıdaki kod, `A` ve `B` ' `B` den türetildiği iki sınıfı tanımlar `A` . (Devralma hakkında daha fazla bilgi için bkz. [türetilmiş sınıflar](../cpp/inheritance-cpp.md).) Daha sonra `bObject` , türü bir nesne `B` ve `pA` nesneyi işaret eden iki işaretçi (ve `pB` ) tanımlar.
 
@@ -260,7 +261,7 @@ C++ **`const`** , veya türünden veya olmayan bir türe standart bir dönüşt�
 
 ### <a name="null-pointer-conversions"></a>null işaretçi dönüşümleri
 
-Sıfır olarak değerlendirilen bir integral sabiti ifadesi veya işaretçi türüne bir ifade atama, *null işaretçi*adlı işaretçiye dönüştürülür. Bu işaretçi her zaman, geçerli bir nesne veya işlev işaretçiyle eşit olmayan şekilde karşılaştırılır. Bir özel durum, aynı uzaklığa sahip olabilen ve hala farklı nesnelere işaret eden tabanlı nesneler işaretçileridir.
+Sıfır olarak değerlendirilen bir integral sabiti ifadesi veya işaretçi türüne bir ifade atama, *null işaretçi* adlı işaretçiye dönüştürülür. Bu işaretçi her zaman, geçerli bir nesne veya işlev işaretçiyle eşit olmayan şekilde karşılaştırılır. Bir özel durum, aynı uzaklığa sahip olabilen ve hala farklı nesnelere işaret eden tabanlı nesneler işaretçileridir.
 
 C++ 11 ' de, [nullptr](../cpp/nullptr.md) türü C stili null İşaretçisinde tercih edilmelidir.
 
@@ -329,4 +330,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ dili başvurusu](../cpp/cpp-language-reference.md)
+[C++ dil başvurusu](../cpp/cpp-language-reference.md)
