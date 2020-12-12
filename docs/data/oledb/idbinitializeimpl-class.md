@@ -1,4 +1,5 @@
 ---
+description: ': IDBInitializeImpl sınıfı hakkında daha fazla bilgi edinin'
 title: IDBInitializeImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: aff02e812d2806201a08164aeb4a8ef290550725
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6b37998c78c3e88921318654653995ff356ba18a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287326"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl Sınıfı
 
 [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)) arabirimi için bir uygulama sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T>
@@ -77,7 +78,7 @@ Sınıfınız, öğesinden türetilir `IDBInitializeImpl` .
 
 | Ad | Açıklama |
 |-|-|
-|[Initialize](#initialize)|Sağlayıcıyı başlatır.|
+|[Başlatma](#initialize)|Sağlayıcıyı başlatır.|
 |[Uninitialize](#uninitialize)|Sağlayıcıyı sonlandırır.|
 
 ### <a name="data-members"></a>Veri üyeleri

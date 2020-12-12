@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: IGetDataSourceImpl sınıfı'
 title: IGetDataSourceImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - IGetDataSourceImpl class
 - GetDataSource method
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-ms.openlocfilehash: 4c8af66f41724c5a99dfe271a7dd8babc3a993a5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 24cf83b7eb799882f1c7da42854899bcf46fddf2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843969"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287274"
 ---
 # <a name="igetdatasourceimpl-class"></a>IGetDataSourceImpl Sınıfı
 
 [IGetDataSource](/previous-versions/windows/desktop/ms709721(v=vs.85)) nesnesinin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T>
@@ -57,7 +58,7 @@ Bu, veri kaynağı nesnesine bir arabirim işaretçisi almak için oturumdaki zo
 
 Oturumu oluşturan veri kaynağı nesnesinde bir arabirim işaretçisi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetDataSource)(REFIID riid,
@@ -66,7 +67,7 @@ STDMETHOD(GetDataSource)(REFIID riid,
 
 #### <a name="parameters"></a>Parametreler
 
-*OLE DB Programcı başvurusunda*bkz. [IGetDataSource:: GetDataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) .
+*OLE DB Programcı başvurusunda* bkz. [IGetDataSource:: GetDataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 

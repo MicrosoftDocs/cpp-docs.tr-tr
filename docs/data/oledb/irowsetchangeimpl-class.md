@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. IRowsetChangeImpl sınıfı
 title: IRowsetChangeImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -31,18 +32,18 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-ms.openlocfilehash: 66e7b758752a46fffff177323fe83eecc0b2fa55
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6536b589cdf936b653d87941fb717e96ff88422c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287235"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl Sınıfı
 
 OLE DB belirtiminde [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) arabiriminin OLE DB Şablonları uygulamasıdır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -112,7 +113,7 @@ OLE DB şablonları uygulanması tüm temel yöntemleri ( `SetData` , `InsertRow
 
 Satır kümesinden satır siler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
@@ -123,13 +124,13 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-*OLE DB Programcı başvurusunda*bkz. [ırowsetchange::D eleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) .
+*OLE DB Programcı başvurusunda* bkz. [ırowsetchange::D eleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) .
 
 ## <a name="irowsetchangeimplinsertrow"></a><a name="insertrow"></a> IRowsetChangeImpl:: InsertRow
 
 Satır kümesinde yeni bir satır oluşturur ve başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
@@ -140,13 +141,13 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>Parametreler
 
-*OLE DB Programcı başvurusunda*bkz. [IRowsetChange:: InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)) .
+*OLE DB Programcı başvurusunda* bkz. [IRowsetChange:: InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85)) .
 
 ## <a name="irowsetchangeimplsetdata"></a><a name="setdata"></a> IRowsetChangeImpl:: SetData
 
 Veri değerlerini bir veya daha fazla sütunda ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (SetData )(HROW hRow,
@@ -156,13 +157,13 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### <a name="parameters"></a>Parametreler
 
-*OLE DB Programcı başvurusunda*bkz. [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) .
+*OLE DB Programcı başvurusunda* bkz. [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) .
 
 ## <a name="irowsetchangeimplflushdata"></a><a name="flushdata"></a> IRowsetChangeImpl:: FlushData
 
 Veri deposuna verileri yürütmek için sağlayıcı tarafından geçersiz kılındı.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT FlushData(HROW hRowToFlush,

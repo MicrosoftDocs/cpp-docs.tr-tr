@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IDBSchemaRowsetImpl Class'
 title: IDBSchemaRowsetImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - GetRowset method
 - GetSchemas method
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-ms.openlocfilehash: d78aa23469cc0fa94498f93e9a6975e0a7c827e9
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 392f74793f363c203b740b14b00b605d8256bef5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287287"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl Sınıfı
 
@@ -149,7 +150,7 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
 'ndaki Şema satır kümesine uygulanan kısıtlamaların sayısı.
 
 *rgRestrictions*<br/>
-'ndaki `cRestrictions`Satır kümesine uygulanacak **çeşitler**dizisi.
+'ndaki `cRestrictions`Satır kümesine uygulanacak **çeşitler** dizisi.
 
 *riıd*<br/>
 'ndaki Çıktıda [QueryInterface](../../atl/queryinterface.md) için arabirim `IUnknown` .
@@ -161,10 +162,10 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
 'ndaki Ayarlanan özellikleri belirten bir [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları dizisi.
 
 *ppRowset*<br/>
-dışı `IUnknown` *Riıd*tarafından istenen giden. Bu `IUnknown` , şema satır kümesi nesnesindeki bir arabirimdir.
+dışı `IUnknown` *Riıd* tarafından istenen giden. Bu `IUnknown` , şema satır kümesi nesnesindeki bir arabirimdir.
 
 *pSchemaRowset*<br/>
-dışı Şema satır kümesi sınıfının bir örneğine yönelik işaretçi. Genellikle, bu parametre kullanılmaz, ancak bir COM nesnesine teslim etmeden önce şema satır kümesinde daha fazla iş gerçekleştirmeniz gerekiyorsa kullanılabilir. *PSchemaRowset* kullanım ömrü *ppRowset*ile bağlanır.
+dışı Şema satır kümesi sınıfının bir örneğine yönelik işaretçi. Genellikle, bu parametre kullanılmaz, ancak bir COM nesnesine teslim etmeden önce şema satır kümesinde daha fazla iş gerçekleştirmeniz gerekiyorsa kullanılabilir. *PSchemaRowset* kullanım ömrü *ppRowset* ile bağlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -238,7 +239,7 @@ STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
 'ndaki Satır kümesine uygulanacak kısıtlamaların sayısı.
 
 *rgRestrictions*<br/>
-'ndaki `cRestrictions`Kısıtlamaları temsil eden bir **çeşit**dizi.
+'ndaki `cRestrictions`Kısıtlamaları temsil eden bir **çeşit** dizi.
 
 *riıd*<br/>
 'ndaki Yeni oluşturulan şema satır kümesinin istemesi için IID.
@@ -279,7 +280,7 @@ dışı Şemaların sayısıyla doldurulmuş bir **ulong** için bir işaretçi.
 dışı Bir şema satır kümesi GUID 'Leri dizisine işaret eden bir işaretçi ile doldurulmuş Guid dizisine yönelik bir işaretçi.
 
 *prgRest*<br/>
-dışı Kısıtlama dizisiyle doldurulacak bir **ulong**dizisine yönelik bir işaretçi.
+dışı Kısıtlama dizisiyle doldurulacak bir **ulong** dizisine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 

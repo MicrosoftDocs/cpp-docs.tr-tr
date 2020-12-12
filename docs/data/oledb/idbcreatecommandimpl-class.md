@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IDBCreateCommandImpl sınıfı'
 title: IDBCreateCommandImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - IDBCreateCommandImpl class
 - CreateCommand method
 ms.assetid: eac4755e-1668-42e1-958e-a35620c385ae
-ms.openlocfilehash: b7b658b2b365eb84a39ae94cef7c77e18d7bd4a0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aaa9e84b66bd8bcb93fa418eed56a3cdadd31d6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845555"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287352"
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl Sınıfı
 
 [IDBCreateCommand](/previous-versions/windows/desktop/ms711625(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T, class CommandClass >
@@ -58,7 +59,7 @@ Yeni bir komut almak için oturum nesnesi üzerinde isteğe bağlı bir arabirim
 
 Yeni bir komut oluşturur ve istenen arabirimi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(CreateCommand)(IUnknown * pUnkOuter,
