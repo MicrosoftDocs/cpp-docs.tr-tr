@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Cmfcmenubtan sınıfı'
 title: Cmfcmenubtan sınıfı
 ms.date: 07/15/2019
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_nMenuResult
 - CMFCMenuButton [MFC], m_bDefaultClick
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: 2f8ef341d7f460ed6b0ec23cb8a490842eb67cbc
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 954a9239f7a4912e29dd031ecacfeb2e06c6d8be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743275"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265135"
 ---
 # <a name="cmfcmenubutton-class"></a>Cmfcmenubtan sınıfı
 

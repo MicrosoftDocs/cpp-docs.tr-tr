@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CSliderCtrl sınıfı'
 title: CSliderCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetTipSide
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-ms.openlocfilehash: 8dfdcf34474027180708045131a19bf6f7e14512
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 556366f429b39344f4ae2f20acd3c20fd9760552
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562538"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264550"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl sınıfı
 
@@ -149,7 +150,7 @@ Kaydırıcı, oluştururken belirttiğiniz artışlarla hareket eder. Örneğin,
 
 Oluşturucuyu ve üye işlevini kullanarak bir kaydırıcı oluşturursunuz `Create` `CSliderCtrl` . Kaydırıcı denetimini oluşturduktan sonra, `CSliderCtrl` özelliklerinin çoğunu değiştirmek için içindeki üye işlevlerini kullanabilirsiniz. Yapabileceğiniz değişiklikler kaydırıcı için en düşük ve en yüksek pozisyonları ayarlamayı, değer işaretlerini çizmeyi, seçim aralığını ayarlamayı ve kaydırıcıyı yeniden konumlandırmayı içerir.
 
-Kullanma hakkında daha fazla bilgi için `CSliderCtrl` bkz [Controls](../../mfc/controls-mfc.md) . [CSliderCtrl kullanma](../../mfc/using-csliderctrl.md).
+Kullanma hakkında daha fazla bilgi için `CSliderCtrl` bkz [](../../mfc/controls-mfc.md) . [CSliderCtrl kullanma](../../mfc/using-csliderctrl.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -225,7 +226,7 @@ Başlatma başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 `CSliderCtrl`İki adımda oluşturursunuz. İlk olarak, oluşturucuyu çağırın ve ardından `Create` kaydırıcı denetimini oluşturan ve nesneye bağlayan çağırın `CSliderCtrl` .
 
-*DwStyle*için ayarlanan değerlere bağlı olarak kaydırıcı denetiminin dikey veya yatay bir yönü olabilir. Her iki tarafta da ya da hiçbiri üzerinde değer çizgisi olabilir. Ardışık değerler aralığını belirtmek için de kullanılabilir.
+*DwStyle* için ayarlanan değerlere bağlı olarak kaydırıcı denetiminin dikey veya yatay bir yönü olabilir. Her iki tarafta da ya da hiçbiri üzerinde değer çizgisi olabilir. Ardışık değerler aralığını belirtmek için de kullanılabilir.
 
 Kaydırıcı denetimine genişletilmiş pencere stilleri uygulamak için yerine [CreateEx](#createex) çağırın `Create` .
 
@@ -251,7 +252,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 Kaydırıcı denetiminin stilini belirtir. Windows SDK açıklanan [kaydırıcı denetim stillerinin](/windows/win32/Controls/trackbar-control-styles)birleşimini denetime uygulayın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.
@@ -294,7 +295,7 @@ Hangi iki arkadaş pencerenin almak için işlediğini belirten bir Boole değer
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*FLocation*tarafından belirtilen konumdaki arkadaş penceresi olan bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesi işaretçisi veya bu konumda arkadaş penceresi yoksa null.
+*FLocation* tarafından belirtilen konumdaki arkadaş penceresi olan bir [CWnd](../../mfc/reference/cwnd-class.md) nesnesi işaretçisi veya bu konumda arkadaş penceresi yoksa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -393,7 +394,7 @@ En yüksek konumu alan bir tamsayıya başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, değerleri *nMin* ve *NMAX*tarafından başvurulan tamsayılara kopyalar.
+Bu işlev, değerleri *nMin* ve *NMAX* tarafından başvurulan tamsayılara kopyalar.
 
 ## <a name="csliderctrlgetrangemax"></a><a name="getrangemax"></a> CSliderCtrl:: GetRangeMax
 
@@ -775,7 +776,7 @@ Tooltip denetiminin görüntüleneceği konumu temsil eden değer. Olası değer
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Araç ipucu denetiminin önceki konumunu temsil eden bir değer. Dönüş değeri *nLocation*için olası değerlerden birine eşit.
+Araç ipucu denetiminin önceki konumunu temsil eden bir değer. Dönüş değeri *nLocation* için olası değerlerden birine eşit.
 
 ### <a name="remarks"></a>Açıklamalar
 

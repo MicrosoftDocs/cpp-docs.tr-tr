@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1017'
 title: Önemli Hata C1017
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - C1017
 ms.assetid: 5542e604-599d-4e36-8f83-1d454c5753c9
-ms.openlocfilehash: 0feda3bc4c3729d3101be356220aa0124ba85190
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a36a5cb11b10ca3ecca00d0379595060918d6a45
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262392"
 ---
 # <a name="fatal-error-c1017"></a>Önemli Hata C1017
 
 geçersiz tamsayı sabiti ifadesi
 
-`#if` yönergesinin ifadesi yoktu veya bir sabit değer olarak değerlendirilmedi.
+Bir `#if` yönergedeki ifade yoktu veya bir sabit değer değerlendirmedi.
 
-`#define` kullanılarak tanımlanan sabitler, bir `#if`, `#elif`veya `#else` yönergesinde kullanılıyorsa bir tamsayı sabiti değerlendiren değerler içermelidir.
+Kullanılarak tanımlanan sabitler `#define` ,, veya yönergesinde kullanılıyorsa bir tamsayı sabiti değerlendiren değerler içermelidir `#if` `#elif` `#else` .
 
 Aşağıdaki örnek C1017 oluşturur:
 
@@ -40,9 +41,9 @@ Olası çözüm:
 #endif
 ```
 
-`CONSTANT_NAME` bir tamsayı değil bir dizeye göre değerlendirildiği için `#if` yönergesi önemli hata C1017 oluşturur.
+`CONSTANT_NAME`Bir tamsayı değil bir dize olarak değerlendirilir, `#if` yönerge önemli hata C1017 oluşturur.
 
-Diğer durumlarda, Önişlemci tanımsız bir sabiti sıfır olarak değerlendirir. Bu, aşağıdaki örnekte gösterildiği gibi istenmeden sonuçlara neden olabilir. `YES` tanımsız olduğundan, sıfır olarak değerlendirilir. `#if` `CONSTANT_NAME` ifadesi yanlış olarak değerlendirilir ve `YES` üzerinde kullanılacak kod Önişlemci tarafından kaldırılır. `NO` de tanımsız (sıfır), bu nedenle `#elif` `CONSTANT_NAME==NO` true olarak değerlendirilir (`0 == 0`), önyükleyicinin kodu deyimin `#elif` bölümünde (amaçlanan davranışın tam tersi) bırakmasını sağlar.
+Diğer durumlarda, Önişlemci tanımsız bir sabiti sıfır olarak değerlendirir. Bu, aşağıdaki örnekte gösterildiği gibi istenmeden sonuçlara neden olabilir. `YES` tanımsız olduğundan sıfır olarak değerlendirilir. İfade `#if` `CONSTANT_NAME` yanlış olarak değerlendirilir ve üzerinde kullanılacak kod ön `YES` işlemci tarafından kaldırılır. `NO` Ayrıca tanımsız (sıfır) olarak değerlendirilir, bu nedenle `#elif` `CONSTANT_NAME==NO` true () olarak değerlendirilir ve `0 == 0` Önişlemci 'nin kodu deyimin bölümünde bırakmasını sağlar; bu da `#elif` amaçlanan davranışın tam tersi olur.
 
 ```cpp
 // C1017c.cpp

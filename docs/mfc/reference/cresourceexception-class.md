@@ -1,5 +1,6 @@
 ---
-title: CResourceException Sınıf
+description: 'Daha fazla bilgi edinin: CResourceException sınıfı'
+title: CResourceException sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CResourceException
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CResourceException [MFC], CResourceException
 ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289
-ms.openlocfilehash: 557bfe1cc41c3dda65bd95d7d687820c0b9862b7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c76635ae2cfa6c55bf54da7e73f6afbb44506fee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368323"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264875"
 ---
-# <a name="cresourceexception-class"></a>CResourceException Sınıf
+# <a name="cresourceexception-class"></a>CResourceException sınıfı
 
-Windows istenen bir kaynağı bulamıyorsa veya ayıramıyorsa oluşturulur.
+Windows istenen bir kaynağı bulamadığında veya ayıramadığında oluşturulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CResourceException : public CSimpleException
@@ -29,33 +30,33 @@ class CResourceException : public CSimpleException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CResourceException::CResourceException](#cresourceexception)|Bir `CResourceException` nesne inşa eder.|
+|[CResourceException:: CResourceException](#cresourceexception)|Bir `CResourceException` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Başka bir nitelik gerekli veya mümkün değildir.
+Daha fazla nitelik gerekmez veya mümkün değildir.
 
-Kullanma `CResourceException`hakkında daha fazla bilgi için, özel [durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md)makalesine bakın.
+Kullanma hakkında daha fazla bilgi için `CResourceException` bkz. [özel durum Işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cexception](../../mfc/reference/cexception-class.md)
+[CException](../../mfc/reference/cexception-class.md)
 
-[Csimpleexception](../../mfc/reference/csimpleexception-class.md)
+[CSimpleException](../../mfc/reference/csimpleexception-class.md)
 
 `CResourceException`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cresourceexceptioncresourceexception"></a><a name="cresourceexception"></a>CResourceException::CResourceException
+## <a name="cresourceexceptioncresourceexception"></a><a name="cresourceexception"></a> CResourceException:: CResourceException
 
-Bir `CResourceException` nesne inşa eder.
+Bir `CResourceException` nesnesi oluşturur.
 
 ```
 CResourceException();
@@ -63,9 +64,9 @@ CResourceException();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucuyu doğrudan kullanmayın, daha çok global işlevi [AfxThrowResourceException'ı](exception-processing.md#afxthrowresourceexception)arayın. özel durumlar hakkında daha fazla bilgi için [MFC'deki Özel Durum İşleme makalesine](../exception-handling-in-mfc.md)bakın.
+Bu oluşturucuyu doğrudan kullanmayın, ancak [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)genel işlevini çağırın. özel durumlar hakkında daha fazla bilgi için bkz. [MFC 'de özel durum işleme](../exception-handling-in-mfc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CException Sınıfı](cexception-class.md)<br/>
-[Hiyerarşi Grafiği](../hierarchy-chart.md)
+[CException sınıfı](cexception-class.md)<br/>
+[Hiyerarşi grafiği](../hierarchy-chart.md)

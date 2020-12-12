@@ -1,17 +1,18 @@
 ---
+description: 'Daha fazla bilgi edinin: kaynak derleyicisi hataları ve uyarıları (RCxxxx, RWxxxx)'
 title: Kaynak derleyicisi hataları ve uyarıları
 ms.date: 04/17/2019
 ms.assetid: 0819f955-0561-491d-af3d-2453f4e2d035
-ms.openlocfilehash: dec141723e911c09fc63d7868a2783fb399e6fc3
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 328a64cfba23ef4904f9591c90168fab3a1b08ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265759"
 ---
 # <a name="resource-compiler-errors-and-warnings-rcxxxx-rwxxxx"></a>Kaynak derleyicisi hataları ve uyarıları (RCxxxx, RWxxxx)
 
-Bu bölüm, kaynak derleyicisi tarafından oluşturulan hatalara yönelik bir başvurudur. Kaynak derleyicisi hataları ve uyarıları RC*xxxx* veya RW*xxxx*biçiminde olur; burada *xxxx* dört basamaklı bir sayıdır.
+Bu bölüm, kaynak derleyicisi tarafından oluşturulan hatalara yönelik bir başvurudur. Kaynak derleyicisi hataları ve uyarıları RC *xxxx* veya RW *xxxx* biçiminde olur; burada *xxxx* dört basamaklı bir sayıdır.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -99,5 +100,5 @@ Bu bölüm, kaynak derleyicisi tarafından oluşturulan hatalara yönelik bir ba
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ derleyici ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md)
-[kaynak derleyicisi](/windows/win32/menurc/resource-compiler)
+[C/C++ derleyicisi ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) 
+ [Kaynak derleyicisi](/windows/win32/menurc/resource-compiler)

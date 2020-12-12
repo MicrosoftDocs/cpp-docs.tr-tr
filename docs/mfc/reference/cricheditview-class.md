@@ -1,5 +1,6 @@
 ---
-title: CRichEditView Sınıfı
+description: 'Daha fazla bilgi edinin: CRichEditView sınıfı'
+title: CRichEditView sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CRichEditView
@@ -100,18 +101,18 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: b72daac576411b45908d1e91bd86bbd9aeacf738
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: cf5c504058332b652023d746aaadb0c8c80fccce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754460"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264771"
 ---
-# <a name="cricheditview-class"></a>CRichEditView Sınıfı
+# <a name="cricheditview-class"></a>CRichEditView sınıfı
 
-[CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) ve [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md)ile, MFC'nin belge görünümü mimarisi bağlamında zengin edit denetiminin işlevselliğini sağlar.
+[CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) ve [Cricheditcntridıtem](../../mfc/reference/cricheditcntritem-class.md)ile, MFC 'nin belge görünümü mimarisinin bağlamı içinde zengin düzenleme denetimi işlevlerini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CRichEditView : public CCtrlView
@@ -121,90 +122,90 @@ class CRichEditView : public CCtrlView
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRichEditView::CRichEditView](#cricheditview)|Bir `CRichEditView` nesne inşa eder.|
+|[CRichEditView:: CRichEditView](#cricheditview)|Bir `CRichEditView` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRichEditView::AyarlamaDialogPosition](#adjustdialogposition)|Geçerli seçimi gizlememesi için bir iletişim kutusu taşır.|
-|[CRichEditView::CanPaste](#canpaste)|Panozengin edit görünümüne yapıştırılabilir veri bulunup olmadığını söyler.|
-|[CRichEditView::DoPaste](#dopaste)|Bu zengin edit görünümüne bir OLE öğesi yapıştırır.|
-|[CRichEditView::FindText](#findtext)|Bekleme imlecini çağırarak belirtilen metni bulur.|
-|[CRichEditView::FindTextSimple](#findtextsimple)|Belirtilen metni bulur.|
-|[CRichEditView::GetCharFormatSelection](#getcharformatselection)|Geçerli seçim için karakter biçimlendirme özniteliklerini alır.|
-|[CRichEditView::GetDocument](#getdocument)|İlgili [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md)için bir işaretçi alır.|
-|[CRichEditView::GetInPlaceActiveItem](#getinplaceactiveitem)|Zengin edit görünümünde şu anda etkin olan OLE öğesini alır.|
-|[CRichEditView::GetMargins](#getmargins)|Bu zengin edit görünümü için kenar boşluklarını alır.|
-|[CRichEditView::GetPageRect](#getpagerect)|Bu zengin edit görünümü için sayfa dikdörtgenini alır.|
-|[CRichEditView::GetPaperSize](#getpapersize)|Bu zengin edit görünümü için kağıt boyutunu alır.|
-|[CRichEditView::GetParaFormatSelection](#getparaformatselection)|Geçerli seçim için paragraf biçimlendirme özniteliklerini alır.|
-|[CRichEditView::GetPrintRect](#getprintrect)|Bu zengin edit görünümü için yazdırma dikdörtgenini alır.|
-|[CRichEditView::GetPrintWidth](#getprintwidth)|Bu zengin edit görünümü için yazdırma genişliğini alır.|
-|[CRichEditView::GetRichEditCtrl](#getricheditctrl)|Zengin edit denetimini alır.|
-|[CRichEditView::GetSelectedItem](#getselecteditem)|Seçili öğeyi zengin edit görünümünden alır.|
-|[CRichEditView::GetTextLength](#gettextlength)|Zengin edit görünümünde metnin uzunluğunu alır.|
-|[CRichEditView::GetTextLengthEx](#gettextlengthex)|Zengin düzenleme görünümünde karakter veya bayt sayısını alır. Uzunluğu belirleme yöntemi için genişletilmiş bayrak listesi.|
-|[CRichEditView::InsertFileAsObject](#insertfileasobject)|Dosyayı OLE öğesi olarak ekler.|
-|[CRichEditView::InsertItem](#insertitem)|Yeni bir öğeyi OLE öğesi olarak ekler.|
-|[CRichEditView::IsRichEditFormat](#isricheditformat)|Panozengin bir edit veya metin biçiminde veri içerip içermediğini söyler.|
-|[CRichEditView::OnCharEffect](#onchareffect)|Geçerli seçim için karakter biçimlendirmesini geçişe çıkarır.|
-|[CRichEditView::OnParaAlign](#onparaalign)|Paragrafların hizalanmasını değiştirir.|
-|[CRichEditView::OnUpdateCharEffect](#onupdatechareffect)|Karakter ortak üye işlevleri için Komut UI'sini güncelleştirir.|
-|[CRichEditView::OnUpdateParaAlign](#onupdateparaalign)|Paragraf ortak üye işlevleri için Komut UI'sini güncelleştirir.|
-|[CRichEditView::PrintInsideRect](#printinsiderect)|Belirtilen metni verilen dikdörtgen içinde biçimlendirin.|
-|[CRichEditView::PrintPage](#printpage)|Verilen sayfadaki belirtilen metni biçimlendirin.|
-|[CRichEditView::SetCharFormat](#setcharformat)|Geçerli seçim için karakter biçimlendirme özniteliklerini ayarlar.|
-|[CRichEditView::SetMargins](#setmargins)|Bu zengin edit görünümü için kenar boşluklarını ayarlar.|
-|[CRichEditView::SetPaperSize](#setpapersize)|Bu zengin edit görünümü için kağıt boyutunu ayarlar.|
-|[CRichEditView::SetParaFormat](#setparaformat)|Geçerli seçim için paragraf biçimlendirme özniteliklerini ayarlar.|
-|[CRichEditView::TextNotFound](#textnotfound)|Denetimin iç arama durumunu sıfırlar.|
+|[CRichEditView:: AdjustDialogPosition](#adjustdialogposition)|Bir iletişim kutusunu, geçerli seçimi gizlememe şeklinde taşımaz.|
+|[CRichEditView:: CanPaste](#canpaste)|Panonun zengin düzenleme görünümüne yapıştırılabilecek veriler içerip içermediğini söyler.|
+|[CRichEditView::D Oyapıştır](#dopaste)|OLE öğesini bu zengin düzenleme görünümüne yapıştırır.|
+|[CRichEditView:: FindText](#findtext)|Bekleme imlecini çağırarak belirtilen metni bulur.|
+|[CRichEditView:: FindTextSimple](#findtextsimple)|Belirtilen metni bulur.|
+|[CRichEditView:: GetCharFormatSelection](#getcharformatselection)|Geçerli seçimin karakter biçimlendirme özniteliklerini alır.|
+|[CRichEditView:: GetDocument](#getdocument)|İlgili [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md)için bir işaretçi alır.|
+|[CRichEditView:: Getınplaceactiveıtem](#getinplaceactiveitem)|Zengin düzenleme görünümünde Şu anda yerinde etkin olan OLE öğesini alır.|
+|[CRichEditView:: Getkenar boşlukları](#getmargins)|Bu zengin düzenleme görünümü için kenar boşluklarını alır.|
+|[CRichEditView:: GetPageRect](#getpagerect)|Bu zengin düzenleme görünümü için sayfa dikdörtgenini alır.|
+|[CRichEditView:: GetPaperSize](#getpapersize)|Bu zengin düzenleme görünümü için kağıt boyutunu alır.|
+|[CRichEditView:: GetParaFormatSelection](#getparaformatselection)|Geçerli seçimin paragraf biçimlendirme özniteliklerini alır.|
+|[CRichEditView:: GetPrintRect](#getprintrect)|Bu zengin düzenleme görünümü için yazdırma dikdörtgenini alır.|
+|[CRichEditView:: GetPrintWidth](#getprintwidth)|Bu zengin düzenleme görünümü için yazdırma genişliğini alır.|
+|[CRichEditView:: GetRichEditCtrl](#getricheditctrl)|Zengin düzenleme denetimini alır.|
+|[CRichEditView:: Getselectedidıtem](#getselecteditem)|Seçili öğeyi zengin düzenleme görünümünden alır.|
+|[CRichEditView:: GetTextLength](#gettextlength)|Zengin düzenleme görünümündeki metnin uzunluğunu alır.|
+|[CRichEditView:: GetTextLengthEx](#gettextlengthex)|Zengin düzenleme görünümündeki karakter veya bayt sayısını alır. Uzunluğu belirleme yöntemi için genişletilmiş bayrak listesi.|
+|[CRichEditView:: ınsertfileasobject](#insertfileasobject)|OLE öğesi olarak bir dosya ekler.|
+|[CRichEditView:: InsertItem](#insertitem)|OLE öğesi olarak yeni bir öğe ekler.|
+|[CRichEditView:: IsRichEditFormat](#isricheditformat)|Panonun zengin düzenleme veya metin biçiminde veri içerip içermediğini söyler.|
+|[CRichEditView:: OnCharEffect](#onchareffect)|Geçerli seçimin karakter biçimlendirmesini değiştirir.|
+|[CRichEditView:: Onparaalıgn](#onparaalign)|Paragrafların hizalamasını değiştirir.|
+|[CRichEditView:: OnUpdateCharEffect](#onupdatechareffect)|Karakter ortak üye işlevleri için komut Kullanıcı arabirimini güncelleştirir.|
+|[CRichEditView:: Onupdateparamalign](#onupdateparaalign)|Paragraf ortak üye işlevleri için komut Kullanıcı arabirimini güncelleştirir.|
+|[CRichEditView::P rintInsideRect](#printinsiderect)|Belirtilen dikdörtgenin içinde belirtilen metni biçimlendirir.|
+|[CRichEditView::P rintPage](#printpage)|Verilen sayfa içinde belirtilen metni biçimlendirir.|
+|[CRichEditView:: SetCharFormat](#setcharformat)|Geçerli seçimin karakter biçimlendirme özniteliklerini ayarlar.|
+|[CRichEditView:: Setkenar boşlukları](#setmargins)|Bu zengin düzenleme görünümü için kenar boşluklarını ayarlar.|
+|[CRichEditView:: SetPaperSize](#setpapersize)|Bu zengin düzenleme görünümü için kağıt boyutunu ayarlar.|
+|[CRichEditView:: SetParaFormat](#setparaformat)|Geçerli seçimin paragraf biçimlendirme özniteliklerini ayarlar.|
+|[CRichEditView:: TextNotFound](#textnotfound)|Denetimin iç arama durumunu sıfırlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRichEditView::GetClipboardData](#getclipboarddata)|Bu zengin edit görünümünde bir aralık için bir Pano nesnesi alır.|
-|[CRichEditView::GetContextMenu](#getcontextmenu)|Sağ fare düğmesinde kullanmak üzere bir bağlam menüsü alır.|
-|[CRichEditView::Seçili](#isselected)|Verilen OLE öğesinin seçilip seçilmediğini gösterir.|
-|[CRichEditView::OnFindNext](#onfindnext)|Bir alt dizenin bir sonraki oluşumunu bulur.|
-|[CRichEditView::OnInitialUpdate](#oninitialupdate)|Bir belgeye ilk eklendiğinde görünümü yeniler.|
-|[CRichEditView::OnPasteNativeObject](#onpastenativeobject)|Bir OLE öğesinden yerel verileri alır.|
-|[CRichEditView::OnPrinterDeğiştirildi](#onprinterchanged)|Verilen aygıta yazdırma özelliklerini ayarlar.|
-|[CRichEditView::OnReplaceAll](#onreplaceall)|Belirli bir dizedeki tüm oluşumları yeni bir dizeyle değiştirir.|
-|[CRichEditView::OnReplaceSel](#onreplacesel)|Geçerli seçimin yerine alır.|
-|[CRichEditView::OnTextNotFound](#ontextnotfound)|İstenen metnin bulunamadıklarına dair kullanıcı bildirimini işler.|
-|[CRichEditView::QueryAcceptData](#queryacceptdata)|Üzerinde veri hakkında görmek için `IDataObject`sorgular .|
-|[CRichEditView::WrapChanged](#wrapchanged)|Bu zengin edit görünümü için hedef çıktı aygıtını. `m_nWordWrap`|
+|[CRichEditView:: GetClipboardData](#getclipboarddata)|Bu zengin düzenleme görünümü içinde bir Aralık için Pano nesnesi alır.|
+|[CRichEditView:: GetContextMenu](#getcontextmenu)|Sağ fare düğmesi üzerinde kullanmak için bir bağlam menüsü alır.|
+|[CRichEditView:: IsSelected](#isselected)|Verilen OLE öğesinin seçili olup olmadığını gösterir.|
+|[CRichEditView:: onsonra](#onfindnext)|Bir alt dizenin sonraki tekrarını bulur.|
+|[CRichEditView:: OnInitialUpdate](#oninitialupdate)|Bir belgeye ilk eklendiğinde bir görünümü yeniler.|
+|[CRichEditView:: OnPasteNativeObject](#onpastenativeobject)|Bir OLE öğesinden yerel verileri alır.|
+|[CRichEditView:: OnPrinterChanged](#onprinterchanged)|Yazdırma özelliklerini verilen cihaza ayarlar.|
+|[CRichEditView:: OnReplaceAll](#onreplaceall)|Belirli bir dizenin tüm oluşumlarını yeni bir dizeyle değiştirir.|
+|[CRichEditView:: OnReplaceSel](#onreplacesel)|Geçerli seçimi değiştirir.|
+|[CRichEditView:: OnTextNotFound](#ontextnotfound)|İstenen metnin bulunamadığını belirten Kullanıcı bildirimini işler.|
+|[CRichEditView:: QueryAcceptData](#queryacceptdata)|Üzerinde veriler hakkında bilgi almak için sorgular `IDataObject` .|
+|[CRichEditView:: WrapChanged](#wrapchanged)|Bu zengin düzenleme görünümü için hedef çıktı cihazını değerine göre ayarlar `m_nWordWrap` .|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRichEditView::m_nBulletIndent](#m_nbulletindent)|Madde işareti listeleri için girintin miktarını gösterir.|
-|[CRichEditView::m_nWordWrap](#m_nwordwrap)|Kaydırma sözcük kısıtlamalarını gösterir.|
+|[CRichEditView:: m_nBulletIndent](#m_nbulletindent)|Madde işareti listeleri için girinti miktarını gösterir.|
+|[CRichEditView:: m_nWordWrap](#m_nwordwrap)|Sözcük kaydır kısıtlamalarını gösterir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-"Zengin bir edit denetimi", kullanıcının metni girip atabildiği bir penceredir. Metin karakter ve paragraf biçimlendirme atanabilir ve katışılmış OLE nesneleri içerebilir. Zengin edit denetimleri metni biçimlendirmek için bir programlama arabirimi sağlar. Ancak, bir uygulama, biçimlendirme işlemlerini kullanıcının kullanımına açmak için gereken kullanıcı arabirimi bileşenlerini uygulamalıdır.
+"Zengin düzenleme denetimi", kullanıcının metin girebileceği ve düzenleyebileceği bir penceredir. Metne karakter ve paragraf biçimlendirme atanabilir ve katıştırılmış OLE nesneleri dahil edilebilir. Zengin düzenleme denetimleri, metin biçimlendirme için bir programlama arabirimi sağlar. Ancak, bir uygulamanın biçimlendirme işlemlerini Kullanıcı için kullanılabilir hale getirmek için gereken herhangi bir kullanıcı arabirimi bileşenini uygulaması gerekir.
 
-`CRichEditView`metnin metin ve biçimlendirme özelliğini korur. `CRichEditDoc`görünümde bulunan OLE istemci öğelerinin listesini tutar. `CRichEditCntrItem`OLE istemci öğesine kapsayıcı tarafı erişimi sağlar.
+`CRichEditView` metnin metin ve biçimlendirme özelliklerini korur. `CRichEditDoc` görünümdeki OLE istemci öğelerinin listesini tutar. `CRichEditCntrItem` OLE istemci öğesine kapsayıcı tarafı erişimi sağlar.
 
-Bu Windows Ortak denetimi (ve dolayısıyla [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) yalnızca Windows 95/98 ve Windows NT sürümleri 3.51 ve sonraki sürümler altında çalışan programlar için kullanılabilir.
+Bu Windows ortak denetimi (ve bu nedenle [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) ve ilgili sınıflar) yalnızca Windows 95/98 ve Windows NT sürümleri 3,51 ve üzeri sürümlerde çalışan programlar için kullanılabilir.
 
-Bir MFC uygulamasında zengin bir edit görünümü kullanma örneği için [WORDPAD](../../overview/visual-cpp-samples.md) örnek uygulamasına bakın.
+Bir MFC uygulamasında zengin düzenleme görünümü kullanmanın bir örneği için bkz. [WordPad](../../overview/visual-cpp-samples.md) örnek uygulaması.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cview](../../mfc/reference/cview-class.md)
+[CView](../../mfc/reference/cview-class.md)
 
 [CCtrlView](../../mfc/reference/cctrlview-class.md)
 
@@ -212,11 +213,11 @@ Bir MFC uygulamasında zengin bir edit görünümü kullanma örneği için [WOR
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxrich.h
+**Üstbilgi:** afxrich. h
 
-## <a name="cricheditviewadjustdialogposition"></a><a name="adjustdialogposition"></a>CRichEditView::AyarlamaDialogPosition
+## <a name="cricheditviewadjustdialogposition"></a><a name="adjustdialogposition"></a> CRichEditView:: AdjustDialogPosition
 
-Geçerli seçimi gizlememesi için verilen iletişim kutusunu taşımak için bu işlevi arayın.
+Belirtilen iletişim kutusunu geçerli seçimi gizlemez olacak şekilde taşımak için bu işlevi çağırın.
 
 ```cpp
 void AdjustDialogPosition(CDialog* pDlg);
@@ -225,11 +226,11 @@ void AdjustDialogPosition(CDialog* pDlg);
 ### <a name="parameters"></a>Parametreler
 
 *pDlg*<br/>
-Bir `CDialog` nesneye işaretçi.
+Bir nesne işaretçisi `CDialog` .
 
-## <a name="cricheditviewcanpaste"></a><a name="canpaste"></a>CRichEditView::CanPaste
+## <a name="cricheditviewcanpaste"></a><a name="canpaste"></a> CRichEditView:: CanPaste
 
-Pano'nun bu zengin edit görünümüne yapıştırılabilen bilgiler içerip içermediğini belirlemek için bu işlevi arayın.
+Panonun bu zengin düzenleme görünümüne yapıştırılabilecek bilgiler içerip içermediğini öğrenmek için bu işlevi çağırın.
 
 ```
 BOOL CanPaste() const;
@@ -237,19 +238,19 @@ BOOL CanPaste() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pano, bu zengin edit görünümünün kabul edebileceği bir biçimde veri içeriyorsa sıfıra inme; aksi takdirde, 0.
+Pano, bu zengin düzenleme görünümünün kabul edebileceği bir biçimde veri içeriyorsa sıfır dışı olur; Aksi takdirde, 0.
 
-## <a name="cricheditviewcricheditview"></a><a name="cricheditview"></a>CRichEditView::CRichEditView
+## <a name="cricheditviewcricheditview"></a><a name="cricheditview"></a> CRichEditView:: CRichEditView
 
-Bir `CRichEditView` nesne oluşturmak için bu işlevi çağırın.
+Bir nesne oluşturmak için bu işlevi çağırın `CRichEditView` .
 
 ```
 CRichEditView();
 ```
 
-## <a name="cricheditviewdopaste"></a><a name="dopaste"></a>CRichEditView::DoPaste
+## <a name="cricheditviewdopaste"></a><a name="dopaste"></a> CRichEditView::D Oyapıştır
 
-*Dataobj'deki* OLE öğesini bu zengin edit belgesine/görünümüne yapıştırmak için bu işlevi arayın.
+*Dataobj* içindeki OLE öğesini bu zengin düzenleme belgesine/görünümüne yapıştırmak için bu işlevi çağırın.
 
 ```cpp
 void DoPaste(
@@ -261,23 +262,23 @@ void DoPaste(
 ### <a name="parameters"></a>Parametreler
 
 *dataobj*<br/>
-Yapıştırılabilmek için verileri içeren [COleDataObject.](../../mfc/reference/coledataobject-class.md)
+Yapıştırılacak verileri içeren [Colet](../../mfc/reference/coledataobject-class.md) .
 
-*Cf*<br/>
-İstenilen Pano biçimi.
+*CF*<br/>
+İstenen Pano biçimi.
 
-*hMetaPict*<br/>
-Yapıştırılacak öğeyi temsil eden metadosya.
+*Hmetapıct*<br/>
+Yapıştırılacak öğeyi temsil eden meta dosyası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve [QueryAcceptData](#queryacceptdata)varsayılan uygulamasının bir parçası olarak bu işlevi çağırır.
+Framework, [QueryAcceptData](#queryacceptdata)uygulamasının varsayılan uygulamasının bir parçası olarak bu işlevi çağırır.
 
-Bu işlev, Yapıştır Özel için işleyicisonuçlarına göre yapıştırın türünü belirler. *CF* 0 ise, yeni öğe geçerli ikonik gösterimi kullanır. *CF* sıfır değilse ve *hMetaPict* NULL değilse, yeni öğe temsili için *hMetaPict* kullanır.
+Bu işlev, yapıştırma için işleyicinin sonuçlarına göre yapıştırma türünü belirler. *CF* 0 ise, yeni öğe geçerli ıfer gösterimini kullanır. *CF* sıfır değilse ve *HMETAPıCT* null değilse, yeni öğe temsili için *hmetapıct* kullanır.
 
-## <a name="cricheditviewfindtext"></a><a name="findtext"></a>CRichEditView::FindText
+## <a name="cricheditviewfindtext"></a><a name="findtext"></a> CRichEditView:: FindText
 
-Belirtilen metni bulmak için bu işlevi arayın ve geçerli seçim olarak ayarlayın.
+Belirtilen metni bulmak ve geçerli seçim olacak şekilde ayarlamak için bu işlevi çağırın.
 
 ```
 BOOL FindText(
@@ -289,21 +290,21 @@ BOOL FindText(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszBul*<br/>
+*lpszFind*<br/>
 Aranacak dizeyi içerir.
 
 *bCase*<br/>
-Aramanın büyük/küçük harf duyarlı olup olmadığını gösterir.
+Aramanın büyük/küçük harfe duyarlı olup olmadığını gösterir.
 
-*bWord*<br/>
-Aramanın sözcüklerin bölümleriyle değil, yalnızca tüm sözcüklerle eşleşip eşleşmediğini gösterir.
+*Sözcük*<br/>
+Aramanın sözcüklerin parçalarını değil, yalnızca tam kelimeyle eşleşmesinin gerekip gerekmediğini gösterir.
 
-*bSonraki*<br/>
-Aramanın yönünü gösterir. DOĞRUysa, arama yönü arabelleğin sonuna doğru. FALSE ise, arama yönü arabelleğin başına doğru.
+*bNext*<br/>
+Aramanın yönünü gösterir. DOĞRU ise, arama yönü arabelleğin sonuna doğru olur. FALSE ise, arama yönü arabelleğin başına doğru olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*LpszFind metni bulunursa* sıfır olmayan; aksi takdirde 0.
+*LpszFind* metni bulunursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -313,9 +314,9 @@ Bu işlev, bulma işlemi sırasında bekleme imlecini görüntüler.
 
 [!code-cpp[NVC_MFCDocView#151](../../mfc/codesnippet/cpp/cricheditview-class_1.cpp)]
 
-## <a name="cricheditviewfindtextsimple"></a><a name="findtextsimple"></a>CRichEditView::FindTextSimple
+## <a name="cricheditviewfindtextsimple"></a><a name="findtextsimple"></a> CRichEditView:: FindTextSimple
 
-Belirtilen metni bulmak için bu işlevi arayın ve geçerli seçim olarak ayarlayın.
+Belirtilen metni bulmak ve geçerli seçim olacak şekilde ayarlamak için bu işlevi çağırın.
 
 ```
 BOOL FindTextSimple(
@@ -327,29 +328,29 @@ BOOL FindTextSimple(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszBul*<br/>
+*lpszFind*<br/>
 Aranacak dizeyi içerir.
 
 *bCase*<br/>
-Aramanın büyük/küçük harf duyarlı olup olmadığını gösterir.
+Aramanın büyük/küçük harfe duyarlı olup olmadığını gösterir.
 
-*bWord*<br/>
-Aramanın sözcüklerin bölümleriyle değil, yalnızca tüm sözcüklerle eşleşip eşleşmediğini gösterir.
+*Sözcük*<br/>
+Aramanın sözcüklerin parçalarını değil, yalnızca tam kelimeyle eşleşmesinin gerekip gerekmediğini gösterir.
 
-*bSonraki*<br/>
-Aramanın yönünü gösterir. DOĞRUysa, arama yönü arabelleğin sonuna doğru. FALSE ise, arama yönü arabelleğin başına doğru.
+*bNext*<br/>
+Aramanın yönünü gösterir. DOĞRU ise, arama yönü arabelleğin sonuna doğru olur. FALSE ise, arama yönü arabelleğin başına doğru olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*LpszFind metni bulunursa* sıfır olmayan; aksi takdirde 0.
+*LpszFind* metni bulunursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:FindText](#findtext).
+  [CRichEditView:: FindText](#findtext)için örneğe bakın.
 
-## <a name="cricheditviewgetcharformatselection"></a><a name="getcharformatselection"></a>CRichEditView::GetCharFormatSelection
+## <a name="cricheditviewgetcharformatselection"></a><a name="getcharformatselection"></a> CRichEditView:: GetCharFormatSelection
 
-Geçerli seçimin karakter biçimlendirme özniteliklerini almak için bu işlevi arayın.
+Geçerli seçimin karakter biçimlendirme özniteliklerini almak için bu işlevi çağırın.
 
 ```
 CHARFORMAT2& GetCharFormatSelection();
@@ -357,19 +358,19 @@ CHARFORMAT2& GetCharFormatSelection();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli seçimin karakter biçimlendirme özniteliklerini içeren [charformat2](/windows/win32/api/richedit/ns-richedit-charformat2w) yapısı.
+Geçerli seçimin karakter biçimlendirme özniteliklerini içeren bir [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için, Windows SDK'daki [EM_GETCHARFORMAT](/windows/win32/Controls/em-getcharformat) iletive [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) yapısına bakın.
+Daha fazla bilgi için Windows SDK [EM_GETCHARFORMAT](/windows/win32/Controls/em-getcharformat) Ileti ve [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) yapısına bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]
 
-## <a name="cricheditviewgetclipboarddata"></a><a name="getclipboarddata"></a>CRichEditView::GetClipboardData
+## <a name="cricheditviewgetclipboarddata"></a><a name="getclipboarddata"></a> CRichEditView:: GetClipboardData
 
-Çerçeve [IRichEditOleCallback](/windows/win32/api/richole/nf-richole-iricheditolecallback-getclipboarddata)işleme nin bir parçası olarak bu işlevi çağırır::GetClipboardData .
+Framework, [IRichEditOleCallback:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditolecallback-getclipboarddata)işleminin bir parçası olarak bu işlevi çağırır.
 
 ```
 virtual HRESULT GetClipboardData(
@@ -381,43 +382,43 @@ virtual HRESULT GetClipboardData(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpchrg*<br/>
-*LPLPdataobj*tarafından belirtilen veri nesnesine kopyalamak için karakter (ve OLE öğeleri) aralığını belirten [CHARRANGE](/windows/win32/api/richedit/ns-richedit-charrange) yapısına işaretçi.
+*lpgid*<br/>
+*Lplpdataobj* tarafından belirtilen veri nesnesine kopyalanacak karakter aralığını (ve OLE öğeleri) belirleyen, [charrange](/windows/win32/api/richedit/ns-richedit-charrange) yapısına yönelik işaretçi.
 
 *dwReco*<br/>
-Pano operasyon bayrağı. Bu değerlerden biri olabilir.
+Pano işlemi bayrağı. Şu değerlerden biri olabilir.
 
-- panoya RECO_COPY kopyalayın.
+- RECO_COPY panoya kopyalayın.
 
-- panoya RECO_CUT kes.
+- RECO_CUT panoya kesildi.
 
-- RECO_DRAG Sürükleme işlemi (sürükle ve bırak).
+- RECO_DRAG Sürükle işlemi (sürükleyip bırakma).
 
-- RECO_DROP Bırak işlemi (sürükle ve bırak).
+- RECO_DROP bırakma işlemi (sürükleyip bırakma).
 
-- Panodan RECO_PASTE Yapıştır.
+- Panodan yapıştırmayı RECO_PASTE.
 
 *lpRichDataObj*<br/>
-Zengin edit denetiminden Pano verilerini içeren bir [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) nesnesine işaretçi [(IRichEditOle::GetClipboardData).](/windows/win32/api/richole/nf-richole-iricheditole-getclipboarddata)
+Zengin düzenleme denetiminden Pano verilerini içeren bir [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) nesnesi Işaretçisi ( [IRichEditOle:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditole-getclipboarddata)).
 
 *lplpdataobj*<br/>
-*Lpchrg* parametresinde belirtilen aralığı `IDataObject` temsil eden nesnenin adresini alan işaretçi değişkenini işaretçi. Bir hata döndürülürse *lplpdataobj* değeri yoksayılır.
+`IDataObject` *Lpgid* parametresinde belirtilen aralığı temsil eden nesnenin adresini alan işaretçi değişkeninin işaretçisi. Bir hata döndürülürse, *lplpdataobj* değeri yok sayılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Operasyonun başarısını bildiren bir HRESULT değeri. HRESULT hakkında daha fazla bilgi için Windows SDK'daki [COM Hata Kodlarının Yapısı'na](/windows/win32/com/structure-of-com-error-codes) bakın.
+İşlemin başarısını bildiren bir HRESULT değeri. HRESULT hakkında daha fazla bilgi için bkz. Windows SDK [com hata kodları yapısı](/windows/win32/com/structure-of-com-error-codes) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İade değeri başarıyı `IRichEditOleCallback::GetClipboardData` gösteriyorsa, `IDataObject` *lplpdataobj*tarafından erişilen leri döndürür; aksi takdirde, *lpRichDataObj*tarafından erişilen bir döndürür. Kendi Pano verilerinizi sağlamak için bu işlevi geçersiz kılın. Bu işlevin varsayılan uygulaması E_NOTIMPL döndürür.
+Dönüş değeri başarıyı gösteriyorsa, `IRichEditOleCallback::GetClipboardData` `IDataObject` *lplpdataobj* tarafından erişilen ' ı döndürür; Aksi takdirde, *lpRichDataObj* tarafından erişilen bir döndürür. Kendi Pano verilerinizi sağlamak için bu işlevi geçersiz kılın. Bu işlevin varsayılan uygulanması E_NOTIMPL döndürür.
 
-Bu gelişmiş bir geçersiz.
+Bu gelişmiş bir geçersiz kılınabilir.
 
-Daha fazla bilgi için, [Bkz. IRichEditOle::GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback::GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditolecallback-getclipboarddata)ve [CHARRANGE](/windows/win32/api/richedit/ns-richedit-charrange) Windows SDK'da ve Windows SDK'da [IDataObject'e](/windows/win32/api/objidl/nn-objidl-idataobject) bakın.
+Daha fazla bilgi için [, bkz.](/windows/win32/api/objidl/nn-objidl-idataobject) [IRichEditOle:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback:: GetClipboardData](/windows/win32/api/richole/nf-richole-iricheditolecallback-getclipboarddata)ve Windows SDK [charrange](/windows/win32/api/richedit/ns-richedit-charrange) ve Windows SDK.
 
-## <a name="cricheditviewgetcontextmenu"></a><a name="getcontextmenu"></a>CRichEditView::GetContextMenu
+## <a name="cricheditviewgetcontextmenu"></a><a name="getcontextmenu"></a> CRichEditView:: GetContextMenu
 
-Çerçeve [IRichEditOleCallback](/windows/win32/api/richole/nf-richole-iricheditolecallback-getcontextmenu)işleme nin bir parçası olarak bu işlevi çağırır::GetContextMenu .
+Framework, [IRichEditOleCallback:: GetContextMenu](/windows/win32/api/richole/nf-richole-iricheditolecallback-getcontextmenu)işleminin bir parçası olarak bu işlevi çağırır.
 
 ```
 virtual HMENU GetContextMenu(
@@ -429,13 +430,13 @@ virtual HMENU GetContextMenu(
 ### <a name="parameters"></a>Parametreler
 
 *seltyp*<br/>
-Seçim türü. Seçim türü değerleri Açıklamalar bölümünde açıklanmıştır.
+Seçim türü. Seçim türü değerleri, açıklamalar bölümünde açıklanmaktadır.
 
-*lpoleobj*<br/>
-Seçim bir `OLEOBJECT` veya daha fazla OLE öğesi içeriyorsa, ilk seçili OLE nesnesini belirten bir yapıyı işaretçi. Seçim öğe *içermisse, lpoleobj* NULL'dur. Yapı, `OLEOBJECT` OLE nesnesi v-tablosuna işaretçi tutar.
+*lpotaobj*<br/>
+`OLEOBJECT`Seçim bir veya daha fazla ole öğesi içeriyorsa, seçilen Ilk OLE nesnesini belirten bir yapıya yönelik işaretçi. Seçim hiçbir öğe içermiyorsa, *lpotaobj* null olur. `OLEOBJECT`Yapı, OLE nesnesi v-tablosuna yönelik bir işaretçi tutar.
 
-*lpchrg*<br/>
-Geçerli seçimi içeren bir [CHARRANGE](/windows/win32/api/richedit/ns-richedit-charrange) yapısı için işaretçi.
+*lpgid*<br/>
+Geçerli seçimi içeren bir [charrange](/windows/win32/api/richedit/ns-richedit-charrange) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -443,27 +444,27 @@ Bağlam menüsüne işleyin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, sağ fare düğmesi aşağı işlemetipik bir parçasıdır.
+Bu işlev, sağ fare düğmesi aşağı işlemenin tipik bir parçasıdır.
 
 Seçim türü aşağıdaki bayrakların herhangi bir birleşimi olabilir:
 
-- SEL_EMPTY Geçerli bir seçim olmadığını gösterir.
+- SEL_EMPTY geçerli seçim olmadığını gösterir.
 
-- SEL_TEXT Geçerli seçimin metin içerdiğini gösterir.
+- SEL_TEXT, geçerli seçimin metin içerdiğini gösterir.
 
-- SEL_OBJECT Geçerli seçimin en az bir OLE öğesi içerdiğini gösterir.
+- SEL_OBJECT, geçerli seçimin en az bir OLE öğesi içerdiğini gösterir.
 
-- SEL_MULTICHAR Geçerli seçimin birden fazla metin karakterini içerdiğini gösterir.
+- SEL_MULTICHAR, geçerli seçimin birden fazla metin karakteri içerdiğini gösterir.
 
-- SEL_MULTIOBJECT Geçerli seçilimin birden fazla OLE nesnesi içerdiğini gösterir.
+- SEL_MULTIOBJECT, geçerli seçimin birden fazla OLE nesnesi içerdiğini gösterir.
 
-Varsayılan uygulama NULL döndürür. Bu gelişmiş bir geçersiz.
+Varsayılan uygulama NULL değerini döndürür. Bu gelişmiş bir geçersiz kılınabilir.
 
-Daha fazla bilgi için Windows SDK'da [IRichEditOleCallback::GetContextMenu](/windows/win32/api/richole/nf-richole-iricheditolecallback-getcontextmenu) ve [CHARRANGE'a](/windows/win32/api/richedit/ns-richedit-charrange) bakın.
+Daha fazla bilgi için Windows SDK [IRichEditOleCallback:: GetContextMenu](/windows/win32/api/richole/nf-richole-iricheditolecallback-getcontextmenu) ve [charrange](/windows/win32/api/richedit/ns-richedit-charrange) bölümüne bakın.
 
-## <a name="cricheditviewgetdocument"></a><a name="getdocument"></a>CRichEditView::GetDocument
+## <a name="cricheditviewgetdocument"></a><a name="getdocument"></a> CRichEditView:: GetDocument
 
-Bu görünümle `CRichEditDoc` ilişkili bir işaretçi almak için bu işlevi arayın.
+Bu görünümle ilişkili bir işaretçi almak için bu işlevi çağırın `CRichEditDoc` .
 
 ```
 CRichEditDoc* GetDocument() const;
@@ -471,11 +472,11 @@ CRichEditDoc* GetDocument() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnenizle ilişkili bir [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) nesnesine `CRichEditView` işaretçi.
+Nesneniz ile ilişkili bir [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) nesnesi işaretçisi `CRichEditView` .
 
-## <a name="cricheditviewgetinplaceactiveitem"></a><a name="getinplaceactiveitem"></a>CRichEditView::GetInPlaceActiveItem
+## <a name="cricheditviewgetinplaceactiveitem"></a><a name="getinplaceactiveitem"></a> CRichEditView:: Getınplaceactiveıtem
 
-Şu anda bu `CRichEditView` nesnede yerinde etkinleştirilen OLE öğesini almak için bu işlevi arayın.
+Bu nesnede etkin olan OLE öğesini almak için bu işlevi çağırın `CRichEditView` .
 
 ```
 CRichEditCntrItem* GetInPlaceActiveItem() const;
@@ -483,11 +484,11 @@ CRichEditCntrItem* GetInPlaceActiveItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu zengin edit görünümünde tek, yerinde etkin [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) nesnesine işaretçi; Şu anda yerinde etkin durumda olan OLE öğesi yoksa NULL.
+Bu zengin düzenleme görünümündeki tek ve yerinde etkin [Cricheditcntridıtem](../../mfc/reference/cricheditcntritem-class.md) nesnesine yönelik bir işaretçi; Şu anda yerinde etkin durumda olmayan bir OLE öğesi yoksa NULL olur.
 
-## <a name="cricheditviewgetmargins"></a><a name="getmargins"></a>CRichEditView::GetMargins
+## <a name="cricheditviewgetmargins"></a><a name="getmargins"></a> CRichEditView:: Getkenar boşlukları
 
-Yazdırmada kullanılan geçerli kenar boşluklarını almak için bu işlevi arayın.
+Yazdırmada kullanılan geçerli kenar boşluklarını almak için bu işlevi çağırın.
 
 ```
 CRect GetMargins() const;
@@ -495,11 +496,11 @@ CRect GetMargins() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Baskıda kullanılan kenar boşlukları, MM_TWIPS olarak ölçülür.
+Baskıda kullanılan kenar boşlukları MM_TWIPS ölçülür.
 
-## <a name="cricheditviewgetpagerect"></a><a name="getpagerect"></a>CRichEditView::GetPageRect
+## <a name="cricheditviewgetpagerect"></a><a name="getpagerect"></a> CRichEditView:: GetPageRect
 
-Yazdırmada kullanılan sayfanın boyutlarını almak için bu işlevi arayın.
+Yazdırmada kullanılan sayfanın boyutlarını almak için bu işlevi çağırın.
 
 ```
 CRect GetPageRect() const;
@@ -507,15 +508,15 @@ CRect GetPageRect() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırmada kullanılan sayfanın sınırları, MM_TWIPS cinsinden ölçülür.
+Baskıda kullanılan sayfanın sınırları MM_TWIPS cinsinden ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değer kağıt boyutuna bağlıdır.
+Bu değer, kağıt boyutunu temel alır.
 
-## <a name="cricheditviewgetpapersize"></a><a name="getpapersize"></a>CRichEditView::GetPaperSize
+## <a name="cricheditviewgetpapersize"></a><a name="getpapersize"></a> CRichEditView:: GetPaperSize
 
-Geçerli kağıt boyutunu almak için bu işlevi arayın.
+Geçerli kağıt boyutunu almak için bu işlevi çağırın.
 
 ```
 CSize GetPaperSize() const;
@@ -523,15 +524,15 @@ CSize GetPaperSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Baskıda kullanılan kağıdın boyutu, MM_TWIPS cinsinden ölçülür.
+Yazdırmada kullanılan kağıdın boyutu, MM_TWIPS cinsinden ölçülür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#153](../../mfc/codesnippet/cpp/cricheditview-class_3.cpp)]
 
-## <a name="cricheditviewgetparaformatselection"></a><a name="getparaformatselection"></a>CRichEditView::GetParaFormatSelection
+## <a name="cricheditviewgetparaformatselection"></a><a name="getparaformatselection"></a> CRichEditView:: GetParaFormatSelection
 
-Geçerli seçimin paragraf biçimlendirme özniteliklerini almak için bu işlevi arayın.
+Geçerli seçimin paragraf biçimlendirme özniteliklerini almak için bu işlevi çağırın.
 
 ```
 PARAFORMAT2& GetParaFormatSelection();
@@ -543,11 +544,11 @@ Geçerli seçimin paragraf biçimlendirme özniteliklerini içeren bir [PARAFORM
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK'daki [EM_GETPARAFORMAT](/windows/win32/Controls/em-getparaformat) ileti ve [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) yapısına bakın.
+Daha fazla bilgi için Windows SDK [EM_GETPARAFORMAT](/windows/win32/Controls/em-getparaformat) Ileti ve [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) yapısını inceleyin.
 
-## <a name="cricheditviewgetprintrect"></a><a name="getprintrect"></a>CRichEditView::GetPrintRect
+## <a name="cricheditviewgetprintrect"></a><a name="getprintrect"></a> CRichEditView:: GetPrintRect
 
-Sayfa dikdörtgeni içindeki yazdırma alanının sınırlarını almak için bu işlevi arayın.
+Sayfa dikdörtgeninin içindeki yazdırma alanının sınırlarını almak için bu işlevi çağırın.
 
 ```
 CRect GetPrintRect() const;
@@ -555,15 +556,15 @@ CRect GetPrintRect() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Baskıda kullanılan görüntü alanının sınırları, MM_TWIPS cinsinden ölçülür.
+Baskıda kullanılan görüntü alanının sınırları MM_TWIPS ölçülür.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#154](../../mfc/codesnippet/cpp/cricheditview-class_4.cpp)]
 
-## <a name="cricheditviewgetprintwidth"></a><a name="getprintwidth"></a>CRichEditView::GetPrintWidth
+## <a name="cricheditviewgetprintwidth"></a><a name="getprintwidth"></a> CRichEditView:: GetPrintWidth
 
-Yazdırma alanının genişliğini belirlemek için bu işlevi arayın.
+Yazdırma alanının genişliğini öğrenmek için bu işlevi çağırın.
 
 ```
 int GetPrintWidth() const;
@@ -571,11 +572,11 @@ int GetPrintWidth() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırma alanının genişliği, MM_TWIPS cinsinden ölçülür.
+Yazdırma alanının MM_TWIPS ölçülen genişliği.
 
-## <a name="cricheditviewgetricheditctrl"></a><a name="getricheditctrl"></a>CRichEditView::GetRichEditCtrl
+## <a name="cricheditviewgetricheditctrl"></a><a name="getricheditctrl"></a> CRichEditView:: GetRichEditCtrl
 
-Nesneyle ilişkili [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) nesnesini `CRichEditView` almak için bu işlevi arayın.
+Nesneyle ilişkili [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) nesnesini almak için bu işlevi çağırın `CRichEditView` .
 
 ```
 CRichEditCtrl& GetRichEditCtrl() const;
@@ -583,15 +584,15 @@ CRichEditCtrl& GetRichEditCtrl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu `CRichEditCtrl` görünüm için nesne.
+`CRichEditCtrl`Bu görünüm için nesne.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:FindText](#findtext).
+  [CRichEditView:: FindText](#findtext)için örneğe bakın.
 
-## <a name="cricheditviewgetselecteditem"></a><a name="getselecteditem"></a>CRichEditView::GetSelectedItem
+## <a name="cricheditviewgetselecteditem"></a><a name="getselecteditem"></a> CRichEditView:: Getselectedidıtem
 
-Şu anda bu `CRichEditCntrItem` `CRichEditView` nesnede seçili olan OLE öğesini (bir nesne) almak için bu işlevi çağırın.
+Bu nesnede seçili olan OLE öğesini (nesne) almak için bu işlevi çağırın `CRichEditCntrItem` `CRichEditView` .
 
 ```
 CRichEditCntrItem* GetSelectedItem() const;
@@ -599,11 +600,11 @@ CRichEditCntrItem* GetSelectedItem() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnede seçilen [cricheditCntrItem](../../mfc/reference/cricheditcntritem-class.md) nesnesine `CRichEditView` işaretçi; Bu görünümde öğe seçili değilse NULL.
+Nesnede seçilen bir [Cricheditcntridıtem](../../mfc/reference/cricheditcntritem-class.md) nesnesi işaretçisi `CRichEditView` ; Bu görünümde hiçbir öğe seçilmezse NULL.
 
-## <a name="cricheditviewgettextlength"></a><a name="gettextlength"></a>CRichEditView::GetTextLength
+## <a name="cricheditviewgettextlength"></a><a name="gettextlength"></a> CRichEditView:: GetTextLength
 
-Bu `CRichEditView` nesnedeki metnin uzunluğunu almak için bu işlevi çağırın.
+Bu nesnedeki metnin uzunluğunu almak için bu işlevi çağırın `CRichEditView` .
 
 ```
 long GetTextLength() const;
@@ -611,11 +612,11 @@ long GetTextLength() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu `CRichEditView` nesnedeki metnin uzunluğu.
+Bu nesnedeki metnin uzunluğu `CRichEditView` .
 
-## <a name="cricheditviewgettextlengthex"></a><a name="gettextlengthex"></a>CRichEditView::GetTextLengthEx
+## <a name="cricheditviewgettextlengthex"></a><a name="gettextlengthex"></a> CRichEditView:: GetTextLengthEx
 
-Bu `CRichEditView` nesnedeki metnin uzunluğunu hesaplamak için bu üye işlevi arayın.
+Bu nesnedeki metnin uzunluğunu hesaplamak için bu üye işlevi çağırın `CRichEditView` .
 
 ```
 long GetTextLengthEx(
@@ -625,23 +626,23 @@ long GetTextLengthEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwflags*<br/>
-Metin uzunluğunu belirlemede kullanılacak yöntemi belirten değer. Bu üye, Windows SDK'da açıklanan [GETTEXTLENGTHEX'in](/windows/win32/api/richedit/ns-richedit-gettextlengthex) bayraklarında listelenen değerlerden biri veya birkaçı olabilir.
+*dwFlags*<br/>
+Metin uzunluğunu belirlemede kullanılacak yöntemi belirten değer. Bu üye, Windows SDK açıklanan [gettextlengthex](/windows/win32/api/richedit/ns-richedit-gettextlengthex) öğesinin Flags üyesinde listelenen değerlerden biri veya daha fazlası olabilir.
 
-*uCodePage*<br/>
-Çeviri için kod sayfası (ANSI Kod Sayfası için CP_ACP, Unicode için 1200).
+*Uıcodepage*<br/>
+Çeviri için kod sayfası (ANSI kod sayfası için CP_ACP, Unicode için 1200).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düzenleme denetimindeki karakter veya bayt sayısı. *dwFlags'de*uyumsuz bayraklar ayarlanmışsa, bu üye işlev E_INVALIDARG döndürür.
+Düzenleme denetimindeki karakter veya bayt sayısı. *DwFlags* içinde uyumsuz bayraklar ayarlandıysa, bu üye işlevi E_INVALIDARG döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetTextLengthEx`metnin uzunluğunu belirlemenin ek yollarını sağlar. Zengin Edit 2.0 işlevini destekler. Daha fazla bilgi için Windows SDK'daki [Zengin Edit Denetimleri Hakkında'ya](/windows/win32/Controls/about-rich-edit-controls) bakın.
+`GetTextLengthEx` metnin uzunluğunu belirlemenin ek yollarını sağlar. Zengin düzenleme 2,0 işlevini destekler. Daha fazla bilgi için, Windows SDK [zengin düzenleme denetimleri hakkında](/windows/win32/Controls/about-rich-edit-controls) bölümüne bakın.
 
-## <a name="cricheditviewinsertfileasobject"></a><a name="insertfileasobject"></a>CRichEditView::InsertFileAsObject
+## <a name="cricheditviewinsertfileasobject"></a><a name="insertfileasobject"></a> CRichEditView:: ınsertfileasobject
 
-Belirtilen dosyayı [(CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) nesnesi olarak) zengin bir edit görünümüne eklemek için bu işlevi arayın.
+Belirtilen dosyayı ( [Cricheditcntritıtem](../../mfc/reference/cricheditcntritem-class.md) nesnesi olarak) zengin bir düzenleme görünümüne eklemek için bu işlevi çağırın.
 
 ```cpp
 void InsertFileAsObject(LPCTSTR lpszFileName);
@@ -652,9 +653,9 @@ void InsertFileAsObject(LPCTSTR lpszFileName);
 *lpszFileName*<br/>
 Eklenecek dosyanın adını içeren dize.
 
-## <a name="cricheditviewinsertitem"></a><a name="insertitem"></a>CRichEditView::InsertItem
+## <a name="cricheditviewinsertitem"></a><a name="insertitem"></a> CRichEditView:: InsertItem
 
-Zengin bir edit görünümüne [CRichEditCntrItem](../../mfc/reference/cricheditcntritem-class.md) nesnesi eklemek için bu işlevi arayın.
+Bir [Cricheditcntridıtem](../../mfc/reference/cricheditcntritem-class.md) nesnesini bir zengin düzenleme görünümüne eklemek için bu işlevi çağırın.
 
 ```
 HRESULT InsertItem(CRichEditCntrItem* pItem);
@@ -663,19 +664,19 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Eklenecek öğeyi işaretçi.
+Eklenecek öğenin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eklemenin başarısını gösteren bir HRESULT değeri.
+Ekleme başarısını belirten bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-HRESULT hakkında daha fazla bilgi için Windows SDK'daki [COM Hata Kodlarının Yapısı'na](/windows/win32/com/structure-of-com-error-codes) bakın.
+HRESULT hakkında daha fazla bilgi için bkz. Windows SDK [com hata kodları yapısı](/windows/win32/com/structure-of-com-error-codes) .
 
-## <a name="cricheditviewisricheditformat"></a><a name="isricheditformat"></a>CRichEditView::IsRichEditFormat
+## <a name="cricheditviewisricheditformat"></a><a name="isricheditformat"></a> CRichEditView:: IsRichEditFormat
 
-*CF'nin* metin, zengin metin veya OLE öğelerine sahip zengin metin olan Pano biçimi olup olmadığını belirlemek için bu işlevi arayın.
+*CF* 'nin metin, zengin metın veya OLE öğeleriyle zengin metin olan bir Pano biçimi olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 static BOOL AFX_CDECL IsRichEditFormat(CLIPFORMAT cf);
@@ -683,16 +684,16 @@ static BOOL AFX_CDECL IsRichEditFormat(CLIPFORMAT cf);
 
 ### <a name="parameters"></a>Parametreler
 
-*Cf*<br/>
-İlgi Panosu biçimi.
+*CF*<br/>
+İlgilendiğiniz Pano biçimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Nonzero* cf zengin bir edit veya metin Pano biçimi ise.
+*CF* zengin düzenleme veya metin panosu biçimindeyse sıfır dışı.
 
-## <a name="cricheditviewisselected"></a><a name="isselected"></a>CRichEditView::Seçili
+## <a name="cricheditviewisselected"></a><a name="isselected"></a> CRichEditView:: IsSelected
 
-Belirtilen OLE öğesinin bu görünümde şu anda seçilip seçilmeip seçilmeyip seçilmeyip seçilmeyini belirlemek için bu işlevi arayın.
+Bu görünümde belirtilen OLE öğesinin seçili olup olmadığını öğrenmek için bu işlevi çağırın.
 
 ```
 virtual BOOL IsSelected(const CObject* pDocItem) const;
@@ -701,27 +702,27 @@ virtual BOOL IsSelected(const CObject* pDocItem) const;
 ### <a name="parameters"></a>Parametreler
 
 *pDocItem*<br/>
-Görünümdeki bir nesneye işaretçi.
+Görünümdeki bir nesneye yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne seçilirse sıfırsız; aksi takdirde 0.
+Nesne seçiliyse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türemiş görünüm sınıfınızda OLE öğelerinin seçimi için farklı bir yöntem varsa bu işlevi geçersiz kılın.
+Türetilmiş Görünüm sınıfınızın OLE öğelerinin seçimini işlemek için farklı bir yöntemi varsa, bu işlevi geçersiz kılın.
 
-## <a name="cricheditviewm_nbulletindent"></a><a name="m_nbulletindent"></a>CRichEditView::m_nBulletIndent
+## <a name="cricheditviewm_nbulletindent"></a><a name="m_nbulletindent"></a> CRichEditView:: m_nBulletIndent
 
-Bir listedeki madde işareti öğelerinin girintisi; varsayılan olarak, 720 adet, hangi inç.
+Bir listedeki madde işareti öğelerinin girintileme; Varsayılan olarak, 1/2 inç olan 720 birim.
 
 ```
 int m_nBulletIndent;
 ```
 
-## <a name="cricheditviewm_nwordwrap"></a><a name="m_nwordwrap"></a>CRichEditView::m_nWordWrap
+## <a name="cricheditviewm_nwordwrap"></a><a name="m_nwordwrap"></a> CRichEditView:: m_nWordWrap
 
-Bu zengin edit görünümü için sözcük kaydırma türünü gösterir.
+Bu zengin düzenleme görünümü için sözcük kaymasının türünü gösterir.
 
 ```
 int m_nWordWrap;
@@ -731,19 +732,19 @@ int m_nWordWrap;
 
 Aşağıdaki değerlerden biri:
 
-- `WrapNone`Otomatik sözcük kaydırma olmadığını gösterir.
+- `WrapNone` Otomatik sözcük kaydırma olmadığını gösterir.
 
-- `WrapToWindow`Pencerenin genişliğine göre sözcük kaydırmayı gösterir.
+- `WrapToWindow` Pencerenin genişliğine göre sözcük kaydırmayı gösterir.
 
-- `WrapToTargetDevice`Hedef aygıtın özelliklerine göre sözcük kaydırmayı gösterir.
+- `WrapToTargetDevice` Hedef cihazın özelliklerine göre sözcük kaydırmayı gösterir.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:WrapChanged](#wrapchanged).
+  [CRichEditView:: WrapChanged](#wrapchanged)için örneğe bakın.
 
-## <a name="cricheditviewonchareffect"></a><a name="onchareffect"></a>CRichEditView::OnCharEffect
+## <a name="cricheditviewonchareffect"></a><a name="onchareffect"></a> CRichEditView:: OnCharEffect
 
-Geçerli seçim için karakter biçimlendirme efektlerini geçiş için bu işlevi arayın.
+Geçerli seçimin karakter biçimlendirme efektlerini değiştirmek için bu işlevi çağırın.
 
 ```cpp
 void OnCharEffect(
@@ -753,25 +754,25 @@ void OnCharEffect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwmask*<br/>
-Geçerli seçimde değiştirmek için karakter biçimlendirme efektleri.
+*dwMask*<br/>
+Geçerli seçimde değişiklik yapmak için karakter biçimlendirme etkileri.
 
 *dwEffect*<br/>
-Geçiş için karakter biçimlendirme efektleri istenilen liste.
+Geçiş için istenen karakter biçimlendirme etkileri listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleve yapılan her çağrı, geçerli seçim için belirtilen biçimlendirme efektlerini geçiştir.
+Bu işleve yapılan her çağrı, geçerli seçim için belirtilen biçimlendirme efektlerini değiştirir.
 
-*dwMask* ve *dwEffect* parametreleri ve bunların olası değerleri hakkında daha fazla bilgi için Windows SDK'daki [CHARFORMAT'ın](/windows/win32/api/richedit/ns-richedit-charformata) ilgili veri üyelerine bakın.
+*DwMask* ve *dwEffect* parametreleri ve olası değerleri hakkında daha fazla bilgi için Windows SDK [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) 'ın ilgili veri üyelerine bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/cpp/cricheditview-class_5.cpp)]
 
-## <a name="cricheditviewonfindnext"></a><a name="onfindnext"></a>CRichEditView::OnFindNext
+## <a name="cricheditviewonfindnext"></a><a name="onfindnext"></a> CRichEditView:: onsonra
 
-Bul/Değiştir iletişim kutusundan komutları işlerken çerçeve tarafından çağrılır.
+Bul/Değiştir iletişim kutusundan komutlar işlenirken Framework tarafından çağırılır.
 
 ```
 virtual void OnFindNext(
@@ -783,25 +784,25 @@ virtual void OnFindNext(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszBul*<br/>
+*lpszFind*<br/>
 Bulunacak dize.
 
-*bSonraki*<br/>
-Arama yönü: TRUE aşağı gösterir; YANLIŞ, yukarı.
+*bNext*<br/>
+Aramanın yönü: TRUE değerini gösterir; YANLıŞ, yukarı.
 
 *bCase*<br/>
-Aramanın büyük/küçük harf duyarlı olup olmadığını gösterir.
+Aramanın büyük/küçük harfe duyarlı olup olmayacağını gösterir.
 
-*bWord*<br/>
-Aramanın tüm sözcüklerle eşleşip eşleşmeyecek olduğunu gösterir.
+*Sözcük*<br/>
+Aramanın yalnızca tüm sözcüklerden eşleşip eşleşmeyeceğini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İçindeki metni bulmak için `CRichEditView`bu işlevi arayın. Türemiş görünüm sınıfınızın arama özelliklerini değiştirmek için bu işlevi geçersiz kılın.
+İçindeki metni bulmak için bu işlevi çağırın `CRichEditView` . Türetilmiş Görünüm sınıfınızın arama özelliklerini değiştirmek için bu işlevi geçersiz kılın.
 
-## <a name="cricheditviewoninitialupdate"></a><a name="oninitialupdate"></a>CRichEditView::OnInitialUpdate
+## <a name="cricheditviewoninitialupdate"></a><a name="oninitialupdate"></a> CRichEditView:: OnInitialUpdate
 
-Görünüm belgeye ilk iliştirildikten sonra çerçeve tarafından çağrılır, ancak görünüm ilk görüntülenmeden önce.
+Görünüm belgeye ilk iliştirildikten sonra, ancak görünüm ilk görüntülenmeden önce Framework tarafından çağırılır.
 
 ```
 virtual void OnInitialUpdate();
@@ -809,15 +810,15 @@ virtual void OnInitialUpdate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin varsayılan uygulaması [CView çağırır::OnUpdate](../../mfc/reference/cview-class.md#onupdate) üye işlevi hiçbir ipucu bilgi ile (yani, *lHint* parametresi için 0 varsayılan değerleri kullanarak ve *pHint* parametresi için NULL). Belge hakkında bilgi gerektiren tek seferlik başlatmayı gerçekleştirmek için bu işlevi geçersiz kılın. Örneğin, uygulamanızda sabit boyutlu belgeler varsa, belge boyutuna bağlı olarak görünümün kaydırma sınırlarını başlatmayı sağlamak için bu işlevi kullanabilirsiniz. Uygulamanız değişken boyutlu belgeleri destekliyorsa, belge her değiştiğinde kaydırma sınırlarını güncelleştirmek için kullanın. `OnUpdate`
+Bu işlevin varsayılan uygulanması, ipucu bilgisi olmadan [CView:: OnUpdate](../../mfc/reference/cview-class.md#onupdate) üye işlevini çağırır (diğer bir deyişle, *lipucu* parametresi için 0 varsayılan değerlerini kullanarak ve *phınt* parametresi için null). Belge hakkında bilgi gerektiren tek seferlik başlatma gerçekleştirmek için bu işlevi geçersiz kılın. Örneğin, uygulamanız sabit boyutlu belgeler içeriyorsa, belgenin boyutuna bağlı olarak bir görünümün kaydırma sınırlarını başlatmak için bu işlevi kullanabilirsiniz. Uygulamanız değişken boyutlu belgeleri destekliyorsa, `OnUpdate` belgenin her değiştirilişinde kaydırma sınırlarını güncelleştirmek için kullanın.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:m_nWordWrap.](#m_nwordwrap)
+  [CRichEditView:: m_nWordWrap](#m_nwordwrap)için örneğe bakın.
 
-## <a name="cricheditviewonpastenativeobject"></a><a name="onpastenativeobject"></a>CRichEditView::OnPasteNativeObject
+## <a name="cricheditviewonpastenativeobject"></a><a name="onpastenativeobject"></a> CRichEditView:: OnPasteNativeObject
 
-Katışdırılmış bir öğeden yerel verileri yüklemek için bu işlevi kullanın.
+Katıştırılmış bir öğeden yerel verileri yüklemek için bu işlevi kullanın.
 
 ```
 virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
@@ -826,23 +827,23 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
 ### <a name="parameters"></a>Parametreler
 
 *lpStg*<br/>
-[IStorage](/windows/win32/api/objidl/nn-objidl-istorage) nesnesine işaretçi.
+[Isstorage](/windows/win32/api/objidl/nn-objidl-istorage) nesnesine yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde, 0;
+Başarılı olursa sıfır dışı; Aksi takdirde, 0;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle, etrafında bir [COleStreamFile](../../mfc/reference/colestreamfile-class.md) oluşturarak bunu `IStorage`yapardı. Bir `COleStreamFile` arşive eklenebilir ve [CObject::Verileri](../../mfc/reference/cobject-class.md#serialize) yüklemek için çağrılan serialize.
+Genellikle bunu, etrafında bir [COleStreamFile](../../mfc/reference/colestreamfile-class.md) oluşturarak yapabilirsiniz `IStorage` . , `COleStreamFile` Verileri yüklemek için çağrılan bir arşive ve [CObject:: Serialize](../../mfc/reference/cobject-class.md#serialize) öğesine eklenebilir.
 
-Bu gelişmiş bir geçersiz.
+Bu gelişmiş bir geçersiz kılınabilir.
 
-Daha fazla bilgi için Windows SDK'daki [IStorage'a](/windows/win32/api/objidl/nn-objidl-istorage) bakın.
+Daha fazla bilgi için Windows SDK içindeki [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) ' a bakın.
 
-## <a name="cricheditviewonparaalign"></a><a name="onparaalign"></a>CRichEditView::OnParaAlign
+## <a name="cricheditviewonparaalign"></a><a name="onparaalign"></a> CRichEditView:: Onparaalıgn
 
-Seçili paragraflar için paragraf hizalamasını değiştirmek için bu işlevi çağırın.
+Seçili paragrafların paragraf hizalamasını değiştirmek için bu işlevi çağırın.
 
 ```cpp
 void OnParaAlign(WORD wAlign);
@@ -851,21 +852,21 @@ void OnParaAlign(WORD wAlign);
 ### <a name="parameters"></a>Parametreler
 
 *wAlign*<br/>
-İstenilen paragraf hizalaması. Aşağıdaki değerlerden biri:
+İstenen paragraf hizalaması. Aşağıdaki değerlerden biri:
 
-- PFA_LEFT Paragrafları sol kenar boşluğuyla hizala.
+- Paragrafları sol kenar boşluğu ile hizalayın PFA_LEFT.
 
-- PFA_RIGHT Paragrafları doğru kenar boşluğuyla hizala.
+- Paragrafları sağ kenar boşluğu ile hizalayın PFA_RIGHT.
 
-- PFA_CENTER Kenar boşlukları arasındaki paragrafları ortalar.
+- Kenar boşlukları arasındaki paragrafları ortalayın PFA_CENTER.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#156](../../mfc/codesnippet/cpp/cricheditview-class_6.cpp)]
 
-## <a name="cricheditviewonprinterchanged"></a><a name="onprinterchanged"></a>CRichEditView::OnPrinterDeğiştirildi
+## <a name="cricheditviewonprinterchanged"></a><a name="onprinterchanged"></a> CRichEditView:: OnPrinterChanged
 
-Yazıcı değiştiğinde bu zengin edit görünümü için özelliklerini değiştirmek için bu işlevi geçersiz kılın.
+Yazıcı değiştiğinde bu zengin düzenleme görünümünün özelliklerini değiştirmek için bu işlevi geçersiz kılın.
 
 ```
 virtual void OnPrinterChanged(const CDC& dcPrinter);
@@ -873,16 +874,16 @@ virtual void OnPrinterChanged(const CDC& dcPrinter);
 
 ### <a name="parameters"></a>Parametreler
 
-*dcYazıcı*<br/>
-Yeni yazıcı için [cdc](../../mfc/reference/cdc-class.md) nesnesi.
+*dcPrinter*<br/>
+Yeni yazıcı için bir [CDC](../../mfc/reference/cdc-class.md) nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama, kağıt boyutunu çıktı aygıtının (yazıcı) fiziksel yüksekliğine ve genişliğine ayarlar. *dcPrinter*ile ilişkili aygıt bağlamı yoksa, varsayılan uygulama kağıt boyutunu 8,5 x 11 inç olarak ayarlar.
+Varsayılan uygulama, çıkış cihazının (yazıcı) fiziksel yükseklik ve genişliğine göre kağıt boyutunu ayarlar. *DcPrinter* ile ilişkili hiçbir cihaz bağlamı yoksa, varsayılan uygulama, kağıt boyutunu 11 inç olarak 8,5 olarak ayarlar.
 
-## <a name="cricheditviewonreplaceall"></a><a name="onreplaceall"></a>CRichEditView::OnReplaceAll
+## <a name="cricheditviewonreplaceall"></a><a name="onreplaceall"></a> CRichEditView:: OnReplaceAll
 
-Değiştir iletişim kutusundan Tüm komutları değiştir'i işlerken çerçeve tarafından çağrılır.
+' In Değiştir iletişim kutusundaki tüm komutları değiştir işlemi işlenirken Framework tarafından çağırılır.
 
 ```
 virtual void OnReplaceAll(
@@ -894,29 +895,29 @@ virtual void OnReplaceAll(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszBul*<br/>
-Değiştirilecek metin.
+*lpszFind*<br/>
+Değiştirilmekte olan metin.
 
-*lpszDeğiştir*<br/>
-Değiştirilen metin.
+*lpszReplace*<br/>
+Yerine konacak metin.
 
 *bCase*<br/>
-Aramanın büyük/küçük harf duyarlı olup olmadığını gösterir.
+Aramanın büyük/küçük harfe duyarlı olup olmadığını gösterir.
 
-*bWord*<br/>
-Aramanın tüm sözcükleri seçip seçmemesi gerektiğini gösterir.
+*Sözcük*<br/>
+Aramanın tüm sözcükleri seçip seçmeyeceğini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirli bir metnin tüm oluşumlarını başka bir dizeyle değiştirmek için bu işlevi çağırın. Bu görünüm için arama özelliklerini değiştirmek için bu işlevi geçersiz kılın.
+Belirli bir metnin tüm tekrarlamalarını başka bir dizeyle değiştirmek için bu işlevi çağırın. Bu görünümün arama özelliklerini değiştirmek için bu işlevi geçersiz kılın.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:FindText](#findtext).
+  [CRichEditView:: FindText](#findtext)için örneğe bakın.
 
-## <a name="cricheditviewonreplacesel"></a><a name="onreplacesel"></a>CRichEditView::OnReplaceSel
+## <a name="cricheditviewonreplacesel"></a><a name="onreplacesel"></a> CRichEditView:: OnReplaceSel
 
-Değiştir iletişim kutusundan Değiştir komutlarını işlerken çerçeve tarafından çağrılır.
+Değiştir iletişim kutusundan Replace komutları işlenirken Framework tarafından çağırılır.
 
 ```
 virtual void OnReplaceSel(
@@ -929,28 +930,28 @@ virtual void OnReplaceSel(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszBul*<br/>
-Değiştirilecek metin.
+*lpszFind*<br/>
+Değiştirilmekte olan metin.
 
-*bSonraki*<br/>
-Aramanın yönünü gösterir: TRUE düştü; YANLIŞ, yukarı.
+*bNext*<br/>
+Aramanın yönünü gösterir: TRUE. YANLıŞ, yukarı.
 
 *bCase*<br/>
-Aramanın büyük/küçük harf duyarlı olup olmadığını gösterir.
+Aramanın büyük/küçük harfe duyarlı olup olmadığını gösterir.
 
-*bWord*<br/>
-Aramanın tüm sözcükleri seçip seçmemesi gerektiğini gösterir.
+*Sözcük*<br/>
+Aramanın tüm sözcükleri seçip seçmeyeceğini gösterir.
 
-*lpszDeğiştir*<br/>
-Değiştirilen metin.
+*lpszReplace*<br/>
+Yerine konacak metin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirli bir metnin bir oluşumunu başka bir dizeyle değiştirmek için bu işlevi çağırın. Bu görünüm için arama özelliklerini değiştirmek için bu işlevi geçersiz kılın.
+Belirli bir metnin bir oluşumunu başka bir dizeyle değiştirmek için bu işlevi çağırın. Bu görünümün arama özelliklerini değiştirmek için bu işlevi geçersiz kılın.
 
-## <a name="cricheditviewontextnotfound"></a><a name="ontextnotfound"></a>CRichEditView::OnTextNotFound
+## <a name="cricheditviewontextnotfound"></a><a name="ontextnotfound"></a> CRichEditView:: OnTextNotFound
 
-Bir arama başarısız olduğunda çerçeve tarafından çağrılır.
+Bir arama başarısız olduğunda Framework tarafından çağırılır.
 
 ```
 virtual void OnTextNotFound(LPCTSTR lpszFind);
@@ -958,22 +959,22 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszBul*<br/>
+*lpszFind*<br/>
 Bulunamayan metin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[Bir MessageBeep'ten](/windows/win32/api/winuser/nf-winuser-messagebeep)çıktı bildirimini değiştirmek için bu işlevi geçersiz kılın.
+[Messagebip bip](/windows/win32/api/winuser/nf-winuser-messagebeep)çıkış bildirimini değiştirmek için bu işlevi geçersiz kılın.
 
-Daha fazla bilgi için Windows SDK'daki [MessageBeep'e](/windows/win32/api/winuser/nf-winuser-messagebeep) bakın.
+Daha fazla bilgi için Windows SDK bakın [Messagebip](/windows/win32/api/winuser/nf-winuser-messagebeep) .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#157](../../mfc/codesnippet/cpp/cricheditview-class_7.cpp)]
 
-## <a name="cricheditviewonupdatechareffect"></a><a name="onupdatechareffect"></a>CRichEditView::OnUpdateCharEffect
+## <a name="cricheditviewonupdatechareffect"></a><a name="onupdatechareffect"></a> CRichEditView:: OnUpdateCharEffect
 
-Çerçeve, karakter efekti komutları için komut UI'yi güncelleştirmek için bu işlevi çağırır.
+Çerçeve, komut Kullanıcı arabirimini karakter efekti komutlarına güncelleştirmek için bu işlevi çağırır.
 
 ```cpp
 void OnUpdateCharEffect(
@@ -985,27 +986,27 @@ void OnUpdateCharEffect(
 ### <a name="parameters"></a>Parametreler
 
 *pCmdUI*<br/>
-[CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine işaretçi.
+[CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine yönelik işaretçi.
 
-*Dwmask*<br/>
-Karakter biçimlendirme maskesini gösterir.
+*dwMask*<br/>
+Karakter biçimlendirme maskesini belirtir.
 
 *dwEffect*<br/>
 Karakter biçimlendirme efektini gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Maske *dwMask* hangi karakter biçimlendirme özniteliklerini denetlemek için belirtir. Bayraklar *dwEffect* ayarlamak /temizlemek için karakter biçimlendirme öznitelikleri listeleyin.
+Maske *dwMask* , denetlenecek karakter biçimlendirme özniteliklerini belirtir. Flags *dwEffect* , ayarlanacak/Clear karakter biçimlendirme özniteliklerini listeler.
 
-*dwMask* ve *dwEffect* parametreleri ve bunların olası değerleri hakkında daha fazla bilgi için Windows SDK'daki [CHARFORMAT'ın](/windows/win32/api/richedit/ns-richedit-charformata) ilgili veri üyelerine bakın.
+*DwMask* ve *dwEffect* parametreleri ve olası değerleri hakkında daha fazla bilgi için Windows SDK [Charformat](/windows/win32/api/richedit/ns-richedit-charformata) 'ın ilgili veri üyelerine bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/cpp/cricheditview-class_8.cpp)]
 
-## <a name="cricheditviewonupdateparaalign"></a><a name="onupdateparaalign"></a>CRichEditView::OnUpdateParaAlign
+## <a name="cricheditviewonupdateparaalign"></a><a name="onupdateparaalign"></a> CRichEditView:: Onupdateparamalign
 
-Çerçeve, paragraf efekti komutları için komut UI'yi güncelleştirmek için bu işlevi çağırır.
+Framework, paragraf efekti komutlarının komut Kullanıcı arabirimini güncelleştirmek için bu işlevi çağırır.
 
 ```cpp
 void OnUpdateParaAlign(
@@ -1016,24 +1017,24 @@ void OnUpdateParaAlign(
 ### <a name="parameters"></a>Parametreler
 
 *pCmdUI*<br/>
-[CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine işaretçi.
+[CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine yönelik işaretçi.
 
 *wAlign*<br/>
-Denetlemek için paragraf hizalaması. Aşağıdaki değerlerden biri:
+Denetlenecek paragraf hizalaması. Aşağıdaki değerlerden biri:
 
-- PFA_LEFT Paragrafları sol kenar boşluğuyla hizala.
+- Paragrafları sol kenar boşluğu ile hizalayın PFA_LEFT.
 
-- PFA_RIGHT Paragrafları doğru kenar boşluğuyla hizala.
+- Paragrafları sağ kenar boşluğu ile hizalayın PFA_RIGHT.
 
-- PFA_CENTER Kenar boşlukları arasındaki paragrafları ortalar.
+- Kenar boşlukları arasındaki paragrafları ortalayın PFA_CENTER.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#159](../../mfc/codesnippet/cpp/cricheditview-class_9.cpp)]
 
-## <a name="cricheditviewprintinsiderect"></a><a name="printinsiderect"></a>CRichEditView::PrintInsideRect
+## <a name="cricheditviewprintinsiderect"></a><a name="printinsiderect"></a> CRichEditView::P rintInsideRect
 
-*PDC*tarafından belirtilen aygıt için *rectLayout* sığacak şekilde zengin bir düzenleme denetiminde metin aralığı biçimlendirmek için bu işlevi arayın.
+Bir zengin düzenleme denetimindeki metin aralığını, *PDC* tarafından belirtilen cihaz Için *rectLayout* içine sığacak şekilde biçimlendirmek için bu işlevi çağırın.
 
 ```
 long PrintInsideRect(
@@ -1046,36 +1047,36 @@ long PrintInsideRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Çıkış alanı için aygıt bağlamını işaretçi.
+*Kökündeki*<br/>
+Çıkış alanı için bir cihaz bağlamı işaretçisi.
 
-*rektLayout*<br/>
-Çıkış alanını tanımlayan [RECT](/windows/win32/api/windef/ns-windef-rect) veya [CRect.](../../atl-mfc-shared/reference/crect-class.md)
+*rectLayout*<br/>
+Çıktı alanını tanımlayan [Rect](/windows/win32/api/windef/ns-windef-rect) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) .
 
 *nIndexStart*<br/>
-Biçimlendirilecek ilk karakterin sıfır tabanlı dizin.
+Biçimlendirilecek ilk karakterin sıfır tabanlı dizini.
 
-*nIndexStop*<br/>
-Biçimlendirilecek son karakterin sıfır tabanlı dizin.
+*Nındexstop*<br/>
+Biçimlendirilecek son karakterin sıfır tabanlı dizini.
 
-*bÇıktı*<br/>
-Metnin işlenmemesi gerektiğini gösterir. FALSE ise, metin sadece ölçülür.
+*i koyun*<br/>
+Metnin işlenip işlenmeyeceğini gösterir. YANLıŞ ise metin yalnızca ölçülmüş olur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çıktı alanına uyan son karakterin dizini artı bir.
+Çıktı alanına uyan son karakterin dizini ve bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle, bu çağrıyı [cricheditCtrl::Dçıktıüreten isplayBand'e](../../mfc/reference/cricheditctrl-class.md#displayband) yapılan bir çağrı takip eder.
+Genellikle, bu çağrının ardından çıktıyı oluşturan [CRichEditCtrl::D ıplayband](../../mfc/reference/cricheditctrl-class.md#displayband) çağrısı vardır.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:GetPaperSize](#getpapersize).
+  [CRichEditView:: GetPaperSize](#getpapersize)için örneğe bakın.
 
-## <a name="cricheditviewprintpage"></a><a name="printpage"></a>CRichEditView::PrintPage
+## <a name="cricheditviewprintpage"></a><a name="printpage"></a> CRichEditView::P rintPage
 
-*pDC*tarafından belirtilen çıkış aygıtı için zengin bir düzenleme denetiminde bir metin aralığını biçimlendirmek için bu işlevi arayın.
+*PDC* tarafından belirtilen çıkış aygıtı için bir zengin düzenleme denetimindeki metin aralığını biçimlendirmek için bu işlevi çağırın.
 
 ```
 long PrintPage(
@@ -1086,28 +1087,28 @@ long PrintPage(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Sayfa çıktısı için aygıt bağlamını işaretçi.
+*Kökündeki*<br/>
+Sayfa çıktısı için bir cihaz bağlamı işaretçisi.
 
 *nIndexStart*<br/>
-Biçimlendirilecek ilk karakterin sıfır tabanlı dizin.
+Biçimlendirilecek ilk karakterin sıfır tabanlı dizini.
 
-*nIndexStop*<br/>
-Biçimlendirilecek son karakterin sıfır tabanlı dizin.
+*Nındexstop*<br/>
+Biçimlendirilecek son karakterin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sayfaya uyan son karakterin dizini artı bir.
+Sayfaya uyan son karakterin dizini ve bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her sayfanın düzeni [GetPageRect](#getpagerect) ve [GetPrintRect](#getprintrect)tarafından denetlenir. Genellikle, bu çağrıyı [cricheditCtrl::Dçıktıüreten isplayBand'e](../../mfc/reference/cricheditctrl-class.md#displayband) yapılan bir çağrı takip eder.
+Her sayfanın düzeni [GetPageRect](#getpagerect) ve [GetPrintRect](#getprintrect)tarafından denetlenir. Genellikle, bu çağrının ardından çıktıyı oluşturan [CRichEditCtrl::D ıplayband](../../mfc/reference/cricheditctrl-class.md#displayband) çağrısı vardır.
 
-Kenar boşluklarının mantıksal sayfaya değil, fiziksel sayfaya göre olduğunu unutmayın. Böylece, birçok yazıcının sayfada yazdırılamayan alanları olduğundan, sıfır kenar boşlukları genellikle metni keser. Metninizi kırpmaktan kaçınmak [için, SetMargins'i](#setmargins) aramalı ve yazdırmadan önce makul kenar boşlukları ayarlamalısınız.
+Kenar boşluklarının mantıksal sayfa değil fiziksel sayfaya göreli olduğunu unutmayın. Bu nedenle, çoğu yazıcının sayfada yazdırılabilir alanı olduğundan, sıfır kenar boşlukları genellikle metni kırpacaktır. Metninizi kırpmadan kaçınmak için, [Setkenar boşluklarını](#setmargins) çağırmanız ve yazdırmadan önce makul kenar boşlukları ayarlamanız gerekir.
 
-## <a name="cricheditviewqueryacceptdata"></a><a name="queryacceptdata"></a>CRichEditView::QueryAcceptData
+## <a name="cricheditviewqueryacceptdata"></a><a name="queryacceptdata"></a> CRichEditView:: QueryAcceptData
 
-Bir nesneyi zengin düzenlemeye yapıştırmak için çerçeve tarafından çağrılır.
+Zengin düzenlemeye bir nesne yapıştırmak için Framework tarafından çağırılır.
 
 ```
 virtual HRESULT QueryAcceptData(
@@ -1124,34 +1125,34 @@ virtual HRESULT QueryAcceptData(
 Sorgu için [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) işaretçisi.
 
 *lpcfFormat*<br/>
-Kabul edilebilir veri biçimini işaretçi.
+Kabul edilebilir veri biçimine yönelik işaretçi.
 
 *dwReco*<br/>
 Kullanılmadı.
 
-*bGerçekten*<br/>
-Yapıştırma işleminin devam edip etmediğini gösterir.
+*Bresel olarak*<br/>
+Yapıştırma işleminin devam edip edemeyeceğini gösterir.
 
 *hMetaFile*<br/>
-Öğenin simgesini çizmek için kullanılan metafile için bir tutamaç.
+Öğenin simgesini çizmek için kullanılan meta dosyası için bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Operasyonun başarısını bildiren bir HRESULT değeri.
+İşlemin başarısını bildiren bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türemiş belge sınıfınızdaki com öğelerinin farklı organizasyonunu işlemek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz.
+Türetilmiş belge sınıfınıza ait farklı COM öğeleri organizasyonunu işlemek için bu işlevi geçersiz kılın. Bu gelişmiş bir geçersiz kılınabilir.
 
-HRESULT ve `IDataObject`, Windows SDK'da sırasıyla [COM Hata Kodları](/windows/win32/com/structure-of-com-error-codes) ve [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject)Yapısı hakkında daha fazla bilgi için bkz.
+HRESULT ve hakkında daha fazla bilgi için, `IDataObject` Windows SDK SıRASıYLA [com hata kodlarının](/windows/win32/com/structure-of-com-error-codes) ve [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject)'nin yapısına bakın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/cpp/cricheditview-class_10.cpp)]
 
-## <a name="cricheditviewsetcharformat"></a><a name="setcharformat"></a>CRichEditView::SetCharFormat
+## <a name="cricheditviewsetcharformat"></a><a name="setcharformat"></a> CRichEditView:: SetCharFormat
 
-Bu `CRichEditView` nesnedeki yeni metin için karakter biçimlendirme özniteliklerini ayarlamak için bu işlevi çağırın.
+Bu nesnedeki yeni metin için karakter biçimlendirme özniteliklerini ayarlamak için bu işlevi çağırın `CRichEditView` .
 
 ```cpp
 void SetCharFormat(CHARFORMAT2 cf);
@@ -1159,22 +1160,22 @@ void SetCharFormat(CHARFORMAT2 cf);
 
 ### <a name="parameters"></a>Parametreler
 
-*Cf*<br/>
+*CF*<br/>
 Yeni varsayılan karakter biçimlendirme özniteliklerini içeren [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev le `dwMask` yalnızca *cf* üyesi tarafından belirtilen öznitelikler değiştirilir.
+Yalnızca CF üyesi tarafından belirtilen öznitelikler `dwMask` Bu işlev  tarafından değiştirilir.
 
-Daha fazla bilgi için Windows [SDK'daki EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) ileti ve [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) yapısına bakın.
+Daha fazla bilgi için Windows SDK [EM_SETCHARFORMAT](/windows/win32/Controls/em-setcharformat) Ileti ve [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) yapısını inceleyin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]
 
-## <a name="cricheditviewsetmargins"></a><a name="setmargins"></a>CRichEditView::SetMargins
+## <a name="cricheditviewsetmargins"></a><a name="setmargins"></a> CRichEditView:: Setkenar boşlukları
 
-Bu zengin edit görünümü için yazdırma kenar boşluklarını ayarlamak için bu işlevi arayın.
+Bu zengin düzenleme görünümü için yazdırma kenar boşluklarını ayarlamak için bu işlevi çağırın.
 
 ```cpp
 void SetMargins(const CRect& rectMargin);
@@ -1182,22 +1183,22 @@ void SetMargins(const CRect& rectMargin);
 
 ### <a name="parameters"></a>Parametreler
 
-*rektMargin*<br/>
-Yazdırma için MM_TWIPS cinsinden ölçülen yeni kenar boşluğu değerleri.
+*rectMargin*<br/>
+Yazdırma için yeni kenar boşluğu değerleri MM_TWIPS ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[m_nWordWrap](#m_nwordwrap) ise, `WrapToTargetDevice`yazdırma özelliklerini ayarlamak için bu işlevi kullandıktan sonra [WrapChanged'i](#wrapchanged) aramalısınız.
+[M_nWordWrap](#m_nwordwrap) , `WrapToTargetDevice` Bu işlevi kullanarak yazdırma özelliklerini ayarlamak için [WrapChanged](#wrapchanged) öğesini çağırmanız gerekir.
 
-[PrintPage](#printpage) tarafından kullanılan kenar boşluklarının mantıksal sayfaya değil, fiziksel sayfaya göre olduğunu unutmayın. Böylece, birçok yazıcının sayfada yazdırılamayan alanları olduğundan, sıfır kenar boşlukları genellikle metni keser. Metninizi kırpmaktan kaçınmak için yazdırmadan önce makul yazıcı kenar boşlukları ayarlamak için kullanımı `SetMargins` aramalısınız.
+[PrintPage](#printpage) tarafından kullanılan kenar boşluklarının mantıksal sayfa değil fiziksel sayfaya göreli olduğunu unutmayın. Bu nedenle, çoğu yazıcının sayfada yazdırılabilir alanı olduğundan, sıfır kenar boşlukları genellikle metni kırpacaktır. Metninizin kırpılmasını önlemek için, `SetMargins` yazdırmadan önce makul yazıcı kenar boşluklarını ayarlamak üzere Use çağrısını yapmanız gerekir.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:GetPaperSize](#getpapersize).
+  [CRichEditView:: GetPaperSize](#getpapersize)için örneğe bakın.
 
-## <a name="cricheditviewsetpapersize"></a><a name="setpapersize"></a>CRichEditView::SetPaperSize
+## <a name="cricheditviewsetpapersize"></a><a name="setpapersize"></a> CRichEditView:: SetPaperSize
 
-Bu zengin edit görünümünü yazdırmak için kağıt boyutunu ayarlamak için bu işlevi arayın.
+Bu zengin düzenleme görünümünün yazdırılması için kağıt boyutunu ayarlamak üzere bu işlevi çağırın.
 
 ```cpp
 void SetPaperSize(CSize sizePaper);
@@ -1205,20 +1206,20 @@ void SetPaperSize(CSize sizePaper);
 
 ### <a name="parameters"></a>Parametreler
 
-*boyutKağıt*<br/>
-Yazdırma için yeni kağıt boyutu değerleri, MM_TWIPS cinsinden ölçülür.
+*sizePaper*<br/>
+Yazdırma için yeni kağıt boyutu değerleri MM_TWIPS ölçülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[m_nWordWrap](#m_nwordwrap) ise, `WrapToTargetDevice`yazdırma özelliklerini ayarlamak için bu işlevi kullandıktan sonra [WrapChanged'i](#wrapchanged) aramalısınız.
+[M_nWordWrap](#m_nwordwrap) , `WrapToTargetDevice` Bu işlevi kullanarak yazdırma özelliklerini ayarlamak için [WrapChanged](#wrapchanged) öğesini çağırmanız gerekir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#161](../../mfc/codesnippet/cpp/cricheditview-class_11.cpp)]
 
-## <a name="cricheditviewsetparaformat"></a><a name="setparaformat"></a>CRichEditView::SetParaFormat
+## <a name="cricheditviewsetparaformat"></a><a name="setparaformat"></a> CRichEditView:: SetParaFormat
 
-Bu `CRichEditView` nesnedeki geçerli seçim için paragraf biçimlendirme özniteliklerini ayarlamak için bu işlevi çağırın.
+Bu nesnedeki geçerli seçimin paragraf biçimlendirme özniteliklerini ayarlamak için bu işlevi çağırın `CRichEditView` .
 
 ```
 BOOL SetParaFormat(PARAFORMAT2& pf);
@@ -1226,26 +1227,26 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pf*<br/>
-[ParaFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) yapısı yeni varsayılan paragraf biçimlendirme özniteliklerini içerir.
+*PF*<br/>
+Yeni varsayılan paragraf biçimlendirme özniteliklerini içeren [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde, 0.
+Başarılı olursa sıfır dışı; Aksi takdirde, 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev le `dwMask` yalnızca *pf* üyesi tarafından belirtilen öznitelikler değiştirilir.
+Yalnızca PF üyesi tarafından belirtilen öznitelikler `dwMask` Bu işlev  tarafından değiştirilir.
 
-Daha fazla bilgi için Windows SDK'daki [EM_SETPARAFORMAT](/windows/win32/Controls/em-setparaformat) ileti ve [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) yapısına bakın.
+Daha fazla bilgi için Windows SDK [EM_SETPARAFORMAT](/windows/win32/Controls/em-setparaformat) Ileti ve [PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) yapısını inceleyin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#162](../../mfc/codesnippet/cpp/cricheditview-class_12.cpp)]
 
-## <a name="cricheditviewtextnotfound"></a><a name="textnotfound"></a>CRichEditView::TextNotFound
+## <a name="cricheditviewtextnotfound"></a><a name="textnotfound"></a> CRichEditView:: TextNotFound
 
-[FindText'e](#findtext)yapılan başarısız bir çağrıdan sonra [CRichEditView](../../mfc/reference/cricheditview-class.md) denetiminin dahili arama durumunu sıfırlamak için bu işlevi arayın.
+Başarısız bir [FindText](#findtext)çağrısından sonra [CRichEditView](../../mfc/reference/cricheditview-class.md) denetiminin iç arama durumunu sıfırlamak için bu işlevi çağırın.
 
 ```cpp
 void TextNotFound(LPCTSTR lpszFind);
@@ -1253,22 +1254,22 @@ void TextNotFound(LPCTSTR lpszFind);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszBul*<br/>
+*lpszFind*<br/>
 Bulunamayan metin dizesini içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin iç arama durumunun düzgün bir şekilde sıfırlanabilmesi için bu yöntemin [FindText'e](#findtext) yapılan başarısız çağrılardan hemen sonra çağrılması önerilir.
+Bu yöntemin, denetimin iç arama durumunun düzgün şekilde sıfırlanması için, [FindText](#findtext) 'e başarısız çağrılar yapıldıktan hemen sonra çağrılması önerilir.
 
-*lpszFind* parametresi [FindText'e](#findtext)sağlanan dizeyle aynı içeriği içermelidir. İç arama durumunu sıcattıktan sonra, bu yöntem sağlanan arama dizesiyle [OnTextNotFound](#ontextnotfound) yöntemini çağırır.
+*LpszFind* parametresi, [FindText](#findtext)için girilen dizeyle aynı içeriği içermelidir. İç arama durumu sıfırlandıktan sonra, bu yöntem, belirtilen arama dizesiyle [OnTextNotFound](#ontextnotfound) yöntemini çağırır.
 
 ### <a name="example"></a>Örnek
 
-  [CRichEditView örneğine bakın:FindText](#findtext).
+  [CRichEditView:: FindText](#findtext)için örneğe bakın.
 
-## <a name="cricheditviewwrapchanged"></a><a name="wrapchanged"></a>CRichEditView::WrapChanged
+## <a name="cricheditviewwrapchanged"></a><a name="wrapchanged"></a> CRichEditView:: WrapChanged
 
-Yazdırma özellikleri değiştiğinde [(SetMargins](#setmargins) veya [SetPaperSize)](#setpapersize)bu işlevi arayın.
+Yazdırma Özellikleri değiştiğinde bu işlevi çağırın ( [Setkenar boşlukları](#setmargins) veya [SetPaperSize](#setpapersize)).
 
 ```
 virtual void WrapChanged();
@@ -1276,7 +1277,7 @@ virtual void WrapChanged();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zengin edit [görünümünün m_nWordWrap](#m_nwordwrap) veya yazdırma özelliklerindeki değişikliklere yanıt verme biçimini değiştirmek için bu işlevi geçersiz kılın [(OnPrinterChanged).](#onprinterchanged)
+Zengin düzenleme görünümünün [m_nWordWrap](#m_nwordwrap) veya yazdırma özelliklerinde değişikliklere yanıt verme şeklini değiştirmek için bu işlevi geçersiz kılın ( [OnPrinterChanged](#onprinterchanged)).
 
 ### <a name="example"></a>Örnek
 
@@ -1284,8 +1285,8 @@ Zengin edit [görünümünün m_nWordWrap](#m_nwordwrap) veya yazdırma özellik
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
-[CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CRichEditDoc Sınıfı](../../mfc/reference/cricheditdoc-class.md)<br/>
-[CRichEditCntrItem Sınıfı](../../mfc/reference/cricheditcntritem-class.md)
+[MFC örnek WORDPAD](../../overview/visual-cpp-samples.md)<br/>
+[CCtrlView sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CRichEditDoc sınıfı](../../mfc/reference/cricheditdoc-class.md)<br/>
+[Cricheditcntridıtem sınıfı](../../mfc/reference/cricheditcntritem-class.md)

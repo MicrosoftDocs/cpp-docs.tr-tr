@@ -1,5 +1,6 @@
 ---
-title: CSettingsStoreSP Sınıfı
+description: 'Daha fazla bilgi edinin: Csettingsstosorumclass'
+title: Csettingsstosorumclass
 ms.date: 11/04/2016
 f1_keywords:
 - CSettingsStoreSP
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - CSettingsStoreSP [MFC], Create
 - CSettingsStoreSP [MFC], SetRuntimeClass
 ms.assetid: bcd37f40-cfd4-4d17-a5ce-3bfabe995dcc
-ms.openlocfilehash: 9e22184a4081762a3d505645752e514315146981
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 67e9f881fc43722ab568aa7f149fc7a2b44cc764
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318448"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264693"
 ---
-# <a name="csettingsstoresp-class"></a>CSettingsStoreSP Sınıfı
+# <a name="csettingsstoresp-class"></a>Csettingsstosorumclass
 
-Sınıf, `CSettingsStoreSP` [CSettingsStore Sınıfı'nın](../../mfc/reference/csettingsstore-class.md)örneklerini oluşturmak için kullanabileceğiniz yardımcı sınıftır.
+`CSettingsStoreSP`Sınıfı, [Csettingssbir sınıfının](../../mfc/reference/csettingsstore-class.md)örneklerini oluşturmak için kullanabileceğiniz bir yardımcı sınıftır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CSettingsStoreSP
@@ -33,47 +34,47 @@ class CSettingsStoreSP
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSettingsStoreSP::CsettingsStoreSP](#csettingsstoresp)|Bir `CSettingsStoreSP` nesne inşa eder.|
+|[Csettingsstosorum:: Csettingsstosorum](#csettingsstoresp)|Bir `CSettingsStoreSP` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSettingsStoreSP::Oluştur](#create)|Türetilen bir sınıfın örneğini `CSettingsStore`oluşturur.|
-|[CSettingsStoreSP::SetRuntimeClass](#setruntimeclass)|Çalışma zamanı sınıfını ayarlar. Yöntem, `Create` hangi nesne sınıfının oluşturulacak larını belirlemek için çalışma zamanı sınıfını kullanır.|
+|[Csettingsstosorum:: oluştur](#create)|Sınıfından türetilmiş bir sınıf örneği oluşturur `CSettingsStore` .|
+|[Csettingsstosorum:: SetRuntimeClass](#setruntimeclass)|Çalışma zamanı sınıfını ayarlar. `Create`Yöntemi, hangi nesne sınıfının oluşturulacağını belirlemek için çalışma zamanı sınıfını kullanır.|
 
-### <a name="data-members"></a>Veri Üyeleri
+### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`m_dwUserData`|`CSettingsStoreSP` Nesnede depolanan özel kullanıcı verileri. Bu verileri `CSettingsStoreSP` nesnenin oluşturucusunda sağlıyorsunuz.|
-|`m_pRegistry`|Yöntemin `CSettingsStore` `Create` oluşturduğu türetilmiş nesne.|
+|`m_dwUserData`|Nesnede depolanan özel kullanıcı verileri `CSettingsStoreSP` . Bu verileri nesnenin kurucusunda sağlarsınız `CSettingsStoreSP` .|
+|`m_pRegistry`|`CSettingsStore` `Create` Yöntemin oluşturduğu türetilmiş nesne.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, `CSettingsStoreSP` tüm MFC kayıt defteri işlemlerini XML dosyası veya veritabanı gibi diğer konumlara yönlendirmek için kullanabilirsiniz. Bunu yapmak için şu adımları uygulayın:
+`CSettingsStoreSP`Sınıfını, tüm MFC kayıt defteri işlemlerini BIR XML dosyası veya veritabanı gibi diğer konumlara yeniden yönlendirmek için kullanabilirsiniz. Bunu yapmak için şu adımları izleyin:
 
-1. Bir sınıf (gibi) `CMyStore`oluşturun ve `CSettingsStore`türetin.
+1. Bir sınıf (gibi) oluşturun `CMyStore` ve öğesinden türetebilirsiniz `CSettingsStore` .
 
-1. Dinamik oluşturmayı etkinleştirmek için `CSettingsStore` özel sınıfınızla [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate) ve [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate) makroları kullanın.
+1. Dinamik oluşturmayı etkinleştirmek için özel sınıfınıza [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate) ve [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate) makroları kullanın `CSettingsStore` .
 
-1. Sanal işlevleri geçersiz kılın `Read` ve `Write` özel sınıfınızdaki işlevleri uygulayın. İstediğiniz konuma veri okumak ve yazmak için diğer işlevleri uygulayın.
+1. Sanal işlevleri geçersiz kılın ve `Read` `Write` özel sınıfınıza ve işlevlerini uygulayın. İstediğiniz konuma verileri okumak ve yazmak için başka işlevler uygulayın.
 
-1. Uygulamanızda, sınıfınızdan alınan `CSettingsStoreSP::SetRuntimeClass` [CRuntimeClass Yapısı'na](../../mfc/reference/cruntimeclass-structure.md) bir işaretçi çağırın ve geçirin.
+1. Uygulamanızda, `CSettingsStoreSP::SetRuntimeClass` sınıfınızdan elde edilen [CRuntimeClass yapısına](../../mfc/reference/cruntimeclass-structure.md) yönelik bir işaretçi çağırın ve geçirin.
 
-Çerçeve genellikle kayıt defterine erişse, artık özel sınıfınızı dinamik olarak anında hale getirecek ve verileri okumak veya yazmak için kullanır.
+Framework genellikle kayıt defterine her eriştiğinizde, özel sınıfınızı dinamik olarak başlatır ve verileri okumak veya yazmak için kullanın.
 
-`CSettingsStoreSP::SetRuntimeClass`global statik değişken kullanır. Bu nedenle, aynı anda yalnızca bir özel mağaza kullanılabilir.
+`CSettingsStoreSP::SetRuntimeClass` genel bir statik değişken kullanır. Bu nedenle, aynı anda yalnızca bir özel depo kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxsettingsstore.h
+**Üstbilgi:** afxsettingssfer. h
 
-## <a name="csettingsstorespcreate"></a><a name="create"></a>CSettingsStoreSP::Oluştur
+## <a name="csettingsstorespcreate"></a><a name="create"></a> Csettingsstosorum:: oluştur
 
-[CSettingsStore Sınıfından](../../mfc/reference/csettingsstore-class.md)türetilen bir nesnenin yeni bir örneğini oluşturur.
+[Csettingssbir sınıfından](../../mfc/reference/csettingsstore-class.md)türetilmiş nesnenin yeni bir örneğini oluşturur.
 
 ```
 CSettingsStore& CSettingsStoreSP Create(
@@ -83,33 +84,33 @@ CSettingsStore& CSettingsStoreSP Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*bYönetici*<br/>
-[içinde] Bir nesnenin yönetici modunda oluşturulup oluşturulmadığını belirleyen boolean `CSettingsStore` parametresi.
+*bAdmin*<br/>
+'ndaki Bir nesnenin yönetici modunda oluşturulup oluşturulmayacağını belirleyen bir Boolean parametresi `CSettingsStore` .
 
 *bReadOnly*<br/>
-[içinde] Yalnızca okunur erişim için bir `CSettingsStore` nesnenin oluşturulup oluşturulmadığını belirleyen boolean parametresi.
+'ndaki `CSettingsStore` Salt okuma erişimi için bir nesnenin oluşturulup oluşturulmayacağını belirleyen bir Boolean parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan `CSettingsStore` nesneye bir başvuru.
+Yeni oluşturulan nesneye bir başvuru `CSettingsStore` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CSettingsStoreSP::SetRuntimeClass](#setruntimeclass) yöntemini kullanarak ne tür bir `CSettingsStoreSP::Create` nesne oluşturacağını belirleyebilirsiniz. Varsayılan olarak, bu yöntem `CSettingsStore` bir nesne oluşturur.
+Hangi tür nesnenin oluşturulacağını belirlemek için [Csettingsstosorum:: SetRuntimeClass](#setruntimeclass) yöntemini kullanabilirsiniz `CSettingsStoreSP::Create` . Varsayılan olarak, bu yöntem bir `CSettingsStore` nesnesi oluşturur.
 
-Yönetici modunda `CSettingsStore` bir nesne oluşturursanız, tüm kayıt defteri erişimi için varsayılan konum HKEY_LOCAL_MACHINE. Aksi takdirde, tüm kayıt defteri erişimi için varsayılan konum HKEY_CURRENT_USER.
+`CSettingsStore`Yönetici modunda bir nesne oluşturursanız, tüm kayıt defteri erişimi için varsayılan konum HKEY_LOCAL_MACHINE olur. Aksi takdirde, tüm kayıt defteri erişimi için varsayılan konum HKEY_CURRENT_USER.
 
-*bAdmin* DOĞRU ise, uygulama yönetim haklarına sahip olmalıdır. Aksi takdirde, kayıt defterine erişmeye çalıştığında başarısız olur.
+*BADMIN* true ise, uygulamanın yönetim haklarına sahip olması gerekir. Aksi takdirde, kayıt defterine erişmeyi denediğinde başarısız olur.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfın yönteminin `Create` nasıl `CSettingsStoreSP` kullanılacağını göstermektedir.
+Aşağıdaki örnek, sınıfının yönteminin nasıl kullanılacağını gösterir `Create` `CSettingsStoreSP` .
 
 [!code-cpp[NVC_MFC_RibbonApp#33](../../mfc/reference/codesnippet/cpp/csettingsstoresp-class_1.cpp)]
 
-## <a name="csettingsstorespcsettingsstoresp"></a><a name="csettingsstoresp"></a>CSettingsStoreSP::CsettingsStoreSP
+## <a name="csettingsstorespcsettingsstoresp"></a><a name="csettingsstoresp"></a> Csettingsstosorum:: Csettingsstosorum
 
-[CSettingsStoreSP Sınıf](../../mfc/reference/csettingsstoresp-class.md) nesnesi oluşturur.
+[Csettingsstosorumclass](../../mfc/reference/csettingsstoresp-class.md) nesnesi oluşturur.
 
 ```
 CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
@@ -118,15 +119,15 @@ CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
 ### <a name="parameters"></a>Parametreler
 
 *dwUserData*<br/>
-[içinde] Nesnenin `CSettingsStoreSP` depolandığı kullanıcı tanımlı veriler.
+'ndaki Nesnenin depoladığı Kullanıcı tanımlı veriler `CSettingsStoreSP` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne, `CSettingsStoreSP` *dwUserData'daki* verileri korunan üye `m_dwUserData`değişkende depolar.
+`CSettingsStoreSP`Nesne, verileri *dwUserData* 'den korumalı üye değişkeninde depolar `m_dwUserData` .
 
-## <a name="csettingsstorespsetruntimeclass"></a><a name="setruntimeclass"></a>CSettingsStoreSP::SetRuntimeClass
+## <a name="csettingsstorespsetruntimeclass"></a><a name="setruntimeclass"></a> Csettingsstosorum:: SetRuntimeClass
 
-Çalışma zamanı sınıfını ayarlar. [CSettingsStoreSP::Create](#create) yöntemi, ne tür bir nesne oluşturacaklarını belirlemek için çalışma zamanı sınıfını kullanır.
+Çalışma zamanı sınıfını ayarlar. [Csettingsstosorum:: Create](#create) yöntemi, oluşturulacak nesne türünü belirlemek için çalışma zamanı sınıfını kullanır.
 
 ```
 static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
@@ -135,18 +136,18 @@ static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
 ### <a name="parameters"></a>Parametreler
 
 *pRTI*<br/>
-[içinde] [CSettingsStore Sınıfı'ndan](../../mfc/reference/csettingsstore-class.md)türetilen bir sınıfın çalışma zamanı sınıf bilgilerine işaretçi.
+'ndaki [Csettingsstüreme sınıfından](../../mfc/reference/csettingsstore-class.md)türetilmiş bir sınıf için çalışma zamanı sınıf bilgilerine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Doğru eğer başarılı; *pRTI* ile tanımlanan sınıf türetilmiş `CSettingsStore`değilse FALSE.
+Başarılı olursa doğru; *PRTI* tarafından tanımlanan sınıf öğesinden TÜRETILDIYSE false `CSettingsStore` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CSettingsStoreSP Sınıfını](../../mfc/reference/csettingsstoresp-class.md) kullanarak `CSettingsStore`. Türetilen `SetRuntimeClass` özel bir sınıfın nesnelerini oluşturmak istiyorsanız yöntemi kullanın. `CSettingsStore`
+Sınıfları türetmek için [Csettingsstosorumclass](../../mfc/reference/csettingsstoresp-class.md) ' i kullanabilirsiniz `CSettingsStore` . `SetRuntimeClass`Sınıfından türetilmiş özel bir sınıfın nesnelerini oluşturmak istiyorsanız yöntemini kullanın `CSettingsStore` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CSettingsStore Sınıfı](../../mfc/reference/csettingsstore-class.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Csettingssstore sınıfı](../../mfc/reference/csettingsstore-class.md)

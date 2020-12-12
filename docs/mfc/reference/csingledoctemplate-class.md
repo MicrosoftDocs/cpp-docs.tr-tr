@@ -1,5 +1,6 @@
 ---
-title: CSingledocTemplate Sınıfı
+description: 'Daha fazla bilgi edinin: CSingleDocTemplate sınıfı'
+title: CSingleDocTemplate sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSingleDocTemplate
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CSingleDocTemplate [MFC], CSingleDocTemplate
 ms.assetid: 4f3a8212-81ee-48a0-ad22-e0ed7c36a391
-ms.openlocfilehash: 5a014b35a6cd2d12367e190e4d6dd689e28eae66
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 611cada1c90fa776bafb78f0856658cd1bd0a8e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264628"
 ---
-# <a name="csingledoctemplate-class"></a>CSingledocTemplate Sınıfı
+# <a name="csingledoctemplate-class"></a>CSingleDocTemplate sınıfı
 
 Tek belge arabirimini (SDI) uygulayan bir belge şablonu tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CSingleDocTemplate : public CDocTemplate
@@ -29,45 +30,45 @@ class CSingleDocTemplate : public CDocTemplate
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSingledocTemplate::CSingledocTemplate](#csingledoctemplate)|Bir `CSingleDocTemplate` nesne inşa eder.|
+|[CSingleDocTemplate:: CSingleDocTemplate](#csingledoctemplate)|Bir `CSingleDocTemplate` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir SDİ uygulaması, belgeyi görüntülemek için ana çerçeve penceresini kullanır; aynı anda yalnızca bir belge açılabilir.
+Bir SDI uygulaması, bir belgeyi göstermek için ana çerçeve penceresini kullanır; tek seferde yalnızca bir belge açık olabilir.
 
-Belge şablonu üç tür sınıf arasındaki ilişkiyi tanımlar:
+Belge şablonu, üç sınıf türü arasındaki ilişkiyi tanımlar:
 
-- Türetilmiştir `CDocument`bir belge sınıfı,
+- İçinden türettiğiniz bir belge sınıfı `CDocument` .
 
-- Yukarıda listelenen belge sınıfından verileri görüntüleyen bir görünüm sınıfı. Bu `CView`sınıfı , , `CScrollView` `CFormView`, veya `CEditView`. (Ayrıca doğrudan `CEditView` kullanabilirsiniz.)
+- Yukarıda listelenen belge sınıfından verileri görüntüleyen bir görünüm sınıfı. Bu sınıfı,, veya öğesinden türetebilirsiniz `CView` `CScrollView` `CFormView` `CEditView` . (Doğrudan de kullanabilirsiniz `CEditView` .)
 
-- Görünümü içeren bir çerçeve penceresi sınıfı. Bir SDI belge şablonu için, bu `CFrameWnd`sınıfı; ana çerçeve penceresinin davranışını özelleştirmeniz gerekmiyorsa, kendi `CFrameWnd` sınıfınızı türetmeden doğrudan kullanabilirsiniz.
+- Görünümü içeren bir çerçeve pencere sınıfı. Bir SDI belge şablonu için, bu sınıfı öğesinden türetebilirsiniz `CFrameWnd` ; ana çerçeve penceresinin davranışını özelleştirmeniz gerekmiyorsa, `CFrameWnd` kendi sınıfınızı türetmeden doğrudan kullanabilirsiniz.
 
-Bir SDI uygulaması genellikle bir belge türünü destekler, `CSingleDocTemplate` bu nedenle yalnızca bir nesnesi vardır. Aynı anda yalnızca bir belge açılabilir.
+Bir SDI uygulaması genellikle tek bir nesne türünü destekler, bu nedenle yalnızca bir `CSingleDocTemplate` nesnesi vardır. Tek seferde yalnızca bir belge açık olabilir.
 
-Oluşturucu `CSingleDocTemplate` dışında herhangi bir üye işlevleri aramak gerekmez. Çerçeve `CSingleDocTemplate` nesneleri dahili olarak işler.
+Oluşturucu dışında herhangi bir üye işlevini çağırmanız gerekmez `CSingleDocTemplate` . Çerçeve `CSingleDocTemplate` nesneleri dahili olarak işler.
 
-Kullanma `CSingleDocTemplate`hakkında daha fazla bilgi için [Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi'ne](../../mfc/document-templates-and-the-document-view-creation-process.md)bakın.
+Kullanma hakkında daha fazla bilgi için `CSingleDocTemplate` bkz. [Belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cdoctemplate](../../mfc/reference/cdoctemplate-class.md)
+[CDocTemplate](../../mfc/reference/cdoctemplate-class.md)
 
 `CSingleDocTemplate`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="csingledoctemplatecsingledoctemplate"></a><a name="csingledoctemplate"></a>CSingledocTemplate::CSingledocTemplate
+## <a name="csingledoctemplatecsingledoctemplate"></a><a name="csingledoctemplate"></a> CSingleDocTemplate:: CSingleDocTemplate
 
-Bir `CSingleDocTemplate` nesne inşa eder.
+Bir `CSingleDocTemplate` nesnesi oluşturur.
 
 ```
 CSingleDocTemplate(
@@ -79,10 +80,10 @@ CSingleDocTemplate(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDKaynak*<br/>
-Belge türüyle birlikte kullanılan kaynakların kimliğini belirtir. Bu menü, simge, hızlandırıcı tablo ve dize kaynaklarını içerebilir.
+*nIDResource*<br/>
+Belge türüyle kullanılan kaynakların KIMLIĞINI belirtir. Bu, menü, simge, Hızlandırıcı tablosu ve dize kaynakları içerebilir.
 
-Dize kaynağı ,'\n' karakteriyle ayrılmış en fazla yedi alt dizeden oluşur (bir alt dize dahil değilse yer tutucu olarak '\n' karakteri gereklidir; ancak,'\n' karakterleri izleyerek gerekli değildir); bu alt dizeleri belge türünü açıklar. Alt dizeleri hakkında bilgi için [bkz: CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Bu dize kaynağı, uygulamanın kaynak dosyasında bulunur. Örneğin:
+Dize kaynağı, ' \n ' karakteriyle ayrılmış en fazla yedi alt dizeden oluşur (alt dize dahil değilse, "\n" karakteri bir yer tutucu olarak gereklidir; ancak sondaki ' \n ' karakterleri gerekli değildir); Bu alt dizeler belge türünü anlatmaktadır. Alt dizeler hakkında daha fazla bilgi için bkz. [CDocTemplate:: GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Bu dize kaynağı, uygulamanın kaynak dosyasında bulunur. Örneğin:
 
 ```RC
 // MYCALC.RC
@@ -92,22 +93,22 @@ BEGIN
 END
 ```
 
-Bu dizeyi dize düzenleyicisini kullanarak edebilirsiniz; dize tüm dizeleri, yedi ayrı girişleri olarak değil, String Düzenleyicisi tek bir giriş olarak görünür.
+Bu dizeyi dize düzenleyicisini kullanarak düzenleyebilirsiniz; Tüm dize, dize düzenleyicisinde yedi ayrı girdi olarak değil tek bir girdi olarak görünür.
 
-Bu kaynak türleri hakkında daha fazla bilgi için [String Düzenleyicisi'ne](../../windows/string-editor.md)bakın.
+Bu kaynak türleri hakkında daha fazla bilgi için bkz. [dize düzenleyici](../../windows/string-editor.md).
 
 *pDocClass*<br/>
-Belge sınıfının `CRuntimeClass` nesnesine işaret edin. Bu sınıf, `CDocument`belgelerinizi temsil etmek üzere tanımladığınız türetilmiş bir sınıftır.
+`CRuntimeClass`Belge sınıfının nesnesine işaret eder. Bu sınıf, `CDocument` belgelerinizi temsil etmek için tanımladığınız bir türetilmiş sınıftır.
 
 *pFrameClass*<br/>
-Çerçeve penceresi `CRuntimeClass` sınıfının nesnesine işaret ediyor. Bu sınıf türetilmiş bir `CFrameWnd`sınıf olabilir `CFrameWnd` veya ana çerçeve pencereniz için varsayılan davranış istiyorsanız kendisi olabilir.
+`CRuntimeClass`Çerçeve penceresi sınıfının nesnesine işaret eder. Bu sınıf `CFrameWnd` , bir türetilmiş sınıf olabilir veya `CFrameWnd` ana çerçeve pencerenizin varsayılan davranışını istiyorsanız kendisi olabilir.
 
 *pViewClass*<br/>
-Görünüm sınıfının `CRuntimeClass` nesnesine işaret edin. Bu sınıf, `CView`belgelerinizi görüntülemek için tanımladığınız türetilmiş bir sınıftır.
+`CRuntimeClass`Görünüm sınıfının nesnesine işaret eder. Bu sınıf, `CView` belgelerinizi göstermek için tanımladığınız bir türetilmiş sınıftır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CSingleDocTemplate` nesneyi dinamik olarak ayırın `InitInstance` ve uygulama sınıfınızın üye `CWinApp::AddDocTemplate` işlevinden geçirin.
+Bir nesneyi dinamik olarak ayırın `CSingleDocTemplate` ve `CWinApp::AddDocTemplate` `InitInstance` uygulama sınıfınızın üye işlevinden geçirin.
 
 ### <a name="example"></a>Örnek
 
@@ -117,12 +118,12 @@ Bir `CSingleDocTemplate` nesneyi dinamik olarak ayırın `InitInstance` ve uygul
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek DOCKTOOL](../../overview/visual-cpp-samples.md)<br/>
-[CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
-[Kişniş Sınıfı](../../mfc/reference/cdocument-class.md)<br/>
-[CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
-[CMultidocTemplate Sınıfı](../../mfc/reference/cmultidoctemplate-class.md)<br/>
-[CView Sınıfı](../../mfc/reference/cview-class.md)<br/>
-[CWinApp Sınıfı](../../mfc/reference/cwinapp-class.md)
+[MFC örnek DOCKTOOL](../../overview/visual-cpp-samples.md)<br/>
+[CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
+[CDocument sınıfı](../../mfc/reference/cdocument-class.md)<br/>
+[CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)<br/>
+[CMultiDocTemplate sınıfı](../../mfc/reference/cmultidoctemplate-class.md)<br/>
+[CView sınıfı](../../mfc/reference/cview-class.md)<br/>
+[CWinApp sınıfı](../../mfc/reference/cwinapp-class.md)

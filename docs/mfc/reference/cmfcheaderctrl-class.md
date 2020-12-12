@@ -1,5 +1,6 @@
 ---
-title: CMFCHeaderCtrl Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCHeaderCtrl sınıfı'
+title: CMFCHeaderCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCHeaderCtrl
@@ -30,18 +31,18 @@ helpviewer_keywords:
 - CMFCHeaderCtrl [MFC], OnDrawSortArrow
 - CMFCHeaderCtrl [MFC], OnFillBackground
 ms.assetid: 2f5fbf7b-5c75-42db-9216-640b1628f777
-ms.openlocfilehash: 5140d02c5acbbc430c3b4d175da1933c79c702b3
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a6be476e095dc4a013705657e259a90d7cafe0d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752347"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265382"
 ---
-# <a name="cmfcheaderctrl-class"></a>CMFCHeaderCtrl Sınıfı
+# <a name="cmfcheaderctrl-class"></a>CMFCHeaderCtrl sınıfı
 
-Sınıf, `CMFCHeaderCtrl` üstbilgi denetiminde birden çok sütunun sıralatını destekler.
+`CMFCHeaderCtrl`Sınıf, üst bilgi denetiminde birden çok sütunu sıralamayı destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCHeaderCtrl : public CHeaderCtrl
@@ -51,50 +52,50 @@ class CMFCHeaderCtrl : public CHeaderCtrl
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCHeaderCtrl::CMFCHeaderCtrl](#cmfcheaderctrl)|Bir `CMFCHeaderCtrl` nesne inşa eder.|
+|[CMFCHeaderCtrl:: CMFCHeaderCtrl](#cmfcheaderctrl)|Bir `CMFCHeaderCtrl` nesnesi oluşturur.|
 |`CMFCHeaderCtrl::~CMFCHeaderCtrl`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort)|Geçerli üstbilgi denetimi için *birden çok sütun sıralama* modunu etkinleştirer veya devre dışı kılabilir.|
-|[CMFCHeaderCtrl::GetColumnState](#getcolumnstate)|Bir sütunun sıralanıp sıralanmadığını veya artan veya azalan sırada sıralanıp sıralanmadığını gösterir.|
-|[CMFCHeaderCtrl::GetSortSütun](#getsortcolumn)|Üstbilgi denetiminde ilk sıralanmış sütunun sıfır tabanlı dizinini alır.|
-|`CMFCHeaderCtrl::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
-|[CMFCHeaderCtrl::IsAscending](#isascending)|Üstbilgi denetimindeki herhangi bir sütunun artan sırada sıralanıp sıralanmadığını gösterir.|
-|[CMFCHeaderCtrl::IsDialogControl](#isdialogcontrol)|Geçerli üstbilgi denetiminin üstbilgi penceresinin iletişim kutusu olup olmadığını gösterir.|
-|[CMFCHeaderCtrl::IsMultipleSort](#ismultiplesort)|Geçerli üstbilgi denetiminin *birden çok sütun sıralama* modunda olup olmadığını gösterir.|
-|[CMFCHeaderCtrl::RemoveSortColumn](#removesortcolumn)|Belirtilen sütunu sıralama sütunları listesinden kaldırır.|
-|[CMFCHeaderCtrl::SetSortSütun](#setsortcolumn)|Üstbilgi denetiminde belirli bir sütunun sıralama sırasını ayarlar.|
+|[CMFCHeaderCtrl:: EnableMultipleSort](#enablemultiplesort)|Geçerli üst bilgi denetimi için *birden çok sütunlu sıralama* modunu etkin veya devre dışı bırakır.|
+|[CMFCHeaderCtrl:: GetColumnState](#getcolumnstate)|Bir sütunun sıralanıp sıralanmadığını veya artan veya azalan düzende sıralanıp sıralanmadığını gösterir.|
+|[CMFCHeaderCtrl:: GetSortColumn](#getsortcolumn)|Üst bilgi denetimindeki ilk sıralanmış sütunun sıfır tabanlı dizinini alır.|
+|`CMFCHeaderCtrl::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
+|[CMFCHeaderCtrl:: ısyükselen](#isascending)|Üst bilgi denetimindeki herhangi bir sütunun artan düzende sıralanıp sıralanmadığını gösterir.|
+|[CMFCHeaderCtrl:: IsDialogControl](#isdialogcontrol)|Geçerli üst bilgi denetiminin ana penceresinin bir iletişim kutusu olup olmadığını gösterir.|
+|[CMFCHeaderCtrl:: Ismultiplesıralaması](#ismultiplesort)|Geçerli üst bilgi denetiminin *birden çok sütun sıralama* modunda olup olmadığını gösterir.|
+|[CMFCHeaderCtrl:: RemoveSortColumn](#removesortcolumn)|Belirtilen sütunu sıralama sütunları listesinden kaldırır.|
+|[CMFCHeaderCtrl:: SetSortColumn](#setsortcolumn)|Üstbilgi denetimindeki belirtilen sütunun sıralama düzenini ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCHeaderCtrl::OnDrawItem](#ondrawitem)|Üstbilgi denetim sütunu çizmek için çerçeve tarafından çağrılır.|
-|[CMFCHeaderCtrl::OnDrawSortArrow](#ondrawsortarrow)|Sıralama oku çizmek için çerçeve tarafından çağrılır.|
-|[CMFCHeaderCtrl::OnFillBackground](#onfillbackground)|Üstbilgi denetim sütununun arka planını doldurmak için çerçeve tarafından çağrılır.|
+|[CMFCHeaderCtrl:: OnDrawItem](#ondrawitem)|Bir üst bilgi denetim sütunu çizmek için Framework tarafından çağırılır.|
+|[CMFCHeaderCtrl:: OnDrawSortArrow](#ondrawsortarrow)|Sıralama okunu çizmek için Framework tarafından çağırılır.|
+|[CMFCHeaderCtrl:: OnFillBackground](#onfillbackground)|Üst bilgi denetim sütununun arka planını dolduracak şekilde Framework tarafından çağırılır.|
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfın bir nesnesinin `CMFCHeaderCtrl` nasıl oluşturulabildiğini ve geçerli üstbilgi denetimi için birden çok sütun *sıralama* modunun nasıl etkinleştirilen ini gösterir.
+Aşağıdaki örnek, sınıfının bir nesnesinin nasıl oluşturulduğunu `CMFCHeaderCtrl` ve geçerli üst bilgi denetimi için *birden çok sütunlu sıralama* modunun nasıl etkinleştirileceğini gösterir.
 
 [!code-cpp[NVC_MFC_RibbonApp#24](../../mfc/reference/codesnippet/cpp/cmfcheaderctrl-class_1.cpp)]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf, `CMFCHeaderCtrl` sütunun sıralı olduğunu belirtmek için üstbilgi denetim sütununa bir sıralama oku çizer. Üst liste denetiminde [(CMFCListCtrl Sınıfı)](../../mfc/reference/cmfclistctrl-class.md)aynı anda sıralanabilen bir sütun kümesi *varsa, birden çok sütun sıralama* modunu kullanın.
+`CMFCHeaderCtrl`Sınıfı, sütunun sıralanacağını göstermek için üst bilgi denetim sütununa bir sıralama oku çizer. Üst liste denetimindeki bir sütun kümesi ( [CMFCListCtrl sınıfı](../../mfc/reference/cmfclistctrl-class.md)) aynı anda sıralanmışsa, *birden çok sütunlu sıralama* modu kullanın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)
 
@@ -102,11 +103,11 @@ Sınıf, `CMFCHeaderCtrl` sütunun sıralı olduğunu belirtmek için üstbilgi 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxheaderctrl.h
+**Üstbilgi:** afxheaderctrl. h
 
-## <a name="cmfcheaderctrlcmfcheaderctrl"></a><a name="cmfcheaderctrl"></a>CMFCHeaderCtrl::CMFCHeaderCtrl
+## <a name="cmfcheaderctrlcmfcheaderctrl"></a><a name="cmfcheaderctrl"></a> CMFCHeaderCtrl:: CMFCHeaderCtrl
 
-Bir `CMFCHeaderCtrl` nesne inşa eder.
+Bir `CMFCHeaderCtrl` nesnesi oluşturur.
 
 ```
 CMFCHeaderCtrl::CMFCHeaderCtrl()
@@ -114,7 +115,7 @@ CMFCHeaderCtrl::CMFCHeaderCtrl()
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucu, aşağıdaki üye değişkenleri belirtilen değerlere aparat eder:
+Bu Oluşturucu belirtilen değerlere aşağıdaki üye değişkenlerini başlatır:
 
 |Üye değişkeni|Değer|
 |---------------------|-----------|
@@ -126,9 +127,9 @@ Bu oluşturucu, aşağıdaki üye değişkenleri belirtilen değerlere aparat ed
 |`m_bIsDlgControl`|FALSE|
 |`m_hFont`|NULL|
 
-## <a name="cmfcheaderctrlenablemultiplesort"></a><a name="enablemultiplesort"></a>CMFCHeaderCtrl::EnableMultipleSort
+## <a name="cmfcheaderctrlenablemultiplesort"></a><a name="enablemultiplesort"></a> CMFCHeaderCtrl:: EnableMultipleSort
 
-Geçerli üstbilgi denetimi için *birden çok sütun sıralama* modunu etkinleştirer veya devre dışı kılabilir.
+Geçerli üst bilgi denetimi için *birden çok sütunlu sıralama* modunu etkin veya devre dışı bırakır.
 
 ```cpp
 void EnableMultipleSort(BOOL bEnable=TRUE);
@@ -136,16 +137,16 @@ void EnableMultipleSort(BOOL bEnable=TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEtkinleştir*<br/>
-[içinde] Birden çok sütun sıralama modunu etkinleştirmek için TRUE; Birden çok sütun sıralama modunu devre dışı bırakıp sıralanan sütunlar listesinden sütunları kaldırmak için FALSE. Varsayılan değer TRUE'dur.
+*bEnable*<br/>
+'ndaki Birden çok sütunlu sıralama modunu etkinleştirmek için TRUE; Birden çok sütun sıralama modunu devre dışı bırakmak ve sıralanmış sütunlar listesinden sütunları kaldırmak için FALSE. Varsayılan değer TRUE 'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden çok sütun sıralama modunu etkinleştirmek veya devre dışı ksaymak için bu yöntemi kullanın. Üstbilgi denetimi birden çok sütun sıralama modundaysa, iki veya daha fazla sütun bir sıralamaya katılabilir.
+Birden çok sütunlu sıralama modunu etkinleştirmek veya devre dışı bırakmak için bu yöntemi kullanın. Üst bilgi denetimi birden çok sütunlu sıralama modunda ise, iki veya daha fazla sütun bir sıralamaya katılabilir.
 
-## <a name="cmfcheaderctrlgetcolumnstate"></a><a name="getcolumnstate"></a>CMFCHeaderCtrl::GetColumnState
+## <a name="cmfcheaderctrlgetcolumnstate"></a><a name="getcolumnstate"></a> CMFCHeaderCtrl:: GetColumnState
 
-Bir sütunun sıralanmamış olup olmadığını veya artan veya azalan sırada sıralanıp sıralanmadığını gösterir.
+Bir sütunun sıralanmamış olup olmadığını veya artan veya azalan düzende sıralanıp sıralanmadığını gösterir.
 
 ```
 int GetColumnState(int iColumn) const;
@@ -153,24 +154,24 @@ int GetColumnState(int iColumn) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*ıcolumn*<br/>
-[içinde] Bir sütunun sıfır tabanlı dizin.
+*ıolumn*<br/>
+'ndaki Bir sütunun sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen sütunun sıralama durumunu gösteren bir değer. Aşağıdaki tabloda olası değerler listelenebilmektedir:
+Belirtilen sütunun sıralama durumunu belirten bir değer. Aşağıdaki tabloda olası değerler listelenmiştir:
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|-1|Azalan sırada sıralanır.|
-|0|Sıralanmış değil.|
+|-1|Azalan düzende sıralanır.|
+|0|Sıralanmaz.|
 |1|Artan sırada sıralanır.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcheaderctrlgetsortcolumn"></a><a name="getsortcolumn"></a>CMFCHeaderCtrl::GetSortSütun
+## <a name="cmfcheaderctrlgetsortcolumn"></a><a name="getsortcolumn"></a> CMFCHeaderCtrl:: GetSortColumn
 
-Üstbilgi denetiminde ilk sıralanmış sütunun sıfır tabanlı dizinini alır.
+Üst bilgi denetimindeki ilk sıralanmış sütunun sıfır tabanlı dizinini alır.
 
 ```
 int GetSortColumn() const;
@@ -178,15 +179,15 @@ int GetSortColumn() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıralanmış bir sütunun dizini veya sıralanmış sütun bulunamazsa -1.
+Sıralanmış bir sütunun dizini veya sıralanmış bir sütun bulunmazsa-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üstbilgi denetimi birden *çok sütun sıralama* modundaysa ve uygulamayı hata ayıklama modunda derlediyseniz, bu yöntem [cmfcheaderCtrl::GetColumnState](#getcolumnstate) yöntemini kullanmanızı önerir. Üstbilgi denetimi birden çok sütun sıralama modundaysa ve uygulamayı perakende modunda derlediyseniz, bu yöntem -1 döndürür.
+Üst bilgi denetimi *birden çok sütunlu sıralama* modunda ise ve uygulamayı hata ayıklama modunda derlediğiniz zaman, bu yöntem bunun yerine [CMFCHeaderCtrl:: GetColumnState](#getcolumnstate) metodunu kullanmayı onaylar ve size yardımcı olur. Üst bilgi denetimi birden çok sütunlu sıralama modundaysa ve uygulamayı perakende modunda derlediğiniz takdirde, bu yöntem-1 döndürür.
 
-## <a name="cmfcheaderctrlisascending"></a><a name="isascending"></a>CMFCHeaderCtrl::IsAscending
+## <a name="cmfcheaderctrlisascending"></a><a name="isascending"></a> CMFCHeaderCtrl:: ısyükselen
 
-Üstbilgi denetimindeki herhangi bir sütunun artan sırada sıralanıp sıralanmadığını gösterir.
+Üst bilgi denetimindeki herhangi bir sütunun artan düzende sıralanıp sıralanmadığını gösterir.
 
 ```
 BOOL IsAscending() const;
@@ -194,15 +195,15 @@ BOOL IsAscending() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üstbilgi denetimindeki herhangi bir sütun artan sırada sıralanırsa DOĞRU; aksi takdirde, YANLIŞ.
+Üst bilgi denetimindeki herhangi bir sütun artan düzende sıralanmışsa TRUE. Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin döndürdettiği değer, üstbilgi denetim öğesinde uygun sıralama oku görüntülemek için kullanılır. Sıralama sırasını ayarlamak için [CMFCHeaderCtrl::SetSortColumn](#setsortcolumn) yöntemini kullanın.
+Bu yöntemin döndürdüğü değer, üst bilgi denetim öğesinde uygun sıralama okunu göstermek için kullanılır. Sıralama düzenini ayarlamak için [CMFCHeaderCtrl:: SetSortColumn](#setsortcolumn) metodunu kullanın.
 
-## <a name="cmfcheaderctrlisdialogcontrol"></a><a name="isdialogcontrol"></a>CMFCHeaderCtrl::IsDialogControl
+## <a name="cmfcheaderctrlisdialogcontrol"></a><a name="isdialogcontrol"></a> CMFCHeaderCtrl:: IsDialogControl
 
-Geçerli üstbilgi denetiminin üstbilgi penceresinin iletişim kutusu olup olmadığını gösterir.
+Geçerli üst bilgi denetiminin ana penceresinin bir iletişim kutusu olup olmadığını gösterir.
 
 ```
 BOOL IsDialogControl() const;
@@ -210,11 +211,11 @@ BOOL IsDialogControl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli üstbilgi denetiminin üstbilgi denetiminin üst penceresi bir iletişim kutusuysa DOĞRU; aksi takdirde, YANLIŞ.
+Geçerli üst bilgi denetiminin üst penceresi bir iletişim kutusu ise TRUE. Aksi takdirde, FALSE.
 
-## <a name="cmfcheaderctrlismultiplesort"></a><a name="ismultiplesort"></a>CMFCHeaderCtrl::IsMultipleSort
+## <a name="cmfcheaderctrlismultiplesort"></a><a name="ismultiplesort"></a> CMFCHeaderCtrl:: Ismultiplesıralaması
 
-Geçerli üstbilgi denetiminin *birden çok sütun sıralama* modunda olup olmadığını gösterir.
+Geçerli üst bilgi denetiminin *birden çok sütun sıralama* modunda olup olmadığını gösterir.
 
 ```
 BOOL IsMultipleSort() const;
@@ -222,15 +223,15 @@ BOOL IsMultipleSort() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Birden çok sütun sıralama modu etkinse TRUE; aksi takdirde, YANLIŞ.
+Birden çok sütunlu sıralama modu etkinse doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birden çok sütun sıralama modunu etkinleştirmek veya devre dışı kakmak için [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) yöntemini kullanın. Üstbilgi denetimi birden çok sütun sıralama modundaysa, iki veya daha fazla sütun bir sıralamaya katılabilir.
+Birden çok sütunlu sıralama modunu etkinleştirmek veya devre dışı bırakmak için [CMFCHeaderCtrl:: EnableMultipleSort](#enablemultiplesort) metodunu kullanın. Üst bilgi denetimi birden çok sütunlu sıralama modunda ise, iki veya daha fazla sütun bir sıralamaya katılabilir.
 
-## <a name="cmfcheaderctrlondrawitem"></a><a name="ondrawitem"></a>CMFCHeaderCtrl::OnDrawItem
+## <a name="cmfcheaderctrlondrawitem"></a><a name="ondrawitem"></a> CMFCHeaderCtrl:: OnDrawItem
 
-Üstbilgi denetim sütunu çizmek için çerçeve tarafından çağrılır.
+Bir üst bilgi denetim sütunu çizmek için Framework tarafından çağırılır.
 
 ```
 virtual void OnDrawItem(
@@ -243,24 +244,24 @@ virtual void OnDrawItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-[içinde] Aygıt bağlamına işaretçi.
+*Kökündeki*<br/>
+'ndaki Cihaz bağlamına yönelik bir işaretçi.
 
-*iÖğe*<br/>
-[içinde] Çizecek öğenin sıfır tabanlı dizin.
+*IItem*<br/>
+'ndaki Çizilecek öğenin sıfır tabanlı dizini.
 
 *Rect*<br/>
-[içinde] Çizecek öğenin sınırlayıcı dikdörtgeni.
+'ndaki Çizilecek öğenin sınırlayıcı dikdörtgeni.
 
-*bIsPressed*<br/>
-[içinde] Maddeyi basılı durumda çizmek için TRUE; aksi takdirde, YANLIŞ.
+*Bisbasılmış*<br/>
+'ndaki Basılı durumda öğeyi çizmek için TRUE; Aksi takdirde, FALSE.
 
-*bIsVurgulu*<br/>
-[içinde] Maddeyi vurgulanan durumda çizmek için TRUE; aksi takdirde, YANLIŞ.
+*Bisvurgulu*<br/>
+'ndaki Vurgulanan durumda öğeyi çizmek için TRUE; Aksi takdirde, FALSE.
 
-## <a name="cmfcheaderctrlondrawsortarrow"></a><a name="ondrawsortarrow"></a>CMFCHeaderCtrl::OnDrawSortArrow
+## <a name="cmfcheaderctrlondrawsortarrow"></a><a name="ondrawsortarrow"></a> CMFCHeaderCtrl:: OnDrawSortArrow
 
-Sıralama oku çizmek için çerçeve tarafından çağrılır.
+Sıralama okunu çizmek için Framework tarafından çağırılır.
 
 ```
 virtual void OnDrawSortArrow(
@@ -270,15 +271,15 @@ virtual void OnDrawSortArrow(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-[içinde] Aygıt bağlamına işaretçi.
+*Kökündeki*<br/>
+'ndaki Cihaz bağlamına yönelik bir işaretçi.
 
-*rektArrow*<br/>
-[içinde] Sıralama okunun sınırlayıcı dikdörtgeni.
+*rectArrow*<br/>
+'ndaki Sıralama okuna ait sınırlayıcı dikdörtgen.
 
-## <a name="cmfcheaderctrlonfillbackground"></a><a name="onfillbackground"></a>CMFCHeaderCtrl::OnFillBackground
+## <a name="cmfcheaderctrlonfillbackground"></a><a name="onfillbackground"></a> CMFCHeaderCtrl:: OnFillBackground
 
-Üstbilgi denetim sütununun arka planını doldurmak için çerçeve tarafından çağrılır.
+Üst bilgi denetim sütununun arka planını dolduracak şekilde Framework tarafından çağırılır.
 
 ```
 virtual void OnFillBackground(CDC* pDC);
@@ -286,12 +287,12 @@ virtual void OnFillBackground(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-[içinde] Aygıt bağlamına işaretçi.
+*Kökündeki*<br/>
+'ndaki Cihaz bağlamına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcheaderctrlremovesortcolumn"></a><a name="removesortcolumn"></a>CMFCHeaderCtrl::RemoveSortColumn
+## <a name="cmfcheaderctrlremovesortcolumn"></a><a name="removesortcolumn"></a> CMFCHeaderCtrl:: RemoveSortColumn
 
 Belirtilen sütunu sıralama sütunları listesinden kaldırır.
 
@@ -301,12 +302,12 @@ void RemoveSortColumn(int iColumn);
 
 ### <a name="parameters"></a>Parametreler
 
-*ıcolumn*<br/>
-[içinde] Kaldırılacak sütunun sıfır tabanlı dizin.
+*ıolumn*<br/>
+'ndaki Kaldırılacak sütunun sıfır tabanlı dizini.
 
-## <a name="cmfcheaderctrlsetsortcolumn"></a><a name="setsortcolumn"></a>CMFCHeaderCtrl::SetSortSütun
+## <a name="cmfcheaderctrlsetsortcolumn"></a><a name="setsortcolumn"></a> CMFCHeaderCtrl:: SetSortColumn
 
-Üstbilgi denetiminde belirli bir sütunun sıralama sırasını ayarlar.
+Üstbilgi denetimindeki belirtilen sütunun sıralama düzenini ayarlar.
 
 ```cpp
 void SetSortColumn(
@@ -317,27 +318,27 @@ void SetSortColumn(
 
 ### <a name="parameters"></a>Parametreler
 
-*ıcolumn*<br/>
-[içinde] Üstbilgi denetim sütununun sıfır tabanlı dizin. Bu parametre sıfırdan küçükse, bu yöntem tüm sütunları sıralama sütunları listesinden kaldırır.
+*ıolumn*<br/>
+'ndaki Üst bilgi denetim sütununun sıfır tabanlı dizini. Bu parametre sıfırdan küçükse, bu yöntem sıralama sütunları listesinden tüm sütunları kaldırır.
 
-*bArtan*<br/>
-[içinde] *iSütun* parametresinin belirttiği sütunun sıralama sırasını belirtir. Yükselen düzeni ayarlamak için DOĞRU; Azalan sırayı ayarlamak için YANLIŞ. Varsayılan değer TRUE'dur.
+*Bascbitiriliyor*<br/>
+'ndaki *Iolumn* parametresinin belirttiği sütunun sıralama düzenini belirtir. Artan sıralamayı ayarlamak için TRUE; Azalan sıra ayarlamak için FALSE. Varsayılan değer TRUE 'dur.
 
-*Baran*<br/>
-[içinde] *TRUE iSütun* parametre sinin belirttiği sütunun sıralama sırasını ayarlamak için.
+*bAdd*<br/>
+'ndaki *Iolumn* parametresinin belirttiği sütunun sıralama düzenini ayarlamak için true.
 
-Geçerli üstbilgi denetimi *birden çok sütun sıralama* modundaysa, bu yöntem belirtilen sütunu sıralama sütunları listesine ekler. Birden çok sütun sıralama modunu ayarlamak için [CMFCHeaderCtrl::EnableMultipleSort'ı](#enablemultiplesort) kullanın.
+Geçerli üst bilgi denetimi *birden çok sütunlu sıralama* modundaysa, bu yöntem sıralama sütunları listesine belirtilen sütunu ekler. Birden çok sütunlu sıralama modunu ayarlamak için [CMFCHeaderCtrl:: EnableMultipleSort](#enablemultiplesort) komutunu kullanın.
 
-Birden çok sütun sıralama modu ayarlanmaz ve bu yöntem hata ayıklama modunda derlenirse, bu yöntem ileri sayılsın. Birden çok sütun sıralama modu ayarlanmamışsa ve bu yöntem perakende modunda derlenmişse, bu yöntem önce sıra sütunları listesinden tüm sütunları kaldırır ve ardından belirtilen sütunu listeye ekler.
+Birden çok sütunlu sıralama modu ayarlanmamışsa ve bu yöntem hata ayıklama modunda derlenirse, bu yöntem onaylar. Birden çok sütunlu sıralama modu ayarlanmamışsa ve bu yöntem perakende modunda derlenirse, bu yöntem öncelikle sıralama sütunları listesinden tüm sütunları kaldırır ve ardından belirtilen sütunu listeye ekler.
 
-ÖNCE sıralama sütunları listesinden tüm sütunları kaldırmak ve ardından belirtilen sütunu listeye eklemek için FALSE. Varsayılan değer FALSE'dur.
+Önce sıralama sütunları listesinden tüm sütunları kaldırmak için FALSE, ardından belirtilen sütunu listeye ekleyin. Varsayılan değer FALSE 'dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sütunun sıralama sırasını ayarlamak için bu yöntemi kullanın. Gerekirse, bu yöntem sütunu sıralama sütunları listesine ekler. Üstbilgi denetimi yukarı veya aşağı işaret eden bir sıralama oku çizmek için sıralama sırasını kullanır.
+Bir sütunun sıralama düzenini ayarlamak için bu yöntemi kullanın. Gerekirse, bu yöntem sütunu sıralama sütunları listesine ekler. Üstbilgi denetimi, yukarı veya aşağı işaret eden bir sıralama oku çizmek için sıralama düzenini kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCListCtrl Sınıfı](../../mfc/reference/cmfclistctrl-class.md)
+[CMFCListCtrl sınıfı](../../mfc/reference/cmfclistctrl-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ortak bir denetimi alt pencere olarak kullanma'
 title: Bir Ortak Denetimi Alt Pencere Olarak Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,28 +9,28 @@ helpviewer_keywords:
 - common controls [MFC], child windows
 - Windows common controls [MFC], child windows
 ms.assetid: 608f7d47-7854-4fce-bde9-856c51e76753
-ms.openlocfilehash: 827690f273852dee8f9461aa9af51f1cf7f4ce6e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a5fda2cbf8d0bf16ccb17f2766b31d24e5c0c67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180576"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263562"
 ---
 # <a name="using-a-common-control-as-a-child-window"></a>Bir Ortak Denetimi Alt Pencere Olarak Kullanma
 
-Windows ortak denetimleri başka bir pencere bir alt pencere olarak kullanılabilir. Aşağıdaki yordam, ortak bir denetimi dinamik olarak oluşturmak ve onunla çalışan açıklar.
+Herhangi bir Windows ortak denetimi başka bir pencerenin alt penceresi olarak kullanılabilir. Aşağıdaki yordam, ortak bir denetimin dinamik olarak nasıl oluşturulduğunu ve ardından onunla nasıl çalışabileceğinizi açıklamaktadır.
 
-### <a name="to-use-a-common-control-as-a-child-window"></a>Bir ortak denetimi alt pencere olarak kullanmak için
+### <a name="to-use-a-common-control-as-a-child-window"></a>Ortak bir denetimi alt pencere olarak kullanmak için
 
-1. Denetim, ilgili sınıf veya işleyici tanımlayın.
+1. İlgili sınıf veya işleyicide denetimi tanımlayın.
 
-1. Denetimin geçersiz kılmasını kullanın [CWnd::Create](../mfc/reference/cwnd-class.md#create) Windows denetimi oluşturmak için yöntemi.
+1. Windows denetimini oluşturmak için [CWnd:: Create](../mfc/reference/cwnd-class.md#create) metodunu denetimin geçersiz kılmasını kullanın.
 
-1. Denetim oluşturulduktan sonra (olarak erken `OnCreate` işleyicisi, denetimin alt), üye işlevleri kullanarak denetimi işleyebilirsiniz. Tek denetimleri açıklamaları görmek [denetimleri](../mfc/controls-mfc.md) yöntemleri hakkında ayrıntılı bilgi için.
+1. Denetim oluşturulduktan sonra ( `OnCreate` denetimi alt sınıfı yaparsanız işleyici kadar erken), denetimi üye işlevlerini kullanarak değiştirebilirsiniz. Yöntemler hakkındaki ayrıntılar için [denetimlerde](../mfc/controls-mfc.md) ayrı denetimlerin açıklamalarını inceleyin.
 
-1. Denetim ile işiniz bittiğinde, kullanın [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) kontrol edilecek.
+1. Denetim ile işiniz bittiğinde, denetimi yok etmek için [CWnd::D estroyWindow](../mfc/reference/cwnd-class.md#destroywindow) kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
+[Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)

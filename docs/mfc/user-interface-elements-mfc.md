@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Kullanıcı arabirimi öğeleri (MFC)'
 title: Kullanıcı Arabirim Öğeleri (MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,80 +7,80 @@ helpviewer_keywords:
 - user interfaces, creating
 - user interfaces
 ms.assetid: f5daf2c1-bc08-4b71-9b03-da2c0aab5764
-ms.openlocfilehash: bf1c3f677ac8cd2e3ad91ef694f0637af8a6f578
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd3cebc94213da3f951745ead9de1200eb582b9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62180778"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263601"
 ---
 # <a name="user-interface-elements-mfc"></a>Kullanıcı Arabirim Öğeleri (MFC)
 
-Microsoft Foundation Class (MFC) kitaplığı kullanarak uygulamanız için kullanıcı arabirimi oluşturma hakkında daha fazla bilgi için aşağıdaki konulara bakın.
+Microsoft Foundation Class (MFC) kitaplığı 'nı kullanarak uygulamanız için Kullanıcı arabirimi oluşturma hakkında daha fazla bilgi için aşağıdaki konulara bakın.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[ActiveX Denetimleri](../mfc/activex-controls.md)<br/>
-Yeniden kullanılabilir yazılım bileşeni Bileşen Nesne Modeli (geniş bir OLE işlevselliği destekleyen ve çok sayıda yazılım gereksinimlerini karşılayacak şekilde özelleştirilebilir COM), temel kullanmayı açıklar
+[ActiveX denetimleri](../mfc/activex-controls.md)<br/>
+Çok çeşitli OLE işlevlerini destekleyen ve birçok yazılım ihtiyaçlarına uyacak şekilde özelleştirilebilen bileşen nesne modeli (COM) temelinde yeniden kullanılabilir yazılım bileşeninin nasıl kullanılacağını açıklar.
 
 [Pano](../mfc/clipboard.md)<br/>
-MFC uygulamaları desteği Windows Pano uygulamak açıklar.
+MFC uygulamalarında Windows panosuna yönelik desteğin nasıl uygulanacağını açıklar.
 
 [Denetimler](../mfc/controls-mfc.md)<br/>
-Kullanıcı çizimli denetimler, ActiveX denetimleri ve MFC Kitaplığı tarafından sağlanan diğer denetim sınıfları da dahil olmak üzere Windows ortak denetimleri açıklar.
+Sahip tarafından çizilmiş denetimler, ActiveX denetimleri ve MFC kitaplığı tarafından sağlanan diğer denetim sınıfları dahil olmak üzere Windows ortak denetimlerini açıklar.
 
-[Denetim Çubukları](../mfc/control-bars.md)<br/>
-Araç çubuklarını ve durum çubukları iletişim kutusu çubukları işlevleri açıklanmaktadır.
+[Denetim çubukları](../mfc/control-bars.md)<br/>
+Araç çubuklarının, durum çubuklarının ve iletişim çubuklarının işlevlerini açıklar.
 
-[İletişim Kutusu Çubukları](../mfc/dialog-bars.md)<br/>
-Herhangi bir denetim türü içerebilir denetim çubuğu türü açıklar.
+[İletişim çubukları](../mfc/dialog-bars.md)<br/>
+Herhangi bir türde denetim içerebilen bir denetim çubuğu türü tanımlar.
 
-[İletişim Kutuları](../mfc/dialog-boxes.md)<br/>
-Düzenleyiciler ve kod sihirbazları kullanarak iletişim kutuları oluşturma işlemini açıklar.
+[İletişim kutuları](../mfc/dialog-boxes.md)<br/>
+Düzenleyiciler ve kod sihirbazları kullanılarak iletişim kutularının nasıl oluşturulacağını açıklar.
 
 [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)<br/>
-MFC içinde veri yönetimi açıklanmaktadır.
+MFC 'de veri yönetimini açıklar.
 
 [Form görünümleri](../mfc/form-views-mfc.md)<br/>
-Forms desteğini uygulamanıza nasıl ekleyeceğinizi açıklar.
+Uygulamanıza form desteğinin nasıl ekleneceğini açıklar.
 
-[HTML Yardımı: Programlarınız için bağlama duyarlı Yardım](../mfc/html-help-context-sensitive-help-for-your-programs.md)<br/>
-HTML Yardımı kullanarak uygulamalarınızı bağlama duyarlı Yardım ekleme işlemi açıklanmaktadır.
+[HTML Yardımı: programlarınız için Context-Sensitive yardım](../mfc/html-help-context-sensitive-help-for-your-programs.md)<br/>
+HTML Yardımı kullanarak uygulamalarınıza bağlama duyarlı yardımın nasıl ekleneceğini açıklar.
 
-[MDI Sekmeli Grupları](../mfc/mdi-tabbed-groups.md)<br/>
-Bir veya daha fazla sekmeli pencerelerin görüntülemek birden çok belge arabirimi (MDI) uygulamaları etkinleştirir (ya da grupları olarak bilinen sekmeli pencerelerin *sekmeli grupları*) MDI istemci alanında.
+[MDI sekmeli grupları](../mfc/mdi-tabbed-groups.md)<br/>
+Birden çok belge arabirimi (MDI) uygulamalarının MDI istemci alanında bir veya daha fazla sekmeli pencere (ya da *sekmeli grup* olarak bilinen sekmeli pencere gruplarını) görüntülemesini sağlar.
 
 [Menüler](../mfc/menus-mfc.md)<br/>
-Menüleri, kullanıcı arabirimine eklemeyi açıklar.
+Kullanıcı arayüzüne menülerin nasıl ekleneceğini açıklar.
 
 [OLE](../mfc/ole-mfc.md)<br/>
-Nesne Bağlama ve katıştırma açıklayan konulara bağlantılar sağlar.
+Nesne bağlamayı ve katıştırmayı tartışan konuların bağlantılarını sağlar.
 
-[{1&gt;Yazdırma ve yazdırma önizleme&lt;1}](../mfc/printing-and-print-preview.md)<br/>
-Yazdırmayı ve baskı önizlemeyi uygulamalarınızdan için MFC desteğini açıklar.
+[Yazdırma ve baskı önizleme](../mfc/printing-and-print-preview.md)<br/>
+Uygulamalarınızdan yazdırma ve baskı önizleme için MFC desteğini açıklar.
 
 [Özellik sayfaları](../mfc/property-sheets-mfc.md)<br/>
-Özellik sayfaları iletişim kutusu denetimi çok sayıda yönetmek için nasıl kullanılacağını açıklar.
+Bir iletişim kutusunda çok sayıda denetimi yönetmek için özellik sayfalarının nasıl kullanılacağını açıklar.
 
 [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md)<br/>
-Şerit kullanıcı Arabirimi kaynaklarını oluşturma ve değiştirme için MFC desteğini açıklar.
+Şerit UI kaynakları oluşturma ve değiştirme için MFC desteğini açıklar.
 
-[Durum Çubukları](../mfc/status-bars.md)<br/>
-Durum çubukları uygulamalarınızda kullanmayı açıklar.
+[Durum çubukları](../mfc/status-bars.md)<br/>
+Uygulamalarınızda durum çubuklarının nasıl kullanılacağını açıklar.
 
-[Araç İpuçları](../mfc/tool-tips.md)<br/>
-Araç ipuçlarını kullanarak uygulamalarınızı kullanıcılara yardımcı olmak için uygulamayı açıklar.
+[Araç Ipuçları](../mfc/tool-tips.md)<br/>
+Uygulamalarınızı kullanarak kullanıcılara yardımcı olmak için araç ipuçlarının nasıl uygulanacağını açıklar.
 
 [Araç Çubukları](../mfc/toolbars.md)<br/>
-MFC'de araç çubukları kullanma hakkında temel bilgileri açıklar.
+MFC 'de araç çubuklarının nasıl kullanılacağına ilişkin temel bilgileri açıklar.
 
-[Seri Hale Getirme Yöneticisi](../mfc/visualization-manager.md)<br/>
-Burada, uygulamanız için tüm çizim kodu koyabilirsiniz bir sınıf olarak davranır.
+[Görselleştirme Yöneticisi](../mfc/visualization-manager.md)<br/>
+Uygulamanıza yönelik tüm çizim kodunu koyabileceğiniz tek bir sınıf gibi davranır.
 
 [Windows](../mfc/windows.md)<br/>
-MFC içinde windows kullanma hakkında temel bilgileri açıklar.
+MFC 'de Windows kullanımı hakkında temel bilgileri açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)<br/>
-MFC Kitaplığı için başvuru materyalleri sağlar. MFC, Windows API için yazılan uygulamanın çerçevesi bir uygulama çerçevesi oluşturan sınıflar kümesidir.
+[MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md)<br/>
+MFC kitaplığı için başvuru malzemesi sağlar. MFC, Windows API 'si için yazılmış bir uygulamanın çerçevesi olan bir uygulama çerçevesini oluşturan sınıfların bir kümesidir.
