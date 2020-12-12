@@ -1,16 +1,17 @@
 ---
+description: "Daha fazla bilgi edinin: MFC dışı DLL 'Ler: genel bakış"
 title: "MFC Dışı DLL'ler: Genel Bakış"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - non-MFC DLLs [C++]
 - DLLs [C++], non-MFC
 ms.assetid: 1ed5d1ee-e20c-47d7-801d-87ea26a73842
-ms.openlocfilehash: 88afb41205e63a837d7bc134133c3c36eccf5dc1
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 2b71653be8a665684b7e79dcb48ac54d86834be0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493171"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179843"
 ---
 # <a name="non-mfc-dlls-overview"></a>MFC Dışı DLL'ler: Genel Bakış
 
@@ -34,7 +35,7 @@ MFC olmayan dll 'Ler hakkında daha fazla bilgi için Windows SDK [dinamik bağl
 
 - [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](regular-dlls-dynamically-linked-to-mfc.md)
 
-- [MFC uzantı DLL'leri: Genel Bakış](extension-dlls-overview.md)
+- [MFC uzantısı DLL’leri: Genel Bakış](extension-dlls-overview.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: x64 giriş ve bitiş'
 title: x64 giriş ve bitiş bölümü
 ms.date: 12/17/2018
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
-ms.openlocfilehash: d0b7444af6e434a09f6af5f5b1c144b46c79ad56
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3bd4e2350a678e16a1c506ec8cd16497f78b7ec9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179778"
 ---
 # <a name="x64-prolog-and-epilog"></a>x64 giriş ve bitiş bölümü
 
@@ -33,7 +34,7 @@ Tipik bir giriş için kod şu olabilir:
 
 Bu giriş, RCX bağımsız değişkenini kendi giriş konumunda depolar, kalıcı yazmaçları kaydeder R13-R15, yığın çerçevesinin sabit bölümünü ayırır ve sabit ayırma alanına 128 bayt işaret eden bir çerçeve işaretçisi oluşturur. Bir uzaklık kullanılması, sabit ayırma alanının daha fazlasına tek baytlık uzaklıklarla değinilmesine olanak tanır.
 
-Sabit ayırma boyutu bir bellek sayfasından büyükse veya buna eşitse, RSP değiştirilmeden önce bir yardımcı işlev çağrılmalıdır. Bu yardımcı, `__chkstk`yığının düzgün şekilde genişletildiğinden emin olmak için, ayrılan yığın aralığını yoklamıştır. Bu durumda, önceki giriş örneği şöyle olacaktır:
+Sabit ayırma boyutu bir bellek sayfasından büyükse veya buna eşitse, RSP değiştirilmeden önce bir yardımcı işlev çağrılmalıdır. Bu yardımcı, `__chkstk` yığının düzgün şekilde genişletildiğinden emin olmak için, ayrılan yığın aralığını yoklamıştır. Bu durumda, önceki giriş örneği şöyle olacaktır:
 
 ```MASM
     mov    [RSP + 8], RCX
@@ -47,7 +48,7 @@ Sabit ayırma boyutu bir bellek sayfasından büyükse veya buna eşitse, RSP de
     ...
 ```
 
-`__chkstk` Yardımcı, R10, R11 ve koşul kodları dışındaki herhangi bir kaydı değiştirmeyecektir. Özellikle, KORX 'i değiştirmez ve tüm kalıcı yazmaçları ve bağımsız değişken geçirme kayıtlarını değiştirilmemiş olarak bırakır.
+`__chkstk`Yardımcı, R10, R11 ve koşul kodları dışındaki herhangi bir kaydı değiştirmeyecektir. Özellikle, KORX 'i değiştirmez ve tüm kalıcı yazmaçları ve bağımsız değişken geçirme kayıtlarını değiştirilmemiş olarak bırakır.
 
 ## <a name="epilog-code"></a>Bitiş kodu
 
@@ -87,9 +88,9 @@ Uygulamada, bir çerçeve işaretçisi kullanıldığında RSP 'yi iki adımda a
     ret
 ```
 
-Bu formlar, bir bitiş için tek yasal olanlardır. Bir `add RSP,constant` veya `lea RSP,constant[FPReg]`' den, ardından sıfır veya daha fazla 8 baytlık yazmaç pop ve a `return` ya da bir `jmp`serisini içermelidir. (Yalnızca bir `jmp` deyim alt kümesi bitiş içinde izin verilebilir. Alt küme, ModRM mod alan `jmp` değerinin 00 olduğu ModRM bellek başvuruları olan deyimler sınıfına özel olarak eklenir. ModRM mod `jmp` alan değeri 01 veya 10 olan bitiş içindeki deyimlerin kullanımı yasaktır. İzin verilen ModRM başvuruları hakkında daha fazla bilgi için, bkz. AMD x86-64 mimari programcı 'nin El Ile birim 3: Genel Amaçlı ve sistem yönergeleri.) Başka kod görüntülenemez. Özellikle, bir dönüş değeri yüklemesi dahil olmak üzere bir bitiş içinde hiçbir şey zamanlanamaz.
+Bu formlar, bir bitiş için tek yasal olanlardır. Bir `add RSP,constant` veya `lea RSP,constant[FPReg]` ' den, ardından sıfır veya daha fazla 8 baytlık yazmaç pop ve a ya da bir serisini içermelidir `return` `jmp` . (Yalnızca bir deyim alt kümesi `jmp` bitiş içinde izin verilebilir. Alt küme, ModRM `jmp` mod alan değerinin 00 olduğu ModRM bellek başvuruları olan deyimler sınıfına özel olarak eklenir. `jmp`ModRM mod alan değeri 01 veya 10 olan bitiş içindeki deyimlerin kullanımı yasaktır. İzin verilen ModRM başvuruları hakkında daha fazla bilgi için, bkz. AMD x86-64 mimari programcı 'nin El Ile birim 3: Genel Amaçlı ve sistem yönergeleri.) Başka kod görüntülenemez. Özellikle, bir dönüş değeri yüklemesi dahil olmak üzere bir bitiş içinde hiçbir şey zamanlanamaz.
 
-Bir çerçeve işaretçisi kullanılmazsa, yığının sabit kısmını serbest bırakmak için bitiş `add RSP,constant` öğesini kullanmalıdır. `lea RSP,constant[RSP]` Bunun yerine kullanılamıyor olabilir. Bu kısıtlama, geri bırakma kodunun epılar aranırken daha az desen tanıması için vardır.
+Bir çerçeve işaretçisi kullanılmazsa, `add RSP,constant` yığının sabit kısmını serbest bırakmak için bitiş öğesini kullanmalıdır. Bunun yerine kullanılamıyor olabilir `lea RSP,constant[RSP]` . Bu kısıtlama, geri bırakma kodunun epılar aranırken daha az desen tanıması için vardır.
 
 Bu kuralların ardından, geriye doğru yürütüldüğünü ve çağıran işlevin bağlamını yeniden oluşturmak için geri kalanı yürütmeye olanak tanımak üzere açılım kodunun Şu anda yürütülmekte olduğunu belirlemesini sağlar.
 

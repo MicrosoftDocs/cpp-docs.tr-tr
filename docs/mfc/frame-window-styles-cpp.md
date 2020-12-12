@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Frame-Window stilleri (C++)'
 title: Çerçeve Pencere Stilleri (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - MFC, frame windows
 - styles [MFC], windows
 ms.assetid: fc5058c1-eec8-48d8-9f76-3fc01cfa53f7
-ms.openlocfilehash: 3c22944537370a44aee1af1cf71281264ed4969b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5d7b0effe4b7cea17eb0b5bd8208563ba552ba99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626450"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180350"
 ---
 # <a name="frame-window-styles-c"></a>Çerçeve Pencere Stilleri (C++)
 
-Framework ile aldığınız çerçeve pencereleri çoğu program için uygundur, ancak gelişmiş işlevler [ön penceresi](reference/cwnd-class.md#precreatewindow) ve MFC genel Işlevi [AfxRegisterWndClass](reference/application-information-and-management.md#afxregisterwndclass)kullanarak ek esneklik elde edebilirsiniz. `PreCreateWindow`, öğesinin bir üye işlevidir `CWnd` .
+Framework ile aldığınız çerçeve pencereleri çoğu program için uygundur, ancak gelişmiş işlevler [ön penceresi](reference/cwnd-class.md#precreatewindow) ve MFC genel Işlevi [AfxRegisterWndClass](reference/application-information-and-management.md#afxregisterwndclass)kullanarak ek esneklik elde edebilirsiniz. `PreCreateWindow` , öğesinin bir üye işlevidir `CWnd` .
 
 Ana çerçeve penceresine **ws_hscroll** ve **ws_vscroll** stilleri uygularsanız, kullanıcıların **MDICLIENT** alanını kaydırabilmesi için bunların **MDICLIENT** penceresine uygulanması gerekir.
 

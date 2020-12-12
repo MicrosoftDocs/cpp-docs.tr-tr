@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __outdwordstring'
 title: __outdwordstring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __outdwordstring intrinsic
 - rep outsd instruction
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
-ms.openlocfilehash: 50908a65795af617f18a497c073cfefe009dfd80
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 3fbba7dd128666b591305326695e656befd9cada
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180402"
 ---
 # <a name="__outdwordstring"></a>__outdwordstring
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`Count` `Buffer` `rep outsd` Tarafından belirtileng/çbağlantınoktasındanbaşlayarakdoublewordsgönderenyönergeyiüretir.`Port`
+`rep outsd` `Count` `Buffer` Tarafından belirtilen g/ç bağlantı noktasından başlayarak doublewords gönderen yönergeyi üretir `Port` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,7 +49,7 @@ void __outdwordstring(
 |---------------|------------------|
 |`__outdwordstring`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

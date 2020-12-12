@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC önceden tanımlanmış semboller'
 title: MFC Önceden Tanımlanmış Semboller
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: 376b25b457ae0bb9ebc473d997b91c7acfd7316e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a55cc0d3e572da7321d992715257e444bbe1d261
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846309"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180090"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
 
@@ -439,7 +440,7 @@ Bu tablodaki semboller, veritabanı desteği eklendiğinde yalnızca bir MFC pro
 
 Bu semboller Ayrıca MFC destek dosyalarının bir parçasıdır, ancak standart Windows uygulama işlevlerini ve eylemlerini destekler. Bu semboller menülerde kullanılır.
 
-**Menü düzenleyicisinde**menülerle çalışırken, bu semboller ortak menü komutlarıyla ilişkili **özellik** penceresinde görünür. Örneğin, uygulamanızın **Çıkış** komutuyla bir **Dosya** menüsü varsa, bu komut `ID_APP_EXIT` [Özellikler penceresi](/visualstudio/ide/reference/properties-window)simgesiyle ilişkilendirilir.
+**Menü düzenleyicisinde** menülerle çalışırken, bu semboller ortak menü komutlarıyla ilişkili **özellik** penceresinde görünür. Örneğin, uygulamanızın **Çıkış** komutuyla bir **Dosya** menüsü varsa, bu komut `ID_APP_EXIT` [Özellikler penceresi](/visualstudio/ide/reference/properties-window)simgesiyle ilişkilendirilir.
 
 :::row:::
    :::column span="":::

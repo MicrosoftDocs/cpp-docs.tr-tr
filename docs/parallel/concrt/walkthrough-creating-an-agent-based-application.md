@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: Agent-Based uygulama oluşturma'
 title: 'İzlenecek Yol: Aracı Temelli Uygulama Oluşturma'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 9d9fdd3ddface01f84f6426dd334600cf88b84e7
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: cca3fc5e8467b7eb5699e4e9f513e35d5b97da93
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924826"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180400"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 
@@ -46,15 +47,15 @@ Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvuran bir C++ 
 
 ### <a name="to-create-a-c-console-application-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir C++ konsol uygulaması oluşturmak için
 
-1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
+1.  >  > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows** 'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
+1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri** ' yi seçin. Sonraki sayfada, `BasicAgent` projenin adı olarak girin ve isterseniz proje konumunu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, `BasicAgent` projenin adı olarak girin ve isterseniz proje konumunu belirtin.
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
-1. **Çözüm Gezgini** ' de proje düğümüne sağ tıklayın ve **Özellikler** ' i seçin. **Yapılandırma özellikleri**  >  **C/C++**  >  **önceden derlenmiş üst**  >  **bilgi üst bilgisi ön** **Create**
+1. **Çözüm Gezgini**' de proje düğümüne sağ tıklayın ve **Özellikler**' i seçin. **Yapılandırma özellikleri**  >  **C/C++**  >  **önceden derlenmiş üst**  >  **bilgi üst bilgisi ön** 
 
 ::: moniker-end
 
@@ -62,11 +63,11 @@ Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvuran bir C++ 
 
 ### <a name="to-create-a-c-console-application-in-visual-studio-2017-and-earlier"></a>Visual Studio 2017 ve önceki sürümlerde bir C++ konsol uygulaması oluşturmak için
 
-1. **Dosya** menüsünde **Yeni** ' ye ve ardından **Proje** ' ye tıklayarak **Yeni proje** iletişim kutusunu görüntüleyin.
+1. **Dosya** menüsünde **Yeni**' ye ve ardından **Proje** ' ye tıklayarak **Yeni proje** iletişim kutusunu görüntüleyin.
 
 1. **Yeni proje** iletişim kutusunda, **proje türleri** bölmesinde **Visual C++** düğümünü seçin ve ardından **Şablonlar** bölmesinde **Win32 konsol uygulaması** ' nı seçin. Proje için bir ad yazın, örneğin, `BasicAgent` ve ardından **Win32 konsol uygulaması sihirbazını** göstermek için **Tamam** ' a tıklayın.
 
-1. **Win32 konsol uygulaması Sihirbazı** Iletişim kutusunda **son** ' a tıklayın.
+1. **Win32 konsol uygulaması Sihirbazı** Iletişim kutusunda **son**' a tıklayın.
 
 ::: moniker-end
 
@@ -76,7 +77,7 @@ Bu bölümde, programın kullanacağı üstbilgi dosyalarına başvuran bir C++ 
 
    Agents. h üstbilgi dosyası, [concurrency:: Agent](../../parallel/concrt/reference/agent-class.md) sınıfının işlevlerini içerir.
 
-1. Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için, **Yapı** menüsünde **çözüm oluştur** ' a tıklayın. Uygulama başarıyla yapılandığında **hata ayıklama** menüsünde **hata ayıklamayı Başlat** ' a tıklayarak uygulamayı çalıştırın.
+1. Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için, **Yapı** menüsünde **çözüm oluştur**' a tıklayın. Uygulama başarıyla yapılandığında **hata ayıklama** menüsünde **hata ayıklamayı Başlat** ' a tıklayarak uygulamayı çalıştırın.
 
 [[Üst](#top)]
 
@@ -86,7 +87,7 @@ Bu bölümde sınıfının nasıl oluşturulacağı gösterilmektedir `file_read
 
 #### <a name="to-create-the-file_reader-class"></a>File_reader sınıfını oluşturmak için
 
-1. Projenize yeni bir C++ üst bilgi dosyası ekleyin. Bunu yapmak için **Çözüm Gezgini** ' deki **üstbilgi dosyaları** düğümüne sağ tıklayın, **Ekle** ' ye ve ardından **Yeni öğe** ' ye tıklayın. **Şablonlar** bölmesinde **üst bilgi dosyası (. h)** öğesini seçin. **Yeni öğe Ekle** iletişim kutusunda, `file_reader.h` **ad** kutusuna yazın ve ardından **Ekle** ' ye tıklayın.
+1. Projenize yeni bir C++ üst bilgi dosyası ekleyin. Bunu yapmak için **Çözüm Gezgini**' deki **üstbilgi dosyaları** düğümüne sağ tıklayın, **Ekle**' ye ve ardından **Yeni öğe**' ye tıklayın. **Şablonlar** bölmesinde **üst bilgi dosyası (. h)** öğesini seçin. **Yeni öğe Ekle** iletişim kutusunda, `file_reader.h` **ad** kutusuna yazın ve ardından **Ekle**' ye tıklayın.
 
 1. File_reader. h 'de aşağıdaki kodu ekleyin.
 

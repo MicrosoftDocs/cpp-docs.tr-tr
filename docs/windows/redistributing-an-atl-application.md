@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL uygulamasını yeniden dağıtma'
 title: ATL uygulamasını yeniden dağıtma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,40 +8,40 @@ helpviewer_keywords:
 - redistributing OLE DB templates
 - OLE DB templates, redistributing
 ms.assetid: 9a696b22-2345-43ec-826b-be7cb8cfd676
-ms.openlocfilehash: a1da92a00d6bf88f41801f8eb99433d0c64812b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58021416eb7f258e1d436ff099ebf9c647dfc0bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179960"
 ---
 # <a name="redistributing-an-atl-application"></a>ATL uygulamasını yeniden dağıtma
 
-Etkin Şablon kitaplığı (ATL) Visual Studio 2012'den itibaren bir yalnızca üstbilgi Kitaplığı'dır. ATL projeleri ATL seçeneği dinamik bir bağlantı yoktur. Yeniden dağıtılabilir hiçbir ATL kitaplığı gerekiyor.
+Visual Studio 2012 ' den başlayarak, etkin şablon kitaplığı (ATL) yalnızca üst bilgi kitaplığı olur. ATL projelerinin ATL seçeneğine dinamik bağlantısı yoktur. Yeniden dağıtılabilir ATL Kitaplığı gerekli değildir.
 
-ATL yürütülebilir bir uygulama dağıtırsanız, aşağıdaki komutu gönderdikten tarafından .exe dosyasını (ve içindeki tüm denetimleri) kaydetmeniz gerekir:
-
-```
-filename /regserver
-```
-
-Burada `filename` yürütülebilir dosya adıdır.
-
-Visual Studio 2010'da bir ATL projesi MinDependency veya MinSize yapılandırması için oluşturulabilir. MinDependency yapılandırması ayarladığınızda aldığınızdır **kullanın, ATL** özelliğini **ATL'e Statik Bağlantı** üzerinde **genel** özellik sayfası ve kümesi  **Çalışma Zamanı Kitaplığı** özelliğini **çok iş parçacıklı (/ MT)** üzerinde **kod oluşturma** özellik sayfası (C/C++ klasörü).
-
-Ayarladığınız tıkladığınızda bunları edinirsiniz bir MinSize yapılandırmadır **kullanın, ATL** özelliğini **ATL'e Dinamik bağlantı** üzerinde **genel** özellik sayfasında ya da kümesi **çalışma zamanı Kitaplık** özelliğini **çok iş parçacıklı DLL (/ MD)** üzerinde **kod oluşturma** özellik sayfası (C/C++ klasörü).
-
-MinSize gerektiren ancak mümkün olduğunca küçük çıkış yapar ATL100.dll ve msvcr100.DLL'i tekrar (seçtiyseniz **çok iş parçacıklı DLL (/ MD)** seçeneği) hedef bilgisayardaki. ATL100.dll tüm ATL işlevleri mevcut olduğundan emin olmak için hedef bilgisayarda kayıtlı olmalıdır. ANSI ATL100.dll içerir ve Unicode aktarır.
-
-ATL ya da OLE DB Şablonları projeniz MinDependency hedef için yapılandırdıysanız, daha büyük bir program görüntüsü alabilirsiniz olsa da, yüklemeniz ve hedef bilgisayarda ATL100.dll kaydetmeniz gerekmez.
-
-ATL yürütülebilir bir uygulama dağıtırsanız, aşağıdaki komutu gönderdikten tarafından .exe dosyasını (ve içindeki tüm denetimleri) kaydetmeniz gerekir:
+ATL yürütülebilir uygulamasını yeniden dağıtırsanız, aşağıdaki komutu vererek. exe dosyasını (ve içindeki tüm denetimleri) kaydetmeniz gerekir:
 
 ```
 filename /regserver
 ```
 
-Burada `filename` yürütülebilir dosya adıdır.
+, `filename` yürütülebilir dosyanın adıdır.
+
+Visual Studio 2010 ' de, bir ATL projesi MinDependency veya MinSize yapılandırması için oluşturulabilir. MinDependency yapılandırması, **ATL** özelliğinin **genel** Özellik sayfasında **ATL 'ye statik bağlantı** olarak ayarlandığı ve **çalışma zamanı kitaplığı** özelliğini **kod oluşturma** Özellik sayfasında (C/C++ klasörü) **Çoklu iş parçacıklı (/MT)** olarak ayarladığınızda alacağınız şeydir.
+
+MinSize yapılandırması, **ATL** özelliğinin **genel** Özellik sayfasında **ATL 'e dinamik bağlantı** olarak ayarlandığı veya **çalışma zamanı kitaplığı** özelliğini **kod oluşturma** Özellik SAYFASıNDA (C/C++ klasörü) **Çoklu iş parçacıklı DLL (/MD)** olarak ayarlamanız durumunda alacağınız şeydir.
+
+MinSize, çıkış dosyasını mümkün olduğunca küçük yapar, ancak ATL100.dll ve Msvcr100.dll gerektirir ( **çok iş PARÇACıKLı dll (/MD)** seçeneğini belirlediyseniz) hedef bilgisayarda bulunur. Tüm ATL işlevlerinin mevcut olduğundan emin olmak için hedef bilgisayara ATL100.dll kaydedilmelidir. ATL100.dll ANSI ve Unicode dışarı aktarmaları içerir.
+
+Bir MinDependency hedefi için ATL veya OLE DB şablonları projenizi derliyorsanız, daha büyük bir program görüntüsü almanıza rağmen hedef bilgisayara ATL100.dll yüklemeniz ve kaydetmeniz gerekmez.
+
+ATL yürütülebilir uygulamasını yeniden dağıtırsanız, aşağıdaki komutu vererek. exe dosyasını (ve içindeki tüm denetimleri) kaydetmeniz gerekir:
+
+```
+filename /regserver
+```
+
+, `filename` yürütülebilir dosyanın adıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

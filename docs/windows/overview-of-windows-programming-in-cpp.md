@@ -1,13 +1,14 @@
 ---
+description: "Daha fazla bilgi edinin: C++ ' da Windows programlamaya genel bakış"
 title: C++'da Windows Programlamasına Genel Bakış
 ms.date: 09/17/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 0aa667168f88f48458ae3a9b3541d4944f7530cc
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 812fef686208f5f9d4f1c23cd5eb9b2cb8b227bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404993"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180116"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -105,7 +106,7 @@ Visual Studio yerel kod, statik çözümleme araçları, grafik hata ayıklama a
 |[Etkin Şablon Kütüphanesi (ATL)](../atl/atl-com-desktop-components.md)|C++ ' da COM bileşenleri oluşturmak için ATL Kitaplığı 'nı kullanın.|
 |[Microsoft Foundation Sınıfları (MFC)](../mfc/mfc-desktop-applications.md)|İletişim kutuları ve denetimlerle büyük veya küçük Windows uygulamaları oluşturmak için MFC 'yi kullanma|
 |[ATL ve MFC paylaşılan sınıfları](../atl-mfc-shared/atl-mfc-shared-classes.md)|ATL ve MFC 'de paylaşılan CString gibi sınıfları kullanın.|
-|[Veri erişimi](../data/data-access-in-cpp.md)| OLE DB ve ODBC|
+|[Veri Erişimi](../data/data-access-in-cpp.md)| OLE DB ve ODBC|
 |[Metin ve dizeler](../text/text-and-strings-in-visual-cpp.md)|Windows üzerinde çeşitli dize türleri.|
 |[DirectX kullanarak oyun oluşturmak için kaynaklar](resources-for-creating-a-game-using-directx.md)
 |[Nasıl yapılır: Windows 10 SDK 'Yı bir Windows masaüstü uygulamasında kullanma](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows SDK’sı|

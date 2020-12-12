@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Menü Düzenleyicisi (C++)'
 title: Menü Düzenleyicisi (C++)
 ms.date: 02/15/2019
 f1_keywords:
@@ -39,19 +40,19 @@ helpviewer_keywords:
 - commands [C++], deleting from menus
 - menus [C++], deleting
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
-ms.openlocfilehash: 3671dbe33b2d6e373e2df3d54267c6aac5bbf20d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ab4b0c3f2fe7986b7b30b3c9bce9c6558b09fc60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214454"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180181"
 ---
 # <a name="menu-editor-c"></a>Menü Düzenleyicisi (C++)
 
-Menüler, komutları mantıksal ve kolay bir biçimde düzenlemenizi sağlar. **Menü Düzenleyicisi**ile, tamamlanmış uygulamanızdaki bir menü çubuğuyla doğrudan birlikte çalışarak menü oluşturabilir ve düzenleyebilirsiniz.
+Menüler, komutları mantıksal ve kolay bir biçimde düzenlemenizi sağlar. **Menü Düzenleyicisi** ile, tamamlanmış uygulamanızdaki bir menü çubuğuyla doğrudan birlikte çalışarak menü oluşturabilir ve düzenleyebilirsiniz.
 
 > [!TIP]
-> Birçok örnekte **menü düzenleyicisini**kullanırken, sık kullanılan komutların açılır menüsünü göstermek için sağ tıklayabilirsiniz. Kullanılabilir komutlar, işaretçinin işaret ettiği işe bağlıdır.
+> Birçok örnekte **menü düzenleyicisini** kullanırken, sık kullanılan komutların açılır menüsünü göstermek için sağ tıklayabilirsiniz. Kullanılabilir komutlar, işaretçinin işaret ettiği işe bağlıdır.
 
 ## <a name="how-to"></a>Nasıl yapılır
 
@@ -59,9 +60,9 @@ Menüler, komutları mantıksal ve kolay bir biçimde düzenlemenizi sağlar. **
 
 ### <a name="to-create-a-standard-menu"></a>Standart bir menü oluşturmak için
 
-1. Menü **görünümü** ' ne > **diğer Windows** > **kaynak görünümü** ' e gidin ve **menü** başlığına sağ tıklayın. **Kaynak Ekle**' yi ve ardından **menüyü**seçin.
+1. Menü   >  **diğer Windows**  >  **kaynak görünümü** görüntüle ' ye gidin ve **menü** başlığına sağ tıklayın. **Kaynak Ekle**' yi ve ardından **menüyü** seçin.
 
-1. Menü çubuğunda **Yeni öğe** kutusunu ( *burada türü*içeren dikdörtgen) seçin.
+1. Menü çubuğunda **Yeni öğe** kutusunu ( *burada türü* içeren dikdörtgen) seçin.
 
    ![Menü düzenleyicisinde yeni öğe kutusu](../windows/media/vcmenueditornewitembox.gif "vcMenuEditorNewItemBox")<br/>
    **Yeni öğe** kutusu
@@ -76,7 +77,7 @@ Menüler, komutları mantıksal ve kolay bir biçimde düzenlemenizi sağlar. **
    Menü adı yazdıktan sonra odak kaydırılan **Yeni öğe** kutusu
 
    > [!NOTE]
-   > Menü çubuğunda tek bir öğe menüsü oluşturmak için, **açılan** özelliğini **false**olarak ayarlayın.
+   > Menü çubuğunda tek bir öğe menüsü oluşturmak için, **açılan** özelliğini **false** olarak ayarlayın.
 
 ### <a name="to-create-a-submenu"></a>Bir alt menü oluşturmak için
 
@@ -96,7 +97,7 @@ Mevcut bir menü adı seçin ve **Ekle** tuşuna basın veya menü çubuğuna sa
 
 1. Bir menü oluşturun. Sonra bir menü adı (örneğin, **Dosya**) seçin.
 
-   Her menü, komutlar için yeni bir öğe kutusu genişletir ve kullanıma sunar. Örneğin, **Yeni**, **Açık**ve **kapalı** komutlarını bir **Dosya** menüsüne ekleyebilirsiniz.
+   Her menü, komutlar için yeni bir öğe kutusu genişletir ve kullanıma sunar. Örneğin, **Yeni**, **Açık** ve **kapalı** komutlarını bir **Dosya** menüsüne ekleyebilirsiniz.
 
 1. Yeni öğe kutusuna yeni menü komutu için bir ad yazın.
 
@@ -104,7 +105,7 @@ Mevcut bir menü adı seçin ve **Ekle** tuşuna basın veya menü çubuğuna sa
    > Yazdığınız metin, hem **menü düzenleyicisinde** hem de [Özellikler penceresindeki](/visualstudio/ide/reference/properties-window) **başlık** kutusunda görünür. Yeni menünüzün özelliklerini her iki konumdan de düzenleyebilirsiniz.
 
    > [!TIP]
-   > Kullanıcının menü komutunu seçmesini sağlayan bir anımsatıcı anahtar (kısayol tuşu) tanımlayabilirsiniz. Anımsatıcı olarak belirtmek için bir harfin önüne bir ve işareti (`&`) yazın. Kullanıcı bu harfi yazarak menü komutunu seçebilir.
+   > Kullanıcının menü komutunu seçmesini sağlayan bir anımsatıcı anahtar (kısayol tuşu) tanımlayabilirsiniz. `&`Anımsatıcı olarak belirtmek için bir harfin önüne bir ampersan () yazın. Kullanıcı bu harfi yazarak menü komutunu seçebilir.
 
 1. **Özellikler** penceresinde, uygulanan menü komutu özelliklerini seçin. Ayrıntılar için bkz. [menü komut özellikleri](../windows/menu-command-properties.md).
 
@@ -113,7 +114,7 @@ Mevcut bir menü adı seçin ve **Ekle** tuşuna basın veya menü çubuğuna sa
    Bu adım, oluşturduğunuz menü komutuyla aynı kaynak tanımlayıcısına sahip dize tablosunda bir giriş oluşturur.
 
    > [!NOTE]
-   > İstemler yalnızca bir **Popup** özelliği **true**olan menü öğelerine uygulanabilir. Örneğin, üst düzey menü öğeleri, alt menü öğelerine sahip olmaları durumunda istemlere sahip olabilir. Bir **istem** amacı, bir Kullanıcı menü öğesini seçerse ne olacağını belirtsağlamaktır.
+   > İstemler yalnızca bir **Popup** özelliği **true** olan menü öğelerine uygulanabilir. Örneğin, üst düzey menü öğeleri, alt menü öğelerine sahip olmaları durumunda istemlere sahip olabilir. Bir **istem** amacı, bir Kullanıcı menü öğesini seçerse ne olacağını belirtsağlamaktır.
 
 1. Menü komutunu doldurmak için **ENTER** tuşuna basın.
 
@@ -164,7 +165,7 @@ Menü kaynağını oluşturduktan sonra, uygulama kodunuzun menü kaynağını y
 > [!NOTE]
 > Microsoft Foundation Class (MFC) kitaplık programları ve ATL programları için kod **sihirbazları** 'nı kullanarak kod için menü komutlarını kullanın. Daha fazla bilgi için bkz. [bir olay ekleme](../ide/adding-an-event-visual-cpp.md) ve [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md).
 
-- Bir açılır menü oluşturmak için, boş başlıklı *ve başlık sağlamayan*bir menü oluşturun. Ardından, yeni menüye bir menü komutu ekleyin, burada geçici açıklamalı alt yazı *tipinde* boş menü başlığının altındaki ilk menü komutuna gidin ve bir *başlık* ve diğer bilgileri yazın.
+- Bir açılır menü oluşturmak için, boş başlıklı *ve başlık sağlamayan* bir menü oluşturun. Ardından, yeni menüye bir menü komutu ekleyin, burada geçici açıklamalı alt yazı *tipinde* boş menü başlığının altındaki ilk menü komutuna gidin ve bir *başlık* ve diğer bilgileri yazın.
 
    Açılır menüdeki diğer menü komutları için bu işlemi tekrarlayın ve menü kaynağını kaydettiğinizden emin olun.
 
@@ -181,7 +182,7 @@ Menü kaynağını oluşturduktan sonra, uygulama kodunuzun menü kaynağını y
    > [!NOTE]
    > İleti işleyicisi tarafından geçilen [CPoint](../atl-mfc-shared/reference/cpoint-class.md) , Ekran koordinatlarında.
 
-Normalde, **menü düzenleyicisinde**çalışırken bir menü kaynağı bir menü çubuğu olarak görüntülenir. Ancak, program çalışırken uygulamanın menü çubuğuna eklenen menü kaynaklarına sahip olabilirsiniz.
+Normalde, **menü düzenleyicisinde** çalışırken bir menü kaynağı bir menü çubuğu olarak görüntülenir. Ancak, program çalışırken uygulamanın menü çubuğuna eklenen menü kaynaklarına sahip olabilirsiniz.
 
 - Bir menü kaynağını açılan menü olarak görüntülemek için, menüye sağ tıklayıp **açılan pencere olarak görüntüle**' yi seçin.
 
@@ -196,8 +197,8 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Düzenleyicileri](../windows/resource-editors.md)<br/>
+[Kaynak düzenleyicileri](../windows/resource-editors.md)<br/>
 [Menü Komutları](../windows/menu-command-properties.md)<br/>
-[Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri](../mfc/user-interface-objects-and-command-ids.md)<br/>
+[Kullanıcı arabirimi nesneleri ve komut kimlikleri](../mfc/user-interface-objects-and-command-ids.md)<br/>
 [Menüler](../mfc/menus-mfc.md)<br/>
 [Menüler](/windows/win32/menurc/menus)

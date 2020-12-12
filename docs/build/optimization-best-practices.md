@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Iyileştirme en iyi uygulamaları'
 title: En iyi uygulamaları iyileştirme
 ms.date: 05/06/2019
 helpviewer_keywords:
 - C++, optimization
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-ms.openlocfilehash: 425fa0bb6b7aab502ce493ced8b587fad8ce59a8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 06588225838da3b52216fa0ae3eb51b7538ee58d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833354"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179830"
 ---
 # <a name="optimization-best-practices"></a>En iyi uygulamaları iyileştirme
 
@@ -30,7 +31,7 @@ Daha fazla bilgi için bkz. [ `/GL` (tüm program iyileştirmesi)](reference/gl-
 
 Tüm mümkünse, son yayın derlemeleri profil temelli Iyileştirmeler ile derlenmelidir. PGO ile derleme yapmak mümkün değilse, Araçlı derlemeleri çalıştırmak için yetersiz altyapı veya senaryolara erişim sahibi olmamasından bağımsız olarak, tüm program Iyileştirmesi için oluşturma önerilir.
 
-**`/Gy`** Anahtar da çok yararlı olur. Bu, her bir işlev için ayrı bir COMDAT oluşturur ve bu bağlayıcı, başvurulmayan Comduts ve COMDAT katlamayı kaldırmak için geldiğinde bağlayıcıya daha fazla esneklik sağlar. Kullanmanın tek dezavantajı, **`/Gy`** hata ayıklarken sorun oluşmasına neden olabilir. Bu nedenle, genellikle kullanılması önerilir. Daha fazla bilgi için bkz. [ `/Gy` (Işlev düzeyinde bağlamayı etkinleştir)](reference/gy-enable-function-level-linking.md).
+**`/Gy`** Anahtar da çok yararlı olur. Bu, her bir işlev için ayrı bir COMDAT oluşturur ve bu bağlayıcı, başvurulmayan Comduts ve COMDAT katlamayı kaldırmak için geldiğinde bağlayıcıya daha fazla esneklik sağlar. Kullanmanın tek dezavantajı, **`/Gy`** hata ayıklarken sorun oluşmasına neden olabilir. Bu nedenle, genellikle kullanılması önerilir. Daha fazla bilgi için bkz. [ `/Gy` (Function-Level bağlamayı etkinleştir)](reference/gy-enable-function-level-linking.md).
 
 64 bitlik ortamlarda bağlama için **`/OPT:REF,ICF`** bağlayıcı seçeneğinin kullanılması önerilir ve 32 bit ortamlarda **`/OPT:REF`** önerilir. Daha fazla bilgi için bkz. [/opt (iyileştirmeler)](reference/opt-optimizations.md).
 
@@ -47,7 +48,7 @@ En iyi duruma getirilmiş yayın yapılarla bile hata ayıklama sembolleri oluş
 |**`/fp:strict`**|Kesin kayan nokta özel durumları ve IEEE davranışı isteniyorsa önerilir. Bu, en düşük performansa neden olur.|
 |**`/fp:except[-]`**|, Veya ile birlikte kullanılabilir **`/fp:strict`** **`/fp:precise`** **`/fp:fast`** .|
 
-Daha fazla bilgi için bkz. [ `/fp` (kayan nokta davranışını belirt)](reference/fp-specify-floating-point-behavior.md).
+Daha fazla bilgi için bkz. [ `/fp` (Floating-Point davranışını belirtin)](reference/fp-specify-floating-point-behavior.md).
 
 ## <a name="optimization-declspecs"></a>İyileştirme declspecs
 
@@ -97,7 +98,7 @@ Visual Studio 'da performansa yardımcı olabilecek birkaç anahtar sözcük var
 
 İlk olarak, bunun aksi belirtilmedikçe **`__restrict`** `__declspec(restrict)` iki farklı işlem olmalıdır. Bunlar biraz ilişkili olsa da, anlamları farklıdır. **`__restrict`** , veya gibi bir tür niteleyicisi **`const`** , **`volatile`** ancak yalnızca işaretçi türleri için.
 
-İle değiştirilen bir işaretçi **`__restrict`** *__restrict işaretçisi*olarak adlandırılır. __Restrict işaretçi yalnızca _restrict işaretçisi üzerinden erişilebilen bir işaretçisidir \_ . Diğer bir deyişle, _restrict işaretçisi tarafından işaret edilen verilere erişmek için başka bir işaretçi kullanılamaz \_ .
+İle değiştirilen bir işaretçi **`__restrict`** *__restrict işaretçisi* olarak adlandırılır. __Restrict işaretçi yalnızca _restrict işaretçisi üzerinden erişilebilen bir işaretçisidir \_ . Diğer bir deyişle, _restrict işaretçisi tarafından işaret edilen verilere erişmek için başka bir işaretçi kullanılamaz \_ .
 
 **`__restrict`** , Microsoft C++ iyileştirici için güçlü bir araç olabilir, ancak bunu harika bir şekilde kullanabilirsiniz. Yanlış kullanılırsa, iyileştirici uygulamanızı kesen bir iyileştirme gerçekleştirebilir.
 

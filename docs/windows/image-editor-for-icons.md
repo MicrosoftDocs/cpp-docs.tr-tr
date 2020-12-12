@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: simgeler için görüntü Düzenleyicisi (C++)'
 title: Simgeler için görüntü Düzenleyicisi (C++)
 ms.date: 02/15/2019
 f1_keywords:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-ms.openlocfilehash: bb028833aa0e9f0615ec7575dbe41feb173efedb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 778f6deb3ccb6ba8b3ecff52b6f11524a1073092
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504384"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180246"
 ---
 # <a name="image-editor-for-icons-c"></a>Simgeler için görüntü Düzenleyicisi (C++)
 
@@ -53,13 +54,13 @@ ms.locfileid: "91504384"
 Grafik kaynakları, uygulamanız için tanımladığınız görüntülerdir. Şekilleri kullanarak serbest çizim veya çizim yapabilirsiniz. Bir görüntünün parçalarını düzenleyebilir, açabilir veya yeniden boyutlandırabilir veya bir görüntünün seçili bir bölümünden özel bir fırça oluşturabilir ve bu fırçayla çizim yapabilirsiniz. Görüntü özelliklerini tanımlayabilir, görüntüleri farklı biçimlerde kaydedebilir ve görüntüleri bir biçimden diğerine dönüştürebilirsiniz.
 
 > [!NOTE]
-> **Görüntü düzenleyicisini**kullanarak, 32 bitlik görüntüleri görüntüleyebilirsiniz, ancak düzenleyemezsiniz.
+> **Görüntü düzenleyicisini** kullanarak, 32 bitlik görüntüleri görüntüleyebilirsiniz, ancak düzenleyemezsiniz.
 
 Yönetilen projelerde kaynak dosyalarıyla çalışmak için **resim düzenleyicisini** ve [ikili düzenleyiciyi](binary-editor.md) de kullanabilirsiniz. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri gömülü kaynakları düzenlemenizi desteklemez.
 
 Yeni grafik kaynakları oluşturmaya ek olarak, [var olan görüntüleri](../windows/how-to-copy-resources.md#import-and-export-resources) düzenleyebilir ve ardından projenize ekleyebilirsiniz. Ayrıca, [tek başına görüntü düzenleme](./selecting-an-area-of-an-image-image-editor-for-icons.md)için bir projenin parçası olmayan görüntüleri açabilir ve düzenleyebilirsiniz.
 
-**Görüntü Düzenleyicisi**hakkında daha fazla bilgi için bkz. [bir simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [görüntü düzenleme](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [Çizim Aracı kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md), [renk ile çalışma](../windows/working-with-color-image-editor-for-icons.md)ve [hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md).
+**Görüntü Düzenleyicisi** hakkında daha fazla bilgi için bkz. [bir simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), [görüntü düzenleme](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md), [Çizim Aracı kullanma](../windows/using-a-drawing-tool-image-editor-for-icons.md), [renk ile çalışma](../windows/working-with-color-image-editor-for-icons.md)ve [hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md).
 
 > [!NOTE]
 > Uygulamalarda kullanabileceğiniz birçok animasyon, bit eşlem ve simge içeren **Visual Studio Görüntü Kitaplığı** ' nı ücretsiz indirin. Kitaplığın nasıl indirileceği hakkında daha fazla bilgi için bkz. [Visual Studio resim kitaplığı](/visualstudio/designers/the-visual-studio-image-library).
@@ -77,7 +78,7 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 |**Renkler penceresini göster**|Görüntü için kullanılacak renkleri seçebileceğiniz **renkler** penceresini açar.|
 |**Seçimi fırça olarak kullan**|Görüntünün bir kısmından özel bir fırça oluşturmanıza olanak sağlar.<br/><br/>Seçiminiz, seçimdeki renkleri görüntüde dağıtan özel bir fırça haline gelir. Seçimin kopyaları sürükleme yolu üzerinde bırakılır. Ne kadar yavaş sürüklediğiniz, daha fazla kopya yapılır.|
 |**Seçimi Kopyala ve Seviyelendir**|Geçerli seçimin bir kopyasını oluşturur ve bu seçimi özetler.<br/><br/>Arka plan rengi geçerli seçimde yer alıyorsa, saydam seçiliyse, bu, dışarıda bırakılır.
-|**Renkleri ayarla**|Resminizin sizin için kullandığınız renkleri özelleştirmenizi sağlayan **özel renk seçiciyi**açar.|
+|**Renkleri ayarla**|Resminizin sizin için kullandığınız renkleri özelleştirmenizi sağlayan **özel renk seçiciyi** açar.|
 |**Palet Yükle**|Daha önce bir. pal dosyasına kaydedilen palet **renklerini yükleyebilirsiniz.**|
 |**Paleti Kaydet**|Palet renklerini bir. pal dosyasına kaydeder.|
 |**Donuk Çiz**|Seçildiğinde, geçerli seçimi donuk hale getirir.<br/><br/>Kaldırıldığında, geçerli seçimi saydam hale getirir.|
@@ -92,16 +93,16 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 
 |Özellik|Açıklama|
 |---|---|
-|**Piksel Kılavuzu**|İşaretlendiğinde, **görüntü düzenleyicisinde**her bir pikselin etrafında bir kılavuz görüntüler.<br/><br/>Kılavuz yalnızca 4 × ve daha yüksek çözünürlükte görünür.|
-|**Kutucuk Kılavuzu**|Seçildiğinde, ızgara aralığı değerleriyle belirtilen **görüntü düzenleyicisinde**piksel blokları etrafında bir kılavuz görüntüler.|
-|**Genişlik**|Her döşeme bloğunun genişliğini belirtir.<br/><br/>Bu özellik, düzenli aralıklarla düzenlenmiş birden çok görüntü içeren bit eşlemler çizerken yararlıdır.|
-|**Yükseklik**|Her döşeme bloğunun yüksekliğini belirtir.<br/><br/>Bu özellik, düzenli aralıklarla düzenlenmiş birden çok görüntü içeren bit eşlemler çizerken yararlıdır.|
+|**Piksel Kılavuzu**|İşaretlendiğinde, **görüntü düzenleyicisinde** her bir pikselin etrafında bir kılavuz görüntüler.<br/><br/>Kılavuz yalnızca 4 × ve daha yüksek çözünürlükte görünür.|
+|**Kutucuk Kılavuzu**|Seçildiğinde, ızgara aralığı değerleriyle belirtilen **görüntü düzenleyicisinde** piksel blokları etrafında bir kılavuz görüntüler.|
+|**Width**|Her döşeme bloğunun genişliğini belirtir.<br/><br/>Bu özellik, düzenli aralıklarla düzenlenmiş birden çok görüntü içeren bit eşlemler çizerken yararlıdır.|
+|**Height**|Her döşeme bloğunun yüksekliğini belirtir.<br/><br/>Bu özellik, düzenli aralıklarla düzenlenmiş birden çok görüntü içeren bit eşlemler çizerken yararlıdır.|
 
 ## <a name="toolbar"></a>Araç Çubuğu
 
 **Resim Düzenleyicisi** araç çubuğu çizim, boyama, metin girme, silme ve görünümleri düzenleme araçlarını içerir. Ayrıca, her bir aracı kullanma seçeneklerini seçebileceğiniz bir seçenek seçici de içerir. Örneğin, çeşitli fırça genişlikleri, büyütme faktörleri ve çizgi stilleri arasından seçim yapabilirsiniz.
 
-**Görüntü Düzenleyicisi** araç çubuğundaki tüm araçlar, menü **görüntüsü**  >  **araçlarından**de kullanılabilir. **Görüntü Düzenleyicisi** araç çubuğunu ve **seçenek** seçiciyi kullanmak için istediğiniz aracı veya seçeneği seçin.
+**Görüntü Düzenleyicisi** araç çubuğundaki tüm araçlar, menü **görüntüsü**  >  **araçlarından** de kullanılabilir. **Görüntü Düzenleyicisi** araç çubuğunu ve **seçenek** seçiciyi kullanmak için istediğiniz aracı veya seçeneği seçin.
 
 ![Görüntü Düzenleyicisi araç çubuğu](../mfc/media/vcimageeditortoolbar.gif "Vcımageeditortoolbar")<br/>
 **Görüntü Düzenleyicisi** araç çubuğu
@@ -114,7 +115,7 @@ Yalnızca **Görüntü Düzenleyicisi** etkinken görüntülenen **görüntü** 
 - **Görüntü Düzenleyicisi** araç çubuğunu görüntülemek veya gizlemek için menü **Görünüm**  >  **araç çubukları** ' na gidin ve **Görüntü Düzenleyicisi**' ni seçin.
 
 > [!NOTE]
-> Geçerli projeden veya çözümden bir görüntü dosyası **görüntü düzenleyicisinde**açık olmadığında, bu araç çubuğundan öğeler kullanılamaz görünür.
+> Geçerli projeden veya çözümden bir görüntü dosyası **görüntü düzenleyicisinde** açık olmadığında, bu araç çubuğundan öğeler kullanılamaz görünür.
 
 ### <a name="option-selector"></a>Seçenek belirleyici
 
@@ -150,7 +151,7 @@ Aşağıda, bir Windows uygulamasındaki simgeye metin ekleme ve metninizin yaz�
 
 1. Bir C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz. [nasıl yapılır: oluşturma Windows Forms uygulamalar](/previous-versions/visualstudio/visual-studio-2008/s69bf10x(v%3dvs.90)). Varsayılan olarak projenize bir *app. ico* dosyası eklenir.
 
-1. **Çözüm Gezgini**' de *app. ico*dosyasına çift tıklayın. **Görüntü Düzenleyicisi** açılır.
+1. **Çözüm Gezgini**' de *app. ico* dosyasına çift tıklayın. **Görüntü Düzenleyicisi** açılır.
 
 1. Menü **görüntü**  >  **araçları** ' na gidin ve **metin aracı**' nı seçin.
 
@@ -168,9 +169,9 @@ Aşağıda, bir Windows uygulamasındaki simgeye metin ekleme ve metninizin yaz�
 
    - **Boyut** liste kutusunda listelenen kullanılabilir nokta boyutları listesinden **10** ' u seçin.
 
-   - **Tamam ' ı**seçin. **Metin aracı yazı tipi** iletişim kutusu kapanır ve yeni yazı tipi ayarları metninizi uygular.
+   - **Tamam ' ı** seçin. **Metin aracı yazı tipi** iletişim kutusu kapanır ve yeni yazı tipi ayarları metninizi uygular.
 
-1. **Metin aracı** Iletişim kutusunda **Kapat** ' ı seçin. Metninizin çevresindeki yeniden boyutlandırılabilir kutu, **görüntü düzenleyicisinden**kaybolacaktır.
+1. **Metin aracı** Iletişim kutusunda **Kapat** ' ı seçin. Metninizin çevresindeki yeniden boyutlandırılabilir kutu, **görüntü düzenleyicisinden** kaybolacaktır.
 
 Metin alanı, kaynağın bir parçası olarak görüntülenen metni görüntüler. Başlangıçta bu alan boştur.
 
@@ -197,7 +198,7 @@ Varsayılan olarak, **Görüntü Düzenleyicisi** gerçek boyutun sol bölmesind
 
 1. Büyütme faktörünü değiştirmek istediğiniz **Görüntü Düzenleyicisi** bölmesini seçin.
 
-1. **Görüntü Düzenleyicisi** araç çubuğunda, **Büyüt** aracının sağındaki oku seçin ve alt menüden büyütme faktörünü seçin: **1x**, **2x**, **6x**veya **8X**.
+1. **Görüntü Düzenleyicisi** araç çubuğunda, **Büyüt** aracının sağındaki oku seçin ve alt menüden büyütme faktörünü seçin: **1x**, **2x**, **6x** veya **8X**.
 
    > [!NOTE]
    > **Büyütme aracında listelenenler** dışında bir büyütme faktörü seçmek için Hızlandırıcı tuşlarını kullanın.
@@ -212,7 +213,7 @@ Varsayılan olarak, **Görüntü Düzenleyicisi** gerçek boyutun sol bölmesind
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

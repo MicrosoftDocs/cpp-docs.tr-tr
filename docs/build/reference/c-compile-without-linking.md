@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/c (bağlama olmadan Derle)
 title: /c (Bağlamadan Derle)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
-ms.openlocfilehash: bfe351daf43b913f10df74b1059ba98f7d5d657b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9dd692dd99cddf63015fe26e37dc54841816f7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179375"
 ---
 # <a name="c-compile-without-linking"></a>/c (Bağlamadan Derle)
 
-Otomatik bağlantı çağrısı engeller.
+Otomatik olarak BAĞLANTıYA izin vermez.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /c
@@ -29,27 +30,27 @@ Otomatik bağlantı çağrısı engeller.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İle derlerken **/c** yalnızca .obj dosyaları oluşturur. Derleme bağlama aşamasını gerçekleştirmek için seçenekleri ve uygun dosyaları ile bağlantı açıkça çağırmalıdır.
+**/C** ile derleme yalnızca. obj dosyaları oluşturur. Yapılandırmanın bağlama aşamasını gerçekleştirmek için, uygun dosya ve seçeneklerle bağlantıyı açıkça çağırmanız gerekir.
 
-Geliştirme ortamında oluşturulmuş herhangi bir iç projesinin kullanan **/c** varsayılan seçeneği.
+Geliştirme ortamında oluşturulan herhangi bir iç proje varsayılan olarak **/c** seçeneğini kullanır.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-- Bu seçenek, geliştirme ortamında kullanılabilir değildir.
+- Bu seçenek geliştirme ortamının içinden kullanılamaz.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bu derleyici seçeneğini program üzerinden ayarlamak için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileOnly%2A>.
+- Bu derleyici seçeneğini program aracılığıyla ayarlamak için, bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CompileOnly%2A> ..
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki komut satırını FIRST.obj ve SECOND.obj nesne dosyaları oluşturur. THIRD.obj göz ardı edilir.
+Aşağıdaki komut satırı Ilk. obj ve ıkıncı. obj nesne dosyalarını oluşturur. ÜÇÜNCÜ. obj yoksayıldı.
 
 ```
 CL /c FIRST.C SECOND.C THIRD.OBJ
 ```
 
-Yürütülebilir bir dosya oluşturmak için bağlantı çağırmanız gerekir:
+Yürütülebilir bir dosya oluşturmak için bağlantıyı çağırmanız gerekir:
 
 ```
 LINK firsti.obj second.obj third.obj /OUT:filename.exe
@@ -57,5 +58,5 @@ LINK firsti.obj second.obj third.obj /OUT:filename.exe
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

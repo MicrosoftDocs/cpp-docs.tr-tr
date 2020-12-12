@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: BSCMAKE başvurusu'
 title: BSCMAKE Başvurusu
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -10,32 +11,32 @@ helpviewer_keywords:
 - bsc files, building
 - BSCMAKE
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
-ms.openlocfilehash: f95e34b9599de628463b9f92ebf8f01036237891
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 11a90561e22b9fb3a39f022ba188e5c9d155e45e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179435"
 ---
 # <a name="bscmake-reference"></a>BSCMAKE Başvurusu
 
 > [!WARNING]
-> BSCMAKE hala Visual Studio yüklü olmasına rağmen, artık IDE tarafından kullanılmaz. Visual Studio 2008'den bu yana, göz atma ve sembol bilgileri çözüm klasöründe bir SQL Server .sdf dosyasında otomatik olarak depolanır.
+> BSCMAKE, Visual Studio ile hala yüklü olsa da artık IDE tarafından kullanılmıyor. Visual Studio 2008 ' den itibaren, gezinme ve sembol bilgileri çözüm klasöründeki bir SQL Server. sdf dosyasında otomatik olarak depolanır.
 
-Microsoft Gözat Bilgi Bakım Programı (BSCMAKE). EXE) derleme sırasında oluşturulan .sbr dosyalarından bir gözatma bilgi dosyası (.bsc) oluşturur. Bazı üçüncü taraf araçları kod analizi için .bsc dosyalarını kullanır.
+Microsoft tarayıcı bilgi Bakımı yardımcı programı (BSCMAKE.EXE), derleme sırasında oluşturulan. sbr dosyalarından bir tarama bilgi dosyası (. bsc) oluşturur. Bazı üçüncü taraf araçları, kod analizi için. BSC dosyalarını kullanır.
 
-Programınızı oluştururken, dosyayı oluşturmak için BSCMAKE'yi kullanarak otomatik olarak programınız için bir gözatma bilgi dosyası oluşturabilirsiniz. Visual Studio geliştirme ortamında gözatma bilgi dosyanızı oluşturursanız BSCMAKE'nin nasıl çalıştırılacağını bilmeniz gerekmez. Ancak, mevcut seçenekleri anlamak için bu konuyu okumak isteyebilirsiniz.
+Programınızı derlediğinizde, dosyayı oluşturmak için BSCMAKE kullanarak, programınız için otomatik olarak bir tarama bilgisi dosyası oluşturabilirsiniz. Visual Studio geliştirme ortamında tarama bilgilerinizi dosyanızı oluşturursanız BSCMAKE 'in nasıl çalıştırılacağını bilmeniz gerekmez. Ancak, kullanılabilen seçimleri anlamak için bu konuyu okumak isteyebilirsiniz.
 
-Programınızı geliştirme ortamının dışında oluşturursanız, yine de ortamda inceleyeceğiniz özel bir .bsc oluşturabilirsiniz. Derleme sırasında oluşturduğunuz .sbr dosyalarında BSCMAKE'yi çalıştırın.
+Programınızı geliştirme ortamının dışında oluşturursanız, yine de ortamda inceleyebileceğiniz özel bir. bsc oluşturmaya devam edebilirsiniz. Derleme sırasında oluşturduğunuz. sbr dosyalarında BSCMAKE komutunu çalıştırın.
 
 > [!NOTE]
-> Bu aracı yalnızca Visual Studio Developer komut isteminden başlatabilirsiniz. Sistem komut isteminden veya Dosya Gezgini'nden başlatamazsınız.
+> Bu aracı yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bunu bir sistem komut isteminden veya dosya Gezgini 'nden başlatamazsınız.
 
 Bu bölüm şu konuları içerir:
 
-- [Gözatma Bilgileri Dosyası Derleme: Genel Bakış](building-browse-information-files-overview.md)
+- [Göz at bilgi dosyaları oluşturma: genel bakış](building-browse-information-files-overview.md)
 
-- [.bsc dosyası oluşturma](building-a-dot-bsc-file.md)
+- [. Bsc dosyası oluşturma](building-a-dot-bsc-file.md)
 
 - [BSCMAKE komut satırı](bscmake-command-line.md)
 
@@ -47,4 +48,4 @@ Bu bölüm şu konuları içerir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ek MSVC Oluşturma Araçları](c-cpp-build-tools.md)
+[Ek MSVC derleme araçları](c-cpp-build-tools.md)

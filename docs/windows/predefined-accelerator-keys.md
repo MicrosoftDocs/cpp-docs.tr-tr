@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: hızlandırıcı tuşları (C++)'
 title: Hızlandırıcı tuşları (C++)
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - menus [C++], shortcut keys
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-ms.openlocfilehash: 4f838caa8ca9e4a996fa4cb8018d663c6c7aecea
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 397e0735ba33af6adf8f10c6188f73d6f504e68b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504303"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180103"
 ---
 # <a name="accelerator-keys-c"></a>Hızlandırıcı tuşları (C++)
 
@@ -57,7 +58,7 @@ Bir Windows uygulama projesinin parçası olabilecek bir dizi önceden tanımlan
 |VK_OEM_2|Pencerelerin ABD standart klavyesi için **/?** anahtar|
 |VK_OEM_3|Pencerelerin ABD standart klavyesi için, **`~** anahtar|
 |VK_OEM_4|Pencerelerin ABD standart klavyesi için **[{** Key|
-|VK_OEM_5|Pencerelerin ABD standart klavyesi için ** \\&#124;** anahtarı|
+|VK_OEM_5|Pencerelerin ABD standart klavyesi için **\\&#124;** anahtarı|
 |VK_OEM_6|Pencerelerin ABD standart klavyesi için **]}** anahtarı|
 |VK_OEM_7|Pencerelerin ABD standart klavyesi için, ' tek tırnak/çift tırnak ' anahtarı|
 |VK_OEM_COMMA|Pencerelerin Herhangi bir ülke/bölge, **,** anahtar|

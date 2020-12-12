@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/AI (meta veri dizinlerini belirt)
 title: /AI (Meta Veri Dizinlerini Belirt)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,37 +12,37 @@ helpviewer_keywords:
 - AI compiler option [C++]
 - -AI compiler option [C++]
 ms.assetid: fb9c1846-504c-4a3b-bb39-c8696de32f6f
-ms.openlocfilehash: 3633cfe34a4f9c627f84cf401cb559f02f8c8229
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e30711b1da2d41204bf56520d56dd5101f3168b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273228"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179752"
 ---
 # <a name="ai-specify-metadata-directories"></a>/AI (Meta Veri Dizinlerini Belirt)
 
-Geçirilen dosya başvurularını çözümlemek için derleyicinin arama yapacağı dizini belirtir `#using` yönergesi.
+Derleyicinin yönergeye geçirilen dosya başvurularını çözümlemek için arayacaktır bir dizin belirtir `#using` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/AI**_dizini_
 
 ## <a name="arguments"></a>Arguments
 
-*Dizin*<br/>
+*dizinden*<br/>
 Derleyicinin arama yapacağı dizin veya yol.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yalnızca bir dizine geçilebilir bir **/AI** çağırma. Bir tane belirtin **/AI** seçeneği, derleyicinin arama yapmasını istediğiniz her bir yol. Örneğin, derleyici arama yoluna hem C:\Project\Meta hem de C:\Common\Meta eklemek için `#using` yönergeleri ekleme `/AI"C:\Project\Meta" /AI"C:\Common\Meta"` derleyici komut satırına veya her dizine eklemek **ek # dizinleri using** Visual Studio özelliği.
+Bir **/AI** çağrısına yalnızca bir dizin geçirilebilir. Derleyicinin aramasını istediğiniz her yol için bir **/AI** seçeneği belirtin. Örneğin, yönergeler için derleyici arama yoluna C:\Project\Meta ve C:\Common\Meta eklemek için `#using` , `/AI"C:\Project\Meta" /AI"C:\Common\Meta"` derleyici komut satırına ekleyin veya her bir dizini Visual Studio 'daki **ek #using dizinleri** özelliğine ekleyin.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **genel** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **genel** özellik sayfasını seçin.
 
-1. Değiştirme **ek # dizinleri using** özelliği.
+1. **Ek #using dizinleri** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -49,6 +50,6 @@ Yalnızca bir dizine geçilebilir bir **/AI** çağırma. Bir tane belirtin **/A
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
 [#using yönergesi](../../preprocessor/hash-using-directive-cpp.md)

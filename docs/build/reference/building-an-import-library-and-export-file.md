@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturma'
 title: İçeri Aktarma Kitaplığı ve Dışarı Aktarma Dosyası Derleme
 ms.date: 09/05/2018
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - .lib files
 - EXP files
 ms.assetid: 2fe4f30a-1dd6-4b05-84b5-0752e1dee354
-ms.openlocfilehash: 5cb5224b3edaf84dbcb7c0429044a647fb5ac19a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8fbd06ce06d77721e64294b88632933b3ad71a03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229759"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179518"
 ---
 # <a name="building-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığı ve Dışarı Aktarma Dosyası Derleme
 
@@ -58,7 +59,7 @@ Oluşturulan *içeri aktarma* kitaplığı için varsayılan çıkış dosyası 
 
 Diğer programların işlevi çağırmasını sağlamak için programınızdaki bir işlevi dışarı aktarır. Ayrıca, verileri dışarı aktarabilirsiniz ( **Data** anahtar sözcüğünü kullanarak). Dışarı aktarmalar genellikle DLL 'de tanımlanmıştır.
 
-*EntryName* , çağıran program tarafından kullanılacak şekilde işlevin veya veri öğesinin adıdır. İsteğe bağlı olarak, *InternalName* 'i tanımlama programında bilinen işlev olarak belirtebilirsiniz; Varsayılan olarak, *InternalName* , *EntryName*ile aynıdır. *Ordinal* , 1 ile 65.535 arasında dışa aktarma tablosuna bir dizin belirtir; *sıra*belirtmezseniz, LIB bir tane atar. **Noname** anahtar sözcüğü, *EntryName*olmadan işlevi yalnızca sıra olarak dışa aktarır. **Data** anahtar sözcüğü yalnızca veri nesneleri dışarı aktarmak için kullanılır.
+*EntryName* , çağıran program tarafından kullanılacak şekilde işlevin veya veri öğesinin adıdır. İsteğe bağlı olarak, *InternalName* 'i tanımlama programında bilinen işlev olarak belirtebilirsiniz; Varsayılan olarak, *InternalName* , *EntryName* ile aynıdır. *Ordinal* , 1 ile 65.535 arasında dışa aktarma tablosuna bir dizin belirtir; *sıra* belirtmezseniz, LIB bir tane atar. **Noname** anahtar sözcüğü, *EntryName* olmadan işlevi yalnızca sıra olarak dışa aktarır. **Data** anahtar sözcüğü yalnızca veri nesneleri dışarı aktarmak için kullanılır.
 
 > **/Include:** *simge*
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kodunuzu Iyileştirme'
 title: Kodunuzu İyileştirme
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - optimization, C++ code
 - code, optimizing
 - performance, compiler
-ms.openlocfilehash: 00356cf50ca8e50c80e8a1142adf654816490c9b
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 893e3dce64400d47026e478b081283e3f1d82262
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80078500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179804"
 ---
 # <a name="optimizing-your-code"></a>Kodunuzu iyileştirme
 
@@ -30,7 +31,7 @@ Kodunuzun performansını artırmak için kodunuzda kullanabileceğiniz anahtar 
 Özellikle yürütme hızını veya kod boyutunu etkileyen **/o** derleyici seçeneklerinin bir listesi.
 
 [Rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md) \
-Rvalue başvuruları, *taşıma semantiğinin*uygulanmasını destekler. Taşıma semantiği şablon kitaplıklarını uygulamak için kullanılırsa, bu şablonları kullanan uygulamaların performansı önemli ölçüde iyileştirebilirler.
+Rvalue başvuruları, *taşıma semantiğinin* uygulanmasını destekler. Taşıma semantiği şablon kitaplıklarını uygulamak için kullanılırsa, bu şablonları kullanan uygulamaların performansı önemli ölçüde iyileştirebilirler.
 
 ### <a name="the-optimize-pragma"></a>Optimize pragma
 
@@ -52,7 +53,7 @@ Paradoxically, bir programı hız için iyileştirmek kodun daha yavaş çalış
 
 Aşağıdaki konular iyi programlama uygulamalarını tartışır.
 
-[Zaman açısından kritik kodu Iyileştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md) \
+[Time-Critical kodu Iyileştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md) \
 Daha iyi kodlama teknikleri daha iyi performans sağlayabilir. Bu konuda, kodunuzun zaman kritik bölümlerinin önemli olduğundan emin olmanıza yardımcı olabilecek kodlama teknikleri önerilir.
 
 [En Iyi duruma getirme uygulamaları](optimization-best-practices.md) \
@@ -64,19 +65,19 @@ Uygulamanızın en iyi şekilde iyileştirilmesi hakkında genel yönergeler sa�
 
 Aşağıdaki konularda, sürüm Derlemeleriyle ilgili hata ayıklama hakkında bilgi sağlanmaktadır.
 
-- [Visual Studio’da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)
+- [Visual Studio'da Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)
 
 - [Nasıl Yapılır: İyileştirilmiş Kodda Hata Ayıklama](/visualstudio/debugger/how-to-debug-optimized-code)
 
-- [Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği](why-floating-point-numbers-may-lose-precision.md)
+- [Floating-Point sayıların neden duyarlık Kaybedemeyebilir](why-floating-point-numbers-may-lose-precision.md)
 
 Aşağıdaki konularda, kodunuzun oluşturulması, yüklenmesi ve yürütülmesi nasıl iyileştirileceği hakkında bilgi sağlanmaktadır.
 
 - [Derleyici verimini geliştirme](improving-compiler-throughput.md)
 
-- [() Olmadan İşlev Adının Kullanılması Kod Üretmez](using-function-name-without-parens-produces-no-code.md)
+- [() Olmadan Işlev adının kullanılması kod üretmez](using-function-name-without-parens-produces-no-code.md)
 
-- [Satır İçi Bütünleştirilmiş Kodu En İyi Duruma Getirme](../assembler/inline/optimizing-inline-assembly.md)
+- [Satır Içi derlemeyi iyileştirme](../assembler/inline/optimizing-inline-assembly.md)
 
 - [ATL Projesinde Derleyici İyileştirmesi Belirtme](../atl/reference/specifying-compiler-optimization-for-an-atl-project.md)
 
@@ -86,17 +87,17 @@ Aşağıdaki konularda, kodunuzun oluşturulması, yüklenmesi ve yürütülmesi
 
 [Optimizasyon pragmaları ve anahtar sözcükleri](optimization-pragmas-and-keywords.md) \
 [Derleyici verimini geliştirme](improving-compiler-throughput.md) \
-[Kayan noktalı sayıların neden duyarlık Kaybedemeyebilir](why-floating-point-numbers-may-lose-precision.md) \
-[IEEE kayan nokta temsili](ieee-floating-point-representation.md) \
-[Zaman açısından kritik kodu Iyileştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md) \
+[Floating-Point sayıların neden duyarlık Kaybedemeyebilir](why-floating-point-numbers-may-lose-precision.md) \
+[IEEE Floating-Point temsili](ieee-floating-point-representation.md) \
+[Time-Critical kodu Iyileştirmeye yönelik ipuçları](tips-for-improving-time-critical-code.md) \
 [() Olmadan Işlev adının kullanılması kod üretmez](using-function-name-without-parens-produces-no-code.md) \
 [En Iyi duruma getirme uygulamaları](optimization-best-practices.md) \
 [Profil temelli Iyileştirmeler](profile-guided-optimizations.md) \
-[Profil temelli Iyileştirmeler için ortam değişkenleri](environment-variables-for-profile-guided-optimizations.md) \
+[Profile-Guided Iyileştirmeleri için ortam değişkenleri](environment-variables-for-profile-guided-optimizations.md) \
 [Pgooto süpürme](pgoautosweep.md) \
 [pgomgr](pgomgr.md) \
 [pgosweep](pgosweep.md) \
-[Nasıl Yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
+[Nasıl yapılır: birden çok PGO profilini tek bir profilde birleştirme](how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
