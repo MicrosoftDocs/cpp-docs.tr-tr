@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kaynak derleyicisi hatası RW2001'
 title: Kaynak Derleyicisi Hatası RW2001
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW2001
 ms.assetid: 963bdc7d-6ebe-4378-8bbc-47dfcf5d330c
-ms.openlocfilehash: 900bfed9d57af0f6f5dd8fac19380bb7c382addc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e550854af4d504e484b722050f0274887956f2c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190748"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337249"
 ---
 # <a name="resource-compiler-error-rw2001"></a>Kaynak Derleyicisi Hatası RW2001
 
@@ -19,7 +20,7 @@ ms.locfileid: "80190748"
 
 RC dosyası bir **#pragma** yönergesi içerir.
 
-**#İfndef** Önişlemci yönergesini, kaynak derleyicisinin bir içerme dosyasını işlediğinde tanımladığı **RC_INVOKED** sabiti ile kullanın. **#Pragma** yönergesini **RC_INVOKED** sabiti tanımlandığında işlenmemiş bir kod bloğunun içine yerleştirin. Bloktaki kod, kaynak derleyicisi tarafından değil yalnızca C/C++ derleyici tarafından işlenir. Aşağıdaki örnek kod bu tekniği göstermektedir:
+**#İfndef** Önişlemci yönergesini, kaynak derleyicisinin bir içerme dosyasını işlediğinde tanımladığı **RC_INVOKED** sabiti ile kullanın. **#Pragma** yönergesini **RC_INVOKED** sabiti tanımlandığında işlenmemiş bir kod bloğunun içine yerleştirin. Bloktaki kod, kaynak derleyicisi tarafından değil yalnızca C/C++ derleyicisi tarafından işlenir. Aşağıdaki örnek kod bu tekniği göstermektedir:
 
 ```
 #ifndef RC_INVOKED

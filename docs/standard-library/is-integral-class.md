@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_integral sınıfı'
 title: is_integral Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - is_integral class
 - is_integral
 ms.assetid: fe9279d0-4495-4e88-bf23-153cc6602397
-ms.openlocfilehash: a3d618b77d69f5d80736ac20304c9184c5963b25
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: db586054614b9a5ef49ffe9fe8b643b35c65a217
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323707"
 ---
 # <a name="is_integral-class"></a>is_integral Sınıfı
 
 Tür integral ise sınar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Ty>
@@ -34,7 +35,7 @@ Sorgulanacak tür.
 
 Tür değeri integral türlerden biri veya integral türlerinden birinin bir formu *ise tür* koşulu örneği true, `cv-qualified` Aksi takdirde false barındırır.
 
-İntegral türü,,,, **`bool`** , **`char`** **`unsigned char`** **`signed char`** **`wchar_t`** **`short`** , **`unsigned short`** , **`int`** , **`unsigned int`** , **`long`** , ve **`unsigned long`** ' den biridir. Ayrıca, bunları sağlayan derleyiciler ile, bir integral türü,,, **`long long`** **`unsigned long long`** **`__int64`** ve **işaretsiz __int64**olabilir.
+İntegral türü,,,, **`bool`** , **`char`** **`unsigned char`** **`signed char`** **`wchar_t`** **`short`** , **`unsigned short`** , **`int`** , **`unsigned int`** , **`long`** , ve **`unsigned long`** ' den biridir. Ayrıca, bunları sağlayan derleyiciler ile, bir integral türü,,, **`long long`** **`unsigned long long`** **`__int64`** ve **işaretsiz __int64** olabilir.
 
 ## <a name="example"></a>Örnek
 

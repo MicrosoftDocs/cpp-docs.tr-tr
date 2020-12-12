@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _BitScanForward _BitScanForward64'
 title: _BitScanForward, _BitScanForward64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - bsf instruction
 - BitScanForward intrinsic
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
-ms.openlocfilehash: 91f43d19259419b78d1910a00a154d2d4f0adfc7
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 182f22b5350fcad7c3da9a0d6f6df36c0871a3e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337226"
 ---
 # <a name="_bitscanforward-_bitscanforward64"></a>_BitScanForward, _BitScanForward64
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Maske verilerinde en az önemli bit (LSB) ile küme bit (1) için en önemli bit (MSB) arasında arama yapın.
 
@@ -45,7 +46,7 @@ dışı İlk küme bitinin (1) bulunduğu bit konumuyla yüklendi.
 *Maskesi*\
 'ndaki Aranacak 32-bit veya 64 bit değeri.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 maske sıfırsa 0; sıfır dışında tersi.
 
@@ -60,7 +61,7 @@ Bir küme bit bulunursa, bulunan ilk küme bitinin bit konumu ilk parametrede d�
 |`_BitScanForward`|x86, ARM, x64, ARM64|
 |`_BitScanForward64`|ARM64, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="example"></a>Örnek
 

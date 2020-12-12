@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetim eklemek için Iletişim kutusu düzenleyicisini kullanma'
 title: Denetim Eklemek için İletişim Kutusu Düzenleyicisini Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,20 +9,20 @@ helpviewer_keywords:
 - Dialog editor, creating controls
 - common controls [MFC], adding
 ms.assetid: d3f9f994-7e54-4656-a545-42c204557c36
-ms.openlocfilehash: b88056d1c44e434e77f3f3b94976bf92516bbf3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a57031539c284529b6ad21d51fd5fd2c409e2a3c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314561"
 ---
 # <a name="using-the-dialog-editor-to-add-controls"></a>Denetim Eklemek için İletişim Kutusu Düzenleyicisini Kullanma
 
-İletişim şablonu kaynağınızı oluştururken [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), denetimleri denetim paletinden sürükle ve iletişim kutusuna sürükleyip bırakın. Bu iletişim şablon kaynağı için bu denetim türü için özellikleri ekler. Ne zaman oluşturmak iletişim nesnesi ve çağrı kendi `Create` veya `DoModal` üye işlevi, framework Windows denetimi oluşturur ve ekranda iletişim penceresinde yerleştirir.
+İletişim kutusu [Düzenleyicisi](../windows/dialog-editor.md)ile iletişim şablonu kaynağını oluşturduğunuzda denetimleri bir denetim paletinden sürükleyip iletişim kutusuna yerleştirebilirsiniz. Bu denetim türü için belirtimleri iletişim kutusu şablonu kaynağına ekler. Bir iletişim nesnesi oluşturup `Create` veya `DoModal` üye işlevini çağırdığınızda, çerçeve bir Windows denetimi oluşturur ve bunu ekranda iletişim kutusu penceresine koyar.
 
-Bunun yerine yapabilecekleriniz [denetimler el ile oluşturmak](../mfc/adding-controls-by-hand.md) istiyorsanız. Daha fazla iş budur.
+Bunun yerine isterseniz [el ile denetim oluşturabilirsiniz](../mfc/adding-controls-by-hand.md) . Bu daha fazla çalışmadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetimleri Yapma ve Kullanma](../mfc/making-and-using-controls.md)<br/>
+[Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)<br/>
 [Denetimler](../mfc/controls-mfc.md)

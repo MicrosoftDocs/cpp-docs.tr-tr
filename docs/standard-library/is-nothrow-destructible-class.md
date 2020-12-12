@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_nothrow_destructible sınıfı'
 title: is_nothrow_destructible sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_destructible
 ms.assetid: 0bbd8a28-e312-4d72-bd28-aac027f974d3
-ms.openlocfilehash: 44de1f1fae1ea542aa247c0b39f04ee6bbd6308a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 017cc6de7ce5c618fcc3f47540efd34b5fdc40a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323624"
 ---
-# <a name="isnothrowdestructible-class"></a>is_nothrow_destructible sınıfı
+# <a name="is_nothrow_destructible-class"></a>is_nothrow_destructible sınıfı
 
 Türün geri çevrilebilir olup olmadığını ve yıkıcının throw tarafından oluşturulup oluşturulmayacağını sınar.
 
@@ -26,7 +27,7 @@ struct is_nothrow_destructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -35,7 +36,7 @@ Tür *T* bir örneği, yeniden çevrilebilir bir tür ise ve yok edicinin oluşt
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

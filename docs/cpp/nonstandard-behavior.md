@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: standart olmayan davranış'
 title: Standart Dışı Davranış
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Microsoft-specific, compiler behavior
 - nonstandard behavior, compliance and compatibility
 ms.assetid: a57dea27-dc79-4f64-8a83-017e84841773
-ms.openlocfilehash: f31938c78e443bb53a286f79661d86b7a6e9edbc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9f696582b23dfd4a22e6d48b9294a79787518b50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330851"
 ---
 # <a name="nonstandard-behavior"></a>Standart Dışı Davranış
 
@@ -64,7 +65,7 @@ int main() {
 
 ## <a name="function-exception-specifiers"></a>İşlev Özel Durum Belirleyicileri.
 
-İşlev özel durum tanımlayıcıları `throw()` ayrıştırıldı, ancak kullanılmaz. Bu, ISO C++ belirtiminin 15.4 bölümü ile uyumlu değildir. Örnek:
+İşlev özel durum tanımlayıcıları `throw()` ayrıştırıldı, ancak kullanılmaz. Bu, ISO C++ belirtiminin 15.4 bölümü ile uyumlu değildir. Örneğin:
 
 ```cpp
 void f() throw(int); // parsed but not used

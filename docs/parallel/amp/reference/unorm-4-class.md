@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unorm_4 Sınıfı'
 title: unorm_4 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -268,18 +269,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unorm_4::rb
 - amp_short_vectors/Concurrency::graphics::unorm_4::get_wzyx
 ms.assetid: dd216a9d-95f7-4978-8e78-6cb9c781a7e9
-ms.openlocfilehash: 0164f595ba44999718895f5221250f12bd6b7344
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 3dd18f46c1202eb8ae5720f05cad778d02317c8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314548"
 ---
 # <a name="unorm_4-class"></a>unorm_4 Sınıfı
 
 Dört işaretsiz normal sayının kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class unorm_4;
@@ -304,21 +305,21 @@ class unorm_4;
 |Ad|Açıklama|
 |----------|-----------------|
 |unorm_4:: get_w||
-|unorm_4::get_wx||
-|unorm_4::get_wxy||
-|unorm_4::get_wxyz||
-|unorm_4::get_wxz||
-|unorm_4::get_wxzy||
+|unorm_4:: get_wx||
+|unorm_4:: get_wxy||
+|unorm_4:: get_wxyz||
+|unorm_4:: get_wxz||
+|unorm_4:: get_wxzy||
 |unorm_4:: get_wy||
-|unorm_4::get_wyx||
-|unorm_4::get_wyxz||
-|unorm_4::get_wyz||
-|unorm_4::get_wyzx||
-|unorm_4::get_wz||
-|unorm_4::get_wzx||
-|unorm_4::get_wzxy||
-|unorm_4::get_wzy||
-|unorm_4::get_wzyx||
+|unorm_4:: get_wyx||
+|unorm_4:: get_wyxz||
+|unorm_4:: get_wyz||
+|unorm_4:: get_wyzx||
+|unorm_4:: get_wz||
+|unorm_4:: get_wzx||
+|unorm_4:: get_wzxy||
+|unorm_4:: get_wzy||
+|unorm_4:: get_wzyx||
 |unorm_4:: get_x||
 |unorm_4:: get_xw||
 |unorm_4:: get_xwy||
@@ -328,69 +329,69 @@ class unorm_4;
 |unorm_4:: get_xy||
 |unorm_4:: get_xyw||
 |unorm_4:: get_xywz||
-|unorm_4::get_xyz||
-|unorm_4::get_xyzw||
-|unorm_4::get_xz||
+|unorm_4:: get_xyz||
+|unorm_4:: get_xyzw||
+|unorm_4:: get_xz||
 |unorm_4:: get_xzw||
 |unorm_4:: get_xzwy||
-|unorm_4::get_xzy||
-|unorm_4::get_xzyw||
-|unorm_4::get_y||
+|unorm_4:: get_xzy||
+|unorm_4:: get_xzyw||
+|unorm_4:: get_y||
 |unorm_4:: get_yw||
-|unorm_4::get_ywx||
-|unorm_4::get_ywxz||
-|unorm_4::get_ywz||
+|unorm_4:: get_ywx||
+|unorm_4:: get_ywxz||
+|unorm_4:: get_ywz||
 |unorm_4:: get_ywzx||
-|unorm_4::get_yx||
-|unorm_4::get_yxw||
-|unorm_4::get_yxwz||
-|unorm_4::get_yxz||
-|unorm_4::get_yxzw||
-|unorm_4::get_yz||
-|unorm_4::get_yzw||
+|unorm_4:: get_yx||
+|unorm_4:: get_yxw||
+|unorm_4:: get_yxwz||
+|unorm_4:: get_yxz||
+|unorm_4:: get_yxzw||
+|unorm_4:: get_yz||
+|unorm_4:: get_yzw||
 |unorm_4:: get_yzwx||
-|unorm_4::get_yzx||
-|unorm_4::get_yzxw||
-|unorm_4::get_z||
+|unorm_4:: get_yzx||
+|unorm_4:: get_yzxw||
+|unorm_4:: get_z||
 |unorm_4:: get_zw||
-|unorm_4::get_zwx||
-|unorm_4::get_zwxy||
-|unorm_4::get_zwy||
-|unorm_4::get_zwyx||
-|unorm_4::get_zx||
-|unorm_4::get_zxw||
-|unorm_4::get_zxwy||
-|unorm_4::get_zxy||
-|unorm_4::get_zxyw||
-|unorm_4::get_zy||
+|unorm_4:: get_zwx||
+|unorm_4:: get_zwxy||
+|unorm_4:: get_zwy||
+|unorm_4:: get_zwyx||
+|unorm_4:: get_zx||
+|unorm_4:: get_zxw||
+|unorm_4:: get_zxwy||
+|unorm_4:: get_zxy||
+|unorm_4:: get_zxyw||
+|unorm_4:: get_zy||
 |unorm_4:: get_zyw||
 |unorm_4:: get_zywx||
-|unorm_4::get_zyx||
-|unorm_4::get_zyxw||
+|unorm_4:: get_zyx||
+|unorm_4:: get_zyxw||
 |unorm_4:: ref_a||
 |unorm_4:: ref_b||
 |unorm_4:: ref_g||
 |unorm_4:: ref_r||
 |unorm_4:: ref_w||
-|unorm_4::ref_x||
+|unorm_4:: ref_x||
 |unorm_4:: ref_y||
-|unorm_4::ref_z||
+|unorm_4:: ref_z||
 |unorm_4:: set_w||
 |unorm_4:: set_wx||
-|unorm_4::set_wxy||
-|unorm_4::set_wxyz||
-|unorm_4::set_wxz||
-|unorm_4::set_wxzy||
+|unorm_4:: set_wxy||
+|unorm_4:: set_wxyz||
+|unorm_4:: set_wxz||
+|unorm_4:: set_wxzy||
 |unorm_4:: set_wy||
-|unorm_4::set_wyx||
-|unorm_4::set_wyxz||
-|unorm_4::set_wyz||
-|unorm_4::set_wyzx||
-|unorm_4::set_wz||
-|unorm_4::set_wzx||
-|unorm_4::set_wzxy||
+|unorm_4:: set_wyx||
+|unorm_4:: set_wyxz||
+|unorm_4:: set_wyz||
+|unorm_4:: set_wyzx||
+|unorm_4:: set_wz||
+|unorm_4:: set_wzx||
+|unorm_4:: set_wzxy||
 |unorm_4:: set_wzy||
-|unorm_4::set_wzyx||
+|unorm_4:: set_wzyx||
 |unorm_4:: set_x||
 |unorm_4:: set_xw||
 |unorm_4:: set_xwy||
@@ -400,45 +401,45 @@ class unorm_4;
 |unorm_4:: set_xy||
 |unorm_4:: set_xyw||
 |unorm_4:: set_xywz||
-|unorm_4::set_xyz||
-|unorm_4::set_xyzw||
+|unorm_4:: set_xyz||
+|unorm_4:: set_xyzw||
 |unorm_4:: set_xz||
-|unorm_4::set_xzw||
+|unorm_4:: set_xzw||
 |unorm_4:: set_xzwy||
 |unorm_4:: set_xzy||
 |unorm_4:: set_xzyw||
 |unorm_4:: set_y||
-|unorm_4::set_yw||
-|unorm_4::set_ywx||
-|unorm_4::set_ywxz||
-|unorm_4::set_ywz||
-|unorm_4::set_ywzx||
-|unorm_4::set_yx||
-|unorm_4::set_yxw||
-|unorm_4::set_yxwz||
-|unorm_4::set_yxz||
-|unorm_4::set_yxzw||
-|unorm_4::set_yz||
-|unorm_4::set_yzw||
-|unorm_4::set_yzwx||
-|unorm_4::set_yzx||
-|unorm_4::set_yzxw||
-|unorm_4::set_z||
+|unorm_4:: set_yw||
+|unorm_4:: set_ywx||
+|unorm_4:: set_ywxz||
+|unorm_4:: set_ywz||
+|unorm_4:: set_ywzx||
+|unorm_4:: set_yx||
+|unorm_4:: set_yxw||
+|unorm_4:: set_yxwz||
+|unorm_4:: set_yxz||
+|unorm_4:: set_yxzw||
+|unorm_4:: set_yz||
+|unorm_4:: set_yzw||
+|unorm_4:: set_yzwx||
+|unorm_4:: set_yzx||
+|unorm_4:: set_yzxw||
+|unorm_4:: set_z||
 |unorm_4:: set_zw||
 |unorm_4:: set_zwx||
-|unorm_4::set_zwxy||
-|unorm_4::set_zwy||
-|unorm_4::set_zwyx||
-|unorm_4::set_zx||
-|unorm_4::set_zxw||
-|unorm_4::set_zxwy||
-|unorm_4::set_zxy||
-|unorm_4::set_zxyw||
-|unorm_4::set_zy||
-|unorm_4::set_zyw||
+|unorm_4:: set_zwxy||
+|unorm_4:: set_zwy||
+|unorm_4:: set_zwyx||
+|unorm_4:: set_zx||
+|unorm_4:: set_zxw||
+|unorm_4:: set_zxwy||
+|unorm_4:: set_zxy||
+|unorm_4:: set_zxyw||
+|unorm_4:: set_zy||
+|unorm_4:: set_zyw||
 |unorm_4:: set_zywx||
-|unorm_4::set_zyx||
-|unorm_4::set_zyxw||
+|unorm_4:: set_zyx||
+|unorm_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -531,8 +532,8 @@ class unorm_4;
 |unorm_4:: WX||
 |unorm_4:: wxy||
 |unorm_4:: WXYZ||
-|unorm_4::wxz||
-|unorm_4::wxzy||
+|unorm_4:: wxz||
+|unorm_4:: wxzy||
 |unorm_4:: WY||
 |unorm_4:: wyx||
 |unorm_4:: wyxz||
@@ -581,16 +582,16 @@ class unorm_4;
 |unorm_4:: zwxy||
 |unorm_4:: zwy||
 |unorm_4:: zwyx||
-|unorm_4::zx||
+|unorm_4:: ZX||
 |unorm_4:: ZXW||
 |unorm_4:: zxwy||
-|unorm_4::zxy||
-|unorm_4::zxyw||
-|unorm_4::zy||
+|unorm_4:: zxy||
+|unorm_4:: zxyw||
+|unorm_4:: zy||
 |unorm_4:: zyw||
 |unorm_4:: zywx||
-|unorm_4::zyx||
-|unorm_4::zyxw||
+|unorm_4:: ZYX||
+|unorm_4:: zyxw||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -602,7 +603,7 @@ class unorm_4;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>unorm_4
+## <a name="unorm_4"></a><a name="ctor"></a> unorm_4
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -677,7 +678,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="unorm_4__size"></a>boyutla
+## <a name="size"></a><a name="unorm_4__size"></a> boyutla
 
 ```cpp
 static const int size = 4;

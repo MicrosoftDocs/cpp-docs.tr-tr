@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2909'
 title: Derleyici hatası C2909
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2909
 ms.assetid: 1c9df8ae-925d-4002-a5f8-a71413c45f9e
-ms.openlocfilehash: 6c9a40bd271fa04146193e8315e205e293e8a34d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c2a3ba74f87edb0f1958910d04820316508f6567
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750487"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270647"
 ---
 # <a name="compiler-error-c2909"></a>Derleyici hatası C2909
 

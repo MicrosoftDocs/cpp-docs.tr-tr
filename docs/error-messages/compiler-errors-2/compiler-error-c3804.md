@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3804'
 title: Derleyici hatası C3804
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3804
 ms.assetid: 7c4cda28-ec96-4d04-937b-36dbd9944722
-ms.openlocfilehash: 3bccfc723a9d62b794fa657e399bd94549448490
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b033acefd9a583b1659755f63fdbd3781fc95ccd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755297"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291512"
 ---
 # <a name="compiler-error-c3804"></a>Derleyici hatası C3804
 

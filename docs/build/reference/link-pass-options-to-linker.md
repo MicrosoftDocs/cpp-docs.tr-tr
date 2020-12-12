@@ -1,4 +1,5 @@
 ---
+description: :/Link hakkında daha fazla bilgi edinin (bağlayıcı seçeneklerini bağlayıcıya geçirin)
 title: /link (Seçenekleri Bağlayıcıya Geçir)
 ms.date: 03/25/2019
 f1_keywords:
@@ -11,51 +12,51 @@ helpviewer_keywords:
 - -link compiler option [C++]
 - cl.exe compiler [C++], passing options to linker
 ms.assetid: 16902a94-c094-4328-841f-3ac94ca04848
-ms.openlocfilehash: 37743e855c933b6236b5e7a837db257f332a3037
-ms.sourcegitcommit: bbaf65f8ed1af12828b38f8eacd24f934ac0e538
+ms.openlocfilehash: 3617a005e6adbc41a589606aa145712fa2df442d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67155785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199499"
 ---
 # <a name="link-pass-options-to-linker"></a>/link (Seçenekleri Bağlayıcıya Geçir)
 
-Bir veya daha fazla bağlayıcı seçenekleri bağlayıcıya iletir.
+Bağlayıcıya bir veya daha fazla bağlayıcı seçeneği geçirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ link** *bağlayıcı seçenekleri*
+> **/Link** *bağlayıcı-seçenekler*
 
 ## <a name="arguments"></a>Arguments
 
-*bağlayıcı seçenekleri*<br/>
-Seçenekleri bağlayıcıya geçirilemez ve bağlayıcı seçeneği.
+*bağlayıcı-seçenekler*<br/>
+Bağlayıcıya geçirilecek bağlayıcı seçeneği veya seçenekleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Link** seçeneği ve bağlayıcı seçenekleri herhangi bir dosya adlarını ve CL seçenekleri sonra görünmelidir. Bir arasında gerekli bir alandır **/link** ve bağlayıcı seçenekleri. Daha fazla bilgi için [MSVC bağlayıcı başvurusu](linking.md).
+**/Link** seçeneği ve bağlayıcı seçenekleri herhangi bir dosya adı ve CL seçeneğinden sonra gelmelidir. **/Link** ve bağlayıcı seçenekleri arasında bir boşluk gereklidir. Daha fazla bilgi için bkz. [MSVC bağlayıcı başvurusu](linking.md).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek komut satırı derleme *hello.cpp* ve varolan nesne dosyasına bağlantılar *there.obj*. Daha sonra ek bir geçirir **/VERSION** bağlayıcı komutu:
+Bu örnek komut satırı *Hello. cpp* ' i derler ve var olan nesne dosyası *. obj* öğesine bağlar. Daha sonra bağlayıcıya ek bir **/Version** komutu geçirir:
 
 `cl /W4 /EHsc hello.cpp there.obj /link /VERSION:3.14`
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-IDE, normalde derlemek ve kodunuzu bağlamak için ayrı komutlar gönderir. Bağlayıcı seçenekleri, proje özelliği sayfalarından ayarlayabilirsiniz.
+IDE, kodunuzu derlemek ve bağlamak için normalde ayrı komutlar gönderir. Proje özellik sayfalarınızda bağlayıcı seçeneklerini belirleyebilirsiniz.
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** klasör.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı** klasörünü seçin.
 
-1. Bir veya daha fazla özelliklerini değiştirin. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+1. Bir veya daha fazla özelliği değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bu derleyici seçeneğini program aracılığıyla değiştirilemez.
+- Bu derleyici seçeneği program aracılığıyla değiştirilemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

@@ -1,41 +1,42 @@
 ---
-title: İşlevi Ayıkla
+description: 'Daha fazla bilgi edinin: Extract Işlevi'
+title: Extract Işlevi
 ms.date: 11/16/2016
 ms.assetid: e31d1249-9705-4511-acbd-9f6fe73bdf2d
-ms.openlocfilehash: ec3b9a0aeaef9e418b457bafdfb9bb1bbd2edffc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4ae5e858c658d14e72db8740232b74935c655292
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62349374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259766"
 ---
-# <a name="extract-function"></a>İşlevi Ayıkla
+# <a name="extract-function"></a>Extract Işlevi
 
-**Ne:** Kodun bir parçasını kendi işlevine kapatmanızı sağlar.
+**Ne:** Kodun bir parçasını kendi işlevine açmanızı sağlar.
 
-**ne zaman:** Başka bir işlevden çağrılması gereken bazı işlevindeki mevcut kodun bir parçasını sahip.
+**Ne zaman:** Başka bir işlevden çağrılması gereken, bazı işlevlerden varolan kodun bir parçası var.
 
-**Neden:** Kopyala/kod Yapıştır, ancak çoğaltma için neden.  Herhangi bir işlev tarafından çağrılabilen serbestçe kendi işlevine, parça yeniden düzenleme daha iyi bir çözümdür.
+**Neden:** Bu kodu kopyalayabilir/yapıştırabilir, ancak çoğaltmaya yol açabilir.  Daha iyi bir çözüm, bu parçayı, başka bir işlev tarafından serbestçe çağrılabilen kendi işlevine yeniden düzenlemeniz.
 
-**Nasıl:**
+**Oluşturulacağı**
 
-1. Ayıklanacak kod vurgular:
+1. Ayıklanacak kodu vurgulayın:
 
-   ![Vurgulanmış kodu](images/extractfunction_highlight.png)
+   ![Vurgulanan kod](images/extractfunction_highlight.png)
 
-1. Ardından, aşağıdakilerden birini yapın:
+1. Sonra, aşağıdakilerden birini yapın:
    * **Klavye**
-     * Tuşuna **Ctrl + R**, ardından **Ctrl + M**.  (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
-     * Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **işlevi ayıklama (Deneysel)** bağlam menüsünden.
+     * **CTRL + R**, ardından **CTRL + M** tuşlarına basın.  (Klavye kısayolunuzun seçtiğiniz profile göre farklı olabileceğini unutmayın.)
+     * **CTRL +** tuşlarına basın. **hızlı eylemleri ve yeniden düzenlemeler** menüsünü tetiklemek ve bağlam menüsünden **Işlevi Ayıkla (deneysel)** seçeneğini belirleyin.
    * **Fare**
-     * Seçin **Düzenle > yeniden düzenleyin > ayıklayın işlevi (Deneysel)**.
-     * Kod sağ tıklayın, **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **işlevi ayıklama (Deneysel)** bağlam menüsünden.
-     * Tıklayın ![ampul](images/bulb.png) seçin ve sol kenar boşluğu içinde görünen simge **işlevi ayıklama (Deneysel)** bağlam menüsünden.
+     * **> Ayıkla (deneysel) > Düzenle** seçeneğini belirleyin.
+     * Koda sağ tıklayın, **Hızlı Eylemler ve yeniden düzenlemeler** menüsünü seçin ve bağlam menüsünden **Işlevi Ayıkla (deneysel)** seçeneğini belirleyin.
+     * ![ ](images/bulb.png) Sol kenar boşluğunda görüntülenen ampul simgesine tıklayın ve bağlam menüsünden **Işlevi Ayıkla (deneysel)** seçeneğini belirleyin.
 
-1. İçinde **Extract işlevi/metodu (Deneysel)** penceresinde, yeni bir işlev adı girin, yerleştirilecek kodu istediğiniz yeri seçin ve tıklayın **Tamam** düğmesi.
+1. **İşlevi/yöntemi Ayıkla (deneysel)** penceresinde, yeni işlev adını girin, kodun yerleştirilmesini istediğiniz yeri seçin ve **Tamam** düğmesine tıklayın.
 
-   ![İşlev iletişim ayıklayın](images/extractfunction_dialog.png)
+   ![İşlev Ayıkla iletişim kutusu](images/extractfunction_dialog.png)
 
-1. Yeni bir işlev oluşturulur bir işlev prototipi karşılık gelen bir üstbilgi dosyasında belirtilen ve bu işlevi çağırmak için özgün koda değiştirilecek.
+1. Yeni işlev, belirttiğiniz yerde, ilgili başlık dosyasında bir işlev prototipini ve bu işlevi çağırmak için özgün kod değiştirilir.
 
-   ![İşlev sonucuna ayıklayın](images/extractfunction_result.png)
+   ![İşlev sonucunu Ayıkla](images/extractfunction_result.png)

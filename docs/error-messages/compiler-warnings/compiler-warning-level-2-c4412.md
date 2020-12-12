@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 2) C4412'
 title: Derleyici Uyarısı (düzey 2) C4412
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4412
 ms.assetid: f28dc531-1a98-497b-a366-0a13e1bc81c7
-ms.openlocfilehash: 79b4ac95fbac344ff86922b84870e01c6681ed69
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 9b7ce857d5b0545ac620e94bda9655dde0f63489
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684999"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208638"
 ---
 # <a name="compiler-warning-level-2-c4412"></a>Derleyici Uyarısı (düzey 2) C4412
 
@@ -92,7 +93,7 @@ __declspec(dllexport) Unsafe * __cdecl func() { return new Unsafe; }
 __declspec(dllexport) Safe * __cdecl func2() { return new Safe; }
 ```
 
-**/Clr: Pure** derlemesinde varsayılan çağırma kuralı yerel bir derlemeden farklıdır.  C4412. h dahil edildiğinde `Test` Varsayılan olarak öğesine ayarlanır `__clrcall` . Bu programı derleyip çalıştırırsanız ( **/c**kullanmayın), program bir özel durum oluşturur.
+**/Clr: Pure** derlemesinde varsayılan çağırma kuralı yerel bir derlemeden farklıdır.  C4412. h dahil edildiğinde `Test` Varsayılan olarak öğesine ayarlanır `__clrcall` . Bu programı derleyip çalıştırırsanız ( **/c** kullanmayın), program bir özel durum oluşturur.
 
 Aşağıdaki örnek C4412 oluşturur.
 

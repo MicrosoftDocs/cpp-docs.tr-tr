@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: mutex sınıfı'
 title: Mutex Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Mutex::Mutex, constructor
 - Microsoft::WRL::Wrappers::Mutex::operator= operator
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
-ms.openlocfilehash: 36466bd00c5b100f20ee87173e68fdef4131ec23
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f69c14014a2283fe56ef8e7f705bebe5a5f6dc9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371228"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330839"
 ---
 # <a name="mutex-class"></a>Mutex Sınıfı
 
-Yalnızca paylaşılan bir kaynağı denetleyen bir eşitleme nesnesi temsil eder.
+Paylaşılan bir kaynağı özel olarak denetleyen bir eşitleme nesnesini temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class Mutex : public HandleT<HandleTraits::MutexTraits>;
@@ -32,29 +33,29 @@ class Mutex : public HandleT<HandleTraits::MutexTraits>;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-Adı       | Açıklama
+Ad       | Açıklama
 ---------- | ------------------------------------------------------
-`SyncLock` | Senkron kilitleri destekleyen bir sınıfın eşanlamlısı.
+`SyncLock` | Zaman uyumlu kilitleri destekleyen bir sınıf için eş anlamlı.
 
-### <a name="public-constructor"></a>Kamu Yapıcı
+### <a name="public-constructor"></a>Ortak Oluşturucu
 
-Adı                   | Açıklama
+Ad                   | Açıklama
 ---------------------- | ------------------------------------------------
-[Mutex::Mutex](#mutex) | `Mutex` sınıfının yeni bir örneğini başlatır.
+[Mutex:: mutex](#mutex) | `Mutex` sınıfının yeni bir örneğini başlatır.
 
-### <a name="public-members"></a>Kamu Üyeleri
+### <a name="public-members"></a>Ortak Üyeler
 
-Adı                 | Açıklama
+Ad                 | Açıklama
 -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------
-[Mutex::Kilit](#lock) | Geçerli nesnenin veya belirtilen `Mutex` tutamaçla ilişkili nesnenin mutex'i serbest bırakmasını veya belirtilen zaman aşımı aralığının geçmesini bekler.
+[Mutex:: Lock](#lock) | Geçerli nesne veya `Mutex` belirtilen tanıtıcıyla ilişkili nesne tamamlanana kadar bekler, mutex 'i veya belirtilen zaman aşımı aralığını yayınlar.
 
-### <a name="public-operator"></a>Kamu Operatörü
+### <a name="public-operator"></a>Ortak Işleç
 
-Adı                                 | Açıklama
+Ad                                 | Açıklama
 ------------------------------------ | ---------------------------------------------------------------------------
-[Mutex::operator=](#operator-assign) | Belirtilen `Mutex` nesneyi geçerli `Mutex` nesneye atar (taşır).
+[Mutex:: operator =](#operator-assign) | Belirtilen nesneyi geçerli nesneye atar (taşımaktadır) `Mutex` `Mutex` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -62,13 +63,13 @@ Adı                                 | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Ad alanı:** Microsoft::WRL::Sarmalayıcılar
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar
 
-## <a name="mutexlock"></a><a name="lock"></a>Mutex::Kilit
+## <a name="mutexlock"></a><a name="lock"></a> Mutex:: Lock
 
-Geçerli nesnenin veya belirtilen `Mutex` tutamaçla ilişkili nesnenin mutex'i serbest bırakmasını veya belirtilen zaman aşımı aralığının geçmesini bekler.
+Geçerli nesne veya `Mutex` belirtilen tanıtıcıyla ilişkili nesne tamamlanana kadar bekler, mutex 'i veya belirtilen zaman aşımı aralığını yayınlar.
 
 ```cpp
 SyncLock Lock(
@@ -84,14 +85,14 @@ static SyncLock Lock(
 ### <a name="parameters"></a>Parametreler
 
 *milisaniye*<br/>
-Zaman aralığı, milisaniye cinsinden. Varsayılan değer, süresiz olarak bekleyen SONSUZ'dur.
+Milisaniye cinsinden zaman aşımı aralığı. Varsayılan değer sonsuz ' dur ve sonsuza kadar bekler.
 
-*H*<br/>
-Bir `Mutex` nesnenin tutamacı.
+*h*<br/>
+Bir `Mutex` nesnenin tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="mutexmutex"></a><a name="mutex"></a>Mutex::Mutex
+## <a name="mutexmutex"></a><a name="mutex"></a> Mutex:: mutex
 
 `Mutex` sınıfının yeni bir örneğini başlatır.
 
@@ -107,16 +108,16 @@ Mutex(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
-Bir `Mutex` nesneye bir tanıtıcı veya bir tanıtıcıya rvalue-reference.
+*h*<br/>
+Nesneye bir tanıtıcı veya rvalue başvurusu `Mutex` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu, belirtilen `Mutex` tutamacından bir nesneyi başharfe ait hale leştirir. İkinci oluşturucu bir `Mutex` nesneyi belirtilen tutamaçtan başharfe taşır ve sonra `Mutex` mutex'in sahipliğini geçerli nesneye taşır.
+İlk Oluşturucu `Mutex` belirtilen tanıtıcıdan bir nesne başlatır. İkinci Oluşturucu `Mutex` belirtilen tanıtıcıdan bir nesne başlatır ve ardından mutex 'in sahipliğini geçerli nesneye taşımaktır `Mutex` .
 
-## <a name="mutexoperator"></a><a name="operator-assign"></a>Mutex::operator=
+## <a name="mutexoperator"></a><a name="operator-assign"></a> Mutex:: operator =
 
-Belirtilen `Mutex` nesneyi geçerli `Mutex` nesneye atar (taşır).
+Belirtilen nesneyi geçerli nesneye atar (taşımaktadır) `Mutex` `Mutex` .
 
 ```cpp
 Mutex& operator=(
@@ -126,13 +127,13 @@ Mutex& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
-Bir `Mutex` nesneye rvalue-reference.
+*h*<br/>
+Bir nesnesine rvalue başvurusu `Mutex` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli `Mutex` nesneye bir başvuru.
+Geçerli nesneye bir başvuru `Mutex` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi [için, Rvalue Başvuru Bildirimcisi'nin ](../../cpp/rvalue-reference-declarator-amp-amp.md) **Anlamtaşı** bölümüne bakın: &&.
+Daha fazla bilgi için, [rvalue başvuru bildirimci:  &&](../../cpp/rvalue-reference-declarator-amp-amp.md)' nin **taşıma semantiğini** bölümüne bakın.

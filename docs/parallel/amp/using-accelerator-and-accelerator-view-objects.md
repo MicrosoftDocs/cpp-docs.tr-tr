@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Hızlandırıcı ve accelerator_view nesneleri kullanma'
 title: Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 ms.date: 11/04/2016
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-ms.openlocfilehash: 7807f0c1c572b2e7c3224cf0366233e2a28dbe07
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 270b517764b8060efbaea9d00c20e24aa1746818
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314496"
 ---
 # <a name="using-accelerator-and-accelerator_view-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 
@@ -90,7 +91,7 @@ void pick_with_most_memory()
 ```
 
 > [!NOTE]
-> Tarafından döndürülen hızlandırıcılardan biri `accelerator::get_all` CPU hızlandırıcısıdır. CPU hızlandırıcısında kod yürütemezsiniz. CPU hızlandırıcıyı filtrelemek için Hızlandırıcı [device_path](reference/accelerator-class.md#device_path) `accelerator::get_all` [:: cpu_accelerator](reference/accelerator-class.md#cpu_accelerator)değeri ile döndürülen hızlandırıcının device_path özelliğinin değerini karşılaştırın. Daha fazla bilgi için bu makaledeki "özel Hızlandırıcılar" bölümüne bakın.
+> Tarafından döndürülen hızlandırıcılardan biri `accelerator::get_all` CPU hızlandırıcısıdır. CPU hızlandırıcısında kod yürütemezsiniz. CPU hızlandırıcıyı filtrelemek için Hızlandırıcı [](reference/accelerator-class.md#device_path) `accelerator::get_all` [:: cpu_accelerator](reference/accelerator-class.md#cpu_accelerator)değeri ile döndürülen hızlandırıcının device_path özelliğinin değerini karşılaştırın. Daha fazla bilgi için bu makaledeki "özel Hızlandırıcılar" bölümüne bakın.
 
 ## <a name="shared-memory"></a>Paylaşılan bellek
 

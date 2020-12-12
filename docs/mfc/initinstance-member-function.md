@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: InitInstance üye Işlevi'
 title: InitInstance Üye İşlevi
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - MFC, initializing
 - initializing MFC applications
 ms.assetid: 4ef09267-ff7f-4c39-91a0-57454a264f83
-ms.openlocfilehash: 0a458f19f956bb1092cc76acd587bc467f25325e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b55c5dbd665b45c74e5990b7d40a63fcd9098a9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220623"
 ---
 # <a name="initinstance-member-function"></a>InitInstance Üye İşlevi
 
-Windows işletim sistemi, aynı uygulamanın birden fazla kopyasını veya "örneğini" çalıştırmanızı sağlar. `WinMain`uygulamanın her yeni örneği başlatıldığında [InitInstance](reference/cwinapp-class.md#initinstance) 'ı çağırır.
+Windows işletim sistemi, aynı uygulamanın birden fazla kopyasını veya "örneğini" çalıştırmanızı sağlar. `WinMain` uygulamanın her yeni örneği başlatıldığında [InitInstance](reference/cwinapp-class.md#initinstance) 'ı çağırır.
 
 `InitInstance`MFC Uygulama Sihirbazı tarafından oluşturulan standart uygulama aşağıdaki görevleri gerçekleştirir:
 
@@ -39,4 +40,4 @@ Kendi başlatma kodunuzu ekleyebilir veya sihirbaz tarafından yazılan kodu de�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama Sınıfı](cwinapp-the-application-class.md)
+[CWinApp: uygulama sınıfı](cwinapp-the-application-class.md)

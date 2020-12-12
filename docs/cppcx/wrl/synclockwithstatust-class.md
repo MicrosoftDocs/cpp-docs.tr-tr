@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SyncLockWithStatusT sınıfı'
 title: SyncLockWithStatusT Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_ data member
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT, constructor
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
-ms.openlocfilehash: 4b7dbe8ae1648e4185a9eb1e1142df4a3869aa2f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6a19ae22253fddd48c7baaf29e4b88a4863b89bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186161"
 ---
 # <a name="synclockwithstatust-class"></a>SyncLockWithStatusT Sınıfı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <typename SyncTraits>
@@ -83,7 +84,7 @@ Ad                                    | Açıklama
 
 **Ad alanı:** Microsoft:: WRL:: sarmalayıcılar::D euçlar
 
-## <a name="synclockwithstatustgetstatus"></a><a name="getstatus"></a>SyncLockWithStatusT:: GetStatus
+## <a name="synclockwithstatustgetstatus"></a><a name="getstatus"></a> SyncLockWithStatusT:: GetStatus
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -101,7 +102,7 @@ Geçerli nesnenin bekleme durumunu alır `SyncLockWithStatusT` .
 
 GetStatus () işlevi, temel alınan [status_](#status) veri üyesinin değerini alır. Sınıfı temel alan bir nesne `SyncLockWithStatusT` bir kilit işlemi gerçekleştirdiğinde, nesne önce nesnenin kullanılabilir hale gelmesini bekler. Bu bekleme işleminin sonucu `status_` veri üyesinde saklanır. Veri üyesinin olası değerleri, `status_` bekleme işleminin dönüş değerleridir. Daha fazla bilgi için, bkz. işlevin dönüş değerleri [`WaitForSingleObjectEx`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) .
 
-## <a name="synclockwithstatustislocked"></a><a name="islocked"></a>SyncLockWithStatusT:: ıskilitlendi
+## <a name="synclockwithstatustislocked"></a><a name="islocked"></a> SyncLockWithStatusT:: ıskilitlendi
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -117,7 +118,7 @@ Geçerli `SyncLockWithStatusT` nesnenin bir kaynağa sahip olup olmadığını g
 
 **`true`**`SyncLockWithStatusT`nesne kilitliyse, tersi durumda **`false`** .
 
-## <a name="synclockwithstatuststatus_"></a><a name="status"></a>SyncLockWithStatusT:: status_
+## <a name="synclockwithstatuststatus_"></a><a name="status"></a> SyncLockWithStatusT:: status_
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -129,7 +130,7 @@ DWORD status_;
 
 Geçerli nesneye dayalı bir nesne üzerindeki kilit işleminden sonra temeldeki bekleme işleminin sonucunu tutar `SyncLockWithStatusT` .
 
-## <a name="synclockwithstatustsynclockwithstatust"></a><a name="synclockwithstatust"></a>SyncLockWithStatusT:: SyncLockWithStatusT
+## <a name="synclockwithstatustsynclockwithstatust"></a><a name="synclockwithstatust"></a> SyncLockWithStatusT:: SyncLockWithStatusT
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -159,4 +160,4 @@ Başka bir nesneye başvuru `SyncLockWithStatusT` .
 
 `SyncLockWithStatusT` sınıfının yeni bir örneğini başlatır.
 
-İlk Oluşturucu geçerli `SyncLockWithStatusT` nesneyi `SyncLockWithStatusT` *diğer*parametreye göre belirtilen başka bir nesneden başlatır ve ardından diğer nesneyi geçersiz kılar `SyncLockWithStatusT` . İkinci Oluşturucu olur **`protected`** ve geçerli `SyncLockWithStatusT` nesneyi geçersiz bir duruma başlatır.
+İlk Oluşturucu geçerli `SyncLockWithStatusT` nesneyi `SyncLockWithStatusT` *diğer* parametreye göre belirtilen başka bir nesneden başlatır ve ardından diğer nesneyi geçersiz kılar `SyncLockWithStatusT` . İkinci Oluşturucu olur **`protected`** ve geçerli `SyncLockWithStatusT` nesneyi geçersiz bir duruma başlatır.

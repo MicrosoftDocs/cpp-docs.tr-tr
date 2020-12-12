@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unsupported_feature sınıfı'
 title: unsupported_feature Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_feature class
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5
-ms.openlocfilehash: 561f0a258943f6d7e1c0f1b5cae716592c931fbc
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 22cbc193de2a42e76ead4097d1e39351693ef706
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314509"
 ---
 # <a name="unsupported_feature-class"></a>unsupported_feature Sınıfı
 
 Desteklenmeyen bir özellik kullanıldığında oluşturulan özel durum.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class unsupported_feature : public runtime_exception;
@@ -31,7 +32,7 @@ class unsupported_feature : public runtime_exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[unsupported_feature Oluşturucusu](#unsupported_feature)|`unsupported_feature` özel durumunun yeni bir örneğini oluşturur.|
+|[unsupported_feature Oluşturucusu](#unsupported_feature)|Özel durumun yeni bir örneğini oluşturur `unsupported_feature` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -41,9 +42,9 @@ class unsupported_feature : public runtime_exception;
 
 `unsupported_feature`
 
-## <a name="unsupported_feature"></a>unsupported_feature
+## <a name="unsupported_feature"></a><a name="unsupported_feature"></a> unsupported_feature
 
-  `unsupported_feature` özel durumunun yeni bir örneğini oluşturur.
+  Özel durumun yeni bir örneğini oluşturur `unsupported_feature` .
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -71,4 +72,4 @@ Hatanın açıklaması.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+[Eşzamanlılık ad alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

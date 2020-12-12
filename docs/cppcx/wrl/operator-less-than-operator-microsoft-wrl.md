@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: işleç &lt; işleci (Microsoft:: WRL)'
 title: 'işleç &lt; işleci (Microsoft:: WRL)'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator<
 ms.assetid: bfae0e1c-1648-482b-99c2-3217d62aba46
-ms.openlocfilehash: b438f823814e21e2da43f698471d782c88626628
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1edbb8218ef07355040bd05ab99db8f97be1cb59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226886"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330775"
 ---
 # <a name="operatorlt-operator-microsoftwrl"></a>işleç &lt; işleci (Microsoft:: WRL)
 
 Bir nesnenin adresinin diğerinden daha küçük olup olmadığını belirler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class T, class U>

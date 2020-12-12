@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: operator! = Işleci (Microsoft:: WRL)'
 title: operator!= İşleç (Microsoft::WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator!=
 ms.assetid: 785435da-87a6-4454-9bce-9d288a96dc26
-ms.openlocfilehash: af7088348cd3f52b38f0277fb7d0a973a1ca0e4b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 69385c81ee401e7fdd47077b21fbc5342eaa091a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226899"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330788"
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator!= İşleç (Microsoft::WRL)
 
 [ComPtr](comptr-class.md) ve [ComPtrRef](comptrref-class.md) nesneleri için eşitsizlik işleci.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 WRL_NOTHROW bool operator!=(

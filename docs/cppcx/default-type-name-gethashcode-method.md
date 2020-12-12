@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi: varsayılan::(type_name):: GetHashCode yöntemi'
 title: 'Varsayılan::(type_name):: GetHashCode yöntemi'
 ms.date: 12/30/2016
 ms.assetid: 58ea60f8-f820-4103-9b9b-b6635ada3fa5
-ms.openlocfilehash: 9f64607ab21cd0fd5deccbd16f3f69f96e4d245b
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 9a014b3e3ee0690c8eab384c3b04fb3928c5a0a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330864"
 ---
 # <a name="defaulttype_namegethashcode-method"></a>Varsayılan::(type_name):: GetHashCode yöntemi
 
 Bu örneğe ilişkin karma kodu döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public:int GetHashCode();
@@ -35,4 +36,4 @@ Bu örneğin karma kodu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Varsayılan Ad Alanı](../cppcx/default-namespace.md)
+[varsayılan ad alanı](../cppcx/default-namespace.md)

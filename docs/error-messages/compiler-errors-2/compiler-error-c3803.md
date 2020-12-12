@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3803'
 title: Derleyici hatası C3803
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3803
 ms.assetid: bad5fb9a-ed9a-4c15-96e7-cf06e200a50d
-ms.openlocfilehash: 771530c2d05d378b86732938aa7a2b7881608446
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 23b3c9f38470bca471910bb31f7a0acbdf14693e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755310"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291564"
 ---
 # <a name="compiler-error-c3803"></a>Derleyici hatası C3803
 

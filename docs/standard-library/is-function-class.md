@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_function sınıfı'
 title: is_function Sınıfı
 ms.date: 02/21/2019
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_function class
 - is_function
 ms.assetid: e5c0dbcd-829b-415f-853f-8c5be47c5040
-ms.openlocfilehash: 6e436d205c7569aeac7b9dc65b122f3fe289f334
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f28f634648d23eb73a1400f662ce9e23c05aaf38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456266"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323720"
 ---
-# <a name="isfunction-class"></a>is_function Sınıfı
+# <a name="is_function-class"></a>is_function Sınıfı
 
 Tür bir işlev türü ise sınar.
 
@@ -32,7 +33,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri bir işlev *türü ise true* , aksi takdirde false değerini tutan tür koşulu örneği.
+Tür *değeri bir işlev türü ise true* , aksi takdirde false değerini tutan tür koşulu örneği.
 
 ## <a name="example"></a>Örnek
 
@@ -73,11 +74,11 @@ is_function<float()> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_object Sınıfı](../standard-library/is-object-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_object sınıfı](../standard-library/is-object-class.md)

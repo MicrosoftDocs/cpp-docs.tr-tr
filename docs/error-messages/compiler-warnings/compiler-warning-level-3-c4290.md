@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4290'
 title: Derleyici Uyarısı (düzey 3) C4290
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4290
 ms.assetid: d1c6d85b-28e0-4a1f-9d48-23593337a6fb
-ms.openlocfilehash: 5970aa439a450bda4c1a2036da299d5c3cfbdb7a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 771eb01c23778a716aee22ca747ea6473909a8bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344074"
 ---
 # <a name="compiler-warning-level-3-c4290"></a>Derleyici Uyarısı (düzey 3) C4290
 
-C++bir işlevin __declspec (nothrow) olmadığını göstermek dışında özel durum belirtimi yoksayıldı
+C++ özel durum belirtimi, bir işlevin __declspec (nothrow) olmadığını göstermek dışında yoksayıldı
 
-Bir işlev, görselin C++ kabul ettiği ancak uygulamadığından özel durum belirtimi kullanılarak bildirilmiştir. Derleme sırasında yoksayılan özel durum belirtimlerine sahip kodun, özel durum belirtimlerini destekleyen gelecek sürümlerde yeniden derlenmesi ve bağlanması gerekebilir.
+Bir işlev, Visual C++ kabul etmeyen ancak uygulamadığından özel durum belirtimi kullanılarak bildirilmiştir. Derleme sırasında yoksayılan özel durum belirtimlerine sahip kodun, özel durum belirtimlerini destekleyen gelecek sürümlerde yeniden derlenmesi ve bağlanması gerekebilir.
 
 Daha fazla bilgi için bkz. [özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md) .
 
