@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __p__commode'
 title: __p__commode
 ms.date: 4/2/2020
 api_name:
@@ -23,18 +24,18 @@ f1_keywords:
 helpviewer_keywords:
 - __p__commode
 ms.assetid: 4380acb8-e3e4-409c-a60f-6205ac5189ce
-ms.openlocfilehash: 057a0146aed87a50fc2e8c444b97a8b7b51eada1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f3f779196b650d05bb16c0da652d47946fc2a10d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919497"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213630"
 ---
 # <a name="__p__commode"></a>__p__commode
 
-Dosya g/ `_commode` ç işlemleri için varsayılan *dosya kaydetme modunu* belirten genel değişkene işaret eder.
+`_commode`Dosya g/ç işlemleri için varsayılan *dosya kaydetme modunu* belirten genel değişkene işaret eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 int * __p__commode(
@@ -43,11 +44,11 @@ int * __p__commode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_commode` Genel değişkene yönelik işaretçi.
+`_commode`Genel değişkene yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__p__commode` İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
+`__p__commode`İşlevi yalnızca dahili kullanım içindir ve kullanıcı kodundan çağrılmamalıdır.
 
 Dosya tamamlama modu, kritik verilerin diske ne zaman yazıldığını belirtir. Daha fazla bilgi için bkz. [fflush](../c-runtime-library/reference/fflush.md).
 
@@ -57,4 +58,4 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|__p\__commode|iç. h|
+|__p \_ _commode|iç. h|

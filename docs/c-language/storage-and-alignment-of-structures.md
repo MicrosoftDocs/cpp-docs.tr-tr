@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yapıların depolanması ve hizalanması'
 title: Yapıların Depolanması ve Hizalanması
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - storing structures
 - packing structures
 ms.assetid: 60ff292f-2595-4f37-ae00-4c4b4f047196
-ms.openlocfilehash: 81f5b640585ec3b55e4e3d65b37ea0929a757473
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8cffc3ddfcc868a7ccb727a5092e2389dbf016a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213695"
 ---
 # <a name="storage-and-alignment-of-structures"></a>Yapıların Depolanması ve Hizalanması
 
@@ -20,7 +21,7 @@ ms.locfileid: "87229486"
 
 Yapı üyeleri, bildirildikleri sıraya göre depolanır: İlk üye en düşük, son üye en yüksek bellek adresine sahiptir.
 
-Her veri nesnesinin bir *Hizalama gerekliliği*vardır. Yapılar için gereksinim üyelerinin en büyüğüdür. Her nesneye bir *konum* ayrılır, böylece
+Her veri nesnesinin bir *Hizalama gerekliliği* vardır. Yapılar için gereksinim üyelerinin en büyüğüdür. Her nesneye bir *konum* ayrılır, böylece
 
 *konum* `%` *hizalama-gereksinim* `==` 0
 

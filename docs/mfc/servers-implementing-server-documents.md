@@ -1,5 +1,6 @@
 ---
-title: 'Sunucular: Sunucu belgeleri uygulama'
+description: 'Daha fazla bilgi edinin: sunucular: sunucu belgeleri uygulama'
+title: 'Sunucular: Sunucu Belgeleri Uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE server applications [MFC], managing server documents
@@ -7,36 +8,36 @@ helpviewer_keywords:
 - servers, server documents
 - server documents [MFC], implementing
 ms.assetid: cca1451a-ad09-47ed-b56e-bccd78fc86d1
-ms.openlocfilehash: 17ced1cdb0b40b13fbda68150030efde5735ba7b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b8843d3e2ac662cbb018a3063c9f04f5dd8d6f10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307919"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97217334"
 ---
-# <a name="servers-implementing-server-documents"></a>Sunucular: Sunucu belgeleri uygulama
+# <a name="servers-implementing-server-documents"></a>Sunucular: Sunucu Belgeleri Uygulama
 
-Bu makalede Uygulama Sihirbazı'nda OLE sunucu seçeneği belirtmediyseniz sunucu belgesinin başarıyla uygulamak için gerçekleştirmeniz gereken adımlar açıklanmaktadır.
+Bu makalede, uygulama sihirbazında OLE sunucusu seçeneğini belirtmediyseniz bir sunucu belgesini başarıyla uygulamak için gerçekleştirmeniz gereken adımlar açıklanır.
 
-#### <a name="to-define-a-server-document-class"></a>Sunucu belge sınıfı tanımlamak için
+#### <a name="to-define-a-server-document-class"></a>Bir sunucu belge sınıfı tanımlamak için
 
-1. Belge sınıfından türetilir `COleServerDoc` yerine `CDocument`.
+1. Yerine belge sınıfınızı türetebilirsiniz `COleServerDoc` `CDocument` .
 
-1. Bir sunucu öğesi sınıfından türetilen oluşturma `COleServerItem`.
+1. Öğesinden türetilmiş bir sunucu öğesi sınıfı oluşturun `COleServerItem` .
 
-1. Uygulama `OnGetEmbeddedItem` sunucu belge sınıfının üye işlevi.
+1. `OnGetEmbeddedItem`Sunucu belge sınıfınızın üye işlevini uygulayın.
 
-   `OnGetEmbeddedItem` bir kapsayıcı uygulamasının kullanıcı oluşturur veya düzenler gömülü bir öğe adı verilir. Tüm belgeyi temsil eden bir öğe döndürmesi gerekir. Bu nesnenin olmalıdır, `COleServerItem`-türetilmiş sınıf.
+   `OnGetEmbeddedItem` bir kapsayıcı uygulamasının kullanıcısı katıştırılmış bir öğe oluşturduğunda veya düzenleayarlandığında çağrılır. Tüm belgeyi temsil eden bir öğe döndürmelidir. Bu, türetilmiş sınıfınızın bir nesnesi olmalıdır `COleServerItem` .
 
-1. Geçersiz kılma `Serialize` belgesinin içeriğini serileştirmek için üye işlevi. Yerel veri belge içinde temsil etmek için kullanmıyorsanız sunucu öğelerin listesini seri hale gerekmez. Daha fazla bilgi için *uygulama sunucu öğeleri* makaledeki [sunucuları: Sunucu öğeleri](../mfc/servers-server-items.md).
+1. `Serialize`Belgenin içeriğini seri hale getirmek için üye işlevini geçersiz kılın. Belgenizde yerel verileri temsil etmek için kullanmadığınız durumlar dışında, sunucu öğelerinin listesini serileştirmek zorunda değilsiniz. Daha fazla bilgi için bkz. Makale [sunucuları: sunucu öğeleri](../mfc/servers-server-items.md)Içindeki *sunucu öğelerini uygulama* .
 
-Sunucu belgesinin oluşturulduğunda framework belge OLE sistem DLL'lerini otomatik olarak kaydeder. Bu sunucu belgeleri tanımlamak DLL'leri sağlar.
+Bir sunucu belgesi oluşturulduğunda, çerçeve otomatik olarak belgeyi OLE sistem dll 'Leriyle kaydeder. Bu, dll 'Lerin sunucu belgelerini belirlemesine izin verir.
 
-Daha fazla bilgi için [Coleserverıtem](../mfc/reference/coleserveritem-class.md) ve [COleServerDoc](../mfc/reference/coleserverdoc-class.md) içinde *sınıf kitaplığı başvurusu*.
+Daha fazla bilgi için bkz. *sınıf kitaplığı başvurusunda* [Copaserverıtem](../mfc/reference/coleserveritem-class.md) ve [copaserverdoc](../mfc/reference/coleserverdoc-class.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sunucular](../mfc/servers.md)<br/>
-[Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)<br/>
-[Sunucular: Sunucu uygulama](../mfc/servers-implementing-a-server.md)<br/>
-[Sunucular: Yerinde çerçeve Windows uygulama](../mfc/servers-implementing-in-place-frame-windows.md)
+[Sunucular: sunucu öğeleri](../mfc/servers-server-items.md)<br/>
+[Sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md)<br/>
+[Sunucular: In-Place çerçeve pencerelerini uygulama](../mfc/servers-implementing-in-place-frame-windows.md)

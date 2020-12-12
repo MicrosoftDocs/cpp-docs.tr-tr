@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sunucular: In-Place çerçeve pencereleri uygulama'
 title: 'Sunucular: Yerinde Çerçeve Pencereleri Uygulama'
 ms.date: 09/09/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - frame windows [MFC], in-place
 - in-place frame windows
 ms.assetid: 09bde4d8-15e2-4fba-8d14-9b954d926b92
-ms.openlocfilehash: a082afe141a21e4175886f13a26043694ac0d426
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 859a31bf107162aea6adb4d40ccf7b7b87f485b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230473"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97217360"
 ---
 # <a name="servers-implementing-in-place-frame-windows"></a>Sunucular: Yerinde Çerçeve Pencereleri Uygulama
 
@@ -33,7 +34,7 @@ Bu makalede, sunucu uygulamanızı oluşturmak için uygulama Sihirbazı 'nı ku
 
 1. Bir araç çubuğudur varsa, `CToolBar` çerçeve pencere sınıfında bir üye bildirin.
 
-   `OnCreateControlBars`Sunucu etkin olduğunda bir araç çubuğu oluşturmak için üye işlevini geçersiz kılın. Örnek:
+   `OnCreateControlBars`Sunucu etkin olduğunda bir araç çubuğu oluşturmak için üye işlevini geçersiz kılın. Örneğin:
 
    [!code-cpp[NVC_MFCOleServer#1](../mfc/codesnippet/cpp/servers-implementing-in-place-frame-windows_1.cpp)]
 

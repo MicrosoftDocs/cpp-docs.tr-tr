@@ -1,22 +1,23 @@
 ---
-title: 'TN050: MFC-OLE ortak iletişim kutuları (Mfcuıx32)'
+description: 'Daha fazla bilgi edinin: TN050: MFC/OLE ortak Iletişim kutuları (Mfcuıx32)'
+title: 'TN050: MFC-OLE ortak Iletişim kutuları (Mfcuıx32)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFCUIx32
 - TN050
 ms.assetid: 397c92f7-e7c8-49fb-97bc-f5602ec744b8
-ms.openlocfilehash: f201eac23a9c344f8699cc26c78813888bf5c113
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: e7001e3567ff0ad3865918bd5f0de2e5f0f9c42a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65610992"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215072"
 ---
-# <a name="tn050-mfcole-common-dialogs-mfcuix32"></a>TN050: MFC/OLE Common Dialogs (MFCUIx32)
+# <a name="tn050-mfcole-common-dialogs-mfcuix32"></a>TN050: MFC/OLE Ortak İletişim Kutuları (MFCUIx32)
 
-Bu Not, bazı sorunları ve sunulan ve MFC tarafından kullanılan OLE ortak iletişim kutuları geleceği başlangıçta kapsamında. OLE ortak iletişim kutuları artık bir bileşen (OLEDLG. sistemde yerleşik olarak sağlanır DLL) ve ürün belgelerinde belgelenmiştir.
+Bu notta başlangıçta bazı sorunlar ve MFC tarafından sunulan ve kullanılan OLE ortak iletişim kutularının geleceği ele alınmıştır. OLE ortak iletişim kutuları artık sisteme yerleşik bir bileşen olarak sağlanır (OLEDLG.DLL) ve ürün belgelerinde tamamen belgelenmiştir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

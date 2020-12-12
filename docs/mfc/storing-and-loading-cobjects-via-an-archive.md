@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bir arşiv aracılığıyla CObjects depolama ve yükleme'
 title: Bir Arşiv Kullanarak CObject'leri Depolama ve Yükleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,34 +9,34 @@ helpviewer_keywords:
 - CObject class [MFC], CArchive objects
 - CObjects [MFC]
 ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
-ms.openlocfilehash: f1b59516d5bba13b6f5e006f91d8ebd560543b05
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c84c507fc556268eea526c1350211fd4b82f54fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372153"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216567"
 ---
 # <a name="storing-and-loading-cobjects-via-an-archive"></a>Bir Arşiv Kullanarak CObject'leri Depolama ve Yükleme
 
-Bir arşiv `CObject`üzerinden depolama ve yükleme ekstra dikkate gerektirir. Bazı `Serialize` durumlarda, `CArchive` nesnenin çağrının `Serialize` ** < ** bir parametresi olduğu nesnenin işlevini, `CArchive`'nin işlevini **>>** veya işlecinin yerine Akılda tutulması gereken önemli bir `CArchive` **>>** gerçek, `CObject` işleç daha `CRuntimeClass` önce depolama arşivi tarafından dosyaya yazılmış bilgilere dayalı bellek inşa olmasıdır.
+`CObject`Bir arşiv aracılığıyla depolamak ve yüklemek ek bir değerlendirme gerektirir. Belirli durumlarda, nesnesinin `Serialize` `CArchive` işlecini kullanmanın aksine nesnenin, çağrının bir parametresi olduğu nesne işlevini çağırmanız gerekir `Serialize` **<\<** or **>>** `CArchive` . Göz önünde bulundurmanız gereken önemli olgu, `CArchive` **>>** işlecin `CObject` `CRuntimeClass` depolama arşivi tarafından daha önce dosyaya yazılmış bilgilere göre bellek içinde oluşturmasıdır.
 
-Bu nedenle, aramayı `CArchive` ** < ** **>>** karşıklayarak `Serialize`ve kullanıp kullanmadığınız, nesneyi daha önce depolanan `CRuntimeClass` bilgilere göre dinamik olarak yeniden yapılandırmak için yükleme arşivine *ihtiyaç duyup* duymadığınıza bağlıdır. Aşağıdaki `Serialize` durumlarda işlevi kullanın:
+Bu nedenle, işleçlerini ve çağrılmasını kullanarak, `CArchive` **<\<** and **>>** `Serialize` daha önce depolanan bilgilere göre nesneyi dinamik olarak yeniden oluşturmak için yükleme arşivine *ihtiyacınız* olup olmamasına bağlıdır `CRuntimeClass` . `Serialize`Aşağıdaki durumlarda işlevini kullanın:
 
-- Nesneyi deserializing zaman, nesnenin tam sınıfını önceden biliyorum.
+- Nesne seri durumdan çıkarılırken, önceden nesnenin tam sınıfını bilirsiniz.
 
-- Nesneyi deserializing, zaten bunun için ayrılmış bellek var.
+- Nesne seri durumdan çıkarılırken, zaten ayrılan belleğe sahip olursunuz.
 
 > [!CAUTION]
-> Nesneyi `Serialize` işlevi kullanarak yüklerseniz, `Serialize` nesneyi işlevi kullanarak da depolamanız gerekir. İşleç kullanarak `CArchive` **<<** depoyapmayın ve `Serialize` ardından işlevi kullanarak `Serialize` yükleyin veya `CArchive >>` işlevi kullanarak depolayın ve ardından operatörü kullanarak yükleyin.
+> Nesnesini işlevini kullanarak yüklerseniz `Serialize` , işlevini kullanarak da nesneyi depolamanız gerekir `Serialize` . İşlecini kullanarak depolamayın `CArchive` **<<** ve sonra işlevini kullanarak yükleyin `Serialize` veya `Serialize` işlevini kullanarak ve sonra `CArchive >>` işlecini kullanarak yükleyin.
 
-Aşağıdaki örnek, servis taleplerini göstermektedir:
+Aşağıdaki örnekte durumlar gösterilmektedir:
 
 [!code-cpp[NVC_MFCSerialization#36](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_1.h)]
 
 [!code-cpp[NVC_MFCSerialization#37](../mfc/codesnippet/cpp/storing-and-loading-cobjects-via-an-archive_2.cpp)]
 
-Özetle, `CObject` serileştirilebilir sınıfınız katıştirilen bir nesneyi tanımlıyorsa, o nesne için `CArchive` ** < ** **>>** ve `Serialize` işleçleri *kullanmamalısınız,* bunun yerine işlevi aramalısınız. Ayrıca, serializable sınıf bir işaretçi `CObject` (veya türetilen `CObject`bir nesne) bir üye olarak tanımlar, ancak kendi oluşturucu `Serialize`bu diğer nesne inşa ederse, ayrıca çağırmalısınız.
+Özet olarak, seri hale getirilebilir sınıfınız bir üye olarak gömülü bir öğesi tanımlarsa, `CObject`  `CArchive` **<\<** and **>>** Bu nesne için İşleçleri kullanmamalısınız, ancak `Serialize` bunun yerine işlevi çağırmalıdır. Ayrıca, seri hale getirilebilir sınıfınız bir `CObject` üye olarak (veya öğesinden türetilmiş bir nesne) için bir işaretçi tanımlıyorsa `CObject` , ancak bu nesneyi kendi oluşturucusunda oluşturur, öğesini de çağırmalısınız `Serialize` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
+[Serileştirme: bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)

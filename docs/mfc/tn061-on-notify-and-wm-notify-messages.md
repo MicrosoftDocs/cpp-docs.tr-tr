@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: TN061: ON_NOTIFY ve WM_NOTIFY Iletileri'
 title: 'TN061: ON_NOTIFY ve WM_NOTIFY İletileri'
 ms.date: 06/28/2018
 helpviewer_keywords:
@@ -10,35 +11,35 @@ helpviewer_keywords:
 - notification messages
 - WM_NOTIFY message
 ms.assetid: 04a96dde-7049-41df-9954-ad7bb5587caf
-ms.openlocfilehash: 845558dad6b9f6e820c759cb83fce2c6cbceaa0c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ecbbc03ad7328b163f89e5b1da095c8c179df097
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366592"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214760"
 ---
 # <a name="tn061-on_notify-and-wm_notify-messages"></a>TN061: ON_NOTIFY ve WM_NOTIFY İletileri
 
 > [!NOTE]
-> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-Bu teknik not, yeni WM_NOTIFY iletisi hakkında arka plan bilgileri sağlar ve MFC uygulamanızda WM_NOTIFY iletileri işlemenin önerilen (ve en yaygın) yolunu açıklar.
+Bu teknik notta, yeni WM_NOTIFY iletisi hakkında arka plan bilgileri sağlanır ve MFC uygulamanızda WM_NOTIFY iletileri işlemenin önerilen (ve en yaygın) yolu açıklanmaktadır.
 
-**Windows 3.x'te Bildirim İletileri**
+**Windows 3. x ' de bildirim Iletileri**
 
-Windows 3.x'te denetimler, ebeveynlerine fare tıklamaları, içerik ve seçim değişiklikleri gibi olayları bildirir ve üst öğeye ileti göndererek arka plan boyamasını denetler. Basit bildirimler özel WM_COMMAND iletileri olarak gönderilir, bildirim kodu (BN_CLICKED gibi) ve kontrol kimliği *wParam* ve *lParam'da*kontrol tutamacına paketlenmiştir. *WParam* ve *lParam* dolu olduğundan, herhangi bir ek veri aktarmak için bir yol yoktur unutmayın - bu iletiler sadece basit bir bildirim olabilir. Örneğin, BN_CLICKED bildiriminde, düğme tıklatıldığında fare imlecinin konumu hakkında bilgi göndermenin bir yolu yoktur.
+Windows 3. x ' de, denetimler, fare tıklamaları, içerik ve seçimdeki değişiklikler ve üst öğeye bir ileti göndererek arka plan boyamayı denetleme gibi olayların üst öğelerini bilgilendirir. Basit bildirimler, bildirim kodu (BN_CLICKED gibi) ve *wParam* içine PAKETLENMIŞ denetim kimliği ve *lParam* içindeki denetim tanıtıcısı ile özel WM_COMMAND iletileri olarak gönderilir. *WParam* ve *lParam* 'nin dolu olduğundan, ek veri iletmenin bir yolu yoktur; bu iletiler yalnızca basit bildirim olabilir. Örneğin, BN_CLICKED bildiriminde, düğme tıklandığında fare imlecinin konumu hakkında bilgi göndermenin bir yolu yoktur.
 
-Windows 3.x'teki denetimlerin ek veri içeren bir bildirim iletisi göndermesi gerektiğinde, WM_CTLCOLOR, WM_VSCROLL, WM_HSCROLL, WM_DRAWITEM, WM_MEASUREITEM, WM_COMPAREITEM, WM_DELETEITEM, WM_CHARTOITEM, WM_VKEYTOITEM ve benzeri dahil olmak üzere çeşitli özel amaçlı iletiler kullanırlar. Bu iletiler, gönderen denetime geri yansıtılabilir. Daha fazla bilgi için [Bkz. TN062: Windows Denetimleri için İleti Yansıması.](../mfc/tn062-message-reflection-for-windows-controls.md)
+Windows 3. x içindeki denetimlerin ek verileri içeren bir bildirim iletisi gönderilmesi gerektiğinde, WM_CTLCOLOR, WM_VSCROLL, WM_HSCROLL, WM_DRAWITEM, WM_MEASUREITEM, WM_COMPAREITEM, WM_DELETEITEM, WM_CHARTOITEM, WM_VKEYTOITEM vb. dahil olmak üzere çeşitli özel amaçlı mesajlar kullanır. Bu iletiler, bunları gönderen denetime geri yansıtılabilir. Daha fazla bilgi için bkz. [TN062: Windows denetimleri Için Ileti yansıtma](../mfc/tn062-message-reflection-for-windows-controls.md).
 
-**Win32'deki Bildirim Mesajları**
+**Win32 içindeki bildirim Iletileri**
 
-Windows 3.1'de bulunan denetimler için Win32 API, Windows 3.x'te kullanılan bildirim iletilerinin çoğunu kullanır. Ancak Win32, Windows 3.x'te desteklenendenetimlere bir dizi karmaşık denetim de ekler. Sık sık, bu denetimlerin bildirim iletileriyle ek veri göndermesi gerekir. Win32 API tasarımcıları, ek veri gerektiren her yeni bildirim için yeni bir **WM_** <strong>\*</strong> iletisi eklemek yerine, standart laştırılmış bir şekilde herhangi bir miktarda ek veri geçirebilen yalnızca bir ileti WM_NOTIFY eklemeyi tercih etti.
+Windows 3,1 ' de var olan denetimlerde Win32 API, Windows 3. x ' de kullanılan bildirim iletilerinin çoğunu kullanır. Ancak, Win32 ayrıca Windows 3. x ' de desteklenenlere birçok karmaşık ve karmaşık denetim ekler. Genellikle, bu denetimlerin bildirim iletileriyle birlikte ek veriler gönderebilmesi gerekir.  <strong>\*</strong> Ek verilere ihtiyacı olan her yeni bildirim için yeni bir WM_ iletisi eklemek yerine, Win32 API tasarımcıları, standartlaştırılmış bir şekilde herhangi bir miktarda ek veri geçirebilen bir ileti eklemeyi (WM_NOTIFY) seçti.
 
-WM_NOTIFY iletileri *wParam* iletisi gönderen denetim kimliği ve *lParam*bir yapıya bir işaretçi içerir. Bu yapı, ilk üyesi olarak NMHDR **yapısına** sahip bir **NMHDR** yapısı veya daha büyük bir yapıdır. **NMHDR** üyesi ilk olduğundan, bu yapıya işaretçi bir **NMHDR** için bir işaretçi veya nasıl döküm bağlı olarak daha büyük yapı için bir işaretçi olarak kullanılabilir unutmayın.
+WM_NOTIFY iletiler, iletiyi *wParam* içinde gönderen denetimin kimliğini ve *lParam* içindeki bir yapıya yönelik bir işaretçi içerir. Bu yapı, bir **nmhdr** yapısına veya ilk üyesi olarak bir **nmhdr** yapısına sahip olan bir daha büyük yapıya sahiptir. **Nmhdr** üyesi ilk kez olduğundan, bu yapıya yönelik bir Işaretçi bir **nmhdr** işaretçisi olarak ya da onu nasıl bir yere göre daha büyük yapıya işaretçi olarak kullanılabileceğini unutmayın.
 
-Çoğu durumda, işaretçi daha büyük bir yapıyı işaret eder ve kullanırken onu dökmeniz gerekir. Ortak bildirimler (adları **NM_** ile başlayan) ve araç ipucu denetiminin TTN_SHOW ve TTN_POP bildirimleri gibi yalnızca birkaç bildirimde, gerçekte kullanılan bir **NMHDR** yapısıdır.
+Çoğu durumda, işaretçi daha büyük bir yapıya işaret eder ve bunu kullandığınızda onu dönüştürmeniz gerekir. Yalnızca yaygın bildirimler (adları **nm_** ile başlayan) ve araç ipucu denetiminin TTN_SHOW ve ttn_pop bildirimleri gibi bazı bildirimlerde, gerçekten kullanılan bir **nmhdr** yapısı vardır.
 
-**NMHDR** yapısı veya ilk üye, iletiyi gönderen denetimin tutamacını ve kimliğini ve bildirim kodunu (TTN_SHOW gibi) içerir. **NMHDR** yapısının biçimi aşağıda gösterilmiştir:
+**Nmhdr** yapısı veya ilk üyesi, iletiyi gönderen denetimin TANıTıCıSıNı ve kimliğini ve bildirim kodunu (örneğin, ttn_show) içerir. **Nmhdr** yapısının biçimi aşağıda gösterilmiştir:
 
 ```cpp
 typedef struct tagNMHDR {
@@ -48,9 +49,9 @@ typedef struct tagNMHDR {
 } NMHDR;
 ```
 
-Bir TTN_SHOW iletiiçin **kod** üyesi TTN_SHOW olarak ayarlanır.
+TTN_SHOW bir ileti için, **kod** üyesi ttn_show olarak ayarlanır.
 
-Çoğu bildirim, ilk üyesi olarak **NMHDR** yapısı içeren daha büyük bir yapıya işaretçi geçirir. Örneğin, liste görünümü denetiminde bir tuşa basıldığında gönderilen liste görünümü denetiminin LVN_KEYDOWN bildirim iletisi tarafından kullanılan yapıyı göz önünde bulundurun. İşaretçi, aşağıda gösterildiği gibi tanımlanan **bir LV_KEYDOWN** yapıya işaret eder:
+Çoğu bildirim, ilk üyesi olarak bir **nmhdr** yapısını içeren daha büyük bir yapıya işaretçi iletir. Örneğin, liste görünümü denetiminin LVN_KEYDOWN bildirim iletisi tarafından kullanılan yapıyı göz önünde bulundurun. Bu, liste görünümü denetiminde bir anahtara basıldığında gönderilir. İşaretçi, aşağıda gösterildiği gibi tanımlanan bir **LV_KEYDOWN** yapısına işaret eder:
 
 ```cpp
 typedef struct tagLV_KEYDOWN {
@@ -60,30 +61,30 @@ typedef struct tagLV_KEYDOWN {
 } LV_KEYDOWN;
 ```
 
-**NMHDR** üyesi bu yapıda ilk olduğundan, bildirim iletisinde geçirilen işaretçi bir **NMHDR** işaretçisi veya bir **LV_KEYDOWN**işaretçisi olarak atanabilir.
+**Nmhdr** üyesinin bu yapıda ilk kez olduğuna, bildirim iletisinde geçirileceği Işaretçinin bir **nmhdr** işaretçisine veya **LV_KEYDOWN** işaretçisine yayınlanacağını unutmayın.
 
-**Tüm Yeni Windows Denetimlerinde Ortak Bildirimler**
+**Tüm yeni Windows denetimlerinde ortak olan bildirimler**
 
-Bazı bildirimler tüm yeni Windows denetimleri için ortaktır. Bu bildirimler bir **NMHDR** yapısına bir işaretçi geçer.
+Bazı bildirimler tüm yeni Windows denetimlerinde ortaktır. Bu bildirimler, bir **nmhdr** yapısına bir işaretçi iletir.
 
-|Bildirim kodu|Çünkü gönderildi|
+|Bildirim kodu|Gönderildiği için|
 |-----------------------|------------------|
-|NM_CLICK|Kullanıcı denetimde sol fare düğmesini tıklattı|
-|NM_DBLCLK|Kullanıcı denetimde sol fare düğmesine çift tıkladı|
-|NM_RCLICK|Kullanıcı denetimde sağ fare düğmesini tıklattı|
-|NM_RDBLCLK|Kullanıcı denetimde sağ fare düğmesine çift tıkladı|
-|NM_RETURN|Denetim giriş odağı varken kullanıcı ENTER tuşuna bastı|
-|NM_SETFOCUS|Kontrol girdi odağı verilmiştir|
-|NM_KILLFOCUS|Denetim giriş odağı kaybetti|
-|NM_OUTOFMEMORY|Yeterli bellek olmadığı için denetim işlemi tamamlayamadı|
+|NM_CLICK|Denetimdeki sol fare düğmesine tıklamış Kullanıcı|
+|NM_DBLCLK|Denetimdeki sol fare düğmesine kullanıcı çift tıkladı|
+|NM_RCLICK|Denetimdeki sağ fare düğmesine tıklamış Kullanıcı|
+|NM_RDBLCLK|Denetimdeki sağ tıklatılan Kullanıcı düğmesi|
+|NM_RETURN|Denetimde giriş odağı olduğunda kullanıcı ENTER tuşuna basıldı|
+|NM_SETFOCUS|Denetime giriş odağı verildi|
+|NM_KILLFOCUS|Denetim, giriş odağını kaybetti|
+|NM_OUTOFMEMORY|Yeterli kullanılabilir bellek olmadığından denetim bir işlemi tamamlayamadı|
 
-## <a name="on_notify-handling-wm_notify-messages-in-mfc-applications"></a><a name="_mfcnotes_on_notify.3a_.handling_wm_notify_messages_in_mfc_applications"></a>ON_NOTIFY: MFC Uygulamalarında WM_NOTIFY İletileri Işleme
+## <a name="on_notify-handling-wm_notify-messages-in-mfc-applications"></a><a name="_mfcnotes_on_notify.3a_.handling_wm_notify_messages_in_mfc_applications"></a> ON_NOTIFY: MFC uygulamalarında WM_NOTIFY Iletileri Işleme
 
-İşlev `CWnd::OnNotify` bildirim iletilerini işler. Varsayılan uygulaması, bildirim işleyicilerinin araması için ileti eşlemi denetimlerini denetler. Genel olarak, geçersiz kılmazsınız. `OnNotify` Bunun yerine, bir işleyici işlevi sağlar ve bu işleyici için bir ileti eşlemi ekleyin sahibi pencerenizin sınıfının ileti eşlemi.
+İşlevi, `CWnd::OnNotify` bildirim iletilerini işler. Varsayılan uygulama, bildirim işleyicilerinin çağrı yapılacak ileti haritasını denetler. Genel olarak, geçersiz kılmayın `OnNotify` . Bunun yerine, bir işleyici işlevi sağlar ve sahip pencerenizin sınıfının ileti eşlemesine Bu işleyici için bir ileti eşleme girişi ekleyin.
 
-ClassWizard, ClassWizard özellik sayfası aracılığıyla, ON_NOTIFY ileti-eş-eşgirişi oluşturabilir ve size bir iskelet işleyicisi işlevi sağlayabilir. Bunu kolaylaştırmak için ClassWizard'ı kullanma hakkında daha fazla bilgi için [Bkz.](../mfc/reference/mapping-messages-to-functions.md)
+Classıntertıon Sihirbazı, ClassWizard Özellik sayfası aracılığıyla ON_NOTIFY ileti eşleme girişi oluşturabilir ve size bir iskelet işleyici işlevi sağlayabilir. Bu daha kolay hale getirmek için ClassWizard kullanma hakkında daha fazla bilgi için bkz. [Iletileri IŞLEVLERE eşleme](../mfc/reference/mapping-messages-to-functions.md).
 
-ON_NOTIFY ileti eşlemi makrosu aşağıdaki sözdizimine sahiptir:
+ON_NOTIFY ileti eşleme makrosu aşağıdaki sözdizimine sahiptir:
 
 ```cpp
 ON_NOTIFY(wNotifyCode, id, memberFxn)
@@ -92,15 +93,15 @@ ON_NOTIFY(wNotifyCode, id, memberFxn)
 burada parametreler şunlardır:
 
 *wNotifyCode*<br/>
-LVN_KEYDOWN gibi işlenecek bildirim iletisinin kodu.
+LVN_KEYDOWN gibi işlenecek bildirim iletisi kodu.
 
-*Kimliği*<br/>
+*id*<br/>
 Bildirimin gönderildiği denetimin alt tanımlayıcısı.
 
-*üyeFxn*<br/>
+*memberFxn*<br/>
 Bu bildirim gönderildiğinde çağrılacak üye işlevi.
 
-Üye işleviniz aşağıdaki prototiple birlikte bildirilmelidir:
+Üye işleviniz aşağıdaki prototiple bildirilmelidir:
 
 ```cpp
 afx_msg void memberFxn(NMHDR* pNotifyStruct, LRESULT* result);
@@ -109,20 +110,20 @@ afx_msg void memberFxn(NMHDR* pNotifyStruct, LRESULT* result);
 burada parametreler şunlardır:
 
 *pNotifyStruct*<br/>
-Yukarıdaki bölümde açıklandığı gibi bildirim yapısıiçin bir işaretçi.
+Yukarıdaki bölümde açıklandığı gibi, bildirim yapısına yönelik bir işaretçi.
 
-*Sonuç*<br/>
-Dönmeden önce ayarladığınız sonuç koduiçin bir işaretçi.
+*kaynaklanan*<br/>
+Döndürmeden önce ayarladığınız sonuç koduna yönelik bir işaretçi.
 
 ## <a name="example"></a>Örnek
 
-Üye işlevin `OnKeydownList1` `CListCtrl` kimliği LVN_KEYDOWN iletileri işlemesini istediğinizi `IDC_LIST1`belirtmek için, ileti haritanıza aşağıdakileri eklemek için ClassWizard'ı kullanırsınız:
+Üye işlevinin `OnKeydownList1` kimliği olan lvn_keydown iletileri işlemesini istediğinizi belirtmek için `CListCtrl` `IDC_LIST1` , aşağıdaki ileti eşlemine eklemek üzere ClassWizard 'ı kullanın:
 
 ```cpp
 ON_NOTIFY(LVN_KEYDOWN, IDC_LIST1, OnKeydownList1)
 ```
 
-Yukarıdaki örnekte, ClassWizard tarafından sağlanan işlev:
+Yukarıdaki örnekte, ClassWizard tarafından sunulan işlev:
 
 ```cpp
 void CMessageReflectionDlg::OnKeydownList1(NMHDR* pNMHDR, LRESULT* pResult)
@@ -136,17 +137,17 @@ void CMessageReflectionDlg::OnKeydownList1(NMHDR* pNMHDR, LRESULT* pResult)
 }
 ```
 
-ClassWizard'ın uygun türde bir işaretçiyi otomatik olarak sağladığını unutmayın. Bildirim yapısına *pNMHDR* veya *pLVKeyDow*üzerinden erişebilirsiniz.
+ClassWizard 'ın doğru türe otomatik olarak bir işaretçi sağladığını unutmayın. Bildirim yapısına *pNMHDR* veya *plvkeyde* aracılığıyla erişebilirsiniz.
 
-## <a name="on_notify_range"></a><a name="_mfcnotes_on_notify_range"></a>ON_NOTIFY_RANGE
+## <a name="on_notify_range"></a><a name="_mfcnotes_on_notify_range"></a> ON_NOTIFY_RANGE
 
-Denetimler kümesi için aynı WM_NOTIFY iletisini işlemeniz gerekiyorsa, ON_NOTIFY yerine ON_NOTIFY_RANGE kullanabilirsiniz. Örneğin, belirli bir bildirim iletisi için aynı eylemi gerçekleştirmek istediğiniz bir düğme kümeniz olabilir.
+Bir denetim kümesi için aynı WM_NOTIFY iletisini işlebilmeniz gerekirse, ON_NOTIFY yerine ON_NOTIFY_RANGE kullanabilirsiniz. Örneğin, belirli bir bildirim iletisi için aynı eylemi gerçekleştirmek istediğiniz bir düğme kümesine sahip olabilirsiniz.
 
-ON_NOTIFY_RANGE kullandığınızda, aralığın başlangıç ve bitiş alt tanımlayıcılarını belirterek bildirim iletisini işleyeceğiniz bitişik bir alt tanımlayıcı aralığı belirtirsiniz.
+ON_NOTIFY_RANGE kullandığınızda, aralığın başlangıç ve bitiş alt tanımlayıcılarını belirterek bildirim iletisini işleyecek bitişik bir alt tanımlayıcı aralığı belirtirsiniz.
 
-ClassWizard ON_NOTIFY_RANGE işlemez; kullanmak için ileti haritanızı kendiniz yapmanız gerekir.
+ClassWizard ON_NOTIFY_RANGE işlemez; Bunu kullanmak için ileti eşlemenizi kendiniz düzenlemeniz gerekir.
 
-ON_NOTIFY_RANGE için mesaj-harita girişi ve işlev prototipi aşağıdaki gibidir:
+ON_NOTIFY_RANGE için ileti eşleme girişi ve işlev prototipi aşağıdaki gibidir:
 
 ```cpp
 ON_NOTIFY_RANGE(wNotifyCode, id, idLast, memberFxn)
@@ -155,18 +156,18 @@ ON_NOTIFY_RANGE(wNotifyCode, id, idLast, memberFxn)
 burada parametreler şunlardır:
 
 *wNotifyCode*<br/>
-LVN_KEYDOWN gibi işlenecek bildirim iletisinin kodu.
+LVN_KEYDOWN gibi işlenecek bildirim iletisi kodu.
 
-*Kimliği*<br/>
+*id*<br/>
 Bitişik tanımlayıcı aralığındaki ilk tanımlayıcı.
 
-*idSon*<br/>
-Bitişik tanımlayıcı aralığındaki son tanımlayıcı.
+*ıdlast*<br/>
+Bitişik tanımlayıcıların aralıktaki son tanımlayıcı.
 
-*üyeFxn*<br/>
+*memberFxn*<br/>
 Bu bildirim gönderildiğinde çağrılacak üye işlevi.
 
-Üye işleviniz aşağıdaki prototiple birlikte bildirilmelidir:
+Üye işleviniz aşağıdaki prototiple bildirilmelidir:
 
 ```cpp
 afx_msg void memberFxn(UINT id, NMHDR* pNotifyStruct, LRESULT* result);
@@ -174,39 +175,39 @@ afx_msg void memberFxn(UINT id, NMHDR* pNotifyStruct, LRESULT* result);
 
 burada parametreler şunlardır:
 
-*Kimliği*<br/>
+*id*<br/>
 Bildirimi gönderen denetimin alt tanımlayıcısı.
 
 *pNotifyStruct*<br/>
-Yukarıda açıklandığı gibi bildirim yapısına bir işaretçi.
+Yukarıda açıklandığı gibi, bildirim yapısına yönelik bir işaretçi.
 
-*Sonuç*<br/>
-Dönmeden önce ayarladığınız sonuç koduiçin bir işaretçi.
+*kaynaklanan*<br/>
+Döndürmeden önce ayarladığınız sonuç koduna yönelik bir işaretçi.
 
-## <a name="on_notify_ex-on_notify_ex_range"></a><a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a>ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE
+## <a name="on_notify_ex-on_notify_ex_range"></a><a name="_mfcnotes_tn061_on_notify_ex.2c_.on_notify_ex_range"></a> ON_NOTIFY_EX, ON_NOTIFY_EX_RANGE
 
-Bildirim yönlendirmesinde bir iletiyi işlemek için birden fazla nesne istiyorsanız, ON_NOTIFY (veya ON_NOTIFY_RANGE) yerine ON_NOTIFY_EX (veya ON_NOTIFY_EX_RANGE) kullanabilirsiniz. **EX** sürümü ile normal sürüm arasındaki tek fark, **EX** sürümü için çağrılan üye işlevin ileti işlemenin devam edip etmeyeceğini belirten bir **BOOL** döndürmesidir. Bu işlevden **FALSE'yi** döndürmek, aynı iletiyi birden fazla nesnede işlemenizi sağlar.
+Bildirim yönlendirmesinde bir iletiyi işlemek için birden fazla nesne istiyorsanız, ON_NOTIFY (veya ON_NOTIFY_RANGE) yerine ON_NOTIFY_EX (veya ON_NOTIFY_EX_RANGE) kullanabilirsiniz. **Ex** sürümü ve normal sürüm arasındaki tek fark, **ex** sürümü için çağrılan üye işlevinin, ileti işlemenin devam edip etmediğini belirten bir **bool** döndürmesinin ne olduğunu gösterir. Bu işlevden **false** döndürmek, birden fazla nesnede aynı iletiyi işlebırakmanıza olanak tanır.
 
-ClassWizard ON_NOTIFY_EX veya ON_NOTIFY_EX_RANGE işlemez; bunlardan birini kullanmak istiyorsanız, ileti haritanızı kendiniz yapmanız gerekir.
+ClassWizard ON_NOTIFY_EX veya ON_NOTIFY_EX_RANGE işlemez; Bunlardan birini kullanmak istiyorsanız, ileti eşlemenizi kendiniz düzenlemeniz gerekir.
 
-ON_NOTIFY_EX ve ON_NOTIFY_EX_RANGE için mesaj-harita girişi ve işlev prototipi aşağıdaki gibidir. Parametrelerin anlamları**EX** olmayan sürümlerle aynıdır.
+ON_NOTIFY_EX ve ON_NOTIFY_EX_RANGE için ileti eşleme girişi ve işlev prototipi aşağıdaki gibidir. Parametrelerin anlamları,**ex** olmayan sürümlerle aynıdır.
 
 ```cpp
 ON_NOTIFY_EX(nCode, id, memberFxn)
 ON_NOTIFY_EX_RANGE(wNotifyCode, id, idLast, memberFxn)
 ```
 
-Yukarıdakilerin her ikisi için de prototip aynıdır:
+Yukarıdaki her ikisinin de prototipi aynıdır:
 
 ```cpp
 afx_msg BOOL memberFxn(UINT id, NMHDR* pNotifyStruct, LRESULT* result);
 ```
 
-Her iki durumda *da, kimlik* bildirimi gönderen denetimin alt tanımlayıcısını tutar.
+Her iki durumda da *ID* , bildirimi gönderen denetimin alt tanımlayıcısını barındırır.
 
-Bildirim iletisi tamamen işlendiyse **veya** komut yönlendirmesindeki diğer nesneler iletiyi işlemek için bir şansa sahipse, işleviniz **DOĞRU** döndürilmelidir.
+Uyarı iletisi tamamen işlenirse işlevinizin **doğru** olması gerekir veya komut akışındaki diğer nesnelerin iletiyi işlemek için bir şansına sahip olması gerekiyorsa **false** değeri döndürmelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

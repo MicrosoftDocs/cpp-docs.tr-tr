@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: C tür tanımlayıcıları'
 title: C Tür Tanımlayıcıları
 ms.date: 01/29/2018
 helpviewer_keywords:
 - type specifiers, C
 - specifiers, type
 ms.assetid: fbe13441-04c3-4829-b047-06d374adc2b6
-ms.openlocfilehash: 652388fdf345cab7878bbd8c054b769377b322a9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: afff33e385564f5ef8d04988255a239135be13b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217161"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214210"
 ---
 # <a name="c-type-specifiers"></a>C Tür Tanımlayıcıları
 
 Bildirimlerinde tür belirticileri bir değişken veya işlev bildiriminin türünü tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *tür belirleyicisi*: &nbsp; &nbsp; &nbsp; &nbsp; **`void`** &nbsp; &nbsp; &nbsp; &nbsp; **`char`** &nbsp; &nbsp; &nbsp; &nbsp; **`short`** &nbsp; &nbsp; &nbsp; &nbsp; **`int`** &nbsp; &nbsp; &nbsp; &nbsp; **`long`** &nbsp; &nbsp; &nbsp; &nbsp; **`float`** &nbsp; &nbsp; &nbsp; &nbsp; **`double`** &nbsp; &nbsp; &nbsp; &nbsp; **`signed`** &nbsp; &nbsp; &nbsp; &nbsp; **`unsigned`** &nbsp; &nbsp; &nbsp; &nbsp; *struct-or-Union-belirleyicisi* &nbsp; &nbsp; &nbsp; &nbsp; *enum-belirleyicisi* &nbsp; &nbsp; &nbsp; &nbsp; *typedef-Name*
 
@@ -26,7 +27,7 @@ Bildirimlerinde tür belirticileri bir değişken veya işlev bildiriminin tür�
 
 Sabit listesi türleri temel türler olarak değerlendirilir. Numaralandırma türleri için tür belirticileri, [numaralandırma bildirimlerinde](../c-language/c-enumeration-declarations.md)ele alınmıştır.
 
-Anahtar sözcüğünün **`void`** üç kullanımı vardır: bir işlev dönüş türü belirtmek için, bağımsız değişken içermeyen bir işlev için bağımsız değişken türü listesi belirtmek ve belirtilmemiş bir tür işaretçisi belirtmek için. **`void`** Türü, hiçbir değer döndürmeyen veya belirtilmemiş bir türe işaretçi bildiren işlevleri bildirmek için kullanabilirsiniz. [Arguments](../c-language/arguments.md) **`void`** Bir işlev adından sonra parantez içinde tek tek göründüğü hakkında bilgi Için bkz. bağımsız değişkenler.
+Anahtar sözcüğünün **`void`** üç kullanımı vardır: bir işlev dönüş türü belirtmek için, bağımsız değişken içermeyen bir işlev için bağımsız değişken türü listesi belirtmek ve belirtilmemiş bir tür işaretçisi belirtmek için. **`void`** Türü, hiçbir değer döndürmeyen veya belirtilmemiş bir türe işaretçi bildiren işlevleri bildirmek için kullanabilirsiniz. [](../c-language/arguments.md) **`void`** Bir işlev adından sonra parantez içinde tek tek göründüğü hakkında bilgi Için bkz. bağımsız değişkenler.
 
 **Microsoft'a Özgü**
 
@@ -46,7 +47,7 @@ short *ps;
 ps = pi;  /* Now generates warning */
 ```
 
-Microsoft C derleyicisi Ayrıca, oturum açma farkları için uyarılar üretir. Örnek:
+Microsoft C derleyicisi Ayrıca, oturum açma farkları için uyarılar üretir. Örneğin:
 
 ```C
 signed int *pi;

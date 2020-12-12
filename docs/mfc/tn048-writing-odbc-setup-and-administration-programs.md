@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: TN048: MFC veritabanı uygulamaları için ODBC kurulum ve yönetim programları yazma'
 title: 'TN048: MFC Veritabanı Uygulamaları için ODBC Kurulum ve Yönetim Programları Yazma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,49 +10,49 @@ helpviewer_keywords:
 - ODBC, and MFC
 - MFC, database applications
 ms.assetid: d456cdd4-0513-4a51-80c0-9132b66115ce
-ms.openlocfilehash: d25520c4ffc805701dfe6b51192f8078e2fa300f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bca8616bae8f7243b9e66b2eccc980afa3865842
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365478"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215111"
 ---
 # <a name="tn048-writing-odbc-setup-and-administration-programs-for-mfc-database-applications"></a>TN048: MFC Veritabanı Uygulamaları için ODBC Kurulum ve Yönetim Programları Yazma
 
 > [!NOTE]
-> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-MFC veritabanı sınıflarını kullanan uygulamaların ODBC bileşenlerini yükleyen bir kurulum programı gerekir. Ayrıca, varsayılan sürücüleri belirtmek ve veri kaynaklarını yapılandırmak için kullanılabilir sürücüler hakkında bilgi alacak bir ODBC Yönetimi programına da ihtiyaç duyabilirler. Bu not, bu programları yazmak için ODBC Installer API kullanımını açıklar.
+MFC veritabanı sınıflarını kullanan uygulamalar, ODBC bileşenlerini yükleyen bir kurulum programına gerek duyar. Ayrıca, varsayılan sürücüleri belirtmek ve veri kaynaklarını yapılandırmak için kullanılabilir sürücüler hakkında bilgi alacak bir ODBC yönetim programı da gerekebilir. Bu notta, bu programları yazmak için ODBC Yükleyici API 'sinin kullanımı açıklanmaktadır.
 
-## <a name="writing-an-odbc-setup-program"></a><a name="_mfcnotes_writing_an_odbc_setup_program"></a>ODBC Kurulum Programı Yazma
+## <a name="writing-an-odbc-setup-program"></a><a name="_mfcnotes_writing_an_odbc_setup_program"></a> ODBC Kurulum programı yazma
 
-Bir MFC veritabanı uygulaması ODBC Sürücü Yöneticisi (ODBC) gerektirir. DLL) ve ODBC sürücüleri veri kaynaklarına ulaşmak mümkün. Birçok ODBC sürücüsü de ek ağ ve iletişim DLLs gerektirir. Çoğu ODBC sürücüsü, gerekli ODBC bileşenlerini yükleyecek bir kurulum programıyla birlikte sevk edilir. MFC veritabanı sınıflarını kullanan uygulama geliştiricileri şunları yapabilir:
+MFC veritabanı uygulaması, veri kaynaklarına ulaşmak için ODBC Sürücü Yöneticisi (ODBC.DLL) ve ODBC sürücülerinin kullanılmasını gerektirir. Birçok ODBC sürücüsü ek ağ ve iletişim dll 'Leri de gerektirir. Çoğu ODBC sürücüsü, gerekli ODBC bileşenlerini yükleyecek bir kurulum programıyla birlikte gönderilir. MFC veritabanı sınıflarını kullanan uygulama geliştiricileri şunları yapabilir:
 
-- ODBC bileşenlerini yüklemek için sürücüye özel kurulum programlarına güvenin. Bu geliştirici nin parçası üzerinde daha fazla çalışma gerektirmez - sadece sürücünün kurulum programı yeniden dağıtabilirsiniz.
+- ODBC bileşenlerini yüklemek için sürücüye özgü kurulum programlarını kullanır. Bu işlem, geliştirici bölümünde başka iş gerektirmez. sürücünün Kurulum programını yeniden dağıtabilirsiniz.
 
-- Alternatif olarak, sürücü yöneticisi ve sürücü yükleyecek kendi kurulum programı yazabilirsiniz.
+- Alternatif olarak, kendi kurulum programınızı yazabilirsiniz, bu da sürücü yöneticisini ve sürücüyü yükler.
 
-ODBC yükleyici API uygulamaya özel kurulum programları yazmak için kullanılabilir. Yükleyici API'deki işlevler ODBC yükleyici DLL - ODBCINST tarafından uygulanır. 16 bit Windows ve ODBCCP32 üzerinde DLL. Win32'de DLL. ODBC `SQLInstallODBC` sürücü yöneticisi, ODBC sürücüleri ve gerekli çevirmenler yükler yükleyici DLL, bir uygulama arayabilirsiniz. Daha sonra ODBCINST yüklü sürücüleri ve çevirmenler kaydeder. INI dosyası (veya kayıt defteri, NT üzerinde). `SQLInstallODBC`ODBC için tam yol gerektirir. Yüklenecek sürücülerin listesini içeren ve her sürücüyü oluşturan dosyaları açıklayan INF dosyası. Ayrıca sürücü yöneticisi ve çevirmenler hakkında benzer bilgiler içerir. Odbc. INF dosyaları genellikle sürücü geliştiriciler tarafından sağlanır.
+ODBC yükleyicisi API 'SI uygulamaya özgü kurulum programlarını yazmak için kullanılabilir. Yükleyici API 'sindeki işlevler, 16 bit Windows üzerinde ODBCINST.DLL ve Win32 üzerinde ODBCCP32.DLL ODBC yükleyici DLL 'SI tarafından uygulanır. Bir uygulama, `SQLInstallODBC` ODBC Sürücü Yöneticisi, ODBC sürücüleri ve gerekli çevirmenleri yükleyen YÜKLEYICI dll 'de çağırabilir. Daha sonra, yüklü sürücüleri ve çeviricileri ODBCINST.INI dosyasına (veya sunucudaki kayıt defteri) kaydeder. `SQLInstallODBC` ODBC için tam yolu gerektirir. Yüklenecek sürücülerin listesini içeren INF dosyası ve her bir sürücüyü oluşturan dosyaları açıklar. Ayrıca sürücü yöneticisi ve Çeviricileri hakkında benzer bilgiler içerir. İsti. INF dosyaları genellikle sürücü geliştiricileri tarafından sağlanır.
 
-Bir program tek tek ODBC bileşenlerini de yükleyebilir. Sürücü Yöneticisi'ni yüklemek için, `SQLInstallDriverManager` bir program ilk olarak Yükleyici DLL'yi çağırın ve Sürücü Yöneticisi'nin hedef dizinini alır. Bu genellikle Windows DLL'lerin bulunduğu dizindir. Program daha sonra ODBC'nin [ODBC Sürücü Yöneticisi] bölümündeki bilgileri kullanır. Sürücü Yöneticisi ve ilgili dosyaları yükleme diskinden bu dizine kopyalamak için INF dosyası. Tek bir sürücü yüklemek için, `SQLInstallDriver` bir program ilk odbcinst sürücü belirtimi eklemek için yükleyici DLL çağırır. INI dosyası (veya kayıt defteri, NT üzerinde). `SQLInstallDriver`genellikle Windows DLL'lerin bulunduğu dizin olan sürücünün hedef dizinini döndürür. Program daha sonra ODBC'nin sürücü bölümündeki bilgileri kullanır. Sürücü DLL'yi ve ilgili dosyaları yükleme diskinden bu dizine kopyalamak için INF dosyası.
+Bir program, tek tek ODBC bileşenlerini de yükleyebilir. Sürücü Yöneticisi 'ni yüklemek için, bir program ilk olarak `SQLInstallDriverManager` sürücü yöneticisinin hedef dizinini almak üzere YÜKLEYICI dll 'de çağırır. Bu genellikle Windows dll 'Lerinin bulunduğu dizindir. Daha sonra program, ODBC 'nin [ODBC Sürücü Yöneticisi] bölümündeki bilgileri kullanır. INF dosyası yükleme diskinden sürücü yöneticisini ve ilgili dosyaları bu dizine kopyalamak için. Tek bir sürücü yüklemek için, bir program, `SQLInstallDriver` sürücü belirtimini ODBCINST.INI dosyasına (veya NT 'de kayıt defteri) eklemek için ilk olarak YÜKLEYICI dll 'de çağırır. `SQLInstallDriver` sürücünün hedef dizinini (genellikle Windows dll 'Lerinin bulunduğu dizin) döndürür. Daha sonra program, ODBC 'nin sürücü bölümündeki bilgileri kullanır. Dosya DLL 'sini ve ilgili dosyaları yükleme diskinden bu dizine kopyalamak için INF dosyası.
 
-ODBC hakkında daha fazla bilgi için. INF, ODBCINST. INI ve yükleyici API kullanarak, ODBC SDK *Programcı Referans,* Bölüm 19, ODBC Yazılımı yükleme bakın.
+ODBC hakkında daha fazla bilgi için. INF, ODBCINST.INI ve Yükleyici API 'sini kullanarak, ODBC yazılım yükleme adlı bkz. ODBC SDK *Programcı başvurusu,* Bölüm 19.
 
-## <a name="writing-an-odbc-administrator"></a><a name="_mfcnotes_writing_an_odbc_administrator"></a>ODBC Yöneticisi Yazma
+## <a name="writing-an-odbc-administrator"></a><a name="_mfcnotes_writing_an_odbc_administrator"></a> ODBC Yöneticisi yazma
 
-Bir MFC veritabanı uygulaması, ODBC veri kaynaklarını aşağıdaki gibi iki şekilde ayarlayabilir ve yapılandırabilir:
+MFC veritabanı uygulaması, ODBC veri kaynaklarını aşağıdaki şekilde iki şekilde ayarlayabilir ve yapılandırabilir:
 
-- ODBC Yöneticisi'ni (program olarak veya Denetim Masası öğesi olarak kullanılabilir) kullanın.
+- ODBC Yöneticisi 'ni (bir program veya Denetim Masası öğesi olarak kullanılabilir) kullanın.
 
 - Veri kaynaklarını yapılandırmak için kendi programınızı oluşturun.
 
-Veri kaynaklarını yapılandıran bir program, yükleyici DLL'ye işlev çağrıları yapar. Yükleyici DLL, bir veri kaynağını yapılandırmak için bir kurulum DLL çağırır. Her sürücü için bir kurulum DLL vardır; sürücü DLL kendisi veya ayrı bir DLL olabilir. Kurulum DLL, desteklenirse, sürücünün veri kaynağına ve varsayılan çevirmene bağlanması gereken bilgileri kullanıcıdan ister. Daha sonra yükleyici DLL ve Windows API'ları çağırır ve bu bilgileri ODBC'ye kaydeder. INI dosyası (veya kayıt defteri).
+Veri kaynaklarını yapılandıran bir program, yükleyici DLL 'ye işlev çağrıları yapar. Yükleyici DLL 'si bir veri kaynağını yapılandırmak için bir kurulum DLL 'si çağırır. Her sürücü için bir kurulum DLL 'SI vardır; Bu, sürücü DLL 'inin kendisi veya ayrı bir DLL olabilir. Kurulum DLL 'SI, kullanıcıdan sürücünün veri kaynağına bağlanması için gereken bilgileri ve destekleniyorsa varsayılan çeviriciyi ister. Daha sonra bu bilgileri ODBC.INI dosyasına (veya kayıt defteri) kaydetmek için yükleyici DLL ve Windows API 'Lerini çağırır.
 
-Bir kullanıcının veri kaynaklarını ekleyebileceği, değiştirebileceği ve silebileceği bir `SQLManageDataSources` iletişim kutusu görüntülemek için, bir program yükleyici DLL'de çağırır. Yükleyici DLL Denetim Masası'ndan çağrıldığında bu işlev çağrılır. Bir veri kaynağını eklemek, değiştirmek `SQLManageDataSources` veya `ConfigDSN` silmek için, bu veri kaynağıyla ilişkili sürücü için kurulum DLL'de çağrılar. Veri kaynaklarını doğrudan eklemek, değiştirmek veya silmek için bir program yükleyici DLL'yi çağırır. `SQLConfigDataSource` Program, veri kaynağının adını ve yapılacak eylemi belirten bir seçeneği geçer. `SQLConfigDataSource`kurulum `ConfigDSN` DLL çağırır ve bağımsız değişkenleri `SQLConfigDataSource`geçer .
+Bir kullanıcının veri kaynaklarını ekleyebileceği, değiştirebileceği ve silebileceği bir iletişim kutusu göstermek için, `SQLManageDataSources` YÜKLEYICI dll 'de bir program çağırır. Bu işlev, yükleyici DLL 'SI denetim masasından çağrıldığında çağrılır. Veri kaynağı eklemek, değiştirmek veya silmek için, `SQLManageDataSources` `ConfigDSN` Bu veri kaynağıyla ilişkili sürücü IÇIN kurulum dll 'de çağrılar yapın. Veri kaynaklarını doğrudan eklemek, değiştirmek veya silmek için, `SQLConfigDataSource` YÜKLEYICI dll 'de bir program çağırır. Program, veri kaynağının adını ve yapılacak eylemi belirten bir seçeneği geçirir. `SQLConfigDataSource``ConfigDSN`Kurulum dll 'de çağırır ve içindeki bağımsız değişkenleri geçirir `SQLConfigDataSource` .
 
-Daha fazla bilgi için Bkz. ODBC SDK *Programcı Referans,* Bölüm 23, Kurulum DLL İşlev Başvurusu ve Bölüm 24, Installer DLL İşlev Referansı.
+Daha fazla bilgi için bkz. ODBC SDK *Programcı başvurusu,* Bölüm 23, kurulum dll işlev başvurusu ve Bölüm 24, yükleyici dll işlev başvurusu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

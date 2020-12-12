@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: tipik bir Internet Istemci uygulamasındaki adımlar'
 title: Tipik Bir Internet İstemci Uygulamasındaki Adımlar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,29 +7,29 @@ helpviewer_keywords:
 - WinInet classes [MFC], programming
 - Internet applications [MFC], client applications
 ms.assetid: 7aba135c-7c15-4e2f-8c34-bbaf792c89a6
-ms.openlocfilehash: 9762e762680e2ac530b87baeac7afdea77ef6f14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9660687136361efb0256ecdd1fd19b577c46ab26
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306944"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216554"
 ---
 # <a name="steps-in-a-typical-internet-client-application"></a>Tipik Bir Internet İstemci Uygulamasındaki Adımlar
 
 Aşağıdaki tabloda, tipik bir Internet istemci uygulamasında gerçekleştirebileceğiniz adımlar gösterilmektedir.
 
-|Amacınız|İşlemlerde|Etkiler|
+|Amacınız|Gerçekleştirebileceğiniz eylemler|Etkiler|
 |---------------|----------------------|-------------|
-|Bir Internet oturumu başlayın.|Oluşturma bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) nesne.|WinINet başlatır ve sunucusuna bağlanır.|
-|Bir Internet sorgu seçeneği (zaman aşımı sınırı veya örneğin bir yeniden deneme) olarak ayarlayın.|Kullanım [CInternetSession::SetOption](../mfc/reference/cinternetsession-class.md#setoption).|İşlem başarısız olursa FALSE döndürür.|
-|Oturum durumunu izlemek için bir geri çağırma işlevi oluşturun.|Kullanım [CInternetSession::EnableStatusCallback](../mfc/reference/cinternetsession-class.md#enablestatuscallback).|İçin bir geri çağırma oluşturur [CInternetSession::OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback). Geçersiz kılma `OnStatusCallback` kendi geri çağırma yordamı oluşturmak için.|
-|Bir Internet sunucusu, intranet sunucusu veya yerel dosya bağlanın.|Kullanım [CInternetSession::OpenURL](../mfc/reference/cinternetsession-class.md#openurl).|URL ayrıştırır ve belirtilen sunucunun bir bağlantı açar. Döndürür bir [CStdioFile](../mfc/reference/cstdiofile-class.md) (geçirirseniz `OpenURL` bir yerel dosya adı). Bu, sunucu veya dosya alınan verilere erişim nesnesidir.|
-|Dosyadan okuma.|Kullanım [CInternetFile::Read](../mfc/reference/cinternetfile-class.md#read).|Belirtilen sayıda baytı bir arabellek sağladığınız kullanarak okur.|
-|Özel durumları işler.|Kullanım [Cınternetexception](../mfc/reference/cinternetexception-class.md) sınıfı.|Tüm ortak Internet özel durum türlerini işler.|
-|Internet oturumunu sonlandırın.|Elden [Cınternetsession](../mfc/reference/cinternetsession-class.md) nesne.|Dosya tanıtıcılarını Aç ve bağlantıları tarafından otomatik olarak temizlenir.|
+|Bir Internet oturumu başlatın.|[CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi oluşturun.|Winınet 'i başlatır ve sunucuya bağlanır.|
+|Bir Internet sorgu seçeneği (örneğin, zaman aşımı sınırı veya yeniden deneme sayısı) ayarlayın.|[CInternetSession:: SetOption](../mfc/reference/cinternetsession-class.md#setoption)kullanın.|İşlem başarısız olursa FALSE döndürür.|
+|Oturumun durumunu izlemek için bir geri çağırma işlevi oluşturun.|[CInternetSession:: EnableStatusCallback](../mfc/reference/cinternetsession-class.md#enablestatuscallback)kullanın.|[CInternetSession:: OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback)için bir geri çağırma oluşturur. `OnStatusCallback`Kendi geri arama yordamınız oluşturmak için geçersiz kılın.|
+|Bir Internet sunucusuna, intranet sunucusuna veya yerel dosyaya bağlanın.|[CInternetSession:: OpenURL](../mfc/reference/cinternetsession-class.md#openurl)kullanın.|URL 'YI ayrıştırır ve belirtilen sunucuya bir bağlantı açar. Bir [CStdioFile](../mfc/reference/cstdiofile-class.md) döndürür ( `OpenURL` yerel bir dosya adı geçirirseniz). Bu, sunucu veya dosyadan alınan verilere erişebileceğiniz nesnedir.|
+|Dosyadan okuyun.|[CInternetFile:: Read](../mfc/reference/cinternetfile-class.md#read)kullanın.|Sağladığınız arabelleği kullanarak belirtilen sayıda bayt okur.|
+|Özel durumları işleyin.|[CInternetException](../mfc/reference/cinternetexception-class.md) sınıfını kullanın.|Tüm ortak Internet özel durum türlerini işler.|
+|Internet oturumunu sonlandırın.|[CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi atılamadı.|Açık dosya tutamaçlarını ve bağlantıları otomatik olarak temizler.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
-[MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[Win32 Internet Uzantıları (Winınet)](../mfc/win32-internet-extensions-wininet.md)<br/>
+[Internet Istemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
+[MFC WinINet sınıfları kullanarak Internet Istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

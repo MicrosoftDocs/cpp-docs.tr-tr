@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C Ilişkisel ve eşitlik Işleçleri'
 title: C İlişkisel ve Eşitlik İşleçleri
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - equality operator, syntax
 - operators [C], relational
 ms.assetid: c89a3815-a65e-4e0d-8333-0e8dc7fdb30b
-ms.openlocfilehash: 9ae5a31b5f4b81876d2fe518635a9766d2b5323c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6ed6b4de51fdc9eda929cdaf4cf87d238bf7dcc6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227952"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214262"
 ---
 # <a name="c-relational-and-equality-operators"></a>C İlişkisel ve Eşitlik İşleçleri
 
 İkili ilişkisel ve eşitlik işleçleri, belirtilen ilişkinin geçerliliğini test etmek için ilk işlenenlerini ikinci işlenenden karşılaştırın. Bir ilişkisel ifadenin sonucu, sınanan ilişki true ise 1, yanlışsa 0 olur. Sonucun türü **`int`** .
 
-**Sözdizimi**
+**Syntax**
 
 *ilişkisel ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*SHIFT ifadesi*<br/>
@@ -35,7 +36,7 @@ ms.locfileid: "87227952"
 
 İlişkisel ve eşitlik işleçleri aşağıdaki ilişkileri test edin:
 
-|İşleç|İlişki test edildi|
+|Operatör|İlişki test edildi|
 |--------------|-------------------------|
 |**&lt;**|Birinci işlenen ikinci işlenenin küçüktür|
 |**>**|İkinci işleneni aşan ilk işlenen|
@@ -92,5 +93,5 @@ Bu deyimler etiketiyle adlı bir numaralandırma değişkeni bildirir `col` `col
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İlişkisel Işleçler: \<, > ,\<=, and >=](../cpp/relational-operators-equal-and-equal.md)<br/>
+[İlişkisel Işleçler: \<, > , \<=, and >=](../cpp/relational-operators-equal-and-equal.md)<br/>
 [Eşitlik Işleçleri: = = ve! =](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)

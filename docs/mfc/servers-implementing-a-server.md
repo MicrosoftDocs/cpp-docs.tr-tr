@@ -1,48 +1,49 @@
 ---
-title: 'Sunucular: Sunucu uygulama'
+description: 'Daha fazla bilgi edinin: sunucular: sunucu uygulama'
+title: 'Sunucular: Sunucu Uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - servers, implementing
 - OLE server applications [MFC], implementing OLE servers
 ms.assetid: 5bd57e8e-3b23-4f23-9597-496fac2d24b5
-ms.openlocfilehash: 953d157f4bbad0b460947740a2622074dfc90f4f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3ced10f88ce062ab571841610ba4b000571835b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308023"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97217386"
 ---
-# <a name="servers-implementing-a-server"></a>Sunucular: Sunucu uygulama
+# <a name="servers-implementing-a-server"></a>Sunucular: Sunucu Uygulama
 
-Bu makalede, MFC Uygulama Sihirbazı görsel düzenleme sunucu uygulaması için oluşturduğu kodu açıklanmaktadır. Uygulama Sihirbazı'nı kullanmıyorsanız, bu makalede burada sunucu uygulaması uygulamak için kod yazmanız gereken alanları listeler.
+Bu makalede, MFC Uygulama Sihirbazı 'Nın bir görsel düzenlenme sunucusu uygulaması için oluşturduğu kod açıklanmaktadır. Uygulama sihirbazını kullanmıyorsanız, bu makalede bir sunucu uygulaması uygulamak için kod yazmanız gereken bölgeler listelenir.
 
-Yeni bir sunucu uygulaması oluşturmak için Uygulama Sihirbazı'nı kullanıyorsanız, sizin için sunucu özgü kodu önemli ölçüde sağlar. Görsel düzenleme sunucusu işlevselliği varolan bir uygulamaya ekliyorsanız, gerekli sunucu kodun geri kalanını eklemeden önce Uygulama Sihirbazı'nı sağlamış kodu yinelenen gerekir.
+Yeni bir sunucu uygulaması oluşturmak için uygulama Sihirbazı 'nı kullanıyorsanız, sizin için sunucuya özgü önemli bir kod sağlar. Var olan bir uygulamaya görsel olarak düzenlenen sunucu işlevselliği ekliyorsanız, gerekli sunucu kodunun geri kalanını eklemeden önce uygulama Sihirbazı 'nın sağlandığı kodu çoğaltmalısınız.
 
-Uygulama Sihirbazı'nı sağlayan sunucu kodu birkaç kategoride toplanabilir:
+Uygulama sihirbazının sağladığı sunucu kodu birkaç kategoride yer almaktadır:
 
 - Sunucu kaynaklarını tanımlama:
 
-  - Sunucunun kendi penceresinde gömülü bir öğe düzenlenirken kullanılan menü kaynağı.
+  - Sunucu, bir katıştırılmış öğeyi kendi penceresinde düzenlemekte kullanılan menü kaynağı.
 
-  - Sunucu yerinde etkin olduğunda kullanılan menü ve araç çubuğu kaynakları.
+  - Sunucu etkin olduğunda kullanılan menü ve araç çubuğu kaynakları.
 
-  Bu kaynaklar hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: Sunucu ekleme](../mfc/menus-and-resources-server-additions.md).
+  Bu kaynaklarla ilgili daha fazla bilgi için bkz. [menüler ve kaynaklar: sunucu eklemeleri](../mfc/menus-and-resources-server-additions.md).
 
-- Bir öğe sınıfı tanımlayarak türetilen `COleServerItem`. Sunucu öğeleri hakkında daha ayrıntılı bilgi için bkz. [sunucuları: Sunucu öğeleri](../mfc/servers-server-items.md).
+- Öğesinden türetilmiş bir öğe sınıfını tanımlama `COleServerItem` . Sunucu öğeleri hakkında daha fazla bilgi için bkz. [sunucular: sunucu öğeleri](../mfc/servers-server-items.md).
 
-- Belge sınıfına temel sınıfını değiştirmek `COleServerDoc`. Daha fazla ayrıntı için bkz. [sunucuları: Sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md).
+- Belge sınıfının taban sınıfını olarak değiştirme `COleServerDoc` . Daha fazla ayrıntı için bkz. [sunucular: sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md).
 
-- Çerçeve pencere sınıfını tanımlama türetilen `COleIPFrameWnd`. Daha fazla ayrıntı için bkz. [sunucuları: Yerinde çerçeve Windows uygulama](../mfc/servers-implementing-in-place-frame-windows.md).
+- Öğesinden türetilmiş bir çerçeve pencere sınıfı tanımlama `COleIPFrameWnd` . Daha fazla ayrıntı için bkz. [sunucular: In-Place çerçeve pencereleri uygulama](../mfc/servers-implementing-in-place-frame-windows.md).
 
-- Windows kayıt defteri veritabanındaki sunucu uygulaması için bir giriş oluşturmak ve yeni bir sunucu örneğini OLE sistemiyle kaydediliyor. Bu konu hakkında daha fazla bilgi için bkz: [kayıt](../mfc/registration.md).
+- Windows kayıt veritabanında sunucu uygulaması için bir giriş oluşturma ve sunucunun yeni örneğini OLE sistemiyle kaydetme. Bu konu hakkında daha fazla bilgi için bkz. [kayıt](../mfc/registration.md).
 
-- Başlatma ve sunucu uygulaması başlatma. Bu konu hakkında daha fazla bilgi için bkz: [kayıt](../mfc/registration.md).
+- Sunucu uygulamasını başlatma ve başlatma. Bu konu hakkında daha fazla bilgi için bkz. [kayıt](../mfc/registration.md).
 
-Daha fazla bilgi için [Coleserverıtem](../mfc/reference/coleserveritem-class.md), [COleServerDoc](../mfc/reference/coleserverdoc-class.md), ve [Coleıpframewnd](../mfc/reference/coleipframewnd-class.md) içinde *sınıf kitaplığı başvurusu*.
+Daha fazla bilgi için bkz. *sınıf kitaplığı başvurusunda* [Copaserverıtem](../mfc/reference/coleserveritem-class.md), [Copaserverdoc](../mfc/reference/coleserverdoc-class.md)ve [cotaipframewnd](../mfc/reference/coleipframewnd-class.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sunucular](../mfc/servers.md)<br/>
 [Kapsayıcılar](../mfc/containers.md)<br/>
-[Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
-[Kayıt](../mfc/registration.md)
+[Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)<br/>
+[Kaydını](../mfc/registration.md)

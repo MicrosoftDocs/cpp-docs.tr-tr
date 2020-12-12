@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Floating-Point değerlere tamsayılar atama'
 title: Kayan Nokta Değerlerine Tam Sayılar Atama
 ms.date: 11/04/2016
 helpviewer_keywords:
 - integers, casting to floating-point values
 ms.assetid: 81fd5b7d-15eb-4c11-a8c8-e1621ff54fd3
-ms.openlocfilehash: b3c65beee0cef4eb74d1bad3c03e5a9c11efae27
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2a1a3ce5bf7aac98148c70eb62cdb3c377ca54f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214024"
 ---
 # <a name="casting-integers-to-floating-point-values"></a>Kayan Nokta Değerlerine Tam Sayılar Atama
 

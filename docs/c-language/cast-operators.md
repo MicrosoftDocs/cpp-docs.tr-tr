@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: cast Işleçleri'
 title: Atama İşleçleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - operators [C++], cast
 - type conversion, cast operators
 ms.assetid: 43b90bbd-39ef-43e6-ae5d-e8a67a01de40
-ms.openlocfilehash: e3d892a5aede4cd2d6a980b440875f0ac9837120
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 181d402e260cf4bf0970881226bf558282297333
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312671"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214122"
 ---
 # <a name="cast-operators"></a>Atama İşleçleri
 
 Bir tür ataması, belirli bir durumda bir nesne türünün açık dönüştürmesine ilişkin bir yöntem sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *Cast ifadesi*: *birli ifade*
 
@@ -28,4 +29,4 @@ Derleyici, tür atama yapıldıktan sonra tür *türü adı* olarak *atama ifade
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Atama İşleci: ()](../cpp/cast-operator-parens.md)
+[Atama Işleci: ()](../cpp/cast-operator-parens.md)

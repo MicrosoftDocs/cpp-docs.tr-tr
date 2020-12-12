@@ -1,4 +1,5 @@
 ---
+description: ': DLL Içeri ve dışarı aktarma hakkında daha fazla bilgi'
 title: DLL İçeri ve Dışarı Aktarma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dllexport attribute [C++]
 - dllexport attribute [C++], storage-class attribute
 ms.assetid: ab058610-0190-4354-8955-86db66add7c6
-ms.openlocfilehash: fa7a3c088b34d484a39e91f58e55c72d42ef3b43
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4f4163949868b12855662377ceedc5744de1b5d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213900"
 ---
 # <a name="dll-import-and-export"></a>DLL İçeri ve Dışarı Aktarma
 
@@ -23,4 +24,4 @@ Dllimport ve dllexport depolama sınıfı değiştiricileri, C diline ilişkin M
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Genişletilmiş Depolama Sınıfı Öznitelikler](../c-language/c-extended-storage-class-attributes.md)
+[C genişletilmiş Storage-Class öznitelikleri](../c-language/c-extended-storage-class-attributes.md)

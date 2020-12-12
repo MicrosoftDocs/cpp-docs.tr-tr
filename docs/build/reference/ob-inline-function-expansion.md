@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/OB (satır Içi Işlev genişletmesi)
 title: /Ob (Satır İçi İşlev Genişletmesi)
 ms.date: 08/08/2019
 f1_keywords:
@@ -24,28 +25,28 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-ms.openlocfilehash: 56a755de69b4f2ce6b659959eca5b25a6d75bfdc
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 9a003f83d27ca0517b427bab6f7ffda75ff51557
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921197"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214355"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob (Satır İçi İşlev Genişletmesi)
 
-İşlevlerin satır içi genişletmesini denetler. Varsayılan olarak, *iyileştirildiğinde* , genişletme derleyicinin tüm işlevlerde (genellikle otomatik olarak ifade edilir) meydana gelir.
+İşlevlerin satır içi genişletmesini denetler. Varsayılan olarak, *iyileştirildiğinde*, genişletme derleyicinin tüm işlevlerde (genellikle otomatik olarak ifade edilir) meydana gelir.
 
 ## <a name="syntax"></a>Syntax
 
 ::: moniker range=">=msvc-160"
 
-> **/Ob** { **0** | **1** | **2** | **3** }
+> **/Ob**{**0** | **1** | **2** | **3**}
 
 ::: moniker-end
 
 ::: moniker range="<=msvc-150"
 
-> **/Ob** { **0** | **1** | **2** }
+> **/Ob**{**0** | **1** | **2**}
 
 ::: moniker-end
 
@@ -63,7 +64,7 @@ Yalnızca [satır içi](../../cpp/inline-functions-cpp.md), [__inline](../../cpp
 ::: moniker range=">=msvc-160"
 
 **03**\
-Bu seçenek **/Ob2** ' den daha agresif bir giriş belirtir, ancak aynı kısıtlamalara sahiptir. **/Ob3** seçeneği, Visual Studio 2019 ' den itibaren kullanılabilir.
+Bu seçenek **/Ob2**' den daha agresif bir giriş belirtir, ancak aynı kısıtlamalara sahiptir. **/Ob3** seçeneği, Visual Studio 2019 ' den itibaren kullanılabilir.
 
 ::: moniker-end
 
@@ -74,7 +75,7 @@ Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öner
 İşlevlerin satır içi genişletme için aday olarak dikkate alınması dışında, [__declspec (noinline)](../../cpp/noinline.md)veya [#pragma auto_inline (kapalı)](../../preprocessor/auto-inline.md) ve [#pragma auto_inline (açık)](../../preprocessor/auto-inline.md) yönergeleriyle işaretlenmiş bir bölge kullanabilirsiniz. Derleyiciye iç ipuçları sağlamanın başka bir yolu hakkında daha fazla bilgi için, [#pragma iç](../../preprocessor/intrinsic.md) yönergesine bakın.
 
 > [!NOTE]
-> Profil oluşturma testi çalıştırmalarından toplanan bilgiler, **/ob** , **/OS** veya **/ot** belirttiğiniz için, aksi takdirde geçerli olacak iyileştirmeleri geçersiz kılar. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
+> Profil oluşturma testi çalıştırmalarından toplanan bilgiler, **/ob**, **/OS** veya **/ot** belirttiğiniz için, aksi takdirde geçerli olacak iyileştirmeleri geçersiz kılar. Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 

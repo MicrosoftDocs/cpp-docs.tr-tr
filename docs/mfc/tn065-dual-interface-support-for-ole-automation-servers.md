@@ -1,5 +1,6 @@
 ---
-title: 'TN065: OLE Otomasyonu sunucuları için çift arabirim desteği'
+description: 'Hakkında daha fazla bilgi edinin: TN065: Dual-Interface support for OLE Automation Server'
+title: 'TN065: OLE Otomasyon Sunucuları için Çift Arabirim Desteği'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.ole
@@ -9,41 +10,41 @@ helpviewer_keywords:
 - ACDUAL sample [MFC]
 - Automation servers [MFC], dual-interface support
 ms.assetid: b5c8ed09-2f7f-483c-80fc-2a47ad896063
-ms.openlocfilehash: 1508b5219f7bb7fd2e9c9a56c42c30bb99686804
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 9add7b42c832944c10b4b607f26b6ca8f23ae300
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630386"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214578"
 ---
-# <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE Otomasyonu sunucuları için çift arabirim desteği
+# <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE Otomasyon Sunucuları için Çift Arabirim Desteği
 
 > [!NOTE]
 > Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-Bu notta, MFC tabanlı bir OLE Otomasyonu sunucu uygulamasına çift arabirim desteğinin nasıl ekleneceği açıklanmaktadır. [Acdual](../overview/visual-cpp-samples.md) örneği çift arabirim desteğini gösterir ve bu notdaki örnek kod acdual 'ten alınmıştır. Bu notta açıklanan makrolar, örneğin DECLARE_DUAL_ERRORINFO, DUAL_ERRORINFO_PART ve IMPLEMENT_DUAL_ERRORINFO, ACDUAL örneğinin bir parçasıdır ve MFCDUAL içinde bulunabilir. Olsun.
+Bu notta, MFC tabanlı bir OLE Otomasyonu sunucu uygulamasına çift arabirim desteğinin nasıl ekleneceği açıklanmaktadır. [Acdual](../overview/visual-cpp-samples.md) örneği çift arabirim desteğini gösterir ve bu notdaki örnek kod acdual 'ten alınmıştır. DECLARE_DUAL_ERRORINFO, DUAL_ERRORINFO_PART ve IMPLEMENT_DUAL_ERRORINFO gibi bu notta açıklanan makrolar, ACDUAL örneğinin bir parçasıdır ve MFCDUAL. H içinde bulunabilir.
 
 ## <a name="dual-interfaces"></a>Çift arabirimler
 
-OLE Otomasyonu bir `IDispatch` arabirim, bir VTBL arabirimi ya da çift bir arabirim (her ikisini de kapsayan) uygulamanıza izin veriyorsa, Microsoft, sunulan tüm OLE Otomasyonu nesneleri için ikili arabirimler uygulamanızı kesinlikle önerir. Çift arabirimlerin yalnızca daha fazla `IDispatch`veya yalnızca VTBL arabirimler için önemli avantajları vardır:
+OLE Otomasyonu bir `IDispatch` arabirim, BIR VTBL arabirimi ya da çift bir arabirim (her ikisini de kapsayan) uygulamanıza izin veriyorsa, Microsoft, sunulan tüm OLE Otomasyonu nesneleri için ikili arabirimler uygulamanızı kesinlikle önerir. Çift arabirimlerin yalnızca daha fazla `IDispatch` veya yalnızca VTBL arabirimler için önemli avantajları vardır:
 
-- Bağlama, VTBL arabirimi aracılığıyla ya da çalışma zamanında aracılığıyla `IDispatch`derleme zamanında gerçekleşebilir.
+- Bağlama, VTBL arabirimi aracılığıyla ya da çalışma zamanında aracılığıyla derleme zamanında gerçekleşebilir `IDispatch` .
 
 - VTBL arabirimini kullanabilecek OLE Otomasyonu denetleyicileri, geliştirilmiş performanstan yararlanabilir.
 
-- `IDispatch` Arabirimi kullanan mevcut OLE Otomasyonu denetleyicileri çalışmaya devam edecektir.
+- Arabirimi kullanan mevcut OLE Otomasyonu denetleyicileri `IDispatch` çalışmaya devam edecektir.
 
-- ' Den C++daha kolay çağracak olan VTBL arabirimi.
+- VTBL arabirimi C++ ' dan daha kolay çağrmaktır.
 
 - Visual Basic nesne desteği özellikleriyle uyumluluk için çift arabirimler gereklidir.
 
-## <a name="adding-dual-interface-support-to-a-ccmdtarget-based-class"></a>CCmdTarget tabanlı sınıfa çift arabirim desteği ekleme
+## <a name="adding-dual-interface-support-to-a-ccmdtarget-based-class"></a>CCmdTarget-Based sınıfına Dual-Interface desteği ekleme
 
-Bir çift arabirim aslında yalnızca öğesinden `IDispatch`türetilmiş özel bir arabirimdir. Tabanlı bir `CCmdTarget`sınıfta çift arabirim desteği sağlamanın en kolay yolu, öncelikle MFC ve ClassWizard kullanarak sınıfınıza normal dağıtım arabirimini uygulamaktır, ardından özel arabirimi daha sonra eklemektir. Çoğu bölüm için, özel arabirim uygulamanız yalnızca MFC `IDispatch` uygulamasına yeniden temsilci atamasını sağlar.
+Bir çift arabirim aslında yalnızca öğesinden türetilmiş özel bir arabirimdir `IDispatch` . Tabanlı bir sınıfta çift arabirim desteği sağlamanın en kolay yolu, `CCmdTarget` öncelıkle MFC ve ClassWizard kullanarak sınıfınıza normal dağıtım arabirimini uygulamaktır, ardından özel arabirimi daha sonra eklemektir. Çoğu bölüm için, özel arabirim uygulamanız yalnızca MFC uygulamasına yeniden temsilci atamasını sağlar `IDispatch` .
 
-İlk olarak, nesneleriniz için ikili arabirimler tanımlamak üzere sunucunuzun ODL dosyasını değiştirin. İkili bir arabirim tanımlamak için, Visual `DISPINTERFACE` C++ sihirbazlarının üretmesindeki deyimin yerine bir arabirim ifadesini kullanmanız gerekir. Varolan `DISPINTERFACE` ifadeyi kaldırmak yerine yeni bir arabirim açıklaması ekleyin. `DISPINTERFACE` Formu koruyarak, deyiminize Özellikler ve yöntemler eklemek için ClassWizard 'ı kullanmaya devam edebilirsiniz, ancak Interface deyiminize eşdeğer özellikleri ve yöntemleri eklemeniz gerekir.
+İlk olarak, nesneleriniz için ikili arabirimler tanımlamak üzere sunucunuzun ODL dosyasını değiştirin. Çift arabirimi tanımlamak için, Visual C++ sihirbazları 'nın üretmesindeki deyimin yerine bir arabirim ifadesini kullanmanız gerekir `DISPINTERFACE` . Varolan ifadeyi kaldırmak yerine `DISPINTERFACE` Yeni bir arabirim açıklaması ekleyin. `DISPINTERFACE`Formu koruyarak, deyiminize Özellikler ve yöntemler eklemek Için ClassWizard 'ı kullanmaya devam edebilirsiniz, ancak Interface deyiminize eşdeğer özellikleri ve yöntemleri eklemeniz gerekir.
 
-Çift arabirim için bir arabirim bildiriminde, *oleautomation* ve *Dual* özniteliklerine sahip olmalıdır ve arabirim öğesinden `IDispatch`türetilmelidir. Dual arabirimi için bir **IID** oluşturmak üzere [GUIDgen](../overview/visual-cpp-samples.md) örneğini kullanabilirsiniz:
+Çift arabirim için bir arabirim bildiriminde, *oleautomation* ve *Dual* özniteliklerine sahip olmalıdır ve arabirim öğesinden türetilmelidir `IDispatch` . Dual arabirimi için bir **IID** oluşturmak üzere [GUIDgen](../overview/visual-cpp-samples.md) örneğini kullanabilirsiniz:
 
 ```IDL
 [ uuid(0BDD0E81-0DD7-11cf-BBA8-444553540000), // IID_IDualAClick
@@ -55,7 +56,7 @@ interface IDualAClick : IDispatch
     };
 ```
 
-Arabirim deyiminizi oluşturduktan sonra, Yöntemler ve özellikler için girdi eklemeye başlayın. Çift arabirimler için, Çift arabirimdeki yöntemlerinizin ve özellik erişimcisinin bir **HRESULT** döndürmesi ve dönüş değerlerini özniteliklerle `[retval,out]`parametre olarak iletmeleri için parametre listelerini yeniden düzenlemeniz gerekir. Özellikler için aynı kimliğe sahip bir Read (`propget`) ve Write (`propput`) erişim işlevi eklemeniz gerektiğini unutmayın. Örneğin:
+Arabirim deyiminizi oluşturduktan sonra, Yöntemler ve özellikler için girdi eklemeye başlayın. Çift arabirimler için, Çift arabirimdeki yöntemlerinizin ve özellik erişimcisinin bir **HRESULT** döndürmesi ve dönüş değerlerini özniteliklerle parametre olarak iletmeleri için parametre listelerini yeniden düzenlemeniz gerekir `[retval,out]` . Özellikler için `propget` aynı kimliğe sahip bir Read () ve Write () erişim işlevi eklemeniz gerektiğini unutmayın `propput` . Örneğin:
 
 ```IDL
 [propput, id(1)] HRESULT text([in] BSTR newText);
@@ -73,9 +74,9 @@ coclass Document
 };
 ```
 
-ODL dosyanız güncelleştirildikten sonra, nesne sınıfınıza çift arabirim için bir uygulama sınıfı tanımlamak ve MFC `QueryInterface` mekanizmasında karşılık gelen girdileri oluşturmak için MFC 'nin arabirim eşleme mekanizmasını kullanın. ODL 'nin arabirim deyimindeki her `INTERFACE_PART` giriş için bloğunda bir giriş ve bir dağıtım arabirimi için girdiler olması gerekir. *Propput* özniteliğine sahip her BIR ODL girişinin adlı `put_propertyname`bir işlevi olması gerekir. *Propget* özniteliğine sahip her girdinin adlı `get_propertyname`bir işlevi olması gerekir.
+ODL dosyanız güncelleştirildikten sonra, nesne sınıfınıza çift arabirim için bir uygulama sınıfı tanımlamak ve MFC mekanizmasında karşılık gelen girdileri oluşturmak için MFC 'nin arabirim eşleme mekanizmasını kullanın `QueryInterface` . `INTERFACE_PART`ODL 'nin arabirim deyimindeki her giriş için bloğunda bir giriş ve bir dağıtım arabirimi için girdiler olması gerekir. *Propput* özniteliğine sahip her BIR ODL girişinin adlı bir işlevi olması gerekir `put_propertyname` . *Propget* özniteliğine sahip her girdinin adlı bir işlevi olması gerekir `get_propertyname` .
 
-Dual Interface için bir uygulama sınıfı tanımlamak üzere, nesne sınıfı tanımınıza bir `DUAL_INTERFACE_PART` blok ekleyin. Örneğin:
+Dual Interface için bir uygulama sınıfı tanımlamak üzere, `DUAL_INTERFACE_PART` nesne sınıfı tanımınıza bir blok ekleyin. Örneğin:
 
 ```cpp
 BEGIN_DUAL_INTERFACE_PART(DualAClick, IDualAClick)
@@ -93,7 +94,7 @@ BEGIN_DUAL_INTERFACE_PART(DualAClick, IDualAClick)
 END_DUAL_INTERFACE_PART(DualAClick)
 ```
 
-İkili arabirimi MFC 'nin [QueryInterface](/windows/win32/com/queryinterface--navigating-in-an-object) mekanizmasına bağlamak için arabirim eşlemesine bir `INTERFACE_PART` giriş ekleyin:
+İkili arabirimi MFC 'nin [QueryInterface](/windows/win32/com/queryinterface--navigating-in-an-object) mekanizmasına bağlamak için `INTERFACE_PART` arabirim eşlemesine bir giriş ekleyin:
 
 ```cpp
 BEGIN_INTERFACE_MAP(CAutoClickDoc, CDocument)
@@ -102,7 +103,7 @@ BEGIN_INTERFACE_MAP(CAutoClickDoc, CDocument)
 END_INTERFACE_MAP()
 ```
 
-Ardından, arabirimin uygulamasını doldurmanız gerekir. Çoğu bölüm için, mevcut MFC `IDispatch` uygulamasına temsilci atayabileceksiniz. Örneğin:
+Ardından, arabirimin uygulamasını doldurmanız gerekir. Çoğu bölüm için, mevcut MFC uygulamasına temsilci atayabileceksiniz `IDispatch` . Örneğin:
 
 ```cpp
 STDMETHODIMP_(ULONG) CAutoClickDoc::XDualAClick::AddRef()
@@ -201,9 +202,9 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::get_text(BSTR* retval)
 }
 ```
 
-## <a name="passing-dual-interface-pointers"></a>Çift arabirim Işaretçilerini geçirme
+## <a name="passing-dual-interface-pointers"></a>Dual-Interface Işaretçilerini geçirme
 
-Özellikle çağırmanız `CCmdTarget::FromIDispatch`gerekiyorsa çift arabirim işaretçinizi geçirmek basit değildir. `FromIDispatch`yalnızca MFC `IDispatch` işaretçilerinde kullanılabilir. Bu sorunu çözmek için bir yol, MFC tarafından ayarlanan orijinal `IDispatch` işaretçiyi sorgular ve bu işaretçiyi bu işaretçiye gereken işlevlere iletir. Örneğin:
+Özellikle çağırmanız gerekiyorsa çift arabirim işaretçinizi geçirmek basit değildir `CCmdTarget::FromIDispatch` . `FromIDispatch` yalnızca MFC `IDispatch` işaretçilerinde kullanılabilir. Bu sorunu çözmek için bir yol, `IDispatch` MFC tarafından ayarlanan orijinal işaretçiyi sorgular ve bu işaretçiyi bu işaretçiye gereken işlevlere iletir. Örneğin:
 
 ```
 STDMETHODIMP CAutoClickDoc::XDualAClick::put_Position(
@@ -238,9 +239,9 @@ AppWizard, bir OLE Otomasyonu sunucu uygulamasının tür kitaplığını sistem
 
 Uygulamanın tek başına çalıştırıldığı her seferinde uygulamanın tür kitaplığını kaydetmek için:
 
-- AFXCTL 'yi dahil edin. Standart içindeki H, STBAFX başlık dosyasını içerir. H, `AfxOleRegisterTypeLib` işlevin tanımına erişmek için.
+- AFXCTL 'yi dahil edin. Standart içindeki H, STBAFX başlık dosyasını içerir. H, işlevin tanımına erişmek için `AfxOleRegisterTypeLib` .
 
-- Uygulamanızın `InitInstance` işlevinde, `COleObjectFactory::UpdateRegistryAll`çağrısını bulun. Bu çağrıdan sonra, tür kitaplığınızın adı ile `AfxOleRegisterTypeLib`birlikte tür kitaplığınıza karşılık gelen **libıd** 'yi belirterek öğesine bir çağrı ekleyin:
+- Uygulamanızın `InitInstance` işlevinde, çağrısını bulun `COleObjectFactory::UpdateRegistryAll` . Bu çağrıdan sonra, tür kitaplığınızın `AfxOleRegisterTypeLib` adı ile birlikte tür kitaplığınıza karşılık gelen **libıd** 'yi belirterek öğesine bir çağrı ekleyin:
 
     ```cpp
     // When a server application is launched stand-alone, it is a good idea
@@ -267,7 +268,7 @@ Bir projenin yapı ayarlarını değiştirmek için, tür kitaplığı yeniden o
 
 MkTypLib tarafından oluşturulan üstbilgi dosyasındaki **UUID** tanımlarını projenize eklemek için:
 
-1. MkTypLib tarafından oluşturulan üst bilgi dosyasını standart bir şekilde, *stbafx. h*başlık dosyasına ekleyin.
+1. MkTypLib tarafından oluşturulan üst bilgi dosyasını standart bir şekilde, *stbafx. h* başlık dosyasına ekleyin.
 
 2. Yeni bir dosya, ıNITIıDS oluşturun. CPP ve projenize ekleyin. Bu dosyada, OLE2 dahil olmak üzere MkTypLib tarafından oluşturulan üst bilgi dosyanızı ekleyin. H ve ıNITGUID. Olsun
 
@@ -281,19 +282,19 @@ MkTypLib tarafından oluşturulan üstbilgi dosyasındaki **UUID** tanımların�
 
 3. **Yapı** menüsünde **Ayarlar**' a ve ardından ınitiyııds ' ı seçin. Her yapılandırma için dosya listesinden CPP.
 
-4. **C++** Sekmesine tıklayın, kategori **önceden derlenmiş üst bilgiler**' e tıklayın ve **önceden derlenmiş üst bilgiler kullanmayan** radyo düğmesini seçin. Tamam ' a tıklayarak **derleme ayarları** iletişim kutusunu kapatın.
+4. **C++** sekmesine tıklayın, kategori **önceden derlenmiş üst bilgiler**' e tıklayın ve **önceden derlenmiş üst bilgiler kullanmayan** radyo düğmesini seçin. Tamam ' a tıklayarak **derleme ayarları** iletişim kutusunu kapatın.
 
 ## <a name="specifying-the-correct-object-class-name-in-the-type-library"></a>Tür kitaplığında doğru nesne sınıfı adını belirtme
 
-Visual C++ ile gönderilen sihirbazlar yanlış bir şekilde uygulama sınıfı adını kullanarak, OLE-creatable sınıfları için sunucunun ODL dosyasında coclass 'ı belirtir. Bu işlem işinize başlamadan, uygulama sınıfı adı muhtemelen nesnenizin kullanıcılarının kullanmasını istediğiniz sınıf adı değildir. Doğru adı belirtmek için, ODL dosyasını açın, her coclass bildirisini bulun ve uygulama sınıfı adını doğru dış adla değiştirin.
+Visual C++ ile birlikte gönderilen sihirbazlar, OLE-creatable sınıfları için sunucunun ODL dosyasında coclass 'ı belirtmek üzere uygulama sınıfı adını yanlış kullanır. Bu işlem işinize başlamadan, uygulama sınıfı adı muhtemelen nesnenizin kullanıcılarının kullanmasını istediğiniz sınıf adı değildir. Doğru adı belirtmek için, ODL dosyasını açın, her coclass bildirisini bulun ve uygulama sınıfı adını doğru dış adla değiştirin.
 
-Coclass deyimin değiştiği zaman, MkTypLib tarafından oluşturulan üst bilgi dosyasındaki **CLSID**öğeleri 'nin değişken adlarının buna göre değişdiğine unutmayın. Yeni değişken adlarını kullanmak için kodunuzu güncelleştirmeniz gerekir.
+Coclass deyimin değiştiği zaman, MkTypLib tarafından oluşturulan üst bilgi dosyasındaki **CLSID** öğeleri 'nin değişken adlarının buna göre değişdiğine unutmayın. Yeni değişken adlarını kullanmak için kodunuzu güncelleştirmeniz gerekir.
 
 ## <a name="handling-exceptions-and-the-automation-error-interfaces"></a>Özel durumları ve Otomasyon hata arabirimlerini işleme
 
-Otomasyon nesnenizin yöntemleri ve özellik erişimcisi işlevleri özel durumlar oluşturabilir. Bu durumda, bunları çift arabirim uygulamanızda işlemeli ve OLE Otomasyonu hata işleme arabirimi `IErrorInfo`aracılığıyla denetleyiciye geri dönme hakkında bilgi geçirmeniz gerekir. Bu arabirim, hem hem de `IDispatch` VTBL arabirimleri aracılığıyla ayrıntılı, bağlamsal hata bilgileri sağlar. Bir hata işleyicisinin kullanılabilir olduğunu göstermek için `ISupportErrorInfo` arabirimini uygulamalısınız.
+Otomasyon nesnenizin yöntemleri ve özellik erişimcisi işlevleri özel durumlar oluşturabilir. Bu durumda, bunları çift arabirim uygulamanızda işlemeli ve OLE Otomasyonu hata işleme arabirimi aracılığıyla denetleyiciye geri dönme hakkında bilgi geçirmeniz gerekir `IErrorInfo` . Bu arabirim, hem hem de VTBL arabirimleri aracılığıyla ayrıntılı, bağlamsal hata bilgileri sağlar `IDispatch` . Bir hata işleyicisinin kullanılabilir olduğunu göstermek için `ISupportErrorInfo` arabirimini uygulamalısınız.
 
-Hata işleme mekanizmasını göstermek için, standart dağıtım desteğini oluşturmak için kullanılan ClassWizard tarafından oluşturulan işlevlerin özel durum oluşturduğunu varsayın. MFC 'nin `IDispatch::Invoke` uygulanması genellikle bu özel durumları yakalar ve `Invoke` çağrı aracılığıyla döndürülen bir EXCEPTINFO yapısına dönüştürür. Ancak, VTBL arabirimi kullanıldığında, özel durumları kendi başınıza yakalamak sizin sorumluluğunuzdadır. Çift arabirim yöntemlerinizi korumanın bir örneği olarak:
+Hata işleme mekanizmasını göstermek için, standart dağıtım desteğini oluşturmak için kullanılan ClassWizard tarafından oluşturulan işlevlerin özel durum oluşturduğunu varsayın. MFC 'nin uygulanması `IDispatch::Invoke` genellikle bu özel durumları yakalar ve çağrı aracılığıyla döndürülen BIR EXCEPTıNFO yapısına dönüştürür `Invoke` . Ancak, VTBL arabirimi kullanıldığında, özel durumları kendi başınıza yakalamak sizin sorumluluğunuzdadır. Çift arabirim yöntemlerinizi korumanın bir örneği olarak:
 
 ```cpp
 STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
@@ -310,31 +311,31 @@ STDMETHODIMP CAutoClickDoc::XDualAClick::put_text(BSTR newText)
 }
 ```
 
-`CATCH_ALL_DUAL`özel durum oluştuğunda doğru hata kodunu döndürmekten yararlanır. `CATCH_ALL_DUAL``ICreateErrorInfo` arabirimi kullanarak MFC özel durumunu OLE Otomasyonu hata işleme bilgilerine dönüştürür. (Örnek `CATCH_ALL_DUAL` bir makro mfcdual dosyasıdır. Y, [acdual](../overview/visual-cpp-samples.md) örneğinde. Özel durumları `DualHandleException`işlemek için çağrı yaptığı işlev, mfcdual dosyasında bulunur. CPP.) `CATCH_ALL_DUAL` oluşan özel durum türüne göre döndürülecek hata kodunu belirler:
+`CATCH_ALL_DUAL` özel durum oluştuğunda doğru hata kodunu döndürmekten yararlanır. `CATCH_ALL_DUAL` arabirimi kullanarak MFC özel durumunu OLE Otomasyonu hata işleme bilgilerine dönüştürür `ICreateErrorInfo` . (Örnek bir `CATCH_ALL_DUAL` makro MFCDUAL dosyasıdır. Y, [acdual](../overview/visual-cpp-samples.md) örneğinde. Özel durumları işlemek için çağrı yaptığı işlev, `DualHandleException` MFCDUAL dosyasında bulunur. CPP.) `CATCH_ALL_DUAL` oluşan özel durum türüne göre döndürülecek hata kodunu belirler:
 
-- [Cotadispatchexception](../mfc/reference/coledispatchexception-class.md) -bu durumda, `HRESULT` aşağıdaki kod kullanılarak oluşturulur:
+- [Cotadispatchexception](../mfc/reference/coledispatchexception-class.md) -bu durumda, `HRESULT` Aşağıdaki kod kullanılarak oluşturulur:
 
     ```cpp
     hr = MAKE_HRESULT(SEVERITY_ERROR, FACILITY_ITF, (e->m_wCode + 0x200));
     ```
 
-   Bu, özel `HRESULT` duruma neden olan arabirime özel bir oluşturur. Standart OLE arabirimleri için sistem tarafından tanımlanan `HRESULT`bir çakışmayı önlemek üzere hata kodu 0x200 tarafından denkleştirilir.
+   Bu `HRESULT` , özel duruma neden olan arabirime özel bir oluşturur. Standart OLE arabirimleri için sistem tarafından tanımlanan bir çakışmayı önlemek üzere hata kodu 0x200 tarafından denkleştirilir `HRESULT` .
 
 - [CMemoryException](../mfc/reference/cmemoryexception-class.md) -bu durumda `E_OUTOFMEMORY` döndürülür.
 
-- Bu durumda `E_UNEXPECTED` başka bir özel durum döndürülür.
+- Bu durumda başka bir özel durum `E_UNEXPECTED` döndürülür.
 
-OLE Otomasyonu hata işleyicisinin kullanıldığını belirtmek için, `ISupportErrorInfo` arabirimini de uygulamalısınız.
+OLE Otomasyonu hata işleyicisinin kullanıldığını belirtmek için, arabirimini de uygulamalısınız `ISupportErrorInfo` .
 
-İlk olarak, desteklediği `ISupportErrorInfo`göstermek için Otomasyon sınıfı tanımınıza kod ekleyin.
+İlk olarak, desteklediği göstermek için Otomasyon sınıfı tanımınıza kod ekleyin `ISupportErrorInfo` .
 
-İkinci olarak, `ISupportErrorInfo` uygulama sınıfını `QueryInterface` MFC mekanizmasıyla ilişkilendirmek için Otomasyon sınıfınızın arabirim eşlemesine kod ekleyin. İfade, için `ISupportErrorInfo`tanımlanan sınıfla eşleşir. `INTERFACE_PART`
+İkinci olarak, `ISupportErrorInfo` uygulama SıNıFıNı MFC mekanizmasıyla ilişkilendirmek için Otomasyon sınıfınızın arabirim eşlemesine kod ekleyin `QueryInterface` . `INTERFACE_PART`İfade, için tanımlanan sınıfla eşleşir `ISupportErrorInfo` .
 
-Son olarak, desteklemek `ISupportErrorInfo`için tanımlanan sınıfı uygulayın.
+Son olarak, desteklemek için tanımlanan sınıfı uygulayın `ISupportErrorInfo` .
 
-( [Acdual](../overview/visual-cpp-samples.md) örneği, bu üç adımı, `DECLARE_DUAL_ERRORINFO` `DUAL_ERRORINFO_PART`,, ve `IMPLEMENT_DUAL_ERRORINFO`, hepsi mfcdual içinde bulundurmaya yardımcı olmak için üç makro içerir. H.)
+( [Acdual](../overview/visual-cpp-samples.md) örneği, bu üç adımı,, `DECLARE_DUAL_ERRORINFO` `DUAL_ERRORINFO_PART` ve `IMPLEMENT_DUAL_ERRORINFO` , hepsi mfcdual. H içinde yer alan üç adımı da sağlar.)
 
-Aşağıdaki örnek, desteklemek `ISupportErrorInfo`için tanımlanan bir sınıfı uygular. `CAutoClickDoc`, Otomasyon sınıfınızın adıdır ve `IID_IDualAClick` OLE Otomasyonu hata nesnesi aracılığıyla raporlanan hataların kaynağı olan arabirim için **IID** 'dir:
+Aşağıdaki örnek, desteklemek için tanımlanan bir sınıfı uygular `ISupportErrorInfo` . `CAutoClickDoc` , Otomasyon sınıfınızın adıdır ve `IID_IDualAClick` OLE Otomasyonu hata nesnesi aracılığıyla raporlanan hataların kaynağı olan arabirim Için **IID** 'dir:
 
 ```cpp
 STDMETHODIMP_(ULONG) CAutoClickDoc::XSupportErrorInfo::AddRef()
@@ -367,5 +368,5 @@ STDMETHODIMP CAutoClickDoc::XSupportErrorInfo::InterfaceSupportsErrorInfo(
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

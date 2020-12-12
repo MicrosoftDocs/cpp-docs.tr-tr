@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: zengin düzenleme denetimlerinde akış Işlemleri'
 title: Zengin Düzenleme Denetimlerinde Akış İşlemleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - stream operations in CRichEditCtrl
 - stream storage and CRichEditCtrl
 ms.assetid: 110b4684-1e76-4ca6-9ef0-5bc8b2d93c78
-ms.openlocfilehash: 73277f59dc0ad4dfe21d481d0b893903ed407ea9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3f9dcfb837d9a4f26454a597507712293d3d895c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216489"
 ---
 # <a name="stream-operations-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Akış İşlemleri
 

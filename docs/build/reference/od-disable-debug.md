@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/OD (devre dışı bırak (Hata Ayıkla))
 title: /Od (Devre Dışı Bırak (Hata Ayıkla))
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - -Od compiler option [C++]
 - disable (debug) compiler option [C++]
 ms.assetid: b1ac31b7-e086-4eeb-be5e-488f7513f5f5
-ms.openlocfilehash: 83ece0865eb74a4e9e292b78733df9d24602fe1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d425244a1790a9bb74e1c92db88f32bb0372ab2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214311"
 ---
 # <a name="od-disable-debug"></a>/Od (Devre Dışı Bırak (Hata Ayıkla))
 
-Programdaki tüm iyileştirmeler devre dışı bırakır ve derleme hızlandırır.
+Programdaki tüm iyileştirmeleri kapatır ve derlemeyi hızlandırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /Od
@@ -31,17 +32,17 @@ Programdaki tüm iyileştirmeler devre dışı bırakır ve derleme hızlandır�
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek varsayılandır. Çünkü **/Od** kod taşıma bastırır hata ayıklama işlemi basitleştirir. Hata ayıklama için derleyici seçenekleri hakkında daha fazla bilgi için bkz. [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md).
+Bu seçenek varsayılandır. **/Od** kod hareketini bastırdığı için hata ayıklama işlemini basitleştirir. Hata ayıklama için derleyici seçenekleri hakkında daha fazla bilgi için bkz. [/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **iyileştirme** özellik sayfası.
+1. **İyileştirme** Özellik sayfasına tıklayın.
 
-1. Değiştirme **iyileştirme** özelliği.
+1. **Optimizasyon** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -49,7 +50,7 @@ Bu seçenek varsayılandır. Çünkü **/Od** kod taşıma bastırır hata ayık
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
-[/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](z7-zi-zi-debug-information-format.md)
+[/O seçenekler (kodu Iyileştirme)](o-options-optimize-code.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
+[/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sekme denetimleri ve özellik sayfaları'
 title: Sekme Denetimleri ve Özellik Sayfaları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,22 +7,22 @@ helpviewer_keywords:
 - tab controls [MFC], and property sheets
 - CTabCtrl class [MFC], and property sheets
 ms.assetid: f3b87bea-9ad9-41e6-a7ff-a9285308267e
-ms.openlocfilehash: e765316880749ae5fb065e048b66b1203d7f222e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b81b5c097a5da93a6e6ab614dd5959ce50ba58cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306632"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216398"
 ---
 # <a name="tab-controls-and-property-sheets"></a>Sekme Denetimleri ve Özellik Sayfaları
 
-Özellik sayfaları, birden çok sayfa iletişim kutuları veya "kullanıcı 24 iletişim şablonu kaynaklarına kadar görüntülemek için sekmesinde iletişim kutuları" olur. Özellik sayfaları örnekleri için Windows görüntü özellikleri iletişim kutusu veya aşağıdaki MFC örnek uygulamayı bakın:
+Özellik sayfaları, kullanıcıya en fazla 24 iletişim şablonu kaynağı görüntüleyebilen birden çok sayfalı iletişim kutusu veya "sekme iletişim kutuslarıdır". Özellik sayfaları örnekleri için bkz. Windows görüntüleme özellikleri iletişim kutusu veya aşağıdaki MFC örnek uygulaması:
 
-[CMNCTRL1: Ortak denetim sınıfları, bölüm 1 gösterir](../overview/visual-cpp-samples.md)
+[CMNCTRL1: ortak denetim sınıflarını gösterir, 1. Bölüm](../overview/visual-cpp-samples.md)
 
-[CMNCTRL2: Ortak denetim sınıfları, bölüm 2 gösterir](../overview/visual-cpp-samples.md)
+[CMNCTRL2: ortak denetim sınıflarını gösterir, Bölüm 2](../overview/visual-cpp-samples.md)
 
-Özellik sayfaları kolayca uygulanabilir MFC sınıfı kullanarak [CPropertySheet](../mfc/reference/cpropertysheet-class.md).
+Özellik sayfaları, [CPropertySheet](../mfc/reference/cpropertysheet-class.md)MFC sınıfı kullanılarak kolayca uygulanabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

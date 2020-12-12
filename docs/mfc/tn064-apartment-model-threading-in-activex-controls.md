@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: TN064: ActiveX denetimlerinde Apartment-Model Iş parçacığı'
 title: 'TN064: ActiveX Denetimlerinde Durum Modeli İş Parçacığı Oluşturma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,39 +9,39 @@ helpviewer_keywords:
 - multithread container [MFC]
 - apartment model threading [MFC]
 ms.assetid: b2ab4c88-6954-48e2-9a74-01d4a60df073
-ms.openlocfilehash: 0c6a42124b4b2b03ae7cd9277fa14d43eac7a2bb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 977f429dfc7be6583f7021d1837caae15fca1495
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214695"
 ---
 # <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: ActiveX Denetimlerinde Durum Modeli İş Parçacığı Oluşturma
 
 > [!NOTE]
-> Aşağıdaki teknik not, çevrimiçi belgelere ilk olarak eklenmediğinden beri güncelleştirilemedi. Sonuç olarak, bazı yordamlar ve konular güncel veya yanlış olabilir. En son bilgiler için, çevrimiçi belge dizini ilgi alanı için arama nız önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-Bu teknik not, ActiveX denetiminde daire modeli iş parçacığının nasıl etkinleştirilen açıklanmaktadır. Daire modeli iş parçacığının yalnızca Visual C++ sürümleri 4.2 veya sonraki sürümlerde desteklenerek desteklendirileni unutmayın.
+Bu teknik notta, ActiveX denetiminde apartman modeli iş parçacığı oluşturmayı nasıl etkinleştireceğinizi açıklanmaktadır. Apartman modeli iş parçacığı yalnızca Visual C++ sürüm 4,2 veya sonraki sürümlerde desteklenir.
 
-## <a name="what-is-apartment-model-threading"></a>Daire-Model Diş İşi Nedir
+## <a name="what-is-apartment-model-threading"></a>Apartment-Model Iş parçacığı nedir?
 
-Daire modeli, çok iş parçacığı kapsayıcı uygulaması içinde ActiveX denetimleri gibi gömülü nesneleri desteklemeye bir yaklaşımdır. Uygulama birden çok iş parçacığı olsa da, katıştırılmış nesnenin her örneği yalnızca bir iş parçacığı üzerinde yürütülecek bir "daire" atanır. Başka bir deyişle, denetim örneğine yapılan tüm çağrılar aynı iş parçacığı üzerinde gerçekleşir.
+Apartman modeli, çok iş parçacıklı kapsayıcı uygulamasındaki ActiveX denetimleri gibi katıştırılmış nesneleri desteklemeye yönelik bir yaklaşımdır. Uygulamanın birden çok iş parçacığı olsa da, gömülü bir nesne örneği, yalnızca bir iş parçacığında yürütülecek bir "Apartment" öğesine atanır. Diğer bir deyişle, bir denetimin örneğine yapılan tüm çağrılar aynı iş parçacığında gerçekleşecektir.
 
-Ancak, aynı tür denetimfarklı örnekleri farklı daireleratanabilir. Bu nedenle, bir denetimin birden çok örneği ortak (örneğin, statik veya genel veriler) herhangi bir veriyi paylaşıyorsa, bu paylaşılan verilere erişimin kritik bir bölüm gibi bir eşitleme nesnesi tarafından korunması gerekir.
+Ancak, aynı denetim türünün farklı örnekleri farklı apartmanlarına atanabilir. Bu nedenle, bir denetimin birden çok örneği ortak (örneğin, statik veya genel veriler) herhangi bir veriyi paylaşıyorsa, bu paylaşılan verilere erişimin kritik bir bölüm gibi bir eşitleme nesnesi tarafından korunması gerekir.
 
-Daire iş parçacığı modeli hakkında ayrıntılı bilgi için, Lütfen *OLE Programcısıreferansındaki* [İşlemler ve İş Parçacıkları'na](/windows/win32/ProcThread/processes-and-threads) bakın.
+Apartman iş parçacığı modeliyle ilgili tüm ayrıntılar için lütfen *OLE Programcı başvurusu*'ndaki [süreçler ve iş parçacıkları](/windows/win32/ProcThread/processes-and-threads) bölümüne bakın.
 
-## <a name="why-support-apartment-model-threading"></a>Neden Destek Daire-Model Threading
+## <a name="why-support-apartment-model-threading"></a>Apartment-Model Iş parçacığı neden desteklenir
 
-Daire modeli iş parçacığı destekleyen denetimler, daire modelini de destekleyen çok iş parçacığı kapsayıcı uygulamalarında kullanılabilir. Daire modeli iş parçacığı etkinleştirmezseniz, denetiminizin kullanılabildiği olası kapsayıcı kümesini sınırlandırmış olursunuz.
+Apartman modeli iş parçacığı oluşturmayı destekleyen denetimler, aynı zamanda apartman modelini destekleyen çok iş parçacıklı kapsayıcı uygulamalarında kullanılabilir. Apartman modeli iş parçacığı etkinleştirmezseniz, denetiminizin kullanılabileceği olası kapsayıcılar kümesini sınırlandıracaksınız.
 
-Daire modeli iş parçacığı etkinleştirme, özellikle çok az veya hiç paylaşılan veri varsa, çoğu denetimler için kolaydır.
+Özellikle çok az veya hiç paylaşılan veri yoksa, Grup modeli iş parçacığı, çoğu denetim için kolay bir şekilde etkinleştiriliyor.
 
-## <a name="protecting-shared-data"></a>Paylaşılan Verileri Koruma
+## <a name="protecting-shared-data"></a>Paylaşılan verileri koruma
 
-Denetiminiz statik üye değişken gibi paylaşılan verileri kullanıyorsa, birden fazla iş parçacığının verileri aynı anda değiştirmesini önlemek için bu verilere erişim kritik bir bölümle korunmalıdır. Bu amaçla kritik bir bölüm ayarlamak için, denetiminizin sınıfında `CCriticalSection` statik bir üye değişken bildirin. Kodunuzun paylaşılan verilere eriştisiğü bu kritik bölüm nesnesinin `Lock` ve `Unlock` üye işlevlerini kullanın.
+Denetiminiz statik üye değişkeni gibi paylaşılan verileri kullanıyorsa, verileri aynı anda birden fazla iş parçacığının değiştirmesini engellemek için bu verilere erişim kritik bir bölüm ile korunmalıdır. Bu amaçla kritik bir bölüm ayarlamak için, denetiminizin sınıfında bir statik üye değişkeni bildirin `CCriticalSection` . `Lock` `Unlock` Kodunuzun paylaşılan verilere eriştiği her yerde bu kritik bölüm nesnesinin ve üye işlevlerini kullanın.
 
-Örneğin, tüm örnekler tarafından paylaşılan bir dize yi koruması gereken bir denetim sınıfı düşünün. Bu dize statik bir üye değişkende tutulabilir ve kritik bir bölüm tarafından korunabilir. Denetimin sınıf bildirimi aşağıdakileri içerir:
+Örneğin, tüm örnekler tarafından paylaşılan bir dizeyi sürdürmek için gereken bir denetim sınıfı düşünün. Bu dize statik bir üye değişkeninde korunabilir ve kritik bir bölüm tarafından korunabilir. Denetimin sınıf bildirimi şunları içerir:
 
 ```cpp
 class CSampleCtrl : public COleControl
@@ -51,14 +52,14 @@ class CSampleCtrl : public COleControl
 };
 ```
 
-Sınıf için uygulama bu değişkenler için tanımlar içerecektir:
+Sınıfına yönelik uygulama, bu değişkenlerin tanımlarını içerir:
 
 ```cpp
 int CString CSampleCtrl::_strShared;
 CCriticalSection CSampleCtrl::_critSect;
 ```
 
-`_strShared` Statik üyeye erişim daha sonra kritik bölüm tarafından korunabilir:
+`_strShared`Statik üyeye erişim daha sonra kritik bölüm tarafından korunabilir:
 
 ```cpp
 void CSampleCtrl::SomeMethod()
@@ -72,9 +73,9 @@ if (_strShared.Empty())
 }
 ```
 
-## <a name="registering-an-apartment-model-aware-control"></a>Daire-Model-Farkında Kontrol Kayıt
+## <a name="registering-an-apartment-model-aware-control"></a>Grup modeli kullanan bir denetimi kaydetme
 
-Daire modeli iş parçacığı destekleyen denetimler sınıf *kimliği*\\**InprocServer32** anahtarı altında kendi sınıf kimlik kayıt defteri girişinde "Daire" değeri ile adlandırılmış değeri "ThreadingModel" ekleyerek, kayıt defterinde bu yeteneği göstermelidir. Bu anahtarın otomatik olarak kontrolünüz için kaydedilmesine neden olmak için, altıncı parametredeki *afxRegApartmentThreading* bayrağını şu şekilde `AfxOleRegisterControlClass`geçirin:
+Apartman modeli iş parçacığı desteği olan denetimler *, sınıf kimliği* \\ **ınprocserver32** anahtarının altındaki sınıf kimliği kayıt defteri girişinde, "Apartment" adlı adlandırılmış değeri "Apartment" değerine ekleyerek kayıt defterindeki bu özelliği göstermelidir. Bu anahtarın denetiminizin otomatik olarak kaydedilmesini sağlamak için, altıncı parametresindeki *afxRegApartmentThreading* bayrağını şu şekilde geçirin `AfxOleRegisterControlClass` :
 
 ```cpp
 BOOL CSampleCtrl::CSampleCtrlFactory::UpdateRegistry(BOOL bRegister)
@@ -99,13 +100,13 @@ else
 }
 ```
 
-Denetim projeniz Visual C++ sürüm 4.1 veya sonraki sürümlerde ControlWizard tarafından oluşturulduysa, bu bayrak zaten kodunuzda bulunur. İş parçacığı modelini kaydetmek için değişiklik gerekmez.
+Denetim projeniz, Visual C++ sürüm 4,1 veya sonraki sürümlerde ControlWizard tarafından oluşturulduysa, bu bayrak kodunuzda zaten mevcut olacaktır. İş parçacığı modelini kaydetmek için herhangi bir değişiklik yapılması gerekmez.
 
-Projeniz ControlWizard'ın önceki bir sürümü tarafından oluşturulduysa, varolan kodunuz altıncı parametre olarak Boolean değerine sahip olur. Mevcut parametre TRUE ise, *afxRegInsertable | afxRegApartmentThreading değiştirin.* Varolan parametre FALSE ise, *afxRegApartmentThreading olarak değiştirin.*
+Projeniz ControlWizard 'ın önceki bir sürümü tarafından oluşturulduysa, mevcut kodunuzun altıncı parametre olarak bir Boole değeri olur. Var olan parametre TRUE ise, *afxRegInsertable | afxRegApartmentThreading* olarak değiştirin. Var olan parametre YANLıŞSA, *afxRegApartmentThreading* olarak değiştirin.
 
-Denetiminiz apartman modeli iş parçacığı için kurallara uymuyorsa, bu parametrede *afxRegApartmentThreading'i* geçmemelisiniz.
+Denetiminiz, Apartman modeli iş parçacığı kurallarını izlemez, bu parametrede *afxRegApartmentThreading* ' i iletmemelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

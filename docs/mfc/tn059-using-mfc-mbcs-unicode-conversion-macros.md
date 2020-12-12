@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: TN059: MFC MBCS/Unicode dönüştürme makrolarını kullanma'
 title: 'TN059: MFC MBCS-Unicode dönüştürme makrolarını kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,19 +12,19 @@ helpviewer_keywords:
 - macros [MFC], MBCS conversion macros
 - TN059
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-ms.openlocfilehash: d689e87b8f2804fe99804c6ca37a48bac01df263
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c1b767a8d90f2c788a15c9e880056206e7d1326a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214773"
 ---
 # <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC MBCS/Unicode Dönüştürme Makrolarını Kullanma
 
 > [!NOTE]
 > Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-Bu notta, AFXPRıV 'de tanımlanan MBCS/Unicode dönüştürme makrolarını kullanma açıklanmaktadır. Olsun. Bu makrolar en çok yararlı olur çünkü uygulamanız doğrudan OLE API 'siyle veya bir nedenden dolayı, genellikle Unicode ve MBCS arasında dönüştürmelidir.
+Bu notta, AFXPRıV. H ' de tanımlanan MBCS/Unicode dönüştürme makrolarını kullanma açıklanmaktadır. Bu makrolar en çok yararlı olur çünkü uygulamanız doğrudan OLE API 'siyle veya bir nedenden dolayı, genellikle Unicode ve MBCS arasında dönüştürmelidir.
 
 ## <a name="overview"></a>Genel Bakış
 
@@ -80,7 +81,7 @@ Her makronun uygulanması, yığın yerine yığından bellek ayırmak için _al
 
 Makroların geçici bir uzunluğu depolaması için alana sahip olması için, dönüştürme makrolarını kullanan her işlevde bunu yapan _convert adlı bir yerel değişken bildirmek gerekir. Bu, örnekte görüldüğü gibi USES_CONVERSION makrosunu çağırarak yapılır.
 
-Hem genel dönüştürme makroları hem de OLE 'ye özgü makrolar vardır. Bu iki farklı makro kümesi aşağıda ele alınmıştır. Tüm makrolar AFXPRıV 'de bulunur. Olsun.
+Hem genel dönüştürme makroları hem de OLE 'ye özgü makrolar vardır. Bu iki farklı makro kümesi aşağıda ele alınmıştır. Tüm makrolar AFXPRıV. H içinde bulunur.
 
 ## <a name="generic-conversion-macros"></a>Genel dönüştürme makroları
 
@@ -97,7 +98,7 @@ Metin dönüştürmeleri yapmanın yanı sıra,,, `TEXTMETRIC` `DEVMODE` ve OLE 
 
 ## <a name="ole-conversion-macros"></a>OLE dönüştürme makroları
 
-OLE dönüştürme makroları, **olestr** karakter bekleyen işlevleri işlemek için özel olarak tasarlanmıştır. OLE üst bilgilerini incelerseniz, **Lpcolonstr** ve **olechar**için çok sayıda başvuru görürsünüz. Bu türler, OLE arabirimlerinde kullanılan karakterlerin türüne, platforma özgü olmayan bir şekilde başvurmak için kullanılır. **Olechar** , **`char`** Win16 ve Macintosh platformları ve Win32 'teki **wchar** ile eşlenir.
+OLE dönüştürme makroları, **olestr** karakter bekleyen işlevleri işlemek için özel olarak tasarlanmıştır. OLE üst bilgilerini incelerseniz, **Lpcolonstr** ve **olechar** için çok sayıda başvuru görürsünüz. Bu türler, OLE arabirimlerinde kullanılan karakterlerin türüne, platforma özgü olmayan bir şekilde başvurmak için kullanılır. **Olechar** , **`char`** Win16 ve Macintosh platformları ve Win32 'teki **wchar** ile eşlenir.
 
 MFC kodundaki **#ifdef** yönergelerinin sayısını en düşük düzeyde tutmak için OLE dizelerinin bulunduğu her dönüştürme için benzer bir makroya sahipsiniz. En yaygın olarak kullanılan makrolar şunlardır:
 
@@ -138,7 +139,7 @@ void MuchBetterIterateCode(LPCTSTR lpsz)
 }
 ```
 
-Dize sabit değilse, yöntem çağrısını bir işleve kapsülleyebilirsiniz. Bu, dönüştürme arabelleğinin her seferinde serbest bırakılmış olmasını sağlar. Örnek:
+Dize sabit değilse, yöntem çağrısını bir işleve kapsülleyebilirsiniz. Bu, dönüştürme arabelleğinin her seferinde serbest bırakılmış olmasını sağlar. Örneğin:
 
 ```cpp
 void CallSomeMethod(int ii, LPCTSTR lpsz)

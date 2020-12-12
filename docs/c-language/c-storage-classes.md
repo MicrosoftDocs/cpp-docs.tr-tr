@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C Depolama sınıfları'
 title: C Depolama Sınıfları
 ms.date: 08/31/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - storage class specifiers, C storage classes
 - storage duration
 ms.assetid: 893fb929-f7a9-43dc-a0b3-29cb1ef845c1
-ms.openlocfilehash: 4f793e8485628faf0a80445ce0414835e3b71d1f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 000cb06047a948de413dc9bd55d5ec992459d11c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217174"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214249"
 ---
 # <a name="c-storage-classes"></a>C Depolama Sınıfları
 
@@ -24,7 +25,7 @@ Otomatik değişkenler veya yerel yaşam süreleri olan değişkenler, her yür�
 
 C aşağıdaki depolama sınıfı belirticilerini sağlar:
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *depolama sınıfı Belirleyicisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`auto`**<br/>
@@ -38,7 +39,7 @@ Haricinde **`__declspec`** , bildiriminde *bildirim belirticisi* içinde yalnız
 
 **`auto`** Veya belirticisiyle belirtilen öğelerin **`register`** yerel yaşam süreleri vardır. **`static`** Veya belirticisiyle belirtilen öğelerin **`extern`** küresel yaşam süreleri vardır.
 
-**`typedef`** Ve **`__declspec`** diğer dört *depolama sınıfı Belirleyicisi* terminalinden farklı anlam içerdiğinden, bunlar ayrı olarak ele alınmıştır. Hakkında belirli bilgiler için **`typedef`** bkz. [ `typedef` Bildirimler](../c-language/typedef-declarations.md). Hakkında belirli bilgiler için **`__declspec`** bkz. [genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
+**`typedef`** Ve **`__declspec`** diğer dört *depolama sınıfı Belirleyicisi* terminalinden farklı anlam içerdiğinden, bunlar ayrı olarak ele alınmıştır. Hakkında belirli bilgiler için **`typedef`** bkz. [ `typedef` Bildirimler](../c-language/typedef-declarations.md). Hakkında belirli bilgiler için **`__declspec`** bkz. [genişletilmiş Storage-Class öznitelikleri](../c-language/c-extended-storage-class-attributes.md).
 
 Değişken ve işlev bildirimlerinin kaynak dosyalar içinde yerleştirilmesi, depolama sınıfını ve görünürlüğünü de etkiler. Tüm işlev tanımlarının dışındaki bildirimler "dış düzeyde" gözükme söylenir. İşlev tanımlarının içindeki bildirimler "iç düzeyde" görünür.
 
@@ -48,7 +49,7 @@ Her depolama sınıfı tanımlayıcısının tam anlamı iki etkene bağlıdır:
 
 - Belirtilen öğenin bir değişken veya işlev olup olmadığı
 
-[Dış düzey bildirimlerin](../c-language/storage-class-specifiers-for-external-level-declarations.md) depolama sınıfı belirticileri ve [iç düzey bildirimlerin](../c-language/storage-class-specifiers-for-internal-level-declarations.md) depolama sınıfı belirticileri, her bir bildirimde bulunan *depolama sınıfı Belirleyicisi* terminallerini açıklar ve *depolama sınıfı Belirleyicisi* bir değişkenden atlandığında varsayılan davranışı açıklar. [Işlev bildirimleriyle depolama sınıfı belirticileri,](../c-language/storage-class-specifiers-with-function-declarations.md) işlevlerle kullanılan depolama sınıfı belirticilerini tartışır.
+[External-Level bildirimleri](../c-language/storage-class-specifiers-for-external-level-declarations.md) ve depolama sınıfı Belirticilerinin depolama sınıfı belirticileri, [Internal-Level bildirimler için](../c-language/storage-class-specifiers-for-internal-level-declarations.md) her tür bildirimde bulunan depolama sınıfı *belirleyicisi* terminallerini açıklar ve *depolama sınıfı Belirleyicisi* bir değişkenden atlandığında varsayılan davranışı açıklar. [Işlev bildirimleriyle depolama sınıfı belirticileri,](../c-language/storage-class-specifiers-with-function-declarations.md) işlevlerle kullanılan depolama sınıfı belirticilerini tartışır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

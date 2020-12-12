@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: New işleci (CRT)'
 title: işleç new(CRT)
 ms.date: 11/04/2016
 api_location:
@@ -18,13 +19,13 @@ helpviewer_keywords:
 - operator new[]
 - vector new
 ms.assetid: 79682f85-6889-40f6-b8f7-9eed5176ea35
-ms.openlocfilehash: d5a339ad842c46ce4f0ee708464adf8300bb6c59
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9ff8b2c75bff06a510618d8f139f609d5239aeb8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213669"
 ---
 # <a name="operator-newcrt"></a>işleç new(CRT)
 
-Visual Studio 2013 başlayarak, evrensel C çalışma zamanı (UCRT) artık yeni işleç ve işleç C++silme işlevlerini desteklememektedir. Bunlar artık C++ standart kitaplığın bir parçasıdır. Daha fazla bilgi için, bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md) ve C++ dil başvurusunda [Yeni işleç](../cpp/new-operator-cpp.md) .
+Visual Studio 2013 başlayarak, evrensel C çalışma zamanı (UCRT) artık C++ özel işleci ve DELETE Delete işlevlerini desteklememektedir. Bunlar artık C++ standart kitaplığı 'nın bir parçasıdır. Daha fazla bilgi için bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md) ve C++ dil başvurusunda [Yeni işleç](../cpp/new-operator-cpp.md) .

@@ -1,5 +1,6 @@
 ---
-title: 'TN020: Kimlik adlandırma ve numaralandırma kuralları'
+description: 'Daha fazla bilgi edinin: TN020: KIMLIK adlandırma ve numaralandırma kuralları'
+title: 'TN020: Kimlik Adlandırma ve Numaralandırma Kuralları'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.id
@@ -8,102 +9,102 @@ helpviewer_keywords:
 - resource identifiers, naming and numbering
 - resource identifiers
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
-ms.openlocfilehash: f1cd44ed448cc4c0fc60d490a613f0ad91071376
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 85f59e45ec9d4ce748515cf638f4fb4cf33c7d38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306070"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215878"
 ---
-# <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: Kimlik adlandırma ve numaralandırma kuralları
+# <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: Kimlik Adlandırma ve Numaralandırma Kuralları
 
-Bu Not, kimlik adlandırma ve kaynakları, komutları, dizeler, denetimleri ve alt pencereler için MFC 2.0 kullanan numaralandırma kuralları açıklar.
+Bu notta, MFC 2,0 ' nin kaynaklar, komutlar, dizeler, denetimler ve alt pencereler için kullandığı KIMLIK adlandırma ve numaralandırma kuralları açıklanmaktadır.
 
-MFC kimlik adlandırma ve numaralandırma kuralları aşağıdaki gereksinimleri karşılaması için tasarlanmıştır:
+MFC KIMLIK adlandırma ve numaralandırma kuralları aşağıdaki gereksinimleri karşılayacak şekilde tasarlanmıştır:
 
-- Visual C++ kaynak Düzenleyicisi tarafından desteklenen MFC uygulamaları ve MFC Kitaplığı kullanılan tutarlı bir kimliği adlandırma standardı sağlar. Bu türü ve bir kaynaktan kimliğini kaynağından yorumlamak Programcı kolaylaştırır
+- MFC kitaplığı ve Visual C++ kaynak Düzenleyicisi tarafından desteklenen MFC uygulamaları arasında kullanılan tutarlı bir KIMLIK adlandırma standardı sağlayın. Bu, programcının bir kaynağın türünü ve kaynağını KIMLIĞINDEN yorumlamasını kolaylaştırır.
 
-- Belirli türlerdeki kimlikleri arasında güçlü 1-1 ilişki vurgulayın.
+- Belirli kimlik türleri arasındaki güçlü 1 ila 1 ilişkiyi vurgulayın.
 
-- Windows kimlikleri adlandırma zaten yaygın olarak kullanılan standartlara uygun.
+- Windows 'daki adlandırma kimlikleri için zaten yaygın olarak kullanılan standartlara uygun.
 
-- Bölüm kimliği numaralandırma alanı. Kimlik numaraları, Programcı, MFC, Windows ve Visual C++ ile düzenlenmiş kaynakları tarafından atanabilir. Uygun bölümleme, çoğaltma kimliği sayıların önlenmesine yardımcı olur.
+- KIMLIK numaralandırma alanını bölümlemek. KIMLIK numaraları, programcı, MFC, Windows ve Visual C++ düzenlenmiş kaynaklarla atanabilir. Uygun bölümlendirme, KIMLIK numaralarının çoğaltılmasını önlemeye yardımcı olur.
 
-## <a name="the-id-prefix-naming-convention"></a>Kimlik öneki adlandırma kuralı
+## <a name="the-id-prefix-naming-convention"></a>KIMLIK ön eki adlandırma kuralı
 
-Bir uygulamada birden fazla kimlikleri ortaya çıkabilir. MFC kodu adlandırma kuralı, farklı ön ekleri farklı kaynak türleri için tanımlar.
+Bir uygulamada çeşitli kimlik türleri meydana gelebilir. MFC KIMLIK adlandırma kuralı farklı kaynak türleri için farklı ön ekleri tanımlar.
 
-MFC, birden çok kaynak türü için geçerli bir kaynak kimliği belirtmek için "IDR_" öneki kullanır. Örneğin, belirli bir çerçeve penceresi için menü, Hızlandırıcı, dize ve simgeyi bir kaynağı göstermek için aynı "IDR_" önekini MFC kullanır. Aşağıdaki tabloda, çeşitli ön ekleri ve bunların kullanımını gösterir:
+MFC, birden çok kaynak türü için geçerli olan bir kaynak KIMLIĞI belirtmek için "IDR_" önekini kullanır. Örneğin, belirli bir çerçeve penceresinde, MFC bir menü, Hızlandırıcı, dize ve simge kaynağını göstermek için aynı "IDR_" önekini kullanır. Aşağıdaki tabloda çeşitli ön ekler ve kullanımları gösterilmektedir:
 
-|Ön eki|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|Ön ek|Kullanın|
 |------------|---------|
-|IDR_|(Menüleri, Hızlandırıcılar ve şeritler için öncelikli olarak kullanılır) birden çok kaynak türleri için.|
-|IDD_|İletişim şablon kaynakları (örneğin, IDD_DIALOG1).|
-|IDC_|İmleç kaynakları.|
-|IDI_|Simge kaynakları.|
-|IDB_|Bit eşlem kaynakları.|
-|IDS_|Dize kaynakları.|
+|IDR_|Birden çok kaynak türü için (öncelikle menüler, Hızlandırıcılar ve şeritler için kullanılır).|
+|IDD_|İletişim kutusu şablon kaynakları için (örneğin, IDD_DIALOG1).|
+|IDC_|İmleç kaynakları için.|
+|IDI_|Simge kaynakları için.|
+|IDB_|Bit eşlem kaynakları için.|
+|IDS_|Dize kaynakları için.|
 
-Bir iletişim kaynağı içinde MFC, bu kuralları aşağıdaki gibidir:
+Bir iletişim kutusu kaynağı içinde, MFC aşağıdaki kurallara uyar:
 
-|Ön eki veya etiketi|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|Önek veya etiket|Kullanın|
 |---------------------|---------|
-|IDOK, IDCANCEL|Standart düğme için kimlikleri.|
-|IDC_|Diğer bir iletişim kutusu denetimleri için.|
+|ıDOK, ıDCANCEL|Standart gönderme düğmesi kimlikleri için.|
+|IDC_|Diğer iletişim kutusu denetimleri için.|
 
-"IDC_" öneki işaretçiler için de kullanılır. Tipik bir uygulaması birkaç imleç ve birçok iletişim kutusu denetimleri olduğundan bu ad çakışması genellikle bir sorun değildir.
+"IDC_" öneki Ayrıca imleçler için de kullanılır. Tipik bir uygulama birkaç imleç ve birçok iletişim kutusu denetimine sahip olacağı için bu adlandırma çakışmasına genellikle sorun değildir.
 
-Bir menü kaynağı içinde bu kuralları MFC aşağıdaki gibidir:
+Bir menü kaynağı içinde, MFC aşağıdaki kurallara uyar:
 
-|Ön eki|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|Ön ek|Kullanın|
 |------------|---------|
-|IDM_|Menü öğeleri için MFC komut mimarisi kullanmayın.|
-|ID_|MFC kullanan menü komutlarını mimarisi komutu.|
+|IDM_|MFC komut mimarisini kullanmayan menü öğeleri için.|
+|ID_|MFC komut mimarisini kullanan menü komutları için.|
 
-MFC komut mimarisi aşağıdaki komutları bir ON_COMMAND komut işleyicisi olmalıdır ve bir on_update_command_uı işleyicisi olabilir. Bu komut işleyicileri MFC komut mimarisi izlerseniz, bunlar düzgün bir menü komutu, bir araç çubuğu düğmesini veya bir iletişim çubuğu düğme bağlı olan çalışmayacaktır. Aynı "ID_" ön eki programın ileti çubuğunda görüntülenen bir menü istem dizesi için de kullanılır. Uygulamanızdaki menü öğelerinin çoğu MFC komut kuralları izlemelidir. Tüm standart komut kimlikleri (örneğin, ıd_fıle_new) Bu kuralı uygulayın.
+MFC komut mimarisini izleyen komutların bir ON_COMMAND komut işleyicisi olmalıdır ve bir ON_UPDATE_COMMAND_UI işleyicisine sahip olabilir. Bu komut işleyicileri MFC komut mimarisini izlerse, bir menü komutuna, bir araç çubuğu düğmesine veya iletişim çubuğu düğmesine bağlanıp bağlanmadığını doğru şekilde çalışır. Aynı "ID_" öneki Ayrıca programın ileti çubuğunda görüntülenen bir menü istemi dizesi için de kullanılır. Uygulamanızdaki menü öğelerinin çoğu MFC komut kurallarını izlemelidir. Standart komut kimliklerinin tamamı (örneğin, ID_FILE_NEW) Bu kuralı izleyin.
 
-MFC "IDP_" özel biçimi dizeleri (yerine "IDS_") olarak da kullanır. İstemleri, diğer bir deyişle, ileti kutularında kullanılan dizelerin dizelerdir "IDP_" ön ekine sahip. "IDP_" dizeler, program tarafından belirlenen dize yer tutucu olarak "%1" ve "%2" içerebilir. "IDP_" dizeleri, genellikle Yardım konuları ilişkili olan ve "IDS_" dizeleri yapın. Her zaman yerelleştirilmiş dizeleri "IDP_" ve "IDS_" dizeleri yerelleştirilmemiş.
+MFC Ayrıca, özel dizeler biçimi olarak "IDP_" kullanır ("IDS_" yerine). "IDP_" ön ekine sahip dizeler istemlerdir, diğer bir deyişle ileti kutularında kullanılan dizeler. "IDP_" dizeleri, program tarafından belirlenen dizelerin yer tutucuları olarak "%1" ve "%2" içerebilir. "IDP_" dizeleri genellikle bunlarla ilişkili Yardım konularına sahiptir ve "IDS_" dizeleri değildir. "IDP_" dizeleri her zaman yereldir ve "IDS_" dizeleri yerelleştirilemeyebilir.
 
-MFC Kitaplığı "IDW_" ön eki özel form denetiminin kimlikleri (yerine "IDC_") olarak da kullanır. Bu kimliklerinin alt pencereler gibi görünümler ve ayırıcılar framework sınıfları tarafından atanır. MFC Uygulama kimlikleri "İle AFX_" öneki alır.
+MFC Kitaplığı Ayrıca "IDW_" önekini özel denetim kimliği biçimi olarak kullanır ("IDC_" yerine). Bu kimlikler, çerçeve sınıfları tarafından görünümler ve bölümlendiricileri gibi alt pencereler için atanır. MFC Uygulama kimliklerine "AFX_" ön eki uygulanır.
 
-## <a name="the-id-numbering-convention"></a>Kimliği numaralandırma kuralı
+## <a name="the-id-numbering-convention"></a>ID-Numbering kuralı
 
-Aşağıdaki tabloda, geçerli aralıklar kimliklerini belirli türlerini listeler. Bazı sınırlar teknik uygulama limitlerdir ve diğerleri Windows önceden tanımlanmış kimlikler ya da MFC varsayılan uygulamaları çakışmadan kimliklerinizi önlemek üzere tasarlanmış kurallardır.
+Aşağıdaki tabloda, belirli türlerin kimlikleri için geçerli aralıklar listelenmektedir. Limitlerin bazıları teknik uygulama sınırlamalarıdır ve diğerleri, kimliklerinizin Windows önceden tanımlı kimlikler veya MFC varsayılan uygulamalarıyla çakışmasını engellemek için tasarlanan kurallardır.
 
-Önerilen aralıklar içinde tüm kimlikleri tanımladığınız kesinlikle öneririz. 0 kullanılmadığından bu aralıklarının alt sınırı 1'dir. Genel kuralı kullanın ve 100 veya 101 ilk kimlik olarak kullanmak öneririz.
+Önerilen aralıkların içindeki tüm kimlikleri tanımlamanızı önemle tavsiye ederiz. 0 kullanılmadığından bu aralıkların alt sınırı 1 ' dir. Ortak kuralını kullanmanızı ve ilk KIMLIK olarak 100 veya 101 ' i kullanmanızı öneririz.
 
-|Ön eki|Kaynak türü|Geçerli aralık|
+|Ön ek|Kaynak türü|Geçerli Aralık|
 |------------|-------------------|-----------------|
-|IDR_|birden çok|1 ile 0x6FFF|
-|IDD_|iletişim kutusu şablonları|1 ile 0x6FFF|
-|IDC_, IDI_, IDB_|imleçler, simgeler, bit eşlemler|1 ile 0x6FFF|
-|IDS_, IDP_|Genel dizeleri|1 ile 0x7FFF|
-|ID_|komutlar|0x8000 ile 0xDFFF|
-|IDC_|denetimler|8 ile 0xDFFF|
+|IDR_|birden çok|1 ila 0x6FFF|
+|IDD_|iletişim kutusu şablonları|1 ila 0x6FFF|
+|IDC_, IDI_, IDB_|imleçler, simgeler, bit eşlemler|1 ila 0x6FFF|
+|IDS_, IDP_|Genel dizeler|1 ile 0x7FFF|
+|ID_|komutlar|0x8000 ila 0xDFFF|
+|IDC_|denetimler|8 ila 0xDFFF|
 
-Bu aralığı sınırları nedenleri:
+Bu Aralık sınırlarının nedenleri:
 
-- Kural gereği, 0 kimlik değerini kullanılmaz.
+- Kurala göre, 0 ' ın ID değeri kullanılmaz.
 
-- Windows uygulama kısıtlamaları gerçek kaynak kimlikleri 0x7FFF eşit veya daha az olacak şekilde kısıtlayın.
+- Windows uygulama sınırlamaları, doğru kaynak kimliklerini 0x7FFF değerinden küçük veya buna eşit olacak şekilde kısıtlar.
 
-- MFC'nin iç framework Bu aralıklar ayırır:
+- MFC 'nin iç çerçevesi bu aralıkları ayırır:
 
-  - 0x7000 0x7FFF aracılığıyla (afxres.h bakın)
+  - 0x7000 ile 0x7FFF (bkz. afxres. h)
 
-  - 0xE000 0xEFFF aracılığıyla (afxres.h bakın)
+  - 0xEFFF ile 0xE000 (bkz. afxres. h)
 
-  - 16000 18000 (afxribbonres.h bakın) aracılığıyla
+  - 16000 ile 18000 (bkz. afxribbonres. h)
 
-  Bu aralıklar, MFC uygulamaları gelecekte değişebilir.
+  Bu aralıklar, gelecekteki MFC uygulamalarında değişebilir.
 
-- Çeşitli Windows sistem komutlarını ile 0xFFFF 0xF000 aralığı kullanın.
+- Birkaç Windows sistem komutu, 0xF000 ile 0xFFFF aralığını kullanır.
 
-- Denetim Kimliği 1 ile 7 arasında IDOK ve IDCANCEL gibi standart denetimler için ayrılmıştır.
+- 1 ile 7 arasındaki Denetim kimlikleri ıDOK ve ıDCANCEL gibi standart denetimler için ayrılmıştır.
 
-- 0x8000 ile 0xFFFF dizeler için çeşitli komutlar için menü istemleri için ayrılmıştır.
+- Dizeler için 0x8000 ile 0xFFFF arasındaki Aralık menü istemlerine yönelik komut istemleri için ayrılmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
