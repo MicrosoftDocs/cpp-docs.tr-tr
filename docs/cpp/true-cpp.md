@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: true (C++)'
 title: true (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - true keyword [C++]
 ms.assetid: 96be2a70-51c3-4250-9752-874d25a5a11e
-ms.openlocfilehash: f6420d0abea8bac1d385c1cfdfd58a5500cf5bd3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6f3a9a183a30057ab3a013dad6e03458e6532658
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185846"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186460"
 ---
 # <a name="true-c"></a>true (C++)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 bool-identifier = true ;

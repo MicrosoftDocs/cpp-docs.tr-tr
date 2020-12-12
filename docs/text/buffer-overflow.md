@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. arabellek taşması
 title: Arabellek Taşması
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - buffer overflows [C++]
 - MBCS [C++], buffer overflow
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-ms.openlocfilehash: 71877ed770384190cb7f856567d9e7e845e3da19
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 17da102b9a48a34d9879c08f0470ced3852ed0ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217330"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187604"
 ---
 # <a name="buffer-overflow"></a>Arabellek Taşması
 
@@ -47,7 +48,7 @@ while( (cb + _mbclen( sz )) <= sizeof( rgch ) )
 }
 ```
 
-Bu kod, `_mbclen` tarafından işaret edilen geçerli karakterin boyutunu test etmek için kullanarak döngü testinde olası arabellek taşması için test eder `sz` . İşleve bir çağrı yaparak `_mbsnbcpy` , **`while`** döngüdeki kodu tek bir kod satırıyla değiştirebilirsiniz. Örnek:
+Bu kod, `_mbclen` tarafından işaret edilen geçerli karakterin boyutunu test etmek için kullanarak döngü testinde olası arabellek taşması için test eder `sz` . İşleve bir çağrı yaparak `_mbsnbcpy` , **`while`** döngüdeki kodu tek bir kod satırıyla değiştirebilirsiniz. Örneğin:
 
 ```cpp
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );

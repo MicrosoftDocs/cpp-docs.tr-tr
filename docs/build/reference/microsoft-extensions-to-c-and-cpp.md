@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C ve C++ için Microsoft uzantıları'
 title: C ve C++ için Microsoft uzantıları
 ms.date: 06/14/2018
 helpviewer_keywords:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - extensions
 - compl method
 ms.assetid: e811a74a-45ba-4c00-b206-2f2321b8689a
-ms.openlocfilehash: 77f2ed64a0c816d84e67f66b664141581a9fad51
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fac6edbdfd559f3cebd18dcdc3b8cfca2a9336dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190698"
 ---
 # <a name="microsoft-extensions-to-c-and-c"></a>C ve C++ için Microsoft uzantıları
 
@@ -57,9 +58,9 @@ class CMyClass  {
 const int CMyClass::max;   // out of class definition
 ```
 
-**/Ze**altında, sınıf dışı tanımı statik, const Entegrali ve const enum veri üyeleri için isteğe bağlıdır. Yalnızca statik ve const olan integralların ve Numaralandırmaların bir sınıfta başlatıcıları olabilir; başlatma ifadesi bir const ifadesi olmalıdır.
+**/Ze** altında, sınıf dışı tanımı statik, const Entegrali ve const enum veri üyeleri için isteğe bağlıdır. Yalnızca statik ve const olan integralların ve Numaralandırmaların bir sınıfta başlatıcıları olabilir; başlatma ifadesi bir const ifadesi olmalıdır.
 
-Bir üstbilgi dosyasında bir sınıf tanımı sağlandığında ve üstbilgi dosyası birden çok kaynak dosyaya dahil edildiğinde hatalardan kaçınmak için [selectany](../../cpp/selectany.md)kullanın. Örnek:
+Bir üstbilgi dosyasında bir sınıf tanımı sağlandığında ve üstbilgi dosyası birden çok kaynak dosyaya dahil edildiğinde hatalardan kaçınmak için [selectany](../../cpp/selectany.md)kullanın. Örneğin:
 
 ```cpp
 __declspec(selectany) const int CMyClass::max = 5;
@@ -69,7 +70,7 @@ __declspec(selectany) const int CMyClass::max = 5;
 
 Hem C++ derleyicisi hem de C derleyicisi, bu tür ANSI olmayan yayınları destekler:
 
-- L değerleri üretmek için ANSI olmayan atamalar. Örnek:
+- L değerleri üretmek için ANSI olmayan atamalar. Örneğin:
 
    ```C
    char *p;
@@ -85,7 +86,7 @@ Hem C++ derleyicisi hem de C derleyicisi, bu tür ANSI olmayan yayınları deste
    p = ( char * )(( int * )p + 1 );
    ```
 
-- Bir işlev işaretçisinin bir veri işaretçisine ANSI olmayan yayınları. Örnek:
+- Bir işlev işaretçisinin bir veri işaretçisine ANSI olmayan yayınları. Örneğin:
 
    ```C
    int ( * pfunc ) ();
@@ -236,7 +237,7 @@ Hem x86 C++ derleyicisi hem de C derleyicisi `atan` , `atan2` `cos` `exp` `log` 
 
 ## <a name="passing-a-non-const-pointer-parameter-to-a-function-that-expects-a-reference-to-a-const-pointer-parameter"></a>Const olmayan bir işaretçi parametresini bir const işaretçi parametresine başvuru bekleyen bir işleve geçirme
 
-Bu bir C++ uzantısıdır. Bu kod, **/ze**ile derlenir:
+Bu bir C++ uzantısıdır. Bu kod, **/ze** ile derlenir:
 
 ```cpp
 typedef   int   T;
@@ -260,7 +261,7 @@ void func ()
 
 ## <a name="iso646h-not-enabled"></a>ISO646. H etkin değil
 
-**/Ze**altında, aşağıdaki işleçlerin metin biçimlerini kullanmak istiyorsanız iso646. h dahil etmeniz gerekir:
+**/Ze** altında, aşağıdaki işleçlerin metin biçimlerini kullanmak istiyorsanız iso646. h dahil etmeniz gerekir:
 
 - && (ve)
 
@@ -286,7 +287,7 @@ void func ()
 
 ## <a name="address-of-string-literal-has-type-const-char--not-const-char--"></a>Dize sabit değerinin adresi const char [] türünde, const char değil (*) []
 
-Aşağıdaki örnek `char const (*)[4]` **/za**altında, ancak `char const [4]` **/ze**altında çıktı alacak.
+Aşağıdaki örnek `char const (*)[4]` **/za** altında, ancak `char const [4]` **/ze** altında çıktı alacak.
 
 ```cpp
 #include <stdio.h>
@@ -302,4 +303,4 @@ int main()
 
 - [/Za,/Ze (dil uzantılarını devre dışı bırak)](za-ze-disable-language-extensions.md)
 - [MSVC derleyici seçenekleri](compiler-options.md)
-- [MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+- [MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

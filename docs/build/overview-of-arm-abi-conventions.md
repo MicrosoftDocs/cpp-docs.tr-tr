@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ARM32 ABı kurallarına genel bakış'
 title: ARM ABı kurallarına genel bakış
 ms.date: 07/11/2018
 ms.assetid: 23f4ae8c-3148-4657-8c47-e933a9f387de
-ms.openlocfilehash: fc211b887b2b82f533c1e36bf95e6fd6b8e24728
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: de82fc6c3da085c3840af0ad48694c7472d687c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187409"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABı kurallarına genel bakış
 
@@ -75,7 +76,7 @@ Tamsayı bölme yönergelerinin kullanımı SDIV ve UDIV, yerel donanım olmayan
 
 ARM işlemcisi 16 tamsayı kaydını destekler:
 
-|Kaydettir|Katılımcıdan?|Rol|
+|Kaydol|Katılımcıdan?|Rol|
 |--------------|---------------|----------|
 |R0|Katılımcıdan|Parametre, sonuç, karalama kayıt 1|
 |R1|Katılımcıdan|Parametre, sonuç, karalama kaydı 2|

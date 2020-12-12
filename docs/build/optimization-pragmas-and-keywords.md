@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Iyileştirme pragmaları ve anahtar sözcükleri'
 title: Pragmaları ve Anahtar Sözcükleri İyileştirme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - pragmas, for optimization
 - optimization, keywords and pragmas
 ms.assetid: 66a94842-ef10-490a-88b3-51d1a568ead5
-ms.openlocfilehash: 192564d475da121a874b5a40de62b37d7f934ce7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6a989a2206ad8486487610ad2e8f13220dacba0e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187461"
 ---
 # <a name="optimization-pragmas-and-keywords"></a>Pragmaları ve Anahtar Sözcükleri İyileştirme
 
@@ -21,7 +22,7 @@ C veya C++ kodunuzda kullandığınız birkaç anahtar sözcük ve pragmalar iyi
 
 - [__assume](../intrinsics/assume.md)
 
-- [satır içi, __inline veya \__forceinline](../cpp/inline-functions-cpp.md)
+- [satır içi, __inline veya \_ _forceinline](../cpp/inline-functions-cpp.md)
 
 - [#pragma auto_inline](../preprocessor/auto-inline.md)
 
@@ -41,4 +42,4 @@ C veya C++ kodunuzda kullandığınız birkaç anahtar sözcük ve pragmalar iyi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kodunuzu İyileştirme](optimizing-your-code.md)
+[Kodunuzu iyileştirme](optimizing-your-code.md)

@@ -1,15 +1,16 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: Visual Studio 'da C++ derleme sistemleri için klasörü açma desteği"
 title: Visual Studio 'da C++ derleme sistemleri için açık klasör desteği
 ms.date: 12/02/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 03c6a07d19599958de81a604ca77e2772168d441
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 056ad4d1d611f2fc8b1c2d5594057a82b3e54a10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924112"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187578"
 ---
 # <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Visual Studio 'da C++ derleme sistemleri için açık klasör desteği
 
@@ -34,7 +35,7 @@ Visual Studio IDE 'yi, ana menüden doğrudan desteklenmeyen bir yapı sistemi v
 | Dosya | Açıklama |
 |-|-|
 |Üzerinde CppProperties.js|Göz atmak için özel yapılandırma bilgilerini belirtin. Gerekirse, kök proje klasörünüzde bu dosyayı oluşturun. (CMake projelerinde kullanılmaz.)|
-|Üzerinde tasks.vs.js|Özel derleme komutlarını belirtin. **Çözüm Gezgini** bağlam menüsü öğesi aracılığıyla erişilen **görevleri yapılandırın** .|
+|Üzerinde tasks.vs.js|Özel derleme komutlarını belirtin. **Çözüm Gezgini** bağlam menüsü öğesi aracılığıyla erişilen **görevleri yapılandırın**.|
 |Üzerinde launch.vs.js|Hata ayıklayıcı için komut satırı bağımsız değişkenlerini belirtin. **Çözüm Gezgini** bağlam menüsü öğesi **hata ayıklama ve başlatma ayarları** aracılığıyla erişilir.|
 
 ## <a name="configure-code-navigation-with-cpppropertiesjson"></a>CppProperties.jsile kod gezintisini yapılandırma
@@ -47,7 +48,7 @@ Visual Studio aşağıdaki varsayılan yapılandırmalara sahiptir:
 
 ![Varsayılan yapılandırma](media/default-configurations.png)
 
-Örneğin, **x64-Debug** ' ı seçerseniz, Visual Studio kök proje klasörünüzde *CppProperties.js* adlı bir dosya oluşturur:
+Örneğin, **x64-Debug**' ı seçerseniz, Visual Studio kök proje klasörünüzde *CppProperties.js* adlı bir dosya oluşturur:
 
 ```json
 {
@@ -123,11 +124,11 @@ Her şey doğru şekilde çalıştığında, bir türün üzerine geldiğinizde 
 
 ![Tanılama günlüğüne kaydetme](media/diagnostic-logging.png)
 
-Çıkış **Çıkış penceresi** gönderilir ve * *çıktıyı göster: Visual C++ günlük* ' i seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *CppProperties.js* ' deki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış gözatma verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
+Çıkış **Çıkış penceresi** gönderilir ve **çıktıyı göster: Visual C++ günlük*' i seçtiğinizde görünür. Çıktı, diğer şeyler yanında, IntelliSense 'in kullanmaya çalıştığı gerçek ekleme yollarının listesini içerir. Yollar *CppProperties.js*' deki olanlarla eşleşmiyorsa, klasörü kapatmayı ve önbelleğe alınmış gözatma verilerini içeren *. vs* alt klasörünü silmeyi deneyin.
 
 ### <a name="define-build-tasks-with-tasksvsjson"></a>Üzerinde tasks.vs.jsderleme görevleri tanımlayın
 
-Mevcut çalışma alanınızda bulunan dosyalar üzerinde, derleme betikleri veya diğer dış işlemleri otomatikleştirebilir ve bunları doğrudan IDE 'de görevler olarak çalıştırabilirsiniz. Bir dosya veya klasöre sağ tıklayıp **görevleri Yapılandır** ' ı seçerek yeni bir görev yapılandırabilirsiniz.
+Mevcut çalışma alanınızda bulunan dosyalar üzerinde, derleme betikleri veya diğer dış işlemleri otomatikleştirebilir ve bunları doğrudan IDE 'de görevler olarak çalıştırabilirsiniz. Bir dosya veya klasöre sağ tıklayıp **görevleri Yapılandır**' ı seçerek yeni bir görev yapılandırabilirsiniz.
 
 ![Klasörü aç görevleri yapılandırma](media/configure-tasks.png)
 
@@ -154,7 +155,7 @@ Bu, Visual Studio 'Nun kök proje klasörünüzde oluşturduğu. vs klasöründe
 
 ```
 
-JSON dosyası *. vs* alt klasörüne yerleştirilir. Bu klasörü görmek için **Çözüm Gezgini** üstündeki **tüm dosyaları göster** düğmesine tıklayın. Bu görevi, **Çözüm Gezgini** kök düğümüne sağ tıklayıp **Merhaba Build** ' i seçerek çalıştırabilirsiniz. Görev tamamlandığında, **Çözüm Gezgini** *hello.exe* yeni bir dosya görmeniz gerekir.
+JSON dosyası *. vs* alt klasörüne yerleştirilir. Bu klasörü görmek için **Çözüm Gezgini** üstündeki **tüm dosyaları göster** düğmesine tıklayın. Bu görevi, **Çözüm Gezgini** kök düğümüne sağ tıklayıp **Merhaba Build**' i seçerek çalıştırabilirsiniz. Görev tamamlandığında, **Çözüm Gezgini** *hello.exe* yeni bir dosya görmeniz gerekir.
 
 Birçok görev türü tanımlayabilirsiniz. Aşağıdaki örnekte, tek bir görevi tanımlayan bir *dosyatasks.vs.js* gösterilmektedir. `taskLabel` bağlam menüsünde görünen adı tanımlar. `appliesTo` komutun hangi dosyalara uygulanabilir olduğunu tanımlar. `command`Özelliği, konsol yolunu (Windows üzerinde *cmd.exe* ) tanımlayan ComSpec ortam değişkenine başvurur. Ayrıca, üzerinde veya CMakeSettings.jsüzerinde CppProperties.jsolarak belirtilen ortam değişkenlerine de başvurabilirsiniz. `args`Özelliği çağrılacak komut satırını belirtir. `${file}`Makro seçili dosyayı **Çözüm Gezgini** alır. Aşağıdaki örnek, seçili olan. cpp dosyasının dosya adını görüntüler.
 
@@ -179,7 +180,7 @@ Daha fazla bilgi için bkz. [ şema başvurusundaTasks.vs.js](tasks-vs-json-sche
 
 ### <a name="configure-debugging-parameters-with-launchvsjson"></a>launch.vs.jshata ayıklama parametrelerini yapılandırma
 
-Programınızın komut satırı bağımsız değişkenlerini ve hata ayıklama talimatlarını özelleştirmek için **Çözüm Gezgini** ' de çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları** ' nı seçin. Bu, dosya üzerinde var olan bir *launch.vs.js* açar veya yoksa, bir dizi minimum başlatma ayarı olan yeni bir dosya oluşturur. İlk olarak, ne tür bir hata ayıklama oturumu yapılandırmak istediğinizi tercih edersiniz. Bir MinGw-W64 projesinde hata ayıklamak için, **MinGW/Cygwin (GDB) için C/C++ başlatma** ' yı seçiyoruz. Bu, varsayılan değerler hakkında bazı eğitimleri tahmin etmek için *gdb.exe* kullanmaya yönelik bir başlatma yapılandırması oluşturur. Bu varsayılan değerlerden biri `MINGW_PREFIX` . Değişmez değer yolunu (aşağıda gösterildiği gibi) değiştirebilir veya `MINGW_PREFIX` *üzerindeCppProperties.js* bir özellik tanımlayabilirsiniz:
+Programınızın komut satırı bağımsız değişkenlerini ve hata ayıklama talimatlarını özelleştirmek için **Çözüm Gezgini** ' de çalıştırılabilir dosyaya sağ tıklayın ve **Hata Ayıkla ve başlatma ayarları**' nı seçin. Bu, dosya üzerinde var olan bir *launch.vs.js* açar veya yoksa, bir dizi minimum başlatma ayarı olan yeni bir dosya oluşturur. İlk olarak, ne tür bir hata ayıklama oturumu yapılandırmak istediğinizi tercih edersiniz. Bir MinGw-W64 projesinde hata ayıklamak için, **MinGW/Cygwin (GDB) için C/C++ başlatma**' yı seçiyoruz. Bu, varsayılan değerler hakkında bazı eğitimleri tahmin etmek için *gdb.exe* kullanmaya yönelik bir başlatma yapılandırması oluşturur. Bu varsayılan değerlerden biri `MINGW_PREFIX` . Değişmez değer yolunu (aşağıda gösterildiği gibi) değiştirebilir veya `MINGW_PREFIX` *üzerindeCppProperties.js* bir özellik tanımlayabilirsiniz:
 
 ```json
 {

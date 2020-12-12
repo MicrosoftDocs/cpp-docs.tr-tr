@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/et (mimari özellikleri için Iyileştirme)
 title: /favor (Mimari Özellikleri için İyileştirme)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,49 +8,49 @@ helpviewer_keywords:
 - -favor compiler option [C++]
 - /favor compiler option [C++]
 ms.assetid: ad264df2-e30f-4d68-8bd0-10d6bee71a2a
-ms.openlocfilehash: b914d3e6e7a2865ec610249ff51d320d7890adcb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 184e81e1007214a09088601b6c579692a0dd20a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292828"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192310"
 ---
 # <a name="favor-optimize-for-architecture-specifics"></a>/favor (Mimari Özellikleri için İyileştirme)
 
-**/ favor:** `option` belirli bir mimari için ya da AMD ve Intel mimarileri mikro mimariler için iyileştirilmiş kod üretir.
+**/iyilik:** `option` AMD ve Intel mimarilerinde mikro mimarilerin özellikleri için en iyi duruma getirilmiş kodu üretir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ favor:**{**blend** | **ATOM** | **AMD64** | **ıntel64**}
+> **/iyilik:**{**Blend**  |  **atom**  |    |  **Intel64**}
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/favor:Blend**<br/>
-(x86 ve x64) özellikleri mikro mimariler AMD ve Intel mimarileri için iyileştirilmiş kod üretir. Sırada **/favor:blend** en iyi performans verebilir, çok çeşitli x86 ve x64 işlemciler arasında en iyi performans sunmak üzere tasarlanmıştır belirli bir işlemci üzerinde mümkün. Varsayılan olarak, **/favor:blend** etkindir.
+**/iyilik: Blend**<br/>
+(x86 ve x64), AMD ve Intel mimarilerinde mikro mimarilerin özellikleri için en iyi duruma getirilmiş kodu üretir. **/Et: Blend** belirli bir işlemcide mümkün olan en iyi performansı veremeyebilir, çok sayıda x86 ve x64 işlemci genelinde en iyi performansı sağlamak üzere tasarlanmıştır. Varsayılan olarak, **/iyileştir: Blend** etkindir.
 
-**/favor:Atom**<br/>
-(x86 ve x64) Intel Centrino Atom işlemci teknolojisi ve Intel Atom işlemci özellikleri için en iyi duruma getirilmiş kodu üretir. Kullanılarak oluşturulan kodu **/favor:ATOM** Intel işlemcileri için Intel SSSE3, SSE3, SSE2 ve SSE yönergeleri oluşturulmasına neden olabilir.
+**/iyilik: ATOM**<br/>
+(x86 ve x64), Intel Atom işlemcisi ve Intel Centrino Atom Işlemci teknolojisinin özellikleri için en iyi duruma getirilmiş kodu üretir. **/İyı: Atom** kullanılarak oluşturulan kod, Intel Işlemcileri IÇIN Intel SSSE3, SSE3, SSE2 ve SSE yönergeleri de üretebilir.
 
-**/favor:AMD64**<br/>
-(yalnızca x64) AMD Opteron ve 64-bit uzantıları destekleyen Athlon işlemcileri için oluşturulan kodu en iyi duruma getirir. En iyi duruma getirilmiş kod, uyumlu bir platform tüm x64 çalıştırabilirsiniz. Kullanılarak oluşturulan kodu **/favor:AMD64** daha zayıf performans ıntel64 destekleyen Intel işlemci üzerinde neden olabilir.
+**/iyilik: AMD64**<br/>
+(yalnızca x64), AMD Opteron ve 64 bitlik uzantıları destekleyen Athlon işlemciler için üretilen kodu iyileştirir. İyileştirilmiş kod, tüm x64 uyumlu platformlarda çalıştırılabilir. **/Et: AMD64** kullanılarak oluşturulan kod, Intel64 destekleyen Intel işlemcilerinde kötü performansa neden olabilir.
 
-**/favor:INTEL64**<br/>
-(yalnızca x64) desteği genellikle, platform için daha iyi performans verir ıntel64, Intel işlemcileri için oluşturulan kodu en iyi duruma getirir. Sonuçta elde edilen kod üzerinde herhangi bir x64 çalıştırabilirsiniz platform. İle oluşturulan kodu **/favor:INTEL64** daha zayıf performans AMD Opteron ve 64-bit uzantıları destekleyen Athlon işlemciler üzerinde neden olabilir.
+**/iyilik: ıNTEL64**<br/>
+(yalnızca x64), bu platform için genellikle daha iyi performans veren Intel64 destekleyen Intel işlemcileri için üretilen kodu iyileştirir. Elde edilen kod herhangi bir x64 platformunda çalıştırılabilir. **/Et: Intel64** ile oluşturulan kod, AMD Opteron ve 64 bitlik uzantıları destekleyen Athlon işlemcilerde performansı kötüleşmesine neden olabilir.
 
 > [!NOTE]
-> Intel64 mimarisi daha önce Extended Memory 64 Technology biliniyordu ve karşılık gelen derleyici seçeneği olan **/favor:EM64T**.
+> Intel64 mimarisi daha önce genişletilmiş bellek 64 teknolojisi olarak bilinmişti ve karşılık gelen derleyici seçeneği/iyisti **: EM64T** idi.
 
-X64 programı hakkında bilgi için Mimari bkz [x64 yazılım kuralları](../x64-software-conventions.md).
+X64 mimarisine yönelik programlama hakkında daha fazla bilgi için bkz. [x64 yazılım kuralları](../x64-software-conventions.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **C/C++** klasör.
+1. **C/C++** klasörünü seçin.
 
-1. Seçin **komut satırı** özellik sayfası.
+1. **Komut satırı** özellik sayfasını seçin.
 
-1. Derleyici seçeneğini girin **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusunda derleyici seçeneğini girin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -57,5 +58,5 @@ X64 programı hakkında bilgi için Mimari bkz [x64 yazılım kuralları](../x64
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

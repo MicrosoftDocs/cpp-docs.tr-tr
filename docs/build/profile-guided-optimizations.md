@@ -1,16 +1,17 @@
 ---
+description: 'Ayrıntılar hakkında daha fazla bilgi edinin: profil temelli iyileştirmeler'
 title: Profil temelli iyileştirmeler
 ms.date: 04/23/2019
 helpviewer_keywords:
 - profile-guided optimizations
 - optimization, profile-guided [C++]
 ms.assetid: 2225c307-d3ae-42c1-8345-a5a959d132dc
-ms.openlocfilehash: efa4c35810f6272b89ff11cd1c890a7f535cfc1c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cd6a9627de72ef170e88493ef3e2147a0ccc2bc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187331"
 ---
 # <a name="profile-guided-optimizations"></a>Profil temelli iyileştirmeler
 
@@ -19,7 +20,7 @@ Profil temelli iyileştirme (PGO), iyileştiricinin. exe veya. dll dosyasının 
 Profil temelli iyileştirmeler yalnızca x86 veya x64 yerel hedefleri için kullanılabilir. Profil temelli iyileştirmeler, ortak dil çalışma zamanında çalışan yürütülebilir dosyalar için kullanılamaz. Karma yerel ve yönetilen kodla ( **/clr** derleyici seçeneği kullanılarak) bir derleme üretseniz bile, yalnızca yerel kodda profil temelli iyileştirme kullanamazsınız. IDE 'de bu seçeneklerle ayarlanmış bir proje oluşturmaya çalışırsanız, derleme hatası oluşur.
 
 > [!NOTE]
-> Profil oluşturma testinizden toplanan bilgiler, **/ob**, **/OS**veya **/ot**belirtirseniz, aksi takdirde geçerli olacak iyileştirmeleri geçersiz kılar. Daha fazla bilgi için bkz. [/ob (satır Içi Işlev genişletmesi)](reference/ob-inline-function-expansion.md) ve [/OS,/ot (küçük koda öncelik ver, hızlı kodu](reference/os-ot-favor-small-code-favor-fast-code.md)tercih et).
+> Profil oluşturma testinizden toplanan bilgiler, **/ob**, **/OS** veya **/ot** belirtirseniz, aksi takdirde geçerli olacak iyileştirmeleri geçersiz kılar. Daha fazla bilgi için bkz. [/ob (satır Içi Işlev genişletmesi)](reference/ob-inline-function-expansion.md) ve [/OS,/ot (küçük koda öncelik ver, hızlı kodu](reference/os-ot-favor-small-code-favor-fast-code.md)tercih et).
 
 ## <a name="steps-to-optimize-your-app"></a>Uygulamanızı iyileştirmek için gereken adımlar
 
@@ -27,11 +28,11 @@ Profil temelli iyileştirme kullanmak için, uygulamanızı iyileştirmek üzere
 
 - [/GL](reference/gl-whole-program-optimization.md)ile bir veya daha fazla kaynak kodu dosyası derleyin.
 
-   **/GL** ile derlenen her modül, çalışma zamanı davranışını yakalamak için profil temelli iyileştirme testi çalıştırmaları sırasında incelenebilir. Profil temelli iyileştirme derlemesinde bulunan her modülün **/GL**ile derlenmesi gerekmez. Ancak, yalnızca **/GL** ile derlenen modüller işaretlenir ve daha sonra profil temelli iyileştirmeler için kullanılabilir.
+   **/GL** ile derlenen her modül, çalışma zamanı davranışını yakalamak için profil temelli iyileştirme testi çalıştırmaları sırasında incelenebilir. Profil temelli iyileştirme derlemesinde bulunan her modülün **/GL** ile derlenmesi gerekmez. Ancak, yalnızca **/GL** ile derlenen modüller işaretlenir ve daha sonra profil temelli iyileştirmeler için kullanılabilir.
 
 - [/LTCG](reference/ltcg-link-time-code-generation.md) ve [/genprofile veya/fastgenprofile](reference/genprofile-fastgenprofile-generate-profiling-instrumented-build.md)kullanarak bağlantı.
 
-   Hem **/LTCG** hem de **/genprofile** veya **/fastgenprofile** kullanılması `.pgd` , izlenen uygulama çalıştırıldığında bir dosya oluşturur. Test çalıştırma verileri dosyaya eklendikten sonra `.pgd` , bir sonraki bağlantı adımında (iyileştirilmiş görüntü oluşturma) giriş olarak kullanılabilir. **/Genprofile**belirtirken, isteğe bağlı olarak, dosyanın varsayılan adını veya konumunu belirtmek Için bir **PGD =**_filename_ bağımsız değişkeni ekleyebilirsiniz `.pgd` . **/LTCG** ve **/genprofile** veya **/fastgenprofile** bağlayıcı seçeneklerinin birleşimi, kullanım DıŞı bırakılan **/LTCG: PGINSTRUMENT** bağlayıcı seçeneğinin yerini alır.
+   Hem **/LTCG** hem de **/genprofile** veya **/fastgenprofile** kullanılması `.pgd` , izlenen uygulama çalıştırıldığında bir dosya oluşturur. Test çalıştırma verileri dosyaya eklendikten sonra `.pgd` , bir sonraki bağlantı adımında (iyileştirilmiş görüntü oluşturma) giriş olarak kullanılabilir. **/Genprofile** belirtirken, isteğe bağlı olarak, dosyanın varsayılan adını veya konumunu belirtmek Için bir **PGD =**_filename_ bağımsız değişkeni ekleyebilirsiniz `.pgd` . **/LTCG** ve **/genprofile** veya **/fastgenprofile** bağlayıcı seçeneklerinin birleşimi, kullanım DıŞı bırakılan **/LTCG: PGINSTRUMENT** bağlayıcı seçeneğinin yerini alır.
 
 - Uygulamanın profilini yapın.
 
@@ -43,9 +44,9 @@ Profil temelli iyileştirme kullanmak için, uygulamanızı iyileştirmek üzere
 
    Araçlı yapınızı oluştururken, varsayılan olarak, veri toplama işlemi iş parçacığı güvenli olmayan modda yapılır, ancak bu daha hızlıdır, ancak daha hızlı olabilir. **/Genprofile** veya **/Fastgenprofile** **tam** bağımsız değişkenini kullanarak, veri toplamayı daha kesin olan ancak daha yavaş olan iş parçacığı güvenli modunda belirtebilirsiniz. Bu seçenek, işaretlenmiş yapınızı oluştururken kullanım dışı [PogoSafeMode](environment-variables-for-profile-guided-optimizations.md#pogosafemode) ortam değişkenini veya kullanım dışı **/POGOSAFEMODE** bağlayıcı seçeneğini ayarlarsanız de kullanılabilir.
 
-- **/LTCG** ve **/useprofile**kullanarak bağlantı.
+- **/LTCG** ve **/useprofile** kullanarak bağlantı.
 
-   İyileştirilmiş görüntü oluşturmak için **/LTCG** ve [/useprofile](reference/useprofile.md) bağlayıcı seçeneklerini kullanın. Bu adım, dosyayı giriş olarak alır `.pgd` . **/USEPROFILE**belirttiğinizde, dosyanın varsayılan olmayan bir adını veya konumunu belirtmek için isteğe bağlı olarak bir **PGD =**_filename_ bağımsız değişkeni ekleyebilirsiniz `.pgd` . Bu adı, kullanım dışı bırakılan **/PGD** bağlayıcı seçeneğini kullanarak da belirtebilirsiniz. **/LTCG** ve **/USEPROFILE** birleşimi, kullanım dışı BıRAKıLAN **/LTCG: PGOPTIMIZE** ve **/LTCG: pgupdate** bağlayıcı seçeneklerinin yerini alır.
+   İyileştirilmiş görüntü oluşturmak için **/LTCG** ve [/useprofile](reference/useprofile.md) bağlayıcı seçeneklerini kullanın. Bu adım, dosyayı giriş olarak alır `.pgd` . **/USEPROFILE** belirttiğinizde, dosyanın varsayılan olmayan bir adını veya konumunu belirtmek için isteğe bağlı olarak bir **PGD =**_filename_ bağımsız değişkeni ekleyebilirsiniz `.pgd` . Bu adı, kullanım dışı bırakılan **/PGD** bağlayıcı seçeneğini kullanarak da belirtebilirsiniz. **/LTCG** ve **/USEPROFILE** birleşimi, kullanım dışı BıRAKıLAN **/LTCG: PGOPTIMIZE** ve **/LTCG: pgupdate** bağlayıcı seçeneklerinin yerini alır.
 
 En iyi duruma getirilmiş yürütülebilir dosyayı oluşturmak ve daha sonra daha iyileştirilmiş bir görüntü oluşturmak için ek profil oluşturmanın yararlı olacağını tespit etmek bile mümkündür. Belgelenmiş görüntü ve `.pgd` Dosya kullanılabiliyorsa, `.pgd` aynı **/LTCG** ve **/useprofile** bağlayıcı seçeneklerini kullanarak ek test çalıştırmaları gerçekleştirebilir ve iyileştirilmiş görüntüyü daha yeni dosyayla yeniden oluşturabilirsiniz.
 

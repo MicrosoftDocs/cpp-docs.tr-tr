@@ -1,40 +1,41 @@
 ---
+description: 'Daha fazla bilgi edinin: bayt dizinleri'
 title: Bayt Endeksleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MBCS [C++], byte indices
 - byte indices [C++]
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
-ms.openlocfilehash: 5305a977c23d7a978a89c84809cc6fab8c5731eb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ee4b2cb8611893c71f5c6597e619cc73e2848ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187565"
 ---
 # <a name="byte-indices"></a>Bayt Endeksleri
 
 Aşağıdaki ipuçlarını kullanın:
 
-- Bir dizede dizini çalışmak bir dizeye işaretçi düzenlenmesiyle teşkil benzer sorunları gösterir. Bu örnekte, bir dize bir ters eğik çizgi karakteri tarar göz önünde bulundurun:
+- Bir dizede bytewise diziniyle çalışmak, işaretçi düzenlemesi ile ortaya çıkan sorunlara benzer sorunlar sunar. Bir ters eğik çizgi karakteri için dizeyi tarayan bu örneği göz önünde bulundurun:
 
     ```cpp
     while ( rgch[ i ] != '\\' )
         i++;
     ```
 
-   Bu, bir bayt, bir ön bayt dizin ve bu nedenle onu işaret değil bir `character`.
+   Bu, bir ön bayt değil, bir iz baytı dizinleyecek ve bu nedenle bir işaret edemeyebilir `character` .
 
-- Kullanım [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) işlevi önceki sorunu çözmek için:
+- Önceki sorunu çözmek için [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) işlevini kullanın:
 
     ```cpp
     while ( rgch[ i ] != '\\' )
         i += _mbclen ( rgch + i );
     ```
 
-   Bu ön bayt için bu nedenle doğru dizinler için bir `character`. `_mbclen` İşlevi, bir karakter (1 veya 2 bayt) boyutunu belirler.
+   Bu, için bir ön bayta doğru şekilde dizin oluşturur `character` . `_mbclen`İşlev, bir karakterin boyutunu (1 veya 2 bayt) belirler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)<br/>
-[Dizedeki Son Karakter](../text/last-character-in-a-string.md)
+[MBCS programlama Ipuçları](../text/mbcs-programming-tips.md)<br/>
+[Dizedeki son karakter](../text/last-character-in-a-string.md)

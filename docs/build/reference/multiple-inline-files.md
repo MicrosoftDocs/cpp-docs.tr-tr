@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: birden çok satır Içi dosya'
 title: Birden Çok Satır İçi Dosya
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - multiple inline files
 - NMAKE program, inline files
 ms.assetid: 6d381dcf-0ed8-45d1-8df3-b4598d860b99
-ms.openlocfilehash: 71f17ff6717e717693facb21b4a4341a040b14c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d739591910007f69eca5d4834f6943ae0a0082ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190607"
 ---
 # <a name="multiple-inline-files"></a>Birden Çok Satır İçi Dosya
 
-Bir komutu birden fazla satır içi dosya oluşturabilirsiniz.
+Bir komut, birden fazla satır içi dosya oluşturabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 command << <<
@@ -29,8 +30,8 @@ inlinetext
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her dosya için satır içi metin sınırlayıcısı içeren bir kapanış satır tarafından izlenen bir veya daha fazla satır belirtin. İlk dosya sınırlandırma satırı aşağıdaki satırdaki ikinci dosyanın metin başlayın.
+Her dosya için satır içi metnin bir veya daha fazla satırını ve ardından sınırlayıcıyı içeren bir kapanış satırını belirtin. İkinci dosyanın metnini ilk dosya için sınırlandırma satırını izleyen satırda başlatın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](inline-files-in-a-makefile.md)
+[Derleme görevleri dosyasındaki satır içi dosyalar](inline-files-in-a-makefile.md)

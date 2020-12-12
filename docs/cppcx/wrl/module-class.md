@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: modül sınıfı'
 title: Modül Sınıfı
 ms.date: 10/18/2018
 ms.topic: reference
@@ -43,18 +44,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::UnregisterObjects method
 - Microsoft::WRL::Module::UnregisterWinRTObject method
 ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
-ms.openlocfilehash: f7930247c979c111a7f4798e35ebe7aa95209f37
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 00063bca4d35ca2d7eab09ad9d03d57dcdc85593
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186395"
 ---
 # <a name="module-class"></a>Modül Sınıfı
 
 İlgili nesneler koleksiyonunu temsil eder.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<ModuleType moduleType>
@@ -148,7 +149,7 @@ Ad                                                                   | Açıklam
 
 **Ad alanı:** Microsoft:: WRL
 
-## <a name="modulemodule"></a><a name="tilde-module"></a>Module:: ~ modül
+## <a name="modulemodule"></a><a name="tilde-module"></a> Module:: ~ modül
 
 Sınıfın geçerli örneğini kaldırır `Module` .
 
@@ -156,7 +157,7 @@ Sınıfın geçerli örneğini kaldırır `Module` .
 virtual ~Module();
 ```
 
-## <a name="modulecreate"></a><a name="create"></a>Module:: Create
+## <a name="modulecreate"></a><a name="create"></a> Module:: Create
 
 Bir modül örneği oluşturur.
 
@@ -191,7 +192,7 @@ Modülün son örnek nesnesi serbest bırakıldığında çağırılır.
 
 Modüle başvuru.
 
-## <a name="moduledecrementobjectcount"></a><a name="decrementobjectcount"></a>Modül::D ecrementObjectCount
+## <a name="moduledecrementobjectcount"></a><a name="decrementobjectcount"></a> Modül::D ecrementObjectCount
 
 Modül tarafından izlenen nesne sayısını azaltır.
 
@@ -203,7 +204,7 @@ virtual long DecrementObjectCount();
 
 Azaltma işleminden önceki sayı.
 
-## <a name="modulegetactivationfactory"></a><a name="getactivationfactory"></a>Module:: GetActivationFactory
+## <a name="modulegetactivationfactory"></a><a name="getactivationfactory"></a> Module:: GetActivationFactory
 
 Modül için bir etkinleştirme fabrikası alır.
 
@@ -230,7 +231,7 @@ Geçerli modüldeki sınıf fabrikalarının bir alt kümesinin adı. [Activatab
 
 Başarılı olursa S_OK; Aksi halde, GetActivationFactory tarafından döndürülen HRESULT.
 
-## <a name="modulegetclassobject"></a><a name="getclassobject"></a>Module:: GetClassObject
+## <a name="modulegetclassobject"></a><a name="getclassobject"></a> Module:: GetClassObject
 
 Kuyruklarının bir sınıf fabrikası önbelleği.
 
@@ -263,7 +264,7 @@ Sunucu adı, `ActivatableClassWithFactory` `ActivatableClassWithFactoryEx` , vey
 
 Bu yöntemi yalnızca COM için kullanın, Windows Çalışma Zamanı değil. Bu yöntem yalnızca `IClassFactory` yöntemleri gösterir.
 
-## <a name="modulegetmodule"></a><a name="getmodule"></a>Module:: GetModule
+## <a name="modulegetmodule"></a><a name="getmodule"></a> Module:: GetModule
 
 Bir modül örneği oluşturur.
 
@@ -276,7 +277,7 @@ WRL_NOTHROW static Module& GetModule();
 
 Bir modüle başvuru.
 
-## <a name="modulegetobjectcount"></a><a name="getobjectcount"></a>Module:: GetObjectCount
+## <a name="modulegetobjectcount"></a><a name="getobjectcount"></a> Module:: GetObjectCount
 
 Bu modülle yönetilen nesne sayısını alır.
 
@@ -288,7 +289,7 @@ virtual long GetObjectCount() const;
 
 Bu modül tarafından yönetilen geçerli nesne sayısı.
 
-## <a name="moduleincrementobjectcount"></a><a name="incrementobjectcount"></a>Module:: IncrementObjectCount
+## <a name="moduleincrementobjectcount"></a><a name="incrementobjectcount"></a> Module:: IncrementObjectCount
 
 Modül tarafından izlenen nesne sayısını artırır.
 
@@ -300,7 +301,7 @@ virtual long IncrementObjectCount();
 
 Artış işleminden önceki sayı.
 
-## <a name="modulemodule"></a><a name="module"></a>Module:: Module
+## <a name="modulemodule"></a><a name="module"></a> Module:: Module
 
 `Module` sınıfının yeni bir örneğini başlatır.
 
@@ -312,7 +313,7 @@ Module();
 
 Bu Oluşturucu korunuyor ve **`new`** anahtar sözcüğüyle çağrılamaz. Bunun yerine, [Module:: GetModule](#getmodule) ya da [Module:: Create](#create)' ı çağırın.
 
-## <a name="moduleobjectcount_"></a><a name="objectcount"></a>Modül:: objectCount_
+## <a name="moduleobjectcount_"></a><a name="objectcount"></a> Modül:: objectCount_
 
 [Make](make-function.md) işleviyle birlikte kaç sınıf oluşturulduğunu izler.
 
@@ -320,7 +321,7 @@ Bu Oluşturucu korunuyor ve **`new`** anahtar sözcüğüyle çağrılamaz. Bunu
 volatile long objectCount_;
 ```
 
-## <a name="moduleregistercomobject"></a><a name="registercomobject"></a>Module:: RegisterCOMObject
+## <a name="moduleregistercomobject"></a><a name="registercomobject"></a> Module:: RegisterCOMObject
 
 Bir veya daha fazla COM nesnesini kaydeder, böylece diğer uygulamalar bunlara bağlanabilir.
 
@@ -360,7 +361,7 @@ COM nesneleri CLSCTX numaralandırmasının CLSCTX_LOCAL_SERVER numaralandırıc
 
 Kayıtlı nesnelerle bağlantı türü, geçerli *comflag* Template parametresinin bir BIRLEŞIMI ve regcls numaralandırması regcls_suspended numaralandırıcısı ile belirtilir.
 
-## <a name="moduleregisterobjects"></a><a name="registerobjects"></a>Module:: RegisterObjects
+## <a name="moduleregisterobjects"></a><a name="registerobjects"></a> Module:: RegisterObjects
 
 Diğer uygulamaların bağlanabilmesi için COM veya Windows Çalışma Zamanı nesnelerini kaydettirir.
 
@@ -382,7 +383,7 @@ Nesneleri oluşturan sunucunun adı.
 
 Başarılı olursa S_OK; Aksi takdirde, işlemin başarısız olma nedenini gösteren bir HRESULT.
 
-## <a name="moduleregisterwinrtobject"></a><a name="registerwinrtobject"></a>Module:: RegisterWinRTObject
+## <a name="moduleregisterwinrtobject"></a><a name="registerwinrtobject"></a> Module:: RegisterWinRTObject
 
 Bir veya daha fazla Windows Çalışma Zamanı nesnesini kaydeder, böylece diğer uygulamalar bunlara bağlanabilir.
 
@@ -411,7 +412,7 @@ Kaydedileceği nesne sayısı.
 
 Başarılı olursa S_OK; Aksi takdirde, işlemin başarısız olma nedenini belirten CO_E_OBJISREG gibi bir hata HRESULT.
 
-## <a name="modulereleasenotifier_"></a><a name="releasenotifier"></a>Modül:: releaseNotifier_
+## <a name="modulereleasenotifier_"></a><a name="releasenotifier"></a> Modül:: releaseNotifier_
 
 Bir nesne için bir işaretçi tutar `ReleaseNotifier` .
 
@@ -419,7 +420,7 @@ Bir nesne için bir işaretçi tutar `ReleaseNotifier` .
 ReleaseNotifier *releaseNotifier_;
 ```
 
-## <a name="moduleterminate"></a><a name="terminate"></a>Module:: Terminate
+## <a name="moduleterminate"></a><a name="terminate"></a> Module:: Terminate
 
 Modül tarafından başlatılan tüm fabrikaların kapatılmasını sağlar.
 
@@ -431,7 +432,7 @@ void Terminate();
 
 Önbellekteki fabrikaları serbest bırakır.
 
-## <a name="moduleunregistercomobject"></a><a name="unregistercomobject"></a>Module:: UnregisterCOMObject
+## <a name="moduleunregistercomobject"></a><a name="unregistercomobject"></a> Module:: UnregisterCOMObject
 
 Bir veya daha fazla COM nesnesinin kaydını siler, bu, diğer uygulamaların bunlara bağlanmasını engeller.
 
@@ -457,7 +458,7 @@ Kayıt için kullanılacak sınıfların sayısı.
 
 Bu işlem başarılı olursa S_OK; Aksi takdirde, işlemin başarısız olma nedenini gösteren HRESULT hatası.
 
-## <a name="moduleunregisterobjects"></a><a name="unregisterobjects"></a>Module:: UnregisterObjects
+## <a name="moduleunregisterobjects"></a><a name="unregisterobjects"></a> Module:: UnregisterObjects
 
 Diğer uygulamaların bunlara bağlanabilmesi için belirtilen modüldeki nesnelerin kaydını siler.
 
@@ -479,7 +480,7 @@ Bu işlemden etkilenen nesnelerin bir alt kümesini belirten uygun bir ad.
 
 Bu işlem başarılı olursa S_OK; Aksi takdirde, bu işlemin başarısız olmasının nedenini belirten bir HRESULT hatası.
 
-## <a name="moduleunregisterwinrtobject"></a><a name="unregisterwinrtobject"></a>Module:: UnregisterWinRTObject
+## <a name="moduleunregisterwinrtobject"></a><a name="unregisterwinrtobject"></a> Module:: UnregisterWinRTObject
 
 Diğer uygulamaların bunlara bağlanamamasını sağlamak için bir veya daha fazla Windows Çalışma Zamanı nesnesinin kaydını siler.
 

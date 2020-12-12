@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/GS (arabellek güvenlik denetimi)
 title: /GS (Arabellek Güvenlik Denetimi)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - -GS compiler option [C++]
 - buffers [C++], avoiding overruns
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
-ms.openlocfilehash: 92d296e8079a9ecd8d366c46bbdad8b2ee5dc313
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 4d7fa3c2220260914c9ff931c2f2e7c76bf12ea1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439567"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191881"
 ---
 # <a name="gs-buffer-security-check"></a>/GS (Arabellek Güvenlik Denetimi)
 
 Bir işlevin dönüş adresini, özel durum işleyicisi adresini veya belirli parametre türlerini geçersiz kılacak bazı arabellek taşmalarını algılar. Arabellek taşmasına neden olan saldırganlar, arabellek boyutu kısıtlamalarını zorlayamayan kodun yararlanabilmesi için kullanılan bir tekniktir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /GS[-]
@@ -40,7 +41,7 @@ Derleyicinin, arabellek taşma sorunlarına bağlı olarak tanıdığı işlevle
 
 ## <a name="gs-buffers"></a>GS arabellekleri
 
-Bir ara *arabellekte*arabellek taşması güvenlik denetimi yapılır. GS arabelleği aşağıdakilerden biri olabilir:
+Bir ara *arabellekte* arabellek taşması güvenlik denetimi yapılır. GS arabelleği aşağıdakilerden biri olabilir:
 
 - 4 bayttan büyük bir dizi, ikiden fazla öğe içeriyor ve işaretçi türü olmayan bir öğe türüne sahip.
 
@@ -87,7 +88,7 @@ Tüm platformlarda **/GS** , dönüş adresine arabellek taşmalarını algılam
 
 X86 'da, bir işlev bir özel durum işleyicisi kullanıyorsa, derleyici özel durum işleyicisinin adresini korumak için bir güvenlik tanımlama bilgisi çıkarır. Tanımlama bilgisi çerçeve geri sarma sırasında denetlenir.
 
-**/GS** bir işleve geçirilen *savunmasız parametreleri* korur. Savunmasız bir parametre işaretçi, C++ başvuru, bir Işaretçi içeren C yapısı (C++ Pod türü) veya bir GS arabelleği içerir.
+**/GS** bir işleve geçirilen *savunmasız parametreleri* korur. Savunmasız bir parametre bir işaretçi, C++ başvurusu, bir işaretçi veya bir GS arabelleği içeren C yapısı (C++ POD türü).
 
 Bir güvenlik açığı parametresi, tanımlama bilgisi ve yerel değişkenlerden önce ayrılır. Bir arabellek taşması bu parametrelerin üzerine yazabilir. Ve bu parametreleri kullanan işlevdeki kod, işlev döndürülmadan ve güvenlik denetimi gerçekleştirilmeden önce bir saldırıya neden olabilir. Bu tehlike düzeyini en aza indirmek için, derleyici işlev girişi sırasında güvenlik açığı bulunan parametrelerin bir kopyasını yapar ve bunları herhangi bir arabellek için depolama alanının altına koyar.
 
@@ -109,15 +110,15 @@ Derleyici, aşağıdaki durumlarda güvenlik açığı bulunan parametrelerin ko
 
 **/GS** derleyici seçeneği, tüm arabellek taşması güvenlik saldırılarına karşı koruma sağlamaz. Örneğin, bir nesnede bir arabellekle ve bir vtable varsa, bir arabellek taşması vtable 'ı bozabilir.
 
-**/GS**kullanıyor olsanız bile, her zaman arabellek taşması olmayan güvenli kod yazmayı deneyin.
+**/GS** kullanıyor olsanız bile, her zaman arabellek taşması olmayan güvenli kod yazmayı deneyin.
 
 ### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio 'da Bu derleyici seçeneğini ayarlamak için
 
 1. **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **Özellikler**' e tıklayın.
 
-   Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+   Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Özellik sayfaları** iletişim kutusunda **C/C++**  klasörüne tıklayın.
+1. **Özellik sayfaları** iletişim kutusunda **C/C++** klasörünü tıklatın.
 
 1. **Kod oluşturma** Özellik sayfasına tıklayın.
 
@@ -156,5 +157,5 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

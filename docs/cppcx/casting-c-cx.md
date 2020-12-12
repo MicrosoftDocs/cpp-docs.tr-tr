@@ -1,17 +1,18 @@
 ---
+description: ': Atama hakkında daha fazla bilgi edinin (C++/CX)'
 title: Atama (C++/CX)
 ms.date: 06/19/2018
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-ms.openlocfilehash: 5e51f9e100be2096494e10aca38232dbd1576f40
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 90b9e90833acc14bcf76287b44f70fb914c7604a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843488"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190282"
 ---
 # <a name="casting-ccx"></a>Atama (C++/CX)
 
-Dört farklı atama işleci Windows Çalışma Zamanı türleri için geçerlidir: [Static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast Işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**ve [reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). **safe_cast** ve **`static_cast`** dönüştürme gerçekleştirilemediği zaman bir özel durum oluşturur; [Static_cast işleci](../cpp/static-cast-operator.md) de derleme zamanı tür denetimi gerçekleştirir. **`dynamic_cast`****`nullptr`** türü dönüştüremezse döndürür. **`reinterpret_cast`** Null olmayan bir değer döndürür, ancak geçersiz olabilir. Bu nedenle, dönüştürmenin **`reinterpret_cast`** başarılı olacağını bilmiyorsanız kullanmanızın önerilmediğini öneririz. Ayrıca, ile özdeş oldukları için C++/CX kodunuzda C stili yayınları kullanmanızı öneririz **`reinterpret_cast`** .
+Dört farklı atama işleci Windows Çalışma Zamanı türleri için geçerlidir: [Static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast Işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci** ve [reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). **safe_cast** ve **`static_cast`** dönüştürme gerçekleştirilemediği zaman bir özel durum oluşturur; [Static_cast işleci](../cpp/static-cast-operator.md) de derleme zamanı tür denetimi gerçekleştirir. **`dynamic_cast`****`nullptr`** türü dönüştüremezse döndürür. **`reinterpret_cast`** Null olmayan bir değer döndürür, ancak geçersiz olabilir. Bu nedenle, dönüştürmenin **`reinterpret_cast`** başarılı olacağını bilmiyorsanız kullanmanızın önerilmediğini öneririz. Ayrıca, ile özdeş oldukları için C++/CX kodunuzda C stili yayınları kullanmanızı öneririz **`reinterpret_cast`** .
 
 Derleyici ve çalışma zamanı, bir değer türü veya yerleşik tür bağımsız değişken olarak parametre türü olan bir yönteme geçirildiğinde de örtük yayınlar gerçekleştirir — Örneğin, kutulama işlemleri `Object^` . Teorik olarak, örtük bir dönüştürme çalışma zamanında bir özel duruma asla neden olmaz; derleyici örtük bir dönüştürme gerçekleştiremediğinde, derleme zamanında bir hata oluşturur.
 
@@ -78,7 +79,7 @@ Başka bir kullanımı **`dynamic_cast`** , bir `Object^` kutulanmış değer t�
 
 ## <a name="dynamic_cast-and-tracking-references-"></a>dynamic_cast ve izleme başvuruları (%)
 
-Bir izleme başvurusuna de uygulayabilirsiniz **`dynamic_cast`** , ancak bu durumda cast **safe_cast**gibi davranır. `Platform::InvalidCastException`Bir izleme başvurusunun değeri olmadığı için hata oluşturur **`nullptr`** .
+Bir izleme başvurusuna de uygulayabilirsiniz **`dynamic_cast`** , ancak bu durumda cast **safe_cast** gibi davranır. `Platform::InvalidCastException`Bir izleme başvurusunun değeri olmadığı için hata oluşturur **`nullptr`** .
 
 ## <a name="reinterpret_cast"></a>reinterpret_cast
 

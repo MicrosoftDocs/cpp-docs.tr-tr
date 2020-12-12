@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2434'
 title: Derleyici hatası C2434
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2434
 ms.assetid: 01329e26-7c74-4219-b74f-69e3a40c9738
-ms.openlocfilehash: 869db3b49075fa477860e045e59306e22a381ca4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e24eb3fdf2ae60dadc270bed1bdda251acfc70a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205471"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189970"
 ---
 # <a name="compiler-error-c2434"></a>Derleyici hatası C2434
 
@@ -21,11 +22,11 @@ ms.locfileid: "80205471"
 
 **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-**/Clr: Pure**altında işlem başına değişkeni dinamik olarak başlatmak mümkün değildir. Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [işlemi](../../cpp/process.md).
+**/Clr: Pure** altında işlem başına değişkeni dinamik olarak başlatmak mümkün değildir. Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [işlemi](../../cpp/process.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C2434 oluşturur. Bu sorunu onarmak için `process` değişkenlerini başlatmak için sabitleri kullanın.
+Aşağıdaki örnek C2434 oluşturur. Bu sorunu onarmak için, değişkenleri başlatmak üzere sabitleri kullanın `process` .
 
 ```cpp
 // C2434.cpp

@@ -1,5 +1,6 @@
 ---
-title: /I (ek içeren dizinler)
+description: Daha fazla bilgi edinin:/ı (ek ekleme dizinleri)
+title: /I (Ek içeren dizinler)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.AdditionalIncludeDirectories
@@ -14,47 +15,47 @@ helpviewer_keywords:
 - set include directories
 - include directories, compiler option [C++]
 ms.assetid: 3e9add2a-5ed8-4d15-ad79-5b411e313a49
-ms.openlocfilehash: 6ec8b15e77fec5214013c484e617904ed29e8197
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ad44abec28bbb87f91f449765a9ea2f30f2bffa8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270148"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191348"
 ---
-# <a name="i-additional-include-directories"></a>/I (ek içeren dizinler)
+# <a name="i-additional-include-directories"></a>/I (Ek içeren dizinler)
 
-Bir dizin dahil etme dosyaları için Aranan dizinleri listesine ekler.
+İçerme dosyaları için aranan dizinler listesine bir dizin ekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/I**[]*dizini*
+> **/İ**[]*dizini*
 
 ### <a name="arguments"></a>Arguments
 
-*Dizin*<br/>
-Dizinleri listesine eklenecek dizine dahil etme dosyaları için Aranan.
+*dizinden*<br/>
+İçerme dosyaları için aranan dizinler listesine eklenecek dizin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birden fazla dizin eklemek için bu seçeneği birden çok kez kullanın. Yalnızca belirlenen içerme dosyasına bulunana kadar dizinlerde arama yapılır.
+Birden fazla dizin eklemek için bu seçeneği birden çok kez kullanın. Dizinler yalnızca belirtilen içerme dosyası bulunana kadar aranır.
 
-Bu seçeneği ile kullanabilirsiniz ([/X (Ignore Standard INCLUDE Paths)](x-ignore-standard-include-paths.md)) seçeneği.
+Bu seçeneği ([/x (Standart Içerme yolları yoksay)](x-ignore-standard-include-paths.md)) seçeneğiyle kullanabilirsiniz.
 
-Derleyici, dizinleri şu sırayla arar:
+Derleyici dizinleri aşağıdaki sırayla arar:
 
-1. Kullanılarak belirtilen bir [#include yönergesi](../../preprocessor/hash-include-directive-c-cpp.md) çift tırnak formunda, onu önce yerel dizinleri arar. İçeren dosyayla aynı dizinde arama başlar **#include** deyimi. Bu dosyayı bulmak başarısız olursa, arama dizinleri şu anda açık açılış ters sırada dosyaları içerir. Arama üst dizininde başlar dosyasını dahil edin ve yukarı doğru devam ederek dosyaları herhangi iki üst dizinleri içerir.
+1. Çift tırnak biçiminde bir [#include yönergesi](../../preprocessor/hash-include-directive-c-cpp.md) kullanılarak belirtilmişse, önce yerel dizinleri arar. Arama, **#include** ifadesini içeren dosyayla aynı dizinde başlar. Bu dosyayı bulamazsa, açık olan içerme dosyalarının dizinlerinde açıldıkları ters sırada arama yapar. Arama, üst öğe ekleme dosyası dizininde başlar ve herhangi bir doğru üst öğe içerme dosyasının dizinleriyle devam eder.
 
-1. Kullanılarak belirtilen bir **#include** yönergesinde açılı ayraç form veya yerel dizin araması başarısız olursa, bunu kullanarak belirtilen dizinleri arar **/I** CL bunları karşılaştığında sırada seçeneği komut satırına.
+1. Açılı ayraç biçiminde bir **#include** yönergesi kullanılarak belirtilmişse veya yerel dizin araması başarısız olduysa, **/ı** seçeneği KULLANıLARAK belirtilen dizinleri, CL 'nin komut satırında karşılaştığı sırayla arar.
 
-1. Belirtilen dizinleri **INCLUDE** ortam değişkeni.
+1. **Include** ortam değişkeninde belirtilen dizinler.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **genel** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **genel** özellik sayfasını seçin.
 
-1. Değiştirme **ek içerik dizinleri** özelliği.
+1. **Ek Içerme dizinleri** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -62,7 +63,7 @@ Derleyici, dizinleri şu sırayla arar:
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki komutu şu sırayla MAIN.c tarafından talep edilen dahil edilme dosyalarını arar: İlk olarak, çift tırnak kullanılarak belirtilen, yerel dosyaları aranır. Ardından, arama içinde \INCLUDE dizini sonra \MY\INCLUDE dizinde devam eder ve son dizinler için Include ortam değişkeni atanmış.
+Aşağıdaki komut, ana. c tarafından istenen içerme dosyalarını şu sırayla arar: Ilk olarak, Çift tırnaklar kullanılarak belirtilmişse yerel dosyalar aranır. Sonra, arama \ içerme dizininde, sonra \MY\INCLUDE dizininde ve son olarak DAHIL etme ortamı değişkenine atanan dizinlerde devam eder.
 
 ```
 CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
@@ -70,5 +71,5 @@ CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

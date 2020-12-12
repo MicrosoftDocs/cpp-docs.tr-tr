@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için:/FS (zaman uyumlu PDB yazmaları zorla)
 title: /FS (Zaman Uyumlu PDB Yazmalarını Zorla)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - -FS compiler option [C++]
 - /FS compiler option [C++]
 ms.assetid: b2caaffe-f6e1-4963-b068-648f06b105e0
-ms.openlocfilehash: 97ffb9529087329cf327ba704523b93d5d9b99b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2dcddd046cc7232f40be5a54d73e659ed099e85d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62270985"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192037"
 ---
 # <a name="fs-force-synchronous-pdb-writes"></a>/FS (Zaman Uyumlu PDB Yazmalarını Zorla)
 
-Zorlar, program veritabanı (PDB) dosyasına yazar — tarafından oluşturulan [/zi](z7-zi-zi-debug-information-format.md) veya [/zi](z7-zi-zi-debug-information-format.md)— MSPDBSRV seri hale. EXE.
+MSPDBSRV.EXE aracılığıyla serileştirilmesi için [/Zi](z7-zi-zi-debug-information-format.md) veya [/Zi](z7-zi-zi-debug-information-format.md)tarafından oluşturulan program veritabanı (pdb) dosyasına yazmaları zorlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /FS
@@ -26,19 +27,19 @@ Zorlar, program veritabanı (PDB) dosyasına yazar — tarafından oluşturulan 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, zaman **/zi** veya **/zi** belirtilirse, derleyicinin tür bilgisini ve sembolik hata ayıklama bilgisini yazmak için PDB dosyalarını kilitler. Bu, derleyicinin türleri sayısı büyük olduğunda tür bilgisi üretmek için gereken süreyi önemli ölçüde azaltabilir. Başka bir işlem PDB dosyası geçici olarak kilitler, — örneğin, virüsten koruma programı — derleyici tarafından yazma işlemleri başarısız olabilir ve önemli bir hata oluşabilir. Cl.exe birden çok kopyasını aynı PDB dosyası eriştiğinizde de bu sorun oluşabilir; Örneğin, bağımsız bir çözümünüz varsa aynı kullanan projeler Ara dizin veya çıkış dizinleri ve paralel yapılar etkinleştirilir. **/FS** derleyici seçeneği derleyici PDB dosyası kilitlemelerini engeller ve MSPDBSRV gitmek için yazma zorlar. EXE erişim serileştirir. Bu derlemeler önemli ölçüde uzun yapabilir ve birden çok cl.exe aynı anda PDB dosyası erişirken oluşabilecek tüm hatalar engellemez. Böylece Ara ayırmak bağımsız projeler yazma ve çıktı konumlarını ya da olun projelerden biri diğerine bağımlı serileştirilmiş zorla proje derlemeleri çözümünüzü değiştirmenizi öneririz.
+Varsayılan olarak, **/Zi** veya **/Zi** belirtildiğinde, derleyici tür bilgilerini ve simgesel hata ayıklama bilgilerini yazmak için pdb dosyalarını kilitler. Bu, tür sayısı büyük olduğunda derleyicinin tür bilgilerini oluşturma süresini önemli ölçüde azaltabilir. Başka bir işlem PDB dosyasını geçici olarak kilitlerse — Örneğin, bir virüsten koruma programı — derleyici tarafından yazma işlemleri başarısız olabilir ve önemli bir hata oluşabilir. Bu sorun, aynı PDB dosyasına cl.exe birden çok kopyası olduğunda da gerçekleşebilir — Örneğin, çözümünüz aynı ara dizinleri veya çıkış dizinlerini kullanan bağımsız projelere sahipse ve paralel derlemeler etkinse. **/FS** derleyici SEÇENEĞI derleyicinin pdb dosyasını kilitlemesini ve yazma işlemini MSPDBSRV.EXE, erişimi seri hale getirir. Bu, derlemeleri önemli ölçüde daha uzun hale getirir ve cl.exe birden çok örneği aynı anda PDB dosyasına erişilişinde oluşabilecek tüm hataları engellemez. Bağımsız projelerin ayrı ara ve çıkış konumlarına yazmasını veya bir projeden birini, serileştirilmiş proje yapılarını zorlamak için bağımlı hale getirmenizi sağlayacak şekilde çözümünüzü değiştirmenizi öneririz.
 
-[/MP](mp-build-with-multiple-processes.md) seçeneğini etkinleştirir **/FS** varsayılan olarak.
+[/MP](mp-build-with-multiple-processes.md) seçeneği varsayılan olarak **/FS** 'yi mümkün.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **C/C++** klasör.
+1. **C/C++** klasörünü seçin.
 
-1. Seçin **komut satırı** özellik sayfası.
+1. **Komut satırı** özellik sayfasını seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik `/FS` seçip **Tamam**.
+1. **Ek seçenekler** özelliğini içerecek şekilde değiştirin `/FS` ve ardından **Tamam**' ı seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -46,5 +47,5 @@ Varsayılan olarak, zaman **/zi** veya **/zi** belirtilirse, derleyicinin tür b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

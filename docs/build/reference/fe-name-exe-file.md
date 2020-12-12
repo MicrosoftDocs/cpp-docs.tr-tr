@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/Fe (EXE dosyası Adlandır)
 title: /Fe (EXE Dosyasını Adlandır)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - /Fe compiler option [C++]
 - Fe compiler option [C++]
 ms.assetid: 49f594fd-5e94-45fe-a1bf-7c9f2abb6437
-ms.openlocfilehash: 72eada34c6a64a8b4591afbee03b686f3da3ee11
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 551c6f54ba75c71d9229b5a60ff0fdb192dbf100
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192284"
 ---
 # <a name="fe-name-exe-file"></a>/Fe (EXE Dosyasını Adlandır)
 
@@ -35,7 +36,7 @@ Göreli veya mutlak yol ve temel dosya adı ya da bir dizinin göreli ya da mutl
 
 **/Fe** seçeneği, oluşturulan yürütülebilir dosya için çıkış dizinini, çıkış yürütülebilir adını veya her ikisini belirtmenizi sağlar. Yol *adı* bir yol ayırıcısıyla (**&#92;**) sonlanıyorsa, yalnızca çıkış dizinini belirtmek kabul edilir. Aksi takdirde, *yol adının* son bileşeni çıkış dosyası temel adı olarak kullanılır ve geri kalan *yol* , çıkış dizinini belirtir. Yol *adının* herhangi bir yol ayırıcısı yoksa, geçerli dizinde çıkış dosyası adının belirtilmesi varsayılır. Boşluk, genişletilmiş karakterler veya sekiz karakterden uzun yol bileşenleri gibi kısa bir yolda yer alan bir karakter içeriyorsa, *yol adı* çift tırnak (**"**) içine alınmalıdır.
 
-**/Fe** seçeneği belirtilmediğinde veya *PathName*öğesinde bir dosya taban adı belirtilmediğinde, derleyici çıkış dosyasına komut satırında belirtilen ilk kaynak veya nesne dosyasının temel adını ve. exe veya. dll uzantısını kullanarak varsayılan bir ad verir.
+**/Fe** seçeneği belirtilmediğinde veya *PathName* öğesinde bir dosya taban adı belirtilmediğinde, derleyici çıkış dosyasına komut satırında belirtilen ilk kaynak veya nesne dosyasının temel adını ve. exe veya. dll uzantısını kullanarak varsayılan bir ad verir.
 
 [/C (bağlama olmadan Derle)](c-compile-without-linking.md) seçeneğini belirtirseniz, **/Fe** hiçbir etkiye sahip değildir.
 
@@ -69,5 +70,5 @@ CL /FeC:\BIN\ *.C
 
 [Çıktı dosyası (/F) seçenekleri](output-file-f-options.md)<br/>
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
 [Yol adını belirtme](specifying-the-pathname.md)<br/>

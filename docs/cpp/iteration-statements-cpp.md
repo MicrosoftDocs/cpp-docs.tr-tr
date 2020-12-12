@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: yineleme deyimleri (C++)'
 title: Yineleme Deyimleri (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - iteration statements
 - loop structures, iteration statements
 ms.assetid: bf6d75f7-ead2-426a-9c47-33847f59b8c7
-ms.openlocfilehash: b4176e8265759ae569275bdae5304b0b10c29fc1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 71edf526ed641a5bcd7944c546486cf3d2fb5059
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190295"
 ---
 # <a name="iteration-statements-c"></a>Yineleme Deyimleri (C++)
 
@@ -24,8 +25,8 @@ C++ dört yineleme deyimi sağlar — [while](../cpp/while-statement-cpp.md), [D
 |---------------|------------------|--------------------|---------------|
 |**`while`**|Döngünün başı|Hayır|Hayır|
 |**`do`**|Döngünün altı|Hayır|Hayır|
-|**`for`**|Döngünün başı|Yes|Yes|
-|**Aralık tabanlı**|Döngünün başı|Yes|Yes|
+|**`for`**|Döngünün başı|Evet|Evet|
+|**Aralık tabanlı**|Döngünün başı|Evet|Evet|
 
 Yineleme ifadesinin ifade bölümü bir bildirim olamaz. Ancak, bildirim içeren bir bileşik ifade olabilir.
 

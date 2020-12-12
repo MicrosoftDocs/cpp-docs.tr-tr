@@ -1,4 +1,5 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: Delay-Loaded DLL 'yi açıkça kaldırma"
 title: Gecikmeli Yüklenen DLL'i Açıkça Kaldırma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - __FUnloadDelayLoadedDLL2
 - delayed loading of DLLs, unloading
 ms.assetid: 1c4c5172-fd06-45d3-9e4f-f12343176b3c
-ms.openlocfilehash: 9909a3e179aa6c0af3a622c7bf1b545326f90bbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03df08487acc1be05226021d6b7c1593eb0f031b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293465"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192388"
 ---
 # <a name="explicitly-unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Açıkça Kaldırma
 
-[/Delay](delay-delay-load-import-settings.md): unload bağlayıcı seçeneği Gecikmeli yüklendi olan bir DLL dosyası olanak tanır. Varsayılan olarak, kodunuzun DLL kaldırdığında (/ DELAY: Unload kullanarak ve **__FUnloadDelayLoadedDLL2**), içeri aktarma adres tablosunda (IAT) Gecikmeli yüklenen içeri aktarmalar kalır. Bununla birlikte, / DELAY: Unload bağlayıcı komut satırına kullanırsanız, yardımcı işlevini IAT için özgün biçimlerinde sıfırlama DLL açık kaldırma desteği: artık geçersiz işaretçileri üzerine yazılır. Bir alandır IAT [ImgDelayDescr](calling-conventions-parameters-and-return-type.md) içeren özgün IAT bir kopyasını adresini (varsa).
+[/Delay](delay-delay-load-import-settings.md): Unload bağlayıcı seçeneği, Gecikmeli yüklenen bir dll 'yi kaldırmanızı sağlar. Varsayılan olarak, kodunuz DLL 'yi kaldırdığında (/Delay: Unload ve **__FUnloadDelayLoadedDLL2** kullanarak), Gecikmeli yüklenen içeri aktarmalar içeri aktarma adresi tablosunda (IAT) kalır. Ancak, bağlayıcı komut satırında/delay: unload kullanırsanız, yardımcı işlev DLL 'nin açıkça kaldırılmasını destekleyecektir ve ıAT 'yi özgün biçimine sıfırlıyor; Şimdi geçersiz işaretçiler üzerine yazılacak. IAT, [ImgDelayDescr](calling-conventions-parameters-and-return-type.md) içinde orijinal IAT 'nin bir kopyasının adresini içeren bir alandır (varsa).
 
 ## <a name="example"></a>Örnek
 
@@ -47,16 +48,16 @@ int main()
 }
 ```
 
-### <a name="comments"></a>Açıklamalar
+### <a name="comments"></a>Yorumlar
 
-Bir Gecikmeli yüklenen DLL'i kaldırma üzerinde önemli notlar:
+Gecikmeli yüklenen DLL 'yi kaldırma hakkında önemli notlar:
 
-- Uygulamasını bulabilirsiniz **__FUnloadDelayLoadedDLL2** işlevi dosyasındaki \VC7\INCLUDE\DELAYHLP. CPP.
+- **__FUnloadDelayLoadedDLL2** işlevinin uygulamasını \vc7\include\delayhlpfile dosyasında bulabilirsiniz. CPP.
 
-- Name parametresi **__FUnloadDelayLoadedDLL2** işlevi tam olarak eşleşmesi gerekir (çalışması gibi) ne içeri aktarma kitaplığına (yani dize da görüntü içeri aktarma tablosunda) içerir. İçeri aktarma kitaplığı ile içeriğini görüntüleyebilirsiniz [DUMPBIN/DEPENDENTS](dependents.md). Büyük küçük harf duyarlı dize eşleştirme isteniyorsa güncelleştirebilirsiniz **__FUnloadDelayLoadedDLL2** CRT dize işlevleri veya bir Windows API çağrısı birini kullanmak için.
+- **__FUnloadDelayLoadedDLL2** işlevinin name parametresi, içeri aktarma kitaplığı 'nın (Bu dize görüntüdeki içeri aktarma tablosunda da bulunur) tam olarak eşleşmelidir (büyük/küçük harf). İçeri aktarma kitaplığının içeriğini [dumpbin/BAĞıMLıLARı](dependents.md)ile görüntüleyebilirsiniz. Büyük/küçük harfe duyarsız dize eşleşmesi isteniyorsa, CRT dize işlevlerinden birini veya bir Windows API çağrısını kullanmak için **__FUnloadDelayLoadedDLL2** güncelleştirebilirsiniz.
 
-Bkz: [Delay-Loaded DLL'i kaldırma](unloading-a-delay-loaded-dll.md) daha fazla bilgi için.
+Daha fazla bilgi için bkz. [Delay-Loaded dll 'Yi kaldırma](unloading-a-delay-loaded-dll.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)
+[Delay-Loaded dll 'Ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)

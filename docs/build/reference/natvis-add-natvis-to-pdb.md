@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/NATVIS (PDB 'ye Natvis Ekle)
 title: /NATVIS (PDB’ye Natvis ekle)
 ms.date: 08/10/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -NATVIS linker option
 - Add Natvis file to PDB
 ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
-ms.openlocfilehash: a16e320a2f8f946912fef6a354f27f6514a67e29
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7703915591a59a558c8580dd64b9be22d281d784
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439281"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190529"
 ---
 # <a name="natvis-add-natvis-to-pdb"></a>/NATVIS (PDB’ye Natvis ekle)
 
@@ -22,7 +23,7 @@ ms.locfileid: "79439281"
 
 ## <a name="parameters"></a>Parametreler
 
-*kısaltın*<br/>
+*filename*<br/>
 PDB dosyasına eklenecek natvis dosyası. Natvis dosyasındaki hata ayıklayıcı görselleştirmelerini PDB 'ye katıştırır.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -33,7 +34,7 @@ Bir PDB dosyası [/Debug](debug-generate-debug-info.md) seçeneği kullanılarak
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 1. **Bağlayıcı** klasöründeki **komut satırı** özellik sayfasını seçin.
 
@@ -46,4 +47,4 @@ Bir PDB dosyası [/Debug](debug-generate-debug-info.md) seçeneği kullanılarak
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

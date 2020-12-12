@@ -1,13 +1,14 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/HIGHENTROPYVA (support 64-bit ASLR)
 title: /HIGHENTROPYVA (64 Bit ASLR Destekle)
 ms.date: 06/12/2018
 ms.assetid: fe35f9f7-d28e-4694-9aeb-a79db06168e0
-ms.openlocfilehash: ead296b1bd31171fb1a187685f407f6a0cf8a74c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aed5d5eea2d3351d4eff88a58818a953563ba0e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191556"
 ---
 # <a name="highentropyva-support-64-bit-aslr"></a>/HIGHENTROPYVA (64 Bit ASLR Destekle)
 
@@ -19,7 +20,7 @@ Yürütülebilir resmin yüksek entrolebilir 64 bit adres alanı düzeni rastgel
 
 ## <a name="remarks"></a>Açıklamalar
 
-**`/HIGHENTROPYVA`***executable image* *`.dll`* *`.exe`* ASLR 'in tüm 64-bit adres alanını kullanıp kullanamayacağını göstermek için yürütülebilir bir görüntü dosyasının üst bilgisini (örneğin, bir veya dosya) değiştirir.  Bir etkiye sahip olmak için, hem çalıştırılabilir hem de bağımlı olduğu tüm modüller üzerinde seçeneğini ayarlayın. Ardından 64-bit ASLR destekleyen bir işletim sistemi, 64 bit rastgele sanal adresler kullanarak yürütülebilir görüntünün segmentlerini yükleme zamanında yeniden temellendirebilirler. Bu büyük adres alanı, bir saldırganın belirli bir bellek bölgesinin konumunu tahmin etmesini zorlaştırır.
+**`/HIGHENTROPYVA`** *`.dll`* *`.exe`* ASLR 'in tüm 64-bit adres alanını kullanıp kullanamayacağını göstermek için yürütülebilir bir görüntü dosyasının üst bilgisini (örneğin, bir veya dosya) değiştirir.  Bir etkiye sahip olmak için, hem çalıştırılabilir hem de bağımlı olduğu tüm modüller üzerinde seçeneğini ayarlayın. Ardından 64-bit ASLR destekleyen bir işletim sistemi, 64 bit rastgele sanal adresler kullanarak yürütülebilir görüntünün segmentlerini yükleme zamanında yeniden temellendirebilirler. Bu büyük adres alanı, bir saldırganın belirli bir bellek bölgesinin konumunu tahmin etmesini zorlaştırır.
 
 Varsayılan olarak, **`/HIGHENTROPYVA`** 64 bitlik yürütülebilir görüntüler için etkinleştirilmiştir. Bu seçenek [`/LARGEADDRESSAWARE`](largeaddressaware-handle-large-addresses.md) , 64-bit görüntüler için varsayılan olarak da etkinleştirilen bir gerektirir. **`/HIGHENTROPYVA`** , bağlayıcının seçeneği yoksaydığı 32 bitlik yürütülebilir görüntüler için geçerli değildir. Bu seçeneği açıkça devre dışı bırakmak için kullanın **`/HIGHENTROPYVA:NO`** .
 

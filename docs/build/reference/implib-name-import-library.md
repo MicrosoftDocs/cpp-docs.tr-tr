@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/ıMPLIB (ad Içeri aktarma kitaplığı)
 title: /IMPLIB (İçeri Aktarma Kitaplığını Adlandır)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,43 +11,43 @@ helpviewer_keywords:
 - -IMPLIB linker option
 - import libraries, overriding default name
 ms.assetid: fe8f71ab-7055-41b5-8ef8-2b97cfa4a432
-ms.openlocfilehash: dc9a9220d55f7831a00f70ec155cc5b57a695818
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2a5ea590368d1bc3abbecf38845e97a99a0d1f96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269992"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191322"
 ---
 # <a name="implib-name-import-library"></a>/IMPLIB (İçeri Aktarma Kitaplığını Adlandır)
 
-> / IMPLIB:*dosya adı*
+> /IMPLıB:*filename*
 
 ## <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
-İçeri aktarma kitaplığının kullanıcı tarafından belirtilen adı. Varsayılan adını değiştirir.
+*filename*<br/>
+İçeri aktarma kitaplığı için Kullanıcı tarafından belirtilen bir ad. Varsayılan adı değiştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/IMPLIB seçenek dışarı aktarmaları içeren bir program oluşturduğunda bağlantı oluşturan içeri aktarma kitaplığı için varsayılan adı geçersiz kılar. Varsayılan adı uzantısı ile ana çıkış dosyası ve temel adından oluşturulur. LIB. Bir veya daha fazlasını belirtilmişse bir program dışarı aktarmaları içerir:
+/IMPLıB seçeneği, dışarı aktarmalar içeren bir program oluştururken bağlantı oluşturulan içeri aktarma kitaplığının varsayılan adını geçersiz kılar. Varsayılan ad, ana çıkış dosyasının temel adından ve. lib uzantısından oluşturulur. Aşağıdakilerden biri veya birkaçı belirtilmişse, bir program dışarı aktarmalar içerir:
 
-- [__Declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak koddaki anahtar sözcüğü
+- Kaynak kodundaki [__declspec (dllexport)](../../cpp/dllexport-dllimport.md) anahtar sözcüğü
 
-- [Dışarı aktarmalar](exports.md) .def dosyası deyimi
+- Bir. def dosyasında bir ifade [dışarı aktarır](exports.md)
 
-- Bir [/dışarı aktarma](export-exports-a-function.md) bağlantı komut belirtimi
+- BAĞLANTı komutunda bir [/Export](export-exports-a-function.md) belirtimi
 
-İçeri aktarma kitaplığı değil oluşturulurken bağlantı /IMPLIB yok sayar. Hiçbir dışarı aktarma belirtilmezse, içeri aktarma kitaplığı bağlantı oluşturmaz. Bir dışarı aktarma dosyası derleme kullanılırsa, içeri aktarma kitaplığı zaten var ve bir oluşturmaz bağlantı varsayar. İçeri aktarma kitaplıkları ve dışarı aktarma dosyaları hakkında daha fazla bilgi için bkz: [LIB başvurusu](lib-reference.md).
+İçeri aktarma kitaplığı oluşturulmadıysa bağlantı/ıMPLıB yok sayılır. Dışarı aktarma belirtilmemişse, bağlantı bir içeri aktarma kitaplığı oluşturmaz. Derlemede bir dışa aktarma dosyası kullanılıyorsa, bağlantı bir içeri aktarma kitaplığının zaten var olduğunu ve bir tane oluşturmadığından emin olur. Kitaplık ve dışarı aktarma dosyalarını içeri aktarma hakkında bilgi için bkz. [LIB Reference](lib-reference.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **Gelişmiş** özellik sayfası.
+1. **Gelişmiş** Özellik sayfasına tıklayın.
 
-1. Değiştirme **içeri aktarma kitaplığını** özelliği.
+1. **Içeri aktarma kitaplığı** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -55,4 +56,4 @@ ms.locfileid: "62269992"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

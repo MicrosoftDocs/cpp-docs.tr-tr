@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `/Fi` (çıkış dosyası adı ön işlem)'
 title: /Fi (Çıktı Dosyası Adını Önişle)
 ms.date: 08/12/2020
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - /Fi compiler option (C++)
 - preprocessing output files, file name
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
-ms.openlocfilehash: 82bf09a8f01f656f90ad9971530b05f108fc95a4
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: c598730b19b843aa312df71d745ed363d082cc43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561095"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192232"
 ---
 # <a name="fi-preprocess-output-file-name"></a>`/Fi` (Çıkış dosyası adını Önişle)
 
 [ `/P` (Bir dosyaya ön işleme)](p-preprocess-to-a-file.md) derleyici seçeneğinin önceden işlenmiş çıktıyı yazdığı çıkış dosyasının adını belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 > **`/Fi`**_`pathname`_
 
@@ -55,7 +56,7 @@ CL /P /Fi".\\preprocessed\\" main.cpp helper.cpp
 
 1. **Yapılandırma özellikleri**  >  **C/C++**  >  **Önişlemci** özellik sayfasını seçin.
 
-1. **Ön işlemi bir dosya** özelliğine **Evet**olarak ayarlayın.
+1. **Ön işlemi bir dosya** özelliğine **Evet** olarak ayarlayın.
 
 1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 

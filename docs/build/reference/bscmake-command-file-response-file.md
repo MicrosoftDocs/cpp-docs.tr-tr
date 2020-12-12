@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: BSCMAKE komut dosyası (yanıt dosyası)'
 title: BSCMAKE Komut Dosyası (Yanıt Dosyası)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,27 +10,27 @@ helpviewer_keywords:
 - response files
 - command files
 ms.assetid: abdffeea-35c7-4f2d-8c17-7d0d80bac314
-ms.openlocfilehash: 6a55fd616a00aeb3ade229bf7cff8220f86085b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4bb321cd7aa705d7e33d0f539ab3e0aa2e3cb8bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295051"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187162"
 ---
 # <a name="bscmake-command-file-response-file"></a>BSCMAKE Komut Dosyası (Yanıt Dosyası)
 
 > [!WARNING]
-> BSCMAKE hala Visual Studio ile yüklenir ancak artık IDE tarafından kullanılır. Visual Studio 2008'den itibaren göz atma ve sembol bilgilerini otomatik olarak bir SQL Server .sdf dosyası çözüm klasöründe depolanır.
+> BSCMAKE, Visual Studio ile hala yüklü olsa da artık IDE tarafından kullanılmıyor. Visual Studio 2008 ' den itibaren, gezinme ve sembol bilgileri çözüm klasöründeki bir SQL Server. sdf dosyasında otomatik olarak depolanır.
 
-Kısmını veya tamamını bir komut dosyası komut satırı giriş sağlayabilirsiniz. Aşağıdaki sözdizimini kullanarak bir komut dosyası belirtin:
+Komut satırı girişinin bir kısmını veya tamamını bir komut dosyasına sağlayabilirsiniz. Aşağıdaki sözdizimini kullanarak komut dosyasını belirtin:
 
 ```
 BSCMAKE @filename
 ```
 
-Yalnızca bir komut dosyası izin verilir. Bir yol belirtebilirsiniz *filename*. Önünde *filename* ile bir at işareti (**\@**). BSCMAKE uzantı varsaymaz. Belirtebileceğiniz ek *sbrfiles* sonra komut satırında *filename*. Komut dosyası komut satırında belirttiğiniz gibi aynı sırada BSCMAKE girişi içeren bir metin dosyasıdır. Komut satırı bağımsız değişkenleri, bir veya daha fazla boşluk, sekme veya yeni satır karakterleri ile ayırın.
+Yalnızca bir komut dosyasına izin verilir. *Dosya adında* bir yol belirtebilirsiniz. *Dosya* adından önce bir at işareti ( **\@** ). BSCMAKE bir uzantı kabul etmez. *Dosya adından* sonra komut satırında ek *sbrfiles* belirtebilirsiniz. Komut dosyası, BSCMAKE girdisini komut satırında belirttiğiniz şekilde içeren bir metin dosyasıdır. Komut satırı bağımsız değişkenlerini bir veya daha fazla boşluk, sekme veya yeni satır karakteri ile ayırın.
 
-BSCMAKE komut dosyası kullanarak aşağıdaki komutu çağırır:
+Aşağıdaki komut, bir komut dosyası kullanarak BSCMAKE 'i çağırır:
 
 ```
 BSCMAKE @prog1.txt
@@ -48,4 +49,4 @@ file1.sbr file2.sbr file3.sbr file4.sbr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[BSCMAKE Başvurusu](bscmake-reference.md)
+[BSCMAKE başvurusu](bscmake-reference.md)

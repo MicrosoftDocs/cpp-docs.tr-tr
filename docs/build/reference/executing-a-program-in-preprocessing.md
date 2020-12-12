@@ -1,20 +1,21 @@
 ---
+description: 'Daha fazla bilgi edinin: ön Işleme içinde program yürütme'
 title: Programı Önişlemde Yürütme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - program execution [C++]
 ms.assetid: 5ecf123a-20e5-40cd-b8d8-dd5a9fdd4b24
-ms.openlocfilehash: 564e4aebb3a0502f18550fb9d323e8b30f1303f6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 72743fe1b75e170ce1aa7ea04dd5a0c70440de59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62271599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192375"
 ---
 # <a name="executing-a-program-in-preprocessing"></a>Programı Önişlemde Yürütme
 
-Ön işleme sırasında bir komutunun çıkış kodu kullanmak için köşeli ayraç ([]) içindeki tüm bağımsız değişkenleri ile komutu belirtin. Komut yürütülmeden önce tüm makrolar genişletilir. NMAKE komut belirtimi bir ifadede, ön işleme denetlemek için kullanılabilir komut çıkış kodu ile yerini alır.
+Ön işleme sırasında bir komutun çıkış kodunu kullanmak için, parantez ([]) içinde herhangi bir bağımsız değişkenle komutunu belirtin. Komut yürütülmeden önce herhangi bir makro genişletilir. NMAKE, komut belirtiminin, ön işleme denetlemek için bir ifadede kullanılabilecek komut 'nin çıkış koduyla değiştirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme Görevleri Dosyası Ön İşlemlerindeki İfadeler](expressions-in-makefile-preprocessing.md)
+[Derleme görevleri dosyası ön Işleme içindeki ifadeler](expressions-in-makefile-preprocessing.md)
