@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: AgileActivationFactory sınıfı'
 title: AgileActivationFactory Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::AgileActivationFactory
 ms.assetid: fab98f32-bb93-4c0f-badb-49fbddb194b0
-ms.openlocfilehash: d4f437f87861293cb6048ed6acb05428c466b3f3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 598821f3d84abd8e8ece4666a95db1d75d902125
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214207"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204634"
 ---
 # <a name="agileactivationfactory-class"></a>AgileActivationFactory Sınıfı
 
 [FtmBase](ftmbase-class.md)uygulayan bir apartman dostu etkinleştirme fabrikası temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <
@@ -42,5 +43,5 @@ class AgileActivationFactory :
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)<br/>
-[ActivationFactory Sınıfı](activationfactory-class.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)<br/>
+[ActivationFactory sınıfı](activationfactory-class.md)

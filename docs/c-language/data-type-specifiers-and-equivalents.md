@@ -1,5 +1,6 @@
 ---
-title: Veri Türü Tanımlayıcıları ve Eşdeğerleri
+title: Veri türü tanımlayıcıları ve eşdeğerleri
+description: Microsoft Visual C veri türü belirticileri ve bunların eşdeğerleri açıklanmaktadır.
 ms.date: 11/04/2016
 helpviewer_keywords:
 - type specifiers [C++], list
@@ -11,19 +12,18 @@ helpviewer_keywords:
 - data types [C++], specifiers
 - simple types, names
 - type names [C++], simple
-ms.assetid: 0d4b515a-4f68-4786-83cf-a5d43c7cb6f3
-ms.openlocfilehash: cc8ba746bea7f6ea885beb625de414d83367b53f
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 6a1231bc19617dddf1cc01d4c5e7db2863f1055f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207052"
 ---
-# <a name="data-type-specifiers-and-equivalents"></a>Veri Türü Tanımlayıcıları ve Eşdeğerleri
+# <a name="data-type-specifiers-and-equivalents"></a>Veri türü tanımlayıcıları ve eşdeğerleri
 
-Bu kitap genellikle, uzun formlar yerine aşağıdaki tabloda listelenen tür Belirticilerinin formlarını kullanır ve **`char`** türün varsayılan olarak imzalandığını varsayar. Bu nedenle, bu kitabın tamamında **`char`** ile eşdeğerdir **`signed char`** .
+Bu belge genel olarak, uzun formlar yerine aşağıdaki tabloda listelenen tür Belirticilerinin formlarını kullanır. Ayrıca, **`char`** türün varsayılan olarak imzalandığını varsayar. Bu belge boyunca **`char`** ile eşdeğerdir **`signed char`** .
 
-## <a name="type-specifiers-and-equivalents"></a>Tür Tanımlayıcıları ve Eşdeğerleri
+## <a name="type-specifiers-and-equivalents"></a>Tür tanımlayıcıları ve eşdeğerleri
 
 | Tür Tanımlayıcısı | Eşdeğerleri |
 |--|--|
@@ -42,7 +42,7 @@ Bu kitap genellikle, uzun formlar yerine aşağıdaki tabloda listelenen tür Be
 
 <sup>2</sup> 32 bit ve 64 bit işletim sistemlerinde, Microsoft C derleyicisi **`long double`** türü ile eşlenir **`double`** .
 
-**Microsoft'a Özgü**
+**Microsoft 'a özgü**
 
 **`/J`** Varsayılan türünü olarak değiştirmek için derleyici seçeneğini belirtebilirsiniz **`char`** **`signed char`** **`unsigned char`** . Bu seçenek etkin olduğunda, **`char`** ile aynı anlamına gelir **`unsigned char`** ve **`signed`** imzalı bir karakter değeri bildirmek için anahtar sözcüğünü kullanmanız gerekir. Bir **`char`** değer açıkça bildirilirse **`signed`** , **`/J`** seçenek bunu etkilemez ve bir türe iletildiklerinde olduğunda değer, işaret genişletilir **`int`** . Tür **`char`** iletildiklerinde olduğunda tür sıfır genişletilir **`int`** .
 

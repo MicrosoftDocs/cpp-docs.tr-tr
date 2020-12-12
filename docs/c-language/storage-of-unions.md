@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: birleşimler depolaması'
 title: Birleşimler Deposu
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - union keyword [C], storage
 - union keyword [C]
 ms.assetid: b33d246a-8d20-41c4-89b2-ab05f1428792
-ms.openlocfilehash: 64e8b5184eeccd4de6d196e40ec464807bec93e7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bd95f1c1955049299192d0b4dbd333c86aecce25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205284"
 ---
 # <a name="storage-of-unions"></a>Birleşimler Deposu
 
-Birleşim değişkeniyle ilişkili depolama alanı, birleşimin en büyük üyesi için gereken depolama alanı. Daha küçük bir üye depolandığında, UNION değişkeni kullanılmamış bellek alanı içerebilir. Tüm üyeler aynı bellek alanında depolanır ve aynı adresle başlatılır. Her bir değer farklı bir üyeye atandığında depolanan değerin üzerine yazılır. Örnek:
+Birleşim değişkeniyle ilişkili depolama alanı, birleşimin en büyük üyesi için gereken depolama alanı. Daha küçük bir üye depolandığında, UNION değişkeni kullanılmamış bellek alanı içerebilir. Tüm üyeler aynı bellek alanında depolanır ve aynı adresle başlatılır. Her bir değer farklı bir üyeye atandığında depolanan değerin üzerine yazılır. Örneğin:
 
 ```
 union         /* Defines a union named x */

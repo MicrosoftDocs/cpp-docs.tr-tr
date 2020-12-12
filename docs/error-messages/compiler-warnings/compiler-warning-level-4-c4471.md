@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4471'
 title: Derleyici Uyarısı (düzey 4) C4471
 ms.date: 04/24/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4471
 ms.assetid: ccfd8bd5-bc1b-4be7-a6ea-0e3a7add6607
-ms.openlocfilehash: 5b8c3ef419a4c6eaf9a674827cd5545a1f1b2bfe
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: cef492bf8aab33f46b3f590a13ffa5462a7ca41d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203503"
 ---
 # <a name="compiler-warning-level-4-c4471"></a>Derleyici Uyarısı (düzey 4) C4471
 
@@ -19,7 +20,7 @@ ms.locfileid: "90685508"
 
 Temel alınan tür için tanımlayıcı olmadan kapsamlı olmayan numaralandırmanın ileri bir bildirimi bulundu. Varsayılan olarak Visual C++, **`int`** bir numaralandırma için temeldeki tür olarak varsayılır. Bu, sabit listesi tanımında farklı bir tür kullanılırsa, örneğin, farklı bir açık tür belirtilmişse veya farklı bir tür bir başlatıcı tarafından örtük olarak ayarlandıysa soruna neden olabilir. Ayrıca taşınabilirlik sorunlarınız da olabilir; diğer derleyiciler, **`int`** numaralandırmanın temel alınan türüdür.
 
-Bu uyarı varsayılan olarak kapalıdır; komut satırında etkinleştirmek için/Duvarveya/w*N*4471 kullanabilirsiniz veya kaynak dosyanızda #pragma [Uyarı](../../preprocessor/warning.md) kullanabilirsiniz.
+Bu uyarı varsayılan olarak kapalıdır; komut satırında etkinleştirmek için/Duvarveya/w *N* 4471 kullanabilirsiniz veya kaynak dosyanızda #pragma [Uyarı](../../preprocessor/warning.md) kullanabilirsiniz.
 
 ## <a name="examples"></a>Örnekler
 

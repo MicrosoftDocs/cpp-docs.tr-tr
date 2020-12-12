@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: User-Defined Işleçleri (C++/CLı)'
 title: Kullanıcı Tanımlı İşleçler (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined operators under /clr
 ms.assetid: 42f93b4a-6de4-4e34-b07b-5a62ac014f2c
-ms.openlocfilehash: ee5aa122983a315e55884c643a9b7894f075e260
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: e94a4d28517fc253fb8284a604b01a5f9d76de22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204231"
 ---
 # <a name="user-defined-operators-ccli"></a>Kullanıcı Tanımlı İşleçler (C++/CLI)
 

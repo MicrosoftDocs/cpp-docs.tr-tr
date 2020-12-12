@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: toplamalar'
 title: Toplamlar (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - aggregate objects [C++], aggregates attribute
 - aggregates [C++]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
-ms.openlocfilehash: e745cae5710bbf8df1314ec20a4a0b72545c0591
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c108b18f957047a6a5dbb33538a23de6c3469783
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205479"
 ---
 # <a name="aggregates"></a>toplamlar
 
 Nesnenin CLSID tarafından belirtilen nesneyi topladığını gösterir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ aggregates(clsid, variable_name) ]
@@ -82,7 +83,7 @@ struct CObject : IObject
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
-|**Tekrarlanabilir**|Yes|
+|**Yinelenebilir**|Evet|
 |**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass` , `progid` , veya `vi_progid` .|
 |**Geçersiz öznitelikler**|Yok|
 

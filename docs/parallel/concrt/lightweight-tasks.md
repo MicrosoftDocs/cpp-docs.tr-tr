@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi edinin: hafif görevler'
 title: Basit Görevler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - lightweight tasks
 ms.assetid: b6dcfc7a-9fa9-4144-96a6-2845ea272017
-ms.openlocfilehash: be417052ffab19c1bc2d2ba6f35094f98e315812
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 328d556eacb2e33bdf3077b722defa81669a525c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205570"
 ---
 # <a name="lightweight-tasks"></a>Basit Görevler
 
-Bu belgede Eşzamanlılık Çalışma Zamanı basit görevlerinin rolü açıklanmaktadır. *Hafif görev* , doğrudan bir `concurrency::Scheduler` veya `concurrency::ScheduleGroup` nesnesinden zamanladığınız bir görevdir. Hafif bir görev, Windows API [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) işlevine sağladığınız işleve benzer. Bu nedenle, mevcut kodu Eşzamanlılık Çalışma Zamanı zamanlama işlevini kullanacak şekilde uyarlıyorsanız, hafif görevler faydalıdır. Eşzamanlılık Çalışma Zamanı, zaman uyumsuz aracıları zamanlamak ve zaman uyumsuz ileti blokları arasında ileti göndermek için basit görevleri kullanır.
+Bu belgede Eşzamanlılık Çalışma Zamanı basit görevlerinin rolü açıklanmaktadır. *Hafif görev* , doğrudan bir veya nesnesinden zamanladığınız bir görevdir `concurrency::Scheduler` `concurrency::ScheduleGroup` . Hafif bir görev, Windows API [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) işlevine sağladığınız işleve benzer. Bu nedenle, mevcut kodu Eşzamanlılık Çalışma Zamanı zamanlama işlevini kullanacak şekilde uyarlıyorsanız, hafif görevler faydalıdır. Eşzamanlılık Çalışma Zamanı, zaman uyumsuz aracıları zamanlamak ve zaman uyumsuz ileti blokları arasında ileti göndermek için basit görevleri kullanır.
 
 > [!TIP]
 > Eşzamanlılık Çalışma Zamanı varsayılan bir Zamanlayıcı sağlar ve bu nedenle uygulamanızda bir tane oluşturmanız gerekmez. Görev Zamanlayıcı uygulamalarınızın performansını hassas bir şekilde ayarlamanıza yardımcı olduğundan, Eşzamanlılık Çalışma Zamanı yeni başladıysanız [paralel Desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) ile başlamanız önerilir.
@@ -31,4 +32,4 @@ Var olan kodun hafif bir görevi kullanmak üzere nasıl uyarlanacağını göst
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Görev Zamanlayıcı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
-[İzlenecek Yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
+[İzlenecek yol: mevcut kodu hafif görevleri kullanacak şekilde uyarlamak](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)

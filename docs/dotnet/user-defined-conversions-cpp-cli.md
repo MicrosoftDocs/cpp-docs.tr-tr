@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: User-Defined dönüşümler (C++/CLı)'
 title: Kullanıcı Tanımlı Dönüşümler (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined conversions [C++]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
-ms.openlocfilehash: bb7a30382bc586f4d324d47ef6e6757fac83f5ae
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 0b07ab3201bfd379a17922f020486d0b17a59558
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204270"
 ---
 # <a name="user-defined-conversions-ccli"></a>Kullanıcı Tanımlı Dönüşümler (C++/CLI)
 
@@ -69,7 +70,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 in N::N
@@ -80,7 +81,7 @@ in N::N
 
 Convert-from işleçleri, başka bir sınıfın bir nesnesinden tanımlandığı sınıfın bir nesnesini oluşturur.
 
-Standart C++ , Convert-from işleçlerini desteklemez; Standart C++ bu amaçla oluşturucular kullanır. Ancak, CLR türleri kullanılırken, Visual C++ , Convert-from işleçlerini çağırmak için sözdizimsel destek sağlar.
+Standart C++, Convert-from işleçlerini desteklemez; Standart C++ bu amaçla oluşturucular kullanır. Ancak, CLR türlerini kullanırken, Visual C++ Convert-from işleçlerini çağırmak için sözdizimsel destek sağlayın.
 
 Diğer CLS uyumlu dillerle birlikte çalışmak için, belirli bir sınıf için her kullanıcı tanımlı birli oluşturucuyu karşılık gelen bir Convert-from işleci ile kaydırmak isteyebilirsiniz.
 
@@ -133,7 +134,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 in operator
@@ -168,7 +169,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 10
@@ -197,7 +198,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 10.3
@@ -232,7 +233,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 True
@@ -267,7 +268,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 5
@@ -310,7 +311,7 @@ int main() {
 }
 ```
 
-**Output**
+**Çıktı**
 
 ```Output
 13

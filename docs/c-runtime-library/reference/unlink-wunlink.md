@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _unlink _wunlink'
 title: _unlink, _wunlink
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - files [C++], removing
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
-ms.openlocfilehash: af6fd6c7065529b43f5e275ce1d745d0031ddfb7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 742df45211b6e19314a3b3f89880d7f2cd83fb2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909287"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205154"
 ---
 # <a name="_unlink-_wunlink"></a>_unlink, _wunlink
 
@@ -67,13 +68,13 @@ Kaldırılacak dosyanın adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarılıysa 0 döndürür. Aksi takdirde, işlev-1 döndürür ve **errno** değerini **EACCES**olarak ayarlar. Bu, yolun bir salt okunurdur dosya ya da dizin belirttiği **ya da bir**dosyanın veya yolun bulunamadığı anlamına gelir.
+Bu işlevlerin her biri, başarılıysa 0 döndürür. Aksi takdirde, işlev-1 döndürür ve **errno** değerini **EACCES** olarak ayarlar. Bu, yolun bir salt okunurdur dosya ya da dizin belirttiği **ya da bir** dosyanın veya yolun bulunamadığı anlamına gelir.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Unlink** işlevi *filename*tarafından belirtilen dosyayı siler. **_wunlink** , **_unlink**geniş karakterli bir sürümüdür; _wunlink *dosya adı* bağımsız **_wunlink** değişkeni, geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
+**_Unlink** işlevi *filename* tarafından belirtilen dosyayı siler. **_wunlink** , **_unlink** geniş karakterli bir sürümüdür; _wunlink *dosya adı* bağımsız  değişkeni, geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -87,14 +88,14 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_unlink**|\<GÇ. h> ve \<stdio. h>|
-|**_wunlink**|\<GÇ. h> veya \<wchar. h>|
+|**_unlink**|\<io.h> ve \<stdio.h>|
+|**_wunlink**|\<io.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="code-example"></a>Kod Örneği
 
-Bu program CRT_UNLINK silmek için _unlink kullanır. TXT.
+Bu program CRT_UNLINK.TXT silmek için _unlink kullanır.
 
 ```C
 // crt_unlink.c
@@ -110,7 +111,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_unlinktxt"></a>Giriş: crt_unlink. txt
+### <a name="input-crt_unlinktxt"></a>Giriş: crt_unlink.txt
 
 ```Input
 This file will be deleted.
@@ -124,6 +125,6 @@ Deleted 'CRT_UNLINK.TXT'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_close](close.md)<br/>
-[remove, _wremove](remove-wremove.md)<br/>
+[kaldır, _wremove](remove-wremove.md)<br/>

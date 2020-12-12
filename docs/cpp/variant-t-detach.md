@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _variant_t::D etach'
 title: _variant_t::Detach
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,20 +10,20 @@ helpviewer_keywords:
 - Detach method [C++]
 - VARIANT object
 ms.assetid: c348ac08-62cf-4657-a16f-974a79c12158
-ms.openlocfilehash: 9737db6b77483fa55e1dad90b9464752cd8537a5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 502903f73f9b149a5f85a6eb1be44687aab20664
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204699"
 ---
 # <a name="_variant_tdetach"></a>_variant_t::Detach
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bu `_variant_t` nesnesinden kapsüllenmiş `VARIANT` nesnesini ayırır.
+`VARIANT`Bu nesneden kapsüllenmiş nesneyi ayırır `_variant_t` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 VARIANT Detach( );
@@ -30,14 +31,14 @@ VARIANT Detach( );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Encapsulated `VARIANT`.
+Encapsulated `VARIANT` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsüllenmiş `VARIANT`ayıklar ve döndürür, sonra bu `_variant_t` nesnesini yok etmeden temizler. Bu üye işlevi, `VARIANT` kapsülden kaldırır ve bu `_variant_t` nesnesinin `VARTYPE` VT_EMPTY olarak ayarlar. Burada, [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear) işlevini çağırarak döndürülen `VARIANT` serbest bırakmanız gerekir.
+Kapsülleri ayıklar ve döndürür `VARIANT` , sonra bu `_variant_t` nesneyi yok etmeden temizler. Bu üye işlevi, `VARIANT` ' ın kapsüllemesini kaldırır ve `VARTYPE` Bu `_variant_t` nesnenin öğesini VT_EMPTY olarak ayarlar. Bu, `VARIANT` [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear) işlevini çağırarak döndürülen öğesini serbest bırakmanız gerekir.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_variant_t Sınıfı](../cpp/variant-t-class.md)
+[_variant_t sınıfı](../cpp/variant-t-class.md)

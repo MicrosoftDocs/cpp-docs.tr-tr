@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: menüler (MFC)'
 title: Menüler (MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - menus [MFC], manipulating during execution
 - menus [MFC]
 ms.assetid: 6a181495-47a9-4356-83fc-b89152d6cb4c
-ms.openlocfilehash: 4a9a20676c91dab0d1708293e004513bb648d178
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d1cdc91cae8ae0ddfc8c7e9853d9f920511ffb05
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626199"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203412"
 ---
 # <a name="menus-mfc"></a>Menüler (MFC)
 
@@ -28,7 +29,7 @@ Visual C++ Ayrıca programınızın menü kaynaklarını oluşturmak ve düzenle
 
 - [Program yürütme sırasında menü nesnelerini düzenleme](manipulating-menus-during-program-execution.md)
 
-- [Kullanıcı arabirimi nesnelerini güncelleştirme](how-to-update-user-interface-objects.md)
+- [User-Interface nesnelerini güncelleştirme](how-to-update-user-interface-objects.md)
 
 - [Örnek](menu-sample-list.md)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MBCS programlama Ipuçları'
 title: MBCS Programlama İpuçları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,31 +8,31 @@ helpviewer_keywords:
 - MBCS [C++], programming
 - multibyte characters [C++]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
-ms.openlocfilehash: 420e376d3a66c8f8115732692089f4254847bc0d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76890f3ecbee6938433bcd2d3fa99023d69e039c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207195"
 ---
 # <a name="mbcs-programming-tips"></a>MBCS Programlama İpuçları
 
-Yeni geliştirmede, son kullanıcının görebileceği tüm dizelerde karakterin Unicode kodlamasını kullanmanız gerekir. MBCS, Unicode tarafından değiştirilen eski bir teknolojidir. Bu bölüm, Unicode'a dönüştürmenin pratik olmadığı yerde ve MBCS kullanan mevcut programları koruması gereken geliştiriciler için ipuçları sağlar. Tavsiye MFC uygulamaları ve MFC olmadan yazılan uygulamalar için geçerlidir. Konular şunlardır:
+Yeni geliştirmede, son kullanıcıların görebilen tüm dizeler için Unicode karakter kodlaması kullanmanız gerekir. MBCS, Unicode ile değiştirilen eski bir teknolojidir. Bu bölüm, MBCS kullanan ve Unicode 'a dönüştürmek pratik olmayan mevcut programları sürdürmek zorunda olan geliştiriciler için ipuçları sağlar. Bu öneri MFC uygulamaları ve MFC olmadan yazılan uygulamalar için geçerlidir. Konu başlıkları şunlardır:
 
-- [Genel MBCS Programlama Önerileri](../text/general-mbcs-programming-advice.md)
+- [Genel MBCS programlama önerileri](../text/general-mbcs-programming-advice.md)
 
-- [İşaretçileri Artırma ve Azaltma](../text/incrementing-and-decrementing-pointers.md)
+- [Işaretçileri artırma ve azaltma](../text/incrementing-and-decrementing-pointers.md)
 
-- [Bayt Endeksleri](../text/byte-indices.md)
+- [Bayt dizinleri](../text/byte-indices.md)
 
-- [Dizedeki Son Karakter](../text/last-character-in-a-string.md)
+- [Dizedeki son karakter](../text/last-character-in-a-string.md)
 
-- [Karakter Atama](../text/character-assignment.md)
+- [Karakter atama](../text/character-assignment.md)
 
-- [Karakter Karşılaştırma](../text/character-comparison.md)
+- [Karakter karşılaştırması](../text/character-comparison.md)
 
-- [Arabellek Taşması](../text/buffer-overflow.md)
+- [Arabellek taşması](../text/buffer-overflow.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çok Baytlı Karakter Kümesi Desteği (MBCS'ler)](../text/support-for-multibyte-character-sets-mbcss.md)
+[Çok baytlı karakter kümesi desteği (MBCSs)](../text/support-for-multibyte-character-sets-mbcss.md)

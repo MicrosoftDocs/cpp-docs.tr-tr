@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: üye Access Control (C++)'
 title: Üye Erişim Denetimi (C++)
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - member access [C++]
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-ms.openlocfilehash: de775c511701cd0b7cf923f47e33723b30a966e1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2cce7cb98e76098f3c20a6c2404f91ccf40db1cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206883"
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 
@@ -112,7 +113,7 @@ int main()
 }
 ```
 
-İçinde `DerivedClass1` , üye işlevi `PublicFunc` ortak bir üyedir ve bir `ProtectedFunc` `BaseClass` ortak temel sınıf olduğundan, korumalı bir üyedir. `PrivateFunc`özeldir `BaseClass` ve türetilmiş sınıfların hiçbirine erişemez.
+İçinde `DerivedClass1` , üye işlevi `PublicFunc` ortak bir üyedir ve bir `ProtectedFunc` `BaseClass` ortak temel sınıf olduğundan, korumalı bir üyedir. `PrivateFunc` özeldir `BaseClass` ve türetilmiş sınıfların hiçbirine erişemez.
 
 İçinde `DerivedClass2` , ve özel `PublicFunc` `ProtectedFunc` bir temel sınıf olduğundan, işlevleri ve özel üye olarak değerlendirilir `BaseClass` . Ayrıca, `PrivateFunc` için özeldir `BaseClass` ve türetilmiş sınıfların hiçbirine erişemez.
 
@@ -195,7 +196,7 @@ Türetilmiş bir sınıfın (`T`) üyeleri ve arkadaşları, bir `T` işaretçis
 
 ## <a name="access-to-virtual-functions"></a>Sanal işlevlere erişim
 
-[Sanal](../cpp/virtual-cpp.md) işlevlere uygulanan erişim denetimi, işlev çağrısını yapmak için kullanılan türe göre belirlenir. İşlev bildirimlerinin geçersiz kılınması, belirli bir türe yönelik erişim denetimini etkilemez. Örnek:
+[Sanal](../cpp/virtual-cpp.md) işlevlere uygulanan erişim denetimi, işlev çağrısını yapmak için kullanılan türe göre belirlenir. İşlev bildirimlerinin geçersiz kılınması, belirli bir türe yönelik erişim denetimini etkilemez. Örneğin:
 
 ```cpp
 // access_to_virtual_functions.cpp

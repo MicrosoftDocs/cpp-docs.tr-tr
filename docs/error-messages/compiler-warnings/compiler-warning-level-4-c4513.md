@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4513'
 title: Derleyici Uyarısı (düzey 4) C4513
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4513
 ms.assetid: 6877334a-f30a-4184-9483-dac3348737a4
-ms.openlocfilehash: f5f25465beb04c6f91d290d4c119d07d75dd8f54
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d9a6a0377937b3943e1c89fc41fe33abc1f6e9ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203451"
 ---
 # <a name="compiler-warning-level-4-c4513"></a>Derleyici Uyarısı (düzey 4) C4513
 

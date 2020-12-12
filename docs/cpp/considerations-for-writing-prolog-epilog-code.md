@@ -1,5 +1,6 @@
 ---
-title: Prolog-Epilog Kodu Yazmak İçin Dikkat Edilecek Noktalar
+description: 'Hakkında daha fazla bilgi: giriş/bitiş kodu yazma konuları'
+title: Prolog-Epilog kodu yazma konuları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - stack frame layout
@@ -8,20 +9,20 @@ helpviewer_keywords:
 - __LOCAL_SIZE constant
 - stack, stack frame layout
 ms.assetid: c7814de2-bb5c-4f5f-96d0-bcfd2ad3b182
-ms.openlocfilehash: cda6a6c82efcf30a916aced121024095d7ce8138
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6deb6e9120c83992a7fe2529d0c9366b8e191056
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81337106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204777"
 ---
 # <a name="considerations-for-writing-prologepilog-code"></a>Giriş ve Bitiş Kodu Yazmada Dikkat Edilmesi Gerekenler
 
 **Microsoft'a Özgü**
 
-Kendi prolog ve epilog kod dizileri yazmadan önce, yığın çerçeve nasıl ortaya konulmuştur anlamak önemlidir. Sembolün nasıl kullanılacağını `__LOCAL_SIZE` bilmek de yararlıdır.
+Kendi giriş ve bitiş kodu dizilerini yazmadan önce, yığın çerçevesinin nasıl düzenlendiğini anlamak önemlidir. Ayrıca, simgenin nasıl kullanılacağını öğrenmek de yararlı olur `__LOCAL_SIZE` .
 
-## <a name="stack-frame-layout"></a><a name="_pluslang_c.2b2b_.stack_frame_layout"></a>Yığın Çerçeve Düzeni
+## <a name="stack-frame-layout"></a><a name="_pluslang_c.2b2b_.stack_frame_layout"></a> Yığın çerçevesi düzeni
 
 Bu örnekte, 32 bit işlevinde görünebilecek standart giriş kodu gösterilmektedir:
 
@@ -41,20 +42,20 @@ pop         ebp           ; Restore ebp
 ret                       ; Return from function
 ```
 
-Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yerel alan . `ebp-4` Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.
+Yığın her zaman aşağı doğru (yüksek bellek adreslerinden düşük olanlara) büyür. Taban işaretçisi (`ebp`) `ebp`'nin gönderilen değerine işaret eder. Yereller alanı tarihinde başlar `ebp-4` . Yerel değişkenlere erişmek için uygun değeri `ebp`'den çıkararak `ebp`'den bir uzaklık hesaplayın.
 
-## <a name="__local_size"></a><a name="_pluslang___local_size"></a>__LOCAL_SIZE
+## <a name="__local_size"></a><a name="_pluslang___local_size"></a> __LOCAL_SIZE
 
-Derleyici, `__LOCAL_SIZE`işlev prolog kodunun satır satır ara derleyici bloğunda kullanılmak üzere bir sembol sağlar. Bu sembol, özel prolog kodunda yığın çerçevesindeki yerel değişkenler için alan ayırmak için kullanılır.
+Derleyici, `__LOCAL_SIZE` işlev giriş kodunun satır içi assembler bloğunda kullanılmak üzere bir sembol sağlar. Bu simge, özel giriş kodundaki yığın çerçevesindeki yerel değişkenler için alan ayırmak için kullanılır.
 
-`__LOCAL_SIZE`Derleyici. Değeri, kullanıcı tarafından tanımlanan tüm yerel değişkenlerin ve derleyici tarafından oluşturulan geçici değişkenlerin toplam bayt sayısıdır. `__LOCAL_SIZE`sadece ani bir operand olarak kullanılabilir; bir ifadede kullanılamaz. Bu sembolün değerini değiştirmemeniz veya yeniden tanımlamamalısınız. Örneğin:
+Derleyici değerini belirler `__LOCAL_SIZE` . Değeri, Kullanıcı tanımlı tüm yerel değişkenlerin ve derleyicinin ürettiği geçici değişkenlerin toplam bayt sayısıdır. `__LOCAL_SIZE` yalnızca bir anında işlenen olarak kullanılabilir; bir ifadede kullanılamaz. Bu sembolün değerini değiştirmemelidir veya yeniden tanımlamanız gerekir. Örneğin:
 
 ```
 mov        eax, __LOCAL_SIZE           ;Immediate operand--Okay
 mov        eax, [ebp - __LOCAL_SIZE]   ;Error
 ```
 
-Özel prolog ve epilog dizileri içeren çıplak bir `__LOCAL_SIZE` işlevaşağıdaki örnek prolog dizisinde sembolü kullanır:
+Özel giriş ve bitiş dizileri içeren bir çıplak işlevin aşağıdaki örneği, `__LOCAL_SIZE` giriş sırasındaki sembolü kullanır:
 
 ```cpp
 // the__local_size_symbol.cpp
@@ -78,8 +79,8 @@ __declspec ( naked ) int main() {
 }
 ```
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıplak İşlev Çağrıları](../cpp/naked-function-calls.md)
+[Naked Işlev çağrıları](../cpp/naked-function-calls.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: bir veri ardışık düzeninde transformatör kullanma'
 title: 'Nasıl yapılır: Veri Ardışık Düzeninde transformer Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - data pipelines, using transformer [Concurrency Runtime]
 - using transformer in data pipelines [Concurrency Runtime]
 ms.assetid: ca49cb3f-4dab-4b09-a9c9-d3a109ae4c29
-ms.openlocfilehash: 4eb490ecf51abea324f20395279bff2d74b7af77
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 97b0af16a3ce89b940952117bb8639d281363a23
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215861"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205622"
 ---
 # <a name="how-to-use-transformer-in-a-data-pipeline"></a>Nasıl yapılır: Veri Ardışık Düzeninde transformer Kullanma
 
-Bu konu, bir veri işlem hattında [concurrency:: Transformer](../../parallel/concrt/reference/transformer-class.md) sınıfının nasıl kullanılacağını gösteren temel bir örnek içerir. Görüntü işleme gerçekleştirmek için veri işlem hattı kullanan daha tam bir örnek için bkz. [Izlenecek yol: görüntü Işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+Bu konu, bir veri işlem hattında [concurrency:: Transformer](../../parallel/concrt/reference/transformer-class.md) sınıfının nasıl kullanılacağını gösteren temel bir örnek içerir. Görüntü işleme gerçekleştirmek için veri işlem hattı kullanan daha kapsamlı bir örnek için bkz. [Izlenecek yol: Image-Processing ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 *Veri ardışık düzen* oluşturma, eşzamanlı programlamada ortak bir modeldir. Bir veri işlem hattı, her aşamanın iş yaptığı ve sonra o çalışmanın sonucunu sonraki aşamaya ileten bir dizi aşamadan oluşur. `transformer`Bir giriş değeri aldığından, bu değerde iş gerçekleştirdiğinden ve sonra başka bir bileşenin kullanması için bir sonuç üreten veri işlem hatlarında bir anahtar bileşen sınıfı.
 
@@ -58,4 +59,4 @@ Bir veri işlem hattının, türü giriş değerinden farklı olan bir değeri �
 
 [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[İzlenecek yol: görüntü Işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
+[İzlenecek yol: Image-Processing ağ oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)

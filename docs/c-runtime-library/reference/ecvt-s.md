@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ecvt_s'
 title: _ecvt_s
 ms.date: 4/2/2020
 api_name:
@@ -30,18 +31,18 @@ helpviewer_keywords:
 - numbers, converting
 - converting double numbers
 ms.assetid: d52fb0a6-cb91-423f-80b3-952a8955d914
-ms.openlocfilehash: e76ebd065d323a9ae501ce6a7a5790389c7d5dad
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: abda39ce5c33a5f6b6cca0757411e16c4171cd97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234217"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206948"
 ---
 # <a name="_ecvt_s"></a>_ecvt_s
 
 Bir **`double`** sayıyı dizeye dönüştürür. Bu, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_ecvt](ecvt.md) bir sürümüdür.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t _ecvt_s(
@@ -86,7 +87,7 @@ Dönüştürülen sayının işareti.
 
 Başarılıysa sıfır. Hata varsa dönüş değeri bir hata kodudur. Hata kodları errno. h içinde tanımlanır. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Aşağıdaki tabloda listelendiği gibi geçersiz bir parametre söz konusu olduğunda, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+Aşağıdaki tabloda listelendiği gibi geçersiz bir parametre söz konusu olduğunda, bu işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL** döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
@@ -99,11 +100,11 @@ Aşağıdaki tabloda listelendiği gibi geçersiz bir parametre söz konusu oldu
 
 ## <a name="security-issues"></a>Güvenlik Sorunları
 
-*arabellek* geçerli belleğe işaret etmezse ve **null**değilse **_ecvt_s** bir erişim ihlali oluşturabilir.
+*arabellek* geçerli belleğe işaret etmezse ve **null** değilse **_ecvt_s** bir erişim ihlali oluşturabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Ecvt_s** işlevi bir kayan nokta numarasını bir karakter dizesine dönüştürür. *_Value* parametresi dönüştürülecek kayan noktalı sayıdır. Bu işlev, *_Value* *sayı* rakamlarını bir dize olarak depolar ve null karakteri (' \ 0 ') ekler. *_Value* basamak sayısı *_Count*aşarsa, düşük sıra basamağı yuvarlanır. *Count* basamaktan daha azı varsa, dize sıfırlar ile doldurulur.
+**_Ecvt_s** işlevi bir kayan nokta numarasını bir karakter dizesine dönüştürür. *_Value* parametresi dönüştürülecek kayan noktalı sayıdır. Bu işlev, *_Value* *sayı* rakamlarını bir dize olarak depolar ve null karakteri (' \ 0 ') ekler. *_Value* basamak sayısı *_Count* aşarsa, düşük sıra basamağı yuvarlanır. *Count* basamaktan daha azı varsa, dize sıfırlar ile doldurulur.
 
 Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *_Value* işareti, çağrıdan sonra *_Dec* ve *_Sign* elde edilebilir. *_Dec* parametresi, dizenin başlangıcına göre ondalık noktanın konumunu sağlayan bir tamsayı değerine işaret eder. 0 veya negatif bir tamsayı değeri, ondalık noktanın ilk basamağın solunda olduğunu gösterir. *_Sign* parametresi, dönüştürülmüş sayının işaretini gösteren bir tamsayıyı işaret eder. Tamsayı değeri 0 ise, sayı pozitif olur. Aksi takdirde, sayı negatif olur.
 

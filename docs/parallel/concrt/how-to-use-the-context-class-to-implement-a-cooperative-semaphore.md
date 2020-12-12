@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: bağlam sınıfını kullanarak bir Cooperatıcı semaforu uygulama'
 title: 'Nasıl yapılır: Bağlam Sınıfını İşbirlikçi Semafor Uygulamak için Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - cooperative semaphore implementing
 - context class
 ms.assetid: 22f4b9c0-ca22-4a68-90ba-39e99ea76696
-ms.openlocfilehash: 77cf33288761c75d056649ebe27f9d74c6fa62dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d80d364a9dcd27ee7012da5f710d38208c7a9e1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230395"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205661"
 ---
 # <a name="how-to-use-the-context-class-to-implement-a-cooperative-semaphore"></a>Nasıl yapılır: Bağlam Sınıfını İşbirlikçi Semafor Uygulamak için Kullanma
 

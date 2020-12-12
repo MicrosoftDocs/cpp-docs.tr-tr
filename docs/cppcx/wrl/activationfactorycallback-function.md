@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ActivationFactoryCallback Işlevi'
 title: ActivationFactoryCallback İşlevi
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ActivationFactoryCallback function
 ms.assetid: dd40c79b-1273-4f2a-8c24-ae9926fb4fd9
-ms.openlocfilehash: 0be4bebcc561cdf1df3f2502c8cc1927bdc65564
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9398b3f681e32c7a73b46de549ce7c41a3af6196
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214220"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204621"
 ---
 # <a name="activationfactorycallback-function"></a>ActivationFactoryCallback İşlevi
 
@@ -33,7 +34,7 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 Çalışma zamanı sınıf adını belirten bir dizeye işleyin.
 
 *ppFactory*<br/>
-Bu işlem tamamlandığında, *activationId*parametresine karşılık gelen bir etkinleştirme fabrikası.
+Bu işlem tamamlandığında, *activationId* parametresine karşılık gelen bir etkinleştirme fabrikası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -53,4 +54,4 @@ Windows Çalışma Zamanı, bu geri çağırma işlevini, çalışma zamanı sı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

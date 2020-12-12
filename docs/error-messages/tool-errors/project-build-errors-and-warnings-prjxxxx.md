@@ -1,17 +1,18 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: proje derleme hataları ve uyarıları (PRJxxxx)'
 title: Proje derleme hataları ve uyarıları
 ms.date: 04/16/2019
 ms.assetid: 79d223ed-986a-4536-8299-aec8356b449c
-ms.openlocfilehash: e735214912b737a5fdb9ddf8a8ed9fe37e285d12
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: c5befd87c0b4b4eecec279d1f8f8ec9f5e342e78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206571"
 ---
 # <a name="project-build-errors-and-warnings-prjxxxx"></a>Proje derleme hataları ve uyarıları (PRJxxxx)
 
-Bu bölüm, proje tarafından oluşturulan hatalara bir başvuru derleme araçlarını yöneliktir. Proje derleme hataları ve Uyarıları olan form PRJ*xxxx*burada *xxxx* bir dört basamaklı sayıdır.
+Bu bölüm, proje derleme araçları tarafından oluşturulan hatalara yönelik bir başvurudur. Proje derleme hataları ve uyarıları PRJ *xxxx* biçiminde olur; burada *xxxx* dört basamaklı bir sayıdır.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -63,5 +64,5 @@ Bu bölüm, proje tarafından oluşturulan hatalara bir başvuru derleme araçla
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
-[Visual Studio projeleri |C++](../../build/creating-and-managing-visual-cpp-projects.md)
+[C/C++ derleyicisi ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[Visual Studio projeleri | C++](../../build/creating-and-managing-visual-cpp-projects.md)
