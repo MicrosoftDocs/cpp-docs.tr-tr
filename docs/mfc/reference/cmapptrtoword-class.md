@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMapPtrToWord sınıfı'
 title: CMapPtrToWord sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - CMapPtrToWord [MFC], RemoveKey
 - CMapPtrToWord [MFC], SetAt
 ms.assetid: 4631c6b6-d49f-49d9-adc0-1e0491e32d7b
-ms.openlocfilehash: 254659a9f00ff7c0c27174cfbea4c131993150f3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f1b9742b6693c07b27c22a77b8c45d5b20500bb8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223037"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259493"
 ---
 # <a name="cmapptrtoword-class"></a>CMapPtrToWord sınıfı
 
 Void işaretçilerle anahtarlı 16 bit sözcüklerin haritalarını destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMapPtrToWord : public CObject
@@ -93,7 +94,7 @@ class CMapPtrToWord : public CObject
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMapWordToPtr`çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek tek harita öğelerinin dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+`CMapWordToPtr` çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek tek harita öğelerinin dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
 Sözcüğe işaretçi eşlemeleri serileştirilemiyor.
 

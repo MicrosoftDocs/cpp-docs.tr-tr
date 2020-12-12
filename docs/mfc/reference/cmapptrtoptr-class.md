@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMapPtrToPtr sınıfı'
 title: CMapPtrToPtr sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - CMapPtrToPtr [MFC], RemoveKey
 - CMapPtrToPtr [MFC], SetAt
 ms.assetid: 23cbbaec-9d64-48f2-92ae-5e24fa64b926
-ms.openlocfilehash: f8fc69007d35927daaa7128de1bc0ceb0b44c746
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3cc561f7420e9c3c7bc2b2f6460536a80d7ef7cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223050"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259545"
 ---
 # <a name="cmapptrtoptr-class"></a>CMapPtrToPtr sınıfı
 
 Void işaretçilerle anahtarlı void işaretçilerin eşlemelerini destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMapPtrToPtr : public CObject
@@ -93,7 +94,7 @@ class CMapPtrToPtr : public CObject
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMapPtrToPtr`çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek tek harita öğelerinin (işaretçi değerleri) bir dökümünü almanız gerekiyorsa, döküm bağlamının derinliğini 1 veya daha büyük bir değere ayarlamanız gerekir.
+`CMapPtrToPtr` çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek tek harita öğelerinin (işaretçi değerleri) bir dökümünü almanız gerekiyorsa, döküm bağlamının derinliğini 1 veya daha büyük bir değere ayarlamanız gerekir.
 
 İşaretçi arası haritalar serileştirilemiyor.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _getdcwd _wgetdcwd'
 title: _getdcwd, _wgetdcwd
 ms.date: 4/2/2020
 api_name:
@@ -40,18 +41,18 @@ helpviewer_keywords:
 - current working directory
 - directories [C++], current working
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-ms.openlocfilehash: c9ae07c5880cb86b0aafb0dc66a7c1ce3edcc9d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 47681e78cb010af2b495091419dec01e40f703a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218669"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256555"
 ---
 # <a name="_getdcwd-_wgetdcwd"></a>_getdcwd, _wgetdcwd
 
 Belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu alır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 char *_getdcwd(
@@ -76,10 +77,10 @@ Belirtilen sürücü kullanılamıyorsa veya sürücü türü (örneğin, çıka
 *arabelleğin*<br/>
 Yol için depolama konumu veya **null**.
 
-**Null** belirtilirse, bu işlev, **malloc**kullanarak en az *maxlen* boyut arabelleği ayırır ve **_getdcwd** dönüş değeri ayrılan arabelleğin bir işaretçisidir. Arabellek, **serbest** çağırarak ve işaretçi geçirerek serbest bırakılabilirler.
+**Null** belirtilirse, bu işlev, **malloc** kullanarak en az *maxlen* boyut arabelleği ayırır ve **_getdcwd** dönüş değeri ayrılan arabelleğin bir işaretçisidir. Arabellek, **serbest** çağırarak ve işaretçi geçirerek serbest bırakılabilirler.
 
 *maxlen*<br/>
-Yolun uzunluk üst sınırını ( **`char`** **_getdcwd** ve _wgetdcwd için karakter cinsinden belirten sıfır olmayan pozitif bir tamsayı **`wchar_t`** . **_wgetdcwd**
+Yolun uzunluk üst sınırını ( **`char`** **_getdcwd** ve _wgetdcwd için karakter cinsinden belirten sıfır olmayan pozitif bir tamsayı **`wchar_t`** . 
 
 *Maxlen* değeri sıfıra eşit veya daha küçükse, geçersiz parametre işleyicisi çağrılır. Daha fazla bilgi için bkz. [parametre doğrulama](../../c-runtime-library/parameter-validation.md).
 
@@ -87,15 +88,15 @@ Yolun uzunluk üst sınırını ( **`char`** **_getdcwd** ve _wgetdcwd için kar
 
 Belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu temsil eden bir dize işaretçisi veya bir hatayı gösteren **null**.
 
-*Arabellek* **null** olarak belirtilmişse ve *maxlen* karakterleri ayırmak için yeterli bellek yoksa, bir hata oluşur ve **errno** , **ENOMEM**olarak ayarlanır. Sonlandırıcı null karakteri de dahil olmak üzere yolun uzunluğu *maxlen*değerini aşarsa bir hata oluşur ve **errno** , **ERANGE**olarak ayarlanır. Bu hata kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+*Arabellek* **null** olarak belirtilmişse ve *maxlen* karakterleri ayırmak için yeterli bellek yoksa, bir hata oluşur ve **errno** , **ENOMEM** olarak ayarlanır. Sonlandırıcı null karakteri de dahil olmak üzere yolun uzunluğu *maxlen* değerini aşarsa bir hata oluşur ve **errno** , **ERANGE** olarak ayarlanır. Bu hata kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getdcwd** işlevi, belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu alır ve *arabelleğe*kaydeder. Geçerli çalışma dizini köke ayarlandıysa, dize bir ters eğik çizgiyle ( \\ ) biter. Geçerli çalışma dizini kök dışında bir dizine ayarlandıysa, dize bir ters eğik çizgiyle değil, dizin adıyla biter.
+**_Getdcwd** işlevi, belirtilen sürücüdeki geçerli çalışma dizininin tam yolunu alır ve *arabelleğe* kaydeder. Geçerli çalışma dizini köke ayarlandıysa, dize bir ters eğik çizgiyle ( \\ ) biter. Geçerli çalışma dizini kök dışında bir dizine ayarlandıysa, dize bir ters eğik çizgiyle değil, dizin adıyla biter.
 
-**_wgetdcwd** , **_getdcwd**geniş karakterli bir sürümüdür ve *arabellek* parametresi ve dönüş değeri geniş karakterli dizelerdir. Aksi takdirde, **_wgetdcwd** ve **_getdcwd** aynı şekilde davranır.
+**_wgetdcwd** , **_getdcwd** geniş karakterli bir sürümüdür ve *arabellek* parametresi ve dönüş değeri geniş karakterli dizelerdir. Aksi takdirde, **_wgetdcwd** ve **_getdcwd** aynı şekilde davranır.
 
-Bu işlev, iş parçacığı açısından güvenli olmayan **GetFullPathName**öğesine bağlı olsa da, iş parçacığı açısından güvenlidir. Ancak, çok iş parçacıklı uygulamanız hem bu işlevi hem de [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew)öğesini çağırırsa iş parçacığı güvenliğini ihlal edebilirsiniz.
+Bu işlev, iş parçacığı açısından güvenli olmayan **GetFullPathName** öğesine bağlı olsa da, iş parçacığı açısından güvenlidir. Ancak, çok iş parçacıklı uygulamanız hem bu işlevi hem de [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew)öğesini çağırırsa iş parçacığı güvenliğini ihlal edebilirsiniz.
 
 Bu işlevin **_nolock** sonekine sahip sürümü, iş parçacığı açısından güvenli olmaması ve diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında bu işlevle aynı şekilde davranır. Daha fazla bilgi için bkz. [_getdcwd_nolock, _wgetdcwd_nolock](getdcwd-nolock-wgetdcwd-nolock.md).
 

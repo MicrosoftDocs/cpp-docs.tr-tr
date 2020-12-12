@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OffsetOf makrosu'
 title: OffsetOf makrosu
 ms.date: 11/04/2016
 api_location:
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - structure members, offset
 - offsetof macro
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
-ms.openlocfilehash: ee6d5e56bb9f41a842e53984f754c7c07d58a125
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 055bda67bae178143561acd91b517c431f77cac0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256281"
 ---
 # <a name="offsetof-macro"></a>OffsetOf makrosu
 
 Üyenin üst yapısının başından itibaren konumunu alır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 size_t offsetof(
@@ -56,7 +57,7 @@ Kaydırın belirleneceği üst veri yapısındaki üyenin adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**OffsetOf** makrosu, **size_t**türünde bir değer olarak *structName* tarafından belirtilen yapının başlangıcından itibaren, *MemberName* 'in bayt cinsinden sapmasını döndürür. Anahtar sözcüğü ile türleri belirtebilirsiniz **`struct`** .
+**OffsetOf** makrosu, **size_t** türünde bir değer olarak *structName* tarafından belirtilen yapının başlangıcından itibaren, *MemberName* 'in bayt cinsinden sapmasını döndürür. Anahtar sözcüğü ile türleri belirtebilirsiniz **`struct`** .
 
 > [!NOTE]
 > **OffsetOf** bir işlev değildir ve bir C prototipi kullanılarak açıklanamaz.

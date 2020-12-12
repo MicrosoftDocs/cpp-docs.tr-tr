@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __rdtsc'
 title: __rdtsc
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - rdtsc instruction
 - Read Time Stamp Counter instruction
 ms.assetid: e31d0e51-c9bb-42ca-bbe9-a81ffe662387
-ms.openlocfilehash: 837b68ca6ac63587cd43a7e8828777221c677e3c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 930c8fbd0ae762c8674a85e379899bc4fe4d3394
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217142"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257517"
 ---
 # <a name="__rdtsc"></a>__rdtsc
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-İşlemci zaman damgasını döndüren yönergeyiüretir.`rdtsc` İşlemci zaman damgası, son sıfırlamadan bu yana geçen saat döngüsü sayısını kaydeder.
+`rdtsc`İşlemci zaman damgasını döndüren yönergeyi üretir. İşlemci zaman damgası, son sıfırlamadan bu yana geçen saat döngüsü sayısını kaydeder.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,7 +28,7 @@ ms.locfileid: "70217142"
 unsigned __int64 __rdtsc();
 ```
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Bir değer sayısını temsil eden 64 bitlik işaretsiz tamsayı.
 
@@ -37,7 +38,7 @@ Bir değer sayısını temsil eden 64 bitlik işaretsiz tamsayı.
 |---------------|------------------|
 |`__rdtsc`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

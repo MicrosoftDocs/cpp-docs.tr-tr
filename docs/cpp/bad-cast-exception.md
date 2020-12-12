@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bad_cast özel durumu'
 title: bad_cast özel durumu
 ms.date: 10/04/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-ms.openlocfilehash: 2efe5be5e44751831a56b29cfc629df2d21843f7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 40408128bd1c90feff34e8ea1ce8bf7a3c0d56cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97255697"
 ---
 # <a name="bad_cast-exception"></a>bad_cast özel durumu
 
 **Bad_cast** özel durumu, bir **`dynamic_cast`** başvuru türüne başarısız bir dönüştürme sonucu olarak işleç tarafından oluşturulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 catch (bad_cast)
@@ -98,7 +99,7 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 |-|-|
 |[işleç =](#op_eq)|Bir nesneyi diğerine atayan atama işleci `bad_cast` .|
 
-## <a name="bad_cast"></a><a name="bad_cast"></a>bad_cast
+## <a name="bad_cast"></a><a name="bad_cast"></a> bad_cast
 
 Türündeki nesneler için Oluşturucu `bad_cast` .
 
@@ -107,7 +108,7 @@ bad_cast(const char * _Message = "bad cast");
 bad_cast(const bad_cast &);
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Bir nesneyi diğerine atayan atama işleci `bad_cast` .
 
@@ -115,7 +116,7 @@ Bir nesneyi diğerine atayan atama işleci `bad_cast` .
 bad_cast& operator=(const bad_cast&) noexcept;
 ```
 
-## <a name="what"></a><a name="what"></a>Yazdırılacak
+## <a name="what"></a><a name="what"></a> Yazdırılacak
 
 ```cpp
 const char* what() const noexcept override;

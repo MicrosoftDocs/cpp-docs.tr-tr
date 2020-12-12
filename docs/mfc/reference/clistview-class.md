@@ -1,5 +1,6 @@
 ---
-title: CListView Sınıfı
+description: 'Daha fazla bilgi edinin: CListView sınıfı'
+title: CListView sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CListView
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - CListView [MFC], GetListCtrl
 - CListView [MFC], RemoveImageList
 ms.assetid: 7626bdb2-a1b8-4eab-b631-6743710a8432
-ms.openlocfilehash: d7f3b7c43d98c4f2c42d0c27c8e224f33e4b3301
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5576a0997c84e8f5639911a1120a6645e720a7cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749131"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259571"
 ---
-# <a name="clistview-class"></a>CListView Sınıfı
+# <a name="clistview-class"></a>CListView sınıfı
 
-Liste denetiminin ve MFC'nin belge görünümü mimarisiyle liste denetimi işlevini kapsayan sınıf [Olan CListCtrl'in](../../mfc/reference/clistctrl-class.md)kullanımını kolaylaştırır.
+, MFC 'nin belge görünümü mimarisi ile List-Control işlevselliğini kapsülleyen sınıf olan [CListCtrl](../../mfc/reference/clistctrl-class.md)' i ve liste denetiminin kullanımını basitleştirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CListView : public CCtrlView
@@ -33,35 +34,35 @@ class CListView : public CCtrlView
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CListView::CListView](#clistview)|Bir `CListView` nesne inşa eder.|
+|[CListView:: Clienstview](#clistview)|Bir `CListView` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CListView::GetListCtrl](#getlistctrl)|Görünümle ilişkili liste denetimini döndürür.|
+|[CListView:: GetListCtrl](#getlistctrl)|Görünümle ilişkili liste denetimini döndürür.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CListView::RemoveImageList](#removeimagelist)|Belirtilen resim listesini liste görünümünden kaldırır.|
+|[CListView:: Removeımagelist](#removeimagelist)|Belirtilen görüntü listesini liste görünümünden kaldırır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu mimari hakkında daha fazla bilgi için [CView](../../mfc/reference/cview-class.md) sınıfına genel bakışve burada atıfta bulunulan çapraz referanslar bölümüne bakın.
+Bu mimari hakkında daha fazla bilgi için bkz. [CView](../../mfc/reference/cview-class.md) sınıfı için genel bakış ve burada alıntı yapılan çapraz başvurular.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cview](../../mfc/reference/cview-class.md)
+[CView](../../mfc/reference/cview-class.md)
 
 [CCtrlView](../../mfc/reference/cctrlview-class.md)
 
@@ -69,19 +70,19 @@ Bu mimari hakkında daha fazla bilgi için [CView](../../mfc/reference/cview-cla
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxcview.h
+**Üstbilgi:** afxcview. h
 
-## <a name="clistviewclistview"></a><a name="clistview"></a>CListView::CListView
+## <a name="clistviewclistview"></a><a name="clistview"></a> CListView:: Clienstview
 
-Bir `CListView` nesne inşa eder.
+Bir `CListView` nesnesi oluşturur.
 
 ```
 CListView();
 ```
 
-## <a name="clistviewgetlistctrl"></a><a name="getlistctrl"></a>CListView::GetListCtrl
+## <a name="clistviewgetlistctrl"></a><a name="getlistctrl"></a> CListView:: GetListCtrl
 
-Görünümle ilişkili liste denetimine başvuru almak için bu üye işlevini arayın.
+Görünümle ilişkili liste denetimine bir başvuru almak için bu üye işlevini çağırın.
 
 ```
 CListCtrl& GetListCtrl() const;
@@ -89,15 +90,15 @@ CListCtrl& GetListCtrl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Görünümle ilişkili liste denetimine bir başvuru.
+Görünümle ilişkili liste denetimine başvuru.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCListView#7](../../atl/reference/codesnippet/cpp/clistview-class_1.cpp)]
 
-## <a name="clistviewremoveimagelist"></a><a name="removeimagelist"></a>CListView::RemoveImageList
+## <a name="clistviewremoveimagelist"></a><a name="removeimagelist"></a> CListView:: Removeımagelist
 
-Belirtilen resim listesini liste görünümünden kaldırır.
+Belirtilen görüntü listesini liste görünümünden kaldırır.
 
 ```cpp
 void RemoveImageList(int nImageList);
@@ -105,12 +106,12 @@ void RemoveImageList(int nImageList);
 
 ### <a name="parameters"></a>Parametreler
 
-*nImageList*<br/>
+*Nımagelist*<br/>
 Kaldırılacak görüntünün sıfır tabanlı dizini.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek ROWLIST](../../overview/visual-cpp-samples.md)<br/>
-[CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CCtrlView Sınıfı](../../mfc/reference/cctrlview-class.md)
+[MFC örnek ROWLIST](../../overview/visual-cpp-samples.md)<br/>
+[CCtrlView sınıfı](../../mfc/reference/cctrlview-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CCtrlView sınıfı](../../mfc/reference/cctrlview-class.md)

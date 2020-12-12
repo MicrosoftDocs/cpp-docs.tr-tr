@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ılower, ıswlower, _islower_l, _iswlower_l'
 title: islower, iswlower, _islower_l, _iswlower_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - iswlower function
 - _islower_l function
 ms.assetid: fcc3b70a-2b47-45fd-944d-e5c1942e6457
-ms.openlocfilehash: 4add576b9abe2bedda227d76cf3fc57890cfcbc1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cf4b127e46a18308da9e51880b7c10b2e2f4aa06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256451"
 ---
 # <a name="islower-iswlower-_islower_l-_iswlower_l"></a>islower, iswlower, _islower_l, _iswlower_l
 
@@ -88,7 +89,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, *c* , küçük harfli bir karakterin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , küçük harfli bir karakter (a-z) ise, **IsLower** sıfır dışında bir değer döndürür. *c* , küçük harfe karşılık gelen geniş bir karakter ise ya da *c* , **iswcnp**, **ıswdigit**, **ıswpunct**veya **ıswspace** 'in sıfır dışında olmadığı geniş karakter kümesinden biri ise, **ıswlower** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
+Bu yordamların her biri, *c* , küçük harfli bir karakterin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , küçük harfli bir karakter (a-z) ise, **IsLower** sıfır dışında bir değer döndürür. *c* , küçük harfe karşılık gelen geniş bir karakter ise ya da *c* , **iswcnp**, **ıswdigit**, **ıswpunct** veya **ıswspace** 'in sıfır dışında olmadığı geniş karakter kümesinden biri ise, **ıswlower** sıfır dışında bir değer döndürür. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -109,10 +110,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**islower**|\<CType. h>|
-|**iswdaha düşük**|\<CType. h> veya \<wchar. h>|
-|**_islower_l**|\<CType. h>|
-|**_swlower_l**|\<CType. h> veya \<wchar. h>|
+|**islower**|\<ctype.h>|
+|**iswdaha düşük**|\<ctype.h> veya \<wchar.h>|
+|**_islower_l**|\<ctype.h>|
+|**_swlower_l**|\<ctype.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

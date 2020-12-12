@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Kaynak Derleyicisi Hatası RW2003'
 title: Kaynak Derleyicisi Hatası RW2003
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW2003
 ms.assetid: 9dc0ba70-6776-4aef-b316-5f1711d8e42e
-ms.openlocfilehash: 60e813fff46ebc015f281dfed99d2916ca0eb4bb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 545168aae1c483c358c55dfc90ce320aafac3ca2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190618"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259688"
 ---
 # <a name="resource-compiler-error-rw2003"></a>Kaynak Derleyicisi Hatası RW2003
 
@@ -37,11 +38,11 @@ Oluşturma hatası
 
 1. **Sembol bilgileri başlatılamadı**
 
-   Bu hata yalnızca görselde C++oluşur. Olası nedeni çok fazla açık dosya olabilir veya betiğinizdeki sembolleri içeri aktarmak üzere Visual C++ için gereken veri dosyalarını açamıyor veya yazamaz. Görsel C++ , bu dosyaları **tmp** ortam değişkeni tarafından belirtilen dizinde veya hiçbiri belirtilmemişse geçerli dizin ile oluşturmaya çalışır.
+   Bu hata yalnızca Visual C++ oluşur. Olası nedeni çok fazla açık dosya olabilir veya betikinizdeki sembolleri içeri aktarmak için Visual C++ gereken veri dosyalarını açamaz veya yazamaz. Visual C++, bu dosyaları **tmp** ortam değişkeni tarafından belirtilen dizinde veya hiçbiri belirtilmemişse geçerli dizin ile oluşturmaya çalışır.
 
 1. **Sembol bilgisi kaydedilemiyor**
 
-   Bu hata yalnızca görselde C++oluşur. Olası nedeni çok fazla açık dosya olabilir veya betiğinizdeki sembolleri içeri aktarmak üzere Visual C++ için gereken veri dosyalarını kapatamıyor veya yazamaz. Görsel C++ , bu dosyaları **tmp** ortam değişkeni veya hiçbiri belirtilmemişse geçerli dizin tarafından belirtilen dizinde kullanmaya çalışır.
+   Bu hata yalnızca Visual C++ oluşur. Olası nedeni çok fazla açık dosya olabilir veya betikinizdeki sembolleri içeri aktarmak için Visual C++ gereken veri dosyalarını kapatamıyor veya yazamaz. Visual C++, bu dosyaları **tmp** ortam değişkeni tarafından belirtilen dizinde veya hiçbiri belirtilmemişse geçerli dizin ile kullanmaya çalışır.
 
 1. **Bit eşlem dosyası kaynak dosyası 2,03 biçiminde değil**
 
@@ -49,7 +50,7 @@ Oluşturma hatası
 
 1. **Kaynak çok büyük**
 
-   Windows 3,1 için bir kaynak yaklaşık 65000 baytı aşamaz. Kaynağınız varsa, görsel C++ veya komut satırı kaynak derleyicisi ile derleyemeyeceksiniz. Bu sınır imleçler, simgeler, bit eşlemler veya dosya tabanlı diğer kaynaklar için geçerlidir.
+   Windows 3,1 için bir kaynak yaklaşık 65000 baytı aşamaz. Kaynağınız varsa, Visual C++ veya komut satırı kaynak derleyicisi ile derleyemeyeceksiniz. Bu sınır imleçler, simgeler, bit eşlemler veya dosya tabanlı diğer kaynaklar için geçerlidir.
 
 1. **Kaynak dosyası 3,00 biçiminde değil**
 
@@ -57,4 +58,4 @@ Oluşturma hatası
 
 1. **Geçici dosya açılamıyor**
 
-   Kaynak derleyicisi/Visual C++ , geçici bir dosya açamadı. Olası nedeni, dizin için yazma izinleriniz yok veya dizin yok. Kaynak derleyicisi/görsel C++ bu dosyaları, **tmp** ortam değişkeni tarafından belirtilen dizinde veya hiçbiri belirtilmemişse geçerli dizin ile kullanmayı dener.
+   Kaynak derleyicisi/Visual C++ geçici bir dosyayı açamadı. Olası nedeni, dizin için yazma izinleriniz yok veya dizin yok. Kaynak derleyicisi/Visual C++, bu dosyaları **tmp** ortam değişkeni tarafından belirtilen dizinde veya hiçbiri belirtilmemişse geçerli dizin ile kullanmayı dener.

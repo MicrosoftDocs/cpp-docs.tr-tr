@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __popcnt16, __popcnt, __popcnt64'
 title: __popcnt16, __popcnt, __popcnt64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-ms.openlocfilehash: 3e5ae7f897500775671f8bd2563028874579a627
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cb95ff09d589cfd9a9cfc438d0334cf68f073825
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257530"
 ---
 # <a name="__popcnt16-__popcnt-__popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bir 16, 32 `1` -veya 64 bit işaretsiz tamsayının bit sayısını (popülasyon sayısı) sayar.
+`1`Bir 16, 32-veya 64 bit işaretsiz tamsayının bit sayısını (popülasyon sayısı) sayar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,7 +44,7 @@ unsigned __int64 __popcnt64(
 *deeri*\
 'ndaki Popülasyon sayısını istediğimiz için 16, 32-veya 64 bitlik işaretsiz tamsayı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 `1` *Değer* parametresindeki bit sayısı.
 
@@ -55,13 +56,13 @@ unsigned __int64 __popcnt64(
 |`__popcnt`|Gelişmiş bit Işleme|
 |`__popcnt64`|64 bit modunda gelişmiş bit Işleme.|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
 Her bir iç yapı, `popcnt` yönergeyi oluşturur. 32 bit modunda, 64 bit genel amaçlı kayıt yoktur, bu nedenle 64-bit `popcnt` desteklenmez.
 
-`popcnt` Yönergeyle ilgili donanım desteğini öğrenmek için, ile `__cpuid` `InfoType=0x00000001` iç öğesini çağırın ve bit 23 `CPUInfo[2] (ECX)`' ü denetleyin. Yönerge destekleniyorsa bu bit 1, değilse 0 ' dır. Bu iç bilgileri, `popcnt` yönergeyi desteklemeyen donanımda kullanan kodu çalıştırırsanız, sonuçlar tahmin edilemez olur.
+Yönergeyle ilgili donanım desteğini öğrenmek için, `popcnt` `__cpuid` ile iç öğesini çağırın `InfoType=0x00000001` ve bit 23 ' ü denetleyin `CPUInfo[2] (ECX)` . Yönerge destekleniyorsa bu bit 1, değilse 0 ' dır. Bu iç bilgileri, yönergeyi desteklemeyen donanımda kullanan kodu çalıştırırsanız `popcnt` , sonuçlar tahmin edilemez olur.
 
 ## <a name="example"></a>Örnek
 

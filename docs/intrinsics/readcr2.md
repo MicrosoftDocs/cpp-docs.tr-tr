@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __readcr2'
 title: __readcr2
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - __readcr2 intrinsic
 ms.assetid: d02c97d8-1953-46e7-a79e-a781e2c5bf27
-ms.openlocfilehash: 482f4548a692d6aa3b65fbc42caabda29bb393c1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: dd862f88716fd2d385622c5100f91fdf47061543
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257361"
 ---
 # <a name="__readcr2"></a>__readcr2
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 CR2 yazmacın okur ve değerini döndürür.
 
@@ -25,7 +26,7 @@ CR2 yazmacın okur ve değerini döndürür.
 unsigned __int64 __readcr2(void);
 ```
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 CR2 kaydındaki değer.
 
@@ -35,7 +36,7 @@ CR2 kaydındaki değer.
 |---------------|------------------|
 |`__readcr2`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
