@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yürütme karakter kümesi'
 title: Yürütme Karakter Kümesi
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - character sets [C++], execution and source
 - source character set [C++]
 ms.assetid: 39ffbb55-11c1-4b6d-a105-327c0fceb449
-ms.openlocfilehash: c03bf1d39fd1905fac7d2750f16f20d175446070
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d3918ad528932a7c80aa45241b821a0fd766472
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233866"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196496"
 ---
 # <a name="execution-character-set"></a>Yürütme Karakter Kümesi
 
@@ -19,4 +20,4 @@ Bu içerik çoğu zaman "yürütme karakter kümesi" anlamına gelir. Yürütme 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Karakter Sabitleri](../c-language/c-character-constants.md)
+[C karakter sabitleri](../c-language/c-character-constants.md)

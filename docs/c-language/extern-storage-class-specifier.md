@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: extern Storage-Class Belirleyicisi'
 title: extern Depolama Sınıfı Tanımlayıcısı
 ms.date: 07/10/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - external linkage, extern modifier
 ms.assetid: 6e16d927-291f-49e4-986c-9d91a482a441
-ms.openlocfilehash: e3242f86e30dcf3227586400b83266ad366ec7e8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f3a4a583f21809761878a060a3131a000f57915f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217109"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196314"
 ---
 # <a name="extern-storage-class-specifier"></a>extern Depolama Sınıfı Tanımlayıcısı
 
@@ -65,4 +66,4 @@ Bu örnekte, değişken, `i` 1 başlangıç değeri Ile Source1. c içinde tanı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Iç düzey bildirimler için depolama sınıfı belirticileri](../c-language/storage-class-specifiers-for-internal-level-declarations.md)
+[Internal-Level bildirimleri için depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

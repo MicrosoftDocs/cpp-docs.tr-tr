@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: seed_seq sınıfı'
 title: seed_seq Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - std::seed_seq [C++], size
 - std::seed_seq [C++], param
 ms.assetid: cba114f7-9ac6-4f2f-b773-9c84805401d6
-ms.openlocfilehash: d2dc561a9160188507a61ec3734cfbf9f3e74199
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c92bda66b37162bcaaf9c614185f2c31f29d22c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450503"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197042"
 ---
-# <a name="seedseq-class"></a>seed_seq Sınıfı
+# <a name="seed_seq-class"></a>seed_seq Sınıfı
 
 Rastgele sayı altyapısı için rastgele bir çekirdek sağlayabilecek işaretsiz tamsayı değerlerinin bir vektörünü depolar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class seed_seq
@@ -77,8 +78,8 @@ template<class T>
 seed_seq(initializer_list<T> initlist);
 ```
 
-İç `initlist` diziyi ayarlamak için kullanır.
-`T`bir tamsayı türü olmalıdır.
+`initlist`İç diziyi ayarlamak için kullanır.
+`T` bir tamsayı türü olmalıdır.
 
 ```cpp
 template<class InputIterator>
@@ -86,7 +87,7 @@ seed_seq(InputIterator begin, InputIterator end);
 ```
 
 Belirtilen giriş Yineleyici aralığındaki tüm öğeleri kullanarak iç diziyi başlatır.
-`iterator_traits<InputIterator>::value_type`bir tamsayı türü olmalıdır.
+`iterator_traits<InputIterator>::value_type` bir tamsayı türü olmalıdır.
 
 ## <a name="members"></a>Üyeler
 
@@ -98,8 +99,8 @@ void generate(RandomAccessIterator begin,
           RandomAccessIterator end);
 ```
 
-İç algoritma kullanarak, belirtilen dizinin öğelerini doldurur. Bu algoritma, başlatıldığı iç sıra `seed_seq` tarafından etkilenir.
-İse `begin == end`hiçbir şey yapmaz.
+İç algoritma kullanarak, belirtilen dizinin öğelerini doldurur. Bu algoritma, başlatıldığı iç sıra tarafından etkilenir `seed_seq` .
+İse hiçbir şey yapmaz `begin == end` .
 
 ### <a name="property-functions"></a>Özellik İşlevleri
 
@@ -107,18 +108,18 @@ void generate(RandomAccessIterator begin,
 size_t size() const;
 ```
 
-İçindeki öğelerin sayısını döndürür `seed_seq`.
+İçindeki öğelerin sayısını döndürür `seed_seq` .
 
 ```cpp
 template<class OutputIterator>
 void param(OutputIterator dest) const;
 ```
 
-İç diziyi çıkış yineleyiciye `dest`kopyalar.
+İç diziyi çıkış yineleyiciye kopyalar `dest` .
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, üç Oluşturucu alıştırmaları sağlar ve bir diziye atandığında elde edilen `seed_seq` örneklerden çıkış üretir. Rastgele sayı Oluşturucu ile kullanan `seed_seq` bir örnek için bkz [ \<. Random >](../standard-library/random.md).
+Aşağıdaki kod örneği, üç Oluşturucu alıştırmaları `seed_seq` sağlar ve bir diziye atandığında elde edilen örneklerden çıkış üretir. `seed_seq`Rastgele sayı Oluşturucu ile kullanan bir örnek için bkz [\<random>](../standard-library/random.md) ..
 
 ```cpp
 #include <iostream>
@@ -191,10 +192,10 @@ Bu sınıfın üye işlevleri özel durum oluşturmaz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<rastgele >
+**Üst bilgi:**\<random>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Rastgele >](../standard-library/random.md)
+[\<random>](../standard-library/random.md)

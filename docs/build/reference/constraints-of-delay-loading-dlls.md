@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: DLL yükleme gecikmesi kısıtlamaları'
 title: DLL'leri Yüklemede Gecikme Kısıtlamaları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,24 +7,24 @@ helpviewer_keywords:
 - delayed loading of DLLs, constraints
 - DLLs [C++], constraints
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
-ms.openlocfilehash: be5e5eb360f80e0b2ea9682f38f6787044cd3c63
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 45f54ca57b57bc689752a8aa80f4c03bbe096817
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197016"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL'leri Yüklemede Gecikme Kısıtlamaları
 
 İçeri aktarmaların gecikmeli yüklenmesine ilişkin kısıtlamalar vardır.
 
-- Verilerin içeri aktarmaları desteklenemez. Geçici bir çözüm, `LoadLibrary` (veya `GetModuleHandle` gecikme Yükleme Yardımcısı 'nın dll 'yi `GetProcAddress`yüklemiş olduğunu öğrendikten sonra), verileri doğrudan içeri aktarmayı açıkça işleymaktır.
+- Verilerin içeri aktarmaları desteklenemez. Geçici bir çözüm, `LoadLibrary` (veya `GetModuleHandle` gecikme Yükleme Yardımcısı 'nın dll 'yi yüklemiş olduğunu öğrendikten sonra), verileri doğrudan içeri aktarmayı açıkça işleymaktır `GetProcAddress` .
 
-- Kernel32. dll yükleme gecikmesi desteklenmiyor. Bu DLL, Gecikmeli Yükleme Yardımcısı yordamları için gecikme yükleme işlemini gerçekleştirmeye yönelik gereklidir.
+- Kernel32.dll yükleme gecikmesi desteklenmez. Bu DLL, Gecikmeli Yükleme Yardımcısı yordamları için gecikme yükleme işlemini gerçekleştirmeye yönelik gereklidir.
 
 - İletilen giriş noktalarının [bağlanması](binding-imports.md) desteklenmiyor.
 
-- Gecikmeli yüklenen DLL 'nin giriş noktasında gerçekleşen işlem başına başlatma işlemleri varsa, DLL 'nin gecikmesi, işlemin aynı davranış ile sonuçlanmayabilir. Diğer durumlarda, DLL aracılığıyla `LoadLibrary`yüklendiğinde işlenmemiş TLS (iş parçacığı yerel depolaması) kullanılarak, [__declspec (thread)](../../cpp/thread.md)kullanılarak bildirilmiştir. ,,, Ve `TlsAlloc` `TlsGetValue` `TlsFree` kullanan`TlsSetValue`dinamik TLS, statik veya Gecikmeli yüklenen dll 'lerde kullanılmaya devam etmektedir.
+- Gecikmeli yüklenen DLL 'nin giriş noktasında gerçekleşen işlem başına başlatma işlemleri varsa, DLL 'nin gecikmesi, işlemin aynı davranış ile sonuçlanmayabilir. Diğer durumlarda, DLL aracılığıyla yüklendiğinde işlenmemiş TLS (iş parçacığı yerel depolaması), [__declspec (iş parçacığı)](../../cpp/thread.md)kullanılarak bildirilmiştir `LoadLibrary` . ,,, Ve kullanan dinamik TLS, `TlsAlloc` `TlsFree` `TlsGetValue` `TlsSetValue` statik veya Gecikmeli yüklenen dll 'lerde kullanılmaya devam etmektedir.
 
 - Statik (genel) işlev işaretçileri, işleve ilk çağrıdan sonra içeri aktarılan işlevlere yeniden başlatılacak. Bunun nedeni, işlev işaretçisinin ilk kullanımı, dönüştürücü 'e işaret edecektir.
 
@@ -33,7 +34,7 @@ ms.locfileid: "69493066"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)<br/>
+[Delay-Loaded dll 'Ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)<br/>
 [LoadLibrary işlevi](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw)<br/>
 [GetModuleHandle işlevi](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlew)<br/>
 [GetProcAddress işlevi](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/NODEFAULTLIB (kitaplıkları Yoksay)
 title: /NODEFAULTLIB (Kitaplıkları Yoksay)
 ms.date: 03/26/2019
 f1_keywords:
@@ -13,49 +14,49 @@ helpviewer_keywords:
 - /NODEFAULTLIB linker option
 - ignore libraries linker option
 ms.assetid: 7270b673-6711-468e-97a7-c2925ac2be6e
-ms.openlocfilehash: 24528eb4c387c4cd0921ab089370d72b076ad640
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1443d7ac1e17d464baa829d8297234ae80f3b998
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320525"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196717"
 ---
 # <a name="nodefaultlib-ignore-libraries"></a>/NODEFAULTLIB (Kitaplıkları Yoksay)
 
-> **/ NODEFAULTLIB**[__:__*Kitaplığı*]
+> **/Nodefaultlib**[__:__*Library*]
 
 ## <a name="arguments"></a>Arguments
 
-*Kitaplık*<br/>
-Dış başvurular çözümlediğinde yok saymak için bağlayıcı istediğiniz kitaplık.
+*Kitaplığı*<br/>
+Bağlayıcının dış başvuruları çözümlediğinde yoksaymasını istediğiniz kitaplık.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Nodefaultlıb seçeneği bir veya daha fazla varsayılan kitaplığı dış başvuruların çözümlenmesi sırasında aradığı kitaplık listesinden kaldırmak için söyler.
+/NODEFAULTLıB seçeneği bağlayıcıya, dış başvuruları çözümlerken aradığı kitaplık listesinden bir veya daha fazla varsayılan kitaplığı kaldırmasını söyler.
 
-Varsayılan kitaplıklar için başvuru içeren bir .obj dosyası oluşturmak için kullanın [/Zl (varsayılan kitaplık adını atla)](zl-omit-default-library-name.md).
+Varsayılan kitaplıklara başvuru içermeyen bir. obj dosyası oluşturmak için [/zl (varsayılan kitaplık adını atla)](zl-omit-default-library-name.md)kullanın.
 
-Varsayılan olarak, tüm varsayılan kitaplıkları/nodefaultlıb dış başvuruların çözümlenmesi sırasında aradığı kitaplık listesinden kaldırır. İsteğe bağlı *Kitaplığı* parametresi belirtilen kitaplık dış başvuruların çözümlenmesi sırasında aradığı kitaplık listesinden kaldırmak olanak tanır. Çıkarmak istediğiniz her bir kitaplık için bir/nodefaultlıb seçeneği belirtin.
+Varsayılan olarak,/NODEFAULTLIB, dış başvuruları çözümlerken aradığı kitaplık listesinden tüm varsayılan kitaplıkları kaldırır. İsteğe bağlı *kitaplık* parametresi, dış başvuruları çözümlerken aradığı kitaplık listesinden belirtilen bir kitaplığı kaldırmanızı sağlar. Dışlamak istediğiniz her kitaplık için bir/NODEFAULTLIB seçeneği belirtin.
 
-Bağlayıcı ilk açıkça belirtin, ardından kitaplıkları varsayılan belirtilen kitaplıklarda arama yaparak başvuruları dış tanımlara çözümler [/DEFAULTLIB:](defaultlib-specify-default-library.md) seçeneğini ve ardından varsayılan kitaplıkları adlı .obj dosyaları.
+Bağlayıcı, önce açıkça belirttiğiniz kitaplıklarda, ardından [/defaultlib:](defaultlib-specify-default-library.md) seçeneğiyle belirtilen varsayılan kitaplıklarda ve. obj dosyalarında adlı varsayılan kitaplıklarda arama yaparak dış tanımlara yapılan başvuruları çözer.
 
-/ NODEFAULTLIB:*Kitaplığı* /DEFAULTLIB geçersiz kılar:*Kitaplığı* olduğunda aynı *Kitaplığı* adı hem de belirtilir.
+/NODEFAULTLIB:*kitaplık* , her ikisinde de aynı *kitaplık* adı belirtildiğinde/defaultlib:*Library* geçersiz kılar.
 
-/ Nodefaultlıb programınızın C çalışma zamanı kitaplığı olmadan oluşturmak için kullanıyorsanız, ayrıca kullanmak zorunda kalabilirsiniz [/Entry](entry-entry-point-symbol.md) programınızın giriş noktası işlevi belirtmek için. Daha fazla bilgi için [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
+Programınızı C çalışma zamanı kitaplığı olmadan derlemek için/NODEFAULTLIB kullanırsanız, programınızda giriş noktası işlevini belirtmek için [/Entry](entry-entry-point-symbol.md) de kullanmanız gerekebilir. Daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **giriş** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **girişi** özellik sayfasını seçin.
 
-1. Seçin **tüm varsayılan kitaplıkları Yoksay** özelliği. Ya da kitaplıkları yoksayma istediğiniz noktalı virgülle ayrılmış bir listesini belirtin **belirli varsayılan kitaplıkları Yoksay** özelliği. **Komut satırı** özellik sayfası, bu özelliklerin yaptığınız değişikliklerin etkisini gösterir.
+1. **Tüm varsayılan kitaplıkları Yoksay** özelliğini seçin. Ya da **belirli varsayılan kitaplıkları Yoksay** özelliğinde yoksaymak istediğiniz kitaplıkların noktalı virgülle ayrılmış bir listesini belirtin. **Komut satırı** Özellik sayfası, bu özelliklerde yaptığınız değişikliklerin etkisini gösterir.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreDefaultLibraryNames%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreAllDefaultLibraries%2A>.
+- Bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreDefaultLibraryNames%2A> <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreAllDefaultLibraries%2A> . ve.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

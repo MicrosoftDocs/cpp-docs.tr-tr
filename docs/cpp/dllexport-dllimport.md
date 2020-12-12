@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dllexport, dllimport'
 title: dllexport, dllimport
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - dllimport __declspec keyword
 - __declspec keyword [C++], dllimport
 ms.assetid: ff95b645-ef55-4e72-b848-df44657b3208
-ms.openlocfilehash: f03c945375cbe8c399e604e12f070b5a63d316f7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7147aa07d5579a61a2913fcc0beb85634dc1d8df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221659"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195510"
 ---
 # <a name="dllexport-dllimport"></a>dllexport, dllimport
 
@@ -23,7 +24,7 @@ ms.locfileid: "87221659"
 
 **`dllexport`** Ve **`dllimport`** depolama sınıfı öznitelikleri, C ve C++ dillerine yönelik Microsoft 'a özgü uzantılardır. Bunları, bir DLL 'ye veya DLL 'den işlevleri, verileri ve nesneleri içeri ve dışarı aktarmak için kullanabilirsiniz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
    __declspec( dllimport ) declarator
@@ -62,7 +63,7 @@ DllImport int j;
 DllExport int n;
 ```
 
-Daha fazla bilgi için bkz.
+Daha fazla bilgi için bkz:
 
 - [Tanımlar ve bildirimler](../cpp/definitions-and-declarations-cpp.md)
 

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/E (stdout için ön Işlem)
 title: /E (stdout'a Önişle)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - preprocessor output, copy to stdout
 - preprocessor output
 ms.assetid: ddbb1725-d950-4978-ab2f-30a5cd7b778c
-ms.openlocfilehash: 710be7e1dfc4de89bc1eed3e23e4803c561da10c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d6c9ea3a5fcf8e7ba06ede6e7e70d933b5c921a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192621"
 ---
 # <a name="e-preprocess-to-stdout"></a>/E (stdout'a Önişle)
 
-C ve C++ kaynak dosyalarını önceden işler ve standart çıktı cihazına önceden işlenmiş dosya kopyalar.
+C ve C++ kaynak dosyalarını önceden işler ve önceden işlenen dosyaları standart çıkış cihazına kopyalar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /E
@@ -28,21 +29,21 @@ C ve C++ kaynak dosyalarını önceden işler ve standart çıktı cihazına ön
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlem, tüm önişlemci yönergeleri gerçekleştirilir, makro genişletmeleri gerçekleştirilir ve açıklamaları kaldırılır. Önceden işlenmiş çıktı açıklamalarda korumak için kullanın [/C (korumak açıklamaları sırasındaki)](c-preserve-comments-during-preprocessing.md) derleyici seçeneği.
+Bu işlemde, tüm Önişlemci yönergeleri uygulanır, makro genişletmeleri gerçekleştirilir ve açıklamalar kaldırılır. Önceden işlenmiş çıktıda açıklamaları korumak için [/c (ön Işleme sırasında açıklamaları koru)](c-preserve-comments-during-preprocessing.md) derleyici seçeneğini kullanın.
 
-**/E** ekler `#line` başlangıcını ve bitişini eklenen her dosyanın ve koşullu derleme için ön işlemci yönergeleri tarafından kaldırılan satırları etrafında çıktısına yönergeleri. Bu yönergeler, önceden işlenmiş dosyayı satırlarını numaralandırmak. Sonuç olarak, işleme sonraki aşamaları sırasında oluşturulan hatalar satır numaralarını önceden işlenmiş dosyayı satırlar yerine orijinal kaynak dosyasına bakın.
+**/E** `#line` eklenen her dosyanın başındaki ve sonundaki ve koşullu derleme için Önişlemci yönergeleri tarafından kaldırılan satırların çevresine yönergeler ekler. Bu yönergeler, önceden işlenmiş dosyanın satırlarını yeniden numaralandırın. Sonuç olarak, sonraki işlem aşamaları sırasında oluşturulan hatalar, ön işlenmiş dosyadaki satırlar yerine orijinal kaynak dosyanın satır numaralarına başvurur.
 
-**/E** seçeneği derleme bastırır. Derleme için önceden işlenmiş dosyayı yeniden göndermeniz gerekir. **/E** çıktı dosyalarından da bastırır **/FA**, **/Fa**, ve **/Fm** seçenekleri. Daha fazla bilgi için [/FA, /Fa (listeleme dosyası)](fa-fa-listing-file.md) ve [/Fm (eşlem dosyasını Adlandır)](fm-name-mapfile.md).
+**/E** seçeneği derlemeyi gizler. Derleme için önceden işlenmiş dosyayı yeniden göndermeniz gerekir. **/E** Ayrıca **/FA**, **/FA** ve **/FM** seçeneklerindeki çıkış dosyalarını da engeller. Daha fazla bilgi için bkz. [/FA,/FA (listeleme dosyası)](fa-fa-listing-file.md) ve [/FM (ad Mapfile)](fm-name-mapfile.md).
 
-Bastırmak için `#line` yönergeleri kullanan [/EP (#line yönergeleri olmadan stdout'ta önişle ön işleme)](ep-preprocess-to-stdout-without-hash-line-directives.md) bunun yerine seçeneği.
+Yönergeleri gizlemek için `#line` , [/EP (#line yönergeleri olmadan stdout Için önceden işleme)](ep-preprocess-to-stdout-without-hash-line-directives.md) seçeneğini kullanın.
 
-Önceden işlenmiş çıkış için bir dosya göndermek için `stdout`, kullanın [/P (dosyaya ön işleme)](p-preprocess-to-a-file.md) bunun yerine seçeneği.
+Önceden işlenmiş çıktıyı yerine bir dosyaya göndermek için `stdout` , bunun yerine [/p (bir dosyaya ön işlem)](p-preprocess-to-a-file.md) seçeneğini kullanın.
 
-Bastırmak için `#line` yönergeleri ve önceden işlenen çıkışı bir dosyaya gönderme **/P** ve **/EP** birlikte.
+Yönergeleri gizlemek `#line` ve önceden işlenmiş çıktıyı bir dosyaya göndermek için **/P** ve **/EP** birlikte kullanın.
 
-Önceden derlenmiş üst bilgiler ile kullanamazsınız **/E** seçeneği.
+Önceden derlenmiş üst bilgileri **/e** seçeneğiyle kullanamazsınız.
 
-Ayrı bir dosya için ön işleme sırasında alanları belirteçleri sonra gösterilen değil olduğunu unutmayın. Bu neden geçersiz bir programda veya sahip istenmeyen yan etkiler. Aşağıdaki program başarıyla derler:
+Ayrı bir dosyaya ön işleme yapıldığında, belirteçlerin ardından boşlukların yayınlanmadığını unutmayın. Bu, geçersiz bir programın oluşmasına veya istenmeyen yan etkilere neden olabilir. Aşağıdaki program başarıyla derlenir:
 
 ```
 #define m(x) x
@@ -52,23 +53,23 @@ m(int)main( )
 }
 ```
 
-Ancak, derleme yaparsanız:
+Ancak, ile derlerseniz:
 
 ```
 cl -E test.cpp > test2.cpp
 ```
 
-`int main` içinde Test2.cpp yanlış olacaktır `intmain`.
+`int main` Test2. cpp içinde yanlış olur `intmain` .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. Derleyici seçeneğini yazın **ek seçenekler**kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -76,7 +77,7 @@ cl -E test.cpp > test2.cpp
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki komut satırını önceden işler `ADD.C`, yorumları korur, ekler `#line` yönergeleri ve sonucu standart çıktı cihazında gösterir:
+Aşağıdaki komut satırı ön işler `ADD.C` , açıklamaları korur, yönergeler ekler `#line` ve sonucu standart çıkış cihazında görüntüler:
 
 ```
 CL /E /C ADD.C
@@ -84,5 +85,5 @@ CL /E /C ADD.C
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

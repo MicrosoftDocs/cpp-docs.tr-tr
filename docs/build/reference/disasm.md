@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/DISASM
 title: /DISASM
 ms.date: 01/17/2018
 f1_keywords:
@@ -7,27 +8,27 @@ helpviewer_keywords:
 - -DISASM dumpbin option
 - DISASM dumpbin option
 - /DISASM dumpbin option
-ms.openlocfilehash: fb394b2266470e77c50ce5398aea961c37ac34fb
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 764754e017958a57afd53236b7fc1ffb6217d850
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192908"
 ---
 # <a name="disasm"></a>/DISASM
 
 Kod bölümlerinin ayrıştırılmış derlemesini DUMPBIN çıktısında yazdırın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/DİSASM** { **:** \[**BAYT**NOBYTES]}|
+> **/disasm**{**:** \[ **bayt** | **nobytes**]}
 
 ### <a name="arguments"></a>Arguments
 
-**SAYACININ**<br/>
+**SAYACıNıN**<br/>
 Açıklama baytlarını, yorumlanan işlem kodları ve bağımsız değişkenlerle birlikte, ayırt derleme çıktısında içerir. Bu varsayılan seçenektir.
 
-**YANIT SAYISI**<br/>
+**Yanıt sayısı**<br/>
 , Deassembly çıktısına yönerge baytlarını içermez.
 
 ## <a name="remarks"></a>Açıklamalar

@@ -1,88 +1,89 @@
 ---
+description: Hakkında daha fazla bilgi edinin:. XML dosyası Işleme
 title: .Xml Dosyası İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, processing XML file
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
-ms.openlocfilehash: 1a0d231a066209307041681232cc3410210d4d02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ded4551adcc4bec4aef27fe38f47470065ea9ef4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293569"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192700"
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme
 
-Derleyici, kodunuzda belgeleri oluşturmak için etiketli her yapı için bir kimlik dizesi oluşturur. Daha fazla bilgi için [önerilen etiketler belge açıklamaları](recommended-tags-for-documentation-comments-visual-cpp.md). Kimlik dizesi yapısını benzersiz olarak tanımlar. .Xml dosyası işleme programları kimliği dizesi belgeleri uygulandığı karşılık gelen .NET Framework meta verileri veya yansıma öğeyi tanımlamak için kullanabilirsiniz.
+Derleyici, kodunuzda belge oluşturmak için etiketlenmiş her yapı için bir KIMLIK dizesi oluşturur. Daha fazla bilgi için bkz. [Önerilen Etiketler belge açıklamaları](recommended-tags-for-documentation-comments-visual-cpp.md). KIMLIK dizesi yapıyı benzersiz bir şekilde tanımlar. . Xml dosyasını işleyen programlar, belgenin uygulandığı karşılık gelen .NET Framework meta verilerini veya yansıma öğesini tanımlamak için KIMLIK dizesini kullanabilir.
 
-.Xml dosyası kodunuzu hiyerarşik bir gösterimini değil, her öğe için oluşturulan bir Kimliğe sahip düz bir liste.
+. Xml dosyası, kodunuzun hiyerarşik bir gösterimi değildir, her öğe için oluşturulan KIMLIĞE sahip düz bir liste olur.
 
-Kimlik dizeleri oluşturduğunda, derleyici aşağıdaki kurallar gözlemler:
+Derleyici, KIMLIK dizelerini oluşturduğunda aşağıdaki kuralları sunar:
 
-- Hiçbir boşluk dizesinde yerleştirilir.
+- Dizeye boşluk yerleştirilmez.
 
-- Kimlik dizesi ilk bölümünü izleyen iki nokta ile tek bir karakter ile tanımlanmakta üye türünü tanımlar. Aşağıdaki üye türleri kullanılır:
+- KIMLIK dizesinin ilk bölümü, tanımlanmakta olan üyenin türünü tanımlar, tek bir karakter ve iki nokta üst üste gelir. Aşağıdaki üye türleri kullanılır:
 
   | Karakter | Açıklama |
   |---------------|-----------------|
-  | N | ad alanı<br /><br /> Belge açıklamaları için bir ad alanı ekleyemezsiniz, bir ad alanı başvurularını cref mümkündür. |
-  | T | Tür: sınıf, arabirim, yapı, enum, temsilci |
-  | D | typedef |
+  | N | ad alanı<br /><br /> Bir ad alanına belge açıklamaları ekleyemezsiniz, bir ad alanına cref başvuruları mümkündür. |
+  | T | Tür: Class, Interface, struct, Enum, Delegate |
+  | D |  typedef |
   | F | alan |
-  | P | özellik (dizin oluşturucular veya diğer dizin oluşturulmuş özellikleri dahil) |
-  | M | (tür özel yöntemler olarak Oluşturucular, işleçler ve diğerleri dahil) yöntemi |
-  | E | olay |
-  | ! | Hata dizesi<br /><br /> Dizenin geri kalanı, hata hakkında bilgi sağlar. MSVC derleyicisi, çözümlenemeyen bağlantılar için hata bilgisi oluşturur. |
+  | P | Özellik (Dizin oluşturucular veya diğer dizinli özellikler dahil) |
+  | M | Yöntem (oluşturucular, işleçler ve benzeri özel yöntemler dahil) |
+  | E | event |
+  | ! | hata dizesi<br /><br /> Dizenin geri kalanı hata hakkında bilgi sağlar. MSVC derleyicisi çözümlenemeyen bağlantılar için hata bilgileri oluşturur. |
 
-- İkinci dize ad alanı kökünde başlangıç öğesi tam olarak nitelenmiş adını parçasıdır. Öğe, kapsayan türü veya türleri ve ad alanı adı noktalarla ayrılmış. Öğenin adını nokta varsa, karma-işaretiyle ('#')'ya değiştirilir. Öğe adını doğrudan bir karma işareti olduğunu kabul edilir. Örneğin, tam olarak nitelenmiş adını `String` Oluşturucu "System.String.#ctor" olacaktır.
+- Dizenin ikinci bölümü, ad alanının köküden başlayarak öğenin tam nitelikli adıdır. Öğenin adı, kapsayan türü veya türleri ve ad alanı noktalarla ayrılır. Öğenin adında nokta varsa, bunlar karma işareti (' # ') ile değiştirilmiştir. Hiçbir öğenin doğrudan adında bir karma işareti olmadığı varsayılır. Örneğin, oluşturucunun tam adı `String` "System. String. #ctor" olacaktır.
 
-- Yöntemi için bağımsız değişken varsa özellikleri ve yöntemleri, parantez içindeki bağımsız değişken listesini takip eder. Hiçbir bağımsız değişken varsa, hiçbir parantez yok. Bağımsız değişkenlerin virgülle ayrılır. Her bağımsız değişken kodlama, doğrudan bir .NET Framework imzada nasıl kodlandığını izler:
+- Özellikler ve yöntemler için, yöntem için bağımsız değişkenler varsa, parantez içine alınmış bağımsız değişken listesi aşağıda verilmiştir. Bağımsız değişken yoksa, parantezler yok. Bağımsız değişkenler virgülle ayrılır. Her bağımsız değişkenin kodlaması, .NET Framework imzasında nasıl kodlandığını doğrudan izler:
 
-  - Temel türler. Normal türleri (ELEMENT_TYPE_CLASS veya ELEMENT_TYPE_VALUETYPE), türün tam adı temsil edilir.
+  - Temel türler. Normal türler (ELEMENT_TYPE_CLASS veya ELEMENT_TYPE_VALUETYPE), türün tam adı olarak gösterilir.
 
-  - İç türleri (örneğin, ELEMENT_TYPE_I4 ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF. ve ELEMENT_TYPE_VOID) karşılık gelen tam tür adı tam olarak temsil edilir Örneğin, **System.Int32** veya **System.TypedReference**.
+  - İç türler (örneğin, ELEMENT_TYPE_I4, ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING ELEMENT_TYPE_TYPEDBYREF. ve ELEMENT_TYPE_VOID), karşılık gelen tam türün tam adı olarak gösterilir, örneğin, **System. Int32** veya **System. TypedReference**.
 
-  - ELEMENT_TYPE_PTR olarak temsil edilir bir ' *' aşağıdaki değiştirilen türü.
+  - ELEMENT_TYPE_PTR, değiştirilen türü takip eden bir ' * ' olarak temsil edilir.
 
-  - ELEMENT_TYPE_BYREF olarak temsil edilir bir '\@' aşağıdaki değiştirilen türü.
+  - ELEMENT_TYPE_BYREF, \@ değiştirilen türden sonra ' ' olarak gösterilir.
 
-  - ELEMENT_TYPE_PINNED olarak temsil edilir bir ' ^' aşağıdaki değiştirilen türü. MSVC derleyicisi, hiçbir zaman bu oluşturur.
+  - ELEMENT_TYPE_PINNED, değiştirilen türden sonra bir ' ^ ' olarak temsil edilir. MSVC derleyicisi bunu hiçbir şekilde oluşturmaz.
 
-  - ELEMENT_TYPE_CMOD_REQ olarak temsil edilir bir '&#124;' ve değiştirilen türü aşağıdaki değiştiricisi sınıfının tam adı. MSVC derleyicisi, hiçbir zaman bu oluşturur.
+  - ELEMENT_TYPE_CMOD_REQ, değiştirilen türü takip eden bir ' &#124; ' ve değiştirici sınıfının tam adı olarak temsil edilir. MSVC derleyicisi bunu hiçbir şekilde oluşturmaz.
 
-  - ELEMENT_TYPE_CMOD_OPT olarak temsil edilir bir '!' ve değiştirilen türü aşağıdaki değiştiricisi sınıfının tam adı.
+  - ELEMENT_TYPE_CMOD_OPT, değiştirilen türü takip eden bir '! ' ve değiştirici sınıfının tam adı olarak temsil edilir.
 
-  - ELEMENT_TYPE_SZARRAY "dizinin öğe türü aşağıdaki []" temsil edilir.
+  - ELEMENT_TYPE_SZARRAY, dizinin öğe türü takip eden "[]" olarak temsil edilir.
 
-  - "[?]" ELEMENT_TYPE_GENERICARRAY temsil edilen aşağıdaki dizinin öğe türü. MSVC derleyicisi, hiçbir zaman bu oluşturur.
+  - ELEMENT_TYPE_GENERICARRAY, dizinin öğe türü takip eden "[?]" olarak temsil edilir. MSVC derleyicisi bunu hiçbir şekilde oluşturmaz.
 
-  - ELEMENT_TYPE_ARRAY olarak temsil edilir [*lowerbound*:`size`,*lowerbound*:`size`] Burada virgül sayısını ise boyut - 1 ve alt sınırı boyutunu ve her boyut bilinen ondalık biçimde temsil edilir. Alt sınır veya boyutu belirtilmezse, yalnızca atlanır. Belirli bir boyut için boyut ve alt sınır atlanırsa, ':' de atlanır. Örneğin, belirtilmeyen boyutları ve alt sınırı 1 ile 2 boyutlu bir dizi olan [1:, 1:].
+  - Element_type_array, `size` virgül sayısının derece-1 olduğu ve bilindiğinde her boyutun alt sınırları ve boyutunun ondalık olarak temsil edildiği [küçük harfe göre:, küçük *harf sınırı*:] olarak temsil edilir `size` . Daha düşük bir sınır veya boyut belirtilmemişse, bu yalnızca atlanır. Belirli bir boyutun alt sınırı ve boyutu atlanırsa, ': ' de atlanır. Örneğin, alt sınır olarak 1 olan 2 boyutlu bir dizi ve belirtilmemiş boyutlar [1:, 1:].
 
-  - ELEMENT_TYPE_FNPTR olarak temsil edilir "FUNC =:`type`(*imza*)", burada `type` dönüş türü ve *imza* yöntem bağımsız değişkenleri olan. Hiçbir bağımsız değişken varsa, parantezler göz ardı edilir. MSVC derleyicisi, hiçbir zaman bu oluşturur.
+  - ELEMENT_TYPE_FNPTR, `type`  `type` dönüş türü olduğu ve *imza* YÖNTEMIN bağımsız değişkenlerinin olduğu "= Func: (Signature)" olarak temsil edilir. Bağımsız değişken yoksa, parantezler atlanır. MSVC derleyicisi bunu hiçbir şekilde oluşturmaz.
 
-  Ayırt edici aşırı yüklenmiş yöntemler için hiçbir zaman kullanılmaz, çünkü aşağıdaki imza bileşenleri temsil edilmez:
+  Aşağıdaki imza bileşenleri, aşırı yüklenmiş yöntemlerin farklılaştırmaları hiçbir şekilde kullanıldıklarından temsil edilmez:
 
-  - Çağırma kuralı
+  - çağırma kuralı
 
-  - Dönüş türü
+  - dönüş türü
 
   - ELEMENT_TYPE_SENTINEL
 
-- Yalnızca dönüştürme işleçleri için yöntemin dönüş değeri olarak kodlanmış bir ' ~' gibi önceden kodlanmış dönüş türü tarafından izlenen.
+- Yalnızca dönüştürme işleçleri için, metodun dönüş değeri, daha önce kodlanmış olarak ' ~ ' ve dönüş türü tarafından kodlanır.
 
-- Genel türler için türü adını geri işaret ve ardından genel tür parametre sayısını belirten bir sayı tarafından izlenir.  Örneğin,
+- Genel türler için, türün adının ardından bir geri değer ve ardından genel tür parametrelerinin sayısını belirten bir sayı olacaktır.  Örneğin,
 
     ```xml
     <member name="T:MyClass`2">
     ```
 
-  Olarak tanımlanan bir tür için `public class MyClass<T, U>`.
+  Olarak tanımlanan bir tür için `public class MyClass<T, U>` .
 
-  Genel türler parametre olarak alan yöntemleri için genel tür parametreleri ile geri ticks başında sayı olarak belirtilen (örneğin \`0 \`1).  Her bir sayının temsil eden bir türün genel parametreleri için sıfır tabanlı bir dizi gösterimi.
+  Genel türleri parametre olarak alan yöntemler için genel tür parametreleri, geri işaretleri (örneğin \` , 0, 1) ile önceden ortaya çıkacak sayılar olarak belirtilir \` .  Türün genel parametreleri için sıfır tabanlı dizi gösterimini temsil eden her bir sayı.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekler nasıl kimliği için bir sınıf dizeleri ve üyelerinin oluşturulması.
+Aşağıdaki örneklerde, bir sınıf ve üyeleri için KIMLIK dizelerinin nasıl oluşturulacağı gösterilmektedir.
 
 ```cpp
 // xml_id_strings.cpp

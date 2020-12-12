@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: parantez içindeki Ifadeler'
 title: Parantezlerdeki İfadeler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - expressions [C++], evaluating
 - parentheses, expressions
 ms.assetid: b8636147-6982-408c-9e64-29e40678ee43
-ms.openlocfilehash: d0105556530161991b46c5ee25cd73f2f995063f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd33cab851f7ec55c395fee62e4300d42365f00f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196379"
 ---
 # <a name="expressions-in-parentheses"></a>Parantezlerdeki İfadeler
 
@@ -22,9 +23,9 @@ Parantez içinde herhangi bir işleneni, içine alınmış ifadenin türünü ve
 ( 10 + 5 ) / 5
 ```
 
-etrafındaki `10 + 5` parantezler, ilk olarak değerlendirilen ve bölüm `10 + 5` (**/**) işlecinin sol işleneni haline geldiği anlamına gelir. Sonucu 3 ' `( 10 + 5 ) / 5` dir. Parantez olmadan, `10 + 5 / 5` 11 olarak değerlendirilir.
+etrafındaki parantezler, `10 + 5` `10 + 5` ilk olarak değerlendirilen ve bölüm () işlecinin sol işleneni haline geldiği anlamına gelir **/** . Sonucu 3 ' `( 10 + 5 ) / 5` dir. Parantez olmadan, `10 + 5 / 5` 11 olarak değerlendirilir.
 
-Parantez, işlenenleri bir ifadede gruplandırılma şeklini etkilese de, her durumda belirli bir değerlendirme sırası garantisi vermez. Örneğin, aşağıdaki ifadenin parantezleri veya soldan sağa gruplandırması, değerinin `i` alt ifadelerden birinde ne olacağını garanti eder:
+Parantez, işlenenleri bir ifadede gruplandırılma şeklini etkilese de, her durumda belirli bir değerlendirme sırası garantisi vermez. Örneğin, aşağıdaki ifadenin parantezleri veya soldan sağa gruplandırması, değerinin alt ifadelerden birinde ne olacağını garanti eder `i` :
 
 ```
 ( i++ +1 ) * ( 2 + i )

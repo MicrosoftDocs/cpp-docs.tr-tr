@@ -1,32 +1,33 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: for deyimleri (C)'
 title: for Deyimi (C)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - for keyword [C]
 ms.assetid: 560a8de4-19db-4868-9f18-dbe51b17900d
-ms.openlocfilehash: 91675fbe15ec6abf5aae4548990d9b4e0703e967
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4e20529ccec4f586f8785e122903b22be42e69a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196028"
 ---
 # <a name="for-statement-c"></a>for Deyimi (C)
 
 **`for`** İfade, bir ifadeyi veya bileşik ifadeyi belirtilen sayıda tekrarlamanızı sağlar. Bir deyimin gövdesi, **`for`** isteğe bağlı bir koşul false olana kadar sıfır veya daha fazla kez yürütülür. Deyimin **`for`** yürütülmesi sırasında değerleri başlatmak ve değiştirmek için deyimi içinde isteğe bağlı ifadeleri kullanabilirsiniz **`for`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *yineleme-ekstresi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`for`****(** *init-Expression*<sub>opt</sub> **;** *cond-expression*<sub>opt</sub> **;** *loop-expression*<sub>opt</sub> **)** *deyimi*
 
 Bir deyimin yürütülmesi **`for`** Şu şekilde devam eder:
 
-1. Varsa, *Init-ifadesi*değerlendirilir. Bu, döngü için başlatmayı belirtir. *İnit ifadesinin*türü üzerinde hiçbir kısıtlama yoktur.
+1. Varsa, *Init-ifadesi* değerlendirilir. Bu, döngü için başlatmayı belirtir. *İnit ifadesinin* türü üzerinde hiçbir kısıtlama yoktur.
 
-1. Varsa, *cond-ifadesi*değerlendirilir. Bu ifade aritmetik veya işaretçi türünde olmalıdır. Her yinelemeden önce değerlendirilir. Üç sonuç mümkündür:
+1. Varsa, *cond-ifadesi* değerlendirilir. Bu ifade aritmetik veya işaretçi türünde olmalıdır. Her yinelemeden önce değerlendirilir. Üç sonuç mümkündür:
 
-   - *Cond-expression* **`true`** (sıfır dışında) ise, *deyim* yürütülür; varsa, *döngü ifadesi*değerlendirilir. *Döngü ifadesi* Her yinelemeden sonra değerlendirilir. Türü üzerinde hiçbir kısıtlama yoktur. Yan etkiler sırayla yürütülür. Daha sonra işlem, *cond-expression*değerlendirmesiyle yeniden başlar.
+   - *Cond-expression* **`true`** (sıfır dışında) ise, *deyim* yürütülür; varsa, *döngü ifadesi* değerlendirilir. *Döngü ifadesi* Her yinelemeden sonra değerlendirilir. Türü üzerinde hiçbir kısıtlama yoktur. Yan etkiler sırayla yürütülür. Daha sonra işlem, *cond-expression* değerlendirmesiyle yeniden başlar.
 
    - *Cond-expression* atlanırsa, *cond ifadesi* true olarak kabul edilir ve yürütme, önceki paragrafta açıklandığı gibi tam olarak devam eder. **`for`** *Cond-expression* bağımsız değişkeni olmayan bir deyim yalnızca **`break`** deyim gövdesinde bir veya **`return`** deyimi yürütüldüğünde ya da **`goto`** (deyim gövdesi dışında bir etiketli ifadeye **`for`** ) yürütüldüğünde sonlanır.
 

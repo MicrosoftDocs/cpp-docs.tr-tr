@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: localeconv'
 title: localeconv
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - localeconv function
 - locales, getting information on
 ms.assetid: 7ecdb1f2-88f5-4037-a0e7-c754ab003660
-ms.openlocfilehash: c4e1820ac412a0447c5059ecc92375275f7b2701
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 488a6e9dbc913f1102be3a53685dc68b38fb833b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218643"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195677"
 ---
 # <a name="localeconv"></a>localeconv
 
@@ -47,11 +48,11 @@ struct lconv *localeconv( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**localeconv** , [struct lconv](../../c-runtime-library/standard-types.md)türünde bir doldurulmuş nesneye bir işaretçi döndürür. Nesnesinde bulunan değerler, iş parçacığı yerel depolama alanındaki yerel ayarlar ayarlarından kopyalanır ve **localeconv**öğesine yapılan sonraki çağrılar tarafından geçersiz kılınabilir. Bu nesnedeki değerlerde yapılan değişiklikler yerel ayar ayarlarını değiştirmez. **LC_ALL**, **LC_MONETARY**veya **LC_NUMERIC** *Kategori* değerleri ile [setlocale](setlocale-wsetlocale.md) 'e çağrılar yapının içeriğinin üzerine yazar.
+**localeconv** , [struct lconv](../../c-runtime-library/standard-types.md)türünde bir doldurulmuş nesneye bir işaretçi döndürür. Nesnesinde bulunan değerler, iş parçacığı yerel depolama alanındaki yerel ayarlar ayarlarından kopyalanır ve **localeconv** öğesine yapılan sonraki çağrılar tarafından geçersiz kılınabilir. Bu nesnedeki değerlerde yapılan değişiklikler yerel ayar ayarlarını değiştirmez. **LC_ALL**, **LC_MONETARY** veya **LC_NUMERIC** *Kategori* değerleri ile [setlocale](setlocale-wsetlocale.md) 'e çağrılar yapının içeriğinin üzerine yazar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Localeconv** işlevi, geçerli yerel ayar için sayısal biçimlendirme hakkında ayrıntılı bilgiler alır. Bu bilgiler **lconv**türünde bir yapıda saklanır. Yerel AYARDA tanımlanan **lconv** yapısı. H, aşağıdaki üyeleri içerir:
+**Localeconv** işlevi, geçerli yerel ayar için sayısal biçimlendirme hakkında ayrıntılı bilgiler alır. Bu bilgiler **lconv** türünde bir yapıda saklanır. Yerel AYARDA tanımlanan **lconv** yapısı. H, aşağıdaki üyeleri içerir:
 
 |Alan|Anlamı|
 |-|-|
@@ -132,7 +133,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [setlocale](../../preprocessor/setlocale.md)<br/>
 [strcoll Işlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
 [strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>

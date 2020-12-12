@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: derleyici seçenekleri'
 title: MSVC derleyici seçenekleri
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -8,49 +9,49 @@ helpviewer_keywords:
 - compiler options, C++
 - x64 MSVC compiler
 ms.assetid: ed3376c8-bef4-4c9a-80e9-3b5da232644c
-ms.openlocfilehash: ab41a5de027f28b361937e58fb179fd72db54e4e
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: a6b124fa5fce68844d53c1324da48c17ef5a9ccf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65221743"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197029"
 ---
 # <a name="compiler-options"></a>Derleyici Seçenekleri
 
-cl.exe Microsoft denetleyen bir araçtır C++ (MSVC) C ve C++ derleyicileri ve bağlayıcı. cl.exe yalnızca Microsoft Visual Studio için Windows destekleyen işletim sistemleri üzerinde çalıştırılabilir.
+cl.exe, Microsoft C++ (MSVC) C ve C++ derleyicilerini ve bağlayıcıyı denetleyen bir araçtır. cl.exe, yalnızca Windows için Microsoft Visual Studio destekleyen işletim sistemlerinde çalıştırılabilir.
 
 > [!NOTE]
-> Bu araç yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor. Daha fazla bilgi için [komut satırından MSVC araç takımı kullanın](../building-on-the-command-line.md).
+> Bu aracı yalnızca bir Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bunu bir sistem komut isteminden veya dosya Gezgini 'nden başlatamazsınız. Daha fazla bilgi için, bkz. [MSVC araç takımını komut satırından kullanma](../building-on-the-command-line.md).
 
-Derleyiciler, ortak nesne dosyası biçimi (COFF) nesne (.obj) dosyaları oluşturur. Bağlayıcı yürütülebilir (.exe) dosya veya dinamik bağlantı kitaplıklarını (DLL'ler) üretir.
+Derleyiciler ortak nesne dosyası biçimi (COFF) nesne (. obj) dosyaları oluşturur. Bağlayıcı yürütülebilir (. exe) dosyalar ya da dinamik bağlantı kitaplıkları (dll 'Ler) üretir.
 
-Tüm derleyici seçeneklerinin büyük küçük harfe duyarlı olduğunu unutmayın. Her iki eğik çizgi kullanabilir (`/`) veya tire (`-`) bir derleyici seçeneğini belirtmek için.
+Tüm derleyici seçeneklerinin büyük/küçük harfe duyarlı olduğunu unutmayın. `/` `-` Bir derleyici seçeneğini belirtmek için eğik çizgi () veya tire () kullanabilirsiniz.
 
-Bağlamadan derlemek için kullanın [/c](c-compile-without-linking.md) seçeneği.
+Bağlama olmadan derlemek için [/c](c-compile-without-linking.md) seçeneğini kullanın.
 
-## <a name="find-a-compiler-option"></a>Derleyici seçeneği bulun
+## <a name="find-a-compiler-option"></a>Derleyici seçeneği bulma
 
-Belirli bir derleyici seçeneği bulmak için aşağıdaki listelerden birine bakın:
+Belirli bir derleyici seçeneğini bulmak için aşağıdaki listelerden birine bakın:
 
 - [Alfabetik Listelenmiş Derleyici Seçenekleri](compiler-options-listed-alphabetically.md)
 
-- [Kategorilere Göre Listelenen Derleyici Seçenekleri](compiler-options-listed-by-category.md)
+- [Kategoriye göre listelenen derleyici seçenekleri](compiler-options-listed-by-category.md)
 
 ## <a name="specify-compiler-options"></a>Derleyici seçeneklerini belirtin
 
-Her derleyici seçeneğinin konuda geliştirme ortamında nasıl ayarlanabilir açıklanır. Geliştirme ortamı dışında seçenekleri belirtme hakkında daha fazla bilgi için bkz:
+Her derleyici seçeneğinin konusu, geliştirme ortamında nasıl ayarlayabileceğinizi anlatmaktadır. Geliştirme ortamı dışında seçenekleri belirtme hakkında bilgi için bkz.:
 
-- [MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+- [MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)
 
-- [CL Komut Dosyaları](cl-command-files.md)
+- [CL komut dosyaları](cl-command-files.md)
 
-- [CL Ortam Değişkenleri](cl-environment-variables.md)
+- [CL ortam değişkenleri](cl-environment-variables.md)
 
-## <a name="related-build-tools"></a>İlgili yapı araçları
+## <a name="related-build-tools"></a>İlgili derleme araçları
 
-[MSVC bağlayıcı seçenekleri](linker-options.md) programınızın nasıl oluşturulduğunu da etkiler.
+[MSVC bağlayıcı seçenekleri](linker-options.md) , programınızın nasıl oluşturulduğunu da etkiler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Başvurusu](c-cpp-building-reference.md)<br/>
-[CL Bağlayıcı Çağırır](cl-invokes-the-linker.md)
+[C/C++ Oluşturma Başvurusu](c-cpp-building-reference.md)<br/>
+[CL, bağlayıcıyı çağırır](cl-invokes-the-linker.md)

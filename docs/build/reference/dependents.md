@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/BAĞıMLıLAR
 title: /DEPENDENTS
 ms.date: 07/15/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - /DEPENDENTS dumpbin option
 - DEPENDENTS dumpbin option
 ms.assetid: 9b31da2a-75ac-4bbf-a3f1-adf8b0ecbbb4
-ms.openlocfilehash: 88f0062a6bbca3f9199a12f739c2ade5f9d912cd
-ms.sourcegitcommit: 7f5b29e24e1be9b5985044a030977485fea0b50c
+ms.openlocfilehash: a0354f65dea51cb5db61b62d853392e32c14a3f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192986"
 ---
 # <a name="dependents"></a>/DEPENDENTS
 
 Görüntünün içe aktardığı dll 'lerin adlarını döker. Uygulamanızı hangi dll 'Lere yeniden dağıtabileceğinizi veya eksik bağımlılığın adını bulmak için listeyi kullanabilirsiniz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/DEPENDENTS**
 
@@ -33,7 +34,7 @@ Bu seçenek, komut satırında belirtilen tüm yürütülebilir dosyalar için g
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, yerleşik olarak bulunan [istemci yürütülebilir dosyasının **/bağımlılılar** seçeneğinin dumpbin çıkışı gösterilmektedir: Kendi dinamik bağlantı kitaplığınızı](../walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)oluşturun ve kullanın:
+Bu örnek, istemci çalıştırılabilirinin yerleşik olarak bulunan [ve kendi dinamik bağlantı kitaplığınızı oluşturma ve kullanma](../walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)konusunda bulunan **/bağımlılar** seçeneğinin dumpbin çıkışını gösterir:
 
 ```cmd
 C:\Users\username\Source\Repos\MathClient\Debug>dumpbin /DEPENDENTS MathClient.exe

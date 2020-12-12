@@ -1,41 +1,42 @@
 ---
+description: 'Daha fazla bilgi edinin: nokta yönergeleri'
 title: Nokta Yönergeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - NMAKE program, dot directives
 - dot directives in NMAKE
 ms.assetid: ab35da65-30b6-48b7-87d6-61503d7faf9f
-ms.openlocfilehash: 2c21e8a18c76331f86a4e8966b4f67c9c9bc9b7d
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 41b13d5f0f0f0a04ee47a9958be76c384617fe5f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342818"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192869"
 ---
 # <a name="dot-directives"></a>Nokta Yönergeleri
 
-Nokta yönergeleri bir satırın başında bir açıklama bloğu dışında belirtin. Nokta yönergeleri başlayan bir nokta (. ) ve iki nokta (:) tarafından izlenir. Boşluk ve sekme izin verilir. Nokta yönerge adları büyük küçük harfe duyarlı ve büyük.
+Bir satır başlangıcında bir açıklama bloğunun dışında nokta yönergeleri belirtin. Nokta yönergeleri noktayla başlar (. ) ve ardından iki nokta üst üste (:). Boşluklara ve sekmelere izin verilir. Nokta yönergesi adları büyük/küçük harfe duyarlıdır ve büyük harfle yazılır.
 
-|Yönergesi|Amaç|
+|Deki|Amaç|
 |---------------|-------------|
-|**. YOKSAY:**|Derleme görevleri dosyası sonuna belirtilen bir yerden komutları tarafından döndürülen sıfır olmayan bir çıkış kodlarını dikkate almaz. Varsayılan olarak, bir komut sıfır olmayan çıkış kodu döndürürse NMAKE durdurur. Hata denetimi geri yüklemek için kullanmak **! CMDSWITCHES**. Tek bir komut için çıkış kodu yoksaymak için tire (-) değiştiricisini kullanın. Tüm dosyası için çıkış kodları yoksaymak için kullanma / ediyorum.|
-|**. DEĞERLİ:** *hedefleri*|Korur *hedefleri* güncelleştirmek için komutları durdurulduysa MFC'yi; dosyayı silerek kesme komutu işler disk üzerinde etkisi yoktur. Hedef adları, bir veya daha fazla boşluk veya sekme ile ayırın. CTRL + C ya da CTRL + BREAK tarafından bir derleme kesintiye uğrarsa varsayılan olarak, bir hedef NMAKE siler. Her kullanımının **. DEĞERLİ** tüm görevleri için; geçerli toplu birden çok belirtimleri.|
-|**. SESSİZ:**|Derleme görevleri dosyası sonuna belirtilen bir yerden yürütülen komutlar görüntülenmesini bastırır. Varsayılan olarak, NMAKE çağırdığı komutları görüntüler. Yankı geri yüklemek için kullanmak **! CMDSWITCHES**. Tek bir komutun Yankı engellemek için kullanın **@** değiştiricisi. Tüm bir dosyada Yankı bastırmak için kullanma/S.|
-|**. SONEKLERİ:** `list`|Çıkarım kuralı eşlemek için uzantıları listeler. Aşağıdaki uzantılar dahil etmek için önceden tanımlanmış: .exe .obj .asm .c .cpp .cxx .bas .cbl sunulabilen .pas .res .rc .f .f90|
+|**. Yoksay**|Komut dosyası tarafından döndürülen sıfır olmayan çıkış kodlarını yok sayar, belirtilen konumdan derleme görevleri dosyasının sonuna kadar belirtilir. Varsayılan olarak, bir komut sıfır dışında bir çıkış kodu döndürürse nmake durursa. Hata denetimini geri yüklemek için kullanın **! CMDANAHTARLARÝ**. Tek bir komutun çıkış kodunu yoksaymak için Dash (-) değiştiricisini kullanın. Dosyanın tamamına ait çıkış kodlarını yoksaymak için/Ikullanın.|
+|**. Değerli:** *hedefler*|Güncelleştirme komutları durdurulmuşsa, diskteki *hedefleri* korur; bir komut dosyayı silerek bir kesmeyi işlediğinde, hiçbir etkisi olmaz. Hedef adlarını bir veya daha fazla boşluk veya sekme ile ayırın. Varsayılan olarak, bir derleme CTRL + C veya CTRL + BREAK ile kesintiye uğrarsa NMAKE bir hedef siler. Her kullanımı **. Daha değerli,** derleme görevleri dosyasının tamamına uygulanır; birden çok belirtim birikimlidir.|
+|**. KATıLıMı**|Yürütülen komutların, derleme görevleri dosyasının sonuna kadar belirtildiği yerden görüntülenmesini önler. Varsayılan olarak NMAKE, çağırdığı komutları görüntüler. Yankıyı geri yüklemek için kullanın **! CMDANAHTARLARÝ**. Tek bir komutun yankısını gizlemek için **@** değiştiricisini kullanın. Tüm bir dosyanın yankısını gizlemek için/S. komutunu kullanın.|
+|**. SONEKLER:**`list`|Çıkarım kuralı eşleştirmesi için uzantıları listeler; Aşağıdaki uzantıları içerecek şekilde önceden tanımlanmıştır:. exe. obj. asm. c. cpp. cxx. bas. CBL. for. pas. res. rc. f. f90|
 
-Değiştirilecek **. SONEKLERİ** listesi sırası veya yeni bir liste belirtmek için listeyi temizlemek ve yeni bir ayar belirtin. Listesini temizlemek için iki noktadan sonra hiçbir uzantı belirtin:
+Öğesini değiştirmek için **. SONEK** listesi sırası veya yeni bir liste belirtmek için listeyi temizleyin ve yeni bir ayar belirtin. Listeyi temizlemek için, iki nokta üst üste işaretinden sonra uzantı belirtmeyin:
 
 ```
 .SUFFIXES :
 ```
 
-Daha fazla sonek listenin sonuna eklemek için belirtin.
+Listenin sonuna ek sonekler eklemek için şunu belirtin
 
 ```
 .SUFFIXES : suffixlist
 ```
 
-Burada *suffixlist* ek sonekler, bir veya daha fazla boşluk veya sekme ile ayrılmış bir listesi verilmiştir. Geçerli ayarını görmek için **. SONEKLERİ**, parametresini ile NMAKE çalıştırma
+burada, *soneklist* , bir veya daha fazla boşluk ya da sekme ile ayrılmış ek sonekler listesidir. Geçerli ayarını görmek için **. SON ekler**, NMAKE with/pçalıştırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

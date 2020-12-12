@@ -1,5 +1,6 @@
 ---
-title: Platform::Enum sınıfı
+description: 'Daha fazla bilgi edinin: Platform:: enum sınıfı'
+title: 'Platform:: enum sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Enum Struct
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
-ms.openlocfilehash: 67870a0fcc685c420c7d24510e90c6f4ef9b72a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a7cffc7529c0abf23d563b7b60a17248ce02ac2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195261"
 ---
-# <a name="platformenum-class"></a>Platform::Enum sınıfı
+# <a name="platformenum-class"></a>Platform:: enum sınıfı
 
 Adlandırılmış sabitler kümesini temsil eden bir değer sınıfı.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public class Enum
@@ -26,21 +27,21 @@ public class Enum
 
 ### <a name="members"></a>Üyeler
 
-Sabit listesi sınıfı ' lerin üzerine yaz ve GetHashCode() ToString() yöntemleri devralan [Platform::Object sınıfı](../cppcx/platform-object-class.md).
+Enum sınıfı, [Platform:: Object sınıfından](../cppcx/platform-object-class.md)Equals (), GetHashCode () ve ToString () yöntemlerini devralır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanım [genel sabit listesi sınıfı](../extensions/enum-class-cpp-component-extensions.md) sabit listeleri oluşturmak için anahtar sözcüğü. Platform::Enum Türü açıkça kullanmayın. Daha fazla bilgi için [numaralandırmalar](../cppcx/enums-c-cx.md).
+Numaralandırmalar oluşturmak için [public enum class](../extensions/enum-class-cpp-component-extensions.md) anahtar sözcüğünü kullanın. Platform:: enum türünü açık olarak kullanmayın. Daha fazla bilgi için bkz. [enum](../cppcx/enums-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

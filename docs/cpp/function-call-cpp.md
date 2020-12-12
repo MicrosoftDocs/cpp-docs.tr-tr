@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlev çağrısı (C++)'
 title: İşlev Çağrısı (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - operator overloading [C++], examples
 - function call operator ()
 ms.assetid: 5094254a-045b-46f7-8653-69bc91e80dce
-ms.openlocfilehash: 6c7326b0f9c9592cb2b3be973a5ba1747a2015a0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5fc33e11dbc4c9d88cc81eb41378cb6f10e00dc4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179815"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195417"
 ---
 # <a name="function-call-c"></a>İşlev Çağrısı (C++)
 
 Parantez kullanılarak çağrılan işlev çağrısı işleci, ikili bir işleçtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 primary-expression ( expression-list )
@@ -30,7 +31,7 @@ primary-expression ( expression-list )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu bağlamda, ilk işlenen `primary-expression` ve muhtemelen boş bir bağımsız değişken listesi olan `expression-list`ikinci işlenendir. İşlev çağrısı işleci, birkaç parametre gerektiren işlemler için kullanılır. `expression-list`, tek bir işlenen yerine bir liste olduğundan bu işe yarar. İşlev çağrısı işleci, statik olmayan bir üye işlevi olmalıdır.
+Bu bağlamda, `primary-expression` ilk işlenen ve `expression-list` bağımsız değişkenlerin boş bir listesi ikinci işlenendir. İşlev çağrısı işleci, birkaç parametre gerektiren işlemler için kullanılır. Bu `expression-list` , tek bir işlenen yerine bir liste olduğundan bu işe yarar. İşlev çağrısı işleci, statik olmayan bir üye işlevi olmalıdır.
 
 İşlev çağrısı işleci, aşırı yüklendiğinde işlevlerin çağrılma biçimini değiştirmez; bunun yerine, işlecin belirli bir sınıf türünden nesnelere uygulandığında nasıl yorumlanacağını değiştirir. Örneğin, aşağıdaki kod genellikle anlamsız olacaktır:
 
@@ -39,7 +40,7 @@ Point pt;
 pt( 3, 2 );
 ```
 
-Ancak uygun bir aşırı yüklenmiş işlev çağrısı işleci verildiğinde, bu söz dizimi `x` koordinatı 3 birimlerinin ve `y` koordinat 2 birimlerinin kaymasını sağlamak için kullanılabilir. Aşağıdaki kod, bu tür bir tanımı göstermektedir:
+Ancak uygun bir aşırı yüklenmiş işlev çağrısı işleci verildiğinde, bu söz dizimi `x` koordinat 3 birimlerini ve `y` koordinat 2 birimlerini kaydırmak için kullanılabilir. Aşağıdaki kod, bu tür bir tanımı göstermektedir:
 
 ```cpp
 // function_call.cpp
@@ -86,4 +87,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)
+[İşleç aşırı yüklemesi](../cpp/operator-overloading.md)

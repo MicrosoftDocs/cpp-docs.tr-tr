@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: hata Iletisi düzenleme denetimi'
 title: Hata İletisi Düzenleme Denetimi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Error Message edit control
 ms.assetid: 79320694-c30e-4c37-bb94-6cb36c32d4e6
-ms.openlocfilehash: e7d9205cbf14cb2c8859269c64013fe3bb9105f6
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: c564768625ae90069d7ad811c04a898a014de5d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192453"
 ---
 # <a name="error-message-edit-control"></a>Hata İletisi Düzenleme Denetimi
 
-**Hata iletisi** sistem hatası iletisi veya modülü hata iletisi girdiğiniz değere göre metin kutusu içerir.
+**Hata ileti** kutusu, girilen değere göre sistem hatası iletisinin veya modül hata iletisinin metnini içerir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Değer Düzenleme Denetimi](value-edit-control.md)
+[Değer düzenleme denetimi](value-edit-control.md)

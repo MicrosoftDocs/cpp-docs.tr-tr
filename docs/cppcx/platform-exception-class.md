@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Platform:: Exception sınıfı'
 title: 'Platform:: Exception sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
-ms.openlocfilehash: bfdd8b3df720073e6b4a19cdb5b34db23e659fd0
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 1b6ad35e04ae239d90dbfceecaaf72223ae6a7ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90741976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195222"
 ---
 # <a name="platformexception-class"></a>Platform:: Exception sınıfı
 
@@ -35,7 +36,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |[Özel durum:: Exception](#ctor)|`Exception` sınıfının yeni bir örneğini başlatır.|
 
@@ -43,7 +44,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 
 `Exception`Sınıfı `Equals()` , `Finalize()` `GetHashCode()` `GetType()` `MemberwiseClose()` `ToString()` [Platform:: Object sınıfından](../cppcx/platform-object-class.md),,,, ve yöntemlerini devralır. `Exception`Sınıfında Ayrıca aşağıdaki yöntem de bulunur.
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |[Özel durum:: CreateException](#createexception)|Belirtilen HRESULT değerini temsil eden bir özel durum oluşturur.|
 
@@ -51,7 +52,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 
 Özel durum sınıfı aşağıdaki özelliklere de sahiptir.
 
-|Üye|Description|
+|Üye|Açıklama|
 |------------|-----------------|
 |[Özel durum:: HResult](#hresult)|Özel duruma karşılık gelen HRESULT.|
 |[Özel durum:: Ileti](#message)|Özel durumu açıklayan bir ileti. Bu değer salt okunurdur ve oluşturulduktan sonra değiştirilemez `Exception` .|
@@ -70,7 +71,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 
 Belirtilen HRESULT değerinden Platform:: Exception ^ oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Exception^ CreateException(int32 hr);
@@ -99,7 +100,7 @@ Yalnızca HRESULT içeren bir [Platform:: COMException](../cppcx/platform-comexc
 
 Özel durum sınıfının yeni bir örneğini başlatma.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Exception(int32 hresult);

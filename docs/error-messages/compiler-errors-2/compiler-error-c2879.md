@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2879'
 title: Derleyici hatası C2879
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2879
 ms.assetid: ac92b645-2394-49de-8632-43d44e0553ed
-ms.openlocfilehash: 6c7238faf94a2493894534ae5684634b65bb4342
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6060678f71bf36d0af2e94e380a046ea7916ef05
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736301"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194377"
 ---
 # <a name="compiler-error-c2879"></a>Derleyici hatası C2879
 

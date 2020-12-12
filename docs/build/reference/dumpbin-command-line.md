@@ -1,15 +1,16 @@
 ---
+description: Daha fazla bilgi için bkz. DUMPBIN komut satırı
 title: DUMPBIN Komut Satırı
 ms.date: 11/04/2016
 helpviewer_keywords:
 - DUMPBIN program, command line
 ms.assetid: e6ad17d3-965d-41aa-9dfd-75bb073718d4
-ms.openlocfilehash: 4f663a74fd57f52aa559270d61df4a130cf7e86f
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 96b4216307201613c82a4671b9eb10bddab18e90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440063"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192687"
 ---
 # <a name="dumpbin-command-line"></a>DUMPBIN Komut Satırı
 
@@ -23,9 +24,9 @@ Bilgileri denetlemek için gereken herhangi bir seçeneği ve bir veya daha fazl
 
 Bir seçenek belirtmeden DUMPBIN 'i çalıştırdığınızda, DUMPBIN/SUMMARY çıkışını görüntüler.
 
-Komut `dumpbin` başka bir komut satırı girişi olmadan yazdığınızda, DUMPBIN, seçeneklerini özetleyen bir kullanım ifadesini görüntüler.
+Komutu `dumpbin` başka bir komut satırı girişi olmadan yazdığınızda, DUMPBIN, seçeneklerini özetleyen bir kullanım ifadesini görüntüler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Ek MSVC derleme araçları](c-cpp-build-tools.md)<br/>
-[DUMPBIN Başvurusu](dumpbin-reference.md)
+[DUMPBIN başvurusu](dumpbin-reference.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Environment-Variable makrolar'
 title: Ortam Değişkeni Makroları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - environment variables, macros in NMAKE
 - macros, environment-variable
 ms.assetid: f8e96635-0906-47b0-9f56-12a6fdf5e347
-ms.openlocfilehash: a96b2de8469ace971d7fbc2707d3f786e873bb26
-ms.sourcegitcommit: 6cb0670ca7d40e8ec55f162b8ce2847f5ae15f5c
+ms.openlocfilehash: b7beaf8f3e98ea7447d798041f7531ed5da671ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67787337"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192596"
 ---
 # <a name="environment-variable-macros"></a>Ortam Değişkeni Makroları
 
-NMAKE oturumu başlamadan önce mevcut ortam değişkenleri için makro tanımlarını alır. İşletim sistemi ortamında bir değişken ayarlandıysa, NMAKE makrosu kullanılabilir. Devralınan adlarını büyük harfe dönüştürülür. Devralma, ön işleme önce gerçekleşir. Derleme görevleri dosyası içinde aynı ada sahip tüm makrolar geçersiz kılmak için ortam değişkenlerini devralınan makroları neden /E seçeneğini kullanın.
+NMAKE, oturum başlamadan önce var olan ortam değişkenlerine ait Makro tanımlarını devralır. İşletim sistemi ortamında bir değişken ayarlandıysa, bir NMAKE makrosu olarak kullanılabilir. Devralınan adlar büyük harfe dönüştürülür. Devralma, ön işlemden önce oluşur. Ortam değişkenlerinden devralınan makroların, derleme görevleri dosyası içindeki aynı ada sahip tüm makroları geçersiz kılmasını sağlamak için/E seçeneğini kullanın.
 
-Ortam değişkeni makroları oturumda tanımlanabilir ve bu karşılık gelen ortam değişkenini değiştirir. Ayrıca, ortam değişkenleri KÜMESİ komutu değiştirebilirsiniz. Bir oturumda bir ortam değişkeni değiştirmek için Ayarla komutunu kullanarak karşılık gelen makrosu, ancak değiştirmez.
+Ortam değişkeni makroları oturumunda yeniden tanımlanabilir ve bu, karşılık gelen ortam değişkenini değiştirir. Ayrıca, SET komutuyla ortam değişkenlerini de değiştirebilirsiniz. Bir oturumdaki ortam değişkenini değiştirmek için SET komutunu kullanmak, ilgili makroyu değiştirmez, ancak.
 
 Örneğin:
 
@@ -28,10 +29,10 @@ all:
     echo %%PATH%%
 ```
 
-Bu örnekte, değiştirme `PATH` karşılık gelen ortam değişkenini değiştirir `PATH`; bunu ekler `\nonesuch` yolunuza.
+Bu örnekte, `PATH` karşılık gelen ortam değişkenini değiştirme,, `PATH` `\nonesuch` yolunuza ekler.
 
-Bir ortam değişkeni, bir derleme görevleri dosyasında sözdizimsel olarak yanlış olan dize olarak tanımlanırsa, makro oluşturulur ve herhangi bir uyarı oluşturulur. NMAKE bir değişken değerini bir dolar işareti ($) içeriyorsa, bir makro çağrısı başlangıcı olarak yorumlar. Makro kullanarak beklenmeyen davranışlara neden olabilir.
+Bir ortam değişkeni, derleme görevleri dosyasında sözdizimsel olarak yanlış olacak bir dize olarak tanımlanmışsa, hiçbir makro oluşturulmaz ve hiçbir uyarı oluşturulmaz. Bir değişkenin değeri dolar işareti ($) içeriyorsa, NMAKE onu makro çağrısının başlangıcı olarak yorumlar. Makronun kullanılması beklenmeyen davranışlara neden olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel NMAKE Makroları](special-nmake-macros.md)
+[Özel NMAKE makroları](special-nmake-macros.md)

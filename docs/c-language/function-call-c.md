@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlev çağrısı (C)'
 title: İşlev Çağrısı (C)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - functions [C], calling
 - function calls
 ms.assetid: 35c66719-3f15-4d3b-97da-4e19dc97b308
-ms.openlocfilehash: 23531f25128fc267caa3a3cad5f2c52e603a2cc6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7ebe8ded3e64f7b636aaf438ee2bff8e4f221610
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229694"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195976"
 ---
 # <a name="function-call-c"></a>İşlev Çağrısı (C)
 
 *İşlev çağrısı* , çağrılan işlevin adını veya bir işlev işaretçisinin değerini içeren bir ifadedir ve isteğe bağlı olarak, işleve geçirilen bağımsız değişkenleri.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *sonek ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sonek-ifade*  **(**  *bağımsız değişken-ifade-List*<sub>opt</sub> **)**

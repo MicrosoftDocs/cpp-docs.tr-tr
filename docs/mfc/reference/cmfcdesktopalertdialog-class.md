@@ -1,5 +1,6 @@
 ---
-title: CMFCDesktopAlertDialog Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCDesktopAlertDialog sınıfı'
+title: CMFCDesktopAlertDialog sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - CMFCDesktopAlertDialog
@@ -14,20 +15,20 @@ helpviewer_keywords:
 - CMFCDesktopAlertDialog [MFC], HasFocus
 - CMFCDesktopAlertDialog [MFC], PreTranslateMessage
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
-ms.openlocfilehash: 479959e9b021255e309caf6fee02588a8cd8f1d1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 327ec72b1e58d90e768f51c083ff9545f24f6f0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193194"
 ---
-# <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog Sınıfı
+# <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog sınıfı
 
-Sınıf, `CMFCDesktopAlertDialog` açılan pencerede özel bir iletişim kutusu görüntülemek için [CMFCDesktopAlertWnd Class](../../mfc/reference/cmfcdesktopalertwnd-class.md) ile birlikte kullanılır.
+`CMFCDesktopAlertDialog`Sınıf, bir açılan pencerede özel bir iletişim kutusu göstermek Için [CMFCDesktopAlertWnd sınıfıyla](../../mfc/reference/cmfcdesktopalertwnd-class.md) birlikte kullanılır.
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCDesktopAlertDialog : public CDialogEx
@@ -37,34 +38,34 @@ class CMFCDesktopAlertDialog : public CDialogEx
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCDesktopAlertDialog::CreateFromParams](#createfromparams)||
-|[CMFCDesktopAlertDialog::GetDlgSize](#getdlgsize)||
-|[CMFCDesktopAlertDialog::HasFocus](#hasfocus)||
-|[CMFCDesktopAlertDialog::PreTranslateMessage](#pretranslatemessage)|(Geçersiz `CDialogEx::PreTranslateMessage`kılar .)|
+|[CMFCDesktopAlertDialog:: CreateFromParams](#createfromparams)||
+|[CMFCDesktopAlertDialog:: Getdlsize](#getdlgsize)||
+|[CMFCDesktopAlertDialog:: HasFocus](#hasfocus)||
+|[CMFCDesktopAlertDialog::P reTranslateMessage](#pretranslatemessage)|(Geçersiz kılmalar `CDialogEx::PreTranslateMessage` .)|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açılan pencerede özel bir iletişim kutusu görüntülemek için aşağıdaki adımları gerçekleştirin:
+Açılan pencerede özel bir iletişim kutusu göstermek için aşağıdaki adımları gerçekleştirin:
 
-1. Bir sınıf türetmek `CMFCDesktopAlertDialog`.
+1. Sınıfından bir sınıf türet `CMFCDesktopAlertDialog` .
 
-1. Projenin kaynaklarında bir alt iletişim şablonu oluşturun.
+1. Projenin kaynaklarında bir alt iletişim kutusu şablonu oluşturun.
 
-1. [CMFCDesktopAlertWnd'i arayın::İletişim](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) şablonunun kaynak kimliği ve parametre olarak türemiş sınıfın çalışma zamanı sınıf bilgilerine işaretçisi ile oluşturun.
+1. İletişim kutusu şablonunun kaynak KIMLIĞIYLE [CMFCDesktopAlertWnd:: Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) ' i çağırın ve türetilmiş sınıfın çalışma zamanı sınıfı bilgilerine parametre olarak bir işaretçi koyun.
 
-1. Barındırılan denetimlerden gelen tüm bildirimleri işlemek için özel iletişim kutusunu programla veya bu bildirimleri doğrudan işlemek için barındırılan denetimleri programla.
+1. Barındırılan denetimlerden gelen tüm bildirimleri işlemek için özel iletişim kutusunu programlama veya barındırılan denetimleri bu bildirimleri doğrudan işleyecek şekilde programlama.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cdialog](../../mfc/reference/cdialog-class.md)
+[CDialog](../../mfc/reference/cdialog-class.md)
 
 [CDialogEx](../../mfc/reference/cdialogex-class.md)
 
@@ -72,9 +73,9 @@ Açılan pencerede özel bir iletişim kutusu görüntülemek için aşağıdaki
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxDesktopAlertDialog.h
+**Üstbilgi:** afxDesktopAlertDialog. h
 
-## <a name="cmfcdesktopalertdialogcreatefromparams"></a><a name="createfromparams"></a>CMFCDesktopAlertDialog::CreateFromParams
+## <a name="cmfcdesktopalertdialogcreatefromparams"></a><a name="createfromparams"></a> CMFCDesktopAlertDialog:: CreateFromParams
 
 ```
 BOOL CreateFromParams(
@@ -84,15 +85,15 @@ BOOL CreateFromParams(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *params*<br/>
+'ndaki *params*<br/>
 
-[içinde] *pParent*<br/>
+'ndaki *pParent*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcdesktopalertdialoggetdlgsize"></a><a name="getdlgsize"></a>CMFCDesktopAlertDialog::GetDlgSize
+## <a name="cmfcdesktopalertdialoggetdlgsize"></a><a name="getdlgsize"></a> CMFCDesktopAlertDialog:: Getdlsize
 
 ```
 CSize GetDlgSize();
@@ -102,7 +103,7 @@ CSize GetDlgSize();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcdesktopalertdialoghasfocus"></a><a name="hasfocus"></a>CMFCDesktopAlertDialog::HasFocus
+## <a name="cmfcdesktopalertdialoghasfocus"></a><a name="hasfocus"></a> CMFCDesktopAlertDialog:: HasFocus
 
 ```
 BOOL HasFocus() const;
@@ -112,7 +113,7 @@ BOOL HasFocus() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcdesktopalertdialogpretranslatemessage"></a><a name="pretranslatemessage"></a>CMFCDesktopAlertDialog::PreTranslateMessage
+## <a name="cmfcdesktopalertdialogpretranslatemessage"></a><a name="pretranslatemessage"></a> CMFCDesktopAlertDialog::P reTranslateMessage
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -120,7 +121,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pMsg*<br/>
+'ndaki *pMsg*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -128,8 +129,8 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCDesktopAlertWnd Sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md)<br/>
-[CMFCDesktopAlertWndInfo Sınıfı](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)<br/>
-[CDialogEx Sınıfı](../../mfc/reference/cdialogex-class.md)
+[CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md)<br/>
+[Cmfcdesktopalertwnınfo sınıfı](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)<br/>
+[CDialogEx sınıfı](../../mfc/reference/cdialogex-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: do-while ekstresi (C++)'
 title: do-while Deyimi (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - do keyword [C++]
 - while keyword [C++], do-while
 ms.assetid: e01e6f7c-7da1-4591-87f9-c26ff848e7b0
-ms.openlocfilehash: f52c065210a8861dc065508248a506770b039b1d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fed7dc3300651dd35326c1eb28e3078538db1301
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189279"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195495"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C++)
 
 Belirtilen sonlandırma koşulu ( *ifade*) sıfıra değerlendirilene kadar bir *deyimi* sürekli olarak yürütür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 do
@@ -58,7 +59,7 @@ int main()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Yineleme Deyimleri](../cpp/iteration-statements-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[while Deyimi (C++)](../cpp/while-statement-cpp.md)<br/>
-[for Deyimi (C++)](../cpp/for-statement-cpp.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[while deyimleri (C++)](../cpp/while-statement-cpp.md)<br/>
+[for deyimleri (C++)](../cpp/for-statement-cpp.md)<br/>
 [Range-based for Deyimi (C++)](../cpp/range-based-for-statement-cpp.md)

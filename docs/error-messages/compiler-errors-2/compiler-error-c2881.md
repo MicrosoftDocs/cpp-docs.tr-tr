@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2881'
 title: Derleyici hatası C2881
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2881
 ms.assetid: b49c63c2-b064-4d4b-a75e-ddd2af947522
-ms.openlocfilehash: 9c171fd529943bb07a6c512e4ac97f64f13f959d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a1bc3922ce315d29f84309849660b2574631b2fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194364"
 ---
 # <a name="compiler-error-c2881"></a>Derleyici hatası C2881
 

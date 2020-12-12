@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: üç nokta ve değişken bağımsız değişken Şablonlar'
 title: Üç nokta ve değişken bağımsız değişken Şablonlar
 ms.date: 11/04/2016
 ms.assetid: f20967d9-c967-4fd2-b902-2bb1d5ed87e3
-ms.openlocfilehash: e916dac40355f4397ef4846c0edf568c60b7d3dd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 37cb2e02f818cc5d4db8954a348fc749a477b7d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195470"
 ---
 # <a name="ellipsis-and-variadic-templates"></a>Üç nokta ve değişken bağımsız değişken Şablonlar
 
@@ -15,9 +16,9 @@ Bu makalede, `...` C++ değişen tek değişkenli şablonlar ile üç nokta () n
 
 Değişen bir bağımsız değişken *şablon* , rastgele sayıda bağımsız değişkeni destekleyen bir sınıf veya işlev şablonudur. Bu mekanizma, hem sınıf şablonlarına hem de işlev şablonlarına uygulayabileceğiniz ve bu sayede çok sayıda tür kullanımı güvenli ve önemsiz olmayan işlevsellik ve esneklik sağlayan C++ kitaplık geliştiricileri için yararlıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-Üç nokta, değişen sayıda bağımsız değişken içeren şablonlar tarafından iki şekilde kullanılır. Parametre adının solunda, bir *parametre paketini*ve parametre adının sağından bağımsız olarak parametre paketlerini ayrı adlara genişletir.
+Üç nokta, değişen sayıda bağımsız değişken içeren şablonlar tarafından iki şekilde kullanılır. Parametre adının solunda, bir *parametre paketini* ve parametre adının sağından bağımsız olarak parametre paketlerini ayrı adlara genişletir.
 
 Aşağıda, değişken sayıda bağımsız *değişken içeren şablon sınıfı* tanım sözdiziminin temel bir örneği verilmiştir:
 

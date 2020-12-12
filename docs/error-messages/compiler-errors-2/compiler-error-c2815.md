@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2815'
 title: Derleyici hatası C2815
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2815
 ms.assetid: d0256fd6-0721-4c99-b03c-52d96e77a613
-ms.openlocfilehash: 579fc94f3b16056b5f26dd0b9ea16b5fc36fda22
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: fd0ee162c10acd89e4746ea906d64ea8ef069271
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750721"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194845"
 ---
 # <a name="compiler-error-c2815"></a>Derleyici hatası C2815
 
 ' operator delete ': ilk biçimsel parametre ' void * ' olmalıdır, ancak ' param ' kullanıldı
 
-Kullanıcı tanımlı [işleç silme](../../standard-library/new-operators.md#op_delete) işlevinin, `void *`türünde bir ilk biçimsel parametre olması gerekir.
+Kullanıcı tanımlı [işleç silme](../../standard-library/new-operators.md#op_delete) işlevi, türünde bir ilk biçimsel parametre almalıdır `void *` .
 
 Aşağıdaki örnek C2815 oluşturur:
 

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/nologo (başlangıç başlığını gösterme) (C/C++)
 title: /nologo (Başlangıç Başlığını Gösterme) (C/C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - nologo compiler option [C++]
 - banners, suppressing startup
 ms.assetid: 75930d8b-b11c-4db8-99e5-b52f97da0693
-ms.openlocfilehash: 1e48989a8e433296856ae58560823e601e36008f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a924eaf18a772b9495e1a493855fd72e9b79dd83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320467"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196613"
 ---
 # <a name="nologo-suppress-startup-banner-cc"></a>/nologo (Başlangıç Başlığını Gösterme) (C/C++)
 
-Derleme sırasında görüntülenen bilgi iletilerini ve derleyici başlatıldığında telif hakkı başlığı görüntüsünü bastırır.
+Derleyici başlatıldığında ve derleme sırasında bilgilendirici iletileri görüntülerken telif hakkı başlığının görüntülenmesini önler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /nologo
@@ -31,13 +32,13 @@ Derleme sırasında görüntülenen bilgi iletilerini ve derleyici başlatıldı
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **genel** özellik sayfası.
+1. **Genel** Özellik sayfasına tıklayın.
 
-1. Değiştirme **Başlangıç başlığını gösterme** özelliği.
+1. **Başlangıç başlığını gösterme** özelliğini değiştirin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -45,5 +46,5 @@ Derleme sırasında görüntülenen bilgi iletilerini ve derleyici başlatıldı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

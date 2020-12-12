@@ -1,5 +1,6 @@
 ---
-title: Platform::details Namespace
+description: 'Daha fazla bilgi edinin: Platform::D euçlar ad alanı'
+title: Platform::D euçlar ad alanı
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details Namespace
 ms.assetid: e13c1f93-c823-4f0f-a3ee-2429bfd184db
-ms.openlocfilehash: 05677a08b7c63ddbe2196da946d62c00004d8942
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 693dea2aa366868fe6a118baf5c57ac58b338cf8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195380"
 ---
-# <a name="platformdetails-namespace"></a>Platform::details Namespace
+# <a name="platformdetails-namespace"></a>Platform::D euçlar ad alanı
 
-Bu ad alanı, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.
+Bu ad alanı yalnızca iç kullanım amaçlıdır ve geliştirme için kullanılması amaçlanmamaktadır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Platform {
@@ -28,22 +29,22 @@ namespace Platform {
 
 ### <a name="members"></a>Üyeler
 
-Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri görüntüleyebilir.
+Bu ad alanı iç kullanım için tasarlanmış olsa da, tarayıcılar bu ad alanının aşağıdaki üyelerini görüntüleyebilir.
 
-|Ad|Açıklama|
+|Ad|Görüyorum|
 |----------|------------|
-|Konsol|sınıf. Birim testleri çıkış görüntüler.|
+|Konsol|Sınıfı. Çıktıyı birim testlerinde görüntüler.|
 |_GUID|Yapı|
-|Yığın|örneği|
+|Yığın|Sınıf|
 |HeapAllocationTrackingLevel|Sabit Listesi|
-|HeapEntryHandler|Temsilci|
+|Heapentryhandler ile numaralandırır|Temsilci|
 |IActivationFactory|Arabirim|
 |IAgileObject|Arabirim|
 |IClassFactory|Arabirim|
 |IEquatable|Arabirim|
 |IPrintable|Arabirim|
 |IWeakReference|Arabirim|
-|IWeakReferenceSource|Arabirim|
+|Iweakreferencesource öğesinden|Arabirim|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -51,10 +52,10 @@ Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri 
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
-**Namespace:** Platform::details
+**Ad alanı:** Platform::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)
+[Platform ad alanı](platform-namespace-c-cx.md)

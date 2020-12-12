@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3254'
 title: Derleyici hatası C3254
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3254
 ms.assetid: 93427b10-fa72-4e43-80d1-1a6e122f9f40
-ms.openlocfilehash: 6b9ff41fb4f45d9570869ca90e3c6091cc03a58a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7d0084f52060803cd99b973c9f6105fc8915c2aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754257"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194221"
 ---
 # <a name="compiler-error-c3254"></a>Derleyici hatası C3254
 
