@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: vararg'
 title: vararg (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - vararg attribute
 ms.assetid: 20fc3244-18e9-411c-990e-d5b4fa29a570
-ms.openlocfilehash: edfcfdb32abeaff487134eac35033117b470d7d2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7eb2df5f0a2be212bc49c69f329f875f02bf408d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329507"
 ---
 # <a name="vararg"></a>vararg
 
@@ -29,7 +30,7 @@ ms.locfileid: "88832977"
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **vararg**kullanımını gösterir:
+Aşağıdaki kod, **vararg** kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_vararg.cpp
@@ -50,7 +51,7 @@ __interface X : public IUnknown
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Interface yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: length_is'
 title: length_is (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - length_is attribute
 ms.assetid: 1d99b883-84bb-4b1e-b098-eb780fc94f40
-ms.openlocfilehash: 4e6256c4fb7f7742be52d582fc57316da5e773a6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b3f913819b88958f294aee42f4cbda07827fa990
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834160"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329847"
 ---
 # <a name="length_is"></a>length_is
 
 Aktarılacak dizi öğelerinin sayısını belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ length_is("expression") ]
@@ -25,7 +26,7 @@ Aktarılacak dizi öğelerinin sayısını belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*ifadesini*<br/>
+*expression*<br/>
 Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin veriliyor.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -41,7 +42,7 @@ Dizinin bir bölümünü belirtme örneği için bkz. [first_is](first-is.md) .
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`struct`** Or **`union`** , Interface parametresi, Interface yöntemi içindeki alan|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

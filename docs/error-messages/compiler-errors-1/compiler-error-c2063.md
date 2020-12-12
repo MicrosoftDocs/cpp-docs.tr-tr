@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2063'
 title: Derleyici hatası C2063
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2063
 ms.assetid: 0a90c18f-4029-416a-9128-e8713b53e6f1
-ms.openlocfilehash: 91acddd812a3caf9c16a4d1d4f92315045eae7da
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 18b2cd6bf68144245b85d744923404f4a27d63f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302022"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328619"
 ---
 # <a name="compiler-error-c2063"></a>Derleyici hatası C2063
 

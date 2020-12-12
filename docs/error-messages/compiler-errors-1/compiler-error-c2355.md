@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2355'
 title: Derleyici hatası C2355
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2355
 ms.assetid: 0a947881-d61f-4f98-8409-32140f39500b
-ms.openlocfilehash: 4e78d20fb59beead08aaddcf85138f845cfc0390
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f28799d4fbd72c7a5959bc4c68e1810b26052844
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212767"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328381"
 ---
 # <a name="compiler-error-c2355"></a>Derleyici hatası C2355
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: pointer_default'
 title: pointer_default (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - pointer_default attribute
 ms.assetid: 2d0c7bbc-a1e8-4337-9e54-e304523e2735
-ms.openlocfilehash: e4e5ce03e8c0e6ca19814f5d228305b0d97322f9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0c7768227a5922bca7e1b48b3ad82821bb62ea54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836198"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329686"
 ---
 # <a name="pointer_default"></a>pointer_default
 
 Parametre listelerinde görünen en üst düzey işaretçiler hariç olmak üzere tüm işaretçiler için varsayılan işaretçi özniteliğini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ pointer_default(value) ]
@@ -25,8 +26,8 @@ Parametre listelerinde görünen en üst düzey işaretçiler hariç olmak üzer
 
 ### <a name="parameters"></a>Parametreler
 
-*deeri*<br/>
-İşaretçi türünü tanımlayan bir değer: **PTR**, **ref**veya **Unique**.
+*değer*<br/>
+İşaretçi türünü tanımlayan bir değer: **PTR**, **ref** veya **Unique**.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -34,14 +35,14 @@ Parametre listelerinde görünen en üst düzey işaretçiler hariç olmak üzer
 
 ## <a name="example"></a>Örnek
 
-**Pointer_default**örnek bir kullanımı için [DefaultValue](defaultvalue.md) örneğine bakın.
+**Pointer_default** örnek bir kullanımı için [DefaultValue](defaultvalue.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**arayüz**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

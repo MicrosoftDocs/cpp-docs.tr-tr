@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Standart denetimden denetim türetme'
 title: Standart Bir Denetimden Denetim Türetme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Windows common controls [MFC], deriving from
 - standard controls
 ms.assetid: a6f84315-7007-4e0e-8576-78be81254802
-ms.openlocfilehash: 54e43c8445bb6b8db4c6a7a4b28890e81be52d6c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 80e63464a7ad6d869582c66d5047a255e303a6a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327876"
 ---
 # <a name="deriving-controls-from-a-standard-control"></a>Standart Bir Denetimden Denetim Türetme
 
@@ -36,7 +37,7 @@ Her [CWnd](reference/cwnd-class.md)ile türetilmiş sınıfta olduğu gibi, varo
 
 1. `OnInitDialog`Türetilmiş denetimin üye işlevini çağırmak için iletişim sınıfınızın üye işlevini geçersiz kılın `SubclassDlgItem` .
 
-`SubclassDlgItem`"dinamik alt sınıflar" iletişim kutusu şablonundan oluşturulan bir denetim. Bir denetim dinamik olarak alt sınıflı olduğunda, Windows 'a kanca, kendi uygulamanızdaki bazı iletileri işleyin ve ardından kalan iletileri Windows 'a geçitirsiniz. Daha fazla bilgi için [SubclassDlgItem](reference/cwnd-class.md#subclassdlgitem) `CWnd` *MFC başvurusu*içindeki sınıfın SubclassDlgItem üye işlevine bakın. Aşağıdaki örnek, çağrısı yapılacak bir geçersiz kılmayı nasıl yazacağınızı gösterir `OnInitDialog` `SubclassDlgItem` :
+`SubclassDlgItem` "dinamik alt sınıflar" iletişim kutusu şablonundan oluşturulan bir denetim. Bir denetim dinamik olarak alt sınıflı olduğunda, Windows 'a kanca, kendi uygulamanızdaki bazı iletileri işleyin ve ardından kalan iletileri Windows 'a geçitirsiniz. Daha fazla bilgi için [](reference/cwnd-class.md#subclassdlgitem) `CWnd` *MFC başvurusu* içindeki sınıfın SubclassDlgItem üye işlevine bakın. Aşağıdaki örnek, çağrısı yapılacak bir geçersiz kılmayı nasıl yazacağınızı gösterir `OnInitDialog` `SubclassDlgItem` :
 
 [!code-cpp[NVC_MFCControlLadenDialog#3](codesnippet/cpp/deriving-controls-from-a-standard-control_1.cpp)]
 
@@ -44,5 +45,5 @@ Türetilmiş denetim iletişim kutusu sınıfına katıştırıldığından, ile
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetimleri Yapma ve Kullanma](making-and-using-controls.md)<br/>
+[Denetimleri yapma ve kullanma](making-and-using-controls.md)<br/>
 [Denetimler](controls-mfc.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDataSource sınıfı'
 title: CDataSource Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -56,18 +57,18 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: f94cd631f1c6febdc07d53f84803b1203f4116bc
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0fc764341c0077b305b8a0ad23f66b8691f1e520
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328767"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 
 Bir sağlayıcının veri kaynağına bir bağlantıyı temsil eden bir OLE DB veri kaynağı nesnesine karşılık gelir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDataSource
@@ -103,7 +104,7 @@ Tek bir bağlantı için bir veya daha fazla veritabanı oturumu oluşturulabili
 
 İşaretçiyi serbest bırakarak bağlantıyı kapatır `m_spInit` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close() throw();
@@ -398,7 +399,7 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 'ndaki Veri sağlayıcısının program KIMLIĞI.
 
 *pPropset*<br/>
-'ndaki Ayarlanacak özellikleri ve değerleri içeren bir [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları dizisine yönelik bir işaretçi. Windows SDK *OLE DB Programcı başvurusu* Içindeki [özellik kümeleri ve özellik grupları](/previous-versions/windows/desktop/ms713696(v=vs.85)) bölümüne bakın. Veri kaynağı nesnesi başlatılmışsa, özellikler veri kaynağı özellik grubuna ait olmalıdır. Aynı özellik *pPropset*içinde birden çok kez belirtilirse, kullanılan değer sağlayıcıya özeldir. *UlPropSets* sıfır ise, bu parametre yok sayılır.
+'ndaki Ayarlanacak özellikleri ve değerleri içeren bir [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapıları dizisine yönelik bir işaretçi. Windows SDK *OLE DB Programcı başvurusu* Içindeki [özellik kümeleri ve özellik grupları](/previous-versions/windows/desktop/ms713696(v=vs.85)) bölümüne bakın. Veri kaynağı nesnesi başlatılmışsa, özellikler veri kaynağı özellik grubuna ait olmalıdır. Aynı özellik *pPropset* içinde birden çok kez belirtilirse, kullanılan değer sağlayıcıya özeldir. *UlPropSets* sıfır ise, bu parametre yok sayılır.
 
 *ulPropSets*<br/>
 'ndaki *PPropset* bağımsız değişkeninde geçirilen [dbpropset](/previous-versions/windows/desktop/ms714367(v=vs.85)) yapılarının sayısı. Bu sıfırsa, sağlayıcı *pPropset*'i yoksayar.

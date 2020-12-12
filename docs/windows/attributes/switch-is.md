@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: switch_is'
 title: switch_is (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - switch_is attribute
 ms.assetid: f1fffe5d-12d2-4e0f-8803-ccb715177d2d
-ms.openlocfilehash: b017ba6dd2bbdfab7bfb5fa2dbf19e613e14772b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 88489a9722e79da6629dfc2b39bfbe7f6ab39932
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329573"
 ---
 # <a name="switch_is"></a>switch_is
 
@@ -29,14 +30,14 @@ Birleşim üyesini seçen birleşim ayırt edici olarak davranan ifade veya tan�
 
 ## <a name="example"></a>Örnek
 
-**Switch_is**örnek bir kullanımı için bkz. [durum](case-cpp.md) örneği.
+**Switch_is** örnek bir kullanımı için bkz. [durum](case-cpp.md) örneği.
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`typedef`**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4935'
 title: Derleyici Uyarısı (düzey 1) C4935
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - C4935
 ms.assetid: a36c56d3-571a-44dd-bb0f-bcc6b020e134
-ms.openlocfilehash: 839b86ef736f1150e3e0e23d8404f169f9f0d5ce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a5673c66a9f0d93cc4f7026e8ca0e56c89be0faf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62406255"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328050"
 ---
 # <a name="compiler-warning-level-1-c4935"></a>Derleyici Uyarısı (düzey 1) C4935
 
-derleme erişim belirticisi 'erişimden' değiştirildi
+' Access ' öğesinden derleme erişim belirticisi değiştirildi
 
-Bir türü derleme görünürlüğünü değiştirildi. Derleyici, bulduğu son tanımlayıcısını kullanır. Örneğin, bir ileri dönük bildirimi derleme görünürlüğünü sınıf tanımının derleme görünürlüğünü farklı olabilir.
+Bir türün derleme görünürlüğü değiştirildi. Derleyici, karşılaştığı son belirticisi kullanır. Örneğin, bir ileriye doğru bildirimin derleme görünürlüğü, sınıf tanımının derleme görünürlüğnden farklı olabilir.
 
-C4935 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.
+C4935 yalnızca eski derleyici seçeneği **/clr: oldSyntax** kullanılarak erişilebilir.

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDataConnection sınıfı'
 title: CDataConnection Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -61,18 +62,18 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: c456f4bf5891f550fcd9523fa376333d66e079a6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7cdcb681c40d1ef4e93baee5dc4e4395e6ea9c5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509107"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328812"
 ---
 # <a name="cdataconnection-class"></a>CDataConnection Sınıfı
 
 Veri kaynağıyla bağlantıyı yönetir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDataConnection
@@ -89,7 +90,7 @@ class CDataConnection
 | Ad | Açıklama |
 |-|-|
 |[CDataConnection](#cdataconnection)|Oluşturucu. Bir nesneyi örnekleyen ve başlatır `CDataConnection` .|
-|[Kopya](#copy)|Varolan bir veri bağlantısının kopyasını oluşturur.|
+|[Kopyala](#copy)|Varolan bir veri bağlantısının kopyasını oluşturur.|
 |[Aç](#open)|Başlatma dizesi kullanarak bir veri kaynağına bir bağlantı açar.|
 |[OpenNewSession](#opennewsession)|Geçerli bağlantıda yeni bir oturum açar.|
 
@@ -198,7 +199,7 @@ Standart HRESULT.
 
 Geçerli oturumun açık olup olmadığını belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 operator BOOL() throw();
@@ -212,7 +213,7 @@ operator BOOL() throw();
 
 Geçerli oturumun açık olup olmadığını belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 operator bool() throw();
@@ -226,7 +227,7 @@ Bir **`bool`** (C++ veri türü) değeri döndürür. **`true`** Geçerli oturum
 
 İçerilen nesneye bir başvuru döndürür `CDataSource` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 operator const CDataSource&() throw();
@@ -248,7 +249,7 @@ Başvuru alan bir işleviniz varsa ( `func` aşağıdaki gibi) `CDataSource` , `
 
 İçerilen nesneye bir işaretçi döndürür `CDataSource` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 operator const CDataSource*() throw();
@@ -264,7 +265,7 @@ Kullanım örneği için bkz. [CDataSource&işleci ](#op_cdata_amp) .
 
 İçerilen nesneye bir başvuru döndürür `CSession` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 operator const CSession&();
@@ -286,7 +287,7 @@ Başvuru alan bir işleviniz varsa ( `func` aşağıdaki gibi) `CSession` , `CSe
 
 İçerilen nesneye bir işaretçi döndürür `CSession` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 operator const CSession*() throw();

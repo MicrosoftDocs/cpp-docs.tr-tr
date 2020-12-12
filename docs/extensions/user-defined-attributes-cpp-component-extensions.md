@@ -1,25 +1,26 @@
 ---
-title: Kullanıcı tanımlı öznitelikler (C++/CLI ve C++/CX)
+description: 'Daha fazla bilgi edinin: User-Defined öznitelikleri (C++/CLı ve C++/CX)'
+title: Kullanıcı Tanımlı Öznitelikler (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - metadata, extending
 - custom attributes, extending metadata
 ms.assetid: 98b29048-a3ea-4698-8441-f149cdaec9fb
-ms.openlocfilehash: aed36ac7fed7eb1f16f8648f7bcd7efb37f43a75
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2fab2cc1317522b43cd4bddbb56ae174907607d7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327898"
 ---
-# <a name="user-defined-attributes--ccli-and-ccx"></a>Kullanıcı tanımlı öznitelikler (C++/CLI ve C++/CX)
+# <a name="user-defined-attributes--ccli-and-ccx"></a>Kullanıcı Tanımlı Öznitelikler (C++/CLI ve C++/CX)
 
-C++/CLı ve C++/CX, bir arabirimin, sınıfın veya yapının, yöntemin, parametrenin veya numaralandırmanın meta verilerini genişleten platforma özel öznitelikler oluşturmanızı sağlar. Bu öznitelikler [Standart C++ özniteliklerden](../cpp/attributes.md)farklıdır.
+C++/CLı ve C++/CX, bir arabirimin, sınıfın veya yapının, yöntemin, parametrenin veya numaralandırmanın meta verilerini genişleten platforma özel öznitelikler oluşturmanızı sağlar. Bu öznitelikler, [Standart C++ özniteliklerinden](../cpp/attributes.md)farklıdır.
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Özellikler 'e/CX C++özniteliklerini uygulayabilir, ancak oluşturuculara veya yöntemlere uygulanmaz.
+C++/CX özniteliklerini özelliklere uygulayabilir, ancak oluşturuculara veya yöntemlere uygulanmaz.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -29,15 +30,15 @@ Derleyici seçeneği: `/ZW`
 
 Bu konuda sunulan bilgiler ve söz dizimi, [özniteliğinde](../windows/attributes/attribute.md)sunulan bilgilerin yerini almak için tasarlanmıştır.
 
-Bir tür tanımlayarak <xref:System.Attribute> ve isteğe bağlı olarak <xref:System.AttributeUsageAttribute> özniteliğini uygulayarak özel bir öznitelik tanımlayabilirsiniz.
+Bir tür tanımlayarak ve <xref:System.Attribute> isteğe bağlı olarak özniteliği uygulayarak özel bir öznitelik tanımlayabilirsiniz <xref:System.AttributeUsageAttribute> .
 
-Daha fazla bilgi için bkz.
+Daha fazla bilgi için bkz:
 
-- [Öznitelik Hedefleri](attribute-targets-cpp-component-extensions.md)
+- [Öznitelik hedefleri](attribute-targets-cpp-component-extensions.md)
 
-- [Öznitelik Parametre Türleri](attribute-parameter-types-cpp-component-extensions.md)
+- [Öznitelik parametre türleri](attribute-parameter-types-cpp-component-extensions.md)
 
-Derlemeleri görsel C++olarak imzalama hakkında daha fazla bilgi için bkz. [tanımlayıcı ad derlemeleri (derleme imzalamaC++) (/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
+Visual C++ derlemeleri imzalama hakkında daha fazla bilgi için bkz. [tanımlayıcı ad derlemeleri (derleme imzalama) (C++/CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -151,7 +152,7 @@ Service Priority = 1
 Service Access = Read
 ```
 
-`Object^` türü, VARIANT veri türünün yerini alır. Aşağıdaki örnek, `Object^` dizisini parametre olarak alan özel bir özniteliği tanımlar.
+`Object^`Tür, değişken veri türünün yerini alır. Aşağıdaki örnek, bir dizi parametre olarak alan özel bir özniteliği tanımlar `Object^` .
 
 Öznitelik bağımsız değişkenleri derleme zamanı sabitleri olmalıdır; Çoğu durumda, sabit değişmez değer olmalıdır.
 
@@ -194,4 +195,4 @@ ref struct B {};
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

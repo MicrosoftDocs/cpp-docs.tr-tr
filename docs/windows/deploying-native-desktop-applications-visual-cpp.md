@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Yerel Masaüstü uygulamaları dağıtma (Visual C++)'
 title: Yerel Masaüstü Uygulamaları Dağıtma (Visual C++)
 ms.date: 05/11/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - distributing applications [C++]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
 ms.topic: overview
-ms.openlocfilehash: e9ae5db05c0835bb65a65cdccf58ab7f7d1b789f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c3da460266eb630e7ac243f523fa6e89a79fa1f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329445"
 ---
 # <a name="deploying-native-desktop-applications-visual-c"></a>Yerel Masaüstü Uygulamaları Dağıtma (Visual C++)
 
@@ -23,11 +24,11 @@ Dağıtım, başka bilgisayarlara yüklenmek üzere tamamlanmış bir uygulamay�
 
 Visual Studio, Windows uygulamalarını dağıtmak için farklı teknolojiler sağlar. Bunlara ClickOnce dağıtımı ve Windows Installer dağıtımı dahildir.
 
-- ClickOnce, ortak dil çalışma zamanı C++ (CLR) (karışık, saf ve Doğrulanabilen Derlemeler) hedefleyen uygulamaları dağıtmak için kullanılabilir. Yönetilen bir uygulama dağıtmak için Windows Installer kullanabilseniz de, bildirim imzalama gibi .NET Framework güvenlik özelliklerinden yararlandığından ClickOnce kullanmanızı öneririz. ClickOnce yerel C++ uygulamaların dağıtımını desteklemez. Daha fazla bilgi için bkz. [Visual C++ uygulamaları için ClickOnce dağıtımı](clickonce-deployment-for-visual-cpp-applications.md).
+- ClickOnce, ortak dil çalışma zamanı (CLR) (karışık, saf ve Doğrulanabilen Derlemeler) hedefleyen C++ uygulamalarını dağıtmak için kullanılabilir. Yönetilen bir uygulama dağıtmak için Windows Installer kullanabilseniz de, bildirim imzalama gibi .NET Framework güvenlik özelliklerinden yararlandığından ClickOnce kullanmanızı öneririz. ClickOnce, yerel C++ uygulamalarının dağıtımını desteklemez. Daha fazla bilgi için bkz. [Visual C++ uygulamalar Için ClickOnce dağıtımı](clickonce-deployment-for-visual-cpp-applications.md).
 
 - Windows Installer teknolojisi, CLR 'yi hedefleyen yerel C++ uygulamaları veya C++ uygulamaları dağıtmak için kullanılabilir.
 
-Belgelerinin bu bölümündeki makaleler, yerel bir görsel C++ uygulamanın desteklenen bir hedef platform sağlayan herhangi bir bilgisayarda çalıştığını, bir yükleme paketine hangi dosyaların ekleneceğini ve uygulamanızın bağımlı olduğu bileşenleri yeniden dağıtmak için önerilen yolları ele alır.
+Belgelerinin bu bölümündeki makaleler, bir yerel Visual C++ uygulamasının desteklenen bir hedef platform sağlayan herhangi bir bilgisayarda çalıştığını, bir yükleme paketine hangi dosyaların ekleneceğini ve uygulamanızın bağımlı olduğu bileşenleri yeniden dağıtmanız için önerilen yolları ele almaktadır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
@@ -45,18 +46,18 @@ Belgelerinin bu bölümündeki makaleler, yerel bir görsel C++ uygulamanın des
 
 - [Visual C++ Dosyalarını Yeniden Dağıtma](redistributing-visual-cpp-files.md)
 
-- [Dağıtım Örnekleri](deployment-examples.md)
+- [Dağıtım örnekleri](deployment-examples.md)
 
 - [Web İstemcisi Uygulamalarını Yeniden Dağıtma](redistributing-web-client-applications.md)
 
-- [Visual C++ Uygulamaları için ClickOnce Dağıtımı](clickonce-deployment-for-visual-cpp-applications.md)
+- [Visual C++ uygulamalar için ClickOnce dağıtımı](clickonce-deployment-for-visual-cpp-applications.md)
 
-- [Önceki çalışma C++ zamanı sürümünde/CLR uygulaması çalıştırma](running-a-cpp-clr-application-on-a-previous-runtime-version.md)
+- [Önceki çalışma zamanı sürümünde C++/CLR uygulaması çalıştırma](running-a-cpp-clr-application-on-a-previous-runtime-version.md)
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-- [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+- [C/C++ yalıtılmış uygulamaları ve yan yana derlemeler oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 
 - [Dağıtım](/dotnet/framework/deployment/index)
 
-- [C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+- [C/C++ yalıtılmış uygulamaları ve yan yana derlemeler sorunlarını giderme](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: veri arabelleklerine işaretçiler alma (C++/CX)'
 title: Veri Arabelleklerine İşaretçileri Alma (C++/CX)
 ms.date: 11/19/2018
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-ms.openlocfilehash: 0b5163dd111adfe5c745a1ad3bbcdc06a675c52c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d4fc883d7a7d0bae5d72c6aabd42446c74162c42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328938"
 ---
 # <a name="obtaining-pointers-to-data-buffers-ccx"></a>Veri Arabelleklerine İşaretçileri Alma (C++/CX)
 

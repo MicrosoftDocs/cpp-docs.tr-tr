@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ChainInterfaces yapısı'
 title: ChainInterfaces Yapısı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - Microsoft::WRL::ChainInterfaces::IidCount constant
 - Microsoft::WRL::ChainInterfaces::Verify method
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
-ms.openlocfilehash: 48b663f2042ff0095466d83fe872ef6196112f76
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cc943b16d587a3b542e49d72e6bdc24ba2546e16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328878"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
 
 Bir arabirim kimliği kümesine uygulanabilen doğrulama ve başlatma işlevlerini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -118,13 +119,13 @@ Ad                                                   | Açıklama
 [ChainInterfaces:: Canroto](#cancastto)               | Belirtilen arabirim KIMLIĞININ, şablon parametreleri tarafından tanımlanan tüm uzmanlıklarıyla düzenlenip yayınlanamayacağını gösterir `ChainInterface` .
 [ChainInterfaces:: Rotounknown](#casttounknown)       | *I0* şablon parametresi tarafından tanımlanan türün arabirim işaretçisini öğesine bir işaretçiye yayınlar `IUnknown` .
 [ChainInterfaces:: Fillarraywithııd](#fillarraywithiid) | *I0* şablon parametresi tarafından tanımlanan arabirim kimliğini belirtilen arabirim kimlikleri dizisinde belirtilen bir konuma depolar.
-[ChainInterfaces:: Verify](#verify)                     | *I0* ile *I9* arasında şablon parametreleri tarafından tanımlanan her arabirimin `IUnknown` , ve/veya devraldığını doğrular `IInspectable` ve *I0* *I1* ile *I9*arasında devralır.
+[ChainInterfaces:: Verify](#verify)                     | *I0* ile *I9* arasında şablon parametreleri tarafından tanımlanan her arabirimin `IUnknown` , ve/veya devraldığını doğrular `IInspectable` ve *I0* *I1* ile *I9* arasında devralır.
 
 ### <a name="protected-constants"></a>Korunan sabitler
 
 Ad                                   | Açıklama
 -------------------------------------- | -----------------------------------------------------------------------------------------------------------------
-[ChainInterfaces:: ııdcount](#iidcount) | *I0* *aracılığıyla şablon*parametreleri tarafından belirtilen arabirimlerde bulunan arabirim kimliklerinin toplam sayısı.
+[ChainInterfaces:: ııdcount](#iidcount) | *I0* *aracılığıyla şablon* parametreleri tarafından belirtilen arabirimlerde bulunan arabirim kimliklerinin toplam sayısı.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -138,7 +139,7 @@ Ad                                   | Açıklama
 
 **Ad alanı:** Microsoft:: WRL
 
-## <a name="chaininterfacescancastto"></a><a name="cancastto"></a>ChainInterfaces:: Canroto
+## <a name="chaininterfacescancastto"></a><a name="cancastto"></a> ChainInterfaces:: Canroto
 
 Belirtilen arabirim KIMLIĞININ varsayılan olmayan şablon parametreleri tarafından tanımlanan uzmanlıklerdeki her birine tür ataması yapılıp yapılmayacağını belirtir.
 
@@ -161,7 +162,7 @@ Başarılı bir şekilde saçıldığı son arabirim KIMLIĞINE yönelik bir iş
 
 **`true`** tüm atama işlemleri başarılı olursa; Aksi takdirde, **`false`** .
 
-## <a name="chaininterfacescasttounknown"></a><a name="casttounknown"></a>ChainInterfaces:: Rotounknown
+## <a name="chaininterfacescasttounknown"></a><a name="casttounknown"></a> ChainInterfaces:: Rotounknown
 
 *I0* şablon parametresi tarafından tanımlanan türün arabirim işaretçisini öğesine bir işaretçiye yayınlar `IUnknown` .
 
@@ -173,7 +174,7 @@ __forceinline IUnknown* CastToUnknown();
 
 Bir işaretçisi `IUnknown` .
 
-## <a name="chaininterfacesfillarraywithiid"></a><a name="fillarraywithiid"></a>ChainInterfaces:: Fillarraywithııd
+## <a name="chaininterfacesfillarraywithiid"></a><a name="fillarraywithiid"></a> ChainInterfaces:: Fillarraywithııd
 
 *I0* şablon parametresi tarafından tanımlanan arabirim kimliğini belirtilen arabirim kimlikleri dizisinde belirtilen bir konuma depolar.
 
@@ -192,9 +193,9 @@ __forceinline static void FillArrayWithIid(
 *IID*<br/>
 Arabirim kimlikleri dizisi.
 
-## <a name="chaininterfacesiidcount"></a><a name="iidcount"></a>ChainInterfaces:: ııdcount
+## <a name="chaininterfacesiidcount"></a><a name="iidcount"></a> ChainInterfaces:: ııdcount
 
-*I0* *aracılığıyla şablon*parametreleri tarafından belirtilen arabirimlerde bulunan arabirim kimliklerinin toplam sayısı.
+*I0* *aracılığıyla şablon* parametreleri tarafından belirtilen arabirimlerde bulunan arabirim kimliklerinin toplam sayısı.
 
 ```cpp
 static const unsigned long IidCount = Details::InterfaceTraits<I0>::IidCount + Details::InterfaceTraits<I1>::IidCount + Details::InterfaceTraits<I2>::IidCount + Details::InterfaceTraits<I3>::IidCount + Details::InterfaceTraits<I4>::IidCount + Details::InterfaceTraits<I5>::IidCount + Details::InterfaceTraits<I6>::IidCount + Details::InterfaceTraits<I7>::IidCount + Details::InterfaceTraits<I8>::IidCount + Details::InterfaceTraits<I9>::IidCount;
@@ -208,9 +209,9 @@ Toplam arabirim kimliği sayısı.
 
 *I0* ve *I1* şablon parametreleri gerekir ve *I2* ile *I9* arasındaki parametreler isteğe bağlıdır. Her arabirimin IID sayısı genellikle 1 ' dir.
 
-## <a name="chaininterfacesverify"></a><a name="verify"></a>ChainInterfaces:: Verify
+## <a name="chaininterfacesverify"></a><a name="verify"></a> ChainInterfaces:: Verify
 
-*I0* ile *I9* arasında şablon parametreleri tarafından tanımlanan her arabirimin `IUnknown` , ve/veya devraldığını doğrular `IInspectable` ve *I0* *I1* ile *I9*arasında devralır.
+*I0* ile *I9* arasında şablon parametreleri tarafından tanımlanan her arabirimin `IUnknown` , ve/veya devraldığını doğrular `IInspectable` ve *I0* *I1* ile *I9* arasında devralır.
 
 ```cpp
 WRL_NOTHROW __forceinline static void Verify();

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: size_is'
 title: size_is (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - size_is attribute
 ms.assetid: 70192d09-f6c5-4d52-b3fe-303f8cb10aa5
-ms.openlocfilehash: dd0ec8622dfffdf9a0578c86d75d313042cc3c01
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f61124dc286de1c8893f093454c921b4d6e46037
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329606"
 ---
 # <a name="size_is"></a>size_is
 
 Boyutlandırılmış işaretçiler için ayrılan bellek boyutunu, boyutlandırılmış işaretçilere boyutlandırılmış boyutları ve tek veya çok boyutlu dizileri belirtin.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ size_is("expression") ]
@@ -25,7 +26,7 @@ Boyutlandırılmış işaretçiler için ayrılan bellek boyutunu, boyutlandır�
 
 ### <a name="parameters"></a>Parametreler
 
-*ifadesini*<br/>
+*expression*<br/>
 Boyutlandırılmış işaretçiler için ayrılan bellek boyutu.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -41,7 +42,7 @@ Dizinin bir bölümünü belirtme örneği için [first_is](first-is.md) örneğ
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`struct`** Or **`union`** , Interface parametresi, Interface yöntemi içindeki alan|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|`max_is`|
 

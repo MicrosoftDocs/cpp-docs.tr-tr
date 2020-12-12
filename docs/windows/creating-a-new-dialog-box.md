@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: Iletişim kutusu oluşturma (C++)'
 title: 'Nasıl yapılır: Iletişim kutusu oluşturma (C++)'
 ms.date: 02/15/2019
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - dialog boxes [C++], size
 - dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: 0d5e4836933f1ce32f28c7fd03c81be5b7d09fd9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8c02d0d85d20b51c867b3f3ba0e5f945595ed130
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222088"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329487"
 ---
 # <a name="how-to-create-a-dialog-box-c"></a>Nasıl yapılır: Iletişim kutusu oluşturma (C++)
 
@@ -38,7 +39,7 @@ C++ iletişim kutusunun konumu ve boyutu ve içindeki denetimlerin konumu ve boy
 
    **+** **İletişim** kutusu kaynak türünün yanında bir artı işareti () görünürse, iletişim kutusu şablonlarının kullanılabildiği anlamına gelir. Şablon listesini genişletmek için artı işaretini seçin, bir şablon seçin ve **Yeni**' yi seçin.
 
-   **İletişim kutusu düzenleyicisinde**yeni iletişim kutusu açılır.
+   **İletişim kutusu düzenleyicisinde** yeni iletişim kutusu açılır.
 
 Ayrıca, düzenleme için Iletişim kutusu düzenleyicisinde varolan iletişim kutularını da açabilirsiniz.
 
@@ -54,10 +55,10 @@ Bir kullanıcının çıkamayacağı bir çalışma zamanı iletişim kutusu olu
 
    Çalışma zamanında, bir Kullanıcı bu özelliklere sahip kalıcı bir iletişim kutusundan çıkamayacağı.
 
-Bu tür bir iletişim kutusunun test edilmesini etkinleştirmek için, **ESC** tuşuna basıldığında test iletişim kutusu işlevi algılanır. **ESC** , vk_escape sanal anahtarı olarak da bilinir. İletişim kutusunun çalışma zamanında davranması için nasıl tasarlandığına bakılmaksızın **ESC**tuşuna basarak test modunu sona bırakabilirsiniz.
+Bu tür bir iletişim kutusunun test edilmesini etkinleştirmek için, **ESC** tuşuna basıldığında test iletişim kutusu işlevi algılanır. **ESC** , vk_escape sanal anahtarı olarak da bilinir. İletişim kutusunun çalışma zamanında davranması için nasıl tasarlandığına bakılmaksızın **ESC** tuşuna basarak test modunu sona bırakabilirsiniz.
 
 > [!NOTE]
-> MFC uygulamalarında, kullanıcıların çıkamayacağı bir iletişim kutusu oluşturmak için, varsayılan davranışını geçersiz kılmanız gerekir `OnOK` `OnCancel` , çünkü ilişkili düğmeleri silseniz bile, Iletişim kutusu **ENTER** veya **ESC**tuşuna basarak yine de kapatılabilir.
+> MFC uygulamalarında, kullanıcıların çıkamayacağı bir iletişim kutusu oluşturmak için, varsayılan davranışını geçersiz kılmanız gerekir `OnOK` `OnCancel` , çünkü ilişkili düğmeleri silseniz bile, Iletişim kutusu **ENTER** veya **ESC** tuşuna basarak yine de kapatılabilir.
 
 ### <a name="to-specify-the-location-and-size-of-a-dialog-box"></a>Bir iletişim kutusunun konumunu ve boyutunu belirtmek için
 
@@ -65,7 +66,7 @@ Bir iletişim kutusunun ekranda görüneceği yeri belirtmek için [Özellikler 
 
 - Boolean **Center** özelliği.
 
-   Değeri **true**olarak ayarlarsanız, iletişim kutusu her zaman ekranın ortasında görüntülenir. Bu özelliği **false**olarak ayarlarsanız, **XPos** ve **enpos** özelliklerini ayarlayabilirsiniz.
+   Değeri **true** olarak ayarlarsanız, iletişim kutusu her zaman ekranın ortasında görüntülenir. Bu özelliği **false** olarak ayarlarsanız, **XPos** ve **enpos** özelliklerini ayarlayabilirsiniz.
 
 - Açık olarak görüntülenen iletişim kutusunun görüneceği yeri açıkça tanımlamak için kullanılan **XPos** ve **enpos** özellikleri.
 
@@ -73,7 +74,7 @@ Bir iletişim kutusunun ekranda görüneceği yeri belirtmek için [Özellikler 
 
 - Konumu etkileyen **mutlak hizalama** özelliği.
 
-   **Doğru**ise, koordinatlar ekrana görelidir. **Yanlışsa**, koordinatlar iletişim kutusu sahibinin penceresine görelidir.
+   **Doğru** ise, koordinatlar ekrana görelidir. **Yanlışsa**, koordinatlar iletişim kutusu sahibinin penceresine görelidir.
 
 ### <a name="to-test-a-dialog-box"></a>Bir iletişim kutusunu test etmek için
 
@@ -90,9 +91,9 @@ Bir iletişim kutusu tasarlarken, programınızı derlemeden çalışma zamanı 
 > [!NOTE]
 > Sihirbazlar kullanılarak yapılan iletişim kutusu kodu bağlantıları simülasyonuna dahil değildir.
 
-Bir iletişim kutusunu test ettiğinizde, genellikle ana program penceresine göreli bir konumda görüntülenir. İletişim kutusu **mutlak hizalama** özelliğini **doğru**olarak ayarladıysanız, iletişim kutusu ekranın sol üst köşesine göre bir konumda görüntülenir.
+Bir iletişim kutusunu test ettiğinizde, genellikle ana program penceresine göreli bir konumda görüntülenir. İletişim kutusu **mutlak hizalama** özelliğini **doğru** olarak ayarladıysanız, iletişim kutusu ekranın sol üst köşesine göre bir konumda görüntülenir.
 
-1. **İletişim kutusu Düzenleyicisi** etkin pencere olduğunda menü **biçimlendirme**  >  **test iletişim kutusuna**gidin.
+1. **İletişim kutusu Düzenleyicisi** etkin pencere olduğunda menü **biçimlendirme**  >  **test iletişim kutusuna** gidin.
 
 1. Benzetimi sonlandırmak için **ESC** tuşuna basın veya test ettiğiniz Iletişim kutusunda **Kapat** düğmesini seçin.
 

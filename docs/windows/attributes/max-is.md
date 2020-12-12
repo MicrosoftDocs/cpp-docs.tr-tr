@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: max_is'
 title: max_is (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-ms.openlocfilehash: 409211bc59d9df8a82a9f452efeff6b6db0fde39
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 305acba3a2831448cf677eb16810c567b3561b3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329803"
 ---
 # <a name="max_is"></a>max_is
 
 Geçerli bir dizi dizininin en büyük değerini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ max_is("expression") ]
@@ -25,7 +26,7 @@ Geçerli bir dizi dizininin en büyük değerini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*ifadesini*<br/>
+*expression*<br/>
 Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin veriliyor.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -37,7 +38,7 @@ Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`struct`** Or **`union`** , Interface parametresi, Interface yöntemi içindeki alan|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|**size_is**|
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CImageList sınıfı'
 title: CImageList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,18 +75,18 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: 28693aaa32ab5f4baaf773a7bac64c491d55cf78
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 039f4e307727970b6236af6ad51bf658c44bae0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327785"
 ---
 # <a name="cimagelist-class"></a>CImageList sınıfı
 
 Windows ortak görüntü listesi denetimi işlevlerini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CImageList : public CObject
@@ -166,7 +167,7 @@ Kullanma hakkında daha fazla bilgi için `CImageList` bkz. [denetimler](../../m
 
 **Üstbilgi:** afxcmn. h
 
-## <a name="cimagelistadd"></a><a name="add"></a>CImageList:: Add
+## <a name="cimagelistadd"></a><a name="add"></a> CImageList:: Add
 
 Bir görüntü listesine bir veya daha fazla görüntü ya da simge eklemek için bu işlevi çağırın.
 
@@ -208,7 +209,7 @@ Başarılı olursa ilk yeni görüntünün sıfır tabanlı dizini; Aksi takdird
 
 [!code-cpp[NVC_MFC_CImageList#1](../../mfc/reference/codesnippet/cpp/cimagelist-class_1.cpp)]
 
-## <a name="cimagelistattach"></a><a name="attach"></a>CImageList:: Attach
+## <a name="cimagelistattach"></a><a name="attach"></a> CImageList:: Attach
 
 Bir nesneye görüntü listesi eklemek için bu işlevi çağırın `CImageList` .
 
@@ -229,7 +230,7 @@ Ek başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFC_CImageList#2](../../mfc/reference/codesnippet/cpp/cimagelist-class_2.cpp)]
 
-## <a name="cimagelistbegindrag"></a><a name="begindrag"></a>CImageList:: BeginDrag
+## <a name="cimagelistbegindrag"></a><a name="begindrag"></a> CImageList:: BeginDrag
 
 Bir görüntüyü sürüklemeye başlamak için bu işlevi çağırın.
 
@@ -259,7 +260,7 @@ Bu işlev, sürüklemek için kullanılan geçici bir görüntü listesi oluştu
 
 [!code-cpp[NVC_MFC_CImageList#3](../../mfc/reference/codesnippet/cpp/cimagelist-class_3.cpp)]
 
-## <a name="cimagelistcimagelist"></a><a name="cimagelist"></a>CImageList:: CImageList
+## <a name="cimagelistcimagelist"></a><a name="cimagelist"></a> CImageList:: CImageList
 
 Bir `CImageList` nesnesi oluşturur.
 
@@ -267,7 +268,7 @@ Bir `CImageList` nesnesi oluşturur.
 CImageList();
 ```
 
-## <a name="cimagelistcopy"></a><a name="copy"></a>CImageList:: Copy
+## <a name="cimagelistcopy"></a><a name="copy"></a> CImageList:: Copy
 
 Bu üye işlevi, Windows SDK açıklanan [ImageList_Copy](/windows/win32/api/commctrl/nf-commctrl-imagelist_copy)Win32 işlevinin davranışını uygular.
 
@@ -311,7 +312,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 [!code-cpp[NVC_MFC_CImageList#6](../../mfc/reference/codesnippet/cpp/cimagelist-class_4.cpp)]
 
-## <a name="cimagelistcreate"></a><a name="create"></a>CImageList:: Create
+## <a name="cimagelistcreate"></a><a name="create"></a> CImageList:: Create
 
 Bir görüntü listesini başlatır ve onu bir [CImageList](../../mfc/reference/cimagelist-class.md) nesnesine ekler.
 
@@ -416,7 +417,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFC_CImageList#7](../../mfc/reference/codesnippet/cpp/cimagelist-class_5.cpp)]
 
-## <a name="cimagelistdeleteimagelist"></a><a name="deleteimagelist"></a>CImageList::D Eleteımagelist
+## <a name="cimagelistdeleteimagelist"></a><a name="deleteimagelist"></a> CImageList::D Eleteımagelist
 
 Bir görüntü listesini silmek için bu işlevi çağırın.
 
@@ -432,7 +433,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFC_CImageList#8](../../mfc/reference/codesnippet/cpp/cimagelist-class_6.cpp)]
 
-## <a name="cimagelistdeletetempmap"></a><a name="deletetempmap"></a>CImageList::D eleteTempMap
+## <a name="cimagelistdeletetempmap"></a><a name="deletetempmap"></a> CImageList::D eleteTempMap
 
 `CWinApp`Boşta kalma süresi işleyicisi tarafından otomatik olarak çağrıldığında, `DeleteTempMap` `CImageList` [FromHandle](#fromhandle)tarafından oluşturulan geçici nesneleri siler, ancak nesnelerle ilişkili herhangi bir tanıtıcıyı ( `hImageList` ) `ImageList` yok etmez.
 
@@ -444,7 +445,7 @@ static void PASCAL DeleteTempMap();
 
 [!code-cpp[NVC_MFC_CImageList#9](../../mfc/reference/codesnippet/cpp/cimagelist-class_7.cpp)]
 
-## <a name="cimagelistdetach"></a><a name="detach"></a>CImageList::D etach
+## <a name="cimagelistdetach"></a><a name="detach"></a> CImageList::D etach
 
 Bir görüntü listesi nesnesini bir nesneden ayırmak için bu işlevi çağırın `CImageList` .
 
@@ -464,9 +465,9 @@ Bu işlev, görüntü listesi nesnesine bir tanıtıcı döndürür.
 
   [CImageList:: Attach](#attach)örneğine bakın.
 
-## <a name="cimagelistdragenter"></a><a name="dragenter"></a>CImageList::D Oygenter
+## <a name="cimagelistdragenter"></a><a name="dragenter"></a> CImageList::D Oygenter
 
-Bir sürükleme işlemi sırasında, güncelleştirmeleri *pWndLock* tarafından belirtilen pencerede kilitler ve sürükle resmini *işaret*tarafından belirtilen konumda görüntüler.
+Bir sürükleme işlemi sırasında, güncelleştirmeleri *pWndLock* tarafından belirtilen pencerede kilitler ve sürükle resmini *işaret* tarafından belirtilen konumda görüntüler.
 
 ```
 static BOOL PASCAL DragEnter(
@@ -498,7 +499,7 @@ Bu işlev, sürükleme işlemi sırasında verilen penceredeki diğer tüm günc
 
   [CImageList:: BeginDrag](#begindrag)örneğine bakın.
 
-## <a name="cimagelistdragleave"></a><a name="dragleave"></a>CImageList::D ragLeave
+## <a name="cimagelistdragleave"></a><a name="dragleave"></a> CImageList::D ragLeave
 
 *PWndLock* tarafından belirtilen pencerenin kilidini açar ve sürükleme görüntüsünü gizler ve pencerenin güncelleştirilmesine izin verir.
 
@@ -519,7 +520,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
   [CImageList:: EndDrag](#enddrag)örneğine bakın.
 
-## <a name="cimagelistdragmove"></a><a name="dragmove"></a>CImageList::D ragMove
+## <a name="cimagelistdragmove"></a><a name="dragmove"></a> CImageList::D ragMove
 
 Sürükle ve bırak işlemi sırasında sürüklediğiniz görüntüyü taşımak için bu işlevi çağırın.
 
@@ -544,7 +545,7 @@ Bu işlev genellikle WM_MOUSEMOVE iletisine yanıt olarak çağırılır. Bir s�
 
 [!code-cpp[NVC_MFC_CImageList#4](../../mfc/reference/codesnippet/cpp/cimagelist-class_8.cpp)]
 
-## <a name="cimagelistdragshownolock"></a><a name="dragshownolock"></a>CImageList::D ragShowNolock
+## <a name="cimagelistdragshownolock"></a><a name="dragshownolock"></a> CImageList::D ragShowNolock
 
 Pencereyi kilitlemeden sürükleme işlemi sırasında sürükle resmini gösterir veya gizler.
 
@@ -565,7 +566,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [CImageList::D Oygenter](#dragenter) işlevi, bir sürükleme işlemi sırasında penceredeki tüm güncelleştirmeleri kilitler. Ancak bu işlev, pencereyi kilitlemez.
 
-## <a name="cimagelistdraw"></a><a name="draw"></a>CImageList::D RAW
+## <a name="cimagelistdraw"></a><a name="draw"></a> CImageList::D RAW
 
 Sürükle ve bırak işlemi sırasında sürüklediğiniz görüntüyü çizmek için bu işlevi çağırın.
 
@@ -607,7 +608,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
   [CImageList:: SetOverlayImage](#setoverlayimage)örneğine bakın.
 
-## <a name="cimagelistdrawex"></a><a name="drawex"></a>CImageList::D rawEx
+## <a name="cimagelistdrawex"></a><a name="drawex"></a> CImageList::D rawEx
 
 Belirtilen cihaz bağlamına bir resim listesi öğesi çizer.
 
@@ -657,7 +658,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFC_CImageList#10](../../mfc/reference/codesnippet/cpp/cimagelist-class_9.cpp)]
 
-## <a name="cimagelistdrawindirect"></a><a name="drawindirect"></a>CImageList::D Rampadıwindirect
+## <a name="cimagelistdrawindirect"></a><a name="drawindirect"></a> CImageList::D Rampadıwindirect
 
 Görüntü listesinden bir resim çizmek için bu üye işlevini çağırın.
 
@@ -754,7 +755,7 @@ Bir kaplama görüntüsü, bu üye işlevinde *nImage* parametresi tarafından b
 
 [!code-cpp[NVC_MFC_CImageList#11](../../mfc/reference/codesnippet/cpp/cimagelist-class_10.cpp)]
 
-## <a name="cimagelistenddrag"></a><a name="enddrag"></a>CImageList:: EndDrag
+## <a name="cimagelistenddrag"></a><a name="enddrag"></a> CImageList:: EndDrag
 
 Bir sürükleme işlemini sonlandırmak için bu işlevi çağırın.
 
@@ -770,7 +771,7 @@ Bir sürükleme işlemine başlamak için `BeginDrag` üye işlevini kullanın.
 
 [!code-cpp[NVC_MFC_CImageList#5](../../mfc/reference/codesnippet/cpp/cimagelist-class_11.cpp)]
 
-## <a name="cimagelistextracticon"></a><a name="extracticon"></a>CImageList:: ExtractIcon
+## <a name="cimagelistextracticon"></a><a name="extracticon"></a> CImageList:: ExtractIcon
 
 Görüntü listesinde bir görüntüye ve ilgili maskeye dayalı bir simge oluşturmak için bu işlevi çağırın.
 
@@ -795,7 +796,7 @@ Bu yöntem, simgeyi oluşturmak için [ImageList_ExtractIcon](/windows/win32/api
 
 [!code-cpp[NVC_MFC_CImageList#12](../../mfc/reference/codesnippet/cpp/cimagelist-class_12.cpp)]
 
-## <a name="cimagelistfromhandle"></a><a name="fromhandle"></a>CImageList:: FromHandle
+## <a name="cimagelistfromhandle"></a><a name="fromhandle"></a> CImageList:: FromHandle
 
 `CImageList`Görüntü listesine bir tanıtıcı verildiğinde nesnenin işaretçisini döndürür.
 
@@ -820,7 +821,7 @@ Zaten bir `CImageList` tanıtıcıya ekli değilse, geçici bir `CImageList` nes
 
 [!code-cpp[NVC_MFC_CImageList#13](../../mfc/reference/codesnippet/cpp/cimagelist-class_13.cpp)]
 
-## <a name="cimagelistfromhandlepermanent"></a><a name="fromhandlepermanent"></a>CImageList:: Fromhandlekalıcı
+## <a name="cimagelistfromhandlepermanent"></a><a name="fromhandlepermanent"></a> CImageList:: Fromhandlekalıcı
 
 `CImageList`Görüntü listesine bir tanıtıcı verildiğinde nesnenin işaretçisini döndürür.
 
@@ -845,7 +846,7 @@ Bir `CImageList` nesne tutamaya ILIŞTIRILMEZSE null döndürülür.
 
 [!code-cpp[NVC_MFC_CImageList#14](../../mfc/reference/codesnippet/cpp/cimagelist-class_14.cpp)]
 
-## <a name="cimagelistgetbkcolor"></a><a name="getbkcolor"></a>CImageList:: GetBkColor
+## <a name="cimagelistgetbkcolor"></a><a name="getbkcolor"></a> CImageList:: GetBkColor
 
 Bir görüntü listesinin geçerli arka plan rengini almak için bu işlevi çağırın.
 
@@ -861,7 +862,7 @@ COLORREF GetBkColor() const;
 
   [CImageList:: SetBkColor](#setbkcolor)örneğine bakın.
 
-## <a name="cimagelistgetdragimage"></a><a name="getdragimage"></a>CImageList:: GetDragImage
+## <a name="cimagelistgetdragimage"></a><a name="getdragimage"></a> CImageList:: GetDragImage
 
 Sürükleme için kullanılan geçici görüntü listesini alır.
 
@@ -883,7 +884,7 @@ Sürükleme `POINT` konumuna göre sürükleme resminin sapmasını alan bir yap
 
 Başarılı olursa, sürükleme için kullanılan geçici görüntü listesine yönelik bir işaretçi; Aksi takdirde, NULL.
 
-## <a name="cimagelistgetimagecount"></a><a name="getimagecount"></a>CImageList:: GetImageCount
+## <a name="cimagelistgetimagecount"></a><a name="getimagecount"></a> CImageList:: GetImageCount
 
 Bir görüntü listesindeki görüntü sayısını almak için bu işlevi çağırın.
 
@@ -899,7 +900,7 @@ Görüntü sayısı.
 
   [CImageList:: ExtractIcon](#extracticon)için örneğe bakın.
 
-## <a name="cimagelistgetimageinfo"></a><a name="getimageinfo"></a>CImageList:: GetImageInfo
+## <a name="cimagelistgetimageinfo"></a><a name="getimageinfo"></a> CImageList:: GetImageInfo
 
 Bir görüntüyle ilgili bilgi almak için bu işlevi çağırın.
 
@@ -925,7 +926,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 `IMAGEINFO`Yapı, bir görüntü listesindeki bir görüntüyle ilgili bilgiler içerir.
 
-## <a name="cimagelistgetsafehandle"></a><a name="getsafehandle"></a>CImageList:: GetSafeHandle
+## <a name="cimagelistgetsafehandle"></a><a name="getsafehandle"></a> CImageList:: GetSafeHandle
 
 Veri üyesini almak için bu işlevi çağırın `m_hImageList` .
 
@@ -941,7 +942,7 @@ Eklenen görüntü listesine yönelik bir tanıtıcı; Aksi takdirde, hiçbir ne
 
 [!code-cpp[NVC_MFC_CImageList#15](../../mfc/reference/codesnippet/cpp/cimagelist-class_15.cpp)]
 
-## <a name="cimagelistm_himagelist"></a><a name="m_himagelist"></a>CImageList:: m_hImageList
+## <a name="cimagelistm_himagelist"></a><a name="m_himagelist"></a> CImageList:: m_hImageList
 
 Bu nesneye eklenen görüntü listesinin bir tutamacı.
 
@@ -955,7 +956,7 @@ Bu nesneye eklenen görüntü listesinin bir tutamacı.
 
 [!code-cpp[NVC_MFC_CImageList#23](../../mfc/reference/codesnippet/cpp/cimagelist-class_16.cpp)]
 
-## <a name="cimagelistoperator-himagelist"></a><a name="operator_himagelist"></a>CImageList:: operator HıMAGELIST
+## <a name="cimagelistoperator-himagelist"></a><a name="operator_himagelist"></a> CImageList:: operator HıMAGELIST
 
 Nesnenin ekli tanıtıcısını almak için bu işleci kullanın `CImageList` .
 
@@ -975,7 +976,7 @@ Bu işleç, bir HıMAGELIST nesnesinin doğrudan kullanımını destekleyen bir 
 
 [!code-cpp[NVC_MFC_CImageList#16](../../mfc/reference/codesnippet/cpp/cimagelist-class_17.cpp)]
 
-## <a name="cimagelistread"></a><a name="read"></a>CImageList:: Read
+## <a name="cimagelistread"></a><a name="read"></a> CImageList:: Read
 
 Bir arşivden bir görüntü listesi okumak için bu işlevi çağırın.
 
@@ -996,7 +997,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFC_CImageList#18](../../mfc/reference/codesnippet/cpp/cimagelist-class_18.cpp)]
 
-## <a name="cimagelistremove"></a><a name="remove"></a>CImageList:: Remove
+## <a name="cimagelistremove"></a><a name="remove"></a> CImageList:: Remove
 
 Görüntü listesi nesnesinden bir görüntüyü kaldırmak için bu işlevi çağırın.
 
@@ -1021,7 +1022,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFC_CImageList#19](../../mfc/reference/codesnippet/cpp/cimagelist-class_19.cpp)]
 
-## <a name="cimagelistreplace"></a><a name="replace"></a>CImageList:: Replace
+## <a name="cimagelistreplace"></a><a name="replace"></a> CImageList:: Replace
 
 Görüntü listesindeki bir görüntüyü yeni bir görüntüyle değiştirmek için bu işlevi çağırın.
 
@@ -1064,7 +1065,7 @@ Yeni, geçerli görüntüleri yer tutucu görüntüsü dizin numaralarına atama
 
   [CImageList:: SetImageCount](#setimagecount)örneğine bakın.
 
-## <a name="cimagelistsetbkcolor"></a><a name="setbkcolor"></a>CImageList:: SetBkColor
+## <a name="cimagelistsetbkcolor"></a><a name="setbkcolor"></a> CImageList:: SetBkColor
 
 Bir görüntü listesinin arka plan rengini ayarlamak için bu işlevi çağırın.
 
@@ -1085,7 +1086,7 @@ Başarılı olursa önceki arka plan rengi; Aksi takdirde CLR_NONE.
 
 [!code-cpp[NVC_MFC_CImageList#20](../../mfc/reference/codesnippet/cpp/cimagelist-class_20.cpp)]
 
-## <a name="cimagelistsetdragcursorimage"></a><a name="setdragcursorimage"></a>CImageList:: SetDragCursorImage
+## <a name="cimagelistsetdragcursorimage"></a><a name="setdragcursorimage"></a> CImageList:: SetDragCursorImage
 
 Belirtilen görüntüyü (genellikle bir fare imleç görüntüsünü) geçerli sürükleme görüntüsüyle birleştirerek yeni bir sürükleme görüntüsü oluşturur.
 
@@ -1111,7 +1112,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Sürükleme işlevleri bir sürükleme işlemi sırasında yeni görüntüyü kullandığından, çağrıldıktan sonra asıl fare imlecini gizlemek için Windows [ShowCursor](/windows/win32/api/winuser/nf-winuser-showcursor) işlevini kullanmanız gerekir `CImageList::SetDragCursorImage` . Aksi takdirde, sistem sürükleme işleminin süresi boyunca iki fare imleç gibi görünebilir.
 
-## <a name="cimagelistsetimagecount"></a><a name="setimagecount"></a>CImageList:: SetImageCount
+## <a name="cimagelistsetimagecount"></a><a name="setimagecount"></a> CImageList:: SetImageCount
 
 Bir nesnedeki görüntü sayısını sıfırlamak için bu üye işlevini çağırın `CImageList` .
 
@@ -1138,7 +1139,7 @@ Bu işlevi kullanarak bir görüntü listesinin boyutunu azaltırsanız, kesilen
 
 [!code-cpp[NVC_MFC_CImageList#21](../../mfc/reference/codesnippet/cpp/cimagelist-class_21.cpp)]
 
-## <a name="cimagelistsetoverlayimage"></a><a name="setoverlayimage"></a>CImageList:: SetOverlayImage
+## <a name="cimagelistsetoverlayimage"></a><a name="setoverlayimage"></a> CImageList:: SetOverlayImage
 
 Görüntünün sıfır tabanlı dizinini, kaplama maskeleri olarak kullanılacak görüntü listesine eklemek için bu işlevi çağırın.
 
@@ -1170,7 +1171,7 @@ Bir kaplama maskesi, başka bir görüntünün üzerinde saydam olarak çizilen 
 
 [!code-cpp[NVC_MFC_CImageList#22](../../mfc/reference/codesnippet/cpp/cimagelist-class_22.cpp)]
 
-## <a name="cimagelistwrite"></a><a name="write"></a>CImageList:: Write
+## <a name="cimagelistwrite"></a><a name="write"></a> CImageList:: Write
 
 Bir arşive görüntü listesi nesnesi yazmak için bu işlevi çağırın.
 

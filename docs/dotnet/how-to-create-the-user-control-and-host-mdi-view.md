@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: Kullanıcı denetimi ve Konak MDI görünümü oluşturma'
 title: 'Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,47 +7,47 @@ helpviewer_keywords:
 - MFC [C++], Windows Forms Controls
 - Windows Forms [C++], MFC support
 ms.assetid: 625b5821-f923-4701-aca0-c1a4ceca4f63
-ms.openlocfilehash: 72501ba32d3b8b9a5c5fd8dd0c56f0628642b147
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d05d2132c4382365b1de16490481049cb43ffe22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374464"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328773"
 ---
 # <a name="how-to-create-the-user-control-and-host-mdi-view"></a>Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma
 
-Aşağıdaki adımlar, bir .NET Framework kullanıcı denetiminin nasıl oluşturulup, bir denetim sınıfı kitaplığında (özellikle bir Windows Denetim Kitaplığı projesi) kullanıcı denetimini nasıl yazarak projeyi derlemeyi gösterir. Denetim daha sonra [CView Class](../mfc/reference/cview-class.md) ve [CWinFormsView Sınıfı'ndan](../mfc/reference/cwinformsview-class.md)türetilen sınıfları kullanan bir MFC uygulamasından tüketilebilir.
+Aşağıdaki adımlarda, bir .NET Framework Kullanıcı denetimi oluşturma, Kullanıcı denetimini bir denetim sınıfı kitaplığında (özellikle bir Windows Denetim Kitaplığı Projesi) yazma ve ardından projeyi bir derlemede derleme işlemleri gösterilmektedir. Daha sonra Denetim, [CView sınıfı](../mfc/reference/cview-class.md) ve [CWinFormsView sınıfından](../mfc/reference/cwinformsview-class.md)TÜRETILMIŞ sınıfları kullanan bir MFC uygulamasından tüketilebilir.
 
-Windows Forms kullanıcı denetimi oluşturma ve denetim sınıfı kitaplığı yazma hakkında bilgi için [bkz.](/dotnet/framework/winforms/controls/how-to-author-composite-controls)
+Bir Windows Forms Kullanıcı denetimi oluşturma ve bir denetim sınıfı kitaplığı yazma hakkında daha fazla bilgi için bkz. [nasıl yapılır: Yazar Kullanıcı denetimleri](/dotnet/framework/winforms/controls/how-to-author-composite-controls).
 
 > [!NOTE]
-> Bazı durumlarda, üçüncü taraf Grid denetimi gibi Windows Forms denetimleri, bir MFC uygulamasında barındırıldığında güvenilir bir şekilde çalışmayabilir. Önerilen geçici çözüm, MFC uygulamasına bir Windows Forms Kullanıcı Denetimi yerleştirmek ve üçüncü taraf Izgara denetimini Kullanıcı denetiminin içine yerleştirmektir.
+> Bazı durumlarda, üçüncü taraf kılavuz denetimi gibi Windows Forms denetimleri, bir MFC uygulamasında barındırılırken güvenilir bir şekilde davranmayabilir. Önerilen bir geçici çözüm, MFC uygulamasına bir Windows Forms Kullanıcı denetimi yerleştirmekte ve üçüncü taraf kılavuz denetimini Kullanıcı denetimi içine yerleştirmemedir.
 
-Bu yordam, WindowsFormsControlLibrary1 adlı bir Windows Forms Controls Library projesi oluşturduğunuzu varsayar, bu yordama göre [Nasıl Yapılır: Kullanıcı Denetimini ve Ana Bilgisayar'ı Bir İletişim Kutusu'nda oluşturma.](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)
+Bu yordamda, [bir Iletişim kutusunda Kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)bölümündeki yordama göre WindowsFormsControlLibrary1 adlı bir Windows Forms denetimleri kitaplık projesi oluşturduğunuzu varsaymış olursunuz.
 
-### <a name="to-create-the-mfc-host-application"></a>MFC ana bilgisayar uygulamasını oluşturmak için
+### <a name="to-create-the-mfc-host-application"></a>MFC ana bilgisayar uygulaması oluşturmak için
 
-1. Bir MFC Uygulama projesi oluşturun.
+1. MFC Uygulama projesi oluşturun.
 
-   **Dosya** menüsünde **Yeni'yi**seçin ve ardından **Project'i**tıklatın. Visual **C++** klasöründe **MFC Application'ı**seçin.
+   **Dosya** menüsünde **Yeni**' yi seçin ve ardından **Proje**' ye tıklayın. **Visual C++** klasöründe **MFC uygulaması**' nı seçin.
 
-   **Ad** kutusuna, `MFC02` **Çözüm** ayarı girin ve **Çözüme Ekle'yi**değiştirin. **Tamam**'a tıklayın.
+   **Ad** kutusunda, çözüm `MFC02` ayarını **çözüme Ekle**' ye  girin ve değiştirin. **Tamam** düğmesine tıklayın.
 
-   **MFC Uygulama Sihirbazı'nda,** tüm varsayılanları kabul edin ve sonra **Bitir'i**tıklatın. Bu, Çoklu Belge Arabirimi olan bir MFC uygulaması oluşturur.
+   **MFC Uygulama sihirbazında** tüm varsayılanları kabul edin ve ardından **son**' a tıklayın. Bu, birden çok belge arabirimine sahip bir MFC uygulaması oluşturur.
 
-1. Ortak Dil Çalışma Süresi (CLR) desteği için projeyi yapılandırın.
+1. Projeyi ortak dil çalışma zamanı (CLR) desteği için yapılandırın.
 
-   **Çözüm Gezgini'nde**proje `MFC01` düğümüne sağ tıklayın ve bağlam menüsünden **Özellikler'i** seçin. **Özellik Sayfaları** iletişim kutusu görüntülenir.
+   **Çözüm Gezgini**, `MFC01` proje düğümüne sağ tıklayın ve bağlam menüsünden **Özellikler** ' i seçin. **Özellik sayfaları** iletişim kutusu görüntülenir.
 
-   **Yapılandırma Özellikleri**altında **Genel'i**seçin. Project **Defaults** bölümünde, **Ortak Dil Çalışma Zamanı desteğini** Ortak Dil Çalışma Süresi Desteği **(/clr)** olarak ayarlayın.
+   **Yapılandırma özellikleri** altında **genel**' i seçin. **Proje Varsayılanları** bölümünde ortak **dil çalışma zamanı** desteğini **ortak dil çalışma zamanı desteği (/CLR)** olarak ayarlayın.
 
-   **Yapılandırma Özellikleri**altında **C/C++** seçeneğini genişletin ve **Genel** düğüm'ü tıklatın. **Hata Ayıklama Bilgi Biçimini** Program **Veritabanına (/Zi)** ayarlayın.
+   **Yapılandırma özellikleri** altında **C/C++** öğesini genişletin ve **genel** düğümüne tıklayın. **Hata ayıklama bilgileri biçimini** **Program veritabanı (/Zi)** olarak ayarlayın.
 
-   Kod **Oluşturma** düğüm'üne tıklayın. **Minimum Yeniden Oluşturmayı** Hayır **(/Gm-)** olarak ayarlayın. Ayrıca **Temel Çalışma Zamanı Denetimlerini** **Varsayılan**olarak ayarlayın.
+   **Kod oluşturma** düğümüne tıklayın. **En az yeniden derlemeyi etkinleştir** **(/GM-)** olarak ayarlayın. **Temel çalışma zamanı denetimlerini** de **varsayılan** olarak ayarlayın.
 
-   Değişikliklerinizi uygulamak için **Tamam'ı** tıklatın.
+   Değişikliklerinizi uygulamak için **Tamam** ' ı tıklatın.
 
-1. *Pch.h* (Visual Studio 2017 ve önceki yıllarda*stdafx.h)* olarak aşağıdaki satırı ekleyin:
+1. *Pch. h* Içinde (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ), aşağıdaki satırı ekleyin:
 
     ```
     #using <System.Windows.Forms.dll>
@@ -54,23 +55,23 @@ Bu yordam, WindowsFormsControlLibrary1 adlı bir Windows Forms Controls Library 
 
 1. .NET denetimine bir başvuru ekleyin.
 
-   **Çözüm Gezgini'nde**proje `MFC02` düğümüne sağ tıklayın ve Add **,** **References'ı**seçin. Özellik **Sayfasında,** **Yeni Başvuru Ekle'yi**tıklatın, WindowsFormsControlLibrary1'i seçin **(Projeler** sekmesinin altında) ve **Tamam'ı**tıklatın. Bu, programın derlet edilebis olması için [/FU](../build/reference/fu-name-forced-hash-using-file.md) derleyici seçeneği şeklinde bir başvuru ekler; ayrıca WindowsFormsControlLibrary1.dll'yi `MFC02` proje dizinine kopyalar, böylece program çalışır.
+   **Çözüm Gezgini**, `MFC02` proje düğümüne sağ tıklayın ve **Ekle**, **Başvurular**' ı seçin. **Özellik sayfasında**, **Yeni Başvuru Ekle**' ye tıklayın, WindowsFormsControlLibrary1 ( **Projeler** sekmesi altında) seçeneğini belirleyin ve **Tamam**' a tıklayın. Bu, programın derleyeceği bir [/Fu](../build/reference/fu-name-forced-hash-using-file.md) derleyici seçeneği biçiminde bir başvuru ekler; Ayrıca `MFC02` , WindowsFormsControlLibrary1.dll programın çalışması için proje dizinine kopyalar.
 
-1. Stdafx.h olarak, bu satırı bulmak:
+1. Stbafx. h içinde şu satırı bulun:
 
     ```
     #endif // _AFX_NO_AFXCMN_SUPPORT
     ```
 
-   Üzerine şu satırları ekleyin:
+   Bu satırları üzerine ekleyin:
 
     ```
     #include <afxwinforms.h>   // MFC Windows Forms support
     ```
 
-1. Görünüm sınıfını [CWinFormsView'den](../mfc/reference/cwinformsview-class.md)devralabilecek şekilde değiştirin.
+1. Görünüm sınıfını [CWinFormsView](../mfc/reference/cwinformsview-class.md)öğesinden devrabir şekilde değiştirin.
 
-   MFC02View.h'de [CView'i](../mfc/reference/cview-class.md) [CWinFormsView](../mfc/reference/cwinformsview-class.md) ile değiştirin, böylece kod aşağıdaki gibi görünür:
+   MFC02View. h içinde, kodun aşağıdaki gibi görünmesi için [CView](../mfc/reference/cview-class.md) ile [CWinFormsView](../mfc/reference/cwinformsview-class.md) değiştirin:
 
     ```
     class CMFC02View : public CWinFormsView
@@ -78,9 +79,9 @@ Bu yordam, WindowsFormsControlLibrary1 adlı bir Windows Forms Controls Library 
     };
     ```
 
-   MDI uygulamanıza ek görünüm ler eklemek istiyorsanız, oluşturduğunuz her görünüm için [CWinApp::AddDocTemplate'i](../mfc/reference/cwinapp-class.md#adddoctemplate) aramanız gerekir.
+   MDI uygulamanıza ek görünümler eklemek istiyorsanız, oluşturduğunuz her görünüm için [CWinApp:: AddDocTemplate](../mfc/reference/cwinapp-class.md#adddoctemplate) ' i çağırmanız gerekecektir.
 
-1. IMPLEMENT_DYNCREATE makro ve ileti haritasında CView'i CWinFormsView olarak değiştirmek için MFC02View.cpp dosyasını değiştirin ve varolan boş oluşturucuyu aşağıda gösterilen oluşturucuyla değiştirin:
+1. MFC02View. cpp dosyasını IMPLEMENT_DYNCREATE makroda ve ileti eşlemesinde CView CWinFormsView olarak değiştirin ve var olan boş oluşturucuyu aşağıda gösterilen oluşturucuyla değiştirin:
 
     ```
     IMPLEMENT_DYNCREATE(CMFC02View, CWinFormsView)
@@ -93,13 +94,13 @@ Bu yordam, WindowsFormsControlLibrary1 adlı bir Windows Forms Controls Library 
     END_MESSAGE_MAP()
     ```
 
-1. Projeyi oluşturun ve çalıştırın.
+1. Projeyi derleyin ve çalıştırın.
 
-   **Çözüm Gezgini'nde**MFC02'ye sağ tıklayın ve **Başlangıç Projesi olarak Ayarla'yı**seçin.
+   **Çözüm Gezgini**' de, MFC02 ' a sağ tıklayın ve **Başlangıç projesi olarak ayarla**' yı seçin.
 
    **Yapı** menüsünde **Yapı Çözümü**’ne tıklayın.
 
-   Hata **Ayıklama** menüsünde hata **ayıklama olmadan Başlat'ı**tıklatın.
+   **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat**' a tıklayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

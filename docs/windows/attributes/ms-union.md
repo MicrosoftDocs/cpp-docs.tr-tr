@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ms_union'
 title: ms_union (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ms_union attribute
 ms.assetid: bb548689-6962-457e-af56-8ffdf68987eb
-ms.openlocfilehash: ae99a996cd7969da27f38ad3532f0472f389ee3d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a2083fd4f1acb3715edd0e194c64e03e98db9b7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838847"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329782"
 ---
 # <a name="ms_union"></a>ms_union
 
@@ -29,7 +30,7 @@ Kapsüllenolmayan birleşimlerin ağ verisi gösterimi hizalamasını denetler.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod **ms_union**yerleşimini gösterir:
+Aşağıdaki kod **ms_union** yerleşimini gösterir:
 
 ```cpp
 // cpp_attr_ref_ms_union.cpp
@@ -59,7 +60,7 @@ __interface IFireTabCtrl {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Kapsüllenmiş olmayan birleşimler|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|`dispinterface`|
 
