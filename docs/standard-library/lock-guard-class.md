@@ -1,22 +1,23 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: lock_guard sınıfı'
 title: lock_guard Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - mutex/std::lock_guard
 - mutex/std::lock_guard::lock_guard
 ms.assetid: 57121f0d-9c50-481c-b971-54e64df864e0
-ms.openlocfilehash: 989c1e368e95fc0009f0c3f1c71af0bdba20609d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d8965f1e781d99f0b84c58dcc3288a4532e4351c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351713"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277732"
 ---
 # <a name="lock_guard-class"></a>lock_guard Sınıfı
 
-Yıkıcı bir nesnenin kilidini açmak için anında oluşturulabilen şablonu `mutex`temsil eder.
+Yıkıcıya kilidi olan bir nesne oluşturmak için örneklenebilir bir şablonu temsil eder `mutex` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Mutex>
@@ -25,32 +26,32 @@ class lock_guard;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon bağımsız `Mutex` değişkeni bir *mutex türü*adlandırmak gerekir.
+Şablon bağımsız değişkeni `Mutex` bir *mutex türü* adı vermelidir.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`lock_guard::mutex_type`|Şablon bağımsız değişkeninin `Mutex`eş anlamlısı.|
+|`lock_guard::mutex_type`|Şablon bağımsız değişkeni için eş anlamlı `Mutex` .|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[lock_guard](#lock_guard)|Bir `lock_guard` nesne inşa eder.|
-|[lock_guard::~lock_guard Yıkıcı](#dtorlock_guard_destructor)|Yapıcıya `mutex` geçirilenin kilidini açar.|
+|[lock_guard](#lock_guard)|Bir `lock_guard` nesnesi oluşturur.|
+|[lock_guard:: ~ lock_guard yok edici](#dtorlock_guard_destructor)|`mutex`Oluşturucuya geçirilen öğesini kaldırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** \<mutex>
+**Üst bilgi:**\<mutex>
 
 **Ad alanı:** std
 
-## <a name="lock_guardlock_guard-constructor"></a><a name="lock_guard"></a>lock_guard::lock_guard Yapıcı
+## <a name="lock_guardlock_guard-constructor"></a><a name="lock_guard"></a> lock_guard:: lock_guard Oluşturucusu
 
-Bir `lock_guard` nesne inşa eder.
+Bir `lock_guard` nesnesi oluşturur.
 
 ```cpp
 explicit lock_guard(mutex_type& Mtx);
@@ -60,18 +61,18 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
 
 ### <a name="parameters"></a>Parametreler
 
-*Mtx*\
-*Mutex türü* nde bir nesne.
+*MTX*\
+Bir *mutex tür* nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk oluşturucu türde `lock_guard` bir nesne inşa eder ve *Mtx'i*kilitler. *Mtx* özyinelemeli bir mutex değilse, bu oluşturucu çağrıldığında kilidi açılmalıdır.
+İlk Oluşturucu, MTX türünde bir nesne oluşturur `lock_guard` ve kilitler. *MTX* özyinelemeli bir mutex değilse, bu Oluşturucu çağrıldığında kilidinin açılması gerekir.
 
-İkinci yapıcı *Mtx*kilitlemez. Bu yapıcı çağrıldığında *Mtx* kilitlenmelidir. Yapıcı hiçbir istisna atar.
+İkinci Oluşturucu *MTX*'yi kilitlemez. Bu Oluşturucu çağrıldığında *MTX* 'in kilitlenmesi gerekir. Oluşturucu özel durum oluşturmaz.
 
-## <a name="lock_guardlock_guard-destructor"></a><a name="dtorlock_guard_destructor"></a>lock_guard::~lock_guard Yıkıcı
+## <a name="lock_guardlock_guard-destructor"></a><a name="dtorlock_guard_destructor"></a> lock_guard:: ~ lock_guard yok edici
 
-Yapıcıya `mutex` geçirilenin kilidini açar.
+`mutex`Oluşturucuya geçirilen öğesini kaldırır.
 
 ```cpp
 ~lock_guard() noexcept;
@@ -79,9 +80,9 @@ Yapıcıya `mutex` geçirilenin kilidini açar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`mutex` Yıkıcı çalıştığında yok edici yoksa, davranış tanımsızdır.
+Yok `mutex` edicinin çalıştırıldığı zaman yoksa, davranış tanımsızdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi Dosyaları Başvurusu](../standard-library/cpp-standard-library-header-files.md)\
+[Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
 [\<mutex>](../standard-library/mutex.md)

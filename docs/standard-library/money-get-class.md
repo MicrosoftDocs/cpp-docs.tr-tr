@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: money_get sınıfı'
 title: money_get Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - std::money_get [C++], do_get
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
-ms.openlocfilehash: ab49dad1a24e57eb33834cc651d9ccdb50abe68c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6dfab2347799c78b89e2da9e00ebdb71af0c22d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224766"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277511"
 ---
 # <a name="money_get-class"></a>money_get Sınıfı
 
 Sınıf şablonu, tür dizilerinin parasal değerlere dönüştürmelerini denetlemek için bir yerel ayar modeli olarak işlev görebilecek bir nesne tanımlar `CharType` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType, class InputIterator = istreambuf_iterator<CharType>>
@@ -65,7 +66,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 |Üye işlevi|Açıklama|
 |-|-|
 |[do_get](#do_get)|Parasal bir değeri temsil eden bir karakter dizisinden sayısal değeri ayıklamak için çağrılan sanal işlev.|
-|[Al](#get)|Parasal bir değeri temsil eden bir karakter dizisinden sayısal değeri ayıklar.|
+|[get](#get)|Parasal bir değeri temsil eden bir karakter dizisinden sayısal değeri ayıklar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,7 +74,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 **Ad alanı:** std
 
-## <a name="money_getchar_type"></a><a name="char_type"></a>money_get:: char_type
+## <a name="money_getchar_type"></a><a name="char_type"></a> money_get:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -83,9 +84,9 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, *CharType*şablon parametresi için bir eş anlamlı.
+Tür, *CharType* şablon parametresi için bir eş anlamlı.
 
-## <a name="money_getdo_get"></a><a name="do_get"></a>money_get::d o_get
+## <a name="money_getdo_get"></a><a name="do_get"></a> money_get::d o_get
 
 Bir parasal değeri temsil eden bir karakter dizisinden sayısal bir değeri ayıklamak için çağrılan sanal işlev.
 
@@ -129,11 +130,11 @@ Parasal giriş alanının ötesinde ilk öğeyi ele alan bir giriş Yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sanal korumalı üye işlevi, `first` `last` bir tamamlanmış ve boş olmayan parasal giriş alanı kabul edene kadar, [,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı bir veya daha fazla ondalık basamak dizisine, isteğe bağlı olarak bir eksi işaretiyle ( `-` ), miktarı göstermek ve sonucu [string_type](#string_type) nesne *Val*' de depolar. Birinci öğeyi parasal giriş alanının ötesine atayarak bir yineleyici döndürür. Aksi takdirde, işlev *değer* 'de boş bir sıra depolar ve `ios_base::failbit` *durum*olarak ayarlar. Geçerli bir parasal giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri eşitse `last` , işlevi ' de ayarlanır `ios_base::eofbit` `State` .
+İlk sanal korumalı üye işlevi, `first` `last` bir tamamlanmış ve boş olmayan parasal giriş alanı kabul edene kadar, [,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı bir veya daha fazla ondalık basamak dizisine, isteğe bağlı olarak bir eksi işaretiyle ( `-` ), miktarı göstermek ve sonucu [string_type](#string_type) nesne *Val*' de depolar. Birinci öğeyi parasal giriş alanının ötesine atayarak bir yineleyici döndürür. Aksi takdirde, işlev *değer* 'de boş bir sıra depolar ve `ios_base::failbit` *durum* olarak ayarlar. Geçerli bir parasal giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri eşitse `last` , işlevi ' de ayarlanır `ios_base::eofbit` `State` .
 
 İkinci sanal korumalı üye işlevi ilki ile aynı şekilde davranır, ancak başarılı olursa, isteğe bağlı olarak işaretli basamak sırasını bir değere dönüştürür **`long double`** ve bu değeri *Val*' de depolar.
 
-Parasal giriş alanının biçimi, [use_facet](../standard-library/locale-functions.md#use_facet)**fac** [locale facet](../standard-library/locale-class.md#facet_class)  <  [moneypunct](../standard-library/moneypunct-class.md) \< **CharType**, **intl**>> ( **iosbase**) etkin çağrı tarafından döndürülen yerel ayar modeli fac tarafından belirlenir. [getloc](../standard-library/ios-base-class.md#getloc)).
+Parasal giriş alanının biçimi, [use_facet](../standard-library/locale-functions.md#use_facet) [](../standard-library/locale-class.md#facet_class)  <  [moneypunct](../standard-library/moneypunct-class.md) \< **CharType**, **intl**>> ( **iosbase**) etkin çağrı tarafından döndürülen yerel ayar modeli fac tarafından belirlenir. [getloc](../standard-library/ios-base-class.md#getloc)).
 
 Özellikle:
 
@@ -153,19 +154,19 @@ Parasal giriş alanının biçimi, [use_facet](../standard-library/locale-functi
 
 - **fac**. [frac_digits](../standard-library/moneypunct-class.md#frac_digits) , herhangi bir ondalık noktanın sağında bulunan önemli kesir basamaklarının sayısını belirler. Tarafından için çağrılmasından daha fazla kesir basamağıyla bir parasal miktarı ayrıştırırken `frac_digits` , `do_get` en çok karakter tükettikten sonra ayrıştırma durduruluyor `frac_digits` .
 
-İmza dizesi varsa ( **fac**. `negative_sign`or **fac**. `positive_sign`) birden fazla öğe içeriyor, yalnızca ilk öğe eşleşen öğe **money_base:: işareti** , biçim düzeninde görünür ( **fac**. `neg_format`). Kalan öğeler, parasal giriş alanının sonunda eşleştirilir. Hiçbir dize parasal giriş alanındaki Next öğesiyle eşleşen bir ilk öğesi yoksa, imza dizesi boş olarak alınır ve işaret pozitif olur.
+İmza dizesi varsa ( **fac**. `negative_sign` or **fac**. `positive_sign`) birden fazla öğe içeriyor, yalnızca ilk öğe eşleşen öğe **money_base:: işareti** , biçim düzeninde görünür ( **fac**. `neg_format`). Kalan öğeler, parasal giriş alanının sonunda eşleştirilir. Hiçbir dize parasal giriş alanındaki Next öğesiyle eşleşen bir ilk öğesi yoksa, imza dizesi boş olarak alınır ve işaret pozitif olur.
 
-Eğer **iosbase**ise. [bayraklar](../standard-library/ios-base-class.md#flags)  &  [showbase](../standard-library/ios-functions.md#showbase) sıfırdan farklı, **fac**dizesidir. `curr_symbol`biçim düzeninde **money_base:: symbol** öğesine eşit olan öğe ile eşleşmesi gerekir. Aksi halde, biçim deseninin sonunda **money_base:: symbol** oluşursa ve imza dizesinin hiçbir öğesi eşleştirilmeye devam ediyorsa, para birimi simgesi eşleştirmez. Aksi takdirde, para birimi simgesi isteğe bağlı olarak eşleştirilir.
+Eğer **iosbase** ise. [bayraklar](../standard-library/ios-base-class.md#flags)  &  [showbase](../standard-library/ios-functions.md#showbase) sıfırdan farklı, **fac** dizesidir. `curr_symbol` biçim düzeninde **money_base:: symbol** öğesine eşit olan öğe ile eşleşmesi gerekir. Aksi halde, biçim deseninin sonunda **money_base:: symbol** oluşursa ve imza dizesinin hiçbir öğesi eşleştirilmeye devam ediyorsa, para birimi simgesi eşleştirmez. Aksi takdirde, para birimi simgesi isteğe bağlı olarak eşleştirilir.
 
-Eğer **fac**örneği yoksa. `thousands_sep`parasal giriş alanının değer bölümünde ( **money_base:: değer** şuna eşit olan öğe biçim düzeninde göründüğünde), gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, **fac**tarafından uygulanan gruplandırma kısıtlamaları. **Gruplandırma** zorlanır. Elde edilen basamak sırasının, düşük sıralı **fac**bir tamsayıyı temsil ettiğini unutmayın. `frac_digits`ondalık basamak sayısı, ondalık noktanın sağında değerlendirilir.
+Eğer **fac** örneği yoksa. `thousands_sep` parasal giriş alanının değer bölümünde ( **money_base:: değer** şuna eşit olan öğe biçim düzeninde göründüğünde), gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, **fac** tarafından uygulanan gruplandırma kısıtlamaları. **Gruplandırma** zorlanır. Elde edilen basamak sırasının, düşük sıralı **fac** bir tamsayıyı temsil ettiğini unutmayın. `frac_digits` ondalık basamak sayısı, ondalık noktanın sağında değerlendirilir.
 
-Rastgele boşluk, öğe biçim deseninin sonundaki gibi **money_base:: boşluk** , biçim düzeninde göründüğü zaman eşleştirilir. Aksi takdirde, dahili bir boşluk eşleştirildiği. *ch* [Use_facet](../standard-library/locale-functions.md#use_facet)  <  [CType](../standard-library/ctype-class.md) \< **CharType**> > ( **ıosbase**gibi bir öğe ch boşluk olarak değerlendirilir. [getloc](../standard-library/ios-base-class.md#getloc)). [(](../standard-library/ctype-class.md#is) **ctype_base:: Space**, *ch*) **`true`** .
+Rastgele boşluk, öğe biçim deseninin sonundaki gibi **money_base:: boşluk** , biçim düzeninde göründüğü zaman eşleştirilir. Aksi takdirde, dahili bir boşluk eşleştirildiği.  [Use_facet](../standard-library/locale-functions.md#use_facet)  <  [CType](../standard-library/ctype-class.md) \< **CharType**> > ( **ıosbase** gibi bir öğe ch boşluk olarak değerlendirilir. [getloc](../standard-library/ios-base-class.md#getloc)). [(](../standard-library/ctype-class.md#is) **ctype_base:: Space**, *ch*) **`true`** .
 
 ### <a name="example"></a>Örnek
 
 Çağıran [Get](#get)için örneğe bakın `do_get` .
 
-## <a name="money_getget"></a><a name="get"></a>money_get:: Get
+## <a name="money_getget"></a><a name="get"></a> money_get:: Get
 
 Parasal bir değeri temsil eden bir karakter dizisinden sayısal değeri ayıklar.
 
@@ -262,7 +263,7 @@ int main( )
 };
 ```
 
-## <a name="money_getiter_type"></a><a name="iter_type"></a>money_get:: iter_type
+## <a name="money_getiter_type"></a><a name="iter_type"></a> money_get:: iter_type
 
 Bir giriş yineleyiciyi açıklayan tür.
 
@@ -272,9 +273,9 @@ typedef InputIterator iter_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, **InputIterator**şablon parametresi için bir eş anlamlı.
+Tür, **InputIterator** şablon parametresi için bir eş anlamlı.
 
-## <a name="money_getmoney_get"></a><a name="money_get"></a>money_get:: money_get
+## <a name="money_getmoney_get"></a><a name="money_get"></a> money_get:: money_get
 
 `money_get`Parasal değerleri temsil eden dizilerden sayısal değerler ayıklamak için kullanılan türündeki nesneler için Oluşturucu.
 
@@ -295,15 +296,15 @@ Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri
 
 - 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değil.
+- \> 1: Bu değerler tanımlı değil.
 
 Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
 Oluşturucu kendi temel nesnesini **locale::**[model](../standard-library/locale-class.md#facet_class)(*_Refs*) ile başlatır.
 
-## <a name="money_getstring_type"></a><a name="string_type"></a>money_get:: string_type
+## <a name="money_getstring_type"></a><a name="string_type"></a> money_get:: string_type
 
-**CharType**türünde karakterler içeren bir dizeyi tanımlayan tür.
+**CharType** türünde karakterler içeren bir dizeyi tanımlayan tür.
 
 ```cpp
 typedef basic_string<CharType, Traits, Allocator> string_type;

@@ -1,23 +1,24 @@
 ---
-title: 'Vector&lt;bool&gt;:: Reference:: Flip'
+description: 'Daha fazla bilgi edinin: vector &lt; bool &gt; :: Reference:: Flip'
+title: 'Vector &lt; bool &gt; :: Reference:: Flip'
 ms.date: 11/04/2016
 f1_keywords:
 - vector/std::vector<bool>::reference::flip
 helpviewer_keywords:
 - reference::flip method
 ms.assetid: ef940365-cbe4-4a87-a3e2-1f3cfa357e29
-ms.openlocfilehash: 1743df7773d577e53f054fa4e403cf0d00da8ce7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: fc07fada718e440d6e2ae76c75e7e5b24c6644d7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452167"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280423"
 ---
-# <a name="vectorltboolgtreferenceflip"></a>Vector&lt;bool&gt;:: Reference:: Flip
+# <a name="vectorltboolgtreferenceflip"></a>Vector &lt; bool &gt; :: Reference:: Flip
 
-Başvurulan [\<vector bool >](../standard-library/vector-bool-class.md) öğesinin Boole değerini tersine çevirir.
+Başvurulan [Vector \<bool> ](../standard-library/vector-bool-class.md) öğesinin Boole değerini tersine çevirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 void flip();
@@ -55,7 +56,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 The vector is:
@@ -66,11 +67,11 @@ The vector with first element flipped is:
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<vektör >
+**Üst bilgi:**\<vector>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Vector\<bool >:: Reference sınıfı](../standard-library/vector-bool-reference-class.md)\
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[Vector \<bool> :: Reference sınıfı](../standard-library/vector-bool-reference-class.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

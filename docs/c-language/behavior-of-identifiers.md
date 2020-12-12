@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: tanımlayıcıların davranışı'
 title: Tanımlayıcıların Davranışı
 ms.date: 11/04/2016
 ms.assetid: 2ce0890f-9f04-47d8-9c77-187627576b94
-ms.openlocfilehash: 871abb937e229c9d5abf6b6b803e1b4d536cc7e3
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3c41532e4ac7cfdee8b90bb68cc654ebc7122f3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279851"
 ---
 # <a name="behavior-of-identifiers"></a>Tanımlayıcıların Davranışı
 

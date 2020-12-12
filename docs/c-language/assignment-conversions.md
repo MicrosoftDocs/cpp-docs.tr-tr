@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: atama dönüştürmeleri'
 title: Atama dönüştürmeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - conversions, assignment
 - assignment conversions
 ms.assetid: 4ee01013-de32-4aae-b12e-0051d0cde927
-ms.openlocfilehash: cc75bdd8227c09247f6d4270f1fc21235de2eb05
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b9889214f160c981c57fc3174b542396d71458bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211846"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279968"
 ---
 # <a name="assignment-conversions"></a>Atama dönüştürmeleri
 

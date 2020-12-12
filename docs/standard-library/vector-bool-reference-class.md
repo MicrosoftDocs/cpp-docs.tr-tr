@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: vector &lt; bool &gt; :: Reference sınıfı'
 title: 'Vector &lt; bool &gt; :: Reference sınıfı'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - vector<bool> reference class
 ms.assetid: f27854f9-0ef0-4e7e-ad2e-cd53b6cb3334
-ms.openlocfilehash: 3dde17522c05a05bda04c338682b4b3f9920a972
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4e9e4700f8af269f02f038c37d55460bae3a2a96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280488"
 ---
 # <a name="vectorltboolgtreference-class"></a>Vector &lt; bool &gt; :: Reference sınıfı
 
@@ -19,7 +20,7 @@ ms.locfileid: "87228108"
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ yerel olarak doğrudan başvuruların bitlere atanmasına izin vermediğinden, benzetimli bir başvuru gereklidir. `vector<bool>`, bu proxy sınıfı kullanılarak başvurulabilen her öğe için yalnızca bir bit kullanır. Bununla birlikte, belirli atamalar geçersiz olduğundan başvuru benzetimi tam değil. Örneğin, `vector<bool>::reference` nesnenin adresi alınamadığından, kullanmayı denedikleri aşağıdaki kod `vector<bool>::operator&` doğru değildir:
+C++ yerel olarak doğrudan başvuruların bitlere atanmasına izin vermediğinden, benzetimli bir başvuru gereklidir. `vector<bool>` , bu proxy sınıfı kullanılarak başvurulabilen her öğe için yalnızca bir bit kullanır. Bununla birlikte, belirli atamalar geçersiz olduğundan başvuru benzetimi tam değil. Örneğin, `vector<bool>::reference` nesnenin adresi alınamadığından, kullanmayı denedikleri aşağıdaki kod `vector<bool>::operator&` doğru değildir:
 
 ```cpp
 vector<bool> vb;
@@ -38,7 +39,7 @@ bool& refb = vb[1];   // conversion error - do not use
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**:\<vector>
+**Üst bilgi**: \<vector>
 
 **Ad alanı:** std
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unorm_3 sınıfı'
 title: unorm_3 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,18 +73,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unorm_3::get_yz
 - amp_short_vectors/Concurrency::graphics::unorm_3::rbg
 ms.assetid: ea4e7a17-5256-464c-af28-8b01962564c0
-ms.openlocfilehash: efca9b51f44a9eb64e6e9d89cc156ab0b2df5ae5
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: b62b05487a90e273851b5c5eb7f045132353be37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278005"
 ---
 # <a name="unorm_3-class"></a>unorm_3 Sınıfı
 
 Üç işaretsiz normal sayının kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class unorm_3;
@@ -107,42 +108,42 @@ class unorm_3;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|unorm_3::get_x||
+|unorm_3:: get_x||
 |unorm_3:: get_xy||
-|unorm_3::get_xyz||
-|unorm_3::get_xz||
-|unorm_3::get_xzy||
-|unorm_3::get_y||
-|unorm_3::get_yx||
-|unorm_3::get_yxz||
-|unorm_3::get_yz||
-|unorm_3::get_yzx||
-|unorm_3::get_z||
-|unorm_3::get_zx||
-|unorm_3::get_zxy||
-|unorm_3::get_zy||
-|unorm_3::get_zyx||
+|unorm_3:: get_xyz||
+|unorm_3:: get_xz||
+|unorm_3:: get_xzy||
+|unorm_3:: get_y||
+|unorm_3:: get_yx||
+|unorm_3:: get_yxz||
+|unorm_3:: get_yz||
+|unorm_3:: get_yzx||
+|unorm_3:: get_z||
+|unorm_3:: get_zx||
+|unorm_3:: get_zxy||
+|unorm_3:: get_zy||
+|unorm_3:: get_zyx||
 |Unorm_3:: ref_b||
 |Unorm_3:: ref_g||
 |Unorm_3:: ref_r||
 |Unorm_3:: ref_x||
 |Unorm_3:: ref_y||
-|Unorm_3::ref_z||
+|Unorm_3:: ref_z||
 |unorm_3:: set_x||
 |unorm_3:: set_xy||
-|unorm_3::set_xyz||
-|unorm_3::set_xz||
-|unorm_3::set_xzy||
+|unorm_3:: set_xyz||
+|unorm_3:: set_xz||
+|unorm_3:: set_xzy||
 |unorm_3:: set_y||
-|unorm_3::set_yx||
-|unorm_3::set_yxz||
-|unorm_3::set_yz||
-|unorm_3::set_yzx||
-|unorm_3::set_z||
-|unorm_3::set_zx||
-|unorm_3::set_zxy||
-|unorm_3::set_zy||
-|unorm_3::set_zyx||
+|unorm_3:: set_yx||
+|unorm_3:: set_yxz||
+|unorm_3:: set_yz||
+|unorm_3:: set_yzx||
+|unorm_3:: set_z||
+|unorm_3:: set_zx||
+|unorm_3:: set_zxy||
+|unorm_3:: set_zy||
+|unorm_3:: set_zyx||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -153,7 +154,7 @@ class unorm_3;
 |unorm_3:: operator/=||
 |unorm_3:: operator + +||
 |unorm_3:: operator + =||
-|unorm_3::operator=||
+|unorm_3:: operator =||
 |unorm_3:: operator-=||
 
 ### <a name="public-constants"></a>Genel sabitler
@@ -179,7 +180,7 @@ class unorm_3;
 |unorm_3:: r||
 |unorm_3:: RB||
 |unorm_3:: RBG||
-|unorm_3::rg||
+|unorm_3:: RG||
 |unorm_3:: RGB||
 |unorm_3:: x||
 |unorm_3:: XY||
@@ -188,14 +189,14 @@ class unorm_3;
 |unorm_3:: xzy||
 |unorm_3:: y||
 |unorm_3:: yx||
-|unorm_3::yxz||
+|unorm_3:: yxz||
 |unorm_3::,||
 |unorm_3:: yzx||
 |unorm_3:: z||
-|unorm_3::zx||
-|unorm_3::zxy||
-|unorm_3::zy||
-|unorm_3::zyx||
+|unorm_3:: ZX||
+|unorm_3:: zxy||
+|unorm_3:: zy||
+|unorm_3:: ZYX||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -207,7 +208,7 @@ class unorm_3;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>unorm_3
+## <a name="unorm_3"></a><a name="ctor"></a> unorm_3
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -277,7 +278,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="unorm_3__size"></a>boyutla
+## <a name="size"></a><a name="unorm_3__size"></a> boyutla
 
 ```cpp
 static const int size = 3;

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2199 arasındaki'
 title: Derleyici hatası C2199 arasındaki
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2199
 ms.assetid: 6a92a1b7-7906-49e6-a31f-e8bffbc7706a
-ms.openlocfilehash: 8bd6d587d28b8e7c190f7d3d58448fda501796cf
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: e3c1daefb8a8b14c49b42e48c0d46d5a8e638953
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758989"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278433"
 ---
 # <a name="compiler-error-c2199"></a>Derleyici hatası C2199 arasındaki
 

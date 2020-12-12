@@ -1,5 +1,6 @@
 ---
-title: '&lt;ayarlar&gt;'
+description: 'Daha fazla bilgi edinin: &lt; yerel ayar&gt;'
+title: '&lt;locale&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <locale>
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - locale header
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
-ms.openlocfilehash: ae008ef45e8a6bb57505432f2c931a768d4c8ea4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dce8cb130269450e1b7996b61504e59dc372e3b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277810"
 ---
-# <a name="ltlocalegt"></a>&lt;ayarlar&gt;
+# <a name="ltlocalegt"></a>&lt;locale&gt;
 
 C++ programlarının, karakter sınıflandırması ve dize harmanlama için uluslararası duruma getirme desteği dahil olmak üzere sayısal, parasal ve takvim verilerinin temsili ve formatlaması ile ilgili farklı kültürel kurallarını kapsüllemek ve düzenlemek için kullanabileceği sınıf şablonları ve işlevleri tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <locale>
@@ -58,23 +59,23 @@ C++ programlarının, karakter sınıflandırması ve dize harmanlama için ulus
 |[CType\<char>](../standard-library/ctype-char-class.md)|Türünde `ctype<CharType>` **`char`** bir karakterin çeşitli özelliklerini niteleyen bir yerel ayar modeli olarak işlev görebilecek bir nesneyi açıklayan, sınıf şablonunun türü açık olan bir sınıf **`char`** .|
 |[ctype_base](../standard-library/ctype-base-class.md)|Karakterleri tek tek veya aralığın tamamında sınıflandırmak veya sınamak için kullanılan numaralandırma türleri tanımlamak için kullanılan ctype sınıfı için temel sınıf.|
 |[ctype_byname](../standard-library/ctype-byname-class.md)|Belirli bir yerel ayarın CType modeli olarak işlev görebilecek, karakter sınıflandırmasını ve büyük/küçük harf ve yerel olarak belirtilen karakter kümeleri arasında karakterlerin dönüştürülmesini sağlayan bir nesneyi tanımlayan türetilmiş bir sınıf şablonu.|
-|[ayarlar](../standard-library/locale-class.md)|Kültüre özgü bilgileri depolayan bir yerel ayar nesnesini belirli bir yerelleştirilmiş ortamı toplu olarak kapsülleyen bir modeller kümesi olarak tanımlayan sınıf.|
+|[locale](../standard-library/locale-class.md)|Kültüre özgü bilgileri depolayan bir yerel ayar nesnesini belirli bir yerelleştirilmiş ortamı toplu olarak kapsülleyen bir modeller kümesi olarak tanımlayan sınıf.|
 |[iletilerine](../standard-library/messages-class.md)|Belirli bir yerel ayar için uluslararası iletilerin bir kataloğundan yerelleştirilmiş iletiler almak için bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu.|
 |[messages_base](../standard-library/messages-base-class.md)|**`int`** İleti kataloğu için bir türü tanımlayan temel sınıf.|
 |[messages_byname](../standard-library/messages-byname-class.md)|Yerelleştirilmiş iletilerin alınmasını etkinleştirerek, belirli bir yerel ayarın ileti modeli olarak işlev yapabilecek bir nesneyi tanımlayan türetilmiş bir sınıf şablonu.|
 |[money_base](../standard-library/money-base-class.md)|Karakterleri tek tek veya aralığın tamamında sınıflandırmak veya sınamak için kullanılan numaralandırma türleri tanımlamak için kullanılan ctype sınıfı için temel sınıf.|
 |[money_get](../standard-library/money-get-class.md)|**CharType** türündeki dizilerin parasal değerlere dönüştürmelerini denetlemek için bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu.|
-|[money_put](../standard-library/money-put-class.md)|Parasal değerlerin **CharType**türündeki sıralara dönüştürülmesine yönelik bir yerel ayar modeli olarak görev yapabilecek bir nesne tanımlayan bir sınıf şablonu.|
+|[money_put](../standard-library/money-put-class.md)|Parasal değerlerin **CharType** türündeki sıralara dönüştürülmesine yönelik bir yerel ayar modeli olarak görev yapabilecek bir nesne tanımlayan bir sınıf şablonu.|
 |[moneypunct](../standard-library/moneypunct-class.md)|Bir parasal giriş alanını veya parasal çıkış alanını temsil etmek için kullanılan **CharType** türündeki dizileri açıklayan bir yerel ayar modeli olarak işlev görebilecek bir nesne tanımlayan sınıf şablonu.|
 |[moneypunct_byname](../standard-library/moneypunct-byname-class.md)|Parasal giriş veya çıkış alanlarını biçimlendirmeyi etkinleştirerek, belirtilen yerel ayarın moneypunct modeli olarak işlev görebilecek bir nesneyi tanımlayan türetilmiş bir sınıf şablonu.|
 |[num_get](../standard-library/num-get-class.md)|**CharType** türündeki dizilerin sayısal değerlere dönüştürmelerini denetlemek için bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu.|
-|[num_put](../standard-library/num-put-class.md)|Sayısal değerlerin **CharType**türündeki sıralara dönüştürülmesine yönelik bir yerel ayar modeli olarak görev yapabilecek bir nesne tanımlayan bir sınıf şablonu.|
+|[num_put](../standard-library/num-put-class.md)|Sayısal değerlerin **CharType** türündeki sıralara dönüştürülmesine yönelik bir yerel ayar modeli olarak görev yapabilecek bir nesne tanımlayan bir sınıf şablonu.|
 |[numpunct](../standard-library/numpunct-class.md)|Sayısal ve Boolean ifadelerin biçimlendirme ve noktalama bilgileri hakkında bilgi temsil etmek için kullanılan **CharType** türündeki dizileri açıklayan bir nesneyi tanımlayan bir sınıf şablonu.|
 |[numpunct_byname](../standard-library/numpunct-byname-class.md)|Belirtilen bir yerel ayarın moneypunct modeli olarak işlev gösteren ve sayısal ve Boolean ifadelerin biçimlendirmesini ve noktalama işaretlerini etkinleştiren bir nesneyi tanımlayan türetilmiş bir sınıf şablonu.|
 |[time_base](../standard-library/time-base-class.md)|Yalnızca numaralandırılmış tür dateorder ve bu türden birkaç sabiti tanımlayarak, sınıf şablonu time_get modelleri için temel sınıf olarak hizmet veren bir sınıf.|
 |[time_get](../standard-library/time-get-class.md)|**CharType** türündeki dizilerin zaman değerlerine dönüştürülmesine yönelik bir yerel ayar modeli olarak görev yapabilecek bir nesne tanımlayan bir sınıf şablonu.|
 |[time_get_byname](../standard-library/time-get-byname-class.md)|Time_get türünde bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan türetilmiş bir sınıf şablonu \<**CharType**, **InputIterator**> .|
-|[time_put](../standard-library/time-put-class.md)|Zaman değerlerinin **CharType**türündeki sıralara dönüştürülmesine yönelik bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu.|
+|[time_put](../standard-library/time-put-class.md)|Zaman değerlerinin **CharType** türündeki sıralara dönüştürülmesine yönelik bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu.|
 |[time_put_byname](../standard-library/time-put-byname-class.md)|Türünde bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan türetilmiş bir sınıf şablonu `time_put` \<**CharType**, **OutputIterator**> .|
 |[wbuffer_convert sınıfı](../standard-library/wbuffer-convert-class.md)|Bir bayt akışı arabelleğine ve bu öğeden öğelerin aktarılmasını denetleyen bir akış arabelleği tanımlar.|
 |[wstring_convert sınıfı](../standard-library/wstring-convert-class.md)|Geniş bir dize ve bir bayt dizesi arasında dönüştürme gerçekleştiren bir sınıf şablonu.|

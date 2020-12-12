@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4620'
 title: Derleyici Uyarısı (düzey 1) C4620
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4620
 ms.assetid: fed29934-b797-47e8-bbea-c7e5f8dd6e93
-ms.openlocfilehash: f044d3e10928bc1aaa1e111d01d04b8562b5c025
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cf94f28cee6206f7771e0f33545de4a7710144c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185899"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281489"
 ---
 # <a name="compiler-warning-level-1-c4620"></a>Derleyici Uyarısı (düzey 1) C4620
 
@@ -19,7 +20,7 @@ ms.locfileid: "80185899"
 
 Verilen tür için tanımlanmış bir sonek artışı işleci yok. Derleyici aşırı yüklenmiş ön ek işlecini kullandı.
 
-Bu uyarı, bir sonek `++` işleci tanımlayarak önlenebilir. `++` işlecinin iki bağımsız değişkenli bir sürümünü burada gösterildiği gibi oluşturun:
+Bu uyarı, bir sonek operatörü tanımlayarak önlenebilir `++` . İşlecin iki bağımsız değişkenli bir sürümünü `++` burada gösterildiği gibi oluşturun:
 
 ```cpp
 // C4620.cpp

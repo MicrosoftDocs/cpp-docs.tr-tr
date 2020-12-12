@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2976'
 title: Derleyici hatası C2976
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2976
 ms.assetid: d9bf9836-325e-4f72-a7e3-a67cf19d32e7
-ms.openlocfilehash: 76fd2363b6139bc1bc04aa4d4949a12522e31aa6
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 645b4437bba022e53d018aec18d81b5f108d4d93
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751800"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281905"
 ---
 # <a name="compiler-error-c2976"></a>Derleyici hatası C2976
 
@@ -19,7 +20,7 @@ ms.locfileid: "74751800"
 
 Genel veya şablonda bir veya daha fazla gerçek bağımsız değişken eksik. Doğru parametre sayısını bulmak için genel veya şablon bildirimini denetleyin.
 
-Bu hata C++ standart kitaplık bileşenlerinde eksik şablon bağımsız değişkenleriyle kaynaklanıyor olabilir.
+Bu hata, C++ standart kitaplığı bileşenlerinde eksik şablon bağımsız değişkenlerinin oluşmasına neden olabilir.
 
 Aşağıdaki örnek C2976 oluşturur:
 

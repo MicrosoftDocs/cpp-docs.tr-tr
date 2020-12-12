@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: logical_or struct'
 title: logical_or Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - logical_or class
 - logical_or struct
 ms.assetid: ec8143f8-5755-4e7b-8025-507fb6bf6911
-ms.openlocfilehash: ec3637c1d5a2d0d916aec012783cecd37a179468
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 7b6578bb3405b2428724554d520ffe784b885a40
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277680"
 ---
-# <a name="logicalor-struct"></a>logical_or Yapısı
+# <a name="logical_or-struct"></a>logical_or Yapısı
 
-Mantıksal ayrılma işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi ( `operator||`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde mantıksal diskavşak işlemini () gerçekleştiren önceden tanımlanmış bir işlev nesnesi `operator||` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,21 +41,21 @@ struct logical_or<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Destekleyen herhangi bir türü bir `operator||` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator||`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
-*Sol*\
-Mantıksal ayrılma işlemi sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+Mantıksal ayırıcı işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Mantıksal ayrılma işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+Mantıksal ayırıcı işlemin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left || Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator||`.
+Sonucu `Left || Right` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator||` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanıcı tanımlı türler için var. hiçbir işlenen değerlendirmesini kısa devre Her iki bağımsız değişkenleri tarafından değerlendirilir `operator||`.
+Kullanıcı tanımlı türler için, işlenen değerlendirmesinin kısa devre dışı olması gerekmez. Her iki bağımsız değişken tarafından değerlendirilir `operator||` .
 
 ## <a name="example"></a>Örnek
 

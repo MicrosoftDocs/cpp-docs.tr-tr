@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: özel derleme adımlarını ve derleme olaylarını anlama'
 title: Özel Derleme Adımlarını ve Derleme Olaylarını Anlama
 ms.date: 08/29/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - build steps [C++], build events
 - builds [C++], custom build steps
 ms.assetid: beb2f017-3e9f-4b2c-9b57-2572fd2628e4
-ms.openlocfilehash: 386a12213814e3825ece8a81d61ac251c6793f43
-ms.sourcegitcommit: e10a5feea193c249ddc5a6faba48e7c6d8784e73
+ms.openlocfilehash: da7e9399a1502c3d7ddaccbfb10a4d2b71fb85cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70177319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277407"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>Özel Derleme Adımlarını ve Derleme Olaylarını Anlama
 
@@ -32,7 +33,7 @@ Visual C++ geliştirme ortamının içinden, yapı işlemini özelleştirmenin �
 
 - **Derleme olayları**
 
-   Derleme olayları, projenin yapısını özelleştirmenizi sağlar. Üç derleme olayı vardır: *oluşturma öncesi*, *ön bağlantı*ve *Derleme sonrası*. Yapı olayı, derleme sürecinde belirli bir zamanda gerçekleşecek bir eylem belirtmenize olanak tanır. Örneğin, projenin derlemeyi tamamladıktan sonra **regsvr32. exe** ile bir dosyayı kaydetmek için bir Build olayı kullanabilirsiniz. Daha fazla bilgi için bkz. [derleme olaylarını belirtme](specifying-build-events.md).
+   Derleme olayları, projenin yapısını özelleştirmenizi sağlar. Üç derleme olayı vardır: *oluşturma öncesi*, *ön bağlantı* ve *Derleme sonrası*. Yapı olayı, derleme sürecinde belirli bir zamanda gerçekleşecek bir eylem belirtmenize olanak tanır. Örneğin, projenin derlemeyi tamamladıktan sonra **regsvr32.exe** bir dosyayı kaydetmek için bir yapı olayı kullanabilirsiniz. Daha fazla bilgi için bkz. [derleme olaylarını belirtme](specifying-build-events.md).
 
 [Derleme özelleştirmeleri sorunlarını giderme](troubleshooting-build-customizations.md) , özel derleme adımlarınızın ve derleme olaylarınızın beklenen şekilde çalışmasını sağlamanıza yardımcı olabilir.
 
@@ -62,16 +63,16 @@ Bir çözümdeki her proje için, derleme olayları ve özel derleme adımları 
 
 11. Oluşturma sonrası olay
 
-`custom build step on the project` Ve diğer tüm `post-build event` derleme işlemlerinden sonra sırayla çalışır.
+`custom build step on the project`Ve `post-build event` diğer tüm derleme işlemlerinden sonra sırayla çalışır.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-[Özel Derleme Araçlarını Belirtme](specifying-custom-build-tools.md)<br/>
-[Derleme Olaylarını Belirtme](specifying-build-events.md)<br/>
-[Derleme Özelleştirmelerinin Sorunlarını Giderme](troubleshooting-build-customizations.md)<br/>
-[Özel Derleme Adımının veya Derleme Olayının Çıkışını Biçimlendirme](formatting-the-output-of-a-custom-build-step-or-build-event.md)
+[Özel derleme araçlarını belirtin](specifying-custom-build-tools.md)<br/>
+[Derleme olaylarını belirtme](specifying-build-events.md)<br/>
+[Derleme özelleştirmeleri sorunlarını giderme](troubleshooting-build-customizations.md)<br/>
+[Özel derleme adımının veya derleme olayının çıktısını biçimlendirme](formatting-the-output-of-a-custom-build-step-or-build-event.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio Projeleri - C++](creating-and-managing-visual-cpp-projects.md)<br>
-[Derleme komutları ve özellikleri için ortak makrolar](reference/common-macros-for-build-commands-and-properties.md)
+[Visual Studio projeleri-C++](creating-and-managing-visual-cpp-projects.md)<br>
+[Derleme komutları ve özellikleri için genel makrolar](reference/common-macros-for-build-commands-and-properties.md)

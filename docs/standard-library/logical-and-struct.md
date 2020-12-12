@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: logical_and struct'
 title: logical_and Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - logical_and class
 - logical_and struct
 ms.assetid: 1a375cc2-0592-4d57-a553-78009c7ad610
-ms.openlocfilehash: 7036ebf9fed3877a395e44d8383776002b9afcae
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2d0cc8b8c40407356d8d3ba41046c0033941c2ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351684"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277706"
 ---
 # <a name="logical_and-struct"></a>logical_and Yapısı
 
-Mantıksal bağlaç işlemini gerçekleştiren önceden`operator&&`tanımlanmış bir işlev nesnesi ( ) bağımsız değişkenlerinde.
+Bağımsız değişkenlerinde mantıksal birlikte işlem () gerçekleştiren önceden tanımlanmış bir işlev nesnesi `operator&&` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,22 +40,22 @@ struct logical_and<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*, *T*, *U*\
-Belirtilen veya çıkarılan `operator&&` türlerin operands alan bir destekleyen herhangi bir tür.
+*Tür*, *T*, *U*\
+`operator&&`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
-*Sol*\
-Mantıksal bağlaç işleminin sol operand'ı. Özelleştirilmemiş *şablon, türünden*bir lvalue başvuru bağımsız değişkeni alır. Özelleştirilmiş şablon, çıkarılan *t*tipinin lvalue ve rvalue referans bağımsız değişkenlerinin mükemmel iletilmesi yapar.
+*Tarafta*\
+Mantıksal birlikte işlemin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*Doğru*\
-Mantıksal bağlaç işleminin sağ operand'ı. Özelleştirilmemiş *şablon, türünden*bir lvalue başvuru bağımsız değişkeni alır. Özelleştirilmiş şablon, çıkarılan *u*türündeki lvalue ve rvalue referans bağımsız değişkenlerinin mükemmel iletilmesi yapar.
+*Right*\
+Mantıksal birlikte işlemin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bunun `Left && Right`sonucu. Özelleştirilmiş şablon, `operator&&`''' tarafından döndürülen türe sahip sonucun mükemmel iletilmesi yapar.
+Sonucu `Left && Right` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator&&` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanıcı tanımlı tipler için, operand değerlendirme kısa devre yoktur. Her iki bağımsız `operator&&`değişken de .
+Kullanıcı tanımlı türler için, işlenen değerlendirmesinin kısa devre dışı olması gerekmez. Her iki bağımsız değişken tarafından değerlendirilir `operator&&` .
 
 ## <a name="example"></a>Örnek
 

@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: RemoveIUnknown Sınıfı'
 title: RemoveIUnknown Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::Details::RemoveIUnknown
 ms.assetid: 998e711a-7d1a-44c6-a016-e6167aa40863
-ms.openlocfilehash: cfcdefbb8d7cd12d2ebf99710f595fdd2fc16f76
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0ef00ee9859a27252550aaeec6fb9b4f9ef2d5b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278733"
 ---
 # <a name="removeiunknown-class"></a>RemoveIUnknown Sınıfı
 
@@ -28,14 +29,14 @@ class RemoveIUnknown : public T;
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Bir sınıf.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IUnknown`tabanlı bir türe eşdeğer, ancak sanal olmayan `QueryInterface`, `AddRef`ve `Release` üye işlevleri içeren bir tür yapar.
+, `IUnknown` Tabanlı bir türe eşdeğer, ancak sanal olmayan `QueryInterface` , `AddRef` ve üye işlevlere sahip bir tür yapar `Release` .
 
-Varsayılan olarak, COM yöntemleri sanal `QueryInterface`, `AddRef`ve `Release` yöntemler sağlar. Ancak, `ComPtr` Sanal yöntemlerin ek yükünü gerektirmez. `RemoveIUnknown`, özel, sanal olmayan `QueryInterface`, `AddRef`ve `Release` yöntemleri sunarak bu ek yükü ortadan kaldırır.
+Varsayılan olarak, COM yöntemleri sanal `QueryInterface` , `AddRef` ve yöntemleri sağlar `Release` . Ancak, `ComPtr` Sanal yöntemlerin ek yükünü gerektirmez. `RemoveIUnknown` Özel, sanal olmayan `QueryInterface` , ve yöntemleri sağlayarak bu ek yükü ortadan kaldırır `AddRef` `Release` .
 
 ## <a name="members"></a>Üyeler
 
@@ -43,7 +44,7 @@ Varsayılan olarak, COM yöntemleri sanal `QueryInterface`, `AddRef`ve `Release`
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`ReturnType`|Şablon parametresi *T* , ancak sanal olmayan `IUnknown` üyelerine denk gelen bir tür için eş anlamlı.|
+|`ReturnType`|Şablon parametresi *T* , ancak sanal olmayan üyelere denk gelen bir tür için eş anlamlı `IUnknown` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -59,4 +60,4 @@ Varsayılan olarak, COM yöntemleri sanal `QueryInterface`, `AddRef`ve `Release`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

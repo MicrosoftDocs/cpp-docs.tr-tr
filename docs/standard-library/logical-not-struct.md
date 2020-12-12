@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: logical_not struct'
 title: logical_not Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - logical_not class
 - logical_not struct
 ms.assetid: 892db678-31da-4540-974b-17b05efc0849
-ms.openlocfilehash: 731b99faed6515268b93ec3a1a43c96796e49dd3
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: dc89a5a764d9f3182609b47c5f05eb8b3e167cec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246478"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277693"
 ---
-# <a name="logicalnot-struct"></a>logical_not Yapısı
+# <a name="logical_not-struct"></a>logical_not Yapısı
 
-Mantıksal gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi değil işlemi (`operator!`) bağımsız değişken üzerinde.
+Bağımsız değişkeninde mantıksal olmayan işlem () gerçekleştiren önceden tanımlanmış bir işlev nesnesi `operator!` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,15 +40,15 @@ struct logical_not<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*\
-Destekleyen herhangi bir türü bir `operator!` belirtilen veya çıkarsanan türünde bir işlenen alan.
+*Türüyle*\
+`operator!`Belirtilen veya Çıkarsanan türün bir işleneni alan öğesini destekleyen herhangi bir tür.
 
-*Sol*\
-Mantıksal işleneni işlemi değil. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *türü*.
+*Tarafta*\
+Mantıksal işlem işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, Çıkarsanan tür *türünün* lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `!Left`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator!`.
+Sonucu `!Left` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator!` .
 
 ## <a name="example"></a>Örnek
 

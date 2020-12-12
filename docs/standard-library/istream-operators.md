@@ -1,21 +1,22 @@
 ---
-title: '&lt;istream&gt; operatörleri'
+description: 'Daha fazla bilgi edinin: &lt; IStream &gt; işleçleri'
+title: '&lt;IStream &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - istream/std::operator&gt;&gt;
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
-ms.openlocfilehash: 3b9521fde1b5a03389bfc1ad3e35fa407d9d6ac0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 68bf59480af68248533f55ef32de4525a4d900d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363034"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277888"
 ---
-# <a name="ltistreamgt-operators"></a>&lt;istream&gt; operatörleri
+# <a name="ltistreamgt-operators"></a>&lt;IStream &gt; işleçleri
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>Işleç&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> işlecinde&gt;&gt;
 
-Akışları ayıklar karakterler ve dizeleri ayıklar.
+Akıştan karakterler ve dizeler ayıklar.
 
 ```cpp
 template <class Elem, class Tr>
@@ -56,16 +57,16 @@ basic_istream<Elem, Tr>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Caner*\
+*Denetleyebilirsiniz*\
 Bir karakter.
 
-*Istr*\
-Bir dere.
+*İstr*\
+Bir akış.
 
-*Str*\
-Bir ip.
+*üstbilgisine*\
+Bir dize.
 
-*Val*\
+*Acil*\
 Bir tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -74,7 +75,7 @@ Akış
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf `basic_istream` ayrıca birkaç çıkarma işleci tanımlar. Daha fazla bilgi için [basic_istream::operator>>. ](../standard-library/basic-istream-class.md#op_gt_gt)
+`basic_istream`Sınıfı ayrıca birkaç ayıklama işleci tanımlar. Daha fazla bilgi için bkz. [basic_istream:: operator>>](../standard-library/basic-istream-class.md#op_gt_gt).
 
 İşlev şablonu:
 
@@ -84,9 +85,9 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem* str);
 ```
 
-elemanlara `N - 1` kadar ayıklar ve *str*başlayan dizi onları depolar . `Istr.` [Genişlik](../standard-library/ios-base-class.md#width) sıfırdan büyükse, *N;* `Istr.width` aksi takdirde, bu ilan edilebilir en `Elem` büyük dizi boyutu. İşlev her zaman `Elem()` depolanan herhangi bir öğeden sonra değeri depolar. Ayıklama dosyanın sonunda, değeri `Elem(0)` olan bir karakterde (ayıklanmadı) veya [ws](../standard-library/istream-functions.md#ws)tarafından atılabilecek herhangi bir öğede (ayıklanmadı) durur. İşlev hiçbir öğe yitirmezse, çağırır. `Istr.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` Her durumda, arar `Istr.width(0)` ve *Istr*döndürür.
+en fazla `N - 1` öğeyi ayıklar ve bunlara *Str*'den başlayarak dizide depolar. `Istr.` [Genişlik](../standard-library/ios-base-class.md#width) sıfırdan büyükse, *N* ise `Istr.width` ; Aksi takdirde, bildirilebilecek en büyük dizisinin boyutudur `Elem` . İşlev her zaman değeri, `Elem()` depoladığı herhangi bir ayıklanan öğeden sonra saklar. Ayıklama, dosyanın sonunda, değerine sahip bir karakter üzerinde `Elem(0)` (ayıklanmayan) veya [WS](../standard-library/istream-functions.md#ws)tarafından atılacak herhangi bir öğede (ayıklanmayan) erken duraklar. İşlev hiçbir öğe ayıklaıyorsa, çağırır `Istr.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` . Herhangi bir durumda, çağırır `Istr.width(0)` ve *ISTR* döndürür.
 
-**Güvenlik Notu** Giriş akışından çıkarılan null-sonlandırılan dize, hedef arabellek *str*boyutunu aşmamalıdır. Daha fazla bilgi için [bkz.](/windows/win32/SecBP/avoiding-buffer-overruns)
+**Güvenlik notunun** Giriş akışından ayıklanan null ile sonlandırılmış dizenin hedef arabellek *Str* boyutunu aşmaması gerekir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 İşlev şablonu:
 
@@ -96,7 +97,7 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem& Ch);
 ```
 
-mümkünse bir öğe ayıklar ve *Ch*depolar . Aksi takdirde, `is.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)`çağırır . Her durumda, *Istr*döndürür.
+Mümkünse bir öğeyi ayıklar ve bunu *ch* içinde depolar. Aksi takdirde, çağırır `is.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` . Herhangi bir durumda, *ISTR* döndürür.
 
 İşlev şablonu:
 
@@ -106,7 +107,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, signed char* str);
 ```
 
-döndürür. `Istr >> ( char * ) str`
+döndürür `Istr >> ( char * ) str` .
 
 İşlev şablonu:
 
@@ -116,7 +117,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, signed char& Ch);
 ```
 
-döndürür. `Istr >> ( char& ) Ch`
+döndürür `Istr >> ( char& ) Ch` .
 
 İşlev şablonu:
 
@@ -126,7 +127,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, unsigned char* str);
 ```
 
-döndürür. `Istr >> ( char * ) str`
+döndürür `Istr >> ( char * ) str` .
 
 İşlev şablonu:
 
@@ -136,7 +137,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, unsigned char& Ch);
 ```
 
-döndürür. `Istr >> ( char& ) Ch`
+döndürür `Istr >> ( char& ) Ch` .
 
 İşlev şablonu:
 
@@ -147,7 +148,7 @@ basic_istream<Elem, Tr>& operator>>(
     Type& val);
 ```
 
-döndürür `Istr >> val` (ve işlemdeki `Istr` bir lvalue'a bir rvalue referansı dönüştürür).
+döndürür `Istr >> val` (ve bir rvalue başvurusunu `Istr` işlemdeki bir lvalue öğesine dönüştürür).
 
 ### <a name="example"></a>Örnek
 

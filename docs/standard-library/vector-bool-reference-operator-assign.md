@@ -1,5 +1,6 @@
 ---
-title: vector&lt;bool&gt;::reference::operator=
+description: 'Daha fazla bilgi edinin: vector &lt; bool &gt; :: Reference:: operator ='
+title: 'Vector &lt; bool &gt; :: Reference:: operator ='
 ms.date: 11/04/2016
 f1_keywords:
 - =
@@ -10,14 +11,14 @@ helpviewer_keywords:
 - = operator, with specific C++ Standard Library objects
 - reference::operator=
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34
-ms.openlocfilehash: 738f86bd6163a827b43d78f29c6e3a7124400fb7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: eb6efe7d0e5d59d1135430a3dc8b544dcee3678f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280371"
 ---
-# <a name="vectorltboolgtreferenceoperator"></a>vector&lt;bool&gt;::reference::operator=
+# <a name="vectorltboolgtreferenceoperator"></a>Vector &lt; bool &gt; :: Reference:: operator =
 
 Bir bite bir Boolean değeri, veya başvurulan bir öğenin tuttuğu değeri atar.
 
@@ -95,7 +96,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 The vector is: true false false true true
@@ -112,11 +113,11 @@ The original value of the 3rd element still stored in a bool: false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<vektör >
+**Üst bilgi:**\<vector>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Vector\<bool >:: Reference sınıfı](../standard-library/vector-bool-reference-class.md)\
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[Vector \<bool> :: Reference sınıfı](../standard-library/vector-bool-reference-class.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

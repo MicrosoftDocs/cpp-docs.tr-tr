@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Hızlandırıcı Düzenleyici (C++)'
 title: Hızlandırıcı Düzenleyici (C++)
 ms.date: 02/14/2019
 f1_keywords:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - keyboard shortcuts [C++], property changing
 - accelerator tables [C++], changing properties
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-ms.openlocfilehash: c98ff1fd44b73b3f204e9b952836c387f7f21146
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: d6324b86a6e30f7169899a535012f4347f92bcf4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353096"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280306"
 ---
 # <a name="accelerator-editor-c"></a>Hızlandırıcı Düzenleyici (C++)
 
@@ -47,7 +48,7 @@ Hızlandırıcı tablosu, kısayol tuşları olarak bilinen Hızlandırıcı tu�
 Genellikle Hızlandırıcılar, bir menü veya araç çubuğunda de bulunan program komutları için klavye kısayolları olarak kullanılır. Ancak, kısayol tablosu ile ilişkili bir kullanıcı arabirimi nesnesine sahip olmayan komutlara ilişkin anahtar birleşimlerini tanımlamak için Hızlandırıcı tablosunu kullanabilirsiniz.
 
 > [!TIP]
-> **Hızlandırıcı düzenleyicisini**kullanırken, sık kullanılan komutların kısayol menüsünü göstermek için sağ tıklayın. Kullanılabilir komutlar, işaretçinin işaret ettiği işe bağlıdır.
+> **Hızlandırıcı düzenleyicisini** kullanırken, sık kullanılan komutların kısayol menüsünü göstermek için sağ tıklayın. Kullanılabilir komutlar, işaretçinin işaret ettiği işe bağlıdır.
 
 [Sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code) kullanarak kısayol tuşu komutlarını koda bağlayabilirsiniz. Önceden tanımlanmış Hızlandırıcı tuşlarının bir listesi için bkz. [hızlandırıcı tuşları](predefined-accelerator-keys.md).
 
@@ -60,25 +61,25 @@ Genellikle Hızlandırıcılar, bir menü veya araç çubuğunda de bulunan prog
 
 **ID** özelliği Program kodundaki her bir Hızlandırıcı tablosu girişine başvurur. Bu giriş, bir Kullanıcı Hızlandırıcı tuşuna veya bir tuş birleşimine bastığında programın aldığı komut değeridir. Hızlandırıcının bir menü öğesiyle aynı olmasını sağlamak için, bu **kimliği** aynı yapın, böylece Hızlandırıcı tablosunun **kimliği** , menü kaynağının **kimliğiyle** aynı olur.
 
-Her hızlandırıcı **kimliği** üç özelliğe sahiptir: **değiştirici**, **anahtar**ve **tür**
+Her hızlandırıcı **kimliği** üç özelliğe sahiptir: **değiştirici**, **anahtar** ve **tür**
 
 **Değiştirici** özelliği hızlandırıcı için denetim tuş bileşimlerini ayarlar.
 
 > [!NOTE]
-> **Özellikler** penceresinde, **değiştirici** özelliği, hepsi bağımsız olarak denetlenebilen üç ayrı **Boole** özelliği olarak görünür: **alt**, **CTRL**ve **Shift**.
+> **Özellikler** penceresinde, **değiştirici** özelliği, hepsi bağımsız olarak denetlenebilen üç ayrı **Boole** özelliği olarak görünür: **alt**, **CTRL** ve **Shift**.
 
 Hızlandırıcı tablosundaki **değiştirici** özelliğinin geçerli girişleri şunlardır:
 
    |Değer|Açıklama|
    |-----------|-----------------|
-   |**Hiçbiri**|Kullanıcı yalnızca **anahtar** değerine basar.<br/><br/>Bu değer, 026 aracılığıyla (**CTRL + a** ile **CTRL + Z**arasında) YORUMLANAN bir ASCII/ANSI değerleriyle en etkili şekilde kullanılır.|
+   |**Hiçbiri**|Kullanıcı yalnızca **anahtar** değerine basar.<br/><br/>Bu değer, 026 aracılığıyla (**CTRL + a** ile **CTRL + Z** arasında) YORUMLANAN bir ASCII/ANSI değerleriyle en etkili şekilde kullanılır.|
    |**Alternatif**|Kullanıcı, **anahtar** değerinden önce **alt** tuşuna basmanız gerekir.|
    |**T**|Kullanıcının **anahtar** değerinden önce **CTRL** tuşuna BASMASı gerekir, ASCII türünde geçerli değildir.|
    |**Shift**|Kullanıcı, **anahtar** değerinden önce **SHIFT** tuşuna basmalıdır.|
    |**Ctrl + alt**|Kullanıcı, **anahtar** değerinden önce **CTRL** ve **alt** tuşlarına basarak ASCII türüyle geçerli değildir.|
    |**Ctrl + Shift**|Kullanıcı, **anahtar** değerinden önce **CTRL** ve **SHIFT** tuşlarına basarak ASCII türüyle geçerli değildir.|
    |**Alt + SHIFT**|Kullanıcı, **anahtar** değerinden önce **alt** ve **SHIFT** tuşlarına basarak ASCII türüyle geçerli değildir.|
-   |**CTRL + ALT + SHIFT**|Kullanıcı, **anahtar** değerinden önce **CTRL**, **alt**ve **SHIFT** tuşlarına basarak ASCII türüyle geçerli değildir.|
+   |**CTRL + ALT + SHIFT**|Kullanıcı, **anahtar** değerinden önce **CTRL**, **alt** ve **SHIFT** tuşlarına basarak ASCII türüyle geçerli değildir.|
 
 **Anahtar** özelliği, hızlandırıcı olarak kullanılacak gerçek anahtarı ayarlar.
 
@@ -101,16 +102,16 @@ Aşağıda Hızlandırıcı tablosundaki **anahtar** özelliği için geçerli g
 
 **Type** özelliği, hızlandırıcı **kimliğiyle** ilişkili KıSAYOL tuşu BILEŞIMININ bir ASCII/ANSI anahtar değeri veya bir sanal anahtar (virtkey) birleşimi olarak yorumlanıp yorumlanmadığını belirler.
 
-- **Tür** özelliği **ASCII**ise, **değiştirici** özelliği yalnızca veya olabilir `None` ya da `Alt` **CTRL** tuşunu kullanan bir hızlandırıcıya sahip olan anahtar önünde ile belirtilen bir hızlandırıcıya sahip olabilir `^` .
+- **Tür** özelliği **ASCII** ise, **değiştirici** özelliği yalnızca veya olabilir `None` ya da `Alt` **CTRL** tuşunu kullanan bir hızlandırıcıya sahip olan anahtar önünde ile belirtilen bir hızlandırıcıya sahip olabilir `^` .
 
-- **Tür** özelliği **Virtkey**Ise, **değiştirici** ve **anahtar** değerlerinin herhangi bir birleşimi geçerlidir.
+- **Tür** özelliği **Virtkey** Ise, **değiştirici** ve **anahtar** değerlerinin herhangi bir birleşimi geçerlidir.
 
 > [!NOTE]
-> Hızlandırıcı tablosuna bir değer girmek ve değeri ASCII/ANSI olarak kabul etmek istiyorsanız, tablodaki girdinin **türünü** seçin ve açılan listeden **ASCII** ' yi seçin. Ancak, **anahtarı**belirtmek için **düzenleme** menüsünden bir **sonraki anahtar yazılı** komutunu kullanırsanız, **anahtar** kodu girmeden *önce* , **Type** özelliğini **virtkey** iken **ASCII** olarak değiştirmeniz gerekir.
+> Hızlandırıcı tablosuna bir değer girmek ve değeri ASCII/ANSI olarak kabul etmek istiyorsanız, tablodaki girdinin **türünü** seçin ve açılan listeden **ASCII** ' yi seçin. Ancak, **anahtarı** belirtmek için **düzenleme** menüsünden bir **sonraki anahtar yazılı** komutunu kullanırsanız, **anahtar** kodu girmeden *önce* , **Type** özelliğini **virtkey** iken **ASCII** olarak değiştirmeniz gerekir.
 
 ## <a name="accelerator-tables"></a>Hızlandırıcı tabloları
 
-Bir C++ projesinde Hızlandırıcı Düzenleyicisi ' ni doğrudan **Hızlandırıcı düzenleyicisinde**yerinde düzenleme ile düzenleyebilirsiniz.
+Bir C++ projesinde Hızlandırıcı Düzenleyicisi ' ni doğrudan **Hızlandırıcı düzenleyicisinde** yerinde düzenleme ile düzenleyebilirsiniz.
 
 Aşağıdaki yordamlar standart özellik sayfalarının kullanımına başvurur, ancak hem yerinde düzenlenen hem de özellik sayfası yöntemi aynı sonuca sahiptir. Özellik sayfaları kullanılarak yapılan değişiklikler veya yerinde düzenlemenin kullanılması hemen Hızlandırıcı tablosuna yansıtılır.
 
@@ -122,13 +123,13 @@ Aşağıdaki yordamlar standart özellik sayfalarının kullanımına başvurur,
 
 1. Açılan açılan kutudan seçim yapın veya değişiklik yapmak için yerinde yazın:
 
-   - **Kimlik**için listeden seçin veya düzenlemek için yazın.
+   - **Kimlik** için listeden seçin veya düzenlemek için yazın.
 
-   - **Değiştirici**için listeden seçin.
+   - **Değiştirici** için listeden seçin.
 
-   - **Anahtar**için listeden seçin veya düzenlemek için yazın.
+   - **Anahtar** için listeden seçin veya düzenlemek için yazın.
 
-   - **Tür**Için listeden **ASCII** veya **virtkey** ' i seçin.
+   - **Tür** Için listeden **ASCII** veya **virtkey** ' i seçin.
 
 ### <a name="to-find-an-entry-in-an-open-accelerator-table"></a>Açık bir Hızlandırıcı tablosunda giriş bulmak için
 
@@ -146,12 +147,12 @@ Aşağıdaki yordamlar standart özellik sayfalarının kullanımına başvurur,
 
 1. **Kimlik** kutusundaki aşağı açılan listeden bir **kimlik** seçin veya **kimlik** kutusuna yeni bir *kimlik* yazın.
 
-1. Hızlandırıcı olarak kullanmak istediğiniz *anahtarı* yazın veya bir tuş bileşimini ayarlamak için sağ tıklayın ve yazılı bir **sonraki** anahtar ' ı seçin **Edit**  >  **Next Key Typed**.
+1. Hızlandırıcı olarak kullanmak istediğiniz *anahtarı* yazın veya bir tuş bileşimini ayarlamak için sağ tıklayın ve yazılı bir **sonraki** anahtar ' ı seçin   >  .
 
-1. Gerekirse **değiştiriciyi** değiştirin ve **yazın**ve **ENTER**tuşuna basın.
+1. Gerekirse **değiştiriciyi** değiştirin ve **yazın** ve **ENTER** tuşuna basın.
 
 > [!NOTE]
-> Tanımladığınız tüm Hızlandırıcıların benzersiz olduğundan emin olun. Aynı kimliğe herhangi bir etkisi olmadan atanmış birkaç anahtar birleşimine sahip olabilirsiniz, örneğin, **CTRL** + **P** ve **F8** her ikisi de ID_PRINT atanabilir. Ancak, birden fazla kimliğe atanmış anahtar birleşimine sahip olmak iyi çalışmaz, örneğin, **Ctrl** + hem ID_SPELL_CHECK hem de ID_THESAURUS için CTRL**Z** atanır.
+> Tanımladığınız tüm Hızlandırıcıların benzersiz olduğundan emin olun. Aynı kimliğe herhangi bir etkisi olmadan atanmış birkaç anahtar birleşimine sahip olabilirsiniz, örneğin, **CTRL** + **P** ve **F8** her ikisi de ID_PRINT atanabilir. Ancak, birden fazla kimliğe atanmış anahtar birleşimine sahip olmak iyi çalışmaz, örneğin,  + hem ID_SPELL_CHECK hem de ID_THESAURUS için CTRL **Z** atanır.
 
 ### <a name="to-delete-an-entry-from-an-accelerator-table"></a>Hızlandırıcı tablosundan bir girişi silmek için
 

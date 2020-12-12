@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: hızlandırıcı tuşları (simgeler için C++ görüntü Düzenleyicisi)'
 title: Hızlandırıcı tuşları (simgeler için C++ görüntü Düzenleyicisi)
 ms.date: 02/15/2019
 helpviewer_keywords:
 - accelerator keys
 - Image editor [C++], accelerator keys
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
-ms.openlocfilehash: 02ac25b693e4d8f7bb6739708d23eb1df0ebf190
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 74062789a7fc6ff6b3b15364d1379861f7bea1c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280294"
 ---
 # <a name="accelerator-keys-c-image-editor-for-icons"></a>Hızlandırıcı tuşları (simgeler için C++ görüntü Düzenleyicisi)
 
@@ -53,7 +54,7 @@ Aşağıda varsayılan olarak anahtarlara bağlanan resim Düzenleyicisi komutla
 |Image.ShowGrid|**CTRL**  +  **Alt**  +  **S**|Piksel kılavuzuna geçiş yapar ( [Kılavuz ayarları iletişim kutusundaki](./image-editor-for-icons.md) **piksel kılavuz** seçeneğini seçer veya temizler).|
 |Image.ShowTileGrid|**CTRL**  +  **SHIFT**  +  **Alt**  +  **S**|Döşeme kılavuzuna geçiş yapar ( [Kılavuz ayarları iletişim kutusunda](./image-editor-for-icons.md) **döşeme kılavuz** seçeneğini seçer veya temizler).|
 |Image.SmallBrush|**CTRL**  +  **.** (nokta)|**Fırça** boyutunu bir piksel azaltır. (Ayrıca bkz. bu tablodaki Image. LargerBrush ve Image. SmallerBrush.)|
-|Image.SmallerBrush|**Ctrl**  +  CTRL **-** dakini|Fırça boyutunu her yönde bir piksel azaltır. Fırça boyutunu yeniden genişletmek için bu tablodaki Image. LargerBrush bölümüne bakın.|
+|Image.SmallerBrush|  +  CTRL **-** dakini|Fırça boyutunu her yönde bir piksel azaltır. Fırça boyutunu yeniden genişletmek için bu tablodaki Image. LargerBrush bölümüne bakın.|
 |Image.TextTool|**CTRL**  +  **T**|[Metin aracı iletişim kutusunu](./image-editor-for-icons.md)açar.|
 |Image. UseSelectionAsBrush|**CTRL**  +  **U**|Geçerli seçimi fırça olarak kullanarak çizer.|
 |Image.ZoomIn|**CTRL**  +  **SHIFT**  +  **.** (nokta)<br /><br /> - veya -<br /><br /> **CTRL**  +  **Yukarı ok**|Geçerli görünüm için büyütmeyi artırır.|
@@ -61,7 +62,7 @@ Aşağıda varsayılan olarak anahtarlara bağlanan resim Düzenleyicisi komutla
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

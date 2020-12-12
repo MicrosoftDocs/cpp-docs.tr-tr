@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2893'
 title: Derleyici hatası C2893
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2893
 ms.assetid: ec0cbe43-005d-45da-8742-aaeb9b81d28e
-ms.openlocfilehash: ca603eb94d5d528a7fed15e0320e1f5d88bf0629
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 42e31327096a539feeb691c698b52f57ecb615a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97278265"
 ---
 # <a name="compiler-error-c2893"></a>Derleyici hatası C2893
 
@@ -23,7 +24,7 @@ Genel olarak, bir C2893 hatasını çözme yöntemi işlevin imzasını gözden 
 
 ## <a name="example"></a>Örnek
 
-C2893 `f`şablon parametresi `T` `std::map<int,int>`olarak anlaşılamadığından, ancak `std::map<int,int>` üye `data_type` yok (`T::data_type` `T = std::map<int,int>`ile başlatılamaz.). Aşağıdaki örnek C2893 oluşturur.
+C2893 `f` , şablon parametresi olarak `T` çıkarılmış `std::map<int,int>` , ancak `std::map<int,int>` üyesi olmayan `data_type` ( `T::data_type` ile örneği oluşturulamıyor `T = std::map<int,int>` .) nedeniyle oluşur. Aşağıdaki örnek C2893 oluşturur.
 
 ```cpp
 // C2893.cpp

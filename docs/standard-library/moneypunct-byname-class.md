@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: moneypunct_byname sınıfı'
 title: moneypunct_byname Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - moneypunct_byname class
 ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416
-ms.openlocfilehash: c687bc870e4d78cfe9174eb04ea09c34d6a9c955
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: b20293ac6788156f25f95878a5ab0098c178edec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687665"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277472"
 ---
 # <a name="moneypunct_byname-class"></a>moneypunct_byname Sınıfı
 
-Verilen bir yerel ayarın `moneypunct` modeli olarak işlev görebilecek, parasal giriş alanı veya parasal çıkış alanlarını biçimlendirmeyi sağlayan bir nesneyi tanımlayan türetilmiş bir sınıf şablonu.
+`moneypunct`Parasal giriş alanını veya parasal çıkış alanlarını biçimlendirmeyi etkinleştirerek, belirli bir yerel ayarın bir modeli olarak işlev yapabilecek bir nesneyi tanımlayan türetilmiş bir sınıf şablonu.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class CharType, bool Intl = false>
@@ -40,14 +41,14 @@ protected:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışı, adlandırılmış yerel ayar `_Locname` tarafından belirlenir. Her Oluşturucu kendi temel nesnesini [moneypunct](../standard-library/moneypunct-class.md#moneypunct) \<CharType, Intl > (`_Refs`) ile başlatır.
+Davranışı, adlandırılmış yerel ayar tarafından belirlenir `_Locname` . Her Oluşturucu kendi temel nesnesini [moneypunct](../standard-library/moneypunct-class.md#moneypunct) \<CharType, Intl> () ile başlatır `_Refs` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

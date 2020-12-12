@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C/C++ yalıtılmış uygulamalar ve yan yana derlemeler ile ilgili sorunları giderme'
 title: C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - troubleshooting isolated applications
 - troubleshooting Visual C++
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-ms.openlocfilehash: 0dc8488acc90f1a38a4c0de0f052590ef4f398af
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f3a93ec13ce36e67f88d772f1dcbad9443fca188
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335447"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277420"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
 
@@ -33,7 +34,7 @@ Uygulamanız, Visual Studio olmayan bir bilgisayara dağıtılmışsa ve önceki
 
 1. [Visual C++ uygulamasının bağımlılıklarını anlama](../windows/understanding-the-dependencies-of-a-visual-cpp-application.md)bölümünde açıklanan adımları izleyin. Bağımlılık denetçisi, bir uygulama veya DLL için çoğu bağımlılığı gösterebilir. Bazı dll 'Lerin eksik olduğunu gözlemlerseniz, uygulamayı çalıştırmayı denediğiniz bilgisayara yükleyebilirsiniz.
 
-1. İşletim sistemi yükleyicisi, uygulamanın bağımlı olduğu derlemeleri yüklemek için uygulama bildirimini kullanır. Bildirim, bir kaynak olarak ikiliye gömülebilir ya da uygulama klasörüne ayrı bir dosya olarak yüklenebilir. Bildirimin ikiliye gömülü olup olmadığını denetlemek için, ikili dosyasını Visual Studio 'da açın ve kaynak listesinde RT_MANIFEST bulun. Katıştırılmış bir bildirim bulamazsanız, <binary_name> gibi bir dosya adlı dosyanın uygulama klasörüne bakın. \<uzantı>. manifest.
+1. İşletim sistemi yükleyicisi, uygulamanın bağımlı olduğu derlemeleri yüklemek için uygulama bildirimini kullanır. Bildirim, bir kaynak olarak ikiliye gömülebilir ya da uygulama klasörüne ayrı bir dosya olarak yüklenebilir. Bildirimin ikiliye gömülü olup olmadığını denetlemek için, ikili dosyasını Visual Studio 'da açın ve kaynak listesinde RT_MANIFEST bulun. Katıştırılmış bir bildirim bulamazsanız, <binary_name> gibi bir dosya adlı dosyanın uygulama klasörüne \<extension> bakın. bildirim.
 
 1. Uygulamanız yan yana derlemelere bağımlıysa ve bir bildirim yoksa, bağlayıcının projeniz için bir bildirim üretmesine dikkat etmeniz gerekir. Projenin **Proje özellikleri** iletişim kutusunda **bildirim oluştur** bağlayıcı seçeneğini işaretleyin.
 
@@ -42,13 +43,13 @@ Uygulamanız, Visual Studio olmayan bir bilgisayara dağıtılmışsa ve önceki
    > [!NOTE]
    > Hem gömülü bir bildirim hem de ayrı bir bildirim dosyası varsa, işletim sistemi yükleyicisi katıştırılmış bildirimi kullanır ve ayrı dosyayı yoksayar. Bununla birlikte, Windows XP 'de, tersi doğru olur — ayrı bildirim dosyası kullanılır ve katıştırılmış bildirim yok sayılır.
 
-1. Bir DLL bir `LoadLibrary` çağrı olsa da yüklendiğinde dış bildirimler yoksayıldığından, her dll 'ye bir bildirim katıştırmanız önerilir. Daha fazla bilgi için bkz. [derleme bildirimleri](/windows/win32/SbsCs/assembly-manifests).
+1. Bir DLL bir çağrı olsa da yüklendiğinde dış bildirimler yoksayıldığından, her DLL 'ye bir bildirim katıştırmanız önerilir `LoadLibrary` . Daha fazla bilgi için bkz. [derleme bildirimleri](/windows/win32/SbsCs/assembly-manifests).
 
 1. Bildirimde numaralandırılan tüm derlemelerin bilgisayara doğru şekilde yüklendiğinden emin olun. Her derleme, bildirimde adı, sürüm numarası ve işlemci mimarisine göre belirtilir. Uygulamanız yan yana derlemelere bağımlıysa, işletim sistemi yükleyicisinin [Derleme arama dizisi](/windows/win32/SbsCs/assembly-searching-sequence)bölümünde açıklandığı gibi bunları bulabilmesi için bu derlemelerin bilgisayara doğru şekilde yüklendiğinden emin olun. 64 bitlik derlemelerin 32 bit işlemlere yükleneolamayacağını ve 32-bit işletim sistemlerinde yürütülebileceğini unutmayın.
 
 ## <a name="example"></a>Örnek
 
-Visual C++ kullanılarak oluşturulan, Uyg. exe uygulamamız olduğunu varsayalım. Uygulama bildirimi, bir KIMLIĞI 1 ' e eşit olan veya ayrı dosya Uygula. exe. manifest olarak depolanan ikili kaynak RT_MANIFEST olarak uygulanacağı. exe ' ye katıştırılır. Bu bildirimin içeriği şuna benzer:
+Visual C++ kullanılarak oluşturulan bir uygulama, appl.exe olduğunu varsayalım. Uygulama bildirimi, KIMLIĞI 1 ' e eşit olan veya ayrı dosya appl.exe. manifest olarak depolanan ikili kaynak RT_MANIFEST olarak appl.exe ' ye katıştırılır. Bu bildirimin içeriği şuna benzer:
 
 ```
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
@@ -60,7 +61,7 @@ Visual C++ kullanılarak oluşturulan, Uyg. exe uygulamamız olduğunu varsayal�
 </assembly>
 ```
 
-Bu bildirim, işletim sistemi yükleyicisi için, Uyg. exe ' nin 32 bitlik bir x86 işlemci mimarisi için tasarlanan fabrikam. SxS. Library, sürüm 2.0.20121.0 adlı bir derlemeye bağlı olduğunu söyler. Bağımlı yan yana derleme, paylaşılan bir derleme ya da özel bir derleme olarak yüklenebilir.
+Bu bildirimde, işletim sistemi yükleyicisi için appl.exe, 32 bitlik bir x86 işlemci mimarisi için tasarlanan fabrikam. SxS. Library, sürüm 2.0.20121.0 adlı bir derlemeye bağlı olduğunu söyler. Bağımlı yan yana derleme, paylaşılan bir derleme ya da özel bir derleme olarak yüklenebilir.
 
 Paylaşılan derleme için derleme bildirimi%WINDIR%\WinSxS\Manifests\ klasörüne yüklenir. Derlemeyi tanımlar ve içeriğini listeler; Yani, derlemenin parçası olan DLL 'Ler:
 
@@ -94,13 +95,13 @@ Bu ilke dosyası, bu derlemenin sürüm 2.0.10000.0 için soran herhangi bir uyg
 
 Ancak, derleme ayrıca yüklü uygulama klasörüne özel bir yan yana derleme olarak da yüklenebilir. İşletim sistemi derlemeyi paylaşılan bir derleme olarak bulamazsa, bu dosyayı özel bir derleme olarak, aşağıdaki sırayla arar:
 
-1. AssemblyName>. manifest adlı \<bir bildirim dosyası için uygulama klasörünü kontrol edin. Bu örnekte, yükleyici, Uyg. exe dosyasını içeren klasörde Fabrikam. SxS. Library. manifest bulmayı dener. Bildirimi bulursa, yükleyici derlemeyi uygulama klasöründen yükler. Derleme bulunamazsa, yükleme başarısız olur.
+1. Name. manifest içeren bir bildirim dosyası için uygulama klasörünü denetleyin \<assemblyName> . Bu örnekte, yükleyici, appl.exe içeren klasörde Fabrikam. SxS. Library. manifest bulmayı dener. Bildirimi bulursa, yükleyici derlemeyi uygulama klasöründen yükler. Derleme bulunamazsa, yükleme başarısız olur.
 
-1. \\<AssemblyName\>\ klasörünü uygulanacağı. exe içeren klasörde açmayı deneyin ve \\<AssemblyName\>\ varsa, bu klasörden AssemblyName>. manifest adlı \<bir bildirim dosyası yüklemeyi deneyin. Bildirim bulunursa, yükleyici derlemeyi \\<AssemblyName\>\ klasöründen yükler. Derleme bulunamazsa, yükleme başarısız olur.
+1. \\ \> appl.exe içeren klasörde<AssemblyName \ klasörünü açmayı deneyin ve \\<AssemblyName \> \ varsa, \<assemblyName> Bu klasörden adı. manifest olan bir bildirim dosyası yüklemeyi deneyin. Bildirim bulunursa, yükleyici derlemeyi \\<AssemblyName \> \ klasöründen yükler. Derleme bulunamazsa, yükleme başarısız olur.
 
 Yükleyicinin bağımlı derlemeleri nasıl aradığı hakkında daha fazla bilgi için bkz. [Derleme arama sırası](/windows/win32/SbsCs/assembly-searching-sequence). Yükleyici özel bir derleme olarak bağımlı bir derlemeyi bulamazsa, yükleme başarısız olur ve "Sistem belirtilen programı yürütemiyor" iletisi görüntülenir. Bu hatayı çözmek için, bağımlı derlemelerin ve bunların parçası olan DLL 'Lerin bilgisayara özel veya paylaşılan derlemeler olarak yüklendiğinden emin olun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Yalıtılmış uygulamalar ve yan yana derlemeler için kavramlar](concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
-[C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+[C/C++ yalıtılmış uygulamaları ve yan yana derlemeler oluşturma](building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
