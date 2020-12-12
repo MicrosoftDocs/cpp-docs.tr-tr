@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CList sınıfı'
 title: CList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,18 +51,18 @@ helpviewer_keywords:
 - CList [MFC], RemoveTail
 - CList [MFC], SetAt
 ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
-ms.openlocfilehash: 7ba85445e3aba1df853d7d3666c92fdabdfa3970
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e216bda53c37c325ffb8aeb943d4cefb223ac1d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236691"
 ---
 # <a name="clist-class"></a>CList sınıfı
 
 Ardışık olarak veya değere göre erişilebilen, benzersiz olmayan nesnelerin sıralı listesini destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 template<class TYPE, class ARG_TYPE = const TYPE&>
@@ -112,7 +113,7 @@ Listede depolanan nesnelere başvurmak için kullanılan tür. Bir başvuru olab
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CList`listeler, benzer şekilde bağlantılı listeler gibi davranır.
+`CList` listeler, benzer şekilde bağlantılı listeler gibi davranır.
 
 POSITION türünde bir değişken, listenin bir anahtarıdır. Bir listeyi bir yerde ve bir yer tutacak bir yer işareti olarak çapraz bir şekilde geçirmek için bir yineleyici olarak konum değişkeni kullanabilirsiniz. Ancak bir konum bir dizinle aynı değildir.
 
@@ -138,7 +139,7 @@ Kullanma hakkında daha fazla bilgi için `CList` bkz. Makale [koleksiyonları](
 
 **Üstbilgi:** afxtempl. h
 
-## <a name="clistaddhead"></a><a name="addhead"></a>CList:: AddHead
+## <a name="clistaddhead"></a><a name="addhead"></a> CList:: AddHead
 
 Bu listenin başından yeni bir öğe veya öğe listesi ekler.
 
@@ -170,7 +171,7 @@ Başka bir liste işaretçisi `CList` . *PNewList* içindeki öğeler bu listeye
 
 [!code-cpp[NVC_MFCCollections#36](../../mfc/codesnippet/cpp/clist-class_2.cpp)]
 
-## <a name="clistaddtail"></a><a name="addtail"></a>CList:: AddTail
+## <a name="clistaddtail"></a><a name="addtail"></a> CList:: AddTail
 
 Bu listenin kuyruğu için yeni bir öğe veya öğe listesi ekler.
 
@@ -202,7 +203,7 @@ Başka bir liste işaretçisi `CList` . *PNewList* içindeki öğeler bu listeye
 
 [!code-cpp[NVC_MFCCollections#37](../../mfc/codesnippet/cpp/clist-class_3.cpp)]
 
-## <a name="clistclist"></a><a name="clist"></a>CList:: CList
+## <a name="clistclist"></a><a name="clist"></a> CList:: CList
 
 Boş bir sıralı liste oluşturur.
 
@@ -223,9 +224,9 @@ Liste büyüdükçe, bellek *nBlockSize* girdileri birimlerinde ayrılır.
 
 [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]
 
-## <a name="clistfind"></a><a name="find"></a>CList:: Find
+## <a name="clistfind"></a><a name="find"></a> CList:: Find
 
-Belirtilen *searchValue*ile eşleşen ilk öğeyi bulmak için listeyi sıralı olarak arar.
+Belirtilen *searchValue* ile eşleşen ilk öğeyi bulmak için listeyi sıralı olarak arar.
 
 ```
 POSITION Find(
@@ -252,7 +253,7 @@ Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri
 
 [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]
 
-## <a name="clistfindindex"></a><a name="findindex"></a>CList:: FindIndex
+## <a name="clistfindindex"></a><a name="findindex"></a> CList:: FindIndex
 
 Listede dizin olarak *nindex* değerini kullanır.
 
@@ -277,7 +278,7 @@ Bu, *n*. öğesinde durdurulan, listenin başlarından sıralı bir tarama başl
 
 [!code-cpp[NVC_MFCCollections#40](../../mfc/codesnippet/cpp/clist-class_6.cpp)]
 
-## <a name="clistgetat"></a><a name="getat"></a>CList:: GetAt
+## <a name="clistgetat"></a><a name="getat"></a> CList:: GetAt
 
 Belirtilen konumdaki liste öğesini alır.
 
@@ -300,7 +301,7 @@ Alınacak öğe listesindeki konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetAt`verilen bir konumla ilişkili öğeyi (veya öğenin başvurusunu) döndürür. Bir dizin ile aynı değildir ve bir konum değerinde kendiniz işlem yapılamaz. POSITION türünde bir değişken, listenin bir anahtarıdır.
+`GetAt` verilen bir konumla ilişkili öğeyi (veya öğenin başvurusunu) döndürür. Bir dizin ile aynı değildir ve bir konum değerinde kendiniz işlem yapılamaz. POSITION türünde bir değişken, listenin bir anahtarıdır.
 
 KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
@@ -308,7 +309,7 @@ KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız ge
 
   [CList:: GetHeadPosition](#getheadposition)örneğine bakın.
 
-## <a name="clistgetcount"></a><a name="getcount"></a>CList:: GetCount
+## <a name="clistgetcount"></a><a name="getcount"></a> CList:: GetCount
 
 Bu listedeki öğelerin sayısını alır.
 
@@ -328,7 +329,7 @@ Bu yöntemin çağrılması [CList:: GetSize](#getsize) yöntemiyle aynı sonucu
 
   [CList:: RemoveHead](#removehead)örneğine bakın.
 
-## <a name="clistgethead"></a><a name="gethead"></a>CList:: GetHead
+## <a name="clistgethead"></a><a name="gethead"></a> CList:: GetHead
 
 Bu listenin baş öğesini (veya bir baş öğesine bir başvuru) alır.
 
@@ -357,7 +358,7 @@ Liste yoksa **`const`** , `GetHead` listenin başında öğesine bir başvuru d�
 
 [!code-cpp[NVC_MFCCollections#41](../../mfc/codesnippet/cpp/clist-class_7.cpp)]
 
-## <a name="clistgetheadposition"></a><a name="getheadposition"></a>CList:: GetHeadPosition
+## <a name="clistgetheadposition"></a><a name="getheadposition"></a> CList:: GetHeadPosition
 
 Bu listenin baş öğesinin konumunu alır.
 
@@ -373,9 +374,9 @@ Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri
 
 [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]
 
-## <a name="clistgetnext"></a><a name="getnext"></a>CList:: GetNext
+## <a name="clistgetnext"></a><a name="getnext"></a> CList:: GetNext
 
-*RPosition*tarafından tanımlanan liste öğesini alır ve ardından listedeki bir sonrakı girdinin konum değerine *rPosition* değerini ayarlar.
+*RPosition* tarafından tanımlanan liste öğesini alır ve ardından listedeki bir sonrakı girdinin konum değerine *rPosition* değerini ayarlar.
 
 ```
 TYPE& GetNext(POSITION& rPosition);
@@ -408,7 +409,7 @@ Alınan öğe listedeki son ise, yeni değeri `rPosition` null olarak ayarlanır
 
 [!code-cpp[NVC_MFCCollections#43](../../mfc/codesnippet/cpp/clist-class_9.cpp)]
 
-## <a name="clistgetprev"></a><a name="getprev"></a>CList:: Getöncekini
+## <a name="clistgetprev"></a><a name="getprev"></a> CList:: Getöncekini
 
 Tarafından tanımlanan liste öğesini alır `rPosition` , ardından `rPosition` listedeki ÖNCEKI girdinin konum değerine ayarlanır.
 
@@ -443,7 +444,7 @@ Alınan öğe listedeki ilk ise, yeni *rPosition* değeri null olarak ayarlanır
 
 [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]
 
-## <a name="clistgetsize"></a><a name="getsize"></a>CList:: GetSize
+## <a name="clistgetsize"></a><a name="getsize"></a> CList:: GetSize
 
 Liste öğelerinin sayısını döndürür.
 
@@ -463,7 +464,7 @@ Listedeki öğe sayısını almak için bu yöntemi çağırın.  Bu yöntemin �
 
 [!code-cpp[NVC_MFCCollections#45](../../mfc/codesnippet/cpp/clist-class_11.cpp)]
 
-## <a name="clistgettail"></a><a name="gettail"></a>CList:: GetTail
+## <a name="clistgettail"></a><a name="gettail"></a> CList:: GetTail
 
 `CObject`Bu listenin tail öğesini temsil eden işaretçiyi alır.
 
@@ -489,7 +490,7 @@ Listedeki öğelerin türünü belirten şablon parametresi.
 
 [!code-cpp[NVC_MFCCollections#46](../../mfc/codesnippet/cpp/clist-class_12.cpp)]
 
-## <a name="clistgettailposition"></a><a name="gettailposition"></a>CList:: Getbir Position
+## <a name="clistgettailposition"></a><a name="gettailposition"></a> CList:: Getbir Position
 
 Bu listenin tail öğesinin konumunu alır; Liste boşsa NULL.
 
@@ -505,7 +506,7 @@ Yineleme veya nesne işaretçisi alımı için kullanılabilen bir konum değeri
 
 [!code-cpp[NVC_MFCCollections#47](../../mfc/codesnippet/cpp/clist-class_13.cpp)]
 
-## <a name="clistinsertafter"></a><a name="insertafter"></a>CList:: InsertAfter
+## <a name="clistinsertafter"></a><a name="insertafter"></a> CList:: InsertAfter
 
 Belirtilen konumdaki öğeden sonra bu listeye bir öğe ekler.
 
@@ -532,7 +533,7 @@ Yineleme veya liste öğesi alımı için kullanılabilen bir konum değeri.
 
 [!code-cpp[NVC_MFCCollections#48](../../mfc/codesnippet/cpp/clist-class_14.cpp)]
 
-## <a name="clistinsertbefore"></a><a name="insertbefore"></a>CList:: InsertBefore
+## <a name="clistinsertbefore"></a><a name="insertbefore"></a> CList:: InsertBefore
 
 Bu listeye, belirtilen konumdaki öğeden önce bir öğe ekler.
 
@@ -563,7 +564,7 @@ Yineleme veya liste öğesi alımı için kullanılabilen bir konum değeri.
 
 [!code-cpp[NVC_MFCCollections#49](../../mfc/codesnippet/cpp/clist-class_15.cpp)]
 
-## <a name="clistisempty"></a><a name="isempty"></a>CList:: IsEmpty
+## <a name="clistisempty"></a><a name="isempty"></a> CList:: IsEmpty
 
 Bu listenin hiç öğe içerip içermediğini gösterir.
 
@@ -579,7 +580,7 @@ Bu liste boşsa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFCCollections#50](../../mfc/codesnippet/cpp/clist-class_16.cpp)]
 
-## <a name="clistremoveall"></a><a name="removeall"></a>CList:: RemoveAll
+## <a name="clistremoveall"></a><a name="removeall"></a> CList:: RemoveAll
 
 Bu listedeki tüm öğeleri kaldırır ve ilişkili belleği serbest bırakır.
 
@@ -595,7 +596,7 @@ Liste zaten boşsa bir hata oluşturulmaz.
 
 [!code-cpp[NVC_MFCCollections#51](../../mfc/codesnippet/cpp/clist-class_17.cpp)]
 
-## <a name="clistremoveat"></a><a name="removeat"></a>CList:: RemoveAt
+## <a name="clistremoveat"></a><a name="removeat"></a> CList:: RemoveAt
 
 Belirtilen öğeyi bu listeden kaldırır.
 
@@ -616,7 +617,7 @@ KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız ge
 
 [!code-cpp[NVC_MFCCollections#52](../../mfc/codesnippet/cpp/clist-class_18.cpp)]
 
-## <a name="clistremovehead"></a><a name="removehead"></a>CList:: RemoveHead
+## <a name="clistremovehead"></a><a name="removehead"></a> CList:: RemoveHead
 
 Öğeyi listenin baş öğesinden kaldırır ve ona bir işaretçi döndürür.
 
@@ -641,7 +642,7 @@ Daha önce listenin başında öğesi.
 
 [!code-cpp[NVC_MFCCollections#53](../../mfc/codesnippet/cpp/clist-class_19.cpp)]
 
-## <a name="clistremovetail"></a><a name="removetail"></a>CList:: RemoveTail
+## <a name="clistremovetail"></a><a name="removetail"></a> CList:: RemoveTail
 
 Öğeyi listenin kuyruğunu kaldırır ve ona bir işaretçi döndürür.
 
@@ -666,7 +667,7 @@ Listenin kuyruklu olan öğe.
 
 [!code-cpp[NVC_MFCCollections#54](../../mfc/codesnippet/cpp/clist-class_20.cpp)]
 
-## <a name="clistsetat"></a><a name="setat"></a>CList:: SetAt
+## <a name="clistsetat"></a><a name="setat"></a> CList:: SetAt
 
 POSITION türünde bir değişken, listenin bir anahtarıdır.
 
@@ -687,7 +688,7 @@ Listeye eklenecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dizin ile aynı değildir ve bir konum değerinde kendiniz işlem yapılamaz. `SetAt`öğeyi listede belirtilen konuma yazar.
+Bir dizin ile aynı değildir ve bir konum değerinde kendiniz işlem yapılamaz. `SetAt` öğeyi listede belirtilen konuma yazar.
 
 KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 

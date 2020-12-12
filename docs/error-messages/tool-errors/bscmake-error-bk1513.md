@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: BSCMAKE hatası BK1513'
 title: BSCMAKE Hatası BK1513
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1513
 ms.assetid: 9ba87c09-8d82-4c80-b0cf-a8de63dcf9da
-ms.openlocfilehash: 3a16163f33814be18a67833995362ee9b13d8118
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bdf26e3268f98e5ab41ef27bbeaa3734a001671a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197645"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238095"
 ---
 # <a name="bscmake-error-bk1513"></a>BSCMAKE Hatası BK1513
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _umask_s'
 title: _umask_s
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - umask_s function
 - files [C++], permission settings for
 ms.assetid: 70898f61-bf2b-4d8d-8291-0ccaa6d33145
-ms.openlocfilehash: 712313314c67d15987326e3e3a920cd5f1039239
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2a6877b656b17f38dfdf09419da5b64115575a9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913886"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239941"
 ---
 # <a name="_umask_s"></a>_umask_s
 
@@ -62,20 +63,20 @@ Varsayılan izin ayarı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Mod* geçerli bir mod belirtmezse veya *pOldMode* işaretçisi **null**olduğunda bir hata kodu döndürür.
+*Mod* geçerli bir mod belirtmezse veya *pOldMode* işaretçisi **null** olduğunda bir hata kodu döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
 |*modundaysa*|*pOldMode*|Döndürülen değer|*POldMode* içeriği|
 |------------|----------------|----------------------|--------------------------------|
-|kaydedilmemiş|**DEĞER**|**EıNVAL**|değiştirilmedi|
-|Geçersiz mod|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
+|herhangi biri|**DEĞER**|**EıNVAL**|değiştirilmedi|
+|Geçersiz mod|herhangi biri|**EıNVAL**|değiştirilmedi|
 
-Yukarıdaki koşullardan biri gerçekleşirse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_Umask_s** **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlar.
+Yukarıdaki koşullardan biri gerçekleşirse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **_Umask_s** **EINVAL** döndürür ve **errno** , **EINVAL** olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Umask_s** işlevi, geçerli işlemin dosya izni maskesini *mod*tarafından belirtilen moda ayarlar. Dosya izni maskesi, **_creat**, **_open**veya **_sopen**tarafından oluşturulan yeni dosyaların izin ayarını değiştirir. Maskede bir bit 1 ise, dosyanın istenen izin değerindeki karşılık gelen bit 0 olarak ayarlanır (izin verilmez). Maskede bir bit 0 ise, karşılık gelen bit değişmeden bırakılır. Yeni bir dosyanın izin ayarı, dosya ilk kez kapatılana kadar ayarlanamaz.
+**_Umask_s** işlevi, geçerli işlemin dosya izni maskesini *mod* tarafından belirtilen moda ayarlar. Dosya izni maskesi, **_creat**, **_open** veya **_sopen** tarafından oluşturulan yeni dosyaların izin ayarını değiştirir. Maskede bir bit 1 ise, dosyanın istenen izin değerindeki karşılık gelen bit 0 olarak ayarlanır (izin verilmez). Maskede bir bit 0 ise, karşılık gelen bit değişmeden bırakılır. Yeni bir dosyanın izin ayarı, dosya ilk kez kapatılana kadar ayarlanamaz.
 
 *Pmode* tamsayı ifadesi, sys\statiçinde tanımlanan aşağıdaki bildirim sabitlerinden birini veya her ikisini içerir. Olsun
 
@@ -85,7 +86,7 @@ Yukarıdaki koşullardan biri gerçekleşirse, [parametre doğrulama](../../c-ru
 |**_S_IREAD**|Okuma izni verildi.|
 |**_S_IREAD** \| **_S_IWRITE**|Okuma ve yazma izni verildi.|
 
-Her iki sabit de verildiğinde, bit düzeyinde OR işleci ( **|** ) ile birleştirilir. *Mod* bağımsız değişkeni **_S_IREAD**, okumaya izin verilmez (dosya salt yazılır olur). *Mod* bağımsız değişkeni **_S_IWRITE**, yazmaya izin verilmez (dosya salt okunurdur). Örneğin, maskede yazma biti ayarlandıysa, tüm yeni dosyalar salt okunurdur. MS-DOS ve Windows işletim sistemlerinde tüm dosyaların okunabilir olduğunu unutmayın; salt yazılır izin vermek mümkün değildir. Bu nedenle, okuma bitinin **_umask_s** olarak ayarlanması, dosyanın modlarında hiçbir etkiye sahip değildir.
+Her iki sabit de verildiğinde, bit düzeyinde OR işleci () ile birleştirilir **|** . *Mod* bağımsız değişkeni **_S_IREAD**, okumaya izin verilmez (dosya salt yazılır olur). *Mod* bağımsız değişkeni **_S_IWRITE**, yazmaya izin verilmez (dosya salt okunurdur). Örneğin, maskede yazma biti ayarlandıysa, tüm yeni dosyalar salt okunurdur. MS-DOS ve Windows işletim sistemlerinde tüm dosyaların okunabilir olduğunu unutmayın; salt yazılır izin vermek mümkün değildir. Bu nedenle, okuma bitinin **_umask_s** olarak ayarlanması, dosyanın modlarında hiçbir etkiye sahip değildir.
 
 *Pmode* , bildirim sabitlerinden birinin bir birleşimi değilse veya diğer bir sabitler kümesini içeriyorsa, işlev bunları yok sayacaktır.
 
@@ -95,7 +96,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_umask_s**|\<GÇ. h> ve \<sys/stat. h> ve \<sys/Types. h>|
+|**_umask_s**|\<io.h> ve \<sys/stat.h> ve \<sys/types.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -135,7 +136,7 @@ Oldmask = 0x0000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [Alt düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chmod, _wchmod](chmod-wchmod.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>

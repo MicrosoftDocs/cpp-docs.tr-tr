@@ -1,17 +1,18 @@
 ---
+description: 'Daha fazla bilgi edinin: BSCMAKE hataları ve uyarıları (BKxxxx)'
 title: BSCMAKE hataları ve uyarıları
 ms.date: 04/16/2019
 ms.assetid: 3767baa6-e639-472e-99fd-7543fd945cd3
-ms.openlocfilehash: e6abc334d9ecf5df54d200ab242c91a7035ab226
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 8273782f82102c81cf7f7dd5e93b7e1ec6d1703e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856362"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237913"
 ---
 # <a name="bscmake-errors-and-warnings-bkxxxx"></a>BSCMAKE hataları ve uyarıları (BKxxxx)
 
-Bu bölüm hatalara bir başvurudur ve aracı BSCMAKE tarafından oluşturulan uyarılar oluşturun. BSCMAKE hataları ve Uyarıları olan form SİY*xxxx*burada *xxxx* bir dört basamaklı sayıdır.
+Bu bölüm, BSCMAKE derleme aracı tarafından oluşturulan hatalar ve uyarılar için bir başvurudur. BSCMAKE hatası ve uyarıları, *xxxx* 'in dört basamaklı bir sayı olduğu BK *xxxx* biçiminde olur.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -34,11 +35,11 @@ Bu bölüm hatalara bir başvurudur ve aracı BSCMAKE tarafından oluşturulan u
 
 ## <a name="warning-messages"></a>Uyarı iletileri
 
-[BSCMAKE uyarısı BK4502](bscmake-warning-bk4502.md) \
-[BSCMAKE uyarısı BK4503](bscmake-warning-bk4503.md) \
+[BSCMAKE Uyarısı BK4502](bscmake-warning-bk4502.md) \
+[BSCMAKE Uyarısı BK4503](bscmake-warning-bk4503.md) \
 [BSCMAKE uyarısı BK4504](bscmake-warning-bk4504.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C/C++ derleyicisi ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
 [BSCMake başvurusu](../../build/reference/bscmake-reference.md)

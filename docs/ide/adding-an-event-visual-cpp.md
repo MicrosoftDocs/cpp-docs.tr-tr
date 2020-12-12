@@ -1,5 +1,6 @@
 ---
-title: Bir olay ekleyin
+description: 'Daha fazla bilgi edinin: olay ekleme'
+title: Olay ekleme
 ms.date: 11/12/2018
 f1_keywords:
 - vc.codewiz.event.overview
@@ -9,28 +10,28 @@ helpviewer_keywords:
 - events [C++], ActiveX controls
 - add event wizard [C++]
 ms.assetid: fe34832a-edfc-4f86-aacb-8df77001873d
-ms.openlocfilehash: 1d5a8f5666dd04e00f8a438fdbf00320c37e14f4
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: c369be0fe241867b101ab458344ae706b1fd440d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64346017"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240825"
 ---
-# <a name="add-an-event"></a>Bir olay ekleyin
+# <a name="add-an-event"></a>Olay ekleme
 
-Sınıf Görünümü'ndeki kullanarak bir olay ekleyebilirsiniz [olay Ekleme Sihirbazı](#add-event-wizard) denetimi sınıfta için yalnızca, [MFC ActiveX denetimi](../mfc/reference/creating-an-mfc-activex-control.md) proje. Başka türde bir proje için bir olay eklemek istediğiniz kullanırsanız **olayları** düğmesine [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+Sınıf Görünümü, yalnızca [MFC ActiveX denetim](../mfc/reference/creating-an-mfc-activex-control.md) projenizdeki denetim sınıfına [olay Ekleme Sihirbazı](#add-event-wizard) 'nı kullanarak bir olay ekleyebilirsiniz. Başka bir proje türüne olay eklemek istiyorsanız, [Özellikler penceresi](/visualstudio/ide/reference/properties-window) **Olaylar** düğmesini kullanın.
 
 **MFC ActiveX denetimi projenize bir olay eklemek için:**
 
-1. Sınıf Görünümü'nde projeye sınıflarını görüntülemek için proje düğümünü genişletin.
+1. Sınıf Görünümü, projedeki sınıfları göstermek için proje düğümünü genişletin.
 
-1. Projenin denetim sınıfı sağ tıklayın.
+1. Projenin denetim sınıfına sağ tıklayın.
 
-1. Kısayol menüsünde **Ekle**ve ardından **olay Ekle** olay Ekleme Sihirbazı'nı görüntülemek için.
+1. Kısayol menüsünde, **Ekle**' yi seçin ve olay Ekle sihirbazını göstermek Için **olay Ekle** ' yi seçin.
 
-1. Uygun Sihirbazı kutulara olay bilgilerini sağlayın.
+1. Uygun sihirbaz kutularına olay bilgilerini sağlayın.
 
-1. Seçin **son** olay projeye eklenecek.
+1. Olayı projeye eklemek için **son** ' u seçin.
 
 ## <a name="in-this-section"></a>Bu bölümde
 
@@ -38,46 +39,46 @@ Sınıf Görünümü'ndeki kullanarak bir olay ekleyebilirsiniz [olay Ekleme Sih
 
 ## <a name="add-event-wizard"></a>Olay Ekleme Sihirbazı
 
-Bu sihirbaz, MFC ActiveX denetimi projesi için bir olay ekler. Kendi olay belirtin, tipik bir stok olayı özelleştirin veya stok olaylar listesinden seçin.
+Bu sihirbaz MFC ActiveX denetimi projesine bir olay ekler. Kendi olaylarınızı belirtebilir, tipik bir hisse senedi olayını özelleştirebilir veya stok olayları listesinden seçim yapabilirsiniz.
 
 - **Olay adı**
 
-   Sınıftan olay istemek için Otomasyon istemcileri tarafından kullanılan adını ayarlar. Bir ad girin veya listeden birini seçin.
+   Otomasyon istemcileri tarafından sınıftan bir olay istemek için kullanılan adı ayarlar. Bir ad girin veya listeden birini seçin.
 
 - **Olay türü**
 
-   Eklenecek olay türünü belirtir. Yalnızca gelen seçerseniz kullanılabilir **olay adı** listesi.
+   Eklenecek olay türünü gösterir. Yalnızca **olay adı** listesinden seçim yaparsanız kullanılabilir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Hisse senedi**|Bir düğmeye tıklatma gibi bir stok olayı Bu sınıf için uygulanacak belirtir. Stok olaylar, Microsoft Foundation Class (MFC) Kitaplığı'nda tanımlanır.|
-   |**Özel**|Olayın kendi uygulamanız kullandığınız belirtir.|
+   |**Stok**|Bu sınıf için düğme tıklaması gibi bir stok olayının uygulanıp uygulanmayacak olduğunu belirtir. Hisse senedi olayları Microsoft Foundation Class (MFC) kitaplığı 'nda tanımlanmıştır.|
+   |**Özel**|Kendi olay uygulamanızı kullandığınızı belirtir.|
 
-- **İç adı**
+- **İç ad**
 
-   Olayı gönderen üye işlevinin adını ayarlar. Yalnızca özel olaylar için kullanılabilir. Ad temel **olay adı**. Farklı bir ad verin istiyorsanız iç adını değiştirebilirsiniz **olay adı**.
+   Olayı gönderen üye işlevinin adını ayarlar. Yalnızca özel olaylar için kullanılabilir. Ad, **olay adına** göre belirlenir. **Olay adından** farklı bir ad sağlamak istiyorsanız iç adı değiştirebilirsiniz.
 
 - **Parametre türü**
 
-   Tür için ayarlar **parametre adı**. Türü listeden seçin.
+   **Parametre adının** türünü ayarlar. Listeden türü seçin.
 
 - **Parametre adı**
 
-   Etkinliğiniz geçmek için bir parametre adını ayarlar. Adını yazdıktan sonra seçmelisiniz **Ekle** parametre listesi eklemek için.
+   Olaylarınızın içinden geçirilecek parametre adını ayarlar. Adı yazdıktan sonra, parametre listesini eklemek için **Ekle** ' yi seçmeniz gerekir.
 
-   Seçtiğinizde **Ekle**, parametre adı görünür **parametre listesi**.
+   **Ekle**' yi seçtiğinizde parametre adı **parametre listesinde** görünür.
 
    > [!NOTE]
-   > Parametre adı sağlayın ve ardından **son** seçtiğiniz önce **Ekle**, sonra parametre olaya eklenmez. Yöntemini bulun ve parametre el ile Ekle gerekir.
+   > Bir parametre adı girip **Ekle**' yi seçmeden önce **son** ' u seçerseniz, parametre olaya eklenmez. Yöntemi bulmanız ve parametresini el ile eklemeniz gerekir.
 
-- **Add**
+- **Ekle**
 
-   Belirttiğiniz parametre ekler **parametre adı**ve onun türü için **parametre listesi**. Seçin **Ekle** parametre listesine eklenecek.
+   Parametre **adı**' nda belirttiğiniz parametreyi ve türünü **parametre listesine** ekler. Listeye bir parametre eklemek için **Ekle** ' yi seçin.
 
 - **Kaldır**
 
-   Seçtiğiniz parametre kaldırır **parametre listesi** listeden.
+   Listedeki **parametre listesinde** seçtiğiniz parametreyi kaldırır.
 
 - **Parametre listesi**
 
-   Tüm parametreler ve şu anda yöntemi için eklenen türleri görüntüler. Parametre ekleme gibi sihirbaz güncelleştirir **parametre listesi** her parametre türü ile görüntülenecek.
+   Yöntemi için şu anda eklenen tüm parametreleri ve türlerini görüntüler. Parametreleri eklerken, sihirbaz, **parametre listesini** her bir parametreyi türüyle görüntüleyecek şekilde güncelleştirir.

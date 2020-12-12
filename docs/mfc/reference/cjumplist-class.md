@@ -1,5 +1,6 @@
 ---
-title: CJumplist Sınıfı
+description: 'Daha fazla bilgi edinin: CJumpList sınıfı'
+title: CJumpList sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CJumpList
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - CJumpList [MFC], InitializeList
 - CJumpList [MFC], SetAppID
 ms.assetid: d364d27e-f512-4b12-9872-c2a17c78ab1f
-ms.openlocfilehash: 2e45e2e58bd51d36b6412940b7ed01aa119017ed
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 07e896c5b3a205a44850d45dcc4876103a48f2fa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754939"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236912"
 ---
-# <a name="cjumplist-class"></a>CJumplist Sınıfı
+# <a name="cjumplist-class"></a>CJumpList sınıfı
 
-A, `CJumpList` görev çubuğundaki bir simgeye sağ tıklattığınızda ortaya çıkan kısayolların listesidir.
+, `CJumpList` Görev çubuğundaki bir simgeye sağ tıkladığınızda ortaya çıkan kısayolların listesidir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CJumpList;
@@ -57,47 +58,47 @@ class CJumpList;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CJumplist::CJumplist](#cjumplist)|Bir `CJumpList` nesne inşa eder.|
-|[CJumplist::~CJumplist](#_dtorcjumplist)|Bir `CJumpList` nesneyi yok eder.|
+|[CJumpList:: CJumpList](#cjumplist)|Bir `CJumpList` nesnesi oluşturur.|
+|[CJumpList:: ~ CJumpList](#_dtorcjumplist)|Bir nesneyi yok eder `CJumpList` .|
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CJumpList::AbortList](#abortlist)|İşlem yapmadan liste oluşturma işlemini iptal eder.|
-|[CJumpList::AddDestination](#adddestination)|Fazla Yüklendi. Listeye hedef ekler.|
-|[CJumplist::AddKnownCategory](#addknowncategory)|Listeye Bilinen Bir Kategori eklenir.|
-|[CJumpList::AddTask](#addtask)|Fazla Yüklendi. Kanonik Görevler kategorisine öğeler ekler.|
-|[CJumplist::Görevler Ekle](#addtasks)|Kanonik Görevler kategorisine öğeler ekler.|
-|[CJumpList::AddTaskSeparator](#addtaskseparator)|Görevler arasında ayırıcı ekler.|
-|[CJumplist::ClearAll](#clearall)|Şu ana `CJumpList` kadar geçerli örneğe eklenen tüm görevleri ve hedefleri kaldırır.|
-|[CJumpList::ClearAllDestinations](#clearalldestinations)|Şu ana `CJumpList` kadar geçerli örneğin eklenmiştir tüm hedefleri kaldırır.|
-|[CJumpList::CommitList](#commitlist)|Liste oluşturma işlemini sona erdirer ve bildirilen listeyi ilişkili mağazaya (bu durumda kayıt defteri) adatır.|
-|[CJumpList::GetDestinationList](#getdestinationlist)|Hedef listesine bir arabirim işaretçisi alır.|
-|[CJumpList::GetMaxSlots](#getmaxslots)|Arama uygulamasının hedef menüsünde görüntülenebilen kategori üstbilgisi de dahil olmak üzere en fazla öğe sayısını alır.|
-|[CJumpList::GetRemovedItems](#getremoveditems)|Kaldırılan hedefleri temsil eden öğeler dizisini döndürür.|
-|[CJumpList::InitializeList](#initializelist)|Liste oluşturma işlemi başlasın.|
-|[CJumplist::SetAppID](#setappid)|Oluşturulacak liste için Uygulama Kullanıcı Modeli Kimliğini ayarlar.|
+|[CJumpList:: AbortList](#abortlist)|Bir liste oluşturma işlemini kaydetmeden iptal eder.|
+|[CJumpList:: AddDestination](#adddestination)|Fazla Yüklendi. Listeye hedef ekler.|
+|[CJumpList:: AddKnownCategory](#addknowncategory)|Bilinen bir kategoriyi listeye ekler.|
+|[CJumpList:: AddTask](#addtask)|Fazla Yüklendi. Kurallı görevler kategorisine öğe ekler.|
+|[CJumpList:: AddTasks](#addtasks)|Kurallı görevler kategorisine öğe ekler.|
+|[CJumpList:: AddTaskSeparator](#addtaskseparator)|Görevler arasına bir ayırıcı ekler.|
+|[CJumpList:: ClearAll](#clearall)|Şimdiye kadar geçerli örneğine eklenmiş tüm görevleri ve hedefleri kaldırır `CJumpList` .|
+|[CJumpList:: ClearAllDestinations](#clearalldestinations)|Şimdiye kadar geçerli örneğine eklenmiş olan tüm hedefleri kaldırır `CJumpList` .|
+|[CJumpList:: CommitList](#commitlist)|Liste oluşturma işlemini sonlandırır ve bildirilen listeyi ilişkili depoya (Bu durumda kayıt defteri) kaydeder.|
+|[CJumpList:: GetDestinationList](#getdestinationlist)|Hedef listeye bir arabirim işaretçisi alır.|
+|[CJumpList:: Getmaxyuvaları](#getmaxslots)|Çağıran uygulamanın hedef menüsünde görüntülenebilecek kategori üstbilgileri dahil olmak üzere en fazla öğe sayısını alır.|
+|[CJumpList:: GetRemovedItems](#getremoveditems)|Kaldırılan hedefleri temsil eden öğelerin dizisini döndürür.|
+|[CJumpList:: ınitializelist](#initializelist)|Bir liste oluşturma işlemi başlatır.|
+|[CJumpList:: Setappıd](#setappid)|Oluşturulacak listenin uygulama kullanıcı modeli KIMLIĞINI ayarlar.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[CJumplist](../../mfc/reference/cjumplist-class.md)
+[CJumpList](../../mfc/reference/cjumplist-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxadv.h
+**Üstbilgi:** afxadv. h
 
-## <a name="cjumplistcjumplist"></a><a name="_dtorcjumplist"></a>CJumplist::~CJumplist
+## <a name="cjumplistcjumplist"></a><a name="_dtorcjumplist"></a> CJumpList:: ~ CJumpList
 
-Bir `CJumpList` nesneyi yok eder.
+Bir nesneyi yok eder `CJumpList` .
 
 ```
 ~CJumpList();
 ```
 
-## <a name="cjumplistabortlist"></a><a name="abortlist"></a>CJumpList::AbortList
+## <a name="cjumplistabortlist"></a><a name="abortlist"></a> CJumpList:: AbortList
 
-İşlem yapmadan liste oluşturma işlemini iptal eder.
+Bir liste oluşturma işlemini kaydetmeden iptal eder.
 
 ```cpp
 void AbortList();
@@ -105,9 +106,9 @@ void AbortList();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağırmak, aramadan `CJumpList` `CommitList`yok etmekle aynı etkiye sahiptir.
+Bu yöntemin çağrılması, çağrı yapılmadan yok etme ile aynı etkiye sahiptir `CJumpList` `CommitList` .
 
-## <a name="cjumplistadddestination"></a><a name="adddestination"></a>CJumpList::AddDestination
+## <a name="cjumplistadddestination"></a><a name="adddestination"></a> CJumpList:: AddDestination
 
 Listeye hedef ekler.
 
@@ -131,26 +132,26 @@ BOOL AddDestination(
 Bir kategori adı belirtir. Belirtilen kategori yoksa, oluşturulur.
 
 *strDestinationPath*<br/>
-Hedef dosyasına giden bir yol belirtir.
+Hedef dosyanın yolunu belirtir.
 
 *strCategoryName*<br/>
 Bir kategori adı belirtir. Belirtilen kategori yoksa, oluşturulur.
 
-*pShellItem*<br/>
-Eklenen hedefi temsil eden bir Shell Öğesi belirtir.
+*Pshellıtıtem*<br/>
+Eklenmekte olan hedefi temsil eden bir kabuk öğesi belirtir.
 
 *pShellLink*<br/>
-Eklenen hedefi temsil eden bir Shell Bağlantısı belirtir.
+Eklenmekte olan hedefi temsil eden bir kabuk bağlantısı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dahili `CJumpList` olarak eklenen hedefleri birikir ve sonra `CommitList`bunları .
+`CJumpList`Dahili olarak eklenen hedefleri birikir ve sonra içinde kaydeder `CommitList` .
 
-## <a name="cjumplistaddknowncategory"></a><a name="addknowncategory"></a>CJumplist::AddKnownCategory
+## <a name="cjumplistaddknowncategory"></a><a name="addknowncategory"></a> CJumpList:: AddKnownCategory
 
-Listeye Bilinen Bir Kategori eklenir.
+Bilinen bir kategoriyi listeye ekler.
 
 ```
 BOOL AddKnownCategory(KNOWNDESTCATEGORY category);
@@ -158,18 +159,18 @@ BOOL AddKnownCategory(KNOWNDESTCATEGORY category);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kategori*<br/>
-Bilinen bir kategori türünü belirtir. Ya KDC_RECENT, ya da KDC_KNOWN olabilir.
+*alan*<br/>
+Bilinen bir kategori türünü belirtir. KDC_RECENT ya da KDC_KNOWN olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilinen Kategoriler, kullanan her uygulama için otomatik olarak hesaplayabileceğimiz Sık ve Son kategorilerdir `SHAddToRecentDocs` (veya dolaylı olarak kabuk bazı senaryolarda uygulama adına adlandıracağı şekilde kullanır).
+Bilinen Kategoriler, (veya dolaylı olarak onu kullanan) her uygulama için otomatik olarak hesaplanacak olan sık ve son kategorileridir. Bu, `SHAddToRecentDocs` kabuk uygulamayı bazı senaryolarda uygulamanın adına çağıracaktır.
 
-## <a name="cjumplistaddtask"></a><a name="addtask"></a>CJumpList::AddTask
+## <a name="cjumplistaddtask"></a><a name="addtask"></a> CJumpList:: AddTask
 
-Kanonik Görevler kategorisine öğeler ekler.
+Kurallı görevler kategorisine öğe ekler.
 
 ```
 BOOL AddTask(
@@ -187,30 +188,30 @@ BOOL AddTask(IShellLink* pShellLink);
 *strTargetExecutablePath*<br/>
 Hedef görev yolunu belirtir.
 
-*strCommandLineArgs*<br/>
-*strTargetExecutablePath*tarafından belirtilen yürütülebilir komut satırı bağımsız değişkenlerini belirtir.
+*Strcommanddoğrgs*<br/>
+*StrTargetExecutablePath* tarafından belirtilen yürütülebilir dosyanın komut satırı bağımsız değişkenlerini belirtir.
 
 *strTitle*<br/>
-Hedef Listesinde görüntülenecek görev adı.
+Hedef listesinde görüntülenecek olan görev adı.
 
 *strIconLocation*<br/>
-Başlıkla birlikte Hedef Liste'de görüntülenecek simgenin konumu.
+Hedef listede başlıkla birlikte görüntülenecek simgenin konumu.
 
-*iIconIndex*<br/>
+*ıiconındex*<br/>
 Simge dizini.
 
 *pShellLink*<br/>
-Eklenecek bir görevi temsil eden Shell Bağlantısı.
+Eklenecek bir görevi temsil eden kabuk bağlantısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, `CJumpList` belirtilen görevleri birikir ve bu görevleri `CommitList`hedef listesine ekler. Görev öğeleri, uygulamanın hedef menüsünün alt kısmındaki bir kategoride görünür. Bu kategori, UI'da doldurulduğunda diğer tüm kategorilerden önce gelir.
+`CJumpList`Belirtilen görevleri birikir örneği ve bunları sırasında hedef listeye ekler `CommitList` . Görev öğeleri, uygulamanın hedef menüsünün alt kısmındaki bir kategoride görüntülenir. Bu kategori, kullanıcı arabiriminden doldurulduğu zaman diğer tüm kategorilere göre önceliklidir.
 
-## <a name="cjumplistaddtasks"></a><a name="addtasks"></a>CJumplist::Görevler Ekle
+## <a name="cjumplistaddtasks"></a><a name="addtasks"></a> CJumpList:: AddTasks
 
-Kanonik Görevler kategorisine öğeler ekler.
+Kurallı görevler kategorisine öğe ekler.
 
 ```
 BOOL AddTasks(IObjectArray* pObjectCollection);
@@ -219,17 +220,17 @@ BOOL AddTasks(IObjectArray* pObjectCollection);
 ### <a name="parameters"></a>Parametreler
 
 *pObjectCollection*<br/>
-Eklenecek görevler topluluğu.
+Eklenecek görevler koleksiyonu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-CJumpList örneği belirtilen görevleri birikir ve `CommitList`sırasında Hedef Listesine ekler. Görev öğeleri, uygulamanın hedef menüsünün alt kısmındaki bir kategoride görünür. Bu kategori, UI'da doldurulduğunda diğer tüm kategorilerden önce gelir.
+CJumpList örneği belirtilen görevleri toplar ve sırasında hedef listesine ekler `CommitList` . Görev öğeleri, uygulamanın hedef menüsünün alt kısmındaki bir kategoride görüntülenir. Bu kategori, kullanıcı arabiriminden doldurulduğu zaman diğer tüm kategorilere göre önceliklidir.
 
-## <a name="cjumplistaddtaskseparator"></a><a name="addtaskseparator"></a>CJumpList::AddTaskSeparator
+## <a name="cjumplistaddtaskseparator"></a><a name="addtaskseparator"></a> CJumpList:: AddTaskSeparator
 
-Görevler arasında ayırıcı ekler.
+Görevler arasına bir ayırıcı ekler.
 
 ```
 BOOL AddTaskSeparator();
@@ -237,11 +238,11 @@ BOOL AddTaskSeparator();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız başarılı ise, 0 değilse.
+Başarılı olursa sıfır dışı, değilse 0.
 
-## <a name="cjumplistcjumplist"></a><a name="cjumplist"></a>CJumplist::CJumplist
+## <a name="cjumplistcjumplist"></a><a name="cjumplist"></a> CJumpList:: CJumpList
 
-Bir `CJumpList` nesne inşa eder.
+Bir `CJumpList` nesnesi oluşturur.
 
 ```
 CJumpList(BOOL bAutoCommit = TRUE);
@@ -249,12 +250,12 @@ CJumpList(BOOL bAutoCommit = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAutoCommit*<br/>
-Bu parametre FALSE ise liste otomatik olarak yıkıcı olarak işlenmez.
+*Bautocommıt*<br/>
+Bu parametre YANLıŞSA, liste yıkıcıya otomatik olarak yürütülmedi.
 
-## <a name="cjumplistclearall"></a><a name="clearall"></a>CJumplist::ClearAll
+## <a name="cjumplistclearall"></a><a name="clearall"></a> CJumpList:: ClearAll
 
-Şu ana `CJumpList` kadar geçerli örneğe eklenen tüm görevleri ve hedefleri kaldırır.
+Şimdiye kadar geçerli örneğine eklenmiş tüm görevleri ve hedefleri kaldırır `CJumpList` .
 
 ```cpp
 void ClearAll();
@@ -262,11 +263,11 @@ void ClearAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, tüm verileri ve dahili arabirimleri temizler ve yayımlar.
+Bu yöntem tüm verileri ve iç arabirimleri temizler ve serbest bırakır.
 
-## <a name="cjumplistclearalldestinations"></a><a name="clearalldestinations"></a>CJumpList::ClearAllDestinations
+## <a name="cjumplistclearalldestinations"></a><a name="clearalldestinations"></a> CJumpList:: ClearAllDestinations
 
-Şu ana kadar Geçerli CJumpList örneğine eklenen tüm hedefleri kaldırır.
+Şu ana kadar geçerli CJumpList örneğine eklenmiş olan tüm hedefleri kaldırır.
 
 ```cpp
 void ClearAllDestinations();
@@ -274,11 +275,11 @@ void ClearAllDestinations();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hedef listesi oluşturmanın geçerli oturumunda şimdiye kadar eklenen tüm hedefleri kaldırmanız ve diğer hedefleri yeniden eklemeniz gerekiyorsa bu işlevi arayın. Eğer iç `ICustomDestinationList` harf eki verilmiştir, canlı bırakılmış.
+Hedef liste binasının geçerli oturumunda şimdiye kadar eklenmiş olan tüm hedefleri kaldırmanız ve diğer hedefleri yeniden eklemeniz gerekiyorsa bu işlevi çağırın. İç `ICustomDestinationList` başlatılmışsa, etkin kalır.
 
-## <a name="cjumplistcommitlist"></a><a name="commitlist"></a>CJumpList::CommitList
+## <a name="cjumplistcommitlist"></a><a name="commitlist"></a> CJumpList:: CommitList
 
-Liste oluşturma işlemini sona erdirer ve bildirilen listeyi ilişkili mağazaya (bu durumda kayıt defteri) adar.
+Liste oluşturma işlemini sonlandırır ve bildirilen listeyi ilişkili depoya (Bu durumda kayıt defteri) kaydeder.
 
 ```
 BOOL CommitList();
@@ -288,11 +289,11 @@ BOOL CommitList();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Taahhüt atomiktir. Commit başarısız olursa bir hata döndürülür.  Çağrıldığında, `CommitList` kaldırılan öğelerin geçerli listesi temizlenir. Bu yöntemi çağırmak, etkin bir liste oluşturma hareketi olmayacak şekilde nesneyi sıfırlar. Listeyi güncelleştirmek `BeginList` için yeniden çağrılması gerekir.
+Tamamlama atomik. İşlem başarısız olursa bir hata döndürülür.  `CommitList`Çağrıldığında, kaldırılan öğelerin geçerli listesi temizlenir. Bu yöntemi çağırmak nesneyi, etkin bir liste oluşturma işlemi olmaması için sıfırlar. Listeyi güncelleştirmek için `BeginList` yeniden çağrılması gerekir.
 
-## <a name="cjumplistgetdestinationlist"></a><a name="getdestinationlist"></a>CJumpList::GetDestinationList
+## <a name="cjumplistgetdestinationlist"></a><a name="getdestinationlist"></a> CJumpList:: GetDestinationList
 
-Hedef listesine bir arabirim işaretçisi alır.
+Hedef listeye bir arabirim işaretçisi alır.
 
 ```
 ICustomDestinationList* GetDestinationList();
@@ -302,11 +303,11 @@ ICustomDestinationList* GetDestinationList();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Atlama listesi başharflere döndürülmediyse veya işlenmiş veya iptal edilmişse, döndürülen değer NULL olur.
+Sıçrama listesi başlatılmamış veya kaydedilmiş veya durdurulmuş ise, döndürülen değer NULL olur.
 
-## <a name="cjumplistgetmaxslots"></a><a name="getmaxslots"></a>CJumpList::GetMaxSlots
+## <a name="cjumplistgetmaxslots"></a><a name="getmaxslots"></a> CJumpList:: Getmaxyuvaları
 
-Arama uygulamasının hedef menüsünde görüntülenebilen kategori üstbilgisi de dahil olmak üzere en fazla öğe sayısını alır.
+Çağıran uygulamanın hedef menüsünde görüntülenebilecek kategori üstbilgileri dahil olmak üzere en fazla öğe sayısını alır.
 
 ```
 UINT GetMaxSlots() const;
@@ -316,11 +317,11 @@ UINT GetMaxSlots() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulamalar yalnızca bu değere kadar birleştirilmiş birkaç öğe ve kategori üstbilgiraporlayabilir. Bu numarayı `AppendCategory` `AppendKnownCategory`ararsa veya `AddUserTasks` bu numarayı aşarsa, hatadöndürer.
+Uygulamalar, bu değere kadar Birleşik sayıda öğe ve Kategori üst bilgisi bildirebilir. `AppendCategory`, `AppendKnownCategory` Veya `AddUserTasks` Bu sayıyı aşarsa, hata döndürür.
 
-## <a name="cjumplistgetremoveditems"></a><a name="getremoveditems"></a>CJumpList::GetRemovedItems
+## <a name="cjumplistgetremoveditems"></a><a name="getremoveditems"></a> CJumpList:: GetRemovedItems
 
-Kaldırılan hedefleri temsil eden öğeler dizisini döndürür.
+Kaldırılan hedefleri temsil eden öğelerin dizisini döndürür.
 
 ```
 IObjectArray* GetRemovedItems();
@@ -330,11 +331,11 @@ IObjectArray* GetRemovedItems();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaldırılan hedefler atlama listesinin başlatılması sırasında alınır. Yeni bir hedef listesi oluştururken, uygulamaların ilk olarak kaldırılan hedef listesinin işlenmesi ve kaldırılan liste numarası tarafından döndürülen herhangi bir öğe için izleme verilerini temizlemesi beklenir. Bir uygulama, geçerli aramanın `BeginList` başlatıldıkı harekette yeni kaldırılan bir öğeyi sağlamaya çalışırsa, uygulamaların kaldırılan listeye saygı duyduğundan emin olmak için maddeyi yeniden eklenen yöntem başarısız olur.
+Kaldırılan hedefler, sıçrama listesinin başlatılması sırasında alınır. Yeni bir hedef listesi oluştururken, uygulamaların kaldırılan hedefler listesini işlemesi beklenir ve bu, kaldırılan liste numaralandırıcısı tarafından döndürülen herhangi bir öğe için izleme verilerini temizlemektir. Bir uygulama, geçerli çağrının başladığı işlemde yeni kaldırılan bir öğe sağlamaya çalışırsa `BeginList` , uygulamaların kaldırılan listeyi yeniden sağlamasını sağlamak için bu öğeyi yeniden ekleyen Yöntem çağrısı başarısız olur.
 
-## <a name="cjumplistinitializelist"></a><a name="initializelist"></a>CJumpList::InitializeList
+## <a name="cjumplistinitializelist"></a><a name="initializelist"></a> CJumpList:: ınitializelist
 
-Liste oluşturma işlemi başlasın.
+Bir liste oluşturma işlemi başlatır.
 
 ```
 BOOL InitializeList();
@@ -344,11 +345,11 @@ BOOL InitializeList();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanmak `ICustomDestinationList` için bir işaretçi almak istemiyorsanız bu yöntemi açıkça `GetDestinationList`aramanız gerekmez , kullanarak `GetMaxSlots`kullanılabilir yuva sayısı `GetRemovedItems`, ya da kullanarak kaldırılan öğelerin listesini .
+Kullanmak için bir işaretçi `ICustomDestinationList` `GetDestinationList` , kullanan kullanılabilir yuva sayısı `GetMaxSlots` veya kullanılarak kaldırılan öğelerin listesini almak istemediğiniz müddetçe bu yöntemi açıkça çağırmanız gerekmez `GetRemovedItems` .
 
-## <a name="cjumplistsetappid"></a><a name="setappid"></a>CJumplist::SetAppID
+## <a name="cjumplistsetappid"></a><a name="setappid"></a> CJumpList:: Setappıd
 
-Oluşturulacak liste için Uygulama Kullanıcı Modeli Kimliğini ayarlar.
+Oluşturulacak listenin uygulama kullanıcı modeli KIMLIĞINI ayarlar.
 
 ```cpp
 void SetAppID(LPCTSTR strAppID);
@@ -356,8 +357,8 @@ void SetAppID(LPCTSTR strAppID);
 
 ### <a name="parameters"></a>Parametreler
 
-*strAppID*<br/>
-Uygulama Kullanıcı Modeli Kimliğini belirten bir dize.
+*Strappıd*<br/>
+Uygulamanın kullanıcı modeli KIMLIĞINI belirten bir dize.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

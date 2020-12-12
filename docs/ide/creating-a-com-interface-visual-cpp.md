@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: COM arabirimi oluşturma'
 title: COM arabirimi oluşturma
 ms.date: 05/14/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - COM interfaces, editing
 - properties [C++], adding to COM interfaces
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
-ms.openlocfilehash: 6ad8d50049d34a711937f3d1f73157ce26f69808
-ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
+ms.openlocfilehash: 81274b2d6a966dc4f8b16649f1fb9d33b595de62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96188828"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240721"
 ---
 # <a name="create-a-com-interface"></a>COM arabirimi oluşturma
 

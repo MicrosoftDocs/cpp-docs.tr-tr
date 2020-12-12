@@ -1,21 +1,22 @@
 ---
+description: 'Daha fazla bilgi edinin: diğer adlar ve tür tanımları (C++)'
 title: Diğer adlar ve tür tanımları (C++)
 ms.date: 11/04/2016
 f1_keywords:
 - typedef_cpp
 ms.assetid: af1c24d2-4bfd-408a-acfc-482e264232f5
-ms.openlocfilehash: 6054b7119614d9325bd099dd39b8aa1365d97ed7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7b5924fd30fe1d22e6a82fb82e2d252409d782ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239863"
 ---
 # <a name="aliases-and-typedefs-c"></a>Diğer adlar ve tür tanımları (C++)
 
-Daha önce tanımlanan bir tür için eş anlamlı olarak kullanılacak bir ad bildirmek üzere bir *diğer ad bildirimi* kullanabilirsiniz. (Bu mekanizma bir *tür diğer adı*olarak da bilinir). Bu mekanizmayı Ayrıca, özel ayrıcılar için özellikle yararlı olabilecek bir *diğer ad şablonu*oluşturmak için de kullanabilirsiniz.
+Daha önce tanımlanan bir tür için eş anlamlı olarak kullanılacak bir ad bildirmek üzere bir *diğer ad bildirimi* kullanabilirsiniz. (Bu mekanizma bir *tür diğer adı* olarak da bilinir). Bu mekanizmayı Ayrıca, özel ayrıcılar için özellikle yararlı olabilecek bir *diğer ad şablonu* oluşturmak için de kullanabilirsiniz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 using identifier = type;
@@ -183,7 +184,7 @@ void myproc( int )
 }
 ```
 
-Bir typedef ile aynı ad ile bir yerel kapsam tanımlayıcısı bildirirken veya aynı kapsamda veya bir iç kapsamda bir yapının veya birleşimin üyesini bildirirken tür belirleyicisi belirtilmelidir. Örnek:
+Bir typedef ile aynı ad ile bir yerel kapsam tanımlayıcısı bildirirken veya aynı kapsamda veya bir iç kapsamda bir yapının veya birleşimin üyesini bildirirken tür belirleyicisi belirtilmelidir. Örneğin:
 
 ```cpp
 typedef char FlagType;
@@ -212,7 +213,7 @@ int;  // Illegal declaration
 
 ### <a name="examples"></a>Örnekler
 
-Bildirimlerin bir kullanımı **`typedef`** , bildirimlerin daha Tekdüzen ve kompakt olmasını sağlar. Örnek:
+Bildirimlerin bir kullanımı **`typedef`** , bildirimlerin daha Tekdüzen ve kompakt olmasını sağlar. Örneğin:
 
 ```cpp
 typedef char CHAR;          // Character type.
@@ -222,7 +223,7 @@ typedef unsigned long ulong;
 ulong ul;     // Equivalent to "unsigned long ul;"
 ```
 
-**`typedef`** Aynı bildirimde temel ve türetilmiş türleri belirtmek için kullanmak üzere, bildirimcilerin virgülle ayırabilirsiniz. Örnek:
+**`typedef`** Aynı bildirimde temel ve türetilmiş türleri belirtmek için kullanmak üzere, bildirimcilerin virgülle ayırabilirsiniz. Örneğin:
 
 ```cpp
 typedef char CHAR, *PSTR;
@@ -246,7 +247,7 @@ Bildirime eşdeğerdir
 void box( int, int );
 ```
 
-**`typedef`**, **`struct`** Kullanıcı tanımlı türleri bildirmek ve adlandırmak için genellikle ile birleştirilir:
+**`typedef`** , **`struct`** Kullanıcı tanımlı türleri bildirmek ve adlandırmak için genellikle ile birleştirilir:
 
 ```cpp
 // typedef_specifier2.cpp
@@ -273,7 +274,7 @@ int main()
 
 ### <a name="re-declaration-of-typedefs"></a>Tür tanımları öğesinin yeniden bildirimi
 
-Bildirim, aynı **`typedef`** türe başvurmak için aynı adı yeniden bildirmek üzere kullanılabilir. Örnek:
+Bildirim, aynı **`typedef`** türe başvurmak için aynı adı yeniden bildirmek üzere kullanılabilir. Örneğin:
 
 ```cpp
 // FILE1.H
@@ -347,7 +348,7 @@ typedef struct {
 } POINT;
 ```
 
-Önceki örnek `POINT` adlandırılmamış sınıf söz dizimi kullanılarak adlı bir sınıf bildirir **`typedef`** . `POINT`sınıf adı olarak değerlendirilir; Ancak, aşağıdaki kısıtlamalar bu şekilde tanıtılan adlara uygulanır:
+Önceki örnek `POINT` adlandırılmamış sınıf söz dizimi kullanılarak adlı bir sınıf bildirir **`typedef`** . `POINT` sınıf adı olarak değerlendirilir; Ancak, aşağıdaki kısıtlamalar bu şekilde tanıtılan adlara uygulanır:
 
 - Ad (eş anlamlı) bir **`class`** , veya öneki öğesinden sonra bulunamaz **`struct`** **`union`** .
 

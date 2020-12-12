@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: Yöntemler'
 title: 'MFC ActiveX Denetimleri: Yöntemler'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 ms.assetid: e20271de-6ffa-4ba0-848b-bafe6c9e510c
-ms.openlocfilehash: 9f9ec06852ed0376583363df7649331a0be02105
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 27e56653e8a3cf3ebd7ab182b633a1c3ba0b99b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621232"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236938"
 ---
 # <a name="mfc-activex-controls-methods"></a>MFC ActiveX Denetimleri: Yöntemler
 
@@ -34,11 +35,11 @@ Projeyi oluşturmak için [MFC ActiveX Denetim Sihirbazı 'nı](reference/mfc-ac
 
 Aşağıdaki makalelerde Yöntemler ayrıntılı olarak ele alınmaktadır:
 
-- [MFC ActiveX Denetimleri: Stok Yöntemler Ekleme](mfc-activex-controls-adding-stock-methods.md)
+- [MFC ActiveX denetimleri: stok yöntemleri ekleme](mfc-activex-controls-adding-stock-methods.md)
 
-- [MFC ActiveX Denetimleri: Özel Yöntemler Ekleme](mfc-activex-controls-adding-custom-methods.md)
+- [MFC ActiveX denetimleri: özel yöntemler ekleme](mfc-activex-controls-adding-custom-methods.md)
 
-- [MFC ActiveX Denetimleri: Bir Metottan Hata Kodları Döndürme](mfc-activex-controls-returning-error-codes-from-a-method.md)
+- [MFC ActiveX denetimleri: bir yöntemden hata kodları döndürme](mfc-activex-controls-returning-error-codes-from-a-method.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

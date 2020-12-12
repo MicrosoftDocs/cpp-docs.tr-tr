@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: AppDomain'
 title: appdomain
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,24 +8,24 @@ helpviewer_keywords:
 - appdomain __declspec keyword
 - __declspec keyword [C++], appdomain
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
-ms.openlocfilehash: 7ac74e8774204b316712a15975f7af3fb8835a9e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d817c71058c37b032e2ed6581de3a0fa8c169132
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181492"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239811"
 ---
 # <a name="appdomain"></a>appdomain
 
-Yönetilen uygulamanızın her bir uygulama etki alanının belirli bir genel değişkenin veya statik üye değişkeninin kendi kopyasına sahip olması gerektiğini belirtir. Daha fazla bilgi için bkz. [uygulama etki alanları ve görsel C++ ](../dotnet/application-domains-and-visual-cpp.md) .
+Yönetilen uygulamanızın her bir uygulama etki alanının belirli bir genel değişkenin veya statik üye değişkeninin kendi kopyasına sahip olması gerektiğini belirtir. Daha fazla bilgi için bkz. [uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md) .
 
 Her uygulama etki alanının kendi AppDomain bağımsız değişkeninin kendi kopyası vardır. Bir uygulama etki alanına bir derleme yüklendiğinde bir AppDomain değişkeninin Oluşturucusu yürütülür ve uygulama etki alanı kaldırıldığında yıkıcı yürütülür.
 
-Ortak dil çalışma zamanındaki bir işlem içindeki tüm uygulama etki alanlarının genel bir değişkeni paylaşmasına istiyorsanız `__declspec(process)` değiştiricisini kullanın. `__declspec(process)`, [/clr](../build/reference/clr-common-language-runtime-compilation.md)altında varsayılan olarak etkindir. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
+Ortak dil çalışma zamanındaki bir işlem içindeki tüm uygulama etki alanlarının genel bir değişkeni paylaşmasını istiyorsanız, `__declspec(process)` değiştiricisini kullanın. `__declspec(process)`[/clr](../build/reference/clr-common-language-runtime-compilation.md)altında varsayılan olarak etkindir. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-`__declspec(appdomain)` yalnızca **/clr** derleyici seçeneklerinden biri kullanıldığında geçerlidir. Yalnızca bir genel değişken, statik üye değişkeni veya statik bir yerel değişken `__declspec(appdomain)`ile işaretlenebilir. Bu davranışa her zaman sahip olduklarından, yönetilen türlerin statik üyelerine `__declspec(appdomain)` uygulamak bir hatadır.
+`__declspec(appdomain)` yalnızca **/clr** derleyici seçeneklerinden biri kullanıldığında geçerlidir. Yalnızca bir genel değişken, statik üye değişkeni veya statik bir yerel değişken ile işaretlenebilir `__declspec(appdomain)` . `__declspec(appdomain)`Her zaman bu davranışa sahip olduklarından, yönetilen türlerin statik üyelerine uygulanması hatadır.
 
-`__declspec(appdomain)` kullanmak, [Iş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md)ile benzerdir. İş parçacıklarının, uygulama etki alanları olarak kendi depolama alanları vardır. `__declspec(appdomain)` kullanmak, genel değişkenin bu uygulama için oluşturulan her uygulama etki alanında kendi depolama alanı olmasını sağlar.
+Kullanımı `__declspec(appdomain)` , [Iş parçacığı yerel DEPOLAMASı (TLS)](../parallel/thread-local-storage-tls.md)ile benzerdir. İş parçacıklarının, uygulama etki alanları olarak kendi depolama alanları vardır. Kullanımı `__declspec(appdomain)` , genel değişkenin bu uygulama için oluşturulan her uygulama etki alanında kendi depolama alanı olmasını sağlar.
 
 İşlem başına ve AppDomain değişkenleri başına kullanımını karıştırma sınırlamaları vardır; daha fazla bilgi için [işleme](../cpp/process.md) bakın.
 
@@ -137,4 +138,4 @@ __declspec(process) CGlobal::~CGlobal destructor
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [__declspec](../cpp/declspec.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)
