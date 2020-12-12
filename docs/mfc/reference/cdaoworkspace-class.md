@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDaoWorkspace sınıfı'
 title: CDaoWorkspace sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], SetLoginTimeout
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-ms.openlocfilehash: eea3fb29f219890ebe596c5d8109257e9d422054
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 73236019db3ecf4a79ef93e19a55d909e6e0d61d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839796"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248007"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace sınıfı
 
@@ -313,13 +314,13 @@ static void PASCAL CompactDatabase(
 Mevcut, kapalı bir veritabanının adı. "C: \Mydb" gibi tam bir yol ve dosya adı olabilir \\ . MDB ". Dosya adının bir uzantısı varsa, onu belirtmeniz gerekir. Ağınız Tekdüzen adlandırma kuralını (UNC) destekliyorsa, " \\ \\ \\ \sunucum \\ \ myshare \\ \ mydizinim \\ \ mydbgibi bir ağ yolu da belirtebilirsiniz. MDB ". ("" C++ kaçış karakteri olduğundan, yol dizelerinde çift ters eğik çizgiler gereklidir \\ .)
 
 *lpszDestName*<br/>
-Oluşturmakta olduğunuz sıkıştırılan veritabanının tam yolu. Ayrıca, *lpszSrcName*ile olduğu gibi bir ağ yolu da belirtebilirsiniz. *LpszDestName* bağımsız değişkenini, *lpszSrcName*ile aynı veritabanı dosyasını belirtmek için kullanamazsınız.
+Oluşturmakta olduğunuz sıkıştırılan veritabanının tam yolu. Ayrıca, *lpszSrcName* ile olduğu gibi bir ağ yolu da belirtebilirsiniz. *LpszDestName* bağımsız değişkenini, *lpszSrcName* ile aynı veritabanı dosyasını belirtmek için kullanamazsınız.
 
 *lpszPassword*<br/>
 Parola korumalı bir veritabanını sıkıştırmak istediğinizde kullanılan parola. `CompactDatabase`Bir parola alan sürümünü kullanıyorsanız, tüm parametreleri sağlamanız gerektiğini unutmayın. Ayrıca, bu bir Connect parametresi olduğundan şu şekilde özel biçimlendirme gerektirir:; PWD = *lpszPassword*. Örneğin:; PWD = "mutlu". (Baştaki noktalı virgül gereklidir.)
 
 *lpszLocale*<br/>
-*LpszDestName*oluşturmak için harmanlama sırasını belirtmek için kullanılan bir dize ifadesi. Varsayılan değerini (aşağıya bakın) kabul ederek bu bağımsız değişkeni atlarsanız `dbLangGeneral` , yeni veritabanının yerel ayarı eski veritabanıyla aynı olur. Olası değerler şunlardır:
+*LpszDestName* oluşturmak için harmanlama sırasını belirtmek için kullanılan bir dize ifadesi. Varsayılan değerini (aşağıya bakın) kabul ederek bu bağımsız değişkeni atlarsanız `dbLangGeneral` , yeni veritabanının yerel ayarı eski veritabanıyla aynı olur. Olası değerler şunlardır:
 
 - `dbLangGeneral` İngilizce, Almanca, Fransızca, Portekizce, Italyanca ve modern Ispanyolca
 
@@ -352,7 +353,7 @@ Parola korumalı bir veritabanını sıkıştırmak istediğinizde kullanılan p
 - `dbLangTurkish` Türkçe
 
 *Önemli seçenekler*<br/>
-Hedef veritabanı için bir veya daha fazla seçeneği gösterir, *lpszDestName*. Bu bağımsız değişkeni varsayılan değeri kabul ederek atlarsanız, *lpszDestName* aynı şifrelemeye ve *lpszSrcName*ile aynı sürüme sahip olur. Ya da seçeneğini, `dbEncrypt` `dbDecrypt` BIT düzeyinde OR işlecini kullanarak sürüm seçeneklerinden biriyle birleştirebilirsiniz. Veritabanı biçimi olarak değil, veritabanı biçimini belirten olası değerler şunlardır:
+Hedef veritabanı için bir veya daha fazla seçeneği gösterir, *lpszDestName*. Bu bağımsız değişkeni varsayılan değeri kabul ederek atlarsanız, *lpszDestName* aynı şifrelemeye ve *lpszSrcName* ile aynı sürüme sahip olur. Ya da seçeneğini, `dbEncrypt` `dbDecrypt` BIT düzeyinde OR işlecini kullanarak sürüm seçeneklerinden biriyle birleştirebilirsiniz. Veritabanı biçimi olarak değil, veritabanı biçimini belirten olası değerler şunlardır:
 
 - `dbEncrypt` Sıkıştırma sırasında veritabanını şifreleyin.
 
@@ -366,7 +367,7 @@ Hedef veritabanı için bir veya daha fazla seçeneği gösterir, *lpszDestName*
 
 - `dbVersion30` Sıkıştırma sırasında Microsoft Jet veritabanı altyapısı 3,0 sürümünü kullanan bir veritabanı oluşturun.
 
-`dbEncrypt` `dbDecrypt` Sıkıştırılmış veritabanının şifrelenip şifrelenmeyeceğini veya şifresinin çözülmesi gerekip gerekmediğini belirtmek için seçenekler bağımsız değişkeninde veya kullanabilirsiniz. Bir şifreleme sabitini atlarsanız veya hem hem de eklerseniz `dbDecrypt` `dbEncrypt` , *lpszDestName* aynı şifrelemeye sahip olur. *lpszSrcName* Sıkıştırılan veritabanının veri biçiminin sürümünü belirtmek için, Seçenekler bağımsız değişkenindeki sürüm sabitlerinden birini kullanabilirsiniz. Bu sabit yalnızca *lpszDestName*veri biçiminin sürümünü etkiler. Yalnızca bir sürüm sabiti belirtebilirsiniz. Bir sürüm sabitini atlarsanız, *lpszDestName* aynı sürüme sahip olacaktır *lpszSrcName*. *LpszDestName* yalnızca *lpszSrcName*ile aynı veya sonraki bir sürüme sıkıştırabilirsiniz.
+`dbEncrypt` `dbDecrypt` Sıkıştırılmış veritabanının şifrelenip şifrelenmeyeceğini veya şifresinin çözülmesi gerekip gerekmediğini belirtmek için seçenekler bağımsız değişkeninde veya kullanabilirsiniz. Bir şifreleme sabitini atlarsanız veya hem hem de eklerseniz `dbDecrypt` `dbEncrypt` , *lpszDestName* aynı şifrelemeye sahip olur.  Sıkıştırılan veritabanının veri biçiminin sürümünü belirtmek için, Seçenekler bağımsız değişkenindeki sürüm sabitlerinden birini kullanabilirsiniz. Bu sabit yalnızca *lpszDestName* veri biçiminin sürümünü etkiler. Yalnızca bir sürüm sabiti belirtebilirsiniz. Bir sürüm sabitini atlarsanız, *lpszDestName* aynı sürüme sahip olacaktır *lpszSrcName*. *LpszDestName* yalnızca *lpszSrcName* ile aynı veya sonraki bir sürüme sıkıştırabilirsiniz.
 
 > [!CAUTION]
 > Bir veritabanı şifrelenmemişse, veritabanını oluşturan ikili disk dosyasını doğrudan okumak için Kullanıcı/parola güvenliği uygulasanız bile mümkündür.
@@ -473,7 +474,7 @@ Ada göre arama için veritabanı nesnesinin adı. Ad, yeni çalışma alanı ne
 
 İşlevin bir sürümü, dizine göre bir veritabanını arama olanağı sağlar. Diğer sürüm, bir veritabanını adına göre arama yapmanızı sağlar.
 
-*Dınfo*'da döndürülen bilgilerin açıklaması Için, [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
+*Dınfo*'da döndürülen bilgilerin açıklaması Için, [CDaoDatabaseInfo](../../mfc/reference/cdaodatabaseinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions* açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
 
 ## <a name="cdaoworkspacegetinipath"></a><a name="getinipath"></a> CDaoWorkspace:: Getınıpath
 
@@ -641,7 +642,7 @@ Ada göre arama için çalışma alanı nesnesinin adı. Ad, yeni çalışma ala
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Wkspcinfo*' de döndürülen bilgilerin açıklaması Için, [Cdaoıgntionınfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki düzeyler için de bilgi alırsınız.
+*Wkspcinfo*' de döndürülen bilgilerin açıklaması Için, [Cdaoıgntionınfo](../../mfc/reference/cdaoworkspaceinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions* açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki düzeyler için de bilgi alırsınız.
 
 ## <a name="cdaoworkspaceidle"></a><a name="idle"></a> CDaoWorkspace:: Idle
 
@@ -712,7 +713,7 @@ Açılacak DAO çalışma alanı nesnesinin adı — en fazla 14 karakter içere
 
 Bir nesne oluşturduktan sonra `CDaoWorkspace` , aşağıdakilerden birini yapmak için bu üye işlevi çağırın:
 
-- Varsayılan çalışma alanını açık olarak açın. *LpszName*için null geçirin.
+- Varsayılan çalışma alanını açık olarak açın. *LpszName* için null geçirin.
 
 - `CDaoWorkspace`Çalışma alanları koleksiyonunun bir üyesi olan varolan bir nesneyi ada göre açın. Mevcut bir çalışma alanı nesnesi için geçerli bir ad geçirin.
 

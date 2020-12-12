@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Cdaotabledefinınfo yapısı'
 title: CDaoTableDefInfo Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - CDaoTableDefInfo structure [MFC]
 - DAO (Data Access Objects), TableDefs collection
 ms.assetid: c01ccebb-5615-434e-883c-4f60eac943dd
-ms.openlocfilehash: 5785ed19c6929e19c7d376efa012dd1c059611c7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 953a255b35860dcce0ac8d3ef5081951dd15c344
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152104"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247982"
 ---
 # <a name="cdaotabledefinfo-structure"></a>CDaoTableDefInfo Yapısı
 
-`CDaoTableDefInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan tabledef nesnesi hakkında bilgiler içerir.
+`CDaoTableDefInfo`Yapı, veri erişim nesneleri (DAO) için tanımlanan bir TableDef nesnesi hakkındaki bilgileri içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,61 +40,61 @@ struct CDaoTableDefInfo
 #### <a name="parameters"></a>Parametreler
 
 *m_strName*<br/>
-Benzersiz tabledef nesne adları. Doğrudan bu özelliğin değerini almak için tabledef nesnenin çağrı [GetName](../../mfc/reference/cdaotabledef-class.md#getname) üye işlevi. Daha fazla bilgi için "Name özelliği" DAO Yardım konusuna bakın.
+Tabledef nesnesini benzersiz olarak adlandırır. Bu özelliğin değerini doğrudan almak için TableDef nesnesinin [GetName](../../mfc/reference/cdaotabledef-class.md#getname) üye işlevini çağırın. Daha fazla bilgi için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
 
 *m_bUpdatable*<br/>
-Tabloya değişiklikler yapılıp yapılmayacağı gösterir. Açmak için bir tablo güncelleştirilebilir olup olmadığını belirlemek için en hızlı yolu olan bir `CDaoTableDef` nesne tablosu için ve nesnenin [CanUpdate](../../mfc/reference/cdaotabledef-class.md#canupdate) üye işlevi. `CanUpdate` her zaman (TRUE) için yeni oluşturulan tabledef nesnesi ile 0 (FALSE) bir ekli tabledef nesne için sıfır döndürür. Yeni bir tabledef nesne yazmak için izne sahip geçerli kullanıcı için bir veritabanı yalnızca eklenmiş. Tablo yalnızca güncellenemeyen alanlar içeriyorsa `CanUpdate` 0 döndürür. Bir veya daha fazla alan güncelleştirilebilir, olduğunda `CanUpdate` sıfır döndürür. Yalnızca güncelleştirilebilir alanlarını düzenleyebilirsiniz. Daha fazla bilgi için DAO Yardımı'nda "güncelleştirilebilir özelliği" konusuna bakın.
+Tabloda değişikliklerin yapılıp yapılmayacağını belirtir. Bir tablonun güncelleştirilebilir olup olmadığını belirlemenin hızlı yolu, `CDaoTableDef` tablo için bir nesne açıp nesnenin [CanUpdate](../../mfc/reference/cdaotabledef-class.md#canupdate) üye işlevini çağırmaktadır. `CanUpdate` Yeni oluşturulan bir TableDef nesnesi için her zaman sıfır olmayan (TRUE) ve ekli bir TableDef nesnesi için 0 (FALSE) döndürür. Yeni bir TableDef nesnesi yalnızca geçerli kullanıcının yazma iznine sahip olduğu bir veritabanına eklenebilir. Tablo yalnızca güncelleştirilemez alanlar içeriyorsa `CanUpdate` 0 değerini döndürür. Bir veya daha fazla alan güncelleştiribir zaman, `CanUpdate` sıfır dışında bir değer döndürür. Yalnızca güncelleştirilebilir alanları düzenleyebilirsiniz. Daha fazla bilgi için, DAO yardımı 'nda "güncelleştirilebilir özellik" konusuna bakın.
 
 *m_lAttributes*<br/>
-Tabledef nesnesiyle temsil edilen tablo özelliklerini belirtir. Geçerli değer özelliği öznitelikleri almak için arama, [GetAttributes](../../mfc/reference/cdaotabledef-class.md#getattributes) üye işlevi. Döndürülen değer bu uzun sabiti bir birleşimi olabilir (bit düzeyinde OR kullanarak (**&#124;**) işleci):
+TableDef nesnesi tarafından temsil edilen tablonun özelliklerini belirtir. Bir TableDef öğesinin geçerli özniteliklerini almak için, [GetAttributes](../../mfc/reference/cdaotabledef-class.md#getattributes) üye işlevini çağırın. Döndürülen değer bu uzun sabitlerin bir birleşimi olabilir (bit düzeyinde OR (**&#124;**) işleci kullanılarak):
 
-- `dbAttachExclusive` Microsoft Jet Veritabanı Altyapısı'nı kullanan veritabanları için tablo özel kullanım için açılan eklenen tablonun gösterilir.
+- `dbAttachExclusive` Microsoft Jet veritabanı altyapısını kullanan veritabanları için, tablonun özel kullanım için açılmış bir eklenmiş tablo olduğunu gösterir.
 
-- `dbAttachSavePWD` Microsoft Jet Veritabanı Altyapısı'nı kullanan veritabanları için kullanıcı Kimliğini ve parolasını eklenen tablonun bağlantı bilgileriyle birlikte kaydedilir gösterir.
+- `dbAttachSavePWD` Microsoft Jet veritabanı altyapısını kullanan veritabanları için, ekli tablo için Kullanıcı KIMLIĞI ve parolanın bağlantı bilgileriyle kaydedildiğini belirtir.
 
-- `dbSystemObject` Tablonun Microsoft Jet veritabanı altyapısı tarafından sağlanan bir sistem tablosu olduğunu gösterir. (Salt okunur.)
+- `dbSystemObject` Tablonun Microsoft Jet veritabanı altyapısı tarafından sunulan bir sistem tablosu olduğunu gösterir. (Salt okunur.)
 
-- `dbHiddenObject` Tablonun Microsoft Jet veritabanı motoru (için geçici kullanım için) tarafından sağlanan gizli bir tablo gösterir. (Salt okunur.)
+- `dbHiddenObject` Tablonun Microsoft Jet veritabanı altyapısı tarafından sunulan gizli bir tablo olduğunu gösterir (geçici kullanım için). (Salt okunur.)
 
-- `dbAttachedTable` Tablo Paradox veritabanı gibi bir ODBC olmayan veritabanına ekli bir tablodan olduğunu gösterir.
+- `dbAttachedTable` Tablonun, Paradox veritabanı gibi ODBC olmayan bir veritabanından ekli tablo olduğunu gösterir.
 
-- `dbAttachedODBC` Ekli bir Microsoft SQL Server gibi bir ODBC veritabanı tablosundan tablo olduğunu gösterir.
+- `dbAttachedODBC` Tablonun, Microsoft SQL Server gibi bir ODBC veritabanından ekli tablo olduğunu gösterir.
 
 *m_dateCreated*<br/>
-Tarih ve saat tablo oluşturuldu. Doğrudan tablonun oluşturulma tarihi almak için arama [GetDateCreated](../../mfc/reference/cdaotabledef-class.md#getdatecreated) üye işlevinin `CDaoTableDef` tabloyla ilişkili nesne. Açıklamaları aşağıda daha fazla bilgi için bkz. İlgili bilgiler için DAO Yardımı'ndaki "Notes LastUpdated Özellikler" bölümüne bakın.
+Tablonun oluşturulduğu tarih ve saat. Tablonun oluşturulduğu tarihi doğrudan almak için, tabloyla ilişkili nesnenin [GetDateCreated](../../mfc/reference/cdaotabledef-class.md#getdatecreated) üye işlevini çağırın `CDaoTableDef` . Daha fazla bilgi için aşağıdaki açıklamalara bakın. İlgili bilgiler için, DAO yardımı 'nda "DateCreated, LastUpdated özellikleri" konusuna bakın.
 
 *m_dateLastUpdated*<br/>
-Tablo Tasarımı için yapılan en son değişikliği saat ve tarihi. Doğrudan tablonun son güncelleme tarihi almak için arama [GetDateLastUpdated](../../mfc/reference/cdaotabledef-class.md#getdatelastupdated) üye işlevinin `CDaoTableDef` tabloyla ilişkili nesne. Açıklamaları aşağıda daha fazla bilgi için bkz. İlgili bilgiler için DAO Yardımı'ndaki "Notes LastUpdated Özellikler" bölümüne bakın.
+Tablonun tasarımında yapılan en son değişikliğin tarih ve saati. Tablonun son güncelleştirilme tarihini doğrudan almak için tabloyla ilişkili nesnenin [GetDateLastUpdated](../../mfc/reference/cdaotabledef-class.md#getdatelastupdated) üye işlevini çağırın `CDaoTableDef` . Daha fazla bilgi için aşağıdaki açıklamalara bakın. İlgili bilgiler için, DAO yardımı 'nda "DateCreated, LastUpdated özellikleri" konusuna bakın.
 
 *m_strSrcTableName*<br/>
-Varsa eklenen tablonun adını belirtir. Doğrudan kaynak tablo adını almak için arama [GetSourceTableName](../../mfc/reference/cdaotabledef-class.md#getsourcetablename) üye işlevinin `CDaoTableDef` tabloyla ilişkili nesne.
+Varsa, eklenen tablonun adını belirtir. Kaynak tablo adını doğrudan almak için tabloyla ilişkili nesnenin [GetSourceTableName](../../mfc/reference/cdaotabledef-class.md#getsourcetablename) üye işlevini çağırın `CDaoTableDef` .
 
 *m_strConnect*<br/>
-Açık bir veritabanının kaynak hakkında bilgi sağlar. Bu özellik çağırarak denetleyebilirsiniz [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) üye işlevini, `CDaoTableDef` nesne. Hakkında daha fazla bilgi için bağlantı dizesi, bkz: `GetConnect`.
+Açık bir veritabanının kaynağı hakkında bilgi sağlar. Nesnenizin [GetConnect](../../mfc/reference/cdaotabledef-class.md#getconnect) üye işlevini çağırarak bu özelliği kontrol edebilirsiniz `CDaoTableDef` . Bağlantı dizeleri hakkında daha fazla bilgi için bkz `GetConnect` ..
 
 *m_strValidationRule*<br/>
-Değiştirilmiş veya tabloya eklenen tabledef alanlardaki veriler doğrulayan bir değer. Doğrulama, yalnızca Microsoft Jet Veritabanı Altyapısı'nı kullanan veritabanları için desteklenir. Doğrulama kuralı doğrudan almak için arama [GetValidationRule](../../mfc/reference/cdaotabledef-class.md#getvalidationrule) üye işlevinin `CDaoTableDef` tabloyla ilişkili nesne. İlgili bilgiler için DAO Yardımı'nda "ValidationRule özelliğini" konusuna bakın.
+TableDef alanlarındaki verileri, değiştirilmiş veya bir tabloya eklendikçe doğrulayan bir değer. Doğrulama yalnızca Microsoft Jet veritabanı altyapısını kullanan veritabanları için desteklenir. Doğrulama kuralını doğrudan almak için, tabloyla ilişkili nesnenin [GetValidationRule](../../mfc/reference/cdaotabledef-class.md#getvalidationrule) üye işlevini çağırın `CDaoTableDef` . İlgili bilgiler için, DAO yardımı 'nda "ValidationRule özelliği" konusuna bakın.
 
 *m_strValidationText*<br/>
-Eğer ValidationRule özelliği tarafından belirtilen doğrulama kuralı uygulamanızı görüntülemesi gerektiğini belirten bir ileti metnini belirten bir değeri. İlgili bilgiler için DAO Yardımı'nda "ValidationText özelliği" konusuna bakın.
+ValidationRule özelliği tarafından belirtilen doğrulama kuralı karşılanmıyorsa uygulamanızın görüntülemesi gereken iletinin metnini belirten bir değer. İlgili bilgiler için, DAO yardımı 'nda "ValidationText özelliği" konusuna bakın.
 
 *m_lRecordCount*<br/>
-Tabledef nesnesinde erişilen kayıt sayısı. Bu özellik ayarı salt okunur. Doğrudan kayıt sayısını almak için arama [GetRecordCount](../../mfc/reference/cdaotabledef-class.md#getrecordcount) üye işlevinin `CDaoTableDef` nesne. Belgelerine `GetRecordCount` daha fazla kayıt sayısı açıklar. Çok sayıda kayıt tablosu içeriyorsa, bu sayı alınırken zaman alıcı bir işlem olabileceğini unutmayın.
+Bir tabledef nesnesinde erişilen kayıt sayısı. Bu özellik ayarı salt okunurdur. Kayıt sayısını doğrudan almak için nesnesinin [GetRecordCount](../../mfc/reference/cdaotabledef-class.md#getrecordcount) üye işlevini çağırın `CDaoTableDef` . İçin belgeler, `GetRecordCount` daha fazla kayıt sayısını açıklar. Tablo çok sayıda kayıt içeriyorsa, bu sayıyı almanın zaman alan bir işlem olabileceğini unutmayın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfın bir nesnesi tabledef olan [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md). Birincil, ikincil ve yukarıdaki tüm başvuruları nasıl bilgileri tarafından döndürülen belirtmek [GetTableDefInfo](../../mfc/reference/cdaodatabase-class.md#gettabledefinfo) sınıf üyesi işlevinde `CDaoDatabase`.
+TableDef, [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md)sınıfının bir nesnesidir. Yukarıdaki birincil, Ikincil ve tüm başvurular, bilgilerin sınıfında [Gettabledefinınfo](../../mfc/reference/cdaodatabase-class.md#gettabledefinfo) üye işlevi tarafından nasıl döndürüleceğini gösterir `CDaoDatabase` .
 
-Tarafından alınan bilgileri [CDaoDatabase::GetTableDefCount](../../mfc/reference/cdaodatabase-class.md#gettabledefinfo) üye işlevi depolanan bir `CDaoTableDefInfo` yapısı. Çağrı `GetTableDefInfo` üye işlevinin `CDaoDatabase` tabledef nesnesi, TableDefs koleksiyonu içinde depolanan nesne. `CDaoTableDefInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoTableDefInfo` nesne.
+[CDaoDatabase:: Gettabledefinınfo](../../mfc/reference/cdaodatabase-class.md#gettabledefinfo) üye işlevi tarafından alınan bilgiler bir `CDaoTableDefInfo` yapıda depolanıyor. `GetTableDefInfo` `CDaoDatabase` TableDefs koleksiyonu TableDef nesnesinin depolandığı nesnenin üye işlevini çağırın. `CDaoTableDefInfo` Ayrıca `Dump` , hata ayıklama yapılarında bir üye işlevi tanımlar. `Dump`Bir nesnenin içeriğini dökmek için kullanabilirsiniz `CDaoTableDefInfo` .
 
-Tarih ve saat ayarları üzerinde temel tablo oluşturulduğu veya en son güncelleştirilen bilgisayardan türetilir. Çok kullanıcılı bir ortamda kullanıcılar bu Notes tutarsızlıkları önlemek için ayarları dosya sunucusundan doğrudan ve LastUpdated özellik ayarları almanız gerekir.
+Tarih ve saat ayarları, temel tablonun oluşturulduğu veya en son güncelleştirildiği bilgisayardan türetilir. Çok kullanıcılı bir ortamda, kullanıcılar bu ayarları, DateCreated ve LastUpdated Özellik ayarlarındaki tutarsızlıkları önlemek için doğrudan dosya sunucusundan alırlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoTableDef Sınıfı](../../mfc/reference/cdaotabledef-class.md)<br/>
-[CDaoDatabase Sınıfı](../../mfc/reference/cdaodatabase-class.md)
+[Yapılar, stiller, geri çağrılar ve Ileti haritaları](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CDaoTableDef sınıfı](../../mfc/reference/cdaotabledef-class.md)<br/>
+[CDaoDatabase sınıfı](../../mfc/reference/cdaodatabase-class.md)

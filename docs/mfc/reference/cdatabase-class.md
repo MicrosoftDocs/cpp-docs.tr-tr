@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDatabase sınıfı'
 title: CDatabase sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,18 +51,18 @@ helpviewer_keywords:
 - CDatabase [MFC], SetQueryTimeout
 - CDatabase [MFC], m_hdbc
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
-ms.openlocfilehash: ee1503f49f0e60b24e0ef3a9c9631f039ad9355e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 82859ebcffeb833ca5afe885b0ae35916da4cf28
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247988"
 ---
 # <a name="cdatabase-class"></a>CDatabase sınıfı
 
 Veri kaynağında çalışabileceğiniz bir veri kaynağıyla bağlantısını temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDatabase : public CObject
@@ -104,7 +105,7 @@ class CDatabase : public CObject
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDatabase:: m_hdbc](#m_hdbc)|Veritabanı bağlantısı (ODBC) bağlantı tanıtıcısını bir veri kaynağına açın. *HDBC*yazın.|
+|[CDatabase:: m_hdbc](#m_hdbc)|Veritabanı bağlantısı (ODBC) bağlantı tanıtıcısını bir veri kaynağına açın. *HDBC* yazın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -113,7 +114,7 @@ Veri kaynağı, bazı veritabanı yönetim sistemi (DBMS) tarafından barındır
 > [!NOTE]
 > Açık veritabanı bağlantısı (ODBC) sınıfları yerine veri erişim nesneleri (DAO) sınıflarıyla çalışıyorsanız, bunun yerine Class [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) kullanın. Daha fazla bilgi için bkz. [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
 
-Kullanmak için `CDatabase` bir nesnesi oluşturun `CDatabase` ve `OpenEx` üye işlevini çağırın. Bu, bir bağlantı açar. Daha sonra `CRecordset` bağlı veri kaynağında çalıştırmak için nesneleri yapılandırdığınızda, kayıt kümesi oluşturucusunu nesneniz için bir işaretçi geçirin `CDatabase` . Bağlantıyı kullanmayı bitirdiğinizde `Close` üye işlevini çağırın ve nesneyi yok edin `CDatabase` . `Close`daha önce kapatılmayan tüm kayıt kümelerini kapatır.
+Kullanmak için `CDatabase` bir nesnesi oluşturun `CDatabase` ve `OpenEx` üye işlevini çağırın. Bu, bir bağlantı açar. Daha sonra `CRecordset` bağlı veri kaynağında çalıştırmak için nesneleri yapılandırdığınızda, kayıt kümesi oluşturucusunu nesneniz için bir işaretçi geçirin `CDatabase` . Bağlantıyı kullanmayı bitirdiğinizde `Close` üye işlevini çağırın ve nesneyi yok edin `CDatabase` . `Close` daha önce kapatılmayan tüm kayıt kümelerini kapatır.
 
 Hakkında daha fazla bilgi için `CDatabase` bkz. Makaleler [veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md) ve [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
 
@@ -127,7 +128,7 @@ Hakkında daha fazla bilgi için `CDatabase` bkz. Makaleler [veri kaynağı (ODB
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="cdatabasebegintrans"></a><a name="begintrans"></a>CDatabase:: BeginTrans
+## <a name="cdatabasebegintrans"></a><a name="begintrans"></a> CDatabase:: BeginTrans
 
 Bağlı veri kaynağıyla bir işlem başlatmak için bu üye işlevi çağırın.
 
@@ -146,11 +147,11 @@ Bir işlem, `AddNew` `Edit` bir nesnenin,, `Delete` ve `Update` üye işlevlerin
 > [!CAUTION]
 > ODBC sürücünüze bağlı olarak, çağrılmadan önce bir kayıt kümesi açmak, `BeginTrans` çağırma sırasında sorunlara neden olabilir `Rollback` . Kullanmakta olduğunuz belirli sürücüyü denetlemeniz gerekir. Örneğin, Microsoft ODBC Masaüstü sürücü paketi 3,0 ' ye dahil olan Microsoft Access sürücüsünü kullanırken, Jet veritabanı altyapısının, açık imleç içeren herhangi bir veritabanında bir işlem başlatmaya gerek olmaması için hesabınızın olması gerekir. MFC veritabanı sınıflarında açık bir imleç açık bir nesne anlamına gelir `CRecordset` . Daha fazla bilgi için bkz. [teknik notta 68](../../mfc/tn068-performing-transactions-with-the-microsoft-access-7-odbc-driver.md).
 
-`BeginTrans`, istenen eşzamanlılık ve veri kaynağının özelliklerine bağlı olarak sunucudaki veri kayıtlarını da kilitleyebilir. Verileri kilitleme hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md).
+`BeginTrans` , istenen eşzamanlılık ve veri kaynağının özelliklerine bağlı olarak sunucudaki veri kayıtlarını da kilitleyebilir. Verileri kilitleme hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md).
 
 Kullanıcı tanımlı işlemler, makale [hareketinde (ODBC)](../../data/odbc/transaction-odbc.md)açıklanmaktadır.
 
-`BeginTrans`işlem dizisinin geri alınacağı durumu (ters çevrilen) belirler. Geri alma işlemleri için yeni bir durum oluşturmak için, geçerli tüm işlemleri işleyin ve sonra `BeginTrans` yeniden çağırın.
+`BeginTrans` işlem dizisinin geri alınacağı durumu (ters çevrilen) belirler. Geri alma işlemleri için yeni bir durum oluşturmak için, geçerli tüm işlemleri işleyin ve sonra `BeginTrans` yeniden çağırın.
 
 > [!CAUTION]
 > `BeginTrans`Çağırmadan `CommitTrans` veya bir hata olmadan yeniden çağırma `Rollback` .
@@ -163,7 +164,7 @@ Sürücünüzün belirli bir veritabanı için işlemleri destekleyip destekleme
 
   İşlem [: kayıt kümesinde Işlem gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)makalesine bakın.
 
-## <a name="cdatabasebindparameters"></a><a name="bindparameters"></a>CDatabase:: BindParameters
+## <a name="cdatabasebindparameters"></a><a name="bindparameters"></a> CDatabase:: BindParameters
 
 `BindParameters` [CDatabase:: ExecuteSQL](#executesql)çağrılmadan önce parametreleri bağlamanız gerektiğinde geçersiz kılın.
 
@@ -180,9 +181,9 @@ Parametreleri bağlamak istediğiniz ODBC bildiri tanıtıcısı.
 
 Bu yaklaşım, bir saklı yordamdan elde edilen sonuç kümesine ihtiyacınız olmadığında faydalıdır.
 
-Geçersiz kılmada, `SQLBindParameters` parametreleri bağlamak için ve ılgılı ODBC işlevlerini çağırın. MFC, çağrısından önce geçersiz kılmanızı çağırır `ExecuteSQL` . `SQLPrepare` `ExecuteSQL` `SQLExecDirect` Yalnızca bir kez kullanılan *hstmt*öğesini çağırmanız ve yok etmek zorunda değilsiniz.
+Geçersiz kılmada, `SQLBindParameters` parametreleri bağlamak için ve ılgılı ODBC işlevlerini çağırın. MFC, çağrısından önce geçersiz kılmanızı çağırır `ExecuteSQL` . `SQLPrepare` `ExecuteSQL` `SQLExecDirect` Yalnızca bir kez kullanılan *hstmt* öğesini çağırmanız ve yok etmek zorunda değilsiniz.
 
-## <a name="cdatabasecancel"></a><a name="cancel"></a>CDatabase:: Cancel
+## <a name="cdatabasecancel"></a><a name="cancel"></a> CDatabase:: Cancel
 
 Veri kaynağının devam eden bir zaman uyumsuz işlemi ya da ikinci bir iş parçacığından bir işlemi iptal ettiğini istemek için bu üye işlevini çağırın.
 
@@ -194,7 +195,7 @@ void Cancel();
 
 MFC ODBC sınıflarının artık zaman uyumsuz işleme kullanmadığını unutmayın; zaman uyumsuz bir işlem gerçekleştirmek için, [SQLSetConnectOption](/sql/odbc/reference/syntax/sqlsetconnectoption-function)ODBC API işlevini doğrudan çağırmanız gerekir. Daha fazla bilgi için bkz. [zaman uyumsuz yürütme](/sql/odbc/reference/develop-app/asynchronous-execution).
 
-## <a name="cdatabasecantransact"></a><a name="cantransact"></a>CDatabase:: CanTransact
+## <a name="cdatabasecantransact"></a><a name="cantransact"></a> CDatabase:: CanTransact
 
 Veritabanının işlemlere izin verip içermediğini öğrenmek için bu üye işlevi çağırın.
 
@@ -210,7 +211,7 @@ Bu nesneyi kullanan kayıt kümeleri `CDatabase` işlemlere izin verir; Aksi tak
 
 İşlemler hakkında daha fazla bilgi için, bkz. [işlem (ODBC)](../../data/odbc/transaction-odbc.md).
 
-## <a name="cdatabasecanupdate"></a><a name="canupdate"></a>CDatabase:: CanUpdate
+## <a name="cdatabasecanupdate"></a><a name="canupdate"></a> CDatabase:: CanUpdate
 
 Nesnenin güncelleştirmelere izin verip içermediğini öğrenmek için bu üye işlevi çağırın `CDatabase` .
 
@@ -226,7 +227,7 @@ BOOL CanUpdate() const;
 
 Tüm sürücüler güncelleştirmeleri desteklemez.
 
-## <a name="cdatabasecdatabase"></a><a name="cdatabase"></a>CDatabase:: CDatabase
+## <a name="cdatabasecdatabase"></a><a name="cdatabase"></a> CDatabase:: CDatabase
 
 Bir `CDatabase` nesnesi oluşturur.
 
@@ -248,7 +249,7 @@ Bu örnek, ile `CDatabase` türetilmiş bir `CDocument` sınıfta kullanmayı g�
 
 [!code-cpp[NVC_MFCDatabase#10](../../mfc/codesnippet/cpp/cdatabase-class_2.cpp)]
 
-## <a name="cdatabaseclose"></a><a name="close"></a>CDatabase:: Close
+## <a name="cdatabaseclose"></a><a name="close"></a> CDatabase:: Close
 
 Bir veri kaynağıyla bağlantısını kesmek istiyorsanız bu üye işlevi çağırın.
 
@@ -266,7 +267,7 @@ Bu üye işlevini çağırabilmeniz için, nesneyle ilişkili tüm kayıt kümel
 
 [!code-cpp[NVC_MFCDatabase#12](../../mfc/codesnippet/cpp/cdatabase-class_3.cpp)]
 
-## <a name="cdatabasecommittrans"></a><a name="committrans"></a>CDatabase:: CommitTrans
+## <a name="cdatabasecommittrans"></a><a name="committrans"></a> CDatabase:: CommitTrans
 
 İşlemleri tamamladıktan sonra bu üye işlevini çağırın.
 
@@ -280,7 +281,7 @@ Güncelleştirmeler başarıyla taahhütse sıfır dışı; Aksi takdirde 0. `Co
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir işlem, `AddNew` `Edit` `Delete` `Update` `CRecordset` [BeginTrans](#begintrans) üye işlevine çağrısıyla başlayan bir nesnenin,,, ve üye işlevlerine yapılan bir dizi çağrıdan oluşur. `CommitTrans`işlemi kaydeder. Güncelleştirmeler varsayılan olarak hemen kaydedilir; çağırma `BeginTrans` , çağrılana kadar güncelleştirmelerin gecikmesine neden olur `CommitTrans` .
+Bir işlem, `AddNew` `Edit` `Delete` `Update` `CRecordset` [BeginTrans](#begintrans) üye işlevine çağrısıyla başlayan bir nesnenin,,, ve üye işlevlerine yapılan bir dizi çağrıdan oluşur. `CommitTrans` işlemi kaydeder. Güncelleştirmeler varsayılan olarak hemen kaydedilir; çağırma `BeginTrans` , çağrılana kadar güncelleştirmelerin gecikmesine neden olur `CommitTrans` .
 
 `CommitTrans`Bir işlemi sona erdirmek için çağrı yapana kadar, işlemi iptal etmek ve veri kaynağını özgün durumunda bırakmak Için [Rollback](#rollback) üye işlevini çağırabilirsiniz. Yeni bir işlem başlatmak için yeniden çağırın `BeginTrans` .
 
@@ -290,7 +291,7 @@ Bir işlem, `AddNew` `Edit` `Delete` `Update` `CRecordset` [BeginTrans](#begintr
 
   İşlem [: kayıt kümesinde Işlem gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)makalesine bakın.
 
-## <a name="cdatabaseexecutesql"></a><a name="executesql"></a>CDatabase:: ExecuteSQL
+## <a name="cdatabaseexecutesql"></a><a name="executesql"></a> CDatabase:: ExecuteSQL
 
 Doğrudan bir SQL komutu yürütmeniz gerektiğinde bu üye işlevini çağırın.
 
@@ -305,7 +306,7 @@ Yürütülecek geçerli bir SQL komutu içeren null ile sonlandırılmış bir d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Komutu null ile sonlandırılmış bir dize olarak oluşturun. `ExecuteSQL`veri kayıtlarını döndürmez. Kayıtlar üzerinde işlem yapmak istiyorsanız, bunun yerine bir kayıt kümesi nesnesi kullanın.
+Komutu null ile sonlandırılmış bir dize olarak oluşturun. `ExecuteSQL` veri kayıtlarını döndürmez. Kayıtlar üzerinde işlem yapmak istiyorsanız, bunun yerine bir kayıt kümesi nesnesi kullanın.
 
 Bir veri kaynağına yönelik komutlarınızın çoğu, veri seçme, yeni kayıtlar ekleme, kayıtları silme ve kayıtları düzenlemeyle ilgili komutları destekleyen kayıt kümesi nesneleri aracılığıyla verilir. Ancak, tüm ODBC işlevleri veritabanı sınıfları tarafından doğrudan desteklenmediğinden, ile doğrudan bir SQL çağrısı yapmanız gerekebilir `ExecuteSQL` .
 
@@ -313,7 +314,7 @@ Bir veri kaynağına yönelik komutlarınızın çoğu, veri seçme, yeni kayıt
 
 [!code-cpp[NVC_MFCDatabase#13](../../mfc/codesnippet/cpp/cdatabase-class_4.cpp)]
 
-## <a name="cdatabasegetbookmarkpersistence"></a><a name="getbookmarkpersistence"></a>CDatabase:: Getbookmarkkalıcılığı
+## <a name="cdatabasegetbookmarkpersistence"></a><a name="getbookmarkpersistence"></a> CDatabase:: Getbookmarkkalıcılığı
 
 Belirli işlemlerden sonra bir kayıt kümesi nesnesinde yer işaretlerinin kalıcılığını öğrenmek için bu üye işlevi çağırın.
 
@@ -343,7 +344,7 @@ Aşağıdaki tabloda, dönüş değeri için birleştirilebilecek bit maskesi de
 
 Bu dönüş değeri hakkında daha fazla bilgi için Windows SDK ODBC API işlevine bakın `SQLGetInfo` . Yer işaretleri hakkında daha fazla bilgi için bkz. [kayıt kümesi: yer işaretleri ve mutlak konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md).
 
-## <a name="cdatabasegetconnect"></a><a name="getconnect"></a>CDatabase:: GetConnect
+## <a name="cdatabasegetconnect"></a><a name="getconnect"></a> CDatabase:: GetConnect
 
 ' A yapılan çağrı sırasında kullanılan bağlantı dizesini `OpenEx` veya `Open` bir veri kaynağına bağlı olan bağlantı dizesini almak için bu üye işlevini çağırın `CDatabase` .
 
@@ -353,13 +354,13 @@ const CString GetConnect() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`const`** [CString](../../atl-mfc-shared/reference/cstringt-class.md) Veya çağrılırsa bağlantı dizesini içeren bir CString `OpenEx` `Open` ; Aksi takdirde boş bir dize.
+**`const`** [](../../atl-mfc-shared/reference/cstringt-class.md) Veya çağrılırsa bağlantı dizesini içeren bir CString `OpenEx` `Open` ; Aksi takdirde boş bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bağlantı dizesinin nasıl oluşturulduğuna ilişkin bir açıklama için bkz. [CDatabase:: Open](#open) .
 
-## <a name="cdatabasegetcursorcommitbehavior"></a><a name="getcursorcommitbehavior"></a>CDatabase:: GetCursorCommitBehavior
+## <a name="cdatabasegetcursorcommitbehavior"></a><a name="getcursorcommitbehavior"></a> CDatabase:: GetCursorCommitBehavior
 
 Bir [CommitTrans](#committrans) işleminin açık kayıt kümesi nesnelerinde imleçleri nasıl etkilediğini öğrenmek için bu üye işlevi çağırın.
 
@@ -383,7 +384,7 @@ Aşağıdaki tabloda, için olası dönüş değerleri `GetCursorCommitBehavior`
 
 Bu dönüş değeri hakkında daha fazla bilgi için Windows SDK ODBC API işlevine bakın `SQLGetInfo` . İşlemler hakkında daha fazla bilgi için bkz. Makale [işleme (ODBC)](../../data/odbc/transaction-odbc.md).
 
-## <a name="cdatabasegetcursorrollbackbehavior"></a><a name="getcursorrollbackbehavior"></a>CDatabase:: GetCursorRollbackBehavior
+## <a name="cdatabasegetcursorrollbackbehavior"></a><a name="getcursorrollbackbehavior"></a> CDatabase:: GetCursorRollbackBehavior
 
 Bir [geri alma](#rollback) işleminin açık kayıt kümesi nesnelerinde imleçleri nasıl etkilediğini öğrenmek için bu üye işlevi çağırın.
 
@@ -407,7 +408,7 @@ Aşağıdaki tabloda, için olası dönüş değerleri `GetCursorRollbackBehavio
 
 Bu dönüş değeri hakkında daha fazla bilgi için Windows SDK ODBC API işlevine bakın `SQLGetInfo` . İşlemler hakkında daha fazla bilgi için bkz. Makale [işleme (ODBC)](../../data/odbc/transaction-odbc.md).
 
-## <a name="cdatabasegetdatabasename"></a><a name="getdatabasename"></a>CDatabase:: GetDatabaseName
+## <a name="cdatabasegetdatabasename"></a><a name="getdatabasename"></a> CDatabase:: GetDatabaseName
 
 Şu anda bağlı olan veritabanının adını almak için bu üye işlevi çağırın (veri kaynağı "veritabanı" adlı adlandırılmış bir nesneyi tanımladığından).
 
@@ -425,7 +426,7 @@ Bu, veya çağrısında belirtilen veri kaynağı adı (DSN) ile aynı değildir
 
 Örneğin, bu adı bir başlıkta göstermek isteyebilirsiniz. ODBC 'den adı alırken bir hata oluşursa `GetDatabaseName` boş bir değer döndürür `CString` .
 
-## <a name="cdatabaseisopen"></a><a name="isopen"></a>CDatabase:: IsOpen
+## <a name="cdatabaseisopen"></a><a name="isopen"></a> CDatabase:: IsOpen
 
 `CDatabase`Nesnenin şu anda bir veri kaynağına bağlı olup olmadığını anlamak için bu üye işlevi çağırın.
 
@@ -437,7 +438,7 @@ BOOL IsOpen() const;
 
 `CDatabase`Nesne şu anda bağlı ise sıfır dışı; Aksi takdirde 0.
 
-## <a name="cdatabasem_hdbc"></a><a name="m_hdbc"></a>CDatabase:: m_hdbc
+## <a name="cdatabasem_hdbc"></a><a name="m_hdbc"></a> CDatabase:: m_hdbc
 
 Bir ODBC veri kaynağı bağlantısına ("bağlantı tanıtıcısı") genel bir tanıtıcı içerir.
 
@@ -451,7 +452,7 @@ Ancak bazı durumlarda tanıtıcıyı doğrudan kullanmanız gerekebilir. Örne�
 
 [!code-cpp[NVC_MFCDatabase#15](../../mfc/codesnippet/cpp/cdatabase-class_5.cpp)]
 
-## <a name="cdatabaseonsetoptions"></a><a name="onsetoptions"></a>CDatabase:: OnSetOptions
+## <a name="cdatabaseonsetoptions"></a><a name="onsetoptions"></a> CDatabase:: OnSetOptions
 
 Çerçeve, üye işlevi ile bir SQL ifadesini doğrudan yürütürken bu üye işlevini çağırır `ExecuteSQL` .
 
@@ -466,9 +467,9 @@ Hangi seçeneklerin ayarlandığı ODBC bildiri tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CRecordset::OnSetOptions`Ayrıca, bu üye işlevini çağırır.
+`CRecordset::OnSetOptions` Ayrıca, bu üye işlevini çağırır.
 
-`OnSetOptions`oturum açma zaman aşımı değerini ayarlar. `SetQueryTimeout`Ve üye işlevine önceki çağrılar varsa, `OnSetOptions` geçerli değerleri yansıtır; Aksi takdirde, varsayılan değerleri ayarlar.
+`OnSetOptions` oturum açma zaman aşımı değerini ayarlar. `SetQueryTimeout`Ve üye işlevine önceki çağrılar varsa, `OnSetOptions` geçerli değerleri yansıtır; Aksi takdirde, varsayılan değerleri ayarlar.
 
 > [!NOTE]
 > MFC 4,2 ' den önce, `OnSetOptions` işlem modunu hiç zaman uyumlu veya zaman uyumsuz olarak ayarlayın. MFC 4,2 ' den başlayarak tüm işlemler zaman uyumludur. Zaman uyumsuz bir işlem gerçekleştirmek için ODBC API işlevine doğrudan çağrı yapmanız gerekir `SQLSetPos` .
@@ -477,7 +478,7 @@ Hangi seçeneklerin ayarlandığı ODBC bildiri tanıtıcısı.
 
 `OnSetOptions`Ek seçenekleri ayarlamak istiyorsanız geçersiz kılın. Geçersiz kılma işlemi, `OnSetOptions` ODBC API işlevini çağırmadan önce veya sonra temel sınıfı çağırmalıdır `SQLSetStmtOption` . Çerçevesinin varsayılan uygulamasında gösterilen yöntemi izleyin `OnSetOptions` .
 
-## <a name="cdatabaseopen"></a><a name="open"></a>CDatabase:: Open
+## <a name="cdatabaseopen"></a><a name="open"></a> CDatabase:: Open
 
 Yeni oluşturulan bir nesneyi başlatmak için bu üye işlevini çağırın `CDatabase` .
 
@@ -493,7 +494,7 @@ virtual BOOL Open(
 ### <a name="parameters"></a>Parametreler
 
 *lpszDSN*<br/>
-ODBC yönetici programı aracılığıyla ODBC ile kaydedilen bir ad olan bir veri kaynağı adı belirtir. *LpszConnect* IÇINDE bir DSN değeri belirtilmişse ("DSN = \<data-source> " biçiminde), *lpszDSN*içinde yeniden belirtilmemelidir. Bu durumda, *LPSZDSN* null olmalıdır. Aksi takdirde, kullanıcının bir veri kaynağı seçmesini sağlayan bir veri kaynağı iletişim kutusuyla sunmak istiyorsanız NULL değerini geçirebilirsiniz. Daha fazla bilgi için bkz. açıklamalar.
+ODBC yönetici programı aracılığıyla ODBC ile kaydedilen bir ad olan bir veri kaynağı adı belirtir. *LpszConnect* IÇINDE bir DSN değeri belirtilmişse ("DSN = \<data-source> " biçiminde), *lpszDSN* içinde yeniden belirtilmemelidir. Bu durumda, *LPSZDSN* null olmalıdır. Aksi takdirde, kullanıcının bir veri kaynağı seçmesini sağlayan bir veri kaynağı iletişim kutusuyla sunmak istiyorsanız NULL değerini geçirebilirsiniz. Daha fazla bilgi için bkz. açıklamalar.
 
 *bExclusive*<br/>
 Sınıf kitaplığının bu sürümünde desteklenmiyor. Şu anda, bu parametre TRUE olduğunda bir onaylama başarısız olur. Veri kaynağı her zaman paylaşılan (özel değil) olarak açılır.
@@ -530,7 +531,7 @@ Bağlantı dizesini, birden fazla oturum açma yetkilendirmesi (her biri farklı
 
 [!code-cpp[NVC_MFCDatabase#14](../../mfc/codesnippet/cpp/cdatabase-class_6.cpp)]
 
-## <a name="cdatabaseopenex"></a><a name="openex"></a>CDatabase:: OpenEx
+## <a name="cdatabaseopenex"></a><a name="openex"></a> CDatabase:: OpenEx
 
 Yeni oluşturulan bir nesneyi başlatmak için bu üye işlevini çağırın `CDatabase` .
 
@@ -543,20 +544,20 @@ virtual BOOL OpenEx(
 ### <a name="parameters"></a>Parametreler
 
 *lpszConnectString*<br/>
-Bir ODBC bağlantı dizesi belirtir. Bu, veri kaynağı adının yanı sıra Kullanıcı KIMLIĞI ve parola gibi diğer isteğe bağlı bilgileri de içerir. Örneğin, "DSN = SQLServer_Source; UID = SA; PWD = abc123 "olası bir bağlantı dizesidir. *LpszConnectString*için null geçirirseniz, bir veri kaynağı iletişim kutusu kullanıcıdan bir veri kaynağı seçmesini ister.
+Bir ODBC bağlantı dizesi belirtir. Bu, veri kaynağı adının yanı sıra Kullanıcı KIMLIĞI ve parola gibi diğer isteğe bağlı bilgileri de içerir. Örneğin, "DSN = SQLServer_Source; UID = SA; PWD = abc123 "olası bir bağlantı dizesidir. *LpszConnectString* için null geçirirseniz, bir veri kaynağı iletişim kutusu kullanıcıdan bir veri kaynağı seçmesini ister.
 
 *dwOptions*<br/>
 Aşağıdaki değerlerin birleşimini belirten bir bit maskesi. Varsayılan değer 0 ' dır, yani veritabanının yazma erişimiyle paylaşılan olarak açılabileceği anlamına gelir, ODBC Imleç kitaplığı DLL 'SI yüklenmez ve ODBC bağlantısı iletişim kutusu yalnızca bağlantıyı kurmak için yeterli bilgi yoksa görüntülenir.
 
-- `CDatabase::openExclusive`Sınıf kitaplığının bu sürümünde desteklenmiyor. Bir veri kaynağı her zaman paylaşılan (özel değil) olarak açılır. Şu anda, bu seçeneği belirtirseniz bir onaylama başarısız olur.
+- `CDatabase::openExclusive` Sınıf kitaplığının bu sürümünde desteklenmiyor. Bir veri kaynağı her zaman paylaşılan (özel değil) olarak açılır. Şu anda, bu seçeneği belirtirseniz bir onaylama başarısız olur.
 
-- `CDatabase::openReadOnly`Veri kaynağını salt okuma olarak açın.
+- `CDatabase::openReadOnly` Veri kaynağını salt okuma olarak açın.
 
-- `CDatabase::useCursorLib`ODBC Imleç kitaplığı DLL 'ini yükleyin. İmleç kitaplığı, temel alınan ODBC sürücüsünün bazı işlevlerini maskeler ve dinamik kümeler kullanımını etkili bir şekilde önler (sürücü destekliyorsa). İmleç kitaplığı yüklendiğinde desteklenen imleçler yalnızca statik anlık görüntüler ve salt ileri imleçler olur. İçinden türetmeden doğrudan bir kayıt kümesi nesnesi oluşturmayı planlıyorsanız `CRecordset` , imleç kitaplığı 'nı yüklenmemelisiniz.
+- `CDatabase::useCursorLib` ODBC Imleç kitaplığı DLL 'ini yükleyin. İmleç kitaplığı, temel alınan ODBC sürücüsünün bazı işlevlerini maskeler ve dinamik kümeler kullanımını etkili bir şekilde önler (sürücü destekliyorsa). İmleç kitaplığı yüklendiğinde desteklenen imleçler yalnızca statik anlık görüntüler ve salt ileri imleçler olur. İçinden türetmeden doğrudan bir kayıt kümesi nesnesi oluşturmayı planlıyorsanız `CRecordset` , imleç kitaplığı 'nı yüklenmemelisiniz.
 
-- `CDatabase::noOdbcDialog`Yeterli bağlantı bilgilerinin sağlanmadığına bakılmaksızın ODBC bağlantısı iletişim kutusunu görüntülememe.
+- `CDatabase::noOdbcDialog` Yeterli bağlantı bilgilerinin sağlanmadığına bakılmaksızın ODBC bağlantısı iletişim kutusunu görüntülememe.
 
-- `CDatabase::forceOdbcDialog`Her zaman ODBC bağlantısı iletişim kutusunu görüntüleyin.
+- `CDatabase::forceOdbcDialog` Her zaman ODBC bağlantısı iletişim kutusunu görüntüleyin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -578,7 +579,7 @@ Bağlantı dizesini, birden fazla oturum açma yetkilendirmesi (her biri farklı
 
 [!code-cpp[NVC_MFCDatabase#11](../../mfc/codesnippet/cpp/cdatabase-class_7.cpp)]
 
-## <a name="cdatabaserollback"></a><a name="rollback"></a>CDatabase:: Rollback
+## <a name="cdatabaserollback"></a><a name="rollback"></a> CDatabase:: Rollback
 
 İşlem sırasında yapılan değişiklikleri tersine çevirmek için bu üye işlevini çağırın.
 
@@ -602,7 +603,7 @@ Geri alma işleminden sonra, geri alma işleminden önce geçerli olan kayıt ge
 
   İşlem [: kayıt kümesinde Işlem gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)makalesine bakın.
 
-## <a name="cdatabasesetlogintimeout"></a><a name="setlogintimeout"></a>CDatabase:: SetLoginTimeout
+## <a name="cdatabasesetlogintimeout"></a><a name="setlogintimeout"></a> CDatabase:: SetLoginTimeout
 
 `OpenEx` `Open` Denenen bir veri kaynağı bağlantısı zaman aşımına uğramadan önce izin verilen varsayılan saniye sayısını geçersiz kılmak için, veya ' i çağırmadan önce Bu üye işlevini çağırın.
 
@@ -621,7 +622,7 @@ Bağlantı girişimi zaman aşımına uğramadan önce izin verilen saniye sayı
 
 Oturum açma zaman aşımları için varsayılan değer 15 saniyedir. Tüm veri kaynakları, bir oturum açma zaman aşımı değeri belirtme yeteneğini desteklemez. Veri kaynağı zaman aşımını desteklemiyorsa, izleme çıkışı alırsınız ancak özel durum oluşturmaz. 0 değeri "sonsuz" anlamına gelir.
 
-## <a name="cdatabasesetquerytimeout"></a><a name="setquerytimeout"></a>CDatabase:: SetQueryTimeout
+## <a name="cdatabasesetquerytimeout"></a><a name="setquerytimeout"></a> CDatabase:: SetQueryTimeout
 
 Bağlı veri kaynağındaki sonraki işlemlerin zaman aşımına geçmeden önce izin verilecek varsayılan saniye sayısını geçersiz kılmak için bu üye işlevi çağırın.
 
