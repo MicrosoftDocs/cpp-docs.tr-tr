@@ -1,21 +1,22 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: olağanüstü ve olağanüstü olmayan kod arasında arabirim'
 title: 'Nasıl yapılır: olağanüstü ve olağanüstü olmayan kod arasında arabirim'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-ms.openlocfilehash: 88dacda9b20f351eb67dde24a8335bdcbba27dd3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 34a0966d496e5e22099de051a74f3458d1cc05d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187705"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114032"
 ---
 # <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>Nasıl yapılır: olağanüstü ve olağanüstü olmayan kod arasında arabirim
 
 Bu makalede, bir C++ modülünde tutarlı özel durum işlemenin nasıl uygulanacağı ve ayrıca özel durum sınırlarındaki hata kodlarından ve bu özel durumların nasıl çevrilebileceğiniz açıklanır.
 
-Bazen bir C++ modülünün özel durumlar kullanmayan kodla arabirimi olması (olağanüstü olmayan kod). Bu tür bir arabirim, *özel durum sınırı*olarak bilinir. Örneğin, C++ programınızda Win32 işlevini çağırmak isteyebilirsiniz `CreateFile` . `CreateFile`özel durumlar oluşturmaz; Bunun yerine, işlevi tarafından alınabilecek hata kodlarını ayarlar `GetLastError` . C++ programınız önemsiz değilse, büyük olasılıkla tutarlı bir özel durum tabanlı hata işleme ilkesine sahip olmayı tercih edersiniz. Büyük olasılıkla, özel durum olmayan kod ile arabirim oluşturmanız ve bu nedenle, C++ modülünüzün özel durum tabanlı ve özel durum tabanlı hata ilkelerini karıştırmak istemezsiniz.
+Bazen bir C++ modülünün özel durumlar kullanmayan kodla arabirimi olması (olağanüstü olmayan kod). Bu tür bir arabirim, *özel durum sınırı* olarak bilinir. Örneğin, C++ programınızda Win32 işlevini çağırmak isteyebilirsiniz `CreateFile` . `CreateFile` özel durumlar oluşturmaz; Bunun yerine, işlevi tarafından alınabilecek hata kodlarını ayarlar `GetLastError` . C++ programınız önemsiz değilse, büyük olasılıkla tutarlı bir özel durum tabanlı hata işleme ilkesine sahip olmayı tercih edersiniz. Büyük olasılıkla, özel durum olmayan kod ile arabirim oluşturmanız ve bu nedenle, C++ modülünüzün özel durum tabanlı ve özel durum tabanlı hata ilkelerini karıştırmak istemezsiniz.
 
 ## <a name="calling-non-exceptional-functions-from-c"></a>C++ ' dan olağanüstü olmayan işlevler çağırma
 

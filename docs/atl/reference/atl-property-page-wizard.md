@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL Özellik sayfası Sihirbazı'
 title: ATL Özellik Sayfası Sihirbazı
 ms.date: 05/09/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - ATL projects, adding property pages
 - ATL Property Page Wizard
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
-ms.openlocfilehash: 85de65dc1b18ee5c2e62388e57b0199ed64cee3f
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 4ee266f66eddd85425982a1a4dbbb11613b74ad7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165270"
 ---
 # <a name="atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı
 
@@ -35,7 +36,7 @@ Visual Studio 2008 ile başlayarak, bu sihirbaz tarafından oluşturulan kayıt 
 Projenize eklenecek nesne, arabirim ve sınıfların adlarını belirtin. **Kısa ad** dışında, diğer tüm kutular bağımsız olarak düzenlenebilir. **Kısa ad** için metni değiştirirseniz, değişiklik bu sayfadaki diğer tüm kutuların adlarına yansıtılır. COM bölümünde **coclass** adını değiştirirseniz, değişiklik **Type** ve **ProgID** kutularına yansıtılır. Bu adlandırma davranışı, özellik sayfanızı geliştirirken tüm adların sizin için kolayca tanımlanabilir olmasını sağlayacak şekilde tasarlanmıştır.
 
 > [!NOTE]
-> **Coclass** yalnızca öznitelik atanmış olmayan projelerde düzenlenebilir. Projeniz öznitelik içeriyorsa, **coclass** 'ı düzenleyemezsiniz.
+> **Coclass** yalnızca öznitelik atanmış olmayan projelerde düzenlenebilir. Projeniz öznitelik içeriyorsa, **coclass**'ı düzenleyemezsiniz.
 
 ### <a name="c"></a>C++
 
@@ -43,10 +44,10 @@ Nesnesini uygulamak için oluşturulan C++ sınıfı için bilgiler sağlar.
 
 |Süre|Tanım|
 |-|-|
-|**Kısa ad**|Nesne için kısaltılmış adı ayarlar. Sağladığınız ad, bu alanları ayrı ayrı değiştirmediğiniz müddetçe sınıf ve **coclass** adlarını, dosyayı ( **. cpp** ve **. h** ) adlarını, **tür** adını ve **ProgID** 'yi belirler.|
-|**. h dosyası**|Yeni nesnenin sınıfının başlık dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad** 'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini tıklatın. Var olan bir dosyayı seçerseniz, sihirbazda **son** ' a tıklaana kadar sihirbaz onu seçilen konuma kaydetmez.<br /><br /> Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son** ' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.|
+|**Kısa ad**|Nesne için kısaltılmış adı ayarlar. Sağladığınız ad, bu alanları ayrı ayrı değiştirmediğiniz müddetçe sınıf ve **coclass** adlarını, dosyayı (**. cpp** ve **. h**) adlarını, **tür** adını ve **ProgID**'yi belirler.|
+|**. h dosyası**|Yeni nesnenin sınıfının başlık dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad**'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini tıklatın. Var olan bir dosyayı seçerseniz, sihirbazda **son** ' a tıklaana kadar sihirbaz onu seçilen konuma kaydetmez.<br /><br /> Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.|
 |**Sınıf**|Nesneyi uygulayan sınıfın adını ayarlar. Bu ad, ' C ' öncesinde, bir sınıf adı için tipik ön ek olan **kısa ad** içinde sağladığınız adı temel alır.|
-|**. cpp dosyası**|Yeni nesnenin sınıfının uygulama dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad** 'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek için üç nokta düğmesine tıklayın. Bu dosya, sihirbazda **son** ' a tıklaana kadar seçili konuma kaydedilmez.<br /><br /> Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son** ' a tıkladığınızda sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.|
+|**. cpp dosyası**|Yeni nesnenin sınıfının uygulama dosyasının adını ayarlar. Bu ad, varsayılan olarak, **kısa ad**'de sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek için üç nokta düğmesine tıklayın. Bu dosya, sihirbazda **son** ' a tıklaana kadar seçili konuma kaydedilmez.<br /><br /> Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda sihirbaz, sınıf uygulamasının dosyanın içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.|
 |**İlişkilendirilmesi**|Nesnenin öznitelikleri kullanıp kullanmadığını belirtir. Öznitelikli ATL projesine bir nesne ekliyorsanız, bu seçenek seçilir ve değiştirilemez, diğer bir deyişle, öznitelik desteğiyle oluşturulan bir projeye yalnızca öznitelikli nesneler ekleyebilirsiniz.<br /><br /> Öznitelik kullanan bir ATL projesine öznitelikli bir nesne ekleyebilirsiniz. Öznitelik desteği olmayan bir ATL projesi için bu seçeneği belirlerseniz, sihirbaz projeye öznitelik desteği eklemek isteyip istemediğinizi belirtmenizi ister.<br /><br /> Varsayılan olarak, bu seçeneği ayarladıktan sonra eklediğiniz tüm nesneler, öznitelikli olarak atanır (onay kutusu seçilidir). Öznitelikleri kullanmayan bir nesne eklemek için bu kutuyu temizleyebilirsiniz.<br /><br /> Daha fazla bilgi için bkz. [uygulama ayarları, ATL Proje Sihirbazı](../../atl/reference/application-settings-atl-project-wizard.md) ve [özniteliklerin temel mekanizması](../../windows/attributes/cpp-attributes-com-net.md#basic-mechanics-of-attributes) .|
 
 ### <a name="com"></a>COM

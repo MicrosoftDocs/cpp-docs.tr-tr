@@ -1,5 +1,6 @@
 ---
-title: CAtlAutoThreadModule Sınıfı
+description: 'Daha fazla bilgi edinin: CAtlAutoThreadModule sınıfı'
+title: CAtlAutoThreadModule sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlAutoThreadModule
@@ -7,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlAutoThreadModule class
 ms.assetid: 3be834aa-55ef-403e-94ae-41979691b15f
-ms.openlocfilehash: f4bd1071380bf3e31c69c593c5db81112fdf21de
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: d1742488cca84dccfa53753bec40f9081d77f67d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168312"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165062"
 ---
-# <a name="catlautothreadmodule-class"></a>CAtlAutoThreadModule Sınıfı
+# <a name="catlautothreadmodule-class"></a>CAtlAutoThreadModule sınıfı
 
 Bu sınıf, bir iş parçacığı havuza alınmış, Apartman modeli COM sunucusu uygular.
 
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
@@ -29,9 +30,9 @@ class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlAutoThreadModule`[Catlautothreadmodület](../../atl/reference/catlautothreadmodulet-class.md) öğesinden türetilir ve iş parçacığı havuza alınmış, Apartman modeli com sunucusu uygular. `CAtlAutoThreadModule`modüldeki her iş parçacığı için bir grubu yönetmek üzere [CComApartment](../../atl/reference/ccomapartment-class.md) kullanır.
+`CAtlAutoThreadModule`[Catlautothreadmodület](../../atl/reference/catlautothreadmodulet-class.md) öğesinden türetilir ve iş parçacığı havuza alınmış, Apartman modeli com sunucusu uygular. `CAtlAutoThreadModule` modüldeki her iş parçacığı için bir grubu yönetmek üzere [CComApartment](../../atl/reference/ccomapartment-class.md) kullanır.
 
-Sınıf fabrikası olarak [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) belirtmek için, nesnenizin sınıf tanımındaki [declare_classfactory_auto_thread](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makrosunu kullanmanız gerekir. Daha sonra, gibi türetilmiş `CAtlAutoThreadModuleT` bir sınıfın tek bir örneğini eklemeniz gerekir. `CAtlAutoThreadModule` Örneğin:
+Sınıf fabrikası olarak [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) belirtmek için, nesnenizin sınıf tanımındaki [declare_classfactory_auto_thread](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makrosunu kullanmanız gerekir. Daha sonra, gibi türetilmiş bir sınıfın tek bir örneğini eklemeniz gerekir `CAtlAutoThreadModuleT` `CAtlAutoThreadModule` . Örneğin:
 
 `CAtlAutoThreadModule _AtlAutoModule; // name is immaterial.`
 
@@ -52,7 +53,7 @@ Sınıf fabrikası olarak [CComClassFactoryAutoThread](../../atl/reference/ccomc
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CAtlAutoThreadModuleT Sınıfı](../../atl/reference/catlautothreadmodulet-class.md)<br/>
-[IAtlAutoThreadModule Sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
+[Catlautothreadmodület sınıfı](../../atl/reference/catlautothreadmodulet-class.md)<br/>
+[IAtlAutoThreadModule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

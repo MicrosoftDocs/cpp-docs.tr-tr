@@ -1,67 +1,68 @@
 ---
-title: ATL işlevleri
+description: 'Daha fazla bilgi edinin: ATL Işlevleri'
+title: ATL Işlevleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - functions [ATL]
 - ATL, global functions
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
-ms.openlocfilehash: 9f0c6ccaa049290d3e183ae682c19ab7e497c2b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29c29d2b70a3c0dea266b937a20cdf6b2d831473
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165387"
 ---
-# <a name="atl-functions"></a>ATL işlevleri
+# <a name="atl-functions"></a>ATL Işlevleri
 
-Bir ATL işlevi kategoriye göre bulmak için aşağıdaki konulara bakın.
+Kategoriye göre ATL işlevi bulmak için aşağıdaki konulara bakın.
 
-[ATL Yol İşlevleri](../../atl/reference/com-map-global-functions.md)<br/>
-Dosya yolları işlemek için destek sağlar.
+[ATL yol Işlevleri](../../atl/reference/com-map-global-functions.md)<br/>
+Dosya yollarını işlemek için destek sağlayın.
 
-[COM Eşlemesi Genel İşlevleri](../../atl/reference/com-map-global-functions.md)<br/>
-COM eşlemesi için destek sağlamak `IUnknown` uygulamaları.
+[COM eşlemesi genel Işlevleri](../../atl/reference/com-map-global-functions.md)<br/>
+COM harita uygulamaları için destek sağlayın `IUnknown` .
 
-[Bileşik Denetim Genel İşlevleri](../../atl/reference/composite-control-global-functions.md)<br/>
-İletişim kutuları oluşturma ve oluşturma, barındırma ve ActiveX denetimlerini lisanslama için destek sağlar.
+[Bileşik denetim genel Işlevleri](../../atl/reference/composite-control-global-functions.md)<br/>
+İletişim kutuları oluşturma ve ActiveX denetimleri oluşturma, barındırma ve lisanslama için destek sağlar.
 
-[Bağlantı Noktası Genel İşlevleri](../../atl/reference/connection-point-global-functions.md)<br/>
-Bağlantı noktaları için destek sağlar ve iç havuz eşlemeleri.
+[Bağlantı noktası genel Işlevleri](../../atl/reference/connection-point-global-functions.md)<br/>
+Bağlantı noktaları ve havuz haritaları için destek sağlayın.
 
-[Hata Ayıklama ve Hata Raporlama Genel İşlevleri](../../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
-Yararlı hata ayıklama ve izleme olanakları sağlayın.
+[Hata ayıklama ve hata raporlama genel Işlevleri](../../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
+Yararlı hata ayıklama ve izleme olanakları sağlar.
 
-[Cihaz Bağlamı Genel İşlevleri](../../atl/reference/device-context-global-functions.md)<br/>
+[Cihaz bağlamı genel Işlevleri](../../atl/reference/device-context-global-functions.md)<br/>
 Belirli bir cihaz için bir cihaz bağlamı oluşturur.
 
-[Olay İşleme Genel İşlevleri](../../atl/reference/event-handling-global-functions.md)<br/>
+[Olay Işleme genel Işlevler](../../atl/reference/event-handling-global-functions.md)<br/>
 Bir olay işleyicisi sağlar.
 
-[Hazırlama Genel İşlevleri](../../atl/reference/marshaling-global-functions.md)<br/>
-Hazırlama ve arabirim işaretçilerini veri hazırlama dönüştürme için destek sağlar.
+[Genel Işlevleri sıralama](../../atl/reference/marshaling-global-functions.md)<br/>
+Sıralama verilerini arabirim işaretçilerine hazırlama ve dönüştürme desteği sağlar.
 
-[Piksel/HIMETRIC dönüştürme genel işlevleri](../../atl/reference/pixel-himetric-conversion-global-functions.md)<br/>
-Gelen ve piksel hımetrıc dönüştürme için destek sağlar.
+[Pixel/HIMETRIK dönüştürme genel Işlevleri](../../atl/reference/pixel-himetric-conversion-global-functions.md)<br/>
+Pixel ve HIMETRIK birimlere dönüştürme desteği sağlar.
 
-[Kayıt Defteri ve TypeLib Genel İşlevleri](../../atl/reference/registry-and-typelib-global-functions.md)<br/>
-Yükleme ve bir tür kitaplığı kaydı için destek sağlıyor.
+[Kayıt defteri ve TypeLib genel Işlevleri](../../atl/reference/registry-and-typelib-global-functions.md)<br/>
+Bir tür kitaplığını yükleme ve kaydetme desteği sağlar.
 
-[Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)<br/>
-SID ve ACL nesneleri değiştirmek için destek sağlar.
+[Güvenlik Genel Işlevleri](../../atl/reference/security-global-functions.md)<br/>
+SID ve ACL nesnelerini değiştirme desteği sağlar.
 
-[Güvenlik Tanımlayıcısı Genel İşlevleri](../../atl/reference/security-identifier-global-functions.md)<br/>
-Nesneleri ortak iyi bilinen SID döndürür.
+[Güvenlik tanımlayıcısı genel Işlevleri](../../atl/reference/security-identifier-global-functions.md)<br/>
+Ortak iyi bilinen SID nesnelerini döndürür.
 
-[Sunucu Kaydı Genel İşlevleri](../../atl/reference/server-registration-global-functions.md)<br/>
-Kaydetme ve sunucu nesneleri nesne eşlemesindeki kaydını kaldırmak için destek sağlar.
+[Sunucu kaydı genel Işlevleri](../../atl/reference/server-registration-global-functions.md)<br/>
+Nesne haritasında sunucu nesnelerinin kaydı ve kaydını silme desteği sağlar.
 
-[WinModule Genel İşlevleri](../../atl/reference/winmodule-global-functions.md)<br/>
-İçin destek sağlayan `_AtlCreateWndData` yapı işlemleri.
+[WinModule genel Işlevleri](../../atl/reference/winmodule-global-functions.md)<br/>
+Yapı işlemleri için destek sağlayın `_AtlCreateWndData` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
-[Makroları](../../atl/reference/atl-macros.md)<br/>
-[Global Değişkenler](../../atl/reference/atl-global-variables.md)<br/>
+[Makrolar](../../atl/reference/atl-macros.md)<br/>
+[Genel değişkenler](../../atl/reference/atl-global-variables.md)<br/>
 [Tür tanımları](../../atl/reference/atl-typedefs.md)<br/>
 [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)

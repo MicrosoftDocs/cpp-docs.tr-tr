@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL metin kodlama Işlevleri'
 title: ATL metin kodlama Işlevleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ f1_keywords:
 - atlenc/ATL::UUEncode
 - atlenc/ATL::UUEncodeGetRequiredLength
 ms.assetid: 2ae1648b-2b87-4112-92aa-0069fcfd23da
-ms.openlocfilehash: 330a73e0d41bf384a799635d5f2e6f09f7e3dd03
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1cc0848fed5832d0d91752c4c52d1e7310df0932
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833861"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165257"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama Işlevleri
 
@@ -128,13 +129,13 @@ inline BOOL AtlHexDecode(
 Kodu çözülecek verileri içeren dize.
 
 *nSrcLen*<br/>
-*PSrcData*karakter uzunluğu.
+*PSrcData* karakter uzunluğu.
 
 *pbDest*<br/>
 Kodu çözülen verileri almak için arayana ayrılan arabellek.
 
 *pnDestLen*<br/>
-*PbDest*bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
+*PbDest* bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -257,7 +258,7 @@ Dönüştürülen dize için karakter sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dönüştürülen dize için gereken arabelleğin boyutunu öğrenmek için, *szDest* ve *nDest*için 0 geçirerek bu işlevi çağırın.
+Dönüştürülen dize için gereken arabelleğin boyutunu öğrenmek için, *szDest* ve *nDest* için 0 geçirerek bu işlevi çağırın.
 
 ## <a name="bencode"></a><a name="bencode"></a> BEncode
 
@@ -492,13 +493,13 @@ inline BOOL QPDecode(
 'ndaki Kodu çözülecek verileri içeren arabellek.
 
 *nSrcLen*<br/>
-'ndaki *PbSrcData*bayt cinsinden uzunluğu.
+'ndaki *PbSrcData* bayt cinsinden uzunluğu.
 
 *szDest*<br/>
 dışı Kodu çözülen verileri almak için arayana ayrılan arabellek.
 
 *pnDestLen*<br/>
-dışı *SzDest*bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
+dışı *SzDest* bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
 
 *dwFlags*<br/>
 'ndaki Dönüştürmenin nasıl gerçekleştirileceğini açıklayan ATLSMTP_QPENCODE bayrakları.
@@ -615,13 +616,13 @@ inline BOOL UUDecode(
 Kodu çözülecek verileri içeren dize.
 
 *nSrcLen*<br/>
-*PbSrcData*bayt cinsinden uzunluğu.
+*PbSrcData* bayt cinsinden uzunluğu.
 
 *pbDest*<br/>
 Kodu çözülen verileri almak için arayana ayrılan arabellek.
 
 *pnDestLen*<br/>
-*PbDest*bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
+*PbDest* bayt cinsinden uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gereken uzunluğu alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -681,7 +682,7 @@ Kodlanmış verileri almak için arayan tarafından ayrılmış arabellek.
 *SzDest*'ın karakter uzunluğunu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken arabelleğin karakter cinsinden gereken uzunluğu alır.
 
 *lpszFile*<br/>
-ATLSMTP_UUENCODE_HEADER *dwFlags*içinde belirtildiğinde üstbilgiye eklenecek dosya.
+ATLSMTP_UUENCODE_HEADER *dwFlags* içinde belirtildiğinde üstbilgiye eklenecek dosya.
 
 *dwFlags*<br/>
 Bu işlevin davranışını denetleyen bayraklar.

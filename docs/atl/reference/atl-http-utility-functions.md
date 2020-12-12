@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL HTTP Utility Işlevleri'
 title: ATL HTTP yardımcı program Işlevleri
 ms.date: 11/04/2016
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-ms.openlocfilehash: d2e30f940ded0bf355000cd42ff46a67662b54f5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fb8cc8789db45095f969dd9513dcf70a9bd0d05c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833991"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165374"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı program Işlevleri
 
@@ -49,7 +50,7 @@ Kurallı olacak URL.
 Kurallı URL 'sini almak için arayan tarafından ayrılmış arabellek.
 
 *pdwMaxLength*<br/>
-*SzCanonicalized*karakter cinsinden uzunluğu içeren bir değişken işaretçisi. İşlev başarılı olursa, değişken, Sonlandırıcı null karakteri dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken, Sonlandırıcı null karakteri için boşluk dahil olmak üzere arabelleğin bayt cinsinden gereken uzunluğunu alır.
+*SzCanonicalized* karakter cinsinden uzunluğu içeren bir değişken işaretçisi. İşlev başarılı olursa, değişken, Sonlandırıcı null karakteri dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken, Sonlandırıcı null karakteri için boşluk dahil olmak üzere arabelleğin bayt cinsinden gereken uzunluğunu alır.
 
 *dwFlags*<br/>
 Bu işlevin davranışını denetleyen bayraklar ATL_URL.
@@ -101,7 +102,7 @@ Temel URL 'ye göre URL.
 Kurallı URL 'sini almak için arayan tarafından ayrılmış arabellek.
 
 *pdwMaxLength*<br/>
-*SzBuffer*karakterleri içindeki uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken, Sonlandırıcı null karakteri dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken, Sonlandırıcı null karakteri için boşluk dahil olmak üzere arabelleğin bayt cinsinden gereken uzunluğunu alır.
+*SzBuffer* karakterleri içindeki uzunluğu içeren bir değişkene yönelik işaretçi. İşlev başarılı olursa, değişken, Sonlandırıcı null karakteri dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken, Sonlandırıcı null karakteri için boşluk dahil olmak üzere arabelleğin bayt cinsinden gereken uzunluğunu alır.
 
 *dwFlags*<br/>
 Bu işlevin davranışını denetleyen bayraklar. Bkz. [AtlCanonicalizeUrl](#atlcanonicalizeurl).
@@ -146,7 +147,7 @@ Dönüştürülen URL 'nin yazılacağı, arayana ayrılan arabellek.
 DWORD değişkenine yönelik işaretçi. İşlev başarılı olursa, *pdwStrLen* , Sonlandırıcı null karakteri dahil olmak üzere, arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken, Sonlandırıcı null karakteri için boşluk dahil olmak üzere arabelleğin bayt cinsinden gereken uzunluğunu alır. Bu yöntemin geniş karakter sürümünü kullanırken, *pdwStrLen* bayt sayısını değil, gereken karakter sayısını alır.
 
 *dwMaxLength*<br/>
-Buffer *lpszStringOut*boyutu.
+Buffer *lpszStringOut* boyutu.
 
 *dwFlags*<br/>
 Bu işlevin davranışını denetleyen bayraklar ATL_URL. Olası değerler için bkz. [ATLCanonicalizeUrl](#atlcanonicalizeurl) .
@@ -223,7 +224,7 @@ Dönüştürülen URL 'nin yazılacağı, arayana ayrılan arabellek.
 DWORD değişkenine yönelik işaretçi. İşlev başarılı olursa, değişken, Sonlandırıcı null karakteri dahil olmak üzere arabelleğe yazılan karakter sayısını alır. İşlev başarısız olursa, değişken, Sonlandırıcı null karakteri için boşluk dahil olmak üzere arabelleğin bayt cinsinden gereken uzunluğunu alır.
 
 *dwMaxLength*<br/>
-Buffer *lpszStringOut*boyutu.
+Buffer *lpszStringOut* boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

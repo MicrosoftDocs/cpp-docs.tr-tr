@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ASP, ATL Active Server sayfa bileşeni Sihirbazı'
 title: ASP, ATL Active Server Page bileşeni Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,38 +7,38 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Active Server Page Component Wizard, ASP
 ms.assetid: 4d8cafd6-5e12-4461-8911-29288896af3c
-ms.openlocfilehash: b88dffe2874d29918315af65c6ea093c24695f97
-ms.sourcegitcommit: ecf274bcfe3a977c48745aaa243e5e731f1fdc5f
+ms.openlocfilehash: e9cc11cf60c3a87d6891c98a72eb240729d1a739
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66503407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165543"
 ---
 # <a name="asp-atl-active-server-page-component-wizard"></a>ASP, ATL Active Server Page bileşeni Sihirbazı
 
-ATL Active Server sayfa bileşeni Sihirbazı bu sayfa, bilgileri ve durum, ASP bileşenle ilgili işlemek için isteğe bağlı ayarları belirtmek için kullanın.
+ASP bileşeninizin bilgilerini ve durumunu işlemeye yönelik isteğe bağlı ayarları belirtmek için ATL Active Server Page Bileşen Sihirbazı 'nın bu sayfasını kullanın.
 
-- **İsteğe bağlı yöntemler**
+- **İsteğe bağlı Yöntemler**
 
-   İsteğe bağlı ASP yöntemleri ekler **OnStartPage** ve **OnEndPage**, nesneniz için. Tüm Active Server Pages iç nesneler ayarlamak için bu seçeneği seçilmelidir. Varsayılan olarak, seçili.
+   Nesneniz için isteğe bağlı ASP yöntemlerini, **OnStartPage** ve **OnEndPage** öğesini ekler. Bu seçenek, Active Server sayfaları iç nesneleri ayarlamak için seçilmelidir. Varsayılan olarak, seçilidir.
 
 - **OnStartPage/OnEndPage**
 
-   [OnStartPage](/previous-versions//ms691624\(v=vs.85\)) komut dosyası çalıştığında nesneye erişmek için ilk kez çağrılır. **OnEndPage** nesne tamamlandığında adlı komut dosyası işleme.
+   [OnStartPage](/previous-versions//ms691624\(v=vs.85\)) , komut dosyası nesneye erişmeyi denediğinde ilk kez çağrılır. Nesne betiği işlemeyi tamamladığında **OnEndPage** çağrılır.
 
 - **İç nesne**
 
-   Seçmelisiniz **OnStartPage/OnEndPage** tüm ASP iç nesneler ayarlamak için seçeneği.
+   Herhangi bir ASP iç nesnesini ayarlamak için **OnStartPage/OnEndPage** seçeneğini seçmeniz gerekir.
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|**İstek**|Active Server Pages iç erişim sağlayan **istek** nesne. İstek nesnesi, bir HTTP isteği geçirmek için kullanılır.|
-|**Yanıt**|Active Server Pages iç erişim sağlayan **yanıt** nesne. Bir isteğe yanıt olarak, yanıt nesnesi kullanıcıya göstermek için tarayıcı bilgileri gönderir.|
-|**Oturum**|Active Server Pages iç erişim sağlayan **oturumu** nesne. **Oturumu** nesne durumu bilgileri depolamak ve almak da dahil olmak üzere geçerli kullanıcı oturum bilgilerini tutar.|
-|**Uygulama**|Active Server Pages iç erişim sağlayan **uygulama** nesne. **Uygulama** nesnesi birden fazla ASP nesneler arasında paylaşılan durum yönetir.|
-|**Sunucu**|Active Server Pages iç erişim sağlayan **sunucu** nesne. **Sunucu** nesnesinin diğer ASP nesneleri oluşturmanızı sağlar.|
+|**İstek**|Active Server sayfaları iç **istek** nesnesine erişim sağlar. Istek nesnesi bir HTTP isteğini geçirmek için kullanılır.|
+|**Response**|Active Server sayfaları iç **Yanıt** nesnesine erişim sağlar. Bir isteğe yanıt olarak, Response nesnesi kullanıcıya görüntülenecek bilgileri tarayıcıya gönderir.|
+|**Oturum**|Active Server sayfaları iç **oturum** nesnesine erişim sağlar. **Oturum** nesnesi, durum bilgilerini depolamak ve almak dahil olmak üzere geçerli kullanıcı oturumu hakkındaki bilgileri saklar.|
+|**Uygulama**|Active Server sayfaları iç **uygulama** nesnesine erişim sağlar. **Uygulama** nesnesi, bırden çok ASP nesnesi arasında paylaşılan durumu yönetir.|
+|**Sunucu**|Active Server sayfaları iç **sunucu** nesnesine erişim sağlar. **Sunucu** nesnesi, diğer ASP nesneleri oluşturmanıza olanak sağlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [ATL Active Server Page Bileşeni Sihirbazı](../../atl/reference/atl-active-server-page-component-wizard.md)<br/>
-[ATL Active Server Page bileşeni](../../atl/reference/adding-an-atl-active-server-page-component.md)
+[ATL Active Server sayfa bileşeni](../../atl/reference/adding-an-atl-active-server-page-component.md)

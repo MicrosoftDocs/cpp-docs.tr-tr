@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAcl sınıfı'
 title: CAcl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAcl class
 ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
-ms.openlocfilehash: 3beef0fc6a75a952956f032d3e0e4cbe4faed86b
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 60c498336f1bfb5358dd8e5b2eb771456a84ce17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168455"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165075"
 ---
 # <a name="cacl-class"></a>CAcl sınıfı
 
@@ -36,7 +37,7 @@ Bu sınıf, `ACL` (erişim denetimi listesi) yapısına yönelik bir sarmalayıc
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CAcl
@@ -46,7 +47,7 @@ class CAcl
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAcl:: CAccessMaskArray](#caccessmaskarray)|Bir dizi ACCESS_MASKs.|
 |[CAcl:: Caceflagdizisi](#caceflagarray)|Bir bayt dizisi.|
@@ -54,37 +55,37 @@ class CAcl
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAcl:: CAcl](#cacl)|Oluşturucu.|
 |[CAcl:: ~ CAcl](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAcl:: GetAceCount](#getacecount)|Erişim denetimi girişi (ACE) nesne sayısını döndürür.|
-|[CAcl:: Getaclendenemeler](#getaclentries)|`CAcl` Nesneden erişim denetimi LISTESI (ACL) girdilerini alır.|
-|[CAcl:: GetAclEntry](#getaclentry)|Bir `CAcl` nesne içindeki bir girdiyle ilgili tüm bilgileri alır.|
+|[CAcl:: Getaclendenemeler](#getaclentries)|Nesneden erişim denetimi listesi (ACL) girdilerini alır `CAcl` .|
+|[CAcl:: GetAclEntry](#getaclentry)|Bir nesne içindeki bir girdiyle ilgili tüm bilgileri alır `CAcl` .|
 |[CAcl:: GetLength](#getlength)|ACL 'nin uzunluğunu döndürür.|
 |[CAcl:: GetPACL](#getpacl)|Bir PACL döndürür (ACL işaretçisi).|
-|[CAcl:: IsEmpty](#isempty)|`CAcl` Nesneleri girdiler için sınar.|
-|[CAcl:: IsNull](#isnull)|`CAcl` Nesnenin durumunu döndürür.|
-|[CAcl:: RemoveAce](#removeace)|`CAcl` Nesnesinden belırlı bir ACE 'yi (erişim denetimi girişi) kaldırır.|
-|[CAcl:: RemoveAce 'Ler](#removeaces)|Verilen `CSid`için uygulanan tüm Ace 'leri (erişim denetimi girdileri) `CAcl` kaldırır.|
-|[CAcl:: SetEmpty](#setempty)|`CAcl` Nesneyi boş olarak işaretler.|
-|[CAcl:: SetNull](#setnull)|`CAcl` Nesneyi null olarak işaretler.|
+|[CAcl:: IsEmpty](#isempty)|`CAcl`Nesneleri girdiler için sınar.|
+|[CAcl:: IsNull](#isnull)|Nesnenin durumunu döndürür `CAcl` .|
+|[CAcl:: RemoveAce](#removeace)|Nesnesinden belirli bir ACE 'yi (erişim denetimi girişi) kaldırır `CAcl` .|
+|[CAcl:: RemoveAce 'Ler](#removeaces)|Verilen için uygulanan tüm Ace 'Leri (erişim denetimi girdileri) kaldırır `CAcl` `CSid` .|
+|[CAcl:: SetEmpty](#setempty)|`CAcl`Nesneyi boş olarak işaretler.|
+|[CAcl:: SetNull](#setnull)|`CAcl`NESNEYI null olarak işaretler.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAcl:: operator const ACL *](#operator_const_acl__star)|Bir `ACL` yapıya `CAcl` bir nesne yayınlar.|
+|[CAcl:: operator const ACL *](#operator_const_acl__star)|Bir `CAcl` yapıya bir nesne yayınlar `ACL` .|
 |[CAcl:: operator =](#operator_eq)|Atama işleci.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`ACL` Yapı, bir ACL 'nin üst bilgisi (erişim denetimi listesi). ACL, sıfır veya daha fazla [Ace](/windows/win32/SecAuthZ/access-control-entries) 'nin sıralı bir listesini içerir (erişim denetimi girdileri). ACL 'deki tek tek Ace 'Ler 0 ile *n-1*arasında numaralandırılır; burada *n* , ACL 'deki Ace sayısıdır. Bir ACL düzenlenirken, bir uygulama ACL içindeki bir erişim denetimi girişine (ACE) karşılık gelir.
+`ACL`Yapı, BIR ACL 'nin üst bilgisi (erişim denetimi listesi). ACL, sıfır veya daha fazla [Ace](/windows/win32/SecAuthZ/access-control-entries) 'nin sıralı bir listesini içerir (erişim denetimi girdileri). ACL 'deki tek tek Ace 'Ler 0 ile *n-1* arasında numaralandırılır; burada *n* , ACL 'deki Ace sayısıdır. Bir ACL düzenlenirken, bir uygulama ACL içindeki bir erişim denetimi girişine (ACE) karşılık gelir.
 
 İki ACL türü vardır:
 
@@ -104,7 +105,7 @@ Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control]
 
 **Üstbilgi:** atlsecurity. h
 
-## <a name="caclcaccessmaskarray"></a><a name="caccessmaskarray"></a>CAcl:: CAccessMaskArray
+## <a name="caclcaccessmaskarray"></a><a name="caccessmaskarray"></a> CAcl:: CAccessMaskArray
 
 ACCESS_MASK nesnelerden oluşan bir dizi.
 
@@ -116,7 +117,7 @@ typedef CAtlArray<ACCESS_MASK> CAccessMaskArray;
 
 Bu typedef, erişim denetimi girişlerinde (ACE) kullanılan erişim haklarını depolamak için kullanılabilecek dizi türünü belirtir.
 
-## <a name="caclcaceflagarray"></a><a name="caceflagarray"></a>CAcl:: Caceflagdizisi
+## <a name="caclcaceflagarray"></a><a name="caceflagarray"></a> CAcl:: Caceflagdizisi
 
 Bir bayt dizisi.
 
@@ -128,7 +129,7 @@ typedef CAtlArray<BYTE> CAceFlagArray;
 
 Bu typedef, erişim denetimi girişi (ACE) türüne özgü denetim bayraklarını tanımlamak için kullanılan dizi türünü belirtir. Olası bayrakların tüm listesi için [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) tanımına bakın.
 
-## <a name="caclcacetypearray"></a><a name="cacetypearray"></a>CAcl:: CAceTypeArray
+## <a name="caclcacetypearray"></a><a name="cacetypearray"></a> CAcl:: CAceTypeArray
 
 Bir bayt dizisi.
 
@@ -140,7 +141,7 @@ typedef CAtlArray<BYTE> CAceTypeArray;
 
 Bu typedef, ACCESS_ALLOWED_ACE_TYPE veya ACCESS_DENIED_ACE_TYPE gibi erişim denetimi girişi (ACE) nesnelerinin yapısını tanımlamak için kullanılan dizi türünü belirtir. Olası türlerin tüm listesi için [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) tanımına bakın.
 
-## <a name="caclcacl"></a><a name="cacl"></a>CAcl:: CAcl
+## <a name="caclcacl"></a><a name="cacl"></a> CAcl:: CAcl
 
 Oluşturucu.
 
@@ -156,9 +157,9 @@ Varolan bir `CAcl` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne `CAcl` , isteğe bağlı olarak, varolan `CAcl` bir nesne kullanılarak oluşturulabilir.
+`CAcl`Nesne, isteğe bağlı olarak, varolan bir nesne kullanılarak oluşturulabilir `CAcl` .
 
-## <a name="caclcacl"></a><a name="dtor"></a>CAcl:: ~ CAcl
+## <a name="caclcacl"></a><a name="dtor"></a> CAcl:: ~ CAcl
 
 Yok edicisi.
 
@@ -170,7 +171,7 @@ virtual ~CAcl() throw();
 
 Yıkıcı, nesne tarafından alınan tüm kaynakları serbest bırakır.
 
-## <a name="caclgetacecount"></a><a name="getacecount"></a>CAcl:: GetAceCount
+## <a name="caclgetacecount"></a><a name="getacecount"></a> CAcl:: GetAceCount
 
 Erişim denetimi girişi (ACE) nesne sayısını döndürür.
 
@@ -180,11 +181,11 @@ virtual UINT GetAceCount() const throw() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CAcl` Nesnedeki Ace girişi sayısını döndürür.
+Nesnedeki ACE girişi sayısını döndürür `CAcl` .
 
-## <a name="caclgetaclentries"></a><a name="getaclentries"></a>CAcl:: Getaclendenemeler
+## <a name="caclgetaclentries"></a><a name="getaclentries"></a> CAcl:: Getaclendenemeler
 
-`CAcl` Nesneden erişim denetimi LISTESI (ACL) girdilerini alır.
+Nesneden erişim denetimi listesi (ACL) girdilerini alır `CAcl` .
 
 ```cpp
 void GetAclEntries(
@@ -210,13 +211,13 @@ ACE bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, dizi parametrelerini `CAcl` nesnesinde bulunan her Ace nesnesinin ayrıntılarıyla doldurur. Söz konusu dizinin ayrıntıları gerekli olmadığında NULL kullanın.
+Bu yöntem, dizi parametrelerini nesnesinde bulunan her ACE nesnesinin ayrıntılarıyla doldurur `CAcl` . Söz konusu dizinin ayrıntıları gerekli olmadığında NULL kullanın.
 
-Her bir dizinin içeriği birbirine karşılık gelir, diğer bir deyişle, `CAccessMaskArray` dizinin ilk öğesi `CSidArray` dizideki ilk öğeye karşılık gelir ve bu şekilde devam eder.
+Her bir dizinin içeriği birbirine karşılık gelir, diğer bir deyişle, dizinin ilk öğesi `CAccessMaskArray` dizideki ilk öğeye karşılık gelir `CSidArray` ve bu şekilde devam eder.
 
 ACE türleri ve bayrakları hakkında daha fazla bilgi için bkz. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
-## <a name="caclgetaclentry"></a><a name="getaclentry"></a>CAcl:: GetAclEntry
+## <a name="caclgetaclentry"></a><a name="getaclentry"></a> CAcl:: GetAclEntry
 
 Bir erişim denetimi listesindeki (ACL) bir girdiyle ilgili tüm bilgileri alır.
 
@@ -260,7 +261,7 @@ Bu yöntem, tek bir ACE hakkındaki tüm bilgileri alır ve [CAcl:: Getaclendene
 
 ACE türleri ve bayrakları hakkında daha fazla bilgi için bkz. [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
-## <a name="caclgetlength"></a><a name="getlength"></a>CAcl:: GetLength
+## <a name="caclgetlength"></a><a name="getlength"></a> CAcl:: GetLength
 
 Erişim denetimi listesinin (ACL) uzunluğunu döndürür.
 
@@ -270,9 +271,9 @@ UINT GetLength() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`ACL` Yapıyı tutmak için gerekli olan bayt sayısını döndürür.
+Yapıyı tutmak için gerekli olan bayt sayısını döndürür `ACL` .
 
-## <a name="caclgetpacl"></a><a name="getpacl"></a>CAcl:: GetPACL
+## <a name="caclgetpacl"></a><a name="getpacl"></a> CAcl:: GetPACL
 
 Erişim denetimi listesi (ACL) için bir işaretçi döndürür.
 
@@ -282,11 +283,11 @@ const ACL* GetPACL() const throw(...);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`ACL` Yapıya bir işaretçi döndürür.
+Yapıya bir işaretçi döndürür `ACL` .
 
-## <a name="caclisempty"></a><a name="isempty"></a>CAcl:: IsEmpty
+## <a name="caclisempty"></a><a name="isempty"></a> CAcl:: IsEmpty
 
-`CAcl` Nesneleri girdiler için sınar.
+`CAcl`Nesneleri girdiler için sınar.
 
 ```cpp
 bool IsEmpty() const throw();
@@ -294,11 +295,11 @@ bool IsEmpty() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAcl` Nesne null değilse ve girdi IÇERMIYORSA, true döndürür. `CAcl` Nesne null ya da en az bir GIRIŞ içeriyorsa yanlış döndürür.
+`CAcl`Nesne null değilse ve girdi içermiyorsa, true döndürür. Nesne NULL ya da `CAcl` en az bir giriş IÇERIYORSA yanlış döndürür.
 
-## <a name="caclisnull"></a><a name="isnull"></a>CAcl:: IsNull
+## <a name="caclisnull"></a><a name="isnull"></a> CAcl:: IsNull
 
-`CAcl` Nesnenin durumunu döndürür.
+Nesnenin durumunu döndürür `CAcl` .
 
 ```cpp
 bool IsNull() const throw();
@@ -306,9 +307,9 @@ bool IsNull() const throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CAcl` Nesne null ise true, aksı takdirde false döndürür.
+Nesne NULL ise TRUE `CAcl` , aksi takdırde false döndürür.
 
-## <a name="cacloperator-const-acl-"></a><a name="operator_const_acl__star"></a>CAcl:: operator const ACL *
+## <a name="cacloperator-const-acl-"></a><a name="operator_const_acl__star"></a> CAcl:: operator const ACL *
 
 Bir `CAcl` nesneyi `ACL` (erişim denetimi listesi) yapısına yayınlar.
 
@@ -318,9 +319,9 @@ operator const ACL *() const throw(...);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ACL` Yapının adresini döndürür.
+Yapının adresini döndürür `ACL` .
 
-## <a name="cacloperator-"></a><a name="operator_eq"></a>CAcl:: operator =
+## <a name="cacloperator-"></a><a name="operator_eq"></a> CAcl:: operator =
 
 Atama işleci.
 
@@ -331,15 +332,15 @@ CAcl& operator= (const CAcl& rhs) throw(...);
 ### <a name="parameters"></a>Parametreler
 
 *sağ taraftan*<br/>
-Var `CAcl` olan nesneye atamak için.
+`CAcl`Var olan nesneye atamak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Güncelleştirilmiş `CAcl` nesneye bir başvuru döndürür.
+Güncelleştirilmiş nesneye bir başvuru döndürür `CAcl` .
 
-## <a name="caclremoveace"></a><a name="removeace"></a>CAcl:: RemoveAce
+## <a name="caclremoveace"></a><a name="removeace"></a> CAcl:: RemoveAce
 
-`CAcl` Nesnesinden belırlı bir ACE 'yi (erişim denetimi girişi) kaldırır.
+Nesnesinden belirli bir ACE 'yi (erişim denetimi girişi) kaldırır `CAcl` .
 
 ```cpp
 void RemoveAce(UINT nIndex) throw();
@@ -354,9 +355,9 @@ Kaldırılacak ACE girişinin dizini.
 
 Bu yöntem, [CAtlArray:: removeadresinden](../../atl/reference/catlarray-class.md#removeat)türetilir.
 
-## <a name="caclremoveaces"></a><a name="removeaces"></a>CAcl:: RemoveAce 'Ler
+## <a name="caclremoveaces"></a><a name="removeaces"></a> CAcl:: RemoveAce 'Ler
 
-Verilen `CAcl` `CSid`için uygulanan ' dan gelen cepler (erişim denetimi girdileri) kaldırır.
+Verilen için uygulanan ' dan gelen cepler (erişim denetimi girdileri) kaldırır `CAcl` `CSid` .
 
 ```cpp
 bool RemoveAces(const CSid& rSid) throw(...)
@@ -367,9 +368,9 @@ bool RemoveAces(const CSid& rSid) throw(...)
 *Rsıd*<br/>
 Bir `CSid` nesneye başvuru.
 
-## <a name="caclsetempty"></a><a name="setempty"></a>CAcl:: SetEmpty
+## <a name="caclsetempty"></a><a name="setempty"></a> CAcl:: SetEmpty
 
-`CAcl` Nesneyi boş olarak işaretler.
+`CAcl`Nesneyi boş olarak işaretler.
 
 ```cpp
 void SetEmpty() throw();
@@ -377,11 +378,11 @@ void SetEmpty() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAcl` Boş veya null olarak ayarlanabilir: iki durum birbirinden farklıdır.
+`CAcl`Boş veya null olarak ayarlanabilir: iki durum birbirinden farklıdır.
 
-## <a name="caclsetnull"></a><a name="setnull"></a>CAcl:: SetNull
+## <a name="caclsetnull"></a><a name="setnull"></a> CAcl:: SetNull
 
-`CAcl` Nesneyi null olarak işaretler.
+`CAcl`NESNEYI null olarak işaretler.
 
 ```cpp
 void SetNull() throw();
@@ -389,9 +390,9 @@ void SetNull() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CAcl` Boş veya null olarak ayarlanabilir: iki durum birbirinden farklıdır.
+`CAcl`Boş veya null olarak ayarlanabilir: iki durum birbirinden farklıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
-[Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)
+[Güvenlik Genel Işlevleri](../../atl/reference/security-global-functions.md)

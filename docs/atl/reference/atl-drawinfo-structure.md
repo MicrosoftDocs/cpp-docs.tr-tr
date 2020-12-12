@@ -1,5 +1,6 @@
 ---
-title: ATL_DRAWINFO Yapısı
+description: 'Daha fazla bilgi edinin: ATL_DRAWINFO yapısı'
+title: ATL_DRAWINFO yapısı
 ms.date: 11/04/2016
 f1_keywords:
 - ATL::ATL_DRAWINFO
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - ATL_DRAWINFO structure
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-ms.openlocfilehash: 00d93b3dd8b060a21b6ff4083bb9880d8d836a19
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 726a5b86f5621eba51d84054c80553b5c2f1f928
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165400"
 ---
-# <a name="atl_drawinfo-structure"></a>ATL_DRAWINFO Yapısı
+# <a name="atl_drawinfo-structure"></a>ATL_DRAWINFO yapısı
 
 Bir yazıcı, meta dosya veya ActiveX denetimi gibi çeşitli hedeflere işleme için kullanılan bilgileri içerir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct ATL_DRAWINFO {
@@ -48,34 +49,34 @@ Yapının bayt cinsinden boyutu.
 Hedefin nasıl temsil edileceğini belirtir. Temsiller, içerik, simge, küçük resim veya yazdırılmış bir belge içerebilir. Olası değerler listesi için bkz. [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect) ve [DVASPECT2](/windows/win32/api/ocidl/ne-ocidl-dvaspect2).
 
 `lindex`<br/>
-Hedefin, çizim işleminin ilgilendiği kısmı. Yorumu, `dwDrawAspect` üyenin değerine bağlı olarak değişir.
+Hedefin, çizim işleminin ilgilendiği kısmı. Yorumu, üyenin değerine bağlı olarak değişir `dwDrawAspect` .
 
 `ptd`<br/>
 Belirtilen değere bağlı olarak en iyi duruma getirme imkanı sağlayan bir [Dvtargetdevice](/windows/win32/api/objidl/ns-objidl-dvtargetdevice) yapısına yönelik işaretçi. İyileştirilmiş çizim arabirimlerini destekleyen yeni nesne ve kapsayıcıların bu üyeyi de desteklediğini unutmayın. En iyi duruma getirilmiş çizim arabirimlerini desteklemeyen eski nesneler ve kapsayıcılar, bu üye için her zaman NULL değer belirtir.
 
 `hicTargetDev`<br/>
-Tarafından `ptd` işaret edilen hedef cihaz için, nesnenin cihaz ölçümlerini ayıklayabileceği ve cihazın yeteneklerini test eden bilgi bağlamı. NULL `ptd` ise, nesne `hicTargetDev` üye içindeki değeri yok saymalıdır.
+Tarafından işaret edilen hedef cihaz için `ptd` , nesnenin cihaz ölçümlerini ayıklayabileceği ve cihazın yeteneklerini test eden bilgi bağlamı. `ptd`Null ise, nesne üye içindeki değeri yok saymalıdır `hicTargetDev` .
 
 `hdcDraw`<br/>
-Üzerine çizilecek cihaz bağlamı. Penceresiz bir nesne için `hdcDraw` üye, kapsayan pencerenin istemci koordinatlarıyla eşleşen mantıksal koordinatlarıyla `MM_TEXT` eşleme modundadır. Buna ek olarak, cihaz bağlamı, normalde bir `WM_PAINT` ileti tarafından geçirildiği ile aynı durumda olmalıdır.
+Üzerine çizilecek cihaz bağlamı. Penceresiz bir nesne için üye, `hdcDraw` `MM_TEXT` kapsayan pencerenin istemci koordinatlarıyla eşleşen mantıksal koordinatlarıyla eşleme modundadır. Buna ek olarak, cihaz bağlamı, normalde bir ileti tarafından geçirildiği ile aynı durumda olmalıdır `WM_PAINT` .
 
 `prcBounds`<br/>
-Üzerinde `hdcDraw` nesnenin çizilmesi gereken dikdörtgeni belirten [rectl](/windows/win32/api/windef/ns-windef-rectl) yapısına yönelik işaretçi. Bu üye nesnenin konumlandırılmasını ve uzamasını denetler. Bu üye, bir penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Her durumda NULL değeri geçerli bir değer değildir ve bir `E_INVALIDARG` hata kodu ile sonuçlanmalıdır. Kapsayıcı, penceresiz bir nesneye NULL olmayan bir değer geçirirse, nesne istenen yönü belirtilen cihaz bağlamı ve dikdörtgenine işlemelidir. Bir kapsayıcı, nesnenin ikinci, etkin olmayan bir görünümünü işlemek veya nesneyi yazdırmak için bunu penceresiz bir nesneden isteyebilir.
+Üzerinde nesnenin çizilmesi gereken dikdörtgeni belirten [rectl](/windows/win32/api/windef/ns-windef-rectl) yapısına yönelik işaretçi `hdcDraw` . Bu üye nesnenin konumlandırılmasını ve uzamasını denetler. Bu üye, bir penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Her durumda NULL değeri geçerli bir değer değildir ve bir hata kodu ile sonuçlanmalıdır `E_INVALIDARG` . Kapsayıcı, penceresiz bir nesneye NULL olmayan bir değer geçirirse, nesne istenen yönü belirtilen cihaz bağlamı ve dikdörtgenine işlemelidir. Bir kapsayıcı, nesnenin ikinci, etkin olmayan bir görünümünü işlemek veya nesneyi yazdırmak için bunu penceresiz bir nesneden isteyebilir.
 
 `prcWBounds`<br/>
-Bir meta dosyası cihaz bağlamıdır (bkz. Windows SDK [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) ), bu, temel alınan meta dosyasındaki sınırlayıcı `RECTL` dikdörtgeni belirten bir yapıya işaretçidir. `hdcDraw` Dikdörtgen yapısı pencere kapsamı ve pencere kaynağını içerir. Bu değerler, meta dosyaları çizmek için yararlıdır. Tarafından `prcBounds` belirtilen dikdörtgen, bu `prcWBounds` dikdörtgenin içinde iç içe yerleştirilmiş. aynı koordinat alanında yer alırlar.
+`hdcDraw`Bir meta dosyası cihaz bağlamıdır (bkz. Windows SDK [GetDeviceCaps](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) ), bu, `RECTL` temel alınan meta dosyasındaki sınırlayıcı dikdörtgeni belirten bir yapıya işaretçidir. Dikdörtgen yapısı pencere kapsamı ve pencere kaynağını içerir. Bu değerler, meta dosyaları çizmek için yararlıdır. Tarafından belirtilen dikdörtgen `prcBounds` Bu dikdörtgenin içinde iç içe yerleştirilmiş `prcWBounds` ; aynı koordinat alanında yer alırlar.
 
 `bOptimize`<br/>
 Denetimin çizimi iyileştirilemez, aksi durumda 0. Çizim iyileştiriliyorsa, işleme işiniz bittiğinde cihaz bağlamının durumu otomatik olarak geri yüklenir.
 
 `bZoomed`<br/>
-Hedefte bir yakınlaştırma faktörü varsa sıfır dışı, aksi durumda 0. Yakınlaştırma faktörü içinde `ZoomNum`depolanır.
+Hedefte bir yakınlaştırma faktörü varsa sıfır dışı, aksi durumda 0. Yakınlaştırma faktörü içinde depolanır `ZoomNum` .
 
 `bRectInHimetric`<br/>
-Boyutlar `prcBounds` himetrik ise, aksi durumda 0.
+Boyutlar `prcBounds` HIMETRIK ise, aksi durumda 0.
 
 `ZoomNum`<br/>
-Nesnenin işlendiği dikdörtgenin genişliği ve yüksekliği. Hedef değerinin x ekseni (nesnenin doğal boyutunun geçerli adına göre oranı) üzerindeki yakınlaştırma faktörü, değerine `ZoomNum.cx` bölünen değeridir. `ZoomDen.cx` Y ekseni üzerindeki yakınlaştırma faktörü benzer bir biçimde elde edilir.
+Nesnenin işlendiği dikdörtgenin genişliği ve yüksekliği. Hedef değerinin x ekseni (nesnenin doğal boyutunun geçerli adına göre oranı) üzerindeki yakınlaştırma faktörü, `ZoomNum.cx` değerine bölünen değeridir `ZoomDen.cx` . Y ekseni üzerindeki yakınlaştırma faktörü benzer bir biçimde elde edilir.
 
 `ZoomDen`<br/>
 Hedefin gerçek genişliği ve yüksekliği.

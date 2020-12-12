@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Command-Line Error D8027'
 title: Komut Satırı Hatası D8027
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - D8027
 ms.assetid: f228220f-0c7f-49a6-a6e0-1f7bd4745aa6
-ms.openlocfilehash: 42341507dfc2d3da02639dd28ab1265783452388
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 80d0812571043249616108e99e763b105b527475
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196891"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115657"
 ---
 # <a name="command-line-error-d8027"></a>Komut Satırı Hatası D8027
 
@@ -27,7 +28,7 @@ Derleyici verilen derleyici bileşenini veya bağlayıcıyı çalıştıramıyor
 
 1. Bileşen bozuldu. Kurulum programını kullanarak bileşeni dağıtım disklerinden yeniden kopyalayın.
 
-1. Bir seçenek yanlış belirtildi. Örneğin:
+1. Bir seçenek yanlış belirtildi. Örnek:
 
     ```
     cl /B1 file1.c
