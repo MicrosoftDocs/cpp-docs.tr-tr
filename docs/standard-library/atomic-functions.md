@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; atomik &gt; işlevler'
 title: '&lt;Atomik &gt; işlevler'
 ms.date: 07/11/2018
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - std::atomic_store_explicit [C++]
 - std::atomic_thread_fence [C++]
 - std::kill_dependency [C++]
-ms.openlocfilehash: 5252fbb12682af3e5d1480208c4cbe4d32af7d05
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 21badeaa900f35e05e411987a93fa74e20c99559
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321687"
 ---
 # <a name="ltatomicgt-functions"></a>&lt;Atomik &gt; işlevler
 
@@ -175,7 +176,7 @@ Türünde bir değer `Ty` .
 İlk [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkeni.
 
 *Order2*\
-İkinci `memory_order` bağımsız değişken. *Order2* değeri `memory_order_release` veya olamaz `memory_order_acq_rel` , *Order1*değerinden daha güçlü olamaz.
+İkinci `memory_order` bağımsız değişken. *Order2* değeri `memory_order_release` veya olamaz `memory_order_acq_rel` , *Order1* değerinden daha güçlü olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -183,7 +184,7 @@ Türünde bir değer `Ty` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Atomik karşılaştırma ve değişim işlemi* , *atom* tarafından işaret edilen nesnede depolanan değeri, *Exp*tarafından işaret edilen değere göre karşılaştırır. Değerler eşitse, *atom* tarafından işaret edilen nesnede depolanan değer, bir işlem kullanılarak *Value* `read-modify-write` ve *Order1*tarafından belirtilen bellek sırası kısıtlamaları uygulanarak değeri ile değiştirilmiştir. Değerler eşit değilse, işlem, *Exp* tarafından işaret edilen değeri, *atom* tarafından işaret edilen nesnede depolanan değerle değiştirir ve *Order2*tarafından belirtilen bellek sırası kısıtlamalarını uygular.
+*Atomik karşılaştırma ve değişim işlemi* , *atom* tarafından işaret edilen nesnede depolanan değeri, *Exp* tarafından işaret edilen değere göre karşılaştırır. Değerler eşitse, *atom* tarafından işaret edilen nesnede depolanan değer, bir işlem kullanılarak  `read-modify-write` ve *Order1* tarafından belirtilen bellek sırası kısıtlamaları uygulanarak değeri ile değiştirilmiştir. Değerler eşit değilse, işlem, *Exp* tarafından işaret edilen değeri, *atom* tarafından işaret edilen nesnede depolanan değerle değiştirir ve *Order2* tarafından belirtilen bellek sırası kısıtlamalarını uygular.
 
 ## <a name="atomic_compare_exchange_weak"></a><a name="atomic_compare_exchange_weak"></a> atomic_compare_exchange_weak
 
@@ -220,7 +221,7 @@ Türünde bir değer `Ty` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, örtük memory_order bağımsız değişkenlerine sahip *zayıf bir atomik karşılaştırma ve değişim işlemi* gerçekleştirir `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) . Daha fazla bilgi için bkz. [atomic_compare_exchange_weak_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit).
+Bu yöntem, örtük memory_order bağımsız değişkenlerine sahip *zayıf bir atomik karşılaştırma ve değişim işlemi* gerçekleştirir `memory_order_seq_cst` [](../standard-library/atomic-enums.md#memory_order_enum) . Daha fazla bilgi için bkz. [atomic_compare_exchange_weak_explicit](../standard-library/atomic-functions.md#atomic_compare_exchange_weak_explicit).
 
 ## <a name="atomic_compare_exchange_weak_explicit"></a><a name="atomic_compare_exchange_weak_explicit"></a> atomic_compare_exchange_weak_explicit
 
@@ -259,7 +260,7 @@ Türünde bir değer `Ty` .
 İlk [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişkeni.
 
 *Order2*\
-İkinci `memory_order` bağımsız değişken. *Order2* değeri `memory_order_release` veya `memory_order_acq_rel` , *Order1*değerinden daha güçlü olamaz.
+İkinci `memory_order` bağımsız değişken. *Order2* değeri `memory_order_release` veya `memory_order_acq_rel` , *Order1* değerinden daha güçlü olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -295,11 +296,11 @@ Exchange 'den önce, *atom* 'un depolanan değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_exchange`İşlevi, `read-modify-write` Memory_order kullanılarak *atom* ' de depolanan değeri değiş tokuş etmek için bir işlem *Value*gerçekleştirir `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+`atomic_exchange`İşlevi, `read-modify-write` Memory_order kullanılarak *atom* ' de depolanan değeri değiş tokuş etmek için bir işlem gerçekleştirir `memory_order_seq_cst` [](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_exchange_explicit"></a><a name="atomic_exchange_explicit"></a> atomic_exchange_explicit
 
-*Atom* 'un depolanan değerini *değeriyle*değiştirir.
+*Atom* 'un depolanan değerini *değeriyle* değiştirir.
 
 ```cpp
 template <class Ty>
@@ -332,7 +333,7 @@ Exchange 'den önce, *atom* 'un depolanan değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_exchange_explicit`İşlevi `read-modify-write` , *Order*tarafından belirtilen bellek kısıtlamalarında *değeri*ile *atom* ' de depolanan değeri değiş tokuş etmek için bir işlem gerçekleştirir.
+`atomic_exchange_explicit`İşlevi `read-modify-write` , *Order* tarafından belirtilen bellek kısıtlamalarında *değeri* ile *atom* ' de depolanan değeri değiş tokuş etmek için bir işlem gerçekleştirir.
 
 ## <a name="atomic_fetch_add"></a><a name="atomic_fetch_add"></a> atomic_fetch_add
 
@@ -359,7 +360,7 @@ Türünde bir değer `ptrdiff_t` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_fetch_add`İşlevi, `read-modify-write` *Value* *Atom* `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamasını kullanarak, atom ' de depolanan değere değer eklemek için bir işlem gerçekleştirir.
+`atomic_fetch_add`İşlevi, `read-modify-write`   `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamasını kullanarak, atom ' de depolanan değere değer eklemek için bir işlem gerçekleştirir.
 
 Atomik tür olduğunda `atomic_address` , *değer* türündedir `ptrdiff_t` ve işlem saklı işaretçiye bir olarak davranır `char *` .
 
@@ -446,7 +447,7 @@ Türünde bir değer `T` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_fetch_and`İşlevi, `read-modify-write` memory_order kısıtlaması kullanılarak, *atom* değerini bir bit düzeyinde `and` *değer* ve *atom*' de depolanan geçerli değeri ile değiştirmek için bir işlem gerçekleştirir `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) .
+`atomic_fetch_and`İşlevi, `read-modify-write` memory_order kısıtlaması kullanılarak, *atom* değerini bir bit düzeyinde `and` *değer* ve *atom*' de depolanan geçerli değeri ile değiştirmek için bir işlem gerçekleştirir `memory_order_seq_cst` [](../standard-library/atomic-enums.md#memory_order_enum) .
 
 ## <a name="atomic_fetch_and_explicit"></a><a name="atomic_fetch_and_explicit"></a> atomic_fetch_and_explicit
 
@@ -483,7 +484,7 @@ Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_fetch_and_explicit`İşlevi bir işlem gerçekleştirerek `read-modify-write` , *atom* değerini bir bit düzeyinde `and` *değer* ve *atom*' de depolanan geçerli değeri *Order*tarafından belirtilen bellek kısıtlamalarında değiştirin.
+`atomic_fetch_and_explicit`İşlevi bir işlem gerçekleştirerek `read-modify-write` , *atom* değerini bir bit düzeyinde `and` *değer* ve *atom*' de depolanan geçerli değeri *Order* tarafından belirtilen bellek kısıtlamalarında değiştirin.
 
 ## <a name="atomic_fetch_or"></a><a name="atomic_fetch_or"></a> atomic_fetch_or
 
@@ -547,7 +548,7 @@ Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_fetch_or_explicit`İşlevi, `read-modify-write` *atom* değerini bir bit düzeyinde `or` *değer* ve *atom*' de depolanan geçerli değeri *Order*tarafından belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamalarla değiştirmek için bir işlem gerçekleştirir.
+`atomic_fetch_or_explicit`İşlevi, `read-modify-write` *atom* değerini bir bit düzeyinde `or` *değer* ve *atom*' de depolanan geçerli değeri *Order* tarafından belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamalarla değiştirmek için bir işlem gerçekleştirir.
 
 ## <a name="atomic_fetch_sub"></a><a name="atomic_fetch_sub"></a> atomic_fetch_sub
 
@@ -579,7 +580,7 @@ Türünde bir değer `ptrdiff_t` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_fetch_sub`İşlevi, `read-modify-write` *Value* *Atom* `memory_order_seq_cst` [Memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamasını kullanarak, atom 'daki depolanan değerden değeri otomatik olarak çıkarmak için bir işlem gerçekleştirir.
+`atomic_fetch_sub`İşlevi, `read-modify-write`   `memory_order_seq_cst` [Memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamasını kullanarak, atom 'daki depolanan değerden değeri otomatik olarak çıkarmak için bir işlem gerçekleştirir.
 
 Atomik tür olduğunda `atomic_address` , *değer* türündedir `ptrdiff_t` ve işlem saklı işaretçiye bir olarak davranır `char *` .
 
@@ -621,7 +622,7 @@ Türünde bir değer `ptrdiff_t` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_fetch_sub_explicit`İşlevi, `read-modify-write` tarafından belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamalarında, *atom*değeri içindeki saklı değerden *değeri* otomatik olarak çıkarmak için bir işlem gerçekleştirir `Order` .
+`atomic_fetch_sub_explicit`İşlevi, `read-modify-write` tarafından belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamalarında, *atom* değeri içindeki saklı değerden *değeri* otomatik olarak çıkarmak için bir işlem gerçekleştirir `Order` .
 
 Atomik tür olduğunda `atomic_address` , *değer* türündedir `ptrdiff_t` ve işlem saklı işaretçiye bir olarak davranır `char *` .
 
@@ -702,11 +703,11 @@ Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_fetch_xor_explicit`İşlevi, `read-modify-write` *atom* değerini bir bit düzeyinde `exclusive or` *değer* ve *atom*' de depolanan geçerli değeri *Order*tarafından belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamalarında değiştirmek için bir işlem gerçekleştirir.
+`atomic_fetch_xor_explicit`İşlevi, `read-modify-write` *atom* değerini bir bit düzeyinde `exclusive or` *değer* ve *atom*' de depolanan geçerli değeri *Order* tarafından belirtilen [memory_order](../standard-library/atomic-enums.md#memory_order_enum) kısıtlamalarında değiştirmek için bir işlem gerçekleştirir.
 
 ## <a name="atomic_flag_clear"></a><a name="atomic_flag_clear"></a> atomic_flag_clear
 
-**`bool`** [Atomic_flag](../standard-library/atomic-flag-structure.md) nesnesindeki bayrağı **`false`** memory_order içinde olarak ayarlar `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+**`bool`** [Atomic_flag](../standard-library/atomic-flag-structure.md) nesnesindeki bayrağı **`false`** memory_order içinde olarak ayarlar `memory_order_seq_cst` [](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
 inline void atomic_flag_clear(volatile atomic_flag* Flag) noexcept;
@@ -737,7 +738,7 @@ Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_flag_test_and_set"></a><a name="atomic_flag_test_and_set"></a> atomic_flag_test_and_set
 
-**`bool`** [Atomic_flag](../standard-library/atomic-flag-structure.md) nesnesindeki bayrağı, **`true`** memory_order kısıtlamaları içinde olarak ayarlar `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+**`bool`** [Atomic_flag](../standard-library/atomic-flag-structure.md) nesnesindeki bayrağı, **`true`** memory_order kısıtlamaları içinde olarak ayarlar `memory_order_seq_cst` [](../standard-library/atomic-enums.md#memory_order_enum).
 
 ```cpp
 inline bool atomic_flag_test_and_set(volatile atomic_flag* Flag,) noexcept;
@@ -751,7 +752,7 @@ Bir `atomic_flag` nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Bayrağın*başlangıç değeri.
+*Bayrağın* başlangıç değeri.
 
 ## <a name="atomic_flag_test_and_set_explicit"></a><a name="atomic_flag_test_and_set_explicit"></a> atomic_flag_test_and_set_explicit
 
@@ -772,7 +773,7 @@ Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Bayrağın*başlangıç değeri.
+*Bayrağın* başlangıç değeri.
 
 ## <a name="atomic_init"></a><a name="atomic_init"></a> atomic_init
 
@@ -799,7 +800,7 @@ Türünde bir değer `Ty` .
 
 ## <a name="atomic_is_lock_free"></a><a name="atomic_is_lock_free"></a> atomic_is_lock_free
 
-Bir nesne üzerindeki atomik işlemlerin kilitli olup olmadığını belirtir `atomic` . *lock-free*
+Bir nesne üzerindeki atomik işlemlerin kilitli olup olmadığını belirtir `atomic` . 
 
 ```cpp
 template <class T>
@@ -839,11 +840,11 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Atom*içinde depolanan alınan değer.
+*Atom* içinde depolanan alınan değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_load`memory_order örtük olarak kullanır `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+`atomic_load`memory_order örtük olarak kullanır `memory_order_seq_cst` [](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_load_explicit"></a><a name="atomic_load_explicit"></a> atomic_load_explicit
 
@@ -866,11 +867,11 @@ Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum). `memo
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Atom*içinde depolanan alınan değer.
+*Atom* içinde depolanan alınan değer.
 
 ## <a name="atomic_signal_fence"></a><a name="atomic_signal_fence"></a> atomic_signal_fence
 
-Aynı iş parçacığında yürütülen sinyal işleyicilerine sahip bir çağıran iş parçacığındaki diğer balıklarla, yükleme/depolama işlemleri arasında sıralamayı *zorlayan bir sınır*gibi davranır.
+Aynı iş parçacığında yürütülen sinyal işleyicilerine sahip bir çağıran iş parçacığındaki diğer balıklarla, yükleme/depolama işlemleri arasında sıralamayı *zorlayan bir sınır* gibi davranır.
 
 ```cpp
 inline void atomic_signal_fence(memory_order Order) noexcept;
@@ -915,7 +916,7 @@ Türünde bir değer `Ty` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_store`*değeri* , memory_order kısıtlaması içinde *atom*tarafından işaret edilen nesnede depolar `memory_order_seq_cst` [memory_order](../standard-library/atomic-enums.md#memory_order_enum) .
+`atomic_store`*değeri* , memory_order kısıtlaması içinde *atom* tarafından işaret edilen nesnede depolar `memory_order_seq_cst` [](../standard-library/atomic-enums.md#memory_order_enum) .
 
 ## <a name="atomic_store_explicit"></a><a name="atomic_store_explicit"></a> atomic_store_explicit
 
@@ -948,11 +949,11 @@ Bir [memory_order](../standard-library/atomic-enums.md#memory_order_enum). `memo
 
 ### <a name="remarks"></a>Açıklamalar
 
-`atomic_store`*değerini* , *Atom* `memory_order` *sıralamayla*belirtilen içindeki, Atom tarafından işaret edilen nesnede depolar.
+`atomic_store`*değerini* ,  `memory_order` *sıralamayla* belirtilen içindeki, Atom tarafından işaret edilen nesnede depolar.
 
 ## <a name="atomic_thread_fence"></a><a name="atomic_thread_fence"></a> atomic_thread_fence
 
-İlişkili bir atomik işlem olmadan, yük/depolama işlemleri arasında sıralamayı zorlayan bir bellek eşitleme temel alanı olan bir *çit*gibi davranır.
+İlişkili bir atomik işlem olmadan, yük/depolama işlemleri arasında sıralamayı zorlayan bir bellek eşitleme temel alanı olan bir *çit* gibi davranır.
 
 ```cpp
 inline void atomic_thread_fence(memory_order Order) noexcept;

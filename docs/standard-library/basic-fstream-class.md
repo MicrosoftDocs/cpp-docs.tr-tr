@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: basic_fstream sınıfı'
 title: basic_fstream Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - std::basic_fstream [C++], rdbuf
 - std::basic_fstream [C++], swap
 ms.assetid: 8473817e-42a4-430b-82b8-b476c86bcf8a
-ms.openlocfilehash: a2b62b85953a5f4ec829053c8af93582eec76618
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: df8ad83696422737b5b368b39bf21c82506e8b65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219306"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321579"
 ---
 # <a name="basic_fstream-class"></a>basic_fstream Sınıfı
 
-[basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr` `Elem` Karakter nitelikleri sınıfı tarafından belirlendiği şekilde, öğe basic_filebuf,>, türü öğeleri olan öğelerin ve ayıklamanın bir akış arabelleğini kullanarak ekleme ve ayıklamayı denetleyen bir nesne tanımlar `Tr` .
+[](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr` `Elem` Karakter nitelikleri sınıfı tarafından belirlendiği şekilde, öğe basic_filebuf,>, türü öğeleri olan öğelerin ve ayıklamanın bir akış arabelleğini kullanarak ekleme ve ayıklamayı denetleyen bir nesne tanımlar `Tr` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Elem, class Tr = char_traits<Elem>>
@@ -105,7 +106,7 @@ Writing to a basic_fstream object...
 
 **Ad alanı:** std
 
-## <a name="basic_fstreambasic_fstream"></a><a name="basic_fstream"></a>basic_fstream:: basic_fstream
+## <a name="basic_fstreambasic_fstream"></a><a name="basic_fstream"></a> basic_fstream:: basic_fstream
 
 Türünde bir nesne oluşturur `basic_fstream` .
 
@@ -138,7 +139,7 @@ Varsayılan dosya açma koruması, [_fsopen _wfsopen](../c-runtime-library/refer
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, [basic_iostream](../standard-library/basic-iostream-class.md) `sb` `sb` [basic_filebuf](../standard-library/basic-filebuf-class.md)sınıfının saklı nesnesi olan basic_iostream () öğesini çağırarak temel sınıfı başlatır \< **Elem**, **Tr**> . Çağırarak da başlatılır `sb` `basic_filebuf` \< **Elem**, **Tr**> .
+İlk Oluşturucu, [](../standard-library/basic-iostream-class.md) `sb` `sb` [basic_filebuf](../standard-library/basic-filebuf-class.md)sınıfının saklı nesnesi olan basic_iostream () öğesini çağırarak temel sınıfı başlatır \< **Elem**, **Tr**> . Çağırarak da başlatılır `sb` `basic_filebuf` \< **Elem**, **Tr**> .
 
 İkinci ve üçüncü oluşturucular, temel sınıfı çağırarak `basic_iostream` ( **SB**) başlatır. Ayrıca `sb` `basic_filebuf` \< **Elem**, **Tr**> , çağırarak ve sonra **SB.**[Open](../standard-library/basic-filebuf-class.md#open)(_ *filename*,) ile başlatılır `_Mode` . İkinci işlev null bir işaretçi döndürürse, Oluşturucu [SetState](../standard-library/basic-ios-class.md#setstate)() öğesini çağırır `failbit` .
 
@@ -148,7 +149,7 @@ Dördüncü Oluşturucu, nesnesini, `right` bir rvalue başvurusu olarak kabul e
 
 Kullanan bir örnek için bkz. [streampos](../standard-library/ios-typedefs.md#streampos) `basic_fstream` .
 
-## <a name="basic_fstreamclose"></a><a name="close"></a>basic_fstream:: Close
+## <a name="basic_fstreamclose"></a><a name="close"></a> basic_fstream:: Close
 
 Bir dosyayı kapatır.
 
@@ -164,7 +165,7 @@ void close();
 
 Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [basic_filebuf:: Close](../standard-library/basic-filebuf-class.md#close) `close` .
 
-## <a name="basic_fstreamis_open"></a><a name="is_open"></a>basic_fstream:: is_open
+## <a name="basic_fstreamis_open"></a><a name="is_open"></a> basic_fstream:: is_open
 
 Bir dosyanın açık olup olmadığını belirler.
 
@@ -184,7 +185,7 @@ bool is_open() const;
 
 Bkz. [basic_filebuf:: is_open](../standard-library/basic-filebuf-class.md#is_open) nasıl kullanılacağına ilişkin bir örnek `is_open` .
 
-## <a name="basic_fstreamopen"></a><a name="open"></a>basic_fstream:: Open
+## <a name="basic_fstreamopen"></a><a name="open"></a> basic_fstream:: Open
 
 Bir dosya açar.
 
@@ -227,7 +228,7 @@ Varsayılan dosya açma koruması, [_fsopen _wfsopen](../c-runtime-library/refer
 
 Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) `open` .
 
-## <a name="basic_fstreamoperator"></a><a name="op_eq"></a>basic_fstream:: operator =
+## <a name="basic_fstreamoperator"></a><a name="op_eq"></a> basic_fstream:: operator =
 
 Belirtilen Stream nesnesinden bu nesneye içerik atar. Bu, arkasına kopya bırakmayan bir rvalue içeren bir taşıma atamasıdır.
 
@@ -246,9 +247,9 @@ Döndürür **`*this`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci, bir rvalue başvurusu olarak kabul edilen, *sağ*içeriğini kullanarak nesnesinin içeriğini değiştirir.
+Üye işleci, bir rvalue başvurusu olarak kabul edilen, *sağ* içeriğini kullanarak nesnesinin içeriğini değiştirir.
 
-## <a name="basic_fstreamrdbuf"></a><a name="rdbuf"></a>basic_fstream:: rdarabelleğe
+## <a name="basic_fstreamrdbuf"></a><a name="rdbuf"></a> basic_fstream:: rdarabelleğe
 
 [Basic_filebuf](../standard-library/basic-filebuf-class.md)işaretçisinin türü olan depolanan akış arabelleğinin adresini döndürür \< **Elem**, **Tr**> .
 
@@ -264,7 +265,7 @@ Depolanan akış arabelleğinin adresi.
 
 Öğesinin nasıl kullanılacağına ilişkin bir örnek için bkz. [basic_filebuf:: Close](../standard-library/basic-filebuf-class.md#close) `rdbuf` .
 
-## <a name="basic_fstreamswap"></a><a name="swap"></a>basic_fstream:: swap
+## <a name="basic_fstreamswap"></a><a name="swap"></a> basic_fstream:: swap
 
 İki nesnenin içeriğini değiş tokuş eder `basic_fstream` .
 
@@ -279,7 +280,7 @@ void swap(basic_fstream& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi bu nesnenin içeriğini ve *sağ*içeriğini değiş tokuş eder.
+Üye işlevi bu nesnenin içeriğini ve *sağ* içeriğini değiş tokuş eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

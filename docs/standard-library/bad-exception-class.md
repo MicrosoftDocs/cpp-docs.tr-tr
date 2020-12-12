@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bad_exception sınıfı'
 title: bad_exception Class
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - bad_exception class
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
-ms.openlocfilehash: 1795a44d2d31cfbad964b41ef03e4bf65b401352
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 6b47facc751e1f16e033f26be284db1287e79ea8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246202"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321618"
 ---
-# <a name="badexception-class"></a>bad_exception Class
+# <a name="bad_exception-class"></a>bad_exception Class
 
-Beklenmeyen bir işleyici oluşturulan bir özel durum sınıfı açıklar.
+Sınıfı, beklenmeyen bir işleyiciden oluşturulabilecek bir özel durumu açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class bad_exception : public exception {};
@@ -30,12 +31,12 @@ const char* what() const override;
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Beklenmeyen](../standard-library/exception-functions.md#unexpected) oluşturmaz bir `bad_exception` sonlandırma yerine ya da belirtilen başka bir işlevi çağırmak yerine [set_unexpected](../standard-library/exception-functions.md#set_unexpected) varsa `bad_exception` bir işlevin throw listeye dahil.
+[beklenmeyen](../standard-library/exception-functions.md#unexpected) bir `bad_exception` işlevin throw listesine dahil ise, beklenmeyen bir şekilde veya [set_unexpected](../standard-library/exception-functions.md#set_unexpected) ile belirtilen başka bir işlevi çağırmak yerine, beklenmeyen bir şekilde oluşturulur `bad_exception` .
 
-Tarafından döndürülen değer `what` bir uygulama tanımlı C dizesi. Üye işlevlerinin hiçbiri, tüm özel durumlar.
+Tarafından döndürülen değer, `what` uygulama tanımlı bir C dizesidir. Üye işlevlerinin hiçbiri özel durum oluşturmaz.
 
-Tarafından devralınan üyelerin listesi için `bad_exception` sınıfı [özel durum sınıfı](../standard-library/exception-class.md).
+Sınıfı tarafından devralınan üyelerin listesi için `bad_exception` bkz. [Exception sınıfı](../standard-library/exception-class.md).
 
 ## <a name="example"></a>Örnek
 
-Bkz: [set_unexpected](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek [beklenmeyen](../standard-library/exception-functions.md#unexpected) atma bir `bad_exception`.
+[Beklenmeyen](../standard-library/exception-functions.md#unexpected) bir oluşturma hakkında bir örnek için bkz. [set_unexpected](../standard-library/exception-functions.md#set_unexpected) `bad_exception` .

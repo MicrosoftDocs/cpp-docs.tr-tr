@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: erişimcileri kullanma'
 title: Erişimcileri Kullanma
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, accessors
 - rowsets [C++], accessors
 ms.assetid: 6ce484a6-fbbe-40de-8ff9-5cddcd78d283
-ms.openlocfilehash: 5e35318fd1b5a245eaed982674d69484e34f9dac
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 66d7c7d26da0d808e533bee438fec1283a89e839
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209345"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322317"
 ---
 # <a name="using-accessors"></a>Erişimcileri Kullanma
 
@@ -19,14 +20,14 @@ Aşağıdaki konularda, veri uygulamanız için hangi erişimci türünün en iy
 
 - [Hangi erişimcinin kullanılacağını belirleme](../../data/oledb/determining-which-type-of-accessor-to-use.md)
 
-- [Satır Kümesinde Çoklu Erişimci Kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md)
+- [Satır kümesinde birden çok erişimci kullanma](../../data/oledb/using-multiple-accessors-on-a-rowset.md)
 
-- [Dinamik Erişimcileri Kullanma](../../data/oledb/using-dynamic-accessors.md)
+- [Dinamik erişimcileri kullanma](../../data/oledb/using-dynamic-accessors.md)
 
-- [El ile Çalışan Erişimcileri Kullanma](../../data/oledb/using-manual-accessors.md)
+- [El Ile erişimcileri kullanma](../../data/oledb/using-manual-accessors.md)
 
-- [XML Verilerine Erişme](../../data/oledb/accessing-xml-data.md)
+- [XML verilerine erişme](../../data/oledb/accessing-xml-data.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+[OLE DB tüketici şablonlarıyla çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

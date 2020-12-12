@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ın (C++)'
 title: ın (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - in attribute
 ms.assetid: 7b450cc4-4d2e-4910-a195-7487c6b7c373
-ms.openlocfilehash: 2838a00ffe365f42fb7778b654306eb0c73b5996
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c4d19fcf7adc767986306a3ef55b26a2cc91dccf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321382"
 ---
 # <a name="in-c"></a>in (C++)
 
@@ -29,14 +30,14 @@ C++ **özniteliği,** [ın](/windows/win32/Midl/in) MIDL özniteliğiyle aynı i
 
 ## <a name="example"></a>Örnek
 
-**' De**nasıl kullanılacağına ilişkin bir örnek [için bkz. bağlanabilir.](bindable.md)
+**' De** nasıl kullanılacağına ilişkin bir örnek [için bkz. bağlanabilir.](bindable.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Arabirim parametresi, arabirim yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|**retval**|
 

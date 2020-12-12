@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; valarray &gt; işleçleri'
 title: '&lt;valarray &gt; işleçleri'
 ms.date: 03/27/2019
 f1_keywords:
@@ -30,16 +31,16 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: 76eb3553090cd88cf0798b2b17bbd49906852e40
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 574d0b67910b79941431f3ee8c1f9e3118de35a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321471"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray &gt; işleçleri
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 Eşit olarak boyutlandırılmış iki valarışın öğesine karşılık gelen öğelerin eşit olup olmadığını veya bir valarray öğesinin tüm öğelerinin belirtilen değerin eşit olmadığını sınar.
 
@@ -136,7 +137,7 @@ The element-by-element result of the not equal comparison test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="operator"></a><a name="op_mod"></a>işlecinde
+## <a name="operator"></a><a name="op_mod"></a> işlecinde
 
 İki eşit ölçekli valarışın karşılık gelen öğelerin bölünmesinin veya bir valarray belirtilen bir değere göre bölünmesinin veya bir valarray tarafından belirtilen bir değeri bölen geri kalanını edinir.
 
@@ -221,7 +222,7 @@ The remainders from the element-by-element division is the
 valarray: ( 0 -3 4 -7 1 -3 ).
 ```
 
-## <a name="operatoramp"></a><a name="op_amp"></a>işlecinde&amp;
+## <a name="operatoramp"></a><a name="op_amp"></a> işlecinde&amp;
 
 İki eşit ölçekli valarışın veya bir valarray ile belirtilen öğe türü arasında karşılık gelen öğeler arasında bit düzeyinde **ve** arasında bir değer alır.
 
@@ -255,7 +256,7 @@ operator&(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri, *sol* ve *sağ*bit seviyesinde ve işleminin öğe temelinde birleşimi olan bir valarray.
+Öğeleri, *sol* ve *sağ* bit seviyesinde ve işleminin öğe temelinde birleşimi olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -312,7 +313,7 @@ The element-by-element result of the bitwise operator & is the
 valarray: ( 0 0 0 0 0 4 0 0 0 8 ).
 ```
 
-## <a name="operatorampamp"></a><a name="op_amp_amp"></a>işlecinde&amp;&amp;
+## <a name="operatorampamp"></a><a name="op_amp_amp"></a> işlecinde&amp;&amp;
 
 İki eşit ölçekli valarışın karşılık gelen öğeleri veya bir valarray ile valarray öğesinin öğe türünün belirtilen değeri arasında mantıksal **ve** arasında bir değer alır.
 
@@ -346,7 +347,7 @@ operator&&(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri bool türünde olan ve `AND` *sol* ve *sağ*mantıksal işleminin öğe temelinde birleşimi olan bir valarray.
+Öğeleri bool türünde olan ve `AND` *sol* ve *sağ* mantıksal işleminin öğe temelinde birleşimi olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -401,7 +402,7 @@ The element-by-element result of the logical AND operator&& is the
 valarray: ( 0 0 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 Bir valarray öğelerinin eşit boyutlu bir valarray öğelerinden büyük olup olmadığını veya bir valarray tüm öğelerinin belirtilen değerden büyük veya küçük olup olmadığını sınar.
 
@@ -494,7 +495,7 @@ The element-by-element result of the greater than comparison test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 Bir valarray öğelerinin eşit boyutlu bir valarray öğesinden büyük veya ona eşit olup olmadığını ya da bir valarray öğelerinin, belirtilen bir değerden büyük veya ona eşit veya ondan büyük veya ona eşit olup olmadığını sınar.
 
@@ -587,7 +588,7 @@ The element-by-element result of the greater than or equal test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>işlecinde&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> işlecinde&gt;&gt;
 
 Bir valarray öğesinin her öğesi için bitleri, belirtilen sayıda konum veya bir ikinci valarray tarafından belirtilen öğe temelinde bir miktar ile sağa kaydırır.
 
@@ -676,7 +677,7 @@ The element-by-element result of the right shift is the
 valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 Bir valarray öğelerinin eşit boyutlu bir valarray öğelerinden daha küçük olup olmadığını veya bir valarray tüm öğelerinin belirtilen değerden büyük veya küçük olup olmadığını sınar.
 
@@ -769,7 +770,7 @@ The element-by-element result of the less-than comparson test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 Bir valarray öğelerinin eşit boyutlu bir valarray öğesinden küçük veya ona eşit olup olmadığını ya da bir valarray öğelerinin, belirtilen bir değerden büyük veya ona eşit veya ondan daha büyük veya ona eşit olup olmadığını sınar.
 
@@ -862,7 +863,7 @@ The element-by-element result of the less than or equal test is the
 valarray: ( 0 0 1 0 1 0 1 0 1 0 ).
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> işlecinde&lt;&lt;
 
 Sol, bir valarray öğesinin her öğesi için bitleri belirtilen sayıda konum veya bir ikinci valarray tarafından belirtilen öğe temelinde bir sayı ile kaydırır.
 
@@ -951,7 +952,7 @@ The element-by-element result of the left shift is the
 valarray: ( 1 -2 4 -8 16 -32 64 -128 ).
 ```
 
-## <a name="operator"></a><a name="op_star"></a>işlecinde
+## <a name="operator"></a><a name="op_star"></a> işlecinde
 
 İki eşit ölçekli valarışın veya valarray belirtilen bir değer arasındaki karşılık gelen öğeler arasında öğe temelinde ürün edinir.
 
@@ -985,7 +986,7 @@ operator*(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri *sol* ve *sağ*öğe temelinde olan bir valarray.
+Öğeleri *sol* ve *sağ* öğe temelinde olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -1036,7 +1037,7 @@ The element-by-element result of the multiplication is the
 valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
 ```
 
-## <a name="operator"></a><a name="op_add"></a>işleç +
+## <a name="operator"></a><a name="op_add"></a> işleç +
 
 İki eşit ölçekli valarışın veya valarray belirtilen bir değer arasındaki karşılık gelen öğeler arasındaki öğe temelinde toplamı edinir.
 
@@ -1070,7 +1071,7 @@ operator+(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri *sol* ve *sağ*öğesinin öğe temelinde toplamı olan bir valarray.
+Öğeleri *sol* ve *sağ* öğesinin öğe temelinde toplamı olan bir valarray.
 
 ### <a name="example"></a>Örnek
 
@@ -1121,7 +1122,7 @@ The element-by-element result of the sum is the
 valarray: ( 2 0 4 2 6 4 8 6 ).
 ```
 
-## <a name="operator-"></a><a name="operator-"></a>işlecinde
+## <a name="operator-"></a><a name="operator-"></a> işlecinde
 
 İki eşit ölçekli valarışın veya valarray belirtilen bir değer arasındaki karşılık gelen öğeler arasındaki öğe temelinde farkı edinir.
 
@@ -1155,7 +1156,7 @@ Farkı oluşturan diğer değerlerden veya valarışın çıkarılacak olan çı
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri *sol* ve *sağ*öğesinin öğe temelinde fark olan bir valarray.
+Öğeleri *sol* ve *sağ* öğesinin öğe temelinde fark olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1212,7 +1213,7 @@ The element-by-element result of the difference is the
 valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
 ```
 
-## <a name="operator"></a><a name="op_div"></a>işlecinde
+## <a name="operator"></a><a name="op_div"></a> işlecinde
 
 İki eşit ölçekli valarışın veya valarray belirtilen bir değer arasındaki karşılık gelen öğeler arasında öğe temelinde bölüm edinir.
 
@@ -1303,7 +1304,7 @@ The element-by-element result of the quotient is the
 valarray: ( inf -50 25 -16.6667 12.5 -10 ).
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 Eşit olarak boyutlandırılmış iki valarışın öğesine karşılık gelen öğelerin eşit olup olmadığını veya bir valarray öğesinin tüm öğelerinin belirtilen değere eşit olup olmadığını sınar.
 
@@ -1396,7 +1397,7 @@ The element-by-element result of the equality comparison test is the
 valarray: ( 1 1 0 1 0 1 0 1 0 1 ).
 ```
 
-## <a name="operator"></a><a name="op_xor"></a>işleç ^
+## <a name="operator"></a><a name="op_xor"></a> işleç ^
 
 `OR`İki eşit ölçekli valarışın karşılık gelen öğeler arasında bit düzeyinde dışlamalı ( **Xor**) veya bir valarray ile belirtilen öğe türü değeri arasında bir değer alır.
 
@@ -1430,13 +1431,13 @@ operator^(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri *sol* ve *sağ*bit düzeyinde **Xor** işleminin öğe temelinde birleşimi olan bir valarray.
+Öğeleri *sol* ve *sağ* bit düzeyinde **Xor** işleminin öğe temelinde birleşimi olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bit düzeyinde bir işlem,,,, **`char`** **`int`** **`float`** **`double`** **`long double`** **`void`** **`bool`** veya diğer daha karmaşık veri türlerinde değil, yalnızca bitleri ve veri türlerini ve türevlerini işlemek için kullanılabilir.
 
-Bit düzeyinde dışlamalı `OR` ( **Xor**) aşağıdaki semantik anlamları vardır: bit *b*1 ve *b*2, *b*1 **Xor** *b*2, **`true`** bitlerin tam olarak biri true ise, **`false`** her iki bit de true ise veya her iki bit de doğruysa.
+Bit düzeyinde dışlamalı `OR` ( **Xor**) aşağıdaki semantik anlamları vardır: bit *b* 1 ve *b* 2, *b* 1 **Xor** *b* 2, **`true`** bitlerin tam olarak biri true ise, **`false`** her iki bit de true ise veya her iki bit de doğruysa.
 
 ### <a name="example"></a>Örnek
 
@@ -1491,7 +1492,7 @@ The element-by-element result of the bitwise XOR operator^ is the
 valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
 ```
 
-## <a name="operator124"></a><a name="op_or"></a>işleç&#124;
+## <a name="operator124"></a><a name="op_or"></a> işleç&#124;
 
 `OR`İki eşit ölçekli valarışın karşılık gelen öğeler arasında bit düzeyinde veya bir valarray ile belirtilen bir değer olan öğe türünü alır.
 
@@ -1525,13 +1526,13 @@ operator|(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri `OR` *sol* ve *sağ*bit düzeyinde işlemin öğe temelinde birleşimi olan bir valarray.
+Öğeleri `OR` *sol* ve *sağ* bit düzeyinde işlemin öğe temelinde birleşimi olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bit düzeyinde bir işlem yalnızca,, **`char`** **`int`** **`float`** **`double`** **longdouble**, **`void`** , **`bool`** veya diğer daha karmaşık veri türlerinde değil, BITS içindeki ve veri türlerindeki ve varyantları işlemek için kullanılabilir.
 
-Bit düzeyinde veya mantıksal olarak aynı Truth tablosuna sahiptir `OR` , ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Bit *b*1 ve *b*2, *b*1 `OR` *b*2, **`true`** bitlerin en az biri doğru veya **`false`** her iki bit de yanlış olduğunda. Mantıksal `OR` [işleç&#124;&#124;](../standard-library/valarray-operators.md#op_lor) , bir öğe düzeyinde uygulanır, sıfır olmayan değerlerin tümü olarak sayılıyor **`true`** ve sonuç Boolean değerlerinin bir valarray. Bit düzeyinde OR veya `operator|` aksine, bit düzeyinde işlemin sonucuna bağlı olarak 0 veya 1 ' den farklı değerler valarray olabilir.
+Bit düzeyinde veya mantıksal olarak aynı Truth tablosuna sahiptir `OR` , ancak tek tek bitlerin düzeyindeki veri türü için geçerli olur. Bit *b* 1 ve *b* 2, *b* 1 `OR` *b* 2, **`true`** bitlerin en az biri doğru veya **`false`** her iki bit de yanlış olduğunda. Mantıksal `OR` [işleç&#124;&#124;](../standard-library/valarray-operators.md#op_lor) , bir öğe düzeyinde uygulanır, sıfır olmayan değerlerin tümü olarak sayılıyor **`true`** ve sonuç Boolean değerlerinin bir valarray. Bit düzeyinde OR veya `operator|` aksine, bit düzeyinde işlemin sonucuna bağlı olarak 0 veya 1 ' den farklı değerler valarray olabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1586,7 +1587,7 @@ The element-by-element result of the bitwise OR operator| is the
 valarray: ( 1 0 1 3 3 4 7 6 7 9 ).
 ```
 
-## <a name="operator124124"></a><a name="op_lor"></a>işleç&#124;&#124;
+## <a name="operator124124"></a><a name="op_lor"></a> işleç&#124;&#124;
 
 `OR`İki eşit ölçekli valarışın karşılık gelen öğeleri veya bir valarray ile valarray öğesi türünün belirtilen değeri arasında mantıksal değer edinir.
 
@@ -1620,11 +1621,11 @@ operator||(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri tür olan **`bool`** ve *sol* ve *sağ*mantıksal veya işlemin öğe temelinde birleşimi olan bir valarray.
+Öğeleri tür olan **`bool`** ve *sol* ve *sağ* mantıksal veya işlemin öğe temelinde birleşimi olan bir valarray.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Mantıksal `OR` `operator||` bir öğe düzeyinde uygulanır, sıfır olmayan tüm değerleri olarak sayarak **`true`** Sonuç olarak Boolean değerlerinin bir valarray. &#124;bit düzeyinde işlem, bit düzeyinde `OR` işlemin sonucuna bağlı olarak 0 veya 1 ' den farklı değerler valarray ile sonuçlanabilir. [operator&#124;](../standard-library/valarray-operators.md#op_or)
+Mantıksal `OR` `operator||` bir öğe düzeyinde uygulanır, sıfır olmayan tüm değerleri olarak sayarak **`true`** Sonuç olarak Boolean değerlerinin bir valarray. &#124;bit düzeyinde işlem, bit düzeyinde `OR` işlemin sonucuna bağlı olarak 0 veya 1 ' den farklı değerler valarray ile sonuçlanabilir. [](../standard-library/valarray-operators.md#op_or)
 
 ### <a name="example"></a>Örnek
 

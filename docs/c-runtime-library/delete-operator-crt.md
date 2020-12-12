@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: operator delete (CRT)'
 title: işleç delete(CRT)
 ms.date: 11/04/2016
 api_location:
@@ -18,13 +19,13 @@ helpviewer_keywords:
 - operator delete[]
 - vector delete
 ms.assetid: e91bd0df-3815-40ca-950a-67b470518aed
-ms.openlocfilehash: 73869045eeca6a91a429ee38e5d26d28d56117c7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ff8643b404f7821a4990b39c95fec5a21ec89a86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944515"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321254"
 ---
 # <a name="operator-deletecrt"></a>işleç delete(CRT)
 
-Visual Studio 2013 başlayarak, evrensel C çalışma zamanı (UCRT) artık yeni işleç ve işleç C++silme işlevlerini desteklememektedir. Bunlar artık C++ standart kitaplığın bir parçasıdır. Daha fazla bilgi için, bkz. [yeni ve silme işleçleri](../cpp/new-and-delete-operators.md) ve C++ dil başvurusunda [delete işleci](../cpp/delete-operator-cpp.md) .
+Visual Studio 2013 başlayarak, evrensel C çalışma zamanı (UCRT) artık C++ özel işleci ve DELETE Delete işlevlerini desteklememektedir. Bunlar artık C++ standart kitaplığı 'nın bir parçasıdır. Daha fazla bilgi için bkz. C++ dil başvurusunda [yeni ve silme işleçleri](../cpp/new-and-delete-operators.md) ve [delete işleci](../cpp/delete-operator-cpp.md) .

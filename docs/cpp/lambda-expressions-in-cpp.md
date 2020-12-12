@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: C++ ' da lambda Ifadeleri"
 title: C++'deki Lambda İfadeleri
 ms.date: 05/07/2019
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - lambda expressions [C++], overview
 - lambda expressions [C++], vs. function objects
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-ms.openlocfilehash: 6fcc26c3ed86c86264773a70ac16501c102e1861
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5e65279fa8740876ad8824803ec459ced154f952
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213339"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321047"
 ---
 # <a name="lambda-expressions-in-c"></a>C++'deki Lambda İfadeleri
 
-C++ 11 ve sonraki sürümlerinde, genellikle *lambda*olarak adlandırılan bir lambda ifadesi, bir işlev için bağımsız değişken olarak çağrıldığı veya geçirildiği konumda anonim işlev nesnesi (bir *Kapanış*) tanımlamanın kolay bir yoludur. Genellikle Lambdalar, algoritmalara veya zaman uyumsuz yöntemlere geçirilen birkaç satır kodu kapsüllemek için kullanılır. Bu makale lambdaların ne olduğunu tanımlar, bunları diğer programlama teknikleri ile karşılaştırır, faydalarını anlatır ve temel bir örnek verir.
+C++ 11 ve sonraki sürümlerinde, genellikle *lambda* olarak adlandırılan bir lambda ifadesi, bir işlev için bağımsız değişken olarak çağrıldığı veya geçirildiği konumda anonim işlev nesnesi (bir *Kapanış*) tanımlamanın kolay bir yoludur. Genellikle Lambdalar, algoritmalara veya zaman uyumsuz yöntemlere geçirilen birkaç satır kodu kapsüllemek için kullanılır. Bu makale lambdaların ne olduğunu tanımlar, bunları diğer programlama teknikleri ile karşılaştırır, faydalarını anlatır ve temel bir örnek verir.
 
 ## <a name="related-topics"></a>İlgili Konular
 
@@ -47,7 +48,7 @@ Bu çizimde bir lambda 'nin bölümleri gösterilmektedir:
 
 1. *Capture yan tümcesi* (C++ belirtiminde *lambda-tanıtıcı cer* olarak da bilinir.)
 
-1. *parametre listesi* Seçim. ( *Lambda bildirimci*olarak da bilinir)
+1. *parametre listesi* Seçim. ( *Lambda bildirimci* olarak da bilinir)
 
 1. *kesilebilir belirtim* Seçim.
 
@@ -59,11 +60,11 @@ Bu çizimde bir lambda 'nin bölümleri gösterilmektedir:
 
 ### <a name="capture-clause"></a>Yakalama Yan Tümcesi
 
-Lambda, gövdesinde ( **C++ 14**' te) yeni değişkenler ekleyebilir ve ayrıca çevreleyen kapsamdaki değişkenlere erişebilir veya bunları *yakalayabilir*. Lambda, yakalama yan tümcesi (Standart sözdiziminde*lambda-tanıtıcı cer* ) ile başlar, hangi değişkenlerin yakalandığını ve yakalamanın değere göre mi yoksa başvuruya göre mi olduğunu belirtir. Ampersan ( `&` ) ön ekine sahip değişkenlere, bu değere göre erişilmeyen başvuru ve değişkenlere göre erişilir.
+Lambda, gövdesinde ( **C++ 14**' te) yeni değişkenler ekleyebilir ve ayrıca çevreleyen kapsamdaki değişkenlere erişebilir veya bunları *yakalayabilir*. Lambda, yakalama yan tümcesi (Standart sözdiziminde *lambda-tanıtıcı cer* ) ile başlar, hangi değişkenlerin yakalandığını ve yakalamanın değere göre mi yoksa başvuruya göre mi olduğunu belirtir. Ampersan ( `&` ) ön ekine sahip değişkenlere, bu değere göre erişilmeyen başvuru ve değişkenlere göre erişilir.
 
 Boş bir yakalama yan tümcesi, `[ ]` lambda ifadesinin gövdesinin kapsayan kapsamda hiçbir değişken olmadığını gösterir.
 
-Lambda içinde başvurulan herhangi bir dış değişkenin nasıl yakalanacağını belirtmek için varsayılan yakalama modunu (Standart sözdiziminde*yakala-varsayılan* ) kullanabilirsiniz: `[&]` başvuruda bulunulan tüm değişkenler başvuruya göre yakalanır ve `[=]` değer tarafından yakalandıkları anlamına gelir. Varsayılan yakalama modunu kullanabilir ve ardından belirli değişkenler için ters modu açıkça belirtebilirsiniz. Örneğin, bir lambda gövdesi External değişkenine `total` başvuruya ve dış değişkene `factor` değere göre erişiyorsa, aşağıdaki yakalama yan tümceleri eşdeğerdir:
+Lambda içinde başvurulan herhangi bir dış değişkenin nasıl yakalanacağını belirtmek için varsayılan yakalama modunu (Standart sözdiziminde *yakala-varsayılan* ) kullanabilirsiniz: `[&]` başvuruda bulunulan tüm değişkenler başvuruya göre yakalanır ve `[=]` değer tarafından yakalandıkları anlamına gelir. Varsayılan yakalama modunu kullanabilir ve ardından belirli değişkenler için ters modu açıkça belirtebilirsiniz. Örneğin, bir lambda gövdesi External değişkenine `total` başvuruya ve dış değişkene `factor` değere göre erişiyorsa, aşağıdaki yakalama yan tümceleri eşdeğerdir:
 
 ```cpp
 [&total, factor]
@@ -129,7 +130,7 @@ pNums = make_unique<vector<int>>(nums);
 
 ### <a name="parameter-list"></a>Parametre Listesi
 
-Bir lambda, değişkenleri yakalamaya ek olarak giriş parametrelerini kabul edebilir. Bir parametre listesi (Standart sözdiziminde*lambda bildirimci* ) isteğe bağlıdır ve çoğu yönü bir işlevin parametre listesine benzer.
+Bir lambda, değişkenleri yakalamaya ek olarak giriş parametrelerini kabul edebilir. Bir parametre listesi (Standart sözdiziminde *lambda bildirimci* ) isteğe bağlıdır ve çoğu yönü bir işlevin parametre listesine benzer.
 
 ```cpp
 auto y = [] (int first, int second)
@@ -149,7 +150,7 @@ auto y = [] (auto first, auto second)
 
 Bir lambda ifadesi, kendi bağımsız değişkeni olarak başka bir lambda ifadesini alabilir. Daha fazla bilgi için bkz. [lambda Ifadelerinin örnekleri](../cpp/examples-of-lambda-expressions.md)konusundaki "daha yüksek sıralı Lambda ifadeleri".
 
-Bir parametre listesi isteğe bağlı olduğu için, lambda ifadesine bağımsız değişkenler geçirmezseniz ve lambda bildirimci *özel durum belirtimi*, *sonda-Return-Type*ya da içermiyorsa boş ayraçları atlayabilirsiniz **`mutable`** .
+Bir parametre listesi isteğe bağlı olduğu için, lambda ifadesine bağımsız değişkenler geçirmezseniz ve lambda bildirimci *özel durum belirtimi*, *sonda-Return-Type* ya da içermiyorsa boş ayraçları atlayabilirsiniz **`mutable`** .
 
 ### <a name="mutable-specification"></a>Değişebilir Belirtim
 
@@ -157,7 +158,7 @@ Genellikle, bir lambda 'nin işlev çağrısı işleci sabit değere göre, anca
 
 ### <a name="exception-specification"></a>Özel Durum Belirtimi
 
-**`noexcept`** Lambda ifadesinin özel durumlar oluşturmadığını belirtmek için özel durum belirtimini kullanabilirsiniz. Normal işlevlerde olduğu gibi, bir lambda ifadesi [C4297](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) **`noexcept`** özel durum belirtimini bildirirse ve lambda gövdesi aşağıda gösterildiği gibi bir özel durum oluşturursa, Microsoft C++ derleyicisi uyarı C4297 oluşturur:
+**`noexcept`** Lambda ifadesinin özel durumlar oluşturmadığını belirtmek için özel durum belirtimini kullanabilirsiniz. Normal işlevlerde olduğu gibi, bir lambda ifadesi [](../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md) **`noexcept`** özel durum belirtimini bildirirse ve lambda gövdesi aşağıda gösterildiği gibi bir özel durum oluşturursa, Microsoft C++ derleyicisi uyarı C4297 oluşturur:
 
 ```cpp
 // throw_lambda_expression.cpp
@@ -172,7 +173,7 @@ Daha fazla bilgi için bkz. [özel durum belirtimleri (throw)](../cpp/exception-
 
 ### <a name="return-type"></a>Dönüş Türü
 
-Lambda ifadesinin dönüş türü otomatik olarak çıkarılır. [`auto`](../cpp/auto-cpp.md)Bir *sondaki dönüş türü*belirtmediğiniz müddetçe anahtar sözcüğünü kullanmanız gerekmez. *Sondaki dönüş türü* sıradan bir yöntemin veya işlevin dönüş türü bölümüne benzer. Ancak, dönüş türü parametre listesini izlemelidir ve dönüş türünden önce sondaki-Return-Type anahtar sözcüğünü dahil etmeniz gerekir **`->`** .
+Lambda ifadesinin dönüş türü otomatik olarak çıkarılır. [`auto`](../cpp/auto-cpp.md)Bir *sondaki dönüş türü* belirtmediğiniz müddetçe anahtar sözcüğünü kullanmanız gerekmez. *Sondaki dönüş türü* sıradan bir yöntemin veya işlevin dönüş türü bölümüne benzer. Ancak, dönüş türü parametre listesini izlemelidir ve dönüş türünden önce sondaki-Return-Type anahtar sözcüğünü dahil etmeniz gerekir **`->`** .
 
 Lambda gövdesinde yalnızca bir dönüş deyimi varsa veya ifade bir değer döndürmezse bir lambda ifadesinin dönüş türü bölümünü atlayabilirsiniz. Lambda gövdesi bir dönüş deyimi içeriyorsa, derleyici dönüş türünü dönüş ifadesinin türünden çıkarır. Aksi halde, derleyici dönüş türünü olarak bir kesinti olur **`void`** . Bu ilkeyi gösteren aşağıdaki kod parçacıkları örneğini inceleyin.
 
@@ -186,7 +187,7 @@ Lambda ifadesi, kendi dönüş değeri olarak başka bir lambda ifadesi üretebi
 
 ### <a name="lambda-body"></a>Lambda Gövdesi
 
-Lambda ifadesinin lambda gövdesi (Standart sözdiziminde*bileşik deyim* ), sıradan bir yöntem veya işlev gövdesinin içerebileceği her şeyi içerebilir. Hem sıradan bir işlevin hem de bir lambda ifadesinin gövdesi bu tür değişkenlere erişebilir:
+Lambda ifadesinin lambda gövdesi (Standart sözdiziminde *bileşik deyim* ), sıradan bir yöntem veya işlev gövdesinin içerebileceği her şeyi içerebilir. Hem sıradan bir işlevin hem de bir lambda ifadesinin gövdesi bu tür değişkenlere erişebilir:
 
 - Daha önce açıklandığı gibi kapsayan kapsamdan yakalanan değişkenler.
 
@@ -322,7 +323,7 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
 
 Daha fazla bilgi için bkz. [generate_n](../standard-library/algorithm-functions.md#generate_n).
 
-## <a name="constexpr-lambda-expressions"></a>`constexpr`Lambda ifadeleri
+## <a name="constexpr-lambda-expressions"></a>`constexpr` Lambda ifadeleri
 
 **Visual Studio 2017 sürüm 15,3 ve üzeri** (ile birlikte kullanılabilir [`/std:c++17`](../build/reference/std-specify-language-standard-version.md) ): bir lambda ifadesi **`constexpr`** , yakalayan veya tanıtan her bir veri üyesinin başlatılmasına bir sabit ifade dahilinde izin verildiğinde, sabit bir ifadede olarak verilebilir veya kullanılabilir.
 

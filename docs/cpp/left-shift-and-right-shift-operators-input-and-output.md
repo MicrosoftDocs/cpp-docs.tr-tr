@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sola kaydırma ve sağ kaydırma Işleçleri ( &gt; &gt; ve &lt; &lt; )'
 title: Sol kaydırma ve sağ kaydırma Işleçleri ( &gt; &gt; ve &lt; &lt; )
 ms.date: 08/13/2018
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - shift operators [C++]
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-ms.openlocfilehash: 4cdb353c950313396b331dc7ba01b3ea392ed0f8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e13333d178fdfbb44631b9a2aced9ed2a48ad871
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321024"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma Işleçleri ( &gt; &gt; ve &lt; &lt; )
 
-Bit düzeyinde kaydırma işleçleri sağ SHIFT işleçtir (), bu, Shift-ifadesinin bitlerini **&gt;&gt;** sağa *shift-expression* ve sola kaydırma işleci ( **&lt;&lt;** ) ile sola kayar. *shift-expression* <sup>1</sup>
+Bit düzeyinde kaydırma işleçleri sağ SHIFT işleçtir (), bu, Shift-ifadesinin bitlerini **&gt;&gt;** sağa  ve sola kaydırma işleci ( **&lt;&lt;** ) ile sola kayar.  <sup>1</sup>
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > *SHIFT ifadesi* `<<` *Toplamsal ifadesi*\
 > *SHIFT ifadesi* `>>` *Toplamsal ifadesi*
@@ -36,7 +37,7 @@ Bit düzeyinde kaydırma işleçleri sağ SHIFT işleçtir (), bu, Shift-ifadesi
 
 ## <a name="left-shifts"></a>Sola Kaydırmalar
 
-Sol SHIFT işleci, *SHIFT ifadesindeki* bitlerin, *DITIVE ifadesi*tarafından belirtilen konum sayısına göre sola kaydırmasına neden olur. Kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. Sola kaydırma mantıksal bir kaydırmadır (imza biti dahil, sona kaydırılan bitler atılır). Bit düzeyinde vardiyaların türleri hakkında daha fazla bilgi için bkz. [bit düzeyinde vardiyalar](https://en.wikipedia.org/wiki/Bitwise_shift).
+Sol SHIFT işleci, *SHIFT ifadesindeki* bitlerin, *DITIVE ifadesi* tarafından belirtilen konum sayısına göre sola kaydırmasına neden olur. Kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. Sola kaydırma mantıksal bir kaydırmadır (imza biti dahil, sona kaydırılan bitler atılır). Bit düzeyinde vardiyaların türleri hakkında daha fazla bilgi için bkz. [bit düzeyinde vardiyalar](https://en.wikipedia.org/wiki/Bitwise_shift).
 
 Aşağıdaki örnek, işaretsiz sayıların kullanıldığı sola kaydırma işleçlerini gösterir. Bu örnek değeri bir bit kümesi olarak temsil eden bitlere ne olduğunu göstermektedir. Daha fazla bilgi için bkz. [bitset Class](../standard-library/bitset-class.md).
 
@@ -86,7 +87,7 @@ int main() {
 
 ## <a name="right-shifts"></a>Sağa Kaydırmalar
 
-Sağ SHIFT işleci, *SHIFT ifadesindeki* bit deseninin, *eklenebilir ifade*tarafından belirtilen konum sayısına göre sağa kaydırmasına neden olur. İşaretsiz sayılar için, kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. İşaretli sayılar için, imza biti boşaltılmış bit konumlarını doldurmak için kullanılır. Başka bir deyişle, sayı pozitif ise 0 kullanılır ve sayı negatif ise 1 kullanılır.
+Sağ SHIFT işleci, *SHIFT ifadesindeki* bit deseninin, *eklenebilir ifade* tarafından belirtilen konum sayısına göre sağa kaydırmasına neden olur. İşaretsiz sayılar için, kaydırma işleci tarafından boşaltılmış bit konumları sıfır dolguludur. İşaretli sayılar için, imza biti boşaltılmış bit konumlarını doldurmak için kullanılır. Başka bir deyişle, sayı pozitif ise 0 kullanılır ve sayı negatif ise 1 kullanılır.
 
 > [!IMPORTANT]
 > İmzalı bir negatif sayının sağ kaydırmasının sonucu uygulama bağımlıdır. Microsoft C++ derleyicisi, karıştırılmış bit konumlarını doldurmaları için işaret bitini kullansa da, diğer uygulamaların da bunu yapacağının garantisi yoktur.
@@ -174,7 +175,7 @@ int main() {
 
 ## <a name="shifts-and-promotions"></a>Kaydırmalar ve Yükseltmeler
 
-Bir kaydırma işlecinin her iki tarafındaki ifadelerin de tamsayı türünde olması gerekir. Integral yükseltmeler, [Standart dönüşümlerde](standard-conversions.md)açıklanan kurallara göre gerçekleştirilir. Sonucun türü, yükseltilen *kaydırma ifadesinin*türüyle aynı olur.
+Bir kaydırma işlecinin her iki tarafındaki ifadelerin de tamsayı türünde olması gerekir. Integral yükseltmeler, [Standart dönüşümlerde](standard-conversions.md)açıklanan kurallara göre gerçekleştirilir. Sonucun türü, yükseltilen *kaydırma ifadesinin* türüyle aynı olur.
 
 Aşağıdaki örnekte, türünde bir değişken **`char`** bir sürümüne yükseltilir **`int`** .
 
@@ -197,7 +198,7 @@ int main() {
 
 ## <a name="additional-details"></a>Ek ayrıntılar
 
-Ek *ifade* negatifse veya (yükseltilen) *SHIFT ifadesinde*bit sayısından büyük veya buna *eşitse, bir* vardiya işleminin sonucu tanımsız olur. *Toplamsal ifade* 0 ise hiçbir vardiya işlemi gerçekleştirilmez.
+Ek *ifade* negatifse veya (yükseltilen) *SHIFT ifadesinde* bit sayısından büyük veya buna *eşitse, bir* vardiya işleminin sonucu tanımsız olur. *Toplamsal ifade* 0 ise hiçbir vardiya işlemi gerçekleştirilmez.
 
 ```cpp
 #include <iostream>

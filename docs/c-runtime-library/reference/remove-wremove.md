@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: kaldırma, _wremove'
 title: kaldır, _wremove
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-ms.openlocfilehash: bf3eedaa9c24e7385686e2343857e69171e43090
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c17215803e03e1e59df86b6049249a824d5615c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917836"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322517"
 ---
 # <a name="remove-_wremove"></a>kaldır, _wremove
 
@@ -65,13 +66,13 @@ Kaldırılacak dosyanın yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, dosya başarıyla silinirse 0 döndürür. Aksi takdirde,-1 döndürür ve **errno** 'ya, yolun bir salt okunurdur dosyası belirtdüğünü, bir dizin olduğunu veya dosyanın açık olduğunu ya da dosya adının ya da Yolun bulunamadığını **göstermek üzere olduğunu** belirtir. **ENOENT**
+Bu işlevlerin her biri, dosya başarıyla silinirse 0 döndürür. Aksi takdirde,-1 döndürür ve **errno** 'ya, yolun bir salt okunurdur dosyası belirtdüğünü, bir dizin olduğunu veya dosyanın açık olduğunu ya da dosya adının ya da Yolun bulunamadığını **göstermek üzere olduğunu** belirtir. 
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Remove** işlevi, yol tarafından belirtilen dosyayı siler *.* **_wremove** , **_remove**geniş karakterli bir sürümüdür; _wremove *yol* bağımsız değişkeni **_wremove** , geniş karakterli bir dizedir. **_wremove** ve **_remove** aynı şekilde davranır. Bir dosya silinmeden önce tüm işleyicilerin kapatılması gerekir.
+**Remove** işlevi, yol tarafından belirtilen dosyayı siler *.* **_wremove** , **_remove** geniş karakterli bir sürümüdür; _wremove *yol* bağımsız değişkeni  , geniş karakterli bir dizedir. **_wremove** ve **_remove** aynı şekilde davranır. Bir dosya silinmeden önce tüm işleyicilerin kapatılması gerekir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -79,14 +80,14 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tremove**|**remove**|**remove**|**_wremove**|
+|**_tremove**|**temizlenmesine**|**temizlenmesine**|**_wremove**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**remove**|\<stdio. h> veya \<GÇ. h>|
-|**_wremove**|\<stdio. h> veya \<wchar. h>|
+|**temizlenmesine**|\<stdio.h> veya \<io.h>|
+|**_wremove**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -111,7 +112,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_removetxt"></a>Giriş: crt_remove. txt
+### <a name="input-crt_removetxt"></a>Giriş: crt_remove.txt
 
 ```Input
 This file will be deleted.
@@ -125,5 +126,5 @@ Deleted 'CRT_REMOVE.TXT'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_unlink, _wunlink](unlink-wunlink.md)<br/>

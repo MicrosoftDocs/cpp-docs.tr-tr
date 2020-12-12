@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: hata ayıklama yordamları'
 title: Hata ayıklama yordamları
 ms.date: 04/10/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - debug macros
 - debugging [CRT], runtime routines
 ms.assetid: cb4d2664-10f3-42f7-a516-595558075471
-ms.openlocfilehash: 59e705947856ba9fe9477e88328b1fb2344abb7c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 60857549cbbb0871da208708e9acd812444b3274
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321290"
 ---
 # <a name="debug-routines"></a>Hata ayıklama yordamları
 

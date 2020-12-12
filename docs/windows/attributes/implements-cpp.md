@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Implements (C++)'
 title: Implements (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 946972a9a7c3041c75e82865acb35feb4a97254a
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 601d1c99a9f59af8354d98e930a3e21c45255401
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686749"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321395"
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
 
 IDL coclass 'ın üyeleri olmaya zorlanan dağıtım arabirimlerini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ implements(
@@ -34,14 +35,14 @@ IDL coclass 'ın üyesi olacak arabirimlerin virgülle ayrılmış bir listesi. 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, IDL coclass 'a yalnızca temel sınıfları olan COM arabirimleri `coclass` eklenir. **implements** , DIĞER arabirimlerin IDL üyeleri olmasını zorlamanızı sağlar `coclass` .
+Varsayılan olarak, IDL coclass 'a yalnızca temel sınıfları olan COM arabirimleri `coclass` eklenir.  , DIĞER arabirimlerin IDL üyeleri olmasını zorlamanızı sağlar `coclass` .
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
-|**Tekrarlanabilir**|Yes|
+|**Yinelenebilir**|Evet|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

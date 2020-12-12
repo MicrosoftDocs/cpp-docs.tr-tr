@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: temel türler (C++/CX)'
 title: Temel Türler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: c9f82907-25f2-440b-91d6-afb8dbd46ea6
-ms.openlocfilehash: 3d484d9490a0a5b2ee2e7f92381528124b47701c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 40e0a849d0b838f53ddaea26c8993dcfe625ed5d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231006"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321011"
 ---
 # <a name="fundamental-types-ccx"></a>Temel Türler (C++/CX)
 
@@ -19,7 +20,7 @@ Aşağıdaki tabloda yerleşik Boole ve karakter türleri ve bunların standart 
 
 |Ad Alanı|C++/CX adı|Tanım|Standart C++ adı|Değer aralığı|
 |---------------|-----------------------------------------------------------------------|----------------|-------------------------|---------------------|
-|Platform|Boole|8 bit Boolean değeri.|bool|**`true`**(sıfır dışında) ve **`false`** (sıfır)|
+|Platform|Boole|8 bit Boolean değeri.|bool|**`true`** (sıfır dışında) ve **`false`** (sıfır)|
 |default|Char16|Unicode (UTF-16) kod noktasını temsil eden 16 bit sayısal olmayan bir değer.|wchar_t<br /><br /> -veya-<br /><br /> L'c '|(Unicode standardı tarafından belirtilen)|
 
 ## <a name="numeric-types"></a>Sayısal türler
@@ -43,7 +44,7 @@ Aşağıdaki tabloda yerleşik sayısal türler listelenmektedir. Sayısal türl
 
 Aşağıdaki tabloda Windows Çalışma Zamanı mimarisi tarafından tanımlanan ve C++/CX' te yerleşik olan bazı ek türler listelenmektedir. Nesne ve dize başvuru türleridir. Diğerleri değer türlerdir. Bu türlerin tümü `Platform` ad alanında bildirilmiştir. Tam liste için bkz. [Platform ad alanı](../cppcx/platform-namespace-c-cx.md).
 
-|Name|Tanım|
+|Ad|Tanım|
 |----------|----------------|
 |Nesne|Tüm Windows Çalışma Zamanı türlerini temsil eder.|
 |Dize|Metni temsil eden bir dizi karakter.|

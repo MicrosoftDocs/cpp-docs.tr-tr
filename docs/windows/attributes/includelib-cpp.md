@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ıncludelib (C++)'
 title: ıncludelib (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - includelib attribute
 ms.assetid: cd90ea6e-5ae8-4f11-b8d1-662db95412b2
-ms.openlocfilehash: 30e84a6c82ec25e07ca0eb08f64c7aa5b560e9e7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9a7565a931a865b69f0da95da9e92481b27de3b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321356"
 ---
 # <a name="includelib-c"></a>includelib (C++)
 
 Oluşturulan. IDL dosyasına bir. IDL veya. h dosyasının eklenmesine neden olur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ includelib(name.idl) ];
@@ -48,7 +49,7 @@ Aşağıdaki kod bir. cpp dosyasında gösterilmiştir:
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Yes|
+|**Yinelenebilir**|Evet|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: kayıt kümesi: kayıtları toplu yakalama (ODBC)'
 title: 'Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - rowsets, bulk row fetching
 - RFX (ODBC), bulk row fetching
 ms.assetid: 20d10fe9-c58a-414a-b675-cdf9aa283e4f
-ms.openlocfilehash: ccdc4668f0c19f63ec86ee9a6d788532eb4d9d38
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 6f77186a640971e6763160dde397f5aeb0b97f3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322357"
 ---
 # <a name="recordset-fetching-records-in-bulk-odbc"></a>Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)
 
@@ -35,7 +36,7 @@ Bu konuda aşağıdakiler açıklanmaktadır:
 
 - [Toplu kayıt alanı değişimini uygulama](#_core_how_to_implement_bulk_record_field_exchange).
 
-## <a name="how-crecordset-supports-bulk-row-fetching"></a><a name="_core_how_crecordset_supports_bulk_row_fetching"></a>CRecordset toplu satır getirmeyi nasıl destekler
+## <a name="how-crecordset-supports-bulk-row-fetching"></a><a name="_core_how_crecordset_supports_bulk_row_fetching"></a> CRecordset toplu satır getirmeyi nasıl destekler
 
 Kayıt kümesi nesneniz açılmadan önce, üye işlevi ile bir satır kümesi boyutu tanımlayabilirsiniz `SetRowsetSize` . Satır kümesi boyutu, tek bir getirme sırasında kaç kaydın alınması gerektiğini belirtir. Toplu satır getirme uygulandığında, varsayılan satır kümesi boyutu 25 ' tir. Toplu satır getirme uygulanmadığı takdirde satır kümesi boyutu 1 ' de sabit kalır.
 
@@ -54,7 +55,7 @@ Aşağıdaki tabloda, `CRecordset` toplu satır getirmeyi desteklemek için tara
 |[SetRowsetCursorPosition](../../mfc/reference/crecordset-class.md#setrowsetcursorposition)|İmleci bir satır kümesi içindeki belirli bir satıra taşımıştır.|
 |[SetRowsetSize](../../mfc/reference/crecordset-class.md#setrowsetsize)|Satır kümesi boyutu için ayarı belirtilen değere değiştiren sanal işlev.|
 
-## <a name="special-considerations"></a><a name="_core_special_considerations"></a>Özel Konular
+## <a name="special-considerations"></a><a name="_core_special_considerations"></a> Özel Konular
 
 Toplu satır getirme bir performans kazanımı olsa da, bazı özellikler farklı şekilde çalışır. Toplu satır getirmeyi uygulamaya karar vermeden önce aşağıdakileri göz önünde bulundurun:
 
@@ -62,11 +63,11 @@ Toplu satır getirme bir performans kazanımı olsa da, bazı özellikler farkl�
 
 - ,,, `IsDeleted` , `IsFieldDirty` `IsFieldNull` `IsFieldNullable` `SetFieldDirty` , Ve işlevleri `SetFieldNull` toplu satır getirmeyi uygulayan kayıt kümelerinde kullanılamaz. Ancak, yerine ve yerinde çağırabilirsiniz `GetRowStatus` `IsDeleted` `GetODBCFieldInfo` `IsFieldNullable` .
 
-- `Move`İşlemler, kayıt kümesini satır kümesine göre konumlandırır. Örneğin, ilk satır kümesi boyutu 10 olan 100 kayda sahip bir kayıt kümesi açtığınızı varsayın. `Open`1 ' den 10 ' a kadar satırları getirir ve geçerli kayıt 1. satırda konumlandırılır. Sonraki `MoveNext` satırı değil, sonraki satır kümesini getiren bir çağrı. Bu satır kümesi 11 ' den 20 ' ye kadar olan satırlar 11 ' de konumlandırılmış olan satırları içerir. `MoveNext` `Move( 1 )` Toplu satır getirme uygulandığında eşdeğer değildir. `Move( 1 )`geçerli kayıttan 1 satır Başlatan satır kümesini getirir. Bu örnekte, çağırma `Move( 1 )` sonrasında çağırmak `Open` , geçerli kayıt satır 2 ' de konumlandığı sırada 2 ' den 11 ' den 11 ' den fazla satır kümesi getirir. Daha fazla bilgi için üye [Taşı](../../mfc/reference/crecordset-class.md#move) işlevine bakın.
+- `Move`İşlemler, kayıt kümesini satır kümesine göre konumlandırır. Örneğin, ilk satır kümesi boyutu 10 olan 100 kayda sahip bir kayıt kümesi açtığınızı varsayın. `Open` 1 ' den 10 ' a kadar satırları getirir ve geçerli kayıt 1. satırda konumlandırılır. Sonraki `MoveNext` satırı değil, sonraki satır kümesini getiren bir çağrı. Bu satır kümesi 11 ' den 20 ' ye kadar olan satırlar 11 ' de konumlandırılmış olan satırları içerir. `MoveNext` `Move( 1 )` Toplu satır getirme uygulandığında eşdeğer değildir. `Move( 1 )` geçerli kayıttan 1 satır Başlatan satır kümesini getirir. Bu örnekte, çağırma `Move( 1 )` sonrasında çağırmak `Open` , geçerli kayıt satır 2 ' de konumlandığı sırada 2 ' den 11 ' den 11 ' den fazla satır kümesi getirir. Daha fazla bilgi için üye [Taşı](../../mfc/reference/crecordset-class.md#move) işlevine bakın.
 
 - Kayıt alanı değişimi 'nin aksine, sihirbazlar toplu kayıt alanı değişimini desteklemez. Diğer bir deyişle `DoBulkFieldExchange` , toplu RFX işlevlerine çağrılar yazarak alan veri üyelerinizi el ile bildirmeniz ve el ile geçersiz kılmanız gerekir. Daha fazla bilgi için bkz. *sınıf kitaplığı başvurusunda* [kayıt alanı değişim işlevleri](../../mfc/reference/record-field-exchange-functions.md) .
 
-## <a name="how-to-implement-bulk-record-field-exchange"></a><a name="_core_how_to_implement_bulk_record_field_exchange"></a>Toplu kayıt alanı değişimini uygulama
+## <a name="how-to-implement-bulk-record-field-exchange"></a><a name="_core_how_to_implement_bulk_record_field_exchange"></a> Toplu kayıt alanı değişimini uygulama
 
 Toplu kayıt alanı değişimi, veri kaynağındaki veri kümesini kayıt kümesi nesnesine aktarır. Toplu RFX işlevleri bu verilerin depolanması için dizileri, ayrıca satır kümesindeki her bir veri öğesinin uzunluğunu depolamak için dizileri kullanır. Sınıf tanımınızda, veri dizilerine erişmek için alan veri üyelerinizi işaretçiler olarak tanımlamanız gerekir. Ayrıca, uzunluklardan oluşan dizilere erişmek için bir işaretçiler kümesi tanımlamanız gerekir. Tüm parametre veri üyeleri işaretçiler olarak bildirilmelidir; Toplu kayıt alanı değişimi kullanılırken parametre veri üyelerini bildirmek, kayıt alanı değişimi kullanılırken bunları bildirme ile aynıdır. Aşağıdaki kod basit bir örnek göstermektedir:
 

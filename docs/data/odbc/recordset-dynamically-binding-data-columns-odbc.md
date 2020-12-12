@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: kayıt kümesi: dinamik olarak bağlama veri sütunları (ODBC)'
 title: 'Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)'
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-ms.openlocfilehash: 8bc9ba8a143234bec7927c9578a69a95a511bb9f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cb141874fa39b06e8e000c03e538021650facf91
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837794"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322385"
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)
 
@@ -146,7 +147,7 @@ Sonra, dinamik olarak bağlanacak sütunlar için depolama konumları ayarlayın
 Yukarıdaki yordamların sonucu iki ana listedir: sütunlar ve geçerli kayıt için sütunlardaki değerleri içeren dinamik sütun-değer adlarını içeren sütunlar ve dinamik olarak sütunlar.
 
 > [!TIP]
-> Yeni sütunlar aynı veri türünde değilse, sütun listesinde her bir karşılık gelen öğenin türünü bir şekilde tanımlayan öğeleri içeren ek bir paralel liste isteyebilirsiniz. (İsterseniz AFX_RFX_BOOL, AFX_RFX_BYTE vb. değerlerini kullanabilirsiniz. Bu sabitler, AFXDB 'de tanımlanmıştır. H.) sütun veri türlerini nasıl temsil ettiğini temel alan bir liste türü seçin.
+> Yeni sütunlar aynı veri türünde değilse, sütun listesinde her bir karşılık gelen öğenin türünü bir şekilde tanımlayan öğeleri içeren ek bir paralel liste isteyebilirsiniz. (İsterseniz AFX_RFX_BOOL, AFX_RFX_BYTE vb. değerlerini kullanabilirsiniz. Bu sabitler, AFXDB. H içinde tanımlanmıştır.) Sütun veri türlerini nasıl temsil ettiğini temel alarak bir liste türü seçin.
 
 ### <a name="adding-rfx-calls-to-bind-the-columns"></a><a name="_core_adding_rfx_calls_to_bind_the_columns"></a> Sütunları bağlamak için RFX çağrıları ekleme
 

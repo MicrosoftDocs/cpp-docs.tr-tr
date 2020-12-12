@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yeniden adlandırma, _wrename'
 title: yeniden adlandır, _wrename
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - names [C++], changing directory
 - renaming files
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
-ms.openlocfilehash: b0a5f43d92d6dd85626f00bf5c2a6350e5bfa10f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2a68bff031f321a2566c0da99aacc053ba475928
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917797"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322504"
 ---
 # <a name="rename-_wrename"></a>yeniden adlandır, _wrename
 
@@ -86,9 +87,9 @@ Olası diğer dönüş değerleri için bkz. [_doserrno, _errno, syserrlist ve _
 
 ## <a name="remarks"></a>Açıklamalar
 
-Rename işlevi, *OldName* tarafından belirtilen dosya veya dizini *YeniAd*tarafından verilen ada **yeniden** adlandırır. Eski ad, varolan bir dosyanın veya dizinin yolu olmalıdır. Yeni ad var olan bir dosyanın veya dizinin adı olmamalıdır. *Newname* bağımsız değişkeninde farklı bir yol vererek bir dosyayı bir dizinden veya cihazdan diğerine taşımak için **Yeniden Adlandır** ' a kullanabilirsiniz. Ancak, bir dizini taşımak için **yeniden adlandırma** kullanamazsınız. Dizinler yeniden adlandırılabilir, ancak taşınamaz.
+Rename işlevi, *OldName* tarafından belirtilen dosya veya dizini *YeniAd* tarafından verilen ada **yeniden** adlandırır. Eski ad, varolan bir dosyanın veya dizinin yolu olmalıdır. Yeni ad var olan bir dosyanın veya dizinin adı olmamalıdır. *Newname* bağımsız değişkeninde farklı bir yol vererek bir dosyayı bir dizinden veya cihazdan diğerine taşımak için **Yeniden Adlandır** ' a kullanabilirsiniz. Ancak, bir dizini taşımak için **yeniden adlandırma** kullanamazsınız. Dizinler yeniden adlandırılabilir, ancak taşınamaz.
 
-**_wrename** , **_rename**geniş karakterli bir sürümüdür; **_wrename** bağımsız değişkenler geniş karakterli dizelerdir. **_wrename** ve **_rename** aynı şekilde davranır.
+**_wrename** , **_rename** geniş karakterli bir sürümüdür; **_wrename** bağımsız değişkenler geniş karakterli dizelerdir. **_wrename** ve **_rename** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -102,8 +103,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**Yeniden Adlandır**|\<GÇ. h> veya \<stdio. h>|
-|**_wrename**|\<stdio. h> veya \<wchar. h>|
+|**Yeniden Adlandır**|\<io.h> veya \<stdio.h>|
+|**_wrename**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -145,4 +146,4 @@ File 'CRT_RENAMER.OBJ' renamed to 'CRT_RENAMER.JBO'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2178'
 title: Derleyici hatası C2178
 ms.date: 05/08/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2178
 ms.assetid: 79a14158-17f3-4221-bd06-9d675c49cef4
-ms.openlocfilehash: 4904c7009151748b4585060c816e0bd5c407be33
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7a93293fdb87f30827b8b9c3c6d38066b0c76798
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225559"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322168"
 ---
 # <a name="compiler-error-c2178"></a>Derleyici hatası C2178
 

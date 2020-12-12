@@ -1,5 +1,6 @@
 ---
-title: CMFCRibbonMainPanel Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCRibbonMainPanel sınıfı'
+title: CMFCRibbonMainPanel sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonMainPanel
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - CMFCRibbonMainPanel [MFC], AddToRight
 - CMFCRibbonMainPanel [MFC], GetCommandsFrame
 ms.assetid: 1af78798-5e75-4365-9c81-a54aa5679602
-ms.openlocfilehash: 0fd1cd2fec31f9da0c2bec36d08586780f4f95c3
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 823a1ce8a8684ca791f838346a1fb50727096a62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753572"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321818"
 ---
-# <a name="cmfcribbonmainpanel-class"></a>CMFCRibbonMainPanel Sınıfı
+# <a name="cmfcribbonmainpanel-class"></a>CMFCRibbonMainPanel sınıfı
 
-[CMFCRibbonApplicationButton'ı](../../mfc/reference/cmfcribbonapplicationbutton-class.md)tıklattığınızda görüntüleyen bir şerit paneli uygular.
+[CMFCRibbonApplicationButton](../../mfc/reference/cmfcribbonapplicationbutton-class.md)öğesine tıkladığınızda görüntülenen şerit panelini uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCRibbonMainPanel : public CMFCRibbonPanel
@@ -37,48 +38,48 @@ class CMFCRibbonMainPanel : public CMFCRibbonPanel
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`CMFCRibbonMainPanel::CMFCRibbonMainPanel`|Varsayılan oluşturucu.|
+|`CMFCRibbonMainPanel::CMFCRibbonMainPanel`|Varsayılan Oluşturucu.|
 |`CMFCRibbonMainPanel::~CMFCRibbonMainPanel`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonMainPanel::Ekle](#add)|Uygulama düğmesi panelinin sol bölmesine bir şerit öğesi ekler. [(CMFCRibbonPanel geçersiz kılar::Ekle](../../mfc/reference/cmfcribbonpanel-class.md#add).)|
-|[CMFCRibbonMainPanel::AddRecentFilesList](#addrecentfileslist)|Son dosyalar listesi menüsüne bir metin dizesi ekler.|
-|[CMFCRibbonMainPanel::Addtobottom](#addtobottom)|Şerit uygulama panelinin alt bölmesine bir şerit öğesi ekler.|
-|[CMFCRibbonMainPanel::Addtoright](#addtoright)|Uygulama düğmesi panelinin sağ bölmesine bir şerit öğesi ekler.|
-|`CMFCRibbonMainPanel::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
-|[CMFCRibbonMainPanel::GetCommandsFrame](#getcommandsframe)|Şerit ana panelin alanını temsil eden bir dikdörtgen döndürür.|
-|`CMFCRibbonMainPanel::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
+|[CMFCRibbonMainPanel:: Add](#add)|Uygulama düğmesi bölmesinin sol bölmesine bir şerit öğesi ekler. ( [CMFCRibbonPanel:: Add](../../mfc/reference/cmfcribbonpanel-class.md#add).) geçersiz kılar|
+|[CMFCRibbonMainPanel:: AddRecentFilesList](#addrecentfileslist)|Son Dosyalar liste menüsüne bir metin dizesi ekler.|
+|[CMFCRibbonMainPanel:: AddToBottom](#addtobottom)|Şerit uygulama panelinin alt bölmesine bir şerit öğesi ekler.|
+|[CMFCRibbonMainPanel:: AddToRight](#addtoright)|Uygulama düğmesi panelinin sağ bölmesine bir şerit öğesi ekler.|
+|`CMFCRibbonMainPanel::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
+|[CMFCRibbonMainPanel:: GetCommandsFrame](#getcommandsframe)|Şerit Ana bölmesinin alanını temsil eden bir dikdörtgen döndürür.|
+|`CMFCRibbonMainPanel::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çerçeve, uygulama `CMFCRibbonMainPanel` panelini ne zaman açtığınızı görüntüler. Üç bölme içerir:
+Çerçeve, `CMFCRibbonMainPanel` uygulama panelini açtığınızda öğesini görüntüler. Üç bölme içerir:
 
-- Sol bölmede **Aç,** **Kaydet,** **Yazdır**ve **Kapat**gibi dosyalarla ilişkili komutlar bulunur. Bu bölmeye komut eklemek için [CMFCRibbonMainPanel'i arayın:Ekle.](#add)
+- Sol bölmede, **açma**, **kaydetme**, **yazdırma** ve **kapatma** gibi dosyalarla ilişkili komutlar bulunur. Bu bölmeye bir komut eklemek için [CMFCRibbonMainPanel:: Add](#add)' i çağırın.
 
-- Sağ bölme, sol bölmede tıklattıkladığınız komutu değiştiren seçenekler içerir. Örneğin, sol bölmeden **Farklı Kaydet'i** tıklattığınızda, sağ bölme kullanılabilir dosya türlerini görüntüleyebilir. Bu bölmeye bir öğe eklemek için [CMFCRibbonMainPanel'i arayın::AddToRight.](#addtoright)
+- Sağ bölmede, sol bölmede tıkladınız komutu değiştiren seçenekler bulunur. Örneğin, sol bölmedeki **farklı kaydet** ' e tıklarsanız sağ bölme kullanılabilir dosya türlerini görüntüleyebilir. Bu bölmeye bir öğe eklemek için [CMFCRibbonMainPanel:: AddToRight](#addtoright)' ı çağırın.
 
-- Alt bölmede, uygulamanın ayarlarını değiştirmenize ve programdan çıkmanıza olanak tanıyan düğmeler yer alıyor. Bu bölmeye bir öğe eklemek için [CMFCRibbonMainPanel'i arayın::AddToBottom.](#addtobottom)
+- Alt bölmede, uygulamanın ayarlarını değiştirmenize ve programdan çıkmasına imkan tanıyan düğmeler bulunur. Bu bölmeye bir öğe eklemek için [CMFCRibbonMainPanel:: AddToBottom](#addtobottom)' ı çağırın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[CMFCRibbonPanel](../../mfc/reference/cmfcribbonpanel-class.md)
+[Cmfcribbonpaneli](../../mfc/reference/cmfcribbonpanel-class.md)
 
 [CMFCRibbonMainPanel](../../mfc/reference/cmfcribbonmainpanel-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxRibbonMainPanel.h
+**Üstbilgi:** afxRibbonMainPanel. h
 
-## <a name="cmfcribbonmainpaneladd"></a><a name="add"></a>CMFCRibbonMainPanel::Ekle
+## <a name="cmfcribbonmainpaneladd"></a><a name="add"></a> CMFCRibbonMainPanel:: Add
 
-Uygulama düğmesi panelinin sol bölmesine bir şerit öğesi ekler.
+Uygulama düğmesi bölmesinin sol bölmesine bir şerit öğesi ekler.
 
 ```
 virtual void Add(CMFCRibbonBaseElement* pElem);
@@ -86,16 +87,16 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 
 ### <a name="parameters"></a>Parametreler
 
-*pElem*<br/>
-[içinde, dışarı] Ana panele eklemek için şerit öğesiiçin bir işaretçi.
+*Peled*<br/>
+[in, out] Ana panele eklemek için şerit öğesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Panele bir şerit öğesi ekler. Bu yöntem kullanılarak eklenen öğeler ana panelin sol sütununda yer alır.
+Panele bir şerit öğesi ekler. Bu yöntem kullanılarak eklenen öğeler ana bölmenin sol sütununda yer alır.
 
-## <a name="cmfcribbonmainpaneladdrecentfileslist"></a><a name="addrecentfileslist"></a>CMFCRibbonMainPanel::AddRecentFilesList
+## <a name="cmfcribbonmainpaneladdrecentfileslist"></a><a name="addrecentfileslist"></a> CMFCRibbonMainPanel:: AddRecentFilesList
 
-Son dosyalar listesi menüsüne bir metin dizesi ekler.
+Son Dosyalar liste menüsüne bir metin dizesi ekler.
 
 ```cpp
 void AddRecentFilesList(
@@ -105,15 +106,15 @@ void AddRecentFilesList(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszEtiket*<br/>
-Son dosyalar listesine eklemek için dize belirtir.
+*lpszLabel*<br/>
+Son dosyalar listesine eklenecek dizeyi belirtir.
 
-*Nwidth*<br/>
-Son dosya listesi panelinin piksel olarak genişliğini belirtir.
+*nWidth*<br/>
+Son kullanılan dosyalar liste panelinin genişliğini piksel cinsinden belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbonmainpaneladdtobottom"></a><a name="addtobottom"></a>CMFCRibbonMainPanel::Addtobottom
+## <a name="cmfcribbonmainpaneladdtobottom"></a><a name="addtobottom"></a> CMFCRibbonMainPanel:: AddToBottom
 
 Şerit uygulama panelinin alt bölmesine bir şerit öğesi ekler.
 
@@ -123,12 +124,12 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 
 ### <a name="parameters"></a>Parametreler
 
-*pElem*<br/>
-[içinde, dışarı] Ana panelin altına eklemek için şerit öğesiiçin bir işaretçi.
+*Peled*<br/>
+[in, out] Ana bölmenin altına eklenecek Ribbon öğesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbonmainpaneladdtoright"></a><a name="addtoright"></a>CMFCRibbonMainPanel::Addtoright
+## <a name="cmfcribbonmainpaneladdtoright"></a><a name="addtoright"></a> CMFCRibbonMainPanel:: AddToRight
 
 Uygulama düğmesi panelinin sağ bölmesine bir şerit öğesi ekler.
 
@@ -140,19 +141,19 @@ void AddToRight(
 
 ### <a name="parameters"></a>Parametreler
 
-*pElem*<br/>
-Ana panelin sağ tarafına eklenecek bir şerit öğesi için bir işaretçi.
+*Peled*<br/>
+Ana bölmenin sağ tarafına eklenecek şerit öğesine yönelik bir işaretçi.
 
-*Nwidth*<br/>
-Piksel olarak, doğru panelin genişliğini belirtir.
+*nWidth*<br/>
+Sağ bölmenin genişliğini piksel cinsinden belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sağ panele bir şerit öğesi eklemek için bu işlevi kullanın. Sağ panel genellikle en son dosya listesini görüntüler, ancak buraya başka bir şerit öğesi ekleyebilirsiniz.
+Sağ panele bir şerit öğesi eklemek için bu işlevi kullanın. Sağ panel genellikle en son dosyalar listesini görüntüler, ancak buraya diğer Şerit öğelerini ekleyebilirsiniz.
 
-## <a name="cmfcribbonmainpanelgetcommandsframe"></a><a name="getcommandsframe"></a>CMFCRibbonMainPanel::GetCommandsFrame
+## <a name="cmfcribbonmainpanelgetcommandsframe"></a><a name="getcommandsframe"></a> CMFCRibbonMainPanel:: GetCommandsFrame
 
-Şerit ana panelin alanını temsil eden bir dikdörtgen döndürür.
+Şerit Ana bölmesinin alanını temsil eden bir dikdörtgen döndürür.
 
 ```
 CRect GetCommandsFrame() const;
@@ -160,10 +161,10 @@ CRect GetCommandsFrame() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit ana panelin alanını temsil eden bir dikdörtgen.
+Şerit Ana bölmesinin alanını temsil eden dikdörtgen.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonPanel Sınıfı](../../mfc/reference/cmfcribbonpanel-class.md)
+[CMFCRibbonPanel sınıfı](../../mfc/reference/cmfcribbonpanel-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: auto_ptr sınıfı'
 title: auto_ptr Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: 7e652b18b723e2a58c1f4673baf180a14db93477
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e656da9f5ffdaf4dfe85b1cbd75ef79ba41adb64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834784"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321672"
 ---
 # <a name="auto_ptr-class"></a>auto_ptr Sınıfı
 
@@ -29,7 +30,7 @@ Daha yetenekli `unique_ptr` sınıf yerini alır `auto_ptr` . Daha fazla bilgi i
 
 Ve özel durum işleme hakkında daha fazla bilgi için `throw()` bkz. [özel durum belirtimleri (throw)](../cpp/exception-specifications-throw-cpp.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class auto_ptr {
@@ -87,7 +88,7 @@ Bir `auto_ptr<Type>` nesneyi değere göre bir işlev çağrısına bağımsız 
 |-|-|
 |[Al](#get)|Üye işlevi, saklı işaretçiyi döndürür `myptr` .|
 |[Yayın](#release)|Üye, saklı işaretçiyi `myptr` null işaretçiyle değiştirir ve daha önce depolanmış işaretçiyi döndürür.|
-|[döndürmek](#reset)|Üye işlevi, `delete myptr` yalnızca saklı işaretçi değeri `myptr` işlev çağrısının sonucu olarak değişirse ifadeyi değerlendirir. Ardından, saklı işaretçinin *PTR*ile yerini alır.|
+|[döndürmek](#reset)|Üye işlevi, `delete myptr` yalnızca saklı işaretçi değeri `myptr` işlev çağrısının sonucu olarak değişirse ifadeyi değerlendirir. Ardından, saklı işaretçinin *PTR* ile yerini alır.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -124,7 +125,7 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 #### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, içindeki *PTR* `myptr` 'yi, ayrılan nesneye saklı işaretçi olarak depolar. İkinci Oluşturucu, *sağdan*depolanan işaretçinin *sahipliğini doğrudan depolayarak*aktarır. [release](#release) içindeki yayın `myptr` .
+İlk Oluşturucu, içindeki *PTR* `myptr` 'yi, ayrılan nesneye saklı işaretçi olarak depolar. İkinci Oluşturucu, *sağdan* depolanan işaretçinin *sahipliğini doğrudan depolayarak* aktarır. [](#release) içindeki yayın `myptr` .
 
 Üçüncü Oluşturucu, ikinci ile aynı şekilde davranır, ancak depolar hariç olur `right` . `ref`. `release``myptr`' de, burada `ref` depolanan başvurudur `right` .
 
@@ -278,7 +279,7 @@ Türündeki bir nesneye başvuru `auto_ptr<Type>` .
 
 #### <a name="remarks"></a>Açıklamalar
 
-Atama, `delete myptr` ancak yalnızca saklı işaretçi `myptr` atamanın sonucu olarak değişirse ifadeyi değerlendirir. Daha sonra *sağ* *olarak depolanan işaretçinin sahipliğini doğrudan depolayarak*aktarır. [release](#release) içindeki yayın `myptr` . İşlevi __ \* bunu__döndürür.
+Atama, `delete myptr` ancak yalnızca saklı işaretçi `myptr` atamanın sonucu olarak değişirse ifadeyi değerlendirir. Daha sonra *sağ* *olarak depolanan işaretçinin sahipliğini doğrudan depolayarak* aktarır. [](#release) içindeki yayın `myptr` . İşlevi __\* bunu__ döndürür.
 
 #### <a name="example"></a>Örnek
 
@@ -335,7 +336,7 @@ operator auto _ptr<Other>() throw();
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Tür atama işleci `auto_ptr` \< **Other**> ( ** \* this**) döndürür.
+Tür atama işleci `auto_ptr` \< **Other**> ( **\* this**) döndürür.
 
 #### <a name="example"></a>Örnek
 
@@ -365,7 +366,7 @@ operator auto _ptr  _ref<Other>() throw();
 
 #### <a name="return-value"></a>Dönüş Değeri
 
-Tür atama işleci **auto_ptr_ref** \< **Other**> ( ** \* this**) döndürür.
+Tür atama işleci **auto_ptr_ref** \< **Other**> ( **\* this**) döndürür.
 
 #### <a name="example"></a>Örnek
 

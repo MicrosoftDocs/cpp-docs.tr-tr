@@ -1,4 +1,5 @@
 ---
+description: 'Şunlar hakkında daha fazla bilgi edinin: include (C++)'
 title: dahil et (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - include attribute
 ms.assetid: d23f8b91-fe5b-48fa-9371-8bd73af7b8e3
-ms.openlocfilehash: 6b75df74ee69ee4f89eb7bf18fb6bcd77d8a6284
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c6d12b9d8826ce84de0c01aaf055f5a4176fea10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842201"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321369"
 ---
 # <a name="include-c"></a>include (C++)
 
 Oluşturulan. IDL dosyasına dahil edilecek bir veya daha fazla üst bilgi dosyasını belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ include(header_file) ];
@@ -36,7 +37,7 @@ C++ **dahil etme** özniteliği [Include](/windows/win32/Midl/include) MIDL özn
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **Include**öğesinin kullanımına ilişkin bir örnek gösterir. Bu örnekte, INCLUDE. h dosyası yalnızca bir `#include` ifade içerir.
+Aşağıdaki kod, **Include** öğesinin kullanımına ilişkin bir örnek gösterir. Bu örnekte, INCLUDE. h dosyası yalnızca bir `#include` ifade içerir.
 
 ```cpp
 // cpp_attr_ref_include.cpp
@@ -50,7 +51,7 @@ Aşağıdaki kod, **Include**öğesinin kullanımına ilişkin bir örnek göste
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

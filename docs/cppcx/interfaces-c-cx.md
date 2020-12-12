@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: arabirimler (C++/CX)'
 title: Arabirimler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 11034314-d54a-426d-923b-5ab7a6b9f8ce
-ms.openlocfilehash: df010468d5e90fe61ac2cf57c754ac5ed01b1c0f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 590b1b80ada186f90bfd38ed9dcdc8a35c34020f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230993"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320939"
 ---
 # <a name="interfaces-ccx"></a>Arabirimler (C++/CX)
 
@@ -89,11 +90,11 @@ Genel bir arabirim yazmak için Windows Çalışma Zamanı türlerinin nasıl ku
 
 - Kapalı bir genel arabirimde örtük olarak oluşturulmuş bir UUID vardır. Kullanıcı UUID 'yi belirtemez.
 
-- Arabiriminde, geçerli arabirime yönelik herhangi bir başvuru — bir yöntem parametresi, dönüş değeri veya özellik —, geçerli örnek oluşturma için başvurulacak varsayılır. Örneğin, *imytf* , * \<T> imıntf*anlamına gelir.
+- Arabiriminde, geçerli arabirime yönelik herhangi bir başvuru — bir yöntem parametresi, dönüş değeri veya özellik —, geçerli örnek oluşturma için başvurulacak varsayılır. Örneğin, *imytf* , *\<T> imıntf* anlamına gelir.
 
 - Bir yöntem parametresinin türü bir tür parametresi olduğunda, bu parametrenin veya değişkenin bildirimi herhangi bir işaretçi, yerel başvuru veya tanıtıcı bildirimci olmadan tür parametresinin adını kullanır. Diğer bir deyişle, hiçbir şekilde "T ^" yazmayın.
 
-- Şablonlu ref sınıfları Private olmalıdır. Bunlar genel arabirimler uygulayabilir ve şablon parametresi *t* parametresini *genel bağımsız değişkenine*geçirebilir. Şablonlu bir başvuru sınıfının her örneklenmesi bir başvuru sınıfıdır.
+- Şablonlu ref sınıfları Private olmalıdır. Bunlar genel arabirimler uygulayabilir ve şablon parametresi *t* parametresini *genel bağımsız değişkenine* geçirebilir. Şablonlu bir başvuru sınıfının her örneklenmesi bir başvuru sınıfıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

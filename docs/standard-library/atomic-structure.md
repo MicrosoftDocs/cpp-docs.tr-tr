@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi edinin: atomik yapı'
 title: atomic Yapısı
 ms.date: 04/20/2018
 f1_keywords:
 - atomic/std::atomic
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
-ms.openlocfilehash: 738f79f966b8b0482baf4f78120c0d690425a4bf
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9698e0e14129d8fa020bd1432912aea85498ff6e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834797"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321700"
 ---
 # <a name="atomic-structure"></a>atomic Yapısı
 
-Türü *Ty*olan depolanan bir değer üzerinde Atomik işlemler gerçekleştiren bir nesneyi tanımlar.
+Türü *Ty* olan depolanan bir değer üzerinde Atomik işlemler gerçekleştiren bir nesneyi tanımlar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,13 +47,13 @@ struct atomic;
 |[fetch_or](#fetch_or)|Belirtilen bir değer ve depolanan değer üzerinde bir bit düzeyinde OR uygular.|
 |[fetch_sub](#fetch_sub)|Saklanan değerden belirtilen değeri çıkartır.|
 |[fetch_xor](#fetch_xor)|Belirtilen bir değer ve depolanan değer üzerinde bir bit düzeyinde özel veya uygular.|
-|[is_lock_free](#is_lock_free)|Üzerindeki atomik işlemlerin boş bir **`this`** *kilit*olup olmadığını belirtir. Bir atomik tür, bu tür üzerinde hiçbir Atomik işlem kilit kullanıyorsa *boş bir kilit* değildir.|
+|[is_lock_free](#is_lock_free)|Üzerindeki atomik işlemlerin boş bir **`this`** *kilit* olup olmadığını belirtir. Bir atomik tür, bu tür üzerinde hiçbir Atomik işlem kilit kullanıyorsa *boş bir kilit* değildir.|
 |[yükler](#load)|Depolanan değeri okur ve döndürür.|
 |[mağaza](#store)|Depolanan değeri değiştirmek için belirtilen değeri kullanır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür *Ty* , *kopyalanabilir*olmalıdır. Diğer bir deyişle, baytlarını kopyalamak için [memcbay](../c-runtime-library/reference/memcpy-wmemcpy.md) kullanmanın, özgün nesneyle eşit olarak karşılaştırdığı geçerli bir *Ty* nesnesi üretmesi gerekir. [Compare_exchange_weak](#compare_exchange_weak) ve [compare_exchange_strong](#compare_exchange_strong) üye işlevleri, iki *Ty* değerin eşit olup olmadığını anlamak için [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) kullanır. Bu işlevler, *Ty*tanımlı bir kullanmaz `operator==` . Üyenin `atomic` `memcpy` tür değerlerini kopyalamak *Ty*için kullanılan üye işlevleri.
+Tür *Ty* , *kopyalanabilir* olmalıdır. Diğer bir deyişle, baytlarını kopyalamak için [memcbay](../c-runtime-library/reference/memcpy-wmemcpy.md) kullanmanın, özgün nesneyle eşit olarak karşılaştırdığı geçerli bir *Ty* nesnesi üretmesi gerekir. [Compare_exchange_weak](#compare_exchange_weak) ve [compare_exchange_strong](#compare_exchange_strong) üye işlevleri, iki *Ty* değerin eşit olup olmadığını anlamak için [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) kullanır. Bu işlevler, *Ty* tanımlı bir kullanmaz `operator==` . Üyenin `atomic` `memcpy` tür değerlerini kopyalamak için kullanılan üye işlevleri.
 
 `atomic<Ty*>`Tüm işaretçi türleri için kısmi bir özelleştirme var. Özelleşme, yönetilen işaretçi değerine bir uzaklığa bir konum eklenmesini veya bunun bir uzaklığa göre çıkarılması yapılmasını sağlar. Aritmetik işlemler türünde bir bağımsız değişken alır `ptrdiff_t` ve bu bağımsız değişkeni, normal adres aritmetiği ile tutarlı olacak şekilde *Ty* boyutuna göre ayarlar.
 
@@ -115,7 +116,7 @@ atomic<int> ai1(0);
 
 ## <a name="atomicoperator-ty"></a><a name="op_ty"></a> Atomik:: operator *Ty*
 
-Şablon, atomik için belirtilen tür için işleç \<*Ty*> . ** \* Bu**, depolanan değeri alır.
+Şablon, atomik için belirtilen tür için işleç \<*Ty*> . **\* Bu**, depolanan değeri alır.
 
 ```cpp
 atomic<Ty>::operator Ty() const volatile noexcept;
@@ -146,7 +147,7 @@ Bir *Ty* nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Değer*döndürür.
+*Değer* döndürür.
 
 ## <a name="atomicoperator"></a><a name="op_inc"></a> Atomik:: operator + +
 
@@ -232,7 +233,7 @@ Bu işleç `memory_order_seq_cst` [memory_order](atomic-enums.md)kullanır.
 
 ## <a name="atomicoperator"></a><a name="op_and_eq"></a> Atomik:: operator&=
 
-Belirtilen bir değer ve ** \* bunun**depolanmış değeri için bit düzeyinde ve uygular. Yalnızca integral uzmanlıklarıyla kullanılır.
+Belirtilen bir değer ve **\* bunun** depolanmış değeri için bit düzeyinde ve uygular. Yalnızca integral uzmanlıklarıyla kullanılır.
 
 ```cpp
 atomic<Ty>::operator&= (
@@ -246,7 +247,7 @@ atomic<Ty>::operator&= (
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -254,11 +255,11 @@ Bit düzeyinde ve ile elde edilen sonuç.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, ** \* Bu** değerin bir bit düzeyinde ve *değeri* ve ** \* bu**değer içinde depolanan geçerli değeri, memory_order kısıtlamaları dahilinde değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir `memory_order_seq_cst` [memory_order](atomic-enums.md).
+Bu işleç, **\* Bu** değerin bir bit düzeyinde ve *değeri* ve **\* bu** değer içinde depolanan geçerli değeri, memory_order kısıtlamaları dahilinde değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir `memory_order_seq_cst` [](atomic-enums.md).
 
 ## <a name="atomicoperator124"></a><a name="op_or_eq"></a> Atomik:: operator&#124;=
 
-Belirtilen bir değer üzerinde bir bit düzeyinde OR, ** \* Bu**değerin saklı değerini uygular. Yalnızca integral uzmanlıklarıyla kullanılır.
+Belirtilen bir değer üzerinde bir bit düzeyinde OR, **\* Bu** değerin saklı değerini uygular. Yalnızca integral uzmanlıklarıyla kullanılır.
 
 ```cpp
 atomic<Ty>::operator|= (
@@ -272,7 +273,7 @@ atomic<Ty>::operator|= (
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -280,11 +281,11 @@ Bit düzeyinde OR 'ın sonucu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu ** \* işleç,** memory_order kısıtlamalarının kısıtlamaları dahilinde ** \* Bu** değerin bir bit düzeyinde veya bir *değerle* ve geçerli değeri ile değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir `memory_order_seq_cst` [memory_order](atomic-enums.md) .
+Bu **\* işleç,** memory_order kısıtlamalarının kısıtlamaları dahilinde **\* Bu** değerin bir bit düzeyinde veya bir *değerle* ve geçerli değeri ile değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir `memory_order_seq_cst` [](atomic-enums.md) .
 
 ## <a name="atomicoperator"></a><a name="op_xor_eq"></a> Atomik:: operator ^ =
 
-Belirtilen bir değer ve ** \* bunun**depolanmış değeri üzerinde bir bit düzeyinde özel veya uygular. Yalnızca integral uzmanlıklarıyla kullanılır.
+Belirtilen bir değer ve **\* bunun** depolanmış değeri üzerinde bir bit düzeyinde özel veya uygular. Yalnızca integral uzmanlıklarıyla kullanılır.
 
 ```cpp
 atomic<Ty>::operator^= (
@@ -298,7 +299,7 @@ atomic<Ty>::operator^= (
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -306,11 +307,11 @@ Bit düzeyinde dışlamalı veya.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, ** \* Bu** değerin depolanmış değerini bir bit düzeyinde dışlamalı veya *değerden* ve ** \* Bu**değer içinde depolanan geçerli değerle değiştirmek için, `memory_order_seq_cst` [memory_order](atomic-enums.md) kısıtlamalarının kısıtlamaları dahilinde bir okuma-değiştirme-yazma işlemi gerçekleştirir.
+Bu işleç, **\* Bu** değerin depolanmış değerini bir bit düzeyinde dışlamalı veya *değerden* ve **\* Bu** değer içinde depolanan geçerli değerle değiştirmek için, `memory_order_seq_cst` [memory_order](atomic-enums.md) kısıtlamalarının kısıtlamaları dahilinde bir okuma-değiştirme-yazma işlemi gerçekleştirir.
 
 ## <a name="atomiccompare_exchange_strong"></a><a name="compare_exchange_strong"></a> Atomik:: compare_exchange_strong
 
-** \* Bu**, bir atomik karşılaştırma ve değişim işlemi gerçekleştirir.
+**\* Bu**, bir atomik karşılaştırma ve değişim işlemi gerçekleştirir.
 
 ```cpp
 bool compare_exchange_strong(
@@ -340,10 +341,10 @@ bool compare_exchange_strong(
 ### <a name="parameters"></a>Parametreler
 
 *Exp*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Order1*\
 İlk `memory_order` bağımsız değişken.
@@ -357,15 +358,15 @@ Tür *Ty*değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu atomik karşılaştırma ve değişim işlemi, ** \* Bu** değerde depolanan değeri *Exp*ile karşılaştırır. Değerler eşitse, işlem, bir okuma-değiştirme-yazma işlemi kullanarak ve *Order1*tarafından belirtilen bellek sırası kısıtlamalarını uygulayarak, ** \* Bu** *değerde* depolanan değeri değeriyle değiştirir. Değerler eşit değilse, işlem, *Exp* 'yi değiştirmek için ** \* Bu** değeri kullanır ve *Order2*tarafından belirtilen bellek sırası kısıtlamalarını uygular.
+Bu atomik karşılaştırma ve değişim işlemi, **\* Bu** değerde depolanan değeri *Exp* ile karşılaştırır. Değerler eşitse, işlem, bir okuma-değiştirme-yazma işlemi kullanarak ve *Order1* tarafından belirtilen bellek sırası kısıtlamalarını uygulayarak, **\* Bu** *değerde* depolanan değeri değeriyle değiştirir. Değerler eşit değilse, işlem, *Exp* 'yi değiştirmek için **\* Bu** değeri kullanır ve *Order2* tarafından belirtilen bellek sırası kısıtlamalarını uygular.
 
-İkincisine sahip olmayan aşırı yüklemeler, `memory_order` *Order1*değerini temel alan örtük bir *Order2* kullanır. *Order1* ise `memory_order_acq_rel` , *Order2* olur `memory_order_acquire` . *Order1* ise `memory_order_release` , *Order2* olur `memory_order_relaxed` . Diğer tüm durumlarda, *Order2* *Order1*'e eşittir.
+İkincisine sahip olmayan aşırı yüklemeler, `memory_order` *Order1* değerini temel alan örtük bir *Order2* kullanır. *Order1* ise `memory_order_acq_rel` , *Order2* olur `memory_order_acquire` . *Order1* ise `memory_order_release` , *Order2* olur `memory_order_relaxed` . Diğer tüm durumlarda, *Order2* *Order1*'e eşittir.
 
-İki parametre alan aşırı yüklemeler için `memory_order` *Order2* değeri ya da olmamalıdır `memory_order_release` `memory_order_acq_rel` ve *Order1*değerinden daha güçlü olmamalıdır.
+İki parametre alan aşırı yüklemeler için `memory_order` *Order2* değeri ya da olmamalıdır `memory_order_release` `memory_order_acq_rel` ve *Order1* değerinden daha güçlü olmamalıdır.
 
 ## <a name="atomiccompare_exchange_weak"></a><a name="compare_exchange_weak"></a> Atomik:: compare_exchange_weak
 
-** \* Bunun**üzerinde zayıf bir atomik karşılaştırma ve değişim işlemi gerçekleştirir.
+**\* Bunun** üzerinde zayıf bir atomik karşılaştırma ve değişim işlemi gerçekleştirir.
 
 ```cpp
 bool compare_exchange_weak(
@@ -395,10 +396,10 @@ bool compare_exchange_weak(
 ### <a name="parameters"></a>Parametreler
 
 *Exp*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Order1*\
 İlk `memory_order` bağımsız değişken.
@@ -412,17 +413,17 @@ Tür *Ty*değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu atomik karşılaştırma ve değişim işlemi, ** \* Bu** değerde depolanan değeri *Exp*ile karşılaştırır. Değerler eşitse, işlem, bir okuma-değiştirme-yazma işlemi kullanarak ve *Order1*tarafından belirtilen bellek sırası kısıtlamalarını uygulayarak, ** \* Bu** *değerde* depolanan değeri değeriyle değiştirir. Değerler eşit değilse, işlem, *Exp* 'yi değiştirmek için ** \* Bu** değeri kullanır ve *Order2*tarafından belirtilen bellek sırası kısıtlamalarını uygular.
+Bu atomik karşılaştırma ve değişim işlemi, **\* Bu** değerde depolanan değeri *Exp* ile karşılaştırır. Değerler eşitse, işlem, bir okuma-değiştirme-yazma işlemi kullanarak ve *Order1* tarafından belirtilen bellek sırası kısıtlamalarını uygulayarak, **\* Bu** *değerde* depolanan değeri değeriyle değiştirir. Değerler eşit değilse, işlem, *Exp* 'yi değiştirmek için **\* Bu** değeri kullanır ve *Order2* tarafından belirtilen bellek sırası kısıtlamalarını uygular.
 
 Karşılaştırılan Değerler eşitse, zayıf bir atomik karşılaştırma ve değişim işlemi bir değişim gerçekleştirir. Değerler eşit değilse, işlemin bir Exchange gerçekleştirme garantisi yoktur.
 
-İkincisine sahip olmayan aşırı yüklemeler, `memory_order` *Order1*değerini temel alan örtük bir *Order2* kullanır. *Order1* ise `memory_order_acq_rel` , *Order2* olur `memory_order_acquire` . *Order1* ise `memory_order_release` , *Order2* olur `memory_order_relaxed` . Diğer tüm durumlarda, *Order2* *Order1*'e eşittir.
+İkincisine sahip olmayan aşırı yüklemeler, `memory_order` *Order1* değerini temel alan örtük bir *Order2* kullanır. *Order1* ise `memory_order_acq_rel` , *Order2* olur `memory_order_acquire` . *Order1* ise `memory_order_release` , *Order2* olur `memory_order_relaxed` . Diğer tüm durumlarda, *Order2* *Order1*'e eşittir.
 
-İki parametre alan aşırı yüklemeler için `memory_order` *Order2* değeri ya da olmamalıdır `memory_order_release` `memory_order_acq_rel` ve *Order1*değerinden daha güçlü olmamalıdır.
+İki parametre alan aşırı yüklemeler için `memory_order` *Order2* değeri ya da olmamalıdır `memory_order_release` `memory_order_acq_rel` ve *Order1* değerinden daha güçlü olmamalıdır.
 
 ## <a name="atomicexchange"></a><a name="exchange"></a> Atomik:: Exchange
 
-, ** \* Bunun**saklı değerini değiştirmek için belirtilen değeri kullanır.
+, **\* Bunun** saklı değerini değiştirmek için belirtilen değeri kullanır.
 
 ```cpp
 Ty atomic<Ty>::exchange(
@@ -438,22 +439,22 @@ Ty atomic<Ty>::exchange(
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Siparişi*\
 Bir `memory_order`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Exchange öncesinde ** \* Bu** değerin depolanan değeri.
+Exchange öncesinde **\* Bu** değerin depolanan değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-** \* Bu işlem, içinde depolanan**değeri *Order*tarafından belirtilen bellek kısıtlamalarında değiştirmek için *değeri* kullanmak üzere bir okuma-değiştirme-yazma işlemi gerçekleştirir.
+**\* Bu işlem, içinde depolanan** değeri *Order* tarafından belirtilen bellek kısıtlamalarında değiştirmek için *değeri* kullanmak üzere bir okuma-değiştirme-yazma işlemi gerçekleştirir.
 
 ## <a name="atomicfetch_add"></a><a name="fetch_add"></a> Atomik:: fetch_add
 
-** \* Bu**değeri toplar ve ardından depolanan değere belirtilen değeri ekler.
+**\* Bu** değeri toplar ve ardından depolanan değere belirtilen değeri ekler.
 
 ```cpp
 Ty atomic<Ty>::fetch_add (
@@ -469,22 +470,22 @@ Ty atomic<Ty>::fetch_add (
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Siparişi*\
 Bir `memory_order`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Eklenmesinden önce ** \* Bu** değer içinde depolanan değeri içeren bir *Ty* nesnesi.
+Eklenmesinden önce **\* Bu** değer içinde depolanan değeri içeren bir *Ty* nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fetch_add`Yöntemi, ** \* Bu**, depolanan değere *değeri* otomatik olarak eklemek için bir okuma-değiştirme-yazma işlemi gerçekleştirir ve *sırasıyla*belirtilen bellek kısıtlamalarını uygular.
+`fetch_add`Yöntemi, **\* Bu**, depolanan değere *değeri* otomatik olarak eklemek için bir okuma-değiştirme-yazma işlemi gerçekleştirir ve *sırasıyla* belirtilen bellek kısıtlamalarını uygular.
 
 ## <a name="atomicfetch_and"></a><a name="fetch_and"></a> Atomik:: fetch_and
 
-Bir değer ve bir değer üzerinde depolanan bir değer ve var olan bir değer üzerinde bir bit düzeyinde ve ** \* uygular.**
+Bir değer ve bir değer üzerinde depolanan bir değer ve var olan bir değer üzerinde bir bit düzeyinde ve **\* uygular.**
 
 ```cpp
 Ty atomic<Ty>::fetch_and (
@@ -500,7 +501,7 @@ Ty atomic<Ty>::fetch_and (
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Siparişi*\
 Bir `memory_order`.
@@ -511,11 +512,11 @@ Bit düzeyinde and sonucunu içeren bir *Ty* nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fetch_and`Yöntemi, ** \* Bu** değerin depolanan değerini bir bit düzeyinde ve *değeri* ile, ** \* Bu**değeri *sırasıyla*belirtilen bellek kısıtlamalarına göre değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir.
+`fetch_and`Yöntemi, **\* Bu** değerin depolanan değerini bir bit düzeyinde ve *değeri* ile, **\* Bu** değeri *sırasıyla* belirtilen bellek kısıtlamalarına göre değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir.
 
 ## <a name="atomicfetch_or"></a><a name="fetch_or"></a> Atomik:: fetch_or
 
-Bir bit düzeyinde veya bir değer üzerinde saklanan mevcut bir değeri ** \* gerçekleştirir.**
+Bir bit düzeyinde veya bir değer üzerinde saklanan mevcut bir değeri **\* gerçekleştirir.**
 
 ```cpp
 Ty atomic<Ty>::fetch_or (
@@ -531,7 +532,7 @@ Ty atomic<Ty>::fetch_or (
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Siparişi*\
 Bir `memory_order`.
@@ -542,7 +543,7 @@ Bit düzeyinde OR sonucunu içeren bir *Ty* nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fetch_or`Yöntemi, ** \* Bu** değerin depolanmış değerini bir bit düzeyinde veya bir *değerle* ve ** \* Bu**değer içinde depolanan geçerli değeri, *sırasıyla*belirtilen bellek kısıtlamalarına göre değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir.
+`fetch_or`Yöntemi, **\* Bu** değerin depolanmış değerini bir bit düzeyinde veya bir *değerle* ve **\* Bu** değer içinde depolanan geçerli değeri, *sırasıyla* belirtilen bellek kısıtlamalarına göre değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir.
 
 ## <a name="atomicfetch_sub"></a><a name="fetch_sub"></a> Atomik:: fetch_sub
 
@@ -562,7 +563,7 @@ Ty atomic<Ty>::fetch_sub (
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Siparişi*\
 Bir `memory_order`.
@@ -573,11 +574,11 @@ Bir `memory_order`.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fetch_sub`Yöntemi, *Düzen*tarafından belirtilen bellek kısıtlamalarında, ** \* Bu**değer içinde depolanan değerden *değeri* otomatik olarak çıkarmak için bir okuma-değiştirme-yazma işlemi gerçekleştirir.
+`fetch_sub`Yöntemi, *Düzen* tarafından belirtilen bellek kısıtlamalarında, **\* Bu** değer içinde depolanan değerden *değeri* otomatik olarak çıkarmak için bir okuma-değiştirme-yazma işlemi gerçekleştirir.
 
 ## <a name="atomicfetch_xor"></a><a name="fetch_xor"></a> Atomik:: fetch_xor
 
-Bir bit düzeyinde dışlamalı veya bir değer üzerinde saklanan mevcut bir değeri ** \* gerçekleştirir.**
+Bir bit düzeyinde dışlamalı veya bir değer üzerinde saklanan mevcut bir değeri **\* gerçekleştirir.**
 
 ```cpp
 Ty atomic<Ty>::fetch_xor (
@@ -593,7 +594,7 @@ Ty atomic<Ty>::fetch_xor (
 ### <a name="parameters"></a>Parametreler
 
 *Deeri*\
-Tür *Ty*değeri.
+Tür *Ty* değeri.
 
 *Siparişi*\
 Bir `memory_order`.
@@ -604,11 +605,11 @@ Bit düzeyinde dışlamalı veya sonucunu içeren bir *Ty* nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`fetch_xor`Yöntemi, ** \* Bu** değerin depolanmış değerini bir bit düzeyinde dışlamalı veya *değer* ve ** \* Bu**değer içinde depolanan geçerli değerle değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir ve *sırasıyla*belirtilen bellek kısıtlamalarını uygular.
+`fetch_xor`Yöntemi, **\* Bu** değerin depolanmış değerini bir bit düzeyinde dışlamalı veya *değer* ve **\* Bu** değer içinde depolanan geçerli değerle değiştirmek için bir okuma-değiştirme-yazma işlemi gerçekleştirir ve *sırasıyla* belirtilen bellek kısıtlamalarını uygular.
 
 ## <a name="atomicis_lock_free"></a><a name="is_lock_free"></a> Atomik:: is_lock_free
 
-Üzerinde atomik işlemlerin boş bir ** \* kilit olup olmadığını** belirtir.
+Üzerinde atomik işlemlerin boş bir **\* kilit olup olmadığını** belirtir.
 
 ```cpp
 bool is_lock_free() const volatile noexcept;
@@ -616,7 +617,7 @@ bool is_lock_free() const volatile noexcept;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-** \* Bu** , üzerinde Atomik işlemler boş bir kilit ise true, aksi durumda false.
+**\* Bu** , üzerinde Atomik işlemler boş bir kilit ise true, aksi durumda false.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -624,7 +625,7 @@ Bir atomik tür, bu tür üzerinde hiçbir Atomik işlem kilit kullanıyorsa bo�
 
 ## <a name="atomicload"></a><a name="load"></a> Atomik:: Load
 
-Belirtilen bellek kısıtlamalarında, ** \* Bu**değer içinde depolanan değeri alır.
+Belirtilen bellek kısıtlamalarında, **\* Bu** değer içinde depolanan değeri alır.
 
 ```cpp
 Ty atomic::load(
@@ -642,7 +643,7 @@ Bir `memory_order`. *Sıra* `memory_order_release` veya olmamalıdır `memory_or
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-** \* Bu**, alınan değeri içinde saklanır.
+**\* Bu**, alınan değeri içinde saklanır.
 
 ## <a name="atomicstore"></a><a name="store"></a> Atomik:: Store
 
@@ -669,7 +670,7 @@ Bir `memory_order` kısıtlama.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, ' deki *değeri* **`*this`** *Order*tarafından belirtilen bellek kısıtlamaları dahilinde otomatik olarak depolar.
+Bu üye işlevi, ' deki *değeri* **`*this`** *Order* tarafından belirtilen bellek kısıtlamaları dahilinde otomatik olarak depolar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

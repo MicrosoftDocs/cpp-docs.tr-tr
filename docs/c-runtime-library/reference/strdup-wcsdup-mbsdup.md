@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strdup, _wcsdup, _mbsdup'
 title: _strdup, _wcsdup, _mbsdup
 ms.date: 4/2/2020
 api_name:
@@ -48,19 +49,19 @@ helpviewer_keywords:
 - tcsdup function
 - _tcsdup function
 ms.assetid: 8604f8bb-95e9-45d3-93ef-20397ebf247a
-ms.openlocfilehash: 42b4a890c1c7f350b83bb92a548d716ee6d9ebfc
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b080f614f46aabc63e798c16113cffe45008047d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914467"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322452"
 ---
 # <a name="_strdup-_wcsdup-_mbsdup"></a>_strdup, _wcsdup, _mbsdup
 
 Dizeleri çoğaltır.
 
 > [!IMPORTANT]
-> **_mbsdup** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsdup** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz.                  [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -89,7 +90,7 @@ Bu işlevlerin her biri, kopyalanmış dize için depolama konumuna bir işaret�
 
 **_Strdup** işlevi, bir *strSource* kopyası için depolama alanı ayırmak üzere [malloc](malloc.md) çağırır ve ardından *strSource* 'u ayrılmış alana kopyalar.
 
-**_wcsdup** ve **_mbsdup** , **_strdup**geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsdup** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsdup** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**_wcsdup** ve **_mbsdup** , **_strdup** geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsdup** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsdup** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -99,7 +100,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsdup**|**_strdup**|**_mbsdup**|**_wcsdup**|
 
-**_Strdup** , *strSource*kopyası için depolama alanı ayırmak üzere **malloc** çağrısı yaptığından, **_strdup**çağrısı tarafından döndürülen işaretçinin [ücretsiz](free.md) yordamını çağırarak, her zaman bu belleği serbest bırakmak iyi bir uygulamadır.
+**_Strdup** , *strSource* kopyası için depolama alanı ayırmak üzere **malloc** çağrısı yaptığından, **_strdup** çağrısı tarafından döndürülen işaretçinin [ücretsiz](free.md) yordamını çağırarak, her zaman bu belleği serbest bırakmak iyi bir uygulamadır.
 
 **_DEBUG** ve **_CRTDBG_MAP_ALLOC** tanımlanmışsa **_strdup** ve **_wcsdup** , bellek ayırmalarının hata ayıklamasına izin vermek için **_strdup_dbg** ve **_wcsdup_dbg** çağrıları ile değiştirilmiştir. Daha fazla bilgi için bkz. [_strdup_dbg, _wcsdup_dbg](strdup-dbg-wcsdup-dbg.md).
 
@@ -107,9 +108,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strdup**|\<String. h>|
-|**_wcsdup**|\<String. h> veya \<wchar. h>|
-|**_mbsdup**|\<mbstring. h>|
+|**_strdup**|\<string.h>|
+|**_wcsdup**|\<string.h> veya \<wchar.h>|
+|**_mbsdup**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

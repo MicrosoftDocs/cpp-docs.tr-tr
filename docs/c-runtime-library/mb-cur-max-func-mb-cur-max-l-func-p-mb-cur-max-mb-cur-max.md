@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max'
 title: ___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - ___mb_cur_max_l_func
 - __p___mb_cur_max
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1
-ms.openlocfilehash: 8287e2e7cab8880d35fef170287713adcc103c7e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1308dbe969f8b6638835f52ec1e7a2cdcd63bb7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321168"
 ---
 # <a name="___mb_cur_max_func-___mb_cur_max_l_func-__p___mb_cur_max-__mb_cur_max"></a>___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 
@@ -62,9 +63,9 @@ Geçerli iş parçacığı yerel ayarı veya belirtilen yerel ayar için çok ba
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu, CRT 'ın, iş parçacığı yerel depolama alanından [MB_CUR_MAX](../c-runtime-library/mb-cur-max.md) makrosunun geçerli değerini almak için kullandığı bir iç işlevdir. Taşınabilirlik için kodunuzda `MB_CUR_MAX` makroyu kullanmanızı öneririz.
+Bu, CRT 'ın, iş parçacığı yerel depolama alanından [MB_CUR_MAX](../c-runtime-library/mb-cur-max.md) makrosunun geçerli değerini almak için kullandığı bir iç işlevdir. `MB_CUR_MAX`Taşınabilirlik için kodunuzda makroyu kullanmanızı öneririz.
 
-`__mb_cur_max` Makro, `___mb_cur_max_func()` işlevi çağırmak için kullanışlı bir yoldur. İşlev `__p___mb_cur_max` , Visual C++ 5,0 ve önceki sürümlerle uyumluluk için tanımlanmıştır.
+`__mb_cur_max`Makro, işlevi çağırmak için kullanışlı bir yoldur `___mb_cur_max_func()` . `__p___mb_cur_max`İşlev, Visual C++ 5,0 ve önceki sürümlerle uyumluluk için tanımlanmıştır.
 
 İç CRT işlevleri uygulamaya özgüdür ve her sürümde değiştirilebilir. Kodunuzda kullanımını önermiyoruz.
 
@@ -74,7 +75,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`___mb_cur_max_func`, `___mb_cur_max_l_func`, `__p___mb_cur_max`|\<CType. h>, \<Stdlib. h>|
+|`___mb_cur_max_func`, `___mb_cur_max_l_func`, `__p___mb_cur_max`|\<ctype.h>, \<stdlib.h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

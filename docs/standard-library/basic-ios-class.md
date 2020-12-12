@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: basic_ios Sınıfı'
 title: basic_ios Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -55,16 +56,16 @@ helpviewer_keywords:
 - std::basic_ios [C++], tie
 - std::basic_ios [C++], widen
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
-ms.openlocfilehash: ab8e9e0243a298f5ef39b38b3fd345572cafa587
-ms.sourcegitcommit: 8caaf5e00aeb727741a273aecafa15de293426cf
+ms.openlocfilehash: 54b70092860002b85b2a603ad5d4dc5a611007ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91806571"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321553"
 ---
 # <a name="basic_ios-class"></a>basic_ios Sınıfı
 
-Sınıf şablonu, şablon parametrelerine bağlı olan giriş akışları (sınıf şablonu [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları (sınıf şablonu [basic_ostream](../standard-library/basic-ostream-class.md)) için ortak depolama ve üye işlevlerini açıklar. (Sınıf [ios_base](../standard-library/ios-base-class.md) , ortak olduğunu ve şablon parametrelerine bağlı olanları açıklar.) ** \<class Elem, class Traits> Basic_ios** sınıfının bir nesnesi `Elem` , karakter nitelikleri sınıf tarafından belirlenen türdeki öğelerle bir akışı denetlemeye yardımcı olur `Traits` .
+Sınıf şablonu, şablon parametrelerine bağlı olan giriş akışları (sınıf şablonu [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları (sınıf şablonu [basic_ostream](../standard-library/basic-ostream-class.md)) için ortak depolama ve üye işlevlerini açıklar. (Sınıf [ios_base](../standard-library/ios-base-class.md) , ortak olduğunu ve şablon parametrelerine bağlı olanları açıklar.) **\<class Elem, class Traits> Basic_ios** sınıfının bir nesnesi `Elem` , karakter nitelikleri sınıf tarafından belirlenen türdeki öğelerle bir akışı denetlemeye yardımcı olur `Traits` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -84,7 +85,7 @@ Karakter türü hakkında bilgi sağlayan bir tür, varsayılan olarak olur `cha
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Basic_ios \<class Elem, class Traits> ** depolayan bir nesne:
+**Basic_ios \<class Elem, class Traits>** depolayan bir nesne:
 
 - [Basic_istream](../standard-library/basic-istream-class.md)türünde bir nesne için bağlama işaretçisi **\<Elem, Traits>** .
 
@@ -260,7 +261,7 @@ Bayraklarını kopyalamak istediğiniz akış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi geri çağırma olayı **silme \_ olayını**raporlar. Daha sonra bu, *doğrudan* ** \* Bu** Fill karakterine, bağlama işaretçisine ve biçimlendirme bilgilerine kopyalar. Özel durum maskesini değiştirmeden önce geri çağırma olayını raporlar `copyfmt_event` . Kopyalama işlemi tamamlandıktan sonra, **durum &** [özel durumları](#exceptions) sıfır dışında olduğunda, işlev [rdstate](#rdstate)bağımsız değişkeniyle [clear](#clear) öğesini etkin bir şekilde çağırır. ** \* Bunu döndürür.**
+Üye işlevi geri çağırma olayı **silme \_ olayını** raporlar. Daha sonra bu, *doğrudan* **\* Bu** Fill karakterine, bağlama işaretçisine ve biçimlendirme bilgilerine kopyalar. Özel durum maskesini değiştirmeden önce geri çağırma olayını raporlar `copyfmt_event` . Kopyalama işlemi tamamlandıktan sonra, **durum &** [özel durumları](#exceptions) sıfır dışında olduğunda, işlev [rdstate](#rdstate)bağımsız değişkeniyle [clear](#clear) öğesini etkin bir şekilde çağırır. **\* Bunu döndürür.**
 
 ### <a name="example"></a>Örnek
 
@@ -581,7 +582,7 @@ void move(basic_ios&& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi, sağda depolanan tüm değerleri, *right* **`*this`** `stream buffer pointer` *sağ* tarafta değişmeyen ve içinde null bir işaretçiye ayarlanmış olan ' a doğru olarak kaydırır **`*this`** . Depolanan, `tie pointer` *sağ tarafta*null bir işaretçiye ayarlanır.
+Korumalı üye işlevi, sağda depolanan tüm değerleri,  **`*this`** `stream buffer pointer` *sağ* tarafta değişmeyen ve içinde null bir işaretçiye ayarlanmış olan ' a doğru olarak kaydırır **`*this`** . Depolanan, `tie pointer` *sağ tarafta* null bir işaretçiye ayarlanır.
 
 ## <a name="basic_iosnarrow"></a><a name="narrow"></a> basic_ios:: dar
 
@@ -982,7 +983,7 @@ void swap(basic_ios&& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı üye işlevi, depolanan her türlü değeri, *right* **`*this`** depolandıkları hariç tüm değerleri değiştirir `stream buffer pointer` .
+Korumalı üye işlevi, depolanan her türlü değeri,  **`*this`** depolandıkları hariç tüm değerleri değiştirir `stream buffer pointer` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

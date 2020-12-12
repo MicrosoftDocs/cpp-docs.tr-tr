@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Kullanıcı kayıtları'
 title: Kullanıcı Kayıtları
 ms.date: 05/09/2019
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - accessors [C++], static
 - BEGIN_ACCESSOR macro, example
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
-ms.openlocfilehash: 2de4cc9227da9d4ad8a012dacd85500ab698c4ae
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1d31ef93bb1b06925306c84d436d7a7837a08431
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509425"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322331"
 ---
 # <a name="user-records"></a>Kullanıcı Kayıtları
 
@@ -56,9 +57,9 @@ END_PARAM_MAP()
 };
 ```
 
-## <a name="wizard-generated-user-records"></a>Sihirbaz tarafından oluşturulan kullanıcı kayıtları
+## <a name="wizard-generated-user-records"></a>Kullanıcı kayıtlarını Wizard-Generated
 
-Bir tüketici oluşturmak için **ATL OLE DB Tüketici Sihirbazı 'nı** kullanıyorsanız, OLE DB şablonlarını veya OLE DB özniteliklerini kullanma seçeneğiniz vardır. Oluşturulan kod her durumda farklı olur. Bu kod hakkında daha fazla bilgi için bkz. [Tüketici Sihirbazı tarafından oluşturulan sınıflar](../../data/oledb/consumer-wizard-generated-classes.md).
+Bir tüketici oluşturmak için **ATL OLE DB Tüketici Sihirbazı 'nı** kullanıyorsanız, OLE DB şablonlarını veya OLE DB özniteliklerini kullanma seçeneğiniz vardır. Oluşturulan kod her durumda farklı olur. Bu kod hakkında daha fazla bilgi için bkz. [tüketici Wizard-Generated sınıfları](../../data/oledb/consumer-wizard-generated-classes.md).
 
 ## <a name="user-record-support-for-multiple-accessors"></a>Birden çok erişimci için Kullanıcı kaydı desteği
 

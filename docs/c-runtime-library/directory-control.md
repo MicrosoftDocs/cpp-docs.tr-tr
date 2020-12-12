@@ -1,24 +1,25 @@
 ---
+description: 'Daha fazla bilgi edinin: dizin denetimi'
 title: Dizin Denetimi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - controls [C++], directory
 - directory control routines
 ms.assetid: a72dcf6f-f366-4d20-8850-0e19cc53ca18
-ms.openlocfilehash: 640ce8a8665936b604c6e8e6270e358a200c880a
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a4115fc127292916f6f5b013f75104ed5771e5ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321241"
 ---
 # <a name="directory-control"></a>Dizin Denetimi
 
 Bu yordamlar dizin yapısı hakkında bilgi erişir, bunları değiştirebilir ve bilgileri elde eder.
 
-## <a name="directory-control-routines"></a>Dizin denetimi yordamları
+## <a name="directory-control-routines"></a>Directory-Control yordamlar
 
-|Yordam|Kullanım|
+|Yordam|Kullanın|
 |-------------|---------|
 |[_chdir, _wchdir](../c-runtime-library/reference/chdir-wchdir.md)|Geçerli çalışma dizinini Değiştir|
 |[_chdrive](../c-runtime-library/reference/chdrive.md)|Geçerli sürücüyü değiştir|
@@ -35,4 +36,4 @@ Bu yordamlar dizin yapısı hakkında bilgi erişir, bunları değiştirebilir v
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [Dosya İşleme](../c-runtime-library/file-handling.md)<br/>
-[Sistem Çağrıları](../c-runtime-library/system-calls.md)<br/>
+[Sistem çağrıları](../c-runtime-library/system-calls.md)<br/>
