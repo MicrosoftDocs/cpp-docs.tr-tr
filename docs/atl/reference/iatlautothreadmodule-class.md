@@ -1,5 +1,6 @@
 ---
-title: IAtlAutoThreadModule Sınıfı
+description: 'Daha fazla bilgi edinin: IAtlAutoThreadModule Class'
+title: IAtlAutoThreadModule sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IAtlAutoThreadModule
@@ -7,21 +8,21 @@ f1_keywords:
 helpviewer_keywords:
 - IAtlAutoThreadModule class
 ms.assetid: fcb58cf9-a427-4be9-89eb-04e1ab5cc3a1
-ms.openlocfilehash: e4528ca4e4d72518f4da9f30e7aa71d951ddaf5b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8dbcf5d9de9ff2e7874a12bdb698eed200cbaf44
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330067"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139769"
 ---
-# <a name="iatlautothreadmodule-class"></a>IAtlAutoThreadModule Sınıfı
+# <a name="iatlautothreadmodule-class"></a>IAtlAutoThreadModule sınıfı
 
-Bu sınıf bir `CreateInstance` yöntemiçin bir arabirimi temsil eder.
+Bu sınıf, bir yöntemi arabirimini temsil eder `CreateInstance` .
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 __interface IAtlAutoThreadModule
@@ -29,12 +30,12 @@ __interface IAtlAutoThreadModule
 
 ## <a name="remarks"></a>Açıklamalar
 
-[CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) `IAtlAutoThreadModule`sınıfı, bir nesne oluşturmak ve bir arabirim işaretçisi almak için kod sağlamak için kullanarak türetilmiştir.
+[Catlautothreadmodület](../../atl/reference/catlautothreadmodulet-class.md) sınıfı, `IAtlAutoThreadModule` bir nesne oluşturmak ve bir arabirim işaretçisi almak için kod sağlamak üzere öğesinden türetilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

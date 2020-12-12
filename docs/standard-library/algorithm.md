@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; algoritması&gt;'
 title: '&lt;algoritmalar&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - C++ Standard Library, algorithms
 - <algorithm> header
 ms.assetid: 19f97711-7a67-4a65-8fd1-9a2bd3ca327d
-ms.openlocfilehash: 003933499eee04c50f15ae4b63dd6b31b81e1069
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 42f03372d01ac2d3218ce5844b86e92526055bbf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845828"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163775"
 ---
 # <a name="ltalgorithmgt"></a>&lt;algoritmalar&gt;
 
@@ -57,13 +58,13 @@ Sayısal işleme için belirtilen C++ standart kitaplığı sayısal algoritmala
 |[copy_backward](algorithm-functions.md#copy_backward)|Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına geri yönde atar.|
 |[copy_if](algorithm-functions.md#copy_if)|Belirtilen bir koşul için test edilen belirli bir aralıktaki tüm öğeleri Kopyala **`true`**|
 |[copy_n](algorithm-functions.md#copy_n)|Belirtilen sayıda öğeyi kopyalar.|
-|[count](algorithm-functions.md#count)|Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.|
+|[biriktirme](algorithm-functions.md#count)|Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.|
 |[count_if](algorithm-functions.md#count_if)|Değerleri belirtilen bir koşulla eşleşen bir aralıktaki öğelerin sayısını döndürür.|
 |[sıfıra](algorithm-functions.md#equal)|Bir ikili koşula göre belirtilen anlamda eşitlik ya da denklik için iki aralık öğesini öğeye göre karşılaştırır.|
 |[equal_range](algorithm-functions.md#equal_range)|Sıralanmış aralıktaki konumların çiftini bulur, birinci belirtilen bir öğenin konumundan küçük veya ona eşittir ve ikinci öğenin konumundan büyüktür, burada dizideki konumlar oluşturmak için kullanılan denkliğin veya sıralamanın anlamı bir ikili koşula göre belirtilebilir.|
 |[doldurması](algorithm-functions.md#fill)|Aynı yeni değeri belirtilen bir aralıktaki her öğeye atar.|
 |[fill_n](algorithm-functions.md#fill_n)|Belirli bir öğeyle başlayan bir aralıktaki belirli öğe sayısına yeni bir değer atar.|
-|[find](algorithm-functions.md#find)|Bir öğenin belirli bir değere sahip olan aralıktaki ilk geçtiği konumu bulur.|
+|[bilgi](algorithm-functions.md#find)|Bir öğenin belirli bir değere sahip olan aralıktaki ilk geçtiği konumu bulur.|
 |[find_end](algorithm-functions.md#find_end)|Belirli bir diziye özdeş veya bir ikili koşula göre belirtildiği şekilde denk olan son dizi için bir aralık arar.|
 |[find_first_of](algorithm-functions.md#find_first_of)|Bir hedef aralığındaki çeşitli değerlerden herhangi birinin ilk geçtiği yeri veya bir ikili koşula göre belirtilen bir öğeler kümesine belirtildiği şekilde denk olan çeşitli öğelerin geçtiği ilk yeri arar.|
 |[find_if](algorithm-functions.md#find_if)|Bir öğenin belirli bir koşulu karşıladığı aralıktaki ilk geçtiği konumu bulur.|
@@ -87,7 +88,7 @@ Sayısal işleme için belirtilen C++ standart kitaplığı sayısal algoritmala
 |[Biçimlendir](algorithm-functions.md#max)|İki nesneyi karşılaştırır ve ikisinden büyük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.|
 |[max_element](algorithm-functions.md#max_element)|Belirtilen bir aralıktaki en büyük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
 |[birleþtirmek](algorithm-functions.md#merge)|İki sıralanmış kaynak aralıktaki tüm öğeleri tek bir sıralanmış aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
-|[dk](algorithm-functions.md#min)|İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.|
+|[Min](algorithm-functions.md#min)|İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.|
 |[min_element](algorithm-functions.md#min_element)|Belirtilen bir aralıktaki en küçük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
 |[MinMax](algorithm-functions.md#minmax)|İki giriş parametresini karşılaştırır ve bunları küçükten büyüğe bir çift olarak döndürür.|
 |[minmax_element](algorithm-functions.md#minmax_element)|[Min_element](algorithm-functions.md#min_element) tarafından gerçekleştirilen çalışmayı gerçekleştirir ve tek bir çağrıda [max_element](algorithm-functions.md#max_element) .|
@@ -105,7 +106,7 @@ Sayısal işleme için belirtilen C++ standart kitaplığı sayısal algoritmala
 |[pop_heap](algorithm-functions.md#pop_heap)|En büyük öğeyi bir yığının önünden aralıktaki bir sonraki son konuma kaldırır ve ardından kalan öğelerden yeni bir yığın oluşturur.|
 |[prev_permutation](algorithm-functions.md#prev_permutation)|Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.|
 |[push_heap](algorithm-functions.md#push_heap)|Aralığın sonundaki bir öğeyi aralıktaki önceki öğeleri içeren mevcut yığına ekler.|
-|[random_shuffle](algorithm-functions.md#random_shuffle)|Bir aralıktaki *n* öğe dizisini *n*öğelerinden birine yeniden düzenler. Rastgele seçilen olası düzenlemeler.|
+|[random_shuffle](algorithm-functions.md#random_shuffle)|Bir aralıktaki *n* öğe dizisini *n* öğelerinden birine yeniden düzenler. Rastgele seçilen olası düzenlemeler.|
 |[temizlenmesine](algorithm-functions.md#remove)|Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki belirtilen bir değeri ortadan kaldırır.|
 |[remove_copy](algorithm-functions.md#remove_copy)|Öğeleri, belirtilen değerin kopyalanmayan öğeleri hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.|
 |[remove_copy_if](algorithm-functions.md#remove_copy_if)|Öğeleri, bir koşulu karşılayan kopyalanmayan öğeler hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.|
@@ -133,7 +134,7 @@ Sayısal işleme için belirtilen C++ standart kitaplığı sayısal algoritmala
 |[Kur](algorithm-functions.md#swap)|İlk nesnenin içeriğini ikinci nesneye ve ikinci nesneni içeriğini birinciye atayarak, nesnelerin iki türü arasındaki öğelerin değerlerini birbiriyle değiştirir.|
 |[swap_ranges](algorithm-functions.md#swap_ranges)|Bir aralığın öğelerini eşit büyüklükteki bir diğerinin öğeleriyle değiştirir.|
 |[Dönüşümler](algorithm-functions.md#transform)|Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.|
-|[unique](algorithm-functions.md#unique)|Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.|
+|[eşi](algorithm-functions.md#unique)|Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.|
 |[unique_copy](algorithm-functions.md#unique_copy)|Birbirine bitişik yinelenen öğeler hariç bir kaynak aralıktaki öğeleri hedef aralığa kopyalar.|
 |[upper_bound](algorithm-functions.md#upper_bound)|Belirtilenden daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.|
 

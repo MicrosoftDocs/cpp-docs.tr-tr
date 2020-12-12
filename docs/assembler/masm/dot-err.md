@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `.ERR`'
 title: .ERR
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - .ERR directive
 ms.assetid: 712a5cb9-cc0e-4b67-ac11-f3355f5d48c2
-ms.openlocfilehash: 317a00f10f498073e71c64a85367d59c9ed83e89
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ff44af2b524cf30723f9922b742fff8312d85595
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87190955"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132008"
 ---
 # `.ERR`
 
 Bir hata oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **`.ERR`**⟦*iletisi*⟧
+> **`.ERR`** ⟦*iletisi*⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

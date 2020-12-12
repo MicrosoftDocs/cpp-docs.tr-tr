@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2251'
 title: Derleyici hatası C2251
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2251
 ms.assetid: fefe050c-f8d3-4316-b237-8007dbcdd3bf
-ms.openlocfilehash: d44ed7af3552f0a7c9cc9b5b2b0d14a468713254
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 029d6fc807757da14cf004b4bf1d8ae253f17ec7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134816"
 ---
 # <a name="compiler-error-c2251"></a>Derleyici hatası C2251
 

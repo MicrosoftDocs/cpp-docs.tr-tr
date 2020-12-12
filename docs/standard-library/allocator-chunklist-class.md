@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: allocator_chunklist sınıfı'
 title: allocator_chunklist Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - stdext::allocator_chunklist
 - stdext::allocators [C++], allocator_chunklist
 ms.assetid: ea72ed0a-dfdb-4c8b-8096-e4baf567b80f
-ms.openlocfilehash: 64b419b2565609d8f6018facdbe25d5dee9d94aa
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 91213b97059f135e0800ae81dd3f6b4966b24c7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562629"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163619"
 ---
 # <a name="allocator_chunklist-class"></a>allocator_chunklist Sınıfı
 
 [Cache_chunklist](cache-chunklist-class.md)türünde bir önbellek kullanarak nesneler için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Type>

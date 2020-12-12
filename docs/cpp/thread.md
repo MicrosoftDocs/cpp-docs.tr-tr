@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: iş parçacığı'
 title: thread
 ms.date: 05/07/2019
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - TLS (thread local storage), compiler implementation
 - __declspec keyword [C++], thread
 ms.assetid: 667f2a77-6d1f-4b41-bee8-05e67324fab8
-ms.openlocfilehash: 13e6d45642c08a97c06d7099b83e632501267310
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7b83686b6641585e7e7af334a6127c71a9171610
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225819"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164711"
 ---
 # <a name="thread"></a>thread
 
@@ -22,7 +23,7 @@ ms.locfileid: "87225819"
 
 **`thread`** Genişletilmiş depolama sınıfı değiştiricisi, bir iş parçacığı yerel değişkeni bildirmek için kullanılır. C++ 11 ve üzeri sürümlerde taşınabilir eşdeğer için, taşınabilir kod için [thread_local](../cpp/storage-classes-cpp.md#thread_local) depolama sınıfı belirticisini kullanın. Windows üzerinde **`thread_local`** ile uygulanır **`__declspec(thread)`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 **`__declspec(thread)`***bildirimci*
 
@@ -71,7 +72,7 @@ Ayrıca, iş parçacığı yerel nesne ve değişkenlerini bildirirken bu yöner
     __declspec( thread ) B2 BObject2;   // BObject2 declared thread local.
     ```
 
-- Standart C, yalnızca statik olmayan nesneler için bir başvuruyu içeren bir ifade ile bir nesne veya değişkenin başlatılmasına izin verir. C++ normalde bir başvuruyu içeren bir ifade içeren bir nesnenin bu tür dinamik başlatılmasına izin veriyorsa, iş parçacığı yerel nesneleriyle bu tür başlatmaya izin verilmez. Örnek:
+- Standart C, yalnızca statik olmayan nesneler için bir başvuruyu içeren bir ifade ile bir nesne veya değişkenin başlatılmasına izin verir. C++ normalde bir başvuruyu içeren bir ifade içeren bir nesnenin bu tür dinamik başlatılmasına izin veriyorsa, iş parçacığı yerel nesneleriyle bu tür başlatmaya izin verilmez. Örneğin:
 
    ```cpp
    // declspec_thread_3.cpp

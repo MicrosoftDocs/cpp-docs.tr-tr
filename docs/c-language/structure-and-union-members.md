@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yapı ve birleşim üyeleri'
 title: Yapı ve Birleşim Üyeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - operators [C], member selection
 - structure member selection
 ms.assetid: bb1fe304-af49-4f98-808d-afdc99b3e319
-ms.openlocfilehash: 70c89344e6afcdf52981f779c441c5ec47791a77
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f20074157b28763d1db05487043ba0e1576e2d4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211651"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137208"
 ---
 # <a name="structure-and-union-members"></a>Yapı ve Birleşim Üyeleri
 
@@ -33,7 +34,7 @@ Bu liste, üye seçim ifadelerinin iki biçimini açıklar:
 
 Üye seçim ifadelerinin iki formu benzer etkilere sahiptir.
 
-Aslında, üye seçim işlecini () içeren bir ifade, **->** dönemden önceki ifade,**.** <strong>\*</strong> bir işaretçi değerine uygulanan yöneltme işlecinden () oluşuyorsa, nokta (.) ile bir ifadenin Özet sürümüdür. Yani:
+Aslında, üye seçim işlecini () içeren bir ifade, **->** dönemden önceki ifade, <strong>\*</strong> bir işaretçi değerine uygulanan yöneltme işlecinden () oluşuyorsa, nokta (.) ile bir ifadenin Özet sürümüdür. Yani:
 
 ```cpp
 expression->identifier

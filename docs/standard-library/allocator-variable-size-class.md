@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: allocator_variable_size sınıfı'
 title: allocator_variable_size Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - stdext::allocator_variable_size
 - stdext::allocators [C++], allocator_variable_size
 ms.assetid: c3aa4105-ae45-4385-bbbe-9f23060478cb
-ms.openlocfilehash: 24769962d615c75f4573a6261b6000fadf39b218
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9a6f9b6316daefbf436d4718a92312ceb8d55aa4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561355"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163541"
 ---
 # <a name="allocator_variable_size-class"></a>allocator_variable_size Sınıfı
 
 [Max_variable_size](max-variable-size-class.md)tarafından yönetilen uzunluğa sahip [cache_freelist](cache-freelist-class.md) *türünde bir önbellek kullanarak türünde* nesneler için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Type>

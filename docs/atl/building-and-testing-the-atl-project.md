@@ -1,23 +1,24 @@
 ---
-title: Oluşturma ve ATL projesinde test etme
+description: 'Daha fazla bilgi edinin: ATL projesi oluşturma ve test etme'
+title: ATL projesi oluşturma ve test etme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - composite controls, building and testing the project
 - composite controls, containers for
 ms.assetid: 5c1541f8-f6cb-4c22-bd22-c66bcfbaa077
-ms.openlocfilehash: 28d976aba48521df1429b27bb20b8277b72166ba
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 02e06b42343d7c6ae7c01247ddc6e74e64acb8dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223176"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148518"
 ---
-# <a name="building-and-testing-the-atl-project"></a>Oluşturma ve ATL projesinde test etme
+# <a name="building-and-testing-the-atl-project"></a>ATL projesi oluşturma ve test etme
 
-Belirtildiği gibi [bileşik denetim ekleme](../atl/inserting-a-composite-control.md), projenin ilk bileşenlerden biridir, yeni bileşik denetim barındıran bir varsayılan HTML sayfasını. Bileşik Denetim değiştirme tamamladıktan sonra tıklayın **Çözümü Derle** veya **çözümü yeniden derle** gelen **derleme** menü. Proje başarıyla oluşturulursa sonra Internet Explorer veya başka bir tarayıcı ile bileşik denetim projenizin kök dizininde bulunan HTML sayfası, yükleme ve denetim işlevselliğini test.
+[Bileşik denetim ekleme](../atl/inserting-a-composite-control.md)bölümünde belirtildiği gibi, projenin ilk bileşenlerinden biri, yeni bileşik denetiminizi barındıran varsayılan bir HTML sayfasıdır. Bileşik Denetimi değiştirmeyi bitirdikten sonra **derleme** menüsünden **çözüm derle** veya **çözümü yeniden derle** ' ye tıklayın. Proje başarıyla oluşturulduktan sonra, bileşik denetim projenizin kök dizininde bulunan HTML sayfasını Internet Explorer 'a veya başka bir tarayıcıya yükleyin ve denetiminizin işlevlerini test edin.
 
-Ayrıca Test kapsayıcı aracını veya bir ActiveX denetimini barındırmak başka bir uygulama kullanma, bileşik denetim test edebilirsiniz. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcı erişim hakkında daha fazla bilgi için.
+Ayrıca, test kapsayıcı aracını veya ActiveX denetimini barındırasağlayan başka bir uygulamayı kullanarak bileşik denetiminizi test edebilirsiniz. Test kapsayıcısına erişme hakkında bilgi için bkz. test [kapsayıcı Ile özellikleri ve olayları test etme](../mfc/testing-properties-and-events-with-test-container.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
+[Bileşik denetim temelleri](../atl/atl-composite-control-fundamentals.md)

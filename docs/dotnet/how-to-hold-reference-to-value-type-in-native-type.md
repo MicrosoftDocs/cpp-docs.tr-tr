@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: nasıl yapılır: Yerel tür içinde değer türüne başvuruyu tutma'
 title: 'Nasıl yapılır: Yerel Tür İçinde Değer Türüne Başvuruyu Tutma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - value type reference in native type
 - reference to value type in native type
 ms.assetid: 1eabf8be-7d4f-4339-9027-48d5c4244483
-ms.openlocfilehash: 4b71701c771f6f49bae172284e23dd9eba2aeded
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 4f012b2590b6085e965f3cd1420dbcba4347c84d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134894"
 ---
 # <a name="how-to-hold-reference-to-value-type-in-native-type"></a>Nasıl yapılır: Yerel Tür İçinde Değer Türüne Başvuruyu Tutma
 
-Yerel bir türdeki bir değer türünün başvurusunu tutmak için kutulanmış tür üzerinde `gcroot` kullanın.
+`gcroot`Yerel türdeki bir değer türüne başvuruyu tutmak için kutulanmış tür üzerinde kullanın.
 
 ## <a name="example"></a>Örnek
 
@@ -51,4 +52,4 @@ String in V: Hello
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

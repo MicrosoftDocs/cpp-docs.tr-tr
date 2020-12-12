@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; ayrıcılar &gt; işleçleri'
 title: '&lt;ayrıcılar &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - allocators/std::operator!=
 - allocators/std::operator==
 ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
-ms.openlocfilehash: 969c9f8e05a9fafad4d3a1102060e2b3d4d0eb2e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a0289ca7b76aaddb2e6c8ed20a58a61d1be40998
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844788"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163476"
 ---
 # <a name="ltallocatorsgt-operators"></a>&lt;ayrıcılar &gt; işleçleri
 

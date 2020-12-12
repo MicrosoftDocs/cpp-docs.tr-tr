@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: ActiveX denetiminde resim kullanma'
 title: 'MFC ActiveX Denetimleri: ActiveX Denetiminde Resim Kullanma'
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - OnResetState method [MFC]
 - CLSID_CPicturePropPage [MFC]
 ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
-ms.openlocfilehash: 9eb204dd240ae17421a20b7cddeff56c9a22c19b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9c9989be7503eb449b969fbbf37d92f26c165131
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618072"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133087"
 ---
 # <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Resim Kullanma
 
@@ -27,7 +28,7 @@ Bu makalede, ortak resim türü ve ActiveX denetimi nasıl uygulanacağı açık
 
 - [Denetim projenize eklemeler](#_core_additions_to_your_control_project)
 
-## <a name="overview-of-custom-picture-properties"></a><a name="_core_overview_of_custom_picture_properties"></a>Özel resim özelliklerine genel bakış
+## <a name="overview-of-custom-picture-properties"></a><a name="_core_overview_of_custom_picture_properties"></a> Özel resim özelliklerine genel bakış
 
 Resim türü, bazı ActiveX denetimleri için ortak bir tür grubundan biridir. Resim türü, meta dosyaları, bit eşlemleri veya simgeleri işler ve kullanıcının ActiveX denetiminde görüntülenmek üzere bir resim belirtmesini sağlar. Özel resim özellikleri bir resim nesnesi kullanılarak uygulanır ve denetimin kullanıcı tarafından resim özelliğine erişmesine izin veren işlevleri alır/ayarlar. Kullanıcıların, hisse senedi resmi özellik sayfasını kullanarak özel resim özelliğine erişmesini denetleme.
 
@@ -39,7 +40,7 @@ ActiveX denetim sınıfları, denetimin içindeki resim özelliğini uygulamak i
 
    Bu sınıf, özel resim özelliği tarafından görünen öğe için resim nesnesine ve işlevlere kolay erişim sağlar.
 
-- Get/Set işlevleriyle uygulanan **Lppicturedisp**türündeki özellikler için destek.
+- Get/Set işlevleriyle uygulanan **Lppicturedisp** türündeki özellikler için destek.
 
    Sınıf Görünümü kullanarak, resim türünü destekleyen özel bir özelliği veya özellikleri hızlıca ekleyebilirsiniz. Sınıf Görünümü ile ActiveX denetim özellikleri ekleme hakkında daha fazla bilgi için [MFC ActiveX denetimleri: Özellikler](mfc-activex-controls-properties.md)makalesine bakın.
 
@@ -47,7 +48,7 @@ ActiveX denetim sınıfları, denetimin içindeki resim özelliğini uygulamak i
 
    Bu özellik sayfası, ActiveX denetimleri için kullanılabilen bir hisse senedi özellik sayfaları grubunun parçasıdır. ActiveX denetimi özellik sayfaları hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri: stok özellik sayfalarını kullanma](mfc-activex-controls-using-stock-property-pages.md)
 
-## <a name="implementing-a-custom-picture-property-in-your-activex-control"></a><a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a>ActiveX denetimi özel bir resim özelliği uygulama
+## <a name="implementing-a-custom-picture-property-in-your-activex-control"></a><a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> ActiveX denetimi özel bir resim özelliği uygulama
 
 Bu bölümde özetlenen adımları tamamladığınızda denetim, Kullanıcı tarafından seçilen resimleri görüntüleyebilir. Kullanıcı, geçerli resmi gösteren bir özellik sayfası kullanarak görüntülenen resmi değiştirebilir ve kullanıcının farklı resimler seçmesine izin veren bir tarama düğmesi vardır.
 
@@ -63,7 +64,7 @@ Bu bölümde özetlenen adımları tamamladığınızda denetim, Kullanıcı tar
 
    Bu değişiklikler, ActiveX denetiminizin çiziminden sorumlu olan çeşitli işlevlerde yapılır.
 
-## <a name="additions-to-your-control-project"></a><a name="_core_additions_to_your_control_project"></a>Denetim projenize eklemeler
+## <a name="additions-to-your-control-project"></a><a name="_core_additions_to_your_control_project"></a> Denetim projenize eklemeler
 
 Standart resim özellik sayfası için özellik sayfası KIMLIĞINI eklemek için, denetim uygulama dosyasında BEGIN_PROPPAGEIDS makrodan sonra aşağıdaki satırı ekleyin (. CPP):
 
@@ -77,7 +78,7 @@ Ayrıca, BEGIN_PROPPAGEIDS makrolarınızın Count parametresini bir de artırma
 
 [!code-cpp[NVC_MFC_AxPic#3](codesnippet/cpp/mfc-activex-controls-using-pictures-in-an-activex-control_3.h)]
 
-Veri üye *m_pic*adlandırmak gerekli değildir; herhangi bir ad yeterli olacaktır.
+Veri üye *m_pic* adlandırmak gerekli değildir; herhangi bir ad yeterli olacaktır.
 
 Sonra, bir resim türünü destekleyen özel bir özellik ekleyin:
 
@@ -95,11 +96,11 @@ Sonra, bir resim türünü destekleyen özel bir özellik ekleyin:
 
 1. **Özellik türü** kutusunda, özellik türü Için **IPictureDisp** ' ı seçin <strong>\*</strong> .
 
-1. **Uygulama türü**Için, **get/set yöntemleri**' ne tıklayın.
+1. **Uygulama türü** Için, **get/set yöntemleri**' ne tıklayın.
 
 1. Get ve set işlevleriniz için benzersiz adlar yazın veya varsayılan adları kabul edin. (Bu örnekte, varsayılan adları `GetControlPicture` ve `SetControlPicture` kullanılır.)
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 Özellik Ekleme Sihirbazı, denetim üstbilgisindeki dağıtım Haritası açıklamaları arasına aşağıdaki kodu ekler (. H) dosyası:
 
@@ -116,9 +117,9 @@ Ayrıca, aşağıdaki kod denetim uygulamasının dağıtım eşlemesine eklenmi
 > [!NOTE]
 > Denetim sınıfınız ve işlev adlarınızı Yukarıdaki örnekte farklılık gösterebilir.
 
-### <a name="modifications-to-your-control-project"></a><a name="_core_modifications_to_your_control_project"></a>Denetim projenizde yapılan değişiklikler
+### <a name="modifications-to-your-control-project"></a><a name="_core_modifications_to_your_control_project"></a> Denetim projenizde yapılan değişiklikler
 
-Denetim projenize gerekli eklemeleri yaptıktan sonra, ActiveX denetiminizi işlemeyi etkileyen birkaç işlevi değiştirmeniz gerekir. Bu işlevler, `OnResetState` , `OnDraw` ve özel resim özelliğinin Get/Set işlevleri denetim uygulama dosyasında bulunur. (Bu örnekte denetim sınıfı çağrılır `CSampleCtrl` , `CPictureHolder` veri üyesine *m_pic*denir ve özel resim özelliği adı olduğunu unutmayın `ControlPicture` .)
+Denetim projenize gerekli eklemeleri yaptıktan sonra, ActiveX denetiminizi işlemeyi etkileyen birkaç işlevi değiştirmeniz gerekir. Bu işlevler, `OnResetState` , `OnDraw` ve özel resim özelliğinin Get/Set işlevleri denetim uygulama dosyasında bulunur. (Bu örnekte denetim sınıfı çağrılır `CSampleCtrl` , `CPictureHolder` veri üyesine *m_pic* denir ve özel resim özelliği adı olduğunu unutmayın `ControlPicture` .)
 
 Denetim `OnResetState` işlevinde, öğesine yapılan çağrıdan sonra aşağıdaki isteğe bağlı satırı ekleyin `COleControl::OnResetState` :
 
@@ -150,5 +151,5 @@ Değişiklikleri tamamladıktan sonra, özel resim özelliğinin yeni işlevleri
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC ActiveX denetimleri](mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma](mfc-activex-controls-using-fonts.md)<br/>
-[MFC ActiveX Denetimleri: Özellik Sayfaları](mfc-activex-controls-property-pages.md)
+[MFC ActiveX denetimleri: yazı tiplerini kullanma](mfc-activex-controls-using-fonts.md)<br/>
+[MFC ActiveX denetimleri: Özellik sayfaları](mfc-activex-controls-property-pages.md)

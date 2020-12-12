@@ -1,5 +1,6 @@
 ---
-title: CSimpleArrayEqualHelperFalse Sınıfı
+description: 'Daha fazla bilgi edinin: CSimpleArrayEqualHelperFalse sınıfı'
+title: CSimpleArrayEqualHelperFalse sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSimpleArrayEqualHelperFalse
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleArrayEqualHelperFalse class
 ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb
-ms.openlocfilehash: 5eca3145d64895e34b599fbf83834af142b65973
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 196f7873f72799408a629bc784cb343966801d79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140731"
 ---
-# <a name="csimplearrayequalhelperfalse-class"></a>CSimpleArrayEqualHelperFalse Sınıfı
+# <a name="csimplearrayequalhelperfalse-class"></a>CSimpleArrayEqualHelperFalse sınıfı
 
-Bu sınıf [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı için bir yardımcıdır.
+Bu sınıf [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı için yardımcı olur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,25 +30,25 @@ class CSimpleArrayEqualHelperFalse
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Türemiş bir sınıf.
+Türetilmiş bir sınıf.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSimpleArrayEqualHelperFalse::IsEqual](#isequal)|(Statik) Yanlış döndürür.|
+|[CSimpleArrayEqualHelperFalse:: IsEqual](#isequal)|Se False döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu özellikler sınıfı sınıfın `CSimpleArray` tamamlayıcısıdır. Her zaman yanlış döndürür ve `ATLASSERT` buna ek olarak, hiç başvurulmuş sayılsa yanlış bir argüman ile arayacaktır. Eşitlik testinin yeterince tanımlanmamış olduğu durumlarda, bu sınıf, öğeleriçeren bir dizinin çoğu yöntem için doğru çalışmasına izin verir, ancak CSimpleArray gibi karşılaştırmalara bağlı yöntemler için iyi tanımlanmış bir şekilde başarısız [olur::Bul](../../atl/reference/csimplearray-class.md#find).
+Bu nitelikler sınıfı, sınıfı için bir tamamlayıcı `CSimpleArray` . Her zaman false döndürür ve buna ek olarak, `ATLASSERT` başvuruluyorsa yanlış bir bağımsız değişkenle çağracaktır. Eşitlik testinin yeterince tanımlanmadığı durumlarda bu sınıf, öğeleri içeren bir dizinin çoğu Yöntem için doğru şekilde çalışmasını sağlar, ancak [CSimpleArray:: Find](../../atl/reference/csimplearray-class.md#find)gibi karşılaştırmaları temel alan yöntemler için iyi tanımlanmış bir şekilde başarısız olur.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlsimpcoll.h
+**Üstbilgi:** atlsimpcoll. h
 
-## <a name="csimplearrayequalhelperfalseisequal"></a><a name="isequal"></a>CSimpleArrayEqualHelperFalse::IsEqual
+## <a name="csimplearrayequalhelperfalseisequal"></a><a name="isequal"></a> CSimpleArrayEqualHelperFalse:: IsEqual
 
 Yanlış değerini döndürür.
 
@@ -61,9 +62,9 @@ Yanlış değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem her zaman yanlış `ATLASSERT` döndürür ve başvurulmuşsa false bağımsız değişkeni ile çağırır. Bunun `CSimpleArrayEqualHelperFalse::IsEqual` amacı, eşitlik testleri yeterince tanımlanmamışken karşılaştırmaları kullanarak yöntemleri iyi tanımlanmış bir şekilde başarısız olmaya zorlamaktır.
+Bu yöntem her zaman false döndürür ve `ATLASSERT` başvuruluyorsa yanlış bir bağımsız değişkenle çağırır. , ' Nin amacı, `CSimpleArrayEqualHelperFalse::IsEqual` eşitlik testleri yeterince tanımlanmadığında iyi tanımlanmış bir biçimde başarısız olmak için karşılaştırmaları kullanarak yöntemleri zorlamaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CSimpleArrayEqualHelper Sınıfı](../../atl/reference/csimplearrayequalhelper-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[CSimpleArrayEqualHelper sınıfı](../../atl/reference/csimplearrayequalhelper-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

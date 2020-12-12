@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: dize sabit değeri birleştirme'
 title: Dize Değişmez Değeri Birleştirmesi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - concatenating strings
 - strings [C++], concatenating
 ms.assetid: 51486b1f-4b1e-4061-9add-1aa38c6cdb3c
-ms.openlocfilehash: cdd9a7811635bf43cd76ecbc84d8ab364e7f9dab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3486857cb0d218ea80c00252de02d9f29d58f2c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157801"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137299"
 ---
 # <a name="string-literal-concatenation"></a>Dize Değişmez Değeri Birleştirmesi
 
@@ -61,4 +62,4 @@ printf_s( "%s" , string ) ;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Dize Değişmez Değerleri](../c-language/c-string-literals.md)
+[C dize değişmez değerleri](../c-language/c-string-literals.md)

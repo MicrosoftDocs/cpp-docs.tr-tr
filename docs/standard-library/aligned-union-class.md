@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: aligned_union sınıfı'
 title: aligned_union Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - aligned_union
 ms.assetid: 9931a44d-3a67-4f29-a0f6-d47a7cf560ac
-ms.openlocfilehash: ae6ef629535238b9406216afd9f680a5c1e1afe0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: acb55501edc1a390064cb943a710f05f2ecea811
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623801"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163671"
 ---
 # <a name="aligned_union-class"></a>aligned_union Sınıfı
 
 Bir birleştirme türünü ve gereken boyutu depolamak için yeterince büyük ve uygun şekilde hizalı bir POD türü sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <std::size_t Len, class... Types>
@@ -37,7 +38,7 @@ Temel alınan birleşimdeki ayrı türler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir UNION 'yi başlatılmamış depolamada depolamak için gereken hizalama ve boyutu almak için sınıf şablonunu kullanın. TypeDef öğesi, `type` *türlerde*listelenen herhangi bir türün depolanması IÇIN uygun bir pod türü adlandırır; minimum boyut *len*olur. Türündeki statik üye, `alignment_value` `std::size_t` *türlerde*listelenen tüm türlerin gereken en katı hizalamasını içerir.
+Bir UNION 'yi başlatılmamış depolamada depolamak için gereken hizalama ve boyutu almak için sınıf şablonunu kullanın. TypeDef öğesi, `type` *türlerde* listelenen herhangi bir türün depolanması IÇIN uygun bir pod türü adlandırır; minimum boyut *len* olur. Türündeki statik üye, `alignment_value` `std::size_t` *türlerde* listelenen tüm türlerin gereken en katı hizalamasını içerir.
 
 ## <a name="example"></a>Örnek
 

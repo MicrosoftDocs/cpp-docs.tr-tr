@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2477'
 title: Derleyici hatası C2477
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2477
 ms.assetid: 60bc324b-6605-4833-8099-a291efc712e7
-ms.openlocfilehash: aa276ea839f11574609b183d78b46e08581a1b51
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 50cbb3523e6dc30dc465876435db40a80e2768fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743659"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164399"
 ---
 # <a name="compiler-error-c2477"></a>Derleyici hatası C2477
 
 ' üye ': statik veri üyesi türetilmiş sınıf aracılığıyla başlatılamaz
 
-Şablon sınıfının statik veri üyesi yanlış başlatılmış. Bu, ISO C++ standardına uymak Için, Visual Studio .net C++ 2003 ' den önceki Microsoft derleyicisi sürümleriyle Son değişiklik olduğunu ortadan kaldırma.
+Şablon sınıfının statik veri üyesi yanlış başlatılmış. Bu, ISO C++ standardına uymak için, Visual Studio .NET 2003 ' den önceki Microsoft C++ derleyicisi sürümleriyle Son değişiklik olduğunu ortadan kaldırma.
 
 Aşağıdaki örnek C2477 oluşturur:
 

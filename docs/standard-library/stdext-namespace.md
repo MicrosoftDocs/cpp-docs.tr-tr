@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: stdext ad alanı'
 title: stdext Ad Alanı
 ms.date: 09/06/2017
 f1_keywords:
@@ -7,27 +8,27 @@ helpviewer_keywords:
 - _DEFINE_DEPRECATED_HASH_CLASSES symbol
 - stdext namespace
 ms.assetid: 3e94fc89-0584-424f-bc09-081b73379545
-ms.openlocfilehash: d40f3f7a99db72784cc9a32a9c37064228597d34
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bb81dde22014ec91f7212ce4313c21a8410f30a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412429"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153791"
 ---
 # <a name="stdext-namespace"></a>stdext Ad Alanı
 
-Üyeleri [ \<hash_map >](../standard-library/hash-map.md) ve [ \<hash_set >](../standard-library/hash-set.md) üst bilgi dosyaları şu anda parçası değildir ISO C++ standart. Bu nedenle, bu türleri ve üyeleri öğesinden taşındı `std` ad alanına ad alanı `stdext`, C++ standardı ile uyumlu kalır.
+[\<hash_map>](../standard-library/hash-map.md)Ve [\<hash_set>](../standard-library/hash-set.md) üst bilgi dosyalarının üyeleri şu anda ISO C++ standardının bir parçası değildir. Bu nedenle, bu türler ve Üyeler `std` `stdext` C++ standardı ile uyumlu kalacak şekilde ad alanından ad alanına taşınmıştır.
 
-İle derlerken [/Ze](../build/reference/za-ze-disable-language-extensions.md), varsayılan değer olan, derleyici kullanımı hakkında uyarır `std` üyelerinin \<hash_map > ve \<hash_set > üst bilgi dosyaları. Uyarı devre dışı bırakmak için [uyarı](../preprocessor/warning.md) pragması.
+Varsayılan olan [/ze](../build/reference/za-ze-disable-language-extensions.md)ile derlerken, derleyici `std` \<hash_map> ve \<hash_set> üst bilgi dosyalarının üyeleri için kullanımını uyarır. Uyarıyı devre dışı bırakmak için [Uyarı](../preprocessor/warning.md) pragmasını kullanın.
 
-Derleyicinin kullanımıyla ilgili bir hata oluşturmak için `std` üyelerinin \<hash_map > ve \<hash_set > üst bilgi dosyaları ile **/Ze**, önce aşağıdaki yönerge ekleyin `#include` tüm C++ standart kitaplığı üst bilgi dosyaları.
+Derleyicinin `std` /Ze ile ve üst bilgi dosyalarının üyeleri için kullanımı için bir hata oluşturmasını sağlamak üzere \<hash_map> \<hash_set> , herhangi bir `#include` C++ standart kitaplığı üstbilgi dosyasından önce aşağıdaki yönergeyi ekleyin.
 
 ```cpp
 #define _DEFINE_DEPRECATED_HASH_CLASSES 0
 ```
 
-İle derlerken **/Za**, derleyici bir hata oluşturur.
+**/Za** ile derlerken, derleyici bir hata oluşturur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)

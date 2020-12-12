@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ayırıcı sınıfı'
 title: allocator Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: 4857de0b77d69a0d256da2200e5f4d0eb9d51c51
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f1f54aae3191d261d549e69e942974fc46a670f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163632"
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 
 Sınıf şablonu, türünde nesne dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar `Type` . Sınıfının bir nesnesi, `allocator` C++ standart kitaplığındaki çeşitli kapsayıcı sınıfı şablonlarının oluşturucuları 'nda belirtilen varsayılan ayırıcı nesnesidir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Type>
@@ -63,7 +64,7 @@ Tüm C++ standart kitaplığı kapsayıcıları için varsayılan olarak kullan�
 
 Örneğin, bir ayırıcı nesne bir özel yığında veya paylaşılan bellekte depolama alanı ayırabilir veya küçük veya büyük nesne boyutları için iyileştirebilirler. Ayrıca, sağladığı tür tanımlarına, bu öğelere paylaşılan belleği yöneten özel erişimci nesneleri aracılığıyla erişildiğini veya otomatik çöp toplama işlemini de belirtebilir. Bu nedenle, bir ayırıcı nesnesi kullanarak depolamayı ayıran bir sınıf, C++ standart kitaplığı 'ndaki kapsayıcılar gibi işaretçi ve başvuru nesnelerini bildirmek için bu türleri kullanmalıdır.
 
-<strong>(Yalnızca C++ 98/03)</strong> Ayırıcı sınıfından türettiğinizde, [rebind](#rebind) `_Other` typedef yeni türetilmiş sınıfınıza başvuran bir yeniden bağlama yapısı sağlamanız gerekir.
+<strong>(Yalnızca C++ 98/03)</strong> Ayırıcı sınıfından türettiğinizde, [](#rebind) `_Other` typedef yeni türetilmiş sınıfınıza başvuran bir yeniden bağlama yapısı sağlamanız gerekir.
 
 Bu nedenle, bir ayırıcı aşağıdaki türleri tanımlar:
 
@@ -137,7 +138,7 @@ Adresi aranmakta olan nesnenin const veya nonconst değeri.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, ayrılan öğeler için işaretçiler olması gereken biçimde *Val*adresini döndürür.
+Üye işlevleri, ayrılan öğeler için işaretçiler olması gereken biçimde *Val* adresini döndürür.
 
 #### <a name="example"></a>Örnek
 
@@ -537,7 +538,7 @@ Depolamadan serbest bırakmak için nesne sayısı.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `Type` ' ı çağırarak, *PTR*ile başlayan türdeki Count nesnelerinin dizisi için depolamayı boşaltır `operator delete(ptr)` . İşaretçi *PTR* , aynı boyut ve türden bir dizi nesnesi ayırarak, ** \* Bu**değere eşit olarak karşılaştırıldığı bir ayırıcı nesnesini [ayırmak](#allocate) için bir çağrı tarafından daha önce döndürüldü. `deallocate` hiçbir koşulda özel durum oluşturmaz.
+Üye işlevi, `Type` ' ı çağırarak, *PTR* ile başlayan türdeki Count nesnelerinin dizisi için depolamayı boşaltır `operator delete(ptr)` . İşaretçi *PTR* , aynı boyut ve türden bir dizi nesnesi ayırarak, **\* Bu** değere eşit olarak karşılaştırıldığı bir ayırıcı nesnesini [ayırmak](#allocate) için bir çağrı tarafından daha önce döndürüldü. `deallocate` hiçbir koşulda özel durum oluşturmaz.
 
 #### <a name="example"></a>Örnek
 
@@ -558,7 +559,7 @@ Yok edilecek nesnenin adresini atayarak bir işaretçi.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, yıkıcıyı çağırarak *PTR*tarafından atanan nesneyi yok eder `ptr->Type::~Type` .
+Üye işlevi, yıkıcıyı çağırarak *PTR* tarafından atanan nesneyi yok eder `ptr->Type::~Type` .
 
 #### <a name="example"></a>Örnek
 
@@ -812,7 +813,7 @@ typedef value_type *pointer;
 
 #### <a name="remarks"></a>Açıklamalar
 
-İşaretçi türü, `ptr` ** \* PTR**ifadesi ve türü bir nesne ayırabilecek herhangi bir nesne tarafından belirleyebilecek bir nesneyi tanımlar `allocator` .
+İşaretçi türü, `ptr` **\* PTR** ifadesi ve türü bir nesne ayırabilecek herhangi bir nesne tarafından belirleyebilecek bir nesneyi tanımlar `allocator` .
 
 #### <a name="example"></a>Örnek
 

@@ -1,5 +1,6 @@
 ---
-title: CSimpleDialog Sınıfı
+description: 'Daha fazla bilgi edinin: CSimpleDialog sınıfı'
+title: CSimpleDialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSimpleDialog
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - dialog boxes, modal
 - modal dialog boxes, ATL
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
-ms.openlocfilehash: 345372d71ad96a74bb0ae6dd7e89bdf0724cd822
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 50889c4387515c85cd3c6e53bf12e7c0494504ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140653"
 ---
-# <a name="csimpledialog-class"></a>CSimpleDialog Sınıfı
+# <a name="csimpledialog-class"></a>CSimpleDialog sınıfı
 
-Bu sınıf temel bir modal iletişim kutusu uygular.
+Bu sınıf, temel kalıcı iletişim kutusu uygular.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,26 +34,26 @@ class CSimpleDialog : public CDialogImplBase
 
 *t_wDlgTemplateID*
 
-İletişim şablonu kaynağının kaynak kimliği.
+İletişim kutusu şablon kaynağının kaynak KIMLIĞI.
 
 *t_bCenter*<br/>
-İletişim nesnesi sahibi penceresinde ortalanacaksa DOĞRU; aksi takdirde YANLIŞ.
+İletişim kutusu nesnesi, sahip penceresinde ortalandıysanız doğru; Aksi halde yanlış.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSimpleDialog::DoModal](#domodal)|Modal iletişim kutusu oluşturur.|
+|[CSimpleDialog::D oModal](#domodal)|Kalıcı bir iletişim kutusu oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Temel işlevselliği olan bir modal iletişim kutusu uygular. `CSimpleDialog`yalnızca Windows ortak denetimleri için destek sağlar. Modal iletişim kutusu oluşturmak ve görüntülemek için, iletişim kutusu için varolan bir kaynak şablonunun adını sağlayan bu sınıfın bir örneğini oluşturun. Kullanıcı önceden tanımlanmış bir değere sahip (IDOK veya IDCANCEL gibi) herhangi bir denetimi tıklattığında iletişim kutusu nesnesi kapanır.
+Temel işlevsellikle kalıcı iletişim kutusu uygular. `CSimpleDialog` yalnızca Windows ortak denetimleri için destek sağlar. Kalıcı bir iletişim kutusu oluşturmak ve göstermek için, bu sınıfın bir örneğini oluşturun ve iletişim kutusu için var olan bir kaynak şablonunun adını sağlar. Kullanıcı önceden tanımlanmış bir değer (IDOK veya ıDCANCEL gibi) ile herhangi bir denetime tıkladığında iletişim kutusu nesnesi kapanır.
 
-`CSimpleDialog`yalnızca modal iletişim kutuları oluşturmanıza olanak sağlar. `CSimpleDialog`iletileri uygun işleyicilere yönlendirmek için varsayılan ileti eşlemesini kullanan iletişim kutusu yordamını sağlar.
+`CSimpleDialog` yalnızca kalıcı iletişim kutuları oluşturmanıza izin verir. `CSimpleDialog` iletileri uygun işleyicilere yönlendirmek için varsayılan ileti eşlemesini kullanan iletişim kutusu yordamını sağlar.
 
-Bkz. Daha fazla bilgi için [Bir İletişim Kutusu Uygulama.](../../atl/implementing-a-dialog-box.md)
+Daha fazla bilgi için bkz. [Iletişim kutusu uygulama](../../atl/implementing-a-dialog-box.md) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -62,11 +63,11 @@ Bkz. Daha fazla bilgi için [Bir İletişim Kutusu Uygulama.](../../atl/implemen
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-## <a name="csimpledialogdomodal"></a><a name="domodal"></a>CSimpleDialog::DoModal
+## <a name="csimpledialogdomodal"></a><a name="domodal"></a> CSimpleDialog::D oModal
 
-Modal iletişim kutusunu çağırır ve yapıldığında iletişim kutusu sonucunu döndürür.
+Kalıcı bir iletişim kutusu çağırır ve tamamlandığında iletişim kutusu sonucunu döndürür.
 
 ```
 INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
@@ -75,18 +76,18 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-İletişim kutusunun üst öğesine bir tutamaç. Değer sağlanmadıysa, üst öğe geçerli etkin pencereye ayarlanır.
+İletişim kutusunun üst öğesine yönelik bir tanıtıcı. Değer sağlanmazsa, üst öğe geçerli etkin pencereye ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İade değeri başarılı olursa, iletişim kutusunu kapatan denetimin kaynak kimliğidir.
+Başarılı olursa, dönüş değeri iletişim kutusunu kapatılan denetimin kaynak KIMLIĞIDIR.
 
-İşlev başarısız olursa, iade değeri -1'dir. Genişletilmiş hata bilgilerini almak `GetLastError`için .
+İşlev başarısız olursa, dönüş değeri-1 ' dir. Genişletilmiş hata bilgilerini almak için çağrısı yapın `GetLastError` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, iletişim kutusu etkinken kullanıcıyla olan tüm etkileşimi işler. Bu iletişim kutusu modal kılan şeydir; diğer bir deyişle, iletişim kutusu kapatılana kadar kullanıcı diğer pencerelerle etkileşim kuramaz.
+Bu yöntem, iletişim kutusu etkinken kullanıcıyla tüm etkileşimi işler. İletişim kutusu kalıcı hale gelir; diğer bir deyişle, iletişim kutusu kapatılıncaya kadar Kullanıcı diğer pencereler ile etkileşime giremezsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

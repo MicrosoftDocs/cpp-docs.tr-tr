@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel durum belirtimleri (throw, noexcept) (C++)'
 title: Özel durum belirtimleri (throw, noexcept) (C++)
 ms.date: 01/18/2018
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - throw keyword [C++]
 - noexcept keyword [C++]
 ms.assetid: 4d3276df-6f31-4c7f-8cab-b9d2d003a629
-ms.openlocfilehash: 1fa56ebf0a0358845ef620a89bc416992b3c0e31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a6b3cb808caf464dc3dd19ea4d34e9d68f09d0d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164814"
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept) (C++)
 
-Özel durum belirtimleri, programcı 'nin bir işlev tarafından yayabileceği özel durum türleri hakkında amacını gösteren bir C++ dili özelliğidir. Bir işlevin özel durum *belirtimi*kullanarak bir özel durumla ilgili veya çıkış yapabilir olduğunu belirtebilirsiniz. Derleyici, bu bilgileri işleve yapılan çağrıları iyileştirmek ve beklenmeyen bir özel durum işlevi iptal ederseniz programı sonlandırmak için kullanabilir.
+Özel durum belirtimleri, programcı 'nin bir işlev tarafından yayabileceği özel durum türleri hakkında amacını gösteren bir C++ dili özelliğidir. Bir işlevin özel durum *belirtimi* kullanarak bir özel durumla ilgili veya çıkış yapabilir olduğunu belirtebilirsiniz. Derleyici, bu bilgileri işleve yapılan çağrıları iyileştirmek ve beklenmeyen bir özel durum işlevi iptal ederseniz programı sonlandırmak için kullanabilir.
 
-C++ 17 ' den önce iki tür özel durum belirtimi vardı. *Noexcept belirtimi* , c++ 11 ' de yenidir. Bu, işlevi kaçırabilecek olası özel durumların kümesinin boş olup olmadığını belirtir. *Dinamik özel durum belirtimi*veya `throw(optional_type_list)` belirtimi, c++ 11 ' de kullanımdan kaldırılmıştır ve, için `throw()` bir diğer ad olan hariç c++ 17 ' de kaldırılmıştır `noexcept(true)` . Bu özel durum belirtimi, bir işlevden hangi özel durumların atılamayacağını, ancak uygulamada sorunlu olduğunu tespit etmek üzere tasarlanmıştır. Biraz faydalı olması kanıtladığı tek bir dinamik özel durum belirtimi koşulsuz `throw()` belirtimiydi. Örneğin, işlev bildirimi:
+C++ 17 ' den önce iki tür özel durum belirtimi vardı. *Noexcept belirtimi* , c++ 11 ' de yenidir. Bu, işlevi kaçırabilecek olası özel durumların kümesinin boş olup olmadığını belirtir. *Dinamik özel durum belirtimi* veya `throw(optional_type_list)` belirtimi, c++ 11 ' de kullanımdan kaldırılmıştır ve, için `throw()` bir diğer ad olan hariç c++ 17 ' de kaldırılmıştır `noexcept(true)` . Bu özel durum belirtimi, bir işlevden hangi özel durumların atılamayacağını, ancak uygulamada sorunlu olduğunu tespit etmek üzere tasarlanmıştır. Biraz faydalı olması kanıtladığı tek bir dinamik özel durum belirtimi koşulsuz `throw()` belirtimiydi. Örneğin, işlev bildirimi:
 
 ```cpp
 void MyFunction(int i) throw();
@@ -50,15 +51,15 @@ Bir işlevin özel durum davranışı aşağıdaki etkenlere bağlıdır:
 
 - Özel durum belirtimini açıkça belirtip belirtmeyeceğinizi belirtir.
 
-C işlevlerinde açık özel durum belirtimlerine izin verilmez. Bir C işlevi, **/EHsc**altında özel durum oluşturmayan kabul edilir ve **/EHS**, **/EHa**veya **/EHac**altında yapılandırılmış özel durumlar oluşturabilir.
+C işlevlerinde açık özel durum belirtimlerine izin verilmez. Bir C işlevi, **/EHsc** altında özel durum oluşturmayan kabul edilir ve **/EHS**, **/EHa** veya **/EHac** altında yapılandırılmış özel durumlar oluşturabilir.
 
 Aşağıdaki tabloda, bir C++ işlevinin çeşitli derleyici özel durum işleme seçenekleri altında oluşturulup oluşturamayacağını özetlenmektedir:
 
 |İşlev|/EHsc|/EHs|/EHa|/EHac|
 |--------------|------------|-----------|-----------|------------|
-|Özel durum belirtimi olmayan C++ işlevi|Yes|Yes|Yes|Yes|
-|**`noexcept`**, `noexcept(true)` Veya `throw()` özel durum belirtimi ile C++ işlevi|Hayır|Hayır|Evet|Yes|
-|`noexcept(false)`, `throw(...)` Veya `throw(type)` özel durum belirtimi ile C++ işlevi|Yes|Yes|Yes|Yes|
+|Özel durum belirtimi olmayan C++ işlevi|Evet|Evet|Evet|Evet|
+|**`noexcept`**, `noexcept(true)` Veya `throw()` özel durum belirtimi ile C++ işlevi|Hayır|Hayır|Evet|Evet|
+|`noexcept(false)`, `throw(...)` Veya `throw(type)` özel durum belirtimi ile C++ işlevi|Evet|Evet|Evet|Evet|
 
 ## <a name="example"></a>Örnek
 

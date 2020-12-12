@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2470'
 title: Derleyici hatası C2470
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2470
 ms.assetid: e17d2cb8-b84c-447c-976a-625f0c96f3fe
-ms.openlocfilehash: 0f81ba26f346508c0178a99c537206762476b7cb
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 90a57f02022044aca7b4062ea287eae213c26f74
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743750"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164516"
 ---
 # <a name="compiler-error-c2470"></a>Derleyici hatası C2470
 

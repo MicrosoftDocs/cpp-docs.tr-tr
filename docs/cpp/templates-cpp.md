@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Şablonlar (C++)'
 title: Şablonlar (C++)
 ms.date: 12/27/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - templates, C++
 - templates [C++]
 ms.assetid: 90fcc14a-2092-47af-9d2e-dba26d25b872
-ms.openlocfilehash: 996458417b20533db074ce2fa13c06860c54247c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 14de4372502748c4d622e8739cad82b78a55daa9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223570"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164763"
 ---
 # <a name="templates-c"></a>Şablonlar (C++)
 
@@ -30,9 +31,9 @@ T minimum(const T& lhs, const T& rhs)
 }
 ```
 
-Yukarıdaki kod, dönüş değeri ve çağrı parametreleri (lhs ve RHS) bu türün tümü olan tek tür parametresi *T*olan genel bir işlev için bir şablon tanımlar. Bir tür parametresini dilediğiniz şekilde adlandırın, ancak kurala göre tek büyük harfler en yaygın olarak kullanılır. *T* bir şablon parametresidir; **`typename`** anahtar sözcüğü, bu parametrenin bir tür için yer tutucu olduğunu söyler. İşlev çağrıldığında, derleyici her örneğinin, `T` Kullanıcı tarafından belirtilen veya derleyici tarafından belirtilen somut tür bağımsız değişkeniyle değiştirilir. Derleyicinin bir sınıf veya işlev oluşturduğu işlem *şablon örneği oluşturma*olarak adlandırılır; , `minimum<int>` şablonun bir örneklemedir `minimum<T>` .
+Yukarıdaki kod, dönüş değeri ve çağrı parametreleri (lhs ve RHS) bu türün tümü olan tek tür parametresi *T* olan genel bir işlev için bir şablon tanımlar. Bir tür parametresini dilediğiniz şekilde adlandırın, ancak kurala göre tek büyük harfler en yaygın olarak kullanılır. *T* bir şablon parametresidir; **`typename`** anahtar sözcüğü, bu parametrenin bir tür için yer tutucu olduğunu söyler. İşlev çağrıldığında, derleyici her örneğinin, `T` Kullanıcı tarafından belirtilen veya derleyici tarafından belirtilen somut tür bağımsız değişkeniyle değiştirilir. Derleyicinin bir sınıf veya işlev oluşturduğu işlem  *şablon örneği oluşturma* olarak adlandırılır; , `minimum<int>` şablonun bir örneklemedir `minimum<T>` .
 
-Başka bir yerde, bir Kullanıcı, int için özelleştirilmiş bir şablon örneği bildirebilir. get_a () ve get_b () 'nin bir int döndüren işlevler olduğunu varsayalım:
+Başka bir yerde, bir Kullanıcı, int için özelleşmiş bir şablon örneği bildirebilir. Get_a () ve get_b () öğesinin bir int döndüren işlevler olduğunu varsayın:
 
 ```cpp
 int a = get_a();
@@ -40,7 +41,7 @@ int b = get_b();
 int i = minimum<int>(a, b);
 ```
 
-Ancak, bu bir işlev şablonu olduğundan ve derleyici `T` a ve *b*bağımsız değişkenlerinden *bir* türünü algıladığında, bunu sıradan bir işlev gibi çağırabilirsiniz:
+Ancak, bu bir işlev şablonu olduğundan ve derleyici `T` a ve *b* bağımsız değişkenlerinden *bir* türünü algıladığında, bunu sıradan bir işlev gibi çağırabilirsiniz:
 
 ```cpp
 int i = minimum(a, b);
@@ -57,7 +58,7 @@ int minimum(const int& lhs, const int& rhs)
 
 Derleyici, işlev şablonlarında tür kesintilerini nasıl gerçekleştirdiğine ilişkin kurallar, normal işlevlerin kurallarını temel alır. Daha fazla bilgi için bkz. [Işlev şablonu çağrılarının aşırı yükleme çözünürlüğü](../cpp/overload-resolution-of-function-template-calls.md).
 
-## <a name="type-parameters"></a><a id="type_parameters"></a>Tür parametreleri
+## <a name="type-parameters"></a><a id="type_parameters"></a> Tür parametreleri
 
 `minimum`Yukarıdaki şablonda, tür parametresi *T* , const ve başvuru niteleyicilerinin eklendiği işlev çağrısı parametrelerinde kullanılana kadar hiçbir şekilde nitelenmediğini unutmayın.
 
@@ -119,7 +120,7 @@ vector<MyClass*> vec;
 
 ## <a name="non-type-parameters"></a>Tür olmayan parametreler
 
-C# ve Java gibi diğer dillerdeki genel türlerin aksine, C++ şablonları değer parametreleri olarak da adlandırılan *tür olmayan parametreleri*destekler. Örneğin, standart kitaplıktaki [std:: Array](../standard-library/array-class-stl.md) sınıfına benzer şekilde, bu örnekte olduğu gibi, bir dizinin uzunluğunu belirtmek için sabit bir integral değeri sağlayabilirsiniz:
+C# ve Java gibi diğer dillerdeki genel türlerin aksine, C++ şablonları değer parametreleri olarak da adlandırılan *tür olmayan parametreleri* destekler. Örneğin, standart kitaplıktaki [std:: Array](../standard-library/array-class-stl.md) sınıfına benzer şekilde, bu örnekte olduğu gibi, bir dizinin uzunluğunu belirtmek için sabit bir integral değeri sağlayabilirsiniz:
 
 ```cpp
 template<typename T, size_t L>
@@ -151,7 +152,7 @@ auto v2 = constant<true>;   // v2 == true, decltype(v2) is bool
 auto v3 = constant<'a'>;    // v3 == 'a', decltype(v3) is char
 ```
 
-## <a name="templates-as-template-parameters"></a><a id="template_parameters"></a>Şablon parametreleri olarak şablonlar
+## <a name="templates-as-template-parameters"></a><a id="template_parameters"></a> Şablon parametreleri olarak şablonlar
 
 Şablon bir şablon parametresi olabilir. Bu örnekte, MyClass2 iki şablon parametresine sahiptir: bir typeName parametresi *T* ve bir şablon parametresi *ARR*:
 
@@ -165,7 +166,7 @@ class MyClass2
 };
 ```
 
-*ARR* parametresinin gövdesi olmadığından, parametre adları gerekli değildir. Aslında, ' ın gövdesinden, *ARR*'nin TypeName veya sınıf parametresi adlarına başvurabileceği bir hatadır `MyClass2` . Bu nedenle, aşağıdaki örnekte gösterildiği gibi *ARR*'nin tür parametresi adları atlanabilir:
+*ARR* parametresinin gövdesi olmadığından, parametre adları gerekli değildir. Aslında, ' ın gövdesinden, *ARR*'nin TypeName veya sınıf parametresi adlarına başvurabileceği bir hatadır `MyClass2` . Bu nedenle, aşağıdaki örnekte gösterildiği gibi  *ARR*'nin tür parametresi adları atlanabilir:
 
 ```cpp
 template<typename T, template<typename, int> class Arr>
@@ -215,7 +216,7 @@ int main()
 
 ## <a name="template-specialization"></a>Şablon uzmanlığı
 
-Bazı durumlarda, bir şablon için herhangi bir tür için tam olarak aynı kodu tanımlamak mümkün değildir veya istenmez. Örneğin, yalnızca tür bağımsız değişkeni bir işaretçi veya std:: wstring ya da belirli bir temel sınıftan türetilmiş bir tür ise yürütülecek bir kod yolu tanımlamak isteyebilirsiniz.  Bu gibi durumlarda, söz konusu tür için şablonun bir *özelleştirmesi* tanımlayabilirsiniz. Bir Kullanıcı şablonu bu türle birlikte örnekleyen derleyici, sınıfı oluşturmak için özelleştirmeyi kullanır ve diğer tüm türler için, derleyici daha genel şablonu seçer. Tüm parametrelerin özelleşmiş olduğu uzmanlık, tüm *uzmanlardır*. Parametrelerin yalnızca bir kısmı özelleştirilmiştir, bu, *kısmi özelleşme*olarak adlandırılır.
+Bazı durumlarda, bir şablon için herhangi bir tür için tam olarak aynı kodu tanımlamak mümkün değildir veya istenmez. Örneğin, yalnızca tür bağımsız değişkeni bir işaretçi veya std:: wstring ya da belirli bir temel sınıftan türetilmiş bir tür ise yürütülecek bir kod yolu tanımlamak isteyebilirsiniz.  Bu gibi durumlarda, söz konusu tür için şablonun bir *özelleştirmesi* tanımlayabilirsiniz. Bir Kullanıcı şablonu bu türle birlikte örnekleyen derleyici, sınıfı oluşturmak için özelleştirmeyi kullanır ve diğer tüm türler için, derleyici daha genel şablonu seçer. Tüm parametrelerin özelleşmiş olduğu uzmanlık, tüm *uzmanlardır*. Parametrelerin yalnızca bir kısmı özelleştirilmiştir, bu, *kısmi özelleşme* olarak adlandırılır.
 
 ```cpp
 template <typename K, typename V>

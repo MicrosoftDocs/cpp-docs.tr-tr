@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3891'
 title: Derleyici hatası C3891
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3891
 ms.assetid: 6e1a9458-97f5-4580-bc0f-aa97a1bfd20d
-ms.openlocfilehash: 4b5ef8b837033a149455c040f748f479aa3f424d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: df853f3ed0a163b48e75d54561d00298edd215b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736405"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144306"
 ---
 # <a name="compiler-error-c3891"></a>Derleyici hatası C3891
 

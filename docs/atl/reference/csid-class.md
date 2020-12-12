@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CSID sınıfı'
 title: CSID sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: b6787c0e3f075935f19d51aa73bbd66da9cc0fcb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b0f5553f14d31a43c0cc581ef43b518fa612616d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140809"
 ---
 # <a name="csid-class"></a>CSID sınıfı
 
@@ -166,7 +167,7 @@ Bir yapıya yönelik işaretçi `SID` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu `CSid` nesneyi başlatır, bir iç veri üyesini *Sıdtypegeçersiz*olarak ayarlar veya ayarları mevcut `CSid` , ya da `SID` var olan bir hesaptan kopyalayarak.
+Oluşturucu `CSid` nesneyi başlatır, bir iç veri üyesini *Sıdtypegeçersiz* olarak ayarlar veya ayarları mevcut `CSid` , ya da `SID` var olan bir hesaptan kopyalayarak.
 
 Başlatma başarısız olursa, Oluşturucu bir [CAtlException Sınıfı](../../atl/reference/catlexception-class.md)oluşturur.
 

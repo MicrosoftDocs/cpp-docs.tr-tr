@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4703'
 title: Derleyici Uyarısı (düzey 4) C4703
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4703
 ms.assetid: 5dad454e-69e3-4931-9168-050a861c05f8
-ms.openlocfilehash: 5033490550f318cab65f984cab81b08102641c9d
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: 8c31ed9be7dc271f9de4471792ccd6517091cab6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133789"
 ---
 # <a name="compiler-warning-level-4-c4703"></a>Derleyici Uyarısı (düzey 4) C4703
 

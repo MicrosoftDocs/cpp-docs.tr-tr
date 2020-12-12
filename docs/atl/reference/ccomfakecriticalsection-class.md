@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComFakeCriticalSection Class'
 title: CComFakeCriticalSection sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComFakeCriticalSection class
 ms.assetid: a4811b97-96bb-493b-ab9f-62822aeddb10
-ms.openlocfilehash: 5ada0fbed705af34391709653dbd3638fed32bf7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7280a47daa7464b24246ca8baa0aa7f5eaefa87a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226587"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152067"
 ---
 # <a name="ccomfakecriticalsection-class"></a>CComFakeCriticalSection sınıfı
 
 Bu sınıf [Ccomkritiksection](../../atl/reference/ccomcriticalsection-class.md) ile aynı yöntemleri sağlar ancak kritik bir bölüm sağlamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CComFakeCriticalSection
@@ -49,7 +50,7 @@ Genellikle, `CComFakeCriticalSection` **`typedef`** ya da bir adı ile kullanır
 
 **Üstbilgi:** atlcore. h
 
-## <a name="ccomfakecriticalsectioninit"></a><a name="init"></a>CComFakeCriticalSection:: Init
+## <a name="ccomfakecriticalsectioninit"></a><a name="init"></a> CComFakeCriticalSection:: Init
 
 Kritik bölüm olmadığından hiçbir şey yapmaz.
 
@@ -61,7 +62,7 @@ HRESULT Init() throw();
 
 S_OK döndürür.
 
-## <a name="ccomfakecriticalsectionlock"></a><a name="lock"></a>CComFakeCriticalSection:: Lock
+## <a name="ccomfakecriticalsectionlock"></a><a name="lock"></a> CComFakeCriticalSection:: Lock
 
 Kritik bölüm olmadığından hiçbir şey yapmaz.
 
@@ -73,7 +74,7 @@ HRESULT Lock() throw();
 
 S_OK döndürür.
 
-## <a name="ccomfakecriticalsectionterm"></a><a name="term"></a>CComFakeCriticalSection:: Term
+## <a name="ccomfakecriticalsectionterm"></a><a name="term"></a> CComFakeCriticalSection:: Term
 
 Kritik bölüm olmadığından hiçbir şey yapmaz.
 
@@ -85,7 +86,7 @@ HRESULT Term() throw();
 
 S_OK döndürür.
 
-## <a name="ccomfakecriticalsectionunlock"></a><a name="unlock"></a>CComFakeCriticalSection:: unlock
+## <a name="ccomfakecriticalsectionunlock"></a><a name="unlock"></a> CComFakeCriticalSection:: unlock
 
 Kritik bölüm olmadığından hiçbir şey yapmaz.
 

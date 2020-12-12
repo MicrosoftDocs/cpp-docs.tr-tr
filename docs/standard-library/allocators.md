@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: ayırıcılar'
 title: Ayırıcılar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - allocators
 - C++ Standard Library, allocators
 ms.assetid: ac95023b-9e7d-49f5-861a-bf7a9a340746
-ms.openlocfilehash: fdad5cc8417740f7736bcf34cbc941a4e66de87d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4001ba007037e50ca3c5d2bea079f313b1c52bc3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844762"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163437"
 ---
 # <a name="allocators"></a>Ayırıcılar
 
@@ -24,7 +25,7 @@ template <
 class vector
 ```
 
-C++ standart kitaplığı, ayırıcı için varsayılan bir uygulama sağlar. C++ 11 ve sonrasında varsayılan ayırıcı, daha küçük bir arabirim sunmak üzere güncelleştirilir; Yeni ayırıcı *en az ayırıcı*olarak adlandırılır. Özellikle, en küçük ayırıcı üyesi, `construct()` performansı önemli ölçüde iyileştirebilecek taşıma semantiğini destekler. Çoğu durumda, bu varsayılan ayırıcı yeterli olmalıdır. C++ 11 ' de, bir ayırıcı türü parametresi alan standart kitaplık türleri ve işlevleri,, ve dahil olmak üzere minimum ayırıcı arabirimini destekler `std::function` `shared_ptr, allocate_shared()` `basic_string` .  Varsayılan ayırıcı hakkında daha fazla bilgi için bkz. [ayırıcı sınıfı](allocator-class.md).
+C++ standart kitaplığı, ayırıcı için varsayılan bir uygulama sağlar. C++ 11 ve sonrasında varsayılan ayırıcı, daha küçük bir arabirim sunmak üzere güncelleştirilir; Yeni ayırıcı *en az ayırıcı* olarak adlandırılır. Özellikle, en küçük ayırıcı üyesi, `construct()` performansı önemli ölçüde iyileştirebilecek taşıma semantiğini destekler. Çoğu durumda, bu varsayılan ayırıcı yeterli olmalıdır. C++ 11 ' de, bir ayırıcı türü parametresi alan standart kitaplık türleri ve işlevleri,, ve dahil olmak üzere minimum ayırıcı arabirimini destekler `std::function` `shared_ptr, allocate_shared()` `basic_string` .  Varsayılan ayırıcı hakkında daha fazla bilgi için bkz. [ayırıcı sınıfı](allocator-class.md).
 
 ## <a name="writing-your-own-allocator-c11"></a>Kendi ayırıcıyı yazma (C++ 11)
 

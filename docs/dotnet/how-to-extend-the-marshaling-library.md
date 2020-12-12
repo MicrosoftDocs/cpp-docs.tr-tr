@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: nasıl yapılır: sıralama kitaplığını genişletme'
 title: 'Nasıl yapılır: Sıralama Kitaplığını Genişletme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Marshaling Library, extending
 ms.assetid: 4c4a56d7-1d44-4118-b85f-f9686515e6e9
-ms.openlocfilehash: 071ea72a2aa03dcf16eb0f09e121eba4514e5828
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 829e05002c23f5a5b59efdb5e65dc5769ca7906a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414613"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134972"
 ---
 # <a name="how-to-extend-the-marshaling-library"></a>Nasıl yapılır: Sıralama Kitaplığını Genişletme
 
@@ -67,7 +68,7 @@ namespace msclr {
 
 1. Öğesini uygun boş değere başlatmak için kodla başlatma hakkındaki açıklamayı değiştirin `toPtr` . Örneğin, bir işaretçisiyse, olarak ayarlayın `NULL` .
 
-1. Parametreyi türüne dönüştürmek için dönüştürme mantığı ile ilgili yorumu değiştirin `from` . *TO* Dönüştürülen bu nesne içinde depolanacak `toPtr` .
+1. Parametreyi türüne dönüştürmek için dönüştürme mantığı ile ilgili yorumu değiştirin `from` .  Dönüştürülen bu nesne içinde depolanacak `toPtr` .
 
 1. `toObject`Dönüştürülmüş nesneniz olarak ayarlanacak kodla ilgili açıklamayı değiştirin `toObject` .
 

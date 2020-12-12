@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ayırıcı &lt; void &gt; sınıfı'
 title: ayırıcı &lt; void &gt; sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - allocator<void> class
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
-ms.openlocfilehash: b6ca3f8b994756a21d85860fd8aff429ee38e58b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a6468c35f4660736cd297ffd7ae3d0738bbf0756
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87204943"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163515"
 ---
 # <a name="allocatorltvoidgt-class"></a>ayırıcı &lt; void &gt; sınıfı
 
 **`void`** Bu bağlamda anlamlı olan türleri tanımlayarak yazmak için sınıf şablonu ayırıcı özelleştirmesi.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <>

@@ -1,31 +1,32 @@
 ---
-title: Derleyici Hatası C2472
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2472'
+title: Derleyici hatası C2472
 ms.date: 11/04/2016
 f1_keywords:
 - C2472
 helpviewer_keywords:
 - C2472
 ms.assetid: 3b36bcdc-2ba5-4357-ab88-7545ba0551cd
-ms.openlocfilehash: d2f104bb61915f8d19d5fff22eea17929c0e8d74
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1d4d668c1e7151771a2df85e888384c6c3ea028
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350916"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164503"
 ---
-# <a name="compiler-error-c2472"></a>Derleyici Hatası C2472
+# <a name="compiler-error-c2472"></a>Derleyici hatası C2472
 
-> '*işlevi*' yönetilen kod içinde üretilemez: '*ileti*'; karma görüntü üretmek için/CLR ile derleyin
+> '*Function*', yönetilen kodda üretilemiyor: '*Message*'; Karma görüntü üretmek için/clr ile derleyin
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yönetilen kod tarafından desteklenmeyen türler bir saf ortak dil çalışma zamanı (CLR) ortamında kullanıldığında, bu hata oluşur. Derleme **/CLR** hatayı gidermek için.
+Bu hata, yönetilen kod tarafından desteklenmeyen türler, saf ortak dil çalışma zamanı (CLR) ortamında kullanıldığında oluşur. Hatayı çözümlemek için **/clr** ile derleyin.
 
-**/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+**/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2472 oluşturur.
+Aşağıdaki örnek C2472 oluşturur.
 
 ```cpp
 // C2472.cpp
@@ -46,4 +47,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
+- [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)

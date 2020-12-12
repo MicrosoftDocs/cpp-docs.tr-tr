@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/TSAWARE
 title: /TSAWARE
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /TSAWARE editbin option
 - TSAWARE editbin option
 ms.assetid: 84715050-c907-4118-8cff-2973411ae931
-ms.openlocfilehash: 66202743be20bc040560027a4ab1ebc5a16cd442
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7ca8aa0b46e72acfa5e5feb2c1ec9976f2a3be6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151872"
 ---
 # <a name="tsaware"></a>/TSAWARE
 
@@ -27,4 +28,4 @@ EDITBIN için/TSAWARE seçeneği, bir program görüntüsünü [/T saware](tsawa
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](editbin-options.md)
+[EDITBIN seçenekleri](editbin-options.md)

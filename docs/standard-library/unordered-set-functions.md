@@ -1,20 +1,21 @@
 ---
-title: '&lt;unordered_set&gt; işlevleri'
+description: 'Hakkında daha fazla bilgi edinin: &lt; unordered_set &gt; işlevleri'
+title: '&lt;unordered_set &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - unordered_set/std::swap (set)
 - unordered_set/std::swap (unordered_multiset)
 ms.assetid: 66b35671-4023-4411-ad50-83786580d8ee
-ms.openlocfilehash: 6b6e764acc9fa3410a44a4a11760933328365852
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 852536a5c5bdfe5d944f3b70581a313a56dc8742
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153765"
 ---
-# <a name="ltunordered_setgt-functions"></a>&lt;unordered_set&gt; işlevleri
+# <a name="ltunordered_setgt-functions"></a>&lt;unordered_set &gt; işlevleri
 
-## <a name="swap"></a>takas (unordered_set)
+## <a name="swap-unordered_set"></a><a name="swap"></a> takas (unordered_set)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -30,24 +31,24 @@ void swap(
 *Anahtar*\
 Anahtar türü.
 
-*Karma*\
+*Yla*\
 Karma işlev nesne türü.
 
 *Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*\
+*Tahsis*\
 Ayırıcı sınıf.
 
-*sol*\
+*tarafta*\
 Takas edilecek ilk kapsayıcı.
 
-*sağ*\
+*Right*\
 Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `left.`[unordered_set:: swap](../standard-library/unordered-set-class.md#swap)`(right)`yürütür.
+Şablon işlevi `left.` [unordered_set:: Swap](../standard-library/unordered-set-class.md#swap)yürütür `(right)` .
 
 ### <a name="example"></a>Örnek
 
@@ -102,7 +103,7 @@ return (0);
 [c] [b] [a]
 ```
 
-## <a name="swap_unordered_multiset"></a>takas (unordered_multiset)
+## <a name="swap-unordered_multiset"></a><a name="swap_unordered_multiset"></a> takas (unordered_multiset)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
@@ -118,24 +119,24 @@ void swap(
 *Anahtar*\
 Anahtar türü.
 
-*Karma*\
+*Yla*\
 Karma işlev nesne türü.
 
 *Pred*\
 Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*\
+*Tahsis*\
 Ayırıcı sınıf.
 
-*sol*\
+*tarafta*\
 Takas edilecek ilk kapsayıcı.
 
-*sağ*\
+*Right*\
 Takas edilecek ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `left.`[unordered_multiset:: swap](../standard-library/unordered-multiset-class.md#swap)`(right)`yürütür.
+Şablon işlevi `left.` [unordered_multiset:: Swap](../standard-library/unordered-multiset-class.md#swap)yürütür `(right)` .
 
 ### <a name="example"></a>Örnek
 

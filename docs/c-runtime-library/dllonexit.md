@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __dllonexit'
 title: __dllonexit
 ms.date: 11/04/2016
 api_name:
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - __dllonexit
 ms.assetid: 708f2ceb-f95c-46b0-a58d-d68b3fa36f12
-ms.openlocfilehash: 61d63c751dd755bf8a7680c674681e114945814b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ef9dc444ecb1b36062a4dc9ea98ec9a15804f930
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70940442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151833"
 ---
 # <a name="__dllonexit"></a>__dllonexit
 
@@ -58,11 +59,11 @@ Başarılı olursa, kullanıcının işlevine yönelik bir işaretçi. Aksi takd
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev, bu işlev tarafından kullanılan genel değişkenlerin bu yordama görünür olmaması dışında, [_onexit](../c-runtime-library/reference/onexit-onexit-m.md) işlevine benzer. `__dllonexit` Genel değişkenler yerine, bu işlev `pbegin` ve `pend` parametrelerini kullanır.
+`__dllonexit`İşlev, bu işlev tarafından kullanılan genel değişkenlerin bu yordama görünür olmaması dışında [_onexit](../c-runtime-library/reference/onexit-onexit-m.md) işleve benzer. Genel değişkenler yerine, bu işlev `pbegin` ve `pend` parametrelerini kullanır.
 
-Msvcrt ile `atexit` bağlantılı bir dll içindeki veişlevleri.`_onexit` LıB kendi atexit/_onexit listesini korumalıdır. Bu yordam, bu tür dll 'Ler tarafından çağrılan çalışandır.
+`_onexit` `atexit` Msvcrt ile bağlantılı bir dll içindeki ve işlevleri. LıB kendi atexit/_onexit listesini korumalıdır. Bu yordam, bu tür dll 'Ler tarafından çağrılan çalışandır.
 
-`_PVFV` Türü olarak`typedef void (__cdecl *_PVFV)(void)`tanımlanır.
+`_PVFV`Türü olarak tanımlanır `typedef void (__cdecl *_PVFV)(void)` .
 
 ## <a name="requirements"></a>Gereksinimler
 

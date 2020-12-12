@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4669'
 title: Derleyici Uyarısı (düzey 1) C4669
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4669
 ms.assetid: 97730679-e3dc-44d4-b2a8-aa65badc17f2
-ms.openlocfilehash: b45490ec399249a721f2d2567ca0182d44667243
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 590c013aed522544462141346ed9b58991d26ed3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164321"
 ---
 # <a name="compiler-warning-level-1-c4669"></a>Derleyici Uyarısı (düzey 1) C4669
 

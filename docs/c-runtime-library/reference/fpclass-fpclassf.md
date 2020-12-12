@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fpclass _fpclassf'
 title: _fpclass, _fpclassf
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _fpclass function
 - _fpclassf function
 ms.assetid: 2774872d-3543-446f-bc72-db85f8b95a6b
-ms.openlocfilehash: a6591d9348739d27831785a05f4a602aacdd4d0c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bd7a2aa02a3431ff41c4d9695efca1f959ece24f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914840"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164919"
 ---
 # <a name="_fpclass-_fpclassf"></a>_fpclass, _fpclassf
 
@@ -60,12 +61,12 @@ int _fpclassf(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Fpclass** ve **_fpclassf** işlevleri, *x*bağımsız değişkeninin kayan nokta sınıflandırmasını gösteren bir tamsayı değeri döndürür. Sınıflandırma, \<float. h> tanımlanmış aşağıdaki değerlerden birine sahip olabilir.
+**_Fpclass** ve **_fpclassf** işlevleri, *x* bağımsız değişkeninin kayan nokta sınıflandırmasını gösteren bir tamsayı değeri döndürür. Sınıflandırma, içinde tanımlanan aşağıdaki değerlerden birine sahip olabilir \<float.h> .
 
 |Değer|Açıklama|
 |-----------|-----------------|
@@ -90,12 +91,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fpclass**, **_fpclassf**|\<float. h>|
+|**_fpclass**, **_fpclassf**|\<float.h>|
 
 Daha fazla uyumluluk ve uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
 [fpclassify](fpclassify.md)<br/>

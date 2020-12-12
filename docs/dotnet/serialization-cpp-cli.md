@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: serileştirme (C++/CLı)'
 title: Seri Hale Getirme (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - .NET Framework [C++], serialization
 - serialization [C++], about serialization
 ms.assetid: 869010ca-74e1-4989-b409-4643cdb94084
-ms.openlocfilehash: b2dfdcaf1a1f33e89d106d4529ffc9af2d08376b
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 1524ed5d4a000d2006f6f830b1d82119d170c3b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988409"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164607"
 ---
 # <a name="serialization-ccli"></a>Seri Hale Getirme (C++/CLI)
 
-Yönetilen sınıfların (bireysel alanlar veya özellikler dahil) yönetilen sınıfların serileştirme (bir nesnenin veya üyenin durumunu kalıcı bir ortama depolama işlemi) <xref:System.SerializableAttribute> ve <xref:System.NonSerializedAttribute> sınıfları tarafından desteklenir.
+Yönetilen sınıfların (tek tek alanlar veya özellikler dahil) yönetilen sınıfların serileştirme (bir nesnenin veya üyenin kalıcı bir ortama depolanması işlemi) <xref:System.SerializableAttribute> ve sınıfları tarafından desteklenir <xref:System.NonSerializedAttribute> .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -28,7 +29,7 @@ Tüm sınıfı seri hale getirmek için bir yönetilen sınıfa **SerializableAt
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnekte, sınıfı `MyClass` (ve özelliği `m_nCount`) seri hale getirilebilir olarak işaretlenir. Ancak, `m_nData` özelliği **seri olmayan** özel öznitelik tarafından belirtildiği gibi serileştirilmez:
+Aşağıdaki örnekte, sınıfı `MyClass` (ve özelliği `m_nCount` ) seri hale getirilebilir olarak işaretlenir. Ancak, `m_nData` özelliği **seri olmayan** özel öznitelik tarafından belirtilen şekilde serileştirilmez:
 
 ### <a name="code"></a>Kod
 
@@ -47,7 +48,7 @@ private:
 };
 ```
 
-### <a name="comments"></a>Açıklamalar
+### <a name="comments"></a>Yorumlar
 
 Her iki özniteliğe de "kısa ad" (**serileştirilebilir** ve **serileştirilmemiş**) kullanılarak başvurulduğunu unutmayın. Bu, [öznitelikleri uygulama](/dotnet/standard/attributes/applying-attributes)bölümünde daha ayrıntılı olarak açıklanmıştır.
 

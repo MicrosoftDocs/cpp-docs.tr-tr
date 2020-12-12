@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: üye Işlevlerine genel bakış'
 title: Üye İşlevlerine Genel Bakış
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - inline functions [C++], treating member functions as
 - member functions [C++], definition in class declaration
 ms.assetid: 9f77a438-500e-40bb-a6c6-544678f3f4c8
-ms.openlocfilehash: 81fc3ae7a732171c6bddff9f584976dd747372b4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 09fe828cc7e581dd107e512f4c8678267a994942
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233671"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145944"
 ---
 # <a name="overview-of-member-functions"></a>Üye İşlevlerine Genel Bakış
 

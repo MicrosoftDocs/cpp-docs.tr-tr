@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; ayırıcılar&gt;'
 title: '&lt;ayırıcılar&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,25 +7,25 @@ f1_keywords:
 helpviewer_keywords:
 - allocators header
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
-ms.openlocfilehash: 69c086515230fd5a9aaa039ef02b7995842fa260
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 38183f58d9b919464a6cdbc31c6f75c539a9461b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87204891"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163489"
 ---
 # <a name="ltallocatorsgt"></a>&lt;ayırıcılar&gt;
 
 Düğüm tabanlı kapsayıcılar için bellek blokları ayırmaya ve serbest bırakma konusunda yardımcı olan çeşitli şablonlar tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <allocators>
 ```
 
 > [!NOTE]
-> \<allocators>, Visual Studio 2019 sürüm 16,3 ' den itibaren kullanımdan kaldırılmıştır.
+> \<allocators> , Visual Studio 2019 sürüm 16,3 ' den itibaren kullanımdan kaldırılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -84,7 +85,7 @@ Blok ayırıcısı bir önbellek veya filtredir. Önbellek, std:: size_t türün
 
 Şablon örneği oluşturulurken kullanılan std:: size_t bağımsız değişkeninin değerini yeniden ayıramayan bir derleyici ile, bir önbelleğin üye işlevlerine aktarılan ve serbest bırakma _Sz bağımsız değişkenin değeri olması gerekmez.
 
-\<allocators>aşağıdaki önbellek şablonlarını sağlar:
+\<allocators> aşağıdaki önbellek şablonlarını sağlar:
 
 - [cache_freelist](cache-freelist-class.md)
 
@@ -92,7 +93,7 @@ Blok ayırıcısı bir önbellek veya filtredir. Önbellek, std:: size_t türün
 
 - [cache_chunklist](cache-chunklist-class.md)
 
-Filtre, bir şablon bağımsız değişkeni olarak kendisine geçirilen başka bir blok ayırıcısı kullanarak üye işlevlerini uygulayan bir blok ayırıcıdır. En yaygın filtre biçimi, başka bir blok ayırıcısı örneğinin üye işlevlerine erişimi denetlemek için bir eşitleme ilkesi uygulayan bir eşitleme filtresidir. \<allocators>Aşağıdaki eşitleme filtrelerini sağlar:
+Filtre, bir şablon bağımsız değişkeni olarak kendisine geçirilen başka bir blok ayırıcısı kullanarak üye işlevlerini uygulayan bir blok ayırıcıdır. En yaygın filtre biçimi, başka bir blok ayırıcısı örneğinin üye işlevlerine erişimi denetlemek için bir eşitleme ilkesi uygulayan bir eşitleme filtresidir. \<allocators> Aşağıdaki eşitleme filtrelerini sağlar:
 
 - [sync_none](sync-none-class.md)
 
@@ -102,7 +103,7 @@ Filtre, bir şablon bağımsız değişkeni olarak kendisine geçirilen başka b
 
 - [sync_shared](sync-shared-class.md)
 
-\<allocators>Ayrıca, birden çok blok ayırıcı örneği tutan filtre [Rts_alloc](rts-alloc-class.md)sağlar ve derleme süresi yerine çalışma zamanında ayırma veya ayırmayı kaldırma için hangi örneği kullanacağınızı belirler. Yeniden bağlama Derlenemeyen derleyiciler ile kullanılır.
+\<allocators> Ayrıca, birden çok blok ayırıcı örneği tutan filtre [Rts_alloc](rts-alloc-class.md)sağlar ve derleme süresi yerine çalışma zamanında ayırma veya ayırmayı kaldırma için hangi örneği kullanacağınızı belirler. Yeniden bağlama Derlenemeyen derleyiciler ile kullanılır.
 
 Bir atama ilkesi, bir ayırıcı örneğinin birden çok iş parçacığından eşzamanlı ayırmayı ve kaldırma isteklerini nasıl işlediğini belirler. En basit ilke, tüm istekleri doğrudan temeldeki önbellek nesnesine geçirmektir ve eşitleme yönetimini kullanıcıya bırakır. Daha karmaşık bir ilke, temel alınan önbellek nesnesine erişimi seri hale getirmek için bir mutex kullanmak olabilir.
 
@@ -110,7 +111,7 @@ Bir derleyici hem tek iş parçacıklı hem çok iş parçacıklı uygulamalar d
 
 Önbellek şablonu, `cache_freelist` ücretsiz listede depolanacak en fazla öğe sayısını belirleyen bir Max Class bağımsız değişkeni alır.
 
-\<allocators>Aşağıdaki en büyük sınıfları sağlar:
+\<allocators> Aşağıdaki en büyük sınıfları sağlar:
 
 - [max_none](max-none-class.md)
 

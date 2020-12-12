@@ -1,4 +1,5 @@
 ---
+description: ': IAtlMemMgr sınıfı hakkında daha fazla bilgi'
 title: IAtlMemMgr sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - memory, managing
 - memory, memory manager
 ms.assetid: 18b2c569-25fe-4464-bdb6-3b1abef7154a
-ms.openlocfilehash: b23d8f582c53114ea1434e250e8e5e64b642f733
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 31f25c5fdb6a4e443bf011aac29620be8a4f13f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353018"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139756"
 ---
 # <a name="iatlmemmgr-class"></a>IAtlMemMgr sınıfı
 
@@ -758,7 +759,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ## <a name="iaxwinhostwindowattachcontrol"></a><a name="attachcontrol"></a> IAxWinHostWindow:: AttachControl
 
-*HWND*tarafından tanımlanan pencereyi kullanarak, mevcut (ve daha önce başlatılmış) bir denetimi ana bilgisayar nesnesine iliştirir.
+*HWND* tarafından tanımlanan pencereyi kullanarak, mevcut (ve daha önce başlatılmış) bir denetimi ana bilgisayar nesnesine iliştirir.
 
 ```
 STDMETHOD(AttachControl)(IUnknown* pUnkControl, HWND hWnd);
@@ -778,7 +779,7 @@ Standart bir HRESULT değeri.
 
 ## <a name="iaxwinhostwindowcreatecontrol"></a><a name="createcontrol"></a> IAxWinHostWindow:: CreateControl
 
-Bir denetim oluşturur, onu başlatır ve *HWND*tarafından tanımlanan pencerede barındırır.
+Bir denetim oluşturur, onu başlatır ve *HWND* tarafından tanımlanan pencerede barındırır.
 
 ```
 STDMETHOD(CreateControl)(

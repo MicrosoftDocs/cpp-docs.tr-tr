@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IAxWinAmbientDispatch Interface'
 title: IAxWinAmbientDispatch arabirimi
 ms.date: 11/04/2016
 f1_keywords:
@@ -35,12 +36,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatch interface
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
-ms.openlocfilehash: dbd682451ca5499aef4b16b3b51feba8411bdd12
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 5179a9895bc037342aa25cc111795c713e19279b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139743"
 ---
 # <a name="iaxwinambientdispatch-interface"></a>IAxWinAmbientDispatch arabirimi
 

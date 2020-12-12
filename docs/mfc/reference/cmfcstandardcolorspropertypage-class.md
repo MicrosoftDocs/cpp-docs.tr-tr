@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCStandardColorsPropertyPage sınıfı'
 title: CMFCStandardColorsPropertyPage sınıfı
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CMFCStandardColorsPropertyPage class [MFC]
 ms.assetid: b84b7cfb-bb24-4c65-804a-5b642cb64400
-ms.openlocfilehash: c57715171816e83cd1e04872d88b452b51b39388
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cffce34642bd4df40ceda3156fe846e60db4b3a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843956"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164100"
 ---
 # <a name="cmfcstandardcolorspropertypage-class"></a>CMFCStandardColorsPropertyPage sınıfı
 

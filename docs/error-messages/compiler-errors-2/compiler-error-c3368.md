@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3368'
 title: Derleyici hatası C3368
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3368
 ms.assetid: 5bfd5be4-dfa9-4b33-9612-010561b40955
-ms.openlocfilehash: 8e67655e90b571ea099572cdc34bc39124fc3271
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 1b7fadb59bc0944b5092a235dfa0cb90c2233daa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751878"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150819"
 ---
 # <a name="compiler-error-c3368"></a>Derleyici hatası C3368
 

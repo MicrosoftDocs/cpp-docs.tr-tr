@@ -1,21 +1,22 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: lambda Ifadeleri örnekleri'
 title: Lambda İfadeleri Örnekleri
 ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-ms.openlocfilehash: 585e76119b0e848e322c88ad0149ebb42c6b5b1d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 91c29bd1cd49045d51421d76bd46b3c121cfca3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164815"
 ---
 # <a name="examples-of-lambda-expressions"></a>Lambda İfadeleri Örnekleri
 
 Bu makalede, lambda ifadelerinin programlarınızda nasıl kullanılacağı gösterilmektedir. Lambda ifadelerine genel bakış için bkz. [lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md). Lambda ifadesinin yapısı hakkında daha fazla bilgi için bkz. [lambda Ifadesi sözdizimi](../cpp/lambda-expression-syntax.md).
 
-## <a name="declaring-lambda-expressions"></a><a name="declaringLambdaExpressions"></a>Lambda Ifadelerini bildirme
+## <a name="declaring-lambda-expressions"></a><a name="declaringLambdaExpressions"></a> Lambda Ifadelerini bildirme
 
 ### <a name="example-1"></a>Örnek 1
 
@@ -99,7 +100,7 @@ int main()
 
 [[Bu makalede](#top)]
 
-## <a name="calling-lambda-expressions"></a><a name="callingLambdaExpressions"></a>Lambda Ifadeleri çağırma
+## <a name="calling-lambda-expressions"></a><a name="callingLambdaExpressions"></a> Lambda Ifadeleri çağırma
 
 Bir lambda ifadeyi sonraki kod parçacığında gösterildiği gibi anında çağırabilirsiniz. İkinci kod parçacığı, bir lambda gibi C++ standart kitaplık algoritmalarına bağımsız değişken olarak nasıl geçirileceğini gösterir `find_if` .
 
@@ -179,7 +180,7 @@ The first even number in the list is 42.
 
 [[Bu makalede](#top)]
 
-## <a name="nesting-lambda-expressions"></a><a name="nestingLambdaExpressions"></a>Lambda Ifadeleri iç içe geçme
+## <a name="nesting-lambda-expressions"></a><a name="nestingLambdaExpressions"></a> Lambda Ifadeleri iç içe geçme
 
 ### <a name="example"></a>Örnek
 
@@ -217,7 +218,7 @@ Bu örnekte, `[](int y) { return y * 2; }` iç içe lambda ifadesi olur.
 
 [[Bu makalede](#top)]
 
-## <a name="higher-order-lambda-functions"></a><a name="higherOrderLambdaExpressions"></a>Daha yüksek sıralı Lambda Işlevleri
+## <a name="higher-order-lambda-functions"></a><a name="higherOrderLambdaExpressions"></a> Higher-Order lambda Işlevleri
 
 ### <a name="example"></a>Örnek
 
@@ -266,7 +267,7 @@ int main()
 
 [[Bu makalede](#top)]
 
-## <a name="using-a-lambda-expression-in-a-function"></a><a name="methodLambdaExpressions"></a>Bir Işlevde lambda Ifadesi kullanma
+## <a name="using-a-lambda-expression-in-a-function"></a><a name="methodLambdaExpressions"></a> Bir Işlevde lambda Ifadesi kullanma
 
 ### <a name="example"></a>Örnek
 
@@ -359,7 +360,7 @@ int main()
 
 [[Bu makalede](#top)]
 
-## <a name="using-lambda-expressions-with-templates"></a><a name="templateLambdaExpressions"></a>Şablonlarla lambda Ifadeleri kullanma
+## <a name="using-lambda-expressions-with-templates"></a><a name="templateLambdaExpressions"></a> Şablonlarla lambda Ifadeleri kullanma
 
 ### <a name="example"></a>Örnek
 
@@ -423,7 +424,7 @@ C++ şablonları hakkında daha fazla bilgi için bkz. [Şablonlar](../cpp/templ
 
 [[Bu makalede](#top)]
 
-## <a name="handling-exceptions"></a><a name="ehLambdaExpressions"></a>Özel durumları işleme
+## <a name="handling-exceptions"></a><a name="ehLambdaExpressions"></a> Özel durumları işleme
 
 ### <a name="example"></a>Örnek
 
@@ -479,7 +480,7 @@ Caught 'invalid vector<T> subscript'.
 
 [[Bu makalede](#top)]
 
-## <a name="using-lambda-expressions-with-managed-types-ccli"></a><a name="managedLambdaExpressions"></a>Yönetilen türlerle lambda Ifadeleri kullanma (C++/CLı)
+## <a name="using-lambda-expressions-with-managed-types-ccli"></a><a name="managedLambdaExpressions"></a> Yönetilen türlerle lambda Ifadeleri kullanma (C++/CLı)
 
 ### <a name="example"></a>Örnek
 
@@ -524,7 +525,7 @@ STL/CLR kitaplığı ile lambda ifadeleri de kullanabilirsiniz. Daha fazla bilgi
 [Lambda Ifadeleri](../cpp/lambda-expressions-in-cpp.md)<br/>
 [Lambda Ifadesi söz dizimi](../cpp/lambda-expression-syntax.md)<br/>
 [`auto`](../cpp/auto-cpp.md)<br/>
-[`function`Sınıfı](../standard-library/function-class.md)<br/>
+[`function` Sınıfı](../standard-library/function-class.md)<br/>
 [`find_if`](../standard-library/algorithm-functions.md#find_if)<br/>
 [`<algorithm>`](../standard-library/algorithm.md)<br/>
 [İşlev çağrısı](../cpp/function-call-cpp.md)<br/>

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: en büyük dizi boyutu'
 title: En Büyük Dizi Boyutu
 ms.date: 11/04/2016
 ms.assetid: 4c782cf6-73f3-40b0-b306-229d22da4ee1
-ms.openlocfilehash: a26165053a453f2f9e5322548e95457129dbafa1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a601b1db6b83ed4c988b1ea0debcef818f5ff0d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87199730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137468"
 ---
 # <a name="largest-array-size"></a>En Büyük Dizi Boyutu
 

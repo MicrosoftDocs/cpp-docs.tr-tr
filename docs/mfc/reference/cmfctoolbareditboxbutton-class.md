@@ -1,5 +1,6 @@
 ---
-title: CMFCToolBarEditBoxButton Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCToolBarEditBoxButton sınıfı'
+title: CMFCToolBarEditBoxButton sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolBarEditBoxButton
@@ -52,18 +53,18 @@ helpviewer_keywords:
 - CMFCToolBarEditBoxButton [MFC], SetContextMenuID
 - CMFCToolBarEditBoxButton [MFC], SetFlatMode
 ms.assetid: b21d9b67-6bf7-4ca9-bd62-b237756e0ab3
-ms.openlocfilehash: 064ebe1c8fe377064d410d09e5ef60ed628df2f3
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 1cdf401d7ef6409163334104b20d6ce92940f677
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754002"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163905"
 ---
-# <a name="cmfctoolbareditboxbutton-class"></a>CMFCToolBarEditBoxButton Sınıfı
+# <a name="cmfctoolbareditboxbutton-class"></a>CMFCToolBarEditBoxButton sınıfı
 
-Düzenleme denetimi [(CEdit Class)](../../mfc/reference/cedit-class.md)içeren araç çubuğu düğmesi.
+Bir düzenleme denetimi ( [Cedıt sınıfı](../../mfc/reference/cedit-class.md)) içeren bir araç çubuğu düğmesi.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCToolBarEditBoxButton : public CMFCToolBarButton
@@ -73,71 +74,71 @@ class CMFCToolBarEditBoxButton : public CMFCToolBarButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarEditBoxButton::CMFCToolBarEditBoxButton](#cmfctoolbareditboxbutton)|Bir `CMFCToolBarEditBoxButton` nesne inşa eder.|
+|[CMFCToolBarEditBoxButton:: CMFCToolBarEditBoxButton](#cmfctoolbareditboxbutton)|Bir `CMFCToolBarEditBoxButton` nesnesi oluşturur.|
 |`CMFCToolBarEditBoxButton::~CMFCToolBarEditBoxButton`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCToolBarEditBoxButton::CanBeStretched](#canbestretched)|Özelleştirme sırasında bir kullanıcının düğmeyi esnetleyip genişletemeyeceğini belirtir. [(Overrides CMFCToolBarButton::CanBeStretched](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched).)|
-|[CMFCToolBarEditBoxButton::CopyFrom](#copyfrom)|Başka bir araç çubuğu düğmesinin özelliklerini geçerli düğmeye kopyalar. [(CMFCToolBarButton geçersiz kılar::CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom).)|
-|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton::CreateEdit](#createedit)|Düğmede yeni bir denetim denetimi oluşturur.|
-|`CMFCToolBarEditBoxButton::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
-|[CMFCToolBarEditBoxButton::GetByCmd](#getbycmd)|Belirtilen komut `CMFCToolBarEditBoxButton` kimliğine sahip uygulamada ilk nesneyi alır.|
-|[CMFCToolBarEditBoxButton::GetContentsAll](#getcontentsall)|Belirtilen komut kimliğine sahip ilk düzenleme kutusu araç çubuğu denetiminin metnini alır.|
-|[CMFCToolBarEditBoxButton::GetContextMenuID](#getcontextmenuid)|Düğmeyle ilişkili kısayol menüsünün kaynak kimliğini alır.|
-|[CMFCToolBarEditBoxButton::GetEditBorder](#geteditborder)|Edit kutusu düğmesinin bir bölümünün sınırlayıcı dikdörtgenini alır.|
-|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton::GetEditBox](#geteditbox)|Düğmeye katıştırılmış bir düğmeyi denetlemedenetimine bir işaretçi döndürür.|
-|[CMFCToolBarEditBoxButton::GetHwnd](#gethwnd)|Araç çubuğu düğmesiyle ilişkili pencere tutamacını alır. (Geçersiz kılar [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd).)|
-|[CMFCToolBarEditBoxButton::GetInvalidateRect](#getinvalidaterect)|Yeniden çizilmesi gereken düğmenin istemci alanının bölgesini alır. [(CMFCToolBarButton geçersiz kılar::GetInvalidateRect](../../mfc/reference/cmfctoolbarbutton-class.md#getinvalidaterect).)|
-|`CMFCToolBarEditBoxButton::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
-|[CMFCToolBarEditBoxButton::HaveHotBorder](#havehotborder)|Kullanıcı düğmeyi tıklattığında düğmenin kenarlığı görüntülenip görüntülenmediğini belirler. (Geçersiz kılar [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|
-|[CMFCToolBarEditBoxButton::IsFlatMode](#isflatmode)|Kutu düğmelerinin düz bir stili olup olmadığını belirler.|
-|[CMFCToolBarEditBoxButton::Komut Bildir](#notifycommand)|Düğmenin [WM_COMMAND](/windows/win32/menurc/wm-command) iletiyi çalışıp belirtir. [(CMFCToolBarButton geçersiz kılar::Command Command](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|
-|[CMFCToolBarEditBoxButton::OnAddToCustomizePage](#onaddtocustomizepage)|**Özelleştir** iletişim kutusuna düğme eklendiğinde çerçeve tarafından çağrılır. [(CmFCToolBarButton geçersiz kılar::OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage).)|
-|`CMFCToolBarEditBoxButton::OnCalculateSize`|Belirtilen aygıt bağlamı ve yerleştirme durumu için düğmenin boyutunu hesaplamak için çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|
-|[CMFCToolBarEditBoxButton::OnChangeParentWnd](#onchangeparentwnd)|Düğme yeni bir araç çubuğuna takıldığında çerçeve tarafından çağrılır. [(Üstyüklemeler CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|
-|[CMFCToolBarEditBoxButton::Tıkla](#onclick)|Kullanıcı fare düğmesini tıklattığında çerçeve tarafından çağrılır. [(Overrides CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick).)|
-|[CMFCToolBarEditBoxButton::OnCtlColor](#onctlcolor)|Üst araç çubuğu bir WM_CTLCOLOR iletisi işlediğinde çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor).)|
-|`CMFCToolBarEditBoxButton::OnDraw`|Belirtilen stilleri ve seçenekleri kullanarak düğmeyi çizmek için çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw).)|
-|`CMFCToolBarEditBoxButton::OnDrawOnCustomizeList`|**Özelleştir** iletişim kutusunun **Komutlar** bölmesinde düğmeyi çizmek için çerçeve tarafından çağrılır. [(Overrides CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).)|
-|[CMFCToolBarEditBoxButton::OnGlobalFontsDeğiştirildi](#onglobalfontschanged)|Genel yazı tipi değiştiğinde çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged).)|
-|[CMFCToolBarEditBoxButton::OnMove](#onmove)|Ana araç çubuğu hareket ettiğinde çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove).)|
-|[CMFCToolBarEditBoxButton::Açık Göster](#onshow)|Düğme görünür veya görünmez olduğunda çerçeve tarafından çağrılır. [(CmFCToolBarButton geçersiz kılar::AçıkShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow).)|
-|[CMFCToolBarEditBoxButton::Boyut](#onsize)|Ana araç çubuğu boyutunu veya konumunu değiştirdiğinde ve bu değişiklik düğmenin boyutunu değiştirmesine neden olduğunda çerçeve tarafından çağrılır. [(CMFCToolBarButton geçersiz kılar::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize).)|
-|[CMFCToolBarEditBoxButton::OnUpdateToolTip](#onupdatetooltip)|Üst araç çubuğu araç ipucu metnini güncelleştirirken çerçeve tarafından çağrılır. [(Overrides CMFCToolBarButton::OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip).)|
-|`CMFCToolBarEditBoxButton::Serialize`|Bu nesneyi arşivden okur veya arşive yazar. [(CMFCToolBarButton geçersiz kılar::Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize).)|
-|`CMFCToolBarEditBoxButton::SetACCData`|Araç çubuğu `CAccessibilityData` düğmesinden sağlanan nesneyi erişilebilirlik verileriyle doldurur. [(CMFCToolBarButton geçersiz kılar::SetACCData](../../mfc/reference/cmfctoolbarbutton-class.md#setaccdata).)|
-|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton::SetContents](#setcontents)|Düğmenin denetiminde metni ayarlar.|
-|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton::SetContentsAll](#setcontentsall)|Belirtilen komut kimliğine sahip denetim düğmesini bulur ve bu düğmenin denetimindeki metni ayarlar.|
-|[CMFCToolBarEditBoxButton::SetContextMenuID](#setcontextmenuid)|Düğmeyle ilişkili kısayol menüsünün kaynak kimliğini belirtir.|
-|[CMFCToolBarEditBoxButton::SetFlatMode](#setflatmode)|Uygulamadaki kutu düğmelerinin düz stil görünümünü belirtir.|
-|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton::SetStyle](#setstyle)|Düğmenin stilini belirtir. [(CMFCToolBarButton geçersiz kılar::SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle).)|
+|[CMFCToolBarEditBoxButton:: Canbeesnetilen](#canbestretched)|Kullanıcının özelleştirme sırasında düğmeyi uzatılamayacağını belirtir. ( [CMFCToolBarButton:: Canbeesnei](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)geçersiz kılar.)|
+|[CMFCToolBarEditBoxButton:: CopyFrom](#copyfrom)|Başka bir araç çubuğu düğmesinin özelliklerini geçerli düğmeye kopyalar. ( [CMFCToolBarButton:: CopyFrom](../../mfc/reference/cmfctoolbarbutton-class.md#copyfrom).)|
+|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton:: CreateEdit](#createedit)|Düğmede yeni bir düzenleme denetimi oluşturur.|
+|`CMFCToolBarEditBoxButton::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
+|[CMFCToolBarEditBoxButton:: GetByCmd](#getbycmd)|`CMFCToolBarEditBoxButton`Uygulamadaki belirtilen komut kimliğine sahip ilk nesneyi alır.|
+|[CMFCToolBarEditBoxButton:: GetContentsAll](#getcontentsall)|Belirtilen komut KIMLIĞINE sahip olan ilk düzenleme kutusu araç çubuğu denetiminin metnini alır.|
+|[CMFCToolBarEditBoxButton:: GetContextMenuID](#getcontextmenuid)|Düğmeyle ilişkili kısayol menüsünün kaynak KIMLIĞINI alır.|
+|[CMFCToolBarEditBoxButton:: GetEditBorder](#geteditborder)|Düzenleme kutusu düğmesinin düzenleme bölümünün sınırlayıcı dikdörtgenini alır.|
+|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton:: GetEditBox](#geteditbox)|Düğmeye gömülü olan düzenleme denetimine yönelik bir işaretçi döndürür.|
+|[CMFCToolBarEditBoxButton:: GetHwnd](#gethwnd)|Araç çubuğu düğmesiyle ilişkili pencere tanıtıcısını alır. ( [CMFCToolBarButton:: GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd).) öğesini geçersiz kılar|
+|[CMFCToolBarEditBoxButton:: GetInvalidateRect](#getinvalidaterect)|Yeniden çizilmesi gereken düğmenin istemci alanının bölgesini alır. ( [CMFCToolBarButton:: GetInvalidateRect](../../mfc/reference/cmfctoolbarbutton-class.md#getinvalidaterect)geçersiz kılınır.)|
+|`CMFCToolBarEditBoxButton::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
+|[CMFCToolBarEditBoxButton:: HaveHotBorder](#havehotborder)|Kullanıcı düğmeye tıkladığında düğme kenarlığının görüntülenip görüntülenmeyeceğini belirler. ( [CMFCToolBarButton:: HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder)geçersiz kılar.)|
+|[CMFCToolBarEditBoxButton:: ısyataymode](#isflatmode)|Düzenleme kutusu düğmelerinin düz bir stile sahip olup olmadığını belirler.|
+|[CMFCToolBarEditBoxButton:: NotifyCommand](#notifycommand)|Düğmenin [WM_COMMAND](/windows/win32/menurc/wm-command) iletisini işlemediğini belirtir. ( [CMFCToolBarButton:: NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).) öğesini geçersiz kılar|
+|[CMFCToolBarEditBoxButton:: OnAddToCustomizePage](#onaddtocustomizepage)|Düğme bir **Özelleştirme** iletişim kutusuna eklendiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage).) öğesini geçersiz kılar|
+|`CMFCToolBarEditBoxButton::OnCalculateSize`|Belirtilen cihaz bağlamı ve yerleştirme durumu için düğmenin boyutunu hesaplamak üzere Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).) öğesini geçersiz kılar|
+|[CMFCToolBarEditBoxButton:: OnChangeParentWnd](#onchangeparentwnd)|Düğme yeni bir araç çubuğuna eklendiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)geçersiz kılar.)|
+|[CMFCToolBarEditBoxButton:: OnClick](#onclick)|Kullanıcı fare düğmesine tıkladığında Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)geçersiz kılar.)|
+|[CMFCToolBarEditBoxButton:: OnCtlColor](#onctlcolor)|Ana araç çubuğu bir WM_CTLCOLOR iletisini işlediğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor).) öğesini geçersiz kılar|
+|`CMFCToolBarEditBoxButton::OnDraw`|Belirtilen stilleri ve seçenekleri kullanarak düğmeyi çizmek için Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnDraw](../../mfc/reference/cmfctoolbarbutton-class.md#ondraw)geçersiz kılar.)|
+|`CMFCToolBarEditBoxButton::OnDrawOnCustomizeList`|**Özelleştirme** Iletişim kutusunun **Komutlar** bölmesinde düğme çizmek için Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist).) öğesini geçersiz kılar|
+|[CMFCToolBarEditBoxButton:: OnGlobalFontsChanged](#onglobalfontschanged)|Genel yazı tipi değiştirildiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)geçersiz kılınır.)|
+|[CMFCToolBarEditBoxButton:: OnMove](#onmove)|Ana araç çubuğu taşırken Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)geçersiz kılar.)|
+|[CMFCToolBarEditBoxButton:: OnShow](#onshow)|Düğme görünür veya görünmez hale geldiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow).) öğesini geçersiz kılar|
+|[CMFCToolBarEditBoxButton:: OnSize](#onsize)|Ana araç çubuğu boyutunu veya konumunu değiştirdiğinde Framework tarafından çağırılır ve bu değişiklik düğmenin boyutunu değiştirmesine neden olur. ( [CMFCToolBarButton:: OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)geçersiz kılar.)|
+|[CMFCToolBarEditBoxButton:: OnUpdateToolTip](#onupdatetooltip)|Ana araç çubuğu kendi araç ipucu metnini güncelleştirdiğinde Framework tarafından çağırılır. ( [CMFCToolBarButton:: OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)' i geçersiz kılar.)|
+|`CMFCToolBarEditBoxButton::Serialize`|Bu nesneyi bir arşivden okur veya bir arşive yazar. ( [CMFCToolBarButton:: Serialize](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)geçersiz kılar.)|
+|`CMFCToolBarEditBoxButton::SetACCData`|`CAccessibilityData`Araç çubuğu düğmesinden, belirtilen nesneyi erişilebilirlik verileriyle doldurur. ( [CMFCToolBarButton:: SetACCData](../../mfc/reference/cmfctoolbarbutton-class.md#setaccdata)geçersiz kılar.)|
+|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton:: SetContents](#setcontents)|Düğmenin düzenleme denetimindeki metni ayarlar.|
+|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton:: SetContentsAll](#setcontentsall)|Belirtilen komut KIMLIĞINE sahip olan düzenleme denetimi düğmesini bulur ve bu düğmenin düzenleme denetimindeki metni ayarlar.|
+|[CMFCToolBarEditBoxButton:: SetContextMenuID](#setcontextmenuid)|Düğmeyle ilişkili kısayol menüsünün kaynak KIMLIĞINI belirtir.|
+|[CMFCToolBarEditBoxButton:: Setyataymod](#setflatmode)|Uygulamadaki düzenleme kutusu düğmelerinin düz stil görünümünü belirtir.|
+|`CMFCToolBarEditBoxButton::`[CMFCToolBarEditBoxButton:: SetStyle](#setstyle)|Düğmenin stilini belirtir. ( [CMFCToolBarButton:: SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle)geçersiz kılar)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Araç çubuğuna düzenleme kutusu düğmesi eklemek için aşağıdaki adımları izleyin:
+Bir araç çubuğuna düzenleme kutusu düğmesi eklemek için aşağıdaki adımları izleyin:
 
-1. Ana araç çubuğu kaynağındaki düğme için sahte bir kaynak kimliği ayırın.
+1. Ana araç çubuğu kaynağında düğme için bir kukla kaynak KIMLIĞI ayırın.
 
-2. Bir `CMFCToolBarEditBoxButton` nesne oluştur.
+2. Bir `CMFCToolBarEditBoxButton` nesne oluşturun.
 
-3. AFX_WM_RESETTOOLBAR iletiyi işleyen ileti işleyicisinde, [CMFCToolBar::ReplaceButton'u](../../mfc/reference/cmfctoolbar-class.md#replacebutton)kullanarak sahte düğmeyi yeni açılan kutu düğmesiyle değiştirin.
+3. AFX_WM_RESETTOOLBAR iletisini işleyen ileti işleyicisinde, [CMFCToolBar:: ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)öğesini kullanarak kukla düğmesini Yeni Birleşik giriş kutusu düğmesiyle değiştirin.
 
-Daha fazla bilgi için [Walkthrough: Denetimleri Araç Çubuklarına Koyma'ya](../../mfc/walkthrough-putting-controls-on-toolbars.md)bakın.
+Daha fazla bilgi için bkz. [Izlenecek yol: denetimleri araç çubuklarına yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCToolBarEditBoxButton` nasıl kullanılacağını göstermektedir. Örnek, özelleştirme sırasında bir kullanıcının düğmeyi nasıl uzatabileceğini belirtin, bir kullanıcı düğmeyi tıklattığında düğmenin kenarının görüntüleneceğini belirtin, metin kutusu denetimindeki metni ayarlayın, uygulamadaki düzenleme kutusu düğmelerinin düz stil görünümünü belirtin ve araç çubuğu düzenleme kutusu denetiminin stilini belirtir.
+Aşağıdaki örnek, sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir `CMFCToolBarEditBoxButton` . Örnek, özelleştirme sırasında bir kullanıcının düğmeyi ne şekilde uzatılabildiği gösterilmektedir, Kullanıcı düğmeye tıkladığında düğme kenarlığının görüntülendiğini, metin kutusu denetimindeki metni ayarlamanıza, uygulamadaki düzenleme kutusu düğmelerinin düz stil görünümünü belirtmesini ve bir araç çubuğu düzenleme kutusu denetiminin stilini belirtmenize olanak sağlar.
 
 [!code-cpp[NVC_MFC_RibbonApp#40](../../mfc/reference/codesnippet/cpp/cmfctoolbareditboxbutton-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)
 
@@ -145,11 +146,11 @@ Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCToolBarEditBoxButton`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxtoolbareditboxbutton.h
+**Üstbilgi:** afxtoolbareditboxbutton. h
 
-## <a name="cmfctoolbareditboxbuttoncanbestretched"></a><a name="canbestretched"></a>CMFCToolBarEditBoxButton::CanBeStretched
+## <a name="cmfctoolbareditboxbuttoncanbestretched"></a><a name="canbestretched"></a> CMFCToolBarEditBoxButton:: Canbeesnetilen
 
-Özelleştirme sırasında bir kullanıcının düğmeyi esnetleyip genişletemeyeceğini belirtir.
+Kullanıcının özelleştirme sırasında düğmeyi uzatılamayacağını belirtir.
 
 ```
 virtual BOOL CanBeStretched() const;
@@ -161,11 +162,11 @@ Bu yöntem TRUE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, çerçeve kullanıcıözelleştirme sırasında bir araç çubuğu düğmesini germek için izin vermez. Bu yöntem, kullanıcının özelleştirme sırasında düzenleme kutusu araç çubuğunu esnetmesine izin vererek taban sınıf uygulamasını [(CMFCToolBarButton::CanBeStretched)](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)genişletir.
+Varsayılan olarak, çerçeve özelleştirme sırasında kullanıcının bir araç çubuğu düğmesini uzamasına izin vermez. Bu yöntem, kullanıcının özelleştirme sırasında bir düzenleme kutusu araç çubuğu düğmesini genişlemesine izin vererek temel sınıf uygulamasını ( [CMFCToolBarButton:: Canbeınesne)](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)genişletir.
 
-## <a name="cmfctoolbareditboxbuttoncmfctoolbareditboxbutton"></a><a name="cmfctoolbareditboxbutton"></a>CMFCToolBarEditBoxButton::CMFCToolBarEditBoxButton
+## <a name="cmfctoolbareditboxbuttoncmfctoolbareditboxbutton"></a><a name="cmfctoolbareditboxbutton"></a> CMFCToolBarEditBoxButton:: CMFCToolBarEditBoxButton
 
-[CMFCToolBarEditBoxButton](../../mfc/reference/cmfctoolbareditboxbutton-class.md) nesnesi oluşturuyor.
+[CMFCToolBarEditBoxButton](../../mfc/reference/cmfctoolbareditboxbutton-class.md) nesnesi oluşturur.
 
 ```
 CMFCToolBarEditBoxButton(
@@ -177,27 +178,27 @@ CMFCToolBarEditBoxButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiID*<br/>
-[içinde] Denetim kimliğini belirtir.
+*Uııd*<br/>
+'ndaki Denetim KIMLIĞINI belirtir.
 
-*ıımage*<br/>
-[içinde] Araç çubuğu görüntüsünün sıfır tabanlı dizinini belirtir. Görüntü [CMFCToolBarClass](../../mfc/reference/cmfctoolbarimages-class.md) sınıfının koruduğu [CMFCToolBarImages](../../mfc/reference/cmfctoolbar-class.md) Sınıfı nesnesinde bulunur.
+*IImage*<br/>
+'ndaki Bir araç çubuğu görüntüsünün sıfır tabanlı dizinini belirtir. Resim, [CMFCToolBar sınıf](../../mfc/reference/cmfctoolbar-class.md) sınıfının tuttuğu [CMFCToolBarImages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinde bulunur.
 
-*Dwstyle*<br/>
-[içinde] Denetim stilini belirtir.
+*dwStyle*<br/>
+'ndaki Düzenleme denetim stilini belirtir.
 
-*iGenişlik*<br/>
-[içinde] Denetimin piksellerinde genişliği belirtir.
+*ıwidth*<br/>
+'ndaki Düzenleme denetiminin piksel cinsinden genişliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan oluşturucu, denetim stilini aşağıdaki kombinasyona ayarlar:
+Varsayılan Oluşturucu, düzenleme denetim stilini aşağıdaki bileşime ayarlar:
 
 WS_CHILD | WS_VISIBLE | ES_AUTOHSCROLL
 
 Denetimin varsayılan genişliği 150 pikseldir.
 
-## <a name="cmfctoolbareditboxbuttoncopyfrom"></a><a name="copyfrom"></a>CMFCToolBarEditBoxButton::CopyFrom
+## <a name="cmfctoolbareditboxbuttoncopyfrom"></a><a name="copyfrom"></a> CMFCToolBarEditBoxButton:: CopyFrom
 
 Başka bir araç çubuğu düğmesinin özelliklerini geçerli düğmeye kopyalar.
 
@@ -208,15 +209,15 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ### <a name="parameters"></a>Parametreler
 
 *src*<br/>
-[içinde] Kopyalamak için kaynak düğmesine bir başvuru.
+'ndaki Kopyalanacak kaynak düğmesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Başka bir araç çubuğu düğmesini bu araç çubuğu düğmesine kopyalamak için bu yöntemi arayın. *src* türünde `CMFCToolBarEditBoxButton`olmalıdır.
+Bu araç çubuğu düğmesine başka bir araç çubuğu düğmesi kopyalamak için bu yöntemi çağırın. *src* türünde olmalıdır `CMFCToolBarEditBoxButton` .
 
-## <a name="cmfctoolbareditboxbuttoncreateedit"></a><a name="createedit"></a>CMFCToolBarEditBoxButton::CreateEdit
+## <a name="cmfctoolbareditboxbuttoncreateedit"></a><a name="createedit"></a> CMFCToolBarEditBoxButton:: CreateEdit
 
-Düğmede yeni bir denetim denetimi oluşturur.
+Düğmede yeni bir düzenleme denetimi oluşturur.
 
 ```
 virtual CEdit* CreateEdit(
@@ -227,22 +228,22 @@ virtual CEdit* CreateEdit(
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-[içinde] Denetimin üst penceresini belirtir. NULL olmamalıdır.
+'ndaki Düzenleme denetiminin üst penceresini belirtir. NULL olmaması gerekir.
 
 *Rect*<br/>
-[içinde] Edit denetiminin boyutunu ve konumunu belirtir.
+'ndaki Düzenleme denetiminin boyutunu ve konumunu belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeni oluşturulan edit denetimi için bir işaretçi; denetimin oluşturulması ve eki başarısız olursa NULL'dur.
+Yeni oluşturulan düzenleme denetimine yönelik bir işaretçi; denetimin oluşturulması ve eki başarısız olursa bu NULL olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir nesneyi `CMFCToolBarEditBoxButton` iki adımda inşa ee. Önce oluşturucuyu çağırın, `CreateEdit`sonra Windows edit denetimini oluşturan ve `CMFCToolBarEditBoxButton` nesneye iliştiren , sonra çağırın.
+`CMFCToolBarEditBoxButton`İki adımda bir nesne oluşturursunuz. Önce oluşturucuyu çağırın ve sonra `CreateEdit` Windows düzenleme denetimini oluşturan ve bunu nesnesine ekleyen çağırın `CMFCToolBarEditBoxButton` .
 
-## <a name="cmfctoolbareditboxbuttongetbycmd"></a><a name="getbycmd"></a>CMFCToolBarEditBoxButton::GetByCmd
+## <a name="cmfctoolbareditboxbuttongetbycmd"></a><a name="getbycmd"></a> CMFCToolBarEditBoxButton:: GetByCmd
 
-Belirtilen komut `CMFCToolBarEditBoxButton` kimliğine sahip uygulamada ilk nesneyi alır.
+`CMFCToolBarEditBoxButton`Uygulamadaki belirtilen komut kimliğine sahip ilk nesneyi alır.
 
 ```
 static CMFCToolBarEditBoxButton* __stdcall GetByCmd(UINT uiCmd);
@@ -250,20 +251,20 @@ static CMFCToolBarEditBoxButton* __stdcall GetByCmd(UINT uiCmd);
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmd*<br/>
-[içinde] Alınacak düğmenin komut kimliği.
+*Uımd*<br/>
+'ndaki Alınacak düğmenin komut KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen `CMFCToolBarEditBoxButton` komut kimliğine sahip uygulamada ilk nesne veya böyle bir nesne yoksa NULL.
+`CMFCToolBarEditBoxButton`Uygulamada belirtilen komut kimliğine sahip olan ilk nesne veya böyle bir nesne yoksa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu paylaşılan yardımcı program yöntemi [CMFCToolBarEditBoxButton::SetContentsAll](#setcontentsall) ve [CMFCToolBarEditBoxButton::GetContentsAll](#getcontentsall) ayarlamak veya belirtilen komut kimliğine sahip ilk düzenleme kutusu araç çubuğu denetimi nin metnini almak gibi yöntemlerle kullanılır.
+Bu paylaşılan yardımcı program yöntemi [CMFCToolBarEditBoxButton:: SetContentsAll](#setcontentsall) ve [CMFCToolBarEditBoxButton:: GetContentsAll](#getcontentsall) gibi yöntemler tarafından, belirtilen komut kimliğine sahip ilk düzenleme kutusu araç çubuğu denetiminin metnini ayarlamak ya da almak için kullanılır.
 
-## <a name="cmfctoolbareditboxbuttongetcontentsall"></a><a name="getcontentsall"></a>CMFCToolBarEditBoxButton::GetContentsAll
+## <a name="cmfctoolbareditboxbuttongetcontentsall"></a><a name="getcontentsall"></a> CMFCToolBarEditBoxButton:: GetContentsAll
 
-Belirtilen komut kimliğine sahip ilk düzenleme kutusu araç çubuğu denetiminin metnini alır.
+Belirtilen komut KIMLIĞINE sahip olan ilk düzenleme kutusu araç çubuğu denetiminin metnini alır.
 
 ```
 static CString __stdcall GetContentsAll(UINT uiCmd);
@@ -271,20 +272,20 @@ static CString __stdcall GetContentsAll(UINT uiCmd);
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmd*<br/>
-[içinde] İçeriği almak için düğmenin komut kimliği.
+*Uımd*<br/>
+'ndaki İçeriğin alınacağı düğmenin komut KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen `CString` komut kimliğine sahip ilk düzenleme kutusu araç çubuğu denetiminin metnini içeren bir nesne.
+`CString`Belirtilen komut kimliğine sahip olan ilk düzenleme kutusu araç çubuğu denetiminin metnini içeren nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belirtilen komut `CMFCToolBarEditBoxButton` kimliğine sahip olmayan nesneler yoksa boş dizeyi döndürür.
+Bu yöntem, hiçbir `CMFCToolBarEditBoxButton` nesne belirtilen komut kimliğine sahip değilse boş dizeyi döndürür.
 
-## <a name="cmfctoolbareditboxbuttongetcontextmenuid"></a><a name="getcontextmenuid"></a>CMFCToolBarEditBoxButton::GetContextMenuID
+## <a name="cmfctoolbareditboxbuttongetcontextmenuid"></a><a name="getcontextmenuid"></a> CMFCToolBarEditBoxButton:: GetContextMenuID
 
-Düğmeyle ilişkili kısayol menüsünün kaynak kimliğini alır.
+Düğmeyle ilişkili kısayol menüsünün kaynak KIMLIĞINI alır.
 
 ```
 UINT GetContextMenuID();
@@ -292,15 +293,15 @@ UINT GetContextMenuID();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmede ilişkili kısayol menüsü yoksa, düğmeyle ilişkili kısayol menüsünün kaynak kimliği veya 0.
+Düğmenin ilişkili kısayol menüsü yoksa, düğme veya 0 ile ilişkili kısayol menüsünün kaynak KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, kullanıcı düğmeye sağ tıkladığında kısayol menüsünü oluşturmak için kaynak kimliğini kullanır.
+Çerçeve, düğmeye sağ tıkladığı zaman kısayol menüsünü oluşturmak için kaynak KIMLIĞINI kullanır.
 
-## <a name="cmfctoolbareditboxbuttongeteditborder"></a><a name="geteditborder"></a>CMFCToolBarEditBoxButton::GetEditBorder
+## <a name="cmfctoolbareditboxbuttongeteditborder"></a><a name="geteditborder"></a> CMFCToolBarEditBoxButton:: GetEditBorder
 
-Edit kutusu düğmesinin bir bölümünün sınırlayıcı dikdörtgenini alır.
+Düzenleme kutusu düğmesinin düzenleme bölümünün sınırlayıcı dikdörtgenini alır.
 
 ```
 virtual void GetEditBorder(CRect& rectBorder);
@@ -309,17 +310,17 @@ virtual void GetEditBorder(CRect& rectBorder);
 ### <a name="parameters"></a>Parametreler
 
 *rectBorder*<br/>
-[çıkış] Sınırlayıcı dikdörtgeni alan `CRect` nesneye bir başvuru.
+dışı `CRect` Sınırlayıcı dikdörtgeni alan nesneye bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, istemci koordinatlarında düzen denetiminin sınırlayıcı dikdörtgenini alır. Her yöndeki dikdörtgenin boyutunu bir piksel genişletir.
+Bu yöntem, istemci koordinatlarındaki düzenleme denetiminin sınırlayıcı dikdörtgenini alır. Dikdörtgenin boyutunu her yönde bir piksel genişletir.
 
-[CMFCVisualManager::OnDrawEditBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondraweditborder) yöntemi, bir `CMFCToolBarEditBoxButton` nesnenin kenarlığı çizdiğinde bu yöntemi çağırır.
+[CMFCVisualManager:: OnDrawEditBorder](../../mfc/reference/cmfcvisualmanager-class.md#ondraweditborder) yöntemi bir nesne etrafında kenarlık çizerken bu yöntemi çağırır `CMFCToolBarEditBoxButton` .
 
-## <a name="cmfctoolbareditboxbuttongeteditbox"></a><a name="geteditbox"></a>CMFCToolBarEditBoxButton::GetEditBox
+## <a name="cmfctoolbareditboxbuttongeteditbox"></a><a name="geteditbox"></a> CMFCToolBarEditBoxButton:: GetEditBox
 
-Düğmeye katıştırılmış [CEdit Sınıfı](../../mfc/reference/cedit-class.md) denetimine bir işaretçi döndürür.
+Düğmeye gömülü olan [CEdit sınıf](../../mfc/reference/cedit-class.md) denetimine bir işaretçi döndürür.
 
 ```
 CEdit* GetEditBox() const;
@@ -327,15 +328,15 @@ CEdit* GetEditBox() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmenin içerdiği [CEdit Sınıfı](../../mfc/reference/cedit-class.md) denetimine işaretçi. `CEdit` Denetim henüz oluşturulmadıysa NULL'dur.
+Düğmenin içerdiği [Cedıt sınıfı](../../mfc/reference/cedit-class.md) denetimine yönelik bir işaretçi. `CEdit`Denetim henüz OLUŞTURULMADıYSA null olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimi `CEdit` [CMFCToolBarEditBoxButton'ı arayarak oluşturursunuz::CreateEdit](#createedit).
+Bu `CEdit` denetimi [CMFCToolBarEditBoxButton:: CreateEdit](#createedit)çağırarak oluşturursunuz.
 
-## <a name="cmfctoolbareditboxbuttongethwnd"></a><a name="gethwnd"></a>CMFCToolBarEditBoxButton::GetHwnd
+## <a name="cmfctoolbareditboxbuttongethwnd"></a><a name="gethwnd"></a> CMFCToolBarEditBoxButton:: GetHwnd
 
-Araç çubuğu düğmesiyle ilişkili pencere tutamacını alır.
+Araç çubuğu düğmesiyle ilişkili pencere tanıtıcısını alır.
 
 ```
 virtual HWND GetHwnd();
@@ -343,13 +344,13 @@ virtual HWND GetHwnd();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmeyle ilişkili pencere tutamacı.
+Düğmeyle ilişkilendirilen pencere tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [CMFCToolBarButton geçersiz kılar::Düzenleme](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd) kutusu düğmesinin denetim bölümünün pencere tutamacını döndürerek GetHwnd yöntemi.
+Bu yöntem, düzenleme kutusu düğmesinin düzenleme denetimi bölümünün pencere tanıtıcısını döndürerek [CMFCToolBarButton:: GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd) yöntemini geçersiz kılar.
 
-## <a name="cmfctoolbareditboxbuttongetinvalidaterect"></a><a name="getinvalidaterect"></a>CMFCToolBarEditBoxButton::GetInvalidateRect
+## <a name="cmfctoolbareditboxbuttongetinvalidaterect"></a><a name="getinvalidaterect"></a> CMFCToolBarEditBoxButton:: GetInvalidateRect
 
 Yeniden çizilmesi gereken düğmenin istemci alanının bölgesini alır.
 
@@ -359,15 +360,15 @@ virtual const CRect GetInvalidateRect() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeniden `CRect` çizilmesi gereken bölgeyi belirten bir nesne.
+Yeniden `CRect` çizilmesi gereken bölgeyi belirten nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, metin etiketinin alanını bölgeye ekleyerek taban sınıf uygulamasını, [CMFCToolBarButton::GetInvalidateRect'i](../../mfc/reference/cmfctoolbarbutton-class.md#getinvalidaterect)genişletir.
+Bu yöntem, metin etiketinin bölgesine dahil ederek, [CMFCToolBarButton:: GetInvalidateRect](../../mfc/reference/cmfctoolbarbutton-class.md#getinvalidaterect)temel sınıf uygulamasını genişletir.
 
-## <a name="cmfctoolbareditboxbuttonhavehotborder"></a><a name="havehotborder"></a>CMFCToolBarEditBoxButton::HaveHotBorder
+## <a name="cmfctoolbareditboxbuttonhavehotborder"></a><a name="havehotborder"></a> CMFCToolBarEditBoxButton:: HaveHotBorder
 
-Kullanıcı düğmeyi tıklattığında düğmenin kenarlığı görüntülenip görüntülenmediğini belirler.
+Kullanıcı düğmeye tıkladığında düğme kenarlığının görüntülenip görüntülenmeyeceğini belirler.
 
 ```
 virtual BOOL HaveHotBorder() const;
@@ -375,15 +376,15 @@ virtual BOOL HaveHotBorder() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir düğme seçildiğinde kenarlığını görüntülerse sıfıra inme; aksi takdirde 0.
+Seçili olduğunda bir düğme kenarlığını görüntülüyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, denetim görünürise sıfır olmayan bir değer döndürerek taban sınıf uygulaması, [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder)genişletir.
+Bu yöntem, denetim görünür durumdaysa sıfır dışında bir değer döndürerek, [CMFCToolBarButton:: HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder)temel sınıf uygulamasını genişletir.
 
-## <a name="cmfctoolbareditboxbuttonisflatmode"></a><a name="isflatmode"></a>CMFCToolBarEditBoxButton::IsFlatMode
+## <a name="cmfctoolbareditboxbuttonisflatmode"></a><a name="isflatmode"></a> CMFCToolBarEditBoxButton:: ısyataymode
 
-Kutu düğmelerinin düz bir stili olup olmadığını belirler.
+Düzenleme kutusu düğmelerinin düz bir stile sahip olup olmadığını belirler.
 
 ```
 static BOOL __stdcall IsFlatMode();
@@ -391,15 +392,15 @@ static BOOL __stdcall IsFlatMode();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmelerin düz bir stili varsa sıfıra inme; aksi takdirde, 0.
+Düğmelerin düz bir stili varsa sıfır dışı; Aksi takdirde, 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, kutu düğmelerini düzenleme nin düz bir stili vardır. [CMFCToolBarEditBoxButton::Uygulamanızın](#setflatmode) düz stil görünümünü değiştirmek için SetFlatMode yöntemini kullanın.
+Varsayılan olarak, düzenleme kutusu düğmelerinin düz bir stili vardır. Uygulamanızın düz stil görünümünü değiştirmek için [CMFCToolBarEditBoxButton:: Setyataymode](#setflatmode) metodunu kullanın.
 
-## <a name="cmfctoolbareditboxbuttonnotifycommand"></a><a name="notifycommand"></a>CMFCToolBarEditBoxButton::Komut Bildir
+## <a name="cmfctoolbareditboxbuttonnotifycommand"></a><a name="notifycommand"></a> CMFCToolBarEditBoxButton:: NotifyCommand
 
-Düğmenin [WM_COMMAND](/windows/win32/menurc/wm-command) iletiyi çalışıp belirtir.
+Düğmenin [WM_COMMAND](/windows/win32/menurc/wm-command) iletisini işlemediğini belirtir.
 
 ```
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -408,21 +409,21 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ### <a name="parameters"></a>Parametreler
 
 *iNotifyCode*<br/>
-[içinde] Komutla ilişkili bildirim iletisi.
+'ndaki Komutuyla ilişkili bildirim iletisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Doğru düğme, iletinin ana araç çubuğu tarafından işletilmesi gerektiğini belirtmek için WM_COMMAND iletisini işlerse veya FALSE.
+Düğme WM_COMMAND iletisini işliyorsa TRUE, iletinin üst araç çubuğu tarafından işlenmesi gerektiğini belirtmek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, üst pencereye [WM_COMMAND](/windows/win32/menurc/wm-command) iletisi göndermek üzereyken bu yöntemi çağırır.
+Framework, ana pencereye bir [WM_COMMAND](/windows/win32/menurc/wm-command) iletisi göndermek üzere olduğunda bu yöntemi çağırır.
 
-Bu [yöntem, EN_UPDATE](/windows/win32/Controls/en-update) bildirimini işleyerek taban sınıf uygulamasını [(CMFCToolBarButton::NotifyCommand)](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)genişletir. Bu nesneyle aynı komut kimliğine sahip her bir edit kutusu için metin etiketini bu nesnenin metin etiketine ayarlar.
+Bu yöntem, [EN_UPDATE](/windows/win32/Controls/en-update) bildirimini işleyerek temel sınıf uygulamasını ( [CMFCToolBarButton:: NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) genişletir. Bu nesneyle aynı komut KIMLIĞINE sahip her bir düzenleme kutusu için, metin etiketini bu nesnenin metin etiketine ayarlar.
 
-## <a name="cmfctoolbareditboxbuttononaddtocustomizepage"></a><a name="onaddtocustomizepage"></a>CMFCToolBarEditBoxButton::OnAddToCustomizePage
+## <a name="cmfctoolbareditboxbuttononaddtocustomizepage"></a><a name="onaddtocustomizepage"></a> CMFCToolBarEditBoxButton:: OnAddToCustomizePage
 
-**Özelleştir** iletişim kutusuna düğme eklendiğinde çerçeve tarafından çağrılır.
+Düğme bir **Özelleştirme** iletişim kutusuna eklendiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnAddToCustomizePage();
@@ -430,13 +431,13 @@ virtual void OnAddToCustomizePage();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bu nesneyle aynı komut kimliğine sahip herhangi bir araç çubuğundaki düzenleme kutusu denetiminden özellikleri kopyalayarak taban sınıf uygulamasını [(CMFCToolBarButton::OnAddToCustomizePage)](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage)genişletir. Bu yöntem, hiçbir araç çubuğunda bu nesneyle aynı komut kimliğine sahip bir düzenleme kutusu denetimi varsa hiçbir şey yapmaz.
+Bu yöntem, özellikleri bu nesneyle aynı komut KIMLIĞINE sahip olan herhangi bir araç çubuğunda düzenleme kutusu denetiminden kopyalayarak temel sınıf uygulamasını ( [CMFCToolBarButton:: OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage)) genişletir. Bu yöntem, bir araç çubuğunun aynı komut KIMLIĞINE sahip bir düzenleme kutusu denetimine sahip olmadığı hiçbir şey yapmaz.
 
-**Özelleştir** iletişim kutusu hakkında daha fazla bilgi için [CMFCToolBarsCustomizeDialog Class'a](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)bakın.
+**Özelleştirme** iletişim kutusu hakkında daha fazla bilgi için bkz. [CMFCToolBarsCustomizeDialog Class](../../mfc/reference/cmfctoolbarscustomizedialog-class.md).
 
-## <a name="cmfctoolbareditboxbuttononchangeparentwnd"></a><a name="onchangeparentwnd"></a>CMFCToolBarEditBoxButton::OnChangeParentWnd
+## <a name="cmfctoolbareditboxbuttononchangeparentwnd"></a><a name="onchangeparentwnd"></a> CMFCToolBarEditBoxButton:: OnChangeParentWnd
 
-Düğme yeni bir araç çubuğuna takıldığında çerçeve tarafından çağrılır.
+Düğme yeni bir araç çubuğuna eklendiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnChangeParentWnd(CWnd* pWndParent);
@@ -445,15 +446,15 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-[içinde] Yeni üst pencereiçin bir işaretçi.
+'ndaki Yeni ana pencereye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, iç `CEdit` nesneyi yeniden oluşturarak taban sınıf uygulamasını [(CMFCToolBarButton::OnChangeParentWnd)](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)geçersiz kılar.
+Bu yöntem, iç nesneyi yeniden oluşturarak temel sınıf uygulamasını ( [CMFCToolBarButton:: OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) geçersiz kılar `CEdit` .
 
-## <a name="cmfctoolbareditboxbuttononclick"></a><a name="onclick"></a>CMFCToolBarEditBoxButton::Tıkla
+## <a name="cmfctoolbareditboxbuttononclick"></a><a name="onclick"></a> CMFCToolBarEditBoxButton:: OnClick
 
-Kullanıcı fare düğmesini tıklattığında çerçeve tarafından çağrılır.
+Kullanıcı fare düğmesine tıkladığında Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnClick(
@@ -463,23 +464,23 @@ virtual BOOL OnClick(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-[içinde] Kullanılma -yan.
+*pWnd*<br/>
+'ndaki Kullanılmayan.
 
-*bGecikme*<br/>
-[içinde] Kullanılma -yan.
+*bDelay*<br/>
+'ndaki Kullanılmayan.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğme tıklama iletisini işlerse sıfıra inme; aksi takdirde 0.
+Düğme tıklama iletisini işliyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, iç `CEdit` nesne görünürse sıfır olmayan bir değer döndürerek taban sınıf uygulamasını [(CMFCToolBarButton::OnClick)](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)geçersiz kılar.
+Bu yöntem, iç nesne görünür durumdaysa sıfır dışında bir değer döndürerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)) geçersiz kılar `CEdit` .
 
-## <a name="cmfctoolbareditboxbuttononctlcolor"></a><a name="onctlcolor"></a>CMFCToolBarEditBoxButton::OnCtlColor
+## <a name="cmfctoolbareditboxbuttononctlcolor"></a><a name="onctlcolor"></a> CMFCToolBarEditBoxButton:: OnCtlColor
 
-Üst araç çubuğu bir WM_CTLCOLOR iletisi işlediğinde çerçeve tarafından çağrılır.
+Ana araç çubuğu bir WM_CTLCOLOR iletisini işlediğinde Framework tarafından çağırılır.
 
 ```
 virtual HBRUSH OnCtlColor(
@@ -489,25 +490,25 @@ virtual HBRUSH OnCtlColor(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-[içinde] Düğmeyi görüntüleyen aygıt bağlamı.
+*Kökündeki*<br/>
+'ndaki Düğmeyi görüntüleyen cihaz bağlamı.
 
 *nCtlColor*<br/>
-[içinde] Kullanılma -yan.
+'ndaki Kullanılmayan.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genel pencere fırçasının tutamacı.
+Genel pencere fırçasının bir tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, sağlanan aygıt bağlamının metin ve arka plan renklerini sırasıyla genel metin ve arka plan renklerine ayarlayarak taban sınıf uygulamasını [(CMFCToolBarButton::OnCtlColor)](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor)geçersiz kılar.
+Bu yöntem, belirtilen cihaz bağlamının metin ve arka plan renklerini sırasıyla genel metin ve arka plan renkleriyle ayarlayarak temel sınıf uygulamasını ( [CMFCToolBarButton:: OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor)) geçersiz kılar.
 
-Uygulamanızda kullanılabilen genel seçenekler hakkında daha fazla bilgi için [AFX_GLOBAL_DATA Yapısı'na](../../mfc/reference/afx-global-data-structure.md)bakın.
+Uygulamanız için kullanılabilen genel seçenekler hakkında daha fazla bilgi için bkz. [AFX_GLOBAL_DATA yapısı](../../mfc/reference/afx-global-data-structure.md).
 
-## <a name="cmfctoolbareditboxbuttononglobalfontschanged"></a><a name="onglobalfontschanged"></a>CMFCToolBarEditBoxButton::OnGlobalFontsDeğiştirildi
+## <a name="cmfctoolbareditboxbuttononglobalfontschanged"></a><a name="onglobalfontschanged"></a> CMFCToolBarEditBoxButton:: OnGlobalFontsChanged
 
-Genel yazı tipi değiştiğinde çerçeve tarafından çağrılır.
+Genel yazı tipi değiştirildiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnGlobalFontsChanged();
@@ -515,13 +516,13 @@ virtual void OnGlobalFontsChanged();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, denetimin yazı tipini genel yazı tipiyle değiştirerek taban sınıf uygulamasını [(CMFCToolBarButton::OnGlobalFontsChanged)](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)genişletir.
+Bu yöntem, denetimin yazı tipini genel yazı tipi ile değiştirerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)) genişletir.
 
-Uygulamanızda kullanılabilen genel seçenekler hakkında daha fazla bilgi için [AFX_GLOBAL_DATA Yapısı'na](../../mfc/reference/afx-global-data-structure.md)bakın.
+Uygulamanız için kullanılabilen genel seçenekler hakkında daha fazla bilgi için bkz. [AFX_GLOBAL_DATA yapısı](../../mfc/reference/afx-global-data-structure.md).
 
-## <a name="cmfctoolbareditboxbuttononmove"></a><a name="onmove"></a>CMFCToolBarEditBoxButton::OnMove
+## <a name="cmfctoolbareditboxbuttononmove"></a><a name="onmove"></a> CMFCToolBarEditBoxButton:: OnMove
 
-Ana araç çubuğu hareket ettiğinde çerçeve tarafından çağrılır.
+Ana araç çubuğu taşırken Framework tarafından çağırılır.
 
 ```
 virtual void OnMove();
@@ -529,11 +530,11 @@ virtual void OnMove();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, iç `CEdit` nesnenin konumunu güncelleştirerek varsayılan sınıf uygulamasını [(CMFCToolBarButton::OnMove)](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)geçersiz kılar
+Bu yöntem, iç nesnenin konumunu güncelleştirerek varsayılan sınıf uygulamasını ( [CMFCToolBarButton:: OnMove](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)) geçersiz kılar `CEdit`
 
-## <a name="cmfctoolbareditboxbuttononshow"></a><a name="onshow"></a>CMFCToolBarEditBoxButton::Açık Göster
+## <a name="cmfctoolbareditboxbuttononshow"></a><a name="onshow"></a> CMFCToolBarEditBoxButton:: OnShow
 
-Düğme görünür veya görünmez olduğunda çerçeve tarafından çağrılır.
+Düğme görünür veya görünmez hale geldiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnShow(BOOL bShow);
@@ -541,16 +542,16 @@ virtual void OnShow(BOOL bShow);
 
 ### <a name="parameters"></a>Parametreler
 
-*bGöster*<br/>
-[içinde] Düğmenin görünür olup olmadığını belirtir. Bu parametre TRUE ise, düğme görünür. Aksi takdirde, düğme görünmez.
+*bShow*<br/>
+'ndaki Düğmenin görünür olup olmadığını belirtir. Bu parametre TRUE ise, düğme görünür olur. Aksi takdirde, düğme görünür değildir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, *bShow* DOĞRU ise düğmeyi görüntüleyerek taban sınıf uygulamasını [(CMFCToolBarButton::OnShow)](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)genişletir. Aksi takdirde, bu yöntem düğmeyi gizler.
+Bu yöntem, *BSHOW* true ise düğmeyi görüntüleyerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) genişletir. Aksi takdirde, bu yöntem düğmeyi gizler.
 
-## <a name="cmfctoolbareditboxbuttononsize"></a><a name="onsize"></a>CMFCToolBarEditBoxButton::Boyut
+## <a name="cmfctoolbareditboxbuttononsize"></a><a name="onsize"></a> CMFCToolBarEditBoxButton:: OnSize
 
-Ana araç çubuğu boyutunu veya konumunu değiştirdiğinde ve bu değişiklik düğmenin boyutunu değiştirmesine neden olduğunda çerçeve tarafından çağrılır.
+Ana araç çubuğu boyutunu veya konumunu değiştirdiğinde Framework tarafından çağırılır ve bu değişiklik düğmenin boyutunu değiştirmesine neden olur.
 
 ```
 virtual void OnSize(int iSize);
@@ -559,15 +560,15 @@ virtual void OnSize(int iSize);
 ### <a name="parameters"></a>Parametreler
 
 *iSize*<br/>
-[içinde] Düğmenin yeni genişliği, pikselolarak.
+'ndaki Düğmenin piksel cinsinden yeni genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem varsayılan sınıf uygulaması geçersiz kılar, [CMFCToolBarButton::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize), iç `CEdit` nesnenin boyutunu ve konumunu güncelleştirerek.
+Bu yöntem, iç nesnenin boyutunu ve konumunu güncelleştirerek [CMFCToolBarButton:: OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)varsayılan sınıf uygulamasını geçersiz kılar `CEdit` .
 
-## <a name="cmfctoolbareditboxbuttononupdatetooltip"></a><a name="onupdatetooltip"></a>CMFCToolBarEditBoxButton::OnUpdateToolTip
+## <a name="cmfctoolbareditboxbuttononupdatetooltip"></a><a name="onupdatetooltip"></a> CMFCToolBarEditBoxButton:: OnUpdateToolTip
 
-Üst araç çubuğu araç ipucu metnini güncelleştirirken çerçeve tarafından çağrılır.
+Ana araç çubuğu kendi araç ipucu metnini güncelleştirdiğinde Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnUpdateToolTip(
@@ -580,26 +581,26 @@ virtual BOOL OnUpdateToolTip(
 ### <a name="parameters"></a>Parametreler
 
 *pWndParent*<br/>
-[içinde] Kullanılma -yan.
+'ndaki Kullanılmayan.
 
-*iButtonIndex*<br/>
-[içinde] Kullanılma -yan.
+*ıbuttonındex*<br/>
+'ndaki Kullanılmayan.
 
 *wndToolTip*<br/>
-[içinde] Araç ipucu metnini görüntüleyen denetim.
+'ndaki Araç ipucu metnini görüntüleyen denetim.
 
-*Str*<br/>
-[çıkış] Güncelleştirilmiş araç ipucu metnini alan bir `CString` nesne.
+*üstbilgisine*<br/>
+dışı `CString` Güncelleştirilmiş araç ipucu metnini alan nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem araç ipucu metnini güncelleştirirse sıfırsız; aksi takdirde 0.
+Yöntem araç ipucu metnini güncelleştirse sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, düğmenin düzenleme bölümüyle ilişkili araç ipucu metnini görüntüleyerek taban sınıf uygulamasını [(CMFCToolBarButton::OnUpdateToolTip)](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)genişletir. İç `CEdit` nesne NULL ise veya nesnenin `CEdit` pencere tutamacı varolan bir pencereyi tanımlamazsa, bu yöntem hiçbir şey yapmaz ve FALSE döndürür.
+Bu yöntem, düğmenin düzenleme bölümüyle ilişkili araç ipucu metnini görüntüleyerek temel sınıf uygulamasını ( [CMFCToolBarButton:: OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)) genişletir. İç `CEdit` nesne null ise veya nesnenin pencere tutamacı `CEdit` varolan bir pencereyi tanımlamaz, bu yöntem hiçbir şey yapmaz ve false döndürür.
 
-## <a name="cmfctoolbareditboxbuttonsetcontents"></a><a name="setcontents"></a>CMFCToolBarEditBoxButton::SetContents
+## <a name="cmfctoolbareditboxbuttonsetcontents"></a><a name="setcontents"></a> CMFCToolBarEditBoxButton:: SetContents
 
 Metin kutusu denetimindeki metni ayarlar.
 
@@ -610,11 +611,11 @@ virtual void SetContents(const CString& sContents);
 ### <a name="parameters"></a>Parametreler
 
 *sContents*<br/>
-[içinde] Ayarlanacak yeni metni belirtir.
+'ndaki Ayarlanacak yeni metni belirtir.
 
-## <a name="cmfctoolbareditboxbuttonsetcontentsall"></a><a name="setcontentsall"></a>CMFCToolBarEditBoxButton::SetContentsAll
+## <a name="cmfctoolbareditboxbuttonsetcontentsall"></a><a name="setcontentsall"></a> CMFCToolBarEditBoxButton:: SetContentsAll
 
-Belirtilen komut kimliğine sahip bir [CMFCToolBarEditBoxButton](../../mfc/reference/cmfctoolbareditboxbutton-class.md) nesnesi bulur ve metin kutusunda belirtilen metni ayarlar.
+Belirtilen komut KIMLIĞINE sahip bir [CMFCToolBarEditBoxButton](../../mfc/reference/cmfctoolbareditboxbutton-class.md) nesnesi bulur ve metin kutusu içinde belirtilen metni ayarlar.
 
 ```
 static BOOL SetContentsAll(
@@ -624,19 +625,19 @@ static BOOL SetContentsAll(
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmd*<br/>
-[içinde] Metnin değiştirileceği denetimin komut kimliğini belirtir.
+*Uımd*<br/>
+'ndaki Metnin değiştirildiği denetimin komut KIMLIĞINI belirtir.
 
 *strContents*<br/>
-[içinde] Ayarlanacak yeni metni belirtir.
+'ndaki Ayarlanacak yeni metni belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Metin ayarlanmışsa sıfır olmayan; Belirtilen komut `CMFCToolBarEditBoxButton` kimliği ile denetim yoksa 0.
+Metin ayarlandıysa sıfır dışı; `CMFCToolBarEditBoxButton` belirtilen komut kimliğine sahip denetim yoksa 0.
 
-## <a name="cmfctoolbareditboxbuttonsetcontextmenuid"></a><a name="setcontextmenuid"></a>CMFCToolBarEditBoxButton::SetContextMenuID
+## <a name="cmfctoolbareditboxbuttonsetcontextmenuid"></a><a name="setcontextmenuid"></a> CMFCToolBarEditBoxButton:: SetContextMenuID
 
-Düğmeyle ilişkili kısayol menüsünün kaynak kimliğini belirtir.
+Düğmeyle ilişkili kısayol menüsünün kaynak KIMLIĞINI belirtir.
 
 ```cpp
 void SetContextMenuID(UINT uiResID);
@@ -644,16 +645,16 @@ void SetContextMenuID(UINT uiResID);
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmd*<br/>
-[içinde] Kısayol menüsünün kaynak kimliği.
+*Uımd*<br/>
+'ndaki Kısayol menüsünün kaynak KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı araç çubuğu düğmesini sağ tıklattığında kısayol menüsünü oluşturmak için kaynak kimliği kullanır.
+Çerçeve, Kullanıcı araç çubuğu düğmesine sağ tıkladığında kısayol menüsünü oluşturmak için kaynak KIMLIĞINI kullanır.
 
-## <a name="cmfctoolbareditboxbuttonsetflatmode"></a><a name="setflatmode"></a>CMFCToolBarEditBoxButton::SetFlatMode
+## <a name="cmfctoolbareditboxbuttonsetflatmode"></a><a name="setflatmode"></a> CMFCToolBarEditBoxButton:: Setyataymod
 
-Uygulamadaki kutu düğmelerinin düz stil görünümünü belirtir.
+Uygulamadaki düzenleme kutusu düğmelerinin düz stil görünümünü belirtir.
 
 ```
 static void __stdcall SetFlatMode(BOOL bFlat = TRUE);
@@ -661,16 +662,16 @@ static void __stdcall SetFlatMode(BOOL bFlat = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bDüz*<br/>
-[içinde] Kutu düğmelerini edin için düz stil. Bu parametre TRUE ise, düz stil görünümü etkinleştirilir; aksi takdirde düz stil görünümü devre dışı bırakılır.
+*bFlat*<br/>
+'ndaki Düzenleme kutusu düğmelerinin düz stili. Bu parametre TRUE ise düz stil görünümü etkinleştirilir; Aksi halde düz stil görünümü devre dışıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kutu düğmelerini edin için varsayılan düz stil TRUE'dur. [CMFCToolBarEditBoxButton::Uygulamanız](#isflatmode) için düz stil görünümünü almak için IsFlatMode yöntemini kullanın.
+Düzenleme kutusu düğmelerinin varsayılan düz stili doğru. Uygulamanızın düz stil görünümünü almak için [CMFCToolBarEditBoxButton:: ısyataymode](#isflatmode) metodunu kullanın.
 
-## <a name="cmfctoolbareditboxbuttonsetstyle"></a><a name="setstyle"></a>CMFCToolBarEditBoxButton::SetStyle
+## <a name="cmfctoolbareditboxbuttonsetstyle"></a><a name="setstyle"></a> CMFCToolBarEditBoxButton:: SetStyle
 
-Araç çubuğu düzenleme kutusu denetiminin stilini belirtir.
+Bir araç çubuğu düzenleme kutusu denetiminin stilini belirtir.
 
 ```
 virtual void SetStyle(UINT nStyle);
@@ -679,17 +680,17 @@ virtual void SetStyle(UINT nStyle);
 ### <a name="parameters"></a>Parametreler
 
 *nStyle*<br/>
-[içinde] Ayarı yeni bir stil.
+'ndaki Ayarlanacak yeni bir stil.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle) *nStyle* için de uygulama Özelleştirme modunda olduğunda metin kutusunu devre dışı katıyor ve uygulama Özelleştirme modunda olmadığında bunu sağlar (cmfcToolBar [bakınız::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode) ve [CMFCToolBar::IsCustomizeMode).](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode) Geçerli stil bayrakları listesi için [Araç Çubuğu Denetim Stilleri'ne](../../mfc/reference/toolbar-control-styles.md) bakın.
+Bu yöntem, [CMFCToolBarButton:: M_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle) *nStyle* 'a ayarlar ve uygulama özelleştirme modundayken metin kutusunu devre dışı bırakır ve uygulama özelleştirme modunda olmadığında bunu sağlar (bkz. [CMFCToolBar:: SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode) ve [CMFCToolBar:: IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)). Geçerli stil bayrakları listesi için bkz. [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolBarButton Sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
-[CEdit Sınıfı](../../mfc/reference/cedit-class.md)<br/>
-[CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
-[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
+[Cedıt sınıfı](../../mfc/reference/cedit-class.md)<br/>
+[CMFCToolBar:: ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
+[İzlenecek yol: araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
