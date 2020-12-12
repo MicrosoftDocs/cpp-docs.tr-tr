@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: derleyici uyarısı C4950'
 title: Derleyici Uyarısı C4950
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4950
 ms.assetid: 50226a5c-c664-4d09-ac59-e9e874ca244f
-ms.openlocfilehash: 52c4de94dfe087b4dcf407295e556c9350b2cb8b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e1bb05501fcac6c836bfd4aa89f72807b625c292
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164995"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314886"
 ---
 # <a name="compiler-warning-c4950"></a>Derleyici Uyarısı C4950
 
 ' type_or_member ': eski olarak işaretlendi
 
-Üye veya tür, <xref:System.ObsoleteAttribute> özniteliğiyle kullanılmıyor olarak işaretlendi.
+Bir üye veya tür, özniteliğiyle kullanılmıyor olarak işaretlendi <xref:System.ObsoleteAttribute> .
 
 C4950 her zaman bir hata olarak verilir. [Uyarı](../../preprocessor/warning.md) pragma yönergesini veya [/WD](../../build/reference/compiler-option-warning-level.md) derleyici seçeneğini kullanarak bu uyarıyı kapatabilirsiniz.
 

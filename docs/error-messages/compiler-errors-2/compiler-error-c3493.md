@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3493'
 title: Derleyici hatası C3493
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3493
 ms.assetid: 734b4257-12a3-436f-8488-c8c55ec81634
-ms.openlocfilehash: ea2c1a3d9a10fee455d20490f0408982f47ee0a7
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 8f16a53dbaf5b9924a4874d29d560f9c089eb244
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315536"
 ---
 # <a name="compiler-error-c3493"></a>Derleyici hatası C3493
 

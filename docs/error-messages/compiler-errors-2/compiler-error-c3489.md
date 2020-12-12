@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3489'
 title: Derleyici hatası C3489
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3489
 ms.assetid: 47b58d69-459d-4499-abc7-5f0b9303d773
-ms.openlocfilehash: 3b192a14a39b7c0c9d264bda8073c54f0f395924
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 658fc83476a9fe6f0db3ac27f44a05e1cb1d0c28
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315653"
 ---
 # <a name="compiler-error-c3489"></a>Derleyici hatası C3489
 
