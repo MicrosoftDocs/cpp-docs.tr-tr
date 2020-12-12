@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: proje hatalarını ayıklama (C++)'
 title: 'İzlenecek Yol: Proje Hatalarını Ayıklama (C++)'
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - project debugging [C++]
 - debugging projects
 ms.assetid: a5cade77-ba51-4b03-a7a0-6897e3cd6a59
-ms.openlocfilehash: 61433213619c16caf67de905a6da93c7360db298
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 99e5af935c1d5985b8c472fc807b1afbe61d66b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219683"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318682"
 ---
 # <a name="walkthrough-debugging-a-project-c"></a>İzlenecek Yol: Proje Hatalarını Ayıklama (C++)
 
@@ -27,7 +28,7 @@ Bu kılavuzda, projeyi test ettiğinizde bulduğunuz sorunu gidermek için progr
 
 1. Bir nesne yok edildiğinde ne olduğunu görmek için `Cardgame` , sınıf için yıkıcıyı görüntüleyin `Cardgame` .
 
-   Menü çubuğunda sınıf görünümü **görüntüle**' yi seçin  >  **Class View**.
+   Menü çubuğunda sınıf görünümü **görüntüle**' yi seçin  >  .
 
    **Sınıf görünümü** penceresinde, **oyun** projesi ağacını genişletin ve sınıf üyelerini ve yöntemlerini göstermek için **Cardgame** sınıfını seçin.
 
@@ -41,7 +42,7 @@ Bu kılavuzda, projeyi test ettiğinizde bulduğunuz sorunu gidermek için progr
 
    [!code-cpp[NVC_Walkthrough_Debugging_A_Project#111](../ide/codesnippet/CPP/walkthrough-debugging-a-project-cpp_2.cpp)]
 
-1. Menü **çubuğunda Build**  >  **Build Solution**öğesini seçin.
+1. Menü **çubuğunda Build**  >  **Build Solution** öğesini seçin.
 
 1. Oluşturma tamamlandığında, menü çubuğunda Hata **Ayıkla**  >  **Başlat** ' ı seçerek veya **F5** tuşunu seçerek bunu hata ayıklama modunda çalıştırın. Program ilk kesme noktasında duraklatılır.
 

@@ -1,5 +1,6 @@
 ---
-title: CTypedPtrList Sınıfı
+description: 'Daha fazla bilgi edinin: CTypedPtrList sınıfı'
+title: CTypedPtrList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CTypedPtrList
@@ -26,16 +27,16 @@ helpviewer_keywords:
 - CTypedPtrList [MFC], RemoveTail
 - CTypedPtrList [MFC], SetAt
 ms.assetid: c273096e-1756-4340-864b-4a08b674a65e
-ms.openlocfilehash: 9f4899d4470903a4145cc171579e4b251b984f95
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 353e9af00b1366b260ce3cb3689018a8e4e370c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81747192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318539"
 ---
-# <a name="ctypedptrlist-class"></a>CTypedPtrList Sınıfı
+# <a name="ctypedptrlist-class"></a>CTypedPtrList sınıfı
 
-Sınıf `CPtrList`nesneleri için tür güvenli bir "sarmalayıcı" sağlar.
+Sınıfının nesneleri için tür açısından güvenli bir "sarmalayıcı" sağlar `CPtrList` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -47,45 +48,45 @@ class CTypedPtrList : public BASE_CLASS
 #### <a name="parameters"></a>Parametreler
 
 *BASE_CLASS*<br/>
-Yazılan işaretçi listesi sınıfının taban sınıfı; işaretçi listesi sınıfı `CObList` (veya) `CPtrList`olmalıdır.
+Türü belirtilmiş işaretçi listesi sınıfının temel sınıfı; bir işaretçi listesi sınıfı ( `CObList` veya) olmalıdır `CPtrList` .
 
 *TÜR*<br/>
-Taban sınıf listesinde depolanan öğelerin türü.
+Temel sınıf listesinde depolanan öğelerin türü.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CTypedPtrList::AddHead](#addhead)|Listenin başına bir öğe (veya başka bir listedeki tüm öğeler) ekler (yeni bir kafa yapar).|
-|[CTypedPtrList::AddTail](#addtail)|Listenin kuyruğuna bir öğe (veya başka bir listedeki tüm öğeler) ekler (yeni bir kuyruk yapar).|
-|[CTypedPtrList::GetAt](#getat)|Öğeyi belirli bir konumda alır.|
-|[CTypedPtrList::GetHead](#gethead)|Listenin baş öğesini verir (boş olamaz).|
-|[CTypedPtrList::GetNext](#getnext)|Yinelenmenin bir sonraki öğesini alır.|
-|[CTypedPtrList::GetPrev](#getprev)|Yinelenmeiçin önceki öğeyi alır.|
-|[CTypedPtrList::GetTail](#gettail)|Listenin kuyruk öğesini verir (boş olamaz).|
-|[CTypedPtrList::RemoveHead](#removehead)|Öğeyi listenin başından kaldırır.|
-|[CTypedPtrList::RemoveTail](#removetail)|Öğeyi listenin kuyruğundan kaldırır.|
-|[CTypedPtrList::SetAt](#setat)|Öğeyi belirli bir konumda ayarlar.|
+|[CTypedPtrList:: AddHead](#addhead)|Listenin baş bir bir öğesini (veya başka bir listedeki tüm öğeleri) ekler (yeni bir baş oluşturur).|
+|[CTypedPtrList:: AddTail](#addtail)|Bir öğeyi (veya başka bir listedeki tüm öğeleri) listenin sonuna ekler (yeni bir kuyruk oluşturur).|
+|[CTypedPtrList:: GetAt](#getat)|Belirtilen konumdaki öğeyi alır.|
+|[CTypedPtrList:: GetHead](#gethead)|Listenin baş öğesini döndürür (boş olamaz).|
+|[CTypedPtrList:: GetNext](#getnext)|Yineleme için bir sonraki öğeyi alır.|
+|[CTypedPtrList:: Getöncekini](#getprev)|Yineleme için önceki öğeyi alır.|
+|[CTypedPtrList:: GetTail](#gettail)|Listenin tail öğesini döndürür (boş olamaz).|
+|[CTypedPtrList:: RemoveHead](#removehead)|Öğeyi listenin Başndan kaldırır.|
+|[CTypedPtrList:: RemoveTail](#removetail)|Öğeyi listenin tail öğesinden kaldırır.|
+|[CTypedPtrList:: SetAt](#setat)|Belirtilen konumdaki öğeyi ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ `CTypedPtrList` yazı `CObList` denetimi `CPtrList`tesisi yerine veya yerine kullandığınızda, eşleşmeyan işaretçi türlerinin neden olduğu hataların giderilmesine yardımcı olur.
+`CTypedPtrList`Ya da yerine kullandığınızda `CObList` `CPtrList` , C++ tür denetimi özelliği eşleşmeyen işaretçi türleri nedeniyle oluşan hataları ortadan kaldırmaya yardımcı olur.
 
-Buna ek `CTypedPtrList` olarak, sarıcı kullandıysanız `CObList` veya `CPtrList`gerekli olacak döküm çok gerçekleştirir.
+Ayrıca `CTypedPtrList` sarmalayıcı, veya kullandıysanız gerekli olacak çok sayıda atama gerçekleştirir `CObList` `CPtrList` .
 
-Tüm `CTypedPtrList` işlevler satır lı olduğundan, bu şablonun kullanımı kodunuzun boyutunu veya hızını önemli ölçüde etkilemez.
+Tüm `CTypedPtrList` işlevler satır içi olduğundan, bu şablonun kullanımı kodunuzun boyutunu veya hızını önemli ölçüde etkilemez.
 
-Türetilen `CObList` listeler seri hale getirilebilir, `CPtrList` ancak türetilenler serileştirilemez.
+Öğesinden türetilen listeler `CObList` seri hale getirilebilir, ancak öğesinden türetiliyor `CPtrList` .
 
-Bir `CTypedPtrList` nesne silindiğinde veya öğeleri kaldırıldığında, başvurulan varlıklar değil, yalnızca işaretçiler kaldırılır.
+Bir `CTypedPtrList` nesne silindiğinde veya öğeleri kaldırıldığında, başvurdukları varlıkların değil yalnızca işaretçiler kaldırılır.
 
-Kullanma `CTypedPtrList`hakkında daha fazla bilgi için [Koleksiyonlar](../../mfc/collections.md) ve [Şablon Tabanlı Sınıflar](../../mfc/template-based-classes.md)makalelerine bakın.
+Kullanma hakkında daha fazla bilgi için `CTypedPtrList` bkz. Makale [koleksiyonları](../../mfc/collections.md) ve [şablon tabanlı sınıflar](../../mfc/template-based-classes.md).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, bir `CTypedPtrList`nesne ekler, listeyi diske serileştirir ve sonra nesneyi siler:
+Bu örnek, bir örneği oluşturur `CTypedPtrList` , bir nesnesi ekler, listeyi diske serileştirir ve sonra nesneyi siler:
 
 [!code-cpp[NVC_MFCCollections#110](../../mfc/codesnippet/cpp/ctypedptrlist-class_1.cpp)]
 
@@ -101,11 +102,11 @@ Bu örnek, bir `CTypedPtrList`nesne ekler, listeyi diske serileştirir ve sonra 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxtempl.h
+**Üstbilgi:** afxtempl. h
 
-## <a name="ctypedptrlistaddhead"></a><a name="addhead"></a>CTypedPtrList::AddHead
+## <a name="ctypedptrlistaddhead"></a><a name="addhead"></a> CTypedPtrList:: AddHead
 
-Bu üye `BASE_CLASS`işlev **::AddHead**.
+Bu üye işlevi `BASE_CLASS` **:: AddHead** çağırır.
 
 ```
 POSITION AddHead(TYPE newElement);
@@ -115,28 +116,28 @@ void AddHead(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);
 ### <a name="parameters"></a>Parametreler
 
 *TÜR*<br/>
-Taban sınıf listesinde depolanan öğelerin türü.
+Temel sınıf listesinde depolanan öğelerin türü.
 
 *newElement*<br/>
-Bu listeye eklenecek nesne işaretçisi. NULL değerine izin verilir.
+Bu listeye eklenecek nesne işaretçisi. NULL değere izin verilir.
 
 *BASE_CLASS*<br/>
-Yazılan işaretçi listesi sınıfının taban sınıfı; işaretçi listesi sınıfı [(CObList](../../mfc/reference/coblist-class.md) veya [CPtrList)](../../mfc/reference/cptrlist-class.md)olmalıdır.
+Türü belirtilmiş işaretçi listesi sınıfının temel sınıfı; bir işaretçi listesi sınıfı ( [CObList](../../mfc/reference/coblist-class.md) veya [CPtrList](../../mfc/reference/cptrlist-class.md)) olmalıdır.
 
 *pNewList*<br/>
-Başka bir [CTypedPtrList](../../mfc/reference/ctypedptrlist-class.md) nesnesine işaretçi. *pNewList'teki* öğeler bu listeye eklenir.
+Başka bir [CTypedPtrList](../../mfc/reference/ctypedptrlist-class.md) nesnesine yönelik bir işaretçi. *PNewList* içindeki öğeler bu listeye eklenecektir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sürüm, yeni eklenen öğenin KONUM değerini döndürür.
+İlk sürüm, yeni takılan öğenin konum değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sürüm, listenin başına yeni bir öğe ekler. İkinci sürüm, kafadan önce başka bir öğe listesi ekler.
+İlk sürüm, listenin başından önce yeni bir öğe ekler. İkinci sürüm, başından önceki bir öğe listesi ekler.
 
-## <a name="ctypedptrlistaddtail"></a><a name="addtail"></a>CTypedPtrList::AddTail
+## <a name="ctypedptrlistaddtail"></a><a name="addtail"></a> CTypedPtrList:: AddTail
 
-Bu üye `BASE_CLASS`işlev **::AddTail**.
+Bu üye işlevi `BASE_CLASS` **:: AddTail** çağırır.
 
 ```
 POSITION AddTail(TYPE newElement);
@@ -146,28 +147,28 @@ void AddTail(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);
 ### <a name="parameters"></a>Parametreler
 
 *TÜR*<br/>
-Taban sınıf listesinde depolanan öğelerin türü.
+Temel sınıf listesinde depolanan öğelerin türü.
 
 *newElement*<br/>
-Bu listeye eklenecek nesne işaretçisi. NULL değerine izin verilir.
+Bu listeye eklenecek nesne işaretçisi. NULL değere izin verilir.
 
 *BASE_CLASS*<br/>
-Yazılan işaretçi listesi sınıfının taban sınıfı; işaretçi listesi sınıfı [(CObList](../../mfc/reference/coblist-class.md) veya [CPtrList)](../../mfc/reference/cptrlist-class.md)olmalıdır.
+Türü belirtilmiş işaretçi listesi sınıfının temel sınıfı; bir işaretçi listesi sınıfı ( [CObList](../../mfc/reference/coblist-class.md) veya [CPtrList](../../mfc/reference/cptrlist-class.md)) olmalıdır.
 
 *pNewList*<br/>
-Başka bir [CTypedPtrList](../../mfc/reference/ctypedptrlist-class.md) nesnesine işaretçi. *pNewList'teki* öğeler bu listeye eklenir.
+Başka bir [CTypedPtrList](../../mfc/reference/ctypedptrlist-class.md) nesnesine yönelik bir işaretçi. *PNewList* içindeki öğeler bu listeye eklenecektir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İlk sürüm, yeni eklenen öğenin KONUM değerini döndürür.
+İlk sürüm, yeni takılan öğenin konum değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sürüm, listenin kuyruğundan sonra yeni bir öğe ekler. İkinci sürüm, listenin kuyruğundan sonra başka bir öğe listesi ekler.
+İlk sürüm, listenin kuyruğunu tamamladıktan sonra yeni bir öğe ekler. İkinci sürüm, listenin kuyruğunu ardına bir öğe listesi ekler.
 
-## <a name="ctypedptrlistgetat"></a><a name="getat"></a>CTypedPtrList::GetAt
+## <a name="ctypedptrlistgetat"></a><a name="getat"></a> CTypedPtrList:: GetAt
 
-Tür POZISYON değişkeni liste için bir anahtardır.
+POSITION türünde bir değişken, listenin bir anahtarıdır.
 
 ```
 TYPE& GetAt(POSITION position);
@@ -179,24 +180,24 @@ TYPE GetAt(POSITION position) const;
 *TÜR*<br/>
 Listede depolanan öğelerin türünü belirten şablon parametresi.
 
-*Konum*<br/>
-Önceki `GetHeadPosition` veya `Find` üye işlev çağrısı yla döndürülen BIR POSITION değeri.
+*yerine*<br/>
+Önceki `GetHeadPosition` veya üye işlev çağrısı tarafından döndürülen BIR konum değeri `Find` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listeye bir `const CTypedPtrList`işaretçi aracılığıyla erişilirse, şablon parametresi `GetAt` *TYPE*tarafından belirtilen türün işaretçisini döndürür. Bu, işlevin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve böylece listeyi değişiklikten korur.
+Listeye bir işaretçi aracılığıyla erişiliyorsa `const CTypedPtrList` , `GetAt` şablon parametre *türü* tarafından belirtilen türün bir işaretçisini döndürür. Bu, işlevin atama ifadesinin sağ tarafında kullanılmasına izin verir ve bu nedenle listenin değiştirilmesini önler.
 
-Listeye doğrudan veya bir işaretçi aracılığıyla `CTypedPtrList`erişilirse, şablon `GetAt` parametre *TÜRÜ*tarafından belirtilen türdeki bir işaretçiye başvuru verir. Bu, işlevin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
+Listeye doğrudan veya bir işaretçisi aracılığıyla erişiliyorsa `CTypedPtrList` , `GetAt` şablon parametre *türü* tarafından belirtilen türün işaretçisine bir başvuru döndürür. Bu, işlevin atama ifadesinin her iki tarafında kullanılmasına izin verir ve bu nedenle liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bir dizin ile aynı değildir ve bir POSITION değeri üzerinde kendiniz çalışamazsınız. `GetAt`belirli bir `CObject` konumla ilişkili işaretçiyi alır.
+Bir dizin ile aynı değildir ve bir konum değerinde kendiniz işlem yapılamaz. `GetAt``CObject`belirli bir konumla ilişkili işaretçiyi alır.
 
-POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Bu satır satırlı fonksiyon çağırır `BASE_CLASS` **::GetAt**.
+Bu satır içi işlev `BASE_CLASS` **:: GetAt** çağırır.
 
-## <a name="ctypedptrlistgethead"></a><a name="gethead"></a>CTypedPtrList::GetHead
+## <a name="ctypedptrlistgethead"></a><a name="gethead"></a> CTypedPtrList:: GetHead
 
 Bu listenin baş öğesini temsil eden işaretçiyi alır.
 
@@ -212,17 +213,17 @@ Listede depolanan öğelerin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listeye bir `const CTypedPtrList`işaretçi aracılığıyla erişilirse, şablon parametresi `GetHead` *TYPE*tarafından belirtilen türün işaretçisini döndürür. Bu, işlevin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve böylece listeyi değişiklikten korur.
+Listeye bir işaretçi aracılığıyla erişiliyorsa `const CTypedPtrList` , `GetHead` şablon parametre *türü* tarafından belirtilen türün bir işaretçisini döndürür. Bu, işlevin atama ifadesinin sağ tarafında kullanılmasına izin verir ve bu nedenle listenin değiştirilmesini önler.
 
-Listeye doğrudan veya bir işaretçi aracılığıyla `CTypedPtrList`erişilirse, şablon `GetHead` parametre *TÜRÜ*tarafından belirtilen türdeki bir işaretçiye başvuru verir. Bu, işlevin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
+Listeye doğrudan veya bir işaretçisi aracılığıyla erişiliyorsa `CTypedPtrList` , `GetHead` şablon parametre *türü* tarafından belirtilen türün işaretçisine bir başvuru döndürür. Bu, işlevin atama ifadesinin her iki tarafında kullanılmasına izin verir ve bu nedenle liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aramadan `GetHead`önce listenin boş olmadığından emin olmalısınız. Liste boşsa, Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümü öne sürüler. Listenin öğeleri içerdiğini doğrulamak için [IsEmpty'ı](../../mfc/reference/coblist-class.md#isempty) kullanın.
+Çağrılmadan önce listenin boş olmadığından emin olmanız gerekir `GetHead` . Liste boşsa Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar. Listenin öğeler içerdiğini doğrulamak için [IsEmpty](../../mfc/reference/coblist-class.md#isempty) kullanın.
 
-## <a name="ctypedptrlistgetnext"></a><a name="getnext"></a>CTypedPtrList::GetNext
+## <a name="ctypedptrlistgetnext"></a><a name="getnext"></a> CTypedPtrList:: GetNext
 
-*rPosition*tarafından tanımlanan liste öğesini alır, ardından listedeki bir sonraki girişin KONUM değerine *rPosition'ı* ayarlar.
+*RPosition* tarafından tanımlanan liste öğesini alır ve ardından listedeki bir sonrakı girdinin konum değerine *rPosition* değerini ayarlar.
 
 ```
 TYPE& GetNext(POSITION& rPosition);
@@ -234,28 +235,28 @@ TYPE GetNext(POSITION& rPosition) const;
 *TÜR*<br/>
 Bu listede yer alan öğelerin türünü belirten şablon parametresi.
 
-*Rposition*<br/>
-Önceki `GetNext`, `GetHeadPosition`veya diğer üye işlev çağrısı tarafından döndürülen bir POSITION değerine yapılan başvuru.
+*rPosition*<br/>
+Önceki `GetNext` , `GetHeadPosition` veya diğer üye işlev çağrısı tarafından döndürülen bir konum değerine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listeye bir `const CTypedPtrList`işaretçi aracılığıyla erişilirse, şablon parametresi `GetNext` *TYPE*tarafından belirtilen türün işaretçisini döndürür. Bu, işlevin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve böylece listeyi değişiklikten korur.
+Listeye bir işaretçi aracılığıyla erişiliyorsa `const CTypedPtrList` , `GetNext` şablon parametre *türü* tarafından belirtilen türün bir işaretçisini döndürür. Bu, işlevin atama ifadesinin sağ tarafında kullanılmasına izin verir ve bu nedenle listenin değiştirilmesini önler.
 
-Listeye doğrudan veya bir işaretçi aracılığıyla `CTypedPtrList`erişilirse, şablon `GetNext` parametre *TÜRÜ*tarafından belirtilen türdeki bir işaretçiye başvuru verir. Bu, işlevin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
+Listeye doğrudan veya bir işaretçisi aracılığıyla erişiliyorsa `CTypedPtrList` , `GetNext` şablon parametre *türü* tarafından belirtilen türün işaretçisine bir başvuru döndürür. Bu, işlevin atama ifadesinin her iki tarafında kullanılmasına izin verir ve bu nedenle liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çağrı `GetNext` `GetHeadPosition` veya [CPtrList](../../mfc/reference/coblist-class.md#find)ile ilk konumu kurarsanız bir ileri yineleme döngüsü kullanabilirsiniz::Bul .
+`GetNext`Başlangıç konumunu bir `GetHeadPosition` veya [CPtrList:: Find](../../mfc/reference/coblist-class.md#find)çağrısıyla ayarlarsanız, bir ileri yineleme döngüsünde kullanabilirsiniz.
 
-POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Alınan öğe listenin son öğesiyse, *rPosition'un* yeni değeri NULL olarak ayarlanır.
+Alınan öğe listedeki son ise, yeni *rPosition* değeri null olarak ayarlanır.
 
-Bir yineleme sırasında bir öğeyi kaldırmak mümkündür. CObList için örneğe [bakın:RemoveAt](../../mfc/reference/coblist-class.md#removeat).
+Yineleme sırasında bir öğeyi kaldırmak mümkündür. [CObList:: RemoveAt](../../mfc/reference/coblist-class.md#removeat)örneğine bakın.
 
-## <a name="ctypedptrlistgetprev"></a><a name="getprev"></a>CTypedPtrList::GetPrev
+## <a name="ctypedptrlistgetprev"></a><a name="getprev"></a> CTypedPtrList:: Getöncekini
 
-*rPosition*tarafından tanımlanan liste öğesini alır, ardından listedeki önceki girişin KONUM değerine *rPosition'ı* ayarlar.
+*RPosition* tarafından tanımlanan liste öğesini alır ve ardından listedeki ÖNCEKI girdinin konum değerine *rPosition* değerini ayarlar.
 
 ```
 TYPE& GetPrev(POSITION& rPosition);
@@ -267,24 +268,24 @@ TYPE GetPrev(POSITION& rPosition) const;
 *TÜR*<br/>
 Bu listede yer alan öğelerin türünü belirten şablon parametresi.
 
-*Rposition*<br/>
-Önceki `GetPrev` veya diğer bir üye işlev çağrısı tarafından döndürülen POSITION değerine yapılan başvuru.
+*rPosition*<br/>
+Önceki `GetPrev` veya diğer üye işlev çağrısı tarafından döndürülen BIR konum değerine başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listeye bir `const CTypedPtrList`işaretçi aracılığıyla erişilirse, şablon parametresi `GetPrev` *TYPE*tarafından belirtilen türün işaretçisini döndürür. Bu, işlevin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve böylece listeyi değişiklikten korur.
+Listeye bir işaretçi aracılığıyla erişiliyorsa `const CTypedPtrList` , `GetPrev` şablon parametre *türü* tarafından belirtilen türün bir işaretçisini döndürür. Bu, işlevin atama ifadesinin sağ tarafında kullanılmasına izin verir ve bu nedenle listenin değiştirilmesini önler.
 
-Listeye doğrudan veya bir işaretçi aracılığıyla `CTypedPtrList`erişilirse, şablon `GetPrev` parametre *TÜRÜ*tarafından belirtilen türdeki bir işaretçiye başvuru verir. Bu, işlevin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
+Listeye doğrudan veya bir işaretçisi aracılığıyla erişiliyorsa `CTypedPtrList` , `GetPrev` şablon parametre *türü* tarafından belirtilen türün işaretçisine bir başvuru döndürür. Bu, işlevin atama ifadesinin her iki tarafında kullanılmasına izin verir ve bu nedenle liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir çağrı `GetPrev` ile ilk konumu kurarsanız ters yineleme döngüsünde `GetTailPosition` kullanabilirsiniz veya `Find`.
+`GetPrev`Bir veya çağrısı ile ilk konumu ayarlarsanız, bir ters yineleme döngüsünde kullanabilirsiniz `GetTailPosition` `Find` .
 
-POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Alınan öğe listede ilk sıradaysa, *rPosition'un* yeni değeri NULL olarak ayarlanır.
+Alınan öğe listedeki ilk ise, yeni *rPosition* değeri null olarak ayarlanır.
 
-## <a name="ctypedptrlistgettail"></a><a name="gettail"></a>CTypedPtrList::GetTail
+## <a name="ctypedptrlistgettail"></a><a name="gettail"></a> CTypedPtrList:: GetTail
 
 Bu listenin baş öğesini temsil eden işaretçiyi alır.
 
@@ -300,17 +301,17 @@ Listede depolanan öğelerin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Listeye bir `const CTypedPtrList`işaretçi aracılığıyla erişilirse, şablon parametresi `GetTail` *TYPE*tarafından belirtilen türün işaretçisini döndürür. Bu, işlevin yalnızca atama deyiminin sağ tarafında kullanılmasını sağlar ve böylece listeyi değişiklikten korur.
+Listeye bir işaretçi aracılığıyla erişiliyorsa `const CTypedPtrList` , `GetTail` şablon parametre *türü* tarafından belirtilen türün bir işaretçisini döndürür. Bu, işlevin atama ifadesinin sağ tarafında kullanılmasına izin verir ve bu nedenle listenin değiştirilmesini önler.
 
-Listeye doğrudan veya bir işaretçi aracılığıyla `CTypedPtrList`erişilirse, şablon `GetTail` parametre *TÜRÜ*tarafından belirtilen türdeki bir işaretçiye başvuru verir. Bu, işlevin atama deyiminin her iki tarafında da kullanılmasını sağlar ve böylece liste girişlerinin değiştirilmesine izin verir.
+Listeye doğrudan veya bir işaretçisi aracılığıyla erişiliyorsa `CTypedPtrList` , `GetTail` şablon parametre *türü* tarafından belirtilen türün işaretçisine bir başvuru döndürür. Bu, işlevin atama ifadesinin her iki tarafında kullanılmasına izin verir ve bu nedenle liste girişlerinin değiştirilmesine izin verir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aramadan `GetTail`önce listenin boş olmadığından emin olmalısınız. Liste boşsa, Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümü öne sürüler. Listenin öğeleri içerdiğini doğrulamak için [IsEmpty'ı](../../mfc/reference/coblist-class.md#isempty) kullanın.
+Çağrılmadan önce listenin boş olmadığından emin olmanız gerekir `GetTail` . Liste boşsa Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar. Listenin öğeler içerdiğini doğrulamak için [IsEmpty](../../mfc/reference/coblist-class.md#isempty) kullanın.
 
-## <a name="ctypedptrlistremovehead"></a><a name="removehead"></a>CTypedPtrList::RemoveHead
+## <a name="ctypedptrlistremovehead"></a><a name="removehead"></a> CTypedPtrList:: RemoveHead
 
-Öğeyi listenin başından kaldırır ve döndürür.
+Öğeyi listenin Başndan kaldırır ve döndürür.
 
 ```
 TYPE RemoveHead();
@@ -323,15 +324,15 @@ Listede depolanan öğelerin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi daha önce listenin başında. Bu işaretçi, şablon parametresi *TYPE*tarafından belirtilen türdendir.
+İşaretçi daha önce listenin başbaşında. Bu işaretçi, şablon parametre *türü* tarafından belirtilen türdür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aramadan `RemoveHead`önce listenin boş olmadığından emin olmalısınız. Liste boşsa, Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümü öne sürüler. Listenin öğeleri içerdiğini doğrulamak için [IsEmpty'ı](../../mfc/reference/coblist-class.md#isempty) kullanın.
+Çağrılmadan önce listenin boş olmadığından emin olmanız gerekir `RemoveHead` . Liste boşsa Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar. Listenin öğeler içerdiğini doğrulamak için [IsEmpty](../../mfc/reference/coblist-class.md#isempty) kullanın.
 
-## <a name="ctypedptrlistremovetail"></a><a name="removetail"></a>CTypedPtrList::RemoveTail
+## <a name="ctypedptrlistremovetail"></a><a name="removetail"></a> CTypedPtrList:: RemoveTail
 
-Öğeyi listenin kuyruğundan kaldırır ve döndürür.
+Öğeyi listenin kuyruğunu kaldırır ve döndürür.
 
 ```
 TYPE RemoveTail();
@@ -344,15 +345,15 @@ Listede depolanan öğelerin türünü belirten şablon parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi daha önce listenin kuyruğunda. Bu işaretçi, şablon parametresi *TYPE*tarafından belirtilen türdendir.
+İşaretçi daha önce listenin sonunda. Bu işaretçi, şablon parametre *türü* tarafından belirtilen türdür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aramadan `RemoveTail`önce listenin boş olmadığından emin olmalısınız. Liste boşsa, Microsoft Hazırlık Sınıfı Kitaplığı'nın Hata Ayıklama sürümü öne sürüler. Listenin öğeleri içerdiğini doğrulamak için [IsEmpty'ı](../../mfc/reference/coblist-class.md#isempty) kullanın.
+Çağrılmadan önce listenin boş olmadığından emin olmanız gerekir `RemoveTail` . Liste boşsa Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar. Listenin öğeler içerdiğini doğrulamak için [IsEmpty](../../mfc/reference/coblist-class.md#isempty) kullanın.
 
-## <a name="ctypedptrlistsetat"></a><a name="setat"></a>CTypedPtrList::SetAt
+## <a name="ctypedptrlistsetat"></a><a name="setat"></a> CTypedPtrList:: SetAt
 
-Bu üye `BASE_CLASS`işlev **::SetAt.**
+Bu üye işlevi `BASE_CLASS` **:: SetAt** çağırır.
 
 ```cpp
 void SetAt(POSITION pos, TYPE newElement);
@@ -360,26 +361,26 @@ void SetAt(POSITION pos, TYPE newElement);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pos*<br/>
-Ayarlanacak öğenin KONUMU.
+*'un*<br/>
+Ayarlanacak öğenin konumu.
 
 *TÜR*<br/>
-Taban sınıf listesinde depolanan öğelerin türü.
+Temel sınıf listesinde depolanan öğelerin türü.
 
 *newElement*<br/>
 Listeye yazılacak nesne işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür POZISYON değişkeni liste için bir anahtardır. Bu bir dizin ile aynı değildir ve bir POSITION değeri üzerinde kendiniz çalışamazsınız. `SetAt`nesne işaretçisini listede belirtilen konuma yazar.
+POSITION türünde bir değişken, listenin bir anahtarıdır. Bir dizin ile aynı değildir ve bir konum değerinde kendiniz işlem yapılamaz. `SetAt` nesne işaretçisini listede belirtilen konuma yazar.
 
-POSITION değerinizin listede geçerli bir konumu temsil ettiğinden emin olmalısınız. Geçersizse, Microsoft Foundation Class Kitaplığı'nın Hata Ayıklama sürümü öne sürüler.
+KONUM değerinin listede geçerli bir konumu temsil ettiğinden emin olmanız gerekir. Geçersiz ise, Microsoft Foundation Class Kitaplığı hata ayıklama sürümü onaylar.
 
-Daha ayrıntılı açıklamalar için [CObList::SetAt'a](../../mfc/reference/coblist-class.md#setat)bakın.
+Daha ayrıntılı açıklamalar için bkz. [CObList:: SetAt](../../mfc/reference/coblist-class.md#setat).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek TOPLAMA](../../overview/visual-cpp-samples.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CPtrList Sınıfı](../../mfc/reference/cptrlist-class.md)<br/>
-[CObList Sınıfı](../../mfc/reference/coblist-class.md)
+[MFC örnek toplama](../../overview/visual-cpp-samples.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CPtrList sınıfı](../../mfc/reference/cptrlist-class.md)<br/>
+[CObList sınıfı](../../mfc/reference/coblist-class.md)

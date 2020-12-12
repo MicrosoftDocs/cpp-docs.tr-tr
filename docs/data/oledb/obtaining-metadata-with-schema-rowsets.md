@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: şema satır kümeleriyle meta veriler alma'
 title: Şema Satır Kümeleri ile Meta Verileri Alma
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, getting provider metadata
 - metadata, getting (OLE DB Templates)
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
-ms.openlocfilehash: 37418cc91913ed840d1601aab9005b476bf29ee0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9692b27de6d949e23b3868b2c55b79b685d6b5fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317187"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>Şema Satır Kümeleri ile Meta Verileri Alma
 

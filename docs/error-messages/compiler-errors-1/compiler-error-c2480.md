@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2480'
 title: Derleyici hatası C2480
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - C2480
 ms.assetid: 1a58d1c2-971b-4084-96fa-f94aa51c02f1
-ms.openlocfilehash: 3e495a8019405a558511637467133877dae1183e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0c7f73b7e1aa205d38577602b93907309935b216
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743529"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316550"
 ---
 # <a name="compiler-error-c2480"></a>Derleyici hatası C2480
 
 ' tanımlayıcı ': ' Thread ' yalnızca statik kapsamın veri öğeleri için geçerlidir
 
-`thread` özniteliğini bir otomatik değişken, statik olmayan veri üyesi, işlev parametresi veya işlev bildirimleri veya tanımlarında kullanamazsınız.
+`thread`Özniteliği bir otomatik değişken, statik olmayan veri üyesi, işlev parametresi veya işlev bildirimleri veya tanımlarında kullanamazsınız.
 
-Genel değişkenler, statik veri üyeleri ve yalnızca yerel statik değişkenler için `thread` özniteliğini kullanın.
+`thread`Yalnızca genel değişkenler, statik veri üyeleri ve yerel statik değişkenler için özniteliğini kullanın.
 
 Aşağıdaki örnek C2480 oluşturur:
 

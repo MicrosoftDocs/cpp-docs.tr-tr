@@ -1,5 +1,6 @@
 ---
-title: CTooltipManager Sınıfı
+description: 'Daha fazla bilgi edinin: CTooltipManager sınıfı'
+title: CTooltipManager sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CTooltipManager
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - CTooltipManager [MFC], SetTooltipText
 - CTooltipManager [MFC], UpdateTooltips
 ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86
-ms.openlocfilehash: 4e721740fc100a34ea08dd7ff5f9291eea2d9b36
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0ec6d691abbceb7026fe9656c17ff899f1d07759
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752171"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318552"
 ---
-# <a name="ctooltipmanager-class"></a>CTooltipManager Sınıfı
+# <a name="ctooltipmanager-class"></a>CTooltipManager sınıfı
 
-Araç ipuçları hakkında çalışma zamanı bilgilerini saklar. Sınıf `CTooltipManager` uygulama başına bir kez anında verilir.
+Araç ipuçları hakkında çalışma zamanı bilgilerini korur. `CTooltipManager`Sınıf, uygulama başına bir kez oluşturulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CTooltipManager : public CObject
@@ -37,31 +38,31 @@ class CTooltipManager : public CObject
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CTooltipManager::CreateToolTip](#createtooltip)|Belirtilen Windows denetim türü(ler) için bir araç ipucu denetimi oluşturur.|
-|[CTooltipManager::DeleteToolTip](#deletetooltip)|Araç ipucu denetimini siler.|
-|[CTooltipManager::SetTooltipParams](#settooltipparams)|Belirtilen Windows denetim türü(ler) için araç ipucu denetiminin görsel görünümünü özelleştirir.|
-|[CTooltipManager::SetTooltipText](#settooltiptext)|Araç ipucu denetimi için metni ve açıklamayı ayarlar.|
-|[CTooltipManager::UpdateTooltips](#updatetooltips)||
+|[CTooltipManager:: CreateToolTip](#createtooltip)|Belirtilen Windows Denetim türleri için bir araç ipucu denetimi oluşturur.|
+|[CTooltipManager::D eleteToolTip](#deletetooltip)|Bir araç ipucu denetimini siler.|
+|[CTooltipManager:: SetTooltipParams](#settooltipparams)|Belirtilen Windows Denetim türleri için araç ipucu denetiminin görsel görünümünü özelleştirir.|
+|[CTooltipManager:: SetTooltipText](#settooltiptext)|Araç ipucu denetimi için metin ve açıklama ayarlar.|
+|[CTooltipManager:: UpdateToolTip 'ler](#updatetooltips)||
 
 ## <a name="remarks"></a>Açıklamalar
 
-[CMFCToolTipCtrl Class'ı](../../mfc/reference/cmfctooltipctrl-class.md) `CMFCToolTipInfo` `CTooltipManager` ve uygulamanızda özelleştirilmiş araç ipuçlarını birlikte kullanın. Bu araç ipucu sınıflarının nasıl kullanılacağına bir örnek olarak [CMFCToolTipCtrl Sınıfı](../../mfc/reference/cmfctooltipctrl-class.md) konusuna bakın.
+Uygulamanızdaki özelleştirilmiş araç ipuçlarını uygulamak için [CMFCToolTipCtrl sınıfı](../../mfc/reference/cmfctooltipctrl-class.md), `CMFCToolTipInfo` ve `CTooltipManager` birlikte kullanın. Bu araç ipucu sınıflarının nasıl kullanılacağına ilişkin bir örnek için, bkz. [CMFCToolTipCtrl Class](../../mfc/reference/cmfctooltipctrl-class.md) konusu.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ctooltipmanager](../../mfc/reference/ctooltipmanager-class.md)
+[CTooltipManager](../../mfc/reference/ctooltipmanager-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxtooltipmanager.h
+**Üstbilgi:** afxtooltipmanager. h
 
-## <a name="ctooltipmanagercreatetooltip"></a><a name="createtooltip"></a>CTooltipManager::CreateToolTip
+## <a name="ctooltipmanagercreatetooltip"></a><a name="createtooltip"></a> CTooltipManager:: CreateToolTip
 
-Bir araç ucu denetimi oluşturur.
+Araç ipucu denetimi oluşturur.
 
 ```
 static BOOL CreateToolTip(
@@ -73,43 +74,43 @@ static BOOL CreateToolTip(
 ### <a name="parameters"></a>Parametreler
 
 *pToolTip*<br/>
-[çıkış] Araç ipucu işaretçisine başvuru. İşlev döndüğünde yeni oluşturulan araç ucunu işaret etmek üzere ayarlanır.
+dışı Bir araç ipucu işaretçisine başvuru. İşlevin döndürdüğü yeni oluşturulan araç ipucunu işaret etmek üzere ayarlanır.
 
 *pWndParent*<br/>
-[içinde] Araç ucunun üst öğesi.
+'ndaki Araç ipucunun üst öğesi.
 
-*nTipi*<br/>
-[içinde] Araç ucunun türü.
+*nTür*<br/>
+'ndaki Araç ipucunun türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir araç ipucu başarıyla oluşturulduysa sıfırsız.
+Bir araç ipucu başarıyla oluşturulmuşsa sıfır dışı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-PToolTip'te geri geçirilen araç ipucu denetimini silmek için [CTooltipManager::DeleteToolTip'i](#deletetooltip) aramalısınız. *pToolTip*
+*PToolTip*'e geri geçirilen araç ipucu denetimini silmek Için [CTooltipManager::D eletetooltip](#deletetooltip) ' i çağırmanız gerekir.
 
-[CTooltipManager,](../../mfc/reference/ctooltipmanager-class.md) oluşturduğu her araç ucunun görsel ekran parametrelerini *nType'ın* belirttiği araç ucu türüne göre ayarlar. Bir veya daha fazla araç ipucu türü için parametreleri değiştirmek için [CTooltipManager'ı arayın::SetTooltipParams.](#settooltipparams)
+[CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) , *nType* tarafından belirlenen araç ipucu türüne göre oluşturduğu her araç ipucunun görsel görüntüleme parametrelerini ayarlar. Bir veya daha fazla araç ipucu türünün parametrelerini değiştirmek için [CTooltipManager:: SetTooltipParams](#settooltipparams)' ı çağırın.
 
-Geçerli araç ipucu türleri aşağıdaki tabloda listelenir:
+Geçerli araç ipucu türleri aşağıdaki tabloda listelenmiştir:
 
-|Araç ucu türü|Kontrol kategorisi|Örnek türleri|
+|Araç ipucu türü|Denetim kategorisi|Örnek türler|
 |------------------|----------------------|-------------------|
-|AFX_TOOLTIP_TYPE_BUTTON|Bir düğme.|CMFCDüğmesi|
-|AFX_TOOLTIP_TYPE_CAPTIONBAR|Resim yazısı çubuğu.|CMFCCaptionBar|
+|AFX_TOOLTIP_TYPE_BUTTON|Düğme.|CMFCButton|
+|AFX_TOOLTIP_TYPE_CAPTIONBAR|Başlık çubuğu.|CMFCCaptionBar|
 |AFX_TOOLTIP_TYPE_DEFAULT|Başka bir kategoriye uymayan herhangi bir denetim.|Yok.|
-|AFX_TOOLTIP_TYPE_DOCKBAR|Sabitlenebilir bir bölme.|Cdockablepane|
-|AFX_TOOLTIP_TYPE_EDIT|Bir metin kutusu.|Yok.|
-|AFX_TOOLTIP_TYPE_MINIFRAME|Bir mini çerçeve.|Cpaneframewnd|
-|AFX_TOOLTIP_TYPE_PLANNER|Bir planlayıcı.|Yok.|
-|AFX_TOOLTIP_TYPE_RIBBON|Kurdele çubuğu.|CMFCRibbonBar, CMFCRibbonPanelMenuBar|
-|AFX_TOOLTIP_TYPE_TAB|Bir sekme denetimi.|CMFCTabCtrl|
-|AFX_TOOLTIP_TYPE_TOOLBAR|Araç çubuğu.|CMFCToolBar, CMFCPopupMenuBar|
-|AFX_TOOLTIP_TYPE_TOOLBOX|Bir alet çantası.|Yok.|
+|AFX_TOOLTIP_TYPE_DOCKBAR|Bir yerleştirilebilir bölmesi.|CDockablePane|
+|AFX_TOOLTIP_TYPE_EDIT|Metin kutusu.|Yok.|
+|AFX_TOOLTIP_TYPE_MINIFRAME|Mini iframe.|Cbölmesi Framewnd|
+|AFX_TOOLTIP_TYPE_PLANNER|Bir Planner.|Yok.|
+|AFX_TOOLTIP_TYPE_RIBBON|Şerit çubuğu.|CMFCRibbonBar, CMFCRibbonPanelMenuBar|
+|AFX_TOOLTIP_TYPE_TAB|Sekme denetimi.|CMFCTabCtrl|
+|AFX_TOOLTIP_TYPE_TOOLBAR|Bir araç çubuğu.|CMFCToolBar, CMFCPopupMenuBar|
+|AFX_TOOLTIP_TYPE_TOOLBOX|Bir araç kutusu.|Yok.|
 
-## <a name="ctooltipmanagerdeletetooltip"></a><a name="deletetooltip"></a>CTooltipManager::DeleteToolTip
+## <a name="ctooltipmanagerdeletetooltip"></a><a name="deletetooltip"></a> CTooltipManager::D eleteToolTip
 
-Araç ipucu denetimini siler.
+Bir araç ipucu denetimini siler.
 
 ```
 static void DeleteToolTip(CToolTipCtrl*& pToolTip);
@@ -118,15 +119,15 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 ### <a name="parameters"></a>Parametreler
 
 *pToolTip*<br/>
-[içinde, dışarı] Yok edilecek bir araç ucu için işaretçiye başvuru.
+[in, out] Bir araç ipucunun yok edileceği işaretçiye yönelik bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CToolTipManager tarafından oluşturulan her [CToolTipCtrl Sınıfı](../../mfc/reference/ctooltipctrl-class.md) için bu yöntemi [arayın::CreateToolTip](#createtooltip). Üst denetim `OnDestroy` işleyicisi bu yöntemi aramalıdır. Bu, araç ucunu çerçeveden doğru bir şekilde kaldırmak için gereklidir. Bu yöntem, *pToolTip'i* dönmeden önce NULL olarak ayarlar.
+[CTooltipManager:: CreateToolTip](#createtooltip)tarafından oluşturulan her [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md) için bu yöntemi çağırın. Üst denetim işleyiciden bu yöntemi çağırmalıdır `OnDestroy` . Araç ipucunu çerçeveden doğru bir şekilde kaldırmak için bu gereklidir. Bu yöntem, *pToolTip* 'i döndürülmadan önce null olarak ayarlar.
 
-## <a name="ctooltipmanagersettooltipparams"></a><a name="settooltipparams"></a>CTooltipManager::SetTooltipParams
+## <a name="ctooltipmanagersettooltipparams"></a><a name="settooltipparams"></a> CTooltipManager:: SetTooltipParams
 
-Belirtilen Windows denetim türleri için araç ipucu denetiminin görünümünü özelleştirir.
+Belirtilen Windows Denetim türleri için araç ipucu denetiminin görünümünü özelleştirir.
 
 ```cpp
 void SetTooltipParams(
@@ -137,32 +138,32 @@ void SetTooltipParams(
 
 ### <a name="parameters"></a>Parametreler
 
-*nTypes*<br/>
-[içinde] Denetim türlerini belirtir.
+*Ntürler*<br/>
+'ndaki Denetim türlerini belirtir.
 
 *pRTC*<br/>
-[içinde] Özel araç ucunun çalışma zamanı sınıfı.
+'ndaki Özel araç ipucunun çalışma zamanı sınıfı.
 
 *pParams*<br/>
-[içinde] Araç ipucu parametreleri.
+'ndaki Araç ipucu parametreleri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [CToolTipManager'ın](../../mfc/reference/ctooltipmanager-class.md) araç ipuçları oluştururken kullandığı çalışma zamanı sınıfını ve ilk parametreleri ayarlar. Bir denetim [CTooltipManager::CreateToolTip'i](#createtooltip) aradığında ve *nTypes*tarafından belirtilen türlerden biri olan bir araç ucu türünden geçtiğinde, araç ucu yöneticisi *pRTC* tarafından belirtilen çalışma zamanı sınıfının bir örneği olan bir araç ipucu denetimi oluşturur ve *pParam'lar* tarafından belirtilen parametreleri yeni araç ucuna geçirir.
+Bu yöntem, çalışma zamanı sınıfını ve [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) 'ın araç ipuçları oluşturduğunda kullandığı başlangıç parametrelerini ayarlar. Bir denetim [CTooltipManager:: CreateToolTip](#createtooltip) çağırdığında ve *nTypes* tarafından belirtilen türlerden biri olan bir araç ipucu türünde geçtiğinde, ToolTip Manager, *pRTC* tarafından belirtilen çalışma zamanı sınıfının bir örneği olan bir araç ipucu denetimi oluşturur ve *pParams* tarafından belirtilen parametreleri yeni araç ipucuna geçirir.
 
-Bu yöntemi aradiğinizde, varolan tüm araç ucu sahipleri AFX_WM_UPDATETOOLTIPS iletisini alır ve [CTooltipManager::CreateToolTip](#createtooltip)kullanarak araç uçlarını yeniden oluşturmaları gerekir.
+Bu yöntemi çağırdığınızda, mevcut tüm araç ipucu sahipleri AFX_WM_UPDATETOOLTIPS iletisini alır ve [CTooltipManager:: CreateToolTip](#createtooltip)kullanarak araç ipuçlarını yeniden oluşturmaları gerekir.
 
-*nTypes,* [CTooltipManager::CreateToolTip'in](#createtooltip) kullandığı geçerli araç ipucu türlerinin herhangi bir birleşimi olabilir veya AFX_TOOLTIP_TYPE_ALL edilebilir. AFX_TOOLTIP_TYPE_ALL geçerseniz, tüm araç ucu türleri etkilenir.
+*nTypes* , [CTooltipManager:: CreateToolTip](#createtooltip) 'in kullandığı geçerli araç ipucu türlerinin herhangi bir birleşimi olabilir veya AFX_TOOLTIP_TYPE_ALL olabilir. AFX_TOOLTIP_TYPE_ALL geçirirseniz, tüm araç ipucu türleri etkilenir.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfın yönteminin `SetTooltipParams` nasıl `CTooltipManager` kullanılacağını göstermektedir. Bu kod snippet [Çekme İstemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfının yönteminin nasıl kullanılacağını gösterir `SetTooltipParams` `CTooltipManager` . Bu kod parçacığı, [Çizim istemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_DrawClient#11](../../mfc/reference/codesnippet/cpp/ctooltipmanager-class_1.cpp)]
 
-## <a name="ctooltipmanagersettooltiptext"></a><a name="settooltiptext"></a>CTooltipManager::SetTooltipText
+## <a name="ctooltipmanagersettooltiptext"></a><a name="settooltiptext"></a> CTooltipManager:: SetTooltipText
 
-Bir araç ipucu için metni ve açıklamayı ayarlar.
+Araç ipucu için metin ve açıklama ayarlar.
 
 ```
 static void SetTooltipText(
@@ -175,28 +176,28 @@ static void SetTooltipText(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ptı*<br/>
-[içinde] TOOLINFO nesnesine işaretçi.
+*PTI*<br/>
+'ndaki TOOLıNFO nesnesine yönelik bir işaretçi.
 
 *pToolTip*<br/>
-[içinde, dışarı] Metni ve açıklamayı ayarlamak için araç ipucu denetimine işaretçi.
+[in, out] Metin ve açıklama ayarlanacak araç ipucu denetimine yönelik bir işaretçi.
 
-*nTipi*<br/>
-[içinde] Bu araç ucunun ilişkili olduğu denetim türünü belirtir.
+*nTür*<br/>
+'ndaki Bu ToolTip 'in ilişkilendirildiği denetimin türünü belirtir.
 
 *strText*<br/>
-[içinde] Araç ipucu metni olarak ayarlanan metin.
+'ndaki Araç ipucu metni olarak ayarlanacak metin.
 
 *lpszDescr*<br/>
-[içinde] Araç ipucu açıklamasıiçin bir işaretçi. NULL olabilir.
+'ndaki Araç ipucu açıklamasına yönelik bir işaretçi. NULL olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nType* değeri, araç ipucunu oluştururken [CTooltipManager::CreateToolTip'in](#createtooltip) *nType* parametresi ile aynı değerde olmalıdır.
+Araç ipucunu oluştururken *nType* değeri [CTooltipManager:: CreateToolTip](#createtooltip) parametresinin *nType* parametresiyle aynı değer olmalıdır.
 
-## <a name="ctooltipmanagerupdatetooltips"></a><a name="updatetooltips"></a>CTooltipManager::UpdateTooltips
+## <a name="ctooltipmanagerupdatetooltips"></a><a name="updatetooltips"></a> CTooltipManager:: UpdateToolTip 'ler
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
 ```cpp
 void UpdateTooltips();
@@ -206,7 +207,7 @@ void UpdateTooltips();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCToolTipCtrl Sınıfı](../../mfc/reference/cmfctooltipctrl-class.md)<br/>
-[CMFCToolTipInfo Sınıfı](../../mfc/reference/cmfctooltipinfo-class.md)
+[CMFCToolTipCtrl sınıfı](../../mfc/reference/cmfctooltipctrl-class.md)<br/>
+[CMFCToolTipInfo sınıfı](../../mfc/reference/cmfctooltipinfo-class.md)

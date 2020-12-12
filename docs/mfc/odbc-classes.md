@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: ODBC sınıfları'
 title: ODBC Sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - database classes [MFC], ODBC
 - ODBC classes [MFC]
 ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
-ms.openlocfilehash: 18b6e3a0ea20dbd352a61c4faab52c35b852dcb3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ac03543a6dfd9cf85320f9ff051730c102f2e0bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622191"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318695"
 ---
 # <a name="odbc-classes"></a>ODBC Sınıfları
 
@@ -36,10 +37,10 @@ Veri erişim işlemesinde hatalardan kaynaklanan bir özel durum. Bu sınıf, s�
 ## <a name="related-classes"></a>İlgili sınıflar
 
 [CLongBinary](reference/clongbinary-class.md)<br/>
-Bir bit eşlem gibi ikili büyük nesne (BLOB) için bir tanıtıcıyı saklar. `CLongBinary`nesneler, veritabanı tablolarında depolanan büyük veri nesnelerini yönetmek için kullanılır.
+Bir bit eşlem gibi ikili büyük nesne (BLOB) için bir tanıtıcıyı saklar. `CLongBinary` nesneler, veritabanı tablolarında depolanan büyük veri nesnelerini yönetmek için kullanılır.
 
 [CDBVariant](reference/cdbvariant-class.md)<br/>
-Değerin veri türü hakkında endişelenmeden bir değer depolamanıza olanak sağlar. `CDBVariant`bir birleşimde depolanan geçerli değerin veri türünü izler.
+Değerin veri türü hakkında endişelenmeden bir değer depolamanıza olanak sağlar. `CDBVariant` bir birleşimde depolanan geçerli değerin veri türünü izler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

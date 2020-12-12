@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2154'
 title: Derleyici hatası C2154
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2154
 ms.assetid: 98d6b044-5a3a-43ad-95fa-9b916b22468a
-ms.openlocfilehash: 1404f8f2e7f9ab00146b39adf1cd3d375fbde9b3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e9992e69755edc13728de8c13ab6f1faeb1d755b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316564"
 ---
 # <a name="compiler-error-c2154"></a>Derleyici hatası C2154
 

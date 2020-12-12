@@ -1,5 +1,6 @@
 ---
-title: Csocketfile Sınıfı
+description: 'Daha fazla bilgi edinin: CSocketFile sınıfı'
+title: CSocketFile sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSocketFile
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CSocketFile [MFC], CSocketFile
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
-ms.openlocfilehash: 83810a05925e5c8302240b61d95c131fdd78b426
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4ca484545e11502a11acf5f27b00ee2df49fc9d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318656"
 ---
-# <a name="csocketfile-class"></a>Csocketfile Sınıfı
+# <a name="csocketfile-class"></a>CSocketFile sınıfı
 
-Windows `CFile` Soketleri üzerinden ağ üzerinden veri göndermek ve almak için kullanılan bir nesne.
+`CFile`Windows Yuvaları aracılığıyla bir ağ üzerinden veri göndermek ve almak için kullanılan bir nesne.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CSocketFile : public CFile
@@ -29,44 +30,44 @@ class CSocketFile : public CFile
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSocketFile::CSocketFile](#csocketfile)|Bir `CSocketFile` nesne inşa eder.|
+|[CSocketFile:: CSocketFile](#csocketfile)|Bir `CSocketFile` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu amaçla `CSocketFile` nesneyi `CSocket` bir nesneye ekleyebilirsiniz. Ayrıca, MFC serileştirme kullanarak `CSocketFile` veri `CArchive` gönderme ve alma basitleştirmek için nesneyi bir nesneye ekleyebilirsiniz ve genellikle yapabilirsiniz.
+`CSocketFile` `CSocket` Bu amaçla nesnesini nesnesine ekleyebilirsiniz. Ayrıca, `CSocketFile` `CArchive` MFC serileştirme kullanarak veri göndermeyi ve almayı basitleştirmek için nesnesini bir nesnesine ekleyebilirsiniz.
 
-Verileri serihale getirmek (göndermek) için, üye işlevleri `CSocketFile` `CSocket` nesneye veri yazmaya çağıran arşive eklersiniz. Verileri deserialize etmek (almak) için arşivden ayıklarsınız. Bu, arşivin `CSocketFile` nesneden verileri okumak `CSocket` için üye işlevleri çağırmasına neden olur.
+Verileri seri hale getirmek (göndermek) için, `CSocketFile` nesnesine veri yazmak için üye işlevleri çağıran arşive eklersiniz `CSocket` . Veri serisini kaldırmak (almak) için arşivden ayıklayın. Bu, arşivin `CSocketFile` nesneden veri okumak için üye işlevleri çağırmasını sağlar `CSocket` .
 
 > [!TIP]
-> Burada `CSocketFile` açıklandığı gibi kullanmanın yanı sıra, taban sınıfı ile `CFile`olduğu gibi, tek başına bir dosya nesnesi olarak kullanabilirsiniz. Arşiv tabanlı `CSocketFile` MFC serileştirme işlevlerini de kullanabilirsiniz. 'ın tüm işlevlerini `CSocketFile` desteklemediği için, bazı varsayılan MFC serileştirme işlevleri ile `CSocketFile`uyumlu değildir. `CFile` Bu özellikle `CEditView` sınıf için geçerlidir. Kullanarak `CEditView` bir `CArchive` `CSocketFile` nesneye bağlı bir nesne aracılığıyla verileri `CEditView::SerializeRaw`serihale getirmeye çalışmamalısınız; bunun `CEditView::Serialize` yerine kullanın. İşlev, `SerializeRaw` dosya nesnesinin , `Seek`sahip `CSocketFile` olmayan işlevlere sahip olmasını bekler.
+> Burada açıklandığı gibi kullanmanın yanı sıra, `CSocketFile` bunu tek başına bir dosya nesnesi olarak kullanabilirsiniz; örneğin `CFile` , temel sınıfı. Ayrıca, `CSocketFile` Arşiv tabanlı herhangi BIR MFC serileştirme işlevleriyle de kullanabilirsiniz. `CSocketFile`Tüm `CFile` işlevlerini desteklemediğinden, bazı varsayılan MFC serileştirme işlevleri ile uyumlu değildir `CSocketFile` . Bu, sınıfının özellikle de doğrudur `CEditView` . `CEditView`Kullanarak bir nesneye eklenen bir nesne aracılığıyla veri serileştirmenize çalışmayın `CArchive` `CSocketFile` `CEditView::SerializeRaw` ; `CEditView::Serialize` bunun yerine kullanın. `SerializeRaw`İşlevi dosya nesnesinin, gibi işlevleri olmasını bekler `Seek` `CSocketFile` .
 
-`CArchive` Kullandığınızda `CSocketFile` ve `CSocket`, istenilen bayt `CSocket::Receive` miktarını bekleyen bir `PumpMessages(FD_READ)`döngü (by) girer bir durumla karşılaşabilirsiniz. Bunun nedeni, `CSocketFile` Windows soketlerinin FD_READ bildirimi başına yalnızca `CSocket` bir recv araması ve FD_READ başına birden çok recv araması izni sağlamasıdır. Okunacak veri olmadığında FD_READ alırsanız, uygulama askıda kalır. Başka bir FD_READ alamazsanız, uygulama soket üzerinden iletişimi durdurur.
+`CArchive`Ve ile kullandığınızda `CSocketFile` `CSocket` , `CSocket::Receive` `PumpMessages(FD_READ)` istenen bayt miktarını bekleyen bir döngüye (by) giren bir durumla karşılaşabilirsiniz. Bunun nedeni, Windows Yuvaları FD_READ bildirimi başına yalnızca bir alma çağrısına izin ver, `CSocketFile` ancak `CSocket` fd_read başına birden çok alınan çağrıya izin verir. Okunacak veri olmadığında bir FD_READ alırsanız uygulama askıda kalır. Daha önce başka bir FD_READ alamazsanız, uygulama yuva üzerinden iletişim kurmasını durduruyor.
 
-Bu sorunu aşağıdaki gibi çözebilirsiniz. Soket `OnReceive` sınıfının yönteminde, `CAsyncSocket::IOCtl(FIONREAD, ...)` soketten `Serialize` okunması beklenen veriler bir TCP paketinin boyutunu aştığında (genellikle en az 1096 bayt olan ağ ortamının maksimum iletim birimi) ileti sınıfının yöntemini aramadan önce arayın. Kullanılabilir verilerin boyutu gerekenden daha azsa, tüm verilerin alınmasını bekleyin ve ancak o zaman okuma işlemini başlatın.
+Bu sorunu aşağıdaki şekilde çözebilirsiniz. `OnReceive`Yuva sınıfınızın yönteminde, `CAsyncSocket::IOCtl(FIONREAD, ...)` `Serialize` yuvadan okunan beklenen veriler bir TCP paketinin boyutunu (genellikle en az 1096 bayt) aştığında, size ileti sınıfınızın yöntemini çağırmadan önce çağırın. Kullanılabilir verilerin boyutu gerekenden küçükse, tüm verilerin alınmasını bekleyin ve sonra okuma işlemini başlatın.
 
-Aşağıdaki örnekte, `m_dwExpected` kullanıcının almayı beklediği yaklaşık bayt sayısıdır. Kodunuzun başka bir yerinde beyan ettiğiniz varsayılır.
+Aşağıdaki örnekte, `m_dwExpected` kullanıcının almayı beklediği yaklaşık bayt sayısıdır. Kodunuzun başka bir yerinde bildirdiğiniz varsayılır.
 
 [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/cpp/csocketfile-class_1.cpp)]
 
-Daha fazla bilgi için, [MFC'deki Windows Soketleri,](../../mfc/windows-sockets-in-mfc.md) [Windows Soketleri: Arşivli Soketleri kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md)nın yanı sıra [Windows Soketleri 2 API'ye](/windows/win32/WinSock/windows-sockets-start-page-2)bakın.
+Daha fazla bilgi için bkz. [MFC 'de Windows Yuvaları](../../mfc/windows-sockets-in-mfc.md), [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md)ve [Windows Sockets 2 API](/windows/win32/WinSock/windows-sockets-start-page-2).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cfile](../../mfc/reference/cfile-class.md)
+[CFile](../../mfc/reference/cfile-class.md)
 
 `CSocketFile`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxsock.h
+**Üstbilgi:** afxsock. h
 
-## <a name="csocketfilecsocketfile"></a><a name="csocketfile"></a>CSocketFile::CSocketFile
+## <a name="csocketfilecsocketfile"></a><a name="csocketfile"></a> CSocketFile:: CSocketFile
 
-Bir `CSocketFile` nesne inşa eder.
+Bir `CSocketFile` nesnesi oluşturur.
 
 ```
 explicit CSocketFile(
@@ -76,28 +77,28 @@ explicit CSocketFile(
 
 ### <a name="parameters"></a>Parametreler
 
-*pSoket*<br/>
-`CSocketFile` Nesneye takacak soket.
+*pSocket*<br/>
+Nesneye iliştirilecek yuva `CSocketFile` .
 
-*bArchiveUyumlu*<br/>
-Dosya nesnesinin bir `CArchive` nesneyle kullanılmak üzere olup olmadığını belirtir. Yalnızca nesneyi `CSocketFile` tek başına kullanmak istiyorsanız, belirli sınırlamalarla tek başına `CFile` bir nesne gibi FALSE'u geçirin. Bu bayrak, `CArchive` `CSocketFile` nesneye bağlı nesnenin okuma arabelleği nasıl yönetir değiştirir.
+*bArchiveCompatible*<br/>
+Dosya nesnesinin bir nesneyle kullanılıp kullanılmayacağını belirtir `CArchive` . Yalnızca tek başına bir nesne gibi tek başına bir `CSocketFile` nesne olarak kullanmak istediğiniz gibi `CFile` , belirli sınırlamalara sahip bir nesneyi kullanmak istiyorsanız yanlış geçirin. Bu bayrak, nesnesine `CArchive` eklenen nesnenin, `CSocketFile` okuma için arabelleğini yönetme şeklini değiştirir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne kapsam dışına çıktığında veya silindiğinde nesnenin yıkıcısı kendisini soket nesnesinden ayırıyor.
+Nesne kapsam dışına geçtiğinde veya silindiğinde, nesnenin yıkıcısı kendisini yuva nesnesinden ilişkilendirir.
 
 > [!NOTE]
-> A, `CSocketFile` `CArchive` nesne olmadan (sınırlı) bir dosya olarak da kullanılabilir. Varsayılan olarak, `CSocketFile` oluşturucubArchiveCompatible parametresi TRUE'dur. *bArchiveCompatible* Bu, dosya nesnesinin bir arşivle kullanılmak üzere olduğunu belirtir. Arşiv olmadan dosya nesnesini kullanmak için *bArchiveCompatible* parametresinde FALSE'u geçirin.
+> Bir `CSocketFile` nesnesi olmayan (sınırlı) dosya olarak da kullanılabilir `CArchive` . Varsayılan olarak, `CSocketFile` oluşturucunun *bArchiveCompatible* parametresi true 'dur. Bu, dosya nesnesinin bir arşiv ile kullanılmak üzere olduğunu belirtir. Dosya nesnesini arşiv olmadan kullanmak için, *bArchiveCompatible* parametresine yanlış geçirin.
 
-"Arşiv uyumlu" modunda, `CSocketFile` bir nesne daha iyi performans sağlar ve bir "kilitlenme" tehlikesini azaltır. Hem gönderme hem de alma soketleri birbirini beklerken veya ortak bir kaynak için kilitlenme oluşur. `CArchive` Nesne bir `CSocketFile` `CFile` nesneyle çalıştığı gibi çalışıyorsa, bu durum oluşabilir. `CFile`Bununla birlikte, arşiv, istediği bayttan daha az bayt alırsa, dosyanın sonuna ulaşıldığını varsayabilir.
+"Arşiv uyumlu" modunda bir `CSocketFile` nesne daha iyi performans sağlar ve bir "kilitlenme" düzeyini azaltır. Hem gönderme hem de alma yuvaları birbirini beklerken veya ortak bir kaynak için bir kilitlenme oluşur. Bu durum, `CArchive` nesne bir nesneyle aynı şekilde çalıştığında meydana gelebilir `CSocketFile` `CFile` . İle `CFile` Arşiv, istenenden daha az bayt alırsa, dosyanın sonuna ulaşıldığını varsayabilir.
 
-Bununla `CSocketFile`birlikte, veri ileti tabanlıdır; arabellek birden çok ileti içerebilir, bu nedenle istenen bayt sayısından daha az almak dosyasonu anlamına gelmez. Uygulama bu durumda olduğu gibi `CFile`engellemez ve arabellek boş alana kadar arabellekten gelen iletileri okumaya devam edebilir. [CArchive::IsBufferBoş](../../mfc/reference/carchive-class.md#isbufferempty) işlevi böyle bir durumda arşiv arabelleği durumunu izlemek için yararlıdır.
+`CSocketFile`Ancak, veriler ileti tabanlıdır; arabellekte birden çok ileti bulunabilir, bu nedenle istenen bayt sayısından daha az sayıda alma işlemi dosya sonunu göstermez. Uygulama, bu durumda olabileceği gibi engellemez `CFile` ve arabellek boşalıncaya kadar arabellekteki iletileri okumaya devam edebilir. [CArchive:: IsBufferEmpty](../../mfc/reference/carchive-class.md#isbufferempty) işlevi, bu tür bir durumda arşiv arabelleğinin durumunu izlemek için yararlıdır.
 
-Kullanımı hakkında daha fazla `CSocketFile`bilgi için, makalelerWindows Soketleri bakınız: Arşiv ve Windows Soketleri [ile Soketler kullanma:](../../mfc/windows-sockets-using-sockets-with-archives.md) [Arşiv kullanarak Soketler Örneği](../../mfc/windows-sockets-example-of-sockets-using-archives.md).
+Kullanımı hakkında daha fazla bilgi için `CSocketFile` , bkz. [Windows Yuvaları: arşivleri](../../mfc/windows-sockets-using-sockets-with-archives.md) ve Windows yuvaları ile yuvaları kullanma [: arşivleri kullanarak yuvalar örneği](../../mfc/windows-sockets-example-of-sockets-using-archives.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CFile Sınıfı](../../mfc/reference/cfile-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CAsyncSocket Sınıfı](../../mfc/reference/casyncsocket-class.md)<br/>
-[CSocket Sınıfı](../../mfc/reference/csocket-class.md)
+[CFile sınıfı](../../mfc/reference/cfile-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CAsyncSocket sınıfı](../../mfc/reference/casyncsocket-class.md)<br/>
+[CSocket sınıfı](../../mfc/reference/csocket-class.md)

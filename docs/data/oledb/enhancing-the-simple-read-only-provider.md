@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: basit Read-Only sağlayıcıyı geliştirme'
 title: Basit Salt Okunur Sağlayıcıyı Geliştirme
 ms.date: 10/26/2018
 helpviewer_keywords:
@@ -7,25 +8,25 @@ helpviewer_keywords:
 - IRowsetLocate class, adding to OLE DB template providers
 - simple read-only poviders [C++]
 ms.assetid: cba0e09f-44c1-41c1-9456-332aa13dc158
-ms.openlocfilehash: d61f24a9a9abffe836a7f11bd5d1517fddf97fe7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 00a0ea4fb9b759447026353ba0d78c7c856b15ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62175361"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317649"
 ---
 # <a name="enhancing-the-simple-read-only-provider"></a>Basit Salt Okunur Sağlayıcıyı Geliştirme
 
-Bu bölüm nasıl geliştirileceğini gösterir [basit salt okunur sağlayıcıyı](../../data/oledb/implementing-the-simple-read-only-provider.md) önceki bölümde oluşturduğunuz. `IRowsetLocateImpl` için bir uygulama oluşturur `IRowsetLocate` arabirim ve sizin için yer işareti desteği ekler.
+Bu bölümde, önceki bölümde oluşturulan [basit salt okunurdur sağlayıcıyı](../../data/oledb/implementing-the-simple-read-only-provider.md) geliştirme gösterilmektedir. `IRowsetLocateImpl` arabirim için bir uygulama oluşturur `IRowsetLocate` ve sizin için yer işareti desteği ekler.
 
-Çalışma sağlayıcısı olduğunda olmak sağlayıcısı güncelleştirme işlemi işleyeceği veya satır getirme algoritmasının performansını artırmak için artırmak isteyebilirsiniz. Var olan bir COM nesnesine bir arabirim ekleme çoğu sağlayıcı geliştirmeleri içerir.
+Çalışan bir sağlayıcı varsa, sağlayıcıyı güncelleştirmek, işlemleri işlemek veya satır getirme algoritmasının performansını geliştirmek için onu geliştirmek isteyebilirsiniz. Birçok sağlayıcı geliştirmesi, var olan bir COM nesnesine arabirim eklemeyi içerir.
 
-Aşağıdaki konularda örnek ekleyerek satır getirme mekanizması geliştirir `IRowsetLocate` arabirimini `CAgentRowset`. Konular şunları nasıl yapacağınız için:
+Aşağıdaki konulardaki örnek, arabirimini öğesine ekleyerek satır getirme mekanizmasını geliştirir `IRowsetLocate` `CAgentRowset` . Konular şunları gösterir:
 
-- [IRowsetLocate devralır RCustomRowset olun](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md).
+- [RCustomRowset 'In IRowsetLocate 'ten devralmasını sağlayın](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md).
 
-- [Tüketiciye döndürülecek olan sütunları dinamik olarak belirleyen](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
+- [Tüketiciye döndürülen sütunları dinamik olarak belirleme](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Basit Bir Salt Okunur Sağlayıcı Oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
+[Basit bir Read-Only sağlayıcısı oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>

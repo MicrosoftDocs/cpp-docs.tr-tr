@@ -1,5 +1,6 @@
 ---
-title: CAnimationBaseObject Sınıfı
+description: 'Daha fazla bilgi edinin: CAnimationBaseObject sınıfı'
+title: CAnimationBaseObject sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CAnimationBaseObject
@@ -50,18 +51,18 @@ helpviewer_keywords:
 - CAnimationBaseObject [MFC], m_nObjectID
 - CAnimationBaseObject [MFC], m_pParentController
 ms.assetid: 76b25917-940e-4eba-940f-31d270702603
-ms.openlocfilehash: 1874ddfdd26b8dd371e32f7e68ea8f668c47d8e1
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: bc44d0e55b409f66648007eeb27fefd386640d9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750214"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318669"
 ---
-# <a name="canimationbaseobject-class"></a>CAnimationBaseObject Sınıfı
+# <a name="canimationbaseobject-class"></a>CAnimationBaseObject sınıfı
 
-Tüm animasyon nesneleri için taban sınıf.
+Tüm animasyon nesneleri için temel sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CAnimationBaseObject : public CObject;
@@ -71,72 +72,72 @@ class CAnimationBaseObject : public CObject;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationBaseObject::CAnimationBaseObject](#canimationbaseobject)|Fazla Yüklendi. Bir animasyon nesnesi oluşturuyor.|
-|[CAnimationBaseObject::~CAnimationBaseObject](#_dtorcanimationbaseobject)|Yıkıcı. Animasyon nesnesi yok edilirken çağrılır.|
+|[CAnimationBaseObject:: CAnimationBaseObject](#canimationbaseobject)|Fazla Yüklendi. Bir animasyon nesnesi oluşturur.|
+|[CAnimationBaseObject:: ~ CAnimationBaseObject](#_dtorcanimationbaseobject)|Yok edicisi. Bir animasyon nesnesi yok edildiğinde çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationBaseObject::Geçişuygula](#applytransitions)|Kapsüllü animasyon değişkeni ile film şeridine geçişler ekler.|
-|[CAnimationBaseObject::ClearTransitions](#cleartransitions)|İlgili tüm geçişleri kaldırır.|
-|[CAnimationBaseObject::ContainsVariable](#containsvariable)|Animasyon nesnesi belirli bir animasyon değişkeni bulunup bulunmayacağını belirler.|
-|[CAnimationBaseObject::CreateTransitions](#createtransitions)|Animasyon nesnesi ile ilişkili geçişler oluşturur.|
-|[CAnimationBaseObject::DetachFromController](#detachfromcontroller)|Animasyon nesnesi üst animasyon denetleyicisinden ayrılır.|
-|[CAnimationBaseObject::EnableIntegerValueChangedEvent](#enableintegervaluechangedevent)|Integer Value Changed olay işleyicisi ayarlar.|
-|[CAnimationBaseObject::EnableValueChangedEvent](#enablevaluechangedevent)|Değer Değiştirilen olay işleyicisi ayarlar.|
-|[CAnimationBaseObject::GetAutodestroyTransitions](#getautodestroytransitions)|İlgili geçişin otomatik olarak yok edilip edilemeyeceğini söyler.|
-|[CAnimationBaseObject::GetGroupID](#getgroupid)|Geçerli Grup Kimliğini döndürür.|
-|[CAnimationBaseObject::GetObjectID](#getobjectid)|Geçerli Nesne Kimliğini döndürür.|
-|[CAnimationBaseObject::GetUserData](#getuserdata)|Kullanıcı tanımlı verileri döndürür.|
-|[CAnimationBaseObject::SetAutodestroyGeçişler](#setautodestroytransitions)|Geçişleri otomatik olarak yok etmek için bir bayrak ayarlar.|
-|[CAnimationBaseObject::SetID](#setid)|Yeni tbm'ler ayarlar.|
-|[CAnimationBaseObject::SetUserData](#setuserdata)|Kullanıcı tanımlı verileri ayarlar.|
+|[CAnimationBaseObject:: Applygeçişleri](#applytransitions)|Encapsulated animasyon değişkeniyle görsel taslağa geçişler ekler.|
+|[CAnimationBaseObject:: Cleargeçişler](#cleartransitions)|Tüm ilgili geçişleri kaldırır.|
+|[CAnimationBaseObject:: ContainsVariable](#containsvariable)|Bir animasyon nesnesinin belirli bir animasyon değişkeni içerip içermediğini belirler.|
+|[CAnimationBaseObject:: Creategeçişler](#createtransitions)|Bir animasyon nesnesiyle ilişkili geçişleri oluşturur.|
+|[CAnimationBaseObject::D etachFromController](#detachfromcontroller)|Bir animasyon nesnesini üst animasyon denetleyicisinden ayırır.|
+|[CAnimationBaseObject:: EnableIntegerValueChangedEvent](#enableintegervaluechangedevent)|Tamsayı değeri değişti olay işleyicisini ayarlar.|
+|[CAnimationBaseObject:: EnableValueChangedEvent](#enablevaluechangedevent)|Değer değişti olay işleyicisini ayarlar.|
+|[CAnimationBaseObject:: Getautodestroygeçişler](#getautodestroytransitions)|İlgili geçişin otomatik olarak yok edildiğini söyler.|
+|[CAnimationBaseObject:: Getgroupıd](#getgroupid)|Geçerli grup KIMLIĞINI döndürür.|
+|[CAnimationBaseObject:: Getobjectıd](#getobjectid)|Geçerli nesne KIMLIĞINI döndürür.|
+|[CAnimationBaseObject:: GetUserData](#getuserdata)|Kullanıcı tanımlı verileri döndürür.|
+|[CAnimationBaseObject:: Setautodestroygeçişler](#setautodestroytransitions)|Geçişleri otomatik olarak yok etmek için bir bayrak ayarlar.|
+|[CAnimationBaseObject:: SetID](#setid)|Yeni kimlikleri ayarlar.|
+|[CAnimationBaseObject:: SetUserData](#setuserdata)|Kullanıcı tanımlı verileri ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationBaseObject::GetAnimationVariableList](#getanimationvariablelist)|İçerdiği animasyon değişkenleri için işaretçiler toplar.|
-|[CAnimationBaseObject::SetParentAnimationObjects](#setparentanimationobjects)|Animasyon nesnesinde bulunan animasyon değişkenleri ile bunların kapsayıcısı arasındaki ilişkiyi kurar.|
+|[CAnimationBaseObject:: GetAnimationVariableList](#getanimationvariablelist)|İçerilen animasyon değişkenlerine işaretçiler toplar.|
+|[CAnimationBaseObject:: SetParentAnimationObjects](#setparentanimationobjects)|Animasyon değişkenleri, bir animasyon nesnesi ve bunların kapsayıcısı arasında ilişki kurar.|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationBaseObject::m_bAutodestroyTransitions](#m_bautodestroytransitions)|İlgili geçişlerin otomatik olarak yok edilip edilmeyeceğini belirtir.|
-|[CAnimationBaseObject::m_dwUserData](#m_dwuserdata)|Kullanıcı tanımlı verileri depolar.|
-|[CAnimationBaseObject::m_nGroupID](#m_ngroupid)|Animasyon nesnesinin Grup Kimliğini belirtir.|
-|[CAnimationBaseObject::m_nObjectID](#m_nobjectid)|Animasyon nesnesinin Nesne Kimliğini belirtir.|
-|[CAnimationBaseObject::m_pParentController](#m_pparentcontroller)|Üst animasyon denetleyicisine işaretçi.|
+|[CAnimationBaseObject:: m_bAutodestroyTransitions](#m_bautodestroytransitions)|İlgili geçişlerin otomatik olarak yok edilmesi gerekip gerekmediğini belirtir.|
+|[CAnimationBaseObject:: m_dwUserData](#m_dwuserdata)|Kullanıcı tanımlı verileri depolar.|
+|[CAnimationBaseObject:: m_nGroupID](#m_ngroupid)|Animasyon nesnesinin Grup KIMLIĞINI belirtir.|
+|[CAnimationBaseObject:: m_nObjectID](#m_nobjectid)|Animasyon nesnesinin nesne KIMLIĞINI belirtir.|
+|[CAnimationBaseObject:: m_pParentController](#m_pparentcontroller)|Üst animasyon denetleyicisine yönelik bir işaretçi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, tüm animasyon nesneleri için temel yöntemleri uygular. Animasyon nesnesi, bir uygulamadaki bir değeri, noktayı, boyutu, dikdörtgeni veya rengin yanı sıra herhangi bir özel varlığı temsil edebilir. Animasyon nesneleri animasyon gruplarında depolanır (Bkz. CAnimationGroup). Her grup ayrı ayrı animasyonlu olabilir ve film şeridinin bir analogu olarak kabul edilebilir. Animasyon nesnesi, mantıksal gösterimine bağlı olarak bir veya daha fazla animasyon değişkenini (Bkz. CAnimationVariable) kapsar. Örneğin, CAnimationRect dört animasyon değişkeni içerir - dikdörtgenin her iki tarafı için bir değişken. Her animasyon nesnesi sınıfı, kapsüllenmiş animasyon değişkenlerine geçişleri uygulamak için kullanılması gereken aşırı yüklü AddTransition yöntemini ortaya çıkarır. Animasyon nesnesi Object ID (isteğe bağlı olarak) ve Grup Kimliği ile tanımlanabilir. Grubu düzeltmek için animasyon nesnesi yerleştirmek için Grup Kimliği gereklidir, ancak Grup Kimliği belirtilmemişse, varsayılan gruba ID 0 ile bir nesne yerleştirilir. SetID'yi farklı GroupID'li olarak çağırırsanız, animasyon nesnesi başka bir gruba taşınır (gerekirse yeni bir grup oluşturulur).
+Bu sınıf, tüm animasyon nesneleri için temel yöntemleri uygular. Animasyon nesnesi, bir uygulamadaki bir değeri, noktayı, boyutu, dikdörtgeni veya rengi ve herhangi bir özel varlığı temsil edebilir. Animasyon nesneleri animasyon gruplarında depolanır (bkz. CAnimationGroup). Her grup ayrı olarak animasyonlu ve bir analog bir film şeridi olarak değerlendirilebilirler. Animasyon nesnesi bir veya daha fazla animasyon değişkenini (bkz. CAnimationVariable), mantıksal gösterimine göre kapsüller. Örneğin, CAnimationRect, dikdörtgenin her tarafında bir değişken olmak üzere dört animasyon değişkeni içerir. Her animasyon nesne sınıfı, kapsüllenmiş animasyon değişkenlerine geçiş uygulamak için kullanılması gereken aşırı yüklenmiş AddTransition yöntemini kullanıma sunar. Animasyon nesnesi, nesne KIMLIĞI (isteğe bağlı) ve Grup KIMLIĞI ile tanımlanabilir. Grup KIMLIĞI, doğru gruba bir animasyon nesnesi yerleştirmek için gereklidir, ancak bir grup KIMLIĞI belirtilmemişse, KIMLIĞI 0 olan varsayılan gruba bir nesne yerleştirilir. Farklı GroupID ile SetID 'yi çağırırsanız, bir animasyon nesnesi başka bir gruba taşınır (gerekirse yeni bir grup oluşturulur).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 `CAnimationBaseObject`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-## <a name="canimationbaseobjectcanimationbaseobject"></a><a name="_dtorcanimationbaseobject"></a>CAnimationBaseObject::~CAnimationBaseObject
+## <a name="canimationbaseobjectcanimationbaseobject"></a><a name="_dtorcanimationbaseobject"></a> CAnimationBaseObject:: ~ CAnimationBaseObject
 
-Yıkıcı. Animasyon nesnesi yok edilirken çağrılır.
+Yok edicisi. Bir animasyon nesnesi yok edildiğinde çağırılır.
 
 ```
 virtual ~CAnimationBaseObject();
 ```
 
-## <a name="canimationbaseobjectapplytransitions"></a><a name="applytransitions"></a>CAnimationBaseObject::Geçişuygula
+## <a name="canimationbaseobjectapplytransitions"></a><a name="applytransitions"></a> CAnimationBaseObject:: Applygeçişleri
 
-Kapsüllü animasyon değişkeni ile film şeridine geçişler ekler.
+Encapsulated animasyon değişkeniyle görsel taslağa geçişler ekler.
 
 ```
 virtual BOOL ApplyTransitions(
@@ -147,22 +148,22 @@ virtual BOOL ApplyTransitions(
 ### <a name="parameters"></a>Parametreler
 
 *pStoryboard*<br/>
-Bir film şeridi için bir işaretçi.
+Görsel taslağa yönelik işaretçi.
 
 *bDependOnKeyframes*<br/>
-FALSE olduğunda, bu yöntem yalnızca anahtar karelere bağlı olmayan geçişleri ekler.
+FALSE olduğunda, bu yöntem yalnızca ana karelere bağımlı olmayan geçişleri ekler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçişler başarıyla eklenmiştirsa DOĞRU.
+Geçişler başarıyla eklendiyse TRUE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-AddTransition (türemiş sınıflardaki aşırı yüklenen yöntemler) ile eklenen ilgili geçişleri film şeridine ekler.
+Görsel taslağa AddTransition (türetilmiş sınıflarda aşırı yüklenmiş yöntemler) eklenmiş ilişkili geçişleri ekler.
 
-## <a name="canimationbaseobjectcanimationbaseobject"></a><a name="canimationbaseobject"></a>CAnimationBaseObject::CAnimationBaseObject
+## <a name="canimationbaseobjectcanimationbaseobject"></a><a name="canimationbaseobject"></a> CAnimationBaseObject:: CAnimationBaseObject
 
-Bir animasyon nesnesi oluşturuyor.
+Bir animasyon nesnesi oluşturur.
 
 ```
 CAnimationBaseObject();
@@ -175,22 +176,22 @@ CAnimationBaseObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*nGroupID*<br/>
-Grup Kimliğini belirtir.
+*Ngroupıd*<br/>
+Grup KIMLIĞINI belirtir.
 
-*nObjectID*<br/>
-Nesne Kimliğini belirtir.
+*Nobjectıd*<br/>
+Nesne KIMLIĞINI belirtir.
 
 *dwUserData*<br/>
-Animasyon nesnesi ile ilişkilendirilebilen ve daha sonra çalışma zamanında alınabilen kullanıcı tanımlı veriler.
+Animasyon nesnesiyle ilişkilendirilebilen ve daha sonra çalışma zamanında alınabilecek Kullanıcı tanımlı veriler.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon nesneleri oluşturuyor ve varsayılan Nesne Kimliği (0) ve Grup Kimliği (0) atar.
+Bir animasyon nesnesi oluşturur ve varsayılan nesne KIMLIĞI (0) ve Grup KIMLIĞI (0) atar.
 
-## <a name="canimationbaseobjectcleartransitions"></a><a name="cleartransitions"></a>CAnimationBaseObject::ClearTransitions
+## <a name="canimationbaseobjectcleartransitions"></a><a name="cleartransitions"></a> CAnimationBaseObject:: Cleargeçişler
 
-İlgili tüm geçişleri kaldırır.
+Tüm ilgili geçişleri kaldırır.
 
 ```
 virtual void ClearTransitions(BOOL bAutodestroy);
@@ -199,15 +200,15 @@ virtual void ClearTransitions(BOOL bAutodestroy);
 ### <a name="parameters"></a>Parametreler
 
 *bAutodestroy*<br/>
-Geçiş nesnelerini otomatik olarak yok etmek mi yoksa yalnızca ilgili listeden mi kaldırılacak larını belirtir.
+Geçiş nesnelerinin otomatik olarak yok edilip edilmeyeceğini belirtir veya yalnızca ilgili listeden kaldırın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-BAutodestroy veya m_bAutodestroyTransitions bayrağı DOĞRU ise ilgili tüm geçişleri kaldırır ve bunları yok eder. Geçişler yalnızca yığına ayrılmadıkları takdirde otomatik olarak yok edilmelidir. Yukarıdaki bayraklar FALSE ise, geçişler ilgili geçişlerin iç listesinden kaldırılır.
+Tüm ilgili geçişleri kaldırır ve bAutodestroy veya m_bAutodestroyTransitions bayrağı TRUE ise onları yok eder. Geçişler yalnızca yığında ayrıldıklarında otomatik olarak yok edilmelidir. Yukarıdaki bayraklar YANLıŞSA, geçişler yalnızca ilgili geçişlerin iç listesinden kaldırılır.
 
-## <a name="canimationbaseobjectcontainsvariable"></a><a name="containsvariable"></a>CAnimationBaseObject::ContainsVariable
+## <a name="canimationbaseobjectcontainsvariable"></a><a name="containsvariable"></a> CAnimationBaseObject:: ContainsVariable
 
-Animasyon nesnesi belirli bir animasyon değişkeni bulunup bulunmayacağını belirler.
+Bir animasyon nesnesinin belirli bir animasyon değişkeni içerip içermediğini belirler.
 
 ```
 virtual BOOL ContainsVariable(IUIAnimationVariable* pVariable);
@@ -215,20 +216,20 @@ virtual BOOL ContainsVariable(IUIAnimationVariable* pVariable);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDeğişken*<br/>
-Animasyon değişkenine işaretçi.
+*pVariable*<br/>
+Animasyon değişkenine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon değişkeni animasyon nesnesinde yer alırsa DOĞRU; aksi takdirde YANLIŞ.
+Animasyon değişkeni animasyon nesnesinde içeriyorsa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, pVariable tarafından belirtilen bir animasyon değişkeninin bir animasyon nesnesi içinde bulunup olmadığını belirlemek için kullanılabilir. Bir animasyon nesnesi, türüne bağlı olarak, birkaç animasyon değişkeni içerebilir. Örneğin, CAnimationColor her renk bileşeni (kırmızı, yeşil ve mavi) için bir tane olmak üzere üç değişken içerir. Animasyon değişkeninin değeri değiştiğinde, Windows Animasyon API'si ValueChanged veya IntegerValueChanged olayları gönderir (etkinse) ve bu olayın parametresi animasyon değişkeninin IUIAnimationVariable arabirimi için bir işaretçidir. Bu yöntem, com nesnesi içeren bir işaretçi animasyon için bir işaretçi elde etmek için yardımcı olur.
+Bu yöntem, pVariable tarafından belirtilen bir animasyon değişkeninin bir animasyon nesnesi içinde içerilip içerilmeyeceğini belirlemede kullanılabilir. Türüne bağlı olarak bir animasyon nesnesi birkaç animasyon değişkeni içerebilir. Örneğin, CAnimationColor her renk bileşeni için bir tane olmak üzere üç değişken içerir (kırmızı, yeşil ve mavi). Animasyon değişkeninin bir değeri değiştiğinde, Windows animasyon API 'SI ValueChanged veya IntegerValueChanged olayları gönderir (etkinse) ve bu olayın parametresi, Animasyon değişkeninin Interface IUIAnimationVariable öğesine yönelik bir işaretçidir. Bu yöntem, içerilen COM nesnesine bir işaretçiden animasyon işaretçisi edinmeye yardımcı olur.
 
-## <a name="canimationbaseobjectcreatetransitions"></a><a name="createtransitions"></a>CAnimationBaseObject::CreateTransitions
+## <a name="canimationbaseobjectcreatetransitions"></a><a name="createtransitions"></a> CAnimationBaseObject:: Creategeçişler
 
-Animasyon nesnesi ile ilişkili geçişler oluşturur.
+Bir animasyon nesnesiyle ilişkili geçişleri oluşturur.
 
 ```
 BOOL CreateTransitions();
@@ -236,15 +237,15 @@ BOOL CreateTransitions();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçişler başarıyla oluşturulduysa DOĞRU; aksi takdirde YANLIŞ.
+Geçişler başarıyla oluşturulduysa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türemiş bir animasyon nesnesinde kapsüllenmiş animasyon değişkenleri listesi üzerinde döngüler ve her animasyon değişkeni ile ilişkili geçişler oluşturur.
+Türetilmiş bir animasyon nesnesinde kapsüllenmiş animasyon değişkenleri listesi üzerinden döngüler ve her bir animasyon değişkeniyle ilişkili geçişler oluşturur.
 
-## <a name="canimationbaseobjectdetachfromcontroller"></a><a name="detachfromcontroller"></a>CAnimationBaseObject::DetachFromController
+## <a name="canimationbaseobjectdetachfromcontroller"></a><a name="detachfromcontroller"></a> CAnimationBaseObject::D etachFromController
 
-Animasyon nesnesi üst animasyon denetleyicisinden ayrılır.
+Bir animasyon nesnesini üst animasyon denetleyicisinden ayırır.
 
 ```cpp
 void DetachFromController();
@@ -254,9 +255,9 @@ void DetachFromController();
 
 Bu yöntem dahili olarak kullanılır.
 
-## <a name="canimationbaseobjectenableintegervaluechangedevent"></a><a name="enableintegervaluechangedevent"></a>CAnimationBaseObject::EnableIntegerValueChangedEvent
+## <a name="canimationbaseobjectenableintegervaluechangedevent"></a><a name="enableintegervaluechangedevent"></a> CAnimationBaseObject:: EnableIntegerValueChangedEvent
 
-Integer Value Changed olay işleyicisi ayarlar.
+Tamsayı değeri değişti olay işleyicisini ayarlar.
 
 ```
 virtual void EnableIntegerValueChangedEvent(
@@ -266,19 +267,19 @@ virtual void EnableIntegerValueChangedEvent(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDenetleyici*<br/>
-Bir üst denetleyici için bir işaretçi.
+*pController*<br/>
+Üst denetleyiciye yönelik bir işaretçi.
 
-*bEtkinleştir*<br/>
-Integer Value Changed olayını etkinleştirip etkinleştirmeyeceğini veya devre dışı düşürüp devre dışı düşürmeyeceğini belirtir.
+*bEnable*<br/>
+Tamsayı değeri değişti olayının etkinleştirilip etkinleştirilmeyeceğini veya devre dışı bırakılacağını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tamsayı Değeri Değiştirilen olay işleyicisi etkinse, bu olayı CAnimationController::OnAnimationIntegerValueChanged yönteminde işleyebilir ve canimationcontroller türetilmiş bir sınıfta geçersiz kılınmalıdır. Animasyon tamsayı değeri her değiştiğinde bu yöntem edenir.
+Tamsayı değeri değişti olay işleyicisi etkinse, bu olayı CAnimationController:: OnAnimationIntegerValueChanged yönteminde işleyebilir, bu da CAnimationController ile türetilmiş bir sınıfta geçersiz kılınmalıdır. Animasyon tamsayı değeri her değiştiğinde bu yöntem çağrılır.
 
-## <a name="canimationbaseobjectenablevaluechangedevent"></a><a name="enablevaluechangedevent"></a>CAnimationBaseObject::EnableValueChangedEvent
+## <a name="canimationbaseobjectenablevaluechangedevent"></a><a name="enablevaluechangedevent"></a> CAnimationBaseObject:: EnableValueChangedEvent
 
-Değer Değiştirilen olay işleyicisi ayarlar.
+Değer değişti olay işleyicisini ayarlar.
 
 ```
 virtual void EnableValueChangedEvent(
@@ -288,19 +289,19 @@ virtual void EnableValueChangedEvent(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDenetleyici*<br/>
-Bir üst denetleyici için bir işaretçi.
+*pController*<br/>
+Üst denetleyiciye yönelik bir işaretçi.
 
-*bEtkinleştir*<br/>
-Değer Değiştirilen olayı etkinleştirip etkinleştirmeyeceğini veya devre dışı düşürüp devre dışı kölçüp devre tamayacağını belirtir.
+*bEnable*<br/>
+Değer değiştirme olayının etkinleştirilip etkinleştirilmeyeceğini veya devre dışı bırakılacağını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değer Değiştirilen olay işleyicisi etkinse, bu olayı CAnimationController::OnAnimationValueChanged yönteminde işleyebilir ve cAnimationController türetilmiş bir sınıfta geçersiz kılınmalıdır. Bu yöntem, animasyon değeri her değiştiğinde çağrılır.
+Olay işleyicisi değeri değiştiyse, bu olayı CAnimationController:: OnAnimationValueChanged yönteminde işleyebilir, bu da CAnimationController ile türetilmiş bir sınıfta geçersiz kılınmalıdır. Animasyon değeri her değiştiğinde bu yöntem çağrılır.
 
-## <a name="canimationbaseobjectgetanimationvariablelist"></a><a name="getanimationvariablelist"></a>CAnimationBaseObject::GetAnimationVariableList
+## <a name="canimationbaseobjectgetanimationvariablelist"></a><a name="getanimationvariablelist"></a> CAnimationBaseObject:: GetAnimationVariableList
 
-İçerdiği animasyon değişkenleri için işaretçiler toplar.
+İçerilen animasyon değişkenlerine işaretçiler toplar.
 
 ```
 virtual void GetAnimationVariableList(
@@ -311,15 +312,15 @@ virtual void GetAnimationVariableList(
 ### <a name="parameters"></a>Parametreler
 
 *list*<br/>
-Animasyon nesnesinde bulunan animasyon değişkenleriyle doldurulması gereken liste.
+Animasyon nesnesinde bulunan animasyon değişkenleriyle doldurulması gereken bir liste.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu saf sanal yöntem türemiş bir sınıfta geçersiz kılınmalıdır. Bir animasyon nesnesi, türüne bağlı olarak bir veya daha fazla animasyon değişkeni içerir. Örneğin, CAnimationPoint sırasıyla X ve Y koordinatları için iki değişken içerir. Taban sınıf CAnimationBaseObject, animasyon değişkenleri listesinde hareket eden bazı genel yöntemleri uygular: Geçişler, ClearTransitions, EnableValueChangedEvent, EnableIntegerValueChangedEvent. Bu yöntemler, belirli bir animasyon nesnesinde bulunan gerçek animasyon değişkenleri ile türemiş bir sınıfta doldurulan GetAnimationVariableList'i çağırır, ardından listenin üzerine döngü ve gerekli eylemleri gerçekleştirir. Özel bir animasyon nesnesi oluşturursanız, bu nesnede bulunan tüm animasyon değişkenlerini *listelemek* için eklemeniz gerekir.
+Bu saf sanal yöntemin türetilmiş bir sınıfta geçersiz kılınması gerekir. Bir animasyon nesnesi türüne bağlı olarak bir veya daha fazla animasyon değişkeni içerir. Örneğin, CAnimationPoint sırasıyla X ve Y koordinatları için iki değişken içerir. CAnimationBaseObject temel sınıfı, bir animasyon değişkenleri listesi üzerinde davranan bazı genel yöntemleri uygular: Applygeçişleri, Cleargeçişleri, EnableValueChangedEvent, EnableIntegerValueChangedEvent. Bu yöntemler, belirli bir animasyon nesnesinde bulunan gerçek animasyon değişkenlerine sahip türetilmiş bir sınıf içinde doldurulan GetAnimationVariableList öğesini çağırır, sonra listenin üzerinde döngü yapar ve gerekli eylemleri gerçekleştirir. Özel bir animasyon nesnesi oluşturursanız, bu nesnenin içerdiği tüm animasyon değişkenlerini *listelemek* için eklemeniz gerekir.
 
-## <a name="canimationbaseobjectgetautodestroytransitions"></a><a name="getautodestroytransitions"></a>CAnimationBaseObject::GetAutodestroyTransitions
+## <a name="canimationbaseobjectgetautodestroytransitions"></a><a name="getautodestroytransitions"></a> CAnimationBaseObject:: Getautodestroygeçişler
 
-İlgili geçişin otomatik olarak yok edilip edilemeyeceğini söyler.
+İlgili geçişin otomatik olarak yok edildiğini söyler.
 
 ```
 BOOL GetAutodestroyTransitions() const;
@@ -327,15 +328,15 @@ BOOL GetAutodestroyTransitions() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-TRUE ise, ilgili geçişler otomatik olarak yok edilir; FALSE ise, geçiş nesneleri çağrı uygulaması tarafından tahsis edilmelidir.
+TRUE ise ilgili geçişler otomatik olarak yok edilir; FALSE ise, uygulama çağırarak geçiş nesneleri serbest bırakılmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak bu bayrak TRUE'dur. Bu bayrağı yalnızca yığına geçiş ayırdıysanız ve/veya geçişler arama uygulaması tarafından ayrılması gerekiyorsa ayarlayın.
+Varsayılan olarak bu bayrak doğrudur. Bu bayrağı yalnızca, yığında geçiş ayrıldıysanız ve/veya geçişlerin çağıran uygulama tarafından serbest bırakılmasının gerekip gerekmediğini ayarlayın.
 
-## <a name="canimationbaseobjectgetgroupid"></a><a name="getgroupid"></a>CAnimationBaseObject::GetGroupID
+## <a name="canimationbaseobjectgetgroupid"></a><a name="getgroupid"></a> CAnimationBaseObject:: Getgroupıd
 
-Geçerli Grup Kimliğini döndürür.
+Geçerli grup KIMLIĞINI döndürür.
 
 ```
 UINT32 GetGroupID() const;
@@ -343,15 +344,15 @@ UINT32 GetGroupID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Grup Kimliği.
+Geçerli grup KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Grup Kimliğini almak için bu yöntemi kullanın. Grup Kimliği açıkça oluşturucu veya SetID ile ayarlanmamıştır ysa 0'dır.
+Grup KIMLIĞINI almak için bu yöntemi kullanın. Grup KIMLIĞI açıkça oluşturucuda veya SetID ile ayarlanmamışsa 0 ' dır.
 
-## <a name="canimationbaseobjectgetobjectid"></a><a name="getobjectid"></a>CAnimationBaseObject::GetObjectID
+## <a name="canimationbaseobjectgetobjectid"></a><a name="getobjectid"></a> CAnimationBaseObject:: Getobjectıd
 
-Geçerli Nesne Kimliğini döndürür.
+Geçerli nesne KIMLIĞINI döndürür.
 
 ```
 UINT32 GetObjectID() const;
@@ -359,13 +360,13 @@ UINT32 GetObjectID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli Nesne Kimliği.
+Geçerli nesne KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne Kimliğini almak için bu yöntemi kullanın. Object ID oluşturucuda veya SetID'de açıkça ayarlanmadıysa 0'dır.
+Nesne KIMLIĞINI almak için bu yöntemi kullanın. Nesne KIMLIĞI, Oluşturucu içinde veya SetID ile açıkça ayarlanmamışsa 0 ' dır.
 
-## <a name="canimationbaseobjectgetuserdata"></a><a name="getuserdata"></a>CAnimationBaseObject::GetUserData
+## <a name="canimationbaseobjectgetuserdata"></a><a name="getuserdata"></a> CAnimationBaseObject:: GetUserData
 
 Kullanıcı tanımlı verileri döndürür.
 
@@ -375,21 +376,21 @@ DWORD GetUserData() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özel verilerin değeri.
+Özel verilerin bir değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma zamanında özel verileri almak için bu yöntemi arayın. Döndürülen değer, oluşturucuda veya SetUserData'da açıkça baş harfe döndürülmediyse 0 olacaktır.
+Çalışma zamanında özel verileri almak için bu yöntemi çağırın. Döndürülen değer, oluşturucuda veya SetUserData ile açıkça başlatılmazsa 0 olur.
 
-## <a name="canimationbaseobjectm_bautodestroytransitions"></a><a name="m_bautodestroytransitions"></a>CAnimationBaseObject::m_bAutodestroyTransitions
+## <a name="canimationbaseobjectm_bautodestroytransitions"></a><a name="m_bautodestroytransitions"></a> CAnimationBaseObject:: m_bAutodestroyTransitions
 
-İlgili geçişlerin otomatik olarak yok edilip edilmeyeceğini belirtir.
+İlgili geçişlerin otomatik olarak yok edilmesi gerekip gerekmediğini belirtir.
 
 ```
 BOOL m_bAutodestroyTransitions;
 ```
 
-## <a name="canimationbaseobjectm_dwuserdata"></a><a name="m_dwuserdata"></a>CAnimationBaseObject::m_dwUserData
+## <a name="canimationbaseobjectm_dwuserdata"></a><a name="m_dwuserdata"></a> CAnimationBaseObject:: m_dwUserData
 
 Kullanıcı tanımlı verileri depolar.
 
@@ -397,31 +398,31 @@ Kullanıcı tanımlı verileri depolar.
 DWORD m_dwUserData;
 ```
 
-## <a name="canimationbaseobjectm_ngroupid"></a><a name="m_ngroupid"></a>CAnimationBaseObject::m_nGroupID
+## <a name="canimationbaseobjectm_ngroupid"></a><a name="m_ngroupid"></a> CAnimationBaseObject:: m_nGroupID
 
-Animasyon nesnesinin Grup Kimliğini belirtir.
+Animasyon nesnesinin Grup KIMLIĞINI belirtir.
 
 ```
 UINT32 m_nGroupID;
 ```
 
-## <a name="canimationbaseobjectm_nobjectid"></a><a name="m_nobjectid"></a>CAnimationBaseObject::m_nObjectID
+## <a name="canimationbaseobjectm_nobjectid"></a><a name="m_nobjectid"></a> CAnimationBaseObject:: m_nObjectID
 
-Animasyon nesnesinin Nesne Kimliğini belirtir.
+Animasyon nesnesinin nesne KIMLIĞINI belirtir.
 
 ```
 UINT32 m_nObjectID;
 ```
 
-## <a name="canimationbaseobjectm_pparentcontroller"></a><a name="m_pparentcontroller"></a>CAnimationBaseObject::m_pParentController
+## <a name="canimationbaseobjectm_pparentcontroller"></a><a name="m_pparentcontroller"></a> CAnimationBaseObject:: m_pParentController
 
-Üst animasyon denetleyicisine işaretçi.
+Üst animasyon denetleyicisine yönelik bir işaretçi.
 
 ```
 CAnimationController* m_pParentController;
 ```
 
-## <a name="canimationbaseobjectsetautodestroytransitions"></a><a name="setautodestroytransitions"></a>CAnimationBaseObject::SetAutodestroyGeçişler
+## <a name="canimationbaseobjectsetautodestroytransitions"></a><a name="setautodestroytransitions"></a> CAnimationBaseObject:: Setautodestroygeçişler
 
 Geçişleri otomatik olarak yok etmek için bir bayrak ayarlar.
 
@@ -432,15 +433,15 @@ void SetAutodestroyTransitions(BOOL bValue);
 ### <a name="parameters"></a>Parametreler
 
 *bDeğer*<br/>
-Otomatik yok bayrağını belirtir.
+Otomatik yok etme bayrağını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bayrağı yalnızca işleç yeni kullanarak geçiş nesnelerini ayırdıysanız ayarlayın. Herhangi bir nedenle geçiş nesneleri yığına ayrılmışsa, otomatik yok edilme bayrağı FALSE olmalıdır. Varsayılan olarak bu bayrak TRUE'dur.
+Bu bayrağı yalnızca New işlecini kullanarak geçiş nesnelerini ayırdıysanız ayarlayın. Yığın üzerinde bazı nedenler geçiş nesneleri ayrılmışsa otomatik yok etme bayrağı yanlış olmalıdır. Varsayılan olarak bu bayrak doğrudur.
 
-## <a name="canimationbaseobjectsetid"></a><a name="setid"></a>CAnimationBaseObject::SetID
+## <a name="canimationbaseobjectsetid"></a><a name="setid"></a> CAnimationBaseObject:: SetID
 
-Yeni tbm'ler ayarlar.
+Yeni kimlikleri ayarlar.
 
 ```cpp
 void SetID(
@@ -450,19 +451,19 @@ void SetID(
 
 ### <a name="parameters"></a>Parametreler
 
-*nObjectID*<br/>
-Yeni Nesne Kimliği belirtir.
+*Nobjectıd*<br/>
+Yeni nesne KIMLIĞINI belirtir.
 
-*nGroupID*<br/>
-Yeni Grup Kimliğini belirtir.
+*Ngroupıd*<br/>
+Yeni bir grup KIMLIĞI belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne Kimliği ve Grup Kimliği'ni değiştirmenize olanak tanır. Yeni Grup Kimliği geçerli kimlikten farklıysa, animasyon nesnesi başka bir gruba taşınır (gerekirse yeni bir grup oluşturulur).
+Nesne KIMLIĞINI ve grup KIMLIĞINI değiştirmenize izin verir. Yeni Grup KIMLIĞI geçerli KIMLIKLE farklıysa, bir animasyon nesnesi başka bir gruba taşınır (gerekirse yeni bir grup oluşturulur).
 
-## <a name="canimationbaseobjectsetparentanimationobjects"></a><a name="setparentanimationobjects"></a>CAnimationBaseObject::SetParentAnimationObjects
+## <a name="canimationbaseobjectsetparentanimationobjects"></a><a name="setparentanimationobjects"></a> CAnimationBaseObject:: SetParentAnimationObjects
 
-Animasyon nesnesinde bulunan animasyon değişkenleri ile bunların kapsayıcısı arasındaki ilişkiyi kurar.
+Animasyon değişkenleri, bir animasyon nesnesi ve bunların kapsayıcısı arasında ilişki kurar.
 
 ```
 virtual void SetParentAnimationObjects();
@@ -470,9 +471,9 @@ virtual void SetParentAnimationObjects();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yardımcı, animasyon nesnesinde bulunan animasyon değişkenleri ile kapsayıcıları arasında bir ilişki kurmak için kullanılabilir. Animasyon değişkenlerinin üzerine döngüler ve her animasyon değişkenine bir üst animasyon nesnesi için bir geri işaretçi ayarlar. Geçerli uygulamada, gerçek ilişki CAnimationBaseObject'te kurulur::Geçişleri Uygula, bu nedenle cAnimationGroup::Animate'i arayanakadar geri işaretçiler ayarlanmaz. Olayları işlerken ilişkiyi bilmek yararlı olabilir ve CAnimationVariable'ten bir üst animasyon nesnesi almanız gerekebilir. CAnimationVariable kullanın::GetParentAnimationObject.
+Bu yardımcı, bir animasyon nesnesinde bulunan animasyon değişkenleri ve bunların kapsayıcısı arasında bir ilişki oluşturmak için kullanılabilir. Animasyon değişkenleri üzerinde döngü yapar ve her animasyon değişkenine bir üst animasyon nesnesine bir geri işaretçi ayarlar. Geçerli uygulamada, CAnimationBaseObject:: Applygeçişler ' de gerçek ilişki oluşturulur, bu nedenle CAnimationGroup:: canlandır ' ı çağırana kadar geri işaretçiler ayarlanamaz. İlişkiyi bilmek, olayları işlerken ve CAnimationVariable öğesinden bir üst animasyon nesnesi almanız gerektiğinde yararlı olabilir. CAnimationVariable:: GetParentAnimationObject kullanın.
 
-## <a name="canimationbaseobjectsetuserdata"></a><a name="setuserdata"></a>CAnimationBaseObject::SetUserData
+## <a name="canimationbaseobjectsetuserdata"></a><a name="setuserdata"></a> CAnimationBaseObject:: SetUserData
 
 Kullanıcı tanımlı verileri ayarlar.
 
@@ -487,7 +488,7 @@ void SetUserData (DWORD dwUserData);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel verileri animasyon nesnesiyle ilişkilendirmek için bu yöntemi kullanın. Bu veriler daha sonra GetUserData tarafından çalışma zamanında alınabilir.
+Özel verileri bir animasyon nesnesiyle ilişkilendirmek için bu yöntemi kullanın. Bu veriler, daha sonra GetUserData tarafından çalışma zamanında alınabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

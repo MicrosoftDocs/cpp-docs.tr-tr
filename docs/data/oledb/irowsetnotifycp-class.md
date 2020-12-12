@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. IRowsetNotifyCP sınıfı
 title: IRowsetNotifyCP Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - Fire_OnRowChange method
 - Fire_OnRowsetChange method
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
-ms.openlocfilehash: 2f8c80570e4771d1b0e713083f64bc982ddb9009
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 70e759ed19c366f7e85511170439c24f319c5cd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317278"
 ---
 # <a name="irowsetnotifycp-class"></a>IRowsetNotifyCP Sınıfı
 
 Bağlantı noktası arabirimi [ırowsetnotıfy](/previous-versions/windows/desktop/ms712959(v=vs.85))için sağlayıcı sitesini uygular.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T, class ReentrantEventSync = CComSharedMutex>
@@ -56,7 +57,7 @@ Sınıfından türetilmiş bir sınıf `IRowsetNotifyCP` .
 Yeniden girişi destekleyen bir mutex sınıfı (varsayılan değer `CComSharedMutex` ). Mutex, bir iş parçacığının bir kaynağa karşılıklı olarak erişilmesini sağlayan bir eşitleme nesnesidir.
 
 *piıd*<br/>
-`IID*`Bağlantı noktası arabirimi için ARABIRIM kimlik işaretçisi () `IRowsetNotify` . Varsayılan değer: `&__uuidof(IRowsetNotify)`.
+`IID*`Bağlantı noktası arabirimi için ARABIRIM kimlik işaretçisi () `IRowsetNotify` . `&__uuidof(IRowsetNotify)` varsayılan değerdir.
 
 *DynamicUnkArray*<br/>
 İstemci havuzu arabirimlerine yönelik bir dizi işaretçilerin dinamik olarak ayrılmış dizisi olan [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)türünde bir dizi `IUnknown` .
@@ -87,7 +88,7 @@ Bildirimleri uygulamayla ilgili ayrıntılı bilgi için, [güncelleştirilebili
 
 Bir sütunun değerindeki bir değişikliğin tüketicilerini bilgilendirmek için [OnFieldChange](/previous-versions/windows/desktop/ms715961(v=vs.85)) olayını yayınlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Fire_OnFieldChange(IRowset* pRowset,
@@ -107,7 +108,7 @@ HRESULT Fire_OnFieldChange(IRowset* pRowset,
 
 , Satırları etkileyen bir değişikliği tüketicilere bildirmek için bağlantı noktasındaki tüm dinleyicilerle [OnRowChange](/previous-versions/windows/desktop/ms722694(v=vs.85)) olayını yayınlar `IID_IRowsetNotify` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Fire_OnRowChange(IRowset* pRowset,
@@ -126,7 +127,7 @@ HRESULT Fire_OnRowChange(IRowset* pRowset,
 
 Tüm satır kümesini etkileyen bir değişikliği tüketicilere bildirmek için bağlantı noktasındaki tüm dinleyicilerle [OnRowsetChange](/previous-versions/windows/desktop/ms722669(v=vs.85)) olayını yayınlar `IID_IRowsetNotify` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT Fire_OnRowsetChange(IRowset* pRowset,

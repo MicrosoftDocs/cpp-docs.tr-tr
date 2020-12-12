@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IDBPropertiesImpl Class'
 title: IDBPropertiesImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-ms.openlocfilehash: d94c5d121386989d223a55b8ce7626444c3f8950
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e8384086de5b61422cd63e2dc3fbda0cfe040843
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317499"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl Sınıfı
 

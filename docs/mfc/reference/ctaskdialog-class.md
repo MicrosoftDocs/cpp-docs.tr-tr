@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CTaskDialog sınıfı'
 title: CTaskDialog sınıfı
 ms.date: 11/19/2018
 f1_keywords:
@@ -116,12 +117,12 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-ms.openlocfilehash: 3fd67eed7e80a2e594710df8ae8bc6fd13f0e96c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 91cd3caec703f8e81116fccd75c0457abb69a3e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318591"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 
@@ -409,7 +410,7 @@ CTaskDialog(
 
 Uygulamanıza ekleyebileceğiniz iki yol vardır `CTaskDialog` . İlk yöntem, oluşturmak için oluşturuculardan birini kullanmak `CTaskDialog` ve [CTaskDialog::D omodal](#domodal)kullanarak görüntülemektir. İkinci yöntem, açıkça bir nesne oluşturmadan görüntülemenizi sağlayan [CTaskDialog:: ShowDialog](#showdialog)statik işlevini kullanmaktır `CTaskDialog` `CTaskDialog` .
 
-İkinci Oluşturucu, uygulamanızın kaynak dosyasındaki verileri kullanarak komut düğmesi denetimleri oluşturur. Kaynak dosyasındaki dize tablosunda, ilişkili dize kimliklerine sahip birkaç dize vardır. Bu yöntem, *nIDCommandControlsFirst* ve *nCommandControlsLast*dahil olmak üzere dize tablosundaki her geçerli giriş için bir komut düğmesi denetimi ekler. Bu komut düğmesi denetimlerinde, dize tablosundaki dize denetimin başlığı ve dize KIMLIĞI denetimin KIMLIĞIDIR.
+İkinci Oluşturucu, uygulamanızın kaynak dosyasındaki verileri kullanarak komut düğmesi denetimleri oluşturur. Kaynak dosyasındaki dize tablosunda, ilişkili dize kimliklerine sahip birkaç dize vardır. Bu yöntem, *nIDCommandControlsFirst* ve *nCommandControlsLast* dahil olmak üzere dize tablosundaki her geçerli giriş için bir komut düğmesi denetimi ekler. Bu komut düğmesi denetimlerinde, dize tablosundaki dize denetimin başlığı ve dize KIMLIĞI denetimin KIMLIĞIDIR.
 
 Geçerli seçeneklerin listesi için bkz. [CTaskDialog:: SetOptions](#setoptions) .
 
@@ -716,7 +717,7 @@ void NavigateTo(CTaskDialog& oTaskDialog) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CTaskDialog` *oTaskDialog iletişim kutusunu*görüntülediğinde geçerli öğeyi gizler. *OTaskDialog* , geçerli ile aynı konumda görüntülenir `CTaskDialog` .
+Bu yöntem, `CTaskDialog` *oTaskDialog iletişim kutusunu* görüntülediğinde geçerli öğeyi gizler. *OTaskDialog* , geçerli ile aynı konumda görüntülenir `CTaskDialog` .
 
 ## <a name="ctaskdialogoncommandcontrolclick"></a><a name="oncommandcontrolclick"></a> CTaskDialog:: OnCommandControlClick
 
@@ -1002,9 +1003,9 @@ void SetCommonButtonOptions(
 
 CTaskDialog [:: CTaskDialog](#ctaskdialog) yapıcısını ve [CTaskDialog:: setcommonbutton](#setcommonbuttons)metodunu kullanarak [CTaskDialog sınıfının](../../mfc/reference/ctaskdialog-class.md) bir örneğine sunulan ortak düğmeleri ayarlayabilirsiniz. `CTaskDialog::SetCommonButtonOptions` , yeni ortak düğme eklenmesini desteklemez.
 
-Bu yöntemi, bu için kullanılamayan ortak bir düğmeyi devre dışı bırakmak veya yükseltmek için kullanırsanız `CTaskDialog` , bu yöntem, izin makrosunu kullanarak bir özel durum oluşturur [ENSURE](diagnostic-services.md#ensure) .
+Bu yöntemi, bu için kullanılamayan ortak bir düğmeyi devre dışı bırakmak veya yükseltmek için kullanırsanız `CTaskDialog` , bu yöntem, izin makrosunu kullanarak bir özel durum oluşturur [](diagnostic-services.md#ensure) .
 
-Bu yöntem, `CTaskDialog` daha önce devre dışı bırakılmış olsa bile, için kullanılabilir olan ancak *Ndisabledbuttonmask*içinde olmayan tüm düğmeleri sağlar. Bu yöntem, yükseltmeyi benzer bir şekilde ele alır: ortak düğme kullanılabilir ancak *Nelivationbuttonmask*içinde yoksa, ortak düğmeleri yükseltme gerektirmeyen şekilde kaydeder.
+Bu yöntem, `CTaskDialog` daha önce devre dışı bırakılmış olsa bile, için kullanılabilir olan ancak *Ndisabledbuttonmask* içinde olmayan tüm düğmeleri sağlar. Bu yöntem, yükseltmeyi benzer bir şekilde ele alır: ortak düğme kullanılabilir ancak *Nelivationbuttonmask* içinde yoksa, ortak düğmeleri yükseltme gerektirmeyen şekilde kaydeder.
 
 ### <a name="example"></a>Örnek
 
@@ -1038,7 +1039,7 @@ Bu sınıf örneği için görüntüleme penceresi oluşturulduktan sonra bu yö
 
 *NButtonMask* tarafından belirtilen düğmeler, daha önce öğesine eklenmiş olan tüm ortak düğmeleri geçersiz kılar `CTaskDialog` . Yalnızca *nButtonMask* içinde gösterilen düğmeler kullanılabilir.
 
-*Ndisabledbuttonmask* veya *Netavationbuttonmask* , *nButtonMask*içinde olmayan bir düğme içeriyorsa, bu yöntem, [emin](diagnostic-services.md#ensure) olan makroyu kullanarak bir özel durum oluşturur.
+*Ndisabledbuttonmask* veya *Netavationbuttonmask* , *nButtonMask* içinde olmayan bir düğme içeriyorsa, bu yöntem, [emin](diagnostic-services.md#ensure) olan makroyu kullanarak bir özel durum oluşturur.
 
 Varsayılan olarak, tüm ortak düğmeler etkindir ve yükseltme gerektirmez.
 
@@ -1084,7 +1085,7 @@ void SetDefaultCommandControl(int nCommandControlID);
 
 Varsayılan komut düğmesi denetimi, `CTaskDialog` Kullanıcı ilk kez görüntülendiğinde seçili olan denetimdir.
 
-Bu yöntem, *nCommandControlID*tarafından belirtilen komut düğmesi denetimini bulamazsa bir özel durum oluşturur.
+Bu yöntem, *nCommandControlID* tarafından belirtilen komut düğmesi denetimini bulamazsa bir özel durum oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -1107,7 +1108,7 @@ void SetDefaultRadioButton(int nRadioButtonID);
 
 Varsayılan radyo düğmesi, `CTaskDialog` Kullanıcı ilk kez görüntülendiğinde seçili olan düğmedir.
 
-Bu yöntem, *nRadioButtonID*tarafından belirtilen radyo düğmesini bulamazsa bir özel durum oluşturur.
+Bu yöntem, *nRadioButtonID* tarafından belirtilen radyo düğmesini bulamazsa bir özel durum oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -1162,7 +1163,7 @@ void SetExpansionArea(
 
 Sınıfının genişletme alanı `CTaskDialog` kullanıcıya ek bilgi sağlamanıza olanak sağlar. Genişletme alanı öğesinin ana kısmıdır `CTaskDialog` ve başlık ve içerik dizesinin hemen altında bulunur.
 
-`CTaskDialog`İlk görüntülendiğinde, genişletilmiş bilgileri göstermez ve `strCollapsedLabel` genişletme düğmesinin yanına yerleştirir. Kullanıcı genişletme düğmesine tıkladığında, `CTaskDialog` *strExpandedInformation* görüntüler ve etiketi *strExpandedLabel*olarak değiştirir.
+`CTaskDialog`İlk görüntülendiğinde, genişletilmiş bilgileri göstermez ve `strCollapsedLabel` genişletme düğmesinin yanına yerleştirir. Kullanıcı genişletme düğmesine tıkladığında, `CTaskDialog` *strExpandedInformation* görüntüler ve etiketi *strExpandedLabel* olarak değiştirir.
 
 ### <a name="example"></a>Örnek
 
@@ -1379,11 +1380,11 @@ void SetProgressBarRange(
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlerleme çubuğunun konumu *nRangeMin* ve *nRangeMax*öğesine göre belirlenir. Örneğin, *nRangeMin* 50 ve *nrangemax* 100 ise, bir 75 konum, ilerleme çubuğunun üzerinde üst yarısında bulunur. İlerleme çubuğunun konumunu ayarlamak için [CTaskDialog:: SetProgressBarPosition](#setprogressbarposition) kullanın.
+İlerleme çubuğunun konumu *nRangeMin* ve *nRangeMax* öğesine göre belirlenir. Örneğin, *nRangeMin* 50 ve *nrangemax* 100 ise, bir 75 konum, ilerleme çubuğunun üzerinde üst yarısında bulunur. İlerleme çubuğunun konumunu ayarlamak için [CTaskDialog:: SetProgressBarPosition](#setprogressbarposition) kullanın.
 
 İlerleme çubuğunu göstermek için TDF_SHOW_PROGRESS_BAR seçeneğinin etkinleştirilmesi ve TDF_SHOW_MARQUEE_PROGRESS_BAR etkinleştirilmemelidir. Bu yöntem TDF_SHOW_PROGRESS_BAR otomatik olarak ayarlar ve TDF_SHOW_MARQUEE_PROGRESS_BAR temizler. [CTaskDialog sınıfının](../../mfc/reference/ctaskdialog-class.md)bu örneğinin seçeneklerini el ile değiştirmek Için [CTaskDialog:: SetOptions](#setoptions) kullanın.
 
-Bu yöntem, *nRangeMin* *nRangeMax*değerinden küçük olmaması [halinde makrosuz](diagnostic-services.md#ensure) bir özel durum oluşturur. Bu yöntem, `CTaskDialog` zaten görüntüleniyorsa ve bir kayan yazı ilerleme çubuğu içeriyorsa bir özel durum oluşturur.
+Bu yöntem, *nRangeMin* *nRangeMax* değerinden küçük olmaması [halinde makrosuz](diagnostic-services.md#ensure) bir özel durum oluşturur. Bu yöntem, `CTaskDialog` zaten görüntüleniyorsa ve bir kayan yazı ilerleme çubuğu içeriyorsa bir özel durum oluşturur.
 
 ### <a name="example"></a>Örnek
 
@@ -1406,7 +1407,7 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 
 Bu yöntem, zaten görüntüleniyorsa ve bir kayan yazı ilerleme çubuğu içeriyorsa, makroyu [güvence altına](diagnostic-services.md#ensure) alarak bir özel durum oluşturur `CTaskDialog` .
 
-Aşağıdaki tabloda *nState*için olası değerler listelenmektedir. Bu durumda, ilerleme çubuğu, belirlenen durma konumuna ulaşıncaya kadar normal renkle doldurulur. Bu noktada, duruma göre renk değiştirilir.
+Aşağıdaki tabloda *nState* için olası değerler listelenmektedir. Bu durumda, ilerleme çubuğu, belirlenen durma konumuna ulaşıncaya kadar normal renkle doldurulur. Bu noktada, duruma göre renk değiştirilir.
 
 |Ad|Açıklama|
 |-|-|
@@ -1553,7 +1554,7 @@ Kullanıcı tarafından yapılan seçime karşılık gelen bir tamsayı.
 
 Bu statik yöntem, `CTaskDialog` kodunuzda açıkça bir nesne oluşturmadan sınıfın bir örneğini oluşturmanızı sağlar `CTaskDialog` . Bir nesne olmadığından, `CTaskDialog` `CTaskDialog` kullanıcıya göstermek için bu yöntemi kullanırsanız, başka bir yöntemi çağrılamaz `CTaskDialog` .
 
-Bu yöntem, uygulamanızın kaynak dosyasındaki verileri kullanarak komut düğmesi denetimleri oluşturur. Kaynak dosyasındaki dize tablosunda, ilişkili dize kimliklerine sahip birkaç dize vardır. Bu yöntem, *nIDCommandControlsFirst* ve *nCommandControlsLast*dahil olmak üzere dize tablosundaki her geçerli giriş için bir komut düğmesi denetimi ekler. Bu komut düğmesi denetimlerinde, dize tablosundaki dize denetimin başlığı ve dize KIMLIĞI denetimin KIMLIĞIDIR.
+Bu yöntem, uygulamanızın kaynak dosyasındaki verileri kullanarak komut düğmesi denetimleri oluşturur. Kaynak dosyasındaki dize tablosunda, ilişkili dize kimliklerine sahip birkaç dize vardır. Bu yöntem, *nIDCommandControlsFirst* ve *nCommandControlsLast* dahil olmak üzere dize tablosundaki her geçerli giriş için bir komut düğmesi denetimi ekler. Bu komut düğmesi denetimlerinde, dize tablosundaki dize denetimin başlığı ve dize KIMLIĞI denetimin KIMLIĞIDIR.
 
 Geçerli seçeneklerin listesi için bkz. [CTaskDialog:: SetOptions](#setoptions) .
 

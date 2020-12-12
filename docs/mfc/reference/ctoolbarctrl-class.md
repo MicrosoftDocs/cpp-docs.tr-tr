@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CToolBarCtrl sınıfı'
 title: CToolBarCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -182,12 +183,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: e62d1a6773e1b65eaa1d2f0a8050873c673b5039
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 769403be6e4015df1de04d41fcb0a1b2721ee434
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318565"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 
@@ -402,7 +403,7 @@ BOOL AddButtons(
 Eklenecek düğme sayısı.
 
 *Lpbutton*<br/>
-`TBBUTTON`Eklenecek düğmeler hakkında bilgi içeren bir yapı dizisinin adresi. Dizide *nNumButtons*tarafından belirtilen sayıda öğe olmalıdır.
+`TBBUTTON`Eklenecek düğmeler hakkında bilgi içeren bir yapı dizisinin adresi. Dizide *nNumButtons* tarafından belirtilen sayıda öğe olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -625,7 +626,7 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *dwStyle*<br/>
-Toolbar denetiminin stilini belirtir. Araç çubuklarının her zaman WS_CHILD stili olmalıdır. Ayrıca, **açıklamalar**altında açıklandığı gibi araç çubuğu stillerinin ve pencere stillerinin birleşimini de belirtebilirsiniz.
+Toolbar denetiminin stilini belirtir. Araç çubuklarının her zaman WS_CHILD stili olmalıdır. Ayrıca, **açıklamalar** altında açıklandığı gibi araç çubuğu stillerinin ve pencere stillerinin birleşimini de belirtebilirsiniz.
 
 *Rect*<br/>
 İsteğe bağlı olarak, Toolbar denetiminin boyutunu ve konumunu belirtir. Bu, bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
@@ -682,7 +683,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 Toolbar denetiminin stilini belirtir. Araç çubuklarının her zaman WS_CHILD stili olmalıdır. Ayrıca, [oluşturma](#create)konusunun **açıklamalar** bölümünde açıklandığı gibi araç çubuğu stillerinin ve pencere stillerinin birleşimini de belirtebilirsiniz.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.
@@ -696,7 +697,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CreateEx`Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın. `CreateEx`*dwExStyle*tarafından belirtilen Genişletilmiş Windows stilleriyle denetimi oluşturur. [Setil dedstyle](#setextendedstyle)kullanarak bir denetime özgü genişletilmiş stilleri ayarlayın. Örneğin, `CreateEx` Bu tür stilleri ws_ex_contexthelp olarak ayarlamak için kullanın, ancak `SetExtendedStyle` Bu tür stilleri TBSTYLE_EX_DRAWDDARROWS olarak ayarlamak için kullanın. Daha fazla bilgi için Windows SDK [araç çubuğu genişletilmiş stillerinde](/windows/win32/Controls/toolbar-extended-styles) açıklanan stillere bakın.
+`CreateEx`Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın. `CreateEx`*dwExStyle* tarafından belirtilen Genişletilmiş Windows stilleriyle denetimi oluşturur. [Setil dedstyle](#setextendedstyle)kullanarak bir denetime özgü genişletilmiş stilleri ayarlayın. Örneğin, `CreateEx` Bu tür stilleri ws_ex_contexthelp olarak ayarlamak için kullanın, ancak `SetExtendedStyle` Bu tür stilleri TBSTYLE_EX_DRAWDDARROWS olarak ayarlamak için kullanın. Daha fazla bilgi için Windows SDK [araç çubuğu genişletilmiş stillerinde](/windows/win32/Controls/toolbar-extended-styles) açıklanan stillere bakın.
 
 ## <a name="ctoolbarctrlctoolbarctrl"></a><a name="ctoolbarctrl"></a> CToolBarCtrl:: CToolBarCtrl
 
@@ -1325,7 +1326,7 @@ int HitTest(LPPOINT ppt) const;
 ### <a name="parameters"></a>Parametreler
 
 *PPT*<br/>
-Üye içindeki isabet testinin [POINT](/windows/win32/api/windef/ns-windef-point) x koordinatını `x` ve üye içindeki isabet testinin y koordinatını içeren bir nokta yapısına yönelik işaretçi `y` . Koordinatlar, araç çubuğunun istemci alanına göredir.
+Üye içindeki isabet testinin [](/windows/win32/api/windef/ns-windef-point) x koordinatını `x` ve üye içindeki isabet testinin y koordinatını içeren bir nokta yapısına yönelik işaretçi `y` . Koordinatlar, araç çubuğunun istemci alanına göredir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1610,7 +1611,7 @@ BOOL MapAccelerator(
 Eşlenecek Hızlandırıcı karakteri. Bu karakter, düğmenin metninde altı çizili olan karakterdir.
 
 *pIDBtn*<br/>
-*ChAccel*içinde belirtilen hızlandırıcıya karşılık gelen düğmenin komut tanımlayıcısını alan bir UINT işaretçisi.
+*ChAccel* içinde belirtilen hızlandırıcıya karşılık gelen düğmenin komut tanımlayıcısını alan bir UINT işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2299,7 +2300,7 @@ Araç çubuğunun yeni sınırlayıcı dikdörtgenini alacak olan [CRect](../../
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç çubuğu, kendisini istenen sayı veya satırlara yeniden boyutlandıramayacak, *bDaha*büyük bir değere bağlı olarak, kendisini bir sonraki büyük veya sonraki küçük geçerli boyuta göre yeniden boyutlandırır. *Bbüyüt* doğru ise, yeni satır sayısı istenen sayıdan daha büyük olacaktır. *Bbüyüt* yanlış ise, yeni satır sayısı istenen sayıdan daha küçük olacaktır.
+Araç çubuğu, kendisini istenen sayı veya satırlara yeniden boyutlandıramayacak, *bDaha* büyük bir değere bağlı olarak, kendisini bir sonraki büyük veya sonraki küçük geçerli boyuta göre yeniden boyutlandırır. *Bbüyüt* doğru ise, yeni satır sayısı istenen sayıdan daha büyük olacaktır. *Bbüyüt* yanlış ise, yeni satır sayısı istenen sayıdan daha küçük olacaktır.
 
 Düğmeler, tüm satırların aynı sayıda düğmeye sahip (Belki de son satır hariç) olarak düzenlenebilmesine benzer şekilde düzenlenebiliyorsanız, belirtilen sayıda satır araç çubuğu için geçerlidir. Örneğin, dört düğme içeren bir araç çubuğu üç satıra boyutlandırılıyordu çünkü son iki satır daha kısa olmalıdır. Bunu üç satıra göre boyutlandırmaya çalışırsanız, *BDAHA* doğru olursa dört satır ve *bDaha büyükse* ise iki satır alırsınız.
 

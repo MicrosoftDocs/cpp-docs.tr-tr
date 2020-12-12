@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CWaitCursor sınıfı'
 title: CWaitCursor sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-ms.openlocfilehash: dfeedad18b3ebcefedff446699f074c86037a4a3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9552dcd6f5304c96d550e153870f69d78d932ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318474"
 ---
 # <a name="cwaitcursor-class"></a>CWaitCursor sınıfı
 
 Uzun bir işlem gerçekleştirirken genellikle kum saati olarak görünen Bekleme imlecini göstermek için tek satırlık bir yol sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CWaitCursor
@@ -43,7 +44,7 @@ class CWaitCursor
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CWaitCursor`taban sınıfına sahip değildir.
+`CWaitCursor` taban sınıfına sahip değildir.
 
 İyi Windows programlama uygulamaları, dikkat çekici bir süre alan bir işlem gerçekleştirirken bir bekleme imleci görüntülemenizi gerektirir.
 
@@ -73,7 +74,7 @@ Bekleme imlecini görüntülemenin bir başka yolu da [CCmdTarget:: BeginWaitCur
 
 [!code-cpp[NVC_MFCWindowing#62](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_1.cpp)]
 
-## <a name="cwaitcursorcwaitcursor"></a><a name="cwaitcursor"></a>CWaitCursor:: CWaitCursor
+## <a name="cwaitcursorcwaitcursor"></a><a name="cwaitcursor"></a> CWaitCursor:: CWaitCursor
 
 Bekleme imleci göstermek için, `CWaitCursor` uzun işlem gerçekleştiren koddan önce bir nesne bildirmeniz yeterlidir.
 
@@ -96,7 +97,7 @@ Yalnızca işlevinizin bir kısmında Bekleme imlecini etkin hale getirmek için
 
 [!code-cpp[NVC_MFCWindowing#63](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_2.cpp)]
 
-## <a name="cwaitcursorrestore"></a><a name="restore"></a>CWaitCursor:: restore
+## <a name="cwaitcursorrestore"></a><a name="restore"></a> CWaitCursor:: restore
 
 Bekleme imlecini geri yüklemek için, bir ileti kutusu veya iletişim kutusu görüntüleme gibi bir işlem gerçekleştirdikten sonra bu işlevi çağırın, bu durum, Bekleme imlecini başka bir imlece değiştirebilir.
 

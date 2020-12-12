@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çıkış parametreleri'
 title: Çıktı Parametreleri
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - procedure calls
 - procedure calls, stored procedures
 ms.assetid: 4f7c2700-1c2d-42f3-8c9f-7e83962b2442
-ms.openlocfilehash: ece626eb7fbecae9b90321ccc2569607897cf520
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c52877483d40d7de1a8313eb806769ce92af7337
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316940"
 ---
 # <a name="output-parameters"></a>Çıktı Parametreleri
 
@@ -38,7 +39,7 @@ END_PARAM_MAP()
 
 Uygulamanız, saklı yordamlardan döndürülen çıktıyı işlemelidir. Farklı OLE DB sağlayıcıları, sonuç işleme sırasında çıkış parametrelerini ve dönüş değerlerini farklı zamanlarda döndürür. Örneğin, SQL Server (SQLOLEDB) için Microsoft OLE DB sağlayıcısı, saklı yordam tarafından döndürülen sonuç kümelerini aldıktan veya iptal edene kadar çıkış parametreleri ve dönüş kodları sağlamaz. Çıkış, sunucudan son TDS paketinde döndürülür.
 
-## <a name="row-count"></a>Satır sayısı
+## <a name="row-count"></a>Satır Sayısı
 
 OutParameters içeren bir saklı yordamı yürütmek için OLE DB tüketici şablonlarını kullanırsanız, satır sayısı, satır kümesini kapatıncaya kadar ayarlanamaz.
 
@@ -53,8 +54,8 @@ as
 return 0
 ```
 
-`@_rowcount` outparameter, test tablosundan kaç satır döndürüldüğünü bildirir. Ancak, bu saklı yordam satır sayısını 50 olarak sınırlandırır. Örneğin, testte 100 satır varsa, satır sayısı 50 olacaktır (çünkü bu kod yalnızca en üstteki 50 satırları alır). Tabloda yalnızca 30 satır varsa, satır sayısı 30 olur. Değerini döndürmeden önce outparameter 'ı doldurmak için `Close` veya `CloseAll` çağırdığınızdan emin olun.
+`@_rowcount`Outparameter, test tablosundan kaç satır döndürüldüğünü bildirir. Ancak, bu saklı yordam satır sayısını 50 olarak sınırlandırır. Örneğin, testte 100 satır varsa, satır sayısı 50 olacaktır (çünkü bu kod yalnızca en üstteki 50 satırları alır). Tabloda yalnızca 30 satır varsa, satır sayısı 30 olur. `Close` `CloseAll` Değerini getirmeden önce outparameter 'ı çağırdığınızdan veya doldurduğunuzdan emin olun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Saklı Yordamları Kullanma](../../data/oledb/using-stored-procedures.md)
+[Saklı yordamları kullanma](../../data/oledb/using-stored-procedures.md)

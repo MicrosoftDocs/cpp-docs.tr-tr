@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Wizard-Generated Erişimcilerde alan durumu veri üyeleri'
 title: Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: 476c91f55071f6d1c7f243257273a32798813cae
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 0e0df633883b83d7d8fd0966082fbf00d2a72e13
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924642"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317655"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 
@@ -24,7 +25,7 @@ ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz
 
 Bir tüketici oluşturmak için **ATL OLE DB Tüketici Sihirbazı** 'nı kullandığınızda, sihirbaz, sütun haritanızda belirttiğiniz her alan için Kullanıcı kayıt sınıfında bir veri üyesi oluşturur. Her veri üyesi türüdür `DWORD` ve ilgili alanına karşılık gelen bir durum değeri içerir.
 
-Örneğin, bir veri üyesi *m_OwnerID* için, sihirbaz alan durumu ( *dwOwnerIDStatus* ) için ek bir veri üyesi ve alan uzunluğu ( *dwOwnerIDLength* ) için başka bir tane oluşturur. Ayrıca, COLUMN_ENTRY_LENGTH_STATUS girdileri olan bir sütun haritası da oluşturur.
+Örneğin, bir veri üyesi *m_OwnerID* için, sihirbaz alan durumu (*dwOwnerIDStatus*) için ek bir veri üyesi ve alan uzunluğu (*dwOwnerIDLength*) için başka bir tane oluşturur. Ayrıca, COLUMN_ENTRY_LENGTH_STATUS girdileri olan bir sütun haritası da oluşturur.
 
 Bu, aşağıdaki kodda gösterilmiştir:
 

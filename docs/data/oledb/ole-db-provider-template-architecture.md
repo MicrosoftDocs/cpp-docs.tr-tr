@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE DB sağlayıcı şablonu mimarisi'
 title: OLE DB Sağlayıcı Şablonu Mimarisi
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: 89e07f95853c3611b7cceaef3f247c220c630add
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1cc1619ab7ed13c2d7962f75229df2ecd8cf0d78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317135"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
 
@@ -21,7 +22,7 @@ OLE DB sağlayıcısı mimarisi bir veri kaynağı nesnesi ve bir veya daha fazl
 
 ![Sağlayıcı mimarisi](../../data/oledb/media/vc4twb1.gif "Sağlayıcı mimarisi")
 
-**OLE DB sağlayıcı Sihirbazı**tarafından oluşturulan kaynak dosyalarla birlikte, OLE DB şablonları bir veri kaynağı nesnesi uygular. Oturum, OLE DB karşılık gelen bir nesnedir `TSession` .
+**OLE DB sağlayıcı Sihirbazı** tarafından oluşturulan kaynak dosyalarla birlikte, OLE DB şablonları bir veri kaynağı nesnesi uygular. Oturum, OLE DB karşılık gelen bir nesnedir `TSession` .
 
 ## <a name="mandatory-and-optional-interfaces"></a>Zorunlu ve Isteğe bağlı arabirimler
 

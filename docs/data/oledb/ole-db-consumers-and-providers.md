@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE DB tüketicileri ve sağlayıcılar'
 title: OLE DB Tüketicileri ve Sağlayıcıları
 ms.date: 10/22/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - OLE DB consumers
 - OLE DB, data model
 ms.assetid: 886cb39d-652b-4557-93f0-4b1b0754d8bc
-ms.openlocfilehash: d57ded9d084971c3562fc7f22e6a1a12a4e3368d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: dedcbe7837cf7fad5bc9db8832e34edd3859a02b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210087"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317148"
 ---
 # <a name="ole-db-consumers-and-providers"></a>OLE DB Tüketicileri ve Sağlayıcıları
 

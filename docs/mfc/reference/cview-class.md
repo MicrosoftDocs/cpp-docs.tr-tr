@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CView sınıfı'
 title: CView sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -52,18 +53,18 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-ms.openlocfilehash: 4c9623d34320b4489e6c086147cfff1038e95162
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8bb45bff3f63c2c1f9fd01d9c50091f5a3117d74
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318487"
 ---
 # <a name="cview-class"></a>CView sınıfı
 
 Kullanıcı tanımlı görünüm sınıfları için temel işlevleri sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class AFX_NOVTABLE CView : public CWnd
@@ -139,7 +140,7 @@ Ek `CScrollView` olarak Microsoft Foundation Class Kitaplığı, öğesinden tü
 
 - Liste denetimleriyle belge görünümü mimarisinin kullanılmasına izin veren bir görünüm olan [Clienstview](../../mfc/reference/clistview-class.md).
 
-- [CRecordView](../../mfc/reference/crecordview-class.md)İletişim kutusu denetimlerinde veritabanı kayıtlarını görüntüleyen bir görünüm.
+- [](../../mfc/reference/crecordview-class.md)İletişim kutusu denetimlerinde veritabanı kayıtlarını görüntüleyen bir görünüm.
 
 - [CRichEditView](../../mfc/reference/cricheditview-class.md), zengin düzenleme denetimleriyle belge görünümü mimarisinin kullanılmasına izin veren bir görünüm.
 
@@ -163,7 +164,7 @@ Ek `CScrollView` olarak Microsoft Foundation Class Kitaplığı, öğesinden tü
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="cviewcview"></a><a name="cview"></a>CView:: CView
+## <a name="cviewcview"></a><a name="cview"></a> CView:: CView
 
 Bir `CView` nesnesi oluşturur.
 
@@ -175,7 +176,7 @@ CView();
 
 Çerçeve, yeni bir çerçeve penceresi oluşturulduğunda veya pencere bölündüğünde oluşturucuyu çağırır. Belge eklendikten sonra görünümü başlatmak için [OnInitialUpdate](#oninitialupdate) üye işlevini geçersiz kılın.
 
-## <a name="cviewdoprepareprinting"></a><a name="doprepareprinting"></a>CView::D oPreparePrinting
+## <a name="cviewdoprepareprinting"></a><a name="doprepareprinting"></a> CView::D oPreparePrinting
 
 Yazdır iletişim kutusunu çağırmak ve bir yazıcı cihaz bağlamı oluşturmak için [OnPreparePrinting](#onprepareprinting) 'in geçersiz kılmada bu işlevi çağırın.
 
@@ -198,7 +199,7 @@ Bu işlevin davranışı, yazdırma veya Baskı Önizleme ( `m_bPreview` *pInfo*
 
 Bir dosyanın önizlemesi varsa, bu işlev geçerli yazıcı ayarlarını kullanarak bir yazıcı cihaz bağlamı oluşturur; Bu cihaz bağlamı, önizleme sırasında yazıcının benzetimini yapmak için kullanılır.
 
-## <a name="cviewgetdocument"></a><a name="getdocument"></a>CView:: GetDocument
+## <a name="cviewgetdocument"></a><a name="getdocument"></a> CView:: GetDocument
 
 Görünümün belgesine bir işaretçi almak için bu işlevi çağırın.
 
@@ -214,7 +215,7 @@ Görünümle ilişkili [CDocument](../../mfc/reference/cdocument-class.md) nesne
 
 Bu, belgenin üye işlevlerini çağıralmanıza olanak sağlar.
 
-## <a name="cviewisselected"></a><a name="isselected"></a>CView:: IsSelected
+## <a name="cviewisselected"></a><a name="isselected"></a> CView:: IsSelected
 
 Belirtilen belge öğesinin seçili olup olmadığını denetlemek için Framework tarafından çağırılır.
 
@@ -235,7 +236,7 @@ Belirtilen belge öğesi seçildiyse sıfır dışı; Aksi takdirde 0.
 
 Bu işlevin varsayılan uygulamasında FALSE değeri döndürülür. [CDocItem](../../mfc/reference/cdocitem-class.md) nesnelerini kullanarak seçimi uyguladığınızda bu işlevi geçersiz kılın. Görünümlerinizin OLE öğeleri içermesi durumunda bu işlevi geçersiz kılmalısınız.
 
-## <a name="cviewonactivateframe"></a><a name="onactivateframe"></a>CView:: OnActivateFrame
+## <a name="cviewonactivateframe"></a><a name="onactivateframe"></a> CView:: OnActivateFrame
 
 Görünümü içeren çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.
 
@@ -263,7 +264,7 @@ Etkinleştirilecek çerçeve penceresine yönelik işaretçi.
 
 Görünümle ilişkili çerçeve penceresi etkinleştirildiğinde veya devre dışı bırakıldığında özel işlem gerçekleştirmek istiyorsanız bu üye işlevini geçersiz kılın. Örneğin, [CFormView](../../mfc/reference/cformview-class.md) , odağa sahip olan denetimi kaydettiğinde ve geri yüklediğinde bu geçersiz kılma işlemini gerçekleştirir.
 
-## <a name="cviewonactivateview"></a><a name="onactivateview"></a>CView:: OnActivateView
+## <a name="cviewonactivateview"></a><a name="onactivateview"></a> CView:: OnActivateView
 
 Bir görünüm etkinleştirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.
 
@@ -293,7 +294,7 @@ Bu işlevin varsayılan uygulanması, odağı etkinleştirilmekte olan görünü
 
 [CFrameWnd:: GetActiveView](../../mfc/reference/cframewnd-class.md#setactiveview) , [CFrameWnd:: GetActiveView](../../mfc/reference/cframewnd-class.md#getactiveview) 'ın döndürdüğü bir görünümle farklı olduğunda bu parametreler farklılık gösterir. Bu, en sık bölünmüş pencereler ile gerçekleşir.
 
-## <a name="cviewonbeginprinting"></a><a name="onbeginprinting"></a>CView:: OnBeginPrinting
+## <a name="cviewonbeginprinting"></a><a name="onbeginprinting"></a> CView:: OnBeginPrinting
 
 Bir yazdırma veya baskı önizleme işinin başlangıcında, çağrıldıktan sonra Framework tarafından çağırılır `OnPreparePrinting` .
 
@@ -317,7 +318,7 @@ Bu işlevin varsayılan uygulanması hiçbir şey yapmaz. Özellikle yazdırmak 
 
 Bu işlevi, yazıcı cihaz bağlamının özelliklerine bağlı olan başlatma işlemleri gerçekleştirmek için de kullanabilirsiniz. Örneğin, belgeyi yazdırmak için gereken sayfa sayısı, kullanıcının Yazdır iletişim kutusu (sayfa uzunluğu gibi) tarafından belirtilen ayarlara bağlı olabilir. Böyle bir durumda, belge uzunluğunu, normalde bunu yaptığınız [OnPreparePrinting](#onprepareprinting) üye işlevinde belirtemezsiniz; iletişim kutusu ayarlarına bağlı olarak, yazıcı cihaz bağlamı oluşturuluncaya kadar beklemeniz gerekir. [OnBeginPrinting](#onbeginprinting) , yazıcı cihazı bağlamını temsil eden [CDC](../../mfc/reference/cdc-class.md) nesnesine erişmenizi sağlayan ilk geçersiz kılınabilir işlevdir, bu sayede belge uzunluğunu Bu işlevden ayarlayabilirsiniz. Belge uzunluğu bu süre içinde belirtilmemişse, baskı önizleme sırasında bir kaydırma çubuğu gösterilmediğini unutmayın.
 
-## <a name="cviewondragenter"></a><a name="ondragenter"></a>CView:: OnDragEnter
+## <a name="cviewondragenter"></a><a name="ondragenter"></a> CView:: OnDragEnter
 
 Fare ilk kez bırakma hedefi penceresinin kaydırılmamış bölgesine girdiğinde Framework tarafından çağırılır.
 
@@ -341,7 +342,7 @@ Görünümün istemci alanına göre geçerli fare konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DROPEFFECT numaralandırılmış türden bir değer; Kullanıcı bu konumda nesneyi bırakması durumunda oluşabilecek bırakma türünü gösterir. Bırakma türü genellikle *dwKeyState*tarafından belirtilen geçerli anahtar durumuna bağlıdır. Anahtar durumlarının DROPEFFECT değerlere standart eşlemesi:
+DROPEFFECT numaralandırılmış türden bir değer; Kullanıcı bu konumda nesneyi bırakması durumunda oluşabilecek bırakma türünü gösterir. Bırakma türü genellikle *dwKeyState* tarafından belirtilen geçerli anahtar durumuna bağlıdır. Anahtar durumlarının DROPEFFECT değerlere standart eşlemesi:
 
 - Veri nesnesi bu pencerede bırakılamaz DROPEFFECT_NONE.
 
@@ -359,7 +360,7 @@ Varsayılan uygulama hiçbir şey yapmaz ve DROPEFFECT_NONE döndürmesidir.
 
 [Ondragon](#ondragover) üye işlevine gelecekteki çağrılara hazırlanmak için bu işlevi geçersiz kılın. Veri nesnesinden gerekli olan tüm veriler, daha sonra üye işlevinde kullanılmak üzere şu anda alınmalıdır `OnDragOver` . Ayrıca, kullanıcıya görsel geri bildirimde bulunmak için Görünüm şu anda güncellenmelidir. Daha fazla bilgi için [OLE sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-ole.md#implement-a-drop-target)makalesine bakın.
 
-## <a name="cviewondragleave"></a><a name="ondragleave"></a>CView:: OnDragLeave
+## <a name="cviewondragleave"></a><a name="ondragleave"></a> CView:: OnDragLeave
 
 Fare bu pencere için geçerli bırakma alanından taşındığında, bir sürükleme işlemi sırasında Framework tarafından çağırılır.
 
@@ -371,7 +372,7 @@ virtual void OnDragLeave();
 
 Geçerli görünümün, nesne sürüklendiğinde ve bırakıldığında hiçbir görsel Kullanıcı geri bildirimini kaldırma gibi, [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) çağrılarında gerçekleştirilen herhangi bir eylemi temizlemesi gerekiyorsa bu işlevi geçersiz kılın.
 
-## <a name="cviewondragover"></a><a name="ondragover"></a>CView:: Ondragon
+## <a name="cviewondragover"></a><a name="ondragover"></a> CView:: Ondragon
 
 Fare bırakma hedefi penceresi üzerine taşındığında bir sürükleme işlemi sırasında Framework tarafından çağırılır.
 
@@ -395,7 +396,7 @@ Görüntüleme istemci alanına göre geçerli fare konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DROPEFFECT numaralandırılmış türden bir değer; Kullanıcı bu konumda nesneyi bırakması durumunda oluşabilecek bırakma türünü gösterir. Bırakma türü genellikle *dwKeyState*tarafından gösterildiği gibi geçerli anahtar durumuna bağlıdır. Anahtar durumlarının DROPEFFECT değerlere standart eşlemesi:
+DROPEFFECT numaralandırılmış türden bir değer; Kullanıcı bu konumda nesneyi bırakması durumunda oluşabilecek bırakma türünü gösterir. Bırakma türü genellikle *dwKeyState* tarafından gösterildiği gibi geçerli anahtar durumuna bağlıdır. Anahtar durumlarının DROPEFFECT değerlere standart eşlemesi:
 
 - Veri nesnesi bu pencerede bırakılamaz DROPEFFECT_NONE.
 
@@ -413,7 +414,7 @@ Varsayılan uygulama hiçbir şey yapmaz ve DROPEFFECT_NONE döndürmesidir.
 
 Sürükleme işlemi sırasında kullanıcıya görsel geribildirim vermek için bu işlevi geçersiz kılın. Bu işlev sürekli çağrıldığından, içinde yer alan tüm kodlar mümkün olduğunca en iyi duruma gelmelidir. Daha fazla bilgi için [OLE sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-ole.md#implement-a-drop-target)makalesine bakın.
 
-## <a name="cviewondragscroll"></a><a name="ondragscroll"></a>CView:: OnDragScroll
+## <a name="cviewondragscroll"></a><a name="ondragscroll"></a> CView:: OnDragScroll
 
 Noktanın kaydırma bölgesinde olup olmadığını anlamak için [OnDragEnter](#ondragenter) veya [OnDragOver](#ondragover) çağrılmadan önce Framework tarafından çağırılır.
 
@@ -433,7 +434,7 @@ Değiştirici anahtarlarının durumunu içerir. Bu, aşağıdakilerden herhangi
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DROPEFFECT numaralandırılmış türden bir değer; Kullanıcı bu konumda nesneyi bırakması durumunda oluşabilecek bırakma türünü gösterir. Bırakma türü genellikle *dwKeyState*tarafından belirtilen geçerli anahtar durumuna bağlıdır. Anahtar durumlarının DROPEFFECT değerlere standart eşlemesi:
+DROPEFFECT numaralandırılmış türden bir değer; Kullanıcı bu konumda nesneyi bırakması durumunda oluşabilecek bırakma türünü gösterir. Bırakma türü genellikle *dwKeyState* tarafından belirtilen geçerli anahtar durumuna bağlıdır. Anahtar durumlarının DROPEFFECT değerlere standart eşlemesi:
 
 - Veri nesnesi bu pencerede bırakılamaz DROPEFFECT_NONE.
 
@@ -451,7 +452,7 @@ Daha fazla bilgi için bkz. MFC gelişmiş kavramlar örnek [Oclient](../../over
 
 Bu olay için özel davranış sağlamak istediğinizde bu işlevi geçersiz kılın. Varsayılan uygulama, imleç her pencerenin kenarlığının içindeki varsayılan kaydırma bölgesine sürüklendiğinde otomatik olarak pencereleri kaydırır. Daha fazla bilgi için [OLE sürükle ve bırak: bir bırakma hedefi uygulama](../../mfc/drag-and-drop-ole.md#implement-a-drop-target)makalesine bakın.
 
-## <a name="cviewondraw"></a><a name="ondraw"></a>CView:: OnDraw
+## <a name="cviewondraw"></a><a name="ondraw"></a> CView:: OnDraw
 
 Belgenin bir görüntüsünü işlemek için Framework tarafından çağırılır.
 
@@ -472,7 +473,7 @@ Belgenin görünümünü görüntülemek için bu işlevi geçersiz kılmanız g
 
 Çizimi iyileştirmek için, belirli bir dikdörtgenin çizilip çizilmeyeceğini öğrenmek için cihaz bağlamının [RectVisible](../../mfc/reference/cdc-class.md#rectvisible) üye işlevini çağırın. Normal ekran görüntüleme ve yazdırma arasında ayrım yapmanız gerekiyorsa, cihaz bağlamının [IsPrinting](../../mfc/reference/cdc-class.md#isprinting) üye işlevini çağırın.
 
-## <a name="cviewondrop"></a><a name="ondrop"></a>CView:: OnDrop
+## <a name="cviewondrop"></a><a name="ondrop"></a> CView:: OnDrop
 
 Kullanıcı geçerli bir bırakma hedefi üzerinden bir veri nesnesi yayımlarsa Framework tarafından çağırılır.
 
@@ -512,7 +513,7 @@ Bir OLE bırakma efektinin görünümün istemci alanına uygulanması için bu 
 > [!NOTE]
 > Bu görünüm sınıfında [OnDropEx](#ondropex) için bir geçersiz kılma varsa Framework bu işlevi çağırmaz.
 
-## <a name="cviewondropex"></a><a name="ondropex"></a>CView:: OnDropEx
+## <a name="cviewondropex"></a><a name="ondropex"></a> CView:: OnDropEx
 
 Kullanıcı geçerli bir bırakma hedefi üzerinden bir veri nesnesi yayımlarsa Framework tarafından çağırılır.
 
@@ -540,7 +541,7 @@ Görüntüleme istemci alanına göre geçerli fare konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*İşaret*tarafından belirtilen konumdaki bırakma denemesinden kaynaklanan bırakma etkisi. Bu, *dropEffectList*tarafından belirtilen değerlerden biri olmalıdır. Bırakma etkileri, açıklamalar bölümünde ele alınmıştır.
+*İşaret* tarafından belirtilen konumdaki bırakma denemesinden kaynaklanan bırakma etkisi. Bu, *dropEffectList* tarafından belirtilen değerlerden biri olmalıdır. Bırakma etkileri, açıklamalar bölümünde ele alınmıştır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -560,7 +561,7 @@ Geçersiz kılmanın `OnDropEx` sağ fare düğmesini sorgulaması gerekir. [OnD
 
 - Sağ fare düğmesi kapalıysa, geçersiz kılma bunu standart bir bırakma isteği olarak işlemelidir. *DropDefault*'da belirtilen bırakma efektini kullanın. Alternatif olarak, geçersiz kılma `OnDrop` işlemi, bu bırakma işlemini işleyecek olduğunu göstermek için kukla değeri (-1) döndürebilir.
 
-*pDataObject* `COleDataObject` Pano veri biçimini ve belirtilen noktada bırakılan verileri Incelemek için pDataObject kullanın.
+ `COleDataObject` Pano veri biçimini ve belirtilen noktada bırakılan verileri Incelemek için pDataObject kullanın.
 
 Bırakma etkileri, bir bırakma işlemiyle ilişkili eylemi anlatmaktadır. Aşağıdaki bırakma etkileri listesine bakın:
 
@@ -576,7 +577,7 @@ Bırakma etkileri, bir bırakma işlemiyle ilişkili eylemi anlatmaktadır. Aşa
 
 Varsayılan menü komutunu ayarlama hakkında daha fazla bilgi için, bu birimdeki Windows SDK ve [CMenu:: GetSafeHmenu](../../mfc/reference/cmenu-class.md#getsafehmenu) Içindeki [SetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem) bölümüne bakın.
 
-## <a name="cviewonendprinting"></a><a name="onendprinting"></a>CView:: OnEndPrinting
+## <a name="cviewonendprinting"></a><a name="onendprinting"></a> CView:: OnEndPrinting
 
 Bir belge yazdırıldıktan veya önizlendikten sonra Framework tarafından çağırılır.
 
@@ -598,7 +599,7 @@ Geçerli yazdırma işini açıklayan bir [CPrintInfo](../../mfc/reference/cprin
 
 Bu işlevin varsayılan uygulanması hiçbir şey yapmaz. [OnBeginPrinting](#onbeginprinting) üye işlevinde ayrıldığınız HERHANGI bir GDI kaynağını serbest bırakmak için bu işlevi geçersiz kılın.
 
-## <a name="cviewonendprintpreview"></a><a name="onendprintpreview"></a>CView:: OnEndPrintPreview
+## <a name="cviewonendprintpreview"></a><a name="onendprintpreview"></a> CView:: OnEndPrintPreview
 
 Kullanıcı baskı önizleme modundan çıktığında Framework tarafından çağırılır.
 
@@ -630,7 +631,7 @@ Bu işlevin varsayılan uygulanması [OnEndPrinting](#onendprinting) üye işlev
 
 `OnEndPrintPreview`Genellikle işlevin sonunda, geçersiz kılmanızda bulunan temel sınıf sürümünü her zaman çağırın.
 
-## <a name="cviewoninitialupdate"></a><a name="oninitialupdate"></a>CView:: OnInitialUpdate
+## <a name="cviewoninitialupdate"></a><a name="oninitialupdate"></a> CView:: OnInitialUpdate
 
 Görünüm belgeye ilk iliştirildikten sonra, ancak görünüm ilk görüntülenmeden önce Framework tarafından çağırılır.
 
@@ -642,7 +643,7 @@ virtual void OnInitialUpdate();
 
 Bu işlevin varsayılan uygulanması, bir ipucu bilgisi olmadan [OnUpdate](#onupdate) üye işlevini çağırır (diğer bir deyişle, *lipucu* parametresi için 0 varsayılan değerlerini kullanarak ve *phınt* parametresi için null). Belge hakkında bilgi gerektiren tek seferlik başlatma gerçekleştirmek için bu işlevi geçersiz kılın. Örneğin, uygulamanız sabit boyutlu belgeler içeriyorsa, belgenin boyutuna bağlı olarak bir görünümün kaydırma sınırlarını başlatmak için bu işlevi kullanabilirsiniz. Uygulamanız değişken boyutlu belgeleri destekliyorsa, belge her değiştiğinde kaydırma sınırlarını güncelleştirmek için [OnUpdate](#onupdate) kullanın.
 
-## <a name="cviewonpreparedc"></a><a name="onpreparedc"></a>CView:: Onhazırlık EDC
+## <a name="cviewonpreparedc"></a><a name="onpreparedc"></a> CView:: Onhazırlık EDC
 
 [OnDraw](#ondraw) üye işlevi ekran görüntüsü için çağrılmadan önce ve yazdırma ya da baskı önizleme sırasında her sayfa için [OnPrint](#onprint) üye işlevi çağrılmadan önce Framework tarafından çağırılır.
 
@@ -680,7 +681,7 @@ Bu işlevin varsayılan uygulanması, işlev ekran görüntüsü için çağrıl
 
 [!code-cpp[NVC_MFCDocView#183](../../mfc/codesnippet/cpp/cview-class_1.cpp)]
 
-## <a name="cviewonprepareprinting"></a><a name="onprepareprinting"></a>CView:: OnPreparePrinting
+## <a name="cviewonprepareprinting"></a><a name="onprepareprinting"></a> CView:: OnPreparePrinting
 
 Bir belge yazdırılmadan ya da önizlenmeden önce Framework tarafından çağırılır.
 
@@ -701,9 +702,9 @@ Yazdırmaya başlamak için sıfır dışında; yazdırma işi iptal edildiyse 0
 
 Varsayılan uygulama hiçbir şey yapmaz.
 
-Yazdırma ve baskı önizlemeyi etkinleştirmek için bu işlevi geçersiz kılmanız gerekir. [DoPreparePrinting](#doprepareprinting) üye işlevini çağırın, *pInfo* parametresini geçirerek dönüş değerini döndürün; `DoPreparePrinting`Yazdır iletişim kutusunu görüntüler ve bir yazıcı cihaz bağlamı oluşturur. Yazdır iletişim kutusunu varsayılanlar dışındaki değerlerle başlatmak istiyorsanız, *pInfo*üyelerine değerler atayın. Örneğin, belgenin uzunluğunu biliyorsanız, çağrılmadan önce değeri *pInfo* 'ın [SetMaxPage](../../mfc/reference/cprintinfo-structure.md#setmaxpage) üye işlevine geçirin `DoPreparePrinting` . Bu değer, Yazdır iletişim kutusunun Aralık bölümündeki to: kutusunda görüntülenir.
+Yazdırma ve baskı önizlemeyi etkinleştirmek için bu işlevi geçersiz kılmanız gerekir. [DoPreparePrinting](#doprepareprinting) üye işlevini çağırın, *pInfo* parametresini geçirerek dönüş değerini döndürün; `DoPreparePrinting`Yazdır iletişim kutusunu görüntüler ve bir yazıcı cihaz bağlamı oluşturur. Yazdır iletişim kutusunu varsayılanlar dışındaki değerlerle başlatmak istiyorsanız, *pInfo* üyelerine değerler atayın. Örneğin, belgenin uzunluğunu biliyorsanız, çağrılmadan önce değeri *pInfo* 'ın [SetMaxPage](../../mfc/reference/cprintinfo-structure.md#setmaxpage) üye işlevine geçirin `DoPreparePrinting` . Bu değer, Yazdır iletişim kutusunun Aralık bölümündeki to: kutusunda görüntülenir.
 
-`DoPreparePrinting`Önizleme işi için Yazdır iletişim kutusunu görüntülemez. Bir yazdırma işinin Yazdır iletişim kutusunu atlamak istiyorsanız, `m_bPreview` *pInfo* üyesinin yanlış olduğunu denetleyin ve ' a geçirmeden önce doğru olarak ayarlayın; daha sonra `DoPreparePrinting` false olarak sıfırlayın.
+`DoPreparePrinting` Önizleme işi için Yazdır iletişim kutusunu görüntülemez. Bir yazdırma işinin Yazdır iletişim kutusunu atlamak istiyorsanız, `m_bPreview` *pInfo* üyesinin yanlış olduğunu denetleyin ve ' a geçirmeden önce doğru olarak ayarlayın; daha sonra `DoPreparePrinting` false olarak sıfırlayın.
 
 `CDC`Yazıcı cihazı bağlamını temsil eden nesneye erişim gerektiren başlatma işlemleri yapmanız gerekiyorsa (örneğin, belge uzunluğunu belirtmeden önce sayfa boyutunu bilmeniz gerekirse), `OnBeginPrinting` üye işlevini geçersiz kılın.
 
@@ -719,7 +720,7 @@ Belgenin kaç sayfa içerdiğini biliyorsanız, çağrılmadan önce içindeki e
 
 [!code-cpp[NVC_MFCDocView#185](../../mfc/codesnippet/cpp/cview-class_3.cpp)]
 
-## <a name="cviewonprint"></a><a name="onprint"></a>CView:: OnPrint
+## <a name="cviewonprint"></a><a name="onprint"></a> CView:: OnPrint
 
 Belgenin bir sayfasını yazdırmak veya önizlemek için Framework tarafından çağırılır.
 
@@ -763,7 +764,7 @@ Geçersiz kılınan bir işlev için bir iskelet aşağıda verilmiştir `OnPrin
 
 Diğer bir örnek için bkz. [CRichEditView::P rintinsiderect](../../mfc/reference/cricheditview-class.md#printinsiderect).
 
-## <a name="cviewonscroll"></a><a name="onscroll"></a>CView:: OnScroll
+## <a name="cviewonscroll"></a><a name="onscroll"></a> CView:: OnScroll
 
 Kaydırmanın mümkün olup olmadığını anlamak için Framework tarafından çağırılır.
 
@@ -789,7 +790,7 @@ Kullanıcının kaydırma isteğini gösteren bir kaydırma çubuğu kodu. Bu pa
 
 - SB_PAGEUP bir sayfa yukarı kaydırır.
 
-- SB_THUMBTRACK kaydırma kutusunu belirtilen konuma sürükler. Geçerli konum *nPos*içinde belirtilmiştir.
+- SB_THUMBTRACK kaydırma kutusunu belirtilen konuma sürükler. Geçerli konum *nPos* içinde belirtilmiştir.
 
 - SB_TOP üste kayar.
 
@@ -807,7 +808,7 @@ Belirtilen kaydırma eylemini gerçekten yapıp yapamayacağını belirler. DOĞ
 
 Tek bir durumda bu işlev, görünüm bir kaydırma çubuğu iletisi aldığında *bDoScroll* değeri true olarak ayarlanmış çerçeve tarafından çağırılır. Bu durumda, gerçekten görünümü kaydırmanız gerekir. Diğer durumlarda bu işlev, bir OLE öğesi başlangıçta bir bırakma hedefinin otomatik kaydırma bölgesine sürüklendiğinde, gerçekte kaymadan önce, *bDoScroll* değeri false olarak çağrılır. Bu durumda, gerçekten görünümü kaydırmamalıdır.
 
-## <a name="cviewonscrollby"></a><a name="onscrollby"></a>CView:: OnScrollBy
+## <a name="cviewonscrollby"></a><a name="onscrollby"></a> CView:: OnScrollBy
 
 Kullanıcı, görünümün geçerli kenarlıklarına karşı bir OLE öğesi sürükleyerek veya dikey ya da yatay kaydırma çubuklarını düzenleyerek çerçeve tarafından çağırılır.
 
@@ -837,7 +838,7 @@ Bu yöntemin varsayılan uygulanması görünümü değiştirmez, ancak çağrı
 
 Belge genişliği veya yüksekliği 32767 pikseli aşarsa, `OnScrollBy` geçersiz bir *sizeScroll* bağımsız değişkeniyle çağrıldığı için, son 32767 kaydırma başarısız olur.
 
-## <a name="cviewonupdate"></a><a name="onupdate"></a>CView:: OnUpdate
+## <a name="cviewonupdate"></a><a name="onupdate"></a> CView:: OnUpdate
 
 Görünümün belgesi değiştirildikten sonra Framework tarafından çağırılır; Bu işlev [CDocument:: UpdateAllViews](../../mfc/reference/cdocument-class.md#updateallviews) tarafından çağrılır ve görünümün bu değişiklikleri yansıtacak şekilde görünümünü güncelleştirmesine izin verir.
 
@@ -863,7 +864,7 @@ Değişiklikler hakkında bilgi depolayan bir nesneye işaret eder.
 
 Ayrıca, [OnInitialUpdate](#oninitialupdate)'in varsayılan uygulamasıyla de çağrılır. Varsayılan uygulama tüm istemci alanını geçersiz kılar ve sonraki WM_PAINT iletisi alındığında boyama için işaretler. Yalnızca belgenin değiştirilen bölümlerine eşlenen bölgeleri güncelleştirmek istiyorsanız bu işlevi geçersiz kılın. Bunu yapmak için, ipucu parametrelerini kullanarak değişiklikler hakkında bilgi geçirmeniz gerekir.
 
-*Lipucu*kullanmak için, özel ipucu değerleri, genellikle bir bit maskesi veya numaralandırılmış bir tür tanımlayın ve belgenin bu değerlerden birini iletmektir. *PHint*kullanmak için [CObject](../../mfc/reference/cobject-class.md) 'ten bir ipucu sınıfı türetirsiniz ve belgenin bir ipucu nesnesine işaretçi geçirmesini sağlar; geçersiz kıldığınızda `OnUpdate` , ipucu nesnesinin çalışma zamanı türünü öğrenmek Için [CObject:: IsKindOf](../../mfc/reference/cobject-class.md#iskindof) üye işlevini kullanın.
+*Lipucu* kullanmak için, özel ipucu değerleri, genellikle bir bit maskesi veya numaralandırılmış bir tür tanımlayın ve belgenin bu değerlerden birini iletmektir. *PHint* kullanmak için [CObject](../../mfc/reference/cobject-class.md) 'ten bir ipucu sınıfı türetirsiniz ve belgenin bir ipucu nesnesine işaretçi geçirmesini sağlar; geçersiz kıldığınızda `OnUpdate` , ipucu nesnesinin çalışma zamanı türünü öğrenmek Için [CObject:: IsKindOf](../../mfc/reference/cobject-class.md#iskindof) üye işlevini kullanın.
 
 Genellikle doğrudan içinden hiçbir çizim gerçekleştirmemelisiniz `OnUpdate` . Bunun yerine, güncelleştirilmesi gereken alanı cihaz koordinatları ' nde açıklayan dikdörtgeni saptayın. Bu dikdörtgeni [CWnd:: InvalidateRect](../../mfc/reference/cwnd-class.md#invalidaterect)öğesine geçirin. Bu, bir [WM_PAINT](/windows/win32/gdi/wm-paint) iletisinin bir sonraki açılışında boyama oluşmasına neden olur.
 

@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE DB Programlamaya Genel Bakış'
 title: OLE DB Programlamaya Genel Bakış
 ms.date: 10/22/2018
 helpviewer_keywords:
 - Universal Data Access
 - OLE DB, about OLE DB
 ms.assetid: a5a69730-2793-4277-a67d-6f3c8edab6df
-ms.openlocfilehash: 2b855e0917ba9cdbdaa38a92473d7bddb4279101
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1976d8717704fbacec4f9d249b8ca3664c2eeb56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210082"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317109"
 ---
 # <a name="ole-db-programming-overview"></a>OLE DB Programlamaya Genel Bakış
 
@@ -29,4 +30,4 @@ OLE DB, COM belirtimine göre, DBMS işlevselliğinin tutarlı, yeniden kullanı
 [OLE DB Programlama](../../data/oledb/ole-db-programming.md)<br/>
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB Şablonları](../../data/oledb/ole-db-templates.md)
+[OLE DB şablonları](../../data/oledb/ole-db-templates.md)

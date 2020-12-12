@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE DB sağlayıcı şablonları için makrolar'
 title: OLE DB Sağlayıcı Şablonları için Makrolar
 ms.date: 02/11/2019
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - END_SCHEMA_MAP macro
 - SCHEMA_ENTRY macro
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
-ms.openlocfilehash: e72204102bfa47a9dd162499030a38c07bbfe46c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5e1e1137f49060273c60c73fc89c24c75fd2604d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504011"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317174"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonları için Makrolar
 
@@ -214,7 +215,7 @@ Bkz. [BEGIN_PROPSET_MAP](#begin_propset_map).
 
 Özellik kümesi eşleme girdilerinin sonunu işaretler.
 
-#### <a name="syntax"></a>Sözdizimi
+#### <a name="syntax"></a>Syntax
 
 ```cpp
 END_PROPSET_MAP()
@@ -268,7 +269,7 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
 *dwFlags*<br/>
 'ndaki Bu özellik girişini açıklayan bir [dbpropflags](/previous-versions/windows/desktop/ms724342(v=vs.85)) değeri.
 
-*deeri*<br/>
+*değer*<br/>
 'ndaki Türünün Özellik değeri `DWORD` .
 
 *Seçenekler*<br/>
@@ -297,7 +298,7 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 *Dwpropıd*<br/>
 'ndaki Bir özelliği tanımlamak için özellik kümesi GUID 'SI ile birlikte kullanılabilen bir [Dbpropid](/previous-versions/windows/desktop/ms723882(v=vs.85)) değeri.
 
-*deeri*<br/>
+*değer*<br/>
 'ndaki Türünün Özellik değeri `DWORD` .
 
 #### <a name="remarks"></a>Açıklamalar
@@ -333,7 +334,7 @@ BEGIN_PROVIDER_COLUMN_MAP(theClass)
 
 Sağlayıcı sütun eşleme girdilerinin sonunu işaretler.
 
-#### <a name="syntax"></a>Sözdizimi
+#### <a name="syntax"></a>Syntax
 
 ```cpp
 END_PROVIDER_COLUMN_MAP()
@@ -576,7 +577,7 @@ HARITAYı içeren sınıf. Genellikle bu oturum sınıfı olacaktır.
 
 Şema eşlemesinin sonunu belirtir.
 
-#### <a name="syntax"></a>Sözdizimi
+#### <a name="syntax"></a>Syntax
 
 ```cpp
 END_SCHEMA_MAP()

@@ -1,4 +1,5 @@
 ---
+description: ': IColumnsInfoImpl sınıfı hakkında daha fazla bilgi'
 title: IColumnsInfoImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - GetColumnInfo method
 - MapColumnIDs method
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
-ms.openlocfilehash: 05e902e09c51012bd456751fb701ce2508a2fc16
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9f6586f4d0315904ea16baf5aa1837bc43107602
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317629"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl Sınıfı
 
 [IColumnsInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T>
@@ -72,7 +73,7 @@ Satır kümelerinde ve komutlarda zorunlu arabirim. Sağlayıcınızın uygulama
 
 Çoğu tüketiciden gereken sütun meta verilerini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
@@ -88,7 +89,7 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 
 Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sütunların sıra sayılarını dizisini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,

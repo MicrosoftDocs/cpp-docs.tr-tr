@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: diğer .NET dilleri ile birlikte çalışabilirlik (C++/CLı)'
 title: Diğer .NET Dilleri ile Birlikte Çalışabilirlik (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,28 +10,28 @@ helpviewer_keywords:
 - lock statement
 - lock C# keyword [C++]
 ms.assetid: a5902cf8-a14d-4559-aefb-c178615d45bb
-ms.openlocfilehash: ffdf9a8b11912bde38e15408228670c8cff9a503
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 51cead7fcc7dedc05f0225facf10fe70a3d606fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188328"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316615"
 ---
 # <a name="interoperability-with-other-net-languages-ccli"></a>Diğer .NET Dilleri ile Birlikte Çalışabilirlik (C++/CLI)
 
-Bu bölümdeki konular, derlemeler gelen kullanan veya C# veya Visual Basic'te yazılmış işlevselliği sağlamak için Visual C++'ta oluşturma işlemi gösterilmektedir.
+Bu bölümdeki konularda, C# veya Visual Basic yazılmış derlemeler tarafından kullanılan veya işlevselliği sağlayan Visual C++ derlemelerin nasıl oluşturulacağı gösterilmektedir.
 
-## <a name="consume_indexer"></a> Bir C# dizin oluşturucusunu kullanma
+## <a name="consume-a-c-indexer"></a><a name="consume_indexer"></a> C# Dizin oluşturucuyu kullanma
 
-Visual C++, dizin oluşturucular içermez. özellikleri dizine. Dizini oluşturulmuş özelliğe değilmiş gibi bir C# dizin oluşturucusunu kullanma için dizin oluşturucuyu erişin.
+Visual C++ Dizinleyicileri içermez; dizine alınmış özellikleri vardır. Bir C# Dizin Oluşturucuyu kullanmak için dizin oluşturucuya dizine alınmış bir özellik gibi erişin.
 
-Dizin oluşturucular hakkında daha fazla bilgi için bkz:
+Dizin oluşturucular hakkında daha fazla bilgi için bkz.:
 
 - [Dizin Oluşturucular](/dotnet/csharp/programming-guide/indexers/index)
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki C# programı bir dizin oluşturucu tanımlar.
+Aşağıdaki C# programı bir dizin oluşturucuyu tanımlar.
 
 ```csharp
 // consume_cs_indexers.cs
@@ -70,7 +71,7 @@ public class MainClass {
 
 ### <a name="example"></a>Örnek
 
-Bu Visual C++ programında, dizin oluşturucu tüketir.
+Bu Visual C++ program dizin oluşturucuyu kullanır.
 
 ```cpp
 // consume_cs_indexers_2.cpp
@@ -100,9 +101,9 @@ Element #9 = 0
 Element #10 = 0
 ```
 
-## <a name="implement_isas"></a> Uygulama olduğunu ve as C# anahtar sözcüklerini
+## <a name="implement-is-and-as-c-keywords"></a><a name="implement_isas"></a> Ve C# anahtar sözcüklerini uygulama
 
-Bu konuda işlevselliğini uygulamak nasıl gösterilmektedir `is` ve `as` Visual C++'ta C# anahtar sözcükleri.
+Bu konu başlığı `is` altında, ve `as` C# anahtar kelimelerinde Visual C++ işlevinin nasıl uygulanacağı gösterilmektedir.
 
 ### <a name="example"></a>Örnek
 
@@ -141,11 +142,11 @@ int main() {
 o is a string
 ```
 
-## <a name="implement_locak"></a> ' % S'lock C# anahtar sözcüğünü uygulama
+## <a name="implement-the-lock-c-keyword"></a><a name="implement_locak"></a> Lock C# anahtar sözcüğünü uygulama
 
-Bu konuda, C# uygulamak gösterilmektedir `lock` Visual c++ anahtar sözcüğü.
+Bu konuda, Visual C++ C# anahtar sözcüğünün nasıl uygulanacağı gösterilmektedir `lock` .
 
-Ayrıca `lock` C++ Destek Kitaplığı'nda sınıfı. Bkz: [eşitleme (lock sınıfı)](../dotnet/synchronization-lock-class.md) daha fazla bilgi için.
+`lock`Sınıfını C++ Destek Kitaplığı ' nda da kullanabilirsiniz. Daha fazla bilgi için bkz. [Synchronization (Lock Class)](../dotnet/synchronization-lock-class.md) .
 
 ### <a name="example"></a>Örnek
 

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. satır kümesi nesne arabirimleri
 title: Satır Kümesi Nesnesi Arabirimleri
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 - interfaces, list of
 ms.assetid: 0d7a5d48-2fe4-434f-a84b-157c1fdc3494
-ms.openlocfilehash: d9c2c61714a98d9de09d8657352a14f296e35a58
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fc7cbb0ee7c15cc7414144334018afc93888da01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501285"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316862"
 ---
 # <a name="rowset-object-interfaces"></a>Satır Kümesi Nesnesi Arabirimleri
 
@@ -44,10 +45,10 @@ Aşağıdaki tabloda, bir satır kümesi nesnesi için OLE DB tarafından tanım
 |[IRowsetUpdate](/previous-versions/windows/desktop/ms714401(v=vs.85))|İsteğe Bağlı|Evet|
 |[Irowsetview](/previous-versions/windows/desktop/ms709755(v=vs.85))|İsteğe Bağlı|Hayır|
 |[Iupporterrorınfo](/previous-versions/windows/desktop/ms715816(v=vs.85))|İsteğe Bağlı|Evet|
-|[IRowsetBookmark](/previous-versions/windows/desktop/ms714246(v=vs.85))|İsteğe Bağlı|Hayır|
+|[Irowsetbookmark](/previous-versions/windows/desktop/ms714246(v=vs.85))|İsteğe Bağlı|Hayır|
 
-Sihirbaz tarafından oluşturulan satır kümesi nesnesi, `IAccessor`devralma `IRowset`yoluyla, `IRowsetInfo` ve uygular. Her `IAccessorImpl` iki çıkış sütununu da bağlar. Arabirim `IRowset` , satırları ve verileri getirir. `IRowsetInfo` Arabirim satır kümesi özelliklerini işler.
+Sihirbaz tarafından oluşturulan satır kümesi nesnesi `IAccessor` , `IRowset` Devralma yoluyla, ve uygular `IRowsetInfo` . `IAccessorImpl`Her iki çıkış sütununu da bağlar. `IRowset`Arabirim, satırları ve verileri getirir. `IRowsetInfo`Arabirim satır kümesi özelliklerini işler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[OLE DB sağlayıcı şablonu mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

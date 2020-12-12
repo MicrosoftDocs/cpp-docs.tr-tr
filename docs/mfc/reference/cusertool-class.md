@@ -1,5 +1,6 @@
 ---
-title: CuserTool Sınıfı
+description: 'Daha fazla bilgi edinin: CUserTool sınıfı'
+title: CUserTool sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CUserTool
@@ -30,18 +31,18 @@ helpviewer_keywords:
 - CUserTool [MFC], m_strInitialDirectory
 - CUserTool [MFC], m_strLabel
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-ms.openlocfilehash: 183b30961e4a7d3079fa0d035a4ddc38bc2eebac
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 1a05d89543bdf3c0f873dadf9d2fbffb87ce680f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752023"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318513"
 ---
-# <a name="cusertool-class"></a>CuserTool Sınıfı
+# <a name="cusertool-class"></a>CUserTool sınıfı
 
-Kullanıcı aracı, harici bir uygulama çalıştıran bir menü öğesidir. **Özelleştir** iletişim kutusunun **Araçlar** sekmesi [(CMFCToolBarsCustomizeDialog Class)](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)kullanıcının kullanıcı araçları eklemesini ve her kullanıcı aracı için adı, komutu, bağımsız değişkenleri ve ilk dizini belirtmesini sağlar.
+Kullanıcı Aracı, dış uygulama çalıştıran bir menü öğesidir. **Özelleştir** Iletişim kutusunun **Araçlar** sekmesi ( [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)), kullanıcının Kullanıcı araçları eklemesini ve her kullanıcı aracı için ad, komut, bağımsız değişkenler ve başlangıç dizinini belirtmesini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CUserTool : public CObject
@@ -51,54 +52,54 @@ class CUserTool : public CObject
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CUserTool::CopyIconToClipboard](#copyicontoclipboard)||
-|[CUserTool::DrawToolIcon](#drawtoolicon)|Kullanıcı aracı simgesini belirli bir dikdörtgende çizer.|
-|[CuserTool::Getkomut](#getcommand)|Kullanıcı aracıyla ilişkili komutun metnini içeren bir dize döndürür.|
-|[CuserTool::GetCommandid](#getcommandid)|Kullanıcı aracının menü öğesinin komut kimliğini verir.|
-|[CUserTool::Invoke](#invoke)|Kullanıcı aracıyla ilişkili komutu yürütür.|
-|[CUserTool::Serialize](#serialize)|Bu nesneyi arşivden veya arşivden okur veya yazar. (CObject geçersiz [kılar::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
-|[CuserTool::Setkomut](#setcommand)|Kullanıcı aracıyla ilişkili komutu ayarlar.|
-|[CuserTool::SetToolicon](#settoolicon)|Kullanıcı aracı simgesini araçla ilişkili uygulamadan yükler.|
+|[CUserTool:: CopyIconToClipboard](#copyicontoclipboard)||
+|[CUserTool::D rawToolIcon](#drawtoolicon)|Kullanıcı araç simgesini belirtilen dikdörtgende çizer.|
+|[CUserTool:: GetCommand](#getcommand)|Kullanıcı aracıyla ilişkili komutun metnini içeren bir dize döndürür.|
+|[CUserTool:: Getcommandıd](#getcommandid)|Kullanıcı aracının menü öğesinin komut KIMLIĞINI döndürür.|
+|[CUserTool:: Invoke](#invoke)|Kullanıcı aracıyla ilişkili komutu yürütür.|
+|[CUserTool:: serileştirme](#serialize)|Bu nesneyi veya bir arşivden okur veya yazar. ( [CObject:: Serialize](../../mfc/reference/cobject-class.md#serialize)geçersiz kılar.)|
+|[CUserTool:: Setkomutu](#setcommand)|Kullanıcı aracıyla ilişkili komutu ayarlar.|
+|[CUserTool:: SetToolIcon](#settoolicon)|Araçla ilişkili uygulamadan Kullanıcı aracı simgesini yükler.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Cusertool::loaddefaulticon](#loaddefaulticon)|Bir kullanıcı aracı için varsayılan simgeyi yükler.|
+|[CUserTool:: LoadDefaultIcon](#loaddefaulticon)|Bir Kullanıcı aracı için varsayılan simgeyi yükler.|
 
-### <a name="data-members"></a>Veri Üyeleri
+### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CUserTool::m_strArguments](#m_strarguments)|Kullanıcı aracı için komut satırı bağımsız değişkenleri.|
-|[CUserTool::m_strInitialDirectory](#m_strinitialdirectory)|Kullanıcı aracının ilk dizini.|
-|[CUserTool::m_strLabel](#m_strlabel)|Aracın menü öğesinde görüntülenen araç adı.|
+|[CUserTool:: m_strArguments](#m_strarguments)|Kullanıcı aracı için komut satırı bağımsız değişkenleri.|
+|[CUserTool:: m_strInitialDirectory](#m_strinitialdirectory)|Kullanıcı aracı için başlangıç dizini.|
+|[CUserTool:: m_strLabel](#m_strlabel)|Araç için menü öğesinde görüntülenen araç adı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanızda kullanıcı araçlarını etkinleştirme hakkında daha fazla bilgi için [CUserToolsManager Sınıfı'na](../../mfc/reference/cusertoolsmanager-class.md)bakın.
+Uygulamanızdaki Kullanıcı araçlarının nasıl etkinleştirileceği hakkında daha fazla bilgi için bkz. [Cuseraraçlarý Manager sınıfı](../../mfc/reference/cusertoolsmanager-class.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir nesneden bir `CUserToolsManager` araç nasıl `m_strLabel` oluşturulup üye değişkenini ayarlanın ve kullanıcı aracının çalıştırdığı uygulamayı nasıl ayarlayacağını gösterir. Bu kod snippet [Visual Studio Demo örnek](../../overview/visual-cpp-samples.md)parçasıdır.
+Aşağıdaki örnek, bir nesnesinden bir araç oluşturmayı `CUserToolsManager` , `m_strLabel` üye değişkenini ayarlamayı ve Kullanıcı aracının çalıştırdığı uygulamayı nasıl ayarlayabileceğinizi gösterir. Bu kod parçacığı, [Visual Studio Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#35](../../mfc/codesnippet/cpp/cusertool-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cusertool](../../mfc/reference/cusertool-class.md)
+[CUserTool](../../mfc/reference/cusertool-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxusertool.h
+**Üstbilgi:** afxusertool. h
 
-## <a name="cusertoolcopyicontoclipboard"></a><a name="copyicontoclipboard"></a>CUserTool::CopyIconToClipboard
+## <a name="cusertoolcopyicontoclipboard"></a><a name="copyicontoclipboard"></a> CUserTool:: CopyIconToClipboard
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
 ```
 BOOL CopyIconToClipboard();
@@ -108,9 +109,9 @@ BOOL CopyIconToClipboard();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cusertooldrawtoolicon"></a><a name="drawtoolicon"></a>CUserTool::DrawToolIcon
+## <a name="cusertooldrawtoolicon"></a><a name="drawtoolicon"></a> CUserTool::D rawToolIcon
 
-Kullanıcı aracı simgesini belirli bir dikdörtgenin ortasına çizer.
+Belirtilen dikdörtgenin ortasına Kullanıcı araç simgesini çizer.
 
 ```cpp
 void DrawToolIcon(
@@ -120,13 +121,13 @@ void DrawToolIcon(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-[içinde] Aygıt bağlamına işaretçi.
+*Kökündeki*<br/>
+'ndaki Cihaz bağlamına yönelik bir işaretçi.
 
 *rectImage*<br/>
-[içinde] Simgeyi görüntülemek için alanın koordinatlarını belirtir.
+'ndaki Simgenin görüntüleneceği alanın koordinatlarını belirtir.
 
-## <a name="cusertoolgetcommand"></a><a name="getcommand"></a>CuserTool::Getkomut
+## <a name="cusertoolgetcommand"></a><a name="getcommand"></a> CUserTool:: GetCommand
 
 Kullanıcı aracıyla ilişkili komutun metnini içeren bir dize döndürür.
 
@@ -136,11 +137,11 @@ const CString& GetCommand() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı aracıyla ilişkili komutun metnini içeren nesneye `CString` yapılan başvuru.
+`CString`Kullanıcı aracıyla ilişkili komutun metnini içeren nesnesine bir başvuru.
 
-## <a name="cusertoolgetcommandid"></a><a name="getcommandid"></a>CuserTool::GetCommandid
+## <a name="cusertoolgetcommandid"></a><a name="getcommandid"></a> CUserTool:: Getcommandıd
 
-Kullanıcı aracının komut kimliğini verir.
+Kullanıcı aracının komut KIMLIĞINI döndürür.
 
 ```
 UINT GetCommandId() const;
@@ -148,9 +149,9 @@ UINT GetCommandId() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu kullanıcı aracının komut kimliği.
+Bu Kullanıcı aracının komut KIMLIĞI.
 
-## <a name="cusertoolinvoke"></a><a name="invoke"></a>CUserTool::Invoke
+## <a name="cusertoolinvoke"></a><a name="invoke"></a> CUserTool:: Invoke
 
 Kullanıcı aracıyla ilişkili komutu yürütür.
 
@@ -160,15 +161,15 @@ virtual BOOL Invoke();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Komut başarıyla yürütülürse sıfır olmayan; aksi takdirde 0.
+Komut başarıyla yürütülürse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı aracıyla ilişkili bir komutu yürütmesi için [ShellExecute'ı](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) çağırır. Komut boşsa veya [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) başarısız olursa işlev başarısız olur.
+Kullanıcı aracıyla ilişkili bir komutu yürütmek için [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) ' i çağırır. Komut boşsa veya [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) başarısız olursa işlev başarısız olur.
 
-## <a name="cusertoolloaddefaulticon"></a><a name="loaddefaulticon"></a>Cusertool::loaddefaulticon
+## <a name="cusertoolloaddefaulticon"></a><a name="loaddefaulticon"></a> CUserTool:: LoadDefaultIcon
 
-Bir kullanıcı aracı için varsayılan simgeyi yükler.
+Bir Kullanıcı aracı için varsayılan simgeyi yükler.
 
 ```
 virtual HICON LoadDefaultIcon();
@@ -176,15 +177,15 @@ virtual HICON LoadDefaultIcon();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yüklenen simgeye (HICON) veya varsayılan simge yüklenemezse NULL'a bir tanıtıcı.
+Yüklenen simgenin (HıCON) bir tutamacı veya varsayılan simge yüklenemezse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, aracın yürütülebilir dosyasından kullanıcı tanımlı bir araç için simge yükleyemediğinde bu yöntemi çağırır.
+Framework, aracın yürütülebilir dosyasındaki kullanıcı tanımlı bir araç için bir simge yükleyemadığında bu yöntemi çağırır.
 
 Kendi varsayılan araç simgenizi sağlamak için bu yöntemi geçersiz kılın.
 
-## <a name="cusertoolm_strarguments"></a><a name="m_strarguments"></a>CUserTool::m_strArguments
+## <a name="cusertoolm_strarguments"></a><a name="m_strarguments"></a> CUserTool:: m_strArguments
 
 Kullanıcı aracı için komut satırı bağımsız değişkenleri.
 
@@ -194,11 +195,11 @@ CString m_strArguments;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu dize, CUserTool'u aradiğinizde araca [aktarılır::Çağırın](#invoke) veya kullanıcı bu araçla ilişkili komutu tıklattığında.
+Bu dize, [CUserTool:: Invoke](#invoke) ' i çağırdığınızda veya bir Kullanıcı bu araçla ilişkili komutu tıklattığında araca geçirilir.
 
-## <a name="cusertoolm_strinitialdirectory"></a><a name="m_strinitialdirectory"></a>CUserTool::m_strInitialDirectory
+## <a name="cusertoolm_strinitialdirectory"></a><a name="m_strinitialdirectory"></a> CUserTool:: m_strInitialDirectory
 
-Kullanıcı aracının ilk dizinini belirtir.
+Kullanıcı aracının başlangıç dizinini belirtir.
 
 ```
 CString m_strInitialDirectory;
@@ -206,19 +207,19 @@ CString m_strInitialDirectory;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değişken, CUserTool'u aradiğinizde aracın yürüttüğü ilk dizini [belirtir::ÇağırVeya](#invoke) kullanıcı bu araçla ilişkili komutu tıklattığında.
+Bu değişken, [CUserTool:: Invoke](#invoke) ' i çağırdığınızda veya bir Kullanıcı bu araçla ilişkili komuta tıkladığında, aracının üzerinde çalıştırdığı başlangıç dizinini belirtir.
 
-## <a name="cusertoolm_strlabel"></a><a name="m_strlabel"></a>CUserTool::m_strLabel
+## <a name="cusertoolm_strlabel"></a><a name="m_strlabel"></a> CUserTool:: m_strLabel
 
-Aracın menü öğesinde görüntülenen etiket.
+Araç için menü öğesinde görüntülenen etiket.
 
 ```
 CString m_strLabel;
 ```
 
-## <a name="cusertoolserialize"></a><a name="serialize"></a>CUserTool::Serialize
+## <a name="cusertoolserialize"></a><a name="serialize"></a> CUserTool:: serileştirme
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -226,11 +227,11 @@ virtual void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *ar*<br/>
+'ndaki *ar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cusertoolsetcommand"></a><a name="setcommand"></a>CuserTool::Setkomut
+## <a name="cusertoolsetcommand"></a><a name="setcommand"></a> CUserTool:: Setkomutu
 
 Kullanıcı aracının çalıştırdığı uygulamayı ayarlar.
 
@@ -241,15 +242,15 @@ void SetCommand(LPCTSTR lpszCmd);
 ### <a name="parameters"></a>Parametreler
 
 *lpszCmd*<br/>
-[içinde] Yeni uygulamanın kullanıcı aracıyla ilişkilendirilecek şekilde belirtilmesi.
+'ndaki Kullanıcı aracıyla ilişkilendirilecek yeni uygulamayı belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı aracının çalıştırdığı yeni bir uygulama ayarlamak için bu yöntemi arayın. Yöntem eski simgeyi yok eder ve verilen uygulamadan yeni bir simge yükler. Uygulamadan bir simge yükleyemiyorsa, CUserTool'u arayarak bir kullanıcı aracı nın varsayılan simgesini [yükler::LoadDefaultIcon](#loaddefaulticon).
+Kullanıcı aracının çalıştırdığı yeni bir uygulama ayarlamak için bu yöntemi çağırın. Yöntemi eski simgeyi yok eder ve belirtilen uygulamadan yeni bir simge yükler. Uygulamadan bir simge yükleye, bir Kullanıcı aracının varsayılan simgesini, [CUserTool:: LoadDefaultIcon](#loaddefaulticon)çağırarak yükler.
 
-## <a name="cusertoolsettoolicon"></a><a name="settoolicon"></a>CuserTool::SetToolicon
+## <a name="cusertoolsettoolicon"></a><a name="settoolicon"></a> CUserTool:: SetToolIcon
 
-Kullanıcı aracı simgesini aracın kullandığı uygulamadan yükler.
+Aracın kullandığı uygulamadan Kullanıcı aracı simgesini yükler.
 
 ```
 virtual HICON SetToolIcon();
@@ -257,15 +258,15 @@ virtual HICON SetToolIcon();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yüklenen simgeye bir tutamaç.
+Yüklenen simgeye yönelik bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü öğesinde görüntülenecek simgeyi yüklemek için bu yöntemi arayın. Bu yöntem, aracın kullandığı yürütülebilir dosyadaki simgeyi arar. Varsayılan simgesi yoksa, CUserTool tarafından sağlanan [simge::LoadDefaultIcon](#loaddefaulticon) bunun yerine kullanılır.
+Menü öğesinde görüntülenecek simgeyi yüklemek için bu yöntemi çağırın. Bu yöntem, aracın kullandığı çalıştırılabilir dosyadaki simgeyi arar. Varsayılan bir simge yoksa, bunun yerine [CUserTool:: LoadDefaultIcon](#loaddefaulticon) tarafından sunulan simge kullanılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
-[CusertoolsManager Sınıfı](../../mfc/reference/cusertoolsmanager-class.md)
+[CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md)<br/>
+[Cuser, yönetici sınıfı](../../mfc/reference/cusertoolsmanager-class.md)
