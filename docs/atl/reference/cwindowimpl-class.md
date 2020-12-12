@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CWindowImpl sınıfı'
 title: CWindowImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - CWindowImpl class
 - subclassing windows, ATL
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
-ms.openlocfilehash: 56b503dfcfbe4fae215f61081446bd3a5070af3c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c0736f0c963016fe5f65982c90903bfdce7c382e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835538"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140120"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl sınıfı
 
@@ -32,7 +33,7 @@ Pencere oluşturmak veya altsınıflama için yöntemler sağlar.
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <class T, class TBase = CWindow, class TWinTraits = CControlWinTraits>
@@ -86,7 +87,7 @@ Pencerenize yönelik stilleri tanımlayan bir [nitelikler sınıfı](../../atl/u
 
 `CWindowImpl`Bir pencere oluşturmak veya var olan bir pencerenin alt sınıfını oluşturmak için kullanabilirsiniz. `CWindowImpl`pencere yordamı, iletileri uygun işleyicilere yönlendirmek için bir ileti eşlemesi kullanır.
 
-`CWindowImpl::Create`[CWndClassInfo](../../atl/reference/cwndclassinfo-class.md)tarafından yönetilen pencere sınıfı bilgilerine dayalı bir pencere oluşturur. `CWindowImpl`[DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) makrosunu içerir, yani `CWndClassInfo` Yeni bir pencere sınıfını kaydeder. Varolan bir pencere sınıfını üst sınıfa eklemek istiyorsanız, sınıfınızı sınıfından türetebilir `CWindowImpl` ve [declare_wnd_superclass](window-class-macros.md#declare_wnd_superclass) makrosunu ekleyin. Bu durumda, var olan bir `CWndClassInfo` sınıfı temel alan, ancak kullanan bir pencere sınıfını kaydeder `CWindowImpl::WindowProc` . Örnek:
+`CWindowImpl::Create`[CWndClassInfo](../../atl/reference/cwndclassinfo-class.md)tarafından yönetilen pencere sınıfı bilgilerine dayalı bir pencere oluşturur. `CWindowImpl`[DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) makrosunu içerir, yani `CWndClassInfo` Yeni bir pencere sınıfını kaydeder. Varolan bir pencere sınıfını üst sınıfa eklemek istiyorsanız, sınıfınızı sınıfından türetebilir `CWindowImpl` ve [declare_wnd_superclass](window-class-macros.md#declare_wnd_superclass) makrosunu ekleyin. Bu durumda, var olan bir `CWndClassInfo` sınıfı temel alan, ancak kullanan bir pencere sınıfını kaydeder `CWindowImpl::WindowProc` . Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwindowimpl-class_1.h)]
 

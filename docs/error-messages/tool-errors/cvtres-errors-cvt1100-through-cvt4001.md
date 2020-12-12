@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CVTRES hatalar ve uyarılar (CVTxxxx)'
 title: CVTRES hataları ve uyarıları
 ms.date: 04/16/2019
 f1_keywords:
@@ -11,16 +12,16 @@ f1_keywords:
 - CVT1109
 - CVT1110
 ms.assetid: ac94d0fb-0da3-4327-b3d9-ceaeb3fc2e4d
-ms.openlocfilehash: 81dbac6b0408a7cf1cc319c1eed90bad5f742890
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 5c95dfddf7f691b3a9475ce21a7c4360872847e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64855939"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119781"
 ---
 # <a name="cvtres-errors-and-warnings-cvtxxxx"></a>CVTRES hataları ve uyarıları (CVTxxxx)
 
-Bu bölüm hatalara bir başvurudur ve aracı CVTRES tarafından oluşturulan uyarılar oluşturun. CVTRES CVT formun iletileri oluşturur*xxxx*burada *xxxx* bir dört basamaklı sayıdır.
+Bu bölüm, CVTRES derleme aracı tarafından oluşturulan hatalara ve uyarılara yönelik bir başvurudur. CVTRES, CVT *xxxx* biçiminde iletiler oluşturur; burada *xxxx* dört basamaklı bir sayıdır.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -36,4 +37,4 @@ Bu bölüm hatalara bir başvurudur ve aracı CVTRES tarafından oluşturulan uy
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md)
+[C/C++ Derleyicisi ve derleme araçları hata ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md)

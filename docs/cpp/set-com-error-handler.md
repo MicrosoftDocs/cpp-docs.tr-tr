@@ -1,19 +1,20 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_com_error_handler'
 title: _set_com_error_handler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - _set_com_error_handler function
 ms.assetid: 49fe4fca-5e37-4d83-abaf-15be5ce37f94
-ms.openlocfilehash: debad733f351c710ada342e29fa95a4d1ff03b7d
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 88c59f30276089f28dc6e40b1ab5829bf68a7b4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116970"
 ---
 # <a name="_set_com_error_handler"></a>_set_com_error_handler
 
-COM hata işleme için kullanılan varsayılan işlevi değiştirir. **_set_com_error_handler** Microsoft'a özgüdür.
+COM hata işleme için kullanılan varsayılan işlevi değiştirir. **_set_com_error_handler** , Microsoft 'a özgüdür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,15 +32,15 @@ void __stdcall _set_com_error_handler(
 *pHandler*<br/>
 Değiştirme işlevinin işaretçisi.
 
-*Hr*<br/>
+*sa*<br/>
 HRESULT bilgileri.
 
-*perrinfo*<br/>
-`IErrorInfo`Nesne.
+*perrınfo*<br/>
+`IErrorInfo` nesne.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, [_com_raise_error](../cpp/com-raise-error.md) tüm COM hatalarını işler. Kendi hata işleme işlevinizi çağırmak için **_set_com_error_handler** kullanarak bu davranışı değiştirebilirsiniz.
+Varsayılan olarak, [_com_raise_error](../cpp/com-raise-error.md) tüm com hatalarını işler. Kendi hata işleme işlevinizi çağırmak için **_set_com_error_handler** kullanarak bu davranışı değiştirebilirsiniz.
 
 Değiştirme işlevi, `_com_raise_error` öğesinin imzasına eşdeğer olan bir imza içermelidir.
 
@@ -86,10 +87,10 @@ Exception raised: Unable to establish the connection!
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<comdef.h>
+**Üst bilgi:**\<comdef.h>
 
-**Lib:** **/Zc:wchar_t** derleyici seçeneği (varsayılan) belirtilirse, comsuppw.lib veya comsuppwd.lib kullanın. **/Zc:wchar_t-** derleyici seçeneği belirtilmişse, comsupp.lib'i kullanın. Bu seçeneğin IDE'de nasıl ayarlanılabilenler hakkında daha fazla bilgi için [bkz: /Zc:wchar_t (wchar_t Yerel Türdür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+**LIB:** **/Zc: wchar_t** derleyici seçeneği belirtilmişse (varsayılan), comsuppw. lib veya comsuppwd. lib kullanın. **/Zc: wchar_t-** derleyici seçeneği belirtilmişse comsupp. lib kullanın. IDE 'de bu seçeneği ayarlama dahil daha fazla bilgi için bkz. [/Zc: wchar_t (wchar_t yerel tür)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)
+[Derleyici COM genel Işlevleri](../cpp/compiler-com-global-functions.md)

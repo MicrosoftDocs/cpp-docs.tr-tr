@@ -1,39 +1,40 @@
 ---
+description: 'Daha fazla bilgi edinin: ARM Assembler yönergeleri'
 title: ARM Assembler Yönergeleri
 ms.date: 08/30/2018
 ms.assetid: 9cfa8896-ec10-4e77-855a-3135c40d7d2a
-ms.openlocfilehash: 9124f893b3334e0893073332c9d5f5a1388373d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8362453f2113922c5e834d1d68583b4199cf8d4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118124"
 ---
 # <a name="arm-assembler-directives"></a>ARM Assembler Yönergeleri
 
-Çoğunlukla, belgelenen ARM derleme dili Microsoft ARM derleyicisi kullanan [ARM derleyici armasm Başvuru Kılavuzu](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html). Ancak, bazı derleme yönergeleri Microsoft uygulamaları ARM derleme yönergeleri farklı. Bu makalede farklar açıklanmaktadır.
+Çoğu durumda, Microsoft ARM Assembler, [ARM derleyicisi arması başvuru kılavuzu](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html)' nda belgelenen ARM derleme dilini kullanır. Ancak, bazı derleme yönergelerinin Microsoft uygulamaları ARM derleme yönergelerinden farklıdır. Bu makalede farklar açıklanmaktadır.
 
-## <a name="microsoft-implementations-of-arm-assembly-directives"></a>ARM derleme yönergeleri Microsoft uygulamaları
+## <a name="microsoft-implementations-of-arm-assembly-directives"></a>ARM derleme yönergelerinin Microsoft uygulamaları
 
-- ALAN
+- ALANDıR
 
-   Microsoft ARM derleyicisi bunları destekleyen `AREA` öznitelikleri: `ALIGN`, `CODE`, `CODEALIGN`, `DATA`, `NOINIT`, `READONLY`, `READWRITE`, `THUMB`, `ARM`.
+   Microsoft ARM Assembler şu öznitelikleri destekler `AREA` : `ALIGN` , `CODE` ,, `CODEALIGN` `DATA` , `NOINIT` , `READONLY` , `READWRITE` , `THUMB` , `ARM` .
 
-   Hariç `THUMB` ve `ARM` açıklandığı gibi çalışma [ARM derleyici armasm Başvuru Kılavuzu](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html).
+   `THUMB` `ARM` [ARM derleyicisi Armasz başvuru kılavuzu](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html)'nda belgelendiği gibi tümü hariç çalışır.
 
-   Microsoft ARM derleyicisi, `THUMB` belirten bir `CODE` bölümü Thumb kodu içerir ve varsayılan `CODE` bölümler.  `ARM` bölümü, ARM kodu içerdiğini gösterir.
+   Microsoft ARM derleyicide `THUMB` bir `CODE` bölümün Thumb kodunu içerdiğini, bölümler için de varsayılan olduğunu gösterir `CODE` .  `ARM` bölümün ARM kodu içerdiğini belirtir.
 
-- ATTR
+- ÖZNITELIĞI
 
    Desteklenmez.
 
-- KODU16
+- CODE16
 
-   Microsoft ARM derleyicisi Project'in izin vermediği pre-UAL Thumb sözdizimi gösterdiğinden desteklenmiyor.  Kullanım `THUMB` bunun yerine, UAL söz dizimi ile birlikte yönergesi.
+   Microsoft ARM derleyic'nın izin vermediği, önceden sürekli parmak izi gösterdiği için desteklenmez.  `THUMB`Bunun yerine, sürekli sözdizimi ile birlikte yönergesini kullanın.
 
-- ORTAK
+- BIRÇOK
 
-   Genel bölge için bir hizalama belirtimine desteklenmiyor.
+   Ortak bölge için bir hizalama belirtimi desteklenmez.
 
 - DCDO
 
@@ -41,59 +42,59 @@ ms.locfileid: "62167679"
 
 - `DN`, `QN`, `SN`
 
-   Bir türü veya bir kayıt diğer yolundaki belirtimi desteklenmiyor.
+   Yazmaç diğer adında bir tür veya kulvar belirtimi desteklenmiyor.
 
-- GİRİŞ
+- GIRIŞTE
 
    Desteklenmez.
 
 - EQU
 
-   Bir tür için tanımlanmış sembol belirtimi desteklenmiyor.
+   Tanımlı sembol için bir tür belirtimi desteklenmiyor.
 
 - `EXPORT` ve `GLOBAL`
 
-   Dışarı aktarma şu sözdizimini kullanarak belirtir:
+   Bu söz dizimini kullanarak dışarı aktarmaları belirtir:
 
-   > **Dışarı aktarma**|**genel** <em>sym</em>{**[**<em>türü</em>**]**}
+   > **Dışarı aktar** | **Küresel** <em>Syd</em>{**[**<em>tür</em>**]**}
 
-   *sym* verilecek semboldür.  [*türü*], belirtilmişse olabilir `[DATA]` sembol veri noktaları belirtmek için veya `[FUNC]` sembol kod noktaları belirtmek için. `GLOBAL` eşanlamlıdır `EXPORT`.
+   *Syd* , aktarılacak simgedir.  [*Type*] belirtilmişse, `[DATA]` sembolün veriye işaret ettiğini veya `[FUNC]` sembolün kodun işaret ettiğini göstermek için olabilir. `GLOBAL` , için bir eş anlamlı `EXPORT` .
 
-- EXPORTAS
+- DıŞARı EXPORTAS
 
    Desteklenmez.
 
-- ÇERÇEVE
+- KARESINE
 
    Desteklenmez.
 
 - `FUNCTION` ve `PROC`
 
-   Özel belirtimi için derleme sözdizimi destekler; ancak Kaydet çağıran ve çağrılan tasarrufu olan kayıtları listeleyerek yordamlarını çağırma Microsoft ARM derleyicisi söz dizimini kabul eder ancak kayıt listeleri yoksayar.  Derleyici tarafından oluşturulan hata ayıklama bilgileri yalnızca için varsayılan çağırma kuralını destekler.
+   Derleme sözdizimi, arayan tarafından kaydedilmiş kayıtları ve aranan-Kaydet ' i listeleyen bir özel çağırma kuralı belirtimini desteklese de, Microsoft ARM Assembler söz dizimini kabul eder ancak kayıt listelerini yoksayar.  Assembler tarafından üretilen hata ayıklama bilgileri yalnızca varsayılan çağırma kuralını destekler.
 
 - `IMPORT` ve `EXTERN`
 
-   Bu söz dizimini kullanarak içeri aktarmalar belirtir:
+   Bu söz dizimini kullanarak içeri aktarmaları belirtir:
 
-   > **İçeri aktarma**|**EXTERN** *sym*{**, ZAYIF** *diğer*{**, türü** *t*}}
+   > **Içeri aktar** | **Extern** *SYK*{**, zayıf** *diğer ad*{**, tür** *t*}}
 
-   *sym* içeri aktarılacak sembolü adıdır.
+   *sye* , içeri aktarılacak simgenin adıdır.
 
-   Varsa `WEAK` *diğer* belirtilirse, bu gösterir *sym* zayıf bir dış. Bunun için hiçbir tanım bağlantı zamanında bulunan sonra bağlamak yerine tüm başvuruları *diğer*.
+   `WEAK` *Diğer ad* belirtilmişse, *SYI* 'nin zayıf bir dış olduğunu gösterir. Bağlantı zamanında bunun için bir tanım bulunmazsa, *diğer ad* olarak bunun yerine ona tüm başvurular bağlanır.
 
-   Varsa `TYPE` *t* , ardından belirtilen *t* nasıl bağlayıcı çözümlemeye belirten *sym*.  Bu değerler için *t* mümkündür:
+   `TYPE` *T* belirtildiyse, bağlayıcı, bağlayıcının  *Syd*'yi nasıl çözmesinin denendiğini gösterir.  *T* için bu değerler mümkündür:
 
    |Değer|Açıklama|
    |-|-|
-   |1.|Bir kitaplık arama gerçekleştirmeyin *sym*|
-   |2|Bir kitaplık arama gerçekleştirmek *sym*|
-   |3|*sym* için bir diğer addır *diğer* (varsayılan)|
+   |1|*Syd* için kitaplık araması gerçekleştirme|
+   |2|*Syd* için bir kitaplık araması gerçekleştirme|
+   |3|*sya* *diğer ad* için bir diğer addır (varsayılan)|
 
-   `EXTERN` eşanlamlıdır `IMPORT`dışında *sym* yalnızca, geçerli derlemede ona başvurusu varsa alınır.
+   `EXTERN``IMPORT`, ' nin yalnızca geçerli derlemede buna  başvurular varsa içeri aktarılmasının dışında, için bir eş anlamlı olur.
 
 - MACRO
 
-   Makro koşul kodunu tutacak bir değişken kullanımı desteklenmiyor. Varsayılan değerleri makrosu parametreler desteklenmez.
+   Bir makronun koşul kodunu tutmak için bir değişken kullanılması desteklenmez. Makro parametrelerinin varsayılan değerleri desteklenmiyor.
 
 - NOFP
 
@@ -101,17 +102,17 @@ ms.locfileid: "62167679"
 
 - `OPT`, `TTL`, `SUBT`
 
-   Microsoft ARM derleyicisi listelerini üretmediği desteklenmiyor.
+   Microsoft ARM derleyicisi, listeler üretmediğinden desteklenmez.
 
 - PRESERVE8
 
    Desteklenmez.
 
-- RELOC
+- KONUMU
 
-   `RELOC n` yalnızca bir yönerge ya da veri tanımı yönergesi takip edebilirsiniz. "Yerleştirildiğinde anonim hiçbir simge" dir.
+   `RELOC n` yalnızca bir yönergeyi veya bir veri tanımı yönergesini izleyebilir. Yeniden konumlandırılan "anonim sembol" yok.
 
-- GEREKTİRİR
+- GEREKTIRIR
 
    Desteklenmez.
 
@@ -119,11 +120,11 @@ ms.locfileid: "62167679"
 
    Desteklenmez.
 
-- THUMBX
+- PARMAK x
 
-   Microsoft ARM derleyicisi Thumb 2EE yönerge kümesi desteklemediği için desteklenmez.
+   Microsoft ARM Assembler, Thumb-2EE yönerge kümesini desteklemediğinden desteklenmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ARM Assembler Komut Satırı Başvurusu](../../assembler/arm/arm-assembler-command-line-reference.md)<br/>
-[ARM Assembler Tanılama İletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>
+[ARM Assembler Command-Line başvurusu](../../assembler/arm/arm-assembler-command-line-reference.md)<br/>
+[ARM Assembler tanılama Iletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>

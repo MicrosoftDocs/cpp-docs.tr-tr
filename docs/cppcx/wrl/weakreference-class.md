@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: WeakReference sınıfı'
 title: WeakReference Sınıfı
 ms.date: 09/24/2018
 ms.topic: reference
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::WeakReference::~WeakReference, destructor
 - Microsoft::WRL::Details::WeakReference::WeakReference, constructor
 ms.assetid: 3f4c956b-dbbd-49b1-8cfa-9509a9956c97
-ms.openlocfilehash: 9a367a61a029abe1be599b1e262e279402149ccd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 743a705fae93d015d190df24d2534de62613e542
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220463"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116555"
 ---
 # <a name="weakreference-class"></a>WeakReference Sınıfı
 
@@ -40,7 +41,7 @@ class WeakReference;
 
 Windows Çalışma Zamanı veya klasik COM ile kullanılabilen *zayıf bir başvuruyu* temsil eder. Zayıf başvuru, erişilebilir olabilecek veya erişilemeyen bir nesneyi temsil eder.
 
-Bir `WeakReference` nesnesi, bir nesnesi işaretçisi olan *güçlü*bir başvuru ve yöntemi tarafından dağıtılan güçlü başvurunun kopya sayısı olan güçlü bir *başvuru sayısı*tutar `Resolve()` . Güçlü başvuru sayısı sıfır dışında olduğunda, güçlü başvuru geçerlidir ve nesneye erişilebilir. Tanımlayıcı başvuru sayısı sıfır olduğunda, güçlü başvuru geçersizdir ve nesneye erişilemez.
+Bir `WeakReference` nesnesi, bir nesnesi işaretçisi olan *güçlü* bir başvuru ve yöntemi tarafından dağıtılan güçlü başvurunun kopya sayısı olan güçlü bir *başvuru sayısı* tutar `Resolve()` . Güçlü başvuru sayısı sıfır dışında olduğunda, güçlü başvuru geçerlidir ve nesneye erişilebilir. Tanımlayıcı başvuru sayısı sıfır olduğunda, güçlü başvuru geçersizdir ve nesneye erişilemez.
 
 Bir `WeakReference` nesne, genellikle varlığı bir dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil etmek için kullanılır. Örneğin, bir `WeakReference` dosya nesnesine başvurudan bir nesne oluşturun. Dosya açıkken, güçlü başvuru geçerli olur. Ancak dosya kapalıysa, güçlü başvuru geçersiz hale gelir.
 
@@ -74,7 +75,7 @@ Ad                                                                 | Açıklama
 
 **Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="weakreferenceweakreference"></a><a name="tilde-weakreference"></a>WeakReference:: ~ WeakReference
+## <a name="weakreferenceweakreference"></a><a name="tilde-weakreference"></a> WeakReference:: ~ WeakReference
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -88,7 +89,7 @@ virtual ~WeakReference();
 
 Sınıfın geçerli örneğini kaldırır `WeakReference` .
 
-## <a name="weakreferencedecrementstrongreference"></a><a name="decrementstrongreference"></a>WeakReference::D ecrementStrongReference
+## <a name="weakreferencedecrementstrongreference"></a><a name="decrementstrongreference"></a> WeakReference::D ecrementStrongReference
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -106,7 +107,7 @@ Güçlü başvuru sayısı sıfır olduğunda, güçlü başvuru olarak ayarlan�
 
 Azaltma güçlü başvuru sayısı.
 
-## <a name="weakreferenceincrementstrongreference"></a><a name="incrementstrongreference"></a>WeakReference:: IncrementStrongReference
+## <a name="weakreferenceincrementstrongreference"></a><a name="incrementstrongreference"></a> WeakReference:: IncrementStrongReference
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -122,7 +123,7 @@ Artan tanımlayıcı başvuru sayısı.
 
 Geçerli nesnenin tanımlayıcı başvuru sayısını artırır `WeakReference` .
 
-## <a name="weakreferenceresolve"></a><a name="resolve"></a>WeakReference:: Resolve
+## <a name="weakreferenceresolve"></a><a name="resolve"></a> WeakReference:: Resolve
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -153,7 +154,7 @@ Bu işlem tamamlandığında, güçlü başvuru sayısı sıfır değilse, geçe
 
 Güçlü başvuru sayısı sıfır değilse, belirtilen işaretçiyi geçerli tanımlayıcı başvuru değerine ayarlar.
 
-## <a name="weakreferencesetunknown"></a><a name="setunknown"></a>WeakReference:: SetUnknown
+## <a name="weakreferencesetunknown"></a><a name="setunknown"></a> WeakReference:: SetUnknown
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -172,7 +173,7 @@ Bir nesnenin arabirimine yönelik bir işaretçi `IUnknown` .
 
 Geçerli nesnenin güçlü başvurusunu `WeakReference` belirtilen arabirim işaretçisine ayarlar.
 
-## <a name="weakreferenceweakreference"></a><a name="weakreference"></a>WeakReference:: WeakReference
+## <a name="weakreferenceweakreference"></a><a name="weakreference"></a> WeakReference:: WeakReference
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 

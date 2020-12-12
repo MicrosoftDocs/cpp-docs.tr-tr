@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: olası yükseltme sorunlarına genel bakış (Visual C++)'
 title: Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 ms.date: 05/03/2019
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: d62bccfb3e508145773c01b26976f46dbcb6490f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 42060fc7bd1aeedebf6cdfc7f645ad8eea38153c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115215"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)
 
@@ -125,7 +126,7 @@ Hata C2371 ise ve bir `stdint` tür varsa, büyük olasılıkla türün kodunuzd
 
 Söz konusu türün nerede tanımlandığını görmek için **F12** tuşuna (**Tanıma Git**) basabilirsiniz.
 
-[/ShowIncludes](../build/reference/showincludes-list-include-files.md) derleyici seçeneği burada yararlı olabilir. Projeniz için **Özellik sayfaları** iletişim kutusunda **C/C++**  >  **Gelişmiş** sayfasını açın ve **içerme göster** ' i **Evet**olarak ayarlayın. Ardından projenizi yeniden derleyin ve `#include` Çıkış penceresinde s listesini görüntüleyin. Her üst bilgi, onu içeren üst bilgi altında girintilenir.
+[/ShowIncludes](../build/reference/showincludes-list-include-files.md) derleyici seçeneği burada yararlı olabilir. Projeniz için **Özellik sayfaları** iletişim kutusunda **C/C++**  >  **Gelişmiş** sayfasını açın ve **içerme göster** ' i **Evet** olarak ayarlayın. Ardından projenizi yeniden derleyin ve `#include` Çıkış penceresinde s listesini görüntüleyin. Her üst bilgi, onu içeren üst bilgi altında girintilenir.
 
 ## <a name="errors-involving-crt-functions"></a>CRT işlevleriyle ilgili hatalar
 
@@ -133,7 +134,7 @@ C çalışma zamanında yıllarda çok sayıda değişiklik yapılmıştır. İ�
 
 Bir hata CRT işlevi içeriyorsa, bu makalelerin ek bilgiler içerdiğini görmek için [Visual C++ değişiklik geçmişi 2003-2015](visual-cpp-change-history-2003-2015.md) ' i veya [Visual Studio 'da C++ uyumluluk geliştirmeleri](../overview/cpp-conformance-improvements.md) ' ni arayın. Hata LNK2019 ise, çözümlenmemiş dış ise işlevin kaldırılmadığından emin olun. Aksi takdirde, işlevin hala mevcut olduğundan eminseniz ve çağıran kod doğru olduğundan, projenizin kullanıp kullanmadığını kontrol edin `/NODEFAULTLIB` . Bu durumda, projenin yeni Evrensel (UCRT) kitaplıklarını kullanması için kitaplıkların listesini güncelleştirmeniz gerekir. Daha fazla bilgi için kitaplık ve bağımlılıklarda yukarıdaki bölüme bakın.
 
-Hata ya da içeriyorsa `printf` `scanf` , stdio. h dahil olmadan bir işlevi özel olarak tanımlamadığınızdan emin olun. Varsa, özel tanımları kaldırın veya eski \_ stdio \_ Definitions. lib bağlantısını kaldırın. Bu kitaplığı, **Property Pages** **Configuration Properties**  >  **Linker**  >  **ek bağımlılıklar** özelliğindeki yapılandırma özellikleri bağlayıcı**girişi**altındaki Özellik sayfaları iletişim kutusunda ayarlayabilirsiniz. Windows SDK 8,1 veya önceki bir sürümü ile bağlıyorsanız, eski \_ stdio \_ Definitions. lib ekleyin.
+Hata ya da içeriyorsa `printf` `scanf` , stdio. h dahil olmadan bir işlevi özel olarak tanımlamadığınızdan emin olun. Varsa, özel tanımları kaldırın veya eski \_ stdio \_ Definitions. lib bağlantısını kaldırın. Bu kitaplığı,    >    >  **ek bağımlılıklar** özelliğindeki yapılandırma özellikleri bağlayıcı **girişi** altındaki Özellik sayfaları iletişim kutusunda ayarlayabilirsiniz. Windows SDK 8,1 veya önceki bir sürümü ile bağlıyorsanız, eski \_ stdio \_ Definitions. lib ekleyin.
 
 Hata, biçim dizesi bağımsız değişkenlerini içeriyorsa, büyük olasılıkla derleyicinin standart zorlama konusunda daha sıkı olmasından kaynaklanır. Daha fazla bilgi için bkz. değişiklik geçmişi. Bir güvenlik riskini potansiyel olarak temsil ettiğinden, buradaki hatalara yakın bir şekilde dikkat edin.
 
@@ -149,7 +150,7 @@ C++ standardı artık işaretsiz ve işaretli integral değerleri için dönüş
 
 ## <a name="warnings-to-use-secure-crt-functions"></a>Güvenli CRT işlevlerini kullanma uyarıları
 
-Yıllarca, C çalışma zamanı işlevlerinin güvenli sürümleri sunulmuştur. Eski, güvenli olmayan sürümler hala kullanılabilir olsa da, kodunuzun güvenli sürümlerini kullanmak için değiştirilmesi önerilir. Derleyici, güvenli olmayan sürümlerin kullanımı için bir uyarı verecek. Bu uyarıları devre dışı bırakmayı veya yoksaymayı seçebilirsiniz. Çözümünüzdeki tüm projelere yönelik uyarıyı devre dışı bırakmak için, **Görünüm**  >  **Özellik Yöneticisi**açın, uyarıyı devre dışı bırakmak istediğiniz tüm projeler ' i seçin, ardından seçili öğelere sağ tıklayıp **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**  >  **C/C++**  >  **Gelişmiş**altında **belirli uyarıları devre dışı bırak**' ı seçin. Açılan oka tıklayın ve ardından **Düzenle**' ye tıklayın. Metin kutusuna 4996 girin. (' C ' önekini eklemeyin.) Daha fazla bilgi için bkz. [GÜVENLI CRT 'yi kullanmak Için taşıma](porting-guide-spy-increment.md#porting_to_secure_crt).
+Yıllarca, C çalışma zamanı işlevlerinin güvenli sürümleri sunulmuştur. Eski, güvenli olmayan sürümler hala kullanılabilir olsa da, kodunuzun güvenli sürümlerini kullanmak için değiştirilmesi önerilir. Derleyici, güvenli olmayan sürümlerin kullanımı için bir uyarı verecek. Bu uyarıları devre dışı bırakmayı veya yoksaymayı seçebilirsiniz. Çözümünüzdeki tüm projelere yönelik uyarıyı devre dışı bırakmak için, **Görünüm**  >  **Özellik Yöneticisi** açın, uyarıyı devre dışı bırakmak istediğiniz tüm projeler ' i seçin, ardından seçili öğelere sağ tıklayıp **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**  >  **C/C++**  >  **Gelişmiş** altında **belirli uyarıları devre dışı bırak**' ı seçin. Açılan oka tıklayın ve ardından **Düzenle**' ye tıklayın. Metin kutusuna 4996 girin. (' C ' önekini eklemeyin.) Daha fazla bilgi için bkz. [GÜVENLI CRT 'yi kullanmak Için taşıma](porting-guide-spy-increment.md#porting_to_secure_crt).
 
 ## <a name="errors-due-to-changes-in-windows-apis-or-obsolete-sdks"></a>Windows API 'Lerinde veya eski SDK 'larda yapılan değişikliklerden kaynaklanan hatalar
 
@@ -179,7 +180,7 @@ Ayrıca, işaretçi boyutu, zaman ve boyut değerleriyle ilgili olası derleme z
 
 ## <a name="unicode-vs-mbcsascii"></a>Unicode vs MBCS/ASCII
 
-Unicode, standartlaştırılmış olmadan önce, ASCII karakter kümesinde bulunmayan karakterleri temsil etmek için çok baytlı karakter kümesi (MBCS) kullandı. Daha eski MFC projelerinde, MBCS varsayılan ayardır ve böyle bir programı yükselttiğinizde, bunun yerine Unicode kullanmaya yönelik uyarılar görürsünüz. Unicode 'a dönüştürmeye karar verirseniz geliştirme maliyetine değer vermez, uyarıyı devre dışı bırakmayı veya yoksayabilirsiniz. Çözümünüzdeki tüm projeler için bunu devre dışı bırakmak için, **Görünüm**  >  **Özellik Yöneticisi**açın, uyarıyı devre dışı bırakmak istediğiniz tüm projeler ' i seçin, ardından seçili öğelere sağ tıklayıp **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**  >  **C/C++**  >  **Gelişmiş**' i seçin. **Belirli uyarıları devre dışı bırak** özelliğinde, açılan oku açın ve ardından **Düzenle**' yi seçin. Metin kutusuna 4996 girin. (' C ' önekini eklemeyin.) Özelliği kaydetmek için **Tamam** ' ı seçin ve ardından değişikliklerinizi kaydetmek için **Tamam** ' ı seçin.
+Unicode, standartlaştırılmış olmadan önce, ASCII karakter kümesinde bulunmayan karakterleri temsil etmek için çok baytlı karakter kümesi (MBCS) kullandı. Daha eski MFC projelerinde, MBCS varsayılan ayardır ve böyle bir programı yükselttiğinizde, bunun yerine Unicode kullanmaya yönelik uyarılar görürsünüz. Unicode 'a dönüştürmeye karar verirseniz geliştirme maliyetine değer vermez, uyarıyı devre dışı bırakmayı veya yoksayabilirsiniz. Çözümünüzdeki tüm projeler için bunu devre dışı bırakmak için, **Görünüm**  >  **Özellik Yöneticisi** açın, uyarıyı devre dışı bırakmak istediğiniz tüm projeler ' i seçin, ardından seçili öğelere sağ tıklayıp **Özellikler**' i seçin. **Özellik sayfaları** iletişim kutusunda, **yapılandırma özellikleri**  >  **C/C++**  >  **Gelişmiş**' i seçin. **Belirli uyarıları devre dışı bırak** özelliğinde, açılan oku açın ve ardından **Düzenle**' yi seçin. Metin kutusuna 4996 girin. (' C ' önekini eklemeyin.) Özelliği kaydetmek için **Tamam** ' ı seçin ve ardından değişikliklerinizi kaydetmek için **Tamam** ' ı seçin.
 
 Daha fazla bilgi için bkz. [MBCS 'Den Unicode 'A taşıma](porting-guide-spy-increment.md#porting_to_unicode). MBCS ile Unicode hakkında genel bilgi için, Visual C++ ve [Uluslararası hale getirme](../c-runtime-library/internationalization.md) [Içindeki Metin ve dizeler](../text/text-and-strings-in-visual-cpp.md) bölümüne bakın.
 

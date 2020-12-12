@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3276'
 title: Derleyici hatası C3276
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3276
 ms.assetid: dd6b4fd2-094d-4d34-a467-a9afd59789f7
-ms.openlocfilehash: 4037c5191c0b7316218100123f1cf1823f9d135b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: af50aba893af65adb300bf0ed3efa87b720de084
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201454"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113680"
 ---
 # <a name="compiler-error-c3276"></a>Derleyici hatası C3276
 

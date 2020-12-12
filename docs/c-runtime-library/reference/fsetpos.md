@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fsetpos'
 title: fsetpos
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - streams, setting position indicators
 - fsetpos function
 ms.assetid: 6d19ff48-1a2b-47b3-9f23-ed0a47b5a46e
-ms.openlocfilehash: 8fa6ec1f37703ce51e0c9c565d766c56cf164322
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e8259bcf4dba951bf6603fb5d4984db6ece0e266
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910175"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114227"
 ---
 # <a name="fsetpos"></a>fsetpos
 
@@ -63,7 +64,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fsetpos** işlevi, *akış için dosya* konumu göstergesini, **fgetpos** 'un *akışa*karşı önceki çağrısında elde edilen *POS*değerine ayarlar. İşlevi dosya sonu göstergesini temizler ve *Stream*üzerinde [ungetc](ungetc-ungetwc.md) 'nin tüm etkilerini geri alır. **Fsetpos**çağrıldıktan sonra *akıştaki* bir sonraki işlem girdi ya da çıktı olabilir.
+**Fsetpos** işlevi, *akış için dosya* konumu göstergesini, **fgetpos** 'un *akışa* karşı önceki çağrısında elde edilen *POS* değerine ayarlar. İşlevi dosya sonu göstergesini temizler ve *Stream* üzerinde [ungetc](ungetc-ungetwc.md) 'nin tüm etkilerini geri alır. **Fsetpos** çağrıldıktan sonra *akıştaki* bir sonraki işlem girdi ya da çıktı olabilir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -71,7 +72,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fsetpos**|\<stdio. h>|
+|**fsetpos**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -81,5 +82,5 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetpos](fgetpos.md)<br/>

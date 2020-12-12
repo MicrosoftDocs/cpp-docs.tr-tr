@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: move_iterator sınıfı'
 title: move_iterator Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - std::move_iterator [C++], reference
 - std::move_iterator [C++], base
 ms.assetid: a5e5cdd8-a264-4c6b-9f9c-68b0e8edaab7
-ms.openlocfilehash: 55e0c23aaf085a132ecab739ec1d4ff1f11858a0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 59201364dd7aef2fa9b635ae234599401dd33107
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228199"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115007"
 ---
 # <a name="move_iterator-class"></a>move_iterator Sınıfı
 
 Sınıf şablonu `move_iterator` , Yineleyici için bir sarmalayıcıdır. Move_iterator yineleyicinin onu sarmaladığıyla (depoladığı) aynı davranışı sağlar, yalnız bu öğe bir kopyayı taşıma durumuna çevirerek depolanan yineleyicinin başvuru kaldırma işlecini bir rvalue başvurusuna çevirir. Rvalues hakkında daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class move_iterator;
@@ -70,7 +71,7 @@ Bir bir `move_iterator` , Sarmalanan Yineleyici tarafından tanımlanmayan işle
 
 |İşleç|Açıklama|
 |-|-|
-|[move_iterator:: operator *](#op_star)|Döndürdüğü`(reference)*base().`|
+|[move_iterator:: operator *](#op_star)|Döndürdüğü `(reference)*base().`|
 |[move_iterator:: operator + +](#op_add_add)|Depolanmış yineleyiciyi artırır. Tam davranış artırma öncesi mi artırma sonrası mı olduğuna bağlıdır.|
 |[move_iterator:: operator--](#operator--)|Depolanan yineleyiciyi azaltır. Tam davranış azaltma öncesi mi azaltma sonrası mı olduğuna bağlıdır.|
 |[move_iterator:: operator-&gt;](#op_arrow)|`&**this` döndürür.|
@@ -86,7 +87,7 @@ Bir bir `move_iterator` , Sarmalanan Yineleyici tarafından tanımlanmayan işle
 
 **Ad alanı:** std
 
-## <a name="move_iteratorbase"></a><a name="base"></a>move_iterator:: Base
+## <a name="move_iteratorbase"></a><a name="base"></a> move_iterator:: Base
 
 Bu için depolanan yineleyiciyi döndürür `move_iterator` .
 
@@ -98,7 +99,7 @@ RandomIterator base() const;
 
 Üye işlevi depolanan yineleyiciyi döndürür.
 
-## <a name="move_iteratordifference_type"></a><a name="difference_type"></a>move_iterator::d ifference_type
+## <a name="move_iteratordifference_type"></a><a name="difference_type"></a> move_iterator::d ifference_type
 
 Tür, `difference_type` `move_iterator` **`typedef`** Yineleyici nitelik temel alınarak `difference_type` kullanılabilir ve bunun yerine onunla birlikte kullanılabilir.
 
@@ -110,7 +111,7 @@ typedef typename iterator_traits<RandomIterator>::difference_type difference_typ
 
 Tür, yineleyici nitelik için bir eş anlamlı `typename iterator_traits<RandomIterator>::pointer` .
 
-## <a name="move_iteratoriterator_category"></a><a name="iterator_category"></a>move_iterator:: iterator_category
+## <a name="move_iteratoriterator_category"></a><a name="iterator_category"></a> move_iterator:: iterator_category
 
 Tür, `iterator_category` `move_iterator` **`typedef`** Yineleyici nitelik temel alınarak `iterator_category` kullanılabilir ve bunun yerine onunla birlikte kullanılabilir.
 
@@ -122,7 +123,7 @@ typedef typename iterator_traits<RandomIterator>::iterator_category  iterator_ca
 
 Tür, yineleyici nitelik için bir eş anlamlı `typename iterator_traits<RandomIterator>::iterator_category` .
 
-## <a name="move_iteratoriterator_type"></a><a name="iterator_type"></a>move_iterator:: iterator_type
+## <a name="move_iteratoriterator_type"></a><a name="iterator_type"></a> move_iterator:: iterator_type
 
 Türü, `iterator_type` sınıf şablonu için Şablon parametresine dayalıdır `RandomIterator` `move_iterator` ve yerine birbirinin yerine kullanılabilir.
 
@@ -134,7 +135,7 @@ typedef RandomIterator iterator_type;
 
 Tür, şablon parametresi için bir eş anlamlı `RandomIterator` .
 
-## <a name="move_iteratormove_iterator"></a><a name="move_iterator"></a>move_iterator:: move_iterator
+## <a name="move_iteratormove_iterator"></a><a name="move_iterator"></a> move_iterator:: move_iterator
 
 Taşıma yineleyicisi oluşturur. , Parametresini saklı Yineleyici olarak kullanır.
 
@@ -154,7 +155,7 @@ Saklı Yineleyici olarak kullanılacak Yineleyici.
 
 İlk Oluşturucu, saklı yineleyiciyi varsayılan Oluşturucusu ile başlatır. Kalan oluşturucular, depolanan yineleyiciyi ile başlatır `base.base()` .
 
-## <a name="move_iteratoroperator"></a><a name="op_add_eq"></a>move_iterator:: operator + =
+## <a name="move_iteratoroperator"></a><a name="op_add_eq"></a> move_iterator:: operator + =
 
 Depolanan yineleyici için bir konum ekler ve bu sayede saklı Yineleyici yeni geçerli konumdaki öğeyi işaret eder. İşleci ardından yeni geçerli öğeyi taşıtir.
 
@@ -175,7 +176,7 @@ Yeni geçerli öğeyi döndürür.
 
 İşleci, depolanan yineleyiciye *_Off* ekler. Ardından döndürür **`*this`** .
 
-## <a name="move_iteratoroperator-"></a><a name="operator-_eq"></a>move_iterator:: operator-=
+## <a name="move_iteratoroperator-"></a><a name="operator-_eq"></a> move_iterator:: operator-=
 
 Belirtilen sayıda önceki öğenin arasında gider. Bu işleç, depolanan yineleyiciden bir sapmayı çıkartır.
 
@@ -189,7 +190,7 @@ move_iterator& operator-=(difference_type _Off);
 
 İşleci değerlendirilir `*this += -_Off` . Ardından döndürür **`*this`** .
 
-## <a name="move_iteratoroperator"></a><a name="op_add_add"></a>move_iterator:: operator + +
+## <a name="move_iteratoroperator"></a><a name="op_add_add"></a> move_iterator:: operator + +
 
 Geçerli öğeye ait saklı yineleyiciyi, `move_iterator.` postıncrement işleci tarafından erişilir. Next öğesine preıncrement işleci tarafından erişilir.
 
@@ -206,7 +207,7 @@ Birincisi (preıncrement) işleci saklı yineleyiciyi arttırır. Ardından dön
 
 İkinci (postıncrement) işleci bir kopyası yapar **`*this`** , değerlendirir `++*this` . Sonra kopyayı döndürür.
 
-## <a name="move_iteratoroperator"></a><a name="op_add"></a>move_iterator:: operator +
+## <a name="move_iteratoroperator"></a><a name="op_add"></a> move_iterator:: operator +
 
 Yineleyici konumunu herhangi bir sayıda öğe tarafından gelişmiş döndürür.
 
@@ -220,7 +221,7 @@ move_iterator operator+(difference_type _Off) const;
 
 İşleci döndürülür `move_iterator(*this) +=` `_Off` .
 
-## <a name="move_iteratoroperator"></a><a name="op_at"></a>move_iterator:: operator []
+## <a name="move_iteratoroperator"></a><a name="op_at"></a> move_iterator:: operator []
 
 Dizi dizininin öğe aralığı genelinde öğelere erişimine izin verir `move iterator` .
 
@@ -234,7 +235,7 @@ reference operator[](difference_type _Off) const;
 
 İşleci döndürülür `(reference)*(*this + _Off)` .
 
-## <a name="move_iteratoroperator--"></a><a name="operator--"></a>move_iterator:: operator--
+## <a name="move_iteratoroperator--"></a><a name="operator--"></a> move_iterator:: operator--
 
 Ön ve geri azaltma üye işleçleri, saklı Yineleyici üzerinde bir azaltma gerçekleştirir.
 
@@ -251,7 +252,7 @@ move_iterator operator--();
 
 İkinci (postazaltma) işleci bir kopyası yapar **`*this`** , değerlendirir `--*this` . Sonra kopyayı döndürür.
 
-## <a name="move_iteratoroperator-"></a><a name="operator-"></a>move_iterator:: operator-
+## <a name="move_iteratoroperator-"></a><a name="operator-"></a> move_iterator:: operator-
 
 Depolanan yineleyiciyi azaltır ve belirtilen değeri döndürür.
 
@@ -265,7 +266,7 @@ move_iterator operator-(difference_type _Off) const;
 
 İşleci döndürülür `move_iterator(*this) -= _Off` .
 
-## <a name="move_iteratoroperator"></a><a name="op_star"></a>move_iterator:: operator *
+## <a name="move_iteratoroperator"></a><a name="op_star"></a> move_iterator:: operator *
 
 Saklı yineleyiciden başvurur ve değeri döndürür. Bu, bir gibi davranır `rvalue reference` ve bir taşıma ataması gerçekleştirir. İşleci, geçerli öğeyi temel yineleyiciden aktarır. Aşağıdaki öğesi, yeni geçerli öğe haline gelir.
 
@@ -277,7 +278,7 @@ reference operator*() const;
 
 İşleci döndürülür `(reference)*base()` .
 
-## <a name="move_iteratoroperator-gt"></a><a name="op_arrow"></a>move_iterator:: operator-&gt;
+## <a name="move_iteratoroperator-gt"></a><a name="op_arrow"></a> move_iterator:: operator-&gt;
 
 Normal bir şekilde `RandomIterator` `operator->` , geçerli öğeye ait alanlara erişim sağlar.
 
@@ -289,7 +290,7 @@ pointer operator->() const;
 
 İşleci döndürülür `&**this` .
 
-## <a name="move_iteratorpointer"></a><a name="pointer"></a>move_iterator::p oınter
+## <a name="move_iteratorpointer"></a><a name="pointer"></a> move_iterator::p oınter
 
 Türü `pointer` **`typedef`** , için rastgele Yineleyici temelinde `RandomIterator` `move_iterator` ve birbirinin yerine kullanılabilir.
 
@@ -301,7 +302,7 @@ typedef RandomIterator  pointer;
 
 Tür için bir eş anlamlı `RandomIterator` .
 
-## <a name="move_iteratorreference"></a><a name="reference"></a>move_iterator:: Reference
+## <a name="move_iteratorreference"></a><a name="reference"></a> move_iterator:: Reference
 
 Türü `reference` **`typedef`** , için temel bir tabanlıdır `value_type&&` `move_iterator` ve ile birbirlerinin yerine kullanılabilir `value_type&&` .
 
@@ -313,7 +314,7 @@ typedef value_type&& reference;
 
 Türü, bir rvalue başvurusu olan için bir eş anladır `value_type&&` .
 
-## <a name="move_iteratorvalue_type"></a><a name="value_type"></a>move_iterator:: value_type
+## <a name="move_iteratorvalue_type"></a><a name="value_type"></a> move_iterator:: value_type
 
 Tür, `value_type` `move_iterator` **`typedef`** Yineleyici nitelik temel alınarak `value_type` kullanılabilir ve bunun yerine onunla birlikte kullanılabilir.
 

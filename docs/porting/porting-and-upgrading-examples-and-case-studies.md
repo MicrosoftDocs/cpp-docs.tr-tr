@@ -1,27 +1,28 @@
 ---
-title: 'Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri'
+description: 'Hakkında daha fazla bilgi edinin: taşıma ve yükseltme: örnekler ve örnek olay Incelemeleri'
+title: 'Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri'
 ms.date: 11/04/2016
 ms.assetid: d48bbff9-1ea7-467f-8c8b-758601f01573
-ms.openlocfilehash: 50e22c9eac39927c4456eeff1ed05c46a239bd30
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2488e4675cd20c72439aadf3c6eba5c85f2e12d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337134"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115202"
 ---
-# <a name="porting-and-upgrading-examples-and-case-studies"></a>Taşıma ve yükseltme: Örnekler ve örnek olay incelemeleri
+# <a name="porting-and-upgrading-examples-and-case-studies"></a>Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri
 
-Tür süresi karşılaşabileceğiniz sorunları hakkında bir fikir edinmek başarılı bir geçişin hikayeleri inceleyerek geçerli bir Visual C++'ın önceki bir sürümünden geçiş.
+Başarılı geçişlerin hikayelerini inceleyerek, Visual C++ önceki bir sürümünden güncel bir geçiş yaparak karşılaşabileceğiniz sorun türleri hakkında bir fikir edinebilirsiniz.
 
-## <a name="examples-of-successful-migrations"></a>Başarılı bir geçiş örnekleri
+## <a name="examples-of-successful-migrations"></a>Başarılı geçiş örnekleri
 
-Burada, hangi bazı büyüklükteki örnekleri ve Araçlar, Visual C++'ın en son sürüme geçirmek için sürdüğü hakkında okuyun. Bu geçişlerde karşılaşılan sorunları türlerini tipik sorunları herhangi bir geçiş, ancak önemli bir istisna ile karşılaşabilirsiniz ve kod boyutu. Elbette gerçek uygulama koduna göre çok küçük ve kısa örneklerdir.
+Burada, bazı modst örnekleri ve araçları Visual C++ en son sürümüne geçirmek için ne hakkında bilgi edinebilirsiniz. Bu geçişlerde karşılaşılan sorunlar, herhangi bir geçişte karşılaşabileceğiniz sorun türlerini, ancak önemli bir özel durum ve kodun boyutudur. Örnekler, gerçek dünya uygulama kodu ile karşılaştırıldığında çok küçük ve kısa bir uygulamadır.
 
-- [MFC karalama](../porting/porting-guide-mfc-scribble.md) MFC temelleri kullanan bir örnek gösterilmektedir.
+- [MFC karalama](../porting/porting-guide-mfc-scribble.md) , MFC temel bilgilerini kullanan bir örnektir.
 
-- [COM Spy](../porting/porting-guide-mfc-scribble.md) bir makinede COM + bileşenleri hakkında bilgi görüntüleyen bir uygulamadır.
+- [Com Spy](../porting/porting-guide-mfc-scribble.md) , BIR makinedeki com+ bileşenleriyle ilgili bilgileri görüntüleyen bir uygulamadır.
 
-- [Spy ++](../porting/porting-guide-spy-increment.md) inceler ve çalışan uygulamalar, kullanıcı Arabirimi öğeleri hakkında bilgi sağlayan bir uygulamadır.
+- [Spy + +](../porting/porting-guide-spy-increment.md) , çalışan uygulamalardaki UI öğeleri hakkında bilgi sağlayan bir uygulamadır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

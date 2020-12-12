@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: sınıflar ve yapılar (C++)'
 title: Sınıflar ve Yapılar (C++)
 ms.date: 05/07/2019
 helpviewer_keywords:
 - C++, classes and structs
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
-ms.openlocfilehash: d593f6575fec64aa0eb14c7aa0fcbb5c4eb66691
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d845cf130c2cbf06e182a49f3d83c78745864d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220606"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114071"
 ---
 # <a name="classes-and-structs-c"></a>Sınıflar ve Yapılar (C++)
 
@@ -53,7 +54,7 @@ Birleşimler hakkında daha fazla bilgi için bkz. [birleşimler](../cpp/unions.
 
 |Yapılar|Sınıflar|Birleşimler|
 |----------------|-------------|------------|
-|sınıf anahtarı**`struct`**|sınıf anahtarı**`class`**|sınıf anahtarı**`union`**|
+|sınıf anahtarı **`struct`**|sınıf anahtarı **`class`**|sınıf anahtarı **`union`**|
 |Varsayılan erişim geneldir|Varsayılan erişim özeldir|Varsayılan erişim geneldir|
 |Kullanım kısıtlaması yok|Kullanım kısıtlaması yok|Tek seferde yalnızca bir üye kullanın|
 

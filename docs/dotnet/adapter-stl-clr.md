@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağdaştırıcı (STL/CLR)'
 title: bağdaştırıcı (STL/CLR)
 ms.date: 06/15/2018
 ms.topic: reference
@@ -48,18 +49,18 @@ helpviewer_keywords:
 - operator= member [STL/CLR]
 - range_adapter member [STL/CLR]
 ms.assetid: 71ce7e51-42b6-4f70-9595-303791a97677
-ms.openlocfilehash: 3278371cc7afb08f0d461c77cde9578e1f2840c6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 66e6346c644bc0d176d90701722cfcd90cbb3590
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502422"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116425"
 ---
 # <a name="adapter-stlclr"></a>bağdaştırıcı (STL/CLR)
 
 STL/CLR üst bilgisi `<cliext/adapter>` iki şablon sınıfı ( `collection_adapter` ve `range_adapter` ) ve şablon işlevini belirtir `make_collection` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cliext/adapter>
@@ -172,7 +173,7 @@ Bu şablon sınıfını, bir BCL kapsayıcısını STL/CLR kapsayıcısı olarak
 
 Sarmalanan BCL arabirimini belirler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Coll^ base();
@@ -216,7 +217,7 @@ base() same = True
 
 Denetlenen dizinin başlangıcını belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 iterator begin();
@@ -361,7 +362,7 @@ x x x x x x
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int difference_type;
@@ -413,7 +414,7 @@ end()-begin() = 3
 
 Denetlenen dizinin bitişini belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 iterator end();
@@ -458,7 +459,7 @@ a b c
 
 Denetlenen dizi için bir yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T1 iterator;
@@ -503,7 +504,7 @@ a b c
 
 Sözlük anahtarının türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Key key_type;
@@ -553,7 +554,7 @@ int main()
 
 Sözlük değerinin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value mapped_type;
@@ -660,7 +661,7 @@ a b c
 
 Bir öğe için bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% reference;
@@ -708,7 +709,7 @@ a b c
 
 Öğe sayısını sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 size_type size();
@@ -751,7 +752,7 @@ size() = 6
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int size_type;
@@ -809,7 +810,7 @@ void swap(collection_adapter<Coll>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki saklı BCL tutamaçlarını **`*this`** değiştirir *right*.
+Üye işlevi, ve sağ arasındaki saklı BCL tutamaçlarını **`*this`** değiştirir .
 
 ### <a name="example"></a>Örnek
 
@@ -865,7 +866,7 @@ a b c
 
 Öğenin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value value_type;
@@ -873,7 +874,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, özelleştirme içinde varsa, şablon parametre *değeri*için bir eş anlamlıdır; Aksi takdirde, için bir eş anlamlı olur `System::Object^` .
+Tür, özelleştirme içinde varsa, şablon parametre *değeri* için bir eş anlamlıdır; Aksi takdirde, için bir eş anlamlı olur `System::Object^` .
 
 ### <a name="example"></a>Örnek
 
@@ -1126,7 +1127,7 @@ Oluşturucu:
 
 `range_adapter(range_adapter<Iter>% right);`
 
-*sağ tarafta*depolanan çifti kopyalayarak, saklı Yineleyici çiftini başlatır.
+*sağ tarafta* depolanan çifti kopyalayarak, saklı Yineleyici çiftini başlatır.
 
 Oluşturucu:
 
@@ -1138,7 +1139,7 @@ Oluşturucu:
 
 `range_adapter(Iter^ first, last);`
 
-depolanan yineleyici çiftini *ilk* ve *son*ile başlatır.
+depolanan yineleyici çiftini *ilk* ve *son* ile başlatır.
 
 ### <a name="example"></a>Örnek
 

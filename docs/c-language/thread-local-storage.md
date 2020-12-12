@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Iş parçacığı yerel depolaması'
 title: İş Parçacığında Yerel Depolama
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - thread-local storage
 - storage, thread local storage
 ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
-ms.openlocfilehash: a1099228e072a772ee7d8e7e93253b674d0cd24b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 188646ec6ae980cc61bd5882c15e2e9040e4a7ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69500278"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114344"
 ---
 # <a name="thread-local-storage"></a>İş Parçacığında Yerel Depolama
 
@@ -86,7 +87,7 @@ Statik olarak bağlantılı iş parçacığı yerel değişkenleri bildirirken b
 
    Başlatılmakta olan değişkeni içeren bir sizeof ifadesinin kendine başvuru oluşturduğunu ve izin verildiğini unutmayın.
 
-- **Declspec (thread) \_kullanımı, DLL içeri aktarımlarının gecikme yüklemesini etkileyebilir. \_** [delay loading](../build/reference/linker-support-for-delay-loaded-dlls.md)
+- **\_ \_ Declspec (thread)** kullanımı, DLL içeri aktarımlarının [gecikme yüklemesini](../build/reference/linker-support-for-delay-loaded-dlls.md) etkileyebilir.
 
 İş parçacığı özniteliğini kullanma hakkında daha fazla bilgi için bkz. [Çoklu Iş parçacığı konuları](../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
@@ -94,4 +95,4 @@ Statik olarak bağlantılı iş parçacığı yerel değişkenleri bildirirken b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Genişletilmiş Depolama Sınıfı Öznitelikler](../c-language/c-extended-storage-class-attributes.md)
+[C genişletilmiş Storage-Class öznitelikleri](../c-language/c-extended-storage-class-attributes.md)

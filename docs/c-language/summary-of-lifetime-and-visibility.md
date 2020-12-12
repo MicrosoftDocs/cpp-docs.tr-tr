@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: yaşam süresi ve görünürlük Özeti'
 title: Ömür ve Görünürlük Özeti
 ms.date: 11/04/2016
 helpviewer_keywords:
 - lifetime, and visibility
 - visibility, identifiers
 ms.assetid: ea05a253-7658-482c-9a6b-abd71169c42d
-ms.openlocfilehash: 760973bba1798068b5a19ebeb7a285d241d4ef72
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a1ce139b4fdc2562862eaef1828ec481685eca60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220814"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114487"
 ---
 # <a name="summary-of-lifetime-and-visibility"></a>Ömür ve Görünürlük Özeti
 
@@ -18,7 +19,7 @@ Aşağıdaki tabloda çoğu tanımlayıcı için ömür ve görünürlük özell
 
 ### <a name="summary-of-lifetime-and-visibility"></a>Ömür ve Görünürlük Özeti
 
-|Öznitelikler:<br /><br /> Düzey|Öğe|Depolama sınıfı<br /><br /> Belirleyici|Sonuç:<br /><br /> Ömür|Görünürlük|
+|Öznitelikler:<br /><br /> Level|Öğe|Storage-Class<br /><br /> Belirleyici|Sonuç:<br /><br /> Ömür|Görüş Mesafesi|
 |---------------------------|----------|----------------------------------|--------------------------|----------------|
 |Dosya kapsamı|Değişken tanımı|**`static`**|Genel|Kaynak dosyanın gerçekleştiği geri kalanı|
 ||Değişken bildirimi|**`extern`**|Genel|Kaynak dosyanın gerçekleştiği geri kalanı|
@@ -26,7 +27,7 @@ Aşağıdaki tabloda çoğu tanımlayıcı için ömür ve görünürlük özell
 ||İşlev prototipi|**`extern`**|Genel|Kaynak dosyanın kalanı|
 |Blok kapsamı|Değişken bildirimi|**`extern`**|Genel|Blok|
 ||Değişken tanımı|**`static`**|Genel|Blok|
-||Değişken tanımı|**`auto`** veya**`register`**|Yerel|Blok|
+||Değişken tanımı|**`auto`** veya **`register`**|Yerel|Blok|
 
 ## <a name="example"></a>Örnek
 

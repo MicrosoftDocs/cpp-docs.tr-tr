@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: hata ayıklama ve hata raporlama makroları'
 title: Hata ayıklama ve hata raporlama makroları
 ms.date: 05/06/2019
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 6b969cfb841a9a95d695eacc0a25f9dd378379ac
-ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
+ms.openlocfilehash: 573c3f341ff9f9df58337b75e1080dde960d232c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92135547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139951"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Hata ayıklama ve hata raporlama makroları
 
@@ -226,7 +227,7 @@ ATLTRACE2 öğesinin kısa biçimi, hata ayıklayıcının çıkış penceresine
 
 ### <a name="atl-trace-flags"></a>ATL Izleme bayrakları
 
-|ATL kategorisi|Description|
+|ATL kategorisi|Açıklama|
 |------------------|-----------------|
 |`atlTraceGeneral`|Tüm ATL uygulamalarındaki raporlar. Varsayılan.|
 |`atlTraceCOM`|COM yöntemleriyle ilgili raporlar.|
@@ -244,7 +245,7 @@ ATLTRACE2 öğesinin kısa biçimi, hata ayıklayıcının çıkış penceresine
 
 ### <a name="mfc-trace-flags"></a>MFC Izleme bayrakları
 
-|MFC kategorisi|Description|
+|MFC kategorisi|Açıklama|
 |------------------|-----------------|
 |`traceAppMsg`|Genel amaçlı, MFC iletileri. Her zaman önerilir.|
 |`traceDumpContext`|[CDumpContext](../../mfc/reference/cdumpcontext-class.md)iletileri.|

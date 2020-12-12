@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: feraiseexcept'
 title: feraiseexcept
 ms.date: 04/05/2018
 api_name:
@@ -22,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
-ms.openlocfilehash: e98c402169ed0f35ab1bdf0b8221a2248f252f21
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: 8e7a06006cfdc768fdaa306bc293857f1c375b90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124949"
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 
@@ -52,7 +53,7 @@ Belirtilen tüm özel durumlar başarıyla harekete geçirilir, 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Feraiseexcept** işlevi, *hariç tutulan*tarafından belirtilen kayan nokta özel durumlarını oluşturmayı dener.   **Feraiseexcept** işlevi, \<fenv. h > tanımlanan bu özel durum makrolarını destekler:
+**Feraiseexcept** işlevi, *hariç tutulan* tarafından belirtilen kayan nokta özel durumlarını oluşturmayı dener.   **Feraiseexcept** işlevi, içinde tanımlanan bu özel durum makrolarını destekler \<fenv.h> :
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
@@ -65,15 +66,15 @@ Belirtilen tüm özel durumlar başarıyla harekete geçirilir, 0 döndürür.
 
 *Hariç tutulan* bağımsız değişken sıfır, özel durum makrosu değerlerinden biri ya da desteklenen özel durum makrolarının BIT seviyesinde veya iki ya da daha fazlası olabilir. Belirtilen özel durum makrolarından biri FE_OVERFLOW veya FE_UNDERFLOW, FE_INEXACT özel durumu bir yan etkisi olarak ortaya çıkabilir.
 
-Bu işlevi kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için, çağrıdan önce yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir `#pragma fenv_access(on)` . Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 **Microsoft 'a özgü:** *Hariç tutulan* ' de belirtilen özel durumlar sırasıyla FE_INVALID, FE_DIVBYZERO, FE_OVERFLOW, FE_UNDERFLOW, FE_INEXACT olarak oluşturulur. Ancak, FE_OVERFLOW veya FE_UNDERFLOW başlatıldığında, *hariç tutulan*' de belirtilmese bile FE_INEXACT oluşturulabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|*feraiseexcept*|\<fenv. h >|\<cfenv >|
+|*feraiseexcept*|\<fenv.h>|\<cfenv>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

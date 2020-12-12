@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL OLE DB sağlayıcısı ekleme'
 title: ATL OLE DB Sağlayıcısı Ekleme
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding ATL OLE DB providers
 - ATL OLE DB providers
 ms.assetid: 26fba1e3-880f-4bc6-90e5-2096a48a3a6c
-ms.openlocfilehash: e593fdbd1c8c48a381cb2941971ebe4e0148965d
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: e60150e2d8dc57e16a55c75556d109583a95f054
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165673"
 ---
 # <a name="adding-an-atl-ole-db-provider"></a>ATL OLE DB Sağlayıcısı Ekleme
 
@@ -27,9 +28,9 @@ Bir projeye ATL OLE DB sağlayıcısı eklemek için bu sihirbazı kullanın. AT
 
 ## <a name="to-add-an-atl-ole-db-provider-to-your-project"></a>Projenize ATL OLE DB sağlayıcısı eklemek için
 
-1. **Sınıf görünümü** , projeye sağ tıklayın. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle** ' ye tıklayın.
+1. **Sınıf görünümü**, projeye sağ tıklayın. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
-1. **Visual C++** klasöründe, **ATL OLE DB sağlayıcı** simgesine çift tıklayın veya seçin ve **Aç** ' a tıklayın.
+1. **Visual C++** klasöründe, **ATL OLE DB sağlayıcı** simgesine çift tıklayın veya seçin ve **Aç**' a tıklayın.
 
    ATL OLE DB sağlayıcı Sihirbazı açılır.
 

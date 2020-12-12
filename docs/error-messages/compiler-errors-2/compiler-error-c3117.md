@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3117'
 title: Derleyici hatası C3117
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3117
 ms.assetid: dceee392-d4c7-4599-b75e-7aaac7c36fdd
-ms.openlocfilehash: 6ef04eca5c059ce1544b62addcaeb0510697d658
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 08f2d4c5d768cc97694e27e00db987f09722e6eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741176"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115917"
 ---
 # <a name="compiler-error-c3117"></a>Derleyici hatası C3117
 

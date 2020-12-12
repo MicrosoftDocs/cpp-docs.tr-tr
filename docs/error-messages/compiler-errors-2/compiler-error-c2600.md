@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2600'
 title: Derleyici hatası C2600
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2600
 ms.assetid: cce11943-ea01-4bee-a7b0-b67d24ec6493
-ms.openlocfilehash: b2d95460cadf03f9152599ef47ae703030326dd1
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: fbd99cb50bc3afc748e1d3b2e954c584a7cef78b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120029"
 ---
 # <a name="compiler-error-c2600"></a>Derleyici hatası C2600
 

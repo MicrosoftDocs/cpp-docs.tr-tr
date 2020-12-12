@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: sistem Işlevi'
 title: system İşlevi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - system function
 ms.assetid: 0786ccdc-20cd-4d96-b3d8-3230507c3066
-ms.openlocfilehash: e37de4e084de6727cf2858117945fd162f6b0d63
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 094fb3be58c1ff82c823ff79c4181a46b7ddf14c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62345129"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114386"
 ---
 # <a name="system-function"></a>system İşlevi
 
@@ -23,4 +24,4 @@ Daha fazla bilgi için bkz. [sistem, _wsystem](../c-runtime-library/reference/sy
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kitaplık İşlevleri](../c-language/library-functions.md)
+[Kitaplık Işlevleri](../c-language/library-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CWndClassInfo sınıfı'
 title: CWndClassInfo sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWndClassInfo class
 ms.assetid: c36fe7e1-75f1-4cf5-a06f-9f59c43fe6fb
-ms.openlocfilehash: c1b516f6e92f98d660f7757870a3e634dcef4518
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7a857812fa35743fbab0968fb94095bf8fdcabcf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835512"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140029"
 ---
 # <a name="cwndclassinfo-class"></a>CWndClassInfo sınıfı
 
@@ -67,7 +68,7 @@ class CWndClassInfo
 
 Varsayılan olarak, [CWindowImpl](../../atl/reference/cwindowimpl-class.md) yeni bir `DECLARE_WND_CLASS` pencere sınıfına dayalı bir pencere oluşturmak için makroyu içerir. DECLARE_WND_CLASS, denetimin varsayılan stillerini ve arka plan rengini sağlar. Stili ve arka plan rengini kendiniz belirtmek istiyorsanız, sınıfınızı sınıfından türetebilir `CWindowImpl` ve sınıf tanımınızda declare_wnd_class_ex makrosunu ekleyin.
 
-Varolan bir pencere sınıfına dayalı bir pencere oluşturmak isterseniz, sınıfınızı sınıfından türetebilir `CWindowImpl` ve declare_wnd_superclass makrosunu sınıf tanımınıza ekleyin. Örnek:
+Varolan bir pencere sınıfına dayalı bir pencere oluşturmak isterseniz, sınıfınızı sınıfından türetebilir `CWindowImpl` ve declare_wnd_superclass makrosunu sınıf tanımınıza ekleyin. Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]
 
@@ -186,7 +187,7 @@ Başarılı olursa, kayıtlı olan pencere sınıfını benzersiz bir şekilde t
 
 [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) ( [CWindowImpl](../../atl/reference/cwindowimpl-class.md)içinde varsayılan) veya [declare_wnd_class_ex](window-class-macros.md#declare_wnd_class_ex) makrosu belirttiyseniz, `Register` Yeni bir pencere sınıfını kaydeder. Bu durumda, *pProc* parametresi kullanılmaz.
 
-[Declare_wnd_superclass](window-class-macros.md#declare_wnd_superclass) makrosunu belirttiyseniz, `Register` var olan bir sınıfı temel alan ancak farklı bir pencere yordamı kullanan bir pencere sınıfı olan bir üst sınıf kaydeder. Mevcut pencere sınıfının pencere yordamı *pProc*içinde döndürülür.
+[Declare_wnd_superclass](window-class-macros.md#declare_wnd_superclass) makrosunu belirttiyseniz, `Register` var olan bir sınıfı temel alan ancak farklı bir pencere yordamı kullanan bir pencere sınıfı olan bir üst sınıf kaydeder. Mevcut pencere sınıfının pencere yordamı *pProc* içinde döndürülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: menüler ve kaynaklar: sunucu eklemeleri'
 title: 'Menüler ve Kaynaklar: Sunucu Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - server applications [MFC], OLE menus and resources
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
-ms.openlocfilehash: f67212dc7d4e2ab90421c7b2eee48acae4745940
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e53031fd030efa498bd80bdb191f76f66f63d343
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626179"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122882"
 ---
 # <a name="menus-and-resources-server-additions"></a>Menüler ve Kaynaklar: Sunucu Ekleme
 
@@ -38,7 +39,7 @@ Bu makalede ele alınan konular şunları içerir:
 
 - [Minıver eklemeleri](#_core_mini.2d.server_additions)
 
-## <a name="server-menu-additions"></a><a name="_core_server_menu_additions"></a>Sunucu menüsü eklemeleri
+## <a name="server-menu-additions"></a><a name="_core_server_menu_additions"></a> Sunucu menüsü eklemeleri
 
 Sunucu (bileşen) uygulamalarında OLE görsel düzenlemesini desteklemek için menü kaynakları eklenmiş olmalıdır. Uygulamanın tek başına modunda çalıştırıldığı zaman kullanılan menülerin değiştirilmesi gerekmez, ancak uygulamayı oluşturmadan önce iki yeni menü kaynağı eklemeniz gerekir: bunlardan biri yerinde etkinleştirmeyi desteklemek için ve diğeri tamamen açık olan sunucuyu destekler. Her iki menü kaynağı da tam ve minıver uygulamaları tarafından kullanılır.
 
@@ -48,7 +49,7 @@ Sunucu (bileşen) uygulamalarında OLE görsel düzenlemesini desteklemek için 
 
 Bu makalede listelenen değişikliklere ek olarak, kaynak dosyanızın AFXOLESV içermesi gerekir. RC, Microsoft Foundation Class Kitaplığı uygulama için gereklidir. Bu dosya Mfc\ınclude alt dizininde yer alır.
 
-## <a name="server-application-accelerator-table-additions"></a><a name="_core_server_application_accelerator_table_additions"></a>Sunucu uygulama Hızlandırıcısı tablo eklemeleri
+## <a name="server-application-accelerator-table-additions"></a><a name="_core_server_application_accelerator_table_additions"></a> Sunucu uygulama Hızlandırıcısı tablo eklemeleri
 
 Sunucu uygulamalarına iki yeni Hızlandırıcı tablo kaynağı eklenmelidir; daha önce açıklanan yeni menü kaynaklarına doğrudan karşılık gelir. İlk Hızlandırıcı tablosu, sunucu uygulaması yerinde etkinleştirildiğinde kullanılır. Bu, dosya ve pencere menülerine bağlı olanlar hariç, görünümün Hızlandırıcı tablosundaki tüm girdilerden oluşur.
 
@@ -56,7 +57,7 @@ Sunucu uygulamalarına iki yeni Hızlandırıcı tablo kaynağı eklenmelidir; d
 
 Bu Hızlandırıcı tablo değişikliklerinin bir örneği için IDR_HIERSVRTYPE_SRVR_IP ve IDR_HIERSVRTYPE_SRVR_EMB Hızlandırıcı tablolarını HIERSVR içindeki IDR_MAINFRAME karşılaştırın. RC dosyası MFC OLE örnek [Hiersvr](../overview/visual-cpp-samples.md)'a dahildir. Dosya ve pencere Hızlandırıcılar, yerinde tabloda yok ve bunların tam kopyaları katıştırılmış tabloda.
 
-## <a name="string-table-additions-for-server-applications"></a><a name="_core_string_table_additions_for_server_applications"></a>Sunucu uygulamaları için dize tablosu eklemeleri
+## <a name="string-table-additions-for-server-applications"></a><a name="_core_string_table_additions_for_server_applications"></a> Sunucu uygulamaları için dize tablosu eklemeleri
 
 Sunucu uygulamasında yalnızca bir dize tablosu eklemesi gerekir — OLE başlatmanın başarısız olduğunu belirten bir dize. Örnek olarak, Uygulama Sihirbazının oluşturduğu dize tablosu girdisi aşağıda verilmiştir:
 
@@ -64,11 +65,11 @@ Sunucu uygulamasında yalnızca bir dize tablosu eklemesi gerekir — OLE başla
 |--------|------------|
 |IDP_OLE_INIT_FAILED|OLE başlatması başarısız oldu. OLE kitaplıklarının doğru sürümde olduğundan emin olun.|
 
-## <a name="miniserver-additions"></a><a name="_core_mini.2d.server_additions"></a>Minıver eklemeleri
+## <a name="miniserver-additions"></a><a name="_core_mini.2d.server_additions"></a> Minıver eklemeleri
 
 Aynı eklemeler, daha önce tam sunucular için listelenenler gibi minıse 'ler için de geçerlidir. Bir minıver, tek başına modda çalıştırılabilmesi için ana menü çok daha küçüktür. Uygulama Sihirbazı tarafından oluşturulan ana menü yalnızca çıkış ve hakkında öğeleri içeren bir dosya menüsüne sahiptir. Daha önce gömülü ve yerinde menüler ve Hızlandırıcılar, tam sunucularla aynı olanlardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Menüler ve kaynaklar (OLE)](menus-and-resources-ole.md)<br/>
-[Menüler ve Kaynaklar: Menü Birleştirme](menus-and-resources-menu-merging.md)
+[Menüler ve kaynaklar: menü birleştirme](menus-and-resources-menu-merging.md)

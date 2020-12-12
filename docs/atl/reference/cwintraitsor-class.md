@@ -1,5 +1,6 @@
 ---
-title: CWinTraitsOR Sınıfı
+description: 'Daha fazla bilgi edinin: CWinTraitsOR Class'
+title: CWinTraitsOR sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CWinTraitsOR
@@ -10,19 +11,19 @@ helpviewer_keywords:
 - CWinTraitsOR class
 - window styles, default values for ATL
 ms.assetid: 1eb7b1e8-a9bd-411b-a30a-35a8a10af989
-ms.openlocfilehash: 825f79190c6f68cd1372154e4e02f430f545aa48
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1d0a7ff8a78ebbdc416bdace2a1ea1f0199c292f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330280"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140068"
 ---
-# <a name="cwintraitsor-class"></a>CWinTraitsOR Sınıfı
+# <a name="cwintraitsor-class"></a>CWinTraitsOR sınıfı
 
-Bu sınıf, bir pencere nesnesi oluştururken kullanılan stilleri standartlaştırmak için bir yöntem sağlar.
+Bu sınıf, bir pencere nesnesi oluştururken kullanılan stilleri standartlaştırarak bir yöntem sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,26 +46,26 @@ Varsayılan genişletilmiş pencere stilleri.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CWinTraitsOR::GetWndExStyle](#getwndexstyle)|`CWinTraitsOR` Nesne için genişletilmiş stilleri alır.|
-|[CWinTraitsOR::GetWndStyle](#getwndstyle)|Nesnenin standart stillerini `CWinTraitsOR` alır.|
+|[CWinTraitsOR:: GetWndExStyle](#getwndexstyle)|Nesnenin genişletilmiş stillerini alır `CWinTraitsOR` .|
+|[CWinTraitsOR:: GetWndStyle](#getwndstyle)|Nesnenin standart stillerini alır `CWinTraitsOR` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu [pencere özellikleri](../../atl/understanding-window-traits.md) sınıfı, Bir ATL pencere nesnesinin oluşturulması için kullanılan stilleri standartlaştırmak için basit bir yöntem sağlar. Bu sınıfın uzmanlık alanını, söz ve pencere sınıfı örnekleri için kullanılacak minimum standart ve genişletilmiş stilleri belirtmek için [CWindowImpl'e](../../atl/reference/cwindowimpl-class.md) veya ATL'nin pencere sınıflarından başka birsına şablon parametresi olarak uzmanlık kullanın.
+Bu [pencere nitelikleri](../../atl/understanding-window-traits.md) sınıfı, atl pencere nesnesi oluşturmak için kullanılan stilleri standartlaştırarak basit bir yöntem sağlar. Bu pencere sınıfının örnekleri için kullanılacak minimum ve genişletilmiş stiller kümesini belirtmek için [CWindowImpl](../../atl/reference/cwindowimpl-class.md) için bir şablon parametresi olarak bu sınıfın bir ÖZELLEŞTIRMESI veya atl pencere sınıflarının başka bir görünümünü kullanın.
 
-[CWindowImpl'e](../../atl/reference/cwindowimpl-class.md#create)yapılan çağrıda diğer stillerin her örnek te ayarlanmasına izin verirken, belirli stillerin pencere sınıfının tüm örnekleri için ayarlandığından emin olmak istiyorsanız bu şablonun özelleştirilmesini kullanın:Oluştur .
+Diğer stillerin [CWindowImpl:: Create](../../atl/reference/cwindowimpl-class.md#create)çağrısında örnek temelinde ayarlanmaya izin verildiğinden, bu şablonun bir özelleştirmesinin tüm pencere sınıfı örnekleri için ayarlanmış olduğundan emin olmak istiyorsanız bu şablonu özelleştirme kullanın.
 
-Yalnızca çağrıda başka stil belirtilmediğinde kullanılacak varsayılan pencere stilleri sağlamak `CWindowImpl::Create`istiyorsanız, bunun yerine [CWinTraits'ı](../../atl/reference/cwintraits-class.md) kullanın.
+Yalnızca çağrıda başka bir stil belirtilmediğinde kullanılacak varsayılan pencere stilleri sağlamak istiyorsanız `CWindowImpl::Create` , bunun yerine [CWinTraits](../../atl/reference/cwintraits-class.md) kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-## <a name="cwintraitsorgetwndstyle"></a><a name="getwndstyle"></a>CWinTraitsOR::GetWndStyle
+## <a name="cwintraitsorgetwndstyle"></a><a name="getwndstyle"></a> CWinTraitsOR:: GetWndStyle
 
-`CWinTraits` Nesnenin standart stillerinin ve *t_dwStyle*tarafından belirtilen varsayılan stillerin bir birleşimini (mantıksal OR işleci kullanarak) almak için bu işlevi arayın.
+Nesnenin standart stillerinin `CWinTraits` ve *t_dwStyle* tarafından belirtilen varsayılan stillerin BIRLEŞIMINI (mantıksal veya işlecini kullanarak) almak için bu işlevi çağırın.
 
 ```
 static DWORD GetWndStyle(DWORD dwStyle);
@@ -72,16 +73,16 @@ static DWORD GetWndStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwstyle*<br/>
+*dwStyle*<br/>
 Pencere oluşturmak için kullanılan stiller.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Mantıksal OR işleci kullanarak *dwStyle'da* geçirilen `t_dwStyle`stillerin ve belirtilen varsayılan stillerin birleşimi.
+*DwStyle* 'a geçirilen stillerin `t_dwStyle` , mantıksal or işleci kullanılarak tarafından belirtilen varsayılan değerler birleşimi.
 
-## <a name="cwintraitsorgetwndexstyle"></a><a name="getwndexstyle"></a>CWinTraitsOR::GetWndExStyle
+## <a name="cwintraitsorgetwndexstyle"></a><a name="getwndexstyle"></a> CWinTraitsOR:: GetWndExStyle
 
-`CWinTraits` Nesnenin genişletilmiş stillerinin ve varsayılan stillerin bir birleşimini (mantıksal OR işleci `t_dwStyle`kullanılarak) almak için bu işlevi arayın.
+Nesnenin genişletilmiş stillerinin `CWinTraits` ve tarafından belirtilen varsayılan stillerin birleşimini (MANTıKSAL veya işlecini kullanarak) almak için bu işlevi çağırın `t_dwStyle` .
 
 ```
 static DWORD GetWndExStyle(DWORD dwExStyle);
@@ -90,13 +91,13 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Pencere oluşturmak için kullanılan genişletilmiş stiller.
+Pencerenin oluşturulması için kullanılan genişletilmiş stiller.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Mantıksal OR işleci kullanılarak *dwExStyle'da* geçirilen genişletilmiş `t_dwExStyle`stillerin ve
+*DwExStyle* içinde geçirilen genişletilmiş stillerin ve `t_dwExStyle` mantıksal or işleci kullanılarak tarafından belirtilen varsayılan bir birleşimi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
-[Pencere Özelliklerini Anlama](../../atl/understanding-window-traits.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[Pencere niteliklerini anlama](../../atl/understanding-window-traits.md)

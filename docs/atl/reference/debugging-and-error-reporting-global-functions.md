@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: hata ayıklama ve hata raporlama genel Işlevleri'
 title: Hata ayıklama ve hata raporlama genel Işlevleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-ms.openlocfilehash: 10aca6862f6989c126981a9f6437c61f1c07bdae
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 3c729a7d8e870ce7b104ca53cd83bf8c41112dea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742794"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139990"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>Hata ayıklama ve hata raporlama genel Işlevleri
 

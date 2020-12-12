@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ADO.NET kullanarak veri erişimi (C++/CLı)'
 title: ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - SAFEARRAY, marshaling
 - ADO.NET [C++], marshaling SAFEARRAY types
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-ms.openlocfilehash: 3f3980c98890382e77d9d89db2944bebf7b12319
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 93af8a8a2dc4ebc8d9fe6073b9f3a70f4868bee8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124273"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 
@@ -35,7 +36,7 @@ ADO.NET, veri erişimi için .NET Framework API 'sidir ve önceki veri erişimi 
 
 ADO.NET, ortak dil çalışma zamanı (CLR) altında çalışır. Bu nedenle, ADO.NET ile etkileşen tüm uygulamalar CLR 'yi de hedeflemelidir. Ancak, yerel uygulamaların ADO.NET kullanmayacağınız anlamına gelmez. Bu örnekler, yerel koddan bir ADO.NET veritabanıyla nasıl etkileşim kuracağınızı gösterir.
 
-## <a name="marshal-ansi-strings-for-adonet"></a><a name="marshal_ansi"></a>ADO.NET için ANSI Dizelerini Sıralama
+## <a name="marshal-ansi-strings-for-adonet"></a><a name="marshal_ansi"></a> ADO.NET için ANSI Dizelerini Sıralama
 
 Bir veritabanına yerel bir dizenin () nasıl ekleneceğini `char *` ve bir <xref:System.String?displayProperty=fullName> veritabanından yerel dizeye nasıl hazırlanacağını gösterir.
 
@@ -161,7 +162,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_native.cpp
     ```
 
-## <a name="marshal-bstr-strings-for-adonet"></a><a name="marshal_bstr"></a>ADO.NET için BSTR dizelerini sıralama
+## <a name="marshal-bstr-strings-for-adonet"></a><a name="marshal_bstr"></a> ADO.NET için BSTR dizelerini sıralama
 
 Bir veritabanına COM dizesinin () nasıl ekleneceğini `BSTR` ve bir veritabanından bir veritabanından nasıl hazırlanacağını gösterir <xref:System.String?displayProperty=fullName> `BSTR` .
 
@@ -295,7 +296,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_native.cpp
     ```
 
-## <a name="marshal-unicode-strings-for-adonet"></a><a name="marshal_unicode"></a>ADO.NET için Unicode dizelerini sıralama
+## <a name="marshal-unicode-strings-for-adonet"></a><a name="marshal_unicode"></a> ADO.NET için Unicode dizelerini sıralama
 
 Bir veritabanına yerel Unicode dizesinin () nasıl ekleneceğini `wchar_t *` ve bir <xref:System.String?displayProperty=fullName> veritabanından yerel Unicode dizesine nasıl hazırlanacağını gösterir.
 
@@ -421,7 +422,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_wide.cpp
     ```
 
-## <a name="marshal-a-variant-for-adonet"></a><a name="marshal_variant"></a>ADO.NET için bir varyant sıralaması
+## <a name="marshal-a-variant-for-adonet"></a><a name="marshal_variant"></a> ADO.NET için bir varyant sıralaması
 
 Bir veritabanına yerel olarak nasıl ekleneceğini `VARIANT` ve bir veritabanından yerel olarak nasıl hazırlanacağını gösterir <xref:System.Object?displayProperty=fullName> `VARIANT` .
 
@@ -562,7 +563,7 @@ ObjectCol: 42
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_variant.cpp
     ```
 
-## <a name="marshal-a-safearray-for-adonet"></a><a name="marshal_safearray"></a>ADO.NET için bir SAFEARRAY sıralaması
+## <a name="marshal-a-safearray-for-adonet"></a><a name="marshal_safearray"></a> ADO.NET için bir SAFEARRAY sıralaması
 
 Bir veritabanına yerel olarak nasıl ekleneceğini `SAFEARRAY` ve yönetilen bir dizinin veritabanından yerel olarak nasıl hazırlanacağını gösterir `SAFEARRAY` .
 

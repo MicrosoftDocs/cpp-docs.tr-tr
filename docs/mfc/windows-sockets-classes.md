@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Windows Sockets sınıfları'
 title: 'Windows Yuvaları: Sınıflar'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sockets classes [MFC]
 - Windows Sockets [MFC], classes
 ms.assetid: 58b9ab8d-9e44-4db3-8265-e04e713d2e9a
-ms.openlocfilehash: 3f1b7b2b6674b4a5f8c8f7bff6c5fa239715f459
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 03d8ddae0bb511e52b0ea7ed2b3754184ed6ebc8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118647"
 ---
 # <a name="windows-sockets-classes"></a>Windows Yuvaları: Sınıflar
 
@@ -20,10 +21,10 @@ Windows Yuvaları iki bilgisayar arasında iletişim kurmanın ağ protokolüne 
 Windows Sockets API 'sini ince bir sarmalayıcı içinde kapsüller.
 
 [CSocket](../mfc/reference/csocket-class.md)<br/>
-`CAsyncSocket`türetilen üst düzey soyutlama. Zaman uyumlu olarak çalışır.
+Öğesinden türetilmiş daha yüksek düzey soyutlama `CAsyncSocket` . Zaman uyumlu olarak çalışır.
 
 [CSocketFile](../mfc/reference/csocketfile-class.md)<br/>
-Bir Windows yuvasına `CFile` arabirimi sağlar.
+Bir `CFile` Windows yuvasına arabirim sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

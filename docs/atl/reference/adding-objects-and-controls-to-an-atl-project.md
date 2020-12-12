@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ATL projesine nesne ve denetim ekleme'
 title: ATL Projesine Nesne ve Denetim Ekleme
 ms.date: 05/09/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - objects [C++], adding to ATL projects
 - ATL Control Wizard
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
-ms.openlocfilehash: 6acd60d430f13906d11e9a9b3e7c5655ee94badb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 979e15a6fe27599e68841e82ef03a457d66d3bf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499301"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165595"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>ATL Projesine Nesne ve Denetim Ekleme
 
@@ -56,5 +57,5 @@ ATL veya MFC tabanlı projelerinize bir nesne veya denetim eklemek için ATL kod
 [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual Studio 'da C++ proje türleri](../../build/reference/visual-cpp-project-types.md)<br/>
 [ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
-[ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[ATL ve C Run-Time kodla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Varsayılan ATL Proje yapılandırması](../../atl/reference/default-atl-project-configurations.md)

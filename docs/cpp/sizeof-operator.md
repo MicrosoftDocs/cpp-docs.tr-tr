@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sizeof Işleci'
 title: sizeof İşleci
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof operator
 ms.assetid: 8bc3b6fb-54a1-4eb7-ada0-05f8c5efc532
-ms.openlocfilehash: 13e181bf84e359d433fbe951b1aa69320a1f0013
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d4af55697a1466829e81f5eb220ffba72bf73f6a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186301"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116892"
 ---
 # <a name="sizeof-operator"></a>sizeof İşleci
 
@@ -20,7 +21,7 @@ Türünün boyutuna göre işleneninin boyutunu verir **`char`** .
 > [!NOTE]
 > İşleci hakkında daha fazla bilgi için `sizeof ...` bkz. [üç nokta ve değişen sayıda bağımsız değişken şablonları](../cpp/ellipses-and-variadic-templates.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 sizeof unary-expression
@@ -37,7 +38,7 @@ sizeof  ( type-name )
 
 - Bir ifade. Bir ifadeyle kullanıldığında, **`sizeof`** parantez ile veya Ayraçsız olarak belirtilebilir. İfade değerlendirilmedi.
 
-**`sizeof`** İşleci türündeki bir nesneye uygulandığında **`char`** , 1 verir. **`sizeof`** İşleci bir diziye uygulandığında, dizi tanımlayıcısının temsil ettiği işaretçinin boyutunda değil, bu dizideki toplam bayt sayısını verir. Dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutunu almak için, onu kullanan bir işleve parametre olarak geçirin **`sizeof`** . Örnek:
+**`sizeof`** İşleci türündeki bir nesneye uygulandığında **`char`** , 1 verir. **`sizeof`** İşleci bir diziye uygulandığında, dizi tanımlayıcısının temsil ettiği işaretçinin boyutunda değil, bu dizideki toplam bayt sayısını verir. Dizi tanımlayıcısı tarafından temsil edilen işaretçinin boyutunu almak için, onu kullanan bir işleve parametre olarak geçirin **`sizeof`** . Örneğin:
 
 ## <a name="example"></a>Örnek
 

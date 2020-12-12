@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: monostate struct'
 title: monostate yapısı
 ms.date: 04/04/2019
 f1_keywords:
 - variant/std::monostate
 helpviewer_keywords:
 - monostate struct
-ms.openlocfilehash: f083b5f4abd6e9fc482007744683342f7ab92fc0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 93b21f399761970129a495590e0821aa911a0408
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115163"
 ---
 # <a name="monostate-struct"></a>monostate yapısı
 
-Değişken türü varsayılan atmamalıdır yapmak için alternatif türünde bir değişken için sınıf monostate sunar.
+Sabit durum sınıfı, değişken türü varsayılan oluşturulabilir hale getirmek için bir değişken için alternatif tür görevi görür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct monostate;

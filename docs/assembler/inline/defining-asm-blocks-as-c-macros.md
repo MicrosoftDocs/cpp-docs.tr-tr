@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __asm bloklarını C makroları olarak tanımlama'
 title: __asm Bloklarını C Makroları olarak tanımlama
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Visual C, macros
 - __asm keyword [C++], as C macros
 ms.assetid: 677ba11c-21c8-4609-bba7-cd47312243b0
-ms.openlocfilehash: 4195624078c53f6c1f20cd2a03ed53dac937d9cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a0fe13acdd5a75fd86fd8107396632a5c6e7c283
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87192112"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117843"
 ---
 # <a name="defining-__asm-blocks-as-c-macros"></a>__asm Bloklarını C Makroları olarak tanımlama
 

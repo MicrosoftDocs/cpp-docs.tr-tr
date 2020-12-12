@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sürüm (C++)'
 title: sürüm (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - version attribute
 - version information, version attribute
 ms.assetid: db6ce5d8-82c2-4329-b1a8-8ca2f67342cb
-ms.openlocfilehash: 7d21761a556455cec27087896984bdc721841d9d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5b6d13e59b36fe37d71c9e2cca6fe7d75587f77b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832951"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118309"
 ---
 # <a name="version-c"></a>sürüm (C++)
 
 Bir sınıfın birden çok sürümü arasında belirli bir sürümü tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ version("version") ]
@@ -35,14 +36,14 @@ Bir sınıfın birden çok sürümü arasında belirli bir sürümü tanımlar.
 
 ## <a name="example"></a>Örnek
 
-**Sürümün**örnek kullanımı için [bağlanabilir](bindable.md) örneğe bakın.
+**Sürümün** örnek kullanımı için [bağlanabilir](bindable.md) örneğe bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**|
 |**Geçersiz öznitelikler**|Yok|
 

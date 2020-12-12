@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL ekleme Iletişim kutusu'
 title: ATL İletişim Kutusu Ekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC dialog boxes, ATL dialogs
 - dialog boxes, ATL
 ms.assetid: 152a378f-7b24-4f66-aeba-c740973f03a6
-ms.openlocfilehash: 71290cf0763ac6594985acc4cb11562efe7028e6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9d4abcafd5e12c6b8cffd636bf28a9e79f96e5ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165725"
 ---
 # <a name="adding-an-atl-dialog-box"></a>ATL İletişim Kutusu Ekleme
 
@@ -28,7 +29,7 @@ Varsayılan olarak, ATL Iletişim kutusu Sihirbazı, [Caxdialogimpl](../../atl/r
 
 1. [Sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), proje adına sağ tıklayın ve kısayol menüsünden **Ekle** ' ye tıklayın. **Sınıf Ekle**' ye tıklayın.
 
-1. [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) Iletişim kutusunun **Şablonlar** bölmesinde, **atl iletişim**kutusu ' na tıklayın. [ATL Iletişim sihirbazını](../../atl/reference/atl-dialog-wizard.md)göstermek için **Aç** ' a tıklayın.
+1. [Sınıf Ekle](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) Iletişim kutusunun **Şablonlar** bölmesinde, **atl iletişim** kutusu ' na tıklayın. [ATL Iletişim sihirbazını](../../atl/reference/atl-dialog-wizard.md)göstermek için **Aç** ' a tıklayın.
 
 Daha fazla bilgi için bkz. [bir Iletişim kutusu uygulama](../../atl/implementing-a-dialog-box.md).
 

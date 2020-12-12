@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2389'
 title: Derleyici hatası C2389
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2389
 ms.assetid: 6122dc81-4ee3-49a5-a67d-d867808c9bac
-ms.openlocfilehash: 50fa514222b7f51ea28ffdb87bf09a870b80dff7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1f9d34be47376564bf7c6fc221cf6f5b01e7850f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216251"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123974"
 ---
 # <a name="compiler-error-c2389"></a>Derleyici hatası C2389
 

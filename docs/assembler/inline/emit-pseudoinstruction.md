@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _emit sözde yönerge'
 title: _emit Sözde Yönerge
 ms.date: 08/30/2018
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - byte defining (inline assembly)
 - _emit pseudoinstruction
 ms.assetid: 004c48f3-364c-4e82-9a51-e326f9cc7b2b
-ms.openlocfilehash: 8be250aadf20dc4a7dee6a0b565ece21840339d7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d3e2a39312c94ff0e4868bed9afa74011051a129
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169480"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117815"
 ---
 # <a name="_emit-pseudoinstruction"></a>_emit Sözde Yönerge
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 **_Emit** sözde yönerge geçerli metin kesimindeki geçerli konumda bir bayt tanımlar. **_Emit** sözde yönerge, Masd 'nin [DB](../../assembler/masm/db.md) yönergesine benzer.
 
@@ -33,10 +34,10 @@ __asm {
 ```
 
 > [!CAUTION]
-> `_emit` kayıtları değiştiren yönergeler oluşturursa ve uygulamayı iyileştirmelere göre derlerseniz, derleyici hangi kayıtların etkilendiğini belirleyemez. Örneğin, `_emit`, **korx** kaydını değiştiren bir yönerge oluşturursa, bu, bu, **rampaın** değiştiğini bilmez. Derleyici daha sonra, satır içi assembler kodu yürütüldükten sonra o kayıttaki değer hakkında yanlış bir varsayımına sahip olabilirler. Sonuç olarak, uygulamanız çalıştırıldığında öngörülemeyen davranışları gösterebilir.
+> `_emit`Kayıtları değiştiren yönergeler oluşturursa ve uygulamayı iyileştirmelere göre derlerseniz, derleyici hangi yazmaçların etkilendiğini belirleyemez. Örneğin, `_emit` bir **VAX** kaydını değiştiren bir yönerge oluşturursa, derleyici, bu, **korx** 'in değiştiğini bilmez. Derleyici daha sonra, satır içi assembler kodu yürütüldükten sonra o kayıttaki değer hakkında yanlış bir varsayımına sahip olabilirler. Sonuç olarak, uygulamanız çalıştırıldığında öngörülemeyen davranışları gösterebilir.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>
+[__Asm bloklarında derleme dili kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

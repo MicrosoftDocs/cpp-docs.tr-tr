@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: User-Defined tür dönüştürmeleri (C++)'
 title: Kullanıcı Tanımlı Tür Dönüşümleri (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - conversions [C++], by constructors
 - data type conversion [C++], explicit
 ms.assetid: d40e4310-a190-4e95-a34c-22c5c20aa0b9
-ms.openlocfilehash: e7889a7365a6b3a362804d3dad4b2fefc3780d01
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ac3a373a7c6075e75c79f636e54f15425301ec3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227042"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116879"
 ---
 # <a name="user-defined-type-conversions-c"></a>Kullanıcı Tanımlı Tür Dönüşümleri (C++)
 
@@ -65,13 +66,13 @@ Hem dönüştürme oluşturucuları hem de dönüştürme işlevleri üye erişi
 
 Varsayılan olarak, Kullanıcı tanımlı bir dönüştürme oluşturduğunuzda Derleyici bunu örtük dönüştürmeler gerçekleştirmek için kullanabilir. Bazen bu, istediğiniz şeydir, ancak örtük dönüştürmeler yaparken derleyiciye kılavuzluk eden basit kuralların, kendisine istemediğiniz kodu kabul etmesine yol açabilir.
 
-Örtük dönüştürmeye sorun oluşmasına neden olabilecek bir tanınmış bir örnek, ' a dönüştürülür **`bool`** . Bir Boole bağlamında kullanılabilecek bir sınıf türü oluşturmak isteyebileceğiniz pek çok neden vardır — örneğin, bir ifadeyi veya döngüsünü denetlemek için kullanılabilmesi, **`if`** ancak derleyici yerleşik bir türe Kullanıcı tanımlı bir dönüştürme gerçekleştirdiğinde, derleyicinin daha sonra ek bir standart dönüştürme uygulamasına izin verilir. Bu ek standart dönüştürmenin amacı, yükseltme gibi öğelere izin vermek **`short`** **`int`** , ancak daha az belirgin dönüştürmeler için kapı açar — Örneğin, ' den **`bool`** ' e kadar, **`int`** sınıf yazınızdan hiçbir şekilde amaçlanmayan tamsayı bağlamlarda kullanılmasını sağlar. Bu sorun, *güvenli bool sorunu*olarak bilinir. Bu tür bir sorun, **`explicit`** anahtar sözcüğünün yardım edebilir.
+Örtük dönüştürmeye sorun oluşmasına neden olabilecek bir tanınmış bir örnek, ' a dönüştürülür **`bool`** . Bir Boole bağlamında kullanılabilecek bir sınıf türü oluşturmak isteyebileceğiniz pek çok neden vardır — örneğin, bir ifadeyi veya döngüsünü denetlemek için kullanılabilmesi, **`if`** ancak derleyici yerleşik bir türe Kullanıcı tanımlı bir dönüştürme gerçekleştirdiğinde, derleyicinin daha sonra ek bir standart dönüştürme uygulamasına izin verilir. Bu ek standart dönüştürmenin amacı, yükseltme gibi öğelere izin vermek **`short`** **`int`** , ancak daha az belirgin dönüştürmeler için kapı açar — Örneğin, ' den **`bool`** ' e kadar, **`int`** sınıf yazınızdan hiçbir şekilde amaçlanmayan tamsayı bağlamlarda kullanılmasını sağlar. Bu sorun, *güvenli bool sorunu* olarak bilinir. Bu tür bir sorun, **`explicit`** anahtar sözcüğünün yardım edebilir.
 
 **`explicit`** Anahtar sözcüğü derleyiciye belirtilen dönüştürmenin örtük dönüştürmeler gerçekleştirmek için kullanılamayacağını söyler. Anahtar sözcüğünün tanıtılmasından önce örtük dönüştürmelerin sözdizimsel rahatlığını istediyseniz **`explicit`** , örtük dönüştürmenin bazen oluşturduğu veya daha az kullanışlı, adlandırılmış dönüştürme işlevlerini geçici bir çözüm olarak kullandığı istenmeyen sonuçları kabul etmeniz gerekiyordu. Şimdi, **`explicit`** anahtar sözcüğünü kullanarak yalnızca açık yayınlar veya doğrudan başlatma gerçekleştirmek için kullanılabilecek ve güvenli bool sorunu tarafından muaf olan sorunların türüne yol açabilecek uygun dönüştürmeler oluşturabilirsiniz.
 
 **`explicit`** Anahtar sözcüğü, c++ 98 ' den bu yana dönüştürme oluşturuculara ve c++ 11 ' den beri işlevleri dönüştürmek için uygulanabilir. Aşağıdaki bölümler, anahtar sözcüğünün nasıl kullanılacağına ilişkin daha fazla bilgi içerir **`explicit`** .
 
-## <a name="conversion-constructors"></a><a name="ConvCTOR"></a>Dönüştürme oluşturucuları
+## <a name="conversion-constructors"></a><a name="ConvCTOR"></a> Dönüştürme oluşturucuları
 
 Dönüştürme oluşturucuları Kullanıcı tanımlı veya yerleşik türlerden Kullanıcı tanımlı bir türe dönüşümler tanımlar. Aşağıdaki örnek, yerleşik türden **`double`** Kullanıcı tanımlı bir türe dönüştüren bir dönüştürme oluşturucusunu gösterir `Money` .
 
@@ -155,7 +156,7 @@ Bu örnekte, doğrudan başlatma gerçekleştirmek için açık dönüştürme o
 
 Örtük Dönüştürmelere izin vermek mümkün olmakla birlikte, bunu yapmak, zor bulma hataları ortaya çıkarabilir. Kaydırma kuralı, belirli bir dönüştürmenin örtük olarak gerçekleşmesini istediğinizden emin olmadığınız sürece tüm dönüştürme oluşturucularını açık hale getirme kuralıdır.
 
-## <a name="conversion-functions"></a><a name="ConvFunc"></a>Dönüştürme işlevleri
+## <a name="conversion-functions"></a><a name="ConvFunc"></a> Dönüştürme işlevleri
 
 Dönüştürme işlevleri Kullanıcı tanımlı bir türden diğer türlere dönüşümler tanımlar. Bu işlevler bazen "atama işleçleri" olarak adlandırılır çünkü bir değer farklı bir türe yayınlandığı zaman, dönüştürme oluşturucularıyla birlikte çağrılır. Aşağıdaki örnek, Kullanıcı tanımlı türden, yerleşik bir türe dönüştüren bir dönüştürme işlevini gösterir `Money` **`double`** :
 
@@ -181,7 +182,7 @@ void display_balance(const Money balance)
 
 Üye değişkeninin `amount` özel hale getirildiğine ve bir genel dönüştürme işlevinin, ' **`double`** ın değerini döndürecek şekilde tanıtıldığına dikkat edin `amount` . İşlevinde `display_balance` , değeri `balance` Stream ekleme işleci kullanılarak standart çıktıya akışa eklendiğinde örtük bir dönüştürme gerçekleşir `<<` . Kullanıcı tanımlı tür için bir Stream-ekleme işleci tanımlanmadığı `Money` , ancak yerleşik tür için bir tane olduğundan **`double`** , derleyici, `Money` **`double`** Stream ekleme işlecini karşılamak için ' den ' a dönüştürme işlevini kullanabilir.
 
-Dönüştürme işlevleri türetilmiş sınıflar tarafından devralınır. Türetilmiş bir sınıftaki dönüştürme işlevleri yalnızca tam olarak aynı türe dönüştürülerse devralınan bir dönüştürme işlevini geçersiz kılar. Örneğin, türetilmiş sınıf **işlecinin** bir Kullanıcı tanımlı dönüştürme işlevi, standart dönüşümler ve arasında bir dönüştürme ilişkisi tanımlasa da, temel sınıf **işlecinin Short**bir Kullanıcı tanımlı dönüştürme işlevi olarak geçersiz kılınmaz, hatta etkilemez **`int`** **`short`** .
+Dönüştürme işlevleri türetilmiş sınıflar tarafından devralınır. Türetilmiş bir sınıftaki dönüştürme işlevleri yalnızca tam olarak aynı türe dönüştürülerse devralınan bir dönüştürme işlevini geçersiz kılar. Örneğin, türetilmiş sınıf **işlecinin** bir Kullanıcı tanımlı dönüştürme işlevi, standart dönüşümler ve arasında bir dönüştürme ilişkisi tanımlasa da, temel sınıf **işlecinin Short** bir Kullanıcı tanımlı dönüştürme işlevi olarak geçersiz kılınmaz, hatta etkilemez **`int`** **`short`** .
 
 ### <a name="declaring-conversion-functions"></a>Dönüştürme işlevleri bildirme
 

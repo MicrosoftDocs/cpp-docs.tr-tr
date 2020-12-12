@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: using bildirimi'
 title: using bildirimi
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - namespaces [C++], unqualified names in
 - using keyword [C++]
 ms.assetid: 4184e2b1-3adc-408e-b5f3-0b3f8b554723
-ms.openlocfilehash: 072ecd325a76e80dbd710c241e39fdf7b969e537
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: eb0c3367b3d526c0b5cc30eff6865d41ba33070b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008256"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116853"
 ---
 # <a name="using-declaration"></a>using bildirimi
 
@@ -328,4 +329,4 @@ public:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Ad alanları](../cpp/namespaces-cpp.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

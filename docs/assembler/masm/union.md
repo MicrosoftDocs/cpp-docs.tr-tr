@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: UNıON'
 title: UNION
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - UNION directive
 ms.assetid: 52504abf-7dc1-47c5-944c-b886803a0c6a
-ms.openlocfilehash: 0455e6cf05d5a4b3a9c3b3294fae0407d6341298
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: a8524e81cfc442324483dc18e8a1a47695b7fa86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75319105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97125053"
 ---
 # <a name="union"></a>UNION
 
 Bir veya daha fazla veri türünün birleşimini bildirir. *Alan bildirimleri* geçerli veri tanımları olmalıdır. İç içe geçmiş **birleşim** tanımlarındaki [bitiş](ends-masm.md) *adı* etiketini atlayın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> *Name* **UNION** ⟦*hizalaması*⟧ ⟦ __,__ **Unique olmayan**⟧ \
+> *Name* **UNION** ⟦*hizalaması*⟧ ⟦__,__ **Unique olmayan**⟧ \
 > *alan bildirimleri*\
 > ⟦*adı*⟧ **bitiyor**
 
