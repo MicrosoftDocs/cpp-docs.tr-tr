@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strcat, wcscat, _mbscat'
 title: strcat, wcscat, _mbscat
 ms.date: 11/04/2016
 api_name:
@@ -43,19 +44,19 @@ helpviewer_keywords:
 - appending strings
 - wcscat function
 ms.assetid: c89c4ef1-817a-44ff-a229-fe22d06ba78a
-ms.openlocfilehash: 973c54c18e941b29526cb3e9b1cadb98f6582c4a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 12ec6f6e0e9f940ef72d0aec742137843238c534
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70958269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292162"
 ---
 # <a name="strcat-wcscat-_mbscat"></a>strcat, wcscat, _mbscat
 
 Bir dize ekler. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md).
 
 > [!IMPORTANT]
-> **_mbscat_s** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscat_s** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -108,13 +109,13 @@ Bu işlevlerin her biri, hedef dizeyi (*strDestination*) döndürür. Bir hatay�
 > [!IMPORTANT]
 > **Strcat** , *strSource*' a eklemeden önce *strDestination* 'ta yeterli alanı denetlemediğinden, arabellek taşmalarının olası bir nedeni vardır. Bunun yerine [strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) kullanmayı düşünün.
 
-**wcscat** ve **_mbscat** , **strcat**'in geniş karakterli ve çok baytlı karakter sürümleridir. **Wcscat** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbscat** , çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**wcscat** ve **_mbscat** , **strcat**'in geniş karakterli ve çok baytlı karakter sürümleridir. **Wcscat** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbscat** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcscat**|**strcat**|**_mbscat**|**wcscat**|
 
@@ -122,9 +123,9 @@ Bu işlevlerin her biri, hedef dizeyi (*strDestination*) döndürür. Bir hatay�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcat**|\<String. h >|
-|**wcscat**|\<String. h > veya \<wchar. h >|
-|**_mbscat**|\<mbstring. h >|
+|**strcat**|\<string.h>|
+|**wcscat**|\<string.h> veya \<wchar.h>|
+|**_mbscat**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -134,7 +135,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dize düzenleme](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

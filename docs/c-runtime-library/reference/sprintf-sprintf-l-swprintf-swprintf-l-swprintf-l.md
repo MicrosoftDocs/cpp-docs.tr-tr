@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l'
 title: sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 ms.date: 06/23/2020
 api_name:
@@ -49,12 +50,12 @@ helpviewer_keywords:
 - sprintf_l function
 - formatted text [C++]
 ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
-ms.openlocfilehash: da3c5b3660b481fd3a7140adbc236f44cd51f37e
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 12c7560a57c126e2e35cf78b0d11b1262c14a9e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008828"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292214"
 ---
 # <a name="sprintf-_sprintf_l-swprintf-_swprintf_l-__swprintf_l"></a>sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 
@@ -113,7 +114,7 @@ int _sprintf_l(
 *arabelleğin*<br/>
 Çıktı için depolama konumu
 
-*count*<br/>
+*biriktirme*<br/>
 Bu işlevin Unicode sürümünde depolanacak en fazla karakter sayısı.
 
 *formatını*<br/>
@@ -129,20 +130,20 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluştuysa yazılan karakter sayısı veya-1. *Arabellek* veya *Biçim* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bir hata oluştuysa yazılan karakter sayısı veya-1. *Arabellek* veya *Biçim* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
-**sprintf** , Sonlandırıcı null karakteri saymayan *arabellekte*depolanan bayt sayısını döndürür. **swprintf** , Sonlandırıcı boş geniş karakteri saymayan *arabellekte*depolanan geniş karakter sayısını döndürür.
+**sprintf** , Sonlandırıcı null karakteri saymayan *arabellekte* depolanan bayt sayısını döndürür. **swprintf** , Sonlandırıcı boş geniş karakteri saymayan *arabellekte* depolanan geniş karakter sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sprintf** işlevi, *arabellekteki*bir dizi karakter ve değeri biçimlendirir ve depolar. Her *bağımsız değişken* (varsa), karşılık *gelen biçim belirtimine*göre dönüştürülür ve çıktı. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Yazılan son karakterden sonra null bir karakter eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
+**Sprintf** işlevi, *arabellekteki* bir dizi karakter ve değeri biçimlendirir ve depolar. Her *bağımsız değişken* (varsa), karşılık *gelen biçim belirtimine* göre dönüştürülür ve çıktı. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Yazılan son karakterden sonra null bir karakter eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
 > [!IMPORTANT]
-> **Sprintf**kullanarak,, **sprintf** kullanan kodun arabellek taşmalarına açık olduğu anlamına gelen, yazılan karakter sayısını sınırlandırmaya yönelik bir yol yoktur. *Arabelleğe*yazılacak en fazla karakter sayısını belirten [_snprintf](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)ilgili işlevi kullanmayı düşünün veya ne kadar büyük bir arabelleğin gerekli olduğunu anlamak için [_scprintf](scprintf-scprintf-l-scwprintf-scwprintf-l.md) kullanın. Ayrıca, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
+> **Sprintf** kullanarak,, **sprintf** kullanan kodun arabellek taşmalarına açık olduğu anlamına gelen, yazılan karakter sayısını sınırlandırmaya yönelik bir yol yoktur. *Arabelleğe* yazılacak en fazla karakter sayısını belirten [_snprintf](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)ilgili işlevi kullanmayı düşünün veya ne kadar büyük bir arabelleğin gerekli olduğunu anlamak için [_scprintf](scprintf-scprintf-l-scwprintf-scwprintf-l.md) kullanın. Ayrıca, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun.
 
-**swprintf** , **sprintf**öğesinin geniş karakterli bir sürümüdür; **swprintf** için işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **Swprintf** içindeki kodlama hatalarının algılanması **sprintf**öğesinden farklı olabilir. **swprintf** ve **fwprintf** , **swprintf** hariç davranır. **Dosya**türünde bir hedef yerine bir dizeye çıkış yazar ve **swprintf** *Count* parametresinin yazılacak maksimum karakter sayısını belirtmesini gerektirir. **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
+**swprintf** , **sprintf** öğesinin geniş karakterli bir sürümüdür; **swprintf** için işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **Swprintf** içindeki kodlama hatalarının algılanması **sprintf** öğesinden farklı olabilir. **swprintf** ve **fwprintf** , **swprintf** hariç davranır. **Dosya** türünde bir hedef yerine bir dizeye çıkış yazar ve **swprintf** *Count* parametresinin yazılacak maksimum karakter sayısını belirtmesini gerektirir. **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-**swprintf** , **size_t**türünde ikinci parametreyi ( *Count*) gerektiren ISO C standardına uyar. Olmayan eski davranışı zorlamak için **_CRT_NON_CONFORMING_SWPRINTFS**tanımlayın. Gelecekteki bir sürümde eski davranış kaldırılabilir, bu nedenle kodun yeni uyumlu davranışı kullanacak şekilde değiştirilmesi gerekir.
+**swprintf** , **size_t** türünde ikinci parametreyi ( *Count*) gerektiren ISO C standardına uyar. Olmayan eski davranışı zorlamak için **_CRT_NON_CONFORMING_SWPRINTFS** tanımlayın. Gelecekteki bir sürümde eski davranış kaldırılabilir, bu nedenle kodun yeni uyumlu davranışı kullanacak şekilde değiştirilmesi gerekir.
 
 C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
