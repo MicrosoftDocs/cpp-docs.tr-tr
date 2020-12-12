@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: yerel (C++)'
 title: Yerel (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - local attribute
 ms.assetid: 35cdd668-bd8e-492a-b7b8-263e7b662437
-ms.openlocfilehash: dea62653478e451af00fa47b72984f3b580aadc0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7fa1366b78576224f8fcc0d91392fe1fc6cb8af9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834095"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327517"
 ---
 # <a name="local-c"></a>yerel (C++)
 
@@ -29,14 +30,14 @@ Arabirim üstbilgisinde kullanıldığında, MıDL derleyicisini üst bilgi Olu�
 
 ## <a name="example"></a>Örnek
 
-**Yerel**kullanım hakkında bir örnek için bkz. [call_as](call-as.md) .
+**Yerel** kullanım hakkında bir örnek için bkz. [call_as](call-as.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**Interface**, Interface yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|`dispinterface`|
 

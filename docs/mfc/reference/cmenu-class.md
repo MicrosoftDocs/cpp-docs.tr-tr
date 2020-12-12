@@ -1,5 +1,6 @@
 ---
-title: CMenu Sınıfı
+description: 'Daha fazla bilgi edinin: CMenu sınıfı'
+title: CMenu sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMenu
@@ -84,18 +85,18 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: 5ec97d8cf039034078f29b38fb6a41d6ff9a5e53
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e1f0caea839e0660db10d055adf2af5fc7deb353
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341587"
 ---
-# <a name="cmenu-class"></a>CMenu Sınıfı
+# <a name="cmenu-class"></a>CMenu sınıfı
 
-Windows'un `HMENU`kapsülletisi.
+Windows kapsülleme `HMENU` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMenu : public CObject
@@ -105,85 +106,85 @@ class CMenu : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMenü::CMenu](#cmenu)|Bir `CMenu` nesne inşa eder.|
+|[CMenu:: CMenu](#cmenu)|Bir `CMenu` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMenu::AppendMenu](#appendmenu)|Bu menünün sonuna yeni bir öğe ekler.|
-|[CMenu::Ekle](#attach)|Bir `CMenu` nesneye Windows menü tutamacı bağlar.|
-|[CMenu::CheckMenuItem](#checkmenuitem)|Açılan menüde bir menü öğesinin yanına onay işareti yerleştirir veya onay işaretini kaldırır.|
-|[CMenu::CheckMenuRadioItem](#checkmenuradioitem)|Bir menü öğesinin yanına bir radyo düğmesi yerleştirir ve radyo düğmesini gruptaki diğer tüm menü öğelerinden kaldırır.|
-|[CMenu::CreateMenu](#createmenu)|Boş bir menü oluşturur ve nesneye `CMenu` bağlar.|
-|[CMenu::CreatePopupMenu](#createpopupmenu)|Boş bir açılır menü oluşturur ve bir `CMenu` nesneye bağlar.|
-|[CMenu::DeleteMenü](#deletemenu)|Belirtilen bir öğeyi menüden siler. Menü öğesinin ilişkili bir açılır menüsü varsa, açılan menüye açılan menüdeki tutamacı yok eder ve kullandığı belleği serbest hale getirir.|
-|[CMenu::DeleteTempMap](#deletetempmap)|Üye işlev `CMenu` tarafından oluşturulan geçici nesneleri siler. `FromHandle`|
-|[CMenu::DestroyMenü](#destroymenu)|Bir `CMenu` nesneye iliştirilen menüyü yok eder ve menünün kapta olduğu tüm belleği serbest bırakmaz.|
-|[CMenü::Detach](#detach)|Windows menü tutamacını bir `CMenu` nesneden ayırır ve tutamacı döndürür.|
-|[CMenu::DrawItem](#drawitem)|Sahip tarafından çizilen bir menünün görsel yönü değiştiğinde çerçeve tarafından çağrılır.|
-|[CMenu::EnableMenuItem](#enablemenuitem)|Menü öğesini etkinleştirin, devre dışı kılabilir veya karartır (griler).|
-|[CMenu::FromHandle](#fromhandle)|Bir işaretçiyi `CMenu` Windows menü tutamacı verilen bir nesneye döndürür.|
-|[CMenu::GetDefaultItem](#getdefaultitem)|Belirtilen menüdeki varsayılan menü öğesini belirler.|
-|[CMenu::GetMenuContextHelpId](#getmenucontexthelpid)|Menüyle ilişkili yardım bağlamı kimliğini alır.|
-|[CMenu::GetMenuInfo](#getmenuinfo)|Belirli bir menüdeki bilgileri alır.|
-|[CMenu::GetMenuItemCount](#getmenuitemcount)|Açılır pencere veya üst düzey menüdeki öğelerin sayısını belirler.|
-|[CMenu::GetMenuItemID](#getmenuitemid)|Belirtilen konumda bulunan bir menü öğesi için menü öğesi tanımlayıcısını alır.|
-|[CMenu::GetMenuItemInfo](#getmenuiteminfo)|Menü öğesi hakkındaki bilgileri alır.|
-|[CMenu::GetMenuState](#getmenustate)|Belirtilen menü öğesinin durumunu veya açılır menüdeki öğe sayısını döndürür.|
-|[CMenu::GetMenuString](#getmenustring)|Belirtilen menü öğesinin etiketini alır.|
-|[CMenu::GetSafeHmenu](#getsafehmenu)|Bu `CMenu` `m_hMenu` nesne tarafından sarılmış döndürür.|
-|[CMenu::GetSubMenu](#getsubmenu)|Açılır menü için bir işaretçi alır.|
-|[CMenu::InsertMenu](#insertmenu)|Belirtilen konuma yeni bir menü öğesi ekler ve diğer öğeleri menüden aşağı doğru hareket ettirer.|
-|[CMenu::EkleMenuItem](#insertmenuitem)|Menüde belirtilen konuma yeni bir menü öğesi ekler.|
-|[CMenü::LoadMenu](#loadmenu)|Yürütülebilir dosyadan bir menü kaynağı yükler `CMenu` ve bir nesneye bağlar.|
-|[CMenu::LoadMenuIndirect](#loadmenuindirect)|Menüyü bellekteki menü şablonundan yükler ve `CMenu` bir nesneye ekler.|
-|[CMenu::MeasureItem](#measureitem)|Sahip tarafından çizilmiş bir menü oluşturulduğunda menü boyutlarını belirlemek için çerçeve tarafından çağrılır.|
-|[CMenu::ModifyMenu](#modifymenu)|Varolan bir menü öğesini belirtilen konumda değiştirir.|
-|[CMenu::RemoveMenu](#removemenu)|Belirtilen menüden ilişkili açılır menü içeren bir menü öğesini siler.|
-|[CMenu::SetDefaultItem](#setdefaultitem)|Belirtilen menü için varsayılan menü öğesini ayarlar.|
-|[CMenu::SetMenuContextHelpId](#setmenucontexthelpid)|Yardım bağlamı kimliğini menüyle ilişkilendirilecek şekilde ayarlar.|
-|[CMenu::SetMenuInfo](#setmenuinfo)|Belirli bir menüdeki bilgileri ayarlar.|
-|[CMenu::SetMenuItemBitmaps](#setmenuitembitmaps)|Belirtilen onay işareti bit eşlemlerini bir menü öğesiyle ilişkilendirer.|
-|[CMenu::SetMenuItemInfo](#setmenuiteminfo)|Menü öğesi hakkındaki bilgileri değiştirir.|
-|[CMenu::TrackPopupMenu](#trackpopupmenu)|Belirtilen konumda kayan bir açılır menü görüntüler ve açılır menüdeki öğelerin seçimini izler.|
-|[CMenu::TrackPopupMenuEx](#trackpopupmenuex)|Belirtilen konumda kayan bir açılır menü görüntüler ve açılır menüdeki öğelerin seçimini izler.|
+|[CMenu:: AppendMenu](#appendmenu)|Bu menünün sonuna yeni bir öğe ekler.|
+|[CMenu:: Attach](#attach)|Bir nesneye Windows menü tutamacı ekler `CMenu` .|
+|[CMenu:: CheckMenuItem](#checkmenuitem)|Açılır menüdeki bir menü öğesinden yanına onay işareti koyar veya onay işareti kaldırır.|
+|[CMenu:: Checkmenuradioıtem](#checkmenuradioitem)|Bir menü öğesinin yanına bir radyo düğmesi koyar ve radyo düğmesini gruptaki diğer tüm menü öğelerinden kaldırır.|
+|[CMenu:: CreateMenu](#createmenu)|Boş bir menü oluşturur ve bunu bir nesneye ekler `CMenu` .|
+|[CMenu:: CreatePopupMenu](#createpopupmenu)|Boş bir açılır menü oluşturur ve bunu bir `CMenu` nesneye ekler.|
+|[CMenu::D eleteMenu](#deletemenu)|Menüden belirtilen öğeyi siler. Menü öğesinde ilişkili bir açılır menü varsa, bu tutamacı açılır menüye yok eder ve tarafından kullanılan belleği serbest bırakır.|
+|[CMenu::D eleteTempMap](#deletetempmap)|`CMenu`Üye işlevi tarafından oluşturulan geçici nesneleri siler `FromHandle` .|
+|[CMenu::D estroyMenu](#destroymenu)|Bir nesneye eklenmiş menüyü yok eder `CMenu` ve menünün kapladığı belleği boşaltır.|
+|[CMenu::D etach](#detach)|Bir Windows menü tutamacını bir nesneden ayırır `CMenu` ve tanıtıcıyı döndürür.|
+|[CMenu::D rawItem](#drawitem)|Sahip tarafından çizilmiş bir menünün görsel bir yönü değiştiğinde Framework tarafından çağırılır.|
+|[CMenu:: EnableMenuItem](#enablemenuitem)|Bir menü öğesini etkinleştirilir, devre dışı bırakır veya (griler).|
+|[CMenu:: FromHandle](#fromhandle)|`CMenu`Windows menü tutamacı verilen bir nesneye bir işaretçi döndürür.|
+|[CMenu:: Getdefaultıtem](#getdefaultitem)|Belirtilen menüdeki varsayılan menü öğesini belirler.|
+|[CMenu:: GetMenuContextHelpId](#getmenucontexthelpid)|Menüsüyle ilişkili Yardım bağlamı KIMLIĞINI alır.|
+|[CMenu:: Getmenuınfo](#getmenuinfo)|Belirli bir menüdeki bilgileri alır.|
+|[CMenu:: GetMenuItemCount](#getmenuitemcount)|Açılır veya üst düzey menüdeki öğelerin sayısını belirler.|
+|[CMenu:: Getmenuıtemıd](#getmenuitemid)|Belirtilen konumda bulunan bir menü öğesi için menü öğesi tanımlayıcıyı edinir.|
+|[CMenu:: Getmenuıiteınfo](#getmenuiteminfo)|Bir menü öğesi hakkında bilgi alır.|
+|[CMenu:: GetMenuState](#getmenustate)|Belirtilen menü öğesinin durumunu veya açılan menüdeki öğe sayısını döndürür.|
+|[CMenu:: GetMenuString](#getmenustring)|Belirtilen menü öğesinin etiketini alır.|
+|[CMenu:: GetSafeHmenu](#getsafehmenu)|`m_hMenu`Bu nesne tarafından Sarmalanan döndürür `CMenu` .|
+|[CMenu:: Getalt menüsü](#getsubmenu)|Açılır menüye yönelik bir işaretçi alır.|
+|[CMenu:: InsertMenu](#insertmenu)|Belirtilen konumda yeni bir menü öğesi ekler ve diğer öğeleri menünün altına taşır.|
+|[CMenu:: InsertMenuItem](#insertmenuitem)|Menüde belirtilen konuma yeni bir menü öğesi ekler.|
+|[CMenu:: LoadMenu](#loadmenu)|Yürütülebilir dosyadan bir menü kaynağı yükler ve bir `CMenu` nesneye ekler.|
+|[CMenu:: Loadmenudolaylı](#loadmenuindirect)|Bellekteki bir menü şablonundan bir menü yükler ve bunu bir `CMenu` nesneye ekler.|
+|[CMenu:: MeasureItem](#measureitem)|Sahip tarafından çizilmiş bir menü oluşturulduğunda menü boyutlarının belirlenmesi için Framework tarafından çağırılır.|
+|[CMenu:: ModifyMenu](#modifymenu)|Belirtilen konumda varolan bir menü öğesini değiştirir.|
+|[CMenu:: RemoveMenu](#removemenu)|Belirtilen menüden ilişkili bir açılır menü içeren bir menü öğesini siler.|
+|[CMenu:: Setdefaultıtem](#setdefaultitem)|Belirtilen menü için varsayılan menü öğesini ayarlar.|
+|[CMenu:: SetMenuContextHelpId](#setmenucontexthelpid)|Yardım bağlamı KIMLIĞINI menüsüyle ilişkilendirilecek şekilde ayarlar.|
+|[CMenu:: Setmenuınfo](#setmenuinfo)|Belirli bir menüdeki bilgileri ayarlar.|
+|[CMenu:: SetMenuItemBitmaps](#setmenuitembitmaps)|Belirtilen onay işareti bit eşlemlerini bir menü öğesiyle ilişkilendirir.|
+|[CMenu:: Setmenuiteınfo](#setmenuiteminfo)|Bir menü öğesiyle ilgili bilgileri değiştirir.|
+|[CMenu:: TrackPopupMenu](#trackpopupmenu)|Belirtilen konumda kayan bir açılır menü görüntüler ve açılır menüdeki öğelerin seçimini izler.|
+|[CMenu:: TrackPopupMenuEx](#trackpopupmenuex)|Belirtilen konumda kayan bir açılır menü görüntüler ve açılır menüdeki öğelerin seçimini izler.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMenu::operatör HMENU](#operator_hmenu)|Menü nesnesinin tutamacını alır.|
-|[CMenu::operatör !=](#operator_neq)|İki menü nesnesi eşit değilse belirler.|
-|[CMenu::operatör ==](#operator_eq_eq)|İki menü nesnesi eşit olup olmadığını belirler.|
+|[CMenu:: operator HMENU](#operator_hmenu)|Menü nesnesinin tanıtıcısını alır.|
+|[CMenu:: operator! =](#operator_neq)|İki menü nesnesinin eşit olup olmadığını belirler.|
+|[CMenu:: operator = =](#operator_eq_eq)|İki menü nesnesinin eşit olup olmadığını belirler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMenü::m_hMenu](#m_hmenu)|Nesneye iliştirilen Windows menüsüne `CMenu` tutamacı belirtir.|
+|[CMenu:: m_hMenu](#m_hmenu)|Nesneye eklenen Windows menüsüne yönelik tanıtıcıyı belirtir `CMenu` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir menü oluşturmak, izlemek, güncelleştirmek ve yok etmek için üye işlevler sağlar.
+Bir menü oluşturmak, izlemek, güncelleştirmek ve yok etmek için üye işlevleri sağlar.
 
-Yığın `CMenu` çerçevesi üzerinde yerel olarak bir nesne `CMenu`oluşturun ve ardından gerektiğinde yeni menüyü işlemek için 'üye işlevleri' çağırın. Ardından, menüyü bir pencereye ayarlamak için [CWnd::SetMenu'u](../../mfc/reference/cwnd-class.md#setmenu) `CMenu` arayın ve hemen ardından nesnenin [Detach](#detach) üye işlevine bir çağrı yapın. `CWnd::SetMenu` Üye işlev pencerenin menüsünü yeni menüye ayarlar, pencerenin menü değişikliğini yansıtacak şekilde yeniden çizilmesine neden olur ve ayrıca menünün sahipliğini pencereye geçirir. Yerel `CMenu` değişken `Detach` kapsam dışına geçtiğinde nesne `CMenu` `CMenu` yıkıcının artık sahip olmadığı bir menüyü yok etmeye çalışmaması için HMENU'yi nesneden ayırma çağrısı. Pencere yok edildiğinde menünün kendisi otomatik olarak yok edilir.
+`CMenu`Yığın çerçevesinde yerel olarak bir nesne oluşturun, sonra `CMenu` yeni menüyü gerektiğinde işlemek için üye işlevlerini çağırın. Sonra, menüyü bir pencereye ayarlamak için [CWnd:: SetMenu](../../mfc/reference/cwnd-class.md#setmenu) çağırın ve ardından `CMenu` nesnenin [Detach](#detach) üye işlevine yapılan bir çağrı tarafından hemen izlenir. `CWnd::SetMenu`Üye işlevi pencerenin menüsünü yeni menüye ayarlar, pencerenin menü değişikliğini yansıtacak şekilde yeniden çizilmesini sağlar ve ayrıca menünün sahipliğini pencereye geçirir. `Detach` `CMenu` Yerel `CMenu` değişken kapsam dışına geçtiğinde, `CMenu` nesne yıkıcısı artık sahip olmadığı bir menüyü yok etme girişiminde bulunduğunda, HMENU nesnesinden ayırır. Pencere yok edildiğinde menü otomatik olarak yok edilir.
 
-[LoadMenuIndirect](#loadmenuindirect) üye işlevini bellekteki bir şablondan bir menü oluşturmak için kullanabilirsiniz, ancak [LoadMenu'a](#loadmenu) yapılan bir çağrı yla kaynaktan oluşturulan bir menü daha kolay korunur ve menü kaynağının kendisi menü düzenleyicisi tarafından oluşturulabilir ve değiştirilebilir.
+Bellek içindeki bir şablondan bir menü oluşturmak için [Loadmenudolaylı](#loadmenuindirect) üye işlevini kullanabilirsiniz, ancak bir [LoadMenu](#loadmenu) çağrısıyla bir kaynaktan oluşturulmuş bir menü daha kolay korunabilir ve menü kaynağının kendisi Menü Düzenleyicisi tarafından oluşturulup değiştirilebilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 `CMenu`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cmenuappendmenu"></a><a name="appendmenu"></a>CMenu::AppendMenu
+## <a name="cmenuappendmenu"></a><a name="appendmenu"></a> CMenu:: AppendMenu
 
 Menünün sonuna yeni bir öğe ekler.
 
@@ -201,23 +202,23 @@ BOOL AppendMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nflags*<br/>
-Menüye eklendiğinde yeni menü öğesinin durumu yla ilgili bilgileri belirtir. Açıklamalar bölümünde listelenen değerlerden bir veya birkaçını oluşur.
+*nFlags*<br/>
+Menüye eklendiğinde yeni menü öğesinin durumu hakkında bilgi belirtir. Bu, açıklamalar bölümünde listelenen değerlerden birini veya daha fazlasını içerir.
 
 *nIDNewItem*<br/>
-Yeni menü öğesinin komut kimliğini veya *nFlags* MF_POPUP ayarlanmışsa, açılan menünün menü tutamacını ( `HMENU`) belirtir. *nFlags* MF_SEPARATOR ayarlanmışsa *nIDNewItem* parametresi yoksayılır (gerekli değildir).
+Yeni menü öğesinin komut KIMLIĞINI veya *nFlags* mf_popup, `HMENU` bir açılır menünün menü tutamacını () belirler. *NFlags* MF_SEPARATOR olarak ayarlandıysa *nIDNewItem* parametresi yok sayılır (gerekli değildir).
 
 *lpszNewItem*<br/>
-Yeni menü öğesinin içeriğini belirtir. *nFlags* parametresi aşağıdaki şekilde *lpszNewItem* yorumlamak için kullanılır:
+Yeni menü öğesinin içeriğini belirtir. *NFlags* parametresi, *lpszNewItem* aşağıdaki şekilde yorumlamak için kullanılır:
 
-|Nflags|lpszNewItem yorumu|
+|nFlags|LpszNewItem yorumu|
 |------------|-----------------------------------|
-|MF_OWNERDRAW|Uygulamanın menü öğesiyle ilişkili ek verileri korumak için kullanabileceği uygulama tarafından sağlanan 32 bit lik bir değer içerir. Bu 32 bit lik değer, WM_MEASUREITEM ve WM_DRAWITEM iletileri işlerken uygulama için kullanılabilir. Değer, bu iletilerle `itemData` birlikte verilen yapının üyesinde depolanır.|
-|MF_STRING|Null-sonlandırılan dize için bir işaretçi içerir. Bu varsayılan yorumdur.|
-|MF_SEPARATOR|*lpszNewItem* parametresi yoksayılır (gerekli değildir).|
+|MF_OWNERDRAW|Uygulamanın menü öğesiyle ilişkili ek verileri sürdürmek için kullanabileceği, uygulama tarafından sağlanan 32 bitlik bir değer içerir. Bu 32 bit değeri, WM_MEASUREITEM ve WM_DRAWITEM iletileri işlerken uygulama tarafından kullanılabilir. Değer, `itemData` bu iletilerle sağlanan yapının üyesi içinde depolanır.|
+|MF_STRING|Null ile sonlandırılmış bir dizeye yönelik bir işaretçi içerir. Bu, varsayılan yorumlamasıdır.|
+|MF_SEPARATOR|*LpszNewItem* parametresi yok sayılır (gerekli değildir).|
 
 *pBmp*<br/>
-Menü öğesi `CBitmap` olarak kullanılacak bir nesneye işaret edin.
+`CBitmap`Menü öğesi olarak kullanılacak bir nesneye işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -225,51 +226,51 @@ Menü öğesi `CBitmap` olarak kullanılacak bir nesneye işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama *nFlags*değerleri ayarlayarak menü öğesinin durumunu belirtebilirsiniz. *nIDNewItem* bir açılır menü belirttiğinde, eklendiği menünün bir parçası olur. Bu menü yok edilirse, eklenen menü de yok edilir. Çakışmayı önlemek için eklenen `CMenu` bir menü nesneden ayrılmalıdır. MF_STRING ve MF_OWNERDRAW bitmap sürümü için geçerli `AppendMenu`olmadığını unutmayın.
+Uygulama, *nFlags* içindeki değerleri ayarlayarak menü öğesinin durumunu belirtebilir. *NIDNewItem* bir açılan menüyü belirttiğinde, eklendiği menünün bir parçası haline gelir. Bu menü yok edildiğinde, eklenen menü de yok edilir. Çakışmayı önlemek için eklenen bir menü bir nesneden ayrılmalıdır `CMenu` . MF_STRING ve MF_OWNERDRAW bit eşlem sürümü için geçerli değildir `AppendMenu` .
 
-Aşağıdaki liste *nFlags*ayarlanabilecek bayrakları açıklar:
+Aşağıdaki listede, *nFlags* içinde ayarlanmakta olabilecek bayraklar açıklanmaktadır:
 
-- MF_CHECKED Varsayılan onay işaretini öğenin yanına yerleştirmek için MF_UNCHECKED ile geçiş görevi görür. Uygulama onay işareti bit eşlemleri sağladığında [(SetMenuItemBitmaps](#setmenuitembitmaps) üye işlevine bakın), "onay işareti üzerinde" bit eşlemi görüntülenir.
+- MF_CHECKED, varsayılan onay işaretini öğenin yanına yerleştirmek için MF_UNCHECKED bir geçiş Işlevi görür. Uygulama Check-Mark bit eşlemler (bkz. [Setmenuitembitmaps](#setmenuitembitmaps) üye işlevine bakın), "onay işareti açık" bit eşlemi görüntülenir.
 
-- MF_UNCHECKED Maddenin yanındaki onay işaretini kaldırmak için MF_CHECKED geçiş görevi görür. Uygulama onay işareti bit eşlerini sağladığında (üye işlevine `SetMenuItemBitmaps` bakın), "onay işareti" bit eşlemi görüntülenir.
+- MF_UNCHECKED öğenin yanındaki onay işaretini kaldırmak için MF_CHECKED bir geçiş Işlevi görür. Uygulama Check-Mark bit eşlemler ( `SetMenuItemBitmaps` üye işlevine bakın) sağlar, "onay işareti kapalı" bit eşlemi görüntülenir.
 
-- MF_DISABLED menü öğesini seçilemeyecek, ancak karartmayacak şekilde devre dışı kılabilir.
+- MF_DISABLED menü öğesini devre dışı bırakarak seçilemez ancak onu göstermez.
 
-- MF_ENABLED Menü öğesini seçilebilmesini sağlar ve soluk durumundan geri getirir.
+- MF_ENABLED, menü öğesinin seçilebilmesi ve soluk durumundan geri yüklenmesi için etkinleştirilir.
 
-- MF_GRAYED menü öğesini seçilemesin diye devre dışı bırakıp karartır.
+- MF_GRAYED, menü öğesini seçilemeyecek ve onları belirleyemeyecek şekilde devre dışı bırakır.
 
-- MF_MENUBARBREAK Öğeyi statik menülerde yeni bir satıra veya açılır menülerde yeni bir sütuna yerleştirir. Yeni açılır menü sütunu, dikey bir bölme satırı ile eski sütundan ayrılır.
+- MF_MENUBARBREAK, öğeyi statik menülere veya açılan menülerde yeni bir sütuna yeni bir satıra koyar. Yeni açılan menü sütunu, bir dikey bölme çizgisi ile eski sütundan ayrılacaktır.
 
-- MF_MENUBREAK Öğeyi statik menülerde yeni bir satıra veya açılır menülerde yeni bir sütuna yerleştirir. Sütunlar arasına bölme satırı yerleştirilmez.
+- MF_MENUBREAK, öğeyi statik menülere veya açılan menülerde yeni bir sütuna yeni bir satıra koyar. Sütunlar arasına bölme çizgisi yerleştirilmemiş.
 
-- MF_OWNERDRAW Maddenin bir sahip çizim öğesi olduğunu belirtir. Menü ilk kez görüntülendiğinde, menünün sahibi olan pencere, menü öğesinin yüksekliğini ve genişliğini alan bir WM_MEASUREITEM iletisi alır. WM_DRAWITEM iletisi, sahibinin menü öğesinin görsel görünümünü güncelleştirmesi gerektiğinde gönderilen iletidir. Bu seçenek üst düzey bir menü öğesi için geçerli değildir.
+- MF_OWNERDRAW, öğenin bir sahip çizim öğesi olduğunu belirtir. Menü ilk kez görüntülendiğinde, menünün sahibi olan pencere, menü öğesinin yüksekliğini ve genişliğini alan WM_MEASUREITEM bir ileti alır. WM_DRAWITEM ileti, sahibin menü öğesinin görsel görünümünü güncelleştirmesi gerektiğinde gönderilir. Bu seçenek, üst düzey menü öğesi için geçerli değildir.
 
-- MF_POPUP Menü öğesinin onunla ilişkili bir açılır menüsü olduğunu belirtir. Kimlik parametresi, öğeyle ilişkilendirilecek açılır menüiçin bir tanıtıcı belirtir. Bu, açılır menü öğesine üst düzey açılır menü veya hiyerarşik açılır menü eklemek için kullanılır.
+- MF_POPUP, menü öğesinin onunla ilişkili bir açılır menü olduğunu belirtir. ID parametresi, öğe ile ilişkilendirilecek bir açılır menüye yönelik bir tanıtıcı belirtir. Bu, bir açılır menü öğesine bir üst düzey açılır menü veya hiyerarşik açılan menü eklemek için kullanılır.
 
-- MF_SEPARATOR Yatay bir bölme çizgisi çizer. Yalnızca açılır menüde kullanılabilir. Bu satır soluk, devre dışı veya vurgulanamaz. Diğer parametreler yoksayılır.
+- MF_SEPARATOR yatay bölme çizgisi çizer. Yalnızca bir açılır menüde kullanılabilir. Bu satır soluk, devre dışı veya vurgulanmış olamaz. Diğer parametreler yok sayılır.
 
-- MF_STRING Menü öğesinin bir karakter dizesi olduğunu belirtir.
+- MF_STRING, menü öğesinin bir karakter dizesi olduğunu belirtir.
 
-Aşağıdaki grupların her biri, birbirini dışlayan ve birlikte kullanılamayacak bayrakları listeler:
+Aşağıdaki grupların her biri birbirini dışlayan ve birlikte kullanılamayan bayrakları listeler:
 
 - MF_DISABLED, MF_ENABLED ve MF_GRAYED
 
-- MF_STRING, MF_OWNERDRAW, MF_SEPARATOR ve bitmap sürümü
+- MF_STRING, MF_OWNERDRAW, MF_SEPARATOR ve bit eşlem sürümü
 
 - MF_MENUBARBREAK ve MF_MENUBREAK
 
 - MF_CHECKED ve MF_UNCHECKED
 
-Bir pencerede bulunan bir menü değiştirildiğinde (pencere görüntülense de görüntülenmese de), uygulama [CWnd::DrawMenuBar.](../../mfc/reference/cwnd-class.md#drawmenubar)
+Pencerede bulunan bir menü değiştirildiğinde (pencerenin görüntülenip görüntülenmediğini belirtir), uygulama [CWnd::D rawMenuBar](../../mfc/reference/cwnd-class.md#drawmenubar)öğesini çağırmalıdır.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:CreateMenu](#createmenu).
+  [CMenu:: CreateMenu](#createmenu)örneğine bakın.
 
-## <a name="cmenuattach"></a><a name="attach"></a>CMenu::Ekle
+## <a name="cmenuattach"></a><a name="attach"></a> CMenu:: Attach
 
-Varolan bir Windows menüsünü bir `CMenu` nesneye bağlar.
+Varolan bir Windows menüsünü bir nesneye ekler `CMenu` .
 
 ```
 BOOL Attach(HMENU hMenu);
@@ -277,26 +278,26 @@ BOOL Attach(HMENU hMenu);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hmenu*<br/>
-Windows menüsünde bir tanıtıcı belirtir.
+*hMenu*<br/>
+Bir Windows menüsü için bir tanıtıcı belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa sıfırolmayan; aksi takdirde 0.
+İşlem başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMenu` Nesneye zaten bir menü eklenmişse, bu işlev çağrılmamalıdır. Menü tutamacı veri üyesinde `m_hMenu` depolanır.
+Bu işlev, nesnesine zaten bir menü eklenmişse kullanılmamalıdır `CMenu` . Menü tanıtıcısı, `m_hMenu` veri üyesinde depolanır.
 
-Işlemek istediğiniz menü zaten bir pencereyle ilişkiliyse, menüye bir tanıtıcı almak için [CWnd::GetMenu](../../mfc/reference/cwnd-class.md#getmenu) işlevini kullanabilirsiniz.
+İşlemek istediğiniz menü zaten bir pencereyle ilişkili ise, bir menü tutamacı almak için [CWnd:: GetMenu](../../mfc/reference/cwnd-class.md#getmenu) işlevini kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/cpp/cmenu-class_1.cpp)]
 
-## <a name="cmenucheckmenuitem"></a><a name="checkmenuitem"></a>CMenu::CheckMenuItem
+## <a name="cmenucheckmenuitem"></a><a name="checkmenuitem"></a> CMenu:: CheckMenuItem
 
-Açılan menüdeki menü öğelerine onay işaretleri ekler veya kaldırır.
+Açılır menüdeki menü öğelerinden onay işaretleri ekler veya onay işaretlerini kaldırır.
 
 ```
 UINT CheckMenuItem(
@@ -307,36 +308,36 @@ UINT CheckMenuItem(
 ### <a name="parameters"></a>Parametreler
 
 *nIDCheckItem*<br/>
-nCheck tarafından belirlendiği gibi, işaretlenecek menü *öğesini*belirtir.
+Denetlenecek menü öğesini, *nCheck* tarafından belirlendiği şekilde belirtir.
 
-*nCheck*<br/>
-Menü öğesinin nasıl denetlenebildiğini ve öğenin menüdeki konumunu nasıl belirleyip belirleyeceklerini belirtir. *nCheck* parametresi, MF_BYPOSITION veya MF_BYCOMMAND bayraklarıyla MF_CHECKED veya MF_UNCHECKED birleşimi olabilir. Bu bayraklar bitwise OR işleci kullanılarak birleştirilebilir. Onlar aşağıdaki anlamları vardır:
+*Nhatayla*<br/>
+Menü öğesini nasıl denetleyeceğini ve menüde öğenin konumunun nasıl belirleneceğini belirtir. *NCheck* parametresi, MF_BYPOSITION veya MF_BYCOMMAND bayraklarıyla bir MF_CHECKED veya MF_UNCHECKED birleşimi olabilir. Bu bayraklar bit düzeyinde OR işleci kullanılarak birleştirilebilir. Bunlar aşağıdaki anlamlara sahiptir:
 
-- MF_BYCOMMAND Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Bu varsayılandır.
+- MF_BYCOMMAND, parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Bu varsayılan seçenektir.
 
-- MF_BYPOSITION Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.
+- MF_BYPOSITION, parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.
 
-- MF_CHECKED Varsayılan onay işaretini öğenin yanına yerleştirmek için MF_UNCHECKED ile geçiş görevi görür.
+- MF_CHECKED, varsayılan onay işaretini öğenin yanına yerleştirmek için MF_UNCHECKED bir geçiş Işlevi görür.
 
-- MF_UNCHECKED Maddenin yanındaki onay işaretini kaldırmak için MF_CHECKED geçiş görevi görür.
+- MF_UNCHECKED öğenin yanındaki onay işaretini kaldırmak için MF_CHECKED bir geçiş Işlevi görür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğenin önceki durumu: MF_CHECKED veya MF_UNCHECKED veya menü öğesi yoksa 0xFFFFFFFF.
+Öğenin önceki durumu: MF_CHECKED veya MF_UNCHECKED ya da menü öğesi yoksa 0xFFFFFFFF.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nIDCheckItem* parametresi değiştirilecek öğeyi belirtir.
+*NIDCheckItem* parametresi değiştirilecek öğeyi belirtir.
 
-*nIDCheckItem* parametresi bir açılır menü öğesinin yanı sıra bir menü öğesini de tanımlayabilir. Açılır menü öğesini denetlemek için özel adımlar gerekmez. Üst düzey menü öğeleri denetlenemez. Açılır menü öğesi, onunla ilişkili bir menü öğesi tanımlayıcısı olmadığından konuma göre denetlenmelidir.
+*NIDCheckItem* parametresi bir açılır menü öğesini ve bir menü öğesini tanımlayabilir. Bir açılır menü öğesini denetlemek için özel bir adım gerekmez. Üst düzey menü öğeleri denetlenemiyor. Bir açılır menü öğesi kendisiyle ilişkilendirilmiş bir menü öğesi tanımlayıcısına sahip olmadığından konuma göre denetlenmelidir.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:GetMenuState](#getmenustate).
+  [CMenu:: GetMenuState](#getmenustate)örneğine bakın.
 
-## <a name="cmenucheckmenuradioitem"></a><a name="checkmenuradioitem"></a>CMenu::CheckMenuRadioItem
+## <a name="cmenucheckmenuradioitem"></a><a name="checkmenuradioitem"></a> CMenu:: Checkmenuradioıtem
 
-Belirtilen bir menü öğeyi denetler ve radyo öğesi yapar.
+Belirtilen bir menü öğesini denetler ve bunu bir radyo öğesi yapar.
 
 ```
 BOOL CheckMenuRadioItem(
@@ -349,37 +350,37 @@ BOOL CheckMenuRadioItem(
 ### <a name="parameters"></a>Parametreler
 
 *nIDFirst*<br/>
-Radyo düğme grubundaki ilk menü öğesini *(nFlags'in*değerine bağlı olarak kimlik veya ofset olarak) belirtir.
+Radyo düğmesi grubundaki ilk menü öğesini, *nFlags* değerine bağlı olarak bir ID veya bir konum olarak belirtir.
 
-*nIDSon*<br/>
-Radyo düğme grubundaki son menü öğesini *(nFlags'in*değerine bağlı olarak kimlik veya ofset olarak) belirtir.
+*nIDLast*<br/>
+Radyo düğmesi grubundaki son menü öğesini, *nFlags* değerine bağlı olarak bir ID veya bir konum olarak belirtir.
 
-*nIDItem*<br/>
-Gruptaki bir radyo düğmesiyle kontrol edilecek öğeyi *(nFlags'in*değerine bağlı olarak kimlik veya ofset olarak) belirtir.
+*Nidıtem*<br/>
+Gruptaki bir radyo düğmesi ile denetlenecek olan öğeyi, *nFlags* değerine bağlı olarak bir ID veya bir konum olarak belirtir.
 
-*Nflags*<br/>
-*NIDFirst*, *nIDLast*ve *nIDItem'in* yorumunu aşağıdaki şekilde belirtir:
+*nFlags*<br/>
+*Nidfirst*, *nIDLast* ve *nidıtem* 'nin yorumunu aşağıdaki şekilde belirtir:
 
-|Nflags|Yorum|
+|nFlags|Yorumlama|
 |------------|--------------------|
-|MF_BYCOMMAND|Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmazsa bu varsayılandır.|
-|Mf_byposıtıon|Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.|
+|MF_BYCOMMAND|Parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmamışsa bu varsayılandır.|
+|MF_BYPOSITION|Parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0
+Başarılı olursa sıfır dışı; Aksi halde 0
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aynı zamanda, işlev ilişkili gruptaki diğer tüm menü öğelerinin denetimini geri alır ve bu öğeler için radyo öğesi türü bayrağını temizler. İşaretlenen öğe, onay işareti bit eşlemi yerine bir radyo düğmesi (veya madde işareti) bit eşlemi kullanılarak görüntülenir.
+Aynı zamanda, işlev ilişkili gruptaki diğer tüm menü öğelerini denetler ve bu öğeler için radyo öğesi türü bayrağını temizler. İşaretlenen öğe, onay işareti bit eşlemi yerine radyo düğmesi (veya madde işareti) kullanılarak görüntülenir.
 
 ### <a name="example"></a>Örnek
 
   [ON_COMMAND_RANGE](message-map-macros-mfc.md#on_command_range)için örneğe bakın.
 
-## <a name="cmenucmenu"></a><a name="cmenu"></a>CMenü::CMenu
+## <a name="cmenucmenu"></a><a name="cmenu"></a> CMenu:: CMenu
 
-Boş bir menü oluşturur ve nesneye `CMenu` bağlar.
+Boş bir menü oluşturur ve bunu bir nesneye ekler `CMenu` .
 
 ```
 CMenu();
@@ -387,21 +388,21 @@ CMenu();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü, üye oluşturma veya yükleme işlevlerinden birini arayana kadar oluşturulmaz`CMenu:`
+Menü, ' nin oluşturma veya yükleme üyesi işlevlerinden birini çağırana kadar oluşturulmaz `CMenu:`
 
-- [Oluşturma Menüsü](#createmenu)
+- [CreateMenu](#createmenu)
 
 - [CreatePopupMenu](#createpopupmenu)
 
 - [LoadMenu](#loadmenu)
 
-- [LoadMenuIndirect](#loadmenuindirect)
+- [Loadmenudolaylı](#loadmenuindirect)
 
 - [İliştir](#attach)
 
-## <a name="cmenucreatemenu"></a><a name="createmenu"></a>CMenu::CreateMenu
+## <a name="cmenucreatemenu"></a><a name="createmenu"></a> CMenu:: CreateMenu
 
-Bir menü oluşturur ve `CMenu` nesneye bağlar.
+Bir menü oluşturur ve `CMenu` nesneye ekler.
 
 ```
 BOOL CreateMenu();
@@ -409,23 +410,23 @@ BOOL CreateMenu();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Menü başarıyla oluşturulduysa sıfırolmayan; aksi takdirde 0.
+Menü başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü başlangıçta boş. Menü öğeleri `AppendMenu` veya `InsertMenu` üye işlevi kullanılarak eklenebilir.
+Menü başlangıçta boştur. Menü öğeleri `AppendMenu` veya `InsertMenu` üye işlevi kullanılarak eklenebilir.
 
 Menü bir pencereye atanırsa, pencere yok edildiğinde otomatik olarak yok edilir.
 
-Çıkmadan önce, menü bir pencereye atanmamışsa, bir uygulamanın menüyle ilişkili sistem kaynaklarını serbest çemesi gerekir. Uygulama, [DestroyMenu](#destroymenu) üye işlevini arayarak menüyü boşaltıyor.
+Çıkmadan önce, bir pencere bir pencereye atanmadığı takdirde bir menü ile ilişkili sistem kaynaklarını boş olmalıdır. Bir uygulama, [Destroyımenu](#destroymenu) üye işlevini çağırarak bir menüyü serbest bırakır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#22](../../mfc/reference/codesnippet/cpp/cmenu-class_2.cpp)]
 
-## <a name="cmenucreatepopupmenu"></a><a name="createpopupmenu"></a>CMenu::CreatePopupMenu
+## <a name="cmenucreatepopupmenu"></a><a name="createpopupmenu"></a> CMenu:: CreatePopupMenu
 
-Açılır menü oluşturur ve `CMenu` nesneye bağlar.
+Bir açılır menü oluşturur ve `CMenu` nesneye ekler.
 
 ```
 BOOL CreatePopupMenu();
@@ -433,21 +434,21 @@ BOOL CreatePopupMenu();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Açılır menü başarıyla oluşturulduysa sıfıra inme; aksi takdirde 0.
+Açılır menü başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü başlangıçta boş. Menü öğeleri `AppendMenu` veya `InsertMenu` üye işlevi kullanılarak eklenebilir. Uygulama, açılır menüyü varolan bir menüye veya açılır menüye ekleyebilir. Üye `TrackPopupMenu` işlevi, bu menüyü kayan açılır menü olarak görüntülemek ve açılır menüdeki seçimleri izlemek için kullanılabilir.
+Menü başlangıçta boştur. Menü öğeleri `AppendMenu` veya `InsertMenu` üye işlevi kullanılarak eklenebilir. Uygulama, varolan bir menü veya açılır menüye açılan menüyü ekleyebilir. `TrackPopupMenu`Üye işlevi, bu menüyü kayan bir açılır menü olarak göstermek ve açılır menüdeki seçimleri izlemek için kullanılabilir.
 
-Menü bir pencereye atanırsa, pencere yok edildiğinde otomatik olarak yok edilir. Menü varolan bir menüye eklenirse, bu menü yok edildiğinde otomatik olarak yok edilir.
+Menü bir pencereye atanırsa, pencere yok edildiğinde otomatik olarak yok edilir. Menü var olan bir menüye eklenirse, bu menü yok edildiğinde otomatik olarak yok edilir.
 
-Çıkıştan önce, menü bir pencereye atanmamışsa, bir uygulama açılır menüyle ilişkili sistem kaynaklarını serbest etmelidir. Uygulama, [DestroyMenu](#destroymenu) üye işlevini arayarak menüyü boşaltıyor.
+Çıkmadan önce, menü bir pencereye atanmadığı takdirde bir uygulamanın bir açılır menü ile ilişkili sistem kaynaklarını serbest olması gerekir. Bir uygulama, [Destroyımenu](#destroymenu) üye işlevini çağırarak bir menüyü serbest bırakır.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:CreateMenu](#createmenu).
+  [CMenu:: CreateMenu](#createmenu)örneğine bakın.
 
-## <a name="cmenudeletemenu"></a><a name="deletemenu"></a>CMenu::DeleteMenü
+## <a name="cmenudeletemenu"></a><a name="deletemenu"></a> CMenu::D eleteMenu
 
 Menüden bir öğeyi siler.
 
@@ -459,16 +460,16 @@ BOOL DeleteMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*nPosition*<br/>
-*nFlags*tarafından belirlendiği gibi silinecek menü öğesini belirtir.
+*Sağda*<br/>
+Silinecek menü öğesini, *nFlags* tarafından belirlendiği şekilde belirtir.
 
-*Nflags*<br/>
-*nPosition'ı* aşağıdaki şekilde yorumlamak için kullanılır:
+*nFlags*<br/>
+, *NPosition* öğesini aşağıdaki şekilde yorumlamak için kullanılır:
 
-|Nflags|nPosition yorumu|
+|nFlags|NPosition yorumu|
 |------------|---------------------------------|
-|MF_BYCOMMAND|Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmazsa bu varsayılandır.|
-|Mf_byposıtıon|Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.|
+|MF_BYCOMMAND|Parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmamışsa bu varsayılandır.|
+|MF_BYPOSITION|Parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -476,17 +477,17 @@ BOOL DeleteMenu(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü öğesinin ilişkili bir açılır menüsü `DeleteMenu` varsa, açılan menüdeki tutamacı yok eder ve açılır menü tarafından kullanılan belleği boşaltın.
+Menü öğesinde ilişkili bir açılır menü varsa, bu `DeleteMenu` tutamacı açılır menü için yok eder ve açılır menü tarafından kullanılan belleği serbest bırakır.
 
-Bir pencerede bulunan bir menü değiştirildiğinde (pencere görüntülense de görüntülenmese de), uygulama [CWnd::DrawMenuBar](../../mfc/reference/cwnd-class.md#drawmenubar).
+Pencerede bulunan bir menü değiştirildiğinde (pencerenin görüntülenip görüntülenmediğini belirtir), uygulamanın [CWnd::D rawMenuBar](../../mfc/reference/cwnd-class.md#drawmenubar)çağrısı gerekir.
 
 ### <a name="example"></a>Örnek
 
-  CWnd örneğine [bakın:GetMenu](../../mfc/reference/cwnd-class.md#getmenu).
+  [CWnd:: GetMenu](../../mfc/reference/cwnd-class.md#getmenu)örneğine bakın.
 
-## <a name="cmenudeletetempmap"></a><a name="deletetempmap"></a>CMenu::DeleteTempMap
+## <a name="cmenudeletetempmap"></a><a name="deletetempmap"></a> CMenu::D eleteTempMap
 
-Boşta kalan `CWinApp` zaman işleyicisi tarafından otomatik `CMenu` olarak çağrılır, [FromHandle](#fromhandle) üye işlevi tarafından oluşturulan geçici nesneleri siler.
+`CWinApp`Boşta kalma süresi işleyicisi tarafından otomatik olarak çağrıldığında, `CMenu` [FromHandle](#fromhandle) üye işlevi tarafından oluşturulan geçici nesneleri siler.
 
 ```
 static void PASCAL DeleteTempMap();
@@ -494,13 +495,13 @@ static void PASCAL DeleteTempMap();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DeleteTempMap`nesneyi silmeden önce geçici `CMenu` bir nesneye eklenen Windows `CMenu` menü nesnesini ayırır.
+`DeleteTempMap` nesne silinmeden önce geçici bir nesneye eklenen Windows menü nesnesini ayırır `CMenu` `CMenu` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#23](../../mfc/reference/codesnippet/cpp/cmenu-class_3.cpp)]
 
-## <a name="cmenudestroymenu"></a><a name="destroymenu"></a>CMenu::DestroyMenü
+## <a name="cmenudestroymenu"></a><a name="destroymenu"></a> CMenu::D estroyMenu
 
 Menüyü ve kullanılan tüm Windows kaynaklarını yok eder.
 
@@ -510,19 +511,19 @@ BOOL DestroyMenu();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Menü yok edilirse sıfırolmayan; aksi takdirde 0.
+Menü yok edildiğinde sıfır dışında; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü yok edilmeden `CMenu` önce nesneden ayrılır. Windows `DestroyMenu` işlevi `CMenu` otomatik olarak yıkıcı olarak adlandırılır.
+Menü, `CMenu` yok etmeden önce nesneden ayrılır. Windows `DestroyMenu` işlevi yıkıcıda otomatik olarak çağırılır `CMenu` .
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:CreateMenu](#createmenu).
+  [CMenu:: CreateMenu](#createmenu)örneğine bakın.
 
-## <a name="cmenudetach"></a><a name="detach"></a>CMenü::Detach
+## <a name="cmenudetach"></a><a name="detach"></a> CMenu::D etach
 
-Windows menüsünü bir `CMenu` nesneden ayırır ve tutamacı döndürür.
+Bir nesneden Windows menüsünü ayırır `CMenu` ve tanıtıcıyı döndürür.
 
 ```
 HMENU Detach();
@@ -530,19 +531,19 @@ HMENU Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, Windows menüsüne HMENU türünden tutamaç; aksi takdirde NULL.
+Başarılı olursa, HMENU türündeki tanıtıcı bir Windows menüsüne; Aksi takdirde NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri `m_hMenu` üyesi NULL olarak ayarlanır.
+`m_hMenu`Veri ÜYESI null olarak ayarlandı.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#21](../../mfc/reference/codesnippet/cpp/cmenu-class_1.cpp)]
 
-## <a name="cmenudrawitem"></a><a name="drawitem"></a>CMenu::DrawItem
+## <a name="cmenudrawitem"></a><a name="drawitem"></a> CMenu::D rawItem
 
-Sahip tarafından çizilen bir menünün görsel yönü değiştiğinde çerçeve tarafından çağrılır.
+Sahip tarafından çizilmiş bir menünün görsel bir yönü değiştiğinde Framework tarafından çağırılır.
 
 ```
 virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
@@ -551,23 +552,23 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpDrawItemStruct*<br/>
-Gerekli çizim türü hakkında bilgi içeren [DRAWITEMSTRUCT](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısıiçin bir işaretçi.
+Gerekli çizim türü hakkında bilgi içeren [Drawitemstruct](/windows/win32/api/winuser/ns-winuser-drawitemstruct) yapısına yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yapının `itemAction` `DRAWITEMSTRUCT` üyesi, gerçekleştirilecek çizim eylemini tanımlar. Bir sahip çizim `CMenu` nesnesi için çizim uygulamak için bu üye işlevi geçersiz kılın. Uygulama, bu üye işlevin sonlandırılmasından önce *lpDrawItemStruct'ta* sağlanan ekran bağlamı için seçilen tüm grafik aygıtı arabirimi (GDI) nesnelerini geri yüklemelidir.
+`itemAction` `DRAWITEMSTRUCT` Yapının üyesi gerçekleştirilecek çizim eylemini tanımlar. Bir sahip çizim nesnesi için çizimi uygulamak üzere bu üye işlevini geçersiz kılın `CMenu` . Uygulamanın, bu üye işlevin sonlandırılması için *Lpdrawitemstruct* içinde sağlanan görüntüleme bağlamı için seçilen tüm grafik cihaz ARABIRIMI (GDI) nesnelerini geri yüklemesi gerekir.
 
-Bkz. [CWnd::Yapının](../../mfc/reference/cwnd-class.md#ondrawitem) `DRAWITEMSTRUCT` açıklaması için OnDrawItem.
+Yapının açıklaması için bkz. [CWnd:: OnDrawItem](../../mfc/reference/cwnd-class.md#ondrawitem) `DRAWITEMSTRUCT` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod MFC [CTRLTEST](../../overview/visual-cpp-samples.md) örneğindendir:
+Aşağıdaki kod MFC [ctrltest](../../overview/visual-cpp-samples.md) örneğinden verilmiştir:
 
 [!code-cpp[NVC_MFCWindowing#24](../../mfc/reference/codesnippet/cpp/cmenu-class_4.cpp)]
 
-## <a name="cmenuenablemenuitem"></a><a name="enablemenuitem"></a>CMenu::EnableMenuItem
+## <a name="cmenuenablemenuitem"></a><a name="enablemenuitem"></a> CMenu:: EnableMenuItem
 
-Menü öğesini etkinleştirer, devre dışı eder veya karartır.
+Bir menü öğesini etkinleştirilir, devre dışı bırakır veya bir şekilde dönüştürür.
 
 ```
 UINT EnableMenuItem(
@@ -577,41 +578,41 @@ UINT EnableMenuItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDEnableItem*<br/>
-*nEnable*tarafından belirlendiği gibi, etkinleştirilecek menü öğesini belirtir. Bu parametre açılır menü öğelerinin yanı sıra standart menü öğelerini de belirtebilir.
+*Nıdenableıtem*<br/>
+Etkinleştirilecek menü öğesini, *nEnable* tarafından belirlendiği şekilde belirtir. Bu parametre, açılan menü öğelerinin yanı sıra standart menü öğelerini belirtebilir.
 
 *nEtkinleştir*<br/>
-Yapılacak eylemi belirtir. MF_BYCOMMAND veya MF_BYPOSITION ile MF_DISABLED, MF_ENABLED veya MF_GRAYED bir kombinasyonu olabilir. Bu değerler bitwise OR işleci kullanılarak birleştirilebilir. Bu değerlerin şu anlamları vardır:
+Gerçekleştirilecek eylemi belirtir. MF_BYCOMMAND veya MF_BYPOSITION ile MF_DISABLED, MF_ENABLED veya MF_GRAYED bir birleşimi olabilir. Bu değerler bit düzeyinde OR işleci kullanılarak birleştirilebilir. Bu değerler aşağıdaki anlamlara sahiptir:
 
-- MF_BYCOMMAND Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Bu varsayılandır.
+- MF_BYCOMMAND, parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Bu varsayılan seçenektir.
 
-- MF_BYPOSITION Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.
+- MF_BYPOSITION, parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.
 
-- MF_DISABLED menü öğesini seçilemeyecek, ancak karartmayacak şekilde devre dışı kılabilir.
+- MF_DISABLED menü öğesini devre dışı bırakarak seçilemez ancak onu göstermez.
 
-- MF_ENABLED Menü öğesini seçilebilmesini sağlar ve soluk durumundan geri getirir.
+- MF_ENABLED, menü öğesinin seçilebilmesi ve soluk durumundan geri yüklenmesi için etkinleştirilir.
 
-- MF_GRAYED menü öğesini seçilemesin diye devre dışı bırakıp karartır.
+- MF_GRAYED, menü öğesini seçilemeyecek ve onları belirleyemeyecek şekilde devre dışı bırakır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önceki durum (MF_DISABLED, MF_ENABLED veya MF_GRAYED) veya -1 geçerli değilse.
+Önceki durum (MF_DISABLED, MF_ENABLED veya MF_GRAYED) veya geçerli değilse-1.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CreateMenu](#createmenu), [InsertMenu](#insertmenu), [ModifyMenu](#modifymenu)ve [LoadMenuIndirect](#loadmenuindirect) üye işlevleri de bir menü öğesinin durumunu (etkin, devre dışı veya soluk) ayarlayabilir.
+[CreateMenu](#createmenu), [InsertMenu](#insertmenu), [ModifyMenu](#modifymenu)ve [loadmenudolaylı](#loadmenuindirect) üye işlevleri, bir menü öğesinin durumunu (etkin, devre dışı veya soluk) de ayarlayabilir.
 
-MF_BYPOSITION değerini kullanmak için bir uygulama `CMenu`nın doğru yutması gerekiyor. Menü `CMenu` çubuğunun kullanılması durumunda, üst düzey bir menü öğesi (menü çubuğundaki bir öğe) etkilenir. Bir öğenin durumunu açılır veya iç içe açılan menüdeki bir öğenin durumunu `CMenu` konuma göre ayarlamak için, bir uygulamanın açılır menüyü belirtmesi gerekir.
+MF_BYPOSITION değeri kullanmak için bir uygulamanın doğru olması gerekir `CMenu` . `CMenu`Menü çubuğu kullanılıyorsa, üst düzey bir menü öğesi (menü çubuğundaki bir öğe) etkilenir. Bir açılır veya iç içe açılan menüdeki bir öğenin durumunu konuma göre ayarlamak için, bir uygulamanın açılır menünün öğesini belirtmesi gerekir `CMenu` .
 
-Bir uygulama MF_BYCOMMAND bayrağını belirttiğinde, Windows alt tasnif edilen `CMenu`tüm açılır menü öğelerini denetler; bu nedenle, yinelenen menü öğeleri `CMenu` yoksa, menü çubuğunun kullanımı yeterlidir.
+Bir uygulama MF_BYCOMMAND bayrağını belirttiğinde, Windows ' a bağımlı olan tüm açılır menü öğelerini denetler `CMenu` ; Bu nedenle, yinelenen menü öğeleri yoksa, `CMenu` menü çubuğunun kullanılması yeterlidir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#25](../../mfc/reference/codesnippet/cpp/cmenu-class_5.cpp)]
 
-## <a name="cmenufromhandle"></a><a name="fromhandle"></a>CMenu::FromHandle
+## <a name="cmenufromhandle"></a><a name="fromhandle"></a> CMenu:: FromHandle
 
-Bir etüye `CMenu` Windows tutamacı verilen bir nesneye işaretçiyi döndürür.
+Bir `CMenu` menüye Windows tutamacı verilen nesneye yönelik bir işaretçi döndürür.
 
 ```
 static CMenu* PASCAL FromHandle(HMENU hMenu);
@@ -619,24 +620,24 @@ static CMenu* PASCAL FromHandle(HMENU hMenu);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hmenu*<br/>
-Bir menü için bir Windows tutamacı.
+*hMenu*<br/>
+Bir menüye bir Windows tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçici veya `CMenu` kalıcı olabilecek bir işaretçi.
+`CMenu`Geçici veya kalıcı olabilecek bir işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows `CMenu` menü nesnesine zaten bir nesne eklenmemişse, geçici `CMenu` bir nesne oluşturulur ve eklenir.
+Bir `CMenu` nesne Windows menü nesnesine zaten iliştirilmişse, geçici bir `CMenu` nesne oluşturulur ve eklenir.
 
-Bu `CMenu` geçici nesne yalnızca, uygulamanın olay döngüsünde boşta kalma süresine sahip olduğu ve tüm geçici nesnelerin silindiği bir sonraki zamana kadar geçerlidir.
+Bu geçici `CMenu` nesne yalnızca, bir sonraki uygulamanın olay döngüsünde boşta kalma süresi olmadan, tüm geçici nesneler silindiği zaman geçerli olur.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:CreateMenu](#createmenu).
+  [CMenu:: CreateMenu](#createmenu)örneğine bakın.
 
-## <a name="cmenugetdefaultitem"></a><a name="getdefaultitem"></a>CMenu::GetDefaultItem
+## <a name="cmenugetdefaultitem"></a><a name="getdefaultitem"></a> CMenu:: Getdefaultıtem
 
 Belirtilen menüdeki varsayılan menü öğesini belirler.
 
@@ -648,32 +649,32 @@ UINT GetDefaultItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*gmdiBayraklar*<br/>
-İşlevin menü öğelerini nasıl aradığını belirten değer. Bu parametre aşağıdaki değerlerin hiçbiri, bir veya bir arada olabilir:
+*Gmdıflags*<br/>
+İşlevin menü öğelerini nasıl arayacağını belirten değer. Bu parametre None, One veya aşağıdaki değerlerin bir birleşimi olabilir:
 
 |Değer|Anlamı|
 |-----------|-------------|
-|GMDI_GOINTOPOPUPS|Varsayılan öğe bir alt menü yü açan öğeyse, işlevin ilgili alt menüde özyinelemeli olarak arama yapmak olduğunu belirtir. Alt menüde varsayılan öğe yoksa, iade değeri alt menüyü açan öğeyi tanımlar.<br /><br /> Varsayılan olarak, işlev, alt menüyü açan bir öğe olup olmadığına bakılmaksızın, belirtilen menüdeki ilk varsayılan öğeyi döndürür.|
-|GMDI_USEDISABLED|Devre dışı bırakılmış olsa bile işlevin varsayılan bir öğeyi döndürmek olduğunu belirtir.<br /><br /> Varsayılan olarak, işlev devre dışı bırakılan veya gri leştirilmiş öğeleri atlar.|
+|GMDI_GOINTOPOPUPS|Varsayılan öğe alt menüyü açan bir öğe ise, işlevin karşılık gelen alt menüde yinelemeli olarak aranacağını belirtir. Alt menüde varsayılan öğe yoksa, dönüş değeri alt menüyü açan öğeyi tanımlar.<br /><br /> Varsayılan olarak, işlev, alt menüyü açan bir öğe olup olmamasına bakılmaksızın, belirtilen menüdeki ilk varsayılan öğeyi döndürür.|
+|GMDI_USEDISABLED|Devre dışı bırakılmış olsa bile, işlevin varsayılan bir öğe döndürmeme olduğunu belirtir.<br /><br /> Varsayılan olarak, işlev devre dışı veya gri öğeleri atlar.|
 
 *fByPos*<br/>
-Menü öğesinin tanımlayıcısını mı yoksa konumunu mu alınyoksa" öğesini belirten değer. Bu parametre FALSE ise, tanımlayıcı döndürülür. Aksi takdirde, pozisyon döndürülür.
+Menü öğesinin tanımlayıcısının veya konumunun alınıp alınmayacağını belirten değer. Bu parametre FALSE ise, tanımlayıcı döndürülür. Aksi takdirde, konum döndürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, iade değeri menü öğesinin tanımlayıcısı veya konumudur. İşlev başarısız olursa, iade değeri - 1'dir.
+İşlev başarılı olursa, dönüş değeri, menü öğesinin tanımlayıcısıdır veya konumudur. İşlev başarısız olursa, dönüş değeri-1 ' dir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 işlevinin [GetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-getmenudefaultitem)davranışını uygular.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-getmenudefaultitem)Win32 işlevinin davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:InsertMenu](#insertmenu).
+  [CMenu:: InsertMenu](#insertmenu)örneğine bakın.
 
-## <a name="cmenugetmenucontexthelpid"></a><a name="getmenucontexthelpid"></a>CMenu::GetMenuContextHelpId
+## <a name="cmenugetmenucontexthelpid"></a><a name="getmenucontexthelpid"></a> CMenu:: GetMenuContextHelpId
 
-`CMenu`İlişkili bağlam yardım kimliğini alır.
+İle ilişkili bağlam yardım KIMLIĞINI alır `CMenu` .
 
 ```
 DWORD GetMenuContextHelpId() const;
@@ -681,15 +682,15 @@ DWORD GetMenuContextHelpId() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bağlam yardım kimliği şu `CMenu` anda ilişkili varsa; sıfır aksi takdirde.
+Bağlam yardım KIMLIĞI, şu anda `CMenu` bir varsa,, yoksa sıfır ile ilişkilidir.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:InsertMenu](#insertmenu).
+  [CMenu:: InsertMenu](#insertmenu)örneğine bakın.
 
-## <a name="cmenugetmenuinfo"></a><a name="getmenuinfo"></a>CMenu::GetMenuInfo
+## <a name="cmenugetmenuinfo"></a><a name="getmenuinfo"></a> CMenu:: Getmenuınfo
 
-Menü için bilgi alır.
+Bir menü için bilgileri alır.
 
 ```
 BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
@@ -697,20 +698,20 @@ BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*lpcmi*<br/>
-Menü için bilgi içeren bir [MENUINFO](/windows/win32/api/winuser/ns-winuser-menuinfo) yapısıiçin bir işaretçi.
+*lpcmı*<br/>
+Menü bilgilerini içeren bir [MENUINFO](/windows/win32/api/winuser/ns-winuser-menuinfo) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, geri dönüş değeri sıfırdeğildir; aksi takdirde, iade değeri sıfırdır.
+İşlev başarılı olursa, dönüş değeri sıfır dışında olur; Aksi takdirde, dönüş değeri sıfırdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü hakkında bilgi almak için bu işlevi arayın.
+Menü hakkında bilgi almak için bu işlevi çağırın.
 
-## <a name="cmenugetmenuitemcount"></a><a name="getmenuitemcount"></a>CMenu::GetMenuItemCount
+## <a name="cmenugetmenuitemcount"></a><a name="getmenuitemcount"></a> CMenu:: GetMenuItemCount
 
-Açılır pencere veya üst düzey menüdeki öğelerin sayısını belirler.
+Açılır veya üst düzey menüdeki öğelerin sayısını belirler.
 
 ```
 UINT GetMenuItemCount() const;
@@ -718,15 +719,15 @@ UINT GetMenuItemCount() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa menüdeki öğe sayısı; aksi takdirde -1.
+İşlev başarılı olursa menüdeki öğelerin sayısı; Aksi takdirde-1.
 
 ### <a name="example"></a>Örnek
 
-  CWnd örneğine [bakın:GetMenu](../../mfc/reference/cwnd-class.md#getmenu).
+  [CWnd:: GetMenu](../../mfc/reference/cwnd-class.md#getmenu)örneğine bakın.
 
-## <a name="cmenugetmenuitemid"></a><a name="getmenuitemid"></a>CMenu::GetMenuItemID
+## <a name="cmenugetmenuitemid"></a><a name="getmenuitemid"></a> CMenu:: Getmenuıtemıd
 
-*nPos*tarafından tanımlanan konumda bulunan bir menü öğesi için menü öğesi tanımlayıcısını alır.
+*NPos* tarafından tanımlanan konumda bulunan bir menü öğesi için menü öğesi tanımlayıcısını alır.
 
 ```
 UINT GetMenuItemID(int nPos) const;
@@ -735,19 +736,19 @@ UINT GetMenuItemID(int nPos) const;
 ### <a name="parameters"></a>Parametreler
 
 *nPos*<br/>
-Kimliği alınan menü öğesinin konumunu (sıfır tabanlı) belirtir.
+KIMLIĞI alınmakta olan menü öğesinin konumunu (sıfır tabanlı) belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa açılır menüde belirtilen öğenin madde kimliği. Belirtilen öğe açılır menüise (açılır menüdeki bir öğenin aksine), iade değeri -1'dir. *nPos* bir AYıRıcı menü öğesine karşılık gelirse, iade değeri 0'dır.
+İşlev başarılı olursa, bir açılır menüdeki belirtilen öğenin öğe KIMLIĞI. Belirtilen öğe bir açılır menü ise (açılır menüdeki bir öğeden farklı olarak), dönüş değeri-1 ' dir. *NPos* bir ayırıcı menü öğesine karşılık geliyorsa, dönüş değeri 0 ' dır.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:InsertMenu](#insertmenu).
+  [CMenu:: InsertMenu](#insertmenu)örneğine bakın.
 
-## <a name="cmenugetmenuiteminfo"></a><a name="getmenuiteminfo"></a>CMenu::GetMenuItemInfo
+## <a name="cmenugetmenuiteminfo"></a><a name="getmenuiteminfo"></a> CMenu:: Getmenuıiteınfo
 
-Menü öğesi hakkındaki bilgileri alır.
+Bir menü öğesi hakkında bilgi alır.
 
 ```
 BOOL GetMenuItemInfo(
@@ -758,30 +759,30 @@ BOOL GetMenuItemInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*uÖğe*<br/>
-Hakkında bilgi almak için menü öğesinin tanımlayıcısı veya konumu. Bu parametrenin anlamı `ByPos`.
+*uItem*<br/>
+Hakkında bilgi almak için menü öğesinin tanımlayıcısı veya konumu. Bu parametrenin anlamı değerine bağlıdır `ByPos` .
 
-*lpMenuItemInfo*<br/>
-Windows SDK'da açıklandığı gibi, menü hakkında bilgi içeren bir [MENUITEMINFO](/windows/win32/api/winuser/ns-winuser-menuiteminfow)işaretçisi.
+*Lpmenuitemınfo*<br/>
+Menü ile ilgili bilgiler içeren, Windows SDK bölümünde açıklandığı gibi bir [Menuiteınfo](/windows/win32/api/winuser/ns-winuser-menuiteminfow)işaretçisi.
 
 *fByPos*<br/>
-Değerini ' nin `nIDItem`anlamını belirten. Varsayılan olarak, `ByPos` uItem bir menü öğesi tanımlayıcısı olduğunu gösterir FALSE olduğunu. FALSE `ByPos` olarak ayarlanmazsa, menü öğesi konumunu gösterir.
+Anlamı belirten değer `nIDItem` . Varsayılan olarak, `ByPos` Uöğesi 'nin bir menü öğesi tanımlayıcısı olduğunu gösteren yanlış şeklindedir. `ByPos`Yanlış olarak ayarlanmamışsa, bir menü öğesi konumunu gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, geri dönüş değeri sıfırsız dır. İşlev başarısız olursa, geri dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için, Windows SDK'da açıklandığı gibi Win32 işlevini [getlasterror'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)kullanın.
+İşlev başarılı olursa, dönüş değeri sıfır dışında olur. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Windows SDK [Win32 işlevini kullanın](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), burada açıklandığı gibi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 işlevinin [GetMenuItemInfo](/windows/win32/api/winuser/nf-winuser-getmenuiteminfow)davranışını uygular. MFC `GetMenuItemInfo`uygulamasında, bir menüye tutamacı kullanmadığınızı unutmayın.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [Getmenuıiteınfo](/windows/win32/api/winuser/nf-winuser-getmenuiteminfow)Win32 işlevinin davranışını uygular. MFC uygulamasında `GetMenuItemInfo` , bir menü için bir işleyici kullanmayacağınızı unutmayın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#26](../../mfc/reference/codesnippet/cpp/cmenu-class_6.cpp)]
 
-## <a name="cmenugetmenustate"></a><a name="getmenustate"></a>CMenu::GetMenuState
+## <a name="cmenugetmenustate"></a><a name="getmenustate"></a> CMenu:: GetMenuState
 
-Belirtilen menü öğesinin durumunu veya açılır menüdeki öğe sayısını döndürür.
+Belirtilen menü öğesinin durumunu veya açılan menüdeki öğe sayısını döndürür.
 
 ```
 UINT GetMenuState(
@@ -791,41 +792,41 @@ UINT GetMenuState(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-*nFlags*tarafından belirlenen menü öğesi kimliğini belirtir.
+*NID*<br/>
+*NFlags* tarafından belirlendiği gibi menü öğesi kimliğini belirtir.
 
-*Nflags*<br/>
-*nID'nin*doğasını belirtir. Aşağıdaki değerlerden biri olabilir:
+*nFlags*<br/>
+*NID*'nin doğasını belirtir. Aşağıdaki değerlerden biri olabilir:
 
-- MF_BYCOMMAND Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Bu varsayılandır.
+- MF_BYCOMMAND, parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Bu varsayılan seçenektir.
 
-- MF_BYPOSITION Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.
+- MF_BYPOSITION, parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen öğe yoksa 0xFFFFFFFF değeri. *nId* bir açılır menü tanımlıyorsa, yüksek sıralı bayt açılır menüdeki öğe sayısını içerir ve düşük sıralı bayt açılır menüyle ilişkili menü bayraklarını içerir. Aksi takdirde iade değeri aşağıdaki listedeki değerlerin bir maskesidir (Boolean OR) (bu maske *nId'in* tanımladığı menü öğesinin durumunu açıklar):
+Belirtilen öğe yoksa 0xFFFFFFFF değeri. *NID* bir açılan menüyü tanımlarsa, yüksek sıralı bayt açılır menüdeki öğelerin sayısını içerir ve düşük sıralı bayt açılır menü ile ilişkili menü bayraklarını içerir. Aksi takdirde, dönüş değeri aşağıdaki listedeki değerlerin bir maskesidir (Boolean veya) (Bu maske, *NID* tarafından tanımlanan menü öğesinin durumunu açıklar):
 
-- MF_CHECKED Varsayılan onay işaretini öğenin yanına yerleştirmek için MF_UNCHECKED ile geçiş görevi görür. Uygulama onay işareti bit eşlerini sağladığında (üye işlevine `SetMenuItemBitmaps` bakın), "onay işareti üzerinde" bit eşlem görüntülenir.
+- MF_CHECKED, varsayılan onay işaretini öğenin yanına yerleştirmek için MF_UNCHECKED bir geçiş Işlevi görür. Uygulama Check-Mark bit eşlemler ( `SetMenuItemBitmaps` üye işlevine bakın) sağladığı zaman, "onay işareti açık" bit eşlem görüntülenir.
 
-- MF_DISABLED menü öğesini seçilemeyecek, ancak karartmayacak şekilde devre dışı kılabilir.
+- MF_DISABLED menü öğesini devre dışı bırakarak seçilemez ancak onu göstermez.
 
-- MF_ENABLED Menü öğesini seçilebilmesini sağlar ve soluk durumundan geri getirir. Bu sabitin değerinin 0 olduğunu unutmayın; bir uygulama bu değeri kullanırken hata için 0'a karşı test etmemelidir.
+- MF_ENABLED, menü öğesinin seçilebilmesi ve soluk durumundan geri yüklenmesi için etkinleştirilir. Bu sabitin değerinin 0 olduğunu unutmayın. Bu değer kullanılırken bir uygulamanın hata için 0 ile test edilmemesi gerekir.
 
-- MF_GRAYED menü öğesini seçilemesin diye devre dışı bırakıp karartır.
+- MF_GRAYED, menü öğesini seçilemeyecek ve onları belirleyemeyecek şekilde devre dışı bırakır.
 
-- MF_MENUBARBREAK Öğeyi statik menülerde yeni bir satıra veya açılır menülerde yeni bir sütuna yerleştirir. Yeni açılır menü sütunu, dikey bir bölme satırı ile eski sütundan ayrılır.
+- MF_MENUBARBREAK, öğeyi statik menülere veya açılan menülerde yeni bir sütuna yeni bir satıra koyar. Yeni açılan menü sütunu, bir dikey bölme çizgisi ile eski sütundan ayrılacaktır.
 
-- MF_MENUBREAK Öğeyi statik menülerde yeni bir satıra veya açılır menülerde yeni bir sütuna yerleştirir. Sütunlar arasına bölme satırı yerleştirilmez.
+- MF_MENUBREAK, öğeyi statik menülere veya açılan menülerde yeni bir sütuna yeni bir satıra koyar. Sütunlar arasına bölme çizgisi yerleştirilmemiş.
 
-- MF_SEPARATOR Yatay bir bölme çizgisi çizer. Yalnızca açılır menüde kullanılabilir. Bu satır soluk, devre dışı veya vurgulanamaz. Diğer parametreler yoksayılır.
+- MF_SEPARATOR yatay bölme çizgisi çizer. Yalnızca bir açılır menüde kullanılabilir. Bu satır soluk, devre dışı veya vurgulanmış olamaz. Diğer parametreler yok sayılır.
 
-- MF_UNCHECKED Maddenin yanındaki onay işaretini kaldırmak için MF_CHECKED geçiş görevi görür. Uygulama onay işareti bit eşlerini sağladığında (üye işlevine `SetMenuItemBitmaps` bakın), "onay işareti" bit eşlemi görüntülenir. Bu sabitin değerinin 0 olduğunu unutmayın; bir uygulama bu değeri kullanırken hata için 0'a karşı test etmemelidir.
+- MF_UNCHECKED öğenin yanındaki onay işaretini kaldırmak için MF_CHECKED bir geçiş Işlevi görür. Uygulama Check-Mark bit eşlemler ( `SetMenuItemBitmaps` üye işlevine bakın) sağlar, "onay işareti kapalı" bit eşlemi görüntülenir. Bu sabitin değerinin 0 olduğunu unutmayın. Bu değer kullanılırken bir uygulamanın hata için 0 ile test edilmemesi gerekir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#27](../../mfc/reference/codesnippet/cpp/cmenu-class_7.cpp)]
 
-## <a name="cmenugetmenustring"></a><a name="getmenustring"></a>CMenu::GetMenuString
+## <a name="cmenugetmenustring"></a><a name="getmenustring"></a> CMenu:: GetMenuString
 
 Belirtilen menü öğesinin etiketini belirtilen arabelleğe kopyalar.
 
@@ -844,41 +845,41 @@ int GetMenuString(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIDItem*<br/>
-*nFlags*değerine bağlı olarak menü öğesinin veya menüdeki menü öğesinin ofsetinin veya sonlu tanımlayıcısını belirtir.
+*Nidıtem*<br/>
+Menü öğesinin tamsayı tanımlayıcısını veya menüdeki menü öğesinin, *nFlags* değerine bağlı olarak sapmasını belirtir.
 
-*lpString*<br/>
-Etiketi almak için arabelleğe işaret ediyor.
+*Lpstrıng*<br/>
+Etiketi alacak olan arabelleğe işaret eder.
 
 *rString*<br/>
-Kopyalanan menü `CString` dizesini almak için bir nesneye başvuru.
+`CString`Kopyalanmış menü dizesini alacak bir nesneye başvuru.
 
 *nMaxCount*<br/>
-Kopyalanacak etiketin en büyük uzunluğunu (karakterlerde) belirtir. Etiket *nMaxCount'da*belirtilen maksimumdan uzunsa, ek karakterler kesilir.
+Kopyalanacak etiketin en büyük uzunluğunu (karakter olarak) belirtir. Etiket *nMaxCount*'da belirtilen en büyük boyuttan uzunsa, ek karakterler kesilir.
 
-*Nflags*<br/>
-*nIDItem* parametresinin yorumunu belirtir. Aşağıdaki değerlerden biri olabilir:
+*nFlags*<br/>
+*Nidıtem* parametresinin yorumunu belirtir. Aşağıdaki değerlerden biri olabilir:
 
-|Nflags|nIDItem yorumu|
+|nFlags|Nidıtem yorumu|
 |------------|-------------------------------|
-|MF_BYCOMMAND|Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmazsa bu varsayılandır.|
-|Mf_byposıtıon|Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.|
+|MF_BYCOMMAND|Parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmamışsa bu varsayılandır.|
+|MF_BYPOSITION|Parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Null sonlandırıcı dahil değil, arabelleğe kopyalanan karakterlerin gerçek sayısını belirtir.
+Null Sonlandırıcı dahil değil, arabelleğe kopyalanmış olan gerçek karakter sayısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*nMaxCount* parametresi, bir dizeyi sonlandıran null karakterini yerleştirmek için etiketteki karakter sayısından daha büyük olmalıdır.
+*NMaxCount* parametresi, bir dizeyi sonlandıran null karaktere uyum sağlamak için Etiketteki karakter sayısından bir büyük olmalıdır.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:InsertMenu](#insertmenu).
+  [CMenu:: InsertMenu](#insertmenu)örneğine bakın.
 
-## <a name="cmenugetsafehmenu"></a><a name="getsafehmenu"></a>CMenu::GetSafeHmenu
+## <a name="cmenugetsafehmenu"></a><a name="getsafehmenu"></a> CMenu:: GetSafeHmenu
 
-Bu `CMenu` nesne tarafından sarılmış HMENU'yi`CMenu` veya NULL işaretçisini döndürür.
+Bu nesne tarafından Sarmalanan HMENU `CMenu` veya null bir işaretçi döndürür `CMenu` .
 
 ```
 HMENU GetSafeHmenu() const;
@@ -886,11 +887,11 @@ HMENU GetSafeHmenu() const;
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:LoadMenu](#loadmenu).
+  [CMenu:: LoadMenu](#loadmenu)örneğine bakın.
 
-## <a name="cmenugetsubmenu"></a><a name="getsubmenu"></a>CMenu::GetSubMenu
+## <a name="cmenugetsubmenu"></a><a name="getsubmenu"></a> CMenu:: Getalt menüsü
 
-Açılır menü `CMenu` nesnesini alır.
+`CMenu`Bir açılır menünün nesnesini alır.
 
 ```
 CMenu* GetSubMenu(int nPos) const;
@@ -899,19 +900,19 @@ CMenu* GetSubMenu(int nPos) const;
 ### <a name="parameters"></a>Parametreler
 
 *nPos*<br/>
-Menüde bulunan açılır menünün konumunu belirtir. Konum değerleri ilk menü öğesi için 0'dan başlar. Açılır menünün tanımlayıcısı bu işlevde kullanılamaz.
+Menüde bulunan açılır menünün konumunu belirtir. İlk menü öğesi için konum değerleri 0 ' dan başlar. Açılan menünün tanımlayıcısı bu işlevde kullanılamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Verilen konumda `CMenu` açılır `m_hMenu` menü varsa, üye açılır menüde tutamacı bulunan bir nesneye işaretçi; aksi takdirde NULL. Bir `CMenu` nesne yoksa, geçici bir nesne oluşturulur. Döndürülen `CMenu` işaretçi depolanmamalıdır.
+`CMenu` `m_hMenu` Belirtilen konumda bir açılır menü varsa, üyesi açılır menüye bir tanıtıcı içeren bir nesne işaretçisi; aksı takdirde null. Bir `CMenu` nesne yoksa, geçici bir tane oluşturulur. `CMenu`Döndürülen işaretçi depolanmamalıdır.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:TrackPopupMenu](#trackpopupmenu).
+  [CMenu:: TrackPopupMenu](#trackpopupmenu)örneğine bakın.
 
-## <a name="cmenuinsertmenu"></a><a name="insertmenu"></a>CMenu::InsertMenu
+## <a name="cmenuinsertmenu"></a><a name="insertmenu"></a> CMenu:: InsertMenu
 
-*nPosition* tarafından belirtilen konuma yeni bir menü öğesi ekler ve diğer öğeleri menüye taşır.
+*NPosition* tarafından belirtilen konuma yeni bir menü öğesi ekler ve diğer öğeleri menünün altına kaydırır.
 
 ```
 BOOL InsertMenu(
@@ -929,31 +930,31 @@ BOOL InsertMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*nPosition*<br/>
-Yeni menü öğesinin eklenmeden önce ekleneceğini menü öğesini belirtir. *nFlags* parametresi, *nPosition'ı* aşağıdaki şekillerde yorumlamak için kullanılabilir:
+*Sağda*<br/>
+Yeni menü öğesinin ekleneceği menü öğesini belirtir. *NFlags* parametresi *nPosition* parametresini aşağıdaki yollarla yorumlamak için kullanılabilir:
 
-|Nflags|nPosition yorumu|
+|nFlags|NPosition yorumu|
 |------------|---------------------------------|
-|MF_BYCOMMAND|Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmazsa bu varsayılandır.|
-|Mf_byposıtıon|Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır. *nPosition* -1 ise, yeni menü öğesi menünün sonuna eklenir.|
+|MF_BYCOMMAND|Parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmamışsa bu varsayılandır.|
+|MF_BYPOSITION|Parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken. *NPosition* -1 ise, yeni menü öğesi menünün sonuna eklenir.|
 
-*Nflags*<br/>
-*nPosition'un* nasıl yorumlandığını belirtir ve menüye eklendiğinde yeni menü öğesinin durumu yla ilgili bilgileri belirtir. Ayarlanabilecek bayrakların listesi için [AppendMenu](#appendmenu) üye işlevine bakın. Birden fazla değer belirtmek için, bityönünde veya işleci kullanarak bunları MF_BYCOMMAND veya MF_BYPOSITION bayrağıyla birleştirin.
+*nFlags*<br/>
+*NPosition* 'ın nasıl yorumlandığını belirtir ve menüye eklendiğinde yeni menü öğesinin durumu hakkındaki bilgileri belirtir. Ayarlanabilir bayrakların bir listesi için, [AppendMenu](#appendmenu) üye işlevine bakın. Birden çok değer belirtmek için, MF_BYCOMMAND veya MF_BYPOSITION bayrağıyla birleştirmek için bit düzeyinde OR işlecini kullanın.
 
 *nIDNewItem*<br/>
-Yeni menü öğesinin komut kimliğini veya *nFlags* MF_POPUP ayarlanmışsa, açılır menünün menü tutamacını (HMENU) belirtir. *nFlags* MF_SEPARATOR ayarlanmışsa *nIDNewItem* parametresi yoksayılır (gerekli değildir).
+Yeni menü öğesinin komut KIMLIĞINI ya da *nFlags* mf_popup, açılır menünün menü tutamacını (HMENU) belirler. *NFlags* MF_SEPARATOR olarak ayarlandıysa *nIDNewItem* parametresi yok sayılır (gerekli değildir).
 
 *lpszNewItem*<br/>
-Yeni menü öğesinin içeriğini belirtir. *nFlags* aşağıdaki şekillerde *lpszNewItem* yorumlamak için kullanılabilir:
+Yeni menü öğesinin içeriğini belirtir. *nFlags* aşağıdaki yollarla *lpszNewItem* yorumlamak için kullanılabilir:
 
-|Nflags|lpszNewItem yorumu|
+|nFlags|LpszNewItem yorumu|
 |------------|-----------------------------------|
-|MF_OWNERDRAW|Uygulamanın menü öğesiyle ilişkili ek verileri korumak için kullanabileceği uygulama tarafından sağlanan 32 bit lik bir değer içerir. Bu 32 bit lik değer, `itemData` [WM_MEASUREITEM](/windows/win32/Controls/wm-measureitem) ve [WM_DRAWITEM](/windows/win32/Controls/wm-drawitem) iletileri tarafından sağlanan yapının üyesinde uygulama için kullanılabilir. Bu iletiler, menü öğesi başlangıçta görüntülendiğinde veya değiştirildiğinde gönderilir.|
-|MF_STRING|Null-sonlandırılan dize için uzun bir işaretçi içerir. Bu varsayılan yorumdur.|
-|MF_SEPARATOR|*lpszNewItem* parametresi yoksayılır (gerekli değildir).|
+|MF_OWNERDRAW|Uygulamanın menü öğesiyle ilişkili ek verileri sürdürmek için kullanabileceği, uygulama tarafından sağlanan 32 bitlik bir değer içerir. Bu 32 bit değeri, `itemData` [WM_MEASUREITEM](/windows/win32/Controls/wm-measureitem) ve [WM_DRAWITEM](/windows/win32/Controls/wm-drawitem) iletilerinin sağladığı yapının üyesinde uygulama için kullanılabilir. Bu iletiler, menü öğesi başlangıçta görüntülendiğinde veya değiştirildiğinde gönderilir.|
+|MF_STRING|Null ile sonlandırılmış bir dizeye yönelik uzun bir işaretçi içerir. Bu, varsayılan yorumlamasıdır.|
+|MF_SEPARATOR|*LpszNewItem* parametresi yok sayılır (gerekli değildir).|
 
 *pBmp*<br/>
-Menü öğesi `CBitmap` olarak kullanılacak bir nesneye işaret edin.
+`CBitmap`Menü öğesi olarak kullanılacak bir nesneye işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -961,19 +962,19 @@ Menü öğesi `CBitmap` olarak kullanılacak bir nesneye işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama *nFlags*değerleri ayarlayarak menü öğesinin durumunu belirtebilirsiniz.
+Uygulama, *nFlags* içindeki değerleri ayarlayarak menü öğesinin durumunu belirtebilir.
 
-Bir pencerede bulunan bir menü değiştirildiğinde (pencere görüntülenip görüntülenmemesi), `CWnd::DrawMenuBar`uygulama .
+Pencerede bulunan bir menü değiştirildiğinde (pencerenin görüntülenip görüntülenmediğini belirtir), uygulamanın çağrısı gerekir `CWnd::DrawMenuBar` .
 
-*nIDNewItem* açılır menü belirttiğinde, eklendiği menünün bir parçası olur. Bu menü yok edilirse, eklenen menü de yok edilir. Eklenen bir menü çakışma `CMenu` önlemek için bir nesneden ayrılmalıdır.
+*NIDNewItem* bir açılan menüyü belirttiğinde, eklendiği menünün bir parçası haline gelir. Bu menü yok edildiğinde, eklenen menü de yok edilir. Çakışmayı önlemek için, eklenecek bir menü bir `CMenu` nesneden ayrılmalıdır.
 
-Etkin çoklu belge arabirimi (MDI) alt penceresi en üst düzeye çıkarsa ve bir uygulama bu işlevi arayarak ve MF_BYPOSITION bayrağını belirterek MDI uygulamasının menüsüne bir açılır menü eklerse, menü beklenenden daha sola bir konum eklenir. Bunun nedeni, etkin MDI alt penceresinin Denetim menüsünün MDI çerçeve penceresinin menü çubuğunun ilk konumuna eklenmesinden olur. Menüyü düzgün konumlandırmak için, uygulamanın başka türlü kullanılacak konum değerine 1 eklemesi gerekir. Bir uygulama, şu anda etkin olan alt pencerenin en üst düzeye çıkarılıp çıkarılmadığını belirlemek için WM_MDIGETACTIVE iletisini kullanabilir.
+Etkin birden çok belge arabirimi (MDI) alt penceresi ekranı kapladıysa ve bir uygulama, bu işlevi çağırarak ve MF_BYPOSITION bayrağını belirterek MDI uygulamasının menüsüne bir açılır menü ekler. Menü, beklenenden daha büyük bir konum eklenir. Bu durum, etkin MDI alt penceresinin denetim menüsü MDI çerçevesi penceresinin menü çubuğunun ilk konumuna eklendiği için oluşur. Menüyü düzgün şekilde konumlandırmak için, uygulamanın, aksi durumda kullanılacak konum değerine 1 eklemesi gerekir. Bir uygulama, şu anda etkin olan alt pencerenin ekranı kaplamadığını anlamak için WM_MDIGETACTIVE iletisini kullanabilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#28](../../mfc/reference/codesnippet/cpp/cmenu-class_8.cpp)]
 
-## <a name="cmenuinsertmenuitem"></a><a name="insertmenuitem"></a>CMenu::EkleMenuItem
+## <a name="cmenuinsertmenuitem"></a><a name="insertmenuitem"></a> CMenu:: InsertMenuItem
 
 Menüde belirtilen konuma yeni bir menü öğesi ekler.
 
@@ -986,22 +987,22 @@ BOOL InsertMenuItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*uÖğe*<br/>
-Windows SDK'daki [InsertMenuItem'deki](/windows/win32/api/winuser/nf-winuser-insertmenuitemw) *uItem* açıklamasına bakın.
+*uItem*<br/>
+Windows SDK [InsertMenuItem](/windows/win32/api/winuser/nf-winuser-insertmenuitemw) Içindeki *uitem* açıklamasına bakın.
 
-*lpMenuItemInfo*<br/>
-Windows SDK'daki `InsertMenuItem` *lpmii* açıklamasına bakın.
+*Lpmenuitemınfo*<br/>
+Windows SDK içinde *lpmıı* 'nin açıklamasına bakın `InsertMenuItem` .
 
 *fByPos*<br/>
-Windows SDK'daki `InsertMenuItem` *fByPosition* açıklamasına bakın.
+Windows SDK içindeki *fByPosition* açıklamasına bakın `InsertMenuItem` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, Windows SDK'da açıklanan [InsertMenuItem'i](/windows/win32/api/winuser/nf-winuser-insertmenuitemw)sarar.
+Bu işlev, Windows SDK açıklanan [InsertMenuItem](/windows/win32/api/winuser/nf-winuser-insertmenuitemw)'ı sarmalanmış.
 
-## <a name="cmenuloadmenu"></a><a name="loadmenu"></a>CMenü::LoadMenu
+## <a name="cmenuloadmenu"></a><a name="loadmenu"></a> CMenu:: LoadMenu
 
-Uygulamanın yürütülebilir dosyasından bir menü kaynağı yükler `CMenu` ve nesneye bağlar.
+Uygulamanın yürütülebilir dosyasından bir menü kaynağı yükler ve `CMenu` nesneye ekler.
 
 ```
 BOOL LoadMenu(LPCTSTR lpszResourceName);
@@ -1011,26 +1012,26 @@ BOOL LoadMenu(UINT nIDResource);
 ### <a name="parameters"></a>Parametreler
 
 *lpszResourceName*<br/>
-Yüklenmesi gereken menü kaynağının adını içeren null-sonlandırılan dizeyi işaret edin.
+Yüklenecek menü kaynağının adını içeren, null ile sonlandırılmış bir dizeye işaret eder.
 
-*nIDKaynak*<br/>
-Yüklenmesi gereken menü kaynağının menü kimliğini belirtir.
+*nIDResource*<br/>
+Yüklenecek menü kaynağının menü KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Menü kaynağı başarıyla yüklenmişse sıfıra inmez; aksi takdirde 0.
+Menü kaynağı başarıyla yüklenmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıkmadan önce, menü bir pencereye atanmamışsa, bir uygulamanın menüyle ilişkili sistem kaynaklarını serbest çemesi gerekir. Uygulama, [DestroyMenu](#destroymenu) üye işlevini arayarak menüyü boşaltıyor.
+Çıkmadan önce, bir pencere bir pencereye atanmadığı takdirde bir menü ile ilişkili sistem kaynaklarını boş olmalıdır. Bir uygulama, [Destroyımenu](#destroymenu) üye işlevini çağırarak bir menüyü serbest bırakır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#29](../../mfc/reference/codesnippet/cpp/cmenu-class_9.cpp)]
 
-## <a name="cmenuloadmenuindirect"></a><a name="loadmenuindirect"></a>CMenu::LoadMenuIndirect
+## <a name="cmenuloadmenuindirect"></a><a name="loadmenuindirect"></a> CMenu:: Loadmenudolaylı
 
-Bir kaynağı bellekteki bir menü şablonundan `CMenu` yükler ve nesneye bağlar.
+Bellekteki bir menü şablonundan bir kaynak yükler ve bunu `CMenu` nesnesine ekler.
 
 ```
 BOOL LoadMenuIndirect(const void* lpMenuTemplate);
@@ -1039,31 +1040,31 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
 ### <a name="parameters"></a>Parametreler
 
 *lpMenuTemplate*<br/>
-Menü şablonuna işaret eder (tek bir [MENUITEMTEMPLATEHEADER](/windows/win32/api/winuser/ns-winuser-menuitemtemplateheader) yapısı ve bir veya daha fazla [MENUITEMTEMPLATE](/windows/win32/api/winuser/ns-winuser-menuitemtemplate) yapısından oluşan bir koleksiyondur). Bu iki yapı hakkında daha fazla bilgi için Windows SDK'ya bakın.
+Bir menü şablonuna işaret eder (tek bir [MENUITEMTEMPLATEHEADER](/windows/win32/api/winuser/ns-winuser-menuitemtemplateheader) yapısı ve bir veya daha fazla [menuııtemtemplate](/windows/win32/api/winuser/ns-winuser-menuitemtemplate) yapısının koleksiyonu). Bu iki yapı hakkında daha fazla bilgi için Windows SDK bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Menü kaynağı başarıyla yüklenmişse sıfıra inmez; aksi takdirde 0.
+Menü kaynağı başarıyla yüklenmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü şablonu, her biri bir veya daha fazla menü öğesi ve açılır menü içerebilecek bir veya daha fazla [MENUITEMTEMPLATE](/windows/win32/api/winuser/ns-winuser-menuitemtemplate) yapısından oluşan bir koleksiyonun izlediği bir üstbilgidir.
+Bir menü şablonu, her biri bir veya daha fazla menü öğesi ve açılır menüler içerebilen bir veya daha fazla [Menuııtemtemplate](/windows/win32/api/winuser/ns-winuser-menuitemtemplate) yapısı koleksiyonu tarafından izlenen bir üst bilgi.
 
 Sürüm numarası 0 olmalıdır.
 
-Bayraklar, `mtOption` açılır listedeki son öğe ve ana listedeki son öğe için MF_END içermelidir. Diğer `AppendMenu` bayraklar için üye işlevine bakın. Üye, `mtId` MF_POPUP belirtildiğinde MENUITEMTEMPLATE yapısından `mtOption`çıkarılmalıdır.
+`mtOption`Bayraklar, açılan listedeki son öğe için ve ana listedeki son öğe için MF_END içermelidir. `AppendMenu`Diğer bayraklar için üye işlevine bakın. `mtId`Mf_popup içinde belirtildiğinde, ÜYENIN MENUııTEMTEMPLATE yapısından atlanmalıdır `mtOption` .
 
-MENUITEMTEMPLATE yapısı için ayrılan alan, menü `mtString` öğesinin adını null-sonlandırılan dize olarak içerecek kadar büyük olmalıdır.
+MENUııTEMTEMPLATE yapısına ayrılan alan, `mtString` null ile sonlandırılmış bir dize olarak menü öğesinin adını içerecek kadar büyük olmalıdır.
 
-Çıkmadan önce, menü bir pencereye atanmamışsa, bir uygulamanın menüyle ilişkili sistem kaynaklarını serbest çemesi gerekir. Uygulama, [DestroyMenu](#destroymenu) üye işlevini arayarak menüyü boşaltıyor.
+Çıkmadan önce, bir pencere bir pencereye atanmadığı takdirde bir menü ile ilişkili sistem kaynaklarını boş olmalıdır. Bir uygulama, [Destroyımenu](#destroymenu) üye işlevini çağırarak bir menüyü serbest bırakır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#30](../../mfc/reference/codesnippet/cpp/cmenu-class_10.cpp)]
 
-## <a name="cmenum_hmenu"></a><a name="m_hmenu"></a>CMenü::m_hMenu
+## <a name="cmenum_hmenu"></a><a name="m_hmenu"></a> CMenu:: m_hMenu
 
-Nesneye iliştirilen Windows menüsünün HMENU tutamacını `CMenu` belirtir.
+Nesneye eklenen Windows menüsünün HMENU tanıtıcısını belirtir `CMenu` .
 
 ```
 HMENU m_hMenu;
@@ -1071,11 +1072,11 @@ HMENU m_hMenu;
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:LoadMenu](#loadmenu).
+  [CMenu:: LoadMenu](#loadmenu)örneğine bakın.
 
-## <a name="cmenumeasureitem"></a><a name="measureitem"></a>CMenu::MeasureItem
+## <a name="cmenumeasureitem"></a><a name="measureitem"></a> CMenu:: MeasureItem
 
-Sahip çizim stiline sahip bir menü oluşturulduğunda çerçeve tarafından çağrılır.
+Sahip çizimi stilinde bir menü oluşturulduğunda Framework tarafından çağırılır.
 
 ```
 virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
@@ -1084,23 +1085,23 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="parameters"></a>Parametreler
 
 *lpMeasureItemStruct*<br/>
-Bir yapıiçin `MEASUREITEMSTRUCT` bir işaretçi.
+Bir yapıya yönelik işaretçi `MEASUREITEMSTRUCT` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bu üye işlev hiçbir şey yapmaz. Bu üye işlevi geçersiz kılın `MEASUREITEMSTRUCT` ve Windows'u menünün boyutları hakkında bilgilendirmek için yapıyı doldurun.
+Varsayılan olarak, bu üye işlevi hiçbir şey yapmaz. Bu üye işlevini geçersiz kılın ve `MEASUREITEMSTRUCT` menüyü menü boyutlarının Windows 'a bildirmek için yapıyı girin.
 
-Bkz. [CWnd::Yapının](../../mfc/reference/cwnd-class.md#onmeasureitem) `MEASUREITEMSTRUCT` açıklaması için OnMeasureItem.
+Yapının açıklaması için bkz. [CWnd:: OnMeasureItem](../../mfc/reference/cwnd-class.md#onmeasureitem) `MEASUREITEMSTRUCT` .
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod MFC [CTRLTEST](../../overview/visual-cpp-samples.md) örneğindendir:
+Aşağıdaki kod MFC [ctrltest](../../overview/visual-cpp-samples.md) örneğinden verilmiştir:
 
 [!code-cpp[NVC_MFCWindowing#31](../../mfc/reference/codesnippet/cpp/cmenu-class_11.cpp)]
 
-## <a name="cmenumodifymenu"></a><a name="modifymenu"></a>CMenu::ModifyMenu
+## <a name="cmenumodifymenu"></a><a name="modifymenu"></a> CMenu:: ModifyMenu
 
-Varolan bir menü öğesini *nPosition*tarafından belirtilen konumda değiştirir.
+*NPosition* tarafından belirtilen konumdaki mevcut bir menü öğesini değiştirir.
 
 ```
 BOOL ModifyMenu(
@@ -1118,31 +1119,31 @@ BOOL ModifyMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*nPosition*<br/>
-Değiştirilecek menü öğesini belirtir. *nFlags* parametresi, *nPosition'ı* aşağıdaki şekillerde yorumlamak için kullanılabilir:
+*Sağda*<br/>
+Değiştirilecek menü öğesini belirtir. *NFlags* parametresi *nPosition* parametresini aşağıdaki yollarla yorumlamak için kullanılabilir:
 
-|Nflags|nPosition yorumu|
+|nFlags|NPosition yorumu|
 |------------|---------------------------------|
-|MF_BYCOMMAND|Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmazsa bu varsayılandır.|
-|Mf_byposıtıon|Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.|
+|MF_BYCOMMAND|Parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmamışsa bu varsayılandır.|
+|MF_BYPOSITION|Parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.|
 
-*Nflags*<br/>
-*nPosition'un* nasıl yorumlandığını belirtir ve menü öğesinde yapılacak değişiklikler hakkında bilgi verir. Ayarlanabilecek bayrakların listesi için [AppendMenu](#appendmenu) üye işlevine bakın.
+*nFlags*<br/>
+*NPosition* 'ın nasıl yorumlandığını belirtir ve menü öğesinde yapılacak değişiklikler hakkında bilgi verir. Ayarlanabilir bayrakların bir listesi için, bkz. [AppendMenu](#appendmenu) üye işlevi.
 
 *nIDNewItem*<br/>
-Değiştirilen menü öğesinin komut kimliğini veya *nFlags* MF_POPUP ayarlanmışsa, açılır menünün menü tutamacını (HMENU) belirtir. *nFlags* MF_SEPARATOR ayarlanmışsa *nIDNewItem* parametresi yoksayılır (gerekli değildir).
+Değiştirilen menü öğesinin komut KIMLIĞINI ya da *nFlags* mf_popup, bir açılır menünün menü tutamacını (HMENU) belirler. *NFlags* MF_SEPARATOR olarak ayarlandıysa *nIDNewItem* parametresi yok sayılır (gerekli değildir).
 
 *lpszNewItem*<br/>
-Yeni menü öğesinin içeriğini belirtir. *nFlags* parametresi aşağıdaki şekillerde *lpszNewItem* yorumlamak için kullanılabilir:
+Yeni menü öğesinin içeriğini belirtir. *NFlags* parametresi, aşağıdaki yollarla *lpszNewItem* yorumlamak için kullanılabilir:
 
-|Nflags|lpszNewItem yorumu|
+|nFlags|LpszNewItem yorumu|
 |------------|-----------------------------------|
-|MF_OWNERDRAW|Uygulamanın menü öğesiyle ilişkili ek verileri korumak için kullanabileceği uygulama tarafından sağlanan 32 bit lik bir değer içerir. Bu 32 bit lik değer, MF_MEASUREITEM ve MF_DRAWITEM işlerken uygulama için kullanılabilir.|
-|MF_STRING|Null-sonlandırılan dize veya bir `CString`' ye uzun bir işaretçi içerir.|
-|MF_SEPARATOR|*lpszNewItem* parametresi yoksayılır (gerekli değildir).|
+|MF_OWNERDRAW|Uygulamanın menü öğesiyle ilişkili ek verileri sürdürmek için kullanabileceği, uygulama tarafından sağlanan 32 bitlik bir değer içerir. Bu 32 bit değeri MF_MEASUREITEM ve MF_DRAWITEM işlerken uygulama için kullanılabilir.|
+|MF_STRING|Null ile sonlandırılmış bir dizeye veya bir için uzun bir işaretçi içerir `CString` .|
+|MF_SEPARATOR|*LpszNewItem* parametresi yok sayılır (gerekli değildir).|
 
 *pBmp*<br/>
-Menü öğesi `CBitmap` olarak kullanılacak bir nesneye işaret edin.
+`CBitmap`Menü öğesi olarak kullanılacak bir nesneye işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1150,19 +1151,19 @@ Menü öğesi `CBitmap` olarak kullanılacak bir nesneye işaret edin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama, *nFlags'deki*değerleri ayarlayarak menü öğesinin yeni durumunu belirtir. Bu işlev menü öğesiyle ilişkili bir açılır menü yerine alırsa, eski açılır menüyü yok eder ve açılır menü tarafından kullanılan belleği boşaltıyor.
+Uygulama, *nFlags* içindeki değerleri ayarlayarak menü öğesinin yeni durumunu belirtir. Bu işlev menü öğesiyle ilişkili bir açılır menüyü değiştirirse, eski açılır menüyü yok eder ve açılır menü tarafından kullanılan belleği serbest bırakır.
 
-*nIDNewItem* açılır menü belirttiğinde, eklendiği menünün bir parçası olur. Bu menü yok edilirse, eklenen menü de yok edilir. Eklenen bir menü çakışma `CMenu` önlemek için bir nesneden ayrılmalıdır.
+*NIDNewItem* bir açılan menüyü belirttiğinde, eklendiği menünün bir parçası haline gelir. Bu menü yok edildiğinde, eklenen menü de yok edilir. Çakışmayı önlemek için, eklenecek bir menü bir `CMenu` nesneden ayrılmalıdır.
 
-Bir pencerede bulunan bir menü değiştirildiğinde (pencere görüntülenip görüntülenmemesi), `CWnd::DrawMenuBar`uygulama . Varolan menü öğelerinin özniteliklerini değiştirmek için, `CheckMenuItem` `EnableMenuItem` ve üye işlevleri kullanmak çok daha hızlıdır.
+Pencerede bulunan bir menü değiştirildiğinde (pencerenin görüntülenip görüntülenmediğini belirtir), uygulamanın çağrısı gerekir `CWnd::DrawMenuBar` . Mevcut menü öğelerinin özniteliklerini değiştirmek için, `CheckMenuItem` ve üye işlevlerini kullanmak çok daha hızlıdır `EnableMenuItem` .
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:InsertMenu](#insertmenu).
+  [CMenu:: InsertMenu](#insertmenu)örneğine bakın.
 
-## <a name="cmenuoperator-hmenu"></a><a name="operator_hmenu"></a>CMenu::operatör HMENU
+## <a name="cmenuoperator-hmenu"></a><a name="operator_hmenu"></a> CMenu:: operator HMENU
 
-`CMenu` Nesnenin tutamacını almak için bu işleci kullanın.
+Nesnenin tanıtıcısını almak için bu işleci kullanın `CMenu` .
 
 ```
 operator HMENU() const;
@@ -1170,15 +1171,15 @@ operator HMENU() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, nesnenin `CMenu` tutamacı; aksi takdirde, NULL.
+Başarılı olursa, `CMenu` nesnesinin tanıtıcısı; aksi takdirde, null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows API'lerini doğrudan aramak için tutamacı kullanabilirsiniz.
+İşleyiciyi doğrudan Windows API 'Leri çağırmak için kullanabilirsiniz.
 
-## <a name="cmenuoperator-"></a><a name="operator_neq"></a>CMenu::operatör !=
+## <a name="cmenuoperator-"></a><a name="operator_neq"></a> CMenu:: operator! =
 
-İki menü mantıksal olarak eşit değilse belirler.
+İki menülerin mantıksal olarak eşit olup olmadığını belirler.
 
 ```
 BOOL operator!=(const CMenu& menu) const;
@@ -1187,15 +1188,15 @@ BOOL operator!=(const CMenu& menu) const;
 ### <a name="parameters"></a>Parametreler
 
 *Menü*<br/>
-Karşılaştırma `CMenu` için bir nesne.
+`CMenu`Karşılaştırma için bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sol taraftaki bir menü nesnesi sağ taraftaki menü nesnesine eşit değilse test edin.
+Sol taraftaki bir menü nesnesinin sağ taraftaki bir menü nesnesine eşit olup olmadığını sınar.
 
-## <a name="cmenuoperator-"></a><a name="operator_eq_eq"></a>CMenu::operatör ==
+## <a name="cmenuoperator-"></a><a name="operator_eq_eq"></a> CMenu:: operator = =
 
-İki menü mantıksal olarak eşit olup olmadığını belirler.
+İki menülerin mantıksal olarak eşit olup olmadığını belirler.
 
 ```
 BOOL operator==(const CMenu& menu) const;
@@ -1204,15 +1205,15 @@ BOOL operator==(const CMenu& menu) const;
 ### <a name="parameters"></a>Parametreler
 
 *Menü*<br/>
-Karşılaştırma `CMenu` için bir nesne.
+`CMenu`Karşılaştırma için bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sol taraftaki bir menü nesnesinin sağ taraftaki menü nesnesine eşit sayılsa (HMENU değeri açısından) test eder.
+Sol taraftaki bir menü nesnesinin, sağ taraftaki bir menü nesnesine eşit (HMENU değeri) olarak eşit olup olmadığını sınar.
 
-## <a name="cmenuremovemenu"></a><a name="removemenu"></a>CMenu::RemoveMenu
+## <a name="cmenuremovemenu"></a><a name="removemenu"></a> CMenu:: RemoveMenu
 
-Menüden ilişkili açılır menü içeren bir menü öğesini siler.
+Menüden ilişkili bir açılır menü içeren bir menü öğesini siler.
 
 ```
 BOOL RemoveMenu(
@@ -1222,16 +1223,16 @@ BOOL RemoveMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*nPosition*<br/>
-Kaldırılacak menü öğesini belirtir. *nFlags* parametresi, *nPosition'ı* aşağıdaki şekillerde yorumlamak için kullanılabilir:
+*Sağda*<br/>
+Kaldırılacak menü öğesini belirtir. *NFlags* parametresi *nPosition* parametresini aşağıdaki yollarla yorumlamak için kullanılabilir:
 
-|Nflags|nPosition yorumu|
+|nFlags|NPosition yorumu|
 |------------|---------------------------------|
-|MF_BYCOMMAND|Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmazsa bu varsayılandır.|
-|Mf_byposıtıon|Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.|
+|MF_BYCOMMAND|Parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmamışsa bu varsayılandır.|
+|MF_BYPOSITION|Parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.|
 
-*Nflags*<br/>
-*nPosition'un* nasıl yorumlandığını belirtir.
+*nFlags*<br/>
+*NPosition* 'ın nasıl yorumlandığını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1239,15 +1240,15 @@ Kaldırılacak menü öğesini belirtir. *nFlags* parametresi, *nPosition'ı* a�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Açılır menü için tutamacı yok etmez, böylece menü yeniden kullanılabilir. Bu işlevi aramadan önce, `GetSubMenu` uygulama yeniden kullanmak üzere `CMenu` açılır nesnealmak için üye işlevi çağırabilir.
+Açılır menünün tanıtıcısını yok etmez, bu nedenle menü yeniden kullanılabilir. Bu işlevi çağırmadan önce, uygulama, `GetSubMenu` açılır `CMenu` nesneyi yeniden kullanım için almak üzere üye işlevini çağırabilir.
 
-Bir pencerede bulunan bir menü değiştirildiğinde (pencere görüntülenip görüntülenmemesi), `CWnd::DrawMenuBar`uygulamanın .
+Pencerede bulunan bir menü değiştirildiğinde (pencerenin görüntülenip görüntülenmediğini belirtir), uygulamanın çağrısı gerekir `CWnd::DrawMenuBar` .
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:InsertMenu](#insertmenu).
+  [CMenu:: InsertMenu](#insertmenu)örneğine bakın.
 
-## <a name="cmenusetdefaultitem"></a><a name="setdefaultitem"></a>CMenu::SetDefaultItem
+## <a name="cmenusetdefaultitem"></a><a name="setdefaultitem"></a> CMenu:: Setdefaultıtem
 
 Belirtilen menü için varsayılan menü öğesini ayarlar.
 
@@ -1259,27 +1260,27 @@ BOOL SetDefaultItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*uÖğe*<br/>
-Yeni varsayılan menü öğesinin tanımlayıcısı veya konumu veya - 1 varsayılan öğe için. Bu parametrenin anlamı *fByPos*değerine bağlıdır.
+*uItem*<br/>
+Varsayılan öğe için yeni varsayılan menü öğesinin tanımlayıcısı veya konumu veya-1. Bu parametrenin anlamı *fByPos* değerine bağlıdır.
 
 *fByPos*<br/>
-*uÖğenin*anlamını belirten değer . Bu parametre FALSE ise, *uItem* bir menü öğesi tanımlayıcısın. Aksi takdirde, bir menü öğesi konumudur.
+*Uitem*'in anlamını belirten değer. Bu parametre YANLıŞSA, *Uitem* bir menü öğesi tanımlayıcısıdır. Aksi takdirde, bir menü öğesi konumudur.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, geri dönüş değeri sıfırsız dır. İşlev başarısız olursa, geri dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için, Windows SDK'da açıklandığı gibi Win32 işlevini [getlasterror'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)kullanın.
+İşlev başarılı olursa, dönüş değeri sıfır dışında olur. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Windows SDK [Win32 işlevini kullanın](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), burada açıklandığı gibi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 işlevi [SetMenuDefaultItem'in](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem)davranışını uygular.
+Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [SetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem)Win32 işlevinin davranışını uygular.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:InsertMenu](#insertmenu).
+  [CMenu:: InsertMenu](#insertmenu)örneğine bakın.
 
-## <a name="cmenusetmenucontexthelpid"></a><a name="setmenucontexthelpid"></a>CMenu::SetMenuContextHelpId
+## <a name="cmenusetmenucontexthelpid"></a><a name="setmenucontexthelpid"></a> CMenu:: SetMenuContextHelpId
 
-Bir bağlam yardım `CMenu`kimliğini .
+Bağlam yardım KIMLIĞINI ile ilişkilendirir `CMenu` .
 
 ```
 BOOL SetMenuContextHelpId(DWORD dwContextHelpId);
@@ -1288,23 +1289,23 @@ BOOL SetMenuContextHelpId(DWORD dwContextHelpId);
 ### <a name="parameters"></a>Parametreler
 
 *dwContextHelpId*<br/>
-Bağlam yardım kimliği `CMenu`ile ilişkilendirmek için .
+İle ilişkilendirilecek bağlam yardım KIMLIĞI `CMenu` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0
+Başarılı olursa sıfır dışı; Aksi halde 0
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menüdeki tüm öğeler bu tanımlayıcıyı paylaşır — tek tek menü öğelerine yardım bağlamı tanımlayıcısı eklemek mümkün değildir.
+Menüdeki tüm öğeler bu tanımlayıcıyı paylaşır — bireysel menü öğelerine bir yardım bağlamı tanımlayıcısı eklemek mümkün değildir.
 
 ### <a name="example"></a>Örnek
 
-  CMenu örneğine [bakın:InsertMenu](#insertmenu).
+  [CMenu:: InsertMenu](#insertmenu)örneğine bakın.
 
-## <a name="cmenusetmenuinfo"></a><a name="setmenuinfo"></a>CMenu::SetMenuInfo
+## <a name="cmenusetmenuinfo"></a><a name="setmenuinfo"></a> CMenu:: Setmenuınfo
 
-Menü için bilgileri ayarlar.
+Bir menünün bilgilerini ayarlar.
 
 ```
 BOOL SetMenuInfo(LPCMENUINFO lpcmi);
@@ -1312,20 +1313,20 @@ BOOL SetMenuInfo(LPCMENUINFO lpcmi);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpcmi*<br/>
-Menü için bilgi içeren bir [MENUINFO](/windows/win32/api/winuser/ns-winuser-menuinfo) yapısıiçin bir işaretçi.
+*lpcmı*<br/>
+Menü bilgilerini içeren bir [MENUINFO](/windows/win32/api/winuser/ns-winuser-menuinfo) yapısına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, geri dönüş değeri sıfırdeğildir; aksi takdirde, iade değeri sıfırdır.
+İşlev başarılı olursa, dönüş değeri sıfır dışında olur; Aksi takdirde, dönüş değeri sıfırdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü hakkında belirli bilgileri ayarlamak için bu işlevi arayın.
+Menüsüyle ilgili belirli bilgileri ayarlamak için bu işlevi çağırın.
 
-## <a name="cmenusetmenuitembitmaps"></a><a name="setmenuitembitmaps"></a>CMenu::SetMenuItemBitmaps
+## <a name="cmenusetmenuitembitmaps"></a><a name="setmenuitembitmaps"></a> CMenu:: SetMenuItemBitmaps
 
-Belirtilen bit eşlemleri bir menü öğesiyle ilişkilendirer.
+Belirtilen bit eşlemleri bir menü öğesiyle ilişkilendirir.
 
 ```
 BOOL SetMenuItemBitmaps(
@@ -1337,21 +1338,21 @@ BOOL SetMenuItemBitmaps(
 
 ### <a name="parameters"></a>Parametreler
 
-*nPosition*<br/>
-Değiştirilecek menü öğesini belirtir. *nFlags* parametresi, *nPosition'ı* aşağıdaki şekillerde yorumlamak için kullanılabilir:
+*Sağda*<br/>
+Değiştirilecek menü öğesini belirtir. *NFlags* parametresi *nPosition* parametresini aşağıdaki yollarla yorumlamak için kullanılabilir:
 
-|Nflags|nPosition yorumu|
+|nFlags|NPosition yorumu|
 |------------|---------------------------------|
-|MF_BYCOMMAND|Parametrenin varolan menü öğesinin komut kimliğini verdiğini belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmazsa bu varsayılandır.|
-|Mf_byposıtıon|Parametrenin varolan menü öğesinin konumunu verdiğini belirtir. İlk madde 0 konumundadır.|
+|MF_BYCOMMAND|Parametrenin mevcut menü öğesinin komut KIMLIĞINI verir olduğunu belirtir. Ne MF_BYCOMMAND ne de MF_BYPOSITION ayarlanmamışsa bu varsayılandır.|
+|MF_BYPOSITION|Parametrenin mevcut menü öğesinin konumunu olduğunu belirtir. İlk öğe 0 konumundayken.|
 
-*Nflags*<br/>
-*nPosition'un* nasıl yorumlandığını belirtir.
+*nFlags*<br/>
+*NPosition* 'ın nasıl yorumlandığını belirtir.
 
 *pBmpUnchecked*<br/>
-Denetlenmeyen menü öğeleri için kullanılacak bit eşlemi belirtir.
+İşaretli olmayan menü öğeleri için kullanılacak bit eşlemi belirtir.
 
-*pBmpKontroled*<br/>
+*pBmpChecked*<br/>
 Denetlenen menü öğeleri için kullanılacak bit eşlemi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1360,13 +1361,13 @@ Denetlenen menü öğeleri için kullanılacak bit eşlemi belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü öğesi işaretli veya işaretli olsun, Windows menü öğesinin yanında uygun bit eşlemi görüntüler.
+Menü öğesinin işaretli veya işaretlenmemiş olup olmadığı, Windows menü öğesinin yanında uygun bit eşlemi görüntüler.
 
-*PBmpUnchecked* veya *pBmpChecked* null ise, Windows ilgili öznitelik için menü öğesinin yanında hiçbir şey görüntüler. Her iki parametre de NULL ise, öğe işaretlendiğinde Windows varsayılan onay işaretini kullanır ve öğe işaretlenmediğinde onay işaretini kaldırır.
+*PBmpUnchecked* veya *PBMPCHECKED* null ise, Windows karşılık gelen öznitelik için menü öğesinin yanında hiçbir şey görüntülemez. Her iki parametre de NULL ise, Windows, öğe işaretlendiğinde varsayılan onay işaretini kullanır ve öğe işaretli değilken onay işaretini kaldırır.
 
-Menü yok edildiğinde, bu bit eşlemler yok edilmez; uygulama onları yok etmelidir.
+Menü yok edildiğinde, bu bit eşlemler yok edilmez; uygulamanın onları yok etmeniz gerekir.
 
-Windows `GetMenuCheckMarkDimensions` işlevi menü öğeleri için kullanılan varsayılan onay işaretinin boyutlarını alır. Uygulama, bu işlevle birlikte verilen bit eşlemleri için uygun boyutu belirlemek için bu değerleri kullanır. Boyutu alın, bit eşlerinizi oluşturun ve sonra ayarlayın.
+Windows `GetMenuCheckMarkDimensions` işlevi, menü öğeleri için kullanılan varsayılan onay işaretinin boyutlarını alır. Uygulama, bu işlevle sağlanan bit eşlemlere uygun boyutu belirlemede bu değerleri kullanır. Boyutu alın, bit eşlemlerinizi oluşturun ve bunları ayarlayın.
 
 ### <a name="example"></a>Örnek
 
@@ -1374,9 +1375,9 @@ Windows `GetMenuCheckMarkDimensions` işlevi menü öğeleri için kullanılan v
 
 [!code-cpp[NVC_MFCWindowing#33](../../mfc/reference/codesnippet/cpp/cmenu-class_13.cpp)]
 
-## <a name="cmenusetmenuiteminfo"></a><a name="setmenuiteminfo"></a>CMenu::SetMenuItemInfo
+## <a name="cmenusetmenuiteminfo"></a><a name="setmenuiteminfo"></a> CMenu:: Setmenuiteınfo
 
-Menü öğesi hakkındaki bilgileri değiştirir.
+Bir menü öğesiyle ilgili bilgileri değiştirir.
 
 ```
 BOOL SetMenuItemInfo(
@@ -1387,20 +1388,20 @@ BOOL SetMenuItemInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*uÖğe*<br/>
-Windows SDK'daki [SetMenuItemInfo'daki](/windows/win32/api/winuser/nf-winuser-setmenuiteminfow) *uItem* açıklamasına bakın.
+*uItem*<br/>
+Windows SDK [SetMenuItemInfo](/windows/win32/api/winuser/nf-winuser-setmenuiteminfow) Içinde *uitem* açıklamasına bakın.
 
-*lpMenuItemInfo*<br/>
-Windows SDK'daki `SetMenuItemInfo` *lpmii* açıklamasına bakın.
+*Lpmenuitemınfo*<br/>
+Windows SDK içinde *lpmıı* 'nin açıklamasına bakın `SetMenuItemInfo` .
 
 *fByPos*<br/>
-Windows SDK'daki `SetMenuItemInfo` *fByPosition* açıklamasına bakın.
+Windows SDK içindeki *fByPosition* açıklamasına bakın `SetMenuItemInfo` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, Windows SDK'da açıklanan [SetMenuItemInfo'yu](/windows/win32/api/winuser/nf-winuser-setmenuiteminfow)sarar.
+Bu işlev, Windows SDK açıklanan [Setmenuiteınfo](/windows/win32/api/winuser/nf-winuser-setmenuiteminfow)öğesini sarmalanmış.
 
-## <a name="cmenutrackpopupmenu"></a><a name="trackpopupmenu"></a>CMenu::TrackPopupMenu
+## <a name="cmenutrackpopupmenu"></a><a name="trackpopupmenu"></a> CMenu:: TrackPopupMenu
 
 Belirtilen konumda kayan bir açılır menü görüntüler ve açılır menüdeki öğelerin seçimini izler.
 
@@ -1415,34 +1416,34 @@ BOOL TrackPopupMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nflags*<br/>
-Ekran konumu ve fare konumu bayraklarını belirtir. Kullanılabilir bayrakların listesi için [TrackPopupMenu'a](/windows/win32/api/winuser/nf-winuser-trackpopupmenu) bakın.
+*nFlags*<br/>
+Ekran konumunu ve fare konumu bayraklarını belirtir. Kullanılabilir bayrakların listesi için [TrackPopupMenu](/windows/win32/api/winuser/nf-winuser-trackpopupmenu) öğesine bakın.
 
-*X*<br/>
-Açılır menünün ekran koordinatlarında yatay konumu belirtir. *nFlags* parametresinin değerine bağlı olarak, menü sol ait, sağa hizalanmış veya bu konuma göre ortalanmış olabilir.
+*x*<br/>
+Açılır menünün Ekran koordinatlarındaki yatay konumu belirtir. *NFlags* parametresinin değerine bağlı olarak, menü sola hizalı, sağa hizalı veya bu konuma göre ortalanmış olabilir.
 
-*Y*<br/>
-Ekrandaki menünün üst kısmındaki ekran koordinatlarında dikey konumu belirtir.
+*Iz*<br/>
+Ekrandaki menünün üst kısmında bulunan dikey konumu belirtir.
 
-*Pwnd*<br/>
-Açılır menüsünün sahibi olan pencereyi tanımlar. bu parametre, TPM_NONOTIFY bayrağı belirtilmiş olsa bile NULL olamaz. Bu pencere, menüden tüm WM_COMMAND iletileri alır. Windows sürümleri 3.1 ve sonraki sürümlerde, pencere `TrackPopupMenu` döndürülene kadar WM_COMMAND iletileri almaz. Windows 3.0'da, pencere iade `TrackPopupMenu` edilmeden önce WM_COMMAND iletileri alır.
+*pWnd*<br/>
+Açılır menünün sahibi olan pencereyi tanımlar. TPM_NONOTIFY bayrağı belirtilmiş olsa bile bu parametre NULL olamaz. Bu pencere, menüden tüm WM_COMMAND iletilerini alır. Windows sürümleri 3,1 ve üzeri sürümlerde, pencere dönüşene kadar WM_COMMAND iletileri almaz `TrackPopupMenu` . Windows 3,0 ' de, pencere döndürülmadan önce WM_COMMAND iletileri alır `TrackPopupMenu` .
 
-*Lprect*<br/>
-Göz ardı.
+*lpRect*<br/>
+LIP.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem, Windows SDK'da [TrackPopupMenu'u](/windows/win32/api/winuser/nf-winuser-trackpopupmenu) arama nın sonucunu döndürür.
+Bu yöntem, Windows SDK [TrackPopupMenu](/windows/win32/api/winuser/nf-winuser-trackpopupmenu) çağırmanın sonucunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayan açılır menü ekranın herhangi bir yerinde görünebilir.
+Kayan bir açılır menü ekran üzerinde herhangi bir yerde görünebilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCWindowing#34](../../mfc/reference/codesnippet/cpp/cmenu-class_14.cpp)]
 
-## <a name="cmenutrackpopupmenuex"></a><a name="trackpopupmenuex"></a>CMenu::TrackPopupMenuEx
+## <a name="cmenutrackpopupmenuex"></a><a name="trackpopupmenuex"></a> CMenu:: TrackPopupMenuEx
 
 Belirtilen konumda kayan bir açılır menü görüntüler ve açılır menüdeki öğelerin seçimini izler.
 
@@ -1458,34 +1459,34 @@ BOOL TrackPopupMenuEx(
 ### <a name="parameters"></a>Parametreler
 
 *fuFlags*<br/>
-Genişletilmiş menü için çeşitli işlevleri belirtir. Tüm değerlerin ve anlamlarının bir listesi için [TrackPopupMenuEx](/windows/win32/api/winuser/nf-winuser-trackpopupmenuex)bölümüne bakın.
+Genişletilmiş menü için çeşitli işlevleri belirtir. Tüm değerlerin ve anlamının listesi için bkz. [TrackPopupMenuEx](/windows/win32/api/winuser/nf-winuser-trackpopupmenuex).
 
-*X*<br/>
-Açılır menünün ekran koordinatlarında yatay konumu belirtir.
+*x*<br/>
+Açılır menünün Ekran koordinatlarındaki yatay konumu belirtir.
 
-*Y*<br/>
-Ekrandaki menünün üst kısmındaki ekran koordinatlarında dikey konumu belirtir.
+*Iz*<br/>
+Ekrandaki menünün üst kısmında bulunan dikey konumu belirtir.
 
-*Pwnd*<br/>
-Açılan menüye sahip olan ve oluşturulan menüden iletileri alan pencereye işaretçi. Bu pencere geçerli uygulamadan herhangi bir pencere olabilir, ancak NULL olamaz. *fuFlags* parametresinde TPM_NONOTIFY belirtirseniz, işlev *pWnd'ye*herhangi bir ileti göndermez. İşlev, WM_COMMAND iletisini almak için *pWnd* tarafından işaret edilen pencere için döndürülmelidir.
+*pWnd*<br/>
+Açılır menünün sahibi olan pencere için bir işaretçi ve oluşturulan menüden iletileri alma. Bu pencere geçerli uygulamadaki herhangi bir pencere olabilir, ancak NULL olamaz. *FuFlags* parametresinde TPM_NONOTIFY belirtirseniz, Işlev *pWnd*'e ileti göndermez. İşlev, WM_COMMAND iletisini almak için *pWnd* tarafından işaret edilen pencere için döndürmelidir.
 
 *lptpm*<br/>
-Ekranın bir alanını belirten bir [TPMPARAMS](/windows/win32/api/winuser/ns-winuser-tpmparams) yapısına işaretçi, menünün çakışmaması gerekir. Bu parametre NULL olabilir.
+Ekranın bir alanını belirten bir [Tpmparams](/windows/win32/api/winuser/ns-winuser-tpmparams) yapısına yönelik işaretçi menü çakışmamalıdır. Bu parametre NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*fuFlags* parametresinde TPM_RETURNCMD belirtirseniz, iade değeri kullanıcının seçtiği öğenin menü öğesi tanımlayıcısı olur. Kullanıcı seçim yapmadan menüyü iptal ederse veya bir hata oluşursa, iade değeri 0 olur.
+*FuFlags* parametresinde TPM_RETURNCMD belirtirseniz, dönüş değeri kullanıcının seçtiği öğenin menü öğesi tanımlayıcısıdır. Kullanıcı bir seçim yapmadan menüyü iptal ederse veya bir hata oluşursa, dönüş değeri 0 ' dır.
 
-*fuFlags* parametresinde TPM_RETURNCMD belirtmezseniz, işlev başarılı olursa dönüş değeri sıfırsız, başarısız olursa 0 olur. Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)arayın.
+*FuFlags* parametresinde TPM_RETURNCMD belirtmezseniz, işlev başarılı olursa, dönüş değeri sıfır değildir ve başarısız olursa 0 olur. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror)çağrısı yapın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayan açılır menü ekranın herhangi bir yerinde görünebilir. Açılır menü oluşturulurken işleme hataları hakkında daha fazla bilgi için [TrackPopupMenuEx'e](/windows/win32/api/winuser/nf-winuser-trackpopupmenuex)bakın.
+Kayan bir açılır menü ekran üzerinde herhangi bir yerde görünebilir. Açılır menüyü oluştururken hata işleme hakkında daha fazla bilgi için bkz. [TrackPopupMenuEx](/windows/win32/api/winuser/nf-winuser-trackpopupmenuex).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek DYNAMENU](../../overview/visual-cpp-samples.md)<br/>
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)
+[MFC örnek CTRLTEST](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek DYNAMENU](../../overview/visual-cpp-samples.md)<br/>
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CObject sınıfı](../../mfc/reference/cobject-class.md)

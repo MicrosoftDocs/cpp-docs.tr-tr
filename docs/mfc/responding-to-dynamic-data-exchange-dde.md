@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi için bkz. dinamik veri değişimine yanıt verme (DDE)
 title: Dinamik Veri Değişimine Yanıt Verme (DDE)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,17 +12,17 @@ helpviewer_keywords:
 - responding to dynamic data exchange (DDE)
 - frame windows [MFC], shell registration
 ms.assetid: 4db838d5-62cf-4123-915a-66e514155c0c
-ms.openlocfilehash: f6ca50b95e35ea4d7a6c29c6dd6919e02c9bdc7a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3dc9a3881b78f95a8571143aceace50836ab8fa0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218036"
 ---
 # <a name="responding-to-dynamic-data-exchange-dde"></a>Dinamik Veri Değişimine Yanıt Verme (DDE)
 
-Çerçeve penceresi (dosya uzantısı kaydedildiğinde ya da uygulama ile ilişkili değilse) dosyaları Dosya Yöneticisi'nden açmak için dinamik veri değişimi (DDE) isteklerine yanıt verebilir. Bkz: [Kabuk kaydı](../mfc/special-cwinapp-services.md).
+Çerçeve penceresi, dosya yöneticisinden dosyaları açmak için dinamik veri değişimi (DDE) isteklerine yanıt verebilir (dosya uzantısı kayıtlıysa veya uygulamayla ilişkiliyse). Bkz. [kabuk kaydı](../mfc/special-cwinapp-services.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
+[Çerçeve pencerelerini kullanma](../mfc/using-frame-windows.md)

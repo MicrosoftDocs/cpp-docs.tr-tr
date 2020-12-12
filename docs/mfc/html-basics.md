@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: HTML temelleri'
 title: HTML Temelleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - HTML [MFC], about HTML
 ms.assetid: aab8ea9f-12d4-4bdd-a585-ac3124081a2a
-ms.openlocfilehash: 29ca2e3df4981db22a10281ba2a2938fc91d5b46
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f32926beb9152441169320bf3553b0066f78fa7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290251"
 ---
 # <a name="html-basics"></a>HTML Temelleri
 
@@ -33,9 +34,9 @@ Aşağıdaki adımlar basit bir Web sayfası oluşturmak için HTML etiketlerini
     </HTML>
     ```
 
-1. **Dosya** menüsünde **Kaydet**' i seçin ve dosyayı C:\webpages\First.exe olarak kaydedin. Dosyayı düzenleyicide açık bırakın.
+1. **Dosya** menüsünde **Kaydet**' i seçin ve dosyayı c:\webpages\First.htm olarak kaydedin. Dosyayı düzenleyicide açık bırakın.
 
-1. Tarayıcınıza geçiş yapın ve **Dosya** menüsünden **Aç**' ı SEÇIN veya tarayıcının URL 'si düzenleme kutusuna *File://C:/webpages/First.htm* yazın. Pencere başlığı "üst HTML etiketleri" olan boş bir sayfa görmeniz gerekir.
+1. Tarayıcınıza geçiş yapın ve **Dosya** menüsünden **Aç**' ı SEÇIN veya tarayıcının URL 'si düzenleme kutusuna *File://C:/webpages/first.htm* yazın. Pencere başlığı "üst HTML etiketleri" olan boş bir sayfa görmeniz gerekir.
 
    Etiketlerin eşleştirildiğine ve açılı ayraçlar içine dahil edildiğini unutmayın. Etiketler büyük/küçük harfe duyarlı değildir, ancak büyük küçük harf genellikle etiketlerin öne çıkmasını sağlamak için kullanılır.
 

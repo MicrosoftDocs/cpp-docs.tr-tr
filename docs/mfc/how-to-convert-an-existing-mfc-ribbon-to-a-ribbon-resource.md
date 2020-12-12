@@ -1,16 +1,17 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: nasıl yapılır: varolan bir MFC şeridini şerit kaynağına dönüştürme'
 title: 'Nasıl yapılır: Varolan Bir MFC Şeridini Şerit Kaynağına Dönüştürme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ribbon resource, converting from an MFC ribbon
 - MFC ribbon, converting to a ribbon resource
 ms.assetid: 324b7ff6-58f9-4691-96a9-9836a79d0fb6
-ms.openlocfilehash: 56f36c977453d338b9e9bbd2462c1a8830ffe258
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 825b8b4e3322afd8919ffad0f5e0f73c9d52be78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620072"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290290"
 ---
 # <a name="how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource"></a>Nasıl yapılır: Varolan Bir MFC Şeridini Şerit Kaynağına Dönüştürme
 
@@ -28,13 +29,13 @@ MFC şerit sınıflarını kullanan kodu olan, örneğin [CMFCRibbonBar sınıf�
 
    Dosyayı kaydedin ve kapatın.
 
-1. MFC uygulamasını derleyin ve çalıştırın, ardından not defteri 'nde RibbonOutput. txt dosyasını açın ve içeriğini kopyalayın.
+1. MFC uygulamasını derleyin ve çalıştırın, sonra Not defteri 'nde RibbonOutput.txt açın ve içeriğini kopyalayın.
 
 1. Visual Studio 'da, **Proje** menüsünde **Kaynak Ekle**' ye tıklayın. **Kaynak Ekle** iletişim kutusunda, **Şerit** ' i seçin ve ardından **Yeni**' ye tıklayın.
 
-   Visual Studio bir şerit kaynağı oluşturur ve Tasarım görünümünde açar. Şerit kaynak KIMLIĞI IDR_RIBBON1 **kaynak görünümü**görüntülenir. Şerit, Ribbon1. mfcribbon-ms XML dosyasında tanımlanmıştır.
+   Visual Studio bir şerit kaynağı oluşturur ve Tasarım görünümünde açar. Şerit kaynak KIMLIĞI IDR_RIBBON1 **kaynak görünümü** görüntülenir. Şerit, Ribbon1. mfcribbon-ms XML dosyasında tanımlanmıştır.
 
-1. Visual Studio 'da, Ribbon1. mfcribbon-ms dosyasını açın, içeriğini silin ve ardından daha önce kopyaladığınız RibbonOutput. txt içeriğini yapıştırın. Ribbon1. mfcribbon-ms ' i kaydedin ve kapatın.
+1. Visual Studio 'da, Ribbon1. mfcribbon-ms ' i açın, içeriğini silin ve ardından daha önce kopyaladığınız RibbonOutput.txt içeriğini yapıştırın. Ribbon1. mfcribbon-ms ' i kaydedin ve kapatın.
 
 1. Ardından, CMFCRibbonBar nesnesinin başlatıldığı kaynak dosyayı açın (genellikle, MainFrm. cpp) ve varolan Şerit kodunu açıklama olarak ekleyin. Yorum yaptığınız koddan sonra aşağıdaki kodu ekleyin.
 

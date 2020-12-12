@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: propget'
 title: propget (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - propget attribute
 ms.assetid: c9d4a97f-36dd-4b61-8eb0-b1a217598f14
-ms.openlocfilehash: 2627213d1d1dc74edb33d70ac45f3b7bbd38ba6b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9fe284fb35d4753fbc3e124458200a9882838450
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839978"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327404"
 ---
 # <a name="propget"></a>propget
 
@@ -36,7 +37,7 @@ Bir özellik erişimcisi işlevi belirtir.
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Yöntem|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|`propput`, `propputref`|
 

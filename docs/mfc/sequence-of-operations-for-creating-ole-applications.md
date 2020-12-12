@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE uygulamaları oluşturmak için Işlem dizisi'
 title: OLE Uygulamaları Oluşturmak için İşlem Dizisi
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,28 +8,28 @@ helpviewer_keywords:
 - applications [OLE], creating
 - applications [OLE]
 ms.assetid: 84b0f606-36c1-4253-9cea-44427f0074b9
-ms.openlocfilehash: b7fa989d1a3b799cf6b427e27142d4479be900bf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2bce49d569c6d3def536cbe9386cafbe08ccdbfb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97217568"
 ---
 # <a name="sequence-of-operations-for-creating-ole-applications"></a>OLE Uygulamaları Oluşturmak için İşlem Dizisi
 
-Aşağıdaki tabloda, OLE bağlama ve katıştırma uygulamalar oluştururken, rol ve framework'ün rol gösterir. Bunlar gerçekleştirmek için seçenekleri yerine bir dizi adım temsil eder.
+Aşağıdaki tabloda, OLE bağlama ve ekleme uygulamaları oluşturma bölümünde rolünüzün ve Framework 'ün rolü gösterilmektedir. Bunlar, gerçekleştirilecek adımlar dizisi yerine kullanılabilir seçenekleri temsil eder.
 
 ### <a name="creating-ole-applications"></a>OLE uygulamaları oluşturma
 
-|Görev|Bunu|Framework yok|
+|Görev|Bunu yaptığınızda|Çerçeve|
 |----------|------------|------------------------|
-|Bir COM bileşeni oluşturma.|MFC Uygulama Sihirbazı'nı çalıştırın. Seçin **tam sunucu** veya **Mini sunucu** içinde **bileşik belge desteği** sekmesi.|Framework COM bileşeni özelliği etkin bir çatı uygulaması oluşturur. Tüm COM yeteneğinin mevcut uygulamanıza yalnızca düğümündedir aktarılabilir.|
-|Sıfırdan bir kapsayıcı uygulaması oluşturma.|MFC Uygulama Sihirbazı'nı çalıştırın. Seçin **kapsayıcı** içinde **bileşik belge desteği** sekmesi. Sınıf görünümü kullanarak, kaynak kod düzenleyicisine gidin. Kod, COM işleyici işlevleri için doldurun.|Framework COM bileşeni (sunucu) uygulamaları tarafından oluşturulan COM nesnelerini eklemek için iskelet bir uygulama oluşturur.|
-|Otomasyon sıfırdan destekleyen bir uygulama oluşturun.|MFC Uygulama Sihirbazı'nı çalıştırın. Seçin **Otomasyon** gelen **Gelişmiş Özellikler** sekmesi. Sınıf Görünümü, yöntemleri ve uygulamanız için Otomasyon özelliklerini göstermek için kullanın.|Framework etkinleştirilir ve diğer uygulamalar tarafından otomatik bir çatı uygulaması oluşturur.|
+|COM bileşeni oluşturun.|MFC Uygulama Sihirbazı 'Nı çalıştırın. **Birleşik belge desteği** sekmesinde **tam sunucu** veya **mini sunucu** ' yı seçin.|Framework, COM bileşeni özelliği etkinleştirilmiş bir iskelet uygulaması oluşturur. Tüm COM özellikleri, yalnızca hafif değişikliklerle mevcut uygulamanıza aktarılabilir.|
+|Sıfırdan bir kapsayıcı uygulaması oluşturun.|MFC Uygulama Sihirbazı 'Nı çalıştırın. **Birleşik belge desteği** sekmesinde **kapsayıcı** ' yı seçin. sınıf görünümü kullanarak kaynak kodu düzenleyicisine gidin. COM işleyici işlevleriniz için kod girin.|Çerçeve, COM bileşeni (sunucu) uygulamaları tarafından oluşturulan COM nesneleri ekleyebilen bir çatı uygulaması oluşturur.|
+|Sıfırdan Otomasyon destekleyen bir uygulama oluşturun.|MFC Uygulama Sihirbazı 'Nı çalıştırın. **Gelişmiş Özellikler** sekmesinden **Otomasyon** ' ı seçin. Otomasyon için uygulamanızdaki yöntemleri ve özellikleri göstermek için sınıf görünümü kullanın.|Çerçeve, diğer uygulamalar tarafından etkinleştirilebilen ve Otomatikleştirilen bir iskelet uygulaması oluşturur.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'te Derleme](../mfc/building-on-the-framework.md)<br/>
-[MFC Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
-[ActiveX Denetimleri Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)<br/>
-[Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)
+[Çerçevede derleme](../mfc/building-on-the-framework.md)<br/>
+[MFC uygulamaları oluşturmak için Işlem dizisi](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
+[ActiveX denetimleri oluşturmak için Işlem dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)<br/>
+[Veritabanı uygulamaları oluşturmak için Işlem dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)

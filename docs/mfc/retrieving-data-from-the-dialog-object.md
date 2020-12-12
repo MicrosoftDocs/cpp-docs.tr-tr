@@ -1,5 +1,6 @@
 ---
-title: Iletişim nesnesinden verileri alma
+description: 'Hakkında daha fazla bilgi edinin: Iletişim nesnesinden veri alma'
+title: İletişim Nesnesinden Veriyi Geri Alma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - dialog boxes [MFC], retrieving user data
@@ -21,16 +22,16 @@ helpviewer_keywords:
 - DDX (dialog data exchange) [MFC], retrieving data from Dialog object
 - GetWindowText method [MFC]
 ms.assetid: bdca2b61-6b53-4c2e-b426-8712c7a38ec0
-ms.openlocfilehash: 903d76a1e672d05a3c093e528f7153562df8e3e5
-ms.sourcegitcommit: 1e6386be9084f70def7b3b8b4bab319a117102b2
+ms.openlocfilehash: 823006b7b892c8e6476d007eb5cc13fb1386458e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71685574"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218049"
 ---
-# <a name="retrieving-data-from-the-dialog-object"></a>Iletişim nesnesinden verileri alma
+# <a name="retrieving-data-from-the-dialog-object"></a>İletişim Nesnesinden Veriyi Geri Alma
 
-Framework, bir iletişim kutusundaki denetim değerlerini başlatmanın ve denetimlerden değerleri almak için kolay bir yol sağlar. Daha fazla laborious el ile yaklaşımı, denetim pencereleri için uygulanan `CWnd` sınıfının `SetDlgItemText` ve `GetDlgItemText` üye işlevleri gibi işlevleri çağırmalıdır. Bu işlevlerle, her denetime, `SetWindowText` ve `GetWindowText` gibi işlevleri çağırarak, değerini ayarlamak veya almak için tek tek erişirsiniz. Çerçevenin yaklaşımı, başlatma ve almayı otomatikleştirir.
+Framework, bir iletişim kutusundaki denetim değerlerini başlatmanın ve denetimlerden değerleri almak için kolay bir yol sağlar. Daha laborious el ile yapılan yaklaşım, `SetDlgItemText` ve `GetDlgItemText` `CWnd` denetim pencereleri için uygulanan sınıfının ve üye işlevleri gibi işlevleri çağırmalıdır. Bu işlevlerle, ve gibi işlevleri çağırarak, her denetime tek tek erişin veya değerini alır `SetWindowText` `GetWindowText` . Çerçevenin yaklaşımı, başlatma ve almayı otomatikleştirir.
 
 İletişim kutusu veri değişimi (DDX), iletişim kutusundaki denetimler ve iletişim kutusu nesnesindeki üye değişkenleri arasında daha kolay veri alışverişi yapmanızı sağlar. Bu değişim her iki şekilde de çalışmaktadır. İletişim kutusundaki denetimleri başlatmak için, iletişim kutusu nesnesindeki veri üyelerinin değerlerini ayarlayabilirsiniz ve çerçeve, iletişim kutusu görüntülenmeden önce değerleri denetimlere aktarır. Ardından, iletişim kutusu veri üyelerini Kullanıcı tarafından girilen verilerle güncelleştirebilirsiniz. Bu noktada, veri üyesi değişkenlerine başvurarak verileri kullanabilirsiniz.
 
@@ -38,8 +39,8 @@ Framework, bir iletişim kutusundaki denetim değerlerini başlatmanın ve denet
 
 DDX ve DDV [Iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)konusunda daha ayrıntılı olarak açıklanmıştır.
 
-Kalıcı bir iletişim kutusu için, `DoModal` ' ı döndürdüğünde, ancak iletişim kutusu nesnesi yok edildiğinde kullanıcı tarafından girilen tüm verileri alabilirsiniz. Kalıcı olmayan iletişim kutusu için, **doğru** bağımsız değişkenle `UpdateData` ' ı çağırarak ve ardından iletişim kutusu sınıfı üye değişkenlerine erişerek, iletişim kutusu nesnesinden veri alabilirsiniz. Bu konu, [Iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)konusunda daha ayrıntılı olarak ele alınmıştır.
+Kalıcı bir iletişim kutusu için, Kullanıcı tarafından girilen, ancak iletişim kutusu nesnesi yok edileceği zaman bir veri alabilirsiniz `DoModal` . Kalıcı olmayan iletişim kutusu için, `UpdateData` **true** bağımsız değişkeniyle çağırarak ve ardından iletişim kutusu sınıfı üye değişkenlerine erişerek iletişim kutusu nesnesinden veri alabilirsiniz. Bu konu, [Iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)konusunda daha ayrıntılı olarak ele alınmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC 'de Iletişim kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)
+[MFC’de İletişim Kutularıyla çalışma](../mfc/life-cycle-of-a-dialog-box.md)

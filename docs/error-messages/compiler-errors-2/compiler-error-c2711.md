@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2711'
 title: Derleyici hatası C2711
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2711
 ms.assetid: 9df9f808-7419-4e63-abdd-e6538ff0871f
-ms.openlocfilehash: 65612e4a7d19295a8fa49576fb1d72c852a76b82
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 19c55327b4d2726f679494bba1de188537f6e094
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320850"
 ---
 # <a name="compiler-error-c2711"></a>Derleyici hatası C2711
 

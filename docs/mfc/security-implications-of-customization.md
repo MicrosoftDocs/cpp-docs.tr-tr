@@ -1,36 +1,37 @@
 ---
+description: 'Daha fazla bilgi edinin: özelleştirmenin güvenlik etkileri'
 title: Özelleştirmenin Güvenlikle İlgili Etkileri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - security, MFC Feature Pack
 - MFC Feature Pack, security
 ms.assetid: 9be96b12-be38-43bd-a133-5d671265f7a1
-ms.openlocfilehash: 9164983a6634e069195f3498bea56b595a2a2381
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 64a1029dd3486e3cd653f5e692aa1a14ba6f82b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97217763"
 ---
 # <a name="security-implications-of-customization"></a>Özelleştirmenin Güvenlikle İlgili Etkileri
 
-Bu konu, olası bir güvenlik açığına MFC'de açıklar.
+Bu konu, MFC 'de olası bir güvenlik zayıflığından bahseder.
 
-## <a name="potential-security-weakness"></a>Olası güvenlik açıklarına neden olabileceği
+## <a name="potential-security-weakness"></a>Olası güvenlik zayıflıkları
 
-MFC sağlayan kullanıcı bir uygulama kullanıcı arabirimi, örneğin, düğmeler ve simgeler görünümünü görünümünü özelleştirebilirsiniz. MFC Kabuk komutları yürütmek kullanıcının olanak sağlayan kullanıcı tanımlı araçlar da destekler. Bir güvenlik açığı özelleştirilmiş uygulamanın kayıt defteri kullanıcı profiline kaydedilir doğurur. Kayıt defteri erişebilen herkesin bu ayarları düzenleyebilir ve uygulama görünümünü veya davranışını değiştirin. Örneğin, bilgisayarda yönetici kullanıcının uygulama rasgele programlar (bile bir ağ paylaşımından) yürütmek neden olarak bir kullanıcının kimliğine bürünme.
+MFC, kullanıcının bir uygulama kullanıcı arabiriminin görünüşünü (örneğin, düğmelerin ve simgelerin görünümü) özelleştirmesini sağlar. MFC Ayrıca Kullanıcı tanımlı araçları destekler, bu da kullanıcının kabuk komutlarını yürütmesine izin verir. Uygulamanın özelleştirilmiş ayarları kayıt defterindeki Kullanıcı profiline kaydedildiğinden, bir güvenlik açığı ortaya çıkar. Kayıt defterine erişebilen herkes bu ayarları düzenleyebilir ve uygulama görünümünü veya davranışını değiştirebilir. Örneğin, bilgisayardaki bir yönetici, kullanıcının uygulamasına rastgele programlar (bir ağ paylaşımından bile) yürütmesine neden olarak bir kullanıcının kimliğine bürünebilir.
 
 ## <a name="workarounds"></a>Geçici Çözümler
 
-Kayıt defteri güvenlik açıklarını kapatmak için bu üç yoldan herhangi birini öneririz:
+Kayıt defterindeki güvenlik açıklarını kapatmak için bu üç yolu öneririz:
 
-- Burada depolanan verileri şifrele
+- Orada depolanan verileri şifreleyin
 
-- Kayıt defteri güvenli dosyasında yerine data Store.
+- Verileri kayıt defteri yerine güvenli bir dosyada depolayın.
 
-   Bu ilk iki yoldan birini gerçekleştirmek için öğesinden bir sınıf türetin [CSettingsStore sınıfı](../mfc/reference/csettingsstore-class.md) ve şifreleme veya kayıt defteri dışında depolama uygulamak için kendi yöntemleri geçersiz kılın.
+   Bu ilk iki yöntemden birini gerçekleştirmek için [Csettingsstorage sınıfından](../mfc/reference/csettingsstore-class.md) bir sınıf türetirsiniz ve kayıt defteri dışında şifreleme veya depolama uygulamak için yöntemlerini geçersiz kılın.
 
-- Özelleştirmeleri uygulamanızda da devre dışı bırakabilirsiniz.
+- Ayrıca, uygulamanızdaki özelleştirmeleri devre dışı bırakabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

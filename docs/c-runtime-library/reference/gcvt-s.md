@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _gcvt_s'
 title: _gcvt_s
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
-ms.openlocfilehash: 83e34bffbe62bf07d2d3f9f649d12607b0e08be7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f96822920430122a56d8503b99cc0b881d9f06be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919420"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341535"
 ---
 # <a name="_gcvt_s"></a>_gcvt_s
 
@@ -70,7 +71,7 @@ Dönüştürmenin sonucunu depolayan arabellek.
 *sizeInBytes*<br/>
 Arabelleğin boyutu.
 
-*deeri*<br/>
+*değer*<br/>
 Dönüştürülecek değer.
 
 *rakamlar*<br/>
@@ -82,19 +83,19 @@ Başarılıysa sıfır. Geçersiz bir parametre nedeniyle hata oluşursa (geçer
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*arabelleğin*|*sizeInBytes*|*deeri*|*rakamlar*|Döndürülmesini|*Arabellekteki* değer|
+|*arabelleğin*|*sizeInBytes*|*değer*|*rakamlar*|Döndürülmesini|*Arabellekteki* değer|
 |--------------|-------------------|-------------|--------------|------------|-----------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
-|**Null** değil (geçerli belleğe işaret eder)|sıfır|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi.|
-|**Null** değil (geçerli belleğe işaret eder)|kaydedilmemiş|kaydedilmemiş|>= *sizeInBytes*|**EıNVAL**|Değiştirilmedi.|
+|**DEĞER**|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|sıfır|herhangi biri|herhangi biri|**EıNVAL**|Değiştirilmedi.|
+|**Null** değil (geçerli belleğe işaret eder)|herhangi biri|herhangi biri|>= *sizeInBytes*|**EıNVAL**|Değiştirilmedi.|
 
 **Güvenlik sorunları**
 
-*arabellek* geçerli belleğe işaret etmezse ve **NULL**değilse, **_gcvt_s** erişim ihlali oluşturabilir.
+*arabellek* geçerli belleğe işaret etmezse ve **NULL** değilse, **_gcvt_s** erişim ihlali oluşturabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Gcvt_s** işlevi bir kayan nokta *değerini* bir karakter dizesine (bir ondalık noktası ve olası bir işaret baytı içerir) dönüştürür ve dizeyi *arabelleğe*depolar. *arabellek* , dönüştürülmüş değere ve otomatik olarak eklenen bir Sonlandırıcı null karaktere yetecek kadar büyük olmalıdır. Bir arabellek uzunluğu **_CVTBUFSIZE** herhangi bir kayan nokta değeri için yeterlidir. Bir arabellek *boyutu + 1* kullanılırsa, işlev arabelleğin sonunun üzerine yazmaz, bu nedenle bu işlem için yeterli bir arabellek girdiğinizden emin olun. **_gcvt_s** ondalık biçimde *basamak* rakamları üretmeye çalışır. Yapamazsa, *sayı* rakamlarını üstel biçimde üretir. Sondaki sıfırlar dönüşümde gizlenebilir.
+**_Gcvt_s** işlevi bir kayan nokta *değerini* bir karakter dizesine (bir ondalık noktası ve olası bir işaret baytı içerir) dönüştürür ve dizeyi *arabelleğe* depolar. *arabellek* , dönüştürülmüş değere ve otomatik olarak eklenen bir Sonlandırıcı null karaktere yetecek kadar büyük olmalıdır. Bir arabellek uzunluğu **_CVTBUFSIZE** herhangi bir kayan nokta değeri için yeterlidir. Bir arabellek *boyutu + 1* kullanılırsa, işlev arabelleğin sonunun üzerine yazmaz, bu nedenle bu işlem için yeterli bir arabellek girdiğinizden emin olun. **_gcvt_s** ondalık biçimde *basamak* rakamları üretmeye çalışır. Yapamazsa, *sayı* rakamlarını üstel biçimde üretir. Sondaki sıfırlar dönüşümde gizlenebilir.
 
 C++ ' da, bu işlevin kullanılması bir şablon aşırı yüklemesiyle basitleştirilmiştir; aşırı yükleme, arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -106,7 +107,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_gcvt_s**|\<Stdlib. h>|\<hata. h>|
+|**_gcvt_s**|\<stdlib.h>|\<error.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -144,7 +145,7 @@ Converted value: 1.2
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
 [_ecvt_s](ecvt-s.md)<br/>
 [_fcvt_s](fcvt-s.md)<br/>

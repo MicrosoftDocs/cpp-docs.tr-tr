@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4460'
 title: Derleyici Uyarısı (düzey 4) C4460
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4460
 ms.assetid: c97ac1c9-598d-479e-bfff-c993690c4f3d
-ms.openlocfilehash: 1b4ec02211dc346c1672b403bf8af16dc6fca461
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 68f38ad1ad65b27f35b79495bb2edd930c25d732
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990803"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334832"
 ---
 # <a name="compiler-warning-level-4-c4460"></a>Derleyici Uyarısı (düzey 4) C4460
 
-WinRT veya CLR işleci ' operator ', başvuruya göre geçti parametresi içeriyor. WinRT veya CLR işleci ' operator ', ' operator ' C++ işlecinden farklı semantiğe sahip, değere göre geçiş yapmak mı istiyordunuz?
+WinRT veya CLR işleci ' operator ', başvuruya göre geçti parametresi içeriyor. ' Operator ' WinRT veya CLR işleci ' operator ' C++ işlecinden farklı semantiğe sahip, değere göre geçiş yapmak mı istiyordunuz?
 
-Bir değeri Kullanıcı tanımlı Windows Çalışma Zamanı veya CLR işlecine başvuruya göre geçirtiniz. Değer, işlev içinde değiştirilirse, işlev çağrısından sonra döndürülen değere işlevin dönüş değeri atanır. Standart C++olarak, değiştirilen değer işlev çağrısından sonra yansıtılır.
+Bir değeri Kullanıcı tanımlı Windows Çalışma Zamanı veya CLR işlecine başvuruya göre geçirtiniz. Değer, işlev içinde değiştirilirse, işlev çağrısından sonra döndürülen değere işlevin dönüş değeri atanır. Standart C++ ' da, değiştirilen değer işlev çağrısından sonra yansıtılır.
 
 ## <a name="example"></a>Örnek
 

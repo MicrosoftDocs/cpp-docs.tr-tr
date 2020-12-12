@@ -1,4 +1,5 @@
 ---
+description: ': Erişimciler ve satır kümeleri hakkında daha fazla bilgi'
 title: Erişimciler ve Satır Kümeleri
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - accessors [C++], rowsets
 - rowsets [C++], supported types
 ms.assetid: edc9c8b3-1a2d-4c2d-869f-7e058c631042
-ms.openlocfilehash: 45180b3ac2647c9f4f5d25a1322794552bd79004
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5bda7957f808319de596edf51b6cb3e378c14254
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212387"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246116"
 ---
 # <a name="accessors-and-rowsets"></a>Erişimciler ve Satır Kümeleri
 
@@ -37,13 +38,13 @@ Aşağıdaki şekilde erişimci türleri gösterilmektedir.
 ![Erişimci türleri](../../data/oledb/media/vcaccessortypes.gif "Erişimci türleri")<br/>
 Erişimci sınıfları
 
-- [CAccessor](../../data/oledb/caccessor-class.md) Tasarım zamanında veritabanı kaynağının yapısını bildiğiniz zaman bu erişimciyi kullanın. `CAccessor`, arabelleği içeren bir veritabanı kaydını veri kaynağına statik olarak bağlar.
+- [CAccessor](../../data/oledb/caccessor-class.md) Tasarım zamanında veritabanı kaynağının yapısını bildiğiniz zaman bu erişimciyi kullanın. `CAccessor` , arabelleği içeren bir veritabanı kaydını veri kaynağına statik olarak bağlar.
 
-- [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) Tasarım zamanında veritabanının yapısını bilmiyorsanız bu erişimciyi kullanın. veritabanı sütun bilgilerini almak için `IColumnsInfo::GetColumnInfo` `CDynamicAccessor` çağırır. Bir erişimcisi ve arabelleği oluşturur ve yönetir.
+- [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) Tasarım zamanında veritabanının yapısını bilmiyorsanız bu erişimciyi kullanın. `CDynamicAccessor``IColumnsInfo::GetColumnInfo`veritabanı sütun bilgilerini almak için çağırır. Bir erişimcisi ve arabelleği oluşturur ve yönetir.
 
-- [CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) Bilinmeyen komut türlerini işlemek için bu erişimciyi kullanın. Komutları hazırlarken `CDynamicParameterAccessor`, sağlayıcı `ICommandWithParameters`destekliyorsa, `ICommandWithParameters` arabiriminden parametre bilgilerini alabilir.
+- [CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) Bilinmeyen komut türlerini işlemek için bu erişimciyi kullanın. Komutları hazırlarken, `CDynamicParameterAccessor` `ICommandWithParameters` sağlayıcı destekliyorsa, arabirimden parametre bilgilerini alabilir `ICommandWithParameters` .
 
-- [CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md), [CDynamicStringAccessorA](../../data/oledb/cdynamicstringaccessora-class.md)ve [CDynamicStringAccessorW](../../data/oledb/cdynamicstringaccessorw-class.md) veritabanı şeması hakkında bilginiz olmadığında bu sınıfları kullanın. `CDynamicStringAccessorA`, verileri ANSI dizeleri olarak alır; `CDynamicStringAccessorW` verileri Unicode dizeleri olarak alır.
+- [CDynamicStringAccessor](../../data/oledb/cdynamicstringaccessor-class.md), [CDynamicStringAccessorA](../../data/oledb/cdynamicstringaccessora-class.md)ve [CDynamicStringAccessorW](../../data/oledb/cdynamicstringaccessorw-class.md) veritabanı şeması hakkında bilginiz olmadığında bu sınıfları kullanın. `CDynamicStringAccessorA` verileri ANSI dizeleri olarak alır; `CDynamicStringAccessorW` verileri Unicode dizeleri olarak alır.
 
 - [CManualAccessor](../../data/oledb/cmanualaccessor-class.md) Bu sınıfla, sağlayıcı türü dönüştürebiliyorsanız istediğiniz veri türlerini kullanabilirsiniz. Hem sonuç sütunlarını hem de komut parametrelerini işler.
 
@@ -51,15 +52,15 @@ Aşağıdaki tabloda OLE DB şablonu erişimci türlerindeki destek özetlenmekt
 
 |Erişimci türü|Dinamik|Parametreleri işler|Buffer|Birden çok erişimci|
 |-------------------|-------------|--------------------|------------|------------------------|
-|`CAccessor`|Hayır|Yes|Kullanıcı|Yes|
-|`CDynamicAccessor`|Yes|Hayır|OLE DB Şablonları|Hayır|
-|`CDynamicParameterAccessor`|Yes|Yes|OLE DB Şablonları|Hayır|
-|`CDynamicStringAccessor[A,W]`|Yes|Hayır|OLE DB Şablonları|Hayır|
-|`CManualAccessor`|Yes|Yes|Kullanıcı|Yes|
+|`CAccessor`|Hayır|Evet|Kullanıcı|Evet|
+|`CDynamicAccessor`|Evet|Hayır|OLE DB Şablonları|Hayır|
+|`CDynamicParameterAccessor`|Evet|Evet|OLE DB Şablonları|Hayır|
+|`CDynamicStringAccessor[A,W]`|Evet|Hayır|OLE DB Şablonları|Hayır|
+|`CManualAccessor`|Evet|Evet|Kullanıcı|Evet|
 
 ## <a name="rowset-types"></a>Satır kümesi türleri
 
-OLE DB şablonları üç tür satır kümesini destekler (önceki şekle bakın): tek satır kümeleri ( [CRowset](../../data/oledb/crowset-class.md)tarafından uygulanan), toplu satır kümeleri ( [CBulkRowset](../../data/oledb/cbulkrowset-class.md)tarafından uygulanır) ve dizi satır kümeleri ( [CArrayRowset](../../data/oledb/carrayrowset-class.md)tarafından uygulanır). Tek satır kümeleri `MoveNext` çağrıldığında tek bir satır tutamacı getirir. Toplu satır kümeleri, birden çok satır tanıtıcısı getirebilir. Dizi satır kümeleri, dizi sözdizimi kullanılarak erişilebilen satır kümeleridir.
+OLE DB şablonları üç tür satır kümesini destekler (önceki şekle bakın): tek satır kümeleri ( [CRowset](../../data/oledb/crowset-class.md)tarafından uygulanan), toplu satır kümeleri ( [CBulkRowset](../../data/oledb/cbulkrowset-class.md)tarafından uygulanır) ve dizi satır kümeleri ( [CArrayRowset](../../data/oledb/carrayrowset-class.md)tarafından uygulanır). Tek satır kümeleri çağrıldığında tek bir satır tutamacı getirir `MoveNext` . Toplu satır kümeleri, birden çok satır tanıtıcısı getirebilir. Dizi satır kümeleri, dizi sözdizimi kullanılarak erişilebilen satır kümeleridir.
 
 Aşağıdaki şekilde satır kümesi türleri gösterilmektedir.
 

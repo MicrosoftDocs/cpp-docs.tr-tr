@@ -1,5 +1,6 @@
 ---
-title: CrecentFileList Sınıfı
+description: 'Daha fazla bilgi edinin: CRecentFileList sınıfı'
+title: CRecentFileList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CRecentFileList
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - CRecentFileList [MFC], UpdateMenu
 - CRecentFileList [MFC], WriteList
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
-ms.openlocfilehash: a2102c6a39c14c548828e57ad1c49de6a5bc03dd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9433e65336cba1018c7bff8cf3a90e239ae5e3eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370902"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301132"
 ---
-# <a name="crecentfilelist-class"></a>CrecentFileList Sınıfı
+# <a name="crecentfilelist-class"></a>CRecentFileList sınıfı
 
 En son kullanılan (MRU) dosya listesinin denetimini destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CRecentFileList
@@ -43,31 +44,31 @@ class CRecentFileList
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CrecentFileList::CrecentFileList](#crecentfilelist)|Bir `CRecentFileList` nesne inşa eder.|
+|[CRecentFileList:: CRecentFileList](#crecentfilelist)|Bir `CRecentFileList` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRecentFileList::Ekle](#add)|MRU dosya listesine bir dosya ekler.|
-|[CRecentFileList::GetDisplayName](#getdisplayname)|MRU dosya adının menü ekranı için bir görüntü adı sağlar.|
-|[CRecentFileList::GetSize](#getsize)|MRU dosya listesindeki dosya sayısını alır.|
-|[CRecentFileList::ReadList](#readlist)|MRU dosya listesini kayıt defterinden okur veya . INI dosyası.|
-|[CRecentFileList::Kaldır](#remove)|MRU dosya listesinden bir dosya kaldırır.|
-|[CRecentFileList::UpdateMenu](#updatemenu)|MRU dosya listesinin menü ekranını güncelleştirir.|
-|[CRecentFileList::WriteList](#writelist)|MrU dosya listesini kayıt defterinden yazar veya . INI dosyası.|
+|[CRecentFileList:: Add](#add)|MRU dosya listesine bir dosya ekler.|
+|[CRecentFileList:: GetDisplayName](#getdisplayname)|MRU Dosya adının menü görüntülemesi için bir görünen ad sağlar.|
+|[CRecentFileList:: GetSize](#getsize)|MRU dosya listesindeki dosya sayısını alır.|
+|[CRecentFileList:: ReadList](#readlist)|Kayıt defterinden veya bir MRU dosya listesini okur. INı dosyası.|
+|[CRecentFileList:: Remove](#remove)|MRU dosya listesinden bir dosyayı kaldırır.|
+|[CRecentFileList:: UpdateMenu](#updatemenu)|MRU dosya listesinin menü görüntüsünü güncelleştirir.|
+|[CRecentFileList:: WriteList](#writelist)|MRU dosya listesini kayıt defterinden veya konumundan yazar. INı dosyası.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRecentFileList::operatör \[\]](#operator_at)|Belirli `CString` bir konumda bir nesne döndürür.|
+|[CRecentFileList:: işleci \[\]](#operator_at)|`CString`Verilen konumdaki bir nesne döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dosyalar MRU dosya listesine eklenebilir veya silinebilir, dosya listesi kayıt defterinden okunabilir veya kayıt defterine yazılabilir. INI dosyası ve MRU dosya listesini görüntüleyen menü güncellenebilir.
+Dosyalar, MRU dosya listesine eklenebilir veya silinebilir, dosya listesi, kayıt defterinden veya bir ile okunabilir veya yazılabilir. INı dosyası ve MRU dosya listesini görüntüleyen menü de güncelleştirilemeyebilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -75,9 +76,9 @@ Dosyalar MRU dosya listesine eklenebilir veya silinebilir, dosya listesi kayıt 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxadv.h
+**Üstbilgi:** afxadv. h
 
-## <a name="crecentfilelistadd"></a><a name="add"></a>CRecentFileList::Ekle
+## <a name="crecentfilelistadd"></a><a name="add"></a> CRecentFileList:: Add
 
 En son kullanılan (MRU) dosya listesine bir dosya ekler.
 
@@ -107,24 +108,24 @@ void Add(
 Listeye eklenecek yol adını belirtir.
 
 *lpszAppID*<br/>
-Uygulama için Uygulama Kullanıcı Modeli Kimliğini belirtir.
+Uygulamanın uygulama kullanıcı modeli KIMLIĞINI belirtir.
 
 *pItem*<br/>
-Listeye eklenecek Shell Öğesi için bir işaretçi belirtir.
+Listeye eklenecek kabuk öğesine yönelik bir işaretçi belirtir.
 
-*pLink*<br/>
-Listeye eklenecek Shell Bağlantısı işaretçisini belirtir.
+*Plınk*<br/>
+Listeye eklenecek bir kabuk bağlantısı işaretçisi belirtir.
 
 *pidl*<br/>
-Son dokümanlar klasörüne eklenmesi gereken kabuk öğesi için IDLIST'i belirtir.
+Son Belgeler klasörüne eklenmesi gereken kabuk öğesi için ıDLIST öğesini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Dosya adı MRU listesinin en üstüne eklenir. Dosya adı MRU listesinde zaten varsa, en üste taşınır.
 
-## <a name="crecentfilelistcrecentfilelist"></a><a name="crecentfilelist"></a>CrecentFileList::CrecentFileList
+## <a name="crecentfilelistcrecentfilelist"></a><a name="crecentfilelist"></a> CRecentFileList:: CRecentFileList
 
-Bir `CRecentFileList` nesne inşa eder.
+Bir `CRecentFileList` nesnesi oluşturur.
 
 ```
 CRecentFileList(
@@ -137,28 +138,28 @@ CRecentFileList(
 
 ### <a name="parameters"></a>Parametreler
 
-*nBaşlat*<br/>
-MRU (en son kullanılan) dosya listesinin menü ekranındaki numaralandırma için ofset.
+*nBaşlangıç*<br/>
+MRU (en son kullanılan) dosya listesinin menü görüntüsüne ait numaralandırmanın boşluğu.
 
-*lpszBölüm*<br/>
-Kayıt defterinin veya uygulamanın bölümünün adına işaret eder. MRU dosya listesinin okunduğu ve/veya yazıldığı INI dosyası.
+*lpszSection*<br/>
+Kayıt defterinin veya uygulamanın, bölümünün adını gösterir. MRU dosya listesinin okunduğu ve/veya yazıldığı INI dosyası.
 
 *lpszEntryFormat*<br/>
-Kayıt defterinde veya uygulamanın adlarında kullanılacak biçim dizesini işaret eder. INI dosyası.
+Kayıt defterinde veya uygulamanın içinde depolanan girişlerin adları için kullanılacak bir biçim dizesine işaret eder. INı dosyası.
 
 *nSize*<br/>
-MRU dosya listesindeki maksimum dosya sayısı.
+MRU dosya listesindeki en fazla dosya sayısı.
 
 *nMaxDispLen*<br/>
-MrU dosya listesindeki bir dosya adının menü görüntüsü için kullanılabilir karakterlerde maksimum uzunluk.
+MRU dosya listesindeki bir dosya adının menü görüntüsü için kullanılabilen uzunluk üst sınırı (karakter cinsinden).
 
 ### <a name="remarks"></a>Açıklamalar
 
-*lpszEntryFormat* tarafından işaret edilen biçim dizesi, her MRU öğesinin dizininin yerine kullanılacak "%d" içermelidir. Örneğin, biçim dizesi `"file%d"` ise, girişler `file0` `file1`,, ve benzeri adlanır.
+*LpszEntryFormat* tarafından işaret edilen biçim dizesi, her MRU öğesinin dizinini değiştirme için kullanılacak "% d" içermelidir. Örneğin, biçim dizesi ise, girdiler, vb `"file%d"` . olarak adlandırılır `file0` `file1` .
 
-## <a name="crecentfilelistgetdisplayname"></a><a name="getdisplayname"></a>CRecentFileList::GetDisplayName
+## <a name="crecentfilelistgetdisplayname"></a><a name="getdisplayname"></a> CRecentFileList:: GetDisplayName
 
-MRU dosya listesindeki bir dosyanın görüntü adı, MRU listesinin menü ekranında kullanılmak üzere elde eder.
+MRU listesinin menü görünümü içinde kullanılmak üzere MRU dosya listesindeki bir dosya için bir görünen ad alır.
 
 ```
 virtual BOOL GetDisplayName(
@@ -172,10 +173,10 @@ virtual BOOL GetDisplayName(
 ### <a name="parameters"></a>Parametreler
 
 *strName*<br/>
-MrU dosyalarının menü listesinde adı görüntülenecek olan dosyanın tam yolu.
+Dosya adı, MRU dosyalarının menü listesinde görüntülenecek olan dosyanın tam yolu.
 
-*Nındex*<br/>
-MRU dosya listesindeki dosyanın sıfır tabanlı dizin.
+*nDizin*<br/>
+MRU dosya listesindeki dosyanın sıfır tabanlı dizini.
 
 *lpszCurDir*<br/>
 Geçerli dizini tutan dize.
@@ -184,17 +185,17 @@ Geçerli dizini tutan dize.
 Geçerli dizin dizesinin uzunluğu.
 
 *bAtLeastName*<br/>
-Sıfır değilse, dosyanın temel adının, maksimum ekran uzunluğunu aşsa bile döndürülmesi gerektiğini gösterir `CRecentFileList` (oluşturucuya *nMaxDispLen* parametresi olarak geçirilir).
+Sıfır değilse, en büyük görüntüleme uzunluğunu (oluşturucuya *nMaxDispLen* parametresi olarak geçirilir) aşsa bile, dosyanın temel adının döndürülmesi gerektiğini gösterir `CRecentFileList` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-En son kullanılan (MRU) dosya listesinde belirtilen dizinte dosya adı yoksa **YANLIŞ.**
+En son kullanılanlar (MRU) dosya listesinde belirtilen dizinde dosya adı yoksa **false** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dosya geçerli dizindeyse, işlev dizini ekrandan bırakır. Dosya adı çok uzunsa, dizin ve uzantı çıkarılır. Dosya adı hala çok uzunsa, *bAtLeastName* sıfır olmadığı sürece görüntü adı boş bir dize olarak ayarlanır.
+Dosya geçerli dizinde ise, işlev dizini ekranda bırakır. Dosya adı çok uzunsa dizin ve uzantı çıkarılır. Dosya adı hala çok uzunsa, *bAtLeastName* sıfır dışında bir değer olmadığı sürece görünen ad boş bir dizeye ayarlanır.
 
-## <a name="crecentfilelistgetsize"></a><a name="getsize"></a>CRecentFileList::GetSize
+## <a name="crecentfilelistgetsize"></a><a name="getsize"></a> CRecentFileList:: GetSize
 
 MRU dosya listesindeki dosya sayısını alır.
 
@@ -204,11 +205,11 @@ int GetSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli en son kullanılan (MRU) dosya listesindeki dosya sayısı.
+Geçerli en son kullanılan (MRU) dosya listesindeki dosyaların sayısı.
 
-## <a name="crecentfilelistoperator--"></a><a name="operator_at"></a>CRecentFileList::operator [ ]
+## <a name="crecentfilelistoperator--"></a><a name="operator_at"></a> CRecentFileList:: operator []
 
-Aşırı yüklenen alt`[]`yazı ( ) `CString` işleci *nIndex'te*sıfır tabanlı dizin tarafından belirtilen tek bir döndürür.
+Aşırı yüklenmiş alt simge ( `[]` ) Işleci `CString` *nindex* içindeki sıfır tabanlı dizin tarafından belirtilen tek döndürür.
 
 ```
 CString& operator[ ](int nindex);
@@ -216,20 +217,20 @@ CString& operator[ ](int nindex);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nındex*<br/>
-S kümesindeki bir `CString` indeksin sıfır tabanlı dizin. `CString`
+*nDizin*<br/>
+Bir kümesi içindeki bir öğesinin sıfır tabanlı dizini `CString` `CString` .
 
-## <a name="crecentfilelistreadlist"></a><a name="readlist"></a>CRecentFileList::ReadList
+## <a name="crecentfilelistreadlist"></a><a name="readlist"></a> CRecentFileList:: ReadList
 
-En son kullanılan (MRU) dosya listesini kayıt defterinden veya uygulamanın dosya listesini okur. INI dosyası.
+Kayıt defterinden veya uygulama tarafından kullanılan en son kullanılanlar (MRU) dosya listesini okur. INı dosyası.
 
 ```
 virtual void ReadList();
 ```
 
-## <a name="crecentfilelistremove"></a><a name="remove"></a>CRecentFileList::Kaldır
+## <a name="crecentfilelistremove"></a><a name="remove"></a> CRecentFileList:: Remove
 
-MRU dosya listesinden bir dosya kaldırır.
+MRU dosya listesinden bir dosyayı kaldırır.
 
 ```
 virtual void Remove(int nIndex);
@@ -237,12 +238,12 @@ virtual void Remove(int nIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nındex*<br/>
-En son kullanılan (MRU) dosya listesinden kaldırılacak dosyanın sıfır tabanlı dizin.
+*nDizin*<br/>
+En son kullanılanlar (MRU) dosya listesinden kaldırılacak dosyanın sıfır tabanlı dizini.
 
-## <a name="crecentfilelistupdatemenu"></a><a name="updatemenu"></a>CRecentFileList::UpdateMenu
+## <a name="crecentfilelistupdatemenu"></a><a name="updatemenu"></a> CRecentFileList:: UpdateMenu
 
-MRU dosya listesinin menü ekranını güncelleştirir.
+MRU dosya listesinin menü görüntüsünü güncelleştirir.
 
 ```
 virtual void UpdateMenu(CCmdUI* pCmdUI);
@@ -251,11 +252,11 @@ virtual void UpdateMenu(CCmdUI* pCmdUI);
 ### <a name="parameters"></a>Parametreler
 
 *pCmdUI*<br/>
-En son kullanılan (MRU) dosya listesi menüsü için [CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine bir işaretçi.
+En son kullanılan (MRU) dosya listesi menüsü için [CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine yönelik bir işaretçi.
 
-## <a name="crecentfilelistwritelist"></a><a name="writelist"></a>CRecentFileList::WriteList
+## <a name="crecentfilelistwritelist"></a><a name="writelist"></a> CRecentFileList:: WriteList
 
-En son kullanılan (MRU) dosya listesini kayıt defterine veya uygulamanın . INI dosyası.
+En son kullanılan (MRU) dosya listesini kayıt defterine veya uygulamanın öğesine yazar. INı dosyası.
 
 ```
 virtual void WriteList();
@@ -263,4 +264,4 @@ virtual void WriteList();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

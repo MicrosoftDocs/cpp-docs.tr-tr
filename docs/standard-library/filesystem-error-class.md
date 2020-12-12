@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: filesystem_error sınıfı'
 title: filesystem_error Sınıfı
 ms.date: 09/10/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::filesystem_error
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
-ms.openlocfilehash: 1d142057859f1ca173f8953b34c07bbb3803ecba
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8165bfbc0d59dbbdab17d910e2e2f7973988049d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232440"
 ---
 # <a name="filesystem_error-class"></a>filesystem_error Sınıfı
 
@@ -49,7 +50,7 @@ Sınıfı, işlevlerde hata bildirmek için oluşturulan tüm özel durumlar iç
 
 ## <a name="filesystem_error"></a><a name="filesystem_error"></a> filesystem_error
 
-İlk Oluşturucu, *what_arg* ve *EC*'den mesajını oluşturur. İkinci Oluşturucu Ayrıca, içinde depoladığı *Pval1*öğesinden iletisini oluşturur `mypval1` . Üçüncü Oluşturucu Ayrıca, *Pval1*adresinden, içinde depoladığı `mypval1` ve *Pval2*' den depoladığı iletiyi de oluşturur `mypval2` .
+İlk Oluşturucu, *what_arg* ve *EC*'den mesajını oluşturur. İkinci Oluşturucu Ayrıca, içinde depoladığı *Pval1* öğesinden iletisini oluşturur `mypval1` . Üçüncü Oluşturucu Ayrıca, *Pval1* adresinden, içinde depoladığı `mypval1` ve *Pval2*' den depoladığı iletiyi de oluşturur `mypval2` .
 
 ```cpp
 filesystem_error(const string& what_arg,

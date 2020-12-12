@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2831'
 title: Derleyici hatası C2831
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2831
 ms.assetid: c8c04288-0889-4265-a077-17f94cbcdcc9
-ms.openlocfilehash: d2fa97e4b293d306a7d6ceecd08256c8212f8cb7
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 65fece68763e38de8c5047c66327e0615865fa9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736899"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194507"
 ---
 # <a name="compiler-error-c2831"></a>Derleyici hatası C2831
 
@@ -19,7 +20,7 @@ ms.locfileid: "74736899"
 
 Yalnızca üç operatör Varsayılan parametrelere sahip olabilir:
 
-- [new](../../cpp/new-operator-cpp.md)
+- [Yeni](../../cpp/new-operator-cpp.md)
 
 - Atama =
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _create_locale _wcreate_locale'
 title: _create_locale, _wcreate_locale
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - create_locale function
 - __create_locale function
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
-ms.openlocfilehash: 31bde3d032bdb47d63db5730ba53016de573332c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: feb2fee7befbaf3f798dc36466674eaa4aec55fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912088"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341534"
 ---
 # <a name="_create_locale-_wcreate_locale"></a>_create_locale, _wcreate_locale
 
@@ -72,22 +73,22 @@ Geçerli bir *yerel ayar* ve *kategori* verilirse, **_locale_t** nesne olarak be
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Create_locale** işlevi, çok sayıda CRT işlevinin ( **_l** sonekine sahip işlevler) yerel ayara özgü sürümlerinde kullanılmak üzere belirli bölgeye özgü ayarları temsil eden bir nesne oluşturmanıza olanak sağlar. Bu davranış, belirtilen yerel ayar ayarlarını geçerli ortama uygulamak yerine, **setlocale**ile benzerdir, ancak ayarlar döndürülen bir **_locale_t** yapısına kaydedilir. **_Locale_t** yapısı artık gerekli olmadığında [_free_locale](free-locale.md) kullanılarak serbest bırakılmalıdır.
+**_Create_locale** işlevi, çok sayıda CRT işlevinin ( **_l** sonekine sahip işlevler) yerel ayara özgü sürümlerinde kullanılmak üzere belirli bölgeye özgü ayarları temsil eden bir nesne oluşturmanıza olanak sağlar. Bu davranış, belirtilen yerel ayar ayarlarını geçerli ortama uygulamak yerine, **setlocale** ile benzerdir, ancak ayarlar döndürülen bir **_locale_t** yapısına kaydedilir. **_Locale_t** yapısı artık gerekli olmadığında [_free_locale](free-locale.md) kullanılarak serbest bırakılmalıdır.
 
-**_wcreate_locale** , **_create_locale**geniş karakterli bir sürümüdür; _wcreate_locale *yerel ayar* bağımsız **_wcreate_locale** değişkeni geniş karakterli bir dizedir. **_wcreate_locale** ve **_create_locale** aynı şekilde davranır.
+**_wcreate_locale** , **_create_locale** geniş karakterli bir sürümüdür; _wcreate_locale *yerel ayar* bağımsız  değişkeni geniş karakterli bir dizedir. **_wcreate_locale** ve **_create_locale** aynı şekilde davranır.
 
 *Kategori* bağımsız değişkeni, yerel ayara özgü davranışın etkilenme parçalarını belirtir. *Kategori* için kullanılan bayraklar ve bunların etkilediği programın bölümleri bu tabloda gösterilmiştir:
 
 | *Kategori* bayrağı | Ekranlarını |
 |-----------------|---------|
 | **LC_ALL** |Aşağıda listelendiği gibi tüm kategoriler. |
-| **LC_COLLATE** |**Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**ve **wcsxfrm** işlevleri. |
-| **LC_CTYPE** | Karakter işleme işlevleri (etkilenmeyen **IsDigit**, **ısxdigit**, **mbstowcs**ve **mbtowc**hariç). |
+| **LC_COLLATE** |**Strcoll**, **_stricoll**, **wcscoll**, **_wcsicoll**, **strxfrm**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll** ve **wcsxfrm** işlevleri. |
+| **LC_CTYPE** | Karakter işleme işlevleri (etkilenmeyen **IsDigit**, **ısxdigit**, **mbstowcs** ve **mbtowc** hariç). |
 | **LC_MONETARY** | **Localeconv** işlevi tarafından döndürülen parasal biçimlendirme bilgileri. |
-| **LC_NUMERIC** | Biçimlendirilmiş çıkış yordamları ( **printf**gibi) için, veri dönüştürme yordamları için ve **localeconv**tarafından döndürülen parasal olmayan biçimlendirme bilgileri için ondalık nokta karakteri. Ondalık noktalı karaktere ek olarak **LC_NUMERIC** , binlerce ayırıcıyı ve [localeconv](localeconv.md)tarafından döndürülen gruplama denetimi dizesini ayarlar. |
+| **LC_NUMERIC** | Biçimlendirilmiş çıkış yordamları ( **printf** gibi) için, veri dönüştürme yordamları için ve **localeconv** tarafından döndürülen parasal olmayan biçimlendirme bilgileri için ondalık nokta karakteri. Ondalık noktalı karaktere ek olarak **LC_NUMERIC** , binlerce ayırıcıyı ve [localeconv](localeconv.md)tarafından döndürülen gruplama denetimi dizesini ayarlar. |
 | **LC_TIME** | **Strftime** ve **wcsftime** işlevleri. |
 
-Bu işlev *Kategori* ve *yerel ayar* parametrelerini doğrular. Kategori parametresi önceki tabloda verilen değerlerden biri değilse veya *yerel ayar* **null**ise, işlev **null**değerini döndürür.
+Bu işlev *Kategori* ve *yerel ayar* parametrelerini doğrular. Kategori parametresi önceki tabloda verilen değerlerden biri değilse veya *yerel ayar* **null** ise, işlev **null** değerini döndürür.
 
 *Yerel ayar* bağımsız değişkeni, yerel ayarı belirten bir dizeye yönelik bir işaretçidir. *Yerel ayar* bağımsız değişkeninin biçimi hakkında daha fazla bilgi için bkz. [yerel ayar adları, diller ve ülke/bölge dizeleri](../../c-runtime-library/locale-names-languages-and-country-region-strings.md).
 
@@ -103,8 +104,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_create_locale**|\<locale. h>|
-|**_wcreate_locale**|\<locale. h> veya \<wchar. h>|
+|**_create_locale**|\<locale.h>|
+|**_wcreate_locale**|\<locale.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -186,7 +187,7 @@ In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [_setmbcp](setmbcp.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[strcoll İşlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
+[strcoll Işlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
 [strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
 [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>

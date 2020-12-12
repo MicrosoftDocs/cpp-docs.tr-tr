@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yansıtılan pencere Ileti kimlikleri'
 title: Yansımış Pencere İletisi Kimlikleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -46,24 +47,24 @@ helpviewer_keywords:
 - OCM_NOTIFY message [MFC]
 - reflected messages
 ms.assetid: 3417ff51-ff9f-458c-bff4-17c200f00d96
-ms.openlocfilehash: 6d4ee3483bdfeb88951071bddb748671897a424b
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: ff6151c6f4c79d7086eb16e7fadeac0b75ac531a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754397"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218244"
 ---
 # <a name="reflected-window-message-ids"></a>Yansımış Pencere İletisi Kimlikleri
 
-ActiveX denetimi veya diğer özel denetim oluşturmak için hızlı bir yol, bir pencere alt sınıflamaktır. Daha fazla bilgi için Bkz. [MFC ActiveX Denetimleri: Windows Denetimi'ni alt sınıflandırma.](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)
+Bir ActiveX denetimi veya diğer özelleştirilmiş denetim oluşturmanın hızlı bir yolu, bir pencerenin alt sınıfını oluşturmaktır. Daha fazla bilgi için bkz. [MFC ActiveX denetimleri: altsınıflama a Windows Control](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
 
-Denetimin kapsayıcısının alt sınıflı bir Windows denetimi tarafından gönderilen pencere iletilerini almasını önlemek için [COleControl,](../mfc/reference/colecontrol-class.md) belirli pencere iletilerini engellemek ve denetime geri göndermek için bir "yansıtıcı" penceresi oluşturur. Denetim, penceresinde yordamı, daha sonra activex denetimi için uygun eylemleri gerçekleştirerek bu yansıyan iletileri işleyebilir.
+Denetimin kapsayıcısının, alt sınıf Windows denetimi tarafından gönderilen pencere iletilerini almasını engellemek için, [Copacontrol](../mfc/reference/colecontrol-class.md) bazı pencere iletilerini ele almak ve bunları denetime geri göndermek için bir "yansıtıcı" penceresi oluşturur. Bu denetim, kendi pencere yordamında, ActiveX denetimine uygun eylemleri gerçekleştirerek bu yansıtılan iletileri işleyebilir.
 
-Aşağıdaki tablo, ele geçirilen iletileri ve reflektör penceresinin gönderdiği ilgili iletileri gösterir.
+Aşağıdaki tabloda, kesilen iletiler ve yansıtıcı penceresinin gönderdiği karşılık gelen iletiler gösterilmektedir.
 
-|Denetim tarafından gönderilen ileti|Denetime yansıyan ileti|
+|Denetim tarafından gönderilen ileti|Denetime yansıtılan ileti|
 |---------------------------------|--------------------------------------|
-|[Wm_command](/windows/win32/menurc/wm-command)|OCM_COMMAND|
+|[WM_COMMAND](/windows/win32/menurc/wm-command)|OCM_COMMAND|
 |[WM_CTLCOLORBTN](/windows/win32/Controls/wm-ctlcolorbtn)|OCM_CTLCOLORBTN|
 |[WM_CTLCOLOREDIT](/windows/win32/Controls/wm-ctlcoloredit)|OCM_CTLCOLOREDIT|
 |[WM_CTLCOLORDLG](/windows/win32/dlgbox/wm-ctlcolordlg)|OCM_CTLCOLORDLG|
@@ -79,12 +80,12 @@ Aşağıdaki tablo, ele geçirilen iletileri ve reflektör penceresinin gönderd
 |[WM_HSCROLL](/windows/win32/Controls/wm-hscroll)|OCM_HSCROLL|
 |[WM_VSCROLL](/windows/win32/Controls/wm-vscroll)|OCM_VSCROLL|
 |[WM_PARENTNOTIFY](/windows/win32/inputmsg/wm-parentnotify)|OCM_PARENTNOTIFY|
-|[Wm_notıfy](/windows/win32/controls/wm-notify)|OCM_NOTIFY|
+|[WM_NOTIFY](/windows/win32/controls/wm-notify)|OCM_NOTIFY|
 
 > [!NOTE]
-> Denetim Win32 sisteminde çalışıyorsa, alabileceği çeşitli\* WM_CTLCOLOR iletileri vardır. Daha fazla bilgi için WM_CTLCOLORBTN, WM_CTLCOLORDLG, WM_CTLCOLOREDIT, WM_CTLCOLORLISTBOX, WM_CTLCOLORMSGBOX, WM_CTLCOLORSCROLLBAR, WM_CTLCOLORSTATIC.
+> Denetim bir Win32 sisteminde çalışıyorsa, alabileceği birkaç WM_CTLCOLOR ileti türü vardır \* . Daha fazla bilgi için bkz. WM_CTLCOLORBTN, WM_CTLCOLORDLG, WM_CTLCOLOREDIT, WM_CTLCOLORLISTBOX, WM_CTLCOLORMSGBOX, WM_CTLCOLORSCROLLBAR, WM_CTLCOLORSTATIC.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri: Bir Windows Denetimini Alt Sınıf Yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)<br/>
-[TN062: Windows Denetimleri için İleti Yansıması](../mfc/tn062-message-reflection-for-windows-controls.md)
+[MFC ActiveX denetimleri: Altsınıflama a Windows Control](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)<br/>
+[TN062: Windows denetimleri için Ileti yansıması](../mfc/tn062-message-reflection-for-windows-controls.md)

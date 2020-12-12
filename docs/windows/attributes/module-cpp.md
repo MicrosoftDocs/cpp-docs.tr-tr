@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: modül (C++)'
 title: Modül (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: b6cde0baaae9901258e90ededf05c60cb13a7dc1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1780ebcb89e7d19f3f3a4c2656d383725d85657a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833978"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327490"
 ---
 # <a name="module-c"></a>modül (C++)
 
 . IDL dosyasında kitaplık bloğunu tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ module (type=dll, name=string, version=1.0, uuid=uuid, lcid=integer, control=boolean, helpstring=string, helpstringdll=string, helpfile=string, helpcontext=integer, helpstringcontext=integer, hidden=boolean, restricted=boolean, custom=string, resource_name=string,) ];
@@ -66,14 +67,14 @@ Seçim Bu tür kitaplığı için **Yardım kimliği** .
 *helpstringcontext*<br/>
 Seçim Daha fazla bilgi için bkz. [helpstringcontext](helpstringcontext.md) .
 
-*gizli*<br/>
+*Lene*<br/>
 Seçim Tüm kitaplığın görüntülenmesini önler. Bu kullanım, denetimlerle birlikte kullanılmak üzere tasarlanmıştır. Ana bilgisayarların, denetimi genişletilmiş özelliklerle sarmalayan yeni bir tür kitaplığı oluşturması gerekir. Daha fazla bilgi için bkz. [Hidden](/windows/win32/Midl/hidden) MIDL özniteliği.
 
 *dığından*<br/>
 Seçim Kitaplığın üyeleri rasgele çağrılamaz. Daha fazla bilgi için bkz. [kısıtlı](/windows/win32/Midl/restricted) MIDL özniteliği.
 
-*özel*<br/>
-Seçim Bir veya daha fazla öznitelik; Bu [özel](custom-cpp.md) özniteliğe benzerdir. *Özel* için ilk parametre, özniteliğin GUID 'sidir. Örnek:
+*Özel*<br/>
+Seçim Bir veya daha fazla öznitelik; Bu [özel](custom-cpp.md) özniteliğe benzerdir. *Özel* için ilk parametre, özniteliğin GUID 'sidir. Örneğin:
 
 ```
 [module(custom={guid,1}, custom={guid1,2})]
@@ -121,7 +122,7 @@ Aşağıdaki kod, oluşturulan. IDL dosyasında bir kitaplık bloğunun nasıl o
 [module(name="MyLibrary", version="1.2", helpfile="MyHelpFile")];
 ```
 
-Aşağıdaki kod, **modülü**kullanmanın sonucu olarak eklenen kodda görünecek bir işlev uygulamanızı sağlayabileceğinizi gösterir. Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz. [/FX](../../build/reference/fx-merge-injected-code.md) . **Modül** özniteliği tarafından eklenen işlevlerden birini geçersiz kılmak için, işlev uygulamanızı içerecek bir sınıf oluşturun ve **Modül** özniteliğinin bu sınıfa uygulanmasını sağlayın.
+Aşağıdaki kod, **modülü** kullanmanın sonucu olarak eklenen kodda görünecek bir işlev uygulamanızı sağlayabileceğinizi gösterir. Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz. [/FX](../../build/reference/fx-merge-injected-code.md) . **Modül** özniteliği tarafından eklenen işlevlerden birini geçersiz kılmak için, işlev uygulamanızı içerecek bir sınıf oluşturun ve **Modül** özniteliğinin bu sınıfa uygulanmasını sağlayın.
 
 ```cpp
 // cpp_attr_ref_module2.cpp
@@ -151,7 +152,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

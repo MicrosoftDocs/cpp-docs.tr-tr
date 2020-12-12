@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CReBarCtrl sınıfı'
 title: CReBarCtrl sınıfı
 ms.date: 11/19/2018
 f1_keywords:
@@ -98,12 +99,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: 872d577c2272939a6bf7ed1e3069cda426083e3f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 75caee2fb0b6bb883ecb421325d41b25c38252b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561901"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301236"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 
@@ -303,7 +304,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 Denetime uygulanan Rebar denetim stillerinin birleşimini belirtir. Desteklenen stillerin bir listesi için, bkz. Windows SDK [yeniden çubuk denetim stilleri](/windows/win32/Controls/rebar-control-styles) .
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.
@@ -734,7 +735,7 @@ void MaximizeBand(UINT uBand);
 
 ### <a name="remarks"></a>Açıklamalar
 
-[RB_MAXIMIZEBAND](/windows/win32/Controls/rb-maximizeband) `fIdeal` Windows SDK ' de açıklandığı gibi, Win32 ileti RB_MAXIMIZEBAND davranışını 0 olarak ayarlanmış şekilde uygular.
+[](/windows/win32/Controls/rb-maximizeband) `fIdeal` Windows SDK ' de açıklandığı gibi, Win32 ileti RB_MAXIMIZEBAND davranışını 0 olarak ayarlanmış şekilde uygular.
 
 ### <a name="example"></a>Örnek
 

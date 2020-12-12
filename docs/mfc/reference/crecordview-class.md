@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CRecordView sınıfı'
 title: CRecordView sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - CRecordView [MFC], OnMove
 - CRecordView [MFC], OnMove
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
-ms.openlocfilehash: 21db03fde267a366d4dd1bf747880951e7546058
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ad9ef6ed53ed1f9ad843518701bd6e8d619e6e8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219618"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301158"
 ---
 # <a name="crecordview-class"></a>CRecordView sınıfı
 
 Denetimlerde veritabanı kayıtlarını görüntüleyen bir görünüm.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class AFX_NOVTABLE CRecordView : public CFormView
@@ -59,7 +60,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 
 ## <a name="remarks"></a>Açıklamalar
 
-Görünüm bir nesneye doğrudan bağlı olan bir form görünümüdür `CRecordset` . Görünüm bir iletişim kutusu şablonu kaynağından oluşturulur ve `CRecordset` iletişim kutusu şablonunun denetimlerindeki nesne alanlarını görüntüler. `CRecordView`Nesne, form üzerindeki denetimler ve kayıt kümesi alanları arasında veri hareketini otomatikleştirmek için iletişim kutusu veri değişimi (DDX) ve kayıt alanı değişimi (RFX) kullanır. `CRecordView`Ayrıca, ilk, sonraki, önceki veya son kayda geçiş için varsayılan bir uygulama ve şu anda görünümdeki kayıtları güncelleştirmek için bir arabirim sağlar.
+Görünüm bir nesneye doğrudan bağlı olan bir form görünümüdür `CRecordset` . Görünüm bir iletişim kutusu şablonu kaynağından oluşturulur ve `CRecordset` iletişim kutusu şablonunun denetimlerindeki nesne alanlarını görüntüler. `CRecordView`Nesne, form üzerindeki denetimler ve kayıt kümesi alanları arasında veri hareketini otomatikleştirmek için iletişim kutusu veri değişimi (DDX) ve kayıt alanı değişimi (RFX) kullanır. `CRecordView` Ayrıca, ilk, sonraki, önceki veya son kayda geçiş için varsayılan bir uygulama ve şu anda görünümdeki kayıtları güncelleştirmek için bir arabirim sağlar.
 
 > [!NOTE]
 > Açık veritabanı bağlantısı (ODBC) sınıfları yerine veri erişim nesneleri (DAO) sınıflarıyla çalışıyorsanız, bunun yerine [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) sınıfını kullanın. Daha fazla bilgi için bkz. [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
@@ -70,7 +71,7 @@ Son kullanıcıların kayıt görünümündeki kayıttan kayda taşınmasını k
 
 Kayıttan kayda geçiş için varsayılan uygulama hakkında daha fazla bilgi için, bkz `IsOnFirstRecord` . ve `IsOnLastRecord` ve [bir kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md)makalesi.
 
-`CRecordView`kayıt görünümünün Kullanıcı arabirimini güncelleştirebilmesi için kullanıcının kayıt kümesindeki konumunu izler. Kullanıcı, kayıt kümesinin sonuna kadar hareket ettirdiğinde, kayıt görünümü menü öğeleri veya araç çubuğu düğmeleri gibi kullanıcı arabirimi nesnelerini aynı yönde taşımak için devre dışı bırakır.
+`CRecordView` kayıt görünümünün Kullanıcı arabirimini güncelleştirebilmesi için kullanıcının kayıt kümesindeki konumunu izler. Kullanıcı, kayıt kümesinin sonuna kadar hareket ettirdiğinde, kayıt görünümü menü öğeleri veya araç çubuğu düğmeleri gibi kullanıcı arabirimi nesnelerini aynı yönde taşımak için devre dışı bırakır.
 
 Kayıt görünümünüzü ve kayıt kümesi sınıflarınızı bildirme ve kullanma hakkında daha fazla bilgi için, makale [kaydı görünümlerinde](../../data/record-views-mfc-data-access.md)"kayıt görünümü tasarlama ve oluşturma" konusuna bakın. Kayıt görünümlerinin nasıl çalıştığı ve nasıl kullanılacağı hakkında daha fazla bilgi için, [kayıt görünümünü kullanma](../../data/using-a-record-view-mfc-data-access.md)makalesine bakın.
 
@@ -94,7 +95,7 @@ Kayıt görünümünüzü ve kayıt kümesi sınıflarınızı bildirme ve kulla
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="crecordviewcrecordview"></a><a name="crecordview"></a>CRecordView:: CRecordView
+## <a name="crecordviewcrecordview"></a><a name="crecordview"></a> CRecordView:: CRecordView
 
 Öğesinden türetilmiş bir türden bir nesne oluşturduğunuzda `CRecordView` , görünüm nesnesini başlatmak ve görünümün temel aldığı iletişim kaynağını belirlemek için Oluşturucu biçimini çağırın.
 
@@ -118,7 +119,7 @@ Kaynağı ada (oluşturucuya bağımsız değişken olarak bir dize) veya KIMLI�
 > [!NOTE]
 > Türetilmiş sınıfınızın kendi oluşturucusunu sağlaması *gerekir* . Türetilmiş sınıfınızın oluşturucusunda, `CRecordView::CRecordView` Aşağıdaki örnekte gösterildiği gibi, kaynak adı veya kimliğiyle Oluşturucuyu bir bağımsız değişken olarak çağırın.
 
-`CRecordView::OnInitialUpdate`çağrısı `UpdateData` olan çağırır `DoDataExchange` . Bu ilk çağrı, `DoDataExchange` , `CRecordView` `CRecordset` ClassWizard tarafından oluşturulan alan veri üyelerine denetimleri (dolaylı olarak) bağlar. Bu veri üyeleri, temel sınıf üye işlevini çağırana kadar kullanılamaz `CFormView::OnInitialUpdate` .
+`CRecordView::OnInitialUpdate` çağrısı `UpdateData` olan çağırır `DoDataExchange` . Bu ilk çağrı, `DoDataExchange` , `CRecordView` `CRecordset` ClassWizard tarafından oluşturulan alan veri üyelerine denetimleri (dolaylı olarak) bağlar. Bu veri üyeleri, temel sınıf üye işlevini çağırana kadar kullanılamaz `CFormView::OnInitialUpdate` .
 
 > [!NOTE]
 > ClassWizard kullanırsanız, sihirbaz bir **`enum`** değeri tanımlar `CRecordView::IDD` , sınıf bildiriminde belirtir ve Oluşturucu için üye başlatma listesinde kullanır.
@@ -127,7 +128,7 @@ Kaynağı ada (oluşturucuya bağımsız değişken olarak bir dize) veya KIMLI�
 
 [!code-cpp[NVC_MFCDatabase#32](../../mfc/codesnippet/cpp/crecordview-class_1.cpp)]
 
-## <a name="crecordviewisonfirstrecord"></a><a name="isonfirstrecord"></a>CRecordView:: IsOnFirstRecord
+## <a name="crecordviewisonfirstrecord"></a><a name="isonfirstrecord"></a> CRecordView:: IsOnFirstRecord
 
 Geçerli kaydın bu kayıt görünümüyle ilişkili kayıt kümesi nesnesindeki ilk kayıt olup olmadığını öğrenmek için bu üye işlevini çağırın.
 
@@ -145,7 +146,7 @@ Bu işlev, ClassWizard tarafından yazılan varsayılan komut güncelleştirme i
 
 Kullanıcı ilk kayda taşınırsa, çerçeve ilk veya önceki kayda taşımak için sahip olduğunuz tüm Kullanıcı arabirimi nesnelerini devre dışı bırakır.
 
-## <a name="crecordviewisonlastrecord"></a><a name="isonlastrecord"></a>CRecordView:: IsOnLastRecord
+## <a name="crecordviewisonlastrecord"></a><a name="isonlastrecord"></a> CRecordView:: IsOnLastRecord
 
 Geçerli kaydın bu kayıt görünümüyle ilişkili kayıt kümesi nesnesindeki son kayıt olup olmadığını öğrenmek için bu üye işlevini çağırın.
 
@@ -162,9 +163,9 @@ Geçerli kayıt, kayıt kümesindeki son kayıt ise sıfır dışında; Aksi tak
 Bu işlev, ClassWizard 'ın kayıttan kayda geçiş için bir kullanıcı arabirimini desteklemek üzere yazdığı varsayılan komut güncelleştirme işleyicilerinin kendi uygulamalarınızı yazmak için yararlıdır.
 
 > [!CAUTION]
-> Bu işlevin sonucu, görünümün Son Kullanıcı tarafından taşınana kadar kayıt kümesini algılayamayacağı durumlar dışında güvenilirdir. Kayıt görünümü, bir sonraki veya son kayda geçiş için herhangi bir kullanıcı arabirimi nesnesini devre dışı bırakmasının gerektiğini anlayabilmeniz için, kullanıcının son kaydın ötesine taşınması gerekir. Kullanıcı son kaydı geçti ve sonra son kayda geri (veya daha önce) geçerse, kayıt görünümü kullanıcının kayıt kümesindeki konumunu izleyebilir ve Kullanıcı arabirimi nesnelerini doğru şekilde devre dışı bırakabilir. `IsOnLastRecord`, `OnRecordLast` veya ID_RECORD_LAST komutunu işleyen uygulama işlevine yapılan çağrıdan sonra da güvenilmez `CRecordset::MoveLast` .
+> Bu işlevin sonucu, görünümün Son Kullanıcı tarafından taşınana kadar kayıt kümesini algılayamayacağı durumlar dışında güvenilirdir. Kayıt görünümü, bir sonraki veya son kayda geçiş için herhangi bir kullanıcı arabirimi nesnesini devre dışı bırakmasının gerektiğini anlayabilmeniz için, kullanıcının son kaydın ötesine taşınması gerekir. Kullanıcı son kaydı geçti ve sonra son kayda geri (veya daha önce) geçerse, kayıt görünümü kullanıcının kayıt kümesindeki konumunu izleyebilir ve Kullanıcı arabirimi nesnelerini doğru şekilde devre dışı bırakabilir. `IsOnLastRecord` , `OnRecordLast` veya ID_RECORD_LAST komutunu işleyen uygulama işlevine yapılan çağrıdan sonra da güvenilmez `CRecordset::MoveLast` .
 
-## <a name="crecordviewongetrecordset"></a><a name="ongetrecordset"></a>CRecordView:: OnGetRecordset
+## <a name="crecordviewongetrecordset"></a><a name="ongetrecordset"></a> CRecordView:: OnGetRecordset
 
 `CRecordset`Kayıt görünümüyle ilişkili, türetilmiş nesneye bir işaretçi döndürür.
 
@@ -182,7 +183,7 @@ Bir kayıt kümesi nesnesi oluşturmak veya almak ve ona bir işaretçi döndür
 
 Daha fazla bilgi ve örnek için bkz. kayıt [görünümleri: kayıt görünümü kullanma](../../data/using-a-record-view-mfc-data-access.md).
 
-## <a name="crecordviewonmove"></a><a name="onmove"></a>CRecordView:: OnMove
+## <a name="crecordviewonmove"></a><a name="onmove"></a> CRecordView:: OnMove
 
 Kayıt kümesindeki farklı bir kayda gitmek ve kayıt görünümünün denetimlerinde alanlarını görüntülemek için bu üye işlevini çağırın.
 

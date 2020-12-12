@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: Şerit denetimleri ve olay Işleyicileri ekleme'
 title: 'Nasıl yapılır: Şerit Denetimleri ve Olay İşleyicileri Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - event handlers [MFC], adding
 - ribbon controls [MFC], adding
 ms.assetid: b31f25bc-ede7-49c3-9e3c-dffe4e174a69
-ms.openlocfilehash: d6382c8ebf73fe7a26b3950cc1965b229c22dbb7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: bffac6b27f809961e3ca7a4323f519c765526198
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501226"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290303"
 ---
 # <a name="how-to-add-ribbon-controls-and-event-handlers"></a>Nasıl yapılır: Şerit Denetimleri ve Olay İşleyicileri Ekleme
 

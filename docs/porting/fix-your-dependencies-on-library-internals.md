@@ -1,32 +1,33 @@
 ---
-title: Kitaplık iç yapıları üzerinde C++ bağımlılıklarınızı çözme
+description: 'Hakkında daha fazla bilgi edinin: C++ Kitaplığı iç işlevleri üzerinde bağımlılıklarınızı çözme'
+title: C++ Kitaplığı iç yapıları üzerinde bağımlılıklarınızı çözme
 ms.date: 05/24/2017
 helpviewer_keywords:
 - library internals in an upgraded Visual Studio C++ project
 - _Hash_seq in an upgraded Visual Studio C++ project
 ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
-ms.openlocfilehash: b101234c582d8730b1a8fb62e8182df68554b18c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5d9cbcdd039786c3f1bb637e6a59bcfce43bc883
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215000"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341548"
 ---
-# <a name="fix-your-dependencies-on-c-library-internals"></a>Kitaplık iç yapıları üzerinde C++ bağımlılıklarınızı çözme
+# <a name="fix-your-dependencies-on-c-library-internals"></a>C++ Kitaplığı iç yapıları üzerinde bağımlılıklarınızı çözme
 
-Microsoft, Visual Studio 'nun birçok sürümündeki standart kitaplık, C çalışma zamanı kitaplığı ve diğer Microsoft kitaplıklarını için kaynak kodu yayımlamıştır. Amaç, kitaplık davranışını anlamanıza ve kodunuzda hata ayıklamanıza yardımcı olur. Kitaplık kaynak kodunu yayımlamanın bir yan etkisi, kitaplık arabiriminin bir parçası olmasalar bile bazı iç değerler, veri yapıları ve işlevlerin açığa çıkmasıdır. Genellikle iki alt çizgi ile başlayan adlara, sonra da büyük harfle ve sonra da C++ standart olarak uygulamalara ayrılmış adlara sahip olur. Bu değerler, yapılar ve işlevler, kitaplıklar zaman içinde geliştikçe değişebilir ve bu nedenle bunlar üzerinde herhangi bir bağımlılık yapmanız önemle önerilir. Bunu yaparsanız, kodunuzu kitaplıkların yeni sürümlerine geçirmeye çalıştığınızda taşınabilir olmayan kod ve sorunlarla karşılaşırsınız.
+Microsoft, Visual Studio 'nun birçok sürümündeki standart kitaplık, C çalışma zamanı kitaplığı ve diğer Microsoft kitaplıklarını için kaynak kodu yayımlamıştır. Amaç, kitaplık davranışını anlamanıza ve kodunuzda hata ayıklamanıza yardımcı olur. Kitaplık kaynak kodunu yayımlamanın bir yan etkisi, kitaplık arabiriminin bir parçası olmasalar bile bazı iç değerler, veri yapıları ve işlevlerin açığa çıkmasıdır. Genellikle iki alt çizgi ile başlayan adlara sahiptir veya bir alt çizgi ve ardından büyük harfle gelir, C++ standardının uygulamalar için ayırdıkları adlar vardır. Bu değerler, yapılar ve işlevler, kitaplıklar zaman içinde geliştikçe değişebilir ve bu nedenle bunlar üzerinde herhangi bir bağımlılık yapmanız önemle önerilir. Bunu yaparsanız, kodunuzu kitaplıkların yeni sürümlerine geçirmeye çalıştığınızda taşınabilir olmayan kod ve sorunlarla karşılaşırsınız.
 
 Çoğu durumda, Visual Studio 'nun her sürümü için yeni veya Son değişiklik belgesi, kitaplık iç yapıları üzerinde değişiklik yapmaz. Bunların ardından, bu uygulama ayrıntılarından etkilenmezsiniz. Ancak, bazen kitaplığın içinde görebileceğiniz bazı kodları kullanmak çok büyük olabilir. Bu konu, CRT veya standart kitaplık iç işlevleri üzerindeki bağımlılıkları ve bu bağımlılıkları kaldırmak için kodunuzu nasıl güncelleşreceğinizi, böylece daha taşınabilir hale getirebilirsiniz veya yeni bir kitaplık sürümüne geçiş yapabilirsiniz.
 
 ## <a name="_hash_seq"></a>_Hash_seq
 
-Bazı dize türlerinde `std::hash` uygulamak için kullanılan iç karma işlev `std::_Hash_seq(const unsigned char *, size_t)`, standart kitaplığın son sürümlerinde görünür. Bu işlev bir karakter dizisinde bir [FNV-1a karması]( https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) uyguladık.
+`std::_Hash_seq(const unsigned char *, size_t)`Bazı dize türlerinde uygulamak için kullanılan iç karma işlevi `std::hash` , standart kitaplığın son sürümlerinde görünür. Bu işlev bir karakter dizisinde bir [FNV-1a karması]( https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) uyguladık.
 
 Bu bağımlılığı kaldırmak için birkaç seçeneğiniz vardır.
 
-- Amacınızda, `basic_string`aynı karma kod makineler 'i kullanarak sıralanmamış bir kapsayıcıya `const char *` sırası koymak istiyorsanız, bu karma kodu taşınabilir bir şekilde döndüren `std::string_view``std::hash` şablon aşırı yüklemesini kullanarak yapabilirsiniz. Dize kitaplığı kodu, gelecekte bir FNV-1a karmasının kullanılmasına yol açabilir veya bu nedenle, belirli bir karma algoritmadan bağımlılığı önlemenin en iyi yoludur.
+- Amacınızda `const char *` aynı karma kod makineleriyle sıralanmamış bir kapsayıcıya bir sıra koymak istiyorsanız `basic_string` , bu `std::hash` `std::string_view` karma kodu taşınabilir bir şekilde döndüren bir olan şablon aşırı yüklemesini kullanarak yapabilirsiniz. Dize kitaplığı kodu, gelecekte bir FNV-1a karmasının kullanılmasına yol açabilir veya bu nedenle, belirli bir karma algoritmadan bağımlılığı önlemenin en iyi yoludur.
 
-- Amacınızı rastgele bellek üzerinde bir FNV-1a karması oluşturmak istiyorsanız, bu kodu, bir [MIT Lisansı](https://github.com/Microsoft/VCSamples/blob/master/license.txt)altında [fnv1a. hpp](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/_Hash_seq)olan tek başına bir üstbilgi dosyasında bulunan [vcsamples]( https://github.com/Microsoft/vcsamples) deposunda GitHub 'da kullanılabilir hale geçirdik. Size kolaylık sağlamak için buraya bir kopya de ekledik. Bu kodu bir başlık dosyasına kopyalayabilir, üstbilgiyi etkilenen herhangi bir koda ekleyebilir ve `fnv1a_hash_bytes``_Hash_seq` bulabilir ve değiştirebilirsiniz. `_Hash_seq`iç uygulamayla aynı davranışı alacaksınız.
+- Amacınızı rastgele bellek üzerinde bir FNV-1a karması oluşturmak istiyorsanız, bu kodu, bir [MIT Lisansı](https://github.com/Microsoft/VCSamples/blob/master/license.txt)altında [fnv1a. hpp](https://github.com/Microsoft/VCSamples/tree/master/VC2015Samples/_Hash_seq)olan tek başına bir üstbilgi dosyasında bulunan [vcsamples]( https://github.com/Microsoft/vcsamples) deposunda GitHub 'da kullanılabilir hale geçirdik. Size kolaylık sağlamak için buraya bir kopya de ekledik. Bu kodu bir başlık dosyasına kopyalayabilir, üstbilgiyi etkilenen herhangi bir koda ekleyebilir ve sonra bulabilir ve değiştirebilirsiniz `_Hash_seq` `fnv1a_hash_bytes` . ' De iç uygulamayla aynı davranışı alacaksınız `_Hash_seq` .
 
 ```cpp
 /*
@@ -76,6 +77,6 @@ inline size_t fnv1a_hash_bytes(const unsigned char * first, size_t count) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Projeleri Visual 'ın önceki sürümlerinden yükseltmeC++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Visual C++ önceki sürümlerinden projeleri yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
-[Kodunuzu Evrensel CRT’ye Yükseltme](upgrade-your-code-to-the-universal-crt.md)
+[Kodunuzu Evrensel CRT’ye yükseltme](upgrade-your-code-to-the-universal-crt.md)
