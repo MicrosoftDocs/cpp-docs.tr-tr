@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: static_assert'
 title: static_assert
 ms.date: 07/29/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-ms.openlocfilehash: bf796b853d21d33d97e25c05101b7486e1eb112f
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 76383aacf67f0e8bcc12880674afa17f9fce3603
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008855"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317993"
 ---
 # <a name="static_assert"></a>static_assert
 
@@ -36,7 +37,7 @@ Boole değerine dönüştürülemeyen bir integral sabit ifadesi. Değerlendiril
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir bildirimin *sabit ifade* parametresi **`static_assert`** bir *yazılım*onayını temsil eder. Yazılım onay belgesi, programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Koşul doğru ise, **`static_assert`** bildirimin hiçbir etkisi yoktur. Koşul false ise, onay başarısız olur, derleyici iletiyi *dize sabit değeri* parametresinde görüntüler ve derleme hata vererek başarısız olur. Visual Studio 2017 ve üzeri sürümlerde dize-sabit parametresi isteğe bağlıdır.
+Bir bildirimin *sabit ifade* parametresi **`static_assert`** bir *yazılım* onayını temsil eder. Yazılım onay belgesi, programınızda belirli bir noktada doğru olması beklenen bir koşulu belirtir. Koşul doğru ise, **`static_assert`** bildirimin hiçbir etkisi yoktur. Koşul false ise, onay başarısız olur, derleyici iletiyi *dize sabit değeri* parametresinde görüntüler ve derleme hata vererek başarısız olur. Visual Studio 2017 ve üzeri sürümlerde dize-sabit parametresi isteğe bağlıdır.
 
 **`static_assert`** Bildirim, derleme zamanında bir yazılım onayını sınar. Buna karşılık, [onaylama makrosu ve _assert ve _wassert işlevleri](../c-runtime-library/reference/assert-macro-assert-wassert.md) , bir yazılım onayını çalışma zamanında test ediyor ve boşluk veya zaman içinde çalışma süresi maliyeti doğurur. **`static_assert`** Bildirim, şablon bağımsız değişkenleri *sabit ifade* parametresine dahil edildiğinden, özellikle hata ayıklama için yararlıdır.
 

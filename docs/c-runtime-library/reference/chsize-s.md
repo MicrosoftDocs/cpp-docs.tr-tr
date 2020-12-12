@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _chsize_s'
 title: _chsize_s
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - chsize_s function
 - _chsize_s function
 ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38
-ms.openlocfilehash: faed95bfeb6fad88f502101e166ec6124b6e591d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b3fa28923b558dc9b396cffc3418ff679349000d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910409"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253097"
 ---
 # <a name="_chsize_s"></a>_chsize_s
 
@@ -59,13 +60,13 @@ Dosyanın bayt cinsinden yeni uzunluğu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_chsize_s** , dosya boyutu başarıyla değiştirilmişse 0 değerini döndürür. Sıfır olmayan bir dönüş değeri bir hatayı gösterir: belirtilen dosya salt **EACCES** okunurdur veya tanımlayıcı **geçersiz ise,** belirtilen dosya salt okunurdur veya tanımlayıcı geçersizse, bir boşluk, cihazda boş alan yoksa **enospc** , veya boyut sıfırdan küçükse, **EINVAL** . **errno** değeri aynı değere ayarlandı.
+**_chsize_s** , dosya boyutu başarıyla değiştirilmişse 0 değerini döndürür. Sıfır olmayan bir dönüş değeri bir hatayı gösterir: belirtilen dosya salt  okunurdur veya tanımlayıcı **geçersiz ise,** belirtilen dosya salt okunurdur veya tanımlayıcı geçersizse, bir boşluk, cihazda boş alan yoksa **enospc** , veya boyut sıfırdan küçükse, **EINVAL** . **errno** değeri aynı değere ayarlandı.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chsize_s** işlevi *FD* ile ilişkili dosyayı *boyutuna*göre belirtilen uzunluğa genişletir veya keser. Dosyanın yazmaya izin veren bir modda açık olması gerekir. Dosya genişletilmişse null karakterler (' \ 0 ') eklenir. Dosya kesilmişse, kısaltılmış dosyanın sonundaki tüm veriler dosyanın özgün uzunluğuna kaybedilir.
+**_Chsize_s** işlevi *FD* ile ilişkili dosyayı *boyutuna* göre belirtilen uzunluğa genişletir veya keser. Dosyanın yazmaya izin veren bir modda açık olması gerekir. Dosya genişletilmişse null karakterler (' \ 0 ') eklenir. Dosya kesilmişse, kısaltılmış dosyanın sonundaki tüm veriler dosyanın özgün uzunluğuna kaybedilir.
 
 **_chsize_s** dosya boyutu olarak 64 bitlik bir tamsayı alır ve bu nedenle 4 GB 'tan büyük dosya boyutlarını işleyebilir. **_chsize** , 32 bitlik dosya boyutları ile sınırlıdır.
 
@@ -77,13 +78,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_chsize_s**|\<GÇ. h>|\<errno. h>|
+|**_chsize_s**|\<io.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_chsize](chsize.md)<br/>
 [_close](close.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
