@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3162'
 title: Derleyici hatası C3162
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3162
 ms.assetid: 0d4c4a24-1456-4191-b7d8-c38cb7b17c32
-ms.openlocfilehash: 95cd2c4af614906da7ba2d1c4c5dd488059f970a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ca44b27607a34a469a5fd6fc1371e1510452247a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242320"
 ---
 # <a name="compiler-error-c3162"></a>Derleyici hatası C3162
 
@@ -23,7 +24,7 @@ Nesne açıkça silinmediği takdirde yıkıcı hiçbir şekilde çalışmaz.
 
 Daha fazla bilgi için bkz.,
 
-- [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
+- [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
 
 - [Genel Visual C++ 64 Bit Geçiş Sorunları](../../build/common-visual-cpp-64-bit-migration-issues.md)
 
