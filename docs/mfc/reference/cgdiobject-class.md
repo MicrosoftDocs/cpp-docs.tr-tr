@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CGdiObject sınıfı'
 title: CGdiObject sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,18 +31,18 @@ helpviewer_keywords:
 - CGdiObject [MFC], UnrealizeObject
 - CGdiObject [MFC], m_hObject
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
-ms.openlocfilehash: 759b25a8f77bb4e6b372431b637b4a97aca8e149
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a6a3d783dbfb7c25c63739330045151670208ebb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212416"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184172"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject sınıfı
 
 Bit eşlemler, bölgeler, fırçalar, kalemler, paletler ve yazı tipleri gibi çeşitli türlerde Windows grafik cihaz arabirimi (GDI) nesneleri için bir temel sınıf sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CGdiObject : public CObject
@@ -100,7 +101,7 @@ Hakkında daha fazla bilgi için `CGdiObject` bkz. [grafik nesneleri](../../mfc/
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="cgdiobjectattach"></a><a name="attach"></a>CGdiObject:: Attach
+## <a name="cgdiobjectattach"></a><a name="attach"></a> CGdiObject:: Attach
 
 Nesnesine bir Windows GDI nesnesi ekler `CGdiObject` .
 
@@ -117,7 +118,7 @@ Windows GDI nesnesine yönelik bir tanıtıcı (örneğin, HPEN veya HBRUSH).
 
 Ek başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cgdiobjectcgdiobject"></a><a name="cgdiobject"></a>CGdiObject:: CGdiObject
+## <a name="cgdiobjectcgdiobject"></a><a name="cgdiobject"></a> CGdiObject:: CGdiObject
 
 Bir `CGdiObject` nesnesi oluşturur.
 
@@ -129,7 +130,7 @@ CGdiObject();
 
 Hiçbir şekilde doğrudan oluşturmayın `CGdiObject` . Bunun yerine, veya gibi türetilmiş sınıflarından birindeki bir nesne oluşturursunuz `CPen` `Cbrush` .
 
-## <a name="cgdiobjectcreatestockobject"></a><a name="createstockobject"></a>CGdiObject:: Createstokobject
+## <a name="cgdiobjectcreatestockobject"></a><a name="createstockobject"></a> CGdiObject:: Createstokobject
 
 Önceden tanımlanmış hisse senedi Windows GDI kalemleri, fırçaları veya yazı tiplerden birine yönelik bir tanıtıcı alır ve GDI nesnesini `CGdiObject` nesneye ekler.
 
@@ -150,7 +151,7 @@ BOOL CreateStockObject(int nIndex);
 
 Bu işlevi, `CPen` bir hisse senedi kalemi gibi WINDOWS GDI nesne türüne karşılık gelen türetilmiş sınıflardan biriyle çağırın.
 
-## <a name="cgdiobjectdeleteobject"></a><a name="deleteobject"></a>CGdiObject::D eleteObject
+## <a name="cgdiobjectdeleteobject"></a><a name="deleteobject"></a> CGdiObject::D eleteObject
 
 Windows GDI nesnesiyle ilişkili tüm sistem depolama alanını boşaltarak ekli Windows GDI nesnesini bellekten siler.
 
@@ -168,7 +169,7 @@ Nesneyle ilişkili depolama alanı `CGdiObject` Bu çağrıdan etkilenmez. Uygul
 
 Bir desenli fırça silindiğinde, fırçayla ilişkili bit eşlem silinmez. Bit eşlemin bağımsız olarak silinmesi gerekir.
 
-## <a name="cgdiobjectdeletetempmap"></a><a name="deletetempmap"></a>CGdiObject::D eleteTempMap
+## <a name="cgdiobjectdeletetempmap"></a><a name="deletetempmap"></a> CGdiObject::D eleteTempMap
 
 `CWinApp`, Boşta kalma süresi işleyicisi tarafından otomatik olarak çağırılır, `DeleteTempMap` `CGdiObject` tarafından oluşturulan geçici nesneleri siler `FromHandle` .
 
@@ -178,13 +179,13 @@ static void PASCAL DeleteTempMap();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DeleteTempMap`nesne silinmeden önce geçici bir nesneye eklenen Windows GDI nesnesini ayırır `CGdiObject` `CGdiObject` .
+`DeleteTempMap` nesne silinmeden önce geçici bir nesneye eklenen Windows GDI nesnesini ayırır `CGdiObject` `CGdiObject` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#175](../../mfc/codesnippet/cpp/cgdiobject-class_1.cpp)]
 
-## <a name="cgdiobjectdetach"></a><a name="detach"></a>CGdiObject::D etach
+## <a name="cgdiobjectdetach"></a><a name="detach"></a> CGdiObject::D etach
 
 Bir Windows GDI nesnesini bir nesneden ayırır `CGdiObject` ve WINDOWS GDI nesnesine bir tanıtıcı döndürür.
 
@@ -196,7 +197,7 @@ HGDIOBJ Detach();
 
 `HANDLE`WINDOWS GDI nesnesine bir ayrılır; Aksi takdirde, herhangi BIR GDI nesnesi ekli DEĞILSE null olur.
 
-## <a name="cgdiobjectfromhandle"></a><a name="fromhandle"></a>CGdiObject:: FromHandle
+## <a name="cgdiobjectfromhandle"></a><a name="fromhandle"></a> CGdiObject:: FromHandle
 
 Bir `CGdiObject` WINDOWS GDI nesnesine bir tanıtıcı verilen nesneye yönelik bir işaretçi döndürür.
 
@@ -219,7 +220,7 @@ Bir `CGdiObject` nesne WINDOWS GDI nesnesine zaten iliştirilmişse, geçici bir
 
 Bu geçici `CGdiObject` nesne yalnızca uygulamanın olay döngüsünde süresi bir sonraki sefer, tüm geçici grafik nesneleri silindiği zaman geçerli olur. Bunun başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olduğu durumdur.
 
-## <a name="cgdiobjectgetobject"></a><a name="getobject"></a>CGdiObject:: GetObject
+## <a name="cgdiobjectgetobject"></a><a name="getobject"></a> CGdiObject:: GetObject
 
 Belirtilen nesneyi tanımlayan verilerle bir arabelleği doldurur.
 
@@ -258,7 +259,7 @@ Nesne bir `CBitmap` nesnese, `GetObject` yalnızca bit eşlemin genişlik, yüks
 
 Nesne bir `CPalette` nesnedir, `GetObject` paletteki giriş sayısını BELIRTEN bir sözcük alır. İşlev, paleti tanımlayan [LOGPALETTE](/windows/win32/api/wingdi/ns-wingdi-logpalette) yapısını almaz. Bir uygulama, [CPalette:: GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries)çağırarak palet girişleri hakkında bilgi alabilir.
 
-## <a name="cgdiobjectgetobjecttype"></a><a name="getobjecttype"></a>CGdiObject:: GetObjectType
+## <a name="cgdiobjectgetobjecttype"></a><a name="getobjecttype"></a> CGdiObject:: GetObjectType
 
 GDI nesnesinin türünü alır.
 
@@ -296,7 +297,7 @@ Başarılı olursa nesnenin türü; Aksi takdirde 0. Değer aşağıdakilerden b
 
 - OBJ_ENHMETADC gelişmiş-meta dosyası cihaz bağlamı
 
-## <a name="cgdiobjectgetsafehandle"></a><a name="getsafehandle"></a>CGdiObject:: GetSafeHandle
+## <a name="cgdiobjectgetsafehandle"></a><a name="getsafehandle"></a> CGdiObject:: GetSafeHandle
 
 `m_hObject`Null olmadığı **`this`** ve bu durumda null değer döndürülmediği takdirde döndürür.
 
@@ -316,7 +317,7 @@ Bu, genel tanıtıcı arabirim paradigmasının bir parçasıdır ve NULL ya da 
 
   [CWnd:: IsWindowEnabled](../../mfc/reference/cwnd-class.md#iswindowenabled)örneğine bakın.
 
-## <a name="cgdiobjectm_hobject"></a><a name="m_hobject"></a>CGdiObject:: m_hObject
+## <a name="cgdiobjectm_hobject"></a><a name="m_hobject"></a> CGdiObject:: m_hObject
 
 Bu nesneye eklenen HBıX, HRGN, HFıRÇA, HPEN, HPALETI veya HFONT içeren bir tanıtıcı.
 
@@ -324,7 +325,7 @@ Bu nesneye eklenen HBıX, HRGN, HFıRÇA, HPEN, HPALETI veya HFONT içeren bir t
 HGDIOBJ m_hObject;
 ```
 
-## <a name="cgdiobjectoperator-"></a><a name="operator_neq"></a>CGdiObject:: operator! =
+## <a name="cgdiobjectoperator-"></a><a name="operator_neq"></a> CGdiObject:: operator! =
 
 İki GDI nesnesinin mantıksal olarak eşit olup olmadığını belirler.
 
@@ -341,7 +342,7 @@ Var olan bir işaretçi `CGdiObject` .
 
 Sol taraftaki bir GDI nesnesinin sağ taraftaki bir GDI nesnesine eşit olup olmadığını belirler.
 
-## <a name="cgdiobjectoperator-"></a><a name="operator_eq_eq"></a>CGdiObject:: operator = =
+## <a name="cgdiobjectoperator-"></a><a name="operator_eq_eq"></a> CGdiObject:: operator = =
 
 İki GDI nesnesinin mantıksal olarak eşit olup olmadığını belirler.
 
@@ -358,7 +359,7 @@ Var olan bir başvuru `CGdiObject` .
 
 Sol taraftaki bir GDI nesnesinin sağ taraftaki bir GDI nesnesine eşit olup olmadığını belirler.
 
-## <a name="cgdiobjectoperator-hgdiobj"></a><a name="operator_hgdiobj"></a>CGdiObject:: operator HGDIOBJ
+## <a name="cgdiobjectoperator-hgdiobj"></a><a name="operator_hgdiobj"></a> CGdiObject:: operator HGDIOBJ
 
 Ekli Windows GDI nesnesine bir tanıtıcı alır; Aksi takdirde, hiçbir nesne iliştirilmişse NULL.
 
@@ -366,7 +367,7 @@ Ekli Windows GDI nesnesine bir tanıtıcı alır; Aksi takdirde, hiçbir nesne i
 operator HGDIOBJ() const;
 ```
 
-## <a name="cgdiobjectunrealizeobject"></a><a name="unrealizeobject"></a>CGdiObject:: UnrealizeObject
+## <a name="cgdiobjectunrealizeobject"></a><a name="unrealizeobject"></a> CGdiObject:: UnrealizeObject
 
 Bir fırçanın kaynağını sıfırlar veya bir mantıksal paleti sıfırlar.
 

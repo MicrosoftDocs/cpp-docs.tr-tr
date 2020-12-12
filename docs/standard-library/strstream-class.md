@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strstream sınıfı'
 title: strstream Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - std::strstream [C++], rdbuf
 - std::strstream [C++], str
 ms.assetid: 63f3be31-9e36-42b1-9715-a474a5997e2a
-ms.openlocfilehash: 796bf1b3ac41a4b5a6ab5bc16239d50616f554df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c37a2ec46872b34e256710fe61f216a84cb0359d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224623"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183535"
 ---
 # <a name="strstream-class"></a>strstream Sınıfı
 
 [Strstreambuffer](../standard-library/strstreambuf-class.md)sınıfının akış arabelleğini kullanarak öğelerin ve ayıklamanın ve kodlanmış nesnelerin eklenmesini ve ayıklanmasını denetleyen bir nesne tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class strstream : public iostream
@@ -57,7 +58,7 @@ Nesnesi, sınıfının bir nesnesini depolar `strstreambuf` .
 
 **Ad alanı:** std
 
-## <a name="strstreamfreeze"></a><a name="freeze"></a>strstream:: Freeze
+## <a name="strstreamfreeze"></a><a name="freeze"></a> strstream:: Freeze
 
 Akış arabelleği işlemleri aracılığıyla akış arabelleğinin kullanılamamasına neden olur.
 
@@ -78,7 +79,7 @@ void freeze(bool _Freezeit = true);
 
 Tarafından kullanılan bir örnek için bkz. [strstreamarabelleğe:: Freeze](../standard-library/strstreambuf-class.md#freeze) `freeze` .
 
-## <a name="strstreampcount"></a><a name="pcount"></a>strstream::p sayısı
+## <a name="strstreampcount"></a><a name="pcount"></a> strstream::p sayısı
 
 Denetlenen diziye yazılan öğe sayısının sayısını döndürür.
 
@@ -98,7 +99,7 @@ Denetlenen diziye yazılan öğe sayısı.
 
 Pcount kullanımı örneği için bkz. [strstreamarabelleğe::p Count](../standard-library/strstreambuf-class.md#pcount) .
 
-## <a name="strstreamrdbuf"></a><a name="rdbuf"></a>strstream:: rdarabelleğe
+## <a name="strstreamrdbuf"></a><a name="rdbuf"></a> strstream:: rdarabelleğe
 
 Akışın ilişkili strstreamsize nesnesine bir işaretçi döndürür.
 
@@ -118,7 +119,7 @@ Akışın ilişkilendirildiği strstreamarabelleğe yönelik bir işaretçi.
 
 Tarafından kullanılan bir örnek için bkz. [strstreamarabelleğe::p Count](../standard-library/strstreambuf-class.md#pcount) `rdbuf` .
 
-## <a name="strstreamstr"></a><a name="str"></a>strstream:: Str
+## <a name="strstreamstr"></a><a name="str"></a> strstream:: Str
 
 Çağırır [ve](../standard-library/strstreambuf-class.md#freeze)sonra denetlenen sıranın başlangıcına bir işaretçi döndürür.
 
@@ -138,7 +139,7 @@ Denetlenen dizinin başlangıcına yönelik bir işaretçi.
 
 Tarafından kullanılan bir örnek için bkz. [strstreamarabelleğe:: Str](../standard-library/strstreambuf-class.md#str) `str` .
 
-## <a name="strstreamstrstream"></a><a name="strstream"></a>strstream:: strstream
+## <a name="strstreamstrstream"></a><a name="strstream"></a> strstream:: strstream
 
 Türünde bir nesne oluşturur `strstream` .
 
@@ -163,11 +164,11 @@ Arabellek.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki Oluşturucu, **sb**strstreamarabellek sınıfının saklı nesnesi olan [streamarabelleğe](../standard-library/streambuf-typedefs.md#streambuf)(SB) çağırarak temel sınıfı başlatır `sb` . [strstreambuf](../standard-library/strstreambuf-class.md) İlk Oluşturucu, `sb` [strstreamarabelleğe](../standard-library/strstreambuf-class.md#strstreambuf)çağırarak da başlatılır. İkinci Oluşturucu, temel sınıfı iki yönden birini başlatır:
+Her iki Oluşturucu, strstreamarabellek sınıfının saklı nesnesi olan [streamarabelleğe](../standard-library/streambuf-typedefs.md#streambuf)(SB) çağırarak temel sınıfı başlatır `sb` . [](../standard-library/strstreambuf-class.md) İlk Oluşturucu, `sb` [strstreamarabelleğe](../standard-library/strstreambuf-class.md#strstreambuf)çağırarak da başlatılır. İkinci Oluşturucu, temel sınıfı iki yönden birini başlatır:
 
 - `_Mode`  &  **İos_base:: App**= = 0 ise, *PTR* bir öğe dizisinin ilk öğesini `count` ve Oluşturucu çağırır `strstreambuf` ( `ptr` , `count` , `ptr` ).
 
-- Aksi halde, *PTR* , ilk öğesi *PTR*tarafından atanan bir C dizesi içeren Count öğeleri dizisinin ilk öğesini belirlemelidir ve Oluşturucu `strstreambuf` ( `ptr` , `count` , `ptr`  +  `strlen` ( `ptr` )) çağırır.
+- Aksi halde, *PTR* , ilk öğesi *PTR* tarafından atanan bir C dizesi içeren Count öğeleri dizisinin ilk öğesini belirlemelidir ve Oluşturucu `strstreambuf` ( `ptr` , `count` , `ptr`  +  `strlen` ( `ptr` )) çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

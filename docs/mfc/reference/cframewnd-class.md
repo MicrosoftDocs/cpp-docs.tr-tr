@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CFrameWnd sınıfı'
 title: CFrameWnd sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -106,12 +107,12 @@ helpviewer_keywords:
 - CFrameWnd [MFC], m_bAutoMenuEnable
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-ms.openlocfilehash: 5e40f08447d24eed51588b5c2dfa87e289d99eed
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 85bad5ad63a07b58f245df06a44d82f58d6a561c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561585"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184289"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 
@@ -276,7 +277,7 @@ Bu üye işlev genellikle bir DDE, OLE veya bir kullanıcı arabirimi gibi bir k
 
 Varsayılan uygulama çerçeveyi etkinleştirir ve Z düzeninin en üstüne getirir ve gerekirse uygulamanın ana çerçeve penceresi için aynı adımları gerçekleştirir.
 
-Çerçevenin nasıl etkinleştirildiğini değiştirmek için bu üye işlevini geçersiz kılın. Örneğin, MDI alt pencerelerini ekranı kaplayacak şekilde zorlayabilirsiniz. Uygun işlevi ekleyin ve ardından bir açık *nCmdShow*ile temel sınıf sürümünü çağırın.
+Çerçevenin nasıl etkinleştirildiğini değiştirmek için bu üye işlevini geçersiz kılın. Örneğin, MDI alt pencerelerini ekranı kaplayacak şekilde zorlayabilirsiniz. Uygun işlevi ekleyin ve ardından bir açık *nCmdShow* ile temel sınıf sürümünü çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -414,7 +415,7 @@ Denetim çubuğunun hedef çerçeve penceresinin istemci olmayan alanına yerle�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim çubuğu, hem [CControlBar:: EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking) hem de [CFrameWnd:: EnableDocking](#enabledocking)çağrılarında belirtilen çerçeve penceresinin kenarlarından birine yerleştirilir. Seçilen kenar *nDockBarID*tarafından belirlenir.
+Denetim çubuğu, hem [CControlBar:: EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking) hem de [CFrameWnd:: EnableDocking](#enabledocking)çağrılarında belirtilen çerçeve penceresinin kenarlarından birine yerleştirilir. Seçilen kenar *nDockBarID* tarafından belirlenir.
 
 ## <a name="cframewndenabledocking"></a><a name="enabledocking"></a> CFrameWnd:: EnableDocking
 
@@ -576,7 +577,7 @@ void GetDockState(CDockState& state) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*state*<br/>
+*durumunda*<br/>
 Dönüş sırasında çerçeve penceresinin denetim çubuklarının geçerli durumunu içerir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -981,7 +982,7 @@ afx_msg void OnUpdateControlBarMenu(CCmdUI* pCmdUI);
 ### <a name="parameters"></a>Parametreler
 
 *pCmdUI*<br/>
-Update komutunu oluşturan menüyü temsil eden [CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine yönelik bir işaretçi. Güncelleştirme işleyicisi, [Enable](../../mfc/reference/ccmdui-class.md#enable) `CCmdUI` Kullanıcı arabirimini güncelleştirmek için nesnesinin *pCmdUI* aracılığıyla üye etkinleştirme işlevini çağırır.
+Update komutunu oluşturan menüyü temsil eden [CCmdUI](../../mfc/reference/ccmdui-class.md) nesnesine yönelik bir işaretçi. Güncelleştirme işleyicisi, [](../../mfc/reference/ccmdui-class.md#enable) `CCmdUI` Kullanıcı arabirimini güncelleştirmek için nesnesinin *pCmdUI* aracılığıyla üye etkinleştirme işlevini çağırır.
 
 ## <a name="cframewndrecalclayout"></a><a name="recalclayout"></a> CFrameWnd:: RecalcLayout
 
@@ -1074,7 +1075,7 @@ void SetDockState(const CDockState& state);
 
 ### <a name="parameters"></a>Parametreler
 
-*state*<br/>
+*durumunda*<br/>
 Depolanan durumu çerçeve penceresinin denetim çubuklarına uygulayın.
 
 ### <a name="remarks"></a>Açıklamalar

@@ -1,5 +1,6 @@
 ---
-title: CFolderPickerDialog Sınıfı
+description: 'Daha fazla bilgi edinin: CFolderPickerDialog sınıfı'
+title: CFolderPickerDialog sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CFolderPickerDialog
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CFolderPickerDialog [MFC], CFolderPickerDialog
 ms.assetid: 8db01684-dd1d-4e9c-989e-07a2318a8156
-ms.openlocfilehash: ed3dc151060519bce216cf4a2f3d6559d6b8937e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f4a5bcc3162a5fffcc723d7ec420685b02be10f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184432"
 ---
-# <a name="cfolderpickerdialog-class"></a>CFolderPickerDialog Sınıfı
+# <a name="cfolderpickerdialog-class"></a>CFolderPickerDialog sınıfı
 
-CFolderPickerDialog sınıfı klasör seçici modunda CFileDialog uygular.
+CFolderPickerDialog sınıfı, Klasör Seçici modunda CFileDialog uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CFolderPickerDialog : public CFileDialog;
@@ -29,34 +30,34 @@ class CFolderPickerDialog : public CFileDialog;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CFolderPickerDialog::~CFolderPickerDialog](#_dtorcfolderpickerdialog)|Yıkıcı.|
-|[CFolderPickerDialog::CFolderPickerDialog](#cfolderpickerdialog)|Oluşturucu.|
+|[CFolderPickerDialog:: ~ CFolderPickerDialog](#_dtorcfolderpickerdialog)|Yıkıcı.|
+|[CFolderPickerDialog:: CFolderPickerDialog](#cfolderpickerdialog)|Oluşturucu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cdialog](../../mfc/reference/cdialog-class.md)
+[CDialog](../../mfc/reference/cdialog-class.md)
 
-[CCommonDialog](../../mfc/reference/ccommondialog-class.md)
+[Ccommoniletişim kutusu](../../mfc/reference/ccommondialog-class.md)
 
-[Cfiledialog](../../mfc/reference/cfiledialog-class.md)
+[CFileDialog](../../mfc/reference/cfiledialog-class.md)
 
 `CFolderPickerDialog`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdlgs.h
+**Üstbilgi:** afxdlgs. h
 
-## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="cfolderpickerdialog"></a>CFolderPickerDialog::CFolderPickerDialog
+## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="cfolderpickerdialog"></a> CFolderPickerDialog:: CFolderPickerDialog
 
 Oluşturucu.
 
@@ -70,21 +71,21 @@ explicit CFolderPickerDialog(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszKlasör*<br/>
+*lpszFolder*<br/>
 İlk klasör.
 
-*Dwflags*<br/>
-İletişim kutusunu özelleştirmenize olanak tanıyan bir veya daha fazla bayrağın birleşimi.
+*dwFlags*<br/>
+İletişim kutusunu özelleştirmenizi sağlayan bir veya daha fazla bayrak birleşimi.
 
 *pParentWnd*<br/>
-İletişim kutusu nesnesinin üst veya sahibi penceresiiçin bir işaretçi.
+İletişim kutusu nesnesinin üst veya sahip penceresine yönelik bir işaretçi.
 
 *dwSize*<br/>
 OPENFILENAME yapısının boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="_dtorcfolderpickerdialog"></a>CFolderPickerDialog::~CFolderPickerDialog
+## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="_dtorcfolderpickerdialog"></a> CFolderPickerDialog:: ~ CFolderPickerDialog
 
 Yıkıcı.
 

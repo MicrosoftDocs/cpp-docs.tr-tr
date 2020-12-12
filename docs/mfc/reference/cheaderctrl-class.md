@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CHeaderCtrl sınıfı'
 title: CHeaderCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -64,12 +65,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: f225d406ab1560b4308a468ebd71b3dfd88cfa2a
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9fe17b6c2553526af40ead253cd7c03fa6b57612
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184016"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 
@@ -301,7 +302,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 Üst bilgi denetiminin stili. Üst bilgi denetim stillerinin açıklaması için Windows SDK [üst bilgi denetim stillerine](/windows/win32/Controls/header-control-styles) bakın. Ek stillerin listesi için bkz. [oluşturma](#create) .
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.

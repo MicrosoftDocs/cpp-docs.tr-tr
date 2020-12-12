@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; dize &gt; işleçleri'
 title: '&lt;dize &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: e031eb4421906e35a96a862855a140218f233778
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9a23b4539fbb84533de83a541458deddbd13615e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183717"
 ---
 # <a name="ltstringgt-operators"></a>&lt;dize &gt; işleçleri
 
@@ -575,11 +576,11 @@ Yazılan çıkış akışı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dizenin değerini, çıkış akışına *_Ostr*yazar.
+Belirtilen dizenin değerini, çıkış akışına *_Ostr* yazar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, sınıf şablonu [basic_string](../standard-library/basic-string-class.md) bir nesne *Str* eklemek için **işleç<<** aşırı * \_ yükler.* İşlevi etkin bir şekilde döndürür `_Ostr.write( str.c_str, str.size )` .
+Şablon işlevi, sınıf şablonu [basic_string](../standard-library/basic-string-class.md) bir nesne *Str* eklemek için **işleç<<** aşırı *\_ yükler.* İşlevi etkin bir şekilde döndürür `_Ostr.write( str.c_str, str.size )` .
 
 ## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
@@ -808,13 +809,13 @@ Giriş akışından ayıklanan dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*_Istr* belirtilen dizenin değerini okur ve *sağa*döndürür.
+*_Istr* belirtilen dizenin değerini okur ve *sağa* döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bayrak ayarlanmadığı takdirde işleç baştaki boşlukları atlar `skipws` . Sonraki karakter bir boşluk olana veya dosyanın sonuna ulaşılana kadar aşağıdaki tüm karakterleri okur.
 
-Şablon işlevi, bir dizi *_Istr*ayıklanan bir dizi öğe ile *doğrudan* denetlenen sırayı değiştirmek için **işleç>>** aşırı yükler. Ayıklama durduruluyor:
+Şablon işlevi, bir dizi *_Istr* ayıklanan bir dizi öğe ile *doğrudan* denetlenen sırayı değiştirmek için **işleç>>** aşırı yükler. Ayıklama durduruluyor:
 
 - Dosya sonunda.
 
@@ -822,9 +823,9 @@ Bayrak ayarlanmadığı takdirde işleç baştaki boşlukları atlar `skipws` . 
 
 İşlev ayıkladıktan sonra `_Istr` . [max_size](../standard-library/basic-string-class.md#max_size) öğeleri.
 
-- İşlev, *ch* [use_facet](../standard-library/basic-filebuf-class.md#open) <  **CType** \< **CharType**> > () için bir öğe ch öğesini ayıkladıktan sonra `getloc` . **is**( **CType** \< **CharType**> :: **Space**, *ch*) değeri true 'dur, bu durumda karakter geri konur.
+- İşlev,  [use_facet](../standard-library/basic-filebuf-class.md#open) <  **CType** \< **CharType**> > () için bir öğe ch öğesini ayıkladıktan sonra `getloc` . ( **CType** \< **CharType**> :: **Space**, *ch*) değeri true 'dur, bu durumda karakter geri konur.
 
-İşlev hiçbir öğe ayıklaıyorsa, [SetState](../standard-library/basic-ios-class.md#setstate)() öğesini çağırır `ios_base::failbit` . Herhangi bir durumda, **ISTR**çağırır. **Width**(0) ve döndürür \* **`this`** .
+İşlev hiçbir öğe ayıklaıyorsa, [SetState](../standard-library/basic-ios-class.md#setstate)() öğesini çağırır `ios_base::failbit` . Herhangi bir durumda, **ISTR** çağırır. **Width**(0) ve döndürür \* **`this`** .
 
 ### <a name="example"></a>Örnek
 

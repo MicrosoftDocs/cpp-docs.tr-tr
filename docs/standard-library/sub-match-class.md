@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sub_match Sınıfı'
 title: sub_match Sınıfı
 ms.date: 09/10/2018
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - std::sub_match [C++], iterator
 - std::sub_match [C++], value_type
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
-ms.openlocfilehash: 57aa4ec366588f71f41a747a2dc5127f87ea2e2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 683b0bc6cf73a44ce426d5dcab3cdf13221be66b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183405"
 ---
 # <a name="sub_match-class"></a>sub_match Sınıfı
 
 Bir alt eşleşme tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class BidIt>
@@ -50,11 +51,11 @@ Sınıf şablonu, bir [regex_match](../standard-library/regex-functions.md#regex
 
 Yakalama grubu eşleştirilmamışsa, nesnenin veri üyesi `matched` yanlış olur ve iki yineleyiciler `first` ve `second` (tabandan devralınır `std::pair` ) eşittir. Yakalama grubu eşleştirildiği takdirde, `matched` Yineleyici, `first` yakalama grubuyla eşleşen hedef dizideki ilk karaktere işaret eder ve yineleyici, `second` yakalama grubuyla eşleşen hedef dizideki son karakteri aşan bir konumu işaret eder. Üyenin, sıfır uzunluklu eşleşme `matched` doğru tuttuğunda, iki yineleyicinin eşit olacağını ve ikisinin de eşleşme konumunu işaret edecek olduğunu unutmayın.
 
-Bir yakalama grubu yalnızca bir onaylama işlemi ya da sıfır tekrarda izin veren bir tekrardan oluştuğunda sıfır uzunluklu eşleşme meydana gelebilir. Örnek:
+Bir yakalama grubu yalnızca bir onaylama işlemi ya da sıfır tekrarda izin veren bir tekrardan oluştuğunda sıfır uzunluklu eşleşme meydana gelebilir. Örneğin:
 
-"^", "a" hedef dizisiyle eşleşir; `sub_match`yakalama grubu 0 ' a karşılık gelen nesne, her ikisi de dizideki ilk karakteri işaret eden yineleyiciler barındırır.
+"^", "a" hedef dizisiyle eşleşir; `sub_match` yakalama grubu 0 ' a karşılık gelen nesne, her ikisi de dizideki ilk karakteri işaret eden yineleyiciler barındırır.
 
-"b (a *) b", "BB" hedef dizisiyle eşleşir; `sub_match`yakalama grubu 1 ' e karşılık gelen nesne, her ikisi de dizideki ikinci karaktere işaret eden yineleyiciler barındırır.
+"b (a *) b", "BB" hedef dizisiyle eşleşir; `sub_match` yakalama grubu 1 ' e karşılık gelen nesne, her ikisi de dizideki ikinci karaktere işaret eden yineleyiciler barındırır.
 
 ### <a name="typedefs"></a>Tür tanımları
 
@@ -69,7 +70,7 @@ Bir yakalama grubu yalnızca bir onaylama işlemi ya da sıfır tekrarda izin ve
 |Üye işlevi|Açıklama|
 |-|-|
 |[Karşılaştır](#compare)|Alt eşleşmeyi bir diziye göre karşılaştırın.|
-|[uzunluklu](#length)|Alt eşleşmenin uzunluğunu döndürür.|
+|[length](#length)|Alt eşleşmenin uzunluğunu döndürür.|
 |[eşleşen](#matched)|Eşleşmenin başarılı olup olmadığını gösterir.|
 |[üstbilgisine](#str)|Alt eşleşmeyi bir dizeye dönüştürür.|
 
@@ -137,7 +138,7 @@ compare(sub) == 0
 
 **Ad alanı:** std
 
-## <a name="sub_matchcompare"></a><a name="compare"></a>sub_match:: Compare
+## <a name="sub_matchcompare"></a><a name="compare"></a> sub_match:: Compare
 
 Alt eşleşmeyi bir diziye göre karşılaştırın.
 
@@ -170,7 +171,7 @@ iki karşılaştırma öğesi öğesine göre eşit ve aynı uzunluğa sahip ise
 
 Aksi takdirde pozitif bir değer
 
-## <a name="sub_matchdifference_type"></a><a name="difference_type"></a>sub_match::d ifference_type
+## <a name="sub_matchdifference_type"></a><a name="difference_type"></a> sub_match::d ifference_type
 
 Yineleyici farkının türü.
 
@@ -182,7 +183,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 
 TypeDef, için bir eş anlamlı `iterator_traits<BidIt>::difference_type` .
 
-## <a name="sub_matchiterator"></a><a name="iterator"></a>sub_match:: Yineleyici
+## <a name="sub_matchiterator"></a><a name="iterator"></a> sub_match:: Yineleyici
 
 Yineleyicinin türü.
 
@@ -194,7 +195,7 @@ typedef BidIt iterator;
 
 TypeDef, şablon türü bağımsız değişkeninin eşanlamlısıdır `Bidit` .
 
-## <a name="sub_matchlength"></a><a name="length"></a>sub_match:: length
+## <a name="sub_matchlength"></a><a name="length"></a> sub_match:: length
 
 Alt eşleşmenin uzunluğunu döndürür.
 
@@ -206,7 +207,7 @@ difference_type length() const;
 
 Üye işlevi, eşleşen sıranın uzunluğunu veya eşleşen bir sıra yoksa sıfır değerini döndürür.
 
-## <a name="sub_matchmatched"></a><a name="matched"></a>sub_match:: eşleşti
+## <a name="sub_matchmatched"></a><a name="matched"></a> sub_match:: eşleşti
 
 Eşleşmenin başarılı olup olmadığını gösterir.
 
@@ -218,7 +219,7 @@ bool matched;
 
 Üye **`true`** yalnızca ile ilişkili yakalama grubu **`*this`** normal ifade eşleşmesinden bir parçasıysa barındırır.
 
-## <a name="sub_matchoperator-basic_stringltvalue_typegt"></a><a name="op_basic_string_lt_value_type_gt"></a>sub_match:: operator basic_string &lt; value_type&gt;
+## <a name="sub_matchoperator-basic_stringltvalue_typegt"></a><a name="op_basic_string_lt_value_type_gt"></a> sub_match:: operator basic_string &lt; value_type&gt;
 
 Bir dizeye alt eşleşme yayınlar.
 
@@ -230,7 +231,7 @@ operator basic_string<value_type>() const;
 
 Üye işleci döndürür `str()` .
 
-## <a name="sub_matchstr"></a><a name="str"></a>sub_match:: Str
+## <a name="sub_matchstr"></a><a name="str"></a> sub_match:: Str
 
 Alt eşleşmeyi bir dizeye dönüştürür.
 
@@ -242,7 +243,7 @@ basic_string<value_type> str() const;
 
 Üye işlevi döndürür `basic_string<value_type>(first, second)` .
 
-## <a name="sub_matchvalue_type"></a><a name="value_type"></a>sub_match:: value_type
+## <a name="sub_matchvalue_type"></a><a name="value_type"></a> sub_match:: value_type
 
 Öğenin türü.
 

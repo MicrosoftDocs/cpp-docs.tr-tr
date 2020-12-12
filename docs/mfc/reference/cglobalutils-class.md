@@ -1,5 +1,6 @@
 ---
-title: CGlobalUtils Sınıfı
+description: 'Daha fazla bilgi edinin: CGlobalUtils sınıfı'
+title: CGlobalUtils sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - CGlobalUtils
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - CGlobalUtils [MFC], StringFromCy
 - CGlobalUtils [MFC], StringFromDecimal
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
-ms.openlocfilehash: dbac56ea7efca98218133b23657f8508ea6bac28
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: d1e2f096825d34a907afbcdb022c550b94476906
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752910"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184107"
 ---
-# <a name="cglobalutils-class"></a>CGlobalUtils Sınıfı
+# <a name="cglobalutils-class"></a>CGlobalUtils sınıfı
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CGlobalUtils
@@ -59,24 +60,24 @@ class CGlobalUtils
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGlobalUtils::AdjustRectToWorkArea](#adjustrecttoworkarea)||
-|[CGlobalUtils::CalcExpectedDockedRect](#calcexpecteddockedrect)||
-|[CGlobalUtils::CanBeAttached](#canbeattached)||
-|[CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd](#canpanebeinfloatingmultipaneframewnd)||
-|[CGlobalUtils::CheckAlignment](#checkalignment)||
-|[CGlobalUtils::CyFromString](#cyfromstring)||
-|[CGlobalUtils::DecimalFromString](#decimalfromstring)||
-|[CGlobalUtils::FlipRect](#fliprect)||
-|[CGlobalUtils::ForceAdjustLayout](#forceadjustlayout)||
-|[CGlobalUtils::GetDockingManager](#getdockingmanager)||
-|[CGlobalUtils::GetOppositeAlignment](#getoppositealignment)||
-|[CGlobalUtils::GetPaneAndAlignFromPoint](#getpaneandalignfrompoint)||
-|[CGlobalUtils::GetWndIcon](#getwndicon)||
-|[CGlobalUtils::SetNewParent](#setnewparent)||
-|[CGlobalUtils::StringFromCy](#stringfromcy)||
-|[CGlobalUtils::StringFromOncimal](#stringfromdecimal)||
+|[CGlobalUtils:: AdjustRectToWorkArea](#adjustrecttoworkarea)||
+|[CGlobalUtils:: CalcExpectedDockedRect](#calcexpecteddockedrect)||
+|[CGlobalUtils:: Canbeekli](#canbeattached)||
+|[CGlobalUtils:: Canbölmesi Beinfloatingmultikutuframewnd](#canpanebeinfloatingmultipaneframewnd)||
+|[CGlobalUtils:: CheckAlignment](#checkalignment)||
+|[CGlobalUtils:: CyFromString](#cyfromstring)||
+|[CGlobalUtils::D ecimalFromString](#decimalfromstring)||
+|[CGlobalUtils:: FlipRect](#fliprect)||
+|[CGlobalUtils:: ForceAdjustLayout](#forceadjustlayout)||
+|[CGlobalUtils:: GetDockingManager](#getdockingmanager)||
+|[CGlobalUtils:: Getoppositehizalaması](#getoppositealignment)||
+|[CGlobalUtils:: GetPaneAndAlignFromPoint](#getpaneandalignfrompoint)||
+|[CGlobalUtils:: GetWndIcon](#getwndicon)||
+|[CGlobalUtils:: SetNewParent](#setnewparent)||
+|[CGlobalUtils:: StringFromCy](#stringfromcy)||
+|[CGlobalUtils:: StringFromDecimal](#stringfromdecimal)||
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -86,9 +87,9 @@ class CGlobalUtils
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxglobalutils.h
+**Üstbilgi:** afxglobalutils. h
 
-## <a name="cglobalutilsadjustrecttoworkarea"></a><a name="adjustrecttoworkarea"></a>CGlobalUtils::AdjustRectToWorkArea
+## <a name="cglobalutilsadjustrecttoworkarea"></a><a name="adjustrecttoworkarea"></a> CGlobalUtils:: AdjustRectToWorkArea
 
 ```cpp
 void AdjustRectToworkArea(
@@ -98,12 +99,12 @@ void AdjustRectToworkArea(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde, dışarı] *rekt*<br/>
-[içinde] *pRectDelta*<br/>
+[in, out] *Rect*<br/>
+'ndaki *ön Delta*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilscalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a>CGlobalUtils::CalcExpectedDockedRect
+## <a name="cglobalutilscalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a> CGlobalUtils:: CalcExpectedDockedRect
 
 ```cpp
 void CalcExpectedDockedRect(
@@ -117,21 +118,21 @@ void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *barContainerManager*<br/>
+'ndaki *Barcontainermanager*<br/>
 
-[içinde] *pWndTodock*<br/>
+'ndaki *Pwndtodock*<br/>
 
-[içinde] *ptMouse*<br/>
+'ndaki *ptMouse*<br/>
 
-[çıkış] *rektResult*<br/>
+dışı *rectResult*<br/>
 
-[çıkış] *bDrawTab*<br/>
+dışı *bDrawTab*<br/>
 
-[çıkış] *ppTargetBar*<br/>
+dışı *ppTargetBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilscanbeattached"></a><a name="canbeattached"></a>CGlobalUtils::CanBeAttached
+## <a name="cglobalutilscanbeattached"></a><a name="canbeattached"></a> CGlobalUtils:: Canbeekli
 
 ```
 BOOL CanBeAttached(CWnd* pWnd) const;
@@ -139,13 +140,13 @@ BOOL CanBeAttached(CWnd* pWnd) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pWnd*<br/>
+'ndaki *pWnd*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilscanpanebeinfloatingmultipaneframewnd"></a><a name="canpanebeinfloatingmultipaneframewnd"></a>CGlobalUtils::CanPaneBeInFloatingMultiPaneFrameWnd
+## <a name="cglobalutilscanpanebeinfloatingmultipaneframewnd"></a><a name="canpanebeinfloatingmultipaneframewnd"></a> CGlobalUtils:: Canbölmesi Beinfloatingmultikutuframewnd
 
 ```
 BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
@@ -153,13 +154,13 @@ BOOL CanPaneBeInFloatingMultiPaneFrameWnd(CWnd* pWnd) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pWnd*<br/>
+'ndaki *pWnd*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilscheckalignment"></a><a name="checkalignment"></a>CGlobalUtils::CheckAlignment
+## <a name="cglobalutilscheckalignment"></a><a name="checkalignment"></a> CGlobalUtils:: CheckAlignment
 
 ```
 BOOL CheckAlignment(
@@ -175,27 +176,27 @@ BOOL CheckAlignment(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *nokta*<br/>
+'ndaki *nokta*<br/>
 
-[içinde] *pBar*<br/>
+'ndaki *pBar*<br/>
 
-[içinde] *nDuyarlılık*<br/>
+'ndaki *duyarlılık*<br/>
 
-[içinde] *pDockManager*<br/>
+'ndaki *pDockManager*<br/>
 
-[içinde] *bOuterEdge*<br/>
+'ndaki *Bukenar*<br/>
 
-[çıkış] *dwHizalama*<br/>
+dışı *Dwhizalaması*<br/>
 
-[içinde] *dwEnabledDockBars*<br/>
+'ndaki *Dwenableddockçubuklar*<br/>
 
-[içinde] *lpRectBounds*<br/>
+'ndaki *Lprectsınır*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilscyfromstring"></a><a name="cyfromstring"></a>CGlobalUtils::CyFromString
+## <a name="cglobalutilscyfromstring"></a><a name="cyfromstring"></a> CGlobalUtils:: CyFromString
 
 ```
 BOOL CyFromString(
@@ -205,15 +206,15 @@ BOOL CyFromString(
 
 ### <a name="parameters"></a>Parametreler
 
-[çıkış] *cy*<br/>
+dışı *Cy*<br/>
 
-[içinde] *psz*<br/>
+'ndaki *PSZ*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsdecimalfromstring"></a><a name="decimalfromstring"></a>CGlobalUtils::DecimalFromString
+## <a name="cglobalutilsdecimalfromstring"></a><a name="decimalfromstring"></a> CGlobalUtils::D ecimalFromString
 
 ```
 BOOL DecimalFromString(
@@ -223,15 +224,15 @@ BOOL DecimalFromString(
 
 ### <a name="parameters"></a>Parametreler
 
-[çıkış] *ondalık*<br/>
+dışı *ondalık*<br/>
 
-[içinde] *psz*<br/>
+'ndaki *PSZ*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsfliprect"></a><a name="fliprect"></a>CGlobalUtils::FlipRect
+## <a name="cglobalutilsfliprect"></a><a name="fliprect"></a> CGlobalUtils:: FlipRect
 
 ```cpp
 void FlipRect(
@@ -241,12 +242,12 @@ void FlipRect(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde, dışarı] *rekt*<br/>
-[içinde] *nDerece*<br/>
+[in, out] *Rect*<br/>
+'ndaki *Nderece*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsforceadjustlayout"></a><a name="forceadjustlayout"></a>CGlobalUtils::ForceAdjustLayout
+## <a name="cglobalutilsforceadjustlayout"></a><a name="forceadjustlayout"></a> CGlobalUtils:: ForceAdjustLayout
 
 ```cpp
 void ForceAdjustLayout(
@@ -257,15 +258,15 @@ void ForceAdjustLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde, dışarı] *pDockManager*<br/>
+[in, out] *pDockManager*<br/>
 
-[içinde] *bKuvvet*<br/>
+'ndaki *Bzorla*<br/>
 
-[içinde] *bForceInvisible*<br/>
+'ndaki *Bforcegörünmez*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsgetdockingmanager"></a><a name="getdockingmanager"></a>CGlobalUtils::GetDockingManager
+## <a name="cglobalutilsgetdockingmanager"></a><a name="getdockingmanager"></a> CGlobalUtils:: GetDockingManager
 
 ```
 CDockingManager* GetDockingManager(CWnd* pWnd);
@@ -273,13 +274,13 @@ CDockingManager* GetDockingManager(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pWnd*<br/>
+'ndaki *pWnd*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsgetoppositealignment"></a><a name="getoppositealignment"></a>CGlobalUtils::GetOppositeAlignment
+## <a name="cglobalutilsgetoppositealignment"></a><a name="getoppositealignment"></a> CGlobalUtils:: Getoppositehizalaması
 
 ```
 DWORD GetOppositeAlignment(DWORD dwAlign);
@@ -287,13 +288,13 @@ DWORD GetOppositeAlignment(DWORD dwAlign);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *dwAlign*<br/>
+'ndaki *Dwalign*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsgetpaneandalignfrompoint"></a><a name="getpaneandalignfrompoint"></a>CGlobalUtils::GetPaneAndAlignFromPoint
+## <a name="cglobalutilsgetpaneandalignfrompoint"></a><a name="getpaneandalignfrompoint"></a> CGlobalUtils:: GetPaneAndAlignFromPoint
 
 ```
 BOOL GetPaneAndAlignFromPoint(
@@ -307,23 +308,23 @@ BOOL GetPaneAndAlignFromPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *barContainerManager*<br/>
+'ndaki *Barcontainermanager*<br/>
 
-[içinde] *pt*<br/>
+'ndaki *PT*<br/>
 
-[çıkış] *ppTargetControlBar*<br/>
+dışı *ppTargetControlBar*<br/>
 
-[çıkış] *dwHizalama*<br/>
+dışı *Dwhizalaması*<br/>
 
-[çıkış] *bTabArea*<br/>
+dışı *bTabArea*<br/>
 
-[çıkış] *bCaption*<br/>
+dışı *bCaption*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsgetwndicon"></a><a name="getwndicon"></a>CGlobalUtils::GetWndIcon
+## <a name="cglobalutilsgetwndicon"></a><a name="getwndicon"></a> CGlobalUtils:: GetWndIcon
 
 ```
 HICON GetWndIcon(CWnd* pWnd);
@@ -331,13 +332,13 @@ HICON GetWndIcon(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pWnd*<br/>
+'ndaki *pWnd*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilssetnewparent"></a><a name="setnewparent"></a>CGlobalUtils::SetNewParent
+## <a name="cglobalutilssetnewparent"></a><a name="setnewparent"></a> CGlobalUtils:: SetNewParent
 
 ```cpp
 void SetNewParent(
@@ -348,15 +349,15 @@ void SetNewParent(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *lstControlBars*<br/>
+'ndaki *Lstcontrolçubuklar*<br/>
 
-[içinde] *pNewParent*<br/>
+'ndaki *Pnewparent*<br/>
 
-[içinde] *bCheckGörünürlük*<br/>
+'ndaki *Bcheckvisibility*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsstringfromcy"></a><a name="stringfromcy"></a>CGlobalUtils::StringFromCy
+## <a name="cglobalutilsstringfromcy"></a><a name="stringfromcy"></a> CGlobalUtils:: StringFromCy
 
 ```
 BOOL StringFromCy(
@@ -366,15 +367,15 @@ BOOL StringFromCy(
 
 ### <a name="parameters"></a>Parametreler
 
-[çıkış] *str*<br/>
+dışı *Str*<br/>
 
-[içinde] *cy*<br/>
+'ndaki *Cy*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cglobalutilsstringfromdecimal"></a><a name="stringfromdecimal"></a>CGlobalUtils::StringFromOncimal
+## <a name="cglobalutilsstringfromdecimal"></a><a name="stringfromdecimal"></a> CGlobalUtils:: StringFromDecimal
 
 ```
 BOOL StringFromDecimal(
@@ -384,9 +385,9 @@ BOOL StringFromDecimal(
 
 ### <a name="parameters"></a>Parametreler
 
-[çıkış] *str*<br/>
+dışı *Str*<br/>
 
-[içinde] *ondalık*<br/>
+'ndaki *ondalık*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -394,5 +395,5 @@ BOOL StringFromDecimal(
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)

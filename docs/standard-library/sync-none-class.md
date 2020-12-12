@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sync_none sınıfı'
 title: sync_none Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - stdext::sync_none [C++], deallocate
 - stdext::sync_none [C++], equals
 ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1
-ms.openlocfilehash: dac4dc1182de32af485d37a00ff96370ea8d8943
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 34c4f42962b1dc8b8dc58f07cd54384e049789a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562122"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183353"
 ---
 # <a name="sync_none-class"></a>sync_none Sınıfı
 
 Eşitleme sağlayan bir [eşitleme filtresi](../standard-library/allocators-header.md) tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Cache>
@@ -41,7 +42,7 @@ Eşitleme filtresiyle ilişkili önbelleğin türü. [`cache_chunklist`](../stan
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
 |[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
-|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
+|[eşittir](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CFtpConnection sınıfı'
 title: CFtpConnection sınıfı
 ms.date: 08/29/2019
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CFtpConnection [MFC], Rename
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
-ms.openlocfilehash: 4ad2262b17208dd634b59f5df4d6e60c300bb3c1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 97c7c848a5724a670f324e1d1d26ea781265be27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832743"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184263"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 
@@ -134,7 +135,7 @@ FTP sunucu adını içeren bir dize işaretçisi.
 Oturum açmak için kullanıcının adını belirten, null ile sonlandırılmış bir dize işaretçisi. NULL ise, varsayılan olarak anonim olur.
 
 *pstrPassword*<br/>
-Oturum açmak için kullanılacak parolayı belirten, null ile sonlandırılmış bir dize işaretçisi. Hem *pstrPassword* hem de *PSTRUSERNAME* null ise, varsayılan Anonim parola kullanıcının e-posta adıdır. *PstrPassword* null (veya boş bir dize) ise, ancak *pstrUserName* null değilse boş bir parola kullanılır. Aşağıdaki tabloda *pstrUserName* ve *pstrPassword*öğesinin dört olası ayarlarının davranışı açıklanmaktadır:
+Oturum açmak için kullanılacak parolayı belirten, null ile sonlandırılmış bir dize işaretçisi. Hem *pstrPassword* hem de *PSTRUSERNAME* null ise, varsayılan Anonim parola kullanıcının e-posta adıdır. *PstrPassword* null (veya boş bir dize) ise, ancak *pstrUserName* null değilse boş bir parola kullanılır. Aşağıdaki tabloda *pstrUserName* ve *pstrPassword* öğesinin dört olası ayarlarının davranışı açıklanmaktadır:
 
 |*pstrUserName*|*pstrPassword*|FTP sunucusuna gönderilen Kullanıcı adı|FTP sunucusuna parola gönderildi|
 |--------------------|--------------------|---------------------------------|---------------------------------|
@@ -177,7 +178,7 @@ FTP sunucusundan bir yanıtın beklenip beklenmediğini belirtir. Aşağıdaki d
 - `CmdRespRead` Yanıt bekleniyor.
 - `CmdRespWrite` Kullanılmıyor.
 
-CmdResponseType, *AFXINET. h*Içinde tanımlanan CFtpConnection öğesinin bir üyesidir.
+CmdResponseType, *AFXINET. h* Içinde tanımlanan CFtpConnection öğesinin bir üyesidir.
 
 *dwFlags*<br/>
 Bu işlevi denetleyen bayrakları içeren bir değer. Tüm liste için bkz. [Ftpkomutu](/windows/win32/api/wininet/nf-wininet-ftpcommandw).
@@ -241,9 +242,9 @@ Dizinin adını alacak dize için bir işaretçi.
 *lpdwLen*<br/>
 Aşağıdaki bilgileri içeren bir DWORD işaretçisi işaretçisi:
 
-Girişte: *pstrDirName*tarafından başvurulan arabelleğin boyutu.
+Girişte: *pstrDirName* tarafından başvurulan arabelleğin boyutu.
 
-Dönüş sırasında: *pstrDirName*olarak depolanan karakterlerin sayısı. Üye işlevi başarısız olursa ve ERROR_INSUFFICIENT_BUFFER döndürülürse, *lpdwLen* , uygulamanın dizeyi almak için ayırabilmesi gereken bayt sayısını içerir.
+Dönüş sırasında: *pstrDirName* olarak depolanan karakterlerin sayısı. Üye işlevi başarısız olursa ve ERROR_INSUFFICIENT_BUFFER döndürülürse, *lpdwLen* , uygulamanın dizeyi almak için ayırabilmesi gereken bayt sayısını içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -278,9 +279,9 @@ Dizinin adını alacak dize için bir işaretçi.
 *lpdwLen*<br/>
 Aşağıdaki bilgileri içeren bir DWORD işaretçisi işaretçisi:
 
-Girişte: *pstrDirName*tarafından başvurulan arabelleğin boyutu.
+Girişte: *pstrDirName* tarafından başvurulan arabelleğin boyutu.
 
-Dönüş sırasında: *pstrDirName*olarak depolanan karakterlerin sayısı. Üye işlevi başarısız olursa ve ERROR_INSUFFICIENT_BUFFER döndürülürse, *lpdwLen* , uygulamanın dizeyi almak için ayırabilmesi gereken bayt sayısını içerir.
+Dönüş sırasında: *pstrDirName* olarak depolanan karakterlerin sayısı. Üye işlevi başarısız olursa ve ERROR_INSUFFICIENT_BUFFER döndürülürse, *lpdwLen* , uygulamanın dizeyi almak için ayırabilmesi gereken bayt sayısını içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -340,7 +341,7 @@ Dosyanın özniteliklerini gösterir. Bu, aşağıdaki FILE_ATTRIBUTE_ * bayrakl
 Aktarmanın gerçekleştiği koşulları belirtir. Bu parametre, Windows SDK [FtpGetFile](/windows/win32/api/wininet/nf-wininet-ftpgetfilew) bölümünde açıklanan *dwFlags* değerlerinden herhangi biri olabilir.
 
 *dwContext*<br/>
-Dosya alımı için bağlam tanımlayıcısı. *DwContext*hakkında daha fazla bilgi için bkz. **açıklamalar** .
+Dosya alımı için bağlam tanımlayıcısı. *DwContext* hakkında daha fazla bilgi için bkz. **açıklamalar** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -384,7 +385,7 @@ Sonraki aktarımların oluştuğu koşulları belirtir. Bu, aşağıdaki FTP_TRA
 - FTP 'nin Image (Type I) aktarma yöntemi kullanılarak dosya aktarımı verileri FTP_TRANSFER_TYPE_BINARY. Dosya, verileri tam olarak bulunduğu gibi, hiçbir değişiklik olmadan aktarır. Bu, varsayılan aktarım yöntemidir.
 
 *dwContext*<br/>
-Dosyayı açmaya yönelik bağlam tanımlayıcısı. *DwContext*hakkında daha fazla bilgi için bkz. **açıklamalar** .
+Dosyayı açmaya yönelik bağlam tanımlayıcısı. *DwContext* hakkında daha fazla bilgi için bkz. **açıklamalar** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -430,7 +431,7 @@ FTP sunucusunda oluşturulacak dosyanın adını içeren bir dize işaretçisi.
 Dosya aktarımının gerçekleştiği koşulları belirtir. [OpenFile](#openfile)içinde açıklanan FTP_TRANSFER_ * sabitlerinden herhangi biri olabilir.
 
 *dwContext*<br/>
-Dosyayı yerleştirmek için bağlam tanımlayıcısı. *DwContext*hakkında daha fazla bilgi için bkz. **açıklamalar** .
+Dosyayı yerleştirmek için bağlam tanımlayıcısı. *DwContext* hakkında daha fazla bilgi için bkz. **açıklamalar** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 

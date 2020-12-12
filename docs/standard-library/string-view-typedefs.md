@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: &lt; string_view &gt; tür tanımları'
 title: '&lt;string_view &gt; tür tanımları'
 ms.date: 04/19/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - xstring/std::u16string_view
 - xstring/std::u32string_view
 - xstring/std::wstring_view
-ms.openlocfilehash: 2afaaea466cc3b1ca46d2acdf0ceb5a42c597743
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8bef37a85469dbc076c3488b1c70b394e5c63915
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836136"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183653"
 ---
 # <a name="ltstring_viewgt-typedefs"></a>&lt;string_view &gt; tür tanımları
 

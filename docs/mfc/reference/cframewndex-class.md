@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CFrameWndEx sınıfı'
 title: CFrameWndEx sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -178,12 +179,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: 5aeffddcaa62732d2cba731f897f543e660cbab2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 81774a3f2c11504f3e3022faf4a109cb1bafdc29
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184276"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx sınıfı
 
@@ -426,7 +427,7 @@ BOOL DockPaneLeftOf(
 'ndaki Yerleştirilen bölme nesnesine yönelik bir işaretçi.
 
 *pLeftOf*<br/>
-'ndaki Sol taraftaki bölme için, *pBar*tarafından belirtilen bölmenin bir işaretçisi.
+'ndaki Sol taraftaki bölme için, *pBar* tarafından belirtilen bölmenin bir işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -451,7 +452,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir çubuk bölmesi *dwDockStyle*tarafından belirtilen çerçeve penceresi tarafına başarıyla YERLEŞTIRILMIŞSE true, aksi durumda false.
+Bir çubuk bölmesi *dwDockStyle* tarafından belirtilen çerçeve penceresi tarafına başarıyla YERLEŞTIRILMIŞSE true, aksi durumda false.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1915,11 +1916,11 @@ dışı Başarılı olursa, bu parametre belirtilen noktaya en yakın olan denet
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Noktayı*içeren denetim çubuğuna yönelik bir işaretçi; Denetim bulunamazsa NULL.
+*Noktayı* içeren denetim çubuğuna yönelik bir işaretçi; Denetim bulunamazsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem bir *nokta*için uygulamanızdaki tüm denetim çubuklarını arar.
+Bu yöntem bir *nokta* için uygulamanızdaki tüm denetim çubuklarını arar.
 
 Arama alanının boyutunu artırmak için *Nduyarlılık* kullanın. Yöntemin aradığı denetim çubuklarının türlerini kısıtlamak için *Prtcbartype* kullanın.
 

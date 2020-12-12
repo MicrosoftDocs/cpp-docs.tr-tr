@@ -1,5 +1,6 @@
 ---
-title: CGopherLocator Sınıf
+description: 'Daha fazla bilgi edinin: CGopherLocator sınıfı'
+title: CGopherLocator sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CGopherLocator
@@ -10,21 +11,21 @@ helpviewer_keywords:
 - CGopherLocator [MFC], CGopherLocator
 - CGopherLocator [MFC], GetLocatorType
 ms.assetid: 6fcc015f-5ae6-4959-b936-858634c71019
-ms.openlocfilehash: d23ef3dad68c62e74ec64454953ca372b8c31114
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f615ce6fbda150d923f6664acff207fdebdbba3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184029"
 ---
-# <a name="cgopherlocator-class"></a>CGopherLocator Sınıf
+# <a name="cgopherlocator-class"></a>CGopherLocator sınıfı
 
-Bir gopher sunucusundan bir gopher "bulucu" alır, bulucu türünü belirler ve bulucu [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md)için kullanılabilir hale getirir.
+Gopher sunucusundan bir gopher "Bulucu" alır, bulucunun türünü belirler ve Konumlandırıcı 'yı [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md)için kullanılabilir hale getirir.
 
 > [!NOTE]
-> Sınıflar `CGopherConnection`, `CGopherFile` `CGopherFileFind`, `CGopherLocator` , , windows xp platformunda çalışmıyor çünkü onların üyeleri küçümsenmiş, ancak önceki platformlarda çalışmaya devam edecektir.
+> Sınıflar `CGopherConnection` , `CGopherFile` , `CGopherFileFind` `CGopherLocator` ve üyeleri Windows XP platformunda çalışmadıklarından kullanım dışı bırakılmıştır, ancak önceki platformlarda çalışmaya devam ederler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CGopherLocator : public CObject
@@ -34,45 +35,45 @@ class CGopherLocator : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGopherLocator::CGopherLocator](#cgopherlocator)|Bir `CGopherLocator` nesne inşa eder.|
+|[CGopherLocator:: CGopherLocator](#cgopherlocator)|Bir `CGopherLocator` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGopherLocator::GetLocatorType](#getlocatortype)|Parses bir gopher bulucu ve özniteliklerini belirler.|
+|[CGopherLocator:: GetLocatorType](#getlocatortype)|Bir gopher Bulucu ayrıştırır ve özniteliklerini belirler.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGopherLocator::operatör LPCTSTR](#operator_lpctstr)|C stili dize olarak `CGopherLocator` bir nesnede depolanan karakterlere doğrudan erişir.|
+|[CGopherLocator:: operator LPCTSTR](#operator_lpctstr)|Bir nesnede depolanan karakterlere doğrudan `CGopherLocator` C stili dize olarak erişir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, bu sunucudan bilgi alabilene kadar bir gopher sunucusunun yer belirleyicisini almalıdır. Bir kez bulucatör var, opak bir belirteç olarak bulucu tedavi etmelidir.
+Bir uygulamanın bu sunucudan bilgi alabilmesi için bir Gopher sunucusunun Bulucu alması gerekir. Bulucuya sahip olduktan sonra, Konumlandırıcı 'yı donuk bir belirteç olarak değerlendirmelidir.
 
-Her gopher bulucu, bulunan dosya veya sunucu türünü belirleyen özniteliklere sahiptir. Goher yer bulucularının türlerinin listesi için [GetLocatorType'a](#getlocatortype) bakın.
+Her bir gopher Konumlandırıcı, bulunan dosya veya sunucu türünü belirleyecek özniteliklere sahiptir. Gopher Konumlandırıcı türlerinin listesi için bkz. [GetLocatorType](#getlocatortype) .
 
-Bir uygulama normalde CGopherFileFind aramaları için yer belirleyici [kullanır::FindFile](../../mfc/reference/cgopherfilefind-class.md#findfile) belirli bir bilgi parçası almak için.
+Bir uygulama, belirli bir bilgi parçasını almak için normalde, [CGopherFileFind:: FindFile](../../mfc/reference/cgopherfilefind-class.md#findfile) çağrıları için bulucu kullanır.
 
-Diğer MFC `CGopherLocator` Internet sınıfları ile nasıl çalıştığı hakkında daha fazla bilgi edinmek için [WinInet ile internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesine bakın.
+Diğer MFC Internet sınıflarıyla nasıl çalıştığı hakkında daha fazla bilgi edinmek için `CGopherLocator` bkz. [Winınet Ile Internet programlama](../../mfc/win32-internet-extensions-wininet.md)makalesi.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 `CGopherLocator`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxinet.h
+**Üstbilgi:** AFXINET. h
 
-## <a name="cgopherlocatorcgopherlocator"></a><a name="cgopherlocator"></a>CGopherLocator::CGopherLocator
+## <a name="cgopherlocatorcgopherlocator"></a><a name="cgopherlocator"></a> CGopherLocator:: CGopherLocator
 
-Bu üye işlev bir `CGopherLocator` nesne oluşturmak için çağrılır.
+Bu üye işlevi bir nesne oluşturmak için çağırılır `CGopherLocator` .
 
 ```
 CGopherLocator(const CGopherLocator& ref);
@@ -81,15 +82,15 @@ CGopherLocator(const CGopherLocator& ref);
 ### <a name="parameters"></a>Parametreler
 
 *ref*<br/>
-Sabit `CGopherLocator` bir nesneye başvuru.
+Sabit bir `CGopherLocator` nesneye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir `CGopherLocator` nesneyi doğrudan oluşturmazsınız. Bunun yerine, [CGopherConnection::CreateLocator'u](../../mfc/reference/cgopherconnection-class.md#createlocator) arayarak `CGopherLocator` bir işaretçi oluşturun ve nesneye döndürün.
+Hiçbir şekilde doğrudan bir nesne oluşturmamanız gerekir `CGopherLocator` . Bunun yerine, nesnesine bir işaretçi oluşturmak ve döndürmek için [CGopherConnection:: CreateLocator](../../mfc/reference/cgopherconnection-class.md#createlocator) ' ı çağırın `CGopherLocator` .
 
-## <a name="cgopherlocatorgetlocatortype"></a><a name="getlocatortype"></a>CGopherLocator::GetLocatorType
+## <a name="cgopherlocatorgetlocatortype"></a><a name="getlocatortype"></a> CGopherLocator:: GetLocatorType
 
-Yer bulucu türünü almak için bu üye işlevi arayın.
+Konumlandırıcı türünü almak için bu üye işlevini çağırın.
 
 ```
 BOOL GetLocatorType(DWORD& dwRef) const;
@@ -98,46 +99,46 @@ BOOL GetLocatorType(DWORD& dwRef) const;
 ### <a name="parameters"></a>Parametreler
 
 *dwRef*<br/>
-Yer bulucu türünü alacak bir DWORD başvurusu. Yer bulucu türleri tablosu için **Açıklamalar'a** bakın.
+Bulucu türünü alacak bir DWORD başvurusu. Konumlandırıcı türleri tablosunun **açıklamalarını** inceleyin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0. Arama başarısız olursa, hatanın nedenini belirlemek için Win32 işlevi [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) çağrılabilir.
+Başarılı olursa sıfır dışı; Aksi takdirde 0. Çağrı başarısız olursa, hatanın nedenini öğrenmek için WIN32 [Win32 işlevi çağrılabilir](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olası türleri aşağıdaki gibidir:
+Olası türler şunlardır:
 
 |Değer|Anlamı|
 |-----------|-------------|
 |GOPHER_TYPE_TEXT_FILE|ASCII metin dosyası.|
 |GOPHER_TYPE_DIRECTORY|Ek Gopher öğelerinin dizini.|
-|GOPHER_TYPE_CSO|Bir CSO telefon rehberi sunucusu.|
-|GOPHER_TYPE_ERROR|Bir hata durumunu gösterir.|
-|GOPHER_TYPE_MAC_BINHEX|BINHEX formatında bir Macintosh dosyası.|
-|GOPHER_TYPE_DOS_ARCHIVE|DoS arşiv dosyası.|
-|GOPHER_TYPE_UNIX_UUENCODED|UUENCODED dosyası.|
-|GOPHER_TYPE_INDEX_SERVER|Dizin sunucusu.|
-|GOPHER_TYPE_TELNET|Bir Telnet Sunucusu.|
-|GOPHER_TYPE_BINARY|İkili bir dosya.|
-|GOPHER_TYPE_REDUNDANT|Yinelenen bir sunucu. İçerdeki bilgiler birincil sunucunun bir kopyasıdır. Birincil sunucu, GOPHER_TYPE_REDUNDANT türü olmayan son dizin girişidir.|
+|GOPHER_TYPE_CSO|Bir CSO telefon book sunucusu.|
+|GOPHER_TYPE_ERROR|Bir hata koşulunu gösterir.|
+|GOPHER_TYPE_MAC_BINHEX|BINHEX biçimindeki bir Macintosh dosyası.|
+|GOPHER_TYPE_DOS_ARCHIVE|Bir DOS arşiv dosyası.|
+|GOPHER_TYPE_UNIX_UUENCODED|Bir UUENCODED dosyası.|
+|GOPHER_TYPE_INDEX_SERVER|Bir dizin sunucusu.|
+|GOPHER_TYPE_TELNET|Bir Telnet sunucusu.|
+|GOPHER_TYPE_BINARY|İkili dosya.|
+|GOPHER_TYPE_REDUNDANT|Yinelenen bir sunucu. İçinde yer alan bilgiler, birincil sunucunun yinelemesi olur. Birincil sunucu, GOPHER_TYPE_REDUNDANT türüne sahip olmayan son dizin girişi.|
 |GOPHER_TYPE_TN3270|Bir TN3270 sunucusu.|
 |GOPHER_TYPE_GIF|Bir GIF grafik dosyası.|
-|GOPHER_TYPE_IMAGE|Bir resim dosyası.|
-|GOPHER_TYPE_BITMAP|Bir bitmap dosyası.|
+|GOPHER_TYPE_IMAGE|Bir görüntü dosyası.|
+|GOPHER_TYPE_BITMAP|Bir bit eşlem dosyası.|
 |GOPHER_TYPE_MOVIE|Bir film dosyası.|
 |GOPHER_TYPE_SOUND|Bir ses dosyası.|
 |GOPHER_TYPE_HTML|Bir HTML belgesi.|
-|GOPHER_TYPE_PDF|Bir PDF dosyası.|
+|GOPHER_TYPE_PDF|PDF dosyası.|
 |GOPHER_TYPE_CALENDAR|Bir takvim dosyası.|
-|GOPHER_TYPE_INLINE|Satır lı bir dosya.|
+|GOPHER_TYPE_INLINE|Satır içi bir dosya.|
 |GOPHER_TYPE_UNKNOWN|Öğe türü bilinmiyor.|
-|GOPHER_TYPE_ASK|Ask+ öğesi.|
-|GOPHER_TYPE_GOPHER_PLUS|Bir Gopher+ öğesi.|
+|GOPHER_TYPE_ASK|Bir ask ve öğesi.|
+|GOPHER_TYPE_GOPHER_PLUS|Gopher + öğesi.|
 
-## <a name="cgopherlocatoroperator-lpctstr"></a><a name="operator_lpctstr"></a>CGopherLocator::operatör LPCTSTR
+## <a name="cgopherlocatoroperator-lpctstr"></a><a name="operator_lpctstr"></a> CGopherLocator:: operator LPCTSTR
 
-Bu kullanışlı döküm işleci, bir nesnede bulunan null-terminated C dizesine erişmek için etkili bir `CGopherLocator` yöntem sağlar.
+Bu kullanışlı atama işleci, bir nesnede bulunan null ile sonlandırılmış C dizesine erişmek için verimli bir yöntem sağlar `CGopherLocator` .
 
 ```
 operator LPCTSTR () const;
@@ -145,14 +146,14 @@ operator LPCTSTR () const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize verilerine bir karakter işaretçisi.
+Dizenin verilerine yönelik bir karakter işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hiçbir karakter kopyalanır; yalnızca bir işaretçi döndürülür.
+Hiçbir karakter kopyalanmaz; yalnızca bir işaretçi döndürülür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CGopherFileFind Sınıf](../../mfc/reference/cgopherfilefind-class.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CGopherFileFind sınıfı](../../mfc/reference/cgopherfilefind-class.md)

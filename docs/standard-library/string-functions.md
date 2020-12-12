@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; dize &gt; işlevleri'
 title: '&lt;dize &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::to_string [C++]
 - std::to_wstring [C++]
-ms.openlocfilehash: 350a66481c7061322f08a768ec1628598f4af68e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 859cb6db2e02ad5e915b5d8f3ed31aaf7e443580
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183743"
 ---
 # <a name="ltstringgt-functions"></a>&lt;dize &gt; işlevleri
 
@@ -97,7 +98,7 @@ Giriş akışı *in_stream*.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`(1)` *Ayırıcı* bulunana kadar *in_stream* ayıklama karakterlerini işaretlenen işlev imzası çifti, bunları *Str*içinde depolar.
+`(1)` *Ayırıcı* bulunana kadar *in_stream* ayıklama karakterlerini işaretlenen işlev imzası çifti, bunları *Str* içinde depolar.
 
 İşaretlenen işlev imzası çifti, `(2)` varsayılan satır sınırlayıcısı olarak yeni satırı kullanır ve gibi davranır `getline(in_stream, str, in_stream. widen('\n'))` .
 
@@ -107,7 +108,7 @@ Aşağıdakilerden biri gerçekleştiğinde ayıklama işlemi duraklar:
 
 - Dosyanın sonunda, *in_stream* iç durum bayrağı olarak ayarlanır `ios_base::eofbit` .
 
-- İşlev, eşit *sınırlayıcıyla*karşılaştırılmış bir öğeyi ayıkladıktan sonra. Öğe, denetimli diziye geri yerleştirmez veya eklenmez.
+- İşlev, eşit *sınırlayıcıyla* karşılaştırılmış bir öğeyi ayıkladıktan sonra. Öğe, denetimli diziye geri yerleştirmez veya eklenmez.
 
 - İşlev `str.` [max_size](../standard-library/basic-string-class.md#max_size) öğeleri ayıkladıktan sonra. *İn_stream* iç durum bayrağı olarak ayarlanır `ios_base::failbit` .
 
@@ -115,7 +116,7 @@ Aşağıdakilerden biri gerçekleştiğinde ayıklama işlemi duraklar:
 
 İç durum bayrakları hakkında daha fazla bilgi için bkz. [ios_base:: ıostate](../standard-library/ios-base-class.md#iostate).
 
-İşlev hiçbir öğe ayıkladıysanız, *in_stream* iç durum bayrağı olarak ayarlanır `ios_base::failbit` . Herhangi bir durumda `getline` *in_stream*döndürür.
+İşlev hiçbir öğe ayıkladıysanız, *in_stream* iç durum bayrağı olarak ayarlanır `ios_base::failbit` . Herhangi bir durumda `getline` *in_stream* döndürür.
 
 Bir özel durum oluşturulursa, *in_stream* ve *Str* geçerli bir durumda bırakılır.
 
@@ -451,7 +452,7 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, *sol taraftaki*özelleştirilmiş üye işlevini yürütür. Sabit karmaşıklığı garanti eden dizeler için [takas](../standard-library/basic-string-class.md#swap)(*sağ*).
+Şablon işlevi, *sol taraftaki* özelleştirilmiş üye işlevini yürütür. Sabit karmaşıklığı garanti eden dizeler için [takas](../standard-library/basic-string-class.md#swap)(*sağ*).
 
 ### <a name="example"></a>Örnek
 
@@ -515,23 +516,23 @@ Dönüştürülecek değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, öğesini *value* çağırarak bir Array nesnesinde depolanan bir öğe dizisine `Buf` `sprintf(Buf, Fmt, value)` , `Fmt`
+İşlevi, öğesini  çağırarak bir Array nesnesinde depolanan bir öğe dizisine `Buf` `sprintf(Buf, Fmt, value)` , `Fmt`
 
-- `"%d"`*değer* tür ise**`int`**
+- `"%d"`*değer* tür ise **`int`**
 
-- `"%u"`*değer* tür ise**`unsigned int`**
+- `"%u"`*değer* tür ise **`unsigned int`**
 
-- `"%ld"`*değer* tür ise**`long`**
+- `"%ld"`*değer* tür ise **`long`**
 
-- `"%lu"`*değer* tür ise**`unsigned long`**
+- `"%lu"`*değer* tür ise **`unsigned long`**
 
-- `"%lld"`*değer* tür ise**`long long`**
+- `"%lld"`*değer* tür ise **`long long`**
 
-- `"%llu"`*değer* tür ise**`unsigned long long`**
+- `"%llu"`*değer* tür ise **`unsigned long long`**
 
-- `"%f"`*değer* tür ise **`float`** veya**`double`**
+- `"%f"`*değer* tür ise **`float`** veya **`double`**
 
-- `"%Lf"`*değer* tür ise**`long double`**
+- `"%Lf"`*değer* tür ise **`long double`**
 
 İşlev döndürür `string(Buf)` .
 
@@ -562,23 +563,23 @@ Değeri temsil eden geniş dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, öğesini *value* çağırarak bir Array nesnesinde depolanan bir öğe dizisine `Buf` `swprintf(Buf, Len, Fmt, value)` , `Fmt`
+İşlevi, öğesini  çağırarak bir Array nesnesinde depolanan bir öğe dizisine `Buf` `swprintf(Buf, Len, Fmt, value)` , `Fmt`
 
-- `L"%d"`*değer* tür ise**`int`**
+- `L"%d"`*değer* tür ise **`int`**
 
-- `L"%u"`*değer* tür ise**`unsigned int`**
+- `L"%u"`*değer* tür ise **`unsigned int`**
 
-- `L"%ld"`*değer* tür ise**`long`**
+- `L"%ld"`*değer* tür ise **`long`**
 
-- `L"%lu"`*değer* tür ise**`unsigned long`**
+- `L"%lu"`*değer* tür ise **`unsigned long`**
 
-- `L"%lld"`*değer* tür ise**`long long`**
+- `L"%lld"`*değer* tür ise **`long long`**
 
-- `L"%llu"`*değer* tür ise**`unsigned long long`**
+- `L"%llu"`*değer* tür ise **`unsigned long long`**
 
-- `L"%f"`*değer* tür ise **`float`** veya**`double`**
+- `L"%f"`*değer* tür ise **`float`** veya **`double`**
 
-- `L"%Lf"`*değer* tür ise**`long double`**
+- `L"%Lf"`*değer* tür ise **`long double`**
 
 İşlev döndürür `wstring(Buf)` .
 

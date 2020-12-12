@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sync_per_container sınıfı'
 title: sync_per_Kapsayıcı Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - sync_per_container class
 ms.assetid: 0b4b2904-b668-4d94-a422-d4f919cbffab
-ms.openlocfilehash: 51a88e6ec4eca693c652635e1574e3611d7217cd
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 83dc2f3d874fdc1910a3da4fdc34fb18c432cc25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562109"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183318"
 ---
 # <a name="sync_per_container-class"></a>sync_per_Kapsayıcı Sınıfı
 
 Her ayırıcı nesnesi için ayrı bir önbellek nesnesi sağlayan bir [eşitleme filtresi](../standard-library/allocators-header.md) tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Cache>
@@ -35,7 +36,7 @@ Eşitleme filtresiyle ilişkili önbelleğin türü. [`cache_chunklist`](../stan
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
+|[eşittir](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 

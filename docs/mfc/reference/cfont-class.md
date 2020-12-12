@@ -1,5 +1,6 @@
 ---
-title: CFont Sınıfı
+description: 'Daha fazla bilgi edinin: CFont sınıfı'
+title: CFont sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CFont
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - CFont [MFC], FromHandle
 - CFont [MFC], GetLogFont
 ms.assetid: 3fad6bfe-d6ce-4ab9-967a-5ce0aa102800
-ms.openlocfilehash: 36fd469b182d5f3e0d3449112d04c1a8623d7526
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4c3df138c80aeb572a4e449e7fe1065e70b5fe49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373837"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184419"
 ---
-# <a name="cfont-class"></a>CFont Sınıfı
+# <a name="cfont-class"></a>CFont sınıfı
 
-Bir Windows grafik aygıtı arabirimini (GDI) kapsüller ve yazı tipini işlemek için üye işlevler sağlar.
+Windows grafik cihaz arabirimi (GDI) yazı tipini kapsüller ve yazı tipini işlemek için üye işlevleri sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CFont : public CGdiObject
@@ -41,50 +42,50 @@ class CFont : public CGdiObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CFont::CFont](#cfont)|Bir `CFont` nesne inşa eder.|
+|[CFont:: CFont](#cfont)|Bir `CFont` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CFont::CreateFont](#createfont)|Belirtilen özelliklere `CFont` sahip bir baş harfe ayrılır.|
-|[CFont::CreateFontIndirect](#createfontindirect)|Bir yapıda `CFont` verilen özelliklere sahip `LOGFONT` bir nesneyi başolarak karşılar.|
-|[CFont::CreatePointFont](#createpointfont)|Belirtilen yüksekliğe `CFont` sahip bir noktayı, bir noktanın onda birinde ölçülen bir harfi ve yazı tipini başolarak karşılar.|
-|[CFont::CreatePointFontIndirect](#createpointfontindirect)|Yazı `CreateFontIndirect` tipi yüksekliğinin mantıksal birimler yerine bir noktanın onda biri olarak ölçülmesi dışında aynıdır.|
-|[CFont::FromHandle](#fromhandle)|Windows HFONT `CFont` verildiğinde bir nesneye işaretçi döndürür.|
-|[CFont::GetlogFont](#getlogfont)|Nesneye `CFont` `LOGFONT` iliştirilen mantıksal yazı tipi hakkında bilgi ile a doldurur.|
+|[CFont:: CreateFont](#createfont)|`CFont`Belirtilen özelliklerle bir ile başlatır.|
+|[CFont:: CreateFontIndirect](#createfontindirect)|Bir `CFont` yapıda verilen özelliklerle bir nesnesi başlatır `LOGFONT` .|
+|[CFont:: CreatePointFont](#createpointfont)|`CFont`Belirtilen yüksekliğiyle, bir noktanın onda birinde ölçülen ve yazı biçiminin üzerine bir başlatır.|
+|[CFont:: CreatePointFontIndirect](#createpointfontindirect)|`CreateFontIndirect`Yazı tipi yüksekliğinin, mantıksal birimler yerine bir noktanın onda ölçüldüğü ile aynıdır.|
+|[CFont:: FromHandle](#fromhandle)|Bir `CFont` Windows HFONT verildiğinde bir nesneye bir işaretçi döndürür.|
+|[CFont:: GetLogFont](#getlogfont)|`LOGFONT`Nesneye eklenen mantıksal yazı tipiyle ilgili bilgileri bir ile doldurur `CFont` .|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CFont::operatör HFONT](#operator_hfont)|Nesneye bağlı Windows GDI yazı `CFont` tipi tutamacını döndürür.|
+|[CFont:: operator HFONT](#operator_hfont)|Nesnesine eklenen Windows GDI yazı tipi tanıtıcısını döndürür `CFont` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CFont` Bir nesne kullanmak için, `CFont` bir nesne oluşturmak ve CreateFont , [CreateFontIndirect](#createfontindirect), CreatePointFont , veya [CreateFont](#createfont) [CreatePointFontIndirect](#createpointfontindirect)ile bir Windows yazı tipi eklemek ve sonra yazı tipi işlemek için nesnenin üye işlevlerini kullanın. [CreatePointFont](#createpointfont)
+Bir nesne kullanmak için `CFont` , bir `CFont` nesne oluşturun ve bunu [CreateFont](#createfont), [createfontınmıtfont](#createfontindirect)veya [CreatePointFontIndirect](#createpointfontindirect)ile bir Windows yazı tipi ile ekleyin ve sonra da nesnenin üye işlevlerini kullanarak yazı tipini değiştirin. [](#createpointfont)
 
-`CreatePointFont` Ve `CreatePointFontIndirect` işlevlerin kullanımı genellikle, `CreateFont` yazı `CreateFontIndirect` tipinin yüksekliği için bir nokta boyutundan mantıksal birimlere otomatik olarak dönüştürme yaptıklarından daha kolaydır.
+`CreatePointFont`Ve `CreatePointFontIndirect` işlevlerinin kullanımı genellikle daha kolay olur ve `CreateFont` `CreateFontIndirect` bu yana yazı tipinin yüksekliğinin bir nokta boyutundan mantıksal birimlere otomatik olarak dönüştürülmesini sağlar.
 
-Daha fazla `CFont`bilgi için [Bkz. Grafik Nesneler.](../../mfc/graphic-objects.md)
+Hakkında daha fazla bilgi için `CFont` bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cgdiobject](../../mfc/reference/cgdiobject-class.md)
+[CGdiObject](../../mfc/reference/cgdiobject-class.md)
 
 `CFont`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cfontcfont"></a><a name="cfont"></a>CFont::CFont
+## <a name="cfontcfont"></a><a name="cfont"></a> CFont:: CFont
 
-Bir `CFont` nesne inşa eder.
+Bir `CFont` nesnesi oluşturur.
 
 ```
 CFont();
@@ -92,15 +93,15 @@ CFont();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ortaya çıkan `CreateFont`nesne , , `CreateFontIndirect` `CreatePointFont`, veya `CreatePointFontIndirect` kullanılabilir önce ile başharflealınmalıdır.
+Elde edilen nesne, kullanılmadan önce,, veya ile başlatılmalıdır `CreateFont` `CreateFontIndirect` `CreatePointFont` `CreatePointFontIndirect` .
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#70](../../mfc/codesnippet/cpp/cfont-class_1.cpp)]
 
-## <a name="cfontcreatefont"></a><a name="createfont"></a>CFont::CreateFont
+## <a name="cfontcreatefont"></a><a name="createfont"></a> CFont:: CreateFont
 
-Belirtilen özelliklere `CFont` sahip bir nesneyi başolarak karşılar.
+`CFont`Belirtilen özelliklerle bir nesne başlatır.
 
 ```
 BOOL CreateFont(
@@ -122,79 +123,79 @@ BOOL CreateFont(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nheight*<br/>
-Yazı tipinin istenen yüksekliğini (mantıksal birimler halinde) belirtir. Açıklama `lfHeight` için Windows SDK'daki [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw)yapısının üyesine bakın. *nHeight'ın* mutlak değeri dönüştürüldükten sonra 16.384 aygıt birimini geçmemelidir. Tüm yükseklik karşılaştırmaları için, yazı tipi eşlemesi, tüm yazı tipleri istenen boyutu aşıyorsa, istenen boyutu veya en küçük yazı tipini aşmayan en büyük yazı tipini arar.
+*nHeight*<br/>
+Yazı tipinin istenen yüksekliğini (mantıksal birimler cinsinden) belirtir. `lfHeight`Bir açıklama için Windows SDK [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw)yapısının üyesine bakın. *NHeight* öğesinin mutlak değeri, dönüştürüldükten sonra 16.384 cihaz birimini aşmamalıdır. Tüm yükseklik karşılaştırmaları için, yazı tipi Eşleyici istenen boyutu aşmayan en büyük yazı tipini veya tüm fontlar istenen boyutu aşarsa en küçük yazı tipini arar.
 
-*Nwidth*<br/>
-Yazı tipindeki karakterlerin ortalama genişliğini (mantıksal birimler halinde) belirtir. *nWidth* 0 ise, aygıtın en boy oranı, farkın mutlak değerine göre belirlenen en yakın eşleşmeyi bulmak için kullanılabilir yazı tiplerinin sayısallaştırma en boy oranıyla eşleşir.
+*nWidth*<br/>
+Yazı tipindeki karakterlerin ortalama genişliğini (mantıksal birimler cinsinden) belirtir. *NWidth* 0 ise, cihazın en boy oranı, fark değerinin mutlak değeri tarafından belirlenen en yakın eşleşmeyi bulmak için kullanılabilir yazı tiplerinin sayısal oranına göre eşleştirilir.
 
-*nEscapement*<br/>
-Kaçış vektörü ile görüntü yüzeyinin x ekseni arasındaki açıyı (0,1 derecelik birimler halinde) belirtir. Kaçış vektörü, bir çizgiüzerindeki ilk ve son karakterlerin kökenleri arasındaki çizgidir. Açı x ekseninden saat yönünün tersine ölçülür. Daha `lfEscapement` fazla bilgi `LOGFONT` için Windows SDK'daki yapıdaki üyeye bakın.
+*Nessepement*<br/>
+Yürüyen pement vektörü ile görüntü yüzeyinin x ekseni arasındaki açıyı (0,1 derece birimler cinsinden) belirtir. Yürüyen pement vektörü, satırdaki ilk ve son karakterlerin kaynakları arasındaki satırdır. Açı x ekseninden saatin tersi yönde ölçülür. `lfEscapement` `LOGFONT` Daha fazla bilgi için Windows SDK yapısındaki üyeye bakın.
 
-*nOrororasyon*<br/>
-Bir karakterin taban çizgisi ile x ekseni arasındaki açıyı (0,1 derecelik birimler halinde) belirtir. Açı, y-yönünün aşağı ve saat yönünde olduğu koordinat sistemleri için x ekseninden saat yönünün karşıölçülür.
+*nOrientation*<br/>
+Bir karakterin ve x ekseninin taban çizgisi arasındaki açıyı (0,1 derece birimler cinsinden) belirtir. Açı, y yönünün doğru olduğu koordinat sistemleri için x ekseninden ve y yönünün kullanıldığı koordinat sistemleri için x ekseninden saat yönünde ölçülür.
 
-*nAğırlık*<br/>
-Yazı tipi ağırlığını belirtir (1000'de mürekkepli piksellerde). Daha fazla bilgi için `LOGFONT` Windows SDK'daki yapıdaki *lfWeight* üyesine bakın. Açıklanan değerler yaklaşık; gerçek görünüm yazı tipine bağlıdır. Bazı yazı tiplerinde yalnızca FW_NORMAL, FW_REGULAR ve FW_BOLD ağırlıkları vardır. FW_DONTCARE belirtilirse, varsayılan bir ağırlık kullanılır.
+*nWeight*<br/>
+Yazı tipi kalınlığını belirtir (1000 başına düşen piksellerde). Daha fazla bilgi için Windows SDK yapısındaki *lfWeight* üyesine bakın `LOGFONT` . Açıklanan değerler yaklaşık değerlerdir; Asıl görünüm, yazı tipine bağlıdır. Bazı yazı tiplerinde yalnızca FW_NORMAL, FW_REGULAR ve FW_BOLD ağırlıkları vardır. FW_DONTCARE belirtilirse, varsayılan bir ağırlık kullanılır.
 
-*bItalik*<br/>
+*Bitic*<br/>
 Yazı tipinin italik olup olmadığını belirtir.
 
 *bUnderline*<br/>
 Yazı tipinin altı çizili olup olmadığını belirtir.
 
-*cStrikeOut*<br/>
-Yazı tipindeki karakterlerin çıkarılıp çıkarılmayacağını belirtir. Sıfır olmayan bir değere ayarlanmışsa, bir strikeout yazı tipi belirtir.
+*Cüstü çizili*<br/>
+Yazı tipindeki karakterlerin aşağı çizili olup olmayacağını belirtir. Sıfır dışında bir değere ayarlandıysa, üstü çizili yazı tipini belirtir.
 
 *nCharSet*<br/>
-Yazı tipinin karakter kümesini belirtir `lfCharSet` Değerler `LOGFONT` listesi için Windows SDK'daki yapıdaki üyeyi görün.
+Yazı tipinin karakter seti `lfCharSet` `LOGFONT` değerini belirtir bir değer listesi için Windows SDK yapısındaki üyeyi görüntüleyin.
 
-OEM karakter kümesi sisteme bağlıdır.
+OEM karakter kümesi sisteme bağımlıdır.
 
-Sistemde başka karakter kümelerine sahip yazı tipleri bulunabilir. Bilinmeyen karakter kümesine sahip bir yazı tipi kullanan bir uygulama, bu yazı tipiyle oluşturulacak dizeleri çevirmeye veya yorumlamaya çalışmamalıdır. Bunun yerine, dizeleri doğrudan çıkış aygıtı sürücüsüne geçirilmelidir.
+Diğer karakter kümelerine sahip yazı tipleri sistemde bulunabilir. Bilinmeyen bir karakter kümesine sahip bir yazı tipi kullanan bir uygulama, bu yazı tipiyle işlenecek dizeleri çevirmeye veya yorumlamaya çalışmamalıdır. Bunun yerine, dizeler doğrudan çıkış cihazı sürücüsüne geçirilmelidir.
 
-Yazı tipi eşleği DEFAULT_CHARSET değerini kullanmaz. Bir uygulama, bir yazı tipinin adını ve boyutunun mantıksal yazı tipini tam olarak tanımlamasına izin vermek için bu değeri kullanabilir. Belirtilen ada sahip bir yazı tipi yoksa, herhangi bir karakter kümesinden bir yazı tipi belirtilen yazı tipi nin yerine geçilebilir. Beklenmeyen sonuçları önlemek için, uygulamalar DEFAULT_CHARSET değerini dikkatli kullanmalıdır.
+Yazı tipi Eşleyici DEFAULT_CHARSET değerini kullanmıyor. Bir uygulama bu değeri, bir yazı tipinin adının ve boyutunun mantıksal yazı tipi tam olarak tanımlanmasına olanak tanımak için kullanabilir. Belirtilen ada sahip bir yazı tipi yoksa, herhangi bir karakter kümesindeki bir yazı tipi belirtilen yazı tipi için değiştirilebilir. Beklenmedik sonuçlara engel olmak için, uygulamalar DEFAULT_CHARSET değerini gelişigüzel bir şekilde kullanmalıdır.
 
 *nOutPrecision*<br/>
-İstenilen çıkış hassasiyetini belirtir. Çıktı kesinlemi, çıktının istenen yazı tipinin yüksekliği, genişliği, karakter yönü, kaçış ve perdeyle ne kadar yakından eşleşmesi gerektiğini tanımlar. Değerler `lfOutPrecision` listesi ve `LOGFONT` daha fazla bilgi için Windows SDK'daki yapıdaki üyeye bakın.
+İstenen çıkış hassasiyetini belirtir. Çıkış hassasiyeti, çıktının istenen yazı tipinin yüksekliği, genişliği, karakter yönü, yürüyen soyı ve sıklık ile ne kadar yakın olduğunu tanımlar. `lfOutPrecision` `LOGFONT` Değer listesi ve daha fazla bilgi için Windows SDK yapısındaki üyeye bakın.
 
 *nClipPrecision*<br/>
-İstenilen kırpma hassasiyetini belirtir. Kırpma hassasiyeti, kırpma bölgesinin kısmen dışında kalan karakterlerin nasıl kesişeceklerini tanımlar. Değerler `lfClipPrecision` listesi için `LOGFONT` Windows SDK'daki yapıdaki üyeye bakın.
+İstenen kırpma hassasiyetini belirtir. Kırpma hassasiyeti, kırpma bölgesinin kısmen dışında olan karakterlerin nasıl kırpılmasını tanımlar. `lfClipPrecision` `LOGFONT` Değerlerin listesi için Windows SDK yapısındaki üyeye bakın.
 
-Katıştılmış salt okunur yazı tipini kullanmak için uygulamanın CLIP_ENCAPSULATE belirtmesi gerekir.
+Katıştırılmış salt biçimli bir yazı tipi kullanmak için, bir uygulamanın CLIP_ENCAPSULATE belirtmesi gerekir.
 
-Aygıt, TrueType ve vektör yazı tiplerinin tutarlı bir şekilde döndürülmesini sağlamak için, bir uygulama CLIP_LH_ANGLES değerini diğer *nClipPrecision* değerlerinden herhangi biriyle birleştirmek için OR işleci'ni kullanabilir. CLIP_LH_ANGLES biti ayarlanırsa, tüm yazı tiplerinin döndürmesi koordinat sisteminin yönünün solak mı yoksa sağ elle mi olduğuna bağlıdır. (Koordinat sistemlerinin yönü hakkında daha fazla bilgi için *nOrientation* parametresinin açıklamasına bakın.) CLIP_LH_ANGLES ayarlı değilse, aygıt yazı tipleri her zaman saat yönünün tersine döner, ancak diğer yazı tiplerinin döndürmesi koordinat sisteminin yönlendirmeye bağlıdır.
+Cihaz, TrueType ve vektör yazı tiplerinin tutarlı bir şekilde döndürülmesini sağlamak için, bir uygulama veya işlecini kullanarak CLIP_LH_ANGLES değerini diğer *nClipPrecision* değerlerinden herhangi biriyle birleştirebilir. CLIP_LH_ANGLES bit ayarlandıysa, tüm yazı tiplerinin dönüşü koordinat sisteminin yönünün sola veya sağ elli olmasına bağlıdır. (Koordinat sistemlerinin yönü hakkında daha fazla bilgi için, *nOrientation* parametresinin açıklamasına bakın.) CLIP_LH_ANGLES ayarlanmamışsa, cihaz yazı tipleri her zaman saatin tersi döndürülür, ancak diğer yazı tiplerinin dönüşü koordinat sisteminin yönüne bağlıdır.
 
-*nKalite*<br/>
-GDI'nin mantıksal yazı tipi özniteliklerini gerçek bir fiziksel yazı tipininkilerle eşleştirmeye ne kadar dikkatli çalışması gerektiğini tanımlayan yazı tipinin çıktı kalitesini belirtir. Değerler `lfQuality` listesi için `LOGFONT` Windows SDK'daki yapıdaki üyeye bakın.
+*nQuality*<br/>
+GDI 'nın mantıksal yazı tipi özniteliklerini gerçek fiziksel yazı tipine göre eşleştirmeye ne kadar dikkatli olduğunu tanımlayan yazı tipinin çıkış kalitesini belirtir. `lfQuality` `LOGFONT` Değerlerin listesi için Windows SDK yapısındaki üyeye bakın.
 
-*nPitchAndFamily*<br/>
-Yazı tipinin perdesini ve ailesini belirtir. Değerler `lfPitchAndFamily` listesi ve `LOGFONT` daha fazla bilgi için Windows SDK'daki yapıdaki üyeye bakın.
+*Nstachandfamily*<br/>
+Yazı tipinin perdesini ve ailesini belirtir. `lfPitchAndFamily` `LOGFONT` Değer listesi ve daha fazla bilgi için Windows SDK yapısındaki üyeye bakın.
 
 *lpszFacename*<br/>
-Yazı `CString` tipinin yazı tipi adını belirten null-sonlandırılan dize için bir veya işaretçi. Bu dize uzunluğu 30 karakter geçmemelidir. Windows [EnumFontFamilies](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesw) işlevi, şu anda kullanılabilen tüm yazı tiplerini sayısallandırmak için kullanılabilir. *lpszFacename* NULL ise, GDI aygıta bağımsız bir yazı tipi kullanır.
+`CString`Yazı tipinin yazı tipi adını belirten null ile sonlandırılmış bir dize için veya işaretçisi. Bu dizenin uzunluğu en fazla 30 karakter uzunluğunda olmalıdır. Windows [Enumfontaileleri](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesw) işlevi, şu anda kullanılabilir olan tüm yazı tiplerini listelemek için kullanılabilir. *LPSZFACENAME* null Ise, GDI cihazdan bağımsız bir yazı tipi kullanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazı tipi daha sonra herhangi bir aygıt bağlamı için yazı tipi olarak seçilebilir.
+Yazı tipi daha sonra herhangi bir cihaz bağlamının yazı tipi olarak seçilebilir.
 
-İşlev `CreateFont` yeni bir Windows GDI yazı tipi oluşturmaz. Yalnızca GDI için kullanılabilir fiziksel yazı tiplerinden en yakın eşleşmeyi seçer.
+`CreateFont`İşlev yeni bir WINDOWS GDI yazı tipi oluşturmaz. Yalnızca GDI için kullanılabilir fiziksel yazı tiplerinin en yakın eşleşmesini seçer.
 
-Uygulamalar, mantıksal bir yazı tipi oluştururken çoğu parametre için varsayılan ayarları kullanabilir. Her zaman belirli değerler verilmelidir *parametreleri nHeight* ve *lpszFacename*vardır. *nHeight* ve *lpszFacename* uygulama tarafından ayarlanmazsa, oluşturulan mantıksal yazı tipi aygıta bağlıdır.
+Uygulamalar, mantıksal bir yazı tipi oluştururken çoğu parametre için varsayılan ayarları kullanabilir. Her zaman belirli değerler verilmesi gereken parametreler *nHeight* ve *lpszFacename*. Eğer *nHeight* ve *lpszFacename* uygulama tarafından ayarlanmamışsa, oluşturulan mantıksal yazı tipi cihaza bağımlıdır.
 
-İşlev tarafından `CFont` oluşturulan nesneyle bitirdiğinizde, aygıt bağlamına farklı bir yazı `CFont` tipi seçmek için kullanın `CDC::SelectObject` ve artık gerekli olmayan nesneyi silin. `CreateFont`
+`CFont`İşlev tarafından oluşturulan nesneyle bitirdiğinizde `CreateFont` , `CDC::SelectObject` cihaz bağlamında farklı bir yazı tipi seçmek için kullanın, ardından `CFont` artık gerekli olmayan nesneyi silin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#71](../../mfc/codesnippet/cpp/cfont-class_2.cpp)]
 
-## <a name="cfontcreatefontindirect"></a><a name="createfontindirect"></a>CFont::CreateFontIndirect
+## <a name="cfontcreatefontindirect"></a><a name="createfontindirect"></a> CFont:: CreateFontIndirect
 
-`CFont` [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw)yapısında verilen özelliklere sahip bir nesneyi başharfe ait hale getirmeyi sağlar.
+`CFont` [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw)yapısında verilen özelliklerle bir nesnesi başlatır.
 
 ```
 BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
@@ -203,27 +204,27 @@ BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
 ### <a name="parameters"></a>Parametreler
 
 *lpLogFont*<br/>
-Mantıksal yazı `LOGFONT` tipinin özelliklerini tanımlayan bir yapıyı işaret eder.
+`LOGFONT`Mantıksal yazı tipinin özelliklerini tanımlayan bir yapıya işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yazı tipi daha sonra herhangi bir aygıt için geçerli yazı tipi olarak seçilebilir.
+Yazı tipi daha sonra herhangi bir cihaz için geçerli yazı tipi olarak seçilebilir.
 
-Bu yazı tipi [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısında belirtilen özelliklere sahiptir. Yazı tipi [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) üye işlevi kullanılarak seçildiğinde, GDI yazı tipi mapper varolan bir fiziksel yazı tipi ile mantıksal yazı tipi eşleştirmeye çalışır. Yazı tipi eşlemesi mantıksal yazı tipi için tam bir eşleşme bulamazsa, özellikleri istenen özelliklerin mümkün olduğunca çok olduğu kadar eşleşen alternatif bir yazı tipi sağlar.
+Bu yazı tipi, [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısında belirtilen özelliklere sahiptir. Yazı tipi [CDC:: NesneSeç](../../mfc/reference/cdc-class.md#selectobject) üye işlevi kullanılarak SEÇILDIĞINDE, GDI yazı tipi Eşleyici, varolan bir fiziksel yazı tipiyle mantıksal yazı tipiyle eşleştirmeye çalışır. Yazı tipi Eşleyicisi mantıksal yazı tipi için tam bir eşleşme bulamazsa, özellikleri istenen özelliklerden çok sayıda olacak şekilde eşleşen alternatif bir yazı tipi sağlar.
 
-İşlev tarafından oluşturulan `CFont` nesneye artık ihtiyacınız `CDC::SelectObject` olmadığında, aygıt bağlamına farklı bir `CFont` yazı tipi seçmek için kullanın ve artık gerekli olmayan nesneyi silin. `CreateFontIndirect`
+`CFont`İşlev tarafından oluşturulan nesneye artık ihtiyacınız kalmadığında `CreateFontIndirect` , `CDC::SelectObject` cihaz bağlamında farklı bir yazı tipi seçmek için kullanın, ardından `CFont` artık gerekli olmayan nesneyi silin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#72](../../mfc/codesnippet/cpp/cfont-class_3.cpp)]
 
-## <a name="cfontcreatepointfont"></a><a name="createpointfont"></a>CFont::CreatePointFont
+## <a name="cfontcreatepointfont"></a><a name="createpointfont"></a> CFont:: CreatePointFont
 
-Bu işlev, belirli bir yazı tipi ve nokta boyutu bir yazı tipi oluşturmak için basit bir yol sağlar.
+Bu işlev, belirtilen yazı biçiminin ve nokta boyutunun yazı tipinin oluşturulması için basit bir yol sağlar.
 
 ```
 BOOL CreatePointFont(
@@ -235,31 +236,31 @@ BOOL CreatePointFont(
 ### <a name="parameters"></a>Parametreler
 
 *nPointSize*<br/>
-Bir noktanın onda birinde istenen yazı tipi yüksekliği. (Örneğin, 12 noktalı bir yazı tipi istemek için 120'yi geç.)
+Bir noktanın onda istenen yazı tipi yüksekliği. (Örneğin, 12 puntoluk bir yazı tipi istemek için 120 geçirin.)
 
 *lpszFaceName*<br/>
-Yazı `CString` tipinin yazı tipi adını belirten null-sonlandırılan dize için bir veya işaretçi. Bu dize uzunluğu 30 karakter geçmemelidir. Windows 'EnumFontFamilies işlevi, şu anda kullanılabilen tüm yazı tiplerini sayısallandırmak için kullanılabilir. *lpszFaceName* NULL ise, GDI aygıta bağımsız bir yazı tipi kullanır.
+`CString`Yazı tipinin yazı tipi adını belirten null ile sonlandırılmış bir dize için veya işaretçisi. Bu dizenin uzunluğu en fazla 30 karakter uzunluğunda olmalıdır. Windows ' Enumfontaileleri işlevi şu anda kullanılabilir olan tüm yazı tiplerini listelemek için kullanılabilir. *LPSZFACENAME* null Ise, GDI cihazdan bağımsız bir yazı tipi kullanır.
 
-*Pdc*<br/>
-*NPointSize'daki* yüksekliği mantıksal birimlere dönüştürmek için kullanılacak [CDC](../../mfc/reference/cdc-class.md) nesnesine işaretçi. NULL ise, dönüştürme için bir ekran aygıtı bağlamı kullanılır.
+*Kökündeki*<br/>
+*NPointSize* yüksekliğini mantıksal birimlere dönüştürmek Için kullanılacak [CDC](../../mfc/reference/cdc-class.md) nesnesine yönelik işaretçi. NULL ise, dönüştürme için bir ekran cihaz bağlamı kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır sız, başarılı ysa, aksi takdirde 0.
+Başarılı olursa sıfır dışı, aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*NPointSize'daki* yüksekliği *pDC*tarafından işaret edilen CDC nesnesini kullanarak mantıksal birimlere otomatik olarak dönüştürür.
+*PDC* tarafından Işaret edilen CDC nesnesini kullanarak *nPointSize* 'nın yüksekliğini mantıksal birimlere otomatik olarak dönüştürür.
 
-İşlev tarafından `CFont` oluşturulan nesneyle bitirdiğinizde, önce yazı tipini aygıt bağlamının dışına seçin, ardından nesneyi `CFont` silin. `CreatePointFont`
+`CFont`İşlev tarafından oluşturulan nesneyle bitirdiğinizde `CreatePointFont` , önce cihaz bağlamından yazı tipini seçin, sonra `CFont` nesneyi silin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#73](../../mfc/codesnippet/cpp/cfont-class_4.cpp)]
 
-## <a name="cfontcreatepointfontindirect"></a><a name="createpointfontindirect"></a>CFont::CreatePointFontIndirect
+## <a name="cfontcreatepointfontindirect"></a><a name="createpointfontindirect"></a> CFont:: CreatePointFontIndirect
 
-Bu işlev [CreateFontIndirect](#createfontindirect) ile aynıdır, `lfHeight` ancak `LOGFONT` üye aygıt birimleri yerine bir noktanın onda biri olarak yorumlanır.
+Bu işlev, [](#createfontindirect) `lfHeight` öğesinin üyesi `LOGFONT` cihaz birimleri yerine bir noktanın onda yorumlanması dışında CreateFontIndirect ile aynıdır.
 
 ```
 BOOL CreatePointFontIndirect(
@@ -270,28 +271,28 @@ BOOL CreatePointFontIndirect(
 ### <a name="parameters"></a>Parametreler
 
 *lpLogFont*<br/>
-Mantıksal yazı tipinin özelliklerini tanımlayan bir [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısına işaret eder. Yapının `lfHeight` `LOGFONT` üyesi mantıksal birimler yerine bir noktanın onda biri olarak ölçülür. (Örneğin, 12 noktalı yazı tipi istemek için 120 olarak ayarlayın.) `lfHeight`
+Mantıksal yazı tipinin özelliklerini tanımlayan bir [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısına işaret eder. `lfHeight` `LOGFONT` Yapının üyesi mantıksal birimler yerine bir noktanın onda ölçülür. (Örneğin, `lfHeight` 12 puntoluk bir yazı tipi istemek için 120 olarak ayarlayın.)
 
-*Pdc*<br/>
-Yüksekliği `lfHeight` mantıksal birimlere dönüştürmek için kullanılacak [CDC](../../mfc/reference/cdc-class.md) nesnesine işaretçi. NULL ise, dönüştürme için bir ekran aygıtı bağlamı kullanılır.
+*Kökündeki*<br/>
+Yüksekliği mantıksal birimlere dönüştürmek için kullanılacak [CDC](../../mfc/reference/cdc-class.md) nesnesine yönelik işaretçi `lfHeight` . NULL ise, dönüştürme için bir ekran cihaz bağlamı kullanılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır sız, başarılı ysa, aksi takdirde 0.
+Başarılı olursa sıfır dışı, aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, `lfHeight` `LOGFONT` yapıyı Windows'a geçirmeden önce *pDC* tarafından işaret edilen CDC nesnesini kullanarak yüksekliği otomatik olarak mantıksal birimlere dönüştürür.
+Bu işlev, `lfHeight` yapıyı Windows 'a geçirmeden önce *PDC* tarafından işaret edilen CDC nesnesini kullanarak mantıksal birimlere, yüksekliğini otomatik olarak dönüştürür `LOGFONT` .
 
-İşlev tarafından `CFont` oluşturulan nesneyle bitirdiğinizde, önce yazı tipini aygıt bağlamının dışına seçin, ardından nesneyi `CFont` silin. `CreatePointFontIndirect`
+`CFont`İşlev tarafından oluşturulan nesneyle bitirdiğinizde `CreatePointFontIndirect` , önce cihaz bağlamından yazı tipini seçin, sonra `CFont` nesneyi silin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#74](../../mfc/codesnippet/cpp/cfont-class_5.cpp)]
 
-## <a name="cfontfromhandle"></a><a name="fromhandle"></a>CFont::FromHandle
+## <a name="cfontfromhandle"></a><a name="fromhandle"></a> CFont:: FromHandle
 
-Bir HFONT `CFont` tanıtıcısı Windows GDI yazı tipi nesnesine verildiğinde bir işaretçiyi nesneye döndürür.
+Bir `CFont` HFONT tutamacı bir WINDOWS GDI yazı tipi nesnesine verildiğinde, nesnesine bir işaretçi döndürür.
 
 ```
 static CFont* PASCAL FromHandle(HFONT hFont);
@@ -300,23 +301,23 @@ static CFont* PASCAL FromHandle(HFONT hFont);
 ### <a name="parameters"></a>Parametreler
 
 *hFont*<br/>
-Windows yazı tipine bir HFONT tutamacı.
+Windows yazı tipine yönelik bir HFONT tutamacı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa `CFont` nesneye işaretçi; aksi takdirde NULL.
+`CFont`Başarılı olursa nesne için bir işaretçi; aksi takdırde null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CFont` nesne tutamacına zaten eklenmiş değilse, geçici `CFont` bir nesne oluşturulur ve eklenir. Bu `CFont` geçici nesne yalnızca, uygulamanın olay döngüsünde boşta kalma süresine sahip olduğu ve tüm geçici grafik nesnelerinin silindiği bir sonraki zamana kadar geçerlidir. Bunu söylemenin başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olmasıdır.
+Bir `CFont` nesne zaten tanıtıcıya iliştirilmişse, geçici bir `CFont` nesne oluşturulur ve eklenir. Bu geçici `CFont` nesne yalnızca uygulamanın olay döngüsünde bir sonraki kez boşta kalması durumunda geçerlidir. bu süre, tüm geçici grafik nesneleri silinir. Bunun başka bir yolu, geçici nesnenin yalnızca bir pencere iletisinin işlenmesi sırasında geçerli olduğu durumdur.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#75](../../mfc/codesnippet/cpp/cfont-class_6.cpp)]
 
-## <a name="cfontgetlogfont"></a><a name="getlogfont"></a>CFont::GetlogFont
+## <a name="cfontgetlogfont"></a><a name="getlogfont"></a> CFont:: GetLogFont
 
-Yapının `LOGFONT` bir kopyasını almak için `CFont`bu işlevi arayın.
+Yapısının bir kopyasını almak için bu işlevi çağırın `LOGFONT` `CFont` .
 
 ```
 int GetLogFont(LOGFONT* pLogFont);
@@ -325,19 +326,19 @@ int GetLogFont(LOGFONT* pLogFont);
 ### <a name="parameters"></a>Parametreler
 
 *pLogFont*<br/>
-Yazı tipi bilgilerini almak için [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısını işaretle.
+Yazı tipi bilgilerini almak için [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) yapısına yönelik işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nonzero işlevi başarılı olursa, aksi takdirde 0.
+İşlev başarılı olursa sıfır dışı, aksi durumda 0.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#76](../../mfc/codesnippet/cpp/cfont-class_7.cpp)]
 
-## <a name="cfontoperator-hfont"></a><a name="operator_hfont"></a>CFont::operatör HFONT
+## <a name="cfontoperator-hfont"></a><a name="operator_hfont"></a> CFont:: operator HFONT
 
-`CFont` Nesneye bağlı yazı tipinin Windows GDI tutamacını almak için bu işleci kullanın.
+Nesneye eklenen yazı tipinin Windows GDI işleyicisini almak için bu işleci kullanın `CFont` .
 
 ```
 operator HFONT() const;
@@ -345,13 +346,13 @@ operator HFONT() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı `CFont` olursa eklenen Windows GDI yazı tipi nesnesinin tutamacı; aksi takdirde NULL.
+Başarılı olursa Windows GDI yazı tipi nesnesinin tanıtıcısı `CFont` ; aksi takdırde null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç, Yazı Tipleri ve `CFont` [Metin'e](/windows/win32/gdi/fonts-and-text)dönüşümler için `CFont` otomatik olarak kullanıldığından, nesneleri HFONT'lar bekleyen işlevlere geçirebilirsiniz.
+Bu işleç `CFont` , ' den [yazı tiplerine ve metne](/windows/win32/gdi/fonts-and-text)dönüşümler için otomatik olarak kullanıldığından, `CFont` nesneleri hfonts bekleyen işlevlere geçirebilirsiniz.
 
-Grafik nesneleri kullanma hakkında daha fazla bilgi için Windows SDK'daki [Grafik Nesneler'e](/windows/win32/gdi/graphic-objects) bakın.
+Grafik nesnelerini kullanma hakkında daha fazla bilgi için, Windows SDK [grafik nesneleri](/windows/win32/gdi/graphic-objects) bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -359,6 +360,6 @@ Grafik nesneleri kullanma hakkında daha fazla bilgi için Windows SDK'daki [Gra
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
-[CGdiObject Sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[MFC örnek HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[CGdiObject sınıfı](../../mfc/reference/cgdiobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

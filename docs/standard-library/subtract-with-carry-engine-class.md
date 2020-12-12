@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: subtract_with_carry_engine sınıfı'
 title: subtract_with_carry_engine Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - std::subtract_with_carry_engine [C++], max
 - std::subtract_with_carry_engine [C++], seed
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
-ms.openlocfilehash: cf82c4ca3ce995fa9a53dbea21293dc8515ff491
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9d2c082f2c7b8405cf8cd25bce6a77d263fd8f64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183392"
 ---
 # <a name="subtract_with_carry_engine-class"></a>subtract_with_carry_engine Sınıfı
 
 Birlikte tut (sırasında geride Fibonaccı) algoritması ile rastgele bir sıra üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class UIntType, size_t W, size_t S, size_t R>
@@ -65,7 +66,7 @@ Altyapı üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-l
 
 `substract_with_carry_engine`Sınıf şablonu, [linear_congruential_engine](../standard-library/linear-congruential-engine-class.md)bir iyileştirmedir. Bu altyapılar için ne kadar hızlı veya [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md)olarak yüksek kaliteli sonuçlar olarak olur.
 
-Bu altyapı, bir kullanıcı tarafından belirtilen işaretsiz integral türünün değerlerini, yineleme ilişkisini ( *period*) kullanarak üretir; burada,, `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M` `cy(i)` `1` `x(i - S) - x(i - R) - cy(i - 1) < 0` Aksi durumda `0` ve `M` değeri `2` <sup>W</sup>değerine sahiptir. Altyapının durumu bir taşıma göstergesi artı *R* değerleridir. Bu değerler, en az R kez çağrılırsa döndürülen son *r* değerlerinden oluşur `operator()` , aksi *R* takdirde `N` döndürülen değerler ve `R - N` çekirdek değerinin son değerleridir.
+Bu altyapı, bir kullanıcı tarafından belirtilen işaretsiz integral türünün değerlerini, yineleme ilişkisini ( *period*) kullanarak üretir; burada,, `x(i) = (x(i - R) - x(i - S) - cy(i - 1)) mod M` `cy(i)` `1` `x(i - S) - x(i - R) - cy(i - 1) < 0` Aksi durumda `0` ve `M` değeri `2` <sup>W</sup>değerine sahiptir. Altyapının durumu bir taşıma göstergesi artı *R* değerleridir. Bu değerler, en az R kez çağrılırsa döndürülen son *r* değerlerinden oluşur `operator()` , aksi  takdirde `N` döndürülen değerler ve `R - N` çekirdek değerinin son değerleridir.
 
 Şablon bağımsız değişkeni, `UIntType` değerleri en fazla tutmak için yeterince büyük olmalıdır `M - 1` .
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CFieldExchange Class'
 title: CFieldExchange sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - CFieldExchange [MFC], IsFieldType
 - CFieldExchange [MFC], SetFieldType
 ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f
-ms.openlocfilehash: d10bfc436297a5f861f17843007347dcef9e58ca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 128b2a7baf6fff923393f3105e27f1e85657bdde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212481"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184562"
 ---
 # <a name="cfieldexchange-class"></a>CFieldExchange sınıfı
 
 Veritabanı sınıfları tarafından kullanılan kayıt alanı değişimi (RFX) ve toplu kayıt alanı değişimi (toplu RFX) yordamlarını destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CFieldExchange
@@ -38,22 +39,22 @@ class CFieldExchange
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CFieldExchange`taban sınıfına sahip değildir.
+`CFieldExchange` taban sınıfına sahip değildir.
 
 Özel veri türleri için veri değişim yordamları yazıyorsanız veya toplu satır getirme uyguladığınızda bu sınıfı kullanın; Aksi takdirde, bu sınıfı doğrudan kullanamazsınız. RFX ve toplu RFX, kayıt kümesi nesnenizin alan veri üyeleri ile veri kaynağındaki geçerli kaydın karşılık gelen alanları arasındaki verileri değiş tokuş eder.
 
 > [!NOTE]
 > Açık veritabanı bağlantısı (ODBC) sınıfları yerine veri erişim nesneleri (DAO) sınıflarıyla çalışıyorsanız, bunun yerine [Cdadofieldexchange](../../mfc/reference/cdaofieldexchange-class.md) sınıfını kullanın. Daha fazla bilgi için bkz. [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).
 
-Bir `CFieldExchange` nesnesi, kayıt alanı değişimi veya toplu kayıt alanı değişimi için gereken bağlam bilgilerini sağlar. `CFieldExchange`nesneler, bağlama parametreleri ve alan veri üyeleri dahil olmak üzere bir dizi işlemi destekler ve geçerli kaydın alanlarında çeşitli bayraklar ayarlar. RFX ve toplu RFX işlemleri, **`enum`** **FieldType** ' ın ' in tarafından tanımlanan türlerin kayıt kümesi sınıfı veri üyeleri üzerinde gerçekleştirilir `CFieldExchange` . Olası **bir** bu değer şunlardır:
+Bir `CFieldExchange` nesnesi, kayıt alanı değişimi veya toplu kayıt alanı değişimi için gereken bağlam bilgilerini sağlar. `CFieldExchange` nesneler, bağlama parametreleri ve alan veri üyeleri dahil olmak üzere bir dizi işlemi destekler ve geçerli kaydın alanlarında çeşitli bayraklar ayarlar. RFX ve toplu RFX işlemleri, **`enum`**  ' ın ' in tarafından tanımlanan türlerin kayıt kümesi sınıfı veri üyeleri üzerinde gerçekleştirilir `CFieldExchange` . Olası **bir** bu değer şunlardır:
 
-- `CFieldExchange::outputColumn`alan veri üyeleri için.
+- `CFieldExchange::outputColumn` alan veri üyeleri için.
 
-- `CFieldExchange::inputParam`ya da `CFieldExchange::param` giriş parametresi veri üyeleri için.
+- `CFieldExchange::inputParam` ya da `CFieldExchange::param` giriş parametresi veri üyeleri için.
 
-- `CFieldExchange::outputParam`çıkış parametresi veri üyeleri için.
+- `CFieldExchange::outputParam` çıkış parametresi veri üyeleri için.
 
-- `CFieldExchange::inoutParam`giriş/çıkış parametresi veri üyeleri için.
+- `CFieldExchange::inoutParam` giriş/çıkış parametresi veri üyeleri için.
 
 Sınıfın üye işlevlerinin ve veri üyelerinin çoğu kendi özel RFX yordamlarınızı yazmak için sağlanır. `SetFieldType`Sıklıkla kullanacaksınız. Daha fazla bilgi için, bkz. [kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md) ve [kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md). Toplu satır getirme hakkında daha fazla bilgi için bkz. kayıt [kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md). RFX ve toplu RFX genel işlevleri hakkında daha fazla bilgi için, bu başvurunun MFC makroları ve genel bölümündeki [kayıt alanı değişimi işlevleri](../../mfc/reference/record-field-exchange-functions.md) bölümüne bakın.
 
@@ -65,7 +66,7 @@ Sınıfın üye işlevlerinin ve veri üyelerinin çoğu kendi özel RFX yordaml
 
 **Üstbilgi:** Afxdb. h
 
-## <a name="cfieldexchangeisfieldtype"></a><a name="isfieldtype"></a>CFieldExchange:: Isıbu
+## <a name="cfieldexchangeisfieldtype"></a><a name="isfieldtype"></a> CFieldExchange:: Isıbu
 
 Kendi RFX işlevinizi yazarsanız, `IsFieldType` geçerli işlemin belirli bir alan veya parametre veri üye türü (a `CFieldExchange::outputColumn` ,,,, `CFieldExchange::inputParam` `CFieldExchange::param` `CFieldExchange::outputParam` veya `CFieldExchange::inoutParam` ) üzerinde gerçekleştirilip gerçekleştirilebileceğini öğrenmek için işlevinizin başlangıcında çağırın.
 
@@ -86,7 +87,7 @@ Geçerli işlem geçerli alan veya parametre türü üzerinde gerçekleştirileb
 
 Mevcut RFX işlevlerinin modelini izleyin.
 
-## <a name="cfieldexchangesetfieldtype"></a><a name="setfieldtype"></a>CFieldExchange:: SETbir
+## <a name="cfieldexchangesetfieldtype"></a><a name="setfieldtype"></a> CFieldExchange:: SETbir
 
 `SetFieldType`Kayıt kümesi sınıfınızın [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) veya [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange) geçersiz kılma için bir çağrınızın olması gerekir.
 

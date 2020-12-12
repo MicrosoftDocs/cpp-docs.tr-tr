@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: student_t_distribution sınıfı'
 title: student_t_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - std::student_t_distribution [C++], max
 - std::student_t_distribution [C++], param_type
 ms.assetid: 87b48127-9311-4d07-95df-833ed46bf0b1
-ms.openlocfilehash: 23ded8704e1e29dabddadfdc0a1ced3644374ad9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 24740a5fa15d9d77cb966184fe27e37956b3412e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183457"
 ---
 # <a name="student_t_distribution-class"></a>student_t_distribution Sınıfı
 
-Öğrenci 'nin *t*dağılımını üretir.
+Öğrenci 'nin *t* dağılımını üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class RealType = double>
@@ -69,7 +70,7 @@ Kayan nokta sonuç türü, varsayılan olarak olur **`double`** . Olası türler
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar veya **`double`** hiçbir değer sağlanmazsa öğrencinin *t*dağıtımına göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
+Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerlerini üreten bir dağıtımı açıklar veya **`double`** hiçbir değer sağlanmazsa öğrencinin *t* dağıtımına göre dağıtılır. Aşağıdaki tablo, bireysel üyelerle ilgili makalelere bağlantı sağlar.
 
 [student_t_distribution](#student_t_distribution)\
 [param_type](#param_type)
@@ -78,7 +79,7 @@ Property işlevi, `n()` depolanan dağıtım parametresi için değeri döndür�
 
 Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-library/random.md) ..
 
-Öğrencinin *t*dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [öğrenciler t-Distribution](https://mathworld.wolfram.com/Studentst-Distribution.html).
+Öğrencinin *t* dağıtımı hakkında ayrıntılı bilgi için bkz. Wolfram MathWorld article [öğrenciler t-Distribution](https://mathworld.wolfram.com/Studentst-Distribution.html).
 
 ## <a name="example"></a>Örnek
 
@@ -182,9 +183,9 @@ Dağıtımı oluşturmak için kullanılan parametre paketi.
 
 **Önkoşul:**`0.0 < n`
 
-İlk Oluşturucu, saklı `n` değeri *n*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı `n` değeri *n* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="student_t_distributionparam_type"></a><a name="param_type"></a> student_t_distribution::p aram_type
 

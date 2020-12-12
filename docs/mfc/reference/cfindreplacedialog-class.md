@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CFindReplaceDialog sınıfı'
 title: CFindReplaceDialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,18 +33,18 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-ms.openlocfilehash: 92429bc17301d6615c87de958f38a717528e9544
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3deeb485a9048ba986f548ed66329b66bd039c08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184484"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog sınıfı
 
 Uygulamanızda standart dize Bul/Değiştir iletişim kutuları uygulamanıza olanak tanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CFindReplaceDialog : public CCommonDialog
@@ -93,7 +94,7 @@ Bir nesne oluşturulduktan sonra `CFindReplaceDialog` iletişim kutusunu oluştu
 
 Kullanıcının, iletişim kutusunu üye işleviyle sonlandırmayı kararması olup olmadığını belirleyebilirsiniz `IsTerminating` .
 
-`CFindReplaceDialog`, 3,1 ve üzeri Windows sürümleriyle birlikte gelen COMMDLG.DLL dosyasını kullanır.
+`CFindReplaceDialog` , 3,1 ve üzeri Windows sürümleriyle birlikte gelen COMMDLG.DLL dosyasını kullanır.
 
 İletişim kutusunu özelleştirmek için, öğesinden bir sınıf türetebilir `CFindReplaceDialog` , özel bir iletişim kutusu şablonu sağlayın ve genişletilmiş denetimlerden gelen bildirim iletilerini işlemek için bir ileti eşlemesi ekleyin. İşlenmemiş tüm iletiler taban sınıfına geçirilmelidir.
 
@@ -119,7 +120,7 @@ Kullanma hakkında daha fazla bilgi için `CFindReplaceDialog` bkz. [ortak Ileti
 
 **Üstbilgi:** afxdlgs. h
 
-## <a name="cfindreplacedialogcfindreplacedialog"></a><a name="cfindreplacedialog"></a>CFindReplaceDialog:: CFindReplaceDialog
+## <a name="cfindreplacedialogcfindreplacedialog"></a><a name="cfindreplacedialog"></a> CFindReplaceDialog:: CFindReplaceDialog
 
 Bir `CFindReplaceDialog` nesnesi oluşturur.
 
@@ -139,7 +140,7 @@ Nesnelerin oluşturulması hakkında daha fazla bilgi için `CFindReplaceDialog`
 
 [!code-cpp[NVC_MFCDocView#170](../../mfc/codesnippet/cpp/cfindreplacedialog-class_1.cpp)]
 
-## <a name="cfindreplacedialogcreate"></a><a name="create"></a>CFindReplaceDialog:: Create
+## <a name="cfindreplacedialogcreate"></a><a name="create"></a> CFindReplaceDialog:: Create
 
 Değerine bağlı olarak bir bul veya Bul/Değiştir iletişim kutusu nesnesi oluşturur ve görüntüler `bFindDialogOnly` .
 
@@ -189,7 +190,7 @@ Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarl
 
   [CFindReplaceDialog:: CFindReplaceDialog](#cfindreplacedialog)örneğine bakın.
 
-## <a name="cfindreplacedialogfindnext"></a><a name="findnext"></a>CFindReplaceDialog:: Sonrabul
+## <a name="cfindreplacedialogfindnext"></a><a name="findnext"></a> CFindReplaceDialog:: Sonrabul
 
 Kullanıcının arama dizesinin bir sonraki tekrarını bulmak isteyip istemediğini öğrenmek için bu işlevi geri çağırma işlevinizden çağırın.
 
@@ -201,7 +202,7 @@ BOOL FindNext() const;
 
 Kullanıcı, arama dizesinin bir sonraki tekrarını bulmak isterse sıfır dışı. Aksi takdirde 0.
 
-## <a name="cfindreplacedialoggetfindstring"></a><a name="getfindstring"></a>CFindReplaceDialog:: GetFindString
+## <a name="cfindreplacedialoggetfindstring"></a><a name="getfindstring"></a> CFindReplaceDialog:: GetFindString
 
 Bulunacak varsayılan dizeyi almak için bu işlevi geri çağırma işlevinizden çağırın.
 
@@ -217,7 +218,7 @@ Bulunacak varsayılan dize.
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-## <a name="cfindreplacedialoggetnotifier"></a><a name="getnotifier"></a>CFindReplaceDialog:: Getbildiricisi
+## <a name="cfindreplacedialoggetnotifier"></a><a name="getnotifier"></a> CFindReplaceDialog:: Getbildiricisi
 
 Geçerli Bul Değiştir iletişim kutusuna bir işaretçi almak için bu işlevi çağırın.
 
@@ -244,7 +245,7 @@ Değiştirme yerini bul iletişim kutusundan bildirimleri almak için OnFindRepl
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-## <a name="cfindreplacedialoggetreplacestring"></a><a name="getreplacestring"></a>CFindReplaceDialog:: GetReplaceString
+## <a name="cfindreplacedialoggetreplacestring"></a><a name="getreplacestring"></a> CFindReplaceDialog:: GetReplaceString
 
 Geçerli değiştirme dizesini almak için bu işlevi çağırın.
 
@@ -260,7 +261,7 @@ Bulunan dizelerin yerine geçecek varsayılan dize.
 
   [CFindReplaceDialog:: GetFindString](#getfindstring)örneğine bakın.
 
-## <a name="cfindreplacedialogisterminating"></a><a name="isterminating"></a>CFindReplaceDialog:: ısating
+## <a name="cfindreplacedialogisterminating"></a><a name="isterminating"></a> CFindReplaceDialog:: ısating
 
 Kullanıcının iletişim kutusunu sonlandırmaya karar verip içermediğini öğrenmek için bu işlevi geri çağırma işlevinizde çağırın.
 
@@ -280,7 +281,7 @@ Bu işlev sıfır dışında bir değer döndürürse, `DestroyWindow` geçerli 
 
   [CFindReplaceDialog:: GetFindString](#getfindstring)örneğine bakın.
 
-## <a name="cfindreplacedialogm_fr"></a><a name="m_fr"></a>CFindReplaceDialog:: m_fr
+## <a name="cfindreplacedialogm_fr"></a><a name="m_fr"></a> CFindReplaceDialog:: m_fr
 
 Bir nesneyi özelleştirmek için kullanılır `CFindReplaceDialog` .
 
@@ -290,7 +291,7 @@ FINDREPLACE m_fr;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_fr`, [FindReplace](/windows/win32/api/commdlg/ns-commdlg-findreplacew)türünde bir yapıdır. Üyeleri iletişim kutusu nesnesinin özelliklerini depolar. Bir nesne oluşturduktan sonra `CFindReplaceDialog` `m_fr` iletişim kutusundaki çeşitli değerleri değiştirmek için kullanabilirsiniz.
+`m_fr` , [FindReplace](/windows/win32/api/commdlg/ns-commdlg-findreplacew)türünde bir yapıdır. Üyeleri iletişim kutusu nesnesinin özelliklerini depolar. Bir nesne oluşturduktan sonra `CFindReplaceDialog` `m_fr` iletişim kutusundaki çeşitli değerleri değiştirmek için kullanabilirsiniz.
 
 Bu yapı hakkında daha fazla bilgi için `FINDREPLACE` Windows SDK yapıya bakın.
 
@@ -298,7 +299,7 @@ Bu yapı hakkında daha fazla bilgi için `FINDREPLACE` Windows SDK yapıya bak�
 
   [CFindReplaceDialog:: CFindReplaceDialog](#cfindreplacedialog)örneğine bakın.
 
-## <a name="cfindreplacedialogmatchcase"></a><a name="matchcase"></a>CFindReplaceDialog:: MatchCase
+## <a name="cfindreplacedialogmatchcase"></a><a name="matchcase"></a> CFindReplaceDialog:: MatchCase
 
 Kullanıcının bul dizesinin durumunu tam olarak eşleştirmek isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
@@ -310,7 +311,7 @@ BOOL MatchCase() const;
 
 Kullanıcı, arama dizesinin durumuyla tam olarak eşleşen arama dizesinin tekrarlamalarını bulmak isterse sıfır dışında; Aksi takdirde 0.
 
-## <a name="cfindreplacedialogmatchwholeword"></a><a name="matchwholeword"></a>CFindReplaceDialog:: MatchWholeWord
+## <a name="cfindreplacedialogmatchwholeword"></a><a name="matchwholeword"></a> CFindReplaceDialog:: MatchWholeWord
 
 Kullanıcının yalnızca tüm sözcükleri eşleştirmek isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
@@ -322,7 +323,7 @@ BOOL MatchWholeWord() const;
 
 Kullanıcı yalnızca arama dizesinin tüm sözcüklerini eşleştirmek isterse, sıfır dışı. Aksi takdirde 0.
 
-## <a name="cfindreplacedialogreplaceall"></a><a name="replaceall"></a>CFindReplaceDialog:: ReplaceAll
+## <a name="cfindreplacedialogreplaceall"></a><a name="replaceall"></a> CFindReplaceDialog:: ReplaceAll
 
 Kullanıcının dizenin tüm tekrarlarının değiştirilmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
@@ -334,7 +335,7 @@ BOOL ReplaceAll() const;
 
 Kullanıcı Değiştirme dizesiyle eşleşen tüm dizelerin değiştirilmesini istediyse sıfır dışında olur; Aksi takdirde 0.
 
-## <a name="cfindreplacedialogreplacecurrent"></a><a name="replacecurrent"></a>CFindReplaceDialog:: Replacececurkiralık
+## <a name="cfindreplacedialogreplacecurrent"></a><a name="replacecurrent"></a> CFindReplaceDialog:: Replacececurkiralık
 
 Kullanıcının geçerli sözcüğün değiştirilmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.
 
@@ -346,7 +347,7 @@ BOOL ReplaceCurrent() const;
 
 Kullanıcı şu anda seçili dizenin değiştirme dizesiyle değiştirilmesini istediyse sıfır dışında; Aksi takdirde 0.
 
-## <a name="cfindreplacedialogsearchdown"></a><a name="searchdown"></a>CFindReplaceDialog:: SearchKey
+## <a name="cfindreplacedialogsearchdown"></a><a name="searchdown"></a> CFindReplaceDialog:: SearchKey
 
 Kullanıcının aramanın aşağı doğru bir yönde devam etmesini isteyip istemediğini öğrenmek için bu işlevi çağırın.
 

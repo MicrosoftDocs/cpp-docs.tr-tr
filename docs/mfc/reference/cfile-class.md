@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CFile sınıfı'
 title: CFile sınıfı
 ms.date: 06/12/2018
 f1_keywords:
@@ -60,12 +61,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-ms.openlocfilehash: 5be6a578fdd1d4e329c5b55d307d924a6c539e3d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: edccd571edf3594d36679a6c4ed6e52df878a705
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042088"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184549"
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 
@@ -166,7 +167,7 @@ virtual void Abort();
 
 Nesneyi yok etmeden önce dosyayı kapatmadıysanız, yıkıcı sizin için kapatır.
 
-Özel durumları işlerken, `CFile::Abort` `CFile::Close` iki önemli şekilde farklılık gösterir. İlk olarak, `Abort` sorunlar tarafından yoksayıldığından, işlev hatalarda bir özel durum oluşturmaz `Abort` . İkincisi, `Abort` Dosya **ASSERT** açılmadıysa veya daha önce kapatılmışsa onay vermez.
+Özel durumları işlerken, `CFile::Abort` `CFile::Close` iki önemli şekilde farklılık gösterir. İlk olarak, `Abort` sorunlar tarafından yoksayıldığından, işlev hatalarda bir özel durum oluşturmaz `Abort` . İkincisi, `Abort` Dosya  açılmadıysa veya daha önce kapatılmışsa onay vermez.
 
 **`new`** Nesneyi yığında ayırmak için kullandıysanız `CFile` , dosyayı kapattıktan sonra silmeniz gerekir. `Abort``m_hFile`olarak ayarlanır `CFile::hFileNull` .
 
@@ -594,16 +595,16 @@ Açma başarılı olursa sıfır dışı; Aksi takdirde 0. *PError* parametresi 
 
 İki `Open` işlev, bir hatanın normal, beklenen bir koşul olduğu bir dosyayı açmaya yönelik "güvenli" yöntemlerdir.
 
-`CFile`Oluşturucu bir hata koşulunda özel durum oluşturduğunda, `Open` hata koşulları için false döndürür. `Open` , hatayı anlatmak için yine de bir [CFileException](../../mfc/reference/cfileexception-class.md) nesnesi başlatabilir. *PError* parametresini sağlamadıysanız veya *PERROR*için null değeri geçirirseniz, `Open` false değerini döndürür ve oluşturmaz `CFileException` . Var olan bir işaretçi varsa `CFileException` ve bir `Open` hatayla karşılaşırsa, işlev bu hatayı açıklayan bilgilerle doldurulur. `Open` Her iki durumda da bir özel durum oluşturmaz.
+`CFile`Oluşturucu bir hata koşulunda özel durum oluşturduğunda, `Open` hata koşulları için false döndürür. `Open` , hatayı anlatmak için yine de bir [CFileException](../../mfc/reference/cfileexception-class.md) nesnesi başlatabilir. *PError* parametresini sağlamadıysanız veya *PERROR* için null değeri geçirirseniz, `Open` false değerini döndürür ve oluşturmaz `CFileException` . Var olan bir işaretçi varsa `CFileException` ve bir `Open` hatayla karşılaşırsa, işlev bu hatayı açıklayan bilgilerle doldurulur. `Open` Her iki durumda da bir özel durum oluşturmaz.
 
 Aşağıdaki tabloda, olası sonuçları açıklanmaktadır `Open` .
 
 | `pError` | Hatayla karşılaşıldı | Döndürülen değer | CFileException içeriği |
 |--|--|--|--|
-| NULL | No | TRUE | yok |
-| için PTR `CFileException` | No | TRUE | değiştirilmediği |
-| NULL | Yes | FALSE | yok |
-| için PTR `CFileException` | Yes | FALSE | hatayı tanımlayacak şekilde başlatıldı |
+| NULL | Hayır | TRUE | yok |
+| için PTR `CFileException` | Hayır | TRUE | değiştirilmediği |
+| NULL | Evet | FALSE | yok |
+| için PTR `CFileException` | Evet | FALSE | hatayı tanımlayacak şekilde başlatıldı |
 
 ### <a name="example"></a>Örnek
 
@@ -757,7 +758,7 @@ void SeekToBegin();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SeekToBegin()` değerine eşdeğerdir `Seek( 0L, CFile::begin )` .
+`SeekToBegin()`, `Seek( 0L, CFile::begin )` ile eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -777,7 +778,7 @@ Dosyanın bayt cinsinden uzunluğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SeekToEnd()` değerine eşdeğerdir `CFile::Seek( 0L, CFile::end )` .
+`SeekToEnd()`, `CFile::Seek( 0L, CFile::end )` ile eşdeğerdir.
 
 ### <a name="example"></a>Örnek
 
@@ -851,7 +852,7 @@ CAtlTransactionManager nesnesine yönelik işaretçi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Saati ayarlamak için, `m_mtime` *durum*alanını değiştirin.
+Saati ayarlamak için, `m_mtime` *durum* alanını değiştirin.
 
 `SetStatus`Yalnızca dosyanın özniteliklerini değiştirme girişiminde bir çağrı yaptığınızda ve `m_mtime` dosya durumu yapısının üyesi sıfır değilse, öznitelikler de etkilenebilir (zaman damgasının değiştirilmesi özniteliklerde yan etkilere sahip olabilir). Yalnızca dosyanın özniteliklerini değiştirmek istiyorsanız, önce `m_mtime` dosya durumu yapısının üyesini sıfır olarak ayarlayın ve sonra bir çağrısı yapın `SetStatus` .
 
