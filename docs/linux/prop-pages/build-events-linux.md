@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: derleme olay özellikleri (Linux C++)'
 title: Uzak derleme olayları (Linux C++)
 ms.date: 06/07/2019
 ms.assetid: 165d3690-5bd8-4b0b-bc66-8b699d85a61b
-ms.openlocfilehash: a337c1e83976f06ebb09ac92fd077c18cc8543fd
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: f134a882202881b1b89230459cc21c1b9757f6db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169820"
 ---
 # <a name="build-event-properties-linux-c"></a>Derleme olayı özellikleri (Linux C++)
 

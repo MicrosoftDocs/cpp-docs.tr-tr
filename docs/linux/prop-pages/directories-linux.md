@@ -1,13 +1,14 @@
 ---
+description: ': VC + + dizinleri (Linux C++) hakkında daha fazla bilgi edinin'
 title: VC + + dizinleri (Linux C++)
 ms.date: 06/07/2019
 ms.assetid: 12d45b93-0a5c-455e-b12a-9b9aad9a6d6c
-ms.openlocfilehash: 764e04b9aa05f4feec51d98a3578812c04bbabb6
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: e1c217558c8b534ed196faaa079cf768e4604dae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924502"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169794"
 ---
 # <a name="vc-directories-linux-c"></a>VC + + dizinleri (Linux C++)
 

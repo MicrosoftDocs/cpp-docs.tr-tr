@@ -1,14 +1,15 @@
 ---
+description: 'Daha fazla bilgi edinin: Masaüstü uygulamaları (Visual C++)'
 title: Masaüstü Uygulamaları (Visual C++)
 ms.date: 07/28/2019
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
 ms.topic: overview
-ms.openlocfilehash: 26448ca65b3162e2adfe6988dfd8c9e85432429c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: eb7badb73af507d31c9dd982f0a6189362249a3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114760"
 ---
 # <a name="desktop-applications-visual-c"></a>Masaüstü Uygulamaları (Visual C++)
 

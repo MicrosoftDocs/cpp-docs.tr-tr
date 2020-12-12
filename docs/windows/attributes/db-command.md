@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: db_command'
 title: db_command (C++ COM özniteliği)
 ms.date: 07/10/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
-ms.openlocfilehash: 5910e72b10d5b849d203d088564d79d0f80a7961
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 109dea1fe2070ef6a0acc9370d4065a9e6a9a575
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122180"
 ---
 # <a name="db_command"></a>db_command
 
@@ -44,7 +45,7 @@ OLE DB komutunun metnini içeren bir komut dizesi. Basit bir örnek:
 
 *Bağlama parametresi bloğu* aşağıdaki gibi tanımlanır:
 
-> **( \[ ** *BindType* **]** *szVar1* \[ , *szVar2* \[ , *nVar3* \[ ,...]]] **)**
+> **( \[** *BindType* **]** *szVar1* \[ , *szVar2* \[ , *nVar3* \[ ,...]]] **)**
 
 burada:
 
@@ -52,15 +53,15 @@ burada:
 
 - **\[***BindType* **]** , şu büyük/küçük harfe duyarsız dizelerden biridir:
 
-  - ** \[ db_column]** , üye değişkenlerinin her birini bir satır kümesindeki bir sütuna bağlar.
+  - **\[ db_column]** , üye değişkenlerinin her birini bir satır kümesindeki bir sütuna bağlar.
 
-  - ** \[ BindTo]** ( ** \[ db_column]**)).
+  - **\[ BindTo]** ( **\[ db_column]**)).
 
-  - ** \[ içinde]** üye değişkenlerini giriş parametreleri olarak bağlar.
+  - **\[ içinde]** üye değişkenlerini giriş parametreleri olarak bağlar.
 
-  - ** \[ out]** üye değişkenlerini çıkış parametresi olarak bağlar.
+  - **\[ out]** üye değişkenlerini çıkış parametresi olarak bağlar.
 
-  - ** \[ in, out]** üye değişkenlerini giriş/çıkış parametreleri olarak bağlar.
+  - **\[ in, out]** üye değişkenlerini giriş/çıkış parametreleri olarak bağlar.
 
 - *SzVarX*, *nvarx* , geçerli kapsam içindeki bir üye değişkenine çözümleniyor.
 
@@ -87,7 +88,7 @@ TCHAR m_state[3] = 'CA';
 ```
 
 *ada*<br/>
-Seçim Satır kümesi ile birlikte çalışmak için kullandığınız tanıtıcının adı. *Ad*belirtirseniz **db_command** , belirtilen *ada*sahip bir sınıf oluşturur ve bu, satır kümesinde çapraz geçiş yapmak veya birden çok eylem sorgusu yürütmek için kullanılabilir. *Ad*belirtmezseniz, kullanıcıya birden fazla sonuç satırı döndürmek mümkün olmayacaktır.
+Seçim Satır kümesi ile birlikte çalışmak için kullandığınız tanıtıcının adı. *Ad* belirtirseniz **db_command** , belirtilen *ada* sahip bir sınıf oluşturur ve bu, satır kümesinde çapraz geçiş yapmak veya birden çok eylem sorgusu yürütmek için kullanılabilir. *Ad* belirtmezseniz, kullanıcıya birden fazla sonuç satırı döndürmek mümkün olmayacaktır.
 
 *source_name*<br/>
 Seçim `CSession` `db_source` Komutun çalıştırıldığı özniteliğe uygulanan özniteliği olan bir sınıfın değişkeni veya örneği. Bkz. [db_source](db-source.md).
@@ -100,9 +101,9 @@ Seçim Bu veritabanı komutunun HRESULT 'sini alacak değişkeni tanımlar. Değ
 *Lara*<br/>
 Seçim OLE DB komutundan bağlama parametrelerini ayırmanızı sağlar.
 
-*Bağlamalar*için bir değer belirtirseniz, **db_command** ilişkili değeri ayrıştırır ve \[ *BindType*] parametresini ayrıştırmaz. Bu kullanım OLE DB sağlayıcı sözdizimini kullanmanıza olanak sağlar. Ayrıştırmayı devre dışı bırakmak için, parametreleri bağlama olmadan öğesini belirtin `Bindings=""` .
+*Bağlamalar* için bir değer belirtirseniz, **db_command** ilişkili değeri ayrıştırır ve \[ *BindType*] parametresini ayrıştırmaz. Bu kullanım OLE DB sağlayıcı sözdizimini kullanmanıza olanak sağlar. Ayrıştırmayı devre dışı bırakmak için, parametreleri bağlama olmadan öğesini belirtin `Bindings=""` .
 
-*Bağlamalar*için bir değer belirtmezseniz, **db_command** bağlama parametre bloğunu ayrıştırarak, parantez içinde '**(**', sonra **\[** _BindType_**]** öğesini, ardından bir veya daha fazla önceden tanımlanmış C++ üye değişkenlerini ve ardından '**)**' sözcüğünü arayarak. Ayraçlar arasındaki tüm metinler, sonuçta elde edilen komuttan çıkarılır ve bu komut için sütun ve parametre bağlamaları oluşturmak için bu parametreler kullanılacaktır.
+*Bağlamalar* için bir değer belirtmezseniz, **db_command** bağlama parametre bloğunu ayrıştırarak, parantez içinde '**(**', sonra **\[** _BindType_**]** öğesini, ardından bir veya daha fazla önceden tanımlanmış C++ üye değişkenlerini ve ardından '**)**' sözcüğünü arayarak. Ayraçlar arasındaki tüm metinler, sonuçta elde edilen komuttan çıkarılır ve bu komut için sütun ve parametre bağlamaları oluşturmak için bu parametreler kullanılacaktır.
 
 *bulk_fetch*<br/>
 Seçim Getirilecek satır sayısını belirten bir tamsayı değeri.
@@ -117,15 +118,15 @@ Varsayılan değer 1 ' dir ve tek satır getirmeyi belirtir (satır kümesi [CRo
 
 **db_command** bir komut yürütmek için bir OLE DB tüketicisi tarafından kullanılan bir [CCommand](../../data/oledb/ccommand-class.md) nesnesi oluşturur.
 
-**Db_command** , sınıf veya işlev kapsamıyla kullanabilirsiniz; Ana fark nesnenin kapsamıdır `CCommand` . İşlev kapsamında, bağlamalar gibi veriler işlev sonunda sonlandırılır. Hem sınıf hem de işlev kapsamı kullanımları OLE DB Tüketici şablonu sınıfını içerir `CCommand<>` , ancak şablon bağımsız değişkenleri işlev ve sınıf durumları için farklılık gösterir. İşlev durumunda bağlamalar, `Accessor` yerel değişkenleri içeren bir öğesine yapılır, ancak sınıf kullanımı `CAccessor` bağımsız değişken olarak bir türetilmiş sınıf çıkarsken. Sınıf özniteliği olarak kullanıldığında, **db_command** **db_column**ile birlikte çalışacaktır.
+**Db_command** , sınıf veya işlev kapsamıyla kullanabilirsiniz; Ana fark nesnenin kapsamıdır `CCommand` . İşlev kapsamında, bağlamalar gibi veriler işlev sonunda sonlandırılır. Hem sınıf hem de işlev kapsamı kullanımları OLE DB Tüketici şablonu sınıfını içerir `CCommand<>` , ancak şablon bağımsız değişkenleri işlev ve sınıf durumları için farklılık gösterir. İşlev durumunda bağlamalar, `Accessor` yerel değişkenleri içeren bir öğesine yapılır, ancak sınıf kullanımı `CAccessor` bağımsız değişken olarak bir türetilmiş sınıf çıkarsken. Sınıf özniteliği olarak kullanıldığında, **db_command** **db_column** ile birlikte çalışacaktır.
 
 **db_command** , bir sonuç kümesi döndürmeyen komutları yürütmek için kullanılabilir.
 
-Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName* erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ .  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 ## <a name="examples"></a>Örnekler
 
-Bu örnek, durum sütununun ' CA ' ile eşleştiği bir tablonun ilk ve son adlarını seçen bir komutu tanımlar. **db_command** , üzerinde [OpenAll ve CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)gibi sihirbaz tarafından üretilen işlevleri ve MoveNext gibi üye işlevlerini çağırabilmeniz için bir satır kümesi oluşturup okur `CRowset` . [MoveNext](../../data/oledb/crowset-class.md#movenext)
+Bu örnek, durum sütununun ' CA ' ile eşleştiği bir tablonun ilk ve son adlarını seçen bir komutu tanımlar. **db_command** , üzerinde [OpenAll ve CloseAll](../../data/oledb/consumer-wizard-generated-methods.md)gibi sihirbaz tarafından üretilen işlevleri ve MoveNext gibi üye işlevlerini çağırabilmeniz için bir satır kümesi oluşturup okur `CRowset` . [](../../data/oledb/crowset-class.md#movenext)
 
 Bu kodun, Pubs veritabanına bağlanan kendi Bağlantı dizenizi sağlamanızı gerektirdiğini unutmayın. Geliştirme ortamında bunun nasıl yapılacağı hakkında bilgi için bkz. [nasıl yapılır: veritabanına bağlanma ve var olan nesnelere gözatmaya](/sql/ssdt/how-to-connect-to-a-database-and-browse-existing-objects) ve [yeni bağlantılar ekleme](/visualstudio/data-tools/add-new-connections).
 
@@ -237,9 +238,9 @@ int main() {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntem, yerel|
-|**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Yinelenebilir**|Hayır|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

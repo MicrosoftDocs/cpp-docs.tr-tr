@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tuple_size Class;'
 title: tuple_size Sınıfı;
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_size
 ms.assetid: 73852fc5-eb68-41f1-8379-465cedc2314a
-ms.openlocfilehash: 361545bee020d6c3624d1d45743abcb9c2b4ac85
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: e825acc02e27a8d0c1ae29e5bfcf4ac1e0a708b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688851"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168884"
 ---
 # <a name="tuple_size-class"></a>tuple_size Sınıfı;
 
-Bir `tuple` içerdiği öğelerin sayısını raporlar.
+İçerdiği öğelerin sayısını raporlar `tuple` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -60,31 +61,31 @@ template <class T> inline constexpr size_t tuple_size_v = tuple_size<T>::value;
 
 ### <a name="parameters"></a>Parametreler
 
-*Tanımlama grubu* \
+*Le*\
 Kayıt düzeni türü.
 
-*Eled* \
+*Elem*\
 Dizi öğelerinin türü.
 
-*Boyut* \
+*Boyutla*\
 Dizinin boyutu.
 
-*T1* \
+*T1*\
 Çiftin ilk üyesinin türü.
 
-*T2* \
+*T2*\
 Çiftin ikinci üyesinin türü.
 
-*Türler* \
+*Türü*\
 Demet öğelerinin türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, değeri demet türü *kayıt düzeni*kapsamı olan bir integral sabit ifadesi olan bir üye `value` sahiptir.
+Sınıf şablonu, `value` değeri demet türü *tanımlama grubu* olan bir integral sabit ifadesi olan bir üyeye sahiptir.
 
-Diziler için şablon *özelleştirmesi, değeri, dizinin*boyutu olan bir integral sabit ifadesi olan bir üye `value` sahiptir.
+Diziler için şablon özelleştirmesi, `value` değeri *Boyut* olan ve dizinin boyutu olan bir integral sabit ifadesi olan bir üyeye sahiptir.
 
-Çiftin şablon özelleştirmesi, değeri 2 olan bir integral sabit ifadesi olan bir üye `value` sahiptir.
+Çiftin şablon özelleştirmesi, `value` değeri 2 olan integral sabit ifadesi olan bir üyeye sahiptir.
 
 ## <a name="example"></a>Örnek
 
@@ -117,10 +118,10 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<tuple >
+**Üst bilgi:**\<tuple>
 
-**Üstbilgi:** \<array > (dizi özelleştirmesi için)
+**Üst bilgi:** \<array> (dizi özelleştirmesi için)
 
-**Üstbilgi:** \<utility > (çift özelleşme için)
+**Üst bilgi:** \<utility> (çift özelleşme için)
 
 **Ad alanı:** std

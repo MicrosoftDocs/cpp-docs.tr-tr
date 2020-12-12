@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; Yineleyici &gt; işlevleri'
 title: '&lt;Yineleyici &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,16 +33,16 @@ helpviewer_keywords:
 - std::make_unchecked_array_iterator [C++]
 - std::next [C++]
 - std::prev [C++]
-ms.openlocfilehash: 615ebeedc87563eeac46c462304072ff1979040c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0db7e036cd89cf92449e539ac6a656658730425d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169261"
 ---
 # <a name="ltiteratorgt-functions"></a>&lt;Yineleyici &gt; işlevleri
 
-## <a name="advance"></a><a name="advance"></a>ilerler
+## <a name="advance"></a><a name="advance"></a> ilerler
 
 Belirtilen bir konum sayısıyla yineleyiciyi artırır.
 
@@ -113,7 +114,7 @@ LPOS is advanced 4 steps forward to point to the fifth element: 5.
 LPOS is moved 3 steps back to point to the 2nd element: 2.
 ```
 
-## <a name="back_inserter"></a><a name="back_inserter"></a>back_inserter
+## <a name="back_inserter"></a><a name="back_inserter"></a> back_inserter
 
 Belirtilen kapsayıcının arkasında öğeler ekleyebilen bir yineleyici oluşturur.
 
@@ -184,7 +185,7 @@ The initial vector vec is: ( 0 1 2 ).
 After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).
 ```
 
-## <a name="begin"></a><a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a> başladı
 
 Belirtilen bir kapsayıcıdaki ilk öğe için bir yineleyici alır.
 
@@ -213,7 +214,7 @@ Türünde bir nesne dizisi `Ty` .
 
 İlk iki şablon işlevi döndürülür `cont.begin()` . Birinci işlev sabit değil; ikinci sabittir.
 
-Üçüncü şablon işlevi *diziyi*döndürür.
+Üçüncü şablon işlevi *diziyi* döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -286,7 +287,7 @@ Ona bir dizi göndermek, bu derleyicinin hata vermesine neden olur:
 error C2228: left of '.begin' must have class/struct/union
 ```
 
-## <a name="cbegin"></a><a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a> cbegin
 
 Belirtilen kapsayıcıdaki ilk öğeyi izleyen öğeye sabit bir yineleyici alır.
 
@@ -319,7 +320,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="cend"></a><a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a> cend
 
 Belirtilen kapsayıcıdaki son öğeyi izleyen öğe için sabit bir yineleyici alır.
 
@@ -352,19 +353,19 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator
 ```
 
-## <a name="crbegin"></a><a name="crbegin"></a>crbegin
+## <a name="crbegin"></a><a name="crbegin"></a> crbegin
 
 ```cpp
 template <class C> constexpr auto crbegin(const C& c) -> decltype(std::rbegin(c));
 ```
 
-## <a name="crend"></a><a name="crend"></a>crend
+## <a name="crend"></a><a name="crend"></a> crend
 
 ```cpp
 template <class C> constexpr auto crend(const C& c) -> decltype(std::rend(c));
 ```
 
-## <a name="data"></a><a name="data"></a>verileri
+## <a name="data"></a><a name="data"></a> verileri
 
 ```cpp
 template <class C> constexpr auto data(C& c) -> decltype(c.data());
@@ -373,7 +374,7 @@ template <class T, size_t N> constexpr T* data(T (&array)[N]) noexcept;
 template <class E> constexpr const E* data(initializer_list<E> il) noexcept;
 ```
 
-## <a name="distance"></a><a name="distance"></a>Uzaklık
+## <a name="distance"></a><a name="distance"></a> Uzaklık
 
 İki yineleyici tarafından ele alınan konumlar arasındaki artış sayısını belirler.
 
@@ -392,7 +393,7 @@ Birinciden uzaklığı belirlenecek ikinci Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*En son*eşit olana kadar *ilk* kaç kez artırılması gerektiği.
+*En son* eşit olana kadar *ilk* kaç kez artırılması gerektiği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -446,7 +447,7 @@ LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.
 ```
 
-## <a name="empty"></a><a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a> olmamalıdır
 
 ```cpp
 template <class C> constexpr auto empty(const C& c) -> decltype(c.empty());
@@ -454,7 +455,7 @@ template <class T, size_t N> constexpr bool empty(const T (&array)[N]) noexcept;
 template <class E> constexpr bool empty(initializer_list<E> il) noexcept;
 ```
 
-## <a name="end"></a><a name="end"></a>erer
+## <a name="end"></a><a name="end"></a> erer
 
 Belirtilen kapsayıcıdaki son öğeyi izleyen öğeye bir yineleyici alır.
 
@@ -489,7 +490,7 @@ Türünde bir nesne dizisi `Ty` .
 
 Kod örneği için bkz. [Begin](../standard-library/iterator-functions.md#begin).
 
-## <a name="front_inserter"></a><a name="front_inserter"></a>front_inserter
+## <a name="front_inserter"></a><a name="front_inserter"></a> front_inserter
 
 Belirtilen kapsayıcının önünde öğeler ekleyebilen bir yineleyici oluşturur.
 
@@ -560,7 +561,7 @@ After the front insertions, the list L is:
 ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
-## <a name="inserter"></a><a name="inserter"></a>inserter
+## <a name="inserter"></a><a name="inserter"></a> inserter
 
 Yerine kullanmanıza olanak sağlayan bir yardımcı şablon işlevi `inserter(_Cont, _Where)` `insert_iterator<Container>(_Cont, _Where)` .
 
@@ -582,7 +583,7 @@ Ekleme noktasını bulmak için bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi insert_iterator döndürür [insert_iterator](../standard-library/insert-iterator-class.md#insert_iterator) `<Container>(_Cont, _Where)` .
+Şablon işlevi insert_iterator döndürür [](../standard-library/insert-iterator-class.md#insert_iterator) `<Container>(_Cont, _Where)` .
 
 ### <a name="example"></a>Örnek
 
@@ -631,7 +632,7 @@ After the insertions, the list L is:
 ( 1 20 30 40 500 ).
 ```
 
-## <a name="make_checked_array_iterator"></a><a name="make_checked_array_iterator"></a>make_checked_array_iterator
+## <a name="make_checked_array_iterator"></a><a name="make_checked_array_iterator"></a> make_checked_array_iterator
 
 Diğer algoritmalar tarafından kullanılabilen bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) oluşturur.
 
@@ -725,7 +726,7 @@ int main()
 }
 ```
 
-## <a name="make_move_iterator"></a><a name="make_move_iterator"></a>make_move_iterator
+## <a name="make_move_iterator"></a><a name="make_move_iterator"></a> make_move_iterator
 
 `move iterator`Yineleyici olarak belirtilen yineleyiciyi içeren bir oluşturur `stored` .
 
@@ -744,7 +745,7 @@ Yeni taşıma yineleyicisinin içinde depolanan yineleyici.
 
 Şablon işlevi döndürür `move_iterator` `<Iterator>(_It)` .
 
-## <a name="make_unchecked_array_iterator"></a><a name="make_unchecked_array_iterator"></a>make_unchecked_array_iterator
+## <a name="make_unchecked_array_iterator"></a><a name="make_unchecked_array_iterator"></a> make_unchecked_array_iterator
 
 Diğer algoritmalar tarafından kullanılabilen bir [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) oluşturur.
 
@@ -823,7 +824,7 @@ int main()
 }
 ```
 
-## <a name="next"></a><a name="next"></a>ileri
+## <a name="next"></a><a name="next"></a> ileri
 
 Belirtilen sayıda yineler ve yeni yineleyici konumunu döndürür.
 
@@ -850,7 +851,7 @@ Yinelenme sayısı.
 
 Şablon işlevi, `next` artan *_Off* süreleri döndürüyor
 
-## <a name="prev"></a><a name="prev"></a>önceki
+## <a name="prev"></a><a name="prev"></a> önceki
 
 Belirtilen sayıda geri yineler ve yeni yineleyici konumunu döndürür.
 
@@ -873,21 +874,21 @@ Yinelenme sayısı.
 
 Şablon işlevi, `next` azaltılır kez döndürülür `off` .
 
-## <a name="rbegin"></a><a name="rbegin"></a>rbegin
+## <a name="rbegin"></a><a name="rbegin"></a> rbegin
 
 ```cpp
 template <class C> constexpr auto rbegin(C& c) -> decltype(c.rbegin());
 template <class C> constexpr auto rbegin(const C& c) -> decltype(c.rbegin());
 ```
 
-## <a name="rend"></a><a name="rend"></a>rend
+## <a name="rend"></a><a name="rend"></a> rend
 
 ```cpp
 template <class C> constexpr auto rend(C& c) -> decltype(c.rend());
 template <class C> constexpr auto rend(const C& c) -> decltype(c.rend());
 ```
 
-## <a name="size"></a><a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a> boyutla
 
 ```cpp
 template <class C> constexpr auto size(const C& c) -> decltype(c.size());

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ProgID'
 title: Progıd (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - progid attribute
 ms.assetid: afcf559c-e432-481f-aa9a-bd3bb72c02a8
-ms.openlocfilehash: 136c651ec92c78339c2f701804a6a409523dd30f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ed829d1ec20ae06fae8604e35ccc260013f59e3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114942"
 ---
 # <a name="progid"></a>progid
 
 COM nesnesi için ProgID belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ progid(name) ];
@@ -32,7 +33,7 @@ ProgID 'ler, COM/ActiveX nesnelerini tanımlamak için kullanılan sınıf tanı
 
 ## <a name="remarks"></a>Açıklamalar
 
-`progid`C++ özniteliği BIR com nesnesi Için ProgID belirtmenize imkan sağlar. Bir ProgID *name1. AD2. Version*biçiminde bulunur. Bir ProgID için *Sürüm* belirtmezseniz, varsayılan sürüm 1 ' dir. *Name1. AD2*belirtmezseniz, varsayılan ad *ClassName. ClassName*olur. Belirtmezseniz `progid` ve belirtirseniz `vi_progid` , *name1. AD2* ' dan alınır `vi_progid` ve (sonraki sıralı sayı) sürümü eklenir.
+`progid`C++ özniteliği BIR com nesnesi Için ProgID belirtmenize imkan sağlar. Bir ProgID *name1. AD2. Version* biçiminde bulunur. Bir ProgID için *Sürüm* belirtmezseniz, varsayılan sürüm 1 ' dir. *Name1. AD2* belirtmezseniz, varsayılan ad *ClassName. ClassName* olur. Belirtmezseniz `progid` ve belirtirseniz `vi_progid` , *name1. AD2* ' dan alınır `vi_progid` ve (sonraki sıralı sayı) sürümü eklenir.
 
 Kullanan bir öznitelik bloğu `progid` da kullanmıyorsa `uuid` , derleyici, `uuid` belirtilen için mevcut olup olmadığını görmek için kayıt defterini kontrol eder `progid` . `progid`Belirtilmezse, bir oluşturmak için sürüm (ve bir coclass oluşturma kullanılıyorsa coclass adı) kullanılır `progid` .
 
@@ -51,7 +52,7 @@ Bu öznitelik, ATL kullanan bir proje içinde kullanıldığında, öznitelik da
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|`class`, `struct`|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

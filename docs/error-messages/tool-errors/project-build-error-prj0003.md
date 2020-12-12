@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: proje derleme hatası PRJ0003'
 title: Proje Derleme Hatası PRJ0003
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0003
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-ms.openlocfilehash: 59028c6d886630ef7db115a2ea93327669b2fcfd
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cefd56e1d11da77f288333fb0e1f9c10ef684d12
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192932"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119414"
 ---
 # <a name="project-build-error-prj0003"></a>Proje Derleme Hatası PRJ0003
 
@@ -29,8 +30,8 @@ Bu hatanın olası nedenleri şunlardır:
 
 - **VC + + dizinlerinde** belirtilen yürütülebilir yollar, çalıştırmayı denediğiniz aracın yolunu içermez. Bilgi için bkz. [derleyici ve derleme özelliklerini ayarlama](../../build/working-with-project-properties.md)
 
-- Derleme görevleri dosyası projeleri için, **derleme komut satırı** veya **yeniden oluşturma komut satırı**üzerinde çalıştırılacak bir komutun eksik olması gerekir.
+- Derleme görevleri dosyası projeleri için, **derleme komut satırı** veya **yeniden oluşturma komut satırı** üzerinde çalıştırılacak bir komutun eksik olması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Proje Derleme Hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+[Proje derleme hataları ve uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

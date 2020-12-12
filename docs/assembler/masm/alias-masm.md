@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: DIĞER ad'
 title: ALIAS (MASM)
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,27 +7,27 @@ f1_keywords:
 helpviewer_keywords:
 - ALIAS directive
 ms.assetid: d9725c49-58de-41da-ab01-b06a56cf5cf2
-ms.openlocfilehash: 5aef169c5632e74722438c63718ce5b783a8da09
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 7d5072cec8ef56f3dd2202617b3274c958a25d66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75316609"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97121764"
 ---
 # <a name="alias"></a>ALIAS
 
-**ALIAS** yönergesi, bir işlev için alternatif bir ad oluşturur.  Bu, bir işlev için birden çok ad oluşturmanızı veya bağlayıcı (LINK. exe) ' nin eski bir işlevi yeni bir işlevle eşlemesine izin veren kitaplıklar oluşturmanızı sağlar.
+**ALIAS** yönergesi, bir işlev için alternatif bir ad oluşturur.  Bu, bir işlev için birden çok ad oluşturmanızı veya bağlayıcı (LINK.exe) ' ın eski bir işlevi yeni bir işlevle eşlemesine izin veren kitaplıklar oluşturmanızı sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **Diğer ad \<** _diğer_adı **> = \<** _gerçek ad_ **>**
+> **EK \<**_alias_**> = \<**_actual-name_**>**
 
 #### <a name="parameters"></a>Parametreler
 
-*gerçek ad*\
+*Gerçek ad*\
 İşlevin veya yordamın gerçek adı.  Açılı ayraç gereklidir.
 
-*diğer ad*\
+*ek*\
 Alternatif veya diğer ad.  Açılı ayraç gereklidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.

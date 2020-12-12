@@ -1,4 +1,5 @@
 ---
+description: ': İşleci hakkında daha fazla bilgi `__uuidof`'
 title: __uuidof İşleci
 ms.date: 10/10/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - __uuidof keyword [C++]
 - __LIBID_ keyword [C++]
 ms.assetid: badfe709-809b-4b66-ad48-ee35039d25c6
-ms.openlocfilehash: f7564270408d14f58d1528c1f41c0afd2dbe219c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e6c14ac6f00b5e6314e1e4d844aea479fa714984
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116723"
 ---
 # <a name="__uuidof-operator"></a>`__uuidof` İşleci
 
@@ -23,7 +24,7 @@ ms.locfileid: "87226977"
 
 İfadeye eklenmiş GUID 'YI alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`__uuidof (`***ifade***`)`**
 
@@ -71,7 +72,7 @@ int main() {
 
 ## <a name="comments"></a>Yorumlar
 
-Kitaplık adının artık kapsamda olmadığı durumlarda, `__LIBID_` yerine kullanabilirsiniz **`__uuidof`** . Örnek:
+Kitaplık adının artık kapsamda olmadığı durumlarda, `__LIBID_` yerine kullanabilirsiniz **`__uuidof`** . Örneğin:
 
 ```cpp
 StringFromCLSID(__LIBID_, &lpolestr);

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: özel derleme adımı özellikleri (Linux C++)'
 title: Özel derleme adımı özellikleri (Linux C++)
 ms.date: 06/07/2019
 ms.assetid: 77a9c1fb-7c41-4a9b-9418-18ac17ce4e74
-ms.openlocfilehash: 51111b7ff1ab68ecc49b54efdeeef5f95368ab0c
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: d8a120d147d107cd96f77556a412aa8ee6636548
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924535"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169781"
 ---
 # <a name="custom-build-step-properties-linux-c"></a>Özel derleme adımı özellikleri (Linux C++)
 

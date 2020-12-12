@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tuple_element sınıfı'
 title: tuple_element Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_element
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
-ms.openlocfilehash: be9d9fe56d35e96e4179eb511edccd475a369f32
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: dea9f883c2ae8d0a071f894405059ddb5f2090af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008295"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168975"
 ---
 # <a name="tuple_element-class"></a>tuple_element Sınıfı
 
@@ -76,7 +77,7 @@ Bir çiftin ikinci öğe türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonunda, `tuple_element` `type` demet türü *kayıt*kümesi Dizin *dizininde* bulunan türün eşanlamlısı olan iç içe geçmiş bir typedef vardır.
+Sınıf şablonunda, `tuple_element` `type` demet türü *kayıt* kümesi Dizin *dizininde* bulunan türün eşanlamlısı olan iç içe geçmiş bir typedef vardır.
 
 TypeDef `tuple_element_t` için uygun bir diğer addır `tuple_element<Index, Tuple>::type` .
 

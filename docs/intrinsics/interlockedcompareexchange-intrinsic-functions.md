@@ -1,5 +1,6 @@
 ---
-title: _InterlockedCompareExchange iç işlevleri
+description: 'Hakkında daha fazla bilgi edinin: _InterlockedCompareExchange iç işlevler'
+title: _InterlockedCompareExchange iç işlevler
 ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedCompareExchange_HLERelease
@@ -48,16 +49,16 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-ms.openlocfilehash: 26dff1c902fff495d5efe45d8da10b1c5da72878
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 10788b5b4e8c8f7ee139dd8810149a49e8978f3c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168195"
 ---
-# <a name="_interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange iç işlevleri
+# <a name="_interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange iç işlevler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Birbirine kilitli bir karşılaştırma ve değişim yapar.
 
@@ -181,38 +182,38 @@ __int64 _InterlockedCompareExchange64_rel(
 *Hedefine*\
 [in, out] Hedef değere yönelik işaretçi. İşaret yok sayılır.
 
-*Değişimi*\
+*Exchange*\
 'ndaki Değişim değeri. İşaret yok sayılır.
 
 *Karşılaştırılanı desteklemiyor*\
 'ndaki Hedefle karşılaştırılacak değer. İşaret yok sayılır.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Dönüş değeri, `Destination` işaretçinin ilk değeridir.
+Dönüş değeri, işaretçinin ilk değeridir `Destination` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM, ARM64|\<Intrin. h >|
-|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|X64|\<Intrin. h >|
-|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<ımintrin. h >|
+|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM, ARM64|\<intrin.h>|
+|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|x64|\<intrin.h>|
+|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_InterlockedCompareExchange`değerin atomik bir karşılaştırmasını `Destination` `Comparand` yapar. Değer değere eşitse`Exchange` , değer tarafından`Destination`belirtilen adreste depolanır. `Comparand` `Destination` Aksi takdirde, işlem yapmaz.
+`_InterlockedCompareExchange` değerin atomik bir karşılaştırmasını yapar `Destination` `Comparand` . Değer `Destination` `Comparand` değere eşitse, `Exchange` değer tarafından belirtilen adreste depolanır `Destination` . Aksi takdirde, işlem yapmaz.
 
-`_InterlockedCompareExchange`Win32 Windows SDK [InterlockedCompareExchange](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchange) işlevi için derleyicinin iç desteğini sağlar.
+`_InterlockedCompareExchange` Win32 Windows SDK [InterlockedCompareExchange](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchange) işlevi için derleyicinin iç desteğini sağlar.
 
 Üzerinde bulunan `_InterlockedCompareExchange` veri türlerine göre farklılık gösteren çeşitli çeşitlemeler vardır ve işlemciye özgü alma veya yayınlama semantiği kullanılıp kullanılmayacağını belirtir.
 
-İşlev uzun tamsayı değerleri üzerinde çalışırken, `_InterlockedCompareExchange8` 8 bit tamsayı değerleri üzerinde çalışır, `_InterlockedCompareExchange16` kısa tamsayı değerlerinde çalışır ve `_InterlockedCompareExchange64` 64 bitlik tamsayı değerlerinde çalışır. `_InterlockedCompareExchange`
+`_InterlockedCompareExchange`İşlev uzun tamsayı değerleri üzerinde çalışırken, `_InterlockedCompareExchange8` 8 bit tamsayı değerleri üzerinde çalışır, `_InterlockedCompareExchange16` kısa tamsayı değerlerinde çalışır ve `_InterlockedCompareExchange64` 64 bitlik tamsayı değerlerinde çalışır.
 
-ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf` ("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
+ARM platformlarında, `_acq` `_rel` önemli bir bölümün başındaki ve sonundaki gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf`("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
 
-`_np` ("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
+`_np`("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
 
 Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 
@@ -435,7 +436,7 @@ int main(
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)\
-[_Interlockedcompareexchangepointer iç işlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)\
+[_InterlockedCompareExchangePointer iç işlevler](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [Lerimi](../cpp/keywords-cpp.md)\
 [x86 Derleyicisi ile Çakışma](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

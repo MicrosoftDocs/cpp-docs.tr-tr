@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _RTC_SetErrorType'
 title: _RTC_SetErrorType
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - RTC_SetErrorType function
 - _RTC_SetErrorType function
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
-ms.openlocfilehash: 6c1eff5920931aa3b72bf3dbc6232c371828b16a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8b0b28eaf97a27dbfcf4dcb414c9a17f03df7f9e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948930"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168702"
 ---
 # <a name="_rtc_seterrortype"></a>_RTC_SetErrorType
 
@@ -52,25 +53,25 @@ int _RTC_SetErrorType(
 Sıfır ve [_RTC_NumErrors](rtc-numerrors.md)tarafından döndürülen değerden küçük bir sayı.
 
 *ErrType*<br/>
-Bu *errnum*öğesine atanacak değer. Örneğin, **_CRT_ERROR**kullanabilirsiniz. Hata işleyiciniz olarak **_Crtdbgreport** kullanıyorsanız, *ErrType* yalnızca [_Crtsetreportmode](crtsetreportmode.md)içinde tanımlanan simgelerden biri olabilir. Kendi hata işleyiciniz ([_RTC_SetErrorFunc](rtc-seterrorfunc.md)) varsa, *errnum*'lar olduğu Için çok sayıda *ErrType*'a sahip olabilirsiniz.
+Bu *errnum* öğesine atanacak değer. Örneğin, **_CRT_ERROR** kullanabilirsiniz. Hata işleyiciniz olarak **_CrtDbgReport** kullanıyorsanız *errtype* , [_CrtSetReportMode](crtsetreportmode.md)tanımlı simgelerden yalnızca biri olabilir. Kendi hata işleyiciniz ([_RTC_SetErrorFunc](rtc-seterrorfunc.md)) varsa, *errnum*'lar olduğu Için çok sayıda *ErrType* olabilir.
 
-*ErrType* _RTC_ERRTYPE_IGNORE, **_Crtsetreportmode**; için özel anlamı vardır. Hata yoksayıldı.
+*ErrType* _RTC_ERRTYPE_IGNORE **_CrtSetReportMode** için özel anlamı vardır; Hata yoksayıldı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Hata türü *türü*için önceki değer.
+Hata türü *türü* için önceki değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, tüm hatalar **_CRT_ERROR**öğesine karşılık gelen *ErrType* = 1 olarak ayarlanır. **_CRT_ERROR**gibi varsayılan hata türleri hakkında daha fazla bilgi için bkz. [_Crtdbgreport](crtdbgreport-crtdbgreportw.md).
+Varsayılan olarak, tüm hatalar **_CRT_ERROR** karşılık gelen *ErrType* = 1 olarak ayarlanır. **_CRT_ERROR** gibi varsayılan hata türleri hakkında daha fazla bilgi için bkz. [_CrtDbgReport](crtdbgreport-crtdbgreportw.md).
 
-Bu işlevi çağırabilmeniz için önce çalışma zamanı hata denetimi başlatma işlevlerinden birini çağırmanız gerekir; bkz [. C çalışma zamanı kitaplığı olmadan çalışma zamanı denetimlerini kullanma](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
+Bu işlevi çağırabilmeniz için önce çalışma zamanı hata denetimi başlatma işlevlerinden birini çağırmanız gerekir; bkz [. C Run-Time kitaplığı olmadan Run-Time denetimleri kullanma](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library)
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_RTC_SetErrorType**|\<rtcapı. h >|
+|**_RTC_SetErrorType**|\<rtcapi.h>|
 
 Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -81,4 +82,4 @@ Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_RTC_GetErrDesc](rtc-geterrdesc.md)<br/>
-[Çalışma Zamanı Hata Denetimi](../../c-runtime-library/run-time-error-checking.md)<br/>
+[Çalışma zamanı hata denetimi](../../c-runtime-library/run-time-error-checking.md)<br/>

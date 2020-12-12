@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi için: makefile proje özellikleri (Linux C++)'
 title: Genel Özellikler (Linux C++ Makefile Projesi) | Microsoft Docs
 ms.date: 06/07/2019
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
-ms.openlocfilehash: dd92d77069024456020a09b22de3596b8192c5af
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: e64c49a3dc09deae31ce37a8db85887ce46e11e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924661"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169729"
 ---
 # <a name="makefile-project-properties-linux-c"></a>Makefile proje özellikleri (Linux C++)
 
@@ -93,7 +94,7 @@ IntelliSense 'in özellikleri, IntelliSense altyapısına ipuçları sağlamak i
 | Önişlemci tanımlarının tanımı kaldırılıyor | Bir veya daha fazla önişlemci tarafından tanımlanabileceğini belirtir.     (/U [makro]) |
 | Ek Seçenekler | C++ dosyaları ayrıştırılırken IntelliSense tarafından kullanılacak ek derleyici anahtarlarını belirtir. |
 
-### <a name="build"></a>Oluşturma
+### <a name="build"></a>Yapı
 
 | Özellik | Açıklama |
 |--|--|

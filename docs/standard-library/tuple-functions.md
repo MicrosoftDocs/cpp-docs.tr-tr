@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; demet &gt; işlevleri'
 title: '&lt;demet &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::get [C++]
 - std::make_tuple [C++]
 - std::tie [C++]
-ms.openlocfilehash: 46c386ecffb8fbbf7c07d40b334afd91d261ebcf
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: cf58cab5f222594a935156cf7e7f2e886639da2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168962"
 ---
 # <a name="lttuplegt-functions"></a>&lt;demet &gt; işlevleri
 
@@ -30,7 +31,7 @@ template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t)
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir demet *t*ile *F* işlevini çağırır.
+Bir demet *t* ile *F* işlevini çağırır.
 
 ## <a name="forward_as_tuple"></a><a name="forward"></a> forward_as_tuple
 
@@ -95,7 +96,7 @@ Alınacak öğenin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevleri, Dizin *dizininde*veya nesne içindeki *T* türünde olan değere bir başvuru döndürür `tuple` .
+Şablon işlevleri, Dizin *dizininde* veya nesne içindeki *T* türünde olan değere bir başvuru döndürür `tuple` .
 
 `get<T>(Tuple)`Demet, T türünde birden fazla veya daha az öğe içeriyorsa, çağırma bir derleyici hatası oluşturur.
 

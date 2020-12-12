@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: proje derleme hatası PRJ0002'
 title: Proje Derleme Hatası PRJ0002
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0002
 ms.assetid: 1c820b1f-9a24-4681-80ed-4fcbfd7caa00
-ms.openlocfilehash: 30680f5b26f3be5e7f9b48d18e82fca42ed65493
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b9f3d06a71183902c92102f12f665decdbf35a9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119427"
 ---
 # <a name="project-build-error-prj0002"></a>Proje Derleme Hatası PRJ0002
 

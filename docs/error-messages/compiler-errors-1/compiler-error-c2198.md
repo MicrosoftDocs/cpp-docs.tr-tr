@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2198'
 title: Derleyici hatası C2198
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2198
 ms.assetid: 638a845c-9d7f-4115-a9aa-d72455605668
-ms.openlocfilehash: cbe4f95037aabf3b4febc1a8fff5a324773a33b4
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 60c07bdaa422a3844bf17355fd88e7924ce05dc4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301840"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170041"
 ---
 # <a name="compiler-error-c2198"></a>Derleyici hatası C2198
 

@@ -1,21 +1,22 @@
 ---
+description: 'Daha fazla bilgi edinin: eşitleme veri yapıları'
 title: Eşitleme Veri Yapıları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - synchronization data structures
 ms.assetid: d612757d-e4b7-4019-a627-f853af085b8b
-ms.openlocfilehash: 244aaac9bd40c83d0bbec3c360bdf7351da54baf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d5e2e9e6d79f1e71a8f18f98d69fb794597d0ccb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231669"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169352"
 ---
 # <a name="synchronization-data-structures"></a>Eşitleme Veri Yapıları
 
 Eşzamanlılık Çalışma Zamanı, birden çok iş parçacığından paylaşılan verilere erişimi eşitlemenize olanak sağlayan çeşitli veri yapıları sağlar. Bu veri yapıları, seyrek olarak değiştirdiğiniz verileri paylaştığınız zaman yararlıdır. Bir eşitleme nesnesi, Örneğin kritik bir bölüm, diğer iş parçacıklarının paylaşılan kaynak kullanılabilir olana kadar beklemesini sağlar. Bu nedenle, sık kullanılan verilere erişimi eşleştirmek için böyle bir nesne kullanırsanız, uygulamanızda ölçeklenebilirliği kaybedebilirsiniz. [Paralel Desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) , eşitlemeye gerek olmadan bir kaynağı birçok iş parçacığı veya görev arasında paylaşmanızı sağlayan [eşzamanlılık:: combinable](../../parallel/concrt/reference/combinable-class.md) sınıfını sağlar. Sınıfı hakkında daha fazla bilgi için `combinable` bkz. [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 Bu konuda, aşağıdaki zaman uyumsuz ileti bloğu türleri ayrıntılı olarak açıklanmaktadır:
 
@@ -27,7 +28,7 @@ Bu konuda, aşağıdaki zaman uyumsuz ileti bloğu türleri ayrıntılı olarak 
 
 - [olay](#event)
 
-## <a name="critical_section"></a><a name="critical_section"></a>critical_section
+## <a name="critical_section"></a><a name="critical_section"></a> critical_section
 
 [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) sınıfı, öncelik verme yerine diğer görevlere veren bir işbirlikçi karşılıklı dışlama nesnesini temsil eder. Kritik bölümler, birden çok iş parçacığının paylaşılan verilere özel okuma ve yazma erişimi gerektirmesi durumunda faydalıdır.
 
@@ -45,7 +46,7 @@ Aşağıdaki tabloda, sınıfı tarafından tanımlanan önemli Yöntemler göst
 
 [[Üst](#top)]
 
-## <a name="reader_writer_lock"></a><a name="reader_writer_lock"></a>reader_writer_lock
+## <a name="reader_writer_lock"></a><a name="reader_writer_lock"></a> reader_writer_lock
 
 [Concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) sınıfı, paylaşılan verilere iş parçacığı açısından güvenli okuma/yazma işlemleri sağlar. Birden çok iş parçacığının paylaşılan bir kaynağa eşzamanlı okuma erişimi gerektirmesi ancak bu paylaşılan kaynağa nadiren yazmaları durumunda okuyucu/yazıcı kilitlerini kullanın. Bu sınıf, her zaman bir nesneye yalnızca bir iş parçacığı yazma erişimi sağlar.
 
@@ -74,9 +75,9 @@ Aşağıdaki tabloda, sınıfı tarafından tanımlanan önemli Yöntemler göst
 
 [[Üst](#top)]
 
-## <a name="scoped_lock-and-scoped_lock_read"></a><a name="scoped_lock"></a>scoped_lock ve scoped_lock_read
+## <a name="scoped_lock-and-scoped_lock_read"></a><a name="scoped_lock"></a> scoped_lock ve scoped_lock_read
 
-`critical_section`Ve `reader_writer_lock` sınıfları, karşılıklı dışlama nesneleriyle çalışma yöntemini basitleştiren iç içe geçmiş yardımcı sınıflar sağlar. Bu yardımcı sınıflar, *kapsamlı kilitler*olarak bilinir.
+`critical_section`Ve `reader_writer_lock` sınıfları, karşılıklı dışlama nesneleriyle çalışma yöntemini basitleştiren iç içe geçmiş yardımcı sınıflar sağlar. Bu yardımcı sınıflar, *kapsamlı kilitler* olarak bilinir.
 
 `critical_section`Sınıfı [concurrency:: critical_section:: scoped_lock](reference/critical-section-class.md#critical_section__scoped_lock_class) sınıfını içerir. Oluşturucu, belirtilen nesneye erişim sağlar `critical_section` ; yıkıcı bu nesneye erişimi yayınlar. `reader_writer_lock`Sınıfı, benzer [eşzamanlılık:: reader_writer_lock:: scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class) sınıfını içerir, `critical_section::scoped_lock` bunun dışında, belirtilen nesneye yazma erişimini yönetmektedir `reader_writer_lock` . `reader_writer_lock`Sınıfı ayrıca [concurrency:: reader_writer_lock:: scoped_lock_read](reference/reader-writer-lock-class.md#scoped_lock_read_class) sınıfını içerir. Bu sınıf, belirtilen nesneye okuma erişimini yönetir `reader_writer_lock` .
 
@@ -85,7 +86,7 @@ Kapsamlı kilitler, `critical_section` ve nesneleriyle el ile çalışırken çe
 > [!NOTE]
 > `critical_section::scoped_lock`, Ve sınıflarını kullandığınızda, `reader_writer_lock::scoped_lock` `reader_writer_lock::scoped_lock_read` temel karşılıklı dışlama nesnesine erişimi el ile serbest bırakmayın. Bu, çalışma zamanını geçersiz bir duruma yerleştirebilir.
 
-## <a name="event"></a><a name="event"></a>olay
+## <a name="event"></a><a name="event"></a> olay
 
 [Concurrency:: Event](../../parallel/concrt/reference/event-class.md) sınıfı, durumu sinyal veya sinyal olmayan bir eşitleme nesnesini temsil eder. Önemli bölümler gibi eşitleme nesnelerinin aksine, amacı paylaşılan verilere erişimi korumak için, olaylar yürütme akışını eşitler.
 

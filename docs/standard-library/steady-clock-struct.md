@@ -1,21 +1,22 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: steady_clock struct'
 title: steady_clock yapısı
 ms.date: 05/22/2018
 f1_keywords:
 - chrono/std::chrono::steady_clock
 ms.assetid: 970d12ec-fc80-4391-a2f7-b57b2aec668d
-ms.openlocfilehash: d21d5c2ed7ed667333007f3bd12d13f47b868380
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 066a98f4eba6670e640e9fcc9b79eb017859a3d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217408"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169079"
 ---
 # <a name="steady_clock-struct"></a>steady_clock yapısı
 
 *Sabit* bir saati temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct steady_clock;
@@ -25,9 +26,9 @@ struct steady_clock;
 
 Windows üzerinde `steady_clock` işlevi sarmalanmış `QueryPerformanceCounter` .
 
-Bir saat, *monotonic* bir ilk çağrı tarafından döndürülen değer `now` her zaman bir sonraki çağrısıyla döndürülen değerden küçük veya ona eşit ise monoton 'dir `now` . Bir saat *monoton* ise ve saat işaretleri arasındaki süre *sabittir ise sabit olur.*
+Bir saat,  bir ilk çağrı tarafından döndürülen değer `now` her zaman bir sonraki çağrısıyla döndürülen değerden küçük veya ona eşit ise monoton 'dir `now` . Bir saat *monoton* ise ve saat işaretleri arasındaki süre *sabittir ise sabit olur.*
 
-`high_resolution_clock`için bir typedef `steady_clock` .
+`high_resolution_clock` için bir typedef `steady_clock` .
 
 ### <a name="public-typedefs"></a>Ortak tür tanımları
 
@@ -48,7 +49,7 @@ Bir saat, *monotonic* bir ilk çağrı tarafından döndürülen değer `now` he
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`steady_clock::is_steady`|Tutar **`true`** . Bir `steady_clock` *sabit*değer.|
+|`steady_clock::is_steady`|Tutar **`true`** . Bir `steady_clock` *sabit* değer.|
 
 ## <a name="requirements"></a>Gereksinimler
 

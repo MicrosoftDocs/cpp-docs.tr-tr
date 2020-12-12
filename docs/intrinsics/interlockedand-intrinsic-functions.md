@@ -1,5 +1,6 @@
 ---
-title: _InterlockedAnd iç işlevleri
+description: 'Hakkında daha fazla bilgi edinin: _InterlockedAnd iç işlevler'
+title: _InterlockedAnd iç işlevler
 ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedAnd_rel
@@ -56,16 +57,16 @@ helpviewer_keywords:
 - _InterlockedAnd8 intrinsic
 - _InterlockedAnd_HLEAcquire intrinsic
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
-ms.openlocfilehash: e22b463a5229de4745f71aaa0240374a5c057508
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: f5e00b997eced482a8adc8881e9a1b6a3231bb72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217765"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168260"
 ---
-# <a name="_interlockedand-intrinsic-functions"></a>_InterlockedAnd iç işlevleri
+# <a name="_interlockedand-intrinsic-functions"></a>_InterlockedAnd iç işlevler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Birden çok iş parçacığı tarafından paylaşılan bir değişkende atomik bit düzeyinde ve işlemi gerçekleştirmek için kullanılır.
 
@@ -178,27 +179,27 @@ __int64 _InterlockedAnd64_rel(
 *maskesi*\
 'ndaki İkinci işlenen.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 İlk işlenenin özgün değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`|x86, ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedAnd64`|ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedAnd_acq`, `_InterlockedAnd_nf`, `_InterlockedAnd_rel`, `_InterlockedAnd8_acq`, `_InterlockedAnd8_nf`, `_InterlockedAnd8_rel`, `_InterlockedAnd16_acq`, `_InterlockedAnd16_nf`, `_InterlockedAnd16_rel`, `_InterlockedAnd64_acq`, `_InterlockedAnd64_nf`, `_InterlockedAnd64_rel`|ARM, ARM64|\<Intrin. h >|
-|`_InterlockedAnd_np`, `_InterlockedAnd8_np`, `_InterlockedAnd16_np`, `_InterlockedAnd64_np`|X64|\<Intrin. h >|
-|`_InterlockedAnd_HLEAcquire`, `_InterlockedAnd_HLERelease`, `_InterlockedAnd64_HLEAcquire`, `_InterlockedAnd64_HLERelease`|x86, x64|\<ımintrin. h >|
+|`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedAnd64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedAnd_acq`, `_InterlockedAnd_nf`, `_InterlockedAnd_rel`, `_InterlockedAnd8_acq`, `_InterlockedAnd8_nf`, `_InterlockedAnd8_rel`, `_InterlockedAnd16_acq`, `_InterlockedAnd16_nf`, `_InterlockedAnd16_rel`, `_InterlockedAnd64_acq`, `_InterlockedAnd64_nf`, `_InterlockedAnd64_rel`|ARM, ARM64|\<intrin.h>|
+|`_InterlockedAnd_np`, `_InterlockedAnd8_np`, `_InterlockedAnd16_np`, `_InterlockedAnd64_np`|x64|\<intrin.h>|
+|`_InterlockedAnd_HLEAcquire`, `_InterlockedAnd_HLERelease`, `_InterlockedAnd64_HLEAcquire`, `_InterlockedAnd64_HLERelease`|x86, x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Her işlevin adındaki sayı, bağımsız değişkenlerin bit boyutunu belirtir.
 
-ARM ve ARM64 platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiğinin ve son eklerini kullanın. `_nf` ("Sınır yok") sonekine sahip iç bilgiler bellek engeli olarak davranmaz.
+ARM ve ARM64 platformlarında, `_acq` `_rel` önemli bir bölümün başındaki ve sonundaki gibi alma ve bırakma semantiğinin ve son eklerini kullanın. `_nf`("Sınır yok") sonekine sahip iç bilgiler bellek engeli olarak davranmaz.
 
-`_np` ("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
+`_np`("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
 
 Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 

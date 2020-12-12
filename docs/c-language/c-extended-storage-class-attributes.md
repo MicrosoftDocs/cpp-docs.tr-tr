@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C genişletilmiş Storage-Class öznitelikleri'
 title: C Genişletilmiş Depolama Sınıfı Öznitelikler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - extended storage-class attributes
 - storage class specifiers, C storage classes
 ms.assetid: 2580735c-f5bf-46ab-9468-0696893d82be
-ms.openlocfilehash: 5e1fe80f3bc1f581c6ea05c54409b1e76eacfce7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9dff43594ef97214609c6ed2195240d0e21648e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87190227"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168767"
 ---
 # <a name="c-extended-storage-class-attributes"></a>C Genişletilmiş Depolama Sınıfı Öznitelikler
 
@@ -24,7 +25,7 @@ Genişletilmiş öznitelik sözdizimi, C diline yönelik Microsoft'a özel uzant
 
 Depolama sınıfı bilgilerini belirtmeye yönelik genişletilmiş öznitelik sözdizimi __declspec anahtar sözcüğünü kullanır; bu anahtar sözcük belirli bir türden örneğin aşağıda listelenen Microsoft'a özgü depolama sınıfı özniteliğiyle (thread, naked, dllimport veya dllexport) depolanması gerektiğini belirtir. Diğer depolama sınıfı değiştiricilere yönelik örnekler, static ve extern anahtar sözcüklerini içerir. Ancak, bu anahtar sözcükler ANSI C standardının bir parçasıdır ve bunlar genişletilmiş öznitelik sözdiziminin kapsamına girmez.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *depolama sınıfı Belirleyicisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__declspec (** *Genişletilmiş-decl-değiştirici-seq* **)**  / \* Microsoft 'a özgü\*/

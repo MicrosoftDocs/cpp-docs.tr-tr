@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: DispatchState Yapısı'
 title: DispatchState Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - DispatchState structure
 ms.assetid: 8c52546e-1650-48a0-985f-7e4a0fc26a90
-ms.openlocfilehash: 2c4103f89f7fc74c5368bafac3c82685ff9b6e03
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1352a283d6f75d90872e75da92450a4867cf497f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372693"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169430"
 ---
 # <a name="dispatchstate-structure"></a>DispatchState Yapısı
 
-Yapı, `DispatchState` durumu `IExecutionContext::Dispatch` yönteme aktarmak için kullanılır. Yöntemin `Dispatch` arabirimde `IExecutionContext` çağrıldığı koşulları açıklar.
+`DispatchState`Yapı, durumu yöntemine aktarmak için kullanılır `IExecutionContext::Dispatch` . Bu, `Dispatch` yönteminin bir arabirimde çağrıldığı koşulları açıklar `IExecutionContext` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct DispatchState;
@@ -32,17 +33,17 @@ struct DispatchState;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[DispatchState::DispatchState](#ctor)|Yeni `DispatchState` bir nesne oluşturuyor.|
+|[DispatchState::D ispatchState](#ctor)|Yeni bir `DispatchState` nesne oluşturur.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[DispatchState::m_dispatchStateSize](#m_dispatchstatesize)|Sürüm için kullanılan bu yapının boyutu.|
-|[DispatchState::m_fIsPreviousContextAsynchronouslyBlocked](#m_fispreviouscontextasynchronouslyblocked)|Önceki bağlam eş senkronize olarak engellediği için bu bağlamın yönteme `Dispatch` girip girmediğini söyler. Bu yalnızca UMS zamanlama bağlamında kullanılır ve diğer tüm `0` yürütme bağlamları için değere ayarlanır.|
-|[DispatchState::m_reserved](#m_reserved)|Gelecekteki bilgi geçişi için ayrılmış bitler.|
+|[DispatchState:: m_dispatchStateSize](#m_dispatchstatesize)|Sürüm oluşturma için kullanılan bu yapının boyutu.|
+|[DispatchState:: m_fIsPreviousContextAsynchronouslyBlocked](#m_fispreviouscontextasynchronouslyblocked)|Önceki bağlam zaman uyumsuz olarak engellendiğinden bu bağlamın yöntemi girdikten sonra bu bağlamı belirtir `Dispatch` . Bu yalnızca UMS zamanlama bağlamında kullanılır ve `0` tüm diğer yürütme bağlamları için değere ayarlanır.|
+|[DispatchState:: m_reserved](#m_reserved)|Gelecekteki bilgi geçirme için ayrılan bitler.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -50,37 +51,37 @@ struct DispatchState;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="dispatchstatedispatchstate-constructor"></a><a name="ctor"></a>DispatchState::DispatchState Yapıcı
+## <a name="dispatchstatedispatchstate-constructor"></a><a name="ctor"></a> DispatchState::D ispatchState Oluşturucusu
 
-Yeni `DispatchState` bir nesne oluşturuyor.
+Yeni bir `DispatchState` nesne oluşturur.
 
 ```cpp
 DispatchState();
 ```
 
-## <a name="dispatchstatem_dispatchstatesize-data-member"></a><a name="m_dispatchstatesize"></a>DispatchState::m_dispatchStateSize Veri Üyesi
+## <a name="dispatchstatem_dispatchstatesize-data-member"></a><a name="m_dispatchstatesize"></a> DispatchState:: m_dispatchStateSize veri üyesi
 
-Sürüm için kullanılan bu yapının boyutu.
+Sürüm oluşturma için kullanılan bu yapının boyutu.
 
 ```cpp
 unsigned long m_dispatchStateSize;
 ```
 
-## <a name="dispatchstatem_fispreviouscontextasynchronouslyblocked-data-member"></a><a name="m_fispreviouscontextasynchronouslyblocked"></a>DispatchState::m_fIsPreviousContextAsynchronouslyBlocked Veri Üyesi
+## <a name="dispatchstatem_fispreviouscontextasynchronouslyblocked-data-member"></a><a name="m_fispreviouscontextasynchronouslyblocked"></a> DispatchState:: m_fIsPreviousContextAsynchronouslyBlocked veri üyesi
 
-Önceki bağlam eş senkronize olarak engellediği için bu bağlamın yönteme `Dispatch` girip girmediğini söyler. Bu yalnızca UMS zamanlama bağlamında kullanılır ve diğer tüm `0` yürütme bağlamları için değere ayarlanır.
+Önceki bağlam zaman uyumsuz olarak engellendiğinden bu bağlamın yöntemi girdikten sonra bu bağlamı belirtir `Dispatch` . Bu yalnızca UMS zamanlama bağlamında kullanılır ve `0` tüm diğer yürütme bağlamları için değere ayarlanır.
 
 ```cpp
 unsigned int m_fIsPreviousContextAsynchronouslyBlocked : 1;
 ```
 
-## <a name="dispatchstatem_reserved-data-member"></a><a name="m_reserved"></a>DispatchState::m_reserved Veri Üyesi
+## <a name="dispatchstatem_reserved-data-member"></a><a name="m_reserved"></a> DispatchState:: m_reserved veri üyesi
 
-Gelecekteki bilgi geçişi için ayrılmış bitler.
+Gelecekteki bilgi geçirme için ayrılan bitler.
 
 ```cpp
 unsigned int m_reserved : 31;
@@ -88,4 +89,4 @@ unsigned int m_reserved : 31;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[concurrency Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

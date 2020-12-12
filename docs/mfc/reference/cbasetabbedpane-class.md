@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CBaseTabbedPane sınıfı'
 title: CBaseTabbedPane sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - CBaseTabbedPane [MFC], SetAutoHideMode
 - CBaseTabbedPane [MFC], ShowTab
 ms.assetid: f22c0080-5b29-4a0a-8f74-8f0a4cd2dbcf
-ms.openlocfilehash: 21f2821392d2b9e71837997f5a9a10ab80ba073f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 980f2691aa9e129b0e47070d7ff095d486c45b65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122752"
 ---
 # <a name="cbasetabbedpane-class"></a>CBaseTabbedPane sınıfı
 
@@ -260,7 +261,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *yalnızca bactivetab*<br/>
-'ndaki Sekmeli bir bölmeyi dönüştürdüğünüzde, yalnızca etkin sekmesini dönüştürmek için TRUE değerini belirtin. bölmedeki tüm sekmeleri dönüştürmek için FALSE belirtin.
+'ndaki Sekmeli bir bölmeyi dönüştürdüğünüzde, yalnızca etkin sekmesini dönüştürmek için TRUE değerini belirtin. Bölmedeki tüm sekmeleri dönüştürmek için FALSE belirtin.
 
 ## <a name="cbasetabbedpanedetachpane"></a><a name="detachpane"></a> CBaseTabbedPane::D etachPane
 

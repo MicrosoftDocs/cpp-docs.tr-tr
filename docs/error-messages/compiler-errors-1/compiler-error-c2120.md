@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2120'
 title: Derleyici hatası C2120
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2120
 ms.assetid: b0f3f66c-6cd2-4f48-9ea3-c270b53c2b8c
-ms.openlocfilehash: fd0b11b1500ea448ded4a24db8e6d8ebf9ee9782
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 064c0587275d85c3cff520075352825d17d41aef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212858"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170066"
 ---
 # <a name="compiler-error-c2120"></a>Derleyici hatası C2120
 

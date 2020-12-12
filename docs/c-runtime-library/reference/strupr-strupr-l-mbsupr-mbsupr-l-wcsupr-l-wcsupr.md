@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr'
 title: _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - _tcsupr function
 - strings [C++], converting case
 ms.assetid: caac8f16-c233-41b6-91ce-575ec7061b77
-ms.openlocfilehash: c30aa9e1a73ba51931caff726837841f76922139
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a7de813f13d4a79a394ae369b4385e8e2c6e4e5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912331"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117178"
 ---
 # <a name="_strupr-_strupr_l-_mbsupr-_mbsupr_l-_wcsupr_l-_wcsupr"></a>_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 
@@ -151,11 +152,11 @@ Değiştirilen dizeye bir işaretçi döndürür. Değişiklik yerinde yapıldı
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strupr** işlevi, *Str* içindeki her küçük harfi de büyük harfe dönüştürür. Dönüştürme, yerel ayarın **LC_CTYPE** kategori ayarı tarafından belirlenir. Diğer karakterler etkilenmez. **LC_CTYPE**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** soneki olmayan bu işlevlerin sürümleri geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**_Strupr** işlevi, *Str* içindeki her küçük harfi de büyük harfe dönüştürür. Dönüştürme, yerel ayarın **LC_CTYPE** kategori ayarı tarafından belirlenir. Diğer karakterler etkilenmez. **LC_CTYPE** hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** soneki olmayan bu işlevlerin sürümleri geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**_wcsupr** ve **_mbsupr** , **_strupr**geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsupr** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir; **_mbsupr** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**_wcsupr** ve **_mbsupr** , **_strupr** geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsupr** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir; **_mbsupr** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-*Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler özgün dizeyi döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
+*Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler özgün dizeyi döndürür ve **errno** 'ı **EINVAL** olarak ayarlar.
 
 C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -172,9 +173,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strupr**, **_strupr_l**|\<String. h>|
-|**_wcsupr**, **_wcsupr_l**|\<String. h> veya \<wchar. h>|
-|**_mbsupr**, **_mbsupr_l**|\<mbstring. h>|
+|**_strupr**, **_strupr_l**|\<string.h>|
+|**_wcsupr**, **_wcsupr_l**|\<string.h> veya \<wchar.h>|
+|**_mbsupr**, **_mbsupr_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

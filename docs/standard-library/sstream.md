@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; sstream&gt;'
 title: '&lt;sstream&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - sstream header
 ms.assetid: 56f55bc5-549d-4e7f-aaad-99e0ffa49c9e
-ms.openlocfilehash: 31a445fcc7deb5e5bade5437058cb36e28dacd40
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5f0c5307073c2296f20df0adb663bce9b4b97d59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169105"
 ---
 # <a name="ltsstreamgt"></a>&lt;sstream&gt;
 
 Ayrılmış bir dizi nesnesinde depolanan diziler üzerinde Iostreams işlemlerini destekleyen çeşitli sınıf şablonları tanımlar. Bu tür diziler, [basic_string](../standard-library/basic-string-class.md)sınıf şablonu nesnelerinden kolayca ve bu nesnelerden dönüştürülür.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 namespace std {

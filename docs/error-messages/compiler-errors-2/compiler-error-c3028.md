@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3028'
 title: Derleyici hatası C3028
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3028
 ms.assetid: 175e697f-8e8f-492a-8456-6240ffbbb900
-ms.openlocfilehash: 623197a615c05adad52676b93fb58a62f805741e
-ms.sourcegitcommit: 6e55aeb538b1c39af754f82d6f7738a18f5aa031
+ms.openlocfilehash: d63bb52db8f6b77363857df7923c2f1a2089175c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87389863"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168468"
 ---
 # <a name="compiler-error-c3028"></a>Derleyici hatası C3028
 

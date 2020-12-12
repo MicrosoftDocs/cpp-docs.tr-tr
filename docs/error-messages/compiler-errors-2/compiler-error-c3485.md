@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3485'
 title: Derleyici hatası C3485
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3485
 ms.assetid: d67536f9-67a1-4ad9-9a94-d8bbbca3d0dc
-ms.openlocfilehash: 2117832ffd5a90612e9745a3706f01e3b5d1b18d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0b11eb4487a9b6deb611852dd11a8a1963dd961e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87197676"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168390"
 ---
 # <a name="compiler-error-c3485"></a>Derleyici hatası C3485
 

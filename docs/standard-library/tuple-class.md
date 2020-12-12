@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: demet sınıfı'
 title: tuple Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-ms.openlocfilehash: 04fd3ec6ce3363d118174025823279a80dd00f0b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9beb3f263fa516d7d4096c404c135deffde6fc31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169028"
 ---
 # <a name="tuple-class"></a>tuple Sınıfı
 
 Sabit uzunluklu bir öğe dizisini sarmalanmış.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class tuple {
@@ -116,7 +117,7 @@ The tuples in the vector are
 ( 3, 0.033, three ).
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>işleç =
+## <a name="operator"></a><a name="op_eq"></a> işleç =
 
 Bir `tuple` nesnesi atar.
 
@@ -198,7 +199,7 @@ int main()
 x 4
 ```
 
-## <a name="swap"></a><a name="tuple_swap"></a>Kur
+## <a name="swap"></a><a name="tuple_swap"></a> Kur
 
 İki tanımlama alanının öğelerini değiş tokuş eder.
 
@@ -213,13 +214,13 @@ template <class... Types>
 Öğeleri demet ile değiş tokuş edilecek şekilde değiştirilecek olan bir kayıt *düzeni.*
 
 *Right*\
-Öğeleri *sol*kayıt düzeni ile değiş tokuş edilecek bir kayıt düzeni.
+Öğeleri *sol* kayıt düzeni ile değiş tokuş edilecek bir kayıt düzeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
 İşlev yürütülür `left.swap(right)` .
 
-## <a name="tuple"></a><a name="tuple"></a>Le
+## <a name="tuple"></a><a name="tuple"></a> Le
 
 Bir `tuple` nesnesi oluşturur.
 
@@ -258,7 +259,7 @@ Kopyalamanın bulunduğu kayıt düzeni.
 
 İkinci Oluşturucu, öğeleri, `P1` `P2` `PN` her biri `Pi` dizindeki öğesini başlatarak,,... bağımsız değişkenlerinden oluşturulmuş bir nesne oluşturur `i - 1` .
 
-Üçüncü ve dördüncü oluşturucular, öğeleri ilişkili *sağ*öğeden oluşturulmuş olan bir nesne oluşturur.
+Üçüncü ve dördüncü oluşturucular, öğeleri ilişkili *sağ* öğeden oluşturulmuş olan bir nesne oluşturur.
 
 Beşinci Oluşturucu, dizin 0 ' daki öğesi öğesinden oluşturulan `right.first` ve Dizin 1 ' deki öğesinden kopyası oluşturulan bir nesne oluşturur `right.second` .
 

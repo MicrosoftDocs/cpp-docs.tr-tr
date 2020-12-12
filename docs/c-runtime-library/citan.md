@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CItan'
 title: _CItan
 ms.date: 4/2/2020
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - CItan intrinsic
 - _CItan intrinsic
 ms.assetid: d1ea3113-50a2-45a6-b6bc-680fcdcc0928
-ms.openlocfilehash: 65cce8b094a1508566e2de7162b9e8e76712742a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 93a339d309215dc4dddb97df3007b9f9b0b4c370
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168741"
 ---
 # <a name="_citan"></a>_CItan
 
 Kayan nokta yığınındaki en üstteki değerin tanjantını hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void __cdecl _CItan();

@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: DAO sınıfları'
 title: DAO Sınıfları
 ms.date: 09/17/2019
 helpviewer_keywords:
 - database classes [MFC], DAO
 - DAO [MFC], classes
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-ms.openlocfilehash: 51abd29ef4de5d70f4a5b2b6b14b53510e7876a1
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: bf30a4d985947ca435c53391ce9529caf9ec2c81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615927"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169417"
 ---
 # <a name="dao-classes"></a>DAO Sınıfları
 
@@ -50,16 +51,16 @@ DAO veritabanı sınıfları tarafından kullanılan DAO Kayıt alanı değişim
 ## <a name="related-classes"></a>İlgili sınıflar
 
 [CLongBinary](reference/clongbinary-class.md)<br/>
-Bir bit eşlem gibi ikili büyük nesne (BLOB) için bir tanıtıcıyı saklar. `CLongBinary`nesneler, veritabanı tablolarında depolanan büyük veri nesnelerini yönetmek için kullanılır.
+Bir bit eşlem gibi ikili büyük nesne (BLOB) için bir tanıtıcıyı saklar. `CLongBinary` nesneler, veritabanı tablolarında depolanan büyük veri nesnelerini yönetmek için kullanılır.
 
 [Colet para birimi](reference/colecurrency-class.md)<br/>
-Sabit noktalı aritmetik tür olan ve sonra ondalık noktadan önce 15 basamakla ve sonrasında 4 basamaktan oluşan OLE Otomasyon türü **para birimi**için sarmalayıcı.
+Sabit noktalı aritmetik tür olan ve sonra ondalık noktadan önce 15 basamakla ve sonrasında 4 basamaktan oluşan OLE Otomasyon türü **para birimi** için sarmalayıcı.
 
 [Cotadatetime](../atl-mfc-shared/reference/coledatetime-class.md)<br/>
-OLE Otomasyonu tür **tarihi**için sarmalayıcı. Tarih ve saat değerlerini temsil eder.
+OLE Otomasyonu tür **tarihi** için sarmalayıcı. Tarih ve saat değerlerini temsil eder.
 
 [Colet varyantı](reference/colevariant-class.md)<br/>
-OLE Otomasyonu tür **varyantı**için sarmalayıcı. **VARIANT**'lar içindeki veriler birçok biçimde depolanabilir.
+OLE Otomasyonu tür **varyantı** için sarmalayıcı. **VARIANT**'lar içindeki veriler birçok biçimde depolanabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

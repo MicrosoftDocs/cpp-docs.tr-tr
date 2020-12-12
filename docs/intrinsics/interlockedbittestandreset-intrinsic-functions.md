@@ -1,5 +1,6 @@
 ---
-title: _ınterlockedbittestandreset iç işlevleri
+description: 'Hakkında daha fazla bilgi edinin: _interlockedbittestandreset iç işlevler'
+title: _interlockedbittestandreset iç işlevler
 ms.date: 09/02/2019
 f1_keywords:
 - _interlockedbittestandreset_rel
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - _interlockedbittestandreset64 intrinsic
 - _interlockedbittestandreset intrinsic
 ms.assetid: 9bbb1442-f2e9-4dc2-b0da-97f3de3493b9
-ms.openlocfilehash: 419d7f800d603a8beca5c8ccb0f9c8f8b3bfcfdb
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 10bd636fb25d0f4025530f0bd7a8c3f877cc1556
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222063"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168221"
 ---
-# <a name="_interlockedbittestandreset-intrinsic-functions"></a>_ınterlockedbittestandreset iç işlevleri
+# <a name="_interlockedbittestandreset-intrinsic-functions"></a>_interlockedbittestandreset iç işlevler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`b` Adresin`a` bitini sıfıra ayarlamak için bir yönerge oluşturur ve özgün değerini döndürür.
+Adresin bitini sıfıra ayarlamak için bir yönerge oluşturur `b` `a` ve özgün değerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -95,26 +96,26 @@ unsigned char _interlockedbittestandreset64_HLERelease(
 *kenarı*\
 'ndaki Sınanacak bit konumu.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Tarafından `b`belirtilen konumdaki bitin özgün değeri.
+Tarafından belirtilen konumdaki bitin özgün değeri `b` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_interlockedbittestandreset`|x86, ARM, x64, ARM64|\<Intrin. h >|
-|`_interlockedbittestandreset_acq`, `_interlockedbittestandreset_nf`, `_interlockedbittestandreset_rel`|ARM, ARM64|\<Intrin. h >|
-|`_interlockedbittestandreset64_acq`, `_interlockedbittestandreset64_nf`, `_interlockedbittestandreset64_rel`|ARM64|\<Intrin. h >|
-|`_interlockedbittestandreset_HLEAcquire`, `_interlockedbittestandreset_HLERelease`|x86, x64|\<ımintrin. h >|
-|`_interlockedbittestandreset64`|x64, ARM64|\<Intrin. h >|
-|`_interlockedbittestandreset64_HLEAcquire`, `_interlockedbittestandreset64_HLERelease`|X64|\<ımintrin. h >|
+|`_interlockedbittestandreset`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_interlockedbittestandreset_acq`, `_interlockedbittestandreset_nf`, `_interlockedbittestandreset_rel`|ARM, ARM64|\<intrin.h>|
+|`_interlockedbittestandreset64_acq`, `_interlockedbittestandreset64_nf`, `_interlockedbittestandreset64_rel`|ARM64|\<intrin.h>|
+|`_interlockedbittestandreset_HLEAcquire`, `_interlockedbittestandreset_HLERelease`|x86, x64|\<immintrin.h>|
+|`_interlockedbittestandreset64`|x64, ARM64|\<intrin.h>|
+|`_interlockedbittestandreset64_HLEAcquire`, `_interlockedbittestandreset64_HLERelease`|x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>Açıklamalar
 
-X86 ve x64 işlemcilerde bu iç bilgiler, bir atomik `lock btr` işlemde belirtilen bit ' i okuyup ayarlayan yönergesini kullanır.
+X86 ve x64 işlemcilerde bu iç bilgiler, `lock btr` bir atomik işlemde belirtilen bit ' i okuyup ayarlayan yönergesini kullanır.
 
-ARM işlemcilerde, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf` ("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
+ARM işlemcilerde, `_acq` `_rel` önemli bir bölümün başındaki ve sonundaki gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf`("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
 
 Donanım kilidi (HLE) talimatlarını destekleyen Intel işlemcilerde, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen işlemcilerde çağrılırsa, ipucu yok sayılır.
 

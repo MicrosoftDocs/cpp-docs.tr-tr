@@ -1,17 +1,18 @@
 ---
-title: Visual Studio'da Linux C++ Proje Özellik Sayfaları
+description: 'Daha fazla bilgi edinin: Linux proje özellik sayfası başvurusu'
+title: Visual Studio 'da Linux C++ proje özellik sayfaları
 ms.date: 07/20/2018
 ms.assetid: 33d8c1f4-13f1-4f61-b407-30715b28142f
-ms.openlocfilehash: 0df31f3dac7026f3171f8af7b7ede664ea7fe346
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ed850139526ca7927ff03617f41cc794d2e2e796
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "62393135"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169833"
 ---
-# <a name="linux-project-property-page-reference"></a>Linux Projesi Özellik Sayfası Başvurusu
+# <a name="linux-project-property-page-reference"></a>Linux proje özellik sayfası başvurusu
 
-Bu bölümde, Visual C++ Linux projesindeki özellik sayfaları için referans içeriği bulunmaktadır.
+Bu bölüm Visual C++ Linux projesindeki Özellik sayfaları için başvuru içeriği içerir.
 
 - [Genel Özellikler (Linux)](prop-pages/general-linux.md)
 - [Hata Ayıklama Özellikleri (Linux)](prop-pages/debugging-linux.md)
