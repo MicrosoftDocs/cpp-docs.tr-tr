@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CBookmark sınıfı'
 title: CBookmark Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -66,18 +67,18 @@ helpviewer_keywords:
 - operator =, bookmarks
 - operator=, bookmarks
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
-ms.openlocfilehash: 4013e40c364593676ebb099804304ffb2adb42c1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7c138776e282c287eb7e7e09b93196ac0792f7ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295074"
 ---
 # <a name="cbookmark-class"></a>CBookmark Sınıfı
 
 Arabellekte bir yer işareti değeri tutar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template < DBLENGTH nSize = 0 >
@@ -121,7 +122,7 @@ Yer işareti arabelleğinin bayt cinsinden boyutu. *NSize* sıfır olduğunda, y
 
 Oluşturucu.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CBookmark();
@@ -135,7 +136,7 @@ CBookmark(DBLENGTH nSize);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev, arabelleği NULL ve arabellek boyutunu 0 olarak ayarlar. İkinci işlev arabellek boyutunu *nSize*ve arabelleği bir bayt dizisi olarak *nSize* bayt dizisine ayarlar.
+İlk işlev, arabelleği NULL ve arabellek boyutunu 0 olarak ayarlar. İkinci işlev arabellek boyutunu *nSize* ve arabelleği bir bayt dizisi olarak *nSize* bayt dizisine ayarlar.
 
 > [!NOTE]
 > Bu işlev yalnızca ' de kullanılabilir `CBookmark<0>` .
@@ -170,9 +171,9 @@ Arabelleğin bayt cinsinden boyutu.
 
 ## <a name="cbookmarksetbookmark"></a><a name="setbookmark"></a> CBookmark:: SetBookmark
 
-*PBuffer* tarafından başvurulan yer işareti değerini `CBookmark` arabelleğe kopyalar ve arabellek boyutunu *nSize*olarak ayarlar.
+*PBuffer* tarafından başvurulan yer işareti değerini `CBookmark` arabelleğe kopyalar ve arabellek boyutunu *nSize* olarak ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();

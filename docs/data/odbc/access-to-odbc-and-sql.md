@@ -1,4 +1,5 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: ODBC ve SQL 'e erişim"
 title: ODBC'ye ve SQL'e Erişim
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - SQL [C++], calling ODBC API functions
 - ODBC [C++], API functions
 ms.assetid: 5613d7dc-00b7-4646-99ae-1116c05c52b4
-ms.openlocfilehash: 0b590ce9309cbbe95285001cc5befe70a1d1961f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 507e3a8e2d88c253f193de41be1a28ae0c5cba87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295152"
 ---
 # <a name="access-to-odbc-and-sql"></a>ODBC'ye ve SQL'e Erişim
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: eşzamanlılık::p recise_math ad alanı işlevleri'
 title: Concurrency::precise_math ad alanı işlevleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -90,12 +91,12 @@ f1_keywords:
 - amp_math/Concurrency::precise_math::trunc
 - amp_math/Concurrency::precise_math::truncf
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
-ms.openlocfilehash: 770946769c60f3dd689f5cd2defd6d4c6f6ed6b5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2b96c059e919e9085aa2c26d57042d4dc3188417
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297167"
 ---
 # <a name="concurrencyprecise_math-namespace-functions"></a>Concurrency::precise_math ad alanı işlevleri
 
@@ -926,7 +927,7 @@ inline double expm1(double exponent) restrict(amp);
 ### <a name="parameters"></a>Parametreler
 
 *s*<br/>
-*n* `e` ' Nin, doğal logaritmanın temelini olduğu, matematiksel ifade <sup>n</sup>'nin üstel terimi `e` .
+ `e` ' Nin, doğal logaritmanın temelini olduğu, matematiksel ifade <sup>n</sup>'nin üstel terimi `e` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -943,7 +944,7 @@ inline float expm1f(float exponent) restrict(amp);
 ### <a name="parameters"></a>Parametreler
 
 *s*<br/>
-*n* `e` ' Nin, doğal logaritmanın temelini olduğu, matematiksel ifade <sup>n</sup>'nin üstel terimi `e` .
+ `e` ' Nin, doğal logaritmanın temelini olduğu, matematiksel ifade <sup>n</sup>'nin üstel terimi `e` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1315,7 +1316,7 @@ inline double fmod(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geri kalanı `_X` `_Y` ; Yani, n değeri, n değerinin `_X`  -  `_Y` *n*tam bir tam tamsayıdır; burada *n,* `_X`  -  `_Y` *n* büyüklüğü büyüklüğünün boyutundan daha düşüktür `_Y` .
+Geri kalanı `_X` `_Y` ; Yani, n değeri, n değerinin `_X`  -  `_Y` tam bir tam tamsayıdır; burada *n,* `_X`  -  `_Y` *n* büyüklüğü büyüklüğünün boyutundan daha düşüktür `_Y` .
 
 ## <a name="fmodf"></a><a name="fmodf"></a> fmodf
 
@@ -1337,7 +1338,7 @@ inline float fmodf(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geri kalanı `_X` `_Y` ; Yani, n değeri, n değerinin `_X`  -  `_Y` *n*tam bir tam tamsayıdır; burada *n,* `_X`  -  `_Y` *n* büyüklüğü büyüklüğünün boyutundan daha düşüktür `_Y` .
+Geri kalanı `_X` `_Y` ; Yani, n değeri, n değerinin `_X`  -  `_Y` tam bir tam tamsayıdır; burada *n,* `_X`  -  `_Y` *n* büyüklüğü büyüklüğünün boyutundan daha düşüktür `_Y` .
 
 ## <a name="fpclassify"></a><a name="fpclassify"></a> fpclassify
 

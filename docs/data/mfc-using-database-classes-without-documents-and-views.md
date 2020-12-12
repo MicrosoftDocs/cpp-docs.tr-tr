@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC: belgeler ve görünümler olmadan veritabanı sınıflarını kullanma'
 title: 'MFC: Belgeler ve Görünümler Olmadan Veritabanı Sınıflarını Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,108 +18,108 @@ helpviewer_keywords:
 - database applications [C++], without documents
 - user interface [C++], drawing information
 ms.assetid: 15bf52d4-91cf-4b1d-8b37-87c3ae70123a
-ms.openlocfilehash: c914a449b73e7da876d2e05b894c016b53881c3b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 32b019286a07cacc0c7bf95145d0aedde804ff92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295165"
 ---
 # <a name="mfc-using-database-classes-without-documents-and-views"></a>MFC: Belgeler ve Görünümler Olmadan Veritabanı Sınıflarını Kullanma
 
-Bazen veritabanı uygulamalarınızda çerçevenin belge/görünüm mimarisini kullanmak istemeyebilirsiniz. Bu konu açıklar:
+Bazen, veritabanı uygulamalarınızda Framework 'ün belge/görünüm mimarisini kullanmak istemeyebilirsiniz. Bu konuda aşağıdakiler açıklanmaktadır:
 
-- Belge serileştirme gibi [belgeleri kullanmanız gerekmediğinde.](#_core_when_you_don.92.t_need_documents)
+- Belge serileştirme gibi [Belgeler kullanmanıza gerek olmadığında](#_core_when_you_don.92.t_need_documents) .
 
-- [Uygulama sihirbazı seçenekleri](#_core_appwizard_options_for_documents_and_views) serileştirme olmadan ve belge ile ilgili **Dosya** menüsü komutları olmadan yeni **,** **Aç**, **Kaydet**ve **Farklı Kaydet**gibi uygulamaları desteklemek için .
+- [Uygulama Sihirbazı](#_core_appwizard_options_for_documents_and_views) ' nı serileştirme ve **Yeni**, **açma**, **kaydetme** ve **farklı kaydet** gibi belge ile ilgili **Dosya** menüsü komutları olmadan uygulamaları desteklemeye yönelik seçenekler.
 
-- [En az belge kullanan bir uygulamayla çalışma](#_core_applications_with_minimal_documents)
+- [En az bir belge kullanan bir uygulamayla çalışma](#_core_applications_with_minimal_documents).
 
-- [Belge veya görünüm olmadan bir uygulama yapılandırma.](#_core_applications_with_no_document)
+- [Belge veya görünüm olmadan bir uygulamayı nasıl yapılandıracağınıza](#_core_applications_with_no_document).
 
-## <a name="when-you-do-not-need-documents"></a><a name="_core_when_you_don.92.t_need_documents"></a>Belgelere İhtiyacınız Olmadığında
+## <a name="when-you-do-not-need-documents"></a><a name="_core_when_you_don.92.t_need_documents"></a> Belgelere Ihtiyacınız olmadığında
 
-Bazı uygulamaların ayrı bir belge kavramı vardır. Bu uygulamalar genellikle dosyanın tamamını veya çoğunu bir **Dosya Aç** komutuyla depolamadan belleğe yükler. Güncelleştirilmiş dosyayı dosya **kaydet** veya **Farklı** Kaydet komutuyla tek seferde depolamaya geri yazarlar. Kullanıcının gördüğü bir veri dosyasıdır.
+Bazı uygulamalarda farklı bir belge kavramı vardır. Bu uygulamalar genellikle dosya **Aç** komutuyla bir dosyanın tamamını depolama alanından belleğe yükler. Güncelleştirilmiş dosyayı **Dosya Kaydet** veya **farklı kaydet** komutuyla tek seferde depolama alanına geri yazar. Kullanıcının gördüğü veri dosyası.
 
-Ancak, bazı uygulama kategorileri belge gerektirmez. Veritabanı uygulamaları işlemler açısından çalışır. Uygulama, bir veritabanından kayıtları seçer ve bunları kullanıcıya genellikle birer birer sunar. Kullanıcının gördüğü genellikle bellekteki tek kayıt olabilecek tek bir geçerli kayıttır.
+Ancak bazı uygulama kategorileri için bir belge gerekmez. Veritabanı uygulamaları işlem koşullarında çalışır. Uygulama bir veritabanından kayıtları seçer ve genellikle bir kerede bir kez kullanıcıya sunar. Kullanıcının gördüğü, genellikle bellekte tek bir geçerli kayıt olabilir.
 
-Uygulamanız veri depolamak için bir belge gerektirmiyorsa, çerçevenin belge/görünüm mimarisinin bir kısmını veya tamamını dağıtabilirsiniz. Ne kadar dağıttığınız, tercih ettiğiniz yaklaşıma bağlıdır. Şunları düşünebilirsiniz:
+Uygulamanız veri depolamak için bir belge gerektirmiyorsa, Framework 'ün belge/görünüm mimarisinin bir kısmını veya tamamını kullanabilirsiniz. İle ne kadar çok, tercih ettiğiniz yaklaşıma göre değişir. Şunları yapabilirsiniz:
 
-- Veri kaynağınıza bağlantı depolamak için en az belgeyi bir yer olarak kullanın, ancak serileştirme gibi normal belge özelliklerinden vazgeçin. Bu, verilerin çeşitli görünümlerini istediğinizde ve tüm görünümleri eşitlemek, hepsini aynı anda güncelleştirerek ve benzeri durumlarda yararlıdır.
+- Veri kaynağınıza bir bağlantı depolamak için bir yer olarak en az bir belge kullanın, ancak serileştirme gibi normal belge özellikleriyle dağıtılın. Bu, verilerin çeşitli görünümlerini istediğinizde ve tüm görünümleri eşleştirmek, tümünü bir kez güncelleştirmek ve bu şekilde devam etmek istediğinizde yararlı olur.
 
-- Bir görünüm kullanmak yerine doğrudan çizdiğiniz bir çerçeve penceresi kullanın. Bu durumda, belgeyi atlayın ve çerçeve penceresi nesnesinde herhangi bir veri veya veri bağlantısı depolayın.
+- Bir görünüm kullanmak yerine doğrudan çizeceğiniz bir çerçeve penceresi kullanın. Bu durumda, belgeyi atlayın ve tüm verileri veya veri bağlantılarını çerçeve pencere nesnesinde depolayamazsınız.
 
-## <a name="application-wizard-options-for-documents-and-views"></a><a name="_core_appwizard_options_for_documents_and_views"></a>Belgeler ve Görünümler için Uygulama Sihirbazı Seçenekleri
+## <a name="application-wizard-options-for-documents-and-views"></a><a name="_core_appwizard_options_for_documents_and_views"></a> Belgeler ve görünümler için uygulama Sihirbazı seçenekleri
 
-MFC Uygulama Sihirbazı'nın select **veritabanı desteğinde**aşağıdaki tabloda listelenen birkaç seçenek vardır. Bir uygulama oluşturmak için MFC Uygulama Sihirbazı'nı kullanırsanız, tüm bu seçenekler belge ve görünümiçeren uygulamalar üretir. Bazı seçenekler, gereksiz belge işlevselliğini atlayan belgeler ve görünümler sağlar. Daha fazla bilgi için [Veritabanı Desteği, MFC Uygulama Sihirbazı'na](../mfc/reference/database-support-mfc-application-wizard.md)bakın.
+MFC Uygulama Sihirbazı ' nda, aşağıdaki tabloda listelenen **veritabanı desteği seçme**' de çeşitli seçenekler bulunur. Bir uygulama oluşturmak için MFC Uygulama Sihirbazı ' nı kullanırsanız, tüm bu seçenekler belgeler ve görünümler ile uygulamalar oluşturur. Bazı seçenekler, gerekli olmayan belge işlevlerini atlayan belgeler ve görünümler sağlar. Daha fazla bilgi için bkz. [veritabanı desteği, MFC Uygulama Sihirbazı](../mfc/reference/database-support-mfc-application-wizard.md).
 
 |Seçenek|Görüntüle|Belge|
 |------------|----------|--------------|
-|**Yok**|`CView`Türetilmiş.|Veritabanı desteği sağlamaz. Bu varsayılan seçenektir.<br /><br /> [Uygulama Türü, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfasında **Belge/görünüm mimarisi destek** seçeneğini seçerseniz, **Dosya** menüsünde serileştirme ve **Yeni**, **Aç,** **Kaydet**ve **Kaydet** komutları dahil olmak üzere tam belge desteği alırsınız. [Bkz. Belgesiz Uygulamalar](#_core_applications_with_no_document).|
-|**Yalnızca üstbilgi dosyaları**|`CView`Türetilmiş.|Uygulamanız için temel veritabanı desteği düzeyini sağlar.<br /><br /> Afxdb.h içerir. Bağlantı kitaplıkları ekler, ancak veritabanına özgü sınıflar oluşturmaz. Daha sonra kayıt kümeleri oluşturabilir ve bunları kayıtları incelemek ve güncelleştirmek için kullanabilirsiniz.|
-|**Dosya desteği olmadan veritabanı görünümü**|Türetilen`CRecordView`|Belge desteği sağlar, ancak serileştirme desteği sağlamaz. Belge kayıt kümesini depolayabilir ve birden çok görünümü koordine edebilir; serileştirmeyi veya **Yeni,** **Aç,** **Kaydet**ve **Kaydet** komutlarını desteklemez. [Minimal Belgelerle Uygulamalara](#_core_applications_with_minimal_documents)Bakın. Bir veritabanı görünümü eklerseniz, verilerin kaynağını belirtmeniz gerekir.<br /><br /> Veritabanı üstbilgi dosyaları, bağlantı kitaplıkları, kayıt görünümü ve kayıt kümesi içerir. (Yalnızca [Uygulama Türü, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfasında seçilen **Belge/görünüm mimarisi destek** seçeneği olan uygulamalar için kullanılabilir.)|
-|**Dosya desteği ile veritabanı görünümü**|Türetilen`CRecordView`|Serileştirme ve belgeyle ilgili **Dosya** menüsü komutları da dahil olmak üzere tam belge desteği sağlar. Veritabanı uygulamaları genellikle dosya başına değil, kayıt başına bazda çalışır ve bu nedenle serileştirme gerekmez. Ancak, serileştirme için özel bir kullanımınız olabilir. [Minimal Belgelerle Uygulamalara](#_core_applications_with_minimal_documents)Bakın. Bir veritabanı görünümü eklerseniz, verilerin kaynağını belirtmeniz gerekir.<br /><br /> Veritabanı üstbilgi dosyaları, bağlantı kitaplıkları, kayıt görünümü ve kayıt kümesi içerir. (Yalnızca [Uygulama Türü, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfasında seçilen **Belge/görünüm mimarisi destek** seçeneği olan uygulamalar için kullanılabilir.)|
+|**Hiçbiri**|Öğesinden türetilir `CView` .|Veritabanı desteği sağlamaz. Bu varsayılan seçenektir.<br /><br /> [Uygulama türü, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfasında **belge/görünüm mimarisi desteği** seçeneğini belirlerseniz, **Dosya** menüsünde serileştirme ve **Yeni**, **açma**, **kaydetme** ve **farklı kaydet** komutları dahil olmak üzere tam belge desteği alırsınız. [Belge Içermeyen uygulamalara](#_core_applications_with_no_document)bakın.|
+|**Yalnızca üst bilgi dosyaları**|Öğesinden türetilir `CView` .|Uygulamanız için temel veritabanı desteği düzeyini sağlar.<br /><br /> Afxdb. h 'yi içerir. Bağlantı kitaplıklarını ekler, ancak herhangi bir veritabanına özgü sınıf oluşturmaz. Kayıt kümelerini daha sonra oluşturabilir ve kayıtları incelemek ve güncelleştirmek için kullanabilirsiniz.|
+|**Dosya desteği olmadan veritabanı görünümü**|Türeten türetilmiş `CRecordView`|Belge desteği sağlar ancak serileştirme desteği yoktur. Belge, kayıt kümesini saklayabilir ve birden çok görünümü koordine edebilir; serileştirme veya **Yeni**, **Aç**, **Kaydet** ve **farklı kaydet** komutlarını desteklemez. [En az belgeli uygulamalara](#_core_applications_with_minimal_documents)bakın. Bir veritabanı görünümü eklerseniz, verilerin kaynağını belirtmeniz gerekir.<br /><br /> Veritabanı üst bilgi dosyalarını, bağlantı kitaplıklarını, kayıt görünümünü ve bir kayıt kümesini içerir. ( [Uygulama türü, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfasında yalnızca **belge/görünüm mimarisi desteği** seçeneği belirlenmiş olan uygulamalar için kullanılabilir.)|
+|**Dosya destekli veritabanı görünümü**|Türeten türetilmiş `CRecordView`|Serileştirme ve belgeyle ilgili **Dosya** menüsü komutları dahil olmak üzere tam belge desteği sağlar. Veritabanı uygulamaları genellikle dosya başına değil, kayıt başına temelinde çalışır ve bu nedenle serileştirme gerektirmez. Ancak, serileştirme için özel bir kullanıma sahip olabilirsiniz. [En az belgeli uygulamalara](#_core_applications_with_minimal_documents)bakın. Bir veritabanı görünümü eklerseniz, verilerin kaynağını belirtmeniz gerekir.<br /><br /> Veritabanı üst bilgi dosyalarını, bağlantı kitaplıklarını, kayıt görünümünü ve bir kayıt kümesini içerir. ( [Uygulama türü, MFC Uygulama Sihirbazı](../mfc/reference/application-type-mfc-application-wizard.md) sayfasında yalnızca **belge/görünüm mimarisi desteği** seçeneği belirlenmiş olan uygulamalar için kullanılabilir.)|
 
-Serileştirme alternatifleri ve serileştirme için alternatif kullanımlar tartışması için [serileştirme: Serileştirme ve Veritabanı Girişi/Çıktısı'na](../mfc/serialization-serialization-vs-database-input-output.md)bakın.
+Serileştirme ve seri hale getirme alternatiflerinin bir tartışması için bkz. [serileştirme: serileştirme ve veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md).
 
-## <a name="applications-with-minimal-documents"></a><a name="_core_applications_with_minimal_documents"></a>Minimal Belgelerle Uygulamalar
+## <a name="applications-with-minimal-documents"></a><a name="_core_applications_with_minimal_documents"></a> En az belgeli uygulamalar
 
-MFC Uygulama Sihirbazı'nın form tabanlı veri erişim uygulamalarını destekleyen iki seçeneği vardır. Her seçenek bir `CRecordView`türetilmiş görünüm sınıfı ve bir belge oluşturur. Belgenin dışında bıraktıkları şey de farklılık gösterir.
+MFC Uygulama Sihirbazı, form tabanlı veri erişimi uygulamalarını destekleyen iki seçeneğe sahiptir. Her seçenek, bir `CRecordView` türetilmiş görünüm sınıfı ve bir belge oluşturur. Bunlar, belgenin dışına çıktıklarında farklılık gösterir.
 
-### <a name="document-without-file-support"></a><a name="_core_a_document_without_file_support"></a>Dosya Desteği Olmayan Belge
+### <a name="document-without-file-support"></a><a name="_core_a_document_without_file_support"></a> Dosya desteği olmayan belge
 
-Belge serileştirmegerekmez, **dosya desteği olmadan** uygulama sihirbazı veritabanı seçeneği Veritabanı görünümünü seçin. Belge aşağıdaki yararlı amaçlara hizmet eder:
+Belge serileştirmesi gerekmiyorsa, **dosya desteği olmadan** uygulama Sihirbazı veritabanı seçeneği veritabanı görünümü ' nü seçin. Belge, aşağıdaki yararlı amaçlara hizmet eder:
 
-- Bir nesneyi depolamak `CRecordset` için uygun bir yerdir.
+- Bir nesneyi depolamak için kullanışlı bir yerdir `CRecordset` .
 
-   Bu kullanım sıradan belge kavramlarına paraleldir: belge verileri (veya bu durumda bir kayıt kümesi) depolar ve görünüm belgenin görünümüdür.
+   Bu kullanım sıradan belge kavramlarını paraleller: belge, verileri depolar (veya bu durumda bir kayıt kümesi) ve Görünüm belgenin bir görünümüdür.
 
-- Uygulamanız birden çok görünüm (birden çok kayıt görüntülemesi gibi) sunuyorsa, bir belge görünümleri koordine desteklemektedir.
+- Uygulamanız birden çok görünüm (örneğin, birden çok kayıt görünümü) sunduğunda, bir belge görünümlerin eşgüdümünü destekler.
 
-   Birden çok görünüm aynı verileri gösteriyorsa, herhangi bir `CDocument::UpdateAllViews` görünüm verileri değiştirdiğinde güncelleştirmeleri tüm görünümlere koordine etmek için üye işlevini kullanabilirsiniz.
+   Birden çok görünüm aynı verileri gösterayarlanırsa, `CDocument::UpdateAllViews` herhangi bir görünüm verileri değiştirdiğinde tüm görünümlere güncelleştirmeleri koordine etmek için üye işlevini kullanabilirsiniz.
 
-Bu seçeneği genellikle basit form tabanlı uygulamalar için kullanırsınız. Uygulama sihirbazı bu tür uygulamalar için kullanışlı bir yapıyı otomatik olarak destekler.
+Bu seçeneği genellikle basit form tabanlı uygulamalar için kullanırsınız. Uygulama Sihirbazı bu tür uygulamalar için otomatik olarak uygun yapıyı destekler.
 
-### <a name="document-with-file-support"></a><a name="_core_a_document_with_file_support"></a>Dosya Destekli Belge
+### <a name="document-with-file-support"></a><a name="_core_a_document_with_file_support"></a> Dosya desteğiyle belge
 
-Belgeyle ilgili **Dosya** menüsü komutları ve belge serileştirme için alternatif bir kullanımınız olduğunda **dosya desteğiyle** uygulama sihirbazı veritabanı seçeneği Veritabanı görünümünü seçin. Programınızın verilere erişim bölümü için, belgeyi [Dosya Desteği Olmadan Belge'de](#_core_a_document_without_file_support)açıklandığı şekilde kullanabilirsiniz. Örneğin, kullanıcının tercihlerini veya diğer yararlı bilgileri depolayan serileştirilmiş bir kullanıcı profili belgesini okumak ve yazmak için belgenin serileştirme özelliğini kullanabilirsiniz. Daha fazla fikir için [serileştirme: Serileştirme ve Veritabanı Girişi/Çıktısı'na](../mfc/serialization-serialization-vs-database-input-output.md)bakın.
+Belge ile ilgili **Dosya** menü komutları ve belge serileştirmesi için alternatif bir kullanıma sahip olduğunuzda, dosya desteğiyle uygulama Sihirbazı veritabanı seçeneği **veritabanı görünümü** ' nü seçin. Programınızın veri erişimi bölümü için, belgeyi [dosya desteği olmadan belge](#_core_a_document_without_file_support)içinde açıklananla aynı şekilde kullanabilirsiniz. Kullanıcının tercihlerini veya diğer yararlı bilgileri depolayan serileştirilmiş bir kullanıcı profili belgesi okumak ve yazmak için, belgenin serileştirme özelliğini kullanabilirsiniz. Daha fazla fikir için bkz. [serileştirme: serileştirme ve veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md).
 
-Uygulama sihirbazı bu seçeneği destekler, ancak belgeyi seri hale getiren kodu yazmanız gerekir. Serileştirilmiş bilgileri belge veri üyelerinde depolayın.
+Uygulama Sihirbazı bu seçeneği destekler, ancak belgeyi serileştiren kodu yazmanız gerekir. Seri hale getirilmiş bilgileri belge veri üyelerinde depolayın.
 
-## <a name="applications-with-no-document"></a><a name="_core_applications_with_no_document"></a>Belgesiz Uygulamalar
+## <a name="applications-with-no-document"></a><a name="_core_applications_with_no_document"></a> Belge Içermeyen uygulamalar
 
-Bazen belge veya görünüm kullanmayan bir uygulama yazmak isteyebilirsiniz. Belgeler olmadan, verilerinizi `CRecordset` (nesne gibi) çerçeve penceresi sınıfınızda veya uygulama sınıfınızda saklarsınız. Ek gereksinimler, uygulamanın bir kullanıcı arabirimi sunup sunmadığına bağlıdır.
+Bazen belge veya görünüm kullanmayan bir uygulama yazmak isteyebilirsiniz. Belgeler olmadan, verilerinizi (örneğin, bir `CRecordset` nesnesi) çerçeve pencere sınıfında veya uygulama sınıfınıza depoladığınızda. Ek gereksinimler, uygulamanın bir kullanıcı arabirimi sunmadığına bağlıdır.
 
-### <a name="database-support-with-a-user-interface"></a><a name="_core_database_support_with_a_user_interface"></a>Kullanıcı Arabirimi ile Veritabanı Desteği
+### <a name="database-support-with-a-user-interface"></a><a name="_core_database_support_with_a_user_interface"></a> Kullanıcı arabirimiyle veritabanı desteği
 
-Kullanıcı arabiriminiz (örneğin konsol komut satırı arabirimi dışında) varsa, uygulamanız görünüm yerine doğrudan çerçeve penceresinin istemci alanına çizer. Böyle bir `CRecordView`uygulama, `CFormView`ana `CDialog` kullanıcı arabirimi için veya kullanmaz, ancak normalde sıradan iletişim için kullanır. `CDialog`
+Kullanıcı arabiriminiz varsa (örneğin, bir konsol komut satırı arabirimi dışında), uygulamanız bir görünüm yerine doğrudan çerçeve penceresinin istemci alanına çizilir. Bu tür bir uygulama `CRecordView` , `CFormView` `CDialog` ana kullanıcı arabirimi için, veya kullanmaz, ancak normalde normal `CDialog` iletişim kutularında kullanılır.
 
-### <a name="writing-applications-without-documents"></a><a name="_core_writing_applications_without_documents"></a>Belgesiz Başvuru Yazma
+### <a name="writing-applications-without-documents"></a><a name="_core_writing_applications_without_documents"></a> Belgeleri olmayan uygulamalar yazma
 
-Uygulama sihirbazı belgeleri olmadan uygulama oluşturmayı desteklemediği için, kendi `CWinApp`türetilmiş sınıfınızı `CFrameWnd` yazmanız ve gerekirse bir veya `CMDIFrameWnd` sınıf oluşturmanız gerekir. Geçersiz `CWinApp::InitInstance` kılma ve bir uygulama nesnesi olarak bildirin:
+Uygulama Sihirbazı belge olmadan uygulama oluşturmayı desteklemediğinden, kendi `CWinApp` türetilmiş sınıfınızı yazmanız gerekir ve gerekirse, bir `CFrameWnd` veya sınıfı da oluşturabilirsiniz `CMDIFrameWnd` . `CWinApp::InitInstance`Uygulama nesnesini geçersiz kılın ve bildirin:
 
 ```cpp
 CYourNameApp theApp;
 ```
 
-Çerçeve hala ileti-harita mekanizması ve diğer birçok özellik sağlar.
+Framework, ileti eşleme mekanizmasını ve diğer birçok özelliği de sağlar.
 
-### <a name="database-support-separate-from-the-user-interface"></a><a name="_core_database_support_separate_from_the_user_interface"></a>Kullanıcı Arabiriminden Ayrı Veritabanı Desteği
+### <a name="database-support-separate-from-the-user-interface"></a><a name="_core_database_support_separate_from_the_user_interface"></a> Kullanıcı arabiriminden ayrı veritabanı desteği
 
-Bazı uygulamaların kullanıcı arabirimine veya yalnızca en az bir arabirimine ihtiyacı yoktur. Örneğin, yazdığınızı varsayalım:
+Bazı uygulamaların kullanıcı arabirimi veya yalnızca en az bir tane olması gerekir. Örneğin, yazdığınızı varsayalım:
 
-- Diğer uygulamaların (istemcilerin) uygulama ve veri kaynağı arasında özel veri işlemesi için çağrıda deyiştileri bir ara veri erişim nesnesi.
+- Diğer uygulamaların (istemciler), uygulama ve veri kaynağı arasındaki özel veri işlemesi için çağrı yapan bir ara veri erişimi nesnesi.
 
-- Verileri bir veritabanı biçiminden diğerine aktaran bir uygulama veya hesaplamalar yapan ve toplu güncelleştirmeler gerçekleştiren bir uygulama gibi, verileri kullanıcı müdahalesi olmadan işleyen bir uygulama.
+- Verileri bir veritabanı biçiminden diğerine veya hesaplama yapan ve toplu iş güncelleştirmelerini gerçekleştiren bir uygulama gibi, Kullanıcı müdahalesi olmadan verileri işleyen bir uygulama.
 
-Hiçbir belge nesneye `CRecordset` sahip olmadığından, büyük olasılıkla nesneyi türetilmiş uygulama sınıfınızda katışılmış bir veri üyesi olarak depolamak `CWinApp`istiyorsunuz. Alternatifler şunlardır:
+Nesneye sahip bir belge olmadığından `CRecordset` , büyük olasılıkla `CWinApp` türetilmiş uygulama sınıfınıza ekli bir veri üyesi olarak saklamak isteyeceksiniz. Alternatifler şunlardır:
 
-- Kalıcı `CRecordset` bir nesne tutmuyorum. NULL'u kayıt kümesi sınıf oluşturucularınıza geçirebilirsiniz. Bu durumda, çerçeve kayıt kümesinin `CDatabase` `GetDefaultConnect` üye işlevindeki bilgileri kullanarak geçici bir nesne oluşturur. Bu en olası alternatif yaklaşımdır.
+- Kalıcı bir `CRecordset` nesneyi hiç tutmadı. Kayıt kümesi sınıfı oluşturuculara NULL geçirebilirsiniz. Bu durumda Framework, `CDatabase`  kayıt kümesinin üye işlevindeki bilgileri kullanarak geçici bir nesne oluşturur `GetDefaultConnect` . Bu, en olası alternatif yaklaşımdır.
 
-- Nesneyi `CRecordset` küresel değişken yapma. Bu değişken, geçersiz kılmanızda `CWinApp::InitInstance` dinamik olarak oluşturduğunuz bir kayıt kümesi nesnesine işaretçi olmalıdır. Bu, çerçeve başharfe atılmadan önce nesneyi oluşturmaya çalışmayı önler.
+- `CRecordset`Nesne genel bir değişken yapılıyor. Bu değişken, geçersiz kılmanızda dinamik olarak oluşturduğunuz bir kayıt kümesi nesnesi işaretçisi olmalıdır `CWinApp::InitInstance` . Bu, çerçeve başlatılmadan önce nesneyi oluşturmaya çalışıyor.
 
-- Bir belge veya görünüm bağlamında olduğu gibi kayıt kümesi nesneleri kullanma. Uygulamanızın veya çerçeve pencere nesnelerinin üye işlevlerinde kayıt kümeleri oluşturun.
+- Kayıt kümesi nesnelerini bir belge veya görünüm bağlamında yaptığınız gibi kullanma. Uygulamanızın veya çerçeve pencere nesnelerinizin üye işlevlerinde kayıt kümeleri oluşturun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Veritabanı Sınıfları](../data/mfc-database-classes-odbc-and-dao.md)
+[MFC veritabanı sınıfları](../data/mfc-database-classes-odbc-and-dao.md)

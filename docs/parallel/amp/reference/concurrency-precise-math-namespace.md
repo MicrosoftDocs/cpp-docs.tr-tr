@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: eşzamanlılık::p recise_math ad alanı'
 title: Concurrency::precise_math Ad Alanı
 ms.date: 11/04/2016
 f1_keywords:
@@ -133,16 +134,16 @@ f1_keywords:
 - AMP_MATH/Concurrency::trunc
 - AMP_MATH/Concurrency::truncf
 ms.assetid: ba653308-dc28-4384-b2fd-6cd718a72f91
-ms.openlocfilehash: 448219eff5f30e87509e04289608c7c933e944f0
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 3b9b74c24075f3c8c2feaea7892ad8278ba991f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297154"
 ---
 # <a name="concurrencyprecise_math-namespace"></a>Concurrency::precise_math Ad Alanı
 
-`precise_math` ad alanındaki işlevler C99 uyumludur. Her bir işlevin hem tek duyarlık hem de çift duyarlıklı sürümleri dahil edilmiştir. Örneğin, `acos` çift duyarlıklı sürümdür ve `acosf` tek duyarlıklı sürümdür. Tek duyarlıklı işlevler de dahil olmak üzere bu işlevler, hızlandırıcıda genişletilmiş çift duyarlıklı destek gerektirir. Bu işlevleri belirli bir hızlandırıcı üzerinde çalıştırıp çalıştıracağınızı öğrenmek için [Hızlandırıcı:: supports_double_precision](accelerator-class.md#supports_double_precision) kullanabilirsiniz.
+`precise_math`Ad alanındaki Işlevler C99 uyumludur. Her bir işlevin hem tek duyarlık hem de çift duyarlıklı sürümleri dahil edilmiştir. Örneğin, `acos` çift duyarlıklı sürümdür ve `acosf` tek duyarlıklı sürümdür. Tek duyarlıklı işlevler de dahil olmak üzere bu işlevler, hızlandırıcıda genişletilmiş çift duyarlıklı destek gerektirir. Bu işlevleri belirli bir hızlandırıcı üzerinde çalıştırıp çalıştıracağınızı öğrenmek için [Hızlandırıcı:: supports_double_precision](accelerator-class.md#supports_double_precision) kullanabilirsiniz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -182,8 +183,8 @@ namespace precise_math;
 |[cosf](concurrency-precise-math-namespace-functions.md#cosf)|Bağımsız değişkenin kosinüsünü hesaplar|
 |[Cosh](concurrency-precise-math-namespace-functions.md#cosh)|Fazla Yüklendi. Bağımsız değişkenin hiperbolik kosinüs değerini hesaplar|
 |[coshf](concurrency-precise-math-namespace-functions.md#coshf)|Bağımsız değişkenin hiperbolik kosinüs değerini hesaplar|
-|[cospi](concurrency-precise-math-namespace-functions.md#cospi)|Fazla Yüklendi. PI \* _X kosinüs değerini hesaplar|
-|[cospif](concurrency-precise-math-namespace-functions.md#cospif)|PI \* _X kosinüs değerini hesaplar|
+|[cospi](concurrency-precise-math-namespace-functions.md#cospi)|Fazla Yüklendi. PI _X kosinüs değerini hesaplar \*|
+|[cospif](concurrency-precise-math-namespace-functions.md#cospif)|PI _X kosinüs değerini hesaplar \*|
 |[işlevi](concurrency-precise-math-namespace-functions.md#erf)|Fazla Yüklendi. _X hata işlevini hesaplar|
 |[erfc](concurrency-precise-math-namespace-functions.md#erfc)|Fazla Yüklendi. _X tamamlayıcı hata işlevini hesaplar|
 |[erfcf](concurrency-precise-math-namespace-functions.md#erfcf)|_X tamamlayıcı hata işlevini hesaplar|
@@ -212,7 +213,7 @@ namespace precise_math;
 |[fmaxf](concurrency-precise-math-namespace-functions.md#fmaxf)|Bağımsız değişkenlerin en büyük sayısal değerini belirleme|
 |[fmin](concurrency-precise-math-namespace-functions.md#fmin)|Fazla Yüklendi. Bağımsız değişkenlerin en küçük sayısal değerini belirleme|
 |[fminf](concurrency-precise-math-namespace-functions.md#fminf)|Bağımsız değişkenlerin en küçük sayısal değerini belirleme|
-|[fmod Işlevi (C++ amp)](concurrency-precise-math-namespace-functions.md#fmod)|Fazla Yüklendi. _X/_Y kayan nokta kalanını hesaplar|
+|[fmod Işlevi (C++ AMP)](concurrency-precise-math-namespace-functions.md#fmod)|Fazla Yüklendi. _X/_Y kayan nokta kalanını hesaplar|
 |[fmodf](concurrency-precise-math-namespace-functions.md#fmodf)|_X/_Y kayan nokta kalanını hesaplar|
 |[fpclassify](concurrency-precise-math-namespace-functions.md#fpclassify)|Fazla Yüklendi. Bağımsız değişken değerini NaN, sonsuz, normal, subnormal, sıfır olarak sınıflandırır|
 |[frexp](concurrency-precise-math-namespace-functions.md#frexp)|Fazla Yüklendi. _X Mantis ve üstürünü alır|
@@ -275,16 +276,16 @@ namespace precise_math;
 |[sinf](concurrency-precise-math-namespace-functions.md#sinf)|Bağımsız değişkenin sinüs değerini hesaplar|
 |[sinh](concurrency-precise-math-namespace-functions.md#sinh)|Fazla Yüklendi. Bağımsız değişkenin hiperbolik sinüs değerini hesaplar|
 |[sinhf](concurrency-precise-math-namespace-functions.md#sinhf)|Bağımsız değişkenin hiperbolik sinüs değerini hesaplar|
-|[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|Fazla Yüklendi. PI \* _X sinüs değerini hesaplar|
-|[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|PI \* _X sinüs değerini hesaplar|
+|[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|Fazla Yüklendi. PI _X sinüs değerini hesaplar \*|
+|[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|PI _X sinüs değerini hesaplar \*|
 |[k](concurrency-precise-math-namespace-functions.md#sqrt)|Fazla Yüklendi. Bağımsız değişkenin Squre kökünü hesaplar|
 |[sqrtf](concurrency-precise-math-namespace-functions.md#sqrtf)|Bağımsız değişkenin Squre kökünü hesaplar|
 |[Başlangıçtan](concurrency-precise-math-namespace-functions.md#tan)|Fazla Yüklendi. Bağımsız değişkenin tanjant değerini hesaplar|
 |[tanf](concurrency-precise-math-namespace-functions.md#tanf)|Bağımsız değişkenin tanjant değerini hesaplar|
 |[tanh](concurrency-precise-math-namespace-functions.md#tanh)|Fazla Yüklendi. Bağımsız değişkenin hiperbolik tanjant değerini hesaplar|
 |[tanhf](concurrency-precise-math-namespace-functions.md#tanhf)|Bağımsız değişkenin hiperbolik tanjant değerini hesaplar|
-|[tanpi](concurrency-precise-math-namespace-functions.md#tanpi)|Fazla Yüklendi. PI \* _X tanjant değerini hesaplar|
-|[tanpif](concurrency-precise-math-namespace-functions.md#tanpif)|PI \* _X tanjant değerini hesaplar|
+|[tanpi](concurrency-precise-math-namespace-functions.md#tanpi)|Fazla Yüklendi. PI _X tanjant değerini hesaplar \*|
+|[tanpif](concurrency-precise-math-namespace-functions.md#tanpif)|PI _X tanjant değerini hesaplar \*|
 |[tgamma](concurrency-precise-math-namespace-functions.md#tgamma)|Fazla Yüklendi. _X gama işlevini hesaplar|
 |[tgammaf](concurrency-precise-math-namespace-functions.md#tgammaf)|_X gama işlevini hesaplar|
 |[TRUNC](concurrency-precise-math-namespace-functions.md#trunc)|Fazla Yüklendi. Bağımsız değişkeni tamsayı bileşene kırpar|
@@ -298,4 +299,4 @@ namespace precise_math;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+[Eşzamanlılık ad alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

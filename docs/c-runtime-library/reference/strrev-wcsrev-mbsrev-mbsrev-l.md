@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strrev, _wcsrev, _mbsrev, _mbsrev_l'
 title: _strrev, _wcsrev, _mbsrev, _mbsrev_l
 ms.date: 4/2/2020
 api_name:
@@ -53,12 +54,12 @@ helpviewer_keywords:
 - tcsrev function
 - _tcsrev function
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
-ms.openlocfilehash: d0f03f84045d6fc036e6c8111da7b8484f2b8622
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c3e1e0483220daca9182f6ee8a312dfc6589caf3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911173"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296179"
 ---
 # <a name="_strrev-_wcsrev-_mbsrev-_mbsrev_l"></a>_strrev, _wcsrev, _mbsrev, _mbsrev_l
 
@@ -99,9 +100,9 @@ Değiştirilen dizeye bir işaretçi döndürür. Bir hatayı göstermek için h
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strrev** işlevi *Str*içindeki karakterlerin sırasını tersine çevirir. Sonlandırıcı null karakteri yerinde kalır. **_wcsrev** ve **_mbsrev** , **_strrev**geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsrev** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsrev** olanlar çok baytlı karakter dizeleridir. **_Mbsrev**için, *Str* içindeki her bir çok baytlı karakterdeki baytların sırası değiştirilmez. Bu üç işlev, aynı şekilde davranır.
+**_Strrev** işlevi *Str* içindeki karakterlerin sırasını tersine çevirir. Sonlandırıcı null karakteri yerinde kalır. **_wcsrev** ve **_mbsrev** , **_strrev** geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsrev** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsrev** olanlar çok baytlı karakter dizeleridir. **_Mbsrev** için, *Str* içindeki her bir çok baytlı karakterdeki baytların sırası değiştirilmez. Bu üç işlev, aynı şekilde davranır.
 
-**_mbsrev** parametrelerini doğrular. *Dize1* veya *dize2* , null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **_Mbsrev** **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. **_strrev** ve **_wcsrev** parametrelerini doğrulamaz.
+**_mbsrev** parametrelerini doğrular. *Dize1* veya *dize2* , null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **_Mbsrev** **null** değerini döndürür ve **errno** 'ı **EINVAL** olarak ayarlar. **_strrev** ve **_wcsrev** parametrelerini doğrulamaz.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevlerin sürümleri aynıdır, çünkü **_l** sonekine sahip olmayanlar geçerli yerel ayarı kullanır, bunun yerine **_l** sonekine sahip olanlar, geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -121,9 +122,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strrev**|\<String. h>|
-|**_wcsrev**|\<String. h> veya \<wchar. h>|
-|**_mbsrev**, **_mbsrev_l**|\<mbstring. h>|
+|**_strrev**|\<string.h>|
+|**_wcsrev**|\<string.h> veya \<wchar.h>|
+|**_mbsrev**, **_mbsrev_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -161,6 +162,6 @@ The string "Able was I ere I saw Elba" is a palindrome
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

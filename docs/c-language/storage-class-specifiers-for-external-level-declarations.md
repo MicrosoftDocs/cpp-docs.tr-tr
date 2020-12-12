@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: External-Level bildirimleri için Storage-Class belirticileri'
 title: Dış Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - visibility, variables
 - static storage class specifiers
 ms.assetid: b76b623a-80ec-4d5d-859b-6cef422657ee
-ms.openlocfilehash: 6c30b8a12c0bf26bc35905872fb6fa527b367ef4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a048ebcf6eea87c77cba23ed50ab117d014c95e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229473"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296855"
 ---
 # <a name="storage-class-specifiers-for-external-level-declarations"></a>Dış Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 
-Dış değişkenler dosya kapsamındaki değişkenlerdir. Bunlar herhangi bir işlev dışında tanımlanır ve büyük olasılıkla birçok işlev için kullanılabilir. İşlevler yalnızca dış düzeyde tanımlanabilir ve bu nedenle iç içe geçirilemez. Varsayılan olarak, dış değişkenlere ve aynı ada sahip işlevlere yapılan tüm başvurular aynı nesneye yapılan başvurulardır ve bu, *dış bağlantıya*sahip oldukları anlamına gelir. ( **`static`** Bu davranışı geçersiz kılmak için anahtar sözcüğünü kullanabilirsiniz.)
+Dış değişkenler dosya kapsamındaki değişkenlerdir. Bunlar herhangi bir işlev dışında tanımlanır ve büyük olasılıkla birçok işlev için kullanılabilir. İşlevler yalnızca dış düzeyde tanımlanabilir ve bu nedenle iç içe geçirilemez. Varsayılan olarak, dış değişkenlere ve aynı ada sahip işlevlere yapılan tüm başvurular aynı nesneye yapılan başvurulardır ve bu, *dış bağlantıya* sahip oldukları anlamına gelir. ( **`static`** Bu davranışı geçersiz kılmak için anahtar sözcüğünü kullanabilirsiniz.)
 
 Dış düzeydeki değişken bildirimleri, değişkenlerin tanımlarından (*bildirimleri tanımlama*) veya başka bir yerde (*başvuru bildirimleri*) tanımlanmış değişkenlere başvurular olabilir.
 
@@ -46,7 +47,7 @@ Dış düzeyde bir değişken tanımlandıktan sonra, çeviri biriminin geri kal
 
 Şunlar ile ilgili kurallar **`static`** :
 
-- Anahtar sözcük olmadan tüm blokların dışında belirtilen değişkenler, **`static`** her zaman değerlerini program boyunca tutar. Belirli bir çeviri birimine erişimleri kısıtlamak için **`static`** anahtar sözcüğünü kullanmanız gerekir. Bu, *iç bağlantı*sağlar. Bir programın tamamına Global hale getirmek için açık depolama sınıfını atlayın veya anahtar sözcüğünü kullanın **`extern`** (sonraki listede bulunan kurallara bakın). Bu, bunlara *dış bağlantı*sağlar. İç ve dış bağlantı Ayrıca [bağlantı](../c-language/linkage.md)bölümünde ele alınmıştır.
+- Anahtar sözcük olmadan tüm blokların dışında belirtilen değişkenler, **`static`** her zaman değerlerini program boyunca tutar. Belirli bir çeviri birimine erişimleri kısıtlamak için **`static`** anahtar sözcüğünü kullanmanız gerekir. Bu, *iç bağlantı* sağlar. Bir programın tamamına Global hale getirmek için açık depolama sınıfını atlayın veya anahtar sözcüğünü kullanın **`extern`** (sonraki listede bulunan kurallara bakın). Bu, bunlara *dış bağlantı* sağlar. İç ve dış bağlantı Ayrıca [bağlantı](../c-language/linkage.md)bölümünde ele alınmıştır.
 
 - Dış düzeyde bir değişkeni bir program içinde yalnızca bir kez tanımlayabilirsiniz. Farklı bir çeviri biriminde aynı ada ve **`static`** depolama sınıfı belirticisine sahip başka bir değişken tanımlayabilirsiniz. Her **`static`** tanım yalnızca kendi çeviri birimi içinde görünür olduğundan, çakışma oluşmaz. Tek bir çeviri biriminin işlevleri arasında paylaşılması gereken ancak diğer çeviri birimlerine görünmeyen tanımlayıcı adlarını gizlemek için kullanışlı bir yol sağlar.
 

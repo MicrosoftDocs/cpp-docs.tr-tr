@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları uyarısı LNK4105'
 title: Bağlayıcı Araçları Uyarısı LNK4105
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4105
 ms.assetid: 6c7bebf4-4ea6-4533-a6ed-e563d43abbd7
-ms.openlocfilehash: 655a6dfde77984cd0c941ec0d8abb0c4d099c80f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6536273a0b3e5b6e60b782e5953a70a7b3eb2798
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183299"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294424"
 ---
 # <a name="linker-tools-warning-lnk4105"></a>Bağlayıcı Araçları Uyarısı LNK4105
 
@@ -27,4 +28,4 @@ Mevcut çevresel kitaplık ayarlarını geçersiz kılmanız gerekmiyorsa,/LIBPA
 link /libpath:c:\filepath\lib bar.obj
 ```
 
-, varsayılan konumlarda aramadan önce `c:\filepath\lib`, gerekli kitaplıkları aramak için bağlayıcı yönlendirir.
+, `c:\filepath\lib` varsayılan konumlarda arama yapmadan önce içinde gerekli kitaplıkları aramak için bağlayıcı yönlendirir.

@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: menü örnek listesi'
 title: Menü Örnek Listesi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sample applications [MFC], menus
 ms.assetid: 6d89c723-03d6-474e-8ca5-e98f93bd41cc
-ms.openlocfilehash: eb4d16a1aacb8a573b04dc1eb122289d9fba22bd
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a3d732ecced5ef7ec701bb1fd99063a8d7df2e50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626244"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297297"
 ---
 # <a name="menu-sample-list"></a>Menü Örnek Listesi
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: Iyileştirme'
 title: 'MFC ActiveX Denetimleri: İyileştirme'
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], active/inactive state
 - optimizing performance, ActiveX controls
 ms.assetid: 8b11f26a-190d-469b-b594-5336094a0109
-ms.openlocfilehash: b4e12889ca1bb5f4bb423a1f1ede1c396f8d60b5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: db7fc1f1bdcdc3a3ffbf3b14d1809806389f0862
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294112"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX Denetimleri: İyileştirme
 
@@ -41,29 +42,29 @@ Bu iyileştirmelerin birçoğunu, [denetim ayarları](reference/control-settings
 |MFC ActiveX denetimi sihirbazında denetim ayarı|Eylem|Daha fazla bilgi|
 |-------------------------------------------------------|------------|----------------------|
 |**Görünür olduğunda etkinleştir** onay kutusu|Temizle|[Görünür olduğunda etkinleştir seçeneğini kapatma](turning-off-the-activate-when-visible-option.md)|
-|**Penceresiz etkinleştirme** onay kutusu|Şunu seçin:|[Penceresiz Etkinleştirme Sağlama](providing-windowless-activation.md)|
+|**Penceresiz etkinleştirme** onay kutusu|Şunu seçin:|[Penceresiz etkinleştirme sağlama](providing-windowless-activation.md)|
 |**Kırpılmamış cihaz bağlamı** onay kutusu|Şunu seçin:|[Kırpılmamış bir cihaz bağlamı kullanma](using-an-unclipped-device-context.md)|
-|**Titreşimsiz etkinleştirme** onay kutusu|Şunu seçin:|[Titreşimsiz etkinleştirme sağlama](providing-flicker-free-activation.md)|
-|**Etkin olmadığında fare işaretçisi bildirimleri** onay kutusu|Şunu seçin:|[Devre Dışı İken Fare Etkileşimi Sağlama](providing-mouse-interaction-while-inactive.md)|
-|**İyileştirilmiş çizim kodu** onay kutusu|Şunu seçin:|[Denetim Çizimini İyileştirme](optimizing-control-drawing.md)|
+|**Titreşimsiz etkinleştirme** onay kutusu|Şunu seçin:|[Flicker-Free etkinleştirme sağlama](providing-flicker-free-activation.md)|
+|**Etkin olmadığında fare işaretçisi bildirimleri** onay kutusu|Şunu seçin:|[Devre dışı Iken fare etkileşimi sağlama](providing-mouse-interaction-while-inactive.md)|
+|**İyileştirilmiş çizim kodu** onay kutusu|Şunu seçin:|[Denetim çizimini iyileştirme](optimizing-control-drawing.md)|
 
 Bu iyileştirmeleri uygulayan üye işlevleri hakkında ayrıntılı bilgi için bkz. [Coelcontrol](reference/colecontrol-class.md).
 
-Daha fazla bilgi için bkz.
+Daha fazla bilgi için bkz:
 
-- [Kalıcılığı ve Başlatmayı İyileştirme](optimizing-persistence-and-initialization.md)
+- [Kalıcılığı ve başlatmayı iyileştirme](optimizing-persistence-and-initialization.md)
 
-- [Penceresiz Etkinleştirme Sağlama](providing-windowless-activation.md)
+- [Penceresiz etkinleştirme sağlama](providing-windowless-activation.md)
 
 - [Görünür olduğunda etkinleştir seçeneğini kapatma](turning-off-the-activate-when-visible-option.md)
 
-- [Devre Dışı İken Fare Etkileşimi Sağlama](providing-mouse-interaction-while-inactive.md)
+- [Devre dışı Iken fare etkileşimi sağlama](providing-mouse-interaction-while-inactive.md)
 
-- [Titreşimsiz etkinleştirme sağlama](providing-flicker-free-activation.md)
+- [Flicker-Free etkinleştirme sağlama](providing-flicker-free-activation.md)
 
 - [Kırpılmamış bir cihaz bağlamı kullanma](using-an-unclipped-device-context.md)
 
-- [Denetim Çizimini İyileştirme](optimizing-control-drawing.md)
+- [Denetim çizimini iyileştirme](optimizing-control-drawing.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

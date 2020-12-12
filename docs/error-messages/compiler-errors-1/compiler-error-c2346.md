@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2346'
 title: Derleyici hatası C2346
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2346
 ms.assetid: 246145be-5645-4cd6-867c-e3bc39e33dca
-ms.openlocfilehash: 91f2bac38166a8972193a7aaa7e84913b941c799
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: eb2bbda6c7f7e0c9213b35a794b915967d03321f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518328"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298376"
 ---
 # <a name="compiler-error-c2346"></a>Derleyici hatası C2346
 
@@ -25,7 +26,7 @@ Daha fazla bilgi için bkz. [yönetilen, yönetilmeyen](../../preprocessor/manag
 
 1. İşlevde MSIL 'e Derlenemeyen kodu kaldırın.
 
-1. Modülü **/clr**ile derleme veya yönetilmeyen pragma ile yönetilmeyen olarak işaretleme.
+1. Modülü **/clr** ile derleme veya yönetilmeyen pragma ile yönetilmeyen olarak işaretleme.
 
 ## <a name="example"></a>Örnek
 

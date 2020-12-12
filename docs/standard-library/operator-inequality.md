@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: işleç! ='
 title: operator!=
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,21 +14,21 @@ helpviewer_keywords:
 - operator!=
 - operator !=
 ms.assetid: ef2be7f0-1c94-4edc-b65c-731fddd519f4
-ms.openlocfilehash: 89d41d099d151f77d91cd94b22047824779dcf54
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 3b5efe9cc1c3157becd9afe4cf5c4e8020ec9e0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297063"
 ---
 # <a name="operator"></a>operator!=
 
 > [!NOTE]
-> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplığı 'nda kullanılan kapsayıcılardan oluşan işlevsel bir örnek olarak Microsoft C++ belgelerinde yer almaktadır. Daha fazla bilgi için bkz. [C++ standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Sınıf şablonu [kapsayıcısının](../standard-library/sample-container-class.md)iki nesnesini karşılaştırmak için `operator!=` aşırı yükler.
+`operator!=`Sınıf şablonu [kapsayıcısının](../standard-library/sample-container-class.md)iki nesnesini karşılaştırmak için aşırı yüklemeler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Ty>
@@ -38,8 +39,8 @@ bool operator!=(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-@No__t_0 döndürür.
+`!(left == right)` döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[kapsayıcı > \<sample](../standard-library/sample-container.md)
+[\<sample container>](../standard-library/sample-container.md)

@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Internal-Level bildirimleri için Storage-Class belirticileri'
 title: İç Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - storage class specifiers, internal
 - internal linkage, storage-class specifiers
 ms.assetid: feca8ab5-23df-4b6c-921a-4d51f9be35d7
-ms.openlocfilehash: 41efdd0016d10a9c96ac3bb2fbe249c5990b6df1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 15631e3a1c3aa0de2b34eb03af634abc8434fcba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296803"
 ---
 # <a name="storage-class-specifiers-for-internal-level-declarations"></a>İç Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 

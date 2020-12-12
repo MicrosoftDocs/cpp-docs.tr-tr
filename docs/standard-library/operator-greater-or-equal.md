@@ -1,5 +1,6 @@
 ---
-title: işleç &gt; =
+description: ': İşleci hakkında daha fazla bilgi&gt;='
+title: işlecinde&gt;=
 ms.date: 11/04/2016
 f1_keywords:
 - operator>=
@@ -13,21 +14,21 @@ helpviewer_keywords:
 - operator >=
 - operator>=
 ms.assetid: 14fbebf5-8b75-4afa-a51b-3112d31c07cf
-ms.openlocfilehash: 08c73602d87cbfc31364148d9565071da7b732c4
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 1821647ebb281020cef1798cf056fbf816aa855c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297076"
 ---
-# <a name="operatorgt"></a>işleç &gt; =
+# <a name="operatorgt"></a>işlecinde&gt;=
 
 > [!NOTE]
-> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplığı 'nda kullanılan kapsayıcılardan oluşan işlevsel bir örnek olarak Microsoft C++ belgelerinde yer almaktadır. Daha fazla bilgi için bkz. [C++ standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Sınıf şablonu [kapsayıcısının](../standard-library/sample-container-class.md)iki nesnesini karşılaştırmak için **> =** aşırı yüklemeleri işleci.
+Sınıf şablonu [kapsayıcısının](../standard-library/sample-container-class.md)iki nesnesini karşılaştırmak için **>=** aşırı yüklemeleri işleci.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Ty>
@@ -38,8 +39,8 @@ bool operator>=(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-@No__t_0 döndürür.
+`!(left < right)` döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[kapsayıcı > \<sample](../standard-library/sample-container.md)
+[\<sample container>](../standard-library/sample-container.md)

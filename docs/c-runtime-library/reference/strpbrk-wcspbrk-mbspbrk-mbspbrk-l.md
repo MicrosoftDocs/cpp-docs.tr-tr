@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. strpbrk, wcspbrk, _mbspbrk _mbspbrk_l
 title: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 ms.date: 4/2/2020
 api_name:
@@ -50,21 +51,21 @@ helpviewer_keywords:
 - _mbspbrk function
 - mbspbrk_l function
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
-ms.openlocfilehash: fbde746cba02605be7fa42e941a30bfa02d0561a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2dd5da437ef0b6f9f319f3ba7a9543f7922bfd9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296257"
 ---
 # <a name="strpbrk-wcspbrk-_mbspbrk-_mbspbrk_l"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 
 Belirtilen karakter kümelerinde karakterler için dizeleri tarar.
 
 > [!IMPORTANT]
-> `_mbspbrk`ve `_mbspbrk_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbspbrk` ve `_mbspbrk_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 char *strpbrk(
@@ -128,22 +129,22 @@ Null sonlandırılmış, Aranan dize.
 *strCharSet*<br/>
 Null ile sonlandırılmış karakter kümesi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Str*Içindeki *strCharSet* içindeki herhangi bir karakterin ilk oluşumuna yönelik bir işaretçi ya da iki dize bağımsız değişkenlerinin ortak bir karakter yoksa boş bir işaretçi döndürür.
+*Str* Içindeki *strCharSet* içindeki herhangi bir karakterin ilk oluşumuna yönelik bir işaretçi ya da iki dize bağımsız değişkenlerinin ortak bir karakter yoksa boş bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`strpbrk`İşlevi, *strCharSet*içindeki karakter kümesine ait olan *Str* içindeki bir karakterin ilk oluşumuna yönelik bir işaretçi döndürür. Arama, Sonlandırıcı null karakterini içermiyor.
+`strpbrk`İşlevi, *strCharSet* içindeki karakter kümesine ait olan *Str* içindeki bir karakterin ilk oluşumuna yönelik bir işaretçi döndürür. Arama, Sonlandırıcı null karakterini içermiyor.
 
-`wcspbrk`ve, `_mbspbrk` öğesinin geniş karakterli ve çok baytlı karakter sürümleridir `strpbrk` . Bağımsız değişkenleri ve dönüş değeri `wcspbrk` geniş karakterli dizelerdir; bunlar `_mbspbrk` çok baytlı karakter dizeleridir.
+`wcspbrk` ve, `_mbspbrk` öğesinin geniş karakterli ve çok baytlı karakter sürümleridir `strpbrk` . Bağımsız değişkenleri ve dönüş değeri `wcspbrk` geniş karakterli dizelerdir; bunlar `_mbspbrk` çok baytlı karakter dizeleridir.
 
-`_mbspbrk`parametrelerini doğrular. *Str* veya *strCharSet* null ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `_mbspbrk` null döndürür ve `errno` EINVAL olarak ayarlar. `strpbrk`ve `wcspbrk` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
+`_mbspbrk` parametrelerini doğrular. *Str* veya *strCharSet* null ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `_mbspbrk` null döndürür ve `errno` EINVAL olarak ayarlar. `strpbrk` ve `wcspbrk` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
-`_mbspbrk`, `_mbscspn` `_mbspbrk` [size_t](../../c-runtime-library/standard-types.md)türünde bir değer yerine bir işaretçi döndürmekle benzerdir.
+`_mbspbrk` , `_mbscspn` `_mbspbrk` [size_t](../../c-runtime-library/standard-types.md)türünde bir değer yerine bir işaretçi döndürmekle benzerdir.
 
 C 'de, bu işlevler **`const`** ilk bağımsız değişken için bir işaretçi alır. C++ ' da, iki aşırı yükleme mevcuttur. ' A bir işaretçi döndüren aşırı yükleme, ' a bir işaretçi döndürür; olmayan bir işaretçiyi **`const`** **`const`** alan sürüm olmayan **`const`** bir işaretçi döndürür **`const`** . Makro _CRT_CONST_CORRECT_OVERLOADS, bu işlevlerin hem hem de **`const`** **`const`** sürümleri kullanılabilir olduğunda tanımlanmıştır. **`const`** Her Iki C++ aşırı yüklemesi için davranışa gerek duyuyorsanız, _CONST_RETURN sembolünü tanımlayın.
 
@@ -205,8 +206,8 @@ int main( void )
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>

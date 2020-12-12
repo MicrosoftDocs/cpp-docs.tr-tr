@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Işlev bildirimleriyle Storage-Class belirticileri'
 title: İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - external linkage, function declarations
 - external linkage, storage-class specifiers
 ms.assetid: 801d7df2-efa9-4924-a725-274a5654cfd4
-ms.openlocfilehash: e27cc6ac748c0af3063dbc5b608114761da8b7dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: acf3bc1928715878281b4603bf842f248976265f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211703"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296777"
 ---
 # <a name="storage-class-specifiers-with-function-declarations"></a>İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 

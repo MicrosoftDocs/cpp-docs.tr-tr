@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: double_2 Sınıfı'
 title: double_2 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,18 +29,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_2::g
 - amp_short_vectors/Concurrency::graphics::double_2::set_y
 ms.assetid: c19c2d21-3cbf-4ce5-b460-3b8253688f82
-ms.openlocfilehash: 73656415d1b8774fe8304d674872524e76ee301d
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 104fef0c035487570a23360c312684ef176f69ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297141"
 ---
 # <a name="double_2-class"></a>double_2 Sınıfı
 
 2 çifte oluşan kısa bir vektörü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class double_2;
@@ -66,15 +67,15 @@ class double_2;
 |double_2:: get_x||
 |double_2:: get_xy||
 |double_2:: get_y||
-|double_2::get_yx||
+|double_2:: get_yx||
 |double_2:: ref_g||
-|double_2::ref_r||
-|double_2::ref_x||
-|double_2::ref_y||
+|double_2:: ref_r||
+|double_2:: ref_x||
+|double_2:: ref_y||
 |double_2:: set_x||
 |double_2:: set_xy||
-|double_2::set_y||
-|double_2::set_yx||
+|double_2:: set_y||
+|double_2:: set_yx||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -118,7 +119,7 @@ class double_2;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>double_2
+## <a name="double_2"></a><a name="ctor"></a> double_2
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -174,7 +175,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="double_2__size"></a>boyutla
+## <a name="size"></a><a name="double_2__size"></a> boyutla
 
 ```cpp
 static const int size = 2;

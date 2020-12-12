@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2006'
 title: Derleyici hatası C2006
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2006
 ms.assetid: caaed6f7-ceb9-4742-8820-d66657c0b04d
-ms.openlocfilehash: 64f81929916cd3a4adf38a302ea34d46d9a5c070
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5747f5417db60bd3c1f7bc1420c257552a9b42c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298519"
 ---
 # <a name="compiler-error-c2006"></a>Derleyici hatası C2006
 

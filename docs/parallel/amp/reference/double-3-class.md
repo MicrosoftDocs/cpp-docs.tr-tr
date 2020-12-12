@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: double_3 sınıfı'
 title: double_3 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,18 +73,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_3::rbg
 - amp_short_vectors/Concurrency::graphics::double_3::get_yxz
 ms.assetid: baeb3ff0-2862-4c81-857e-b1a4c085be25
-ms.openlocfilehash: 981b3026e1efb6c3b4e06457a0eb1f986cdcaafa
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: ddda1c0e1d28a97f7e5fd5662a414a5c2d40909f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297115"
 ---
 # <a name="double_3-class"></a>double_3 Sınıfı
 
 Üç Double 'ın kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class double_3;
@@ -113,21 +114,21 @@ class double_3;
 |double_3:: get_xz||
 |double_3:: get_xzy||
 |double_3:: get_y||
-|double_3::get_yx||
-|double_3::get_yxz||
+|double_3:: get_yx||
+|double_3:: get_yxz||
 |double_3:: get_yz||
-|double_3::get_yzx||
-|double_3::get_z||
-|double_3::get_zx||
-|double_3::get_zxy||
+|double_3:: get_yzx||
+|double_3:: get_z||
+|double_3:: get_zx||
+|double_3:: get_zxy||
 |double_3:: get_zy||
 |double_3:: get_zyx||
-|double_3::ref_b||
+|double_3:: ref_b||
 |double_3:: ref_g||
-|double_3::ref_r||
-|double_3::ref_x||
+|double_3:: ref_r||
+|double_3:: ref_x||
 |double_3:: ref_y||
-|double_3::ref_z||
+|double_3:: ref_z||
 |double_3:: set_x||
 |double_3:: set_xy||
 |double_3:: set_xyz||
@@ -135,12 +136,12 @@ class double_3;
 |double_3:: set_xzy||
 |double_3:: set_y||
 |double_3:: set_yx||
-|double_3::set_yxz||
+|double_3:: set_yxz||
 |double_3:: set_yz||
-|double_3::set_yzx||
-|double_3::set_z||
-|double_3::set_zx||
-|double_3::set_zxy||
+|double_3:: set_yzx||
+|double_3:: set_z||
+|double_3:: set_zx||
+|double_3:: set_zxy||
 |double_3:: set_zy||
 |double_3:: set_zyx||
 
@@ -208,7 +209,7 @@ class double_3;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>double_3
+## <a name="double_3"></a><a name="ctor"></a> double_3
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -268,7 +269,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="double_3__size"></a>boyutla
+## <a name="size"></a><a name="double_3__size"></a> boyutla
 
 ```cpp
 static const int size = 3;

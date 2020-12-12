@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strrchr, wcsrchr, _mbsrchr _mbsrchr_l'
 title: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 ms.date: 4/2/2020
 api_name:
@@ -48,21 +49,21 @@ helpviewer_keywords:
 - _ftcsrchr function
 - _mbsrchr_l function
 ms.assetid: 75cf2664-758e-49bb-bf6b-8a139cd474d2
-ms.openlocfilehash: d1350cf14df0c87d57a87ad3aced35e3887b6676
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6931358132372a03ca56e1ce99b62a7a84807b59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296231"
 ---
 # <a name="strrchr-wcsrchr-_mbsrchr-_mbsrchr_l"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 
 Bir karakterin son geçtiği bir dizeyi tarar.
 
 > [!IMPORTANT]
-> `_mbsrchr`ve `_mbsrchr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbsrchr` ve `_mbsrchr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 char *strrchr(
@@ -126,22 +127,22 @@ Aranacak null ile sonlandırılmış dize.
 *,*<br/>
 Yer alan karakter.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Str*içindeki son *c* oluşumuna yönelik bir IŞARETÇI veya *c* bulunamazsa null değerini döndürür.
+*Str* içindeki son *c* oluşumuna yönelik bir IŞARETÇI veya *c* bulunamazsa null değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`strrchr`İşlevi Str içinde son *c* (dönüştürüldü) oluşumunu bulur **`char`** . *str* Arama, Sonlandırıcı null karakterini içerir.
+`strrchr`İşlevi Str içinde son *c* (dönüştürüldü) oluşumunu bulur **`char`** .  Arama, Sonlandırıcı null karakterini içerir.
 
-`wcsrchr`ve, `_mbsrchr` öğesinin geniş karakterli ve çok baytlı karakter sürümleridir `strrchr` . Bağımsız değişkenleri ve dönüş değeri `wcsrchr` geniş karakterli dizelerdir; bunlar `_mbsrchr` çok baytlı karakter dizeleridir.
+`wcsrchr` ve, `_mbsrchr` öğesinin geniş karakterli ve çok baytlı karakter sürümleridir `strrchr` . Bağımsız değişkenleri ve dönüş değeri `wcsrchr` geniş karakterli dizelerdir; bunlar `_mbsrchr` çok baytlı karakter dizeleridir.
 
 C 'de, bu işlevler **`const`** ilk bağımsız değişken için bir işaretçi alır. C++ ' da, iki aşırı yükleme mevcuttur. ' A bir işaretçi döndüren aşırı yükleme, ' a bir işaretçi döndürür; olmayan bir işaretçiyi **`const`** **`const`** alan sürüm olmayan **`const`** bir işaretçi döndürür **`const`** . Makro _CRT_CONST_CORRECT_OVERLOADS, bu işlevlerin hem hem de **`const`** **`const`** sürümleri kullanılabilir olduğunda tanımlanmıştır. **`const`** Her Iki C++ aşırı yüklemesi için davranışa gerek duyuyorsanız, _CONST_RETURN sembolünü tanımlayın.
 
-`_mbsrchr`parametrelerini doğrular. *Str* null Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `errno` EINVAL olarak ayarlanır ve `_mbsrchr` 0 döndürür. `strrchr`ve `wcsrchr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
+`_mbsrchr` parametrelerini doğrular. *Str* null Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `errno` EINVAL olarak ayarlanır ve `_mbsrchr` 0 döndürür. `strrchr` ve `wcsrchr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
 Çıkış değeri yerel ayarın LC_CTYPE kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -171,8 +172,8 @@ Kullanımıyla ilgili bir örnek için `strrchr` bkz. [strchr](strchr-wcschr-mbs
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
