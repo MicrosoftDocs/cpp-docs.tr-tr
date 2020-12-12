@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_member_object_pointer sınıfı'
 title: is_member_object_pointer Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_member_object_pointer class
 - is_member_object_pointer
 ms.assetid: 64f9cdf3-4621-4310-a076-a7bc986926b9
-ms.openlocfilehash: 37d836c3626b492750ffa28c378413757119c9d3
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: bf98bfa4017730a212f99849bde552ceb67625b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456162"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230944"
 ---
-# <a name="ismemberobjectpointer-class"></a>is_member_object_pointer Sınıfı
+# <a name="is_member_object_pointer-class"></a>is_member_object_pointer Sınıfı
 
 Türün üye nesne işaretçisi olup olmadığını test eder.
 
@@ -32,7 +33,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri bir üye nesnesi işaretçisi veya üye nesnesine yönelik `cv-qualified` bir *işaretçi ise tür* koşulunun bir örneği true, aksi takdirde false barındırır. Ty, üye işlevine yönelik  bir işaretçisiyse, false tutanunutmayın.`is_member_object_pointer`
+Tür değeri bir üye nesnesi işaretçisi veya üye nesnesine yönelik bir *işaretçi ise tür* koşulunun bir örneği true `cv-qualified` , aksi takdirde false barındırır. `is_member_object_pointer` *Ty* , üye işlevine yönelik bir işaretçisiyse, false tutan unutmayın.
 
 ## <a name="example"></a>Örnek
 
@@ -79,11 +80,11 @@ is_member_object_pointer<int (functional::*)()> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_member_pointer Sınıfı](../standard-library/is-member-pointer-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_member_pointer sınıfı](../standard-library/is-member-pointer-class.md)

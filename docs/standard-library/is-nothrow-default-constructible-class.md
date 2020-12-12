@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_nothrow_default_constructible sınıfı'
 title: is_nothrow_default_constructible Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_default_constructible
 ms.assetid: c576fcc9-5be1-43aa-b93a-64d3f1848887
-ms.openlocfilehash: 76b58800a454f42f6b5b6fcea23df161c37564b2
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: bbfadf10048175472c10f264856cdb519896b65f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230802"
 ---
-# <a name="isnothrowdefaultconstructible-class"></a>is_nothrow_default_constructible Sınıfı
+# <a name="is_nothrow_default_constructible-class"></a>is_nothrow_default_constructible Sınıfı
 
 Türün oluşturma olmayan bir varsayılan oluşturucuya sahip olup olmadığını sınar.
 
@@ -31,11 +32,11 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür kümesi bir nothrow varsayılan *oluşturucusuna sahipse,* tür koşulunun bir örneği true, aksi takdirde false değerini taşır. Tür belirtiminin bir örneği değerine `is_nothrow_constructible<Ty>`eşdeğerdir.
+Tür kümesi bir nothrow varsayılan *oluşturucusuna sahipse,* tür koşulunun bir örneği true, aksi takdirde false değerini taşır. Tür belirtiminin bir örneği değerine eşdeğerdir `is_nothrow_constructible<Ty>` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

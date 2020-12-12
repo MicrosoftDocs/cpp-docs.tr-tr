@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_nothrow_copy_assignable sınıfı'
 title: is_nothrow_copy_assignable Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_copy_assignable
 ms.assetid: baa8abd6-4f53-489f-abba-8d5d5c53bbbc
-ms.openlocfilehash: 330c97cd945e161d2bf47deb377dd732bf53b3c9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 43618158e33a393012a9f7a4a3ad14c816e3cd6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230815"
 ---
-# <a name="isnothrowcopyassignable-class"></a>is_nothrow_copy_assignable Sınıfı
+# <a name="is_nothrow_copy_assignable-class"></a>is_nothrow_copy_assignable Sınıfı
 
 Türün, derleyicinin throw olarak bilinen bir kopya atama işlecine sahip olup olmadığını test eder.
 
@@ -26,20 +27,20 @@ struct is_nothrow_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür koşulunun bir örneği, doğru `is_nothrow_assignable<T&, const T&>` tutan bir ReferenceType *T* için true, aksi durumda false değerini tutar.
+Tür koşulunun bir örneği, doğru tutan bir ReferenceType *T* için true, `is_nothrow_assignable<T&, const T&>` Aksi durumda false değerini tutar.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_nothrow_assignable Sınıfı](../standard-library/is-nothrow-assignable-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_nothrow_assignable sınıfı](../standard-library/is-nothrow-assignable-class.md)
