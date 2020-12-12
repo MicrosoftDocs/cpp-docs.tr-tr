@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMapStringToPtr sınıfı'
 title: CMapStringToPtr sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - CMapStringToPtr [MFC], RemoveKey
 - CMapStringToPtr [MFC], SetAt
 ms.assetid: 1ac11143-eb0a-4511-a662-2df0d1d9005b
-ms.openlocfilehash: 26a606d5813a68b55d8fc555025ccef270a25766
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67b4f29b552c82ce6c8b9686ed043cbfc65f078e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207845"
 ---
 # <a name="cmapstringtoptr-class"></a>CMapStringToPtr sınıfı
 
 Nesneler tarafından Anahtarlanan void işaretçilerin haritalarını destekler `CString` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMapStringToPtr : public CObject
@@ -93,7 +94,7 @@ class CMapStringToPtr : public CObject
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CMapStringToPtr`çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek tek harita öğelerinin dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+`CMapStringToPtr` çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek tek harita öğelerinin dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
 Dizeden işaretçiye eşlemeler serileştirilemiyor.
 

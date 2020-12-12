@@ -1,5 +1,6 @@
 ---
-title: CAnimationRect Sınıfı
+description: 'Daha fazla bilgi edinin: CAnimationRect sınıfı'
+title: CAnimationRect sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationRect
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - CAnimationRect [MFC], m_szInitial
 - CAnimationRect [MFC], m_topValue
 ms.assetid: 0294156d-241e-4a57-92b2-31234fe557d6
-ms.openlocfilehash: 273ea2b548d35722ebf937d2db2b589fef5e69fa
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 590b1382992a32e0eb3d49e0ea562d10193c1990
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81755129"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207897"
 ---
-# <a name="canimationrect-class"></a>CAnimationRect Sınıfı
+# <a name="canimationrect-class"></a>CAnimationRect sınıfı
 
-Kenarları animasyonlu olabilecek bir dikdörtgenin işlevselliğini uygular.
+Kenarları animasyonlu olabilecek bir dikdörtgenin işlevlerini uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CAnimationRect : public CAnimationBaseObject;
@@ -59,59 +60,59 @@ class CAnimationRect : public CAnimationBaseObject;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationRect::CAnimationRect](#canimationrect)|Fazla Yüklendi. Animasyon dikdörtgen nesnesi oluşturuyor.|
+|[CAnimationRect:: CAnimationRect](#canimationrect)|Fazla Yüklendi. Bir animasyon Rect nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationRect::Ekle Geçiş](#addtransition)|Sol, üst, sağ ve alt koordinatlar için geçişler ekler.|
-|[CAnimationRect::GetBottom](#getbottom)|Alt koordinatı temsil eden CAnimationVariable'e erişim sağlar.|
-|[CAnimationRect::GetDefaultValue](#getdefaultvalue)|Dikdörtgenin sınırları için varsayılan değerleri döndürür.|
-|[CAnimationRect::GetLeft](#getleft)|Sol koordinatı temsil eden CAnimationVariable'e erişim sağlar.|
-|[CAnimationRect::GetRight](#getright)|Doğru koordinatı temsil eden CAnimationVariable'e erişim sağlar.|
-|[CAnimationRect::GetTop](#gettop)|Üst koordinatı temsil eden CAnimationVariable'e erişim sağlar.|
-|[CAnimationRect::GetValue](#getvalue)|Geçerli değeri verir.|
-|[CAnimationRect::SetDefaultValue](#setdefaultvalue)|Varsayılan değeri ayarlar.|
+|[CAnimationRect:: AddTransition](#addtransition)|Sol, üst, sağ ve alt koordinatlar için geçişler ekler.|
+|[CAnimationRect:: GetBottom](#getbottom)|Alt koordinatı temsil eden CAnimationVariable öğesine erişim sağlar.|
+|[CAnimationRect:: GetDefaultValue](#getdefaultvalue)|Dikdörtgenin sınırları için varsayılan değerleri döndürür.|
+|[CAnimationRect:: GetLeft](#getleft)|Sol koordinatı temsil eden CAnimationVariable öğesine erişim sağlar.|
+|[CAnimationRect:: GetRight](#getright)|Doğru koordinatı temsil eden CAnimationVariable öğesine erişim sağlar.|
+|[CAnimationRect:: GetTop](#gettop)|En üstteki koordinatı temsil eden CAnimationVariable öğesine erişim sağlar.|
+|[CAnimationRect:: GetValue](#getvalue)|Geçerli değeri döndürür.|
+|[CAnimationRect:: SetDefaultValue](#setdefaultvalue)|Varsayılan değeri ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationRect::GetAnimationVariableList](#getanimationvariablelist)|Kapsüllenmiş animasyon değişkenlerini bir listeye koyar. [(CAnimationBaseObject geçersiz kılar::GetAnimationVariableList](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist).)|
+|[CAnimationRect:: GetAnimationVariableList](#getanimationvariablelist)|Encapsulated animasyon değişkenlerini bir listeye koyar. ( [CAnimationBaseObject:: GetAnimationVariableList](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist)geçersiz kılınır.)|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationRect::operatör RECT](#operator_rect)|CAnimationRect'i RECT'ye dönüştürür.|
-|[CAnimationRect::operator=](#operator_eq)|CAnimationRect'e rect atar.|
+|[CAnimationRect:: operator RECT](#operator_rect)|CAnimationRect 'i RECT 'e dönüştürür.|
+|[CAnimationRect:: operator =](#operator_eq)|CAnimationRect 'e rect atar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationRect::m_bFixedSize](#m_bfixedsize)|Dikdörtgenin sabit boyutu olup olmadığını belirtir.|
+|[CAnimationRect:: m_bFixedSize](#m_bfixedsize)|Dikdörtgenin sabit boyutta olup olmadığını belirtir.|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationRect::m_bottomValue](#m_bottomvalue)|Animasyon dikdörtgeninalt ciltli temsil eden kapsüllü animasyon değişkeni.|
-|[CAnimationRect::m_leftValue](#m_leftvalue)|Animasyon dikdörtgeninin Sol bağlı'sını temsil eden kapsüllü animasyon değişkeni.|
-|[CAnimationRect::m_rightValue](#m_rightvalue)|Animasyon dikdörtgeninin Sağ kenarını temsil eden kapsüllü animasyon değişkeni.|
-|[CAnimationRect::m_szInitial](#m_szinitial)|Animasyon dikdörtgeninin ilk boyutunu belirtir.|
-|[CAnimationRect::m_topValue](#m_topvalue)|Animasyon dikdörtgeninin üst temasını temsil eden kapsüllü animasyon değişkeni.|
+|[CAnimationRect:: m_bottomValue](#m_bottomvalue)|Animasyon dikdörtgeninin alt sınırını temsil eden Encapsulated animasyon değişkeni.|
+|[CAnimationRect:: m_leftValue](#m_leftvalue)|Animasyon dikdörtgeninin sol sınırını temsil eden Encapsulated animasyon değişkeni.|
+|[CAnimationRect:: m_rightValue](#m_rightvalue)|Animasyon dikdörtgeninin sağ ilişkisini temsil eden Encapsulated animasyon değişkeni.|
+|[CAnimationRect:: m_szInitial](#m_szinitial)|Animasyon dikdörtgeninin başlangıçtaki boyutunu belirtir.|
+|[CAnimationRect:: m_topValue](#m_topvalue)|Animasyon dikdörtgeninin üst sınırını temsil eden Encapsulated animasyon değişkeni.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-CAnimationRect sınıfı dört CAnimationVariable nesnesini kapsüller ve uygulamalarda bir dikdörtgeni temsil edebilir. Uygulamada bu sınıfı kullanmak için, bu sınıfın bir nesnesini anlık olarak eklemeniz, CAnimationController'ı kullanarak animasyon denetleyicisine ekleyin::AddAnimationObject ve sol, sağ üst ve alt koordinatlara uygulanacak her geçiş için AddTransition'ı arayın.
+CAnimationRect sınıfı dört CAnimationVariable nesnesini kapsüller ve uygulamalarda bir dikdörtgeni temsil edebilir. Bu sınıfı uygulamada kullanmak için, bu sınıfın bir nesnesinin örneğini oluşturun, CAnimationController:: AddAnimationObject öğesini kullanarak animasyon denetleyicisine ekleyin ve sol, sağ üst ve alt koordinatlara uygulanacak her geçiş için AddTransition çağırın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)
 
@@ -119,9 +120,9 @@ CAnimationRect sınıfı dört CAnimationVariable nesnesini kapsüller ve uygula
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-## <a name="canimationrectaddtransition"></a><a name="addtransition"></a>CAnimationRect::Ekle Geçiş
+## <a name="canimationrectaddtransition"></a><a name="addtransition"></a> CAnimationRect:: AddTransition
 
 Sol, üst, sağ ve alt koordinatlar için geçişler ekler.
 
@@ -136,24 +137,24 @@ void AddTransition(
 ### <a name="parameters"></a>Parametreler
 
 *pLeftTransition*<br/>
-Sol taraf için geçişi belirtir.
+Sol kenar için geçişi belirtir.
 
 *pTopTransition*<br/>
-Üst taraf için geçişi belirtir.
+Üst kenar için geçişi belirtir.
 
-*pRightTransition*<br/>
-Sağ taraf için geçişi belirtir.
+*Prime geçişi*<br/>
+Sağ kenar için geçişi belirtir.
 
 *pBottomTransition*<br/>
-Alt taraf için geçişi belirtir.
+Alt kenar için geçişi belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her dikdörtgen taraf için animasyon değişkenlerine uygulanacak iç geçişler listesine belirtilen geçişleri eklemek için bu işlevi arayın. Geçişler eklediğinizde, bunlar hemen uygulanmaz ve dahili bir listede depolanır. Geçişler CAnimationController::AnimateGroup'u aradiğinizde uygulanır (belirli bir değer için bir film şeridine eklenir). Dikdörtgen kenarlarından birine geçiş uygulamanız gerekmiyorsa, NULL'u geçebilirsiniz.
+Her dikdörtgen kenarı için animasyon değişkenlerine uygulanacak olan geçiş iç listesine belirtilen geçişleri eklemek için bu işlevi çağırın. Geçişler eklediğinizde, bunlar hemen uygulanmaz ve dahili bir listede depolanır. CAnimationController:: AnimateGroup ' i çağırdığınızda geçişler uygulanır (belirli bir değer için bir görsel taslağa eklenir). Dikdörtgen kenarlarından birine geçiş uygulamanız gerekmiyorsa NULL geçirebilirsiniz.
 
-## <a name="canimationrectcanimationrect"></a><a name="canimationrect"></a>CAnimationRect::CAnimationRect
+## <a name="canimationrectcanimationrect"></a><a name="canimationrect"></a> CAnimationRect:: CAnimationRect
 
-CAnimationRect nesnesi oluşturuyor.
+CAnimationRect nesnesi oluşturur.
 
 ```
 CAnimationRect();
@@ -186,40 +187,40 @@ CAnimationRect(
 *Rect*<br/>
 Varsayılan dikdörtgeni belirtir.
 
-*nGroupID*<br/>
-Grup Kimliğini belirtir.
+*Ngroupıd*<br/>
+Grup KIMLIĞINI belirtir.
 
-*nObjectID*<br/>
-Nesne Kimliğini belirtir.
+*Nobjectıd*<br/>
+Nesne KIMLIĞINI belirtir.
 
 *dwUserData*<br/>
 Kullanıcı tanımlı verileri belirtir.
 
-*Pt*<br/>
+*yönergelerinin*<br/>
 Sol üst köşenin koordinatı.
 
-*Sz*<br/>
+*SZ*<br/>
 Dikdörtgenin boyutu.
 
 *nLeft*<br/>
-Sol bağlının koordinatını belirtir.
+Sol sınırın koordinatını belirtir.
 
 *nTop*<br/>
-Üst sınır koordinatını belirtir.
+En üst sınırın koordinatını belirtir.
 
-*nHakkı*<br/>
-Doğru bağlı koordinatı belirtir.
+*Nsağ*<br/>
+Sağ sınırın koordinatını belirtir.
 
 *nBottom*<br/>
-Alt sınır koordinatını belirtir.
+Alt sınırın koordinatını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne, sol, üst, sağ ve alt, Nesne Kimliği ve Grup Kimliği için varsayılan değerlerle oluşturulur ve bu değerler 0 olarak ayarlanır. Bunlar daha sonra setdefaultvalue ve SetID kullanılarak çalışma zamanında değiştirilebilir.
+Nesne, sol, üst, sağ ve alt, nesne KIMLIĞI ve Grup KIMLIĞI için varsayılan değerlerle oluşturulur ve bu değer 0 olarak ayarlanır. Bu, daha sonra SetDefaultValue ve SetID kullanılarak çalışma zamanında değiştirilebilir.
 
-## <a name="canimationrectgetanimationvariablelist"></a><a name="getanimationvariablelist"></a>CAnimationRect::GetAnimationVariableList
+## <a name="canimationrectgetanimationvariablelist"></a><a name="getanimationvariablelist"></a> CAnimationRect:: GetAnimationVariableList
 
-Kapsüllenmiş animasyon değişkenlerini bir listeye koyar.
+Encapsulated animasyon değişkenlerini bir listeye koyar.
 
 ```
 virtual void GetAnimationVariableList(
@@ -229,12 +230,12 @@ virtual void GetAnimationVariableList(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lst*<br/>
+*LST*<br/>
 İşlev döndüğünde, dikdörtgenin koordinatlarını temsil eden dört CAnimationVariable nesnesine işaretçiler içerir.
 
-## <a name="canimationrectgetbottom"></a><a name="getbottom"></a>CAnimationRect::GetBottom
+## <a name="canimationrectgetbottom"></a><a name="getbottom"></a> CAnimationRect:: GetBottom
 
-Alt koordinatı temsil eden CAnimationVariable'e erişim sağlar.
+Alt koordinatı temsil eden CAnimationVariable öğesine erişim sağlar.
 
 ```
 CAnimationVariable& GetBottom();
@@ -242,13 +243,13 @@ CAnimationVariable& GetBottom();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Alt koordinatı temsil eden kapsüllü CAnimationVariable'e bir başvuru.
+Alt koordinatı temsil eden kapsüllenmiş CAnimationVariable başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alt koordinatı temsil eden altta yatan CAnimationVariable'e doğrudan erişim elde etmek için bu yöntemi arayabilirsiniz.
+Alt koordinatı temsil eden temeldeki CAnimationVariable öğesine doğrudan erişim sağlamak için bu yöntemi çağırabilirsiniz.
 
-## <a name="canimationrectgetdefaultvalue"></a><a name="getdefaultvalue"></a>CAnimationRect::GetDefaultValue
+## <a name="canimationrectgetdefaultvalue"></a><a name="getdefaultvalue"></a> CAnimationRect:: GetDefaultValue
 
 Dikdörtgenin sınırları için varsayılan değerleri döndürür.
 
@@ -258,15 +259,15 @@ CRect GetDefaultValue();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sol, sağ, üst ve alt için varsayılanları içeren bir CRect değeri.
+Sol, sağ, üst ve alt değerlerini içeren bir CRect değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha önce oluşturucu veya SetDefaultValue tarafından ayarlanmış varsayılan değeri almak için bu işlevi arayın.
+Daha önce constructor veya SetDefaultValue tarafından ayarlanan varsayılan değeri almak için bu işlevi çağırın.
 
-## <a name="canimationrectgetleft"></a><a name="getleft"></a>CAnimationRect::GetLeft
+## <a name="canimationrectgetleft"></a><a name="getleft"></a> CAnimationRect:: GetLeft
 
-Sol koordinatı temsil eden CAnimationVariable'e erişim sağlar.
+Sol koordinatı temsil eden CAnimationVariable öğesine erişim sağlar.
 
 ```
 CAnimationVariable& GetLeft();
@@ -274,15 +275,15 @@ CAnimationVariable& GetLeft();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sol koordinatı temsil eden kapsüllü CAnimationVariable'e bir başvuru.
+Sol koordinatı temsil eden kapsüllenmiş CAnimationVariable başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sol koordinatı temsil eden altta yatan CAnimationVariable'e doğrudan erişim elde etmek için bu yöntemi arayabilirsiniz.
+Sol koordinatı temsil eden temeldeki CAnimationVariable öğesine doğrudan erişim sağlamak için bu yöntemi çağırabilirsiniz.
 
-## <a name="canimationrectgetright"></a><a name="getright"></a>CAnimationRect::GetRight
+## <a name="canimationrectgetright"></a><a name="getright"></a> CAnimationRect:: GetRight
 
-Doğru koordinatı temsil eden CAnimationVariable'e erişim sağlar.
+Doğru koordinatı temsil eden CAnimationVariable öğesine erişim sağlar.
 
 ```
 CAnimationVariable& GetRight();
@@ -290,15 +291,15 @@ CAnimationVariable& GetRight();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sağ koordinatı temsil eden kapsüllü CAnimationVariable'e bir başvuru.
+Doğru koordinatı temsil eden kapsüllenmiş CAnimationVariable başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Doğru koordinatı temsil eden altta yatan CAnimationVariable'e doğrudan erişim elde etmek için bu yöntemi arayabilirsiniz.
+Doğru koordinatı temsil eden temeldeki CAnimationVariable 'a doğrudan erişim sağlamak için bu yöntemi çağırabilirsiniz.
 
-## <a name="canimationrectgettop"></a><a name="gettop"></a>CAnimationRect::GetTop
+## <a name="canimationrectgettop"></a><a name="gettop"></a> CAnimationRect:: GetTop
 
-Üst koordinatı temsil eden CAnimationVariable'e erişim sağlar.
+En üstteki koordinatı temsil eden CAnimationVariable öğesine erişim sağlar.
 
 ```
 CAnimationVariable& GetTop();
@@ -306,15 +307,15 @@ CAnimationVariable& GetTop();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üst koordinatı temsil eden kapsüllü CAnimationVariable'e bir başvuru.
+En üst koordinatları temsil eden kapsüllenmiş CAnimationVariable başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üst koordinatı temsil eden altta yatan CAnimationVariable'e doğrudan erişim elde etmek için bu yöntemi arayabilirsiniz.
+En üstteki koordinatı temsil eden temeldeki CAnimationVariable 'a doğrudan erişim sağlamak için bu yöntemi çağırabilirsiniz.
 
-## <a name="canimationrectgetvalue"></a><a name="getvalue"></a>CAnimationRect::GetValue
+## <a name="canimationrectgetvalue"></a><a name="getvalue"></a> CAnimationRect:: GetValue
 
-Geçerli değeri verir.
+Geçerli değeri döndürür.
 
 ```
 BOOL GetValue(CRect& rect);
@@ -323,19 +324,19 @@ BOOL GetValue(CRect& rect);
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-Çıkış. Bu yöntem döndüğünde geçerli değeri içerir.
+Çıktıların. Bu yöntemin döndürdüğü geçerli değeri içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU, geçerli değer başarıyla alındıysa; aksi takdirde YANLIŞ.
+Geçerli değer başarıyla alınırsa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon dikdörtgeninin geçerli değerini almak için bu işlevi arayın. Bu yöntem başarısız olursa veya sol, üst, sağ ve alt için COM nesneleri başharfe edilmemişse, rect daha önce oluşturucu veya SetDefaultValue tarafından ayarlanmış varsayılan değer içerir.
+Animasyon dikdörtgeninin geçerli değerini almak için bu işlevi çağırın. Bu yöntem başarısız olursa veya sol, üst, sağ ve alt için COM nesneleri başlatılmazsa, Rect, daha önce oluşturucuda veya SetDefaultValue tarafından ayarlanan varsayılan değeri içerir.
 
-## <a name="canimationrectm_bfixedsize"></a><a name="m_bfixedsize"></a>CAnimationRect::m_bFixedSize
+## <a name="canimationrectm_bfixedsize"></a><a name="m_bfixedsize"></a> CAnimationRect:: m_bFixedSize
 
-Dikdörtgenin sabit boyutu olup olmadığını belirtir.
+Dikdörtgenin sabit boyutta olup olmadığını belirtir.
 
 ```
 BOOL m_bFixedSize;
@@ -343,51 +344,51 @@ BOOL m_bFixedSize;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye doğruysa, dikdörtgenin boyutu sabitlenir ve sağ ve alt değerler her sol üst köşe sabit boyuta göre hareket ettirildiğinde yeniden hesaplanır. Dikdörtgeni ekranın etrafında kolayca taşımak için bu değeri TRUE olarak ayarlayın. Bu durumda sağ ve alt koordinatlara uygulanan geçişler yoksayılır. Nesneyi ve/veya SetDefaultValue'ı yaptığınızda boyut dahili olarak depolanır. Varsayılan olarak bu üye FALSE olarak ayarlanır.
+Bu üye doğru ise, sol üst köşedeki sabit boyuta göre her taşınışında dikdörtgenin boyutu sabittir ve sağ ve alt değerler yeniden hesaplanır. Dikdörtgeni ekranın etrafında kolayca taşımak için bu değeri TRUE olarak ayarlayın. Bu durumda, sağ ve alt koordinatlarına uygulanan geçişler yok sayılır. Nesne oluşturduğunuzda ve/veya SetDefaultValue ' i çağırdığınızda boyut dahili olarak depolanır. Varsayılan olarak, bu üye FALSE olarak ayarlanır.
 
-## <a name="canimationrectm_bottomvalue"></a><a name="m_bottomvalue"></a>CAnimationRect::m_bottomValue
+## <a name="canimationrectm_bottomvalue"></a><a name="m_bottomvalue"></a> CAnimationRect:: m_bottomValue
 
-Animasyon dikdörtgeninalt ciltli temsil eden kapsüllü animasyon değişkeni.
+Animasyon dikdörtgeninin alt sınırını temsil eden Encapsulated animasyon değişkeni.
 
 ```
 CAnimationVariable m_bottomValue;
 ```
 
-## <a name="canimationrectm_leftvalue"></a><a name="m_leftvalue"></a>CAnimationRect::m_leftValue
+## <a name="canimationrectm_leftvalue"></a><a name="m_leftvalue"></a> CAnimationRect:: m_leftValue
 
-Animasyon dikdörtgeninin Sol bağlı'sını temsil eden kapsüllü animasyon değişkeni.
+Animasyon dikdörtgeninin sol sınırını temsil eden Encapsulated animasyon değişkeni.
 
 ```
 CAnimationVariable m_leftValue;
 ```
 
-## <a name="canimationrectm_rightvalue"></a><a name="m_rightvalue"></a>CAnimationRect::m_rightValue
+## <a name="canimationrectm_rightvalue"></a><a name="m_rightvalue"></a> CAnimationRect:: m_rightValue
 
-Animasyon dikdörtgeninin Sağ kenarını temsil eden kapsüllü animasyon değişkeni.
+Animasyon dikdörtgeninin sağ ilişkisini temsil eden Encapsulated animasyon değişkeni.
 
 ```
 CAnimationVariable m_rightValue;
 ```
 
-## <a name="canimationrectm_szinitial"></a><a name="m_szinitial"></a>CAnimationRect::m_szInitial
+## <a name="canimationrectm_szinitial"></a><a name="m_szinitial"></a> CAnimationRect:: m_szInitial
 
-Animasyon dikdörtgeninin ilk boyutunu belirtir.
+Animasyon dikdörtgeninin başlangıçtaki boyutunu belirtir.
 
 ```
 CSize m_szInitial;
 ```
 
-## <a name="canimationrectm_topvalue"></a><a name="m_topvalue"></a>CAnimationRect::m_topValue
+## <a name="canimationrectm_topvalue"></a><a name="m_topvalue"></a> CAnimationRect:: m_topValue
 
-Animasyon dikdörtgeninin üst temasını temsil eden kapsüllü animasyon değişkeni.
+Animasyon dikdörtgeninin üst sınırını temsil eden Encapsulated animasyon değişkeni.
 
 ```
 CAnimationVariable m_topValue;
 ```
 
-## <a name="canimationrectoperator-rect"></a><a name="operator_rect"></a>CAnimationRect::operatör RECT
+## <a name="canimationrectoperator-rect"></a><a name="operator_rect"></a> CAnimationRect:: operator RECT
 
-CAnimationRect'i RECT'ye dönüştürür.
+CAnimationRect 'i RECT 'e dönüştürür.
 
 ```
 operator RECT();
@@ -395,15 +396,15 @@ operator RECT();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon dikdörtgeninin RECT olarak geçerli değeri.
+Animasyon dikdörtgeninin geçerli değeri DIKDÖRTGEN olarak.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev dahili olarak GetValue çağırır. GetValue herhangi bir nedenle başarısız olursa, döndürülen RECT tüm dikdörtgen koordinatları için varsayılan değerleri içerir.
+Bu işlev, bir dahili olarak GetValue çağırır. GetValue bir nedenden dolayı başarısız olursa, döndürülen RECT tüm dikdörtgen koordinatları için varsayılan değerleri içerir.
 
-## <a name="canimationrectoperator"></a><a name="operator_eq"></a>CAnimationRect::operator=
+## <a name="canimationrectoperator"></a><a name="operator_eq"></a> CAnimationRect:: operator =
 
-CAnimationRect'e rect atar.
+CAnimationRect 'e rect atar.
 
 ```cpp
 void operator=(const RECT& rect);
@@ -416,9 +417,9 @@ Animasyon dikdörtgeninin yeni değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon başlamadan önce bunu yapmanız önerilir, çünkü bu işleç, oluşturulduklarında renk bileşenleri için temel COM nesnelerini yeniden oluşturan SetDefaultValue'ı çağırır. Bu animasyon nesnesini olaylara abone olduysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
+Bu işleç, oluşturulduklarında renk bileşenleri için temel alınan COM nesnelerini yeniden oluşturan SetDefaultValue ' ı çağırdığı için, animasyon başlamadan önce bunu yapmanız önerilir. Bu animasyon nesnesini olaylara abone oldıysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
 
-## <a name="canimationrectsetdefaultvalue"></a><a name="setdefaultvalue"></a>CAnimationRect::SetDefaultValue
+## <a name="canimationrectsetdefaultvalue"></a><a name="setdefaultvalue"></a> CAnimationRect:: SetDefaultValue
 
 Varsayılan değeri ayarlar.
 
@@ -433,7 +434,7 @@ Sol, üst, sağ ve alt için yeni varsayılan değerleri belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon nesnesine varsayılan değer ayarlamak için bu işlevi kullanın. Bu yöntem, varsayılan değerleri dikdörtgenin sınırlarına atar. Ayrıca, oluşturuldukları takdirde altta yatan COM nesnelerini yeniden oluşturur. Bu animasyon nesnesini olaylara abone olduysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
+Animasyon nesnesine varsayılan bir değer ayarlamak için bu işlevi kullanın. Bu yöntemler, dikdörtgenin sınırlarına varsayılan değerler atar. Ayrıca, oluşturulan temel COM nesnelerini de yeniden oluşturur. Bu animasyon nesnesini olaylara abone oldıysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

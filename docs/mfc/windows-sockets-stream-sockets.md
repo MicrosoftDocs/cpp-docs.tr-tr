@@ -1,44 +1,45 @@
 ---
-title: 'Windows Yuvaları: Stream yuva'
+description: 'Daha fazla bilgi edinin: Windows Yuvaları: akış Yuvaları'
+title: 'Windows Yuvaları: Akış Yuvaları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], stream sockets
 - sockets [MFC], stream sockets
 - stream sockets [MFC]
 ms.assetid: 31faaa34-a995-493f-a30b-b8115293d619
-ms.openlocfilehash: 91f06c4a36e76638708edf085987e51418913fd6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9e40be06ebb1de04466b5f13a46fe82fb3b0bd2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337836"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207650"
 ---
-# <a name="windows-sockets-stream-sockets"></a>Windows Yuvaları: Stream yuva
+# <a name="windows-sockets-stream-sockets"></a>Windows Yuvaları: Akış Yuvaları
 
-Bu makalede, akış yuvaları iki Windows yuva türlerinden birini açıklar. (Diğer tür [veri birimi yuva](../mfc/windows-sockets-datagram-sockets.md).)
+Bu makalede, kullanılabilir iki Windows yuva türünden biri olan akış yuvaları açıklanmaktadır. (Diğer tür, [veri birimi yuvadır](../mfc/windows-sockets-datagram-sockets.md).)
 
-Stream yuva sağlamak için bir veri akışı kayıt sınırlar olmadan: çift yönlü olabilir bayt akışı (tam çift yönlü uygulamasıdır: Bu hem aktarım hem de bir yuva alabildikleri). Akışlar üzerinde sıralı, unduplicated verileri sunmak için yararlandı. ("Sıralı" paketleri sıraya gönderilen teslim edilmesini anlamına gelir. "Unduplicated", belirli bir paket yalnızca bir kez elde anlamına gelir.) Stream iletilerinin garanti ve akışları büyük miktarlarda veri işleme için uygundur.
+Akış yuvaları, kayıt sınırları olmadan bir veri akışı sağlar: çift yönlü olabilecek bir bayt akışı (uygulama tam çift yönlü) ve yuva aracılığıyla hem aktarabilir hem de alabilir. Akışlara, sıralı, yinelenenleri kaldırılmış veriler teslim etmek için güvenebilirler. ("Sıralı", paketlerin gönderildiği sırada teslim edildiği anlamına gelir. "Yinelenmeyen", belirli bir paketi yalnızca bir kez almanızı gösterir.) Akış iletilerinin alınması garanti edilir ve akışlar, büyük miktarlarda veri işlemeye uygundur.
 
-Ağ aktarım katmanı birden fazla veya verileri gruplandırmak paketlere makul bir boyutta olabilir. `CSocket` Sınıfı, paketleme ve sizin için akışının paketi açılırken işleyecek.
+Ağ aktarım katmanı, verileri makul büyüklükte paketlere bölebilir veya gruplandırabilir. `CSocket`Sınıf, sizin için paketleme ve paketten açma işlemesi yapılır.
 
-Akışlar, açık bağlantıları dayalı: Yuva A B; yuva bağlantı istekleri Yuva B kabul eder ya da bağlantı isteği reddeder.
+Akışlar açık bağlantılara dayalıdır: A soket, B yuvasına bağlantı ister; B yuvası bağlantı isteğini kabul eder veya reddeder.
 
-Telefon görüşmesi, bir akış için iyi bir benzerliği sağlar. Normal koşullar altında alıcı tarafın, çoğaltma veya kaybı söylediğiniz, sırayla söylediğiniz duyar. Stream yuva uygulamaları gibi Dosya Aktarım Protokolü (hangi aktarma ASCII veya ikili dosyalarda rasgele boyutunun kolaylaştıran FTP), örneğin, için uygundur.
+Telefon araması, bir akış için iyi bir benzerleme vurguladı sağlar. Normal koşullarda, alıcı taraf, yineleme veya kayıp olmadan söylediklerinizi söyleyebileceğiniz sırada söyler. Akış yuvaları, örneğin, isteğe bağlı olarak ASCII veya ikili dosyaları aktarmayı kolaylaştıran Dosya Aktarım Protokolü (FTP) gibi uygulamalar için uygundur.
 
-Stream yuva veri ulşamasını garanti gerekir ve veri boyutu büyük olduğunda veri birimi yuvaları için tercih edilir. Akış yuvaları hakkında daha fazla bilgi için Windows yuva belirtimi bakın. Belirtimi Windows SDK içinde kullanılabilir.
+Veri boyutu büyük olduğunda akış yuvaları, verilerin gelmesi garantisi olması durumunda veri birimi yuvaları için tercih edilir. Akış yuvaları hakkında daha fazla bilgi için bkz. Windows Yuvaları belirtimi. Belirtim Windows SDK kullanılabilir.
 
-Akış yuvaları kullanılması nedeniyle yayın için ağdaki tüm alıcı yuva için bir veri birimi yuva kullanmak üzere tasarlanmış uygulamalar için üstün olabilir
+Stream Sockets kullanımı, ağ üzerindeki tüm alma yuvaları yayınlamak için bir veri birimi yuvası kullanmak üzere tasarlanan uygulamalara üst olabilir, çünkü
 
-- Taşma (veya "storm") ağ sorunları tabi yayın modelidir.
+- Yayın modeli ağ taşma (veya "fırtınası") sorunlarına tabidir.
 
-- Sonradan benimsenen istemci-sunucu modeli daha verimli olur.
+- Daha sonra benimseyen istemci-sunucu modeli daha etkilidir.
 
-- Akışı modeli, burada veri birimi model yok, güvenilir veri aktarımı sağlar.
+- Akış modeli, veri birimi modelinin olmadığı güvenilir veri aktarımı sağlar.
 
-- Son modelin CArchive CSocket sınıfı için uygundur. Bu sınıf yuva uygulamaları ANSI ve Unicode arasında iletişim olanağı yararlanır.
+- Son model, CArchive sınıfı CSocket sınıfına kadar olan Unicode ve ANSI soket uygulamaları arasında iletişim kurma özelliğinden yararlanır.
 
     > [!NOTE]
-    >  Sınıfı kullanırsanız `CSocket`, bir akış kullanmanız gerekir. Yuva türü olarak belirtirseniz MFC onaylama başarısız **SOCK_DGRAM**.
+    >  Sınıfı kullanırsanız `CSocket` , bir akış kullanmanız gerekir. Yuva türünü **sock_dgram** olarak belirtirseniz mfc onaylama işlemi başarısız olur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

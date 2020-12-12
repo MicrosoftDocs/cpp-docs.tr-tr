@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işaretçileri artırma ve azaltma'
 title: İşaretçileri Artırma ve Azaltma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,56 +8,56 @@ helpviewer_keywords:
 - pointers [C++], multibyte characters
 - decrementing pointers
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
-ms.openlocfilehash: cdaee3d13a8ceab47f62100953a0eb6e51bfc255
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3c333c11c5a0b68bf013dbd374eb1cc4e5f00abc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410661"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207325"
 ---
 # <a name="incrementing-and-decrementing-pointers"></a>İşaretçileri Artırma ve Azaltma
 
 Aşağıdaki ipuçlarını kullanın:
 
-- İşaret baytlara değil, ön baytlar. Sondaki baytı işaretçiniz güvenli değil. Genellikle ileri yerine ters bir dizesini tara daha güvenlidir.
+- Ön baytlar değil, ön bayt sayısını işaret edin. Genellikle bir iz baytı işaretçisi olması güvenli değildir. Genellikle bir dizeyi geri doğru bir şekilde taramak yerine daha güvenlidir.
 
-- İşaretçi artırma/azaltma işlevleri ve tam bir karakter üzerinden taşınan makroları vardır:
+- Bütün bir karakter üzerinde hareket eden işaretçi artışı/azaltma işlevleri ve makroları mevcuttur:
 
     ```cpp
     sz1++;
     ```
 
-   olur:
+    şöyle olur:
 
     ```cpp
     sz1 = _mbsinc( sz1 );
     ```
 
-   `_mbsinc` Ve `_mbsdec` işlevleri doğru bir şekilde artırın ve içinde azaltma `character` birimi, karakter boyutundan bağımsız olarak.
+   `_mbsinc`Ve `_mbsdec` işlevleri, `character` karakter boyutundan bağımsız olarak birimleri doğru şekilde artırır ve azaltır.
 
-- Azaltır için bir işaretçi olduğu aşağıdaki gibi dize karşılaştırması gerekir:
+- Azaltır için, aşağıdaki gibi, dizenin baş bir işaretçisine ihtiyacınız vardır:
 
     ```cpp
     sz2--;
     ```
 
-   olur:
+    şöyle olur:
 
     ```cpp
     sz2 = _mbsdec( sz2Head, sz2 );
     ```
 
-   Alternatif olarak, geçerli bir karakter dizesi, baş işaretçinizi olabilir gibi:
+   Alternatif olarak, baş işaretçiniz dizedeki geçerli bir karakter olabilir, örneğin:
 
     ```cpp
     sz2Head < sz2
     ```
 
-   Bilinen geçerli baytı için bir işaretçi olması gerekir.
+   Bilinen geçerli bir ön bayta yönelik bir işaretçiniz olması gerekir.
 
-- Daha hızlı çağrılar için önceki karaktere bir işaretçi korumak isteyebileceğiniz `_mbsdec`.
+- Daha hızlı çağrılar için önceki karaktere bir işaretçi tutmak isteyebilirsiniz `_mbsdec` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)<br/>
-[Bayt Endeksleri](../text/byte-indices.md)
+[MBCS programlama Ipuçları](../text/mbcs-programming-tips.md)<br/>
+[Bayt dizinleri](../text/byte-indices.md)

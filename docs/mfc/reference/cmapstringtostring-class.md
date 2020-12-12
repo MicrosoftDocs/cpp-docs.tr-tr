@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMapStringToString sınıfı'
 title: CMapStringToString sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,18 +43,18 @@ helpviewer_keywords:
 - CMapStringToString [MFC], RemoveKey
 - CMapStringToString [MFC], SetAt
 ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
-ms.openlocfilehash: 28422c26ba2ca77657bfcf166592d2bc69169891
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ba82647a6e81e82b4d977e4de3beee1bfd0b7c4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223011"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207819"
 ---
 # <a name="cmapstringtostring-class"></a>CMapStringToString sınıfı
 
 `CString`Nesnelere göre anahtarlı nesnelerin haritalarını destekler `CString` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMapStringToString : public CObject
@@ -128,7 +129,7 @@ Hakkında daha fazla bilgi için `CMapStringToString` bkz. Makale [koleksiyonlar
 
 **Üstbilgi:** afxcoll. h
 
-## <a name="cmapstringtostringcpair"></a><a name="cpair"></a>CMapStringToString:: CPair
+## <a name="cmapstringtostringcpair"></a><a name="cpair"></a> CMapStringToString:: CPair
 
 Bir anahtar değeri ve ilişkili dize nesnesinin değerini içerir.
 
@@ -138,9 +139,9 @@ Bu, [CMapStringToString](../../mfc/reference/cmapstringtostring-class.md)sınıf
 
 Yapı iki alandan oluşur:
 
-- `key`Anahtar türünün gerçek değeri.
+- `key` Anahtar türünün gerçek değeri.
 
-- `value`İlişkili nesnenin değeri.
+- `value` İlişkili nesnenin değeri.
 
 [CMapStringToString::P Lookup](#plookup), [cmapstringtostring::P GetFirstAssoc](#pgetfirstassoc)ve [cmapstringtostring::P GetNextAssoc](#pgetnextassoc)öğesinden dönüş değerlerini depolamak için kullanılır.
 
@@ -148,7 +149,7 @@ Yapı iki alandan oluşur:
 
   Kullanım örneği için [CMapStringToString::P Lookup](#plookup)örneğine bakın.
 
-## <a name="cmapstringtostringpgetfirstassoc"></a><a name="pgetfirstassoc"></a>CMapStringToString::P GetFirstAssoc
+## <a name="cmapstringtostringpgetfirstassoc"></a><a name="pgetfirstassoc"></a> CMapStringToString::P GetFirstAssoc
 
 Map nesnesinin ilk girişini döndürür.
 
@@ -170,9 +171,9 @@ Map nesnesindeki ilk öğeyi bir işaretçi döndürmek için bu işlevi çağı
 
 [!code-cpp[NVC_MFCCollections#73](../../mfc/codesnippet/cpp/cmapstringtostring-class_1.cpp)]
 
-## <a name="cmapstringtostringpgetnextassoc"></a><a name="pgetnextassoc"></a>CMapStringToString::P GetNextAssoc
+## <a name="cmapstringtostringpgetnextassoc"></a><a name="pgetnextassoc"></a> CMapStringToString::P GetNextAssoc
 
-*Passocrec*tarafından işaret edilen harita öğesini alır.
+*Passocrec* tarafından işaret edilen harita öğesini alır.
 
 ```
 const CPair *PGetNextAssoc(const CPair* pAssoc) const;
@@ -197,7 +198,7 @@ Haritadaki tüm öğeler arasında yinelemek için bu yöntemi çağırın. Ça�
 
   [CMapStringToString::P GetFirstAssoc](#pgetfirstassoc)örneğine bakın.
 
-## <a name="cmapstringtostringplookup"></a><a name="plookup"></a>CMapStringToString::P arama
+## <a name="cmapstringtostringplookup"></a><a name="plookup"></a> CMapStringToString::P arama
 
 Verilen bir anahtara eşlenen değeri arar.
 

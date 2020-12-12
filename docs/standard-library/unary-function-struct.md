@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unary_function struct'
 title: unary_function Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - unary_function class
 ms.assetid: 04c2fbdc-c1f6-48ed-b6cc-292a6d484627
-ms.openlocfilehash: 4b93664377838cd5ff97346282cb9120ae9b5e37
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 441bbecbd356dddb20d8b8249dbaa39ccfbcc3ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207403"
 ---
 # <a name="unary_function-struct"></a>unary_function Yapısı
 
@@ -31,7 +32,7 @@ struct unary_function
 
 Şablon yapısı, formun üye işlevini tanımlayan sınıflar için temel görevi görür `result_type operator()( constargument_type& ) const` .
 
-Tüm türetilmiş birli işlevler, **argument_type** olarak tek bağımsız değişken türüne ve **result_type**olarak dönüş türüne başvurabilir.
+Tüm türetilmiş birli işlevler, **argument_type** olarak tek bağımsız değişken türüne ve **result_type** olarak dönüş türüne başvurabilir.
 
 ## <a name="example"></a>Örnek
 

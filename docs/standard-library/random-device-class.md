@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: random_device sınıfı'
 title: random_device Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::random_device [C++], entropy
 - std::random_device [C++], entropy
 ms.assetid: 4393d515-0cb6-4e0d-a2ba-c780f05dc1bf
-ms.openlocfilehash: b2176ce7dcdefdcf4fc0846cd18b1b01d4de2916
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 29f7f9d1359e488bbe15811193c034a0be12219b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843553"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207481"
 ---
 # <a name="random_device-class"></a>random_device Sınıfı
 
@@ -59,7 +60,7 @@ public:
 
 Sınıfı rastgele sayıların kaynağını açıklar ve izin verilir, ancak ISO C++ standardı tarafından belirleyici olmayan veya şifreli olarak güvenli olması gerekmez. Visual Studio uygulamasında oluşturulan değerler belirleyici değildir ve şifreli olarak güvende değildir, ancak altyapılardan ve altyapı bağdaştırıcılarında oluşturulan ( [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md), çoğu uygulama için tercih edilen yüksek kaliteli ve hızlı altyapıdan çok daha yavaş çalışır).
 
-`random_device`sonuçlar kapalı [32) aralığında eşit olarak dağıtılır `0, 2` <sup>32</sup>.
+`random_device`sonuçlar kapalı [32) aralığında eşit olarak dağıtılır `0, 2` <sup></sup>.
 
 `random_device` engellenmeyen bir çağrıya neden olması garanti edilmez.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: çeşitli dize türleri arasında dönüştürme'
 title: 'Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-ms.openlocfilehash: 068665c594f2fbeb531be21ded7ef16f3f5c1ef3
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 47a7107e8e776c0d9be584fd0cc166f48c90326c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207351"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma
 
@@ -20,7 +21,7 @@ Bu konuda çeşitli Visual C++ dize türlerinin diğer dizelere nasıl dönüşt
 
 ## <a name="example-convert-from-char-"></a>Örnek: char 'dan Dönüştür *
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Bu örnek, bir öğesinden `char *` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. Dize `char *` (C stili dize olarak da bilinir), dizenin sonunu belirtmek için null bir karakter kullanır. C stili dizeler genellikle karakter başına bir bayt gerektirir, ancak iki bayt de kullanabilir. Aşağıdaki örneklerde, `char *` dizeler bazen Unicode dizelerinden dönüştürmeden kaynaklanan dize verileri nedeniyle çok baytlı karakter dizeleri olarak adlandırılır. Tek baytlı ve çok baytlı karakter ( `MBCS` ) işlevleri, dizeler üzerinde çalışabilir `char *` .
 
@@ -119,7 +120,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-wchar_t-"></a>Örnek: wchar_t * öğesinden Dönüştür
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Bu örnek, bir öğesinden `wchar_t *` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. Çok sayıda dize türü de dahil olmak üzere `wchar_t *` geniş karakter biçimlerini uygular. Bir dizeyi çok baytlı ve geniş karakter biçimi arasında dönüştürmek için, gibi tek bir işlev çağrısını `mbstowcs_s` veya gibi bir sınıf için Oluşturucu çağrısı kullanabilirsiniz `CStringA` .
 
@@ -241,7 +242,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-_bstr_t"></a>Örnek: _bstr_t Dönüştür
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Bu örnek, bir öğesinden `_bstr_t` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. `_bstr_t`Nesnesi, geniş karakter dizelerini kapsüllemek için bir yoldur `BSTR` . BSTR dizesinde length değeri bulunur ve dizeyi sonlandırmak için null bir karakter kullanmaz, ancak dönüştürdüğünüz dize türü bir Sonlandırıcı null değer gerektirebilir.
 
@@ -339,7 +340,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-ccombstr"></a>Örnek: CComBSTR 'den Dönüştür
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Bu örnek, bir öğesinden `CComBSTR` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. _Bstr_t gibi, bir `CComBSTR` nesne geniş karakter BSTR dizelerini kapsüllemek için bir yoldur. BSTR dizesinde length değeri bulunur ve dizeyi sonlandırmak için null bir karakter kullanmaz, ancak dönüştürdüğünüz dize türü bir Sonlandırıcı null değer gerektirebilir.
 
@@ -447,7 +448,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-cstring"></a>Örnek: CString öğesinden Dönüştür
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Bu örnek, bir öğesinden `CString` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir. `CString` , sembolün tanımlanıp tanımlandığına bağlı olarak, TCHAR veri türünü temel alır `_UNICODE` . `_UNICODE`Tanımlı değilse, char olarak `TCHAR` tanımlanır ve `CString` çok baytlı bir karakter dizesi içerir; `_UNICODE` tanımlanmışsa, olarak `TCHAR` tanımlanır **`wchar_t`** ve geniş bir `CString` karakter dizesi içerir.
 
@@ -589,7 +590,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-basic_string"></a>Örnek: basic_string Dönüştür
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Bu örnek, bir öğesinden `basic_string` yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir.
 
@@ -683,7 +684,7 @@ Hello, World! (System::String)
 
 ## <a name="example-convert-from-systemstring"></a>Örnek: System:: String öğesinden Dönüştür
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Bu örnek, geniş bir karakter (Unicode) [sistemi:: dizeden](/dotnet/api/system.string) yukarıda listelenen diğer dize türlerine nasıl dönüştürüleceğini gösterir.
 

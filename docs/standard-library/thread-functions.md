@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; iş parçacığı &gt; işlevleri'
 title: '&lt;iş parçacığı &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::sleep_until [C++]
 - std::swap [C++]
 - std::yield [C++]
-ms.openlocfilehash: 64a62180243d77f361c243b2a89de56b0a14920e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 37e1f745b66c45f5e3ad6bd4be2a2837042b8433
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845048"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207442"
 ---
 # <a name="ltthreadgt-functions"></a>&lt;iş parçacığı &gt; işlevleri
 
@@ -58,7 +59,7 @@ Bir zaman aralığı belirten [Duration](../standard-library/duration-class.md) 
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi çağıran iş parçacığını en az *Rel_time*tarafından belirtilen zaman için engeller. Bu işlev hiçbir özel durum oluşturmaz.
+İşlevi çağıran iş parçacığını en az *Rel_time* tarafından belirtilen zaman için engeller. Bu işlev hiçbir özel durum oluşturmaz.
 
 ## <a name="sleep_until"></a><a name="sleep_until"></a> sleep_until
 
