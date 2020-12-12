@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: üstbilgi denetimiyle çalışma'
 title: Üstbilgi Denetimiyle Çalışma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - header controls [MFC], working with
 - header controls
 ms.assetid: af3afb5c-bf97-451b-8fee-3adcb8257210
-ms.openlocfilehash: db8f9d40bad116d7873bfd8ea9682c711d44e91f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cccd8b8296e27b0bbab3058d38fbacc068caeb1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172641"
 ---
 # <a name="working-with-a-header-control"></a>Üstbilgi Denetimiyle Çalışma
 
-Üstbilgi denetimi kullanmanın en kolay yolu ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) liste denetimi ile birlikte; bkz [kullanarak CListCtrl](../mfc/using-clistctrl.md) daha sonra bu konuda ailesi. Ayrıca tek başına bir üst bilgi denetimini kullanabilirsiniz. MFC çağrıları `InitCommonControls` sizin için. En önemli görevler şunlardır:
+Üstbilgi denetimini kullanmanın kolay yolu ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) bir liste denetimiyle birlikte bulunur; Bu konu ailesinin ilerleyen kısımlarında bulunan [CListCtrl](../mfc/using-clistctrl.md) ' i kullanma bölümüne bakın. Ayrıca, üst bilgi denetimini de kullanabilirsiniz. MFC `InitCommonControls` sizin için çağrılar. Temel görevler aşağıdaki gibidir:
 
 - [Üstbilgi denetimi oluşturma](../mfc/creating-the-header-control.md)
 
@@ -24,7 +25,7 @@ ms.locfileid: "62399531"
 
 - [Üstbilgi denetimi bildirimlerini işleme](../mfc/processing-header-control-notifications.md)
 
-Üstbilgi denetim nesnesi bir ana görünümünde veya iletişim sınıfta eklendiyse, bu üst yok edildiğinde denetimin yok edilir.
+Üstbilgi denetim nesnesi bir üst görünüme veya iletişim sınıfına katıştırılmışsa, üst öğe yok edildiğinde denetim yok edilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

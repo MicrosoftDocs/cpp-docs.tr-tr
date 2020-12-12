@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: code_seg (__declspec)'
 title: code_seg (__declspec)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - code_seg __declspec keyword
 ms.assetid: ad3c1105-15d3-4e08-b7b9-e4bd9d7b6aa0
-ms.openlocfilehash: 22703e92b1a127378c965ce12bcc4e5475b3e452
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b382e0a758c28ffab297badda7670c1de3b08d32
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180842"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171106"
 ---
 # <a name="code_seg-__declspec"></a>code_seg (__declspec)
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 **Code_seg** bildirim özniteliği, işlev veya sınıf üyesi işlevleri için nesne kodunun depolanacağı. obj dosyasında bir çalıştırılabilir metin segmenti adlandırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 __declspec(code_seg("segname")) declarator
@@ -27,11 +28,11 @@ __declspec(code_seg("segname")) declarator
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__declspec(code_seg(...))` özniteliği, kodu ayrı ayrı disk belleğine alınabilen veya bellekte kilitlenen ayrı adlandırılmış kesimlere dönüştürür. Örneklenmiş şablonların ve derleyicinin ürettiği kodun yerleşimini denetlemek için bu özniteliği kullanabilirsiniz.
+`__declspec(code_seg(...))`Özniteliği, kodun ayrı ayrı disk belleğine alınabilen veya bellekte kilitlenebileceği ayrı adlandırılmış kesimlere yerleştirilmesine izin vermez. Örneklenmiş şablonların ve derleyicinin ürettiği kodun yerleşimini denetlemek için bu özniteliği kullanabilirsiniz.
 
 *Segment* , bir. obj dosyasındaki bir birim olarak belleğe yüklenen verilerin adlandırılmış bir bloğudur. *Metin segmenti* yürütülebilir kod içeren bir kesimdir. Terim *bölümü* genellikle kesimle birbirlerinin yerine kullanılır.
 
-`declarator` tanımlandığında oluşturulan nesne kodu, bir dar dize sabit değeri olan `segname`tarafından belirtilen metin segmentine konur. `segname` adı bir bildirimde kullanılmadan önce bir [section](../preprocessor/section.md) pragma içinde belirtilmelidir. Varsayılan olarak, `code_seg` belirtilmediğinde nesne kodu. Text adlı bir kesime konur. **Code_seg** öznitelik, mevcut [#pragma code_seg](../preprocessor/code-seg.md) yönergesini geçersiz kılar. Bir üye işlevine uygulanan **code_seg** özniteliği, kapsayan sınıfa uygulanan tüm **code_seg** özniteliğini geçersiz kılar.
+Tanımlandığında oluşturulan nesne kodu `declarator` `segname` , bir dar dize sabit değeri olan tarafından belirtilen metin segmentine konur. Adın `segname` bir bildirimde kullanılabilmesi için önce bir [section](../preprocessor/section.md) pragma içinde belirtilmesi gerekmez. Varsayılan olarak, hayır belirtildiğinde `code_seg` nesne kodu. Text adlı bir kesime konur. **Code_seg** öznitelik, mevcut [#pragma code_seg](../preprocessor/code-seg.md) yönergesini geçersiz kılar. Bir üye işlevine uygulanan **code_seg** özniteliği, kapsayan sınıfa uygulanan tüm **code_seg** özniteliğini geçersiz kılar.
 
 Bir varlığın **code_seg** özniteliği varsa, aynı varlığa ait tüm bildirimler ve tanımlar aynı **code_seg** özniteliklerine sahip olmalıdır. Bir temel sınıfta **code_seg** özniteliği varsa, türetilen sınıfların aynı özniteliğe sahip olması gerekir.
 
@@ -39,7 +40,7 @@ Bir ad alanı kapsam işlevine veya bir üye işlevine **code_seg** özniteliği
 
 Bir şablon sınıfı veya şablon işlevine bir **code_seg** özniteliği uygulandığında, şablonun tüm örtük uzmanlık alanı belirtilen kesime konur. Açık veya kısmi uzmanlık, **code_seg** özniteliğini birincil şablondan almıyor. Özelleştirmede aynı veya farklı bir **code_seg** özniteliği belirtebilirsiniz. Bir **code_seg** özniteliği açık şablon örneklemesine uygulanamaz.
 
-Varsayılan olarak, derleyicinin ürettiği özel üye işlevi gibi bir kod bir .text segmente yerleştirilir. `#pragma code_seg` yönergesi bu varsayılanı geçersiz kılmaz. Derleyicinin ürettiği kodun nereye yerleştirileceğini denetlemek için sınıf, sınıf şablonu veya işlev şablonundaki **code_seg** özniteliğini kullanın.
+Varsayılan olarak, derleyicinin ürettiği özel üye işlevi gibi bir kod bir .text segmente yerleştirilir. `#pragma code_seg`Yönerge bu varsayılanı geçersiz kılmaz. Derleyicinin ürettiği kodun nereye yerleştirileceğini denetlemek için sınıf, sınıf şablonu veya işlev şablonundaki **code_seg** özniteliğini kullanın.
 
 Lambdalar, kapsayan kapsamından **code_seg** öznitelikleri devralınır. Lambda için bir segment belirtmek için, parametre bildirimi yan tümcesinden sonra ve herhangi bir kesilebilir veya özel durum belirtimi, tüm sondaki dönüş türü belirtimi ve lambda gövdesinden önce bir **code_seg** özniteliği uygulayın. Daha fazla bilgi için bkz. [lambda Ifadesi sözdizimi](../cpp/lambda-expression-syntax.md). Bu örnek, PagedMem adlı bir segmentte bir lambda tanımlar:
 
@@ -108,4 +109,4 @@ int main()
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [__declspec](../cpp/declspec.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

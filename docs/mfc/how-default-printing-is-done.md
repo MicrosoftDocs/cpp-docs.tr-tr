@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: varsayılan yazdırma işlemi nasıl yapılır?'
 title: Varsayılan Yazdırmayı Yapma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - printing [MFC], default
 - defaults, printing
 ms.assetid: 0f698459-0fc9-4d43-97da-29cf0f65daa2
-ms.openlocfilehash: 9ca79ec69037b960e7c455f6ab8abd8833b9a8a0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cd2be6cea4e038775f2134dfde434580839d0280
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172875"
 ---
 # <a name="how-default-printing-is-done"></a>Varsayılan Yazdırmayı Yapma
 
 Bu makalede, Windows 'da MFC çerçevesi açısından varsayılan yazdırma süreci açıklanmaktadır.
 
-MFC uygulamalarında, görünüm sınıfının `OnDraw` tüm çizim kodunu içeren adlı bir üye işlevi vardır. `OnDraw`bir [CDC](reference/cdc-class.md) nesnesine parametre olarak bir işaretçi alır. Bu `CDC` nesne tarafından üretilen görüntünün alınacağı cihaz bağlamını temsil eder `OnDraw` . Belgeyi görüntüleyen pencere [WM_PAINT](/windows/win32/gdi/wm-paint) bir ileti aldığında, çerçeve `OnDraw` Bu aygıtı ( [CPaintDC](reference/cpaintdc-class.md) nesnesi) için bir cihaz bağlamı çağırır ve geçirir. Buna uygun olarak, `OnDraw` çıkış ekrana gider.
+MFC uygulamalarında, görünüm sınıfının `OnDraw` tüm çizim kodunu içeren adlı bir üye işlevi vardır. `OnDraw` bir [CDC](reference/cdc-class.md) nesnesine parametre olarak bir işaretçi alır. Bu `CDC` nesne tarafından üretilen görüntünün alınacağı cihaz bağlamını temsil eder `OnDraw` . Belgeyi görüntüleyen pencere [WM_PAINT](/windows/win32/gdi/wm-paint) bir ileti aldığında, çerçeve `OnDraw` Bu aygıtı ( [CPaintDC](reference/cpaintdc-class.md) nesnesi) için bir cihaz bağlamı çağırır ve geçirir. Buna uygun olarak, `OnDraw` çıkış ekrana gider.
 
 Windows için programlama bölümünde, çıktıyı yazıcıya göndermek ekrana çıktı göndermeye çok benzer. Bunun nedeni, Windows grafik cihaz arabirimi (GDI) donanımdan bağımsızdır. Ekran görüntüsü için aynı GDI işlevlerini veya yalnızca uygun cihaz bağlamını kullanarak yazdırma için kullanabilirsiniz. `CDC`Alan nesnesi, `OnDraw` yazıcıyı temsil ediyorsa, `OnDraw` Çıkış yazıcıya gider.
 

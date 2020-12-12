@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bsearch_s'
 title: bsearch_s
 ms.date: 4/2/2020
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-ms.openlocfilehash: 348638b2a6b5a97491d9929b22a983b43794da9a
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: a38868d9093a4da4338fb0fddb99a6a0ed53ef5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171796"
 ---
 # <a name="bsearch_s"></a>bsearch_s
 
 Sıralanmış bir dizide ikili bir arama gerçekleştirir. Bu işlev, [CRT 'Deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [bsearch](bsearch.md) 'ün bir sürümüdür.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 void *bsearch_s(
@@ -67,16 +68,16 @@ Arama verilerinin tabanına yönelik işaretçi.
 Öğelerin genişliği.
 
 *Karşılaştır*\
-İki öğeyi karşılaştıran geri çağırma işlevi. İlk bağımsız değişken *bağlam* işaretçisidir. İkinci bağımsız değişken, arama için *anahtarın* bir işaretçisidir. Üçüncü bağımsız değişken, *anahtar*ile Karşılaştırılacak dizi öğesine yönelik bir işaretçidir.
+İki öğeyi karşılaştıran geri çağırma işlevi. İlk bağımsız değişken *bağlam* işaretçisidir. İkinci bağımsız değişken, arama için *anahtarın* bir işaretçisidir. Üçüncü bağımsız değişken, *anahtar* ile Karşılaştırılacak dizi öğesine yönelik bir işaretçidir.
 
 *bağlam*\
 Karşılaştırma işlevinde erişilebilen nesneye yönelik bir işaretçi.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**bsearch_s** , *temel*tarafından işaret edilen dizide *anahtar* oluşumuna yönelik bir işaretçi döndürür. *Anahtar* bulunamazsa, işlev **null**döndürür. Dizi artan sıralama düzeninde değilse veya aynı anahtarlara sahip yinelenen kayıtlar içeriyorsa, sonuç tahmin edilemez.
+**bsearch_s** , *temel* tarafından işaret edilen dizide *anahtar* oluşumuna yönelik bir işaretçi döndürür. *Anahtar* bulunamazsa, işlev **null** döndürür. Dizi artan sıralama düzeninde değilse veya aynı anahtarlara sahip yinelenen kayıtlar içeriyorsa, sonuç tahmin edilemez.
 
-İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null** değerini döndürür. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### <a name="error-conditions"></a>Hata koşulları
 
@@ -91,7 +92,7 @@ Karşılaştırma işlevinde erişilebilen nesneye yönelik bir işaretçi.
 
 **Bsearch_s** işlevi, her bir *Genişlik* baytından oluşan bir dizi *sayı* öğe için bir ikili arama gerçekleştirir. *Taban* değeri, aranacak dizinin temelini gösteren bir işaretçidir ve *anahtar* , aranan değerdir. *Compare* parametresi, istenen anahtarı bir dizi öğesiyle karşılaştıran Kullanıcı tarafından sağlanan yordamın bir işaretçisidir ve ilişkilerini belirten aşağıdaki değerlerden birini döndürür:
 
-|*Compare* yordamının döndürdüğü değer|Description|
+|*Compare* yordamının döndürdüğü değer|Açıklama|
 |-----------------------------------------|-----------------|
 |\< 0|Anahtar, Array öğesinden küçüktür.|
 |0|Anahtar, dizi öğesine eşittir.|

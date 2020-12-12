@@ -1,5 +1,6 @@
 ---
-title: CMFCRibbonGallery Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCRibbonGallery sınıfı'
+title: CMFCRibbonGallery sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonGallery
@@ -78,19 +79,19 @@ helpviewer_keywords:
 - CMFCRibbonGallery [MFC], SetPaletteID
 - CMFCRibbonGallery [MFC], OnDrawPaletteIcon
 ms.assetid: 9734c9c9-981c-4b3f-8c59-264fd41811b4
-ms.openlocfilehash: f1ef68cba0012ad5b5d0eb6d3322acc6a1c6555c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a7307dc0561f457640869631c88c4a10cd00378b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375148"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172771"
 ---
-# <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery Sınıfı
+# <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery sınıfı
 
-Office 2007 tarzı şerit galerilerini uygular.
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Office 2007 stili Şerit galerileri uygular.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CMFCRibbonGallery : public CMFCRibbonButton
@@ -100,77 +101,77 @@ class CMFCRibbonGallery : public CMFCRibbonButton
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonGaleri::CMFCRibbonGallery](#cmfcribbongallery)|Bir `CMFCRibbonGallery` nesne yi inşa eder ve başharfe ait hale raz.|
+|[CMFCRibbonGallery:: Cmfcribbongalerisi](#cmfcribbongallery)|Bir nesnesi oluşturur ve başlatır `CMFCRibbonGallery` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonGaleri::AddGroup](#addgroup)|Galeriye yeni bir grup ekler.|
-|[CMFCRibbonGallery::AddSubItem](#addsubitem)|Açılan menüye yeni bir menü öğesi ekler.|
-|[CMFCRibbonGallery::Açık](#clear)|Galeriiçeriğini temizler.|
-|[CMFCRibbonGallery::EnableMenuResize](#enablemenuresize)|Menü panelinin yeniden boyutlandırılmasını sağlar veya devre dışı kılabilir.|
-|[CMFCRibbonGallery::EnableMenuSideBar](#enablemenusidebar)|Açılır menü menüsünün solundaki yan çubuğu etkinleştirer veya devre dışı bırakmaz.|
-|[CMFCRibbonGallery::GetCompactSize](#getcompactsize)|[(CMFCRibbonButton geçersiz kılar::GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).)|
-|[CMFCRibbonGallery::GetDroppedDown](#getdroppeddown)|[(CMFCRibbonBaseElement geçersiz kılar::GetDroppedDown](../../mfc/reference/cmfcribbonbaseelement-class.md#getdroppeddown).)|
-|[CMFCRibbonGallery::GetGroupName](#getgroupname)|Belirtilen dizinde bulunan grubun adını verir.|
-|[CMFCRibbonGallery::GetGroupOffset](#getgroupoffset)||
-|[CMFCRibbonGallery::GetIconsInRow](#geticonsinrow)|Şerit galerisinin bir satırdaki öğe sayısını döndürür.|
-|[CMFCRibbonGallery::GetItemToolTip](#getitemtooltip)|Galerideki bir öğeyle ilişkili araç ipucu metnini döndürür.|
-|[CMFCRibbonGaleri::GetLastSelectedItem](#getlastselecteditem)|Kullanıcının seçtiği galerideki son öğenin dizinini döndürür.|
-|[CMFCRibbonGallery::GetPaletteID](#getpaletteid)|Geçerli galerinin komut kimliğini verir.|
-|[CMFCRibbonGallery::GetRegularSize](#getregularsize)|[(CMFCRibbonButton geçersiz kılar::GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).)|
-|[CMFCRibbonGallery::GetSelectedItem](#getselecteditem)||
-|[CMFCRibbonGaleri::HasMenu](#hasmenu)|[(CMFCRibbonButton geçersiz kılar::HasMenu](../../mfc/reference/cmfcribbonbutton-class.md#hasmenu).)|
-|[CMFCRibbonGallery::IsButtonMode](#isbuttonmode)|Galerinin galeri düğmesinde bulunup bulunmayacağını belirtir.|
-|[CMFCRibbonGallery::IsMenuResizeEtkin](#ismenuresizeenabled)|Menü yeniden boyutlandırmanın etkin mi yoksa devre dışı mı olduğunu belirtir.|
-|[CMFCRibbonGallery::IsMenuResizeVertical](#ismenuresizevertical)||
-|[CMFCRibbonGaleri::IsMenuSideBar](#ismenusidebar)|Yan çubuğun etkin mi yoksa devre dışı mı olduğunu belirtir.|
-|[CMFCRibbonGallery::OnAfterChangeRect](#onafterchangerect)|(Geçersiz `CMFCRibbonButton::OnAfterChangeRect`kılar .)|
-|[CMFCRibbonGallery::OnDraw](#ondraw)|[(CMFCRibbonButton geçersiz kılar::OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw).)|
-|[CMFCRibbonGallery::Onenable](#onenable)|(Geçersiz `CMFCRibbonBaseElement::OnEnable`kılar .)|
-|[CMFCRibbonGallery::OnRTLChanged](#onrtlchanged)|[(CMFCRibbonBaseElement geçersiz kılar::OnRTLChanged](../../mfc/reference/cmfcribbonbaseelement-class.md#onrtlchanged).)|
-|[CMFCRibbonGallery::RedrawIcons](#redrawicons)|Galeriyi yeniden çizer.|
-|[CMFCRibbonGallery::RemoveItemToolTips](#removeitemtooltips)|Araç ipuçlarını galerideki tüm öğelerden kaldırır.|
-|[CMFCRibbonGallery::SelectItem](#selectitem)||
-|[CMFCRibbonGaleri::SetACCData](#setaccdata)|[(CMFCRibbonButton geçersiz kılar::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|
-|[CMFCRibbonGallery::SetButtonMode](#setbuttonmode)|Şerit galerisinin açılır düğme olarak mı yoksa doğrudan şerit üzerinde bir palet olarak mı görüntülenmeyeceğini belirtir.|
-|[CMFCRibbonGallery::SetGroupName](#setgroupname)|Bir grubun adını ayarlar.|
-|[CMFCRibbonGallery::SetIconsInRow](#seticonsinrow)|Galerideki satır başına öğe sayısını tanımlar.|
-|[CMFCRibbonGallery::SetItemToolTip](#setitemtooltip)|Galerideki bir öğenin araç ipucu metnini ayarlar.|
-|[CMFCRibbonGallery::SetPalette](#setpalette)|Şerit galerisine bir palet bağlar.|
-|[CMFCRibbonGaleri::SetPaletteID](#setpaletteid)|Galeri öğesi seçildiğinde WM_COMMAND iletisinde gönderilen komut kimliğini tanımlar.|
+|[CMFCRibbonGallery:: AddGroup](#addgroup)|Galeriye yeni bir grup ekler.|
+|[CMFCRibbonGallery:: Addsubıtem](#addsubitem)|Açılan menüye yeni bir menü öğesi ekler.|
+|[CMFCRibbonGallery:: Clear](#clear)|Galerinin içeriğini temizler.|
+|[CMFCRibbonGallery:: EnableMenuResize](#enablemenuresize)|Menü panelinin yeniden boyutlandırılmasını etkinleştirilir veya devre dışı bırakır.|
+|[CMFCRibbonGallery:: Enablemenusıdebar](#enablemenusidebar)|Açılan menünün sol tarafında bulunan yan çubuğu sağlar veya devre dışı bırakır.|
+|[CMFCRibbonGallery:: GetCompactSize](#getcompactsize)|( [CMFCRibbonButton:: GetCompactSize](../../mfc/reference/cmfcribbonbutton-class.md#getcompactsize).) öğesini geçersiz kılar|
+|[CMFCRibbonGallery:: Getdroppedaşağı](#getdroppeddown)|( [CMFCRibbonBaseElement:: Getdroppedaşağı](../../mfc/reference/cmfcribbonbaseelement-class.md#getdroppeddown)geçersiz kılar.)|
+|[CMFCRibbonGallery:: GetGroupName](#getgroupname)|Belirtilen dizinde bulunan grubun adını döndürür.|
+|[CMFCRibbonGallery:: Getgroupsapmayı](#getgroupoffset)||
+|[CMFCRibbonGallery:: Getıconsınrow](#geticonsinrow)|Şerit galerisinin bir satırındaki öğe sayısını döndürür.|
+|[CMFCRibbonGallery:: Getıtemtooltip](#getitemtooltip)|Galerideki bir öğeyle ilişkili araç ipucu metnini döndürür.|
+|[CMFCRibbonGallery:: Getlastselectedidıtem](#getlastselecteditem)|Galerideki kullanıcının seçtiği son öğenin dizinini döndürür.|
+|[CMFCRibbonGallery:: Getpaletteıd](#getpaletteid)|Geçerli galerinin komut KIMLIĞINI döndürür.|
+|[CMFCRibbonGallery:: GetRegularSize](#getregularsize)|( [CMFCRibbonButton:: GetRegularSize](../../mfc/reference/cmfcribbonbutton-class.md#getregularsize).) öğesini geçersiz kılar|
+|[CMFCRibbonGallery:: Getselectedidıtem](#getselecteditem)||
+|[CMFCRibbonGallery:: HasMenu](#hasmenu)|( [CMFCRibbonButton:: HasMenu](../../mfc/reference/cmfcribbonbutton-class.md#hasmenu)geçersiz kılar.)|
+|[CMFCRibbonGallery:: ısbuttonmode](#isbuttonmode)|Galerinin bir galeri düğmesine dahil edilip edilmeyeceğini belirtir.|
+|[CMFCRibbonGallery:: ısmenuresizeenabled](#ismenuresizeenabled)|Menü yeniden boyutlandırmanın etkin veya devre dışı olduğunu belirtir.|
+|[CMFCRibbonGallery:: ısmenuresizevertical](#ismenuresizevertical)||
+|[CMFCRibbonGallery:: IsMenuSideBar](#ismenusidebar)|Yan çubuğun etkin veya devre dışı olduğunu belirtir.|
+|[CMFCRibbonGallery:: OnAfterChangeRect](#onafterchangerect)|(Geçersiz kılmalar `CMFCRibbonButton::OnAfterChangeRect` .)|
+|[CMFCRibbonGallery:: OnDraw](#ondraw)|( [CMFCRibbonButton:: OnDraw](../../mfc/reference/cmfcribbonbutton-class.md#ondraw)geçersiz kılar.)|
+|[CMFCRibbonGallery:: OnEnable](#onenable)|(Geçersiz kılmalar `CMFCRibbonBaseElement::OnEnable` .)|
+|[CMFCRibbonGallery:: OnRTLChanged](#onrtlchanged)|( [CMFCRibbonBaseElement:: OnRTLChanged](../../mfc/reference/cmfcribbonbaseelement-class.md#onrtlchanged)geçersiz kılar.)|
+|[CMFCRibbonGallery:: Redrawsimgelerinden](#redrawicons)|Galeriyi yeniden çizer.|
+|[CMFCRibbonGallery:: Removeıtemtooltip](#removeitemtooltips)|Araç ipuçlarını galerideki tüm öğelerden kaldırır.|
+|[CMFCRibbonGallery:: SelectItem](#selectitem)||
+|[CMFCRibbonGallery:: SetACCData](#setaccdata)|( [CMFCRibbonButton:: SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata)geçersiz kılar.)|
+|[CMFCRibbonGallery:: SetButtonMode](#setbuttonmode)|Şerit galerinin açılır düğme olarak mı yoksa doğrudan şeritte bir palet olarak mı gösterileceğini belirtir.|
+|[CMFCRibbonGallery:: SetGroupName](#setgroupname)|Bir grubun adını ayarlar.|
+|[CMFCRibbonGallery:: Setıconsınrow](#seticonsinrow)|Galerideki satır başına öğe sayısını tanımlar.|
+|[CMFCRibbonGallery:: Setıtemtooltip](#setitemtooltip)|Galerideki bir öğe için araç ipucu metnini ayarlar.|
+|[CMFCRibbonGallery:: SetPalette](#setpalette)|Şerit galerisine bir palet iliştirir.|
+|[CMFCRibbonGallery:: Setpaletteıd](#setpaletteid)|Bir galeri öğesi seçildiğinde WM_COMMAND iletisinde gönderilen komut KIMLIĞINI tanımlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonGallery::OnDrawPaletteIcon](#ondrawpaletteicon)|Bir galeri simgesi çizildiğinde çerçeve tarafından çağrılır.|
+|[CMFCRibbonGallery:: Ondrawpaletteıcon](#ondrawpaletteicon)|Bir Galeri simgesi çizildiğinde Framework tarafından çağırılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Galeri düğmesi, kullanıcı açtığında galeriyi görüntülemesi dışında normal bir menü düğmesi gibi olur. Galeride bir öğe seçtiğinizde, çerçeve düğmenin komut kimliğiyle birlikte WM_COMMAND iletigönderir. İletiyi işlerken, galeriden hangi öğenin seçildiğini belirlemek için [CMFCRibbonGallery::GetLastSelectedItem'i](#getlastselecteditem) aramalısınız.
+Bir galeri düğmesi, bir kullanıcı tarafından açıldığında bir galeri göstermesi dışında normal menü düğmesi gibi davranır. Galerideki bir öğeyi seçtiğinizde, çerçeve WM_COMMAND iletiyi düğmenin komut KIMLIĞIYLE birlikte gönderir. İletiyi işlerken, Galeriden hangi öğenin seçili olduğunu belirleyebilmek için [CMFCRibbonGallery:: Getlastselectedidıtem](#getlastselecteditem) ' i çağırmanız gerekir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `CMFCRibbonGallery` `CMFCRibbonGallery` nesneyi yapılandırmak için sınıfta çeşitli yöntemlerin nasıl kullanılacağını gösterir. Örnek, galeride satır başına öğe sayısının nasıl belirtilen, menü panelinin yeniden boyutlandırılmasını etkinleştirmenin, açılan menü menüsünün solundaki yan çubuğu nasıl etkinleştireceklerini ve şerit galerisini doğrudan şerit çubuğunda bir palet olarak nasıl görüntülenizi gösterir. Bu kod snippet [Çekme İstemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, `CMFCRibbonGallery` bir nesneyi yapılandırmak için sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir `CMFCRibbonGallery` . Örnek, galerideki her satır için öğe sayısını belirtme, menü panelinin yeniden boyutlandırılmasını etkinleştirme, açılan menünün sol tarafındaki yan çubuğu etkinleştirme ve şerit galerisini doğrudan Şerit çubuğunda bir palet olarak görüntüleme. Bu kod parçacığı, [Çizim istemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_DrawClient#6](../../mfc/reference/codesnippet/cpp/cmfcribbongallery-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)\
-•&nbsp;[CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CMFCRibbonGaleri](../../mfc/reference/cmfcribbongallery-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└ &nbsp; [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [Cmfcribbondüğmesi](../../mfc/reference/cmfcribbonbutton-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [Cmfcribbongalerisi](../../mfc/reference/cmfcribbongallery-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxRibbonPaletteGallery.h
+**Üstbilgi:** afxribbonpalettegallery. h
 
-## <a name="cmfcribbongalleryaddgroup"></a><a name="addgroup"></a>CMFCRibbonGaleri::AddGroup
+## <a name="cmfcribbongalleryaddgroup"></a><a name="addgroup"></a> CMFCRibbonGallery:: AddGroup
 
 Galeriye yeni bir grup ekler.
 
@@ -192,25 +193,25 @@ void AddGroup(
 ### <a name="parameters"></a>Parametreler
 
 *lpszGroupName*<br/>
-[içinde] Grubun adını belirtir.
+'ndaki Grubun adını belirtir.
 
-*uiImagesPaletteResID*<br/>
-[içinde] Grubun resimlerini içeren resim listesinin kaynak kimliğini belirtir.
+*Uııma, Paletteresid*<br/>
+'ndaki Grubun görüntülerini içeren görüntü listesinin kaynak KIMLIĞINI belirtir.
 
-*cxPaletteImage*<br/>
-[içinde] Görüntünün piksellerinde genişliği belirtir.
+*Cxpaletteımage*<br/>
+'ndaki Bir resmin piksel cinsinden genişliğini belirtir.
 
-*imagesGroup*<br/>
-[içinde] Grup görüntüleri içeren resim listesine başvuru.
+*ımabir Grup*<br/>
+'ndaki Grup görüntülerini içeren görüntü listesine bir başvuru.
 
 *nIconsNum*<br/>
-[içinde] Gruptaki simgelerin sayısını belirtir. Bu parametre yalnızca özel (çekilen sahip) gruplar için belirtilmelidir.
+'ndaki Gruptaki simgelerin sayısını belirtir. Bu parametre yalnızca özel (sahiplik çizimli) gruplar için belirtilmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi çağırarak şerit galerisindeki öğeleri birden çok gruba bölebilirsiniz. Her grubun bir başlığı olabilir.
+Bu yöntemi çağırarak, şerit galerisindeki öğeleri birden çok gruba bölebilirsiniz. Her grubun bir resim yazısı olabilir.
 
-## <a name="cmfcribbongalleryaddsubitem"></a><a name="addsubitem"></a>CMFCRibbonGallery::AddSubItem
+## <a name="cmfcribbongalleryaddsubitem"></a><a name="addsubitem"></a> CMFCRibbonGallery:: Addsubıtem
 
 Açılan menüye yeni bir menü öğesi ekler.
 
@@ -223,27 +224,27 @@ void AddSubItem(
 
 ### <a name="parameters"></a>Parametreler
 
-*pSubItem*<br/>
-[içinde] Öğenin menüye ekleyecek bir işaretçisi.
+*Psubıtem*<br/>
+'ndaki Menüye eklenecek öğeye yönelik bir işaretçi.
 
-*Nındex*<br/>
-[içinde] Öğenin eklendiği konumun sıfır tabanlı dizinini belirtir.
+*nDizin*<br/>
+'ndaki Öğenin ekleneceği konumun sıfır tabanlı dizinini belirtir.
 
 *bOnTop*<br/>
-[içinde] Öğenin şerit galerisinden önce eklenmesi gerektiğini belirtmek için TRUE; aksi takdirde, YANLIŞ.
+'ndaki Öğenin şerit galerisinden önce eklenmesi gerektiğini belirtmek için TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemi arayarak açılır menü öğeleriile pop-up galerilerini birleştirebilirsiniz. Menü öğeleri galeriden önce veya sonra yerleştirilebilir.
+Bu yöntemi çağırarak açılan menü öğeleriyle açılır galerileri birleştirebilirsiniz. Menü öğeleri Galeriden önce veya sonra yerleştirilebilir.
 
-Öğeyi galeriden önce eklemek için *bOnTop'u* TRUE olarak ayarlayın. Öğeyi galerinin altına eklemek için *bOnTop'u* FALSE olarak ayarlayın.
+Öğeyi galerinin önüne eklemek için *bOnTop* değerini true olarak ayarlayın. Galerinin altına öğe eklemek için *bOnTop* 'ı false olarak ayarlayın.
 
 > [!NOTE]
-> Parametre *nIndex* ekleme dizini hem galerinin üst kısmında hem de galeri nin alt kısmında belirtir. Örneğin, galeriden önce bir öğe konumu eklemeniz gerekiyorsa, *nIndex'i* 1 ve *bOnTop* to TRUE'yu ayarlayın. Benzer şekilde, galerinin altına bir öğe bir konum eklemeniz gerekiyorsa, *nIndex'i* 1'e ve *bOnTop'u* FALSE'a ayarlayın.
+> *NIndex* parametresi, hem galerinin hem de galerinin en altında bulunan ekleme dizinini belirtir. Örneğin, Galeriden önce bir öğe bir konum eklemeniz gerekiyorsa, *nIndex* ' i ve *BONTOP* ' ı doğru olarak ayarlayın. Benzer şekilde, galerinin altına bir öğe eklemeniz gerekiyorsa, *nIndex* ' i 1 ve *BONTOP* ' ı false olarak ayarlayın.
 
-## <a name="cmfcribbongalleryclear"></a><a name="clear"></a>CMFCRibbonGallery::Açık
+## <a name="cmfcribbongalleryclear"></a><a name="clear"></a> CMFCRibbonGallery:: Clear
 
-Galeriiçeriğini temizler.
+Galerinin içeriğini temizler.
 
 ```cpp
 virtual void Clear();
@@ -251,11 +252,11 @@ virtual void Clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit galerisindeki tüm içeriği kaldırmak için bu yöntemi arayın. Bu, şerit galerisine yeni bir şerit galerisi veya grup kümesi eklemeden önce yapılmalıdır.
+Şerit galerisindeki tüm içeriği kaldırmak için bu yöntemi çağırın. Bu, şerit galerisine yeni bir şerit Galerisi veya grup kümesi iliştirmadan önce yapılmalıdır.
 
-## <a name="cmfcribbongallerycmfcribbongallery"></a><a name="cmfcribbongallery"></a>CMFCRibbonGaleri::CMFCRibbonGallery
+## <a name="cmfcribbongallerycmfcribbongallery"></a><a name="cmfcribbongallery"></a> CMFCRibbonGallery:: Cmfcribbongalerisi
 
-[CMFCRibbonGallery](../../mfc/reference/cmfcribbongallery-class.md) nesnesi oluşturuyor ve başharflerini.
+Bir [CMFCRibbonGallery](../../mfc/reference/cmfcribbongallery-class.md) nesnesi oluşturur ve başlatır.
 
 ```cpp
 CMFCRibbonGallery (
@@ -285,41 +286,41 @@ CMFCRibbonGallery (
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-Bir kullanıcı düğmeyi tıklattığında yürütülecek komutun komut kimliğini belirtir.
+*NID*<br/>
+Kullanıcı düğmeye tıkladığında yürütülecek komutun komut KIMLIĞINI belirtir.
 
-*lpszMetin*<br/>
-Düğmede görünecek metni belirtir.
+*lpszText*<br/>
+Düğmede görüntülenecek metni belirtir.
 
-*nSmallImageIndex*<br/>
-Düğmede görünecek küçük görüntünün sıfır tabanlı dizini.
+*Nsmallımageındex*<br/>
+Düğme üzerinde görünecek küçük görüntünün sıfır tabanlı dizini.
 
-*nLargeImageIndex*<br/>
-Düğmede görünecek büyük görüntünün sıfır tabanlı dizini.
+*Nlargeımageındex*<br/>
+Düğme üzerinde görünecek büyük görüntünün sıfır tabanlı dizini.
 
-*imagesPalette*<br/>
+*Imate paleti*<br/>
 Galeride görünecek görüntüleri içeren [CMFCToolBarImages](../../mfc/reference/cmfctoolbarimages-class.md) nesnesine bir başvuru.
 
-*uiImagesPaletteResID*<br/>
-Galeride görüntülenecek resim listesinin kaynak kimliği.
+*Uııma, Paletteresid*<br/>
+Galeride görüntülenecek görüntülerin listesinin kaynak KIMLIĞI.
 
-*cxPaletteImage*<br/>
-Galerideki görüntünün genişliğini, piksel olarak belirtir.
+*Cxpaletteımage*<br/>
+Galerideki görüntünün genişliğini piksel cinsinden belirtir.
 
-*boyutIcon*<br/>
-Galeri görüntüsünün boyutunu piksel olarak belirtir.
+*Sizeıcon*<br/>
+Galeri resminin boyutunu piksel cinsinden belirtir.
 
 *nIconsNum*<br/>
 Galerideki simgelerin sayısını belirtir.
 
 *bDefaultButtonStyle*<br/>
-Varsayılan veya sahip tarafından çizilen düğme stilini kullanıp kullanmayacağını belirtir.
+Varsayılan mi yoksa sahip tarafından çizilmiş düğme stilinin mi kullanılacağını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryenablemenuresize"></a><a name="enablemenuresize"></a>CMFCRibbonGallery::EnableMenuResize
+## <a name="cmfcribbongalleryenablemenuresize"></a><a name="enablemenuresize"></a> CMFCRibbonGallery:: EnableMenuResize
 
-Menü panelinin yeniden boyutlandırılmasını sağlar veya devre dışı kılabilir.
+Menü panelinin yeniden boyutlandırılmasını etkinleştirilir veya devre dışı bırakır.
 
 ```cpp
 void EnableMenuResize(
@@ -329,19 +330,19 @@ void EnableMenuResize(
 
 ### <a name="parameters"></a>Parametreler
 
-*bEtkinleştir*<br/>
-[içinde] Menüyü yeniden boyutlandırmayı etkinleştirmek için TRUE; aksi takdirde, YANLIŞ.
+*bEnable*<br/>
+'ndaki Menüyü yeniden boyutlandırmayı etkinleştirmek için TRUE; Aksi takdirde, FALSE.
 
-*bVertcalSadece*<br/>
-[içinde] Galerinin yalnızca dikey olarak yeniden boyutlandırılabilen bir şekilde belirtilmesi için TRUE; Galerinin hem dikey hem de yatay olarak yeniden boyutlandırılabilen bir şekilde belirtilmesi için FALSE.
+*bVertcalOnly*<br/>
+'ndaki Galerinin yalnızca dikey olarak yeniden boyutlandırılabileceğini belirtmek için TRUE; Galerinin hem dikey hem de yatay olarak yeniden boyutlandırılabileceğini belirtmek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit galerisini yeniden boyutlandırmayı etkinleştirmek veya devre dışı kalım sağlamak için bu yöntemi kullanın. Yeniden boyutlandırma etkinleştirildiğinde, şerit galerisi, kullanıcının yeniden boyutlandırmak için kullanabileceği bir kavrayıcı görüntüler.
+Şerit galerisini yeniden boyutlandırmayı etkinleştirmek veya devre dışı bırakmak için bu yöntemi kullanın. Yeniden boyutlandırma etkin olduğunda, şerit Galerisi bir kullanıcının onu yeniden boyutlandırmak için kullanabileceği bir kavrayıcı görüntüler.
 
-## <a name="cmfcribbongalleryenablemenusidebar"></a><a name="enablemenusidebar"></a>CMFCRibbonGallery::EnableMenuSideBar
+## <a name="cmfcribbongalleryenablemenusidebar"></a><a name="enablemenusidebar"></a> CMFCRibbonGallery:: Enablemenusıdebar
 
-Açılır menü menüsünün solundaki yan çubuğu etkinleştirer veya devre dışı bırakmaz.
+Açılan menünün sol tarafında bulunan yan çubuğu sağlar veya devre dışı bırakır.
 
 ```cpp
 void EnablMenuSideBar(BOOL bEnable=TRUE);
@@ -349,14 +350,14 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEtkinleştir*<br/>
-[içinde] Yan çubuğun etkin olduğunu belirtmek için TRUE; aksi takdirde, YANLIŞ.
+*bEnable*<br/>
+'ndaki Yan çubuğun etkin olduğunu belirtmek için TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menünün sol tarafındaki Office XP tarzı yan çubuğu etkinleştirmek veya devre dışı ksaymak için bu yöntemi arayın.
+Menünün sol tarafındaki Office XP stili kenar çubuğunu etkinleştirmek veya devre dışı bırakmak için bu yöntemi çağırın.
 
-## <a name="cmfcribbongallerygetcompactsize"></a><a name="getcompactsize"></a>CMFCRibbonGallery::GetCompactSize
+## <a name="cmfcribbongallerygetcompactsize"></a><a name="getcompactsize"></a> CMFCRibbonGallery:: GetCompactSize
 
 ```cpp
 virtual CSize GetCompactSize(CDC* pDC);
@@ -364,13 +365,13 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
+'ndaki *PDC*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygetdroppeddown"></a><a name="getdroppeddown"></a>CMFCRibbonGallery::GetDroppedDown
+## <a name="cmfcribbongallerygetdroppeddown"></a><a name="getdroppeddown"></a> CMFCRibbonGallery:: Getdroppedaşağı
 
 ```cpp
 virtual CMFCRibbonBaseElement* GetDroppedDown();
@@ -380,9 +381,9 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygetgroupname"></a><a name="getgroupname"></a>CMFCRibbonGallery::GetGroupName
+## <a name="cmfcribbongallerygetgroupname"></a><a name="getgroupname"></a> CMFCRibbonGallery:: GetGroupName
 
-Belirtilen dizinde bulunan grubun adını verir.
+Belirtilen dizinde bulunan grubun adını döndürür.
 
 ```cpp
 LPCTSTR GetGroupName(int nGroupIndex) const;
@@ -390,16 +391,16 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nGroupIndex*<br/>
-[içinde] Adını almak istediğiniz grup için sıfır tabanlı dizini belirtir.
+*Ngroupındex*<br/>
+'ndaki Adına almak istediğiniz grubun sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen dizinde bulunan grubun adı. Geçersiz bir dizin geçmek başarısız bir iddiayla sonuçlanır.
+Belirtilen dizinde bulunan grubun adı. Geçersiz bir dizin geçirmek, başarısız bir onaylama işlemi oluşmasına neden olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygetgroupoffset"></a><a name="getgroupoffset"></a>CMFCRibbonGallery::GetGroupOffset
+## <a name="cmfcribbongallerygetgroupoffset"></a><a name="getgroupoffset"></a> CMFCRibbonGallery:: Getgroupsapmayı
 
 ```cpp
 virtual int GetGroupOffset() const;
@@ -409,9 +410,9 @@ virtual int GetGroupOffset() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygeticonsinrow"></a><a name="geticonsinrow"></a>CMFCRibbonGallery::GetIconsInRow
+## <a name="cmfcribbongallerygeticonsinrow"></a><a name="geticonsinrow"></a> CMFCRibbonGallery:: Getıconsınrow
 
-Şerit galerisinin bir satırdaki öğe sayısını döndürür.
+Şerit galerisinin bir satırındaki öğe sayısını döndürür.
 
 ```cpp
 int GetIconsInRow() const;
@@ -419,11 +420,11 @@ int GetIconsInRow() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Satırdaki öğe sayısı.
+Bir satırdaki öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygetitemtooltip"></a><a name="getitemtooltip"></a>CMFCRibbonGallery::GetItemToolTip
+## <a name="cmfcribbongallerygetitemtooltip"></a><a name="getitemtooltip"></a> CMFCRibbonGallery:: Getıtemtooltip
 
 Galerideki bir öğeyle ilişkili araç ipucu metnini döndürür.
 
@@ -434,17 +435,17 @@ LPCTSTR GetItemToolTip(int nItemIndex) const;
 ### <a name="parameters"></a>Parametreler
 
 *nItemIndex*<br/>
-[içinde] Araç ipucu metnini almak için öğenin sıfır tabanlı dizinini belirtir.
+'ndaki Araç ipucu metninin alınacağı öğenin sıfır tabanlı dizinini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şerit galerisindeki bir öğeye atanan araç ipucu dizesinin işaretçisi. Bu öğeye araç ipucu atanmamışsa NULL olabilir.
+Şerit galerisinde bir öğeye atanan ToolTip dizesinin işaretçisi. Bu öğeye hiçbir araç ipucu atanmamışsa NULL olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygetlastselecteditem"></a><a name="getlastselecteditem"></a>CMFCRibbonGaleri::GetLastSelectedItem
+## <a name="cmfcribbongallerygetlastselecteditem"></a><a name="getlastselecteditem"></a> CMFCRibbonGallery:: Getlastselectedidıtem
 
-Kullanıcının seçtiği şerit galerisindeki son öğenin dizinini döndürür.
+Kullanıcının seçtiği şerit galerisinde son öğenin dizinini döndürür.
 
 ```cpp
 static int GetLastSelectedItem(UINT uiCmdID);
@@ -452,18 +453,18 @@ static int GetLastSelectedItem(UINT uiCmdID);
 
 ### <a name="parameters"></a>Parametreler
 
-*uiCmdID*<br/>
-[içinde] Şerit galerisini açan menü öğesinin komut kimliğini belirtir.
+*Uıımıdıd*<br/>
+'ndaki Şerit galerisini açan menü öğesinin komut KIMLIĞINI belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kullanıcı şerit galerisindeki herhangi bir öğeyi seçtiğinde, kitaplık WM_COMMAND iletiyi şerit galerisini açan menü düğmesinin Komut Kimliği ile birlikte gönderir.
+Kullanıcı, şerit galerisinde herhangi bir öğeyi seçtiğinde, kitaplık, şerit galerisini açan menü düğmesinin komut KIMLIĞIYLE birlikte WM_COMMAND mesajı gönderir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygetpaletteid"></a><a name="getpaletteid"></a>CMFCRibbonGallery::GetPaletteID
+## <a name="cmfcribbongallerygetpaletteid"></a><a name="getpaletteid"></a> CMFCRibbonGallery:: Getpaletteıd
 
-Geçerli paletin komut kimliğini verir.
+Geçerli paletin komut KIMLIĞINI döndürür.
 
 ```cpp
 int GetPaletteID() const;
@@ -471,11 +472,11 @@ int GetPaletteID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda seçili paletin komut kimliği.
+Şu anda seçili olan paletin komut KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygetregularsize"></a><a name="getregularsize"></a>CMFCRibbonGallery::GetRegularSize
+## <a name="cmfcribbongallerygetregularsize"></a><a name="getregularsize"></a> CMFCRibbonGallery:: GetRegularSize
 
 ```cpp
 virtual CSize GetRegularSize(CDC* pDC);
@@ -483,13 +484,13 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
+'ndaki *PDC*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerygetselecteditem"></a><a name="getselecteditem"></a>CMFCRibbonGallery::GetSelectedItem
+## <a name="cmfcribbongallerygetselecteditem"></a><a name="getselecteditem"></a> CMFCRibbonGallery:: Getselectedidıtem
 
 ```cpp
 int GetSelectedItem() const;
@@ -499,7 +500,7 @@ int GetSelectedItem() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryhasmenu"></a><a name="hasmenu"></a>CMFCRibbonGaleri::HasMenu
+## <a name="cmfcribbongalleryhasmenu"></a><a name="hasmenu"></a> CMFCRibbonGallery:: HasMenu
 
 ```cpp
 virtual BOOL HasMenu() const;
@@ -509,9 +510,9 @@ virtual BOOL HasMenu() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryisbuttonmode"></a><a name="isbuttonmode"></a>CMFCRibbonGallery::IsButtonMode
+## <a name="cmfcribbongalleryisbuttonmode"></a><a name="isbuttonmode"></a> CMFCRibbonGallery:: ısbuttonmode
 
-Paletin galeri düğmesinde bulunup bulunmayacağını belirtir.
+Paletin bir galeri düğmesine dahil edilip edilmeyeceğini belirtir.
 
 ```cpp
 BOOL IsButtonMode() const;
@@ -519,13 +520,13 @@ BOOL IsButtonMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Palet açılır menü düğmesi olarak görüntülenirse DOĞRU; Palet doğrudan şerit üzerinde görüntülenirse YANLIŞ.
+Palet, açılan menü düğmesi olarak görüntüleniyorsa doğru; Palet şeritte doğrudan görüntüleniyorsa FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryismenuresizeenabled"></a><a name="ismenuresizeenabled"></a>CMFCRibbonGallery::IsMenuResizeEtkin
+## <a name="cmfcribbongalleryismenuresizeenabled"></a><a name="ismenuresizeenabled"></a> CMFCRibbonGallery:: ısmenuresizeenabled
 
-Menü yeniden boyutlandırmanın etkin olup olmadığını belirtir.
+Menü yeniden boyutlandırmanın etkinleştirilip etkinleştirilmeyeceğini belirtir.
 
 ```cpp
 BOOL IsMenuResizeEnabled() const;
@@ -533,11 +534,11 @@ BOOL IsMenuResizeEnabled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Menü yeniden boyutlandırma sı etkinleştirilmişse TRUE; aksi takdirde, YANLIŞ.
+Menü yeniden boyutlandırma etkinleştirildiyse TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryismenuresizevertical"></a><a name="ismenuresizevertical"></a>CMFCRibbonGallery::IsMenuResizeVertical
+## <a name="cmfcribbongalleryismenuresizevertical"></a><a name="ismenuresizevertical"></a> CMFCRibbonGallery:: ısmenuresizevertical
 
 ```cpp
 BOOL IsMenuResizeVertical() const;
@@ -547,9 +548,9 @@ BOOL IsMenuResizeVertical() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryismenusidebar"></a><a name="ismenusidebar"></a>CMFCRibbonGaleri::IsMenuSideBar
+## <a name="cmfcribbongalleryismenusidebar"></a><a name="ismenusidebar"></a> CMFCRibbonGallery:: IsMenuSideBar
 
-Yan çubuğun etkin mi yoksa devre dışı mı olduğunu belirtir.
+Yan çubuğun etkin veya devre dışı olduğunu belirtir.
 
 ```cpp
 BOOL IsMenuSideBar() const;
@@ -557,11 +558,11 @@ BOOL IsMenuSideBar() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Açılır menü menüsünün sol tarafında Office XP tarzı yan çubuk çizilirse DOĞRU; aksi takdirde, YANLIŞ.
+Office XP stili kenar çubuğu, açılan menünün sol tarafında çizildiyse, doğru. Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryonafterchangerect"></a><a name="onafterchangerect"></a>CMFCRibbonGallery::OnAfterChangeRect
+## <a name="cmfcribbongalleryonafterchangerect"></a><a name="onafterchangerect"></a> CMFCRibbonGallery:: OnAfterChangeRect
 
 ```cpp
 virtual void OnAfterChangeRect(CDC* pDC);
@@ -569,11 +570,11 @@ virtual void OnAfterChangeRect(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
+'ndaki *PDC*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryondraw"></a><a name="ondraw"></a>CMFCRibbonGallery::OnDraw
+## <a name="cmfcribbongalleryondraw"></a><a name="ondraw"></a> CMFCRibbonGallery:: OnDraw
 
 ```cpp
 virtual void OnDraw(CDC* pDC);
@@ -581,13 +582,13 @@ virtual void OnDraw(CDC* pDC);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
+'ndaki *PDC*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryondrawpaletteicon"></a><a name="ondrawpaletteicon"></a>CMFCRibbonGallery::OnDrawPaletteIcon
+## <a name="cmfcribbongalleryondrawpaletteicon"></a><a name="ondrawpaletteicon"></a> CMFCRibbonGallery:: Ondrawpaletteıcon
 
-Bir galeri simgesi çizildiğinde çerçeve tarafından çağrılır.
+Bir Galeri simgesi çizildiğinde Framework tarafından çağırılır.
 
 ```cpp
 virtual void OnDrawPaletteIcon(
@@ -600,26 +601,26 @@ virtual void OnDrawPaletteIcon(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-[içinde] Çizim için kullanılan aygıt bağlamına işaretçi.
+*Kökündeki*<br/>
+'ndaki Çizim için kullanılan cihaz bağlamına yönelik bir işaretçi.
 
 *rectIcon*<br/>
-[içinde] Çizecek simgenin sınırlayıcı dikdörtgenini belirtir.
+'ndaki Çizilecek simgenin sınırlayıcı dikdörtgenini belirtir.
 
-*nIconIndex*<br/>
-[içinde] Çizecek simgenin galeri simgelerinin resim listesindeki sıfır tabanlı dizini belirtir.
+*Niconındex*<br/>
+'ndaki Çizilecek simgenin Galeri simgelerinin görüntü listesinde sıfır tabanlı dizini belirtir.
 
-*Picon*<br/>
-[içinde] Çizilen simgeiçin bir işaretçi.
+*pIcon*<br/>
+'ndaki Çizmekte olan simgeye yönelik bir işaretçi.
 
-*clrMetin*<br/>
-[içinde] Öğenin çizecek metninin rengini belirtir.
+*clrText*<br/>
+'ndaki Çizilecek öğe metninin rengini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit galerisi görünümünü özelleştirmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılabilirsiniz.
+Bir şerit galerisinin görünümünü özelleştirmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılabilirsiniz.
 
-## <a name="cmfcribbongalleryonenable"></a><a name="onenable"></a>CMFCRibbonGallery::Onenable
+## <a name="cmfcribbongalleryonenable"></a><a name="onenable"></a> CMFCRibbonGallery:: OnEnable
 
 ```cpp
 virtual void OnEnable(BOOL bEnable);
@@ -627,11 +628,11 @@ virtual void OnEnable(BOOL bEnable);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bEtkinleştir*<br/>
+'ndaki *bEnable*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryonrtlchanged"></a><a name="onrtlchanged"></a>CMFCRibbonGallery::OnRTLChanged
+## <a name="cmfcribbongalleryonrtlchanged"></a><a name="onrtlchanged"></a> CMFCRibbonGallery:: OnRTLChanged
 
 ```cpp
 virtual void OnRTLChanged(BOOL bIsRTL);
@@ -639,11 +640,11 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bIsRTL*<br/>
+'ndaki *Bisrtl*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryredrawicons"></a><a name="redrawicons"></a>CMFCRibbonGallery::RedrawIcons
+## <a name="cmfcribbongalleryredrawicons"></a><a name="redrawicons"></a> CMFCRibbonGallery:: Redrawsimgelerinden
 
 Galeriyi yeniden çizer.
 
@@ -653,9 +654,9 @@ void RedrawIcons();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Galeriyi yeniden çizmek için bu işlevi arayın. Çalışma zamanında galeriiçeriğini değiştirdiyseniz bu yöntemi aramalısınız.
+Galeriyi yeniden çizmek için bu işlevi çağırın. Çalışma zamanında galerinin içeriğini değiştirdiyseniz, bu yöntemi çağırmanız gerekir.
 
-## <a name="cmfcribbongalleryremoveitemtooltips"></a><a name="removeitemtooltips"></a>CMFCRibbonGallery::RemoveItemToolTips
+## <a name="cmfcribbongalleryremoveitemtooltips"></a><a name="removeitemtooltips"></a> CMFCRibbonGallery:: Removeıtemtooltip
 
 Araç ipuçlarını galerideki tüm öğelerden kaldırır.
 
@@ -665,7 +666,7 @@ void RemoveItemToolTips();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongalleryselectitem"></a><a name="selectitem"></a>CMFCRibbonGallery::SelectItem
+## <a name="cmfcribbongalleryselectitem"></a><a name="selectitem"></a> CMFCRibbonGallery:: SelectItem
 
 ```cpp
 void SelectItem(int nItemIndex);
@@ -673,13 +674,13 @@ void SelectItem(int nItemIndex);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *nItemIndex*<br/>
+'ndaki *nItemIndex*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerysetaccdata"></a><a name="setaccdata"></a>CMFCRibbonGaleri::SetACCData
+## <a name="cmfcribbongallerysetaccdata"></a><a name="setaccdata"></a> CMFCRibbonGallery:: SetACCData
 
-Şerit galerisinden `CAccessibilityData` erişilebilirlik verilerini kullanarak belirtilen nesneyi doldurur.
+`CAccessibilityData`Şerit galerisinden erişilebilirlik verilerini kullanarak belirtilen nesneyi doldurur.
 
 ```cpp
 virtual BOOL SetACCData(
@@ -690,20 +691,20 @@ virtual BOOL SetACCData(
 ### <a name="parameters"></a>Parametreler
 
 *pParent*<br/>
-[içinde] Şerit galeri penceresinin ana penceresi.
+'ndaki Şerit Galerisi penceresinin üst penceresi.
 
-*Veri*<br/>
-[çıkış] Şerit `CAccessibilityData` galerisinden erişilebilirlik verilerini alan bir nesne.
+*data*<br/>
+dışı `CAccessibilityData` Şerit galerisinden erişilebilirlik verilerini alan nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
-## <a name="cmfcribbongallerysetbuttonmode"></a><a name="setbuttonmode"></a>CMFCRibbonGallery::SetButtonMode
+## <a name="cmfcribbongallerysetbuttonmode"></a><a name="setbuttonmode"></a> CMFCRibbonGallery:: SetButtonMode
 
-Şerit galerisini açılır düğme olarak mı yoksa doğrudan şerit üzerinde palet olarak mı göstermeyeceğini belirler.
+Şerit galerinin açılan düğme olarak mı yoksa doğrudan şeritte bir palet olarak mı görüntüleneceğini belirler.
 
 ```cpp
 void SetButtonMode(BOOL bSet=TRUE);
@@ -712,11 +713,11 @@ void SetButtonMode(BOOL bSet=TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bSet*<br/>
-[içinde] Şerit galerisini açılır menü düğmesi olarak görüntülemek için TRUE; Şerit galerisinin içeriğini doğrudan şerit üzerinde görüntülemek için FALSE.
+'ndaki Şerit galerisini açılan menü düğmesi olarak göstermek için TRUE; Şerit galerisinin içeriğini doğrudan şeritte göstermek için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerysetgroupname"></a><a name="setgroupname"></a>CMFCRibbonGallery::SetGroupName
+## <a name="cmfcribbongallerysetgroupname"></a><a name="setgroupname"></a> CMFCRibbonGallery:: SetGroupName
 
 Bir grubun adını ayarlar.
 
@@ -728,19 +729,19 @@ void SetGroupName(
 
 ### <a name="parameters"></a>Parametreler
 
-*nGroupIndex*<br/>
-[içinde] Adın değiştirildiği grubun sıfır tabanlı dizinini belirtir.
+*Ngroupındex*<br/>
+'ndaki Adı değiştirilmekte olan grubun sıfır tabanlı dizinini belirtir.
 
 *lpszGroupName*<br/>
-[içinde] Grubun yeni adını belirtir.
+'ndaki Grup için yeni adı belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Adı değiştirilen grup [CMFCRibbonGallery::AddGroup](#addgroup) yöntemi kullanılarak eklenmiştir.
+Adı değiştirilmekte olan grup [CMFCRibbonGallery:: AddGroup](#addgroup) yöntemi kullanılarak eklenmiş olmalıdır.
 
-## <a name="cmfcribbongalleryseticonsinrow"></a><a name="seticonsinrow"></a>CMFCRibbonGallery::SetIconsInRow
+## <a name="cmfcribbongalleryseticonsinrow"></a><a name="seticonsinrow"></a> CMFCRibbonGallery:: Setıconsınrow
 
-Galeride satır başına öğe sayısını belirtir.
+Galerideki satır başına öğe sayısını belirtir.
 
 ```cpp
 void SetIconsInRow(int nIconsInRow);
@@ -749,15 +750,15 @@ void SetIconsInRow(int nIconsInRow);
 ### <a name="parameters"></a>Parametreler
 
 *nIconsInRow*<br/>
-[içinde] Galerinin her satırında görünecek öğe sayısını belirtir.
+'ndaki Galerinin her satırında görüntülenecek öğe sayısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Şerit galerisinin genişliğini belirtmek için bu yöntemi kullanın.
 
-## <a name="cmfcribbongallerysetitemtooltip"></a><a name="setitemtooltip"></a>CMFCRibbonGallery::SetItemToolTip
+## <a name="cmfcribbongallerysetitemtooltip"></a><a name="setitemtooltip"></a> CMFCRibbonGallery:: Setıtemtooltip
 
-Galerideki bir öğenin araç ipucu metnini ayarlar.
+Galerideki bir öğe için araç ipucu metnini ayarlar.
 
 ```cpp
 void SetItemToolTip(
@@ -768,16 +769,16 @@ void SetItemToolTip(
 ### <a name="parameters"></a>Parametreler
 
 *nItemIndex*<br/>
-[içinde] Araç ucunu ilişkilendirmek için palet öğesinin sıfır tabanlı dizin.
+'ndaki Araç ipucunun ilişkilendirileceği palet öğesinin sıfır tabanlı dizini.
 
 *lpszToolTip*<br/>
-[içinde] Araç ucunda görünecek metin.
+'ndaki Araç İpucunda görüntülenecek metin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerysetpalette"></a><a name="setpalette"></a>CMFCRibbonGallery::SetPalette
+## <a name="cmfcribbongallerysetpalette"></a><a name="setpalette"></a> CMFCRibbonGallery:: SetPalette
 
-Şerit galerisine bir palet bağlar.
+Şerit galerisine bir palet iliştirir.
 
 ```cpp
 void SetPalette(CMFCToolBarImages& imagesPalette);
@@ -789,20 +790,20 @@ void SetPalette(
 
 ### <a name="parameters"></a>Parametreler
 
-*imagesPalette*<br/>
-[içinde] Galeride görünecek simgeleri içeren resim listesini belirtir.
+*Imate paleti*<br/>
+'ndaki Galeride görünecek simgeleri içeren resim listesini belirtir.
 
-*uiImagesPaletteResID*<br/>
-[içinde] Galeride görünecek simgeleri içeren resim listesinin kaynak kimliğini belirtir.
+*Uııma, Paletteresid*<br/>
+'ndaki Galeride görünecek simgeleri içeren görüntü listesinin kaynak KIMLIĞINI belirtir.
 
-*cxPaletteImage*<br/>
-[içinde] Galerideki bir görüntünün genişliğini, piksel olarak belirtir.
+*Cxpaletteımage*<br/>
+'ndaki Galerideki bir görüntünün genişliğini piksel cinsinden belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribbongallerysetpaletteid"></a><a name="setpaletteid"></a>CMFCRibbonGaleri::SetPaletteID
+## <a name="cmfcribbongallerysetpaletteid"></a><a name="setpaletteid"></a> CMFCRibbonGallery:: Setpaletteıd
 
-Kullanıcı bir galeri öğesi seçtiğinde WM_COMMAND iletisinde gönderilen komut kimliğini tanımlar.
+Kullanıcı bir galeri öğesi seçtiğinde WM_COMMAND iletisinde gönderilen komut KIMLIĞINI tanımlar.
 
 ```cpp
 void SetPaletteID(UINT nID);
@@ -810,16 +811,16 @@ void SetPaletteID(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-[içinde] Kullanıcı bir galeri öğesi seçtiğinde WM_COMMAND iletisinde gönderilen komut kimliğini belirtir.
+*NID*<br/>
+'ndaki Kullanıcı bir galeri öğesi seçtiğinde WM_COMMAND iletisinde gönderilen komut KIMLIĞINI belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir kullanıcının galeriden seçtiği belirli öğeyi belirlemek için [CMFCRibbonGallery'yi arayın::GetLastSelectedItem](#getlastselecteditem) statik yöntemi.
+Galeriden bir kullanıcının seçtiği belirli öğeyi öğrenmek için [CMFCRibbonGallery:: Getlastselectedidıtem](#getlastselecteditem) static metodunu çağırın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonButton Sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
-[CMFCRibbonGalleryMenuButton Sınıfı](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
+[CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
+[Cmfcribbongallermenubtan sınıfı](../../mfc/reference/cmfcribbongallerymenubutton-class.md)

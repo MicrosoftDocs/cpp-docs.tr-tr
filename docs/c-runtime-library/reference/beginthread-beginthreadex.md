@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _beginthread _beginthreadex'
 title: _beginthread, _beginthreadex
 ms.date: 4/2/2020
 api_name:
@@ -35,18 +36,18 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-ms.openlocfilehash: 5060c4b34005c1cc066e002d20ca70cbfea0fbef
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: f4357186a970914e70116650bd1c218521327f99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684826"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171913"
 ---
 # <a name="_beginthread-_beginthreadex"></a>_beginthread, _beginthreadex
 
 Bir iş parçacığı oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 uintptr_t _beginthread( // NATIVE CODE
@@ -80,7 +81,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 ### <a name="parameters"></a>Parametreler
 
 *start_address*<br/>
-Yeni bir iş parçacığının yürütülmesini Başlatan bir yordamın başlangıç adresi. **_Beginthread**için, çağırma kuralı [__cdecl](../../cpp/cdecl.md) (yerel kod için) veya [__clrcall](../../cpp/clrcall.md) (yönetilen kod için). **_beginthreadex**için [__stdcall](../../cpp/stdcall.md) (yerel kod için) veya [__clrcall](../../cpp/clrcall.md) (yönetilen kod için).
+Yeni bir iş parçacığının yürütülmesini Başlatan bir yordamın başlangıç adresi. **_Beginthread** için, çağırma kuralı [__cdecl](../../cpp/cdecl.md) (yerel kod için) veya [__clrcall](../../cpp/clrcall.md) (yönetilen kod için). **_beginthreadex** için [__stdcall](../../cpp/stdcall.md) (yerel kod için) veya [__clrcall](../../cpp/clrcall.md) (yönetilen kod için).
 
 *stack_size*<br/>
 Yeni bir iş parçacığı için yığın boyutu veya 0.
@@ -89,31 +90,31 @@ Yeni bir iş parçacığı için yığın boyutu veya 0.
 Yeni bir iş parçacığına geçirilecek bağımsız değişken listesi veya **null**.
 
 *Güvenlik*<br/>
-Döndürülen Tanıtıcının alt süreçler tarafından devralınıp alınmayacağını belirleyen [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısına yönelik işaretçi. *Güvenlik* **null**ise, tanıtıcı devralınamaz. Windows 95 uygulamaları için **null** olmalıdır.
+Döndürülen Tanıtıcının alt süreçler tarafından devralınıp alınmayacağını belirleyen [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) yapısına yönelik işaretçi. *Güvenlik* **null** ise, tanıtıcı devralınamaz. Windows 95 uygulamaları için **null** olmalıdır.
 
 *ınitflag*<br/>
 Yeni bir iş parçacığının ilk durumunu denetleyen bayraklar. Hemen çalıştırmak için *initflag* 'ı 0 olarak ayarlayın veya iş parçacığını askıya alınmış durumda oluşturmak için **CREATE_SUSPENDED** ; iş parçacığını yürütmek için [ResumeThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-resumethread) kullanın. Yığının ilk ayırma boyutu olarak *stack_size* kullanmak için *initflag* 'ı **STACK_SIZE_PARAM_IS_A_RESERVATION** bayrak olarak ayarlayın; Bu bayrak belirtilmemişse, *stack_size* tamamlama boyutunu belirtir.
 
 *thrdadddr*<br/>
-İş parçacığı tanımlayıcısını alan 32 bitlik bir değişkene işaret eder. **Null**ise, kullanılmaz.
+İş parçacığı tanımlayıcısını alan 32 bitlik bir değişkene işaret eder. **Null** ise, kullanılmaz.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa, bu işlevlerin her biri yeni oluşturulan iş parçacığına bir tanıtıcı döndürür; Ancak, yeni oluşturulan iş parçacığı çok hızlı bir şekilde çıkmadıysa **_beginthread** geçerli bir tanıtıcı döndürmeyebilir. (Açıklamalar bölümünde tartışmayı inceleyin.) Bir hata durumunda, **_beginthread** -1L döndürür ve **errno** çok fazla Iş parçacığı **varsa,** **EINVAL** için bağımsız değişken geçersizse veya yığın boyutu yanlışsa ya da yetersiz kaynak (bellek gibi) varsa **EACCES** olarak ayarlanır. Bir hatada, **_beginthreadex** 0 döndürür ve **errno** ve **_doserrno** ayarlanır.
 
-*Start_address* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür.
+*Start_address* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-**Uintptr_t**hakkında daha fazla bilgi için bkz. [standart türler](../../c-runtime-library/standard-types.md).
+**Uintptr_t** hakkında daha fazla bilgi için bkz. [standart türler](../../c-runtime-library/standard-types.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Beginthread** işlevi, *start_address*bir yordamın yürütülmesini Başlatan bir iş parçacığı oluşturur. *Start_address* yordam, **`__cdecl`** çağırma kuralı için (yerel kod için) veya **__clrcall** (yönetilen kod için) kullanmalıdır ve dönüş değeri içermemelidir. İş parçacığı bu yordama döndüğünde otomatik olarak sonlandırılır. İş parçacıkları hakkında daha fazla bilgi için bkz. [daha eski kod Için çoklu Iş parçacığı desteği (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
+**_Beginthread** işlevi, *start_address* bir yordamın yürütülmesini Başlatan bir iş parçacığı oluşturur. *Start_address* yordam, **`__cdecl`** çağırma kuralı için (yerel kod için) veya **__clrcall** (yönetilen kod için) kullanmalıdır ve dönüş değeri içermemelidir. İş parçacığı bu yordama döndüğünde otomatik olarak sonlandırılır. İş parçacıkları hakkında daha fazla bilgi için bkz. [daha eski kod Için çoklu Iş parçacığı desteği (Visual C++)](../../parallel/multithreading-support-for-older-code-visual-cpp.md).
 
 **_beginthreadex** , Win32 [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) API 'sine **_beginthread** daha yakından benzer. **_beginthreadex** **_beginthread** aşağıdaki yollarla farklıdır:
 
-- **_beginthreadex** üç ek parametreye sahiptir: *initflag*, *Security*ve **threadadddr**. Yeni iş parçacığı, belirtilen güvenlik ile askıya alınmış bir durumda oluşturulabilir ve iş parçacığı tanımlayıcısı olan *thrdadddr*kullanılarak erişilebilir.
+- **_beginthreadex** üç ek parametreye sahiptir: *initflag*, *Security* ve **threadadddr**. Yeni iş parçacığı, belirtilen güvenlik ile askıya alınmış bir durumda oluşturulabilir ve iş parçacığı tanımlayıcısı olan *thrdadddr* kullanılarak erişilebilir.
 
 - **_Beginthreadex** geçirilen *start_address* yordamı, **`__stdcall`** çağırma kuralı için (yerel kod için) veya **__clrcall** (yönetilen kod için) kullanmalıdır ve bir iş parçacığı çıkış kodu döndürmelidir.
 
@@ -121,24 +122,24 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 
 - **_Beginthreadex** kullanılarak oluşturulan bir iş parçacığı, [_endthreadex](endthread-endthreadex.md)çağrısıyla sonlandırılır.
 
-**_Beginthreadex** işlevi, iş parçacığının **_beginthread** tarafından nasıl oluşturulduğuna ilişkin daha fazla denetim sağlar. **_Endthreadex** işlevi de daha esnektir. Örneğin, **_beginthreadex**ile güvenlik bilgilerini kullanabilir, iş parçacığının başlangıç durumunu ayarlayabilir (çalışır veya askıya alınır) ve yeni oluşturulan iş parçacığının iş parçacığı tanımlayıcısını alabilirsiniz. Ayrıca, **_beginthread**ile yapaistemediğiniz eşitleme apı 'leriyle **_beginthreadex** tarafından döndürülen iş parçacığı işleyicisini de kullanabilirsiniz.
+**_Beginthreadex** işlevi, iş parçacığının **_beginthread** tarafından nasıl oluşturulduğuna ilişkin daha fazla denetim sağlar. **_Endthreadex** işlevi de daha esnektir. Örneğin, **_beginthreadex** ile güvenlik bilgilerini kullanabilir, iş parçacığının başlangıç durumunu ayarlayabilir (çalışır veya askıya alınır) ve yeni oluşturulan iş parçacığının iş parçacığı tanımlayıcısını alabilirsiniz. Ayrıca, **_beginthread** ile yapaistemediğiniz eşitleme apı 'leriyle **_beginthreadex** tarafından döndürülen iş parçacığı işleyicisini de kullanabilirsiniz.
 
-**_Beginthread** **_beginthreadex** kullanmak daha güvenlidir. **_Beginthread** tarafından oluşturulan iş parçacığı hızla çıkdığında, **_beginthread** çağıranına döndürülen tanıtıcı geçersiz olabilir veya başka bir iş parçacığına işaret edebilir. Ancak, **_beginthreadex** tarafından döndürülen tanıtıcının **_beginthreadex**çağıranı tarafından kapatılması gerekir, bu nedenle **_beginthreadex** bir hata döndürmediğinde geçerli bir tanıtıcı olması garanti edilir.
+**_Beginthread** **_beginthreadex** kullanmak daha güvenlidir. **_Beginthread** tarafından oluşturulan iş parçacığı hızla çıkdığında, **_beginthread** çağıranına döndürülen tanıtıcı geçersiz olabilir veya başka bir iş parçacığına işaret edebilir. Ancak, **_beginthreadex** tarafından döndürülen tanıtıcının **_beginthreadex** çağıranı tarafından kapatılması gerekir, bu nedenle **_beginthreadex** bir hata döndürmediğinde geçerli bir tanıtıcı olması garanti edilir.
 
 Bir iş parçacığını sonlandırmak için [_endthread](endthread-endthreadex.md) veya **_endthreadex** açıkça çağırabilirsiniz; Ancak, iş parçacığı parametre olarak geçirilen yordamın döndürdüğü zaman **_endthread** veya **_endthreadex** otomatik olarak çağrılır. Bir iş parçacığını **_endthread** veya **_endthreadex** çağrısıyla sonlandırarak iş parçacığı için ayrılan kaynakların doğru kurtarılmasına yardımcı olur.
 
-**_endthread** , iş parçacığı tanıtıcısını otomatik olarak kapatır, ancak **_endthreadex** yapmaz. Bu nedenle, **_beginthread** ve **_Endthread**kullandığınızda, Win32 [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) API 'sini çağırarak iş parçacığı tanıtıcısını açıkça kapatmayın. Bu davranış, Win32 [ExitThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread) API 'sinden farklıdır.
+**_endthread** , iş parçacığı tanıtıcısını otomatik olarak kapatır, ancak **_endthreadex** yapmaz. Bu nedenle, **_beginthread** ve **_Endthread** kullandığınızda, Win32 [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) API 'sini çağırarak iş parçacığı tanıtıcısını açıkça kapatmayın. Bu davranış, Win32 [ExitThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread) API 'sinden farklıdır.
 
 > [!NOTE]
 > Libcmt. lib ile bağlantılı bir yürütülebilir dosya için, Win32 **ExitThread** API 'sini çağırmayın, böylece çalışma zamanı sisteminin geri kazanma tarafından ayrılmış kaynaklardan engellenmesini önleyin. **_endthread** ve **_endthreadex** ayrılmış iş parçacığı kaynaklarını geri kazanın ve sonra **ExitThread**'i çağırın.
 
 **_Beginthread** veya **_beginthreadex** çağrıldığında, işletim sistemi yığın ayırmayı işler; iş parçacığı yığınının adresini bu işlevlerden birine iletmeniz gerekmez. Ayrıca, *stack_size* bağımsız değişkeni 0 olabilir, bu durumda işletim sistemi ana iş parçacığı için belirtilen yığınla aynı değeri kullanır.
 
-*Arglist* , yeni oluşturulan iş parçacığına geçirilecek bir parametredir. Genellikle, bir karakter dizesi gibi bir veri öğesinin adresidir. *Arglist* gerekli değilse **null** olabilir, ancak **_beginthread** ve **_beginthreadex** yeni iş parçacığına geçirilecek bazı değerler verilmelidir. Herhangi bir iş parçacığı [iptal](abort.md), **Çıkış**, **_exit**veya **ExitProcess**'i çağırırsa tüm iş parçacıkları sonlandırılır.
+*Arglist* , yeni oluşturulan iş parçacığına geçirilecek bir parametredir. Genellikle, bir karakter dizesi gibi bir veri öğesinin adresidir. *Arglist* gerekli değilse **null** olabilir, ancak **_beginthread** ve **_beginthreadex** yeni iş parçacığına geçirilecek bazı değerler verilmelidir. Herhangi bir iş parçacığı [iptal](abort.md), **Çıkış**, **_exit** veya **ExitProcess**'i çağırırsa tüm iş parçacıkları sonlandırılır.
 
-Yeni iş parçacığının yerel ayarı, işlem başına küresel geçerli yerel ayar bilgileri kullanılarak başlatılır. İş parçacığı başına yerel ayar, [_configthreadlocale](configthreadlocale.md) çağrısıyla (genel olarak veya yalnızca yeni iş parçacıkları için) etkinleştirilirse, iş parçacığı, **setlocale** veya **_wsetlocale**çağırarak yerel ayarını diğer iş parçacıklarından bağımsız olarak değiştirebilir. İş parçacığı başına yerel ayar bayrağı kümesi olmayan iş parçacıkları, iş parçacığı başına yerel ayar bayrağı ayarlanmamış olan diğer tüm iş parçacıklarında yerel ayar bilgilerini ve yeni oluşturulan tüm iş parçacıklarını etkileyebilir. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Yeni iş parçacığının yerel ayarı, işlem başına küresel geçerli yerel ayar bilgileri kullanılarak başlatılır. İş parçacığı başına yerel ayar, [_configthreadlocale](configthreadlocale.md) çağrısıyla (genel olarak veya yalnızca yeni iş parçacıkları için) etkinleştirilirse, iş parçacığı, **setlocale** veya **_wsetlocale** çağırarak yerel ayarını diğer iş parçacıklarından bağımsız olarak değiştirebilir. İş parçacığı başına yerel ayar bayrağı kümesi olmayan iş parçacıkları, iş parçacığı başına yerel ayar bayrağı ayarlanmamış olan diğer tüm iş parçacıklarında yerel ayar bilgilerini ve yeni oluşturulan tüm iş parçacıklarını etkileyebilir. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**/Clr** kodu için **_beginthread** ve **_beginthreadex** her birinin iki aşırı yüklemesi vardır. Bir yerel çağrı kuralı işlev işaretçisini alır ve diğeri **__clrcall** işlev işaretçisi alır. İlk aşırı yükleme uygulama etki alanı açısından güvenli değildir ve hiçbir şekilde olmayacaktır. **/Clr** kodu yazıyorsanız, yeni iş parçacığının yönetilen kaynaklara erişmeden önce doğru uygulama etki alanına girdiğinden emin olmanız gerekir. Bunu, örneğin [Call_in_appdomain işlevi](../../dotnet/call-in-appdomain-function.md)kullanarak yapabilirsiniz. İkinci aşırı yükleme uygulama etki alanı güvenlidir; Yeni oluşturulan iş parçacığı her zaman **_beginthread** veya **_beginthreadex**çağıranın uygulama etki alanında sona alınacaktır.
+**/Clr** kodu için **_beginthread** ve **_beginthreadex** her birinin iki aşırı yüklemesi vardır. Bir yerel çağrı kuralı işlev işaretçisini alır ve diğeri **__clrcall** işlev işaretçisi alır. İlk aşırı yükleme uygulama etki alanı açısından güvenli değildir ve hiçbir şekilde olmayacaktır. **/Clr** kodu yazıyorsanız, yeni iş parçacığının yönetilen kaynaklara erişmeden önce doğru uygulama etki alanına girdiğinden emin olmanız gerekir. Bunu, örneğin [Call_in_appdomain işlevi](../../dotnet/call-in-appdomain-function.md)kullanarak yapabilirsiniz. İkinci aşırı yükleme uygulama etki alanı güvenlidir; Yeni oluşturulan iş parçacığı her zaman **_beginthread** veya **_beginthreadex** çağıranın uygulama etki alanında sona alınacaktır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -155,11 +156,11 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-library-features.md) çok iş parçacıklı sürümleri.
 
-**_Beginthread** veya **_beginthreadex**kullanmak için, uygulama çok iş parçacıklı C çalışma zamanı kitaplıklarından birine bağlanmalıdır.
+**_Beginthread** veya **_beginthreadex** kullanmak için, uygulama çok iş parçacıklı C çalışma zamanı kitaplıklarından birine bağlanmalıdır.
 
 ## <a name="examples"></a>Örnekler
 
-Aşağıdaki örnekte **_beginthread** ve **_endthread**kullanılmaktadır.
+Aşağıdaki örnekte **_beginthread** ve **_endthread** kullanılmaktadır.
 
 ```C
 // crt_BEGTHRD.C
@@ -277,7 +278,7 @@ void Bounce( void * parg )
 
 Örnek uygulamayı sonlandırmak için herhangi bir tuşa basın.
 
-Aşağıdaki örnek kod, eşitleme API [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject)ile **_beginthreadex** tarafından döndürülen iş parçacığı işleyicisini nasıl kullanabileceğinizi gösterir. Ana iş parçacığı, devam etmeden önce ikinci iş parçacığının sonlanmasını bekler. İkinci iş parçacığı **_endthreadex**çağırdığında, iş parçacığı nesnesinin sinyal durumuna geçmesine neden olur. Bu, birincil iş parçacığının çalışmaya devam etmesine olanak tanır. Bu, **_beginthread** ve **_endthread**ile **yapılamaz, çünkü** **_endthread** , iş parçacığı nesnesini, sinyal veren bir duruma ayarlayabilmesi için yok eder.
+Aşağıdaki örnek kod, eşitleme API [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject)ile **_beginthreadex** tarafından döndürülen iş parçacığı işleyicisini nasıl kullanabileceğinizi gösterir. Ana iş parçacığı, devam etmeden önce ikinci iş parçacığının sonlanmasını bekler. İkinci iş parçacığı **_endthreadex** çağırdığında, iş parçacığı nesnesinin sinyal durumuna geçmesine neden olur. Bu, birincil iş parçacığının çalışmaya devam etmesine olanak tanır. Bu, **_beginthread** ve **_endthread** ile **yapılamaz, çünkü** **_endthread** , iş parçacığı nesnesini, sinyal veren bir duruma ayarlayabilmesi için yok eder.
 
 ```cpp
 // crt_begthrdex.cpp

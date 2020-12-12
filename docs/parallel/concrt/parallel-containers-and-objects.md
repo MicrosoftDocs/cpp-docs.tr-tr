@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: paralel kapsayıcılar ve nesneler'
 title: Paralel Kapsayıcılar ve Nesneler
 ms.date: 03/27/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - parallel containers
 - concurrent containers
 ms.assetid: 90ab715c-29cd-48eb-8e76-528619aab466
-ms.openlocfilehash: 7387173378e79a4707008a11846eab19d7ae4341
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2d0b6b491fbe41ea74ad0e6c138cb270558f6e73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831794"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172446"
 ---
 # <a name="parallel-containers-and-objects"></a>Paralel Kapsayıcılar ve Nesneler
 
@@ -87,7 +88,7 @@ Eş zamanlı nesneler:
 
 - Çalışma zamanı, türü için özel bir sürümü tanımlamıyor `concurrent_vector` **`bool`** .
 
-### <a name="concurrency-safe-operations"></a><a name="vector-safety"></a> Eşzamanlılık güvenli Işlemler
+### <a name="concurrency-safe-operations"></a><a name="vector-safety"></a> Concurrency-Safe Işlemler
 
 Bir nesnenin boyutunu ekleyen veya artıran `concurrent_vector` ya da bir nesne içindeki bir öğeye erişen tüm yöntemler `concurrent_vector` eşzamanlılık açısından güvenlidir. Burada eşzamanlılık açısından güvenli, işaretçiler veya yineleyiciler her zaman geçerlidir. Bu, öğe başlatma garantisi veya belirli bir geçiş düzeni değildir. Bu kuralın özel durumu `resize` yöntemi olur.
 
@@ -176,7 +177,7 @@ Yalnızca [std:: Queue](../../standard-library/queue-class.md) sınıfı gibi [c
 
 - `concurrent_queue`Sınıfı yöntemi yerine [unsafe_size](reference/concurrent-queue-class.md#unsafe_size) yöntemi sağlar `size` . `unsafe_size`Yöntem eşzamanlılık açısından güvenli değildir.
 
-### <a name="concurrency-safe-operations"></a><a name="queue-safety"></a> Eşzamanlılık güvenli Işlemler
+### <a name="concurrency-safe-operations"></a><a name="queue-safety"></a> Concurrency-Safe Işlemler
 
 Bir nesneden sıraya alınan veya sıradan oluşturulan tüm yöntemler `concurrent_queue` eşzamanlılık açısından güvenlidir. Burada eşzamanlılık açısından güvenli, işaretçiler veya yineleyiciler her zaman geçerlidir. Bu, öğe başlatma garantisi veya belirli bir geçiş düzeni değildir.
 
@@ -254,7 +255,7 @@ Aşağıdaki örnek, kullanmak için temel yapıyı gösterir `concurrent_unorde
 
 Kilitlenmeden kaçınmak için, `concurrent_unordered_map` bellek ayırıcı, karma işlevleri veya Kullanıcı tanımlı diğer kodları çağırdığında bir kilit tutma yöntemi yoktur. Ayrıca, karma işlevin her zaman aynı değere eşit anahtarları değerlendirdiğinden emin olmanız gerekir. En iyi karma işlevleri, anahtarları karma kod alanı genelinde bir yere dağıtır.
 
-### <a name="concurrency-safe-operations"></a><a name="map-safety"></a> Eşzamanlılık güvenli Işlemler
+### <a name="concurrency-safe-operations"></a><a name="map-safety"></a> Concurrency-Safe Işlemler
 
 `concurrent_unordered_map`Sınıfı eşzamanlılık güvenli ekleme ve öğe erişim işlemleri sunar. Ekleme işlemleri varolan işaretçileri veya yineleyiciler geçersiz kılmaz. Yineleyici erişimi ve çapraz geçiş işlemleri de eşzamanlılık açısından güvenlidir. Burada eşzamanlılık açısından güvenli, işaretçiler veya yineleyiciler her zaman geçerlidir. Bu, öğe başlatma garantisi veya belirli bir geçiş düzeni değildir. Aşağıdaki tabloda eşzamanlılık açısından güvenli olan yaygın olarak kullanılan `concurrent_unordered_map` Yöntemler ve işleçler gösterilmektedir.
 

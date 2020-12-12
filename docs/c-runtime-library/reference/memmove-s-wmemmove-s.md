@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: memmove_s wmemmove_s'
 title: memmove_s, wmemmove_s
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - wmemmove_s function
 - memmove_s function
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
-ms.openlocfilehash: 04f920543c4f6a3d433e6426a96d617a3608a270
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: faa68f073949c9c1bcd3d96bb48472484adc312c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914091"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171406"
 ---
 # <a name="memmove_s-wmemmove_s"></a>memmove_s, wmemmove_s
 
@@ -80,15 +81,15 @@ Başarılıysa sıfır; hatada hata kodu
 
 |*HD*|*numberOfElements*|*src*|Döndürülen değer|*Hedef* içeriği|
 |------------|------------------------|-----------|------------------|------------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|< *biriktirme*|kaydedilmemiş|**ERANGE**|değiştirilmedi|
+|**DEĞER**|herhangi biri|herhangi biri|**EıNVAL**|değiştirilmedi|
+|herhangi biri|herhangi biri|**DEĞER**|**EıNVAL**|değiştirilmedi|
+|herhangi biri|< *biriktirme*|herhangi biri|**ERANGE**|değiştirilmedi|
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Src* 'den *hedefe*kadar olan karakter *sayısını* kopyalar. Kaynak alanın ve hedefin bazı bölgeleri çakışırsa **memmove_s** , çakışan bölgedeki özgün kaynak baytlarının üzerine yazılmadan önce kopyalanmasını sağlar.
+*Src* 'den *hedefe* kadar olan karakter *sayısını* kopyalar. Kaynak alanın ve hedefin bazı bölgeleri çakışırsa **memmove_s** , çakışan bölgedeki özgün kaynak baytlarının üzerine yazılmadan önce kopyalanmasını sağlar.
 
-Hedef *veya* *kaynak* boş bir işaretçisiyse veya hedef dize çok küçükse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Hedef *veya* *kaynak* boş bir işaretçisiyse veya hedef dize çok küçükse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -96,8 +97,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memmove_s**|\<String. h>|
-|**wmemmove_s**|\<wchar. h>|
+|**memmove_s**|\<string.h>|
+|**wmemmove_s**|\<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

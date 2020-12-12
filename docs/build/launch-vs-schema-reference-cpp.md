@@ -1,14 +1,15 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: şema başvurusunda launch.vs.js(C++)'
 title: Şema başvurusunda launch.vs.js(C++)
 ms.date: 08/20/2019
 helpviewer_keywords:
 - launch.vs.json file [C++]
-ms.openlocfilehash: 1e235b5f1ff4d7573ddbe57ac4e3c7c9bdbc2eb8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: a7b18de57208017003717b3cda38fb214fad7f79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172069"
 ---
 # <a name="launchvsjson-schema-reference-c"></a>Şema başvurusunda launch.vs.js(C++)
 

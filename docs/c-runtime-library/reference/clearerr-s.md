@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: clearerr_s'
 title: clearerr_s
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr_s function
 ms.assetid: b74d014d-b7a8-494a-a330-e5ffd5614772
-ms.openlocfilehash: 3e300562a52029fe835ebd4fe34e9a7ef247a76a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cbc9ac5122b5754b43f6fb93c4301afd6e449568
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917215"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171536"
 ---
 # <a name="clearerr_s"></a>clearerr_s
 
@@ -54,13 +55,13 @@ errno_t clearerr_s(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; *Stream* **null**ise **EINVAL** .
+Başarılıysa sıfır; *Stream* **null** ise **EINVAL** .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Clearerr_s** işlevi, *akış*için hata göstergesini ve dosya sonu göstergesini sıfırlar. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarlandığında, bu akıştaki işlemler **clearerr_s**, **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**veya [geri sarma](rewind.md) çağrılana kadar bir hata değeri döndürmeye devam eder.
+**Clearerr_s** işlevi, *akış* için hata göstergesini ve dosya sonu göstergesini sıfırlar. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarlandığında, bu akıştaki işlemler **clearerr_s**, **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos** veya [geri sarma](rewind.md) çağrılana kadar bir hata değeri döndürmeye devam eder.
 
-*Stream* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+*Stream* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL** döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -68,7 +69,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**clearerr_s**|\<stdio. h>|
+|**clearerr_s**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -130,7 +131,7 @@ Will input cause an error? n
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata Işleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [clearerr](clearerr.md)<br/>
 [_eof](eof.md)<br/>
 [feof](feof.md)<br/>

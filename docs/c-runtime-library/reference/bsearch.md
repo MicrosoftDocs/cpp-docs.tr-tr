@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bsearch'
 title: bsearch
 ms.date: 4/2/2020
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch function
 ms.assetid: e0ad2f47-e7dd-49ed-8288-870457a14a2c
-ms.openlocfilehash: 3a6083f39e12182ae512f5327b5f7d8d89deb2a2
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 5afdd00576392b4e464880ec88772357e3ae2135
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039553"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171783"
 ---
 # <a name="bsearch"></a>bsearch
 
 Sıralanmış bir dizide ikili bir arama gerçekleştirir. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [bsearch_s](bsearch-s.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 void *bsearch(
@@ -70,19 +71,19 @@ Arama verilerinin tabanına yönelik işaretçi.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**bsearch** , *temel*tarafından işaret edilen dizide *anahtar* oluşumuna yönelik bir işaretçi döndürür. *Anahtar* bulunamazsa, işlev **null**döndürür. Dizi artan sıralama düzeninde değilse veya aynı anahtarlara sahip yinelenen kayıtlar içeriyorsa, sonuç tahmin edilemez.
+**bsearch** , *temel* tarafından işaret edilen dizide *anahtar* oluşumuna yönelik bir işaretçi döndürür. *Anahtar* bulunamazsa, işlev **null** döndürür. Dizi artan sıralama düzeninde değilse veya aynı anahtarlara sahip yinelenen kayıtlar içeriyorsa, sonuç tahmin edilemez.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **Bsearch** işlevi, her bir *Genişlik* baytından oluşan bir dizi *sayı* öğe için bir ikili arama gerçekleştirir. *Taban* değeri, aranacak dizinin temelini gösteren bir işaretçidir ve *anahtar* , aranan değerdir. *Compare* parametresi, istenen anahtarı bir dizi öğesiyle karşılaştıran Kullanıcı tarafından sağlanan yordamın bir işaretçisidir. Bu, ilişkilerini belirten aşağıdaki değerlerden birini döndürür:
 
-|*Compare* yordamının döndürdüğü değer|Description|
+|*Compare* yordamının döndürdüğü değer|Açıklama|
 |-----------------------------------------|-----------------|
 |`< 0`|Anahtar, Array öğesinden küçüktür.|
 |`0`|Anahtar, dizi öğesine eşittir.|
 |`> 0`|Anahtar, dizi öğesinden daha büyük.|
 
-Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null**ise veya *taban* **null** ise ve *sayı* sıfır değilse, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı *width* gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** olarak ayarlanır `EINVAL` ve işlev **null**değerini döndürür.
+Bu işlev, parametrelerini doğrular. *Compare*, *Key* veya *Number* değeri **null** ise veya *taban* **null** ise ve *sayı* sıfır değilse, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı  gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** olarak ayarlanır `EINVAL` ve işlev **null** değerini döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

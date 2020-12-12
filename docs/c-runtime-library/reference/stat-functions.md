@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32'
 title: _stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 ms.date: 4/2/2020
 api_name:
@@ -118,18 +119,18 @@ helpviewer_keywords:
 - _tstat64 function
 - files [C++], getting status information
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
-ms.openlocfilehash: bb9603b6a76e92561db6c28792e4644949e190d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c0aa9c825821608aaf7f71bc9e3d8331efea8a82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171263"
 ---
 # <a name="_stat-_stat32-_stat64-_stati64-_stat32i64-_stat64i32-_wstat-_wstat32-_wstat64-_wstati64-_wstat32i64-_wstat64i32"></a>_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 
 Bir dosya üzerinde durum bilgilerini alın.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _stat(
@@ -192,26 +193,26 @@ Sonuçları depolayan yapıya yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, dosya durum bilgileri elde edilmişse 0 değerini döndürür. -1 ' in dönüş değeri bir hatayı gösterir, bu durumda **errno** **, filename**veya Path bulunamadığını belirten bir hata gösterir. **EINVAL** dönüş değeri geçersiz bir parametreyi belirtiyor; **errno** , bu durumda **EINVAL** olarak da ayarlanır.
+Bu işlevlerin her biri, dosya durum bilgileri elde edilmişse 0 değerini döndürür. -1 ' in dönüş değeri bir hatayı gösterir, bu durumda **errno** **, filename** veya Path bulunamadığını belirten bir hata gösterir. **EINVAL** dönüş değeri geçersiz bir parametreyi belirtiyor; **errno** , bu durumda **EINVAL** olarak da ayarlanır.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
-Bir dosyadaki tarih damgası, **_stat32** veya **_wstat32**kullanmadığınız veya **_USE_32BIT_TIME_T**tanımlı değilse, bu durumda yalnızca 18 Ocak 2038, UTC 'ye 23:59:59 kadar gösterilebileceği sürece, bir dosyanın gece yarısı, 1 Ocak 1970 ve 23:59:59, 31 Aralık 3000, UTC 'den daha sonra gösterilebilir.
+Bir dosyadaki tarih damgası, **_stat32** veya **_wstat32** kullanmadığınız veya **_USE_32BIT_TIME_T** tanımlı değilse, bu durumda yalnızca 18 Ocak 2038, UTC 'ye 23:59:59 kadar gösterilebileceği sürece, bir dosyanın gece yarısı, 1 Ocak 1970 ve 23:59:59, 31 Aralık 3000, UTC 'den daha sonra gösterilebilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Stat** işlevi, *yol* tarafından belirtilen dosya veya dizin hakkındaki bilgileri alır ve *arabelleğe*göre işaret eden yapıda depolar. **_stat** çok baytlı karakter dizesi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre tanıyor.
+**_Stat** işlevi, *yol* tarafından belirtilen dosya veya dizin hakkındaki bilgileri alır ve *arabelleğe* göre işaret eden yapıda depolar. **_stat** çok baytlı karakter dizesi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre tanıyor.
 
-**_wstat** , **_stat**geniş karakterli bir sürümüdür; _wstat *yol* bağımsız değişkeni **_wstat** , geniş karakterli bir dizedir. **_wstat** ve **_stat** , **_wstat** çok baytlı karakter dizelerini işleyememesi dışında aynı şekilde davranır.
+**_wstat** , **_stat** geniş karakterli bir sürümüdür; _wstat *yol* bağımsız değişkeni  , geniş karakterli bir dizedir. **_wstat** ve **_stat** , **_wstat** çok baytlı karakter dizelerini işleyememesi dışında aynı şekilde davranır.
 
 Bu işlevlerin çeşitlemeleri 32-veya 64 bit zaman türlerini ve 32 veya 64-bit dosya uzunluklarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türü boyutunu belirtir; İkinci sonek, dosya boyutunun 32-bit veya 64 bit tamsayı olarak temsil edilip edilmeyeceğini gösteren **i32** veya **i64**.
 
-**_stat** **_stat64i32**eşdeğerdir ve **`struct`** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_stat** 32 bitlik bir süre kullanır ve **`struct`** **_stat** 32 bit zaman içerir. Aynı, **_stati64**için de geçerlidir.
+**_stat** **_stat64i32** eşdeğerdir ve **`struct`** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_stat** 32 bitlik bir süre kullanır ve **`struct`** **_stat** 32 bit zaman içerir. Aynı, **_stati64** için de geçerlidir.
 
 > [!NOTE]
 > **_wstat** , Windows Vista sembolik bağlantılarıyla çalışmaz. Bu durumlarda **_wstat** her zaman 0 ' ın bir dosya boyutunu rapor eder. **_stat** sembolik bağlantılarla doğru şekilde çalışır.
 
-Bu işlev, parametrelerini doğrular. *Yolun* veya *arabelleğin* ikisi de **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
+Bu işlev, parametrelerini doğrular. *Yolun* veya *arabelleğin* ikisi de **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -245,23 +246,23 @@ SYS\STAT'TE tanımlanan **_stat** yapısı. H, aşağıdaki alanları içerir.
 | **st_gid** | Dosyanın sahibi olan grubun sayısal tanımlayıcısı (UNIX 'e özgü) Bu alan, her zaman Windows sistemlerinde sıfırdır. Yeniden yönlendirilen bir dosya Windows dosyası olarak sınıflandırılır. |
 | **st_atime** | Dosyaya son erişim zamanı. NTFS 'de geçerlidir ancak FAT biçimli disk sürücülerinde değildir. |
 | **st_ctime** | Dosya oluşturma zamanı. NTFS 'de geçerlidir ancak FAT biçimli disk sürücülerinde değildir. |
-| **st_dev** | Dosyayı içeren diskin sürücü numarası ( **st_rdev**ile aynı). |
-| **st_ino** | Dosya (UNIX 'e özgü) için bilgi düğümünün ( **INode**) sayısı. UNIX dosya sistemlerinde, **inode** dosya tarih ve saat damgalarını, izinleri ve içeriği tanımlar. Dosyalar birbirine sabit bağlandığında, aynı **INode**öğesini paylaşır. **İnode**ve bu nedenle **st_ino**, FAT, HPFS veya NTFS dosya sistemlerinde bir anlamı yoktur. |
+| **st_dev** | Dosyayı içeren diskin sürücü numarası ( **st_rdev** ile aynı). |
+| **st_ino** | Dosya (UNIX 'e özgü) için bilgi düğümünün ( **INode**) sayısı. UNIX dosya sistemlerinde, **inode** dosya tarih ve saat damgalarını, izinleri ve içeriği tanımlar. Dosyalar birbirine sabit bağlandığında, aynı **INode** öğesini paylaşır. **İnode** ve bu nedenle **st_ino**, FAT, HPFS veya NTFS dosya sistemlerinde bir anlamı yoktur. |
 | **st_mode** | Dosya modu bilgileri için bit maskesi. **_S_IFDIR** bit, *yol* bir dizin belirtiyorsa ayarlanır; *yol* sıradan bir dosya veya cihaz belirtirse **_S_IFREG** bit ayarlanır. Kullanıcı okuma/yazma bitleri dosyanın izin moduna göre ayarlanır; Kullanıcı yürütme bitleri dosya adı uzantısına göre ayarlanır. |
 | **st_mtime** | Dosyanın son değiştirilme zamanı. |
 | **st_nlink** | NTFS olmayan dosya sistemlerinde her zaman 1. |
-| **st_rdev** | Dosyayı içeren diskin sürücü numarası ( **st_dev**ile aynı). |
+| **st_rdev** | Dosyayı içeren diskin sürücü numarası ( **st_dev** ile aynı). |
 | **st_size** | Dosyanın bayt cinsinden boyutu; **i64** soneki olan çeşitlemeler için 64 bitlik bir tamsayı. |
 | **st_uid** | Dosyanın sahibi olan kullanıcının sayısal tanımlayıcısı (UNIX 'e özgü). Bu alan Windows sistemlerinde her zaman sıfır olur. Yeniden yönlendirilen bir dosya Windows dosyası olarak sınıflandırılır. |
 
-*Yol* bir cihaza başvuruyorsa, **_stat** yapısındaki **st_size**, çeşitli zaman alanları, **st_dev**ve **st_rdev** alanları anlamsız bir şekilde daha düşüktür. Çünkü STAT. H, türlerde tanımlı [_dev_t](../../c-runtime-library/standard-types.md) türünü kullanır. H, TÜRLERI dahil etmeniz gerekir. STAT 'dan önce H. U kodunuzda H.
+*Yol* bir cihaza başvuruyorsa, **_stat** yapısındaki **st_size**, çeşitli zaman alanları, **st_dev** ve **st_rdev** alanları anlamsız bir şekilde daha düşüktür. Çünkü STAT. H, türlerde tanımlı [_dev_t](../../c-runtime-library/standard-types.md) türünü kullanır. H, TÜRLERI dahil etmeniz gerekir. STAT 'dan önce H. U kodunuzda H.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_stat**, **_stat32**, **_stat64**, **_stati64**, **_stat32i64**, **_stat64i32**|\<sys/types.h>izleyen\<sys/stat.h>|\<errno.h>|
-|**_wstat**, **_wstat32**, **_wstat64**, **_wstati64**, **_wstat32i64**, **_wstat64i32**|\<sys/types.h>ardından \<sys/stat.h> veya\<wchar.h>|\<errno.h>|
+|**_stat**, **_stat32**, **_stat64**, **_stati64**, **_stat32i64**, **_stat64i32**|\<sys/types.h> izleyen \<sys/stat.h>|\<errno.h>|
+|**_wstat**, **_wstat32**, **_wstat64**, **_wstati64**, **_wstat32i64**, **_wstat64i32**|\<sys/types.h> ardından \<sys/stat.h> veya \<wchar.h>|\<errno.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

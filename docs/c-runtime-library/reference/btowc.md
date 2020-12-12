@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: btowc'
 title: btowc
 ms.date: 4/2/2020
 api_name:
@@ -26,12 +27,12 @@ f1_keywords:
 helpviewer_keywords:
 - btowc function
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8
-ms.openlocfilehash: cbeff70674a257217c66d39475a2c809c9bd9559
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bbd6121499e03c356e80e49cbcbe75929ca96c2a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913358"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171731"
 ---
 # <a name="btowc"></a>btowc
 
@@ -62,7 +63,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**btowc**|\<stdio. h> veya \<wchar. h>|
+|**btowc**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

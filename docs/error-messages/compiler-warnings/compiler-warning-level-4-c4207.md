@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4207'
 title: Derleyici Uyarısı (düzey 4) C4207
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4207
 ms.assetid: f4e09e3e-ac87-4489-8e3f-c8f76b82e721
-ms.openlocfilehash: e694f96d7f6271686d1b2a19e5a12e5e08e1cfbe
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fe442f71789533227a68a2f9059291de207e277b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219956"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173226"
 ---
 # <a name="compiler-warning-level-4-c4207"></a>Derleyici Uyarısı (düzey 4) C4207
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: cacosh, cacoshf, cacoshl'
 title: cacosh, cacoshf, cacoshl
 ms.date: 11/04/2016
 api_name:
@@ -33,16 +34,16 @@ helpviewer_keywords:
 - cacoshf function
 - cacoshl function
 ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703
-ms.openlocfilehash: 05ba0b37540e9f1b2dbb4d255e0fa033b54762d1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c822a63021d68c7b07768b19c55be344f258e195
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943398"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171575"
 ---
 # <a name="cacosh-cacoshf-cacoshl"></a>cacosh, cacoshf, cacoshl
 
-Gerçek eksen üzerinde 1 ' den küçük olan bir dal kesilmiş bir karmaşık sayının ters hiperbolik kosinüsünü alır. biçimindeki telefon numarasıdır.
+Gerçek eksen üzerinde 1 ' den küçük olan bir dal kesilmiş bir karmaşık sayının ters hiperbolik kosinüsünü alır. .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,7 +67,7 @@ _Lcomplex cacoshl(
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -75,13 +76,13 @@ Radyan cinsinden *z*'nin ters hiperbolik kosinüsü. Sonuç sınırsız ve negat
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **cacosh** aşırı yüklerini çağırabilirsiniz. C programında, **cacosh** her zaman bir **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **cacosh** aşırı yüklerini çağırabilirsiniz. C programında, **cacosh** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**cacosh**, **cacoshf**, **cacoshl**|\<karmaşık. h >|\<ccomplex >|
+|**cacosh**,               **cacoshf**, **cacoshl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

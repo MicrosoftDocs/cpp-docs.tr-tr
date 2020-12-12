@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Bessel Işlevleri: _j0, _j1, _jn, _y0, _y1, _yn'
 title: 'Bessel Işlevleri: _j0, _j1, _jn, _y0, _y1, _yn'
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - _y1 function
 - _yn function
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
-ms.openlocfilehash: ef914d542d058898cf9b16478fd40ef4b0725674
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8ada869b615e26d004e10ccc3355e83c9772888f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913470"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171874"
 ---
 # <a name="bessel-functions-_j0-_j1-_jn-_y0-_y1-_yn"></a>Bessel Işlevleri: _j0, _j1, _jn, _y0, _y1, _yn
 
@@ -86,25 +87,25 @@ double _yn(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayı*<br/>
+*x*<br/>
 Kayan nokta değeri.
 
-*No*<br/>
+*n*<br/>
 Bessel işlevinin tamsayı sırası.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri *x*olarak bir Bessel işlevi döndürür. **_Y0**, **_y1**veya **_Yn** işlevlerde *x* negatifse, yordam **errno** ' ı **Edom**olarak ayarlar, **stderr**'e **_DOMAIN** bir hata iletisi yazdırır ve **_HUGE_VAL**döndürür. Hata işlemeyi **_matherr**kullanarak değiştirebilirsiniz.
+Bu yordamların her biri *x* olarak bir Bessel işlevi döndürür. **_Y0**, **_y1** veya **_Yn** işlevlerde *x* negatifse, yordam **errno** ' ı **Edom** olarak ayarlar, **stderr**'e **_DOMAIN** bir hata iletisi yazdırır ve **_HUGE_VAL** döndürür. Hata işlemeyi **_matherr** kullanarak değiştirebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_J0**, **_j1**ve **_jn** yordamları ilk tür Bessel işlevlerini döndürür: sırasıyla 0, 1, ve n.
+**_J0**, **_j1** ve **_jn** yordamları ilk tür Bessel işlevlerini döndürür: sırasıyla 0, 1, ve n.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
 |± **QNAN**, **IND**|**Geçersiz**|**_DOMAIN**|
 
-**_Y0**, **_y1**ve **_Yn** yordamları ikinci türde Bessel işlevlerini döndürür: sırasıyla 0, 1, ve n.
+**_Y0**, **_y1** ve **_Yn** yordamları ikinci türde Bessel işlevlerini döndürür: sırasıyla 0, 1, ve n.
 
 |Giriş|SEH özel durumu|Matherr özel durumu|
 |-----------|-------------------|-----------------------|
@@ -118,7 +119,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_Yn**|\<cmath> (C++), \<Math. h> (C, C++)|
+|**_j0**, **_j1**, **_jn**, **_y0**, **_y1**, **_Yn**|\<cmath> (c++), \<math.h> (C, c++)|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -165,5 +166,5 @@ Bessel functions for x = 2.387000:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [_matherr](matherr.md)<br/>

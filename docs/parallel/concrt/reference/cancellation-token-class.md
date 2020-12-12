@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: cancellation_token sınıfı'
 title: cancellation_token Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token class
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
-ms.openlocfilehash: 6f1e204c87a6bc940227416696e3cee233271e64
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f97d0f6e55f06b4b75b22cc1ae6eefa05b50f85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213872"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172199"
 ---
 # <a name="cancellation_token-class"></a>cancellation_token Sınıfı
 
 `cancellation_token`Sınıfı, bir işlemin iptal edilip edilmeyeceğini belirleme yeteneğini temsil eder. Belirli bir belirteç `task_group` , bir, `structured_task_group` veya `task` örtülü iptal sağlamak için ilişkilendirilebilir. Ayrıca, iptal için yoklanabilir veya varsa ve ilişkili bir geri çağırma `cancellation_token_source` işlemi iptal edilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class cancellation_token;
@@ -67,13 +68,13 @@ class cancellation_token;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="cancellation_token"></a><a name="dtor"></a>~ cancellation_token
+## <a name="cancellation_token"></a><a name="dtor"></a> ~ cancellation_token
 
 ```cpp
 ~cancellation_token();
 ```
 
-## <a name="cancellation_token"></a><a name="ctor"></a>cancellation_token
+## <a name="cancellation_token"></a><a name="ctor"></a> cancellation_token
 
 ```cpp
 cancellation_token(const cancellation_token& _Src);
@@ -86,7 +87,7 @@ cancellation_token(cancellation_token&& _Src);
 *_Src*<br/>
 Kopyalanacak veya taşınacak cancellation_token.
 
-## <a name="deregister_callback"></a><a name="deregister_callback"></a>deregister_callback
+## <a name="deregister_callback"></a><a name="deregister_callback"></a> deregister_callback
 
 `register`Kayıt sırasında döndürülen nesneye göre yöntemi aracılığıyla önceden kaydedilmiş bir geri aramayı kaldırır `cancellation_token_registration` .
 
@@ -99,7 +100,7 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
 *_Registration*<br/>
 `cancellation_token_registration`Kaydı kaldırılacak geri aramaya karşılık gelen nesne. Bu belirteç daha önce yönteme bir çağrıdan geri döndürülmüş olmalıdır `register` .
 
-## <a name="is_cancelable"></a><a name="is_cancelable"></a>is_cancelable
+## <a name="is_cancelable"></a><a name="is_cancelable"></a> is_cancelable
 
 Bu belirtecin iptal edilip edilmeyeceğini belirten bir gösterge döndürür.
 
@@ -111,7 +112,7 @@ bool is_cancelable() const;
 
 Bu belirtecin iptal edilip edilmeyeceğini belirten bir gösterge.
 
-## <a name="is_canceled"></a><a name="is_canceled"></a>is_canceled
+## <a name="is_canceled"></a><a name="is_canceled"></a> is_canceled
 
 **`true`** Belirtecin iptal edilip edilmediğinde döndürür.
 
@@ -123,7 +124,7 @@ bool is_canceled() const;
 
 **`true`** Belirteç iptal edilirse değer; Aksi takdirde değer **`false`** .
 
-## <a name="none"></a><a name="none"></a>seçim
+## <a name="none"></a><a name="none"></a> seçim
 
 İptal 'e hiçbir şekilde tabi olmayan bir iptal belirteci döndürür.
 
@@ -135,7 +136,7 @@ static cancellation_token none();
 
 İptal edilmemiş bir iptal belirteci.
 
-## <a name="operator"></a><a name="operator_neq"></a>işleç! =
+## <a name="operator"></a><a name="operator_neq"></a> işleç! =
 
 ```cpp
 bool operator!= (const cancellation_token& _Src) const;
@@ -148,7 +149,7 @@ bool operator!= (const cancellation_token& _Src) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="operator"></a><a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 ```cpp
 cancellation_token& operator= (const cancellation_token& _Src);
@@ -163,7 +164,7 @@ cancellation_token& operator= (cancellation_token&& _Src);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="operator"></a><a name="operator_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> işleç = =
 
 ```cpp
 bool operator== (const cancellation_token& _Src) const;
@@ -176,7 +177,7 @@ bool operator== (const cancellation_token& _Src) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="register_callback"></a><a name="register_callback"></a>register_callback
+## <a name="register_callback"></a><a name="register_callback"></a> register_callback
 
 Belirteç ile bir geri çağırma işlevi kaydeder. Belirteç iptal edildiğinde, geri çağırma yapılır. Belirteç bu yöntemin çağrıldığı noktada zaten iptal edilirse, geri çağırma işlemi hemen ve zaman uyumlu olarak yapılır.
 
@@ -195,7 +196,7 @@ Bu iptal edildiğinde geri çağrılacak işlev nesnesi `cancellation_token` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`cancellation_token_registration` `deregister` Daha önce kaydedilen bir geri aramanın kaydını silmek ve oluşmasını engellemek için yönteminde kullanılabilen bir nesne. Yöntemi, [invalid_operation](invalid-operation-class.md) `cancellation_token` [cancellation_token:: None](#none) yöntemi kullanılarak oluşturulan bir nesne üzerinde çağrılırsa invalid_operation bir özel durum oluşturur.
+`cancellation_token_registration` `deregister` Daha önce kaydedilen bir geri aramanın kaydını silmek ve oluşmasını engellemek için yönteminde kullanılabilen bir nesne. Yöntemi, [](invalid-operation-class.md) `cancellation_token` [cancellation_token:: None](#none) yöntemi kullanılarak oluşturulan bir nesne üzerinde çağrılırsa invalid_operation bir özel durum oluşturur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: cancellation_token_source sınıfı'
 title: cancellation_token_source Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token_source class
 ms.assetid: 3548b1a0-12b0-4334-95db-4bf57141c066
-ms.openlocfilehash: 131c4155ad902221d14f90f750f89c31479e2067
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: e36d1097f43c22d8274bcd767f2b521ae5b5dba0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142226"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172134"
 ---
 # <a name="cancellation_token_source-class"></a>cancellation_token_source Sınıfı
 
-`cancellation_token_source` sınıfı, bazı iptal edilebilen işlemleri iptal etme yeteneğini temsil eder.
+`cancellation_token_source`Sınıfı, bazı iptal edilebilen işlemleri iptal etme yeteneğini temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class cancellation_token_source;
@@ -34,22 +35,22 @@ class cancellation_token_source;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[cancellation_token_source](#ctor)|Fazla Yüklendi. Yeni bir `cancellation_token_source`oluşturur. Kaynak, bazı iptal edilebilen bir işlemin iptal edilmesini işaretlemek için kullanılabilir.|
+|[cancellation_token_source](#ctor)|Fazla Yüklendi. Yeni bir oluşturur `cancellation_token_source` . Kaynak, bazı iptal edilebilen bir işlemin iptal edilmesini işaretlemek için kullanılabilir.|
 |[~ cancellation_token_source yok edici](#dtor)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[İptal](#cancel)|Belirteci iptal eder. Belirteci kullanan `task_group`, `structured_task_group`veya `task`, bu çağrıdan sonra iptal edilir ve sonraki kesinti noktasında bir özel durum oluşturur.|
-|[create_linked_source](#create_linked_source)|Fazla Yüklendi. Belirtilen belirteç iptal edildiğinde iptal edilen bir `cancellation_token_source` oluşturur.|
+|[İptal](#cancel)|Belirteci iptal eder. `task_group`Belirteç kullanan herhangi bir, `structured_task_group` veya `task` Bu çağrıdan sonra bir özel durum oluşturur.|
+|[create_linked_source](#create_linked_source)|Fazla Yüklendi. `cancellation_token_source`Belirtilen belirteç iptal edildiğinde iptal edilen bir oluşturur.|
 |[get_token](#get_token)|Bu kaynakla ilişkili bir iptal belirteci döndürür. Döndürülen belirteç iptal için yoklanabilir veya iptal gerçekleştiğinde bir geri çağırma sağlayabilir.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator!=](#operator_neq)||
+|[işleç! =](#operator_neq)||
 |[işleç =](#operator_eq)||
 |[işleç = =](#operator_eq_eq)||
 
@@ -63,23 +64,23 @@ class cancellation_token_source;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="dtor"></a>~ cancellation_token_source
+## <a name="cancellation_token_source"></a><a name="dtor"></a> ~ cancellation_token_source
 
 ```cpp
 ~cancellation_token_source();
 ```
 
-## <a name="cancel"></a>İptal
+## <a name="cancel"></a><a name="cancel"></a> İptal
 
-Belirteci iptal eder. Belirteci kullanan `task_group`, `structured_task_group`veya `task`, bu çağrıdan sonra iptal edilir ve sonraki kesinti noktasında bir özel durum oluşturur.
+Belirteci iptal eder. `task_group`Belirteç kullanan herhangi bir, `structured_task_group` veya `task` Bu çağrıdan sonra bir özel durum oluşturur.
 
 ```cpp
 void cancel() const;
 ```
 
-## <a name="ctor"></a>cancellation_token_source
+## <a name="cancellation_token_source"></a><a name="ctor"></a> cancellation_token_source
 
-Yeni bir `cancellation_token_source`oluşturur. Kaynak, bazı iptal edilebilen bir işlemin iptal edilmesini işaretlemek için kullanılabilir.
+Yeni bir oluşturur `cancellation_token_source` . Kaynak, bazı iptal edilebilen bir işlemin iptal edilmesini işaretlemek için kullanılabilir.
 
 ```cpp
 cancellation_token_source();
@@ -94,9 +95,9 @@ cancellation_token_source(cancellation_token_source&& _Src);
 *_Src*<br/>
 Kopyalanacak veya taşınacak nesne.
 
-## <a name="create_linked_source"></a>create_linked_source
+## <a name="create_linked_source"></a><a name="create_linked_source"></a> create_linked_source
 
-Belirtilen belirteç iptal edildiğinde iptal edilen bir `cancellation_token_source` oluşturur.
+`cancellation_token_source`Belirtilen belirteç iptal edildiğinde iptal edilen bir oluşturur.
 
 ```cpp
 static cancellation_token_source create_linked_source(
@@ -115,16 +116,16 @@ Yineleyici türü.
 İptali döndürülen belirteç kaynağının iptaline neden olacak bir belirteç. Döndürülen belirteç kaynağının bu parametrenin içerdiği kaynaktan bağımsız olarak da iptal edilip olamayacağını unutmayın.
 
 *_Begin*<br/>
-İptali C++ için dinlenecek belirteçler aralığının başlangıcına karşılık gelen standart kitaplık Yineleyici.
+İptali için dinlenecek belirteçler aralığının başlangıcına karşılık gelen C++ standart kitaplığı Yineleyici.
 
 *_End*<br/>
-İptali C++ için dinlemek üzere belirteçleri aralığının sonuna karşılık gelen standart kitaplık Yineleyici.
+İptali için dinlenecek belirteçler aralığının sonuna karşılık gelen C++ standart kitaplığı Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`_Src` parametresi tarafından belirtilen belirteç iptal edildiğinde iptal edilen `cancellation_token_source`.
+`cancellation_token_source`Parametresi tarafından belirtilen belirteç iptal edildiğinde iptal edilir `_Src` .
 
-## <a name="get_token"></a>get_token
+## <a name="get_token"></a><a name="get_token"></a> get_token
 
 Bu kaynakla ilişkili bir iptal belirteci döndürür. Döndürülen belirteç iptal için yoklanabilir veya iptal gerçekleştiğinde bir geri çağırma sağlayabilir.
 
@@ -136,7 +137,7 @@ cancellation_token get_token() const;
 
 Bu kaynakla ilişkili bir iptal belirteci.
 
-## <a name="operator_neq"></a>işleç! =
+## <a name="operator"></a><a name="operator_neq"></a> işleç! =
 
 ```cpp
 bool operator!= (const cancellation_token_source& _Src) const;
@@ -149,7 +150,7 @@ Değişkeni.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 ```cpp
 cancellation_token_source& operator= (const cancellation_token_source& _Src);
@@ -164,7 +165,7 @@ Değişkeni.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="operator_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> işleç = =
 
 ```cpp
 bool operator== (const cancellation_token_source& _Src) const;
@@ -179,4 +180,4 @@ Değişkeni.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

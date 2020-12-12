@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/TSAWARE (Terminal Server 'ı algılayan uygulama oluşturma)
 title: /TSAWARE (Terminal Sunucusu Algılayan Uygulama Oluştur)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - -TSAWARE linker option
 - TSAWARE linker option
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
-ms.openlocfilehash: c2ec12b0b5fbe241d75acc4bb0d87837371a293e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6086bdcdf4aa41f116491a602286a0c8410bd61d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845737"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171978"
 ---
 # <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE (Terminal Sunucusu Algılayan Uygulama Oluştur)
 
@@ -58,5 +59,5 @@ Bir uygulama/T saware ile bağlanmışsa, DUMPBIN [/Headers](headers.md) bu etki
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
 [MSVC bağlayıcı seçenekleri](linker-options.md)<br/>
-[Kullanıcıya özgü bilgileri depolama](/windows/win32/TermServ/storing-user-specific-information)<br/>
+[User-Specific bilgilerini depolama](/windows/win32/TermServ/storing-user-specific-information)<br/>
 [Terminal Hizmetleri ortamındaki eski uygulamalar](/previous-versions/aa382957(v=vs.85))

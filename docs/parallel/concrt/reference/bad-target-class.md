@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bad_target sınıfı'
 title: bad_target Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - bad_target class
 ms.assetid: e6dcddbf-9217-4fac-ac7f-7b8b4781d2f5
-ms.openlocfilehash: 023607ff142b7fa39165cc9b5280a8e9345a3645
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 0bade57ef06ee1ecf675d69531da918fc2a3510f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142850"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172251"
 ---
 # <a name="bad_target-class"></a>bad_target Sınıfı
 
 Bu sınıf, bir ileti bloğuna gerçekleştirilen işlem için geçersiz olan bir hedefe işaretçi verildiğinde oluşan bir özel durumu açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class bad_target : public std::exception;
@@ -31,7 +32,7 @@ class bad_target : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[bad_target](#ctor)|Fazla Yüklendi. `bad_target` nesnesi oluşturur.|
+|[bad_target](#ctor)|Fazla Yüklendi. Bir `bad_target` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -49,9 +50,9 @@ Bu özel durum tipik olarak, bir hedef gibi farklı bir hedef için ayrılmış 
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>bad_target
+## <a name="bad_target"></a><a name="ctor"></a> bad_target
 
-`bad_target` nesnesi oluşturur.
+Bir `bad_target` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP bad_target(_In_z_ const char* _Message) throw();
@@ -66,5 +67,5 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[Zaman Uyumsuz İleti Blokları](../../../parallel/concrt/asynchronous-message-blocks.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[Zaman uyumsuz Ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md)

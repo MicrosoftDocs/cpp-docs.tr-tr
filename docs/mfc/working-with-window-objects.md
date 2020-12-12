@@ -1,32 +1,33 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: pencere nesneleriyle çalışma'
 title: Pencere Nesneleriyle Çalışma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - child windows [MFC], working with
 - window objects [MFC], working with
 ms.assetid: f73aa254-90e3-46a9-8e9b-d78b7054a331
-ms.openlocfilehash: c696d880ffa69b0a0399c5282621546c5783ebe4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4a8c6f2c40eadbfe53aa79683bea29847adf684f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399492"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172602"
 ---
 # <a name="working-with-window-objects"></a>Pencere Nesneleriyle Çalışma
 
-İki tür etkinlik için windows çağrıları ile çalışma:
+İki tür etkinlik için Windows çağrıları ile çalışma:
 
 - Windows iletilerini işleme
 
 - Pencerede çizme
 
-Kendi alt pencereleri de dahil olmak üzere herhangi bir pencerede, Windows iletileri işlemek için bkz. [iletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md) C++ pencere sınıfa ileti eşlemesi için. Ardından ileti işleyicisi sınıfınızda üye işlevleri yazın.
+Kendi alt pencereleri dahil olmak üzere herhangi bir pencerede Windows iletilerini işlemek için bkz. iletileri C++ pencere sınıfınız ile eşlemek için [Iletileri IŞLEVLERE eşleme](../mfc/reference/mapping-messages-to-functions.md) . Sonra sınıfınıza ileti işleyici üye işlevlerini yazın.
 
-Çoğu bir framework uygulamasında çizim Görünümü'nde gerçekleşir, [OnDraw](../mfc/reference/cview-class.md#ondraw) pencerenin içeriği çizilmesi her üye işlevi çağrılır. Pencerenizin görünüm alt varsa, görünümün çizim bazıları alt pencerenizi sağlayarak temsilci `OnDraw` , pencerenin üye işlevleri birini çağırın.
+Çerçeve uygulamasındaki çoğu çizim, pencerenin içeriği çizildiğinde [OnDraw](../mfc/reference/cview-class.md#ondraw) üye işlevi çağrılır görünümünde oluşur. Pencereniz görünümün bir alt öğesi ise, `OnDraw` pencerenin üye işlevlerinden birini çağırarak görünümün çiziminin bir kısmını alt pencerenize devredebilirsiniz.
 
-Çizim için herhangi bir durumda, bir cihaz bağlamı ihtiyacınız olacak. Stok Kalem ve fırça pencereniz ile ilişkili cihaz bağlamı içinde yer alan diğer grafik nesneleri kullanabilirsiniz. Veya gereksinim duyduğunuz çizim etkileri almak için bu nesneleri değiştirebilirsiniz. Cihaz bağlamı istediğiniz olarak ayarlamak, üye işlevleri sınıfı çağırın [CDC](../mfc/reference/cdc-class.md) (cihaz bağlamı) metin satırlar ve şekiller çizmek için; renkleri; kullanılacak ve sınıfı bir koordinat sistemiyle çalışmak için.
+Herhangi bir durumda, çizim için bir cihaz bağlamına ihtiyaç duyarsınız. Kaleminizle ilişkili cihaz bağlamındaki hisse senedi kalemini, fırçayı ve diğer grafik nesnelerini kullanabilirsiniz. Ya da bu nesneleri, ihtiyacınız olan çizim efektlerini almak için değiştirebilirsiniz. Cihaz içeriğiniz istediğiniz gibi ayarlanmış olarak, çizgi, şekil ve metin çizmek için [CDC](../mfc/reference/cdc-class.md) (Device-Context sınıfı) sınıfının üye işlevlerini çağırın; renkleri kullanmak için; ve bir koordinat sistemiyle çalışmak için.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md)
 
@@ -38,4 +39,4 @@ Kendi alt pencereleri de dahil olmak üzere herhangi bir pencerede, Windows ilet
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Nesneleri](../mfc/window-objects.md)
+[Pencere nesneleri](../mfc/window-objects.md)

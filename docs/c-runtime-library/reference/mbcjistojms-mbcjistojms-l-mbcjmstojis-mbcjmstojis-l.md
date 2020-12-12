@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l'
 title: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - mbcjmstojis_l function
 - mbcjistojms_l function
 ms.assetid: dece5127-b337-40a4-aa10-53320a2c9432
-ms.openlocfilehash: fc4df04274c33fa14af0762dc62f20ed09f23cd9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6c7d19ce59c381d4f4a60fb2d1ddbed41fe43ba3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918432"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171523"
 ---
 # <a name="_mbcjistojms-_mbcjistojms_l-_mbcjmstojis-_mbcjmstojis_l"></a>_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 
@@ -93,7 +94,7 @@ Japonca yerel ayarında, bu işlevler dönüştürülmüş bir karakter döndür
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbcjistojms** işlevi, bir Japonya endüstri standardı (JIS) karakterini Microsoft Kanji (Shift JIS) karakterine dönüştürür. Karakter yalnızca, öncü ve sondaki baytlar 0x21-0x7E aralığında olduğunda dönüştürülür. Lider veya deneme baytı bu aralığın dışındaysa, **errno** **eilseq**olarak ayarlanır. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+**_Mbcjistojms** işlevi, bir Japonya endüstri standardı (JIS) karakterini Microsoft Kanji (Shift JIS) karakterine dönüştürür. Karakter yalnızca, öncü ve sondaki baytlar 0x21-0x7E aralığında olduğunda dönüştürülür. Lider veya deneme baytı bu aralığın dışındaysa, **errno** **eilseq** olarak ayarlanır. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 **_Mbcjmstojis** Işlevi BIR Shift JıS karakterini JIS karaktere dönüştürür. Karakter yalnızca, ön bayt 0x81-0x9F veya 0xE0-0xFC aralığında ise ve iz baytı 0x40-0x7E veya 0x80-0xFC aralığında olduğunda dönüştürülür. Bu aralıktaki bazı kod noktalarında atanmış bir karakter olmadığı ve dönüştürülemediği unutulmamalıdır.
 
@@ -101,7 +102,7 @@ Japonca yerel ayarında, bu işlevler dönüştürülmüş bir karakter döndür
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Önceki sürümlerde **_mbcjistojms** ve **_mbcjmstojis** sırasıyla **jistojms** ve **jmstojıs**olarak adlandırılmıştı. Bunun yerine **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** ve **_mbcjmstojis_l** kullanılmalıdır.
+Önceki sürümlerde **_mbcjistojms** ve **_mbcjmstojis** sırasıyla **jistojms** ve **jmstojıs** olarak adlandırılmıştı. Bunun yerine **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** ve **_mbcjmstojis_l** kullanılmalıdır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -109,10 +110,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbcjistojms**|\<mbstring. h>|
-|**_mbcjistojms_l**|\<mbstring. h>|
-|**_mbcjmstojis**|\<mbstring. h>|
-|**_mbcjmstojis_l**|\<mbstring. h>|
+|**_mbcjistojms**|\<mbstring.h>|
+|**_mbcjistojms_l**|\<mbstring.h>|
+|**_mbcjmstojis**|\<mbstring.h>|
+|**_mbcjmstojis_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

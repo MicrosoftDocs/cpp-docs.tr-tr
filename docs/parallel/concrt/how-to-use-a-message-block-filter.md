@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: Ileti bloğu filtresi kullanma'
 title: 'Nasıl yapılır: İleti Bloğu Filtresini Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - message-block filters, using [Concurrency Runtime]
 - using message-block filters [Concurrency Runtime]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
-ms.openlocfilehash: ac58ef2240d2ea6ba34b334106c08595e70b02e8
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 3c07aa7f12ed952d5256ba8fc7f53b619edefb7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008635"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172601"
 ---
 # <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: İleti Bloğu Filtresini Kullanma
 
@@ -18,7 +19,7 @@ Bu belgede, zaman uyumsuz bir ileti bloğunun, bu iletinin yükünün temelinde 
 
 [Concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md), [concurrency:: Call](../../parallel/concrt/reference/call-class.md)veya [concurrency:: Transformer](../../parallel/concrt/reference/transformer-class.md)gibi bir ileti bloğu nesnesi oluşturduğunuzda, ileti bloğunun bir iletiyi kabul ettiğini veya reddettiğini belirleyen bir *filtre işlevi* sağlayabilirsiniz. Filtre işlevi, ileti bloğunun yalnızca belirli değerleri almasını güvence altına almak için kullanışlı bir yoldur.
 
-*Veri akışı ağlarına*ileti blokları bağlamanıza olanak sağladığından filtre işlevleri önemlidir. Bir veri akışı ağında, ileti blokları yalnızca belirli ölçütlere uyan iletileri işleyerek veri akışını denetler. Bunu, veri akışının koşullu deyimler, döngüler vb. gibi denetim yapıları kullanılarak düzenlenen denetim akışı modeliyle karşılaştırın.
+*Veri akışı ağlarına* ileti blokları bağlamanıza olanak sağladığından filtre işlevleri önemlidir. Bir veri akışı ağında, ileti blokları yalnızca belirli ölçütlere uyan iletileri işleyerek veri akışını denetler. Bunu, veri akışının koşullu deyimler, döngüler vb. gibi denetim yapıları kullanılarak düzenlenen denetim akışı modeliyle karşılaştırın.
 
 Bu belge bir ileti filtresinin nasıl kullanılacağına ilişkin temel bir örnek sağlar. İleti filtrelerini ve ileti bloklarını bağlamak için veri akışı modelini kullanan ek örnekler için bkz. [Izlenecek yol: veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md) ve [izlenecek yol: Image-Processing ağ oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 

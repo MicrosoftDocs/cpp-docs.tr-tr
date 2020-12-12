@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: memset, Wmemset'
 title: memset, wmemset
 ms.date: 11/04/2016
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - wmemset function
 - memset function
 ms.assetid: e7ceb01b-df69-49c2-b294-a39358ad4699
-ms.openlocfilehash: 6e1db021da70f0af7b045e2a3100dbaaa81e5a50
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 547cbbcab4966291ab540b6e57f68d4057995ff8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171354"
 ---
 # <a name="memset-wmemset"></a>memset, wmemset
 
@@ -60,7 +61,7 @@ wchar_t *wmemset(
 *HD*<br/>
 Hedef işaretçisi.
 
-*c*<br/>
+*,*<br/>
 Ayarlanacak karakter.
 
 *biriktirme*<br/>
@@ -68,11 +69,11 @@ Karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Hedef*değeri.
+*Hedef* değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Hedef* öğesinin ilk *sayı* karakterini *c*karakteriyle belirler.
+*Hedef* öğesinin ilk *sayı* karakterini *c* karakteriyle belirler.
 
 **Güvenlik notunun** Hedef arabellekte en az *sayı* karakteri için yeterli alan olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
@@ -80,8 +81,8 @@ Karakter sayısı.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memset**|\<Memory. h > veya \<String. h >|
-|**Wmemset**|\<wchar. h >|
+|**memset**|\<memory.h> veya \<string.h>|
+|**Wmemset**|\<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -110,7 +111,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Before: This is a test of the memset function
@@ -138,7 +139,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Before: This is a test of the wmemset function
@@ -147,7 +148,7 @@ After:  **** is a test of the wmemset function
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ara Bellek Düzenlemesi](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Arabellek Işleme](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>
 [memchr, wmemchr](memchr-wmemchr.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>

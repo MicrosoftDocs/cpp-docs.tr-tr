@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _memicmp _memicmp_l'
 title: _memicmp, _memicmp_l
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - memicmp_l function
 - _memicmp_l function
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
-ms.openlocfilehash: 365b57dc300da5686895d66fa642e3870612c2ed
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 261c7b64cc7da58c201515697addc587c575a9ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915392"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171419"
 ---
 # <a name="_memicmp-_memicmp_l"></a>_memicmp, _memicmp_l
 
@@ -89,7 +90,7 @@ Dönüş değeri, arabellekler arasındaki ilişkiyi gösterir.
 
 **_Memicmp** işlevi, iki arabellek *buffer1* ve *buffer2* bayt bayt olarak ilk *sayı* karakterlerini karşılaştırır. Karşılaştırma büyük/küçük harfe duyarlı değildir.
 
-Eğer *buffer1* veya *buffer2* , null işaretçisiyse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev **_NLSCMPERROR** döndürür ve **errno** ' ı **EINVAL**olarak ayarlar.
+Eğer *buffer1* veya *buffer2* , null işaretçisiyse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev **_NLSCMPERROR** döndürür ve **errno** ' ı **EINVAL** olarak ayarlar.
 
 **_memicmp** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_memicmp_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -99,8 +100,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_memicmp**|\<Memory. h> veya \<String. h>|
-|**_memicmp_l**|\<Memory. h> veya \<String. h>|
+|**_memicmp**|\<memory.h> veya \<string.h>|
+|**_memicmp_l**|\<memory.h> veya \<string.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

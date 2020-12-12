@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: tür Iletme (C++/CLı)'
 title: Tür İletme (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - type forwarding, C++
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
-ms.openlocfilehash: 0803ecc2ffb2da2748b1ef063481aa2571f27f50
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 360ca624103c8021c17300f897b1091c13e898a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172888"
 ---
 # <a name="type-forwarding-ccli"></a>Tür İletme (C++/CLI)
 
@@ -33,23 +34,23 @@ Aşağıdaki kod örneği, tür iletmenin nasıl kullanılacağını göstermekt
 
 ### <a name="parameters"></a>Parametreler
 
-*new*<br/>
+*Yeni*<br/>
 Tür tanımını taşıdığınız derleme.
 
-*type*<br/>
+*türüyle*<br/>
 Tanımını başka bir derlemeye taşıdığınız tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bileşen (derleme) gönderdikten ve istemci uygulamaları tarafından kullanıldıktan sonra, bir türü bileşenden (bütünleştirilmiş kod) başka bir derlemeye taşımak için tür iletmeyi kullanabilirsiniz, güncelleştirilmiş bileşeni (ve gerekli tüm ek derlemeleri) ve istemcisini gönderebilirsiniz. uygulamalar yeniden derlenmeden çalışmaya devam edecektir.
+Bir bileşen (derleme) gönderdikten ve istemci uygulamaları tarafından kullanıldıktan sonra, bir türü bileşenden (bütünleştirilmiş kod) başka bir derlemeye taşımak, güncelleştirilmiş bileşeni (ve gerekli diğer derlemeleri) göndermek ve istemci uygulamaları yeniden derlenmeden çalışmaya devam edecektir.
 
 Tür iletme yalnızca mevcut uygulamalar tarafından başvurulan bileşenler için geçerlidir. Bir uygulamayı yeniden yapılandırdığınızda, uygulamada kullanılan herhangi bir tür için uygun derleme başvuruları olmalıdır.
 
-Bir derlemeden bir tür (tür A) iletirken, bu tür için `TypeForwardedTo` özniteliği ve bir derleme başvurusu eklemeniz gerekir. Başvurduğunuz derleme aşağıdakilerden birini içermelidir:
+Bir derlemeden bir tür (tür A) iletirken, `TypeForwardedTo` Bu tür için özniteliği ve bir derleme başvurusu eklemeniz gerekir. Başvurduğunuz derleme aşağıdakilerden birini içermelidir:
 
 - A türü için tanım.
 
-- A türü için bir `TypeForwardedTo` özniteliği ve bir derleme başvurusu.
+- `TypeForwardedTo`A türü için bir öznitelik ve bir derleme başvurusu.
 
 İletilebileceği türlerin örnekleri şunlardır:
 
@@ -71,22 +72,22 @@ Aşağıdaki türleri iletemezsiniz:
 
 Bir türü, ortak dil çalışma zamanını hedefleyen herhangi bir dilde yazılmış bir derlemeye iletebilirsiniz.
 
-Bu nedenle, bir. dll derlemesi oluşturmak için kullanılan bir kaynak kodu dosyası bir tür tanımı (`ref class MyClass`) içeriyorsa ve bu tür tanımını derleme B. dll ' ye taşımak istiyordunuz:
+Bu nedenle, derleme A.dll oluşturmak için kullanılan bir kaynak kodu dosyası bir tür tanımı ( `ref class MyClass` ) içeriyorsa ve bu tür tanımını derleme B.dll taşımak istiyordunuz:
 
-1. `MyClass` tür tanımını B. dll derlemek için kullanılan bir kaynak kod dosyasına taşıyın.
+1. `MyClass`Tür tanımını B.dll oluşturmak için kullanılan bir kaynak kod dosyasına taşıyın.
 
-2. Derleme derlemesi B. dll
+2. Derleme derlemesi B.dll
 
-3. Bir. dll dosyası oluşturmak için kullanılan kaynak kodundan `MyClass` tür tanımını silin ve aşağıdaki ile değiştirin:
+3. `MyClass`A.dll oluşturmak için kullanılan kaynak kodundan tür tanımını silin ve aşağıdaki kodla değiştirin:
 
     ```cpp
     #using "B.dll"
     [assembly:TypeForwardedTo(MyClass::typeid)];
     ```
 
-4. Derleme A. dll.
+4. Derleme derlemesi A.dll.
 
-5. İstemci uygulamalarını yeniden derlemeden bir. dll kullanın.
+5. İstemci uygulamalarını yeniden derlemeden A.dll kullanın.
 
 ### <a name="requirements"></a>Gereksinimler
 

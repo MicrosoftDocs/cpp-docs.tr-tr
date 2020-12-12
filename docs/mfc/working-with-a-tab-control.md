@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sekme denetimiyle çalışma'
 title: Sekme Denetimiyle Çalışma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - tab controls [MFC], working with
 - tab controls [MFC], using
 ms.assetid: 819488e3-4944-44b7-9483-195edb8e0aed
-ms.openlocfilehash: 1ff4d57f9968f79a964a57b26fc79d68245c1a3e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7e84f636019fa3b63c3e19b23ac639486c5f2353
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172616"
 ---
 # <a name="working-with-a-tab-control"></a>Sekme Denetimiyle Çalışma
 
-Sekme denetimi kullanmak için en kolay yolu ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) iletişim kutusu Düzenleyicisi ile bir iletişim şablonunu kaynağına ekleyerek olduğu. Ayrıca tek başına bir sekme denetimi kullanabilirsiniz. MFC çağrıları `InitCommonControls` sizin için. En önemli görevler şunlardır:
+Sekme denetimi ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) kullanmanın en kolay yolu, iletişim kutusu Düzenleyicisi ile bir iletişim şablonu kaynağına eklemektir. Bir sekme denetimini kendisi de kullanabilirsiniz. MFC `InitCommonControls` sizin için çağrılar. Temel görevler aşağıdaki gibidir:
 
 - [Sekme denetimi oluşturma](../mfc/creating-the-tab-control.md)
 
@@ -23,7 +24,7 @@ Sekme denetimi kullanmak için en kolay yolu ([CTabCtrl](../mfc/reference/ctabct
 
 - [Sekme denetimi bildirim iletilerini işleme](../mfc/processing-tab-control-notification-messages.md)
 
-Sekme denetim nesnesi bir ana görünümünde veya iletişim sınıfta eklendiyse, bu üst yok edildiğinde denetimin yok edilir.
+Sekme denetim nesnesi bir üst görünüme veya iletişim sınıfına katıştırılmışsa, üst öğe yok edildiğinde denetim yok edilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: paralel algoritmalar'
 title: Paralel Algoritmalar
 ms.date: 11/19/2018
 helpviewer_keywords:
 - parallel algorithms [Concurrency Runtime]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
-ms.openlocfilehash: 2c9fd5bd51bfeeaa17ac6f1118798f51b93938d6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9e1762167277654334b3dcb4e26d3a5c8fbe1a5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194504"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172485"
 ---
 # <a name="parallel-algorithms"></a>Paralel Algoritmalar
 
@@ -17,7 +18,7 @@ Paralel Desenler kitaplığı (PPL), veri koleksiyonlarında eşzamanlı olarak 
 
 Paralel algoritmalar Eşzamanlılık Çalışma Zamanı var olan işlevlerden oluşur. Örneğin [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritması, paralel döngü yinelemelerini gerçekleştirmek için bir [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) nesnesi kullanır. `parallel_for`Algoritma bölümleri, kullanılabilir bilgi işlem kaynağı sayısına göre en iyi şekilde çalışır.
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 - [Parallel_for algoritması](#parallel_for)
 
@@ -39,11 +40,11 @@ Paralel algoritmalar Eşzamanlılık Çalışma Zamanı var olan işlevlerden ol
 
   - [Sıralama algoritması seçme](#choose_sort)
 
-## <a name="the-parallel_for-algorithm"></a><a name="parallel_for"></a>Parallel_for algoritması
+## <a name="the-parallel_for-algorithm"></a><a name="parallel_for"></a> Parallel_for algoritması
 
 [Eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritması sürekli olarak aynı görevi paralel olarak gerçekleştirir. Bu görevlerin her biri bir yineleme değeri tarafından parametrelenir. Bu algoritma, bu döngünün yinelemeleri arasında kaynakları paylaşmayan bir döngü gövdesi olduğunda faydalıdır.
 
-`parallel_for`Algoritma, görevleri paralel yürütme için en uygun şekilde bölümler. İş yükleri dengesiz olduğunda bu bölümleri dengelemek için bir iş hırsızlığı algoritması ve Aralık hırsızlığı kullanır. Bir döngü yinelemesi birlikte çalışırken engellediğinde, çalışma zamanı geçerli iş parçacığına diğer iş parçacıklarına veya işlemcilere atanan yineleme aralığını yeniden dağıtır. Benzer şekilde, bir iş parçacığı bir dizi yinelemeyi tamamladığında, çalışma zamanı diğer iş parçacıklarından iş parçacığına yeniden dağıtır. `parallel_for`Algoritma, *iç içe paralel paralellik*de destekler. Bir paralel döngü başka bir paralel döngü içerdiğinde, çalışma zamanı, paralel yürütme için etkin bir şekilde döngü gövdelerinin arasındaki kaynakları işlemeyi düzenler.
+`parallel_for`Algoritma, görevleri paralel yürütme için en uygun şekilde bölümler. İş yükleri dengesiz olduğunda bu bölümleri dengelemek için bir iş hırsızlığı algoritması ve Aralık hırsızlığı kullanır. Bir döngü yinelemesi birlikte çalışırken engellediğinde, çalışma zamanı geçerli iş parçacığına diğer iş parçacıklarına veya işlemcilere atanan yineleme aralığını yeniden dağıtır. Benzer şekilde, bir iş parçacığı bir dizi yinelemeyi tamamladığında, çalışma zamanı diğer iş parçacıklarından iş parçacığına yeniden dağıtır. `parallel_for`Algoritma, *iç içe paralel paralellik* de destekler. Bir paralel döngü başka bir paralel döngü içerdiğinde, çalışma zamanı, paralel yürütme için etkin bir şekilde döngü gövdelerinin arasındaki kaynakları işlemeyi düzenler.
 
 `parallel_for`Algoritmanın birkaç aşırı yüklü sürümü vardır. İlk sürüm bir başlangıç değeri, bir bitiş değeri ve bir çalışma işlevi (bir lambda ifadesi, işlev nesnesi veya işlev işaretçisi) alır. İkinci sürüm, bir başlangıç değeri, bir bitiş değeri, adımla bir değer ve bir çalışma işlevi alır. Bu işlevin ilk sürümü adım değeri olarak 1 kullanır. Kalan sürümler bölümleyici nesneleri alır, bu da `parallel_for` iş parçacıkları arasında aralıkların nasıl bölümlenmesi gerektiğini belirtmenize olanak tanır. Bölümleyiciler, bu belgedeki [çalışmanın bölümlenmesi](#partitions) bölümünde daha ayrıntılı bir şekilde açıklanmıştır.
 
@@ -82,7 +83,7 @@ Algoritmasını kullanan tüm bir örnek için `parallel_for` bkz. [nasıl yapı
 
 [[Üst](#top)]
 
-## <a name="the-parallel_for_each-algorithm"></a><a name="parallel_for_each"></a>Parallel_for_each algoritması
+## <a name="the-parallel_for_each-algorithm"></a><a name="parallel_for_each"></a> Parallel_for_each algoritması
 
 [Eşzamanlılık::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) algoritması, C++ standart kitaplığı tarafından sağlananlar gibi, bir yinelemeli kapsayıcıda, paralel olarak görevler gerçekleştirir. Algoritmanın kullandığı bölümleme mantığını kullanır `parallel_for` .
 
@@ -108,7 +109,7 @@ Algoritmasını kullanan tüm bir örnek için `parallel_for_each` bkz. [nasıl 
 
 [[Üst](#top)]
 
-## <a name="the-parallel_invoke-algorithm"></a><a name="parallel_invoke"></a>Parallel_invoke algoritması
+## <a name="the-parallel_invoke-algorithm"></a><a name="parallel_invoke"></a> Parallel_invoke algoritması
 
 [Eşzamanlılık::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algoritması, bir dizi görevi paralel olarak yürütür. Her görev bitene kadar döndürmez. Aynı anda yürütmek istediğiniz birkaç bağımsız göreviniz varsa, bu algoritma yararlı olur.
 
@@ -132,14 +133,14 @@ Algoritmayı kullanan tüm örnekler için `parallel_invoke` bkz. [nasıl yapıl
 
 [[Üst](#top)]
 
-## <a name="the-parallel_transform-and-parallel_reduce-algorithms"></a><a name="parallel_transform_reduce"></a>Parallel_transform ve parallel_reduce algoritmaları
+## <a name="the-parallel_transform-and-parallel_reduce-algorithms"></a><a name="parallel_transform_reduce"></a> Parallel_transform ve parallel_reduce algoritmaları
 
 [Eşzamanlılık::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) ve [eşzamanlılık::p arallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) algoritmaları, sırasıyla [std:: Transform](../../standard-library/algorithm-functions.md#transform) ve [std:: biriktir](../../standard-library/numeric-functions.md#accumulate)C++ standart kitaplığı algoritmalarının paralel sürümleridir. Eşzamanlılık Çalışma Zamanı sürümleri, paralel olarak yürütülmediği için, işlem sırası belirlenmediğinden, C++ Standart Kitaplığı sürümleri gibi davranır. Performans ve ölçeklenebilirlik avantajlarından paralel olarak işlenmesini sağlamak için yeterince büyük olan bir küme ile çalışırken bu algoritmaları kullanın.
 
 > [!IMPORTANT]
 > `parallel_transform`Ve `parallel_reduce` algoritmaları yalnızca rastgele erişimi, çift yönlü ve ileriye doğru yineleyiciler destekler çünkü bu yineleyiciler kararlı bellek adresleri oluşturur. Ayrıca, bu yineleyiciler lvalue olmayan değerler üretmelidir **`const`** .
 
-### <a name="the-parallel_transform-algorithm"></a><a name="parallel_transform"></a>Parallel_transform algoritması
+### <a name="the-parallel_transform-algorithm"></a><a name="parallel_transform"></a> Parallel_transform algoritması
 
 `parallel transform`Birçok veri paralelleştirme işlemini gerçekleştirmek için algoritmayı kullanabilirsiniz. Örneğin, şunları yapabilirsiniz:
 
@@ -163,7 +164,7 @@ Aşağıdaki örnek, algoritmayı çağırmak için kullanılan temel yapıyı g
 > [!IMPORTANT]
 > Çıkışı için sağladığınız Yineleyici, `parallel_transform` giriş yineleyicisini tamamen örtüşmelidir veya hiç çakışmamalıdır. Giriş ve çıkış yineleyiciler kısmen çakışırsa bu algoritmanın davranışı belirtilmemiş olur.
 
-### <a name="the-parallel_reduce-algorithm"></a><a name="parallel_reduce"></a>Parallel_reduce algoritması
+### <a name="the-parallel_reduce-algorithm"></a><a name="parallel_reduce"></a> Parallel_reduce algoritması
 
 , `parallel_reduce` İlişkilendirilebilir özelliğini karşılayan bir işlem dizisine sahipseniz, algoritma faydalıdır. (Bu algoritma, Commu, özelliği gerektirmez.) İle gerçekleştirebileceğiniz işlemlerden bazıları şunlardır `parallel_reduce` :
 
@@ -181,7 +182,7 @@ Aşağıdaki temel örnek, bir dizi `parallel_reduce` dizeyi tek bir dizede birl
 
 Birçok durumda,, `parallel_reduce` `parallel_for_each` algoritmanın [eşzamanlılık:: combinable](../../parallel/concrt/reference/combinable-class.md) sınıfıyla birlikte kullanılması için toplu olarak düşünebilirsiniz.
 
-### <a name="example-performing-map-and-reduce-in-parallel"></a><a name="map_reduce_example"></a>Örnek: eşleme gerçekleştirme ve paralel olarak azaltma
+### <a name="example-performing-map-and-reduce-in-parallel"></a><a name="map_reduce_example"></a> Örnek: eşleme gerçekleştirme ve paralel olarak azaltma
 
 *Eşleme* işlemi, dizideki her değere bir işlev uygular. Bir *azaltma* işlemi bir dizinin öğelerini tek bir değer olarak birleştirir. C++ Standart Kitaplığı [std:: Transform](../../standard-library/algorithm-functions.md#transform) ve [std:: birikme](../../standard-library/numeric-functions.md#accumulate) işlevlerini kullanarak harita gerçekleştirir ve işlemleri azaltabilirsiniz. Ancak, birçok sorun için `parallel_transform` algoritmayı kullanarak eşleme işlemini paralel olarak gerçekleştirebilir ve `parallel_reduce` algoritma, azaltma işlemini paralel olarak gerçekleştirir.
 
@@ -193,7 +194,7 @@ Bir eşleme gerçekleştiren ve işlemi paralel olarak azaltan başka bir örnek
 
 [[Üst](#top)]
 
-## <a name="partitioning-work"></a><a name="partitions"></a>Bölümlendirme Işi
+## <a name="partitioning-work"></a><a name="partitions"></a> Bölümlendirme Işi
 
 Bir veri kaynağındaki bir işlemi paralel hale getirmek için, temel bir adım, kaynağı birden çok iş parçacığı tarafından aynı anda erişilebilen birden çok bölüme *bölümlemesidir* . Bir bölümleyici, bir paralel algoritmanın iş parçacıkları arasında aralıkları nasıl bölümlememelidir. Bu belgede daha önce açıklandığı gibi, PPL, ilk iş yükü oluşturan bir varsayılan bölümleme mekanizması kullanır ve sonra iş yükleri dengesiz olduğunda bu bölümleri dengelemek için bir iş hırsızlığı algoritması ve Aralık hırsızlığı kullanır. Örneğin, bir döngü yinelemesi bir dizi yinelemeyi tamamladığında, çalışma zamanı diğer iş parçacıklarından iş parçacığına yeniden dağıtır. Ancak bazı senaryolarda, sorununuza daha uygun olan farklı bir bölümleme mekanizması belirtmek isteyebilirsiniz.
 
@@ -229,7 +230,7 @@ Belirli bir senaryoda bir bölümleyici kullanılıp kullanılmayacağını beli
 
 [[Üst](#top)]
 
-## <a name="parallel-sorting"></a><a name="parallel_sorting"></a>Paralel sıralama
+## <a name="parallel-sorting"></a><a name="parallel_sorting"></a> Paralel sıralama
 
 PPL, üç sıralama algoritması sağlar: [eşzamanlılık::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [eşzamanlılık::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)ve [eşzamanlılık::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Bu sıralama algoritmaları, paralel olarak sıralanabilecek bir veri kümesine sahip olduğunuzda yararlıdır. Özellikle, büyük bir veri kümeniz olduğunda veya verilerinizi sıralamak için hesaplama maliyetli bir karşılaştırma işlemi kullandığınızda paralel olarak sıralama faydalıdır. Bu algoritmaların her biri öğeleri yerinde sıralar.
 
@@ -241,9 +242,9 @@ Aşağıdaki tabloda, üç paralel sıralama algoritmalarının önemli özellik
 
 |Algoritma|Açıklama|Sıralama mekanizması|Kararlılığı Sırala|Bellek gereksinimleri|Zaman karmaşıklığı|Yineleyici erişimi|
 |---------------|-----------------|-----------------------|--------------------|-------------------------|---------------------|---------------------|
-|`parallel_sort`|Genel amaçlı karşılaştırma tabanlı sıralama.|Karşılaştırma tabanlı (artan)|Gelmesine|Hiçbiri|O ((N/P) günlüğü (N/P) + 2N ((P-1)/P))|Rastgele|
-|`parallel_buffered_sort`|O (N) alanı gerektiren daha hızlı genel amaçlı karşılaştırma tabanlı sıralama.|Karşılaştırma tabanlı (artan)|Gelmesine|Ek O (N) alanı gerektirir|O ((N/P) günlük (N))|Rastgele|
-|`parallel_radixsort`|O (N) alanı gerektiren tamsayı anahtar tabanlı sıralama.|Karma tabanlı|Dengeli|Ek O (N) alanı gerektirir|O (N/P)|Rastgele|
+|`parallel_sort`|Genel amaçlı karşılaştırma tabanlı sıralama.|Karşılaştırma tabanlı (artan)|Gelmesine|Yok|O ((N/P) günlüğü (N/P) + 2N ((P-1)/P))|Rasgele|
+|`parallel_buffered_sort`|O (N) alanı gerektiren daha hızlı genel amaçlı karşılaştırma tabanlı sıralama.|Karşılaştırma tabanlı (artan)|Gelmesine|Ek O (N) alanı gerektirir|O ((N/P) günlük (N))|Rasgele|
+|`parallel_radixsort`|O (N) alanı gerektiren tamsayı anahtar tabanlı sıralama.|Karma tabanlı|Dengeli|Ek O (N) alanı gerektirir|O (N/P)|Rasgele|
 
 Aşağıdaki çizimde üç paralel sıralama algoritmalarının önemli özellikleri grafik olarak gösterilmektedir.
 
@@ -276,7 +277,7 @@ Bu örnek, karma işlevi olarak bir lambda ifadesi kullanır. Std::[hash sınıf
 
 Karma işlevi bir integral türü döndürmelidir ([std:: is_integral:: değer](../../standard-library/is-integral-class.md) olmalıdır **`true`** ). Bu integral türü türüne dönüştürülebilir olmalıdır `size_t` .
 
-### <a name="choosing-a-sorting-algorithm"></a><a name="choose_sort"></a>Sıralama algoritması seçme
+### <a name="choosing-a-sorting-algorithm"></a><a name="choose_sort"></a> Sıralama algoritması seçme
 
 Çoğu durumda, `parallel_sort` hız ve bellek performansının en iyi dengesini sağlar. Ancak, veri kümesi boyutunu, kullanılabilir işlemcilerin sayısını veya karşılaştırma işlevinizin karmaşıklığını artırdıkça `parallel_buffered_sort` veya `parallel_radixsort` daha iyi bir performans sağlayabilirsiniz. Belirli bir senaryoda kullanılacak sıralama algoritmasının belirlenmesi için en iyi yol, temsilci bilgisayar yapılandırmalarında tipik verileri sıralama süresinin ne kadar sürdüğünü belirlemektir ve ölçmektedir. Sıralama stratejisi seçerken aşağıdaki yönergeleri aklınızda bulundurun.
 
@@ -292,11 +293,11 @@ Karma işlevi bir integral türü döndürmelidir ([std:: is_integral:: değer](
 
 Çok sayıda kullanılabilir bilgi işlem kaynağınız olduğunda veya karşılaştırma işleviniz ya da karma işleviniz görece büyük bir iş gerçekleştirdiğinde bile küçük bir veri kümesinin paralel olarak sıralanması çok uzun olabilir. Küçük veri kümelerini sıralamak için [std:: Sort](../../standard-library/algorithm-functions.md#sort) işlevini kullanabilirsiniz. ( `parallel_sort` ve `parallel_buffered_sort` `sort` veri kümesinden daha büyük bir öbek boyutu belirttiğinizde çağırın; ancak, `parallel_buffered_sort` kilit çakışması veya bellek ayırma nedeniyle daha fazla zaman alan bir O (N) alanı ayırması gerekir.)
 
-Bellek tasarrufu yapmanız gerekiyorsa veya bellek ayırıcı kilitleme çekişmesine tabidir, `parallel_sort` Orta ölçekli bir veri kümesini sıralamak için kullanın. `parallel_sort`ek boşluk gerekmez; diğer algoritmalar O (N) alanı gerektirir.
+Bellek tasarrufu yapmanız gerekiyorsa veya bellek ayırıcı kilitleme çekişmesine tabidir, `parallel_sort` Orta ölçekli bir veri kümesini sıralamak için kullanın. `parallel_sort` ek boşluk gerekmez; diğer algoritmalar O (N) alanı gerektirir.
 
-`parallel_buffered_sort`Orta ölçekli veri kümelerini ve uygulamanız ek O (N) alanı gereksinimini karşılıyorsa sıralamak için kullanın. `parallel_buffered_sort`özellikle çok sayıda bilgi işlem kaynağınız veya pahalı bir karşılaştırma işlevi ya da karma işleviniz olduğunda yararlı olabilir.
+`parallel_buffered_sort`Orta ölçekli veri kümelerini ve uygulamanız ek O (N) alanı gereksinimini karşılıyorsa sıralamak için kullanın. `parallel_buffered_sort` özellikle çok sayıda bilgi işlem kaynağınız veya pahalı bir karşılaştırma işlevi ya da karma işleviniz olduğunda yararlı olabilir.
 
-`parallel_radixsort`Büyük veri kümelerini sıralamak ve uygulamanız ek O (N) alanı gereksinimini karşılıyorsa kullanın. `parallel_radixsort`Özellikle eşdeğer karşılaştırma işlemi daha pahalı olduğunda veya her iki işlem de pahalı olduğunda yararlı olabilir.
+`parallel_radixsort`Büyük veri kümelerini sıralamak ve uygulamanız ek O (N) alanı gereksinimini karşılıyorsa kullanın. `parallel_radixsort` Özellikle eşdeğer karşılaştırma işlemi daha pahalı olduğunda veya her iki işlem de pahalı olduğunda yararlı olabilir.
 
 > [!CAUTION]
 > İyi bir karma işlevi uygulamak için veri kümesi aralığını ve veri kümesindeki her bir öğenin karşılık gelen bir işaretsiz değere nasıl dönüştürüleceğini bilmeniz gerekir. Karma işlemi imzasız değerler üzerinde çalıştığından, imzasız karma değerleri üretilemediğinden farklı bir sıralama stratejisi düşünün.

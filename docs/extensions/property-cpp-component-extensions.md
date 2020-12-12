@@ -1,20 +1,21 @@
 ---
+description: 'Daha fazla bilgi edinin: özelliği (C++/CLı ve C++/CX)'
 title: property (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - property keyword [C++]
 ms.assetid: cc79d2b2-f013-4d81-8252-eece97a18704
-ms.openlocfilehash: fbec97a5bd30bb9bb76459ef2f7b0956ae6a264f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bc3a4e7bd55d82244195a4d9ecf0072a6c513b72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225143"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173005"
 ---
 # <a name="property--ccli-and-ccx"></a>property (C++/CLI ve C++/CX)
 
-Bir veri üyesi veya dizi öğesi gibi davranan ve erişilen bir üye işlev olan bir *özellik*bildirir.
+Bir veri üyesi veya dizi öğesi gibi davranan ve erişilen bir üye işlev olan bir *özellik* bildirir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -35,7 +36,7 @@ Kullanıcı tanımlı özellik adı veya *varsayılan* Özellik adı olan dizinl
 
 Özellik değerini içeren bir veri üyesini açıkça bildirmeniz gerekir. Dizinli bir özellik için, veri üyesi genellikle bir dizi veya koleksiyondur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 property type property_name;
@@ -75,7 +76,7 @@ Devralma niteleyicisi. Geçerli niteleyiciler **abstract** ve **Sealed**.
 *index_list*<br/>
 Bir veya daha fazla dizinin virgülle ayrılmış listesi. Her dizin bir dizin türünden ve özellik yöntemi gövdesinde kullanılabilecek bir isteğe bağlı tanımlayıcıyla oluşur.
 
-*deeri*<br/>
+*değer*<br/>
 Bir küme işleminde özelliğe atanacak değer veya alma işlemini alma.
 
 *property_body*<br/>
@@ -87,11 +88,11 @@ Daha fazla bilgi için bkz. [Özellikler (C++/CX)](../cppcx/properties-c-cx.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 modifier property type property_name;
@@ -124,11 +125,11 @@ Köşeli ayraçlar içinde belirtilen bir veya daha fazla dizinin virgülle ayr�
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk sözdizimi örneği, hem hem de yöntemini dolaylı olarak bildiren *basit bir özelliği*gösterir `set` `get` . Derleyici, özelliğin değerini depolamak için otomatik olarak bir özel alan oluşturur.
+İlk sözdizimi örneği, hem hem de yöntemini dolaylı olarak bildiren *basit bir özelliği* gösterir `set` `get` . Derleyici, özelliğin değerini depolamak için otomatik olarak bir özel alan oluşturur.
 
-İkinci sözdizimi örneği, hem hem de yöntemini açıkça bildiren bir *özellik bloğunu*gösterir `set` `get` .
+İkinci sözdizimi örneği, hem hem de yöntemini açıkça bildiren bir *özellik bloğunu* gösterir `set` `get` .
 
-Üçüncü sözdizimi örneği, müşteri tarafından tanımlanan bir *Dizin özelliğini*gösterir. Dizin özelliği, ayarlanacak veya alınacak değere ek olarak parametreleri alır. Özellik için bir ad belirtmeniz gerekir. Basit bir özelliğin aksine, `set` `get` bir Index özelliğinin ve/veya yöntemlerinin açıkça tanımlanması ve özellik için bir ad belirtmeniz gerekir.
+Üçüncü sözdizimi örneği, müşteri tarafından tanımlanan bir *Dizin özelliğini* gösterir. Dizin özelliği, ayarlanacak veya alınacak değere ek olarak parametreleri alır. Özellik için bir ad belirtmeniz gerekir. Basit bir özelliğin aksine, `set` `get` bir Index özelliğinin ve/veya yöntemlerinin açıkça tanımlanması ve özellik için bir ad belirtmeniz gerekir.
 
 Dördüncü sözdizimi örneği, tür örneğine dizi benzeri erişim sağlayan *varsayılan* bir özelliği gösterir. Anahtar sözcüğü, **`default`** yalnızca varsayılan bir özellik belirtmek için kullanılır. Varsayılan özelliğin adı, özelliğin tanımlandığı türün adıdır.
 
@@ -162,7 +163,7 @@ Bir özellik veri üyesi bildirildiğinde, derleyici bir veri üyesini çıkart�
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

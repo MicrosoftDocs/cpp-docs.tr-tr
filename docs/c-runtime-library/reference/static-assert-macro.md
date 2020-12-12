@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _STATIC_ASSERT makrosu'
 title: _STATIC_ASSERT Makrosu
 ms.date: 11/04/2016
 api_location:
@@ -21,18 +22,18 @@ f1_keywords:
 helpviewer_keywords:
 - _STATIC_ASSERT macro
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
-ms.openlocfilehash: 78544424b727797158109fa3000ee2ebf8066cf7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bbdb615cccfb245868d4c282acf86c9228ea574b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229330"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171205"
 ---
 # <a name="_static_assert-macro"></a>_STATIC_ASSERT Makrosu
 
-Derleme zamanında bir ifadeyi değerlendirin ve sonuç **false**olduğunda bir hata oluşturun.
+Derleme zamanında bir ifadeyi değerlendirin ve sonuç **false** olduğunda bir hata oluşturun.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 _STATIC_ASSERT(

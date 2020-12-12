@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: cancellation_token_registration sınıfı'
 title: cancellation_token_registration Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token_registration class
 ms.assetid: 823d63f4-7233-4d65-8976-6152ccf12d0e
-ms.openlocfilehash: 9342841e207c93b66521c2fc742c1b1114682f78
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1901e5132a9bad6849b1b00a6be63caf9afc9170
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142247"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172147"
 ---
 # <a name="cancellation_token_registration-class"></a>cancellation_token_registration Sınıfı
 
-`cancellation_token_registration` sınıfı, bir `cancellation_token`geri çağırma bildirimini temsil eder. Bir `cancellation_token` `register` yöntemi iptal gerçekleştiğinde bildirim almak için kullanıldığında, çağıranın `deregister` yönteminin kullanımı ile belirli bir geri çağırma işlemini istemesi için geri çağırmada tanıtıcı olarak bir `cancellation_token_registration` nesnesi döndürülür.
+`cancellation_token_registration`Sınıfı, bir geri çağırma bildirimini temsil eder `cancellation_token` . `register`Bir üzerinde yöntemi, `cancellation_token` İptalin ne zaman yapıldığını belirten bir bildirim almak için kullanıldığında, `cancellation_token_registration` çağıran belirli bir geri çağırma işlemini daha sonra metodun kullanımı ile isteyebilmesi için bir nesne geri aramaya bir tanıtıcı olarak döndürülür `deregister` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class cancellation_token_registration;
@@ -38,7 +39,7 @@ class cancellation_token_registration;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operator!=](#operator_neq)||
+|[işleç! =](#operator_neq)||
 |[işleç =](#operator_eq)||
 |[işleç = =](#operator_eq_eq)||
 
@@ -52,13 +53,13 @@ class cancellation_token_registration;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="dtor"></a>~ cancellation_token_registration
+## <a name="cancellation_token_registration"></a><a name="dtor"></a> ~ cancellation_token_registration
 
 ```cpp
 ~cancellation_token_registration();
 ```
 
-## <a name="ctor"></a>cancellation_token_registration
+## <a name="cancellation_token_registration"></a><a name="ctor"></a> cancellation_token_registration
 
 ```cpp
 cancellation_token_registration();
@@ -71,9 +72,9 @@ cancellation_token_registration(cancellation_token_registration&& _Src);
 ### <a name="parameters"></a>Parametreler
 
 *_Src*<br/>
-Kopyalanacak veya taşınacak `cancellation_token_registration`.
+`cancellation_token_registration`Kopyalanacak veya taşınacak.
 
-## <a name="operator_neq"></a>işleç! =
+## <a name="operator"></a><a name="operator_neq"></a> işleç! =
 
 ```cpp
 bool operator!= (const cancellation_token_registration& _Rhs) const;
@@ -82,11 +83,11 @@ bool operator!= (const cancellation_token_registration& _Rhs) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Karşılaştırılacak `cancellation_token_registration`.
+`cancellation_token_registration`Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 ```cpp
 cancellation_token_registration& operator= (const cancellation_token_registration& _Src);
@@ -97,11 +98,11 @@ cancellation_token_registration& operator= (cancellation_token_registration&& _S
 ### <a name="parameters"></a>Parametreler
 
 *_Src*<br/>
-Atanacak `cancellation_token_registration`.
+`cancellation_token_registration`Atanacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="operator_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> işleç = =
 
 ```cpp
 bool operator== (const cancellation_token_registration& _Rhs) const;
@@ -110,10 +111,10 @@ bool operator== (const cancellation_token_registration& _Rhs) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Karşılaştırılacak `cancellation_token_registration`.
+`cancellation_token_registration`Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

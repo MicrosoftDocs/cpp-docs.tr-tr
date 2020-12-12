@@ -1,4 +1,5 @@
 ---
+description: ': Cabs, cabsf, cabsl hakkında daha fazla bilgi edinin'
 title: cabs, cabsf, cabsl
 ms.date: 11/04/2016
 api_name:
@@ -33,18 +34,18 @@ helpviewer_keywords:
 - cabsf function
 - cabsl function
 ms.assetid: 6b8eb453-cc8f-4972-bebf-351cbdfdfc15
-ms.openlocfilehash: ac31df51490880cdd831a34c8adeed9223aafc21
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2ae24a0b7c158c2a13a595e946ee79b0760d75ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220749"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171666"
 ---
 # <a name="cabs-cabsf-cabsl"></a>cabs, cabsf, cabsl
 
 Karmaşık bir sayının mutlak değerini alır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 double cabs(
@@ -81,7 +82,7 @@ C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** veya **_Lcomplex** değ
 
 |Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**Cabs**, **cabsf**, **cabsl**|\<complex.h>|\<ccomplex>|
+|**Cabs**,               **cabsf**, **cabsl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

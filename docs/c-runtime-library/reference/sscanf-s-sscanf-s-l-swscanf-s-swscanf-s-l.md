@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l'
 title: sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -44,18 +45,18 @@ helpviewer_keywords:
 - strings [C++], reading
 - _sscanf_s_l function
 ms.assetid: 956e65c8-00a5-43e8-a2f2-0f547ac9e56c
-ms.openlocfilehash: e92fc2544b6b137c64c388bed9013a6fdd5d3252
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3f61292932ea6b77b4694588726094d78b8405cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229356"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171315"
 ---
 # <a name="sscanf_s-_sscanf_s_l-swscanf_s-_swscanf_s_l"></a>sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l
 
 Bir dizeden biçimlendirilen verileri okur. [Sscanf, _sscanf_l, swscanf _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md) bu SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int sscanf_s(
@@ -93,7 +94,7 @@ Biçim denetimi dizesi. Daha fazla bilgi için bkz. [Biçim belirtimi alanları:
 *değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -106,7 +107,7 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_er
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sscanf_s** işlevi, *arabellekteki* verileri her *bağımsız değişken*tarafından verilen konuma okur. Biçim dizesinden sonraki bağımsız değişkenler, *biçimde*bir tür belirticisine karşılık gelen bir türe sahip değişkenlere işaretçiler belirtir. Daha az güvenli sürüm olan [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md)'den farklı olarak, **[]** içinde bulunan **c**, **c**, **s**, **s**veya dize denetim kümelerini tür alan karakterlerini kullandığınızda bir arabellek boyutu parametresi gerekir. Karakter cinsinden arabellek boyutu, her bir arabellek parametresinden hemen sonra ek bir parametre olarak sağlanmalıdır. Örneğin, bir dizeye okuyorsanız, bu dize için arabellek boyutu aşağıdaki gibi geçirilir:
+**Sscanf_s** işlevi, *arabellekteki* verileri her *bağımsız değişken* tarafından verilen konuma okur. Biçim dizesinden sonraki bağımsız değişkenler, *biçimde* bir tür belirticisine karşılık gelen bir türe sahip değişkenlere işaretçiler belirtir. Daha az güvenli sürüm olan [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md)'den farklı olarak, **[]** içinde bulunan **c**, **c**, **s**, **s** veya dize denetim kümelerini tür alan karakterlerini kullandığınızda bir arabellek boyutu parametresi gerekir. Karakter cinsinden arabellek boyutu, her bir arabellek parametresinden hemen sonra ek bir parametre olarak sağlanmalıdır. Örneğin, bir dizeye okuyorsanız, bu dize için arabellek boyutu aşağıdaki gibi geçirilir:
 
 ```C
 wchar_t ws[10];
@@ -132,11 +133,11 @@ sscanf_s(input, "%4c", &c, (unsigned)_countof(c)); // not null terminated
 Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf türü alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> Boyut parametresi **`unsigned`** **size_t**değil türündedir. 64 bitlik hedefler için derlerken, **_countof** veya **`sizeof`** sonuçları doğru boyuta dönüştürmek için statik bir tür kullanın.
+> Boyut parametresi **`unsigned`** **size_t** değil türündedir. 64 bitlik hedefler için derlerken, **_countof** veya **`sizeof`** sonuçları doğru boyuta dönüştürmek için statik bir tür kullanın.
 
 *Biçim* bağımsız değişkeni, giriş alanlarının yorumunu denetler ve **scanf_s** işlevi için *Biçim* bağımsız değişkeniyle aynı forma ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
-**swscanf_s** , **sscanf_s**geniş karakterli bir sürümüdür; **swscanf_s** bağımsız değişkenler geniş karakterli dizelerdir. **sscanf_s** çok baytlı onaltılık karakterleri işlemez. **Swscanf_s** Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi takdirde, **swscanf_s** ve **sscanf_s** aynı şekilde davranır.
+**swscanf_s** , **sscanf_s** geniş karakterli bir sürümüdür; **swscanf_s** bağımsız değişkenler geniş karakterli dizelerdir. **sscanf_s** çok baytlı onaltılık karakterleri işlemez. **Swscanf_s** Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi takdirde, **swscanf_s** ve **sscanf_s** aynı şekilde davranır.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 

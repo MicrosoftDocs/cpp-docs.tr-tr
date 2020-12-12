@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l'
 title: strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 ms.date: 4/2/2020
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _mbscat_s_l function
 - appending strings
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-ms.openlocfilehash: f7d890a753638112c4a1bb56cf6093a9510dbee2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c0ac9643593b509d4eeae1aca2d60aaa8269aa73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171133"
 ---
 # <a name="strcat_s-wcscat_s-_mbscat_s-_mbscat_s_l"></a>strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 
@@ -126,9 +127,9 @@ Başarılıysa sıfır; hatada hata kodu.
 
 |*strDestination*|*numberOfElements*|*strSource*|Döndürülen değer|*StrDestination* içeriği|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**Null** veya Sonlandırılmamış|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**EıNVAL**|*strDestination*[0], 0 olarak ayarlandı|
-|kaydedilmemiş|0 veya çok küçük|kaydedilmemiş|**ERANGE**|*strDestination*[0], 0 olarak ayarlandı|
+|**Null** veya Sonlandırılmamış|herhangi biri|herhangi biri|**EıNVAL**|değiştirilmedi|
+|herhangi biri|herhangi biri|**DEĞER**|**EıNVAL**|*strDestination*[0], 0 olarak ayarlandı|
+|herhangi biri|0 veya çok küçük|herhangi biri|**ERANGE**|*strDestination*[0], 0 olarak ayarlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -143,9 +144,9 @@ strcat_s(buf, 16, " End");               // Correct
 strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 ```
 
-**wcscat_s** ve **_mbscat_s** , **strcat_s**geniş karakter ve çok baytlı karakter sürümleridir. **Wcscat_s** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbscat_s** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**wcscat_s** ve **_mbscat_s** , **strcat_s** geniş karakter ve çok baytlı karakter sürümleridir. **Wcscat_s** bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbscat_s** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-*StrDestination* null bir işaretçisiyse veya null sonlandırılırsa ya da *strSource* **null** işaretçisiyse veya hedef dize çok küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*StrDestination* null bir işaretçisiyse veya null sonlandırılırsa ya da *strSource* **null** işaretçisiyse veya hedef dize çok küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 **_L** sonekine sahip işlevlerin sürümleri aynı davranışa sahiptir, ancak geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -165,9 +166,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcat_s**|\<String. h>|
-|**wcscat_s**|\<String. h> veya \<wchar. h>|
-|**_mbscat_s**|\<mbstring. h>|
+|**strcat_s**|\<string.h>|
+|**wcscat_s**|\<string.h> veya \<wchar.h>|
+|**_mbscat_s**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
