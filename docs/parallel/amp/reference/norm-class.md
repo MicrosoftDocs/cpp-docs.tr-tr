@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: norm sınıfı'
 title: norm Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - AMP_SHORT_VECTORS/norm
 - AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
-ms.openlocfilehash: b5740f33dea6aad79770f77f179803023432248a
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 29e376e5e42212c87ae244c7a606a38d6a07ddf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327646"
 ---
 # <a name="norm-class"></a>norm Sınıfı
 
 Norm bir sayıyı temsil eder. Her öğe [-1.0 f, 1.0 f] aralığındaki bir kayan noktalı sayıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class norm;
@@ -26,13 +27,13 @@ class norm;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Norm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. 0\.0 f 'ye başlatın.|
+|[Norm Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu. 0.0 f 'ye başlatın.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |norm:: operator-||
 |norm:: operator--||
@@ -41,7 +42,7 @@ class norm;
 |norm:: operator/=||
 |norm:: operator + +||
 |norm:: operator + =||
-|norm::operator=||
+|norm:: operator =||
 |norm:: operator-=||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -54,9 +55,9 @@ class norm;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>eklenmeli
+## <a name="norm"></a><a name="ctor"></a> eklenmeli
 
-Varsayılan Oluşturucu. 0\.0 f 'ye başlatın.
+Varsayılan Oluşturucu. 0.0 f 'ye başlatın.
 
 ```cpp
 norm(

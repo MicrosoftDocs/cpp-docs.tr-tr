@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tmpfile_s'
 title: tmpfile_s
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - tmpfile_s function
 - temporary files, creating
 ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
-ms.openlocfilehash: 48c599887a8a903d52c7dcd46b98046119c9d3ad
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1b5830375644cdcdd3d0c400d00735319b3af671
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326146"
 ---
 # <a name="tmpfile_s"></a>tmpfile_s
 
@@ -58,7 +59,7 @@ Başarılı olursa 0 döndürür. hata durumunda hata kodu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*pFilePtr*|**Dönüş Değeri**|**Contents of***PFilePtr* içeriği  |
+|*pFilePtr*|**Dönüş Değeri**|*PFilePtr* içeriği  |
 |----------------|----------------------|---------------------------------|
 |**DEĞER**|**EıNVAL**|değiştirilmedi|
 
@@ -70,7 +71,7 @@ Yukarıdaki parametre doğrulama hatası oluşursa, [parametre doğrulama](../..
 
 Dosya açılamadığı **tmpfile_s** , *pFilePtr* parametresine **null** yazar. Dosya kapatıldığında, program normal olarak sonlandırıldığında veya **_rmtmp** çağrıldığında, geçerli çalışma dizininin değişmediği varsayılarak bu geçici dosya otomatik olarak silinir. Geçici dosya **w + b** (ikili okuma/yazma) modunda açılır.
 
-**TMP_MAX_S** daha fazlasını denerseniz hata oluşabilir (bkz. stdio. H) **tmpfile_s**çağırır.
+**TMP_MAX_S** daha fazlasını denerseniz hata oluşabilir (bkz. stdio. H) **tmpfile_s** çağırır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -78,7 +79,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**tmpfile_s**|\<stdio. h>|
+|**tmpfile_s**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -126,6 +127,6 @@ Temporary file 3 was created
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](rmtmp.md)<br/>
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

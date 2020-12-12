@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: requires_category'
 title: requires_category (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - requires_category attribute
 ms.assetid: a645fdc6-1ef5-414d-8c56-5fe2686d4687
-ms.openlocfilehash: d566e74a9019259e526fa27aec26500e9ef3e1c1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4d2a68e682c4247174ffba630126b5d2f6061788
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846010"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327300"
 ---
 # <a name="requires_category"></a>requires_category
 
 Hedef sınıfın gerekli bileşen kategorilerini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ requires_category(
@@ -58,7 +59,7 @@ class CMyClass {};
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass` , `progid` , veya `vi_progid` .|
 |**Geçersiz öznitelikler**|Yok|
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ReadOnly (C++)'
 title: ReadOnly (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - readonly attribute
 ms.assetid: 1246cadd-5304-43a9-beea-51153d12704d
-ms.openlocfilehash: ea2b0a46d34fc415a3b9eca97b92cda764fc7d42
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5a970fa091747e1264d56550bdb11c3b66d81259
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327328"
 ---
 # <a name="readonly-c"></a>readonly (C++)
 
@@ -52,7 +53,7 @@ __interface IFireTabCtrl
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Interface yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

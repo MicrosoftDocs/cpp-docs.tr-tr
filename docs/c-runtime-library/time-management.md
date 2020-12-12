@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: süre yönetimi'
 title: Zaman Yönetimi
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-ms.openlocfilehash: 096207465b1be2eba70e95cff2c226924fc91bd7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c8a5b65c66ab89506149c92bd32999be3503c700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213456"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326914"
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 
 Bu işlevleri, geçerli saati almak ve dönüştürmek, ayarlamak ve gerektiği şekilde depolamak için kullanın. Geçerli saat sistem saati.
 
-**_Ftime** ve **localtime** yordamları **TZ** ortam değişkenini kullanır. **TZ** ayarlanmamışsa, çalışma zamanı kitaplığı işletim sistemi tarafından belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler kullanılamıyorsa, bu işlevler varsayılan değer olan PST8PDT kullanır. **TZ**hakkında daha fazla bilgi için bkz. [_tzset](../c-runtime-library/reference/tzset.md); Ayrıca bkz. [_daylight, saat dilimi ve _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
+**_Ftime** ve **localtime** yordamları **TZ** ortam değişkenini kullanır. **TZ** ayarlanmamışsa, çalışma zamanı kitaplığı işletim sistemi tarafından belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler kullanılamıyorsa, bu işlevler varsayılan değer olan PST8PDT kullanır. **TZ** hakkında daha fazla bilgi için bkz. [_tzset](../c-runtime-library/reference/tzset.md); Ayrıca bkz. [_daylight, saat dilimi ve _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md).
 
 ### <a name="time-routines"></a>Zaman yordamları
 
@@ -37,15 +38,15 @@ Bu işlevleri, geçerli saati almak ve dönüştürmek, ayarlamak ve gerektiği 
 |[_strdate, _wstrdate](../c-runtime-library/reference/strdate-wstrdate.md), [_strdate_s, _wstrdate_s](../c-runtime-library/reference/strdate-s-wstrdate-s.md)|Geçerli sistem tarihini dize olarak döndürür. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
 |[strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)|Uluslararası kullanım için tarih ve saat dizesini biçimlendirin.|
 |[_strtime, _wstrtime](../c-runtime-library/reference/strtime-wstrtime.md), [_strtime_s, _wstrtime_s](../c-runtime-library/reference/strtime-s-wstrtime-s.md)|Geçerli sistem saatini dize olarak döndürür. **_S** sonekine sahip bu işlevlerin sürümleri daha güvenlidir.|
-|[time, _time32, _time64](../c-runtime-library/reference/time-time32-time64.md)|**Time_t**, **__time32_t** veya türü **__time64_t**olarak geçerli sistem saatini alın.|
-|[_tzset](../c-runtime-library/reference/tzset.md)|Dış zaman değişkenlerini, ortam zaman değişkeni **TZ**değerinden ayarlayın.|
+|[time, _time32, _time64](../c-runtime-library/reference/time-time32-time64.md)|**Time_t**, **__time32_t** veya türü **__time64_t** olarak geçerli sistem saatini alın.|
+|[_tzset](../c-runtime-library/reference/tzset.md)|Dış zaman değişkenlerini, ortam zaman değişkeni **TZ** değerinden ayarlayın.|
 |[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)|Belirtilen dosya için, yapıda depolanan geçerli saat veya saat değerini kullanarak değiştirme süresini ayarlayın.|
 
 > [!NOTE]
 > Microsoft c/C++ sürüm 7,0 hariç tüm Microsoft C/C++ sürümlerinde ve tüm Visual C++ sürümlerinde, Time işlevi, 1 Ocak 1970 ' de gece yarısından beri geçen saniye sayısı olarak geçerli saati döndürür. Microsoft C/C++ sürüm 7,0 ' de, **süresi** 31 Aralık 1899 ' de gece yarısından beri geçen saniye sayısı olarak geçerli saati geri döndürdü.
 
 > [!NOTE]
-> Visual Studio 2005 ' den önceki Visual C++ ve Microsoft C/C++ sürümlerinde, **time_t** bir **`long int`** (32 bit) ve bu nedenle 19 Ocak 2038, UTC 'den 3:14:07 önceki tarihler için kullanılamadı. **time_t** artık varsayılan olarak **__time64_t** eşdeğerdir, ancak **_USE_32BIT_TIME_T** değişiklik **time_t** ve 32-bit **__time32_t**alan sürümleri **çağırmak için birçok** zaman işlevi zorlayarak. Daha fazla bilgi için, bireysel zaman işlevleri için belgelerde [standart türler](../c-runtime-library/standard-types.md) ve açıklamalar bölümüne bakın.
+> Visual Studio 2005 ' den önceki Visual C++ ve Microsoft C/C++ sürümlerinde, **time_t** bir **`long int`** (32 bit) ve bu nedenle 19 Ocak 2038, UTC 'den 3:14:07 önceki tarihler için kullanılamadı. **time_t** artık varsayılan olarak **__time64_t** eşdeğerdir, ancak **_USE_32BIT_TIME_T** değişiklik **time_t** ve 32-bit **__time32_t** alan sürümleri **çağırmak için birçok** zaman işlevi zorlayarak. Daha fazla bilgi için, bireysel zaman işlevleri için belgelerde [standart türler](../c-runtime-library/standard-types.md) ve açıklamalar bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: örnekleyici sınıfı'
 title: sampler Sınıfı
 ms.date: 06/28/2018
 f1_keywords:
@@ -12,18 +13,18 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::sampler::graphics::border_color
 - AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode
 ms.assetid: 9a6a9807-497d-402d-b092-8c4d86275b80
-ms.openlocfilehash: 8f47bf6e9b88dba1e94e9e2ed2b93c8d2d3f9b8c
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 61292cccb9e28ca76dc4ecaa1aaca849d9219ffc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327619"
 ---
 # <a name="sampler-class"></a>sampler Sınıfı
 
 Örnekleyici sınıfı, doku örneklemesi için kullanılacak örnekleme yapılandırma bilgilerini toplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class sampler;
@@ -41,9 +42,9 @@ class sampler;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[get_address_mode](#get_address_mode)|Örnekleyici nesnesiyle ilişkili `address_mode` döndürür.|
+|[get_address_mode](#get_address_mode)|`address_mode`Örnekleyici nesnesiyle ilişkili olan öğesini döndürür.|
 |[get_border_color](#get_border_color)|Örnekleyici nesnesiyle ilişkili kenarlık rengini döndürür.|
-|[get_filter_mode](#get_filter_mode)|Örnekleyici nesnesiyle ilişkili `filter_mode` döndürür.|
+|[get_filter_mode](#get_filter_mode)|`filter_mode`Örnekleyici nesnesiyle ilişkili olan öğesini döndürür.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
@@ -55,9 +56,9 @@ class sampler;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[address_mode](#address_mode)|`sampler` nesnesinin adres modunu alır.|
-|[border_color](#border_color)|`sampler` nesnesinin kenarlık rengini alır.|
-|[filter_mode](#filter_mode)|`sampler` nesnesinin filtre modunu alır.|
+|[address_mode](#address_mode)|Nesnenin adres modunu alır `sampler` .|
+|[border_color](#border_color)|Nesnenin kenarlık rengini alır `sampler` .|
+|[filter_mode](#filter_mode)|Nesnenin filtre modunu alır `sampler` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -69,7 +70,7 @@ class sampler;
 
 **Ad alanı:** concurrency:: Graphics
 
-## <a name="ctor"></a>'yi
+## <a name="sampler"></a><a name="ctor"></a> 'yi
 
 [Örnekleyici sınıfının](sampler-class.md)bir örneğini oluşturur.
 
@@ -112,40 +113,40 @@ sampler(                    // [6] move constructor
 Tüm boyutlar için örnekleme içinde kullanılacak adresleme modu.
 
 *_Border_color*<br/>
-Adres modu address_border, kullanılacak kenarlık rengi. Varsayılan değer `float_4(0.0f, 0.0f, 0.0f, 0.0f)` şeklindedir.
+Adres modu address_border, kullanılacak kenarlık rengi. `float_4(0.0f, 0.0f, 0.0f, 0.0f)` varsayılan değerdir.
 
 *_Other*<br/>
-[5] kopya Oluşturucu yeni `sampler` örneğine kopyalamak için `sampler` nesnesi.
+[5] Copy Oluşturucu `sampler` yeni örneğe kopyalanacak nesne `sampler` .
 
-[6] yeni `sampler` örneğine taşımak için oluşturucuyu `sampler` nesneyi taşıyın.
+[6] `sampler` yeni örneğe taşımak Için Oluşturucu nesnesini taşıyın `sampler` .
 
-## <a name="address_mode"></a>address_mode
+## <a name="address_mode"></a><a name="address_mode"></a> address_mode
 
-`sampler` nesnesinin adres modunu alır.
+Nesnenin adres modunu alır `sampler` .
 
 ```cpp
 __declspec(property(get= get_address_mode)) Concurrency::graphics::address_mode address_mode;
 ```
 
-## <a name="border_color"></a>border_color
+## <a name="border_color"></a><a name="border_color"></a> border_color
 
-`sampler` nesnesinin kenarlık rengini alır.
+Nesnenin kenarlık rengini alır `sampler` .
 
 ```cpp
 __declspec(property(get= get_border_color)) Concurrency::graphics::float_4 border_color;
 ```
 
-## <a name="filter_mode"></a>filter_mode
+## <a name="filter_mode"></a><a name="filter_mode"></a> filter_mode
 
-`sampler` nesnesinin filtre modunu alır.
+Nesnenin filtre modunu alır `sampler` .
 
 ```cpp
 __declspec(property(get= get_filter_mode)) Concurrency::graphics::filter_mode filter_mode;
 ```
 
-## <a name="get_address_mode"></a>get_address_mode
+## <a name="get_address_mode"></a><a name="get_address_mode"></a> get_address_mode
 
-Bu `sampler`için yapılandırılan filtre modunu döndürür.
+Bu için yapılandırılan filtre modunu döndürür `sampler` .
 
 ```cpp
 Concurrency::graphics::address_mode get_address_mode() const __GPU;
@@ -155,9 +156,9 @@ Concurrency::graphics::address_mode get_address_mode() const __GPU;
 
 Örnekleyici için yapılandırılmış adres modu.
 
-## <a name="get_border_color"></a>get_border_color
+## <a name="get_border_color"></a><a name="get_border_color"></a> get_border_color
 
-Bu `sampler`için yapılandırılan kenarlık rengini döndürür.
+Bu için yapılandırılan kenarlık rengini döndürür `sampler` .
 
 ```cpp
 Concurrency::graphics::float_4 get_border_color() const restrict(amp, cpu);
@@ -167,9 +168,9 @@ Concurrency::graphics::float_4 get_border_color() const restrict(amp, cpu);
 
 Kenarlık rengini içeren bir float_4.
 
-## <a name="get_filter_mode"></a>get_filter_mode
+## <a name="get_filter_mode"></a><a name="get_filter_mode"></a> get_filter_mode
 
-Bu `sampler`için yapılandırılan filtre modunu döndürür.
+Bu için yapılandırılan filtre modunu döndürür `sampler` .
 
 ```cpp
 Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
@@ -179,7 +180,7 @@ Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
 
 Örnekleyici için yapılandırılmış filtre modu.
 
-## <a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 Başka bir örnekleyici nesnesinin değerini var olan bir örnekleyiciyi atar.
 
@@ -194,9 +195,9 @@ sampler& operator= (    // [2] move assignment operator
 ### <a name="parameters"></a>Parametreler
 
 *_Other*<br/>
-[1] kopya atama Işleci bu `sampler`kopyalamak için `sampler` nesnesi.
+[1] Copy atama Işleci `sampler` buna kopyalanacak nesne `sampler` .
 
-[2] Bu `sampler`taşımak için atama Işlecini `sampler` nesnesini taşıyın.
+[2] `sampler` Bu nesneye geçmek Için atama işlecini taşıyın `sampler` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 

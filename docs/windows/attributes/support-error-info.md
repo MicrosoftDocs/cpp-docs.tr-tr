@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: support_error_info'
 title: support_error_info (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - support_error_info attribute
 ms.assetid: 20a2b55c-4738-4b35-a71d-e5e9c3a7e3bc
-ms.openlocfilehash: cf02af793b97c55de4c52280ad2795a460a98d9f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3d707179511dadda0f24a2d13e95a32de3705f62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832184"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327278"
 ---
 # <a name="support_error_info"></a>support_error_info
 
 Ayrıntılı hataları döndürmek için destek uygular.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ support_error_info(error_interface=uuid) ]
@@ -63,7 +64,7 @@ class CMyClass
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**|
-|**Tekrarlanabilir**|Yes|
+|**Yinelenebilir**|Evet|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

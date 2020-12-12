@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CMFCCmdUsageCount sınıfı'
 title: CMFCCmdUsageCount sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], Serialize
 - CMFCCmdUsageCount [MFC], SetOptions
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-ms.openlocfilehash: 95dca548856510cd8b06914932cc46435c28399d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 40d09e96672cafb022baab98787fe10b1258048b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834283"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327728"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount sınıfı
 
@@ -221,7 +222,7 @@ Yöntem başarılı olursa TRUE, *nMinUsagePercentage* parametresi 100 değerind
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, paylaşılan `CMFCCmdUsageCount` sınıf veri üyelerini `m_nStartCount` ve `m_nMinUsagePercentage` sırasıyla *nStartCount* ve *nMinUsagePercentage*öğesini ayarlar. `m_nStartCount` , bu nesnenin en az izleme verisi miktarını topladığını tespit etmek için [CMFCCmdUsageCount:: HasEnoughInformation](#hasenoughinformation) yöntemi tarafından kullanılır. `m_nMinUsagePercentage` , belirli bir komutun sık sık kullanılıp kullanılmadığını anlamak için [CMFCCmdUsageCount:: ıfreqeuntlyusedcmd](#isfreqeuntlyusedcmd) yöntemi tarafından kullanılır.
+Bu yöntem, paylaşılan `CMFCCmdUsageCount` sınıf veri üyelerini `m_nStartCount` ve `m_nMinUsagePercentage` sırasıyla *nStartCount* ve *nMinUsagePercentage* öğesini ayarlar. `m_nStartCount` , bu nesnenin en az izleme verisi miktarını topladığını tespit etmek için [CMFCCmdUsageCount:: HasEnoughInformation](#hasenoughinformation) yöntemi tarafından kullanılır. `m_nMinUsagePercentage` , belirli bir komutun sık sık kullanılıp kullanılmadığını anlamak için [CMFCCmdUsageCount:: ıfreqeuntlyusedcmd](#isfreqeuntlyusedcmd) yöntemi tarafından kullanılır.
 
 Hata ayıklama Derlemeleriyle, *nMinUsagePercentage* parametresi 100 değerinden büyük veya bu değere eşitse bir onaylama hatası oluşturur.
 

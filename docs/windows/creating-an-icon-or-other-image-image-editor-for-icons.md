@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: simge veya başka görüntü oluşturma'
 title: 'Nasıl yapılır: simge veya başka görüntü oluşturma'
 ms.date: 02/15/2019
 helpviewer_keywords:
@@ -79,12 +80,12 @@ helpviewer_keywords:
 - graphics [C++], converting formats
 - images [C++], converting formats
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
-ms.openlocfilehash: bbaa008d8dac74588fc15bfebbc7cb2611260349
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fee71fdfa073365b0ba63b1a789e0928bb1557ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327139"
 ---
 # <a name="how-to-create-an-icon-or-other-image"></a>Nasıl yapılır: simge veya başka görüntü oluşturma
 
@@ -92,13 +93,13 @@ Yeni bir görüntü, bit eşlem, simge, imleç veya araç çubuğu oluşturabili
 
 ## <a name="icons-and-cursors-image-resources-for-display-devices"></a>Simgeler ve İmleçler: Görüntüleme Cihazları için Görüntü Kaynakları
 
-Simgeler ve imleçler, farklı boyutlarda görüntü aygıtları için farklı boyutlarda ve renk şemalarında birden çok görüntü içerebilen grafik kaynaklarıdır. İmleç Ayrıca, Windows 'un konumunu izlemek için kullandığı konum üzerinde etkin bir nokta de vardır. Hem simgeler hem de imleçler, bit eşlemler ve diğer görüntüler gibi **Görüntü Düzenleyicisi**kullanılarak oluşturulur ve düzenlenir.
+Simgeler ve imleçler, farklı boyutlarda görüntü aygıtları için farklı boyutlarda ve renk şemalarında birden çok görüntü içerebilen grafik kaynaklarıdır. İmleç Ayrıca, Windows 'un konumunu izlemek için kullandığı konum üzerinde etkin bir nokta de vardır. Hem simgeler hem de imleçler, bit eşlemler ve diğer görüntüler gibi **Görüntü Düzenleyicisi** kullanılarak oluşturulur ve düzenlenir.
 
 Yeni bir simge veya imleç oluşturduğunuzda, **Görüntü Düzenleyicisi** ilk olarak standart bir türün görüntüsünü oluşturur. Görüntü başlangıçta ekran (saydam) rengiyle doldurulur. Görüntü bir imlece ise, etkin nokta başlangıçta koordinatların sol üst köşesinden belirlenir `0,0` .
 
 Varsayılan olarak, **Görüntü Düzenleyicisi** , aşağıdaki tabloda gösterilen cihazlar için ek görüntülerin oluşturulmasını destekler. **Özel görüntü** iletişim kutusuna genişlik, yükseklik ve renk sayısı parametrelerini yazarak diğer cihazlar için görüntü oluşturabilirsiniz.
 
-|Color|Genişlik (piksel)|Yükseklik (piksel)|
+|Renk|Genişlik (piksel)|Yükseklik (piksel)|
 |-----------|----------------------|-----------------------|
 |Tek renkli|16|16|
 |Tek renkli|32|32|
@@ -162,11 +163,11 @@ Yeni bir simge veya imleç kaynağı oluşturduğunuzda, **Görüntü Düzenleyi
 
 |Özellik|Açıklama|
 |---|---|
-|**Genişlik**|Özel görüntünün genişliğini piksel cinsinden (1-512, 2048 limiti) girebileceğiniz bir alan sağlar.|
-|**Yükseklik**|Özel görüntünün yüksekliğini piksel (1-512, 2048 limiti) olarak girmeniz için bir alan sağlar.|
+|**Width**|Özel görüntünün genişliğini piksel cinsinden (1-512, 2048 limiti) girebileceğiniz bir alan sağlar.|
+|**Height**|Özel görüntünün yüksekliğini piksel (1-512, 2048 limiti) olarak girmeniz için bir alan sağlar.|
 |**Renkler**|Özel görüntü için renk sayısını seçmeniz için bir alan sağlar: 2, 16 veya 256.|
 
-C++ projelerinde cihaz görüntülerini açmak için ** &lt; cihaz &gt; görüntüsünü aç** iletişim kutusunu kullanın. Geçerli kaynakta mevcut cihaz görüntülerini (geçerli kaynağın parçası olan görüntüler) listeler. Aşağıdaki özellik eklenmiştir:
+C++ projelerinde cihaz görüntülerini açmak için **&lt; cihaz &gt; görüntüsünü aç** iletişim kutusunu kullanın. Geçerli kaynakta mevcut cihaz görüntülerini (geçerli kaynağın parçası olan görüntüler) listeler. Aşağıdaki özellik eklenmiştir:
 
 |Özellik|Açıklama|
 |---|---|
@@ -198,10 +199,10 @@ C++ projelerinde cihaz görüntülerini açmak için ** &lt; cihaz &gt; görünt
 
 ### <a name="to-delete-a-device-image"></a>Bir cihaz görüntüsünü silmek için
 
-Simge görüntüsü **görüntü düzenleyicisinde**görüntülenirken menü **görüntüsü**  >  **cihaz görüntüsünü Sil**' e gidin. Kaynaktaki son simge görüntüsünü sildiğinizde, kaynak de silinir.
+Simge görüntüsü **görüntü düzenleyicisinde** görüntülenirken menü **görüntüsü**  >  **cihaz görüntüsünü Sil**' e gidin. Kaynaktaki son simge görüntüsünü sildiğinizde, kaynak de silinir.
 
 > [!NOTE]
-> **Del** tuşuna bastığınızda, bir simge üzerinde çizdiğiniz görüntüler ve renkler silinir, ancak simge kalır ve artık yeniden tasarlayabilirsiniz. Yanlışlıkla **del** tuşuna basarsanız, **Ctrl** + eylemi geri almak için CTRL**Z** tuşuna basın.
+> **Del** tuşuna bastığınızda, bir simge üzerinde çizdiğiniz görüntüler ve renkler silinir, ancak simge kalır ve artık yeniden tasarlayabilirsiniz. Yanlışlıkla **del** tuşuna basarsanız,  + eylemi geri almak için CTRL **Z** tuşuna basın.
 
 ### <a name="to-create-transparent-or-inverse-regions-in-device-images"></a>Cihaz görüntülerinde saydam veya ters bölgeler oluşturmak için
 
@@ -231,7 +232,7 @@ Simgeler ve imleçler için uyguladığınız ekran ve ters renkler, türetilmi�
 
 ### <a name="use-the-256-color-palette"></a>256 renkli paleti kullanma
 
-**Görüntü düzenleyicisini**kullanarak, simgeler ve imleçler, aralarından seçim yapabileceğiniz bir 256-Color paleti ile büyük (64 × 64) boyutunda boyutlandırılabilir. Kaynağı oluşturduktan sonra bir cihaz görüntüsü stili seçilidir.
+**Görüntü düzenleyicisini** kullanarak, simgeler ve imleçler, aralarından seçim yapabileceğiniz bir 256-Color paleti ile büyük (64 × 64) boyutunda boyutlandırılabilir. Kaynağı oluşturduktan sonra bir cihaz görüntüsü stili seçilidir.
 
 #### <a name="to-create-a-256-color-icon-or-cursor"></a>256 renkli bir simge veya imleç oluşturmak için
 
@@ -256,7 +257,7 @@ Simgeler ve imleçler için uyguladığınız ekran ve ters renkler, türetilmi�
 
 ### <a name="to-set-a-cursors-hot-spot"></a>İmlecin Etkin noktasını ayarlamak için
 
-İmlecin etkin noktası, Windows 'un imlecin konumunu izlemede başvurduğu noktasıdır. Varsayılan olarak, etkin nokta, imlecin koordinatlarıyla sol üst köşesine ayarlanır `0,0` . Özellikler penceresi **Hotspot** özelliği, etkin [Properties window](/visualstudio/ide/reference/properties-window) nokta koordinatlarını gösterir.
+İmlecin etkin noktası, Windows 'un imlecin konumunu izlemede başvurduğu noktasıdır. Varsayılan olarak, etkin nokta, imlecin koordinatlarıyla sol üst köşesine ayarlanır `0,0` . Özellikler penceresi **Hotspot** özelliği, etkin [](/visualstudio/ide/reference/properties-window) nokta koordinatlarını gösterir.
 
 1. [Görüntü Düzenleyicisi araç çubuğunda](./image-editor-for-icons.md), **etkin nokta ayarla** aracını seçin.
 
@@ -275,30 +276,30 @@ Bir bit eşlem oluşturduğunuzda, görüntü bit eşlem biçiminde (. bmp) olu�
 
 1. **Yeni dosya iletişim kutusunda** **Visual C++** klasörünü seçin, ardından **Şablonlar** kutusunda **bit eşlem dosyası (. bmp)** öğesini seçin ve **Aç**' ı seçin.
 
-   Bit eşlem **görüntü düzenleyicisinde**açılır.
+   Bit eşlem **görüntü düzenleyicisinde** açılır.
 
 1. Gerektiğinde yeni bit eşleminiz üzerinde değişiklik yapın.
 
-1. Bit eşlem hala **görüntü düzenleyicisinde**açıkken, menü **dosyası**  >  ** *dosya adı*. bmp dosyasını olarak kaydet**' e gidin.
+1. Bit eşlem hala **görüntü düzenleyicisinde** açıkken, menü **dosyası**  >  ***dosya adı*. bmp dosyasını olarak kaydet**' e gidin.
 
 1. **Dosyayı farklı kaydet** iletişim kutusunda, dosyaya vermek istediğiniz adı ve dosya **adı** kutusunda istediğiniz dosya biçimini belirten uzantıyı yazın. Örneğin, *myfile.gif*.
 
    > [!NOTE]
    > Başka bir dosya biçimi olarak kaydetmek için projenizin dışında bit eşlem oluşturmanız veya açmanız gerekir. Projeyi içinde oluşturur veya açarsanız, **farklı kaydet** komutu kullanılamaz olur. Daha fazla bilgi için bkz. bir [proje dışındaki kaynak betik dosyasındaki kaynakları görüntüleme (tek başına)](./how-to-create-a-resource-script-file.md).
 
-1. **Kaydet**'i seçin.
+1. **Kaydet**’i seçin.
 
 ### <a name="to-convert-an-image-from-one-format-to-another"></a>Bir görüntüyü bir biçimden diğerine dönüştürmek için
 
 GIF veya JPEG görüntülerini **görüntü düzenleyicisinde** açabilir ve bunları bit eşlemler olarak kaydedebilirsiniz. Ayrıca, bir bit eşlem dosyası açıp GIF veya JPEG olarak kaydedebilirsiniz. İle çalıştığınız görüntülerin geliştirme ortamında düzenlenmek üzere bir projenin parçası olması gerekmez (bkz. [tek başına görüntü düzenlemesi](./selecting-an-area-of-an-image-image-editor-for-icons.md)).
 
-1. Görüntüyü **görüntü düzenleyicisinde**açın.
+1. Görüntüyü **görüntü düzenleyicisinde** açın.
 
-1. Menü dosyası dosya **File**  >  ** *adını* farklı kaydet**' e gidin.
+1. Menü dosyası dosya   >  ***adını* farklı kaydet**' e gidin.
 
 1. **Dosyayı farklı kaydet** iletişim kutusunda, **dosya adı** kutusuna istediğiniz biçimi gösteren dosya adını ve uzantıyı yazın.
 
-1. **Kaydet**'i seçin.
+1. **Kaydet**’i seçin.
 
 ### <a name="to-add-a-new-image-resource-to-an-unmanaged-c-project"></a>Yönetilmeyen C++ projesine yeni bir görüntü kaynağı eklemek için
 
@@ -322,7 +323,7 @@ GIF veya JPEG görüntülerini **görüntü düzenleyicisinde** açabilir ve bun
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: süre, _time32, _time64'
 title: time, _time32, _time64
 ms.date: 11/06/2018
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - system time
 - time64 function
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
-ms.openlocfilehash: 02dc7f250fe26d9ed7abfd89ca9a4c2163312e6d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8602e485c15b11b8f4e740ceead382aa88f8f5f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946097"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326160"
 ---
 # <a name="time-_time32-_time64"></a>time, _time32, _time64
 
@@ -66,15 +67,15 @@ Bir hata olması durumunda 1 Ocak 1970 veya-1 gece yarısından beri geçen sür
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Time** işlevi, sistem saatine göre gece yarısından beri geçen saniye sayısı (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) değerini döndürür. Dönüş değeri, *Desttime*tarafından verilen konumda depolanır. Bu parametre **null**olabilir, bu durumda dönüş değeri depolanmaz.
+**Time** işlevi, sistem saatine göre gece yarısından beri geçen saniye sayısı (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) değerini döndürür. Dönüş değeri, *Desttime* tarafından verilen konumda depolanır. Bu parametre **null** olabilir, bu durumda dönüş değeri depolanmaz.
 
-**zaman** , varsayılan olarak **__time64_t**ile eşdeğer olan **_time64** ve **time_t** için bir sarmalayıcıdır. Derleyicinin **time_t** 'i eski 32 bit **time_t**olarak yorumlamasını zorlamak Istiyorsanız **_Use_32bit_time_t**tanımlayabilirsiniz. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden bu önerilmez. Bu makronun kullanılmasına 64 bit platformlarda izin verilmez.
+**zaman** , **_time64** için bir sarmalayıcı ve **time_t** varsayılan olarak **__time64_t** eşdeğerdir. Derleyicinin **time_t** eski 32 bit **time_t** olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T** tanımlayabilirsiniz. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden bu önerilmez. Bu makronun kullanılmasına 64 bit platformlarda izin verilmez.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli C üstbilgisi|Gerekli C++ üst bilgi|
+|Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|
 |-------|------|---------------------|
-|**Time**  **,\_time32**, **time64 \_**|\<Time. h >|\<CTime > veya \<saati. h >|
+|**Time**, **\_ time32**, **\_ time64**|\<time.h>|\<ctime> veya \<time.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

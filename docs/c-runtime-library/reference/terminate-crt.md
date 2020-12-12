@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sonlandır (CRT)'
 title: sonlandır (CRT)
 ms.date: 4/2/2020
 api_name:
@@ -27,18 +28,18 @@ helpviewer_keywords:
 - terminate function
 - exception handling, termination
 ms.assetid: 90e67402-08e9-4b2a-962c-66a8afd3ccb4
-ms.openlocfilehash: 1ec4e27096dd6b5fea089e21c95022542d7adc82
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8370c1f1aff54b5286ad4472b053275e3468a8d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912218"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326174"
 ---
 # <a name="terminate-crt"></a>sonlandır (CRT)
 
-**Set_terminate**kullanarak belirlediğiniz [iptali](abort.md) veya işlevi çağırır.
+**Set_terminate** kullanarak belirlediğiniz [iptali](abort.md) veya işlevi çağırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void terminate( void );
@@ -54,7 +55,7 @@ void terminate( void );
 
 - Özel durum oluşturulduktan sonra yığın bozuk.
 
-Varsayılan olarak [iptal](abort.md) çağrıları **Sonlandır** . Kendi sonlandırma işlevinizi yazarak ve bağımsız değişkeni olarak işlevinizin adını **set_terminate** çağırarak, bu varsayılanı değiştirebilirsiniz. **sonlandır** **set_terminate**bir bağımsız değişken olarak verilen son işlevi çağırır. Daha fazla bilgi için bkz. [Işlenmemiş C++ özel durumları](../../cpp/unhandled-cpp-exceptions.md).
+Varsayılan olarak [iptal](abort.md) çağrıları **Sonlandır** . Kendi sonlandırma işlevinizi yazarak ve bağımsız değişkeni olarak işlevinizin adını **set_terminate** çağırarak, bu varsayılanı değiştirebilirsiniz. **sonlandır** **set_terminate** bir bağımsız değişken olarak verilen son işlevi çağırır. Daha fazla bilgi için bkz. [Işlenmemiş C++ özel durumları](../../cpp/unhandled-cpp-exceptions.md).
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -62,7 +63,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**sonlandırmayı**|\<Eh. h>|
+|**sonlandırmayı**|\<eh.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -115,7 +116,7 @@ term_func() was called by terminate().
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Özel durum Işleme yordamları](../../c-runtime-library/exception-handling-routines.md)<br/>
-[durdurulmaya](abort.md)<br/>
+[durdur](abort.md)<br/>
 [_set_se_translator](set-se-translator.md)<br/>
 [set_terminate](set-terminate-crt.md)<br/>
 [set_unexpected](set-unexpected-crt.md)<br/>

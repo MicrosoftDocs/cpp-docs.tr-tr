@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __CxxFrameHandler'
 title: __CxxFrameHandler
 ms.date: 11/04/2016
 api_name:
@@ -20,18 +21,18 @@ f1_keywords:
 helpviewer_keywords:
 - __CxxFrameHandler
 ms.assetid: b79ac97f-425a-42ae-9b91-8beaef935333
-ms.openlocfilehash: b6350568bdba41da90609dfd5e2e60269e7d729f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3ebd4cefb303661b4b0293f3b4b3d42a915ddd56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326369"
 ---
 # <a name="__cxxframehandler"></a>__CxxFrameHandler
 
 İç CRT işlevi. Yapılandırılmış özel durum çerçevelerini işlemek için CRT tarafından kullanılır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 EXCEPTION_DISPOSITION __CxxFrameHandler(

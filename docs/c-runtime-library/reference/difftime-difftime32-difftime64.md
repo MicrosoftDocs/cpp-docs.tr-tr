@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: difftime, _difftime32, _difftime64'
 title: difftime, _difftime32, _difftime64
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _difftime64 function
 - difftime32 function
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
-ms.openlocfilehash: e8d9ed3e33935c8e6c788380c02b9ae179dd06e8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3f2c4f713f5e4dd667bd4e0a557170e9d23e6700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327026"
 ---
 # <a name="difftime-_difftime32-_difftime64"></a>difftime, _difftime32, _difftime64
 
@@ -71,13 +72,13 @@ Başlangıç zamanı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Difftime** Işlevi, *TimeStart* ve *timeend*olmak üzere iki sağlanan zaman değeri arasındaki farkı hesaplar.
+**Difftime** Işlevi, *TimeStart* ve *timeend* olmak üzere iki sağlanan zaman değeri arasındaki farkı hesaplar.
 
-Sağlanan zaman değeri **time_t**aralığı içinde olmalıdır. **time_t** , 64 bitlik bir değerdir. Bu nedenle, aralığın sonu 18 Ocak 2038, UTC 'den 23:59:59, 31 Aralık 3000 ' 23:59:59 ten uzatılmıştır. **Time_t** alt aralığı hala gece yarısı, 1 Ocak 1970 ' dir.
+Sağlanan zaman değeri **time_t** aralığı içinde olmalıdır. **time_t** , 64 bitlik bir değerdir. Bu nedenle, aralığın sonu 18 Ocak 2038, UTC 'den 23:59:59, 31 Aralık 3000 ' 23:59:59 ten uzatılmıştır. **Time_t** alt aralığı hala gece yarısı, 1 Ocak 1970 ' dir.
 
 **difftime** , **_USE_32BIT_TIME_T** tanımlanmış olup olmadığına bağlı olarak **_difftime32** veya **_difftime64** değerlendiren bir satır içi işlevdir. _difftime32 ve _difftime64, zaman türünün belirli bir boyutunun kullanımını zorlamak için doğrudan kullanılabilir.
 
-Bu işlevler, parametrelerini doğrular. Parametrelerden biri sıfır veya negatif ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler 0 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevler, parametrelerini doğrular. Parametrelerden biri sıfır veya negatif ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler 0 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -85,9 +86,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**difftime**|\<Time. h>|
-|**_difftime32**|\<Time. h>|
-|**_difftime64**|\<Time. h>|
+|**difftime**|\<time.h>|
+|**_difftime32**|\<time.h>|
+|**_difftime64**|\<time.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -149,6 +150,6 @@ Program takes      3 seconds.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [Zaman Yönetimi](../../c-runtime-library/time-management.md)<br/>
 [time, _time32, _time64](time-time32-time64.md)<br/>

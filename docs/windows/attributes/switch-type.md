@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: switch_type'
 title: switch_type (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-ms.openlocfilehash: 0c39aa442c9d4eaf3a482e411cda762fe0cc34b3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e291524d00afff89aa17634307426ef62cd40f4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838535"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327261"
 ---
 # <a name="switch_type"></a>switch_type
 
 UNION ayrımınant olarak kullanılan değişkenin türünü tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [switch_type(
@@ -55,14 +56,14 @@ struct SizedValue2 {
 
 ## <a name="example"></a>Örnek
 
-**Switch_type**örnek bir kullanımı için bkz. [durum](case-cpp.md) örneği.
+**Switch_type** örnek bir kullanımı için bkz. [durum](case-cpp.md) örneği.
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`typedef`**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

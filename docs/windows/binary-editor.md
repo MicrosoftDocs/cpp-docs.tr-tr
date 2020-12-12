@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ikili Düzenleyici (C++)'
 title: İkili Düzenleyici (C++)
 ms.date: 02/14/2019
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - data resources [C++]
 - resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: 078d702232cde49a4666551a8d9fcbb320173450
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 8abe63f662d25b5e8108d0671dd17490143a07fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503524"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327219"
 ---
 # <a name="binary-editor-c"></a>İkili Düzenleyici (C++)
 
@@ -35,17 +36,17 @@ ms.locfileid: "91503524"
 
 **Ikili düzenleyici** , herhangi bir kaynağı, ONALTıLı veya ASCII biçiminde ikili düzeyde düzenlemenizi sağlar. [Find komutunu](/visualstudio/ide/reference/find-command) , ASCII dizelerini veya onaltılı baytları aramak için de kullanabilirsiniz. **Ikili düzenleyiciyi** yalnızca, Visual Studio ortamı tarafından desteklenmeyen özel kaynaklarda veya kaynak türlerinde küçük değişiklikler yapmanız veya bunları görüntülemeniz gerektiğinde kullanın. **Ikili düzenleyici** Express sürümlerinde kullanılamaz.
 
-- **İkili düzenleyiciyi** yeni bir dosya üzerinde açmak için, menü **dosyası**  >  **Yeni**  >  **Dosya**' ya gidin, düzenlemek istediğiniz dosya türünü seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve **Open With**  >  **ikili düzenleyiciyle**aç ' ı seçin.
+- **İkili düzenleyiciyi** yeni bir dosya üzerinde açmak için, menü **dosyası**  >  **Yeni**  >  **Dosya**' ya gidin, düzenlemek istediğiniz dosya türünü seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve   >  **ikili düzenleyiciyle** aç ' ı seçin.
 
-- **İkili düzenleyiciyi** mevcut bir dosyada açmak için, menü **dosyası**  >  **Open**  >  **Dosya**aç ' a gidin, düzenlemek istediğiniz dosyayı seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve **Open With**  >  **ikili düzenleyiciyle**aç ' ı seçin.
+- **İkili düzenleyiciyi** mevcut bir dosyada açmak için, menü **dosyası**  >    >  **Dosya** aç ' a gidin, düzenlemek istediğiniz dosyayı seçin, sonra **Aç** düğmesinin yanındaki açılan oku seçin ve   >  **ikili düzenleyiciyle** aç ' ı seçin.
 
    ![İkili Düzenleyici](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
    **Ikili düzenleyicide** gösterildiği bir iletişim kutusu için ikili veriler
 
-**Ikili düzenleyicide** yalnızca belirli ASCII değerleri temsil edilir (0x20 ile 0x7E). Genişletilmiş karakterler, **Ikili düzenleyicinin**sağ panel ASCII değeri bölümünde nokta olarak görüntülenir. Yazdırılabilir karakterler 32 ile 126 arasında ASCII değerlerdir.
+**Ikili düzenleyicide** yalnızca belirli ASCII değerleri temsil edilir (0x20 ile 0x7E). Genişletilmiş karakterler, **Ikili düzenleyicinin** sağ panel ASCII değeri bölümünde nokta olarak görüntülenir. Yazdırılabilir karakterler 32 ile 126 arasında ASCII değerlerdir.
 
 > [!TIP]
-> **Ikili düzenleyiciyi**kullanırken, birçok örnekte kaynağa özgü komutların kısayol menüsünü göstermek için sağ tıklayabilirsiniz. Kullanılabilir komutlar, imlecinizin ne olduğuna bağlıdır. Örneğin, seçili onaltılık değerlerle **Ikili düzenleyiciyi** işaret ederken sağ tıkladığınızda, kısayol menüsü **Kes**, **Kopyala**ve **Yapıştır** komutlarını gösterir.
+> **Ikili düzenleyiciyi** kullanırken, birçok örnekte kaynağa özgü komutların kısayol menüsünü göstermek için sağ tıklayabilirsiniz. Kullanılabilir komutlar, imlecinizin ne olduğuna bağlıdır. Örneğin, seçili onaltılık değerlerle **Ikili düzenleyiciyi** işaret ederken sağ tıkladığınızda, kısayol menüsü **Kes**, **Kopyala** ve **Yapıştır** komutlarını gösterir.
 
 ## <a name="how-to"></a>Nasıl yapılır
 
@@ -58,7 +59,7 @@ ms.locfileid: "91503524"
 1. Kaynağa sağ tıklayın ve **Ikili verileri aç**' ı seçin.
 
 > [!NOTE]
-> Bir kaynağı, RCDATA veya özel bir kaynak gibi Visual Studio 'Nun tanımadığı bir biçimde açmak için **kaynak görünümü** penceresini kullanırsanız, kaynak **ikili düzenleyicide**otomatik olarak açılır.
+> Bir kaynağı, RCDATA veya özel bir kaynak gibi Visual Studio 'Nun tanımadığı bir biçimde açmak için **kaynak görünümü** penceresini kullanırsanız, kaynak **ikili düzenleyicide** otomatik olarak açılır.
 
 ### <a name="to-open-a-managed-resource-for-binary-editing"></a>Bir yönetilen kaynağı ikili düzenlemeyle açmak için
 
@@ -77,7 +78,7 @@ Zaten başka bir düzenleyici penceresinde düzenlenmekte olan bir kaynakta **Ik
 
 1. Düzenlemek istediğiniz baytı seçin.
 
-   **Tab** tuşu, odağı **ikili DÜZENLEYICININ**onaltılı ve ASCII bölümleri arasında taşınır. Tek seferde bir ekran arasında ilerlemek için, **sayfa yukarı** ve **sayfa aşağı** tuşlarını kullanabilirsiniz.
+   **Tab** tuşu, odağı **ikili DÜZENLEYICININ** onaltılı ve ASCII bölümleri arasında taşınır. Tek seferde bir ekran arasında ilerlemek için, **sayfa yukarı** ve **sayfa aşağı** tuşlarını kullanabilirsiniz.
 
 1. Yeni değeri yazın.
 
@@ -88,7 +89,7 @@ Zaten başka bir düzenleyici penceresinde düzenlenmekte olan bir kaynakta **Ik
 
 ### <a name="to-find-binary-data"></a>İkili verileri bulmak için
 
-ASCII dizeleri veya onaltılı baytlar için arama yapabilirsiniz. Örneğin, *Hello*'yu bulmak Için, *Hello* dize veya on altılı değeri olan *48 65 6c 6c 6F*için arama yapabilirsiniz.
+ASCII dizeleri veya onaltılı baytlar için arama yapabilirsiniz. Örneğin, *Hello*'yu bulmak Için, *Hello* dize veya on altılı değeri olan *48 65 6c 6c 6F* için arama yapabilirsiniz.
 
 1. Menü **Düzenle**  >  [bul](/visualstudio/ide/reference/find-command)' a gidin.
 
@@ -123,7 +124,7 @@ Kaynağı normal kaynak betiği (. RC) dosya söz dizimini kullanarak ayrı bir 
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

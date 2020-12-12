@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: araç Ipuçları için TTN_NEEDTEXT bildirimi Işleme'
 title: Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-ms.openlocfilehash: 75850dbf92587cf654d4f7a39ea54af1fd9dd5bd
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 793f6c42e0e43c341884b999e5e1aed0be448b00
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326424"
 ---
 # <a name="handling-ttn_needtext-notification-for-tool-tips"></a>Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
 
@@ -32,7 +33,7 @@ Aşağıdaki gibi, sınıf tanımında işleyici işlevinizi bildirin:
 
 italik parametrelerin bulunduğu yer:
 
-*numarasını*<br/>
+*id*<br/>
 Bildirimi gönderen denetimin tanımlayıcısı. Kullanılmadı. Denetim kimliği, **nmhdr** yapısından alınır.
 
 *pNMHDR*<br/>

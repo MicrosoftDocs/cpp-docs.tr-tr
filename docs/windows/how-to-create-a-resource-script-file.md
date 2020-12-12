@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: kaynak oluşturma (C++)'
 title: 'Nasıl yapılır: kaynak oluşturma (C++)'
 ms.date: 02/14/2019
 f1_keywords:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - resources [C++], templates
 - .rct files [C++]
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
-ms.openlocfilehash: 88618a5b1184ce9774a58f575a3fbff2d5e63ba4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 812e67dce80eedf17bb137af0b1d5e74f3dbcb66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504422"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327068"
 ---
 # <a name="how-to-create-resources-c"></a>Nasıl yapılır: kaynak oluşturma (C++)
 
@@ -51,7 +52,7 @@ Projeniz için şu şekilde kaynak oluşturabilirsiniz:
    > [!NOTE]
    > Kaynak eklemeden önce Bu adım gereklidir.
 
-- Projenize kaynak ekleme ve **kaynak görünümü**kullanma.
+- Projenize kaynak ekleme ve **kaynak görünümü** kullanma.
 
 - Özelleştirilmiş kaynaklar oluşturmak için bir kaynak şablonu kullanma.
 
@@ -64,10 +65,10 @@ Projenize yeni kaynaklar oluşturup eklemeden önce, önce bir kaynak betiği (.
 
 ### <a name="to-create-a-resource-script-file"></a>Kaynak betik dosyası oluşturmak için
 
-1. **Çözüm Gezgini**, örneğin *MyProject*gibi mevcut proje klasörünüze odaklayın.
+1. **Çözüm Gezgini**, örneğin *MyProject* gibi mevcut proje klasörünüze odaklayın.
 
    > [!NOTE]
-   > Proje klasörünü **Çözüm Gezgini**çözüm klasörüyle karıştırmayın. **Çözümü çözüm** klasörüne yerleştirirseniz, aynı **Yeni öğe Ekle** seçeneklerine sahip kalmazsınız.
+   > Proje klasörünü **Çözüm Gezgini** çözüm klasörüyle karıştırmayın. **Çözümü çözüm** klasörüne yerleştirirseniz, aynı **Yeni öğe Ekle** seçeneklerine sahip kalmazsınız.
 
 1. Menüsünde **Proje**  >  **Yeni öğe Ekle**' ye gidin.
 
@@ -77,7 +78,7 @@ Projenize yeni kaynaklar oluşturup eklemeden önce, önce bir kaynak betiği (.
 
 ### <a name="to-open-a-resource-script-file"></a>Kaynak betik dosyasını açmak için
 
-Bir proje açık olmadan kaynak betik dosyasındaki kaynakları görüntüleyebilirsiniz. Betik dosyası, **kaynak görünümü**aksine bir belge penceresinde açılır.
+Bir proje açık olmadan kaynak betik dosyasındaki kaynakları görüntüleyebilirsiniz. Betik dosyası, **kaynak görünümü** aksine bir belge penceresinde açılır.
 
 > [!NOTE]
 > Bazı komutlar yalnızca dosya tek başına açılırsa kullanılabilir, yani proje, önce projeyi yüklemeden bir proje dışında. Örneğin, farklı **Kaydet** komutunu kullanmak ve bir dosyayı farklı biçimde veya dosya adıyla kaydetmek için, dosyanın tek başına açılmalıdır.
@@ -96,10 +97,10 @@ Bir proje açık olmadan kaynak betik dosyasındaki kaynakları görüntüleyebi
 
 [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md)'Nı kullanarak Windows Için bir Microsoft Foundation Class (MFC) uygulaması oluşturduğunuzda, sihirbaz MFC 'nin temel özelliklerini içeren bir kaynak betiği (. RC) dosyası gibi temel bir dosya kümesi oluşturur. Ancak, MFC 'ye bağlı olmayan Windows uygulamaları için bir. rc dosyası düzenlenirken bu MFC 'ye özgü özellikler kullanılamaz. Buna kod sihirbazları, menü istem dizeleri, Birleşik giriş kutusu denetimleri için liste içerikleri ve ActiveX denetimi barındırma dahildir.
 
-- Kaynak betik dosyası açıkken MFC desteği eklemek için, **kaynak görünümü**' de Kaynaklar klasörünü vurgulayın (örneğin, *MFC. RC*). Ardından [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **MFC modunu** **doğru**olarak ayarlayın.
+- Kaynak betik dosyası açıkken MFC desteği eklemek için, **kaynak görünümü**' de Kaynaklar klasörünü vurgulayın (örneğin, *MFC. RC*). Ardından [Özellikler penceresi](/visualstudio/ide/reference/properties-window), **MFC modunu** **doğru** olarak ayarlayın.
 
   > [!NOTE]
-  > **MFC modunu**ayarlamanın yanı sıra,. rc dosyası bir MFC projesinin parçası olmalıdır. Yalnızca bir Win32 projesindeki bir. rc dosyasında **MFC modunun** **true** olarak ayarlanması, MFC özellikleri vermez.
+  > **MFC modunu** ayarlamanın yanı sıra,. rc dosyası bir MFC projesinin parçası olmalıdır. Yalnızca bir Win32 projesindeki bir. rc dosyasında **MFC modunun** **true** olarak ayarlanması, MFC özellikleri vermez.
 
 ## <a name="create-resources"></a>Kaynak oluşturma
 
@@ -108,7 +109,7 @@ Bir kaynağı, bir şablonu temel alan bir kaynağı veya bir şablondan sonra d
 Projelerinize dahil edilen kaynak dosyalarını göstermek için **kaynak görünümü** penceresini kullanın. En üstteki klasörü genişleterek, örneğin, *Project1. RC*, bu dosya içindeki kaynak türlerini gösterir. Her kaynak türünü, bu türdeki tek tek kaynakları göstermek için genişletin.
 
 > [!TIP]
-> **Kaynak görünümü** penceresini açmak için menü **View**  >  **diğer Windows**kaynak görünümü görüntüle ' ye gidin  >  **Resource View** veya **CTRL** + **SHIFT** + **E**tuşlarına basın.
+> **Kaynak görünümü** penceresini açmak için menü   >  **diğer Windows** kaynak görünümü görüntüle ' ye gidin  >   veya **CTRL** + **SHIFT** + **E** tuşlarına basın.
 
 Ayrıca, komutların kısayol menüsünü başlatmak için **kaynak görünümü** penceresine sağ tıklama ya da pencereyi sabitlemek ve çıkarmak için başlık çubuğuna çift tıklayabilmeniz gerekir. Pencerenin davranışını denetleyen komutlar için başlık çubuğuna sağ tıklayın. Daha fazla bilgi için bkz. [Windows yönetimi](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 
@@ -118,7 +119,7 @@ Ayrıca, komutların kısayol menüsünü başlatmak için **kaynak görünümü
 |---|---|
 | **Kaynak Türü** | Oluşturmak istediğiniz kaynak türünü belirtin.<br/><br/>' Da bulunan ek kaynakları açığa çıkarmak için imleci ve iletişim kutusu kaynak kategorilerini genişletebilirsiniz *. \Microsoft Visual Studio \<version\> \Vc\vcresourcetemplates \\<LCID \> \mfc.exe*. . Rct dosyaları eklemeniz gerekiyorsa, bunları buraya koyun ya da başka bir [içerme yolu](./how-to-include-resources-at-compile-time.md)belirtin. Ağaç denetimindeki en üst düzeyde gösterilen kaynaklar, Visual Studio tarafından sunulan varsayılan kaynaklardır. . Rct dosyalarındaki kaynaklar, uygun kategorinin altında ikinci düzeyde görüntülenir. Ekleyebileceğiniz. rct dosyaları sayısında önceden ayarlanmış bir sınır yoktur.<br/><br/> |
 | **Yeni** | Kaynak **türü** kutusunda seçilen türe göre bir kaynak oluşturun ve kaynağı uygun düzenleyicide açın.<br/><br/>Örneğin, bir iletişim kaynağı oluşturursanız, kaynağı [Iletişim kutusu düzenleyicisinde](../windows/dialog-editor.md)açar. |
-| **İçeri Aktarma** | Geçerli projenize aktarmak istediğiniz kaynağa gitmek için **Içeri aktar** iletişim kutusunu açın.<br/><br/>Bir bit eşlem, simge, imleç, HTML, ses (. WAV) veya özel kaynak dosyası. |
+| **İçeri Aktar** | Geçerli projenize aktarmak istediğiniz kaynağa gitmek için **Içeri aktar** iletişim kutusunu açın.<br/><br/>Bir bit eşlem, simge, imleç, HTML, ses (. WAV) veya özel kaynak dosyası. |
 | **Özel** | Özel bir kaynak oluşturmak için **Yeni özel kaynak** iletişim kutusunu açın.<br/><br/>Ayrıca, özel kaynak türünün adını girebileceğiniz bir metin kutusu sağlayan bir **kaynak türü** özelliği de içerir. Visual C++, çıkarken adı otomatik olarak büyük harfe dönüştürür. Özel kaynaklar yalnızca [Ikili düzenleyicide](../windows/binary-editor.md)düzenlenir. |
 
 Yeni bir kaynak oluşturduğunuzda Visual C++ buna benzersiz bir ad atar, örneğin, `IDD_Dialog1` . Bu kaynak KIMLIĞINI, ilişkili kaynak düzenleyicisinde veya [Özellikler penceresi](/visualstudio/ide/reference/properties-window)kaynak özelliklerini düzenleyerek özelleştirebilirsiniz.
@@ -128,19 +129,19 @@ Yeni bir kaynak oluşturduğunuzda Visual C++ buna benzersiz bir ad atar, örne�
 
 ### <a name="to-create-a-resource"></a>Bir kaynak oluşturmak için
 
-- **Kaynak görünümü**' de,. RC dosyanızı seçin, sonra kaynağı **Düzenle**' yi kullanın  >  **Add Resource** ve projenize eklenecek kaynak türünü seçin.
+- **Kaynak görünümü**' de,. RC dosyanızı seçin, sonra kaynağı **Düzenle**' yi kullanın  >   ve projenize eklenecek kaynak türünü seçin.
 
    > [!TIP]
    > Ayrıca, **kaynak görünümü** ' de. rc dosyasına sağ tıklayıp kısayol menüsünden **Kaynak Ekle** ' yi seçebilirsiniz.
 
-- **Çözüm Gezgini**, proje klasörüne sağ tıklayın, Kaynak Ekle **Ekle**' yi seçin  >  **Add Resource** ve projenize eklenecek kaynak türünü seçin.
+- **Çözüm Gezgini**, proje klasörüne sağ tıklayın, Kaynak Ekle **Ekle**' yi seçin  >   ve projenize eklenecek kaynak türünü seçin.
 
    > [!NOTE]
    > Projenizde zaten bir. rc dosyanız yoksa, bu adım bir tane oluşturur. Ardından, yeni. rc dosyasına belirli kaynak türlerini eklemek için bu adımı yineleyebilirsiniz.
 
-- [Sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), sınıfa sağ tıklayın, kaynak **Ekle ' yi seçin**  >  **Add Resource** ve projenize eklenecek kaynak türünü seçin.
+- [Sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), sınıfa sağ tıklayın, kaynak **Ekle ' yi seçin**  >   ve projenize eklenecek kaynak türünü seçin.
 
-- Menü **projesi**  >  **Kaynak Ekle**öğesini kullanın.
+- Menü **projesi**  >  **Kaynak Ekle** öğesini kullanın.
 
 ## <a name="use-resource-templates"></a>Kaynak Şablonları Kullanma
 
@@ -154,11 +155,11 @@ Bir kaynak şablonunu özelleştirdikten sonra, yeni kaynak şablonunun **Kaynak
 > [!NOTE]
 > Dile özgü şablon dosyalarını ana şablon dizininin alt dizinlerinde yerleştir. Örneğin, yalnızca Ingilizce şablon dosyaları *.. \\<kaynak şablonu dizini \> \ 1033*' a gidin.
 >
-> Visual Studio, *\Program Files\Microsoft Visual Studio \<version\> \vc\vcresourcetemplates*, *\Program Files\Microsoft Visual Studio \<version> \vc\vcresourcetemplates \\<LCID \> * (İngilizce için 1033 LCID gibi) veya [ekleme yolundaki](./how-to-include-resources-at-compile-time.md)herhangi bir yerde bulunan yeni. rct dosyalarını arar. . Rct dosyalarınızı başka bir konumda depolamayı tercih ediyorsanız, konumu ekleme yoluna eklemeniz gerekir.
+> Visual Studio, *\Program Files\Microsoft Visual Studio \<version\> \vc\vcresourcetemplates*, *\Program Files\Microsoft Visual Studio \<version> \vc\vcresourcetemplates \\<LCID \>* (İngilizce için 1033 LCID gibi) veya [ekleme yolundaki](./how-to-include-resources-at-compile-time.md)herhangi bir yerde bulunan yeni. rct dosyalarını arar. . Rct dosyalarınızı başka bir konumda depolamayı tercih ediyorsanız, konumu ekleme yoluna eklemeniz gerekir.
 
 ### <a name="to-create-and-use-a-resource-template"></a>Kaynak şablonu oluşturmak ve kullanmak için
 
-1. **Çözüm Gezgini**, projenize sağ tıklayın ve Ekle **Add**  >  **Yeni öğe**Ekle ' yi seçin.
+1. **Çözüm Gezgini**, projenize sağ tıklayın ve Ekle   >  **Yeni öğe** Ekle ' yi seçin.
 
 1. **Şablonlar:** bölmesinde **Kaynak şablon dosyası (. rct)** öğesini seçin.
 
@@ -180,7 +181,7 @@ Bir kaynak şablonunu özelleştirdikten sonra, yeni kaynak şablonunun **Kaynak
 
 ### <a name="to-convert-an-existing-resource-file-to-a-template"></a>Var olan bir kaynak dosyasını bir şablona dönüştürmek için
 
-Kaynak betik dosyası açıkken, menüde **Dosya**  >  ** \<*filename*> farklı kaydet**' e gidin. Bir konum belirtip **Tamam**' ı seçin.
+Kaynak betik dosyası açıkken, menüde **Dosya**  >  **\<*filename*> farklı kaydet**' e gidin. Bir konum belirtip **Tamam**' ı seçin.
 
 ## <a name="requirements"></a>Gereksinimler
 

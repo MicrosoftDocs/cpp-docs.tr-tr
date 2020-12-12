@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCColorBar sınıfı'
 title: CMFCColorBar sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: ca28f8a07938e787fcf2d91d714c9dc82092194f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 5a2935c71a5579dddb2133f2ac6589a6bd447ef6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561043"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327715"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar sınıfı
 
@@ -110,7 +111,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |[CMFCColorBar:: EnableOtherButton](#enableotherbutton)|Kullanıcının daha fazla renk seçmesini sağlayan bir iletişim kutusunun görüntülenmesini sağlar veya devre dışı bırakır.|
 |[CMFCColorBar:: GetColor](#getcolor)|Şu anda seçili rengi alır.|
 |[CMFCColorBar:: Getcommandıd](#getcommandid)|Geçerli renk çubuğu denetiminin komut KIMLIĞINI alır.|
-|[CMFCColorBar:: Gethighaçıklatedcolor](#gethighlightedcolor)|Bir renk düğmesinin odağa sahip olduğunu belirten rengi alır; diğer bir deyişle, düğme *sıcak*olur.|
+|[CMFCColorBar:: Gethighaçıklatedcolor](#gethighlightedcolor)|Bir renk düğmesinin odağa sahip olduğunu belirten rengi alır; diğer bir deyişle, düğme *sıcak* olur.|
 |[CMFCColorBar:: GetHorzMargin](#gethorzmargin)|Sol veya sağ renk hücresi ile istemci alanı sınırı arasındaki boşluk olan yatay boşluğu alır.|
 |[CMFCColorBar:: GetVertMargin](#getvertmargin)|Üst veya alt renk hücresi ile istemci alanı sınırı arasındaki boşluk olan dikey boşluğu alır.|
 |[CMFCColorBar:: Isteyoff](#istearoff)|Geçerli renk çubuğunun dockable olup olmadığını gösterir.|
@@ -478,7 +479,7 @@ Bu yöntem başarılı olursa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, renk çubuğu denetimindeki uygun sayıyı veya satırları ve sütunları hesaplamak için *Rect*, *nColumns*ve *pPalette* parametrelerini kullanır ve ardından [CMFCColorBar:: Create](#create) yöntemini çağırır.
+Bu yöntem, renk çubuğu denetimindeki uygun sayıyı veya satırları ve sütunları hesaplamak için *Rect*, *nColumns* ve *pPalette* parametrelerini kullanır ve ardından [CMFCColorBar:: Create](#create) yöntemini çağırır.
 
 ## <a name="cmfccolorbarcreatepalette"></a><a name="createpalette"></a> CMFCColorBar:: CreatePalette
 
@@ -581,7 +582,7 @@ CSize GetColorGridSize(BOOL bVertDock) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-[CSize](../../atl-mfc-shared/reference/csize-class.md) `cx` Bileşeni sütun sayısını ve `cy` Bileşen satır sayısını içeren bir CSize nesnesi.
+[](../../atl-mfc-shared/reference/csize-class.md) `cx` Bileşeni sütun sayısını ve `cy` Bileşen satır sayısını içeren bir CSize nesnesi.
 
 ## <a name="cmfccolorbargetcommandid"></a><a name="getcommandid"></a> CMFCColorBar:: Getcommandıd
 
@@ -618,7 +619,7 @@ Gerekli olan hesaplanmış ek yükseklik.
 
 ## <a name="cmfccolorbargethighlightedcolor"></a><a name="gethighlightedcolor"></a> CMFCColorBar:: Gethighaçıklatedcolor
 
-Bir renk düğmesinin odağa sahip olduğunu belirten rengi alır; diğer bir deyişle, düğme *sıcak*olur.
+Bir renk düğmesinin odağa sahip olduğunu belirten rengi alır; diğer bir deyişle, düğme *sıcak* olur.
 
 ```
 COLORREF GetHighlightedColor() const;

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: v1_enum'
 title: v1_enum (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - v1_enum attribute
 ms.assetid: 2fe92d92-81b9-4a1c-b6ce-437d0eb770ca
-ms.openlocfilehash: 6529a32b0bfe2de09191e9cced8f6bd98e7ffdcc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c096ec78971e8980b68572c7f0bbb4510d03d3d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832990"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327206"
 ---
 # <a name="v1_enum"></a>v1_enum
 
@@ -29,7 +30,7 @@ Belirtilen numaralandırılmış türün 16 bit varsayılan yerine 32 bitlik bir
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod **v1_enum**kullanımını gösterir:
+Aşağıdaki kod **v1_enum** kullanımını gösterir:
 
 ```cpp
 // cpp_attr_ref_v1_enum.cpp
@@ -47,7 +48,7 @@ enum eList {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Numaralandırılmış tür|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

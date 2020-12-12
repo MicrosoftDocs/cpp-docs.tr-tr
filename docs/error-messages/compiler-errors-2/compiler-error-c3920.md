@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3920'
 title: Derleyici hatası C3920
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3920
 ms.assetid: 66e91f28-ed82-4ce2-bf22-c0c74905b1ed
-ms.openlocfilehash: 416752054f7397a058329e1ee4bdaef693dd0d28
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b4cb793744126ee7bc91d18692d25439880fc672
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74758469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326579"
 ---
 # <a name="compiler-error-c3920"></a>Derleyici hatası C3920
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: int_4 sınıfı'
 title: int_4 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -268,18 +269,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_4::bg
 - amp_short_vectors/Concurrency::graphics::int_4::yxz
 ms.assetid: 01768c28-23a8-4965-8267-96834864f4eb
-ms.openlocfilehash: 3ca8eb4c93b3e9cd9108712727d1f83421c9d679
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: fd9d4825cce7ec2269da8dc5c7cd21180223c56a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126675"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327658"
 ---
 # <a name="int_4-class"></a>int_4 Sınıfı
 
 Dört tamsayının kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class int_4;
@@ -303,162 +304,162 @@ class int_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|int_4::get_w||
-|int_4::get_wx||
-|int_4::get_wxy||
-|int_4::get_wxyz||
-|int_4::get_wxz||
-|int_4::get_wxzy||
+|int_4:: get_w||
+|int_4:: get_wx||
+|int_4:: get_wxy||
+|int_4:: get_wxyz||
+|int_4:: get_wxz||
+|int_4:: get_wxzy||
 |int_4:: get_wy||
-|int_4::get_wyx||
-|int_4::get_wyxz||
-|int_4::get_wyz||
-|int_4::get_wyzx||
-|int_4::get_wz||
-|int_4::get_wzx||
-|int_4::get_wzxy||
-|int_4::get_wzy||
-|int_4::get_wzyx||
-|int_4::get_x||
+|int_4:: get_wyx||
+|int_4:: get_wyxz||
+|int_4:: get_wyz||
+|int_4:: get_wyzx||
+|int_4:: get_wz||
+|int_4:: get_wzx||
+|int_4:: get_wzxy||
+|int_4:: get_wzy||
+|int_4:: get_wzyx||
+|int_4:: get_x||
 |int_4:: get_xw||
 |int_4:: get_xwy||
-|int_4::get_xwyz||
-|int_4::get_xwz||
-|int_4::get_xwzy||
-|int_4::get_xy||
+|int_4:: get_xwyz||
+|int_4:: get_xwz||
+|int_4:: get_xwzy||
+|int_4:: get_xy||
 |int_4:: get_xyw||
 |int_4:: get_xywz||
-|int_4::get_xyz||
-|int_4::get_xyzw||
-|int_4::get_xz||
-|int_4::get_xzw||
-|int_4::get_xzwy||
-|int_4::get_xzy||
-|int_4::get_xzyw||
-|int_4::get_y||
+|int_4:: get_xyz||
+|int_4:: get_xyzw||
+|int_4:: get_xz||
+|int_4:: get_xzw||
+|int_4:: get_xzwy||
+|int_4:: get_xzy||
+|int_4:: get_xzyw||
+|int_4:: get_y||
 |int_4:: get_yw||
-|int_4::get_ywx||
-|int_4::get_ywxz||
-|int_4::get_ywz||
+|int_4:: get_ywx||
+|int_4:: get_ywxz||
+|int_4:: get_ywz||
 |int_4:: get_ywzx||
-|int_4::get_yx||
-|int_4::get_yxw||
-|int_4::get_yxwz||
-|int_4::get_yxz||
-|int_4::get_yxzw||
-|int_4::get_yz||
-|int_4::get_yzw||
+|int_4:: get_yx||
+|int_4:: get_yxw||
+|int_4:: get_yxwz||
+|int_4:: get_yxz||
+|int_4:: get_yxzw||
+|int_4:: get_yz||
+|int_4:: get_yzw||
 |int_4:: get_yzwx||
-|int_4::get_yzx||
-|int_4::get_yzxw||
-|int_4::get_z||
-|int_4::get_zw||
-|int_4::get_zwx||
-|int_4::get_zwxy||
-|int_4::get_zwy||
-|int_4::get_zwyx||
-|int_4::get_zx||
-|int_4::get_zxw||
-|int_4::get_zxwy||
-|int_4::get_zxy||
-|int_4::get_zxyw||
-|int_4::get_zy||
-|int_4::get_zyw||
-|int_4::get_zywx||
-|int_4::get_zyx||
-|int_4::get_zyxw||
-|int_4::ref_a||
-|int_4::ref_b||
-|int_4::ref_g||
-|int_4::ref_r||
-|int_4::ref_w||
-|int_4::ref_x||
-|int_4::ref_y||
-|int_4::ref_z||
-|int_4::set_w||
-|int_4::set_wx||
-|int_4::set_wxy||
-|int_4::set_wxyz||
-|int_4::set_wxz||
-|int_4::set_wxzy||
-|int_4::set_wy||
-|int_4::set_wyx||
-|int_4::set_wyxz||
-|int_4::set_wyz||
-|int_4::set_wyzx||
-|int_4::set_wz||
-|int_4::set_wzx||
-|int_4::set_wzxy||
-|int_4::set_wzy||
-|int_4::set_wzyx||
-|int_4::set_x||
+|int_4:: get_yzx||
+|int_4:: get_yzxw||
+|int_4:: get_z||
+|int_4:: get_zw||
+|int_4:: get_zwx||
+|int_4:: get_zwxy||
+|int_4:: get_zwy||
+|int_4:: get_zwyx||
+|int_4:: get_zx||
+|int_4:: get_zxw||
+|int_4:: get_zxwy||
+|int_4:: get_zxy||
+|int_4:: get_zxyw||
+|int_4:: get_zy||
+|int_4:: get_zyw||
+|int_4:: get_zywx||
+|int_4:: get_zyx||
+|int_4:: get_zyxw||
+|int_4:: ref_a||
+|int_4:: ref_b||
+|int_4:: ref_g||
+|int_4:: ref_r||
+|int_4:: ref_w||
+|int_4:: ref_x||
+|int_4:: ref_y||
+|int_4:: ref_z||
+|int_4:: set_w||
+|int_4:: set_wx||
+|int_4:: set_wxy||
+|int_4:: set_wxyz||
+|int_4:: set_wxz||
+|int_4:: set_wxzy||
+|int_4:: set_wy||
+|int_4:: set_wyx||
+|int_4:: set_wyxz||
+|int_4:: set_wyz||
+|int_4:: set_wyzx||
+|int_4:: set_wz||
+|int_4:: set_wzx||
+|int_4:: set_wzxy||
+|int_4:: set_wzy||
+|int_4:: set_wzyx||
+|int_4:: set_x||
 |int_4:: set_xw||
 |int_4:: set_xwy||
-|int_4::set_xwyz||
-|int_4::set_xwz||
-|int_4::set_xwzy||
+|int_4:: set_xwyz||
+|int_4:: set_xwz||
+|int_4:: set_xwzy||
 |int_4:: set_xy||
 |int_4:: set_xyw||
-|int_4::set_xywz||
-|int_4::set_xyz||
-|int_4::set_xyzw||
-|int_4::set_xz||
-|int_4::set_xzw||
-|int_4::set_xzwy||
-|int_4::set_xzy||
-|int_4::set_xzyw||
-|int_4::set_y||
-|int_4::set_yw||
-|int_4::set_ywx||
-|int_4::set_ywxz||
-|int_4::set_ywz||
-|int_4::set_ywzx||
-|int_4::set_yx||
-|int_4::set_yxw||
-|int_4::set_yxwz||
-|int_4::set_yxz||
-|int_4::set_yxzw||
-|int_4::set_yz||
-|int_4::set_yzw||
-|int_4::set_yzwx||
-|int_4::set_yzx||
-|int_4::set_yzxw||
-|int_4::set_z||
-|int_4::set_zw||
-|int_4::set_zwx||
-|int_4::set_zwxy||
-|int_4::set_zwy||
-|int_4::set_zwyx||
-|int_4::set_zx||
-|int_4::set_zxw||
-|int_4::set_zxwy||
-|int_4::set_zxy||
-|int_4::set_zxyw||
-|int_4::set_zy||
-|int_4::set_zyw||
-|int_4::set_zywx||
-|int_4::set_zyx||
-|int_4::set_zyxw||
+|int_4:: set_xywz||
+|int_4:: set_xyz||
+|int_4:: set_xyzw||
+|int_4:: set_xz||
+|int_4:: set_xzw||
+|int_4:: set_xzwy||
+|int_4:: set_xzy||
+|int_4:: set_xzyw||
+|int_4:: set_y||
+|int_4:: set_yw||
+|int_4:: set_ywx||
+|int_4:: set_ywxz||
+|int_4:: set_ywz||
+|int_4:: set_ywzx||
+|int_4:: set_yx||
+|int_4:: set_yxw||
+|int_4:: set_yxwz||
+|int_4:: set_yxz||
+|int_4:: set_yxzw||
+|int_4:: set_yz||
+|int_4:: set_yzw||
+|int_4:: set_yzwx||
+|int_4:: set_yzx||
+|int_4:: set_yzxw||
+|int_4:: set_z||
+|int_4:: set_zw||
+|int_4:: set_zwx||
+|int_4:: set_zwxy||
+|int_4:: set_zwy||
+|int_4:: set_zwyx||
+|int_4:: set_zx||
+|int_4:: set_zxw||
+|int_4:: set_zxwy||
+|int_4:: set_zxy||
+|int_4:: set_zxyw||
+|int_4:: set_zy||
+|int_4:: set_zyw||
+|int_4:: set_zywx||
+|int_4:: set_zyx||
+|int_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |int_4:: operator-||
-|int_4::operator--||
-|int_4::operator%=||
-|int_4:: operator & =||
+|int_4:: operator--||
+|int_4:: operator% =||
+|int_4:: operator&=||
 |int_4:: operator * =||
 |int_4:: operator/=||
-|int_4::operator^=||
+|int_4:: operator ^ =||
 |int_4:: operator&#124;=||
 |int_4:: operator ~||
 |int_4:: operator + +||
-|int_4::operator+=||
-|int_4:: operator <\<=||
-|int_4::operator=||
-|int_4::operator-=||
-|int_4:: operator > > =||
+|int_4:: operator + =||
+|int_4:: operator<\<=||
+|int_4:: operator =||
+|int_4:: operator-=||
+|int_4:: operator>>=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
@@ -470,84 +471,84 @@ class int_4;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|int_4::a||
-|int_4::ab||
-|int_4::abg||
+|int_4:: a||
+|int_4:: AB||
+|int_4:: ABG||
 |int_4:: abgr||
-|int_4::abr||
-|int_4::abrg||
-|int_4::ag||
+|int_4:: ABR||
+|int_4:: abrg||
+|int_4:: AG||
 |int_4:: AGB||
-|int_4::agbr||
+|int_4:: agbr||
 |int_4:: AGR||
-|int_4::agrb||
-|int_4::ar||
+|int_4:: agrb||
+|int_4:: ar||
 |int_4:: ARB||
-|int_4::arbg||
+|int_4:: arbg||
 |int_4:: arg||
 |int_4:: ARGB||
-|int_4::b||
-|int_4::ba||
-|int_4::bag||
+|int_4:: b||
+|int_4:: ba||
+|int_4:: bag||
 |int_4:: bagr||
 |int_4:: Bar||
 |int_4:: barg||
-|int_4::bg||
-|int_4::bga||
+|int_4:: bg||
+|int_4:: BGA||
 |int_4:: bgar||
-|int_4::bgr||
-|int_4::bgra||
-|int_4::br||
+|int_4:: bgr||
+|int_4:: bgra||
+|int_4:: br||
 |int_4:: köşeli||
 |int_4:: Brag||
-|int_4::brg||
-|int_4::brga||
+|int_4:: brg||
+|int_4:: brga||
 |int_4:: g||
-|int_4::ga||
-|int_4::gab||
-|int_4::gabr||
+|int_4:: GA||
+|int_4:: GAB||
+|int_4:: gabr||
 |int_4:: Gar||
 |int_4:: garb||
-|int_4::gb||
-|int_4::gba||
+|int_4:: GB||
+|int_4:: GBA||
 |int_4:: GBar||
-|int_4::gbr||
-|int_4::gbra||
+|int_4:: GbR||
+|int_4:: GBRA||
 |int_4:: gr||
 |int_4:: GRA||
 |int_4::||
-|int_4::grb||
-|int_4::grba||
-|int_4::r||
-|int_4::ra||
-|int_4::rab||
+|int_4:: GRB||
+|int_4:: Grba||
+|int_4:: r||
+|int_4:: Ra||
 |int_4:: rampa||
-|int_4::rag||
+|int_4:: rampa||
+|int_4:: Rag||
 |int_4:: çgb||
-|int_4::rb||
-|int_4::rba||
+|int_4:: RB||
+|int_4:: RBA||
 |int_4:: rbag||
-|int_4::rbg||
-|int_4::rbga||
-|int_4::rg||
-|int_4::rga||
-|int_4::rgab||
-|int_4::rgb||
-|int_4::rgba||
+|int_4:: RBG||
+|int_4:: rbga||
+|int_4:: RG||
+|int_4:: RGA||
+|int_4:: rgab||
+|int_4:: RGB||
+|int_4:: RGBA||
 |int_4:: w||
-|int_4::wx||
-|int_4::wxy||
-|int_4::wxyz||
-|int_4::wxz||
-|int_4::wxzy||
+|int_4:: WX||
+|int_4:: wxy||
+|int_4:: WXYZ||
+|int_4:: wxz||
+|int_4:: wxzy||
 |int_4:: WY||
 |int_4:: wyx||
 |int_4:: wyxz||
-|int_4::wyz||
-|int_4::wyzx||
+|int_4:: wyz||
+|int_4:: wyzx||
 |int_4:: WZ||
-|int_4::wzx||
-|int_4::wzxy||
+|int_4:: wzx||
+|int_4:: wzxy||
 |int_4:: wzy||
 |int_4:: wzyx||
 |int_4:: x||
@@ -561,10 +562,10 @@ class int_4;
 |int_4:: xywz||
 |int_4:: xyz||
 |int_4:: Xyzw||
-|int_4::xz||
+|int_4:: xz||
 |int_4:: xzw||
 |int_4:: xzwy||
-|int_4::xzy||
+|int_4:: xzy||
 |int_4:: xzyw||
 |int_4:: y||
 |int_4:: YW||
@@ -572,32 +573,32 @@ class int_4;
 |int_4:: ywxz||
 |int_4:: ywz||
 |int_4:: ywzx||
-|int_4::yx||
+|int_4:: yx||
 |int_4:: YXW||
 |int_4:: yxwz||
-|int_4::yxz||
+|int_4:: yxz||
 |int_4:: yxzw||
-|int_4::yz||
+|int_4::,||
 |int_4:: yzw||
 |int_4:: yzwx||
-|int_4::yzx||
-|int_4::yzxw||
-|int_4::z||
-|int_4::zw||
-|int_4::zwx||
-|int_4::zwxy||
-|int_4::zwy||
-|int_4::zwyx||
-|int_4::zx||
-|int_4::zxw||
-|int_4::zxwy||
-|int_4::zxy||
-|int_4::zxyw||
-|int_4::zy||
-|int_4::zyw||
-|int_4::zywx||
-|int_4::zyx||
-|int_4::zyxw||
+|int_4:: yzx||
+|int_4:: yzxw||
+|int_4:: z||
+|int_4:: ZW||
+|int_4:: ZwX||
+|int_4:: zwxy||
+|int_4:: zwy||
+|int_4:: zwyx||
+|int_4:: ZX||
+|int_4:: ZXW||
+|int_4:: zxwy||
+|int_4:: zxy||
+|int_4:: zxyw||
+|int_4:: zy||
+|int_4:: zyw||
+|int_4:: zywx||
+|int_4:: ZYX||
+|int_4:: zyxw||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -609,7 +610,7 @@ class int_4;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>int_4
+## <a name="int_4"></a><a name="ctor"></a> int_4
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -673,7 +674,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="int_4__size"></a>boyutla
+## <a name="size"></a><a name="int_4__size"></a> boyutla
 
 ```cpp
 static const int size = 4;

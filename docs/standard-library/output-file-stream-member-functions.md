@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: çıkış dosyası akışı üye Işlevleri'
 title: Çıkış Dosya Akışı Üye İşlevleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - output streams [C++], member functions
 ms.assetid: 38aaf710-8035-4a34-a0c4-123a5327f28a
-ms.openlocfilehash: f20ed4e238d23211a6eeec4a3091daeb4d02a9b3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f2e9bde7bcac8ebccc668c68f222b495b53e0889
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327568"
 ---
 # <a name="output-file-stream-member-functions"></a>Çıkış Dosya Akışı Üye İşlevleri
 
@@ -98,7 +99,7 @@ Bir çıkış dosyası akışı, verilerin sonraki yazıldığı konuma işaret 
 
 Çıkış akışı yok edicisi, yalnızca Oluşturucu veya `open` üye işlevi dosyayı açarsa bir akışın dosyasını otomatik olarak kapatır. Oluşturucuyu zaten açık olan bir dosya için bir dosya tanımlayıcısı geçirirseniz veya `attach` üye işlevini kullanırsanız, dosyayı açık olarak kapatmanız gerekir.
 
-## <a name="error-processing-functions"></a><a name="vclrferrorprocessingfunctionsanchor10"></a>Işlevler Işlenirken hata oluştu
+## <a name="error-processing-functions"></a><a name="vclrferrorprocessingfunctionsanchor10"></a> Işlevler Işlenirken hata oluştu
 
 Bir akışa yazarken hataları sınamak için bu üye işlevleri kullanın:
 

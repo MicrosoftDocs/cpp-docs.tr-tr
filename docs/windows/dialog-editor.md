@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Iletişim kutusu Düzenleyicisi (C++)'
 title: İletişim kutusu Düzenleyicisi (C++)
 ms.date: 02/15/2019
 f1_keywords:
@@ -23,24 +24,24 @@ helpviewer_keywords:
 - Dialog Editor [C++], switching between controls and code
 - Dialog Editor [C++], shortcut keys
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
-ms.openlocfilehash: 6a83640bd50d4af40be3cdb7a47b29ae5ffb3f09
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 547d00208cc2a05814a9820e219cdfc5c7163436
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504541"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327167"
 ---
 # <a name="dialog-editor-c"></a>İletişim kutusu Düzenleyicisi (C++)
 
 **İletişim kutusu Düzenleyicisi** , iletişim kutusu kaynakları oluşturmanıza veya düzenlemenize olanak tanır.
 
-- Düzenleyiciyi açmak için **kaynak görünümü** penceresinde bir iletişim kutusunun. rc dosyasına çift tıklayın veya menü **View**  >  **diğer Windows**  >  **kaynak görünümü**görüntüle ' ye gidin.
+- Düzenleyiciyi açmak için **kaynak görünümü** penceresinde bir iletişim kutusunun. rc dosyasına çift tıklayın veya menü   >  **diğer Windows**  >  **kaynak görünümü** görüntüle ' ye gidin.
 
 Yeni bir iletişim kutusu veya iletişim kutusu şablonu oluşturmak için ilk adımlardan biri denetimleri ekliyor. Iletişim kutusu **düzenleyicisinde**, denetimleri belirli bir boyut, şekil veya hizalamayı sığacak şekilde düzenleyebilir veya iletişim kutusunda çalışmak için bu öğeleri etrafında taşıyabilirsiniz. Ayrıca, bir denetimi silmek de kolaydır.
 
 Bir iletişim kutusunu yeniden kullanabilmeniz için şablon olarak saklayabilirsiniz. Ayrıca, iletişim kutusunu tasarlama ve bunu uygulayan kodu düzenlemeyle arasında kolayca geçiş yapabilirsiniz.
 
-**Iletişim kutusu düzenleyicisinde**tek veya birden çok denetimin özelliklerini düzenlemek de mümkündür. Sekme sırasını, diğer bir deyişle **Tab** tuşuna basıldığında denetimlerin odaklandığı sırayı değiştirebilirsiniz veya kullanıcıların klavyeyi kullanarak denetim seçmesine izin veren bir erişim anahtarı ya da anahtar birleşimi tanımlayabilirsiniz.
+**Iletişim kutusu düzenleyicisinde** tek veya birden çok denetimin özelliklerini düzenlemek de mümkündür. Sekme sırasını, diğer bir deyişle **Tab** tuşuna basıldığında denetimlerin odaklandığı sırayı değiştirebilirsiniz veya kullanıcıların klavyeyi kullanarak denetim seçmesine izin veren bir erişim anahtarı ya da anahtar birleşimi tanımlayabilirsiniz.
 
 **Iletişim kutusu Düzenleyicisi** , ActiveX denetimleri de dahil olmak üzere özel denetimler kullanmanıza da olanak tanır. [Form görünümünü](../mfc/reference/cformview-class.md), [kayıt görünümlerini](../data/record-views-mfc-data-access.md)veya [iletişim çubuklarını](../mfc/dialog-bars.md)da düzenleyebilirsiniz.
 
@@ -49,7 +50,7 @@ Visual Studio 2015 ' den başlayarak, Kullanıcı bir iletişim kutusu yeniden b
 Kaynaklar hakkında daha fazla bilgi için bkz. [Iletişim kutusu](../windows/creating-a-new-dialog-box.md) ve [Iletişim kutusu denetimleri](../windows/controls-in-dialog-boxes.md)oluşturma.
 
 > [!TIP]
-> Birçok örnekte **Iletişim kutusu düzenleyicisini**kullanırken, sık kullanılan komutların kısayol menüsünü göstermek için sağ fare düğmesi ile seçeneğini belirleyebilirsiniz.
+> Birçok örnekte **Iletişim kutusu düzenleyicisini** kullanırken, sık kullanılan komutların kısayol menüsünü göstermek için sağ fare düğmesi ile seçeneğini belirleyebilirsiniz.
 
 ## <a name="dialog-editor-toolbar"></a>İletişim kutusu Düzenleyici araç çubuğu
 
@@ -67,7 +68,7 @@ Kaynaklar hakkında daha fazla bilgi için bkz. [Iletişim kutusu](../windows/cr
 
 - **İletişim kutusu Düzenleyicisi** araç çubuğunu göstermek veya gizlemek için menü **görünümü**  >  **araç çubukları**  >  **iletişim Düzenleyicisi**' ne gidin.
 
-**İletişim kutusu düzenleyicisini** bir C++ projesinde açtığınızda, **iletişim kutusu düzenleyici** araç çubuğu çözümünüzün en üstünde otomatik olarak görünür, ancak araç çubuğunu açıkça kapatırsanız, **iletişim kutusu düzenleyicisini**bir sonraki açışınızda çağırmanız gerekir. Kullanılabilir araç çubukları ve pencereler listesinden seçerek görüntülenmesini sağlayabilirsiniz.
+**İletişim kutusu düzenleyicisini** bir C++ projesinde açtığınızda, **iletişim kutusu düzenleyici** araç çubuğu çözümünüzün en üstünde otomatik olarak görünür, ancak araç çubuğunu açıkça kapatırsanız, **iletişim kutusu düzenleyicisini** bir sonraki açışınızda çağırmanız gerekir. Kullanılabilir araç çubukları ve pencereler listesinden seçerek görüntülenmesini sağlayabilirsiniz.
 
 ## <a name="switch-between-dialog-box-controls-and-code"></a>Iletişim kutusu denetimleri ile kod arasında geçiş yapma
 
@@ -75,7 +76,7 @@ MFC uygulamalarında, iletişim kutusu denetimlerine çift tıklayarak kendi iş
 
 Seçilen bir denetim seçiliyken seçili öğe için mevcut olan Windows iletilerinin ve olaylarının tüm listesini görüntülemek için [Özellikler penceresi](/visualstudio/ide/reference/properties-window) **controtavents** düğmesini veya **iletiler** düğmesini seçin. İşleyici işlevleri oluşturmak veya düzenlemek için listeden seçin.
 
-- **İletişim kutusu düzenleyicisinden**koda geçmek için, en son uygulanan ileti işleme işlevine yönelik bildirime gitmek için iletişim kutusundaki bir denetime çift tıklayın.
+- **İletişim kutusu düzenleyicisinden** koda geçmek için, en son uygulanan ileti işleme işlevine yönelik bildirime gitmek için iletişim kutusundaki bir denetime çift tıklayın.
 
    ATL tabanlı iletişim sınıfları için, her zaman Oluşturucu tanımına atlayın.
 

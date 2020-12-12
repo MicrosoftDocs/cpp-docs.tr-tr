@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: catan, catanf, catanl'
 title: catan, catanf, catanl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - catanf function
 - catanl function
 ms.assetid: 8415ed9c-7909-4d08-b532-4630bafdc7e8
-ms.openlocfilehash: 204a05b4293fefa4378e54ce93a625bf890cf4d5
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c17b4344b60c9e9ba7b79edd911ac85a7ba4d5c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943359"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326330"
 ---
 # <a name="catan-catanf-catanl"></a>catan, catanf, catanl
 
@@ -59,7 +60,7 @@ _Lcomplex catan( _Lcomplex z );  // C++ only
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,13 +69,13 @@ Radyan cinsinden *z*'nin ark tanjantı. Sonuç, sanal eksen ve [-π/2; + π/2] a
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **catan** 'ın aşırı yüklerini çağırabilirsiniz. C programında **catan** her zaman **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **catan** 'ın aşırı yüklerini çağırabilirsiniz. C programında **catan** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**catan**, **catanf**, **catanl**|\<karmaşık. h >|\<ccomplex >|
+|**catan**,               **catanf**, **catanl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

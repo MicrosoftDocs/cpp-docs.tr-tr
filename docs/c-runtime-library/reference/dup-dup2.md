@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _dup _dup2'
 title: _dup, _dup2
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - dup2 function
 - _dup function
 ms.assetid: 4d07e92c-0d76-4832-a770-dfec0e7a0cfa
-ms.openlocfilehash: 6c635930fdbc8da550a2a32ea614e150fbeb08a8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e9801cc11b6d7a8d4250f61780c5c9b23dd3e1ac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915211"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327012"
 ---
 # <a name="_dup-_dup2"></a>_dup, _dup2
 
@@ -68,9 +69,9 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Dup** ve **_dup2** işlevleri, bir ikinci dosya tanımlayıcısını Şu anda açık olan bir dosya ile ilişkilendirir. Bu işlevler, **stdout**gibi önceden tanımlanmış bir dosya tanımlayıcısını farklı bir dosyayla ilişkilendirmek için kullanılabilir. Dosyadaki işlemler, herhangi bir dosya tanımlayıcısı kullanılarak gerçekleştirilebilir. Dosya için izin verilen erişim türü, yeni bir tanımlayıcının oluşturulmasından etkilenmez. **_dup** , belirtilen dosya için bir sonraki kullanılabilir dosya tanımlayıcısını döndürür. **_dup2** *fd2* , *FD1*ile aynı dosyaya başvurmaya zorlar. *Fd2* , çağrı sırasında açık bir dosya ile ilişkiliyse, bu dosya kapatılır.
+**_Dup** ve **_dup2** işlevleri, bir ikinci dosya tanımlayıcısını Şu anda açık olan bir dosya ile ilişkilendirir. Bu işlevler, **stdout** gibi önceden tanımlanmış bir dosya tanımlayıcısını farklı bir dosyayla ilişkilendirmek için kullanılabilir. Dosyadaki işlemler, herhangi bir dosya tanımlayıcısı kullanılarak gerçekleştirilebilir. Dosya için izin verilen erişim türü, yeni bir tanımlayıcının oluşturulmasından etkilenmez. **_dup** , belirtilen dosya için bir sonraki kullanılabilir dosya tanımlayıcısını döndürür. **_dup2** *fd2* , *FD1* ile aynı dosyaya başvurmaya zorlar. *Fd2* , çağrı sırasında açık bir dosya ile ilişkiliyse, bu dosya kapatılır.
 
-Hem **_dup** hem de **_dup2** dosya tanımlayıcılarını parametre olarak kabul eder. Bu işlevlerden birine bir Stream`FILE *`() geçirmek için [_fileno](fileno.md)kullanın. **Fileno** yordamı, belirtilen akış ile Şu anda ilişkili dosya tanımlayıcısını döndürür. Aşağıdaki örnek, **stderr** 'In (stdio. h 'de `FILE *` olarak tanımlanır) bir dosya tanımlayıcısıyla nasıl ilişkilendirileceğini gösterir:
+Hem **_dup** hem de **_dup2** dosya tanımlayıcılarını parametre olarak kabul eder. Bu işlevlerden birine bir Stream () geçirmek için `FILE *` [_fileno](fileno.md)kullanın. **Fileno** yordamı, belirtilen akış ile Şu anda ilişkili dosya tanımlayıcısını döndürür. Aşağıdaki örnek, **stderr** 'In ( `FILE *` stdio. h 'de olarak tanımlanır) bir dosya tanımlayıcısıyla nasıl ilişkilendirileceğini gösterir:
 
 ```C
 int cstderr = _dup( _fileno( stderr ));
@@ -82,10 +83,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_dup**|\<GÇ. h>|
-|**_dup2**|\<GÇ. h>|
+|**_dup**|\<io.h>|
+|**_dup2**|\<io.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

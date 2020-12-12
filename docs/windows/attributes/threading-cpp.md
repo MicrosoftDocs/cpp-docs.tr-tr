@@ -1,4 +1,5 @@
 ---
+description: İş parçacığı oluşturma hakkında daha fazla bilgi edinin (C++)
 title: Threading (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - threading attribute
 ms.assetid: 9b558cd6-fbf0-4602-aed5-31c068550ce3
-ms.openlocfilehash: 6f83dca442b6508207a4123fa918fc5078bdf664
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e46a3720280fe7ee7b9debae98e3270825e8db40
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840823"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327248"
 ---
 # <a name="threading-c"></a>iş parçacığı oluşturma (C++)
 
 COM nesnesi için iş parçacığı modelini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ threading(model=enumeration) ]
@@ -38,7 +39,7 @@ Seçim Aşağıdaki iş parçacığı modellerden biri:
 
 - `both` (Apartman ve serbest iş parçacığı)
 
-Varsayılan değer: `apartment`.
+`apartment` varsayılan değerdir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -50,14 +51,14 @@ ATL projelerinde, [coclass](coclass.md) özniteliği de varsa, *model* tarafınd
 
 ## <a name="example"></a>Örnek
 
-**İş parçacığı**örneği kullanımı için [lisanslı](licensed.md) örneğe bakın.
+**İş parçacığı** örneği kullanımı için [lisanslı](licensed.md) örneğe bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**|
 |**Geçersiz öznitelikler**|Yok|
 

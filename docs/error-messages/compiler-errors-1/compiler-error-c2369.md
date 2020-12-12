@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2369'
 title: Derleyici hatası C2369
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2369
 ms.assetid: 2a3933f6-2313-40ff-800f-921b296fdbbf
-ms.openlocfilehash: ed7bcbf24ec7ef88ec12d83af4f08b12d56b347b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 42ae61307793383954c473eee948ee511815ab95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74745765"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326091"
 ---
 # <a name="compiler-error-c2369"></a>Derleyici hatası C2369
 

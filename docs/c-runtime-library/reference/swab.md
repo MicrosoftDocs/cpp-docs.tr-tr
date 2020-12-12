@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _swab'
 title: _swab
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - swab function
 - bytes, swapping
 ms.assetid: 017142f2-050c-4f6a-8b49-6b094f58ec94
-ms.openlocfilehash: 7353081fab92fcc3324a214688be28a4f651b05f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 178189ede5330d467e8ec263a4558bb55108f354
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326258"
 ---
 # <a name="_swab"></a>_swab
 
@@ -60,7 +61,7 @@ Kopyalanacak ve takas edilecek veriler.
 *HD*<br/>
 Takas edilen veriler için depolama konumu.
 
-*No*<br/>
+*n*<br/>
 Kopyalanacak ve takas edilecek bayt sayısı.
 
 ## <a name="return-value"></a>Döndürülen değer
@@ -71,7 +72,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-*N* çift ise, **_swab** işlevi *src*'den *n* bayt kopyalar, her bir çift ardışık bayt çiftini değiştirir ve sonucu *hedef*olarak depolar. *N* tek ise, **_swab** *src*'nin ilk *n*-1 baytını kopyalar ve değiştirir ve son bayt kopyalanmaz. **_Swab** işlevi, genellikle ikili verileri farklı bir bayt sırası kullanan bir makineye aktarmak üzere hazırlamak için kullanılır.
+*N* çift ise, **_swab** işlevi *src*'den *n* bayt kopyalar, her bir çift ardışık bayt çiftini değiştirir ve sonucu *hedef* olarak depolar. *N* tek ise, **_swab** *src*'nin ilk *n*-1 baytını kopyalar ve değiştirir ve son bayt kopyalanmaz. **_Swab** işlevi, genellikle ikili verileri farklı bir bayt sırası kullanan bir makineye aktarmak üzere hazırlamak için kullanılır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -79,7 +80,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_swab**|C: \<Stdlib. h> C++: \<cstdlib> veya \<Stdlib. h>|
+|**_swab**|C: \<stdlib.h> C++: \<cstdlib> veya \<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unorm_2 sınıfı'
 title: unorm_2 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,18 +29,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unnorm_2::g
 - amp_short_vectors/Concurrency::graphics::unnorm_2::operator++
 ms.assetid: 62e88ea7-e29f-4f62-95ce-61a1f39f5e34
-ms.openlocfilehash: 325a1532a079c8eff9c8dcdc5410dcbfe58fb914
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1a91c1c203466f6ece535d45d5c2c828c8150dbd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126220"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326382"
 ---
 # <a name="unorm_2-class"></a>unorm_2 Sınıfı
 
 İki işaretsiz normal sayının kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class unorm_2;
@@ -63,30 +64,30 @@ class unorm_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|unorm_2::get_x||
-|unorm_2::get_xy||
-|unorm_2::get_y||
-|unorm_2::get_yx||
+|unorm_2:: get_x||
+|unorm_2:: get_xy||
+|unorm_2:: get_y||
+|unorm_2:: get_yx||
 |unorm_2:: ref_g||
-|unorm_2::ref_r||
-|unorm_2::ref_x||
-|unorm_2::ref_y||
+|unorm_2:: ref_r||
+|unorm_2:: ref_x||
+|unorm_2:: ref_y||
 |unorm_2:: set_x||
 |unorm_2:: set_xy||
-|unorm_2::set_y||
-|unorm_2::set_yx||
+|unorm_2:: set_y||
+|unorm_2:: set_yx||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|unorm_2::operator--||
-|unorm_2::operator*=||
+|unorm_2:: operator--||
+|unorm_2:: operator * =||
 |unorm_2:: operator/=||
-|unorm_2::operator++||
-|unorm_2::operator+=||
-|unorm_2::operator=||
-|unorm_2::operator-=||
+|unorm_2:: operator + +||
+|unorm_2:: operator + =||
+|unorm_2:: operator =||
+|unorm_2:: operator-=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
@@ -101,11 +102,11 @@ class unorm_2;
 |unorm_2:: g||
 |unorm_2:: gr||
 |unorm_2:: r||
-|unorm_2::rg||
+|unorm_2:: RG||
 |unorm_2:: x||
 |unorm_2:: XY||
 |unorm_2:: y||
-|unorm_2::yx||
+|unorm_2:: yx||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -117,7 +118,7 @@ class unorm_2;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>unorm_2
+## <a name="unorm_2"></a><a name="ctor"></a> unorm_2
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -182,7 +183,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="unorm_2__size"></a>boyutla
+## <a name="size"></a><a name="unorm_2__size"></a> boyutla
 
 ```cpp
 static const int size = 2;

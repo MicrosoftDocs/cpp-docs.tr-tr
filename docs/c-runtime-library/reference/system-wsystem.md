@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sistem, _wsystem'
 title: system, _wsystem
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - commands, executing
 - command interpreter
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-ms.openlocfilehash: 15e4637d709fdf4600ecb4c66c7d4a75c4fa07eb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3fb2045b932347669a756be1c8bc2f87694bd50d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844983"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326245"
 ---
 # <a name="system-_wsystem"></a>system, _wsystem
 
@@ -49,7 +50,7 @@ Bir komutu yürütür.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int system(
@@ -67,7 +68,7 @@ Yürütülecek komut.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Komut* **null** ise ve komut yorumlayıcı bulunursa, sıfır dışında bir değer döndürür. Komut yorumlayıcı bulunamazsa, 0 döndürür ve **errno** değerini **ENOENT**olarak ayarlar. *Komut* **null**değilse, **sistem** komut yorumlayıcı tarafından döndürülen değeri döndürür. Yalnızca komut yorumlayıcı 0 değerini döndürürse 0 değerini döndürür. -1 ' in dönüş değeri bir hatayı gösterir ve **errno** aşağıdaki değerlerden birine ayarlanır:
+*Komut* **null** ise ve komut yorumlayıcı bulunursa, sıfır dışında bir değer döndürür. Komut yorumlayıcı bulunamazsa, 0 döndürür ve **errno** değerini **ENOENT** olarak ayarlar. *Komut* **null** değilse, **sistem** komut yorumlayıcı tarafından döndürülen değeri döndürür. Yalnızca komut yorumlayıcı 0 değerini döndürürse 0 değerini döndürür. -1 ' in dönüş değeri bir hatayı gösterir ve **errno** aşağıdaki değerlerden birine ayarlanır:
 
 | Değer | Açıklama |
 |-|-|
@@ -80,11 +81,11 @@ Bu dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _s
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sistem** işlevi, dizeyi bir işletim sistemi komutu olarak *yürüten komut yorumlayıcıya geçirir.* **sistem** , CMD.exe komut yorumlayıcı dosyasını bulmak Için **ComSpec** ve **Path** ortam değişkenlerini kullanır. *Komut* **null**ise, işlev yalnızca komut yorumlayıcısının var olup olmadığını denetler.
+**Sistem** işlevi, dizeyi bir işletim sistemi komutu olarak *yürüten komut yorumlayıcıya geçirir.* **sistem** , CMD.exe komut yorumlayıcı dosyasını bulmak Için **ComSpec** ve **Path** ortam değişkenlerini kullanır. *Komut* **null** ise, işlev yalnızca komut yorumlayıcısının var olup olmadığını denetler.
 
-**System**çağrısından önce [fflush](fflush.md) veya [_flushall](flushall.md)kullanarak veya herhangi bir akışı kapatarak açıkça temizlenmesi gerekir.
+**System** çağrısından önce [fflush](fflush.md) veya [_flushall](flushall.md)kullanarak veya herhangi bir akışı kapatarak açıkça temizlenmesi gerekir.
 
-**_wsystem** , **sistemin**geniş karakterli bir sürümüdür; _wsystem *komut* bağımsız değişkeni **_wsystem** geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
+**_wsystem** , **sistemin** geniş karakterli bir sürümüdür; _wsystem *komut* bağımsız değişkeni  geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -125,7 +126,7 @@ Line one.
 Line two.
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 Line one.

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: nasıl yapılır: denetim erişimini ve değerlerini tanımlama (C++)'
 title: 'Nasıl yapılır: denetim erişimini ve değerlerini tanımlama (C++)'
 ms.date: 02/15/2019
 helpviewer_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-ms.openlocfilehash: 59d81c0b835171132ebf29739a4e130191a87769
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: cedaa5c455dc5810c78158bec628f57c7f6e52b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504459"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327125"
 ---
 # <a name="how-to-define-control-access-and-values-c"></a>Nasıl yapılır: denetim erişimini ve değerlerini tanımlama (C++)
 
@@ -40,7 +41,7 @@ Sekme sırası, **sekme** tuşunun giriş odağını bir denetimden bir iletişi
 > [!NOTE]
 > İletişim kutusu çakışan denetimler içeriyorsa, sekme sırasını değiştirmek denetimlerin görüntülenme şeklini değiştirebilir. Sekme sırasının ilerleyen kısımlarında yer alan denetimler her zaman, sekme düzeninde önce gelen örtüşen denetimlerin en üstünde görüntülenir.
 
-- Tüm denetimlerin geçerli sekme sırasını görüntülemek için menü **biçimi**  >  **sekme sırası**' na gidin veya **CTRL**  +  **D**tuşuna basın.
+- Tüm denetimlerin geçerli sekme sırasını görüntülemek için menü **biçimi**  >  **sekme sırası**' na gidin veya **CTRL**  +  **D** tuşuna basın.
 
    Her denetimin sol üst köşesindeki bir sayı geçerli sekme düzeninde yerini gösterir.
 
@@ -48,7 +49,7 @@ Sekme sırası, **sekme** tuşunun giriş odağını bir denetimden bir iletişi
 
 - İki veya daha fazla denetimin sekme sırasını değiştirmek için menü **biçimi**  >  **sekme sırası**' na gidin. **CTRL** tuşunu basılı tutun ve sırasıyla değişikliğin başlayacağı denetimi seçin ve ardından **CTRL** tuşunu bırakın ve **sekme** tuşunun bu noktadan izlemesini istediğiniz sırada denetimleri seçin.
 
-   Örneğin, denetimlerin sırasını değiştirmek istiyorsanız, `7` `9` **CTRL**tuşunu basılı tutun, ardından önce denetim ' i seçin `6` .
+   Örneğin, denetimlerin sırasını değiştirmek istiyorsanız, `7` `9` **CTRL** tuşunu basılı tutun, ardından önce denetim ' i seçin `6` .
 
 - Belirli bir denetimi sayı olarak ayarlamak `1` veya sekme düzeninde ilk olarak denetlemek için denetime çift tıklayın.
 
@@ -67,7 +68,7 @@ Normal olarak, klavye kullanıcıları giriş odağını **sekme** ve **ok** tu�
 
 1.  **Enter** tuşuna basın.
 
-   Görüntülenen başlıkta, Access tuşunu göstermek için bir alt çizgi görünür, örneğin, **R**adio1.
+   Görüntülenen başlıkta, Access tuşunu göstermek için bir alt çizgi görünür, örneğin, **R** adio1.
 
 ### <a name="to-define-an-access-key-for-a-control-without-a-visible-caption"></a>Görünür açıklamalı alt yazı olmadan bir denetim için erişim anahtarı tanımlama
 
@@ -85,7 +86,7 @@ Normal olarak, klavye kullanıcıları giriş odağını **sekme** ve **ok** tu�
 **İletişim kutusu Düzenleyicisi** açık olduğu sürece bir açılan kutu denetimine değerler ekleyebilirsiniz.
 
 > [!TIP]
-> **İletişim kutusu düzenleyicideki**kutuyu *boyutlandırmadan önce* tüm değerleri açılan kutuya eklemek iyi bir fikirdir veya Birleşik denetimde görünmesi gereken metni kesmeyebilirsiniz.
+> **İletişim kutusu düzenleyicideki** kutuyu *boyutlandırmadan önce* tüm değerleri açılan kutuya eklemek iyi bir fikirdir veya Birleşik denetimde görünmesi gereken metni kesmeyebilirsiniz.
 
 ### <a name="to-enter-values-into-a-combo-box-control"></a>Birleşik giriş kutusu denetimine değer girmek için
 
@@ -103,7 +104,7 @@ Normal olarak, klavye kullanıcıları giriş odağını **sekme** ve **ok** tu�
 
 1. Değer ekleme işiniz bittiğinde **ENTER** tuşuna basın.
 
-Birleşik giriş kutusunun aşağı açılan kısmını büyütme hakkında daha fazla bilgi için bkz. [Birleşik giriş kutusunun boyutunu ve açılan listesini ayarlama](./arrangement-of-controls-on-dialog-boxes.md).
+Birleşik giriş kutusunun aşağı açılan kısmını büyütme hakkında daha fazla bilgi için bkz. [Birleşik giriş kutusunun boyutunu ve Drop-Down listesini ayarlama](./arrangement-of-controls-on-dialog-boxes.md).
 
 > [!NOTE]
 > Bu yordamı kullanarak Win32 projelerine değer ekleyemezsiniz ( **Data** özelliği Win32 projeleri için gridir). Win32 projelerinin bu özelliği ekleyen kitaplıkları olmadığından, programlı bir şekilde Win32 projesi içeren bir Birleşik giriş kutusuna değer eklemeniz gerekir.
@@ -128,22 +129,22 @@ Bir iletişim kutusuna radyo düğmeleri eklediğinizde, gruptaki ilk düğmenin
 
 1. İhtiyaç duyduğunuz kadar çok sayıda radyo düğmesi eklemek için yukarıdaki adımı yineleyin. Gruptaki radyo düğmelerinin sekme düzeninde ardışık olduğundan emin olun.
 
-1. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window), sekme sırasındaki *Ilk* radyo düğmesinin **Grup** özelliğini **doğru**olarak ayarlayın.
+1. [Özellikler penceresinde](/visualstudio/ide/reference/properties-window), sekme sırasındaki *Ilk* radyo düğmesinin **Grup** özelliğini **doğru** olarak ayarlayın.
 
    **Group** özelliğini **true** olarak değiştirmek, kaynak betiğin iletişim nesnesindeki düğme girdisine ws_group stilini ekler ve kullanıcının düğme grubunda bir seferde birden fazla radyo düğmesi seçmesini önler (Kullanıcı bir radyo düğmesini seçerse, gruptaki diğerleri temizlenir).
 
    > [!NOTE]
-   > Yalnızca gruptaki ilk radyo düğmesinin **Group** özelliği **true**olarak ayarlanmalıdır. Düğme grubunun parçası olmayan ek denetimleriniz varsa, *grubun dışındaki* Ilk denetimin **Grup** özelliğini de **true** olarak ayarlayın. **Ctrl** + Sekme sırasını görüntülemek için CTRL**D** 'yi kullanarak ilk denetimi grup dışında hızlıca belirleyebilirsiniz.
+   > Yalnızca gruptaki ilk radyo düğmesinin **Group** özelliği **true** olarak ayarlanmalıdır. Düğme grubunun parçası olmayan ek denetimleriniz varsa, *grubun dışındaki* Ilk denetimin **Grup** özelliğini de **true** olarak ayarlayın.  + Sekme sırasını görüntülemek için CTRL **D** 'yi kullanarak ilk denetimi grup dışında hızlıca belirleyebilirsiniz.
 
 ### <a name="to-add-a-member-variable-for-the-radio-button-group"></a>Radyo düğmesi grubuna üye değişkeni eklemek için
 
-1. Sekme düzeninde (baskın denetim ve **Group** özelliği **true**olarak ayarlanan) ilk radyo düğmesi denetimine sağ tıklayın ve **değişken Ekle**' yi seçin.
+1. Sekme düzeninde (baskın denetim ve **Group** özelliği **true** olarak ayarlanan) ilk radyo düğmesi denetimine sağ tıklayın ve **değişken Ekle**' yi seçin.
 
 1. [Üye değişkeni Ekleme Sihirbazı](../ide/adding-a-member-variable-visual-cpp.md#add-member-variable-wizard)'Nda, **denetim değişkeni** onay kutusunu seçin, sonra **da radyo düğmesini** seçin.
 
    - **Değişken adı** kutusuna yeni üye değişkeni için bir ad yazın.
 
-   - **Değişken türü** liste kutusunda int ' i seçin **`int`** veya yazın *int*.
+   - **Değişken türü** liste kutusunda int ' i seçin **`int`** veya yazın .
 
    Şimdi, hangi radyo düğmesinin seçili görünmesi gerektiğini belirtmek için kodunuzu değiştirebilirsiniz. Örneğin, `m_radioBox1 = 0;` gruptaki ilk radyo düğmesini seçer.
 

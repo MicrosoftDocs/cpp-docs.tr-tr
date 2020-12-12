@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Iletişim kutusu denetimleri (C++)'
 title: İletişim kutusu denetimleri (C++) | Microsoft Docs
 ms.date: 02/15/2019
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: 449e60e968916f7741422ca2766375ad29afd062
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e68547ebd550797d4ad195c6bef4c3f2a71e769e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505712"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327154"
 ---
 # <a name="dialog-box-controls-c"></a>İletişim kutusu denetimleri (C++)
 
@@ -30,7 +31,7 @@ Bir iletişim kutusuna bir denetim eklediğinizde veya onu yeniden konumlandırd
 
 İletişim kutusuna bir denetim ekledikten sonra, [Özellikler penceresinde](/visualstudio/ide/reference/properties-window)başlık gibi özellikleri değiştirebilirsiniz. Ayrıca, birden çok denetim seçebilir ve özelliklerini tek seferde değiştirebilirsiniz.
 
-**Iletişim kutusu Düzenleyicisi**hakkında daha fazla bilgi için bkz. [denetimleri ekleme, düzenleme veya silme](adding-editing-or-deleting-controls.md), [düzen denetimleri](../windows/arrangement-of-controls-on-dialog-boxes.md)ve [Denetim erişimini ve değerlerini tanımlama](../windows/defining-mnemonics-access-keys.md).
+**Iletişim kutusu Düzenleyicisi** hakkında daha fazla bilgi için bkz. [denetimleri ekleme, düzenleme veya silme](adding-editing-or-deleting-controls.md), [düzen denetimleri](../windows/arrangement-of-controls-on-dialog-boxes.md)ve [Denetim erişimini ve değerlerini tanımlama](../windows/defining-mnemonics-access-keys.md).
 
 Denetimler ve iletişim kutuları hakkında daha fazla bilgi için bkz. [denetim sınıfları](../mfc/control-classes.md), [iletişim kutusu sınıfları](../mfc/dialog-box-classes.md)ve [kaydırma çubuğu stilleri](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles).
 

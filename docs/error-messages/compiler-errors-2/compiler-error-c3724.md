@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3724'
 title: Derleyici hatası C3724
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3724
 ms.assetid: cab8aba7-14fc-406f-8cc6-32744c8f31c1
-ms.openlocfilehash: b107137652c4efde43fdfe9c991240767eb5ced7
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 509467b964f8b4db35d3823ff9f89be0223061f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752983"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326594"
 ---
 # <a name="compiler-error-c3724"></a>Derleyici hatası C3724
 
-olaylarla çoklu iş parçacığı kullanmak için \<Windows. h > #include gerekir
+\<windows.h>olaylarla çoklu iş parçacığı kullanmak için #include gerekir
 
-Olaylar ile çoklu iş parçacığı kullanıyorsanız, Windows. h dosyası gereklidir. Bu hatayı onarmak için, olay kaynakları ve olay alıcılarının tanımlandığı dosyanın üst kısmına `#include <windows.h>` ekleyin.
+Olaylar ile çoklu iş parçacığı kullanıyorsanız, Windows. h dosyası gereklidir. Bu hatayı onarmak için, `#include <windows.h>` olay kaynakları ve olay alıcılarının tanımlandığı dosyanın en üstüne ekleyin.
 
 ```cpp
 // C3724.cpp

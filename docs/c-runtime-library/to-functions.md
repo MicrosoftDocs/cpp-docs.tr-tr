@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin:'
 title: to İşlevleri
 ms.date: 11/04/2016
 api_location:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-ms.openlocfilehash: a54f20d6ae4dead5ba7c606fd28d456e96ff31d6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4e2e8993bfe3ecc85071ab53bcd38c38c9da3370
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326873"
 ---
 # <a name="to-functions"></a>to İşlevleri
 
@@ -52,7 +53,7 @@ Her biri ve ilişkili makrosu **varsa, tek** bir karakteri başka bir karaktere 
 |`_toupper`|`_toupper`|`c`Büyük harfe dönüştürür|
 |`towupper`|Yok|C 'yi karşılık gelen geniş karakterli büyük harfe dönüştürür|
 
-Aynı zamanda makrolar olarak tanımlanan, ve ' nin işlev sürümlerini kullanmak **için, makro** tanımlarını yönergelerle kaldırın ya da `#undef` CType dahil edin. Olsun. /Za derleyici seçeneğini kullanırsanız, derleyici veya ' nin işlev sürümünü kullanır `toupper` `tolower` . `toupper`Ve `tolower` işlevlerinin bildirimleri Stdlib ' dir. Olsun.
+Aynı zamanda makrolar olarak tanımlanan **, ve '** nin işlev sürümlerini kullanmak için, Makro tanımlarını yönergelerle kaldırın `#undef` ya da CType. H 'yi dahil edin. /Za derleyici seçeneğini kullanırsanız, derleyici veya ' nin işlev sürümünü kullanır `toupper` `tolower` . `toupper`Ve `tolower` işlevlerinin bildirimleri Stdlib. H ' dir.
 
 `__toascii`Bu yordam, `c` dönüştürülmüş değer ASCII karakter kümesindeki bir karakteri temsil ettiğinden, 0 ' ın düşük sıra 7 biti hariç tümünü ayarlar. `c`Zaten BIR ASCII karakterini temsil ediyorsa, `c` değiştirilmez.
 
@@ -72,7 +73,7 @@ Aynı zamanda makrolar olarak tanımlanan, ve ' nin işlev sürümlerini kullanm
 
 `towlower`Ve `towupper` işlevleri, `c` yalnızca aşağıdaki koşullardan her ikisi de sıfır değilse, dönüştürülmüş bir kopyasını döndürür. Aksi takdirde, `c` değiştirilmez.
 
-- `c`, uygun durumda olan geniş bir karakterdir (yani, sırasıyla, ve ' `iswupper` nin **iswlower,** sıfır dışında).
+- `c`, uygun durumda olan geniş bir karakterdir (yani, sırasıyla, ve ' `iswupper` nin  sıfır dışında).
 
 - Hedef durumunun karşılık gelen geniş bir karakteri vardır (yani, `iswlower` sırasıyla, veya **ıswupper** , sıfır dışında).
 
@@ -117,5 +118,5 @@ sOME OF these LETTERS ARE cAPITALS.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../c-runtime-library/data-conversion.md)<br/>
-[Yerel Ayar](../c-runtime-library/locale.md)<br/>
+[Ayarlar](../c-runtime-library/locale.md)<br/>
 [, isw yordamları](../c-runtime-library/is-isw-routines.md)

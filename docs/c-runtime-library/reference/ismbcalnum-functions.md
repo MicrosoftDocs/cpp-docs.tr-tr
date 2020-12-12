@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l'
 title: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - ismbcalnum_l function
 - ismbcalpha_l function
 ms.assetid: 12d57925-aebe-46e0-80b0-82b84c4c31ec
-ms.openlocfilehash: 6e650c15ca2b7d3b448d5480a6b1f09769100171
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5a8a985224a1b54fb774cad8ba8848fda1c7e7ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918551"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326315"
 ---
 # <a name="_ismbcalnum-_ismbcalnum_l-_ismbcalpha-_ismbcalpha_l-_ismbcdigit-_ismbcdigit_l"></a>_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 
@@ -112,7 +113,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, karakter test koşulunu karşılıyorsa veya 0 değilse sıfır dışında bir değer döndürür. *C*<= 255 ise ve karşılık gelen bir **_ismbb** yordamı varsa (örneğin, **_ismbcalnum** **_ismbbalnum**karşılık gelir), sonuç karşılık gelen **_ismbb** yordamının dönüş değeridir.
+Bu yordamların her biri, karakter test koşulunu karşılıyorsa veya 0 değilse sıfır dışında bir değer döndürür. *C*<= 255 ise ve karşılık gelen bir **_ismbb** yordamı varsa (örneğin, **_ismbcalnum** **_ismbbalnum** karşılık gelir), sonuç karşılık gelen **_ismbb** yordamının dönüş değeridir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -122,7 +123,7 @@ Bu yordamların her biri belirli bir koşul için belirli bir çok baytlı karak
 
 |Yordam|Test koşulu|Kod sayfası 932 örneği|
 |-------------|--------------------|---------------------------|
-|**_ismbcalnum**, **_ismbcalnum_l**|Alfasayısal|Yalnızca *c* , ASCII İngilizce harfinin tek baytlık bir gösterimiyse sıfır olmayan bir değer döndürür: **_ismbcdigit** ve **_ismbcalpha**örneklerine bakın.|
+|**_ismbcalnum**, **_ismbcalnum_l**|Alfasayısal|Yalnızca *c* , ASCII İngilizce harfinin tek baytlık bir gösterimiyse sıfır olmayan bir değer döndürür: **_ismbcdigit** ve **_ismbcalpha** örneklerine bakın.|
 |**_ismbcalpha**, **_ismbcalpha_l**|Alfabetik|Yalnızca *c* bir ASCII İngilizce harfinin tek baytlık bir gösterimiyse sıfır olmayan bir değer döndürür: 0x41<=*c*<= 0x5A veya 0x61<=*c*<= 0x7A; ya da bir Katakana harfi: 0xA6<=*c*<= 0xDF.|
 |**_ismbcdigit**, **_ismbcdigit**|Gurmukhi|Yalnızca *c* bir ASCII basamağının tek baytlık bir gösterimiyse sıfır olmayan bir değer döndürür: 0x30<=*c*<= 0x39.|
 
@@ -132,9 +133,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbcalnum**, **_ismbcalnum_l**|\<mbstring. h>|
-|**_ismbcalpha**, **_ismbcalpha_l**|\<mbstring. h>|
-|**_ismbcdigit**, **_ismbcdigit_l**|\<mbstring. h>|
+|**_ismbcalnum**, **_ismbcalnum_l**|\<mbstring.h>|
+|**_ismbcalpha**, **_ismbcalpha_l**|\<mbstring.h>|
+|**_ismbcdigit**, **_ismbcdigit_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

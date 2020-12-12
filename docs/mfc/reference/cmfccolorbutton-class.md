@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCColorButton sınıfı'
 title: CMFCColorButton sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], UpdateColor
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-ms.openlocfilehash: 7abe37969799d7fcd78d525a5ec1c6faa9d876ee
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b3f3e40f1e52c1a387563fde2aa1027046d557f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327701"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton sınıfı
 
@@ -73,8 +74,8 @@ class CMFCColorButton : public CMFCButton
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CMFCColorButton:: EnableAutomaticButton](#enableautomaticbutton)|Normal renk düğmelerinin üzerine yerleştirilmiş bir "otomatik" düğmesini etkinleştirip devre dışı bırakır. (Standart sistem otomatik düğmesi **Otomatik**olarak etiketlenir.)|
-|[CMFCColorButton:: EnableOtherButton](#enableotherbutton)|Normal renk düğmelerinin altına yerleştirilmiş bir "diğer" düğmesini etkinleştirip devre dışı bırakır. (Standart sistem "diğer" düğmesi **daha fazla renk**etiketlidir.)|
+|[CMFCColorButton:: EnableAutomaticButton](#enableautomaticbutton)|Normal renk düğmelerinin üzerine yerleştirilmiş bir "otomatik" düğmesini etkinleştirip devre dışı bırakır. (Standart sistem otomatik düğmesi **Otomatik** olarak etiketlenir.)|
+|[CMFCColorButton:: EnableOtherButton](#enableotherbutton)|Normal renk düğmelerinin altına yerleştirilmiş bir "diğer" düğmesini etkinleştirip devre dışı bırakır. (Standart sistem "diğer" düğmesi **daha fazla renk** etiketlidir.)|
 |[CMFCColorButton:: GetAutomaticColor](#getautomaticcolor)|Geçerli otomatik rengi alır.|
 |[CMFCColorButton:: GetColor](#getcolor)|Düğme rengini alır.|
 |[CMFCColorButton:: SetColor](#setcolor)|Düğme rengini ayarlar.|
@@ -116,9 +117,9 @@ class CMFCColorButton : public CMFCButton
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, `CMFCColorButton` sınıfı bir renk seçici iletişim kutusu açan bir itme düğmesi olarak davranır. Renk Seçici iletişim kutusunda bir dizi küçük renk düğmesi ve özel bir renk seçici görüntüleyen bir "diğer" düğmesi bulunur. (Standart sistem "diğer" düğmesi **daha fazla renk**etiketlidir.) Bir Kullanıcı yeni bir renk seçtiğinde, `CMFCColorButton` nesne değişikliği yansıtır ve seçilen rengi görüntüler.
+Varsayılan olarak, `CMFCColorButton` sınıfı bir renk seçici iletişim kutusu açan bir itme düğmesi olarak davranır. Renk Seçici iletişim kutusunda bir dizi küçük renk düğmesi ve özel bir renk seçici görüntüleyen bir "diğer" düğmesi bulunur. (Standart sistem "diğer" düğmesi **daha fazla renk** etiketlidir.) Bir Kullanıcı yeni bir renk seçtiğinde, `CMFCColorButton` nesne değişikliği yansıtır ve seçilen rengi görüntüler.
 
-Doğrudan kodunuzda veya **ClassWizard** aracını ve bir iletişim kutusu şablonunu kullanarak bir renk düğmesi denetimi oluşturun. Doğrudan bir Color Button denetimi oluşturursanız `CMFCColorButton` uygulamanıza bir değişken ekleyin ve ardından nesnenin oluşturucusunu ve `Create` yöntemlerini çağırın `CMFCColorButton` . **ClassWizard**kullanıyorsanız, `CButton` uygulamanıza bir değişken ekleyin ve sonra değişkenin türünü `CButton` olarak değiştirin `CMFCColorButton` .
+Doğrudan kodunuzda veya **ClassWizard** aracını ve bir iletişim kutusu şablonunu kullanarak bir renk düğmesi denetimi oluşturun. Doğrudan bir Color Button denetimi oluşturursanız `CMFCColorButton` uygulamanıza bir değişken ekleyin ve ardından nesnenin oluşturucusunu ve `Create` yöntemlerini çağırın `CMFCColorButton` . **ClassWizard** kullanıyorsanız, `CButton` uygulamanıza bir değişken ekleyin ve sonra değişkenin türünü `CButton` olarak değiştirin `CMFCColorButton` .
 
 Çerçeve olay işleyicisini çağırdığında, Renk Seçici iletişim kutusu ( [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md)) [CMFCColorButton:: OnShowColorPopup](#onshowcolorpopup) yöntemi tarafından görüntülenir `OnLButtonDown` . [CMFCColorButton:: OnShowColorPopup](#onshowcolorpopup) yöntemi, özel renk seçimini desteklemek için geçersiz kılınabilir.
 

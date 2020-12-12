@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2694'
 title: Derleyici hatası C2694
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2694
 ms.assetid: 8dc2cec2-67ae-4e16-8c0c-374425aca8bc
-ms.openlocfilehash: ca378c3e0ce88b454cb89fc08470a277a7be6f47
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4da5362a9c20a2bae10d2a201650f4312d455164
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755232"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326663"
 ---
 # <a name="compiler-error-c2694"></a>Derleyici hatası C2694
 
