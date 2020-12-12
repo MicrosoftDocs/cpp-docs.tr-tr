@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3824'
 title: Derleyici hatası C3824
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3824
 ms.assetid: b6c6adf1-0a29-401c-a06e-616fd50d4c37
-ms.openlocfilehash: 78081de44a834b16d34d1f88a5dc996efb1f784c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5560ee8c845c57ae14de11b503ebc724dbcbb0dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249366"
 ---
 # <a name="compiler-error-c3824"></a>Derleyici hatası C3824
 

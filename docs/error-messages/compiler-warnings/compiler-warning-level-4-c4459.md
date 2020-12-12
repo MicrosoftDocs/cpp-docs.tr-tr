@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4459'
 title: Derleyici Uyarısı (düzey 4) C4459
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4459
 ms.assetid: ee9f6287-9c70-4b10-82a0-add82a13997f
-ms.openlocfilehash: d6d0a802f9f628145fbc5910aca805a5b01b94d2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cc074c0624a392ce058a284eb21661d7d34ae11f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251407"
 ---
 # <a name="compiler-warning-level-4-c4459"></a>Derleyici Uyarısı (düzey 4) C4459
 

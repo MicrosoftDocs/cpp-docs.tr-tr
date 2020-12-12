@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4437'
 title: Derleyici Uyarısı (düzey 4) C4437
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4437
 ms.assetid: dc07e350-20eb-474c-a7ad-f841ae7ec339
-ms.openlocfilehash: 949cd208d8c4f86afb1ef0a36db8483de4aac232
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6ea94a972c08dfa6752c5c165a9c547419b03334
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214392"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251433"
 ---
 # <a name="compiler-warning-level-4-c4437"></a>Derleyici Uyarısı (düzey 4) C4437
 

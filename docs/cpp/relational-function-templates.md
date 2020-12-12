@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi edinin: Ilişkisel Işlev şablonları'
 title: İlişkisel İşlev Şablonları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - relational function templates
 ms.assetid: 57893a51-9adb-41fc-941d-2ca97687db2a
-ms.openlocfilehash: db5091ca8fd29235ea1a0f70410a05ffcb9d7a65
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ebdb1a8522536cd4d863e74c1cf79f33bae3a930
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252434"
 ---
 # <a name="relational-function-templates"></a>İlişkisel İşlev Şablonları
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,7 +77,7 @@ template<typename _Interface,
 
 ### <a name="parameters"></a>Parametreler
 
-*kaydedemiyorum*<br/>
+*i*<br/>
 Ham arabirim işaretçisi.
 
 *Lama*<br/>
@@ -84,10 +85,10 @@ Akıllı işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev şablonları karşılaştırma işlecinin sağ tarafında bir akıllı işaretçiyle karşılaştırmaya izin verir. Bunlar `_com_ptr_t`üye işlevleri değildir.
+Bu işlev şablonları karşılaştırma işlecinin sağ tarafında bir akıllı işaretçiyle karşılaştırmaya izin verir. Bunlar üye işlevleri değildir `_com_ptr_t` .
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)
+[_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)

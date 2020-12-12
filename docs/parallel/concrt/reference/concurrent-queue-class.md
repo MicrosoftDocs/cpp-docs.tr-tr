@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: concurrent_queue sınıfı'
 title: concurrent_queue Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,18 +17,18 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_queue class
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
-ms.openlocfilehash: a117a040adbf7f3aa316c346489bd2731d6c2402
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c7ac9686b03073016b509ce8e2bddaa664c3141f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230356"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250614"
 ---
 # <a name="concurrent_queue-class"></a>concurrent_queue Sınıfı
 
 `concurrent_queue`Sınıfı, öğeleri için ilk ın, ilk çıkar erişimine izin veren bir dizi kapsayıcı sınıfıdır. Ve gibi sınırlı sayıda eşzamanlılık güvenli işlem kümesi sunar `push` `try_pop` . Burada eşzamanlılık açısından güvenli, işaretçiler veya yineleyiciler her zaman geçerlidir. Bu, öğe başlatma garantisi veya belirli bir geçiş düzeni değildir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename T, class _Ax>
@@ -91,7 +92,7 @@ Daha fazla bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../../parall
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="clear"></a><a name="clear"></a>lediğiniz
+## <a name="clear"></a><a name="clear"></a> lediğiniz
 
 Şu anda sıraya alınmış öğelerin yok edilirken, eşzamanlı kuyruğu temizler. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -99,7 +100,7 @@ Daha fazla bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../../parall
 void clear();
 ```
 
-## <a name="concurrent_queue"></a><a name="ctor"></a>concurrent_queue
+## <a name="concurrent_queue"></a><a name="ctor"></a> concurrent_queue
 
 Eşzamanlı bir kuyruk oluşturur.
 
@@ -149,7 +150,7 @@ Tüm oluşturucular bir ayırıcı nesnesi depolar `_Al` ve kuyruğu başlatır.
 
 Dördüncü Oluşturucu yineleyici aralığı [,) tarafından sağlanan değerleri belirtir `_Begin` `_End` .
 
-## <a name="concurrent_queue"></a><a name="dtor"></a>~ concurrent_queue
+## <a name="concurrent_queue"></a><a name="dtor"></a> ~ concurrent_queue
 
 Eşzamanlı kuyruğu yok eder.
 
@@ -157,7 +158,7 @@ Eşzamanlı kuyruğu yok eder.
 ~concurrent_queue();
 ```
 
-## <a name="empty"></a><a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a> olmamalıdır
 
 Bu yöntemin çağrıldığı anda eşzamanlı sıranın boş olup olmadığını sınar. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -173,7 +174,7 @@ bool empty() const;
 
 Bu yöntem, ve yöntemlerine yapılan çağrılara göre eşzamanlılık açısından güvende olsa da, `push` `try_pop` `empty` döndürülen değer çağıran iş parçacığı tarafından incelenen zaman hatalı olabilir.
 
-## <a name="get_allocator"></a><a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a> get_allocator
 
 Eş zamanlı kuyruğu oluşturmak için kullanılan ayırıcının bir kopyasını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -185,7 +186,7 @@ allocator_type get_allocator() const;
 
 Eş zamanlı kuyruğu oluşturmak için kullanılan ayırıcıın bir kopyası.
 
-## <a name="push"></a><a name="push"></a>hareketle
+## <a name="push"></a><a name="push"></a> hareketle
 
 Bir öğeyi, eşzamanlı sıranın kuyruklu sonuna kadar sıraya alın. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -202,9 +203,9 @@ Sıraya eklenecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`push`, ve yöntemlerine yapılan çağrılara göre eşzamanlılık açısından güvenlidir `push` `try_pop` `empty` .
+`push` , ve yöntemlerine yapılan çağrılara göre eşzamanlılık açısından güvenlidir `push` `try_pop` `empty` .
 
-## <a name="try_pop"></a><a name="try_pop"></a>try_pop
+## <a name="try_pop"></a><a name="try_pop"></a> try_pop
 
 Varsa, bir öğeyi kuyruktan kaldırır. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -225,9 +226,9 @@ Kuyruğa atılmış öğeyi depolamak için bir konuma başvuru.
 
 Bir öğe başarıyla kuyruğa alınmışsa, parametre `_Dest` sıraya alınmış değeri alır, kuyrukta tutulan özgün değer yok edilir ve bu işlev döndürür **`true`** . Sıradan çıkarma için bir öğe yoksa, bu işlev **`false`** engellenmeden döner ve `_Dest` parametresinin içeriği tanımsızdır.
 
-`try_pop`, ve yöntemlerine yapılan çağrılara göre eşzamanlılık açısından güvenlidir `push` `try_pop` `empty` .
+`try_pop` , ve yöntemlerine yapılan çağrılara göre eşzamanlılık açısından güvenlidir `push` `try_pop` `empty` .
 
-## <a name="unsafe_begin"></a><a name="unsafe_begin"></a>unsafe_begin
+## <a name="unsafe_begin"></a><a name="unsafe_begin"></a> unsafe_begin
 
 `iterator`Eşzamanlı kuyruğun türü veya başına bir yineleyici döndürür `const_iterator` . Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -245,7 +246,7 @@ const_iterator unsafe_begin() const;
 
 Sınıf için yineleyiciler `concurrent_queue` öncelikle hata ayıklama için tasarlanmıştır, yavaş olur ve yineleme diğer kuyruk işlemlerine göre eşzamanlılık açısından güvenli değildir.
 
-## <a name="unsafe_end"></a><a name="unsafe_end"></a>unsafe_end
+## <a name="unsafe_end"></a><a name="unsafe_end"></a> unsafe_end
 
 `iterator`Eşzamanlı kuyruğun türü veya sonuna bir yineleyici döndürür `const_iterator` . Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -263,7 +264,7 @@ const_iterator unsafe_end() const;
 
 Sınıf için yineleyiciler `concurrent_queue` öncelikle hata ayıklama için tasarlanmıştır, yavaş olur ve yineleme diğer kuyruk işlemlerine göre eşzamanlılık açısından güvenli değildir.
 
-## <a name="unsafe_size"></a><a name="unsafe_size"></a>unsafe_size
+## <a name="unsafe_size"></a><a name="unsafe_size"></a> unsafe_size
 
 Kuyruktaki öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -277,7 +278,7 @@ Eşzamanlı sıranın boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`unsafe_size`eşzamanlılık açısından güvenli değildir ve yöntemlere, ve çağrılarıyla aynı anda çağrılırsa hatalı sonuçlar üretebilir `push` `try_pop` `empty` .
+`unsafe_size` eşzamanlılık açısından güvenli değildir ve yöntemlere, ve çağrılarıyla aynı anda çağrılırsa hatalı sonuçlar üretebilir `push` `try_pop` `empty` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

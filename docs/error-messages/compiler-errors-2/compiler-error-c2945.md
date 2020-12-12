@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2945'
 title: Derleyici hatası C2945
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2945
 ms.assetid: be640257-7017-45d1-986a-9fe8caab52f3
-ms.openlocfilehash: 066d369680f92c1336f7678d156d05c0e2b7aca3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: edf927aa261149c92977379dfdf7be965ee89499
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80176877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249535"
 ---
 # <a name="compiler-error-c2945"></a>Derleyici hatası C2945
 

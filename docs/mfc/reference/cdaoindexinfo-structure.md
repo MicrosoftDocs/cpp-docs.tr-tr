@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDaoIndexInfo yapısı'
 title: CDaoIndexInfo Yapısı
 ms.date: 06/25/2018
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Indexes collection
 - CDaoIndexInfo structure [MFC]
 ms.assetid: 251d8285-78ce-4716-a0b3-ccc3395fc437
-ms.openlocfilehash: 55f64fcebc308bd0e63643cfb5447608c4e2e37c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2e09846789dc91e4d0df67665f3e975b557c07c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399778"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250770"
 ---
 # <a name="cdaoindexinfo-structure"></a>CDaoIndexInfo Yapısı
 
-`CDaoIndexInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanmış bir dizin nesne hakkında bilgiler içerir.
+`CDaoIndexInfo`Yapı, veri erişim nesneleri (DAO) için tanımlanan bir dizin nesnesi hakkındaki bilgileri içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -42,73 +43,73 @@ struct CDaoIndexInfo {
 ### <a name="parameters"></a>Parametreler
 
 *m_strName*<br/>
-Benzersiz alan nesne adları. Ayrıntılar için "Name özelliği" DAO Yardım konusuna bakın.
+Alan nesnesini benzersiz olarak adlandırır. Ayrıntılar için, DAO yardımı 'nda "ad özelliği" konusuna bakın.
 
 *m_pFieldInfos*<br/>
-Bir dizi işaretçi [Cdaoındexfieldınfo](../../mfc/reference/cdaoindexfieldinfo-structure.md) hangi tabledef ya da kayıt bir dizinde anahtar alanları alanları gösteren nesne. Her nesne bir alan olarak tanımlar. Varsayılan dizin Sıralama artan düzendedir. Bir dizin nesnesi, her kayıt için dizin anahtarlarının temsil eden bir veya daha fazla alan sahip olabilir. Bunlar, azalan, veya bir birleşimini artan.
+Bir dizin içinde hangi tabledef veya kayıt kümesi alanlarının anahtar alanları olduğunu gösteren bir [CDaoIndexFieldInfo](../../mfc/reference/cdaoindexfieldinfo-structure.md) nesneleri dizisine yönelik bir işaretçi. Her nesne dizindeki bir alanı tanımlar. Varsayılan dizin sıralaması artan bir şekilde yapılır. Bir dizin nesnesi, her kayıt için Dizin anahtarlarını temsil eden bir veya daha fazla alana sahip olabilir. Bunlar artan, azalan veya bir bileşim olabilir.
 
-*M_nFields*<br/>
-Depolanan alanların sayısını `m_pFieldInfos`.
+*m_nFields*<br/>
+İçinde depolanan alan sayısı `m_pFieldInfos` .
 
 *m_bPrimary*<br/>
-Dizin nesnesi, birincil özelliği TRUE ise, birincil dizin temsil eder. Önceden tanımlanmış bir sırada bir tablodaki tüm kayıtları benzersiz olarak tanımlayan bir veya daha fazla alan birincil dizin oluşur. Dizin alanı benzersiz olması gerektiğinden, benzersiz dizin nesnesinin özelliğini de true olarak DAO ayarlanır. Birincil dizin birden fazla alanı oluşuyorsa, her alan, yinelenen değerler içerebilir, ancak her dizini oluşturulmuş tüm alanların değerlerinden bileşimi benzersiz olması gerekir. Birincil dizin tablosu için bir anahtar içerir ve genellikle birincil anahtarı olarak aynı alanları içerir.
+Birincil özelliği TRUE ise, dizin nesnesi bir birincil dizini temsil eder. Birincil dizin, bir tablodaki tüm kayıtları önceden tanımlanmış bir sırada tanımlayan bir veya daha fazla alandan oluşur. Dizin alanının benzersiz olması gerektiğinden, dizin nesnesinin benzersiz özelliği de DAO 'da TRUE olarak ayarlanır. Birincil dizin birden fazla alandan oluşuyorsa, her alan yinelenen değerler içerebilir, ancak her bir dizinli alandan değerlerin her birleşimi benzersiz olmalıdır. Birincil dizin, tablo için bir anahtardan oluşur ve genellikle birincil anahtarla aynı alanları içerir.
 
-Bir tablonun birincil anahtar ayarladığınızda, birincil anahtar tablosu için birincil dizin olarak otomatik olarak tanımlanır. Daha fazla bilgi için "birincil" ve "Benzersiz özelliğini" DAO Yardımı'ndaki konulara bakın.
+Bir tablo için birincil anahtar ayarladığınızda, birincil anahtar otomatik olarak tablonun birincil dizini olarak tanımlanır. Daha fazla bilgi için, DAO yardımı 'nda "birincil özellik" ve "benzersiz özellik" konularına bakın.
 
 > [!NOTE]
-> Olabilir, en fazla bir tabloda bir birincil dizin.
+> Tabloda en çok bir birincil dizin olabilir.
 
 *m_bUnique*<br/>
-Bir dizin nesnesi bir tablo için benzersiz bir dizin temsil edip etmediğini belirtir. Bu özellik TRUE ise dizin nesnesi, benzersiz bir dizin temsil eder. Benzersiz, önceden tanımlanmış bir sırada bir tablodaki tüm kayıtları mantıksal olarak düzenlemek bir veya daha fazla alan benzersiz bir dizin oluşur. Dizin bir alanda oluşuyorsa, bu alandaki değerlerin tüm tablo için benzersiz olmalıdır. Dizin birden fazla alanı oluşuyorsa, her alan, yinelenen değerler içerebilir, ancak her dizini oluşturulmuş tüm alanların değerlerinden bileşimi benzersiz olması gerekir.
+Bir dizin nesnesinin bir tablo için benzersiz bir dizin temsil edip etmediğini gösterir. Bu özellik TRUE ise, Index nesnesi benzersiz olan bir dizini temsil eder. Benzersiz bir dizin, bir tablodaki tüm kayıtları benzersiz, önceden tanımlanmış bir düzende mantıksal olarak düzenleyen bir veya daha fazla alandan oluşur. Dizin bir alandan oluşuyorsa, bu alandaki değerlerin tüm tablo için benzersiz olması gerekir. Dizin birden fazla alandan oluşuyorsa, her alan yinelenen değerler içerebilir, ancak her bir dizinli alandan değerlerin her birleşimi benzersiz olmalıdır.
 
-Bir dizin nesnenin benzersiz ve birincil özelliklerini TRUE olarak ayarlarsanız, benzersiz ve birincil dizini: Bu, önceden tanımlanmış, mantıksal bir sırada tablosundaki tüm kayıtlar benzersiz şekilde tanımlar. Birincil özelliği FALSE olarak ayarlarsanız, dizin ikincil bir dizindir. İkincil dizinler (anahtar ve anahtarı olmayan) bir tablodaki kayıtları tanımlayıcısı olarak hizmet veren olmadan kayıtları önceden tanımlanmış bir düzende mantıksal olarak düzenleyin.
+Bir dizin nesnesinin benzersiz ve birincil özelliklerinin her ikisi de TRUE olarak ayarlanırsa, Dizin benzersizdir ve birincil: tablodaki tüm kayıtları, önceden tanımlanmış, mantıksal bir düzende benzersiz şekilde tanımlar. Birincil özellik FALSE olarak ayarlandıysa, Dizin ikincil bir dizindir. İkincil dizinler (anahtar ve olmayan), tablodaki kayıtlar için tanımlayıcı olarak hizmet vermeden kayıtları, önceden tanımlanmış bir sırada mantıksal olarak düzenler.
 
-Daha fazla bilgi için "birincil" ve "Benzersiz özelliğini" DAO Yardımı'ndaki konulara bakın.
+Daha fazla bilgi için, DAO yardımı 'nda "birincil özellik" ve "benzersiz özellik" konularına bakın.
 
 *m_bClustered*<br/>
-Bir dizin nesnesi bir tablo için kümelenmiş bir dizin temsil edip etmediğini belirtir. Bu özellik TRUE ise, dizin nesnesi, bir kümelenmiş dizin temsil eder; Aksi takdirde yok. Kümelenmiş bir dizin birini oluşur veya daha fazla tuşdışı alanları, birlikte ele alındığında, önceden tanımlanmış bir sırada bir tablodaki tüm kayıtları düzenleyin. Kümelenmiş bir dizin ile bir tablodaki verileri tam anlamıyla kümelenmiş dizini tarafından belirtilen sırada depolanır. Kümelenmiş bir dizin, bir tablodaki kayıtların verimli erişim sağlar. Daha fazla bilgi için DAO Yardımı'nda "özelliği kümelenmiş" konusuna bakın.
+Bir dizin nesnesinin bir tablonun kümelenmiş dizinini temsil edip etmediğini gösterir. Bu özellik TRUE ise, Index nesnesi bir kümelenmiş dizini temsil eder; Aksi takdirde, değildir. Kümelenmiş dizin bir veya daha fazla anahtar olmayan alandan oluşur ve bir tablodaki tüm kayıtları önceden tanımlanmış bir sırada düzenleyin. Kümelenmiş bir dizinle, tablodaki veriler, kümelenmiş dizin tarafından belirtilen sırada depolanmaz. Kümelenmiş dizin, bir tablodaki kayıtlara verimli erişim sağlar. Daha fazla bilgi için, DAO yardımı 'nda "kümelenmiş özellik" konusuna bakın.
 
 > [!NOTE]
-> Kümelenmiş özelliği, Jet veritabanı altyapısı Kümelenmiş dizinler desteklemediğinden, Microsoft Jet Veritabanı Altyapısı'nı kullanan veritabanları için göz ardı edilir.
+> Jet veritabanı altyapısı kümelenmiş dizinleri desteklemediğinden, Microsoft Jet veritabanı altyapısını kullanan veritabanları için kümelenmiş özellik yoksayılır.
 
 *m_bIgnoreNulls*<br/>
-Dizin alanlarında Null değerlere sahip kayıtlar için dizin girdileri olup olmadığını gösterir. Bu özellik TRUE ise, Null değerlerini dizin girdisi yok. Kayıt bir alan daha hızlı bir şekilde kullanarak arama yapmak için alan için dizin tanımlayabilirsiniz. Dizinlenmiş bir alanda Null girişlere izin vermek ve Null olmasına izin girişleri birçoğu beklediğiniz özelliğini dizin nesnesi için dizinin kullandığı depolama alanı miktarını azaltmak için TRUE olarak ayarlayabilirsiniz. Birlikte IgnoreNulls özelliği ayarı ve gerekli özellik ayarı bir dizin değeri içeren bir kayıt aşağıdaki tabloda gösterildiği gibi bir dizin girişi olup olmadığını belirleyin.
+Dizin alanlarında null değerleri olan kayıtlar için dizin girişleri olup olmadığını gösterir. Bu özellik TRUE ise, null değerlere sahip alanların bir dizin girişi yoktur. Alanı daha hızlı kullanarak kayıt aramayı yapmak için alan için bir dizin tanımlayabilirsiniz. Dizinli bir alanda null girişlere izin verirseniz ve birçok girişin null olması beklendiğinde, dizinin kullandığı depolama alanı miktarını azaltmak için dizin nesnesi için IgnoreNulls özelliğini TRUE olarak ayarlayabilirsiniz. IgnoreNulls özellik ayarı ve gerekli özellik ayarı birlikte, aşağıdaki tabloda gösterildiği gibi, null dizin değeri olan bir kaydın bir dizin girişi olup olmadığını belirtir.
 
-|IgnoreNulls|Gerekli|Dizin alanı null|
+|IgnoreNulls|Gerekli|Dizin alanında null|
 |-----------------|--------------|-------------------------|
-|Doğru|False|İzin verilen null değer; Dizin girişi eklenir.|
-|False|False|İzin verilen null değer; Dizin girişi eklenir.|
-|TRUE veya False|Doğru|Null değere izin verilmez; Dizin girişi eklenir.|
+|Doğru|Yanlış|Null değere izin verilir; Dizin girişi eklenmedi.|
+|Yanlış|Yanlış|Null değere izin verilir; Dizin girişi eklendi.|
+|True veya false|Doğru|Null değere izin verilmiyor; Dizin girişi eklenmedi.|
 
-Daha fazla bilgi için DAO Yardımı'nda "IgnoreNulls özelliğini" konusuna bakın.
+Daha fazla bilgi için, DAO yardımı 'nda "IgnoreNulls özelliği" konusuna bakın.
 
 *m_bRequired*<br/>
-DAO dizin nesnesi Null olmayan bir değer gerekli olup olmadığını gösterir. Bu özellik TRUE ise, dizin nesnesi Null bir değere izin vermiyor. Daha fazla bilgi için DAO Yardımı'nda "özellik gerekiyor" konusuna bakın.
+Bir DAO dizin nesnesinin null olmayan bir değer gerektirip gerektirmediğini belirtir. Bu özellik TRUE ise, dizin nesnesi null değere izin vermez. Daha fazla bilgi için, DAO yardımı 'nda "gerekli özellik" konusuna bakın.
 
 > [!TIP]
-> Bu özellik DAO dizin nesnesi veya bir alan nesnesi (tabledef, kayıt kümesi veya QueryDefs yer alan) için ayarlayabileceğiniz alan nesne için ayarlanır. Bir alanı nesnesi için özellik ayarı geçerliliğini, bir dizin nesne önce denetlenir.
+> Bu özelliği bir DAO dizin nesnesi veya alan nesnesi (örneğin, bir TableDef, Recordset veya QueryDef nesnesi) için ayarlarsanız, alan nesnesi için ayarlayın. Bir Field nesnesi için özellik ayarının geçerliliği, Dizin nesnesinden önce denetlenir.
 
 *m_bForeign*<br/>
-Bir dizin nesne tablosundaki yabancı anahtar temsil edip etmediğini belirtir. Bu özellik TRUE ise dizin tablosundaki yabancı anahtar temsil eder. Yabancı anahtar, yabancı bir tabloda bir birincil tablosunda bir satırı benzersiz olarak tanımlanabilmesi bir veya daha fazla alan oluşur. Microsoft Jet veritabanı altyapısı, yabancı bir tablo için bir dizin nesnesi oluşturur ve bilgi tutarlılığını zorlar bir ilişki oluşturduğunuzda yabancı özelliği ayarlar. Daha fazla bilgi için DAO Yardımı'nda "yabancı özelliği" konusuna bakın.
+Bir dizin nesnesinin bir tablodaki yabancı anahtarı temsil edip etmediğini gösterir. Bu özellik TRUE ise, dizin bir tablodaki yabancı anahtarı temsil eder. Yabancı anahtar, yabancı bir tablodaki bir veya daha fazla alandan oluşur ve birincil tablodaki bir satırı benzersiz bir şekilde tanımlar. Microsoft Jet veritabanı altyapısı, yabancı tablo için bir dizin nesnesi oluşturur ve başvurusal bütünlüğü zorlayan bir ilişki oluşturduğunuzda yabancı özelliği ayarlar. Daha fazla bilgi için, DAO yardımı 'nda "yabancı özellik" konusuna bakın.
 
 *m_lDistinctCount*<br/>
-Dizin nesne için ilişkili tabloda bulunan benzersiz değerlerin sayısını gösterir. Benzersiz değerler ya da dizin anahtarlarında sayısını belirlemek için DistinctCount özelliğini denetleyin. Olabilir olsa da bu değer birden çok defa geçmelerine dizin yinelenen değerler veriyorsa herhangi bir tuşa yalnızca bir kez sayılır. Bu bilgiler dizin bilgilerini değerlendirerek veri erişimini iyileştirmek için uygulamalarda kullanışlıdır. Benzersiz değerlerin sayısını bir dizin nesnenin kardinalite de denir. DistinctCount özelliği her zaman belirli bir zamanda anahtar gerçek sayısı yansıtmaz. Örneğin, bir işlemi geri alma tarafından neden değişikliği hemen DistinctCount özelliğinde yansıtılmaz. Daha fazla bilgi için DAO Yardımı'nda "DistinctCount özelliği" konusuna bakın.
+İlişkili tabloya dahil edilen dizin nesnesi için benzersiz değerlerin sayısını gösterir. Bir dizinde benzersiz değer veya anahtar sayısını öğrenmek için Dıstıntcount özelliğini denetleyin. Her anahtar yalnızca bir kez sayılır, ancak dizin yinelenen değerlere izin veriyorsa bu değerin birden çok tekrarı olabilir. Bu bilgiler, dizin bilgilerini değerlendirerek veri erişimini optimize etmeye çalışacak uygulamalarda yararlıdır. Benzersiz değer sayısı bir dizin nesnesinin kardinalitesi olarak da bilinir. Dıstıntcount özelliği, belirli bir zamanda gerçek anahtar sayısını her zaman yansıtmayacaktır. Örneğin, bir işlem geri almanın neden olduğu bir değişiklik, Dıstıntcount özelliğinde hemen yansıtılmayacaktır. Daha fazla bilgi için, DAO yardımı 'nda "Dıstıntcount özelliği" konusuna bakın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birincil, ikincil ve yukarıdaki tüm başvuruları nasıl bilgileri tarafından döndürülen belirtmek `GetIndexInfo` sınıflarındaki üye işlev [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo).
+Birincil, Ikincil ve tüm sürümler başvuruları, bilgilerin `GetIndexInfo` [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getindexinfo) ve [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo)' teki üye işlevi tarafından nasıl döndürüleceğini gösterir.
 
-Dizin nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, DAO temel alınan MFC sınıfın nesneleri [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) veya [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) dizinler koleksiyonu adlı dizin nesnelerinin bir koleksiyonu içerir. Bu sınıfların tek tek öğelerine dizin bilgilerinin erişmek için üye işlevleri, veya bunları tamamını tek seferde erişim bir `CDaoIndexInfo` çağırarak `GetIndexInfo` kapsayan nesnenin üye işlevi.
+Dizin nesneleri bir MFC sınıfıyla temsil edilmez. Bunun yerine, [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md) veya [CDAORECORDSET](../../mfc/reference/cdaorecordset-class.md) sınıfının MFC nesnelerini temel alan DAO nesneleri, dizinler koleksiyonu olarak adlandırılan dizin nesnelerinin bir koleksiyonunu içerir. Bu sınıflar, dizin bilgilerinin tek tek öğelerine erişmek için üye işlevleri sağlar veya `CDaoIndexInfo` `GetIndexInfo` kapsayan nesnenin üye işlevini çağırarak bir nesne ile tümüne tek seferde erişebilirsiniz.
 
-`CDaoIndexInfo` bir oluşturucu ve yıkıcı düzgün bir şekilde ayırmak ve dizin alan bilgilerini ayırması için `m_pFieldInfos`.
+`CDaoIndexInfo` içindeki dizin alanı bilgilerini doğru bir şekilde ayırmak ve serbest bırakmak için bir oluşturucuya ve yok ediciye sahiptir `m_pFieldInfos` .
 
-Tarafından alınan bilgileri `GetIndexInfo` tabledef nesnesinin üye işlevi depolanan bir `CDaoIndexInfo` yapısı. Çağrı `GetIndexInfo` dizin nesnesi, dizinleri koleksiyonda depolanan kapsayan tabledef nesnenin üye işlevi. `CDaoIndexInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoIndexInfo` nesne.
+`GetIndexInfo`Bir TableDef nesnesinin üye işlevi tarafından alınan bilgiler bir `CDaoIndexInfo` yapıda depolanır. `GetIndexInfo`Dizinler koleksiyonu dizin nesnesinin depolandığı içeren TableDef nesnesinin üye işlevini çağırın. `CDaoIndexInfo` Ayrıca `Dump` , hata ayıklama yapılarında bir üye işlevi tanımlar. `Dump`Bir nesnenin içeriğini dökmek için kullanabilirsiniz `CDaoIndexInfo` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoTableDef::GetIndexInfo](../../mfc/reference/cdaotabledef-class.md#getindexinfo)
+[Yapılar, stiller, geri çağrılar ve Ileti haritaları](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CDaoTableDef:: GetIndexInfo](../../mfc/reference/cdaotabledef-class.md#getindexinfo)

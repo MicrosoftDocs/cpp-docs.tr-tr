@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çift dönüştürme (C++)'
 title: Çift Dönüştürme (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /clr compiler option [C++], double thunking
 - interoperability [C++], double thunking
 ms.assetid: a85090b2-dc3c-498a-b40c-340db229dd6f
-ms.openlocfilehash: 3f0fc5567baaa0c4f3fea410770963adf51e8366
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 7c09e60ce534dd10567b93ece0eb6cb4bf8cc24a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252187"
 ---
 # <a name="double-thunking-c"></a>Çift Dönüştürme (C++)
 
@@ -21,7 +22,7 @@ ms.locfileid: "91414015"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **/clr**ile derlerken, yönetilen bir işlevin tanımı derleyicinin yönetilen bir giriş noktası ve yerel giriş noktası oluşturmasına neden olur. Bu, yönetilen işlevin yerel ve yönetilen çağrı sitelerinden çağrılmasına izin verir. Ancak, yerel bir giriş noktası varsa, işleve yapılan tüm çağrılar için giriş noktası olabilir. Çağıran bir işlev yönetiliyorsa, yerel giriş noktası daha sonra yönetilen giriş noktasını çağırır. Aslında, işlevi çağırmak için iki çağrı gerekir (Bu nedenle, Çift thunking). Örneğin, sanal işlevler her zaman bir yerel giriş noktası aracılığıyla çağırılır.
+Varsayılan olarak, **/clr** ile derlerken, yönetilen bir işlevin tanımı derleyicinin yönetilen bir giriş noktası ve yerel giriş noktası oluşturmasına neden olur. Bu, yönetilen işlevin yerel ve yönetilen çağrı sitelerinden çağrılmasına izin verir. Ancak, yerel bir giriş noktası varsa, işleve yapılan tüm çağrılar için giriş noktası olabilir. Çağıran bir işlev yönetiliyorsa, yerel giriş noktası daha sonra yönetilen giriş noktasını çağırır. Aslında, işlevi çağırmak için iki çağrı gerekir (Bu nedenle, Çift thunking). Örneğin, sanal işlevler her zaman bir yerel giriş noktası aracılığıyla çağırılır.
 
 Tek bir çözüm, derleyicinin yönetilen bir işlev için yerel bir giriş noktası üretmediğini söylemek, işlevin yalnızca yönetilen bağlamdan [__clrcall](../cpp/clrcall.md) çağırma kuralı kullanılarak çağrılacaktır.
 
@@ -31,9 +32,9 @@ Derleyici, gereksiz çift dönüştürmeyi azaltmak için güncelleştirilmişti
 
 ## <a name="example-double-thunking"></a>Örnek: çift dönüştürme
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek çift thunking gösterir. Yerel olarak derlendiğinde ( **/clr**olmadan), içindeki sanal işlevine yapılan çağrı, `main` `T` kopya oluşturucusuna bir çağrı ve yıkıcıya bir çağrı oluşturur. Sanal işlev **/clr** ve ile bildirildiğinde benzer davranış elde edilir `__clrcall` . Bununla birlikte, yalnızca **/clr**ile derlendiğinde, işlev çağrısı kopya oluşturucusuna bir çağrı oluşturur, ancak yerel-yönetilen dönüştürücü nedeniyle kopya oluşturucusuna başka bir çağrı yapılır.
+Aşağıdaki örnek çift thunking gösterir. Yerel olarak derlendiğinde ( **/clr** olmadan), içindeki sanal işlevine yapılan çağrı, `main` `T` kopya oluşturucusuna bir çağrı ve yıkıcıya bir çağrı oluşturur. Sanal işlev **/clr** ve ile bildirildiğinde benzer davranış elde edilir `__clrcall` . Bununla birlikte, yalnızca **/clr** ile derlendiğinde, işlev çağrısı kopya oluşturucusuna bir çağrı oluşturur, ancak yerel-yönetilen dönüştürücü nedeniyle kopya oluşturucusuna başka bir çağrı yapılır.
 
 ### <a name="code"></a>Kod
 
@@ -89,9 +90,9 @@ __thiscall T::~T(void)
 
 ## <a name="example-effect-of-double-thunking"></a>Örnek: çift dönüştürmenin etkisi
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
-Önceki örnek, Çift dönüştürmenin varlığını göstermiştir. Bu örnek, etkisini gösterir. **`for`** Döngü sanal işlevi çağırır ve program, yürütme süresini bildirir. Program **/clr**ile derlendiğinde en yavaş zaman raporlanır. En hızlı zaman, **/clr** olmadan derlerken veya sanal işlev ile bildirilmişse raporlanır `__clrcall` .
+Önceki örnek, Çift dönüştürmenin varlığını göstermiştir. Bu örnek, etkisini gösterir. **`for`** Döngü sanal işlevi çağırır ve program, yürütme süresini bildirir. Program **/clr** ile derlendiğinde en yavaş zaman raporlanır. En hızlı zaman, **/clr** olmadan derlerken veya sanal işlev ile bildirilmişse raporlanır `__clrcall` .
 
 ### <a name="code"></a>Kod
 

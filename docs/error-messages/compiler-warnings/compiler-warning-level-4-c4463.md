@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4463'
 title: Derleyici Uyarısı (düzey 4) C4463
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4463
 ms.assetid: a07ae70c-db4e-472b-8b58-9137d9997323
-ms.openlocfilehash: acc7957493942a9c0e19ce098b74ed0b5d75a12d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fe4ea13c50e16bf5b72f5753fa989970db3cadde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251329"
 ---
 # <a name="compiler-warning-level-4-c4463"></a>Derleyici Uyarısı (düzey 4) C4463
 
 > taşma yalnızca *low_value* *high_value* için değerler alabilen bit alanına *değer* atama
 
-Atanan *değer* , bit alanının tutaabileceği değer aralığının dışındadır. İmzalı bit alanı türleri, oturum açma için yüksek sıra bitini kullanır. bu nedenle, *n* bit alanı boyutalıysa, işaretli bit alanları için Aralık-2<sup>n-1</sup> ile 2<sup>n-</sup>1-1 arasında bir aralığa sahip ve imzasız bit alanları 0 ile 2<sup>n</sup>-1 arasında bir aralığa sahip olur.
+Atanan *değer* , bit alanının tutaabileceği değer aralığının dışındadır. İmzalı bit alanı türleri, oturum açma için yüksek sıra bitini kullanır. bu nedenle, *n* bit alanı boyutalıysa, işaretli bit alanları için Aralık-2 <sup>n-1</sup> ile 2 <sup>n-</sup>1-1 arasında bir aralığa sahip ve imzasız bit alanları 0 ile 2 <sup>n</sup>-1 arasında bir aralığa sahip olur.
 
 ## <a name="example"></a>Örnek
 

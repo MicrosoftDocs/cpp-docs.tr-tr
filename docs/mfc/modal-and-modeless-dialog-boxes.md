@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kalıcı ve kalıcı Iletişim kutuları'
 title: Kalıcı ve Kalıcı Olmayan İletişim Kutuları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], modal
 - modal dialog boxes [MFC]
 ms.assetid: e83df336-5994-4b8f-8233-7942f997315b
-ms.openlocfilehash: d3497a19ab14dcc9f14dc0419eb65ea033135b6e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 11320c2efcb323fe839afecb6165409285f442aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508853"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251147"
 ---
 # <a name="modal-and-modeless-dialog-boxes"></a>Kalıcı ve Kalıcı Olmayan İletişim Kutuları
 
