@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: strstr, wcsstr, _mbsstr _mbsstr_l'
 title: strstr, wcsstr, _mbsstr, _mbsstr_l
 ms.date: 4/2/2020
 api_name:
@@ -50,21 +51,21 @@ helpviewer_keywords:
 - _mbsstr_l function
 - strstr function
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
-ms.openlocfilehash: 3ac4df470e40b35257495d51c5d2d0efdb9310af
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 05f7cd3b03a56cb5e0e9343bd8cdee98af124988
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233996"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181689"
 ---
 # <a name="strstr-wcsstr-_mbsstr-_mbsstr_l"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
 
 Dizedeki arama dizesinin ilk oluşumuna yönelik bir işaretçi döndürür.
 
 > [!IMPORTANT]
-> `_mbsstr`ve `_mbsstr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> `_mbsstr` ve `_mbsstr_l` Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 char *strstr(
@@ -128,16 +129,16 @@ Aranacak null ile sonlandırılmış dize.
 *strSearch*<br/>
 Aranacak null ile sonlandırılmış dize.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Str*Içinde *strSearch* 'ün ilk oluşumuna yönelik bir işaretçi veya *STRSEARCH* , *Str*içinde görünmezse null değerini döndürür. *StrSearch* , sıfır uzunluklu bir dizeye işaret ediyorsa, işlev *Str*döndürür.
+*Str* Içinde *strSearch* 'ün ilk oluşumuna yönelik bir işaretçi veya *STRSEARCH* , *Str* içinde görünmezse null değerini döndürür. *StrSearch* , sıfır uzunluklu bir dizeye işaret ediyorsa, işlev *Str* döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`strstr`İşlev, *Str*içinde *strSearch* 'ün ilk oluşumuna yönelik bir işaretçi döndürür. Arama, null karakter sonlandırılmasını içermez. `wcsstr`, öğesinin geniş karakterli sürümüdür `strstr` ve `_mbsstr` çok baytlı karakter sürümüdür. Bağımsız değişkenleri ve dönüş değeri `wcsstr` geniş karakterli dizelerdir; bunlar `_mbsstr` çok baytlı karakter dizeleridir. `_mbsstr`parametrelerini doğrular. *Str* veya *strSearch* null ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `_mbsstr` `errno` EINVAL olarak ayarlar ve 0 döndürür. `strstr`ve `wcsstr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
+`strstr`İşlev, *Str* içinde *strSearch* 'ün ilk oluşumuna yönelik bir işaretçi döndürür. Arama, null karakter sonlandırılmasını içermez. `wcsstr` , öğesinin geniş karakterli sürümüdür `strstr` ve `_mbsstr` çok baytlı karakter sürümüdür. Bağımsız değişkenleri ve dönüş değeri `wcsstr` geniş karakterli dizelerdir; bunlar `_mbsstr` çok baytlı karakter dizeleridir. `_mbsstr` parametrelerini doğrular. *Str* veya *strSearch* null ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, `_mbsstr` `errno` EINVAL olarak ayarlar ve 0 döndürür. `strstr` ve `wcsstr` parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
 > [!IMPORTANT]
 > Bu işlevler, arabellek taşması sorunundan bir tehdit oluşturabilir. Arabellek taşması sorunları, bir sisteme saldırmak için kullanılabilir ve bu, izin verilmeyen ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -205,8 +206,8 @@ lazy found at position 36
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l](strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)<br/>

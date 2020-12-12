@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlev şablonlarının açık özelleştirmesi'
 title: İşlev Şablonlarının Açık Alt Uzmanlaşması
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - declaring functions [C++], specialization of function template
 - specialization of function templates
 ms.assetid: eb0fcb73-eaed-42a1-9b83-14b055a34bf8
-ms.openlocfilehash: 638b5dbca1b3c0c9b9c9c946418ea70354ff6266
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c77ebce3383ba2051ac010c39a7dd0eb37b8111a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220567"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181507"
 ---
 # <a name="explicit-specialization-of-function-templates"></a>İşlev Şablonlarının Açık Alt Uzmanlaşması
 
-Bir işlev şablonuyla, bu tür için işlev şablonunun açık bir özelleştirmesi (geçersiz kılma) sağlayarak belirli bir tür için özel davranış tanımlayabilirsiniz. Örnek:
+Bir işlev şablonuyla, bu tür için işlev şablonunun açık bir özelleştirmesi (geçersiz kılma) sağlayarak belirli bir tür için özel davranış tanımlayabilirsiniz. Örneğin:
 
 ```cpp
 template<> void MySwap(double a, double b);
