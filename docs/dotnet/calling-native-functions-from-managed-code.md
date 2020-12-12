@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: yönetilen koddan yerel Işlevleri çağırma'
 title: Yönetilen Koddan Yerel İşlevleri Çağırma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,31 +10,31 @@ helpviewer_keywords:
 - calling native functions from managed code
 - interop [C++], calling native functions from managed code
 ms.assetid: 982cef18-20d9-42b4-8242-a77fa65f2e36
-ms.openlocfilehash: 0cdd5db4fae8d9167fa9ab1aeb6a4e8cbfe76ded
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b037027f863ff12ac83429715cdf50bff4549a93
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372519"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282542"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>Yönetilen Koddan Yerel İşlevleri Çağırma
 
-Ortak dil çalışma süresi, yönetilen kodun yerel dinamik bağlantılı kitaplıklarda (DLL) C stili işlevleri ni aramasını sağlayan Platform Çağırma Hizmetleri veya PInvoke sağlar. Aynı veri işleme çalışma süresi ile COM birlikte çalışabilirlik ve "It Just Works" veya IJW, mekanizma için kullanılır.
+Ortak dil çalışma zamanı, yönetilen kodun yerel dinamik bağlantılı kitaplıklarda (dll 'Ler) C stili işlevleri çağırmasını sağlayan platform çağırma hizmetleri veya PInvoke sağlar. Aynı veri sıralaması, çalışma zamanıyla COM birlikte çalışabilirliği ve "It yalnızca çalışıyor" veya ıJW, mekanizması için kullanılır.
 
-Daha fazla bilgi için bkz.
+Daha fazla bilgi için bkz:
 
-- [C++'da Açık PInvoke kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+- [C++ ' ta açık PInvoke kullanma (DllImport özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
 
-- [C++ Interop Kullanma (Örtülü PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+- [C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
 
-Bu bölümdeki örnekler sadece `PInvoke` nasıl kullanılabileceğini göstermektedir. `PInvoke`yordam mareşalkodu yazmak yerine özniteliklerde açıklayıcı bilgi verdiğiniz için özelleştirilmiş veri mareşalliğini basitleştirebilir.
+Bu bölümdeki örneklerde yalnızca nasıl `PInvoke` kullanılabileceği gösterilmektedir. `PInvoke` , yordamsal sıralama kodu yazmak yerine sıralama bilgilerini bildirimli olarak öznitelikler halinde sağladığınızdan, özelleştirilmiş veri hazırlamayı kolaylaştırabilir.
 
 > [!NOTE]
-> Mareşal kitaplığı, verileri yerel ve yönetilen ortamlar arasında en iyi duruma getirilmiş bir şekilde mareşallemek için alternatif bir yol sağlar. Mareşallik kitaplığı hakkında daha fazla bilgi için [C++'da Mareşallik](../dotnet/overview-of-marshaling-in-cpp.md) Bölümü'ne genel bakış. Mareşal kitaplığı yalnızca veriler için kullanılabilir ve işlevler için değil.
+> Sıralama kitaplığı, yerel ve yönetilen ortamlar arasında iyileştirilmiş bir şekilde veri sıralaması için alternatif bir yol sağlar. Sıralama kitaplığı hakkında daha fazla bilgi için bkz. [C++ ' da sıralamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md) . Sıralama kitaplığı, işlevleri için değil, yalnızca veriler için kullanılabilir.
 
-## <a name="pinvoke-and-the-dllimport-attribute"></a>PInvoke ve DllImport Özniteliği
+## <a name="pinvoke-and-the-dllimport-attribute"></a>PInvoke ve DllImport özniteliği
 
-Aşağıdaki örnek, Visual `PInvoke` C++ programının kullanımını gösterir. Yerel fonksiyon koyar msvcrt.dll tanımlanır. DllImport özniteliği puts bildirimi için kullanılır.
+Aşağıdaki örnek, `PInvoke` bir Visual C++ programında kullanımını gösterir. Yerel işlev koyar msvcrt.dll tanımlanmıştır. DllImport özniteliği, yerleştirmenin bildirimi için kullanılır.
 
 ```cpp
 // platform_invocation_services.cpp
@@ -50,7 +51,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek önceki örneğe eşdeğerdir, ancak IJW kullanır.
+Aşağıdaki örnek, önceki örneğe eşdeğerdir, ancak ıJW kullanır.
 
 ```cpp
 // platform_invocation_services_2.cpp
@@ -71,31 +72,31 @@ int main() {
 
 ### <a name="advantages-of-ijw"></a>IJW avantajları
 
-- Programın kullandığı yönetilmeyen `DLLImport` API'ler için öznitelik bildirimleri yazmaya gerek yoktur. Üstbilgi dosyasını ve alma kitaplığıyla bağlantı kurmanın tek et.
+- `DLLImport`Programın kullandığı yönetilmeyen API 'ler için öznitelik bildirimleri yazmanız gerekmez. Yalnızca başlık dosyasını ve bağlantıyı içeri aktarma kitaplığıyla dahil edin.
 
-- IJW mekanizması biraz daha hızlıdır (örneğin, Geliştirici tarafından açıkça yapıldığı için iJW saplamalarının veri öğelerini sabitleme veya kopyalama gereksinimini denetlemesi gerekmez).
+- IJW mekanizması biraz daha hızlıdır (örneğin, ıJW saplamalarının, geliştirici tarafından açıkça yapıldığından, veri öğelerini sabitleme veya kopyalama gereksinimini denetlemesi gerekmez).
 
-- Performans sorunlarını açıkça gösteriyor. Bu durumda, unicode dizesinden ANSI dizesine çeviri yaptığınız ve görevli bellek ayırma ve ayırmanız olması. Bu durumda, IJW kullanarak kodu yazan bir `_putws` geliştirici `PtrToStringChars` arama ve kullanmanın performans için daha iyi olacağını fark eder.
+- Performans sorunlarını net bir şekilde gösterir. Bu durumda, bir Unicode dizesinden bir ANSI dizesine çevirin ve bir görevlisi bellek ayırma ve ayırmayı kaldırma olgusunun olması gerekir. Bu durumda, ıJW kullanarak kodu yazan bir geliştirici, çağırmanın `_putws` ve kullanmanın `PtrToStringChars` performans açısından daha iyi olacağını fark ediyor.
 
-- Aynı verileri kullanarak birçok yönetilmeyen API'yi arıyorsanız, bir kez mareşallik yapmak ve mareşal kopyayı geçirmek her seferinde yeniden genelleme yapmaktan çok daha etkilidir.
+- Aynı verileri kullanarak çok sayıda yönetilmeyen API çağırırsanız, onu bir kez sıralama ve sıralanmış kopyayı geçirme her seferinde yeniden hazırlamayı çok daha etkilidir.
 
 ### <a name="disadvantages-of-ijw"></a>IJW dezavantajları
 
-- Mareşallik öznitelikler yerine (genellikle uygun varsayılanlara sahip) açıkça kod olarak belirtilmelidir.
+- Sıralama, öznitelikler (genellikle uygun varsayılanlara sahiptir) yerine doğrudan kodda belirtilmelidir.
 
-- Mareşalkodu, uygulama mantığının akışında daha invaziv olduğu satır da dır.
+- Sıralama kodu, uygulama mantığının akışında daha fazla yer aldığı satır içidir.
 
-- Açık marshaling API'ler 32-64 bit taşınabilirlik için döndürülebilir, `IntPtr` ek `ToPointer` aramalar kullanmanız gerekir.
+- Açık sıralama API 'Leri `IntPtr` 32 bit-64-bit taşınabilirlik için türler döndürdüğü için, fazladan çağrılar kullanmanız gerekir `ToPointer` .
 
-C++ tarafından maruz belirli yöntem, bazı ek karmaşıklık pahasına, daha verimli, açık bir yöntemdir.
+C++ tarafından sunulan belirli bir yöntem, daha verimli, açık bir yöntemdir ve bazı ek karmaşıklık maliyetlidir.
 
-Uygulama çoğunlukla yönetilmeyen veri türleri kullanıyorsa veya .NET Framework API'lerinden daha fazla yönetilmeyen API'ler gerektiriyorsa, IJW özelliğini kullanmanızı öneririz. Çoğunlukla yönetilen bir uygulamada zaman zaman yönetilmeyen bir API çağırmak için seçim daha ince.
+Uygulama ağırlıklı olarak yönetilmeyen veri türlerini kullanıyorsa veya .NET Framework API 'lerden daha fazla yönetilmeyen API çağırırsa, ıJW özelliğini kullanmanızı öneririz. Genellikle yönetilen bir uygulamada zaman zaman yönetilmeyen bir API çağırmak için, tercih daha hafif olur.
 
-## <a name="pinvoke-with-windows-apis"></a>Windows API'leri ile PInvoke
+## <a name="pinvoke-with-windows-apis"></a>Windows API 'Leri ile PInvoke
 
-PInvoke, Windows'daki arama işlevleri için uygundur.
+PInvoke, Windows 'da işlevleri çağırmak için uygundur.
 
-Bu örnekte, Visual C++ programı Win32 API'sinin bir parçası olan MessageBox işlevi ile birlikte çalışır.
+Bu örnekte, bir Visual C++ programı Win32 API parçası olan MessageBox işleviyle birlikte çalışır.
 
 ```cpp
 // platform_invocation_services_4.cpp
@@ -113,28 +114,28 @@ int main() {
 }
 ```
 
-Çıktı, PInvoke Testi başlığına sahip ve Hello World!.
+Çıktı, PInvoke test başlığına sahip olan ve Merhaba Dünya! metnini içeren bir ileti kutusudur.
 
-Mareşal bilgileri, PInvoke tarafından DLL'deki işlevleri aramak için de kullanılır. user32.dll'de aslında MessageBox işlevi yoktur, ancak CharSet=CharSet::Ansi, PInvoke'ın Unicode sürümü olan MessageBoxW yerine ANSI sürümü olan MessageBoxA'yı kullanmasını sağlar. Genel olarak, yönetilmeyen API'lerin Unicode sürümlerini kullanmanızı öneririz, çünkü bu, .NET Framework dize nesnelerinin yerel Unicode biçiminden ANSI'ye olan çeviri ek yüküne neden olabilir.
+Sıralama bilgileri ayrıca PInvoke tarafından DLL 'deki işlevleri aramak için kullanılır. user32.dll aslında bir MessageBox işlevi yoktur, ancak CharSet = CharSet:: ansi, PInvoke 'un Unicode sürümü olan MessageBoxW yerine, ANSI sürümünü kullanmasını sağlar. Genel olarak, yönetilmeyen API 'lerin Unicode sürümlerini kullanmanızı öneririz çünkü bu, .NET Framework dize nesnelerinin yerel Unicode biçiminden ANSI 'ye çeviri yükünü ortadan kaldırır.
 
-## <a name="when-not-to-use-pinvoke"></a>PInvoke Kullanılmadığında
+## <a name="when-not-to-use-pinvoke"></a>PInvoke ne zaman kullanılmaz?
 
-PInvoke kullanmak, DL'lerde bulunan tüm C stili işlevler için uygun değildir. Örneğin, mylib.dll'de aşağıdaki gibi beyan edilen MakeSpecial işlevi olduğunu varsayalım:
+PInvoke kullanmak, dll 'Lerdeki tüm C stili işlevlere uygun değildir. Örneğin, aşağıdaki şekilde bildirildiği mylib.dll bir MakeSpecial işlevi olduğunu varsayalım:
 
 `char * MakeSpecial(char * pszString);`
 
-Görsel C++ uygulamasında PInvoke kullanırsak, aşağıdakilere benzer bir şey yazabiliriz:
+Visual C++ uygulamasında PInvoke kullandığımızda aşağıdakine benzer bir değer yazabilirsiniz:
 
 ```cpp
 [DllImport("mylib")]
 extern "C" String * MakeSpecial([MarshalAs(UnmanagedType::LPStr)] String ^);
 ```
 
-Buradaki zorluk, MakeSpecial tarafından döndürülen yönetilmeyen dize için belleği silemesek de. PInvoke aracılığıyla çağrılan diğer işlevler, bir işaretçiyi kullanıcı tarafından ayrılması gerekmeyen bir iç arabelleğe döndürür. Bu durumda, IJW özelliğini kullanarak bariz bir seçimdir.
+Buradaki zorluk, MakeSpecial tarafından döndürülen yönetilmeyen dize için belleği silemediğimiz bir sorun. PInvoke aracılığıyla çağrılan diğer işlevler, Kullanıcı tarafından serbest bırakılmaması gereken bir iç arabelleğe yönelik bir işaretçi döndürür. Bu durumda, ıJW özelliğinin kullanılması belirgin bir seçimdir.
 
 ## <a name="limitations-of-pinvoke"></a>PInvoke sınırlamaları
 
-Parametre olarak aldığınız yerel bir işlevden aynı işaretçiyi döndüremezsiniz. Yerel bir işlev, PInvoke tarafından kendisine marshaled olan işaretçi döndürürse, bellek bozulması ve özel durumlar ortaya çıkabilir.
+Parametre olarak aldığınız yerel bir işlevden aynı tam işaretçiyi geri dönemezsiniz. Yerel bir işlev, PInvoke tarafından kendisine sıralanmış işaretçiyi döndürürse, bellek bozulması ve özel durumlar olabilir.
 
 ```cpp
 __declspec(dllexport)
@@ -143,7 +144,7 @@ char* fstringA(char* param) {
 }
 ```
 
-Aşağıdaki örnek bu sorunu sergiler ve program doğru çıktı vermek gibi görünse de, çıktı serbest bırakılmış bellekgeliyor.
+Aşağıdaki örnek bu sorunu sergiler ve program doğru çıktıyı verebilir gibi görünse de çıkış serbest bırakılmış bellekten geliyor olabilir.
 
 ```cpp
 // platform_invocation_services_5.cpp
@@ -166,39 +167,39 @@ int main() {
 }
 ```
 
-## <a name="marshaling-arguments"></a>Marshaling Argümanlar
+## <a name="marshaling-arguments"></a>Bağımsız değişkenleri hazırlama
 
-Ile, `PInvoke`aynı forma sahip yönetilen ve C++ yerel ilkel türleri arasında hiçbir mareşalgerekli değildir. Örneğin, Int32 ile int arasında veya Çift ve Çift arasında bir mareşallik gerekmez.
+İle `PInvoke` , aynı form ile yönetilen ve C++ yerel ilkel türleri arasında sıralama gerekmez. Örneğin, Int32 ve int arasında ya da Double ve Double arasında sıralama gerekmez.
 
-Ancak, aynı forma sahip olmayan türleri mareşal gerekir. Bu char, dize ve yapı türlerini içerir. Aşağıdaki tablo, mareşal tarafından çeşitli türler için kullanılan eşlemeleri gösterir:
+Ancak, aynı forma sahip olmayan türleri de sıramalısınız. Bu, Char, String ve struct türlerini içerir. Aşağıdaki tabloda, çeşitli türler için sıralayıcı tarafından kullanılan eşlemeler gösterilmektedir:
 
-|wtypes.h|Visual C++|/clr ile Görsel C++|Ortak dil çalışma zamanı|
+|WTypes. h|Visual C++|/Clr ile Visual C++|Ortak dil çalışma zamanı|
 |--------------|------------------|-----------------------------|-----------------------------|
-|Işlemek|Void\*|Void\*|IntPtr, UIntPtr|
+|TUTAMAÇLARDAN|Kağıt \*|Kağıt \*|IntPtr, UIntPtr|
 |BYTE|unsigned char|unsigned char|Bayt|
-|Kısa|short|short|Int16|
+|KıSADıR|short|short|Int16|
 |WORD|imzasız short|imzasız short|UInt16|
 |INT|int|int|Int32|
 |UINT|unsigned int|unsigned int|UInt32|
-|Uzun|long|long|Int32|
-|Bool|long|bool|Boole|
+|KALACAĞıNı|long|long|Int32|
+|BOOL|long|bool|Boole|
 |DWORD|imzasız long|imzasız long|UInt32|
-|Ulong|imzasız long|imzasız long|UInt32|
-|Char|char|char|Char|
-|Lpstr|Char\*|String ^ [in], StringBuilder ^ [içinde, dışarı]|String ^ [in], StringBuilder ^ [içinde, dışarı]|
-|LPCSTR|const char\*|Dize ^|Dize|
-|Lpwstr|Wchar_t\*|String ^ [in], StringBuilder ^ [içinde, dışarı]|String ^ [in], StringBuilder ^ [içinde, dışarı]|
-|LPCWSTR|const wchar_t\*|Dize ^|Dize|
-|Float|float|float|Tek|
-|Çift|double|double|Çift|
+|'TUR|imzasız long|imzasız long|UInt32|
+|CHAR|char|char|Char|
+|LPSTR|Char \*|Dize ^ [in], StringBuilder ^ [in, out]|Dize ^ [in], StringBuilder ^ [in, out]|
+|LPCSTR|const char \*|Dize ^|Dize|
+|LPWSTR|wchar_t \*|Dize ^ [in], StringBuilder ^ [in, out]|Dize ^ [in], StringBuilder ^ [in, out]|
+|LPCWSTR|const wchar_t \*|Dize ^|Dize|
+|FLOAT|float|float|Tek|
+|ÇIFT|double|double|Çift|
 
-Mareşal, adresi yönetilmeyen bir işleve geçirilirse, çalışma zamanı yığınında ayrılan belleği otomatik olarak sabitler. Sabitleme, çöp toplayıcısının sıkıştırma sırasında ayrılan bellek bloğunu hareket ettirmesini önler.
+Sıralayıcısı, adresi yönetilmeyen bir işleve geçirilirse, çalışma zamanı yığınında ayrılan belleği otomatik olarak sabitler. Sabitleme, çöp toplayıcısının, sıkıştırma sırasında ayrılan bellek bloğunu taşımasını engeller.
 
-Bu konuda daha önce gösterilen örnekte, DllImport'un CharSet parametresi, yönetilen Dizelerin nasıl marshaled edilmesi gerektiğini belirtir; bu durumda, onlar yerli tarafı için ANSI dizeleri marshaled olmalıdır.
+Bu konunun önceki kısımlarında gösterilen örnekte, DllImport karakter kümesi parametresi yönetilen dizelerin nasıl sıralanması gerektiğini belirtir; Bu durumda, yerel taraf için ANSI dizelerine sıralanmalıdır.
 
-Mareşal özniteliğini kullanarak yerel bir işlevin tek tek bağımsız bağımsız bağımsız değişkenleri için mareşal bilgileri belirtebilirsiniz. Bir String \* bağımsız değişkenini mareşallik etmek için çeşitli seçenekler vardır: BStr, ANSIBStr, TBStr, LPStr, LPWStr ve LPTStr. Varsayılan LPStr'dir.
+MarshalAs özniteliğini kullanarak, yerel bir işlevin bağımsız bağımsız değişkenleri için sıralama bilgilerini belirtebilirsiniz. Dize bağımsız değişkenini sıralamaya yönelik çeşitli seçimler vardır \* : BSTR, ANSIBStr, TBStr, LPStr, LPWStr ve LPTStr. Varsayılan değer LPStr 'dir.
 
-Bu örnekte, dize çift bayt Unicode karakter dizesi, LPWStr olarak marshaled. Çıkış Hello World ilk harfi! çünkü mareşal dizesinin ikinci baytı null'dur ve bunu dize sonu işaretçisi olarak yorumluyor.
+Bu örnekte, dize çift baytlık Unicode karakter dizesi, LPWStr olarak sıralanır. Çıktı Merhaba Dünya ilk harftir! sıralanan dizenin ikinci baytı null olduğundan ve koyar bunu dize sonu işaretçisi olarak yorumlar.
 
 ```cpp
 // platform_invocation_services_3.cpp
@@ -215,16 +216,16 @@ int main() {
 }
 ```
 
-Mareşalöz özniteliği Sistemde::Runtime::InteropServices ad alanı. Öznitelik diziler gibi diğer veri türleri ile kullanılabilir.
+MarshalAs özniteliği System:: Runtime:: InteropServices ad alanında bulunur. Özniteliği diziler gibi diğer veri türleriyle birlikte kullanılabilir.
 
-Daha önce konu belirtildiği gibi, mareşal kitaplığı yerel ve yönetilen ortamlar arasında veri mareşallik yeni, optimize yöntemi sağlar. Daha fazla bilgi için [C++'da Mareşallik Genel Bakış'a](../dotnet/overview-of-marshaling-in-cpp.md)bakın.
+Bu konuda daha önce belirtildiği gibi, hazırlama kitaplığı, yerel ve yönetilen ortamlar arasında veri hazırlama için yeni ve iyileştirilmiş bir yöntem sağlar. Daha fazla bilgi için bkz. [C++ ' da sıralamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md).
 
 ## <a name="performance-considerations"></a>Başarım Değerlendirmeleri
 
-PInvoke'ın her çağrı başına 10 ila 30 x86 yönergesi içeren bir yükü vardır. In addition to this fixed cost, marshaling creates additional overhead. Yönetilen ve yönetilmeyen kodda aynı gösterime sahip blittable türleri arasında mareşal maliyeti yoktur. Örneğin, int ve Int32 arasında çevirmek için hiçbir maliyet yoktur.
+PInvoke, çağrı başına 10 ila 30 x86 arasındaki yönergeleri içerir. Bu sabit maliyete ek olarak, sıralama ek yük oluşturur. Yönetilen ve yönetilmeyen koddaki aynı gösterimine sahip blittable türleri arasında sıralama maliyeti yoktur. Örneğin, int ve Int32 arasında çevrilecek bir maliyet yoktur.
 
-Daha iyi performans için, çağrı başına daha az veri mareşal daha fazla çağrı yerine, mümkün olduğunca çok veri mareşal daha az PInvoke çağrıları var.
+Daha iyi performans için, çağrı başına daha az veri sıralaması yapan daha fazla çağrı yerine mümkün olduğunca çok veri sıralaması yapan daha az PInvoke çağrısı vardır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)
+[Yerel ve .NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2311'
 title: Derleyici hatası C2311
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2311
 ms.assetid: 1aff9bd5-ed0b-4db6-bbc0-01ac89850cf2
-ms.openlocfilehash: e72ff7325e293697b0117e527b0d9edd55840481
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bf835f9add53951c6c61cbf1345917587e046b65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748183"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282223"
 ---
 # <a name="compiler-error-c2311"></a>Derleyici hatası C2311
 

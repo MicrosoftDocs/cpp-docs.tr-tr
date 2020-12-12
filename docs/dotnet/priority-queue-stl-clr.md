@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: priority_queue (STL/CLR)'
 title: priority_queue (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 4d0000d3-68ff-4c4b-8157-7060540136f5
-ms.openlocfilehash: fd87c39db279fb70d5c5b5f20e583251dc519755
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 666efbc634ae962836fce4fa12ca762ab7085d92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502405"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282503"
 ---
 # <a name="priority_queue-stlclr"></a>priority_queue (STL/CLR)
 
@@ -219,7 +220,7 @@ c a b
 
 Bir öğe için sabit bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% const_reference;
@@ -263,7 +264,7 @@ c b a
 
 Temel alınan kapsayıcının türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Container value_type;
@@ -305,7 +306,7 @@ c a b
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int difference_type;
@@ -363,7 +364,7 @@ popping 3 = 3
 
 Bir öğe olup olmadığını sınar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 bool empty();
@@ -417,7 +418,7 @@ empty() = True
 
 Kapsayıcının genel arabiriminin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::IPriorityQueue<Value>
@@ -480,7 +481,7 @@ e d b a c
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef GValue generic_value;
@@ -538,7 +539,7 @@ c b a
 
 Temel alınan kapsayıcıya erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 container_type get_container();
@@ -633,7 +634,7 @@ c a b
 
 En yüksek proırity öğesini kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void pop();
@@ -728,7 +729,7 @@ Oluşturucu:
 
 `priority_queue(priority_queue<Value, Container>% right);`
 
-sıralama koşulu ile, kopyası olan sarmalanmış bir kapsayıcı oluşturur `right.get_container()` `right.value_comp()` . Aynı sıralama koşulu ile, *kuyruk nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+sıralama koşulu ile, kopyası olan sarmalanmış bir kapsayıcı oluşturur `right.get_container()` `right.value_comp()` . Aynı sıralama koşulu ile, *kuyruk nesnesi tarafından* denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
@@ -740,13 +741,13 @@ Oluşturucu:
 
 `explicit priority_queue(value_compare^ pred);`
 
-sıralama koşulu *Pred*içeren boş bir sarmalanmış kapsayıcı oluşturur. Belirtilen sıralama koşulu ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+sıralama koşulu *Pred* içeren boş bir sarmalanmış kapsayıcı oluşturur. Belirtilen sıralama koşulu ile boş bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `priority_queue(value_compare^ pred, container_type cont);`
 
-sıralama koşulu *Pred*olan boş bir sarmalanmış kapsayıcı oluşturur, ardından tüm *devam* eden öğeleri, mevcut bir kapsayıcıdan, belirtilen sıralama koşuluna sahip bir ilk denetimli sıra belirtmek için kullanır.
+sıralama koşulu *Pred* olan boş bir sarmalanmış kapsayıcı oluşturur, ardından tüm *devam* eden öğeleri, mevcut bir kapsayıcıdan, belirtilen sıralama koşuluna sahip bir ilk denetimli sıra belirtmek için kullanır.
 
 Oluşturucu:
 
@@ -758,13 +759,13 @@ Oluşturucu:
 
 `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred);`
 
-sıralama koşulu *Pred*olan boş bir sarmalanmış kapsayıcı oluşturur, sonra [,) dizisini gönderir `first` `last` . Belirtilen sıralama koşulu ile, belirtilen bir seq'tan bir başlangıç denetimli sıra belirtmek için bunu kullanırsınız.
+sıralama koşulu *Pred* olan boş bir sarmalanmış kapsayıcı oluşturur, sonra [,) dizisini gönderir `first` `last` . Belirtilen sıralama koşulu ile, belirtilen bir seq'tan bir başlangıç denetimli sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
 `template<typename InIt> priority_queue(InIt first, InIt last, value_compare^ pred, container_type% cont);`
 
-sıralı koşul *Pred*ile boş bir sarmalanmış kapsayıcı oluşturur, ardından *devam* eden tüm öğeleri ve [ `first` ,) dizisini iter `last` . Mevcut bir kapsayıcıdan ve belirtilen bir seqeuence öğesinden, belirtilen sıralama koşuluna sahip bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
+sıralı koşul *Pred* ile boş bir sarmalanmış kapsayıcı oluşturur, ardından *devam* eden tüm öğeleri ve [ `first` ,) dizisini iter `last` . Mevcut bir kapsayıcıdan ve belirtilen bir seqeuence öğesinden, belirtilen sıralama koşuluna sahip bir ilk denetimli sıra belirtmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -868,7 +869,7 @@ a c b
 
 Yeni bir öğesi ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void push(value_type val);
@@ -909,7 +910,7 @@ c a b
 
 Bir öğe için bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% reference;
@@ -958,7 +959,7 @@ x a b
 
 Öğe sayısını sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 size_type size();
@@ -1012,7 +1013,7 @@ size() = 4 after adding 2
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int size_type;
@@ -1061,7 +1062,7 @@ size difference = 2
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 cli::array<Value>^ to_array();
@@ -1111,7 +1112,7 @@ c a b
 
 En yüksek önceliğe sahip öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reference top();
@@ -1157,7 +1158,7 @@ int main()
 
 En yüksek önceliğe sahip öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property value_type back_item;
@@ -1209,7 +1210,7 @@ x a b
 
 Sıralama temsilcisini iki öğe için kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 value_compare^ value_comp();
@@ -1268,7 +1269,7 @@ compare(L'b', L'a') = True
 
 İki değer için sıralama temsilcisi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 binary_delegate<value_type, value_type, int> value_compare;
@@ -1327,7 +1328,7 @@ compare(L'b', L'a') = True
 
 Öğenin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value value_type;
@@ -1335,7 +1336,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametre *değeri*için bir eş anlamlı.
+Tür, şablon parametre *değeri* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 

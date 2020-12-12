@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yönetilen özel durumları kullanma hakkında temel kavramlar'
 title: Yönetilen Özel Durumları Kullanmaya İlişkin Temel Kavramlar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - throwing exceptions, managed exceptions
 - Visual C++, handling managed exceptions
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
-ms.openlocfilehash: 4eeec5db00ceca5429f4a3a270e1b249a8955249
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1c6e405de2a82e32375092007dcc1f0fd8f654c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282607"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>Yönetilen Özel Durumları Kullanmaya İlişkin Temel Kavramlar
 
@@ -31,11 +32,11 @@ Bu konu, yönetilen uygulamalarda özel durum işlemeyi tartışır. Diğer bir 
 
 **/Clr** seçeneğiyle DERLERSENIZ CLR özel durumlarını işleyebilir <xref:System.Exception> ve standart sınıf, CLR özel durumlarını işlemek için birçok yararlı yöntem sağlar ve Kullanıcı tanımlı özel durum sınıfları için temel sınıf olarak önerilir.
 
-Bir arabirimden türetilmiş özel durum türleri, **/clr**altında desteklenmez. Ayrıca, ortak dil çalışma zamanı, yığın taşması özel durumlarını yakalamada size izin vermez; yığın taşması özel durumu işlemi sonlandırır.
+Bir arabirimden türetilmiş özel durum türleri, **/clr** altında desteklenmez. Ayrıca, ortak dil çalışma zamanı, yığın taşması özel durumlarını yakalamada size izin vermez; yığın taşması özel durumu işlemi sonlandırır.
 
 Yönetilen ve yönetilmeyen uygulamalardaki özel durum işlemede farklılıklar hakkında daha fazla bilgi için, [C++ için yönetilen uzantılar altında özel durum Işleme davranışındaki farklılıklar](../dotnet/differences-in-exception-handling-behavior-under-clr.md)bölümüne bakın.
 
-## <a name="throwing-exceptions-under-clr"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a>/Clr altında özel durumlar üretiliyor
+## <a name="throwing-exceptions-under-clr"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a> /Clr altında özel durumlar üretiliyor
 
 C++ throw ifadesi bir CLR türü için tanıtıcı oluşturmak üzere genişletilir. Aşağıdaki örnek özel bir özel durum türü oluşturur ve bu türün bir örneğini oluşturur:
 
@@ -68,7 +69,7 @@ void GlobalFunction() {
 }
 ```
 
-## <a name="trycatch-blocks-for-clr-extensions"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a>CLR uzantıları için try/catch blokları
+## <a name="trycatch-blocks-for-clr-extensions"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a> CLR uzantıları için try/catch blokları
 
 Aynı **`try`** / **`catch`** blok yapısı hem clr hem de yerel özel durumları yakalamak için kullanılabilir:
 
@@ -162,7 +163,7 @@ catch(...)
 
 Yönetilmeyen bir tür catch (Object ^) tarafından yakalanmışsa, oluşturulan nesneyi yok etmez.
 
-Yönetilmeyen özel durumları oluştururken veya sunarken, **/EHS** veya **/EHa**yerine [/EHsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini kullanmanızı öneririz.
+Yönetilmeyen özel durumları oluştururken veya sunarken, **/EHS** veya **/EHa** yerine [/EHsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneğini kullanmanızı öneririz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
