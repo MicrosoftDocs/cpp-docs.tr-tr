@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; iostream&gt;'
 title: '&lt;iostream&gt;'
 ms.date: 09/20/2017
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - iostream header
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
-ms.openlocfilehash: 5805d441b4fc2fc2927b57f4d94ba8b8ccecb22a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 882b7de8add9339a0580efeac18740205cc175aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845477"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323907"
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 
@@ -75,7 +76,7 @@ extern ostream cerr;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne, arabelleğe alınmamış bir bayt akışı olarak standart hata çıktısına eklemeleri denetler. Nesne oluşturulduktan sonra, `cerr.` [flags](../standard-library/ios-base-class.md#flags) `&` [unitarabelleğe](../standard-library/ios-functions.md#unitbuf) deyiminin ifadesi sıfır değildir ve olur `cerr.tie() == &cout` .
+Nesne, arabelleğe alınmamış bir bayt akışı olarak standart hata çıktısına eklemeleri denetler. Nesne oluşturulduktan sonra, `cerr.` [](../standard-library/ios-base-class.md#flags) `&` [unitarabelleğe](../standard-library/ios-functions.md#unitbuf) deyiminin ifadesi sıfır değildir ve olur `cerr.tie() == &cout` .
 
 #### <a name="example"></a>Örnek
 
@@ -212,7 +213,7 @@ extern wostream wcerr;
 
 #### <a name="remarks"></a>Açıklamalar
 
-Nesne, ara belleğe alınmamış standart hata çıktılarına geniş bir akış olarak eklenenleri denetler. Nesne oluşturulduktan sonra, `wcerr.` [flags](../standard-library/ios-base-class.md#flags) `&` [unitarabelleğe](../standard-library/ios-functions.md#unitbuf) deyiminin bayrak sıfır değildir.
+Nesne, ara belleğe alınmamış standart hata çıktılarına geniş bir akış olarak eklenenleri denetler. Nesne oluşturulduktan sonra, `wcerr.` [](../standard-library/ios-base-class.md#flags) `&` [unitarabelleğe](../standard-library/ios-functions.md#unitbuf) deyiminin bayrak sıfır değildir.
 
 #### <a name="example"></a>Örnek
 

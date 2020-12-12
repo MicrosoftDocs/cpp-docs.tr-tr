@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: uygulamanızda Özellik sayfaları kullanma'
 title: Uygulamanızdaki Özellik Sayfalarını Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Create method [MFC], property sheets
 - CPropertyPage class [MFC], styles
 ms.assetid: 240654d4-152b-4e3f-af7b-44234339206e
-ms.openlocfilehash: 789764c9af988135219bd710d4f8aec1cda9143a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3bc1e21d99eb4a1688247524749b44028762892d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322697"
 ---
 # <a name="using-property-sheets-in-your-application"></a>Uygulamanızdaki Özellik Sayfalarını Kullanma
 
@@ -30,9 +31,9 @@ Uygulamanızda bir özellik sayfası kullanmak için aşağıdaki adımları izl
 
    - **Genel** sayfasındaki **başlık** düzenleme kutusunu, bu sayfanın sekmesinde görünmesini istediğiniz metin olarak ayarlayın.
 
-   - **Stiller** sayfasındaki **Stil** listesi kutusunu **alt**olarak ayarlayın.
+   - **Stiller** sayfasındaki **Stil** listesi kutusunu **alt** olarak ayarlayın.
 
-   - **Stiller** sayfasındaki **Kenarlık** liste kutusunu **ölçülü**olarak ayarlayın.
+   - **Stiller** sayfasındaki **Kenarlık** liste kutusunu **ölçülü** olarak ayarlayın.
 
    - **Stiller** sayfasındaki **başlıkkutusu** onay kutusunun seçili olduğundan emin olun.
 
@@ -52,7 +53,7 @@ Uygulamanızda bir özellik sayfası kullanmak için aşağıdaki adımları izl
 
    Genellikle, öğesini oluşturan nesnesi `CPropertySheet` `CPropertyPage` Bu adımdaki nesneleri de oluşturur. Ancak, bir `CPropertySheet` türetilmiş sınıf uygularsanız, `CPropertyPage` nesneleri `CPropertySheet` nesneye ekleyebilir ve `AddPage` `CPropertySheet` türetilmiş sınıf oluşturucusundan her sayfa için çağrı yapabilirsiniz. `AddPage``CPropertyPage`nesneyi Özellik sayfasının sayfa listesine ekler, ancak gerçekten Bu sayfa için pencere oluşturmaz. Bu nedenle, çağrılacak Özellik sayfası penceresinin oluşturulması bitinceye kadar beklemeniz gerekmez `AddPage` ; `AddPage` özellik sayfası oluşturucusundan çağrı yapabilirsiniz.
 
-   Varsayılan olarak, bir özellik sayfasında, özellik sayfasının tek bir satırına sığacak kadar daha fazla sekme varsa, sekmeler birden çok satırda yığılır. Yığını devre dışı bırakmak için parametresi **false**olarak ayarlanmış [CPropertySheet:: enablestackedtab](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) ' ı çağırın. Özellik sayfasını oluştururken ' i çağırmanız gerekir `EnableStackedTabs` .
+   Varsayılan olarak, bir özellik sayfasında, özellik sayfasının tek bir satırına sığacak kadar daha fazla sekme varsa, sekmeler birden çok satırda yığılır. Yığını devre dışı bırakmak için parametresi **false** olarak ayarlanmış [CPropertySheet:: enablestackedtab](../mfc/reference/cpropertysheet-class.md#enablestackedtabs) ' ı çağırın. Özellik sayfasını oluştururken ' i çağırmanız gerekir `EnableStackedTabs` .
 
 1. Özellik sayfasını göstermek için [CPropertySheet::D oModal](../mfc/reference/cpropertysheet-class.md#domodal) veya [Create](../mfc/reference/cpropertysheet-class.md#create) ' i çağırın. `DoModal`Bir özellik sayfasını kalıcı iletişim kutusu olarak oluşturma çağrısı. Özellik sayfasını kalıcı olmayan bir iletişim kutusu olarak oluşturmak için **Oluştur** ' a çağrı yapın.
 

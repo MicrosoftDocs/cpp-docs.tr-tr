@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: integer_sequence sınıfı'
 title: integer_sequence Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - std::make_integer_sequence
 - std::index_sequence_for
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
-ms.openlocfilehash: 4d927be4fdd41ab75ca78a0e0e7ab0282e4fbf6a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 321e41c2c3bfaa1f89c05f799dedc4f4250f0a2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843878"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323981"
 ---
 # <a name="integer_sequence-class"></a>integer_sequence Sınıfı
 
 Bir tamsayı dizisini temsil eder. , \<T...> Bir işleve bağımsız değişken olarak geçirilen std:: Tuple gibi değişken olmayan türlerde parametre paketlerini bırakmak ve genişletmek için kullanılabilir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T, T... Vals>

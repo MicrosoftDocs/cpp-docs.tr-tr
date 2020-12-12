@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: discard_block_engine sınıfı'
 title: discard_block_engine Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - discard_block_engine class
 ms.assetid: aa84808e-38fe-4fa0-9f73-d5b9a653345b
-ms.openlocfilehash: 6f7b11c360f58e6a838b22fbf2c68366dce973a3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0879dacac70afc78a9c77314ce5042580c6cbb39
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846296"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324522"
 ---
 # <a name="discard_block_engine-class"></a>discard_block_engine Sınıfı
 
 Temel altyapısının döndürdüğü değerleri atarak rastgele bir sıra üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Engine, size_t P, size_t R>

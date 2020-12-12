@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_empty sınıfı'
 title: is_empty Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_empty class
 - is_empty
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0
-ms.openlocfilehash: 6300107ecf9c4ea1e237a60bf18f26b6416f7fba
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 130f1919e3553bb2757a5c1e71c829586b63c8aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323775"
 ---
-# <a name="isempty-class"></a>is_empty Sınıfı
+# <a name="is_empty-class"></a>is_empty Sınıfı
 
 Türün boş bir sınıf olup olmadığını sınar.
 
@@ -72,7 +73,7 @@ is_empty<int> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

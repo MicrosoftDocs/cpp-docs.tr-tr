@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: front_insert_iterator sınıfı'
 title: front_insert_iterator Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - std::front_insert_iterator [C++], container_type
 - std::front_insert_iterator [C++], reference
 ms.assetid: a9a9c075-136a-4419-928b-c4871afa033c
-ms.openlocfilehash: 8f60b2e5e21b559edb630be2aee377341d4480f6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 79690f51ce108357a6131c6ab811cee23c6c4529
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203279"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324284"
 ---
 # <a name="front_insert_iterator-class"></a>front_insert_iterator Sınıfı
 
 Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin önüne yazar ve bu nedenle C++ dizi kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. `front_insert_iterator`Sınıf kapsayıcının türü üzerinde şablonsaldır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Container>
@@ -60,11 +61,11 @@ Kapsayıcının itfa edilecek sabit sürede dizininin başına öğe eklemenin m
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**:\<iterator>
+**Üst bilgi**: \<iterator>
 
 **Ad alanı:** std
 
-## <a name="front_insert_iteratorcontainer_type"></a><a name="container_type"></a>front_insert_iterator:: container_type
+## <a name="front_insert_iteratorcontainer_type"></a><a name="container_type"></a> front_insert_iterator:: container_type
 
 Ön ekleme yapılacak kapsayıcıyı temsil eden bir tür.
 
@@ -74,7 +75,7 @@ typedef Container container_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *kapsayıcısının*eşanlamlısıdır.
+Tür, şablon parametresi *kapsayıcısının* eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -106,7 +107,7 @@ The list L2 is: ( 40 10 20 ).
 */
 ```
 
-## <a name="front_insert_iteratorfront_insert_iterator"></a><a name="front_insert_iterator"></a>front_insert_iterator:: front_insert_iterator
+## <a name="front_insert_iteratorfront_insert_iterator"></a><a name="front_insert_iterator"></a> front_insert_iterator:: front_insert_iterator
 
 Belirtilen kapsayıcı nesnesinin önünde öğeler ekleyebilen bir yineleyici oluşturur.
 
@@ -169,7 +170,7 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_star"></a>front_insert_iterator:: işleci\*
+## <a name="front_insert_iteratoroperator"></a><a name="op_star"></a> front_insert_iterator:: işleci\*
 
 , Kendisine ait olduğu öğeyi döndüren ekleme yineleyicisi ' ne başvurur.
 
@@ -183,7 +184,7 @@ front_insert_iterator<Container>& operator*();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıkış Yineleyici ifadesi ** \* Iter**değerini uygulamak için kullanılır  =  **value**. `Iter`Bir dizideki bir öğeyi ele alan bir yineleyici ise, ** \* Iter**  =  **değeri** bu öğenin değerini değeri ile değiştirir ve dizideki toplam öğe sayısını değiştirmez.
+Çıkış Yineleyici ifadesi **\* Iter** değerini uygulamak için kullanılır  =  . `Iter`Bir dizideki bir öğeyi ele alan bir yineleyici ise, **\* Iter**  =  **değeri** bu öğenin değerini değeri ile değiştirir ve dizideki toplam öğe sayısını değiştirmez.
 
 ### <a name="example"></a>Örnek
 
@@ -230,7 +231,7 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_add_add"></a>front_insert_iterator:: operator + +
+## <a name="front_insert_iteratoroperator"></a><a name="op_add_add"></a> front_insert_iterator:: operator + +
 
 Değerini, `back_insert_iterator` bir değerin depolanabileceği bir sonraki konuma arttırır.
 
@@ -281,7 +282,7 @@ The list L1 is: ( 30 20 10 ).
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_eq"></a>front_insert_iterator:: operator =
+## <a name="front_insert_iteratoroperator"></a><a name="op_eq"></a> front_insert_iterator:: operator =
 
 Kapsayıcının önüne bir değer ekler (gönderir).
 
@@ -343,7 +344,7 @@ The list L1 is: ( 30 20 10 ).
 */
 ```
 
-## <a name="front_insert_iteratorreference"></a><a name="reference"></a>front_insert_iterator:: Reference
+## <a name="front_insert_iteratorreference"></a><a name="reference"></a> front_insert_iterator:: Reference
 
 İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.
 

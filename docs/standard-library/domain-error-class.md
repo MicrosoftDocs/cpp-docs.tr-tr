@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: domain_error sınıfı'
 title: domain_error Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - domain_error class
 ms.assetid: a1d8245d-61c2-4d1e-973f-073bd5dd5fa3
-ms.openlocfilehash: 850615f07af022aff3ed209d9142823b0f038134
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 337df7c7c8e2327a4e5b88a45a736c697e6cb1bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521245"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324494"
 ---
 # <a name="domain_error-class"></a>domain_error Sınıfı
 

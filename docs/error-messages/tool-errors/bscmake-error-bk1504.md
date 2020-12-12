@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: BSCMAKE hatası BK1504'
 title: BSCMAKE Hatası BK1504
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1504
 ms.assetid: e6d1a171-1472-4b7e-a04b-1a68a561675f
-ms.openlocfilehash: 38cbc3173cbb9436a9b2e7f0d0c38af0b2caf4e2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 13145347213683d9cf4d013d9b96c579358915b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197840"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322992"
 ---
 # <a name="bscmake-error-bk1504"></a>BSCMAKE Hatası BK1504
 

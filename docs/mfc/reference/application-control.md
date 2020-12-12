@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: uygulama denetimi'
 title: Uygulama Denetimi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - application control [MFC]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-ms.openlocfilehash: 40ac3b6871d13420797279629a2661b22545d1d8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 20a777f5b7bb20870e9156ee090ff24ec4690f14
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322830"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 
@@ -173,7 +174,7 @@ Etkin nesne sayısı sıfıra ulaştığında, `AfxOleOnReleaseAllObjects` çağ
 
 Denetimle ilişkili dinamik olarak oluşturulan verilerin bellekte kalması için, belirtilen denetimin sınıf fabrikasını kilitler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 BOOL AFXAPI AfxOleLockControl(  REFCLSID clsid  );
@@ -264,7 +265,7 @@ Sunucu sınıfı başarıyla kaydedilmişse sıfır dışı; Aksi takdirde 0.
 
 Çoğu uygulama `COleTemplateServer::Register` , uygulamanın belge türlerini kaydetmek için kullanılabilir. Uygulamanızın sistem kayıt defteri biçimi tipik modele uymuyorsa, `AfxOleRegisterServerClass` daha fazla denetim için kullanabilirsiniz.
 
-Kayıt defteri bir anahtarlar ve değerler kümesinden oluşur. *RglpszRegister* ve *rglpszOverwrite* bağımsız değişkenleri, her biri bir anahtar ve bir **null** karakterle () ayrılmış bir değer içeren dizeler için işaretçilerin dizeleridir `'\0'` . Bu dizelerin her biri, yerleri% *1* karakter dizileri tarafından işaretlenmiş ve *%5*ile değişen değiştirilebilir parametrelere sahip olabilir.
+Kayıt defteri bir anahtarlar ve değerler kümesinden oluşur. *RglpszRegister* ve *rglpszOverwrite* bağımsız değişkenleri, her biri bir anahtar ve bir **null** karakterle () ayrılmış bir değer içeren dizeler için işaretçilerin dizeleridir `'\0'` . Bu dizelerin her biri, yerleri% *1* karakter dizileri tarafından işaretlenmiş ve *%5* ile değişen değiştirilebilir parametrelere sahip olabilir.
 
 Semboller aşağıdaki gibi doldurulur:
 
@@ -330,7 +331,7 @@ Sunucu yalnızca birincil bir fiili değer tanırsa, menü öğesi "fiil *TypeNa
 
 Belirtilen denetimin sınıf fabrikasının kilidini açar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 BOOL AFXAPI AfxOleUnlockControl( REFCLSID clsid );

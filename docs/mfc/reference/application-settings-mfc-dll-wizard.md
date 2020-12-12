@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: uygulama ayarları, MFC DLL Sihirbazı'
 title: Uygulama Ayarları, MFC DLL Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,48 +7,48 @@ f1_keywords:
 helpviewer_keywords:
 - MFC DLL Wizard, application settings
 ms.assetid: 0a96b94f-ae36-4975-951b-c9ffb3def21c
-ms.openlocfilehash: f021f2023af839413306c1e3d56dc741749cf216
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da9579ef9a834fa0c2362b1569c2efa808132faa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152052"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322804"
 ---
 # <a name="application-settings-mfc-dll-wizard"></a>Uygulama Ayarları, MFC DLL Sihirbazı
 
-MFC DLL Sihirbazı bu sayfa, tasarım ve yeni bir MFC DLL projesi için temel özellikleri eklemek için kullanın.
+Yeni bir MFC DLL projesine temel özellikler tasarlamak ve eklemek için MFC DLL Sihirbazı 'nın bu sayfasını kullanın.
 
 ## <a name="dll-type"></a>DLL türü
 
-DLL oluşturmak istediğiniz türü seçin.
+Oluşturmak istediğiniz DLL türünü seçin.
 
-- **Paylaşılan MFC DLL kullanan Normal MFC DLL'SİNİN**
+- **Paylaşılan MFC DLL kullanan normal MFC DLL**
 
-   MFC Kitaplığı programınız paylaşılan DLL olarak bağlamak için bu seçeneği belirleyin. Bu seçeneği kullanarak DLL'nizi çağıran uygulama arasındaki MFC nesneleri paylaşamazsınız. Programınızın çalışma zamanında MFC Kitaplığı çağrılar. Bu seçenek, MFC Kitaplığı kullanan birden çok yürütme dosyaları oluşturuluyorsa programınızı disk ve bellek gereksinimlerini azaltır. Win32 ve MFC programları, DLL'deki işlevleri çağırabilir. Bu tür bir proje ile MFC DLL'yi yeniden dağıtmanız gerekir.
+   MFC kitaplığını programınıza paylaşılan bir DLL olarak bağlamak için bu seçeneği belirleyin. Bu seçeneği kullanarak, DLL 'niz ile çağıran uygulama arasında MFC nesnelerini paylaşamazsınız. Programınız, çalışma zamanında MFC kitaplığına çağrılar yapar. Bu seçenek, MFC kitaplığı kullanan birden çok yürütme dosyasından oluşuyorsa programınızın disk ve bellek gereksinimlerini azaltır. Hem Win32 hem de MFC programları, DLL 'inizdeki işlevleri çağırabilir. MFC DLL 'sini bu proje türüyle yeniden dağıtmanız gerekir.
 
-- **MFC ile Normal MFC DLL'SİNİN statik olarak bağlı**
+- **MFC statik olarak bağlantılı normal MFC DLL**
 
-   Programınızı oluşturma zamanında statik olarak MFC Kitaplığı'na bağlamak için bu seçeneği belirleyin. Win32 ve MFC programları, DLL'deki işlevleri çağırabilir. Bu seçenek, programınızın boyutu artar, ancak bu tür bir proje ile MFC DLL'yi yeniden dağıtmanız gerekmez. MFC nesneleri DLL'nizi çağıran uygulama arasındaki paylaşamazsınız.
+   Programınızı derleme zamanında statik olarak MFC kitaplığına bağlamak için bu seçeneği belirleyin. Hem Win32 hem de MFC programları, DLL 'inizdeki işlevleri çağırabilir. Bu seçenek programınızın boyutunu artırsa da, MFC DLL 'sini bu proje türüyle yeniden dağıtmanız gerekmez. MFC nesnelerini DLL 'niz ile çağıran uygulama arasında paylaşamazsınız.
 
-- **MFC uzantısı DLL**
+- **MFC uzantı DLL 'SI**
 
-   MFC Kitaplığı çağrı çalışma zamanında yapmak için program istiyorsanız ve MFC nesneleri DLL'nizi çağıran uygulama arasındaki paylaşmak istiyorsanız bu seçeneği belirleyin. MFC Kitaplığı kullanan birden fazla yürütülebilir dosya oluşuyorsa, bu seçenek programınızda, disk ve bellek gereksinimlerini azaltır. Yalnızca MFC programları, DLL'deki işlevleri çağırabilir. Bu tür bir proje ile MFC DLL'yi yeniden dağıtmanız gerekir.
+   Programınızın, çalışma zamanında MFC kitaplığına çağrı yapmasını istiyorsanız ve DLL 'niz ile çağıran uygulama arasında MFC nesneleri paylaşmak istiyorsanız bu seçeneği belirleyin. Bu seçenek, programın MFC kitaplığı kullanan birden fazla yürütülebilir dosyadan oluşuyorsa, programınızın disk ve bellek gereksinimlerini azaltır. Yalnızca MFC programları DLL 'inizdeki işlevleri çağırabilir. MFC DLL 'sini bu proje türüyle yeniden dağıtmanız gerekir.
 
-## <a name="additional-features"></a>Ek Özellikler
+## <a name="additional-features"></a>Ek özellikler
 
-MFC DLL dosyanızı Otomasyon destekleyip desteklemeyeceğini ve onu Windows sockets destekleyip desteklemeyeceğini seçin.
+MFC DLL 'nizin Otomasyonu destekleyip desteklemediğini ve Windows Sockets 'i destekleyip desteklemediğini seçin.
 
-- **Otomatikleştirme**
+- **Otomasyon**
 
-   Seçin **Otomasyon** başka bir programda uygulanan nesneleri değiştirmek, programınızın izin vermek için. Seçme **Otomasyon** ayrıca programınızı diğer Otomasyon istemcilerine kullanıma sunar. Bkz: [Otomasyon](../../mfc/automation.md) daha fazla bilgi için.
+   Programınızın başka bir programda uygulanan nesneleri işlemesini sağlamak için **Otomasyon** ' u seçin. **Otomasyon** seçimi, programınızı diğer otomasyon istemcilerine da sunar. Daha fazla bilgi için bkz. [Otomasyon](../../mfc/automation.md) .
 
 - **Windows Yuvaları**
 
-   Programınızı Windows sockets desteklediğini belirtmek için bu seçeneği belirleyin. Windows Yuvaları TCP/IP ağları üzerinden iletişim kuran yazma olanak sağlar.
+   Programınızın Windows Yuvaları desteklediğini belirtmek için bu seçeneği belirleyin. Windows yuvaları, TCP/IP ağları üzerinden iletişim kuran programlar yazmanıza izin verir.
 
-   MFC DLL ile Windows yuva desteği oluşturulduğunda, [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) başlatır için yuva desteği ve MFC üst bilgi dosyası StdAfx.h AfxSock.h içerir.
+   MFC DLL 'niz Windows Sockets desteği ile oluşturulduysa, [CWinApp:: InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) yuvalar için desteği başlatır ve Stbafx. h MFC üstbilgi dosyası afxsock. h içerir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC DLL Sihirbazı](../../mfc/reference/mfc-dll-wizard.md)<br/>
-[MFC DLL Projesi Oluşturma](../../mfc/reference/creating-an-mfc-dll-project.md)
+[MFC DLL projesi oluşturma](../../mfc/reference/creating-an-mfc-dll-project.md)

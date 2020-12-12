@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_error_code_enum sınıfı'
 title: is_error_code_enum Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_error_code_enum class
 ms.assetid: cee5be2d-7c20-4cec-a352-1ab8b7d32601
-ms.openlocfilehash: 4080c62034b224a9553eca2787aa1c2f2cf69ab8
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 359f15c3d809435df81408a721a0c9ad11c1e7e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454613"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323761"
 ---
-# <a name="iserrorcodeenum-class"></a>is_error_code_enum Sınıfı
+# <a name="is_error_code_enum-class"></a>is_error_code_enum Sınıfı
 
 [Error_code](../standard-library/error-code-class.md) numaralandırması için test edilen bir tür koşulunu temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <_Enum>
@@ -26,7 +27,7 @@ template <_Enum>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türü türünde bir `error_code`nesnede [](../standard-library/type-traits.md) depolamaya uygun bir numaralandırma değeri `_Enum` ise, bu tür koşulunun bir örneği true olarak tutulur.
+Türü türünde bir [](../standard-library/type-traits.md) `_Enum` nesnede depolamaya uygun bir numaralandırma değeri ise, bu tür koşulunun bir örneği true olarak tutulur `error_code` .
 
 Kullanıcı tanımlı türler için bu türe uzmanlık eklemek için izin verilir.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_abstract sınıfı'
 title: is_abstract Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_abstract class
 - is_abstract
 ms.assetid: 8867f660-3434-404c-ba90-c26607a5e0d2
-ms.openlocfilehash: 57b2413e673f92e5258bee5711db2870e2b58a11
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 9b2fe31d2f4e742381c4e2e76a668d4e68e76b75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448984"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323893"
 ---
-# <a name="isabstract-class"></a>is_abstract Sınıfı
+# <a name="is_abstract-class"></a>is_abstract Sınıfı
 
 Türün soyut sınıf olup olmadığını sınar.
 
@@ -32,7 +33,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri en az bir saf sanal işlevi olan bir sınıfdaysa, tür koşulu true, aksi takdirde false değerini alır.
+*Tür değeri* en az bir saf sanal işlevi olan bir sınıfdaysa, tür koşulu true, aksi takdirde false değerini alır.
 
 ## <a name="example"></a>Örnek
 
@@ -70,11 +71,11 @@ is_abstract<abstract> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_polymorphic Sınıfı](../standard-library/is-polymorphic-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_polymorphic sınıfı](../standard-library/is-polymorphic-class.md)

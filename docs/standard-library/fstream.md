@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; fstream&gt;'
 title: '&lt;fstream&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - fstream header
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b
-ms.openlocfilehash: 46f65f746179740f2d67dd1ada2f96ab3fb6aaf6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 98fe18306d50a9d6f1f8a360d4d29b6e865f6328
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324271"
 ---
 # <a name="ltfstreamgt"></a>&lt;fstream&gt;
 
 Dış dosyalarda depolanan diziler üzerinde Iostreams işlemlerini destekleyen birkaç sınıfı tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <fstream>
@@ -41,9 +42,9 @@ Dış dosyalarda depolanan diziler üzerinde Iostreams işlemlerini destekleyen 
 |Sınıf|Açıklama|
 |-|-|
 |[basic_filebuf](../standard-library/basic-filebuf-class.md)|Sınıf şablonu, türünde öğelerin aktarılmasını denetleyen bir akış arabelleği tanımlar `Elem` . Bu, karakter nitelikleri sınıfı tarafından `Tr` , dış dosyada depolanan öğelerin dizisine ve sonuna kadar belirlenir.|
-|[basic_fstream](../standard-library/basic-fstream-class.md)|Sınıf şablonu, [basic_filebuf](../standard-library/basic-filebuf-class.md) \<**Elem**, **Tr**> `Elem` karakter nitelikleri sınıfı tarafından belirlendiği şekilde, öğe basic_filebuf, öğelerin ve ayıklamanın bir akış arabelleğini kullanarak öğeleri ve ayıklamayı ve kodlanmış nesneleri denetler `Tr` .|
-|[basic_ifstream](../standard-library/basic-ifstream-class.md)|Sınıf şablonu, sınıf [basic_filebuf](../standard-library/basic-filebuf-class.md) \<**Elem**, **Tr**> `Elem` nitelikleri sınıfı tarafından belirlendiği şekilde, öğe basic_filebuf bir Stream arabelleğinden öğelerin ve kodlanmış nesnelerin ayıklanmasını denetleyen bir nesne tanımlar `Tr` .|
-|[basic_ofstream](../standard-library/basic-ofstream-class.md)|Sınıf şablonu, öğe ve kodlanmış nesnelerin, [basic_filebuf](../standard-library/basic-filebuf-class.md) \<**Elem**, **Tr**> `Elem` karakter nitelikleri sınıfı tarafından belirlenen türdeki öğelerle basic_filebuf bir akış arabelleğine eklenmesini denetleyen bir nesneyi tanımlar `Tr` .|
+|[basic_fstream](../standard-library/basic-fstream-class.md)|Sınıf şablonu, [](../standard-library/basic-filebuf-class.md) \<**Elem**, **Tr**> `Elem` karakter nitelikleri sınıfı tarafından belirlendiği şekilde, öğe basic_filebuf, öğelerin ve ayıklamanın bir akış arabelleğini kullanarak öğeleri ve ayıklamayı ve kodlanmış nesneleri denetler `Tr` .|
+|[basic_ifstream](../standard-library/basic-ifstream-class.md)|Sınıf şablonu, sınıf [](../standard-library/basic-filebuf-class.md) \<**Elem**, **Tr**> `Elem` nitelikleri sınıfı tarafından belirlendiği şekilde, öğe basic_filebuf bir Stream arabelleğinden öğelerin ve kodlanmış nesnelerin ayıklanmasını denetleyen bir nesne tanımlar `Tr` .|
+|[basic_ofstream](../standard-library/basic-ofstream-class.md)|Sınıf şablonu, öğe ve kodlanmış nesnelerin, [](../standard-library/basic-filebuf-class.md) \<**Elem**, **Tr**> `Elem` karakter nitelikleri sınıfı tarafından belirlenen türdeki öğelerle basic_filebuf bir akış arabelleğine eklenmesini denetleyen bir nesneyi tanımlar `Tr` .|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

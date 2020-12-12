@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: hash_set Sınıfı'
 title: hash_set Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -86,12 +87,12 @@ helpviewer_keywords:
 - stdext::hash_set::upper_bound
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
-ms.openlocfilehash: 01076d29a18a2b051695955e9409d8b77d22c313
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 36bcb0e1f35fd8012ad1398a481bdae17b6d1424
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561186"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324102"
 ---
 # <a name="hash_set-class"></a>hash_set Sınıfı
 
@@ -100,7 +101,7 @@ ms.locfileid: "88561186"
 
 Kapsayıcı sınıfı hash_set, C++ standart kitaplığının bir uzantısıdır ve içerdiği öğelerin değerlerinin benzersiz olduğu ve anahtar değerler olarak kullanıldığı bir koleksiyondaki verilerin depolanması ve hızlı bir şekilde alınması için kullanılır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Key,
@@ -140,7 +141,7 @@ Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve eklem
 
 Değerleri, anahtar ile ilişkilendirirken, uygulama tarafından karşılandıkları durumlarda seçeneğin ilişkilendirilebilir kapsayıcısı olmalıdır. hash_set Hash_set öğeleri benzersizdir ve kendi sıralama anahtarları olarak görev yapar. Bu tür bir yapı modeli, sözcüklerin yalnızca bir defa geçebildiği sıralı bir sözcükler listesindedir. Sözcüklerin birden çok örneğine izin veriliyorsa, hash_multiset uygun kapsayıcı yapısı olur. Değerlerin benzersiz anahtar sözcükler listesine eklenmesi gerekiyorsa, bu verileri içeren bir hash_map uygun bir yapı olacaktır. Bunun yerine anahtarlar benzersiz değilse, bir hash_multimap tercih edilen kapsayıcı olur.
 
-Hash_set, value_compare türünde depolanan bir karma nesne çağırarak denetlediği diziyi sıralar `Traits` . [value_compare](#value_compare) Bu saklı nesneye [key_comp](#key_comp)üye işlevi çağırarak erişilebilir. Böyle bir işlev nesnesi, *hash_compare<anahtarı, daha az \<Key> >* olan bir nesne ile aynı şekilde davranmalıdır. Özellikle, Key türündeki tüm değerler için `key` , Call nitelik (), `key` size_t türündeki değerlerin bir dağılımını verir.
+Hash_set, value_compare türünde depolanan bir karma nesne çağırarak denetlediği diziyi sıralar `Traits` . [](#value_compare) Bu saklı nesneye [key_comp](#key_comp)üye işlevi çağırarak erişilebilir. Böyle bir işlev nesnesi, *hash_compare<anahtarı, daha az \<Key> >* olan bir nesne ile aynı şekilde davranmalıdır. Özellikle, Key türündeki tüm değerler için `key` , Call nitelik (), `key` size_t türündeki değerlerin bir dağılımını verir.
 
 Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşul *f*( *x*, *y*) iki bağımsız değişken nesnesi olan x ve y ve true ya da false dönüş değerine sahip bir işlev nesnesidir. İkili koşul geri dönüşsüz, antisimetrik ve geçişli ve denklik geçişli ise, hash_set uygulanan bir sıralama katı zayıf bir sıradır, burada iki nesne *x* ve *y* , her ikisi de *f*( *x*, *y*) ve *f*( *y*, *x*) false olduğunda denk olarak tanımlanır. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
@@ -191,7 +192,7 @@ Hash_set Sınıfı tarafından verilen yineleyici çift yönlü bir yineleyicidi
 |[erer](#end)|İçindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `hash_set` .|
 |[equal_range](#equal_range)|`hash_set`Belirtilen anahtardan daha büyük bir anahtarla ve anahtarından bir anahtarla `hash_set` eşit veya ondan daha büyük olan bir anahtarla ilk öğesine kadar yineleyicilerin bir çiftini döndürür.|
 |[silme](#erase)|Belirtilen konumlardan bir öğeyi veya öğe aralığını kaldırır `hash_set` veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
-|[find](#find)|İçindeki bir öğenin `hash_set` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
+|[bilgi](#find)|İçindeki bir öğenin `hash_set` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnenin bir kopyasını döndürür `hash_set` .|
 |[ekleyin](#insert)|İçine bir öğe veya öğe aralığı ekler `hash_set` .|
 |[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır `hash_set` .|
@@ -229,9 +230,9 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 
 ### <a name="remarks"></a>Açıklamalar
 
-`allocator_type` , şablon parametre *ayırıcısı*için bir eş anlamlı.
+`allocator_type` , şablon parametre *ayırıcısı* için bir eş anlamlı.
 
-*Ayırıcı*hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
+*Ayırıcı* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -856,7 +857,7 @@ iterator emplace(
 Zaten bu öğeyi veya daha genel bir öğeyi içermiyorsa, bu öğe için [hash_set](../standard-library/hash-set-class.md) eklenecek öğenin değeri, `hash_set` anahtarı equivalently sıralı bir öğe.
 
 *_Where*\
-Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *_Where*hemen sonrasında, ekleme, logaritmik bir süre yerine, sabit zamanlı olarak ortaya çıkabilir.)
+Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *_Where* hemen sonrasında, ekleme, logaritmik bir süre yerine, sabit zamanlı olarak ortaya çıkabilir.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -864,7 +865,7 @@ Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *_Where*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekleme noktası *_Where*hemen ardından, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak meydana gelebilir.
+Ekleme noktası *_Where* hemen ardından, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak meydana gelebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1026,7 +1027,7 @@ Aranan hash_set öğenin sıralama anahtarıyla Karşılaştırılacak bağıms�
 
 İlk anahtarın [lower_bound](../standard-library/set-class.md#lower_bound) ve ikincisi anahtarın [upper_bound](../standard-library/set-class.md#upper_bound) olduğu yineleyiciler çifti.
 
-Üye işlevi tarafından döndürülen bir çiftin PR 'nin ilk Yineleyici öğesine erişmek için kullanın `pr` . **ilk**olarak, alt sınır Yineleyici için başvuru yapmak üzere \* ( `pr` . **ilk**). Üye işlevi tarafından döndürülen bir çiftin ikinci Yineleyici öğesine erişmek için `pr` kullanın `pr` . **ikincisi**ve üst sınır yineleyicisini başvuru yapmak için \* ( `pr` . **ikinci**).
+Üye işlevi tarafından döndürülen bir çiftin PR 'nin ilk Yineleyici öğesine erişmek için kullanın `pr` . **ilk** olarak, alt sınır Yineleyici için başvuru yapmak üzere \* ( `pr` . **ilk**). Üye işlevi tarafından döndürülen bir çiftin ikinci Yineleyici öğesine erişmek için `pr` kullanın `pr` . **ikincisi** ve üst sınır yineleyicisini başvuru yapmak için \* ( `pr` . **ikinci**).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1300,9 +1301,9 @@ Allocator get_allocator() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şablon parametre *ayırıcısı*olan belleği yönetmek için hash_set tarafından kullanılan ayırıcı.
+Şablon parametre *ayırıcısı* olan belleği yönetmek için hash_set tarafından kullanılan ayırıcı.
 
-*Ayırıcı*hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
+*Ayırıcı* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1540,7 +1541,7 @@ key_compare key_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_set, şablon parametresi *nitelikleri*olan öğelerini sıralamak için kullandığı işlev nesnesini döndürür.
+Hash_set, şablon parametresi *nitelikleri* olan öğelerini sıralamak için kullandığı işlev nesnesini döndürür.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusuna bakın.
 
@@ -1552,7 +1553,7 @@ Saklı nesne, üye işlevini tanımlar:
 
 Bu, **`true`** `_xVal` önceki ve sıralama düzeninde eşit değilse döndürür `_yVal` .
 
-Hem [key_compare](#key_compare) hem de [value_compare](#value_compare) şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem [key_compare](#key_compare) hem de [value_compare](#value_compare) şablon parametresi *nitelikleri* için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 
@@ -1616,11 +1617,11 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare` , şablon parametresi *nitelikleri*için bir eş anlamlı.
+`key_compare` , şablon parametresi *nitelikleri* için bir eş anlamlı.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusuna bakın.
 
-Hem hem de `key_compare` [value_compare](#value_compare) şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de, farklı oldukları, eşleme ve multimap sınıfları ile uyumluluk için, aynı oldukları küme ve çoklu küme sınıfları için sağlanır.
+Hem hem de `key_compare` [value_compare](#value_compare) şablon parametresi *nitelikleri* için eş anlamlı olduğunu unutmayın. Her iki tür de, farklı oldukları, eşleme ve multimap sınıfları ile uyumluluk için, aynı oldukları küme ve çoklu küme sınıfları için sağlanır.
 
 ### <a name="example"></a>Örnek
 
@@ -1639,11 +1640,11 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type` , şablon parametre *anahtarı*için bir eş anlamlı.
+`key_type` , şablon parametre *anahtarı* için bir eş anlamlı.
 
-*Anahtar*hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
+*Anahtar* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
 
-Hem hem de `key_type` [value_type](#value_type) şablon parametresi *anahtarı*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem hem de `key_type` [value_type](#value_type) şablon parametresi *anahtarı* için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 
@@ -2301,9 +2302,9 @@ value_compare value_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hash_set, şablon parametresi *karşılaştırma*olan öğelerini sıralamak için kullandığı işlev nesnesini döndürür.
+Hash_set, şablon parametresi *karşılaştırma* olan öğelerini sıralamak için kullandığı işlev nesnesini döndürür.
 
-*Karşılaştırma*hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
+*Karşılaştırma* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2313,7 +2314,7 @@ Saklı nesne, üye işlevini tanımlar:
 
 Bu, **`true`** `_xVal` önceki ve sıralama düzeninde eşit değilse döndürür `_yVal` .
 
-Hem [value_compare](../standard-library/set-class.md#value_compare) hem de [Key_compare](../standard-library/set-class.md#key_compare) şablon parametresi *karşılaştırması*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem [value_compare](../standard-library/set-class.md#value_compare) hem de [Key_compare](../standard-library/set-class.md#key_compare) şablon parametresi *karşılaştırması* için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 
@@ -2377,11 +2378,11 @@ typedef key_compare value_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_compare` , şablon parametresi *nitelikleri*için bir eş anlamlı.
+`value_compare` , şablon parametresi *nitelikleri* için bir eş anlamlı.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_set Sınıfı](../standard-library/hash-set-class.md) konusuna bakın.
 
-Hem [key_compare](#key_compare) hem de `value_compare` şablon parametresi *nitelikleri*için eş anlamlıların olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem [key_compare](#key_compare) hem de `value_compare` şablon parametresi *nitelikleri* için eş anlamlıların olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 

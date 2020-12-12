@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: BSCMAKE hatası BK1503'
 title: BSCMAKE Hatası BK1503
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1503
 ms.assetid: e6582344-b91e-486f-baf3-4f9028d83c3b
-ms.openlocfilehash: e0f05b3979024cb053394c51fa9337197b5de7bf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0e789aa54241df5245f4c3a02a9307a97d51730c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197866"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323005"
 ---
 # <a name="bscmake-error-bk1503"></a>BSCMAKE Hatası BK1503
 
@@ -25,4 +26,4 @@ Soruna 64MB 'den büyük bir. bsc dosyası neden olduysa, giriş olarak. sbr dos
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[BSCMAKE Seçenekleri](../../build/reference/bscmake-options.md)
+[BSCMAKE seçenekleri](../../build/reference/bscmake-options.md)

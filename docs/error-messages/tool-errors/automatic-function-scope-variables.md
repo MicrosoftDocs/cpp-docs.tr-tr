@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: otomatik (işlev kapsamı) değişkenleri'
 title: Otomatik (işlev kapsamı) değişkenleri
 ms.date: 04/22/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - functions [C++], scope
 - scope, declared within functions
 ms.assetid: 6e1a14c2-1fb0-4937-8628-8d963cc35ed4
-ms.openlocfilehash: ec01f280c9de314ce670cae590c9a6917e9c0f07
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 666a59ce6ebb9e8d011216f87ca45b49eabbc766
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323018"
 ---
 # <a name="automatic-function-scope-variables"></a>Otomatik (işlev kapsamı) değişkenleri
 
@@ -55,4 +56,4 @@ void test(void) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlayıcı Araçları hatası LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)
+[Bağlayıcı araçları hatası LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)

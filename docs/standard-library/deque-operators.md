@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; deque &gt; işleçleri'
 title: '&lt;deque &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: d91fe64e7d06a80402a0a540be8f63d98ea96d37
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f162a234aec66982e274755e7898cbbc1c63ab22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222491"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324567"
 ---
 # <a name="ltdequegt-operators"></a>&lt;deque &gt; işleçleri
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki deque nesnesinin, sağ taraftaki nesnenin deque nesnesine eşit olup olmadığını sınar.
 
@@ -76,7 +77,7 @@ int main( )
 The deques are not equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 İşlecin sol tarafındaki en que nesnenin sağ taraftaki nesneden daha az olup olmadığını sınar.
 
@@ -131,7 +132,7 @@ int main( )
 Deque c1 is less than deque c2.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 İşlecin sol tarafındaki deque nesnesinin, sağ taraftaki en que nesneden küçük veya ona eşit olup olmadığını sınar.
 
@@ -186,7 +187,7 @@ int main( )
 Deque c1 is less than or equal to deque c2.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 İşlecin sol tarafındaki deque nesnesinin, sağ taraftaki nesnenin deque nesnesine eşit olup olmadığını sınar.
 
@@ -244,7 +245,7 @@ The deques are equal.
 The deques are not equal.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 İşlecin sol tarafındaki en que nesnenin sağ taraftaki nesneden daha büyük olup olmadığını sınar.
 
@@ -300,7 +301,7 @@ int main( )
 Deque c1 is greater than deque c2.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 İşlecin sol tarafındaki deque nesnesinin, sağ taraftaki en que nesneden büyük veya ona eşit olup olmadığını sınar.
 

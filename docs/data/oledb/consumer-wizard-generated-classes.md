@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: tüketici Wizard-Generated sınıfları'
 title: Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
 ms.date: 05/09/2019
 helpviewer_keywords:
 - user record classes in OLE DB consumer
 ms.assetid: dba0538f-2afe-4354-8cbb-f202ea8ade5a
-ms.openlocfilehash: 5c8a975b2f4a8ae3285f035e7b708c5026f5f480
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 13b8b56564ec0acaba342ffd55f8dd5c9b94accb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924592"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323280"
 ---
 # <a name="consumer-wizard-generated-classes"></a>Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
 
@@ -23,7 +24,7 @@ ATL OLE DB Tüketici Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz
 
 Bir tüketici oluşturmak için **ATL OLE DB Tüketici Sihirbazı 'nı** kullandığınızda, OLE DB şablonlarını veya OLE DB özniteliklerini kullanma seçeneğiniz vardır. Her iki durumda da, sihirbaz bir komut sınıfı ve bir kullanıcı kayıt sınıfı oluşturur. Komut sınıfı, sihirbazda belirttiğiniz veri kaynağını ve satır kümesini açmak için kod içerir. Kullanıcı kayıt sınıfı, seçtiğiniz veritabanı tablosu için bir sütun eşlemesi içerir. Ancak, oluşturulan kod her durumda farklılık gösterir:
 
-- Şablonlu bir tüketici seçerseniz, sihirbaz bir komut sınıfı ve bir kullanıcı kayıt sınıfı oluşturur. Komut sınıfı, sihirbazdaki **sınıf** kutusuna girdiğiniz ada sahip olur (örneğin, `CProducts` ) ve Kullanıcı kayıt sınıfı " *ClassName* erişimcisi" biçiminde bir ada sahip olur (örneğin, `CProductsAccessor` ). Her iki sınıf de tüketicinin başlık dosyasına yerleştirilir.
+- Şablonlu bir tüketici seçerseniz, sihirbaz bir komut sınıfı ve bir kullanıcı kayıt sınıfı oluşturur. Komut sınıfı, sihirbazdaki **sınıf** kutusuna girdiğiniz ada sahip olur (örneğin, `CProducts` ) ve Kullanıcı kayıt sınıfı "*ClassName* erişimcisi" biçiminde bir ada sahip olur (örneğin, `CProductsAccessor` ). Her iki sınıf de tüketicinin başlık dosyasına yerleştirilir.
 
 - Öznitelikli bir tüketici seçerseniz, Kullanıcı kayıt sınıfı "_ *ClassName* erişimcisi" biçiminde bir ada sahip olur ve eklenir. Diğer bir deyişle, yalnızca komut sınıfını metin düzenleyicisinde görüntüleyebileceksiniz; yalnızca eklenen kod olarak Kullanıcı kayıt sınıfını görüntüleyebilirsiniz. Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz. [eklenen kodda hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).
 
@@ -88,7 +89,7 @@ public:
 
 ### <a name="rowset-properties"></a>Satır kümesi özellikleri
 
-Sonra sihirbaz satır kümesi özelliklerini ayarlar. ATL OLE DB tüketicisi sihirbazında **değişiklik** , **ekleme** veya **silme** seçeneğini belirlediyseniz uygun Özellikler burada ayarlanır (DBPROP_IRowsetChange her zaman ayarlanır, sonra bir veya daha fazla DBPROPVAL_UP_CHANGE, DBPROPVAL_UP_INSERT ve/veya DBPROPVAL_UP_DELETE sırasıyla).
+Sonra sihirbaz satır kümesi özelliklerini ayarlar. ATL OLE DB tüketicisi sihirbazında **değişiklik**, **ekleme** veya **silme** seçeneğini belirlediyseniz uygun Özellikler burada ayarlanır (DBPROP_IRowsetChange her zaman ayarlanır, sonra bir veya daha fazla DBPROPVAL_UP_CHANGE, DBPROPVAL_UP_INSERT ve/veya DBPROPVAL_UP_DELETE sırasıyla).
 
 ```cpp
 void GetRowsetProperties(CDBPropSet* pPropSet)
@@ -150,7 +151,7 @@ class CProducts : public CCommand<CAccessor<CProductsAccessor>>
 
 ## <a name="attribute-injected-user-record-classes"></a>Attribute-Injected Kullanıcı kaydı sınıfları
 
-Veritabanı özniteliklerini ( [db_command](../../windows/attributes/db-command.md) veya [db_table](../../windows/attributes/db-table.md)) kullanarak bir OLE DB tüketicisi oluşturursanız, öznitelikler "_ *ClassName* erişimcisi" biçiminde bir kullanıcı kayıt sınıfı ekler. Örneğin, komut sınıfınızı adlandırdıysanız `COrders` , Kullanıcı kayıt sınıfı olur `_COrdersAccessor` . Kullanıcı kayıt sınıfı **sınıf görünümü** görünmesine karşın, Çift tıklamak bunun yerine üstbilgi dosyasındaki komuta veya tablo sınıfına gider. Bu durumlarda, öznitelik eklenen kodu görüntüleyerek yalnızca Kullanıcı kayıt sınıfının gerçek bildirimini görüntüleyebilirsiniz.
+Veritabanı özniteliklerini ([db_command](../../windows/attributes/db-command.md) veya [db_table](../../windows/attributes/db-table.md)) kullanarak bir OLE DB tüketicisi oluşturursanız, öznitelikler "_ *ClassName* erişimcisi" biçiminde bir kullanıcı kayıt sınıfı ekler. Örneğin, komut sınıfınızı adlandırdıysanız `COrders` , Kullanıcı kayıt sınıfı olur `_COrdersAccessor` . Kullanıcı kayıt sınıfı **sınıf görünümü** görünmesine karşın, Çift tıklamak bunun yerine üstbilgi dosyasındaki komuta veya tablo sınıfına gider. Bu durumlarda, öznitelik eklenen kodu görüntüleyerek yalnızca Kullanıcı kayıt sınıfının gerçek bildirimini görüntüleyebilirsiniz.
 
 Öznitelikli tüketicilerle Yöntemler ekler veya geçersiz kılındıysanız olası zorluklar olabilir. Örneğin, `_COrdersAccessor` bildirime bir Oluşturucu ekleyebilirsiniz `COrders` , ancak bu, gerçekte eklenen sınıfa bir Oluşturucu ekliyor `COrdersAccessor` . Bu tür bir Oluşturucu sütunları/parametreleri başlatabilir, ancak nesneyi doğrudan örneklemediğinden bu şekilde bir kopya Oluşturucu oluşturamazsınız `COrdersAccessor` . Doğrudan sınıfında bir oluşturucuya (veya başka bir yönteme) ihtiyacınız varsa `COrders` , öğesinden türeten yeni bir sınıf tanımlamanız `COrders` ve gerekli yöntemleri eklemeniz önerilir.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: enable_if sınıfı'
 title: enable_if Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - enable_if class
 - enable_if
 ms.assetid: c6b8d41c-a18f-4e30-a39e-b3aa0e8fd926
-ms.openlocfilehash: 1017fc315a4440350a0190cf4b40e644cda16876
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 89bd78113a9f6ea9d94a69decccd58c7953e4a8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324468"
 ---
 # <a name="enable_if-class"></a>enable_if Sınıfı
 
 SFıNAE aşırı yükleme çözümlemesi için bir türün örneğini koşullu olarak oluşturur. İç içe geçmiş typedef bulunur `enable_if<Condition,Type>::type` — ve yalnızca ise, için bir eş anlamlı olur `Type` `Condition` **`true`** .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <bool B, class T = void>
@@ -35,7 +36,7 @@ Sonuç türünün varlığını belirleyen değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*B* true ise `enable_if<B, T>` *T*için bir eş anlamlı olan "Type" adlı iç içe geçmiş bir typedef öğesine sahiptir.
+*B* true ise `enable_if<B, T>` *T* için bir eş anlamlı olan "Type" adlı iç içe geçmiş bir typedef öğesine sahiptir.
 
 *B* yanlış ise, `enable_if<B, T>` "tür" adlı iç içe typedef yoktur.
 
@@ -101,13 +102,13 @@ yourfunction(args, typename enable_if<your_condition, void **>::type = nullptr) 
 }
 ```
 
-Ayrıca, Senaryo 2 sıradan oluşturucular için de kullanılabilir.  Ancak, ek parametreler almadıklarından, dönüştürme işleçleri için çalışmaz.  Ayrıca, fazladan parametre eklemek [variadic](../cpp/ellipses-and-variadic-templates.md) işlev parametre paketini çıkarılamayan bir bağlam yapar ve bu nedenle amacını erteler `enable_if` .
+Ayrıca, Senaryo 2 sıradan oluşturucular için de kullanılabilir.  Ancak, ek parametreler almadıklarından, dönüştürme işleçleri için çalışmaz.  Ayrıca, fazladan parametre eklemek [](../cpp/ellipses-and-variadic-templates.md) işlev parametre paketini çıkarılamayan bir bağlam yapar ve bu nedenle amacını erteler `enable_if` .
 
 Senaryo 3, adı kullanır `Dummy` , ancak isteğe bağlıdır. Yalnızca " `typename = typename` " çalışır, ancak tuhaf göründüğünü düşünüyorsanız, "kukla" adı kullanabilirsiniz; işlev tanımında de kullanılabilecek bir tane kullanmayın. Bir tür belirtmezseniz `enable_if` , varsayılan olarak void olur ve ne olduğunu merak etmeyin `Dummy` . Bu, dönüştürme işleçleri ve [değişen sayıda bağımsız](../cpp/ellipses-and-variadic-templates.md) Oluşturucu dahil her şey için geçerlidir.
 
 Senaryo 4, dönüş türleri olmayan oluşturucular içinde çalışarak Senaryo 1 ' in sarmalama sınırlamasını çözer.  Ancak Senaryo 4, her zaman kullanılabilir olmayan Şablonsuz işlev bağımsız değişkenleriyle sınırlandırılmıştır.  (Şablonlu işlev bağımsız değişkeninde Senaryo 4 kullanılması, şablon bağımsız değişkeni üzerinde çalışmaya engel olur.)
 
-`enable_if`güçlüdür, ancak kötüye kullanılan ise tehlikeli olur.  Amaç, aşırı yükleme çözünürlüğünden önce adayları bir bütün hale getirmek olduğundan, bu kötü amaçlı olduğunda, etkileri çok karmaşık olabilir.  Bazı öneriler aşağıda verilmiştir:
+`enable_if` güçlüdür, ancak kötüye kullanılan ise tehlikeli olur.  Amaç, aşırı yükleme çözünürlüğünden önce adayları bir bütün hale getirmek olduğundan, bu kötü amaçlı olduğunda, etkileri çok karmaşık olabilir.  Bazı öneriler aşağıda verilmiştir:
 
 - `enable_if`Derleme zamanında uygulamalar arasında seçim yapmak için kullanmayın. İçin bir ve için bir tane kullanmayın `enable_if` `CONDITION` `!CONDITION` .  Bunun yerine, verilen yineleyicilerin güçlerine bağlı olarak uygulamaları seçen bir algoritma gibi bir *etiket gönderme* modelini kullanın.
 
@@ -127,7 +128,7 @@ void func(const pair<string, string>&);
 func(make_pair("foo", "bar"));
 ```
 
-Bu örnekte, `make_pair("foo", "bar")` döndürür `pair<const char *, const char *>` . Aşırı yükleme çözümünün, istediğinizi belirlemesi `func()` gerekir. `pair<A, B>`, ' den örtük olarak dönüştürme yapıcısına sahiptir `pair<X, Y>` .  Bu yeni değil — C++ 98 ' de. Ancak, C++ 98/03 ' de örtük olarak dönüştürme oluşturucunun imzası, olsa bile, her zaman vardır `pair<int, int>(const pair<const char *, const char *>&)` .  Aşırı yükleme çözümlemesi `const char *` , örtülü olarak dönüştürülebilir olmadığından **`int`** ve yalnızca imzalara bakıyor, işlev tanımlarının örneklendirilmesinden önce, bu oluşturucuyu bir örnek oluşturma girişiminde bulunur.  Bu nedenle, imzaların hem hem de öğesine dönüştürülmesi için, örnek kod belirsizdir `pair<const char *, const char *>` `pair<int, int>` `pair<string, string>` .
+Bu örnekte, `make_pair("foo", "bar")` döndürür `pair<const char *, const char *>` . Aşırı yükleme çözümünün, istediğinizi belirlemesi `func()` gerekir. `pair<A, B>` , ' den örtük olarak dönüştürme yapıcısına sahiptir `pair<X, Y>` .  Bu yeni değil — C++ 98 ' de. Ancak, C++ 98/03 ' de örtük olarak dönüştürme oluşturucunun imzası, olsa bile, her zaman vardır `pair<int, int>(const pair<const char *, const char *>&)` .  Aşırı yükleme çözümlemesi `const char *` , örtülü olarak dönüştürülebilir olmadığından **`int`** ve yalnızca imzalara bakıyor, işlev tanımlarının örneklendirilmesinden önce, bu oluşturucuyu bir örnek oluşturma girişiminde bulunur.  Bu nedenle, imzaların hem hem de öğesine dönüştürülmesi için, örnek kod belirsizdir `pair<const char *, const char *>` `pair<int, int>` `pair<string, string>` .
 
 C++ 11, `enable_if` `pair<A, B>(const pair<X, Y>&)` **yalnızca** `const X&` örtülü olarak dönüştürülebilir `A` ve `const Y&` örtülü olarak dönüştürülebilir `B` olduğundan emin olmak için kullanarak bu belirsizliği ortadan çözülür.  Bu, aşırı yükleme çözümünün, `pair<const char *, const char *>` ' a dönüştürülebilir olmayan ve uygun olan aşırı yüklemeye göre belirlenmesini sağlar `pair<int, int>` `pair<string, string>` .
 

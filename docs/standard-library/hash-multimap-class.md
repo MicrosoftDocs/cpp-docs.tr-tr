@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: hash_multimap sınıfı'
 title: hash_multimap Sınıfı
 ms.date: 10/18/2018
 f1_keywords:
@@ -86,12 +87,12 @@ helpviewer_keywords:
 - stdext::hash_multimap::upper_bound
 - stdext::hash_multimap::value_comp
 ms.assetid: f41a6db9-67aa-43a3-a3c5-dbfe9ec3ae7d
-ms.openlocfilehash: 089204ac77403923d38f198d53b3ff711e6a4963
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b8cbf11bf633940140fb9a90b58ee1128b9efca6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560835"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324115"
 ---
 # <a name="hash_multimap-class"></a>hash_multimap Sınıfı
 
@@ -100,7 +101,7 @@ ms.locfileid: "88560835"
 
 Kapsayıcı sınıfı hash_multimap, C++ standart kitaplığı 'nın bir uzantısıdır ve her bir öğenin, değeri benzersiz olması gereken bir sıralama anahtarı ve ilişkili bir veri değeri olan bir çifte veri depolama ve hızlı şekilde alınması için kullanılır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Key,
@@ -119,7 +120,7 @@ Hash_multimap depolanacak anahtar veri türü.
 Hash_multimap depolanacak öğe veri türü.
 
 *Lerdir*\
-İki işlev nesnesi içeren tür, iki öğe değerini, öğelerin *Traits* bir birli koşul eşleme anahtar değerleri olan bir karma işlevi ve türün işaretsiz tamsayılar olan bir karma işlevini tespit etmek için sıralama anahtarları olarak karşılaştırabilen sınıf niteliklerinden biridir `size_t` . Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key>>` varsayılan değerdir.
+İki işlev nesnesi içeren tür, iki öğe değerini, öğelerin  bir birli koşul eşleme anahtar değerleri olan bir karma işlevi ve türün işaretsiz tamsayılar olan bir karma işlevini tespit etmek için sıralama anahtarları olarak karşılaştırabilen sınıf niteliklerinden biridir `size_t` . Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key>>` varsayılan değerdir.
 
 *Öğe*\
 Hash_multimap, bellek ayırma ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değerdir `allocator<pair <const Key, Type>>` .
@@ -146,7 +147,7 @@ Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve eklem
 
 Değerleri, anahtar ile ilişkilendirirken, uygulama tarafından karşılandıkları durumlarda seçeneğin ilişkilendirilebilir kapsayıcısı olmalıdır. hash_multimap Bu tür bir yapı için model, mesela açıklamalar sağlayan dize değerleriyle ilişkili anahtar sözcüklerin sıralı bir listesidir, burada sözcükler her zaman benzersiz olarak tanımlanmamıştır. Bunun yerine, anahtar sözcükler benzersiz olacak şekilde benzersiz şekilde tanımlanmışsa, bir hash_map seçim kapsayıcısı olur. Diğer taraftan, yalnızca sözcüklerin listesi depolanmakta olduğundan, doğru kapsayıcı hash_set. Sözcüklerin birden çok örneğine izin veriliyorsa, hash_multiset uygun kapsayıcı yapısı olur.
 
-Hash_multimap, value_compare türünde depolanan bir karma nesne çağırarak denetlediği diziyi sıralar `Traits` . [value_compare](../standard-library/value-compare-class.md) Bu saklı nesneye [key_comp](../standard-library/hash-map-class.md#key_comp)üye işlevi çağırarak erişilebilir. Böyle bir işlev nesnesi hash_compare sınıfının bir nesnesi ile aynı şekilde davranmalıdır [hash_compare](../standard-library/hash-compare-class.md) `<Key, less<Key>>` . Özellikle, türündeki tüm değerler için `Key` `Key` , çağrı `Traits (Key)` türündeki değerlerin bir dağılımını verir `size_t` .
+Hash_multimap, value_compare türünde depolanan bir karma nesne çağırarak denetlediği diziyi sıralar `Traits` . [](../standard-library/value-compare-class.md) Bu saklı nesneye [key_comp](../standard-library/hash-map-class.md#key_comp)üye işlevi çağırarak erişilebilir. Böyle bir işlev nesnesi hash_compare sınıfının bir nesnesi ile aynı şekilde davranmalıdır [](../standard-library/hash-compare-class.md) `<Key, less<Key>>` . Özellikle, türündeki tüm değerler için `Key` `Key` , çağrı `Traits (Key)` türündeki değerlerin bir dağılımını verir `size_t` .
 
 Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşul f (x, y) iki bağımsız değişken nesnesine `x` ve `y` veya dönüş değerine sahip bir işlev nesnesidir **`true`** **`false`** . İkili koşul geri dönüşsüz, antisimetrik ve geçişli ve denklik geçişli ise, hash_multimap uygulanan bir sıralama katı zayıf bir sıradır. Bu, iki nesne `x` ve `y` her ikisi de f (x, y) ve f (y, x) olduğunda eşdeğer olarak tanımlanır **`false`** . Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
@@ -197,7 +198,7 @@ Hash_multimap sınıfı tarafından verilen yineleyici çift yönlü bir yineley
 |[erer](#end)|İçindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `hash_multimap` .|
 |[equal_range](#equal_range)|İçindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `hash_multimap` .|
 |[silme](#erase)|Belirtilen konumlardan bir öğeyi veya öğe aralığını kaldırır `hash_multimap`|
-|[find](#find)|İçindeki bir öğenin `hash_multimap` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
+|[bilgi](#find)|İçindeki bir öğenin `hash_multimap` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnenin bir kopyasını döndürür `hash_multimap` .|
 |[ekleyin](#insert)|Belirtilen konuma bir öğe veya öğe aralığı ekler `hash_multimap` .|
 |[key_comp](#key_comp)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır `hash_multimap` .|
@@ -566,7 +567,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 Bir tür, `const_reverse_iterator` bir öğenin değerini değiştiremez ve hash_multimap ters bir şekilde yinelemek için kullanılır.
 
-`const_reverse_iterator`Tarafından tanımlanan hash_multimap, [value_type](#value_type) `pair<const Key, Type>` ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan value_type nesnelerine işaret eder.
+`const_reverse_iterator`Tarafından tanımlanan hash_multimap, [](#value_type) `pair<const Key, Type>` ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan value_type nesnelerine işaret eder.
 
 Bir hash_multimap bir `const_reverse_iterator` `crIter` öğeyi işaret etmek için `->` işlecini kullanın.
 
@@ -602,7 +603,7 @@ hash_multimap sıralama anahtarı parametre anahtarıyla eşleşen bir öğe iç
 
 **[lower_bound (** `key` **), upper_bound (** `key` **))**
 
-bir anahtar değeri *anahtarına*sahiptir.
+bir anahtar değeri *anahtarına* sahiptir.
 
 ### <a name="example"></a>Örnek
 
@@ -904,7 +905,7 @@ iterator emplace_hint(
 ### <a name="parameters"></a>Parametreler
 
 *Acil*\
-[hash_multimap](../standard-library/hash-multimap-class.md) `hash_multimap` Zaten bu öğeyi (ya da daha genel olarak, anahtarı equivalently sıralı bir öğe) içermiyorsa, bir öğeyi hash_multimap içine eklenecek şekilde taşımak için kullanılan değer.
+[](../standard-library/hash-multimap-class.md) `hash_multimap` Zaten bu öğeyi (ya da daha genel olarak, anahtarı equivalently sıralı bir öğe) içermiyorsa, bir öğeyi hash_multimap içine eklenecek şekilde taşımak için kullanılan değer.
 
 *_Where*\
 Doğru ekleme noktasını aramaya başlamak için yer hakkında bir ipucu.
@@ -917,7 +918,7 @@ Doğru ekleme noktasını aramaya başlamak için yer hakkında bir ipucu.
 
 Bir öğenin [hash_multimap:: value_type](#value_type) bir çifttir, böylece bir öğe değeri, ilk bileşeni anahtar değerine eşit olan ve ikinci bileşen öğenin veri değerine eşit olan bir sıralı çift olacaktır.
 
-Ekleme noktası *_Where*hemen ardından, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak meydana gelebilir.
+Ekleme noktası *_Where* hemen ardından, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak meydana gelebilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1608,7 +1609,7 @@ Son iki `insert` üye işlevleri, eklenen değeri taşıdıklarından, her ikisi
 
 Bir öğenin [value_type](#value_type) çifttir, böylece bir öğe değeri, ilk bileşenin anahtar değere eşit olduğu ve ikinci bileşen öğenin veri değerine eşit olduğu sıralı bir çift olacaktır.
 
-Ekleme `insert` noktası *nerede*olursa, ekleme noktası, bir ipucu için, daha önce
+Ekleme `insert` noktası *nerede* olursa, ekleme noktası, bir ipucu için, daha önce
 
 ## <a name="hash_multimapiterator"></a><a name="iterator"></a> hash_multimap:: Yineleyici
 
@@ -1623,7 +1624,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 
 ### <a name="remarks"></a>Açıklamalar
 
-`iterator`Tarafından tanımlanan hash_multimap, [value_type](#value_type) `pair` \< **const Key, Type**> ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan value_type nesnelerine işaret eder.
+`iterator`Tarafından tanımlanan hash_multimap, [](#value_type) `pair` \< **const Key, Type**> ilk üyesi öğe için anahtar olan ve ikinci üye öğesi tarafından tutulan eşlenmiş veri olan value_type nesnelerine işaret eder.
 
 Bir hash_multimap bir öğe işaret eden adlı bir yineleyici başvurusu için `Iter` `->` işlecini kullanın.
 
@@ -1720,7 +1721,7 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare` , şablon parametresi *nitelikleri*için bir eş anlamlı.
+`key_compare` , şablon parametresi *nitelikleri* için bir eş anlamlı.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konusuna bakın.
 
@@ -1741,9 +1742,9 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type` , şablon parametre *anahtarı*için bir eş anlamlı.
+`key_type` , şablon parametre *anahtarı* için bir eş anlamlı.
 
-*Anahtar*hakkında daha fazla bilgi Için [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konusunun açıklamalar bölümüne bakın.
+*Anahtar* hakkında daha fazla bilgi Için [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -1857,7 +1858,7 @@ typedef Type mapped_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`mapped_type` şablon parametre *türü*için bir eş anlamlı.
+`mapped_type` şablon parametre *türü* için bir eş anlamlı.
 
 *Tür* hakkında daha fazla bilgi Için [hash_multimap sınıfı](../standard-library/hash-multimap-class.md) konusuna bakın.
 
@@ -2479,7 +2480,7 @@ Hash_multimap öğelerini sıralamak için kullandığı karşılaştırma işle
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir hash_multimap n için, iki öğe *E1* (*K1*, *D1*) ve *e2*(*K2*, *D2*), [value_type](#value_type)türündeki nesnelerdir; burada *K1* ve *K2* [key_type](#key_type) , *D1* ve *D2* [mapped_type](#mapped_type)türünde olan ve bu durumda ile *m* `m.value_comp()(e1, e2)` eşdeğerdir `m.key_comp()(k1, k2)` . Saklı nesne üye işlevini tanımlar
+Bir hash_multimap n için, iki öğe *E1* (*K1*, *D1*) ve *e2*(*K2*, *D2*), [value_type](#value_type)türündeki nesnelerdir; burada *K1* ve *K2* [key_type](#key_type) , *D1* ve *D2* [mapped_type](#mapped_type)türünde olan ve bu durumda ile  `m.value_comp()(e1, e2)` eşdeğerdir `m.key_comp()(k1, k2)` . Saklı nesne üye işlevini tanımlar
 
 `bool operator( value_type& left, value_type& right);`
 

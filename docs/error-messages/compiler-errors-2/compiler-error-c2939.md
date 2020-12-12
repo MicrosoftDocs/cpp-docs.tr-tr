@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2939'
 title: Derleyici hatası C2939
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2939
 ms.assetid: 455b050b-f2dc-4b5b-bd6a-e1f81d3d1644
-ms.openlocfilehash: 97aa24eccb5cec7d74f7f7660260fa8b5f6d8d7d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 465d2d9535a1c8f393e21b4ef48707f8e5fab89b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754621"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323031"
 ---
 # <a name="compiler-error-c2939"></a>Derleyici hatası C2939
 

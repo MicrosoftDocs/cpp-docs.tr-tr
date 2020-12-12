@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: invalid_argument sınıfı'
 title: invalid_argument Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_argument class
 ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506
-ms.openlocfilehash: 4fb15785cbff18daa1bfa9a1198a64d018383764
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 58eee3a5e56932bcd045a7e66e59e105b8921813
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323949"
 ---
 # <a name="invalid_argument-class"></a>invalid_argument Sınıfı
 

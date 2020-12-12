@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: equal_to struct'
 title: equal_to Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - equal_to function
 - equal_to struct
 ms.assetid: 8e4f2b50-b2db-48e3-b4cc-6cc03362c2a6
-ms.openlocfilehash: ac7c5a3ed8d85e6ea3ad46ec61c7968bc19cd15e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: cae0531c31396d16d447e3b0123dc679bbfd5aa6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324442"
 ---
-# <a name="equalto-struct"></a>equal_to Yapısı
+# <a name="equal_to-struct"></a>equal_to Yapısı
 
-Eşitlik işlemi gerçekleştiren bir ikili koşula (`operator==`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde eşitlik işlemini () gerçekleştiren bir ikili koşul `operator==` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,21 +41,21 @@ struct equal_to<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Destekleyen herhangi bir türü bir `operator==` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator==`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
-*Sol*\
-Eşitlik işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+Eşitlik işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Eşitlik işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+Eşitlik işleminin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left == Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator==`.
+Sonucu `Left == Right` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator==` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türündeki nesneler *türü* eşitlik karşılaştırması yapılabilir olmalıdır. Bunu gerektiren `operator==` tanımlanmış nesne kümesini eşdeğerlik ilişkisi matematik özelliklerini karşılar. Tüm yerleşik sayısal ve işaretçi türleri, bu gereksinimi karşılamak.
+Tür türündeki nesneler eşitlik ile *karşılaştırılabilir olmalıdır.* Bu, `operator==` nesne kümesinde tanımlanan öğesinin, bir denklik ilişkisinin matematik özelliklerini karşıladığından emin olmanızı gerektirir. Tüm yerleşik sayısal ve işaretçi türleri bu gereksinimi karşılar.
 
 ## <a name="example"></a>Örnek
 

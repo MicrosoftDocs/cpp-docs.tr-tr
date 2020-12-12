@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAnimateCtrl sınıfı'
 title: CAnimateCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-ms.openlocfilehash: 651b5775886374f3fcc95ab6b2cb3d892d9d77e8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fe63e30ae53e6f5b3d308c8e09f0bfbaad76b2ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87183389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322752"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl sınıfı
 
 Windows ortak animasyon denetimi işlevlerini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CAnimateCtrl : public CWnd
@@ -56,7 +57,7 @@ class CAnimateCtrl : public CWnd
 |[CAnimateCtrl:: Close](#close)|AVI klibini kapatır.|
 |[CAnimateCtrl:: Create](#create)|Bir animasyon denetimi oluşturur ve bunu bir nesneye ekler `CAnimateCtrl` .|
 |[CAnimateCtrl:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir animasyon denetimi oluşturur ve bunu bir `CAnimateCtrl` nesneye ekler.|
-|[CAnimateCtrl:: ısçalıyor](#isplaying)|Ses video Aralanmış (AVI) klibinin çalıp oynatılmadığını gösterir.|
+|[CAnimateCtrl:: ısçalıyor](#isplaying)|Audio-Video Aralanmış (AVI) klibinin çalıp oynatılmadığını gösterir.|
 |[CAnimateCtrl:: Open](#open)|Bir dosya veya kaynaktan bir AVI klibi açar ve ilk çerçeveyi görüntüler.|
 |[CAnimateCtrl::P Lay](#play)|AVI klibini ses olmadan çalar.|
 |[CAnimateCtrl:: Seek](#seek)|AVI klibinin seçili tek bir çerçevesini görüntüler.|
@@ -102,7 +103,7 @@ Kullanma hakkında daha fazla bilgi için `CAnimateCtrl` bkz. [Controls](../../m
 
 **Üstbilgi:** afxcmn. h
 
-## <a name="canimatectrlcanimatectrl"></a><a name="canimatectrl"></a>CAnimateCtrl:: CAnimateCtrl
+## <a name="canimatectrlcanimatectrl"></a><a name="canimatectrl"></a> CAnimateCtrl:: CAnimateCtrl
 
 Bir `CAnimateCtrl` nesnesi oluşturur.
 
@@ -118,7 +119,7 @@ Oluşturduğunuz nesnede başka bir işlem gerçekleştirebilmek için önce [Cr
 
 [!code-cpp[NVC_MFCControlLadenDialog#56](../../mfc/codesnippet/cpp/canimatectrl-class_1.cpp)]
 
-## <a name="canimatectrlclose"></a><a name="close"></a>CAnimateCtrl:: Close
+## <a name="canimatectrlclose"></a><a name="close"></a> CAnimateCtrl:: Close
 
 Daha önce animasyon denetiminde açılan olan avı klibini (varsa) kapatır ve bellekten kaldırır.
 
@@ -134,7 +135,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
   [CAnimateCtrl:: CAnimateCtrl](#canimatectrl)örneğine bakın.
 
-## <a name="canimatectrlcreate"></a><a name="create"></a>CAnimateCtrl:: Create
+## <a name="canimatectrlcreate"></a><a name="create"></a> CAnimateCtrl:: Create
 
 Bir animasyon denetimi oluşturur ve bunu bir nesneye ekler `CAnimateCtrl` .
 
@@ -184,7 +185,7 @@ Yukarıda listelenen pencere stillerine ek olarak, animasyon denetimine bir veya
 
   [CAnimateCtrl:: CAnimateCtrl](#canimatectrl)örneğine bakın.
 
-## <a name="canimatectrlcreateex"></a><a name="createex"></a>CAnimateCtrl:: CreateEx
+## <a name="canimatectrlcreateex"></a><a name="createex"></a> CAnimateCtrl:: CreateEx
 
 Bir denetim (alt pencere) oluşturur ve `CAnimateCtrl` nesneyle ilişkilendirir.
 
@@ -206,7 +207,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 Animasyon denetiminin stilini belirtir. Windows SDK [animasyon denetim stillerinde](/windows/win32/Controls/animation-control-styles) açıklanan pencere ve animasyon denetim stillerinin herhangi bir birleşimini uygulayın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.
@@ -222,9 +223,9 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 `CreateEx`Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın.
 
-## <a name="canimatectrlisplaying"></a><a name="isplaying"></a>CAnimateCtrl:: ısçalıyor
+## <a name="canimatectrlisplaying"></a><a name="isplaying"></a> CAnimateCtrl:: ısçalıyor
 
-Ses video Aralanmış (AVI) klibinin çalıp oynatılmadığını gösterir.
+Audio-Video Aralanmış (AVI) klibinin çalıp oynatılmadığını gösterir.
 
 ```
 BOOL IsPlaying() const;
@@ -238,7 +239,7 @@ Bir AVI klibi oynatılıyorsa doğru; Aksi takdirde, FALSE.
 
 Bu yöntem, Windows SDK açıklanan [ACM_ISPLAYING](/windows/win32/Controls/acm-isplaying) iletisini gönderir.
 
-## <a name="canimatectrlopen"></a><a name="open"></a>CAnimateCtrl:: Open
+## <a name="canimatectrlopen"></a><a name="open"></a> CAnimateCtrl:: Open
 
 Bir AVI klibi açmak ve ilk çerçevesini göstermek için bu işlevi çağırın.
 
@@ -263,7 +264,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 AVI kaynağı, animasyon denetimini oluşturan modülden yüklenir.
 
-`Open`bir avı klibinde sesi desteklemez; yalnızca sessiz avı kliplerini açabilirsiniz.
+`Open` bir avı klibinde sesi desteklemez; yalnızca sessiz avı kliplerini açabilirsiniz.
 
 Animasyon denetiminin `ACS_AUTOPLAY` stili varsa, animasyon denetimi onu açtıktan hemen sonra otomatik olarak klibi yürütmeye başlayacaktır. İş yazışmanız yürütülmeye devam ederken klibi arka planda yürütmeye devam eder. Klip oynatılmaya bittiğinde otomatik olarak yinelenir.
 
@@ -275,7 +276,7 @@ Animasyon denetiminde `ACS_TRANSPARENT` Stil varsa, ilk kare animasyon klibinde 
 
   [CAnimateCtrl:: CAnimateCtrl](#canimatectrl)örneğine bakın.
 
-## <a name="canimatectrlplay"></a><a name="play"></a>CAnimateCtrl::P Lay
+## <a name="canimatectrlplay"></a><a name="play"></a> CAnimateCtrl::P Lay
 
 Bir animasyon denetiminde bir AVI klibi oynatmak için bu işlevi çağırın.
 
@@ -309,7 +310,7 @@ Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
   [CAnimateCtrl:: CAnimateCtrl](#canimatectrl)örneğine bakın.
 
-## <a name="canimatectrlseek"></a><a name="seek"></a>CAnimateCtrl:: Seek
+## <a name="canimatectrlseek"></a><a name="seek"></a> CAnimateCtrl:: Seek
 
 AVI klibinizin tek bir çerçevesini statik olarak göstermek için bu işlevi çağırın.
 
@@ -334,7 +335,7 @@ Animasyon denetiminde `ACS_TRANSPARENT` Stil varsa, AVI klibi animasyon klibinde
 
 [CAnimateCtrl:: CAnimateCtrl](#canimatectrl)örneğine bakın.
 
-## <a name="canimatectrlstop"></a><a name="stop"></a>CAnimateCtrl:: stop
+## <a name="canimatectrlstop"></a><a name="stop"></a> CAnimateCtrl:: stop
 
 Bir animasyon denetiminde bir avı klibini çalmayı durdurmak için bu işlevi çağırın.
 

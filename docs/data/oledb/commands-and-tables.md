@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: komutlar ve tablolar'
 title: Komutlar ve Tablolar
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - tables [C++], OLE DB Consumer Templates
 - OLE DB consumer templates, command support
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
-ms.openlocfilehash: f65bd0f90832039d453d84ab9765781c30750318
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 767077af7b44b4727272fefc1c2af2f717baddd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323346"
 ---
 # <a name="commands-and-tables"></a>Komutlar ve Tablolar
 

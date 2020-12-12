@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mm_extract_si64 _mm_extracti_si64'
 title: _mm_extract_si64, _mm_extracti_si64
 ms.date: 09/02/2019
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - _mm_extracti_si64 intrinsic
 - _mm_extract_si64 intrinsic
 ms.assetid: 459fdd72-cc54-4ee5-bbd5-d2c6067a88e7
-ms.openlocfilehash: cfd7029966c29f876f0e4f671830e20e2eacc940
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 39a07c7310727de8d752c060c3d38481469ff1a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322873"
 ---
 # <a name="_mm_extract_si64-_mm_extracti_si64"></a>_mm_extract_si64, _mm_extracti_si64
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-İlk bağımsız değişkeninin düşük 64 bitinden belirtilen bitleri ayıklama yönergesiniüretir.`extrq`
+`extrq`İlk bağımsız değişkeninin düşük 64 bitinden belirtilen bitleri ayıklama yönergesini üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,7 +51,7 @@ __m128i _mm_extracti_si64(
 *İndeks*\
 'ndaki Ayıklanacak alanın dizinini belirten bir tamsayı
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 En az önemli bit içindeki ayıklanan alana sahip 128 bitlik bir alan.
 
@@ -61,17 +62,17 @@ En az önemli bit içindeki ayıklanan alana sahip 128 bitlik bir alan.
 |`_mm_extract_si64`|SSE4a|
 |`_mm_extracti_si64`|SSE4a|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iç bilgiler, `extrq` *kaynaktan*bitleri ayıklama yönergesini oluşturur. İki sürüm vardır: `_mm_extracti_si64` bu, en yakın sürümdür ve `_mm_extract_si64` tek bir sürümlerdir. Her sürüm, kendi uzunluğuna ve en az önemli bit dizinine göre tanımlanan bir bit alanı *kaynağından* ayıklar. Uzunluk ve Dizin değerleri mod 64 ' a alınır, bu nedenle hem-1 hem de 127, 63 olarak yorumlanır. (Azaltılmış) dizin ve (azaltılmış) alanı uzunluğunun toplamı 64 ' den büyükse, sonuçlar tanımsızdır. Alan uzunluğu için sıfır değeri 64 olarak yorumlanır. Alan uzunluğu ve bit dizini her ikisi de sıfırsa, *kaynak* bitleri 63:0 çıkarılır. Alan uzunluğu sıfırsa ancak bit dizini sıfır değilse, sonuçlar tanımsızdır.
+Bu iç bilgiler, `extrq` *kaynaktan* bitleri ayıklama yönergesini oluşturur. İki sürüm vardır: Bu, `_mm_extracti_si64` en yakın sürümdür ve `_mm_extract_si64` tek bir sürümlerdir. Her sürüm, kendi uzunluğuna ve en az önemli bit dizinine göre tanımlanan bir bit alanı *kaynağından* ayıklar. Uzunluk ve Dizin değerleri mod 64 ' a alınır, bu nedenle hem-1 hem de 127, 63 olarak yorumlanır. (Azaltılmış) dizin ve (azaltılmış) alanı uzunluğunun toplamı 64 ' den büyükse, sonuçlar tanımsızdır. Alan uzunluğu için sıfır değeri 64 olarak yorumlanır. Alan uzunluğu ve bit dizini her ikisi de sıfırsa, *kaynak* bitleri 63:0 çıkarılır. Alan uzunluğu sıfırsa ancak bit dizini sıfır değilse, sonuçlar tanımsızdır.
 
-Bir çağrısında `_mm_extract_si64`, *tanımlayıcı* , BITS 13:8 ' deki dizini ve BITS 5:0 ' de Ayıklanacak verilerin alan uzunluğunu içerir.
+Bir çağrısında `_mm_extract_si64` , *tanımlayıcı* , BITS 13:8 ' deki dizini ve BITS 5:0 ' de Ayıklanacak verilerin alan uzunluğunu içerir.
 
-Derleyicinin tamsayı sabitleri `_mm_extracti_si64` belirleyemediğini tespit eden bağımsız değişkenlerle birlikte çağırırsanız, derleyici bu değerleri bir XMM kaydına (*tanımlayıcısına*) paketetmek ve çağırmak `_mm_extract_si64`için kod üretir.
+`_mm_extracti_si64`Derleyicinin tamsayı sabitleri belirleyemediğini tespit eden bağımsız değişkenlerle birlikte çağırırsanız, derleyici bu değerleri BIR XMM kaydına (*tanımlayıcısına*) paketetmek ve çağırmak için kod üretir `_mm_extract_si64` .
 
-`extrq` Yönergeyle ilgili donanım desteğini öğrenmek için, ile `__cpuid` `InfoType=0x80000001` iç öğesini çağırın ve bit 6 `CPUInfo[2] (ECX)`' yı denetleyin. Yönerge destekleniyorsa bu bit 1 olur, aksi takdirde 0 olur. `extrq` Yönergeyi desteklemeyen bu iç donanımı kullanan kodu çalıştırırsanız, sonuçlar tahmin edilemez olur.
+Yönergeyle ilgili donanım desteğini öğrenmek için, `extrq` `__cpuid` ile iç öğesini çağırın `InfoType=0x80000001` ve bit 6 ' yı denetleyin `CPUInfo[2] (ECX)` . Yönerge destekleniyorsa bu bit 1 olur, aksi takdirde 0 olur. Yönergeyi desteklemeyen bu iç donanımı kullanan kodu çalıştırırsanız `extrq` , sonuçlar tahmin edilemez olur.
 
 ## <a name="example"></a>Örnek
 

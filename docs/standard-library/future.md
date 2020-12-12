@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; gelecek&gt;'
 title: '&lt;yayımlanacak&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <future>
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
-ms.openlocfilehash: b5f18de772ea2221ecbd4098b94e0b4f14c0484c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67c204f636ee9249e9c714df87a02ff6c6ff3149
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220931"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324206"
 ---
 # <a name="ltfuturegt"></a>&lt;yayımlanacak&gt;
 
@@ -17,7 +18,7 @@ ms.locfileid: "87220931"
 
 Bu üst bilgi, diğer ConcRT mekanizmalarıyla birlikte kullanabilmeniz için Eşzamanlılık Çalışma Zamanı (ConcRT) kullanır. ConcRT hakkında daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <future>
@@ -26,7 +27,7 @@ Bu üst bilgi, diğer ConcRT mekanizmalarıyla birlikte kullanabilmeniz için E�
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> **/Clr**kullanılarak derlenen kodda, bu üst bilgi engellenir.
+> **/Clr** kullanılarak derlenen kodda, bu üst bilgi engellenir.
 
 *Zaman uyumsuz bir sağlayıcı* , bir işlev çağrısının sonucunu depolar. Bir işlev çağrısının sonucunu almak için *zaman uyumsuz bir dönüş nesnesi* kullanılır. *İlişkili bir zaman uyumsuz durum* , zaman uyumsuz bir sağlayıcı ile bir veya daha fazla zaman uyumsuz dönüş nesnesi arasında iletişim sağlar
 

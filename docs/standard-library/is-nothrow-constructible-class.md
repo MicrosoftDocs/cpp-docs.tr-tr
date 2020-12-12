@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_nothrow_constructible sınıfı'
 title: is_nothrow_constructible sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_constructible
 ms.assetid: 8be3f927-283e-4d67-95a5-8bf5dc4e7a3d
-ms.openlocfilehash: e52b16965d849f992731c4ff4254fd218b944269
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0bb822a42d149a552f18ff4d1b1c723ef9b88172
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217759"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323609"
 ---
 # <a name="is_nothrow_constructible-class"></a>is_nothrow_constructible sınıfı
 
 Bir türün oluşturulabilir olup olmadığını test eder ve belirtilen bağımsız değişken türleri kullanıldığında throw olarak bilinir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T, class... Args>
@@ -30,11 +31,11 @@ struct is_nothrow_constructible;
 Sorgulanacak tür.
 
 *Args*\
-*T*yapıcısında eşleştirilecek bağımsız değişken türleri.
+*T* yapıcısında eşleştirilecek bağımsız değişken türleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür koşulunun bir örneği, *T* türü bağımsız *değişkenler*içindeki bağımsız değişken türleri kullanılarak oluşturulabilir ise true, Oluşturucu derleyicinin throw tarafından bilinmez; Aksi takdirde yanlış olur. Değişken tanımı düzgün biçimlendirilmişse tür *T* oluşturulabilir `T t(std::declval<Args>()...);` . Hem *T* hem de *args* içindeki tüm türler, tamamlanmış bir veya daha fazla türde **`void`** bir dizi olmalıdır.
+Tür koşulunun bir örneği, *T* türü bağımsız *değişkenler* içindeki bağımsız değişken türleri kullanılarak oluşturulabilir ise true, Oluşturucu derleyicinin throw tarafından bilinmez; Aksi takdirde yanlış olur. Değişken tanımı düzgün biçimlendirilmişse tür *T* oluşturulabilir `T t(std::declval<Args>()...);` . Hem *T* hem de *args* içindeki tüm türler, tamamlanmış bir veya daha fazla türde **`void`** bir dizi olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 

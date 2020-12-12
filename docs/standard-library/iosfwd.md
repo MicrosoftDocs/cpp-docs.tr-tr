@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; ıosfwd&gt;'
 title: '&lt;ıosfwd&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - iosfwd header
 ms.assetid: 964442eb-17f1-43ef-a0e0-c5bb77f9c187
-ms.openlocfilehash: e9999d43226cb5daf22ef70af636efd616d41d47
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: a622cf0350a59cd3cf070ed7524925f6293590dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470959"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323920"
 ---
 # <a name="ltiosfwdgt"></a>&lt;ıosfwd&gt;
 

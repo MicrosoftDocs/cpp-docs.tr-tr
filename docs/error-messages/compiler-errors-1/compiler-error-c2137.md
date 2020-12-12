@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2137'
 title: Derleyici hatası C2137
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2137
 ms.assetid: 984687ee-7766-4f6b-ae15-0c9a010e2366
-ms.openlocfilehash: 2bc0ed5a47900b8d64e59d1b2c745b1e51e37db4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 053c933b3ee650d1d49c230d9bfc23c656f9a709
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757481"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323083"
 ---
 # <a name="compiler-error-c2137"></a>Derleyici hatası C2137
 

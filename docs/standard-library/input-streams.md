@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. giriş akışları
 title: Giriş Akışları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,37 +8,37 @@ helpviewer_keywords:
 - input streams
 - input stream objects
 ms.assetid: f14d8954-8f8c-4c3c-8b99-14ddb3683f94
-ms.openlocfilehash: 5dc3fa0af76f73897fe1181d944eb34c8d05bc64
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f7e6d41b904b2d28893637681e3c751d24aef441
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449321"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323968"
 ---
 # <a name="input-streams"></a>Giriş Akışları
 
-Giriş akışı nesnesi bayt kaynağıdır. En önemli üç giriş akışı sınıfı IStream [](../standard-library/basic-istream-class.md), [ifstream](../standard-library/basic-ifstream-class.md)ve [ıtringstream](../standard-library/basic-istringstream-class.md)' dir.
+Giriş akışı nesnesi bayt kaynağıdır. En önemli üç giriş akışı sınıfı [IStream](../standard-library/basic-istream-class.md), [ifstream](../standard-library/basic-ifstream-class.md)ve [ıtringstream](../standard-library/basic-istringstream-class.md)' dir.
 
-Sınıf `istream` , ardışık metin modu girişi için en iyi seçenektir. Ara belleğe alınmış veya arabelleğe alınmamış `istream` işlem için sınıfın nesnelerini yapılandırabilirsiniz. Temel sınıfının `ios`tüm işlevleri ' de `istream`bulunur. Sınıfından `istream`nadiren nesne oluşturacaksınız. Bunun yerine, genellikle [ostream](../standard-library/basic-ostream-class.md)sınıfının bir `cin` nesnesi olan önceden tanımlanmış nesneyi kullanırsınız. Bazı durumlarda, program başlatıldıktan sonra diğer `cin` Stream nesnelerine atayabilirsiniz.
+`istream`Sınıf, ardışık metin modu girişi için en iyi seçenektir. `istream`Ara belleğe alınmış veya arabelleğe alınmamış işlem için sınıfın nesnelerini yapılandırabilirsiniz. Temel sınıfının tüm işlevleri ' `ios` de bulunur `istream` . Sınıfından nadiren nesne oluşturacaksınız `istream` . Bunun yerine, genellikle `cin` [ostream](../standard-library/basic-ostream-class.md)sınıfının bir nesnesi olan önceden tanımlanmış nesneyi kullanırsınız. Bazı durumlarda, `cin` Program başlatıldıktan sonra diğer Stream nesnelerine atayabilirsiniz.
 
-Sınıfı `ifstream` , disk dosyası girişini destekler. Yalnızca giriş diski dosyası gerekiyorsa, sınıfının `ifstream`bir nesnesini oluşturun. İkili veya metin modu verileri belirtebilirsiniz. Oluşturucuda bir dosya adı belirtirseniz, nesne oluşturulduğunda dosya otomatik olarak açılır. Aksi takdirde, varsayılan oluşturucuyu çağırdıktan sonra `open` işlevi kullanabilirsiniz. Birçok biçimlendirme seçeneği ve üye işlevleri nesneler için `ifstream` geçerlidir. Temel sınıfların `ios` tüm işlevleri ve `istream` ' de `ifstream`bulunur.
+`ifstream`Sınıfı, disk dosyası girişini destekler. Yalnızca giriş diski dosyası gerekiyorsa, sınıfının bir nesnesini oluşturun `ifstream` . İkili veya metin modu verileri belirtebilirsiniz. Oluşturucuda bir dosya adı belirtirseniz, nesne oluşturulduğunda dosya otomatik olarak açılır. Aksi takdirde, `open` varsayılan oluşturucuyu çağırdıktan sonra işlevi kullanabilirsiniz. Birçok biçimlendirme seçeneği ve üye işlevleri nesneler için geçerlidir `ifstream` . Temel sınıfların tüm işlevleri `ios` ve `istream` ' de bulunur `ifstream` .
 
-Kitaplık işlevi `sscanf_s`gibi `istringstream` , sınıfı bellek içi dizelerdeki girişi destekler. Null Sonlandırıcı içeren bir karakter dizisindeki verileri ayıklamak için, dizeyi ayırıp başlatın ve sonra sınıfının `istringstream`bir nesnesini oluşturun.
+Kitaplık işlevi gibi `sscanf_s` , `istringstream` sınıfı bellek içi dizelerdeki girişi destekler. Null Sonlandırıcı içeren bir karakter dizisindeki verileri ayıklamak için, dizeyi ayırıp başlatın ve sonra sınıfının bir nesnesini oluşturun `istringstream` .
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Giriş Akışı Oluşturma Nesneleri](../standard-library/constructing-input-stream-objects.md)
+[Giriş akışı nesneleri oluşturma](../standard-library/constructing-input-stream-objects.md)
 
-[Ayıklama İşleçlerini Kullanma](../standard-library/using-extraction-operators.md)
+[Ayıklama Işleçlerini kullanma](../standard-library/using-extraction-operators.md)
 
-[Ayıklama Hataları için Test Yapma](../standard-library/testing-for-extraction-errors.md)
+[Ayıklama hataları için test etme](../standard-library/testing-for-extraction-errors.md)
 
-[Giriş Akışı Manipülatörleri](../standard-library/input-stream-manipulators.md)
+[Giriş akışı düzenlemeleri](../standard-library/input-stream-manipulators.md)
 
-[Giriş Akışı Üye İşlevleri](../standard-library/input-stream-member-functions.md)
+[Giriş akışı üye Işlevleri](../standard-library/input-stream-member-functions.md)
 
 [Kendi Sınıflarınız İçin >> İşleci Aşırı Yükleme](../standard-library/overloading-the-input-operator-for-your-own-classes.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[iostream Programlaması](../standard-library/iostream-programming.md)
+[iostream programlama](../standard-library/iostream-programming.md)

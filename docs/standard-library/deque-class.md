@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: deque Class'
 title: deque Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -88,18 +89,18 @@ helpviewer_keywords:
 - std::deque [C++], size
 - std::deque [C++], swap
 ms.assetid: 64842ee5-057a-4063-8c16-4267a0332584
-ms.openlocfilehash: 1edcabf526d0f3aa2ba52ba3fd0fc656c5ae6b9c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f46c3c31dd23f7603a1d4ef6289e435c9b38e823
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324581"
 ---
 # <a name="deque-class"></a>deque Sınıfı
 
 Belirli bir türün öğelerini doğrusal bir düzenlemede ve vektör gibi, herhangi bir öğeye hızlı bir şekilde rastgele erişim sağlar ve kapsayıcının arkasında etkili ekleme ve silme işlemi yapılır. Ancak, vector öğesinin aksine, `deque` sınıf kapsayıcının önündeki etkin ekleme ve silme işlemini de destekler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```unstlib
 template <class Type, class Allocator =allocator<Type>>
@@ -112,7 +113,7 @@ class deque
 Deque içinde depolanacak öğe veri türü.
 
 *Öğe*\
-Belleğin ayrılma ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı \<Type> **' dır.
+Belleğin ayrılma ve ayırmayı kaldırma hakkındaki ayrıntıları kapsülleyen saklı ayırıcı nesnesini temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı \<Type>**' dır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -797,11 +798,11 @@ Tüm oluşturucular bir ayırıcı nesnesi (*Al*) depolar ve deque 'yi başlatı
 
 Dördüncü ve beşinci oluşturucular değer (*Count*) öğelerinin tekrarlarını belirtir `val` .
 
-Altıncı Oluşturucu, *sağ*ucunun bir kopyasını belirtir.
+Altıncı Oluşturucu, *sağ* ucunun bir kopyasını belirtir.
 
 Yedinci ve sekizinci oluşturucular, `[First, Last)` bir deque aralığını kopyalar.
 
-Yedinci Oluşturucu, *sağa doğru*gider.
+Yedinci Oluşturucu, *sağa doğru* gider.
 
 Sekizinci Oluşturucu bir initializer_list içeriğini kopyalar.
 
@@ -1663,7 +1664,7 @@ Yeni içeriği sağlayan deque.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk geçersiz kılma öğeleri, atamanın kaynağı olan *sağdaki*Bu deque öğesine kopyalar. İkinci geçersiz kılma öğeleri *sağdaki*Bu deque öğesine taşımalıdır.
+İlk geçersiz kılma öğeleri, atamanın kaynağı olan *sağdaki* Bu deque öğesine kopyalar. İkinci geçersiz kılma öğeleri *sağdaki* Bu deque öğesine taşımalıdır.
 
 İşleç yürütmeden önce bu dede içerilen öğeler kaldırılır.
 
@@ -2109,7 +2110,7 @@ Yeni boyut orijinal boyuttan daha büyükse, deque 'a eklenecek yeni öğelerin 
 
 Deque 'ın boyutu istenen boyuttan küçükse *_Newsize*, öğeler istenen boyuta ulaşıncaya kadar en que öğesine eklenir.
 
-Deque 'ın boyutu istenen boyuttan daha büyükse, deque 'un sonuna en yakın olan öğeler *_Newsize*boyutuna ulaşana kadar silinir.
+Deque 'ın boyutu istenen boyuttan daha büyükse, deque 'un sonuna en yakın olan öğeler *_Newsize* boyutuna ulaşana kadar silinir.
 
 Deque 'ın mevcut boyutu istenen boyutla aynıysa, hiçbir işlem yapılmaz.
 
@@ -2282,7 +2283,7 @@ void swap(deque<Type, Allocator>& left, deque<Type, Allocator>& right);
 Değiştirilecek öğelerin sağlanması veya öğeleri deque ile değiş tokuş edilecek şekilde değiştirilecek olan deque `left` .
 
 *tarafta*\
-Öğeleri, yukarı *doğru ve sağ*ile değiş tokuş edilecek bir deque.
+Öğeleri, yukarı *doğru ve sağ* ile değiş tokuş edilecek bir deque.
 
 ### <a name="example"></a>Örnek
 

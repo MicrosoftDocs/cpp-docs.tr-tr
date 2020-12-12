@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_arithmetic sınıfı'
 title: is_arithmetic Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_arithmetic class
 - is_arithmetic
 ms.assetid: ea427b7e-0141-4a04-848f-561054c53001
-ms.openlocfilehash: e2c148b7cb58cf38e5f73d4e3d2297eac099ef7e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 75673950a162b34815db297a3012fa7152e61375
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456682"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323879"
 ---
-# <a name="isarithmetic-class"></a>is_arithmetic Sınıfı
+# <a name="is_arithmetic-class"></a>is_arithmetic Sınıfı
 
 Tür aritmetik ise sınar.
 
@@ -32,7 +33,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri bir aritmetik tür, yani bir integral türü veya kayan nokta türü ya da bunlardan birinin bir `cv-qualified` *biçimi ise,* bir tür koşulu true, aksi takdirde false barındırır.
+Tür değeri bir aritmetik tür, yani bir integral türü veya kayan nokta türü ya da bunlardan birinin bir biçimi *ise,* bir tür koşulu true, `cv-qualified` Aksi takdirde false barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -68,12 +69,12 @@ is_arithmetic<float> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
+[<type_traits>](../standard-library/type-traits.md)\
 [is_floating_point sınıfı](../standard-library/is-floating-point-class.md)\
-[is_integral Sınıfı](../standard-library/is-integral-class.md)
+[is_integral sınıfı](../standard-library/is-integral-class.md)

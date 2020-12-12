@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kapsam sınıfı'
 title: extent Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - extent class
 - extent
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
-ms.openlocfilehash: 0cd53ba8537e706a68ffdcf08df998108266ad20
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d3db49db99d2cb7a241ca3b69c48fa6bcf2cb490
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324392"
 ---
 # <a name="extent-class"></a>extent Sınıfı
 
@@ -30,12 +31,12 @@ struct extent;
 *Kalite*\
 Sorgulanacak tür.
 
-*KAYDEDEMİYORUM*\
+*Kaydedemiyorum*\
 Sorguya bağlantılı dizi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Ty* , en az *ı* boyutlu bir dizi türüdür, tür sorgusu *i*tarafından belirtilen boyuttaki öğelerin sayısını tutar. *Ty* bir dizi türü değilse veya derecesi *i*'den küçükse ya da *sıfır ise ve* *Ty* , "bilinmeyen sınırının `U`dizisi" ise tür sorgusu 0 değerini tutar.
+*Ty* , en az *ı* boyutlu bir dizi türüdür, tür sorgusu *i* tarafından belirtilen boyuttaki öğelerin sayısını tutar. *Ty* bir dizi türü değilse veya derecesi *i*'den küçükse ya da sıfır ise ve *Ty* , *"* bilinmeyen sınırının dizisi `U` " ise tür sorgusu 0 değerini tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -63,12 +64,12 @@ extent 1 == 10
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
+[<type_traits>](../standard-library/type-traits.md)\
 [remove_all_extents sınıfı](../standard-library/remove-all-extents-class.md)\
-[remove_extent Sınıfı](../standard-library/remove-extent-class.md)
+[remove_extent sınıfı](../standard-library/remove-extent-class.md)

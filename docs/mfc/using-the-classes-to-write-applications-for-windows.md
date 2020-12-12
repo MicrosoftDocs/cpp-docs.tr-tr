@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Windows için uygulama yazmak için sınıfları kullanma'
 title: Windows Uygulamaları Yazmak için Sınıfları Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,67 +10,67 @@ helpviewer_keywords:
 - OLE applications [MFC], MFC application framework
 - database applications [MFC], creating
 ms.assetid: 73f63470-857d-43dd-9a54-b38b7be0f1b7
-ms.openlocfilehash: c8b3d7061c0ef06063d9c6993f24d23fc2e1f92e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b94155b565872b614efa291699cecbaf4770fdaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62411480"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322718"
 ---
 # <a name="using-the-classes-to-write-applications-for-windows"></a>Windows Uygulamaları Yazmak için Sınıfları Kullanma
 
-Birlikte ele alındığında, "Windows işletim sistemi için bir uygulama derleme bir uygulama çerçevesi," Microsoft Foundation Class (MFC) Kitaplığı'ndaki sınıfları oluşturur. Framework çok genel düzeyde, bir uygulama çatısı tanımlar ve çatıyı yerleştirilebilir standart kullanıcı arabirimi uygulamalarını sağlar. Bunları, uygulamanıza özgü olan iskelet geri kalanı doldurmak için işinizi programcısı olarak olan. Avantajlı bir başlangıç çok kapsamlı başlangıç uygulaması dosyalarını oluşturmak için MFC Uygulama Sihirbazı'nı kullanarak alabilirsiniz. Microsoft Visual C++ kaynak düzenleyicileri kodu ve sınıf kitaplığı için bu öğeleri bağlanmak için Sınıf Görünümü komutları görsel tasarım, kullanıcı arabirimi öğeleri için uygulamaya özgü mantığı uygulamak için kullanın.
+Birlikte getirildiğinde, Microsoft Foundation Class (MFC) kitaplığındaki sınıflar, Windows işletim sistemi için bir uygulama oluşturduğunuz bir "uygulama çerçevesi" oluşturur. Çok genel düzeyde, çerçeve bir uygulamanın iskektlerini tanımlar ve iskelet 'e yerleştirilebilecek standart Kullanıcı arabirimi uygulamaları sağlar. Programcı olarak işiniz, uygulamanıza özgü olan şeyler olan iskelet 'in kalanını doldurmanızı sağlar. Çok kapsamlı bir başlangıç uygulamasının dosyalarını oluşturmak için MFC Uygulama Sihirbazı ' nı kullanarak bir baş başlangıç yapabilirsiniz. Kullanıcı arabirimi öğelerinizi görsel olarak tasarlamak için Microsoft Visual C++ kaynak düzenleyicilerini, bu öğeleri koda bağlamak için komutları Sınıf Görünümü ve uygulamaya özgü mantığınızı uygulamak için sınıf kitaplığını kullanabilirsiniz.
 
-Win32 platformları dahil olmak üzere Microsoft Windows 95 ve daha sonra programlama ve Windows NT sürüm 3.51 sürümü ve sonraki sürüm 3.0 ve sonraki MFC framework'ün destekler. Çoklu iş parçacığı kullanımı MFC Win32 desteği içerir. Kullanım sürüm 1.5*x* 16-bit programlama yapmanız gerekiyorsa.
+MFC çerçevesinin sürüm 3,0 ve üzeri sürümleri, Microsoft Windows 95 ve üzeri ve Windows NT sürümleri ve üzeri 3,51 sürümleri dahil olmak üzere Win32 platformları için programlamayı destekler. MFC Win32 desteği çoklu iş parçacığı içerir. 16 bit programlama yapmanız gerekiyorsa 1,5 *x* sürümünü kullanın.
 
-Bu makaleler ailesi uygulama çerçevesi geniş kapsamlı bir bakış sunar. Ayrıca, uygulamanızı ve nasıl oluşturulduğunu oluşturan büyük nesneleri keşfediyor. Aşağıdaki makalelerde ele alınan konulara arasında aşağıda verilmiştir:
+Bu makale ailesi, uygulama çerçevesi hakkında geniş bir genel bakış sunar. Ayrıca, uygulamanızı oluşturan büyük nesneleri ve bunların nasıl oluşturulduğunu da araştırır. Bu makalelerde ele alınan konular arasında şunlar bulunur:
 
 - [Framework](../mfc/framework-mfc.md).
 
-- İşçi çerçevesi ve kodunuz, açıklandığı arasında bölünmesi [Framework'te derleme](../mfc/building-on-the-framework.md).
+- Framework [üzerinde oluşturma](../mfc/building-on-the-framework.md)bölümünde açıklandığı gibi, Framework ve kodunuz arasındaki işçilikin bölümü.
 
-- [Uygulama sınıfı](../mfc/cwinapp-the-application-class.md), uygulama düzeyinde işlevselliğini kapsüller.
+- Uygulama düzeyi işlevselliğini kapsülleyen [uygulama sınıfı](../mfc/cwinapp-the-application-class.md).
 
-- Nasıl [belge şablonları](../mfc/document-templates-and-the-document-view-creation-process.md) oluşturup belgeler ve bunların ilişkili görünümler yönetmek ve windows çerçeve.
+- [Belge şablonlarının](../mfc/document-templates-and-the-document-view-creation-process.md) belgeleri ve bunlarla ilişkili görünümlerini ve çerçeve pencerelerini nasıl oluşturup yönetmediği.
 
-- Sınıf [CWnd](../mfc/window-objects.md), tüm windows kök taban sınıfı.
+- Tüm pencerelerin kök taban sınıfı olan [CWnd](../mfc/window-objects.md)sınıfı.
 
-- [Grafik nesneler](../mfc/graphic-objects.md)kalemler ve fırçalar gibi.
+- Kalem ve fırçalar gibi [grafik nesneleri](../mfc/graphic-objects.md).
 
-Framework'ün diğer bölümleri şunlardır:
+Framework 'ün diğer bölümleri şunlardır:
 
-- [Pencere nesneleri: Genel Bakış](../mfc/window-objects.md)
+- [Pencere nesneleri: genel bakış](../mfc/window-objects.md)
 
 - [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md)
 
-- [CObject, MFC'de kök taban sınıfı](../mfc/using-cobject.md)
+- [CObject, MFC 'deki kök temel sınıfı](../mfc/using-cobject.md)
 
 - [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)
 
-- [İletişim Kutuları](../mfc/dialog-boxes.md)
+- [İletişim kutuları](../mfc/dialog-boxes.md)
 
 - [Denetimler](../mfc/controls-mfc.md)
 
-- [Denetim Çubukları](../mfc/control-bars.md)
+- [Denetim çubukları](../mfc/control-bars.md)
 
 - [OLE](../mfc/ole-in-mfc.md)
 
-- [Bellek Yönetimi](../mfc/memory-management.md)
+- [Bellek yönetimi](../mfc/memory-management.md)
 
-   Windows işletim sistemi için uygulamalar yazma bir avantajını sunarak yanı sıra, MFC de özellikle bağlama ve katıştırma teknoloji OLE kullanan uygulamalar yazmak kolaylaşır. Uygulamanızı bir OLE görsel kapsayıcı, bir OLE görsel düzenleme sunucusu veya her ikisi de düzenleme yapabileceğiniz ve böylece diğer uygulamalar, uygulamanız nesneleri kullanın veya bile uzaktan sürücü Otomasyon ekleyebilirsiniz.
+   Windows işletim sistemi için uygulama yazma avantajlarından faydalanmanın yanı sıra, MFC özellikle OLE bağlama ve ekleme teknolojisini kullanan uygulamalar yazmayı çok daha kolay hale getirir. Uygulamanızı bir OLE görsel düzenlemesini, bir OLE görsel düzenlemesi sunucusunu veya her ikisini birden yapabilir ve otomasyon ekleyerek diğer uygulamaların uygulamanızdaki nesneleri kullanmasını veya hatta uzaktan kullanılmasını sağlayabilirsiniz.
 
-- [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
+- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
 
-   OLE denetim Geliştirme Seti (CDK) artık framework ile tamamen tümleşiktir. Bu makalede ailesi ile MFC ActiveX denetimi geliştirme genel bir bakış sağlar. (ActiveX denetimlerini eski adı OLE denetimleri bilinirdi.)
+   OLE denetim geliştirme seti (CDK) artık çerçevesiyle tamamen tümleşiktir. Bu makalede, MFC ile ActiveX denetim geliştirmeye genel bakış sağlanır. (ActiveX denetimleri daha önce OLE denetimleri olarak bilinirdi.)
 
 - [Veritabanı programlama](../data/data-access-programming-mfc-atl.md)
 
-   MFC Ayrıca iki veri yazma erişimi basitleştirin ve veritabanı sınıfları kümesi sağlayan uygulamalar. ODBC veritabanı sınıfları kullanarak, bir açık veritabanı bağlantısı (ODBC) sürücüsü aracılığıyla veritabanlarına bağlanmak, kayıtları tabloları seçin ve kayıt bilgileri görüntüleme bir ekrandaki formu. Veri erişim nesnesi (DAO) sınıflarını kullanarak, Microsoft Jet veritabanı altyapısı veya ODBC veri kaynakları gibi dış (Jet dışı) veri kaynakları, veritabanları ile çalışabilir.
+   MFC Ayrıca veri erişimi uygulamaları yazmayı kolaylaştıran iki veritabanı sınıfı kümesi sağlar. ODBC veritabanı sınıflarını kullanarak, bir açık veritabanı bağlantısı (ODBC) sürücüsü aracılığıyla veritabanlarına bağlanabilir, tablolardan kayıtlar ' ı seçebilir ve kayıt bilgilerini ekran biçiminde görüntüleyebilirsiniz. Veri erişim nesnesi (DAO) sınıflarını kullanarak, ODBC veri kaynakları dahil olmak üzere Microsoft Jet veritabanı altyapısı veya harici (Jet olmayan) veri kaynakları aracılığıyla veritabanlarıyla çalışabilirsiniz.
 
-   Ayrıca, MFC, Unicode kullanan uygulamalar yazmak için tam olarak etkinleştirilir ve çok baytlı karakter kümeleri (MBCS), özellikle çift baytlı karakter kümeleri (DBCS).
+   Ayrıca, MFC Unicode ve çok baytlı karakter kümeleri (MBCS) kullanan uygulamaları yazmak için tamamen etkinleştirilir, özellikle çift baytlı karakter kümeleri (DBCS).
 
-MFC belge genel bir kılavuz için bkz [genel MFC konuları](../mfc/general-mfc-topics.md).
+MFC belgelerine genel bir kılavuz için bkz. [genel MFC konuları](../mfc/general-mfc-topics.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)
+[Genel MFC konuları](../mfc/general-mfc-topics.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; iomanıp &gt; işlevleri'
 title: '&lt;iomanıp &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: f540b311cafd59935a9cf1e521d3dbd558f59673
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9ddcea6b524c0413bc1c68c2b75ec910b529d22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845763"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323934"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanıp &gt; işlevleri
 
@@ -372,7 +373,7 @@ Sağa hizalanmış bir ekranda boşlukları dolduriçin kullanılacak karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu şablon, öğesinden ayıklandığında veya akışa yerleştirildiğinde `str` , Fill çağrısı yaparken `str.` [fill](../standard-library/basic-ios-class.md#fill) `(Ch)` ve sonra geri döndüğünde bir nesnesi döndürür `str` . Tür, `Elem` akışın öğe türüyle aynı olmalıdır `str` .
+Bu şablon, öğesinden ayıklandığında veya akışa yerleştirildiğinde `str` , Fill çağrısı yaparken `str.` [](../standard-library/basic-ios-class.md#fill) `(Ch)` ve sonra geri döndüğünde bir nesnesi döndürür `str` . Tür, `Elem` akışın öğe türüyle aynı olmalıdır `str` .
 
 ### <a name="example"></a>Örnek
 
@@ -435,7 +436,7 @@ Görüntüleme alanının genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleici, akıştan ayıklandığında veya akışa eklenen bir nesne döndürür, `str` Width çağırır ve `str.` [width](../standard-library/ios-base-class.md#width) `(Wide)` sonra döndürür `str` .
+İşleici, akıştan ayıklandığında veya akışa eklenen bir nesne döndürür, `str` Width çağırır ve `str.` [](../standard-library/ios-base-class.md#width) `(Wide)` sonra döndürür `str` .
 
 ### <a name="remarks"></a>Açıklamalar
 

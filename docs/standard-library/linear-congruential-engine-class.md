@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: linear_congruential_engine sınıfı'
 title: linear_congruential_engine Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
-ms.openlocfilehash: 8701570787275e853543e723f6461b8ad460f96f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b2171623190180cabc46dd760debabdefb9afd77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845451"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323544"
 ---
 # <a name="linear_congruential_engine-class"></a>linear_congruential_engine Sınıfı
 
 Doğrusal uyumlu algoritmayla rastgele bir sıra üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class linear_congruential_engine{

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: gelecek sınıf'
 title: future Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - std::future [C++], wait
 - std::future [C++], wait_for
 - std::future [C++], wait_until
-ms.openlocfilehash: ac52429919f83a90a87141399952e248e18e0862
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ca73a3d0273014c4f22e8e807c2bf7c3d6e43320
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220944"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324232"
 ---
 # <a name="future-class"></a>future Sınıfı
 
-*Zaman uyumsuz bir dönüş nesnesi*tanımlar.
+*Zaman uyumsuz bir dönüş nesnesi* tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Ty>
@@ -73,7 +74,7 @@ Her standart *zaman uyumsuz sağlayıcı* , türü bu şablonun örneklenmesi ol
 
 **Ad alanı:** std
 
-## <a name="futurefuture-constructor"></a><a name="future"></a>Future:: Future Oluşturucusu
+## <a name="futurefuture-constructor"></a><a name="future"></a> Future:: Future Oluşturucusu
 
 Bir `future` nesnesi oluşturur.
 
@@ -91,9 +92,9 @@ Bir `future` nesnesi.
 
 İlk Oluşturucu, `future` ilişkili zaman uyumsuz durumu olmayan bir nesne oluşturur.
 
-İkinci Oluşturucu bir nesne oluşturur `future` ve ilişkili zaman uyumsuz durumu *diğer*öğesinden aktarır. *Artık ilişkili* bir zaman uyumsuz duruma sahip değildir.
+İkinci Oluşturucu bir nesne oluşturur `future` ve ilişkili zaman uyumsuz durumu *diğer* öğesinden aktarır. *Artık ilişkili* bir zaman uyumsuz duruma sahip değildir.
 
-## <a name="futureget"></a><a name="get"></a>Future:: Get
+## <a name="futureget"></a><a name="get"></a> Future:: Get
 
 İlişkili zaman uyumsuz durumda depolanan sonucu alır.
 
@@ -115,7 +116,7 @@ Kısmi `future<Ty&>` özelleşme için, saklı değer, geri dönüş değeri ola
 
 Diğer uzmanlıklardan Yöntem, dönüş değerini saklı değerden taşımaktadır. Bu nedenle, bu yöntemi yalnızca bir kez çağırın.
 
-## <a name="futureoperator"></a><a name="op_eq"></a>Future:: operator =
+## <a name="futureoperator"></a><a name="op_eq"></a> Future:: operator =
 
 Belirtilen bir nesneden ilişkili bir zaman uyumsuz durumu aktarır.
 
@@ -136,7 +137,7 @@ Bir `future` nesnesi.
 
 Aktarımdan *sonra, artık* ilişkili bir zaman uyumsuz duruma sahip değildir.
 
-## <a name="futureshare"></a><a name="share"></a>Future:: Share
+## <a name="futureshare"></a><a name="share"></a> Future:: Share
 
 Nesneyi [shared_future](../standard-library/shared-future-class.md) nesnesine dönüştürür.
 
@@ -148,7 +149,7 @@ shared_future<Ty> share();
 
 `shared_future(move(*this))`
 
-## <a name="futurevalid"></a><a name="valid"></a>geleceğe yönelik:: geçerli
+## <a name="futurevalid"></a><a name="valid"></a> geleceğe yönelik:: geçerli
 
 Nesnenin ilişkili bir zaman uyumsuz duruma sahip olup olmadığını belirtir.
 
@@ -160,9 +161,9 @@ bool valid() noexcept;
 
 **`true`** nesnenin ilişkili bir zaman uyumsuz durumu varsa; Aksi takdirde, **`false`** .
 
-## <a name="futurewait"></a><a name="wait"></a>daha sonra:: wait
+## <a name="futurewait"></a><a name="wait"></a> daha sonra:: wait
 
-İlişkili zaman uyumsuz durum *hazırlanana*kadar geçerli iş parçacığını engeller.
+İlişkili zaman uyumsuz durum *hazırlanana* kadar geçerli iş parçacığını engeller.
 
 ```cpp
 void wait() const;
@@ -172,7 +173,7 @@ void wait() const;
 
 İlişkili bir zaman uyumsuz durum *, yalnızca zaman* uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
 
-## <a name="futurewait_for"></a><a name="wait_for"></a>daha sonra:: wait_for
+## <a name="futurewait_for"></a><a name="wait_for"></a> daha sonra:: wait_for
 
 İlişkili zaman uyumsuz durum *hazırlanana* veya belirli bir zaman aralığı geçene kadar geçerli iş parçacığını engeller.
 
@@ -194,7 +195,7 @@ Dönme nedeninizi belirten bir [future_status](../standard-library/future-enums.
 
 İlişkili bir zaman uyumsuz durum, yalnızca zaman uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
 
-## <a name="futurewait_until"></a><a name="wait_until"></a>daha sonra:: wait_until
+## <a name="futurewait_until"></a><a name="wait_until"></a> daha sonra:: wait_until
 
 İlişkili zaman uyumsuz durum *hazırlanana* veya belirtilen bir zaman noktasına gelene kadar geçerli iş parçacığını engeller.
 

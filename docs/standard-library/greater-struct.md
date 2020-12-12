@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: daha fazla yapı'
 title: greater Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - greater struct
 - greater function
 ms.assetid: ebc348e1-edcd-466b-b21a-db95bd8f9079
-ms.openlocfilehash: aca47223810bdae31e7711492d107fbfa2814391
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fabee76d20d201f63b9f5397c20409ad62125657
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324180"
 ---
 # <a name="greater-struct"></a>greater Yapısı
 
-Büyük gerçekleştiren bir ikili koşula-işlemi daha (`operator>`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde büyüktür işlemini () gerçekleştiren bir ikili koşul `operator>` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,21 +44,21 @@ struct greater<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Destekleyen herhangi bir türü bir `operator>` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator>`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
-*Sol*\
-Büyük sol işleneni-işlemi daha. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+Büyüktür işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Büyük sağ işleneninin-işlemi daha. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+Büyüktür işleminin doğru işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left > Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator>`.
+Sonucu `Left > Right` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator>` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkili koşul `greater` < `Type`> katı bir zayıf türünün öğe değerlerini bir dizi sıralama sağlar *türü* denk sınıfların içinde bu tür standart matematiksel karşılar ve yalnızca, Bu nedenle sıralanan gereksinimleri. Farklı değerlerin tüm öğelerin birbirine göre sıralanır, toplam, öğelerin sıralaması uzmanlıkları herhangi bir işaretçi türü için yield.
+İkili koşul `greater` < `Type`>,, ve yalnızca bu tür için standart matematik gereksinimlerini karşılıyorsa, bir dizi  öğe değerlerini denklik sınıflarında katı bir şekilde bir şekilde bir, ancak bu türü Herhangi bir işaretçi türü için özelleştirilmiş bir öğe sıralaması, farklı değerlerin tüm öğelerinin birbirleriyle ilgili olarak sıralanmasından oluşur.
 
 ## <a name="example"></a>Örnek
 

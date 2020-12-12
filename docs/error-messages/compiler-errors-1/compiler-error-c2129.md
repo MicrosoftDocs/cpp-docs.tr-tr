@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2129'
 title: Derleyici hatası C2129
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2129
 ms.assetid: 21a8223e-1d22-4baa-9ca1-922b7f751dd0
-ms.openlocfilehash: 9cf414200dcfad8ae617e16e111bd26b19a315a6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5efb19aa3f4edd14dd6cfab93c3880745b08e59d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220437"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323161"
 ---
 # <a name="compiler-error-c2129"></a>Derleyici hatası C2129
 

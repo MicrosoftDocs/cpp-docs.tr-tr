@@ -1,5 +1,6 @@
 ---
-title: '&lt;işlevsel&gt; işleçleri'
+description: 'Daha fazla bilgi edinin: &lt; işlevsel &gt; işleçler'
+title: '&lt;işlev &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - functional/std::operator!=
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - functional operators
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
-ms.openlocfilehash: b396e5c692129821c0deb9aef9469a5c54e600b0
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: a22e9203e89c041d5ed1925d55d1cd3aa6d61ba3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79419058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324245"
 ---
-# <a name="ltfunctionalgt-operators"></a>&lt;işlevsel&gt; işleçleri
+# <a name="ltfunctionalgt-operators"></a>&lt;işlev &gt; işleçleri
 
-## <a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 Çağrılabilir nesne boş ise sınar.
 
@@ -33,7 +34,7 @@ template <class Fty>
 *Fty*\
 Sarılacağı işlev türü.
 
-*f*\
+*vadeli*\
 İşlev nesnesi
 
 *NPC*\
@@ -41,7 +42,7 @@ Null işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleçler her ikisi de `function` nesnesine başvuru olan bir bağımsız değişken ve null işaretçi sabiti olan bir bağımsız değişken alır. Her ikisi de yalnızca `function` nesnesi boşsa true değeri döndürür.
+İşleçler her ikisi de bir nesne başvurusu olan bir bağımsız değişken `function` ve null işaretçi sabiti olan bir bağımsız değişken alır. Her ikisi de yalnızca nesne boşsa true değeri döndürür `function` .
 
 ### <a name="example"></a>Örnek
 
@@ -75,7 +76,7 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 Çağrılabilir nesne boş değilse sınar.
 
@@ -92,7 +93,7 @@ template <class Fty>
 *Fty*\
 Sarılacağı işlev türü.
 
-*f*\
+*vadeli*\
 İşlev nesnesi
 
 *NPC*\
@@ -100,7 +101,7 @@ Null işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleçler her ikisi de `function` nesnesine başvuru olan bir bağımsız değişken ve null işaretçi sabiti olan bir bağımsız değişken alır. Her ikisi de yalnızca `function` nesnesi boş değilse true değerini döndürür.
+İşleçler her ikisi de bir nesne başvurusu olan bir bağımsız değişken `function` ve null işaretçi sabiti olan bir bağımsız değişken alır. Her ikisi de yalnızca nesne boş değilse true değerini döndürür `function` .
 
 ### <a name="example"></a>Örnek
 

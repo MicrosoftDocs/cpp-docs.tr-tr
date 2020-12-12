@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: default_searcher sınıfı'
 title: default_searcher sınıfı
 ms.date: 08/03/2019
 f1_keywords:
 - functional/std::default_searcher
 helpviewer_keywords:
 - std::default_searcher [C++]
-ms.openlocfilehash: 307fc6da3b383690e0b65bff2a72f386a37d6711
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0eb47d3f4c49c9bb6c9c4e68ab2164b87ea9834d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039696"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324594"
 ---
 # <a name="default_searcher-class"></a>default_searcher sınıfı
 
@@ -36,7 +37,7 @@ class default_searcher
 
 ## <a name="members"></a>Üyeler
 
-| Üye | Description |
+| Üye | Açıklama |
 | - | - |
 | **Oluşturucu** | |
 | [default_searcher](#default-searcher-constructor) | Bir Arayıcının örneği oluşturur. |
@@ -106,7 +107,7 @@ Yineleyicilerin bir çiftini döndürür. İlk *Yineleyici, öğesinin etkili* s
 
 `std::search( first, last, pat_first, pat_last, pred )`.
 
-İkilinin ikinci yineleyicisi *en son* *bir*. *i* Aksi takdirde, bunun etkili sonucu:
+İkilinin ikinci yineleyicisi *en son* *bir*.  Aksi takdirde, bunun etkili sonucu:
 
 `std::next( i, std::distance( pat_first, pat_last ))`.
 
