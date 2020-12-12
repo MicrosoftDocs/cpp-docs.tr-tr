@@ -1,32 +1,33 @@
 ---
-title: ATL koleksiyonu ve numaralandırıcısı sınıfları
+description: 'Daha fazla bilgi edinin: ATL koleksiyonu ve Numaralandırıcı sınıfları'
+title: ATL koleksiyonu ve Numaralandırıcı sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - enumerators, ATL classes
 - collection classes, ATL
 ms.assetid: 6818db73-7094-48d8-a0ca-18147beec362
-ms.openlocfilehash: b1ab9a160b01ea278d162a515e5121054bf398f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1f30aabb4908b0299a927f92a6d5ee4e9370a09
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252331"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166050"
 ---
-# <a name="atl-collection-and-enumerator-classes"></a>ATL koleksiyonu ve numaralandırıcısı sınıfları
+# <a name="atl-collection-and-enumerator-classes"></a>ATL koleksiyonu ve Numaralandırıcı sınıfları
 
-ATL koleksiyonları ve numaralandırıcıları uygulamanıza yardımcı olması için aşağıdaki sınıflar sağlar.
+ATL, koleksiyonları ve numaralandırıcıları uygulamanıza yardımcı olması için aşağıdaki sınıfları sağlar.
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-----------|-----------------|
-|[Icollectiononstlımpl](../atl/reference/icollectiononstlimpl-class.md)|Koleksiyon arabirim uygulaması|
-|[IEnumOnSTLImpl](../atl/reference/ienumonstlimpl-class.md)|Numaralandırıcı arabirim uygulaması (C++ Standart kitaplığı ile uyumlu bir kapsayıcıda depolanan veriler varsayılır)|
-|[CComEnumImpl](../atl/reference/ccomenumimpl-class.md)|Numaralandırıcı arabirim uygulaması (bir dizide depolanan verileri varsayılır)|
-|[CComEnumOnSTL](../atl/reference/ccomenumonstl-class.md)|Numaralandırıcı nesne uygulamasını (kullanan `IEnumOnSTLImpl`)|
-|[CComEnum](../atl/reference/ccomenum-class.md)|Numaralandırıcı nesne uygulamasını (kullanan `CComEnumImpl`)|
-|[_Kopyala](../atl/atl-copy-policy-classes.md)|Kopyalama İlkesi sınıfı|
-|[_CopyInterface](../atl/atl-copy-policy-classes.md)|Kopyalama İlkesi sınıfı|
-|[CAdapt](../atl/reference/cadapt-class.md)|Bağdaştırıcı sınıfı (gizler **işleci &** izin vererek `CComPtr`, `CComQIPtr`, ve `CComBSTR` C++ Standart Kitaplığı kapsayıcıları depolanacak)|
+|[ICollectionOnSTLImpl](../atl/reference/icollectiononstlimpl-class.md)|Koleksiyon arabirimi uygulama|
+|[IEnumOnSTLImpl](../atl/reference/ienumonstlimpl-class.md)|Numaralandırıcı arabirim uygulama (C++ standart kitaplığı ile uyumlu bir kapsayıcıda depolanan verileri varsayar)|
+|[CComEnumImpl](../atl/reference/ccomenumimpl-class.md)|Numaralandırıcı arabirim uygulama (bir dizide depolanan verileri varsayar)|
+|[CComEnumOnSTL](../atl/reference/ccomenumonstl-class.md)|Numaralandırıcı nesne uygulama (kullanımlar `IEnumOnSTLImpl` )|
+|[CComEnum](../atl/reference/ccomenum-class.md)|Numaralandırıcı nesne uygulama (kullanımlar `CComEnumImpl` )|
+|[_Copy](../atl/atl-copy-policy-classes.md)|İlke sınıfını Kopyala|
+|[_CopyInterface](../atl/atl-copy-policy-classes.md)|İlke sınıfını Kopyala|
+|[CAdapt](../atl/reference/cadapt-class.md)|Adapter sınıfı (  `CComPtr` , `CComQIPtr` ve `CComBSTR` C++ standart kitaplık kapsayıcılarında depolanacak işleç &gizliyor)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Koleksiyonlar ve numaralandırmalar](../atl/atl-collections-and-enumerators.md)
+[Koleksiyonlar ve Numaralandırıcılar](../atl/atl-collections-and-enumerators.md)

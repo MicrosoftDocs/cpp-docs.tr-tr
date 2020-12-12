@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: operator THIS'
 title: THIS işleci
 ms.date: 12/17/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - operator THIS
 - THIS operator
 ms.assetid: d795aa0e-6c01-49b7-8c64-8ab111fd82d3
-ms.openlocfilehash: 672198961e488b6ec214a3fa5f301a39c33c3dee
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: b9e089bbd4f24e538e02aa4382ba14bdd79e3e9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318832"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126340"
 ---
 # <a name="operator-this"></a>THIS işleci
 
 Belirtilen *türün* , konumu ve segment değerleri geçerli konum sayacı değerine eşit olan bir işleneni döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **Bu** *tür*
 

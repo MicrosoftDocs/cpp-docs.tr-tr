@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `/Zc:auto` (değişken türünü türet)'
 title: /Zc:auto (Değişken Türünü Türet)
 ms.date: 02/28/2018
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-ms.openlocfilehash: 6bb1c8f2b14c483cbd46ecb6534a33db020e23e0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d20f377fc653e9c3cceb5c3e81b5e5e8a815bcad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502830"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114721"
 ---
 # <a name="zcauto-deduce-variable-type"></a>`/Zc:auto` (Değişken türünü türet)
 
 **`/Zc:auto`** Derleyici seçeneği derleyiciye değişkenleri bildirmek için [ `auto` anahtar sözcüğünü](../../cpp/auto-cpp.md) nasıl kullanacağınızı söyler. Varsayılan seçeneğini belirtirseniz, **`/Zc:auto`** derleyici, belirtilen değişkenin türünü başlatma ifadesinden çıkarır. Belirtirseniz **`/Zc:auto-`** , derleyici değişkeni otomatik depolama sınıfına ayırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:auto`**[**`-`**]
 

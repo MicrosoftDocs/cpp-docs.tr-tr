@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL koleksiyon sınıfları'
 title: ATL koleksiyon sınıfına genel bakış
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CTraits classes
 - collection classes
 ms.assetid: 4d619d46-5b4e-41dd-b9fd-e86b1fbc00b5
-ms.openlocfilehash: 039af388a3713540c6ba7d39e8b639cf83d291ff
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 32d9fe928024d82af7031fbbb8d88aba5e3eae31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040866"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166089"
 ---
 # <a name="atl-collection-classes"></a>ATL Koleksiyon Sınıfları
 
@@ -50,8 +51,8 @@ Takip sınıfları diziler, listeler ve haritalar uygular ve genel amaçlı topl
 |[CAtlArray](../atl/reference/catlarray-class.md)|Bir dizi uygular.|
 |[CAtlList](../atl/reference/catllist-class.md)|Bir liste uygular.|
 |[CAtlMap](../atl/reference/catlmap-class.md)|Veriye anahtar veya değer tarafından başvurulabilen bir eşleme yapısı uygular.|
-|[CRBMap](../atl/reference/crbmap-class.md)|Kırmızı siyah algoritmayı kullanarak bir eşleme yapısı uygular.|
-|[CRBMultiMap](../atl/reference/crbmultimap-class.md)|Kırmızı-siyah çok eşleme yapısı uygular.|
+|[CRBMap](../atl/reference/crbmap-class.md)|Red-Black algoritmasını kullanarak bir eşleme yapısı uygular.|
+|[CRBMultiMap](../atl/reference/crbmultimap-class.md)|Red-Black multimapping yapısı uygular.|
 
 Bu sınıflar hata ayıklama yapılarında kullanıldığında birçok programlama hatasını yakalar, ancak performans için bu denetimler, perakende yapılarında gerçekleştirilmeyecektir.
 
@@ -84,11 +85,11 @@ Kullanılabilir koleksiyon sınıflarının her biri, aşağıdaki tabloda göst
 
 |Şekil|Sipariş edildi|Oluşturulmayacak|Ekle<br /><br /> öğesi|Aranan:<br /><br /> Belirtilen öğe|Yinele<br /><br /> öğeler|
 |-----------|--------------|--------------|---------------------------|--------------------------------------|-----------------------------|
-|Liste|Yes|Hayır|Hızlı (sabit zaman)|Yavaş O (n)|Yes|
-|Dizi|Yes|By int (sabit zaman)|Son olarak, bu durumda sabit zaman ekleme haricinde yavaş O (n)|Yavaş O (n)|Yes|
-|Harita|No|Anahtara göre (sabit zaman)|Hızlı (sabit zaman)|Hızlı (sabit zaman)|Hayır (anahtar) Evet (değerler)|
-|Kırmızı-siyah harita|Evet (anahtara göre)|Anahtar O 'a göre (log n)|Hızlı O (log n)|Hızlı O (log n)|No|
-|Kırmızı-siyah multimap|Evet (anahtara göre)|Anahtara (log n) göre (anahtar başına birden çok değer)|Hızlı O (log n)|Hızlı O (log n)|Evet (anahtar başına birden çok değer)|
+|Liste|Evet|Hayır|Hızlı (sabit zaman)|Yavaş O (n)|Evet|
+|Dizi|Evet|By int (sabit zaman)|Son olarak, bu durumda sabit zaman ekleme haricinde yavaş O (n)|Yavaş O (n)|Evet|
+|Harita|Hayır|Anahtara göre (sabit zaman)|Hızlı (sabit zaman)|Hızlı (sabit zaman)|Hayır (anahtar) Evet (değerler)|
+|Red-Black eşleme|Evet (anahtara göre)|Anahtar O 'a göre (log n)|Hızlı O (log n)|Hızlı O (log n)|Hayır|
+|Red-Black multimap|Evet (anahtara göre)|Anahtara (log n) göre (anahtar başına birden çok değer)|Hızlı O (log n)|Hızlı O (log n)|Evet (anahtar başına birden çok değer)|
 
 ## <a name="using-ctraits-objects"></a>Cnitelikler nesnelerini kullanma
 

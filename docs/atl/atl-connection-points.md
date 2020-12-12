@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL bağlantı noktaları'
 title: ATL Bağlantı Noktaları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ATL, connection points
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-ms.openlocfilehash: df69496a6d245702a9598d684b25122ca55b1e6d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 60b9018185bea2af26407ee9d7a203148c8dc477
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491808"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165829"
 ---
 # <a name="atl-connection-points"></a>ATL Bağlantı Noktaları
 
@@ -23,13 +24,13 @@ Her bağlantı noktası [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-ico
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[ATL Bağlantı Noktası Sınıfları](../atl/atl-connection-point-classes.md)<br/>
+[ATL bağlantı noktası sınıfları](../atl/atl-connection-point-classes.md)<br/>
 Bağlantı noktalarını destekleyen ATL sınıflarını kısaca açıklar.
 
-[Bir Nesneye Bağlantı Noktaları Ekleme](../atl/adding-connection-points-to-an-object.md)<br/>
+[Bir nesneye bağlantı noktaları ekleme](../atl/adding-connection-points-to-an-object.md)<br/>
 Bir nesneye bağlantı noktaları eklemek için kullanılan adımları özetler.
 
-[ATL Bağlantı Noktası Örneği](../atl/atl-connection-point-example.md)<br/>
+[ATL bağlantı noktası örneği](../atl/atl-connection-point-example.md)<br/>
 Bir bağlantı noktası bildirme örneği sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
@@ -39,4 +40,4 @@ Etkin Şablon kitaplığı 'nı kullanarak programla programlama hakkında kavra
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Tiren](../atl/active-template-library-atl-concepts.md)
+[Kavramlar](../atl/active-template-library-atl-concepts.md)

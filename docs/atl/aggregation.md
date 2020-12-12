@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: toplama'
 title: Toplama
 ms.date: 11/04/2016
 helpviewer_keywords:
 - aggregation [C++]
 - aggregate objects [C++]
 ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
-ms.openlocfilehash: 288af427bd6a8d9baf572dfad8e4a25452694ad9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fb02dd399020f8768fcdb3cc86687578e51cb3ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491979"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166102"
 ---
 # <a name="aggregation"></a>Toplama
 
@@ -22,5 +23,5 @@ Birincil olarak, `IUnknown` içerilen nesne üzerindeki tüm Yöntem çağrılar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM’a Giriş](../atl/introduction-to-com.md)<br/>
+[COM'a Giriş](../atl/introduction-to-com.md)<br/>
 [Nesneleri yeniden kullanma](/windows/win32/com/reusing-objects)

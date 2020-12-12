@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2733'
 title: Derleyici hatası C2733
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2733
 ms.assetid: 67f83561-c633-407c-a2ee-f9fd16e165bf
-ms.openlocfilehash: 3ef669a49f4a3ec5a1af1a15a79f2511fa2699dd
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f957be13b8c1de1ee3ada98ffd42f0d89fc7755c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755791"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123207"
 ---
 # <a name="compiler-error-c2733"></a>Derleyici hatası C2733
 

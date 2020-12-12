@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComControlBase sınıfı'
 title: CComControlBase sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -80,12 +81,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
-ms.openlocfilehash: 6baaad9e3eae077b0ec460ba4e881508245bb894
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5ea232ac84ede33f7faa2a04e75b1ef65073ae9e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224324"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152171"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase sınıfı
 
@@ -94,7 +95,7 @@ Bu sınıf, ATL denetimleri oluşturmak ve yönetmek için yöntemler sağlar.
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class ATL_NO_VTABLE CComControlBase
@@ -137,7 +138,7 @@ class ATL_NO_VTABLE CComControlBase
 |[CComControlBase:: Getambentlocaleıd](#getambientlocaleid)|Kapsayıcı tarafından kullanılan dilin tanımlayıcısını DISPID_AMBIENT_LOCALEID alır.|
 |[CComControlBase:: Getambentmessagerefseç](#getambientmessagereflect)|Kapsayıcının olay olarak pencere iletileri (WM_DRAWITEM gibi) almak isteyip istemediğini belirten bir bayrak alır DISPID_AMBIENT_MESSAGEREFLECT.|
 |[CComControlBase:: Getambentpalette](#getambientpalette)|Kapsayıcının HPALETTE erişmek için kullanılan DISPID_AMBIENT_PALETTE alır.|
-|[CComControlBase:: Getambentproperty](#getambientproperty)|*ID*tarafından belirtilen kapsayıcı özelliğini alır.|
+|[CComControlBase:: Getambentproperty](#getambientproperty)|*ID* tarafından belirtilen kapsayıcı özelliğini alır.|
 |[CComControlBase:: GetAmbientRightToLeft](#getambientrighttoleft)|İçeriğin kapsayıcı tarafından gösterileceği yönü DISPID_AMBIENT_RIGHTTOLEFT alır.|
 |[CComControlBase:: Getambentscaleunits](#getambientscaleunits)|Etiketleme görüntüleri için kapsayıcının çevresel birimlerinin (inç veya santimetre gibi) DISPID_AMBIENT_SCALEUNITS alır.|
 |[CComControlBase:: Getambentshowgrabhandles](#getambientshowgrabhandles)|Kapsayıcının, denetimin etkin olduğunda kendi kendine yönelik tutamaçları görüntülemesine izin verip içermediğini belirten bir bayrak alır DISPID_AMBIENT_SHOWGRABHANDLES.|
@@ -164,7 +165,7 @@ class ATL_NO_VTABLE CComControlBase
 |[CComControlBase:: SendOnSave](#sendonsave)|Tüm danışmanlık havuzları ' nın, denetimin kaydedildiği öneri sahibine kayıtlı olduğunu bildirir.|
 |[CComControlBase:: SendOnViewChange](#sendonviewchange)|Tüm kayıtlı danışmanlık havuzlarını denetim görünümü ' nin değiştiğini bildirir.|
 |[CComControlBase:: SetControlFocus](#setcontrolfocus)|Klavye odağını denetimden veya denetiminden kaldırır.|
-|[CComControlBase:: SetDirty](#setdirty)|Veri üyesini `m_bRequiresSave` *bDirty*içindeki değere ayarlar.|
+|[CComControlBase:: SetDirty](#setdirty)|Veri üyesini `m_bRequiresSave` *bDirty* içindeki değere ayarlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
@@ -206,7 +207,7 @@ Denetim oluşturma hakkında daha fazla bilgi için bkz. [ATL öğreticisi](../.
 
 **Üstbilgi:** atlctl. h
 
-## <a name="ccomcontrolbaseappearancetype"></a><a name="appearancetype"></a>CComControlBase:: AppearanceType
+## <a name="ccomcontrolbaseappearancetype"></a><a name="appearancetype"></a> CComControlBase:: AppearanceType
 
 `m_nAppearance`Hisse senedi özelliği türünde değilse, bunu geçersiz kılın **`short`** .
 
@@ -218,7 +219,7 @@ typedef short AppearanceType;
 
 ATL Denetim Sihirbazı `m_nAppearance` Short türünde hisse senedi özelliği ekler. `AppearanceType`Farklı bir veri türü kullanıyorsanız geçersiz kılın.
 
-## <a name="ccomcontrolbaseccomcontrolbase"></a><a name="ccomcontrolbase"></a>CComControlBase:: CComControlBase
+## <a name="ccomcontrolbaseccomcontrolbase"></a><a name="ccomcontrolbase"></a> CComControlBase:: CComControlBase
 
 Oluşturucu.
 
@@ -228,14 +229,14 @@ CComControlBase(HWND& h);
 
 ### <a name="parameters"></a>Parametreler
 
-*olsun*<br/>
+*h*<br/>
 Denetimle ilişkilendirilen pencerenin tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Denetim boyutunu 5080X5080 HIMETRIK birimlerine (2 "X2") başlatır ve `CComControlBase` veri üyesi DEğERLERINI null ya da yanlış olarak başlatır.
 
-## <a name="ccomcontrolbaseccomcontrolbase"></a><a name="dtor"></a>CComControlBase:: ~ CComControlBase
+## <a name="ccomcontrolbaseccomcontrolbase"></a><a name="dtor"></a> CComControlBase:: ~ CComControlBase
 
 Yok edicisi.
 
@@ -247,7 +248,7 @@ Yok edicisi.
 
 Denetim pencereli ise, `~CComControlBase` [Destroyıwindow](/windows/win32/api/winuser/nf-winuser-destroywindow)'u çağırarak onu yok eder.
 
-## <a name="ccomcontrolbasecontrolqueryinterface"></a><a name="controlqueryinterface"></a>CComControlBase:: Controlqueryınterface
+## <a name="ccomcontrolbasecontrolqueryinterface"></a><a name="controlqueryinterface"></a> CComControlBase:: Controlqueryınterface
 
 İstenen arabirim için bir işaretçi alır.
 
@@ -262,7 +263,7 @@ virtual HRESULT ControlQueryInterface(const IID& iid,
 İstenen arabirimin GUID 'SI.
 
 *PPV*<br/>
-Arabirim bulunmazsa, *IID*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi veya ARABIRIM bulunamazsa null.
+Arabirim bulunmazsa, *IID* tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi veya ARABIRIM bulunamazsa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -272,7 +273,7 @@ Yalnızca COM Map tablosundaki arabirimleri işler.
 
 [!code-cpp[NVC_ATL_COM#15](../../atl/codesnippet/cpp/ccomcontrolbase-class_1.cpp)]
 
-## <a name="ccomcontrolbasedoesverbactivate"></a><a name="doesverbactivate"></a>CComControlBase::D Oesverbacuter
+## <a name="ccomcontrolbasedoesverbactivate"></a><a name="doesverbactivate"></a> CComControlBase::D Oesverbacuter
 
 Tarafından kullanılan *ıverb* parametresinin, `IOleObjectImpl::DoVerb` denetimin kullanıcı arabirimini (*ıverb* eşittir OLEIVERB_UIACTIVATE) etkinleştirdiğini denetler, Kullanıcı denetimi çift tıkladığında (*ıverb* eşittir OLEIVERB_PRIMARY), denetimi (*ıverb* eşittir OLEIVERB_SHOW) gösterir veya denetimi etkinleştirir (*ifiil* eşittir OLEIVERB_INPLACEACTIVATE).
 
@@ -293,7 +294,7 @@ Tarafından gerçekleştirilecek eylemi gösteren değer `DoVerb` .
 
 Kendi etkinleştirme fiilini tanımlamak için bu yöntemi geçersiz kılabilirsiniz.
 
-## <a name="ccomcontrolbasedoesverbuiactivate"></a><a name="doesverbuiactivate"></a>CComControlBase::D Oesverbuıactivate
+## <a name="ccomcontrolbasedoesverbuiactivate"></a><a name="doesverbuiactivate"></a> CComControlBase::D Oesverbuıactivate
 
 Tarafından kullanılan *ıverb* parametresinin, `IOleObjectImpl::DoVerb` denetimin kullanıcı ARABIRIMININ etkin ve true değerini döndürür olduğunu denetler.
 
@@ -310,7 +311,7 @@ Tarafından gerçekleştirilecek eylemi gösteren değer `DoVerb` .
 
 *Iverb* OLEIVERB_UIACTIVATE, OLEIVERB_PRIMARY, OLEIVERB_SHOW veya OLEIVERB_INPLACEACTIVATE eşitse true değerini döndürür. Aksi takdirde, yöntem FALSE döndürür.
 
-## <a name="ccomcontrolbasedoverbproperties"></a><a name="doverbproperties"></a>CComControlBase::D fazla Bproperties
+## <a name="ccomcontrolbasedoverbproperties"></a><a name="doverbproperties"></a> CComControlBase::D fazla Bproperties
 
 Denetimin özellik sayfalarını görüntüler.
 
@@ -336,7 +337,7 @@ Standart HRESULT değerlerinden biri.
 
 [!code-cpp[NVC_ATL_COM#20](../../atl/codesnippet/cpp/ccomcontrolbase-class_3.h)]
 
-## <a name="ccomcontrolbasefireviewchange"></a><a name="fireviewchange"></a>CComControlBase:: FireViewChange
+## <a name="ccomcontrolbasefireviewchange"></a><a name="fireviewchange"></a> CComControlBase:: FireViewChange
 
 Kapsayıcının denetimi yeniden çizmesini söylemek veya denetim görünümünün değiştiği kayıtlı öneri havuzlarını bilgilendirmek için bu yöntemi çağırın.
 
@@ -356,7 +357,7 @@ Denetim etkinse (denetim sınıfı veri üyesi [CComControlBase:: M_BINPLACEACTI
 
 [!code-cpp[NVC_ATL_COM#21](../../atl/codesnippet/cpp/ccomcontrolbase-class_4.cpp)]
 
-## <a name="ccomcontrolbasegetambientappearance"></a><a name="getambientappearance"></a>CComControlBase:: Getambentappearance
+## <a name="ccomcontrolbasegetambientappearance"></a><a name="getambientappearance"></a> CComControlBase:: Getambentappearance
 
 DISPID_AMBIENT_APPEARANCE, denetimin geçerli görünüm ayarını (düz için 0) ve 3B için 1 alır.
 
@@ -377,7 +378,7 @@ Standart HRESULT değerlerinden biri.
 
 [!code-cpp[NVC_ATL_COM#22](../../atl/codesnippet/cpp/ccomcontrolbase-class_5.h)]
 
-## <a name="ccomcontrolbasegetambientautoclip"></a><a name="getambientautoclip"></a>CComControlBase:: Getambentautoclip
+## <a name="ccomcontrolbasegetambientautoclip"></a><a name="getambientautoclip"></a> CComControlBase:: Getambentautoclip
 
 Kapsayıcının denetim görüntüleme alanının otomatik kırpmasını destekleyip desteklemediğini belirten bir bayrak alır DISPID_AMBIENT_AUTOCLIP.
 
@@ -394,7 +395,7 @@ HRESULT GetAmbientAutoClip(BOOL& bAutoClip);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientbackcolor"></a><a name="getambientbackcolor"></a>CComControlBase:: Getambentbackcolor
+## <a name="ccomcontrolbasegetambientbackcolor"></a><a name="getambientbackcolor"></a> CComControlBase:: Getambentbackcolor
 
 Kapsayıcı tarafından tanımlanan tüm denetimler için çevresel arka plan rengi DISPID_AMBIENT_BACKCOLOR alır.
 
@@ -411,7 +412,7 @@ HRESULT GetAmbientBackColor(OLE_COLOR& BackColor);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientcharset"></a><a name="getambientcharset"></a>CComControlBase:: Getambentcharset
+## <a name="ccomcontrolbasegetambientcharset"></a><a name="getambientcharset"></a> CComControlBase:: Getambentcharset
 
 Kapsayıcı tarafından tanımlanan tüm denetimler için çevresel karakter kümesini DISPID_AMBIENT_CHARSET alır.
 
@@ -428,7 +429,7 @@ HRESULT GetAmbientCharSet(BSTR& bstrCharSet);
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="ccomcontrolbasegetambientcodepage"></a><a name="getambientcodepage"></a>CComControlBase:: Getambentcodepage
+## <a name="ccomcontrolbasegetambientcodepage"></a><a name="getambientcodepage"></a> CComControlBase:: Getambentcodepage
 
 Kapsayıcı tarafından tanımlanan tüm denetimlerin çevresel kod sayfasını DISPID_AMBIENT_CODEPAGE alır.
 
@@ -445,7 +446,7 @@ HRESULT GetAmbientCodePage(ULONG& ulCodePage);
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="ccomcontrolbasegetambientdisplayasdefault"></a><a name="getambientdisplayasdefault"></a>CComControlBase:: Getambentdisplayasdefault
+## <a name="ccomcontrolbasegetambientdisplayasdefault"></a><a name="getambientdisplayasdefault"></a> CComControlBase:: Getambentdisplayasdefault
 
 Kapsayıcı, bu sitedeki denetimi varsayılan bir düğme olacak şekilde işaretlenmişse TRUE olan bir bayrak DISPID_AMBIENT_DISPLAYASDEFAULT alır ve bu nedenle bir düğme denetimi kendisini daha kalın bir kareyle çizmelidir.
 
@@ -462,7 +463,7 @@ HRESULT GetAmbientDisplayAsDefault(BOOL& bDisplayAsDefault);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientdisplayname"></a><a name="getambientdisplayname"></a>CComControlBase:: Getambentdisplayname
+## <a name="ccomcontrolbasegetambientdisplayname"></a><a name="getambientdisplayname"></a> CComControlBase:: Getambentdisplayname
 
 Kapsayıcının denetime sağladığı adı DISPID_AMBIENT_DISPLAYNAME alır.
 
@@ -479,7 +480,7 @@ HRESULT GetAmbientDisplayName(BSTR& bstrDisplayName);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientfont"></a><a name="getambientfont"></a>CComControlBase:: GetAmbientFont
+## <a name="ccomcontrolbasegetambientfont"></a><a name="getambientfont"></a> CComControlBase:: GetAmbientFont
 
 Kapsayıcının çevresel arabirimine bir işaretçi alır `IFont` .
 
@@ -500,7 +501,7 @@ Standart HRESULT değerlerinden biri.
 
 Özellik NULL ise, işaretçi NULL olur. İşaretçi NULL değilse, çağıran işaretçiyi serbest bırakmalıdır.
 
-## <a name="ccomcontrolbasegetambientfontdisp"></a><a name="getambientfontdisp"></a>CComControlBase:: GetAmbientFontDisp
+## <a name="ccomcontrolbasegetambientfontdisp"></a><a name="getambientfontdisp"></a> CComControlBase:: GetAmbientFontDisp
 
 Kapsayıcının çevresel dağıtım arabirimine bir işaretçi alır `IFontDisp` .
 
@@ -521,7 +522,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 Özellik NULL ise, işaretçi NULL olur. İşaretçi NULL değilse, çağıran işaretçiyi serbest bırakmalıdır.
 
-## <a name="ccomcontrolbasegetambientforecolor"></a><a name="getambientforecolor"></a>CComControlBase:: Getambentforecolor
+## <a name="ccomcontrolbasegetambientforecolor"></a><a name="getambientforecolor"></a> CComControlBase:: Getambentforecolor
 
 Kapsayıcı tarafından tanımlanan tüm denetimler için çevresel ön plan rengini DISPID_AMBIENT_FORECOLOR alır.
 
@@ -538,7 +539,7 @@ HRESULT GetAmbientForeColor(OLE_COLOR& ForeColor);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientlocaleid"></a><a name="getambientlocaleid"></a>CComControlBase:: Getambentlocaleıd
+## <a name="ccomcontrolbasegetambientlocaleid"></a><a name="getambientlocaleid"></a> CComControlBase:: Getambentlocaleıd
 
 Kapsayıcı tarafından kullanılan dilin tanımlayıcısını DISPID_AMBIENT_LOCALEID alır.
 
@@ -559,7 +560,7 @@ Standart HRESULT değerlerinden biri.
 
 Denetim bu tanımlayıcıyı kullanarak Kullanıcı arabirimini farklı dillere uyarlayabilir.
 
-## <a name="ccomcontrolbasegetambientmessagereflect"></a><a name="getambientmessagereflect"></a>CComControlBase:: Getambentmessagerefseç
+## <a name="ccomcontrolbasegetambientmessagereflect"></a><a name="getambientmessagereflect"></a> CComControlBase:: Getambentmessagerefseç
 
 Kapsayıcının pencere iletilerini (gibi) olay olarak almak isteyip istemediğini belirten bir bayrak alır DISPID_AMBIENT_MESSAGEREFLECT `WM_DRAWITEM` .
 
@@ -576,7 +577,7 @@ HRESULT GetAmbientMessageReflect(BOOL& bMessageReflect);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientpalette"></a><a name="getambientpalette"></a>CComControlBase:: Getambentpalette
+## <a name="ccomcontrolbasegetambientpalette"></a><a name="getambientpalette"></a> CComControlBase:: Getambentpalette
 
 Kapsayıcının HPALETTE erişmek için kullanılan DISPID_AMBIENT_PALETTE alır.
 
@@ -593,9 +594,9 @@ HRESULT GetAmbientPalette(HPALETTE& hPalette);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientproperty"></a><a name="getambientproperty"></a>CComControlBase:: Getambentproperty
+## <a name="ccomcontrolbasegetambientproperty"></a><a name="getambientproperty"></a> CComControlBase:: Getambentproperty
 
-*DISPID*tarafından belirtilen kapsayıcı özelliğini alır.
+*DISPID* tarafından belirtilen kapsayıcı özelliğini alır.
 
 ```
 HRESULT GetAmbientProperty(DISPID dispid, VARIANT& var);
@@ -617,7 +618,7 @@ Standart HRESULT değerlerinden biri.
 
 ATL belirli özellikleri almak için bir dizi yardımcı işlevi sağlamıştır, örneğin, [CComControlBase:: Getambentbackcolor](#getambientbackcolor). Uygun bir yöntem yoksa, kullanın `GetAmbientProperty` .
 
-## <a name="ccomcontrolbasegetambientrighttoleft"></a><a name="getambientrighttoleft"></a>CComControlBase:: GetAmbientRightToLeft
+## <a name="ccomcontrolbasegetambientrighttoleft"></a><a name="getambientrighttoleft"></a> CComControlBase:: GetAmbientRightToLeft
 
 İçeriğin kapsayıcı tarafından gösterileceği yönü DISPID_AMBIENT_RIGHTTOLEFT alır.
 
@@ -634,7 +635,7 @@ HRESULT GetAmbientRightToLeft(BOOL& bRightToLeft);
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="ccomcontrolbasegetambientscaleunits"></a><a name="getambientscaleunits"></a>CComControlBase:: Getambentscaleunits
+## <a name="ccomcontrolbasegetambientscaleunits"></a><a name="getambientscaleunits"></a> CComControlBase:: Getambentscaleunits
 
 Etiketleme görüntüleri için kapsayıcının çevresel birimlerinin (inç veya santimetre gibi) DISPID_AMBIENT_SCALEUNITS alır.
 
@@ -651,7 +652,7 @@ HRESULT GetAmbientScaleUnits(BSTR& bstrScaleUnits);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientshowgrabhandles"></a><a name="getambientshowgrabhandles"></a>CComControlBase:: Getambentshowgrabhandles
+## <a name="ccomcontrolbasegetambientshowgrabhandles"></a><a name="getambientshowgrabhandles"></a> CComControlBase:: Getambentshowgrabhandles
 
 Kapsayıcının, denetimin etkin olduğunda kendi kendine yönelik tutamaçları görüntülemesine izin verip içermediğini belirten bir bayrak alır DISPID_AMBIENT_SHOWGRABHANDLES.
 
@@ -668,7 +669,7 @@ HRESULT GetAmbientShowGrabHandles(BOOL& bShowGrabHandles);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientshowhatching"></a><a name="getambientshowhatching"></a>CComControlBase:: Getambentshowhadikiş
+## <a name="ccomcontrolbasegetambientshowhatching"></a><a name="getambientshowhatching"></a> CComControlBase:: Getambentshowhadikiş
 
 Kapsayıcının denetimin kullanıcı arabirimi etkinken denetimin kendisini bir hagesle görüntülemesine izin verip içermediğini belirten bir bayrak alır DISPID_AMBIENT_SHOWHATCHING.
 
@@ -685,7 +686,7 @@ HRESULT GetAmbientShowHatching(BOOL& bShowHatching);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambientsupportsmnemonics"></a><a name="getambientsupportsmnemonics"></a>CComControlBase:: GetAmbientSupportsMnemonics
+## <a name="ccomcontrolbasegetambientsupportsmnemonics"></a><a name="getambientsupportsmnemonics"></a> CComControlBase:: GetAmbientSupportsMnemonics
 
 Kapsayıcının klavye anımsatıcılarını destekleyip desteklemediğini gösteren bir bayrak DISPID_AMBIENT_SUPPORTSMNEMONICS alır.
 
@@ -702,7 +703,7 @@ HRESULT GetAmbientSupportsMnemonics(BOOL& bSupportsMnemonics);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambienttextalign"></a><a name="getambienttextalign"></a>CComControlBase:: Getambenttextalign
+## <a name="ccomcontrolbasegetambienttextalign"></a><a name="getambienttextalign"></a> CComControlBase:: Getambenttextalign
 
 Kapsayıcının tercih ettiği metin hizalamasını DISPID_AMBIENT_TEXTALIGN alır: Genel hizalama için 0 (rakamlar sağ, metin sola), sol hizalama için 1, orta hizalama için 2 ve sağ hizalama için 3.
 
@@ -719,7 +720,7 @@ HRESULT GetAmbientTextAlign(short& nTextAlign);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetambienttoptobottom"></a><a name="getambienttoptobottom"></a>CComControlBase:: Getambenttoptobottom
+## <a name="ccomcontrolbasegetambienttoptobottom"></a><a name="getambienttoptobottom"></a> CComControlBase:: Getambenttoptobottom
 
 İçeriğin kapsayıcı tarafından gösterileceği yönü DISPID_AMBIENT_TOPTOBOTTOM alır.
 
@@ -736,7 +737,7 @@ HRESULT GetAmbientTopToBottom(BOOL& bTopToBottom);
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="ccomcontrolbasegetambientuidead"></a><a name="getambientuidead"></a>CComControlBase:: Getambentuıdead
+## <a name="ccomcontrolbasegetambientuidead"></a><a name="getambientuidead"></a> CComControlBase:: Getambentuıdead
 
 Kapsayıcının denetimin kullanıcı arabirimi eylemlerine yanıt vermesini isteyip istemediğini belirten bir bayrak olan DISPID_AMBIENT_UIDEAD alır.
 
@@ -757,7 +758,7 @@ Standart HRESULT değerlerinden biri.
 
 TRUE ise denetim yanıt vermemelidir. Bu bayrak DISPID_AMBIENT_USERMODE bayrağını ne olursa olsun geçerlidir. Bkz. [CComControlBase:: Getambentkullanıcı modu](#getambientusermode).
 
-## <a name="ccomcontrolbasegetambientusermode"></a><a name="getambientusermode"></a>CComControlBase:: Getambentkullanıcı modu
+## <a name="ccomcontrolbasegetambientusermode"></a><a name="getambientusermode"></a> CComControlBase:: Getambentkullanıcı modu
 
 Kapsayıcının çalışma modunda (TRUE) veya tasarım modunda (FALSE) olup olmadığını belirten bir bayrak DISPID_AMBIENT_USERMODE alır.
 
@@ -774,7 +775,7 @@ HRESULT GetAmbientUserMode(BOOL& bUserMode);
 
 Standart HRESULT değerlerinden biri.
 
-## <a name="ccomcontrolbasegetdirty"></a><a name="getdirty"></a>CComControlBase:: GetDirty
+## <a name="ccomcontrolbasegetdirty"></a><a name="getdirty"></a> CComControlBase:: GetDirty
 
 Veri üyesinin değerini döndürür `m_bRequiresSave` .
 
@@ -790,7 +791,7 @@ BOOL GetDirty();
 
 Bu değer [CComControlBase:: SetDirty](#setdirty)kullanılarak ayarlanır.
 
-## <a name="ccomcontrolbasegetzoominfo"></a><a name="getzoominfo"></a>CComControlBase:: GetZoomInfo
+## <a name="ccomcontrolbasegetzoominfo"></a><a name="getzoominfo"></a> CComControlBase:: GetZoomInfo
 
 Yerinde düzenlenmek üzere etkinleştirilen bir denetim için yakınlaştırma faktörünün pay ve paydasın x ve y değerlerini alır.
 
@@ -807,7 +808,7 @@ Yakınlaştırma faktörünün pay ve paydasını tutacağız yapı. Daha fazla 
 
 Yakınlaştırma faktörü, denetimin doğal boyutunun geçerli kapsamına oranını sağlar.
 
-## <a name="ccomcontrolbaseinplaceactivate"></a><a name="inplaceactivate"></a>CComControlBase:: InPlaceActivate
+## <a name="ccomcontrolbaseinplaceactivate"></a><a name="inplaceactivate"></a> CComControlBase:: InPlaceActivate
 
 Denetimin etkin olmayan durumdan, *ıverb* 'teki fiilin gösterdiği herhangi bir duruma geçişine neden olur.
 
@@ -833,7 +834,7 @@ Bu yöntem, etkinleştirmeden önce, denetimin bir istemci sitesine sahip olup o
 
 Bu yöntem ayrıca `IOleInPlaceSite` `IOleInPlaceSiteEx` Denetim için bir, veya `IOleInPlaceSiteWindowless` arabirim işaretçisi alır ve bunu denetim sınıfının veri üyesi [CComControlBase:: m_spInPlaceSite](#m_spinplacesite)içinde depolar. [CComControlBase](#m_binplacesiteex):: m_bInPlaceSiteEx, CComControlBase: [: m_bWndLess](#m_bwndless), ccomcontrolbase:: [M_bWasOnceWindowless](#m_bwasoncewindowless)ve [CComControlBase:: m_bNegotiatedWnd](#m_bnegotiatedwnd) denetim sınıfı veri üyeleri uygun şekilde doğru olarak ayarlanmıştır.
 
-## <a name="ccomcontrolbaseinternalgetsite"></a><a name="internalgetsite"></a>CComControlBase:: ınternalgetsite
+## <a name="ccomcontrolbaseinternalgetsite"></a><a name="internalgetsite"></a> CComControlBase:: ınternalgetsite
 
 Tanımlanan arabirime yönelik bir işaretçinin denetim sitesini sorgulamak için bu yöntemi çağırın.
 
@@ -844,10 +845,10 @@ HRESULT InternalGetSite(REFIID riid, void** ppUnkSite);
 ### <a name="parameters"></a>Parametreler
 
 *riıd*<br/>
-*PpUnkSite*içinde döndürülmesi gereken ARABIRIM işaretçisinin IID 'si.
+*PpUnkSite* içinde döndürülmesi gereken ARABIRIM işaretçisinin IID 'si.
 
 *Ppunksıte*<br/>
-*Riid*içinde istenen arabirim işaretçisini alan işaretçi değişkeninin adresi.
+*Riid* içinde istenen arabirim işaretçisini alan işaretçi değişkeninin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -855,9 +856,9 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Site, *riid*içinde istenen arabirimi destekliyorsa, Işaretçi *ppUnkSite*aracılığıyla döndürülür. Aksi halde *Ppunksıte* null olarak ayarlanır.
+Site, *riid* içinde istenen arabirimi destekliyorsa, Işaretçi *ppUnkSite* aracılığıyla döndürülür. Aksi halde *Ppunksıte* null olarak ayarlanır.
 
-## <a name="ccomcontrolbasem_bautosize"></a><a name="m_bautosize"></a>CComControlBase:: m_bAutoSize
+## <a name="ccomcontrolbasem_bautosize"></a><a name="m_bautosize"></a> CComControlBase:: m_bAutoSize
 
 Denetimin başka bir boyut olmadığını belirten bayrak.
 
@@ -874,7 +875,7 @@ Bu bayrak tarafından denetlenir `IOleObjectImpl::SetExtent` ve true ise işlevi
 
 ATL Denetim Sihirbazı 'nın [Stok özellikleri](../../atl/reference/stock-properties-atl-control-wizard.md) sekmesine **otomatik boyut** seçeneğini eklerseniz, sihirbaz otomatik olarak bu veri üyesini denetim sınıfınızda oluşturur, özellik için Put ve Get yöntemlerini oluşturur ve özellik değiştiğinde kapsayıcıyı otomatik olarak bildirmek Için [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) 'yi destekler.
 
-## <a name="ccomcontrolbasem_bdrawfromnatural"></a><a name="m_bdrawfromnatural"></a>CComControlBase:: m_bDrawFromNatural
+## <a name="ccomcontrolbasem_bdrawfromnatural"></a><a name="m_bdrawfromnatural"></a> CComControlBase:: m_bDrawFromNatural
 
 `IDataObjectImpl::GetData`' In ' ı belirten ve `CComControlBase::GetZoomInfo` denetim boyutunu from yerine olarak ayarlaması gerektiğini belirten bayrak `m_sizeNatural` `m_sizeExtent` .
 
@@ -887,7 +888,7 @@ unsigned m_bDrawFromNatural:1;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_bdrawgetdatainhimetric"></a><a name="m_bdrawgetdatainhimetric"></a>CComControlBase:: m_bDrawGetDataInHimetric
+## <a name="ccomcontrolbasem_bdrawgetdatainhimetric"></a><a name="m_bdrawgetdatainhimetric"></a> CComControlBase:: m_bDrawGetDataInHimetric
 
 `IDataObjectImpl::GetData`Çizim sırasında piksel değil, HIMETRIK birimleri kullanması gerektiğini belirten bayrak.
 
@@ -902,7 +903,7 @@ Her mantıksal HIMETRIK birimi 0,01 milimetredir.
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_binplaceactive"></a><a name="m_binplaceactive"></a>CComControlBase:: m_bInPlaceActive
+## <a name="ccomcontrolbasem_binplaceactive"></a><a name="m_binplaceactive"></a> CComControlBase:: m_bInPlaceActive
 
 Denetimin yerinde etkin olduğunu belirten bayrak.
 
@@ -917,7 +918,7 @@ Bu, denetimin görünür olduğu ve pencere, varsa, menüleri ve araç çubuklar
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_binplacesiteex"></a><a name="m_binplacesiteex"></a>CComControlBase:: m_bInPlaceSiteEx
+## <a name="ccomcontrolbasem_binplacesiteex"></a><a name="m_binplacesiteex"></a> CComControlBase:: m_bInPlaceSiteEx
 
 Kapsayıcının, `IOleInPlaceSiteEx` penceresiz ve titreşimsiz denetimler gibi arabirim ve OCX96 denetim özelliklerini desteklediğini belirten bayrak.
 
@@ -930,11 +931,11 @@ unsigned m_bInPlaceSiteEx:1;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-Veri üyesi, `m_spInPlaceSite` ve bayraklarının değerine [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite)bağlı olarak bir IOleInPlaceSiteEx veya [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirimine işaret eder [IOleInPlaceSiteEx](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex) `m_bWndLess` `m_bInPlaceSiteEx` . ( `m_bNegotiatedWnd` İşaretçinin geçerli olması için veri ÜYESININ doğru olması gerekir `m_spInPlaceSite` .)
+Veri üyesi, `m_spInPlaceSite` ve bayraklarının değerine [](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite)bağlı olarak bir IOleInPlaceSiteEx veya [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirimine işaret eder [](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex) `m_bWndLess` `m_bInPlaceSiteEx` . ( `m_bNegotiatedWnd` İşaretçinin geçerli olması için veri ÜYESININ doğru olması gerekir `m_spInPlaceSite` .)
 
 `m_bWndLess`Yanlış ise ve `m_bInPlaceSiteEx` true ise `m_spInPlaceSite` bir `IOleInPlaceSiteEx` arabirim işaretçisidir. Bu üç veri üyesi arasındaki ilişkiyi gösteren tablo için bkz. [m_spInPlaceSite](#m_spinplacesite) .
 
-## <a name="ccomcontrolbasem_bnegotiatedwnd"></a><a name="m_bnegotiatedwnd"></a>CComControlBase:: m_bNegotiatedWnd
+## <a name="ccomcontrolbasem_bnegotiatedwnd"></a><a name="m_bnegotiatedwnd"></a> CComControlBase:: m_bNegotiatedWnd
 
 Denetimin, OCX96 denetim özellikleri (titreşimsiz ve Penceresiz denetimler gibi) için destek hakkında kapsayıcınıza ve denetimin pencereli mi yoksa penceresiz mi olduğunu belirten bayrak.
 
@@ -949,7 +950,7 @@ unsigned m_bNegotiatedWnd:1;
 
 `m_bNegotiatedWnd`İşaretçinin geçerli olması için BAYRAĞıN doğru olması gerekir `m_spInPlaceSite` .
 
-## <a name="ccomcontrolbasem_brecomposeonresize"></a><a name="m_brecomposeonresize"></a>CComControlBase:: m_bRecomposeOnResize
+## <a name="ccomcontrolbasem_brecomposeonresize"></a><a name="m_brecomposeonresize"></a> CComControlBase:: m_bRecomposeOnResize
 
 Kapsayıcı denetimin görüntüleme boyutunu değiştirdiğinde denetimin sunumunu yeniden oluşturmak istediğini belirten bayrak.
 
@@ -964,7 +965,7 @@ unsigned m_bRecomposeOnResize:1;
 
 Bu bayrak, [IOleObjectImpl:: SetExtent](../../atl/reference/ioleobjectimpl-class.md#setextent) tarafından DENETLENIR ve true ise, `SetExtent` Görünüm değişikliğini kapsayıcısına bildirir. Bu bayrak ayarlandıysa, [Olemisc](/windows/win32/api/oleidl/ne-oleidl-olemisc) numaralandırmasında OLEMISC_RECOMPOSEONRESIZE bit de ayarlanmalıdır.
 
-## <a name="ccomcontrolbasem_brequiressave"></a><a name="m_brequiressave"></a>CComControlBase:: m_bRequiresSave
+## <a name="ccomcontrolbasem_brequiressave"></a><a name="m_brequiressave"></a> CComControlBase:: m_bRequiresSave
 
 Denetimin son kaydedduğundan bu yana değiştiğini belirten bayrak.
 
@@ -979,7 +980,7 @@ Değeri `m_bRequiresSave` [CComControlBase:: SetDirty](#setdirty) Ile ayarlanabi
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_bresizenatural"></a><a name="m_bresizenatural"></a>CComControlBase:: m_bResizeNatural
+## <a name="ccomcontrolbasem_bresizenatural"></a><a name="m_bresizenatural"></a> CComControlBase:: m_bResizeNatural
 
 Kapsayıcı denetimin görüntüleme boyutunu değiştirdiğinde denetimin doğal kapsamını (ölçeklendirilmemiş fiziksel boyut) yeniden boyutlandırmak istediğini belirten bayrak.
 
@@ -996,7 +997,7 @@ Bu bayrak tarafından denetlenir `IOleObjectImpl::SetExtent` ve true ise, öğes
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_buiactive"></a><a name="m_buiactive"></a>CComControlBase:: m_bUIActive
+## <a name="ccomcontrolbasem_buiactive"></a><a name="m_buiactive"></a> CComControlBase:: m_bUIActive
 
 Denetimin, menüler ve araç çubukları gibi kullanıcı arabirimini belirten bayrak etkin.
 
@@ -1011,7 +1012,7 @@ unsigned m_bUIActive:1;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_busingwindowrgn"></a><a name="m_busingwindowrgn"></a>CComControlBase:: m_bUsingWindowRgn
+## <a name="ccomcontrolbasem_busingwindowrgn"></a><a name="m_busingwindowrgn"></a> CComControlBase:: m_bUsingWindowRgn
 
 Denetimin kapsayıcı tarafından sağlanan pencere bölgesini kullandığını belirten bayrak.
 
@@ -1024,7 +1025,7 @@ unsigned m_bUsingWindowRgn:1;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_bwasoncewindowless"></a><a name="m_bwasoncewindowless"></a>CComControlBase:: m_bWasOnceWindowless
+## <a name="ccomcontrolbasem_bwasoncewindowless"></a><a name="m_bwasoncewindowless"></a> CComControlBase:: m_bWasOnceWindowless
 
 Denetimin penceresiz olduğunu belirten bayrak, ancak şu anda penceresiz olabilir veya görünmeyebilir.
 
@@ -1037,7 +1038,7 @@ unsigned m_bWasOnceWindowless:1;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_bwindowonly"></a><a name="m_bwindowonly"></a>CComControlBase:: m_bWindowOnly
+## <a name="ccomcontrolbasem_bwindowonly"></a><a name="m_bwindowonly"></a> CComControlBase:: m_bWindowOnly
 
 Kapsayıcı penceresiz denetimleri desteklese bile denetimin pencereli olması gerektiğini belirten bayrak.
 
@@ -1050,7 +1051,7 @@ unsigned m_bWindowOnly:1;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_bwndless"></a><a name="m_bwndless"></a>CComControlBase:: m_bWndLess
+## <a name="ccomcontrolbasem_bwndless"></a><a name="m_bwndless"></a> CComControlBase:: m_bWndLess
 
 Denetimin penceresiz olduğunu belirten bayrak.
 
@@ -1063,11 +1064,11 @@ unsigned m_bWndLess:1;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-Veri üyesi, `m_spInPlaceSite` ve CComControlBase:: m_bInPlaceSiteEx bayraklarının değerine bağlı olarak bir IOleInPlaceSiteEx veya [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirimine işaret eder [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite) [IOleInPlaceSiteEx](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex) `m_bWndLess` . [CComControlBase::m_bInPlaceSiteEx](#m_binplacesiteex) (CComControlBase [:: m_bNegotiatedWnd](#m_bnegotiatedwnd) veri üyesi [ccomcontrolbase:: m_spInPlaceSite](#m_spinplacesite) IŞARETÇISININ geçerli olması için true olmalıdır.)
+Veri üyesi, `m_spInPlaceSite` ve CComControlBase:: m_bInPlaceSiteEx bayraklarının değerine bağlı olarak bir IOleInPlaceSiteEx veya [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirimine işaret eder [](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite) [](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex) `m_bWndLess` . [](#m_binplacesiteex) (CComControlBase [:: m_bNegotiatedWnd](#m_bnegotiatedwnd) veri üyesi [ccomcontrolbase:: m_spInPlaceSite](#m_spinplacesite) IŞARETÇISININ geçerli olması için true olmalıdır.)
 
 `m_bWndLess`True ise `m_spInPlaceSite` bir `IOleInPlaceSiteWindowless` arabirim işaretçisidir. Bu veri üyeleri arasındaki tüm ilişkiyi gösteren bir tablo için bkz. [CComControlBase:: m_spInPlaceSite](#m_spinplacesite) .
 
-## <a name="ccomcontrolbasem_hwndcd"></a><a name="m_hwndcd"></a>CComControlBase:: m_hWndCD
+## <a name="ccomcontrolbasem_hwndcd"></a><a name="m_hwndcd"></a> CComControlBase:: m_hWndCD
 
 Denetimle ilişkili pencere tanıtıcısına bir başvuru içerir.
 
@@ -1080,7 +1081,7 @@ HWND& m_hWndCD;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_nfreezeevents"></a><a name="m_nfreezeevents"></a>CComControlBase:: m_nFreezeEvents
+## <a name="ccomcontrolbasem_nfreezeevents"></a><a name="m_nfreezeevents"></a> CComControlBase:: m_nFreezeEvents
 
 Bir olay çözme (olayların kabulü) olmadan, kapsayıcının dondurulmuş olaylara (olayları kabul etmek için reddedildi) sahip olduğu sayıda sayı.
 
@@ -1093,7 +1094,7 @@ short m_nFreezeEvents;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_rcpos"></a><a name="m_rcpos"></a>CComControlBase:: m_rcPos
+## <a name="ccomcontrolbasem_rcpos"></a><a name="m_rcpos"></a> CComControlBase:: m_rcPos
 
 Denetimin piksel cinsinden konumu, kapsayıcının koordinatları cinsinden ifade edilir.
 
@@ -1106,7 +1107,7 @@ RECT m_rcPos;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_sizeextent"></a><a name="m_sizeextent"></a>CComControlBase:: m_sizeExtent
+## <a name="ccomcontrolbasem_sizeextent"></a><a name="m_sizeextent"></a> CComControlBase:: m_sizeExtent
 
 Belirli bir görüntü için HIMETRIK birimlerde (her birim 0,01 milimetre) denetimin kapsamı.
 
@@ -1123,7 +1124,7 @@ Bu boyut, ekran tarafından ölçeklendirilir. Denetimin fiziksel boyutu `m_size
 
 [AtlHiMetricToPixel](pixel-himetric-conversion-global-functions.md#atlhimetrictopixel)genel işlevi ile boyutu piksellere dönüştürebilirsiniz.
 
-## <a name="ccomcontrolbasem_sizenatural"></a><a name="m_sizenatural"></a>CComControlBase:: m_sizeNatural
+## <a name="ccomcontrolbasem_sizenatural"></a><a name="m_sizenatural"></a> CComControlBase:: m_sizeNatural
 
 Denetimin HIMETRIK birimlerde fiziksel boyutu (her birim 0,01 milimetre 'dir).
 
@@ -1140,7 +1141,7 @@ Bu boyut sabittir,, içindeki boyut `m_sizeExtent` görüntüleme ile ölçeklen
 
 [AtlHiMetricToPixel](pixel-himetric-conversion-global-functions.md#atlhimetrictopixel)genel işlevi ile boyutu piksellere dönüştürebilirsiniz.
 
-## <a name="ccomcontrolbasem_spadvisesink"></a><a name="m_spadvisesink"></a>CComControlBase:: m_spAdviseSink
+## <a name="ccomcontrolbasem_spadvisesink"></a><a name="m_spadvisesink"></a> CComControlBase:: m_spAdviseSink
 
 Kapsayıcıda doğrudan danışmanlık bağlantısına yönelik bir işaretçi (kapsayıcının [ıvısesink](/windows/win32/api/objidl/nn-objidl-iadvisesink)).
 
@@ -1154,7 +1155,7 @@ CComPtr<IAdviseSink>
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_spambientdispatch"></a><a name="m_spambientdispatch"></a>CComControlBase:: m_spAmbientDispatch
+## <a name="ccomcontrolbasem_spambientdispatch"></a><a name="m_spambientdispatch"></a> CComControlBase:: m_spAmbientDispatch
 
 `CComDispatchDriver`Nesnenin özelliklerini bir işaretçi aracılığıyla almanıza ve ayarlamanıza imkan tanıyan bir nesne `IDispatch` .
 
@@ -1167,7 +1168,7 @@ CComDispatchDriver m_spAmbientDispatch;
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_spclientsite"></a><a name="m_spclientsite"></a>CComControlBase:: m_spClientSite
+## <a name="ccomcontrolbasem_spclientsite"></a><a name="m_spclientsite"></a> CComControlBase:: m_spClientSite
 
 Kapsayıcının içindeki denetimin istemci sitesine yönelik bir işaretçi.
 
@@ -1181,7 +1182,7 @@ CComPtr<IOleClientSite>
 > [!NOTE]
 > Bu veri üyesini denetim sınıfınız içinde kullanmak için, onu denetim sınıfınıza bir veri üyesi olarak bildirmeniz gerekir. Taban sınıftaki bir Union içinde bildirildiği için denetim sınıfınız bu veri üyesini taban sınıftan almayacaktır.
 
-## <a name="ccomcontrolbasem_spdataadviseholder"></a><a name="m_spdataadviseholder"></a>CComControlBase:: m_spDataAdviseHolder
+## <a name="ccomcontrolbasem_spdataadviseholder"></a><a name="m_spdataadviseholder"></a> CComControlBase:: m_spDataAdviseHolder
 
 Veri nesneleri ve öneri havuzları arasında danışmanlık bağlantılarını tutmak için standart bir yol sağlar.
 
@@ -1199,7 +1200,7 @@ Veri nesnesi, verileri aktarabilen ve bu, yöntemleri verilerin biçimini ve akt
 
 Arabirim, `m_spDataAdviseHolder` kapsayıcıya yönelik danışmanlık bağlantıları oluşturmak ve silmek Için [ıdataobject::D Advise](/windows/win32/api/objidl/nf-objidl-idataobject-dadvise) ve [IDataObject::D Unadvise](/windows/win32/api/objidl/nf-objidl-idataobject-dunadvise) yöntemlerini uygular. Denetimin kapsayıcısının [ıvısesink](/windows/win32/api/objidl/nn-objidl-iadvisesink) arabirimini destekleyerek bir öneri havuzu uygulaması gerekir.
 
-## <a name="ccomcontrolbasem_spinplacesite"></a><a name="m_spinplacesite"></a>CComControlBase:: m_spInPlaceSite
+## <a name="ccomcontrolbasem_spinplacesite"></a><a name="m_spinplacesite"></a> CComControlBase:: m_spInPlaceSite
 
 Kapsayıcının [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex)veya [ıoleınplacesitepenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirim işaretçisine yönelik bir işaretçi.
 
@@ -1223,7 +1224,7 @@ Aşağıdaki tabloda, `m_spInPlaceSite` işaretçi türünün [m_bWndLess](#m_bw
 |`IOleInPlaceSiteEx`|FALSE|TRUE|
 |`IOleInPlaceSite`|FALSE|FALSE|
 
-## <a name="ccomcontrolbasem_spoleadviseholder"></a><a name="m_spoleadviseholder"></a>CComControlBase:: m_spOleAdviseHolder
+## <a name="ccomcontrolbasem_spoleadviseholder"></a><a name="m_spoleadviseholder"></a> CComControlBase:: m_spOleAdviseHolder
 
 Danışmanlık bağlantılarını tutan bir yol için standart bir uygulama sağlar.
 
@@ -1239,7 +1240,7 @@ CComPtr<IOleAdviseHolder>
 
 Arabirim, `m_spOleAdviseHolder` kapsayıcıya yönelik danışmanlık bağlantıları oluşturmak ve silmek Için [IOleObject:: Advise](/windows/win32/api/oleidl/nf-oleidl-ioleobject-advise) ve [IOleObject:: Unadvise](/windows/win32/api/oleidl/nf-oleidl-ioleobject-unadvise) yöntemlerini uygular. Denetimin kapsayıcısının [ıvısesink](/windows/win32/api/objidl/nn-objidl-iadvisesink) arabirimini destekleyerek bir öneri havuzu uygulaması gerekir.
 
-## <a name="ccomcontrolbaseondraw"></a><a name="ondraw"></a>CComControlBase:: OnDraw
+## <a name="ccomcontrolbaseondraw"></a><a name="ondraw"></a> CComControlBase:: OnDraw
 
 Denetiminizi çizmek için bu yöntemi geçersiz kılın.
 
@@ -1266,7 +1267,7 @@ Varsayılan olarak, `OnDraw` [CComControlBase:: OnDrawAdvanced](#ondrawadvanced)
 
 [CComControlBase:: Getambentappearance](#getambientappearance)örneğine bakın.
 
-## <a name="ccomcontrolbaseondrawadvanced"></a><a name="ondrawadvanced"></a>CComControlBase:: OnDrawAdvanced
+## <a name="ccomcontrolbaseondrawadvanced"></a><a name="ondrawadvanced"></a> CComControlBase:: OnDrawAdvanced
 
 Varsayılan değer, `OnDrawAdvanced` Çizim için Normalleştirilmemiş bir cihaz bağlamı hazırlar, sonra denetim sınıfınızın `OnDraw` yöntemini çağırır.
 
@@ -1289,7 +1290,7 @@ Kapsayıcı tarafından geçirilen cihaz bağlamını normalleştirmeden kabul e
 
 Daha fazla ayrıntı için bkz. [CComControlBase:: OnDraw](#ondraw) .
 
-## <a name="ccomcontrolbaseonkillfocus"></a><a name="onkillfocus"></a>CComControlBase:: OnKillFocus
+## <a name="ccomcontrolbaseonkillfocus"></a><a name="onkillfocus"></a> CComControlBase:: OnKillFocus
 
 Denetimin yerinde etkin olduğunu ve geçerli bir denetim sitesine sahip olduğunu denetler, sonra kapsayıcıya denetimin odağa sahip olduğunu bildirir.
 
@@ -1318,7 +1319,7 @@ Pencere iletisinin başarıyla işlendiğini belirten bayrak. Varsayılan değer
 
 Her zaman 1 döndürür.
 
-## <a name="ccomcontrolbaseonmouseactivate"></a><a name="onmouseactivate"></a>CComControlBase:: OnMouseActivate
+## <a name="ccomcontrolbaseonmouseactivate"></a><a name="onmouseactivate"></a> CComControlBase:: OnMouseActivate
 
 Kullanıcı ARABIRIMININ Kullanıcı modunda olduğunu denetler, sonra denetimi etkinleştirir.
 
@@ -1347,7 +1348,7 @@ Pencere iletisinin başarıyla işlendiğini belirten bayrak. Varsayılan değer
 
 Her zaman 1 döndürür.
 
-## <a name="ccomcontrolbaseonpaint"></a><a name="onpaint"></a>CComControlBase:: OnPaint
+## <a name="ccomcontrolbaseonpaint"></a><a name="onpaint"></a> CComControlBase:: OnPaint
 
 Kapsayıcıyı boyama için hazırlar, denetimin istemci alanını alır, sonra Denetim sınıfının `OnDrawAdvanced` yöntemini çağırır.
 
@@ -1380,7 +1381,7 @@ Her zaman sıfır döndürür.
 
 *WParam* null değilse, `OnPaint` geçerli bir HDC Içerdiğini varsayar ve [CComControlBase:: m_hWndCD](#m_hwndcd)yerine bunu kullanır.
 
-## <a name="ccomcontrolbaseonsetfocus"></a><a name="onsetfocus"></a>CComControlBase:: OnSetFocus
+## <a name="ccomcontrolbaseonsetfocus"></a><a name="onsetfocus"></a> CComControlBase:: OnSetFocus
 
 Denetimin yerinde etkin olduğunu ve geçerli bir denetim sitesine sahip olduğunu denetler ve sonra denetimin odağa sahip olduğu kapsayıcıyı bilgilendirir.
 
@@ -1413,7 +1414,7 @@ Her zaman 1 döndürür.
 
 Kapsayıcıya, denetimin odak aldığını belirten bir bildirim gönderir.
 
-## <a name="ccomcontrolbasepretranslateaccelerator"></a><a name="pretranslateaccelerator"></a>CComControlBase::P reTranslateAccelerator
+## <a name="ccomcontrolbasepretranslateaccelerator"></a><a name="pretranslateaccelerator"></a> CComControlBase::P reTranslateAccelerator
 
 Kendi klavye Hızlandırıcısı işleyicilerinizi sağlamak için bu yöntemi geçersiz kılın.
 
@@ -1434,7 +1435,7 @@ Ayrılmış.
 
 Varsayılan olarak FALSE döndürür.
 
-## <a name="ccomcontrolbasesendonclose"></a><a name="sendonclose"></a>CComControlBase:: SendOnClose
+## <a name="ccomcontrolbasesendonclose"></a><a name="sendonclose"></a> CComControlBase:: SendOnClose
 
 Denetim kapatılmış olan öneri sahibine kayıtlı tüm danışmanlık havuzlarını bilgilendirir.
 
@@ -1450,7 +1451,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 Denetimin danışmanlık havuzlarını kapattığını belirten bir bildirim gönderir.
 
-## <a name="ccomcontrolbasesendondatachange"></a><a name="sendondatachange"></a>CComControlBase:: SendOnDataChange
+## <a name="ccomcontrolbasesendondatachange"></a><a name="sendondatachange"></a> CComControlBase:: SendOnDataChange
 
 Denetim verilerinin değiştiği öneri sahibine kayıtlı tüm danışmanlık havuzlarını bilgilendirir.
 
@@ -1467,7 +1468,7 @@ HRESULT SendOnDataChange(DWORD advf = 0);
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="ccomcontrolbasesendonrename"></a><a name="sendonrename"></a>CComControlBase:: SendOnRename
+## <a name="ccomcontrolbasesendonrename"></a><a name="sendonrename"></a> CComControlBase:: SendOnRename
 
 Tüm danışmanlık havuzlarını, denetimin yeni bir adı olan öneri sahibine kayıtlı olduğunu bildirir.
 
@@ -1488,7 +1489,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 Denetimin bilinen adının değiştiğini belirten bir bildirim gönderir.
 
-## <a name="ccomcontrolbasesendonsave"></a><a name="sendonsave"></a>CComControlBase:: SendOnSave
+## <a name="ccomcontrolbasesendonsave"></a><a name="sendonsave"></a> CComControlBase:: SendOnSave
 
 Tüm danışmanlık havuzları ' nın, denetimin kaydedildiği öneri sahibine kayıtlı olduğunu bildirir.
 
@@ -1504,7 +1505,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 Denetimin verilerini kaydettiği bir bildirim gönderir.
 
-## <a name="ccomcontrolbasesendonviewchange"></a><a name="sendonviewchange"></a>CComControlBase:: SendOnViewChange
+## <a name="ccomcontrolbasesendonviewchange"></a><a name="sendonviewchange"></a> CComControlBase:: SendOnViewChange
 
 Tüm kayıtlı danışmanlık havuzlarını denetim görünümü ' nin değiştiğini bildirir.
 
@@ -1528,7 +1529,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 `SendOnViewChange`[ıvısesink:: OnViewChange](/windows/win32/api/objidl/nf-objidl-iadvisesink-onviewchange)öğesini çağırır. Şu anda desteklenen *Lindex* 'in tek değeri-1 ' dir. Bu, tüm görünümün ilgi olduğunu gösterir.
 
-## <a name="ccomcontrolbasesetcontrolfocus"></a><a name="setcontrolfocus"></a>CComControlBase:: SetControlFocus
+## <a name="ccomcontrolbasesetcontrolfocus"></a><a name="setcontrolfocus"></a> CComControlBase:: SetControlFocus
 
 Klavye odağını denetimden veya denetiminden kaldırır.
 
@@ -1549,9 +1550,9 @@ Denetim başarıyla odağı alırsa TRUE döndürür; Aksi takdirde, FALSE.
 
 Pencereli bir denetim için, Windows API işlevi [SetFocus](/windows/win32/api/winuser/nf-winuser-setfocus) çağırılır. Penceresiz bir denetim için, [ıoleınplacesitepenceresiz:: SetFocus](/windows/win32/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) çağırılır. Bu çağrı sayesinde, penceresiz bir denetim klavye odağını edinir ve pencere iletilerine yanıt verebilir.
 
-## <a name="ccomcontrolbasesetdirty"></a><a name="setdirty"></a>CComControlBase:: SetDirty
+## <a name="ccomcontrolbasesetdirty"></a><a name="setdirty"></a> CComControlBase:: SetDirty
 
-Veri üyesini `m_bRequiresSave` *bDirty*içindeki değere ayarlar.
+Veri üyesini `m_bRequiresSave` *bDirty* içindeki değere ayarlar.
 
 ```cpp
 void SetDirty(BOOL bDirty);
@@ -1564,7 +1565,7 @@ void SetDirty(BOOL bDirty);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetDirty(TRUE)`son kaydedildiği zamandan sonra denetimin değiştiğini işaretlemek için çağrılmalıdır. Değeri `m_bRequiresSave` [CComControlBase:: GetDirty](#getdirty)ile alınır.
+`SetDirty(TRUE)` son kaydedildiği zamandan sonra denetimin değiştiğini işaretlemek için çağrılmalıdır. Değeri `m_bRequiresSave` [CComControlBase:: GetDirty](#getdirty)ile alınır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

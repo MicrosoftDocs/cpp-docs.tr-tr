@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: başvuru sayımı'
 title: Başvuru sayımı (ATL)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - reference counts
 - references, counting
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
-ms.openlocfilehash: f90c818e58ae7ef6e4a0b771cb53ae5b185d1617
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0e80986f530d1d0c79fd5c271eb21e292dec06de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224350"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165751"
 ---
 # <a name="reference-counting"></a>Başvuru sayımı
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CTime sınıfı'
 title: CTime sınıfı
 ms.date: 10/18/2018
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-ms.openlocfilehash: d551698a81921227dd0d7b7d80436bba960ed176
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3768423a4d3bf873e9161b846e21fda4beffdc9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832041"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166609"
 ---
 # <a name="ctime-class"></a>CTime sınıfı
 
@@ -94,7 +95,7 @@ Eşlik eden bir sınıf olan [CTimeSpan](../../atl-mfc-shared/reference/ctimespa
 > [!NOTE]
 > Üst tarih sınırı 12/31/3000 ' dir. Alt sınır 1/1/1970 12:00:00 GMT 'dir.
 
-Kullanma hakkında daha fazla bilgi için `CTime` bkz. çalışma zamanı kitaplık başvurusunda makalelerin [Tarih ve saat](../../atl-mfc-shared/date-and-time.md)ve [saat yönetimi](../../c-runtime-library/time-management.md) .
+Kullanma hakkında daha fazla bilgi için `CTime` , Run-Time kitaplığı başvurusunda makaleleri [Tarih ve saat](../../atl-mfc-shared/date-and-time.md)ve [zaman yönetimi](../../c-runtime-library/time-management.md) bölümüne bakın.
 
 > [!NOTE]
 > `CTime`Yapı mfc 7,1 ' den mfc 8,0 ' ye değişti. `CTime`Mfc 8,0 veya sonraki bir sürümde **işleç <<** kullanarak bir yapıyı seri hale getirmek istiyorsanız, sonuçta elde edilen dosya daha eski MFC sürümlerinde okunabilir olmayacaktır.
@@ -397,7 +398,7 @@ Zaman verisini alacak bir arabelleğe işaret eder. Bu işaretçi NULL ise bir �
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İçerme dosyası SıRASıNDA tanımlanan bir doldurulmuş **Yapı TM** işaretçisi. Olsun. Yapı düzeni için bkz. [gmtime, _gmtime32 _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) .
+Dosya ekleme saatı. H içinde tanımlanan bir doldurulmuş **Yapı TM** işaretçisi. Yapı düzeni için bkz. [gmtime, _gmtime32 _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -444,7 +445,7 @@ Zaman verisini alacak bir arabelleğe işaret eder. Bu işaretçi NULL ise bir �
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İçerme dosyası SıRASıNDA tanımlanan bir doldurulmuş **Yapı TM** işaretçisi. Olsun. Yapı düzeni için bkz. [gmtime, _gmtime32 _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) .
+Dosya ekleme saatı. H içinde tanımlanan bir doldurulmuş **Yapı TM** işaretçisi. Yapı düzeni için bkz. [gmtime, _gmtime32 _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 

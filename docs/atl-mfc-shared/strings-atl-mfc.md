@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dizeler (ATL/MFC)'
 title: Dizeler (ATL-MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -21,32 +22,32 @@ helpviewer_keywords:
 - strings [C++], class CString
 - literal strings [C++], class CStringT
 ms.assetid: 3b33125b-1684-4542-a3a7-b00de7d0419e
-ms.openlocfilehash: f4d300bccb6387c510dc16d55eda17de20b4b134
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a63f69373f230d87880f0b3f2d016ce3263d3513
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62199030"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166492"
 ---
-# <a name="strings-atlmfc"></a>Strings (ATL/MFC)
+# <a name="strings-atlmfc"></a>Dizeler (ATL/MFC)
 
-Neredeyse tüm programlar dize verileri ile çalışma. Visual C++ Bu dize verileri yönetmek için birçok yol sağlar.
+Neredeyse tüm programlar dize verileriyle çalışır. Visual C++, bu dize verilerini yönetmek için çeşitli yollar sağlar.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [CStringT kullanma](../atl-mfc-shared/using-cstringt.md)<br/>
-Şablon sınıfı CStringT kullanarak programlama açıklar.
+CStringT şablon sınıfını kullanarak programlamayı açıklar.
 
-[CString Kullanma](../atl-mfc-shared/using-cstring.md)<br/>
-CString, CStringT varsayılan uygulamasını kullanarak programlama açıklar.
+[CString kullanma](../atl-mfc-shared/using-cstring.md)<br/>
+CStringT 'in varsayılan uygulamasını CString kullanarak programlamayı açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[CStringT genel bakış](../atl-mfc-shared/reference/cstringt-class.md)<br/>
-Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.
+[CStringT 'ye Genel Bakış](../atl-mfc-shared/reference/cstringt-class.md)<br/>
+Paylaşılan sınıf hakkında başvuru bilgileri sağlar `CStringT` .
 
-[MFC Kavramları](../mfc/mfc-concepts.md)<br/>
-Yardımcı olacak kavramsal ve görev tabanlı konular sunar MFC Kitaplığı kullanarak programlama.
+[MFC kavramları](../mfc/mfc-concepts.md)<br/>
+MFC kitaplığını kullanarak programkullanmanıza yardımcı olacak kavramsal ve görev tabanlı konular sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,32 +1,33 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CStringT kullanma'
 title: CStringT kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CStringT class, using
 ms.assetid: 3a9fffb1-6f90-482a-ab69-4003e6084cb5
-ms.openlocfilehash: 49b21d8a267eb2e8cf8c806ef21b4dd8ab36a1ff
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9320f7f972ca8bcd952abdec6c47fbab4b8aa288
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252532"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166271"
 ---
 # <a name="using-cstringt"></a>CStringT kullanma
 
-Bu bölümdeki konular, Şablon sınıfı kullanarak programlama açıklayan [CStringT](../atl-mfc-shared/reference/cstringt-class.md).
+Bu bölümdeki konularda [CStringT](../atl-mfc-shared/reference/cstringt-class.md)şablon sınıfı kullanılarak programlama açıklanır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)<br/>
-Bellek yönetimi ile ele alınmaktadır `CStringT`, değişken uzunlukta karakter dizeleri işlemek için kullanılan bir şablon sınıfı.
+[CStringT ile bellek yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)<br/>
+İle bellek yönetimini `CStringT` , değişken uzunluklu karakter dizelerini işlemek için kullanılan bir şablon sınıfı ile açıklar.
 
-[CStringT Kullanarak Dize Sınıflarını Dışarı Aktarma](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)<br/>
-CStringT <> Şablon sınıfı kullanarak DLL'den dışa aktarma kendi dize sınıfı açıklanmaktadır.
+[CStringT kullanarak dize sınıflarını dışa aktarma](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)<br/>
+CStringT<> Template sınıfını kullanarak bir DLL 'den kendi dize sınıfınızın nasıl dışarı aktarılacağını açıklar.
 
 ## <a name="reference"></a>Başvuru
 
 [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md).<br/>
-Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.
+Paylaşılan sınıf hakkında başvuru bilgileri sağlar `CStringT` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

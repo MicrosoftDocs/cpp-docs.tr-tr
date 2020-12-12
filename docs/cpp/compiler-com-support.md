@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici COM desteği'
 title: Derleyici COM Desteği
 ms.date: 05/06/2019
 helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 76a78442-f2a4-4985-9967-67e20773f847
-ms.openlocfilehash: 9a5961049cbc54c94cec5b444e2d98f013dda932
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1dd64d34b39a2b5cd2f0648d38deddf51e8541a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233788"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120470"
 ---
 # <a name="compiler-com-support"></a>Derleyici COM Desteği
 
@@ -20,7 +21,7 @@ Microsoft C++ derleyicisi, bileşen nesne modeli (COM) tür kitaplıklarını do
 
 [#İmport Önişlemci yönergesini](../preprocessor/hash-import-directive-cpp.md)kullanarak, derleyici bir tür kitaplığını OKUYABILIR ve com arabirimlerini sınıflar olarak açıklayan bir C++ üst bilgi dosyasına dönüştürebilir. `#import`Oluşturulan tür kitaplığı üst bilgi dosyaları için içeriğin Kullanıcı denetimi için bir dizi öznitelik vardır.
 
-Bir COM nesnesine bir genel benzersiz tanımlayıcı (GUID) atamak için [__declspec](../cpp/declspec.md) genişletilmiş öznitelik [UUID](../cpp/uuid-cpp.md) 'sini kullanabilirsiniz. Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) bir com NESNESIYLE ilişkili GUID 'yi ayıklamak için kullanılabilir. Bir **`__declspec`** [property](../cpp/property-cpp.md) `get` `set` com nesnesinin veri üyesi için ve yöntemlerini belirtmek için başka bir öznitelik, özelliği kullanılabilir.
+Bir COM nesnesine bir genel benzersiz tanımlayıcı (GUID) atamak için [__declspec](../cpp/declspec.md) genişletilmiş öznitelik [UUID](../cpp/uuid-cpp.md) 'sini kullanabilirsiniz. Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) bir com NESNESIYLE ilişkili GUID 'yi ayıklamak için kullanılabilir. Bir **`__declspec`** [](../cpp/property-cpp.md) `get` `set` com nesnesinin veri üyesi için ve yöntemlerini belirtmek için başka bir öznitelik, özelliği kullanılabilir.
 
 `VARIANT`Ve `BSTR` türlerini desteklemek, akıllı işaretçiler uygulamak ve tarafından oluşturulan hata nesnesini kapsüllemek IÇIN bir com desteği genel işlevleri ve sınıfları kümesi verilmiştir `_com_raise_error` :
 

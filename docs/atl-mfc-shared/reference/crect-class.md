@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CRect sınıfı'
 title: CRect sınıfı
 ms.date: 11/06/2018
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: f45090971e8dbb89ae281b408cc3a14e102ffe17
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 229ec3b54f1b128641034bc763d2a62c0a6fe0a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502884"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166687"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 
 Bir Windows [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına benzer.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CRect : public tagRECT
@@ -431,7 +432,7 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *lpRect*<br/>
-[RECT](/windows/win32/api/windef/ns-windef-rect) `CRect` Bir dikdörtgenin sol üst ve sağ alt köşe koordinatlarını içeren bir Rect yapısına veya nesnesine işaret eder.
+[](/windows/win32/api/windef/ns-windef-rect) `CRect` Bir dikdörtgenin sol üst ve sağ alt köşe koordinatlarını içeren bir Rect yapısına veya nesnesine işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -645,7 +646,7 @@ ASSERT(!rectNotNull.IsRectNull());
 
 ## <a name="crectmovetox"></a><a name="movetox"></a> CRect:: MoveToX
 
-Dikdörtgeni *x*tarafından belirtilen mutlak x koordinatına taşımak için bu işlevi çağırın.
+Dikdörtgeni *x* tarafından belirtilen mutlak x koordinatına taşımak için bu işlevi çağırın.
 
 ```cpp
 void MoveToX(int x) throw();
@@ -697,7 +698,7 @@ ASSERT(rect == CRect(10, 10, 110, 110));
 
 ## <a name="crectmovetoy"></a><a name="movetoy"></a> CRect:: Moveoyunu
 
-Dikdörtgeni *y*tarafından belirtilen mutlak y koordinatına taşımak için bu işlevi çağırın.
+Dikdörtgeni *y* tarafından belirtilen mutlak y koordinatına taşımak için bu işlevi çağırın.
 
 ```cpp
 void MoveToY(int y) throw();
@@ -768,7 +769,7 @@ Her iki [boyutu](/windows/win32/api/windef/ns-windef-size) da taşımak için be
 
 ### <a name="remarks"></a>Açıklamalar
 
-X `CRect` *x* birimini x ekseni ve *y* birimleri üzerinde y ekseni üzerinde kaydırır. *X* ve *y* parametreleri imzalı değerlerdir, bu nedenle `CRect` sol veya sağ ve yukarı veya aşağı taşınabilir.
+X `CRect`  birimini x ekseni ve *y* birimleri üzerinde y ekseni üzerinde kaydırır. *X* ve *y* parametreleri imzalı değerlerdir, bu nedenle `CRect` sol veya sağ ve yukarı veya aşağı taşınabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -871,7 +872,7 @@ ASSERT(rect1 == test);
 
 ## <a name="crectoperator-"></a><a name="operator_neq"></a> CRect:: operator! =
 
-*rect* `CRect` Sol üst ve sağ alt köşelerin koordinatları karşılaştırılırken Rect 'in eşit olup olmadığını belirler.
+ `CRect` Sol üst ve sağ alt köşelerin koordinatları karşılaştırılırken Rect 'in eşit olup olmadığını belirler.
 
 ```
 BOOL operator!=(const RECT& rect) const throw();
@@ -1059,7 +1060,7 @@ Dönüş değerini taşıyacağınız birim sayısını belirten bir [nokta](/wi
 Dönüş değerini taşıyacağınız birim sayısını belirten bir [Boyut](/windows/win32/api/windef/ns-windef-size) yapısı veya [CSize](csize-class.md) nesnesi.
 
 *lpRect*<br/>
-[RECT](/windows/win32/api/windef/ns-windef-rect) `CRect` Dönüş değerinin her tarafını almak için birim sayısını içeren bir Rect yapısına veya nesnesine işaret eder.
+[](/windows/win32/api/windef/ns-windef-rect) `CRect` Dönüş değerinin her tarafını almak için birim sayısını içeren bir Rect yapısına veya nesnesine işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1096,13 +1097,13 @@ CRect operator-(LPCRECT lpRect) const throw();
 ### <a name="parameters"></a>Parametreler
 
 *seçeneğinin*<br/>
-[POINT](/windows/win32/api/windef/ns-windef-point) `CPoint` Dönüş değerini taşıyacağınız birim sayısını belirten bir nokta yapısı veya nesnesi.
+[](/windows/win32/api/windef/ns-windef-point) `CPoint` Dönüş değerini taşıyacağınız birim sayısını belirten bir nokta yapısı veya nesnesi.
 
 *boyutla*<br/>
-[SIZE](/windows/win32/api/windef/ns-windef-size) `CSize` Dönüş değerini taşıyacağınız birim sayısını belirten bir boyut yapısı veya nesnesi.
+[](/windows/win32/api/windef/ns-windef-size) `CSize` Dönüş değerini taşıyacağınız birim sayısını belirten bir boyut yapısı veya nesnesi.
 
 *lpRect*<br/>
-[RECT](/windows/win32/api/windef/ns-windef-rect) `CRect` Dönüş değerinin her tarafını söndür olan birim sayısını içeren bir Rect yapısına veya nesnesine işaret eder.
+[](/windows/win32/api/windef/ns-windef-rect) `CRect` Dönüş değerinin her tarafını söndür olan birim sayısını içeren bir Rect yapısına veya nesnesine işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1128,7 +1129,7 @@ ASSERT(rect2 == rectResult);
 
 ## <a name="crectoperator-amp"></a><a name="operator_amp"></a> CRect:: işleci &amp;
 
-`CRect`Ve rect2 kesişimi olan bir döndürür `CRect` . *rect2*
+`CRect`Ve rect2 kesişimi olan bir döndürür `CRect` . 
 
 ```
 CRect operator&(const RECT& rect2) const throw();
@@ -1164,7 +1165,7 @@ ASSERT(rectResult == rect3);
 
 ## <a name="crectoperator-124"></a><a name="operator_or"></a> CRect:: operator &#124;
 
-`CRect`Ve rect2 birleşimi olan bir döndürür `CRect` . *rect2*
+`CRect`Ve rect2 birleşimi olan bir döndürür `CRect` . 
 
 ```
 CRect operator|(const RECT&
@@ -1178,7 +1179,7 @@ Bir [Rect](/windows/win32/api/windef/ns-windef-rect) veya içerir `CRect` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CRect` `CRect` Ve *rect2*birleşimi.
+`CRect` `CRect` Ve *rect2* birleşimi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1348,7 +1349,7 @@ BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıkarma, *lpRectScr1* içinde *lpRectScr1* ve *lpRectScr2*kesişimine olmayan tüm noktaları içeren en küçük dikdörtgendir.
+Çıkarma, *lpRectScr1* içinde *lpRectScr1* ve *lpRectScr2* kesişimine olmayan tüm noktaları içeren en küçük dikdörtgendir.
 
 *LpRectSrc2* tarafından belirtilen dikdörtgen, x veya y yönlerinin en az birinde *lpRectSrc1* tarafından belirtilen dikdörtgenden tamamen çakışmazsa, *lpRectSrc1* tarafından belirtilen dikdörtgen değiştirilmez.
 

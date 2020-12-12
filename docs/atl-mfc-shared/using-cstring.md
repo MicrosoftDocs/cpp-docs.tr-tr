@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CString kullanma'
 title: CString kullanma
 ms.date: 06/18/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CString objects, reference counting
 - CString class (Visual C++)
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
-ms.openlocfilehash: 8ebf3441c7d8856fe412e2efed4c717b01ced362
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f0afea345f2a01d66cbb541aa2a6c958c28365a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219020"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166401"
 ---
 # <a name="using-cstring"></a>CString kullanma
 
@@ -23,11 +24,11 @@ Kullanmak için `CString` `atlstr.h` üst bilgiyi ekleyin.
 
 Bir `CStringW` nesne türü içerir **`wchar_t`** ve Unicode dizelerini destekler. Bir `CStringA` nesne türü içerir **`char`** ve tek baytlı ve çok BAYTLı (MBCS) dizeleri destekler. Bir `CString` nesne, **`char`** **`wchar_t`** MBCS SEMBOLÜNÜN mi yoksa UNICODE sembolünün derleme zamanında mi tanımlandığına bağlı olarak türü ya da türü destekler.
 
-`CString`Nesne, bir nesnede karakter verilerini tutar `CStringData` . `CString`NULL ile sonlandırılmış C stili dizeleri kabul eder. `CString`daha hızlı performans için dize uzunluğunu izler, ancak LPCWSTR 'e dönüştürmeyi desteklemek için depolanan karakter verilerinde NULL karakteri de korur. `CString`, bir C stili dize dışarı aktardığında null Sonlandırıcı içerir. Başka konumlarda bir NULL ekleyebilirsiniz `CString` , ancak bu durum beklenmedik sonuçlara neden olabilir.
+`CString`Nesne, bir nesnede karakter verilerini tutar `CStringData` . `CString` NULL ile sonlandırılmış C stili dizeleri kabul eder. `CString` daha hızlı performans için dize uzunluğunu izler, ancak LPCWSTR 'e dönüştürmeyi desteklemek için depolanan karakter verilerinde NULL karakteri de korur. `CString` , bir C stili dize dışarı aktardığında null Sonlandırıcı içerir. Başka konumlarda bir NULL ekleyebilirsiniz `CString` , ancak bu durum beklenmedik sonuçlara neden olabilir.
 
 Aşağıdaki dize sınıfları kümesi, CRT desteği olan veya olmayan bir MFC Kitaplığı bağlamadan kullanılabilir: `CAtlString` , `CAtlStringA` ve `CAtlStringW` .
 
-`CString`Yerel projelerde kullanılır. Yönetilen kod (C++/CLı) projeleri için kullanın `System::String` .
+`CString` Yerel projelerde kullanılır. Yönetilen kod (C++/CLı) projeleri için kullanın `System::String` .
 
 , Veya şu anda tekliften daha fazla özellik eklemek için `CString` `CStringA` `CStringW` , ek özellikleri içeren bir alt sınıfı oluşturmalısınız `CStringT` .
 

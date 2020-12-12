@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Yapı bildirimleri'
 title: Yapı Bildirimleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - structure members
 - embedded structures
 ms.assetid: 5be3be77-a236-4153-b574-7aa77675df7f
-ms.openlocfilehash: 3b9aa30cfeecbd60fda61e6a484043c82c9a3b28
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6fe2a241e28ce9b8c9c1ee114c18e2aa9afc704c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217057"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114617"
 ---
 # <a name="structure-declarations"></a>Yapı Bildirimleri
 
@@ -149,7 +150,7 @@ struct somestruct
 
 Derleyici, bir yapının son üyesi olarak boyutlandırılabilen veya sıfır boyutlu bir diziye izin verir. Bu, bir sabit dizinin boyutu farklı durumlarda kullanıldığında yararlı olabilir. Böyle bir yapının bildirimi şöyle görünür:
 
-**`struct`***tanımlayıcı* **{** *-of-of-bildirimlerin* *türü* <em>dizi-adı</em>** \[ ];};**
+**`struct`***tanımlayıcı* **{** *-of-of-bildirimlerin* *türü* <em>dizi-adı</em>**\[ ];};**
 
 Boyutlandırılabilen diziler yalnızca bir yapının son üyesi olarak görünebilir. Boyutlandırılmış dizi bildirimleri içeren yapılar, herhangi bir kapsayan yapıda hiçbir başka üye bildirildiği sürece diğer yapılar içinde iç içe olabilir. Bu tür yapıların dizilerine izin verilmez. **`sizeof`** İşleci, bu türün bir değişkenine veya türüne uygulandığında, dizinin boyutu için 0 varsayar.
 

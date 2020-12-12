@@ -1,30 +1,31 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetime özellik ekleme (ATL öğreticisi, Bölüm 3)'
 title: Denetime Özellik Ekleme (ATL Eğitmeni, Bölüm 3)
 ms.custom: get-started-article
 ms.date: 09/26/2018
 ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
-ms.openlocfilehash: c5f71880f780e793cd77eb5a7571d31de4a8d01a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 22a44b6878afd6d51fb396d8f02a60e93436cf05
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219007"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166336"
 ---
 # <a name="adding-a-property-to-the-control-atl-tutorial-part-3"></a>Denetime Özellik Ekleme (ATL Eğitmeni, Bölüm 3)
 
-`IPolyCtl`, denetimin özel yöntemlerini ve özelliklerini içeren arabirimdir ve buna bir özellik eklersiniz.
+`IPolyCtl` , denetimin özel yöntemlerini ve özelliklerini içeren arabirimdir ve buna bir özellik eklersiniz.
 
 ### <a name="to-add-the-property-definitions-to-your-project"></a>Projenize özellik tanımlarını eklemek için
 
-1. **Sınıf görünümü**dal ' ı genişletin `Polygon` .
+1. **Sınıf görünümü** dal ' ı genişletin `Polygon` .
 
 1. Sağ tıklayın `IPolyCtl` .
 
 1. Kısayol menüsünde, **Ekle**' ye ve ardından **Özellik Ekle**' ye tıklayın. **Özellik ekleme** Sihirbazı görünür.
 
-1. `Sides` **Özellik adı**olarak yazın.
+1. `Sides` **Özellik adı** olarak yazın.
 
-1. **Özellik türünün**açılan listesinde, öğesini seçin **`short`** .
+1. **Özellik türünün** açılan listesinde, öğesini seçin **`short`** .
 
 1. Özelliği eklemeyi bitirmeden **Tamam** ' ı tıklatın.
 

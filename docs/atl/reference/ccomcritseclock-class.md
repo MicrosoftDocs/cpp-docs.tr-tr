@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComCritSecLock sınıfı'
 title: CComCritSecLock sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComCritSecLock class
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
-ms.openlocfilehash: fd2904f67d84db42d6b35aa4e505b063d6ea9a9f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7cad44f062fe75418da1f948c5f180283142779b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152106"
 ---
 # <a name="ccomcritseclock-class"></a>CComCritSecLock sınıfı
 
 Bu sınıf, kritik bir bölüm nesnesini kilitlemek ve kilidini açmak için yöntemler sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template<class TLock> class CComCritSecLock
@@ -56,7 +57,7 @@ Nesneleri [Ccomcriticalhandle bölüm sınıfı](../../atl/reference/ccomcritica
 
 **Üstbilgi:** atlbase. h
 
-## <a name="ccomcritseclockccomcritseclock"></a><a name="ctor"></a>CComCritSecLock:: CComCritSecLock
+## <a name="ccomcritseclockccomcritseclock"></a><a name="ctor"></a> CComCritSecLock:: CComCritSecLock
 
 Oluşturucu.
 
@@ -76,7 +77,7 @@ Kritik bölüm nesnesi.
 
 Kritik bölüm nesnesini başlatır.
 
-## <a name="ccomcritseclockccomcritseclock"></a><a name="dtor"></a>CComCritSecLock:: ~ CComCritSecLock
+## <a name="ccomcritseclockccomcritseclock"></a><a name="dtor"></a> CComCritSecLock:: ~ CComCritSecLock
 
 Yok edicisi.
 
@@ -88,7 +89,7 @@ Yok edicisi.
 
 Kritik bölüm nesnesinin kilidini açar.
 
-## <a name="ccomcritseclocklock"></a><a name="lock"></a>CComCritSecLock:: Lock
+## <a name="ccomcritseclocklock"></a><a name="lock"></a> CComCritSecLock:: Lock
 
 Kritik bölüm nesnesini kilitlemek için bu yöntemi çağırın.
 
@@ -104,7 +105,7 @@ Nesne başarıyla kilitliyse S_OK veya hata durumunda HRESULT hatası döndürü
 
 Nesne zaten kilitliyse hata ayıklama yapılarında bir onaylama hatası oluşur.
 
-## <a name="ccomcritseclockunlock"></a><a name="unlock"></a>CComCritSecLock:: unlock
+## <a name="ccomcritseclockunlock"></a><a name="unlock"></a> CComCritSecLock:: unlock
 
 Kritik bölüm nesnesinin kilidini açmak için bu yöntemi çağırın.
 

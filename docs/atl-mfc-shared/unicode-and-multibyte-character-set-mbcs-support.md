@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Unicode ve çok baytlı karakter kümesi (MBCS) desteği'
 title: Unicode ve çok baytlı karakter kümesi (MBCS) desteği
 ms.date: 01/09/2017
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Unicode [C++], string objects
 - strings [C++], Unicode
 - strings [C++], character set support
-ms.openlocfilehash: efa90acd169aeb8739b0bf97a5ab27026cc80cc6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9e9a09777e835872a5c8bc6613460478acf9be9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831989"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166414"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Unicode ve çok baytlı karakter kümesi (MBCS) desteği
 
@@ -35,30 +36,30 @@ Bu kitaplık, hata ayıklayıcı ve DLL dosyaları MFC 'de Unicode 'U destekleme
 
 :::row:::
    :::column span="":::
-      MFC*Sürüm*U. LIB \
-      MFC*Sürüm*ud 'si. LIB
-      MFCM*Sürüm*U. LIB \
-      MFCM*Sürüm*ud. LIB
-      MFCS*Sürüm*U. LIB \
-      MFCS*Sürüm*ud. LIB
+      MFC *Sürüm* U. LIB \
+      MFC *Sürüm* ud 'si. LIB
+      MFCM *Sürüm* U. LIB \
+      MFCM *Sürüm* ud. LIB
+      MFCS *Sürüm* U. LIB \
+      MFCS *Sürüm* ud. LIB
       UıAFXFA. LIB
       UıAFXCWD. LıB
    :::column-end:::
    :::column span="":::
-      MFC*Sürüm*U. pdb \
-      MFC*Sürüm*ud 'si. PDB
-      MFCM*Sürüm*U. pdb \
-      MFCM*Sürüm*ud. PDB
-      MFCS*Sürüm*U. pdb \
-      MFCS*Sürüm*ud. PDB
+      MFC *Sürüm* U. pdb \
+      MFC *Sürüm* ud 'si. PDB
+      MFCM *Sürüm* U. pdb \
+      MFCM *Sürüm* ud. PDB
+      MFCS *Sürüm* U. pdb \
+      MFCS *Sürüm* ud. PDB
       UıAFXFA. PDB
       UıAFXCWD. PDB
    :::column-end:::
    :::column span="":::
-      MFC*sürüm*U.DLL \
-      MFC*sürüm*UD.DLL \
-      MFCM*sürüm*U.DLL \
-      MFCM*sürüm*UD.DLL
+      MFC *sürüm* U.DLL \
+      MFC *sürüm* UD.DLL \
+      MFCM *sürüm* U.DLL \
+      MFCM *sürüm* UD.DLL
    :::column-end:::
 :::row-end:::
 
@@ -110,9 +111,9 @@ DBCS altında, belirli bir dize tüm tek baytlı ANSI karakterlerini, tüm çift
 > [!NOTE]
 > _MBCS ve _UNICODE sembolleri birbirini dışlıyor.
 
-Tüm çalışma zamanı dize işleme yordamlarının genel metin işlev eşlemeleri [C çalışma zamanı kitaplığı başvurusunda](../c-runtime-library/c-run-time-library-reference.md)ele alınmıştır. Bir liste için bkz. [Uluslararası duruma getirme](../c-runtime-library/internationalization.md).
+Tüm çalışma zamanı dize işleme yordamlarının genel metin işlev eşlemeleri, [C Run-Time kitaplığı başvurusunda](../c-runtime-library/c-run-time-library-reference.md)ele alınmıştır. Bir liste için bkz. [Uluslararası duruma getirme](../c-runtime-library/internationalization.md).
 
-Benzer şekilde, `CString` Yöntemler genel veri türü eşlemeleri kullanılarak uygulanır. Hem MBCS hem de UNICODE 'u etkinleştirmek için MFC, veya için **`char`** , veya için bir **`wchar_t`** **`char`** <strong>\*</strong> `wchar_t*` **const char** <strong>\*</strong> `const wchar_t*` Bu, MBCS veya Unicode için doğru eşlemeleri güvence altına aldığından emin olabilir.
+Benzer şekilde, `CString` Yöntemler genel veri türü eşlemeleri kullanılarak uygulanır. Hem MBCS hem de UNICODE 'u etkinleştirmek için MFC, veya için **`char`** , veya için bir **`wchar_t`** **`char`** <strong>\*</strong> `wchar_t*`  <strong>\*</strong> `const wchar_t*` Bu, MBCS veya Unicode için doğru eşlemeleri güvence altına aldığından emin olabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

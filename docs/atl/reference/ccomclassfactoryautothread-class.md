@@ -1,5 +1,6 @@
 ---
-title: CComClassFactoryAutoThread Sınıfı
+description: 'Daha fazla bilgi edinin: CComClassFactoryAutoThread sınıfı'
+title: CComClassFactoryAutoThread sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComClassFactoryAutoThread
@@ -9,21 +10,21 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactoryAutoThread class
 ms.assetid: 22008042-533f-4dd9-bf7e-191ee571f9a1
-ms.openlocfilehash: e997d92adfa9df46c82dacbd297db495b037c6e6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9d25303d4d40f695c68fdf09aae7d56e6f1e5fb1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152288"
 ---
-# <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread Sınıfı
+# <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread sınıfı
 
-Bu sınıf [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirimini uygular ve nesnelerin birden çok dairede oluşturulmasına izin verir.
+Bu sınıf, [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirimini uygular ve nesnelerin birden çok apartmanlarda oluşturulmasına izin verir.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CComClassFactoryAutoThread
@@ -35,16 +36,16 @@ class CComClassFactoryAutoThread
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CcomclassFactoryAutoThread::CreateInstance](#createinstance)|Belirtilen CLSID bir nesne oluşturur.|
-|[CcomclassFactoryAutoThread::LockServer](#lockserver)|Sınıf fabrikasını hafızaya kilitler.|
+|[CComClassFactoryAutoThread:: CreateInstance](#createinstance)|Belirtilen CLSID 'nin bir nesnesini oluşturur.|
+|[CComClassFactoryAutoThread:: LockServer](#lockserver)|Bellek içinde sınıf fabrikasını kilitler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComClassFactoryAutoThread`[CComClassFactory](../../atl/reference/ccomclassfactory-class.md)benzer, ancak nesnelerin birden çok daire de oluşturulmasını sağlar. Bu destekten yararlanmak için EXE modülünüzü [CComAutoThreadModule'den](../../atl/reference/ccomautothreadmodule-class.md)türetin.
+`CComClassFactoryAutoThread` , [CComClassFactory](../../atl/reference/ccomclassfactory-class.md)ile benzerdir, ancak nesnelerin birden çok apartmanlarda oluşturulmasına izin verir. Bu destekten faydalanmak için, [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)' dan exe modülünüzü türetebilirsiniz.
 
-ATL nesneleri normalde [CComCoClass'tan](../../atl/reference/ccomcoclass-class.md)türeerek bir sınıf fabrikası satın ala.rıöleri. Bu sınıf, [CComClassFactory'yi](../../atl/reference/ccomclassfactory-class.md) varsayılan sınıf fabrikası olarak bildiren makro [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory)içerir. Kullanmak `CComClassFactoryAutoThread`için, nesnenizin sınıf tanımında [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makro belirtin. Örneğin:
+ATL nesneleri, normal olarak [CComCoClass](../../atl/reference/ccomcoclass-class.md)'tan türeterek bir sınıf fabrikası elde ettiliyor. Bu sınıf, [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) 'yi varsayılan sınıf fabrikası olarak bildiren [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory)makro içerir. Kullanmak için `CComClassFactoryAutoThread` , nesnenizin sınıf tanımında [declare_classfactory_auto_thread](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makrosunu belirtin. Örneğin:
 
 [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/cpp/ccomclassfactoryautothread-class_1.h)]
 
@@ -52,7 +53,7 @@ ATL nesneleri normalde [CComCoClass'tan](../../atl/reference/ccomcoclass-class.m
 
 `CComObjectRootBase`
 
-[Ccomobjectrootex](../../atl/reference/ccomobjectrootex-class.md)
+[CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)
 
 `IClassFactory`
 
@@ -60,11 +61,11 @@ ATL nesneleri normalde [CComCoClass'tan](../../atl/reference/ccomcoclass-class.m
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="ccomclassfactoryautothreadcreateinstance"></a><a name="createinstance"></a>CcomclassFactoryAutoThread::CreateInstance
+## <a name="ccomclassfactoryautothreadcreateinstance"></a><a name="createinstance"></a> CComClassFactoryAutoThread:: CreateInstance
 
-Belirtilen CLSID bir nesne oluşturur ve bu nesneye bir arabirim işaretçisi alır.
+Belirtilen CLSID 'nin bir nesnesini oluşturur ve bu nesneye bir arabirim işaretçisi alır.
 
 ```
 STDMETHODIMP CreateInstance(
@@ -76,13 +77,13 @@ STDMETHODIMP CreateInstance(
 ### <a name="parameters"></a>Parametreler
 
 *pUnkOuter*<br/>
-[içinde] Nesne bir agreganın parçası olarak oluşturuluyorsa, *pUnkOuter* dış bilinmeyen olmalıdır. Aksi takdirde, *pUnkOuter* NULL olmalıdır.
+'ndaki Nesne bir toplamanın parçası olarak oluşturulduysa, *pUnkOuter* , bilinmeyen dıştaki olmalıdır. Aksi halde, *pUnkOuter* null olmalıdır.
 
-*Riid*<br/>
-[içinde] İstenen arabirimin IID'si. *pUnkOuter* non-NULL ise, *riid* olmalıdır. `IID_IUnknown`
+*riıd*<br/>
+'ndaki İstenen arabirimin IID 'si. *PUnkOuter* null değilse, *riıd* olmalıdır `IID_IUnknown` .
 
 *ppvObj*<br/>
-[çıkış] *riid*tarafından tanımlanan arabirim işaretçisine işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObj* NULL olarak ayarlanır.
+dışı *Riıd* tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObj* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -90,11 +91,11 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Modülünüz [CComAutoThreadModule'den](../../atl/reference/ccomautothreadmodule-class.md)türetilmiştirse, `CreateInstance` önce ilişkili dairede nesne oluşturmak için bir iş parçacığı seçer.
+Modülünüzün [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)Öğesinden türemesi durumunda, `CreateInstance` önce ilişkili grupta nesneyi oluşturmak için bir iş parçacığı seçer.
 
-## <a name="ccomclassfactoryautothreadlockserver"></a><a name="lockserver"></a>CcomclassFactoryAutoThread::LockServer
+## <a name="ccomclassfactoryautothreadlockserver"></a><a name="lockserver"></a> CComClassFactoryAutoThread:: LockServer
 
-Modül kilidi sayısısırasıyla arayarak `_Module::Lock` ve sırasıyla `_Module::Unlock`artışlar ve kararnameler.
+Sırasıyla ve çağırarak modül kilit sayısını artırır ve azaltır `_Module::Lock` `_Module::Unlock` .
 
 ```
 STDMETHODIMP LockServer(BOOL fLock);
@@ -102,8 +103,8 @@ STDMETHODIMP LockServer(BOOL fLock);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sürü*<br/>
-[içinde] DOĞRUysa, kilit sayısı artımlı; aksi takdirde, kilit sayısı bozulür.
+*fLock*<br/>
+'ndaki TRUE ise kilit sayısı artırılır; Aksi takdirde kilit sayısı azaltılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -111,15 +112,15 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComClassFactoryAutoThread`Kullanırken, `_Module` genellikle [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)küresel örnek anlamına gelir.
+Kullanırken `CComClassFactoryAutoThread` , `_Module` genellikle [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)genel örneğine başvurur.
 
-Arama, `LockServer` istemcinin bir sınıf fabrikasını tutmasına izin verir, böylece birden çok nesne hızla oluşturulabilir.
+Çağırma `LockServer` , bir istemcinin birden fazla nesnenin hızla oluşturulabilmesi için bir sınıf fabrikasına sahip olmasını sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
-[CComClassFactory2 Sınıfı](../../atl/reference/ccomclassfactory2-class.md)<br/>
-[CComClassFactorySingleton Sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>
-[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
-[Ccomglobalsthreadmodel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[CComClassFactory2 sınıfı](../../atl/reference/ccomclassfactory2-class.md)<br/>
+[CComClassFactorySingleton sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>
+[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

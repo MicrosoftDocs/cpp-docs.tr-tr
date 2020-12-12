@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Copadatetimespan sınıfı'
 title: Cotadatetimespan sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-ms.openlocfilehash: 5934a456b519d14def14018f966c7bff8206c3c4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 51632f8c179ea0e256c39052e924d296b89aefd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500130"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166778"
 ---
 # <a name="coledatetimespan-class"></a>Cotadatetimespan sınıfı
 
 Bir zaman aralığını göreli bir zaman temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleDateTimeSpan
@@ -745,7 +746,7 @@ Bu durum değerlerinin kısa bir açıklaması için aşağıdaki listeye bakın
 - `COleDateTimeSpan::null` Bu `COleDateTimeSpan` nesnenin null olduğunu, yani bu nesne için hiçbir değer sağlanmadığını gösterir. (Bu, C++ NULL değerinin aksine "hiçbir değer olmadan" veritabanı açısından "null" değeridir.)
 
    > [!CAUTION]
-   > Bu işlev, gelişmiş programlama durumları içindir. Bu işlev, bu nesnedeki verileri değiştirmez. En sık, durumu **null** veya **geçersiz**olarak ayarlamak için kullanılır. Atama işlecinin ([operator =](#operator_eq)) ve [SetDateTimeSpan](#setdatetimespan) değerinin, kaynak değer (ler) temelinde nesnenin durumunu ayarlandığını unutmayın.
+   > Bu işlev, gelişmiş programlama durumları içindir. Bu işlev, bu nesnedeki verileri değiştirmez. En sık, durumu **null** veya **geçersiz** olarak ayarlamak için kullanılır. Atama işlecinin ([operator =](#operator_eq)) ve [SetDateTimeSpan](#setdatetimespan) değerinin, kaynak değer (ler) temelinde nesnenin durumunu ayarlandığını unutmayın.
 
 ### <a name="example"></a>Örnek
 

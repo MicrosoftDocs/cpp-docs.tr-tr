@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL bağlantı noktası sınıfları'
 title: ATL bağlantı noktası sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - CFirePropNotifyEvent class
 - CComUnkArray class, connection point classes
 ms.assetid: 9582ba71-7ace-4df4-9c9b-1b0636953efc
-ms.openlocfilehash: 8644fc087d7f0a651724c40d2868e96c9b6ec96a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: af3b52715d7aeca13a711557bdba2c9428d4bff5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491818"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165855"
 ---
 # <a name="atl-connection-point-classes"></a>ATL bağlantı noktası sınıfları
 
@@ -22,7 +23,7 @@ ATL bağlantı noktalarını desteklemek için aşağıdaki sınıfları kullan�
 
 - [Inewctionpointımpl](../atl/reference/iconnectionpointimpl-class.md) bir bağlantı noktası uygular. Temsil ettiği giden arabirimin IID 'si bir şablon parametresi olarak geçirilir.
 
-- [Inewctionpointcontainerımpl](../atl/reference/iconnectionpointcontainerimpl-class.md) bağlantı noktası kapsayıcısını uygular ve `IConnectionPointImpl` nesne listesini yönetir.
+- [Inewctionpointcontainerımpl](../atl/reference/iconnectionpointcontainerimpl-class.md) bağlantı noktası kapsayıcısını uygular ve nesne listesini yönetir `IConnectionPointImpl` .
 
 - [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) , [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimini temsil eden bir bağlantı noktası uygular.
 

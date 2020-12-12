@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCToolBarsCustomizeDialog Class'
 title: CMFCToolBarsCustomizeDialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], OnInitDialog
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-ms.openlocfilehash: a61cefa7f844062fcca42711ce6515180066b919
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d05e94f614510c264e5916404abeeb6dfc4bea9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839107"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143461"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog sınıfı
 
 Kullanıcının araç çubuklarını, menüleri, klavye kısayollarını, Kullanıcı tanımlı araçları ve bir uygulamada görsel stilini özelleştirmesini sağlayan, engelleyici olmayan bir sekme iletişim kutusu ( [CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)). Genellikle, Kullanıcı bu iletişim kutusuna **Araçlar** menüsünden **Özelleştir** ' i seçerek erişir.
 
-**Özelleştir** iletişim kutusunda altı sekme vardır: **Komutlar**, **araç çubukları**, **Araçlar**, **klavye**, **menü**ve **Seçenekler**.
+**Özelleştir** iletişim kutusunda altı sekme vardır: **Komutlar**, **araç çubukları**, **Araçlar**, **klavye**, **menü** ve **Seçenekler**.
 
 ## <a name="syntax"></a>Syntax
 
@@ -480,7 +481,7 @@ int GetCountInCategory(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen listedeki metin etiketini *lpszItemName*eşit olan öğelerin sayısı.
+Belirtilen listedeki metin etiketini *lpszItemName* eşit olan öğelerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -614,7 +615,7 @@ virtual BOOL OnInitDialog();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, iletişim kutusunun geçerli ekran boyutuna uygun olduğundan emin olarak ve **Yardım** düğmesini iletişim kutusunun sol alt köşesine **Close** taşıyarak, [CPropertySheet:: OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog)temel sınıf uygulamasını genişletir.
+Bu yöntem, iletişim kutusunun geçerli ekran boyutuna uygun olduğundan emin olarak ve **Yardım** düğmesini iletişim kutusunun sol alt köşesine  taşıyarak, [CPropertySheet:: OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog)temel sınıf uygulamasını genişletir.
 
 ## <a name="cmfctoolbarscustomizedialogoninittoolspage"></a><a name="oninittoolspage"></a> CMFCToolBarsCustomizeDialog:: Onınitaraçları sayfası
 

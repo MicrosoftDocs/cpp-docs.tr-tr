@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin:/Zc: implicitNoexcept (örtük özel durum tanımlayıcıları)'
 title: /ZC:implicitNoexcept (Örtük Özel Durum Tanımlayıcıları)
 ms.date: 03/06/2018
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - Zc:implicitNoexcept
 - -Zc:implicitNoexcept
 ms.assetid: 71807652-6f9d-436b-899e-f52daa6f500b
-ms.openlocfilehash: bb1a632ffe684ac0777d0089a2edfd514bf66d0b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8c6aabe2878282b42ad0f2ce1e205ac387bd9a96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114643"
 ---
 # <a name="zcimplicitnoexcept-implicit-exception-specifiers"></a>/ZC:implicitNoexcept (Örtük Özel Durum Tanımlayıcıları)
 
 **/Zc: implicitNoexcept** seçeneği belirtildiğinde, derleyici derleyici tanımlı özel üye işlevlerine ve Kullanıcı tanımlı Yıkıcılar ve anlaşanların yer aldığı bir örtük [noexcept](../../cpp/noexcept-cpp.md) özel durum tanımlayıcısı ekler. Varsayılan olarak, **/Zc: IMPLICITNOEXCEPT** ISO c++ 11 standardına uyacak şekilde etkindir. Bu seçeneği kapatmak, **`noexcept`** Kullanıcı tanımlı Yıkıcılar ve satıcılarla ilgili özel üye işlevleri üzerinde örtülü olarak devre dışı bırakır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/Zc: implicitNoexcept**[ **-** ]
 
@@ -29,7 +30,7 @@ ms.locfileid: "87223804"
 
 Derleyici açık **`noexcept`** veya **`throw`** belirticiler veya bir öznitelik kullanılarak belirtilen işlevler için örtük bir özel durum tanımlayıcısı oluşturmaz `__declspec(nothrow)` .
 
-Varsayılan olarak, **/Zc: implicitNoexcept** etkindir. [/Permissive-](permissive-standards-conformance.md) seçeneği **/Zc: implicitNoexcept**öğesini etkilemez.
+Varsayılan olarak, **/Zc: implicitNoexcept** etkindir. [/Permissive-](permissive-standards-conformance.md) seçeneği **/Zc: implicitNoexcept** öğesini etkilemez.
 
 Seçenek **/Zc: implicitNoexcept-** belirtilerek devre dışı bırakılmışsa, derleyici tarafından örtük özel durum belirticileri oluşturulmaz. Bu davranış, özel durum belirticileri olmayan yok ediciler ve anlaşıcıları deyimleri olabilecek Visual Studio 2013 aynıdır **`throw`** . Varsayılan olarak, ve **/Zc: implicitNoexcept** belirtildiğinde, bir **`throw`** ifadede örtük tanımlayıcı içeren bir işlevde çalışma zamanında karşılaşılırsa, `noexcept(true)` Bu `std::terminate` durum, özel durum işleyicilerinin anında çağrılmasını ve normal geri sarma davranışının garanti edilmesine neden olur. Bu durumun tanımlanmasına yardımcı olmak için derleyici [Derleyici Uyarısı (düzey 1) C4297](../../error-messages/compiler-warnings/compiler-warning-level-1-c4297.md)oluşturur. **`throw`** Bilerek yapılıyorsa, işlev bildiriinizi `noexcept(false)` **/Zc: implicitNoexcept-** yerine açık bir belirticiye sahip olacak şekilde değiştirmenizi öneririz.
 
@@ -109,7 +110,7 @@ int main()
 }
 ```
 
-**/Zc: implicitNoexcept**varsayılan ayarı kullanılarak derlendiğinde, örnek bu çıktıyı oluşturur:
+**/Zc: implicitNoexcept** varsayılan ayarı kullanılarak derlendiğinde, örnek bu çıktıyı oluşturur:
 
 ```Output
 ~B Exception caught

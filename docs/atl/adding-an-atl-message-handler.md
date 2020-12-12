@@ -1,5 +1,6 @@
 ---
-title: ATL ileti işleyicisi ekleme
+description: 'Daha fazla bilgi edinin: ATL Ileti Işleyicisi ekleme'
+title: ATL Ileti Işleyicisi ekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - message handlers [C++]
@@ -8,25 +9,25 @@ helpviewer_keywords:
 - windows [C++], ATL
 - ATL, message handlers
 ms.assetid: cdea38a1-0d9b-4f8d-bbd5-b4f063fb3eeb
-ms.openlocfilehash: cc7631ac9e02891cee725b47133a273e756759d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 263cbcb863ee287c9b3f4650263a3fac33d7ab7b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223473"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166349"
 ---
-# <a name="adding-an-atl-message-handler"></a>ATL ileti işleyicisi ekleme
+# <a name="adding-an-atl-message-handler"></a>ATL Ileti Işleyicisi ekleme
 
-Bir ileti işleyicisi (Windows iletilerini işleme bir üye işlevi) için bir denetim eklemek için ilk sınıf Görünümü'nde denetimi seçin. Açılacağını **özellikleri** penceresinde **iletileri** simgesi ve açılan denetim gerekli ileti ters kutusuna tıklayın. İleti işleyicisi için bir bildirim bu denetimin üst bilgi dosyası ve denetim .cpp dosyası işleyicisinde bir çatı uygulaması ekler. Ayrıca ileti eşlemesi eklemek ve işleyici için bir giriş ekleyin.
+Bir denetime bir ileti işleyicisi (Windows iletilerini işleyen bir üye işlevi) eklemek için önce Sınıf Görünümü denetimi seçin. Ardından **Özellikler** penceresini açın, **iletiler** simgesini seçin ve gerekli iletinin karşısındaki kutuda açılan denetime tıklayın. Bu, denetimin üstbilgi dosyasındaki ileti işleyicisi için bir bildirim ve denetimin. cpp dosyasındaki işleyicinin bir iskelet uygulaması ekler. Ayrıca, ileti haritasını ekler ve işleyici için bir giriş ekler.
 
-ATL ileti işleyicisi ekleme, bir MFC sınıfı için ileti işleyicisi ekleme ile benzerdir. Bkz: [MFC ileti işleyicisi ekleme](../mfc/reference/adding-an-mfc-message-handler.md) daha fazla bilgi için.
+ATL 'de bir ileti işleyicisi eklemek, bir MFC sınıfına ileti işleyicisi eklemekle benzerdir. Daha fazla bilgi için bkz. [MFC Ileti Işleyicisi ekleme](../mfc/reference/adding-an-mfc-message-handler.md) .
 
-ATL ileti işleyicisi ekleme için yalnızca aşağıdaki koşullar geçerlidir:
+Aşağıdaki koşullar yalnızca bir ATL ileti işleyicisi eklemek için geçerlidir:
 
-- İleti işleyicileri MFC adlandırma kuralını uygulayın.
+- İleti işleyicileri MFC ile aynı adlandırma kuralını izler.
 
-- Yeni ileti eşlemesi girişleri ana ileti eşlemesine eklenir. Sihirbaz, diğer ileti eşlemeleri ve zincirleme algılamaz.
+- Yeni ileti eşleme girdileri, ana ileti eşlemesine eklenir. Sihirbaz alternatif ileti eşlemelerini ve zincirlemeyi tanımıyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Uygulama](../atl/implementing-a-window.md)
+[Pencere uygulama](../atl/implementing-a-window.md)

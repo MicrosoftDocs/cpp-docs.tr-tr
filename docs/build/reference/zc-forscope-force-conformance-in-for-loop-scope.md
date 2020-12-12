@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin:/Zc: forScope (döngü kapsamında uygunluğu zorla)'
 title: /Zc:forScope (Döngü Kapsamında Uyumluluğu Zorla)
 ms.date: 03/06/2018
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: 3031f02d-3b14-4ad0-869e-22b0110c3aed
-ms.openlocfilehash: b1173ad609a1b2c95d6cf118f4e2d5defeec5b9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7124bba6608facfea546974cfa40ef9556ff713a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234347"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114669"
 ---
 # <a name="zcforscope-force-conformance-in-for-loop-scope"></a>/Zc:forScope (Döngü Kapsamında Uyumluluğu Zorla)
 
 Microsoft uzantılarına sahip döngüler [için](../../cpp/for-statement-cpp.md) standart C++ davranışını uygulamak için kullanılır ([/ze](za-ze-disable-language-extensions.md)).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/Zc: forScope**[ **-** ]
 
@@ -34,7 +35,7 @@ Standart davranış, bir **`for`** döngünün başlatıcısının döngüden so
 
 **/Zc: forScope-** seçeneği kullanım dışıdır ve gelecek sürümlerde kaldırılır. **/Zc: forScope kullanımı-** kullanımdan kaldırma Uyarısı D9035 oluşturur.
 
-Aşağıdaki kod **/ze** altında derlenir ancak **/za**altında değildir:
+Aşağıdaki kod **/ze** altında derlenir ancak **/za** altında değildir:
 
 ```cpp
 // zc_forScope.cpp

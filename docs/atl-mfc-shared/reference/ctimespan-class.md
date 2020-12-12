@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CTimeSpan sınıfı'
 title: CTimeSpan sınıfı
 ms.date: 10/18/2018
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - shared classes, CTimeSpan
 - time, elapsed
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
-ms.openlocfilehash: 0c13aa0d8f6c46db3b018283ab2a408a3f9531e1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b15fa247baaa4de77c5caab12d584a80321b9420
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166583"
 ---
 # <a name="ctimespan-class"></a>CTimeSpan sınıfı
 
@@ -83,7 +84,7 @@ Yardımcı bir sınıf, [CTime](../../atl-mfc-shared/reference/ctime-class.md), 
 
 `CTime`Ve `CTimeSpan` sınıfları türetme için tasarlanmamıştır. Sanal işlev olmadığından, hem hem de `CTime` `CTimeSpan` nesnelerinin boyutu tam olarak 8 bayttır. Çoğu üye işlevleri satır içidir.
 
-Kullanma hakkında daha fazla bilgi için `CTimeSpan` bkz. *çalışma zamanı kitaplık başvurusunda*makalelerin [Tarih ve saat](../../atl-mfc-shared/date-and-time.md)ve [saat yönetimi](../../c-runtime-library/time-management.md) .
+Kullanma hakkında daha fazla bilgi için `CTimeSpan` bkz. *çalışma zamanı kitaplık başvurusunda* makalelerin [Tarih ve saat](../../atl-mfc-shared/date-and-time.md)ve [saat yönetimi](../../c-runtime-library/time-management.md) .
 
 ## <a name="requirements"></a>Gereksinimler
 

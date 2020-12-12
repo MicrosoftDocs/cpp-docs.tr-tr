@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL Denetim Kapsamı SSS'
 title: ATL Denetim Kapsamı SSS
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - ActiveX controls [C++], hosting
 - controls [ATL]
 ms.assetid: d4bdfbe0-82ca-4f2f-bb95-cb89bdcc9b53
-ms.openlocfilehash: 693617589f157d352972485396777cec587a5b8f
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 5c5d3d452a119908cb6c8dcdb08da3276db78f51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352706"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165777"
 ---
 # <a name="atl-control-containment-faq"></a>ATL Denetim Kapsamı SSS
 
 ## <a name="which-atl-classes-facilitate-activex-control-containment"></a>Hangi ATL Sınıfları ActiveX Denetim Kapsamından Yararlanır?
 
-ATL 'nin denetim barındırma kodu herhangi bir ATL sınıfı kullanmanızı gerektirmez; Basitçe bir **"AtlAxWin80"** penceresi oluşturabilir ve gerekirse DENETIM barındırma API 'sini kullanabilirsiniz (daha fazla bilgi için bkz. **atl Denetim barındırma API nedir?**. Ancak, aşağıdaki sınıflar kapsama özelliklerinin kullanımını daha kolay hale getirir.
+ATL 'nin denetim barındırma kodu herhangi bir ATL sınıfı kullanmanızı gerektirmez; Basitçe bir **"AtlAxWin80"** penceresi oluşturabilir ve gerekirse DENETIM barındırma API 'sini kullanabilirsiniz (daha fazla bilgi için bkz. **ATL Control-Hosting API nedir?**. Ancak, aşağıdaki sınıflar kapsama özelliklerinin kullanımını daha kolay hale getirir.
 
 |Sınıf|Açıklama|
 |-----------|-----------------|
@@ -92,7 +93,7 @@ Simgenin tanımına dikkat edin `USE_METHOD` . 1 ile 8 arasında değişiklik ya
 
 Özet:
 
-|USE_METHOD|Ana bilgisayar|Erişimi ve olay denetimini denetleme|İşlev gösterilmiştir|
+|USE_METHOD|Yönetici|Erişimi ve olay denetimini denetleme|İşlev gösterilmiştir|
 |-----------------|----------|--------------------------------------|---------------------------|
 |1|Alt pencere|Bir adım|CreateControlLicEx|
 |2|Ana pencere|Bir adım|AtlAxCreateControlLicEx|

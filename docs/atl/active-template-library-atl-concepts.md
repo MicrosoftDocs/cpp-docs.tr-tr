@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: etkin şablon kitaplığı (ATL) kavramları'
 title: Etkin Şablon Kitaplığı (ATL) Kavramlar
 ms.date: 05/06/2019
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-ms.openlocfilehash: c87eedff5b6ce7d906c05ac0678425af575f0af8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5437f381ea145d5474dcdba25673d4e41c60c54b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504277"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166323"
 ---
 # <a name="active-template-library-atl-concepts"></a>Etkin Şablon Kitaplığı (ATL) Kavramlar
 
@@ -70,8 +71,8 @@ ATL 'de dizilerin ve eşlemelerin nasıl kullanılacağını açıklar.
 [ATL kayıt defteri bileşeni (kaydedici)](atl-registry-component-registrar.md)<br/>
 ATL betik sözdizimi ve değiştirilebilen parametreleri açıklar. Ayrıca, kaydedici için statik bağlantı ayarlamayı da açıklar.
 
-[ATL ve C çalışma zamanı koduyla programlama](programming-with-atl-and-c-run-time-code.md)<br/>
-C çalışma zamanı kitaplığı 'na (CRT) statik veya dinamik olarak bağlanmanın avantajlarını açıklar.
+[ATL ve C Run-Time kodla programlama](programming-with-atl-and-c-run-time-code.md)<br/>
+C Run-Time kitaplığı 'na (CRT) statik veya dinamik olarak bağlanmanın avantajlarını açıklar.
 
 [CComBSTR ile programlama](programming-with-ccombstr-atl.md)<br/>
 İle programlama yaparken dikkatli olması gereken birkaç durum açıklanır `CComBSTR` .

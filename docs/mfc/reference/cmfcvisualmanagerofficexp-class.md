@@ -1,4 +1,5 @@
 ---
+description: ': CMFCVisualManagerOfficeXP sınıfı hakkında daha fazla bilgi'
 title: CMFCVisualManagerOfficeXP sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerOfficeXP class [MFC]
 ms.assetid: 46b6f854-37c2-4836-8f56-5cb6ff63c9af
-ms.openlocfilehash: c975a2b7ae7de12c154954e44470e7af9feeaa1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b248158b963de67e3b40c0e664ee9020091d25ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337810"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143409"
 ---
 # <a name="cmfcvisualmanagerofficexp-class"></a>CMFCVisualManagerOfficeXP sınıfı
 
-`CMFCVisualManagerOfficeXP` Uygulamaya Microsoft Office XP görünümü verir.
+, `CMFCVisualManagerOfficeXP` Bir uygulamaya MICROSOFT OFFICE XP görünümü verir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCVisualManagerOfficeXP : public CMFCVisualManager
@@ -25,15 +26,15 @@ class CMFCVisualManagerOfficeXP : public CMFCVisualManager
 
 ## <a name="members"></a>Üyeler
 
-Bu sınıfın üst türetilmiştir sanal işlevler Bu sınıf üyelerinin tümü [CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md).
+Bu sınıfın tüm üyeleri, bu sınıfın üst öğesinden türetilmiş sanal işlevlerdir, [CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullandığınız `CMFCVisualManagerOfficeXP` , Microsoft Office XP benzeyecek şekilde uygulamanızı görsel görünümünü değiştirmek için sınıf.
+`CMFCVisualManagerOfficeXP`Uygulamanızı, MICROSOFT OFFICE XP 'ye benzeyecek şekilde uygulamanızın görsel görünümünü değiştirmek için kullanabilirsiniz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek nasıl kullanılacağını gösterir `CMFCVisualManagerOfficeXP`. Bu kod parçacığı parçasıdır [Masaüstü uyarı gösterim örneği](../../overview/visual-cpp-samples.md).
+Aşağıdaki örnek nasıl kullanılacağını göstermektedir `CMFCVisualManagerOfficeXP` . Bu kod parçacığı, [Masaüstü Uyarısı tanıtım örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#8](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerofficexp-class_1.cpp)]
 
@@ -49,10 +50,10 @@ Aşağıdaki örnek nasıl kullanılacağını gösterir `CMFCVisualManagerOffic
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxvisualmanagerofficexp.h
+**Üstbilgi:** afxvisualmanagerofficexp. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCVisualManager Sınıfı](../../mfc/reference/cmfcvisualmanager-class.md)
+[CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2732'
 title: Derleyici hatası C2732
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2732
 ms.assetid: 01b7ad2c-93cf-456f-a4c0-c5f2fdc7c07c
-ms.openlocfilehash: 78be424040c7315271d0880c6678584f698b5be8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1ca97fbf46685af1df37b8caf82a03effc1ec6bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218188"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123220"
 ---
 # <a name="compiler-error-c2732"></a>Derleyici hatası C2732
 
