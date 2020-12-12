@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CString semantiği'
 title: CString semantiği
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,22 +7,22 @@ helpviewer_keywords:
 - CString objects, assignment semantics
 - assignment statements, assigning CString objects
 ms.assetid: d4023480-526f-499a-85f6-324b4de5b85f
-ms.openlocfilehash: b5398f8a0f17ffcc93c7f5f6158ecc56606e9279
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c6dde91e7f87908c0c6bc2d49ff455eb79f6eb3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167051"
 ---
 # <a name="cstring-semantics"></a>CString semantiği
 
-Olsa da [CString](../atl-mfc-shared/reference/cstringt-class.md) nesneleri büyüyebilir dinamik nesneler, yerleşik temel eleman türleri ve basit sınıflar gibi davranır. Her `CString` nesnesi benzersiz bir değeri temsil eder. `CString` nesneleri, ardından gerçek dizeleri yerine dizelerine olarak düşünülmelidir.
+[CString](../atl-mfc-shared/reference/cstringt-class.md) nesneleri genişleyebilecekleri dinamik nesneler olsa da, yerleşik temel türler ve basit sınıflar gibi davranır. Her `CString` nesne benzersiz bir değer temsil eder. `CString` nesneler, dizeler için işaretçiler yerine gerçek dizeler olarak düşünülmelidir.
 
-Atayabilirsiniz `CString` başka bir nesne. Ancak, değiştirdiğinizde bir iki `CString` nesnelerini, diğer `CString` nesne değiştirilmez, aşağıdaki örnekte gösterildiği gibi:
+Bir `CString` nesneyi başka bir nesneye atayabilirsiniz. Ancak, iki nesneden birini değiştirdiğinizde `CString` , `CString` Aşağıdaki örnekte gösterildiği gibi diğer nesne değiştirilmez:
 
 [!code-cpp[NVC_ATLMFC_Utilities#188](../atl-mfc-shared/codesnippet/cpp/cstring-semantics_1.cpp)]
 
-Not örnekte, iki `CString` aynı karakter dizesini temsil ettikleri çünkü nesneleri "equal" değerlendirilir. `CString` Sınıfı eşitlik işlecini aşırı yüklemeler (`==`) karşılaştırmak için `CString` kimliklerini (adres) yerine nesneleri temel değerlerine (içeriği).
+Örneğin, iki `CString` nesnenin aynı karakter dizesini temsil ettiğinden "eşit" olarak kabul edileceğini unutmayın. `CString`Sınıfı, `==` iki `CString` nesneyi kimlik (adres) yerine değerlerine (içeriklerine) göre karşılaştırmak için eşitlik işlecini () aşırı yükler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

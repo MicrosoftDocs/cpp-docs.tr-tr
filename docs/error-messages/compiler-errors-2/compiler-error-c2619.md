@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2619'
 title: Derleyici hatası C2619
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2619
 ms.assetid: c826f8ab-d66a-4b79-a0b2-93b0af8c41ac
-ms.openlocfilehash: b64eccac351c6bdd8ac388278a6e264cc7a84868
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2ca9a8379901703299e89e71671ec0270c1ff1e3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220307"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123558"
 ---
 # <a name="compiler-error-c2619"></a>Derleyici hatası C2619
 

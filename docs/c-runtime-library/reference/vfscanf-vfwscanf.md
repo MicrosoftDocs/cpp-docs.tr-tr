@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: vfscanf, vfwscanf'
 title: vfscanf, vfwscanf
 ms.date: 11/04/2016
 api_name:
@@ -24,12 +25,12 @@ f1_keywords:
 - _vftscanf
 - vfscanf
 ms.assetid: c06450ef-03f1-4d24-a8ac-d2dd98847918
-ms.openlocfilehash: 72591c9fa91855745f45f3f77c88dd0ed5b001a0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c087451d7b5a11b8c7cb6af63c9e009971ee87a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120598"
 ---
 # <a name="vfscanf-vfwscanf"></a>vfscanf, vfwscanf
 
@@ -55,7 +56,7 @@ int vfwscanf(
 *ka*<br/>
 **Dosya** yapısına yönelik işaretçi.
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *Arglist*<br/>
@@ -63,19 +64,19 @@ Değişken bağımsız değişken listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Bir hata oluşursa veya dosya akışının sonuna ilk dönüştürmeden önce ulaşılırsa, **vfscanf** ve **vfwscanf**için dönüş değeri **EOF** olur.
+Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Bir hata oluşursa veya dosya akışının sonuna ilk dönüştürmeden önce ulaşılırsa, **vfscanf** ve **vfwscanf** için dönüş değeri **EOF** olur.
 
-Bu işlevler, parametrelerini doğrular. *Stream* veya *Format* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevler, parametrelerini doğrular. *Stream* veya *Format* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Vfscanf** işlevi, *akışın* geçerli konumundaki verileri *Arglist* bağımsız değişken listesi tarafından verilen konumlara okur. Listedeki her bağımsız değişken, *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. *Format* , giriş alanlarının yorumunu denetler ve **scanf**için *Format* bağımsız değişkeniyle aynı forma ve işleve sahiptir; *biçimin*açıklaması için bkz. [scanf](scanf-scanf-l-wscanf-wscanf-l.md) .
+**Vfscanf** işlevi, *akışın* geçerli konumundaki verileri *Arglist* bağımsız değişken listesi tarafından verilen konumlara okur. Listedeki her bağımsız değişken, *biçimdeki* bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. *Format* , giriş alanlarının yorumunu denetler ve **scanf** için *Format* bağımsız değişkeniyle aynı forma ve işleve sahiptir; *biçimin* açıklaması için bkz. [scanf](scanf-scanf-l-wscanf-wscanf-l.md) .
 
 **vfwscanf** , **vfscanf**; öğesinin geniş karakterli bir sürümüdür. **vfwscanf** biçim bağımsız değişkeni, geniş karakterli bir dizedir. Bu işlevler akış ANSI modunda açılırsa aynı şekilde davranır. **vfscanf** UNICODE akışından girişi desteklemez.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vftscanf**|**vfscanf**|**vfscanf**|**vfwscanf**|
 
@@ -85,8 +86,8 @@ Daha fazla bilgi için bkz. [Biçim belirtimi alanları: scanf ve wscanf işlevl
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**vfscanf**|\<stdio. h >|
-|**vfwscanf**|\<stdio. h > veya \<wchar. h >|
+|**vfscanf**|\<stdio.h>|
+|**vfwscanf**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -159,7 +160,7 @@ x
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>

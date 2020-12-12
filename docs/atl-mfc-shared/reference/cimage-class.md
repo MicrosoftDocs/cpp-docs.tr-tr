@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CImage sınıfı'
 title: CImage sınıfı
 ms.date: 08/19/2019
 f1_keywords:
@@ -54,12 +55,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: 6e7197648fd91b2280d406c19c1019ca23f6a470
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: a094aecfae57a678f306d00e0998247000361822
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684306"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166842"
 ---
 # <a name="cimage-class"></a>CImage sınıfı
 
@@ -103,7 +104,7 @@ class CImage
 |[CImage:: Getımporterfilterstring](#getimporterfilterstring)|Kullanılabilir görüntü biçimlerini ve açıklamalarını bulur.|
 |[CImage:: GetMaxColorTableEntries](#getmaxcolortableentries)|Renk tablosundaki en fazla girdi sayısını alır.|
 |[CImage:: Getsıklık](#getpitch)|Geçerli görüntünün, bayt cinsinden perdesini alır.|
-|[CImage:: GetPixel](#getpixel)|*X* ve *y*tarafından belirtilen pikselin rengini alır.|
+|[CImage:: GetPixel](#getpixel)|*X* ve *y* tarafından belirtilen pikselin rengini alır.|
 |[CImage:: Getpikseleladdress](#getpixeladdress)|Belirli bir pikselin adresini alır.|
 |[CImage:: GetTransparentColor](#gettransparentcolor)|Renk tablosundaki saydam rengin konumunu alır.|
 |[CImage:: GetWidth](#getwidth)|Geçerli görüntünün genişliğini piksel olarak alır.|
@@ -134,7 +135,7 @@ class CImage
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CImage` cihazdan bağımsız bit eşlem (DIB) bölümleri olan bit eşlemler alır; Ancak [Create](#create) veya [CImage:: Load](#load) 'u yalnızca DIB bölümleri ile kullanabilirsiniz. Attach kullanarak bir nesneye DIB olmayan bölüm bit eşlemi ekleyebilirsiniz `CImage` , ancak bu [Attach](#attach)durumda `CImage` yalnızca DIB bölümü bit eşlemlerini destekleyen aşağıdaki yöntemleri kullanamazsınız:
+`CImage` cihazdan bağımsız bit eşlem (DIB) bölümleri olan bit eşlemler alır; Ancak [Create](#create) veya [CImage:: Load](#load) 'u yalnızca DIB bölümleri ile kullanabilirsiniz. Attach kullanarak bir nesneye DIB olmayan bölüm bit eşlemi ekleyebilirsiniz `CImage` , ancak bu [](#attach)durumda `CImage` yalnızca DIB bölümü bit eşlemlerini destekleyen aşağıdaki yöntemleri kullanamazsınız:
 
 - [GetBits](#getbits)
 
@@ -191,9 +192,9 @@ Aracılığıyla `CImage` , BIR DIB 'nin gerçek bit bitlerini erişiminiz vard�
 `CImage`MFC veya ATL 'den kullanabilirsiniz.
 
 > [!NOTE]
-> Kullanarak bir proje oluşturduğunuzda `CImage` , `CString` *atlımage. h*dahil etmeden önce tanımlamanız gerekir. Projeniz MFC olmadan ATL kullanıyorsa, *atlımage. h*dahil etmeden önce *atlstr. h* ekleyin. Projeniz MFC kullanıyorsa (veya MFC desteği olan bir ATL projem ise), *atlımage. h*eklemeden önce *afxstr. h* 'yi dahil edin.
+> Kullanarak bir proje oluşturduğunuzda `CImage` , `CString` *atlımage. h* dahil etmeden önce tanımlamanız gerekir. Projeniz MFC olmadan ATL kullanıyorsa, *atlımage. h* dahil etmeden önce *atlstr. h* ekleyin. Projeniz MFC kullanıyorsa (veya MFC desteği olan bir ATL projem ise), *atlımage. h* eklemeden önce *afxstr. h* 'yi dahil edin.
 >
-> Benzer şekilde, *atlımpl. cpp*dahil etmeden önce *atlımage. h* dahil etmeniz gerekir. Bunu kolayca başarmak için, *pch. h* 'Nize (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ) *atlımage.* h ' yi ekleyin.
+> Benzer şekilde, *atlımpl. cpp* dahil etmeden önce *atlımage. h* dahil etmeniz gerekir. Bunu kolayca başarmak için, *pch. h* 'Nize (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ) *atlımage.* h ' yi ekleyin.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -854,7 +855,7 @@ Bu parametre *Şu* biçimdedir:
 
 dosya description0&#124;\* . ext0&#124;filedescription1&#124;\* . EXT1&#124;... Dosya Açıklaması *n*&#124;\* . ext *n*&#124;&#124;
 
-Burada ' &#124; ', *chSeparator*tarafından belirtilen ayırıcı karakterdir. Örneğin:
+Burada ' &#124; ', *chSeparator* tarafından belirtilen ayırıcı karakterdir. Örneğin:
 
 `"Bitmap format|*.bmp|JPEG format|*.jpg|GIF format|*.gif|PNG format|*.png||"`
 
@@ -899,7 +900,7 @@ Sıklık, bir bit eşlem çizgisinin başlangıcını ve sonraki bit eşlem çiz
 
 ## <a name="cimagegetpixel"></a><a name="getpixel"></a> CImage:: GetPixel
 
-*X* ve *y*tarafından belirtilen konumdaki pikselin rengini alır.
+*X* ve *y* tarafından belirtilen konumdaki pikselin rengini alır.
 
 ```
 COLORREF GetPixel(int x, int y) const throw();
@@ -1066,7 +1067,7 @@ Standart HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PszFileName* veya *pStream*tarafından belirtilen görüntüyü yükler.
+*PszFileName* veya *pStream* tarafından belirtilen görüntüyü yükler.
 
 Geçerli görüntü türleri BMP, GIF, JPEG, PNG ve TIFF ' dir.
 
@@ -1410,7 +1411,7 @@ Renk paletindeki bir rengin dizini.
 
 ## <a name="cimagesetpixelrgb"></a><a name="setpixelrgb"></a> CImage:: SetPixelRGB
 
-*X* ve *y* ile belirtilen konumlardaki piksel, kırmızı, YEŞIL, mavi (RGB) görüntüde *r*, *g*ve *b*tarafından gösterilen renklerle ayarlanır.
+*X* ve *y* ile belirtilen konumlardaki piksel, kırmızı, YEŞIL, mavi (RGB) görüntüde *r*, *g* ve *b* tarafından gösterilen renklerle ayarlanır.
 
 ```cpp
 void SetPixelRGB(

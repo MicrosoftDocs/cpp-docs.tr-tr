@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _write'
 title: _write
 ms.date: 4/2/2020
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - write function
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-ms.openlocfilehash: 02864a797a64e6c1b1d836edf4e435cdb43d0932
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 15988f803b37f9ce128a49662c2311a4aa6ca8fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117165"
 ---
 # <a name="_write"></a>_write
 
 Verileri bir dosyaya yazar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _write(
@@ -68,11 +69,11 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [errno, _do
 
 Dosya metin modunda açılırsa, her satır besleme karakteri çıkışdaki bir satır başı satır besleme çiftiyle değiştirilmiştir. Değişiklik, dönüş değerini etkilemez.
 
-Dosya Unicode çeviri modunda açıldığında — Örneğin, *fd* **_open** veya **_sopen** kullanılarak açılırsa ve **_O_WTEXT**içeren bir mod parametresi, **_O_U16TEXT**veya **_O_U8TEXT**ya da **FOPEN** ve **CCS = UNICODE**, **CCS = UTF-16le**veya **CCS = UTF-8**içeren bir mod parametresi kullanılarak açılırsa veya mod, **_setmode**kullanarak bir Unicode çeviri moduna değiştiyse,*arabellek* **`wchar_t`** **UTF-16** verileri içeren bir dizinin işaretçisi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+Dosya Unicode çeviri modunda açıldığında — Örneğin, *fd* **_open** veya **_sopen** kullanılarak açılırsa ve **_O_WTEXT** içeren bir mod parametresi, **_O_U16TEXT** veya **_O_U8TEXT** ya da **FOPEN** ve **CCS = UNICODE**, **CCS = UTF-16le** veya **CCS = UTF-8** içeren bir mod parametresi kullanılarak açılırsa veya mod, **_setmode** kullanarak bir Unicode çeviri moduna değiştiyse,*arabellek* **`wchar_t`** **UTF-16** verileri içeren bir dizinin işaretçisi olarak yorumlanır. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Write** işlevi *arabellekteki* *sayı* baytlarını *FD*ile ilişkili dosyaya yazar. Yazma işlemi, belirtilen dosyayla ilişkili dosya işaretçisinin (varsa) geçerli konumunda başlar. Dosya ekleme için açıksa, işlem dosyanın geçerli ucunda başlar. Yazma işleminden sonra, dosya işaretçisi yazılan bayt sayısıyla artar.
+**_Write** işlevi *arabellekteki* *sayı* baytlarını *FD* ile ilişkili dosyaya yazar. Yazma işlemi, belirtilen dosyayla ilişkili dosya işaretçisinin (varsa) geçerli konumunda başlar. Dosya ekleme için açıksa, işlem dosyanın geçerli ucunda başlar. Yazma işleminden sonra, dosya işaretçisi yazılan bayt sayısıyla artar.
 
 Metin modunda açılan dosyalara yazarken **_write** , bir CTRL + Z karakterini dosyanın mantıksal sonu olarak değerlendirir. Bir cihaza yazarken **_write** , ARABELLEKTEKI bir CTRL + Z karakterini çıkış Sonlandırıcı olarak değerlendirir.
 

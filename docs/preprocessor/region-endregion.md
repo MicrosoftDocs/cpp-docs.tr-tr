@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: bölge, endregion pragmaları'
 title: region, endregion pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -12,21 +13,21 @@ helpviewer_keywords:
 - endregion pragma
 - region pragma
 ms.assetid: c697f807-622f-4796-851b-68a42bbecd84
-ms.openlocfilehash: 4a01e04582ac81d678aa0702945c62ee974a4428
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: a12305240f0c05913d16c5f26fb64661fc08e736
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222380"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167428"
 ---
 # <a name="region-endregion-pragmas"></a>region, endregion pragması
 
-`#pragma region`Visual Studio Code düzenleyicisinin ana [hat özelliğini](/visualstudio/ide/outlining) kullanırken genişletebileceğiniz veya daraltabileceğiniz bir kod bloğu belirtmenize olanak tanır.
+`#pragma region` Visual Studio Code düzenleyicisinin ana [hat özelliğini](/visualstudio/ide/outlining) kullanırken genişletebileceğiniz veya daraltabileceğiniz bir kod bloğu belirtmenize olanak tanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#pragma bölgesi** *ad*\
-> **#pragma endregion** *Açıklama*
+> **#pragma bölge** *adı*\
+> **#pragma endregion** *açıklaması*
 
 ### <a name="parameters"></a>Parametreler
 
@@ -38,9 +39,9 @@ Seçim Bölgenin adı. Bu ad, kod düzenleyicisinde görüntülenir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`#pragma endregion`bir `#pragma region` bloğun sonunu işaretler.
+`#pragma endregion` bir bloğun sonunu işaretler `#pragma region` .
 
-Bir `#region` bloğun bir `#pragma endregion` yönerge tarafından sonlandırılması gerekir.
+Bir `#region` bloğun bir yönerge tarafından sonlandırılması gerekir `#pragma endregion` .
 
 ## <a name="example"></a>Örnek
 

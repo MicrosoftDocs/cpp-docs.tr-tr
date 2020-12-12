@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3097'
 title: Derleyici hatası C3097
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3097
 ms.assetid: b24bd8f8-e04f-4fbb-be57-4feb9165572e
-ms.openlocfilehash: 71a7762d03c600fed71d76a19088fb70ce311f67
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: aa728a7f4feecad71671dfa6fe6edc6a980b1310
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756818"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116242"
 ---
 # <a name="compiler-error-c3097"></a>Derleyici hatası C3097
 

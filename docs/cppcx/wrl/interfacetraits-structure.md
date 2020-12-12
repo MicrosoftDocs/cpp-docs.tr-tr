@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ınterfacetoyits yapısı'
 title: InterfaceTraits Yapısı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -19,18 +20,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::InterfaceTraits::IidCount constant
 - Microsoft::WRL::Details::InterfaceTraits::Verify method
 ms.assetid: ede0c284-19a7-4892-9738-ff3da4923d0a
-ms.openlocfilehash: c08c6e8bbcc16120dd44da69a2933fc3ec42f387
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8dfa540119b0a120ea7b8d9365a0e8b8203939b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216576"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124533"
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename I0>
@@ -61,7 +62,7 @@ Bir arabirimin ortak karakteristiklerini uygular.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a><a name="public-typedefs"></a>Ortak tür tanımları
+### <a name="public-typedefs"></a><a name="public-typedefs"></a> Ortak tür tanımları
 
 Ad   | Açıklama
 ------ | ------------------------------------------
@@ -93,7 +94,7 @@ Ad                                   | Açıklama
 
 **Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="interfacetraitscancastto"></a><a name="cancastto"></a>Interfacetoyits:: Cankıto
+## <a name="interfacetraitscancastto"></a><a name="cancastto"></a> Interfacetoyits:: Cankıto
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -127,7 +128,7 @@ Belirtilen işaretçinin işaretçisine bir işaretçiye tür ataması yapılıp
 
 Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.
 
-## <a name="interfacetraitscasttobase"></a><a name="casttobase"></a>Interfacetoyits:: Rotobase
+## <a name="interfacetraitscasttobase"></a><a name="casttobase"></a> Interfacetoyits:: Rotobase
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -141,10 +142,10 @@ static __forceinline Base* CastToBase(
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-*PTR*parametresinin türü.
+*PTR* parametresinin türü.
 
 *ptr*<br/>
-*T*türü işaretçisi.
+*T* türü işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -156,7 +157,7 @@ Belirtilen işaretçiyi işaretçisine çevirir `Base` .
 
 Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.
 
-## <a name="interfacetraitscasttounknown"></a><a name="casttounknown"></a>Interfacetoyits:: Rotounknown
+## <a name="interfacetraitscasttounknown"></a><a name="casttounknown"></a> Interfacetoyits:: Rotounknown
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -170,10 +171,10 @@ static __forceinline IUnknown* CastToUnknown(
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-*PTR*parametresinin türü.
+*PTR* parametresinin türü.
 
 *ptr*<br/>
-*T*türü işaretçisi.
+*T* türü işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -185,7 +186,7 @@ Belirtilen işaretçiyi işaretçisine çevirir `IUnknown` .
 
 Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.
 
-## <a name="interfacetraitsfillarraywithiid"></a><a name="fillarraywithiid"></a>InterfaceTraits:: Fillarraywithııd
+## <a name="interfacetraitsfillarraywithiid"></a><a name="fillarraywithiid"></a> InterfaceTraits:: Fillarraywithııd
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -212,7 +213,7 @@ Bu API 'nin adı tersine, yalnızca bir dizi öğesi değiştirilir; tüm dizi d
 
 Hakkında daha fazla bilgi için `Base` bkz. [Public Typedefs](#public-typedefs) bölümü.
 
-## <a name="interfacetraitsiidcount"></a><a name="iidcount"></a>Interfacetoyits:: ııdcount
+## <a name="interfacetraitsiidcount"></a><a name="iidcount"></a> Interfacetoyits:: ııdcount
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -224,7 +225,7 @@ static const unsigned long IidCount = 1;
 
 Geçerli nesneyle ilişkili arabirim kimliklerinin sayısını tutar `InterfaceTraits` .
 
-## <a name="interfacetraitsverify"></a><a name="verify"></a>Interfacetoyits:: doğrula
+## <a name="interfacetraitsverify"></a><a name="verify"></a> Interfacetoyits:: doğrula
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 

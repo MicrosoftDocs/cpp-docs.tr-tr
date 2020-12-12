@@ -1,59 +1,60 @@
 ---
-title: CStringT kullanarak dize sınıflarını dışarı aktarma
+description: 'Hakkında daha fazla bilgi edinin: CStringT kullanarak dize sınıfları dışarı aktarma'
+title: CStringT kullanarak dize sınıflarını dışa aktarma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CStringT class, exporting strings
 ms.assetid: bdfc441e-8d2a-461c-9885-46178066c09f
-ms.openlocfilehash: a4ee73d2ae5cfb7bf9834fb23eed8470b7d29445
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8876ea04f1252e4f5861a950b04dabcd99d6a804
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166999"
 ---
-# <a name="exporting-string-classes-using-cstringt"></a>CStringT kullanarak dize sınıflarını dışarı aktarma
+# <a name="exporting-string-classes-using-cstringt"></a>CStringT kullanarak dize sınıflarını dışa aktarma
 
-Geçmişte, MFC geliştiriciler öğesinden türetilmiş `CString` kendi dize sınıflarını uzmanlaşmıştır. Microsoft Visual C++ .NET (MFC 8.0) içinde [CString](../atl-mfc-shared/using-cstring.md) sınıfı olarak adlandırılan bir şablon sınıfı tarafından değiştirilen [CStringT](../atl-mfc-shared/reference/cstringt-class.md). Bu avantaj sağladı:
+Geçmişte, MFC geliştiricileri `CString` kendi dize sınıflarını özelleştirmek için öğesinden türetilir. Microsoft Visual C++ .NET (MFC 8,0) içinde, [CString](../atl-mfc-shared/using-cstring.md) sınıfının yerini [CStringT](../atl-mfc-shared/reference/cstringt-class.md)adlı bir şablon sınıfı almıştır. Bu, birkaç avantaj sağlamıştır:
 
-- MFC izin `CString` ATL içinde kullanılacak sınıfı projeleri büyük statik kitaplıkta MFC veya DLL bağlama olmadan.
+- MFC `CString` sınıfının, daha büyük MFC statik kitaplığı veya dll 'ye BAĞLANMADAN ATL projelerinde kullanılmasına izin verilir.
 
-- Yeni `CStringT` özelleştirebileceğiniz Şablon sınıfı, `CString` karakter nitelikleri, C++ Standart Kitaplığı'nda şablonlarına benzer belirtin şablon parametreleri kullanarak davranışı.
+- Yeni `CStringT` şablon sınıfı ile, `CString` C++ standart kitaplığı 'ndaki şablonlara benzer şekilde karakter nitelikleri belirten şablon parametreleri kullanarak davranışı özelleştirebilirsiniz.
 
-- Dışarı aktardığınızda, kendi dize sınıfı kullanarak bir DLL `CStringT`, derleyicinin otomatik olarak dışarı aktarır `CString` temel sınıfı. Bu yana `CString` kendisi bir şablon sınıfıdır, derleyici uyumlu olmadığı sürece, kullanıldığında, derleyici tarafından örneği, `CString` DLL'den içeri aktarılır. Visual C++ .NET için Visual C++ 6.0 projeleri yaptıysanız, size bir Çarp-tanımlanan bağlayıcı sembol hataları görmüş olabilirsiniz `CString` çakışması nedeniyle `CString` DLL ve yerel olarak oluşturulmuş bir sürümü içeri aktarıldı. Bunu yapmak için en uygun yolu aşağıda açıklanmıştır.
+- Kullanarak bir DLL 'den kendi dize sınıfınızı dışarı aktardığınızda `CStringT` , derleyici de otomatik olarak temel sınıfı dışarı aktarır `CString` . `CString`Bir şablon sınıfı olduğundan, derleyici `CString` bir dll 'den içeri aktarılan farkında olmadığı takdirde, kullanıldığında derleyici tarafından oluşturulabilir. Projelerini Visual C++ 6,0 ' den Visual C++ .NET 'a geçirdiyseniz, `CString` `CString` bir dll 'den içeri aktarılan ve yerel olarak örneklenen sürümden oluşan çarpışmadan dolayı tanımlanan bir çarpma için bağlayıcı sembol hatalarını görmüş olabilirsiniz. Bunu yapmanın doğru yolu aşağıda açıklanmıştır.
 
-Aşağıdaki senaryoda, birden çok kez tanımlanmış sınıfları için Sembol hataları üretmek bağlayıcı neden olur. Dışarı aktardığınız olduğunu varsayalım. bir `CString`-türetilmiş sınıf (`CMyString`) bir MFC uzantılı DLL'nden:
+Aşağıdaki senaryo, bağlayıcının tanımlanan sınıfların sembol hatalarını üretmesine neden olur. Bir `CString` `CMyString` MFC uzantı dll 'sinden bir türetilmiş sınıf () dışarı aktardığınız varsayılır:
 
 [!code-cpp[NVC_MFC_DLL#6](../atl-mfc-shared/codesnippet/cpp/exporting-string-classes-using-cstringt_1.cpp)]
 
-Tüketici kod bir karışımını kullanır `CString` ve `CMyString`. Önceden derlenmiş üst bilgi ve bazı kullanımını "MyString.h" dahil değildir `CString` olmayan `CMyString` görünür.
+Tüketici kodu ve karışımını kullanır `CString` `CMyString` . "MyString. h" önceden derlenmiş üstbilgiye dahil değildir ve bazı kullanımları `CString` `CMyString` görünür değildir.
 
-Kullandığını varsayma `CString` ve `CMyString` ayrı kaynak dosyaları, Source1.cpp ve Source2.cpp sınıfları. Kullandığınız Source1.cpp içinde `CMyString` ve # MyString.h include. Kullandığınız Source2.cpp içinde `CString`, ancak olmayan # MyString.h include. Bu durumda, bağlayıcı hakkında şikayet `CStringT` birden çok kez tanımlanmış. Bu kaynaklanır `CString` hem de içe aktaran DLL'den olan `CMyString`ve yerel olarak derleyici tarafından örneği `CStringT` şablonu.
+`CString`Ve `CMyString` sınıflarını, Source1. cpp ve Source2. cpp ayrı kaynak dosyalarında kullandığınızı varsayalım. Source1. cpp içinde, `CMyString` MyString. h kullanın ve #include. SOURCE2. cpp içinde, `CString` ancak MyString. h #include. Bu durumda, bağlayıcı, `CStringT` tanımlanan Çarpılmakta olan bir şikayet eder. Bu, `CString` hem dışarı AKTARıLAN dll 'den içeri aktarılmakta hem de `CMyString` şablon aracılığıyla derleyici tarafından yerel olarak örneklenmemesinden kaynaklanır `CStringT` .
 
 Bu sorunu gidermek için aşağıdakileri yapın:
 
-Dışarı aktarma `CStringA` ve `CStringW` (ve gerekli temel sınıflar) MFC90 öğesinden. DLL. MFC içeren projeleri her zaman dışarı MFC DLL kullanan `CStringA` ve `CStringW`, önceki MFC uygulamalarında gibi.
+`CStringA`MFC90.DLL ve `CStringW` (ve gerekli temel sınıfları) ' dan dışarı aktarın. MFC içeren projeler `CStringA` `CStringW` , önceki MFC uygulamalarında olduğu gibi, ve için her zaman AKTARıLMıŞ MFC DLL 'yi kullanır.
 
-Dışarı aktarılabilir türetilmiş bir sınıf kullanarak bir oluşturup `CStringT` şablon olarak `CStringT_Exported` , örneğin aşağıdadır:
+Ardından, aşağıdaki gibi, şablonu kullanarak dışarı aktarılabilir türetilmiş bir sınıf oluşturun `CStringT` `CStringT_Exported` , örneğin:
 
 [!code-cpp[NVC_MFC_DLL#7](../atl-mfc-shared/codesnippet/cpp/exporting-string-classes-using-cstringt_2.cpp)]
 
-AfxStr.h içinde önceki değiştirin `CString`, `CStringA`, ve `CStringW` aşağıdaki gibi tür tanımları:
+Afxstr. h içinde Previous `CString` , `CStringA` ve tür tanımları ' i `CStringW` aşağıdaki gibi değiştirin:
 
 [!code-cpp[NVC_MFC_DLL#8](../atl-mfc-shared/codesnippet/cpp/exporting-string-classes-using-cstringt_3.cpp)]
 
-Bazı uyarılar şunlardır:
+Birkaç uyarılar vardır:
 
-- Değil de vermelisiniz `CStringT` kendisi bu özelleştirilmiş dışarı aktarmak yalnızca ATL projeleri neden olacağından `CStringT` sınıfı.
+- Kendisini dışarı aktarmamalıdır `CStringT` çünkü bu, yalnızca atl projelerinin özelleştirilmiş bir sınıfı dışarı aktarmaya neden olur `CStringT` .
 
-- Dışarı aktarılabilir bir kullanarak sınıfından türetilmiş `CStringT` yeniden uygulamak zorunda en aza indirir `CStringT` işlevselliği. Ek kod oluşturucuları için iletme için sınırlı `CStringT` temel sınıfı.
+- Dışarı aktarılabilir türetilmiş bir sınıfın kullanılması, `CStringT` işlevselliği yeniden uygulamak zorunda olan en aza indirir `CStringT` . Ek kod, oluşturucuları temel sınıfa iletme ile sınırlıdır `CStringT` .
 
-- `CString`, `CStringA`, ve `CStringW` yalnızca işaretlenmelidir `__declspec(dllexport/dllimport)` ne zaman bir MFC ile oluşturmakta olduğunuz DLL paylaşılan. Bir MFC statik kitaplığı ile bağlantı varsa, bu sınıfları dışarı olarak işaretlemeniz gerekir değil; Aksi takdirde, iç kullanımı `CString`, `CStringA`, ve `CStringW` içinde kullanıcı DLL'leri işaretler `CString` de dışarı gibi.
+- `CString`, `CStringA` , ve `CStringW` yalnızca `__declspec(dllexport/dllimport)` MFC paylaşılan DLL ile derlerken işaretlenmelidir. MFC statik kitaplığıyla bağlantı varsa, bu sınıfları aktarılmış olarak işaretlememelisiniz; Aksi halde,,, `CString` `CStringA` ve `CStringW` Içinde Kullanıcı dll 'lerinin iç kullanımı, olarak da işaretlenir `CString` .
 
 ## <a name="related-topics"></a>İlgili Konular
 
-[CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md)
+[CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CStringT kullanma](../atl-mfc-shared/using-cstringt.md)<br/>
-[CString Kullanma](../atl-mfc-shared/using-cstring.md)
+[CString kullanma](../atl-mfc-shared/using-cstring.md)

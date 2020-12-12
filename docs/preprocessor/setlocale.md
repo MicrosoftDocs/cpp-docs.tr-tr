@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: setlocale pragma'
 title: setlocale pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - pragmas, setlocale
 - setlocale pragma
 ms.assetid: e60b43d9-fbdf-4c4e-ac85-805523a13b86
-ms.openlocfilehash: 9603c132610e0cfb1e8f955be48271870527105b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 375a2075381b39037a6a723f7d28ef73749ec08f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219384"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167311"
 ---
 # <a name="setlocale-pragma"></a>setlocale pragması
 
 Geniş karakter sabitleri ve dize değişmez değerleri çevrilirken kullanılacak *yerel ayarı*, ülkeyi, bölgeyi ve dili tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#pragma setlocale ("** [ *locale-String* ] **")**
 

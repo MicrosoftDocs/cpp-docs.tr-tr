@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Genel sabitler'
 title: Global Sabitler
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - global constants
 ms.assetid: 778d86fd-3ca6-4d2b-b4c5-aee6dc1efe6b
-ms.openlocfilehash: 406cdb46e3a6263559f3f3d0869f1b198b466630
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1727be8670208f4caa3be5ef4b47ce488c86553d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120737"
 ---
 # <a name="global-constants"></a>Global Sabitler
 

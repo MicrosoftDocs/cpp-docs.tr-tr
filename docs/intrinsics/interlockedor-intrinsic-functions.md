@@ -1,5 +1,6 @@
 ---
-title: _InterlockedOr iç işlevleri
+description: 'Hakkında daha fazla bilgi edinin: _InterlockedOr iç işlevler'
+title: _InterlockedOr iç işlevler
 ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedOr8_nf
@@ -56,16 +57,16 @@ helpviewer_keywords:
 - _InterlockedOr16_rel intrinsic
 - _InterlockedOr_HLEAcquire intrinsic
 ms.assetid: 5f265240-7af8-44b7-b952-19f3a9c56186
-ms.openlocfilehash: baad724c85d2d8fb981ec7836d7a46152000fae3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: d0bd01bdc1b3a32398d65d11c49fe162fa7b4cd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217591"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167987"
 ---
-# <a name="_interlockedor-intrinsic-functions"></a>_InterlockedOr iç işlevleri
+# <a name="_interlockedor-intrinsic-functions"></a>_InterlockedOr iç işlevler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Birden çok iş parçacığı tarafından paylaşılan bir değişkende atomik bit düzeyinde veya işlemi gerçekleştirin.
 
@@ -178,28 +179,28 @@ __int64 _InterlockedOr64_rel(
 *Maskesi*\
 'ndaki İkinci işlenen.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 İlk parametre tarafından işaret edilen özgün değer.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_InterlockedOr`, `_InterlockedOr8`, `_InterlockedOr16`|x86, ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedOr64`|ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedOr_acq`, `_InterlockedOr_nf`, `_InterlockedOr_rel`, `_InterlockedOr8_acq`, `_InterlockedOr8_nf`, `_InterlockedOr8_rel`, `_InterlockedOr16_acq`, `_InterlockedOr16_nf`, `_InterlockedOr16_rel`, `_InterlockedOr64_acq`, `_InterlockedOr64_nf`, `_InterlockedOr64_rel`|ARM, ARM64|\<Intrin. h >|
-|`_InterlockedOr_np`, `_InterlockedOr8_np`, `_InterlockedOr16_np`, `_InterlockedOr64_np`|X64|\<Intrin. h >|
-|`_InterlockedOr_HLEAcquire`, `_InterlockedOr_HLERelease`|x86, x64|\<ımintrin. h >|
-|`_InterlockedOr64_HLEAcquire`, `_InterlockedOr64_HLERelease`|X64|\<ımintrin. h >|
+|`_InterlockedOr`, `_InterlockedOr8`, `_InterlockedOr16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedOr64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedOr_acq`, `_InterlockedOr_nf`, `_InterlockedOr_rel`, `_InterlockedOr8_acq`, `_InterlockedOr8_nf`, `_InterlockedOr8_rel`, `_InterlockedOr16_acq`, `_InterlockedOr16_nf`, `_InterlockedOr16_rel`, `_InterlockedOr64_acq`, `_InterlockedOr64_nf`, `_InterlockedOr64_rel`|ARM, ARM64|\<intrin.h>|
+|`_InterlockedOr_np`, `_InterlockedOr8_np`, `_InterlockedOr16_np`, `_InterlockedOr64_np`|x64|\<intrin.h>|
+|`_InterlockedOr_HLEAcquire`, `_InterlockedOr_HLERelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedOr64_HLEAcquire`, `_InterlockedOr64_HLERelease`|x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Her işlevin adındaki sayı, bağımsız değişkenlerin bit boyutunu belirtir.
 
-ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
+ARM platformlarında, `_acq` `_rel` önemli bir bölümün başındaki ve sonundaki gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf`("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
 
-`_np` ("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
+`_np`("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
 
 Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 

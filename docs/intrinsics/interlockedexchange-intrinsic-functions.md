@@ -1,5 +1,6 @@
 ---
-title: _InterlockedExchange iç işlevleri
+description: 'Hakkında daha fazla bilgi edinin: _InterlockedExchange iç işlevler'
+title: _InterlockedExchange iç işlevler
 ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedExchange_rel
@@ -44,16 +45,16 @@ helpviewer_keywords:
 - _InterlockedExchange intrinsic
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
-ms.openlocfilehash: 53c3545be5e74d802fe63f8e7c03d2a7a2b26110
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: de2f8a084cc5604051234fa9e01d5f5cc0974d74
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222000"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168052"
 ---
-# <a name="_interlockedexchange-intrinsic-functions"></a>_InterlockedExchange iç işlevleri
+# <a name="_interlockedexchange-intrinsic-functions"></a>_InterlockedExchange iç işlevler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen değeri ayarlamak için atomik bir yönerge oluşturur.
 
@@ -145,34 +146,34 @@ __int64 _InterlockedExchange64_rel(
 ### <a name="parameters"></a>Parametreler
 
 *Hedef*\
-[in, out] Değiş tokuş edilecek değere yönelik işaretçi. İşlevi bu değişkeni olarak `Value` ayarlar ve önceki değerini döndürür.
+[in, out] Değiş tokuş edilecek değere yönelik işaretçi. İşlevi bu değişkeni olarak ayarlar `Value` ve önceki değerini döndürür.
 
 *Deeri*\
-'ndaki Tarafından `Target`işaret edilen değer ile değiştirilecek değer.
+'ndaki Tarafından işaret edilen değer ile değiştirilecek değer `Target` .
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Tarafından `Target`işaret edilen ilk değeri döndürür.
+Tarafından işaret edilen ilk değeri döndürür `Target` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`|x86, ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedExchange64`|ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM, ARM64|\<Intrin. h >|
-|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`|x86, x64|\<ımintrin. h >|
-|`_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|X64|\<ımintrin. h >|
+|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchange64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM, ARM64|\<intrin.h>|
+|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_InterlockedExchange`Win32 Windows SDK [InterlockedExchange](/windows/win32/api/winnt/nf-winnt-interlockedexchange) işlevi için derleyicinin iç desteğini sağlar.
+`_InterlockedExchange` Win32 Windows SDK [InterlockedExchange](/windows/win32/api/winnt/nf-winnt-interlockedexchange) işlevi için derleyicinin iç desteğini sağlar.
 
 Üzerinde bulunan `_InterlockedExchange` veri türlerine göre farklılık gösteren çeşitli çeşitlemeler vardır ve işlemciye özgü alma veya yayınlama semantiği kullanılıp kullanılmayacağını belirtir.
 
-İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedExchange8` 8 bit tamsayı değerleri üzerinde çalışır, `_InterlockedExchange16` 16 bit tam sayı değerlerinde çalışır ve `_InterlockedExchange64` 64 bit tamsayı değerlerinde çalışır. `_InterlockedExchange`
+`_InterlockedExchange`İşlev 32 bitlik tamsayı değerlerinde çalışırken, `_InterlockedExchange8` 8 bit tamsayı değerleri üzerinde çalışır, `_InterlockedExchange16` 16 bit tam sayı değerlerinde çalışır ve `_InterlockedExchange64` 64 bit tamsayı değerlerinde çalışır.
 
-ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf` ("Sınır olmayan") son ek olan iç bilgiler bellek engeli olarak davranmaz.
+ARM platformlarında, `_acq` `_rel` önemli bir bölümün başındaki ve sonundaki gibi alma ve bırakma semantiği için iç bilgileri ve sonekleri kullanın. `_nf`("Sınır olmayan") son ek olan iç bilgiler bellek engeli olarak davranmaz.
 
 Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 
@@ -180,7 +181,7 @@ Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Öğesinin nasıl kullanılacağına `_InterlockedExchange`ilişkin bir örnek için bkz. [_ınterlockedazaltma](../intrinsics/interlockeddecrement-intrinsic-functions.md).
+Öğesinin nasıl kullanılacağına ilişkin bir örnek için `_InterlockedExchange` bkz. [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
 **SON Microsoft 'a özgü**
 

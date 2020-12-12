@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3099'
 title: Derleyici hatası C3099
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3099
 ms.assetid: b3dded0f-76c9-42c1-991b-532eb8619661
-ms.openlocfilehash: 81f508c47c678d86f8f95303861b42f8a70daa57
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d065edd58df1e9196dc6aa31cfd4fb263f062f1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116229"
 ---
 # <a name="compiler-error-c3099"></a>Derleyici hatası C3099
 
 ' anahtar sözcüğü ': yönetilen öznitelikler için [System:: AttributeUsageAttribute] kullanın; WinRT öznitelikleri için [Windows:: Foundation:: Metadata:: AttributeUsageAttribute] kullanın
 
-**/Clr** özniteliklerini bildirmek için <xref:System.AttributeUsageAttribute> kullanın. Windows Çalışma Zamanı özniteliklerini bildirmek için `Windows::Foundation::Metadata::AttributeUsageAttribute` kullanın.
+<xref:System.AttributeUsageAttribute> **/Clr** özniteliklerini bildirmek için kullanın. `Windows::Foundation::Metadata::AttributeUsageAttribute`Windows çalışma zamanı özniteliklerini bildirmek için kullanın.
 
 /CLR öznitelikleri hakkında daha fazla bilgi için bkz. [Kullanıcı tanımlı öznitelikler](../../extensions/user-defined-attributes-cpp-component-extensions.md). Windows Çalışma Zamanı desteklenen öznitelikler için bkz. [Windows. Foundation. Metadata ad alanı](/uwp/api/windows.foundation.metadata)
 

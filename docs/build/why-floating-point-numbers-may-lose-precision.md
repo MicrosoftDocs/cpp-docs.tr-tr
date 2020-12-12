@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: neden Floating-Point sayıların duyarlık kaybı olabileceğini'
 title: Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - FLT_EPSILON constant
 - floating-point numbers, precision
 ms.assetid: 1acb1add-ac06-4134-a2fd-aff13d8c4c15
-ms.openlocfilehash: 373ce9fa2c2c96fac349940076873a4a637a9dbe
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 97daabd7342e94022f309937c9986b61cbc8668c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75298720"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120776"
 ---
 # <a name="why-floating-point-numbers-may-lose-precision"></a>Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği
 
@@ -58,10 +59,10 @@ int main() {
 They are not equal! The value of c is  2.4679999352 or 2.468000
 ```
 
-## <a name="comments"></a>Açıklamalar
+## <a name="comments"></a>Yorumlar
 
 EPSILON için, 1.192092896 e-07F olarak float için tanımlanan FLT_EPSILON sabitleri veya Double olarak 2.2204460492503131 e-olarak tanımlanan DBL_EPSILON kullanabilirsiniz. Bu sabitler için float. h dahil etmeniz gerekir. Bu sabitler en küçük pozitif sayı olan x olarak tanımlanır, örneğin x + 1.0, 1,0 değerine eşit değildir. Bu çok küçük bir sayı olduğundan, çok büyük sayılar içeren hesaplamalar için Kullanıcı tanımlı tolerans yapmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kodunuzu İyileştirme](optimizing-your-code.md)
+[Kodunuzu iyileştirme](optimizing-your-code.md)

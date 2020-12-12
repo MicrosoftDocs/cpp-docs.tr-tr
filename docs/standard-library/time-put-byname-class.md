@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: time_put_byname sınıfı'
 title: time_put_byname Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - time_put_byname class
 ms.assetid: e08c2348-64d2-4ace-98b1-1496e14c7b1a
-ms.openlocfilehash: 4471c0df352a4d40d863ac36f0245cf8194f588c
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: b519b28b7af8f5b54f9150d1d84f68cd6695bc49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72685460"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167259"
 ---
 # <a name="time_put_byname-class"></a>time_put_byname Sınıfı
 
-Türetilmiş sınıf şablonu, `time_put` \< CharType, OutputIterator > türünde bir yerel ayar modeli olarak işlev görebilecek bir nesne açıklar.
+Türetilmiş sınıf şablonu, türünde bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlar `time_put` \< CharType, OutputIterator > .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,22 +41,22 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname* \
+*_Locname*\
 Yerel ayar adı.
 
-*_Refs* \
+*_Refs*\
 İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışı [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu temel nesnesini [time_put](../standard-library/time-put-class.md#time_put) \<CharType, OutputIterator > (`_Refs`) ile başlatır.
+Davranışı, [adlandırılmış](../standard-library/locale-class.md#name) yerel ayar *_Locname* tarafından belirlenir. Her Oluşturucu temel nesnesini [time_put](../standard-library/time-put-class.md#time_put) \<CharType, OutputIterator> () ile başlatır `_Refs` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

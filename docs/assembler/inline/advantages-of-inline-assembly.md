@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: satır Içi derlemenin avantajları'
 title: Satır İçi Derleme Avantajları
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - inline assembly [C++], about inline assembly
 - inline assembly [C++], using
 ms.assetid: 94364d97-faa7-4bdf-8473-570956986c51
-ms.openlocfilehash: 7e634f78eca753487cf122ac95df55828bb64625
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 066824a4ad63641f33712219dd8364b0edf7259b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169662"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118075"
 ---
 # <a name="advantages-of-inline-assembly"></a>Satır İçi Derleme Avantajları
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Satır içi derleyici ayrı derleme ve bağlantı adımları gerektirmediğinden, ayrı bir derleyiciden daha kullanışlıdır. Satır içi derleme kodu, kapsam içinde olan herhangi bir C değişkeni veya işlev adını kullanabilir; bu şekilde programınızın C kodu ile tümleştirmek de kolaydır. Derleme kodu C veya C++ deyimleri ile satır içi olarak karışık olabileceğinden, c veya C++' de bir veya imkansız olan görevleri gerçekleştirebilir.
+Satır içi derleyici ayrı derleme ve bağlantı adımları gerektirmediğinden, ayrı bir derleyiciden daha kullanışlıdır. Satır içi derleme kodu, kapsam içinde olan herhangi bir C değişkeni veya işlev adını kullanabilir; bu şekilde programınızın C kodu ile tümleştirmek de kolaydır. Derleme kodu C veya C++ deyimleriyle satır içi karışık olabileceğinden, C veya C++ ' da daha fazla olan veya imkansız olan görevleri gerçekleştirebilir.
 
 Satır içi derlemenin kullanımları şunları içerir:
 
@@ -35,4 +36,4 @@ Satır içi derleme özel amaçlı bir araçtır. Bir uygulamanın bağlantı no
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)<br/>
+[Satır içi assembler](../../assembler/inline/inline-assembler.md)<br/>

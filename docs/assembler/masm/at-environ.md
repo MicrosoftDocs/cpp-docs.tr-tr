@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: @Environ'
 title: '@Environ'
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - '@Environ symbol'
 ms.assetid: 4b0b7e93-9ebe-413b-8196-1a504eb6d1d0
-ms.openlocfilehash: 17a7da31bf52bc958ba2a5c9624d0c6249ce2518
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 8449469986bd77285db414a1631d12b8e78797ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75315920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97121439"
 ---
 # <a name="environ"></a>\@Environ
 
 Ortam değişkeni *ENVVAR* (makro işlevi) değeri.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **\@Environ (** *ENVVAR* **)**
+> **\@ Environ (** *ENVVAR* **)**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

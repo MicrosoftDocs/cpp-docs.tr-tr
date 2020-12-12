@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2626'
 title: Derleyici hatası C2626
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2626
 ms.assetid: 4c283ad0-251b-4571-bc18-468b9836746f
-ms.openlocfilehash: 339d48265bdc1f68ea4e18fadfde48fca956dd1f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 1a89d63d18fd029daa98ce1d248da24296ee2d4f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123557"
 ---
 # <a name="compiler-error-c2626"></a>Derleyici hatası C2626
 

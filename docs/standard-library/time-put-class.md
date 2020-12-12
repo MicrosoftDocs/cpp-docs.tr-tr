@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: time_put sınıfı'
 title: time_put Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - std::time_put [C++], do_put
 - std::time_put [C++], put
 ms.assetid: df79493e-3331-48d2-97c3-ac3a745f0791
-ms.openlocfilehash: 4f7b609493e16d3d1c0a9ab6274ed6f5bfd7b033
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 135bd8c619907b789f448e41e742fcc256d9b6eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167272"
 ---
 # <a name="time_put-class"></a>time_put Sınıfı
 
 Sınıf şablonu, zaman değerlerinin tür dizileriyle dönüştürmelerini denetlemek için bir yerel ayar modeli olarak işlev görebilecek bir nesne tanımlar `CharType` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType,
@@ -47,20 +48,20 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Description|
+|Oluşturucu|Açıklama|
 |-|-|
 |[time_put](#time_put)|Türündeki nesneler için Oluşturucu `time_put` .|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Description|
+|Tür adı|Açıklama|
 |-|-|
 |[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|
 |[iter_type](#iter_type)|Bir çıkış yineleyiciyi açıklayan tür.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Description|
+|Üye işlevi|Açıklama|
 |-|-|
 |[do_put](#do_put)|Zaman ve tarih bilgilerini bir dizi olarak veren bir sanal işlev `CharType` .|
 |[konur](#put)|Zaman ve tarih bilgilerini s dizisi olarak verir `CharType` .|
@@ -71,7 +72,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 **Ad alanı:** std
 
-## <a name="time_putchar_type"></a><a name="char_type"></a>time_put:: char_type
+## <a name="time_putchar_type"></a><a name="char_type"></a> time_put:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -83,7 +84,7 @@ typedef CharType char_type;
 
 Tür, şablon parametresi için bir eş anlamlı `CharType` .
 
-## <a name="time_putdo_put"></a><a name="do_put"></a>time_put::d o_put
+## <a name="time_putdo_put"></a><a name="do_put"></a> time_put::d o_put
 
 Zaman ve tarih bilgilerini bir dizi olarak veren bir sanal işlev `CharType` .
 
@@ -121,13 +122,13 @@ Bir yineleyici, son öğeden sonraki ilk konuma ekleniyor.
 
 Sanal korumalı üye işlevi, `next` türünde nesnesinde depolanan zaman değerlerinden başlayarak ardışık öğeleri oluşturur \* `_Pt` `tm` . İşlevi, oluşturulan çıkışın ötesinde bir öğe eklemek için sonraki yeri tanımlayarak bir yineleyici döndürür.
 
-Çıktı, bir `strftime` dizi öğe oluşturmak için *_Pt*son bağımsız değişkeniyle, tarafından kullanılan kurallar tarafından oluşturulur **`char`** . Bu tür her **`char`** öğe `CharType` , basit, bire bir eşleme ile türünde eşdeğer bir öğeyle eşlenecek varsayılır. *_Mod* sıfır eşitse, etkin biçim "% F" olur ve burada F, *_Fmt*ile değiştirilmiştir. Aksi takdirde, etkin biçim "% MF" olur; burada, b *_mod*ile değiştirilmiştir.
+Çıktı, bir `strftime` dizi öğe oluşturmak için *_Pt* son bağımsız değişkeniyle, tarafından kullanılan kurallar tarafından oluşturulur **`char`** . Bu tür her **`char`** öğe `CharType` , basit, bire bir eşleme ile türünde eşdeğer bir öğeyle eşlenecek varsayılır. *_Mod* sıfır eşitse, etkin biçim "% F" olur ve burada F, *_Fmt* ile değiştirilmiştir. Aksi takdirde, etkin biçim "% MF" olur; burada, b *_mod* ile değiştirilmiştir.
 
 ### <a name="example"></a>Örnek
 
 Öğesini çağıran [PUT](#put)için örneğe bakın `do_put` .
 
-## <a name="time_putiter_type"></a><a name="iter_type"></a>time_put:: iter_type
+## <a name="time_putiter_type"></a><a name="iter_type"></a> time_put:: iter_type
 
 Bir çıkış yineleyiciyi açıklayan tür.
 
@@ -139,7 +140,7 @@ typedef OutputIterator iter_type;
 
 Tür, şablon parametresi için bir eş anlamlı `OutputIterator` .
 
-## <a name="time_putput"></a><a name="put"></a>time_put::p UT
+## <a name="time_putput"></a><a name="put"></a> time_put::p UT
 
 Zaman ve tarih bilgilerini s dizisi olarak verir `CharType` .
 
@@ -237,7 +238,7 @@ num_put( ) = x: 05:30:40 07/04/00
 strftime( ) = x: 05:30:40 07/04/00
 ```
 
-## <a name="time_puttime_put"></a><a name="time_put"></a>time_put:: time_put
+## <a name="time_puttime_put"></a><a name="time_put"></a> time_put:: time_put
 
 Türündeki nesneler için Oluşturucu `time_put` .
 
@@ -258,7 +259,7 @@ Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri
 
 - 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değil.
+- \> 1: Bu değerler tanımlı değil.
 
 Oluşturucu kendi temel nesnesini [locale:: model](../standard-library/locale-class.md#facet_class)(*_Refs*) ile başlatır.
 

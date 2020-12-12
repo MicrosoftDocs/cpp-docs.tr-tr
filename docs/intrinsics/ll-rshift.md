@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __ll_rshift'
 title: __ll_rshift
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - __ll_rshift intrinsic
 - ll_rshift intrinsic
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
-ms.openlocfilehash: 6ae750f1a8825096ee30adb01768d5603ab23a01
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 567228431104bdde34cc0a5c5f41f0217515a337
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219670"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167753"
 ---
 # <a name="__ll_rshift"></a>__ll_rshift
 
@@ -21,7 +22,7 @@ ms.locfileid: "87219670"
 
 İlk parametre tarafından belirtilen 64 bitlik bir değeri, ikinci parametre tarafından belirtilen bir bit sayısıyla sağa kaydırır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 __int64 __ll_rshift(

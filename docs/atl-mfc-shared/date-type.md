@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: TARIH türü'
 title: TARIH türü
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - MFC, date and time
 - hour values representation
 ms.assetid: 695853ed-b614-4575-b793-b8c287372038
-ms.openlocfilehash: 5a6c1e1cca5b2cb978d6af4208377db1a2926357
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6a0fd8f02abe5fd3ecb3695fd2715bfb3a573028
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502177"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167025"
 ---
 # <a name="date-type"></a>TARIH türü
 
@@ -24,8 +25,8 @@ TARIH türü, 8 baytlık kayan noktalı sayı kullanılarak uygulanır. Günler,
 
 |Tarih ve saat|İmle|
 |-------------------|--------------------|
-|30 Aralık 1899, gece yarısı|0.00|
-|1 Ocak 1900, gece yarısı|2.00|
+|30 Aralık 1899, gece yarısı|0,00|
+|1 Ocak 1900, gece yarısı|2,00|
 |4 Ocak 1900, gece yarısı|5.00|
 |4 Ocak 1900, 11:00|5,25|
 |4 Ocak 1900, Öğle|5,50|
@@ -50,12 +51,12 @@ Otomasyon 'da bu tarih ve saat biçimleriyle çalışırken aşağıdaki noktala
 |30 Aralık 1899, 6 P.M.|-0,75|
 |30 Aralık 1899, Öğle|-0,50|
 |30 Aralık 1899, 6 saat|-0,25|
-|30 Aralık 1899, gece yarısı|0.00|
+|30 Aralık 1899, gece yarısı|0,00|
 |30 Aralık 1899, 6 saat|0,25|
 |30 Aralık 1899, Öğle|0.50|
 |30 Aralık 1899, 6 P.M.|0,75|
 |31 Aralık 1899, gece yarısı|1,00|
-|1 Ocak 1900, gece yarısı|2.00|
+|1 Ocak 1900, gece yarısı|2,00|
 |1 Ocak 1900, Öğle|2,50|
 |2 Ocak 1900, gece yarısı|3,00|
 

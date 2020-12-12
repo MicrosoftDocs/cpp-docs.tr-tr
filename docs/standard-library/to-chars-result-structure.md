@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: to_chars_result struct'
 title: to_chars_result yapısı
 ms.date: 07/22/2020
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - to_chars_result class
 - to_chars_result structure
-ms.openlocfilehash: 4e46d1cc9d0b6a02d731ad25c2e85c99300d7234
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fb043ba928f086549aea326419ec3a2d673723ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509652"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167194"
 ---
 # <a name="to_chars_result-struct"></a>to_chars_result yapısı
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct to_chars_result {

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l'
 title: _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - _strupr_s function
 - wcsupr_s function
 ms.assetid: 82d3a273-9f6f-4a26-9560-919d891e4581
-ms.openlocfilehash: e2e32a42e945b350a0a9b28ccd4ef9cb16668605
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ce4c55aac91f9537febde1bfb2eb196cc0dba501
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117243"
 ---
 # <a name="_strupr_s-_strupr_s_l-_mbsupr_s-_mbsupr_s_l-_wcsupr_s-_wcsupr_s_l"></a>_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
 
@@ -158,13 +159,13 @@ Kullanılacak yerel ayar.
 
 Başarılıysa sıfır; hatada sıfır olmayan bir hata kodu.
 
-Bu işlevler, parametrelerini doğrular. *Str* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır. *NumberOfElements* dizenin uzunluğundan küçükse, Işlevler **ERANGE** döndürür ve **errno** değerini **ERANGE**olarak ayarlar.
+Bu işlevler, parametrelerini doğrular. *Str* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL** olarak ayarlanır. *NumberOfElements* dizenin uzunluğundan küçükse, Işlevler **ERANGE** döndürür ve **errno** değerini **ERANGE** olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strupr_s** işlevi, *Str* içindeki her küçük harfi de büyük harfe dönüştürür. **_wcsupr_s** , **_strupr_s**geniş karakter sürümüdür. **_mbsupr_s** , **_strupr_s**çok baytlık karakter sürümüdür.
+**_Strupr_s** işlevi, *Str* içindeki her küçük harfi de büyük harfe dönüştürür. **_wcsupr_s** , **_strupr_s** geniş karakter sürümüdür. **_mbsupr_s** , **_strupr_s** çok baytlık karakter sürümüdür.
 
-Dönüştürme, yerel ayarın **LC_CTYPE** kategori ayarı tarafından belirlenir. Diğer karakterler etkilenmez. **LC_CTYPE**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** soneki olmayan bu işlevlerin sürümleri geçerli yerel ayarı kullanır; **_l** sonekine sahip olan vizyonlar, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+Dönüştürme, yerel ayarın **LC_CTYPE** kategori ayarı tarafından belirlenir. Diğer karakterler etkilenmez. **LC_CTYPE** hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** soneki olmayan bu işlevlerin sürümleri geçerli yerel ayarı kullanır; **_l** sonekine sahip olan vizyonlar, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -183,8 +184,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strupr_s**, **_strupr_s_l**|\<String. h>|
-|**_wcsupr_s**, **_wcsupr_s_l**, **_mbsupr_s**, **_mbsupr_s_l**|\<String. h> veya \<wchar. h>|
+|**_strupr_s**, **_strupr_s_l**|\<string.h>|
+|**_wcsupr_s**, **_wcsupr_s_l**, **_mbsupr_s**, **_mbsupr_s_l**|\<string.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -195,6 +196,6 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md)<br/>

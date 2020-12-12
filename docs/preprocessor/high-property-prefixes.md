@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: high_property_prefixes Import özniteliği'
 title: high_property_prefixes içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,39 +7,39 @@ f1_keywords:
 helpviewer_keywords:
 - high_property_prefixes attribute
 ms.assetid: 91c6cc2b-19b6-4aba-8831-d9e5cccb58b5
-ms.openlocfilehash: 9e44f6f1afae479f803f4c6d866ef3ee38744561
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: af6835f5835c23dceadbb5152e36b0dabcbb8c98
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219007"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167480"
 ---
 # <a name="high_property_prefixes-import-attribute"></a>high_property_prefixes içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
 Diğer özellik yöntemi için alternatif önekler belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **high_property_prefixes (** "*getprefix*" **,** "*putprefıx*" **,** "*putrefprefix*" **)**
+> **#import** *türü-kitaplık* **high_property_prefixes (** "*getprefix*" **,** "*putprefıx*" **,** "*putrefprefix*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
 *GetPrefix*\
-`propget` Yöntemler için kullanılacak önek.
+Yöntemler için kullanılacak önek `propget` .
 
 *PutPrefix*\
-`propput` Yöntemler için kullanılacak önek.
+Yöntemler için kullanılacak önek `propput` .
 
 *PutRefPrefix*\
-`propputref` Yöntemler için kullanılacak önek.
+Yöntemler için kullanılacak önek `propputref` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, üst düzey hata işleme `propget`, `propput`ve `propputref` yöntemleri sırasıyla ön ekler `Get`, `Put`, ve `PutRef`olarak adlandırılan üye işlevleri tarafından gösterilir.
+Varsayılan olarak, üst düzey hata işleme `propget` , `propput` ve `propputref` yöntemleri sırasıyla ön ekler `Get` , `Put` , ve olarak adlandırılan üye işlevleri tarafından gösterilir `PutRef` .
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

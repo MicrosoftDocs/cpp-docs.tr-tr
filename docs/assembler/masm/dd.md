@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: gg'
 title: DD
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DD directive
 ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
-ms.openlocfilehash: fea3c052ba2c98b7dabe9649884391689209d202
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: b9ffed5f3f6529b16c5a51621c753e135dc2891f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75314984"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120932"
 ---
 # <a name="dd"></a>DD
 
-Her *Başlatıcı*için bir çift sözcük (4 bayt) depolama alanı ayırır ve isteğe bağlı olarak başlatır. **Gg** , [DWORD](dword.md)'ün bir eşanlamlısıdır.
+Her *Başlatıcı* için bir çift sözcük (4 bayt) depolama alanı ayırır ve isteğe bağlı olarak başlatır. **Gg** , [DWORD](dword.md)'ün bir eşanlamlısıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> ⟦*Name*⟧ **dd** *Başlatıcı* ⟦ __,__ *Başlatıcı* ... ⟧
+> ⟦*Name*⟧ **dd** *Başlatıcı* ⟦__,__ *Başlatıcı* ... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 

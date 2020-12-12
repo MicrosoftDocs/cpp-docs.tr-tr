@@ -1,25 +1,26 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tüm mimarilerde kullanılabilir Iç bilgiler'
 title: Tüm mimarilerde kullanılabilen iç bilgiler
 ms.date: 09/02/2019
 helpviewer_keywords:
 - cl.exe compiler, intrinsics
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
-ms.openlocfilehash: 0293daacd717b3ae85b993729090fe363f7e0b9b
-ms.sourcegitcommit: e805200eaef4fe7a65a00051bbd305273af94fe7
+ms.openlocfilehash: b2f3a1371b250230e09c60301478787fe17ea7cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74163475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167948"
 ---
 # <a name="intrinsics-available-on-all-architectures"></a>Tüm mimarilerde kullanılabilen iç bilgiler
 
-Microsoft C/C++ derleyicisini ve evrensel C çalışma zamanı kitaplığı (UCRT) tüm mimarilerde bazı iç bilgileri kullanılabilir hale getirir.
+Microsoft C/C++ derleyicisi ve evrensel C çalışma zamanı kitaplığı (UCRT) tüm mimarilerde kullanılabilir bazı iç bilgileri yapar.
 
 ## <a name="compiler-intrinsics"></a>Derleyici iç bilgileri
 
 Aşağıdaki iç bilgiler x86, AMD64, ARM ve ARM64 mimarilerinde kullanılabilir:
 
-|Alanlarla|Üstbilgi|
+|Alanlarla|Üst bilgi|
 |---------------|------------|
 |[_AddressOfReturnAddress](../intrinsics/addressofreturnaddress.md)|Intrin. h|
 |[_BitScanForward](../intrinsics/bitscanforward-bitscanforward64.md)|Intrin. h|
@@ -73,7 +74,7 @@ Aşağıdaki iç bilgiler x86, AMD64, ARM ve ARM64 mimarilerinde kullanılabilir
 
 Aşağıdaki UCRT işlevleri tüm mimarilerde iç formlara sahiptir:
 
-|Alanlarla|Üstbilgi|
+|Alanlarla|Üst bilgi|
 |---------------|------------|
 |[mutlak](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Stdlib. h|
 |[_abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Stdlib. h|
@@ -162,7 +163,7 @@ Aşağıdaki UCRT işlevleri tüm mimarilerde iç formlara sahiptir:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ARM iç](../intrinsics/arm-intrinsics.md) bilgileri\
-[ARM64 iç](../intrinsics/arm64-intrinsics.md)\
+[ARM iç bilgileri](../intrinsics/arm-intrinsics.md)\
+[ARM64 içleri](../intrinsics/arm64-intrinsics.md)\
 [x86 iç bilgi listesi](../intrinsics/x86-intrinsics-list.md)\
 [x64 (amd64) iç bilgi listesi](../intrinsics/x64-amd64-intrinsics-list.md)

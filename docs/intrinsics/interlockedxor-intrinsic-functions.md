@@ -1,5 +1,6 @@
 ---
-title: _InterlockedXor iç işlevleri
+description: 'Hakkında daha fazla bilgi edinin: _InterlockedXor iç işlevler'
+title: _InterlockedXor iç işlevler
 ms.date: 09/02/2019
 f1_keywords:
 - _InterlockedXor_nf
@@ -34,16 +35,16 @@ helpviewer_keywords:
 - InterlockedXor64 intrinsic
 - _InterlockedXor intrinsic
 ms.assetid: faef1796-cb5a-4430-b1e2-9d5eaf9b4a91
-ms.openlocfilehash: 22cb9edd5fa4ffd8ffae7363ab07dc48f519fff0
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 47fb057f4a7e70b8cb8bcee1a5b05ad55d5918e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221910"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167974"
 ---
-# <a name="_interlockedxor-intrinsic-functions"></a>_InterlockedXor iç işlevleri
+# <a name="_interlockedxor-intrinsic-functions"></a>_InterlockedXor iç işlevler
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Birden çok iş parçacığı tarafından paylaşılan bir değişkende atomik bit düzeyinde özel veya (XOR) işlemi gerçekleştirin.
 
@@ -156,28 +157,28 @@ __int64 _InterlockedXor64_rel(
 *Maskesi*\
 'ndaki İkinci işlenen.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 İlk işlenenin özgün değeri.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_InterlockedXor`, `_InterlockedXor8`, `_InterlockedXor16`|x86, ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedXor64`|ARM, x64, ARM64|\<Intrin. h >|
-|`_InterlockedXor_acq`, `_InterlockedXor_nf`, `_InterlockedXor_rel`, `_InterlockedXor8_acq`, `_InterlockedXor8_nf`, `_InterlockedXor8_rel`, `_InterlockedXor16_acq`, `_InterlockedXor16_nf`, `_InterlockedXor16_rel`, `_InterlockedXor64_acq`, `_InterlockedXor64_nf`, `_InterlockedXor64_rel`,|ARM, ARM64|\<Intrin. h >|
-|`_InterlockedXor_np`, `_InterlockedXor8_np`, `_InterlockedXor16_np`, `_InterlockedXor64_np`|X64|\<Intrin. h >|
-|`_InterlockedXor_HLEAcquire`, `_InterlockedXor_HLERelease`|x86, x64|\<ımintrin. h >|
-|`_InterlockedXor64_HLEAcquire`, `_InterlockedXor64_HLERelease`|X64|\<ımintrin. h >|
+|`_InterlockedXor`, `_InterlockedXor8`, `_InterlockedXor16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedXor64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedXor_acq`, `_InterlockedXor_nf`, `_InterlockedXor_rel`, `_InterlockedXor8_acq`, `_InterlockedXor8_nf`, `_InterlockedXor8_rel`, `_InterlockedXor16_acq`, `_InterlockedXor16_nf`, `_InterlockedXor16_rel`, `_InterlockedXor64_acq`, `_InterlockedXor64_nf`, `_InterlockedXor64_rel`,|ARM, ARM64|\<intrin.h>|
+|`_InterlockedXor_np`, `_InterlockedXor8_np`, `_InterlockedXor16_np`, `_InterlockedXor64_np`|x64|\<intrin.h>|
+|`_InterlockedXor_HLEAcquire`, `_InterlockedXor_HLERelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedXor64_HLEAcquire`, `_InterlockedXor64_HLERelease`|x64|\<immintrin.h>|
 
 ## <a name="remarks"></a>Açıklamalar
 
 Her işlevin adındaki sayı, bağımsız değişkenlerin bit boyutunu belirtir.
 
-ARM platformlarında, önemli bir bölümün başındaki ve `_acq` sonundaki `_rel` gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf` ("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
+ARM platformlarında, `_acq` `_rel` önemli bir bölümün başındaki ve sonundaki gibi alma ve bırakma semantiklerine ihtiyacınız varsa, iç bilgileri ve son eklerini kullanın. `_nf`("Sınır yok") son ek olan ARM iç bilgileri bellek engeli olarak davranmaz.
 
-`_np` ("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
+`_np`("Önceden getirme yok") sonekine sahip iç bilgiler, olası bir önceden getirme işleminin derleyici tarafından eklenmesini engeller.
 
 Donanım kilidi (HLE) yönergelerini destekleyen Intel platformlarında, `_HLEAcquire` ve `_HLERelease` son ekler, donanımda bir kilit yazma adımını ortadan kaldırarak işlemciyi hızlandıran bir ipucu içerir. Bu iç bilgiler HLE 'yı desteklemeyen platformlarda çağrılırsa, ipucu yok sayılır.
 

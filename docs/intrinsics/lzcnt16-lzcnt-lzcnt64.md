@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __lzcnt16, __lzcnt, __lzcnt64'
 title: __lzcnt16, __lzcnt, __lzcnt64
 ms.date: 09/02/2019
 f1_keywords:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - lzcnt64 intrinsic
 - __lzcnt64 intrinsic
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-ms.openlocfilehash: fcd801717974a230fbd19cc7802d8f6a011774f7
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 75e2c105d05cfe4620f558a4f44c8ae8b9cd6f8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221808"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167740"
 ---
 # <a name="__lzcnt16-__lzcnt-__lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 16, 32-veya 64 bit tamsayıların önünde sıfır sayısını sayar.
 
@@ -46,27 +47,27 @@ unsigned __int64 __lzcnt64(
 *deeri*\
 'ndaki Baştaki sıfırları taramak için 16, 32-veya 64 bitlik işaretsiz tamsayı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-`value` Parametresindeki baştaki sıfır bit sayısı. `value` Sıfırsa, dönüş değeri giriş işleneninin boyutudur (16, 32 veya 64). En önemli bit `value` bir ise, dönüş değeri sıfırdır.
+Parametresindeki baştaki sıfır bit sayısı `value` . `value`Sıfırsa, dönüş değeri giriş işleneninin boyutudur (16, 32 veya 64). En önemli bit `value` bir ise, dönüş değeri sıfırdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`__lzcnt16`|AMD Gelişmiş bit Işleme (ABD)<br /><br /> Intel Haswell|
-|`__lzcnt`|AMD Gelişmiş bit Işleme (ABD)<br /><br /> Intel Haswell|
-|`__lzcnt64`|AMD 64 bit modunda gelişmiş bit Işleme (ABD).<br /><br /> Intel Haswell|
+|`__lzcnt16`|AMD: Gelişmiş bit Işleme (ABD)<br /><br /> Intel: Haswell|
+|`__lzcnt`|AMD: Gelişmiş bit Işleme (ABD)<br /><br /> Intel: Haswell|
+|`__lzcnt64`|AMD: 64 bit modunda, gelişmiş bit Işleme (ABD).<br /><br /> Intel: Haswell|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her bir iç yapı, `lzcnt` yönergeyi oluşturur.  `lzcnt` Yönergenin döndürdüğü değerin boyutu bağımsız değişkeninin boyutuyla aynıdır.  32 bit modunda, 64 bit genel amaçlı kayıt yoktur, bu nedenle 64-bit `lzcnt` desteklenmez.
+Her bir iç yapı, `lzcnt` yönergeyi oluşturur.  `lzcnt`Yönergenin döndürdüğü değerin boyutu bağımsız değişkeninin boyutuyla aynıdır.  32 bit modunda, 64 bit genel amaçlı kayıt yoktur, bu nedenle 64-bit `lzcnt` desteklenmez.
 
-`lzcnt` Yönergeyle ilgili donanım desteğini öğrenmek için, ile `__cpuid` `InfoType=0x80000001` iç öğesini çağırın ve bit 5 `CPUInfo[2] (ECX)`' i denetleyin. Yönerge destekleniyorsa bu bit 1 olur, aksi takdirde 0 olur. `lzcnt` Yönergeyi desteklemeyen bir donanım kullanan kodu çalıştırırsanız, sonuçlar tahmin edilemez olur.
+Yönergeyle ilgili donanım desteğini öğrenmek için, `lzcnt` `__cpuid` ile iç öğesini çağırın `InfoType=0x80000001` ve bit 5 ' i denetleyin `CPUInfo[2] (ECX)` . Yönerge destekleniyorsa bu bit 1 olur, aksi takdirde 0 olur. Yönergeyi desteklemeyen bir donanım kullanan kodu çalıştırırsanız `lzcnt` , sonuçlar tahmin edilemez olur.
 
-`lzcnt` Yönergesini desteklemeyen Intel işlemcilerde, yönerge bayt kodlaması (bit taraması tersine) olarak `bsr` yürütülür. Kod taşınabilirliği sorun oluşturacaksa, bunun yerine `_BitScanReverse` iç kullanımı göz önünde bulundurun. Daha fazla bilgi için bkz. [_Bitscanreverse, _Bitscansmar64](../intrinsics/bitscanreverse-bitscanreverse64.md).
+Yönergesini desteklemeyen Intel işlemcilerde `lzcnt` , yönerge bayt kodlaması `bsr` (bit taraması tersine) olarak yürütülür. Kod taşınabilirliği sorun oluşturacaksa, bunun yerine iç kullanımı göz önünde bulundurun `_BitScanReverse` . Daha fazla bilgi için bkz. [_BitScanReverse, _BitScanReverse64](../intrinsics/bitscanreverse-bitscanreverse64.md).
 
 ## <a name="example"></a>Örnek
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: satır Içi derlemede C Işlevlerini çağırma'
 title: Satır İçi Derlemede C İşlevlerini Çağırma
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - inline assembly, calling functions
 - __asm keyword [C++], calling functions
 ms.assetid: f8a8d568-d175-4e23-9b24-36ef60a4cab3
-ms.openlocfilehash: 73be1142747dc608d683e6bd847639b9df718a13
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5cdace4a909cbc49567988f85085eed5d84eadf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87192632"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117997"
 ---
 # <a name="calling-c-functions-in-inline-assembly"></a>Satır İçi Derlemede C İşlevlerini Çağırma
 

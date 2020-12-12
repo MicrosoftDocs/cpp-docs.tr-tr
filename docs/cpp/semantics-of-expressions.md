@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ifadelerin semantiği'
 title: İfade Semantikleri
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - expression evaluation
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-ms.openlocfilehash: 43bcd98e0dbf14dada2643c0b731d3f6bae863e6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f5e038d8ea6de55463a60d7b21104c2e71accec1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223609"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116996"
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
 
@@ -20,7 +21,7 @@ ms.locfileid: "87223609"
 
 ## <a name="order-of-evaluation"></a>Değerlendirme sırası
 
-Şu örneği göz önünde bulundurun:
+Bu örneği ele alalım:
 
 ```cpp
 // Order_of_Evaluation.cpp
@@ -63,7 +64,7 @@ Yukarıdaki şekildeki gibi ifadeler yalnızca yan etkileri için (bu örnekte b
 
 ## <a name="notation-in-expressions"></a>İfadelerdeki gösterim
 
-C++ dili, işlenenleri belirtirken belirli uyumluluk belirtir. Aşağıdaki tabloda *, türünde işlenenler*gerektiren işleçlerde kabul edilebilir işlenen türleri gösterilmektedir.
+C++ dili, işlenenleri belirtirken belirli uyumluluk belirtir. Aşağıdaki tabloda *, türünde işlenenler* gerektiren işleçlerde kabul edilebilir işlenen türleri gösterilmektedir.
 
 ### <a name="operand-types-acceptable-to-operators"></a>İşleç için kabul edilebilir işlenen türleri
 

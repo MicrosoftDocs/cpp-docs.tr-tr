@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: #using yönergesi (C++/CLı)'
 title: '#using yönergesi (C++/CLI)'
 ms.date: 08/29/2019
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - preprocessor, directives
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
-ms.openlocfilehash: 0245eb15219585421be83def0258415ab4b573b6
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 5903e3b5af4cd6ee40e0b087d52d1bd0115b1c6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167532"
 ---
 # <a name="using-directive-ccli"></a>#using yönergesi (C++/CLı)
 
@@ -93,7 +94,7 @@ public:
 };
 ```
 
-Aşağıdaki örnekte, derleyici *using_assembly_A.dll*başvuru hakkında bir hata bildirmez çünkü program *using_assembly_A. cpp*içinde tanımlı türlerden hiçbirini kullanmaz.
+Aşağıdaki örnekte, derleyici *using_assembly_A.dll* başvuru hakkında bir hata bildirmez çünkü program *using_assembly_A. cpp* içinde tanımlı türlerden hiçbirini kullanmaz.
 
 ```cpp
 // using_assembly_C.cpp

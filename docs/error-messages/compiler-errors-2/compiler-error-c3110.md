@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3110'
 title: Derleyici hatası C3110
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3110
 ms.assetid: 821dc71f-896e-4b2d-af0e-aa9932934b7b
-ms.openlocfilehash: 9eb3e54b8bd9b296ad9cd7e0b6ea2943c74d1dff
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1e402941ea88a34c48f58df56a365f74c819a8e3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498485"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116060"
 ---
 # <a name="compiler-error-c3110"></a>Derleyici hatası C3110
 
@@ -23,7 +24,7 @@ Bir arabirim özniteliği tarafından önceden ortaya çıkacak bir arabirim, ö
 
 - [dispinterface](../../windows/attributes/dispinterface.md)
 
-- [çift](../../windows/attributes/dual.md)
+- [Çift](../../windows/attributes/dual.md)
 
 - [object](../../windows/attributes/object-cpp.md)
 

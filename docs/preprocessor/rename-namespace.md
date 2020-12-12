@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: rename_namespace Import özniteliği'
 title: rename_namespace içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - rename_namespace attribute
 ms.assetid: 45006d2b-36cd-4bec-98b9-3b8ec45299e3
-ms.openlocfilehash: d319d7390e7c7dce070a35be44aad37c7a34e1a0
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 402d9c9cd8dee5979dd71e16fec1a606d8b4b996
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216648"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167389"
 ---
 # <a name="rename_namespace-import-attribute"></a>rename_namespace içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
 Tür kitaplığının içeriğini içeren ad alanını yeniden adlandırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **rename_namespace (** "*YeniAd*" **)**
+> **#import** *türü-kitaplık* **rename_namespace (** "*YeniAd*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
@@ -34,7 +35,7 @@ Ad alanının yeni adı.
 
 Ad alanını kaldırmak için bunun yerine [no_namespace](../preprocessor/no-namespace.md) özniteliğini kullanın.
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

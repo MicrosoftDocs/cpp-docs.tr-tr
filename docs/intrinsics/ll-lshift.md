@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __ll_lshift'
 title: __ll_lshift
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ll_lshift intrinsic
 - __ll_lshift intrinsic
 ms.assetid: fe98f733-426d-44b3-8f24-5d0d6d44bd94
-ms.openlocfilehash: 988284b81c9f04ee5d7f09f8a2f173a689f9fb55
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 324286a0f7ca28eaa7259f05f629f87e763aac0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230525"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167766"
 ---
 # <a name="__ll_lshift"></a>__ll_lshift
 
@@ -21,7 +22,7 @@ ms.locfileid: "87230525"
 
 Sağlanan 64 bitlik değeri belirtilen bit sayısı ile sola kaydırır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 unsigned __int64 __ll_lshift(

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: görevleri ve XML HTTP Isteklerini kullanarak bağlanma'
 title: 'İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma'
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-ms.openlocfilehash: cdcdd4747e7f32d1d4c0e91959f4b49a45721269
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 88f58639b09c1b996922261c889c4844f1da4963
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224909"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167571"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma
 

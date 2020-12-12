@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: yazmaç Storage-Class Belirleyicisi'
 title: register Depolama Sınıfı Tanımlayıcısı
 ms.date: 11/04/2016
 helpviewer_keywords:
 - register variables
 - register storage class
 ms.assetid: 7577bf48-88ec-4191-873c-ef4217a4034e
-ms.openlocfilehash: 513213222ee2c598455709a0891977a0949c8555
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a7e062f72191f6ee6d678d18b902ea184d362714
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229564"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120763"
 ---
 # <a name="register-storage-class-specifier"></a>register Depolama Sınıfı Tanımlayıcısı
 
@@ -22,4 +23,4 @@ Microsoft C/C++ derleyici, kayıt değişkenleri için kullanıcı isteklerini d
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Iç düzey bildirimler için depolama sınıfı belirticileri](../c-language/storage-class-specifiers-for-internal-level-declarations.md)
+[Internal-Level bildirimleri için depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

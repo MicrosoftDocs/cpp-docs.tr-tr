@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: high_method_prefix Import özniteliği'
 title: high_method_prefix içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - high_method_prefix attribute
 ms.assetid: cacebf09-12f5-4919-ad40-939e206e340c
-ms.openlocfilehash: 357ac528a921a9f864f0f7e30252281a4d10e33c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0ebf73892ad1ea544f3deee726695bb8e209cb2c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219013"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167493"
 ---
 # <a name="high_method_prefix-import-attribute"></a>high_method_prefix içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
 Üst düzey özellikleri ve yöntemleri adlandırırken kullanılacak ön eki belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **high_method_prefix (** "*ön ek*" **)**
+> **#import** *türü-kitaplık* **high_method_prefix (** "*ön ek*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
@@ -32,7 +33,7 @@ Kullanılacak ön ek.
 
 Varsayılan olarak, üst düzey hata işleme özellikleri ve yöntemleri, ön ek olmadan adlandırılan üye işlevleri tarafından gösterilir. Adlar tür kitaplığından.
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

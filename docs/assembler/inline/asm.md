@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `__asm`'
 title: __asm
 ms.date: 10/09/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - __asm keyword [C++], vs. asm blocks
 - __asm keyword [C++]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
-ms.openlocfilehash: 14a40bef5b2edba76fc130604414c45eee589bcd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5fa4e64bdb9ae4fc01e6e379de3e8a6771959e80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193009"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118062"
 ---
 # `__asm`
 
@@ -47,9 +48,9 @@ Visual Studio 2005 öncesi yönergeleri
 __asm int 3
 ```
 
-**/clr**ile derlendiğinde yerel kodun oluşturulmasına neden olmadı; Derleyici, yönergeyi bir CLR kesme yönergesine çevirdi.
+**/clr** ile derlendiğinde yerel kodun oluşturulmasına neden olmadı; Derleyici, yönergeyi bir CLR kesme yönergesine çevirdi.
 
-`__asm int 3`Artık işlev için yerel kod oluşturmaya neden olur. Bir işlevin kodunuzda bir kesme noktasına neden olmasını istiyorsanız ve bu işlevin MSIL 'e derlendiğini istiyorsanız [__debugbreak](../../intrinsics/debugbreak.md)kullanın.
+`__asm int 3` Artık işlev için yerel kod oluşturmaya neden olur. Bir işlevin kodunuzda bir kesme noktasına neden olmasını istiyorsanız ve bu işlevin MSIL 'e derlendiğini istiyorsanız [__debugbreak](../../intrinsics/debugbreak.md)kullanın.
 
 Önceki sürümlerle uyumluluk için, **`_asm`** **`__asm`** [/za \( Disable dil uzantılarını devre dışı bırak](../../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirlenmediği için bir eş anlamlı.
 
