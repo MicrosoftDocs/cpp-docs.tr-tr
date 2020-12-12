@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: scanf, _scanf_l, wscanf, _wscanf_l'
 title: scanf, _scanf_l, wscanf, _wscanf_l
 ms.date: 10/21/2019
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - wscanf_l function
 - _wscanf_l function
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-ms.openlocfilehash: 62f97c901bc7e6dc34a2db6ad80193cc4aaa986a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4f87ae7caf2dbc197834864bc43a04be48f5c466
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289042"
 ---
 # <a name="scanf-_scanf_l-wscanf-_wscanf_l"></a>scanf, _scanf_l, wscanf, _wscanf_l
 
@@ -57,7 +58,7 @@ Standart giriş akışından biçimlendirilen verileri okur. Bu işlevin daha g�
 > [!NOTE]
 > Visual Studio 2015 ' de `printf` ve içindeki `scanf` İşlevler, **`inline`** `<stdio.h>` ve üst bilgileri ile olarak bildirilmiştir ve taşınır `<conio.h>` . Eski kodu geçiriyorsanız, Bu işlevlerle bağlantılı *LNK2019* görebilirsiniz. Daha fazla bilgi için bkz. [Visual C++ değişiklik geçmişi 2003-2015](../../porting/visual-cpp-change-history-2003-2015.md#stdio_and_conio).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int scanf(
@@ -88,23 +89,23 @@ Biçim denetimi dizesi.
 *değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir.
 
-*Biçim* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Biçim* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Scanf** işlevi standart giriş akışı **stdin** ' den verileri okur ve *bağımsız değişken*tarafından verilen konuma verileri yazar. Her *bağımsız değişken* , *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
+**Scanf** işlevi standart giriş akışı **stdin** ' den verileri okur ve *bağımsız değişken* tarafından verilen konuma verileri yazar. Her *bağımsız değişken* , *biçimdeki* bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
 
 > [!IMPORTANT]
-> **Scanf**ile bir dize okunurken, her zaman **% s** biçimi için bir genişlik belirleyin (örneğin, "% **s"** yerine **"% 32S"** ); Aksi halde, düzensiz biçimli giriş, arabellek taşmasına kolayca neden olabilir. Alternatif olarak, [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) veya [fal](fgets-fgetws.md)kullanmayı düşünün.
+> **Scanf** ile bir dize okunurken, her zaman **% s** biçimi için bir genişlik belirleyin (örneğin, "% **s"** yerine **"% 32S"** ); Aksi halde, düzensiz biçimli giriş, arabellek taşmasına kolayca neden olabilir. Alternatif olarak, [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) veya [fal](fgets-fgetws.md)kullanmayı düşünün.
 
 **wscanf** , **scanf**'nin geniş karakterli bir sürümüdür; **wscanf** *Biçim* bağımsız değişkeni geniş karakterli bir dizedir. Akış ANSI modunda açılırsa **wscanf** ve **scanf** aynı şekilde davranır. **scanf** Şu anda UNICODE akışından girişi desteklememektedir.
 
@@ -126,7 +127,7 @@ Daha fazla bilgi için bkz. [Biçim belirtim alanları — scanf işlevleri ve w
 |**scanf**, **_scanf_l**|\<stdio.h>|
 |**wscanf**, **_wscanf_l**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -170,7 +171,7 @@ The contents are: 36 92.300003 y n Wide characters
 
 [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
 [sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>

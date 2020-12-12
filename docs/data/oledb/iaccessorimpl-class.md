@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IAccessorImpl sınıfı'
 title: IAccessorImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - GetBindings method
 - ReleaseAccessor method
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-ms.openlocfilehash: 356278b316912bdb81f1c43bbf2034f00ec3d785
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e7b2c2ea7192ec0fdb8c943ce4062ada0b1f0504
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287417"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl Sınıfı
 
 [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) arabiriminin bir uygulamasını sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T,
@@ -106,7 +107,7 @@ IAccessorImpl();
 
 Varolan bir erişimciye bir başvuru sayısı ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
@@ -121,7 +122,7 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 
 Bir bağlama kümesinden erişimci oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
@@ -140,7 +141,7 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 
 Bir erişimcideki tüketiciden temel sütun bağlamalarını döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(GetBindings)(HACCESSOR hAccessor,
@@ -157,7 +158,7 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 
 Bir erişimci yayınlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,

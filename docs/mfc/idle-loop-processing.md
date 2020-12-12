@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: boşta döngüsü Işleme'
 title: Boşta Çevrim İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - processing [MFC]
 - background processing [MFC]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
-ms.openlocfilehash: 74ca89d91cf4e60b09a063551b526f177caed161
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8972a2bafe5c9d35af2a5f4452082a7ca82f28dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624512"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290160"
 ---
 # <a name="idle-loop-processing"></a>Boşta Çevrim İşleme
 
@@ -35,18 +36,18 @@ Bu makalede, uygulamanızda boşta işleme almanın iki yolu açıklanmaktadır:
 
 - Başka bir **PeekMessage** döngüsünü uygulamada başka bir yere ekleme.
 
-## <a name="peekmessage-in-the-mfc-message-loop"></a><a name="_core_peekmessage_in_the_mfc_message_loop"></a>MFC Ileti döngüsünde PeekMessage
+## <a name="peekmessage-in-the-mfc-message-loop"></a><a name="_core_peekmessage_in_the_mfc_message_loop"></a> MFC Ileti döngüsünde PeekMessage
 
 MFC ile geliştirilen bir uygulamada, sınıftaki ana ileti döngüsü, `CWinThread` [PeekMessage](/windows/win32/api/winuser/nf-winuser-peekmessagew) Win32 API çağıran bir ileti döngüsü içerir. Bu döngü Ayrıca `OnIdle` iletiler arasındaki üye işlevini çağırır `CWinThread` . Bir uygulama, işlevi geçersiz kılarak bu boşta zaman içindeki iletileri işleyebilir `OnIdle` .
 
 > [!NOTE]
-> `Run`, `OnIdle` ve bazı diğer üye işlevleri, sınıfı yerine artık sınıfın üyeleridir `CWinThread` `CWinApp` . `CWinApp`, öğesinden türetilir `CWinThread` .
+> `Run`, `OnIdle` ve bazı diğer üye işlevleri, sınıfı yerine artık sınıfın üyeleridir `CWinThread` `CWinApp` . `CWinApp` , öğesinden türetilir `CWinThread` .
 
 Boşta işleme gerçekleştirme hakkında daha fazla bilgi için bkz. *MFC başvurusunda* [OnIdle](reference/cwinthread-class.md#onidle) .
 
-## <a name="peekmessage-elsewhere-in-your-application"></a><a name="_core_peekmessage_elsewhere_in_your_application"></a>PeekMessage, uygulamanızda başka bir yerde
+## <a name="peekmessage-elsewhere-in-your-application"></a><a name="_core_peekmessage_elsewhere_in_your_application"></a> PeekMessage, uygulamanızda başka bir yerde
 
-Bir uygulamada boş işlem gerçekleştirmeye yönelik başka bir yöntem, işlevlerinizin birine bir ileti döngüsü katıştırmayı içerir. Bu ileti döngüsü,,, şunu, bir,,,,,, [CWinThread::Run](reference/cwinthread-class.md#run), şunu,,,,,,, Bu, MFC ile geliştirilen bir uygulama içindeki bir döngünün, ana ileti döngüsüyle aynı işlevlerin birçoğunu gerçekleştirmesi gerekir. Aşağıdaki kod parçası, MFC ile uyumlu bir ileti döngüsünün yazılmasını göstermektedir:
+Bir uygulamada boş işlem gerçekleştirmeye yönelik başka bir yöntem, işlevlerinizin birine bir ileti döngüsü katıştırmayı içerir. Bu ileti döngüsü,,, şunu, bir,,,,,, [](reference/cwinthread-class.md#run), şunu,,,,,,, Bu, MFC ile geliştirilen bir uygulama içindeki bir döngünün, ana ileti döngüsüyle aynı işlevlerin birçoğunu gerçekleştirmesi gerekir. Aşağıdaki kod parçası, MFC ile uyumlu bir ileti döngüsünün yazılmasını göstermektedir:
 
 [!code-cpp[NVC_MFCDocView#8](codesnippet/cpp/idle-loop-processing_1.cpp)]
 
@@ -58,4 +59,4 @@ Boşta işleme gerçekleştirme hakkında daha fazla bilgi için bkz. MFC Kitapl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](general-mfc-topics.md)
+[Genel MFC konuları](general-mfc-topics.md)

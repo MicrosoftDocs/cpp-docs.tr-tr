@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _searchenv_s _wsearchenv_s'
 title: _searchenv_s, _wsearchenv_s
 ms.date: 4/2/2020
 api_name:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - _searchenv_s function
 - environment paths
 ms.assetid: 47f9fc29-250e-4c09-b52e-9e9f0ef395ca
-ms.openlocfilehash: 5dd21013c8910ba07e2d23606af49bc80458dbc6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c618840c904bb03eb2f04b9931c7fe7999a278a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918991"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288964"
 ---
 # <a name="_searchenv_s-_wsearchenv_s"></a>_searchenv_s, _wsearchenv_s
 
@@ -109,21 +110,21 @@ Başarılıysa sıfır; hatada hata kodu.
 
 |*filename*|*varname*|*PathName*|*numberOfElements*|Döndürülen değer|*Yol adının* içeriği|
 |----------------|---------------|----------------|------------------------|------------------|----------------------------|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|kaydedilmemiş|**EıNVAL**|yok|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|<= 0|**EıNVAL**|değiştirilmedi|
+|herhangi biri|herhangi biri|**DEĞER**|herhangi biri|**EıNVAL**|yok|
+|**DEĞER**|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|değiştirilmedi|
+|herhangi biri|herhangi biri|herhangi biri|<= 0|**EıNVAL**|değiştirilmedi|
 
-Bu hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
+Bu hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EINVAL** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Searchenv_s** rutin, belirtilen etki alanındaki hedef dosyayı arar. *Varname* değişkeni, **Path**, **LIB**ve **Include**gibi dizin yollarının bir listesini belirten herhangi bir ortam veya Kullanıcı tanımlı değişken olabilir. **_Searchenv_s** , büyük/küçük harfe duyarlı olduğundan, *varname* ortam değişkeni durumuyla eşleşmelidir. *Varname* , işlemin ortamında tanımlanan bir ortam değişkeninin adı ile eşleşmiyorsa, işlev sıfır döndürür ve *yol adı* değişkeni değiştirilmez.
+**_Searchenv_s** rutin, belirtilen etki alanındaki hedef dosyayı arar. *Varname* değişkeni, **Path**, **LIB** ve **Include** gibi dizin yollarının bir listesini belirten herhangi bir ortam veya Kullanıcı tanımlı değişken olabilir. **_Searchenv_s** , büyük/küçük harfe duyarlı olduğundan, *varname* ortam değişkeni durumuyla eşleşmelidir. *Varname* , işlemin ortamında tanımlanan bir ortam değişkeninin adı ile eşleşmiyorsa, işlev sıfır döndürür ve *yol adı* değişkeni değiştirilmez.
 
-Bu yordam, ilk olarak geçerli çalışma dizinindeki dosya için arama yapar. Dosyayı bulamazsa, ortam değişkeni tarafından belirtilen dizinlerde bir sonrakine bakar. Hedef dosya bu dizinlerden birinde ise, yeni oluşturulan yol, *yol adına*kopyalanır. Dosya *adı* dosyası bulunamazsa, *PathName* boş bir null ile sonlandırılmış dize içerir.
+Bu yordam, ilk olarak geçerli çalışma dizinindeki dosya için arama yapar. Dosyayı bulamazsa, ortam değişkeni tarafından belirtilen dizinlerde bir sonrakine bakar. Hedef dosya bu dizinlerden birinde ise, yeni oluşturulan yol, *yol adına* kopyalanır. Dosya *adı* dosyası bulunamazsa, *PathName* boş bir null ile sonlandırılmış dize içerir.
 
 *Yol* adı arabelleği, oluşturulan yol adının tam uzunluğuna uyum sağlamak için en az **_MAX_PATH** karakter uzunluğunda olmalıdır. Aksi takdirde, **_searchenv_s** *yol* arabelleğinin beklenmedik davranışa neden olduğu taşmayabilir.
 
-**_wsearchenv_s** , **_searchenv_s**geniş karakterli bir sürümüdür; **_wsearchenv_s** bağımsız değişkenler geniş karakterli dizelerdir. **_wsearchenv_s** ve **_searchenv_s** aynı şekilde davranır.
+**_wsearchenv_s** , **_searchenv_s** geniş karakterli bir sürümüdür; **_wsearchenv_s** bağımsız değişkenler geniş karakterli dizelerdir. **_wsearchenv_s** ve **_searchenv_s** aynı şekilde davranır.
 
 C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -139,8 +140,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_searchenv_s**|\<Stdlib. h>|
-|**_wsearchenv_s**|\<Stdlib. h> veya \<wchar. h>|
+|**_searchenv_s**|\<stdlib.h>|
+|**_wsearchenv_s**|\<stdlib.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

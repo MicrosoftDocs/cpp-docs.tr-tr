@@ -1,20 +1,21 @@
 ---
+description: 'Daha fazla bilgi edinin: anonim sınıf türleri'
 title: Anonim Sınıf Türleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - class types [C++], anonymous
 - anonymous class types
 ms.assetid: 9ba667b2-8c2a-4c29-82a6-fa120b9233c8
-ms.openlocfilehash: 77f0a5517cee5e4baeacbbdcae47bdeea2853a97
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 91cc86602e4f9ead4d9da272e9cca4299be18e5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288229"
 ---
 # <a name="anonymous-class-types"></a>Anonim Sınıf Türleri
 
-Sınıflar anonim olabilir — diğer bir deyişle, bir *tanımlayıcı*olmadan bildirilebilecek. Bu, aşağıdaki gibi bir sınıf adını bir adla değiştirdiğiniz zaman yararlıdır **`typedef`** :
+Sınıflar anonim olabilir — diğer bir deyişle, bir *tanımlayıcı* olmadan bildirilebilecek. Bu, aşağıdaki gibi bir sınıf adını bir adla değiştirdiğiniz zaman yararlıdır **`typedef`** :
 
 ```cpp
 typedef struct

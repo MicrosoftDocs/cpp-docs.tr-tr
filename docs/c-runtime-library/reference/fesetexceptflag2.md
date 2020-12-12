@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fesetexceptflag'
 title: fesetexceptflag
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - fesetexceptflag function
 ms.assetid: 2f7dad77-9e54-4097-a3e3-35176ace4de5
-ms.openlocfilehash: b16de7ea54b5f1df21b6626febe773c8cef556f5
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: da37c4a032533ae35c8481413c27ca1cb2e8c3c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289419"
 ---
 # <a name="fesetexceptflag"></a>fesetexceptflag
 
@@ -59,7 +60,7 @@ Belirtilen tüm özel durum bayrakları başarıyla ayarlandıysa, 0 döndürür
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fesetexceptflag** işlevi, *hariç tutulan* tarafından belirtilen kayan nokta özel durum bayrakları durumunu, *pstatus*tarafından işaret edilen **fexcept_t** nesnesinde ayarlanan karşılık gelen değerlere ayarlar.  Özel durumları oluşturmaz. *PStatus* işaretçisinin geçerli bir **fexcept_t** nesnesine işaret olması veya sonraki davranışın tanımsız olması gerekir. **Fesetexceptflag** işlevi, \<fenv. h > içinde tanımlanan, *hariç tutulan*, bu özel durum makro değerlerini destekler:
+**Fesetexceptflag** işlevi, *hariç tutulan* tarafından belirtilen kayan nokta özel durum bayrakları durumunu, *pstatus* tarafından işaret edilen **fexcept_t** nesnesinde ayarlanan karşılık gelen değerlere ayarlar.  Özel durumları oluşturmaz. *PStatus* işaretçisinin geçerli bir **fexcept_t** nesnesine işaret olması veya sonraki davranışın tanımsız olması gerekir. **Fesetexceptflag** işlevi, içinde tanımlanan, *hariç tutulan* şu özel durum makro değerlerini destekler \<fenv.h> :
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
@@ -72,13 +73,13 @@ Belirtilen tüm özel durum bayrakları başarıyla ayarlandıysa, 0 döndürür
 
 *Hariç tutulan* bağımsız değişken sıfır, desteklenen kayan nokta özel durumu makrolarından biri veya iki ya da daha fazla makronun BIT düzeyinde ya da daha fazlası olabilir. Diğer bağımsız değişken değerinin etkisi tanımsızdır.
 
-Bu işlevi kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için, çağrıdan önce yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir `#pragma fenv_access(on)` . Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**fesetexceptflag**|\<fenv. h >|\<cfenv >|
+|**fesetexceptflag**|\<fenv.h>|\<cfenv>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

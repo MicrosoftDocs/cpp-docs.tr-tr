@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: implements_category'
 title: implements_category (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-ms.openlocfilehash: cd9a4de8834bc22368393e9ea4639884785af0f2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0efc240394c67ab7d470523b8dfe5025b7a0f978
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289549"
 ---
 # <a name="implements_category"></a>implements_category
 
 Hedef sınıf tarafından uygulanan bileşen kategorilerini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ implements_category(implements_category="uuid") ]
@@ -56,7 +57,7 @@ class CMyClass {};
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
-|**Tekrarlanabilir**|Yes|
+|**Yinelenebilir**|Evet|
 |**Gerekli öznitelikler**|Aşağıdakilerden biri: `coclass` , `progid` veya `vi_progid`|
 |**Geçersiz öznitelikler**|Yok|
 

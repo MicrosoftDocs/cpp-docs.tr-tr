@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel durumlar: OLE özel durumları'
 title: 'Özel durumlar: OLE Özel Durumları'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - exception handling [MFC], OLE
 - OLE exceptions [MFC], classes for handling
 ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
-ms.openlocfilehash: 7bd0b0cb2c9eb6fe49356ae8fd4602676d54fa66
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: da2a92d23dc7c11735c75482febea60916af289f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622780"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290524"
 ---
 # <a name="exceptions-ole-exceptions"></a>Özel durumlar: OLE Özel Durumları
 
@@ -25,7 +26,7 @@ Tüm özel durum nesneleri soyut temel sınıftan türetilir `CException` . MFC 
 
 - [Cotadispatchexception](reference/coledispatchexception-class.md) OLE dağıtım (Otomasyon) özel durumları oluşturmak ve işlemek için.
 
-Bu iki sınıf arasındaki fark, sağladıkları ve nerede kullanıldıkları bilgi miktarıdır. `COleException`özel durum için OLE durum kodunu içeren bir genel veri üyesine sahiptir. `COleDispatchException`Aşağıdakiler de dahil olmak üzere daha fazla bilgi sağlar:
+Bu iki sınıf arasındaki fark, sağladıkları ve nerede kullanıldıkları bilgi miktarıdır. `COleException` özel durum için OLE durum kodunu içeren bir genel veri üyesine sahiptir. `COleDispatchException` Aşağıdakiler de dahil olmak üzere daha fazla bilgi sağlar:
 
 - Uygulamaya özgü hata kodu
 
@@ -37,7 +38,7 @@ Bu iki sınıf arasındaki fark, sağladıkları ve nerede kullanıldıkları bi
 
 - Özel durumu oluşturan uygulamanın adı
 
-`COleDispatchException`Microsoft Visual Basic gibi ürünlerle kullanılabilmesi için daha fazla bilgi sağlar. Sözlü hatası açıklaması bir ileti kutusu veya başka bir bildirimde kullanılabilir; Yardım bilgileri, kullanıcının özel duruma neden olan koşullara yanıt vermesini sağlamak için kullanılabilir.
+`COleDispatchException` Microsoft Visual Basic gibi ürünlerle kullanılabilmesi için daha fazla bilgi sağlar. Sözlü hatası açıklaması bir ileti kutusu veya başka bir bildirimde kullanılabilir; Yardım bilgileri, kullanıcının özel duruma neden olan koşullara yanıt vermesini sağlamak için kullanılabilir.
 
 İki genel işlev iki OLE özel durum sınıfına karşılık gelir: [AfxThrowOleException](reference/exception-processing.md#afxthrowoleexception) ve [AfxThrowOleDispatchException](reference/exception-processing.md#afxthrowoledispatchexception). Bunları, sırasıyla Genel OLE özel durumları ve OLE dağıtım özel durumları oluşturmak için kullanın.
 

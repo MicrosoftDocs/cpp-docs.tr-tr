@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: Ileti Işleyici Işlevlerini bildirme'
 title: İleti İşleyici İşlevlerini Bildirme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - declaring functions, message handler functions [MFC]
 ms.assetid: f8d3dbc1-4500-4f1e-a18d-7371edf36386
-ms.openlocfilehash: 302a03d35f00046c7368517de8d31e77d4ee2ad3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 01d17fb99f782130cb9ce3a8e5629d76a8042a1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291031"
 ---
 # <a name="declaring-message-handler-functions"></a>İleti İşleyici İşlevlerini Bildirme
 
@@ -21,8 +22,8 @@ Belirli kurallar ve kurallar ileti işleyicisi işlevlerinizin adlarını yönet
 
 - [İleti aralıklarına yönelik işleyiciler](handlers-for-message-map-ranges.md)
 
-- [Yansıtılan iletileri işleme](handling-reflected-messages.md)
+- [Yansımış iletileri işleme](handling-reflected-messages.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti İşleme ve Eşleme](message-handling-and-mapping.md)
+[İleti Işleme ve eşleme](message-handling-and-mapping.md)

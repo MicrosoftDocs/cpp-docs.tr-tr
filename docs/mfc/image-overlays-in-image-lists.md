@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: resim listelerinde görüntü Yerpaylaşımları'
 title: Görüntü Listelerindeki Görüntü Yer Paylaşımları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - image lists [MFC], image overlays in
 - CImageList class [MFC], image overlays in
 ms.assetid: aaf4e1c4-cd12-42c8-9af4-1bb458889b4e
-ms.openlocfilehash: 861bcd5165ad0938ae6bbd77fc4a9f09095ce789
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: dd65a27c9ef66311311195c1493e91be8c66d100
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290121"
 ---
 # <a name="image-overlays-in-image-lists"></a>Görüntü Listelerindeki Görüntü Yer Paylaşımları
 

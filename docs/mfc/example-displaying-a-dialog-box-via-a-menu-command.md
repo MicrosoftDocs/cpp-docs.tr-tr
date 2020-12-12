@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: örnek: bir menü komutu aracılığıyla bir Iletişim kutusu görüntüleme'
 title: 'Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme'
 ms.date: 09/07/2019
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - examples [MFC], dialog boxes
 - menu items [MFC], examples
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
-ms.openlocfilehash: 1cada8124cd7ea71a24367626508782b522cc746
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: dcfa34eb05733d2f27176795a447e15949d6e274
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506764"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290862"
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme
 
@@ -44,7 +45,7 @@ Yordamlar aşağıdaki adları ve değerleri kullanır:
 
 1. İletişim kutusu için bir sınıf ekleyin. Daha fazla bilgi için bkz. [sınıf ekleme](../ide/adding-a-class-visual-cpp.md) .
 
-1. **Sınıf görünümü**, belge sınıfını (CDisplayDialogDoc) seçin. **Özellikler** penceresinde **Olaylar** düğmesine tıklayın. Menü komutunun KIMLIĞINE (ID_VIEW_TEST) çift tıklayın. Ardından aşağı oka tıklayıp ** \<Add> OnViewTest**' i seçin.
+1. **Sınıf görünümü**, belge sınıfını (CDisplayDialogDoc) seçin. **Özellikler** penceresinde **Olaylar** düğmesine tıklayın. Menü komutunun KIMLIĞINE (ID_VIEW_TEST) çift tıklayın. Ardından aşağı oka tıklayıp **\<Add> OnViewTest**' i seçin.
 
    Bir MDI uygulamasının anaadına menü komutu eklediyseniz bunun yerine uygulama sınıfını (CDisplayDialogApp) seçin.
 

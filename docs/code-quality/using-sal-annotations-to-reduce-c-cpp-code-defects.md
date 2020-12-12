@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: C/C++ kod hatalarını azaltmak için SAL ek açıklamalarını kullanma'
 title: C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - SAL annotations
 - code analysis, annotation
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
-ms.openlocfilehash: 1d47608137e2a9d9ed13740a5f4424cc0aff2902
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 96339db124c8f9d1438e9ec2eade9b7e860e1b96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86403900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288470"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>C/C++ Kod Hatalarını Azaltmak için SAL Ek Açıklamalarını Kullanma
 

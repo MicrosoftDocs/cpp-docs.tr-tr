@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l'
 title: _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - scwprintf_p_l function
 - _sctprintf_p_l function
 ms.assetid: 8390d1e1-2826-47a4-851f-6635a88087cc
-ms.openlocfilehash: 79744ee814583b5b5c15fbf51d2822c6e4bfe1fa
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f3f4fa9ffd1a54756fa3dfb274ebeb3e49f0544c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949481"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289003"
 ---
 # <a name="_scprintf_p-_scprintf_p_l-_scwprintf_p-_scwprintf_p_l"></a>_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
 
@@ -82,28 +83,28 @@ int _scwprintf_p _l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Dize yazdırılacaksa veya belirtilen biçimlendirme kodları kullanılarak bir dosyaya ya da arabelleğe gönderiliyorsa üretilecek karakter sayısını döndürür. Döndürülen değer, Sonlandırıcı null karakterini içermiyor. **_scwprintf_p** , geniş karakterler için aynı işlevi gerçekleştirir.
 
-**_Scprintf_p** ve **_scprintf** arasındaki fark, **_scprintf_p** 'in biçim dizesinde bağımsız değişkenlerin kullanılacağı sırayı belirtmeye izin veren konumsal parametreleri destekleleridir. Daha fazla bilgi için bkz. [Printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+**_Scprintf_p** ve **_scprintf** arasındaki fark, **_scprintf_p** konumsal parametreleri desteklediğinden, bağımsız değişkenlerin biçim dizesinde kullanıldığı sırayı belirtmeye olanak tanır. Daha fazla bilgi için bkz. [Printf_p Konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-*Biçim* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Biçim* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her *bağımsız değişken* (varsa), *biçimde*karşılık gelen biçim belirtimine göre dönüştürülür. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir.
+Her *bağımsız değişken* (varsa), *biçimde* karşılık gelen biçim belirtimine göre dönüştürülür. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
@@ -121,13 +122,13 @@ Her *bağımsız değişken* (varsa), *biçimde*karşılık gelen biçim belirti
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_scprintf_p**, **_scprintf_p_l**|\<stdio. h >|
-|**_scwprintf_p**, **_scwprintf_p_l**|\<stdio. h > veya \<wchar. h >|
+|**_scprintf_p**, **_scprintf_p_l**|\<stdio.h>|
+|**_scwprintf_p**, **_scwprintf_p_l**|\<stdio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_scprintf, _scprintf_l, _scwprintf, _scwprintf_l](scprintf-scprintf-l-scwprintf-scwprintf-l.md)<br/>
 [_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>

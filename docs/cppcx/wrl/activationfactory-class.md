@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ActivationFactory sınıfı'
 title: ActivationFactory Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -21,16 +22,16 @@ helpviewer_keywords:
 - Microsoft::WRL::ActivationFactory::QueryInterface method
 - Microsoft::WRL::ActivationFactory::Release method
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
-ms.openlocfilehash: 0655caeb3f49a18e9c57c78f0008901aaaedda4a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7204a3c2f981947a03efba648dd91b69d582fee1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287846"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory Sınıfı
 
-Bir veya daha fazla sınıfın Windows Runtime tarafından etkinleştirilmesini sağlar.
+Windows Çalışma Zamanı tarafından bir veya daha fazla sınıfın etkinleştirilmesini sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,23 +58,23 @@ class ActivationFactory :
 ### <a name="parameters"></a>Parametreler
 
 *I0*<br/>
-Sıfırın arabirimi.
+Diğer arabirim.
 
 *I1*<br/>
-İlk arayüz.
+İlk arabirim.
 
 *I2*<br/>
-İkinci arayüz.
+İkinci arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`ActivationFactory``IActivationFactory` arayüz için kayıt yöntemleri ve temel işlevsellik sağlar. `ActivationFactory`ayrıca özel bir fabrika uygulaması sağlamanızı sağlar.
+`ActivationFactory` arabirim için kayıt yöntemleri ve temel işlevleri sağlar `IActivationFactory` . `ActivationFactory` Ayrıca özel bir fabrika uygulamasını sağlamanıza olanak sağlar.
 
-Aşağıdaki kod parçası sembolik olarak Etkinleştirme Fabrikası'nın nasıl kullanılacağını göstermektedir.
+Aşağıdaki kod parçası,, ActivationFactory 'yi nasıl kullanacağınızı gösterir.
 
 [!code-cpp[wrl-microsoft__wrl__activationfactory#1](../codesnippet/CPP/activationfactory-class_1.cpp)]
 
-Aşağıdaki kod parçası, üçten fazla arabirim dis'i belirtmek için [Uygulamalar](implements-structure.md) yapısının nasıl kullanılacağını gösterir.
+Aşağıdaki kod parçası, en fazla üç arabirim kimliği belirtmek için [Implements](implements-structure.md) yapısının nasıl kullanılacağını gösterir.
 
 `struct MyFactory : ActivationFactory<Implements<I1, I2, I3>, I4, I5>;`
 
@@ -81,20 +82,20 @@ Aşağıdaki kod parçası, üçten fazla arabirim dis'i belirtmek için [Uygula
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Adı                                                       | Açıklama
+Ad                                                       | Açıklama
 ---------------------------------------------------------- | ------------------------------------------
-[AktivasyonFabrika::AktivasyonFabrikası](#activationfactory) | Sınıfı başharfe iter. `ActivationFactory`
+[ActivationFactory:: ActivationFactory](#activationfactory) | Sınıfını başlatır `ActivationFactory` .
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                                           | Açıklama
+Ad                                                           | Açıklama
 -------------------------------------------------------------- | --------------------------------------------------------------------------------------------
-[AktivasyonFabrika::AddRef](#addref)                           | Geçerli nesnenin başvuru sayısını artırımına eder. `ActivationFactory`
-[ActivationFactory::GetIids](#getiids)                         | Uygulanan arabirim işlemi dizilimial eder.
-[ActivationFactory::GetRuntimeClassName](#getruntimeclassname) | Geçerli `ActivationFactory` anlık olarak anlaştığı nesnenin çalışma zamanı sınıf adını alır.
-[AktivasyonFabrika::GetTrustLevel](#gettrustlevel)             | Geçerli `ActivationFactory` anlık nesnenin güven düzeyini alır.
-[ActivationFactory::QueryInterface](#queryinterface)           | Belirtilen arabirime bir işaretçi alır.
-[ActivationFactory::Yayın](#release)                         | Geçerli `ActivationFactory` nesnenin başvuru sayısını eriter.
+[ActivationFactory:: AddRef](#addref)                           | Geçerli nesnenin başvuru sayısını artırır `ActivationFactory` .
+[ActivationFactory:: Getııds](#getiids)                         | Uygulanan bir arabirim kimlikleri dizisini alır.
+[ActivationFactory:: GetRuntimeClassName](#getruntimeclassname) | Geçerli örnekleyen nesnenin çalışma zamanı sınıf adını alır `ActivationFactory` .
+[ActivationFactory:: GetTrustLevel](#gettrustlevel)             | Geçerli örnekleyen nesnenin güven düzeyini alır `ActivationFactory` .
+[ActivationFactory:: QueryInterface](#queryinterface)           | Belirtilen arabirime bir işaretçi alır.
+[ActivationFactory:: Release](#release)                         | Geçerli nesnenin başvuru sayısını azaltır `ActivationFactory` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -120,21 +121,21 @@ Adı                                                           | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** module.h
+**Üstbilgi:** Module. h
 
-**Ad alanı:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
-## <a name="activationfactoryactivationfactory"></a><a name="activationfactory"></a>AktivasyonFabrika::AktivasyonFabrikası
+## <a name="activationfactoryactivationfactory"></a><a name="activationfactory"></a> ActivationFactory:: ActivationFactory
 
-Sınıfı başharfe iter. `ActivationFactory`
+Sınıfını başlatır `ActivationFactory` .
 
 ```cpp
 ActivationFactory();
 ```
 
-## <a name="activationfactoryaddref"></a><a name="addref"></a>AktivasyonFabrika::AddRef
+## <a name="activationfactoryaddref"></a><a name="addref"></a> ActivationFactory:: AddRef
 
-Geçerli nesnenin başvuru sayısını artırımına eder. `ActivationFactory`
+Geçerli nesnenin başvuru sayısını artırır `ActivationFactory` .
 
 ```cpp
 STDMETHOD_(
@@ -145,11 +146,11 @@ STDMETHOD_(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
 
-## <a name="activationfactorygetiids"></a><a name="getiids"></a>ActivationFactory::GetIids
+## <a name="activationfactorygetiids"></a><a name="getiids"></a> ActivationFactory:: Getııds
 
-Uygulanan arabirim işlemi dizilimial eder.
+Uygulanan bir arabirim kimlikleri dizisini alır.
 
 ```cpp
 STDMETHOD(
@@ -159,19 +160,19 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*iidSay*<br/>
-Bu işlem tamamlandığında, *iids* dizisinde interace kimlikleri sayısı.
+*IidCount*<br/>
+Bu işlem tamamlandığında, *IIDS* dizisindeki ınterace kimliklerinin sayısı.
 
-*iids*<br/>
-Bu işlem tamamlandığında, uygulanan arabirim işl
+*IID*<br/>
+Bu işlem tamamlandığında, uygulanan bir arabirim kimlikleri dizisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT. E_OUTOFMEMORY olası bir başarısızlık HRESULT olduğunu.
+Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT. E_OUTOFMEMORY, HRESULT bir hata olabilir.
 
-## <a name="activationfactorygetruntimeclassname"></a><a name="getruntimeclassname"></a>ActivationFactory::GetRuntimeClassName
+## <a name="activationfactorygetruntimeclassname"></a><a name="getruntimeclassname"></a> ActivationFactory:: GetRuntimeClassName
 
-Geçerli `ActivationFactory` anlık olarak anlaştığı nesnenin çalışma zamanı sınıf adını alır.
+Geçerli örnekleyen nesnenin çalışma zamanı sınıf adını alır `ActivationFactory` .
 
 ```cpp
 STDMETHOD(
@@ -182,15 +183,15 @@ STDMETHOD(
 ### <a name="parameters"></a>Parametreler
 
 *runtimeName*<br/>
-Bu işlem tamamlandığında, geçerli `ActivationFactory` anlık nesnenin çalışma zamanı sınıf adını içeren bir dize bir tutamaç.
+Bu işlem tamamlandığında, geçerli örnekleyen nesnenin çalışma zamanı sınıf adını içeren bir dizeye yönelik bir tanıtıcı `ActivationFactory` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
 
-## <a name="activationfactorygettrustlevel"></a><a name="gettrustlevel"></a>AktivasyonFabrika::GetTrustLevel
+## <a name="activationfactorygettrustlevel"></a><a name="gettrustlevel"></a> ActivationFactory:: GetTrustLevel
 
-Geçerli `ActivationFactory` anlık nesnenin güven düzeyini alır.
+Geçerli örnekleyen nesnenin güven düzeyini alır `ActivationFactory` .
 
 ```cpp
 STDMETHOD(
@@ -200,14 +201,14 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*güvenLvl*<br/>
-Bu işlem tamamlandığında, çalışma zamanı sınıfının güven `ActivationFactory` düzeyi anında gerçekleşir.
+*trustLvl*<br/>
+Bu işlem tamamlandığında, tarafından örnekleyen çalışma zamanı sınıfının güven düzeyi `ActivationFactory` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, bir iddia hatası yayılır ve *trustLvl* `FullTrust`ayarlanır.
+Başarılı olursa S_OK; Aksi takdirde, bir onaylama hatası yayınlanır ve *trustLvl* olarak ayarlanır `FullTrust` .
 
-## <a name="activationfactoryqueryinterface"></a><a name="queryinterface"></a>ActivationFactory::QueryInterface
+## <a name="activationfactoryqueryinterface"></a><a name="queryinterface"></a> ActivationFactory:: QueryInterface
 
 Belirtilen arabirime bir işaretçi alır.
 
@@ -219,19 +220,19 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*Riid*<br/>
-Arayüz kimliği.
+*riıd*<br/>
+Arabirim KIMLIĞI.
 
-*ppvNesne*<br/>
-Bu işlem tamamlandığında, parametre *riid*tarafından belirtilen arabirimin bir işaretçi.
+*ppvObject*<br/>
+Bu işlem tamamlandığında, parametre *riıd* tarafından belirtilen arabirime yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
 
-## <a name="activationfactoryrelease"></a><a name="release"></a>ActivationFactory::Yayın
+## <a name="activationfactoryrelease"></a><a name="release"></a> ActivationFactory:: Release
 
-Geçerli `ActivationFactory` nesnenin başvuru sayısını eriter.
+Geçerli nesnenin başvuru sayısını azaltır `ActivationFactory` .
 
 ```cpp
 STDMETHOD_(
@@ -242,4 +243,4 @@ STDMETHOD_(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, başarısızlığı açıklayan bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.

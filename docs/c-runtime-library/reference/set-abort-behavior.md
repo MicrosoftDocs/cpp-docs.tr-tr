@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_abort_behavior'
 title: _set_abort_behavior
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - aborting programs
 - _set_abort_behavior function
 - set_abort_behavior function
-ms.openlocfilehash: 06f72597a384cc5c90b2e345e62e13dee96c4dca
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1e024cf825115204f51e727d81af7aba74c305fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288912"
 ---
 # <a name="_set_abort_behavior"></a>_set_abort_behavior
 
@@ -73,7 +74,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_abort_behavior**|\<Stdlib. h>|
+|**_set_abort_behavior**|\<stdlib.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -100,4 +101,4 @@ Suppressing the abort message. If successful, this message will be the only outp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[durdurulmaya](abort.md)<br/>
+[durdur](abort.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_fmode'
 title: _set_fmode
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - file translation [C++], setting mode
 - set_fmode function
 ms.assetid: f80eb9c7-733b-4652-a9bc-6b3790a35f12
-ms.openlocfilehash: 6d72baeecefb117f0d7b8258728ec299a31f710a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8f33a0024ad2746974440166f564f8dd41756de5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913037"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288795"
 ---
 # <a name="_set_fmode"></a>_set_fmode
 
@@ -56,11 +57,11 @@ errno_t _set_fmode(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır, hata durumunda hata kodu döndürür. *Mod* **_O_TEXT** veya **_O_BINARY** veya **_O_WTEXT**değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+Başarılıysa sıfır, hata durumunda hata kodu döndürür. *Mod* **_O_TEXT** veya **_O_BINARY** veya **_O_WTEXT** değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevi [_fmode](../../c-runtime-library/fmode.md) genel değişkenini ayarlar. Bu değişken, dosya g/ç işlemleri için varsayılan dosya çevirisi modunu **_open** ve **_pipe**belirtir.
+İşlevi [_fmode](../../c-runtime-library/fmode.md) genel değişkenini ayarlar. Bu değişken, dosya g/ç işlemleri için varsayılan dosya çevirisi modunu **_open** ve **_pipe** belirtir.
 
 **_O_TEXT** ve **_O_BINARY** , fcntl. h içinde tanımlanır. **EINVAL** , errno. h içinde tanımlanır.
 
@@ -70,7 +71,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_set_fmode**|\<Stdlib. h>|\<fcntl. h>, \<errno. h>|
+|**_set_fmode**|\<stdlib.h>|\<fcntl.h>, \<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

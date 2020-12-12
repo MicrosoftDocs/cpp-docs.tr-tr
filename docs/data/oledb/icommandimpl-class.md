@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: ıommandimpl sınıfı'
 title: ICommandImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: 2f2d3938d63e5e67fc501d52d269c06f6b144ac8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 62066d689e51a8ca8a71bb8120199c05ed2811d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501826"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287391"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
 
@@ -110,7 +111,7 @@ Komut nesnesinde zorunlu arabirim.
 
 Geçerli komut yürütmesini iptal eder.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 STDMETHOD(Cancel)();
@@ -118,13 +119,13 @@ STDMETHOD(Cancel)();
 
 ### <a name="remarks"></a>Açıklamalar
 
-*OLE DB Programcı başvurusunda*bkz. [ICommand:: Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) .
+*OLE DB Programcı başvurusunda* bkz. [ICommand:: Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) .
 
 ## <a name="icommandimplcancelexecution"></a><a name="cancelexecution"></a> Iommandimpl:: iptal Lexecution
 
 Geçerli komut yürütmesini iptal eder.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT CancelExecution();
@@ -167,7 +168,7 @@ Kullanıcının satır kümesi sınıfını temsil eden bir şablon sınıfı ü
 [ın/out] İçindeki *ppRowset* öğesine karşılık gelir `ICommand::Execute` .
 
 *pRowsetObj*<br/>
-dışı Satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak bir COM nesnesine geçirmeden önce satır kümesinde daha fazla iş gerçekleştirmeniz gerekiyorsa kullanılabilir. *PRowsetObj* ömrü *ppRowset*ile ilişkilidir.
+dışı Satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak bir COM nesnesine geçirmeden önce satır kümesinde daha fazla iş gerçekleştirmeniz gerekiyorsa kullanılabilir. *PRowsetObj* ömrü *ppRowset* ile ilişkilidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -195,7 +196,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 #### <a name="parameters"></a>Parametreler
 
-*OLE DB Programcı başvurusunda*bkz. [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) .
+*OLE DB Programcı başvurusunda* bkz. [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -216,7 +217,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 #### <a name="parameters"></a>Parametreler
 
-*OLE DB Programcı başvurusunda*bkz. [ICommand:: getdbsession](/previous-versions/windows/desktop/ms719622(v=vs.85)) .
+*OLE DB Programcı başvurusunda* bkz. [ICommand:: getdbsession](/previous-versions/windows/desktop/ms719622(v=vs.85)) .
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -226,7 +227,7 @@ Oturumdan özellikleri almak için faydalıdır.
 
 Oluşturucu.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 ICommandImpl();
@@ -236,7 +237,7 @@ ICommandImpl();
 
 Komutun iptal edilip edilmeyeceğini gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned m_bCancel:1;
@@ -250,7 +251,7 @@ Bu değişkeni `Execute` komut sınıfınızın yönteminde alabilir ve uygun ş
 
 Yürütme sırasında komutun iptal edilip edilmeyeceğini gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned m_bCancelWhenExecuting:1;
@@ -264,7 +265,7 @@ Varsayılan olarak **`true`** (iptal edilebilir).
 
 Komutun Şu anda yürütülmekte olup olmadığını gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned m_bIsExecuting:1;

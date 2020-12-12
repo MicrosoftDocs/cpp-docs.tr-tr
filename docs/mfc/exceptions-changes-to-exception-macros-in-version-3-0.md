@@ -1,4 +1,5 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: özel durumlar: sürüm 3,0 ' de özel durum makrolarındaki"
 title: "Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler"
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - exceptions [MFC], what's changed
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-ms.openlocfilehash: 72b343641b0b43d408c5820ca2a2af1de94ce327
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3135e78885d0b4f14eb8588419b3b9d1852cf1c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290732"
 ---
 # <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler
 
@@ -26,7 +27,7 @@ Bu makalede aşağıdaki konular ele alınmaktadır:
 
 - [Özel durumları yeniden oluşturma](#_core_re.2d.throwing_exceptions)
 
-## <a name="exception-types-and-the-catch-macro"></a><a name="_core_exception_types_and_the_catch_macro"></a>Özel durum türleri ve CATCH makrosu
+## <a name="exception-types-and-the-catch-macro"></a><a name="_core_exception_types_and_the_catch_macro"></a> Özel durum türleri ve CATCH makrosu
 
 MFC 'nin önceki sürümlerinde, **catch** makrosu bir özel durumun türünü öğrenmek için MFC çalışma zamanı tür bilgilerini kullandı; özel durumun türü, diğer bir deyişle, catch sitesinde belirlenir. Ancak C++ özel durumlarıyla, özel durumun türü her zaman throw sitesinde oluşturulan özel durum nesnesinin türüne göre belirlenir. Bu, oluşturulan nesne işaretçisinin türünün oluşturulan nesnenin türünden farklı olduğu nadir durumda uyumsuzluklar oluşmasına neden olur.
 
@@ -48,7 +49,7 @@ Bunun gibi bir kod seyrek kullanılır. Genellikle bir özel durum nesnesi genel
 
 Bu sorunu geçici olarak çözmek için, throw ifadesini işlevinden çağırma koduna taşıyın ve özel durum oluşturulduğu sırada derleyicinin bilinen gerçek türünün bir özel durumunu oluşturun.
 
-## <a name="re-throwing-exceptions"></a><a name="_core_re.2d.throwing_exceptions"></a>Özel durumları yeniden oluşturma
+## <a name="re-throwing-exceptions"></a><a name="_core_re.2d.throwing_exceptions"></a> Re-Throwing özel durumlar
 
 Catch bloğu, yakalandığı özel durum işaretçisini oluşturamaz.
 

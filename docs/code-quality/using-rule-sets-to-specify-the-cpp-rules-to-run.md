@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: çalıştırılacak C++ kurallarını belirtmek için kural kümeleri kullanma'
 title: Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
 ms.date: 07/27/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-ms.openlocfilehash: 53e1122cd1aac74401ca956ee24ebcdf79883228
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: fc1423e92b9dde26b7f6123cae23f1ea4f671fbd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288483"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Çalıştırılacak C++ Kurallarını Belirtmek için Kural Kümeleri Kullanma
 
@@ -25,7 +26,7 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
 ::: moniker range="<=msvc-150"
 
-1. Çözüm Gezgini ' de, proje için kısayol menüsünü açın ve ardından **Özellikler** ' i seçin.
+1. Çözüm Gezgini ' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
 
 1. **Özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri** > **Kod Analizi** > **genel** özellik sayfasını seçin.
 
@@ -42,7 +43,7 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 ::: moniker-end
 ::: moniker range=">=msvc-160"
 
-1. Çözüm Gezgini ' de, proje için kısayol menüsünü açın ve ardından **Özellikler** ' i seçin.
+1. Çözüm Gezgini ' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
 
 1. **Özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri** > **Kod Analizi** > **Microsoft** özellik sayfasını seçin.
 
@@ -60,7 +61,7 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
 ## <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Kural kümesi düzenleyicisinde bir kural kümesini değiştirmek için
 
-- Kural kümesinin görünen adını değiştirmek için, **Görünüm** menüsünde **Özellikler penceresi** ' ni seçin. **Ad** kutusuna görünen adı girin. Görünen adın dosya adından farklı olduğunu fark edebilirsiniz.
+- Kural kümesinin görünen adını değiştirmek için, **Görünüm** menüsünde **Özellikler penceresi**' ni seçin. **Ad** kutusuna görünen adı girin. Görünen adın dosya adından farklı olduğunu fark edebilirsiniz.
 
 - Grubun tüm kurallarını özel bir kural kümesine eklemek için grubun onay kutusunu seçin. Grubun tüm kurallarını kaldırmak için onay kutusunu temizleyin.
 
@@ -78,23 +79,23 @@ Yeni bir özel kural kümesi oluşturmak için yeni bir dosya adı kullanarak bu
 
 ## <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Kural kümesi Düzenleyicisi araç çubuğunu kullanarak kural kümesi düzenleyicisinde Alanları gruplandırmak, filtrelemek veya değiştirmek için
 
-- Tüm gruplardaki kuralları genişletmek için **Tümünü Genişlet** ' i seçin.
+- Tüm gruplardaki kuralları genişletmek için **Tümünü Genişlet**' i seçin.
 
-- Tüm gruplardaki kuralları daraltmak için **Tümünü Daralt** ' ı seçin.
+- Tüm gruplardaki kuralları daraltmak için **Tümünü Daralt**' ı seçin.
 
 - Kuralların gruplandırıldığı alanı değiştirmek için **Gruplandırma ölçütü** listesinden alanı seçin. Gruplandırılmamış kuralları göstermek için öğesini seçin **\<None>** .
 
-- Kural sütunlarındaki alanları eklemek veya kaldırmak için **sütun seçenekleri** ' yi seçin.
+- Kural sütunlarındaki alanları eklemek veya kaldırmak için **sütun seçenekleri**' yi seçin.
 
-- Geçerli çözüm için geçerli olmayan kuralları gizlemek için **geçerli çözüm için geçerli olmayan kuralları gizle** ' yi seçin.
+- Geçerli çözüm için geçerli olmayan kuralları gizlemek için **geçerli çözüm için geçerli olmayan kuralları gizle**' yi seçin.
 
-- Hata eyleminin atandığı kuralları gösterme ve gizleme arasında geçiş yapmak için, **Kod Analizi hataları oluşturabilen kuralları göster** ' i seçin.
+- Hata eyleminin atandığı kuralları gösterme ve gizleme arasında geçiş yapmak için, **Kod Analizi hataları oluşturabilen kuralları göster**' i seçin.
 
-- Uyarı eyleminin atandığı kuralları gösterme ve gizleme arasında geçiş yapmak için, **Kod Analizi uyarıları oluşturabilen kuralları göster** ' i seçin.
+- Uyarı eyleminin atandığı kuralları gösterme ve gizleme arasında geçiş yapmak için, **Kod Analizi uyarıları oluşturabilen kuralları göster**' i seçin.
 
-- **Hiçbiri** eyleminin atandığı kuralları gösterme ve gizleme arasında geçiş yapmak için, **etkin olmayan kuralları göster** ' i seçin.
+- **Hiçbiri** eyleminin atandığı kuralları gösterme ve gizleme arasında geçiş yapmak için, **etkin olmayan kuralları göster**' i seçin.
 
-- Geçerli kural kümesine Microsoft varsayılan kural kümelerini eklemek veya kaldırmak için **alt kural kümelerini Ekle veya Kaldır** ' ı seçin.
+- Geçerli kural kümesine Microsoft varsayılan kural kümelerini eklemek veya kaldırmak için **alt kural kümelerini Ekle veya Kaldır**' ı seçin.
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>Bir metin düzenleyicisinde bir kural kümesi oluşturmak için
 

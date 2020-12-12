@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: soyut sınıflar (C++)'
 title: Soyut Sınıflar (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - abstract classes [C++]
 - derived classes [C++], abstract classes [C++]
 ms.assetid: f0c5975b-39de-4d68-9640-6ce57f4632e6
-ms.openlocfilehash: 2ea9d3765f65434cb738c2b7c53f9499bba24545
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bb1c42ce7930128e72c88afaca90da7aaac0bde5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181700"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288418"
 ---
 # <a name="abstract-classes-c"></a>Soyut Sınıflar (C++)
 
@@ -20,7 +21,7 @@ Soyut sınıflar, daha belirli sınıfların türetilebilecek genel kavramların
 
 En az bir saf sanal işlev içeren bir sınıf, soyut bir sınıf olarak kabul edilir. Soyut sınıftan türetilmiş sınıflar, saf sanal işlevi uygulamalıdır ya da soyut sınıflardır.
 
-[Sanal işlevlerde](../cpp/virtual-functions.md)sunulan örneği göz önünde bulundurun. `Account` sınıfı amacı genel işlevselliği sağlamaktır, ancak `Account` türündeki nesnelerin yararlı olması çok genel bir seçenektir. Bu nedenle, `Account` soyut bir sınıf için iyi bir adaydır:
+[Sanal işlevlerde](../cpp/virtual-functions.md)sunulan örneği göz önünde bulundurun. Sınıfının amacı `Account` genel işlevselliği sağlamaktır, ancak türündeki nesnelerin `Account` yararlı olması çok genel olabilir. Bu nedenle, `Account` soyut bir sınıf için iyi bir adaydır:
 
 ```cpp
 // deriv_AbstractClasses.cpp
@@ -35,7 +36,7 @@ private:
 };
 ```
 
-Bu bildirim ile öncekiyle arasındaki tek fark, `PrintBalance` saf belirticiyle (`= 0`) bildirildiği bir değer.
+Bu bildirim ile Previous arasındaki tek fark, `PrintBalance` saf belirtici () ile bildirilmiştir `= 0` .
 
 ## <a name="restrictions-on-abstract-classes"></a>Soyut sınıflarda kısıtlamalar
 
@@ -55,7 +56,7 @@ Saf sanal işlevler soyut sınıflar için tanımlanabilir, ancak doğrudan yaln
 
 *soyut-sınıf-adı*::*işlev-adı*()
 
-Bu, temel sınıf yıkıcıları her zaman bir nesne yıkılırken çağrıldığı için temel sınıfları saf sanal yıkıcılar içeren sınıf hiyerarşilerinin tasarlanmasına yardımcı olur. Aşağıdaki örnek göz önünde bulundurun:
+Bu, temel sınıf yıkıcıları her zaman bir nesne yıkılırken çağrıldığı için temel sınıfları saf sanal yıkıcılar içeren sınıf hiyerarşilerinin tasarlanmasına yardımcı olur. Aşağıdaki örneği inceleyin:
 
 ```cpp
 // Declare an abstract base class with a pure virtual destructor.

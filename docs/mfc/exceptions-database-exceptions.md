@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: özel durumlar: veritabanı özel durumları'
 title: 'Özel durumlar: Veritabanı Özel Durumları'
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-ms.openlocfilehash: aaed2a9f88c46a405b754b78242478f93cffda31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3e45f887d51b4b81196cd08d11f426f4ee6d4481
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217967"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290654"
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 
@@ -26,7 +27,7 @@ Bu makalede veritabanı özel durumlarının nasıl işleneceği açıklanır. B
 
 - [Veritabanı özel durum işleme örneği](#_core_a_database_exception.2d.handling_example)
 
-## <a name="approaches-to-exception-handling"></a><a name="_core_approaches_to_exception_handling"></a>Özel durum Işleme yaklaşımları
+## <a name="approaches-to-exception-handling"></a><a name="_core_approaches_to_exception_handling"></a> Özel durum Işleme yaklaşımları
 
 Bu yaklaşım, DAO (eski) veya ODBC ile çalışırken de aynıdır.
 
@@ -36,7 +37,7 @@ Veritabanı özel durumlarını yakalamak için en kolay yaklaşım, uygulamanı
 
 ### <a name="error-codes-used-for-odbc-exceptions"></a>ODBC özel durumları için kullanılan hata kodları
 
-**Afx_sql_error_xxx**, çerçeve tarafından tanımlanan, form adlarını içeren dönüş kodlarına ek olarak, bazı [CDBExceptions](reference/cdbexception-class.md) [ODBC](../data/odbc/odbc-basics.md) dönüş kodlarını temel alır. Bu özel durumlar için dönüş kodları **sql_error_xxx**biçim adlarına sahiptir.
+**Afx_sql_error_xxx**, çerçeve tarafından tanımlanan, form adlarını içeren dönüş kodlarına ek olarak, bazı [CDBExceptions](reference/cdbexception-class.md) [ODBC](../data/odbc/odbc-basics.md) dönüş kodlarını temel alır. Bu özel durumlar için dönüş kodları **sql_error_xxx** biçim adlarına sahiptir.
 
 Veritabanı sınıflarının döndürebildiği, hem çerçeve tanımlı hem de ODBC tanımlı dönüş kodları, sınıfının [m_nRetCode](reference/cdbexception-class.md#m_nretcode) veri üyesi altında belgelenmiştir `CDBException` . ODBC tarafından tanımlanan dönüş kodlarıyla ilgili ek bilgiler [ODBC Programcı başvurusu](/sql/odbc/reference/odbc-programmer-s-reference)' nda bulunabilir.
 
@@ -46,13 +47,13 @@ DAO özel durumları için, daha fazla bilgi genellikle kullanılabilir. Yakalan
 
 - [m_pErrorInfo](reference/cdaoexception-class.md#m_perrorinfo) , DAO 'nun veritabanıyla ilişkili hata nesneleri koleksiyonundaki hata bilgilerini kapsülleyen bir [CDaoErrorInfo](reference/cdaoerrorinfo-structure.md) nesnesine yönelik bir işaretçi içerir.
 
-- [m_nAfxDaoError](reference/cdaoexception-class.md#m_nafxdaoerror) , MFC DAO sınıflarından genişletilmiş bir hata kodu içerir. **Afx_dao_error_xxx**form adları olan bu hata kodları, içindeki veri üyesi altında belgelenmiştir `CDaoException` .
+- [m_nAfxDaoError](reference/cdaoexception-class.md#m_nafxdaoerror) , MFC DAO sınıflarından genişletilmiş bir hata kodu içerir. **Afx_dao_error_xxx** form adları olan bu hata kodları, içindeki veri üyesi altında belgelenmiştir `CDaoException` .
 
 - [m_scode](reference/cdaoexception-class.md#m_scode) , varsa DAO 'DAN bir OLE **SCODE** içerir. Ancak, bu hata koduyla nadiren çalışmanız gerekir. Genellikle diğer iki veri üyelerinde daha fazla bilgi mevcuttur. **SCODE** değerleri hakkında daha fazla bilgi için veri üyesine bakın.
 
 DAO hataları, DAO hatası nesne türü ve DAO hataları koleksiyonu hakkında ek bilgiler, [Cdaoözel durum](reference/cdaoexception-class.md)sınıfından kullanılabilir.
 
-## <a name="a-database-exception-handling-example"></a><a name="_core_a_database_exception.2d.handling_example"></a>Veritabanı özel durum Işleme örneği
+## <a name="a-database-exception-handling-example"></a><a name="_core_a_database_exception.2d.handling_example"></a> Bir veritabanı Exception-Handling örneği
 
 Aşağıdaki örnek, işleçle yığın üzerinde bir [CRecordset](reference/crecordset-class.md)ile türetilmiş nesne oluşturmaya çalışır **`new`** ve ardından kayıt kümesini (ODBC veri kaynağı için) açar. DAO sınıflarına benzer bir örnek için aşağıdaki "DAO özel durum örneği" ne bakın.
 

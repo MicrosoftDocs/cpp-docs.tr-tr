@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fgetc, fgetwc'
 title: fgetc, fgetwc
 ms.date: 4/2/2020
 api_name:
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - reading characters from streams
 - fgetwc function
 ms.assetid: 13348b7b-dc86-421c-9d6c-611ca79c8338
-ms.openlocfilehash: 5f8d4b1fcdc2d4d4de712ee79742025db74b6452
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d9567c6d24fe0ae978a3680171167168061339f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87189291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289237"
 ---
 # <a name="fgetc-fgetwc"></a>fgetc, fgetwc
 
 Akıştan bir karakter okur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int fgetc(
@@ -65,13 +66,13 @@ wint_t fgetwc(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fgetc** , bir **`int`** hata ya da dosya sonunu göstermek için bir olarak okunan karakteri döndürür veya **EOF** döndürür. **fgetwc** , [wint_t](../../c-runtime-library/standard-types.md)olarak, bir hata veya dosya sonunu göstermek için Read veya character **değerini döndürür.** Her iki işlev için de bir hata ve dosya sonu koşulu arasında ayrım yapmak için **feof** veya **ferror** kullanın. Bir okuma hatası oluşursa, akışın hata göstergesi ayarlanır. *Stream* **null**ise, **fgetc** ve **fgetwc** [parametresi, parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EOF**döndürecek şekilde ayarlanır.
+**fgetc** , bir **`int`** hata ya da dosya sonunu göstermek için bir olarak okunan karakteri döndürür veya **EOF** döndürür. **fgetwc** , [wint_t](../../c-runtime-library/standard-types.md)olarak, bir hata veya dosya sonunu göstermek için Read veya character **değerini döndürür.** Her iki işlev için de bir hata ve dosya sonu koşulu arasında ayrım yapmak için **feof** veya **ferror** kullanın. Bir okuma hatası oluşursa, akışın hata göstergesi ayarlanır. *Stream* **null** ise, **fgetc** ve **fgetwc** [parametresi, parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve **EOF** döndürecek şekilde ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, *Stream*ile ilişkili dosyanın geçerli konumundan tek bir karakter okur. İşlev daha sonra, ilişkili dosya işaretçisini (tanımlanmışsa) sonraki karakteri işaret etmek için artırır. Akış dosyanın sonunda ise, akış için dosya sonu göstergesi ayarlanır.
+Bu işlevlerin her biri, *Stream* ile ilişkili dosyanın geçerli konumundan tek bir karakter okur. İşlev daha sonra, ilişkili dosya işaretçisini (tanımlanmışsa) sonraki karakteri işaret etmek için artırır. Akış dosyanın sonunda ise, akış için dosya sonu göstergesi ayarlanır.
 
-**fgetc** , **getc**ile eşdeğerdir, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır.
+**fgetc** , **getc** ile eşdeğerdir, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır.
 
 **fgetwc** , **fgetc**; öğesinin geniş karakterli sürümüdür *akış* metin modunda veya ikili modda açılıp açılmayacağı gibi çok baytlı bir karakter veya geniş karakter olarak **c** 'yi okur.
 

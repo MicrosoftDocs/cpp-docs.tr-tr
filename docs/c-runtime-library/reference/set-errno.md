@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_errno'
 title: _set_errno
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - set_errno function
 - _set_errno function
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
-ms.openlocfilehash: e889f8e2dabfffbcc69ff796fb21570b66b57fb0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f609e26468728d88346ef7b43faa2209ef9c77e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913050"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288860"
 ---
 # <a name="_set_errno"></a>_set_errno
 
@@ -83,7 +84,7 @@ Oops: Illegal byte sequence
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_set_errno**|\<Stdlib. h>|\<errno. h>|
+|**_set_errno**|\<stdlib.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

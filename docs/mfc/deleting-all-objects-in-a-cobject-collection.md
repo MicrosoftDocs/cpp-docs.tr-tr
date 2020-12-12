@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CObject koleksiyonundaki tüm nesneleri silme'
 title: CObject Koleksiyonundaki Tüm Nesneleri Silme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - objects in CObject collections
 - collection classes [MFC], shared objects
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-ms.openlocfilehash: 5aac324b6af50db019c2a4b55b26a612cc081894
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 674253d06925bdf29e5606692a73911878f6c393
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225078"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291019"
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject Koleksiyonundaki Tüm Nesneleri Silme
 
@@ -34,7 +35,7 @@ Bu makalede, içindeki nesnelerin nasıl silineceği gösterilmektedir:
 
 - [Eşleme](#_core_to_delete_all_elements_in_a_map)
 
-#### <a name="to-delete-all-objects-in-a-list-of-pointers-to-cobject"></a><a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a>CObject işaretçilerinden oluşan bir listedeki tüm nesneleri silmek için
+#### <a name="to-delete-all-objects-in-a-list-of-pointers-to-cobject"></a><a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a> CObject işaretçilerinden oluşan bir listedeki tüm nesneleri silmek için
 
 1. `GetHeadPosition`, Ve kullanarak `GetNext` Listeyi yinelemek için kullanın.
 
@@ -50,7 +51,7 @@ Son işlev çağrısı, `RemoveAll` listedeki tüm öğeleri kaldıran bir liste
 
 Bir öğenin nesnesini silme ve öğenin kendisini kaldırma arasındaki farka dikkat edin. Bir öğenin listeden kaldırılması yalnızca listenin nesnesine ait başvurusunu kaldırır. Nesne bellekte hala var. Bir nesneyi sildiğinizde, mevcut olmaya erer ve belleği geri kazanılır. Bu nedenle, listenin artık mevcut olmayan nesnelere erişmeyi deneyememesi için öğenin nesnesi silindikten hemen sonra bir öğeyi kaldırmak önemlidir.
 
-#### <a name="to-delete-all-elements-in-an-array"></a><a name="_core_to_delete_all_elements_in_an_array"></a>Bir dizideki tüm öğeleri silmek için
+#### <a name="to-delete-all-elements-in-an-array"></a><a name="_core_to_delete_all_elements_in_an_array"></a> Bir dizideki tüm öğeleri silmek için
 
 1. `GetSize`Dizi boyunca yinelemek için ve tamsayı dizin değerlerini kullanın.
 
@@ -64,7 +65,7 @@ Bir öğenin nesnesini silme ve öğenin kendisini kaldırma arasındaki farka d
 
 Yukarıdaki liste örneğinde olduğu gibi, `RemoveAll` bir dizideki tüm öğeleri kaldırmak veya `RemoveAt` tek bir öğeyi kaldırmak için öğesini çağırabilirsiniz.
 
-#### <a name="to-delete-all-elements-in-a-map"></a><a name="_core_to_delete_all_elements_in_a_map"></a>Bir haritadaki tüm öğeleri silmek için
+#### <a name="to-delete-all-elements-in-a-map"></a><a name="_core_to_delete_all_elements_in_a_map"></a> Bir haritadaki tüm öğeleri silmek için
 
 1. `GetStartPosition` `GetNextAssoc` Dizi boyunca yinelemek için ve kullanın.
 

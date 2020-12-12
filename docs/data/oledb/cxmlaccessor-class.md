@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CXMLAccessor sınıfı'
 title: CXMLAccessor Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - GetXMLColumnData method
 - GetXMLRowData method
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
-ms.openlocfilehash: 36419e85554982d1c3784d0d73663b48cc820b6d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 30725f47add9f9b965fe36226a366342988275e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287703"
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor Sınıfı
 
@@ -66,7 +67,7 @@ Sütun bilgileri bu sınıf tarafından oluşturulan ve yönetilen bir arabellek
 
 Bir tablonun sütun türü bilgilerini XML biçimli dize verileri olarak sütuna göre alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();
@@ -95,7 +96,7 @@ Aşağıda sütun türü bilgisinin XML biçiminde nasıl biçimlendirildiği g�
 
 Bir tablonun tüm içeriğini XML biçimli dize verileri olarak satıra göre alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT GetXMLRowData(CSimpleStringW& strOutput,

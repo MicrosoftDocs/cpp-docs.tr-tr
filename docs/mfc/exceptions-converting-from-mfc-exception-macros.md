@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: özel durumlar: MFC özel durum makrolarından dönüştürme'
 title: 'Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme'
 ms.date: 08/27/2018
 helpviewer_keywords:
@@ -14,24 +15,24 @@ helpviewer_keywords:
 - catch blocks [MFC], delimiting
 - exception handling [MFC], converting exceptions
 ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
-ms.openlocfilehash: e8e7f47b66f4263ed55d73c0aac1fda73d72393c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 83d4522dff902681e26a2bd098b46fea92bf1c6a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87183818"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290706"
 ---
 # <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme
 
 Bu, gelişmiş bir konudur.
 
-Bu makalede, C++ özel durum işleme anahtar sözcüklerini **CATCH** **THROW**, ve ' i kullanmak için **TRY**Microsoft Foundation sınıf makrolarıyla yazılmış mevcut kodların nasıl dönüştürüleceği açıklanır **`try`** **`catch`** **`throw`** . Konu başlıkları şunlardır:
+Bu makalede, C++ özel durum işleme anahtar sözcüklerini  , ve ' i kullanmak için Microsoft Foundation sınıf makrolarıyla yazılmış mevcut kodların nasıl dönüştürüleceği açıklanır **`try`** **`catch`** **`throw`** . Konu başlıkları şunlardır:
 
 - [Dönüştürme avantajları](#_core_advantages_of_converting)
 
 - [C++ özel durumlarını kullanmak için özel durum makrolarıyla kod dönüştürme](#_core_doing_the_conversion)
 
-## <a name="advantages-of-converting"></a><a name="_core_advantages_of_converting"></a>Dönüştürmenin avantajları
+## <a name="advantages-of-converting"></a><a name="_core_advantages_of_converting"></a> Dönüştürmenin avantajları
 
 Büyük olasılıkla, MFC sürüm 3,0 ' deki makro uygulamaları ve önceki sürümlerindeki uygulamalar arasındaki farklılıkları farkında olmanız gerektiğine rağmen mevcut kodu dönüştürmeniz gerekmez. Bu farklılıklar ve kod davranışında yapılan değişiklikler, [özel durumlar: sürüm 3,0 ' de özel durum makrolarında yapılan değişiklikler](exceptions-changes-to-exception-macros-in-version-3-0.md)açıklanmaktadır.
 
@@ -69,11 +70,11 @@ Başka bir farklılık söz dizidir. Makrolar ve anahtar sözcükler için sözd
 
    Makrolar geçerli özel durumu yeniden oluşturmak için **THROW_LAST** kullanır. **`throw`** Bağımsız değişkeni olmayan anahtar sözcük aynı etkiye sahiptir.
 
-## <a name="doing-the-conversion"></a><a name="_core_doing_the_conversion"></a>Dönüştürme yapılıyor
+## <a name="doing-the-conversion"></a><a name="_core_doing_the_conversion"></a> Dönüştürme yapılıyor
 
 #### <a name="to-convert-code-using-macros-to-use-the-c-exception-handling-keywords"></a>C++ özel durum işleme anahtar sözcüklerini kullanmak için makroları kullanarak kodu dönüştürmek için
 
-1. MFC **makrolarının**tüm oluşumlarını bulun, **catch**, **AND_CATCH**, **END_CATCH**, **throw**ve **THROW_LAST**.
+1. MFC **makrolarının** tüm oluşumlarını bulun, **catch**, **AND_CATCH**, **END_CATCH**, **throw** ve **THROW_LAST**.
 
 2. Aşağıdaki makroların tüm yinelemelerini değiştirin veya silin:
 

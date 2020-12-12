@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCPropertyGridToolTipCtrl sınıfı'
 title: CMFCPropertyGridToolTipCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CMFCPropertyGridToolTipCtrl [MFC], SetTextMargin
 - CMFCPropertyGridToolTipCtrl [MFC], Track
 ms.assetid: 84b436e5-6695-4da0-9569-1a875e087711
-ms.openlocfilehash: 82d5f021204628121be242845583797348d02120
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5e560d09756be99c00257c351b58223b37a6b5da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840758"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289887"
 ---
 # <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl sınıfı
 
@@ -175,7 +176,7 @@ void Track(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, *Rect*tarafından belirtilen konumda ve boyutta araç ipucu denetimini görüntüler. Bu yöntemin en son çağrılmasından bu yana konum, boyut ve metin değiştirilmediyseniz, bu yöntemin hiçbir etkisi yoktur.
+Bu yöntem, *Rect* tarafından belirtilen konumda ve boyutta araç ipucu denetimini görüntüler. Bu yöntemin en son çağrılmasından bu yana konum, boyut ve metin değiştirilmediyseniz, bu yöntemin hiçbir etkisi yoktur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

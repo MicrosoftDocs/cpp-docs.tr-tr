@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _getdiskfree'
 title: _getdiskfree
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - disk size
 - getdiskfree function
 ms.assetid: 47a3f6cf-4816-452a-8f3d-1c3ae02a0f2a
-ms.openlocfilehash: f94e8ecd314ed55d8519363d80dda57f661f18e5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f17310b426ded63f3e1139e3d7212657d4c6efd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913825"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289211"
 ---
 # <a name="_getdiskfree"></a>_getdiskfree
 
@@ -64,7 +65,7 @@ Sürücüyle ilgili bilgilerle doldurulacak **_diskfree_t** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri sıfırdır. İşlev başarısız olursa, dönüş değeri hata kodudur. **Errno** değeri, işletim sistemi tarafından döndürülen hatalar için ayarlanır. **Errno**tarafından belirtilen hata koşulları hakkında daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md).
+İşlev başarılı olursa, dönüş değeri sıfırdır. İşlev başarısız olursa, dönüş değeri hata kodudur. **Errno** değeri, işletim sistemi tarafından döndürülen hatalar için ayarlanır. **Errno** tarafından belirtilen hata koşulları hakkında daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -79,7 +80,7 @@ struct _diskfree_t {
 };
 ```
 
-Bu işlev, parametrelerini doğrular. *DriveInfo* işaretçisi **null** veya *sürücü* geçersiz bir sürücü belirtiyorsa, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. Geçerli Sürücüler 0 ile 26 arasındadır. 0 *sürücüsünün* değeri geçerli sürücüyü belirtir; Bundan sonra, sayılar Ingilizce alfabesinden eşlenir ve bu 1 sürücü A 'yı, 3 de C sürücüsünü gösterir ve bu şekilde devam eder.
+Bu işlev, parametrelerini doğrular. *DriveInfo* işaretçisi **null** veya *sürücü* geçersiz bir sürücü belirtiyorsa, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL** olarak ayarlar. Geçerli Sürücüler 0 ile 26 arasındadır. 0 *sürücüsünün* değeri geçerli sürücüyü belirtir; Bundan sonra, sayılar Ingilizce alfabesinden eşlenir ve bu 1 sürücü A 'yı, 3 de C sürücüsünü gösterir ve bu şekilde devam eder.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -87,7 +88,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getdiskfree**|\<Direct. h>|
+|**_getdiskfree**|\<direct.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

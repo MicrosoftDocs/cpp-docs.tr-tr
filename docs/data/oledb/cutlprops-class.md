@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CUtlProps Class'
 title: CUtlProps Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - OnPropertyChanged method
 - SetPropValue method
 ms.assetid: bb525178-765c-4e23-a110-c0fd70c05437
-ms.openlocfilehash: 1e9e636824ff67ee93587637c0e098e625229c06
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 535da4b2dd7d3214633a1e76c04be1e4627b965a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509088"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287755"
 ---
 # <a name="cutlprops-class"></a>CUtlProps Sınıfı
 
@@ -143,7 +144,7 @@ virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);
 #### <a name="parameters"></a>Parametreler
 
 *riıd*<br/>
-'ndaki İstenen arabirim için IID. Daha fazla ayrıntı için, *riid* `ICommand::Execute` *OLE DB PROGRAMCı başvurusu* ( *MDAC SDK*'da) içindeki riid parametresinin açıklamasına bakın.
+'ndaki İstenen arabirim için IID. Daha fazla ayrıntı için,  `ICommand::Execute` *OLE DB PROGRAMCı başvurusu* ( *MDAC SDK*'da) içindeki riid parametresinin açıklamasına bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ActivateInstance Işlevi'
 title: ActivateInstance İşlevi
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - ActivateInstance function
 ms.assetid: 8cfd1dd9-5fda-4cc2-acf8-d40e783b3875
-ms.openlocfilehash: d1109e769352d412df8348822e05b66063159ee8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 03d7b67810ee2ab287072546b098f81f43687233
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214233"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287859"
 ---
 # <a name="activateinstance-function"></a>ActivateInstance İşlevi
 
@@ -31,14 +32,14 @@ inline HRESULT ActivateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Etkinleştirilecek bir tür.
 
 *Activatableclassıd*<br/>
-*T*parametresini TANıMLAYAN sınıf kimliğinin adı.
+*T* parametresini TANıMLAYAN sınıf kimliğinin adı.
 
 *Instance*<br/>
-Bu işlem tamamlandığında *T*örneğine bir başvuru.
+Bu işlem tamamlandığında *T* örneğine bir başvuru.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -52,4 +53,4 @@ Başarılı olursa S_OK; Aksi takdirde, hatanın nedenini gösteren bir HRESULT 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Windows::Foundation Ad Alanı](windows-foundation-namespace.md)
+[Windows:: Foundation ad alanı](windows-foundation-namespace.md)

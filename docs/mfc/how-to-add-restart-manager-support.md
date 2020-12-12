@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: nasıl yapılır: yeniden başlatma Yöneticisi desteği ekleme'
 title: 'Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Restart manager [MFC]
 - C++, application crash support
 ms.assetid: 7f3f5867-d4bc-4ba8-b3c9-dc1e7be93642
-ms.openlocfilehash: 848cb3bb52ae13eb1b7798126becd13384fddeb6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: bf323b66dcf3b6f2571855cc789aa7a08e61ac39
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625661"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290355"
 ---
 # <a name="how-to-add-restart-manager-support"></a>Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme
 
@@ -45,6 +46,6 @@ Varsayılan olarak, Visual Studio 'da proje Sihirbazı kullanılarak oluşturula
 
 [CDataRecoveryHandler sınıfı](reference/cdatarecoveryhandler-class.md)<br/>
 [CWinApp:: m_dwRestartManagerSupportFlags](reference/cwinapp-class.md#m_dwrestartmanagersupportflags)<br/>
-[CWinApp Sınıfı](reference/cwinapp-class.md)<br/>
+[CWinApp sınıfı](reference/cwinapp-class.md)<br/>
 [CWinApp:: m_nAutosaveInterval](reference/cwinapp-class.md#m_nautosaveinterval)<br/>
 [CDocument:: OnDocumentEvent](reference/cdocument-class.md#ondocumentevent)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCPropertyGridProperty sınıfı'
 title: CMFCPropertyGridProperty sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -166,12 +167,12 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-ms.openlocfilehash: cabff68a356bfa2d91d7c8db9c806e8a9f013705
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 7893d58933f9f13744a42b14fd6fa7c47bec56c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289913"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty sınıfı
 
@@ -394,7 +395,7 @@ dışı Bu yöntem döndüğünde, özellik değeri için döndürme düğme den
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir özelliğin değer alanı, bir metin kutusundan ve bir döndürme düğmesi denetimi gibi bir *seçenek düğmesinden*oluşur. Bu yöntem, metin kutusu ve seçenek düğmesinin boyutlarını hesaplar ve ardından belirtilen parametrelerde bu değerleri döndürür.
+Bir özelliğin değer alanı, bir metin kutusundan ve bir döndürme düğmesi denetimi gibi bir *seçenek düğmesinden* oluşur. Bu yöntem, metin kutusu ve seçenek düğmesinin boyutlarını hesaplar ve ardından belirtilen parametrelerde bu değerleri döndürür.
 
 ## <a name="cmfcpropertygridpropertyallowedit"></a><a name="allowedit"></a> CMFCPropertyGridProperty:: AllowEdit
 
@@ -510,9 +511,9 @@ Bu yöntem başarılı olursa düzenlenebilir denetimin işaretçisi; Aksi takdi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) sınıf oluşturucusunda belirtilen *varValue*, *lpszEditMask*, *lpszEditTemplate*ve *lpszValidChars* parametrelerinin değerlerini kullanır. Varsayılan olarak, bu yöntem *varValue* değişken türlerini destekler. Buna VT_BSTR, VT_R4, VT_R8, VT_UI1, VT_I2, VT_INT, VT_UINT, VT_I4, VT_UI2, VT_UI4 ve VT_BOOL dahildir.
+Bu yöntem, [CMFCPropertyGridProperty](../../mfc/reference/cmfcpropertygridproperty-class.md) sınıf oluşturucusunda belirtilen *varValue*, *lpszEditMask*, *lpszEditTemplate* ve *lpszValidChars* parametrelerinin değerlerini kullanır. Varsayılan olarak, bu yöntem *varValue* değişken türlerini destekler. Buna VT_BSTR, VT_R4, VT_R8, VT_UI1, VT_I2, VT_INT, VT_UINT, VT_I4, VT_UI2, VT_UI4 ve VT_BOOL dahildir.
 
-Bu yöntem, bir veya daha fazla *lpszEditMask*, *lpszEditTemplate*veya *LpszValidChars* parametresi belirtilirse, bir [CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md) denetimi oluşturur; Aksi takdirde, bir [Cedıt](../../mfc/reference/cedit-class.md) denetimi oluşturur.
+Bu yöntem, bir veya daha fazla *lpszEditMask*, *lpszEditTemplate* veya *LpszValidChars* parametresi belirtilirse, bir [CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md) denetimi oluşturur; Aksi takdirde, bir [Cedıt](../../mfc/reference/cedit-class.md) denetimi oluşturur.
 
 ## <a name="cmfcpropertygridpropertycreatespincontrol"></a><a name="createspincontrol"></a> CMFCPropertyGridProperty:: CreateSpinControl
 

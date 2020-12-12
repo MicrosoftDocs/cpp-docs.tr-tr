@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: C sabitleri'
 title: C Sabitleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - constants, C
 - constants
 ms.assetid: f5bd7213-97ab-4cad-b913-1fc91a486935
-ms.openlocfilehash: 1bce7d72c5f16a543db1c2cae492460fefd51306
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ee298ba88f20bc30ccb2f957601cd6f593d2ba86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231474"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289484"
 ---
 # <a name="c-constants"></a>C Sabitleri
 
 *Sabit* , bir programda değer olarak kullanılabilecek bir sayı, karakter veya karakter dizesidir. Değiştirilebilen kayan nokta, tamsayı, sabit listesi veya karakter değerlerini göstermek için sabitleri kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *`constant`*:\
 &emsp;*`floating-point-constant`*\

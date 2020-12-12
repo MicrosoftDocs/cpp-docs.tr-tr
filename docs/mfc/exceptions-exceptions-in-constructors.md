@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel durumlar: Oluşturuculardaki özel durumlar'
 title: 'Özel Durumlar: Yapıcılardaki Özel Durumlar'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - throwing exceptions [MFC], in constructors
 - exceptions [MFC], in constructors
 ms.assetid: a78eae5a-5821-4b27-9478-1436320ed1e1
-ms.openlocfilehash: 4089f4d44f03c7de3432f137b5d28f74189e1cb9
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 69393cc6a5cf709d359ccbdb572406e91c6788ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290602"
 ---
 # <a name="exceptions-exceptions-in-constructors"></a>Özel Durumlar: Yapıcılardaki Özel Durumlar
 

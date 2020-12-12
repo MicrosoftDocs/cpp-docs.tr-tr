@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: hizalama Işleci'
 title: hizalama Işleci
 ms.date: 12/17/2018
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - alignof [C++]
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-ms.openlocfilehash: 6a2046774674858211ae89abb9b4cfc7b09c0a6d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b7e053b932ed631d8b03dc1b89f6857905740e5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288320"
 ---
 # <a name="alignof-operator"></a>hizalama Işleci
 
 **`alignof`** İşleci, belirtilen türün bayt cinsinden hizalamasını tür değeri olarak döndürür **`size_t`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 alignof( type )
@@ -32,7 +33,7 @@ alignof( type )
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örnek:
+Örneğin:
 
 | Expression | Değer |
 |--|--|
@@ -58,7 +59,7 @@ Benzer şekilde, için
 typedef __declspec(align(32)) struct { int a; } S;
 ```
 
-`alignof(S)`eşittir `32` .
+`alignof(S)` eşittir `32` .
 
 Bir kullanımı, **`alignof`** kendi bellek ayırma yordamlarınızın bir parametresi olarak olacaktır. Örneğin, aşağıdaki tanımlı yapı verildiğinde `S` , `aligned_malloc` belirli bir hizalama sınırında bellek ayırmak için adlı bir bellek ayırma yordamını çağırabilirsiniz.
 

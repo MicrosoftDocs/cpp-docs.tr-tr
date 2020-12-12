@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fflush'
 title: fflush
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - flushing
 - fflush function
 ms.assetid: 8bbc753f-dc74-4e77-b563-74da2835e92b
-ms.openlocfilehash: c5208c86484e1d9478f3879d91b32d57ba7c4a3a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a23b4f580e0ed258bb111064b8564a6603562f64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912892"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289263"
 ---
 # <a name="fflush"></a>fflush
 
@@ -57,13 +58,13 @@ int fflush(
 ara bellek başarıyla temizleniyorsa **fflush** 0 döndürür. 0 değeri, belirtilen akışın arabelleği olmadığı veya yalnızca okuma için açık olduğu durumlarda da döndürülür. **EOF** dönüş değeri bir hatayı gösterir.
 
 > [!NOTE]
-> **Fflush** **EOF**döndürürse, veriler bir yazma hatası nedeniyle kaybolmuş olabilir. Kritik bir hata işleyicisi ayarlarken, **setvarabelleğe** işlevi ile arabelleğe almayı kapatmak veya akış g/ç işlevleri yerine **_open**, **_close**ve **_write** gibi alt düzey g/ç yordamlarını kullanmak en güvenli hale gelir.
+> **Fflush** **EOF** döndürürse, veriler bir yazma hatası nedeniyle kaybolmuş olabilir. Kritik bir hata işleyicisi ayarlarken, **setvarabelleğe** işlevi ile arabelleğe almayı kapatmak veya akış g/ç işlevleri yerine **_open**, **_close** ve **_write** gibi alt düzey g/ç yordamlarını kullanmak en güvenli hale gelir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fflush** işlevi akış *akışını*temizler. Akış yazma modunda açılırsa veya güncelleştirme modunda açıldıysa ve son işlem bir yazarsa, akış arabelleğinin içeriği temel alınan dosyaya veya cihaza yazılır ve arabellek atılır. Akış okuma modunda açılırsa veya akışın arabelleği yoksa, **fflush** çağrısının hiçbir etkisi olmaz ve herhangi bir arabellek tutulur. **Fflush** çağrısı, akış için **ungetc** öğesine yapılan önceki çağrının etkisini geçersiz kılar. Bu akış, çağrıdan sonra açık kalır.
+**Fflush** işlevi akış *akışını* temizler. Akış yazma modunda açılırsa veya güncelleştirme modunda açıldıysa ve son işlem bir yazarsa, akış arabelleğinin içeriği temel alınan dosyaya veya cihaza yazılır ve arabellek atılır. Akış okuma modunda açılırsa veya akışın arabelleği yoksa, **fflush** çağrısının hiçbir etkisi olmaz ve herhangi bir arabellek tutulur. **Fflush** çağrısı, akış için **ungetc** öğesine yapılan önceki çağrının etkisini geçersiz kılar. Bu akış, çağrıdan sonra açık kalır.
 
-*Stream* **null**ise, her açık akışta bir **fflush** çağrısıyla aynı davranış vardır. Yazma modunda açılan tüm akışlar ve son işlemin bir yazma işlemi olduğu güncelleştirme modunda açılan tüm akışlar. Çağrının diğer akışlar üzerinde hiçbir etkisi yoktur.
+*Stream* **null** ise, her açık akışta bir **fflush** çağrısıyla aynı davranış vardır. Yazma modunda açılan tüm akışlar ve son işlemin bir yazma işlemi olduğu güncelleştirme modunda açılan tüm akışlar. Çağrının diğer akışlar üzerinde hiçbir etkisi yoktur.
 
 Arabellekler normalde işletim sistemi tarafından korunur. Bu, verilerin diske otomatik olarak yazılması için en iyi zamanı belirler: bir arabellek dolduğunda, bir akış kapatıldığında veya bir program normal olarak akışı kapatmadan sonlandırıldığında. Çalışma zamanı kitaplığının diske kaydet özelliği, kritik verilerin işletim sistemi arabellekleri yerine doğrudan diske yazılmasını sağlamanıza olanak tanır. Mevcut bir programı yeniden yazmadan, programın nesne dosyalarını COMMODE. OBJ ile bağlayarak bu özelliği etkinleştirebilirsiniz. Elde edilen yürütülebilir dosyada, tüm arabelleklerin içeriğini diske yazmak **_flushall** için çağırır. Yalnızca **_flushall** ve **FFLUSH** , Commode. obj tarafından etkilendi.
 
@@ -77,7 +78,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fflush**|\<stdio. h>|
+|**fflush**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -133,7 +134,7 @@ User selected 5
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_flushall](flushall.md)<br/>
 [setvbuf](setvbuf.md)<br/>

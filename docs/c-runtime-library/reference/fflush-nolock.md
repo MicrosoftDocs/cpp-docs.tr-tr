@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fflush_nolock'
 title: _fflush_nolock
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - streams, flushing
 - flushing
 ms.assetid: 5e33c4a1-b10c-4001-ad01-210757919291
-ms.openlocfilehash: 63d456288e978c79b4e0f4e67f9a4b2318bf0417
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 77b2db1c26a5121b74a8c3b92c50ac41af153802
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920130"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289289"
 ---
 # <a name="_fflush_nolock"></a>_fflush_nolock
 
@@ -68,13 +69,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fflush_nolock**|\<stdio. h>|
+|**_fflush_nolock**|\<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_flushall](flushall.md)<br/>
 [setvbuf](setvbuf.md)<br/>

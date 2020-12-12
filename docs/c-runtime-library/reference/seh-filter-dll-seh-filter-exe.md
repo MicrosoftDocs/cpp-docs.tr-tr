@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _seh_filter_dll _seh_filter_exe'
 title: _seh_filter_dll, _seh_filter_exe
 ms.date: 4/2/2020
 api_name:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - _seh_filter_dll function
 - _seh_filter_exe function
 ms.assetid: 747e5963-3a12-4bf5-b5c4-d4c1b6068e15
-ms.openlocfilehash: ddfab11b149fc6919fb0b8d461b914a0470d9dc9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f1f297e0ace4a342dcc7370472c1ff1e9f409ce5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288938"
 ---
 # <a name="_seh_filter_dll-_seh_filter_exe"></a>_seh_filter_dll, _seh_filter_exe
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCPropertyGridCtrl sınıfı'
 title: CMFCPropertyGridCtrl sınıfı
 ms.date: 11/19/2018
 f1_keywords:
@@ -150,12 +151,12 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-ms.openlocfilehash: c20ab10ac95ab6788f34367a9d68cdc9eae685b5
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 26b7a16a0a890f669323dc514c863e81dd066c9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290056"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl sınıfı
 
@@ -462,7 +463,7 @@ virtual BOOL Create(
 'ndaki [Pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles)bit tabanlı BIRLEŞIMI (veya).
 
 *Rect*<br/>
-'ndaki *PParentWnd*istemci koordinatlarındaki pencerenin boyutunu ve konumunu belirten bir sınırlayıcı dikdörtgen.
+'ndaki *PParentWnd* istemci koordinatlarındaki pencerenin boyutunu ve konumunu belirten bir sınırlayıcı dikdörtgen.
 
 *pParentWnd*<br/>
 'ndaki Ana pencerenin işaretçisi. NULL olmamalıdır.

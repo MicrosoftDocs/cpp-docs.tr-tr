@@ -1,13 +1,14 @@
 ---
+description: ': WRL tümleştirmesi hakkında daha fazla bilgi edinin (C++/CX)'
 title: WRL Tümleştirme (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4
-ms.openlocfilehash: 3ea0f6aece985a2ee74916e737b9aab1bf0d1d96
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: ecf0bec03fedc0e860bb4f546d4ef067db681139
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507416"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287963"
 ---
 # <a name="wrl-integration-ccx"></a>WRL Tümleştirme (C++/CX)
 

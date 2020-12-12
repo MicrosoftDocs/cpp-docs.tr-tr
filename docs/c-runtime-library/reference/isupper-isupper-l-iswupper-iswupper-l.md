@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ıupper, _isupper_l, ıswupper, _iswupper_l'
 title: isupper, _isupper_l, iswupper, _iswupper_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _iswupper_l function
 - isupper function
 ms.assetid: da2bcc9f-241c-48c0-9a0e-ad273827e16a
-ms.openlocfilehash: 49aab47a72e7065cbd90935a431f59ec74b562ac
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d9af298cd1577473cac0db1ab6eda0be895d0c1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910397"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289146"
 ---
 # <a name="isupper-_isupper_l-iswupper-_iswupper_l"></a>isupper, _isupper_l, iswupper, _iswupper_l
 
@@ -80,7 +81,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, *c* , büyük harfle belirli bir gösterimse sıfır olmayan bir değer döndürür. *c* , büyük harfli bir karakter (a-Z) ise, **IsUpper** sıfır dışında bir değer döndürür. *c* büyük harfe karşılık gelen geniş bir karakter ise **ıswupper** sıfır dışında bir değer döndürür veya *c* , **iswcnp**, **ıswdigit**, **ıswpunct**veya **ıswspace** 'in hiçbiri sıfır dışında bir uygulama tanımlı geniş karakter kümesinden biridir. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
+Bu yordamların her biri, *c* , büyük harfle belirli bir gösterimse sıfır olmayan bir değer döndürür. *c* , büyük harfli bir karakter (a-Z) ise, **IsUpper** sıfır dışında bir değer döndürür. *c* büyük harfe karşılık gelen geniş bir karakter ise **ıswupper** sıfır dışında bir değer döndürür veya *c* , **iswcnp**, **ıswdigit**, **ıswpunct** veya **ıswspace** 'in hiçbiri sıfır dışında bir uygulama tanımlı geniş karakter kümesinden biridir. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -101,10 +102,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isupper**|\<CType. h>|
-|**_isupper_l**|\<CType. h>|
-|**iswupper**|\<CType. h> veya \<wchar. h>|
-|**_iswupper_l**|\<CType. h>|
+|**isupper**|\<ctype.h>|
+|**_isupper_l**|\<ctype.h>|
+|**iswupper**|\<ctype.h> veya \<wchar.h>|
+|**_iswupper_l**|\<ctype.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

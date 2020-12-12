@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sağlayıcınızda hata ayıklama'
 title: Sağlayıcınızda Hata Ayıklama
 ms.date: 10/29/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Visual C++ debugger, debugging providers
 - Visual C++ debugger
 ms.assetid: 90d4e7db-06ea-4de0-a7f4-4f3751d50d93
-ms.openlocfilehash: f80ce5dc82dd2baeefe3410a488a5fefda0e9bf0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9a178bfa55f8efeb11a3265ab8aa14a5418d7516
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287586"
 ---
 # <a name="debugging-your-provider"></a>Sağlayıcınızda Hata Ayıklama
 
@@ -20,7 +21,7 @@ Sağlayıcınızdaki hata ayıklamanın iki yolu vardır:
 
 - Sağlayıcılar işlem içinde oluşturulduğundan, tüketici şablonlarını OLE DB kullanarak bir tüketici kodu oluşturabilir ve normal olarak sağlayıcıya adım adım ekleyebilirsiniz.
 
-- Görselle C++birlikte gelen çeşitli yardımcı programları kullanabilirsiniz.
+- Visual C++ ile birlikte gelen çeşitli yardımcı programları kullanabilirsiniz.
 
 ## <a name="to-use-debugging"></a>Hata ayıklamayı kullanmak için
 
@@ -36,4 +37,4 @@ Sağlayıcınızdaki hata ayıklamanın iki yolu vardır:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcı Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)
+[OLE DB sağlayıcı şablonlarıyla çalışma](../../data/oledb/working-with-ole-db-provider-templates.md)

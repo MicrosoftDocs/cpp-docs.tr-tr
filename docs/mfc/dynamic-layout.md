@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: Dinamik düzen'
 title: Dinamik Düzen
 ms.date: 09/09/2019
 ms.assetid: 8598cfb2-c8d4-4f5a-bf2b-59dc4653e042
-ms.openlocfilehash: 3108e7bae0be216dfb877d03c87fdc17ef7d69f2
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 284109c4f34bd3d325c9748ccc1698a9a5b3fe02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624761"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291083"
 ---
 # <a name="dynamic-layout"></a>Dinamik Düzen
 
@@ -35,9 +36,9 @@ Kaynak düzenleyicisini kullanarak bir kod yazmak zorunda kalmadan bir iletişim
 
    ![Kaynak düzenleyicisinde iletişim kutusunu açın.](../mfc/media/mfcdynamiclayout3.png "Kaynak düzenleyicisinde iletişim kutusunu açın.")
 
-1. Bir denetim seçin ve **Özellikler** penceresinde ( **sınıf görünümü**), dinamik düzen özelliklerini ayarlayın. **Özellikler** penceresindeki **Dinamik düzen** bölümü, **taşıma türü**, **boyutlandırma türü**ve bu özellikler için seçilen değerlere bağlı olarak, ne kadar denetimin taşınacağını veya değişediğini tanımlayan belirli özellikleri içerir. **Taşıma türü** , iletişim kutusunun boyutu değiştirildiğinde bir denetimin nasıl taşındığını belirler; **Boyutlandırma türü** , iletişim kutusunun boyutu değiştirildiğinde bir denetimin nasıl yeniden boyutlandırılacağını belirler. Dinamik olarak değiştirmek istediğiniz boyutlara bağlı olarak tür ve **boyutlandırma türünün** **taşınması** **yatay**, **Dikey**, **her ikisi de**veya **none** olabilir. Yatay X boyutudur; Dikey, Y yönü.
+1. Bir denetim seçin ve **Özellikler** penceresinde ( **sınıf görünümü**), dinamik düzen özelliklerini ayarlayın. **Özellikler** penceresindeki **Dinamik düzen** bölümü, **taşıma türü**, **boyutlandırma türü** ve bu özellikler için seçilen değerlere bağlı olarak, ne kadar denetimin taşınacağını veya değişediğini tanımlayan belirli özellikleri içerir. **Taşıma türü** , iletişim kutusunun boyutu değiştirildiğinde bir denetimin nasıl taşındığını belirler; **Boyutlandırma türü** , iletişim kutusunun boyutu değiştirildiğinde bir denetimin nasıl yeniden boyutlandırılacağını belirler. Dinamik olarak değiştirmek istediğiniz boyutlara bağlı olarak tür ve **boyutlandırma türünün** **taşınması** **yatay**, **Dikey**, **her ikisi de** veya **none** olabilir. Yatay X boyutudur; Dikey, Y yönü.
 
-1. Düğme gibi bir denetimin sabit boyutta olmasını istiyorsanız ve sağ altta, **Tamam** veya **iptal** düğmeleri için ortak olduğu gibi, **boyutlandırma türünü** **hiçbiri**olarak ayarlayın ve **taşınan türü** **her ikisine de**ayarlayın. Taşıma **türü**altındaki **X** ve hareketli **Y** değerleri için, denetimin sağ alt köşesinden sabit bir uzaklığı sürmesine neden olacak şekilde %100 ayarlayın.
+1. Düğme gibi bir denetimin sabit boyutta olmasını istiyorsanız ve sağ altta, **Tamam** veya **iptal** düğmeleri için ortak olduğu gibi, **boyutlandırma türünü** **hiçbiri** olarak ayarlayın ve **taşınan türü** **her ikisine de** ayarlayın. Taşıma **türü** altındaki **X** ve hareketli **Y** değerleri için, denetimin sağ alt köşesinden sabit bir uzaklığı sürmesine neden olacak şekilde %100 ayarlayın.
 
    ![Dinamik düzen](../mfc/media/mfcdynamiclayout1.png "Dinamik Düzen")
 
@@ -55,7 +56,7 @@ Kaynak düzenleyicisini kullanarak bir kod yazmak zorunda kalmadan bir iletişim
 
 1. İletişim kutusunun dinamik yerleşimini belirtmek istediğiniz iletişim kutusu sınıfınızın uygulama kodunda bir yer bulun veya oluşturun. Örneğin, iletişim kutusunda gibi bir yöntem eklemek `AdjustLayout` ve düzenin değiştirilmesi gereken yerlerden çağırmak isteyebilirsiniz. Önce bunu oluşturucudan veya iletişim kutusunda değişiklik yaptıktan sonra çağırabilirsiniz.
 
-1. İletişim kutusunda, sınıfının bir yöntemi olan [Getdynamiclayout](reference/cwnd-class.md#getdynamiclayout)' ı çağırın `CWnd` . `GetDynamicLayout`nesnesine bir işaretçi döndürür `CMFCDynamicLayout` .
+1. İletişim kutusunda, sınıfının bir yöntemi olan [Getdynamiclayout](reference/cwnd-class.md#getdynamiclayout)' ı çağırın `CWnd` . `GetDynamicLayout` nesnesine bir işaretçi döndürür `CMFCDynamicLayout` .
 
     ```cpp
     CMFCDynamicLayout* dynamicLayout = pDialog->GetDynamicLayout();
@@ -143,7 +144,7 @@ Kaynak düzenleyicisini kullanarak bir kod yazmak zorunda kalmadan bir iletişim
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CMFCDynamicLayout Sınıfı](reference/cmfcdynamiclayout-class.md)<br/>
+[CMFCDynamicLayout sınıfı](reference/cmfcdynamiclayout-class.md)<br/>
 [Denetim sınıfları](control-classes.md)<br/>
 [İletişim kutusu sınıfları](dialog-box-classes.md)<br/>
 [İletişim kutusu Düzenleyicisi](../windows/dialog-editor.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: özel durumlar: MFC makroları ve C++ özel durumlarını kullanma'
 title: 'Özel Durumlar: MFC Makroları ve C++ Özel Durumlarını Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - heap corruption [MFC]
 - nested catch blocks [MFC]
 ms.assetid: d664a83d-879b-44d4-bdf0-029f0aca69e9
-ms.openlocfilehash: 9e97eb545dedd3ac38dd93471f82aecc382717ae
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4f46cdff236f37ccdccde8215c7937300014aca6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290459"
 ---
 # <a name="exceptions-using-mfc-macros-and-c-exceptions"></a>Özel Durumlar: MFC Makroları ve C++ Özel Durumlarını Kullanma
 
@@ -33,7 +34,7 @@ Bu makalede aşağıdaki konular ele alınmaktadır:
 
 - [Catch blokları içinde blokları deneyin](#_core_try_blocks_inside_catch_blocks)
 
-## <a name="mixing-exception-keywords-and-macros"></a><a name="_core_mixing_exception_keywords_and_macros"></a>Özel durum anahtar sözcüklerini ve makroları karıştırma
+## <a name="mixing-exception-keywords-and-macros"></a><a name="_core_mixing_exception_keywords_and_macros"></a> Özel durum anahtar sözcüklerini ve makroları karıştırma
 
 MFC özel durum makrolarını ve C++ özel durum anahtar sözcüklerini aynı programda karıştırabilirsiniz. Ancak, özel durum işleme anahtar sözcüklerini kullanan kod olmasa da, makrolar özel durum nesnelerini otomatik olarak siltiğinden, MFC makrolarını aynı bloktaki C++ özel durum anahtar sözcükleriyle karıştıramazsınız. Daha fazla bilgi için bkz. özel durumlar [: özel durumları yakalama ve silme](exceptions-catching-and-deleting-exceptions.md).
 
@@ -47,7 +48,7 @@ Bu sorun, `e` yürütme "iç" **catch** bloğunun dışına çıktığında sili
 
 [!code-cpp[NVC_MFCExceptions#11](codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_2.cpp)]
 
-## <a name="try-blocks-inside-catch-blocks"></a><a name="_core_try_blocks_inside_catch_blocks"></a>Catch blokları Içinde blokları deneyin
+## <a name="try-blocks-inside-catch-blocks"></a><a name="_core_try_blocks_inside_catch_blocks"></a> Catch blokları Içinde blokları deneyin
 
 Geçerli özel durumu **`try`** bir **catch** bloğunun içindeki bir blok içinden yeniden oluşturamazsınız. Aşağıdaki örnek geçersiz:
 

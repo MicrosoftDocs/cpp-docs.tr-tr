@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: iterator_traits struct'
 title: iterator_traits Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - iterator_traits struct
 - iterator_traits class
 ms.assetid: 8b92c2c5-f658-402f-8ca1-e7ae301b8514
-ms.openlocfilehash: 924ca5ae1d32753bbe315252d942425712962639
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: ac97b84ff7bcedc00f2b069ce05f734ac65618ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289692"
 ---
 # <a name="iterator_traits-struct"></a>iterator_traits Yapısı
 
 Bir yineleyicinin sahip olması gereken tüm kritik tür tanımlarını belirtmek için kullanılan bir şablon Yardımcısı yapısı.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct iterator_traits {
@@ -35,19 +36,19 @@ struct iterator_traits {
 
 Şablon yapısı üye türlerini tanımlar
 
-- `iterator_category`: `Iterator::iterator_category` için bir eş anlamlı.
+- `iterator_category`: için bir eş anlamlı `Iterator::iterator_category` .
 
-- `value_type`: `Iterator::value_type` için bir eş anlamlı.
+- `value_type`: için bir eş anlamlı `Iterator::value_type` .
 
-- `difference_type`: `Iterator::difference_type` için bir eş anlamlı.
+- `difference_type`: için bir eş anlamlı `Iterator::difference_type` .
 
-- `distance_type`: `Iterator::difference_type.` için bir eş anlamlı
+- `distance_type`: için bir eş anlamlı `Iterator::difference_type.`
 
-- `pointer`: `Iterator::pointer` için bir eş anlamlı.
+- `pointer`: için bir eş anlamlı `Iterator::pointer` .
 
-- `reference`: `Iterator::reference` için bir eş anlamlı.
+- `reference`: için bir eş anlamlı `Iterator::reference` .
 
-Kısmi uzmanlık **, tür** <strong>\*</strong> veya **const Type** <strong>\*</strong>türünde bir nesne işaretçisi ile ilişkili kritik türleri tespit.
+Kısmi uzmanlık **, tür** <strong>\*</strong> veya **const türünde** bir nesne işaretçiyle ilişkili kritik türleri tespit <strong>\*</strong> .
 
 Bu uygulamada, kısmi özelleşmenin kullanıldığı çeşitli şablon işlevleri de kullanabilirsiniz:
 
@@ -118,12 +119,12 @@ struct std::bidirectional_iterator_tag
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<iterator >
+**Üst bilgi:**\<iterator>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<iterator >](../standard-library/iterator.md) \
-[Standart kitaplıkta Iş parçacığı güvenliği \ C++ ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
-[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+[\<iterator>](../standard-library/iterator.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[C++ standart kitaplığı başvurusu](../standard-library/cpp-standard-library-reference.md)

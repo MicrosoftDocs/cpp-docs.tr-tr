@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: MFC 'de özel durum Işleme"
 title: MFC'de Özel Durum İşleme
 ms.date: 11/19/2019
 helpviewer_keywords:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: ef827af413513d1a1753f84b1cb69a66f41f690c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 15b0a054d3b1c0353c60c1c8dda03c9e704c077e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618863"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290758"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 
@@ -65,7 +66,7 @@ Bu makalede aşağıdaki konular ele alınmaktadır:
 
 - [Özel durumlar hakkında daha fazla bilgi](#_core_further_reading_about_exceptions)
 
-## <a name="when-to-use-exceptions"></a><a name="_core_when_to_use_exceptions"></a>Özel durumlar ne zaman kullanılır?
+## <a name="when-to-use-exceptions"></a><a name="_core_when_to_use_exceptions"></a> Özel durumlar ne zaman kullanılır?
 
 Program yürütme sırasında bir işlev çağrıldığında üç sonuç kategorisi oluşabilir: normal yürütme, hatalı yürütme veya olağan dışı yürütme. Her kategori aşağıda açıklanmıştır.
 
@@ -83,7 +84,7 @@ Program yürütme sırasında bir işlev çağrıldığında üç sonuç kategor
 
 Özel durumların kullanılması özellikle olağan dışı yürütme için uygundur.
 
-## <a name="mfc-exception-support"></a><a name="_core_mfc_exception_support"></a>MFC özel durum desteği
+## <a name="mfc-exception-support"></a><a name="_core_mfc_exception_support"></a> MFC özel durum desteği
 
 C++ özel durumlarını doğrudan kullanmanıza veya MFC özel durum makrolarını kullanmanıza bakılmaksızın, çerçeve veya uygulamanız tarafından oluşturulan [CException sınıfı](reference/cexception-class.md) ya da `CException` türetilmiş nesneleri kullanırsınız.
 
@@ -93,7 +94,7 @@ Aşağıdaki tabloda, MFC tarafından sunulan önceden tanımlanmış özel duru
 |---------------------|-------------|
 |[CMemoryException sınıfı](reference/cmemoryexception-class.md)|Bellek yetersiz|
 |[CFileException Sınıfı](reference/cfileexception-class.md)|Dosya özel durumu|
-|[CArchiveException Sınıfı](reference/carchiveexception-class.md)|Arşiv/serileştirme özel durumu|
+|[CArchiveException sınıfı](reference/carchiveexception-class.md)|Arşiv/serileştirme özel durumu|
 |[CNotSupportedException sınıfı](reference/cnotsupportedexception-class.md)|Desteklenmeyen hizmet isteğine yanıt|
 |[CResourceException sınıfı](reference/cresourceexception-class.md)|Windows kaynak ayırma özel durumu|
 |[CDaoException sınıfı](reference/cdaoexception-class.md)|Veritabanı özel durumları (DAO sınıfları)|
@@ -104,29 +105,29 @@ Aşağıdaki tabloda, MFC tarafından sunulan önceden tanımlanmış özel duru
 
 Sürüm 3,0 ' den itibaren, MFC C++ özel durumlarını kullandı, ancak form içindeki C++ özel durumlarına benzeyen eski özel durum işleme makrolarını hala destekliyor. Bu makrolar yeni programlama için önerilmese de, geriye dönük uyumluluk için hala desteklenirler. Makroları zaten kullanan programlarda, C++ özel durumlarını da ücretsiz olarak kullanabilirsiniz. Ön işleme sırasında makrolar, Visual C++ sürüm 2,0 itibariyle C++ dilinin MSVC uygulamasında tanımlanan özel durum işleme anahtar sözcüklerini değerlendirir. C++ özel durumlarını kullanmaya başladığınızda, mevcut özel durum makrolarını yerinde bırakabilirsiniz. Makroları ve C++ özel durum işlemesini karıştırma ve yeni mekanizmayı kullanmak için eski kodu dönüştürme hakkında bilgi için bkz. Makaleler [özel durumları: MFC makroları ve C++ özel](exceptions-using-mfc-macros-and-cpp-exceptions.md) durumlarını kullanma [: MFC özel durum makrolarından dönüştürme](exceptions-converting-from-mfc-exception-macros.md). Eski MFC özel durum makrolarını hala kullanmaya devam ediyorsanız, C++ özel durum anahtar sözcüklerini değerlendirin. Bkz. [özel durumlar: sürüm 3,0 ' de özel durum Makrolarındaki Değişiklikler](exceptions-changes-to-exception-macros-in-version-3-0.md). MFC, [yapılandırılmış özel durum işlemede](/windows/win32/debug/structured-exception-handling)anlatıldığı gıbı Windows NT yapılandırılmış özel durum IŞLEYICILERINI (SEH) doğrudan desteklemez.
 
-## <a name="further-reading-about-exceptions"></a><a name="_core_further_reading_about_exceptions"></a>Özel durumlar hakkında daha fazla bilgi
+## <a name="further-reading-about-exceptions"></a><a name="_core_further_reading_about_exceptions"></a> Özel durumlar hakkında daha fazla bilgi
 
 Aşağıdaki makalelerde özel durum teslim etmek için MFC kitaplığı kullanımı açıklanmaktadır:
 
-- [Özel Durumlar: Özel Durumları Yakalama ve Silme](exceptions-catching-and-deleting-exceptions.md)
+- [Özel durumlar: özel durumları yakalama ve silme](exceptions-catching-and-deleting-exceptions.md)
 
-- [Özel Durumlar: Özel Durum İçeriklerini İnceleme](exceptions-examining-exception-contents.md)
+- [Özel durumlar: özel durum Içeriklerini Inceleme](exceptions-examining-exception-contents.md)
 
-- [Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma](exceptions-freeing-objects-in-exceptions.md)
+- [Özel durumlar: özel durumlarda nesneleri serbest bırakma](exceptions-freeing-objects-in-exceptions.md)
 
-- [Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma](exceptions-throwing-exceptions-from-your-own-functions.md)
+- [Özel durumlar: kendi Işlevlerinizden özel durumlar oluşturma](exceptions-throwing-exceptions-from-your-own-functions.md)
 
-- [Özel durumlar: Veritabanı Özel Durumları](exceptions-database-exceptions.md)
+- [Özel durumlar: veritabanı özel durumları](exceptions-database-exceptions.md)
 
-- [Özel durumlar: OLE Özel Durumları](exceptions-ole-exceptions.md)
+- [Özel durumlar: OLE özel durumları](exceptions-ole-exceptions.md)
 
 Aşağıdaki makalelerde MFC özel durum makroları C++ özel durum anahtar sözcükleriyle karşılaştırılmaktadır ve kodunuzu nasıl uyarlayabileceğiniz açıklanmıştır:
 
-- [Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler](exceptions-changes-to-exception-macros-in-version-3-0.md)
+- [Özel durumlar: sürüm 3,0 ' de özel durum Makrolarındaki Değişiklikler](exceptions-changes-to-exception-macros-in-version-3-0.md)
 
-- [Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme](exceptions-converting-from-mfc-exception-macros.md)
+- [Özel durumlar: MFC özel durum makrolarından dönüştürme](exceptions-converting-from-mfc-exception-macros.md)
 
-- [Özel Durumlar: MFC Makroları ve C++ Özel Durumlarını Kullanma](exceptions-using-mfc-macros-and-cpp-exceptions.md)
+- [Özel durumlar: MFC makrolarını ve C++ özel durumlarını kullanma](exceptions-using-mfc-macros-and-cpp-exceptions.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,14 +1,15 @@
 ---
+description: "Daha fazla bilgi edinin: SAL 'ı anlama"
 title: SAL'ı Anlama
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-ms.openlocfilehash: 78a254bca6a90826d47f20ee9909a8cc66e23e28
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: affbca9eb65467b65ee5ba4ed3ae550a6da25ac7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226053"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288509"
 ---
 # <a name="understanding-sal"></a>SAL'ı Anlama
 
@@ -35,7 +36,7 @@ void * memcpy(
 
 Bu işlevin ne yaptığını söyleyebilir misiniz? Bir işlev uygulandığında veya çağrıldığında, programın doğruluğunu sağlamak için bazı özellikler tutulması gerekir. Yalnızca örnekteki gibi bir bildirime bakarak ne olduğunu bilemezsiniz. SAL ek açıklamaları olmadan belgeleri veya kod açıklamalarını bilmeniz gerekir. Şöyle yazdıklarınız aşağıda verilmiştir `memcpy` :
 
-> " `memcpy` bayt *sayısını* *src* öğesinden *hedefe*kopyalar; `wmemcpy` kopya *sayısı* geniş karakter (iki bayt). Kaynak ve hedef çakışırsa, davranışı `memcpy` tanımlı değildir. `memmove`Çakışan bölgeleri işlemek için kullanın. \
+> " `memcpy` bayt *sayısını* *src* öğesinden *hedefe* kopyalar; `wmemcpy` kopya *sayısı* geniş karakter (iki bayt). Kaynak ve hedef çakışırsa, davranışı `memcpy` tanımlı değildir. `memmove`Çakışan bölgeleri işlemek için kullanın. \
 > **Önemli:** Hedef arabelleğinin boyut veya Kaynak arabelleğinden daha büyük olduğundan emin olun. Daha fazla bilgi için bkz. arabellek taşmalarını önleme. "
 
 Belgeler, kodunuzun, programın doğruluğunu sağlamak için belirli özellikleri sürdürmek için sahip olduğunu öneren birkaç bilgi içerir:
@@ -83,7 +84,7 @@ SAL, kullanım düzenine göre sınıflandırılan dört temel parametre türün
 |**Çağrılan işleve giriş**|`_In_`|Veriler çağrılan işleve geçirilir ve salt okunurdur.|
 |**Çağrılan işleve giriş ve arayana çıkış**|`_Inout_`|Kullanılabilir veriler işleve geçirilir ve potansiyel olarak değiştirilebilir.|
 |**Çağırana çıkış**|`_Out_`|Çağıran, yazmak için çağrılan işlev için alan sağlar. Çağrılan işlev verileri bu alana yazar.|
-|**Arayan işaretçisinin çıkışı**|`_Outptr_`|**Arayana çıkış**gibi. Çağrılan işlev tarafından döndürülen değer bir işaretçidir.|
+|**Arayan işaretçisinin çıkışı**|`_Outptr_`|**Arayana çıkış** gibi. Çağrılan işlev tarafından döndürülen değer bir işaretçidir.|
 
 Bu dört temel ek açıklama, çeşitli yollarla daha açık hale getirilebilir. Varsayılan olarak, açıklamalı işaretçi parametrelerinin gerekli olduğu varsayılır — işlevin başarılı olması için NULL olmayan bir değer olmalıdır. Temel ek açıklamaların en yaygın olarak kullanılan çeşitlemesi, bir işaretçi parametresinin isteğe bağlı olduğunu belirtir; NULL ise, işlev işini gerçekleştirirken yine de başarılı olabilir.
 
@@ -126,9 +127,9 @@ Bu bölümde, temel SAL ek açıklamaları için kod örnekleri gösterilmektedi
 
 - Çağıranın arabelleği sağlaması ve başlatması gerekir.
 
-- `_In_`"salt okunurdur" belirtir. Yaygın bir hata, `_In_` `_Inout_` bunun yerine ek açıklamasına sahip olması gereken bir parametreye uygulanmalıdır.
+- `_In_` "salt okunurdur" belirtir. Yaygın bir hata, `_In_` `_Inout_` bunun yerine ek açıklamasına sahip olması gereken bir parametreye uygulanmalıdır.
 
-- `_In_`işaretçiye izin verilir, ancak işaretçi olmayan bir şekilde çözümleyici tarafından yok sayılır.
+- `_In_` işaretçiye izin verilir, ancak işaretçi olmayan bir şekilde çözümleyici tarafından yok sayılır.
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -156,7 +157,7 @@ Bu örnekte Visual Studio Code analizini kullanıyorsanız, çağıranların iç
 
 ### <a name="example-the-_in_opt_-annotation"></a>Örnek: \_ ın \_ opt \_ ek açıklaması
 
-`_In_opt_`, `_In_` ile aynıdır, ancak giriş PARAMETRESININ null olmasına izin verilir ve bu nedenle işlevin bunu denetlemesi gerekir.
+`_In_opt_` , `_In_` ile aynıdır, ancak giriş PARAMETRESININ null olmasına izin verilir ve bu nedenle işlevin bunu denetlemesi gerekir.
 
 ```cpp
 
@@ -184,7 +185,7 @@ Visual Studio Code analizi, işlevin arabelleğe erişmeden önce NULL olduğunu
 
 ### <a name="example-the-_out_-annotation"></a>Örnek: \_ Out \_ ek açıklaması
 
-`_Out_`bir öğe arabelleğini işaret eden NULL olmayan bir işaretçinin geçirildiği ve işlevin öğeyi Başlatan ortak bir senaryoyu destekler. Çağıranın çağrıdan önce arabelleği başlatması gerekmez; çağrılan işlev, döndürülmadan önce başlatmayı taahhüt eder.
+`_Out_` bir öğe arabelleğini işaret eden NULL olmayan bir işaretçinin geçirildiği ve işlevin öğeyi Başlatan ortak bir senaryoyu destekler. Çağıranın çağrıdan önce arabelleği başlatması gerekmez; çağrılan işlev, döndürülmadan önce başlatmayı taahhüt eder.
 
 ```cpp
 void GoodOutCallee(_Out_ int *pInt)
@@ -210,7 +211,7 @@ Visual Studio Code çözümleme aracı, çağıranın NULL olmayan bir işaretç
 
 ### <a name="example-the-_out_opt_-annotation"></a>Örnek: \_ Out \_ opt \_ ek açıklaması
 
-`_Out_opt_`, `_Out_` PARAMETRESININ null olmasına izin verildiğinden ve bu nedenle işlevin bunu denetlemesi gerektiği durumlar dışında, ile aynıdır.
+`_Out_opt_` , `_Out_` PARAMETRESININ null olmasına izin verildiğinden ve bu nedenle işlevin bunu denetlemesi gerektiği durumlar dışında, ile aynıdır.
 
 ```cpp
 void GoodOutOptCallee(_Out_opt_ int *pInt)
@@ -237,7 +238,7 @@ Visual Studio Code analizi, bu işlevin, başvuru yapılmadan önce NULL olduğu
 
 ### <a name="example-the-_inout_-annotation"></a>Örnek: \_ InOut \_ ek açıklaması
 
-`_Inout_`işlev tarafından değiştirilebilen bir işaretçi parametresine açıklama eklemek için kullanılır. İşaretçi, çağrıdan önce geçerli başlatılmış verileri göstermelidir ve değişse bile, yine de dönüş üzerinde geçerli bir değere sahip olmalıdır. Ek açıklama, işlevin tek öğeli arabelleğe serbestçe okunabilir ve yazılabilir olabileceğini belirtir. Çağıranın arabelleği sağlaması ve başlatması gerekir.
+`_Inout_` işlev tarafından değiştirilebilen bir işaretçi parametresine açıklama eklemek için kullanılır. İşaretçi, çağrıdan önce geçerli başlatılmış verileri göstermelidir ve değişse bile, yine de dönüş üzerinde geçerli bir değere sahip olmalıdır. Ek açıklama, işlevin tek öğeli arabelleğe serbestçe okunabilir ve yazılabilir olabileceğini belirtir. Çağıranın arabelleği sağlaması ve başlatması gerekir.
 
 > [!NOTE]
 > Benzer `_Out_` `_Inout_` şekilde, değiştirilebilir bir değere uygulamanız gerekir.
@@ -268,7 +269,7 @@ Visual Studio Code analizi, çağıranların için başlatılmış bir arabelle�
 
 ### <a name="example-the-_inout_opt_-annotation"></a>Örnek: \_ InOut \_ opt \_ ek açıklaması
 
-`_Inout_opt_`, `_Inout_` ile aynıdır, ancak giriş PARAMETRESININ null olmasına izin verilir ve bu nedenle işlevin bunu denetlemesi gerekir.
+`_Inout_opt_` , `_Inout_` ile aynıdır, ancak giriş PARAMETRESININ null olmasına izin verilir ve bu nedenle işlevin bunu denetlemesi gerekir.
 
 ```cpp
 void GoodInOutOptCallee(_Inout_opt_ int *pInt)
@@ -297,7 +298,7 @@ Visual Studio Code analizi, bu işlevin arabelleğe erişmeden önce NULL olduğ
 
 ### <a name="example-the-_outptr_-annotation"></a>Örnek: \_ outptr \_ ek açıklaması
 
-`_Outptr_`, bir işaretçiye dönmesi amaçlanan bir parametreye açıklama eklemek için kullanılır.  Parametrenin kendisi NULL olmamalı ve çağrılan işlev içinde NULL olmayan bir işaretçi döndürüyor ve işaretçi başlatılmış verileri işaret ediyor.
+`_Outptr_` , bir işaretçiye dönmesi amaçlanan bir parametreye açıklama eklemek için kullanılır.  Parametrenin kendisi NULL olmamalı ve çağrılan işlev içinde NULL olmayan bir işaretçi döndürüyor ve işaretçi başlatılmış verileri işaret ediyor.
 
 ```cpp
 void GoodOutPtrCallee(_Outptr_ int **pInt)
@@ -327,7 +328,7 @@ Visual Studio Code analizi, çağıranın NULL olmayan bir işaretçi geçirmedi
 
 ### <a name="example-the-_outptr_opt_-annotation"></a>Örnek: \_ outptr \_ opt \_ ek açıklaması
 
-`_Outptr_opt_`, `_Outptr_` parametresinin isteğe bağlı olması dışında; çağıran, parametre IÇIN null bir işaretçiye geçebilirler.
+`_Outptr_opt_` , `_Outptr_` parametresinin isteğe bağlı olması dışında; çağıran, parametre IÇIN null bir işaretçiye geçebilirler.
 
 ```cpp
 void GoodOutPtrOptCallee(_Outptr_opt_ int **pInt)

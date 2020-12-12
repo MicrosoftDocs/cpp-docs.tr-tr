@@ -1,21 +1,22 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; iş parçacığı&gt;'
 title: '&lt;thread&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <thread>
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
-ms.openlocfilehash: 251a423829a048e3d67b0bcf83107f52c3fdafca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3387d96772f1ed3322ce79b744e17b6bf494140d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232852"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289627"
 ---
 # <a name="ltthreadgt"></a>&lt;thread&gt;
 
 \<thread>Sınıfı `thread` ve çeşitli destekleyici işlevleri tanımlamak için standart üstbilgiyi dahil edin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <thread>
@@ -24,7 +25,7 @@ ms.locfileid: "87232852"
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> **/Clr**kullanılarak derlenen kodda, bu üst bilgi engellenir.
+> **/Clr** kullanılarak derlenen kodda, bu üst bilgi engellenir.
 
 `__STDCPP_THREADS__`Makro, iş parçacıklarının bu üst bilgi tarafından desteklendiğini göstermek için sıfır dışında bir değer olarak tanımlanır.
 
@@ -40,7 +41,7 @@ ms.locfileid: "87232852"
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[hash Yapısı (C++ Standart Kitaplığı)](../standard-library/hash-structure-stl.md)|Tarafından benzersiz olarak belirlenen bir değer döndüren bir üye işlevi tanımlar `thread::id` . Üye işlevi, türündeki değerleri [hash](../standard-library/hash-class.md) `thread::id` Dizin değerlerinin bir dağıtımına eşlemek için uygun bir karma işlevi tanımlar.|
+|[hash Yapısı (C++ Standart Kitaplığı)](../standard-library/hash-structure-stl.md)|Tarafından benzersiz olarak belirlenen bir değer döndüren bir üye işlevi tanımlar `thread::id` . Üye işlevi, türündeki değerleri [](../standard-library/hash-class.md) `thread::id` Dizin değerlerinin bir dağıtımına eşlemek için uygun bir karma işlevi tanımlar.|
 
 ### <a name="public-functions"></a>Ortak Işlevler
 

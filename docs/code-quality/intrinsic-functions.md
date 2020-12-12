@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Iç Işlevler'
 title: İç İşlevler
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,16 +11,16 @@ f1_keywords:
 - _Nullterm_length_
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
-ms.openlocfilehash: d1a7bae43a6fcd875f2e713695969f0d88b0dfe5
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6d193052520203e3716e72f8c60031ab55f63c6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504164"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288600"
 ---
 # <a name="intrinsic-functions"></a>İç İşlevler
 
-SAL içindeki bir ifade, yan etkileri olmayan bir ifade olan bir C/C++ ifadesi olabilir; Örneğin, + +,--, ve işlev çağrılarının hepsi bu bağlamda yan etkilere sahiptir.  Ancak, SAL ifadelerde kullanılabilecek bazı işlev benzeri nesneler ve bazı ayrılmış semboller sağlar. Bunlar *iç işlevler*olarak adlandırılır.
+SAL içindeki bir ifade, yan etkileri olmayan bir ifade olan bir C/C++ ifadesi olabilir; Örneğin, + +,--, ve işlev çağrılarının hepsi bu bağlamda yan etkilere sahiptir.  Ancak, SAL ifadelerde kullanılabilecek bazı işlev benzeri nesneler ve bazı ayrılmış semboller sağlar. Bunlar *iç işlevler* olarak adlandırılır.
 
 ## <a name="general-purpose"></a>Genel Amaçlı
 

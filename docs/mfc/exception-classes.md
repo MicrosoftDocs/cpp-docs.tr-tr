@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel durum sınıfları'
 title: Özel Durum Sınıfları
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - exception handling [MFC], exception classes
 - MFC, exceptions
 ms.assetid: 1a2caf12-b3e9-4189-86d2-bf7a595bf025
-ms.openlocfilehash: 907b34b12ffdaa70c4377a1012a66662fbba12d0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c07bd93a0abf95dc7d5f46c710faaad2dcad08c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290771"
 ---
 # <a name="exception-classes"></a>Özel Durum Sınıfları
 

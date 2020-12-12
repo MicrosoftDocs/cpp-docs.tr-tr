@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: tüketiciye döndürülen sütunları dinamik olarak belirleme'
 title: Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme
 ms.date: 10/26/2018
 helpviewer_keywords:
 - bookmarks [C++], dynamically determining columns
 - dynamically determining columns [C++]
 ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
-ms.openlocfilehash: 6b6061fc7da6f4c4dd53ae70a0e2d5ba7ec40023
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: fd70164edff5b9267e01a891a143920ac4e60a35
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079642"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287573"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme
 
-PROVIDER_COLUMN_ENTRY makrolar normalde `IColumnsInfo::GetColumnsInfo` çağrısını işler. Ancak, bir tüketici yer işaretlerini kullanmayı seçebildiğinden, sağlayıcının, tüketicinin bir yer işareti isteyip istemediği ile ilgili olarak döndürülen sütunları değiştirebilmeleri gerekir.
+PROVIDER_COLUMN_ENTRY makrolar normalde `IColumnsInfo::GetColumnsInfo` çağrıyı işler. Ancak, bir tüketici yer işaretlerini kullanmayı seçebildiğinden, sağlayıcının, tüketicinin bir yer işareti isteyip istemediği ile ilgili olarak döndürülen sütunları değiştirebilmeleri gerekir.
 
-`IColumnsInfo::GetColumnsInfo` çağrısını işlemek için, *özel*RS. h içindeki `CCustomWindowsFile` kullanıcı kaydından bir işlev `GetColumnInfo`tanımlayan PROVIDER_COLUMN_MAP silin ve kendi `GetColumnInfo` işlevinizin tanımıyla değiştirin:
+Çağrıyı işlemek için, `IColumnsInfo::GetColumnsInfo` `GetColumnInfo` `CCustomWindowsFile` *özel* RS. h içindeki kullanıcı kaydından bir işlevi tanımlayan PROVIDER_COLUMN_MAP silin ve kendi `GetColumnInfo` işlevinizin tanımıyla değiştirin:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -39,11 +40,11 @@ public:
 };
 ```
 
-Ardından, aşağıdaki kodda gösterildiği gibi, `GetColumnInfo` işlevini *özel*RS. cpp ' de uygulayın.
+Sonra, `GetColumnInfo` aşağıdaki kodda gösterildiği gibi, Işlevini *özel* RS. cpp ' de uygulayın.
 
-`GetColumnInfo`, `DBPROP_BOOKMARKS` OLE DB özelliğinin ayarlanmış olup olmadığını görmek için öncelikle kontrol eder. Özelliği almak için, `GetColumnInfo` satır kümesi nesnesine bir işaretçi (`pRowset`) kullanır. `pThis` işaretçisi, özellik eşlemesinin depolandığı sınıf olan satır kümesini oluşturan sınıfını temsil eder. `GetColumnInfo` Type`pThis` işaretçisini `RCustomRowset` işaretçisine yayınlar.
+`GetColumnInfo` OLE DB özelliğinin ayarlanmış olup olmadığını görmek için önce kontrol eder `DBPROP_BOOKMARKS` . Özelliği almak için, `GetColumnInfo` Rowset nesnesine bir işaretçi ( `pRowset` ) kullanır. `pThis`İşaretçi, özellik eşlemesinin depolandığı sınıf olan satır kümesini oluşturan sınıfını temsil eder. `GetColumnInfo` işaretçi işaretçiyi `pThis` bir `RCustomRowset` işaretçiye yayınlar.
 
-`DBPROP_BOOKMARKS` özelliğini denetlemek için `GetColumnInfo`, `pRowset` arabirimindeki `QueryInterface` çağırarak `IRowsetInfo` arabirimini kullanır. Alternatif olarak, bunun yerine bir ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) yöntemi kullanabilirsiniz.
+Özelliğini denetlemek için, `DBPROP_BOOKMARKS` `GetColumnInfo` `IRowsetInfo` arabirimini kullanarak alabileceğiniz arabirimini kullanır `QueryInterface` `pRowset` . Alternatif olarak, bunun yerine bir ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) yöntemi kullanabilirsiniz.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -104,7 +105,7 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
 }
 ```
 
-Bu örnek, sütun bilgilerini tutmak için bir statik dizi kullanır. Tüketici, yer işareti sütununu istemiyor, dizideki bir giriş kullanılmaz. Bilgileri işlemek için iki dizi makrosu oluşturursunuz: ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX, bir yer işareti sütunu belirlemeniz gereken ek bir parametre, *bayrak*alır.
+Bu örnek, sütun bilgilerini tutmak için bir statik dizi kullanır. Tüketici, yer işareti sütununu istemiyor, dizideki bir giriş kullanılmaz. Bilgileri işlemek için iki dizi makrosu oluşturursunuz: ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX, bir yer işareti sütunu belirlemeniz gereken ek bir parametre, *bayrak* alır.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////  
@@ -135,7 +136,7 @@ Bu örnek, sütun bilgilerini tutmak için bir statik dizi kullanır. Tüketici,
    _rgColumns[ulCols].columnid.uName.pwszName = (LPOLESTR)name;  
 ```
 
-`GetColumnInfo` işlevinde, yer işareti makrosu şöyle kullanılır:
+`GetColumnInfo`İşlevinde, yer işareti makrosu şöyle kullanılır:
 
 ```cpp
 ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
@@ -147,4 +148,4 @@ Artık gelişmiş sağlayıcıyı derleyebilir ve çalıştırabilirsiniz. Sağl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Basit Salt Okunur Sağlayıcıyı Geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>
+[Basit Read-Only sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

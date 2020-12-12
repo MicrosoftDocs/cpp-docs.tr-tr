@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Framework kodunuzu nasıl çağırır'
 title: Framework'ün Kodunuzu Çağırması
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - application-specific events [MFC]
 - command routing [MFC], MFC
 ms.assetid: 39e68189-a580-40d0-9e35-bf5cd24a8ecf
-ms.openlocfilehash: 318ca9558d705ca483d41867a1fe2ad46c36666f
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: eebc431d8ba4d0edf7eddfe113d6f6559087be70
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622601"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290381"
 ---
 # <a name="how-the-framework-calls-your-code"></a>Framework'ün Kodunuzu Çağırması
 
@@ -33,4 +34,4 @@ Daha fazla bilgi için bkz. [sınıf CWinApp: uygulama sınıfı](cwinapp-the-ap
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Framework'te Derleme](building-on-the-framework.md)
+[Çerçevede derleme](building-on-the-framework.md)

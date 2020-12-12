@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: etkin belge kapsama örneği: Office Ciltçi'
 title: 'Etkin Belge Kapsama Örneği: Office Binder'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Office Binder [MFC]
 - MFC COM, active document containment
 ms.assetid: 70dd8568-e8bc-44ac-bf5e-678767efe8e3
-ms.openlocfilehash: fe9ccb5b78d9a60c5b8b2a19fe0818a8e1682f00
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 075922f3a50df77f83aab90dc380e33f703737fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290836"
 ---
 # <a name="example-of-active-document-containment-office-binder"></a>Etkin Belge Kapsama Örneği: Office Binder
 

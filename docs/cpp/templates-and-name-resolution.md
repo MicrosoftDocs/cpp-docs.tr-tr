@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: Şablonlar ve ad çözümlemesi'
 title: Şablonlar ve Ad Çözümü
 ms.date: 11/04/2016
 ms.assetid: 519ba7b5-cd25-4549-865a-9a7b9dffdc28
-ms.openlocfilehash: 693a2e69446410531d6a02047e8f230542362033
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4ef6aba6d11b845cc91ec7d813f25712e5196b27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288184"
 ---
 # <a name="templates-and-name-resolution"></a>Şablonlar ve Ad Çözümü
 

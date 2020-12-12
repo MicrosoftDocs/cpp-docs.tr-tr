@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _getdrives'
 title: _getdrives
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - getdrives function
 - disk drives
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
-ms.openlocfilehash: 66940abc3f171b07f0816441709b1f4f9db88614
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 77e73b1d63238b5f558fffdef0344fa5180c84ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913759"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289159"
 ---
 # <a name="_getdrives"></a>_getdrives
 
@@ -43,7 +44,7 @@ ms.locfileid: "82913759"
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 unsigned long _getdrives( void );
@@ -51,7 +52,7 @@ unsigned long _getdrives( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa, dönüş değeri şu anda kullanılabilir olan disk sürücülerinin temsil ettiği bir bit dır. Bit konumu 0 (en az-önemli bit) sürücü A, bit konumu 1 sürücü B, bit konumu 2 sürücü C 'dir ve bu şekilde devam eder. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için **GetLastError**çağrısı yapın.
+İşlev başarılı olursa, dönüş değeri şu anda kullanılabilir olan disk sürücülerinin temsil ettiği bir bit dır. Bit konumu 0 (en az-önemli bit) sürücü A, bit konumu 1 sürücü B, bit konumu 2 sürücü C 'dir ve bu şekilde devam eder. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için **GetLastError** çağrısı yapın.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -61,7 +62,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getdrives**|\<Direct. h>|
+|**_getdrives**|\<direct.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

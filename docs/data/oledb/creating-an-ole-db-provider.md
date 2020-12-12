@@ -1,42 +1,43 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE DB sağlayıcı oluşturma'
 title: OLE DB Sağlayıcısı Oluşturma
 ms.date: 10/13/2018
 helpviewer_keywords:
 - OLE DB providers, creating
 - OLE DB provider templates, creating providers
 ms.assetid: f73017c3-c89f-41a6-a306-ea992cf6092c
-ms.openlocfilehash: 3e46e87b0d5d538a0f9fd7e231debfef3fa95210
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 69dc9311a79f2739636633b2d268343a92d2dac9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62361899"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287807"
 ---
 # <a name="creating-an-ole-db-provider"></a>OLE DB Sağlayıcısı Oluşturma
 
-Bir OLE DB sağlayıcısı oluşturmak için önerilen yöntem, ATL COM projesini ve sağlayıcı oluşturup ardından OLE DB Şablonları kullanarak dosyaları değiştirmek için sihirbazları kullanmaktır. Sağlayıcınız özelleştirme gibi istenmeyen özellikleri açıklaması ve isteğe bağlı arabirimler.
+OLE DB sağlayıcısı oluşturmanın önerilen yolu, bir ATL COM projesi ve sağlayıcı oluşturmak için sihirbazları kullanmak ve ardından OLE DB şablonlarını kullanarak dosyaları değiştirmektir. Sağlayıcınızı özelleştirirken, istenmeyen özellikleri açıklama ekleyebilir ve isteğe bağlı arabirimler ekleyebilirsiniz.
 
 Temel adımlar aşağıdaki gibidir:
 
-1. Kullanım **ATL projesi Sihirbazı** temel proje dosyaları oluşturmak için ve **ATL OLEDB Sağlayıcısı Sihirbazı** sağlayıcısı oluşturmak için (seçin **ATL OLEDB Sağlayıcısı** gelen**Yüklü** > **Visual C++** > **ATL** klasöründe **Yeni Öğe Ekle**).
+1. Sağlayıcıyı oluşturmak için temel proje dosyalarını ve **ATL OLEDB Sağlayıcısı sihirbazını** oluşturmak için **atl Proje Sihirbazı** 'nı kullanın (    >    >  **Yeni öğe Ekle**' de yüklü Visual C++**ATL** klasöründen ATL OLEDB Sağlayıcısı ' nı seçin).
 
    > [!NOTE]
-   > Proje eklemeden önce MFC desteği içermelidir bir **ATL OLEDB Sağlayıcısı**.
+   > **ATL OLEDB Sağlayıcısı** eklemeden önce projenin MFC desteği içermesi gerekir.
 
-1. Kodda değişiklik `Execute` yönteminde [CCustomRowset(CustomRS.h)](cmyproviderrowset-myproviderrs-h.md). Bir örnek için bkz. [okuma dizeleri içine bir OLE DB sağlayıcısı](../../data/oledb/reading-strings-into-the-ole-db-provider.md).
+1. `Execute` [Ccustomrowset (customrs. h)](cmyproviderrowset-myproviderrs-h.md)içindeki yöntemdeki kodu değiştirin. Bir örnek için bkz. [dizeleri OLE DB sağlayıcıya okuma](../../data/oledb/reading-strings-into-the-ole-db-provider.md).
 
-1. Özellik eşlemeleri içinde düzenleme [CustomDS.h](cmyprovidersource-myproviderds-h.md), [CustomSess.h](cmyprovidersession-myprovidersess-h.md), ve [CustomRS.h](cmyproviderrowset-myproviderrs-h.md). Sihirbaz bir sağlayıcının uygulayabileceği tüm özellikleri içeren özellik eşlemeleri oluşturur. Özellik eşlemeleri üzerinden giderek kaldırabilir veya yorum sağlayıcınız destek gerekmez özellikleri.
+1. [Customds. h](cmyprovidersource-myproviderds-h.md), [customsess. h](cmyprovidersession-myprovidersess-h.md)ve [customrs. h](cmyproviderrowset-myproviderrs-h.md)içindeki özellik eşlemelerini düzenleyin. Sihirbaz, bir sağlayıcının uygulayabildiği tüm özellikleri içeren özellik eşlemeleri oluşturur. Özellik eşlemeleri ' ne gidin ve sağlayıcınızın desteklemek zorunda olmadığı özellikleri kaldırın veya not edin.
 
-1. Bulunabilir PROVIDER_COLUMN_MAP güncelleştirme [CCustomRowset(CustomRS.h)](cmyproviderrowset-myproviderrs-h.md). Bir örnek için bkz. [depolama dizeleri, OLE DB sağlayıcısı](../../data/oledb/storing-strings-in-the-ole-db-provider.md).
+1. [Ccustomrowset (CustomRS. h)](cmyproviderrowset-myproviderrs-h.md)içinde bulunan PROVIDER_COLUMN_MAP güncelleştirin. Bir örnek için bkz. [OLE DB sağlayıcıda dizeleri depolama](../../data/oledb/storing-strings-in-the-ole-db-provider.md).
 
-1. Sağlayıcınızı test etmeye hazır olduğunuzda, sağlayıcı bir sağlayıcı numaralandırmada bulunamadı deneyerek test edebilirsiniz. Bir sabit listesinde bir sağlayıcı bulur test kod örnekleri için bkz. [CATDB](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/catdb) ve [DBVIEWER](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer) örnekleri veya örnekte [bir Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md).
+1. Sağlayıcınızı test etmeye hazırsanız sağlayıcıyı bir sağlayıcı numaralandırmasında bulmaya çalışırken test edebilirsiniz. Bir Numaralandırmadaki sağlayıcı bulan test kodu örnekleri için bkz. [CATDB](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/catdb) ve [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer) örnekleri veya [basit bir tüketici uygulama](../../data/oledb/implementing-a-simple-consumer.md)örneği.
 
-1. İstediğiniz desteklenecek ek arabirimleri ekleyin. Bir örnek için bkz. [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).
+1. İstediğiniz ek arabirimleri ekleyin. Bir örnek için bkz. [basit Read-Only sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).
 
    > [!NOTE]
-   > Varsayılan olarak, sihirbaz OLE DB düzeyi 0 uyumlu bir kod oluşturur. Uygulama düzeyi 0 uyumlu kalmasını sağlamak için herhangi bir sihirbazın ürettiği arabirimleri koddan kaldırmayın.
+   > Varsayılan olarak, sihirbazlar OLE DB düzey 0 uyumlu kod oluşturur. Uygulamanızın 0 düzeyine uyumlu kalmasını sağlamak için, koddan sihirbaz tarafından oluşturulan arabirimlerin hiçbirini kaldırmayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CatDB örneği: Veri kaynak şema tarayıcı](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/catdb)<br/>
-[DBVIEWER örneği: Veritabanı tarayıcı](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer)
+[CatDB örneği: veri kaynağı şema tarayıcısı](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/catdb)<br/>
+[DBViewer örneği: veritabanı tarayıcısı](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/dbviewer)

@@ -1,4 +1,5 @@
 ---
+description: 'Aşağıdakiler hakkında daha fazla bilgi edinin: özel durumlar: nesneleri özel durumlarda boşaltma'
 title: 'Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - throwing exceptions [MFC], after destroying
 - exception handling [MFC], destroying objects
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
-ms.openlocfilehash: a02b71609ec19d6106153bf67e9d56b860cfdfff
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 47b10f3ecb96875ceee986eadda4595d2afbb77e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217941"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290563"
 ---
 # <a name="exceptions-freeing-objects-in-exceptions"></a>Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma
 
@@ -40,7 +41,7 @@ Bu iki yaklaşım aşağıdaki sorunlu örnekteki çözümler olarak aşağıda 
 
 Yukarıda yazıldığı gibi, `myPerson` tarafından bir özel durum oluşturulursa silinmeyecektir `SomeFunc` . Yürütme doğrudan bir sonraki dış özel durum işleyicisine atlar, normal işlev çıkışı atlanarak nesneyi silen kod. Özel durum işlevden ayrıldığında nesnenin işaretçisi kapsam dışına çıkar ve nesne tarafından kullanılan bellek, program çalıştığı sürece hiçbir zaman kurtarılmaz. Bu bir bellek sızıntısı; Bellek Tanılama kullanılarak algılanır.
 
-## <a name="handling-the-exception-locally"></a><a name="_core_handling_the_exception_locally"></a>Özel durumu yerel olarak işleme
+## <a name="handling-the-exception-locally"></a><a name="_core_handling_the_exception_locally"></a> Özel durumu yerel olarak işleme
 
 **Try/catch** paradigması, bellek sızıntılarını önlemeye ve özel durumlar oluştuğunda nesnelerinizin yok edilebilmesini sağlamak için savunma programlama yöntemi sağlar. Örneğin, bu makalenin önceki kısımlarında gösterilen örnek aşağıdaki gibi yeniden yazılabilir:
 
@@ -48,7 +49,7 @@ Yukarıda yazıldığı gibi, `myPerson` tarafından bir özel durum oluşturulu
 
 Bu yeni örnek, özel durumu yakalamak ve yerel olarak işlemek için bir özel durum işleyicisi ayarlar. Sonra işlevden normal olarak çıkar ve nesneyi yok eder. Bu örneğin önemli bir yönü, **try/catch** bloklarıyla özel durumu yakalamak için bir bağlam oluşturulur. Yerel bir özel durum çerçevesi olmadan, işlev bir özel durumun oluşturulmuş olduğunu hiçbir şekilde bilmez ve normal çıkma ve nesneyi yok etme şansınız olmaz.
 
-## <a name="throwing-exceptions-after-destroying-objects"></a><a name="_core_throwing_exceptions_after_destroying_objects"></a>Nesneleri yok etme sonrasında özel durumlar üretiliyor
+## <a name="throwing-exceptions-after-destroying-objects"></a><a name="_core_throwing_exceptions_after_destroying_objects"></a> Nesneleri yok etme sonrasında özel durumlar üretiliyor
 
 Özel durumları işlemenin bir diğer yolu da, bir sonraki dış özel durum işleme bağlamına geçirmektir. **`catch`** Blobundan sonra, yerel olarak ayrılan nesnelerinizi bazı temizleme işlemleri yapabilir ve daha fazla işlem için üzerinde özel durum oluşturabilirsiniz.
 

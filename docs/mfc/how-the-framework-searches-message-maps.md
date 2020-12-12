@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: çerçeve Ileti eşlemelerini arama'
 title: Framework'ün İleti Eşlemelerini Araması
 ms.date: 11/04/2016
 helpviewer_keywords:
 - message maps [MFC], searching
 ms.assetid: fd1df878-5601-45d7-bd1f-b8f8e65b9a17
-ms.openlocfilehash: a50070882d17188cc3251693cb523a7b77d532c3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a0c25015f0086e13d78c07f22a4b03633245c74b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621683"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290420"
 ---
 # <a name="how-the-framework-searches-message-maps"></a>Framework'ün İleti Eşlemelerini Araması
 
@@ -23,4 +24,4 @@ ms.locfileid: "84621683"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti İşleme ve Eşleme](message-handling-and-mapping.md)
+[İleti Işleme ve eşleme](message-handling-and-mapping.md)

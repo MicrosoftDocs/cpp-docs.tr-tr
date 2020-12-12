@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; Yineleyici &gt; işleçleri'
 title: '&lt;Yineleyici &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,16 +18,16 @@ helpviewer_keywords:
 - std::operator&gt;= (iterator)
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
-ms.openlocfilehash: 36851eab86a32fab9294129cf1918e0add528eb3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6fe47669bcd2ab72cd91bc9eee36afea975fab3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215666"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289705"
 ---
 # <a name="ltiteratorgt-operators"></a>&lt;Yineleyici &gt; işleçleri
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.
 
@@ -119,7 +120,7 @@ in the reversed sequence: 7.
 The iterators are not equal.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit olup olmadığını sınar.
 
@@ -225,7 +226,7 @@ in the reversed sequence: 8.
 The iterators are not equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden küçük olup olmadığını sınar.
 
@@ -316,7 +317,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan küçük olup olmadığını sınar.
 
@@ -411,7 +412,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden büyük olup olmadığını sınar.
 
@@ -500,7 +501,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan büyük olup olmadığını sınar.
 
@@ -595,7 +596,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.
 ```
 
-## <a name="operator"></a><a name="op_add"></a>işleç +
+## <a name="operator"></a><a name="op_add"></a> işleç +
 
 Bir yineleyici için bir konum ekler ve yeni bir `move_iterator` `reverse_iterator` konum konumunda eklenen öğeyi bir veya daha fazla adresi döndürür.
 
@@ -623,7 +624,7 @@ Kaydırılacağı Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Sağ*  +  *_Off*toplamını döndürür.
+*Sağ*  +  *_Off* toplamını döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -674,7 +675,7 @@ The iterator rVPOS1 now points to the fifth element
 in the reversed sequence: 2.
 ```
 
-## <a name="operator-"></a><a name="operator-"></a>işlecinde
+## <a name="operator-"></a><a name="operator-"></a> işlecinde
 
 Bir yineleyiciyi bir başkasından çıkarır ve farkı döndürür.
 
@@ -700,7 +701,7 @@ Yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İki yineleyiciler arasındaki fark`.`
+İki yineleyiciler arasındaki fark `.`
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -708,7 +709,7 @@ Yineleyici.
 
 İkinci şablon işleci döndürülür `right.current - left.current` .
 
-`Tdiff`, döndürülen ifadenin türüne göre belirlenir. Aksi takdirde, `RandomIterator1::difference_type` .
+`Tdiff` , döndürülen ifadenin türüne göre belirlenir. Aksi takdirde, `RandomIterator1::difference_type` .
 
 ### <a name="example"></a>Örnek
 

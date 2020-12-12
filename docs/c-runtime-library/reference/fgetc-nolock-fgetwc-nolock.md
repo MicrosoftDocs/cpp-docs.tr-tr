@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fgetc_nolock _fgetwc_nolock'
 title: _fgetc_nolock, _fgetwc_nolock
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - reading characters from streams
 - _fgettc_nolock function
 ms.assetid: fb8e7c5b-4503-493a-879e-6a1db75aa114
-ms.openlocfilehash: 2744dc17c79fc1e3e568dd3b7a62602b75603be0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cbab4186b3f6edfe95fde8319d3bace5c5d73ac6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289224"
 ---
 # <a name="_fgetc_nolock-_fgetwc_nolock"></a>_fgetc_nolock, _fgetwc_nolock
 
@@ -74,7 +75,7 @@ Bkz.[fgetc, fgetwc](fgetc-fgetwc.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_fgetc_nolock** ve **_fgetwc_nolock** , sırasıyla **fgetc** ve **fgetwc**ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+**_fgetc_nolock** ve **_fgetwc_nolock** , sırasıyla **fgetc** ve **fgetwc** ile aynıdır, ancak diğer iş parçacıkları tarafından girişim tarafından korunmazlar. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -88,8 +89,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fgetc_nolock**|\<stdio. h>|
-|**_fgetwc_nolock**|\<stdio. h> veya \<wchar. h>|
+|**_fgetc_nolock**|\<stdio.h>|
+|**_fgetwc_nolock**|\<stdio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -129,7 +130,7 @@ int main( void )
 }
 ```
 
-## <a name="input-crt_fgetc_nolocktxt"></a>Giriş: crt_fgetc_nolock. txt
+## <a name="input-crt_fgetc_nolocktxt"></a>Giriş: crt_fgetc_nolock.txt
 
 ```Input
 Line one.
@@ -145,6 +146,6 @@ Line two.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>
