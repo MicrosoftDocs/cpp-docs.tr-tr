@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l'
 title: sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - _sprintf_s_l function
 - formatted text [C++]
 ms.assetid: 424f0a29-22ef-40e8-b565-969f5f57782f
-ms.openlocfilehash: 006b0f84494466b5c23a8c86f586774b66839b03
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 4d5114367daf8061315d296816799c5707c0323c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292266"
 ---
 # <a name="sprintf_s-_sprintf_s_l-swprintf_s-_swprintf_s_l"></a>sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
 
@@ -119,19 +120,19 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir hata oluştuysa yazılan karakter sayısı veya-1. *Arabellek* veya *Biçim* null işaretçisiyse, **sprintf_s** ve **swprintf_s** -1 döndürür ve **errno** öğesini **EINVAL**olarak ayarlayın.
+Bir hata oluştuysa yazılan karakter sayısı veya-1. *Arabellek* veya *Biçim* null işaretçisiyse, **sprintf_s** ve **swprintf_s** -1 döndürür ve **errno** öğesini **EINVAL** olarak ayarlayın.
 
-**sprintf_s** , sondaki null karakteri saymayan *arabellekte*depolanan bayt sayısını döndürür. **swprintf_s** , sondaki null geniş karakteri saymayan *arabellekte*depolanan geniş karakter sayısını döndürür.
+**sprintf_s** , sondaki null karakteri saymayan *arabellekte* depolanan bayt sayısını döndürür. **swprintf_s** , sondaki null geniş karakteri saymayan *arabellekte* depolanan geniş karakter sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Sprintf_s** işlevi, *arabelleğe*bir dizi karakter ve değer depolar. Her *bağımsız değişken* (varsa), karşılık *gelen biçim belirtimine*göre dönüştürülür ve çıktı. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Yazılan son karakterden sonra null bir karakter eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
+**Sprintf_s** işlevi, *arabelleğe* bir dizi karakter ve değer depolar. Her *bağımsız değişken* (varsa), karşılık *gelen biçim belirtimine* göre dönüştürülür ve çıktı. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir. Yazılan son karakterden sonra null bir karakter eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
-**Sprintf_s** ve [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) arasındaki bir temel fark, **sprintf_s** geçerli biçimlendirme karakterlerinin biçim dizesini denetlemelebilirken [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) yalnızca biçim dizesinin veya arabelleğin **null** işaretçiler olup olmadığını denetler. Her iki denetim de başarısız olursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar.
+**Sprintf_s** ve [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) arasındaki bir temel fark, **sprintf_s** geçerli biçimlendirme karakterlerinin biçim dizesini denetlemelebilirken [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) yalnızca biçim dizesinin veya arabelleğin **null** işaretçiler olup olmadığını denetler. Her iki denetim de başarısız olursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev-1 döndürür ve **errno** öğesini **EINVAL** olarak ayarlar.
 
-**Sprintf_s** ve [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) arasındaki diğer temel fark, **sprintf_s** , çıkış arabelleğinin karakter cinsinden boyutunu belirten bir length parametresi alır. Arabellek, Sonlandırıcı null dahil olmak üzere biçimlendirilen metin için çok küçük ise, *arabellek [0*] olarak null bir karakter yerleştirerek ve geçersiz parametre işleyicisi çağrıldığında arabellek boş bir dizeye ayarlanır. **_Snprintf**aksine, **sprintf_s** arabellek boyutu sıfır olmadığı takdirde arabelleğin null olarak sonlandırılacağını garanti eder.
+**Sprintf_s** ve [sprintf](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) arasındaki diğer temel fark, **sprintf_s** , çıkış arabelleğinin karakter cinsinden boyutunu belirten bir length parametresi alır. Arabellek, Sonlandırıcı null dahil olmak üzere biçimlendirilen metin için çok küçük ise, *arabellek [0*] olarak null bir karakter yerleştirerek ve geçersiz parametre işleyicisi çağrıldığında arabellek boş bir dizeye ayarlanır. **_Snprintf** aksine, **sprintf_s** arabellek boyutu sıfır olmadığı takdirde arabelleğin null olarak sonlandırılacağını garanti eder.
 
-**swprintf_s** , **sprintf_s**geniş karakterli bir sürümüdür; **swprintf_s** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **Swprintf_s** kodlama hatalarının algılanması **sprintf_s**farklı olabilir. **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
+**swprintf_s** , **sprintf_s** geniş karakterli bir sürümüdür; **swprintf_s** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **Swprintf_s** kodlama hatalarının algılanması **sprintf_s** farklı olabilir. **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 C++ ' da, bu işlevlerin kullanımı şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir, bu da bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 

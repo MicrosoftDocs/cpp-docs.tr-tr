@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l'
 title: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - _stprintf_p_l function
 ms.assetid: a2ae78e8-6b0c-48d5-87a9-ea2365b0693d
-ms.openlocfilehash: c694567aa7554319d5821678a18c3b5392f89965
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 84702c0ab04027f350978c511ee8f871af753bb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292305"
 ---
 # <a name="_sprintf_p-_sprintf_p_l-_swprintf_p-_swprintf_p_l"></a>_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 
@@ -112,11 +113,11 @@ Bir hata oluştuysa yazılan karakter sayısı veya-1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Sprintf_p** işlevi, *arabelleğe*bir dizi karakter ve değer depolar. *Argument_list* (varsa) içindeki her bağımsız değişken, karşılık *gelen biçim belirtimine*göre dönüştürülür ve çıktı. *Biçim* bağımsız değişkeni, [printf ve wprintf işlevleri için biçim belirtimi sözdizimini](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)kullanır. Yazılan son karakterden sonra null bir karakter eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır. **_Sprintf_p** ve **sprintf_s** arasındaki fark, **_sprintf_p** konumsal parametreleri desteklediğinden, bağımsız değişkenlerin biçim dizesinde kullanıldığı sırayı belirtmeye olanak tanır. Daha fazla bilgi için bkz. [Printf_p Konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+**_Sprintf_p** işlevi, *arabelleğe* bir dizi karakter ve değer depolar. *Argument_list* (varsa) içindeki her bağımsız değişken, karşılık *gelen biçim belirtimine* göre dönüştürülür ve çıktı. *Biçim* bağımsız değişkeni, [printf ve wprintf işlevleri için biçim belirtimi sözdizimini](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)kullanır. Yazılan son karakterden sonra null bir karakter eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır. **_Sprintf_p** ve **sprintf_s** arasındaki fark, **_sprintf_p** konumsal parametreleri desteklediğinden, bağımsız değişkenlerin biçim dizesinde kullanıldığı sırayı belirtmeye olanak tanır. Daha fazla bilgi için bkz. [Printf_p Konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**_swprintf_p** , **_sprintf_p**geniş karakterli bir sürümüdür; **_swprintf_p** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **_Swprintf_p** kodlama hatalarının algılanması **_sprintf_p**farklı olabilir. **_swprintf_p** ve **fwprintf_p** aynı şekilde davranır çünkü **_swprintf_p** çıktıyı **Dosya**türünde bir hedef yerine bir dizeye yazar ve **_swprintf_p** , yazılacak maksimum karakter sayısını belirtmek için *Count* parametresinin olmasını gerektirir. **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
+**_swprintf_p** , **_sprintf_p** geniş karakterli bir sürümüdür; **_swprintf_p** işaretçi bağımsız değişkenleri geniş karakterli dizelerdir. **_Swprintf_p** kodlama hatalarının algılanması **_sprintf_p** farklı olabilir. **_swprintf_p** ve **fwprintf_p** aynı şekilde davranır çünkü **_swprintf_p** çıktıyı **Dosya** türünde bir hedef yerine bir dizeye yazar ve **_swprintf_p** , yazılacak maksimum karakter sayısını belirtmek için *Count* parametresinin olmasını gerektirir. **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-**_sprintf_p** , sondaki null karakteri saymayan *arabellekte*depolanan bayt sayısını döndürür. **_swprintf_p** , sondaki null geniş karakteri saymayan *arabellekte*depolanan geniş karakter sayısını döndürür. *Arabellek* veya *Biçim* null işaretçisiyse veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+**_sprintf_p** , sondaki null karakteri saymayan *arabellekte* depolanan bayt sayısını döndürür. **_swprintf_p** , sondaki null geniş karakteri saymayan *arabellekte* depolanan geniş karakter sayısını döndürür. *Arabellek* veya *Biçim* null işaretçisiyse veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCRibbonBaseElement sınıfı'
 title: CMFCRibbonBaseElement sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -232,12 +233,12 @@ helpviewer_keywords:
 - CMFCRibbonBaseElement [MFC], OnProcessKey
 - CMFCRibbonBaseElement [MFC], OnSetFocus
 ms.assetid: 419ea91b-5062-44cc-b0a3-f87d29566f62
-ms.openlocfilehash: 18f158bd9e984c750769742c43c4dd3b65e5e731
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9b6902c6f52b40b044c90d99835364f8c4f5a59f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293878"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
 
@@ -2155,7 +2156,7 @@ virtual void SetText(LPCTSTR lpszText);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şerit öğesi için keytıp 'yi ayarlamak için, yeni satır kaçış dizisini ve ardından *lpszText*için keytip karakterlerinden sonuna ekleyin.
+Şerit öğesi için keytıp 'yi ayarlamak için, yeni satır kaçış dizisini ve ardından *lpszText* için keytip karakterlerinden sonuna ekleyin.
 
 ### <a name="example"></a>Örnek
 

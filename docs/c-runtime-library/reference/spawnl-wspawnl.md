@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _spawnl _wspawnl'
 title: _spawnl, _wspawnl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - wspawnl function
 - process creation
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
-ms.openlocfilehash: 4b51faae4ba6f371f712e4c39374ae9717c90bed
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1e4550578334c994647bd8a244063c572cfd5616
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834381"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292552"
 ---
 # <a name="_spawnl-_wspawnl"></a>_spawnl, _wspawnl
 
@@ -47,7 +48,7 @@ Yeni bir işlem oluşturur ve yürütür.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 intptr_t _spawnl(
@@ -77,11 +78,11 @@ intptr_t _wspawnl(
 Yürütülecek dosyanın yolu.
 
 *arg0*, *arg1*,... *argN*<br/>
-Bağımsız değişkenlere işaretçiler listesi. *Arg0* bağımsız değişkeni genellikle bir *cmdname*işaretçisi olur. *ArgN* aracılığıyla *arg1* bağımsız değişkenleri, yeni bağımsız değişken listesini oluşturan karakter dizelerinin işaretçileridir. Aşağıdaki *argN*, bağımsız değişken listesinin sonunu Işaretlemek için **null** bir işaretçi olmalıdır.
+Bağımsız değişkenlere işaretçiler listesi. *Arg0* bağımsız değişkeni genellikle bir *cmdname* işaretçisi olur. *ArgN* aracılığıyla *arg1* bağımsız değişkenleri, yeni bağımsız değişken listesini oluşturan karakter dizelerinin işaretçileridir. Aşağıdaki *argN*, bağımsız değişken listesinin sonunu Işaretlemek için **null** bir işaretçi olmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Zaman uyumlu bir **_spawnl** veya **_wspawnl** ( *mod*için belirtilen **_P_WAIT** ) dönüş değeri, yeni işlemin çıkış durumudur. Zaman uyumsuz bir **_spawnl** veya **_wspawnl** (**_P_NOWAIT** veya *mod*için belirtilen **_P_NOWAITO** ) dönüş değeri işlem tanıtıcıdır. İşlem normal şekilde sonlandırılırsa çıkış durumu 0 ' dır. Oluşturulan işlem özellikle **Çıkış** yordamını sıfır dışında bir bağımsız değişkenle çağırırsa çıkış durumunu sıfır dışında bir değere ayarlayabilirsiniz. Yeni işlem açıkça pozitif bir çıkış durumu ayarlanmamışsa, bir pozitif çıkış durumu, bir iptal veya kesme ile olağan dışı bir çıkış olduğunu gösterir. -1 ' in dönüş değeri bir hatayı gösterir (yeni işlem başlatılmaz). Bu durumda, **errno** aşağıdaki değerlerden birine ayarlanır.
+Zaman uyumlu bir **_spawnl** veya **_wspawnl** ( *mod* için belirtilen **_P_WAIT** ) dönüş değeri, yeni işlemin çıkış durumudur. Zaman uyumsuz bir **_spawnl** veya **_wspawnl** (**_P_NOWAIT** veya *mod* için belirtilen **_P_NOWAITO** ) dönüş değeri işlem tanıtıcıdır. İşlem normal şekilde sonlandırılırsa çıkış durumu 0 ' dır. Oluşturulan işlem özellikle **Çıkış** yordamını sıfır dışında bir bağımsız değişkenle çağırırsa çıkış durumunu sıfır dışında bir değere ayarlayabilirsiniz. Yeni işlem açıkça pozitif bir çıkış durumu ayarlanmamışsa, bir pozitif çıkış durumu, bir iptal veya kesme ile olağan dışı bir çıkış olduğunu gösterir. -1 ' in dönüş değeri bir hatayı gösterir (yeni işlem başlatılmaz). Bu durumda, **errno** aşağıdaki değerlerden birine ayarlanır.
 
 | Değer | Açıklama |
 |--|--|
@@ -93,7 +94,7 @@ Zaman uyumlu bir **_spawnl** veya **_wspawnl** ( *mod*için belirtilen **_P_WAIT
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Bu işlevler, parametrelerini doğrular. Herhangi bir *cmdname* veya *arg0* boş bir dize veya null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL**olarak ayarlar ve-1 döndürür. Yeni işlem oluşturulmadı.
+Bu işlevler, parametrelerini doğrular. Herhangi bir *cmdname* veya *arg0* boş bir dize veya null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür. Yeni işlem oluşturulmadı.
 
 ## <a name="remarks"></a>Açıklamalar
 

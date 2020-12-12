@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: çok baytlı karakterleri dönüştürme'
 title: Birden Çok Baytlı Karakterleri Dönüştürme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - multibyte characters, converting
 ms.assetid: bbee7586-6a60-4168-bb98-0d1c8aa823a1
-ms.openlocfilehash: ef1e6d64e508c06cb682e91870ce17a3bc688187
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 416750da7f4e6956d27974c7a4ed9db6f721667d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293111"
 ---
 # <a name="converting-multibyte-characters"></a>Birden Çok Baytlı Karakterleri Dönüştürme
 
@@ -19,4 +20,4 @@ Geçerli yerel ayar varsayılan olarak "C" yerel ayarıdır. [#Pragma setlocale]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakterle](../c-language/characters.md)
+[Karakterler](../c-language/characters.md)

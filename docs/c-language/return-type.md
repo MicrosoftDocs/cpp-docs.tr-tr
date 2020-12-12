@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. dönüş türü
 title: Dönüş Türü
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - return keyword [C++], function return types
 - functions [C++], return types
 ms.assetid: 3e5b8a97-b341-48c5-8be8-8986980ef586
-ms.openlocfilehash: 1d905e02be02784b562b9d1a8f72a9bfa4057b9b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5f4c3c59dd5d89a3c9083eb177bb72e4049ab454
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293033"
 ---
 # <a name="return-type"></a>Dönüş Türü
 
 Bir işlevin dönüş türü, işlevin döndürdüğü değerin boyutunu ve türünü belirler ve aşağıdaki sözdiziminde bulunan tür belirleyicisi öğesine karşılık gelir:
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *işlev tanımı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Bildirim-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *bileşik-deyimin*
@@ -38,10 +39,10 @@ Bir işlevin dönüş türü, işlevin döndürdüğü değerin boyutunu ve tür
 &nbsp;&nbsp;&nbsp;&nbsp;**`char`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`short`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`int`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__int8`** /\*Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__int16`** /\*Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__int32`** /\*Microsoft 'a özgü\*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**`__int64`** /\*Microsoft 'a özgü\*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int8`** /\* Microsoft 'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int16`** /\* Microsoft 'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int32`** /\* Microsoft 'a özgü \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`__int64`** /\* Microsoft 'a özgü \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`long`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`float`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`double`**<br/>
@@ -51,7 +52,7 @@ Bir işlevin dönüş türü, işlevin döndürdüğü değerin boyutunu ve tür
 &nbsp;&nbsp;&nbsp;&nbsp;*Sabit Listesi belirticisi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*TypeDef-adı*
 
-*Tür belirleyicisi* herhangi bir temel, yapı veya birleşim türü belirtebilir. *Tür belirleyicisi*eklemezseniz, dönüş türü **`int`** varsayılır.
+*Tür belirleyicisi* herhangi bir temel, yapı veya birleşim türü belirtebilir. *Tür belirleyicisi* eklemezseniz, dönüş türü **`int`** varsayılır.
 
 İşlev tanımında verilen dönüş türü, programın başka bir yerinde, işlevin bildirimlerinde dönüş türüyle eşleşmelidir. Bir işlev **`return`** , bir ifade içeren bir deyim yürütüldüğünde bir değer döndürür. İfade değerlendirilir, gerekirse dönüş değeri türüne dönüştürülür ve işlevin çağrıldığı noktaya döndürülür. Bir işlev dönüş türü ile bildirilirse, bir **`void`** ifade içeren bir dönüş deyimi uyarı oluşturur ve ifade değerlendirilmez.
 

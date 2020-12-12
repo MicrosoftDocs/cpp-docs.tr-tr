@@ -1,5 +1,6 @@
 ---
-title: CMFCRibbonColorButton Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCRibbonColorButton sınıfı'
+title: CMFCRibbonColorButton sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonColorButton
@@ -40,18 +41,18 @@ helpviewer_keywords:
 - CMFCRibbonColorButton [MFC], SetPalette
 - CMFCRibbonColorButton [MFC], UpdateColor
 ms.assetid: 6b4b4ee3-8cc0-41b4-a4eb-93e8847008e1
-ms.openlocfilehash: 528b883d75889589c7021f462324dd9dcb71be25
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a350339559febdc9346dcf8b342d274d00bab391
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293722"
 ---
-# <a name="cmfcribboncolorbutton-class"></a>CMFCRibbonColorButton Sınıfı
+# <a name="cmfcribboncolorbutton-class"></a>CMFCRibbonColorButton sınıfı
 
-Sınıf, `CMFCRibbonColorButton` şerit çubuğuna ekleyebileceğiniz bir renk düğmesi uygular. Şerit renk düğmesi, bir veya daha fazla renk paleti içeren açılır menüyü görüntüler.
+`CMFCRibbonColorButton`Sınıfı, şerit çubuğuna ekleyebileceğiniz bir renk düğmesi uygular. Şerit rengi düğmesi bir veya daha fazla renk paletleri içeren bir açılan menü görüntüler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCRibbonColorButton : public CMFCRibbonGallery
@@ -61,58 +62,58 @@ class CMFCRibbonColorButton : public CMFCRibbonGallery
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonColorButton::CMFCRibbonColorButton](#cmfcribboncolorbutton)||
+|[CMFCRibbonColorButton:: CMFCRibbonColorButton](#cmfcribboncolorbutton)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCRibbonColorButton::AddColorsGroup](#addcolorsgroup)|Normal renk alanına bir renk grubu ekler.|
-|[CMFCRibbonColorButton::EnableAutomaticButton](#enableautomaticbutton)|**Otomatik** düğmenin etkin olup olmadığını belirtir.|
-|[CMFCRibbonColorButton::EnableOtherButton](#enableotherbutton)|**Diğer** düğmeyi etkinleştiri.|
-|[CMFCRibbonColorButton::GetAutomaticColor](#getautomaticcolor)||
-|[CMFCRibbonColorButton::GetColor](#getcolor)|Şu anda seçili rengi döndürür.|
-|[CMFCRibbonColorButton::GetColorBoxSize](#getcolorboxsize)|Renk çubuğunda görünen renk öğelerinin boyutunu döndürür.|
-|[CMFCRibbonColorButton::GetColumns](#getcolumns)||
-|[CMFCRibbonColorButton::GetHighlightedColor](#gethighlightedcolor)|Pop-up renk paletinde şu anda seçili öğenin rengini verir.|
-|[CMFCRibbonColorButton::RemoveAllColorGroups](#removeallcolorgroups)|Tüm renk gruplarını normal renk alanından kaldırır.|
-|[CMFCRibbonColorButton::SetColor](#setcolor)|Normal renk alanından bir renk seçer.|
-|[CMFCRibbonColorButton::SetColorBoxSize](#setcolorboxsize)|Renk çubuğunda görünen tüm renk öğelerinin boyutunu ayarlar.|
-|[CMFCRibbonColorButton::SetColorName](#setcolorname)||
-|[CMFCRibbonColorButton::SetColumns](#setcolumns)||
-|[CMFCRibbonColorButton::SetDocumentColors](#setdocumentcolors)|Belge renk alanında görüntülenecek RGB değerlerinin listesini belirtir.|
-|[CMFCRibbonColorButton::SetPalette](#setpalette)||
-|[CMFCRibbonColorButton::UpdateColor](#updatecolor)||
+|[CMFCRibbonColorButton:: AddColorsGroup](#addcolorsgroup)|Normal renk alanına bir renk grubu ekler.|
+|[CMFCRibbonColorButton:: EnableAutomaticButton](#enableautomaticbutton)|**Otomatik** düğmenin etkinleştirilip etkinleştirilmeyeceğini belirtir.|
+|[CMFCRibbonColorButton:: EnableOtherButton](#enableotherbutton)|**Diğer** düğmeye izin vermez.|
+|[CMFCRibbonColorButton:: GetAutomaticColor](#getautomaticcolor)||
+|[CMFCRibbonColorButton:: GetColor](#getcolor)|Şu anda seçili rengi döndürür.|
+|[CMFCRibbonColorButton:: GetColorBoxSize](#getcolorboxsize)|Renk çubuğunda görünen renk öğelerinin boyutunu döndürür.|
+|[CMFCRibbonColorButton:: GetColumns](#getcolumns)||
+|[CMFCRibbonColorButton:: Gethighaçıklatedcolor](#gethighlightedcolor)|Açılan renk paletindeki seçili olan öğenin rengini döndürür.|
+|[CMFCRibbonColorButton:: RemoveAllColorGroups](#removeallcolorgroups)|Normal renk alanından tüm renk gruplarını kaldırır.|
+|[CMFCRibbonColorButton:: SetColor](#setcolor)|Normal renk alanından bir renk seçer.|
+|[CMFCRibbonColorButton:: SetColorBoxSize](#setcolorboxsize)|Renk çubuğunda görünen tüm renk öğelerinin boyutunu ayarlar.|
+|[CMFCRibbonColorButton:: SetColorName](#setcolorname)||
+|[CMFCRibbonColorButton:: SetColumns](#setcolumns)||
+|[CMFCRibbonColorButton:: SetDocumentColors](#setdocumentcolors)|Belge renk alanında görüntülenecek RGB değerlerinin listesini belirtir.|
+|[CMFCRibbonColorButton:: SetPalette](#setpalette)||
+|[CMFCRibbonColorButton:: UpdateColor](#updatecolor)||
 
 ## <a name="remarks"></a>Açıklamalar
 
-Şerit renk düğmesi, kullanıcı bastığında bir renk çubuğu görüntüler. Varsayılan olarak, bu renk çubuğu normal renk alanı olarak adlandırılan bir renk seçim paleti içerir. İsteğe bağlı olarak, renk çubuğu, kullanıcının varsayılan bir renk seçmesine olanak tanıyan **Otomatik** düğmeyi ve ek renkler içeren bir açılır renk paleti görüntüleyen **diğer** düğmeyi görüntüleyebilir.
+Şerit rengi düğmesi bir Kullanıcı ona bastığında bir renk çubuğu görüntüler. Varsayılan olarak, bu renk çubuğu normal renk alanı adlı bir renk seçim paleti içerir. İsteğe bağlı olarak, renk çubuğu, kullanıcının varsayılan bir renk seçmesine izin veren bir **Otomatik** düğme ve ek renkler içeren bir açılan renk paleti görüntüleyen **diğer** bir düğme görüntüleyebilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, sınıfta çeşitli yöntemlerin `CMFCRibbonColorButton` nasıl kullanılacağını göstermektedir. Örnek, bir `CMFCRibbonColorButton` nesnenin nasıl oluşturulabildiğini, büyük görüntüyü nasıl ayarladığını, **Otomatik** düğmesini etkinleştirme, **Diğer** düğmesini etkinleştirme, sütun sayısını ayarlama, renk çubuğunda görünen tüm renk öğelerinin boyutunu ayarlama, normal renk alanına bir renk grubu ekleme ve belge renk alanında görüntülenecek RGB değerlerinin listesini belirtmeyi gösterir. Bu kod snippet [Çekme İstemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir `CMFCRibbonColorButton` . Örnek, bir nesnenin nasıl oluşturulduğunu `CMFCRibbonColorButton` , büyük görüntünün nasıl ayarlanacağını, **Otomatik** düğmeyi nasıl etkinleştireceğinizi, **diğer** düğmeyi etkinleştirir, sütun sayısını ayarlamayı, Renk çubuğunda görünen tüm renk öğelerinin boyutunu ayarlamayı, normal renk alanına bir renk grubu eklemenizi ve belge renk alanında görüntülenecek RGB değerlerinin bir listesini belirtmenizi gösterir. Bu kod parçacığı, [Çizim istemci örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_DrawClient#3](../../mfc/reference/codesnippet/cpp/cmfcribboncolorbutton-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)
 
-[CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)
+[Cmfcribbondüğmesi](../../mfc/reference/cmfcribbonbutton-class.md)
 
-[CMFCRibbonGaleri](../../mfc/reference/cmfcribbongallery-class.md)
+[Cmfcribbongalerisi](../../mfc/reference/cmfcribbongallery-class.md)
 
 [CMFCRibbonColorButton](../../mfc/reference/cmfcribboncolorbutton-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxribboncolorbutton.h
+**Üstbilgi:** afxribboncolorbutton. h
 
-## <a name="cmfcribboncolorbuttonaddcolorsgroup"></a><a name="addcolorsgroup"></a>CMFCRibbonColorButton::AddColorsGroup
+## <a name="cmfcribboncolorbuttonaddcolorsgroup"></a><a name="addcolorsgroup"></a> CMFCRibbonColorButton:: AddColorsGroup
 
 Normal renk alanına bir renk grubu ekler.
 
@@ -125,22 +126,22 @@ void AddColorsGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-[içinde] Grup adı.
+*lpszName*<br/>
+'ndaki Grup adı.
 
-*lstRenkler*<br/>
-[içinde] Renk listesi.
+*lstColors*<br/>
+'ndaki Renklerin listesi.
 
 *bContiguousColumns*<br/>
-[içinde] Renk öğelerinin grupta nasıl görüntüleneceğini denetler. TRUE ise, renk öğeleri dikey bir boşluk olmadan çizilir. FALSE ise, renk öğeleri dikey bir boşlukla çizilir.
+'ndaki Renk öğelerinin grupta nasıl görüntülendiğini denetler. TRUE ise, renk öğeleri dikey bir boşluk olmadan çizilir. FALSE ise, renk öğeleri dikey bir boşluk ile çizilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Renk açılır penceresini çeşitli renk grupları görüntülemek için bu işlevi kullanın. Renklerin grupta nasıl görüntüleneceğini denetleyebilirsiniz.
+Renk açılır listesini birkaç renk grubunu görüntüleyecek şekilde bu işlevi kullanın. Renklerin grup içinde nasıl görüntülendiğini denetleyebilirsiniz.
 
-## <a name="cmfcribboncolorbuttoncmfcribboncolorbutton"></a><a name="cmfcribboncolorbutton"></a>CMFCRibbonColorButton::CMFCRibbonColorButton
+## <a name="cmfcribboncolorbuttoncmfcribboncolorbutton"></a><a name="cmfcribboncolorbutton"></a> CMFCRibbonColorButton:: CMFCRibbonColorButton
 
-Bir `CMFCRibbonColorButton` nesne inşa eder.
+Bir `CMFCRibbonColorButton` nesnesi oluşturur.
 
 ```
 CMFCRibbonColorButton();
@@ -162,31 +163,31 @@ CMFCRibbonColorButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-[içinde] Bir kullanıcı düğmeyi tıklattığında yürütülecek komutun komut kimliğini belirtir.
+*NID*<br/>
+'ndaki Kullanıcı düğmeye tıkladığında yürütülecek komutun komut KIMLIĞINI belirtir.
 
-*lpszMetin*<br/>
-[içinde] Düğmede görünecek metni belirtir.
+*lpszText*<br/>
+'ndaki Düğmede görüntülenecek metni belirtir.
 
-*nSmallImageIndex*<br/>
-[içinde] Düğmede görünecek küçük görüntünün sıfır tabanlı dizini.
+*Nsmallımageındex*<br/>
+'ndaki Düğme üzerinde görünecek küçük görüntünün sıfır tabanlı dizini.
 
-*color*<br/>
-[içinde] Düğmenin rengi (varsayılan olarak siyah).
+*Renk*<br/>
+'ndaki Düğmenin rengi (varsayılan olarak siyah olur).
 
 *bSimpleButtonLook*<br/>
-[içinde] TRUE ise, düğme basit bir dikdörtgen olarak çizilir.
+'ndaki TRUE ise düğme basit bir dikdörtgen olarak çizilir.
 
-*nLargeImageIndex*<br/>
-[içinde] Düğmede görünecek büyük görüntünün sıfır tabanlı dizini.
+*Nlargeımageındex*<br/>
+'ndaki Düğme üzerinde görünecek büyük görüntünün sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribboncolorbuttonenableautomaticbutton"></a><a name="enableautomaticbutton"></a>CMFCRibbonColorButton::EnableAutomaticButton
+## <a name="cmfcribboncolorbuttonenableautomaticbutton"></a><a name="enableautomaticbutton"></a> CMFCRibbonColorButton:: EnableAutomaticButton
 
-**Otomatik** düğmenin etkin olup olmadığını belirtir.
+**Otomatik** düğmenin etkinleştirilip etkinleştirilmeyeceğini belirtir.
 
 ```cpp
 void EnableAutomaticButton(
@@ -200,27 +201,27 @@ void EnableAutomaticButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszEtiket*<br/>
-[içinde] **Otomatik** düğmesinin etiketi.
+*lpszLabel*<br/>
+'ndaki **Otomatik** düğmenin etiketi.
 
-*Colorautomatic*<br/>
-[içinde] **Otomatik** düğmenin varsayılan rengini belirten bir RGB değeri.
+*colorAutomatic*<br/>
+'ndaki **Otomatik** düğmenin varsayılan rengini BELIRTEN bir RGB değeri.
 
-*bEtkinleştir*<br/>
-[içinde] **Otomatik** düğmesi etkinse TRUE; Devre dışı bırakılırsa YANLIŞ.
+*bEnable*<br/>
+'ndaki **Otomatik** düğme etkinse doğru; Devre dışıysa yanlış.
 
 *lpszToolTip*<br/>
-[içinde] **Otomatik** düğmesinin araç ucu.
+'ndaki **Otomatik** düğmenin araç ipucu.
 
 *bOnTop*<br/>
-[içinde] **Otomatik** düğmenin renk paletinden önce en üstte olup olmadığını belirtir.
+'ndaki **Otomatik** düğmenin en üstte, renk paletinden önce olup olmadığını belirtir.
 
 *bDrawBorder*<br/>
-[içinde] Uygulama şerit renk düğmesindeki renk çubuğunun etrafına kenarlık çiziyorsa DOĞRU. Renk çubuğu, şu anda seçili rengi görüntüler. Uygulama kenarlık çizmiyorsa YANLIŞ
+'ndaki Uygulama, şerit rengi düğmesindeki renk çubuğunun etrafında bir kenarlık çizdiğinde TRUE. Renk çubuğu şu anda seçili rengi görüntüler. Uygulama bir kenarlık çizmezse yanlış
 
-## <a name="cmfcribboncolorbuttonenableotherbutton"></a><a name="enableotherbutton"></a>CMFCRibbonColorButton::EnableOtherButton
+## <a name="cmfcribboncolorbuttonenableotherbutton"></a><a name="enableotherbutton"></a> CMFCRibbonColorButton:: EnableOtherButton
 
-**Diğer** düğmeyi etkinleştiri.
+**Diğer** düğmeye izin vermez.
 
 ```cpp
 void EnableOtherButton(
@@ -230,17 +231,17 @@ void EnableOtherButton(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszEtiket*<br/>
+*lpszLabel*<br/>
 Düğmenin etiketi.
 
 *lpszToolTip*<br/>
-**Diğer** düğmeiçin araç ipucu metni.
+**Diğer** düğmenin araç ipucu metni.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Diğer** düğme, renk grubunun altında görüntülenen düğmedir. Kullanıcı **Diğer** düğmesini tıklattığında, bir renk iletişim kutusu görüntüler.
+**Diğer** düğme, renklerin grubunun altında görüntülenen düğmedir. Kullanıcı **diğer** düğmeye tıkladığında bir renk iletişim kutusu görüntüler.
 
-## <a name="cmfcribboncolorbuttongetautomaticcolor"></a><a name="getautomaticcolor"></a>CMFCRibbonColorButton::GetAutomaticColor
+## <a name="cmfcribboncolorbuttongetautomaticcolor"></a><a name="getautomaticcolor"></a> CMFCRibbonColorButton:: GetAutomaticColor
 
 Geçerli otomatik düğme rengini alır.
 
@@ -254,9 +255,9 @@ Geçerli otomatik düğme rengini temsil eden bir RGB renk değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Otomatik düğme rengi `colorAutomatic` `CMFCRibbonColorButton::EnableAutomaticButton` yönteme geçirilen parametre ile ayarlanır.
+Otomatik düğme rengi `colorAutomatic` yöntemine geçirilen parametre tarafından ayarlanır `CMFCRibbonColorButton::EnableAutomaticButton` .
 
-## <a name="cmfcribboncolorbuttongetcolor"></a><a name="getcolor"></a>CMFCRibbonColorButton::GetColor
+## <a name="cmfcribboncolorbuttongetcolor"></a><a name="getcolor"></a> CMFCRibbonColorButton:: GetColor
 
 Şu anda seçili rengi döndürür.
 
@@ -266,9 +267,9 @@ COLORREF GetColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Düğmeyi tıklatarak seçilen renk.
+Düğmeye tıklayarak seçilen renk.
 
-## <a name="cmfcribboncolorbuttongetcolorboxsize"></a><a name="getcolorboxsize"></a>CMFCRibbonColorButton::GetColorBoxSize
+## <a name="cmfcribboncolorbuttongetcolorboxsize"></a><a name="getcolorboxsize"></a> CMFCRibbonColorButton:: GetColorBoxSize
 
 Renk çubuğunda görünen renk öğelerinin boyutunu döndürür.
 
@@ -278,11 +279,11 @@ CSize GetColorBoxSize() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Açılır renk paletindeki renk düğmelerinin boyutu.
+Açılan renk paletindeki renk düğmelerinin boyutu.
 
-## <a name="cmfcribboncolorbuttongetcolumns"></a><a name="getcolumns"></a>CMFCRibbonColorButton::GetColumns
+## <a name="cmfcribboncolorbuttongetcolumns"></a><a name="getcolumns"></a> CMFCRibbonColorButton:: GetColumns
 
-Şerit renk düğmesinin galeri ekranının bir satırdaki öğe sayısını alır.
+Şerit rengi düğmesinin Galeri görüntüsüne ait bir satırdaki öğelerin sayısını alır.
 
 ```
 int GetColumns() const;
@@ -290,13 +291,13 @@ int GetColumns() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Her satırdaki simge sayısını döndürür.
+Her satırdaki simgelerin sayısını döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribboncolorbuttongethighlightedcolor"></a><a name="gethighlightedcolor"></a>CMFCRibbonColorButton::GetHighlightedColor
+## <a name="cmfcribboncolorbuttongethighlightedcolor"></a><a name="gethighlightedcolor"></a> CMFCRibbonColorButton:: Gethighaçıklatedcolor
 
-Açılır renk paletinde şu anda seçili öğenin rengini verir.
+Açılır renk paletindeki seçili olan öğenin rengini döndürür.
 
 ```
 COLORREF GetHighlightedColor() const;
@@ -304,17 +305,17 @@ COLORREF GetHighlightedColor() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Açılır renk paletinde şu anda seçili öğenin rengi.
+Açılır renk paletindeki seçili olan öğenin rengi.
 
-## <a name="cmfcribboncolorbuttonremoveallcolorgroups"></a><a name="removeallcolorgroups"></a>CMFCRibbonColorButton::RemoveAllColorGroups
+## <a name="cmfcribboncolorbuttonremoveallcolorgroups"></a><a name="removeallcolorgroups"></a> CMFCRibbonColorButton:: RemoveAllColorGroups
 
-Tüm renk gruplarını normal renk alanından kaldırır.
+Normal renk alanından tüm renk gruplarını kaldırır.
 
 ```cpp
 void RemoveAllColorGroups();
 ```
 
-## <a name="cmfcribboncolorbuttonsetcolor"></a><a name="setcolor"></a>CMFCRibbonColorButton::SetColor
+## <a name="cmfcribboncolorbuttonsetcolor"></a><a name="setcolor"></a> CMFCRibbonColorButton:: SetColor
 
 Normal renk alanından bir renk seçer.
 
@@ -324,10 +325,10 @@ void SetColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
-[içinde] Ayarlanan bir renk.
+*Renk*<br/>
+'ndaki Ayarlanacak bir renk.
 
-## <a name="cmfcribboncolorbuttonsetcolorboxsize"></a><a name="setcolorboxsize"></a>CMFCRibbonColorButton::SetColorBoxSize
+## <a name="cmfcribboncolorbuttonsetcolorboxsize"></a><a name="setcolorboxsize"></a> CMFCRibbonColorButton:: SetColorBoxSize
 
 Renk çubuğunda görünen tüm renk öğelerinin boyutunu ayarlar.
 
@@ -337,12 +338,12 @@ void SetColorBoxSize(CSize sizeBox);
 
 ### <a name="parameters"></a>Parametreler
 
-*sizeBox*<br/>
-[içinde] Renk paletindeki renk düğmelerinin yeni boyutu.
+*Boyut kutusu*<br/>
+'ndaki Renk paletindeki renk düğmelerinin yeni boyutu.
 
-## <a name="cmfcribboncolorbuttonsetcolorname"></a><a name="setcolorname"></a>CMFCRibbonColorButton::SetColorName
+## <a name="cmfcribboncolorbuttonsetcolorname"></a><a name="setcolorname"></a> CMFCRibbonColorButton:: SetColorName
 
-Belirli bir renk için yeni bir ad ayarlar.
+Belirtilen renk için yeni bir ad ayarlar.
 
 ```
 static void __stdcall SetColorName(
@@ -352,19 +353,19 @@ static void __stdcall SetColorName(
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
-[içinde] Bir rengin RGB değeri.
+*Renk*<br/>
+'ndaki Rengin RGB değeri.
 
 *strName*<br/>
-[içinde] Belirtilen renk için yeni ad.
+'ndaki Belirtilen rengin yeni adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aradığı `CMFCColorBar::SetColorName`için, bu yöntem uygulamanızdaki tüm `CMFCColorBar` nesnelerde belirtilen rengin adını değiştirir.
+Çağırdığı için `CMFCColorBar::SetColorName` , bu yöntem uygulamanızdaki tüm nesnelerde belirtilen rengin adını değiştirir `CMFCColorBar` .
 
-## <a name="cmfcribboncolorbuttonsetcolumns"></a><a name="setcolumns"></a>CMFCRibbonColorButton::SetColumns
+## <a name="cmfcribboncolorbuttonsetcolumns"></a><a name="setcolumns"></a> CMFCRibbonColorButton:: SetColumns
 
-Kullanıcının renk seçimi işlemi sırasında kullanıcıya sunulan renkler tablosunda görüntülenen sütun sayısını ayarlar.
+Kullanıcının renk seçimi sürecinde kullanıcıya sunulan renkler tablosunda görüntülenen sütun sayısını ayarlar.
 
 ```cpp
 void SetColumns(int nColumns);
@@ -372,12 +373,12 @@ void SetColumns(int nColumns);
 
 ### <a name="parameters"></a>Parametreler
 
-*nSütunlar*<br/>
-[içinde] Her satırda görüntülenecek renk simgelerinin sayısı.
+*nColumns*<br/>
+'ndaki Her satırda görüntülenecek renk simgeleri sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribboncolorbuttonsetdocumentcolors"></a><a name="setdocumentcolors"></a>CMFCRibbonColorButton::SetDocumentColors
+## <a name="cmfcribboncolorbuttonsetdocumentcolors"></a><a name="setdocumentcolors"></a> CMFCRibbonColorButton:: SetDocumentColors
 
 Belge renk alanında görüntülenecek RGB değerlerinin listesini belirtir.
 
@@ -389,15 +390,15 @@ void SetDocumentColors(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszEtiket*<br/>
-[içinde] Belge renkleriyle birlikte görüntülenecek metin.
+*lpszLabel*<br/>
+'ndaki Belge renkleriyle görüntülenecek metin.
 
-*lstRenkler*<br/>
-[içinde] RGB değerleri listesine başvuru.
+*lstColors*<br/>
+'ndaki Bir RGB değerleri listesine başvuru.
 
-## <a name="cmfcribboncolorbuttonsetpalette"></a><a name="setpalette"></a>CMFCRibbonColorButton::SetPalette
+## <a name="cmfcribboncolorbuttonsetpalette"></a><a name="setpalette"></a> CMFCRibbonColorButton:: SetPalette
 
-Renk düğmesinin görüntülenebilen renk tablosunda görüntülenecek standart renkleri belirtir.
+Renk düğmesinin görüntülediği renk tablosunda görüntülenecek standart renkleri belirtir.
 
 ```cpp
 void SetPalette(CPalette* pPalette);
@@ -406,13 +407,13 @@ void SetPalette(CPalette* pPalette);
 ### <a name="parameters"></a>Parametreler
 
 *pPalette*<br/>
-[içinde] Renk paletine işaretçi.
+'ndaki Renk paleti işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcribboncolorbuttonupdatecolor"></a><a name="updatecolor"></a>CMFCRibbonColorButton::UpdateColor
+## <a name="cmfcribboncolorbuttonupdatecolor"></a><a name="updatecolor"></a> CMFCRibbonColorButton:: UpdateColor
 
-Kullanıcı renk düğmesini tıklattığında görüntülenen renk tablosundan bir renk seçtiğinde çerçeve tarafından çağrılır.
+Kullanıcı Color düğmesine tıkladığında görünen renk tablosundan bir renk seçtiğinde Framework tarafından çağırılır.
 
 ```cpp
 void UpdateColor(COLORREF color);
@@ -420,15 +421,15 @@ void UpdateColor(COLORREF color);
 
 ### <a name="parameters"></a>Parametreler
 
-*color*<br/>
-[içinde] Kullanıcı tarafından seçilen bir renk.
+*Renk*<br/>
+'ndaki Kullanıcı tarafından seçilen bir renk.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem, `CMFCRibbonColorButton::UpdateColor` seçili düğmenin rengini değiştirir ve BN_CLICKED standart bildirim içeren bir WM_COMMAND iletigöndererek üst öğesini bildirir. Seçili rengi almak için [CMFCRibbonColorButton::GetColor](#getcolor) yöntemini kullanın.
+`CMFCRibbonColorButton::UpdateColor`Yöntemi şu anda seçili olan düğmenin rengini değiştirir ve BN_CLICKED standart bildirimiyle WM_COMMAND bir ileti göndererek üst öğesine bildirir. Seçili rengi almak için [CMFCRibbonColorButton:: GetColor](#getcolor) metodunu kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCRibbonGallery Sınıfı](../../mfc/reference/cmfcribbongallery-class.md)
+[CMFCRibbonGallery sınıfı](../../mfc/reference/cmfcribbongallery-class.md)

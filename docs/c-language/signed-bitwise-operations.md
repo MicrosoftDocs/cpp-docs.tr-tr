@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Imzalı bit düzeyinde Işlemler'
 title: İmzalı Bit Düzeyinde İşlemler
 ms.date: 11/04/2016
 helpviewer_keywords:
 - bitwise operations
 - signed bitwise operations
 ms.assetid: 1e5cf65b-ee32-41a0-a5c2-82c1854091f6
-ms.openlocfilehash: 43f65fd5d1ea14ef5e15f18d9c8516ccf5fb1e08
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 98cca4d7450e0b65301ba3d2ad65f0cb3aca81ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158325"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292656"
 ---
 # <a name="signed-bitwise-operations"></a>İmzalı Bit Düzeyinde İşlemler
 

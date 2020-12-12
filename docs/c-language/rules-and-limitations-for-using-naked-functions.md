@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: çıplak Işlevleri kullanma kuralları ve sınırlamaları'
 title: Naked İşlevlerini Kullanmak için Kurallar ve Sınırlamalar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - naked functions
 ms.assetid: fdcb82b9-8ae1-489c-a248-1b477220df0a
-ms.openlocfilehash: bb0b78fec112c9161f21ffa829fa6ef933dbe370
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3cfa3f13406ff0b02cb05b5a93c011c4166be1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62158504"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292864"
 ---
 # <a name="rules-and-limitations-for-using-naked-functions"></a>Naked İşlevlerini Kullanmak için Kurallar ve Sınırlamalar
 
@@ -17,4 +18,4 @@ ms.locfileid: "62158504"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Naked İşlevleri](../c-language/naked-functions.md)
+[Naked Işlevleri](../c-language/naked-functions.md)

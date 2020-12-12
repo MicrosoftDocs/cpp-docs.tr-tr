@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. dllimport/dllexport için kurallar ve sınırlamalar
 title: Dllimport-dllexport için kurallar ve sınırlamalar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dllimport attribute [C++], limitations and rules
 - dllexport attribute [C++]
 ms.assetid: 274b735f-ab9c-4b07-8d0e-fdb65d664634
-ms.openlocfilehash: c2f121d978962fe7fc03aa453fb0a16650aa2727
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6d7de92b7d58eacc9334859a865e0e1456fffcb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220879"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292890"
 ---
 # <a name="rules-and-limitations-for-dllimportdllexport"></a>dllimport/dllexport için Kurallar ve Sınırlamalar
 
@@ -19,7 +20,7 @@ ms.locfileid: "87220879"
 
 - Or özniteliği olmadan bir işlev bildirirseniz **`dllimport`** `dllexport` , işlev dll arabiriminin bir parçası olarak kabul edilmez. Bu nedenle, işlevin tanımı bu modülde veya aynı programın başka bir modülünde mevcut olmalıdır. İşlevi DLL arabiriminin bir parçası yapmak için, diğer modüldeki işlevin tanımını olarak bildirmeniz gerekir `dllexport` . Aksi halde, istemci oluşturulduğunda bir bağlayıcı hatası oluşturulur.
 
-- Programınızdaki tek bir modül **`dllimport`** `dllexport` aynı işlev için ve bildirim içeriyorsa, özniteliği `dllexport` özniteliği üzerinde önceliklidir **`dllimport`** . Ancak, bir derleyici uyarısı oluşturulur. Örnek:
+- Programınızdaki tek bir modül **`dllimport`** `dllexport` aynı işlev için ve bildirim içeriyorsa, özniteliği `dllexport` özniteliği üzerinde önceliklidir **`dllimport`** . Ancak, bir derleyici uyarısı oluşturulur. Örneğin:
 
     ```
     #define DllImport   __declspec( dllimport )
@@ -69,7 +70,7 @@ ms.locfileid: "87220879"
 
     ```
 
-- `dllexport`Bir nesnenin bildiriminde özniteliği içeren bir program, bu nesnenin tanımını sağlaması gerektiğinden, bir işlev adresiyle genel veya yerel bir statik işlev işaretçisi başlatabilirsiniz `dllexport` . Benzer şekilde, bir veri nesnesinin adresiyle genel veya yerel bir statik veri işaretçisi başlatabilirsiniz `dllexport` . Örnek:
+- `dllexport`Bir nesnenin bildiriminde özniteliği içeren bir program, bu nesnenin tanımını sağlaması gerektiğinden, bir işlev adresiyle genel veya yerel bir statik işlev işaretçisi başlatabilirsiniz `dllexport` . Benzer şekilde, bir veri nesnesinin adresiyle genel veya yerel bir statik veri işaretçisi başlatabilirsiniz `dllexport` . Örneğin:
 
     ```
     #define DllImport   __declspec( dllimport )
