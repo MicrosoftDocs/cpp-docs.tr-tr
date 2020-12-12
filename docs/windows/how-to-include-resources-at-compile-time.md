@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: derleme zamanında kaynakları dahil etme (C++)'
 title: 'Nasıl yapılır: derleme zamanında kaynakları dahil etme (C++)'
 ms.date: 02/14/2019
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - symbols [C++], finding
 - resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-ms.openlocfilehash: 5ac4cba4e8ad8a08fa1010758c5a343501d3af2c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 18c391351c3a97a8adbbd79691f9c0e3ec07abae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329359"
 ---
 # <a name="how-to-include-resources-at-compile-time-c"></a>Nasıl yapılır: derleme zamanında kaynakları dahil etme (C++)
 
@@ -63,7 +64,7 @@ Kaynak dosya **eklemeleri** iletişim kutusu kullanılarak kaynak dosyanızda de
 
 ### <a name="to-include-resources-in-your-project-at-compile-time"></a>Derleme zamanında projenize kaynak eklemek için
 
-1. Kaynakları, benzersiz bir dosya adına sahip bir kaynak betik dosyasına yerleştirin. Asıl kaynak betik dosyası için kullanılan dosyanın adı olduğundan, *ProjectName. RC*kullanmayın.
+1. Kaynakları, benzersiz bir dosya adına sahip bir kaynak betik dosyasına yerleştirin. Asıl kaynak betik dosyası için kullanılan dosyanın adı olduğundan, *ProjectName. RC* kullanmayın.
 
 1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources) *. RC* dosyasına sağ tıklayın ve **kaynak içerme**' yi seçin.
 
@@ -82,7 +83,7 @@ Bu şekilde, dosyalardaki kaynaklar yalnızca derleme sırasında yürütülebil
 1. Menü **Düzenle**  >  [bul simgesine](/visualstudio/ide/go-to)git.
 
    > [!TIP]
-   > Aramadaki [Normal ifadeleri](/visualstudio/ide/using-regular-expressions-in-visual-studio) kullanmak Için, **bul simgesi**yerine **Düzenle** menüsünde [dosyalarda bul](/visualstudio/ide/reference/find-command) ' u seçin. [Bul iletişim kutusunda](/visualstudio/ide/finding-and-replacing-text) **: normal ifadeler** **onay kutusunu seçin ve Aranan kutusunda,** açılan listeden bir normal arama ifadesi seçebilirsiniz. Bu listeden bir ifade seçtiğinizde, **Aranan kutusunda arama** metni olarak değiştirilir.
+   > Aramadaki [Normal ifadeleri](/visualstudio/ide/using-regular-expressions-in-visual-studio) kullanmak Için, **bul simgesi** yerine **Düzenle** menüsünde [dosyalarda bul](/visualstudio/ide/reference/find-command) ' u seçin. [Bul iletişim kutusunda](/visualstudio/ide/finding-and-replacing-text) **: normal ifadeler** **onay kutusunu seçin ve Aranan kutusunda,** açılan listeden bir normal arama ifadesi seçebilirsiniz. Bu listeden bir ifade seçtiğinizde, **Aranan kutusunda arama** metni olarak değiştirilir.
 
 1. **Aranan kutusunda,** açılan listeden önceki bir arama dizesini seçin veya bulmak istediğiniz Hızlandırıcı anahtarını yazın, örneğin, `ID_ACCEL1` .
 

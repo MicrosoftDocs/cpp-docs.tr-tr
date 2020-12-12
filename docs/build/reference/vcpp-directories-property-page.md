@@ -1,4 +1,5 @@
 ---
+description: ': VC + + dizinleri Özellik sayfası (Windows) hakkında daha fazla bilgi'
 title: VC++ Dizinleri Özellik Sayfası
 ms.date: 07/17/2019
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-ms.openlocfilehash: 39362deaa770b39eea964f1e4e58186dd5923b7f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6d5b30e635003aa4db35e3aef9e1a32f8fa3176c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846036"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247143"
 ---
 # <a name="vc-directories-property-page-windows"></a>VC + + dizinleri Özellik sayfası (Windows)
 
@@ -32,7 +33,7 @@ Bu sayfanın Linux sürümü için bkz. [VC + + dizinleri (Linux C++)](../../lin
 1. Proje düğümüne (en üst düzey çözümü değil) sağ tıklayın ve **Özellikler**' i seçin.
 1. **Özellik sayfaları** iletişim kutusunun sol bölmesinde **yapılandırma özellikleri**  >  **VC + + dizinleri**' ni seçin.
 
-VC + + dizinleri özellikleri, en üst düzey çözüm düğümüne değil, bir proje için geçerlidir. **Yapılandırma özellikleri**altında **VC + + dizinleri** ' ni görmüyorsanız, **Çözüm Gezgini** penceresinde bir C++ proje düğümü seçin:
+VC + + dizinleri özellikleri, en üst düzey çözüm düğümüne değil, bir proje için geçerlidir. **Yapılandırma özellikleri** altında **VC + + dizinleri** ' ni görmüyorsanız, **Çözüm Gezgini** penceresinde bir C++ proje düğümü seçin:
 
 ![Proje düğümünü seçin](../media/vcppdir.png "VC + + dizinleri özelliklerini görmek için proje düğümünü seçin")
 
@@ -62,7 +63,7 @@ Düzenleme kutusunda kısmi veya tamamlanmış eşleşmelerin aranmasını sağl
 
 ![Makro değerlerini gör](../media/vcppdir_libdir_macros.png "Makroları düzenlemek için iletişim kutusu")
 
-Note: liste siz yazarken doldurulur. **ENTER**tuşuna basmayın.
+Note: liste siz yazarken doldurulur. **ENTER** tuşuna basmayın.
 
 Makrolar hakkında daha fazla bilgi edinmek ve mümkün olan her durumda sabit kodlanmış yollar yerine bunları nasıl kullanmanız gerektiği hakkında daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisi ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 

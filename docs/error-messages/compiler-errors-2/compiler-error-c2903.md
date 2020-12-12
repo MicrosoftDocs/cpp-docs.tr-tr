@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2903'
 title: Derleyici hatası C2903
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2903
 ms.assetid: bf6b223f-4921-48c7-82b9-ff318b42c801
-ms.openlocfilehash: df097cf38fea47702b639b44fd2f2ac3341df2ba
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0013be28857ac8e138a78cb7a4e3502cdc04536b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74735911"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270738"
 ---
 # <a name="compiler-error-c2903"></a>Derleyici hatası C2903
 

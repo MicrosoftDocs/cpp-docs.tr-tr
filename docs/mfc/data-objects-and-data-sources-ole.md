@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: veri nesneleri ve veri kaynakları (OLE)'
 title: Veri Nesneleri ve Veri Kaynakları (OLE)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - OLE [MFC], data objects
 - OLE [MFC], data sources
 ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
-ms.openlocfilehash: dfe400dddfecce3e52337f7f449e975dff2ca83e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 719053e2a75b18fbf54440403351198acc66b9d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616216"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291213"
 ---
 # <a name="data-objects-and-data-sources-ole"></a>Veri Nesneleri ve Veri Kaynakları (OLE)
 
@@ -27,9 +28,9 @@ Bir veri aktarımı gerçekleştirdiğinizde, pano veya sürükleyip bırakma ar
 
 Aşağıdaki makalelerde, uygulamalarınızda veri nesnelerinin ve veri kaynaklarının nasıl kullanılacağı açıklanmaktadır. Bu bilgiler hem kapsayıcı hem de sunucu uygulamaları için geçerlidir, çünkü verileri kopyalamak ve yapıştırmak için her ikisi de çağrılabilir.
 
-- [Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme](data-objects-and-data-sources-creation-and-destruction.md)
+- [Veri nesneleri ve veri kaynakları: oluşturma ve yok etme](data-objects-and-data-sources-creation-and-destruction.md)
 
-- [Veri Nesneleri ve Veri Kaynakları: Düzenleme](data-objects-and-data-sources-manipulation.md)
+- [Veri nesneleri ve veri kaynakları: düzenleme](data-objects-and-data-sources-manipulation.md)
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

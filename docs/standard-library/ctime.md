@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; CTime&gt;'
 title: '&lt;CTime&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - ctime header
 ms.assetid: c1f7d4a4-4bfe-4e35-92cb-f63dbd3c39a8
-ms.openlocfilehash: 2b3f31ba48ca831b2d2d8cd460b60549c4debe83
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 68b165c2abeee91b9880e91f8cf67750e7a2a5e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233155"
 ---
 # <a name="ltctimegt"></a>&lt;CTime&gt;
 
-Standart C Kitaplığı üst bilgisini \<Time. h > içerir ve ilişkili adları `std` ad alanına ekler.
+Standart C Kitaplığı üst bilgisini içerir \<time.h> ve ilgili adları `std` ad alanına ekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <ctime>
@@ -67,5 +68,5 @@ size_t strftime(char* s, size_t maxsize, const char* format, const struct tm* ti
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-Standart kitaplığa genel bakış\ [ C++ ](../standard-library/cpp-standard-library-overview.md)
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

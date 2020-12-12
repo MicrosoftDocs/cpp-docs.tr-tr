@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: veri nesneleri ve veri kaynakları: düzenleme'
 title: 'Veri Nesneleri ve Veri Kaynakları: Düzenleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - delayed rendering [MFC]
 - OLE [MFC], data sources
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
-ms.openlocfilehash: f1a83511edbf240d9a05d6d489f6cda9453ccea9
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a9611fefc94e8437f9e0e5361e0d95972f867984
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620410"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291239"
 ---
 # <a name="data-objects-and-data-sources-manipulation"></a>Veri Nesneleri ve Veri Kaynakları: Düzenleme
 
@@ -29,7 +30,7 @@ Bir veri nesnesi veya veri kaynağı oluşturulduktan sonra, veriler üzerinde v
 
 - [Veri nesnesinden veri alma](#_core_retrieving_data_from_a_data_object)
 
-## <a name="inserting-data-into-a-data-source"></a><a name="_core_inserting_data_into_a_data_source"></a>Veri kaynağına veri ekleme
+## <a name="inserting-data-into-a-data-source"></a><a name="_core_inserting_data_into_a_data_source"></a> Veri kaynağına veri ekleme
 
 Verilerin bir veri kaynağına nasıl eklendiği, verilerin anında veya isteğe bağlı olarak verilip verilmeyeceğini ve hangi medyada sağlandığına bağlıdır. Olanaklar aşağıda verilmiştir.
 
@@ -51,7 +52,7 @@ Bu, gelişmiş bir konudur.
 
 - `CFile`Verileri sağlamak için bir nesnesi kullanırsanız, `COleDataSource::DelayRenderFileData` `COleDataSource::DelayRenderData` önceki seçeneğinde yerine çağırın. Veriler istendiğinde, çerçeve, `COleDataSource::OnRenderFileData` geçersiz kılmanız gereken öğesini çağırır.
 
-## <a name="determining-the-formats-available-in-a-data-object"></a><a name="_core_determining_the_formats_available_in_a_data_object"></a>Veri nesnesinde kullanılabilen biçimleri belirleme
+## <a name="determining-the-formats-available-in-a-data-object"></a><a name="_core_determining_the_formats_available_in_a_data_object"></a> Veri nesnesinde kullanılabilen biçimleri belirleme
 
 Bir uygulama, kullanıcının içine veri yapıştırmasına izin vermeden önce, panoda işleyebileceği bir biçim olup olmadığını bilmesi gerekir. Bunu yapmak için uygulamanızın aşağıdakileri yapması gerekir:
 
@@ -67,9 +68,9 @@ Bir uygulama, kullanıcının içine veri yapıştırmasına izin vermeden önce
 
    - `BeginEnumFormats`Panoda bulunan biçimleri listeme başlamak için veri nesnesinin üye işlevini çağırın. Ardından `GetNextFormat` , pano uygulamanızın desteklediği bir biçim döndürdüğünden veya başka biçim kalmadığında çağırın.
 
-**ON_UPDATE_COMMAND_UI**kullanıyorsanız, şimdi Yapıştır ' ı ve büyük olasılıkla özel öğeleri Yapıştır ' ı etkinleştirerek düzenleme menüsünü etkinleştirebilirsiniz. Bunu yapmak için ya da ' i çağırın `CMenu::EnableMenuItem` `CCmdUI::Enable` . Hangi kapsayıcı uygulamalarının menü öğeleri ve ne zaman yapması gerektiği hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: kapsayıcı eklemeleri](menus-and-resources-container-additions.md).
+**ON_UPDATE_COMMAND_UI** kullanıyorsanız, şimdi Yapıştır ' ı ve büyük olasılıkla özel öğeleri Yapıştır ' ı etkinleştirerek düzenleme menüsünü etkinleştirebilirsiniz. Bunu yapmak için ya da ' i çağırın `CMenu::EnableMenuItem` `CCmdUI::Enable` . Hangi kapsayıcı uygulamalarının menü öğeleri ve ne zaman yapması gerektiği hakkında daha fazla bilgi için bkz. [menüler ve kaynaklar: kapsayıcı eklemeleri](menus-and-resources-container-additions.md).
 
-## <a name="retrieving-data-from-a-data-object"></a><a name="_core_retrieving_data_from_a_data_object"></a>Veri nesnesinden veri alma
+## <a name="retrieving-data-from-a-data-object"></a><a name="_core_retrieving_data_from_a_data_object"></a> Veri nesnesinden veri alma
 
 Bir veri biçimi üzerinde karar verdikten sonra, veri nesnesinden verilerin alınması, tüm kalmaya devam eder. Bunu yapmak için Kullanıcı, verileri nereye koyacağına karar verir ve uygulama uygun işlevi çağırır. Veriler aşağıdaki ortaorelerin birinde kullanılabilir olacaktır:
 
@@ -93,6 +94,6 @@ Kullanıcı artık aynı biçimdeki diğer veriler için olduğu gibi belgeye ve
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Nesneleri ve Veri Kaynakları (OLE)](data-objects-and-data-sources-ole.md)<br/>
+[Veri nesneleri ve veri kaynakları (OLE)](data-objects-and-data-sources-ole.md)<br/>
 [Cotadataobject sınıfı](reference/coledataobject-class.md)<br/>
 [Cotadatasource sınıfı](reference/coledatasource-class.md)

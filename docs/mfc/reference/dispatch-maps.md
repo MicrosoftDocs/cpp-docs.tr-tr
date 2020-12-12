@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dağıtım haritaları'
 title: Eşlemeleri Dağıtma
 ms.date: 06/20/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dispatch maps [MFC]
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-ms.openlocfilehash: 24921f2da404a2e5103d9a3cd2abba03109f0681
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3b160040af52e8346cbcbb09cc05c301f607052b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222816"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219973"
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 
@@ -29,7 +30,7 @@ OLE Otomasyonu yöntemleri çağırmak ve uygulamalar arasında özelliklere eri
 |[DISP_PROPERTY_PARAM](#disp_property_param)|Parametreleri alan ve Get ve set işlevlerini isimuygulayan bir OLE Otomasyonu özelliği tanımlar.|
 |[DISP_DEFVALUE](#disp_defvalue)|Varolan bir özelliği bir nesnenin varsayılan değeri yapar.|
 
-## <a name="declare_dispatch_map"></a><a name="declare_dispatch_map"></a>DECLARE_DISPATCH_MAP
+## <a name="declare_dispatch_map"></a><a name="declare_dispatch_map"></a> DECLARE_DISPATCH_MAP
 
 `CCmdTarget`Programınızda türetilmiş bir sınıf OLE Otomasyonu destekliyorsa, bu sınıf, yöntemlerini ve özelliklerini sunmak için bir dağıtım Haritası sağlamalıdır.
 
@@ -54,7 +55,7 @@ Uygulama Sihirbazı ve kod sihirbazları, Otomasyon sınıfları oluşturmaya ve
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="begin_dispatch_map"></a><a name="begin_dispatch_map"></a>BEGIN_DISPATCH_MAP
+## <a name="begin_dispatch_map"></a><a name="begin_dispatch_map"></a> BEGIN_DISPATCH_MAP
 
 Dağıtım haritaınızın tanımını bildirir.
 
@@ -78,7 +79,7 @@ Sınıfınız için üye işlevlerini tanımlayan uygulama (. cpp) dosyasında, 
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="end_dispatch_map"></a><a name="end_dispatch_map"></a>END_DISPATCH_MAP
+## <a name="end_dispatch_map"></a><a name="end_dispatch_map"></a> END_DISPATCH_MAP
 
 Dağıtım haritaınızın tanımını sonlandırır.
 
@@ -94,7 +95,7 @@ BEGIN_DISPATCH_MAP ile birlikte kullanılması gerekir.
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="disp_function"></a><a name="disp_function"></a>DISP_FUNCTION
+## <a name="disp_function"></a><a name="disp_function"></a> DISP_FUNCTION
 
 Bir dağıtım haritasında OLE Otomasyonu işlevini tanımlar.
 
@@ -169,7 +170,7 @@ kısa bir tamsayı içeren bir liste ve ardından kısa bir tamsayıya yönelik 
 |VTS_PI2|__kısadır\*__|
 |VTS_PI4|__long\*__|
 |VTS_PR4|__float\*__|
-|VTS_PR8|__Çift\*__|
+|VTS_PR8|__double\*__|
 |VTS_PCY|`CY*`|
 |VTS_PDATE|`DATE*`|
 |VTS_PBSTR|`BSTR*`|
@@ -184,7 +185,7 @@ kısa bir tamsayı içeren bir liste ve ardından kısa bir tamsayıya yönelik 
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="disp_property"></a><a name="disp_property"></a>DISP_PROPERTY
+## <a name="disp_property"></a><a name="disp_property"></a> DISP_PROPERTY
 
 Bir dağıtım haritasında OLE Otomasyonu özelliğini tanımlar.
 
@@ -212,7 +213,7 @@ Sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtPropType* bağımsız değişkeni **VarType**türünde. Bu bağımsız değişken için olası değerler, VARENUM numaralandırmasından alınır:
+*VtPropType* bağımsız değişkeni **VarType** türünde. Bu bağımsız değişken için olası değerler, VARENUM numaralandırmasından alınır:
 
 |Sembol|Özellik türü|
 |------------|-----------------------|
@@ -235,7 +236,7 @@ Bir dış istemci özelliğini değiştirdiğinde, *Üyei* değişiklikleri tara
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="disp_property_ex"></a><a name="disp_property_ex"></a>DISP_PROPERTY_EX
+## <a name="disp_property_ex"></a><a name="disp_property_ex"></a> DISP_PROPERTY_EX
 
 Bir OLE Otomasyonu özelliği tanımlar ve bir dağıtım eşlemesindeki özelliğin değerini almak ve ayarlamak için kullanılan işlevleri adlandırın.
 
@@ -267,7 +268,7 @@ Sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*MemberGet* ve *memberSet* Işlevlerinin, *vtPropType* bağımsız değişkeni tarafından belirlenen imzaları vardır. *MemberGet* işlevi bağımsız değişken almaz ve *vtPropType*tarafından belirtilen türde bir değer döndürür. *MemberSet* Işlevi, *vtPropType* tarafından belirtilen türde bir bağımsız değişken alır ve hiçbir şey döndürmez.
+*MemberGet* ve *memberSet* Işlevlerinin, *vtPropType* bağımsız değişkeni tarafından belirlenen imzaları vardır. *MemberGet* işlevi bağımsız değişken almaz ve *vtPropType* tarafından belirtilen türde bir değer döndürür. *MemberSet* Işlevi, *vtPropType* tarafından belirtilen türde bir bağımsız değişken alır ve hiçbir şey döndürmez.
 
 *VtPropType* BAĞıMSıZ değişkeni VarType türünde. Bu bağımsız değişken için olası değerler, VARENUM numaralandırmasından alınır. Bu değerlerin bir listesi için [DISP_FUNCTION](#disp_function) *vtRetVal* parametresinin açıklamalarını inceleyin. DISP_FUNCTION açıklamalarında listelenen VT_EMPTY, özellik veri türü olarak izin verilmediğini unutmayın.
 
@@ -275,7 +276,7 @@ Sınıfın adı.
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="disp_property_notify"></a><a name="disp_property_notify"></a>DISP_PROPERTY_NOTIFY
+## <a name="disp_property_notify"></a><a name="disp_property_notify"></a> DISP_PROPERTY_NOTIFY
 
 Bir dağıtım eşlemesinde bildirimi olan bir OLE Otomasyonu özelliği tanımlar.
 
@@ -300,7 +301,7 @@ Sınıfın adı.
 Özelliğin depolandığı üye değişkeninin adı.
 
 *pfnAfterSet*<br/>
-*SzExternalName*için bildirim işlevinin adı.
+*SzExternalName* için bildirim işlevinin adı.
 
 *vtPropType*<br/>
 Özelliğin türünü belirten bir değer.
@@ -330,7 +331,7 @@ DISP_PROPERTY ile tanımlanan özelliklerden farklı olarak, DISP_PROPERTY_NOTIF
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="disp_property_param"></a><a name="disp_property_param"></a>DISP_PROPERTY_PARAM
+## <a name="disp_property_param"></a><a name="disp_property_param"></a> DISP_PROPERTY_PARAM
 
 Ayrı `Get` ve üye işlevlerle erişilen bir özelliği tanımlar `Set` .
 
@@ -390,7 +391,7 @@ Bunlar, denetim dağıtım eşlemesindeki şu DISP_PROPERTY_PARAM makroya karş�
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="disp_defvalue"></a><a name="disp_defvalue"></a>DISP_DEFVALUE
+## <a name="disp_defvalue"></a><a name="disp_defvalue"></a> DISP_DEFVALUE
 
 Varolan bir özelliği bir nesnenin varsayılan değeri yapar.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kullanıma göre öznitelikler'
 title: Kullanıma Göre Öznitelikler
 ms.custom: index-page
 ms.date: 10/02/2018
@@ -6,80 +7,80 @@ ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI]
 ms.assetid: 8be2de10-b1ff-4ca4-a114-75318408593c
-ms.openlocfilehash: dcbed019f8cd08ddbf4ab6b4756a59f7fcbabc4b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7f199ec1ede4cbaeddd46518f29a4b73edb40547
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81361329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247546"
 ---
 # <a name="attributes-by-usage"></a>Kullanıma Göre Öznitelikler
 
-Bu konu, öznitelikleri uyguladıkları C++ dil öğelerine göre listeler.
+Bu konu, özniteliklerini, uygulandıkları C++ dil öğelerine göre listeler.
 
-Bir öznitelik öznitelik kapsamında olmayan bir öğe önce ise, öznitelik bloğu bir açıklama olarak kabul edilir.
+Öznitelik, özniteliğin kapsamında olmayan bir öğeden önce geliyorsa öznitelik bloğu bir açıklama olarak değerlendirilir.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|[Modül Öznitelikleri](module-attributes.md)|[Modül](module-cpp.md) özniteliği için geçerlidir.|
-|[Arabirim Öznitelikleri](interface-attributes.md)|[C++](../../cpp/interface.md) anahtar __interface için geçerlidir.|
-|[Sınıf Öznitelikleri](class-attributes.md)|C++ anahtar kelimesi için geçerlidir.|
-|[Yöntem Öznitelikleri](method-attributes.md)|Bir sınıf, ortak sınıf veya arabirimdeki yöntemler için geçerlidir.|
-|[Parametre Öznitelikleri](parameter-attributes.md)|Bir sınıf veya arabirimdeki bir yöntemin parametreleri için geçerlidir.|
-|[Veri Üye Öznitelikleri](data-member-attributes.md)|Bir sınıfta, ortak sınıftaki veya arabirimdeki veri üyeleri için geçerlidir.|
-|[Typedef, Enum, Union ve Struct Öznitelikleri](typedef-enum-union-and-struct-attributes.md)|C++ anahtar kelimeleri için geçerlidir.|
-|[Dizi Öznitelikleri](array-attributes.md)|Diziler veya `SAFEARRAY`s için geçerlidir.|
-|[Tek Başına Öznitelikler](stand-alone-attributes.md)|Daha çok bir kod satırı gibi çalışır, ancak C++ anahtar sözcüğüüzerinde çalışmaz. Tek başına öznitelik deyimleri satırın sonunda bir yarı nokta üzerinde nokta gerektirir.|
-|[Özel Öznitelikler](custom-attributes-cpp.md)|Kullanıcının meta verileri genişletmesine olanak tanır.|
+|[Modül öznitelikleri](module-attributes.md)|[Modül](module-cpp.md) özniteliği için geçerlidir.|
+|[Arabirim öznitelikleri](interface-attributes.md)|[__İnterface](../../cpp/interface.md) C++ anahtar sözcüğü için geçerlidir.|
+|[Sınıf öznitelikleri](class-attributes.md)|C++ anahtar sözcüğü için geçerlidir.|
+|[Yöntem öznitelikleri](method-attributes.md)|Bir sınıf, coclass veya arabirimdeki yöntemler için geçerlidir.|
+|[Parametre öznitelikleri](parameter-attributes.md)|Bir sınıftaki veya arabirimdeki bir yöntemin parametreleri için geçerlidir.|
+|[Veri üyesi öznitelikleri](data-member-attributes.md)|Bir sınıf, coclass veya arabirimdeki veri üyeleri için geçerlidir.|
+|[TypeDef, Enum, Union ve struct öznitelikleri](typedef-enum-union-and-struct-attributes.md)|C++ anahtar sözcükleri için geçerlidir.|
+|[Dizi öznitelikleri](array-attributes.md)|Diziler veya s için geçerlidir `SAFEARRAY` .|
+|[Tek başına öznitelikler](stand-alone-attributes.md)|Bir kod satırı gibi çalışır, ancak bir C++ anahtar sözcüğü üzerinde çalışmaz. Tek başına öznitelik deyimleri satırın sonunda noktalı virgül gerektirir.|
+|[Özel öznitelikler](custom-attributes-cpp.md)|Kullanıcının meta verileri genişlemesine izin verir.|
 
 ## <a name="module-attributes"></a>Modül Öznitelikleri
 
-Aşağıdaki öznitelik yalnızca [modül](module-cpp.md) özniteliğine uygulanabilir.
+Aşağıdaki öznitelik yalnızca [module](module-cpp.md) özniteliğine uygulanabilir.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|[helpstringdll](helpstringdll.md)|Belge dizesi aramasını (yerelleştirme) gerçekleştirmek için kullanılacak DLL'nin adını belirtir.|
+|[helpstringdll](helpstringdll.md)|Belge dizesi aramasını (Yerelleştirme) gerçekleştirmek için kullanılacak DLL 'in adını belirtir.|
 
 ## <a name="interface-attributes"></a>Arabirim Öznitelikleri
 
-Aşağıdaki öznitelikler [arabirim (veya __interface)](../../cpp/interface.md) C++ anahtar kelimesi için geçerlidir.
+Aşağıdaki öznitelikler [Arabirim (veya __interface)](../../cpp/interface.md) C++ anahtar sözcüğü için geçerlidir.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|[async_uuid](async-uuid.md)|BIR COM arabiriminin hem senkron hem de eşzamanlı sürümlerini tanımlamak için MIDL derleyicisini yönlendiren UUID'yi belirtir.|
-|[Özel](custom-cpp.md)|Kendi özniteliklerinizi tanımlamanızı sağlar.|
-|[dispinterface](dispinterface.md)|.idl dosyasına bir arabirim gönderir.|
-|[dual](dual.md)|.idl dosyasına bir arabirim ilerler.|
-|[Ihracat](export.md)|Bir veri yapısının .idl dosyasına yerleştirilmesine neden olur.|
-|[helpcontext](helpcontext.md)|Kullanıcının Yardım dosyasındaki bu öğe hakkındaki bilgileri görüntülemesini sağlayan bir bağlam kimliği belirtir.|
-|[helpfile](helpfile.md)|Tür kitaplığı için Yardım dosyasının adını ayarlar.|
-|[helpstring](helpstring.md)|Uygulandığı öğeyi açıklamak için kullanılan bir karakter dizesini belirtir.|
-|[helpstringcontext](helpstringcontext.md)|Bir .hlp veya .chm dosyasında bir yardım konusunun kimliğini belirtir.|
-|[helpstringdll](helpstringdll.md)|Belge dizesi aramasını (yerelleştirme) gerçekleştirmek için kullanılacak DLL'nin adını belirtir.|
-|[Gizli](hidden.md)|Öğenin var olduğunu, ancak kullanıcı yönelimli bir tarayıcıda görüntülenmemesi gerektiğini gösterir.|
-|[library_block](library-block.md)|.idl dosyasının kitaplık bloğunun içine bir yapı yerleştirir.|
-|[Yerel](local-cpp.md)|Arabirim üstbilgisinde kullanıldığında MIDL derleyicisini üstbilgi üreteci olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, saplama nın oluşturulmamasA için yerel bir yordam belirtir.|
-|[nonextensible](nonextensible.md)|Uygulamanın `IDispatch` yalnızca arabirim açıklamasında listelenen özellikleri ve yöntemleri içerdiğini ve çalışma zamanında ek üyelerle genişletilemeyeceğini belirtir. Bu öznitelik yalnızca [çift](dual.md) arabirimde geçerlidir.|
-|[odl](odl.md)|Arabirimi Nesne Açıklama Dili (ODL) arabirimi olarak tanımlar.|
-|[Nesne](object-cpp.md)|Özel bir arabirim tanımlar.|
+|[async_uuid](async-uuid.md)|Bir COM arabiriminin hem zaman uyumlu hem de zaman uyumsuz sürümlerini tanımlamak için MıDL derleyicisini yönlendiren UUID 'yi belirtir.|
+|[Özel](custom-cpp.md)|Kendi öznitelerinizi tanımlamanıza olanak sağlar.|
+|[dispinterface](dispinterface.md)|Bir arabirimi. IDL dosyasına bir dağıtım arabirimi olarak koyar.|
+|[Çift](dual.md)|. IDL dosyasına bir arabirimi çift arabirim olarak koyar.|
+|[işlemi](export.md)|Veri yapısının. IDL dosyasına yerleştirilmesine neden olur.|
+|[helpcontext](helpcontext.md)|Kullanıcının Yardım dosyasında bu öğeyle ilgili bilgileri görüntülemesine imkan tanıyan bir bağlam KIMLIĞI belirtir.|
+|[helpfile](helpfile.md)|Bir tür kitaplığı için yardım dosyasının adını ayarlar.|
+|[helpstring](helpstring.md)|Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir.|
+|[helpstringcontext](helpstringcontext.md)|Bir. hlp veya. chm dosyasındaki Yardım konusunun KIMLIĞINI belirtir.|
+|[helpstringdll](helpstringdll.md)|Belge dizesi aramasını (Yerelleştirme) gerçekleştirmek için kullanılacak DLL 'in adını belirtir.|
+|[Lene](hidden.md)|Öğenin var olduğunu ancak kullanıcıya dayalı bir tarayıcıda gösterilmemelidir.|
+|[library_block](library-block.md)|. IDL dosyasının Kitaplık bloğunun içine bir yapı koyar.|
+|[Yerel](local-cpp.md)|Arabirim üstbilgisinde kullanıldığında MıDL derleyicisini üst bilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saplamalar üretilmeden önce bir yerel yordam belirler.|
+|[nonextensible](nonextensible.md)|`IDispatch`Uygulamanın yalnızca arabirim açıklamasında listelenen özellikleri ve yöntemleri içerdiğini belirtir ve çalışma zamanında ek üyelerle birlikte genişletilemez. Bu öznitelik yalnızca [ikili](dual.md) bir arabirimde geçerlidir.|
+|[odl](odl.md)|Bir arabirimi nesne Açıklama Dili (ODL) arabirimi olarak tanımlar.|
+|[object](object-cpp.md)|Özel bir arabirim tanımlar.|
 |[oleautomation](oleautomation.md)|Bir arabirimin Otomasyon ile uyumlu olduğunu gösterir.|
-|[pointer_default](pointer-default.md)|Parametre listelerinde görünen üst düzey işaretçiler dışında tüm işaretçiler için varsayılan işaretçi özniteliğini belirtir.|
-|[Ptr](ptr.md)|İşaretçiyi tam işaretçi olarak belirtir.|
-|[kısıtlı](restricted.md)|Kitaplığın hangi üyelerinin rasgele çağrılamayacağını belirtir.|
-|[uuid](uuid-cpp-attributes.md)|Kitaplık için benzersiz kimliği sağlar|
+|[pointer_default](pointer-default.md)|Parametre listelerinde görünen en üst düzey işaretçiler hariç tüm işaretçiler için varsayılan işaretçi özniteliğini belirtir.|
+|[ptr](ptr.md)|Bir işaretçiyi tam bir işaretçi olarak belirler.|
+|[dığından](restricted.md)|Kitaplığın hangi üyelerinin rastgele çağrlamayacağını belirtir.|
+|[uuid](uuid-cpp-attributes.md)|Kitaplığın benzersiz KIMLIĞINI sağlar|
 
-Arabirimi tanımlamak için aşağıdaki kurallara uymanız gerekir:
+Bir arabirim tanımlamak için bu kuralları gözlemleyebilirsiniz:
 
-- Varsayılan arama kuralı [__stdcall.](../../cpp/stdcall.md)
+- Varsayılan çağırma kuralı [__stdcall](../../cpp/stdcall.md).
 
-- Bir guid tedarik etmezseniz sizin için verilir.
+- Bir GUID sağlamadıysanız sizin için bir GUID sağlanır.
 
 - Aşırı yüklenmiş yöntemlere izin verilmez.
 
-[Uuid](uuid-cpp-attributes.md) özniteliği belirtilmediğinde ve farklı öznitelik projelerinde aynı arabirim adı kullanılmadığında, aynı GUID oluşturulur.
+[UUID](uuid-cpp-attributes.md) özniteliğini belirtmemiş ve farklı öznitelik projelerinde aynı arabirim adını KULLANıRKEN aynı GUID oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COM ve .NET için C++ Öznitelikleri](cpp-attributes-com-net.md)<br/>
-[Gruplara Göre Öznitelikler](attributes-by-group.md)<br/>
+[COM ve .NET için C++ öznitelikleri](cpp-attributes-com-net.md)<br/>
+[Gruba göre öznitelikler](attributes-by-group.md)<br/>
 [Öznitelikler Alfabetik Başvurusu](attributes-alphabetical-reference.md)

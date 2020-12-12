@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: kaynakları yönetme (C++)'
 title: 'Nasıl yapılır: kaynakları yönetme (C++)'
 ms.date: 02/14/2019
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
-ms.openlocfilehash: 0af4e8faeb3d8606fb351b193364a2748fbc944e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3720cb5f3ab3b99ecba798abce1e4fdba25f8646
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215221"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329390"
 ---
 # <a name="how-to-manage-resources-c"></a>Nasıl yapılır: kaynakları yönetme (C++)
 
@@ -46,7 +47,7 @@ Kaynakları değiştirmeden bir dosyadan diğerine kopyalayabilir veya bir kayna
 Kaynakları var olan bir kaynaktan veya yürütülebilir dosyadan geçerli kaynak dosyanıza kolayca kopyalayabilirsiniz. Kaynakları kopyalamak için, her iki dosyayı aynı anda açar ve öğeleri bir dosyadan diğerine sürükleyin veya iki Dosya arasında kopyalayıp yapıştırın. Bu yöntem, kaynak betiği (. RC) dosyaları ve kaynak şablonu (. rct) dosyaları ve yürütülebilir (. exe) dosyaları için geçerlidir.
 
 > [!NOTE]
-> Görsel C++ , kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için bkz. [CLIPART: Common Resources](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general).
+> Visual C++, kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için bkz. [CLIPART: Common Resources](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/general).
 
 Projedeki kaynak dosyaları (**kaynak görünümü**) ve tek başına. RC dosyaları arasında sürükleyip bırakamazsınız, kopyalayamaz, kesebilir veya yapıştıramazsınız. Bunu ürünün önceki sürümlerinde yapabilirsiniz. Yalnızca proje dışında açık olan. RC dosyaları arasında sürükle ve bırak yöntemini kullanın.
 
@@ -72,7 +73,7 @@ Projedeki kaynak dosyaları (**kaynak görünümü**) ve tek başına. RC dosyal
       1. Kaynağı yapıştırmak istediğiniz kaynak dosyasına (örneğin, *source2. RC*) sağ tıklayın ve **Yapıştır**' ı seçin.
 
 > [!NOTE]
-> Var olan dosyadaki sembol adlarıyla veya değerlerle çakışmayı önlemek için, görsel C++ aktarılan kaynağın sembol değerini veya sembol adını ve değerini yeni dosyaya kopyaladığınızda değiştirebilir.
+> Varolan dosyadaki sembol adlarıyla veya değerlerle çakışmayı önlemek için Visual C++, aktarılan kaynağın sembol değerini veya sembol adını ve değerini yeni dosyaya kopyaladığınızda değiştirebilir.
 
 Bir kaynağa kopyalarken, kendi dil özelliğini veya koşul özelliğini ya da her ikisini de değiştirebilirsiniz.
 
@@ -80,7 +81,7 @@ Bir kaynağa kopyalarken, kendi dil özelliğini veya koşul özelliğini ya da 
 
 - Bir kaynağın koşulu, kaynağın bu kopyasının kullanılacağı koşulu tanımlayan tanımlı bir simgedir.
 
-Bir kaynağın dili ve koşulu, **çalışma alanı** penceresinde kaynağın adından sonra parantez içinde gösterilir. Burada `IDD_AboutBox` adlı kaynak kendi dili olarak `Finnish` kullanıyor ve koşulu `XX33`:
+Bir kaynağın dili ve koşulu, **çalışma alanı** penceresinde kaynağın adından sonra parantez içinde gösterilir. Burada adlı kaynak, `IDD_AboutBox` `Finnish` dili olarak kullanılıyor ve durumu şu şekildedir `XX33` :
 
 ```cpp
 IDD_AboutBox (Finnish - XX33)
@@ -98,9 +99,9 @@ IDD_AboutBox (Finnish - XX33)
 
 Yönetilen kaynak (. resx) dosyaları XML dosyalarıdır. Projenize bir yönetilen kaynak dosyası eklediğinizde **Yeni öğe Ekle** iletişim kutusundan, **yönetilen kaynaklar Düzenleyicisi** varsayılan olarak açılır.
 
-## <a name="import-and-export-resources"></a>Kaynakları içeri ve dışarı aktarma
+## <a name="import-and-export-resources"></a>Kaynakları İçeri ve Dışarı Aktarma
 
-Görsel C++olarak kullanmak için grafik kaynaklarını (bit eşlemler, simgeler, imleçler ve araç çubukları), HTML dosyalarını ve özel kaynakları içeri aktarabilirsiniz. Visual Studio C++ projesinden aynı dosya türlerini, geliştirme ortamının dışında kullanılabilecek dosyaları ayırmak için de aktarabilirsiniz.
+Visual C++ kullanım için grafik kaynaklarını (bit eşlemler, simgeler, imleçler ve araç çubukları), HTML dosyalarını ve özel kaynakları içeri aktarabilirsiniz. Visual Studio C++ projesinden aynı dosya türlerini, geliştirme ortamının dışında kullanılabilecek dosyaları ayrı dışa aktarabilirsiniz.
 
 > [!NOTE]
 > Tek başına dosya türleri olmadığından Hızlandırıcılar, iletişim kutuları ve dize tabloları gibi kaynak türleri içeri aktarılamaz veya verilemez.
@@ -116,7 +117,7 @@ Görsel C++olarak kullanmak için grafik kaynaklarını (bit eşlemler, simgeler
 > [!NOTE]
 > İçeri aktarma işlemi, seçtiğiniz kaynak türü ne olduğuna bakılmaksızın aynı şekilde işler. İçeri aktarılan kaynak, kaynak türünün doğru düğümüne otomatik olarak eklenir.
 
-### <a name="to-export-a-resource-for-use-outside-of-visual-c"></a>Bir kaynağı görsel dışında kullanmak üzere dışarı aktarmak içinC++
+### <a name="to-export-a-resource-for-use-outside-of-visual-c"></a>Visual C++ dışında kullanmak üzere bir kaynağı dışarı aktarmak için
 
 1. [Kaynak görünümü](how-to-create-a-resource-script-file.md#create-resources), dışarı aktarmak istediğiniz kaynağa sağ tıklayın ve **dışarı aktar**' ı seçin. Geçerli dosya adını kabul edebilir veya yeni bir tane yazabilirsiniz.
 
@@ -128,6 +129,6 @@ Win32
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kaynak Dosyalar](../windows/resource-files-visual-studio.md)<br/>
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)<br/>
 [Nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource-script-file.md)<br/>
-[Nasıl yapılır: Derleme Sırasında Kaynak Ekleme](../windows/how-to-include-resources-at-compile-time.md)
+[Nasıl yapılır: derleme zamanında kaynakları dahil etme](../windows/how-to-include-resources-at-compile-time.md)

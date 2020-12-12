@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE denetimleri için Iletişim kutusu veri değişimi Işlevleri'
 title: OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-ms.openlocfilehash: 9133c30dd1ac069145862d4bf61ba0bc0d504838
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ed2a3c36655ce5fccf482c0a7dedad0a4c67baa5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219960"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 
@@ -69,7 +70,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -103,7 +104,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -137,7 +138,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -171,7 +172,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -211,7 +212,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -251,7 +252,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -291,7 +292,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -331,7 +332,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -365,7 +366,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -399,7 +400,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -433,7 +434,7 @@ void AFXAPI DDX_OCText(
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -467,7 +468,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *dı*<br/>
 Denetimin bir özelliğinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar

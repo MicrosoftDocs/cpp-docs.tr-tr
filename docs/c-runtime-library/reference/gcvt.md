@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _gcvt'
 title: _gcvt
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-ms.openlocfilehash: d13ae6cee293036f0454b23e0349cabb2869be30
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 942f233e3b0e4c1ac3bc96d1fa64fd46cdccbcc2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341509"
 ---
 # <a name="_gcvt"></a>_gcvt
 
@@ -56,7 +57,7 @@ char *_gcvt(
 
 ### <a name="parameters"></a>Parametreler
 
-*deeri*<br/>
+*değer*<br/>
 Dönüştürülecek değer.
 
 *rakamlar*<br/>
@@ -71,11 +72,11 @@ Sonuç için depolama konumu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Gcvt** işlevi bir kayan nokta *değerini* bir karakter dizesine (bir ondalık noktası ve olası bir işaret baytı içerir) dönüştürür ve dizeyi *arabelleğe*depolar. *Arabellek* , dönüştürülmüş değere ve otomatik olarak eklenen bir Sonlandırıcı null karaktere yetecek kadar büyük olmalıdır. Bir arabellek *boyutu + 1* kullanılırsa, işlev arabelleğin sonunu geçersiz kılar. Bunun nedeni, dönüştürülmüş dizenin bir ondalık basamak içermesi ve işaret ve üs bilgilerini içermesi olabilir. Taşma için bir sağlama yoktur. **_gcvt** ondalık biçimde *basamak* rakamları üretmeye çalışır. Yapamazsa, *sayı* rakamlarını üstel biçimde üretir. Sondaki sıfırlar, dönüştürmede gizlenebilir.
+**_Gcvt** işlevi bir kayan nokta *değerini* bir karakter dizesine (bir ondalık noktası ve olası bir işaret baytı içerir) dönüştürür ve dizeyi *arabelleğe* depolar. *Arabellek* , dönüştürülmüş değere ve otomatik olarak eklenen bir Sonlandırıcı null karaktere yetecek kadar büyük olmalıdır. Bir arabellek *boyutu + 1* kullanılırsa, işlev arabelleğin sonunu geçersiz kılar. Bunun nedeni, dönüştürülmüş dizenin bir ondalık basamak içermesi ve işaret ve üs bilgilerini içermesi olabilir. Taşma için bir sağlama yoktur. **_gcvt** ondalık biçimde *basamak* rakamları üretmeye çalışır. Yapamazsa, *sayı* rakamlarını üstel biçimde üretir. Sondaki sıfırlar, dönüştürmede gizlenebilir.
 
 Bir *arabellek* uzunluğu **_CVTBUFSIZE** herhangi bir kayan nokta değeri için yeterlidir.
 
-Bu işlev, parametrelerini doğrular. *Buffer* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null**değerini döndürür.
+Bu işlev, parametrelerini doğrular. *Buffer* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null** değerini döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -83,7 +84,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_gcvt**|\<Stdlib. h>|
+|**_gcvt**|\<stdlib.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -146,7 +147,7 @@ buffer: '-1.23456789012e-002' (19 chars)
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
