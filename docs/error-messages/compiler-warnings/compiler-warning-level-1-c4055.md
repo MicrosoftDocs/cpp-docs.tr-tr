@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4055'
 title: Derleyici Uyarısı (düzey 1) C4055
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4055
 ms.assetid: f9955421-16ab-46e5-8f9d-bf1639a519ef
-ms.openlocfilehash: 47883f60c3205125a8ee88b804c1d622b3ba0b41
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 0bb324b096623c8a5118999706f6f3d32d38e67a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041035"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97267683"
 ---
 # <a name="compiler-warning-level-1-c4055"></a>Derleyici Uyarısı (düzey 1) C4055
 

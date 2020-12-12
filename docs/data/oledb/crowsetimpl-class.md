@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CRowsetImpl sınıfı'
 title: CRowsetImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - m_strCommandText
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-ms.openlocfilehash: cca74504c80b964b14742e7405953ad68764aa62
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e517806cc7083700d4fad7fc053777b11a7de665
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507263"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268450"
 ---
 # <a name="crowsetimpl-class"></a>CRowsetImpl Sınıfı
 
@@ -141,7 +142,7 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Standart HRESULT. `DBID`Bir tablo veya dizin olmasına bağlı olarak ( *bindex*tarafından belirtilen), yöntem DB_E_NOINDEX veya DB_E_NOTABLE döndürür.
+Standart HRESULT. `DBID`Bir tablo veya dizin olmasına bağlı olarak ( *bindex* tarafından belirtilen), yöntem DB_E_NOINDEX veya DB_E_NOTABLE döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -267,7 +268,7 @@ Bu yöntem, `CRowsetImpl` [m_strCommandText](#strcommandtext) ve [m_strIndexText
 
 Varsayılan olarak, `CAtlArray` Kullanıcı kayıt şablonu bağımsız değişkeninde templatıka `CRowsetImpl` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 ArrayType CRowsetBaseImpl::m_rgRowData;
@@ -281,7 +282,7 @@ ArrayType CRowsetBaseImpl::m_rgRowData;
 
 Satır kümesinin ilk komutunu içerir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CComBSTR CRowsetBaseImpl::m_strCommandText;
@@ -291,7 +292,7 @@ CComBSTR CRowsetBaseImpl::m_strCommandText;
 
 Satır kümesinin ilk dizinini içerir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CComBSTR CRowsetBaseImpl::m_strIndexText;

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: mbrtowc'
 title: mbrtowc
 ms.date: 4/2/2020
 api_name:
@@ -26,18 +27,18 @@ f1_keywords:
 helpviewer_keywords:
 - mbrtowc function
 ms.assetid: a1e87fcc-6de0-4ca1-bf26-508d28490286
-ms.openlocfilehash: 55d866e6f0e372c148de36bf259954bed11a953c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f00c9fd01826a80cb729bfe10af242db8dec2414
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271167"
 ---
 # <a name="mbrtowc"></a>mbrtowc
 
 Geçerli yerel ayarda bulunan çok baytlı bir karakteri, çok baytlı bir karakterin ortasında yeniden başlatma özelliği ile eşdeğer geniş karaktere dönüştürün.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 size_t mbrtowc(
@@ -66,7 +67,7 @@ Dönüştürme durumu nesnesine yönelik işaretçi. Bu değer null işaretçisi
 
 Aşağıdaki değerlerden biri:
 
-0 sonraki *sayı* veya daha az bayt *, wchar* null bir işaretçi değilse *wchar*içinde saklanan null geniş karakteri temsil eden çok baytlı karakteri tamamlar.
+0 sonraki *sayı* veya daha az bayt *, wchar* null bir işaretçi değilse *wchar* içinde saklanan null geniş karakteri temsil eden çok baytlı karakteri tamamlar.
 
 1- *Count*, sonraki *sayı* dahil olmak üzere veya daha az bayt geçerli bir çok baytlı karakter tamamlanmıştır. Döndürülen değer, çok baytlı karakteri Tamamlanan bayt sayısıdır. *Wchar* null bir işaretçi değilse, geniş karakter eşdeğeri *wchar*'da depolanır.
 
@@ -84,7 +85,7 @@ Bu durumda, *wchar* ve *Count* bağımsız değişkenlerinin değeri yok sayıl�
 
 *Mbchar* null bir işaretçi değilse, işlev, sonraki çok baytlı karakteri tamamlaması gereken bayt sayısını öğrenmek için *mbchar* 'dan *sayı* baytlarını inceler. Sonraki karakter geçerliyse, bir null işaretçi değilse, karşılık gelen çok baytlı karakter *wchar* 'da depolanır. Karakter, karşılık gelen geniş null karakter ise, *mbstate* sonuç durumu ilk dönüştürme durumudur.
 
-**Mbrtowc** işlevi [mbtowc](mbtowc-mbtowc-l.md) 'den farklıdır, yeniden startability tarafından _mbtowc_l. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama, **wcstomb**yerine **wcsrkaldırıldı s** öğesine yapılan sonraki bir çağrı kullanılırsa **wcslen** yerine **wcsrlen** kullanmalıdır.
+**Mbrtowc** işlevi [mbtowc](mbtowc-mbtowc-l.md) 'den farklıdır, yeniden startability tarafından _mbtowc_l. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama, **wcstomb** yerine **wcsrkaldırıldı s** öğesine yapılan sonraki bir çağrı kullanılırsa **wcslen** yerine **wcsrlen** kullanmalıdır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -216,5 +217,5 @@ WC String: AaBbCcÜïα∩≡xXyYzZ
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

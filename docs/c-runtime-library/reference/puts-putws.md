@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: koyar, _putws'
 title: puts, _putws
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - putts function
 - _putws function
 ms.assetid: 32dada12-ed45-40ac-be06-3feeced9ecd6
-ms.openlocfilehash: 2e581237c7b839af87df7bc88369f21751b855d2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9b48be23b02301f79b942371fbd273a14bab3800
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268957"
 ---
 # <a name="puts-_putws"></a>puts, _putws
 
@@ -65,7 +66,7 @@ int _putws(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa negatif olmayan bir değer döndürür. Bunlar **başarısız olursa** , **EOF**döndürür; **_putws** başarısız olursa, **weof**döndürür. *Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **EOF** veya **weof**döndürür.
+Başarılı olursa negatif olmayan bir değer döndürür. Bunlar **başarısız olursa** , **EOF** döndürür; **_putws** başarısız olursa, **weof** döndürür. *Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **EOF** veya **weof** döndürür.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -73,7 +74,7 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_er
 
 **Koyar** işlevi *Str* ' ı standart çıkış akışı **stdout**' a yazar, dizenin Sonlandırıcı null karakterini (' \ 0 ') çıkış akışındaki yeni satır karakteriyle (' \n ') değiştirir.
 
-**_putws** **, yerleştirinin geniş**karakterli sürümüdür; Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **koyar** , şu anda çıktıyı UNICODE bir akışa desteklemez.
+**_putws** **, yerleştirinin geniş** karakterli sürümüdür; Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **koyar** , şu anda çıktıyı UNICODE bir akışa desteklemez.
 
 **_putwch** , GEÇERLI konsol yerel ayarını kullanarak Unicode karakterler yazar.
 
@@ -89,10 +90,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**kontrolünü**|\<stdio. h>|
-|**_putws**|\<stdio. h>|
+|**kontrolünü**|\<stdio.h>|
+|**_putws**|\<stdio.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -120,6 +121,6 @@ Hello world from puts!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputs, fputws](fputs-fputws.md)<br/>
 [fgets, fgetws](fgets-fgetws.md)<br/>

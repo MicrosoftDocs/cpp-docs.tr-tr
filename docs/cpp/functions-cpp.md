@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlevler (C++)'
 title: İşlevler [C++]
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - default arguments
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
-ms.openlocfilehash: 5beadbbf283a64f12dab7f0ee39a267ec1797861
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: da338e0fcc6c30f0f1482cb900803c0a98f854ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213443"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268931"
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 
@@ -39,9 +40,9 @@ int main()
 
 İşlev uzunluğuna yönelik pratik bir sınır yoktur, ancak iyi tanımlanmış tek bir görev gerçekleştiren işlevler için iyi bir tasarım sağlar. Karmaşık algoritmalar mümkün olduğunda kolayca anlaşılması kolay bir işlevlere bölünmüştür.
 
-Sınıf kapsamında tanımlı işlevlere üye işlevleri denir. C++ ' da, diğer dillerin aksine, bir işlev ad alanı kapsamında da tanımlanabilir (örtük genel ad alanı dahil). Bu işlevler, *ücretsiz işlevler* veya *üye olmayan işlevler*olarak adlandırılır; Bunlar, standart kitaplıkta yaygın olarak kullanılırlar.
+Sınıf kapsamında tanımlı işlevlere üye işlevleri denir. C++ ' da, diğer dillerin aksine, bir işlev ad alanı kapsamında da tanımlanabilir (örtük genel ad alanı dahil). Bu işlevler, *ücretsiz işlevler* veya *üye olmayan işlevler* olarak adlandırılır; Bunlar, standart kitaplıkta yaygın olarak kullanılırlar.
 
-İşlevler *aşırı yüklenmiş*olabilir, bu da bir işlevin farklı sürümlerinin, biçimsel parametrelerin sayısı ve/veya türü farklı olduğunda aynı adı paylaşabileceği anlamına gelir. Daha fazla bilgi için bkz. [Işlev aşırı yüklemesi](../cpp/function-overloading.md).
+İşlevler *aşırı yüklenmiş* olabilir, bu da bir işlevin farklı sürümlerinin, biçimsel parametrelerin sayısı ve/veya türü farklı olduğunda aynı adı paylaşabileceği anlamına gelir. Daha fazla bilgi için bkz. [Işlev aşırı yüklemesi](../cpp/function-overloading.md).
 
 ## <a name="parts-of-a-function-declaration"></a>İşlev bildiriminin kısımları
 
@@ -51,7 +52,7 @@ En az bir işlev *bildirimi* dönüş türü, işlev adı ve parametre listesind
 int sum(int a, int b);
 ```
 
-Bir işlev tanımı, bir bildirimden ve gövde ayraçları arasındaki tüm kod olan *gövdeden*oluşur:
+Bir işlev tanımı, bir bildirimden ve gövde ayraçları arasındaki tüm kod olan *gövdeden* oluşur:
 
 ```cpp
 int sum(int a, int b)
@@ -159,7 +160,7 @@ Gövde içinde belirtilen değişkenlere yerel değişkenler veya Yereller denir
 
 ## <a name="const-and-constexpr-functions"></a>const ve constexpr işlevleri
 
-**`const`** İşlevin, sınıftaki herhangi bir veri üyesinin değerlerini değiştirmesine izin verilmediğini belirtmek için olarak bir üye işlevi bildirebilirsiniz. Bir üye işlevi olarak bildirerek **`const`** , derleyicinin *const doğruluğu*zorlayacağına yardımcı olursunuz. Birisi yanlışlıkla olarak belirtilen bir işlevi kullanarak nesneyi değiştirmeye çalışırsa **`const`** , bir derleyici hatası tetiklenir. Daha fazla bilgi için bkz. [const](const-cpp.md).
+**`const`** İşlevin, sınıftaki herhangi bir veri üyesinin değerlerini değiştirmesine izin verilmediğini belirtmek için olarak bir üye işlevi bildirebilirsiniz. Bir üye işlevi olarak bildirerek **`const`** , derleyicinin *const doğruluğu* zorlayacağına yardımcı olursunuz. Birisi yanlışlıkla olarak belirtilen bir işlevi kullanarak nesneyi değiştirmeye çalışırsa **`const`** , bir derleyici hatası tetiklenir. Daha fazla bilgi için bkz. [const](const-cpp.md).
 
 Bir işlevi **`constexpr`** , ürettiği değer derleme zamanında belirlenebileceği zaman bildirin. Constexpr işlevi genellikle normal işlevden daha hızlı yürütülür. Daha fazla bilgi için bkz. [`constexpr`](constexpr-cpp.md).
 
@@ -202,7 +203,7 @@ void DoSomething(const std::string& input){...}
 void DoSomething(const std::string&& input){...}
 ```
 
-**`void`** **`void`** Bağımsız değişken bildirim listesinin ilk ve tek üyesi olduğu sürece, parametre bildirim listesindeki tek bir anahtar sözcükle belirtilen bir işlev bağımsız değişken almaz. **`void`** Listede başka bir yerde bulunan tür bağımsız değişkenleri hata üretir. Örnek:
+**`void`** **`void`** Bağımsız değişken bildirim listesinin ilk ve tek üyesi olduğu sürece, parametre bildirim listesindeki tek bir anahtar sözcükle belirtilen bir işlev bağımsız değişken almaz. **`void`** Listede başka bir yerde bulunan tür bağımsız değişkenleri hata üretir. Örneğin:
 
 ```cpp
 
@@ -239,7 +240,7 @@ Daha fazla bilgi için bkz. [Varsayılan bağımsız değişkenler](../cpp/defau
 
 ## <a name="function-return-types"></a>İşlev dönüş türleri
 
-Bir işlev, başka bir işlevi veya yerleşik bir diziyi döndüremeyebilir; Ancak, bu türlere işaretçiler veya bir işlev nesnesi üreten bir *lambda*döndürebilir. Bu durumlar dışında, bir işlev kapsamda olan herhangi bir türde bir değer döndürebilir veya değer döndürmez; bu durumda, dönüş türü olur **`void`** .
+Bir işlev, başka bir işlevi veya yerleşik bir diziyi döndüremeyebilir; Ancak, bu türlere işaretçiler veya bir işlev nesnesi üreten bir *lambda* döndürebilir. Bu durumlar dışında, bir işlev kapsamda olan herhangi bir türde bir değer döndürebilir veya değer döndürmez; bu durumda, dönüş türü olur **`void`** .
 
 ### <a name="trailing-return-types"></a>Sondaki dönüş türleri
 
@@ -257,11 +258,11 @@ auto Add(const Lhs& lhs, const Rhs& rhs) -> decltype(lhs + rhs)
 
 ## <a name="function-local-variables"></a>İşlev yerel değişkenleri
 
-Bir işlev gövdesi içinde belirtilen bir değişken *yerel bir değişken* veya yalnızca *Yerel*olarak adlandırılır. Statik olmayan Yereller yalnızca işlev gövdesi içinde görünür ve yığında bildirilirse, işlev çıktığında kapsam dışına çıkar. Yerel bir değişken oluşturup değeri değere göre döndürdüğünüzde, derleyici, gereksiz kopyalama işlemlerini önlemek için *adlandırılmış dönüş değeri iyileştirmesini* genellikle gerçekleştirebilir. Başvuruya göre yerel bir değişken döndürürler, bu başvuruyu kullanan çağıran tarafından herhangi bir girişim yerel olarak yok edildikten sonra, derleyici bir uyarı verir.
+Bir işlev gövdesi içinde belirtilen bir değişken *yerel bir değişken* veya yalnızca *Yerel* olarak adlandırılır. Statik olmayan Yereller yalnızca işlev gövdesi içinde görünür ve yığında bildirilirse, işlev çıktığında kapsam dışına çıkar. Yerel bir değişken oluşturup değeri değere göre döndürdüğünüzde, derleyici, gereksiz kopyalama işlemlerini önlemek için *adlandırılmış dönüş değeri iyileştirmesini* genellikle gerçekleştirebilir. Başvuruya göre yerel bir değişken döndürürler, bu başvuruyu kullanan çağıran tarafından herhangi bir girişim yerel olarak yok edildikten sonra, derleyici bir uyarı verir.
 
 C++ ' da yerel bir değişken statik olarak tanımlanmış olabilir. Değişken yalnızca işlev gövdesinin içinde görünür, ancak işlevin tüm örnekleri için değişkenin tek bir kopyası vardır. Yerel statik nesneler `atexit` tarafından belirtilen sonlandırma sırasında yok edilir. Programın denetim akışı bildirimi atlamasından dolayı statik nesne oluşturulmazsa, söz konusu nesneyi yok etmek için girişimde bulunulmaz.
 
-## <a name="type-deduction-in-return-types-c14"></a><a name="type_deduction"></a>Dönüş türlerinde tür kesintisi (C++ 14)
+## <a name="type-deduction-in-return-types-c14"></a><a name="type_deduction"></a> Dönüş türlerinde tür kesintisi (C++ 14)
 
 C++ 14 ' te, **`auto`** derleyicinin dönüş türünü, bir sondaki dönüş türü sağlamak zorunda kalmadan işlev gövdesinden çıkarmasını söylemek için kullanabilirsiniz. **`auto`** Her zaman bir değere dönüşe kadar kesintiler olduğunu unutmayın. `auto&&`Derleyiciye bir başvuru başlatmalarını bildirmek için kullanın.
 
@@ -295,7 +296,7 @@ template<typename F, typename Tuple = tuple<T...>,
 }
 ```
 
-## <a name="returning-multiple-values-from-a-function"></a><a name="multi_val"></a>Bir işlevden birden çok değer döndürme
+## <a name="returning-multiple-values-from-a-function"></a><a name="multi_val"></a> Bir işlevden birden çok değer döndürme
 
 Bir işlevden birden fazla değer döndürmek için çeşitli yollar vardır:
 
@@ -430,4 +431,4 @@ Yukarıdaki bildirim, yukarıda kullanılan bildirime eşdeğerdir **`typedef`**
 [Açık olarak varsayılan ve silinen Işlevler](../cpp/explicitly-defaulted-and-deleted-functions.md)<br/>
 [Işlevlerde bağımsız değişkene bağlı ad (KOENIG) arama](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)<br/>
 [Varsayılan bağımsız değişkenler](../cpp/default-arguments.md)<br/>
-[Satır içi Işlevler](../cpp/inline-functions-cpp.md)
+[Satır İçi İşlevler](../cpp/inline-functions-cpp.md)

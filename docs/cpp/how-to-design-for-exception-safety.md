@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: özel durum güvenliği tasarımı'
 title: 'Nasıl yapılır: özel durum güvenliği için tasarım'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: 732a46166c99396c5d55a7d2acd834b58f3d2b2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a4b957803d822b495ae6d44bb6640dcbb4535397
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268645"
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: özel durum güvenliği için tasarım
 
@@ -89,7 +90,7 @@ public:
 
 ## <a name="the-three-exception-guarantees"></a>Üç özel durum garanti
 
-Genellikle özel durum güvenliği, bir işlevin sağlayabileceğinizin üç özel durum garanti açısından ele alınmıştır: *No-Fail garantisi*, *Strong garantisi*ve *temel garanti*.
+Genellikle özel durum güvenliği, bir işlevin sağlayabileceğinizin üç özel durum garanti açısından ele alınmıştır: *No-Fail garantisi*, *Strong garantisi* ve *temel garanti*.
 
 ### <a name="no-fail-guarantee"></a>Başarısızlık garantisi
 

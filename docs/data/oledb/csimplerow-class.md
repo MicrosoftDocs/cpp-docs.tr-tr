@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CSimpleRow sınıfı'
 title: CSimpleRow Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - m_dwRef
 - m_iRowset
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
-ms.openlocfilehash: c0d7ea0966b9a582e4a6969573458bca2e8a0fea
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7390a8d82e8996c81761065541eebbbccae510ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507229"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268424"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow Sınıfı
 
 , [IRowsetImpl](../../data/oledb/irowsetimpl-class.md) sınıfında kullanılan satır tanıtıcısı için varsayılan bir uygulama sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CSimpleRow
@@ -75,13 +76,13 @@ class CSimpleRow
 
 ## <a name="remarks"></a>Açıklamalar
 
-Satır tanıtıcısı, bir sonuç satırı için mantıksal olarak benzersiz bir etikettir. `IRowsetImpl``CSimpleRow` [IRowsetImpl:: GetNextRows](./irowsetimpl-class.md#getnextrows)içinde istenen her satır için yeni bir oluşturur. `CSimpleRow` , için varsayılan bir şablon bağımsız değişkeni olduğundan, kendi satır tanıtıcı uygulamanız ile de değiştirilebilir `IRowsetImpl` . Bu sınıfı değiştirme gereksinimi, değiştirme sınıfının **Long**türünde tek bir parametre kabul eden bir Oluşturucu sağlamasını sağlamaktır.
+Satır tanıtıcısı, bir sonuç satırı için mantıksal olarak benzersiz bir etikettir. `IRowsetImpl``CSimpleRow` [IRowsetImpl:: GetNextRows](./irowsetimpl-class.md#getnextrows)içinde istenen her satır için yeni bir oluşturur. `CSimpleRow` , için varsayılan bir şablon bağımsız değişkeni olduğundan, kendi satır tanıtıcı uygulamanız ile de değiştirilebilir `IRowsetImpl` . Bu sınıfı değiştirme gereksinimi, değiştirme sınıfının **Long** türünde tek bir parametre kabul eden bir Oluşturucu sağlamasını sağlamaktır.
 
 ## <a name="csimplerowaddrefrow"></a><a name="addrefrow"></a> CSimpleRow:: AddRefRow
 
 Bir başvuru sayısını, iş parçacığı güvenli bir şekilde var olan bir satır tanıtıcısına ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DWORD AddRefRow();
@@ -123,13 +124,13 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 
 ### <a name="remarks"></a>Açıklamalar
 
-[M_iRowset](#irowset) , *ırowsetcur*olarak ayarlar.
+[M_iRowset](#irowset) , *ırowsetcur* olarak ayarlar.
 
 ## <a name="csimplerowreleaserow"></a><a name="releaserow"></a> CSimpleRow:: ReleaseRow
 
 Satırları iş parçacığı güvenli bir şekilde yayınlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DWORD ReleaseRow();
@@ -139,7 +140,7 @@ DWORD ReleaseRow();
 
 Varolan bir satır tanıtıcısına başvuru sayısı.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DWORD m_dwRef;
@@ -149,7 +150,7 @@ DWORD m_dwRef;
 
 İmleci temsil eden satır kümesi dizini.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 KeyType m_iRowset;

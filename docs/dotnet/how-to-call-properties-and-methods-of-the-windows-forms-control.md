@@ -1,5 +1,6 @@
 ---
-title: 'Nasıl yapılır: Denetiminin çağrı özellikleri ve yöntemleri Windows Forms'
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: Windows Forms denetimin özelliklerini ve yöntemlerini çağırma'
+title: 'Nasıl yapılır: Windows Forms Denetiminin Çağrı Özellikleri ve Yöntemleri'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,30 +11,30 @@ helpviewer_keywords:
 - calling properties
 - Windows Forms controls [C++], properties
 ms.assetid: 6e647d8a-fdaa-4aa1-b3fe-04f15cff8eb3
-ms.openlocfilehash: 61b565839b3f3c24670819fdcf2dde558e3461ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a797084a28eefec27699814a09c8521da7460bc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152819"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268411"
 ---
-# <a name="how-to-call-properties-and-methods-of-the-windows-forms-control"></a>Nasıl yapılır: Denetiminin çağrı özellikleri ve yöntemleri Windows Forms
+# <a name="how-to-call-properties-and-methods-of-the-windows-forms-control"></a>Nasıl yapılır: Windows Forms Denetiminin Çağrı Özellikleri ve Yöntemleri
 
-Çünkü [CWinFormsView::GetControl](../mfc/reference/cwinformsview-class.md#getcontrol) bir işaretçi döndürür <xref:System.Windows.Forms.Control?displayProperty=fullName>ve işaretçisi değil `WindowsControlLibrary1::UserControl1`, kullanıcı denetimi türünün üyesi ekleyip bunu başlatabilir önerilir [IView::OnInitialUpdate ](../mfc/reference/iview-interface.md#oninitialupdate). Yöntemleri ve özellikleri kullanarak çağırabilirsiniz artık `m_ViewControl`.
+[CWinFormsView:: GetControl](../mfc/reference/cwinformsview-class.md#getcontrol) <xref:System.Windows.Forms.Control?displayProperty=fullName> , işaretçisine değil, için bir işaretçi döndürdüğünden `WindowsControlLibrary1::UserControl1` , Kullanıcı denetim türünün bir üyesini eklemek ve [IView:: OnInitialUpdate](../mfc/reference/iview-interface.md#oninitialupdate)içinde başlatmak önerilir. Artık kullanarak yöntemleri ve özellikleri çağırabilirsiniz `m_ViewControl` .
 
-Bu konuda daha önce bitirdiğinizi [nasıl yapılır: Bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) ve [nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
+Bu konu başlığı altında [, bir Iletişim kutusunda Kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md) ve [nasıl yapılır: Kullanıcı denetımı ve Konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)hakkında daha önceden tamamladığınız varsayılmaktadır.
 
-### <a name="to-create-the-mfc-host-application"></a>MFC konak uygulaması oluşturmak için
+### <a name="to-create-the-mfc-host-application"></a>MFC ana bilgisayar uygulaması oluşturmak için
 
-1. Oluşturduğunuz MFC uygulamasını açınız [nasıl yapılır: Kullanıcı denetim ve konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md).
+1. [Nasıl yapılır: Kullanıcı denetimi ve Konak MDI görünümü oluşturma](../dotnet/how-to-create-the-user-control-and-host-mdi-view.md)bölümünde oluşturduğunuz mfc uygulamasını açın.
 
-1. Genel geçersiz kılmaları kısmına aşağıdaki satırı ekleyin `CMFC02View` MFC02View.h bildiriminde sınıfı.
+1. Aşağıdaki satırı, `CMFC02View` MFC02View. h içindeki sınıf bildiriminin genel geçersiz kılmalar bölümüne ekleyin.
 
    `gcroot<WindowsFormsControlLibrary1::UserControl1 ^> m_ViewControl;`
 
-1. Bir geçersiz kılma için OnInitialUpdate ekleyin.
+1. OnInitialUpdate için bir geçersiz kılma ekleyin.
 
-   Görüntü **özellikleri** penceresini (F4). İçinde **sınıf görünümü** (CTRL + SHIFT + C) CMFC02View sınıfını seçin. İçinde **özellikleri** penceresinde geçersiz kılmalar için simgeyi seçin. Listedeki OnInitialUpdate OnInitialUpdate'e kadar. Tıklayın ve açılan listesinden \<Ekle >. MFC02View.cpp içinde. OnInitialUpdate işlevinin gövdesi şu şekilde olduğundan emin olun:
+   **Özellikler** penceresini (F4) görüntüleyin. **Sınıf görünümü** (CTRL + SHIFT + C) içinde CMFC02View Class ' ı seçin. **Özellikler** penceresinde, geçersiz kılmalar simgesini seçin. Listenin OnInitialUpdate 'e indirgenme. Açılan listeye tıklayın ve öğesini seçin \<Add> . MFC02View. cpp içinde. OnInitialUpdate işlevinin gövdesinin aşağıdaki gibi olduğundan emin olun:
 
     ```
     CWinFormsView::OnInitialUpdate();
@@ -41,13 +42,13 @@ Bu konuda daha önce bitirdiğinizi [nasıl yapılır: Bir iletişim kutusunda k
     m_ViewControl->textBox1->Text = gcnew System::String("hi");
     ```
 
-1. Derleme ve projeyi çalıştırın.
+1. Projeyi derleyin ve çalıştırın.
 
-   Üzerinde **derleme** menüsünde tıklatın **Çözümü Derle**.
+   **Yapı** menüsünde **Yapı Çözümü**’ne tıklayın.
 
-   Üzerinde **hata ayıklama** menüsünü tıklatın **hata ayıklama olmadan Başlat**.
+   **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat**' a tıklayın.
 
-   Metin kutusu başlatıldığına dikkat edin.
+   Metin kutusunun başlatıldığına dikkat edin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

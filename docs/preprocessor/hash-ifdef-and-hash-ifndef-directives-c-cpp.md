@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: #ifdef ve #ifndef yönergeleri (C/C++)'
 title: '##ifdef ve #ifndef yönergeleri (C/C++)'
 ms.date: 08/29/2019
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - ifndef directive (#ifndef)
 - '#ifndef directive'
 ms.assetid: 2b0be69d-9e72-45d8-8e24-e4130fb2455b
-ms.openlocfilehash: 433076388f3646b19d75a907c6b2254098096688
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 4888e4516b57465974d99b1c9e8e6393e02f68c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269295"
 ---
 # <a name="ifdef-and-ifndef-directives-cc"></a>#ifdef ve #ifndef yönergeleri (C/C++)
 
 **#İfdef** ve **#ifndef** yönergeleri, **tanımlı** işleçle birlikte kullanıldığında [#if](hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md) yönergesiyle aynı etkiye sahiptir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#ifdef** *tanımlayıcı*\
 > **#ifndef** *tanımlayıcı*
@@ -34,15 +35,15 @@ Bu yönergeler şu şekilde eşdeğerdir:
 
 ## <a name="remarks"></a>Açıklamalar
 
-**#İfdef** ve **#ifndef** yönergelerini kullanılabilir her yerde `#if` kullanabilirsiniz. *Tanımlayıcı* tanımlandığında **#ifdef** *tanımlayıcı* ifade eşdeğerdir `#if 1` . *Tanımlayıcı* tanımlanmadığında `#undef` veya `#if 0` yönerge tarafından tanımsız olarak eşdeğerdir. Bu yönergeler, C veya `#define` C++ kaynak kodunda belirtilen tanımlayıcılar için değil, ile tanımlanan tanımlayıcıların varlığını veya yokluğunu denetler.
+**#İfdef** ve **#ifndef** yönergelerini kullanılabilir her yerde kullanabilirsiniz `#if` . Tanımlayıcı tanımlandığında **#ifdef** *tanımlayıcı* ifade eşdeğerdir `#if 1` .  `#if 0` *Tanımlayıcı* tanımlanmadığında veya yönerge tarafından tanımsız olarak eşdeğerdir `#undef` . Bu yönergeler, `#define` C veya C++ kaynak kodunda belirtilen tanımlayıcılar için değil, ile tanımlanan tanımlayıcıların varlığını veya yokluğunu denetler.
 
-Bu yönergeler yalnızca dilin önceki sürümleriyle uyumluluk için sağlanır. `#if` Yönergeyle birlikte kullanılan **tanımlı (** *tanımlayıcı* **)** sabit ifade tercih edilir.
+Bu yönergeler yalnızca dilin önceki sürümleriyle uyumluluk için sağlanır. Yönergeyle birlikte kullanılan **tanımlı (** *tanımlayıcı* **)** sabit ifade `#if` tercih edilir.
 
-**#İfndef** yönergesi, **#ifdef**tarafından denetlenen koşulun tersini denetler. Tanımlayıcı tanımlanmamışsa veya tanımı ile `#undef`kaldırılmışsa, koşul true (sıfır dışında) olur. Aksi takdirde, koşul false (0) olur.
+**#İfndef** yönergesi, **#ifdef** tarafından denetlenen koşulun tersini denetler. Tanımlayıcı tanımlanmamışsa veya tanımı ile kaldırılmışsa `#undef` , koşul true (sıfır dışında) olur. Aksi takdirde, koşul false (0) olur.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-*Tanımlayıcı* , [/d](../build/reference/d-preprocessor-definitions.md) seçeneği kullanılarak komut satırından geçirilebilir. İle `/D`en fazla 30 makro belirtilebilir.
+*Tanımlayıcı* , [/d](../build/reference/d-preprocessor-definitions.md) seçeneği kullanılarak komut satırından geçirilebilir. İle en fazla 30 makro belirtilebilir `/D` .
 
 **#İfdef** yönergesi, bir tanımın bir tanım olup olmadığını denetlemek için yararlıdır, çünkü komut satırından bir tanım geçirilebilirler. Örneğin:
 
@@ -58,4 +59,4 @@ Bu yönergeler yalnızca dilin önceki sürümleriyle uyumluluk için sağlanır
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)
+[Ön işlemci yönergeleri](../preprocessor/preprocessor-directives.md)

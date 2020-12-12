@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _putchar_nolock _putwchar_nolock'
 title: _putchar_nolock, _putwchar_nolock
 ms.date: 11/04/2016
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _putwchar_nolock function
 - puttchar_nolock function
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
-ms.openlocfilehash: 4dba6537c5fb7ec66a812f2c34831b1b908fc3e4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 2ee4981ce05ab233c387bdbd56fa90edbd5b0af1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949939"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271037"
 ---
 # <a name="_putchar_nolock-_putwchar_nolock"></a>_putchar_nolock, _putwchar_nolock
 
@@ -59,7 +60,7 @@ wint_t _putwchar_nolock(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
+*,*<br/>
 Yazılacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -68,7 +69,7 @@ Bkz. **putchar, putwchar**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**putchar_nolock** ve **_putwchar_nolock** , diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında **_nolock** soneki olmayan sürümlerle aynıdır. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+**putchar_nolock** ve **_putwchar_nolock** , diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında **_nolock** son eki olmayan sürümlerle aynıdır. Diğer iş parçacıklarını kilitleme yükünü sunmadığından daha hızlı olabilir. Bu işlevleri yalnızca, tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -80,10 +81,10 @@ Bkz. **putchar, putwchar**.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putchar_nolock**|\<stdio. h >|
-|**_putwchar_nolock**|\<stdio. h > veya \<wchar. h >|
+|**_putchar_nolock**|\<stdio.h>|
+|**_putwchar_nolock**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -113,7 +114,7 @@ int main( void )
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 This is the line of output
@@ -121,6 +122,6 @@ This is the line of output
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>

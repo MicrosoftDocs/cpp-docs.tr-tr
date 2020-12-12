@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: örnek kapsayıcı üyeleri'
 title: Örnek Kapsayıcı Üyeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - container classes
 ms.assetid: dc5a1998-a31b-4adf-b888-8abe5b87a4e0
-ms.openlocfilehash: ea30810177d936248f836e7e4462739d8b5f393a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fabf049f3fd33483cd226fd541717c7ac6d6df29
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269204"
 ---
 # <a name="sample-container-members"></a>Örnek Kapsayıcı Üyeleri
 

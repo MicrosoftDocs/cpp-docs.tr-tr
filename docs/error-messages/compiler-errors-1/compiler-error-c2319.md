@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2319'
 title: Derleyici hatası C2319
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2319
 ms.assetid: 25263e6e-f5ba-4d2c-8727-8c2d8ca2e5ce
-ms.openlocfilehash: af9c0f0395e29c384ddc06f9a029f29c921e71c8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 54ee91245b4346837e6cfbdac2c9ab979556bfdd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268242"
 ---
 # <a name="compiler-error-c2319"></a>Derleyici hatası C2319
 

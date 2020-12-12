@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Yerleşik türler (C++)'
 title: Yerleşik türler (C++)
 ms.date: 07/22/2020
 f1_keywords:
@@ -46,16 +47,16 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-ms.openlocfilehash: 73486dd4d81fc91007f078ec5c509bcb963d2706
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 601bd0742002506272ec3da7af448a4bdba96065
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232280"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268749"
 ---
 # <a name="built-in-types-c"></a>Yerleşik türler (C++)
 
-Yerleşik türler ( *temel türler*de denir), C++ dil standardı tarafından belirtilir ve derleyicide yerleşik olarak bulunur. Yerleşik türler herhangi bir başlık dosyasında tanımlı değil. Yerleşik türler üç ana kategoriye ayrılmıştır: *integral*, *kayan nokta*ve *void*. Integral türleri tüm sayıları temsil eder. Kayan nokta türleri, kesirli parçaları olabilecek değerler belirtebilir. Çoğu yerleşik tür, derleyici tarafından ayrı türler olarak değerlendirilir. Ancak, bazı türler *eşanlamlı*veya derleyici tarafından eşdeğer tür olarak değerlendirilir.
+Yerleşik türler ( *temel türler* de denir), C++ dil standardı tarafından belirtilir ve derleyicide yerleşik olarak bulunur. Yerleşik türler herhangi bir başlık dosyasında tanımlı değil. Yerleşik türler üç ana kategoriye ayrılmıştır: *integral*, *kayan nokta* ve *void*. Integral türleri tüm sayıları temsil eder. Kayan nokta türleri, kesirli parçaları olabilecek değerler belirtebilir. Çoğu yerleşik tür, derleyici tarafından ayrı türler olarak değerlendirilir. Ancak, bazı türler *eşanlamlı* veya derleyici tarafından eşdeğer tür olarak değerlendirilir.
 
 ## <a name="void-type"></a>Void türü
 
@@ -85,7 +86,7 @@ Türünde bir değişken **`wchar_t`** , geniş karakter veya çok baytlı bir k
 
 **Microsoft 'a özgü**: varsayılan olarak **`wchar_t`** yerel bir türdür, ancak [`/Zc:wchar_t-`](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) **`wchar_t`** için bir TypeDef oluşturmak için kullanabilirsiniz **`unsigned short`** . **`__wchar_t`** Tür yerel tür Için Microsoft 'a özgü bir eş anlamlıdır **`wchar_t`** .
 
-**`char8_t`** Türü UTF-8 karakter gösterimi için kullanılır. Aynı gösterimine sahiptir **`unsigned char`** , ancak derleyici tarafından ayrı bir tür olarak kabul edilir. **`char8_t`** Tür c++ 20 ' de yenidir. **Microsoft 'a özgü**: öğesinin kullanımı **`char8_t`** , [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği gerektirir.
+**`char8_t`** Türü UTF-8 karakter gösterimi için kullanılır. Aynı gösterimine sahiptir **`unsigned char`** , ancak derleyici tarafından ayrı bir tür olarak kabul edilir. **`char8_t`** Tür c++ 20 ' de yenidir. **Microsoft 'a özgü**: öğesinin kullanımı **`char8_t`**  , [`/std:c++latest`](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği gerektirir.
 
 **`char16_t`** Türü UTF-16 karakter gösterimi için kullanılır. Herhangi bir UTF-16 kod birimini temsil etmek için yeterince büyük olmalıdır. Derleyici tarafından ayrı bir tür olarak değerlendirilir.
 

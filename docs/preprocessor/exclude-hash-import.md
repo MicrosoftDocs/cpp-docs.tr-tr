@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: içeri aktarma özniteliği Dışla'
 title: İçeri aktarma özniteliğini Dışla
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - exclude attribute
 ms.assetid: 0883248a-d4bf-420e-9848-807b28fa976e
-ms.openlocfilehash: 6a3625ee0dd44f3e2731e1240fea5f3dd4ed109e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e856544f812fd5d0b14676beb8423c4350e40da1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218724"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269321"
 ---
 # <a name="exclude-import-attribute"></a>İçeri aktarma özniteliğini Dışla
 
-**C++Belirli**
+**C++ özel**
 
 Öğeleri, oluşturulan tür kitaplığı üstbilgi dosyalarından çıkarır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **exclude (** "*name1*" [ **,** "*AD2*"...] **)**
+> **#import** *türü-kitaplık* **dışla (** "*name1*" [ **,** "*AD2*"...] **)**
 
 ### <a name="parameters"></a>Parametreler
 
@@ -35,7 +36,7 @@ Seçim Gerekirse dışarıda bırakılacak ikinci ve sonraki öğeler.
 
 Tür kitaplıkları, sistem üstbilgileri veya diğer tür kitaplıklarında tanımlanan öğelerin tanımlarını içerebilir. Bu öznitelik, her biri dışlanacak en üst düzey bir tür kitaplığı öğesi olan herhangi bir sayıda bağımsız değişken alabilir.
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

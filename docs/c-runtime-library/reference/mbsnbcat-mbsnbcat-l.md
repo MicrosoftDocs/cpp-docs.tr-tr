@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbsnbcat _mbsnbcat_l'
 title: _mbsnbcat, _mbsnbcat_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _mbsnbcat function
 - tcsncat function
 ms.assetid: aa0f1d30-0ddd-48d1-88eb-c6884b20fd91
-ms.openlocfilehash: 25df567525fc190be94529fba3b7de131122e6b5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 633ee28a1ab90eef286eb27d75e7a5e808c06ef8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271050"
 ---
 # <a name="_mbsnbcat-_mbsnbcat_l"></a>_mbsnbcat, _mbsnbcat_l
 
@@ -90,7 +91,7 @@ Null ile sonlandırılmış çok baytlı karakter hedef dizesi.
 Null ile sonlandırılmış çok baytlı karakter kaynak dizesi.
 
 *biriktirme*<br/>
-*Src* 'den *hedefe*eklenecek bayt sayısı.
+*Src* 'den *hedefe* eklenecek bayt sayısı.
 
 *locale*<br/>
 Kullanılacak yerel ayar.
@@ -101,13 +102,13 @@ Kullanılacak yerel ayar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbcat** işlevi, en çok, *src* 'nin ilk *sayım* baytlarını *hedefe*ekler. *Hedef* içindeki null karakterden hemen önce gelen bayt bir ön bayt ise, *src* 'nin ilk baytı bu ön bayt üzerine yazar. Aksi takdirde, *src* 'nin ilk baytı, *hedef*alanının Sonlandırıcı null karakterinin üzerine yazar. *Src* içinde bir null bayt *görünürse,* *count* baytları eklenmeden önce, **_mbsnbcat** tüm baytları null karaktere kadar ekler. *Count* değeri *src*'nin uzunluğundan büyükse, *src* 'nin uzunluğu *Count*yerine kullanılır. Elde edilen dize bir null karakterle sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
+**_Mbsnbcat** işlevi, en çok, *src* 'nin ilk *sayım* baytlarını *hedefe* ekler. *Hedef* içindeki null karakterden hemen önce gelen bayt bir ön bayt ise, *src* 'nin ilk baytı bu ön bayt üzerine yazar. Aksi takdirde, *src* 'nin ilk baytı, *hedef* alanının Sonlandırıcı null karakterinin üzerine yazar. *Src* içinde bir null bayt *görünürse,* *count* baytları eklenmeden önce, **_mbsnbcat** tüm baytları null karaktere kadar ekler. *Count* değeri *src*'nin uzunluğundan büyükse, *src* 'nin uzunluğu *Count* yerine kullanılır. Elde edilen dize bir null karakterle sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . İşlevin **_mbsnbcat** sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbsnbcat_l** sürüm, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 **Güvenlik notunun** Null ile sonlandırılmış bir dize kullanın. Null ile sonlandırılmış dize, hedef arabelleğin boyutunu aşmamalıdır. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-*Dest* veya *src* **null**ise, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre hatası oluşturur. Hata işlenirse, işlev **EINVAL** döndürür ve **errno** 'u **EINVAL**olarak ayarlar.
+*Dest* veya *src* **null** ise, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz bir parametre hatası oluşturur. Hata işlenirse, işlev **EINVAL** döndürür ve **errno** 'u **EINVAL** olarak ayarlar.
 
 C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -124,8 +125,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcat**|\<mbstring. h>|
-|**_mbsnbcat_l**|\<mbstring. h>|
+|**_mbsnbcat**|\<mbstring.h>|
+|**_mbsnbcat_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

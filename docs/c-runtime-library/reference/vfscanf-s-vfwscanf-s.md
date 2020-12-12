@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: vfscanf_s vfwscanf_s'
 title: vfscanf_s, vfwscanf_s
 ms.date: 11/04/2016
 api_name:
@@ -24,18 +25,18 @@ f1_keywords:
 - vfwscanf_s
 - _vftscanf_s
 ms.assetid: 9b0133f0-9a18-4581-b24b-3b72683ad432
-ms.openlocfilehash: 834def5f1465f3ce0d903b0af31b67d0e7eb2543
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 99d822ef2425c44f4339c1102eda9924f46f54c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268892"
 ---
 # <a name="vfscanf_s-vfwscanf_s"></a>vfscanf_s, vfwscanf_s
 
 Bir akıştan biçimlendirilen verileri okur. Vfscanf, vfwscanf 'in bu sürümlerinde, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int vfscanf_s(
@@ -63,18 +64,18 @@ Değişken bağımsız değişken listesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Bir hata oluşursa veya dosya akışının sonuna ilk dönüştürmeden önce ulaşılırsa, **vfscanf_s** ve **vfwscanf_s**için dönüş değeri **EOF** olur.
+Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Bir hata oluşursa veya dosya akışının sonuna ilk dönüştürmeden önce ulaşılırsa, **vfscanf_s** ve **vfwscanf_s** için dönüş değeri **EOF** olur.
 
-Bu işlevler, parametrelerini doğrular. *Stream* geçersiz bir dosya işaretçisiyse veya *Biçim* null işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevler, parametrelerini doğrular. *Stream* geçersiz bir dosya işaretçisiyse veya *Biçim* null işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Vfscanf_s** işlevi, *akışın* geçerli konumundaki verileri *Arglist* bağımsız değişken listesi (varsa) tarafından verilen konumlara okur. Listedeki her bağımsız değişken, *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. *Biçim* , giriş alanlarının yorumunu denetler ve **scanf_s**için *Biçim* bağımsız değişkeniyle aynı forma ve işleve sahiptir; *Biçimlendirme açıklaması için bkz.* [Biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md) . **vfwscanf_s** , **vfscanf_s**geniş karakterli bir sürümüdür; **vfwscanf_s** biçim bağımsız değişkeni, geniş karakterli bir dizedir. Bu işlevler akış ANSI modunda açılırsa aynı şekilde davranır. **vfscanf_s** , UNICODE akışından girişi desteklememektedir.
+**Vfscanf_s** işlevi, *akışın* geçerli konumundaki verileri *Arglist* bağımsız değişken listesi (varsa) tarafından verilen konumlara okur. Listedeki her bağımsız değişken, *biçimdeki* bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. *Biçim* , giriş alanlarının yorumunu denetler ve **scanf_s** için *Biçim* bağımsız değişkeniyle aynı forma ve işleve sahiptir; *Biçimlendirme açıklaması için bkz.* [Biçim belirtimi alanları: scanf ve wscanf işlevleri](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md) . **vfwscanf_s** , **vfscanf_s** geniş karakterli bir sürümüdür; **vfwscanf_s** biçim bağımsız değişkeni, geniş karakterli bir dizedir. Bu işlevler akış ANSI modunda açılırsa aynı şekilde davranır. **vfscanf_s** , UNICODE akışından girişi desteklememektedir.
 
-Daha güvenli işlevler ( **_s** sonekine sahiptir) ve diğer sürümler arasındaki temel fark, daha güvenli işlevlerin her **c**, **c**, **s**, **s**ve **[** Type alanının karakter cinsinden boyutunun, değişkenin hemen ardından gelen bir bağımsız değişken olarak geçirilmesi için gerekli olması gerektiğidir. Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf genişlik belirtimi](../../c-runtime-library/scanf-width-specification.md).
+Daha güvenli işlevler ( **_s** sonekine sahiptir) ve diğer sürümler arasındaki temel fark, daha güvenli işlevlerin her **c**, **c**, **s**, **s** ve **[** Type alanının karakter cinsinden boyutunun, değişkenin hemen ardından gelen bir bağımsız değişken olarak geçirilmesi için gerekli olması gerektiğidir. Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf genişlik belirtimi](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
-> Boyut parametresi **`unsigned`** **size_t**değil türündedir.
+> Boyut parametresi **`unsigned`** **size_t** değil türündedir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

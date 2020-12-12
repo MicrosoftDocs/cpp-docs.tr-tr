@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin:/Zc: throwingNew (Yeni işleç oluşturur)'
 title: /Zc:throwingNew (Yeni işlecinin oluşturacağını varsay)
 ms.date: 03/01/2018
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 20ff0101-9677-4d83-8c7b-8ec9ca49f04f
-ms.openlocfilehash: 7593107a280995145d252efa76e0a88bddbd2275
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 83a78c62328853bdaf9515b55bef72503d166b58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211872"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271206"
 ---
 # <a name="zcthrowingnew-assume-operator-new-throws"></a>/Zc:throwingNew (Yeni işlecinin oluşturacağını varsay)
 
 **/Zc: throwingNew** seçeneği belirtildiğinde, derleyici `operator new` bir null işaretçi dönüşü için denetimleri atlamak üzere öğesine çağrıları iyileştirir. Bu seçenek derleyicinin tüm bağlantılı uygulamalarının `operator new` ve özel ayırıcıların C++ standardına uygun olduğunu varsaymasını ve ayırma hatası üzerine atmasını söyler. Visual Studio 'da varsayılan olarak, derleyici pessimistically, bu çağrılar için null denetimler (**/Zc: throwingNew-**) oluşturur, çünkü kullanıcılar, `operator new` null işaretçiler döndüren özel ayırıcı yordamları veya yazmasız bir uygulamayla bağlantı oluşturabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/Zc: throwingNew**[ **-** ]
 
@@ -34,7 +35,7 @@ Kavramsal olarak, ücretsiz depoda bir nesne oluşturmak için derleyici, belle�
 
 **/Zc: throwingNew** seçeneği varsayılan olarak kapalıdır ve [/Permissive-](permissive-standards-conformance.md) seçeneğinden etkilenmez.
 
-Bağlantı zamanı kod oluşturma (LTCG) kullanarak derlerseniz, **/Zc: throwingNew**belirtmeniz gerekmez. Kodunuz LTCG kullanılarak derlenirse, derleyici varsayılan, uyumlu `operator new` uygulamanın kullanıldığını algılayabilir. Bu durumda, derleyici null denetimleri otomatik olarak bırakır. Bağlayıcı, uygulamasının uygulamanın uyumlu olup olmadığını söylemek için **/ThrowingNew** bayrağını arar `operator new` . Özel operatör yeni uygulamanız için bu yönergeyi kaynağa ekleyerek bağlayıcıya bu bayrağı belirtebilirsiniz:
+Bağlantı zamanı kod oluşturma (LTCG) kullanarak derlerseniz, **/Zc: throwingNew** belirtmeniz gerekmez. Kodunuz LTCG kullanılarak derlenirse, derleyici varsayılan, uyumlu `operator new` uygulamanın kullanıldığını algılayabilir. Bu durumda, derleyici null denetimleri otomatik olarak bırakır. Bağlayıcı, uygulamasının uygulamanın uyumlu olup olmadığını söylemek için **/ThrowingNew** bayrağını arar `operator new` . Özel operatör yeni uygulamanız için bu yönergeyi kaynağa ekleyerek bağlayıcıya bu bayrağı belirtebilirsiniz:
 
 ```cpp
 #pragma comment(linker, "/ThrowingNew")
@@ -55,7 +56,7 @@ Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
 [/Zc (Uyumluluk)](zc-conformance.md)<br/>
 [noexcept (C++)](../../cpp/noexcept-cpp.md)<br/>
 [Özel Durum Belirtimleri (throw) (C++)](../../cpp/exception-specifications-throw-cpp.md)<br/>

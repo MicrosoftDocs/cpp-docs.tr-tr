@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: Işleç aşırı yüklemesi için genel kurallar'
 title: İşleç Aşırı Yüklemesi Genel Kuralları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operator overloading [C++], rules
 ms.assetid: eb2b3754-35f7-4832-b1da-c502893dc0c7
-ms.openlocfilehash: da0bf04435118c819fc29efd3082d8d312e43006
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 224bc6fb8de566519ef848471905d1ed76a020db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268736"
 ---
 # <a name="general-rules-for-operator-overloading"></a>İşleç Aşırı Yüklemesi Genel Kuralları
 
@@ -19,7 +20,7 @@ Aşağıdaki kurallar, aşırı yüklenmiş işleçlerin nasıl uygulandığın�
 
 - Yerleşik veri türlerine uygulandığında işleçlerin anlamını yeniden tanımlayamazsınız.
 
-- Aşırı yüklenmiş işleçler, statik olmayan bir sınıf üyesi işlevi ya da genel bir işlev olmalıdır. Özel veya korumalı sınıf üyelerine erişmesi gereken genel bir işlev, bu sınıfın bir arkadaşınız olarak bildirilmelidir. Genel bir işlev, sınıf veya numaralandırılmış tür olan veya bir sınıfa veya numaralandırılmış türe başvuru olan en az bir bağımsız değişken almalıdır. Örnek:
+- Aşırı yüklenmiş işleçler, statik olmayan bir sınıf üyesi işlevi ya da genel bir işlev olmalıdır. Özel veya korumalı sınıf üyelerine erişmesi gereken genel bir işlev, bu sınıfın bir arkadaşınız olarak bildirilmelidir. Genel bir işlev, sınıf veya numaralandırılmış tür olan veya bir sınıfa veya numaralandırılmış türe başvuru olan en az bir bağımsız değişken almalıdır. Örneğin:
 
     ```cpp
     // rules_for_operator_overloading.cpp

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2896'
 title: Derleyici hatası C2896
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2896
 ms.assetid: b600407b-cb05-42e3-9069-2aa6960f0eaa
-ms.openlocfilehash: 77738bd27edc6500bc75d240d951efddc30be6f1
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 096650ab4ced95ace9bbf51680339ba0258eff45
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760816"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270907"
 ---
 # <a name="compiler-error-c2896"></a>Derleyici hatası C2896
 

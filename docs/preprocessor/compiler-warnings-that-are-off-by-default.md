@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: varsayılan olarak kapalı olan Derleyici Uyarıları'
 title: Varsayılan olarak kapalı olan derleyici uyarıları
 ms.date: 08/29/2019
 helpviewer_keywords:
 - warnings, compiler
 - cl.exe compiler, setting options
 ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
-ms.openlocfilehash: 3727777c6abd3ae5ba19f147e2b6fbe559251813
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5bc482d12026bb8358d773be6a0c8b32cc2317fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836615"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269386"
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 
@@ -32,7 +33,7 @@ Aşağıdaki seçeneklerden birini kullanarak, normal olarak varsayılan olarak 
 
    `/Wall` Varsayılan olarak kapalı olan tüm uyarıları etkinleştirilir. Bu seçeneği kullanırsanız, [/WD](../build/reference/compiler-option-warning-level.md) seçeneğini kullanarak uyarıları tek tek kapatabilirsiniz.
 
-- [/w*Lnnnn*](../build/reference/compiler-option-warning-level.md)
+- [/w *Lnnnn*](../build/reference/compiler-option-warning-level.md)
 
    Bu seçenek, düzey *L*'de Uyarı *nnnn* 'yi sunar.
 
@@ -50,7 +51,7 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |[C4254](../error-messages/compiler-warnings/compiler-warning-level-4-c4254.md) (düzey 4)|'*operator*': '*Type1*' değerinden '*type2*' öğesine dönüştürme, olası veri kaybı|
 |[C4255](../error-messages/compiler-warnings/compiler-warning-level-4-c4255.md) (düzey 4)|'*Function*': hiçbir işlev prototipi verilmedi: ' () ', ' (void) ' olarak dönüştürülüyor|
 |[C4263](../error-messages/compiler-warnings/compiler-warning-level-4-c4263.md) (düzey 4)|'*Function*': üye işlev hiçbir taban sınıf sanal üye işlevini geçersiz kılmıyor|
-|[C4264](../error-messages/compiler-warnings/compiler-warning-level-1-c4264.md) (düzey 1)|'*virtual_function*': ' class ' taban '*sınıfından*sanal üye işlevi için geçersiz kılma yok; işlev gizli|
+|[C4264](../error-messages/compiler-warnings/compiler-warning-level-1-c4264.md) (düzey 1)|'*virtual_function*': ' class ' taban '*sınıfından* sanal üye işlevi için geçersiz kılma yok; işlev gizli|
 |[C4265](../error-messages/compiler-warnings/compiler-warning-level-3-c4265.md) (düzey 3)|'*Class*': sınıf sanal işlevlere sahip, ancak yıkıcı sanal değil|
 |[C4266](../error-messages/compiler-warnings/compiler-warning-level-4-c4266.md) (düzey 4)|'*Function*': temel '*Type*' öğesinden sanal üye işlevi için geçersiz kılma yok; işlev gizli|
 |[C4287](../error-messages/compiler-warnings/compiler-warning-level-3-c4287.md) (düzey 3)|'*operator*': işaretsiz/negatif sabit uyuşmazlığı|
@@ -91,7 +92,7 @@ Aşağıdaki uyarılar, Visual Studio 2015 ve sonraki sürümlerinde varsayılan
 |[C4596](../error-messages/compiler-warnings/c4596.md) (düzey 4)|'*tanımlayıcı*': üye bildiriminde geçersiz nitelenmiş ad <sup>14,3</sup> <sup>izin</sup>|
 |C4598 (düzey 1 ve düzey 3)|' #include "*üst bilgisi*" ': üst bilgi numarası *üstbilgisi-* ön derlenmiş üstbilgideki sayı bu konumdaki geçerli derleme ile eşleşmiyor <sup>14,3</sup>|
 |C4599 (düzey 3)|'*seçenek* *yolu*': komut satırı bağımsız değişkeni numara *numarası* önceden derlenmiş üst bilgi <sup>14,3</sup> ile eşleşmiyor|
-|C4605 (düzey 1)|Geçerli komut satırında '/d*makro*' belirtildi, ancak önceden derlenmiş üstbilgi oluşturulduğunda belirtilmemiş|
+|C4605 (düzey 1)|Geçerli komut satırında '/d *makro*' belirtildi, ancak önceden derlenmiş üstbilgi oluşturulduğunda belirtilmemiş|
 |[C4608](../error-messages/compiler-warnings/compiler-warning-level-3-c4608.md) (düzey 3)|'*union_member*', Başlatıcı listesindeki başka bir birleşim üyesi tarafından zaten başlatıldı, '*union_member*' <sup>izin</sup>|
 |[C4619](../error-messages/compiler-warnings/compiler-warning-level-3-c4619.md) (düzey 3)|#pragma uyarı: '*Number*' uyarı numarası yok|
 |[C4623](../error-messages/compiler-warnings/compiler-warning-level-4-c4623.md) (düzey 4)|'derived class': bir taban sınıf varsayılan oluşturucusuna erişilemediğinden varsayılan oluşturucu üretilemedi|

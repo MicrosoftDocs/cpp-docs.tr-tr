@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: donanım özel durumları'
 title: Donanım özel durumları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - hardware exceptions [C++]
 - low level errors
 ms.assetid: 06ac6f01-a8cf-4426-bb12-1688315ae1cd
-ms.openlocfilehash: 8adfd59eab0960ab14b2becb8d9864c77196c909
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3fccda4f23aa260f737f81e877d2ea9d673ebafe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188682"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268723"
 ---
 # <a name="hardware-exceptions"></a>Donanım özel durumları
 
@@ -27,7 +28,7 @@ Windows tarafından tanınan donanım özel durumları, aşağıdaki tabloda öz
 |--------------------|------------------------|
 |STATUS_ACCESS_VIOLATION|Erişilemeyen bellek konumu okunuyor veya bu konuma yazılıyor.|
 |STATUS_BREAKPOINT|Donanım tarafından tanımlanmış bir kesme noktasıyla karşılaşıldı; yalnızca hata ayıklayıcılar tarafından kullanılır.|
-|STATUS_DATATYPE_MISALIGNMENT|Düzgün bir şekilde hizalanmamış bir adreste veriler okunuyor veya yazılıyor; örneğin, 16 bit varlıklar 2 bayt sınırlarda hizalanmalıdır. (Intel 80*x*86 işlemciler için geçerli değildir.)|
+|STATUS_DATATYPE_MISALIGNMENT|Düzgün bir şekilde hizalanmamış bir adreste veriler okunuyor veya yazılıyor; örneğin, 16 bit varlıklar 2 bayt sınırlarda hizalanmalıdır. (Intel 80 *x* 86 işlemciler için geçerli değildir.)|
 |STATUS_FLOAT_DIVIDE_BY_ZERO|Kayan nokta türü 0.0 ile bölünüyor.|
 |STATUS_FLOAT_OVERFLOW|Kayan nokta türünün en fazla pozitif üssü aşılıyor.|
 |STATUS_FLOAT_UNDERFLOW|Kayan nokta türünün en düşük negatif üssünün büyüklüğü aşılıyor.|
@@ -42,5 +43,5 @@ Yukarıdaki tabloda listelenen özel durumların çoğunun hata ayıklayıcılar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)<br/>
+[Özel Durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

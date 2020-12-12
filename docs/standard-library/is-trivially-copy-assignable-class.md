@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_trivially_copy_assignable sınıfı'
 title: is_trivially_copy_assignable sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_copy_assignable
 ms.assetid: 7410133e-f367-493f-92a7-e34e3ec5e879
-ms.openlocfilehash: c0019257a032d3becc268513336ed59e58a2e1d5
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 010e820db570f594568cb60f4edae83b91a997c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448005"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271245"
 ---
-# <a name="istriviallycopyassignable-class"></a>is_trivially_copy_assignable sınıfı
+# <a name="is_trivially_copy_assignable-class"></a>is_trivially_copy_assignable sınıfı
 
 Türün bir Önemsiz kopya atama işlecine sahip olup olmadığını sınar.
 
@@ -26,18 +27,18 @@ struct is_trivially_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Tür *T* , Önemsiz kopya atama operatörü olan bir sınıf ise true, aksi takdirde false barındırır.
 
-*Sınıf t* için atama Oluşturucusu, örtük olarak sağlanmışsa, *t* sınıfı sanal bir Işleve sahip değildir, *t* sınıfının sanal temeli yoktur, sınıf türündeki tüm statik olmayan veri üyelerinin sınıfları ise önemsiz atamadır İşleçler ve sınıf dizisi türündeki tüm statik olmayan veri üyelerinin basit atama işleçleri vardır.
+Sınıf t için atama Oluşturucusu, örtük olarak sağlanmışsa, *t* sınıfı sanal bir işleve *sahip değildir,* *t* sınıfının sanal bir tabanı yoktur, sınıf türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz atama işleçlerine sahiptir ve sınıf dizisi türündeki tüm statik olmayan veri üyelerinin sınıfları, önemsiz atama işleçleridir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

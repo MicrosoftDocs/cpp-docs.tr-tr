@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: `/Zc:strictStrings` (dize sabit değer türü dönüştürmeyi devre dışı bırak)'
 title: /Zc:strictStrings (Değişmez değer dize türü dönüşümünü devre dışı bırakma)
 ms.date: 03/06/2018
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
-ms.openlocfilehash: df880ed64fa472ff55eb5ee0d17caacf56228ab6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 38c0ac2fe69acd81762fbf26797eece659ee63a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269061"
 ---
-# <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>`/Zc:strictStrings`(Dize sabit değer türü dönüştürmeyi devre dışı bırak)
+# <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>`/Zc:strictStrings` (Dize sabit değer türü dönüştürmeyi devre dışı bırak)
 
 Belirtildiğinde, derleyici, **`const`** dize sabit değerleri kullanılarak başlatılan işaretçiler için katı nitelik uyumluluğu gerektirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:strictStrings`**[**`-`**]
 
@@ -72,4 +73,4 @@ Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[`/Zc`Uyumsuzlu](zc-conformance.md)<br/>
+[`/Zc` Uyumsuzlu](zc-conformance.md)<br/>

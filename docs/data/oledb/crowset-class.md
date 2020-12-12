@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CRowset sınıfı'
 title: CRowset Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -228,12 +229,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: b351530326e0dc4ed0b72db50d17717824eb6bb4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2d767803dcf5aac6dd4954d970ca753b3cfb24c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507276"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268541"
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 
@@ -296,7 +297,7 @@ Bu sınıfın örneği oluşturulamaz, ancak veya ' a `CTable` `CCommand` (varsa
 
 Geçerli satır tutamacı ile ilişkili başvuru sayısını artırmak için [IRowset:: AddRefRows](/previous-versions/windows/desktop/ms719619(v=vs.85)) çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT AddRefRows() throw();
@@ -314,7 +315,7 @@ Bu yöntem, geçerli satır tanıtıcısının başvuru sayısını artırır. S
 
 Satırları ve geçerli [IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) arabirimini yayınlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close() throw();
@@ -378,7 +379,7 @@ CRowset(IRowset* pRowset);
 
 Kayıt kümesinden geçerli satırı silmek için [IRowsetChange::D eleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)) çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT Delete() const throw();
@@ -530,7 +531,7 @@ Bu işlevi nasıl kullanacağınızı gösteren bir örnek için bkz. [MultiRead
 
 `IRowsetUpdate::GetOriginalData`Veri kaynağından en son getirilen veya aktarılan verileri almak için çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT GetOriginalData() throw();
@@ -602,7 +603,7 @@ Bir veya daha fazla sütun yazılabilir değilse INSERT başarısız olabilir. B
 
 Aşağıdaki örnek, bir veri kaynağına bir satır kümesi aracılığıyla nasıl eriş, sonra o satır kümesindeki bir tabloyu kullanarak bir dize nasıl ekleneceğini gösterir.
 
-İlk olarak, projenize yeni bir ATL nesnesi ekleyerek tablo sınıfı oluşturun. Örneğin, çalışma alanı bölmesinde projeye sağ tıklayın ve **yenı ATL nesnesi**' ni seçin. **Veri erişimi** kategorisinden **Tüketici**' yi seçin. **Tablo**türünde bir tüketici nesnesi oluşturun. ( **Tablo** seçme doğrudan tablodan bir satır kümesi oluşturur; **komut** seçme seçeneği bir SQL komutu aracılığıyla bir satır kümesi oluşturur.) Bu veri kaynağına erişmek için bir tablo belirterek bir veri kaynağı seçin. Tüketici nesneniz **Ccustomertable**' ı çağırırsanız, ekleme kodunuzu aşağıdaki şekilde uygulamalısınız:
+İlk olarak, projenize yeni bir ATL nesnesi ekleyerek tablo sınıfı oluşturun. Örneğin, çalışma alanı bölmesinde projeye sağ tıklayın ve **yenı ATL nesnesi**' ni seçin. **Veri erişimi** kategorisinden **Tüketici**' yi seçin. **Tablo** türünde bir tüketici nesnesi oluşturun. ( **Tablo** seçme doğrudan tablodan bir satır kümesi oluşturur; **komut** seçme seçeneği bir SQL komutu aracılığıyla bir satır kümesi oluşturur.) Bu veri kaynağına erişmek için bir tablo belirterek bir veri kaynağı seçin. Tüketici nesneniz **Ccustomertable**' ı çağırırsanız, ekleme kodunuzu aşağıdaki şekilde uygulamalısınız:
 
 [!code-cpp[NVC_OLEDB_Consumer#10](../../data/oledb/codesnippet/cpp/crowset-insert_1.cpp)]
 
@@ -629,7 +630,7 @@ Standart HRESULT. S_OK satırların aynı olduğunu gösterir. Diğer değerler 
 
 İmleci ilk konuma taşıın ve ilk satırı alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT MoveFirst() throw();
@@ -647,7 +648,7 @@ Sonraki getirme konumunu ilk konum olarak yeniden konumlandırmak için [IRowset
 
 İmleci son satıra kaydırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT MoveLast() throw();
@@ -704,7 +705,7 @@ Aksi takdirde ( *lSkip* >= 0 ve *bForward* = true), ek özellikler ayarlamanız 
 
 İmleci önceki kayda kaydırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT MovePrev() throw();
@@ -787,7 +788,7 @@ Bu yöntem `IRowsetScroll` , tüm sağlayıcılar üzerinde desteklenmeyebilir i
 
 Geçerli satır tanıtıcısını serbest bırakmak için [IRowset:: ReleaseRows](/previous-versions/windows/desktop/ms719771(v=vs.85)) çağırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 HRESULT ReleaseRows() throw();

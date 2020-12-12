@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: New Işleci (C++)'
 title: new İşleci (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - new keyword [C++]
 ms.assetid: 69fee812-1c28-4882-8fda-d1ad17860004
-ms.openlocfilehash: 0c3ed59262ec5ad061572d23c1166b2153cb16ca
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 5bfc6fdc59348defc87d26dae1056ae80dab3ec5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268632"
 ---
 # <a name="new-operator-c"></a>new İşleci (C++)
 
@@ -228,16 +229,16 @@ int main()
 
 - Nesneleri başlatır. Başlatma tamamlandıktan sonra, ayrılan depolamanın bir nesne olması için yeterli bilgi mevcuttur.
 
-- *Yeni-tür-adı* veya *tür-adından*türetilmiş bir işaretçi türünün nesne (ler) i için bir işaretçi döndürür. Program, bu işaretçiyi yeni ayrılan nesneye erişmek için kullanır.
+- *Yeni-tür-adı* veya *tür-adından* türetilmiş bir işaretçi türünün nesne (ler) i için bir işaretçi döndürür. Program, bu işaretçiyi yeni ayrılan nesneye erişmek için kullanır.
 
-**`new`** İşleci **New işlev işlecini**çağırır. Herhangi bir türdeki diziler için ve, veya türünde olmayan nesneler için, **`class`** **`struct`** **`union`** depolama alanı ayırmak için **:: New**genel işlevi çağırılır. Sınıf türü nesneler, sınıf başına **Yeni** statik üye işlevini her sınıf temelinde tanımlayabilir.
+**`new`** İşleci **New işlev işlecini** çağırır. Herhangi bir türdeki diziler için ve, veya türünde olmayan nesneler için, **`class`** **`struct`** **`union`** depolama alanı ayırmak için **:: New** genel işlevi çağırılır. Sınıf türü nesneler, sınıf başına **Yeni** statik üye işlevini her sınıf temelinde tanımlayabilir.
 
-Derleyici, türü türünde **`new`** bir nesne ayırmak için işleçle karşılaştığında, **type**:: New işleci `type` **(sizeof (** `type` **))** veya bir Kullanıcı tanımlı **işleç** tanımlanmazsa, **:: New işleci (sizeof (** `type` **))** öğesine bir çağrı yayınlar. Bu nedenle, **`new`** işleci nesne için doğru miktarda bellek ayırabilir.
+Derleyici, türü türünde **`new`** bir nesne ayırmak için işleçle karşılaştığında, :: New işleci `type` **(sizeof (** `type` **))** veya bir Kullanıcı tanımlı **işleç** tanımlanmazsa, **:: New işleci (sizeof (** `type` **))** öğesine bir çağrı yayınlar. Bu nedenle, **`new`** işleci nesne için doğru miktarda bellek ayırabilir.
 
 > [!NOTE]
 > **New işlecine** yönelik bağımsız değişken türündedir `size_t` . Bu tür,,,,,,, ve içinde tanımlanır \<direct.h> \<malloc.h> \<memory.h> \<search.h> \<stddef.h> \<stdio.h> \<stdlib.h> \<string.h> \<time.h> .
 
-Dilbilgisinde bir seçenek, *yerleştirme* belirtimine izin verir (bkz. [Yeni operatör](../cpp/new-operator-cpp.md)için dilbilgisi). *Yerleştirme* parametresi yalnızca **New işlecinin**Kullanıcı tanımlı uygulamaları için kullanılabilir; ek bilgilerin **Yeni işleçle**geçirilmesini sağlar. Gibi *yerleştirme* alanı olan bir ifade, `T *TObject = new ( 0x0040 ) T;` `T *TObject = T::operator new( sizeof( T ), 0x0040 );` sınıf T 'de üye işleci New, aksi durumda öğesine çevrilir `T *TObject = ::operator new( sizeof( T ), 0x0040 );` .
+Dilbilgisinde bir seçenek, *yerleştirme* belirtimine izin verir (bkz. [Yeni operatör](../cpp/new-operator-cpp.md)için dilbilgisi). *Yerleştirme* parametresi yalnızca **New işlecinin** Kullanıcı tanımlı uygulamaları için kullanılabilir; ek bilgilerin **Yeni işleçle** geçirilmesini sağlar. Gibi *yerleştirme* alanı olan bir ifade, `T *TObject = new ( 0x0040 ) T;` `T *TObject = T::operator new( sizeof( T ), 0x0040 );` sınıf T 'de üye işleci New, aksi durumda öğesine çevrilir `T *TObject = ::operator new( sizeof( T ), 0x0040 );` .
 
 *Yerleştirme* alanının özgün amacı, donanıma bağımlı nesnelerin Kullanıcı tarafından belirtilen adreslerde ayrılmasına izin veriydi.
 
@@ -255,5 +256,5 @@ Kapsam çözümleme işleci (), `::` genel işleç kullanımını zorlar **`new`
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
 [new ve delete işleçleri](../cpp/new-and-delete-operators.md)

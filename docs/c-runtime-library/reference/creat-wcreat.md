@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _creat _wcreat'
 title: _creat, _wcreat
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - creat function
 - _tcreat function
 ms.assetid: 3b3b795d-1620-40ec-bd2b-a4bbb0d20fe5
-ms.openlocfilehash: 379a4adbf17755341fed6a48c649afe29e150fe5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 716f0d11af408ba30cb91744fd770300272dc26b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912121"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269048"
 ---
 # <a name="_creat-_wcreat"></a>_creat, _wcreat
 
@@ -80,13 +81,13 @@ Bu işlevler, başarılı olursa oluşturulan dosyaya bir dosya tanımlayıcıs�
 |**EMFıLE**|Kullanılabilir başka dosya tanımlayıcısı yok.|
 |**ENOENT**|Belirtilen dosya bulunamadı.|
 
-*Dosya adı* **null**Ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür.
+*Dosya adı* **null** Ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Creat** işlevi yeni bir dosya oluşturur veya var olan bir dosyayı açıp keser. **_wcreat** , **_creat**geniş karakterli bir sürümüdür; _wcreat *dosya adı* bağımsız **_wcreat** değişkeni, geniş karakterli bir dizedir. **_wcreat** ve **_creat** aynı şekilde davranır.
+**_Creat** işlevi yeni bir dosya oluşturur veya var olan bir dosyayı açıp keser. **_wcreat** , **_creat** geniş karakterli bir sürümüdür; _wcreat *dosya adı* bağımsız  değişkeni, geniş karakterli bir dizedir. **_wcreat** ve **_creat** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -96,7 +97,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcreat**|**_creat**|**_creat**|**_wcreat**|
 
-Dosya *adı* tarafından belirtilen dosya yoksa, belirtilen izin ayarıyla yeni bir dosya oluşturulur ve yazma için açılır. Dosya zaten varsa ve izin ayarı yazmaya izin veriyorsa, **_creat** dosyayı 0 uzunluğuna kırpar, önceki içerikleri yok edin ve yazmak için açar. İzin ayarı, *pmode*, yalnızca yeni oluşturulan dosyalar için geçerlidir. Yeni dosya, ilk kez kapatıldıktan sonra belirtilen izin ayarını alır. *Pmode* tamsayı ifadesi bir veya her ikisini de **_S_IWRITE** , SYS\Stat.exe içinde tanımlanan bildirim sabitlerinden birini ya da **_S_IREAD**içerir. Her iki sabit de verildiğinde, bit düzeyinde OR işleci ( **&#124;** ) ile birleştirilir. *Pmode* parametresi aşağıdaki değerlerden birine ayarlanır.
+Dosya *adı* tarafından belirtilen dosya yoksa, belirtilen izin ayarıyla yeni bir dosya oluşturulur ve yazma için açılır. Dosya zaten varsa ve izin ayarı yazmaya izin veriyorsa, **_creat** dosyayı 0 uzunluğuna kırpar, önceki içerikleri yok edin ve yazmak için açar. İzin ayarı, *pmode*, yalnızca yeni oluşturulan dosyalar için geçerlidir. Yeni dosya, ilk kez kapatıldıktan sonra belirtilen izin ayarını alır. *Pmode* tamsayı ifadesi bir veya her ikisini de **_S_IWRITE** , SYS\Stat.exe içinde tanımlanan bildirim sabitlerinden birini ya da **_S_IREAD** içerir. Her iki sabit de verildiğinde, bit düzeyinde OR işleci ( **&#124;** ) ile birleştirilir. *Pmode* parametresi aşağıdaki değerlerden birine ayarlanır.
 
 |Değer|Tanım|
 |-----------|----------------|
@@ -104,7 +105,7 @@ Dosya *adı* tarafından belirtilen dosya yoksa, belirtilen izin ayarıyla yeni 
 |**_S_IREAD**|Okuma izni verildi.|
 |**_S_IREAD** &#124; **_S_IWRITE**|Okuma ve yazma izni verildi.|
 
-Yazma izni verilmezse, dosya salt okunurdur. Tüm dosyalar her zaman okunabilir; salt yazılır izin vermek olanaksızdır. **_S_IWRITE** ve **_S_IREAD** | **_S_IWRITE** modları eşdeğerdir. **_Creat** kullanılarak açılan dosyalar her zaman uyumluluk modunda açılır (bkz. [_sopen](sopen-wsopen.md)) **_SH_DENYNO**.
+Yazma izni verilmezse, dosya salt okunurdur. Tüm dosyalar her zaman okunabilir; salt yazılır izin vermek olanaksızdır. **_S_IWRITE** ve **_S_IREAD**  |  **_S_IWRITE** modları eşdeğerdir. **_Creat** kullanılarak açılan dosyalar her zaman uyumluluk modunda açılır (bkz. [_sopen](sopen-wsopen.md)) **_SH_DENYNO**.
 
 **_creat** , izinleri ayarlamadan önce geçerli dosya izni maskesini *pmode* 'a uygular (bkz. [_umask](umask.md)). **_creat** öncelikle önceki kitaplıklarla uyumluluk için sağlanır. *Oflag* parametresindeki **_O_CREAT** ve **_O_TRUNC** ile **_open** çağrısı **_creat** eşdeğerdir ve yeni kod için tercih edilir.
 
@@ -112,8 +113,8 @@ Yazma izni verilmezse, dosya salt okunurdur. Tüm dosyalar her zaman okunabilir;
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_creat**|\<GÇ. h>|\<sys/Types. h>, \<sys/stat. h>, \<errno. h>|
-|**_wcreat**|\<GÇ. h> veya \<wchar. h>|\<sys/Types. h>, \<sys/stat. h>, \<errno. h>|
+|**_creat**|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
+|**_wcreat**|\<io.h> veya \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

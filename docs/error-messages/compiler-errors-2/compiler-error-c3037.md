@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3037'
 title: Derleyici hatası C3037
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3037
 ms.assetid: 9ba8a890-d3c7-4cce-93c5-d358e2bfad28
-ms.openlocfilehash: f7a2e4cfe40366db06e2418616825ef467a2271a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: f8ccf87ca09aaf90fb07b197279e994eeb27f249
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508473"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270062"
 ---
 # <a name="compiler-error-c3037"></a>Derleyici hatası C3037
 

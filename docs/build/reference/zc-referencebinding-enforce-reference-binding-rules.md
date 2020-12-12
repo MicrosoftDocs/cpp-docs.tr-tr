@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin:/Zc: referenceBinding (başvuru bağlama kurallarını zorla)'
 title: /Zc:referenceBinding (Başvuru bağlama kurallarını zorla)
 ms.date: 03/06/2018
 f1_keywords:
@@ -11,20 +12,20 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 0c6cfaac-9c2a-41a3-aa94-64ca8ef261fc
-ms.openlocfilehash: b7e297d6fd913ddda4d44a42298a361e314af0b5
-ms.sourcegitcommit: a930a9b47bd95599265d6ba83bb87e46ae748949
+ms.openlocfilehash: 7d094a2ec3ec680c463a7a756e70e02b9c40c07c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76518484"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269165"
 ---
 # <a name="zcreferencebinding-enforce-reference-binding-rules"></a>/Zc:referenceBinding (Başvuru bağlama kurallarını zorla)
 
 **/Zc: referenceBinding** seçeneği belirtildiğinde, derleyici const olmayan bir lvalue başvurusunun geçici bağlama yapmasına izin vermez.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/Zc:referenceBinding**[ **-** ]
+> **/Zc: referenceBinding**[ **-** ]
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -55,18 +56,18 @@ int main() {
 }
 ```
 
-Visual C++'teki uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
+Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual C++ Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **CC++ /**  > **komut satırı** Özellik sayfası ' nı seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
 1. **Ek seçenekler** özelliğini **/Zc: referencebinding** ' i içerecek şekilde değiştirin ve ardından **Tamam**' ı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
 [/Zc (Uyumluluk)](zc-conformance.md)<br/>

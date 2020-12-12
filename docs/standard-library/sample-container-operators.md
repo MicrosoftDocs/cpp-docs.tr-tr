@@ -1,14 +1,15 @@
 ---
-title: '&lt;Örnek kapsayıcı&gt; işleçleri'
+description: 'Daha fazla bilgi edinin: &lt; örnek kapsayıcı &gt; işleçleri'
+title: '&lt;örnek kapsayıcı &gt; işleçleri'
 ms.date: 11/04/2016
 ms.assetid: 6cd28cdc-8318-4941-a06c-2c32758383fd
-ms.openlocfilehash: bb504091a85f74ce0e2a073f5a340cb0f11796d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 11c5a67eaecd20446db22eca5e781017669a88a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269191"
 ---
-# <a name="ltsample-containergt-operators"></a>&lt;Örnek kapsayıcı&gt; işleçleri
+# <a name="ltsample-containergt-operators"></a>&lt;örnek kapsayıcı &gt; işleçleri
 
-İşleçler hakkında daha fazla bilgi için \<örnek kapsayıcı >, bkz: [ \<örnek kapsayıcı >](../standard-library/sample-container.md).
+İçindeki işleçler hakkında daha fazla bilgi için \<sample container> bkz [\<sample container>](../standard-library/sample-container.md) ..

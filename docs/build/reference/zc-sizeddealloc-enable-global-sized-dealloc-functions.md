@@ -1,5 +1,6 @@
 ---
-title: '/ ZC: sizeddealloc (Global boyutlu ayırmayı kaldırma işlevlerini etkinleştir)'
+description: 'Şu konuda daha fazla bilgi edinin:/Zc: Sizeddeallocation (genel boyutlu ayırmayı kaldırma Işlevlerini etkinleştir)'
+title: '/Zc: Sizeddeallocation (genel boyutlu ayırmayı kaldırma Işlevlerini etkinleştir)'
 ms.date: 03/06/2018
 f1_keywords:
 - sizedDealloc
@@ -11,45 +12,45 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 3a73ace0-4d36-420a-b699-0ca6fc0dd134
-ms.openlocfilehash: dc381058c6a2ef84542be1d3cdd00c410aa51c2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e40355dc3c61f725ca9996dc4c91c0604866fe4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315488"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269074"
 ---
-# <a name="zcsizeddealloc-enable-global-sized-deallocation-functions"></a>/ ZC: sizeddealloc (Global boyutlu ayırmayı kaldırma işlevlerini etkinleştir)
+# <a name="zcsizeddealloc-enable-global-sized-deallocation-functions"></a>/Zc: Sizeddeallocation (genel boyutlu ayırmayı kaldırma Işlevlerini etkinleştir)
 
-**/ZC: sizeddealloc** derleyici seçeneği tercihen genel çağırmak için derleyiciye `operator delete` veya `operator delete[]` türünde ikinci bir parametreye sahip işlevler `size_t` nesnenin boyutu ne zaman kullanılabilir. Bu işlevler kullanabilir `size_t` birleştiricinin performansını iyileştirmek için parametre.
+**/Zc: Sizeddeallocation** derleyici seçeneği, derleyicinin, `operator delete` `operator delete[]` `size_t` nesne boyutu kullanılabilir olduğunda ikinci bir parametresi olan küresel veya işlevleri tercihe bağlı olarak çağırmasını söyler. Bu işlevler, `size_t` deayırıcı performansını iyileştirmek için parametresini kullanabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/Zc:sizedDealloc**[**-**]
+> **/Zc: Sizeddeayırma**[ **-** ]
 
 ## <a name="remarks"></a>Açıklamalar
 
-C ++ 11'de standart statik üye işlevleri tanımlayabilir `operator delete` ve `operator delete[]` saniyenin ele `size_t` parametresi. Genellikle bunlar birlikte kullanılır [new işleci](../../cpp/new-operator-cpp.md) daha verimli ayırıcılar ve nesne için deallocators uygulamak için işlevleri. Ancak, C ++ 11 ayırmayı kaldırma işlevlerini genel kapsamda eşdeğer bir kümesini tanımlamıyor. Türünde ikinci bir parametreye sahip C ++ 11, genel ayırmayı kaldırma işlevlerini de `size_t` yerleştirme delete işlevleri olarak kabul edilir. Bunlar, bir boyut bağımsız değişkeni geçirerek açıkça çağrılmalıdır.
+C++ 11 standardında statik üye işlevlerini tanımlayabilir `operator delete` ve `operator delete[]` ikinci bir `size_t` parametre alabilirsiniz. Genellikle bunlar, nesne için daha etkin ayırıcıları ve anlaşmacıları uygulamak üzere [operatör yeni](../../cpp/new-operator-cpp.md) işlevleriyle birlikte kullanılır. Ancak, C++ 11 genel kapsamda bir dizi ayırmayı kaldırma işlevi tanımlamaz. C++ 11 ' de, ikinci bir parametreye sahip genel ayırmayı kaldırma işlevleri `size_t` yerleştirme silme işlevleri olarak kabul edilir. Bir boyut bağımsız değişkeni geçirerek açıkça çağrılması gerekir.
 
-C ++ 14 standart derleyici davranışını değiştirir. Genel tanımladığınızda `operator delete` ve `operator delete[]` türünde ikinci bir parametre alır `size_t`, derleyici üye kapsamı sürümleri çağrılmayacağı ve nesnenin boyutu kullanılabilir olduğunda bu işlevleri çağırmak tercih eder. Derleyici örtük olarak bir boyut bağımsız değişkeni geçirir. Derleyici serbest bırakılmakta nesnenin boyutunu belirlerken tek bağımsız değişken sürümleri çağrılır. Aksi takdirde, ayırmayı kaldırma işlevi çağırmak için sürümünü seçmek için genel kurallar hala geçerlidir. Genel işlevler için çağrıları açıkça belirtilebilir kapsam çözümleme işleci eklenerek (`::`) ayırmayı kaldırma işlevi çağrısı için.
+C++ 14 standart, derleyicinin davranışını değiştirir. Genel tanımladığınızda `operator delete` ve `operator delete[]` türünde ikinci bir parametre alan `size_t` , derleyici üye kapsam sürümleri çağrılmıyorsa ve nesnenin boyutu kullanılabilir olduğunda bu işlevleri çağırmayı tercih eder. Derleyici, boyut bağımsız değişkenini örtük olarak geçirir. Tek bağımsız değişken sürümleri, derleyici serbest bırakılmış nesnenin boyutunu belirleyene zaman çağrılır. Aksi takdirde, çağırma işlevinin çağırmak için bir sürümü seçmeye yönelik olağan kurallar, hala geçerlidir. Genel işlevlere yapılan çağrılar, kapsam çözümleme işleci ( `::` ) tarafından ayırmayı kaldırma işlev çağrısına önceden bekleniyor ile açıkça belirtilebilir.
 
-Varsayılan olarak, Visual C++ Visual Studio 2015'ten başlayarak, bu C ++ 14 standart davranışı uygular. Ayarlayarak bunu açıkça belirtebilirsiniz **/ZC: sizeddealloc** derleyici seçeneği. Bu büyük olasılıkla bozucu temsil eder. değişiklik. Kullanma **/Zc:sizedDealloc-** kodunuzu türünde ikinci bir parametre kullanın yerleştirme delete işleçleri tanımladığında eski davranışı için koruma seçeneği `size_t`. Varsayılan Visual Studio kitaplığı uygulamaları ikinci parametre türü olan genel ayırmayı kaldırma işlevlerini `size_t` tek parametre sürümleri çağırır. Kodunuzu tek tek-parametre genel sağlarsa delete işleci ve operator delete [], global boyutlu ayırmayı kaldırma işlevlerini varsayılan kitaplık uygulamaları genel işlevlerinizi çağırma.
+Varsayılan olarak, Visual Studio 2015 ' den itibaren Visual C++, bu C++ 14 standart davranışını uygular. Bunu, **/Zc: Sizeddeayırma** derleyici seçeneğini ayarlayarak açıkça belirtebilirsiniz. Bu, olası bir değişikliği temsil eder. Eski davranışı korumak için **/Zc: Sizeddeallocation-** seçeneğini kullanın, örneğin, kodunuzun yerleştirme silme işleçlerini ikinci bir parametre türünde kullanır `size_t` . Tek parametre sürümlerini çağır türünde ikinci parametreye sahip olan genel ayırmayı kaldırma işlevlerinin varsayılan Visual Studio kitaplığı uygulamaları `size_t` . Kodunuz yalnızca tek parametreli genel işleç Delete ve operator delete [] sağlarsa, genel boyutlu ayırmayı kaldırma işlevlerinin varsayılan kitaplık uygulamaları genel işlevlerinizi çağırır.
 
-**/ZC: sizeddealloc** derleyici seçeneği varsayılan olarak açıktır. [/ Permissive-](permissive-standards-conformance.md) seçeneği etkilemez **/ZC: sizeddealloc**.
+**/Zc: Sizeddeayırma** derleyicisi seçeneği varsayılan olarak açık. [/Permissive-](permissive-standards-conformance.md) seçeneği **/Zc: sizeddeayırmayı** etkilemez.
 
-Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 
 ## <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Gelen **yapılandırmaları** açılır menü öğesini **yapılandırmalarında**.
+1. **Konfigürasyonlar** açılan menüsünde **Tüm Konfigürasyonlar**' ı seçin.
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: sizeddealloc** veya **/Zc:sizedDealloc-** seçip **Tamam**.
+1. **Ek seçenekler** özelliğini **/Zc: Sizeddeallocation** veya **/Zc: sizeddeallocation** ' i içerecek şekilde değiştirin ve ardından **Tamam**' ı seçin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
 [/Zc (Uyumluluk)](zc-conformance.md)<br/>
