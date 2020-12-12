@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: DHTML Düzenle komut eşlemeleri'
 title: DHTML Düzenleme Komutu Eşlemeleri
 ms.date: 11/04/2016
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-ms.openlocfilehash: f4bbfb500e8de9594bbaa334b4e227caeaa845da
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: da50d9b58e5294622da0685450e01ad0acabad3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220116"
 ---
 # <a name="dhtml-editing-command-maps"></a>DHTML Düzenleme Komutu Eşlemeleri
 

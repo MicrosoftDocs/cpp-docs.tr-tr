@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Kullanıcı Arabirimi Özellikleri, MFC Uygulama Sihirbazı'
 title: Kullanıcı Arabirimi Özellikleri, MFC Uygulama Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,60 +7,60 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, user interface features
 ms.assetid: 59e7b829-a665-42eb-be23-3f2a36eb2dad
-ms.openlocfilehash: 6ca67d4cac3786ce8bb059464d47acf17e3ecdc7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac2c3dc7881fd5e931539224bed121c617b940a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218517"
 ---
 # <a name="user-interface-features-mfc-application-wizard"></a>Kullanıcı Arabirimi Özellikleri, MFC Uygulama Sihirbazı
 
-Bu konuda, uygulamanızın görünümünü belirtmek için kullanabileceğiniz seçenekler açıklanmaktadır. Projeniz için kullanılabilir kullanıcı arabirimi özellikleri, belirttiğiniz uygulama türüne bağlıdır [Application Type, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası. Örneğin, bir tek belge arabirimi uygulaması oluşturursanız, alt çerçeve stilleri ekleyemezsiniz.
+Bu konuda, uygulamanızın görünümünü belirtmek için kullanabileceğiniz seçenekler açıklanmaktadır. Projeniz için kullanılabilir olan kullanıcı arabirimi özellikleri, MFC Uygulama Sihirbazı 'nın [uygulama türü, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında belirttiğiniz uygulamanın türüne bağlıdır. Örneğin, tek bir belge arabirim uygulaması oluşturursanız, alt çerçeve stilleri ekleyemezsiniz.
 
 - **Ana çerçeve stilleri**
 
-   Uygulamanızın ana pencere çerçevesi özelliklerini ayarlar.
+   Uygulamanızın ana pencere çerçevesinin özelliklerini ayarlar.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Kalın kenarlığa**|Boyutlandırma kenarlığı içeren bir pencere oluşturur. Varsayılan.|
-   |**Simge durumuna küçültme kutusu**|Ana çerçeve penceresine bir simge durumuna küçült kutusu içerir. Varsayılan.|
-   |**Ekranı kaplama kutusu**|Ana çerçeve penceresine ekranı kaplama kutusunu içerir. Varsayılan.|
-   |**Simge durumuna küçültülmüş**|Ana çerçeve penceresi simge olarak açılır.|
-   |**Tam ekran**|Tam ekran boyutuna ana çerçeve penceresi açılır.|
-   |**Sistem menüsü**|Ana çerçeve penceresine bir sistem menüsünü içerir. Varsayılan.|
-   |**Hakkında kutusu**|İçeren bir **hakkında** uygulamanın kutusu. Kullanıcının bu kutu uygulamanın erişebildiği **yardımcı** menüsü. Varsayılan ve seçtiğiniz sürece değiştirilemez bir biçimde **iletişim kutusu tabanlı**, [Application Type, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md) sayfası.<br /><br /> **Not** genellikle kullanılamaz öğesinin onay kutusunu seçili ya da işaretli Sihirbazı seçeneği proje için geçerli değildir kullanılamayan bir seçenek gösterir. Bu durumda, sihirbaz her zaman ekler bir **hakkında** projeye, proje iletişim kutusu tabanlı belirtmediğiniz sürece kutusuna ve ardından kutunun işaretini kaldırın.|
-   |**İlk durum çubuğu**|Uygulamanız için bir durum çubuğu ekler. Durum çubuğu klavyenin CAPS LOCK ve NUM LOCK SCROLL LOCK anahtarları için otomatik göstergeleri içerir ve menü komutları ve araç için yardımı görüntüler bir ileti satırı düğmeleri dizeleri. Bu seçeneğe tıkladığınızda, menü komutlarını durum çubuğunu görüntüleme veya gizleme için ekler. Varsayılan olarak, bir uygulama bir durum çubuğu vardır. İletişim kutusu tabanlı uygulama türleri için kullanılamaz.|
-   |**Bölünmüş pencere**|Bir ayırıcıyı sağlar. Ayırıcıyı uygulamanın ana görünümlerine böler. Birden çok belge arabirimi (MDI) uygulamasında MDI alt çerçeve istemci penceresidir bir ayırıcı penceresi ve tek Belgeli Arabirim (SDI) uygulama ve birden çok üst düzey belge uygulaması, ana çerçevenin istemci bir ayırıcı penceresi penceredir. İletişim kutusu tabanlı uygulama türleri için kullanılamaz.|
+   |**Kalın çerçeve**|Boyutlandırma kenarlığı olan bir pencere oluşturur. Varsayılan.|
+   |**Simge durumuna küçült**|Ana çerçeve penceresinde Simgeleştir kutusunu içerir. Varsayılan.|
+   |**Ekranı Kapla kutusu**|Ana çerçeve penceresinde Büyüt kutusunu içerir. Varsayılan.|
+   |**Küçültülmüş**|Ana çerçeve penceresini bir simge olarak açar.|
+   |**Mediği**|Ana çerçeve penceresini, ekran tam boyutuna açar.|
+   |**Sistem menüsü**|Ana çerçeve penceresinde bir sistem menüsü içerir. Varsayılan.|
+   |**Hakkında kutusu**|Uygulama için bir **hakkında** kutusunu içerir. Kullanıcı bu kutuya uygulamanın **Yardım** menüsünden erişebilir. [Uygulama türü, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında **iletişim kutusu tabanlı**' i seçmediğiniz takdirde varsayılan ve değiştirilemez.<br /><br /> **Göz önünde** Genellikle, kullanılamayan bir seçenek, sihirbazın, kullanılamayan öğenin onay kutusunun seçili veya temizlenmiş olup olmadığı, projenin bu seçeneği uygulamadığını gösterir. Bu durumda, ilk olarak projeyi bir iletişim kutusu olarak belirtmediğiniz ve sonra kutunun işaretini kaldırıp, sihirbaz projeye her zaman bir **hakkında** kutusunu ekler.|
+   |**İlk durum çubuğu**|Uygulamanıza bir durum çubuğu ekler. Durum çubuğu, klavye Caps Lock, NUM LOCK ve SCROLL LOCK tuşları için otomatik göstergeler ve menü komutları ve araç çubuğu düğmeleri için Yardım dizelerini görüntüleyen bir ileti çizgisi içerir. Bu seçeneğe tıkladığınızda durum çubuğunu göstermek veya gizlemek için menü komutları da eklenir. Varsayılan olarak, bir uygulamanın bir durum çubuğu vardır. İletişim kutusu tabanlı uygulama türleri için kullanılamaz.|
+   |**Pencereyi Böl**|Bir ayırıcı çubuğu sağlar. Ayırıcı çubuğu, uygulamanın ana görünümlerini böler. Birden çok belge arabirimi (MDI) uygulamasında, MDI alt çerçevesinin istemci penceresi bir ayırıcı penceresidir ve tek bir belge arabirimi (SDI) uygulaması ve birden çok üst düzey belge uygulamasında ana çerçevenin istemci penceresi bir Splitter penceresidir. İletişim kutusu tabanlı uygulama türleri için kullanılamaz.|
 
 - **Alt çerçeve stilleri**
 
-   Uygulamanızda görünümünü ve alt çerçeve ilk durumunu belirtir. Alt çerçeve stilleri yalnızca MDI uygulamaları için kullanılabilir.
+   Uygulamanızdaki alt çerçevelerin görünümünü ve başlangıç durumunu belirtir. Alt çerçeve stilleri yalnızca MDI uygulamaları için kullanılabilir.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Alt simge durumuna küçült kutusu**|Alt pencere bir simge durumuna küçült düğmesi (varsayılan olarak etkindir) olup olmadığını belirtir.|
-   |**Alt öğe Ekranı Kapla kutusu**|Alt pencere bir Ekranı Kapla düğmesi (varsayılan olarak etkindir) olup olmadığını belirtir.|
-   |**Alt öğe ekranı**|Alt pencere ilk başta cs.style ayarlayarak ekranı olup olmadığını belirtir, ws_maxımıze bayrak [PreCreateWindow](../../mfc/reference/cwnd-class.md#precreatewindow) üye işlevini `CChildFrame`.|
+   |**Alt simge durumuna küçültme kutusu**|Bir alt pencerenin simge durumuna küçültme düğmesine sahip olup olmadığını belirtir (varsayılan olarak etkindir).|
+   |**Alt ekranı kaplama kutusu**|Bir alt pencerenin ekranı kapla düğmesine sahip olup olmadığını belirtir (varsayılan olarak etkindir).|
+   |**Alt öğe ekranı kaplamış**|' Nin [ön Reatewindow](../../mfc/reference/cwnd-class.md#precreatewindow) üye işlevindeki bir alt pencerenin başlangıçta büyüerek, CS. style bayrağını WS_MAXIMIZE `CChildFrame` .|
 
-- **Komut çubukları (menü/araç/Şerit)**
+- **Komut çubukları (menü/araç çubuğu/şerit)**
 
-   Uygulama menüleri, araç çubukları ve/veya Şerit içerip içermediğini belirtir. İletişim tabanlı uygulamalar için kullanılamaz.
+   Uygulamanızın menüler, araç çubukları ve/veya şerit içerip içermediğini gösterir. İletişim kutusu tabanlı uygulamalar için kullanılamaz.
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Klasik menü kullan**|Uygulamanızı bir Klasik, sürüklenebilir olmayan menü içerdiğini belirtir.|
-   |**Klasik bir takma araç çubuğu kullan**|Uygulamanız için standart Windows araç çubuğu ekler. Araç çubuğu düğmeleri yeni bir belge oluşturmak için içerir; açma ve belge dosyaları kaydetme; Kesme; kopyalama, yapıştırma veya metin yazdırma ve Yardım moduna girme. Bu seçeneğin etkinleştirilmesi, görüntülemek veya araç çubuğunu gizlemek için menü komutlarını ekler.|
-   |**Tarayıcı stili araç çubuğu kullan**|Uygulamanız için bir Internet Explorer-stili araç çubuğu ekler.|
-   |**Bir menü çubuğu ve araç çubuğu kullan**|Uygulamanızı bir sürüklenebilir menü çubuğu ve araç çubuğu içerdiğini gösterir.|
-   |**Kullanıcı tanımlı araç çubukları ve görüntüler**|Araç ve çalışma zamanında araç çubuğu görüntülerini özelleştirme izin verir.|
-   |**Kişiselleştirilmiş Menü davranışı**|Menü açıldığında öğelerinin tam listesini içerip içermediğini veya kullanıcının en sık kullandığı komutları içerip içermediğini belirtir.|
-   |**Şerit kullan**|Menü çubuğunda veya araç yerine uygulamanızdaki bir Office 2007 benzeri Şerit kullanır.|
+   |**Klasik menü kullan**|Uygulamanızın klasik, sürüklenebilir olmayan bir menü içerdiğini belirtir.|
+   |**Klasik bir takma araç çubuğu kullan**|Uygulamanıza standart bir Windows araç çubuğu ekler. Araç çubuğu yeni bir belge oluşturmak için düğmeler içerir; belge dosyalarını açma ve kaydetme; metin kopyalamayı, yapıştırmayı veya yazdırmayı kesme; ve yardım moduna girer. Bu seçeneğin etkinleştirilmesi, araç çubuğunu göstermek veya gizlemek için de menü komutları ekler.|
+   |**Tarayıcı stili araç çubuğu kullan**|Uygulamanıza Internet Explorer stili bir araç çubuğu ekler.|
+   |**Menü çubuğu ve araç çubuğu kullan**|Uygulamanızın bir sürüklenebilir menü çubuğu ve bir araç çubuğu içerdiğini belirtir.|
+   |**Kullanıcı tanımlı araç çubukları ve görüntüler**|Kullanıcının çalışma zamanında araç çubuğunu ve araç çubuğu görüntülerini özelleştirmesini sağlar.|
+   |**Kişiselleştirilmiş menü davranışı**|Menüde açıldıklarında öğelerin tam listesini mi yoksa yalnızca kullanıcının en sık kullandığı komutları mı içerdiğini belirtir.|
+   |**Şerit kullanma**|, Uygulamanızda bir menü çubuğu veya araç çubuğu yerine Office 2007 benzeri bir şerit kullanır.|
 
 - **İletişim kutusu başlığı**
 
-   İçin [CDialog sınıfı](../../mfc/reference/cdialog-class.md)-Bu konu başlığı iletişim kutusunun başlık çubuğunda görünür tabanlı uygulamaları yalnızca. Bu alan düzenlemek için önce seçmelisiniz **iletişim kutusu tabanlı** altındaki **uygulama türü**. Daha fazla bilgi için [Application Type, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md).
+   Yalnızca [CDialog sınıfı](../../mfc/reference/cdialog-class.md)tabanlı uygulamalar için, bu başlık iletişim kutusunun başlık çubuğunda görüntülenir. Bu alanı düzenlemek için önce **uygulama türü** altında **iletişim kutusu tabanlı** seçeneğini belirlemelisiniz. Daha fazla bilgi için bkz. [uygulama türü, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

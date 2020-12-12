@@ -1,5 +1,6 @@
 ---
-title: '&lt;bkz. >C++ (belge açıklamaları)'
+description: Hakkında daha fazla bilgi &lt; edinin:&gt;
+title: '&lt;bkz.> (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - <see>
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - <see> C++ XML tag
 - see C++ XML tag
 ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
-ms.openlocfilehash: 8693646fa37648d1b20c791d99d159f2c81b8ec1
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: b4f8f9a2312a3db1ce2840209668b7b23837ab31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224744"
 ---
-# <a name="ltseegt"></a>&lt;bkz.&gt;
+# <a name="ltseegt"></a>&lt;bakýn&gt;
 
-\<bkz. > etiketi, metnin içinden bir bağlantı belirtmenize olanak tanır. Ayrıca bkz. Ayrıca, Ayrıca bkz. bölümünde görünmesini isteyebileceğiniz metni göstermek için [\<](seealso-visual-cpp.md) kullanın.
+\<see>Etiketi, metnin içinden bir bağlantı belirtmenize olanak tanır. [\<seealso>](seealso-visual-cpp.md)Ayrıca bkz. bölümünde görünmesini isteyebileceğiniz metni göstermek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -30,15 +31,15 @@ ms.locfileid: "74988622"
 *üyesidir*<br/>
 Geçerli derleme ortamından çağrılabilen bir üyeye veya alana başvuru.  Adı tek veya çift tırnak içine alın.
 
-Derleyici verilen kod öğesinin var olduğunu denetler ve çıkış XML dosyasında öğe adına `member` çözümler.  Derleyici `member`bulamazsa bir uyarı verir.
+Derleyici, verilen kod öğesinin var olduğunu ve `member` çıkış XML dosyasında öğe adına çözümlendiğini denetler.  Derleyici bulamazsa bir uyarı verir `member` .
 
 ## <a name="remarks"></a>Açıklamalar
 
 Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
-[\<özet >](summary-visual-cpp.md) bkz. > \<kullanma örneği.
+[\<summary>](summary-visual-cpp.md)Hakkında bir örnek için bkz \<see> ..
 
-MSVC derleyicisi, belge açıklamalarındaki cref başvurularını tek bir geçişte çözümlemeye çalışır.  Bu nedenle, C++ arama kuralları kullanılıyorsa, derleyici tarafından bir sembol bulunamamıştır ve başvuru çözümlenmemiş olarak işaretlenir. Daha fazla bilgi için bkz. [\<SeeAlso >](seealso-visual-cpp.md) .
+MSVC derleyicisi, belge açıklamalarındaki cref başvurularını tek bir geçişte çözümlemeye çalışır.  Bu nedenle, C++ arama kuralları kullanılıyorsa, derleyici tarafından bir sembol bulunamamıştır ve başvuru çözümlenmemiş olarak işaretlenir. [\<seealso>](seealso-visual-cpp.md)Daha fazla bilgi için bkz..
 
 ## <a name="example"></a>Örnek
 

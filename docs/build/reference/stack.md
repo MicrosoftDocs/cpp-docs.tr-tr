@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/STACK
 title: /STACK
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - stack, setting size
 - /STACK editbin option
 ms.assetid: a39bcff0-c945-4355-80cc-8e4f24a5f142
-ms.openlocfilehash: 63fcddec8ff8afd81084bb5a2786f394db594b07
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 253aec1d760a85f1ebe5dbf7596353b46744cd57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438889"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224458"
 ---
 # <a name="stack"></a>/STACK
 
@@ -28,8 +29,8 @@ Bu seçenek, yığının boyutunu bayt cinsinden ayarlar ve ondalık ya da C dil
 
 *Reserve* bağımsız değişkeni, sanal bellekteki toplam yığın ayırmayı belirtir. EDITBIN belirtilen değeri en yakın 4 bayta yuvarlar.
 
-İsteğe bağlı `commit` bağımsız değişkeni, işletim sistemi tarafından yorumlamayı tabidir. Windows NT, Windows 95 ve Windows 98 ' de `commit` her seferinde ayrılacak fiziksel bellek miktarını belirtir. Yürütülen sanal bellek, disk belleği dosyasında ayrılan alanın ayrılmasına neden olur. Daha yüksek bir `commit` değeri, uygulamanın daha fazla yığın alanına ihtiyacı olduğunda, ancak bellek gereksinimlerini ve muhtemelen başlangıç süresini arttığında zaman kazandırır.
+İsteğe bağlı `commit` bağımsız değişken, işletim sistemi tarafından yorumlamayı tabidir. Windows NT, Windows 95 ve Windows 98 ' de, `commit` bir seferde ayrılacak fiziksel bellek miktarını belirtir. Yürütülen sanal bellek, disk belleği dosyasında ayrılan alanın ayrılmasına neden olur. `commit`Uygulamanın daha fazla yığın alanına ihtiyacı olduğunda daha yüksek bir değer zaman kazandırır, ancak bellek gereksinimlerini ve muhtemelen başlangıç süresini arttırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](editbin-options.md)
+[EDITBIN seçenekleri](editbin-options.md)

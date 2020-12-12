@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: BUFSıZ'
 title: BUFSIZ
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - BUFSIZ constant
 ms.assetid: 94ac04a3-d154-476b-bd89-eefbc7b949ae
-ms.openlocfilehash: 820e9bb0a8b21c2bacb54c9d0df3fe4a20d36241
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65f4e7613be2a50adaf17dea0b8496048737a9a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290332"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221728"
 ---
 # <a name="bufsiz"></a>BUFSIZ
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <stdio.h>
@@ -23,9 +24,9 @@ ms.locfileid: "62290332"
 
 ## <a name="remarks"></a>Açıklamalar
 
-`BUFSIZ` için gerekli kullanıcı ayrılan arabellek [setvbuf](../c-runtime-library/reference/setvbuf.md) yordamı.
+`BUFSIZ` , [setvbuffer](../c-runtime-library/reference/setvbuf.md) yordamı için gereken kullanıcı tarafından ayrılan tampondır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../c-runtime-library/stream-i-o.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Akış G/Ç](../c-runtime-library/stream-i-o.md)<br/>
+[Global sabitler](../c-runtime-library/global-constants.md)

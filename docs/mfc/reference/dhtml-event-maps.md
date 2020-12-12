@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. DHTML olay haritaları
 title: DHTML Olay Eşlemeleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - DHTML events [MFC], event map
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-ms.openlocfilehash: 099a08298357d99a3d09ed6fc1209d463f6a4526
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b9df8f1aa59472de033943efd28f5c688c61e706
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220129"
 ---
 # <a name="dhtml-event-maps"></a>DHTML Olay Eşlemeleri
 
@@ -110,7 +111,7 @@ BEGIN_DHTML_EVENT_MAP makrosunu sınıfın uygulama (. cpp) dosyasına ve ardın
 
 ## <a name="begin_dhtml_event_map_inline"></a><a name="begin_dhtml_event_map_inline"></a> BEGIN_DHTML_EVENT_MAP_INLINE
 
-, *ClassName*için sınıf tanımı içinde dhtml olay eşlemesinin başlangıcını işaretler.
+, *ClassName* için sınıf tanımı içinde dhtml olay eşlemesinin başlangıcını işaretler.
 
 ```cpp
 BEGIN_DHTML_EVENT_MAP_INLINE(className)
@@ -157,7 +158,7 @@ Eşlemeyi uygulamak için [BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map) veya [
 
 ## <a name="dhtml_event"></a><a name="dhtml_event"></a> DHTML_EVENT
 
-, *ElemName*tarafından tanımlanan html öğesi tarafından belirtilen bir *olay tarafından belirtilen* bir olayı (belge düzeyinde) işler.
+, *ElemName* tarafından tanımlanan html öğesi tarafından belirtilen bir *olay tarafından belirtilen* bir olayı (belge düzeyinde) işler.
 
 ```cpp
 DHTML_EVENT(dispid, elemName,  memberFxn)
@@ -184,7 +185,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_axcontrol"></a><a name="dhtml_event_axcontrol"></a> DHTML_EVENT_AXCONTROL
 
-*ControlName*tarafından tanımlanan ActiveX denetimi tarafından tetiklenen *DISPID* tarafından tanımlanan olayı işler.
+*ControlName* tarafından tanımlanan ActiveX denetimi tarafından tetiklenen *DISPID* tarafından tanımlanan olayı işler.
 
 ```cpp
 DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)
@@ -211,7 +212,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_class"></a><a name="dhtml_event_class"></a> DHTML_EVENT_CLASS
 
-Bir HTML öğesi tarafından, *elemName*tarafından tanımlanan CSS sınıfı ile herhangi bir HTML öğesi tarafından tanımlanan *olay tarafından belirtilen* bir olayı (belge düzeyinde) işler.
+Bir HTML öğesi tarafından, *elemName* tarafından tanımlanan CSS sınıfı ile herhangi bir HTML öğesi tarafından tanımlanan *olay tarafından belirtilen* bir olayı (belge düzeyinde) işler.
 
 ```cpp
 DHTML_EVENT_CLASS(dispid, elemName,  memberFxn)
@@ -238,7 +239,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_element"></a><a name="dhtml_event_element"></a> DHTML_EVENT_ELEMENT
 
-*DISPID*tarafından tanımlanan bir olayı ( *elemName*tarafından tanımlanan öğede) işler.
+*DISPID* tarafından tanımlanan bir olayı ( *elemName* tarafından tanımlanan öğede) işler.
 
 ```cpp
 DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
@@ -259,9 +260,9 @@ Olay için işleyici işlevi.
 
 Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giriş eklemek için bu makroyu kullanın.
 
-Bu makro, kabarcıklanma olmayan olayları işlemek için kullanılırsa, etkinliğin kaynağı *elemName*tarafından tanımlanan öğe olur.
+Bu makro, kabarcıklanma olmayan olayları işlemek için kullanılırsa, etkinliğin kaynağı *elemName* tarafından tanımlanan öğe olur.
 
-Bu makro, kabarcıklanma olaylarını işlemek için kullanılırsa, *elemName* tarafından tanımlanan öğe olayın kaynağı olamaz (kaynak, *elemName*tarafından içerilen herhangi bir öğe olabilir).
+Bu makro, kabarcıklanma olaylarını işlemek için kullanılırsa, *elemName* tarafından tanımlanan öğe olayın kaynağı olamaz (kaynak, *elemName* tarafından içerilen herhangi bir öğe olabilir).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -269,7 +270,7 @@ Bu makro, kabarcıklanma olaylarını işlemek için kullanılırsa, *elemName* 
 
 ## <a name="dhtml_event_onafterupdate"></a><a name="dhtml_event_onafterupdate"></a> DHTML_EVENT_ONAFTERUPDATE
 
-(Belge düzeyinde) `onafterupdate` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onafterupdate` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONAFTERUPDATE(elemName, memberFxn)
@@ -293,7 +294,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onbeforeupdate"></a><a name="dhtml_event_onbeforeupdate"></a> DHTML_EVENT_ONBEFOREUPDATE
 
-(Belge düzeyinde) `onbeforeupdate` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onbeforeupdate` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONBEFOREUPDATE(elemName, memberFxn)
@@ -365,7 +366,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onclick"></a><a name="dhtml_event_onclick"></a> DHTML_EVENT_ONCLICK
 
-(Belge düzeyinde) `onclick` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onclick` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONCLICK(elemName, memberFxn)
@@ -389,7 +390,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_ondataavailable"></a><a name="dhtml_event_ondataavailable"></a> DHTML_EVENT_ONDATAAVAILABLE
 
-(Belge düzeyinde) `ondataavailable` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `ondataavailable` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONDATAAVAILABLE(elemName, memberFxn)
@@ -413,7 +414,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_ondatasetchanged"></a><a name="dhtml_event_ondatasetchanged"></a> DHTML_EVENT_ONDATASETCHANGED
 
-(Belge düzeyinde) `ondatasetchanged` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `ondatasetchanged` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONDATASETCHANGED(elemName, memberFxn)
@@ -461,7 +462,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_ondblclick"></a><a name="dhtml_event_ondblclick"></a> DHTML_EVENT_ONDBLCLICK
 
-(Belge düzeyinde) `ondblclick` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `ondblclick` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONDBLCLICK(elemName, memberFxn)
@@ -485,7 +486,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_ondragstart"></a><a name="dhtml_event_ondragstart"></a> DHTML_EVENT_ONDRAGSTART
 
-(Belge düzeyinde) `ondragstart` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `ondragstart` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)
@@ -509,7 +510,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onerrorupdate"></a><a name="dhtml_event_onerrorupdate"></a> DHTML_EVENT_ONERRORUPDATE
 
-(Belge düzeyinde) `onerrorupdate` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onerrorupdate` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
@@ -533,7 +534,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onfilterchange"></a><a name="dhtml_event_onfilterchange"></a> DHTML_EVENT_ONFILTERCHANGE
 
-(Belge düzeyinde) `onfilterchange` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onfilterchange` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
@@ -581,7 +582,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onhelp"></a><a name="dhtml_event_onhelp"></a> DHTML_EVENT_ONHELP
 
-(Belge düzeyinde) `onhelp` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onhelp` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONHELP(elemName, memberFxn)
@@ -605,7 +606,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onkeydown"></a><a name="dhtml_event_onkeydown"></a> DHTML_EVENT_ONKEYDOWN
 
-(Belge düzeyinde) `onkeydown` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onkeydown` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
@@ -629,7 +630,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onkeypress"></a><a name="dhtml_event_onkeypress"></a> DHTML_EVENT_ONKEYPRESS
 
-(Belge düzeyinde) `onkeypress` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onkeypress` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
@@ -653,7 +654,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onkeyup"></a><a name="dhtml_event_onkeyup"></a> DHTML_EVENT_ONKEYUP
 
-(Belge düzeyinde) `onkeyup` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onkeyup` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONKEYUP(elemName, memberFxn)
@@ -677,7 +678,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onmousedown"></a><a name="dhtml_event_onmousedown"></a> DHTML_EVENT_ONMOUSEDOWN
 
-(Belge düzeyinde) `onmousedown` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onmousedown` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
@@ -701,7 +702,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onmousemove"></a><a name="dhtml_event_onmousemove"></a> DHTML_EVENT_ONMOUSEMOVE
 
-(Belge düzeyinde) `onmousemove` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onmousemove` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
@@ -725,7 +726,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onmouseout"></a><a name="dhtml_event_onmouseout"></a> DHTML_EVENT_ONMOUSEOUT
 
-(Belge düzeyinde) `onmouseout` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onmouseout` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
@@ -749,7 +750,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onmouseover"></a><a name="dhtml_event_onmouseover"></a> DHTML_EVENT_ONMOUSEOVER
 
-(Belge düzeyinde) `onmouseover` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onmouseover` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
@@ -773,7 +774,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onmouseup"></a><a name="dhtml_event_onmouseup"></a> DHTML_EVENT_ONMOUSEUP
 
-(Belge düzeyinde) `onmouseup` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onmouseup` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
@@ -821,7 +822,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onrowenter"></a><a name="dhtml_event_onrowenter"></a> DHTML_EVENT_ONROWENTER
 
-(Belge düzeyinde) `onrowenter` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onrowenter` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONROWENTER(elemName, memberFxn)
@@ -845,7 +846,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onrowexit"></a><a name="dhtml_event_onrowexit"></a> DHTML_EVENT_ONROWEXIT
 
-(Belge düzeyinde) `onrowexit` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onrowexit` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
@@ -869,7 +870,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_onselectstart"></a><a name="dhtml_event_onselectstart"></a> DHTML_EVENT_ONSELECTSTART
 
-(Belge düzeyinde) `onselectstart` olayı, *elemName*tarafından tanımlanan html öğesi tarafından kaynaklı.
+(Belge düzeyinde) `onselectstart` olayı, *elemName* tarafından tanımlanan html öğesi tarafından kaynaklı.
 
 ```cpp
 DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
@@ -893,7 +894,7 @@ Sınıfınıza [DHTML olay haritasına](#begin_dhtml_event_map_inline) bir giri�
 
 ## <a name="dhtml_event_tag"></a><a name="dhtml_event_tag"></a> DHTML_EVENT_TAG
 
-Tarafından tanımlanan bir olayı, `dispid` HTML etiketiyle birlikte *elemName*tarafından tanımlanan bir HTML öğesi tarafından belirlenen bir olaydır.
+Tarafından tanımlanan bir olayı, `dispid` HTML etiketiyle birlikte *elemName* tarafından tanımlanan bir HTML öğesi tarafından belirlenen bir olaydır.
 
 ```cpp
 DHTML_EVENT_TAG(dispid, elemName,  memberFxn)
@@ -1099,7 +1100,7 @@ URL olay girdisi eşlemesini içeren sınıfın adı. Bu sınıf, [CMultiPageDHt
 Sayfanın URL 'SI veya HTML kaynağı.
 
 *mapName*<br/>
-URL *'si URL*olan sayfayı belirtir. Bu, olayları bu sayfadan eşleyen [BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map) makrosunda *MapName* ile eşleşir.
+URL *'si URL* olan sayfayı belirtir. Bu, olayları bu sayfadan eşleyen [BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map) makrosunda *MapName* ile eşleşir.
 
 ### <a name="remarks"></a>Açıklamalar
 

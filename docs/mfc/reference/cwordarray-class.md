@@ -1,5 +1,6 @@
 ---
-title: CWordArray Sınıfı
+description: 'Daha fazla bilgi edinin: CWordArray sınıfı'
+title: CWordArray sınıfı
 ms.date: 09/07/2019
 f1_keywords:
 - CWordArray
@@ -42,18 +43,18 @@ helpviewer_keywords:
 - CWordArray [MFC], SetAtGrow
 - CWordArray [MFC], SetSize
 ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
-ms.openlocfilehash: 9dfb0b674d52b288ebd05bf7574f1ae05e4ed1f3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3e315a3da44b1b40a14d19014b9c967aa85c3bda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220415"
 ---
-# <a name="cwordarray-class"></a>CWordArray Sınıfı
+# <a name="cwordarray-class"></a>CWordArray sınıfı
 
-16 bit sözcük dizilerini destekler.
+16-bit sözcüklerdeki dizileri destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CWordArray : public CObject
@@ -61,71 +62,71 @@ class CWordArray : public CObject
 
 ## <a name="members"></a>Üyeler
 
-CObArray `CWordArray` sınıfının üye işlevleri ne [CObArray](../../mfc/reference/cobarray-class.md)benzer. Bu benzerlik nedeniyle, üye işlev `CObArray` özellikleri için başvuru belgelerini kullanabilirsiniz. [CObject](../../mfc/reference/cobject-class.md) işaretçisini işlev parametresi veya iade değeri olarak gördüğünüz her yerde, bir WORD'ün yerine geçin.
+Öğesinin üye işlevleri `CWordArray` [CObArray](../../mfc/reference/cobarray-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, `CObArray` üye işlevi özellikleri için başvuru belgelerini kullanabilirsiniz. Bir [CObject](../../mfc/reference/cobject-class.md) işaretçisini işlev parametresi veya dönüş değeri olarak gördüğünüz her yerde, bir kelime yerine koyun.
 
 `CObject* CObArray::GetAt( int <nIndex> ) const;`
 
-örneğin, çevirir
+Örneğin, öğesine çevirir
 
 `WORD CWordArray::GetAt( int <nIndex> ) const;`
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CWordArray::CWordArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturuyor.|
+|[CWordArray:: CWordArray](../../mfc/reference/cobarray-class.md#cobarray)|Boş bir dizi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CWordArray::Ekle](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğe ekler; gerekirse diziyi büyütür.|
-|[CWordArray::Ek](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyütür.|
-|[CWordArray::Kopyala](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyütür.|
-|[CWordArray::elementat](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru verir.|
-|[CWordArray::FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Tüm kullanılmayan belleği geçerli üst sınır üzerinde serbest eder.|
-|[CWordArray::GetAt](../../mfc/reference/cobarray-class.md#getat)|Belirli bir dizindeki değeri döndürür.|
-|[CWordArray::GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
-|[CWordArray::Veri Alma](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişim sağlar. NULL olabilir.|
-|[CWordArray::GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
-|[CWordArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
-|[CWordArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirli bir dizide bir öğe (veya başka bir dizideki tüm öğeler) ekler.|
-|[CWordArray::Boş](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
-|[CWordArray::RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
-|[CWordArray::Removeat](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
-|[CWordArray::Setat](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizinin değerini ayarlar; dizi büyümeye izin verilmez.|
-|[CWordArray::Setatgrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizinin değerini ayarlar; gerekirse diziyi büyütür.|
-|[CWordArray::SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğe sayısını ayarlar.|
+|[CWordArray:: Add](../../mfc/reference/cobarray-class.md#add)|Dizinin sonuna bir öğesi ekler; gerekirse diziyi büyür.|
+|[CWordArray:: Append](../../mfc/reference/cobarray-class.md#append)|Diziye başka bir dizi ekler; gerekirse diziyi büyür.|
+|[CWordArray:: Copy](../../mfc/reference/cobarray-class.md#copy)|Başka bir diziyi diziye kopyalar; gerekirse diziyi büyür.|
+|[CWordArray:: ElementAt](../../mfc/reference/cobarray-class.md#elementat)|Dizi içindeki öğe işaretçisine geçici bir başvuru döndürür.|
+|[CWordArray:: FreeExtra](../../mfc/reference/cobarray-class.md#freeextra)|Geçerli üst sınırın üzerinde kullanılmayan tüm belleği serbest bırakır.|
+|[CWordArray:: GetAt](../../mfc/reference/cobarray-class.md#getat)|Verilen dizindeki değeri döndürür.|
+|[CWordArray:: GetCount](../../mfc/reference/cobarray-class.md#getcount)|Bu dizideki öğelerin sayısını alır.|
+|[CWordArray:: GetData](../../mfc/reference/cobarray-class.md#getdata)|Dizideki öğelere erişime izin verir. NULL olabilir.|
+|[CWordArray:: GetSize](../../mfc/reference/cobarray-class.md#getsize)|Bu dizideki öğelerin sayısını alır.|
+|[CWordArray:: Getüstsınırı](../../mfc/reference/cobarray-class.md#getupperbound)|En büyük geçerli dizini döndürür.|
+|[CWordArray:: InsertAt](../../mfc/reference/cobarray-class.md#insertat)|Belirtilen dizine bir öğe (veya başka bir dizide bulunan tüm öğeleri) ekler.|
+|[CWordArray:: IsEmpty](../../mfc/reference/cobarray-class.md#isempty)|Dizinin boş olup olmadığını belirler.|
+|[CWordArray:: RemoveAll](../../mfc/reference/cobarray-class.md#removeall)|Bu dizideki tüm öğeleri kaldırır.|
+|[CWordArray:: RemoveAt](../../mfc/reference/cobarray-class.md#removeat)|Belirli bir dizindeki bir öğeyi kaldırır.|
+|[CWordArray:: SetAt](../../mfc/reference/cobarray-class.md#setat)|Belirli bir dizin için değeri ayarlar; dizinin büyümesine izin verilmiyor.|
+|[CWordArray:: SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)|Belirli bir dizin için değeri ayarlar; gerekirse diziyi büyür.|
+|[CWordArray:: SetSize](../../mfc/reference/cobarray-class.md#setsize)|Bu dizide yer alan öğelerin sayısını ayarlar.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CWordArray::operatör &#91;&#93;](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizilişte öğeyi ayarlar veya alır.|
+|[CWordArray:: operator &#91;&#93;](../../mfc/reference/cobarray-class.md#operator_at)|Belirtilen dizindeki öğeyi ayarlar veya alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CWordArray`öğelerinin serileştirilmesini ve dampingini desteklemek için [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makroyu içerir. Bir dizi sözcük, aşırı yüklü bir ekleme işleciyle veya [CObject:Serialize](../../mfc/reference/cobject-class.md#serialize) üye işleviyle bir arşivde depolanırsa, her öğe sırayla seri hale getirilir.
+`CWordArray` öğelerinin serileştirilmesi ve dökümünü desteklemek için [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) makrosunu ekler. Bir sözcük dizisi, aşırı yüklenmiş bir ekleme işleci veya [CObject:: Serialize](../../mfc/reference/cobject-class.md#serialize) üye işlevi ile bir arşive depolanıyorsa, her öğe sırasıyla serileştirilmiş olur.
 
 > [!NOTE]
-> Bir dizi kullanmadan `SetSize` önce, boyutunu oluşturmak ve bunun için bellek ayırmak için kullanın. `SetSize`Kullanmazsanız, dizinize öğe eklemek, dizinin sık sık yeniden tahsis edilmesine ve kopyalanmasını sağlar. Sık yeniden tahsis ve kopyalama verimsizdir ve belleği parçalayabilir.
+> Bir dizi kullanmadan önce, `SetSize` boyutunu belirlemek ve için bellek ayırmak üzere kullanın. Kullanmıyorsanız `SetSize` , diziye öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.
 
-Dizideki tek tek öğelerin dökümüne ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+Dizideki ayrı öğelerin bir dökümünden birine ihtiyacınız varsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-Kullanma `CWordArray`hakkında daha fazla bilgi için [Koleksiyonlar](../../mfc/collections.md)makalesine bakın.
+Kullanma hakkında daha fazla bilgi için `CWordArray` bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 `CWordArray`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxcoll.h
+**Üstbilgi:** afxcoll. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek TOPLAMA](../../overview/visual-cpp-samples.md)<br/>
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[MFC örnek toplama](../../overview/visual-cpp-samples.md)<br/>
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

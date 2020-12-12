@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Özellik sayfaları (MFC)'
 title: Özellik Sayfaları (MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-ms.openlocfilehash: 9a04395aec8c2eb968e5cefaf410643a1ce03e32
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fa395272ba74c6b3900d5a1500d4cf47ade4e535
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843592"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218972"
 ---
 # <a name="property-pages-mfc"></a>Özellik Sayfaları (MFC)
 
@@ -63,13 +64,13 @@ void AFXAPI DDP_CBIndex(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen Birleşik giriş kutusu denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen Birleşik giriş kutusu denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -97,13 +98,13 @@ void AFXAPI DDP_CBString(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen Birleşik giriş kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen Birleşik giriş kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -131,13 +132,13 @@ void AFXAPI DDP_CBStringExact(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliği ile ilişkili Birleşik giriş kutusu DENETIMININ kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen Birleşik giriş kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen Birleşik giriş kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -165,13 +166,13 @@ void AFXAPI DDP_Check(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili onay kutusu DENETIMININ kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliği ile ilişkili onay kutusu DENETIMININ kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen onay kutusu denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen onay kutusu denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -199,13 +200,13 @@ void AFXAPI DDP_LBIndex(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -233,13 +234,13 @@ void AFXAPI DDP_LBString(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -267,13 +268,13 @@ void AFXAPI DDP_LBStringExact(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliği ile ilişkili liste kutusu DENETIMININ kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen liste kutusu dizesiyle birlikte değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -298,7 +299,7 @@ Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere ve
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, tüm veri değişimi işlevleri tamamlandıktan sonra çağrılmalıdır. Örnek:
+Bu işlev, tüm veri değişimi işlevleri tamamlandıktan sonra çağrılmalıdır. Örneğin:
 
 [!code-cpp[NVC_MFCAxCtl#15](../../mfc/reference/codesnippet/cpp/property-pages-mfc_1.cpp)]
 
@@ -324,13 +325,13 @@ void AFXAPI DDP_Radio(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliğiyle ilişkili radyo düğmesi DENETIMININ kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliğiyle ilişkili radyo düğmesi DENETIMININ kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen radyo düğmesi denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen radyo düğmesi denetimiyle değiş tokuş edilecek denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -400,13 +401,13 @@ void AFXAPI DDP_Text(
 Bir nesne işaretçisi `CDataExchange` . Framework, yönü dahil olmak üzere veri değişim bağlamını oluşturmak için bu nesneyi sağlar.
 
 *id*<br/>
-*PszPropName*tarafından belirtilen denetim özelliği ile ilişkili DENETIMIN kaynak kimliği.
+*PszPropName* tarafından belirtilen denetim özelliği ile ilişkili DENETIMIN kaynak kimliği.
 
 *üyesidir*<br/>
-*Kimliğe* ve *pszPropName*tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
+*Kimliğe* ve *pszPropName* tarafından belirtilen özelliğe göre belirtilen özellik sayfası denetimiyle ilişkili üye değişkeni.
 
 *pszPropName*<br/>
-*Kimliğe*göre belirtilen denetimle değiştirilen denetim özelliğinin özellik adı.
+*Kimliğe* göre belirtilen denetimle değiştirilen denetim özelliğinin özellik adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -429,7 +430,7 @@ BEGIN_PROPPAGEIDS(class_name,  count)
 *class_name*<br/>
 Özellik sayfaları belirtime denetim sınıfının adı.
 
-*count*<br/>
+*biriktirme*<br/>
 Denetim sınıfı tarafından kullanılan özellik sayfası sayısı.
 
 ### <a name="remarks"></a>Açıklamalar

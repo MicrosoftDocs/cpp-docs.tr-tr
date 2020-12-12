@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: temsilci ve arabirim eşleme makroları'
 title: Temsilci ve arabirim eşleme makroları (MFC)
 ms.date: 03/30/2017
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - event map macros [MFC]
 - interface map macros [MFC]
 ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
-ms.openlocfilehash: 01f5cbfb1f751823d218761410bc9091b73cb0a3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 222625514fa0d6d1d683a6ee4098812298f7ed72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837456"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220155"
 ---
 # <a name="delegate-and-interface-map-macros"></a>Temsilci ve arabirim eşleme makroları
 
@@ -32,7 +33,7 @@ MFC, temsilci ve arabirim eşlemeleri için bu makroları destekler:
 
 Bir temsilci eşlemesi başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 BEGIN_DELEGATE_MAP(  CLASS );
@@ -55,7 +56,7 @@ Bu makro, temsilci Haritası oluşturan bir temsilci girdileri listesinin başla
 
 Uygulama dosyasında kullanıldığında, arabirim eşlemesinin tanımını başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 BEGIN_INTERFACE_MAP( theClass, baseClass )
@@ -67,7 +68,7 @@ BEGIN_INTERFACE_MAP( theClass, baseClass )
 Arabirim eşlemesinin tanımlanması gereken sınıf
 
 *baseClass*<br/>
-Sınıfı 'ın türetildiği *theClass* sınıf.
+Sınıfı 'ın türetildiği  sınıf.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -83,7 +84,7 @@ Arabirim haritaları hakkında daha fazla bilgi için bkz. [teknik notta 38](../
 
 Geri çağırma yöntemlerini bir komut kaynağıyla kaydeder.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 delegate void CommandHandler(  UINT^ cmdID  );
@@ -110,7 +111,7 @@ Windows Forms kullanma hakkında daha fazla bilgi için bkz. [MFC 'de Windows fo
 
 Bir kullanıcı arabirimi güncelleştirme komut iletisiyle geri çağırma yöntemlerini kaydeder.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);
@@ -174,7 +175,7 @@ Arabirim haritaları hakkında daha fazla bilgi için bkz. [teknik notta 38](../
 
 Temsilci eşlemesinde bir giriş oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);
@@ -213,7 +214,7 @@ END_DELEGATE_MAP()
 
 Nesnenizin destekleyeceği her arabirim için BEGIN_INTERFACE_MAP makrosu ve END_INTERFACE_MAP makrosu arasında kullanılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 INTERFACE_PART( theClass, iid, localClass)
@@ -230,7 +231,7 @@ Yerel sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir IID *'yi, sınıfsınıfı ve* *localClass*tarafından belirtilen sınıfın bir üyesine eşlemenizi sağlar.
+Bir IID *'yi, sınıfsınıfı ve* *localClass* tarafından belirtilen sınıfın bir üyesine eşlemenizi sağlar.
 
 Arabirim haritaları hakkında daha fazla bilgi için bkz. [teknik notta 38](../tn038-mfc-ole-iunknown-implementation.md).
 
@@ -242,7 +243,7 @@ Arabirim haritaları hakkında daha fazla bilgi için bkz. [teknik notta 38](../
 
 Yönetilen denetime bir olay işleyicisi ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 MAKE_DELEGATE( DELEGATE,  MEMBER) ;
@@ -258,7 +259,7 @@ Denetime eklenecek olay işleyicisi yönteminin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro, *temsilci* türünde ve ad *üyesinin*yönetilen bir olay işleyicisi temsilcisi oluşturur. Yönetilen olay işleyicisi temsilcisi, yerel bir sınıfın yönetilen olayları işlemesini sağlar.
+Bu makro, *temsilci* türünde ve ad *üyesinin* yönetilen bir olay işleyicisi temsilcisi oluşturur. Yönetilen olay işleyicisi temsilcisi, yerel bir sınıfın yönetilen olayları işlemesini sağlar.
 
 ### <a name="example"></a>Örnek
 

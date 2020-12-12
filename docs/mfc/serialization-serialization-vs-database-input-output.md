@@ -1,5 +1,6 @@
 ---
-title: 'Seri hale getirme: Serileştirme vs. Veritabanı giriş-çıkış'
+description: ': Serileştirme: serileştirme ile veritabanı giriş/çıkış hakkında daha fazla bilgi'
+title: 'Serileştirme: serileştirme ve veritabanı Input-Output karşılaştırması'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - database applications [MFC], file I/O vs. serialization
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - I/O [MFC], vs. serialization
 - databases [MFC], input/output handling
 ms.assetid: f1d23d77-4761-4a52-a7ea-54fc92d347ea
-ms.openlocfilehash: c4f44f1ac291b2d068ca0525543938331d6e07d6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d2c2c8aa9597e23ac3e6caefcb2adb8b31dc3e93
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97217516"
 ---
-# <a name="serialization-serialization-vs-database-inputoutput"></a>Seri hale getirme: Serileştirme vs. Veritabanı giriş/çıkışı
+# <a name="serialization-serialization-vs-database-inputoutput"></a>Seri Hale Getirme: Seri Hale Getirme ve Veritabanı Giriş/Çıkışı
 
-Bu makalede ne zaman dosya tabanlı giriş/çıkış (g/ç) ve diğer g/ç teknikleri uygun olduğunda belge nesneleri ve Serileştirme kullanılacağını açıklar; çünkü uygulama okur ve veritabanı uygulamaları olduğu gibi işlem başına temelinde verileri yazar. Serileştirme kullanmazsanız, ayrıca olmaz dosya açık kaydetmek gerekir ve komutları kaydedin. Kapsanan konular şunlardır:
+Bu makalede, dosya tabanlı giriş/çıkış (g/ç) için belge nesnelerinin ve serileştirmenin ne zaman kullanılacağı ve uygulamanın, veritabanı uygulamalarında olduğu gibi işlem temelinde verileri okuduğu ve yazdığı için ne zaman kullanılacağı açıklanmaktadır. Serileştirme kullanmıyorsanız, dosya açma, kaydetme ve farklı Kaydet komutları da gerekmez. Ele alınan konular:
 
-- [Giriş/Çıkış işleme için öneriler](../mfc/recommendations-for-handling-input-output.md)
+- [Giriş/çıkış işleme için öneriler](../mfc/recommendations-for-handling-input-output.md)
 
-- [Veritabanı uygulamalarında Dosya menüsünden işleme](../mfc/file-menu-in-an-mfc-database-application.md)
+- [Veritabanı uygulamalarında Dosya menüsünü işleme](../mfc/file-menu-in-an-mfc-database-application.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

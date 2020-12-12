@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt alanı değişim Işlevleri'
 title: Kayıt Alanı Değişim İşlevleri
 ms.date: 09/17/2019
 f1_keywords:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - RFX (record field exchange), data exchange functions [MFC]
 - RFX (record field exchange)
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
-ms.openlocfilehash: 9bb1b7bcbce16bba8029fcfbbeea7552b1d4a0ba
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2ba3a83bdda21f91913d7eda435a845b0977e8a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218959"
 ---
 # <a name="record-field-exchange-functions"></a>Kayıt Alanı Değişim İşlevleri
 
@@ -119,7 +120,7 @@ Ve işlevlerinde göründükleri gibi RFX ve toplu RFX işlevlerinin bir örneğ
 
 Bir nesnenin alan veri üyeleri arasında bayt dizilerini `CRecordset` ve ODBC türü SQL_BINARY, SQL_VARBINARY veya SQL_LONGVARBINARY veri kaynağındaki bir kaydın sütunlarını aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Binary(
@@ -137,7 +138,7 @@ void RFX_Binary(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, [CByteArray](cbytearray-class.md)türündeki değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *nMaxLength*<br/>
@@ -159,7 +160,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 Bir nesnenin alan veri üyeleri arasında Boole verileri `CRecordset` ve ODBC türü SQL_BIT veri kaynağındaki bir kaydın sütunlarını aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Bool(
@@ -176,7 +177,7 @@ void RFX_Bool(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, BOOL türündeki değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 ### <a name="example"></a>Örnek
@@ -191,7 +192,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 Bir nesnenin alan veri üyeleri arasında tek `CRecordset` bir bayt ve ODBC türü SQL_TINYINT veri kaynağındaki bir kaydın sütunlarını aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Byte(
@@ -208,7 +209,7 @@ void RFX_Byte(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, BYTE türündeki değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 ### <a name="example"></a>Örnek
@@ -223,7 +224,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 `CTime`Bir nesnenin alan veri üyeleri arasında verileri `CRecordset` ve ODBC türü SQL_DATE, SQL_TIME veya SQL_TIMESTAMP veri kaynağındaki bir kaydın sütunlarını aktarır veya TIMESTAMP_STRUCT.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Date(
@@ -250,7 +251,7 @@ void RFX_Date(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer; aktarılacak değer. İşlevin çeşitli sürümleri değer için farklı veri türleri alır:
 
 İşlevin ilk sürümü bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesine başvuru alır. Kayıt kümesinden veri kaynağına aktarım için, bu değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
@@ -273,7 +274,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 Bir nesnenin alan veri üyeleri arasında **çift kayan** VERILERI `CRecordset` ve ODBC türü SQL_DOUBLE veri kaynağındaki bir kaydın sütunlarını aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Double(
@@ -290,7 +291,7 @@ void RFX_Double(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`double`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 ### <a name="example"></a>Örnek
@@ -305,7 +306,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 Bir nesnenin alan veri üyeleri arasında tamsayı verilerini `CRecordset` ve ODBC türü SQL_SMALLINT veri kaynağındaki bir kaydın sütunlarını aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Int(
@@ -322,7 +323,7 @@ void RFX_Int(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`int`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 ### <a name="example"></a>Örnek
@@ -337,7 +338,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 Bir nesnenin alan veri üyeleri arasında uzun tamsayı verilerini `CRecordset` ve ODBC türü SQL_INTEGER veri kaynağındaki bir kaydın sütunlarını aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Long(
@@ -355,7 +356,7 @@ value );
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`long`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 ### <a name="example"></a>Örnek
@@ -368,9 +369,9 @@ Bkz. [RFX_Text](#rfx_text).
 
 ## <a name="rfx_longbinary"></a><a name="rfx_longbinary"></a> RFX_LongBinary
 
-Bir nesnenin alan veri üyeleri [CLongBinary](clongbinary-class.md) `CRecordset` ile bir KAYDıN sütunları ve ODBC türü SQL_LONGVARBINARY ya da sql_longvarchar veri kaynağındaki bir kaydın sütunlarını kullanarak, ikili büyük nesne (blob) verilerini aktarır.
+Bir nesnenin alan veri üyeleri [](clongbinary-class.md) `CRecordset` ile bir KAYDıN sütunları ve ODBC türü SQL_LONGVARBINARY ya da sql_longvarchar veri kaynağındaki bir kaydın sütunlarını kullanarak, ikili büyük nesne (blob) verilerini aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_LongBinary(
@@ -387,7 +388,7 @@ void RFX_LongBinary(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, `CLongBinary` belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 ### <a name="example"></a>Örnek
@@ -402,7 +403,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 Kayan nokta verilerini nesnenin alan veri üyeleri arasında `CRecordset` ve ODBC türü SQL_REAL veri kaynağındaki bir kaydın sütunlarını aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Single(
@@ -419,7 +420,7 @@ void RFX_Single(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`float`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 ### <a name="example"></a>Örnek
@@ -434,7 +435,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 `CString` `CRecordset` ODBC türü SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL veya SQL_NUMERIC veri kaynağındaki bir nesnenin alan veri üyeleri ve bir kayıt sütunlarının arasına veri aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Text(
@@ -454,17 +455,17 @@ Sınıfının nesnesine yönelik bir işaretçi `CFieldExchange` . Bu nesne, iş
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, `CString` belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *nMaxLength*<br/>
 Aktarılmakta olan dize veya dizi için izin verilen en büyük uzunluk. *NMaxLength* varsayılan değeri 255 ' dir. Yasal değerler 1 ' dir INT_MAX). Framework, veriler için bu alan miktarını ayırır. En iyi performansı elde etmek için, tahmin ettiğiniz en büyük veri öğesine yetecek büyüklükte bir değer geçirin.
 
 *nColumnType*<br/>
-Genellikle parametreler için kullanılır. Parametrenin veri türünü gösteren bir tamsayı. Tür, **SQL_XXX**formun ODBC veri türüdür.
+Genellikle parametreler için kullanılır. Parametrenin veri türünü gösteren bir tamsayı. Tür, **SQL_XXX** formun ODBC veri türüdür.
 
 *nScale*<br/>
-ODBC türü SQL_DECIMAL veya SQL_NUMERIC değerlerinin ölçeğini belirler. *Nscale* yalnızca parametre değerleri ayarlanırken yararlıdır. Daha fazla bilgi için *ODBC SDK Programlayıcısının başvurusunun*ek D konusunun "duyarlık, ölçek, uzunluk ve görüntüleme boyutu" konusuna bakın.
+ODBC türü SQL_DECIMAL veya SQL_NUMERIC değerlerinin ölçeğini belirler. *Nscale* yalnızca parametre değerleri ayarlanırken yararlıdır. Daha fazla bilgi için *ODBC SDK Programlayıcısının başvurusunun* ek D konusunun "duyarlık, ölçek, uzunluk ve görüntüleme boyutu" konusuna bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -500,7 +501,7 @@ void CCustomer::DoFieldExchange(CFieldExchange* pFX)
 
 Bir ODBC veri kaynağından alınan bir sütundan birden çok satır baytlık verileri, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Binary_Bulk(
@@ -523,10 +524,10 @@ Bir veri sütununun adı.
 BAYT değerleri dizisine yönelik bir işaretçi. Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır.
 
 *Prguzunluklar*<br/>
-Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, değeri *Prgbyteler*tarafından işaret edilen dizideki her bir değerin bayt cinsinden depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu*içindeki ODBC API işlevi.
+Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, değeri *Prgbyteler* tarafından işaret edilen dizideki her bir değerin bayt cinsinden depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu* içindeki ODBC API işlevi.
 
 *nMaxLength*<br/>
-Dizide bulunan, *Prgbyteışları*tarafından işaret edilen değerlerin izin verilen en fazla uzunluğu. Verilerin kesilmemesini sağlamak için, istediğiniz en büyük veri öğesini karşılayacak büyüklükte bir değer geçirin.
+Dizide bulunan, *Prgbyteışları* tarafından işaret edilen değerlerin izin verilen en fazla uzunluğu. Verilerin kesilmemesini sağlamak için, istediğiniz en büyük veri öğesini karşılayacak büyüklükte bir değer geçirin.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -551,7 +552,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 ODBC veri kaynağı sütunundaki birden çok satırı, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Bool_Bulk(
@@ -573,7 +574,7 @@ Bir veri sütununun adı.
 BOOL değerleri dizisine yönelik bir işaretçi. Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır.
 
 *Prguzunluklar*<br/>
-Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, değeri *Prgbooltıcı*tarafından işaret edilen dizideki her bir değerin bayt cinsinden depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu*içindeki ODBC API işlevi.
+Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, değeri *Prgbooltıcı* tarafından işaret edilen dizideki her bir değerin bayt cinsinden depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu* içindeki ODBC API işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -598,7 +599,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 ODBC veri kaynağındaki bir sütundan birden çok satırı, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Byte_Bulk(
@@ -620,7 +621,7 @@ Bir veri sütununun adı.
 BAYT değerleri dizisine yönelik bir işaretçi. Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır.
 
 *Prguzunluklar*<br/>
-Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, değeri *Prgbyteler*tarafından işaret edilen dizideki her bir değerin bayt cinsinden depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu*içindeki ODBC API işlevi.
+Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, değeri *Prgbyteler* tarafından işaret edilen dizideki her bir değerin bayt cinsinden depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu* içindeki ODBC API işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -645,7 +646,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 TIMESTAMP_STRUCT verilerinin birden çok satırını, ODBC veri kaynağı sütunundan türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Date_Bulk(
@@ -664,10 +665,10 @@ void RFX_Date_Bulk(
 Bir veri sütununun adı.
 
 *Prgtsler*<br/>
-TIMESTAMP_STRUCT değerleri dizisine yönelik bir işaretçi. Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır. TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için *ODBC SDK Programlayıcısının başvurusunun*ek D konusunun "C veri türleri" konusuna bakın.
+TIMESTAMP_STRUCT değerleri dizisine yönelik bir işaretçi. Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır. TIMESTAMP_STRUCT veri türü hakkında daha fazla bilgi için *ODBC SDK Programlayıcısının başvurusunun* ek D konusunun "C veri türleri" konusuna bakın.
 
 *Prguzunluklar*<br/>
-Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, baytlara göre işaret edilen dizideki her bir değerin bayt cinsinden uzunluğunu *depolar.* Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu*içindeki ODBC API işlevi.
+Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, baytlara göre işaret edilen dizideki her bir değerin bayt cinsinden uzunluğunu *depolar.* Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu* içindeki ODBC API işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -692,7 +693,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 Çift duyarlıklı, kayan noktalı verilerin birden çok satırını, ODBC veri kaynağı sütunundan, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Double_Bulk(
@@ -714,7 +715,7 @@ Bir veri sütununun adı.
 Değer dizisine yönelik bir işaretçi **`double`** . Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır.
 
 *Prguzunluklar*<br/>
-Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, dizideki her değerin bayt cinsinden uzunluğunu, *Prgdbller*tarafından işaret edilen dizide depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu*içindeki ODBC API işlevi.
+Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, dizideki her değerin bayt cinsinden uzunluğunu, *Prgdbller* tarafından işaret edilen dizide depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu* içindeki ODBC API işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -739,7 +740,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 Bir nesnenin alan veri üyeleri arasında tamsayı verilerini `CRecordset` ve ODBC türü SQL_SMALLINT veri kaynağındaki bir kaydın sütunlarını aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Int(
@@ -756,7 +757,7 @@ void RFX_Int(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`int`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 ### <a name="example"></a>Örnek
@@ -771,7 +772,7 @@ Bkz. [RFX_Text](#rfx_text).
 
 ODBC veri kaynağı sütunundaki birden çok satırı, türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Long_Bulk(
@@ -793,7 +794,7 @@ Bir veri sütununun adı.
 Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır.
 
 *Prguzunluklar*<br/>
-Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, dizideki her bir değerin bayt cinsinden uzunluğunu, *Prglongler*tarafından işaret edilen dizide depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu*içindeki ODBC API işlevi.
+Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, dizideki her bir değerin bayt cinsinden uzunluğunu, *Prglongler* tarafından işaret edilen dizide depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu* içindeki ODBC API işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -818,7 +819,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 Kayan nokta verilerinin birden çok satırını, ODBC veri kaynağı sütunundan türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Single_Bulk(
@@ -840,7 +841,7 @@ Bir veri sütununun adı.
 Değer dizisine yönelik bir işaretçi **`float`** . Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır.
 
 *Prguzunluklar*<br/>
-Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, baytlara *göre işaret*edilen dizideki her bir değerin bayt cinsinden uzunluğunu depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu*içindeki ODBC API işlevi.
+Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, baytlara *göre işaret* edilen dizideki her bir değerin bayt cinsinden uzunluğunu depolar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu* içindeki ODBC API işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -865,7 +866,7 @@ Bkz. [RFX_Text_Bulk](#rfx_text_bulk).
 
 ODBC veri kaynağındaki bir sütundan birden fazla karakter verisi satırını türetilmiş bir nesnede karşılık gelen bir diziye aktarır `CRecordset` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void RFX_Text_Bulk(
@@ -888,10 +889,10 @@ Bir veri sütununun adı.
 LPSTR değerlerinin dizisine yönelik bir işaretçi. Bu dizi verileri veri kaynağından kayıt kümesine aktarılacak şekilde depolayacaktır. Geçerli ODBC sürümü ile bu değerlerin Unicode olamayacağını unutmayın.
 
 *Prguzunluklar*<br/>
-Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, baytlara *göre işaret*edilen dizideki her bir değerin bayt cinsinden uzunluğunu depolar. Bu uzunluk, null sonlandırma karakterini dışlar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu*içindeki ODBC API işlevi.
+Uzun tamsayıların dizisine yönelik bir işaretçi. Bu dizi, baytlara *göre işaret* edilen dizideki her bir değerin bayt cinsinden uzunluğunu depolar. Bu uzunluk, null sonlandırma karakterini dışlar. Karşılık gelen veri öğesi null bir değer içeriyorsa SQL_NULL_DATA değerin depolanacağı değeri unutmayın. Daha fazla ayrıntı için bkz `SQLBindCol` . *ODBC SDK Programlayıcısının başvurusu* içindeki ODBC API işlevi.
 
 *nMaxLength*<br/>
-Null sonlandırma karakteri de dahil olmak üzere *Prgstrler*tarafından işaret edilen dizide depolanan değerlerin izin verilen en fazla uzunluğu. Verilerin kesilmemesini sağlamak için, istediğiniz en büyük veri öğesini karşılayacak büyüklükte bir değer geçirin.
+Null sonlandırma karakteri de dahil olmak üzere *Prgstrler* tarafından işaret edilen dizide depolanan değerlerin izin verilen en fazla uzunluğu. Verilerin kesilmemesini sağlamak için, istediğiniz en büyük veri öğesini karşılayacak büyüklükte bir değer geçirin.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -931,7 +932,7 @@ void CMultiCustomer::DoBulkFieldExchange(CFieldExchange* pFX)
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasındaki bayt dizilerini aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Binary(
@@ -950,7 +951,7 @@ void AFXAPI DFX_Binary(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, [CByteArray](cbytearray-class.md)türündeki değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *nPreAllocSize*<br/>
@@ -978,7 +979,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında Boole verileri aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Bool(
@@ -996,7 +997,7 @@ void AFXAPI DFX_Bool(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, BOOL türündeki değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *Dwbindoseçenekleri*<br/>
@@ -1021,7 +1022,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında tek bayt aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Byte(
@@ -1039,7 +1040,7 @@ void AFXAPI DFX_Byte(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, BYTE türündeki değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *Dwbindoseçenekleri*<br/>
@@ -1064,7 +1065,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında para birimi verilerini aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Currency(
@@ -1082,7 +1083,7 @@ void AFXAPI DFX_Currency(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, bu değer [Copacurrency](colecurrency-class.md)türünde belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *Dwbindoseçenekleri*<br/>
@@ -1107,7 +1108,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında saat ve Tarih verilerini aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_DateTime(
@@ -1125,7 +1126,7 @@ void AFXAPI DFX_DateTime(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. İşlevi [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesine bir başvuru alır. Kayıt kümesinden veri kaynağına aktarım için, bu değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *Dwbindoseçenekleri*<br/>
@@ -1153,7 +1154,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında **çift kayan** veri aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Double(
@@ -1171,7 +1172,7 @@ void AFXAPI DFX_Double(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`double`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *Dwbindoseçenekleri*<br/>
@@ -1196,7 +1197,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında uzun tamsayı verilerini aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Long(
@@ -1214,7 +1215,7 @@ void AFXAPI DFX_Long(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`long`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *Dwbindoseçenekleri*<br/>
@@ -1239,7 +1240,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 **Önemli** Bu işlev yerine [DFX_Binary](#dfx_binary) kullanmanız önerilir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_LongBinary(
@@ -1258,7 +1259,7 @@ void AFXAPI DFX_LongBinary(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına bir aktarım için, [CLongBinary](clongbinary-class.md)türündeki değer belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *dwPreAllocSize*<br/>
@@ -1286,7 +1287,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında kısa tamsayı verilerini aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Short(
@@ -1304,7 +1305,7 @@ void AFXAPI DFX_Short(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`short`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *Dwbindoseçenekleri*<br/>
@@ -1332,7 +1333,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Kayan nokta verilerini bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ile veri kaynağındaki bir kaydın sütunları arasında aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Single(
@@ -1350,7 +1351,7 @@ void AFXAPI DFX_Single(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, türünün değeri, **`float`** belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *Dwbindoseçenekleri*<br/>
@@ -1375,7 +1376,7 @@ Bkz. [DFX_Text](#dfx_text).
 
 Verileri `CString` bir [CDaoRecordset](cdaorecordset-class.md) nesnesinin alan veri üyeleri ve veri kaynağındaki bir kaydın sütunları arasında aktarır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AFXAPI DFX_Text(
@@ -1394,7 +1395,7 @@ void AFXAPI DFX_Text(
 *szName*<br/>
 Bir veri sütununun adı.
 
-*deeri*<br/>
+*değer*<br/>
 Belirtilen veri üyesinde depolanan değer — aktarılacak değer. Kayıt kümesinden veri kaynağına aktarım için, [CString](../../atl-mfc-shared/reference/cstringt-class.md)türündeki değer, belirtilen veri üyesinden alınır. Veri kaynağından kayıt kümesine aktarım için, değer belirtilen veri üyesinde depolanır.
 
 *nPreAllocSize*<br/>

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/OPT (Iyileştirmeler)
 title: /OPT (İyileştirmeler)
 ms.date: 05/18/2018
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-ms.openlocfilehash: 7f576d971425a67fc533bb417583173617615e3b
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 73cdb182941ddf865695d58f6d60a96002f5005a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040411"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221962"
 ---
 # <a name="opt-optimizations"></a>/OPT (İyileştirmeler)
 
@@ -40,42 +41,42 @@ LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denet
 
 **/OPT: ref** hiçbir şekilde başvurulmayan işlevleri ve verileri ortadan kaldırır; **/OPT: NOREF** hiçbir şekilde başvurulmayan işlevleri ve verileri tutar.
 
-/OPT: REF etkinleştirildiğinde bağlantı, başvurulmayan paketlenmiş işlevleri ve verileri, *Compts*olarak bilinen verileri kaldırır. Bu iyileştirme, geçişli COMDAT eleme olarak bilinir. **/OPT: ref** seçeneği artımlı bağlamayı de devre dışı bırakır.
+/OPT: REF etkinleştirildiğinde bağlantı, başvurulmayan paketlenmiş işlevleri ve verileri, *Compts* olarak bilinen verileri kaldırır. Bu iyileştirme, geçişli COMDAT eleme olarak bilinir. **/OPT: ref** seçeneği artımlı bağlamayı de devre dışı bırakır.
 
 Satır içine alınmış işlevler ve bir sınıf bildiriminde tanımlanan üye işlevleri her zaman Comtts ' dir. Bir nesne dosyasındaki tüm işlevler, [/GY](gy-enable-function-level-linking.md) seçeneği kullanılarak derlenmişse COMDAT 'lar içine yapılır. **`const`** Comduts 'e veri yerleştirmek için kullanarak bunu bildirmeniz gerekir `__declspec(selectany)` . Kaldırma veya katlama için veri belirtme hakkında daha fazla bilgi için bkz. [selectany](../../cpp/selectany.md).
 
-/OPT: **NOREF** veya [/Debug](debug-generate-debug-info.md) belirtilmediği takdirde, varsayılan olarak, **/OPT: ref** bağlayıcı tarafından etkinleştirilir. Bu varsayılanı geçersiz kılmak ve başvurulmayan Comnts 'yi programda tutmak için **/OPT: NOREF**belirtin. Belirli bir sembolün kaldırılmasını geçersiz kılmak için [/Include](include-force-symbol-references.md) seçeneğini kullanabilirsiniz.
+/OPT: **NOREF** veya [/Debug](debug-generate-debug-info.md) belirtilmediği takdirde, varsayılan olarak, **/OPT: ref** bağlayıcı tarafından etkinleştirilir. Bu varsayılanı geçersiz kılmak ve başvurulmayan Comnts 'yi programda tutmak için **/OPT: NOREF** belirtin. Belirli bir sembolün kaldırılmasını geçersiz kılmak için [/Include](include-force-symbol-references.md) seçeneğini kullanabilirsiniz.
 
-[/Debug](debug-generate-debug-info.md) belirtilirse, **/opt** Için varsayılan değer **NOREF**' dir ve tüm işlevler görüntüde korunur. Bu varsayılanı geçersiz kılmak ve bir hata ayıklama derlemesini iyileştirmek için **/OPT: ref**belirtin. Bu, yürütülebilir dosyanızın boyutunu azaltabilir ve hata ayıklama yapılarında bile yararlı bir iyileştirme olabilir. Hata ayıklama yapılarında özdeş işlevleri korumak için **/OPT: NOıCF** belirtmenizi öneririz. Bu yığın izlemelerini okumayı ve aksi takdirde birlikte katlanacak işlevlerde kesme noktalarını ayarlamayı kolaylaştırır.
+[/Debug](debug-generate-debug-info.md) belirtilirse, **/opt** Için varsayılan değer **NOREF**' dir ve tüm işlevler görüntüde korunur. Bu varsayılanı geçersiz kılmak ve bir hata ayıklama derlemesini iyileştirmek için **/OPT: ref** belirtin. Bu, yürütülebilir dosyanızın boyutunu azaltabilir ve hata ayıklama yapılarında bile yararlı bir iyileştirme olabilir. Hata ayıklama yapılarında özdeş işlevleri korumak için **/OPT: NOıCF** belirtmenizi öneririz. Bu yığın izlemelerini okumayı ve aksi takdirde birlikte katlanacak işlevlerde kesme noktalarını ayarlamayı kolaylaştırır.
 
-**ICF** \[ ICF **=** _yinelemeler_] &#124; **NOICF**
+ \[ ICF **=** _yinelemeler_] &#124; **NOICF**
 
-**ICF** \[ **=** Aynı COMDAT katlamayı gerçekleştirmek için ICF_yinelemelerini_kullanın]. Fazlalık COMDAT'lar bağlayıcı çıktısından kaldırılabilir. İsteğe bağlı *yineleme* parametresi, simgelerin yineleme için kaç kez gezeceği sayısını belirtir. Varsayılan yineleme sayısı 1 ' dir. Ek yinelemeler, bir önceki yinelemede katlama sırasında kapsamda olmayan birden çok yineleme bulabilir.
+ \[ **=** Aynı COMDAT katlamayı gerçekleştirmek için ICF _yinelemelerini_ kullanın]. Fazlalık COMDAT'lar bağlayıcı çıktısından kaldırılabilir. İsteğe bağlı *yineleme* parametresi, simgelerin yineleme için kaç kez gezeceği sayısını belirtir. Varsayılan yineleme sayısı 1 ' dir. Ek yinelemeler, bir önceki yinelemede katlama sırasında kapsamda olmayan birden çok yineleme bulabilir.
 
-/OPT: **NOICF** veya [/Debug](debug-generate-debug-info.md) belirtilmediği takdirde, varsayılan olarak, **/OPT: ICF** bağlayıcı tarafından etkinleştirilir. Bu varsayılanı geçersiz kılmak ve Comnts 'nin programa katlanmasını engellemek için **/OPT: NOıCF**belirtin.
+/OPT: **NOICF** veya [/Debug](debug-generate-debug-info.md) belirtilmediği takdirde, varsayılan olarak, **/OPT: ICF** bağlayıcı tarafından etkinleştirilir. Bu varsayılanı geçersiz kılmak ve Comnts 'nin programa katlanmasını engellemek için **/OPT: NOıCF** belirtin.
 
 Bir hata ayıklama derlemesinde, COMDAT katlamayı etkinleştirmek için açıkça **/OPT: ICF** belirtmeniz gerekir. Ancak, **/OPT: ICF** özdeş verileri veya işlevleri birleştirebildiğinden, yığın izlemelerinde görünen işlev adlarını değiştirebilir. Ayrıca, belirli işlevlerde kesme noktalarını ayarlamayı veya hata ayıklayıcıdaki bazı verileri incelemenizi olanaksız hale getirir ve kodunuzda tek adım ilerlemenizin sizi beklenmedik işlevlere götürebilirler. Kodun davranışı aynıdır, ancak hata ayıklayıcı sunumu çok karmaşık olabilir. Bu nedenle, küçük kodun avantajları bu dezavantajların avantajlarından yararlanmadığı müddetçe hata ayıklama yapılarında **/OPT: ICF** kullanmanızı önermiyoruz.
 
 > [!NOTE]
-> **/OPT: ICF** aynı adresin farklı işlevlere veya salt okunabilir veri üyelerine (yani, **`const`** **/GY**kullanılarak derlendikleri değişkenlerle) atanmasına neden olabileceğinden, işlevler veya salt okuma veri üyeleri için benzersiz adreslere bağlı olan bir programı bozabilir. Daha fazla bilgi için bkz. [/GY (Işlev düzeyi bağlamayı etkinleştir)](gy-enable-function-level-linking.md).
+> **/OPT: ICF** aynı adresin farklı işlevlere veya salt okunabilir veri üyelerine (yani, **`const`** **/GY** kullanılarak derlendikleri değişkenlerle) atanmasına neden olabileceğinden, işlevler veya salt okuma veri üyeleri için benzersiz adreslere bağlı olan bir programı bozabilir. Daha fazla bilgi için bkz. [/GY (Function-Level bağlamayı etkinleştir)](gy-enable-function-level-linking.md).
 
 **LBR** &#124; **NOLBR**
 
 **/OPT: LBR** ve **/OPT: NOLBR** seçenekleri yalnızca ARM ikilileri için geçerlidir. Belirli ARM işlemci dal yönergeleri sınırlı aralığa sahip olduğundan, bağlayıcı Aralık dışı bir adrese bir atmayı algılarsa, dal yönergesinin hedef adresini, gerçek hedefi hedefleyen bir dal yönergesi içeren "Adası" kodunun adresiyle değiştirir. Genel kod boyutunu en aza indirmek için uzun dal yönergelerinin algılanmasını ve ara kod Adaları yerleştirmesini iyileştirmek için **/OPT: LBR** kullanabilirsiniz. **/OPT: NOLBR** bağlayıcının, karşılaştığı ve en iyi duruma getirme olmadan uzun dal yönergeleri için kod Adaları oluşturmasını söyler.
 
-Varsayılan olarak, **/OPT: LBR** seçeneği artımlı bağlama etkin olmadığında ayarlanır. Artımsal olmayan bir bağlantı istiyorsanız ancak uzun dal iyileştirmelerine sahip değilseniz, **/OPT: NOLBR**değerini belirtin. **/OPT: LBR** seçeneği artımlı bağlamayı devre dışı bırakır.
+Varsayılan olarak, **/OPT: LBR** seçeneği artımlı bağlama etkin olmadığında ayarlanır. Artımsal olmayan bir bağlantı istiyorsanız ancak uzun dal iyileştirmelerine sahip değilseniz, **/OPT: NOLBR** değerini belirtin. **/OPT: LBR** seçeneği artımlı bağlamayı devre dışı bırakır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Komut satırında kullanıldığında, bağlayıcı varsayılan olarak **/OPT: ref, ICF, LBR**olur. **/Debug** belirtilirse, varsayılan olarak **/OPT: NOREF, NOıCF, NOLBR**olur.
+Komut satırında kullanıldığında, bağlayıcı varsayılan olarak **/OPT: ref, ICF, LBR** olur. **/Debug** belirtilirse, varsayılan olarak **/OPT: NOREF, NOıCF, NOLBR** olur.
 
 **/Opt** iyileştirmeleri genellikle görüntü boyutunu azaltır ve program hızını artırır. Bu geliştirmeler, daha büyük programlar için, perakende derlemeler için varsayılan olarak etkinleştirilmeleriyle ilgili önemli ölçüde olabilir.
 
 Bağlayıcı iyileştirmesi daha fazla zaman alır, ancak en iyi duruma getirilmiş kod, bağlayıcının düzeltilmesi ve daha küçük bir son görüntü oluşturması için daha az sayıda yeniden konumlandırmaya sahip olması ve daha az hata ayıklama bilgisi olduğunda PDB 'ye yazılması durumunda daha da fazla zaman kazandırır. En iyi duruma getirme etkinleştirildiğinde analizin daha hızlı bir bağlantı süresine neden olabilir. Bu, analiz halindeki küçük ek maliyet, bağlayıcının daha küçük ikili dosyalar üzerinde geçiş yaptığı süre içindeki tasarruflara göre uzaklığa göre daha fazla olabilir.
 
-**/Opt** bağımsız değişkenleri, virgülle ayrılmış olarak birlikte belirtilebilir. Örneğin, **/OPT: ref/OPT: NOıCF**yerine **/OPT: ref, NOICF**belirtebilirsiniz.
+**/Opt** bağımsız değişkenleri, virgülle ayrılmış olarak birlikte belirtilebilir. Örneğin, **/OPT: ref/OPT: NOıCF** yerine **/OPT: ref, NOICF** belirtebilirsiniz.
 
-**/OPT: ref** tarafından kaldırılan işlevleri ve **/OPT: ICF**tarafından katlanmış işlevleri görmek için [/verbose](verbose-print-progress-messages.md) bağlayıcı seçeneğini kullanabilirsiniz.
+**/OPT: ref** tarafından kaldırılan işlevleri ve **/OPT: ICF** tarafından katlanmış işlevleri görmek için [/verbose](verbose-print-progress-messages.md) bağlayıcı seçeneğini kullanabilirsiniz.
 
 **/Opt** bağımsız değişkenleri genellikle VISUAL Studio IDE 'Deki **Yeni proje** iletişim kutusu kullanılarak oluşturulan projeler için ayarlanır ve genellikle hata ayıklama ve yayın yapılandırmalarına yönelik farklı değerlere sahiptir. Projenizdeki bu bağlayıcı seçenekleri için herhangi bir değer ayarlanmamışsa, bu durumda proje varsayılanlarını alabilir ve bu, komut satırında bağlayıcı tarafından kullanılan varsayılan değerlerden farklı olabilir.
 

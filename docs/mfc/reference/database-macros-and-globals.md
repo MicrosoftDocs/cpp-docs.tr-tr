@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: veritabanı makroları ve genel'
 title: Veritabanı Makroları ve Genel Öğeleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - global functions [MFC], database functions
 - macros [MFC], MFC database
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
-ms.openlocfilehash: 0dc53bce8b43677e7fe0aa1787d1adcc16a560c4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1dd6501c8ea37478a7b75341467e1c77819aa3f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837533"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220324"
 ---
 # <a name="database-macros-and-globals"></a>Veritabanı Makroları ve Genel Öğeleri
 

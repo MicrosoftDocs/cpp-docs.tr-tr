@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE ortak Iletişim kutusu sınıfları'
 title: OLE Ortak İletişim Kutusu Sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,19 +8,19 @@ helpviewer_keywords:
 - OLE common dialog classes [MFC]
 - common dialog classes [MFC]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
-ms.openlocfilehash: 1854d19c540f5e3e64b47786f465a05213eced86
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c30871c8f49be608f5ceeea3d84c86d483e20a81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222287"
 ---
 # <a name="ole-common-dialog-classes"></a>OLE Ortak İletişim Kutusu Sınıfları
 
 Bu sınıflar, bir dizi standart OLE iletişim kutusu uygulayarak ortak OLE görevlerini işler. Ayrıca OLE işlevselliği için tutarlı bir kullanıcı arabirimi sağlar.
 
 [Colet Iletişim kutusu](reference/coledialog-class.md)<br/>
-Framework tarafından tüm OLE iletişim kutuları için ortak uygulamaları içerecek şekilde kullanılır. Kullanıcı arabirimi kategorisindeki tüm iletişim kutusu sınıfları bu temel sınıftan türetilir. `COleDialog`doğrudan kullanılamaz.
+Framework tarafından tüm OLE iletişim kutuları için ortak uygulamaları içerecek şekilde kullanılır. Kullanıcı arabirimi kategorisindeki tüm iletişim kutusu sınıfları bu temel sınıftan türetilir. `COleDialog` doğrudan kullanılamaz.
 
 [COleInsertDialog](reference/coleinsertdialog-class.md)<br/>
 Yeni OLE bağlantılı veya katıştırılmış öğeleri eklemek için standart Kullanıcı arabirimi olan nesne Ekle iletişim kutusunu görüntüler.

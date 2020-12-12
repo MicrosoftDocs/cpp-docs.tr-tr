@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bölümler (C/C++)'
 title: SECTIONS (C/C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - SECTIONS .def file statement
 ms.assetid: 7b974366-9ef5-4e57-bbcc-73a1df6f8857
-ms.openlocfilehash: 5125b09675969c784aafe375faf1fdbc36d8c5d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aaebeb19c921dfb389c55209c7a371f49043cb56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318634"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224770"
 ---
 # <a name="sections-cc"></a>SECTIONS (C/C++)
 
-Bir veya daha fazla bir bölüm tanıtır `definitions` projenizin çıkış dosyası olarak bölümlerde erişim belirticileri olan.
+`definitions`Projenizin çıkış dosyasındaki bölümlerde erişim Belirticilerinin bir veya daha fazla bölümünü tanıtır.
 
 ```
 SECTIONS
@@ -24,42 +25,42 @@ definitions
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her tanım ayrı bir satırda olmalıdır. `SECTIONS` Anahtar sözcüğü, ilk tanım ile aynı satırda veya bir önceki satırdaki olabilir. Bir veya daha fazla .def dosyası içerebilir `SECTIONS` deyimleri.
+Her tanım ayrı bir satırda olmalıdır. `SECTIONS`Anahtar sözcüğü, ilk tanımıyla veya önceki bir satırda aynı satırda olabilir. . Def dosyası bir veya daha fazla deyim içerebilir `SECTIONS` .
 
-Bu `SECTIONS` deyimi görüntü dosyasında bir veya daha fazla bölüm öznitelikleri ayarlar ve varsayılan öznitelikleri her bölüm türü için geçersiz kılmak için kullanılabilir.
+Bu `SECTIONS` ifade, görüntü dosyasındaki bir veya daha fazla bölümün özniteliklerini ayarlar ve her bölüm türü için varsayılan öznitelikleri geçersiz kılmak için kullanılabilir.
 
-Biçimi `definitions` olan:
+Biçimi `definitions` :
 
 `.section_name specifier`
 
-Burada `.section_name` program görüntüsü bir bölümde adıdır ve `specifier` biri veya birkaçı aşağıdaki erişim değiştiriciler:
+, `.section_name` Program görüntinizdeki bir bölümün adıdır ve `specifier` aşağıdaki erişim değiştiricilerinden bir veya daha fazlasına sahiptir:
 
 |Değiştirici|Açıklama|
 |--------------|-----------------|
-|`EXECUTE`|Yürütülebilir bir bölümdür|
-|`READ`|Veri okuma işlemlerinin sağlar|
-|`SHARED`|Resmi yüklemek tüm işlemler arasında bölümü paylaşır|
-|`WRITE`|Veri yazma işlemleri sağlar.|
+|`EXECUTE`|Bölüm yürütülebilir|
+|`READ`|Verilerde okuma işlemlerine izin verir|
+|`SHARED`|Görüntüyü yükleyen tüm süreçler arasında bölümü paylaşır|
+|`WRITE`|Verilerde yazma işlemlerine izin verir|
 
-Belirleyicisi adlarının boşlukla ayırın. Örneğin:
+Tanımlayıcı adlarını bir boşluk ile ayırın. Örneğin:
 
 ```
 SECTIONS
 .rdata READ WRITE
 ```
 
-`SECTIONS` Bölüm listesi başlangıcını işaretler `definitions`. Her `definition` ayrı bir satırda olmalıdır. `SECTIONS` Anahtar sözcüğü, birinci ile aynı satırda olabilir `definition` veya önceki bir satır. Bir veya daha fazla .def dosyası içerebilir `SECTIONS` deyimleri. `SEGMENTS` Anahtar sözcüğü bir eşanlamlısı olarak desteklenen `SECTIONS`.
+`SECTIONS` Bölüm listesinin başlangıcını işaretler `definitions` . Her birinin `definition` ayrı bir satırda olması gerekir. `SECTIONS`Anahtar sözcüğü, ilk `definition` veya önceki bir satır ile aynı satırda olabilir. . Def dosyası bir veya daha fazla deyim içerebilir `SECTIONS` . `SEGMENTS`Anahtar sözcüğü, için bir eş anlamlı olarak desteklenir `SECTIONS` .
 
-Visual C++'ın daha eski sürümleri desteklenir:
+Visual C++ eski sürümleri desteklenir:
 
 ```
 section [CLASS 'classname'] specifier
 ```
 
-`CLASS` Anahtar sözcüğü, uyumluluk için desteklenir, ancak göz ardı edilir.
+`CLASS`Anahtar sözcüğü uyumluluk için desteklenir, ancak yok sayılır.
 
-Bölüm özniteliklerini belirt eşdeğer bir yolu [/SECTION](section-specify-section-attributes.md) seçeneği.
+Bölüm özniteliklerini belirtmenin eşdeğer bir yolu, [/section](section-specify-section-attributes.md) seçeneğidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül Tanımlama Deyimleri Kuralları](rules-for-module-definition-statements.md)
+[Module-Definition deyimleri için kurallar](rules-for-module-definition-statements.md)

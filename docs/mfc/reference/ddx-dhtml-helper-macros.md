@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: DDX_DHtml Yardımcısı makroları'
 title: DDX_DHtml Yardımcısı makroları
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), DHtml helper macros
 - macros [MFC], DDX_DHtml helpers
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
-ms.openlocfilehash: eeea85872422edcf421ba2fe254c8f03c093fe3c
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: ac7df82d628c943a5ba28697cf614853e7e7dddd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220246"
 ---
 # <a name="ddx_dhtml-helper-macros"></a>DDX_DHtml Yardımcısı makroları
 
@@ -64,7 +65,7 @@ DDX_DHtml_Anchor_Href(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*var*<br/>
+*l*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -90,7 +91,7 @@ DDX_DHtml_Anchor_Target(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*var*<br/>
+*l*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -116,7 +117,7 @@ DDX_DHtml_ElementInnerHtml(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*var*<br/>
+*l*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -142,7 +143,7 @@ DDX_DHtml_ElementInnerText(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*var*<br/>
+*l*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -168,7 +169,7 @@ DDX_DHtml_ElementValue(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*var*<br/>
+*l*<br/>
 Takas edilmekte olan değer. CDHtmlDialog içindeki *değeri* gör [::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -196,7 +197,7 @@ DDX_DHtml_Frame_Src(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*var*<br/>
+*l*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -222,7 +223,7 @@ DDX_DHtml_IFrame_Src(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*var*<br/>
+*l*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -248,7 +249,7 @@ DDX_DHtml_Img_Src(
 *ada*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*var*<br/>
+*l*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="remarks"></a>Açıklamalar

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel NMAKE makroları'
 title: Özel NMAKE Makroları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - macros, NMAKE
 - NMAKE macros, special
 ms.assetid: d772e8ea-1e9f-4ad8-beec-663af76f2dd9
-ms.openlocfilehash: a21c58d5ec6e3bee4ef89c09ecd19697fdb3dc86
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6c817e684ff7f4fe50c2844ca4c8976e97782ecd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317984"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224653"
 ---
 # <a name="special-nmake-macros"></a>Özel NMAKE Makroları
 
-NMAKE çeşitli dosya adlarını ve komutları temsil etmek için çeşitli özel makroları sağlar. Bu makrolar bazılarını bir kullanım içindeki önceden tanımlanmış çıkarım kuralları içindir. Tüm makrolar gibi NMAKE tarafından sağlanan makroları büyük/küçük harfe duyarlıdır.
+NMAKE çeşitli dosya adlarını ve komutları temsil etmek için çeşitli özel makrolar sağlar. Bu makroların bazıları için bir kullanım önceden tanımlanmış çıkarım kuralları ' nda. Tüm makrolar gibi, NMAKE tarafından sunulan makrolar büyük/küçük harfe duyarlıdır.
 
 - [Dosya adı makroları](filename-macros.md)
 
@@ -23,7 +24,7 @@ NMAKE çeşitli dosya adlarını ve komutları temsil etmek için çeşitli öze
 
 - [Komut makroları ve seçenek makroları](command-macros-and-options-macros.md)
 
-- [Ortam Değişkeni Makroları](environment-variable-macros.md)
+- [Ortam değişkeni makroları](environment-variable-macros.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

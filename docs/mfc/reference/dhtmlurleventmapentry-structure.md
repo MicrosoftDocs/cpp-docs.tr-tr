@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Dhtmlurtaventmapentry yapısı'
 title: DHtmlUrlEventMapEntry Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - DHtmlUrlEventMapEntry structure [MFC]
 ms.assetid: 43117c1f-1a51-406c-aa2f-fea647080049
-ms.openlocfilehash: c9b58067a9c8b6a71cd22b654a2f82ba0f8bfe36
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c35e3ac70d8530042ca73397b0f7c6df13501497
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220064"
 ---
 # <a name="dhtmlurleventmapentry-structure"></a>DHtmlUrlEventMapEntry Yapısı
 
-`DHtmlUrlEventMapEntry` Yapısı çok URL'li olay eşleme desteği sağlar.
+`DHtmlUrlEventMapEntry`Yapı, çok URL olan olay haritası desteği sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,12 +34,12 @@ const DHtmlEventMapEntry *pEventMap;
 URL.
 
 *pEventMap*<br/>
-Olay eşlemesi URL'si ile ilişkili.
+URL ile ilişkili olay haritası.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdhtml.h
+**Üstbilgi:** afxdhtml. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+[Yapılar, stiller, geri çağrılar ve Ileti haritaları](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)

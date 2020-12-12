@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __outdword'
 title: __outdword
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - outdword instruction
 - __outdword intrinsic
 ms.assetid: ed1e4994-a84b-4759-8bf9-cd48fb073f4d
-ms.openlocfilehash: ce1358e7cef0136ccf7d314038d06d271916e0bc
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e1d5f79231675ca64a340138ebda24a56e485ab1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221659"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222352"
 ---
 # <a name="__outdword"></a>__outdword
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bağlantı noktası *bağlantı noktasına*bir doubleword *verisi* gönderme yönergesiniüretir.`out`
+`out`Bağlantı noktası *bağlantı noktasına* bir doubleword *verisi* gönderme yönergesini üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,7 +45,7 @@ void __outdword(
 |---------------|------------------|
 |`__outdword`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Tanılama Hizmetleri'
 title: Tanı Hizmetleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: 931545e6a79ecaa59d147e48265649ef20466fbd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3d2b7bd303fc062aa520497e649430f53f7667c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220077"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 
@@ -43,7 +44,7 @@ Hata ayıklama kitaplığında, ayrılan tüm bellek blokları "Guard bayt" seri
 
 Uygulama dosyanızda, ' a yapılan tüm çağrılar, **`new`** bellek ayırmanın gerçekleştiği dosya adını ve satır numarasını depolayacaktır. [CMemoryState::D umpallobjectssince](cmemorystate-structure.md#dumpallobjectssince) işlevi bu ek bilgileri görüntüleyecek ve bellek sızıntılarını tanımlamanızı sağlar. Tanılama çıkışı hakkında daha fazla bilgi için [CDumpContext](../../mfc/reference/cdumpcontext-class.md) sınıfına da bakın.
 
-Ayrıca, C çalışma zamanı kitaplığı, uygulamalarınızda hata ayıklamak için kullanabileceğiniz bir tanılama işlevleri kümesini destekler. Daha fazla bilgi için bkz. çalışma zamanı kitaplık başvurusunda [hata ayıklama yordamları](../../c-runtime-library/debug-routines.md) .
+Ayrıca, C çalışma zamanı kitaplığı, uygulamalarınızda hata ayıklamak için kullanabileceğiniz bir tanılama işlevleri kümesini destekler. Daha fazla bilgi için bkz. Run-Time kitaplığı başvurusunda [hata ayıklama yordamları](../../c-runtime-library/debug-routines.md) .
 
 ### <a name="mfc-general-diagnostic-macros"></a>MFC genel tanılama makroları
 
@@ -292,7 +293,7 @@ DEBUG_ONLY makrosu, ve ile çevreleyen *ifadeye* eşdeğerdir `#ifdef _DEBUG` `#
 
 Verilerin doğruluğunu doğrulamak için kullanın.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 ENSURE(  booleanExpression )
@@ -416,7 +417,7 @@ CDumpContext  afxDump;
 
 `afxDump` , hata ayıklayıcı çıkış penceresine veya hata ayıklama terminaline bilgi göndermenizi sağlayan önceden tanımlanmış bir [CDumpContext](../../mfc/reference/cdumpcontext-class.md) nesnesidir `CDumpContext` . Genellikle, `afxDump` için bir parametre olarak sağlarsınız `CObject::Dump` .
 
-Windows NT ve tüm Windows sürümleri `afxDump` için çıkış, uygulamanızda hata ayıkladığınızda Visual C++ çıktı-hata ayıklama penceresine gönderilir.
+Windows NT ve tüm Windows sürümleri `afxDump` için çıkış, uygulamanızda hata ayıklarken Visual C++ Output-Debug penceresine gönderilir.
 
 Bu değişken yalnızca MFC 'nin hata ayıklama sürümünde tanımlanmıştır. Hakkında daha fazla bilgi için `afxDump` bkz. [MFC uygulamalarında hata ayıklama](/visualstudio/debugger/mfc-debugging-techniques).
 
@@ -432,7 +433,7 @@ Bu değişken yalnızca MFC 'nin hata ayıklama sürümünde tanımlanmıştır.
 
 Hata ayıklama sırasında MFC 'nin bir nesne durumunun dökümünü almak için kullandığı iç işlev.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void AfxDump(const CObject* pOb);
@@ -623,7 +624,7 @@ Yukarıdaki çıktıda bulunan her satır, son işlev çağrısının adresini, 
 
 Örneğin, aşağıdaki tabloda yukarıdaki çıktının ilk satırı açıklanmaktadır:
 
-|Çıkış|Açıklama|
+|Çıktı|Açıklama|
 |------------|-----------------|
 |`00427D55:`|Son işlev çağrısının dönüş adresi.|
 |`DUMP2\DEBUG\DUMP2.EXE!`|İşlev çağrısını içeren modülün tam yol adı.|
@@ -734,7 +735,7 @@ Bellek bloğu Şu anda ayrıldıysanız ve uzunluk doğruysa sıfır dışında;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrıca, belirtilen boyutu özgün ayrılan boyuta göre denetler. İşlev sıfır dışında bir değer döndürürse, ayırma sıra numarası *plRequestNumber*içinde döndürülür. Bu sayı, bloğun diğer tüm ayırmalara göre ayrıldığı sırayı temsil eder **`new`** .
+Ayrıca, belirtilen boyutu özgün ayrılan boyuta göre denetler. İşlev sıfır dışında bir değer döndürürse, ayırma sıra numarası *plRequestNumber* içinde döndürülür. Bu sayı, bloğun diğer tüm ayırmalara göre ayrıldığı sırayı temsil eder **`new`** .
 
 ### <a name="example"></a>Örnek
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __outbytestring'
 title: __outbytestring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __outbytestring intrinsic
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-ms.openlocfilehash: 31caf17db5d56efccd6b30200994b1080356b4c1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: feadb0b4275e370de88bfc04c8a10f90c41d0844
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217177"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222430"
 ---
 # <a name="__outbytestring"></a>__outbytestring
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`Count` `Port` `rep outsb` Tarafından işaretedilenilkbaytsayısınıtarafındanbelirtilenbağlantınoktasınagönderenyönergeyiüretir.`Buffer`
+`rep outsb` `Count` Tarafından işaret edilen ilk bayt sayısını tarafından `Buffer` belirtilen bağlantı noktasına gönderen yönergeyi üretir `Port` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,7 +49,7 @@ void __outbytestring(
 |---------------|------------------|
 |`__outbytestring`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

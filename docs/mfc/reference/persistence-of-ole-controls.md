@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE denetimlerinin kalıcılığı'
 title: OLE Denetimlerinin Kalıcılığı
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE controls [MFC], persistence
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
-ms.openlocfilehash: f3ef5a1f465cc478b429b9fa41d6478f22030a8a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8c0ee5b81ffd21953c3ed9bcbc21a9ae30979b49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843618"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218985"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 
@@ -21,9 +22,9 @@ OLE denetimlerinin bir özelliği, OLE denetiminin bir dosya veya akışa ait ö
 |Ad|Açıklama|
 |-|-|
 |[PX_Blob](#px_blob)|İkili büyük nesne (BLOB) verilerini depolayan bir denetim özelliğini değiş tokuş eder.|
-|[PX_Bool](#px_bool)|**Bool**türünde bir denetim özelliği değiş tokuş eder.|
+|[PX_Bool](#px_bool)|**Bool** türünde bir denetim özelliği değiş tokuş eder.|
 |[PX_Color](#px_color)|Bir denetimin Color özelliğini değiş tokuş eder.|
-|[PX_Currency](#px_currency)|**Cy**türünde bir denetim özelliği değiş tokuş eder.|
+|[PX_Currency](#px_currency)|**Cy** türünde bir denetim özelliği değiş tokuş eder.|
 |[PX_DataPath](#px_datapath)|Türünde bir denetim özelliği değiş tokuş eder `CDataPathProperty` .|
 |[PX_Double](#px_double)|Türünde bir denetim özelliği değiş tokuş eder **`double`** .|
 |[PX_Font](#px_font)|Bir denetimin yazı tipi özelliğini değiş tokuş eder.|
@@ -32,8 +33,8 @@ OLE denetimlerinin bir özelliği, OLE denetiminin bir dosya veya akışa ait ö
 |[PX_Long](#px_long)|Türünde bir denetim özelliği değiş tokuş eder **`long`** .|
 |[PX_Picture](#px_picture)|Bir denetimin resim özelliğini değiş tokuş eder.|
 |[PX_Short](#px_short)|Türünde bir denetim özelliği değiş tokuş eder **`short`** .|
-|[PX_ULong](#px_ulong)|**Ulong**türünde bir denetim özelliği değiş tokuş eder.|
-|[PX_UShort](#px_ushort)|**Ushort**türünde bir denetim özelliği değiş tokuş eder.|
+|[PX_ULong](#px_ulong)|**Ulong** türünde bir denetim özelliği değiş tokuş eder.|
+|[PX_UShort](#px_ushort)|**Ushort** türünde bir denetim özelliği değiş tokuş eder.|
 |[PXstring](#px_string)|Bir karakter dizesi denetim özelliği değiş tokuş eder.|
 |[PX_VBXFontConvert](#px_vbxfontconvert)|Bir VBX denetiminin yazı tipi ile ilgili özelliklerini OLE denetim yazı tipi özelliğine dönüştürür.|
 
@@ -71,7 +72,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, *hBlob*tarafından başvurulan değişkene uygun şekilde okunacak veya buradan yazılacak. Bu değişken başlangıçta ilk kez çağrılmadan önce NULL olarak başlatılmalıdır `PX_Blob` (genellikle, denetimin oluşturucusunda bu yapılabilir). *HBlobDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin başlatılması veya serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, *hBlob* tarafından başvurulan değişkene uygun şekilde okunacak veya buradan yazılacak. Bu değişken başlangıçta ilk kez çağrılmadan önce NULL olarak başlatılmalıdır `PX_Blob` (genellikle, denetimin oluşturucusunda bu yapılabilir). *HBlobDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin başlatılması veya serileştirme işleminin başarısız olması durumunda kullanılır.
 
 *HBlob* ve *hBlobDefault* tanıtıcıları, aşağıdakileri içeren bir bellek bloğuna başvurur:
 
@@ -118,7 +119,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, doğru şekilde *bValue*tarafından başvurulan değişkene okunacak veya yazılacak. *BDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, doğru şekilde *bValue* tarafından başvurulan değişkene okunacak veya yazılacak. *BDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_color"></a><a name="px_color"></a> PX_Color
 
@@ -157,11 +158,11 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde, *clrvalue*tarafından başvurulan değişkene göre okunacak veya bu değişkene yazılacak. Eğer *clrDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde, *clrvalue* tarafından başvurulan değişkene göre okunacak veya bu değişkene yazılacak. Eğer *clrDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_currency"></a><a name="px_currency"></a> PX_Currency
 
-`DoPropExchange` **Currency**türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın.
+`DoPropExchange` **Currency** türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizde bu işlevi çağırın.
 
 ```cpp
 BOOL PX_Currency(
@@ -196,7 +197,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde, *cyvalue*tarafından başvurulan değişkene okunacak veya bu değişkene yazılacak. *CyDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde, *cyvalue* tarafından başvurulan değişkene okunacak veya bu değişkene yazılacak. *CyDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_datapath"></a><a name="px_datapath"></a> PX_DataPath
 
@@ -230,7 +231,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri yolu özellikleri zaman uyumsuz denetim özellikleri uygular. Özelliğin değeri, uygun şekilde *Datapathproperty*tarafından başvurulan değişkene okunacak veya bu değişkene yazılacak.
+Veri yolu özellikleri zaman uyumsuz denetim özellikleri uygular. Özelliğin değeri, uygun şekilde *Datapathproperty* tarafından başvurulan değişkene okunacak veya bu değişkene yazılacak.
 
 ## <a name="px_double"></a><a name="px_double"></a> PX_Double
 
@@ -269,7 +270,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde *DoubleValue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *DoubleDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde *DoubleValue* tarafından başvurulan değişkene göre okunurdur veya yazılır. *DoubleDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_font"></a><a name="px_font"></a> PX_Font
 
@@ -307,7 +308,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, `font` uygun olduğunda bir başvuruya göre okunurdur veya yazılır `CFontHolder` . *PFontDesc* ve *Pfontdispambköpek* belirtilmişse, gerektiğinde özelliğin varsayılan değerini başlatmak için kullanılır. Bu değerler, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır. Genellikle, *pFontDesc* için null ve `COleControl::AmbientFont` *Pfontdispambun*tarafından döndürülen çevresel değer ile geçiş yapabilirsiniz. Tarafından döndürülen yazı tipi nesnesinin, `COleControl::AmbientFont` üye işlevine yapılan bir çağrı tarafından yayımlanması gerektiğini unutmayın `IFontDisp::Release` .
+Özelliğin değeri, `font` uygun olduğunda bir başvuruya göre okunurdur veya yazılır `CFontHolder` . *PFontDesc* ve *Pfontdispambköpek* belirtilmişse, gerektiğinde özelliğin varsayılan değerini başlatmak için kullanılır. Bu değerler, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır. Genellikle, *pFontDesc* için null ve `COleControl::AmbientFont` *Pfontdispambun* tarafından döndürülen çevresel değer ile geçiş yapabilirsiniz. Tarafından döndürülen yazı tipi nesnesinin, `COleControl::AmbientFont` üye işlevine yapılan bir çağrı tarafından yayımlanması gerektiğini unutmayın `IFontDisp::Release` .
 
 ## <a name="px_float"></a><a name="px_float"></a> PX_Float
 
@@ -346,7 +347,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde, *Floatvalue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *FloatDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde, *Floatvalue* tarafından başvurulan değişkene göre okunurdur veya yazılır. *FloatDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_iunknown"></a><a name="px_iunknown"></a> PX_IUnknown
 
@@ -384,7 +385,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde, *punk*tarafından başvurulan değişkene göre okunurdur veya yazılır. *PUnkDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde, *punk* tarafından başvurulan değişkene göre okunurdur veya yazılır. *PUnkDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_long"></a><a name="px_long"></a> PX_Long
 
@@ -423,7 +424,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde *lValue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *LDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde *lValue* tarafından başvurulan değişkene göre okunurdur veya yazılır. *LDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_picture"></a><a name="px_picture"></a> PX_Picture
 
@@ -462,7 +463,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde, *PICT*tarafından başvurulan değişkene göre okunurdur veya yazılır. *PictDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde, *PICT* tarafından başvurulan değişkene göre okunurdur veya yazılır. *PictDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_short"></a><a name="px_short"></a> PX_Short
 
@@ -501,11 +502,11 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde *Svalue*tarafından başvurulan değişkene göre okunurdur veya yazılır. Eğer *sDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde *Svalue* tarafından başvurulan değişkene göre okunurdur veya yazılır. Eğer *sDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_ulong"></a><a name="px_ulong"></a> PX_ULong
 
-`DoPropExchange` **Ulong**türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
+`DoPropExchange` **Ulong** türünde bir özelliği seri hale getirmek veya başlatmak için denetimin üye işlevinizin içinde bu işlevi çağırın.
 
 ```cpp
 BOOL PX_ULong(
@@ -540,7 +541,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde *Ulvalue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *UlDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde *Ulvalue* tarafından başvurulan değişkene göre okunurdur veya yazılır. *UlDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_ushort"></a><a name="px_ushort"></a> PX_UShort
 
@@ -579,7 +580,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde *Usvalue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *UsDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde *Usvalue* tarafından başvurulan değişkene göre okunurdur veya yazılır. *UsDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="pxstring"></a><a name="px_string"></a> PXstring
 
@@ -618,7 +619,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özelliğin değeri, uygun şekilde *strValue*tarafından başvurulan değişkene göre okunurdur veya yazılır. *StrDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
+Özelliğin değeri, uygun şekilde *strValue* tarafından başvurulan değişkene göre okunurdur veya yazılır. *StrDefault* belirtilmişse, özelliğin varsayılan değeri olarak kullanılır. Bu değer, herhangi bir nedenle denetimin serileştirme işleminin başarısız olması durumunda kullanılır.
 
 ## <a name="px_vbxfontconvert"></a><a name="px_vbxfontconvert"></a> PX_VBXFontConvert
 
@@ -646,7 +647,7 @@ Exchange başarılı olursa sıfır dışı; başarısız ise 0.
 
 Bu işlev yalnızca bir VBX denetimi için doğrudan değiştirme olarak tasarlanan bir OLE denetimi tarafından kullanılmalıdır. Visual Basic geliştirme ortamı, bir VBX denetimi içeren bir formu karşılık gelen değiştirme OLE denetimini kullanacak şekilde dönüştürdüğünde, `IDataObject::SetData` VBX denetiminin özellik verilerini içeren bir özellik kümesini geçirerek denetimin işlevini çağırır. Bu işlem, sırasıyla denetimin `DoPropExchange` işlevinin çağrılmasına neden olur. `DoPropExchange` , `PX_VBXFontConvert` VBX denetiminin yazı tipi ile ilgili özelliklerini (örneğin, "FontName," "FontSize" vb.) OLE denetiminin yazı tipi özelliğinin karşılık gelen bileşenlerine dönüştürmek için çağrı yapabilir.
 
-`PX_VBXFontConvert` yalnızca denetim gerçekten bir VBX form uygulamasından dönüştürüldüğünde çağrılmalıdır. Örnek:
+`PX_VBXFontConvert` yalnızca denetim gerçekten bir VBX form uygulamasından dönüştürüldüğünde çağrılmalıdır. Örneğin:
 
 [!code-cpp[NVC_MFCActiveXControl#14](../../mfc/codesnippet/cpp/persistence-of-ole-controls_1.cpp)]
 [!code-cpp[NVC_MFCActiveXControl#15](../../mfc/codesnippet/cpp/persistence-of-ole-controls_2.cpp)]
