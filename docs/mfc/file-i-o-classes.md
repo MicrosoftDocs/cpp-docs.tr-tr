@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dosya g/ç sınıfları'
 title: Dosya g-ç sınıfları
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - stream classes [MFC]
 - memory file classes [MFC]
 ms.assetid: 92821c3f-d9e1-47f6-98c9-3b632d86e811
-ms.openlocfilehash: 2fcf4dfc1388df0df2bc25928ec8541486c6bb2d
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b2a0404864cd63ea3992ebada643b15531bcfc3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615669"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228020"
 ---
 # <a name="file-io-classes"></a>Dosya G/Ç Sınıfları
 

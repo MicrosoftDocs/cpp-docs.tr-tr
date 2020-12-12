@@ -1,5 +1,6 @@
 ---
-title: COleInsertDialog Sınıfı
+description: 'Daha fazla bilgi edinin: Cotaınsertdialog sınıfı'
+title: Cotaınsertdialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleInsertDialog
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - COleInsertDialog [MFC], GetSelectionType
 - COleInsertDialog [MFC], m_io
 ms.assetid: a9ec610b-abde-431e-bd01-c40159a66dbb
-ms.openlocfilehash: b5de4ff5daa80e1d8727444a4cfd275597e18c08
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 54cd2f372ae43739a94bf03f8a432c52c914e5ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374969"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227045"
 ---
-# <a name="coleinsertdialog-class"></a>COleInsertDialog Sınıfı
+# <a name="coleinsertdialog-class"></a>Cotaınsertdialog sınıfı
 
-OLE Insert Object iletişim kutusu için kullanılır.
+OLE nesne Ekle iletişim kutusu için kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleInsertDialog : public COleDialog
@@ -45,62 +46,62 @@ class COleInsertDialog : public COleDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleInsertDialog::COleInsertDialog](#coleinsertdialog)|Bir `COleInsertDialog` nesne inşa eder.|
+|[Cotaınsertdialog:: Cotaınsertdialog](#coleinsertdialog)|Bir `COleInsertDialog` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleInsertDialog::CreateItem](#createitem)|İletişim kutusunda seçilen öğeyi oluşturur.|
-|[COleInsertDialog::DoModal](#domodal)|OLE Insert Object iletişim kutusunu görüntüler.|
-|[COleInsertDialog::GetClassID](#getclassid)|CLSID'yi seçilen öğeyle ilişkilendiriyor.|
-|[COleInsertDialog::GetDrawAspect](#getdrawaspect)|Öğeyi simge olarak çizip çizmememi söyler.|
-|[COleInsertDialog::GetIconicMetafile](#geticonicmetafile)|Bu öğenin ikonik formuyla ilişkili metadosyaya bir tanıtıcı alır.|
-|[COleInsertDialog::GetPathName](#getpathname)|İletişim kutusunda seçilen dosyaya tam yolu alır.|
-|[COleInsertDialog::GetSelectionType](#getselectiontype)|Seçilen nesne türünü alır.|
+|[Colet ınsertdialog:: CreateItem](#createitem)|İletişim kutusunda seçilen öğeyi oluşturur.|
+|[Colet ınsertdialog::D oModal](#domodal)|OLE nesne Ekle iletişim kutusunu görüntüler.|
+|[Colet ınsertdialog:: GetClassID](#getclassid)|Seçili öğeyle ilişkili CLSID 'yi alır.|
+|[Cotaınsertdialog:: GetDrawAspect](#getdrawaspect)|Öğenin bir simge olarak çizip çizmeyeceğini söyler.|
+|[Cotaınsertdialog:: Getıconicmetafile](#geticonicmetafile)|Bu öğenin IIC formuyla ilişkili meta dosyası için bir tanıtıcı alır.|
+|[Colet ınsertdialog:: GetPathName](#getpathname)|İletişim kutusunda seçilen dosyanın tam yolunu alır.|
+|[Cotaınsertdialog:: GetSelectionType](#getselectiontype)|Seçilen nesne türünü alır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleInsertDialog::m_io](#m_io)|İletişim kutusunun davranışını kontrol eden OLEUIINSERTOBJECT türünden bir yapı.|
+|[Colet ınsertdialog:: m_io](#m_io)|İletişim kutusunun davranışını denetleyen OLEUııNSERTOBJECT türünde bir yapı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu iletişim kutusunu `COleInsertDialog` aramak istediğinizde sınıf nesnesi oluşturun. Bir `COleInsertDialog` nesne oluşturulduktan sonra, iletişim kutusundaki denetimdeğerlerini veya durumlarını açmak için [m_io](#m_io) yapısını kullanabilirsiniz. Yapısı `m_io` OLEUIINSERTOBJECT tipidir. Bu iletişim sınıfını kullanma hakkında daha fazla bilgi için [DoModal](#domodal) üye işlevine bakın.
+Bu iletişim kutusunu çağırmak istediğinizde, sınıfının bir nesnesi oluşturun `COleInsertDialog` . Bir nesne oluşturulduktan sonra `COleInsertDialog` , iletişim kutusundaki denetimlerin değerlerini veya durumlarını başlatmak için [m_io](#m_io) yapısını kullanabilirsiniz. `m_io`Yapı, OLEUııNSERTOBJECT türündedir. Bu iletişim kutusu sınıfını kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.
 
 > [!NOTE]
 > Uygulama Sihirbazı tarafından oluşturulan kapsayıcı kodu bu sınıfı kullanır.
 
-Daha fazla bilgi için Windows SDK'daki [OLEUIINSERTOBJECT](/windows/win32/api/oledlg/ns-oledlg-oleuiinsertobjectw) yapısına bakın.
+Daha fazla bilgi için Windows SDK [OLEUIINSERTOBJECT](/windows/win32/api/oledlg/ns-oledlg-oleuiinsertobjectw) yapısına bakın.
 
-OLE'ye özgü iletişim kutuları yla ilgili daha fazla bilgi için, [OLE'deki İletişim Kutuları makalesine](../../mfc/dialog-boxes-in-ole.md)bakın.
+OLE 'ye özgü iletişim kutuları hakkında daha fazla bilgi için [OLE 'deki makale Iletişim kutularına](../../mfc/dialog-boxes-in-ole.md)bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cdialog](../../mfc/reference/cdialog-class.md)
+[CDialog](../../mfc/reference/cdialog-class.md)
 
-[CCommonDialog](../../mfc/reference/ccommondialog-class.md)
+[Ccommoniletişim kutusu](../../mfc/reference/ccommondialog-class.md)
 
-[COleDialog](../../mfc/reference/coledialog-class.md)
+[Colet Iletişim kutusu](../../mfc/reference/coledialog-class.md)
 
 `COleInsertDialog`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxodlgs.h
+**Üst bilgi:** afxodlgs. h
 
-## <a name="coleinsertdialogcoleinsertdialog"></a><a name="coleinsertdialog"></a>COleInsertDialog::COleInsertDialog
+## <a name="coleinsertdialogcoleinsertdialog"></a><a name="coleinsertdialog"></a> Cotaınsertdialog:: Cotaınsertdialog
 
-Bu işlev yalnızca `COleInsertDialog` bir nesne oluşturuyor.
+Bu işlev yalnızca bir `COleInsertDialog` nesnesi oluşturur.
 
 ```
 COleInsertDialog (
@@ -110,33 +111,33 @@ COleInsertDialog (
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwflags*<br/>
-Bitwise-OR işleci kullanılarak birlilecek aşağıdaki değerlerin herhangi bir sayısını içeren oluşturma bayrağı:
+*dwFlags*<br/>
+Bit düzeyinde OR işleci kullanılarak birleştirilecek aşağıdaki değerlerin sayısını içeren oluşturma bayrağı:
 
-- IOF_SHOWHELP İletişim kutusu çağrıldığında Yardım düğmesinin görüntüleneceğini belirtir.
+- IOF_SHOWHELP, iletişim kutusu çağrıldığında Yardım düğmesinin görüntülendiğini belirtir.
 
-- IOF_SELECTCREATENEW İletişim kutusu çağrıldığında Yeni Radyo Oluştur düğmesinin seçileceğini belirtir. Bu varsayılandır ve IOF_SELECTCREATEFROMFILE ile kullanılamaz.
+- IOF_SELECTCREATENEW, iletişim kutusu çağrıldığında yeni radyo oluştur düğmesinin başlangıçta seçili olacağını belirtir. Bu varsayılandır ve IOF_SELECTCREATEFROMFILE ile kullanılamaz.
 
-- IOF_SELECTCREATEFROMFILE İletişim kutusu çağrıldığında Dosyadan Oluştur radyo düğmesinin seçileceğini belirtir. IOF_SELECTCREATENEW ile kullanılamaz.
+- IOF_SELECTCREATEFROMFILE, iletişim kutusu çağrıldığında Dosyadan Oluştur radyo düğmesinin başlangıçta seçili olacağını belirtir. IOF_SELECTCREATENEW ile kullanılamaz.
 
-- IOF_CHECKLINK Bağlantı onay kutusunun iletişim kutusu çağrıldığında başlangıçta işaretli olacağını belirtir.
+- IOF_CHECKLINK, iletişim kutusu çağrıldığında bağlantı onay kutusunun başlangıçta denetleneceğini belirtir.
 
-- IOF_DISABLELINK Bağlantı onay kutusunun iletişim kutusu çağrıldığında devre dışı bırakıldığını belirtir.
+- IOF_DISABLELINK, iletişim kutusu çağrıldığında bağlantı onay kutusunun devre dışı bırakılacağını belirtir.
 
-- IOF_CHECKDISPLAYASICON Simge Olarak Görüntü lehinde görüntükutusunun başlangıçta işaretleneceğini, geçerli simgenin görüntüleneceğini ve iletişim kutusu çağrıldığında Simgeyi Değiştir düğmesinin etkinleştirileceğini belirtir.
+- IOF_CHECKDISPLAYASICON simge olarak göster onay kutusunun başlangıçta denetleneceğini belirtir, geçerli simge görüntülenir ve iletişim kutusu çağrıldığında simge Değiştir düğmesi etkinleştirilir.
 
-- IOF_VERIFYSERVERSEXIST, iletişim kutusunun, iletişim kutusu görüntülenmeden önce kayıt veritabanında belirtilen sunucuların var olmasını sağlayarak liste kutusuna eklediği sınıfları doğrulaması gerektiğini belirtir. Bu bayrağı ayarlamak performansı önemli ölçüde bozabilir.
+- IOF_VERIFYSERVERSEXIST, iletişim kutusunun, kayıt veritabanında belirtilen sunucuların iletişim kutusu görüntülenmeden önce mevcut olduğundan emin olarak liste kutusuna eklediği sınıfları doğrulaması gerektiğini belirtir. Bu bayrağın ayarlanması, performansı önemli ölçüde azaltabilir.
 
 *pParentWnd*<br/>
-İletişim nesnesinin ait olduğu üst `CWnd`veya sahip penceresi nesnesine (tür) işaret eder. NULL ise, iletişim nesnesinin ana penceresi ana uygulama penceresine ayarlanır.
+İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine (türü `CWnd` ) işaret eder. NULL ise, iletişim kutusu nesnesinin ana penceresi ana uygulama penceresine ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusunu görüntülemek için [DoModal](#domodal) işlevini arayın.
+İletişim kutusunu göstermek için [DoModal](#domodal) işlevini çağırın.
 
-## <a name="coleinsertdialogcreateitem"></a><a name="createitem"></a>COleInsertDialog::CreateItem
+## <a name="coleinsertdialogcreateitem"></a><a name="createitem"></a> Colet ınsertdialog:: CreateItem
 
-Yalnızca [DoModal](#domodal) IDOK'u döndürürse [COleClientItem](../../mfc/reference/coleclientitem-class.md) türünden bir nesne oluşturmak için bu işlevi arayın.
+Yalnızca [DoModal](#domodal) IDOK döndürürse [Cotaclientidıtem](../../mfc/reference/coleclientitem-class.md) türünde bir nesne oluşturmak için bu işlevi çağırın.
 
 ```
 BOOL CreateItem(COleClientItem* pItem);
@@ -145,19 +146,19 @@ BOOL CreateItem(COleClientItem* pItem);
 ### <a name="parameters"></a>Parametreler
 
 *pItem*<br/>
-Oluşturulacak öğeyi işaret edin.
+Oluşturulacak öğeyi işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe oluşturulduysa sıfırsız; aksi takdirde 0.
+Öğe oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi aramadan önce nesneyi `COleClientItem` ayırmanız gerekir.
+`COleClientItem`Bu işlevi çağırabilmeniz için önce nesneyi ayırmanız gerekir.
 
-## <a name="coleinsertdialogdomodal"></a><a name="domodal"></a>COleInsertDialog::DoModal
+## <a name="coleinsertdialogdomodal"></a><a name="domodal"></a> Colet ınsertdialog::D oModal
 
-OLE Insert Object iletişim kutusunu görüntülemek için bu işlevi arayın.
+OLE nesne Ekle iletişim kutusunu göstermek için bu işlevi çağırın.
 
 ```
 virtual INT_PTR
@@ -169,34 +170,34 @@ INT_PTR
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwflags*<br/>
+*dwFlags*<br/>
 Aşağıdaki değerlerden biri:
 
-`COleInsertDialog::DocObjectsOnly`yalnızca DocObjects ekler.
+`COleInsertDialog::DocObjectsOnly` yalnızca DocObjects ekler.
 
-`COleInsertDialog::ControlsOnly`yalnızca ActiveX denetimleri ekler.
+`COleInsertDialog::ControlsOnly` yalnızca ActiveX denetimleri ekler.
 
-Sıfır, ne Bir DocObject ne de ActiveX denetimi ekler. Bu değer, yukarıda listelenen ilk prototiple aynı uygulamayla sonuçlanır.
+Sıfır ne bir DocObject ne de bir ActiveX denetimi ekler. Bu değer, yukarıda listelenen ilk prototiple aynı uygulamayla sonuçlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusunun tamamlanma durumu. Aşağıdaki değerlerden biri:
+İletişim kutusu için tamamlanma durumu. Aşağıdaki değerlerden biri:
 
-- İletişim kutusu başarıyla görüntülendiyse İDOK.
+- İletişim kutusu başarıyla görüntüleniyorsa ıDOK.
 
-- Kullanıcı iletişim kutusunu iptal ettiyse IDCANCEL.
+- Kullanıcı iletişim kutusunu iptal edildiyse ıDCANCEL.
 
-- Bir hata oluştuysa IDABORT. IDABORT döndürülürse, [coleDialog'u arayın::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) üye işlevini arayarak oluşan hata türü hakkında daha fazla bilgi alın. Olası hataların listesi için Windows SDK'daki [OleUIInsertObject](/windows/win32/api/oledlg/nf-oledlg-oleuiinsertobjectw) işlevine bakın.
+- Bir hata oluştuysa ıDADBORT. IDADBORT döndürülürse, oluşan hata türü hakkında daha fazla bilgi edinmek için [Cotadialog:: GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) üye işlevini çağırın. Olası hataların listesi için Windows SDK [OLEUIINSERTOBJECT](/windows/win32/api/oledlg/nf-oledlg-oleuiinsertobjectw) işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[m_io](#m_io) yapının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmayı istiyorsanız, çağrıyapmadan `DoModal`önce bunu yapmalısınız, ancak iletişim nesnesi oluşturulduktan sonra.
+[M_io](#m_io) yapısının üyelerini ayarlayarak çeşitli iletişim kutusu denetimlerini başlatmak isterseniz, bunu çağırmadan önce `DoModal` , ancak iletişim kutusu nesnesi oluşturulduktan sonra yapmanız gerekir.
 
-`DoModal` IDOK'u döndürürse, kullanıcı tarafından iletişim kutusuna ayar veya bilgi girişi almak için diğer üye işlevleri arayabilirsiniz.
+`DoModal`IDOK döndürürse, Kullanıcı tarafından iletişim kutusuna ayarları veya bilgi girişini almak için diğer üye işlevlerini çağırabilirsiniz.
 
-## <a name="coleinsertdialoggetclassid"></a><a name="getclassid"></a>COleInsertDialog::GetClassID
+## <a name="coleinsertdialoggetclassid"></a><a name="getclassid"></a> Colet ınsertdialog:: GetClassID
 
-Seçilen öğeyle ilişkili CLSID'yi yalnızca [DoModal](#domodal) IDOK'u döndürürse ve seçim türü `COleInsertDialog::createNewItem`.
+Seçili öğeyle ilişkili CLSID 'yi almak için bu işlevi çağırın, ancak [DoModal](#domodal) IDOK döndürürse ve seçim türü ise `COleInsertDialog::createNewItem` .
 
 ```
 REFCLSID GetClassID() const;
@@ -204,15 +205,15 @@ REFCLSID GetClassID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili öğeyle ilişkili CLSID'yi döndürür.
+Seçili öğeyle ilişkili CLSID 'yi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK'daki [CLSID Key'e](/windows/win32/com/clsid-key-hklm) bakın.
+Daha fazla bilgi için Windows SDK [CLSID anahtarı](/windows/win32/com/clsid-key-hklm) bölümüne bakın.
 
-## <a name="coleinsertdialoggetdrawaspect"></a><a name="getdrawaspect"></a>COleInsertDialog::GetDrawAspect
+## <a name="coleinsertdialoggetdrawaspect"></a><a name="getdrawaspect"></a> Cotaınsertdialog:: GetDrawAspect
 
-Kullanıcının seçili öğeyi simge olarak görüntülemeyi seçip seçmediğini belirlemek için bu işlevi arayabilirsiniz.
+Kullanıcının seçili öğeyi bir simge olarak görüntülemeyi seçmemeyi öğrenmek için bu işlevi çağırın.
 
 ```
 DVASPECT GetDrawAspect() const;
@@ -222,19 +223,19 @@ DVASPECT GetDrawAspect() const;
 
 Nesneyi işlemek için gereken yöntem.
 
-- DVASPECT_CONTENT Simge Olarak Görüntü le görüntü lenekçe onay kutusu işaretlenmediyse döndürülür.
+- Simge olarak görüntüle onay kutusu işaretlenmediğinde DVASPECT_CONTENT döndürüldü.
 
-- DVASPECT_ICON Simge Olarak Görüntü legörüntü onay kutusu işaretlenmişse döndürülür.
+- Simge olarak görüntüle onay kutusu işaretliyse DVASPECT_ICON döndürüldü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevi yalnızca [DoModal](#domodal) IDOK'u döndürürse çağırın.
+Bu işlevi yalnızca [DoModal](#domodal) IDOK döndürürse çağırın.
 
-Çizim yönü hakkında daha fazla bilgi için Windows SDK'daki [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) veri yapısına bakın.
+En boy çizimi hakkında daha fazla bilgi için Windows SDK [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) veri yapısına bakın.
 
-## <a name="coleinsertdialoggeticonicmetafile"></a><a name="geticonicmetafile"></a>COleInsertDialog::GetIconicMetafile
+## <a name="coleinsertdialoggeticonicmetafile"></a><a name="geticonicmetafile"></a> Cotaınsertdialog:: Getıconicmetafile
 
-Seçili öğenin simgesel yönünü içeren metafile bir tanıtıcı almak için bu işlevi arayın.
+Seçili öğenin ıfıic boyutunu içeren meta dosyasına bir tanıtıcı almak için bu işlevi çağırın.
 
 ```
 HGLOBAL GetIconicMetafile() const;
@@ -242,11 +243,11 @@ HGLOBAL GetIconicMetafile() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Seçili öğenin simgesel yönünü içeren metadosyanın tutamacı, ok **seçilerek**iletişim kutusu kapatıldığında Simge Olarak Görüntüle onay kutusu işaretlenmişse; aksi takdirde NULL.
+Seçili öğenin ı, simge olarak göster onay kutusu, **Tamam**' ı seçerek bir iletişim kutusu kapatıldığında, bu dosya için bir işleyici işaretlendi. Aksi takdirde NULL.
 
-## <a name="coleinsertdialoggetpathname"></a><a name="getpathname"></a>COleInsertDialog::GetPathName
+## <a name="coleinsertdialoggetpathname"></a><a name="getpathname"></a> Colet ınsertdialog:: GetPathName
 
-Yalnızca [DoModal](#domodal) IDOK'u döndürürse ve seçim türü değilse, `COleInsertDialog::createNewItem`seçili dosyanın tam yolunu almak için bu işlevi arayın.
+Seçili dosyanın tam yolunu almak için bu işlevi çağırın, ancak [DoModal](#domodal) IDOK döndürürse ve seçim türü değilse `COleInsertDialog::createNewItem` .
 
 ```
 CString GetPathName() const;
@@ -254,11 +255,11 @@ CString GetPathName() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İletişim kutusunda seçilen dosyaya tam yol. Seçim türü ise, `createNewItem`bu işlev `CString` sürüm modunda anlamsız bir şekilde döndürür veya hata ayıklama modunda bir tasnife neden olur.
+İletişim kutusunda seçilen dosyanın tam yolu. Seçim türü ise `createNewItem` , bu işlev yayın modunda anlamlı bir Less döndürür `CString` veya hata ayıklama modunda bir onaylama işlemi oluşmasına neden olur.
 
-## <a name="coleinsertdialoggetselectiontype"></a><a name="getselectiontype"></a>COleInsertDialog::GetSelectionType
+## <a name="coleinsertdialoggetselectiontype"></a><a name="getselectiontype"></a> Cotaınsertdialog:: GetSelectionType
 
-Nesne Ekle iletişim kutusu **Tamam'ı**seçerek kapatıldığında seçim türünü seçmek için bu işlevi arayın.
+Nesne Ekle iletişim kutusu kapatıldığında seçili seçim türünü almak için bu işlevi **çağırın.**
 
 ```
 UINT GetSelectionType() const;
@@ -270,7 +271,7 @@ Yapılan seçim türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İade türü değerleri, sınıfta `Selection` bildirilen numaralandırma türüne `COleInsertDialog` göre belirtilir.
+Dönüş türü değerleri, `Selection` sınıfında belirtilen numaralandırma türü tarafından belirtilir `COleInsertDialog` .
 
 ```
 enum Selection {
@@ -280,17 +281,17 @@ enum Selection {
     };
 ```
 
-Bu değerlerin kısa açıklamaları aşağıdaki gibidir:
+Bu değerlerin kısa açıklamaları şu şekilde yapılır:
 
-- `COleInsertDialog::createNewItem`Yeni radyo oluştur düğmesi seçildi.
+- `COleInsertDialog::createNewItem` Yeni radyo oluştur düğmesi seçildi.
 
-- `COleInsertDialog::insertFromFile`Dosyadan Oluştur düğmesi radyo bağlantısı seçildi ve Bağlantı onay kutusu işaretlenmedi.
+- `COleInsertDialog::insertFromFile` Dosyadan Oluştur radyo düğmesi seçilmiştir ve bağlantı onay kutusu işaretlenmedi.
 
-- `COleInsertDialog::linkToFile`Dosyadan Oluştur düğmesi radyo bağlantısı seçildi ve Bağlantı onay kutusu işaretlendi.
+- `COleInsertDialog::linkToFile` Dosyadan Oluştur radyo düğmesi seçildi ve bağlantı onay kutusu denetlendi.
 
-## <a name="coleinsertdialogm_io"></a><a name="m_io"></a>COleInsertDialog::m_io
+## <a name="coleinsertdialogm_io"></a><a name="m_io"></a> Colet ınsertdialog:: m_io
 
-Nesne Ekle iletişim kutusunun davranışını denetlemek için kullanılan OLEUIINSERTOBJECT türünün yapısı.
+Nesne Ekle iletişim kutusunun davranışını denetlemek için kullanılan OLEUııNSERTOBJECT türünde yapı.
 
 ```
 OLEUIINSERTOBJECT m_io;
@@ -298,13 +299,13 @@ OLEUIINSERTOBJECT m_io;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yapının üyeleri doğrudan veya üye işlevler aracılığıyla değiştirilebilir.
+Bu yapının üyeleri, doğrudan veya üye işlevleri aracılığıyla değiştirilebilir.
 
-Daha fazla bilgi için Windows SDK'daki [OLEUIINSERTOBJECT](/windows/win32/api/oledlg/ns-oledlg-oleuiinsertobjectw) yapısına bakın.
+Daha fazla bilgi için Windows SDK [OLEUIINSERTOBJECT](/windows/win32/api/oledlg/ns-oledlg-oleuiinsertobjectw) yapısına bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
-[COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)
+[MFC örnek OCLIENT](../../overview/visual-cpp-samples.md)<br/>
+[Coeldialog sınıfı](../../mfc/reference/coledialog-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Coeldialog sınıfı](../../mfc/reference/coledialog-class.md)

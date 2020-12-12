@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CConnectionPoint sınıfı'
 title: CConnectionPoint sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - CConnectionPoint [MFC], OnAdvise
 - CConnectionPoint [MFC], QuerySinkInterface
 ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
-ms.openlocfilehash: f428ec597e0e4a56788fae2455eff80b286fda39
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 62525428d8f9bf5303f379140837d75e53cbb387
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87183090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227851"
 ---
 # <a name="cconnectionpoint-class"></a>CConnectionPoint sınıfı
 
 "Bağlantı noktası" olarak adlandırılan diğer OLE nesneleriyle iletişim kurmak için kullanılan özel bir arabirim türünü tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CConnectionPoint : public CCmdTarget
@@ -57,7 +58,7 @@ class CConnectionPoint : public CCmdTarget
 |[CConnectionPoint:: GetContainer](#getcontainer)|Bağlantı eşlemesinin sahibi olan denetimin kapsayıcısını alır.|
 |[CConnectionPoint:: GetIID](#getiid)|Bir bağlantı noktasının arabirim KIMLIĞINI alır.|
 |[CConnectionPoint:: GetMaxConnections](#getmaxconnections)|Bir denetim tarafından desteklenen en fazla bağlantı noktası sayısını alır.|
-|[CConnectionPoint:: GetNextConnection](#getnextconnection)|*POS 'ta*bağlantı öğesine bir işaretçi alır.|
+|[CConnectionPoint:: GetNextConnection](#getnextconnection)|*POS 'ta* bağlantı öğesine bir işaretçi alır.|
 |[CConnectionPoint:: GetStartPosition](#getstartposition)|Bir çağrıya geçirilebileceğini bir konum değeri döndürerek bir harita yinelemesi başlatır `GetNextConnection` .|
 |[CConnectionPoint:: OnAdvise](#onadvise)|Bağlantı kurulurken veya koparmadan, Framework tarafından çağırılır.|
 |[CConnectionPoint:: Querysinkınterface](#querysinkinterface)|İstenen havuz arabirimine bir işaretçi alır.|
@@ -102,7 +103,7 @@ Kullanma hakkında daha fazla bilgi için `CConnectionPoint` bkz. [bağlantı no
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="cconnectionpointcconnectionpoint"></a><a name="cconnectionpoint"></a>CConnectionPoint:: CConnectionPoint
+## <a name="cconnectionpointcconnectionpoint"></a><a name="cconnectionpoint"></a> CConnectionPoint:: CConnectionPoint
 
 Bir `CConnectionPoint` nesnesi oluşturur.
 
@@ -110,7 +111,7 @@ Bir `CConnectionPoint` nesnesi oluşturur.
 CConnectionPoint();
 ```
 
-## <a name="cconnectionpointgetconnections"></a><a name="getconnections"></a>CConnectionPoint:: GetConnections
+## <a name="cconnectionpointgetconnections"></a><a name="getconnections"></a> CConnectionPoint:: GetConnections
 
 Bir bağlantı noktası için tüm etkin bağlantıları almak üzere bu işlevi çağırın.
 
@@ -122,7 +123,7 @@ const CPtrArray* GetConnections();
 
 Etkin bağlantı dizisine yönelik bir işaretçi (havuz). Dizideki bazı işaretçiler NULL olabilir. Bu dizideki NULL olmayan her bir işaretçi, bir atama işleci kullanılarak havuz arabirimine yönelik bir işaretçiye güvenle dönüştürülebilir.
 
-## <a name="cconnectionpointgetcontainer"></a><a name="getcontainer"></a>CConnectionPoint:: GetContainer
+## <a name="cconnectionpointgetcontainer"></a><a name="getcontainer"></a> CConnectionPoint:: GetContainer
 
 Bağlantı noktası için öğesini almak üzere Framework tarafından çağırılır `IConnectionPointContainer` .
 
@@ -138,7 +139,7 @@ Başarılı olursa, kapsayıcı işaretçisi; Aksi takdirde NULL.
 
 Bu işlev genellikle BEGIN_CONNECTION_PART makrosu tarafından uygulanır.
 
-## <a name="cconnectionpointgetiid"></a><a name="getiid"></a>CConnectionPoint:: GetIID
+## <a name="cconnectionpointgetiid"></a><a name="getiid"></a> CConnectionPoint:: GetIID
 
 Bir bağlantı noktasının arabirim KIMLIĞINI almak için Framework tarafından çağırılır.
 
@@ -154,7 +155,7 @@ Bağlantı noktasının arabirim KIMLIĞINE bir başvuru.
 
 Bu bağlantı noktasının arabirim KIMLIĞINI döndürmek için bu işlevi geçersiz kılın.
 
-## <a name="cconnectionpointgetmaxconnections"></a><a name="getmaxconnections"></a>CConnectionPoint:: GetMaxConnections
+## <a name="cconnectionpointgetmaxconnections"></a><a name="getmaxconnections"></a> CConnectionPoint:: GetMaxConnections
 
 Bağlantı noktası tarafından desteklenen maksimum bağlantı sayısını almak için Framework tarafından çağırılır.
 
@@ -172,9 +173,9 @@ Varsayılan uygulama, sınır olmadığını gösteren-1 döndürür.
 
 Denetimi bağlayabileceğiniz havuz sayısını sınırlamak istiyorsanız bu işlevi geçersiz kılın.
 
-## <a name="cconnectionpointgetnextconnection"></a><a name="getnextconnection"></a>CConnectionPoint:: GetNextConnection
+## <a name="cconnectionpointgetnextconnection"></a><a name="getnextconnection"></a> CConnectionPoint:: GetNextConnection
 
-*POS 'ta*bağlantı öğesine bir işaretçi alır.
+*POS 'ta* bağlantı öğesine bir işaretçi alır.
 
 ```
 LPUNKNOWN GetNextConnection(POSITION& pos) const;
@@ -187,7 +188,7 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*POS*veya null tarafından belirtilen bağlantı öğesine yönelik bir işaretçi.
+*POS* veya null tarafından belirtilen bağlantı öğesine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -197,7 +198,7 @@ Bu işlev, bağlantı eşlemesindeki tüm öğeler arasında yineleme için en y
 
 [!code-cpp[NVC_MFCConnectionPoints#4](../../mfc/codesnippet/cpp/cconnectionpoint-class_3.cpp)]
 
-## <a name="cconnectionpointgetstartposition"></a><a name="getstartposition"></a>CConnectionPoint:: GetStartPosition
+## <a name="cconnectionpointgetstartposition"></a><a name="getstartposition"></a> CConnectionPoint:: GetStartPosition
 
 Bir [GetNextConnection](#getnextconnection) çağrısına GEÇIRILEBILECEK bir konum değeri döndürerek bir harita yinelemesi başlatır.
 
@@ -217,7 +218,7 @@ Yineleme sırası öngörülebilir değil; Bu nedenle, "haritadaki ilk öğe" ö
 
   [CConnectionPoint:: GetNextConnection](#getnextconnection)örneğine bakın.
 
-## <a name="cconnectionpointonadvise"></a><a name="onadvise"></a>CConnectionPoint:: OnAdvise
+## <a name="cconnectionpointonadvise"></a><a name="onadvise"></a> CConnectionPoint:: OnAdvise
 
 Bir bağlantı kurulurken veya kesiliyorsa Framework tarafından çağırılır.
 
@@ -236,7 +237,7 @@ Varsayılan uygulama hiçbir şey yapmaz.
 
 Havuzlar bağlantı noktanma bağlandığında veya bağlantısı kesildiğinde bildirim istiyorsanız bu işlevi geçersiz kılın.
 
-## <a name="cconnectionpointquerysinkinterface"></a><a name="querysinkinterface"></a>CConnectionPoint:: Querysinkınterface
+## <a name="cconnectionpointquerysinkinterface"></a><a name="querysinkinterface"></a> CConnectionPoint:: Querysinkınterface
 
 İstenen havuz arabirimine bir işaretçi alır.
 
@@ -252,7 +253,7 @@ virtual HRESULT QuerySinkInterface(
 İstenen havuz arabiriminin tanımlayıcısı.
 
 *ppInterface*<br/>
-*PUnkSink*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, \* *PPıNTERFACE* null olarak ayarlanır.
+*PUnkSink* tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, \* *PPıNTERFACE* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

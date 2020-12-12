@@ -1,4 +1,5 @@
 ---
+description: ': _Bstr_t:: Attach hakkında daha fazla bilgi edinin'
 title: _bstr_t::Attach
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - Attach method [C++]
 ms.assetid: 8cad867e-40fc-435b-841f-0d412c2f58d3
-ms.openlocfilehash: 718efb9e3dac0d776678fe9efd912a602e041659
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: b3f29c8eaf81a492f7e3c4282227d3d6d246988e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749693"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229437"
 ---
 # <a name="_bstr_tattach"></a>_bstr_t::Attach
 
 **Microsoft'a Özgü**
 
-Bir `_bstr_t` sarıcıyı `BSTR`bir .
+Bir `_bstr_t` sarmalayıcısı öğesine bağlar `BSTR` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,7 +30,7 @@ void Attach(
 
 #### <a name="parameters"></a>Parametreler
 
-*S*<br/>
+*s*<br/>
 `BSTR` değişkeniyle ilişkilendirilecek veya ona atanacak bir `_bstr_t`.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -38,10 +39,10 @@ void Attach(
 
 ## <a name="example"></a>Örnek
 
-Bkz. [_bstr_t::Ekle'yi](../cpp/bstr-t-assign.md) **Attach**kullanarak bir örnek için atama .
+Bkz. [_bstr_t:: atama](../cpp/bstr-t-assign.md) kullanarak bir örnek için atama.
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t Sınıfı](../cpp/bstr-t-class.md)
+[_bstr_t sınıfı](../cpp/bstr-t-class.md)

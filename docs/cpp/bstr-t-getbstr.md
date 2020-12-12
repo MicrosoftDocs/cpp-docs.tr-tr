@@ -1,4 +1,5 @@
 ---
+description: ': _Bstr_t:: GetBSTR hakkında daha fazla bilgi'
 title: _bstr_t::GetBSTR
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GetBSTR method [C++]
 ms.assetid: 0c62ff16-4433-4183-a03c-d5a0a9b731ef
-ms.openlocfilehash: da438c65256d9a7e5bf5b02e108fee1385171d2d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ced985bb5123d86ff119279fc49a2b4d181ba8b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181219"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229307"
 ---
 # <a name="_bstr_tgetbstr"></a>_bstr_t::GetBSTR
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`_bstr_t`kaydırılan `BSTR` başlangıcını işaret eder.
+Tarafından Sarmalanan başlangıcını işaret eder `BSTR` `_bstr_t` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 BSTR& GetBSTR( );
@@ -27,18 +28,18 @@ BSTR& GetBSTR( );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_bstr_t`kaydırılan `BSTR` başlangıcı.
+`BSTR`Tarafından Sarmalanan öğesinin başı `_bstr_t` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**GetBSTR** , bir `BSTR`paylaşan tüm `_bstr_t` nesnelerini etkiler. Birden fazla `_bstr_t`, kopya Oluşturucusu ve **işleç =** kullanımı aracılığıyla bir `BSTR` paylaşabilir.
+**GetBSTR** `_bstr_t` , bir paylaşan tüm nesneleri etkiler `BSTR` . `_bstr_t` `BSTR` Kopya Oluşturucu ve **işleç =** kullanımı aracılığıyla bir tane daha fazlası paylaşabilir.
 
 ## <a name="example"></a>Örnek
 
-**GetBSTR**kullanarak bir örnek için bkz. [_Bstr_t:: Assign](../cpp/bstr-t-assign.md) .
+**GetBSTR** kullanarak bir örnek için bkz. [_Bstr_t:: Assign](../cpp/bstr-t-assign.md) .
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t Sınıfı](../cpp/bstr-t-class.md)
+[_bstr_t sınıfı](../cpp/bstr-t-class.md)

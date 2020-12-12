@@ -1,5 +1,6 @@
 ---
-title: COleDocObjectItem Sınıfı
+description: 'Daha fazla bilgi edinin: Cotadocobjectıtem sınıfı'
+title: Cotadocobjectıtem sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleDocObjectItem
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - COleDocObjectItem [MFC], QueryCommand
 - COleDocObjectItem [MFC], Release
 ms.assetid: d150d306-8fd3-4831-b06d-afbe71d8fc9b
-ms.openlocfilehash: a696226185dd99b9e277e74d92cbe15c95cc900a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e483c614f8bc7558a827c51889bbffa7da7419b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227227"
 ---
-# <a name="coledocobjectitem-class"></a>COleDocObjectItem Sınıfı
+# <a name="coledocobjectitem-class"></a>Cotadocobjectıtem sınıfı
 
-Etkin belge çevrelemesini uygular.
+Etkin belge kapsamayı uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleDocObjectItem : public COleClientItem
@@ -45,58 +46,58 @@ class COleDocObjectItem : public COleClientItem
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDocObjectItem::COleDocObjectItem](#coledocobjectitem)|Bir `COleDocObject` öğe yi inşa eder.|
+|[Cotadocobjectıtem:: Copadocobjectıtem](#coledocobjectitem)|Bir `COleDocObject` öğe oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDocObjectItem::DoDefaultPrinting](#dodefaultprinting)|Varsayılan yazıcı ayarlarını kullanarak kapsayıcı uygulamasının belgesini yazdırır.|
-|[COleDocObjectItem::ExecCommand](#execcommand)|Kullanıcı tarafından belirtilen komutu yürütür.|
-|[COleDocObjectItem::GetActiveView](#getactiveview)|Belgenin etkin görünümünü alır.|
-|[COleDocObjectItem::GetPageCount](#getpagecount)|Kapsayıcı uygulamanın belgesindeki sayfa sayısını alır.|
-|[COleDocObjectItem::OnPreparePrinting](#onprepareprinting)|Kapsayıcı uygulamanın belgesini yazdırmak için hazırlar.|
-|[COleDocObjectItem::OnPrint](#onprint)|Kapsayıcı uygulamanın belgesini yazdırır.|
-|[COleDocObjectItem::QueryCommand](#querycommand)|Kullanıcı arabirimi olayları tarafından oluşturulan bir veya daha fazla komutun durumu için sorgular.|
-|[COleDocObjectItem::Sürüm](#release)|OLE bağlantılı bir öğeye bağlantıyı serbest bırakır ve açıksa kapatır. İstemci öğesini yok etmez.|
+|[Cotadocobjectıtem::D oDefaultPrinting](#dodefaultprinting)|Varsayılan yazıcı ayarlarını kullanarak kapsayıcı uygulamasının belgesini yazdırır.|
+|[Cotadocobjectıtem:: ExecCommand](#execcommand)|Kullanıcı tarafından belirtilen komutu yürütür.|
+|[Cotadocobjectıtem:: GetActiveView](#getactiveview)|Belgenin etkin görünümünü alır.|
+|[Cotadocobjectıtem:: GetPageCount](#getpagecount)|Kapsayıcı uygulamasının belgesindeki sayfa sayısını alır.|
+|[Cotadocobjectıtem:: OnPreparePrinting](#onprepareprinting)|Kapsayıcı uygulamasının belgesini yazdırma için hazırlar.|
+|[Cotadocobjectıtem:: OnPrint](#onprint)|Kapsayıcı uygulamasının belgesini yazdırır.|
+|[Cotadocobjectıtem:: QueryCommand](#querycommand)|Kullanıcı arabirimi olayları tarafından oluşturulan bir veya daha fazla komutun durumunu sorgular.|
+|[Cotadocobjectıtem:: Release](#release)|Bir OLE bağlantılı öğesiyle bağlantıyı serbest bırakır ve açıksa kapatır. İstemci öğesini yok etmez.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-MFC'de, Etkin belge aşağıdaki farklarla birlikte düzenli, yerinde düzenlenebilir katıştırma işlemine benzer şekilde işlenir:
+MFC 'de etkin bir belge, düzenli ve yerinde düzenlenebilir bir eklemeye benzer şekilde, aşağıdaki farklılıklarla aynı şekilde işlenir:
 
-- Türetilmiş `COleDocument`sınıf hala şu anda katıştırılmış öğelerin bir listesini tutar; ancak, bu öğeler `COleDocObjectItem`türetilmiş öğeler olabilir.
+- `COleDocument`-Derived sınıfı halen ekli olan öğelerin bir listesini tutar; ancak, bu öğeler `COleDocObjectItem` türetilmiş öğeler olabilir.
 
-- Etkin bir belge etkin olduğunda, yerinde etkin olduğunda görünümün tüm istemci alanını kaplar.
+- Etkin bir belge etkin olduğunda, yerinde etkin olduğunda görünümün tüm istemci alanının tamamını kaplar.
 
-- Etkin belge kapsayıcısı **Yardım** menüsünün tam denetimine sahiptir.
+- Etkin bir belge kapsayıcısı, **Yardım** menüsü üzerinde tam denetime sahiptir.
 
-- **Yardım** menüsü, hem Etkin belge kapsayıcısı hem de sunucu için menü öğelerini içerir.
+- **Yardım** menüsü, hem etkin belge kapsayıcısı hem de sunucu için menü öğelerini içerir.
 
-Etkin belge kapsayıcısı **Yardım** menüsüne sahip olduğundan, kapsayıcı sunucu **Yardım** menüsü iletilerini sunucuya iletmekten sorumludur. Bu tümleştirme `COleDocObjectItem`.
+Etkin belge kapsayıcısı **Yardım** menüsüne sahip olduğundan, sunucu **Yardım** menüsü iletilerini sunucuya iletmekten kapsayıcı sorumludur. Bu tümleştirme tarafından işlenir `COleDocObjectItem` .
 
-Menü birleştirme ve Etkin belge etkinleştirme hakkında daha fazla bilgi için [Bkz. Etkin Belge İçlemesi](../../mfc/active-document-containment.md)Genel Bakış.
+Menü birleştirme ve etkin belge etkinleştirme hakkında daha fazla bilgi için bkz. [etkin belge kapsama](../../mfc/active-document-containment.md)genel bakış.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
 [CDocItem](../../mfc/reference/cdocitem-class.md)
 
-[Coleclientıtem](../../mfc/reference/coleclientitem-class.md)
+[COleClientItem](../../mfc/reference/coleclientitem-class.md)
 
 `COleDocObjectItem`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxole.h
+**Üstbilgi:** afxole. h
 
-## <a name="coledocobjectitemcoledocobjectitem"></a><a name="coledocobjectitem"></a>COleDocObjectItem::COleDocObjectItem
+## <a name="coledocobjectitemcoledocobjectitem"></a><a name="coledocobjectitem"></a> Cotadocobjectıtem:: Copadocobjectıtem
 
-Nesneyi başlatmak için `COleDocObjectItem` bu üye işlevi çağırın.
+Nesneyi başlatmak için bu üye işlevini çağırın `COleDocObjectItem` .
 
 ```
 COleDocObjectItem(COleDocument* pContainerDoc = NULL);
@@ -105,11 +106,11 @@ COleDocObjectItem(COleDocument* pContainerDoc = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *pContainerDoc*<br/>
-Etkin belge `COleDocument` kapsayıcısı olarak hareket eden nesneye işaretçi. Bu parametre IMPLEMENT_SERIALIZE sağlamak için NULL olmalıdır. Normalde OLE öğeleri NULL olmayan bir belge işaretçisi ile oluşturulur.
+`COleDocument`Etkin belge kapsayıcısı görevi gören nesnenin işaretçisi. IMPLEMENT_SERIALIZE etkinleştirmek için bu parametre NULL olmalıdır. Normalde OLE öğeleri, NULL olmayan bir belge işaretçisi ile oluşturulur.
 
-## <a name="coledocobjectitemdodefaultprinting"></a><a name="dodefaultprinting"></a>COleDocObjectItem::DoDefaultPrinting
+## <a name="coledocobjectitemdodefaultprinting"></a><a name="dodefaultprinting"></a> Cotadocobjectıtem::D oDefaultPrinting
 
-Varsayılan ayarları kullanarak bir belgeye çerçeve tarafından çağrılır.
+Varsayılan ayarları kullanarak Framework tarafından bir belgeye çağırılır.
 
 ```
 static HRESULT DoDefaultPrinting(
@@ -120,14 +121,14 @@ static HRESULT DoDefaultPrinting(
 ### <a name="parameters"></a>Parametreler
 
 *pCaller*<br/>
-Yazdırma komutunu gönderen [cview](../../mfc/reference/cview-class.md) nesnesine işaretçi.
+Print komutunu Gönderen [CView](../../mfc/reference/cview-class.md) nesnesine yönelik bir işaretçi.
 
-*Pınfo*<br/>
-Yazdırılacak işi açıklayan bir [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) nesnesine işaretçi.
+*pInfo*<br/>
+Yazdırılacak işi açıklayan [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) nesnesine yönelik bir işaretçi.
 
-## <a name="coledocobjectitemexeccommand"></a><a name="execcommand"></a>COleDocObjectItem::ExecCommand
+## <a name="coledocobjectitemexeccommand"></a><a name="execcommand"></a> Cotadocobjectıtem:: ExecCommand
 
-Kullanıcı tarafından belirtilen komutu yürütmek için bu üye işlevini arayın.
+Kullanıcı tarafından belirtilen komutu yürütmek için bu üye işlevi çağırın.
 
 ```
 HRESULT ExecCommand(
@@ -139,36 +140,36 @@ HRESULT ExecCommand(
 ### <a name="parameters"></a>Parametreler
 
 *nCmdID*<br/>
-Yürütülecek komutun tanımlayıcısı. *pguidCmdGroup*tarafından tanımlanan grupta olmalıdır.
+Yürütülecek komutun tanımlayıcısı. *PguidCmdGroup* tarafından tanımlanan grupta olmalıdır.
 
 *nCmdExecOpt*<br/>
-Komut yürütme seçeneklerini belirtir. Varsayılan olarak, kullanıcı sormadan komutu yürütmek için ayarlayın. Değerler listesi için [OLECMDEXECOPT'a](/windows/win32/api/docobj/ne-docobj-olecmdexecopt) bakın.
+Komut yürütme seçeneklerini belirtir. Varsayılan olarak, kullanıcıya sormadan komutu yürütmek üzere ayarlanır. Değerlerin listesi için bkz. [OLECMDEXECOPT](/windows/win32/api/docobj/ne-docobj-olecmdexecopt) .
 
 *pguidCmdGroup*<br/>
-Komut grubunun benzersiz tanımlayıcısı. Varsayılan olarak, standart grubu belirten NULL. *nCmdID'de* geçen komut gruba ait olmalıdır.
+Komut grubunun benzersiz tanıtıcısı. Varsayılan olarak, Standart grubunu belirten NULL değeri. *NCmdID* içinde geçirilen komut gruba ait olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa S_OK verir; aksi takdirde, aşağıdaki hata kodlarından birini döndürür.
+Başarılı olursa S_OK döndürür; Aksi takdirde, aşağıdaki hata kodlarından birini döndürür.
 
 |Değer|Açıklama|
 |-----------|-----------------|
-|E_unexpected|Beklenmeyen hata oluştu.|
-|E_faıl|Hata oluştu.|
-|E_notımpl|MFC'nin komutu çevirmeye ve göndermeye çalışması gerektiğini belirtir.|
-|OLECMDERR_E_UNKNOWNGROUP|*pguidCmdGroup* NULL değildir, ancak tanınan bir komut grubu belirtmez.|
-|OLECMDERR_E_NOTSUPPORTED|*nCmdID* grup pGroup geçerli bir komut olarak kabul edilmez.|
-|OLECMDERR_DISABLED|*nCmdID* tarafından tanımlanan komut devre dışı bırakılır ve yürütülemez.|
-|OLECMDERR_NOHELP|Arayan *nCmdID* tarafından tanımlanan komut u yardım istedi, ancak yardım yok.|
+|E_UNEXPECTED|Beklenmeyen bir hata oluştu.|
+|E_FAIL|Hata oluştu.|
+|E_NOTIMPL|MFC 'nin, komutu çevirme ve dağıtma denemesi gerektiğini gösterir.|
+|OLECMDERR_E_UNKNOWNGROUP|*pguidCmdGroup* null değil, ancak tanınan bir komut grubu belirtmiyor.|
+|OLECMDERR_E_NOTSUPPORTED|*nCmdID* , Grup pGroup 'ta geçerli bir komut olarak tanınmıyor.|
+|OLECMDERR_DISABLED|*NCmdID* tarafından tanımlanan komut devre dışı bırakıldı ve yürütülemiyor.|
+|OLECMDERR_NOHELP|Çağıran, *nCmdID* tarafından tanımlanan komutla ilgili yardım almak istedi, ancak kullanılabilir yardım yok.|
 |OLECMDERR_CANCELLED|Kullanıcı yürütmeyi iptal etti.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PguidCmdGroup* ve *nCmdID* parametreleri birlikte çağırmak için komutu benzersiz olarak tanımlar. *nCmdExecOpt* parametresi yapılacak tam eylemi belirtir.
+*PguidCmdGroup* ve *nCmdID* parametreleri birlikte çağırmak için komutu benzersiz şekilde tanımlar. *NCmdexecopt* parametresi, tam olarak gerçekleştirilecek eylemi belirtir.
 
-## <a name="coledocobjectitemgetactiveview"></a><a name="getactiveview"></a>COleDocObjectItem::GetActiveView
+## <a name="coledocobjectitemgetactiveview"></a><a name="getactiveview"></a> Cotadocobjectıtem:: GetActiveView
 
-Şu anda etkin görünümün `IOleDocumentView` arabirimine bir işaretçi almak için bu üye işlevi arayın.
+`IOleDocumentView`Şu anda etkin olan görünümün arabirimine bir işaretçi almak için bu üye işlevi çağırın.
 
 ```
 LPOLEDOCUMENTVIEW GetActiveView() const;
@@ -176,15 +177,15 @@ LPOLEDOCUMENTVIEW GetActiveView() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Şu anda etkin görünümün [IOleDocumentView](/windows/win32/api/docobj/nn-docobj-ioledocumentview) arabirimine bir işaretçi. Geçerli görünüm yoksa, NULL döndürür.
+Şu anda etkin olan görünümün [IOleDocumentView](/windows/win32/api/docobj/nn-docobj-ioledocumentview) arabirimine yönelik bir işaretçi. Geçerli görünüm yoksa, NULL döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen `IOleDocumentView` işaretçideki başvuru sayısı, bu işlev tarafından döndürülmeden önce artımlı değildir.
+Döndürülen işaretçinin başvuru sayısı, `IOleDocumentView` Bu işlev tarafından döndürülmeden önce arttırılamaz.
 
-## <a name="coledocobjectitemgetpagecount"></a><a name="getpagecount"></a>COleDocObjectItem::GetPageCount
+## <a name="coledocobjectitemgetpagecount"></a><a name="getpagecount"></a> Cotadocobjectıtem:: GetPageCount
 
-Belgedeki sayfa sayısını almak için bu üye işlevini arayın.
+Belgedeki sayfa sayısını almak için bu üye işlevini çağırın.
 
 ```
 BOOL GetPageCount(
@@ -195,18 +196,18 @@ BOOL GetPageCount(
 ### <a name="parameters"></a>Parametreler
 
 *pnFirstPage*<br/>
-Belgenin ilk sayfasının numarasına işaretçi. Arayan kişinin bu numaraya ihtiyacı olmadığını gösteren NULL olabilir.
+Belgenin ilk sayfasının numarası için bir işaretçi. , Çağıranın bu sayıya ihtiyaç duymadığını belirten NULL olabilir.
 
 *pcPages*<br/>
-Belgedeki toplam sayfa sayısına işaretçi. Arayan kişinin bu numaraya ihtiyacı olmadığını gösteren NULL olabilir.
+Belgedeki toplam sayfa sayısına yönelik bir işaretçi. , Çağıranın bu sayıya ihtiyaç duymadığını belirten NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-## <a name="coledocobjectitemonprepareprinting"></a><a name="onprepareprinting"></a>COleDocObjectItem::OnPreparePrinting
+## <a name="coledocobjectitemonprepareprinting"></a><a name="onprepareprinting"></a> Cotadocobjectıtem:: OnPreparePrinting
 
-Bu üye işlev, yazdırmak için bir belge hazırlamak için çerçeve tarafından çağrılır.
+Bu üye işlevi, bir belgeyi yazdırılmak üzere hazırlamak için Framework tarafından çağırılır.
 
 ```
 static BOOL OnPreparePrinting(
@@ -218,21 +219,21 @@ static BOOL OnPreparePrinting(
 ### <a name="parameters"></a>Parametreler
 
 *pCaller*<br/>
-Yazdırma komutunu gönderen [cview](../../mfc/reference/cview-class.md) nesnesine işaretçi.
+Print komutunu Gönderen [CView](../../mfc/reference/cview-class.md) nesnesine yönelik bir işaretçi.
 
-*Pınfo*<br/>
-Yazdırılacak işi açıklayan bir [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) nesnesine işaretçi.
+*pInfo*<br/>
+Yazdırılacak işi açıklayan [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) nesnesine yönelik bir işaretçi.
 
 *bPrintAll*<br/>
-Belgenin tamamının yazdırılıp yazdırılmayacağını belirtir.
+Belgenin tamamının yazdırılıp yazdırılmadığını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-## <a name="coledocobjectitemonprint"></a><a name="onprint"></a>COleDocObjectItem::OnPrint
+## <a name="coledocobjectitemonprint"></a><a name="onprint"></a> Cotadocobjectıtem:: OnPrint
 
-Bu üye işlev, bir belgeyi yazdırmak için çerçeve tarafından çağrılır.
+Bu üye işlevi, bir belgeyi yazdırmak için çerçevesi tarafından çağırılır.
 
 ```
 static void OnPrint(
@@ -244,17 +245,17 @@ static void OnPrint(
 ### <a name="parameters"></a>Parametreler
 
 *pCaller*<br/>
-Yazdırma komutunu gönderen cview nesnesine işaretçi.
+Print komutunu gönderen CView nesnesine yönelik bir işaretçi.
 
-*Pınfo*<br/>
-Yazdırılacak işi açıklayan bir [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) nesnesine işaretçi.
+*pInfo*<br/>
+Yazdırılacak işi açıklayan [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) nesnesine yönelik bir işaretçi.
 
 *bPrintAll*<br/>
-Belgenin tamamının yazdırılıp yazdırılmayacağını belirtir.
+Belgenin tamamının yazdırılıp yazdırılmadığını belirtir.
 
-## <a name="coledocobjectitemquerycommand"></a><a name="querycommand"></a>COleDocObjectItem::QueryCommand
+## <a name="coledocobjectitemquerycommand"></a><a name="querycommand"></a> Cotadocobjectıtem:: QueryCommand
 
-Kullanıcı arabirimi olayları tarafından oluşturulan bir veya daha fazla komutun durumu için sorgular.
+Kullanıcı arabirimi olayları tarafından oluşturulan bir veya daha fazla komutun durumunu sorgular.
 
 ```
 HRESULT QueryCommand(
@@ -267,28 +268,28 @@ HRESULT QueryCommand(
 ### <a name="parameters"></a>Parametreler
 
 *nCmdID*<br/>
-için sorgulanan komutun tanımlayıcısı.
+sorgulanırken komutun tanımlayıcısı.
 
-*pdwDurum*<br/>
-Sorgu nun bir sonucu olarak döndürülen bayraklar için bir işaretçi. Olası değerlerin listesi için [Bkz. OLECMDF.](/windows/win32/api/docobj/ne-docobj-olecmdf)
+*pdwStatus*<br/>
+Sorgunun sonucu olarak döndürülen bayrakların işaretçisi. Olası değerler listesi için bkz. [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf).
 
-*pCmdMetin*<br/>
-Tek bir komut için ad ve durum bilgilerini döndürecek bir [OLECMDTEXT](/windows/win32/api/docobj/ns-docobj-olecmdtext) yapısını işaretçi. Arayanın bu bilgilere ihtiyacı olmadığını belirtmek için NULL olabilir.
+*pCmdText*<br/>
+Tek bir komutun adının ve durum bilgilerinin döndürüleceği bir [OLECMDTEXT](/windows/win32/api/docobj/ns-docobj-olecmdtext) yapısına yönelik işaretçi. Çağıranın bu bilgiye ihtiyacı olmadığını belirtmek için NULL olabilir.
 
 *pguidCmdGroup*<br/>
-Komut grubunun benzersiz tanımlayıcısı; standart grubu belirtmek için NULL olabilir.
+Komut grubunun benzersiz tanımlayıcısı; Standart grubu belirtmek için NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İade değerlerinin tam listesi için Windows SDK'daki [IOleCommandTarget::QueryStatus'a](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) bakın.
+Dönüş değerlerinin tüm listesi için, bkz. Windows SDK [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [IOleCommandTarget::QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) yönteminin işlevselliğini taklit eder.
+Bu üye işlevi, Windows SDK açıklandığı gibi [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) yönteminin işlevselliğine öykünür.
 
-## <a name="coledocobjectitemrelease"></a><a name="release"></a>COleDocObjectItem::Sürüm
+## <a name="coledocobjectitemrelease"></a><a name="release"></a> Cotadocobjectıtem:: Release
 
-OLE bağlantılı bir öğeye bağlantıyı serbest bırakır ve açıksa kapatır. İstemci öğesini yok etmez.
+Bir OLE bağlantılı öğesiyle bağlantıyı serbest bırakır ve açıksa kapatır. İstemci öğesini yok etmez.
 
 ```
 virtual void Release(OLECLOSE dwCloseOption = OLECLOSE_NOSAVE);
@@ -296,8 +297,8 @@ virtual void Release(OLECLOSE dwCloseOption = OLECLOSE_NOSAVE);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwCloseOption*<br/>
-OLE öğesinin yüklenen duruma geri döndüğünde hangi koşullar altında kaydedilince kaydedilmeye karar veren bayrak. Olası değerlerin listesi için [Bkz. COleClientItem::Kapat.](../../mfc/reference/coleclientitem-class.md#close)
+*Dwcloseseçeneği*<br/>
+OLE öğesinin yüklü duruma döndüğünü ne koşullarda kaydedileceğini belirten bayrak. Olası değerler listesi için bkz. [Colet Clienentidıtem:: Close](../../mfc/reference/coleclientitem-class.md#close).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -305,8 +306,8 @@ OLE öğesinin yüklenen duruma geri döndüğünde hangi koşullar altında kay
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek MFCBIND](../../overview/visual-cpp-samples.md)<br/>
-[COleClientItem Sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleClientItem Sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
-[CDocObjectServerItem Sınıfı](../../mfc/reference/cdocobjectserveritem-class.md)
+[MFC örnek MFCBIND](../../overview/visual-cpp-samples.md)<br/>
+[Colet Clienentidıtem sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Colet Clienentidıtem sınıfı](../../mfc/reference/coleclientitem-class.md)<br/>
+[CDocObjectServerItem sınıfı](../../mfc/reference/cdocobjectserveritem-class.md)

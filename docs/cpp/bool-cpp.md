@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bool (C++)'
 title: bool (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - bool keyword [C++]
 - __BOOL_DEFINED macro
 ms.assetid: 9abed3f2-d21c-4eb4-97c5-716342e613d8
-ms.openlocfilehash: 8cd035686a07285f52fe24aa7ab4f360619d5e1f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ea3af17260f21d3724f05b8bbad54091b23203e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229083"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229593"
 ---
 # <a name="bool-c"></a>bool (C++)
 

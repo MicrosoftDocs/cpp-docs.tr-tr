@@ -1,5 +1,6 @@
 ---
-title: COleControlSite Sınıfı
+description: 'Daha fazla bilgi edinin: Cotacontrolsite sınıfı'
+title: Cotacontrolsite sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleControlSite
@@ -106,18 +107,18 @@ helpviewer_keywords:
 - COleControlSite [MFC], m_pWndCtrl
 - COleControlSite [MFC], m_rect
 ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
-ms.openlocfilehash: 90c41a1be1a66cdceebb3f045a98167e56b7cf4c
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 3fecd9f81baec29a205dbdf4a10ee7d4927c3823
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227470"
 ---
-# <a name="colecontrolsite-class"></a>COleControlSite Sınıfı
+# <a name="colecontrolsite-class"></a>Cotacontrolsite sınıfı
 
 Özel istemci tarafı denetim arabirimleri için destek sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleControlSite : public CCmdTarget
@@ -127,95 +128,95 @@ class COleControlSite : public CCmdTarget
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleControlSite::COleControlSite](#colecontrolsite)|Bir `COleControlSite` nesne inşa eder.|
+|[Coincontrolsıte:: Copacontrolsite](#colecontrolsite)|Bir `COleControlSite` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleControlSite::BindDefaultProperty](#binddefaultproperty)|Barındırılan denetimin varsayılan özelliğini bir veri kaynağına bağlar.|
-|[COleControlSite::BindProperty](#bindproperty)|Barındırılan denetimin özelliğini bir veri kaynağına bağlar.|
-|[COleControlSite::CreateControl](#createcontrol)|Barındırılan activex denetimi oluşturur.|
-|[COleControlSite::DestroyControl](#destroycontrol)|Barındırılan denetimi yok eder.|
-|[COleControlSite::DoVerb](#doverb)|Barındırılan denetimin belirli bir fiilini yürütür.|
-|[COleControlSite::EnableDSC](#enabledsc)|Bir kontrol sitesi için veri kaynağı sağlar.|
-|[COleControlSite::EnableWindow](#enablewindow)|Denetim alanını etkinleştirir.|
-|[COleControlSite::FreezeEvents](#freezeevents)|Denetim sitesi olayları kabul edip etmediğini belirtir.|
-|[COleControlSite::GetDefBtnCode](#getdefbtncode)|Barındırılan denetim için varsayılan düğme kodunu alır.|
-|[COleControlSite::GetDlgCtrlID](#getdlgctrlid)|Denetimin tanımlayıcısını alır.|
-|[COleControlSite::GetEventIID](#geteventiid)|Barındırılan denetim için olay arabiriminin kimliğini alır.|
-|[COleControlSite::GetExStyle](#getexstyle)|Denetim sitesinin genişletilmiş stillerini alır.|
-|[COleControlSite::GetProperty](#getproperty)|Barındırılan denetimin belirli bir özelliğini alır.|
-|[COleControlSite::GetStyle](#getstyle)|Denetim alanının stillerini alır.|
-|[COleControlSite::GetWindowText](#getwindowtext)|Barındırılan denetimin metnini alır.|
-|[COleControlSite::InvokeHelper](#invokehelper)|Barındırılan denetimin belirli bir yöntemini çağırın.|
-|[COleControlSite::InvokeHelperV](#invokehelperv)|Bağımsız değişken bir bağımsız değişken listesiyle barındırılan denetimin belirli bir yöntemini çağırın.|
-|[COleControlSite::IsDefaultButton](#isdefaultbutton)|Denetimin penceredeki varsayılan düğme olup olmadığını belirler.|
-|[COleControlSite::IsWindowEnabled](#iswindowenabled)|Denetim sitesinin görünür durumunu denetler.|
-|[COleControlSite::ModifyStyle](#modifystyle)|Denetim sitesinin geçerli genişletilmiş stillerini değiştirir.|
-|[COleControlSite::ModifyStyleEx](#modifystyleex)|Denetim sitesinin geçerli stillerini değiştirir.|
-|[COleControlSite::MoveWindow](#movewindow)|Denetim alanının konumunu değiştirir.|
-|[COleControlSite::QuickActivate](#quickactivate)|Hızlı barındırılan denetimi etkinleştirir.|
-|[COleControlSite::SafeSetProperty](#safesetproperty)|Özel durum atma şansı olmadan denetimin bir özelliğini veya yöntemini ayarlar.|
-|[COleControlSite::SetDefaultButton](#setdefaultbutton)|Penceredeki varsayılan düğmeyi ayarlar.|
-|[COleControlSite::SetDlgCtrlID](#setdlgctrlid)|Denetimin tanımlayıcısını alır.|
-|[COleControlSite::SetFocus](#setfocus)|Odak noktasını kontrol alanına ayarlar.|
-|[COleControlSite::SetProperty](#setproperty)|Barındırılan denetimin belirli bir özelliğini ayarlar.|
-|[COleControlSite::SetPropertyV](#setpropertyv)|Değişken bir bağımsız değişken listeyle barındırılan denetimin belirli bir özelliğini ayarlar.|
-|[COleControlSite::SetWindowPos](#setwindowpos)|Kontrol alanının konumunu ayarlar.|
-|[COleControlSite::SetWindowText](#setwindowtext)|Barındırılan denetimin metnini ayarlar.|
-|[COleControlSite::ShowWindow](#showwindow)|Denetim sitesini gösterir veya gizler.|
+|[Coincontrolsıte:: BindDefaultProperty](#binddefaultproperty)|Barındırılan denetimin varsayılan özelliğini bir veri kaynağına bağlar.|
+|[Coincontrolsıte:: BindProperty](#bindproperty)|Barındırılan denetimin bir özelliğini bir veri kaynağına bağlar.|
+|[Copacontrolsıte:: CreateControl](#createcontrol)|Barındırılan bir ActiveX denetimi oluşturur.|
+|[Cotacontrolsite::D estroyControl](#destroycontrol)|Barındırılan denetimi yok eder.|
+|[Cotacontrolsite::D fazla b](#doverb)|Barındırılan denetimin belirli bir fiilini yürütür.|
+|[Copacontrolsıte:: EnableDSC](#enabledsc)|Bir denetim sitesi için veri kaynağını belirleme imkanı sunar.|
+|[Copacontrolsıte:: EnableWindow](#enablewindow)|Denetim sitesini etkinleştirilir.|
+|[Copacontrolsıte:: FreezeEvents](#freezeevents)|Denetim sitesinin olayları kabul ettiğini belirtir.|
+|[Coincontrolsıte:: GetDefBtnCode](#getdefbtncode)|Barındırılan denetim için varsayılan düğme kodunu alır.|
+|[Coincontrolsıte:: Getdlctrlıd](#getdlgctrlid)|Denetimin tanımlayıcısını alır.|
+|[Coincontrolsıte:: Geteventııd](#geteventiid)|Barındırılan denetim için bir olay arabiriminin KIMLIĞINI alır.|
+|[Copacontrolsıte:: GetExStyle](#getexstyle)|Denetim sitesinin genişletilmiş stillerini alır.|
+|[Coincontrolsıte:: GetProperty](#getproperty)|Barındırılan denetimin belirli bir özelliğini alır.|
+|[Copacontrolsıte:: GetStyle](#getstyle)|Denetim sitesinin stillerini alır.|
+|[Coincontrolsıte:: GetWindowText](#getwindowtext)|Barındırılan denetimin metnini alır.|
+|[Copacontrolsıte:: InvokeHelper](#invokehelper)|Barındırılan denetimin belirli bir yöntemini çağırın.|
+|[Copercontrolsite:: InvokeHelperV](#invokehelperv)|Barındırılan denetimin belirli bir yöntemini bir bağımsız değişken listesi ile çağırma.|
+|[Coincontrolsıte:: IsDefaultButton](#isdefaultbutton)|Denetimin pencerede varsayılan düğme olup olmadığını belirler.|
+|[Copacontrolsıte:: IsWindowEnabled](#iswindowenabled)|Denetim sitesinin görünür durumunu denetler.|
+|[Coincontrolsıte:: ModifyStyle](#modifystyle)|Denetim sitesinin geçerli genişletilmiş stillerini değiştirir.|
+|[Coincontrolsıte:: ModifyStyleEx](#modifystyleex)|Denetim sitesinin geçerli stillerini değiştirir.|
+|[Copacontrolsıte:: MoveWindow](#movewindow)|Denetim sitesinin konumunu değiştirir.|
+|[Copacontrolsite:: QuickActivate](#quickactivate)|Barındırılan denetimi hızlı etkinleştirir.|
+|[Copacontrolsite:: SafeSetProperty](#safesetproperty)|Özel durum oluşturma şansı olmadan denetimin bir özelliğini veya yöntemini ayarlar.|
+|[Coincontrolsıte:: SetDefaultButton](#setdefaultbutton)|Penceredeki varsayılan düğmeyi ayarlar.|
+|[Copacontrolsıte:: Setıdctrlıd](#setdlgctrlid)|Denetimin tanımlayıcısını alır.|
+|[Coincontrolsıte:: SetFocus](#setfocus)|Odağı denetim sitesine ayarlar.|
+|[Copacontrolsıte:: SetProperty](#setproperty)|Barındırılan denetimin belirli bir özelliğini ayarlar.|
+|[COleControlSite:: SetPropertyV](#setpropertyv)|Barındırılan denetimin belirli bir özelliğini bir bağımsız değişken listesi ile ayarlar.|
+|[Coincontrolsite:: SetWindowPos](#setwindowpos)|Denetim sitesinin konumunu ayarlar.|
+|[Coincontrolsıte:: SetWindowText](#setwindowtext)|Barındırılan denetimin metnini ayarlar.|
+|[Copacontrolsıte:: ShowWindow](#showwindow)|Denetim sitesini gösterir veya gizler.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleControlSite::GetControlInfo](#getcontrolinfo)|Barındırılan denetim için klavye bilgilerini ve mnemonics alır.|
+|[Coincontrolsite:: Getcontrolinınfo](#getcontrolinfo)|Barındırılan denetim için klavye bilgilerini ve anımsatıcıları alır.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleControlSite::m_bIsWindowless](#m_biswindowless)|Barındırılan denetimin penceresiz denetim olup olmadığını belirler.|
-|[COleControlSite::m_ctlInfo](#m_ctlinfo)|Denetim için klavye işleme hakkında bilgi içerir.|
-|[COleControlSite::m_dwEventSink](#m_dweventsink)|Denetimin bağlantı noktasının çerezi.|
-|[COleControlSite::m_dwMiscStatus](#m_dwmiscstatus)|Barındırılan kontrol için çeşitli durumlar.|
-|[COleControlSite::m_dwPropNotifySink](#m_dwpropnotifysink)|Kontrolün `IPropertyNotifySink` kurabiyesi.|
-|[COleControlSite::m_dwStyle](#m_dwstyle)|Barındırılan denetimin stilleri.|
-|[COleControlSite::m_hWnd](#m_hwnd)|Kontrol alanının sapı.|
-|[COleControlSite::m_iidEvents](#m_iidevents)|Barındırılan denetim için olay arabiriminin kimliği.|
-|[COleControlSite::m_nID](#m_nid)|Barındırılan denetimin kimliği.|
-|[COleControlSite::m_pActiveObject](#m_pactiveobject)|Barındırılan `IOleInPlaceActiveObject` denetimin nesnesine işaretçi.|
-|[COleControlSite::m_pCtrlCont](#m_pctrlcont)|Barındırılan denetimin kapsayıcısı.|
-|[COleControlSite::m_pInPlaceObject](#m_pinplaceobject)|Barındırılan `IOleInPlaceObject` denetimin nesnesine işaretçi.|
-|[COleControlSite::m_pObject](#m_pobject)|Denetimin `IOleObjectInterface` arabirimine bir işaretçi.|
-|[COleControlSite::m_pWindowlessObject](#m_pwindowlessobject)|Denetimin `IOleInPlaceObjectWindowless` arabirimine bir işaretçi.|
-|[COleControlSite::m_pWndCtrl](#m_pwndctrl)|Barındırılan denetim için pencere nesnesine işaretçi.|
-|[COleControlSite::m_rect](#m_rect)|Kontrol alanının boyutları.|
+|[Coincontrolsite:: m_bIsWindowless](#m_biswindowless)|Barındırılan denetimin penceresiz bir denetim olup olmadığını belirler.|
+|[Coincontrolsite:: m_ctlInfo](#m_ctlinfo)|Denetim için klavye işleme hakkında bilgi içerir.|
+|[Coincontrolsite:: m_dwEventSink](#m_dweventsink)|Denetimin bağlantı noktasının tanımlama bilgisi.|
+|[Coincontrolsite:: m_dwMiscStatus](#m_dwmiscstatus)|Barındırılan denetimin çeşitli durumları.|
+|[Coincontrolsite:: m_dwPropNotifySink](#m_dwpropnotifysink)|`IPropertyNotifySink`Denetimin tanımlama bilgisi.|
+|[Coincontrolsite:: m_dwStyle](#m_dwstyle)|Barındırılan denetimin stilleri.|
+|[Coincontrolsite:: m_hWnd](#m_hwnd)|Denetim sitesinin tanıtıcısı.|
+|[Coincontrolsite:: m_iidEvents](#m_iidevents)|Barındırılan denetim için olay arabiriminin KIMLIĞI.|
+|[Coincontrolsite:: m_nID](#m_nid)|Barındırılan denetimin KIMLIĞI.|
+|[Coincontrolsite:: m_pActiveObject](#m_pactiveobject)|`IOleInPlaceActiveObject`Barındırılan denetimin nesnesine yönelik bir işaretçi.|
+|[Coincontrolsite:: m_pCtrlCont](#m_pctrlcont)|Barındırılan denetimin kapsayıcısı.|
+|[Coincontrolsite:: m_pInPlaceObject](#m_pinplaceobject)|`IOleInPlaceObject`Barındırılan denetimin nesnesine yönelik bir işaretçi.|
+|[Coincontrolsite:: m_pObject](#m_pobject)|Denetimin arabirimine yönelik bir işaretçi `IOleObjectInterface` .|
+|[Coincontrolsite:: m_pWindowlessObject](#m_pwindowlessobject)|Denetimin arabirimine yönelik bir işaretçi `IOleInPlaceObjectWindowless` .|
+|[Coincontrolsite:: m_pWndCtrl](#m_pwndctrl)|Barındırılan denetim için pencere nesnesine yönelik bir işaretçi.|
+|[Coincontrolsite:: m_rect](#m_rect)|Denetim sitesinin boyutları.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu destek, gömülü activex denetiminin görüntü alanının konumu ve kapsamı, takma adı, kullanıcı arabirimi, ortam özellikleri ve kapsayıcıtarafından sağlanan diğer kaynaklar hakkında bilgi edinmesinin birincil yoludur. `COleControlSite`[iOleControlSite](/windows/win32/api/ocidl/nn-ocidl-iolecontrolsite), [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite), [IOleClientSite](/windows/win32/api/oleidl/nn-oleidl-ioleclientsite), [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink), `IBoundObjectSite`, `INotifyDBEvents` [IRowSetNotify](../../data/oledb/irowsetnotifyimpl-class.md) arayüzlerini tam olarak uygular. Buna ek olarak, IDispatch arabirimi (ortam özellikleri ve olay lavabolar için destek sağlayan) da uygulanır.
+Bu destek, katıştırılmış bir ActiveX denetiminin konum ve kapsamı hakkında bilgileri, bilinen adı, Kullanıcı arabirimi, ortam özellikleri ve kapsayıcısı tarafından belirtilen diğer kaynakları hakkında bilgi elde eden başlıca bir araçtır. `COleControlSite`[IOleControlSite](/windows/win32/api/ocidl/nn-ocidl-iolecontrolsite), [IOleInPlaceSite](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite), [IOleClientSite](/windows/win32/api/oleidl/nn-oleidl-ioleclientsite), [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink), `IBoundObjectSite` , `INotifyDBEvents` , [IRowsetNotify](../../data/oledb/irowsetnotifyimpl-class.md) arabirimlerini tamamen uygular. Ayrıca, IDispatch arabirimi (çevresel özellikler ve olay havuzları için destek sağlama) de uygulanır.
 
-ActiveX denetim sitesi oluşturmak `COleControlSite`için , 'den `COleControlSite`bir sınıf türetmek. Kapsayıcı `CWnd`için türetilmiş sınıfınızda (örneğin, iletişim kutunuz) `CWnd::CreateControlSite` işlevi geçersiz kılar.
+Kullanarak bir ActiveX Denetim sitesi oluşturmak için `COleControlSite` , öğesinden bir sınıf türetebilirsiniz `COleControlSite` . `CWnd`Kapsayıcının türetilmiş sınıfınızda (örneğin, iletişim kutusu) işlevi geçersiz kılar `CWnd::CreateControlSite` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
 `COleControlSite`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxocc.h
+**Üstbilgi:** afxocc. h
 
-## <a name="colecontrolsitebinddefaultproperty"></a><a name="binddefaultproperty"></a>COleControlSite::BindDefaultProperty
+## <a name="colecontrolsitebinddefaultproperty"></a><a name="binddefaultproperty"></a> Coincontrolsıte:: BindDefaultProperty
 
-Arama nesnesinin varsayılan basit ciltli özelliğini, tür kitaplığında işaretli olarak, veri kaynağı denetiminin DataSource, User Name, Password ve SQL özellikleri tarafından tanımlanan temel imleçe bağlar.
+Nesne kaynağı denetiminin veri kaynağı, Kullanıcı adı, parola ve SQL özellikleri tarafından tanımlanan temel imlecin tür kitaplığı 'nda gösterildiği gibi, çağıran nesnenin varsayılan basit bağlama özelliğini bağlar.
 
 ```
 virtual void BindDefaultProperty(
@@ -227,25 +228,25 @@ virtual void BindDefaultProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
-Veri kaynağı denetimine bağlanacak bir veri bağlı denetimde bir özelliğin DISPID'ini belirtir.
+*Dwdıspıd*<br/>
+Bir veri kaynağı denetimine bağlanacak veriye bağlı denetimdeki bir özelliğin DISPID 'sini belirtir.
 
 *vtProp*<br/>
-Bağlanacak özelliğin türünü belirtir ( örneğin, VT_BSTR, VT_VARIANT ve benzeri.
+Bağlanacak özelliğin türünü belirtir (örneğin, VT_BSTR, VT_VARIANT vb.).
 
 *szFieldName*<br/>
-Özelliğin bağlı olacağı veri kaynağı denetimi tarafından sağlanan imleçte sütunun adını belirtir.
+Özelliğin bağlanacağı veri kaynağı denetimi tarafından belirtilen imlecin bulunduğu sütunun adını belirtir.
 
 *pDSCWnd*<br/>
-Özelliğin `CWnd`bağlı olacağı veri kaynağı denetimini barındıran türetilmiş nesneye işaretçi.
+`CWnd`Özelliğin bağlanacağı veri kaynağı denetimini barındıran, türetilmiş nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `CWnd` işlevde adını aldığınız nesne, veriye bağlı bir denetim olmalıdır.
+`CWnd`Bu işlevi çağırdığınız nesne, veri bağlantılı bir denetim olmalıdır.
 
-## <a name="colecontrolsitebindproperty"></a><a name="bindproperty"></a>COleControlSite::BindProperty
+## <a name="colecontrolsitebindproperty"></a><a name="bindproperty"></a> Coincontrolsıte:: BindProperty
 
-Arama nesnesinin basit ciltli özelliğini, tür kitaplığında işaretli olarak, veri kaynağı denetiminin DataSource, UserName, Password ve SQL özellikleri tarafından tanımlanan temel imleçiçin bağlar.
+Nesne kaynağı denetiminin veri kaynağı, Kullanıcı adı, parola ve SQL özellikleri tarafından tanımlanan temel imlecin tür kitaplığı 'nda işaretlenmiş olarak, çağıran nesnenin basit bağlı özelliğini bağlar.
 
 ```
 virtual void BindProperty(
@@ -255,19 +256,19 @@ virtual void BindProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispId*<br/>
-Veri kaynağı denetimine bağlanacak bir veri bağlı denetimde bir özelliğin DISPID'ini belirtir.
+*Dwdıspıd*<br/>
+Bir veri kaynağı denetimine bağlanacak veriye bağlı denetimdeki bir özelliğin DISPID 'sini belirtir.
 
 *pWndDSC*<br/>
-Özelliğin `CWnd`bağlı olacağı veri kaynağı denetimini barındıran türetilmiş nesneye işaretçi.
+`CWnd`Özelliğin bağlanacağı veri kaynağı denetimini barındıran, türetilmiş nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `CWnd` işlevde adını aldığınız nesne, veriye bağlı bir denetim olmalıdır.
+`CWnd`Bu işlevi çağırdığınız nesne, veri bağlantılı bir denetim olmalıdır.
 
-## <a name="colecontrolsitecolecontrolsite"></a><a name="colecontrolsite"></a>COleControlSite::COleControlSite
+## <a name="colecontrolsitecolecontrolsite"></a><a name="colecontrolsite"></a> Coincontrolsıte:: Copacontrolsite
 
-Yeni `COleControlSite` bir nesne oluşturuyor.
+Yeni bir `COleControlSite` nesne oluşturur.
 
 ```
 explicit COleControlSite(COleControlContainer* pCtrlCont);
@@ -276,15 +277,15 @@ explicit COleControlSite(COleControlContainer* pCtrlCont);
 ### <a name="parameters"></a>Parametreler
 
 *pCtrlCont*<br/>
-Denetimin kapsayıcısına işaretçi (AtiveX denetimini barındıran pencereyi temsil eder).
+Denetimin kapsayıcısına (AtiveX denetimini barındıran pencereyi temsil eden) yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev [COccManager::CreateContainer](../../mfc/reference/coccmanager-class.md#createcontainer) işlevi tarafından çağrılır. Kapsayıcıların oluşturulması hakkında daha fazla bilgi için [COccManager::CreateSite'ye](../../mfc/reference/coccmanager-class.md#createsite)bakın.
+Bu işlev [COccManager:: CreateContainer](../../mfc/reference/coccmanager-class.md#createcontainer) işlevi tarafından çağırılır. Kapsayıcıların oluşturulmasını özelleştirme hakkında daha fazla bilgi için bkz. [COccManager:: CreateSite](../../mfc/reference/coccmanager-class.md#createsite).
 
-## <a name="colecontrolsitecreatecontrol"></a><a name="createcontrol"></a>COleControlSite::CreateControl
+## <a name="colecontrolsitecreatecontrol"></a><a name="createcontrol"></a> Copacontrolsıte:: CreateControl
 
-Nesne tarafından barındırılan `COleControlSite` bir ActiveX denetimi oluşturur.
+Nesnesi tarafından barındırılan bir ActiveX denetimi oluşturur `COleControlSite` .
 
 ```
 virtual HRESULT CreateControl(
@@ -314,37 +315,37 @@ virtual HRESULT CreateControl(
 ### <a name="parameters"></a>Parametreler
 
 *pWndCtrl*<br/>
-Denetimi temsil eden pencere nesnesi için bir işaretçi.
+Denetimi temsil eden pencere nesnesine yönelik bir işaretçi.
 
-*Clsıd*<br/>
-Denetimin benzersiz sınıf kimliği.
+*in*<br/>
+Denetimin benzersiz sınıf KIMLIĞI.
 
 *lpszWindowName*<br/>
-Denetimde görüntülenecek metne işaretçi. Winodw'ın Resim Yazısı veya Metin özelliğinin değerini ayarlar (varsa).
+Denetimde gösterilecek metne yönelik bir işaretçi. Winodw 'ın başlık veya metin özelliğinin değerini (varsa) ayarlar.
 
-*Dwstyle*<br/>
-Windows stilleri. Kullanılabilir stiller **Açıklamalar** bölümünde listelenir.
+*dwStyle*<br/>
+Windows stilleri. Kullanılabilir stiller, **açıklamalar** bölümü altında listelenmiştir.
 
 *Rect*<br/>
-Denetimin boyutunu ve konumunu belirtir. Bir `CRect` nesne veya yapı `RECT` olabilir.
+Denetimin boyutunu ve konumunu belirtir. Bir `CRect` nesne ya da `RECT` Yapı olabilir.
 
-*Nıd*<br/>
-Denetimin alt pencere kimliğini belirtir.
+*NID*<br/>
+Denetimin alt pencere KIMLIĞINI belirtir.
 
 *pPersist*<br/>
-Denetim için `CFile` kalıcı durumu içeren bir işaretçi. Varsayılan değer NULL'dur ve denetimin durumunu kalıcı depolamadan geri almadan kendisini başlattıgına işaret eder. NULL değilse, denetimin kalıcı verilerini `CFile`içeren türetilmiş bir nesneye akış veya depolama biçiminde işaretçi olmalıdır. Bu veriler istemcinin önceki etkinleştirme kaydedilmiş olabilir. Diğer `CFile` verileri içerebilir, ancak okuma-yazma işaretçisinin çağrı sırasında ki ilk kalıcı veri baytına `CreateControl`ayarlatılması gerekir.
+`CFile`Denetimin kalıcı durumunu içeren bir işaretçisi. Varsayılan değer NULL ' dir ve bu, denetimin kendisini kalıcı depolamadan geri yüklemeden önce başlatıldığını belirtir. NULL değilse, `CFile` denetimin kalıcı verilerini içeren, bir akış veya depolama biçiminde bir türetilmiş nesnenin işaretçisi olması gerekir. Bu veriler, istemcinin önceki bir etkinleştirmesine kaydedilmiş olabilir. `CFile`Diğer verileri içerebilir, ancak arama sırasında okuma-yazma işaretçisinin kalıcı verilerin ilk baytına ayarlanmış olması gerekir `CreateControl` .
 
-*bDepolama*<br/>
-*pPersist'deki* verilerin veri olarak `IStorage` mı `IStream` yorumlanması gerektiğini gösterir. *pPersist'deki* veriler bir depolama ysa, *bStorage* TRUE olmalıdır. *pPersist'deki* veriler bir akışsa, *bStorage* FALSE olmalıdır. Varsayılan değer FALSE'dur.
+*bStorage*<br/>
+*PPersist* 'teki verilerin veya veri olarak yorumlanıp yorumlanmayacağını `IStorage` gösterir `IStream` . *PPersist* 'teki veriler bir depolama Ise, *bStorage* doğru olmalıdır. *PPersist* 'teki veriler bir Stream Ise *bStorage* yanlış olmalıdır. Varsayılan değer FALSE 'dur.
 
 *bstrLicKey*<br/>
-İsteğe bağlı lisans anahtar verileri. Bu veriler yalnızca çalışma zamanı lisans anahtarı gerektiren denetimler oluşturmak için gereklidir. Denetim lisanslamayı destekliyorsa, denetimin oluşturulmasının başarılı olması için bir lisans anahtarı sağlamanız gerekir. Varsayılan değer NULL'dur.
+İsteğe bağlı lisans anahtarı verileri. Bu veriler yalnızca bir çalışma zamanı lisans anahtarı gerektiren denetimler oluşturmak için gereklidir. Denetim lisanslamayı destekliyorsa, denetimin başarılı olması için bir lisans anahtarı sağlamanız gerekir. Varsayılan değer NULL.
 
-*Ppt*<br/>
-Denetimin sol `POINT` üst köşesini içeren bir yapıya işaretçi. Denetimin boyutu *psize*değerine göre belirlenir. *PPT* ve *psize* değerleri, denetimin boyutunu ve konumunu belirten isteğe bağlı bir yöntemdir.
+*PPT*<br/>
+`POINT`Denetimin sol üst köşesini içeren bir yapıya yönelik işaretçi. Denetimin boyutu *psize* değerine göre belirlenir. *PPT* ve *pboyut* değerleri, denetimin boyutunu ve konumunu belirten isteğe bağlı bir yöntemdir.
 
-*psize*<br/>
-Denetimin boyutunu `SIZE` içeren bir yapıya işaretçi. Sol üst köşe *ppt*değerine göre belirlenir. *PPT* ve *psize* değerleri, denetimin boyutunu ve konumunu belirten isteğe bağlı bir yöntemdir.
+*psıze*<br/>
+`SIZE`Denetimin boyutunu içeren bir yapıya yönelik işaretçi. Sol üst köşe, *PPT*'nin değerine göre belirlenir. *PPT* ve *pboyut* değerleri, denetimin boyutunu ve konumunu belirten isteğe bağlı bir yöntemdir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -352,23 +353,23 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca Windows *dwStyle* bayraklarının bir alt `CreateControl`kümesi aşağıdakiler tarafından desteklenir:
+Yalnızca Windows *dwStyle* bayraklarının bir alt kümesi tarafından desteklenir `CreateControl` :
 
-- WS_VISIBLE Başlangıçta görünür bir pencere oluşturur. Denetimin sıradan pencereler gibi hemen görünür olmasını istiyorsanız gereklidir.
+- WS_VISIBLE Başlangıçta görünür olan bir pencere oluşturur. Denetimin normal pencereler gibi hemen görünür olmasını istiyorsanız gereklidir.
 
-- WS_DISABLED Başlangıçta devre dışı bırakılmış bir pencere oluşturur. Devre dışı bırakılmış bir pencere kullanıcıdan giriş alamaz. Denetimetkin bir özelliği varsa ayarlanabilir.
+- WS_DISABLED başlangıçta devre dışı olan bir pencere oluşturur. Devre dışı bırakılan bir pencere kullanıcıdan giriş alamaz. Denetimin etkin bir özelliği varsa, ayarlanabilir.
 
-- WS_BORDER ince çizgi kenarlıklı bir pencere oluşturur. Denetimin BorderStyle özelliği varsa ayarlanabilir.
+- WS_BORDER ince çizgili kenarlığı olan bir pencere oluşturur. Denetimin bir BorderStyle özelliği varsa, ayarlanabilir.
 
-- WS_GROUP Bir denetim grubunun ilk denetimini belirtir. Kullanıcı yön tuşlarını kullanarak klavye odağı gruptaki bir denetimden diğerine değiştirebilir. İlk denetimden sonra WS_GROUP stili ile tanımlanan tüm denetimler aynı gruba aittir. WS_GROUP stili ile bir sonraki denetim grubu sona erdirer ve bir sonraki grubu başlatır.
+- WS_GROUP bir denetim grubunun ilk denetimini belirtir. Kullanıcı, yön tuşlarını kullanarak, klavye odağını gruptaki bir denetimden bir sonrakine değiştirebilir. İlk denetimden sonra WS_GROUP stili ile tanımlanmış tüm denetimler aynı gruba aittir. WS_GROUP stili olan bir sonraki denetim, grubu sonlandırır ve sonraki grubu başlatır.
 
-- WS_TABSTOP Kullanıcı TAB tuşuna bastığında klavye odağı alabilecek bir denetim belirtir. TAB tuşuna basıldığında klavye odağı WS_TABSTOP stilinin bir sonraki denetimine dönüşür.
+- WS_TABSTOP, Kullanıcı TAB tuşuna bastığında klavye odağını alabilen bir denetim belirtir. Sekme tuşuna basıldığında klavye odağı WS_TABSTOP stilin sonraki denetimine değişir.
 
-Varsayılan boyutlu denetimler oluşturmak için ikinci aşırı yüklemeyi kullanın.
+Varsayılan boyutlu denetimleri oluşturmak için ikinci aşırı yüklemeyi kullanın.
 
-## <a name="colecontrolsitedestroycontrol"></a><a name="destroycontrol"></a>COleControlSite::DestroyControl
+## <a name="colecontrolsitedestroycontrol"></a><a name="destroycontrol"></a> Cotacontrolsite::D estroyControl
 
-Nesneyi `COleControlSite` yok eder.
+Nesneyi yok eder `COleControlSite` .
 
 ```
 virtual BOOL DestroyControl();
@@ -376,15 +377,15 @@ virtual BOOL DestroyControl();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır sız, başarılı ysa, aksi takdirde 0.
+Başarılı olursa sıfır dışı, aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tamamlandıktan sonra, nesne bellekten serbest bırakılır ve nesneye işaretçiler artık geçerli değildir.
+Tamamlandıktan sonra nesne bellekten serbest bırakılır ve nesne işaretçileri artık geçerli değildir.
 
-## <a name="colecontrolsitedoverb"></a><a name="doverb"></a>COleControlSite::DoVerb
+## <a name="colecontrolsitedoverb"></a><a name="doverb"></a> Cotacontrolsite::D fazla b
 
-Belirtilen fiili yürütür.
+Belirtilen fiil yürütülür.
 
 ```
 virtual HRESULT DoVerb(
@@ -394,22 +395,22 @@ virtual HRESULT DoVerb(
 
 ### <a name="parameters"></a>Parametreler
 
-*nVerb*<br/>
-Yürütmek için fiil belirtir. Aşağıdakilerden birini içerebilir:
+*Nfiil*<br/>
+Yürütülecek fiili belirtir. Aşağıdakilerden birini içerebilir:
 
 |Değer|Anlamı|Sembol|
 |-----------|-------------|------------|
 |0|Birincil fiil|OLEIVERB_PRIMARY|
 |-1|İkincil fiil|(Yok)|
-|1|Düzenleme için nesneyi görüntüler.|OLEIVERB_SHOW|
-|-2|Öğeyi ayrı bir pencerede edinimi.|OLEIVERB_OPEN|
+|1|Düzenlenecek nesneyi görüntüler.|OLEIVERB_SHOW|
+|-2|Öğeyi ayrı bir pencerede düzenler.|OLEIVERB_OPEN|
 |-3|Nesneyi gizler.|OLEIVERB_HIDE|
-|-4|Yerinde bir denetim etkinleştirir.|OLEIVERB_UIACTIVATE|
+|-4|Bir denetimi yerinde etkinleştirir.|OLEIVERB_UIACTIVATE|
 |-5|Ek kullanıcı arabirimi öğeleri olmadan bir denetimi yerinde etkinleştirir.|OLEIVERB_INPLACEACTIVATE|
 |-7|Denetimin özelliklerini görüntüleyin.|OLEIVERB_PROPERTIES|
 
 *lpMsg*<br/>
-Öğenin etkinleştirilmesine neden olan iletiyi işaretçi.
+Öğenin etkinleştirilmesini neden olan iletinin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -417,13 +418,13 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, belirtilen fiili `IOleObject` yürütmek için doğrudan denetimin arabirimi üzerinden çağırır. Bu işlev çağrısı nın sonucu olarak bir özel durum atılırsa, bir HRESULT hata kodu döndürülür.
+Bu işlev, `IOleObject` belirtilen fiili yürütmek için denetimin arabiriminden doğrudan çağırır. Bu işlev çağrısının bir sonucu olarak bir özel durum oluşturulursa, HRESULT hata kodu döndürülür.
 
-Daha fazla bilgi için Windows SDK'daki [IOleObject::DoVerb'e](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) bakın.
+Daha fazla bilgi için bkz. [IOleObject::D oVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.
 
-## <a name="colecontrolsiteenabledsc"></a><a name="enabledsc"></a>COleControlSite::EnableDSC
+## <a name="colecontrolsiteenabledsc"></a><a name="enabledsc"></a> Copacontrolsıte:: EnableDSC
 
-Kontrol sitesi için veri kaynağı sağlar.
+Denetim sitesi için veri kaynağını belirleme imkanı sunar.
 
 ```
 virtual void EnableDSC();
@@ -431,11 +432,11 @@ virtual void EnableDSC();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim sitesi için veri kaynağı etkinleştirmek ve başlatma çerçevesi tarafından çağrıldı. Özelleştirilmiş davranış sağlamak için bu işlevi geçersiz kılın.
+Denetim sitesi için veri kaynağını etkinleştirmek ve başlatmak üzere Framework tarafından çağırılır. Özelleştirilmiş davranış sağlamak için bu işlevi geçersiz kılın.
 
-## <a name="colecontrolsiteenablewindow"></a><a name="enablewindow"></a>COleControlSite::EnableWindow
+## <a name="colecontrolsiteenablewindow"></a><a name="enablewindow"></a> Copacontrolsıte:: EnableWindow
 
-Kontrol sitesine fare ve klavye girişi sağlar veya devre dışı kılabilir.
+Denetim sitesine fare ve klavye girişini sağlar veya devre dışı bırakır.
 
 ```
 virtual BOOL EnableWindow(BOOL bEnable);
@@ -443,16 +444,16 @@ virtual BOOL EnableWindow(BOOL bEnable);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEtkinleştir*<br/>
-Pencereyi etkinleştirip etkinleştirmeye veya devre dışı bırakmayacağını belirtir: Pencere girişi etkinolacaksa TRUE, aksi takdirde FALSE.
+*bEnable*<br/>
+Pencerenin etkinleştirilip etkinleştirilmeyeceğini ve devre dışı bırakılacağını belirtir: pencere girişi etkin hale acaksa TRUE, aksi takdirde FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pencere daha önce devre dışı bırakılmışsa sıfır olmayan, aksi takdirde 0.
+Pencere önceden devre dışı bırakılmışsa sıfır dışında 0.
 
-## <a name="colecontrolsitefreezeevents"></a><a name="freezeevents"></a>COleControlSite::FreezeEvents
+## <a name="colecontrolsitefreezeevents"></a><a name="freezeevents"></a> Copacontrolsıte:: FreezeEvents
 
-Denetim sitesinin denetimden kaynaklanan olayları işleyip işlemeyeceğini veya yok sayılacağını belirtir.
+Denetim sitesinin bir denetimden tetiklenen olayları işlemesini veya yoksaymasını belirtir.
 
 ```cpp
 void FreezeEvents(BOOL bFreeze);
@@ -461,18 +462,18 @@ void FreezeEvents(BOOL bFreeze);
 ### <a name="parameters"></a>Parametreler
 
 *bFreeze*<br/>
-Denetim sitesinin olayları kabul etmeyi durdurmak isteyip istemeyeceğini belirtir. Denetim olayları kabul etmiyorsa sıfırsız; aksi takdirde sıfır.
+Denetim sitesinin olayları kabul etmeyi durdurmasını isteyip istemediğinizi belirtir. Denetim olayları kabul etmediğinden sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*bFreeze* TRUE ise, denetim sitesi saçak olaylarını durdurmak için denetim ister. *bFreeze* FALSE ise, denetim sitesi olayları ateşlemeye devam etmek için denetim ister.
+*BFreeze* değeri true ise, Denetim sitesi, Fring olaylarını durdurmak için denetimi ister. *BFreeze* yanlış ise, Denetim sitesi olayları tetiketmeye devam etmek için denetimi ister.
 
 > [!NOTE]
-> Denetim sitesi tarafından istenirse olayları ateşlemeyi durdurmak için denetim gerekli değildir. Bu ateş devam edebilirsiniz ama sonraki tüm olaylar kontrol sitesi tarafından göz ardı edilecektir.
+> Denetim sitesi tarafından istenirse, denetimin olayları tetikdurdurulması için denetim gerekli değildir. Çalışmaya devam edebilir, ancak sonraki tüm olaylar Denetim sitesi tarafından yok sayılır.
 
-## <a name="colecontrolsitegetcontrolinfo"></a><a name="getcontrolinfo"></a>COleControlSite::GetControlInfo
+## <a name="colecontrolsitegetcontrolinfo"></a><a name="getcontrolinfo"></a> Coincontrolsite:: Getcontrolinınfo
 
-Denetimin klavye mnemonics ve klavye davranışı hakkında bilgi alır.
+Bir denetimin klavye anımsatıcıları ve klavye davranışı hakkında bilgi alır.
 
 ```cpp
 void GetControlInfo();
@@ -480,11 +481,11 @@ void GetControlInfo();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bilgiler [COleControlSite saklanır::m_ctlInfo](#m_ctlinfo).
+Bilgiler [Cotacontrolsite:: m_ctlInfo](#m_ctlinfo)içinde depolanır.
 
-## <a name="colecontrolsitegetdefbtncode"></a><a name="getdefbtncode"></a>COleControlSite::GetDefBtnCode
+## <a name="colecontrolsitegetdefbtncode"></a><a name="getdefbtncode"></a> Coincontrolsıte:: GetDefBtnCode
 
-Denetimin varsayılan bir basma düğmesi olup olmadığını belirler.
+Denetimin varsayılan bir gönderme düğmesi olup olmadığını belirler.
 
 ```
 DWORD GetDefBtnCode();
@@ -494,13 +495,13 @@ DWORD GetDefBtnCode();
 
 Aşağıdaki değerlerden biri olabilir:
 
-- DLGC_DEFPUSHBUTTON Denetim iletişim kutusundavarsayılan düğmedir.
+- DLGC_DEFPUSHBUTTON denetim, iletişim kutusunda varsayılan düğmedir.
 
-- DLGC_UNDEFPUSHBUTTON Denetimi iletişim kutusundavarsayılan düğme değildir.
+- DLGC_UNDEFPUSHBUTTON denetim, iletişim kutusunda varsayılan düğme değil.
 
-- **0** Denetim bir düğme değildir.
+- **0** denetimi bir düğme değildir.
 
-## <a name="colecontrolsitegetdlgctrlid"></a><a name="getdlgctrlid"></a>COleControlSite::GetDlgCtrlID
+## <a name="colecontrolsitegetdlgctrlid"></a><a name="getdlgctrlid"></a> Coincontrolsıte:: Getdlctrlıd
 
 Denetimin tanımlayıcısını alır.
 
@@ -510,11 +511,11 @@ virtual int GetDlgCtrlID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetimin iletişim öğesi tanımlayıcısı.
+Denetimin iletişim kutusu öğesi tanımlayıcısı.
 
-## <a name="colecontrolsitegeteventiid"></a><a name="geteventiid"></a>COleControlSite::GetEventIID
+## <a name="colecontrolsitegeteventiid"></a><a name="geteventiid"></a> Coincontrolsıte:: Geteventııd
 
-Denetimin varsayılan olay arabirimi için bir işaretçi alır.
+Denetimin varsayılan olay arabirimine bir işaretçi alır.
 
 ```
 BOOL GetEventIID(IID* piid);
@@ -522,14 +523,14 @@ BOOL GetEventIID(IID* piid);
 
 ### <a name="parameters"></a>Parametreler
 
-*piid*<br/>
-Arabirim kimliği için bir işaretçi.
+*piıd*<br/>
+Arabirim KIMLIĞINE yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır sız, başarılı ysa, aksi takdirde 0. Başarılı olursa, *piid* denetimin varsayılan olay arabirimi için arabirim kimliği içerir.
+Başarılı olursa sıfır dışı, aksi durumda 0. Başarılı olursa, *pIID* denetimin varsayılan olay arabirimi IÇIN arabirim kimliğini içerir.
 
-## <a name="colecontrolsitegetexstyle"></a><a name="getexstyle"></a>COleControlSite::GetExStyle
+## <a name="colecontrolsitegetexstyle"></a><a name="getexstyle"></a> Copacontrolsıte:: GetExStyle
 
 Pencerenin genişletilmiş stillerini alır.
 
@@ -539,15 +540,15 @@ virtual DWORD GetExStyle() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim penceresi genişletilmiş stilleri.
+Denetim penceresinin Genişletilmiş stilleri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normal stilleri almak için [COleControlSite'yi arayın::GetStyle.](#getstyle)
+Normal stilleri almak için [Cotacontrolsıte:: GetStyle](#getstyle)öğesini çağırın.
 
-## <a name="colecontrolsitegetproperty"></a><a name="getproperty"></a>COleControlSite::GetProperty
+## <a name="colecontrolsitegetproperty"></a><a name="getproperty"></a> Coincontrolsıte:: GetProperty
 
-*dwDispID*tarafından belirtilen kontrol özelliğini alır.
+*Dwdıspıd* tarafından belirtilen denetim özelliğini alır.
 
 ```
 virtual void GetProperty(
@@ -558,22 +559,22 @@ virtual void GetProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
-Denetimin varsayılan `IDispatch` arabiriminde bulunan özelliğin sevk kimliğini niçin alınmasını tanımlar.
+*Dwdıspıd*<br/>
+Denetimin varsayılan arabiriminde alınacak olan özelliğin dağıtım KIMLIĞINI tanımlar `IDispatch` .
 
 *vtProp*<br/>
-Alınacak özelliğin türünü belirtir. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
+Alınacak özelliğin türünü belirtir. Olası değerler için [Cotadispatchdriver:: InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)için açıklamalar bölümüne bakın.
 
 *pvProp*<br/>
-Özellik değerini alacak değişkenin adresi. *VtProp*tarafından belirtilen türe uygun olmalıdır.
+Özellik değerini alacak değişkenin adresi. Bu, *vtProp* tarafından belirtilen türle eşleşmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değer *pvProp*ile döndürülür.
+Değer, *pvProp* ile döndürülür.
 
-## <a name="colecontrolsitegetstyle"></a><a name="getstyle"></a>COleControlSite::GetStyle
+## <a name="colecontrolsitegetstyle"></a><a name="getstyle"></a> Copacontrolsıte:: GetStyle
 
-Denetim alanının stillerini alır.
+Denetim sitesinin stillerini alır.
 
 ```
 virtual DWORD GetStyle() const;
@@ -585,9 +586,9 @@ Pencerenin stilleri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olası değerlerin listesi için [Bkz. Windows Stilleri.](../../mfc/reference/styles-used-by-mfc.md#window-styles) Kontrol sitesinin genişletilmiş stillerini almak için [COleControlSite'yi arayın::GetExStyle.](#getexstyle)
+Olası değerler listesi için bkz. [Windows stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles). Denetim sitesinin genişletilmiş stillerini almak için [Cotacontrolsıte:: GetExStyle](#getexstyle)öğesini çağırın.
 
-## <a name="colecontrolsitegetwindowtext"></a><a name="getwindowtext"></a>COleControlSite::GetWindowText
+## <a name="colecontrolsitegetwindowtext"></a><a name="getwindowtext"></a> Coincontrolsıte:: GetWindowText
 
 Denetimin geçerli metnini alır.
 
@@ -597,16 +598,16 @@ virtual void GetWindowText(CString& str) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Str*<br/>
-Denetimin geçerli `CString` metnini içeren bir nesneye başvuru.
+*üstbilgisine*<br/>
+`CString`Denetimin geçerli metnini içeren bir nesneye başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim Resim Yazısı stok özelliğini destekliyorsa, bu değer döndürülür. Resim Yazısı stok özelliği desteklenmezse, Metin özelliğinin değeri döndürülür.
+Denetim, başlık stoğu özelliğini destekliyorsa bu değer döndürülür. Caption Stock özelliği desteklenmiyorsa, Text özelliğinin değeri döndürülür.
 
-## <a name="colecontrolsiteinvokehelper"></a><a name="invokehelper"></a>COleControlSite::InvokeHelper
+## <a name="colecontrolsiteinvokehelper"></a><a name="invokehelper"></a> Copacontrolsıte:: InvokeHelper
 
-*wFlags*tarafından belirtilen *bağlamda, dwDispID*tarafından belirtilen yöntem veya özelliği çağırır.
+*WFlags* tarafından belirtilen bağlamda *dwdıspıd* tarafından belirtilen yöntemi veya özelliği çağırır.
 
 ```
 virtual void AFX_CDECL InvokeHelper(
@@ -619,33 +620,33 @@ virtual void AFX_CDECL InvokeHelper(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
-Çağrıldırılmak üzere denetimin `IDispatch` arabiriminde bulunan özelliğin veya yöntemin sevk kimliğini tanımlar.
+*Dwdıspıd*<br/>
+Çağrılacak olan özelliğin veya yöntemin dağıtım KIMLIĞINI belirtir, denetimin `IDispatch` arabiriminde çağrılır.
 
 *wFlags*<br/>
-IDispatch'e yapılan çağrının bağlamını açıklayan bayraklar::Çağır. Olası *wFlags* değerleri `IDispatch::Invoke` için Windows SDK'ya bakın.
+IDispatch:: Invoke çağrısının bağlamını açıklayan bayraklar. Olası *wFlags* değerleri için Windows SDK bakın `IDispatch::Invoke` .
 
-*vtRet*<br/>
-İade değerinin türünü belirtir. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
+*Sanal tret*<br/>
+Dönüş değerinin türünü belirtir. Olası değerler için [Cotadispatchdriver:: InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)için açıklamalar bölümüne bakın.
 
 *pvRet*<br/>
-Özellik değerini veya iade değerini alacak değişkenin adresi. *VtRet*tarafından belirtilen türe uygun olmalıdır.
+Özellik değeri veya dönüş değeri alacak değişkenin adresi. *VtRet* tarafından belirtilen türle eşleşmesi gerekir.
 
-*pbParamInfo*<br/>
-*PbParamInfo'yu*izleyen parametrelerin türlerini belirten null-sonlandırılan bayt dizesini işaretçi. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
+*Pbparaınfo*<br/>
+*Pbparaınfo*'dan sonraki parametrelerin türlerini belirten, null ile sonlandırılmış bir bayt dizesi işaretçisi. Olası değerler için [Cotadispatchdriver:: InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)için açıklamalar bölümüne bakın.
 
 *...*<br/>
-*PbParamInfo'da*belirtilen türparametrelerin değişken listesi.
+*Pbparaınfo* içinde belirtilen türlerin değişken listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pbParamInfo* parametresi yönteme veya özelliğe geçirilen parametrelerin türlerini belirtir. Bağımsız değişken ler listesi ile temsil edilir ... sözdizimi bildiriminde.
+*Pbparaınfo* parametresi, yönteme veya özelliğe geçirilen parametrelerin türlerini belirtir. Bağımsız değişkenlerin değişken listesi tarafından temsil edilir... sözdizimi bildiriminde.
 
-Bu işlev parametreleri VARIANTARG değerlerine dönüştürür, `IDispatch::Invoke` ardından denetim yöntemini çağırır. Çağrı `IDispatch::Invoke` başarısız olursa, bu işlev bir özel durum atar. Tarafından döndürülen durum `IDispatch::Invoke` `DISP_E_EXCEPTION`kodu ise, bu `COleDispatchException` işlev bir nesne `COleException`atar, aksi takdirde bir .
+Bu işlev, parametreleri VARIANTARG değerlerine dönüştürür ve sonra `IDispatch::Invoke` denetimde yöntemi çağırır. Çağrısı `IDispatch::Invoke` başarısız olursa, bu işlev bir özel durum oluşturur. Tarafından döndürülen durum kodu ise `IDispatch::Invoke` `DISP_E_EXCEPTION` , bu işlev bir `COleDispatchException` nesnesi atar, aksi takdirde bir oluşturur `COleException` .
 
-## <a name="colecontrolsiteinvokehelperv"></a><a name="invokehelperv"></a>COleControlSite::InvokeHelperV
+## <a name="colecontrolsiteinvokehelperv"></a><a name="invokehelperv"></a> Copercontrolsite:: InvokeHelperV
 
-*wFlags*tarafından belirtilen *bağlamda, dwDispID*tarafından belirtilen yöntem veya özelliği çağırır.
+*WFlags* tarafından belirtilen bağlamda *dwdıspıd* tarafından belirtilen yöntemi veya özelliği çağırır.
 
 ```
 virtual void InvokeHelperV(
@@ -659,31 +660,31 @@ virtual void InvokeHelperV(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
-Çağrıldırılmak üzere denetimin `IDispatch` arabiriminde bulunan özelliğin veya yöntemin sevk kimliğini tanımlar.
+*Dwdıspıd*<br/>
+Çağrılacak olan özelliğin veya yöntemin dağıtım KIMLIĞINI belirtir, denetimin `IDispatch` arabiriminde çağrılır.
 
 *wFlags*<br/>
-IDispatch'e yapılan çağrının bağlamını açıklayan bayraklar::Çağır.
+IDispatch:: Invoke çağrısının bağlamını açıklayan bayraklar.
 
-*vtRet*<br/>
-İade değerinin türünü belirtir. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
+*Sanal tret*<br/>
+Dönüş değerinin türünü belirtir. Olası değerler için [Cotadispatchdriver:: InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)için açıklamalar bölümüne bakın.
 
 *pvRet*<br/>
-Özellik değerini veya iade değerini alacak değişkenin adresi. *VtRet*tarafından belirtilen türe uygun olmalıdır.
+Özellik değeri veya dönüş değeri alacak değişkenin adresi. *VtRet* tarafından belirtilen türle eşleşmesi gerekir.
 
-*pbParamInfo*<br/>
-*PbParamInfo'yu*izleyen parametrelerin türlerini belirten null-sonlandırılan bayt dizesini işaretçi. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
+*Pbparaınfo*<br/>
+*Pbparaınfo*'dan sonraki parametrelerin türlerini belirten, null ile sonlandırılmış bir bayt dizesi işaretçisi. Olası değerler için [Cotadispatchdriver:: InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)için açıklamalar bölümüne bakın.
 
-*Arglist*<br/>
-Değişken bağımsız değişken listesine işaretçi.
+*argList*<br/>
+Değişken bağımsız değişken listesi işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*pbParamInfo* parametresi yönteme veya özelliğe geçirilen parametrelerin türlerini belirtir. Çağrılan yöntem veya özellik için ekstra parametreler *va_list* parametresi kullanılarak geçirilebilir.
+*Pbparaınfo* parametresi, yönteme veya özelliğe geçirilen parametrelerin türlerini belirtir. Çağrılan yöntem veya özellik için ek parametreler *va_list* parametresi kullanılarak geçirilebilir.
 
-Genellikle, bu işlev tarafından `COleControlSite::InvokeHelper`çağrılır.
+Genellikle, bu işlev tarafından çağırılır `COleControlSite::InvokeHelper` .
 
-## <a name="colecontrolsiteisdefaultbutton"></a><a name="isdefaultbutton"></a>COleControlSite::IsDefaultButton
+## <a name="colecontrolsiteisdefaultbutton"></a><a name="isdefaultbutton"></a> Coincontrolsıte:: IsDefaultButton
 
 Denetimin varsayılan düğme olup olmadığını belirler.
 
@@ -693,11 +694,11 @@ BOOL IsDefaultButton();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim penceredeki varsayılan düğmeise sıfır yok, aksi takdirde sıfır.
+Denetim pencerede varsayılan düğme ise sıfır dışında bir değer.
 
-## <a name="colecontrolsiteiswindowenabled"></a><a name="iswindowenabled"></a>COleControlSite::IsWindowEnabled
+## <a name="colecontrolsiteiswindowenabled"></a><a name="iswindowenabled"></a> Copacontrolsıte:: IsWindowEnabled
 
-Denetim sitesinin etkin olup olmadığını belirler.
+Denetim sitesinin etkinleştirilip etkinleştirilmediğini belirler.
 
 ```
 virtual BOOL IsWindowEnabled() const;
@@ -705,13 +706,13 @@ virtual BOOL IsWindowEnabled() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim etkinse sıfır değil, aksi takdirde sıfır.
+Denetim etkinse sıfır sıfır, değilse sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değer, denetimin Etkin stok özelliğinden alınır.
+Değer, denetimin etkin stok özelliğinden alınır.
 
-## <a name="colecontrolsitem_biswindowless"></a><a name="m_biswindowless"></a>COleControlSite::m_bIsWindowless
+## <a name="colecontrolsitem_biswindowless"></a><a name="m_biswindowless"></a> Coincontrolsite:: m_bIsWindowless
 
 Nesnenin penceresiz bir denetim olup olmadığını belirler.
 
@@ -721,11 +722,11 @@ BOOL m_bIsWindowless;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin penceresi yoksa sıfır yok, aksi takdirde sıfır.
+Denetimde pencere yoksa sıfır dışında bir, değilse sıfır.
 
-## <a name="colecontrolsitem_ctlinfo"></a><a name="m_ctlinfo"></a>COleControlSite::m_ctlInfo
+## <a name="colecontrolsitem_ctlinfo"></a><a name="m_ctlinfo"></a> Coincontrolsite:: m_ctlInfo
 
-Klavye girişinin denetim tarafından nasıl işlendiğine ilişkin bilgiler.
+Klavye girişinin denetim tarafından nasıl işlendiği hakkında bilgi.
 
 ```
 CONTROLINFO m_ctlInfo;
@@ -733,19 +734,19 @@ CONTROLINFO m_ctlInfo;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu bilgiler [CONTROLINFO](/windows/win32/api/ocidl/ns-ocidl-controlinfo) yapısında depolanır.
+Bu bilgiler bir [Controlinınfo](/windows/win32/api/ocidl/ns-ocidl-controlinfo) yapısında saklanır.
 
-## <a name="colecontrolsitem_dweventsink"></a><a name="m_dweventsink"></a>COleControlSite::m_dwEventSink
+## <a name="colecontrolsitem_dweventsink"></a><a name="m_dweventsink"></a> Coincontrolsite:: m_dwEventSink
 
-Denetimin olay lavabosundaki bağlantı noktasının çerezini içerir.
+Denetimin olay havuzundan bağlantı noktasının tanımlama bilgisini içerir.
 
 ```
 DWORD m_dwEventSink;
 ```
 
-## <a name="colecontrolsitem_dwmiscstatus"></a><a name="m_dwmiscstatus"></a>COleControlSite::m_dwMiscStatus
+## <a name="colecontrolsitem_dwmiscstatus"></a><a name="m_dwmiscstatus"></a> Coincontrolsite:: m_dwMiscStatus
 
-Denetim hakkında çeşitli bilgiler içerir.
+Denetimle ilgili çeşitli bilgileri içerir.
 
 ```
 DWORD m_dwMiscStatus;
@@ -753,49 +754,49 @@ DWORD m_dwMiscStatus;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için Windows SDK'daki [OLEMISC'ye](/windows/win32/api/oleidl/ne-oleidl-olemisc)bakın.
+Daha fazla bilgi için Windows SDK [Olemisc](/windows/win32/api/oleidl/ne-oleidl-olemisc)bölümüne bakın.
 
-## <a name="colecontrolsitem_dwpropnotifysink"></a><a name="m_dwpropnotifysink"></a>COleControlSite::m_dwPropNotifySink
+## <a name="colecontrolsitem_dwpropnotifysink"></a><a name="m_dwpropnotifysink"></a> Coincontrolsite:: m_dwPropNotifySink
 
-[IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) çerezini içerir.
+[IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) tanımlama bilgisini içerir.
 
 ```
 DWORD m_dwPropNotifySink;
 ```
 
-## <a name="colecontrolsitem_dwstyle"></a><a name="m_dwstyle"></a>COleControlSite::m_dwStyle
+## <a name="colecontrolsitem_dwstyle"></a><a name="m_dwstyle"></a> Coincontrolsite:: m_dwStyle
 
-Denetimin Pencere stillerini içerir.
+Denetimin pencere stillerini içerir.
 
 ```
 DWORD m_dwStyle;
 ```
 
-## <a name="colecontrolsitem_hwnd"></a><a name="m_hwnd"></a>COleControlSite::m_hWnd
+## <a name="colecontrolsitem_hwnd"></a><a name="m_hwnd"></a> Coincontrolsite:: m_hWnd
 
-Denetimin HWND'sini veya denetim penceresizse NULL'u içerir.
+Denetimin HWND 'sini veya denetim penceresiz ise NULL değerini içerir.
 
 ```
 HWND m_hWnd;
 ```
 
-## <a name="colecontrolsitem_iidevents"></a><a name="m_iidevents"></a>COleControlSite::m_iidEvents
+## <a name="colecontrolsitem_iidevents"></a><a name="m_iidevents"></a> Coincontrolsite:: m_iidEvents
 
-Denetimin varsayılan olay lavabo arabiriminin arabirim kimliğini içerir.
+Denetimin varsayılan olay havuzu arabiriminin arabirim KIMLIĞINI içerir.
 
 ```
 IID m_iidEvents;
 ```
 
-## <a name="colecontrolsitem_nid"></a><a name="m_nid"></a>COleControlSite::m_nID
+## <a name="colecontrolsitem_nid"></a><a name="m_nid"></a> Coincontrolsite:: m_nID
 
-Denetimin iletişim öğesi kimliğini içerir.
+Denetimin iletişim kutusu öğe KIMLIĞINI içerir.
 
 ```
 UINT m_nID;
 ```
 
-## <a name="colecontrolsitem_pactiveobject"></a><a name="m_pactiveobject"></a>COleControlSite::m_pActiveObject
+## <a name="colecontrolsitem_pactiveobject"></a><a name="m_pactiveobject"></a> Coincontrolsite:: m_pActiveObject
 
 Denetimin [IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject) arabirimini içerir.
 
@@ -803,47 +804,47 @@ Denetimin [IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinpl
 LPOLEINPLACEACTIVEOBJECT m_pActiveObject;
 ```
 
-## <a name="colecontrolsitem_pctrlcont"></a><a name="m_pctrlcont"></a>COleControlSite::m_pCtrlCont
+## <a name="colecontrolsitem_pctrlcont"></a><a name="m_pctrlcont"></a> Coincontrolsite:: m_pCtrlCont
 
-Denetimin kapsayıcısını (formu temsil eder) içerir.
+Denetimin kapsayıcısını (formunu temsil eder) içerir.
 
 ```
 COleControlContainer* m_pCtrlCont;
 ```
 
-## <a name="colecontrolsitem_pinplaceobject"></a><a name="m_pinplaceobject"></a>COleControlSite::m_pInPlaceObject
+## <a name="colecontrolsitem_pinplaceobject"></a><a name="m_pinplaceobject"></a> Coincontrolsite:: m_pInPlaceObject
 
-Denetimin `IOleInPlaceObject` [IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) arabirimini içerir.
+`IOleInPlaceObject`Denetimin [IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) arabirimini içerir.
 
 ```
 LPOLEINPLACEOBJECT m_pInPlaceObject;
 ```
 
-## <a name="colecontrolsitem_pobject"></a><a name="m_pobject"></a>COleControlSite::m_pObject
+## <a name="colecontrolsitem_pobject"></a><a name="m_pobject"></a> Coincontrolsite:: m_pObject
 
-Denetimin `IOleObjectInterface` arabirimini içerir.
+`IOleObjectInterface`Denetimin arabirimini içerir.
 
 ```
 LPOLEOBJECT m_pObject;
 ```
 
-## <a name="colecontrolsitem_pwindowlessobject"></a><a name="m_pwindowlessobject"></a>COleControlSite::m_pWindowlessObject
+## <a name="colecontrolsitem_pwindowlessobject"></a><a name="m_pwindowlessobject"></a> Coincontrolsite:: m_pWindowlessObject
 
-Denetimin `IOleInPlaceObjectWindowless` [IOleInPlaceObjectWindowless](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) arabirimini içerir.
+`IOleInPlaceObjectWindowless`Denetimin [ıoleınplaceobjectpenceresiz](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) arabirimini içerir.
 
 ```
 IOleInPlaceObjectWindowless* m_pWindowlessObject;
 ```
 
-## <a name="colecontrolsitem_pwndctrl"></a><a name="m_pwndctrl"></a>COleControlSite::m_pWndCtrl
+## <a name="colecontrolsitem_pwndctrl"></a><a name="m_pwndctrl"></a> Coincontrolsite:: m_pWndCtrl
 
-Denetimin `CWnd` kendisini temsil eden nesneye bir işaretçi içerir.
+`CWnd`Denetimin kendisini temsil eden nesneye yönelik bir işaretçi içerir.
 
 ```
 CWnd* m_pWndCtrl;
 ```
 
-## <a name="colecontrolsitem_rect"></a><a name="m_rect"></a>COleControlSite::m_rect
+## <a name="colecontrolsitem_rect"></a><a name="m_rect"></a> Coincontrolsite:: m_rect
 
 Kapsayıcının penceresine göre denetimin sınırlarını içerir.
 
@@ -851,7 +852,7 @@ Kapsayıcının penceresine göre denetimin sınırlarını içerir.
 CRect m_rect;
 ```
 
-## <a name="colecontrolsitemodifystyle"></a><a name="modifystyle"></a>COleControlSite::ModifyStyle
+## <a name="colecontrolsitemodifystyle"></a><a name="modifystyle"></a> Coincontrolsıte:: ModifyStyle
 
 Denetimin stillerini değiştirir.
 
@@ -867,35 +868,35 @@ virtual BOOL ModifyStyle(
 *dwRemove*<br/>
 Geçerli pencere stillerinden kaldırılacak stiller.
 
-*dwEkle*<br/>
+*dwAdd*<br/>
 Geçerli pencere stillerinden eklenecek stiller.
 
-*Nflags*<br/>
-Pencere konumlandırma bayrakları. Olası değerlerin listesi için Windows SDK'daki [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) işlevine bakın.
+*nFlags*<br/>
+Pencere konumlandırma bayrakları. Olası değerler listesi için Windows SDK [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) işlevine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Stiller değiştirilirse sıfır yok, aksi takdirde sıfır.
+Stiller değiştirilirse sıfır dışında sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin stok Etkin özelliği, WS_DISABLED ayarına uyacak şekilde değiştirilir. Denetimin stok Border Style özelliği, WS_BORDER için istenen ayarın eşleşecek şekilde değiştirilir. Varsa, diğer tüm stiller doğrudan denetimin pencere koluna uygulanır.
+Denetimin stok etkin özelliği WS_DISABLED ayarıyla eşleşecek şekilde değiştirilecek. Denetimin hisse senedi kenarlık stili özelliği, WS_BORDER için istenen ayarla eşleşecek şekilde değiştirilecek. Diğer tüm stiller, varsa, denetimin pencere tanıtıcısına doğrudan uygulanır.
 
-Denetimin pencere stillerini değiştirir. Eklenecek veya çıkarılacak stiller bitwise OR ( &#124; ) işleci kullanılarak birleştirilebilir. Kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'daki [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) işlevine bakın.
+Denetimin pencere stillerini değiştirir. Eklenecek veya kaldırılacak stiller bit düzeyinde OR (&#124;) işleci kullanılarak birleştirilebilir. Kullanılabilir pencere stilleri hakkında daha fazla bilgi için Windows SDK [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) işlevine bakın.
 
-*nFlags* sıfır değilse, `ModifyStyle` Win32 işlevini `SetWindowPos`çağırır ve *nFlags'i* aşağıdaki dört bayrakla birleştirerek pencereyi yeniden çizer:
+*NFlags* sıfırdan farklı Ise, `ModifyStyle` Win32 Işlevini çağırır `SetWindowPos` ve *nFlags* 'i aşağıdaki dört bayraklı birleştirerek pencereyi yeniden çizer:
 
-- SWP_NOSIZE Geçerli boyutu korur.
+- SWP_NOSIZE geçerli boyutu korur.
 
-- SWP_NOMOVE Geçerli konumunu korur.
+- SWP_NOMOVE geçerli konumu korur.
 
-- SWP_NOZORDER Geçerli Z sırasını korur.
+- SWP_NOZORDER geçerli Z düzenini korur.
 
-- SWP_NOACTIVATE Pencereyi etkinleştirmez.
+- SWP_NOACTIVATE pencereyi etkinleştirmez.
 
-Bir pencerenin genişletilmiş stillerini değiştirmek için [ModifyStyleEx'i](#modifystyleex)arayın.
+Pencerenin genişletilmiş stillerini değiştirmek için, [ModifyStyleEx](#modifystyleex)' ı çağırın.
 
-## <a name="colecontrolsitemodifystyleex"></a><a name="modifystyleex"></a>COleControlSite::ModifyStyleEx
+## <a name="colecontrolsitemodifystyleex"></a><a name="modifystyleex"></a> Coincontrolsıte:: ModifyStyleEx
 
 Denetimin genişletilmiş stillerini değiştirir.
 
@@ -909,37 +910,37 @@ virtual BOOL ModifyStyleEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwRemove*<br/>
-Genişletilmiş stilleri geçerli pencere stilleri kaldırılacak.
+Geçerli pencere stillerinden kaldırılacak genişletilmiş stiller.
 
-*dwEkle*<br/>
+*dwAdd*<br/>
 Geçerli pencere stillerinden eklenecek genişletilmiş stiller.
 
-*Nflags*<br/>
-Pencere konumlandırma bayrakları. Olası değerlerin listesi için Windows SDK'daki [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) işlevine bakın.
+*nFlags*<br/>
+Pencere konumlandırma bayrakları. Olası değerler listesi için Windows SDK [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) işlevine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Stiller değiştirilirse sıfır yok, aksi takdirde sıfır.
+Stiller değiştirilirse sıfır dışında sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimin stok Görünümü özelliği, WS_EX_CLIENTEDGE ayarına uyacak şekilde değiştirilir. Diğer tüm genişletilmiş pencere stilleri, varsa doğrudan denetimin pencere koluna uygulanır.
+Denetimin hisse senedi görünümü özelliği WS_EX_CLIENTEDGE ayarıyla eşleşecek şekilde değiştirilecek. Diğer tüm genişletilmiş pencere stilleri, varsa, denetimin pencere tanıtıcısına doğrudan uygulanır.
 
-Denetim sitesi nesnesinin genişletilmiş stillerini değiştirir. Eklenecek veya çıkarılacak stiller bitwise OR ( &#124; ) işleci kullanılarak birleştirilebilir. Kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'daki [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) işlevine bakın.
+Denetim sitesi nesnesinin genişletilmiş stillerini değiştirir. Eklenecek veya kaldırılacak stiller bit düzeyinde OR (&#124;) işleci kullanılarak birleştirilebilir. Kullanılabilir pencere stilleri hakkında bilgi edinmek için Windows SDK [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) işlevine bakın.
 
-*nFlags* sıfır değilse, `ModifyStyleEx` Win32 işlevini `SetWindowPos`çağırır ve *nFlags'i* aşağıdaki dört bayrakla birleştirerek pencereyi yeniden çizer:
+*NFlags* sıfırdan farklı Ise, `ModifyStyleEx` Win32 Işlevini çağırır `SetWindowPos` ve *nFlags* 'i aşağıdaki dört bayraklı birleştirerek pencereyi yeniden çizer:
 
-- SWP_NOSIZE Geçerli boyutu korur.
+- SWP_NOSIZE geçerli boyutu korur.
 
-- SWP_NOMOVE Geçerli konumunu korur.
+- SWP_NOMOVE geçerli konumu korur.
 
-- SWP_NOZORDER Geçerli Z sırasını korur.
+- SWP_NOZORDER geçerli Z düzenini korur.
 
-- SWP_NOACTIVATE Pencereyi etkinleştirmez.
+- SWP_NOACTIVATE pencereyi etkinleştirmez.
 
-Pencerenin genişletilmiş stillerini değiştirmek için [ModifyStyle'ı](#modifystyle)arayın.
+Pencerenin genişletilmiş stillerini değiştirmek için, [ModifyStyle](#modifystyle)' ı çağırın.
 
-## <a name="colecontrolsitemovewindow"></a><a name="movewindow"></a>COleControlSite::MoveWindow
+## <a name="colecontrolsitemovewindow"></a><a name="movewindow"></a> Copacontrolsıte:: MoveWindow
 
 Denetimin konumunu değiştirir.
 
@@ -953,21 +954,21 @@ virtual void MoveWindow(
 
 ### <a name="parameters"></a>Parametreler
 
-*X*<br/>
-Pencerenin sol tarafının yeni konumu.
+*x*<br/>
+Pencerenin sol tarafındaki yeni konum.
 
-*Y*<br/>
-Pencerenin üst kısmındaki yeni konum.
+*Iz*<br/>
+Pencerenin üst öğesinin yeni konumu.
 
-*Nwidth*<br/>
+*nWidth*<br/>
 Pencerenin yeni genişliği
 
-*Nheight*<br/>
+*nHeight*<br/>
 Pencerenin yeni yüksekliği.
 
-## <a name="colecontrolsitequickactivate"></a><a name="quickactivate"></a>COleControlSite::QuickActivate
+## <a name="colecontrolsitequickactivate"></a><a name="quickactivate"></a> Copacontrolsite:: QuickActivate
 
-Hızlı, içerdiği denetimi etkinleştirir.
+İçerilen denetimi hızlı etkinleştirir.
 
 ```
 virtual BOOL QuickActivate();
@@ -975,17 +976,17 @@ virtual BOOL QuickActivate();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kontrol alanı etkinleştirildiyse sıfır yok, aksi takdirde sıfır.
+Denetim sitesi etkinleştirildiyse sıfır dışında sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, yalnızca kullanıcı denetimin oluşturma işlemini geçersiz kılıyorsa çağrılmalıdır.
+Bu işlev, yalnızca Kullanıcı denetimin oluşturma işlemini geçersiz kılıyorsa çağrılmalıdır.
 
-Hızlı `IPersist*::Load` `IPersist*::InitNew` etkinleştirme gerçekleştikten sonra ve yöntemler çağrılmalıdır. Denetim, hızlı etkinleştirme sırasında konteynerin lavabolarına bağlantılarını kurmalıdır. Ancak, bu bağlantılar çağrılana `IPersist*::Load` `IPersist*::InitNew` kadar canlı değildir.
+`IPersist*::Load`Ve `IPersist*::InitNew` yöntemleri hızlı etkinleştirme oluştuktan sonra çağrılmalıdır. Denetim, hızlı etkinleştirme sırasında kapsayıcının havuzları için bağlantı kurması gerekir. Ancak, bu bağlantılar, `IPersist*::Load` veya çağrılana kadar canlı değildir `IPersist*::InitNew` .
 
-## <a name="colecontrolsitesafesetproperty"></a><a name="safesetproperty"></a>COleControlSite::SafeSetProperty
+## <a name="colecontrolsitesafesetproperty"></a><a name="safesetproperty"></a> Copacontrolsite:: SafeSetProperty
 
-*dwDispID*tarafından belirtilen denetim özelliğini ayarlar.
+*Dwdıspıd* tarafından belirtilen denetim özelliğini ayarlar.
 
 ```
 virtual BOOL AFX_CDECL SafeSetProperty(
@@ -995,25 +996,25 @@ virtual BOOL AFX_CDECL SafeSetProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
-Denetimin `IDispatch` arabiriminde bulunan özelliğin veya yöntemin sevk kimliğini ayarlar.
+*Dwdıspıd*<br/>
+Denetimin arabirimindeki, ayarlanacak özelliğin veya metodun dağıtım KIMLIĞINI belirler `IDispatch` .
 
 *vtProp*<br/>
-Ayarlanacak özellik türünü belirtir. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
+Ayarlanacak özelliğin türünü belirtir. Olası değerler için [Cotadispatchdriver:: InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)için açıklamalar bölümüne bakın.
 
 *...*<br/>
-*vtProp*tarafından belirtilen türün tek bir parametresi.
+*VtProp* tarafından belirtilen türde tek bir parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde sıfır.
+Başarılı olursa sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Aksine `SetProperty` `SetPropertyV`ve , bir hata (varolmayan bir özellik ayarlamaya çalışırken gibi) karşılaşılan ise, hiçbir özel durum atılır.
+> Ve ' den farklı olarak `SetProperty` `SetPropertyV` , bir hatayla karşılaşılırsa (varolmayan bir özelliği ayarlamaya çalışmak gibi), hiçbir özel durum oluşturulmaz.
 
-## <a name="colecontrolsitesetdefaultbutton"></a><a name="setdefaultbutton"></a>COleControlSite::SetDefaultButton
+## <a name="colecontrolsitesetdefaultbutton"></a><a name="setdefaultbutton"></a> Coincontrolsıte:: SetDefaultButton
 
 Denetimi varsayılan düğme olarak ayarlar.
 
@@ -1023,17 +1024,17 @@ void SetDefaultButton(BOOL bDefault);
 
 ### <a name="parameters"></a>Parametreler
 
-*bVarsayılan*<br/>
-Denetim varsayılan düğme olacaksa sıfırolmayan; aksi takdirde sıfır.
+*bDefault*<br/>
+Denetimin varsayılan düğme olması halinde sıfır dışı; Aksi halde sıfır.
 
 ### <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Denetim, OLEMISC_ACTSLIKEBUTTON durum biti ayarlı olmalıdır.
+> Denetimde OLEMISC_ACTSLIKEBUTTON durum biti ayarlanmış olmalıdır.
 
-## <a name="colecontrolsitesetdlgctrlid"></a><a name="setdlgctrlid"></a>COleControlSite::SetDlgCtrlID
+## <a name="colecontrolsitesetdlgctrlid"></a><a name="setdlgctrlid"></a> Copacontrolsıte:: Setıdctrlıd
 
-Denetimin iletişim öğesi tanımlayıcısının değerini değiştirir.
+Denetimin iletişim kutusu öğesi tanımlayıcısının değerini değiştirir.
 
 ```
 virtual int SetDlgCtrlID(int nID);
@@ -1041,18 +1042,18 @@ virtual int SetDlgCtrlID(int nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
+*NID*<br/>
 Yeni tanımlayıcı değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, pencerenin önceki iletişim öğesi tanımlayıcısı; aksi takdirde 0.
+Başarılı olursa, pencerenin önceki iletişim kutusu öğe tanımlayıcısı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="colecontrolsitesetfocus"></a><a name="setfocus"></a>COleControlSite::SetFocus
+## <a name="colecontrolsitesetfocus"></a><a name="setfocus"></a> Coincontrolsıte:: SetFocus
 
-Odak denetime odaklanır.
+Odağı denetime ayarlar.
 
 ```
 virtual CWnd* SetFocus();
@@ -1061,16 +1062,16 @@ virtual CWnd* SetFocus(LPMSG lpmsg);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpmsg*<br/>
-[MSG yapısına](/windows/win32/api/winuser/ns-winuser-msg)işaretçi. Bu yapı, geçerli denetim `SetFocus` sitesinde bulunan denetim isteğini tetikleyen Windows iletisini içerir.
+*lpMsg*<br/>
+Bir [msg yapısına](/windows/win32/api/winuser/ns-winuser-msg)yönelik işaretçi. Bu yapı, `SetFocus` geçerli denetim sitesinde bulunan denetim için isteği tetikleyen Windows iletisini içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce odaklanmış olan pencereiçin bir işaretçi.
+Daha önce odaklanmış pencerenin işaretçisi.
 
-## <a name="colecontrolsitesetproperty"></a><a name="setproperty"></a>COleControlSite::SetProperty
+## <a name="colecontrolsitesetproperty"></a><a name="setproperty"></a> Copacontrolsıte:: SetProperty
 
-*dwDispID*tarafından belirtilen denetim özelliğini ayarlar.
+*Dwdıspıd* tarafından belirtilen denetim özelliğini ayarlar.
 
 ```
 virtual void AFX_CDECL SetProperty(
@@ -1080,24 +1081,24 @@ virtual void AFX_CDECL SetProperty(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
-Denetimin `IDispatch` arabiriminde bulunan özelliğin veya yöntemin sevk kimliğini ayarlar.
+*Dwdıspıd*<br/>
+Denetimin arabirimindeki, ayarlanacak özelliğin veya metodun dağıtım KIMLIĞINI belirler `IDispatch` .
 
 *vtProp*<br/>
-Ayarlanacak özellik türünü belirtir. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
+Ayarlanacak özelliğin türünü belirtir. Olası değerler için [Cotadispatchdriver:: InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)için açıklamalar bölümüne bakın.
 
 *...*<br/>
-*vtProp*tarafından belirtilen türün tek bir parametresi.
+*VtProp* tarafından belirtilen türde tek bir parametre.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `SetProperty` hatayla karşılaşırsa, bir özel durum atılır.
+`SetProperty`Bir hatayla karşılaşırsa, bir özel durum oluşturulur.
 
-Özel durum türü, özelliği veya yöntemi ayarlama girişiminin iade değerine göre belirlenir. İade değeri ise `DISP_E_EXCEPTION`, `COleDispatchExcpetion` a atılır; aksi `COleException`takdirde bir .
+Özel durum türü, özelliği veya yöntemi ayarlama girişiminin dönüş değeri tarafından belirlenir. Dönüş değeri ise `DISP_E_EXCEPTION` , bir oluşturulur `COleDispatchExcpetion` ; Aksi halde bir `COleException` .
 
-## <a name="colecontrolsitesetpropertyv"></a><a name="setpropertyv"></a>COleControlSite::SetPropertyV
+## <a name="colecontrolsitesetpropertyv"></a><a name="setpropertyv"></a> COleControlSite:: SetPropertyV
 
-*dwDispID*tarafından belirtilen denetim özelliğini ayarlar.
+*Dwdıspıd* tarafından belirtilen denetim özelliğini ayarlar.
 
 ```
 virtual void SetPropertyV(
@@ -1108,24 +1109,24 @@ virtual void SetPropertyV(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwDispID*<br/>
-Denetimin `IDispatch` arabiriminde bulunan özelliğin veya yöntemin sevk kimliğini ayarlar.
+*Dwdıspıd*<br/>
+Denetimin arabirimindeki, ayarlanacak özelliğin veya metodun dağıtım KIMLIĞINI belirler `IDispatch` .
 
 *vtProp*<br/>
-Ayarlanacak özellik türünü belirtir. Olası değerler için COleDispatchDriver için Açıklamalar bölümüne [bakın:InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper).
+Ayarlanacak özelliğin türünü belirtir. Olası değerler için [Cotadispatchdriver:: InvokeHelper](../../mfc/reference/coledispatchdriver-class.md#invokehelper)için açıklamalar bölümüne bakın.
 
-*Arglist*<br/>
-Bağımsız değişkenler listesine işaretçi.
+*argList*<br/>
+Bağımsız değişken listesi işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrılan yöntem veya özellik için ekstra parametreler *arg_list* parametresi kullanılarak geçirilebilir. Bir `SetProperty` hatayla karşılaşırsa, bir özel durum atılır.
+Çağrılan yöntem veya özellik için ek parametreler *arg_list* parametresi kullanılarak passeed olabilir. `SetProperty`Bir hatayla karşılaşırsa, bir özel durum oluşturulur.
 
-Özel durum türü, özelliği veya yöntemi ayarlama girişiminin iade değerine göre belirlenir. İade değeri ise `DISP_E_EXCEPTION`, `COleDispatchExcpetion` a atılır; aksi `COleException`takdirde bir .
+Özel durum türü, özelliği veya yöntemi ayarlama girişiminin dönüş değeri tarafından belirlenir. Dönüş değeri ise `DISP_E_EXCEPTION` , bir oluşturulur `COleDispatchExcpetion` ; Aksi halde bir `COleException` .
 
-## <a name="colecontrolsitesetwindowpos"></a><a name="setwindowpos"></a>COleControlSite::SetWindowPos
+## <a name="colecontrolsitesetwindowpos"></a><a name="setwindowpos"></a> Coincontrolsite:: SetWindowPos
 
-Denetim alanının boyutunu, konumunu ve Z sırasını ayarlar.
+Denetim sitesinin boyutunu, konumunu ve Z sırasını ayarlar.
 
 ```
 virtual BOOL SetWindowPos(
@@ -1140,30 +1141,30 @@ virtual BOOL SetWindowPos(
 ### <a name="parameters"></a>Parametreler
 
 *pWndInsertAfter*<br/>
-Pencereye bir işaretçi.
+Pencereye yönelik bir işaretçi.
 
-*X*<br/>
-Pencerenin sol tarafının yeni konumu.
+*x*<br/>
+Pencerenin sol tarafındaki yeni konum.
 
-*Y*<br/>
-Pencerenin üst kısmındaki yeni konum.
+*Iz*<br/>
+Pencerenin üst öğesinin yeni konumu.
 
-*Cx*<br/>
+*yazmaç*<br/>
 Pencerenin yeni genişliği
 
-*Cy*<br/>
+*lı*<br/>
 Pencerenin yeni yüksekliği.
 
-*Nflags*<br/>
-Pencere boyutlandırma ve konumlandırma bayraklarını belirtir. Olası değerler için Windows SDK'daki [SetWindowPos'un](/windows/win32/api/winuser/nf-winuser-setwindowpos) Açıklamalar bölümüne bakın.
+*nFlags*<br/>
+Pencere boyutlandırma ve konumlandırma bayraklarını belirtir. Olası değerler için, Windows SDK [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) için açıklamalar bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır sızı eğer başarılıysa, aksi takdirde sıfır.
+Başarılı olursa sıfır olmayan sıfır.
 
-## <a name="colecontrolsitesetwindowtext"></a><a name="setwindowtext"></a>COleControlSite::SetWindowText
+## <a name="colecontrolsitesetwindowtext"></a><a name="setwindowtext"></a> Coincontrolsıte:: SetWindowText
 
-Denetim sitesi için metni ayarlar.
+Denetim sitesinin metnini ayarlar.
 
 ```
 virtual void SetWindowText(LPCTSTR lpszString);
@@ -1172,15 +1173,15 @@ virtual void SetWindowText(LPCTSTR lpszString);
 ### <a name="parameters"></a>Parametreler
 
 *lpszString*<br/>
-Yeni başlık veya denetim metni olarak kullanılmak üzere null-sonlandırılan dize işaretçisi.
+Yeni başlık veya denetim metni olarak kullanılacak, null ile sonlandırılmış bir dize işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev ilk olarak Resim Yazısı stok özelliğini ayarlamaya çalışır. Resim Yazısı stok özelliği desteklenmezse, Metin özelliği bunun yerine ayarlanır.
+Bu işlev ilk olarak başlık stoğu özelliğini ayarlamaya çalışır. Caption Stock özelliği desteklenmiyorsa, bunun yerine Text özelliği ayarlanır.
 
-## <a name="colecontrolsiteshowwindow"></a><a name="showwindow"></a>COleControlSite::ShowWindow
+## <a name="colecontrolsiteshowwindow"></a><a name="showwindow"></a> Copacontrolsıte:: ShowWindow
 
-Pencerenin gösteri durumunu ayarlar.
+Pencerenin göster durumunu ayarlar.
 
 ```
 virtual BOOL ShowWindow(int nCmdShow);
@@ -1189,34 +1190,34 @@ virtual BOOL ShowWindow(int nCmdShow);
 ### <a name="parameters"></a>Parametreler
 
 *nCmdShow*<br/>
-Denetim alanının nasıl gösterilebildiğini belirtir. Aşağıdaki değerlerden biri olmalıdır:
+Denetim sitesinin nasıl gösterileceğini belirtir. Aşağıdaki değerlerden biri olmalıdır:
 
-- SW_HIDE Bu pencereyi gizler ve etkinleştirme yi başka bir pencereye geçirir.
+- SW_HIDE bu pencereyi gizler ve etkinleştirmeyi başka bir pencereye geçirir.
 
-- SW_MINIMIZE Pencereyi en aza indirir ve sistem listesindeki üst düzey pencereyi etkinleştirir.
+- SW_MINIMIZE pencereyi simge durumuna küçültür ve sistem listesinde en üst düzey pencereyi etkinleştirir.
 
-- SW_RESTORE Pencereyi etkinleştirir ve görüntüler. Pencere en aza indirgendiyse veya en üst düzeye çıkarılırsa, Windows pencereyi özgün boyutuna ve konumuna geri yükler.
+- SW_RESTORE, pencereyi etkinleştirir ve görüntüler. Pencere simge durumuna küçültülmüş veya ekranı kapladıysanız, Windows bu dosyayı özgün boyutuna ve konumuna geri yükler.
 
-- SW_SHOW Pencereyi etkinleştirir ve geçerli boyutu ve konumunda görüntüler.
+- SW_SHOW pencereyi etkinleştirir ve geçerli boyutu ve konumunda görüntüler.
 
-- SW_SHOWMAXIMIZED Pencereyi etkinleştirir ve en üst düzeybir pencere olarak görüntüler.
+- SW_SHOWMAXIMIZED pencereyi etkinleştirir ve ekranı kaplayan bir pencere olarak görüntüler.
 
-- SW_SHOWMINIMIZED Pencereyi etkinleştirir ve simge olarak görüntüler.
+- SW_SHOWMINIMIZED pencereyi etkinleştirir ve bir simge olarak görüntüler.
 
-- SW_SHOWMINNOACTIVE Pencereyi simge olarak görüntüler. Şu anda etkin olan pencere etkin kalır.
+- SW_SHOWMINNOACTIVE pencereyi bir simge olarak görüntüler. Şu anda etkin olan pencere etkin kalır.
 
-- SW_SHOWNA Pencereyi geçerli durumunda görüntüler. Şu anda etkin olan pencere etkin kalır.
+- SW_SHOWNA, pencereyi geçerli durumunda görüntüler. Şu anda etkin olan pencere etkin kalır.
 
-- SW_SHOWNOACTIVATE Pencereyi en son boyutu ve konumunda görüntüler. Şu anda etkin olan pencere etkin kalır.
+- SW_SHOWNOACTIVATE, pencereyi en son boyutunda ve konumunda görüntüler. Şu anda etkin olan pencere etkin kalır.
 
-- SW_SHOWNORMAL Pencereyi etkinleştirir ve görüntüler. Pencere en aza indirgendiyse veya en üst düzeye çıkarılırsa, Windows pencereyi özgün boyutuna ve konumuna geri yükler.
+- SW_SHOWNORMAL, pencereyi etkinleştirir ve görüntüler. Pencere simge durumuna küçültülmüş veya ekranı kapladıysanız, Windows bu dosyayı özgün boyutuna ve konumuna geri yükler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Pencere daha önce görünürse sıfırolmayan; Pencere daha önce gizlenmişse 0.
+Pencere daha önce görünür durumdaysa sıfır dışı; pencere daha önce gizliyse 0.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleControlContainer Sınıfı](../../mfc/reference/colecontrolcontainer-class.md)
+[CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Cotacontrolcontainer sınıfı](../../mfc/reference/colecontrolcontainer-class.md)

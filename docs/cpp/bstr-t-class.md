@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _bstr_t sınıfı'
 title: _bstr_t Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - _bstr_t class
 - BSTR object [C++], COM encapsulation
 ms.assetid: 58841fef-fe21-4a84-aab9-780262b5201f
-ms.openlocfilehash: f521681da10eeda3b8024b0865d5164021296353
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 562b8eb871ddcd63e7df70c84e61e80a5bf934b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838717"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229411"
 ---
 # <a name="_bstr_t-class"></a>_bstr_t Sınıfı
 
@@ -27,7 +28,7 @@ Bir `_bstr_t` nesne [BSTR veri türünü](/previous-versions/windows/desktop/aut
 |--|--|
 | [_bstr_t](../cpp/bstr-t-bstr-t.md) | Bir `_bstr_t` nesnesi oluşturur. |
 
-### <a name="operations"></a>Operations
+### <a name="operations"></a>İşlemler
 
 | İşlev | Açıklama |
 |--|--|
@@ -37,7 +38,7 @@ Bir `_bstr_t` nesne [BSTR veri türünü](/previous-versions/windows/desktop/aut
 | [Ayır](../cpp/bstr-t-detach.md) | `BSTR`Tarafından Sarmalanan bir döndürür `_bstr_t` ve öğesinden ayırır `BSTR` `_bstr_t` . |
 | [GetAddress](../cpp/bstr-t-getaddress.md) | `BSTR`Tarafından Sarmalanan öğesine işaret eder `_bstr_t` . |
 | [GetBSTR](../cpp/bstr-t-getbstr.md) | Tarafından Sarmalanan başlangıcını işaret eder `BSTR` `_bstr_t` . |
-| [uzunluklu](../cpp/bstr-t-length.md) | İçindeki karakter sayısını döndürür `_bstr_t` . |
+| [length](../cpp/bstr-t-length.md) | İçindeki karakter sayısını döndürür `_bstr_t` . |
 
 ### <a name="operators"></a>İşleçler
 

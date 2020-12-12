@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: wctrans'
 title: wctrans
 ms.date: 11/04/2016
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - characters, converting
 - wctrans function
 ms.assetid: 215404bf-6d60-489c-9ae9-880e6b586162
-ms.openlocfilehash: a75de3b699d0eb5ec6117d0f627e6a8ba34dbc62
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 59efe03f5851525d38c5ebd93520367338a97a79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229658"
 ---
 # <a name="wctrans"></a>wctrans
 
@@ -48,12 +49,12 @@ wctrans_t wctrans(
 
 ### <a name="parameters"></a>Parametreler
 
-*property*<br/>
+*özelliði*<br/>
 Geçerli dönüşümlerinden birini belirten bir dize.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yerel ayarın **LC_CTYPE** kategorisi, adı özellik dizesi *özelliği*ile eşleşen bir eşleme tanımlamıyorsa, işlev sıfır döndürür. Aksi halde, sonraki [towctrans](towctrans.md)çağrısının ikinci bağımsız değişkeni olarak kullanılmak üzere uygun olmayan bir değer döndürür.
+Geçerli yerel ayarın **LC_CTYPE** kategorisi, adı özellik dizesi *özelliği* ile eşleşen bir eşleme tanımlamaz, işlev sıfır döndürür. Aksi halde, sonraki [towctrans](towctrans.md)çağrısının ikinci bağımsız değişkeni olarak kullanılmak üzere uygun olmayan bir değer döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -70,7 +71,7 @@ Aşağıdaki çağrı çiftleri tüm yerel ayarlarda aynı davranışa sahiptir,
 
 |Yordam|Gerekli üst bilgi|
 |-------------|---------------------|
-|**wctrans**|\<wctype. h >|
+|**wctrans**|\<wctype.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -112,5 +113,5 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

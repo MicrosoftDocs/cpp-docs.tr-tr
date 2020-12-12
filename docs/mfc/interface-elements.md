@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: arabirim öğeleri'
 title: Arabirim Öğeleri
 ms.date: 11/19/2018
 helpviewer_keywords:
 - architecture [MFC], MFC Feature Pack
 - MFC Feature Pack, architecture
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-ms.openlocfilehash: 4d4d81287cb30a7d3608025085cdb3f9a208147a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a0aa762455f6bfe97d371244682c66dbd141a761
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228059"
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
 
@@ -28,7 +29,7 @@ Pencere yerleştirme işlevselliği, Visual Studio Grafik Kullanıcı arabirimin
 
 Denetim çubukları artık bölmeler olarak bilinir ve [CBasePane sınıfından](reference/cbasepane-class.md)türetilir. MFC 'nin önceki sürümlerinde denetim çubuklarının temel sınıfı idi `CControlBar` .
 
-Uygulama ana çerçevesi penceresi genellikle [CFrameWndEx sınıfı](reference/cframewndex-class.md) veya [CMDIFrameWndEx sınıfı](reference/cmdiframewndex-class.md)tarafından temsil edilir. Ana çerçeveye *Dock sitesi*denir. Bölmeler üç tür üst türden birine sahip olabilir: bir dock sitesi, Dock çubuğu veya bir mini çerçeve penceresi.
+Uygulama ana çerçevesi penceresi genellikle [CFrameWndEx sınıfı](reference/cframewndex-class.md) veya [CMDIFrameWndEx sınıfı](reference/cmdiframewndex-class.md)tarafından temsil edilir. Ana çerçeveye *Dock sitesi* denir. Bölmeler üç tür üst türden birine sahip olabilir: bir dock sitesi, Dock çubuğu veya bir mini çerçeve penceresi.
 
 İki tür bölme vardır: yeniden boyutlandırılabilir ve yeniden boyutlandırılabilir. Durum çubukları ve araç çubukları gibi yeniden boyutlandırılabilir bölmeler, bölümlendiricileri veya kaydırıcıları kullanarak yeniden boyutlandırılabilir. Yeniden boyutlandırılabilir bölmeler kapsayıcı oluşturabilir (bir bölme başka bir bölmeye yerleştirilebilir, aralarında bir bölme oluşturulabilir). Ancak, yeniden boyutlandırılabilir bölmeler, yerleştirme çubuklarına iliştirilemez (sabitlenemez).
 
@@ -50,7 +51,7 @@ Kayan bölme bir mini çerçeve penceresinde bulunur. Mini çerçeve pencereleri
 
 ## <a name="pane-dividers"></a>Bölme bölücüleri
 
-Bölme bölücüleri (kaydırıcıları veya bölümlendiricileri de adlandırılır) [CPaneDivider sınıfı](reference/cpanedivider-class.md)tarafından temsil edilir. Bir Kullanıcı bir bölmeyi oluşturduğunda, bölmenin yerleştirme sitesine veya başka bir bölmeye yerleştirilmiş olmasına bakılmaksızın çerçeve bölme bölücüleri oluşturur. Dock sitesine bir bölme noktaları, bölme ayracına *varsayılan bölme etiketi*olarak adlandırılır. Varsayılan bölme bölücü, Dock sitesindeki tüm yerleştirme bölmelerinin düzeninden sorumludur. Dock Manager, varsayılan bölme bölücülerin ve bir bölme listesinin bir listesini tutar. Dock yöneticileri, tüm yerleştirme bölmelerinin düzeninden sorumludur.
+Bölme bölücüleri (kaydırıcıları veya bölümlendiricileri de adlandırılır) [CPaneDivider sınıfı](reference/cpanedivider-class.md)tarafından temsil edilir. Bir Kullanıcı bir bölmeyi oluşturduğunda, bölmenin yerleştirme sitesine veya başka bir bölmeye yerleştirilmiş olmasına bakılmaksızın çerçeve bölme bölücüleri oluşturur. Dock sitesine bir bölme noktaları, bölme ayracına *varsayılan bölme etiketi* olarak adlandırılır. Varsayılan bölme bölücü, Dock sitesindeki tüm yerleştirme bölmelerinin düzeninden sorumludur. Dock Manager, varsayılan bölme bölücülerin ve bir bölme listesinin bir listesini tutar. Dock yöneticileri, tüm yerleştirme bölmelerinin düzeninden sorumludur.
 
 ## <a name="containers"></a>Kapsayıcılar
 
@@ -62,7 +63,7 @@ Varsayılan olarak, her biri `CDockablePane` otomatik gizleme özelliğini deste
 
 ## <a name="tabbed-control-bars-and-outlook-bars"></a>Sekmeli denetim çubukları ve Outlook çubukları
 
-[CMFCBaseTabCtrl sınıfı](reference/cmfcbasetabctrl-class.md) , bir sekmeli pencerenin temel işlevlerini çıkarılabilir sekmelerle uygular. Bir nesnesi kullanmak için `CMFCBaseTabCtrl` , uygulamanızda bir [CBaseTabbedPane sınıfı](reference/cbasetabbedpane-class.md) başlatın. `CBaseTabbedPane`, öğesinden türetilir `CDockablePane` ve bir nesneye yönelik bir işaretçi tutar `CMFCBaseTabCtrl` . , `CBaseTabbedPane` Kullanıcıların sekmeli Denetim çubuklarını yerleştirmeyi ve yeniden boyutlandırmasını sağlar. Yerleştirilmiş ve sekmeli Denetim çubuklarını dinamik olarak oluşturmak için [CDockablePane:: AttachToTabWnd](reference/cdockablepane-class.md#attachtotabwnd) kullanın.
+[CMFCBaseTabCtrl sınıfı](reference/cmfcbasetabctrl-class.md) , bir sekmeli pencerenin temel işlevlerini çıkarılabilir sekmelerle uygular. Bir nesnesi kullanmak için `CMFCBaseTabCtrl` , uygulamanızda bir [CBaseTabbedPane sınıfı](reference/cbasetabbedpane-class.md) başlatın. `CBaseTabbedPane` , öğesinden türetilir `CDockablePane` ve bir nesneye yönelik bir işaretçi tutar `CMFCBaseTabCtrl` . , `CBaseTabbedPane` Kullanıcıların sekmeli Denetim çubuklarını yerleştirmeyi ve yeniden boyutlandırmasını sağlar. Yerleştirilmiş ve sekmeli Denetim çubuklarını dinamik olarak oluşturmak için [CDockablePane:: AttachToTabWnd](reference/cdockablepane-class.md#attachtotabwnd) kullanın.
 
 Outlook çubuğu denetimi de sekmeli çubuklara dayalıdır. [CMFCOutlookBar sınıfı](reference/cmfcoutlookbar-class.md) öğesinden türetilir `CBaseTabbedPane` . Outlook çubuğu kullanma hakkında daha fazla bilgi için bkz. [CMFCOutlookBar sınıfı](reference/cmfcoutlookbar-class.md).
 

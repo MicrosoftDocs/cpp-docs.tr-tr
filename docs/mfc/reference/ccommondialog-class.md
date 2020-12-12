@@ -1,5 +1,6 @@
 ---
-title: CCommonDialog Sınıfı
+description: 'Daha fazla bilgi edinin: CCommonDialog sınıfı'
+title: CCommonDialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CCommonDialog
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CCommonDialog [MFC], CCommonDialog
 ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
-ms.openlocfilehash: 853a4756df3b70f4f33deb7159b4d1aee610092c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 927348982529f14eb0ad762019bb4463aaa77c99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227903"
 ---
-# <a name="ccommondialog-class"></a>CCommonDialog Sınıfı
+# <a name="ccommondialog-class"></a>CCommonDialog sınıfı
 
-Windows ortak iletişim iletişim lerinin işlevselliğini kapsülleyen sınıflar için taban sınıf.
+Windows ortak iletişim kutularının işlevselliğini kapsülleyen sınıflar için temel sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CCommonDialog : public CDialog
@@ -29,49 +30,49 @@ class CCommonDialog : public CDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CCommonDialog::CCommonDialog](#ccommondialog)|Bir `CCommonDialog` nesne inşa eder.|
+|[CCommonDialog:: Ccommoniletişim kutusu](#ccommondialog)|Bir `CCommonDialog` nesnesi oluşturur.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki sınıflar Windows ortak iletişim iletişim lerinin işlevselliğini kapsüller:
+Aşağıdaki sınıflar Windows ortak iletişim kutularının işlevlerini kapsülleyebilirsiniz:
 
-- [Cfiledialog](../../mfc/reference/cfiledialog-class.md)
+- [CFileDialog](../../mfc/reference/cfiledialog-class.md)
 
-- [Cfontdialog](../../mfc/reference/cfontdialog-class.md)
+- [CFontDialog](../../mfc/reference/cfontdialog-class.md)
 
-- [Ccolordialog](../../mfc/reference/ccolordialog-class.md)
+- [CColorDialog](../../mfc/reference/ccolordialog-class.md)
 
-- [Cpagesetupdialog](../../mfc/reference/cpagesetupdialog-class.md)
+- [CPageSetupDialog](../../mfc/reference/cpagesetupdialog-class.md)
 
-- [Cprintdialog](../../mfc/reference/cprintdialog-class.md)
+- [CPrintDialog](../../mfc/reference/cprintdialog-class.md)
 
 - [CPrintDialogEx](../../mfc/reference/cprintdialogex-class.md)
 
-- [Cfindreplacedialog](../../mfc/reference/cfindreplacedialog-class.md)
+- [CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md)
 
-- [COleDialog](../../mfc/reference/coledialog-class.md)
+- [Colet Iletişim kutusu](../../mfc/reference/coledialog-class.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cdialog](../../mfc/reference/cdialog-class.md)
+[CDialog](../../mfc/reference/cdialog-class.md)
 
 `CCommonDialog`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdlgs.h
+**Üstbilgi:** afxdlgs. h
 
-## <a name="ccommondialogccommondialog"></a><a name="ccommondialog"></a>CCommonDialog::CCommonDialog
+## <a name="ccommondialogccommondialog"></a><a name="ccommondialog"></a> CCommonDialog:: Ccommoniletişim kutusu
 
-Bir `CCommonDialog` nesne inşa eder.
+Bir `CCommonDialog` nesnesi oluşturur.
 
 ```
 explicit CCommonDialog(CWnd* pParentWnd);
@@ -80,20 +81,20 @@ explicit CCommonDialog(CWnd* pParentWnd);
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-İletişim nesnesinin ait olduğu üst veya sahip penceresi nesnesine [(CWnd](../../mfc/reference/cwnd-class.md)türünden) işaret eder. NULL ise, iletişim nesnesinin üst penceresi ana uygulama penceresine ayarlanır.
+İletişim nesnesinin ait olduğu üst veya sahip pencere nesnesine ( [CWnd](../../mfc/reference/cwnd-class.md)türü) işaret eder. NULL ise, iletişim kutusu nesnesinin ana penceresi ana uygulama penceresine ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. [CDialog::Tam](../../mfc/reference/cdialog-class.md#cdialog) bilgi için CDialog.
+Tüm bilgiler için bkz. [CDialog:: CDialog](../../mfc/reference/cdialog-class.md#cdialog) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CDialog Sınıfı](../../mfc/reference/cdialog-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CFileDialog Sınıfı](../../mfc/reference/cfiledialog-class.md)<br/>
-[CFontDialog Sınıfı](../../mfc/reference/cfontdialog-class.md)<br/>
-[CColorDialog Sınıfı](../../mfc/reference/ccolordialog-class.md)<br/>
-[CPageSetupDialog Sınıfı](../../mfc/reference/cpagesetupdialog-class.md)<br/>
-[CPrintDialog Sınıfı](../../mfc/reference/cprintdialog-class.md)<br/>
-[CFindReplaceDialog Sınıfı](../../mfc/reference/cfindreplacedialog-class.md)<br/>
-[COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)
+[CDialog sınıfı](../../mfc/reference/cdialog-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CFileDialog sınıfı](../../mfc/reference/cfiledialog-class.md)<br/>
+[CFontDialog sınıfı](../../mfc/reference/cfontdialog-class.md)<br/>
+[CColorDialog sınıfı](../../mfc/reference/ccolordialog-class.md)<br/>
+[CPageSetupDialog sınıfı](../../mfc/reference/cpagesetupdialog-class.md)<br/>
+[CPrintDialog sınıfı](../../mfc/reference/cprintdialog-class.md)<br/>
+[CFindReplaceDialog sınıfı](../../mfc/reference/cfindreplacedialog-class.md)<br/>
+[Coeldialog sınıfı](../../mfc/reference/coledialog-class.md)

@@ -1,5 +1,6 @@
 ---
-title: COleControlModule sınıfı
+description: 'Daha fazla bilgi edinin: Cotacontrolmodule sınıfı'
+title: Cotacontrolmodule sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - OleControlModule
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - COleControlModule class [MFC]
 - control modules [MFC]
 ms.assetid: 0721724d-d4af-4eda-ad34-5a2b27810dd4
-ms.openlocfilehash: f6d486c7bacb897d70d85414ac3d0bd0d13e447b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f88296b7c0e897f82227343b31ca2f639902256e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310402"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227487"
 ---
-# <a name="colecontrolmodule-class"></a>COleControlModule sınıfı
+# <a name="colecontrolmodule-class"></a>Cotacontrolmodule sınıfı
 
-Bir OLE denetim modülü nesnesi türettiğiniz taban sınıfı.
+OLE denetim modülü nesnesi türettiğiniz temel sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleControlModule : public CWinApp
@@ -28,9 +29,9 @@ class COleControlModule : public CWinApp
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, denetim modülü başlatmak için üye işlevleri sağlar. Microsoft Foundation sınıfları kullanan her bir OLE denetim modülü yalnızca türetilen bir nesne içerebilir `COleControlModule`. Diğer C++ genel nesneler oluşturulduğunda bu nesne oluşturulur. Türetilmiş bildirmek `COleControlModule` genel düzeyde nesne.
+Bu sınıf, denetim modülünüzü başlatmak için üye işlevleri sağlar. Microsoft Foundation sınıflarını kullanan her OLE denetim modülü, öğesinden türetilmiş bir nesne içerebilir `COleControlModule` . Bu nesne, diğer C++ Global nesneleri oluşturulduğunda oluşturulur. Türetilmiş `COleControlModule` nesneniz genel düzeyde bildirin.
 
-Kullanma hakkında daha fazla bilgi için `COleControlModule` sınıfı [CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı ve makale [ActiveX denetimlerini](../../mfc/mfc-activex-controls.md).
+Sınıfını kullanma hakkında daha fazla bilgi için `COleControlModule` bkz. [CWinApp](../../mfc/reference/cwinapp-class.md) sınıfı ve [ActiveX denetimleri](../../mfc/mfc-activex-controls.md)makalesi.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -46,9 +47,9 @@ Kullanma hakkında daha fazla bilgi için `COleControlModule` sınıfı [CWinApp
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxctl.h
+**Üst bilgi:** afxctl. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek TESTHELP](../../overview/visual-cpp-samples.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

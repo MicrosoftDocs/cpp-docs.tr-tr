@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Coelexception sınıfı'
 title: Cotaexception sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - COleException [MFC], Process
 - COleException [MFC], m_sc
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-ms.openlocfilehash: c82099d816bc8ee8c179e9d4656f474156a629a9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb11e9c285180c6e54701c210c5329714d7dccb0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233203"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227097"
 ---
 # <a name="coleexception-class"></a>Cotaexception sınıfı
 
 OLE işlemiyle ilgili bir özel durum koşulunu temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleException : public CException
@@ -61,7 +62,7 @@ Genel olarak, doğrudan bir nesne oluşturmamalıdır `COleException` ; bunun ye
 
 **Üstbilgi:** AfxDisp. h
 
-## <a name="coleexceptionm_sc"></a><a name="m_sc"></a>Cotaexception:: m_sc
+## <a name="coleexceptionm_sc"></a><a name="m_sc"></a> Cotaexception:: m_sc
 
 Bu veri üyesi, özel durumun nedenini gösteren OLE durum kodunu tutar.
 
@@ -79,7 +80,7 @@ SCODE hakkında daha fazla bilgi için bkz. Windows SDK [com hata kodları yapı
 
 [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]
 
-## <a name="coleexceptionprocess"></a><a name="process"></a>Cotaexception::P rocess
+## <a name="coleexceptionprocess"></a><a name="process"></a> Cotaexception::P rocess
 
 Yakalanan bir özel durumu OLE durum koduna çevirmek için **Process** member işlevini çağırın.
 

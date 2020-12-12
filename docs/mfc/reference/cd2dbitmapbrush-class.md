@@ -1,5 +1,6 @@
 ---
-title: CD2DBitmapFırça Sınıfı
+description: 'Daha fazla bilgi edinin: CD2DBitmapBrush Class'
+title: CD2DBitmapBrush sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DBitmapBrush
@@ -42,18 +43,18 @@ helpviewer_keywords:
 - CD2DBitmapBrush [MFC], m_pBitmapBrush
 - CD2DBitmapBrush [MFC], m_pBitmapBrushProperties
 ms.assetid: 46ebbe34-66e0-44c8-af1d-d129e851de5e
-ms.openlocfilehash: 8d0804c094204bc0e8ab420e20c8b6a6a35dc70a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a9d4c1955b1318ecb273482cd49025090bf97d3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227591"
 ---
-# <a name="cd2dbitmapbrush-class"></a>CD2DBitmapFırça Sınıfı
+# <a name="cd2dbitmapbrush-class"></a>CD2DBitmapBrush sınıfı
 
-ID2D1BitmapBrush için bir sarmalayıcı.
+ID2D1BitmapBrush için sarmalayıcı.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CD2DBitmapBrush : public CD2DBrush;
@@ -63,74 +64,74 @@ class CD2DBitmapBrush : public CD2DBrush;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CD2DBitmapBrush::CD2DBitmapBrush](#cd2dbitmapbrush)|Fazla Yüklendi. Dosyadan bir CD2DBitmapBrush nesnesi oluşturur.|
-|[CD2DBitmapBrush::~CD2DBitmapBrush](#dtor)|Yıkıcı. D2D bitmap fırça nesnesi yok edildiğinde çağrılır.|
+|[CD2DBitmapBrush:: ~ CD2DBitmapBrush](#dtor)|Yok edicisi. Bir D2D bit eşlem fırçası nesnesi yok edildiğinde çağırılır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DBitmapBrush::Ekle](#attach)|Nesneye varolan kaynak arabirimi ataştırır|
-|[CD2DBitmapBrush::Oluştur](#create)|BIR CD2DBitmapBrush oluşturur. [(CD2DResource geçersiz kılar::Oluştur](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DBitmapBrush::Destroy](#destroy)|BIR CD2DBitmapBrush nesnesini yok eder. [(Overrides CD2DBrush::Destroy](../../mfc/reference/cd2dbrush-class.md#destroy).)|
-|[CD2DBitmapBrush::Detach](#detach)|Kaynak arabirimini nesneden ayırıyor|
-|[CD2DBitmapBrush::Alın](#get)|ID2D1BitmapBrush arabirimini döndürür|
-|[CD2DBitmapBrush::GetBitmap](#getbitmap)|Bu fırçanın boyamak için kullandığı bit eşlemi kaynağını alır|
-|[CD2DBitmapBrush::GetExtendModeX](#getextendmodex)|Fırçanın bit haritasını geçen alanları yatay olarak kutulama yöntemini alır|
-|[CD2DBitmapBrush::GetExtendModeY](#getextendmodey)|Fırçanın bit eşleminin ötesine uzanan alanları dikey olarak kutulama yöntemini alır|
-|[CD2DBitmapBrush::GetInterpolationMode](#getinterpolationmode)|Fırça bit eşlemi ölçeklendirildiğinde veya döndürüldüğünde kullanılan enterpolasyon yöntemini alır|
-|[CD2DBitmapBrush::SetBitmap](#setbitmap)|Bu fırçanın boyamak için kullandığı bit eşlemi kaynağını belirtir|
-|[CD2DBitmapBrush::SetExtendModeX](#setextendmodex)|Fırçanın bit haritasını geçen alanları yatay olarak nasıl kutuladığını belirtir|
-|[CD2DBitmapBrush::SetExtendModeY](#setextendmodey)|Fırçanın bit eşleminin ötesine uzanan alanları dikey olarak nasıl kutuladığını belirtir|
-|[CD2DBitmapBrush::SetInterpolationMode](#setinterpolationmode)|Fırça bit eşlemi ölçeklendiğinde veya döndürüldüğünde kullanılan enterpolasyon modunu belirtir|
+|[CD2DBitmapBrush:: Attach](#attach)|Varolan kaynak arabirimini nesneye iliştirir|
+|[CD2DBitmapBrush:: Create](#create)|Bir CD2DBitmapBrush oluşturur. (Geçersiz kılmalar [CD2DResource:: Create](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DBitmapBrush::D estroy](#destroy)|Bir CD2DBitmapBrush nesnesini yok eder. (Geçersiz kılmalar [CD2DBrush::D estroy](../../mfc/reference/cd2dbrush-class.md#destroy).)|
+|[CD2DBitmapBrush::D etach](#detach)|Nesneden kaynak arabirimini ayırır|
+|[CD2DBitmapBrush:: Get](#get)|ID2D1BitmapBrush arabirimini döndürür|
+|[CD2DBitmapBrush:: GetBitmap](#getbitmap)|Bu fırçanın boyamak için kullandığı bit eşlem kaynağını alır|
+|[CD2DBitmapBrush:: Getbıdmodex](#getextendmodex)|Fırçanın, bit eşlemden daha fazla genişleyen olan bu alanlara yatay olarak döşeme yaptığı yöntemi alır|
+|[CD2DBitmapBrush:: Gebir Dmodey](#getextendmodey)|Fırçanın, bit eşlemden daha fazla genişleyen olan bu bölgeleri dikey olarak döşeme yöntemini alır|
+|[CD2DBitmapBrush:: Getınterlationmode](#getinterpolationmode)|Fırça bit eşlemi ölçeklendirildiğinde veya döndürüldüğünde kullanılan enterpolasyon yöntemini alır|
+|[CD2DBitmapBrush:: SetBit eşlem](#setbitmap)|Bu fırçanın boyamak için kullandığı bit eşlem kaynağını belirtir|
+|[CD2DBitmapBrush:: Setbıdmodex](#setextendmodex)|Fırçanın, bit eşlemden daha fazla genişleyen bu alanlara yatay olarak nasıl döşeme gösterdiğini belirtir|
+|[CD2DBitmapBrush:: Sedtu Dmodey](#setextendmodey)|Fırçanın, bit eşlemden daha fazla genişleyen olan bu alanların dikey olarak nasıl taşmadığını belirtir|
+|[CD2DBitmapBrush:: Setınterlationmode](#setinterpolationmode)|Fırça bit eşlemi ölçeklendirildiğinde veya döndürüldüğünde kullanılan enterpolasyon modunu belirtir|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DBitmapBrush::CommonInit](#commoninit)|Nesneyi başharfe alar|
+|[CD2DBitmapBrush:: CommonInit](#commoninit)|Nesneyi başlatır|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DBitmapBrush::operatör ID2D1BitmapBrush*](#operator_id2d1bitmapbrush_star)|ID2D1BitmapBrush arabirimini döndürür|
+|[CD2DBitmapBrush:: operator ID2D1BitmapBrush *](#operator_id2d1bitmapbrush_star)|ID2D1BitmapBrush arabirimini döndürür|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DBitmapFırça::m_pBitmap](#m_pbitmap)|Bir işaretçiyi CD2DBitmap nesnesine depolar.|
-|[CD2DBitmapFırça::m_pBitmapBrush](#m_pbitmapbrush)|Bir işaretçiyi ID2D1BitmapBrush nesnesine depolar.|
-|[CD2DBitmapFırça::m_pBitmapBrushProperties](#m_pbitmapbrushproperties)|Bitmap fırça özellikleri.|
+|[CD2DBitmapBrush:: m_pBitmap](#m_pbitmap)|Bir CD2DBitmap nesnesine bir işaretçi depolar.|
+|[CD2DBitmapBrush:: m_pBitmapBrush](#m_pbitmapbrush)|Bir ID2D1BitmapBrush nesnesine bir işaretçi depolar.|
+|[CD2DBitmapBrush:: m_pBitmapBrushProperties](#m_pbitmapbrushproperties)|Bit eşlem fırçası özellikleri.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[CD2DKaynak](../../mfc/reference/cd2dresource-class.md)
+[CD2DResource](../../mfc/reference/cd2dresource-class.md)
 
-[CD2DFırça](../../mfc/reference/cd2dbrush-class.md)
+[CD2DBrush](../../mfc/reference/cd2dbrush-class.md)
 
 `CD2DBitmapBrush`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget. h
 
-## <a name="cd2dbitmapbrushcd2dbitmapbrush"></a><a name="dtor"></a>CD2DBitmapBrush::~CD2DBitmapBrush
+## <a name="cd2dbitmapbrushcd2dbitmapbrush"></a><a name="dtor"></a> CD2DBitmapBrush:: ~ CD2DBitmapBrush
 
-Yıkıcı. D2D bitmap fırça nesnesi yok edildiğinde çağrılır.
+Yok edicisi. Bir D2D bit eşlem fırçası nesnesi yok edildiğinde çağırılır.
 
 ```
 virtual ~CD2DBitmapBrush();
 ```
 
-## <a name="cd2dbitmapbrushattach"></a><a name="attach"></a>CD2DBitmapBrush::Ekle
+## <a name="cd2dbitmapbrushattach"></a><a name="attach"></a> CD2DBitmapBrush:: Attach
 
-Nesneye varolan kaynak arabirimi ataştırır
+Varolan kaynak arabirimini nesneye iliştirir
 
 ```cpp
 void Attach(ID2D1BitmapBrush* pResource);
@@ -138,12 +139,12 @@ void Attach(ID2D1BitmapBrush* pResource);
 
 ### <a name="parameters"></a>Parametreler
 
-*pKaynak*<br/>
-Varolan kaynak arabirimi. NULL olamaz
+*pResource*<br/>
+Mevcut kaynak arabirimi. NULL olamaz
 
-## <a name="cd2dbitmapbrushcd2dbitmapbrush"></a><a name="cd2dbitmapbrush"></a>CD2DBitmapBrush::CD2DBitmapBrush
+## <a name="cd2dbitmapbrushcd2dbitmapbrush"></a><a name="cd2dbitmapbrush"></a> CD2DBitmapBrush::CD2DBitmapBrush
 
-BIR CD2DBitmapBrush nesnesi oluşturur.
+Bir CD2DBitmapBrush nesnesi oluşturur.
 
 ```
 CD2DBitmapBrush(
@@ -173,32 +174,32 @@ CD2DBitmapBrush(
 ### <a name="parameters"></a>Parametreler
 
 *pParentTarget*<br/>
-İşleme hedefine işaretçi.
+İşleme hedefi işaretçisi.
 
-*pBitmapBrushProperties*<br/>
-Genişletme modlarına ve bitmap fırçasının enterpolasyon moduna işaretçi.
+*Pbitmapbrühproperties*<br/>
+Bit eşlem fırçasının uzatma modlarına ve ilişkilendirme moduna yönelik bir işaretçi.
 
-*pBrushProperties*<br/>
-Bir fırçanın opaklığına ve dönüşümüne işaret eden bir işaretçi.
+*Pbrühproperties*<br/>
+Fırçaya yönelik opaklık ve dönüştürme işaretçisi.
 
 *bAutoDestroy*<br/>
-Nesnenin sahibi (pParentTarget) tarafından yok edileceğini gösterir.
+Nesnenin sahip tarafından (pParentTarget) yok edileceği anlamına gelir.
 
-*uiResID*<br/>
-Kaynağın kaynak kimlik numarası.
+*Uırestıd*<br/>
+Kaynağın kaynak KIMLIĞI numarası.
 
 *lpszType*<br/>
-Kaynak türünü içeren null-sonlandırılan dize işaretçi.
+Kaynak türünü içeren, null ile sonlandırılmış bir dize işaretçisi.
 
-*boyutDest*<br/>
-Bit eşleninhedef boyutu.
+*sizeDest*<br/>
+Bit eşlemin hedef boyutu.
 
 *lpszImagePath*<br/>
-Dosya nın adını içeren null-sonlandırılan dize işaretçi.
+Dosya adını içeren, null ile sonlandırılmış bir dize işaretçisi.
 
-## <a name="cd2dbitmapbrushcommoninit"></a><a name="commoninit"></a>CD2DBitmapBrush::CommonInit
+## <a name="cd2dbitmapbrushcommoninit"></a><a name="commoninit"></a> CD2DBitmapBrush:: CommonInit
 
-Nesneyi başharfe alar
+Nesneyi başlatır
 
 ```cpp
 void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
@@ -206,12 +207,12 @@ void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
 
 ### <a name="parameters"></a>Parametreler
 
-*pBitmapBrushProperties*<br/>
-Bitmap fırça özellikleri için bir işaretçi.
+*Pbitmapbrühproperties*<br/>
+Bit eşlem fırçası özelliklerine yönelik bir işaretçi.
 
-## <a name="cd2dbitmapbrushcreate"></a><a name="create"></a>CD2DBitmapBrush::Oluştur
+## <a name="cd2dbitmapbrushcreate"></a><a name="create"></a> CD2DBitmapBrush:: Create
 
-BIR CD2DBitmapBrush oluşturur.
+Bir CD2DBitmapBrush oluşturur.
 
 ```
 virtual HRESULT Create(CRenderTarget* pRenderTarget);
@@ -220,23 +221,23 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 ### <a name="parameters"></a>Parametreler
 
 *pRenderTarget*<br/>
-İşleme hedefine işaretçi.
+İşleme hedefi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-## <a name="cd2dbitmapbrushdestroy"></a><a name="destroy"></a>CD2DBitmapBrush::Destroy
+## <a name="cd2dbitmapbrushdestroy"></a><a name="destroy"></a> CD2DBitmapBrush::D estroy
 
-BIR CD2DBitmapBrush nesnesini yok eder.
+Bir CD2DBitmapBrush nesnesini yok eder.
 
 ```
 virtual void Destroy();
 ```
 
-## <a name="cd2dbitmapbrushdetach"></a><a name="detach"></a>CD2DBitmapBrush::Detach
+## <a name="cd2dbitmapbrushdetach"></a><a name="detach"></a> CD2DBitmapBrush::D etach
 
-Kaynak arabirimini nesneden ayırıyor
+Nesneden kaynak arabirimini ayırır
 
 ```
 ID2D1BitmapBrush* Detach();
@@ -244,9 +245,9 @@ ID2D1BitmapBrush* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ayrılmış kaynak arabirimine işaretçi.
+Ayrılan kaynak arabirimine yönelik işaretçi.
 
-## <a name="cd2dbitmapbrushget"></a><a name="get"></a>CD2DBitmapBrush::Alın
+## <a name="cd2dbitmapbrushget"></a><a name="get"></a> CD2DBitmapBrush:: Get
 
 ID2D1BitmapBrush arabirimini döndürür
 
@@ -256,11 +257,11 @@ ID2D1BitmapBrush* Get();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne henüz başharfe çevrilmediyse ID2D1BitmapBrush arabirimine veya NULL'a işaretçi.
+ID2D1BitmapBrush arabirimine yönelik işaretçi veya nesne henüz başlatılamıyorsa NULL.
 
-## <a name="cd2dbitmapbrushgetbitmap"></a><a name="getbitmap"></a>CD2DBitmapBrush::GetBitmap
+## <a name="cd2dbitmapbrushgetbitmap"></a><a name="getbitmap"></a> CD2DBitmapBrush:: GetBitmap
 
-Bu fırçanın boyamak için kullandığı bit eşlemi kaynağını alır
+Bu fırçanın boyamak için kullandığı bit eşlem kaynağını alır
 
 ```
 CD2DBitmap* GetBitmap();
@@ -268,11 +269,11 @@ CD2DBitmap* GetBitmap();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne henüz başharfe çevrilmediyse CD2DBitmap nesnesine veya NULL'a işaretçi.
+CD2DBitmap nesnesine işaretçi veya nesne henüz başlatılamıyorsa NULL.
 
-## <a name="cd2dbitmapbrushgetextendmodex"></a><a name="getextendmodex"></a>CD2DBitmapBrush::GetExtendModeX
+## <a name="cd2dbitmapbrushgetextendmodex"></a><a name="getextendmodex"></a> CD2DBitmapBrush:: Getbıdmodex
 
-Fırçanın bit haritasını geçen alanları yatay olarak kutulama yöntemini alır
+Fırçanın, bit eşlemden daha fazla genişleyen olan bu alanlara yatay olarak döşeme yaptığı yöntemi alır
 
 ```
 D2D1_EXTEND_MODE GetExtendModeX() const;
@@ -280,11 +281,11 @@ D2D1_EXTEND_MODE GetExtendModeX() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fırçanın bit haritasını geçen alanları yatay olarak nasıl kutuladığını belirten bir değer
+Fırçanın, bit eşlemden daha fazla genişleyen bu alanlara yatay olarak nasıl döşeme gösterdiğini belirten bir değer
 
-## <a name="cd2dbitmapbrushgetextendmodey"></a><a name="getextendmodey"></a>CD2DBitmapBrush::GetExtendModeY
+## <a name="cd2dbitmapbrushgetextendmodey"></a><a name="getextendmodey"></a> CD2DBitmapBrush:: Gebir Dmodey
 
-Fırçanın bit eşleminin ötesine uzanan alanları dikey olarak kutulama yöntemini alır
+Fırçanın, bit eşlemden daha fazla genişleyen olan bu bölgeleri dikey olarak döşeme yöntemini alır
 
 ```
 D2D1_EXTEND_MODE GetExtendModeY() const;
@@ -292,9 +293,9 @@ D2D1_EXTEND_MODE GetExtendModeY() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Fırçanın bit haritasını geçen alanları dikey olarak nasıl kutuladığını belirten bir değer
+Fırçanın, bit eşlemden daha fazla genişleyen bu alanlara dikey olarak nasıl döşeme gösterdiğini belirten bir değer
 
-## <a name="cd2dbitmapbrushgetinterpolationmode"></a><a name="getinterpolationmode"></a>CD2DBitmapBrush::GetInterpolationMode
+## <a name="cd2dbitmapbrushgetinterpolationmode"></a><a name="getinterpolationmode"></a> CD2DBitmapBrush:: Getınterlationmode
 
 Fırça bit eşlemi ölçeklendirildiğinde veya döndürüldüğünde kullanılan enterpolasyon yöntemini alır
 
@@ -306,31 +307,31 @@ D2D1_BITMAP_INTERPOLATION_MODE GetInterpolationMode() const;
 
 Fırça bit eşlemi ölçeklendirildiğinde veya döndürüldüğünde kullanılan enterpolasyon yöntemi
 
-## <a name="cd2dbitmapbrushm_pbitmap"></a><a name="m_pbitmap"></a>CD2DBitmapFırça::m_pBitmap
+## <a name="cd2dbitmapbrushm_pbitmap"></a><a name="m_pbitmap"></a> CD2DBitmapBrush:: m_pBitmap
 
-Bir işaretçiyi CD2DBitmap nesnesine depolar.
+Bir CD2DBitmap nesnesine bir işaretçi depolar.
 
 ```
 CD2DBitmap* m_pBitmap;
 ```
 
-## <a name="cd2dbitmapbrushm_pbitmapbrush"></a><a name="m_pbitmapbrush"></a>CD2DBitmapFırça::m_pBitmapBrush
+## <a name="cd2dbitmapbrushm_pbitmapbrush"></a><a name="m_pbitmapbrush"></a> CD2DBitmapBrush:: m_pBitmapBrush
 
-Bir işaretçiyi ID2D1BitmapBrush nesnesine depolar.
+Bir ID2D1BitmapBrush nesnesine bir işaretçi depolar.
 
 ```
 ID2D1BitmapBrush* m_pBitmapBrush;
 ```
 
-## <a name="cd2dbitmapbrushm_pbitmapbrushproperties"></a><a name="m_pbitmapbrushproperties"></a>CD2DBitmapFırça::m_pBitmapBrushProperties
+## <a name="cd2dbitmapbrushm_pbitmapbrushproperties"></a><a name="m_pbitmapbrushproperties"></a> CD2DBitmapBrush:: m_pBitmapBrushProperties
 
-Bitmap fırça özellikleri.
+Bit eşlem fırçası özellikleri.
 
 ```
 D2D1_BITMAP_BRUSH_PROPERTIES* m_pBitmapBrushProperties;
 ```
 
-## <a name="cd2dbitmapbrushoperator-id2d1bitmapbrush"></a><a name="operator_id2d1bitmapbrush_star"></a>CD2DBitmapBrush::operatör ID2D1BitmapBrush*
+## <a name="cd2dbitmapbrushoperator-id2d1bitmapbrush"></a><a name="operator_id2d1bitmapbrush_star"></a> CD2DBitmapBrush:: operator ID2D1BitmapBrush *
 
 ID2D1BitmapBrush arabirimini döndürür
 
@@ -340,11 +341,11 @@ operator ID2D1BitmapBrush*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne henüz başharfe çevrilmediyse ID2D1BitmapBrush arabirimine veya NULL'a işaretçi.
+ID2D1BitmapBrush arabirimine yönelik işaretçi veya nesne henüz başlatılamıyorsa NULL.
 
-## <a name="cd2dbitmapbrushsetbitmap"></a><a name="setbitmap"></a>CD2DBitmapBrush::SetBitmap
+## <a name="cd2dbitmapbrushsetbitmap"></a><a name="setbitmap"></a> CD2DBitmapBrush:: SetBit eşlem
 
-Bu fırçanın boyamak için kullandığı bit eşlemi kaynağını belirtir
+Bu fırçanın boyamak için kullandığı bit eşlem kaynağını belirtir
 
 ```cpp
 void SetBitmap(CD2DBitmap* pBitmap);
@@ -352,12 +353,12 @@ void SetBitmap(CD2DBitmap* pBitmap);
 
 ### <a name="parameters"></a>Parametreler
 
-*pBitmap*<br/>
-Fırça tarafından kullanılan bitmap kaynağı
+*Pbımap*<br/>
+Fırça tarafından kullanılan bit eşlem kaynağı
 
-## <a name="cd2dbitmapbrushsetextendmodex"></a><a name="setextendmodex"></a>CD2DBitmapBrush::SetExtendModeX
+## <a name="cd2dbitmapbrushsetextendmodex"></a><a name="setextendmodex"></a> CD2DBitmapBrush:: Setbıdmodex
 
-Fırçanın bit haritasını geçen alanları yatay olarak nasıl kutuladığını belirtir
+Fırçanın, bit eşlemden daha fazla genişleyen bu alanlara yatay olarak nasıl döşeme gösterdiğini belirtir
 
 ```cpp
 void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
@@ -366,11 +367,11 @@ void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
 ### <a name="parameters"></a>Parametreler
 
 *extendModeX*<br/>
-Fırçanın bit haritasını geçen alanları yatay olarak nasıl kutuladığını belirten bir değer
+Fırçanın, bit eşlemden daha fazla genişleyen bu alanlara yatay olarak nasıl döşeme gösterdiğini belirten bir değer
 
-## <a name="cd2dbitmapbrushsetextendmodey"></a><a name="setextendmodey"></a>CD2DBitmapBrush::SetExtendModeY
+## <a name="cd2dbitmapbrushsetextendmodey"></a><a name="setextendmodey"></a> CD2DBitmapBrush:: Sedtu Dmodey
 
-Fırçanın bit eşleminin ötesine uzanan alanları dikey olarak nasıl kutuladığını belirtir
+Fırçanın, bit eşlemden daha fazla genişleyen olan bu alanların dikey olarak nasıl taşmadığını belirtir
 
 ```cpp
 void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
@@ -379,11 +380,11 @@ void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
 ### <a name="parameters"></a>Parametreler
 
 *extendModeY*<br/>
-Fırçanın bit haritasını geçen alanları dikey olarak nasıl kutuladığını belirten bir değer
+Fırçanın, bit eşlemden daha fazla genişleyen bu alanlara dikey olarak nasıl döşeme gösterdiğini belirten bir değer
 
-## <a name="cd2dbitmapbrushsetinterpolationmode"></a><a name="setinterpolationmode"></a>CD2DBitmapBrush::SetInterpolationMode
+## <a name="cd2dbitmapbrushsetinterpolationmode"></a><a name="setinterpolationmode"></a> CD2DBitmapBrush:: Setınterlationmode
 
-Fırça bit eşlemi ölçeklendiğinde veya döndürüldüğünde kullanılan enterpolasyon modunu belirtir
+Fırça bit eşlemi ölçeklendirildiğinde veya döndürüldüğünde kullanılan enterpolasyon modunu belirtir
 
 ```cpp
 void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
@@ -391,7 +392,7 @@ void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 
 ### <a name="parameters"></a>Parametreler
 
-*interpolasyonMode*<br/>
+*Enterpolationmode*<br/>
 Fırça bit eşlemi ölçeklendirildiğinde veya döndürüldüğünde kullanılan enterpolasyon modu
 
 ## <a name="see-also"></a>Ayrıca bkz.

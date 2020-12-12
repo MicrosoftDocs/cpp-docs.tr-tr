@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: menüler ve kaynaklar: menü birleştirme'
 title: 'Menüler ve Kaynaklar: Menü Birleştirme'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - merging toolbar and status bar [MFC]
 - menus [MFC], OLE document applications
 ms.assetid: 80b6bb17-d830-4122-83f0-651fc112d4d1
-ms.openlocfilehash: 03d27443f90634b5d787eee25acc951d24178f42
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b326e02fb4dbdaaef0ae6015fef6b647cc85b907
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626219"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227981"
 ---
 # <a name="menus-and-resources-menu-merging"></a>Menüler ve Kaynaklar: Menü Birleştirme
 
@@ -27,7 +28,7 @@ Bu makalede ele alınan konular şunları içerir:
 
 - [Araç çubukları ve durum çubukları](#_core_toolbars_and_status_bars)
 
-## <a name="menu-layouts"></a><a name="_core_menu_layouts"></a>Menü düzenleri
+## <a name="menu-layouts"></a><a name="_core_menu_layouts"></a> Menü düzenleri
 
 İlk adım menü düzenlerini koordine etmek için kullanılır. Kapsayıcı uygulamalar yalnızca katıştırılmış öğeler etkinken kullanılacak yeni bir menü oluşturmamalıdır. En azından bu menü, listelenen sırayla aşağıdakilerden birini içermelidir:
 
@@ -99,9 +100,9 @@ Yerinde menüsüyle ilişkili Hızlandırıcı tabloları da sunucu uygulaması 
 
 Eklenmiş bir öğe yerinde etkinleştirildiğinde, çerçeve yerinde menüsünü yükler. Daha sonra sunucu uygulamasını yerinde etkinleştirme için sunucu uygulamasına sorar ve ayırıcıların bulunduğu yere ekler. Menülerin birleşme şekli aşağıda gösterilmiştir. Dosya ve pencere yerleşimi üzerinde çalışma için kapsayıcılardan menüler alır ve sunucudan öğe için çalışma için menüler alırsınız.
 
-## <a name="toolbars-and-status-bars"></a><a name="_core_toolbars_and_status_bars"></a>Araç çubukları ve durum çubukları
+## <a name="toolbars-and-status-bars"></a><a name="_core_toolbars_and_status_bars"></a> Araç çubukları ve durum çubukları
 
-Sunucu uygulamaları yeni bir araç çubuğu oluşturmalı ve bit eşlemini ayrı bir dosyaya depolemelidir. Uygulama Sihirbazı tarafından oluşturulan uygulamalar, bu bit eşlemi ıTOOLBAR adlı bir dosyada depolar. BMP. Yeni araç çubuğu, sunucunuzun öğesi etkinken kapsayıcı uygulamasının araç çubuğunun yerini alır ve normal araç çubuğudur aynı öğeleri içermelidir, ancak dosya ve pencere menülerindeki öğeleri temsil eden simgeleri kaldırır.
+Sunucu uygulamaları yeni bir araç çubuğu oluşturmalı ve bit eşlemini ayrı bir dosyaya depolemelidir. Uygulama Sihirbazı tarafından oluşturulan uygulamalar, bu bit eşlemi ITOOLBAR.BMP adlı bir dosyada depolar. Yeni araç çubuğu, sunucunuzun öğesi etkinken kapsayıcı uygulamasının araç çubuğunun yerini alır ve normal araç çubuğudur aynı öğeleri içermelidir, ancak dosya ve pencere menülerindeki öğeleri temsil eden simgeleri kaldırır.
 
 Bu araç çubuğu, `COleIPFrameWnd` Uygulama Sihirbazı tarafından sizin için oluşturulan türetilmiş sınıfınıza yüklenir. Durum çubuğu kapsayıcı uygulama tarafından işlenir. Yerinde çerçeve pencerelerinin uygulaması hakkında daha fazla bilgi için bkz. [sunucular: sunucu uygulama](servers-implementing-a-server.md).
 

@@ -1,5 +1,6 @@
 ---
-title: COleDispatchException Sınıf
+description: 'Daha fazla bilgi edinin: Cotadispatchexception sınıfı'
+title: Cotadispatchexception sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleDispatchException
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - COleDispatchException [MFC], m_strSource
 - COleDispatchException [MFC], m_wCode
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
-ms.openlocfilehash: 4572b639b757569d8e3cfa731f99c123762f3900
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 39d8c4652f49b721e5f94c05319e5c1adad07269
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227214"
 ---
-# <a name="coledispatchexception-class"></a>COleDispatchException Sınıf
+# <a name="coledispatchexception-class"></a>Cotadispatchexception sınıfı
 
-OLE otomasyonunun önemli bir `IDispatch` parçası olan OLE arabirimine özgü özel özel durumları işler.
+OLE `IDispatch` otomasyonunun önemli bir parçası olan OLE arabirimine özgü özel durumları işler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleDispatchException : public CException
@@ -37,37 +38,37 @@ class COleDispatchException : public CException
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleDispatchException::m_dwHelpContext](#m_dwhelpcontext)|Hata için yardım bağlamı.|
-|[COleDispatchException::m_strDescription](#m_strdescription)|Sözlü hata açıklaması.|
-|[COleDispatchException::m_strHelpFile](#m_strhelpfile)|Kullanmak için yardım `m_dwHelpContext`dosyası.|
-|[COleDispatchException::m_strSource](#m_strsource)|Özel durum oluşturulan uygulama.|
-|[COleDispatchException::m_wCode](#m_wcode)|`IDispatch`-belirli hata kodu.|
+|[Cotadispatchexception:: m_dwHelpContext](#m_dwhelpcontext)|Hata için yardım bağlamı.|
+|[Cotadispatchexception:: m_strDescription](#m_strdescription)|Cobilanço hatası açıklaması.|
+|[Cotadispatchexception:: m_strHelpFile](#m_strhelpfile)|İle kullanılacak yardım dosyası `m_dwHelpContext` .|
+|[Cotadispatchexception:: m_strSource](#m_strsource)|Özel durumu oluşturan uygulama.|
+|[Cotadispatchexception:: m_wCode](#m_wcode)|`IDispatch`-özel hata kodu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CException` Taban sınıftan türetilen diğer özel `COleDispatchException` durum sınıfları gibi THROW, THROW_LAST, TRY, CATCH, AND_CATCH ve END_CATCH makroları ile kullanılabilir.
+Temel sınıftan türetilmiş diğer özel durum sınıfları gibi `CException` , `COleDispatchException` THROW, THROW_LAST, TRY, CATCH, AND_CATCH ve END_CATCH makrolarıyla birlikte kullanılabilir.
 
-Genel olarak, bir `COleDispatchException` nesne oluşturmak ve atmak için [AfxThrowOleDispatchException'ı](exception-processing.md#afxthrowoledispatchexception) aramalısınız.
+Genel olarak, bir nesne oluşturmak ve oluşturmak için [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) öğesini çağırmanız gerekir `COleDispatchException` .
 
-Özel durumlar hakkında daha fazla bilgi için, [Özel Durum Kullanımı (MFC)](../../mfc/exception-handling-in-mfc.md) ve [Özel Durumlar makalelerine bakın: OLE Özel Durumlar.](../../mfc/exceptions-ole-exceptions.md)
+Özel durumlar hakkında daha fazla bilgi için bkz. makalelere [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md) ve [özel durumlar: OLE özel durumları](../../mfc/exceptions-ole-exceptions.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Cexception](../../mfc/reference/cexception-class.md)
+[CException](../../mfc/reference/cexception-class.md)
 
 `COleDispatchException`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdisp.h
+**Üstbilgi:** AfxDisp. h
 
-## <a name="coledispatchexceptionm_dwhelpcontext"></a><a name="m_dwhelpcontext"></a>COleDispatchException::m_dwHelpContext
+## <a name="coledispatchexceptionm_dwhelpcontext"></a><a name="m_dwhelpcontext"></a> Cotadispatchexception:: m_dwHelpContext
 
-Uygulamanızın yardım (. HLP) dosyası.
+Uygulamanızın yardımında bir yardım bağlamı tanımlar (. HLP) dosyası.
 
 ```
 DWORD m_dwHelpContext;
@@ -75,15 +76,15 @@ DWORD m_dwHelpContext;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye, bir özel durum atıldığında [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) işlevi tarafından ayarlanır.
+Bu üye, bir özel durum oluştuğunda [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) işlevi tarafından ayarlanır.
 
 ### <a name="example"></a>Örnek
 
-  [COleDispatchDriver örneğine bakın:CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
+  [Cotadispatchdriver:: CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch)örneğine bakın.
 
-## <a name="coledispatchexceptionm_strdescription"></a><a name="m_strdescription"></a>COleDispatchException::m_strDescription
+## <a name="coledispatchexceptionm_strdescription"></a><a name="m_strdescription"></a> Cotadispatchexception:: m_strDescription
 
-"Disk tam" gibi sözlü bir hata açıklaması içerir.
+"Disk dolu" gibi bir ifade hatası açıklaması içerir.
 
 ```
 CString m_strDescription;
@@ -91,23 +92,23 @@ CString m_strDescription;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye, bir özel durum atıldığında [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) işlevi tarafından ayarlanır.
+Bu üye, bir özel durum oluştuğunda [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) işlevi tarafından ayarlanır.
 
 ### <a name="example"></a>Örnek
 
-  [COleDispatchDriver örneğine bakın:CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
+  [Cotadispatchdriver:: CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch)örneğine bakın.
 
-## <a name="coledispatchexceptionm_strhelpfile"></a><a name="m_strhelpfile"></a>COleDispatchException::m_strHelpFile
+## <a name="coledispatchexceptionm_strhelpfile"></a><a name="m_strhelpfile"></a> Cotadispatchexception:: m_strHelpFile
 
-Çerçeve, bu dizeyi uygulamanın yardım dosyasının adı ile doldurur.
+Çerçeve bu dizeyi uygulamanın Yardım dosyası adıyla doldurur.
 
 ```
 CString m_strHelpFile;
 ```
 
-## <a name="coledispatchexceptionm_strsource"></a><a name="m_strsource"></a>COleDispatchException::m_strSource
+## <a name="coledispatchexceptionm_strsource"></a><a name="m_strsource"></a> Cotadispatchexception:: m_strSource
 
-Çerçeve, bu dizeyi özel durumu oluşturan uygulamanın adıile doldurur.
+Çerçeve bu dizeyi, özel durumu oluşturan uygulamanın adıyla doldurur.
 
 ```
 CString m_strSource;
@@ -115,11 +116,11 @@ CString m_strSource;
 
 ### <a name="example"></a>Örnek
 
-  [COleDispatchDriver örneğine bakın:CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
+  [Cotadispatchdriver:: CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch)örneğine bakın.
 
-## <a name="coledispatchexceptionm_wcode"></a><a name="m_wcode"></a>COleDispatchException::m_wCode
+## <a name="coledispatchexceptionm_wcode"></a><a name="m_wcode"></a> Cotadispatchexception:: m_wCode
 
-Uygulamanıza özgü bir hata kodu içerir.
+Uygulamanıza özel bir hata kodu içerir.
 
 ```
 WORD m_wCode;
@@ -127,12 +128,12 @@ WORD m_wCode;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye, bir özel durum atıldığında [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) işlevi tarafından ayarlanır.
+Bu üye, bir özel durum oluştuğunda [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) işlevi tarafından ayarlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
-[CException Sınıfı](../../mfc/reference/cexception-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleDispatchDriver Sınıfı](../../mfc/reference/coledispatchdriver-class.md)<br/>
-[COleException Sınıfı](../../mfc/reference/coleexception-class.md)
+[MFC örnek CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[CException sınıfı](../../mfc/reference/cexception-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Cotadispatchdriver sınıfı](../../mfc/reference/coledispatchdriver-class.md)<br/>
+[Cotaexception sınıfı](../../mfc/reference/coleexception-class.md)
