@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1223'
 title: Bağlayıcı Araçları Hatası LNK1223
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1223
 ms.assetid: c4728c36-daee-462f-a1c7-8733dcdec88e
-ms.openlocfilehash: 9c9d4c7224a7e65775354a86bd34fa9ea1b074af
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: eb1937f253d324781834d0b6f465c79f7009787f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80195038"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194065"
 ---
 # <a name="linker-tools-error-lnk1223"></a>Bağlayıcı Araçları Hatası LNK1223
 

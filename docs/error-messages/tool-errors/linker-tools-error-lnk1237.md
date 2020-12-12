@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1237'
 title: Bağlayıcı Araçları Hatası LNK1237
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1237
 ms.assetid: 8722ffa8-096a-4bb0-85f9-f3aa0e10872a
-ms.openlocfilehash: c56b2eb86c7605fb3330d7b1bb01e3235466ede6
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: ba6a0d23eea4d8d555115950fcd54a5e4f6a8bde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193988"
 ---
 # <a name="linker-tools-error-lnk1237"></a>Bağlayıcı Araçları Hatası LNK1237
 
 kod oluşturma sırasında, derleyici/GL ile derlenen ' Module ' modülünde tanımlanan ' symbol ' simgesine başvuru sunmuştur
 
-Kod oluşturma sırasında derleyici, daha sonra derlenen **/GL**tanımlarına çözümlenen sembolleri sunmaz. `symbol`, daha sonra **/GL**ile derlenen bir tanıma çözümlenen ve daha sonra çözümlenmiş bir simgedir.
+Kod oluşturma sırasında derleyici, daha sonra derlenen **/GL** tanımlarına çözümlenen sembolleri sunmaz. `symbol` , uygulanan ve daha sonra **/GL** ile derlenen bir tanıma çözümlenen bir simgedir.
 
 Daha fazla bilgi için bkz. [/GL (tüm program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).
 

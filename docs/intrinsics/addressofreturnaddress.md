@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _AddressOfReturnAddress'
 title: _AddressOfReturnAddress
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,20 +9,20 @@ helpviewer_keywords:
 - _AddressOfReturnAddress intrinsic
 - AddressOfReturnAddress intrinsic
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
-ms.openlocfilehash: d705029c30fdbc117c4c6e96923691e43e072e23
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 1a79ccbe7ddc2865d8225a62cd0d294f0bc66b4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221068"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331925"
 ---
 # <a name="_addressofreturnaddress"></a>_AddressOfReturnAddress
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Geçerli işlevin dönüş adresini tutan bellek konumunun adresini sağlar. Bu adres, diğer bellek konumlarına (örneğin, işlevin bağımsız değişkenleri) erişmek için kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void * _AddressOfReturnAddress();
@@ -33,11 +34,11 @@ void * _AddressOfReturnAddress();
 |---------------|------------------|
 |`_AddressOfReturnAddress`|x86, x64, ARM, ARM64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-/Clr ile derlenen bir programda kullanıldığında, [](../build/reference/clr-common-language-runtime-compilation.md) `_AddressOfReturnAddress` çağrıyı içeren işlev yerel bir işlev olarak derlenir. `_AddressOfReturnAddress` `_AddressOfReturnAddress` İçeren`_AddressOfReturnAddress` işleve yönetilen çağrı olarak derlenen bir işlev beklendiği gibi davranmayabilir.
+`_AddressOfReturnAddress` [/Clr](../build/reference/clr-common-language-runtime-compilation.md)ile derlenen bir programda kullanıldığında, çağrıyı içeren işlev `_AddressOfReturnAddress` yerel bir işlev olarak derlenir. İçeren işleve yönetilen çağrı olarak derlenen bir işlev `_AddressOfReturnAddress` `_AddressOfReturnAddress` beklendiği gibi davranmayabilir.
 
 Bu yordam yalnızca iç öğe olarak kullanılabilir.
 
@@ -78,4 +79,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)

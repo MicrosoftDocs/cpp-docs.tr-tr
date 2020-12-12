@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1221'
 title: Bağlayıcı Araçları Hatası LNK1221
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1221
 ms.assetid: 70654bf9-1520-4fa3-a063-1219dd88abf7
-ms.openlocfilehash: 4a8dc8122b9d97b108bdb14022477ab9df720113
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b8f82351f0bf0c792ebf2e3e2e2f4d6294b918a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183949"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97194091"
 ---
 # <a name="linker-tools-error-lnk1221"></a>Bağlayıcı Araçları Hatası LNK1221
 

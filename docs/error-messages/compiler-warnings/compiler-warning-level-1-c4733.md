@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4733'
 title: Derleyici Uyarısı (düzey 1) C4733
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4733
 ms.assetid: 7ef4f577-772d-4b66-a7bf-8958a6b250bc
-ms.openlocfilehash: 39674c32deb506725aa5f7c1f5f875e771519938
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e12e23830057404732aec641470cff5520818ef3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228631"
 ---
 # <a name="compiler-warning-level-1-c4733"></a>Derleyici Uyarısı (düzey 1) C4733
 
@@ -19,7 +20,7 @@ Satır içi asm ' FS: 0 ' öğesine atanıyor: işleyici güvenli işleyici olar
 
 FS 'de değeri değiştiren bir işlev: 0 Yeni bir özel durum işleyici eklemek güvenli özel durumlarla çalışmayabilir, çünkü işleyici geçerli bir özel durum işleyicisi olarak kaydedilemeyebilir (bkz. [/SafeSEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)).
 
-Bu uyarıyı çözmek için, FS 'yi kaldırın: 0 Bu uyarıyı açın veya kapatın ve kullanın [. ](../../assembler/masm/dot-safeseh.md)Güvenli özel durum işleyicilerini belirtmek IÇIN SafeSEH.
+Bu uyarıyı çözmek için, FS 'yi kaldırın: 0 Bu uyarıyı açın veya kapatın ve kullanın [. ](../../assembler/masm/dot-safeseh.md) Güvenli özel durum işleyicilerini belirtmek IÇIN SafeSEH.
 
 Aşağıdaki örnek C4733 oluşturur:
 

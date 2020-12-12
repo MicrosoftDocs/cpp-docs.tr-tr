@@ -1,4 +1,5 @@
 ---
+description: ': String (C++/CLı ve C++/CX) hakkında daha fazla bilgi'
 title: Dize (C++/CLI ve C++/CX)
 ms.date: 10/08/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - string support with /clr
 - /clr compiler option [C++], string support
 ms.assetid: c695f965-9be0-4e20-9661-373bfee6557e
-ms.openlocfilehash: b9da900ffbfff34dc596d8981095d8285bf37208
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a47842713d1e7349717eaaeddcd4f3cba86fbbea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206337"
 ---
 # <a name="string--ccli-and-ccx"></a>Dize (C++/CLI ve C++/CX)
 
@@ -19,9 +20,9 @@ Windows Çalışma Zamanı ve ortak dil çalışma zamanı, ayrılan bellek otom
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
-Windows Çalışma Zamanı mimarisi, `String` veri türünün `Platform` ad alanında bulunmasını gerektirir. Görsel C++ sizin rahatınız için, `default` ad alanındaki `Platform::String`için bir eş anlamlı olan `string` veri türü de sağlar.
+Windows Çalışma Zamanı mimarisi, `String` veri türünün `Platform` ad alanında bulunmasını gerektirir. Kolaylık olması için Visual C++, `string` ad alanındaki için bir eş anlamlı olan veri türünü de sağlar `Platform::String` `default` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 // compile with /ZW
@@ -38,11 +39,11 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-`/clr`ile derlerken, derleyici dize değişmez değerlerini <xref:System.String>türündeki dizelere dönüştürür. Mevcut kodla geriye dönük uyumluluğu korumak için bunun iki özel durumu vardır:
+İle derlerken `/clr` , derleyici dize değişmez değerlerini tür dizelerine dönüştürür <xref:System.String> . Mevcut kodla geriye dönük uyumluluğu korumak için bunun iki özel durumu vardır:
 
 - Özel durum işleme. Bir dize sabit değeri oluşturulduğunda, derleyici onu bir dize sabit değeri olarak yakalayacak.
 
-- Şablon kesintisi. Bir dize sabit değeri bir şablon bağımsız değişkeni olarak geçirildiğinde, derleyici onu bir <xref:System.String>dönüştürmeyecektir. Genel bir bağımsız değişken olarak geçirilen dize sabit değerleri <xref:System.String>yükseltilecek.
+- Şablon kesintisi. Bir dize sabit değeri, bir şablon bağımsız değişkeni olarak geçirildiğinde, derleyici onu bir öğesine dönüştürmeyecektir <xref:System.String> . Genel bir bağımsız değişken olarak geçirilen dize sabit değerleri, öğesine Yükseltilecek <xref:System.String> .
 
 Derleyici Ayrıca, davranışlarını özelleştirmek için geçersiz kılabileceğiniz üç işleç için yerleşik desteğe sahiptir:
 
@@ -52,10 +53,10 @@ Derleyici Ayrıca, davranışlarını özelleştirmek için geçersiz kılabilec
 
 - System:: String ^ işleç + (System:: String, System:: Object);
 
-Bir <xref:System.String>geçirildiğinde derleyici, gerekirse, sonra da nesneyi (ToString ile) dize ile birleştirir.
+Bir geçirildiğinde, <xref:System.String> derleyici, gerekirse, sonra da nesnesini (ToString ile) dize ile birleştirir.
 
 > [!NOTE]
-> Şapka işareti ("^"), belirtilen değişkenin bir C++/CLI yönetilen nesnesine yönelik bir tanıtıcı olduğunu gösterir.
+> Şapka işareti ("^"), belirtilen değişkenin bir C++/CLı yönetilen nesnesine yönelik bir tanıtıcı olduğunu gösterir.
 
 Daha fazla bilgi için bkz. [dize ve karakter sabit değerleri](../cpp/string-and-character-literals-cpp.md).
 
@@ -152,7 +153,7 @@ abc
 n is empty
 ```
 
-Aşağıdaki örnek, derleyicinin sunduğu işleçleri aşırı yükleyebilir ve derleyicinin <xref:System.String> türüne göre bir işlev aşırı yüklemesi bulabileceğinizi gösterir.
+Aşağıdaki örnek, derleyicinin sunduğu işleçleri aşırı yükleyebilir ve derleyicinin türü temel alarak bir işlev aşırı yüklemesi bulabileceğinizi gösterir <xref:System.String> .
 
 ```cpp
 // string_operators_2.cpp
@@ -210,7 +211,7 @@ String^ a
 const char * a
 ```
 
-Aşağıdaki örnek, derleyicinin yerel dizeler ve <xref:System.String> dizeleri arasında ayrım gösterdiğini gösterir.
+Aşağıdaki örnekte, derleyicinin yerel dizeler ve dizeler arasında ayrım gösterdiği gösterilmektedir <xref:System.String> .
 
 ```cpp
 // string_operators_3.cpp
@@ -261,6 +262,6 @@ System.String
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)<br/>
-[Dize ve Karakter Değişmez Değerleri](../cpp/string-and-character-literals-cpp.md)<br/>
-[/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)<br/>
+[Dize ve karakter değişmez değerleri](../cpp/string-and-character-literals-cpp.md)<br/>
+[/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md)
