@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kapsayıcılar: Gelişmiş Özellikler'
 title: 'Kapsayıcılar: Gelişmiş Özellikler'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 1ef4ed9865d3a88a6ff85f777984b856d03cc48e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d49f699ec0349e5c53b95996c6ee4b5d151dce5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616356"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310518"
 ---
 # <a name="containers-advanced-features"></a>Kapsayıcılar: Gelişmiş Özellikler
 
@@ -27,7 +28,7 @@ Bu makalede, mevcut kapsayıcı uygulamalarına isteğe bağlı gelişmiş özel
 
 - [Katıştırılmış nesneye OLE bağlantısı](#_core_links_to_embedded_objects)
 
-## <a name="creating-a-containerserver-application"></a><a name="_core_creating_a_container_server_application"></a>Kapsayıcı/sunucu uygulaması oluşturma
+## <a name="creating-a-containerserver-application"></a><a name="_core_creating_a_container_server_application"></a> Kapsayıcı/sunucu uygulaması oluşturma
 
 Kapsayıcı/sunucu uygulaması, hem kapsayıcı hem de sunucu olarak davranan bir uygulamadır. Windows için Microsoft Word buna bir örnektir. Windows belgelerini Word 'e başka uygulamalara ekleyebilirsiniz ve ayrıca Windows belgeleri için Word 'e öğe ekleyebilirsiniz. Kapsayıcı uygulamanızı hem kapsayıcı hem de tam sunucu olarak değiştirme işlemi (bir bileşim kapsayıcı veya minıver uygulaması oluşturamazsınız) tam sunucu oluşturma işlemine benzerdir.
 
@@ -45,7 +46,7 @@ Yeni bir uygulama oluşturuyorsanız ve bir kapsayıcı/sunucu uygulaması olara
 
 MDI uygulamasını kendi içine ekleyemeyeceğinize unutmayın. Bir SDI uygulaması olmadığı müddetçe kapsayıcı/sunucu olan bir uygulama kendi kendine eklenemez.
 
-## <a name="links-to-embedded-objects"></a><a name="_core_links_to_embedded_objects"></a>Katıştırılmış nesne bağlantıları
+## <a name="links-to-embedded-objects"></a><a name="_core_links_to_embedded_objects"></a> Katıştırılmış nesne bağlantıları
 
 Katıştırılmış nesne bağlantıları özelliği, bir kullanıcının kapsayıcı uygulamanızın içindeki katıştırılmış bir nesneye OLE bağlantısı olan bir belge oluşturmasını sağlar. Örneğin, bir Word işlemcisinde ekli bir elektronik tablo içeren bir belge oluşturun. Uygulamanız gömülü nesnelere bağlantıları destekliyorsa, Word işlemcinin belgesinde yer alan elektronik tabloya bir bağlantı yapıştırabilir. Bu özellik, uygulamanızın elektronik tabloda bulunan bilgileri, sözcük işlemcisinin ilk olarak aldığı yeri bilmeden kullanmasına izin verir.
 
@@ -69,7 +70,7 @@ Katıştırılmış nesne bağlantıları özelliği, bir kullanıcının kapsay
 
       Uygulama "/Embedded" anahtarıyla başlatılırsa, bir sunucu uygulamasına benzer şekilde ana penceresini göstermemelidir.
 
-MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md) bu özelliği uygular. Bunun nasıl yapıldığını gösteren bir örnek için, `InitInstance` Oclient içindeki işlevine bakın *. *Bu örnek UYGULAMANıN cpp dosyası.
+MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md) bu özelliği uygular. Bunun nasıl yapıldığını gösteren bir örnek için, `InitInstance` Oclient içindeki işlevine bakın *.* Bu örnek UYGULAMANıN cpp dosyası.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

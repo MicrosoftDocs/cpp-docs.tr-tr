@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetim çubuğu sınıfları'
 title: Denetim Çubuğu Sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - control bars [MFC], classes
 ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
-ms.openlocfilehash: f89770683edb1f4268b4f19adb74e5c08aa5f109
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9ccb22a90799d7af7db49cd0a1a65a1009e9f36e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310232"
 ---
 # <a name="control-bar-classes"></a>Denetim Çubuğu Sınıfları
 

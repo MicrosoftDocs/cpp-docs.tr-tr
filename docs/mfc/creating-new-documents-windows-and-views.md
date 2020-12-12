@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yeni belgeler, pencereler ve görünümler oluşturma'
 title: Yeni Belgeler, Pencereler ve Görünümler Oluşturma
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - views [MFC], overriding default behavior
 - initializing views [MFC]
 ms.assetid: 88aa1f5f-2078-4603-b16b-a2b4c7b4a2a3
-ms.openlocfilehash: 7a714b5d7ba97c12b7134fa4890bddf5ed095c5b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 718d24d63811d4e3b5cc847b5d0ef69361c6fdf3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309881"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>Yeni Belgeler, Pencereler ve Görünümler Oluşturma
 
@@ -48,7 +49,7 @@ Görünüm oluşturma sırasında sıra
 
 Framework 'ün yeni belge, görünüm ve çerçeve pencere nesnelerini nasıl Başlatan hakkında daha fazla bilgi için, MFC Kitaplığı başvurusunda [CDocument](reference/cdocument-class.md), [CView](reference/cview-class.md), [CFrameWnd](reference/cframewnd-class.md), [Cmdiframewnd](reference/cmdiframewnd-class.md)ve [cmdictepdınd](reference/cmdichildwnd-class.md) sınıflarını inceleyin. Ayrıca, oluşturma ve başlatma işlemlerinin, **Dosya** menüsündeki **Yeni** ve **Açık** öğeler için Framework 'ün standart komutları tartışmasından daha da [ayrıntılı olarak açıklanmaktadır](tn022-standard-commands-implementation.md).
 
-## <a name="initializing-your-own-additions-to-these-classes"></a><a name="_core_initializing_your_own_additions_to_these_classes"></a>Bu sınıflara kendi eklemelerinizi başlatma
+## <a name="initializing-your-own-additions-to-these-classes"></a><a name="_core_initializing_your_own_additions_to_these_classes"></a> Bu sınıflara kendi eklemelerinizi başlatma
 
 Yukarıdaki rakamlar, uygulamanızın nesnelerini başlatmak için üye işlevlerini geçersiz kılabileceğiniz noktaları da önerir. Görünüm sınıfınıza ilişkin bir geçersiz kılma, `OnInitialUpdate` görünümü başlatmak için en iyi yerdir. `OnInitialUpdate`Çağrı, çerçeve penceresi oluşturulduktan sonra ve çerçeve penceresi içindeki görünüm belgeye İliştirildikten hemen sonra gerçekleşir. Örneğin, görünümelde bir kaydırma görünümü varsa (yerine öğesinden türetilmiş `CScrollView` `CView` ), görünüm boyutunu geçersiz kılmanızda belge boyutuna göre ayarlamanız gerekir `OnInitialUpdate` . (Bu işlem, [CScrollView](reference/cscrollview-class.md)sınıfının açıklamasında açıklanmaktadır.) Üye işlevlerini geçersiz kılabilir `CDocument` `OnNewDocument` ve `OnOpenDocument` belgeyi uygulamaya özel olarak başlatmayı sağlayabilirsiniz. Genellikle, bir belgenin iki şekilde oluşturulabilmesinden bu yana her ikisini de geçersiz kılmanız gerekir.
 
@@ -56,7 +57,7 @@ Yukarıdaki rakamlar, uygulamanızın nesnelerini başlatmak için üye işlevle
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi](document-templates-and-the-document-view-creation-process.md)<br/>
-[Belge Şablonu Oluşturma](document-template-creation.md)<br/>
+[Belge şablonları ve belge/görünüm oluşturma Işlemi](document-templates-and-the-document-view-creation-process.md)<br/>
+[Belge şablonu oluşturma](document-template-creation.md)<br/>
 [Belge/görünüm oluşturma](document-view-creation.md)<br/>
-[MFC Nesneleri Arasındaki İlişki](relationships-among-mfc-objects.md)
+[MFC nesneleri arasındaki ilişkiler](relationships-among-mfc-objects.md)

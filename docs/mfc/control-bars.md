@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetim çubukları'
 title: Denetim Çubukları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CToolBar class [MFC], control bars
 - CStatusBar class [MFC], control bars
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-ms.openlocfilehash: a2d3683b744493bb5566456b9e1358c1ddc418d4
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 985201b2c09c4d60996e9ee64b2507fe1593e5ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615971"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310154"
 ---
 # <a name="control-bars"></a>Denetim Çubukları
 
@@ -36,13 +37,13 @@ Denetim çubukları, kullanıcıların seçenek belirleyip, komutları yürüteb
 - Rebar, sınıf [ekibi](reference/crebar-class.md)
 
 > [!IMPORTANT]
-> MFC sürüm 4,0, araç çubukları, durum çubukları ve araç ipuçları, MFC 'ye özgü önceki uygulama yerine *Comctl32. dll* ' de uygulanan sistem işlevleri kullanılarak uygulanır. MFC sürüm 6,0 ' de, `CReBar` Comctl32. dll işlevini de sarmalanmış.
+> MFC sürüm 4,0, araç çubukları, durum çubukları ve araç ipuçları, MFC 'ye özgü önceki uygulama yerine *comctl32.dll* uygulanan sistem işlevleri kullanılarak uygulanır. MFC sürüm 6,0 ' de `CReBar` comctl32.dll işlevselliğin de sarmalanmış olması de eklenmiştir.
 
 Denetim çubuğu türlerine ilişkin kısa tanıtımları takip edin. Daha fazla bilgi için aşağıdaki bağlantılara bakın.
 
 ## <a name="control-bars"></a>Denetim Çubukları
 
-Denetim çubukları, hızlı, tek adımlı komut eylemleri sağlayarak programın kullanılabilirliğini büyük ölçüde geliştirir. Sınıfı, `CControlBar` tüm araç çubuklarının, durum çubuklarının ve iletişim çubuklarının ortak işlevlerini sağlar. `CControlBar`Denetim çubuğunu üst çerçeve penceresinde konumlandırma işlevlerini sağlar. Bir denetim çubuğu genellikle üst çerçeve penceresinin alt bir pencere olduğundan, çerçeve penceresinin istemci görünümü veya MDI istemcisine bir "eşdüzey" olur. Bir denetim çubuğu nesnesi kendi üst penceresinin istemci dikdörtgeniyle ilgili bilgileri kullanarak kendisini konumlandırır. Daha sonra, istemci görünümü veya MDI istemcisi penceresinin istemci penceresinin geri kalanını doldurması için üst öğenin kalan istemci pencere dikdörtgenini değiştirir.
+Denetim çubukları, hızlı, tek adımlı komut eylemleri sağlayarak programın kullanılabilirliğini büyük ölçüde geliştirir. Sınıfı, `CControlBar` tüm araç çubuklarının, durum çubuklarının ve iletişim çubuklarının ortak işlevlerini sağlar. `CControlBar` Denetim çubuğunu üst çerçeve penceresinde konumlandırma işlevlerini sağlar. Bir denetim çubuğu genellikle üst çerçeve penceresinin alt bir pencere olduğundan, çerçeve penceresinin istemci görünümü veya MDI istemcisine bir "eşdüzey" olur. Bir denetim çubuğu nesnesi kendi üst penceresinin istemci dikdörtgeniyle ilgili bilgileri kullanarak kendisini konumlandırır. Daha sonra, istemci görünümü veya MDI istemcisi penceresinin istemci penceresinin geri kalanını doldurması için üst öğenin kalan istemci pencere dikdörtgenini değiştirir.
 
 > [!NOTE]
 > Denetim çubuğundaki bir düğmenin bir **komut** veya **UPDATE_COMMAND_UI** işleyicisi yoksa, çerçeve otomatik olarak düğmeyi devre dışı bırakır.

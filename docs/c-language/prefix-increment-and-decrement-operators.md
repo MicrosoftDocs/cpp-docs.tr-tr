@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önek artırma ve azaltma Işleçleri'
 title: Önek Arttırma ve Azaltma İşleçleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - decrement operators, syntax
 - decrement operators
 ms.assetid: 9a441bb9-d94a-4b6a-9db2-0d0d76bc480d
-ms.openlocfilehash: dbbace9780ab96891ceb85f885335e42c577fda1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 49edad72bb0dea25166c1508680c4757c89927f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211729"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312507"
 ---
 # <a name="prefix-increment-and-decrement-operators"></a>Önek Arttırma ve Azaltma İşleçleri
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: &lt; Varyant &gt; işlevleri'
 title: '&lt;varyant &gt; işlevleri'
 ms.date: 04/04/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 - variant/std::get_if
 - variant/std::holds_alternative
 - variant/std::visit
-ms.openlocfilehash: b39e75cb94f8439bba802925e6145dcf67942960
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6ee0a0076e916329e45e452b3795ef487cd40762
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232839"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312806"
 ---
 # <a name="ltvariantgt-functions"></a>&lt;varyant &gt; işlevleri
 
-## <a name="get"></a><a name="get"></a>Al
+## <a name="get"></a><a name="get"></a> Al
 
 Bir nesnenin türevini alır.
 
@@ -38,7 +39,7 @@ template <class T, class... Types>
     constexpr const T&& get(const variant<Types...>&&);
 ```
 
-## <a name="get_if"></a><a name="get_if"></a>get_if
+## <a name="get_if"></a><a name="get_if"></a> get_if
 
 Varsa, bir nesnenin türevini alır.
 
@@ -53,7 +54,7 @@ template <class T, class... Types>
     constexpr add_pointer_t<const T> get_if(const variant<Types...>*) noexcept;
 ```
 
-## <a name="holds_alternative"></a><a name="holds_alternative"></a>holds_alternative
+## <a name="holds_alternative"></a><a name="holds_alternative"></a> holds_alternative
 
 **`true`** Bir değişken varsa döndürün.
 
@@ -62,14 +63,14 @@ template <class T, class... Types>
     constexpr bool holds_alternative(const variant<Types...>&) noexcept;
 ```
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 ```cpp
 template <class... Types>
     void swap(variant<Types...>&, variant<Types...>&) noexcept(see below);
 ```
 
-## <a name="variant_npos"></a><a name="variant_npos"></a>variant_npos
+## <a name="variant_npos"></a><a name="variant_npos"></a> variant_npos
 
 ```cpp
 namespace std {
@@ -77,9 +78,9 @@ namespace std {
 }
 ```
 
-## <a name="visit"></a><a name="visit"></a>ederken
+## <a name="visit"></a><a name="visit"></a> ederken
 
-Sonraki **varyanta**gider.
+Sonraki **varyanta** gider.
 
 ```cpp
 template <class Visitor, class... Variants>

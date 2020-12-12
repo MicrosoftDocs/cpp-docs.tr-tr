@@ -1,4 +1,5 @@
 ---
+description: 'Ayrıntılar hakkında daha fazla bilgi edinin: CWinApp ve MFC Uygulama Sihirbazı'
 title: CWinApp ve MFC Uygulama Sihirbazı
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CWinApp class [MFC], and MFC Application Wizard
 - MFC, wizards
 ms.assetid: f8ac0491-3302-4e46-981d-0790624eb8a2
-ms.openlocfilehash: f57b3b2b37a97093aa6d81b59a12c8cf023e3157
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1ce1f0a84aa5a0f123f9fa8654d1ce286c47d1d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309270"
 ---
 # <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp ve MFC Uygulama Sihirbazı
 
@@ -31,6 +32,6 @@ Sağlanan standart uygulamalar ve ileti haritası birçok amaçla yeterlidir, an
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama Sınıfı](cwinapp-the-application-class.md)<br/>
-[Geçersiz Kılınabilir CWinApp Üye İşlevleri](overridable-cwinapp-member-functions.md)<br/>
+[CWinApp: uygulama sınıfı](cwinapp-the-application-class.md)<br/>
+[Geçersiz kılınabilir CWinApp Üye Işlevleri](overridable-cwinapp-member-functions.md)<br/>
 [Özel CWinApp Hizmetleri](special-cwinapp-services.md)

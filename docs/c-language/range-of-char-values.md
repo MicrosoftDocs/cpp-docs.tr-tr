@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: Char değerleri aralığı'
 title: char Değerleri Aralığı
 ms.date: 11/04/2016
 ms.assetid: 15ae9781-ec21-4333-bba8-6d2383bbf7f1
-ms.openlocfilehash: 085f7a319cb193f9d9d744d6e896062e550404cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4897dd2b6433b148ea0c739118dea14f81f1e2bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309166"
 ---
 # <a name="range-of-char-values"></a>char Değerleri Aralığı
 

@@ -1,14 +1,15 @@
 ---
+description: 'Daha fazla bilgi edinin: tür dönüştürmeleri ve tür güvenliği'
 title: Tür dönüştürmeleri ve tür güvenliği
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-ms.openlocfilehash: 28adbc261b5b4376f947e00695fe66650739438d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ce83837a8aec06063b2a4e50c445fe7756b5c076
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312195"
 ---
 # <a name="type-conversions-and-type-safety"></a>Tür dönüştürmeleri ve tür güvenliği
 
@@ -29,8 +30,8 @@ Genişleyen bir dönüştürmede, daha küçük bir değişkende bir değer, ver
 |Kaynak|Amaç|
 |----------|--------|
 |**`signed`** **`unsigned`** Veya dışında herhangi bir tamsayı türü **`long long`****`__int64`**|**`double`**|
-|**`bool`** veya**`char`**|Diğer yerleşik tür|
-|**`short`** veya**`wchar_t`**|**`int`**, **`long`**, **`long long`**|
+|**`bool`** veya **`char`**|Diğer yerleşik tür|
+|**`short`** veya **`wchar_t`**|**`int`**, **`long`**, **`long long`**|
 |**`int`**, **`long`**|**`long long`**|
 |**`float`**|**`double`**|
 

@@ -1,13 +1,14 @@
 ---
+description: Daha fazla bilgi için bkz. kayan nokta geçiş sorunları
 title: Kayan nokta geçiş sorunları
 ms.date: 05/17/2017
 ms.assetid: 36a1b552-2f2b-4919-bc9d-c17f42434954
-ms.openlocfilehash: 40eb08e4f9c7058d6b11700535e1c25f86548a22
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 079706570a52d164f4308941924d0a96ca5d44ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215026"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312910"
 ---
 # <a name="floating-point-migration-issues"></a>Kayan nokta geçiş sorunları
 
@@ -15,7 +16,7 @@ Bazen projelerinizi Visual Studio 'nun daha yeni bir sürümüne yükselttiğini
 
 ## <a name="new-math-functions-and-universal-crt-changes"></a>Yeni matematik işlevleri ve Evrensel CRT değişiklikleri
 
-Çoğu CRT matematik işlevi, Visual Studio 'da yıl için sunulmaktadır, ancak Visual Studio 2013 başlayarak ISO C99 için gereken tüm işlevler dahil edilmiştir. Bu işlevler, performansı doğruluk altına alacak şekilde uygulanır. Her durumda doğru bir şekilde yuvarlanmış sonucun üretilmesi, canlı bir şekilde elde edilebilir hale gelebilir, bu işlevler doğru bir şekilde yuvarlanmış sonuca yakın bir şekilde bir kapatma sağlamak üzere tasarlanmıştır. Çoğu durumda, üretilen sonuç, doğru bir şekilde yuvarlanmış en az duyarlık veya *ULP*birimi olmak üzere, doğru yuvarlatılmış sonucun içinde, ancak daha fazla doğruluk olduğu durumlar olabilir. Bu işlevleri daha önce almak için farklı bir matematik kitaplığı kullanıyorsanız, sonuçlarınızda değişiklik yapmaktan uygulama farklılıkları sorumlu olabilir.
+Çoğu CRT matematik işlevi, Visual Studio 'da yıl için sunulmaktadır, ancak Visual Studio 2013 başlayarak ISO C99 için gereken tüm işlevler dahil edilmiştir. Bu işlevler, performansı doğruluk altına alacak şekilde uygulanır. Her durumda doğru bir şekilde yuvarlanmış sonucun üretilmesi, canlı bir şekilde elde edilebilir hale gelebilir, bu işlevler doğru bir şekilde yuvarlanmış sonuca yakın bir şekilde bir kapatma sağlamak üzere tasarlanmıştır. Çoğu durumda, üretilen sonuç, doğru bir şekilde yuvarlanmış en az duyarlık veya *ULP* birimi olmak üzere, doğru yuvarlatılmış sonucun içinde, ancak daha fazla doğruluk olduğu durumlar olabilir. Bu işlevleri daha önce almak için farklı bir matematik kitaplığı kullanıyorsanız, sonuçlarınızda değişiklik yapmaktan uygulama farklılıkları sorumlu olabilir.
 
 Matematik işlevleri Visual Studio 2015 ' de Universal CRT 'a taşındığında, bazı yeni algoritmalar kullanılmıştır ve Visual Studio 2013 yeni olan işlevlerin uygulanmasında birkaç hata düzeltildi. Bu değişiklikler, bu işlevleri kullanan kayan nokta hesaplamaları sonuçlarında algılanabilir farklılıklara yol açabilir. Hata sorunları olan işlevler HATAİŞLEV, exp2, geri kalan, remquo, scalbln ve scalbümn ve bu kişilerin float ve uzun çift çeşitleri vardı.  Visual Studio 2015 ' deki diğer değişiklikler _clear87, _clearfp, fegetenv, fesetenv ve feholdexcept işlevlerinde kayan nokta durum sözcüğünü ve özel durum bilgilerini koruma konusunda sorun düzeltildi.
 
@@ -23,7 +24,7 @@ Matematik işlevleri Visual Studio 2015 ' de Universal CRT 'a taşındığında,
 
 Kayan nokta matematik kitaplığı işlevlerinin birçoğu, farklı CPU mimarileri için farklı uygulamalara sahiptir. Örneğin, 32 bit x86 CRT, 64 bit x64 CRT 'den farklı bir uygulamaya sahip olabilir. Ayrıca, bazı işlevlerden belirli bir CPU mimarisi için birden çok uygulama olabilir. En verimli uygulama, CPU tarafından desteklenen yönerge kümelerine bağlı olarak çalışma zamanında dinamik olarak seçilir. Örneğin, 32 bit x86 CRT 'de, bazı işlevlerde hem x87 uygulama hem de bir SSE2 uygulama vardır. SSE2 destekleyen bir CPU üzerinde çalışırken, daha hızlı SSE2 uygulama kullanılır. SSE2 desteklemeyen bir CPU üzerinde çalışırken, daha yavaş x87 uygulama kullanılır. Varsayılan x86 derleyici mimarisi seçeneği Visual Studio 2012 ' de [/Arch: SSE2](../build/reference/arch-x86.md) olarak değiştirildiğinden, eski kodu geçirirken bunu görebilirsiniz. Matematik kitaplığı işlevlerinin farklı uygulamaları, sonuçlarını oluşturmak için farklı CPU yönergeleri ve farklı algoritmalar kullanabileceğinden, işlevler farklı platformlarda farklı sonuçlar üretebilir. Çoğu durumda, sonuçlar doğru bir şekilde yuvarlanmış sonucu +/-1 ULP içinde, ancak gerçek sonuçlar CPU 'larda farklılık gösterebilir.
 
-Visual Studio 'daki farklı kayan nokta modlarında kod oluşturma doğruluğu iyileştirmeleri, eski kod aynı derleyici bayraklarını kullanırken bile yeni kodla karşılaştırıldığı zaman kayan nokta işlemlerinin sonuçlarını da etkileyebilir. Örneğin, [/FP: kesin](../build/reference/fp-specify-floating-point-behavior.md) (varsayılan) veya `/fp:strict` belirtildiğinde, Visual Studio 2010 tarafından oluşturulan kod, deyimler aracılığıyla aradaki sayı olmayan (NaN) değerleri doğru bir biçimde yaymayabilir. Bu nedenle, eski derleyicilerde sayısal bir sonuç veren bazı ifadeler artık doğru bir NaN sonucu üretebilir. Ayrıca, `/fp:fast` için etkinleştirilmiş kod iyileştirmeleri artık daha fazla işlemci özelliğinden yararlandığından farklar görebilirsiniz. Bu iyileştirmeler daha az yönerge kullanabilir, ancak daha önce görünür olan bazı ara işlemler kaldırılmış olduğundan oluşturulan sonuçları etkileyebilir.
+Visual Studio 'daki farklı kayan nokta modlarında kod oluşturma doğruluğu iyileştirmeleri, eski kod aynı derleyici bayraklarını kullanırken bile yeni kodla karşılaştırıldığı zaman kayan nokta işlemlerinin sonuçlarını da etkileyebilir. Örneğin, [/FP: kesin](../build/reference/fp-specify-floating-point-behavior.md) (varsayılan) veya belirtilen belirtildiğinde Visual Studio 2010 tarafından oluşturulan kod, `/fp:strict` ifadeler aracılığıyla ara değer olmayan (NaN) değerleri doğru bir biçimde yaymayabilir. Bu nedenle, eski derleyicilerde sayısal bir sonuç veren bazı ifadeler artık doğru bir NaN sonucu üretebilir. Ayrıca, `/fp:fast` daha fazla işlemci özelliğinden yararlanmak üzere etkin olan kod iyileştirmeleri için farkları görebilirsiniz. Bu iyileştirmeler daha az yönerge kullanabilir, ancak daha önce görünür olan bazı ara işlemler kaldırılmış olduğundan oluşturulan sonuçları etkileyebilir.
 
 ## <a name="how-to-get-identical-results"></a>Özdeş sonuçlar nasıl alınır?
 
@@ -31,6 +32,6 @@ Visual Studio 'daki farklı kayan nokta modlarında kod oluşturma doğruluğu i
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Projeleri Visual 'ın önceki sürümlerinden yükseltmeC++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Visual C++ önceki sürümlerinden projeleri yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)

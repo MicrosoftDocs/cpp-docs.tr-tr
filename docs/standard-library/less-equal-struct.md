@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: less_equal struct'
 title: less_equal Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - less_equal function
 - less_equal struct
 ms.assetid: 32085782-c7e0-4310-9b40-8aa3c1bff211
-ms.openlocfilehash: 67a686b139ae4abbf25a42a994cceaba008decf5
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: b2d715971c5278629a6ea812c5a9c199f00c4a07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245380"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312897"
 ---
-# <a name="lessequal-struct"></a>less_equal Yapısı
+# <a name="less_equal-struct"></a>less_equal Yapısı
 
-Daha az daha-veya-eşittir-yeri işlemi gerçekleştiren bir ikili koşula (`operator<=`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde küçüktür veya-eşittir işlemi () gerçekleştiren bir ikili koşul `operator<=` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,21 +41,21 @@ struct less_equal<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Destekleyen herhangi bir türü bir `operator<=` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator<=`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
-*Sol*\
-Daha az--veya-eşittir-işlemin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+Küçüktür veya eşittir işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Daha az--veya-eşittir-işlemin sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+Küçüktür veya eşittir işleminin doğru işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left <= Right`. Özelleşmiş şablon türü tarafından döndürülen sonuç iletilmesini mükemmel `operator<=`.
+Sonucu `Left <= Right` . Özel şablon, sonucu tarafından döndürülen türü içeren kusursuz bir iletme işlemi yapar `operator<=` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkili koşul `less_equal` < `Type`> katı bir zayıf türünün öğe değerlerini bir dizi sıralama sağlar *türü* denk sınıfların içinde bu tür standart matematiksel karşılar ve yalnızca, Bu nedenle sıralanan gereksinimleri. Farklı değerlerin tüm öğelerin birbirine göre sıralanır, toplam, öğelerin sıralaması uzmanlıkları herhangi bir işaretçi türü için yield.
+İkili koşul `less_equal` < `Type`>,, ve yalnızca bu tür için standart matematik gereksinimlerini karşılıyorsa, bir dizi  öğe değerlerini denklik sınıflarında katı bir şekilde bir şekilde bir, ancak bu türü Herhangi bir işaretçi türü için özelleştirilmiş bir öğe sıralaması, farklı değerlerin tüm öğelerinin birbirleriyle ilgili olarak sıralanmasından oluşur.
 
 ## <a name="example"></a>Örnek
 

@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: &lt; Variant&gt;'
 title: '&lt;varyantı&gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - <variant>
 helpviewer_keywords:
 - <variant>
-ms.openlocfilehash: 1a3c861c96fedb7ef95eec66f95888ddc092bed4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 994bd18a66dd78c8f6042afea10df69ff08a1487
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312480"
 ---
 # <a name="ltvariantgt"></a>&lt;varyantı&gt;
 
@@ -42,8 +43,8 @@ Bir değişken nesnesi bir değeri tutar ve yönetir. Değişken bir değer tutu
 |[Al](../standard-library/variant-functions.md#get)|Bir nesnenin türevini alır.|
 |[get_if](../standard-library/variant-functions.md#get_if)|Varsa, bir nesnenin türevini alır.|
 |[holds_alternative](../standard-library/variant-functions.md#holds_alternative)|**`true`** Bir değişken varsa döndürün.|
-|[Kur](../standard-library/variant-functions.md#swap)|Bir **varyantı**değiştirir.|
-|[ederken](../standard-library/variant-functions.md#visit)|Sonraki **varyanta**gider.|
+|[Kur](../standard-library/variant-functions.md#swap)|Bir **varyantı** değiştirir.|
+|[ederken](../standard-library/variant-functions.md#visit)|Sonraki **varyanta** gider.|
 
 ### <a name="classes"></a>Sınıflar
 

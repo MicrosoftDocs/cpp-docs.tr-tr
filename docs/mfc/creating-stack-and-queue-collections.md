@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yığın ve kuyruk koleksiyonları oluşturma'
 title: Yığın ve Kuyruk Koleksiyonları Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - stack collections
 - collections, queue
 ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
-ms.openlocfilehash: 5db90422f78fc6ca3bc2a182f9569c33db56cad1
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e6c3d4a2ade4262e01bd5d84529aa57d308a8623
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623215"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309777"
 ---
 # <a name="creating-stack-and-queue-collections"></a>Yığın ve Kuyruk Koleksiyonları Oluşturma
 
 Bu makalede, MFC liste sınıflarından [yığınlar](#_core_stacks) ve [Kuyruklar](#_core_queues)gibi diğer veri yapılarının nasıl oluşturulduğu açıklanmaktadır. Örnekler, ' den türetilen sınıfları kullanır `CList` , ancak `CList` işlevsellik eklemeniz gerekmiyorsa doğrudan kullanabilirsiniz.
 
-## <a name="stacks"></a><a name="_core_stacks"></a>Lara
+## <a name="stacks"></a><a name="_core_stacks"></a> Lara
 
 Standart liste koleksiyonunda hem baş hem de kuyruk olduğundan, bir son ilk çıkar yığınının davranışını taklit eden bir türetilmiş liste koleksiyonu oluşturmak kolaydır. Bir yığın, Cafeteria 'daki tepsilerden oluşan bir yığın gibidir. Yığına tepsi eklendikçe, yığının en üstüne gitirler. Eklenen son tepsi, kaldırılacak ilkdir. Liste koleksiyonu üyesi işlevleri, `AddHead` `RemoveHead` özellikle listenin baş bir yanındaki öğeleri eklemek ve kaldırmak için kullanılabilir; Bu nedenle, en son eklenen öğe kaldırılacak ilk öğedir.
 
@@ -36,7 +37,7 @@ Standart liste koleksiyonunda hem baş hem de kuyruk olduğundan, bir son ilk ç
 
 Bu yaklaşımın temel sınıfı kullanıma sunduğunu unutmayın `CObList` . Kullanıcı herhangi `CObList` bir üye işlevi çağırabilir, bu, yığın için anlamlı hale getirir.
 
-## <a name="queues"></a><a name="_core_queues"></a>Klarında
+## <a name="queues"></a><a name="_core_queues"></a> Klarında
 
 Standart liste koleksiyonunda hem baş hem de kuyruk olduğundan, ilk çıkar sırasının davranışını taklit eden bir türetilmiş liste koleksiyonu oluşturmak da kolaydır. Kuyruk, Cafeteria 'daki bir kişi satırı gibidir. Satırdaki ilk kişi, sunulacak ilk kişidir. Daha fazla kişi geldiklerinde, onların dönmesini beklemek için satırın sonuna gider. Liste koleksiyonu üyesi işlevleri, `AddTail` `RemoveHead` özellikle de listenin baş veya kuyruklu öğeleri eklemek ve kaldırmak için kullanılabilir; Bu nedenle, en son eklenen öğe her zaman kaldırılacak en son öğedir.
 

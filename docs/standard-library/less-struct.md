@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: less yapısı'
 title: less Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - less struct
 - less function
 ms.assetid: 39349da3-11cd-4774-b2cc-b46af5aae5d7
-ms.openlocfilehash: 13aef35856066f9c1897c3d8855c5ff537aa3567
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: b80789f2d2f2c8d1267450a39c39317af1da9244
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245346"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312884"
 ---
 # <a name="less-struct"></a>less Yapısı
 
-Daha az gerçekleştiren bir ikili koşula-işlemi daha (`operator<`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde küçüktür işlemi () gerçekleştiren bir ikili koşul `operator<` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,21 +41,21 @@ struct less<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Destekleyen herhangi bir türü bir `operator<` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator<`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
-*Sol*\
-Sol işleneni, daha az-işlemi daha. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+Küçüktür işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Daha az sağ işleneninin-işlemi daha. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+Küçüktür işleminin doğru işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left < Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator<`.
+Sonucu `Left < Right` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator<` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkili koşul `less` < `Type`> katı bir zayıf türünün öğe değerlerini bir dizi sıralama sağlar *türü* denk sınıfların içinde bu tür standart matematiksel karşılar ve yalnızca, Bu nedenle sıralanan gereksinimleri. Farklı değerlerin tüm öğelerin birbirine göre sıralanır, toplam, öğelerin sıralaması uzmanlıkları herhangi bir işaretçi türü için yield.
+İkili koşul `less` < `Type`>,, ve yalnızca bu tür için standart matematik gereksinimlerini karşılıyorsa, bir dizi  öğe değerlerini denklik sınıflarında katı bir şekilde bir şekilde bir, ancak bu türü Herhangi bir işaretçi türü için özelleştirilmiş bir öğe sıralaması, farklı değerlerin tüm öğelerinin birbirleriyle ilgili olarak sıralanmasından oluşur.
 
 ## <a name="example"></a>Örnek
 

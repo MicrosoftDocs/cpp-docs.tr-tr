@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3233'
 title: Derleyici hatası C3233
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3233
 ms.assetid: a9210830-1136-4f02-ba41-030c85f93547
-ms.openlocfilehash: 110d1ef84ca2f558f597afadadbede61a89da20c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 825269c96e596a53b9f1852ce50741f9a5d70e6c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751111"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312000"
 ---
 # <a name="compiler-error-c3233"></a>Derleyici hatası C3233
 
 ' Type ': genel tür parametresi zaten kısıtlanmış
 
-Birden fazla `where` yan tümcesindeki genel bir parametreyi kısıtlamak geçerli değildir.
+Bir genel parametrenin birden fazla yan tümce içinde sınırlandırılmasına yönelik geçerli değildir `where` .
 
 Aşağıdaki örnek C3233 oluşturur:
 

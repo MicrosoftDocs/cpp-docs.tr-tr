@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_new_handler'
 title: _set_new_handler
 ms.date: 4/2/2020
 api_name:
@@ -30,18 +31,18 @@ helpviewer_keywords:
 - error handling
 - transferring control to error handler
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
-ms.openlocfilehash: cd6e4df47b28e84bb0ac5ee857cfa1a3e7cf805a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1e693e010bcbb9489426fc5c67e888d50f430765
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218552"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312403"
 ---
 # <a name="_set_new_handler"></a>_set_new_handler
 
 Operatör bellek ayıramazsa, denetimi hata işleme mekanizmanıza aktarır **`new`** .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 _PNH _set_new_handler( _PNH pNewHandler );
@@ -54,11 +55,11 @@ Uygulama tarafından sağlanan bellek işleme işlevine yönelik işaretçi. 0 b
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceki işlevin daha sonra geri yüklenebilmesi için, **_set_new_handler**tarafından kaydedilen önceki özel durum işleme işlevine yönelik bir işaretçi döndürür. Önceki bir işlev ayarlanmamışsa, varsayılan davranışı geri yüklemek için dönüş değeri kullanılabilir; Bu değer **null**olabilir.
+Önceki işlevin daha sonra geri yüklenebilmesi için, **_set_new_handler** tarafından kaydedilen önceki özel durum işleme işlevine yönelik bir işaretçi döndürür. Önceki bir işlev ayarlanmamışsa, varsayılan davranışı geri yüklemek için dönüş değeri kullanılabilir; Bu değer **null** olabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_set_new_handler** işlevi, **`new`** işleç bellek ayıramazsa denetimi karşılayan bir özel durum işleme işlevi belirtir. **`new`** Başarısız olursa, çalışma zamanı sistemi otomatik olarak **_set_new_handler**bir bağımsız değişken olarak geçirilen özel durum işleme işlevini çağırır. New. h içinde tanımlanan **_PNH**, türü döndüren **`int`** ve **size_t**türünde bir bağımsız değişken alan bir işlev işaretçisidir. Ayrılacak alan miktarını belirtmek için **size_t** kullanın.
+C++ **_set_new_handler** işlevi, **`new`** işleç bellek ayıramazsa denetimi karşılayan bir özel durum işleme işlevi belirtir. **`new`** Başarısız olursa, çalışma zamanı sistemi otomatik olarak **_set_new_handler** bir bağımsız değişken olarak geçirilen özel durum işleme işlevini çağırır. New. h içinde tanımlanan **_PNH**, türü döndüren **`int`** ve **size_t** türünde bir bağımsız değişken alan bir işlev işaretçisidir. Ayrılacak alan miktarını belirtmek için **size_t** kullanın.
 
 Varsayılan işleyici yok.
 
@@ -95,7 +96,7 @@ int main( void )
    // . . .
 ```
 
-C++ [_set_new_mode](set-new-mode.md) işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın **_set_new_handler**tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın:
+C++ [_set_new_mode](set-new-mode.md) işlevi, [malloc](malloc.md)için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın **_set_new_handler** tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılanı geçersiz kılmak için şunu çağırın:
 
 ```cpp
 _set_new_mode(1);

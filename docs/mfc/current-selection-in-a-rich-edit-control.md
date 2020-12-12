@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bir zengin düzenleme denetimindeki geçerli seçim'
 title: Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - rich edit controls [MFC], current selection in
 - selection, current in CRichEditCtrl
 ms.assetid: f6b2a2b6-5481-4ad3-9720-6dd772ea6fc8
-ms.openlocfilehash: 9591f1aeb4e159b9b4f70945d6248a3b8d1dc827
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 68f56ed4bbd308f6356876f5c78686a95103d8ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309400"
 ---
 # <a name="current-selection-in-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm
 

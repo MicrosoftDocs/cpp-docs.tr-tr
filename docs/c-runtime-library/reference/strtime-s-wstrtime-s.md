@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strtime_s _wstrtime_s'
 title: _strtime_s, _wstrtime_s
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - time, copying
 - _strtime_s function
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
-ms.openlocfilehash: 54828bf894ffc9062125c9680ec087cdf929b1a2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7bc12d4749f0d79f00ff60901620e272a7c69917
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309153"
 ---
 # <a name="_strtime_s-_wstrtime_s"></a>_strtime_s, _wstrtime_s
 
@@ -93,15 +94,15 @@ Bir hata durumu oluşursa, [parametre doğrulama](../../c-runtime-library/parame
 
 ## <a name="security-issues"></a>Güvenlik Sorunları
 
-*NumberOfElements* parametresi 9 ' dan büyükse, arabellek Için geçersiz**null** olmayan bir değer geçirmek erişim ihlaline neden olur.
+*NumberOfElements* parametresi 9 ' dan büyükse, arabellek Için geçersiz **null** olmayan bir değer geçirmek erişim ihlaline neden olur.
 
 Arabelleğin gerçek boyutundan daha büyük olan *numberOfElements* için değer geçirilmesi arabellek taşmasına neden olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, [_strtime](strtime-wstrtime.md) ve [_wstrtime](strtime-wstrtime.md)daha güvenli sürümlerini sağlar. **_Strtime_s** işlevi, geçerli yerel saati *timestr*tarafından işaret edilen arabelleğe kopyalar. Süre SS **: DD: ss** olarak biçimlendirilir; burada **SS** , 24 saatlik gösterimde saati temsil eden iki haneye, **mm** , saati geçen dakikaları temsil eden iki haneye ve **nn** saniyeyi temsil eden iki haneye sahiptir. Örneğin, **18:23:44** dizesi 23 dakika ve 44 saniye içinde 6 P.M. temsil eder Arabellek en az 9 bayt uzunluğunda olmalıdır; Gerçek Boyut ikinci parametre ile belirtilir.
+Bu işlevler, [_strtime](strtime-wstrtime.md) ve [_wstrtime](strtime-wstrtime.md)daha güvenli sürümlerini sağlar. **_Strtime_s** işlevi, geçerli yerel saati *timestr* tarafından işaret edilen arabelleğe kopyalar. Süre SS **: DD: ss** olarak biçimlendirilir; burada **SS** , 24 saatlik gösterimde saati temsil eden iki haneye, **mm** , saati geçen dakikaları temsil eden iki haneye ve **nn** saniyeyi temsil eden iki haneye sahiptir. Örneğin, **18:23:44** dizesi 23 dakika ve 44 saniye içinde 6 P.M. temsil eder Arabellek en az 9 bayt uzunluğunda olmalıdır; Gerçek Boyut ikinci parametre ile belirtilir.
 
-**_wstrtime** , **_strtime**geniş karakterli bir sürümüdür; **_wstrtime** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
+**_wstrtime** , **_strtime** geniş karakterli bir sürümüdür; **_wstrtime** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
 
 C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -109,7 +110,7 @@ Bu işlevlerin hata ayıklama Kitaplığı sürümleri ilk olarak arabelleği 0x
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
-### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme:
+### <a name="generic-text-routine-mapping"></a>Generic-Text yordam eşlemesi:
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -119,8 +120,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strtime_s**|\<Time. h>|
-|**_wstrtime_s**|\<Time. h> veya \<wchar. h>|
+|**_strtime_s**|\<time.h>|
+|**_wstrtime_s**|\<time.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

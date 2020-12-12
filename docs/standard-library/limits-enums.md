@@ -1,20 +1,21 @@
 ---
-title: '&lt;sınırları&gt; numaralandırmalar'
+description: 'Daha fazla bilgi edinin &lt; : &gt; numaralandırmaları sınırlar'
+title: '&lt;&gt;numaralandırmaları sınırlar'
 ms.date: 11/04/2016
 f1_keywords:
 - limits/std::float_denorm_style
 - limits/std::float_round_style
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
-ms.openlocfilehash: 567e0538f59c40d57f85d652a8919be6e034cf0b
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 115122a4901298018df8809be56a7fc69249d700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420073"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312871"
 ---
-# <a name="ltlimitsgt-enums"></a>&lt;sınırları&gt; numaralandırmalar
+# <a name="ltlimitsgt-enums"></a>&lt;&gt;numaralandırmaları sınırlar
 
-## <a name="float_denorm_style"></a>float_denorm_style
+## <a name="float_denorm_style"></a><a name="float_denorm_style"></a> float_denorm_style
 
 Sabit listesi, bir uygulamanın, Normalleştirilmemiş bir kayan nokta değerini temsil etmek için seçebileceğiniz çeşitli yöntemleri açıklar; normalleştirilmiş bir değer olarak temsil etmek için çok küçük:
 
@@ -29,17 +30,17 @@ enum float_denorm_style {
 
 Sabit Listesi şunu döndürür:
 
-- `denorm_indeterminate`, uluslararası formların varlığı veya yokluğu, çeviri sırasında saptanamıyor.
+- `denorm_indeterminate` Uluslararası formların varlığı veya yokluğu, çeviri sırasında saptanamıyor.
 
-- fazla kullanılabilir formlar yoksa `denorm_absent`.
+- `denorm_absent` denormallanmış formlar yoksa.
 
-- fazla kullanılabilir formlar varsa `denorm_present`.
+- `denorm_present` denormallanmış formlar varsa.
 
 ### <a name="example"></a>Örnek
 
 Bu sabit listesinin değerlerine erişilebilen bir örnek için bkz. [numeric_limits:: has_denorm](../standard-library/numeric-limits-class.md#has_denorm) .
 
-## <a name="float_round_style"></a>float_round_style
+## <a name="float_round_style"></a><a name="float_round_style"></a> float_round_style
 
 Sabit listesi, bir uygulamanın kayan nokta değerini bir tamsayı değerine yuvarlarken seçebileceği çeşitli yöntemleri açıklar.
 
@@ -56,15 +57,15 @@ enum float_round_style {
 
 Sabit Listesi şunu döndürür:
 
-- yuvarlama yöntemi belirlenemiyorsa `round_indeterminate`.
+- `round_indeterminate` yuvarlama yöntemi saptanamıyor.
 
-- sıfıra yaklaşdıysanız `round_toward_zero`.
+- `round_toward_zero` sıfıra yuvaralıyorsa.
 
-- En yakın tamsayıya yuvarla `round_to_nearest`.
+- `round_to_nearest` En yakın tamsayıya yuvarla.
 
-- sıfırdan yuvaralıyorsa `round_toward_infinity`.
+- `round_toward_infinity` sıfırdan uzağa yuvarlandıysanız.
 
-- daha negatif tamsayıya yuvarlayıp `round_toward_neg_infinity`.
+- `round_toward_neg_infinity` daha negatif tam sayıya yuvarlandıysanız.
 
 ### <a name="example"></a>Örnek
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bağlantı noktaları'
 title: Bağlantı Noktaları
 ms.date: 11/19/2018
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - CCmdTarget class [MFC], and connection points
 - sinks, connection points
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
-ms.openlocfilehash: c14d8247be2abdf828b88e728bd930691ec6571f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 721f35ea1737bf8e49f8b802b5382687a848c084
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310557"
 ---
 # <a name="connection-points"></a>Bağlantı Noktaları
 
@@ -49,7 +50,7 @@ Aşağıdaki örneklerde basit bir bağlantı haritası ve bir bağlantı noktas
 
 Sınıfınız birden fazla bağlantı noktasına sahipse, **BEGIN_CONNECTION_MAP** ve **END_CONNECTION_MAP** makroları arasında ek **CONNECTION_PART** makroları ekleyin.
 
-Son olarak, sınıfının oluşturucusunda öğesine bir çağrı ekleyin `EnableConnections` . Örnek:
+Son olarak, sınıfının oluşturucusunda öğesine bir çağrı ekleyin `EnableConnections` . Örneğin:
 
 [!code-cpp[NVC_MFCConnectionPoints#3](codesnippet/cpp/connection-points_3.cpp)]
 

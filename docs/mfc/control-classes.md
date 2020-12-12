@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: denetim sınıfları'
 title: Denetim Sınıfları
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - text, controls for input [MFC]
 - user input [MFC], MFC control classes
 ms.assetid: f9876606-9f5b-44cb-9135-213298d1df8f
-ms.openlocfilehash: 277802bff3e4833396c4bf114ff8880fcd26343d
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: eb0bee6d865867a052b5f49408bdaa1b70da343f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310128"
 ---
 # <a name="control-classes"></a>Denetim Sınıfları
 

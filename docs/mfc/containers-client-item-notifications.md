@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: kapsayıcılar: Client-Item bildirimleri'
 title: 'Kapsayıcılar: İstemci Öğesi Bildirimleri'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE containers [MFC], client-item notifications
 - client items and OLE containers
 ms.assetid: e1f1c427-01f5-45f2-b496-c5bce3d76340
-ms.openlocfilehash: 54b1b2a64685b00fb265e0f80c1f6ad878a7da85
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 2918ea29bcd656e76735db8e003d33dce21c6b63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623011"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310479"
 ---
 # <a name="containers-client-item-notifications"></a>Kapsayıcılar: İstemci Öğesi Bildirimleri
 
@@ -30,7 +31,7 @@ Bu makalede, sunucu uygulamaları istemci uygulamanızın belgesindeki öğeleri
 |**OLE_CHANGED_STATE**|OLE öğesi bir durumdan diğerine değişti.|
 |**OLE_CHANGED_ASPECT**|OLE öğesinin çizim yönü Framework tarafından değiştirildi.|
 
-Bu değerler, AFXOLE ' de tanımlanan **OLE_NOTIFICATION** numaralandırmadır. Olsun.
+Bu değerler, AFXOLE. H içinde tanımlanan **OLE_NOTIFICATION** numaralandırmasından alınır.
 
 Bu işlevin ikinci bağımsız değişkeni, öğenin nasıl değiştiğini veya ne durum girildiğini belirtir:
 
@@ -38,9 +39,9 @@ Bu işlevin ikinci bağımsız değişkeni, öğenin nasıl değiştiğini veya 
 |----------------------------|---------------------|
 |**OLE_SAVED** veya **OLE_CLOSED**|Kullanılmaz.|
 |**OLE_CHANGED**|Değiştirilen OLE öğesinin yönünü belirtir.|
-|**OLE_CHANGED_STATE**|Girilen durumu açıklar (*emptyState*, *loadedState*, *openState*, *ActiveState*veya *activeuistate*).|
+|**OLE_CHANGED_STATE**|Girilen durumu açıklar (*emptyState*, *loadedState*, *openState*, *ActiveState* veya *activeuistate*).|
 
-Bir istemci öğesinin varsaydığı durumlar hakkında daha fazla bilgi için bkz. [kapsayıcılar: istemci-öğe durumları](containers-client-item-states.md).
+Bir istemci öğesinin varsaydığı durumlar hakkında daha fazla bilgi için bkz. [kapsayıcılar: Client-Item durumları](containers-client-item-states.md).
 
 Çerçeve, `COleClientItem::OnGetItemPosition` bir öğe yerinde düzenlenmek için etkinleştirildiğinde çağrılır. Uygulama, yerinde düzenlemeden desteklenen uygulamalar için gereklidir. MFC Uygulama Sihirbazı, öğenin koordinatlarını `CRect` öğesine bir bağımsız değişken olarak geçirilen nesneye atayan temel bir uygulama sağlar `OnGetItemPosition` .
 
@@ -49,5 +50,5 @@ Bir OLE öğesinin konumu veya boyutu yerinde düzenlemede değişirse, kapsayı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kapsayıcılar](containers.md)<br/>
-[Kapsayıcılar: İstemci Öğesi Durumları](containers-client-item-states.md)<br/>
+[Kapsayıcılar: Client-Item durumlar](containers-client-item-states.md)<br/>
 [Colet Clientıtem:: OnChangeItemPosition](reference/coleclientitem-class.md#onchangeitemposition)
