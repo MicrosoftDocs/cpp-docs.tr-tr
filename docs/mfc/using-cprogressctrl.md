@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CProgressCtrl kullanma'
 title: CProgressCtrl Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - progress controls [MFC], CProgressCtrl
 - progress controls [MFC], using
 ms.assetid: 61473270-196b-41ab-bf2b-467f46673539
-ms.openlocfilehash: a575a766650a77b0908f0fa3016139239b23dc56
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 652349a62d62652db32fbe002cdc714ac7ca1420
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271635"
 ---
 # <a name="using-cprogressctrl"></a>CProgressCtrl Kullanma
 
@@ -24,11 +25,11 @@ Uzun bir işlemin ilerlemesini göstermek için ilerleme durumu denetimini kulla
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [İlerleme Denetimi için Stiller](../mfc/styles-for-the-progress-control.md)
+- [Ilerleme denetimi için stiller](../mfc/styles-for-the-progress-control.md)
 
-- [İlerleme Denetimi Ayarları](../mfc/settings-for-the-progress-control.md)
+- [Ilerleme denetimi ayarları](../mfc/settings-for-the-progress-control.md)
 
-- [İlerleme Durumu Denetimini Düzenleme](../mfc/manipulating-the-progress-control.md)
+- [Ilerleme denetimini düzenleme](../mfc/manipulating-the-progress-control.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

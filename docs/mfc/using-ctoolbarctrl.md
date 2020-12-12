@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: CToolBarCtrl Kullanma'
 title: CToolBarCtrl Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CToolBarCtrl class [MFC]
 - toolbar controls [MFC], creating
 ms.assetid: 13cf3753-135b-4a3e-a850-ed30177fcf9d
-ms.openlocfilehash: a82a763ca357feccbe5b61d4f85d6038563c1c11
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 4d2d72ab6368c66e76648cd7ff00771bde4f5a60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442245"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271557"
 ---
 # <a name="using-ctoolbarctrl"></a>CToolBarCtrl Kullanma
 
@@ -18,17 +19,17 @@ Düğme ve isteğe bağlı boşluklar içeren bir denetim penceresi oluşturmak 
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Araç Çubuğu Oluşturma Yöntemleri](../mfc/methods-of-creating-a-toolbar.md)
+- [Araç çubuğu oluşturma yöntemleri](../mfc/methods-of-creating-a-toolbar.md)
 
-- [Araç Çubuğu Denetimi için Ayarlar](../mfc/settings-for-the-toolbar-control.md)
+- [Araç çubuğu denetimi için ayarlar](../mfc/settings-for-the-toolbar-control.md)
 
-- [CToolBarCtrl Nesnesi Oluşturma](../mfc/creating-a-ctoolbarctrl-object.md)
+- [CToolBarCtrl nesnesi oluşturma](../mfc/creating-a-ctoolbarctrl-object.md)
 
-- [Bir Araç Çubuğu Denetiminde Görüntü Listeleri Kullanma](../mfc/using-image-lists-in-a-toolbar-control.md)
+- [Araç çubuğu denetiminde görüntü listeleri kullanma](../mfc/using-image-lists-in-a-toolbar-control.md)
 
-- [Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma](../mfc/using-drop-down-buttons-in-a-toolbar-control.md)
+- [Bir araç çubuğu denetiminde Drop-Down düğmeleri kullanma](../mfc/using-drop-down-buttons-in-a-toolbar-control.md)
 
-- [Bir Araç Çubuğu Denetiminin Görünümünü Özelleştirme](../mfc/customizing-the-appearance-of-a-toolbar-control.md)
+- [Bir araç çubuğu denetiminin görünümünü özelleştirme](../mfc/customizing-the-appearance-of-a-toolbar-control.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

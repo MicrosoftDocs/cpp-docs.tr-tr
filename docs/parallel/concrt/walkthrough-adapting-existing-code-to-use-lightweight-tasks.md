@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: basit görevleri kullanmak için mevcut kodu uyarlatma'
 title: 'İzlenecek yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - using lightweight tasks [Concurrency Runtime]
 - lightweight tasks, using [Concurrency Runtime]
 ms.assetid: 1edfe818-d274-46de-bdd3-e92967c9bbe0
-ms.openlocfilehash: 7ce18b54835b2380d3baee77b00a670351e3279f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1c3de0f49dc1edc3392a436bb911e005ef84bcf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224922"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271414"
 ---
 # <a name="walkthrough-adapting-existing-code-to-use-lightweight-tasks"></a>İzlenecek yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama
 

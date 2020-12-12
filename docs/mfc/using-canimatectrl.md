@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAnimateCtrl kullanma'
 title: CAnimateCtrl Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - controls [MFC], animation
 - CAnimateCtrl class [MFC], about CAnimateCtrl class [MFC]
 ms.assetid: 696c0805-bef0-4e2e-a9e7-b37b9215b7f0
-ms.openlocfilehash: 79c1a0111317514ef6fd68acd0c6a2ebdccc3ba4
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: bb13d23f45b3a19516a688fd9e9857f750196d56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447109"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271791"
 ---
 # <a name="using-canimatectrl"></a>CAnimateCtrl Kullanma
 
@@ -23,9 +24,9 @@ Animasyon denetimleri yalnızca basit AVI kliplerini yürütebilir ve sesi deste
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Animasyon Denetimi Kullanma](../mfc/using-an-animation-control.md)
+- [Animasyon denetimi kullanma](../mfc/using-an-animation-control.md)
 
-- [Animasyon Denetimlerinin Gönderdiği Bildirimler](../mfc/notifications-sent-by-animation-controls.md)
+- [Animasyon denetimleri tarafından gönderilen bildirimler](../mfc/notifications-sent-by-animation-controls.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

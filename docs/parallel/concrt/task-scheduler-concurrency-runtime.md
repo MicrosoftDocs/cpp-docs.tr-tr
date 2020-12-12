@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Görev Zamanlayıcı (Eşzamanlılık Çalışma Zamanı)'
 title: Görev Zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,19 +17,19 @@ helpviewer_keywords:
 - scheduler policies [Concurrency Runtime]
 - task scheduler [Concurrency Runtime], wait function
 ms.assetid: 9aba278c-e0c9-4ede-b7c6-fedf7a365d90
-ms.openlocfilehash: e4a2e66afe656f9588ed3040218d1f70b3684190
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: db52b6714f5bdb96cb33aeea1bce1d92f5d5d4a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271388"
 ---
 # <a name="task-scheduler-concurrency-runtime"></a>Görev Zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
 
 Belgelerinin bu bölümündeki konularda Eşzamanlılık Çalışma Zamanı Görev Zamanlayıcı önemli özellikler açıklanır. Görev Zamanlayıcı, Eşzamanlılık Çalışma Zamanı kullanan mevcut kodunuzun performansı üzerinde ince ayar yapmak istediğinizde faydalıdır.
 
 > [!IMPORTANT]
-> Görev Zamanlayıcı, Evrensel Windows Platformu (UWP) uygulamasından kullanılamaz. Daha fazla bilgi için bkz. [UWP uygulamaları için C++ Içinde zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
+> Görev Zamanlayıcı, Evrensel Windows Platformu (UWP) uygulamasından kullanılamaz. Daha fazla bilgi için bkz. [UWP uygulamaları Için C++ ' da zaman uyumsuz Işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).
 >
 > Visual Studio 2015 ve üzeri sürümlerde, [concurrency:: Task](../../parallel/concrt/reference/task-class.md) sınıfı ve ppltasks. h içindeki ilgili türler, zamanlayıcı olarak Windows ThreadPool 'ı kullanır. Bu konu, artık ppltasks. h içinde tanımlanan türler için geçerli değildir. Parallel_for gibi paralel algoritmalar varsayılan Zamanlayıcı olarak Eşzamanlılık Çalışma Zamanı kullanmaya devam eder.
 
@@ -47,12 +48,12 @@ Eşzamanlılık Çalışma Zamanı, altyapı ayrıntılarını yönetmek zorunda
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Zamanlayıcı Örnekleri](../../parallel/concrt/scheduler-instances.md)|Zamanlayıcı örneklerini ve bunları yönetmek için `concurrency::Scheduler` ve `concurrency::CurrentScheduler` sınıflarının nasıl kullanılacağını açıklar. Açık zamanlama ilkelerini belirli iş yükleri türleriyle ilişkilendirmek istediğinizde Zamanlayıcı örnekleri kullanın.|
-|[Scheduler İlkeleri](../../parallel/concrt/scheduler-policies.md)|Zamanlayıcı ilkelerinin rolünü açıklar. Scheduler 'ın görevleri yönettiğinde kullandığı stratejiyi denetlemek istediğinizde Zamanlayıcı ilkelerini kullanın.|
-|[Zamanlama Grupları](../../parallel/concrt/schedule-groups.md)|Zamanlama gruplarının rolünü açıklar. Görevler arasında yüksek düzeyde yere ihtiyacınız olduğunda, örneğin, bir ilgili görev grubu aynı işlemci düğümünde yürütmeyi avantajı olduğunda zamanlama gruplarını kullanın.|
-|[Basit Görevler](../../parallel/concrt/lightweight-tasks.md)|Hafif görevlerin rolünü açıklar. Basit görevler, Eşzamanlılık Çalışma Zamanı zamanlama işlevini kullanmak üzere mevcut kodu uyarlıyorsanız faydalıdır.|
-|[Bağlamlar](../../parallel/concrt/contexts.md)|Bağlamların rolünü, `concurrency::wait` işlevini ve `concurrency::Context` sınıfını açıklar. Bağlamlar engellenme, engellemeyi kaldırma, ve ödeme yaparken veya uygulamanızda fazla aboneliği etkinleştirmek istediğinizde bu işlevselliği kullanın.|
-|[Bellek Yönetimi İşlevleri](../../parallel/concrt/memory-management-functions.md)|`concurrency::Alloc` ve `concurrency::Free` işlevlerini açıklar. Bu işlevler, belleği eşzamanlı bir şekilde ayırarak ve boşaltarak bellek performansını iyileştirebilir.|
+|[Zamanlayıcı örnekleri](../../parallel/concrt/scheduler-instances.md)|Zamanlayıcı örneklerini ve `concurrency::Scheduler` `concurrency::CurrentScheduler` bunları yönetmek için ve sınıflarının nasıl kullanılacağını açıklar. Açık zamanlama ilkelerini belirli iş yükleri türleriyle ilişkilendirmek istediğinizde Zamanlayıcı örnekleri kullanın.|
+|[Zamanlayıcı Ilkeleri](../../parallel/concrt/scheduler-policies.md)|Zamanlayıcı ilkelerinin rolünü açıklar. Scheduler 'ın görevleri yönettiğinde kullandığı stratejiyi denetlemek istediğinizde Zamanlayıcı ilkelerini kullanın.|
+|[Zamanlama grupları](../../parallel/concrt/schedule-groups.md)|Zamanlama gruplarının rolünü açıklar. Görevler arasında yüksek düzeyde yere ihtiyacınız olduğunda, örneğin, bir ilgili görev grubu aynı işlemci düğümünde yürütmeyi avantajı olduğunda zamanlama gruplarını kullanın.|
+|[Hafif görevler](../../parallel/concrt/lightweight-tasks.md)|Hafif görevlerin rolünü açıklar. Basit görevler, Eşzamanlılık Çalışma Zamanı zamanlama işlevini kullanmak üzere mevcut kodu uyarlıyorsanız faydalıdır.|
+|[Bağlamlar](../../parallel/concrt/contexts.md)|Bağlamlar, `concurrency::wait` işlev ve sınıf rolü tanımlar `concurrency::Context` . Bağlamlar engellenme, engellemeyi kaldırma, ve ödeme yaparken veya uygulamanızda fazla aboneliği etkinleştirmek istediğinizde bu işlevselliği kullanın.|
+|[Bellek yönetimi Işlevleri](../../parallel/concrt/memory-management-functions.md)|`concurrency::Alloc`Ve işlevlerini açıklar `concurrency::Free` . Bu işlevler, belleği eşzamanlı bir şekilde ayırarak ve boşaltarak bellek performansını iyileştirebilir.|
 |[Diğer eşzamanlılık modelleriyle karşılaştırma](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|PreEmptive ve işbirlikçi zamanlama mekanizmaları arasındaki farkları açıklar.|
 |[Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Uygulamalarınızda paralel algoritmaların çeşitli paralel desenlerinin nasıl kullanılacağını açıklar.|
 |[Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)|Uygulamalarınızda zaman uyumsuz aracıların nasıl kullanılacağını açıklar.|

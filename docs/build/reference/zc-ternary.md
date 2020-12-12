@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: `/Zc:ternary` (koşullu işleç kurallarını zorla)'
 title: /Zc:ternary (Koşullu işleç kurallarını zorla)
 ms.date: 09/12/2019
 f1_keywords:
@@ -7,24 +8,24 @@ helpviewer_keywords:
 - /Zc:ternary
 - Zc:ternary
 - -Zc:ternary
-ms.openlocfilehash: 04bd0c49528d86ddd4d1e6c77804cf64278db188
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ea1cf57aa1633e08095dfd01964a2255cb0b3c70
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271323"
 ---
-# <a name="zcternary-enforce-conditional-operator-rules"></a>`/Zc:ternary`(Koşullu işleç kurallarını zorla)
+# <a name="zcternary-enforce-conditional-operator-rules"></a>`/Zc:ternary` (Koşullu işleç kurallarını zorla)
 
 Koşullu bir operatör ifadesinde ikinci ve üçüncü işlenenlerinin türleri ve const veya volatile (CV) niteliği için C++ standart kurallarının uygulanmasını etkinleştirin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/Zc:ternary`**[**`-`**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2017 ' den başlayarak, derleyici C++ standart *koşullu işleci* ( **`?:`** ) davranışını destekler. *Üçlü işleç*olarak da bilinir. C++ standardı Üçlü işlenenlerinin üç koşuldan birini karşılemesini gerektirir: işlenenler aynı türde ve **`const`** veya **`volatile`** niteliğin (CV-nitelik) olmalıdır, ya da yalnızca bir işlenen aynı türe ve CV niteleyicisini diğeri ile kesin bir şekilde dönüştürülebilir olmalıdır. Ya da, bir veya her iki işlenen de bir throw ifadesi olmalıdır. Visual Studio 2017 sürüm 15,5 ' den önceki sürümlerde, derleyici standart tarafından belirsiz olarak kabul edilen Dönüştürmelere izin verilir.
+Visual Studio 2017 ' den başlayarak, derleyici C++ standart *koşullu işleci* ( **`?:`** ) davranışını destekler. *Üçlü işleç* olarak da bilinir. C++ standardı Üçlü işlenenlerinin üç koşuldan birini karşılemesini gerektirir: işlenenler aynı türde ve **`const`** veya **`volatile`** niteliğin (CV-nitelik) olmalıdır, ya da yalnızca bir işlenen aynı türe ve CV niteleyicisini diğeri ile kesin bir şekilde dönüştürülebilir olmalıdır. Ya da, bir veya her iki işlenen de bir throw ifadesi olmalıdır. Visual Studio 2017 sürüm 15,5 ' den önceki sürümlerde, derleyici standart tarafından belirsiz olarak kabul edilen Dönüştürmelere izin verilir.
 
 **`/Zc:ternary`** Seçenek belirtildiğinde, derleyici standarda uygun olur. Bu, eşleşen türler ve ikinci ve üçüncü işlenenlerde CV niteliği için kuralları karşılamayan kodu reddeder.
 
@@ -161,4 +162,4 @@ Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz. [Standart 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[`/Zc`Uyumsuzlu](zc-conformance.md)
+[`/Zc` Uyumsuzlu](zc-conformance.md)

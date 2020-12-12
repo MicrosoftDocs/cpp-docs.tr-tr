@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SafeInt sınıfı'
 title: SafeInt Sınıfı
 ms.date: 10/22/2018
 ms.topic: reference
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SafeInt class
 - SafeInt class, constructor
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-ms.openlocfilehash: d61ce20a8644ca64d37c0eca605d52fb308c0863
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b5ee9147347f2c01ff05fd93b8b22ea3ce30ee37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560971"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271336"
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 
@@ -24,7 +25,7 @@ Tamsayı taşmasını önlemeye yardımcı olmak için tamsayı temel öğelerin
 > [!NOTE]
 > SafeInt Kitaplığı 'nın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) . SafeInt kitaplığını kullanmak için depoyu kopyalayın ve `#include "SafeInt.hpp"`
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename T, typename E = _SAFEINT_DEFAULT_ERROR_POLICY>
@@ -61,7 +62,7 @@ Hata işleme ilkesini tanımlayan bir numaralandırılmış veri türü.
 
 ### <a name="assignment-operators"></a>Atama İşleçleri
 
-| Adı  |  Syntax |
+| Ad  |  Syntax |
 |----|---------|
 | =     |  `template<typename U>`<br />`SafeInt<T,E>& operator= (const U& rhs)` |
 | =     |  `SafeInt<T,E>& operator= (const T& rhs) throw()` |
@@ -70,7 +71,7 @@ Hata işleme ilkesini tanımlayan bir numaralandırılmış veri türü.
 
 ### <a name="casting-operators"></a>Atama İşleçleri
 
-| Adı              |  Syntax |
+| Ad              |  Syntax |
 |------|---------------------------------|
 | bool              |  `operator bool() throw()` |
 | char              |  `operator char() const` |
@@ -88,7 +89,7 @@ Hata işleme ilkesini tanımlayan bir numaralandırılmış veri türü.
 
 ### <a name="comparison-operators"></a>Karşılaştırma İşleçleri
 
-| Adı  |  Syntax |
+| Ad  |  Syntax |
 |----|----------------|
 | \<     |  `template<typename U>`<br /><br /> `bool operator< (U rhs) const throw()` |
 | \<     |  `bool operator< (SafeInt<T,E> rhs) const throw()` |
@@ -107,7 +108,7 @@ Hata işleme ilkesini tanımlayan bir numaralandırılmış veri türü.
 
 ### <a name="arithmetic-operators"></a>Aritmetik İşleçler
 
-| Adı  |  Syntax |
+| Ad  |  Syntax |
 |----|--------------|
 | +     |  `const SafeInt<T,E>& operator+ () const throw()` |
 | -     |  `SafeInt<T,E> operator- () const` |
@@ -140,7 +141,7 @@ Hata işleme ilkesini tanımlayan bir numaralandırılmış veri türü.
 
 ### <a name="logical-operators"></a>Mantıksal İşleçler
 
-| Adı     |  Syntax |
+| Ad     |  Syntax |
 |------|--------------|
 | !        |  `bool operator !() const throw()` |
 | ~        |  `SafeInt<T,E> operator~ () const throw()` |
@@ -170,7 +171,7 @@ Hata işleme ilkesini tanımlayan bir numaralandırılmış veri türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`SafeInt`Sınıfı matematik işlemlerinde tamsayı taşmasına karşı koruma sağlar. Örneğin, iki 8 bitlik tamsayılar eklemeyi düşünün: biri 200 değerine sahiptir ve ikincisi 100 değerine sahiptir. Doğru matematiksel işlem 200 + 100 = 300 olur. Ancak, 8 bit tamsayı sınırı nedeniyle, üst bit kaybedilir ve derleyici sonuç olarak 44 (300-2<sup>8</sup>) döndürür. Bu Matematik denklemine bağlı olan tüm işlemler beklenmeyen davranışlar oluşturur.
+`SafeInt`Sınıfı matematik işlemlerinde tamsayı taşmasına karşı koruma sağlar. Örneğin, 2 8 bit tamsayılar eklemeyi göz önünde bulundurun: biri 200 değerine sahiptir ve ikincisinin bir 100 değeri vardır. Doğru matematiksel işlem 200 + 100 = 300 olur. Ancak, 8 bit tamsayı sınırı nedeniyle, üst bit kaybedilir ve derleyici sonuç olarak 44 (300-2<sup>8</sup>) döndürür. Bu Matematik denklemine bağlı olan tüm işlemler beklenmeyen davranışlar oluşturur.
 
 `SafeInt`Sınıfı, aritmetik bir taşın mi oluştuğunu yoksa kodun sıfıra bölmeye mi çalışacağını denetler. Her iki durumda da, sınıf olası sorunun programını uyarmak için hata işleyicisini çağırır.
 
@@ -281,13 +282,13 @@ SafeInt (const U& i)
 'ndaki Yeni nesnenin Boole değeri `SafeInt` .
 
 `u`<br/>
-'ndaki `SafeInt` U türünde bir. Yeni `SafeInt` nesne *u*ile aynı değere sahip olacaktır, ancak T türünde olacaktır.
+'ndaki `SafeInt` U türünde bir. Yeni `SafeInt` nesne *u* ile aynı değere sahip olacaktır, ancak T türünde olacaktır.
 
 `U` İçinde depolanan verilerin türü `SafeInt` . Bu bir Boolean, karakter ya da tamsayı türü olabilir. Bir tamsayı türü ise, imzalanmış veya imzasız olabilir ve 8 ile 64 bit arasında olabilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*I* veya *u*oluşturucusunun giriş parametresi bir Boolean, karakter veya tamsayı türü olmalıdır. Başka bir parametre türü ise, `SafeInt` sınıfı geçersiz bir giriş parametresini göstermek için [static_assert](../cpp/static-assert.md) çağırır.
+*I* veya *u* oluşturucusunun giriş parametresi bir Boolean, karakter veya tamsayı türü olmalıdır. Başka bir parametre türü ise, `SafeInt` sınıfı geçersiz bir giriş parametresini göstermek için [static_assert](../cpp/static-assert.md) çağırır.
 
 Şablon türünü kullanan oluşturucular, `U` giriş parametresini otomatik olarak belirtilen türe dönüştürür `T` . `SafeInt`Sınıfı veri kaybı olmadan verileri dönüştürür. Verileri `E` veri kaybı olmadan türüne dönüştüremediğinden hata işleyicisine rapor bildirir `T` .
 

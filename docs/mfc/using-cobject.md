@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CObject kullanma'
 title: CObject Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - MFC, base class
 - CObject class [MFC]
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
-ms.openlocfilehash: b5399f02819407a529fd5ec66d4f5acbb16ca002
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 203e2a498f787f23de21db4469e5cdd7c5543761
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271648"
 ---
 # <a name="using-cobject"></a>CObject Kullanma
 
-[CObject](../mfc/reference/cobject-class.md) , çoğu MICROSOFT FOUNDATION Class KITAPLıĞı (MFC) için kök taban sınıfıdır. `CObject` sınıfı, serileştirme desteği, çalışma zamanı sınıf bilgileri ve nesne tanılama çıktısı dahil olmak üzere kendi program nesneleriniz içinde birleştirmek isteyebileceğiniz birçok yararlı özelliği içerir. Sınıfınızı `CObject`türettiğinizde sınıfınız bu `CObject` özelliklerden yararlanabilir.
+[CObject](../mfc/reference/cobject-class.md) , çoğu MICROSOFT FOUNDATION Class KITAPLıĞı (MFC) için kök taban sınıfıdır. `CObject`Sınıfı, serileştirme desteği, çalışma zamanı sınıf bilgileri ve nesne tanılama çıktısı dahil olmak üzere kendi program nesneleriniz içinde birleştirmek isteyebileceğiniz birçok yararlı özellik içerir. Sınıfınızı ' dan türetirsiniz `CObject` , sınıfınız bu `CObject` özelliklerden yararlanabilir.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
 
@@ -39,8 +40,8 @@ ms.locfileid: "79441928"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramlar ](../mfc/mfc-concepts.md)<br/>
-[Genel MFC Konuları](../mfc/general-mfc-topics.md)<br/>
-[CRuntimeClass Yapısı](../mfc/reference/cruntimeclass-structure.md)<br/>
+[Kavramlar](../mfc/mfc-concepts.md)<br/>
+[Genel MFC konuları](../mfc/general-mfc-topics.md)<br/>
+[CRuntimeClass yapısı](../mfc/reference/cruntimeclass-structure.md)<br/>
 [Dosyalar](../mfc/files-in-mfc.md)<br/>
 [Serileştirme](../mfc/serialization-in-mfc.md)
