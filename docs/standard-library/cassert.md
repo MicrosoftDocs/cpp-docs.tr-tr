@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; cassert&gt;'
 title: '&lt;cassert&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - cassert header
 ms.assetid: 6ead15a3-ac45-4075-be8e-350bca995c26
-ms.openlocfilehash: b28f4554610d37b881494748f75499f46cd9e8d9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e2b515fe492e6847c4d0cc5841dc43a2d879dd99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230239"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325362"
 ---
 # <a name="ltcassertgt"></a>&lt;cassert&gt;
 
@@ -20,7 +21,7 @@ C standart kitaplığı üst bilgisini içerir \<assert.h> ve ilgili adları `st
 > [!NOTE]
 > \<assert.h>**`static_assert`** makroyu tanımlamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cassert>
@@ -34,7 +35,7 @@ C standart kitaplığı üst bilgisini içerir \<assert.h> ve ilgili adları `st
 
 ### <a name="remarks"></a>Açıklamalar
 
-`assert(E)`yalnızca bir sabittir, NDEBUG, `assert` son tanımlanan veya yeniden tanımlandı *E* **`true`**
+`assert(E)`yalnızca bir sabittir, NDEBUG, `assert` son tanımlanan veya yeniden tanımlandı  **`true`**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

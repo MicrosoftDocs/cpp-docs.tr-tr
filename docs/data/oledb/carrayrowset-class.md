@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. CArrayRowset sınıfı
 title: CArrayRowset Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,18 +43,18 @@ helpviewer_keywords:
 - operator[], arrays
 - m_nRowsRead
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
-ms.openlocfilehash: c5f12afa09bc1c62d3287bab93159e217721906f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 929f8744671cecc54e7c192d4f3ddc17e27287cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213188"
 ---
 # <a name="carrayrowset-class"></a>CArrayRowset Sınıfı
 
 Dizi sözdizimini kullanarak bir satır kümesinin öğelerine erişir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template < class TAccessor >
@@ -78,7 +79,7 @@ Satır kümesinin kullanmasını istediğiniz erişimci sınıfının türü.
 | Ad | Açıklama |
 |--|--|
 | [CArrayRowset](#carrayrowset) | Oluşturucu. |
-| [Anlık Görüntü](#snapshot) | Tüm satır kümesini belleğe okur. |
+| [Görüntüye](#snapshot) | Tüm satır kümesini belleğe okur. |
 
 ### <a name="operators"></a>İşleçler
 
@@ -96,7 +97,7 @@ Satır kümesinin kullanmasını istediğiniz erişimci sınıfının türü.
 
 Yeni bir `CArrayRowset` nesne oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 CArrayRowset(int nMax = 100000);
@@ -121,7 +122,7 @@ HRESULT Snapshot() throw();
 
 Satır kümesindeki bir satıra erişmek için dizi benzeri sözdizimi sağlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 TAccessor & operator[](int nrow);

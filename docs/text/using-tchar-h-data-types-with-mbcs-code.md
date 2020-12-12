@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinmek için bkz. TCHAR. _MBCS kodlu H veri türleri
 title: _MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-ms.openlocfilehash: dd43c29d77c3351e8f597b474c4756ad3d45ef2b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4672ba210e0df0af1a4f4ee106d31cc978bdf2fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306592"
 ---
 # <a name="using-tcharh-data-types-with-_mbcs-code"></a>_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma
 
@@ -61,7 +62,7 @@ Aşağıda, bu tür çakışmasını önlemek için üç çözüm bulunur (ve so
     #define _tcschr _mbschr
     ```
 
-   Bu yaklaşımı uyguladığınızda, dize bağımsız değişkenleri ve dize dönüş değerleri için uygun veri türlerinin kullanılmasına dikkat etmeniz gerekir. Uygun tür eşleşmesini sağlamak için tür atama kullanabilirsiniz veya `_TXCHAR` Genel metin veri türünü kullanabilirsiniz. `_TXCHAR`SBCS kodunda türüyle eşlenir, **`char`** ancak MBCS kodunda tür ile eşlenir **`unsigned char`** . Genel metin makroları hakkında daha fazla bilgi için bkz. *çalışma zamanı kitaplık başvurusunda* [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md) .
+   Bu yaklaşımı uyguladığınızda, dize bağımsız değişkenleri ve dize dönüş değerleri için uygun veri türlerinin kullanılmasına dikkat etmeniz gerekir. Uygun tür eşleşmesini sağlamak için tür atama kullanabilirsiniz veya `_TXCHAR` Genel metin veri türünü kullanabilirsiniz. `_TXCHAR` SBCS kodunda türüyle eşlenir, **`char`** ancak MBCS kodunda tür ile eşlenir **`unsigned char`** . Genel metin makroları hakkında daha fazla bilgi için bkz. *çalışma zamanı kitaplık başvurusunda* [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

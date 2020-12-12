@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1083'
 title: Önemli hata C1083
 ms.date: 09/01/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-ms.openlocfilehash: 57ae8f2d0b7f02732032151f86617498e5201c61
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5a2a0cb842b385963f4f4695a2289abc1c07a702
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189632"
 ---
 # <a name="fatal-error-c1083"></a>Önemli hata C1083
 

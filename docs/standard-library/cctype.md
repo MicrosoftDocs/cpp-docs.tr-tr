@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; cctype&gt;'
 title: '&lt;cctype&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - cctype header
 ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
-ms.openlocfilehash: d1d69b5fe125372c489965949b2b59c4012fdec9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a66c0b0f253ce034becf1845bb42f0c204414c34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449842"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325348"
 ---
 # <a name="ltcctypegt"></a>&lt;cctype&gt;
 
-Standart C Kitaplığı üstbilgisi \<CType. h > içerir ve ilişkili adları `std` ad alanına ekler.
+Standart C Kitaplığı üst bilgisini içerir \<ctype.h> ve ilgili adları `std` ad alanına ekler.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<cctype >
+**Üst bilgi:**\<cctype>
 
 **Ad alanı:** std
 
@@ -49,5 +50,5 @@ int toupper(int c);
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Üst bilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)\
-[C++Standart kitaplığa genel bakış](../standard-library/cpp-standard-library-overview.md)\
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)\
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _com_error:: HelpFile'
 title: _com_error::HelpFile
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - HelpFile method [C++]
 ms.assetid: d2d3a0a1-6b62-4d52-a818-3cfae545a4af
-ms.openlocfilehash: 775adfa7d5dd5aca098edcd793c2164d65fe7efa
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e45785913a8a5a1909f702bce672727171e0baef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190228"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295932"
 ---
 # <a name="_com_errorhelpfile"></a>_com_error::HelpFile
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`IErrorInfo::GetHelpFile` işlevini çağırır.
+Çağıran `IErrorInfo::GetHelpFile` işlevi.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 _bstr_t HelpFile() const;
@@ -27,14 +28,14 @@ _bstr_t HelpFile() const;
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_com_error` nesnesi içinde kaydedilen `IErrorInfo` nesnesi için `IErrorInfo::GetHelpFile` sonucunu döndürür. Elde edilen BSTR, `_bstr_t` nesnesinde kapsüllenir. Kayıtlı `IErrorInfo` yoksa boş bir `_bstr_t`döndürür.
+`IErrorInfo::GetHelpFile` `IErrorInfo` Nesne içinde kaydedilen nesnenin sonucunu döndürür `_com_error` . Elde edilen BSTR, `_bstr_t` nesnesinde kapsüllenir. Hiçbiri `IErrorInfo` kayıtlı değilse, boş döndürür `_bstr_t` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IErrorInfo::GetHelpFile` yöntemi çağrılırken herhangi bir hata yoksayıldı.
+Yöntemi çağırırken herhangi bir hata `IErrorInfo::GetHelpFile` yoksayıldı.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_com_error Sınıfı](../cpp/com-error-class.md)
+[_com_error sınıfı](../cpp/com-error-class.md)

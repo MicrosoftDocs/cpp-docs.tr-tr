@@ -1,4 +1,5 @@
 ---
+description: ': Module:: GenericReleaseNotifier Class hakkında daha fazla bilgi'
 title: Module::GenericReleaseNotifier Sınıfı
 ms.date: 09/17/2018
 ms.topic: reference
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::GenericReleaseNotifier::GenericReleaseNotifier, constructor
 - Microsoft::WRL::Module::GenericReleaseNotifier::Invoke method
 ms.assetid: 244a8fbe-f89b-409b-aa65-db3e37f9b125
-ms.openlocfilehash: 7437f4e1f6874d4c708780a146e1761ac6d98305
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dd82da7c1b6b9a77c68b6d451bfa6dac31f51180
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186382"
 ---
 # <a name="modulegenericreleasenotifier-class"></a>Module::GenericReleaseNotifier Sınıfı
 
 Geçerli modüldeki son nesne serbest bırakıldığında bir olay işleyicisini çağırır. Olay işleyicisi, bir lambda, functor veya işlev işaretçisi üzerinde tarafından belirtilir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename T>
@@ -68,7 +69,7 @@ Ad                                                                          | A�
 
 **Ad alanı:** Microsoft:: WRL
 
-## <a name="modulegenericreleasenotifiercallback_"></a><a name="genericreleasenotifier-callback"></a>Module:: GenericReleaseNotifier:: callback_
+## <a name="modulegenericreleasenotifiercallback_"></a><a name="genericreleasenotifier-callback"></a> Module:: GenericReleaseNotifier:: callback_
 
 Geçerli nesneyle ilişkili lambda, functor veya işlev işaretçisi olay işleyicisini barındırır `Module::GenericReleaseNotifier` .
 
@@ -76,7 +77,7 @@ Geçerli nesneyle ilişkili lambda, functor veya işlev işaretçisi olay işley
 T callback_;
 ```
 
-## <a name="modulegenericreleasenotifiergenericreleasenotifier"></a><a name="genericreleasenotifier-genericreleasenotifier"></a>Module:: GenericReleaseNotifier:: GenericReleaseNotifier
+## <a name="modulegenericreleasenotifiergenericreleasenotifier"></a><a name="genericreleasenotifier-genericreleasenotifier"></a> Module:: GenericReleaseNotifier:: GenericReleaseNotifier
 
 `Module::GenericReleaseNotifier` sınıfının yeni bir örneğini başlatır.
 
@@ -95,7 +96,7 @@ Parantez işlev işleci () ile çağrılabilen lambda, functor veya işaretçide
 *Yayın*<br/>
 **`true`** Temeldeki modülün çağrılmasını etkinleştirmek için belirtin [:: ReleaseNotifier:: Release ()](module-releasenotifier-class.md#releasenotifier-release) yöntemi; aksi takdirde, belirtin **`false`** .
 
-## <a name="modulegenericreleasenotifierinvoke"></a><a name="genericreleasenotifier-invoke"></a>Module:: GenericReleaseNotifier:: Invoke
+## <a name="modulegenericreleasenotifierinvoke"></a><a name="genericreleasenotifier-invoke"></a> Module:: GenericReleaseNotifier:: Invoke
 
 Geçerli nesneyle ilişkili olay işleyicisini çağırır `Module::GenericReleaseNotifier` .
 

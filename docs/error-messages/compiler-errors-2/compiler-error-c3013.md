@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3013'
 title: Derleyici hatası C3013
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3013
 ms.assetid: f896777d-27e6-4b6d-baab-1567317f3374
-ms.openlocfilehash: c88d78df84af39933e719e02f8ab5839540130fd
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 4c84cce635516ee62533c83716708b9075077eb8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759431"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285974"
 ---
 # <a name="compiler-error-c3013"></a>Derleyici hatası C3013
 

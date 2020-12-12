@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Katalog bilgileri (MFC veri erişimi)'
 title: Katalog bilgileri (MFC veri erişimi)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - catalog information database [C++]
 - databases [C++], catalog information database
 ms.assetid: c184e80f-ff17-409f-9df8-05275080bb8d
-ms.openlocfilehash: 18b76f3e9d3e2bf17763d433f388647b0261b12b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7ea09c4267afc438bbdd40f2c96d888b40d5bb68
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213492"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213201"
 ---
 # <a name="catalog-information--mfc-data-access"></a>Katalog bilgileri (MFC veri erişimi)
 
-Bir veri kaynağındaki tablolar hakkındaki bilgiler, tabloların adlarını ve içerdikleri sütunları, tablo ayrıcalıklarını, birincil ve yabancı anahtarların adlarını, önceden tanımlanmış sorgular veya saklı yordamlar hakkındaki bilgileri, tablolardaki dizinler hakkında bilgileri ve tablolarla ilgili istatistikler.
+Bir veri kaynağındaki tablolar hakkındaki bilgiler, tabloların adlarını ve içerdikleri sütunları, tablo ayrıcalıklarını, birincil ve yabancı anahtarların adlarını, önceden tanımlanmış sorgular veya saklı yordamlar hakkındaki bilgileri, tablolardaki dizinler hakkında bilgileri ve tabloları hakkındaki istatistikleri içerebilir.
 
 Daha fazla bilgi için bkz. veri [kaynağı: veri kaynağının şemasını belirleme (ODBC)](../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md).
 

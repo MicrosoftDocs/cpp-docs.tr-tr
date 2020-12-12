@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4747'
 title: Derleyici Uyarısı (düzey 1) C4747
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4747
 ms.assetid: af37befd-ba1f-4bdc-96e1-a953f7a2ad9c
-ms.openlocfilehash: 2fd7f0960966a981d82d19e7b2533b1ffcd3bc00
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e182f4fc6a270917bb0b7e348000a0f084183ba6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175200"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332210"
 ---
 # <a name="compiler-warning-level-1-c4747"></a>Derleyici Uyarısı (düzey 1) C4747
 
@@ -23,9 +24,9 @@ Daha fazla bilgi için bkz. [karışık derlemeleri başlatma](../../dotnet/init
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-1. Modülü **/clr**ile derlenemiyor.
+1. Modülü **/clr** ile derlenemiyor.
 
-1. Giriş noktası işlevini `#pragma unmanaged`işaretleyin.
+1. Giriş noktası işlevini ile işaretleyin `#pragma unmanaged` .
 
 ## <a name="example"></a>Örnek
 
