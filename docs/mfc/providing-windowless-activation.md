@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: penceresiz etkinleştirme sağlama'
 title: Penceresiz Etkinleştirme Sağlama
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,36 +8,36 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], activate options
 - activation [MFC], windowless
 ms.assetid: 094903b5-c344-42fa-96ff-ce01e16891c5
-ms.openlocfilehash: 9d60c309d5644c106e6c85a0c7b3988916be7193
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ea9b86c977926e57bd3593ec861498eb5d909f37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62386778"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248638"
 ---
 # <a name="providing-windowless-activation"></a>Penceresiz Etkinleştirme Sağlama
 
-Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdığınızda `CreateWindow`) yürütmek maliyetlidir. Tutan bir denetimi bir ekrandaki penceresi bir pencere için iletileri yönetmesi gerekir. Penceresiz denetimleri, bu nedenle windows denetimleriyle kıyasla daha hızlı.
+Pencere oluşturma kodu (diğer bir deyişle, çağırdığınızda gerçekleşen her şey `CreateWindow` ) yürütmek için maliyetli bir şeydir. Bir ekran penceresinin bakımını yapan bir denetimin pencere için iletileri yönetmesi vardır. Penceresiz denetimler bu nedenle Windows ile denetimlerden daha hızlıdır.
 
-Penceresiz denetimleri başka bir avantajı pencereli denetimleri penceresiz denetimleri saydam boyama ve dikdörtgen olmayan ekran bölgeleri, desteklemesidir. Yaygın olarak karşılaşılan örneklerden saydam bir denetimin, saydam arka plana sahip bir metin denetimidir. Denetimleri boyar metin ancak arka plan değil, ne olursa olsun altındaki metin aracılığıyla gösterecek şekilde. Yeni form genellikle ok gibi dikdörtgen olmayan denetimleri kullanın ve düğmeler yuvarlak olun.
+Penceresiz denetimlerin daha fazla avantajı, pencereli denetimlerin aksine, penceresiz denetimlerin saydam boyama ve dikdörtgen olmayan ekran bölgelerini desteklemeleridir. Saydam bir denetimin ortak bir örneği, saydam bir arka plana sahip bir metin denetimidir. Denetimler, metni boyar ancak arka planı değil, metnin altında olduğu şekilde görünür. Daha yeni formlar genellikle oklar ve yuvarlak düğmeleri gibi dikdörtgen olmayan denetimleri kullanır.
 
-Genellikle, bir denetim bir pencere kendi gerekmez ve kapsayıcı penceresiz nesneleri desteklemek üzere yazılmış belirtilen bunun yerine, kendi kapsayıcı penceresi hizmetlerini kullanabilirsiniz. Penceresiz denetimleri, eski kapsayıcılar ile geriye dönük olarak uyumludur. Penceresiz denetimleri desteklemek üzere yazılmış değil, eski kapsayıcılarda bir pencere etkin olduğunda penceresiz denetimler oluşturun.
+Genellikle, bir denetim kendi penceresine gerek kalmaz ve bunun yerine, kapsayıcının penceresiz nesneleri desteklemek üzere yazıldığı belirtilen kapsayıcının pencere hizmetlerini kullanabilir. Penceresiz denetimler eski kapsayıcılarla geriye dönük olarak uyumludur. Penceresiz denetimleri desteklemek için yazılmayan eski kapsayıcılarda, Penceresiz denetimleri etkin olduğunda bir pencere oluşturur.
 
-Penceresiz denetimleri kendi windows olmadığı için Aksi takdirde denetimin kendi pencere tarafından sağlanan hizmetleri sağlamak için (bir pencere sahip) kapsayıcı sorumludur. Örneğin, klavye odağı sorgu, fare yakalama veya bir cihaz bağlamı elde etmek denetim gerekiyorsa bu işlemler kapsayıcı tarafından yönetilir. Kullanıcı giriş iletileri kendi penceresini uygun penceresiz denetime gönderilen kapsayıcı yönlendiren kullanarak `IOleInPlaceObjectWindowless` arabirimi. (Bkz *ActiveX SDK* bu arabirim açıklaması.) `COleControl` üye işlevleri çağırma kapsayıcısından bu hizmetler.
+Penceresiz denetimlerin kendi pencereleri olmadığından, kapsayıcı (bir pencerenin bulunduğu), başka türlü denetimin kendi penceresi tarafından sağlanabilecek Hizmetleri sağlamaktan sorumludur. Örneğin, denetiminizin klavye odağını sorgulaması, fareyi yakalaması veya bir cihaz bağlamı alması gerekiyorsa, bu işlemler kapsayıcı tarafından yönetilir. Kapsayıcı, penceresine gönderilen Kullanıcı giriş iletilerini, arabirimini kullanarak uygun penceresiz denetime yönlendirir `IOleInPlaceObjectWindowless` . (Bu arabirimin açıklaması için bkz. *ACTIVEX SDK* .) `COleControl` üye işlevleri bu Hizmetleri kapsayıcıdan çağırır.
 
-Penceresiz etkinleştirmesi kullanın, bir denetim yapmak için dahil **windowlessActivate** bayrağı tarafından döndürülen bayrakları kümesini [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags). Örneğin:
+Denetiminizin penceresiz etkinleştirme kullanmasını sağlamak için, [Coelcontrol:: GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags)tarafından döndürülen bayrak kümesine **windowlessacıı** bayrağını ekleyin. Örneğin:
 
 [!code-cpp[NVC_MFC_AxOpt#5](../mfc/codesnippet/cpp/providing-windowless-activation_1.cpp)]
 [!code-cpp[NVC_MFC_AxOpt#6](../mfc/codesnippet/cpp/providing-windowless-activation_2.cpp)]
 [!code-cpp[NVC_MFC_AxOpt#7](../mfc/codesnippet/cpp/providing-windowless-activation_3.cpp)]
 
-Seçerseniz bu bayrak eklenecek kodu otomatik olarak oluşturulan **penceresiz etkinleştirme** seçeneğini [denetim ayarları](../mfc/reference/control-settings-mfc-activex-control-wizard.md) MFC ActiveX Denetim Sihirbazı'nın sayfa.
+MFC ActiveX Denetim Sihirbazı 'nın [denetim ayarları](../mfc/reference/control-settings-mfc-activex-control-wizard.md) sayfasında **penceresiz etkinleştirme** seçeneğini belirlerseniz, bu bayrağı dahil etme kodu otomatik olarak üretilir.
 
-Penceresiz etkinleştirme etkinleştirildiğinde, kapsayıcı denetimin giriş iletilerini temsil edecek `IOleInPlaceObjectWindowless` arabirimi. `COleControl`kullanıcının bu arabirimin fare ayarlama uygun şekilde düzenler sonra denetiminizin ileti eşlemesi aracılığıyla iletileri gönderir. İleti eşlemesi için karşılık gelen girişler ekleyerek iletileri sıradan pencere iletileri gibi işleyebilir. Bu iletiler, işleyicilerindeki kullanmaktan kaçının *m_hWnd* üye değişkeni (veya onu kullanan herhangi bir üye işlevini) değerini değil olmadığını denetlemeden **NULL**.
+Penceresiz etkinleştirme etkinleştirildiğinde kapsayıcı, giriş iletilerini denetim arabirimine devredebilir `IOleInPlaceObjectWindowless` . `COleControl`Bu arabirimin uygulanması, fare koordinatlarını uygun şekilde ayarladıktan sonra iletileri denetiminizin ileti haritalarıyla dağıtır. İleti eşlemesine karşılık gelen girdileri ekleyerek sıradan pencere iletileri gibi iletileri işleyebilirsiniz. Bu iletilere yönelik İşleyicileriniz içinde, ilk olarak değerinin **null** olmadığını kontrol etmeden *m_hWnd* üye değişkeni (veya onu kullanan herhangi bir üye işlevi) kullanmaktan kaçının.
 
-`COleControl` Fare yakalama, klavye odağı, kaydırma ve diğer penceresi Hizmetleri dahil olmak üzere uygun şekilde kapsayıcısından çağıran işlevleri sağlar:
+`COleControl` kapsayıcıdan uygun şekilde, fare yakalama, klavye odağı, kaydırma ve diğer pencere hizmetlerini çağıran üye işlevleri sağlar; örneğin:
 
-- [Tıklatma](../mfc/reference/colecontrol-class.md#getfocus), [SetFocus](../mfc/reference/colecontrol-class.md#setfocus)
+- [GetFocus](../mfc/reference/colecontrol-class.md#getfocus), [SetFocus](../mfc/reference/colecontrol-class.md#setfocus)
 
 - [GetCapture](../mfc/reference/colecontrol-class.md#getcapture), [SetCapture](../mfc/reference/colecontrol-class.md#setcapture), [ReleaseCapture](../mfc/reference/colecontrol-class.md#releasecapture)
 
@@ -48,12 +49,12 @@ Penceresiz etkinleştirme etkinleştirildiğinde, kapsayıcı denetimin giriş i
 
 - [GetClientRect](../mfc/reference/colecontrol-class.md#getclientrect)
 
-Her zaman kullanmalısınız penceresiz denetimlerinde `COleControl` karşılık gelen yerine üye işlevleri `CWnd` üye işlevleri veya kendi ilgili Win32 API işlevleri.
+Penceresiz denetimlerde, `COleControl` ilgili `CWnd` üye işlevleri veya ilgili Win32 API işlevleri yerine her zaman üye işlevlerini kullanmanız gerekir.
 
-OLE sürükle ve bırak işleminin hedefi penceresiz denetime isteyebilirsiniz. Normalde, bu denetimin penceresindeki bir bırakma hedefi kaydedilmesi gerekir. Denetimi penceresi kendi olduğundan, kapsayıcı kendi penceresinde bir bırakma hedefi kullanır. Denetim bir uygulamasını sağlar `IDropTarget` istediğiniz kapsayıcıyı temsil edebilir çağrıları uygun zamanda arabirimi. Bu arabirim kapsayıcıya kullanıma sunmak için geçersiz kılma [COleControl::GetWindowlessDropTarget](../mfc/reference/colecontrol-class.md#getwindowlessdroptarget). Örneğin:
+Penceresiz bir denetimin bir OLE sürükle ve bırak işleminin hedefi olmasını isteyebilirsiniz. Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Denetimin kendi penceresi olmadığından kapsayıcı, bir bırakma hedefi olarak kendi penceresini kullanır. Denetim, `IDropTarget` kapsayıcının çağrıları uygun zamanda temsil eden arabirimin bir uygulamasını sağlar. Bu arabirimi kapsayıcıya göstermek için [Cotacontrol:: GetWindowlessDropTarget](../mfc/reference/colecontrol-class.md#getwindowlessdroptarget)öğesini geçersiz kılın. Örneğin:
 
 [!code-cpp[NVC_MFC_AxOpt#8](../mfc/codesnippet/cpp/providing-windowless-activation_4.cpp)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
+[MFC ActiveX denetimleri: Iyileştirme](../mfc/mfc-activex-controls-optimization.md)

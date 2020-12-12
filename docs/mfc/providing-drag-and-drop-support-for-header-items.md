@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: üst bilgi öğeleri için sürükle ve bırak desteği sağlama'
 title: Üstbilgi Öğeleri için Sürükle ve Bırak Desteği Sağlama
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,21 +8,21 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], drag and drop support
 - HDN_ notifications [MFC]
 ms.assetid: 93a152ec-804f-488f-b260-b3a438d0dc0f
-ms.openlocfilehash: 8dfaabf3da62c216d3da662f59c57b63e695d9ad
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ed42f61220ee2033dbc36e11c18664be3968dddd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248794"
 ---
 # <a name="providing-drag-and-drop-support-for-header-items"></a>Üstbilgi Öğeleri için Sürükle ve Bırak Desteği Sağlama
 
-Üstbilgi öğeleri için sürükle ve bırak desteği sağlamak için HDS_DRAGDROP stilini belirtin. Üstbilgi öğeleri için sürükle ve bırak desteği, kullanıcıya üstbilgi denetiminin üstbilgi öğelerini yeniden sıralama olanağı sağlar. Varsayılan davranış, üstbilgi öğesi bırakılırsa, üstbilgi öğesinin sürüklenen yarı saydam sürükleme görüntüsünü ve yeni konumun görsel bir göstergesini sağlar.
+Üstbilgi öğeleri için sürükle ve bırak desteği sağlamak üzere HDS_DRAGDROP stilini belirtin. Üst bilgi öğeleri için sürükle ve bırak desteği, kullanıcıya bir üst bilgi denetiminin üstbilgi öğelerini yeniden sıralama özelliği sağlar. Varsayılan davranış, Sürüklenmekte olan üst bilgi öğesinin bir yarı saydam sürükleme görüntüsünü ve başlık öğesi bırakıldığında yeni konumun görsel göstergesini sağlar.
 
-Ortak sürükle ve bırak işlevlerinde olduğu gibi, HDN_BEGINDRAG ve HDN_ENDDRAG bildirimleri işleyerek varsayılan sürükle ve bırak davranışını genişletebilirsiniz. [Ayrıca CHeaderCtrl::CreateDragImage](../mfc/reference/cheaderctrl-class.md#createdragimage) üye işlevini geçersiz kılarak sürükleme görüntüsünün görünümünü özelleştirebilirsiniz.
+Ortak sürükle ve bırak işlevlerinde olduğu gibi, HDN_BEGINDRAG ve HDN_ENDDRAG bildirimlerini işleyerek varsayılan sürükle ve bırak davranışını genişletebilirsiniz. Ayrıca, [CHeaderCtrl:: CreateDragImage](../mfc/reference/cheaderctrl-class.md#createdragimage) üye işlevini geçersiz kılarak sürükle resminin görünümünü özelleştirebilirsiniz.
 
 > [!NOTE]
-> Liste denetiminde katıştırılmış üstbilgi denetimi için sürükle ve bırak desteği sağlıyorsanız, [Liste Denetim Stillerini Değiştirme](../mfc/changing-list-control-styles.md) konusundaki Genişletilmiş Stil bölümüne bakın.
+> Bir liste denetiminde katıştırılmış üst bilgi denetimi için sürükle ve bırak desteği sağlıyorsanız, [değişen liste denetim stilleri](../mfc/changing-list-control-styles.md) konusunun Genişletilmiş Stil bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

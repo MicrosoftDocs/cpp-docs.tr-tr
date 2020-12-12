@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tür kitaplığı sihirbazından sınıf ekleme'
 title: Tür Kitaplığı Sihirbazından Sınıf Ekleme
 ms.date: 05/09/2019
 helpviewer_keywords:
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-ms.openlocfilehash: 73f2668883add0e711f0ef73e5602dd9cdc4ab28
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: fa70b7978cc8a7fecce7fa5dc2aa702fc8d11a2c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924109"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248456"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Tür Kitaplığı Sihirbazından Sınıf Ekleme
 
@@ -53,19 +54,19 @@ Kullanılabilir bir tür kitaplığından bir MFC sınıfı eklemek için bu sih
 
 - **Oluşturulan sınıflar**
 
-   Or düğmesi kullanılarak eklenen arabirimlerde oluşturulacak sınıf adlarını belirtir **>** **>>** . Bir sınıf seçmek için bu kutuya tıklayabilir ve ardından listede gezinmek için yukarı veya aşağı tuşlarını kullanabilir, sonra da **son** ' a tıkladığınızda sihirbazın ürettiği **Dosya** kutusundaki **sınıf** kutusu ve dosya adı ' nda her bir sınıf adını görüntüleyebilirsiniz. Bu kutuda tek seferde yalnızca bir sınıf seçebilirsiniz.
+   Or düğmesi kullanılarak eklenen arabirimlerde oluşturulacak sınıf adlarını belirtir **>** **>>** . Bir sınıf seçmek için bu kutuya tıklayabilir ve ardından listede gezinmek için yukarı veya aşağı tuşlarını kullanabilir, sonra da **son**' a tıkladığınızda sihirbazın ürettiği **Dosya** kutusundaki **sınıf** kutusu ve dosya adı ' nda her bir sınıf adını görüntüleyebilirsiniz. Bu kutuda tek seferde yalnızca bir sınıf seçebilirsiniz.
 
    Bir sınıfı bu listede seçip öğesini tıklatarak kaldırabilirsiniz **<** . Tüm sınıfları kaldırmak için oluşturulan sınıflar kutusunda bir sınıf seçmeniz gerekmez; öğesine tıklayarak **<<** , **oluşturulan sınıflar** kutusundaki tüm sınıfları kaldırırsınız.
 
 - **Sınıf**
 
-   **Son** ' a tıkladığınızda sihirbazın eklediği **oluşturulan sınıflar** kutusunda seçilen sınıfın adını belirtir. **Sınıf** kutusunda adı düzenleyebilirsiniz.
+   **Son**' a tıkladığınızda sihirbazın eklediği **oluşturulan sınıflar** kutusunda seçilen sınıfın adını belirtir. **Sınıf** kutusunda adı düzenleyebilirsiniz.
 
 - **Dosya**
 
    Yeni sınıf için üst bilgi dosyasının adını ayarlar. Varsayılan olarak, bu ad, **üretilen sınıflarda** sağladığınız adı temel alır. Dosya adını istediğiniz konuma kaydetmek veya sınıf bildirimini mevcut bir dosyaya eklemek için üç nokta düğmesini tıklatın. Var olan bir dosyayı seçerseniz, sihirbazda **son** ' a tıklaana kadar sihirbaz onu seçilen konuma kaydetmez.
 
-   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son** ' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
+   Sihirbaz bir dosyanın üzerine yazmaz. Mevcut bir dosyanın adını seçerseniz, **son**' a tıkladığınızda, sihirbaz sınıf bildiriminin dosya içeriğine eklenip eklenmeyeceğini belirtmek isteyip istemediğinizi sorar. Dosyayı eklemek için **Evet** ' e tıklayın; sihirbaza dönmek için **Hayır** ' a tıklayın ve başka bir dosya adı belirtin.
 
 ::: moniker-end
 

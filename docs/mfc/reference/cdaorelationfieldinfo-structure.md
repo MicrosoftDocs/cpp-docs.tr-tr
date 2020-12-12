@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: CDaoRelationFieldInfo yapısı'
 title: CDaoRelationFieldInfo Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Relations collection
 - CDaoRelationFieldInfo structure [MFC]
 ms.assetid: 47cb89ca-dc80-47ce-96fd-cc4b88512558
-ms.openlocfilehash: 85dd853a9aae41a87bbe7ef5c69e22846678cf8a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: eb470752a9e9da5f610dd59976f2716fa1c4e18a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62206114"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248170"
 ---
 # <a name="cdaorelationfieldinfo-structure"></a>CDaoRelationFieldInfo Yapısı
 
-`CDaoRelationFieldInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanmış bir ilişkisi alanında hakkında bilgiler içerir.
+`CDaoRelationFieldInfo`Yapı, veri erişim nesneleri (DAO) için tanımlanan ilişkide bir alanla ilgili bilgiler içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,24 +32,24 @@ struct CDaoRelationFieldInfo
 #### <a name="parameters"></a>Parametreler
 
 *m_strName*<br/>
-Birincil Tablo ilişkisinin alanın adı.
+İlişkinin birincil tablosundaki alanının adı.
 
 *m_strForeignName*<br/>
-İlişkinin yabancı tablosundaki alan adı.
+İlişkinin yabancı tablosundaki alanının adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-DAO ilişki nesnesi alanları birincil tabloya ve bu ilişkiyi tanımlayan bir dış tablo alanları belirtir. Bilgileri nasıl döndürülür birincil yapı tanımında yukarıdaki başvuruları göstermek `m_pFieldInfos` üyesi bir [Cdaorelationınfo](../../mfc/reference/cdaorelationinfo-structure.md) çağırılarak nesne [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo)sınıfının üye işlevinde `CDaoDatabase`.
+Bir DAO Relation nesnesi, birincil tablodaki alanları ve ilişkiyi tanımlayan yabancı tablodaki alanları belirtir. Yukarıdaki yapı tanımında `m_pFieldInfos` birincinin başvuruları, sınıfının [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) üye işlevini çağırarak elde edilen bir [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) nesnesinin üyesinde nasıl döndürüldüğünü gösterir `CDaoDatabase` .
 
-İlişki nesneleri ve ilişki alan nesneleri bir MFC sınıfı tarafından temsil edilmez. Bunun yerine, DAO temel alınan MFC sınıfın nesneleri [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) ilişkiler koleksiyonu adlı ilişki nesnelerinin bir koleksiyonu içerir. Her ilişki nesnesi sırayla ilişkisi alan nesnelerinin bir koleksiyonunu içerir. Her ilişki alan nesne birincil tablo bir alan yabancı tablosundaki bir alanla ilişkilendirir. Birlikte ele alındığında, ilişki alan nesneleri bir grup alanlarının her tabloda birlikte bu ilişkiyi tanımlayan tanımlayın. `CDaoDatabase` İlişki nesneleriyle erişim sağlar. bir `CDaoRelationInfo` çağırarak `GetRelationInfo` üye işlevi. `CDaoRelationInfo` Nesnesi daha sonra veri üyesi vardır `m_pFieldInfos`, işaret eden bir dizisi olarak `CDaoRelationFieldInfo` nesneleri.
+İlişki nesneleri ve ilişki alanı nesneleri, bir MFC sınıfıyla temsil edilmez. Bunun yerine, [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) sınıfının MFC nesnelerini temel alan DAO nesneleri ilişkiler koleksiyonu olarak adlandırılan bir ilişki nesneleri koleksiyonu içerir. Her ilişki nesnesi, sırasıyla bir ilişki alanı nesneleri koleksiyonunu içerir. Her ilişki alanı nesnesi, birincil tablodaki bir alanı yabancı tablodaki bir alanla ilişkilendirir. Birlikte yapılan ilişki alanı nesneleri, her tablodaki bir alan grubunu tanımlar ve bu da ilişkiyi birlikte tanımlar. `CDaoDatabase` üye işlevini çağırarak bir nesne ile ilişki nesnelerine erişmenize izin verir `CDaoRelationInfo` `GetRelationInfo` . `CDaoRelationInfo`Daha sonra nesnesi, bir nesne dizisine işaret eden bir veri üyesine sahiptir `m_pFieldInfos` `CDaoRelationFieldInfo` .
 
-Çağrı [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) içeren üye işlevi `CDaoDatabase` nesne ilgilendiğiniz ilişki nesnesi koleksiyonu ilişkileri depolanır ayarlanmış. Ardından erişim `m_pFieldInfos` üyesi [Cdaorelationınfo](../../mfc/reference/cdaorelationinfo-structure.md) nesne. `CDaoRelationFieldInfo` Ayrıca tanımlayan bir `Dump` hata ayıklama üye işlevinde oluşturur. Kullanabileceğiniz `Dump` içeriğini dökümünü almak için bir `CDaoRelationFieldInfo` nesne.
+İlişki koleksiyonu ilgilendiğiniz ilişki nesnesini depoladığınız kapsayan nesnenin [GetRelationInfo](../../mfc/reference/cdaodatabase-class.md#getrelationinfo) üye işlevini çağırın `CDaoDatabase` . Ardından, `m_pFieldInfos` [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) nesnesinin üyesine erişin. `CDaoRelationFieldInfo` Ayrıca `Dump` , hata ayıklama yapılarında bir üye işlevi tanımlar. `Dump`Bir nesnenin içeriğini dökmek için kullanabilirsiniz `CDaoRelationFieldInfo` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdao.h
+**Üstbilgi:** afxdao. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoRelationInfo Yapısı](../../mfc/reference/cdaorelationinfo-structure.md)
+[Yapılar, stiller, geri çağrılar ve Ileti haritaları](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CDaoRelationInfo yapısı](../../mfc/reference/cdaorelationinfo-structure.md)
