@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDynamicParameterAccessor sınıfı'
 title: CDynamicParameterAccessor Sınıfı
 ms.date: 02/14/2018
 f1_keywords:
@@ -90,18 +91,18 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-ms.openlocfilehash: 4596f5181dd197b16786ee4d4d16cf06721b13b6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5470ced8b4479124f0db3878fe2562a658547f9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170782"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor Sınıfı
 
 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 'a benzer ancak [ICommandText](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) arabirimini çağırarak parametre bilgilerini ayarlanacak şekilde edinir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDynamicParameterAccessor : public CDynamicAccessor
@@ -207,7 +208,7 @@ dışı Arabellekten alınan verileri içeren bellek işaretçisi.
 
 Arabellekte depolanan parametrelerin sayısını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DB_UPARAMS GetParamCount() const throw();
@@ -508,7 +509,7 @@ bool SetParamString(DBORDINAL nParam,
 
 **`true`** Başarılı veya başarısız durumuna geri döner **`false`** .
 
-`SetParamString`*pString*için belirtilen en büyük boyuttan daha büyük bir dize ayarlamaya çalışırsanız başarısız olur.
+`SetParamString`*pString* için belirtilen en büyük boyuttan daha büyük bir dize ayarlamaya çalışırsanız başarısız olur.
 
 `SetParamString`Arabellekte dize parametresi verilerini ayarlamak için kullanın. Arabellekte dize olmayan parametre verilerini ayarlamak için [SetParam](#setparam) kullanın.
 

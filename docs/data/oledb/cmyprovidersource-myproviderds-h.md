@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CCustomSource (CustomDS. h)'
 title: CCustomSource (CustomDS.H)
 ms.date: 10/22/2018
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CMyProviderSource class in MyProviderDS.H
 - CCustomSource class in CustomDS.H
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
-ms.openlocfilehash: 8e92c30e8d62ade095167880917ad70da8e59b36
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 6fbb9fe0676521b01caa3bba5f5bb2be03d0fe6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170444"
 ---
 # <a name="ccustomsource-customdsh"></a>CCustomSource (CustomDS. h)
 
@@ -153,7 +154,7 @@ Bir özelliğin varsayılan değerini değiştirmek istiyorsanız (bir müşteri
 
 Kendi özellik kümesini tanımlamak istiyorsanız, ek bir BEGIN_PROPSET_MAP/END_PROPSET_MAP birleşimi yaparak bir tane ekleyebilirsiniz. Özellik kümesi için bir GUID tanımlayın ve ardından kendi özelliklerinizi tanımlayın. Sağlayıcıya özel özellikler varsa, var olan bir özellik kullanmak yerine bunları yeni bir özellik kümesine ekleyin. Bu, sonraki OLE DB sürümlerindeki sorunları önler.
 
-## <a name="user-defined-property-sets"></a>Kullanıcı tanımlı özellik kümeleri
+## <a name="user-defined-property-sets"></a>User-Defined özellik kümeleri
 
 Visual C++, Kullanıcı tanımlı özellik kümelerini destekler. Veya üzerine yazmak zorunda değilsiniz `GetProperties` `GetPropertyInfo` . Bunun yerine, şablonlar Kullanıcı tanımlı herhangi bir özellik kümesini algılar ve uygun nesneye ekler.
 
@@ -167,4 +168,4 @@ END_PROPERTY_SET_EX(DBPROPSET_MYPROPSET)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sağlayıcı Sihirbazı tarafından oluşturulan dosyalar](../../data/oledb/provider-wizard-generated-files.md)<br/>
+[Sağlayıcı Wizard-Generated dosyaları](../../data/oledb/provider-wizard-generated-files.md)<br/>

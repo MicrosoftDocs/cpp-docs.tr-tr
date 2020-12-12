@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CEnumeratorAccessor sınıfı'
 title: CEnumeratorAccessor Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - m_szName
 - m_szParseName
 ms.assetid: 21e8e7ea-3511-4afe-b33f-d520f4ff82bb
-ms.openlocfilehash: 0b4baa4671a013699e51a9ab28c002a680dfcd61
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f37de34c508487f3ee54f47db1b0a64df8a97b25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838145"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170574"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor Sınıfı
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDBErrorInfo sınıfı'
 title: CDBErrorInfo Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - GetErrorParameters method
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-ms.openlocfilehash: d8fa41b3a06acb8f28334658f2494295593b99be
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fe57963e5964403c6b17b6b41dc7ae5f77063f50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502514"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170860"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 
 OLE DB [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) arabirimini kullanarak OLE DB hata işleme için destek sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDBErrorInfo

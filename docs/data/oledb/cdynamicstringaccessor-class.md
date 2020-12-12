@@ -1,4 +1,5 @@
 ---
+description: ': CDynamicStringAccessor sınıfı hakkında daha fazla bilgi'
 title: CDynamicStringAccessor Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - GetString method
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-ms.openlocfilehash: 891c80a7c21fd046fba393b494ed6d84f731db6f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 89ad306242c5fa0a01b0f14673382fade8df128c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170717"
 ---
 # <a name="cdynamicstringaccessor-class"></a>CDynamicStringAccessor Sınıfı
 
 Veritabanı şeması (veritabanının temel yapısı) hakkında bilginiz olmadığında bir veri kaynağına erişmenizi sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template< typename BaseType, DBTYPEENUM OleDbType >

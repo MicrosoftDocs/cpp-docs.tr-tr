@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDBPropIDSet Class'
 title: CDBPropIDSet Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -31,18 +32,18 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: 4de218188326dad434c5b0d355a3a15d39bb576c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6f0c3ea19daeef2b262f6ac1ad76599160baf266
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502509"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170834"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet Sınıfı
 
 `DBPROPIDSET`Yapıdan devralır ve [Addpropertyıd](#addpropertyid) erişim yöntemi ile birlikte Key alanlarını Başlatan bir Oluşturucu ekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDBPropIDSet : public tagDBPROPIDSET
@@ -89,7 +90,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 
 ## <a name="cdbpropidsetcdbpropidset"></a><a name="cdbpropidset"></a> CDBPropIDSet:: CDBPropIDSet
 
-Oluşturucu. `rgProperties` `cProperties` DBPROPIDSET yapısının, ve (isteğe bağlı) `guidPropertySet` alanlarını başlatır. [DBPROPIDSET](/previous-versions/windows/desktop/ms717981(v=vs.85))
+Oluşturucu. `rgProperties` `cProperties` DBPROPIDSET yapısının, ve (isteğe bağlı) `guidPropertySet` alanlarını başlatır. [](/previous-versions/windows/desktop/ms717981(v=vs.85))
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -132,7 +133,7 @@ Bu alan, [Oluşturucu](#cdbpropidset) tarafından da ayarlanabilir. Bu sınıf i
 
 Bir özellik KIMLIĞI kümesinin içeriğini başka bir ID özellik kümesine atar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CDBPropIDSet& operator =(CDBPropIDSet& propset) throw();

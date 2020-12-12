@@ -1,5 +1,6 @@
 ---
-title: 'Platform:: CallbackContext numaralandırması'
+description: 'Daha fazla bilgi edinin: Platform:: CallbackContext numaralandırması'
+title: Platform::CallbackContext Numaralandırması
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::CallbackContext Enumeration
 ms.assetid: 60e0c7cb-5d8f-482a-bdca-ca9335ae4899
-ms.openlocfilehash: 1daa3988fcb985dab9d3083233a3703a20cc2fdb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 36c30b674065f42f7d50a403d1506344ffcfecac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170977"
 ---
-# <a name="platformcallbackcontext-enumeration"></a>Platform:: CallbackContext numaralandırması
+# <a name="platformcallbackcontext-enumeration"></a>Platform::CallbackContext Numaralandırması
 
 Geri çağırma işlevinin (olay işleyicisi) çalıştırıldığı iş parçacığı bağlamını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum class CallbackContext {};
@@ -28,8 +29,8 @@ enum class CallbackContext {};
 
 |Tür kodu|Açıklama|
 |---------------|-----------------|
-|Herhangi biri|Geri çağırma işlevi herhangi bir iş parçacığı bağlamında çalıştırılabilir.|
-|Naklettiğiniz|Geri çağırma işlevi, yalnızca zaman uyumsuz işlemi başlatan iş parçacığı bağlamında çalıştırılabilir.|
+|Herhangi bir|Geri çağırma işlevi herhangi bir iş parçacığı bağlamında çalıştırılabilir.|
+|Aynı|Geri çağırma işlevi, yalnızca zaman uyumsuz işlemi başlatan iş parçacığı bağlamında çalıştırılabilir.|
 
 ### <a name="requirements"></a>Gereksinimler
 

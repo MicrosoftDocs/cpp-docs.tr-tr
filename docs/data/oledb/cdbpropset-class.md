@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDBPropSet Sınıfı'
 title: CDBPropSet Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,18 +33,18 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: 45772896cac520eba35ec475f8b6ae7bd2993045
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3c1695e16f050866c2df5725cec4a716c04b3093
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170821"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet Sınıfı
 
 `DBPROPSET`Yapıdan devralır ve ayrıca, anahtar alanlarını ve erişim yöntemini Başlatan bir Oluşturucu ekler `AddProperty` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CDBPropSet : public tagDBPROPSET
@@ -169,7 +170,7 @@ Bu alan, [Oluşturucu](#cdbpropset) tarafından da ayarlanabilir.
 
 Bir özellik kümesinin içeriğini başka bir özellik kümesine atar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 CDBPropSet& operator =(CDBPropSet& propset) throw();

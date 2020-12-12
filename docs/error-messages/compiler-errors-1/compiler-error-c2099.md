@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2099'
 title: Derleyici hatası C2099
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2099
 ms.assetid: 30e151ee-d458-4901-b0c0-d45054a913f5
-ms.openlocfilehash: 84070b36506a657dde5d2e7bd5594c2b7434d81d
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 03a021216bdb5228bb2ef9cba961b06161d20948
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743418"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170275"
 ---
 # <a name="compiler-error-c2099"></a>Derleyici hatası C2099
 
@@ -36,7 +37,7 @@ Sabit katlama başarısız olduğunda, derleyici, C 'de izin verilmeyen dinamik 
 
 Bu hatayı çözmek için, modülü bir. cpp dosyası olarak derleyin veya ifadeyi kolaylaştırın.
 
-Daha fazla bilgi için bkz. [/FP (kayan nokta davranışını belirt)](../../build/reference/fp-specify-floating-point-behavior.md).
+Daha fazla bilgi için bkz. [/FP (Floating-Point davranışını belirt)](../../build/reference/fp-specify-floating-point-behavior.md).
 
 Aşağıdaki örnek C2099 oluşturur.
 
