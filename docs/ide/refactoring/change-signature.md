@@ -1,13 +1,14 @@
 ---
+description: Daha fazla bilgi için bkz. Imza değiştirme
 title: Imzayı Değiştir
 ms.date: 11/16/2016
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
-ms.openlocfilehash: 1599a7900e33db61994ea75581f9d87b1aee83f9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2530a13f3e0e4a1aad987a4eed9dfc49b91323de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171911"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185693"
 ---
 # <a name="change-signature"></a>Imzayı Değiştir
 
@@ -23,25 +24,25 @@ ms.locfileid: "80171911"
 
    ![Vurgulanan kod](images/changesignature_highlight.png)
 
-1. Ardından, aşağıdakilerden birini yapın:
-   * **Klavyenizdeki**
-     * **CTRL + R**, ardından **CTRL + O**tuşlarına basın.  (Bağlı olarak hangi profilinde seçtiğiniz klavye kısayolu farklı olabileceğini unutmayın.)
+1. Sonra, aşağıdakilerden birini yapın:
+   * **Klavye**
+     * **CTRL + R**, ardından **CTRL + O** tuşlarına basın.  (Klavye kısayolunuzun seçtiğiniz profile göre farklı olabileceğini unutmayın.)
      * **CTRL +** tuşlarına basın. **Hızlı Eylemler ve yeniden düzenlemeler** menüsünü tetiklemek ve bağlam menüsünden **imzayı Değiştir** ' i seçin.
-   * **Tığında**
-     * **Düzenle > yeniden düzenleme > parametreleri yeniden**düzenleyin ' i seçin.
+   * **Fare**
+     * **Düzenle > yeniden düzenleme > parametreleri yeniden** düzenleyin ' i seçin.
      * Koda sağ tıklayın, **Hızlı Eylemler ve yeniden düzenlemeler** menüsünü seçin ve bağlam menüsünde **imzayı Değiştir** ' i seçin.
 
 1. Açılan **Imza Değiştir** iletişim kutusunda, yöntem imzasını değiştirmek için sağ taraftaki düğmeleri kullanabilirsiniz:
 
-   ![Değişiklik imzası iletişim](images/changesignature_dialog.png)
+   ![Imza değiştirme iletişim kutusu](images/changesignature_dialog.png)
 
    | Düğme | Açıklama
    | ------ | ---
-   | **Yukarı/aşağı**    | Seçili parametreyi listede yukarı ve Aşağı Taşı
-   | **Add**        | Listeye yeni bir parametre Ekle
-   | **Kaldır**     | Seçili parametreyi listeden kaldırın
-   | **Değiştirebilirler**     | Seçilen parametreyi türünü, adını ve isteğe bağlı olup olmadığını ve eklenen değerin ne olacağını değiştirin
-   | **Döndürülemiyor**     | Seçilen parametreyi özgün durumuna geri yükle
+   | **Yukarı/aşağı**    | Seçili parametreyi listede yukarı ve aşağı taşı
+   | **Ekle**        | Listeye yeni bir parametre Ekle
+   | **Kaldır**     | Seçili parametreyi listeden kaldır
+   | **Değiştir**     | Seçilen parametreyi türünü, adını ve isteğe bağlı olup olmadığını ve eklenen değerin ne olacağını değiştirin
+   | **Geri döndür**     | Seçilen parametreyi özgün durumuna geri yükle
    | **Tümünü dön** | Tüm parametreleri özgün durumlarına geri yükle
 
    > [!TIP]
@@ -53,13 +54,13 @@ ms.locfileid: "80171911"
 
    Burada, şunları yapabilirsiniz:
 
-   | Girdi | Açıklama
+   | Giriş | Açıklama
    | ----- | ---
    | **Tür**               | Parametrenin türü (int, Double, float, vb.)
    | **Ad**               | Parametrenin adı
    | **İsteğe bağlı parametre** | İsteğe bağlı olarak belirtilen parametreyi yapar
-   | **Eklenen değer**     | Parametrenin belirtilmediği, işleve yapılan herhangi bir çağrıya yerleştirilen değer (yalnızca **ekleme**için geçerlidir)
-   | **Varsayılan değer**      | Çağıran bir tane belirtmezse işlev tarafından kullanılan değer (yalnızca **Isteğe bağlı parametreler**için geçerlidir)
+   | **Eklenen değer**     | Parametrenin belirtilmediği, işleve yapılan herhangi bir çağrıya yerleştirilen değer (yalnızca **ekleme** için geçerlidir)
+   | **Varsayılan değer**      | Çağıran bir tane belirtmezse işlev tarafından kullanılan değer (yalnızca **Isteğe bağlı parametreler** için geçerlidir)
 
 1. Değişikliklerin projeye mi yoksa tüm çözüme mı uygulanacağını seçmek için **arama kapsamı** açılan öğesini kullanın.
 

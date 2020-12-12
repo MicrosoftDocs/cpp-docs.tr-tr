@@ -1,4 +1,5 @@
 ---
+description: ': Override (C++/CLı ve C++/CX) hakkında daha fazla bilgi'
 title: override (C++/CLI ve C++/CX)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - overriding, override keyword [C++]
 - override keyword [C++]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
-ms.openlocfilehash: 32c825539efe670528eab7416afefe07d4cb1b6c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1be49ac9b9e2d0f2eb3342855a42e9707f883078
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335945"
 ---
 # <a name="override--ccli-and-ccx"></a>override (C++/CLI ve C++/CX)
 
@@ -19,7 +20,7 @@ ms.locfileid: "80172106"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Override** anahtar sözcüğü, yerel hedefler (varsayılan derleyici seçeneği), Windows çalışma zamanı hedefler (`/ZW` derleyici seçeneği) veya ortak dil çalışma zamanı hedefleri (`/clr` derleyici seçeneği) için derlenirken geçerlidir.
+**Override** anahtar sözcüğü, yerel hedefler (varsayılan derleyici seçeneği), Windows çalışma zamanı hedefler ( `/ZW` derleyici seçeneği) veya ortak dil çalışma zamanı hedefleri ( `/clr` derleyici seçeneği) için derlenirken geçerlidir.
 
 Geçersiz kılma belirticileri hakkında daha fazla bilgi için bkz. [geçersiz kılma belirticisi](../cpp/override-specifier.md) ve [geçersiz kılma tanımlayıcıları ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
@@ -83,5 +84,5 @@ Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[override Tanımlayıcısı](../cpp/override-specifier.md)<br/>
-[Geçersiz Kılma Tanımlayıcıları](override-specifiers-cpp-component-extensions.md)
+[geçersiz kılma belirticisi](../cpp/override-specifier.md)<br/>
+[Geçersiz kılma belirticileri](override-specifiers-cpp-component-extensions.md)

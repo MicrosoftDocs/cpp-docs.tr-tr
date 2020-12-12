@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3273'
 title: Derleyici hatası C3273
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3273
 ms.assetid: 1d2ce9d9-222b-4cab-94e2-d2c1a9f5ebe0
-ms.openlocfilehash: 5ab0d4f51ef893d263e219a3915bce9be52ffec0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 23216089bb6d4a963f04201e742af2f50818efcc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185771"
 ---
 # <a name="compiler-error-c3273"></a>Derleyici hatası C3273
 

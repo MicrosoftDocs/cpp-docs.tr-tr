@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1301'
 title: Bağlayıcı Araçları Hatası LNK1301
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1301
 ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
-ms.openlocfilehash: fe64eecfbc9fed57c3748afd5804b76d6e4284a4
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: ac282aea62836591c6e30abb3030ef2143a78003
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990930"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335958"
 ---
 # <a name="linker-tools-error-lnk1301"></a>Bağlayıcı Araçları Hatası LNK1301
 
@@ -21,15 +22,15 @@ LTCG clr modülleri bulundu,/LTCG ile uyumsuz: parametre
 
 Profil temelli iyileştirmeler/clr modülleri için desteklenmez.
 
-Daha fazla bilgi için bkz.
+Daha fazla bilgi için bkz:
 
-- [/GL (Bütün Program İyileştirmesi)](../../build/reference/gl-whole-program-optimization.md)
+- [/GL (bütün program Iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md)
 
-- [/LTCG (Bağlama Zamanı Kodu Oluşturma)](../../build/reference/ltcg-link-time-code-generation.md)
+- [/LTCG (bağlama zamanı kodu oluşturma)](../../build/reference/ltcg-link-time-code-generation.md)
 
-- [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
+- [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
 
-- [Profil Temelli İyileştirmeler](../../build/profile-guided-optimizations.md)
+- [Profil temelli Iyileştirmeler](../../build/profile-guided-optimizations.md)
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 

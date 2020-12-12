@@ -1,16 +1,17 @@
 ---
+description: ': TypeId hakkında daha fazla bilgi edinin (C++/CLı ve C++/CX)'
 title: typeid (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-ms.openlocfilehash: bfb226bc11f0fd7d3feddfb2c50ffe1aa6311d3d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0452de57b93eb5d55bed34fc1f9745280a6b6184
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185667"
 ---
 # <a name="typeid--ccli-and-ccx"></a>typeid (C++/CLI ve C++/CX)
 

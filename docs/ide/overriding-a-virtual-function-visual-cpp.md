@@ -1,5 +1,6 @@
 ---
-title: Bir sanal işlevi geçersiz kılma
+description: 'Hakkında daha fazla bilgi edinin: sanal işlevi geçersiz kılma'
+title: Sanal işlevi geçersiz kılma
 ms.date: 11/12/2018
 f1_keywords:
 - vc.codewiz.virtualfunc.override
@@ -8,32 +9,32 @@ helpviewer_keywords:
 - base classes, overriding virtual functions defined in
 - Properties window, overriding virtual functions in
 ms.assetid: 2d8c76f2-7a6b-4c9c-8de5-4282ce7755b6
-ms.openlocfilehash: 9bb3fd34bbfa14cce1595ed586c4e1b66518e7b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d4c800006d5227ed5397c17284c03968a24a3964
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62350562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335915"
 ---
-# <a name="override-a-virtual-function"></a>Bir sanal işlevi geçersiz kılma
+# <a name="override-a-virtual-function"></a>Sanal işlevi geçersiz kılma
 
-Visual Studio temel sınıfta tanımlı sanal işlevleri geçersiz kılma [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+Visual Studio [Özellikler penceresi](/visualstudio/ide/reference/properties-window)bir temel sınıfta tanımlanan sanal işlevleri geçersiz kılabilirsiniz.
 
-**Özellikler penceresinde bir sanal işlevi geçersiz kılmak için:**
+**Özellikler penceresi bir sanal işlevi geçersiz kılmak için:**
 
-1. Sınıf Görünümü'nde sınıfı seçin.
+1. Sınıf Görünümü ' de sınıfı seçin.
 
-1. Özellikler penceresinde seçin **geçersiz kılmalar** düğmesi.
+1. Özellikler penceresi, **geçersiz kılmalar** düğmesini seçin.
 
    > [!NOTE]
-   > **Geçersiz kılmalar** düğmesi, sınıf görünümü veya kaynak pencereye seçtiğinizde, sınıf adı seçtiğinizde kullanılabilir.
+   > **Geçersiz kılmalar** düğmesi, sınıf görünümü sınıf adını seçtiğinizde ya da kaynak pencere içinde seçerken kullanılabilir.
 
-   Sol sütunda, sanal işlevleri listeler. Sanal bir işlevin adını sağ sütunda da görünüyorsa, bir geçersiz kılma zaten uygulandı.
+   Sol sütun sanal işlevleri listeler. Bir sanal işlevin adı sağ sütunda da görünüyorsa, bir geçersiz kılma zaten uygulanmıştır.
 
-1. İşlev geçersiz kılma varsa, seçip hücrenin sağ sütunda önerilen işlevin adını görüntülemek için Özellikler penceresindeki geçersiz kılma olarak \<Ekle >*FuncName*.
+1. İşlevin geçersiz kılma işlemi yoksa, işlev geçersiz kılmanın önerilen adını funcname olarak göstermek için Özellikler penceresi sağ sütunundaki hücreyi seçin \<add> .
 
-1. İşlev için saptama kodu eklemek için önerilen adı seçin.
+1. İşlev için saplama kodu eklemek üzere önerilen adı seçin.
 
-1. Bir geçersiz kılma işlevi düzenlemek için Sınıf Görünümü'nde işlev adına çift tıklayın ve kaynak penceresinde kodu düzenleyin.
+1. Geçersiz kılma işlevini düzenlemek için, Sınıf Görünümü işlevindeki işlevin adına çift tıklayın ve kodu kaynak penceresinde düzenleyin.
 
-Bir geçersiz kılma kaldırmak için sağ sütunda geçersiz kılma işlev adı seçin ve seçin \<sil >*FuncName*. İşlev kod dışı bırakılmıştır.
+Bir geçersiz kılmayı kaldırmak için, sağ sütundaki işlev adını geçersiz kıl ' ı seçin ve \<delete> *funcname*' yi seçin. İşlevin kodu açıklama yazdı.
