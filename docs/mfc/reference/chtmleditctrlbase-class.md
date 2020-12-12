@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CHtmlEditCtrlBase Class'
 title: CHtmlEditCtrlBase sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -220,12 +221,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: 74df35a82342bad59e9065ef593581add6d3d734
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: 2dfe61dfce86230f87f7e4883f6800e897c3770b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115423"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 

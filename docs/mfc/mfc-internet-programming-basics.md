@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC Internet Programlama Temelleri'
 title: MFC Internet Programlama Temelleri
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: b41ce97a9b5efe6ad84c543f5c49dd091557b3a8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8774f2ec77b9e721733edccdcd0a83e96cb62fe0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115449"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 

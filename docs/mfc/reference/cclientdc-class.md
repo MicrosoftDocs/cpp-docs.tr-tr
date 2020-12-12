@@ -1,5 +1,6 @@
 ---
-title: CClientDC Sınıfı
+description: 'Daha fazla bilgi edinin: CClientDC sınıfı'
+title: CClientDC sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CClientDC
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - CClientDC [MFC], CClientDC
 - CClientDC [MFC], m_hWnd
 ms.assetid: 8a871d6b-06f8-496e-9fa3-9a5780848369
-ms.openlocfilehash: abe8a3220fd37a0375fcf37504c715edf4c6962e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 27735929734388ccb25eaf178e49d63884beed0d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352303"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122466"
 ---
-# <a name="cclientdc-class"></a>CClientDC Sınıfı
+# <a name="cclientdc-class"></a>CClientDC sınıfı
 
-Windows [işlevlerigetDC'yi](/windows/win32/api/winuser/nf-winuser-getdc) inşaat zamanında ve [ReleaseDC'yi](/windows/win32/api/winuser/nf-winuser-releasedc) imha zamanında aramayı halleder.
+Oluşturma sırasında [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) Windows işlevleri ve yok etme sırasında [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) çağırma işlemini gerçekleştirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CClientDC : public CDC
@@ -31,25 +32,25 @@ class CClientDC : public CDC
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CClientDC::CClientDC](#cclientdc)|'ye `CClientDC` bağlı bir nesne inşa eder. `CWnd`|
+|[CClientDC:: CClientDC](#cclientdc)|`CClientDC`Öğesine bağlı bir nesne oluşturur `CWnd` .|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CClientDC::m_hWnd](#m_hwnd)|Bunun `CClientDC` geçerli olduğu pencerenin HWND'si.|
+|[CClientDC:: m_hWnd](#m_hwnd)|Bunun geçerli olduğu pencerenin HWND 'si `CClientDC` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu, bir `CClientDC` nesneyle ilişkili aygıt bağlamının pencerenin istemci alanı olduğu anlamına gelir.
+Bu, bir nesneyle ilişkili cihaz bağlamının `CClientDC` bir pencerenin istemci alanı olduğu anlamına gelir.
 
-Daha fazla `CClientDC`bilgi için [Bkz. Aygıt Bağlamları.](../../mfc/device-contexts.md)
+Hakkında daha fazla bilgi için `CClientDC` bkz. [cihaz bağlamları](../../mfc/device-contexts.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CDC](../../mfc/reference/cdc-class.md)
 
@@ -57,11 +58,11 @@ Daha fazla `CClientDC`bilgi için [Bkz. Aygıt Bağlamları.](../../mfc/device-c
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cclientdccclientdc"></a><a name="cclientdc"></a>CClientDC::CClientDC
+## <a name="cclientdccclientdc"></a><a name="cclientdc"></a> CClientDC:: CClientDC
 
-`CClientDC` *PWnd*tarafından işaret edilen [CWnd](../../mfc/reference/cwnd-class.md) istemci alanına erişen bir nesne yapıları.
+`CClientDC` *PWnd* tarafından Işaret edilen [CWnd](../../mfc/reference/cwnd-class.md) 'ın istemci alanına erişen bir nesne oluşturur.
 
 ```
 explicit CClientDC(CWnd* pWnd);
@@ -69,22 +70,22 @@ explicit CClientDC(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-Aygıt bağlam nesnesinin istemci alanının erişeceği pencere.
+*pWnd*<br/>
+İstemci alanı cihaz bağlamı nesnesine erişecek olan pencere.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Oluşturucu Windows işlevini [GetDC](/windows/win32/api/winuser/nf-winuser-getdc)olarak adlandırır.
+Oluşturucu, [GetDC](/windows/win32/api/winuser/nf-winuser-getdc)Windows işlevini çağırır.
 
-Windows `GetDC` araması `CResourceException`başarısız olursa bir özel durum (tür) atılır. Windows kullanılabilir aygıt bağlamlarının tümünü zaten tahsis etmişse aygıt bağlamı kullanılamayabilir. Uygulamanız, Windows altında herhangi bir zamanda kullanılabilen beş ortak ekran bağlamı için yarışıyor.
+Windows çağrısı başarısız olursa bir özel durum (tür `CResourceException` ) oluşturulur `GetDC` . Windows, tüm kullanılabilir cihaz bağlamlarını zaten ayırmışsa bir cihaz bağlamı kullanılamayabilir. Uygulamanız, Windows altında herhangi bir zamanda kullanılabilir olan beş ortak görüntü bağlamına sahiptir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#42](../../mfc/codesnippet/cpp/cclientdc-class_1.cpp)]
 
-## <a name="cclientdcm_hwnd"></a><a name="m_hwnd"></a>CClientDC::m_hWnd
+## <a name="cclientdcm_hwnd"></a><a name="m_hwnd"></a> CClientDC:: m_hWnd
 
-Nesneyi `HWND` `CWnd` oluşturmak için kullanılan işaretçin. `CClientDC`
+`HWND` `CWnd` Nesneyi oluşturmak için kullanılan işaretçinin `CClientDC` .
 
 ```
 HWND m_hWnd;
@@ -96,11 +97,11 @@ HWND m_hWnd;
 
 ### <a name="example"></a>Örnek
 
-  [CClientDC::CClientDC](#cclientdc)için örneğe bakın.
+  [CClientDC:: CClientDC](#cclientdc)örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek MDI](../../overview/visual-cpp-samples.md)<br/>
-[CDC Sınıfı](../../mfc/reference/cdc-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CDC Sınıfı](../../mfc/reference/cdc-class.md)
+[MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
+[CDC sınıfı](../../mfc/reference/cdc-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CDC sınıfı](../../mfc/reference/cdc-class.md)

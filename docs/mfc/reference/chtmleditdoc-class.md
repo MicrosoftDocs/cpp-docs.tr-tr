@@ -1,5 +1,6 @@
 ---
-title: CHtmlEditDoc Sınıfı
+description: 'Daha fazla bilgi edinin: CHtmlEditDoc Class'
+title: CHtmlEditDoc sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CHtmlEditDoc
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - CHtmlEditDoc [MFC], IsModified
 - CHtmlEditDoc [MFC], OpenURL
 ms.assetid: b2cca61f-e5d6-4099-b0d1-46bf85f0bd64
-ms.openlocfilehash: 8b500f651da1a73040fdb0469f2f023babe25e85
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5fb8187ff7925efc5bdfa6a0079a8ec4b186ae63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352170"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115319"
 ---
-# <a name="chtmleditdoc-class"></a>CHtmlEditDoc Sınıfı
+# <a name="chtmleditdoc-class"></a>CHtmlEditDoc sınıfı
 
-[CHtmlEditView](../../mfc/reference/chtmleditview-class.md)ile, MFC belge görünümü mimarisi bağlamında WebBrowser düzenleme platformunun işlevselliğini sağlar.
+[CHtmlEditView](../../mfc/reference/chtmleditview-class.md)Ile, MFC belge görünümü mimarisinin bağlamı içinde WebBrowser düzenlemesi platformunun işlevlerini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class AFX_NOVTABLE CHtmlEditDoc : public CDocument
@@ -35,43 +36,43 @@ class AFX_NOVTABLE CHtmlEditDoc : public CDocument
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CHtmlEditDoc::CHtmlEditDoc](#chtmleditdoc)|Bir `CHtmlEditDoc` nesne inşa eder.|
+|[CHtmlEditDoc::CHtmlEditDoc](#chtmleditdoc)|Bir `CHtmlEditDoc` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CHtmlEditDoc::GetView](#getview)|Bu belgeye `CHtmlEditView` iliştirilen nesneyi alır.|
-|[CHtmlEditDoc::Modifiye](#ismodified)|İlişkili görünümün WebBrowser denetiminin kullanıcı tarafından değiştirilen bir belge yi içerip içermediğini verir.|
-|[CHtmlEditDoc::OpenURL](#openurl)|Url'yi açar.|
+|[CHtmlEditDoc:: GetView](#getview)|`CHtmlEditView`Bu belgeye eklenmiş nesneyi alır.|
+|[CHtmlEditDoc:: IsModified](#ismodified)|İlişkili görünümün WebBrowser denetiminin Kullanıcı tarafından değiştirilmiş bir belge içerip içermediğini döndürür.|
+|[CHtmlEditDoc:: OpenURL](#openurl)|Bir URL açar.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cdocument](../../mfc/reference/cdocument-class.md)
+[CDocument](../../mfc/reference/cdocument-class.md)
 
 `CHtmlEditDoc`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxhtml.h
+**Üstbilgi:** afxhtml. h
 
-## <a name="chtmleditdocchtmleditdoc"></a><a name="chtmleditdoc"></a>CHtmlEditDoc::CHtmlEditDoc
+## <a name="chtmleditdocchtmleditdoc"></a><a name="chtmleditdoc"></a> CHtmlEditDoc::CHtmlEditDoc
 
-Bir `CHtmlEditDoc` nesne inşa eder.
+Bir `CHtmlEditDoc` nesnesi oluşturur.
 
 ```
 CHtmlEditDoc();
 ```
 
-## <a name="chtmleditdocgetview"></a><a name="getview"></a>CHtmlEditDoc::GetView
+## <a name="chtmleditdocgetview"></a><a name="getview"></a> CHtmlEditDoc:: GetView
 
-Bu belgeye iliştirilen [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) nesnesini alır.
+Bu belgeye iliştirilmiş [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) nesnesini alır.
 
 ```
 virtual CHtmlEditView* GetView() const;
@@ -79,19 +80,19 @@ virtual CHtmlEditView* GetView() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belgenin `CHtmlEditView` nesnesine bir işaretçi döndürür.
+Belgenin nesnesine bir işaretçi döndürür `CHtmlEditView` .
 
-## <a name="chtmleditdocismodified"></a><a name="ismodified"></a>CHtmlEditDoc::Modifiye
+## <a name="chtmleditdocismodified"></a><a name="ismodified"></a> CHtmlEditDoc:: IsModified
 
-İlişkili görünümün WebBrowser denetiminin kullanıcı tarafından değiştirilen bir belge yi içerip içermediğini verir.
+İlişkili görünümün WebBrowser denetiminin Kullanıcı tarafından değiştirilmiş bir belge içerip içermediğini döndürür.
 
 ```
 virtual BOOL IsModified();
 ```
 
-## <a name="chtmleditdocopenurl"></a><a name="openurl"></a>CHtmlEditDoc::OpenURL
+## <a name="chtmleditdocopenurl"></a><a name="openurl"></a> CHtmlEditDoc:: OpenURL
 
-Url'yi açar.
+Bir URL açar.
 
 ```
 virtual BOOL OpenURL(LPCTSTR lpszURL);
@@ -99,14 +100,14 @@ virtual BOOL OpenURL(LPCTSTR lpszURL);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszurl*<br/>
+*lpszURL*<br/>
 Açılacak URL.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[HTMLEdit Örneği](../../overview/visual-cpp-samples.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[HTMLEdit örneği](../../overview/visual-cpp-samples.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

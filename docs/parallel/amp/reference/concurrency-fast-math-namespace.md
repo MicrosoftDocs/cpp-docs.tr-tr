@@ -1,21 +1,22 @@
 ---
+description: 'Daha fazla bilgi edinin: concurrency:: fast_math Namespace'
 title: Concurrency::fast_math Ad Alanı
 ms.date: 11/04/2016
 f1_keywords:
 - amp_math/Concurrency::fast_math
 ms.assetid: 54fed939-9902-49db-9f29-e98fd9821508
-ms.openlocfilehash: 6ed8dcfa2faff49e8811769b76aad9df15b2fe7b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 99638e3d8b0a452774d1e92d408ce3edddfa861c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226756"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122375"
 ---
 # <a name="concurrencyfast_math-namespace"></a>Concurrency::fast_math Ad Alanı
 
 `fast_math`Ad alanındaki işlevlerin doğruluğu daha düşüktür, yalnızca tek duyarlıklı () desteği sağlar **`float`** ve DirectX iç sayısını çağırır. Her bir işlevin iki sürümü vardır, örneğin `cos` ve `cosf` . Her iki sürüm de alır ve döndürür **`float`** , ancak her biri aynı DirectX iç öğesini çağırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace fast_math;

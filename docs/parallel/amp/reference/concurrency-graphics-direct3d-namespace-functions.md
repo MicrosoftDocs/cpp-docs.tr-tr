@@ -1,4 +1,5 @@
 ---
+description: ': Concurrency:: Graphics::d irect3d Namespace işlevleri hakkında daha fazla bilgi edinin'
 title: Concurrency::graphics::direct3d ad alanı işlevleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d::make_sampler
 - amp_graphics/Concurrency::graphics::direct3d::make_texture
 ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
-ms.openlocfilehash: 66db1d348c6c58a9226322b51662ef7a4ef75b3d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 52556835c843744e03661b3ef5b718c884765c08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122362"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace-functions"></a>Concurrency::graphics::direct3d ad alanı işlevleri
 
