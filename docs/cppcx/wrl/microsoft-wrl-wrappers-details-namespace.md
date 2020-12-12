@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Microsoft:: WRL:: sarmalayıcılar::D euçlar ad alanı'
 title: Microsoft::WRL::Wrappers::Details Ad Alanı
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,18 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - Details namespace
 ms.assetid: 6d3f04ac-9b53-4a82-a188-a85309ec34a4
-ms.openlocfilehash: 005fa79d413708f630b0a6aebbc06782086c81b3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 03d2ac9877355e6b6af38eea8256bbd8ef43ee3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213765"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178049"
 ---
 # <a name="microsoftwrlwrappersdetails-namespace"></a>Microsoft::WRL::Wrappers::Details Ad Alanı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Microsoft::WRL::Wrappers::Details;
@@ -37,13 +38,13 @@ namespace Microsoft::WRL::Wrappers::Details;
 |Ad|Açıklama|
 |----------|-----------------|
 |[SyncLockT Sınıfı](synclockt-class.md)|Bir kaynağın özel veya paylaşılan sahipliğini alabileceği bir türü temsil eder.|
-|[SyncLockWithStatusT Sınıfı](synclockwithstatust-class.md)|Bir kaynağın özel veya paylaşılan sahipliğini alabileceği bir türü temsil eder.|
+|[SyncLockWithStatusT sınıfı](synclockwithstatust-class.md)|Bir kaynağın özel veya paylaşılan sahipliğini alabileceği bir türü temsil eder.|
 
 ### <a name="methods"></a>Yöntemler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CompareStringOrdinal Metodu](comparestringordinal-method.md)|Belirtilen iki `HSTRING` nesnesini karşılaştırır ve göreli konumunu bir sıralama düzeninde gösteren bir tamsayı döndürür.|
+|[CompareStringOrdinal yöntemi](comparestringordinal-method.md)|Belirtilen iki `HSTRING` nesneyi karşılaştırır ve göreli konumunu bir sıralama düzeninde gösteren bir tamsayı döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -53,4 +54,4 @@ namespace Microsoft::WRL::Wrappers::Details;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Wrappers Ad Alanı](microsoft-wrl-wrappers-namespace.md)
+[Microsoft:: WRL:: sarmalayıcılar ad alanı](microsoft-wrl-wrappers-namespace.md)

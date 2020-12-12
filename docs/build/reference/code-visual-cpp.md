@@ -1,5 +1,6 @@
 ---
-title: '&lt;kodu > (C++ belge açıklamaları)'
+description: 'Daha fazla bilgi edinin: &lt; kod&gt;'
+title: '&lt;kod> (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - <code>
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - <code> C++ XML tag
 - code C++ XML tag
 ms.assetid: 687db3f8-d435-4a90-b781-8da503fa39bc
-ms.openlocfilehash: f4bc28c4615a4aab3076940806f54c699ec1ee0e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ae40becf272e6be00cd23d157953bd54da21b2b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169936"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179102"
 ---
-# <a name="ltcodegt"></a>&lt;kodu&gt;
+# <a name="ltcodegt"></a>&lt;kod&gt;
 
-\<kodu > etiketi, bir veya daha fazla satırı kod olarak göstermek için bir yol sağlar.
+\<code>Etiketi, bir veya daha fazla satırı kod olarak göstermek için bir yol sağlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,18 +27,18 @@ ms.locfileid: "80169936"
 
 #### <a name="parameters"></a>Parametreler
 
-*içeriði*<br/>
+*içerik*<br/>
 Kod olarak işaretlenmesini istediğiniz metin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Metnin bir kısmının kod olarak işaretlenmesi gerektiğini belirtmek için [\<c >](c-visual-cpp.md) kullanın.
+[\<c>](c-visual-cpp.md)Metnin bir kısmının kod olarak işaretlenmesi gerektiğini belirtmek için kullanın.
 
 Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
 ## <a name="example"></a>Örnek
 
-\<Code > etiketinin nasıl kullanılacağına ilişkin bir örnek için [\<örnek >](example-visual-cpp.md) konusuna bakın.
+[\<example>](example-visual-cpp.md)Etiketi nasıl kullanacağınızı gösteren bir örnek için konusuna bakın \<code> .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

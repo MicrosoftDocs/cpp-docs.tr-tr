@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/CLRIMAGETYPE (CLR görüntü türünü belirt)
 title: /CLRIMAGETYPE (CLR Görüntü Türünü Belirt)
 ms.date: 05/16/2019
 f1_keywords:
@@ -8,40 +9,40 @@ helpviewer_keywords:
 - /CLRIMAGETYPE linker option
 - -CLRIMAGETYPE linker option
 ms.assetid: 04c60ee6-9dd7-4391-bc03-6926ad0fa116
-ms.openlocfilehash: ee2e2ce359a4b877551adf9af71e0187b42cfd42
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 7c499eeddcacd674a9dfc2134e059fd8b3b9a6b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837492"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179154"
 ---
 # <a name="clrimagetype-specify-type-of-clr-image"></a>/CLRIMAGETYPE (CLR Görüntü Türünü Belirt)
 
-CLR imaj türü bağlantılı resim ayarlayın.
+Bağlantılı görüntüde CLR görüntü türünü ayarlayın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ CLRIMAGETYPE:**{**IJW**|**SAF**|**GÜVENLİ**|**SAFE32BITPREFERRED**}
+> **/Clrimagetype:**{**IJW** | **saf** | **güvenli** | **SAFE32BITPREFERRED**}
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlayıcı yerel nesneleri kabul eder ve ayrıca kullanılarak derlenen MSIL nesnelerini [/CLR](clr-common-language-runtime-compilation.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015 ve Visual Studio 2017'de desteklenmeyen ve üzeri olan kullanım. Aynı yapı içinde karışık nesneler geçirildiğinde, sonuçta gelen çıktı dosyasının doğrulanabilirliği, varsayılan olarak, giriş modülleri doğrulanabilirliğinin en düşük düzeyine eşit olur. Örneğin, bir doğal görüntü ve karma mod bir görüntü geçirirseniz (kullanılarak derlenmiş **/CLR**), elde edilen görüntü karma modda görüntü olacaktır.
+Bağlayıcı yerel nesneleri ve ayrıca [/clr](clr-common-language-runtime-compilation.md)KULLANıLARAK derlenen MSIL nesnelerini kabul eder. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ve sonrasında desteklenmez. Aynı derlemede karma nesneler geçirildiğinde, sonuçta elde edilen çıkış dosyasının verifibilirliği, varsayılan olarak, giriş modüllerinin en düşük önem düzeyine eşittir. Örneğin, yerel bir görüntü ve bir karma mod görüntüsü geçirirseniz ( **/clr** kullanılarak derlenir), sonuçta elde edilen görüntü bir karma mod görüntüsü olur.
 
-Kullanabileceğiniz **/CLRIMAGETYPE** doğrulanabilirliğini denetler, daha düşük bir düzeyde ihtiyacınız olup olmadığını belirtmek için.
+Gerekirse, daha düşük bir dosya düzeyi belirtmek için **/Clrimagetype** kullanabilirsiniz.
 
-Bir dosyanın CLR görüntü türünü belirleme hakkında daha fazla bilgi için bkz: [/CLRHEADER](clrheader.md).
+Bir dosyanın CLR görüntü türünü belirleme hakkında daha fazla bilgi için bkz. [/CLRHEADER](clrheader.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **yapılandırma özellikleri** düğümü.
+1. **Yapılandırma özellikleri** düğümünü genişletin.
 
-1. Genişletin **bağlayıcı** düğümü.
+1. **Bağlayıcı** düğümünü genişletin.
 
-1. Seçin **Gelişmiş** özellik sayfası.
+1. **Gelişmiş** özellik sayfasını seçin.
 
-1. Değiştirme **CLR imaj türü** özelliği.
+1. **Clr görüntü türü** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -50,4 +51,4 @@ Bir dosyanın CLR görüntü türünü belirleme hakkında daha fazla bilgi içi
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [MSVC bağlayıcı başvurusu](linking.md)
-- [MSVC Bağlayıcı Seçenekleri](linker-options.md)
+- [MSVC bağlayıcı seçenekleri](linker-options.md)

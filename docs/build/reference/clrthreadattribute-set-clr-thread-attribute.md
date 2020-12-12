@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/CLRTHREADATTRıBUTE (CLR Iş parçacığı özniteliğini ayarla)
 title: /CLRTHREADATTRIBUTE (CLR İş Parçacığı Özniteliğini Ayarla)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - /CLRTHREADATTRIBUTE linker option
 - -CLRTHREADATTRIBUTE linker option
 ms.assetid: 4907e9ef-5031-446c-aecf-0a0b32fae1e8
-ms.openlocfilehash: ad07c84a5c470cd5fa1ac10ff6d2baed5c35c025
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 119797ee10ed0c08477b8e08635605e4299ffd41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272474"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179128"
 ---
 # <a name="clrthreadattribute-set-clr-thread-attribute"></a>/CLRTHREADATTRIBUTE (CLR İş Parçacığı Özniteliğini Ayarla)
 
@@ -27,37 +28,37 @@ CLR programınızın giriş noktası için iş parçacığı oluşturma öznitel
 #### <a name="parameters"></a>Parametreler
 
 **MTA**<br/>
-Programınızın Giriş noktasına MTAThreadAttribute özniteliğini uygular.
+Programınızın giriş noktasına MTAThreadAttribute özniteliğini uygular.
 
-**YOK**<br/>
-/CLRTHREADATTRIBUTE belirtmeme işlemiyle aynıdır.  İş parçacığı oluşturma özniteliği varsayılan ortak dil çalışma zamanı (CLR) olanak sağlar.
+**SEÇIM**<br/>
+/CLRTHREADATTRIBUTEAS Belirtmemeye benzer.  Ortak dil çalışma zamanının (CLR) varsayılan iş parçacığı özniteliğini ayarlamaya izin verir.
 
-**STA**<br/>
-Programınızın Giriş noktasına STAThreadAttribute özniteliğini uygular.
+**A**<br/>
+Programınızın giriş noktasına STAThreadAttribute özniteliğini uygular.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ana iş parçacığı giriş noktası etkileyen iş parçacığı özniteliği yalnızca .exe, oluşturma sırasında geçerli ayardır.
+Thread özniteliğinin ayarlanması, ana iş parçacığının giriş noktasını etkilediği için yalnızca bir. exe oluşturulurken geçerlidir.
 
-Kullanırsanız yerleştirerek iş parçacığı oluşturma özniteliği (STAThreadAttribute veya MTAThreadAttribute) varsayılan giriş işlev veya varsayılan giriş noktası (main veya wmain, örneğin) /CLRTHREADATTRIBUTE kullanılarak iş parçacığı modeli belirtin.
+Varsayılan giriş noktasını (örneğin, Main veya wmain) kullanıyorsanız iş parçacığı modelini/CLRTHREADATTRıBUTE kullanarak veya varsayılan giriş işlevine iş parçacığı özniteliği (STAThreadAttribute veya MTAThreadAttribute) koyarak belirtin.
 
-Varsayılan olmayan giriş noktası kullanıyorsanız, iş parçacığı modeli /CLRTHREADATTRIBUTE kullanarak veya iş parçacığı yerleştirerek öznitelik varsayılan olmayan giriş işlev ve ardından varsayılan olmayan giriş noktasıyla belirtin belirtin [/Entry](entry-entry-point-symbol.md) .
+Varsayılan olmayan bir giriş noktası kullanırsanız,/CLRTHREADATTRıBUTE kullanarak veya iş parçacığı oluşturma özniteliğini varsayılan olmayan giriş işlevine yerleştirerek ya da varsayılan olmayan giriş noktasını [/Entry](entry-entry-point-symbol.md)ile belirterek iş parçacığı modelini belirtin.
 
-Kaynak kodunda belirtilen iş parçacığı modeli ile /CLRTHREADATTRIBUTE belirtilen iş parçacığı modeliyle kabul etmezse, bağlayıcı /CLRTHREADATTRIBUTE yoksay ve kaynak kodunda belirtilen iş parçacığı modeli geçerlidir.
+Kaynak kodda belirtilen iş parçacığı modeli,/CLRTHREADATTRıBUTE ile belirtilen iş parçacığı modeliyle uyuşmadığından, bağlayıcı/CLRTHREADATTRıBUTE 'yi yoksayar ve kaynak kodunda belirtilen iş parçacığı modelini uygular.
 
-CLR programınızın tek iş parçacığı kullanan bir COM nesnesi barındırıyorsa, örneğin, tek iş parçacığı, kullanmanız için gerekli olacaktır.  CLR çoklu iş parçacığı kullanan programda, tek iş parçacığı kullanan bir COM nesnesi barındıramaz.
+Örneğin, CLR programınız tek iş parçacığı kullanan bir COM nesnesi barındıralıyorsa, tek iş parçacığı kullanmanız gerekir.  CLR programınız çoklu iş parçacıklı kullanıyorsa, tek iş parçacığı kullanan bir COM nesnesini barındıraamaz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Genişletin **yapılandırma özellikleri** düğümü.
+1. **Yapılandırma özellikleri** düğümünü genişletin.
 
-1. Genişletin **bağlayıcı** düğümü.
+1. **Bağlayıcı** düğümünü genişletin.
 
-1. Seçin **Gelişmiş** özellik sayfası.
+1. **Gelişmiş** özellik sayfasını seçin.
 
-1. Değiştirme **CLR iş parçacığı özniteliği** özelliği.
+1. **Clr Iş parçacığı özniteliği** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -66,4 +67,4 @@ CLR programınızın tek iş parçacığı kullanan bir COM nesnesi barındırı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

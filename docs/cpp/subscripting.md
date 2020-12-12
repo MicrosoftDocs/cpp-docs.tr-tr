@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: alt simge oluşturma'
 title: Alt Simge Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - operator overloading [C++], examples
 - subscript operator
 ms.assetid: eb151281-6733-401d-9787-39ab6754c62c
-ms.openlocfilehash: 2573f30b2dfee20d12afea2a1072bbdcef46228b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 77230045e66336e9989f49dd54557fa92d2ab001
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178205"
 ---
 # <a name="subscripting"></a>Alt Simge Oluşturma
 

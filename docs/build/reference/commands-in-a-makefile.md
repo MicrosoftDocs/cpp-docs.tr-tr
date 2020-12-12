@@ -1,25 +1,26 @@
 ---
+description: 'Hakkında daha fazla bilgi için: makefile içindeki komutlar'
 title: Derleme Görevleri Dosyası Komutları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - commands, makefiles
 ms.assetid: 8085517e-42f4-493b-b8f8-44311fc08c64
-ms.openlocfilehash: fcb8737070931cf95d7bfb3971a84e22c7ad70a4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4f3c6d3cc9b5d567548d7b3f2bd7679d492ebf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294401"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179089"
 ---
 # <a name="commands-in-a-makefile"></a>Derleme Görevleri Dosyası Komutları
 
-Açıklama bloğu veya çıkarım kuralı bloğunu güncel olmayan bir bağımlılıktır çalıştırılacak komutları belirtir. NMAKE görüntüler her komut, çalıştırmadan önce sürece /S, **. Sessiz**, **! CMDSWITCHES**, veya \@ kullanılır. Açıklama bloğu komutları bloğu tarafından uyulmazsa NMAKE için eşleşen bir çıkarma kuralı arar.
+Bir açıklama bloğu veya çıkarım kuralı, bağımlılık güncel değilse çalıştırılacak bir komut bloğunu belirtir. NMAKE,/S, değilse, çalıştırmadan önce her komutu görüntüler **. SESSIZ**, **! CMDSWITCHES** veya \@ kullanılır. Bir açıklama bloğunun arkasından bir komut bloğu yoksa, NMAKE eşleşen bir çıkarım kuralı arar.
 
-Bir komut bloğu her biri kendi satırında bir veya daha fazla komut içerir. Boş bir satır, bağımlılık veya kural ve komutları blok arasında görünebilir. Ancak, yalnızca boşluk veya sekme içeren bir satır görünebilir; Bu satır null bir komut olarak yorumlanır ve herhangi bir hata oluşur. Boş satırlar arasında komut satırları izin verilir.
+Bir komut bloğu, her biri kendi satırı üzerinde bir veya daha fazla komut içerir. Bağımlılık veya kural ile komutlar bloğu arasında boş satır bulunamaz. Ancak, yalnızca boşluk veya sekme içeren bir satır görünebilir; Bu satır, null bir komut olarak yorumlanır ve hata oluşmaz. Komut satırları arasında boş satırlara izin verilir.
 
-Bir komut satırı, bir veya daha fazla boşluk veya sekme ile başlar. Bir yeni satır karakteri ve ardından bir eğik çizgi (\), komut bir boşluk olarak yorumlanır; ters eğik çizgi bir satırın sonunda bir komut sonraki satırın üzerine devam etmek için kullanın. NMAKE yorumlar ters eğik çizgi gerçek anlamda bir boşluk veya sekme gibi başka bir karakter ters eğik çizgi izliyorsa.
+Bir komut satırı, bir veya daha fazla boşluk veya sekme ile başlar. Yeni satır karakteri tarafından izlenen ters eğik çizgi (\), komutta boşluk olarak yorumlanır; bir komutun sonraki satıra devam etmesi için satırın sonunda bir ters eğik çizgi kullanın. NMAKE, boşluk veya sekme dahil olmak üzere başka bir karakter varsa ters eğik çizgiyi Yorumlar ve ters eğik çizgiyi izler.
 
-Bir komut noktalı virgül (;) tarafından öncesinde bir bağımlılık satırı veya çıkarım kuralı, komutları bloğunu izleyen olup olmadığını görünebilir:
+Önünde noktalı virgül (;) bir bağımlılık çizgisi veya çıkarım kuralında görünebilir, bu, bir komut bloğunun takip edilip edilmeyeceğini belirtir:
 
 ```
 project.obj : project.c project.h ; cl /c project.c
@@ -29,7 +30,7 @@ project.obj : project.c project.h ; cl /c project.c
 
 [Komut değiştiriciler](command-modifiers.md)
 
-[Filename-parts söz dizimi](filename-parts-syntax.md)
+[Dosya adı parçaları söz dizimi](filename-parts-syntax.md)
 
 [Derleme görevleri dosyasındaki satır içi dosyalar](inline-files-in-a-makefile.md)
 

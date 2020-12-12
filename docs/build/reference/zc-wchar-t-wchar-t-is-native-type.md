@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin:/Zc: wchar_t (wchar_t yerel tür)'
 title: /Zc:wchar_t (wchar_t Yerel Tür)
 ms.date: 03/01/2018
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: b0de5a84-da72-4e5a-9a4e-541099f939e0
-ms.openlocfilehash: 114ed4a279b66571c0dc81fc1139dcdc59c17eae
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3dc826bf60c760f45464bcab73dc5fcb79edc3cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234321"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178907"
 ---
 # <a name="zcwchar_t-wchar_t-is-native-type"></a>/Zc:wchar_t (wchar_t Yerel Tür)
 
 **`wchar_t`** C++ standardına göre yerleşik bir tür olarak ayrıştırın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/Zc: wchar_t**[ **-** ]
 
@@ -39,9 +40,9 @@ Microsoft **`wchar_t`** iki baytlık işaretsiz bir değer olarak uygulanır. Mi
 
 Sürümünü kullanmaya devam eden eski kodla birlikte çalışmak için gereken yeni kod yazarsanız, **`typedef`** **`wchar_t`** **`unsigned short`** **`__wchar_t`** **`wchar_t`** kodunuzun **/Zc: wchar_t** ile derlenen kodla veya kod ile derlenen kodla bağlantılandırabilmesi için hem hem de varyasyonları için aşırı yüklemeler sağlayabilirsiniz. Aksi takdirde, bir tane ve bir ile, **/Zc: wchar_t** etkin olmayan iki farklı kitaplık derlemesi sağlamanız gerekir. Bu durumda bile, eski kodu yeni kodu derlerken kullandığınız derleyicinin aynısını kullanarak oluşturmanızı öneririz. Farklı derleyicilerle derlenmiş ikili dosyaları kesinlikle karıştırmayın.
 
-**/Zc: wchar_t** belirtildiğinde, ** \_ wchar \_ t \_ tanımlı** ve ** \_ yerel \_ wchar \_ t \_ tanımlanmış** sembolleri tanımlanmıştır. Daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).
+**/Zc: wchar_t** belirtildiğinde, **\_ wchar \_ t \_ tanımlı** ve **\_ yerel \_ wchar \_ t \_ tanımlanmış** sembolleri tanımlanmıştır. Daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md).
 
-Kodunuz artık varsayılan olarak açık **wchar_t** olduğundan, KODUNUZ derleyici com genel işlevlerini kullanıyorsa, comsupp. lib ( [Açıklama pragmadan](../../preprocessor/comment-c-cpp.md) veya komut satırından) açık başvuruları comsuppw. lib veya comsuppwd. lib olarak değiştirmenizi öneririz. ( **/Zc: wchar_t**ile derlemeniz gerekiyorsa, comsupp. lib kullanın.) Comdef. h üstbilgi dosyasını eklerseniz, doğru kitaplık sizin için belirtilir. Derleyici COM desteği hakkında daha fazla bilgi için bkz. [DERLEYICI com desteği](../../cpp/compiler-com-support.md).
+Kodunuz artık varsayılan olarak açık **wchar_t** olduğundan, KODUNUZ derleyici com genel işlevlerini kullanıyorsa, comsupp. lib ( [Açıklama pragmadan](../../preprocessor/comment-c-cpp.md) veya komut satırından) açık başvuruları comsuppw. lib veya comsuppwd. lib olarak değiştirmenizi öneririz. ( **/Zc: wchar_t** ile derlemeniz gerekiyorsa, comsupp. lib kullanın.) Comdef. h üstbilgi dosyasını eklerseniz, doğru kitaplık sizin için belirtilir. Derleyici COM desteği hakkında daha fazla bilgi için bkz. [DERLEYICI com desteği](../../cpp/compiler-com-support.md).
 
 **`wchar_t`** C kodunu derlerken yerleşik tür desteklenmez. Visual C++ uygunluk sorunları hakkında daha fazla bilgi için bkz. [Standart olmayan davranış](../../cpp/nonstandard-behavior.md).
 

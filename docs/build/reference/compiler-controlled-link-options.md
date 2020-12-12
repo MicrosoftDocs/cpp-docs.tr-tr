@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Compiler-Controlled bağlantı seçenekleri'
 title: Derleyici Denetimindeki LINK Seçenekleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - cl.exe compiler [C++], features that affect linking
 - cl.exe compiler [C++], controlling linker
 ms.assetid: e4c03896-c99c-4599-8502-e0f4bebe69d0
-ms.openlocfilehash: f631d0ebbbd9e60fe5d54aac6fb158461d3f4d38
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 86f03f53fe19f6788528dca421fb6030289fca99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440102"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178985"
 ---
 # <a name="compiler-controlled-link-options"></a>Derleyici Denetimindeki LINK Seçenekleri
 
@@ -23,10 +24,10 @@ ms.locfileid: "79440102"
 |----------------------|---------------------------------|
 |. C,. cxx,. cpp veya. def dışında herhangi bir dosya adı uzantısı|Bir dosya adını bağlamak için girdi olarak geçirir|
 |*filename*. def|/DEF:*filename*. def geçirir|
-|/F*numarası*|/STACK:*numara* geçirir|
-|/FD*dosya adı*|/PDB:*filename* komutunu geçirir|
-|/Fe*dosya adı*|/OUT:*filename* geçişlerini yapar|
-|/FM*dosya adı*|Geçirir/MAP:*filename*|
+|/F *numarası*|/STACK:*numara* geçirir|
+|/FD *dosya adı*|/PDB:*filename* komutunu geçirir|
+|/Fe *dosya adı*|/OUT:*filename* geçişlerini yapar|
+|/FM *dosya adı*|Geçirir/MAP:*filename*|
 |/GY|Paketlenmiş işlevler (Combats) oluşturur; işlev düzeyinde bağlamayı etkinleştirilir|
 |/LD|/DLL geçirir|
 |/LDd|/DLL geçirir|
@@ -43,4 +44,4 @@ Daha fazla bilgi için bkz. [MSVC derleyici seçenekleri](compiler-options.md).
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

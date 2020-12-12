@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: mbsinit'
 title: mbsinit
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - mbsinit function
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034
-ms.openlocfilehash: e3b1eecc252a2bee83997aa6f2f6f47a96d3321a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 48edb74e47549cb9e1a97757d4922bc0bd8b6c24
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952375"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178608"
 ---
 # <a name="mbsinit"></a>mbsinit
 
@@ -53,7 +54,7 @@ int mbsinit(
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbstate_t** IŞARETÇISI alan ANSI işlevlerinden birini kullanırken, **mbstate_t** adresinin iletilmesi, Arabellekteki son baytın dönüştürülmesiyle ilgili bilgileri döndürür.
+**Mbstate_t** bir IŞARETÇI alan ANSI işlevlerinden birini kullanırken, **mbstate_t** adresinin geçirilmesi, Arabellekteki son baytın dönüştürülmesiyle ilgili bilgileri döndürür.
 
 Uygun kod sayfasının çok baytlı karakterlerinizi desteklemesi için yüklenmesi gerekir.
 
@@ -165,4 +166,4 @@ WC String: AaBbCcxXyYzZ
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>

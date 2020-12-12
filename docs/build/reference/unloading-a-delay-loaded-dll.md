@@ -1,16 +1,17 @@
 ---
+description: "Daha fazla bilgi edinin: Delay-Loaded DLL 'yi kaldırma"
 title: Gecikmeli Yüklenen DLL'i Kaldırma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - __FUnloadDelayLoadedDLL2
 - delayed loading of DLLs, unloading
 ms.assetid: 6463bc71-020e-4aff-a4ca-90360411c54e
-ms.openlocfilehash: 1895bf12cb195ef7b4555d400badf112d377547b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd733bfa02a6d90eecb1b617288d368d33766282
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178946"
 ---
 # <a name="unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Kaldırma
 
@@ -45,7 +46,7 @@ PUnloadInfo __puiHead;
 
 UnloadInfo yapısı, konum operatörü ve işleci olarak **LocalAlloc** ve **LocalFree** uygulamalarını kullanan bir C++ sınıfı kullanılarak uygulanır **`new`** **`delete`** . Bu seçenekler, listenin başı olarak __puiHead kullanılarak standart bağlantılı bir listede tutulur.
 
-__FUnloadDelayLoadedDLL çağırmak, yüklenen dll 'Ler listesinde sağladığınız adı bulmayı dener (tam eşleşme gerekir). Bulunursa, ıAT 'ın pUnloadIAT içindeki kopyası, dönüştürücü işaretçilerini geri yüklemek için çalışan ıAT 'ın üzerine kopyalanır, kitaplık **FreeLibrary**ile serbest bırakılır, eşleşen **UnloadInfo** kaydının LISTEDE bağlantısı kaldırılır ve doğru döndürülür.
+__FUnloadDelayLoadedDLL çağırmak, yüklenen dll 'Ler listesinde sağladığınız adı bulmayı dener (tam eşleşme gerekir). Bulunursa, ıAT 'ın pUnloadIAT içindeki kopyası, dönüştürücü işaretçilerini geri yüklemek için çalışan ıAT 'ın üzerine kopyalanır, kitaplık **FreeLibrary** ile serbest bırakılır, eşleşen **UnloadInfo** kaydının LISTEDE bağlantısı kaldırılır ve doğru döndürülür.
 
 İşlevin __FUnloadDelayLoadedDLL2 bağımsız değişkeni büyük/küçük harfe duyarlıdır. Örneğin şunu belirtmeniz gerekir:
 
