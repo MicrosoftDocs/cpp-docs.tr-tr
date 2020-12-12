@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: operation_timed_out sınıfı'
 title: operation_timed_out Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - operation_timed_out class
 ms.assetid: 963efe1d-a6e0-477c-9a70-d93d8412c897
-ms.openlocfilehash: 7a2513d30aa68798707f3bb16318db9b594b9e16
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 476dfc2d7f29b2769c076ff525f3d0eb1e20a8f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77138873"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236561"
 ---
 # <a name="operation_timed_out-class"></a>operation_timed_out Sınıfı
 
 Bu sınıf, bir işlem zaman aşımına uğramışsa oluşturulan özel durumu açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class operation_timed_out : public std::exception;
@@ -31,7 +32,7 @@ class operation_timed_out : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[operation_timed_out](#ctor)|Fazla Yüklendi. `operation_timed_out` nesnesi oluşturur.|
+|[operation_timed_out](#ctor)|Fazla Yüklendi. Bir `operation_timed_out` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,9 +46,9 @@ class operation_timed_out : public std::exception;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>operation_timed_out
+## <a name="operation_timed_out"></a><a name="ctor"></a> operation_timed_out
 
-`operation_timed_out` nesnesi oluşturur.
+Bir `operation_timed_out` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP operation_timed_out(_In_z_ const char* _Message) throw();
@@ -62,4 +63,4 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dışarı aktarma'
 title: Export (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - export attribute
 ms.assetid: 70b3e848-fad6-4e09-8c72-be60ca72a4df
-ms.openlocfilehash: 4854789d9f977b3b747fd9b546cb92642942be88
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 40c802f906d62d72be2c3126159b089c4d24d5b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236301"
 ---
 # <a name="export"></a>dışarı aktarma
 
@@ -53,7 +54,7 @@ struct MyStruct {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`union`**,,, **`typedef`** **`enum`** **`struct`** veya **`interface`**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

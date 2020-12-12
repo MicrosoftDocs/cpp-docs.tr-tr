@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: first_is'
 title: first_is (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - first_is attribute
 ms.assetid: 89acbf56-3b38-4d44-83e8-1ce2f6f74ffd
-ms.openlocfilehash: 1a06206d7df4dace3f749fdc8ceae7f68aaf095c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 151a9defdde078a062f000860ebb40c3d1c9b466
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236275"
 ---
 # <a name="first_is"></a>first_is
 
 İletilmek üzere ilk dizi öğesinin dizinini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ first_is("expression") ]
@@ -25,7 +26,7 @@ ms.locfileid: "88845269"
 
 ### <a name="parameters"></a>Parametreler
 
-*ifadesini*<br/>
+*expression*<br/>
 Bir veya daha fazla C-dil ifadesi. Boş bağımsız değişken yuvalarına izin veriliyor.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -61,7 +62,7 @@ requestedit] HRESULT get_I([out, retval]long *i);
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`struct`** Or **`union`** , Interface parametresi, Interface yöntemi içindeki alan|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

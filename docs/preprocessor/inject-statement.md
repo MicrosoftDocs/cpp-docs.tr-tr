@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: inject_statement Import özniteliği'
 title: inject_statement içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - inject_statement attribute
 ms.assetid: 07d6f0f4-d9fb-4e18-aa62-f235f142ff5e
-ms.openlocfilehash: 25dee621ff8af2c9a39e605b9da2c29d80f9570a
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: b7ab8059e95ed3799857fe1b899ef2efff729ffb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236431"
 ---
 # <a name="inject_statement-import-attribute"></a>inject_statement içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
 Bağımsız değişkenini tür kitaplığı üstbilgisine kaynak metin olarak ekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **inject_statement (** "*kaynak-metin*" **)**
+> **#import** *türü-kitaplık* **inject_statement (** "*kaynak-metin*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
@@ -32,7 +33,7 @@ Tür kitaplığı üstbilgi dosyasına eklenecek kaynak metin.
 
 Metin, üstbilgi dosyasındaki *tür kitaplığı* içeriğini sarmalayan ad alanı bildiriminin başlangıcına yerleştirilir.
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

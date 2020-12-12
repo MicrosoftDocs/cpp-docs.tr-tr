@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: implementation_only Import özniteliği'
 title: implementation_only içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,35 +7,35 @@ f1_keywords:
 helpviewer_keywords:
 - implementation_only attribute
 ms.assetid: d8cabc86-4425-45a0-9587-d57536980088
-ms.openlocfilehash: 08144b3c815350acfe6a856b36d2d88085d1c04d
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 8afeb9981c5931596fc500419755521a41a3d7c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218979"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236548"
 ---
 # <a name="implementation_only-import-attribute"></a>implementation_only içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
-`.tlh` Birincil tür kitaplığı üst bilgi dosyasının oluşturulmasını engeller.
+`.tlh`Birincil tür kitaplığı üst bilgi dosyasının oluşturulmasını engeller.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **implementation_only**
+> **#import** *türü-kitaplık* **implementation_only**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu dosya, tür kitaplığı içeriğini göstermek için kullanılan tüm bildirimleri içerir. Sarmalayıcı üye işlevlerinin uygulamalarıyla birlikte üstbilgidosyasıoluşturulurvederlemeyedahiledilir.`.tli`
+Bu dosya, tür kitaplığı içeriğini göstermek için kullanılan tüm bildirimleri içerir. `.tli`Sarmalayıcı üye işlevlerinin uygulamalarıyla birlikte üstbilgi dosyası oluşturulur ve derlemeye dahil edilir.
 
-Bu öznitelik belirtildiğinde, `.tli` üst bilginin içeriği, `.tlh` üst bilgide normal olarak kullanılan ile aynı ad alanıdır. Ayrıca, üye işlevleri satır içi olarak bildirilmez.
+Bu öznitelik belirtildiğinde, üst bilginin içeriği, `.tli` üst bilgide normal olarak kullanılan ile aynı ad alanıdır `.tlh` . Ayrıca, üye işlevleri satır içi olarak bildirilmez.
 
-**İmplementation_only** özniteliği, uygulamaları ön derlenmiş ÜSTBILGI (pch) dosyasından tutmanın bir yolu olarak [no_implementation](../preprocessor/no-implementation.md) özniteliğiyle birlikte kullanılmak üzere tasarlanmıştır. Özniteliği içeren bir `#import` ifade, PCH 'yi oluşturmak için kullanılan kaynak bölgeye yerleştirilir. `no_implementation` Elde edilen PCH, bir dizi kaynak dosya tarafından kullanılır. İmplementation_only `#import` özniteliğine sahip bir ifade, PCH bölgesinin dışında kullanılır. Bu ifadeyi kaynak dosyalardan birinde yalnızca bir kez kullanmanız gerekir. Her kaynak dosya için ek yeniden derleme gerekmeden tüm gerekli sarmalayıcı üye işlevlerini oluşturur.
+**İmplementation_only** özniteliği, uygulamaları ön derlenmiş ÜSTBILGI (pch) dosyasının dışına tutmanın bir yolu olarak [no_implementation](../preprocessor/no-implementation.md) özniteliğiyle birlikte kullanılmak üzere tasarlanmıştır. `#import`Özniteliği içeren bir ifade, `no_implementation` PCH 'yi oluşturmak için kullanılan kaynak bölgeye yerleştirilir. Elde edilen PCH, bir dizi kaynak dosya tarafından kullanılır. `#import` **İmplementation_only** özniteliğine sahip BIR ifade, PCH bölgesinin dışında kullanılır. Bu ifadeyi kaynak dosyalardan birinde yalnızca bir kez kullanmanız gerekir. Her kaynak dosya için ek yeniden derleme gerekmeden tüm gerekli sarmalayıcı üye işlevlerini oluşturur.
 
 > [!NOTE]
-> `#import` `no_implementation` Bir `#import` deyimdeki implementation_only Özniteliği, özniteliği ile aynı tür kitaplığının başka bir ifadesiyle birlikte kullanılmalıdır. Aksi takdirde, derleyici hataları oluşturulur. Bunun nedeni, `#import` deyimin `no_implementation` tarafından oluşturulan sarmalayıcı sınıf tanımlarının, **implementation_only** özniteliği tarafından oluşturulan uygulamaları derlemek için gerekli olmasından kaynaklanır.
+> Bir deyimdeki **implementation_only** özniteliği, `#import` özniteliğiyle birlikte `#import` aynı tür kitaplığına sahip başka bir deyimle birlikte kullanılmalıdır `no_implementation` . Aksi takdirde, derleyici hataları oluşturulur. Bunun nedeni, deyimin tarafından oluşturulan sarmalayıcı sınıf tanımlarının, `#import` `no_implementation` **implementation_only** özniteliği tarafından oluşturulan uygulamaları derlemek için gereklidir.
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
