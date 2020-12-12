@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı C4355'
 title: Derleyici Uyarısı C4355
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4355
 ms.assetid: b819ecab-8a07-42d7-8fa4-1180d51626c0
-ms.openlocfilehash: 2725db0e37f8e60f37ec1b534306f516fe10be33
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd4d38aae7a3728370c89cb2298438dbc0ba616c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180779"
 ---
 # <a name="compiler-warning-c4355"></a>Derleyici Uyarısı C4355
 
