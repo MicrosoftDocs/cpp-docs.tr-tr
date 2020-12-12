@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: TN053: DAO veritabanı sınıfları için özel DFX yordamları'
 title: 'TN053: DAO Veritabanı Sınıfları için Özel DFX Rutinleri'
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -11,42 +12,42 @@ helpviewer_keywords:
 - DFX (DAO record field exchange) [MFC]
 - custom DFX routines [MFC]
 ms.assetid: fdcf3c51-4fa8-4517-9222-58aaa4f25cac
-ms.openlocfilehash: f7ad854f4dbb4e90c09e886c69260e4e2eea3be2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cbe34963ec3f46a88e41521f119191e7d0afe1e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365255"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214981"
 ---
 # <a name="tn053-custom-dfx-routines-for-dao-database-classes"></a>TN053: DAO Veritabanı Sınıfları için Özel DFX Rutinleri
 
 > [!NOTE]
-> DAO Access veritabanları ile kullanılır ve Office 2013 aracılığıyla desteklenir. DAO 3.6 son sürümüdür ve eski miş olarak kabul edilir. Visual C++ ortamı ve sihirbazlar DAO'yu desteklemez (her ne kadar DAO sınıfları dahil olsa da ve bunları kullanmaya devam edebilirsiniz). Microsoft, yeni projeler için [OLE DB Şablonları](../data/oledb/ole-db-templates.md) veya [ODBC ve MFC](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. DAO'yu yalnızca varolan uygulamaları korurken kullanmalısınız.
+> DAO, Access veritabanları ile birlikte kullanılır ve Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir. Visual C++ ortamı ve sihirbazları DAO 'YU desteklemez (DAO sınıfları dahil edilip kullanmaya devam edebilirsiniz). Microsoft, yeni projeler için [OLE DB şablonlarını](../data/oledb/ole-db-templates.md) veya [ODBC 'yi ve MFC 'yi](../data/odbc/odbc-and-mfc.md) kullanmanızı önerir. Yalnızca var olan uygulamaları korumak için DAO kullanmanız gerekir.
 
-Bu teknik not, DAO kayıt alanı değişimi (DFX) mekanizmasını açıklar. DFX yordamlarında neler olduğunu anlamalarına yardımcı `DFX_Text` olmak için, işlev ayrıntılı olarak bir örnek olarak açıklanacaktır. Bu teknik nota ek bir bilgi kaynağı olarak, diğer tek tek DFX işlevleriiçin kodu inceleyebilirsiniz. Özel bir RFX yordamı (ODBC veritabanı sınıfları ile birlikte kullanılan) gerekebilir gibi sık sık özel bir DFX yordamı gerekmez büyük olasılıkla.
+Bu teknik notta, DAO Kayıt alanı değişimi (DFX) mekanizması açıklanmaktadır. DFX yordamlarına ne olduğunu anlamanıza yardımcı olmak için, `DFX_Text` işlev bir örnek olarak ayrıntılı olarak açıklanacaktır. Bu teknik nota ek bilgi kaynağı olarak, diğer bireysel DFX işlevlerinin kodunu inceleyebilirsiniz. Özel bir RFX yordamına (ODBC veritabanı sınıflarıyla birlikte kullanılır) ihtiyacınız olabileceği için muhtemelen özel bir DFX yordamına ihtiyaç duymayacak.
 
-Bu teknik not şunları içerir:
+Bu teknik notta şunları içerir:
 
-- DFX Genel Bakış
+- DFX genel bakış
 
-- DAO Kayıt Alanı Değişimi ve Dinamik Bağlama kullanarak [örnekler](#_mfcnotes_tn053_examples)
+- DAO Kayıt alanı değişimi ve dinamik bağlama kullanan [örnekler](#_mfcnotes_tn053_examples)
 
-- [DFX Nasıl Çalışır?](#_mfcnotes_tn053_how_dfx_works)
+- [DFX nasıl çalışacaktır?](#_mfcnotes_tn053_how_dfx_works)
 
-- [Özel DFX Yordamınız Ne Yapar?](#_mfcnotes_tn053_what_your_custom_dfx_routine_does)
+- [Özel DFX yordamınız ne yapar](#_mfcnotes_tn053_what_your_custom_dfx_routine_does)
 
 - [DFX_Text ayrıntıları](#_mfcnotes_tn053_details_of_dfx_text)
 
-**DFX Genel Bakış**
+**DFX genel bakış**
 
-DAO kayıt alanı değişim mekanizması (DFX), `CDaoRecordset` sınıfı kullanırken veri alma ve güncelleştirme işlemini basitleştirmek için kullanılır. `CDaoRecordset` İşlem, sınıfın veri üyeleri kullanılarak basitleştirilir. `CDaoRecordset`Bir tablo veya sorguda her alanı temsil eden türemiş sınıfa veri üyeleri ekleyebilirsiniz. Bu "statik bağlama" mekanizması basittir, ancak tüm uygulamalar için tercih edilen veri getirme/güncelleştirme yöntemi olmayabilir. DFX, geçerli kayıt her değiştirilse her bağlı alanı alır. Para birimi değiştiğinde her alanı getirmeyi gerektirmeyen performansa duyarlı bir uygulama geliştiriyorsanız, "dinamik bağlama" yoluyla `CDaoRecordset::GetFieldValue` ve tercih edilen veri erişim yöntemi `CDaoRecordset::SetFieldValue` olabilir.
+DAO Kayıt alanı değişim mekanizması (DFX), sınıfı kullanırken verileri alma ve güncelleştirme yordamını basitleştirmek için kullanılır `CDaoRecordset` . İşlem, sınıfının veri üyeleri kullanılarak basitleştirilmiştir `CDaoRecordset` . Öğesinden türeterek `CDaoRecordset` , bir tablo veya sorgudaki her alanı temsil eden türetilmiş sınıfa veri üyeleri ekleyebilirsiniz. Bu "statik bağlama" mekanizması basittir, ancak tüm uygulamalar için tercih edilen veri getirme/güncelleştirme yöntemi olmayabilir. DFX, geçerli kayıt her değiştirildiğinde her bağlantılı alanı alır. Para birimi değiştirildiğinde her alanı getirmeyi gerektirmeyen, performans duyarlı bir uygulama geliştiriyorsanız, ile "dinamik bağlama" `CDaoRecordset::GetFieldValue` seçeneği, ve `CDaoRecordset::SetFieldValue` tercih edilen veri erişim yöntemi olabilir.
 
 > [!NOTE]
-> DFX ve dinamik bağlama birbirini dışlayan değildir, bu nedenle statik ve dinamik bağlamanın hibrit kullanımı kullanılabilir.
+> DFX ve dinamik bağlama birbirini dışlamalı değildir, bu nedenle statik ve dinamik bağlamanın karma kullanımı kullanılabilir.
 
-## <a name="example-1--use-of-dao-record-field-exchange-only"></a><a name="_mfcnotes_tn053_examples"></a>Örnek 1 — Yalnızca DAO Kayıt Alanı Değişimi kullanımı
+## <a name="example-1--use-of-dao-record-field-exchange-only"></a><a name="_mfcnotes_tn053_examples"></a> Örnek 1 — yalnızca DAO Kayıt alanı değişimi kullanımı
 
-(varsayar `CDaoRecordset` — `CMySet` türemiş sınıf zaten açık)
+( `CDaoRecordset` türetilen sınıfın `CMySet` zaten açık olduğu varsayılır)
 
 ```
 // Add a new record to the customers table
@@ -59,9 +60,9 @@ myset.m_strCustName = _T("Microsoft");
 myset.Update();
 ```
 
-**Örnek 2 — Yalnızca dinamik bağlama kullanımı**
+**Örnek 2 — yalnızca dinamik bağlamanın kullanımı**
 
-(sınıf `rs`kullanarak `CDaoRecordset` varsayar ve zaten açık)
+(sınıfını kullanarak, `CDaoRecordset` `rs` ve zaten açık olduğunu varsayar)
 
 ```
 // Add a new record to the customers table
@@ -84,9 +85,9 @@ rs.SetFieldValue(_T("Customer_Name"),
 rs.Update();
 ```
 
-**Örnek 3 — DAO Kayıt Alanı Değişimi ve dinamik bağlama**
+**Örnek 3 — DAO Kayıt alanı değişimi ve dinamik bağlama kullanımı**
 
-(-türetilmiş sınıfile `CDaoRecordset` `emp`çalışan verilerine göz atalım varsayar)
+(çalışan verilerine ile `CDaoRecordset` türetilmiş sınıfı göz atmayı varsayar `emp` )
 
 ```
 // Get the employee's data so that it can be displayed
@@ -105,94 +106,94 @@ PopUpEmployeeData(emp.m_strFirstName,
     varPhoto);
 ```
 
-## <a name="how-dfx-works"></a><a name="_mfcnotes_tn053_how_dfx_works"></a>DFX Nasıl Çalışır?
+## <a name="how-dfx-works"></a><a name="_mfcnotes_tn053_how_dfx_works"></a> DFX nasıl çalışacaktır?
 
-DFX mekanizması, MFC ODBC sınıfları tarafından kullanılan kayıt alanı değişimi (RFX) mekanizmasına benzer bir şekilde çalışır. DFX ve RFX ilkeleri aynıdır ama çok sayıda iç farklılıklar vardır. DFX işlevlerinin tasarımı, neredeyse tüm kodun tek tek DFX yordamları tarafından paylaşılacak şekilde ydi. En üst düzeyde DFX sadece birkaç şey yapar.
+DFX mekanizması, MFC ODBC sınıfları tarafından kullanılan kayıt alanı değişimi (RFX) mekanizmasına benzer bir biçimde çalışmaktadır. DFX ve RFX 'in ilkeleri aynı ancak çok sayıda iç fark vardır. DFX işlevlerinin tasarımı, neredeyse tüm kodun bireysel DFX yordamları tarafından paylaşıldığından bu şekilde oluşturulmuştur. En üst düzey DFX yalnızca birkaç şey vardır.
 
-- DFX gerekirse SQL **SELECT** yan tümcesi ve SQL **PARAMETRELERi** yan tümcesini belirler.
+- DFX gerekirse SQL **Select** yan TÜMCESINI ve SQL **Parameters** yan tümcesini oluşturur.
 
-- DFX, DAO'nun `GetRows` işlevi tarafından kullanılan bağlama yapısını (daha sonra bu konuda daha fazla) inşa eder.
+- DFX, DAO işlevi tarafından kullanılan bağlama yapısını oluşturur `GetRows` (daha sonra bu konuda daha fazla).
 
-- DFX kirli alanları algılamak için kullanılan veri arabelleği yönetir (çift arabelleğe alma kullanılıyorsa)
+- DFX, kirli alanları algılamak için kullanılan veri arabelleğini yönetir (çift arabelleğe alma kullanılıyorsa)
 
-- **DFX, NULL** ve **DIRTY** durum dizilerini yönetir ve gerektiğinde güncelleştirmelerde değerleri ayarlar.
+- DFX **null** ve **kirli** durum dizilerini yönetir ve güncelleştirmelerde gerekirse değerleri ayarlar.
 
-DFX mekanizmasının kalbinde `CDaoRecordset` türetilmiş sınıfın `DoFieldExchange` işlevi yer almaktadır. Bu işlev, uygun bir işlem türünün tek tek DFX işlevlerine çağrılar gönderir. Dahili `DoFieldExchange` MFC işlevlerini aramadan önce işlem türünü ayarlayın. Aşağıdaki liste çeşitli işlem türlerini ve kısa bir açıklamayı gösterir.
+DFX mekanizması, `CDaoRecordset` türetilen sınıfın `DoFieldExchange` işlevidir. Bu işlev, uygun bir işlem türünün bireysel DFX işlevlerine çağrı gönderir. `DoFieldExchange`Iç MFC işlevlerini çağırmadan önce işlem türünü ayarlayın. Aşağıdaki listede çeşitli işlem türleri ve kısa bir açıklama gösterilmektedir.
 
 |İşlem|Açıklama|
 |---------------|-----------------|
-|`AddToParameterList`|PARAMETRELER yan tümcesi oluşturur|
-|`AddToSelectList`|SELECT yan tümcesi oluşturur|
-|`BindField`|Bağlayıcı yapıyı ayarlar|
+|`AddToParameterList`|Derlemeler PARAMETRESI yan tümcesi|
+|`AddToSelectList`|Derlemeler SELECT yan tümcesi|
+|`BindField`|Bağlama yapısını ayarlar|
 |`BindParam`|Parametre değerlerini ayarlar|
 |`Fixup`|NULL durumunu ayarlar|
-|`AllocCache`|Kirli çek için önbelleği ayırır|
+|`AllocCache`|Kirli denetim için önbelleği ayırır|
 |`StoreField`|Geçerli kaydı önbelleğe kaydeder|
-|`LoadField`|Önbelleği üye değerlere geri yükleme|
-|`FreeCache`|Önbelleği serbest eder|
-|`SetFieldNull`|Alan durumunu null & değerini ayarlar|
-|`MarkForAddNew`|Pseudo NULL değilse kirli alanları işaretler|
-|`MarkForEdit`|Önbellekle eşleşmiyorsa alanları kirli işaretler|
-|`SetDirtyField`|Kirli olarak işaretlenmiş alan değerlerini ayarlar|
+|`LoadField`|Ön belleği üye değerlerine geri yükler|
+|`FreeCache`|Önbelleği serbest bırakır|
+|`SetFieldNull`|Alan durumu & değerini NULL olarak ayarlar|
+|`MarkForAddNew`|SÖZDE NULL değilse alanları kirli olarak işaretler|
+|`MarkForEdit`|Önbellekte eşleşmezse alanları kirli olarak işaretler|
+|`SetDirtyField`|Kirli olarak işaretlenen alan değerlerini ayarlar|
 
-Bir sonraki bölümde, her işlem için `DFX_Text`daha ayrıntılı olarak açıklanacaktır.
+Sonraki bölümde, her işlem için daha ayrıntılı olarak açıklanacaktır `DFX_Text` .
 
-DAO kayıt alanı değişim süreci hakkında anlaşılması gereken en `GetRows` önemli özellik `CDaoRecordset` nesnenin işlevini kullanmasıdır. DAO `GetRows` işlevi çeşitli şekillerde çalışabilir. Bu teknik not, bu `GetRows` teknik notun kapsamı dışında olduğu için yalnızca kısa bir süre açıklanacaktır.
-DAO `GetRows` çeşitli şekillerde çalışabilir.
+DAO Kayıt alanı değişim süreci hakkında anlaşılması gereken en önemli özellik `GetRows` nesnenin işlevini kullanmadır `CDaoRecordset` . DAO `GetRows` işlevi birkaç şekilde çalışabilir. Bu teknik notta yalnızca `GetRows` Bu teknik notun kapsamı dışında olduğu için kısaca kısaca açıklama uygulanır.
+DAO `GetRows` , birkaç şekilde çalışabilir.
 
-- Aynı anda birden çok kayıt ve birden çok veri alanını getirebilir. Bu, büyük bir veri yapısı ve her alana ve yapıdaki her veri kaydı için uygun uzaklıklarla başa çıkma komplikasyonuyla daha hızlı veri erişimi sağlar. MFC bu çoklu kayıt alma mekanizmasından yararlanmaz.
+- Tek seferde birden çok kayıt ve birden çok veri alanı getirebilir. Bu, büyük bir veri yapısıyla ve her bir alana uygun uzaklıklara ve yapıdaki her veri kaydına yönelik daha hızlı veri erişimi sağlar. MFC bu birden fazla kayıt getirme mekanizmasından yararlanamaz.
 
-- Çalışabilen başka bir yol `GetRows` da, programcıların her alanın alınan verileri için bir veri kaydı için bağlayıcı adresler belirtmesine izin vermektir.
+- Diğer bir yöntem de `GetRows` programcıların bir veri kaydı için her alanın alınan verileri için bağlama adreslerini belirtmesini sağlar.
 
-- DAO ayrıca, arayanın bellek ayırmasına izin vermek için değişken uzunluktaki sütunlar için arayanın içine "geri çağrı" yapacaktır. Bu ikinci özellik, veri kopyalarının sayısını en aza indirmenin yanı sıra verilerin bir sınıfın üyelerine `CDaoRecordset` (türetilmiş sınıf) doğrudan depolanmasına izin verme avantajına sahiptir. Bu ikinci mekanizma, MFC'nin türemiş `CDaoRecordset` sınıflardaki veri üyelerine bağlamak için kullandığı yöntemdir.
+- Ayrıca, arayanın bellek ayırmasına izin vermek için, değişken uzunluklu sütunlar için de "geri çağrı" yapılır. Bu ikinci özellik, verilerin kopyalarının sayısını en aza indirmesinin yanı sıra verilerin bir sınıfın (türetilmiş sınıf) üyelerine doğrudan depolanmasını sağlayan avantajına sahiptir `CDaoRecordset` . Bu ikinci mekanizma, MFC 'nin türetilmiş sınıflarda veri üyelerine bağlamak için kullandığı yöntemdir `CDaoRecordset` .
 
-## <a name="what-your-custom-dfx-routine-does"></a><a name="_mfcnotes_tn053_what_your_custom_dfx_routine_does"></a>Özel DFX Yordamınız Ne Yapar?
+## <a name="what-your-custom-dfx-routine-does"></a><a name="_mfcnotes_tn053_what_your_custom_dfx_routine_does"></a> Özel DFX yordamınız ne yapar
 
-Bu tartışmadan, herhangi bir DFX işlevinde uygulanan en önemli işlemin, başarılı bir şekilde aramak `GetRows`için gerekli veri yapılarını ayarlama becerisi olması gerektiği açıktır. Bir DFX işlevinin de desteklemesi gereken bir dizi işlem vardır, ancak hiçbiri `GetRows` çağrıya doğru şekilde hazırlanmak kadar önemli veya karmaşık değildir.
+Bu tartışmadan, herhangi bir DFX işlevinde uygulanan en önemli işlemin, başarıyla çağırmak için gerekli veri yapılarını ayarlama yeteneğinin olması gerektiğini unutmayın `GetRows` . Bir DFX işlevinin desteklemesi gereken birçok farklı işlem vardır, ancak çağrı için doğru şekilde hazırlanmadığı sürece önemli veya karmaşık olarak yoktur `GetRows` .
 
-DFX kullanımı çevrimiçi belgelerde açıklanmıştır. Esasen, iki gereksinimleri vardır. İlk olarak, üyeler her `CDaoRecordset` bağlı alan ve parametre için türemiş sınıfa eklenmelidir. Bunu `CDaoRecordset::DoFieldExchange` takiben geçersiz kılınmalıdır. Üyenin veri türünün önemli olduğunu unutmayın. Veritabanındaki alandaki verileri eşleştirmeli veya en azından bu türe dönüştürülebilir olmalıdır. Örneğin, veritabanındaki uzun bir tamsayı gibi sayısal bir alan her zaman metne dönüştürülebilir ve bir `CString` üyeye bağlanabilir, ancak veritabanındaki metin alanı, uzun tamsayı ve uzun bir tamsayı üyesine bağlı gibi sayısal bir gösterime dönüştürülemez. DAO ve Microsoft Jet veritabanı altyapısı dönüştürmeden (MFC yerine) sorumludur.
+DFX kullanımı çevrimiçi belgelerde açıklanmıştır. Temelde, iki gereksinim vardır. İlk olarak, Üyeler `CDaoRecordset` her bir bağlantılı alan ve parametre için türetilmiş sınıfa eklenmelidir. Bunun için aşağıdaki `CDaoRecordset::DoFieldExchange` geçersiz kılınmalıdır. Üyenin veri türünün önemli olduğunu unutmayın. Bu, veritabanındaki alandan alınan verilerle eşleşmelidir veya en azından bu türe dönüştürülebilir. Örneğin, bir long integer gibi veritabanındaki bir sayısal alan, her zaman metne dönüştürülebilir ve bir `CString` üyeye bağlanabilir, ancak veritabanındaki bir metin alanı uzun tamsayı ve uzun tamsayı üyesine sınırlı olmak üzere sayısal bir gösterimine dönüştürülemez. DAO ve Microsoft Jet veritabanı altyapısı, dönüşümden sorumludur (MFC yerine).
 
-## <a name="details-of-dfx_text"></a><a name="_mfcnotes_tn053_details_of_dfx_text"></a>DFX_Text ayrıntıları
+## <a name="details-of-dfx_text"></a><a name="_mfcnotes_tn053_details_of_dfx_text"></a> DFX_Text ayrıntıları
 
-Daha önce de belirtildiği gibi, DFX'in nasıl çalıştığını açıklamanın en iyi yolu bir örnek üzerinden çalışmaktır. Bu amaçla iç geçiyor oldukça `DFX_Text` iyi DFX en azından temel bir anlayış sağlamak için çalışmalıdır.
+Daha önce bahsedildiği gibi, DFX nasıl çalıştığını açıklayabileceğiniz en iyi yolu bir örnek aracılığıyla çalışmaktır. Bu amaçla, iç yapıları için `DFX_Text` en az BIR DFX en az bir temel anlama sağlamaya yardımcı olmak çok iyi çalışmalıdır.
 
 - `AddToParameterList`
 
-   Bu işlem, Jet tarafından gerekli`Parameters <param name>, <param type> ... ;`SQL **PARAMETRELERi** yan tümcesini (" ") oluşturur. Her parametre adlandırılmış ve (RFX çağrısında belirtildiği gibi) yazılmıştır. Tek tek `CDaoFieldExchange::AppendParamType` türlerin adlarını görmek için işlev işlevine bakın. Durumda `DFX_Text`, kullanılan tür **metindir.**
+   Bu işlem, Jet için gereken SQL **Parameters** yan tümcesini (" `Parameters <param name>, <param type> ... ;` ") oluşturur. Her parametre adlandırılmış ve yazılır (RFX çağrısında belirtildiği gibi). `CDaoFieldExchange::AppendParamType`Tek türlerin adlarını görmek için işlev işlevine bakın. Bu durumda `DFX_Text` , kullanılan tür **metindir**.
 
 - `AddToSelectList`
 
-   SQL **SELECT** yan tümcesini oluşturur. DFX çağrısı tarafından belirtilen sütun adı basitçe eklenmiş olduğundan bu`SELECT <column name>, ...`oldukça yalındır (" ").
+   SQL **Select** yan tümcesini oluşturur. DFX çağrısı tarafından belirtilen sütun adı yalnızca eklenmiş ("") olduğundan, bu oldukça basit bir işlemdir `SELECT <column name>, ...` .
 
 - `BindField`
 
-   Operasyonların en karmaşıkı. Daha önce de belirtildiği gibi, bu `GetRows` da kullanılan DAO bağlama yapısı nın kurulduğu yerdir. Koddan da görebileceğiniz `DFX_Text` gibi yapıdaki bilgi türlerinde kullanılan DAO türü **(DAO_CHAR** veya `DFX_Text` **DAO_WCHAR** durumunda) bulunmaktadır. Ayrıca, kullanılan bağlama türü de ayarlanır. Daha önceki `GetRows` bir bölümde sadece kısa bir süre açıklanmıştır, ancak MFC tarafından kullanılan bağlama türü her zaman doğrudan adres bağlama **(DAOBINDING_DIRECT)** olduğunu açıklamak için yeterli ydi. MFC bellek ayırma denetimi ve `DFX_Text`doğru uzunlukta bir adres belirtebilmek için değişken uzunlukta sütun bağlama (gibi) geri arama bağlama için ek olarak kullanılır. Bunun anlamı, MFC'nin DAO'ya her zaman verileri "nereye" koyacağını söyleyebilmesi ve böylece doğrudan üye değişkenlere bağlanmaya izin verdiğidir. Bağlama yapısının geri kalanı bellek ayırma geri arama işlevinin adresi ve sütun bağlama türü (sütun adına göre bağlama) gibi şeylerle doldurulur.
+   İşlemlerin en karmaşıktır. Daha önce belirtildiği gibi, tarafından kullanılan DAO bağlama yapısının ayarlandığı yerdir `GetRows` . Yapıdaki bilgi türlerindeki koddan görebileceğiniz gibi, `DFX_Text` kullanılan dao türünü (**DAO_CHAR** veya **dao_wchar** `DFX_Text` ) içerir. Ayrıca, kullanılan bağlamanın türü de ayarlanır. Daha önceki bir bölümde `GetRows` yalnızca kısaca açıklanmıştı, ancak MFC tarafından kullanılan bağlama türünün her zaman doğrudan adres bağlama (**DAOBINDING_DIRECT**) olduğunu açıklamak yeterlidir. Değişken uzunlukta sütun bağlama (gibi `DFX_Text` ) geri çağırma bağlamasının yanı sıra, MFC 'nin bellek ayırmayı denetleyebilmesi ve doğru uzunlukta bir adres belirtmesi için kullanılır. Bu anlamı MFC 'nin her zaman "Where" DAO 'ya verileri koyabileceği, böylece doğrudan üye değişkenlerine bağlamaya izin vereceğini belirtir. Bağlama yapısının geri kalanı, bellek ayırma geri arama işlevinin adresi ve sütun bağlama türü (sütun adına göre bağlama) gibi şeyler ile doldurulur.
 
 - `BindParam`
 
-   Bu, parametre üyenizde belirtilen parametre değeriyle çağıran `SetParamValue` basit bir işlemdir.
+   Bu, `SetParamValue` parametre üyesinde belirtilen parametre değeriyle çağıran basit bir işlemdir.
 
 - `Fixup`
 
-   Her alan için **NULL** durumunu doldurur.
+   Her bir alan için **null** durumunu doldurur.
 
 - `SetFieldNull`
 
-   Bu işlem yalnızca her alan durumunu **NULL** olarak işaretler ve üye değişkenin değerini **PSEUDO_NULL**ayarlar.
+   Bu işlem yalnızca her bir alan durumunu **null** olarak işaretler ve üye değişkeninin değerini **pseudo_null** olarak ayarlar.
 
 - `SetDirtyField`
 
-   Her `SetFieldValue` alan için aramalar kirli işaretlenmiş.
+   `SetFieldValue`Kirli olarak işaretlenmiş her alan için çağrılar.
 
-Kalan tüm işlemler yalnızca veri önbelleğinin kullanılmasıyla ilgilenir. Veri önbelleği, geçerli kayıttaki verilerin belirli şeyleri basithale getirmek için kullanılan ek bir arabelleğidir. Örneğin, "kirli" alanlar otomatik olarak algılanabilir. Çevrimiçi belgelerde açıklandığı gibi tamamen veya alan düzeyinde kapatılabilir. Arabellek uygulaması bir harita kullanır. Bu harita, dinamik olarak ayrılmış veri kopyalarını "bağlı" alanın (veya türetilen `CDaoRecordset` veri üyesinin) adresiyle eşleştirmek için kullanılır.
+Kalan tüm işlemler yalnızca veri önbelleğinin kullanılmasıyla ilgilidir. Veri önbelleği, belirli şeyleri daha kolay hale getirmek için kullanılan geçerli kayıttaki verilerin ek bir arabelleğidir. Örneğin, "kirli" alanları otomatik olarak algılanabilir. Çevrimiçi belgelerde açıklandığı gibi, tamamen veya alan düzeyinde kapatılabilir. Arabellek uygulanması bir eşlemeyi kullanır. Bu harita, verilerin dinamik olarak ayrılmış kopyalarını "bağlı" alanın (veya `CDaoRecordset` türetilen veri üyesinin) adresiyle eşleştirmek için kullanılır.
 
 - `AllocCache`
 
-   Önbelleğe alınmış alan değerini dinamik olarak ayırır ve eşe ekler.
+   Önbelleğe alınan alan değerini dinamik olarak ayırır ve haritaya ekler.
 
 - `FreeCache`
 
-   Önbelleğe alınan alan değerini siler ve haritadan kaldırır.
+   Önbelleğe alınmış alan değerini siler ve eşlemden kaldırır.
 
 - `StoreField`
 
@@ -200,20 +201,20 @@ Kalan tüm işlemler yalnızca veri önbelleğinin kullanılmasıyla ilgilenir. 
 
 - `LoadField`
 
-   Önbelleğe alınmış değeri alan üyesine kopyalar.
+   Önbelleğe alınan değeri alan üyesine kopyalar.
 
 - `MarkForAddNew`
 
-   Geçerli alan değerinin**NULL** olup olmadığını denetler ve gerekirse kirli işaretler.
+   Geçerli alan değerinin **null** olup olmadığını denetler ve gerekirse kirli olarak işaretler.
 
 - `MarkForEdit`
 
-   Geçerli alan değerini veri önbelleğiyle karşılaştırır ve gerekirse kirli işaretleri işaretler.
+   Geçerli alan değerini veri önbelleğiyle karşılaştırır ve gerekirse kirli olarak işaretler.
 
 > [!TIP]
-> Standart veri türleri için varolan DFX yordamları üzerinde özel DFX yordamları modelleştirin.
+> Standart veri türleri için mevcut DFX yordamlarında özel DFX yordamlarını modelleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
