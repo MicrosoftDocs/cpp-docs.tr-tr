@@ -1,17 +1,18 @@
 ---
-title: 'Nasıl yapılır: Açma'
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: kutudan kaldır'
+title: 'Nasıl yapılır: Kutudan çıkarma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - unboxing
 ms.assetid: 75794696-9275-47bf-9a7d-5abe6585ab91
-ms.openlocfilehash: b184b0b534e2720af833f34b908ede5b998803ec
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: e5f3ae72f1d7b2340baa868a2e1d009b3534e701
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286325"
 ---
-# <a name="how-to-unbox"></a>Nasıl yapılır: Açma
+# <a name="how-to-unbox"></a>Nasıl yapılır: Kutudan çıkarma
 
 Bir değerin nasıl kutudan alınacağını ve değiştirileceğini gösterir.
 

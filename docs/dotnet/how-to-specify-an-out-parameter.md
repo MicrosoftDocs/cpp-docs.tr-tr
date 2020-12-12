@@ -1,27 +1,28 @@
 ---
-title: 'Nasıl yapılır: bir out parametresi belirtme'
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: bir out parametresi belirtme'
+title: 'Nasıl yapılır: Bir out parametresi belirtme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - function parameters
 - out parameters
 ms.assetid: 02862448-603c-4e9d-a5c5-b45fe38446e3
-ms.openlocfilehash: 4bd6ad1d3009adcc124bdeb90d9d67de07112de2
-ms.sourcegitcommit: c4528a7424d35039454f17778baf1b5f98fbbee7
+ms.openlocfilehash: b43930557b4bdfd22bf902a6d9adf95eb8ba4d01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912791"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286351"
 ---
-# <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: bir out parametresi belirtme
+# <a name="how-to-specify-an-out-parameter"></a>Nasıl yapılır: Bir out parametresi belirtme
 
-Bu örnek, bir işlev parametresinin bir `out` parametresi olduğunu ve bu işlevin bir C# programdan nasıl çağrılacağını gösterir.
+Bu örnek, bir işlev parametresinin bir `out` parametre olduğunu ve C# programından bu işlevin nasıl çağrılacağını gösterir.
 
-Bir `out` parametresi içinde C++ <xref:System.Runtime.InteropServices.OutAttribute> kullanılarak belirtilir.
+`out`C++ ' da kullanılarak bir parametre belirtilir <xref:System.Runtime.InteropServices.OutAttribute> .
 
 ## <a name="example"></a>Örnek
 
-Bu örneğin ilk bölümü bir C++ dll oluşturur. `out` parametresine sahip bir işlev içeren bir türü tanımlar.
+Bu örneğin ilk bölümü bir C++ DLL oluşturur. Parametresi olan bir işlev içeren bir türü tanımlar `out` .
 
 ```cpp
 // cpp_out_param.cpp
@@ -34,7 +35,7 @@ public value struct TestStruct {
 };
 ```
 
-Bu kaynak dosya, önceki C# örnekte oluşturulan C++ bileşeni tüketen bir istemcidir.
+Bu kaynak dosya, önceki örnekte oluşturulan C++ bileşenini tüketen bir C# istemcidir.
 
 ```csharp
 // cpp_out_param_2.cs
@@ -55,4 +56,4 @@ a string
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

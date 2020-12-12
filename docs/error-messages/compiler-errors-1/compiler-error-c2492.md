@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2492'
 title: Derleyici hatası C2492
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2492
 ms.assetid: 8c44c9bb-c366-4fe5-a0ab-882e38608aaa
-ms.openlocfilehash: fd52b434f86bdc93124c6005bbf7fadad3cb56b2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ef31b2136a2cfc0422832899dba14ffb3108d965
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283685"
 ---
 # <a name="compiler-error-c2492"></a>Derleyici hatası C2492
 
 '*değişken*': iş parçacığı depolama süresine sahip verilerin dll arabirimi olmayabilir
 
-Değişkeni, [iş parçacığı](../../cpp/thread.md) ÖZNITELIĞIYLE ve DLL arabirimiyle birlikte bildirilmiştir. `thread` değişkeninin adresi çalışma zamanına kadar bilinmiyor, bu nedenle bir DLL içeri veya dışarı aktarmaya bağlanamaz.
+Değişkeni, [iş parçacığı](../../cpp/thread.md) ÖZNITELIĞIYLE ve DLL arabirimiyle birlikte bildirilmiştir. `thread`Değişkenin adresi çalışma zamanına kadar bilinmiyor, bu nedenle BIR DLL içeri veya dışarı aktarmaya bağlanamaz.
 
 Aşağıdaki örnek C2492 oluşturur:
 

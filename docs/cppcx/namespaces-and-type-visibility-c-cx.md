@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: ad alanları ve tür görünürlüğü (C++/CX)'
 title: Ad alanları ve tür görünürlüğü (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-ms.openlocfilehash: 78d5f5af761cef985ec43cf448251b4dc3c70bc2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 014791ef322538c824c68409681d7fb856e1c837
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282906"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C++/CX)
 
@@ -31,9 +32,9 @@ Hem meta veri görünürlüğünü hem de kaynak kodu erişilebilirliğini denet
 | Değiştirici | Anlamı | Meta verilere mi yayılsın? |
 |--|--|--|
 | **`private`** | Varsayılan erişilebilirlik. Standart C++ ile aynı anlamı. | Hayır |
-| **`protected`** | Standart C++ ile aynı anlamı, hem uygulama hem de bileşen içinde ve meta verilerde. | Yes |
-| **`public`** | Standart C++ ile aynı anlamı. | Yes |
-| **`public protected`** veya **`protected public`** | Meta verilerde korunan erişilebilirlik, uygulama veya bileşen içinde ortak. | Yes |
+| **`protected`** | Standart C++ ile aynı anlamı, hem uygulama hem de bileşen içinde ve meta verilerde. | Evet |
+| **`public`** | Standart C++ ile aynı anlamı. | Evet |
+| **`public protected`** veya **`protected public`** | Meta verilerde korunan erişilebilirlik, uygulama veya bileşen içinde ortak. | Evet |
 | **`protected private`** veya **`private protected`** | Meta verilerde görünmez; uygulama veya bileşen içinde korunan erişilebilirlik. |  |
 | **`internal`** veya **`private public`** | Üye Uygulama veya bileşen içinde ortaktır, ancak meta verilerde görünür değildir. | Hayır |
 

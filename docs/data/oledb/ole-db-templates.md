@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE DB Şablonlar'
 title: OLE DB Şablonları
 ms.date: 05/09/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE DB templates
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
-ms.openlocfilehash: d3b709bbebdf040ac818d2d2d44576cf49aafdd4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2a1680f541e9d8f8fb35da22670e72b3a87a1db0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500910"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286780"
 ---
 # <a name="ole-db-templates"></a>OLE DB Şablonları
 
@@ -45,7 +46,7 @@ OLE DB sağlayıcısı şablonlarıyla ilgili kavramsal malzemeleri açıklar.
 [OLE DB tüketicisi oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)<br/>
 OLE DB şablonları tüketicisini oluşturmayı açıklar.
 
-[Basit bir salt okunurdur sağlayıcı oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
+[Basit bir Read-Only sağlayıcısı oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
 Bir çift dizeyi okuyan basit bir salt okunur sağlayıcı oluşturmayı açıklar.
 
 [Güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)<br/>

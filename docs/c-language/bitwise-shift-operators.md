@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bit düzeyinde kaydırma Işleçleri'
 title: Bit Düzeyinde Kaydırma İşleçleri
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - bitwise-shift operators
 - operators [C++], shift
 ms.assetid: d0485785-5c72-47e1-a7c0-0adde03ade23
-ms.openlocfilehash: a8a72a8657daec39bb042fea744b5f97d3b34009
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 649c2057f4c70310b675e4d7bd71a87a5e5cd5c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226535"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283140"
 ---
 # <a name="bitwise-shift-operators"></a>Bit Düzeyinde Kaydırma İşleçleri
 
 SHIFT işleçleri ilk işlenenlerini Left ( **&lt;&lt;** ) veya Right ( **>>** ) ikinci işlenenin belirttiği konum sayısına göre kayar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *SHIFT ifadesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Toplamsal ifadesi*<br/>
@@ -39,7 +40,7 @@ expr1 << expr2
 expr1 >> expr2
 ```
 
-<sup>expr2</sup> `expr1` , imzasız veya negatif olmayan bir değere sahip 2 expr2 bölme ile eşdeğerdir.
+<sup></sup> `expr1` , imzasız veya negatif olmayan bir değere sahip 2 expr2 bölme ile eşdeğerdir.
 
 İkinci işlenen negatif ise veya sağ işlenen, yükseltilen sol işlenenin bit cinsinden genişliğinden büyük veya buna eşitse, bir vardiya işleminin sonucu tanımsızdır.
 

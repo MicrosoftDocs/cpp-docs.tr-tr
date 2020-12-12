@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: &lt; liste &gt; işleçleri'
 title: '&lt;liste &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::operator&lt; (list)
 - std::operator&lt;= (list)
 - std::operator== (list)
-ms.openlocfilehash: 8648258f17bff577ba1c0dde5016f5f284b82e25
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 86f032a201943e6b42a997c2fc6ff29df353351e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224844"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284700"
 ---
 # <a name="ltlistgt-operators"></a>&lt;liste &gt; işleçleri
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesine eşit olup olmadığını sınar.
 
@@ -76,7 +77,7 @@ Lists not equal.
 */
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden küçük olup olmadığını sınar.
 
@@ -131,7 +132,7 @@ List c1 is less than list c2.
 */
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
@@ -186,7 +187,7 @@ List c1 is less than or equal to list c2.
 */
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesine eşit olup olmadığını sınar.
 
@@ -237,7 +238,7 @@ The lists are equal.
 */
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 İşlecin sol tarafındaki list nesnesinin sağ taraftaki liste nesnesinden büyük olup olmadığını sınar.
 
@@ -292,7 +293,7 @@ List c1 is greater than list c2.
 */
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 İşlecin sol tarafındaki liste nesnesinin sağ taraftaki liste nesnesinden büyük veya ona eşit olup olmadığını sınar.
 

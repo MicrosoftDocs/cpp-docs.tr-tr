@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: yerel Işlevde başvuru sınıfını değiştirme'
 title: 'Nasıl yapılır: Yerel İşlevde Başvuru Sınıfını Değiştirme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - platform invoke, reference class
 - reference types, modifying in a C++ native function
 ms.assetid: c701145b-62a0-4c4b-b32a-db8d69a59720
-ms.openlocfilehash: a9ff21390f8a5d7b20c8c36e596f80140ccb9a39
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 49bdb082d5b884a0cbb34970b2ffebe988f15c0d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683955"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286507"
 ---
 # <a name="how-to-modify-reference-class-in-a-native-function"></a>Nasıl yapılır: Yerel İşlevde Başvuru Sınıfını Değiştirme
 

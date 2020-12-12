@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fread_nolock_s'
 title: _fread_nolock_s2
 ms.date: 4/2/2020
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 - _fread_nolock_s
 - stdio/_fread_nolock_s
 ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
-ms.openlocfilehash: 702264f3728b0d9eca3f2fb51ba2ea0467b592df
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ba971d8db9fde15009362b2e8da0791883fb64e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283075"
 ---
 # <a name="_fread_nolock_s"></a>_fread_nolock_s
 
@@ -71,7 +72,7 @@ Bkz. [fread_s](fread-s.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlev, **fread_s**kilitleme dışı bir sürümüdür. Diğer iş parçacıklarının girişim tarafından korunmamasının dışında, **fread_s** aynıdır. Diğer iş parçacıklarını kilitleme yükünü karşılamadığından daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
+Bu işlev, **fread_s** kilitleme dışı bir sürümüdür. Diğer iş parçacıklarının girişim tarafından korunmamasının dışında, **fread_s** aynıdır. Diğer iş parçacıklarını kilitleme yükünü karşılamadığından daha hızlı olabilir. Bu işlevi yalnızca tek iş parçacıklı uygulamalar gibi iş parçacığı güvenli bağlamlarda veya çağırma kapsamının iş parçacığı yalıtımını zaten işlediği yerde kullanın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -79,12 +80,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fread_nolock_s**|C: \<stdio. h>; C++: \<cstdio> veya \<stdio. h>|
+|**_fread_nolock_s**|C: \<stdio.h> ; C++: \<cstdio> veya \<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

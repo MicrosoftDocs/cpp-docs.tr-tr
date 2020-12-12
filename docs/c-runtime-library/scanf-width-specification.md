@@ -1,17 +1,18 @@
 ---
+description: 'Daha fazla bilgi edinin: `scanf` genişlik belirtimi'
 title: sacnf genişlik belirtimi
 ms.date: 10/22/2019
 helpviewer_keywords:
 - scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-ms.openlocfilehash: 781e292140babd61fbcde77cefcb917736b17cc3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f4b0e13ef87add74bc802ba11ea6b87d0dfc6b8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87188745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284440"
 ---
-# <a name="scanf-width-specification"></a>`scanf`genişlik belirtimi
+# <a name="scanf-width-specification"></a>`scanf` genişlik belirtimi
 
 Bu bilgiler `scanf` , gibi güvenli sürümler de dahil olmak üzere işlev ailesinde biçim dizelerinin yorumu için geçerlidir `scanf_s` . Bu işlevler normalde giriş akışının bir belirteç dizisine bölündüğünü varsayar. Belirteçler boşluk (boşluk, sekme veya yeni satır) ile veya sayısal türler için, sayısal metin olarak dönüştürülemeyen ilk karakter tarafından belirtildiği gibi sayısal bir veri türünün doğal sonuna kadar ayrılır. Ancak, bir belirtecin doğal sonundan önce girişin ayrıştırılmasını engellemek için genişlik belirtimi kullanılabilir.
 
@@ -32,33 +33,33 @@ scanf_s("%20s", str, 21);
 
 ## <a name="the-size-prefix"></a>Boyut ön eki
 
-İsteğe bağlı **h**, **HH**, **l**, **ll**, **I64**ve **l** önekleri, `argument` değiştirdikleri tür karakterine bağlı olarak, (uzun veya kısa, tek baytlı karakter veya geniş karakter) boyutunu belirtir. Bu biçim belirtimi karakterleri `scanf` `wscanf` , aşağıdaki tabloda gösterildiği gibi bağımsız değişkenlerin yorumunu belirtmek için veya işlevlerinde tür karakterleriyle birlikte kullanılır. Tür ön eki **I64** Microsoft uzantısıdır ve standart C ile uyumlu değildir. Tür karakterleri ve anlamları [ `scanf` tür alanı karakterleri](../c-runtime-library/scanf-type-field-characters.md)içindeki "scanf Işlevleri için tür karakterleri" tablosunda açıklanmaktadır.
+İsteğe bağlı **h**, **HH**, **l**, **ll**, **I64** ve **l** önekleri, `argument` değiştirdikleri tür karakterine bağlı olarak, (uzun veya kısa, tek baytlı karakter veya geniş karakter) boyutunu belirtir. Bu biçim belirtimi karakterleri `scanf` `wscanf` , aşağıdaki tabloda gösterildiği gibi bağımsız değişkenlerin yorumunu belirtmek için veya işlevlerinde tür karakterleriyle birlikte kullanılır. Tür ön eki **I64** Microsoft uzantısıdır ve standart C ile uyumlu değildir. Tür karakterleri ve anlamları [ `scanf` tür alanı karakterleri](../c-runtime-library/scanf-type-field-characters.md)içindeki "scanf Işlevleri için tür karakterleri" tablosunda açıklanmaktadır.
 
 > [!NOTE]
-> **H**, **l**ve **l** önekleri, türündeki verilerle kullanıldığında Microsoft uzantılarıdır **`char`** .
+> **H**, **l** ve **l** önekleri, türündeki verilerle kullanıldığında Microsoft uzantılarıdır **`char`** .
 
 ### <a name="size-prefixes-for-scanf-and-wscanf-format-type-specifiers"></a>`scanf`Ve `wscanf` Biçim türü belirticileri için boyut önekleri
 
 |Belirtmek için|Ön ek kullan|Tür belirticisiyle|
 |----------------|----------------|-------------------------|
-|**`double`**|**girişindeki**|**e**, **e**, **f**, **g**veya **g**|
-|**`long double`**(aynı **`double`** )|**L**|**e**, **e**, **f**, **g**veya **g**|
-|**`long int`**|**girişindeki**|**d**, **i**, **o**, **x**veya **x**|
+|**`double`**|**girişindeki**|**e**, **e**, **f**, **g** veya **g**|
+|**`long double`** (aynı **`double`** )|**L**|**e**, **e**, **f**, **g** veya **g**|
+|**`long int`**|**girişindeki**|**d**, **i**, **o**, **x** veya **x**|
 |**`long unsigned int`**|**girişindeki**|**larınız**|
-|**`long long`**|**ceğiz**|**d**, **i**, **o**, **x**veya **x**|
-|**`short int`**|**olsun**|**d**, **i**, **o**, **x**veya **x**|
-|**`short unsigned int`**|**olsun**|**larınız**|
-|**`char`**|**ss**|**d**, **i**, **o**, **x**veya **x**|
-|**`unsigned char`**|**ss**|**larınız**|
-|**`int64`**|**I64**|**d**, **i**, **o**, **u**, **x**veya **x**|
-|İle tek baytlık karakter`scanf`|**olsun**|**c** veya **c**|
-|İle tek baytlık karakter`wscanf`|**olsun**|**c** veya **c**|
-|İle geniş karakter`scanf`|**girişindeki**|**c** veya **c**|
-|İle geniş karakter`wscanf`|**girişindeki**|**c**veya **c**|
-|İle tek baytlık karakter dizesi`scanf`|**olsun**|**s** veya **s**|
-|İle tek baytlık karakter dizesi`wscanf`|**olsun**|**s** veya **s**|
-|İle geniş karakter dizesi`scanf`|**girişindeki**|**s** veya **s**|
-|İle geniş karakter dizesi`wscanf`|**girişindeki**|**s** veya **s**|
+|**`long long`**|**ceğiz**|**d**, **i**, **o**, **x** veya **x**|
+|**`short int`**|**h**|**d**, **i**, **o**, **x** veya **x**|
+|**`short unsigned int`**|**h**|**larınız**|
+|**`char`**|**hh**|**d**, **i**, **o**, **x** veya **x**|
+|**`unsigned char`**|**hh**|**larınız**|
+|**`int64`**|**I64**|**d**, **i**, **o**, **u**, **x** veya **x**|
+|İle tek baytlık karakter `scanf`|**h**|**c** veya **c**|
+|İle tek baytlık karakter `wscanf`|**h**|**c** veya **c**|
+|İle geniş karakter `scanf`|**girişindeki**|**c** veya **c**|
+|İle geniş karakter `wscanf`|**girişindeki**|**c** veya **c**|
+|İle tek baytlık karakter dizesi `scanf`|**h**|**s** veya **s**|
+|İle tek baytlık karakter dizesi `wscanf`|**h**|**s** veya **s**|
+|İle geniş karakter dizesi `scanf`|**girişindeki**|**s** veya **s**|
+|İle geniş karakter dizesi `wscanf`|**girişindeki**|**s** veya **s**|
 
 Aşağıdaki örnekler, işlevleri ve işlevleri ile **h** ve **l** kullanır `scanf_s` `wscanf_s` :
 
@@ -71,7 +72,7 @@ Ailesinden güvenli olmayan bir işlev kullanıyorsanız `scanf` , önceki bağ�
 
 ## <a name="reading-undelimited-strings"></a>Sınırsız dizeleri okuma
 
-Boşluk karakterleriyle sınırlı olmayan dizeleri okumak için köşeli ayraç () içindeki bir karakter kümesi, **`[ ]`** **s** (dize) türü karakteri için değiştirilebilir. Köşeli ayraçlar içindeki karakter kümesi, *Denetim dizesi*olarak adlandırılır. Karşılık gelen giriş alanı, denetim dizesinde görünmeyen ilk karaktere okunurdur. Küme içindeki ilk karakter bir şapka ( **`^`** ) ise, efekt tersine çevrilir: giriş alanı, karakter kümesinin geri kalanında görüntülenen ilk karaktere okunurdur.
+Boşluk karakterleriyle sınırlı olmayan dizeleri okumak için köşeli ayraç () içindeki bir karakter kümesi, **`[ ]`** **s** (dize) türü karakteri için değiştirilebilir. Köşeli ayraçlar içindeki karakter kümesi, *Denetim dizesi* olarak adlandırılır. Karşılık gelen giriş alanı, denetim dizesinde görünmeyen ilk karaktere okunurdur. Küme içindeki ilk karakter bir şapka ( **`^`** ) ise, efekt tersine çevrilir: giriş alanı, karakter kümesinin geri kalanında görüntülenen ilk karaktere okunurdur.
 
 % [ **A-z]** ve **% [z-a]** her ikisi de **% [abcde... ile eşdeğer olarak yorumlanır. z]**. Bu, ortak bir `scanf` işlev uzantısıdır, ancak standart C için gerekli değildir.
 
@@ -98,4 +99,4 @@ Her nedenden dolayı, `scanf` işlev bir giriş alanını okumayı durdurulduğu
 [`scanf`, `_scanf_l`, `wscanf`, `_wscanf_l`](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [`scanf_s`, `_scanf_s_l`, `wscanf_s`, `_wscanf_s_l`](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)<br/>
 [Biçim belirtimi alanları: `scanf` ve `wscanf` işlevleri](../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md)<br/>
-[`scanf`Tür alanı karakterleri](../c-runtime-library/scanf-type-field-characters.md)<br/>
+[`scanf` Tür alanı karakterleri](../c-runtime-library/scanf-type-field-characters.md)<br/>

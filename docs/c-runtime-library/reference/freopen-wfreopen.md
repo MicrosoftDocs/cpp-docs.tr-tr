@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: serbest açık, _wfreopen'
 title: freopen, _wfreopen
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - tfreopen function
 - wfreopen function
 ms.assetid: de4b73f8-1043-4d62-98ee-30d2022da885
-ms.openlocfilehash: 435211b246f9943588aeef2005e501a9eac59c6b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: be2355ef49ee9a4a3e966de9077ee236dae03648
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282984"
 ---
 # <a name="freopen-_wfreopen"></a>freopen, _wfreopen
 
@@ -74,7 +75,7 @@ Yeni dosyanın yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, yeni açılan dosyaya bir işaretçi döndürür. Bir hata oluşursa, özgün dosya kapatılır ve işlev bir **null** işaretçi değeri döndürür. *Yol*, *mod*veya *akış* null bir işaretçisiyse veya *dosya adı* boş bir dize ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **null**döndürür.
+Bu işlevlerin her biri, yeni açılan dosyaya bir işaretçi döndürür. Bir hata oluşursa, özgün dosya kapatılır ve işlev bir **null** işaretçi değeri döndürür. *Yol*, *mod* veya *akış* null bir işaretçisiyse veya *dosya adı* boş bir dize ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **null** döndürür.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
@@ -82,7 +83,7 @@ Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, err
 
 Bu işlevlerin daha güvenli sürümleri mevcuttur, bkz. [freopen_s, _wfreopen_s](freopen-s-wfreopen-s.md).
 
-**Freopen** işlevi, *Stream* ile ilişkili olan dosyayı kapatır ve *yol*tarafından belirtilen dosyaya yeniden atama *akışı* ile yeniden atar. **_wfreopen** , **_freopen**geniş karakterli bir sürümüdür; _wfreopen *yol* ve *mod* bağımsız değişkenleri **_wfreopen** geniş karakterli dizelerdir. **_wfreopen** ve **_freopen** aynı şekilde davranır.
+**Freopen** işlevi, *Stream* ile ilişkili olan dosyayı kapatır ve *yol* tarafından belirtilen dosyaya yeniden atama *akışı* ile yeniden atar. **_wfreopen** , **_freopen** geniş karakterli bir sürümüdür; _wfreopen *yol* ve *mod* bağımsız değişkenleri  geniş karakterli dizelerdir. **_wfreopen** ve **_freopen** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -92,9 +93,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tfreopen**|**serbest açık**|**serbest açık**|**_wfreopen**|
 
-**serbest açma** genellikle, önceden açılan dosyaları **stdin**, **stdout**ve **stderr** 'i Kullanıcı tarafından belirtilen dosyalara yönlendirmek için kullanılır. *Stream* ile ilişkili yeni dosya, dosya için istenen erişimin türünü belirten, aşağıdaki gibi bir karakter dizesi olan *moduyla*açılır:
+**serbest açma** genellikle, önceden açılan dosyaları **stdin**, **stdout** ve **stderr** 'i Kullanıcı tarafından belirtilen dosyalara yönlendirmek için kullanılır. *Stream* ile ilişkili yeni dosya, dosya için istenen erişimin türünü belirten, aşağıdaki gibi bir karakter dizesi olan *moduyla* açılır:
 
-|*modundaysa*|Erişim|
+|*modundaysa*|Access|
 |-|-|
 | **sağ** | Okuma için açılır. Dosya yoksa veya bulunamazsa, **serbest açma** çağrısı başarısız olur. |
 | **anlatımı** | Yazma için boş bir dosya açar. Verilen dosya varsa, içeriği yok edilir. |
@@ -118,7 +119,7 @@ Bir dosya, **"a"** veya **"a +"** erişim türüyle açıldığında, dosyanın 
 
 Metin (çevrilmiş) modunda, satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık akış (LF) karakterlerine çevrilir; LF karakterleri çıkışındaki CR-LF birleşimlerine çevrilir. Ayrıca CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. **"A +"** ile yazma ve okuma için açılan dosyalarda, çalışma zamanı kitaplığı dosyanın sonunda bir CTRL + Z 'yi denetler ve mümkünse onu kaldırır. Bu, bir dosya içinde geçiş yapmak için [fseek](fseek-fseeki64.md) ve [fsöyleyin](ftell-ftelli64.md) kullanmanın, [fseek](fseek-fseeki64.md) dosyasının sonuna doğru şekilde davranmasına neden olabileceği için yapılır. **T** SEÇENEĞI, ANSI taşınabilirliği istendiği yerde kullanılması gereken bir Microsoft uzantısıdır.
 
-**T** veya **b** *modda*verilmezse, varsayılan çeviri modu [_fmode](../../c-runtime-library/fmode.md)genel değişken tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve **null**değerini döndürür.
+**T** veya **b** *modda* verilmezse, varsayılan çeviri modu [_fmode](../../c-runtime-library/fmode.md)genel değişken tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve **null** değerini döndürür.
 
 Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
@@ -126,10 +127,10 @@ Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyas
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**serbest açık**|\<stdio. h>|
-|**_wfreopen**|\<stdio. h> veya \<wchar. h>|
+|**serbest açık**|\<stdio.h>|
+|**_wfreopen**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -168,7 +169,7 @@ This will go to the file 'freopen.out'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
 [_fileno](fileno.md)<br/>

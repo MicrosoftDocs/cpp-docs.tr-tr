@@ -1,4 +1,5 @@
 ---
+description: ': Platform:: Collections:: InputIterator sınıfı hakkında daha fazla bilgi edinin'
 title: 'Platform:: Collections:: InputIterator sınıfı'
 ms.date: 03/27/2019
 ms.topic: reference
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-ms.openlocfilehash: 4aeef07a34c04bd1ab47acf808026024faada567
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7345435c57c75c04f0eb30d9773d655d713853de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283971"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform:: Collections:: InputIterator sınıfı
 
 Windows Çalışma Zamanı türetilen koleksiyonlar için standart bir şablon kitaplığı InputIterator sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <typename X>
@@ -38,8 +39,8 @@ InputIterator şablon sınıfının TypeName 'i.
 |----------|-----------------|
 |`difference_type`|Bir işaretçi farkı (ptrdiff_t).|
 |`iterator_category`|Bir giriş yineleyicisinin kategorisi (:: std:: input_iterator_tag).|
-|`pointer`|Bir işaretçi`const X`|
-|`reference`|Bir başvurusu`const X`|
+|`pointer`|Bir işaretçi `const X`|
+|`reference`|Bir başvurusu `const X`|
 |`value_type`|`X`TypeName.|
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
@@ -68,11 +69,11 @@ InputIterator şablon sınıfının TypeName 'i.
 
 **Ad alanı:** Platform:: Collections
 
-## <a name="inputiteratorinputiterator-constructor"></a><a name="ctor"></a>InputIterator:: InputIterator Oluşturucusu
+## <a name="inputiteratorinputiterator-constructor"></a><a name="ctor"></a> InputIterator:: InputIterator Oluşturucusu
 
 InputIterator sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 InputIterator();
@@ -84,11 +85,11 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 *iden*<br/>
 Yineleyici nesne.
 
-## <a name="inputiteratoroperator-gt-operator"></a><a name="operator-arrow"></a>InputIterator:: operator- &gt; işleci
+## <a name="inputiteratoroperator-gt-operator"></a><a name="operator-arrow"></a> InputIterator:: operator- &gt; işleci
 
 Geçerli InputIterator tarafından belirtilen öğenin adresini alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 pointer operator->() const;
@@ -98,11 +99,11 @@ pointer operator->() const;
 
 Geçerli InputIterator tarafından belirtilen öğenin adresi.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-dereference"></a>InputIterator:: operator \* işleci
+## <a name="inputiteratoroperator-operator"></a><a name="operator-dereference"></a> InputIterator:: operator \* işleci
 
 Geçerli InputIterator tarafından belirtilen öğeye bir başvuru alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 reference operator*() const;
@@ -112,11 +113,11 @@ reference operator*() const;
 
 Geçerli InputIterator tarafından belirtilen öğe.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a>InputIterator:: operator = = Işleci
+## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a> InputIterator:: operator = = Işleci
 
 Geçerli InputIterator 'ın belirtilen bir InputIterator öğesine eşit olup olmadığını gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 bool operator== (const InputIterator& other) const;
@@ -129,13 +130,13 @@ Başka bir InputIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** geçerli InputIterator, *diğer*değere eşitse; Aksi takdirde, **`false`** .
+**`true`** geçerli InputIterator, *diğer* değere eşitse; Aksi takdirde, **`false`** .
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a>InputIterator:: operator + + Işleci
+## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a> InputIterator:: operator + + Işleci
 
 Geçerli InputIterator değerini artırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 InputIterator& operator++();
@@ -152,11 +153,11 @@ InputIterator operator++(int);
 
 İkinci sözdizimi, güncel InputIterator ' i arttırır. **`int`** İkinci sözdiziminde tür, gerçek bir tamsayı işleneni değil, artırma sonrası bir işlemi gösterir.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a>InputIterator:: operator! = Işleci
+## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a> InputIterator:: operator! = Işleci
 
 Geçerli InputIterator 'ın belirtilen bir InputIterator öğesine eşit olup olmadığını gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 bool operator!=(const InputIterator& other) const;
@@ -169,7 +170,7 @@ Başka bir InputIterator.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** geçerli InputIterator, *diğer*değere eşit değilse; Aksi takdirde, **`false`** .
+**`true`** geçerli InputIterator, *diğer* değere eşit değilse; Aksi takdirde, **`false`** .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

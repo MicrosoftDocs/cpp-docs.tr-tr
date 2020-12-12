@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: yer Işaretleri için sağlayıcı desteği'
 title: Yer İşaretleri Sağlayıcı Desteği
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - IRowsetLocate class
 - OLE DB providers, bookmark support
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-ms.openlocfilehash: 240cb4da03d6c8c1958b7a86e78171aca2dc30e9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0a2225f44d9d094f52e97b88eb58c6942906edf6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216459"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286663"
 ---
 # <a name="provider-support-for-bookmarks"></a>Yer İşaretleri Sağlayıcı Desteği
 
@@ -40,7 +41,7 @@ class CCustomRowset : public CRowsetImpl< CCustomRowset,
           IRowsetLocateImpl<CCustomRowset, IRowsetLocate>>
 ```
 
-Dördüncü, beşinci ve altıncı parametrelerin hepsi eklenmiştir. Bu örnek, dördüncü ve beşinci parametreler için varsayılan değerleri kullanır, ancak `IRowsetLocateImpl` altıncı parametre olarak belirtin. `IRowsetLocateImpl`, iki şablon parametresi alan bir OLE DB Şablon sınıfıdır: Bu, `IRowsetLocate` arabirimini `CCustomRowset` sınıfına yedekler. Birçok arabirimi eklemek için bu adımı atlayabilir ve bir sonrakine geçebilirsiniz. Yalnızca `IRowsetLocate` ve `IRowsetScroll` arabirimlerinin bu şekilde işlenmesi gerekir.
+Dördüncü, beşinci ve altıncı parametrelerin hepsi eklenmiştir. Bu örnek, dördüncü ve beşinci parametreler için varsayılan değerleri kullanır, ancak `IRowsetLocateImpl` altıncı parametre olarak belirtin. `IRowsetLocateImpl` , iki şablon parametresi alan bir OLE DB Şablon sınıfıdır: Bu, `IRowsetLocate` arabirimini `CCustomRowset` sınıfına yedekler. Birçok arabirimi eklemek için bu adımı atlayabilir ve bir sonrakine geçebilirsiniz. Yalnızca `IRowsetLocate` ve `IRowsetScroll` arabirimlerinin bu şekilde işlenmesi gerekir.
 
 Daha sonra `CCustomRowset` arayüzü için çağrısına söylemeniz gerekir `QueryInterface` `IRowsetLocate` . Satırı haritaya ekleyin `COM_INTERFACE_ENTRY(IRowsetLocate)` . İçin arabirim eşlemesi `CCustomRowset` aşağıdaki kodda gösterildiği gibi görünmelidir:
 
@@ -78,7 +79,7 @@ class CTextData
 };
 ```
 
-Ardından, `GetColumnInfo` Işlevi *özel*RS. cpp dosyasında aşağıdaki gibi uygulayın:
+Ardından, `GetColumnInfo` Işlevi *özel* RS. cpp dosyasında aşağıdaki gibi uygulayın:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -148,11 +149,11 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
 }
 ```
 
-`GetColumnInfo`İlk olarak, çağrılan bir özelliğin ayarlanmış olup olmadığını kontrol eder `DBPROP_IRowsetLocate` . OLE DB, satır kümesi nesnesindeki isteğe bağlı arabirimlerin her biri için özelliklere sahiptir. Tüketici, bu isteğe bağlı arabirimlerden birini kullanmak isterse, bir özelliği true olarak ayarlar. Sağlayıcı daha sonra bu özelliği denetleyebilir ve temel alınarak özel eylem gerçekleştirebilir.
+`GetColumnInfo` İlk olarak, çağrılan bir özelliğin ayarlanmış olup olmadığını kontrol eder `DBPROP_IRowsetLocate` . OLE DB, satır kümesi nesnesindeki isteğe bağlı arabirimlerin her biri için özelliklere sahiptir. Tüketici, bu isteğe bağlı arabirimlerden birini kullanmak isterse, bir özelliği true olarak ayarlar. Sağlayıcı daha sonra bu özelliği denetleyebilir ve temel alınarak özel eylem gerçekleştirebilir.
 
 Uygulamanızda, komut nesnesine yönelik işaretçiyi kullanarak özelliği alırsınız. `pThis`İşaretçi satır kümesi veya komut sınıfını temsil eder. Burada şablonları kullandığınız için, bunu bir işaretçi olarak geçirmeniz **`void`** veya kodun derlenmeyeceği olması gerekir.
 
-Sütun bilgilerini tutacak bir statik dizi belirtin. Tüketici, yer işareti sütununu istemiyor, dizideki bir giriş boşa harcanmış olur. Bu diziyi dinamik olarak ayırabilirsiniz, ancak doğru şekilde yok etmeniz gerekir. Bu örnek ADD_COLUMN_ENTRY makroları tanımlar ve kullanır ve bilgileri diziye eklemek için ADD_COLUMN_ENTRY_EX. Makroları *özel*RS 'ye ekleyebilirsiniz. H dosyası aşağıdaki kodda gösterildiği gibi:
+Sütun bilgilerini tutacak bir statik dizi belirtin. Tüketici, yer işareti sütununu istemiyor, dizideki bir giriş boşa harcanmış olur. Bu diziyi dinamik olarak ayırabilirsiniz, ancak doğru şekilde yok etmeniz gerekir. Bu örnek ADD_COLUMN_ENTRY makroları tanımlar ve kullanır ve bilgileri diziye eklemek için ADD_COLUMN_ENTRY_EX. Makroları *özel* RS 'ye ekleyebilirsiniz. H dosyası aşağıdaki kodda gösterildiği gibi:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////

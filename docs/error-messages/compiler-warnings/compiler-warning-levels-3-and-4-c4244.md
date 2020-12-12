@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3 ve 4) C4244'
 title: Derleyici Uyarısı (düzey 3 ve 4) C4244
 ms.date: 11/04/2016
 ms.assetid: f116bb09-c479-4b4e-a647-fe629a1383f6
-ms.openlocfilehash: cadba931af9c4497ec78938c37f94fe13daab0af
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 60c23dde99a74dd47d2a01d60ac97d1214dc13d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285155"
 ---
 # <a name="compiler-warning-levels-3-and-4-c4244"></a>Derleyici Uyarısı (düzey 3 ve 4) C4244
 

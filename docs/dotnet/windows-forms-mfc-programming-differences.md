@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Windows Forms/MFC programlama farkları'
 title: Windows Forms-MFC programlama farkları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - Windows Forms [C++], compared to MFC
 ms.assetid: f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51
-ms.openlocfilehash: 136549bb457cc17293d4c7201c9836d9094eea94
-ms.sourcegitcommit: e5192a25c084eda9eabfa37626f3274507e026b3
+ms.openlocfilehash: a48b4f54e44145abab33990e20ca76ed654659e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73965549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283946"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC Programlama Farkları
 
@@ -18,7 +19,7 @@ ms.locfileid: "73965549"
 
 Windows Forms, .NET Framework Microsoft Windows uygulamaları oluşturmak içindir. Bu çerçeve, zengin Windows tabanlı uygulamalar geliştirmenize olanak sağlayan modern, nesne odaklı, genişletilebilir bir sınıf kümesi sağlar. Windows Forms sayesinde, çok çeşitli veri kaynaklarına erişebilen ve Windows Forms denetimleri kullanarak veri görüntüleme ve veri düzenleme olanakları sağlayan zengin bir istemci uygulaması oluşturabilirsiniz.
 
-Ancak, MFC 'yi alışkın değilseniz, Windows Forms henüz açıkça desteklenmeyen belirli türde uygulamalar oluşturmak için kullanılabilir. Windows Forms uygulamalar MFC iletişim uygulamalarına eşdeğerdir. Ancak, OLE belge sunucusu/kapsayıcısı, ActiveX belgeleri, tek belge arabirimi (SDI), birden çok belge arabirimi (MDI) için belge/görünüm desteği ve birden çok üst düzey arabirim (MTı). Bu uygulamaları oluşturmak için kendi mantığınızı yazabilirsiniz.
+Ancak, MFC 'yi alışkın değilseniz, Windows Forms henüz açıkça desteklenmeyen belirli türde uygulamalar oluşturmak için kullanılabilir. Windows Forms uygulamalar MFC iletişim uygulamalarına eşdeğerdir. Ancak, OLE belge sunucusu/kapsayıcı, ActiveX belgeleri, tek belge arabirimi (SDI), birden çok belge arabirimi (MDI) ve birden çok üst düzey arabirim (MTı) gibi diğer MFC Uygulama türlerini doğrudan desteklemek için altyapı sağlamazler. Bu uygulamaları oluşturmak için kendi mantığınızı yazabilirsiniz.
 
 Windows Forms uygulamalar hakkında daha fazla bilgi için bkz. [Windows Forms giriş](/dotnet/framework/winforms/windows-forms-overview).
 
@@ -56,4 +57,4 @@ Aşağıdaki MFC görünümü veya belge ve komut yönlendirme özelliklerinin W
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC içinde Windows Formu Kullanıcı Denetimi Kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)
+[MFC 'de Windows formu Kullanıcı denetimi kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)

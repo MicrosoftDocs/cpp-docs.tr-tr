@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: veritabanı öznitelikleriyle veri erişimini basitleştirme'
 title: Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme
 ms.date: 10/19/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - attributes [C++], OLE DB consumer
 ms.assetid: 560d2456-e307-4cb7-ba7b-4d0ed674697f
-ms.openlocfilehash: faee3ea47a6d96b09729d9d4b5bfa21584096d31
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e265c6f59340afb86fdd59c86f78951b9e7cd0df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509468"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286494"
 ---
 # <a name="simplifying-data-access-with-database-attributes"></a>Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme
 

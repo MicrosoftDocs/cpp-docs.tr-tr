@@ -1,31 +1,32 @@
 ---
-title: Derleyici Hatası C2653
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2653'
+title: Derleyici hatası C2653
 ms.date: 11/30/2017
 f1_keywords:
 - C2653
 helpviewer_keywords:
 - C2653
 ms.assetid: 3f49e731-affd-43a0-a8d0-181db7650bc3
-ms.openlocfilehash: 2882764e1c0a84634c500d920f327fbebc4b19a9
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: f3be7ade8a6dcfc6aa8c5a83cc8a055fc230789d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65447947"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286156"
 ---
-# <a name="compiler-error-c2653"></a>Derleyici Hatası C2653
+# <a name="compiler-error-c2653"></a>Derleyici hatası C2653
 
-> '*tanımlayıcı*': bir sınıf veya ad alanı adı değil
+> '*Identifier*': bir sınıf veya ad alanı adı değil
 
-Dil sözdiziminin sınıf, yapı, birleşim veya ad alanı adı gerektirir.
+Dil sözdizimi, burada bir sınıf, yapı, birleşim veya ad alanı adı gerektirir.
 
-Sınıfı, yapı, birleşim veya ad alanı kapsamı işleci önünde olarak bildirilmedi bir ad kullandığınızda bu hata oluşabilir. Bu sorunu gidermek için ad bildirmek veya adı kullanılmadan önce bildiren üst bilgisi ekleyin.
+Bu hata, bir kapsam işlecinin önünde sınıf, yapı, birleşim veya ad alanı olarak bildirilmemiş bir ad kullandığınızda ortaya çıkabilir. Bu sorunu onarmak için adı bildirin veya kullanılmadan önce adı bildiren üstbilgiyi ekleyin.
 
-C2653 tanımlamak çalışırsanız olası ayrıca bir *bileşik ad alanı*, bir veya daha fazla kapsam iç içe geçmiş ad alanı adlarını içeren bir ad alanı. Bileşik. ad alanı tanımları c++'ta C ++ 17 önce izin verilmez. Bileşik ad alanları, belirttiğiniz zaman, Visual Studio 2015 güncelleştirme 3'te başlayarak desteklenir [/Std: c ++ Son](../../build/reference/std-specify-language-standard-version.md) derleyici seçeneği. Visual Studio 2017 15.5 sürümünden itibaren derleyici bileşik ad alanı tanımlarını destekler, [/Std: c ++ 17](../../build/reference/std-specify-language-standard-version.md) seçeneği belirtildi.
+Bir ya da daha fazla kapsam iç içe ad alanı adı içeren bir ad alanı olan bir *bileşik ad* alanı tanımlamaya çalışırsanız C2653 de mümkündür. C++ 17 ' den önceki c++ ' da bileşik ad alanı tanımlarına izin verilmez. [/Std: c + + en son](../../build/reference/std-specify-language-standard-version.md) derleyici seçeneğini belirttiğinizde, bileşik ad alanları Visual Studio 2015 güncelleştirme 3 ' te başlayarak desteklenir. Visual Studio 2017 sürüm 15,5 ' den başlayarak, derleyici [/std: c++ 17](../../build/reference/std-specify-language-standard-version.md) seçeneği belirtildiğinde bileşik ad alanı tanımlarını destekler.
 
 ## <a name="examples"></a>Örnekler
 
-Bu örnek, bir kapsam adı kullanılır ancak bildirilmemiş C2653 oluşturur. Derleyici, sınıf, yapı, birleşim veya kapsam işleci (:) önce ad alanı adı bekliyor.
+Bu örnek, bir kapsam adı kullanıldığı ancak bildirilmeyen için C2653 oluşturur. Derleyici, bir kapsam işlecinden önce bir sınıf, yapı, birleşim veya ad alanı adı bekliyor (::).
 
 ```cpp
 // C2653.cpp
@@ -38,7 +39,7 @@ void xx::func1(int m) {}   // C2653, xx is not declared
 void yy::func1(int m) {}   // OK
 ```
 
-C ++ 17 veya üzeri standartları için derlenmedi kodda, iç içe geçmiş her düzeyde bir açık ad alanı bildirimi iç içe geçmiş ad alanları kullanmanız gerekir:
+C++ 17 veya üzeri standartlar için derlenmediği kodda, iç içe yerleştirilmiş ad alanları her iç içe geçmiş düzeyinde açık bir ad alanı bildirimi kullanmalıdır:
 
 ```cpp
 // C2653b.cpp

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE DB Programlama'
 title: OLE DB Programlama
 ms.date: 05/02/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - data access [C++], OLE DB programming
 - OLE DB [C++], about OLE DB
 ms.assetid: 52a80d66-17a9-43a1-9b90-392ae43cea2b
-ms.openlocfilehash: 85cfc23630cf035489fb441fd2c85b1c0a696c71
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: f93a79638ec3667ccfad087abb8c73b6e369d8d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286949"
 ---
 # <a name="ole-db-programming"></a>OLE DB Programlama
 

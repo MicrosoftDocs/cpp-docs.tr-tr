@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: List sınıfı'
 title: list Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -98,18 +99,18 @@ helpviewer_keywords:
 - std::list [C++], swap
 - std::list [C++], unique
 ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
-ms.openlocfilehash: ec53e2a907cd38b262ec305d10ae63ad746f29b5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9d73c1c61cb7e630ea936685aeaab20f778340ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284843"
 ---
 # <a name="list-class"></a>list Sınıfı
 
-C++ standart kitaplık listesi sınıfı, öğelerini doğrusal bir düzenlemede koruyacak ve dizideki herhangi bir konumda etkili eklemeler ve silmeler sağlayan bir dizi kapsayıcıların sınıf şablonudur. Sıra, her biri bir tür *türünün*üyesini içeren çift yönlü bağlantılı öğelerin bir listesi olarak depolanır.
+C++ standart kitaplık listesi sınıfı, öğelerini doğrusal bir düzenlemede koruyacak ve dizideki herhangi bir konumda etkili eklemeler ve silmeler sağlayan bir dizi kapsayıcıların sınıf şablonudur. Sıra, her biri bir tür *türünün* üyesini içeren çift yönlü bağlantılı öğelerin bir listesi olarak depolanır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Type, class Allocator= allocator<Type>>
@@ -196,7 +197,7 @@ Bir üye işlevin liste öğelerini eklemesi veya silmeli olması gerektiğinde 
 |[düzenine](#sort)|Bir listenin öğelerini artan sırada veya diğer bir sıra ilişkisine göre düzenler.|
 |[splice](#splice)|Bağımsız değişken listesindeki öğeleri kaldırır ve bunları hedef listeye ekler.|
 |[Kur](#swap)|İki listenin öğelerini değiş tokuş eder.|
-|[unique](#unique)|Listedeki diğer bir ikili koşula uyan bitişik yinelenen öğeleri veya bitişik öğeleri kaldırır.|
+|[eşi](#unique)|Listedeki diğer bir ikili koşula uyan bitişik yinelenen öğeleri veya bitişik öğeleri kaldırır.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -218,7 +219,7 @@ typedef Allocator allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`allocator_type` , şablon parametre *ayırıcısı*için bir eş anlamlı.
+`allocator_type` , şablon parametre *ayırıcısı* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -1311,9 +1312,9 @@ Tüm oluşturucular bir ayırıcı nesnesi (*Al*) depolar ve listeyi başlatır.
 
 Dördüncü ve beşinci oluşturucular değer *Val*(*Count*) öğelerinin tekrarlarını belirtir.
 
-Altıncı Oluşturucu, listenin *sağ*bir kopyasını belirtir.
+Altıncı Oluşturucu, listenin *sağ* bir kopyasını belirtir.
 
-Yedinci Oluşturucu listeyi *sağa*taşımaktır.
+Yedinci Oluşturucu listeyi *sağa* taşımaktır.
 
 Sekizinci Oluşturucu öğeleri belirtmek için bir initializer_list kullanır.
 
@@ -2130,7 +2131,7 @@ Yeni boyut orijinal boyuttan daha büyükse listeye eklenecek yeni öğelerin de
 
 Listenin boyutu istenen boyuttan daha küçükse *_Newsize*, öğeler istenen boyuta ulaşıncaya kadar listeye eklenir.
 
-Listenin boyutu istenen boyuttan daha büyükse, listenin sonuna en yakın olan öğeler, liste *_Newsize*boyutuna ulaşıncaya kadar silinir.
+Listenin boyutu istenen boyuttan daha büyükse, listenin sonuna en yakın olan öğeler, liste *_Newsize* boyutuna ulaşıncaya kadar silinir.
 
 Listenin mevcut boyutu istenen boyutla aynı ise, herhangi bir eylem yapılmaz.
 
@@ -2395,7 +2396,7 @@ Kaynak listesinden eklenecek aralıktaki son öğenin ötesinde ilk konum.
 
 Üye işlevlerinin ikinci çifti, hedef listedeki *konumdan önce, konum tarafından başvurulan* *ve kaynak* listeden *iter* 'yi kaldıran bir öğe ekler. (Varsa `Where == Iter || Where == ++Iter` , hiçbir değişiklik gerçekleşmez.)
 
-Üçüncü üye işlevi çifti, [,) tarafından belirlenen aralığı, `First` `Last` hedef listedeki öğeden önce gelen ve kaynak listedeki öğe aralığını kaldıran bir *yere* ekler. (IF ise `&Source == this` , Aralık `[First, Last)` tarafından işaret edilen öğeyi içermemelidir.) *Where*
+Üçüncü üye işlevi çifti, [,) tarafından belirlenen aralığı, `First` `Last` hedef listedeki öğeden önce gelen ve kaynak listedeki öğe aralığını kaldıran bir *yere* ekler. (IF ise `&Source == this` , Aralık `[First, Last)` tarafından işaret edilen öğeyi içermemelidir.) 
 
 Ranşlı splice `N` öğeleri ekler ve `&Source != this` sınıf [Yineleyici](../standard-library/forward-list-class.md#iterator) bir nesne artırılır `N` .
 
@@ -2489,10 +2490,10 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
 ### <a name="parameters"></a>Parametreler
 
 *Right*\
-Değiştirilecek öğeleri *sağlayan liste veya*öğeleri listedeki değişikliklerle değiştirilecek olan liste.
+Değiştirilecek öğeleri *sağlayan liste veya* öğeleri listedeki değişikliklerle değiştirilecek olan liste.
 
 *tarafta*\
-Öğeleri liste *hakkı*ile değiş tokuş edilecek olan bir liste.
+Öğeleri liste *hakkı* ile değiş tokuş edilecek olan bir liste.
 
 ### <a name="example"></a>Örnek
 
@@ -2625,7 +2626,7 @@ typedef typename Allocator::value_type value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type` şablon parametre *türü*için bir eş anlamlı.
+`value_type` şablon parametre *türü* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 

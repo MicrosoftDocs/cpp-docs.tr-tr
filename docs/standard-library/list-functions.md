@@ -1,20 +1,21 @@
 ---
-title: '&lt;liste&gt; işlevleri | Microsoft Docs'
+description: 'Daha fazla bilgi için: &lt; List &gt; Functions'
+title: '&lt;liste &gt; işlevleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - list/std::swap
-ms.openlocfilehash: 04f00a9274018432cd03917ae5485f2d395649e4
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 6a94fcc916db08a510a968b66b0a0dc0cfa9b8e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79420066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284713"
 ---
-# <a name="ltlistgt-functions"></a>&lt;List&gt; işlevleri
+# <a name="ltlistgt-functions"></a>&lt;liste &gt; işlevleri
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki listenin öğelerini değiş tokuş eder.
 
@@ -25,12 +26,12 @@ template <class T, class Allocator>
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `list` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `list` türünün bir nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu şablon işlevi `left.swap(right)`yürütür.
+Bu şablon işlevi yürütülür `left.swap(right)` .

@@ -1,21 +1,22 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE DB sağlayıcısına dizeler okuma'
 title: Dizeleri OLE DB Sağlayıcısına Okuma
 ms.date: 10/13/2018
 helpviewer_keywords:
 - OLE DB providers, reading strings into
 ms.assetid: 517f322c-f37e-4eed-bf5e-dd9a412c2f98
-ms.openlocfilehash: d46b4e1a53e7e489763f40e7a5238e65b493f7c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5df8812d5589dd457684bf5e36a8a49f798f99aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62283863"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286637"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
 
-`CCustomRowset::Execute` İşlevi bir dosyayı açar ve dizelerini okur. Tüketici dosya adı çağırarak sağlayıcıya geçen [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)). Sağlayıcı dosya adını alır ve üye değişkeni depolar `m_strCommandText`. `Execute` Dosya adından okur `m_strCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, çağrılar ve dosyayı açar `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydını örneği oluşturur (değiştirilmiş `CCustomWindowsFile` gelen [dizeleri OLE DB sağlayıcısı depolama](../../data/oledb/storing-strings-in-the-ole-db-provider.md)) ve bir diziye yerleştirir.
+`CCustomRowset::Execute`İşlevi bir dosya açar ve dizeleri okur. Tüketici, [ICommandText:: SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85))' i çağırarak dosya adını sağlayıcıya geçirir. Sağlayıcı dosya adını alır ve üye değişkeninde depolar `m_strCommandText` . `Execute` dosya adını öğesinden okur `m_strCommandText` . Dosya adı geçersizse veya dosya kullanılamıyorsa `Execute` bir hata döndürür. Aksi takdirde, dosyayı açar ve `fgets` dizeleri almak için çağırır. Okuduğu her bir dize kümesi için, `Execute` Kullanıcı kaydının bir örneğini oluşturur ( `CCustomWindowsFile` [OLE DB sağlayıcıda dizeleri depolamadan](../../data/oledb/storing-strings-in-the-ole-db-provider.md)değiştirilir) ve bir diziye koyar.
 
-Dosya açılamıyor, `Execute` DB_E_NOTABLE döndürmelidir. Bunun yerine E_FAIL döndürürse, sağlayıcı birçok tüketicileriyle çalışmaz ve OLE DB başarılı olmaz [uygunluk testlerini](../../data/oledb/testing-your-provider.md).
+Dosya açılamadığı takdirde `Execute` DB_E_NOTABLE döndürmelidir. Bunun yerine E_FAIL döndürürse, sağlayıcı birçok tüketici ile çalışmaz ve OLE DB [uygunluk testlerini](../../data/oledb/testing-your-provider.md)geçirmez.
 
 ## <a name="example"></a>Örnek
 
@@ -91,10 +92,10 @@ public:
 };
 ```
 
-Sağlayıcınıza bu yapıldığında, derlemek ve çalıştırmak hazır olması gerekir. Sağlayıcıyı test eşleşen işlevselliğe sahip bir tüketici gerekir. [Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md) bu tür bir test tüketici oluşturma işlemi gösterilmektedir. Test müşteri ve sağlayıcı ile çalıştırmak ve test tüketici sağlayıcıdan doğru dizeleri alır doğrulayın.
+Bu tamamlandığında, sağlayıcınız derlemek ve çalıştırmak için hazırlanmalıdır. Sağlayıcıyı test etmek için eşleşen işlevselliğe sahip bir tüketiciye ihtiyacınız vardır. [Basit bir tüketici uygulamak](../../data/oledb/implementing-a-simple-consumer.md) , böyle bir test tüketicisinin nasıl oluşturulacağını gösterir. Test tüketicisini sağlayıcıyla çalıştırın ve test tüketicisinin sağlayıcıdan uygun dizeleri aldığını doğrulayın.
 
-Sağlayıcınız başarıyla test ettikten sonra ek arabirimlerini uygulayarak işlevselliğini artırmak isteyebilirsiniz. Bir örnek gösterilmiştir [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).
+Sağlayıcınızı başarıyla test ettiğinizde, Ek arabirimler uygulayarak işlevselliğini geliştirmek isteyebilirsiniz. [Basit Read-Only sağlayıcıyı geliştirmeyle](../../data/oledb/enhancing-the-simple-read-only-provider.md)bir örnek gösterilmektedir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Basit Salt Okunur Sağlayıcıyı Uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)<br/>
+[Basit Read-Only sağlayıcıyı uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)<br/>

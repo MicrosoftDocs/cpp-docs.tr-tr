@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi için: liste öğeleri ve görüntü listeleri'
 title: Liste Öğeleri ve Görüntü Listeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CListCtrl class [MFC], image lists
 - list items [MFC], image lists
 ms.assetid: 317d095f-f978-47da-acb6-7bfe7dd3bc69
-ms.openlocfilehash: 14abf72551d39b2d1b2069bd17da308b39d7f6cc
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 674c67c2eb104d86f0bd80732469129b6c70e0f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621411"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283374"
 ---
 # <a name="list-items-and-image-lists"></a>Liste Öğeleri ve Görüntü Listeleri
 

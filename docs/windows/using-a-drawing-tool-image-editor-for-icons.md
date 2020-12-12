@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: çizim aracını kullanma'
 title: 'Nasıl yapılır: çizim aracını kullanma'
 ms.date: 02/15/2019
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - graphics [C++], custom brushes
 - custom brushes
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
-ms.openlocfilehash: 46ba1f1057484f2b5b1e1286482d80fd96312caf
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9415b81eb520b626186fe321184bd1d7d7391b61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502935"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283270"
 ---
 # <a name="how-to-use-a-drawing-tool"></a>Nasıl yapılır: çizim aracını kullanma
 
@@ -105,7 +106,7 @@ Satırları ve kapalı rakamları çizmek için **görüntü düzenleyici** ara�
 
 1. Bir fırça için kullanmak istediğiniz görüntünün bölümünü seçin.
 
-1. **SHIFT** tuşunu basılı tutun, seçimde seçim yapın ve görüntünün üzerine sürükleyin ya da menü **görüntüsüne**giderek  >  **seçimi fırça olarak kullanın**.
+1. **SHIFT** tuşunu basılı tutun, seçimde seçim yapın ve görüntünün üzerine sürükleyin ya da menü **görüntüsüne** giderek  >  **seçimi fırça olarak kullanın**.
 
    Seçiminiz, seçimdeki renkleri görüntüde dağıtan özel bir fırça haline gelir. Seçimin kopyaları sürükleme yolu üzerinde bırakılır. Ne kadar yavaş sürüklediğiniz, daha fazla kopya yapılır.
 
@@ -136,7 +137,7 @@ Fırça boyutunu açmak için **artı işareti** ( **+** ) tuşuna veya yarıya 
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

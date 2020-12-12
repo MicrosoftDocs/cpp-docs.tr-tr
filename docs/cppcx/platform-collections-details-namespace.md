@@ -1,22 +1,23 @@
 ---
-title: 'Platform::Collections:: details Namespace'
+description: 'Şu konuda daha fazla bilgi edinin: Platform:: Collections::D euçlar ad alanı'
+title: 'Platform:: Collections::D euçlar ad alanı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::Details
 ms.assetid: d5ac76ee-b568-4841-882f-738ed6fa4f1e
-ms.openlocfilehash: 7f7885397a56391581f9e3d0fe985311164d0219
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4af47a5eb84d5d27613d0c356ae3c352005da9d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62161582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283985"
 ---
-# <a name="platformcollectionsdetails-namespace"></a>Platform::Collections:: details Namespace
+# <a name="platformcollectionsdetails-namespace"></a>Platform:: Collections::D euçlar ad alanı
 
-Bu ad alanı destekler `Platform` altyapı ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+Bu ad alanı `Platform` altyapıyı destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Platform {  namespace Collections {    namespace Details {}}}
@@ -24,18 +25,18 @@ namespace Platform {  namespace Collections {    namespace Details {}}}
 
 ### <a name="members"></a>Üyeler
 
-Bu ad alanının üyeleri collection.h içinde tanımlanır ve Nesne Tarayıcısı'nda gösterilmez.
+Bu ad alanının üyeleri Collection. h içinde tanımlanır ve Nesne Tarayıcısı gösterilmez.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)
+[Platform:: Collections ad alanı](../cppcx/platform-collections-namespace.md)
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** Collection.h
+**Üst bilgi:** Collection. h
 
-**Namespace:** Platform::Collection::details
+**Ad alanı:** Platform:: Collection::D euçlar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)
+[Platform ad alanı](platform-namespace-c-cx.md)

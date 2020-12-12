@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2494'
 title: Derleyici hatası C2494
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2494
 ms.assetid: 5dfd07ab-351d-49c9-b54e-f0a104776ab8
-ms.openlocfilehash: e337e5b54706c1ae9d566131c98fd178c523f87e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4842ad7360b4d8a943ee118cb56d79b694232c84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216186"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283660"
 ---
 # <a name="compiler-error-c2494"></a>Derleyici hatası C2494
 
@@ -35,7 +36,7 @@ int main() {
 }
 ```
 
-C2494, **/clr**kullanılırken de oluşabilir.
+C2494, **/clr** kullanılırken de oluşabilir.
 
 ```cpp
 // C2494b.cpp

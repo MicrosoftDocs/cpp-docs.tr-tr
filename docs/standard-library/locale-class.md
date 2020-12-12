@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: locale sınıfı'
 title: locale Sınıfı
 ms.date: 07/20/2020
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: 55aeaf27b1c31ef0dba68d0ead3633590777cbdf
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: e934a2e892f0b68926369c8e4a4128162345dd83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284635"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -112,7 +113,7 @@ messages<wchar_t>
 
 Bu önceden tanımlı `iostream` modellerden bazıları sınıflar tarafından, sayısal değerlerin metin dizilerinden ve bunlara dönüştürülmesini denetlemek için kullanılır.
 
-Sınıf yerel ayarı nesnesi ayrıca bir yerel ayar adını sınıf [dizesinin](../standard-library/string-typedefs.md#string)bir nesnesi olarak depolar. Yerel ayar modeli oluşturmak için geçersiz yerel ayar adı kullanmak veya bir yerel ayar nesnesi [runtime_error](../standard-library/runtime-error-class.md)sınıfından bir nesne oluşturur. Depolanan yerel ayar adı, `"*"` yerel ayar nesnesinin, C stili bir yerel ayarın nesne tarafından temsil edilen tam öğesine karşılık geldiğinden emin olamaz. Aksi takdirde, ad çağırarak, bazı yerel ayar nesneleri için standart C Kitaplığı içinde eşleşen bir yerel ayar kurabilirsiniz `locale_object` `setlocale(LC_ALL , locale_object.` [name](#name) `().c_str())` .
+Sınıf yerel ayarı nesnesi ayrıca bir yerel ayar adını sınıf [dizesinin](../standard-library/string-typedefs.md#string)bir nesnesi olarak depolar. Yerel ayar modeli oluşturmak için geçersiz yerel ayar adı kullanmak veya bir yerel ayar nesnesi [runtime_error](../standard-library/runtime-error-class.md)sınıfından bir nesne oluşturur. Depolanan yerel ayar adı, `"*"` yerel ayar nesnesinin, C stili bir yerel ayarın nesne tarafından temsil edilen tam öğesine karşılık geldiğinden emin olamaz. Aksi takdirde, ad çağırarak, bazı yerel ayar nesneleri için standart C Kitaplığı içinde eşleşen bir yerel ayar kurabilirsiniz `locale_object` `setlocale(LC_ALL , locale_object.` [](#name) `().c_str())` .
 
 Bu uygulamada, statik üye işlevini de çağırabilirsiniz:
 
@@ -140,19 +141,19 @@ Sonraki eklemeler için sayısal biçimlendirme kuralları, `cout` genel yerel a
 
 ### <a name="constructors"></a>Oluşturucular
 
-|Oluşturucu|Description|
+|Oluşturucu|Açıklama|
 |-|-|
-|[ayarlar](#locale)|Bir yerel ayar veya yerel ayar kopyası ya da modelin veya kategorinin başka bir yerel ayardaki bir model veya kategori tarafından değiştirilen bir kopyasını oluşturur.|
+|[locale](#locale)|Bir yerel ayar veya yerel ayar kopyası ya da modelin veya kategorinin başka bir yerel ayardaki bir model veya kategori tarafından değiştirilen bir kopyasını oluşturur.|
 
 ### <a name="typedefs"></a>Tür tanımları
 
-|Tür adı|Description|
+|Tür adı|Açıklama|
 |-|-|
 |[alan](#category)|Standart model aileleri belirtmek için bit maskesi değerleri sağlayan bir tamsayı türü.|
 
 ### <a name="member-functions"></a>Üye işlevleri
 
-|Üye işlevi|Description|
+|Üye işlevi|Açıklama|
 |-|-|
 |[combine](#combine)|Belirtilen yerel ayardaki bir modeli hedef yerel ayara ekler.|
 |[ada](#name)|Depolanan yerel ayar adını döndürür.|
@@ -161,7 +162,7 @@ Sonraki eklemeler için sayısal biçimlendirme kuralları, `cout` genel yerel a
 
 |Ad|Açıklama|
 |-|-|
-|[klasik](#classic)|Statik üye işlevini klasik C yerel ayarını temsil eden yerel bir nesneye döndürür.|
+|[Klasik](#classic)|Statik üye işlevini klasik C yerel ayarını temsil eden yerel bir nesneye döndürür.|
 |[Genel](#global)|Varsayılan programın yerel ayarını sıfırlar.|
 
 ### <a name="operators"></a>İşleçler
@@ -297,7 +298,7 @@ Hedef yerel ayara eklenecek modeli içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Üye işlevi, içinde bulunan veya source_locale listelenen modeli ** \* buna** ekleyen bir yerel ayar nesnesi döndürür `Facet` . *source_locale*
+Üye işlevi, içinde bulunan veya source_locale listelenen modeli **\* buna** ekleyen bir yerel ayar nesnesi döndürür `Facet` . 
 
 ### <a name="example"></a>Örnek
 
@@ -454,7 +455,7 @@ Oluşturulan yerel ayara değiştirilecek model.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, nesneyi genel yerel ayara uyacak şekilde başlatır. İkinci ve üçüncü oluşturucular, *locale_name*yerel ayar adıyla tutarlı davranış sağlamak için tüm yerel ayar kategorilerini başlatır. Kalan oluşturucular, belirtilen özel durumlarla birlikte *from_locale*kopyalar:
+İlk Oluşturucu, nesneyi genel yerel ayara uyacak şekilde başlatır. İkinci ve üçüncü oluşturucular, *locale_name* yerel ayar adıyla tutarlı davranış sağlamak için tüm yerel ayar kategorilerini başlatır. Kalan oluşturucular, belirtilen özel durumlarla birlikte *from_locale* kopyalar:
 
 `locale(const locale& from_locale, const locale& Other, category new_category);`
 
@@ -641,7 +642,7 @@ Karşılaştırılacak ikinci dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-- **`true`***sol* olarak lexıse, *yoksa, tersi*durumda **`false`** .
+- **`true`***sol* olarak lexıse, *yoksa, tersi* durumda **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 

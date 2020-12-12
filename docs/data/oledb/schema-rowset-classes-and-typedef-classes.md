@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: şema satır kümesi sınıfları ve typedef sınıfları'
 title: Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 ms.date: 11/04/2016
 f1_keywords:
@@ -548,12 +549,12 @@ helpviewer_keywords:
 - TABLE_NAME
 - TABLE_SCHEMA
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-ms.openlocfilehash: 104f7a92cdb472fc889d44cff20982e51b955014
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5b51404642dbb6d9ad6c2236e7693137b4a949c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509489"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286572"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 

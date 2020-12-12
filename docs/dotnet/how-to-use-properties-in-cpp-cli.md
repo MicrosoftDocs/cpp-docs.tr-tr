@@ -1,16 +1,17 @@
 ---
+description: "Daha fazla bilgi edinin: nasıl yapılır: C++/CLı ' da özellikleri kullanma"
 title: 'Nasıl yapılır: C++/CLI Üzerinde Özellikleri Kullanma'
 ms.date: 07/21/2017
 helpviewer_keywords:
 - simple properties
 - properties [C++], simple
 ms.assetid: f5d82547-e214-4f05-9e1b-ddb6d0dc5e4c
-ms.openlocfilehash: c786c7746cd40a970af3a5ae4436119def4c805b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4db093e10d40e86723ef4101997f6015f37401be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286273"
 ---
 # <a name="how-to-use-properties-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Özellikleri Kullanma
 

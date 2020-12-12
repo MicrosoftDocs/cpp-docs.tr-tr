@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2019'
 title: Derleyici hatası C2019
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2019
 ms.assetid: 4f37b1e1-9eca-418f-a4c3-141e8512d7b6
-ms.openlocfilehash: 5343d6760a7a7f2c868d92790bf9930e431e3517
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5b30bdb8eace513572152d0f33da5f591e21bd6e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283933"
 ---
 # <a name="compiler-error-c2019"></a>Derleyici hatası C2019
 
 Önişlemci yönergesi bekleniyordu, ' character ' bulundu
 
-Karakter, bir `#` işareti izler, ancak bir Önişlemci yönergesinin ilk harfi değildir.
+Karakter bir işaret izler, `#` ancak bir Önişlemci yönergesinin ilk harfi değildir.
 
 Aşağıdaki örnek C2019 oluşturur:
 

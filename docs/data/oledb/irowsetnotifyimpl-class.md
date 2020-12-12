@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. IRowsetNotifyImpl Sınıfı
 title: IRowsetNotifyImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - OnRowChange method
 - OnRowsetChange method
 ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
-ms.openlocfilehash: f938d9e92bc2f447ecfa82f2bfb27c8fda7652ab
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e07f918d7315998f5aa0dc14dbd613520a68f134
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845113"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287053"
 ---
 # <a name="irowsetnotifyimpl-class"></a>IRowsetNotifyImpl Sınıfı
 
@@ -61,7 +62,7 @@ Bkz. tüketici üzerinde bağlantı noktası arabirimini uygulamayla ilgili [Bil
 
 Bir sütunun değerindeki herhangi bir değişikliği tüketiciye bildirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(OnFieldChange)(
@@ -90,7 +91,7 @@ Bu yöntem, [ırowsetnotıfy:: OnFieldChange](/previous-versions/windows/desktop
 
 İlk değişikliğin tüketicisini bir satıra veya tüm satırı etkileyen herhangi bir değişikliğe bildirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(OnRowChange)(
@@ -118,7 +119,7 @@ Bu yöntem, [ırowsetnotıfy:: OnRowChange](/previous-versions/windows/desktop/m
 
 Tüm satır kümesini etkileyen herhangi bir değişikliğin tüketicisini bilgilendirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 STDMETHOD(OnRowsetChange)(

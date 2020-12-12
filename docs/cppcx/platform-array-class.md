@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Platform:: Array sınıfı'
 title: 'Platform:: Array sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: 4903c18f981c87c418a6ab08595816ce22a7413c
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 76e8329cdc324bc7a8de338725d48188b79ac9f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284206"
 ---
 # <a name="platformarray-class"></a>Platform:: Array sınıfı
 
@@ -36,7 +37,7 @@ Platform:: Array, [Platform:: WriteOnlyArray sınıfından](../cppcx/platform-wr
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Dizi oluşturucular](#ctor)|Sınıf şablonu parametresi, *T*tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.|
+|[Dizi oluşturucular](#ctor)|Sınıf şablonu parametresi, *T* tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.|
 
 ### <a name="methods"></a>Yöntemler
 
@@ -64,9 +65,9 @@ Derleyici seçeneği: **/ZW**
 
 ## <a name="array-constructors"></a><a name="ctor"></a> Dizi oluşturucular
 
-Sınıf şablonu parametresi, *T*tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.
+Sınıf şablonu parametresi, *T* tarafından belirtilen tek boyutlu, değiştirilebilir bir dizi türü başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Array(unsigned int size);
@@ -92,7 +93,7 @@ Platform:: Array örnekleri oluşturma hakkında daha fazla bilgi için bkz. [Ar
 
 Belirtilen dizin konumundaki dizi öğesine bir başvuru alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 T& get(unsigned int index)  const;

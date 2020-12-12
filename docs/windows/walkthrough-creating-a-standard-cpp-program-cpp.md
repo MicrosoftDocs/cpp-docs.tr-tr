@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: Standart C++ programı oluşturma (C++)'
 title: 'İzlenecek yol: Standart C++ Programı Oluşturma'
 ms.custom: get-started-article
 ms.date: 04/25/2019
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-ms.openlocfilehash: 778a73e62a834dd73aca1a22bd4dd7f244e7bb4d
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 64310c72a7c58402dfe8c58ce2dab8eb2cbd231e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283192"
 ---
 # <a name="walkthrough-creating-a-standard-c-program-c"></a>İzlenecek yol: Standart C++ Programı Oluşturma
 
@@ -34,11 +35,11 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 ### <a name="to-create-a-c-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir C++ projesi oluşturmak için
 
-1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
+1.  >  > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
 
-1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows** 'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
+1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
 
-1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri** ' yi seçin. Sonraki sayfada, proje için bir ad girin ve isterseniz proje konumunu belirtin.
+1. Filtre uygulanmış proje türleri listesinden **konsol uygulaması** ' nı seçin ve ardından **İleri**' yi seçin. Sonraki sayfada, proje için bir ad girin ve isterseniz proje konumunu belirtin.
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
@@ -48,13 +49,13 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 ### <a name="to-create-a-c-project-in-visual-studio-2017"></a>Visual Studio 2017 ' de bir C++ projesi oluşturmak için
 
-1. **Dosya** menüsünde **Yeni** ' ye Işaret ederek ve ardından **Proje** ' ye tıklayarak bir proje oluşturun.
+1. **Dosya** menüsünde **Yeni** ' ye Işaret ederek ve ardından **Proje**' ye tıklayarak bir proje oluşturun.
 
-1. **Visual C++** proje türleri bölmesinde, **Windows Masaüstü** ' ne ve ardından **Windows konsol uygulaması** ' na tıklayın.
+1. **Visual C++** proje türleri bölmesinde, **Windows Masaüstü**' ne ve ardından **Windows konsol uygulaması**' na tıklayın.
 
 1. Proje için bir ad yazın. Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir, ancak farklı bir ad yazabilirsiniz. Ayrıca, proje için farklı bir konum da yazabilirsiniz.
 
-1. Projeyi oluşturmak için **Tamam** 'a tıklayın.
+1. Projeyi oluşturmak için **Tamam**'a tıklayın.
 
 ::: moniker-end
 
@@ -62,19 +63,19 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 ### <a name="to-create-a-c-project-in-visual-studio-2015"></a>Visual Studio 2015 ' de bir C++ projesi oluşturmak için
 
-1. **Dosya** menüsünde **Yeni** ' ye Işaret ederek ve ardından **Proje** ' ye tıklayarak bir proje oluşturun.
+1. **Dosya** menüsünde **Yeni** ' ye Işaret ederek ve ardından **Proje**' ye tıklayarak bir proje oluşturun.
 
-1. **Visual C++** proje türleri bölmesinde, **Windows Masaüstü** ' ne ve ardından **Windows konsol uygulaması** ' na tıklayın.
+1. **Visual C++** proje türleri bölmesinde, **Windows Masaüstü**' ne ve ardından **Windows konsol uygulaması**' na tıklayın.
 
-1. **Yeni proje** iletişim kutusunda Visual C++ **yüklü**  >  **Şablonlar**  >  **Visual C++** ' ı genişletin ve ardından **Win32** ' yi seçin. Orta bölmede **Win32 konsol uygulaması** ' nı seçin.
+1. **Yeni proje** iletişim kutusunda Visual C++ **yüklü**  >  **Şablonlar**  >  ' ı genişletin ve ardından **Win32**' yi seçin. Orta bölmede **Win32 konsol uygulaması**' nı seçin.
 
 1. Proje için bir ad yazın. Varsayılan olarak, projeyi içeren çözüm proje ile aynı ada sahiptir, ancak farklı bir ad yazabilirsiniz. Ayrıca, proje için farklı bir konum da yazabilirsiniz.
 
-1. Projeyi oluşturmak için **Tamam** 'a tıklayın.
+1. Projeyi oluşturmak için **Tamam**'a tıklayın.
 
 1. **Win32 uygulama Sihirbazı 'nı** doldurun.
 
-1. **İleri** ' ye tıklayın, ardından **konsol uygulamasının** seçili olduğundan emin olun ve **önceden derlenmiş üstbilgiler** kutusunun işaretini kaldırın.
+1. **İleri**' ye tıklayın, ardından **konsol uygulamasının** seçili olduğundan emin olun ve **önceden derlenmiş üstbilgiler** kutusunun işaretini kaldırın.
 
 1. **Finish (Son)** düğmesine tıklayın.
 
@@ -82,13 +83,13 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 ## <a name="add-a-new-source-file"></a>Yeni bir kaynak dosya ekleyin
 
-1. **Çözüm Gezgini** görüntülenmiyorsa, **Görünüm** menüsünde **Çözüm Gezgini** ' a tıklayın.
+1. **Çözüm Gezgini** görüntülenmiyorsa, **Görünüm** menüsünde **Çözüm Gezgini**' a tıklayın.
 
 1. Projeye aşağıdaki gibi yeni bir kaynak dosya ekleyin.
 
-   1. **Çözüm Gezgini** , **kaynak dosyalar** klasörüne sağ tıklayın, **Ekle** ' nin üzerine gelin ve ardından **Yeni öğe** ' ye tıklayın.
+   1. **Çözüm Gezgini**, **kaynak dosyalar** klasörüne sağ tıklayın, **Ekle**' nin üzerine gelin ve ardından **Yeni öğe**' ye tıklayın.
 
-   1. **Kod** düğümünde **C++ dosyası (. cpp)** ' na tıklayın, dosya için bir ad yazın ve ardından **Ekle** ' ye tıklayın.
+   1. **Kod** düğümünde **C++ dosyası (. cpp)**' na tıklayın, dosya için bir ad yazın ve ardından **Ekle**' ye tıklayın.
 
    . Cpp dosyası **Çözüm Gezgini** Içindeki **kaynak dosyaları** klasöründe görünür ve dosya Visual Studio Düzenleyicisi 'nde açılır.
 
@@ -96,11 +97,11 @@ Aşağıdaki adımlar, kullandığınız Visual Studio sürümüne bağlı olara
 
 1. Dosyayı kaydedin.
 
-1. **Yapı** menüsünde **Yapı Çözümü** ’ne tıklayın.
+1. **Yapı** menüsünde **Yapı Çözümü**’ne tıklayın.
 
    **Çıkış** penceresi, derleme ilerlemesi hakkındaki bilgileri, örneğin, derleme günlüğünün konumunu ve yapı durumunu gösteren bir iletiyi görüntüler.
 
-1. **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat** ' a tıklayın.
+1. **Hata Ayıkla** menüsünde, **hata ayıklama olmadan Başlat**' a tıklayın.
 
    Örnek programı kullandıysanız, bir komut penceresi görüntülenir ve küme içinde belirli tamsayılar bulunup bulunamamadığını gösterir.
 

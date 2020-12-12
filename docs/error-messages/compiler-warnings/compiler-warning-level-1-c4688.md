@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4688'
 title: Derleyici Uyarısı (düzey 1) C4688
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4688
 ms.assetid: a027df3c-b2b8-4c49-8539-c2bc42db74e8
-ms.openlocfilehash: e7aebfa3ae602aa45c02897711cd94520a876cca
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9abd793463cf576549b09a1a887d225317ca6fc5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175408"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97285168"
 ---
 # <a name="compiler-warning-level-1-c4688"></a>Derleyici Uyarısı (düzey 1) C4688
 

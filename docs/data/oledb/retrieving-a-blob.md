@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: BLOB alma'
 title: BLOB Alma
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - BLOB (binary large object), retrieving
 - OLE DB, BLOBs (binary large objects)
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
-ms.openlocfilehash: 352841595e8b197407ccb52a22c8b0502d314c98
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: ef870d84c286f72621e87858cea944cc70cbe0cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509502"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286611"
 ---
 # <a name="retrieving-a-blob"></a>BLOB Alma
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: komut yönlendirme'
 title: Komut Yönlendirme
 ms.date: 09/06/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-ms.openlocfilehash: e47ffd38b342301da32abae9690738ef83c0426b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4004f74413f236599c5cdd14f6593bc5d2bd26b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283452"
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
 
@@ -31,11 +32,11 @@ Farklı komut hedefi sınıfları, kendi ileti haritalarını farklı zamanlarda
 
 Bu yönlendirme mekanizması, işleyicinizin bir komuta yanıt olarak ne kadar pahalı olduğuna kıyasla, yönlendirmenin maliyeti düşüktür. Framework 'ün yalnızca Kullanıcı bir kullanıcı arabirimi nesnesiyle etkileşime geçtiğinde komutlar ürettiğini göz önünde bulundurun.
 
-### <a name="standard-command-route"></a><a name="_core_standard_command_route"></a>Standart komut yolu
+### <a name="standard-command-route"></a><a name="_core_standard_command_route"></a> Standart komut yolu
 
 |Bu türden bir nesne bir komut aldığında. . .|Kendisine ve diğer komut hedefi nesnelerine bu sırada komutu işleme şansı verir:|
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-|MDI çerçevesi penceresi ( `CMDIFrameWnd` )|1. etkin`CMDIChildWnd`<br />2. bu çerçeve penceresi<br />3. uygulama ( `CWinApp` nesne)|
+|MDI çerçevesi penceresi ( `CMDIFrameWnd` )|1. etkin `CMDIChildWnd`<br />2. bu çerçeve penceresi<br />3. uygulama ( `CWinApp` nesne)|
 |Belge çerçevesi penceresi ( `CFrameWnd` , `CMDIChildWnd` )|1. etkin görünüm<br />2. bu çerçeve penceresi<br />3. uygulama ( `CWinApp` nesne)|
 |Görüntüle|1. Bu görünüm<br />2. görünüme Ekli belge|
 |Belge|1. Bu belge<br />2. belgeye ekli belge şablonu|

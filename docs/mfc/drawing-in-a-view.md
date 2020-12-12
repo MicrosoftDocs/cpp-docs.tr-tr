@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bir görünümde çizme'
 title: Bir Görünümde Çizim Yapma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,24 +12,24 @@ helpviewer_keywords:
 - paint messages in view class [MFC]
 - device contexts, screen drawings
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
-ms.openlocfilehash: c60d99fdebcd64ad844bc19918a30beb90b86af3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b5d6b33d91f6a71048162078a926c5ad4336d6a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618930"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283413"
 ---
 # <a name="drawing-in-a-view"></a>Bir Görünümde Çizim Yapma
 
-Uygulamanızdaki neredeyse tüm çizimler görünümün `OnDraw` üye işlevinde oluşur ve bu, görünüm sınıfınıza geçersiz kılmanız gerekir. (Özel durum, [bir görünüm aracılığıyla Kullanıcı girişini yorumlama](interpreting-user-input-through-a-view.md)bölümünde ele alınan fare çizimi olur.) `OnDraw`Geçersiz kılma:
+Uygulamanızdaki neredeyse tüm çizimler görünümün `OnDraw` üye işlevinde oluşur ve bu, görünüm sınıfınıza geçersiz kılmanız gerekir. (Özel durum, [bir görünüm aracılığıyla Kullanıcı girişini yorumlama](interpreting-user-input-through-a-view.md)bölümünde ele alınan fare çizimi olur.) `OnDraw` Geçersiz kılma:
 
 1. Sağladığınız belge üye işlevlerini çağırarak verileri alır.
 
 1. Framework 'ün geçirdiği bir cihaz bağlamı nesnesinin üye işlevlerini çağırarak verileri görüntüler `OnDraw` .
 
-Belgenin verileri bir şekilde değiştiğinde, görünümün değişiklikleri yansıtacak şekilde yeniden çizilmelidir. Genellikle, bu durum Kullanıcı belgedeki bir görünümden değişiklik yaptığında meydana gelir. Bu durumda, Görünüm belgenin [UpdateAllViews](reference/cdocument-class.md#updateallviews) üye işlevini çağırarak aynı belgedeki tüm görünümlere onları güncelleştirebilir. `UpdateAllViews`Her bir görünümün [OnUpdate](reference/cview-class.md#onupdate) üye işlevini çağırır. Varsayılan uygulama, `OnUpdate` görünümün tüm istemci alanını geçersiz kılar. Yalnızca belgenin değiştirilen bölümlerine eşlenen istemci alanının bölgelerini geçersiz kılmak için bunu geçersiz kılabilirsiniz.
+Belgenin verileri bir şekilde değiştiğinde, görünümün değişiklikleri yansıtacak şekilde yeniden çizilmelidir. Genellikle, bu durum Kullanıcı belgedeki bir görünümden değişiklik yaptığında meydana gelir. Bu durumda, Görünüm belgenin [UpdateAllViews](reference/cdocument-class.md#updateallviews) üye işlevini çağırarak aynı belgedeki tüm görünümlere onları güncelleştirebilir. `UpdateAllViews` Her bir görünümün [OnUpdate](reference/cview-class.md#onupdate) üye işlevini çağırır. Varsayılan uygulama, `OnUpdate` görünümün tüm istemci alanını geçersiz kılar. Yalnızca belgenin değiştirilen bölümlerine eşlenen istemci alanının bölgelerini geçersiz kılmak için bunu geçersiz kılabilirsiniz.
 
-Sınıfının `UpdateAllViews` üye işlevi `CDocument` ve `OnUpdate` sınıfının üye işlevi, `CView` belgenin hangi bölümlerinin değiştirildiğini açıklayan bilgileri geçirmenize olanak sağlar. Bu "ipucu" mekanizması, görünümün yeniden çizilemesinin gereken alanı sınırlamanıza olanak tanır. `OnUpdate`iki "ipucu" bağımsız değişkeni alır. **LParam**türünde birinci, *lipucu*, istediğiniz herhangi bir veriyi geçirmenize olanak tanılarken, * türünde, ikinci, *pHint*, `CObject` öğesinden türetilmiş herhangi bir nesneye bir işaretçi geçirmenize olanak sağlar `CObject` .
+Sınıfının `UpdateAllViews` üye işlevi `CDocument` ve `OnUpdate` sınıfının üye işlevi, `CView` belgenin hangi bölümlerinin değiştirildiğini açıklayan bilgileri geçirmenize olanak sağlar. Bu "ipucu" mekanizması, görünümün yeniden çizilemesinin gereken alanı sınırlamanıza olanak tanır. `OnUpdate` iki "ipucu" bağımsız değişkeni alır. **LParam** türünde birinci, *lipucu*, istediğiniz herhangi bir veriyi geçirmenize olanak tanılarken, * türünde, ikinci, *pHint*, `CObject` öğesinden türetilmiş herhangi bir nesneye bir işaretçi geçirmenize olanak sağlar `CObject` .
 
 Bir görünüm geçersiz olduğunda, Windows bunu bir **WM_PAINT** mesajı gönderir. Görünümün [OnPaint](reference/cwnd-class.md#onpaint) Handler Işlevi, [CPaintDC](reference/cpaintdc-class.md) sınıfının bir cihaz bağlamı nesnesi oluşturarak ve görünüminizin üye işlevini çağırarak iletiye yanıt verir `OnDraw` . Normalde bir geçersiz kılma `OnPaint` işleyici işlevi yazmanız gerekmez.
 
@@ -46,4 +47,4 @@ Yazma hakkında daha fazla örnek için `OnDraw` bkz. [MFC örnekleri](../overvi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Görünümleri Kullanma](using-views.md)
+[Görünümleri kullanma](using-views.md)

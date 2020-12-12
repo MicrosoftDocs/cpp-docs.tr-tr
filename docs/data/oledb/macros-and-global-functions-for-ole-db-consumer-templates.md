@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE DB tüketici şablonları için makrolar ve genel Işlevler'
 title: OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 ms.date: 02/11/2019
 f1_keywords:
@@ -99,12 +100,12 @@ helpviewer_keywords:
 - END_PARAM_MAP macro
 - SET_PARAM_TYPE macro
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
-ms.openlocfilehash: 60f642366589bb13b15665331a81d440322eb13f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fb6e126483690e43ceaf3814f6c288ecfdc69da1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504032"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287079"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonları için Makrolar ve Genel İşlevler
 
@@ -140,7 +141,7 @@ OLE DB tüketici şablonları aşağıdaki makroları ve genel işlevleri içeri
 |[BLOB_NAME_STATUS](#blob_name_status)|BLOB veri sütununun durumunu raporlar.|
 |[BOOKMARK_ENTRY](#bookmark_entry)|Satır kümesindeki bir yer işareti girişini temsil eder. Yer işareti girişi, özel bir sütun girişi türüdür.|
 |[COLUMN_ENTRY](#column_entry)|Veritabanında belirli bir sütuna bağlamayı temsil eder.|
-|[COLUMN_ENTRY_EX](#column_entry_ex)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Tür*, *uzunluk*, *duyarlık*, *Ölçek*ve *durum* parametrelerini destekler.|
+|[COLUMN_ENTRY_EX](#column_entry_ex)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Tür*, *uzunluk*, *duyarlık*, *Ölçek* ve *durum* parametrelerini destekler.|
 |[COLUMN_ENTRY_LENGTH](#column_entry_length)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Uzunluk* değişkenini destekler.|
 |[COLUMN_ENTRY_LENGTH_STATUS](#column_entry_length_status)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Durum* ve *uzunluk* parametrelerini destekler.|
 |[COLUMN_ENTRY_PS](#column_entry_ps)|Veritabanındaki belirli bir sütuna olan bağlamayı temsil eder. *Duyarlık* ve *Ölçek* parametrelerini destekler.|
@@ -298,7 +299,7 @@ END_ACCESSOR_MAP()
 
 Erişimci girişinin sonunu işaretler.
 
-#### <a name="syntax"></a>Sözdizimi
+#### <a name="syntax"></a>Syntax
 
 ```cpp
 END_ACCESSOR()
@@ -316,7 +317,7 @@ Bkz. [BEGIN_ACCESSOR_MAP](#begin_accessor_map).
 
 Erişimci eşleme girdilerinin sonunu işaretler.
 
-#### <a name="syntax"></a>Sözdizimi
+#### <a name="syntax"></a>Syntax
 
 ```cpp
 END_ACCESSOR_MAP()
@@ -1449,7 +1450,7 @@ COLUMN_NAME_ * makroların nerede kullanıldığı hakkında bilgi için bkz. [c
 
 Sütun eşleme girdilerinin sonunu işaretler.
 
-#### <a name="syntax"></a>Sözdizimi
+#### <a name="syntax"></a>Syntax
 
 ```cpp
 END_COLUMN_MAP()
@@ -1549,7 +1550,7 @@ Parametreler [komutları](/previous-versions/windows/desktop/ms724608(v=vs.85))t
 
 Parametre eşleme girdilerinin sonunu işaretler.
 
-#### <a name="syntax"></a>Sözdizimi
+#### <a name="syntax"></a>Syntax
 
 ```cpp
 END_PARAM_MAP()

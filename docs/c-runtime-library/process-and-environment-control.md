@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlem ve ortam denetimi'
 title: Süreç ve Ortam Denetimi
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - environment control routines
 - process control routines
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
-ms.openlocfilehash: ed8d15181a171b4b6a436a3e410a99b48232bc6e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7ba9c81aff87f6cfdf253da6a5d4504bcc59dce5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284582"
 ---
 # <a name="process-and-environment-control"></a>Süreç ve Ortam Denetimi
 
@@ -28,7 +29,7 @@ Bir program içinden işlemleri başlatmak, durdurmak ve yönetmek için işlem 
 |-------------|---------|
 |[durdur](../c-runtime-library/reference/abort.md)|Ya da **atexit** ve **_onexit** tarafından kaydedilen arabellekleri veya çağırma işlevlerini temizlemeye gerek kalmadan işlemi durdur|
 |[vermediğini](../c-runtime-library/reference/assert-macro-assert-wassert.md)|Mantık hatası için test|
-|[_ASSERT _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makrolar|**Onaylama**işlemine benzer ancak çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
+|[_ASSERT _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makrolar|**Onaylama** işlemine benzer ancak çalışma zamanı kitaplıklarının hata ayıklama sürümlerinde kullanılabilir|
 |[atexit](../c-runtime-library/reference/atexit.md)|Program sonlandırmada çalışma yordamlarını zamanlama|
 |[_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)|Windows işletim sistemi işleminde yeni bir iş parçacığı oluşturma|
 |[_cexit](../c-runtime-library/reference/cexit-c-exit.md)|**Çıkış** sonlandırma yordamlarını (Temizleme arabellekleri gibi) gerçekleştirin ve ardından işlemi sonlandırmadan denetimi çağıran programa döndürün|
@@ -43,11 +44,11 @@ Bir program içinden işlemleri başlatmak, durdurmak ve yönetmek için işlem 
 |[_execve, _wexecve](../c-runtime-library/reference/execve-wexecve.md)|Bağımsız değişken dizisi ve verilen ortamla yeni işlem yürütün|
 |[_execvp, _wexecvp](../c-runtime-library/reference/execvp-wexecvp.md)|**Yol** değişkenini ve bağımsız değişken dizisini kullanarak yeni işlem yürütün|
 |[_execvpe, _wexecvpe](../c-runtime-library/reference/execvpe-wexecvpe.md)|**Yol** değişkenini, belirtilen ortamı ve bağımsız değişken dizisini kullanarak yeni işlem yürütün|
-|[çıkıp](../c-runtime-library/reference/exit-exit-exit.md)|**Atexit** ve **_onexit**tarafından kaydedilen çağrı işlevleri, tüm arabellekleri temizler, tüm açık dosyaları kapat ve işlemi Sonlandır|
+|[çıkıp](../c-runtime-library/reference/exit-exit-exit.md)|**Atexit** ve **_onexit** tarafından kaydedilen çağrı işlevleri, tüm arabellekleri temizler, tüm açık dosyaları kapat ve işlemi Sonlandır|
 |[_exit](../c-runtime-library/reference/exit-exit-exit.md)|İşlemi, **atexit** veya **_onexit** veya reçeteye göre sarf arabellekleri olmadan hemen Sonlandır|
 |[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md), [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)|Ortam değişkeninin değerini Al|
 |[_getpid](../c-runtime-library/reference/getpid.md)|İşlem KIMLIĞI numarasını al|
-|[longjmp](../c-runtime-library/reference/longjmp.md)|Kaydedilmiş yığın ortamını geri yükleme; Yerel olarak yürütmek için kullanın**`goto`**|
+|[longjmp](../c-runtime-library/reference/longjmp.md)|Kaydedilmiş yığın ortamını geri yükleme; Yerel olarak yürütmek için kullanın **`goto`**|
 |[_onexit](../c-runtime-library/reference/onexit-onexit-m.md)|Program sonlandırmada çalışma yordamlarını zamanlayın; Microsoft C/C++ sürüm 7,0 ve öncesiyle uyumluluk için kullanın|
 |[_pclose](../c-runtime-library/reference/pclose.md)|Yeni komut işlemcisi için bekleyin ve ilişkili kanalda akışı kapatın|
 |[perror, _wperror](../c-runtime-library/reference/perror-wperror.md)|Yazdırma hatası iletisi|
@@ -55,7 +56,7 @@ Bir program içinden işlemleri başlatmak, durdurmak ve yönetmek için işlem 
 |[_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)|Kanal oluşturma ve yürütme komutu|
 |[_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md), [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)|Ortam değişkeninin değerini ekleme veya değiştirme|
 |[tetikle](../c-runtime-library/reference/raise.md)|Çağırma işlemine sinyal gönder|
-|[setjmp](../c-runtime-library/reference/setjmp.md)|Yığın ortamını Kaydet; Yerel olmayan yürütmek için kullanın**`goto`**|
+|[setjmp](../c-runtime-library/reference/setjmp.md)|Yığın ortamını Kaydet; Yerel olmayan yürütmek için kullanın **`goto`**|
 |[sinyal](../c-runtime-library/reference/signal.md)|Tanıtıcı kesme sinyali|
 |[_spawnl, _wspawnl](../c-runtime-library/reference/spawnl-wspawnl.md)|Belirtilen bağımsız değişken listesiyle yeni işlem oluştur ve Yürüt|
 |[_spawnle, _wspawnle](../c-runtime-library/reference/spawnle-wspawnle.md)|Belirtilen bağımsız değişken listesi ve ortamıyla yeni işlem oluştur ve Çalıştır|
@@ -79,12 +80,12 @@ Windows işletim sisteminde, üretilen işlem, üretilen işlem ile eşdeğerdir
 |---------------|--------------------------------------|----------------------------------|--------------------------|
 |**_execl**, **_spawnl**|Hayır|Liste|Çağıran işlemden devralındı|
 |**_execle**, **_spawnle**|Hayır|Liste|Son bağımsız değişken olarak geçirilen yeni işlem için ortam tablosu işaretçisi|
-|**_execlp**, **_spawnlp**|Yes|Liste|Çağıran işlemden devralındı|
-|**_execvpe**, **_spawnvpe**|Yes|Dizi|Son bağımsız değişken olarak geçirilen yeni işlem için ortam tablosu işaretçisi|
-|**_execlpe**, **_spawnlpe**|Yes|Liste|Son bağımsız değişken olarak geçirilen yeni işlem için ortam tablosu işaretçisi|
+|**_execlp**, **_spawnlp**|Evet|Liste|Çağıran işlemden devralındı|
+|**_execvpe**, **_spawnvpe**|Evet|Dizi|Son bağımsız değişken olarak geçirilen yeni işlem için ortam tablosu işaretçisi|
+|**_execlpe**, **_spawnlpe**|Evet|Liste|Son bağımsız değişken olarak geçirilen yeni işlem için ortam tablosu işaretçisi|
 |**_execv**, **_spawnv**|Hayır|Dizi|Çağıran işlemden devralındı|
 |**_execve**, **_spawnve**|Hayır|Dizi|Son bağımsız değişken olarak geçirilen yeni işlem için ortam tablosu işaretçisi|
-|**_execvp**, **_spawnvp**|Yes|Dizi|Çağıran işlemden devralındı|
+|**_execvp**, **_spawnvp**|Evet|Dizi|Çağıran işlemden devralındı|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

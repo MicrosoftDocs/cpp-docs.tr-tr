@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: eşzamanlılık ad alanı numaralandırmaları (AMP)'
 title: Eşzamanlılık ad alanı sabit listeleri (AMP)
 ms.date: 11/04/2016
 f1_keywords:
 - amp/Concurrency::access_type
 - amp/Concurrency::queuing_mode
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
-ms.openlocfilehash: 3dbb8f265706f7a4c369c80d3050cd1bfd2f5acb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 60f4b325de47a600ee5a28f30ecc4a06fc2082a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284908"
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı sabit listeleri (AMP)
 

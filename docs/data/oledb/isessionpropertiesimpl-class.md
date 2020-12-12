@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ISessionPropertiesImpl Class'
 title: ISessionPropertiesImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
-ms.openlocfilehash: d664f32226498326ffb092f1d3248fbdbf614d50
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6b20331de5419de868d6739a010eb5df1548a94e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287040"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
 
@@ -38,7 +39,7 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
 Sınıfınız, öğesinden türetilir `ISessionPropertiesImpl` .
 
 *PropClass*<br/>
-Varsayılan olarak *T*olarak kullanılacak kullanıcı tanımlı bir özellik sınıfı.
+Varsayılan olarak *T* olarak kullanılacak kullanıcı tanımlı bir özellik sınıfı.
 
 ## <a name="requirements"></a>Gereksinimler
 

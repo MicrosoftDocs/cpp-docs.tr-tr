@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: görüntü listesinden resim çizme'
 title: Resim Listesinden Resim Çizme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-ms.openlocfilehash: 55c16ce5bff102d670e46867e121b0a0a2f304ac
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 2c413092e1e7568488a091acd2b0db175d03dab9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622846"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283465"
 ---
 # <a name="drawing-images-from-an-image-list"></a>Resim Listesinden Resim Çizme
 
@@ -28,7 +29,7 @@ Bir maskelenmiş görüntü listesi ([CImageList](reference/cimagelist-class.md)
 
 Maskelenmiş olmayan bir görüntü, tarama işlemi kullanılarak hedef cihaz bağlamına kopyalanır `SRCCOPY` . Görüntüdeki renkler, cihaz bağlamının arka plan rengine bakılmaksızın aynı görüntülenir. ' De belirtilen çizim stillerinin, `Draw` maskeli olmayan bir görüntünün görünümü üzerinde hiçbir etkisi yoktur.
 
-Çiz üye işlevine ek olarak, başka bir işlev olan [DrawIndirect](reference/cimagelist-class.md#drawindirect), bir görüntüyü işleme yeteneğini genişletir. `DrawIndirect`, bir [IMAGELISTDRAWPARAMS](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) yapısı olan bir parametre olarak alır. Bu yapı, raster işlem (ROP) kodlarının kullanımı da dahil olmak üzere geçerli görüntünün işlenmesini özelleştirmek için kullanılabilir. ROP kodları hakkında daha fazla bilgi için, Windows SDK fırçalar olarak [raster Işlem kodları](/windows/win32/gdi/raster-operation-codes) ve [bit eşlemler](/windows/win32/gdi/bitmaps-as-brushes) bölümüne bakın.
+Çiz üye işlevine ek olarak, başka bir işlev olan [DrawIndirect](reference/cimagelist-class.md#drawindirect), bir görüntüyü işleme yeteneğini genişletir. `DrawIndirect` , bir [IMAGELISTDRAWPARAMS](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) yapısı olan bir parametre olarak alır. Bu yapı, raster işlem (ROP) kodlarının kullanımı da dahil olmak üzere geçerli görüntünün işlenmesini özelleştirmek için kullanılabilir. ROP kodları hakkında daha fazla bilgi için, Windows SDK fırçalar olarak [raster Işlem kodları](/windows/win32/gdi/raster-operation-codes) ve [bit eşlemler](/windows/win32/gdi/bitmaps-as-brushes) bölümüne bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
