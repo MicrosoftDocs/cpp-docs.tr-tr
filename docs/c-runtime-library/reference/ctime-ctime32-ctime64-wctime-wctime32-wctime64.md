@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64'
 title: ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - wctime function
 - time, converting
 ms.assetid: 2423de37-a35c-4f0a-a378-3116bc120a9d
-ms.openlocfilehash: 7dc87f417db93f8ad0d90de1270c19997669fb7c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e50e5dca470b7e764a7b71a596d4c253d023083b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914832"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329305"
 ---
 # <a name="ctime-_ctime32-_ctime64-_wctime-_wctime32-_wctime64"></a>ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64
 
@@ -93,11 +94,11 @@ Karakter dizesi sonucuna yönelik bir işaretçi. Şu durumlarda **null değeri*
 
 - **_Ctime64** veya **_Wctime64** kullanırsanız ve *Sourcetime* 23:59:59, 31 Aralık 3000, UTC 'den sonraki bir tarihi temsil eder.
 
-**CTime** , **_ctime64** değerlendirilen ve **time_t** **__time64_t**eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t**olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T**tanımlayabilirsiniz. Bunu yapmak, **CTime** 'ın **_ctime32**değerlendirmesini sağlar. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
+**CTime** , **_ctime64** değerlendirilen ve **time_t** **__time64_t** eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t** olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T** tanımlayabilirsiniz. Bunu yapmak, **CTime** 'ın **_ctime32** değerlendirmesini sağlar. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**CTime** işlevi, bir [time_t](../../c-runtime-library/standard-types.md) değeri olarak depolanan bir zaman değerini bir karakter dizesine dönüştürür. *Sourcetime* değeri genellikle gece yarısından beri geçen saniye sayısı ( [time](time-time32-time64.md)00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) döndüren bir çağrıdan alınmıştır. Dönüş değeri dizesi tam 26 karakter içerir ve şu biçimdedir:
+**CTime** işlevi, bir [time_t](../../c-runtime-library/standard-types.md) değeri olarak depolanan bir zaman değerini bir karakter dizesine dönüştürür. *Sourcetime* değeri genellikle gece yarısından beri geçen saniye sayısı ( [](time-time32-time64.md)00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) döndüren bir çağrıdan alınmıştır. Dönüş değeri dizesi tam 26 karakter içerir ve şu biçimdedir:
 
 ```Output
 Wed Jan 02 02:03:55 1980\n\0
@@ -107,11 +108,11 @@ Wed Jan 02 02:03:55 1980\n\0
 
 Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Yerel saati yapılandırma hakkında bilgi için [saat](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md)ve [localtime](localtime-localtime32-localtime64.md) işlevlerine ve saat dilimi ortamının ve genel değişkenlerin tanımlanması hakkındaki ayrıntılar için [_tzset](tzset.md) işlevine bakın.
 
-**CTime** çağrısı, **gmtime** ve **localtime** işlevleri tarafından kullanılan tek statik olarak ayrılan arabelleği değiştirir. Bu yordamların birine yapılan her bir çağrı, önceki çağrının sonucunu yok eder. **CTime** , **asctime** işleviyle bir statik arabelleği paylaşır. Bu nedenle, bir **CTime** çağrısı, önceki tüm çağrı sonuçlarını **asctime**, **localtime**veya **gmtime**öğesine yok eder.
+**CTime** çağrısı, **gmtime** ve **localtime** işlevleri tarafından kullanılan tek statik olarak ayrılan arabelleği değiştirir. Bu yordamların birine yapılan her bir çağrı, önceki çağrının sonucunu yok eder. **CTime** , **asctime** işleviyle bir statik arabelleği paylaşır. Bu nedenle, bir **CTime** çağrısı, önceki tüm çağrı sonuçlarını **asctime**, **localtime** veya **gmtime** öğesine yok eder.
 
-**_wctime** ve **_wctime64** , **CTime** ve **_ctime64**'nin geniş karakterli sürümüdür; geniş karakterli dizeye bir işaretçi döndürülüyor. Aksi takdirde, **_ctime64**, **_wctime**ve **_wctime64** **CTime**ile aynı şekilde davranır.
+**_wctime** ve **_wctime64** , **CTime** ve **_ctime64**'nin geniş karakterli sürümüdür; geniş karakterli dizeye bir işaretçi döndürülüyor. Aksi takdirde, **_ctime64**, **_wctime** ve **_wctime64** **CTime** ile aynı şekilde davranır.
 
-Bu işlevler, parametrelerini doğrular. *Sourcetime* null bir işaretçisiyse veya *sourcetime* değeri negatifse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **null** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevler, parametrelerini doğrular. *Sourcetime* null bir işaretçisiyse veya *sourcetime* değeri negatifse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **null** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -127,12 +128,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**CTime**|\<Time. h>|
-|**_ctime32**|\<Time. h>|
-|**_ctime64**|\<Time. h>|
-|**_wctime**|\<Time. h> veya \<wchar. h>|
-|**_wctime32**|\<Time. h> veya \<wchar. h>|
-|**_wctime64**|\<Time. h> veya \<wchar. h>|
+|**CTime**|\<time.h>|
+|**_ctime32**|\<time.h>|
+|**_ctime64**|\<time.h>|
+|**_wctime**|\<time.h> veya \<wchar.h>|
+|**_wctime32**|\<time.h> veya \<wchar.h>|
+|**_wctime64**|\<time.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

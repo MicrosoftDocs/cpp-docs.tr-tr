@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Içeri aktarma kitaplığı ve dışarı aktarma dosyası kullanma'
 title: İçeri Aktarma Kitaplığını ve Dışarı Aktarma Dosyasını Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,27 +7,27 @@ helpviewer_keywords:
 - import libraries, using
 - export files
 ms.assetid: 2634256a-8aa5-4495-8c9e-6cde10e4ed76
-ms.openlocfilehash: 030b792d4bbebecef9d9303238657a564a142ecf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f42a98ebe19cb32fb77964f26c37928776b5b30c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317789"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247026"
 ---
 # <a name="using-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığını ve Dışarı Aktarma Dosyasını Kullanma
 
-İkiden fazla programlar hem vermek ve birbirinden alırsanız, bu programlar bağlamak için komutları dairesel dışarı aktarmalar uyum veya bir program, ayrıca alır başka bir program için (bir yürütülebilir dosya veya bir DLL) verir.
+Bir program (bir yürütülebilir dosya veya DLL), aynı zamanda içeri aktardığı başka bir programa dışarı aktardığında ya da ikiden fazla program her ikisi de dışarı aktarıp içeri aktarıldığında, bu programları bağlama komutları döngüsel dışarı aktarmaları sağlamalıdır.
 
-Dairesel dışarı aktarmalar olmadan bir durumda kullanan bir program bağlama başka bir programdan verdiğinde içeri aktarma kitaplığı verme programı belirtmeniz gerekir. İçeri aktarma kitaplığı verme programı, bu dışarı aktarma programı bağladığınızda oluşturulur. Bu nedenle, içeri aktarma programı önce dışa aktarma programı bağlamanız gerekir. TWO.dll ONE.dll aktarırsa, örneğin, önce ONE.dll bağlamak ve içeri aktarma kitaplığını ONE.lib alın. Ardından, ONE.lib TWO.dll bağlarken belirtin. Bağlayıcı TWO.dll oluşturduğunda, ayrıca TWO.lib, içeri aktarma kitaplığı oluşturur. TWO.dll alma programları bağlantılandırma TWO.lib kullanın.
+Döngüsel dışarı aktarmalar olmadan bir durumda, başka bir programdan dışarı aktarmalar kullanan bir programı bağlarken dışarı aktarma programı için içeri aktarma kitaplığını belirtmeniz gerekir. Dışarı aktarma programı için içeri aktarma kitaplığı, bu dışarı aktarma programını bağladığınızda oluşturulur. Bu nedenle, dışa aktarma programını içe aktarma programından önce bağlamanız gerekir. Örneğin, ONE.dll TWO.dll içeri aktarıldığında, önce ONE.dll bağlamanız ve içeri aktarma kitaplığını BIR. lib almanız gerekir. Sonra, TWO.dll bağlarken BIR. lib belirtirsiniz. Bağlayıcı TWO.dll oluşturduğunda içeri aktarma kitaplığı, ıkı. lib de oluşturulur. TWO.dll içeri aktarılan programları bağlarken ıkı. lib kullanın.
 
-Ancak, döngüsel verme durumunda, bu programlardan içeri aktarma kitaplıkları kullanarak tüm bağımlı programları bağlamak mümkün değildir. TWO.dll ONE.dll için de dışarı aktarır, TWO.dll için içeri aktarma kitaplığı var olmaz henüz ONE.dll bağlı olduğunda daha önce bahsedilen örnekte. Dairesel dışarı aktarmalar varsa, içeri aktarma kitaplığı oluşturma ve programlardan birini dosyasını dışarı aktarmak için LIB kullanmanız gerekir.
+Ancak, döngüsel bir dışarı aktarma durumunda, diğer programlardan içeri aktarma kitaplıklarını kullanarak birbirine bağlı tüm programları bağlamak mümkün değildir. Daha önce açıklanan örnekte, TWO.dll Ayrıca ONE.dll dışarı aktardığında, ONE.dll bağlandığında TWO.dll için içeri aktarma kitaplığı henüz olmaz. Döngüsel dışarı aktarmalar mevcut olduğunda, programlardan biri için bir içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturmak üzere LIB ' i kullanmanız gerekir.
 
-Başlamak için LIB çalıştırılacağı programlardan birini seçin. LIB komutunun tüm nesneleri ve kitaplıkları için program listesi ve /DEF. belirtin Program bir .def dosyası ya da/Export belirtimleri kullanıyorsa, bunlar da belirtin.
+Başlamak için, LıB 'in çalıştırılacağı programlardan birini seçin. LıB komutunda, program için tüm nesneleri ve kitaplıkları listeleyin ve/DEF. belirtin. Program bir. def dosyası ya da/EXPORT belirtimleri kullanıyorsa, bunları da belirtin.
 
-İçeri aktarma kitaplık (.lib) ve dışarı aktarma dosyası (.exp) programı oluşturduktan sonra bir programı veya programları bağlarken içeri aktarma kitaplığını kullanın. BAĞLANTI bir içeri aktarma kitaplığını yapıların her dışarı aktarılırken bir program oluşturur. LIB nesneleri ve dışarı aktarma için ONE.dll çalıştırırsanız, örneğin, ONE.lib ve ONE.exp oluşturun. TWO.dll bağlarken artık ONE.lib kullanabilirsiniz; Bu adım ayrıca TWO.lib içeri aktarma kitaplığı oluşturur.
+Program için içeri aktarma kitaplığını (. lib) ve dışarı aktarma dosyasını (. exp) oluşturduktan sonra, diğer program veya programları bağlarken içeri aktarma kitaplığını kullanırsınız. BAĞLANTı, oluşturduğu her dışarı aktarma programı için bir içeri aktarma kitaplığı oluşturur. Örneğin, nesneler üzerinde LIB çalıştırırsanız ve ONE.dll için dışarı aktardıysanız BIR. LIB ve bır. exp oluşturursunuz. Artık TWO.dll bağlarken BIR. lib kullanabilirsiniz; Bu adım Ayrıca içeri aktarma kitaplığını ıkı. lib de oluşturur.
 
-Son olarak, programın başlamış bağlayın. Bağlantı komut içinde nesneleri ve kitaplıkları LIB program ve içeri aktarma kitaplığı için oluşturulan .exp dosyası program veya program tarafından kullanılan dışarı aktarmaları için kitaplıkları belirtin. Örnek devam etmek için ONE.dll için bağlantı komut ONE.exp ve TWO.lib, yanı sıra nesneleri ve ONE.dll Git kitaplıkları içerir. .Def dosyası ya da/Export belirtimleri bağlantı komutta belirtmeyin; .exp dosyası dışarı aktarma tanımları içerdiğinden bu, gerekli değildir. .Exp dosyası kullanılıyor bağladığınızda, bağlantı içeri aktarma kitaplığı oluşturmaz, bunun varsayar çünkü .exp dosyası oluşturulurken oluşturulmuştur.
+Son olarak, ile başlayan programı bağlayın. BAĞLANTı komutunda, program için nesne ve kitaplıkları, program için LıB 'in oluşturduğu. exp dosyasını ve program tarafından kullanılan dışarı aktarmalar için içeri aktarma kitaplığını veya kitaplıklarını belirtin. Örneğe devam etmek için, ONE.dll için bağlantı komutu BIR. exp ve ıkı. lib içerir, Ayrıca, ONE.dll olan nesne ve kitaplıkları içerir. LINK komutunda. def dosyasını veya/EXPORT belirtimlerini belirtmeyin; dışarı aktarma tanımları. exp dosyasında bulunduğundan bunlar gerekli değildir. Bir. exp dosyası kullanarak bağladığınızda, bağlantı bir içeri aktarma kitaplığı oluşturmaz, çünkü. exp dosyası oluşturulduğunda oluşturulduğu varsayılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](working-with-import-libraries-and-export-files.md)
+[Içeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma](working-with-import-libraries-and-export-files.md)

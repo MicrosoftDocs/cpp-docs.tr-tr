@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _get_dstbias'
 title: _get_dstbias
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - get_dstbias function
 - _get_dstbias function
 ms.assetid: e751358c-1ecc-411b-ae2c-81b2ec54ea45
-ms.openlocfilehash: 845310928ec4707afe15bccc7ff5b979e7da69b6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 00c5cef0e7c1e5e79cbcc2ce37a13e3f56d27029
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919375"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341457"
 ---
 # <a name="_get_dstbias"></a>_get_dstbias
 
@@ -63,9 +64,9 @@ Başarılıysa sıfır veya bir hata oluşursa **errno** değeri.
 
 **_Get_dstbias** işlevi, gün ışığından yararlanma saatine saniye sayısını tamsayı olarak alır. Gün ışığından yararlanma saati etkin ise, varsayılan değer 3600 saniyedir ve bu da bir saatteki saniye sayısıdır (birkaç bölge iki saatlik bir sapmayı gözlemlebilse de).
 
-*Saniyeler* **null**ise, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+*Saniyeler* **null** ise, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL** döndürür.
 
-Makro **_dstbias** veya kullanım dışı işlev **__dstbias**yerine bu işlevi kullanmanızı öneririz.
+Makro **_dstbias** veya kullanım dışı işlev **__dstbias** yerine bu işlevi kullanmanızı öneririz.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -73,7 +74,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_dstbias**|\<Time. h>|
+|**_get_dstbias**|\<time.h>|
 
 Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

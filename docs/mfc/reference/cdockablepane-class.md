@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDockablePane sınıfı'
 title: CDockablePane sınıfı
 ms.date: 07/02/2019
 f1_keywords:
@@ -132,18 +133,18 @@ helpviewer_keywords:
 - CDockablePane [MFC], m_bHideInAutoHideMode
 - CDockablePane [MFC], m_nSlideSteps
 ms.assetid: e2495f4c-765f-48f9-a2e2-e45e47608d91
-ms.openlocfilehash: 08c38419dd1ab8166095b1363ad69d816805614d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: baf205581c61fa26295a533cf04ee1562eb3c675
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212533"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185134"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane sınıfı
 
 Bir dock sitesine yerleştirilmiş ya da sekmeli bir bölmeye dahil olabilecek bir bölme uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDockablePane : public CPane
@@ -247,7 +248,7 @@ class CDockablePane : public CPane
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDockablePane`Aşağıdaki işlevleri uygular:
+`CDockablePane` Aşağıdaki işlevleri uygular:
 
 - Ana çerçeve penceresine bölme yerleştirme.
 
@@ -313,7 +314,7 @@ Aşağıdaki örnek, `CDockablePane` sınıfında çeşitli yöntemler kullanara
 
 **Üstbilgi:** afxDockablePane. h
 
-## <a name="cdockablepaneattachtotabwnd"></a><a name="attachtotabwnd"></a>CDockablePane:: AttachToTabWnd
+## <a name="cdockablepaneattachtotabwnd"></a><a name="attachtotabwnd"></a> CDockablePane:: AttachToTabWnd
 
 Geçerli bölmeyi bir hedef bölmesine iliştirir ve sekmeli bölme oluşturur.
 
@@ -365,7 +366,7 @@ Yerleştirme düzeni oluştururken bir bölmeyi diğerine eklerseniz, `dockMetho
 
 Kendisine başka bir bölme iliştirmadan önce ilk bölmeyi yuvamalısınız.
 
-## <a name="cdockablepanecalcfixedlayout"></a><a name="calcfixedlayout"></a>CDockablePane:: CalcFixedLayout
+## <a name="cdockablepanecalcfixedlayout"></a><a name="calcfixedlayout"></a> CDockablePane:: CalcFixedLayout
 
 Bölme dikdörtgeninin boyutunu döndürür.
 
@@ -387,7 +388,7 @@ virtual CSize CalcFixedLayout(
 
 `CSize`Bölme dikdörtgeninin boyutunu içeren nesne.
 
-## <a name="cdockablepanecanacceptminiframe"></a><a name="canacceptminiframe"></a>CDockablePane:: CanAcceptMiniFrame
+## <a name="cdockablepanecanacceptminiframe"></a><a name="canacceptminiframe"></a> CDockablePane:: CanAcceptMiniFrame
 
 Belirtilen mini karenin bölmesine sabitlenebilir olup olmadığını belirler.
 
@@ -404,7 +405,7 @@ virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;
 
 *Pminiframe* , bölmeye SABITLENEBILIR ise true. Aksi takdirde, FALSE.
 
-## <a name="cdockablepanecanacceptpane"></a><a name="canacceptpane"></a>CDockablePane:: CanAcceptPane
+## <a name="cdockablepanecanacceptpane"></a><a name="canacceptpane"></a> CDockablePane:: CanAcceptPane
 
 Geçerli bölmeye başka bir bölmenin sabitlenebilir olup olmayacağını belirler.
 
@@ -429,7 +430,7 @@ Belirli bir bölmeye yerleştirmeyi etkinleştirmek veya devre dışı bırakmak
 
 Varsayılan olarak, bu yöntem *pBar* veya üst öğesi türünde ise true değerini döndürür `CDockablePane` .
 
-## <a name="cdockablepanecanautohide"></a><a name="canautohide"></a>CDockablePane:: Canotomatik gizle
+## <a name="cdockablepanecanautohide"></a><a name="canautohide"></a> CDockablePane:: Canotomatik gizle
 
 Bölmenin otomatik olarak gizleyemeyeceğini belirler.
 
@@ -443,7 +444,7 @@ Bölme otomatik olarak gizleyebiliyorsa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDockablePane::CanAutoHide`Aşağıdaki durumların herhangi birinde FALSE döndürür:
+`CDockablePane::CanAutoHide` Aşağıdaki durumların herhangi birinde FALSE döndürür:
 
 - Bölmenin üst öğesi yok.
 
@@ -451,7 +452,7 @@ Bölme otomatik olarak gizleyebiliyorsa TRUE; Aksi takdirde, FALSE.
 
 - Bölme sabitlenmiş değil.
 
-## <a name="cdockablepanecanbeattached"></a><a name="canbeattached"></a>CDockablePane:: Canbeekli
+## <a name="cdockablepanecanbeattached"></a><a name="canbeattached"></a> CDockablePane:: Canbeekli
 
 Geçerli bölmenin başka bir bölmeye sabitlenebilir olup olmayacağını belirler.
 
@@ -467,7 +468,7 @@ Yerleştirilebilir bölmesi başka bir bölmeye veya ana çerçeve penceresine s
 
 Varsayılan olarak, bu yöntem her zaman TRUE değerini döndürür. [CBasePane:: EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking)çağrılmadan yerleştirmeyi etkinleştirmek veya devre dışı bırakmak için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-## <a name="cdockablepanecdockablepane"></a><a name="cdockablepane"></a>CDockablePane:: CDockablePane
+## <a name="cdockablepanecdockablepane"></a><a name="cdockablepane"></a> CDockablePane:: CDockablePane
 
 Bir [CDockablePane](../../mfc/reference/cdockablepane-class.md) nesnesi oluşturur ve başlatır.
 
@@ -479,7 +480,7 @@ CDockablePane();
 
 Bir yerleştirilebilir bölmesi nesnesi oluşturduktan sonra, oluşturmak için [CDockablePane:: Create](#create) veya [CDockablePane:: CreateEx](#createex) öğesini çağırın.
 
-## <a name="cdockablepaneconverttotabbeddocument"></a><a name="converttotabbeddocument"></a>CDockablePane:: ConvertToTabbedDocument
+## <a name="cdockablepaneconverttotabbeddocument"></a><a name="converttotabbeddocument"></a> CDockablePane:: ConvertToTabbedDocument
 
 Bir veya daha fazla yerleştirilebilir bölmesini MDI sekmeli belgelerine dönüştürür.
 
@@ -492,7 +493,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 *yalnızca bactivetab*<br/>
 'ndaki A dönüştürdüğünüzde `CTabbedPane` , yalnızca etkin sekmesini dönüştürmek IÇIN TRUE değerini belirtin. bölmedeki tüm sekmeleri dönüştürmek IÇIN false belirtin.
 
-## <a name="cdockablepanecheckautohidecondition"></a><a name="checkautohidecondition"></a>CDockablePane:: CheckAutoHideCondition
+## <a name="cdockablepanecheckautohidecondition"></a><a name="checkautohidecondition"></a> CDockablePane:: CheckAutoHideCondition
 
 Takma bölmesinin gizli olup olmadığını belirler (otomatik gizleme modu olarak da bilinir).
 
@@ -510,7 +511,7 @@ Gizleme koşulu karşılanırsa doğru; Aksi takdirde, FALSE.
 
 Önceki koşulların tümü karşılanıyorsa Framework, bölmeyi gizlemek için [CDockablePane:: Slide](#slide) ' ı çağırır.
 
-## <a name="cdockablepanecheckstopslidecondition"></a><a name="checkstopslidecondition"></a>CDockablePane:: Checkstopslaytkoşulu
+## <a name="cdockablepanecheckstopslidecondition"></a><a name="checkstopslidecondition"></a> CDockablePane:: Checkstopslaytkoşulu
 
 Otomatik gizleme yerleştirme bölmesinin kayan durması gerektiğini belirler.
 
@@ -529,11 +530,11 @@ Durdurma koşulu karşılanırsa doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirilebilir bölmesi otomatik gizleme moduna ayarlandığında, çerçeve bölmeyi göstermek veya gizlemek için kayan etkileri kullanır. Bölmesi kayan olduğunda Framework bu işlevi çağırır. `CheckStopSlideCondition`bölme tamamen görünür olduğunda veya tamamen gizli olduğunda TRUE döndürür.
+Yerleştirilebilir bölmesi otomatik gizleme moduna ayarlandığında, çerçeve bölmeyi göstermek veya gizlemek için kayan etkileri kullanır. Bölmesi kayan olduğunda Framework bu işlevi çağırır. `CheckStopSlideCondition` bölme tamamen görünür olduğunda veya tamamen gizli olduğunda TRUE döndürür.
 
 Özel otomatik gizleme efektleri uygulamak için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-## <a name="cdockablepanecopystate"></a><a name="copystate"></a>CDockablePane:: CopyState
+## <a name="cdockablepanecopystate"></a><a name="copystate"></a> CDockablePane:: CopyState
 
 Bir yerleştirilebilir bölmesinin durumunu kopyalar.
 
@@ -548,7 +549,7 @@ virtual void CopyState(CDockablePane* pOrgBar);
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CDockablePane::CopyState`Aşağıdaki yöntemleri çağırarak *pOrgBar* durumunu geçerli bölmeye kopyalar:
+`CDockablePane::CopyState` Aşağıdaki yöntemleri çağırarak *pOrgBar* durumunu geçerli bölmeye kopyalar:
 
 - [CPane:: CopyState](../../mfc/reference/cpane-class.md#copystate)
 
@@ -560,7 +561,7 @@ virtual void CopyState(CDockablePane* pOrgBar);
 
 - [CDockablePane:: IsAutohideAllEnabled](#isautohideallenabled)
 
-## <a name="cdockablepanecreate"></a><a name="create"></a>CDockablePane:: Create
+## <a name="cdockablepanecreate"></a><a name="create"></a> CDockablePane:: Create
 
 Windows denetimini oluşturur ve [CDockablePane](../../mfc/reference/cdockablepane-class.md) nesnesine iliştirir.
 
@@ -596,7 +597,7 @@ virtual BOOL Create(
 [in, out] Üst pencereyi belirtir.
 
 *Rect*<br/>
-'ndaki *PParentWnd*istemci koordinatlarındaki pencerenin boyutunu ve konumunu belirtir.
+'ndaki *PParentWnd* istemci koordinatlarındaki pencerenin boyutunu ve konumunu belirtir.
 
 *Bhaskavrayıcı*<br/>
 'ndaki Bir açıklamalı alt yazı ile bölme oluşturmak için TRUE; Aksi takdirde, FALSE.
@@ -634,7 +635,7 @@ Bir Windows bölmesi oluşturur ve `CDockablePane` nesneye ekler.
 
 *DwTabbedStyle* parametresinde AFX_CBRS_OUTLOOK_TABS bayrağı belirtilmişse, bu bölmeye [CDockablePane:: AttachToTabWnd](#attachtotabwnd) yöntemi kullanılarak başka bir bölme eklendiğinde, bölmesi Outlook stili sekmeli bölmeler oluşturur. Varsayılan olarak, yerleştirilebilir bölmeleri [CTabbedPane](../../mfc/reference/ctabbedpane-class.md)türünde normal sekmeli bölmeler oluşturur.
 
-## <a name="cdockablepanecreatedefaultpanedivider"></a><a name="createdefaultpanedivider"></a>CDockablePane:: CreateDefaultPaneDivider
+## <a name="cdockablepanecreatedefaultpanedivider"></a><a name="createdefaultpanedivider"></a> CDockablePane:: CreateDefaultPaneDivider
 
 Bir çerçeve penceresine yerleştirilmiş olduğu için bölme için varsayılan bir ayırıcı oluşturur.
 
@@ -671,7 +672,7 @@ Bu yöntem, yeni oluşturulan ayırıcıyı gösteren bir işaretçi veya ayır�
 |CBRS_ALIGN_LEFT|Bölmesi, bir çerçeve penceresinin istemci alanının sol tarafına yerleştirildi.|
 |CBRS_ALIGN_RIGHT|Bölmesi, bir çerçeve penceresinin istemci alanının sağ tarafına yerleştirildi.|
 
-## <a name="cdockablepanecreateex"></a><a name="createex"></a>CDockablePane:: CreateEx
+## <a name="cdockablepanecreateex"></a><a name="createex"></a> CDockablePane:: CreateEx
 
 Windows denetimini oluşturur ve [CDockablePane](../../mfc/reference/cdockablepane-class.md) nesnesine iliştirir.
 
@@ -701,7 +702,7 @@ virtual BOOL CreateEx(
 [in, out] Üst pencereyi belirtir.
 
 *Rect*<br/>
-'ndaki *PParentWnd*istemci koordinatlarındaki pencerenin boyutunu ve konumunu belirtir.
+'ndaki *PParentWnd* istemci koordinatlarındaki pencerenin boyutunu ve konumunu belirtir.
 
 *Bhaskavrayıcı*<br/>
 'ndaki Bir açıklamalı alt yazı ile bölme oluşturmak için TRUE; Aksi takdirde, FALSE.
@@ -733,7 +734,7 @@ Bir Windows bölmesi oluşturur ve `CDockablePane` nesneye ekler.
 
 *DwTabbedStyle* parametresinde AFX_CBRS_OUTLOOK_TABS bayrağı belirtilmişse, bu bölmeye [CDockablePane:: AttachToTabWnd](#attachtotabwnd) yöntemi kullanılarak başka bir bölme eklendiğinde, bölmesi Outlook stili sekmeli bölmeler oluşturur. Varsayılan olarak, yerleştirilebilir bölmeleri [CTabbedPane](../../mfc/reference/ctabbedpane-class.md)türünde normal sekmeli bölmeler oluşturur.
 
-## <a name="cdockablepanecreatetabbedpane"></a><a name="createtabbedpane"></a>CDockablePane:: CreateTabbedPane
+## <a name="cdockablepanecreatetabbedpane"></a><a name="createtabbedpane"></a> CDockablePane:: CreateTabbedPane
 
 Geçerli bölmeden sekmeli bir bölme oluşturur.
 
@@ -753,7 +754,7 @@ Sekmeli bölmelerin oluşturulup başlatıldığını özelleştirmek için tür
 
 Sekmeli bölme, `m_pTabbedControlBarRTC` [CDockablePane:: CreateEx](#createex) yöntemi tarafından başlatılan üyede saklanan çalışma zamanı sınıf bilgilerine göre oluşturulur.
 
-## <a name="cdockablepanedockpanecontainer"></a><a name="dockpanecontainer"></a>CDockablePane::D Ockbölmesi kapsayıcısı
+## <a name="cdockablepanedockpanecontainer"></a><a name="dockpanecontainer"></a> CDockablePane::D Ockbölmesi kapsayıcısı
 
 Bölmeye bir kapsayıcı noktaları.
 
@@ -790,7 +791,7 @@ Kapsayıcı bölmeye başarıyla yerleştirilmişse doğru; Aksi takdirde, FALSE
 |CBRS_ALIGN_LEFT|Kapsayıcı bölmenin soluna yerleştirildi.|
 |CBRS_ALIGN_RIGHT|Kapsayıcı, bölmenin sağına yerleştirildi.|
 
-## <a name="cdockablepanedockpanestandard"></a><a name="dockpanestandard"></a>CDockablePane::D Ockbölmesi standardı
+## <a name="cdockablepanedockpanestandard"></a><a name="dockpanestandard"></a> CDockablePane::D Ockbölmesi standardı
 
 Ana hat (Standart) yerleştirmeyi kullanarak bir bölmeyi yuvaya yerleştirme.
 
@@ -807,7 +808,7 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 
 Bölme sekmeli bir pencereye yerleştirilmişse veya bir sekmeli pencere, yerleştirme sonucu olarak oluşturulduysa, bu yöntem sekmeli pencereye bir işaretçi döndürür. Bölme Aksi halde başarıyla yerleştirilmişse, bu yöntem **`this`** işaretçiyi döndürür. Yerleştirme başarısız olursa, bu yöntem NULL döndürür.
 
-## <a name="cdockablepanedocktorecentpos"></a><a name="docktorecentpos"></a>CDockablePane::D ockToRecentPos
+## <a name="cdockablepanedocktorecentpos"></a><a name="docktorecentpos"></a> CDockablePane::D ockToRecentPos
 
 Bir bölmeyi depolanan yerleştirme konumuna göre oluşturma.
 
@@ -823,7 +824,7 @@ Bölme başarıyla yerleştirilmişse doğru; Aksi takdirde, FALSE.
 
 Dockable bölmeler, son yerleştirme bilgilerini bir [CRecentDockSiteInfo](../../mfc/reference/crecentdocksiteinfo-class.md) nesnesinde depolar.
 
-## <a name="cdockablepanedocktowindow"></a><a name="docktowindow"></a>CDockablePane::D ockToWindow
+## <a name="cdockablepanedocktowindow"></a><a name="docktowindow"></a> CDockablePane::D ockToWindow
 
 Bir yerleştirme bölmesini başka bir yerleştirme bölmesine yaslama.
 
@@ -851,9 +852,9 @@ Bölme başarıyla yerleştirilmişse doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir bölmeyi *dwhizalaması*tarafından belirtilen hizalamayla birlikte başka bir bölmeye sabitlemek için bu yöntemi çağırın.
+Bir bölmeyi *dwhizalaması* tarafından belirtilen hizalamayla birlikte başka bir bölmeye sabitlemek için bu yöntemi çağırın.
 
-## <a name="cdockablepanedrawcaption"></a><a name="drawcaption"></a>CDockablePane::D rawCaption
+## <a name="cdockablepanedrawcaption"></a><a name="drawcaption"></a> CDockablePane::D rawCaption
 
 Takma bölmesinin başlığını (kavrayıcı olarak da bilinir) çizer.
 
@@ -877,7 +878,7 @@ Framework, bir yerleştirilebilir bölmesinin başlığını çizmek için bu y�
 
 Başlık görünümünü özelleştirmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-## <a name="cdockablepaneenableautohideall"></a><a name="enableautohideall"></a>CDockablePane:: Enableoto Hideall
+## <a name="cdockablepaneenableautohideall"></a><a name="enableautohideall"></a> CDockablePane:: Enableoto Hideall
 
 Bu bölme ve kapsayıcıdaki diğer bölmeler için otomatik gizleme modunu etkinleştirilir veya devre dışı bırakır.
 
@@ -896,7 +897,7 @@ Bir Kullanıcı **CTRL** tuşunu basılı tutarken bir bölmeyi otomatik gizleme
 
 Bu özelliği belirli bir bölme için devre dışı bırakmak üzere *bEnable* ayarını false olarak çağırın.
 
-## <a name="cdockablepaneenablegripper"></a><a name="enablegripper"></a>CDockablePane:: Enablekavrayıcı
+## <a name="cdockablepaneenablegripper"></a><a name="enablegripper"></a> CDockablePane:: Enablekavrayıcı
 
 Açıklamalı alt yazı başlığını (kavrayıcı olarak da bilinir) gösterir veya gizler.
 
@@ -915,7 +916,7 @@ virtual void EnableGripper(BOOL bEnable);
 
 Resim yazısını istediğiniz zaman gösterebilir veya gizleyebilirsiniz. Bir bölme sekmeli pencereye sekme olarak eklendiğinde veya bir bölme bir mini iframe penceresinde kaydırılır olduğunda çerçeve, başlığı gizler.
 
-## <a name="cdockablepanegetahrestoredrect"></a><a name="getahrestoredrect"></a>CDockablePane:: GetAHRestoredRect
+## <a name="cdockablepanegetahrestoredrect"></a><a name="getahrestoredrect"></a> CDockablePane:: GetAHRestoredRect
 
 Otomatik gizleme modundayken bölmenin konumunu belirtir.
 
@@ -929,7 +930,7 @@ CRect GetAHRestoredRect() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockablepanegetahslidemode"></a><a name="getahslidemode"></a>CDockablePane:: GetAHSlideMode
+## <a name="cdockablepanegetahslidemode"></a><a name="getahslidemode"></a> CDockablePane:: GetAHSlideMode
 
 Bölme için otomatik gizlemeyi kaydır modunu alır.
 
@@ -943,7 +944,7 @@ Bölme için otomatik gizleme slayt modunu belirten bir UINT. Dönüş değeri A
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockablepanegetcaptionheight"></a><a name="getcaptionheight"></a>CDockablePane:: GetCaptionHeight
+## <a name="cdockablepanegetcaptionheight"></a><a name="getcaptionheight"></a> CDockablePane:: GetCaptionHeight
 
 Geçerli başlığın piksel cinsinden yüksekliğini döndürür.
 
@@ -959,7 +960,7 @@ Resim yazısının piksel cinsinden yüksekliği.
 
 Açıklamalı alt yazı, [CDockablePane:: Enablekavrayıcı](#enablegripper) yöntemi tarafından gizliyse veya bölmenin bir açıklamalı alt yazı yoksa başlık yüksekliği 0 ' dır.
 
-## <a name="cdockablepanegetdefaultpanedivider"></a><a name="getdefaultpanedivider"></a>CDockablePane:: GetDefaultPaneDivider
+## <a name="cdockablepanegetdefaultpanedivider"></a><a name="getdefaultpanedivider"></a> CDockablePane:: GetDefaultPaneDivider
 
 Bölmenin kapsayıcısı için varsayılan bölme ayracını döndürür.
 
@@ -975,7 +976,7 @@ Geçerli bir [CPaneDivider](../../mfc/reference/cpanedivider-class.md) nesnesi, 
 
 Bölme bölücüleri hakkında daha fazla bilgi için bkz. [CPaneDivider sınıfı](../../mfc/reference/cpanedivider-class.md).
 
-## <a name="cdockablepanegetdockingstatus"></a><a name="getdockingstatus"></a>CDockablePane:: GetDockingStatus
+## <a name="cdockablepanegetdockingstatus"></a><a name="getdockingstatus"></a> CDockablePane:: GetDockingStatus
 
 Bir bölmenin, belirtilen işaretçi konumuna göre yerleştirilme yeteneğini belirler.
 
@@ -1012,7 +1013,7 @@ Kayan araç çubukları veya DT_IMMEDIATE yerleştirme modunu kullanan yerleşti
 
 Gecikmeli yerleştirme durumları (CS_DELAY_DOCK ve CS_DELAY_DOCK_TO_TAB) için, çerçeve Kullanıcı fare düğmesini yükleyene kadar yerleştirme yapmaz. Bir bölme DT_STANDARD yerleştirme modunu kullanıyorsa, çerçeve öngörülen yerleştirme konumunda bir dikdörtgen görüntüler. Bir bölme DT_SMART yerleştirme modunu kullanıyorsa, çerçeve, tahmini yerleştirme konumunda akıllı yerleştirme işaretçilerini ve yarı saydam dikdörtgenler görüntüler. Bölmenizi yerleştirme modunu belirtmek için [CBasePane:: SetDockingMode](../../mfc/reference/cbasepane-class.md#setdockingmode) metodunu çağırın. Akıllı yerleştirme hakkında daha fazla bilgi için bkz. [CDockingManager:: GetSmartDockingParams](../../mfc/reference/cdockingmanager-class.md#getsmartdockingparams).
 
-## <a name="cdockablepanegetdragsensitivity"></a><a name="getdragsensitivity"></a>CDockablePane:: Getdragduyarlılık
+## <a name="cdockablepanegetdragsensitivity"></a><a name="getdragsensitivity"></a> CDockablePane:: Getdragduyarlılık
 
 Takma bölmesinin sürükleme hassasiyetini döndürür.
 
@@ -1024,7 +1025,7 @@ static const CSize& GetDragSensitivity();
 
 Bir sürükleme noktasına ortalanmış bir dikdörtgenin Genişlik ve yüksekliğini piksel cinsinden içeren [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesi. Sürükleme işlemi, fare işaretçisi bu dikdörtgenin dışına çıkana kadar başlamaz.
 
-## <a name="cdockablepanegetlastpercentinpanecontainer"></a><a name="getlastpercentinpanecontainer"></a>CDockablePane:: Getlastyüztinpane kapsayıcısı
+## <a name="cdockablepanegetlastpercentinpanecontainer"></a><a name="getlastpercentinpanecontainer"></a> CDockablePane:: Getlastyüztinpane kapsayıcısı
 
 Bir bölmenin kapsayıcıda kapladığı alanın yüzdesini alır ( [CPane kapsayıcı sınıfı](../../mfc/reference/cpanecontainer-class.md)).
 
@@ -1040,7 +1041,7 @@ Bölmenin kapsayıcıda kapladığı alanın yüzdesini belirten bir *int* .
 
 Kapsayıcı kendi yerleşimini ayarladığınızda bu yöntem kullanılır.
 
-## <a name="cdockablepanegettabarea"></a><a name="gettabarea"></a>CDockablePane:: GetTabArea
+## <a name="cdockablepanegettabarea"></a><a name="gettabarea"></a> CDockablePane:: GetTabArea
 
 Bölmenin sekme alanını alır.
 
@@ -1062,7 +1063,7 @@ virtual void GetTabArea(
 
 Bu yöntem yalnızca ' den türetilmiş `CDockablePane` ve sekmeleri olan sınıflarda kullanılır. Daha fazla bilgi için bkz. [CTabbedPane:: GetTabArea](../../mfc/reference/ctabbedpane-class.md#gettabarea) ve [CMFCOutlookBar:: GetTabArea](../../mfc/reference/cmfcoutlookbar-class.md#gettabarea).
 
-## <a name="cdockablepanegettabbedpanertc"></a><a name="gettabbedpanertc"></a>CDockablePane:: GetTabbedPaneRTC
+## <a name="cdockablepanegettabbedpanertc"></a><a name="gettabbedpanertc"></a> CDockablePane:: GetTabbedPaneRTC
 
 Geçerli bölmeye başka bir bölme ayrıldığında oluşturulan sekmeli pencereyle ilgili çalışma zamanı sınıfı bilgilerini döndürür.
 
@@ -1080,7 +1081,7 @@ Dinamik olarak oluşturulan sekmeli Bölmelerle ilgili çalışma zamanı sını
 
 [CDockablePane:: SetTabbedPaneRTC](#settabbedpanertc) yöntemini çağırarak çalışma zamanı sınıfı bilgilerini ayarlayabilirsiniz.
 
-## <a name="cdockablepanehasautohidemode"></a><a name="hasautohidemode"></a>CDockablePane:: HasAutoHideMode
+## <a name="cdockablepanehasautohidemode"></a><a name="hasautohidemode"></a> CDockablePane:: HasAutoHideMode
 
 Takma bölmesinin otomatik gizleme moduna geçirilip geçirilemeyeceğini belirtir.
 
@@ -1096,7 +1097,7 @@ Yerleştirilebilir bölmesi otomatik gizleme moduna geçirilebiliyorsa true; Aks
 
 Belirli bir yerleştirilebilir bölmesi için otomatik gizleme modunu devre dışı bırakmak için bu yöntemi türetilmiş bir sınıfta geçersiz kılın.
 
-## <a name="cdockablepanehittest"></a><a name="hittest"></a>CDockablePane:: HitTest
+## <a name="cdockablepanehittest"></a><a name="hittest"></a> CDockablePane:: HitTest
 
 Kullanıcının fareyle tıkladığı bir bölmedeki konumu belirtir.
 
@@ -1128,7 +1129,7 @@ Aşağıdaki değerlerden biri:
 
 - *Nokta* , sabitle düğmesidir.
 
-## <a name="cdockablepaneisautohideallenabled"></a><a name="isautohideallenabled"></a>CDockablePane:: IsAutohideAllEnabled
+## <a name="cdockablepaneisautohideallenabled"></a><a name="isautohideallenabled"></a> CDockablePane:: IsAutohideAllEnabled
 
 Sabitleme bölmesinin ve kapsayıcıdaki diğer tüm bölmelerin otomatik gizleme moduna geçirilip geçirilemeyeceğini gösterir.
 
@@ -1146,7 +1147,7 @@ Kullanıcı, **CTRL** tuşunu basılı tutarken sabitleme düğmesine tıklayara
 
 Bu davranışı etkinleştirmek veya devre dışı bırakmak için [CDockablePane:: Enableoto Hideall](#enableautohideall) yöntemini çağırın.
 
-## <a name="cdockablepaneisautohidemode"></a><a name="isautohidemode"></a>CDockablePane:: ısoto Hidemode
+## <a name="cdockablepaneisautohidemode"></a><a name="isautohidemode"></a> CDockablePane:: ısoto Hidemode
 
 Bir bölmenin otomatik gizleme modunda olup olmadığını belirler.
 
@@ -1158,7 +1159,7 @@ virtual BOOL IsAutoHideMode() const;
 
 Yerleştirilebilir bölmesi otomatik gizleme modundaysa doğru; Aksi takdirde, FALSE.
 
-## <a name="cdockablepaneisdocked"></a><a name="isdocked"></a>CDockablePane:: ısınyerleştirildi
+## <a name="cdockablepaneisdocked"></a><a name="isdocked"></a> CDockablePane:: ısınyerleştirildi
 
 Geçerli bölmenin yerleştirilmiş olup olmadığını belirler.
 
@@ -1174,7 +1175,7 @@ Yerleştirilebilir bölmesi bir mini iframe penceresine ait değilse veya bir mi
 
 Bölmenin ana çerçeve penceresine yerleştirilmiş olup olmadığını anlamak için [CDockablePane:: GetDefaultPaneDivider](#getdefaultpanedivider)çağırın. Yöntem NULL olmayan bir işaretçi döndürürse, bölmesi ana çerçeve penceresine yerleştirilir.
 
-## <a name="cdockablepaneishideinautohidemode"></a><a name="ishideinautohidemode"></a>CDockablePane:: ıshideınoto Hidemode
+## <a name="cdockablepaneishideinautohidemode"></a><a name="ishideinautohidemode"></a> CDockablePane:: ıshideınoto Hidemode
 
 [CDockablePane:: ShowPane](#showpane)çağırarak, otomatik gizleme modundaki bir bölmenin davranışını (veya gizli) belirler.
 
@@ -1194,7 +1195,7 @@ Ayrı bölmeler için varsayılan davranışı değiştirmek üzere türetilmiş
 
 İçin varsayılan değer `m_bHideInAutoHideMode` false 'dur.
 
-## <a name="cdockablepaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a>CDockablePane:: ısinfloatingmultipane Framewnd
+## <a name="cdockablepaneisinfloatingmultipaneframewnd"></a><a name="isinfloatingmultipaneframewnd"></a> CDockablePane:: ısinfloatingmultipane Framewnd
 
 Bölmenin çok bölgeli bir çerçeve penceresinde ( [Cmultipane Framewnd sınıfı](../../mfc/reference/cmultipaneframewnd-class.md)) olup olmadığını belirtir.
 
@@ -1208,7 +1209,7 @@ Bölme çok bölgeli bir çerçeve penceresinde ise doğru; Aksi takdirde, FALSE
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockablepaneisresizable"></a><a name="isresizable"></a>CDockablePane:: ısyeniden boyutlandırılabilir
+## <a name="cdockablepaneisresizable"></a><a name="isresizable"></a> CDockablePane:: ısyeniden boyutlandırılabilir
 
 Bölmenin yeniden boyutlandırılabilir olup olmadığını belirtir.
 
@@ -1226,7 +1227,7 @@ Varsayılan olarak, yerleştirilebilir bölmeleri yeniden boyutlandırılabilir.
 
 Yeniden boyutlandırılanmayacak bölmeler, otomatik gizleme moduna girmez veya giremez ve her zaman üst çerçevenin dış kenarında bulunur.
 
-## <a name="cdockablepaneistablocationbottom"></a><a name="istablocationbottom"></a>CDockablePane:: ıstablocationbottom
+## <a name="cdockablepaneistablocationbottom"></a><a name="istablocationbottom"></a> CDockablePane:: ıstablocationbottom
 
 Sekmelerin, bölmenin en üstünde veya altında olup olmadığını belirtir.
 
@@ -1242,7 +1243,7 @@ Sekmelerin bölmenin altında yer alıyorsa TRUE; Bölmenin en üstünde sekmele
 
 Daha fazla bilgi için bkz. [CTabbedPane:: ıstablocationbottom](../../mfc/reference/ctabbedpane-class.md#istablocationbottom).
 
-## <a name="cdockablepaneistracked"></a><a name="istracked"></a>CDockablePane:: Istraılenmiş
+## <a name="cdockablepaneistracked"></a><a name="istracked"></a> CDockablePane:: Istraılenmiş
 
 Bir bölmenin Kullanıcı tarafından taşınıp taşınmadığını belirtir.
 
@@ -1254,7 +1255,7 @@ BOOL IsTracked() const;
 
 Bölme taşınmakta ise doğru; Aksi takdirde, FALSE.
 
-## <a name="cdockablepaneisvisible"></a><a name="isvisible"></a>CDockablePane:: IsVisible
+## <a name="cdockablepaneisvisible"></a><a name="isvisible"></a> CDockablePane:: IsVisible
 
 Geçerli bölmenin görünür olup olmadığını belirler.
 
@@ -1276,7 +1277,7 @@ Yerleştirilebilir bölmesi otomatik gizleme modundaysa ve `IsHideInAutoHideMode
 
 Yerleştirilebilir bölmesi otomatik gizleme modunda değilse, görünürlük durumu [CBasePane:: IsVisible](../../mfc/reference/cbasepane-class.md#isvisible) yöntemi tarafından belirlenir.
 
-## <a name="---cdockablepaneloadstate"></a>##  <a name="loadstate"></a>CDockablePane:: LoadState
+## <a name="---cdockablepaneloadstate"></a>##  <a name="loadstate"></a> CDockablePane:: LoadState
 
 Yalnızca dahili kullanım içindir. Daha ayrıntılı bilgi için Visual Studio yüklemenizin VC\atlmfc\src\mfc klasöründe bulunan kaynak koduna bakın.
 
@@ -1288,7 +1289,7 @@ virtual BOOL LoadState(
 );
 ```
 
-## <a name="cdockablepanem_bdisableanimation"></a><a name="m_bdisableanimation"></a>CDockablePane:: m_bDisableAnimation
+## <a name="cdockablepanem_bdisableanimation"></a><a name="m_bdisableanimation"></a> CDockablePane:: m_bDisableAnimation
 
 Yerleştirilebilir bölmesinin otomatik gizleme animasyonunun devre dışı bırakılıp bırakılmadığını belirtir.
 
@@ -1296,7 +1297,7 @@ Yerleştirilebilir bölmesinin otomatik gizleme animasyonunun devre dışı bır
 AFX_IMPORT_DATA static BOOL m_bDisableAnimation;
 ```
 
-## <a name="cdockablepanem_bhideinautohidemode"></a><a name="m_bhideinautohidemode"></a>CDockablePane:: m_bHideInAutoHideMode
+## <a name="cdockablepanem_bhideinautohidemode"></a><a name="m_bhideinautohidemode"></a> CDockablePane:: m_bHideInAutoHideMode
 
 Bölme gizleme modundayken bölmenin davranışını belirler.
 
@@ -1312,7 +1313,7 @@ Bu üyeyi true olarak ayarlarsanız, yerleştirilebilir bölmeleri gizlenir veya
 
 Bu üyeyi false olarak ayarlarsanız, [CDockablePane:: ShowPane](#showpane)' ı çağırdığınızda yerleştirilebilir bölmeleri etkinleştirilir veya devre dışı bırakılır.
 
-## <a name="cdockablepanem_nslidesteps"></a><a name="m_nslidesteps"></a>CDockablePane:: m_nSlideSteps
+## <a name="cdockablepanem_nslidesteps"></a><a name="m_nslidesteps"></a> CDockablePane:: m_nSlideSteps
 
 Pencere gizleme modundayken bölmenin animasyon hızını belirtir.
 
@@ -1324,7 +1325,7 @@ AFX_IMPORT_DATA static int m_nSlideSteps;
 
 Daha hızlı bir animasyon efekti için bu değeri azaltın. Daha yavaş bir animasyon efekti için bu değeri arttırın.
 
-## <a name="cdockablepaneonafterchangeparent"></a><a name="onafterchangeparent"></a>CDockablePane:: OnAfterChangeParent
+## <a name="cdockablepaneonafterchangeparent"></a><a name="onafterchangeparent"></a> CDockablePane:: OnAfterChangeParent
 
 Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
@@ -1338,7 +1339,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockablepaneonafterdockfromminiframe"></a><a name="onafterdockfromminiframe"></a>CDockablePane:: OnAfterDockFromMiniFrame
+## <a name="cdockablepaneonafterdockfromminiframe"></a><a name="onafterdockfromminiframe"></a> CDockablePane:: OnAfterDockFromMiniFrame
 
 Bir çerçeve penceresinde kayan bir yerleştirme çubuğu noktaları olduğunda Framework tarafından çağırılır.
 
@@ -1350,7 +1351,7 @@ virtual void OnAfterDockFromMiniFrame();
 
 Varsayılan olarak, bu yöntem hiçbir şey yapmaz.
 
-## <a name="cdockablepaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a>CDockablePane:: OnBeforeChangeParent
+## <a name="cdockablepaneonbeforechangeparent"></a><a name="onbeforechangeparent"></a> CDockablePane:: OnBeforeChangeParent
 
 Framework, bölmenin üst öğesini değiştirmeden önce bu yöntemi çağırır.
 
@@ -1374,7 +1375,7 @@ Bölme yerleştirilmişse ve yeni üst öğe yerleştirme yapmasına izin vermed
 
 Bölmesi sekmeli bir belgeye dönüştürülürse, bu yöntem son yerleştirme konumunu depolar. Çerçeve sabitlenmiş bir duruma dönüştürüldüğünde bölmenin konumunu geri yüklemek için son yerleştirme konumunu kullanır.
 
-## <a name="cdockablepaneonbeforefloat"></a><a name="onbeforefloat"></a>CDockablePane:: OnBeforeFloat
+## <a name="cdockablepaneonbeforefloat"></a><a name="onbeforefloat"></a> CDockablePane:: OnBeforeFloat
 
 Çerçeve, bir bölme bir kayan duruma geçiş yapmadan önce bu yöntemi çağırır.
 
@@ -1400,7 +1401,7 @@ Bölme kaydırılır ise doğru; Aksi takdirde, FALSE.
 
 Bu yöntem, bir bölme, kaydırma yapmak üzereyken Framework tarafından çağırılır. Bölme kaymasından önce herhangi bir işlem gerçekleştirmek istiyorsanız, türetilmiş bir sınıfta bu yöntemi geçersiz kılabilirsiniz.
 
-## <a name="cdockablepaneonpressbuttons"></a><a name="onpressbuttons"></a>CDockablePane:: OnPressButtons
+## <a name="cdockablepaneonpressbuttons"></a><a name="onpressbuttons"></a> CDockablePane:: OnPressButtons
 
 Kullanıcı AFX_HTCLOSE ve AFX_HTMAXBUTTON düğmelerinden farklı bir açıklamalı alt yazı düğmesine bastığında çağırılır.
 
@@ -1417,7 +1418,7 @@ virtual void OnPressButtons(UINT nHit);
 
 Bir yerleştirilebilir bölmesinin açıklamalı alt yazısına özel bir düğme eklerseniz, Kullanıcı düğmeye bastığında bildirim almak için bu yöntemi geçersiz kılın.
 
-## <a name="cdockablepaneonslide"></a><a name="onslide"></a>CDockablePane:: OnSlide
+## <a name="cdockablepaneonslide"></a><a name="onslide"></a> CDockablePane:: OnSlide
 
 Otomatik gizleme modundayken bölmenin animasyonunu yapmak için Framework tarafından çağırılır.
 
@@ -1434,7 +1435,7 @@ virtual void OnSlide(BOOL bSlideOut);
 
 Özel otomatik gizleme efektleri uygulamak için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
-## <a name="cdockablepaneremovefromdefaultpanedividier"></a><a name="removefromdefaultpanedividier"></a>CDockablePane:: RemoveFromDefaultPaneDividier
+## <a name="cdockablepaneremovefromdefaultpanedividier"></a><a name="removefromdefaultpanedividier"></a> CDockablePane:: RemoveFromDefaultPaneDividier
 
 Bir bölme yuvalanmakta olduğunda Framework bu yöntemi çağırır.
 
@@ -1446,7 +1447,7 @@ void RemoveFromDefaultPaneDividier();
 
 Bu yöntem, varsayılan bölme ayracını NULL olarak ayarlar ve bölmeyi kapsayıcıdan kaldırır.
 
-## <a name="cdockablepanereplacepane"></a><a name="replacepane"></a>CDockablePane:: ReplacePane
+## <a name="cdockablepanereplacepane"></a><a name="replacepane"></a> CDockablePane:: ReplacePane
 
 Bölmeyi belirtilen bölme ile değiştirir.
 
@@ -1472,7 +1473,7 @@ BOOL ReplacePane(
 
 Değiştirme başarılı olursa doğru; Aksi takdirde, FALSE.
 
-## <a name="cdockablepanerestoredefaultpanedivider"></a><a name="restoredefaultpanedivider"></a>CDockablePane:: RestoreDefaultPaneDivider
+## <a name="cdockablepanerestoredefaultpanedivider"></a><a name="restoredefaultpanedivider"></a> CDockablePane:: RestoreDefaultPaneDivider
 
 Bir bölme seri durumdan çıkarılıyorsa, çerçeve varsayılan bölme ayırıcısını geri yüklemek için bu yöntemi çağırır.
 
@@ -1484,7 +1485,7 @@ void RestoreDefaultPaneDivider();
 
 Geri yüklenen varsayılan bölme ayırıcı, varsa, geçerli varsayılan bölme ayracın yerini alır.
 
-## <a name="cdockablepanesetautohidemode"></a><a name="setautohidemode"></a>CDockablePane:: SetAutoHideMode
+## <a name="cdockablepanesetautohidemode"></a><a name="setautohidemode"></a> CDockablePane:: SetAutoHideMode
 
 Yerleştirme bölmesine görünür ve otomatik gizle modu arasında geçiş yapar.
 
@@ -1520,7 +1521,7 @@ Bir Kullanıcı, yerleştirilebilir bölmesini otomatik gizleme moduna veya norm
 
 Bir yerleştirilebilir bölmesini programlama yoluyla otomatik gizleme moduna geçirmek için bu yöntemi çağırın. Bölmenin ana çerçeve penceresine yerleştirilmiş olması gerekir ( [CDockablePane:: GetDefaultPaneDivider](#getdefaultpanedivider) , [CPaneDivider](../../mfc/reference/cpanedivider-class.md)için geçerli bir işaretçi döndürmelidir).
 
-## <a name="cdockablepanesetautohideparents"></a><a name="setautohideparents"></a>CDockablePane:: Setautohideebeveynler
+## <a name="cdockablepanesetautohideparents"></a><a name="setautohideparents"></a> CDockablePane:: Setautohideebeveynler
 
 Bölme için otomatik gizleme düğmesini ve otomatik gizleme araç çubuğunu ayarlar.
 
@@ -1538,7 +1539,7 @@ void SetAutoHideParents(
 *pBtn*<br/>
 'ndaki Otomatik gizleme düğmesine yönelik işaretçi.
 
-## <a name="cdockablepanesetlastpercentinpanecontainer"></a><a name="setlastpercentinpanecontainer"></a>CDockablePane:: Setlastyüztınpane kapsayıcısı
+## <a name="cdockablepanesetlastpercentinpanecontainer"></a><a name="setlastpercentinpanecontainer"></a> CDockablePane:: Setlastyüztınpane kapsayıcısı
 
 Bir bölmenin kapsayıcıda kapladığı alanın yüzdesini ayarlar.
 
@@ -1548,14 +1549,14 @@ void SetLastPercentInPaneContainer(int n);
 
 ### <a name="parameters"></a>Parametreler
 
-*No*<br/>
+*n*<br/>
 'ndaki **`int`** Bu, bölmenin kapsayıcıda kapladığı alanın yüzdesini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Çerçeve, Düzen yeniden hesaplandığında yeni değeri kullanmak için bölmeyi ayarlar.
 
-## <a name="cdockablepanesetrestoreddefaultpanedivider"></a><a name="setrestoreddefaultpanedivider"></a>CDockablePane:: SetRestoredDefaultPaneDivider
+## <a name="cdockablepanesetrestoreddefaultpanedivider"></a><a name="setrestoreddefaultpanedivider"></a> CDockablePane:: SetRestoredDefaultPaneDivider
 
 Geri yüklenen varsayılan bölme ayracın ayarlar.
 
@@ -1572,7 +1573,7 @@ void SetRestoredDefaultPaneDivider(HWND hRestoredSlider);
 
 Bir bölme serisi kaldırıldığında geri yüklenen varsayılan bölme ayırıcıyı elde edilir. Daha fazla bilgi için bkz. [CDockablePane:: RestoreDefaultPaneDivider](#restoredefaultpanedivider).
 
-## <a name="cdockablepanesettabbedpanertc"></a><a name="settabbedpanertc"></a>CDockablePane:: SetTabbedPaneRTC
+## <a name="cdockablepanesettabbedpanertc"></a><a name="settabbedpanertc"></a> CDockablePane:: SetTabbedPaneRTC
 
 İki bölme birlikte yuvalandığında oluşturulan sekmeli pencerenin çalışma zamanı sınıfı bilgilerini ayarlar.
 
@@ -1599,7 +1600,7 @@ Varsayılan çalışma zamanı sınıfı [CDockablePane:: Create](#create) ve [C
 
 Daha sonra, çalışma zamanı sınıf bilgilerine yönelik işaretçiyle bu yöntemi çağırın.
 
-## <a name="cdockablepaneshowpane"></a><a name="showpane"></a>CDockablePane:: ShowPane
+## <a name="cdockablepaneshowpane"></a><a name="showpane"></a> CDockablePane:: ShowPane
 
 Bir bölmeyi gösterir veya gizler.
 
@@ -1625,7 +1626,7 @@ virtual void ShowPane(
 
 Yerleştirilebilir bölmelerini gösterirken veya gizlerken [CWnd:: ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) yerine bu yöntemi çağırın.
 
-## <a name="cdockablepaneslide"></a><a name="slide"></a>CDockablePane:: slayt
+## <a name="cdockablepaneslide"></a><a name="slide"></a> CDockablePane:: slayt
 
 Otomatik gizleme modundaki bir bölmeyi hareketlendirir.
 
@@ -1649,7 +1650,7 @@ Framework, otomatik gizleme modundaki bir bölmeye animasyon uygulamak için bu 
 
 Bu yöntem, `CDockablePane::m_nSlideDefaultTimeOut` Slayt efektinin zaman aşımını bulmak için değerini kullanır. Zaman aşımı için varsayılan değer 1 ' dir. Otomatik gizleme algoritmasını özelleştirirseniz, zaman aşımını değiştirmek için bu üyeyi değiştirin.
 
-## <a name="cdockablepanetoggleautohide"></a><a name="toggleautohide"></a>CDockablePane:: Toggleotomatik gizle
+## <a name="cdockablepanetoggleautohide"></a><a name="toggleautohide"></a> CDockablePane:: Toggleotomatik gizle
 
 Bölmeyi, her zaman görünür ve otomatik gizleme modu arasında değiştirir.
 
@@ -1661,7 +1662,7 @@ virtual void ToggleAutoHide();
 
 Bu yöntem, [CDockablePane:: SetAutoHideMode](#setautohidemode)'u çağırarak bölme için otomatik gizleme modunu değiştirir.
 
-## <a name="cdockablepaneundockpane"></a><a name="undockpane"></a>CDockablePane:: UndockPane
+## <a name="cdockablepaneundockpane"></a><a name="undockpane"></a> CDockablePane:: UndockPane
 
 Ana çerçeve penceresi veya bir mini iframe pencere kapsayıcısından bölme noktalarını kaldırır.
 

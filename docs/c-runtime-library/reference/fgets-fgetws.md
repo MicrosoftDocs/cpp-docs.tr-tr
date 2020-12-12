@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fal, fgetws'
 title: fgets, fgetws
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - fgetws function
 - fgetts function
 ms.assetid: ad549bb5-df98-4ccd-a53f-95114e60c4fc
-ms.openlocfilehash: 5c1d63eea6561af6ab7f51c147c92e184d3d11f8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 21c360f621ed19f076af129f618e80aa27102e86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912060"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329298"
 ---
 # <a name="fgets-fgetws"></a>fgets, fgetws
 
@@ -74,13 +75,13 @@ Okunacak maksimum karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri *Str*döndürür. Bir hata veya dosya sonu koşulu göstermek için **null** döndürülür. Bir hatanın oluşup oluşmadığını anlamak için **feof** veya **ferror** kullanın. *Str* veya *Stream* null bir Işaretçisiyse veya *NumChars* değeri sıfıra eşit veya daha küçükse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür.
+Bu işlevlerin her biri *Str* döndürür. Bir hata veya dosya sonu koşulu göstermek için **null** döndürülür. Bir hatanın oluşup oluşmadığını anlamak için **feof** veya **ferror** kullanın. *Str* veya *Stream* null bir Işaretçisiyse veya *NumChars* değeri sıfıra eşit veya daha küçükse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null** değerini döndürür.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fal** işlevi, giriş *akışı* bağımsız değişkeninden bir dizeyi okur ve *Str*içinde depolar. **fal** , geçerli akış konumundan, ilk yeni satır karakterini, akışın sonuna kadar veya okunan karakter sayısı *numchar* -1 ' e eşit olana kadar (hangisi önce gelirse) karakterleri okur. *Str* içinde depolanan sonuç bir null karakterle eklenir. Read ise yeni satır karakteri dizeye dahil edilir.
+**Fal** işlevi, giriş *akışı* bağımsız değişkeninden bir dizeyi okur ve *Str* içinde depolar. **fal** , geçerli akış konumundan, ilk yeni satır karakterini, akışın sonuna kadar veya okunan karakter sayısı *numchar* -1 ' e eşit olana kadar (hangisi önce gelirse) karakterleri okur. *Str* içinde depolanan sonuç bir null karakterle eklenir. Read ise yeni satır karakteri dizeye dahil edilir.
 
 **fgetws** , **fal**'ın geniş karakterli bir sürümüdür.
 
@@ -98,8 +99,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fal**|\<stdio. h>|
-|**fgetws**|\<stdio. h> veya \<wchar. h>|
+|**fal**|\<stdio.h>|
+|**fgetws**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -128,7 +129,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_fgetstxt"></a>Giriş: crt_fgets. txt
+### <a name="input-crt_fgetstxt"></a>Giriş: crt_fgets.txt
 
 ```Input
 Line one.
@@ -143,7 +144,7 @@ Line one.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputs, fputws](fputs-fputws.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [puts, _putws](puts-putws.md)<br/>

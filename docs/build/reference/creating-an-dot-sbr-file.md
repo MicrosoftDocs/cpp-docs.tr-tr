@@ -1,4 +1,5 @@
 ---
+description: ': Oluşturma hakkında daha fazla bilgi edinin. Sbr dosyası'
 title: .Sbr Dosyası Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,28 +10,28 @@ helpviewer_keywords:
 - local symbols in browse information
 - symbols
 ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
-ms.openlocfilehash: 6a2e685d33b108ce542fdc6e3e0565cc37299c1c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7f3e056418fe1716dc0130330b09c369e9bdceff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196925"
 ---
 # <a name="creating-an-sbr-file"></a>.Sbr Dosyası Oluşturma
 
 > [!WARNING]
-> BSCMAKE hala Visual Studio ile yüklenir ancak artık IDE tarafından kullanılır. Visual Studio 2008'den itibaren göz atma ve sembol bilgilerini otomatik olarak bir SQL Server .sdf dosyası çözüm klasöründe depolanır.
+> BSCMAKE, Visual Studio ile hala yüklü olsa da artık IDE tarafından kullanılmıyor. Visual Studio 2008 ' den itibaren, gezinme ve sembol bilgileri çözüm klasöründeki bir SQL Server. sdf dosyasında otomatik olarak depolanır.
 
-BSCMAKE giriş dosyalarına .sbr dosyalarıdır. Derleyici, derleme her nesne dosyası (.obj) .sbr dosyası oluşturur. Derleme veya göz atma bilgisi dosyanızı güncelleştirin, projeniz için tüm .sbr dosyaları diskte mevcut olması gerekir.
+BSCMAKE için giriş dosyaları. sbr dosyalarıdır. Derleyici, derlediğinde her nesne dosyası (. obj) için bir. sbr dosyası oluşturur. Tarama bilgileri dosyanızı oluştururken veya güncelleştirdiğinizde, projenizin tüm. sbr dosyaları diskte kullanılabilir olmalıdır.
 
-Tüm olası bilgilerle .sbr dosyası oluşturmak için belirtin [/FR](fr-fr-create-dot-sbr-file.md).
+Tüm olası bilgilerle bir. sbr dosyası oluşturmak için [/fr](fr-fr-create-dot-sbr-file.md)öğesini belirtin.
 
-Yerel semboller içermeyen .sbr dosyası oluşturmak için belirtin [/Fr](fr-fr-create-dot-sbr-file.md). .Sbr dosyaları yerel semboller içeriyorsa, yine de bunları .bsc dosyasından BSCMAKE'ın kullanarak atlayabilirsiniz [/El seçeneği](bscmake-options.md)`.`
+Yerel semboller içermeyen bir. sbr dosyası oluşturmak için [/fr](fr-fr-create-dot-sbr-file.md)öğesini belirtin. . Sbr dosyaları yerel semboller içeriyorsa, BSCMAKE 'in [/el seçeneğini](bscmake-options.md) kullanarak bunları. bsc dosyasından atlayabilirsiniz`.`
 
-Tam derleme yapmadan .sbr dosyası oluşturabilirsiniz. Örneğin, bir sözdizimi denetimi gerçekleştirmek ve /FR veya /Fr. belirtirseniz hala .sbr dosyası oluşturmak için derleyicinin /Zs seçeneğini belirtebilirsiniz.
+Tam derleme yapmadan bir. sbr dosyası oluşturabilirsiniz. Örneğin, bir sözdizimi denetimi gerçekleştirmek için derleyici için/ZS seçeneğini belirtebilir ve/FR veya/Frbelirtirseniz, yine de bir. sbr dosyası oluşturabilirsiniz.
 
-Yapı işlemi .sbr dosyaları başvurulmayan tanımlarını kaldırmak için ilk paketlenir eklenirse daha verimli olabilir. Derleyici, .sbr dosyaları otomatik olarak paketler.
+. Sbr dosyaları, başvurulmayan tanımları kaldırmak için ilk kez paketlenayarlanırsa yapı işlemi daha verimli olabilir. Derleyici. sbr dosyalarını otomatik olarak paketledir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.Bsc Dosyası Derleme](building-a-dot-bsc-file.md)
+[Oluşturma. BSC dosyası](building-a-dot-bsc-file.md)

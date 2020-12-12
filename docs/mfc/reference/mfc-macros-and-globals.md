@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC makroları ve genel'
 title: MFC Makroları ve Genel Öğeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,20 +12,20 @@ helpviewer_keywords:
 - Afx naming convention
 - macros
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
-ms.openlocfilehash: ed45fc7014bda18887be6dc8fbcdff8ba9a9c5f1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9e3d3acd74d1cf6db5856432cdefd632e36185f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373050"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219154"
 ---
 # <a name="mfc-macros-and-globals"></a>MFC Makroları ve Genel Öğeleri
 
-Microsoft Hazırlık Sınıf Kitaplığı iki ana bölüme ayrılabilir: (1) MFC sınıfları ve (2) makrolar ve küreseller. Bir işlev veya değişken bir sınıfın üyesi değilse, bu genel bir işlev veya değişkendir.
+Microsoft Foundation Class Kitaplığı iki ana bölüme ayrılabilir: (1) MFC sınıfları ve (2) makroları ve genel. Bir işlev veya değişken bir sınıfın üyesi değilse, genel bir işlev veya değişkendir.
 
-MFC kitaplığı ve Etkin Şablon Kitaplığı (ATL) dize dönüştürme makrolarını paylaşır. Daha fazla bilgi için ATL belgelerinde [String Dönüşüm Makroları'na](../../atl/reference/string-conversion-macros.md) bakın.
+MFC kitaplığı ve etkin şablon kitaplığı (ATL), dize dönüştürme makrolarını paylaşır. Daha fazla bilgi için, ATL belgelerindeki [dize dönüştürme makroları](../../atl/reference/string-conversion-macros.md) bölümüne bakın.
 
-MFC makroları ve globalleri aşağıdaki kategorilerde işlevsellik sunar.
+Aşağıdaki kategorilerdeki MFC makroları ve genel teklif işlevleri.
 
 ## <a name="general-mfc"></a>Genel MFC
 
@@ -38,11 +39,11 @@ MFC makroları ve globalleri aşağıdaki kategorilerde işlevsellik sunar.
 
 - [Özel durum işleme](exception-processing.md)
 
-- [CString biçimlendirme ve ileti kutusu ekranı](cstring-formatting-and-message-box-display.md)
+- [CString biçimlendirmesi ve ileti kutusu görüntüleme](cstring-formatting-and-message-box-display.md)
 
 - [İleti eşlemeleri](message-map-macros-mfc.md)
 
-- [Temsilci ve Arayüz Haritaları](delegate-and-interface-maps.md)
+- [Temsilci ve arabirim haritaları](delegate-and-interface-maps.md)
 
 - [Modüller ve DLL'ler](extension-dll-macros.md)
 
@@ -50,55 +51,55 @@ MFC makroları ve globalleri aşağıdaki kategorilerde işlevsellik sunar.
 
 - [Standart komut ve pencere kimlikleri](standard-command-and-window-ids.md)
 
-- [Toplama sınıfı yardımcıları](collection-class-helpers.md)
+- [Koleksiyon sınıfı yardımcıları](collection-class-helpers.md)
 
-- [Gri ve dithered bitmap işlevleri](gray-and-dithered-bitmap-functions.md)
+- [Gri ve titremeli bit eşlem işlevleri](gray-and-dithered-bitmap-functions.md)
 
-- [Standart iletişim veri alışverişi (DDX) yordamları](standard-dialog-data-exchange-routines.md)
+- [Standart iletişim kutusu veri değişimi (DDX) yordamları](standard-dialog-data-exchange-routines.md)
 
-- [Standart iletişim veri doğrulama (DDV) yordamları](standard-dialog-data-validation-routines.md)
+- [Standart iletişim kutusu veri doğrulama (DDV) yordamları](standard-dialog-data-validation-routines.md)
 
-- [AFX Mesajları](afx-messages.md)
+- [AFX Iletileri](afx-messages.md)
 
-- [ToolBar Denetim Stilleri](toolbar-control-styles.md)
+- [ToolBar denetim stilleri](toolbar-control-styles.md)
 
-- [CMFCImagePaintArea::IMAGE_EDIT_MODE Numaralandırma](cmfcimagepaintarea-image-edit-mode-enumeration.md)
+- [CMFCImagePaintArea:: IMAGE_EDIT_MODE numaralandırması](cmfcimagepaintarea-image-edit-mode-enumeration.md)
 
 ## <a name="database"></a>Veritabanı
 
-- MFC ODBC sınıfları için [Kayıt Alanı Değişimi (RFX) fonksiyonları](record-field-exchange-functions.md) ve Toplu Kayıt Alanı Değişimi [(toplu RFX) işlevleri](record-field-exchange-functions.md)
+- MFC ODBC sınıfları için [kayıt alanı değişimi (RFX) işlevleri](record-field-exchange-functions.md) ve [toplu kayıt alanı DEĞIŞIMI (toplu RFX) işlevleri](record-field-exchange-functions.md)
 
 - MFC DAO sınıfları için [kayıt alanı değişimi (DFX) işlevleri](record-field-exchange-functions.md)
 
-- [CRecordView ve CDaoRecordView](dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md) (MFC ODBC ve DAO sınıfları) için iletişim veri alışverişi (DDX) işlevleri
+- [CRecordView ve CDaoRecordView Için Iletişim kutusu veri değişimi (DDX) işlevleri](dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md) (MFC ODBC ve DAO sınıfları)
 
-- [OLE denetimleri için iletişim veri alışverişi (DDX) işlevleri](dialog-data-exchange-functions-for-ole-controls.md)
+- [OLE denetimleri için iletişim kutusu veri değişimi (DDX) işlevleri](dialog-data-exchange-functions-for-ole-controls.md)
 
-- [Açık Veritabanı Bağlantısı (ODBC) API işlevlerini doğrudan aramada yardımcı olmak için makrolar ve küreseller](database-macros-and-globals.md)
+- [Açık veritabanı bağlantısı (ODBC) API işlevlerini doğrudan çağırmaya yardımcı olacak makrolar ve genel](database-macros-and-globals.md)
 
 - [DAO veritabanı motoru başlatma ve sonlandırma](dao-database-engine-initialization-and-termination.md)
 
-## <a name="internet"></a>Internet
+## <a name="internet"></a>İnternet
 
 - [İnternet URL ayrıştırma genel öğeleri](internet-url-parsing-globals.md)
 
-## <a name="dhtml--dhtml-event-maps"></a>DHTML / DHTML Etkinlik Haritaları
+## <a name="dhtml--dhtml-event-maps"></a>DHTML/DHTML olay haritaları
 
-- [DHTML iletişim veri alışverişi (DDX) yardımcı makroları](ddx-dhtml-helper-macros.md)
+- [DHTML iletişim kutusu veri değişimi (DDX) Yardımcısı makroları](ddx-dhtml-helper-macros.md)
 
-- [DHTML olay haritaları](dhtml-event-maps.md)
+- [DHTML olay eşlemeleri](dhtml-event-maps.md)
 
 ## <a name="ole"></a>OLE
 
 - [OLE başlatma](ole-initialization.md)
 
-- [Uygulama kontrolü](application-control.md)
+- [Uygulama denetimi](application-control.md)
 
-- [Haritaları gönder](dispatch-maps.md)
+- [Eşlemeleri dağıtma](dispatch-maps.md)
 
-Buna ek olarak, MFC, MFC 4.0 ile geliştirilen herhangi bir OLE kapsayıcının gömülü OLE denetimlerini tam olarak desteklemesini sağlayan [AfxEnableControlContainer](ole-initialization.md#afxenablecontrolcontainer) adlı bir işlev sağlar.
+Ayrıca, MFC, katıştırılmış OLE denetimlerini tam olarak desteklemek için MFC 4,0 ile geliştirilen herhangi bir OLE kapsayıcısını sağlayan [AfxEnableControlContainer](ole-initialization.md#afxenablecontrolcontainer) adlı bir işlev sağlar.
 
-## <a name="ole-controls"></a>OLE Kontrolleri
+## <a name="ole-controls"></a>OLE denetimleri
 
 - [Değişken parametre türü sabitleri](variant-parameter-type-constants.md)
 
@@ -116,13 +117,13 @@ Buna ek olarak, MFC, MFC 4.0 ile geliştirilen herhangi bir OLE kapsayıcının 
 
 - [Sınıf oluşturucular ve lisanslama](class-factories-and-licensing.md)
 
-- [OLE kontrollerinin kalıcılığı](persistence-of-ole-controls.md)
+- [OLE denetimlerinin kalıcılığı](persistence-of-ole-controls.md)
 
-Bu bölümün ilk bölümünde, önceki kategorilerin her biri kısaca açıklanıyor ve işlevselliğin kısa açıklamalarıyla birlikte kategorideki genel leri ve makroları listeler. Bunu, MFC kitaplığındaki genel işlevlerin, genel değişkenlerin ve makroların açıklamaları aşağıda veda eder.
+Bu bölümün ilk bölümü, önceki kategorilerin her birini kısaca ele alır ve ilgili kısa açıklama açıklamalarıyla birlikte kategoride genel ve makroları listeler. Bu, MFC kitaplığındaki genel işlevlerin, genel değişkenlerin ve makroların açıklamalarıdır.
 
 > [!NOTE]
-> Birçok genel işlev "Afx" önekiyle başlar, ancak bazıları, örneğin, iletişim veri alışverişi (DDX) işlevleri ve veritabanı işlevlerinin çoğu bu kuralı izlemez. Tüm global değişkenler önek olarak "afx" ile başlar. Makrolar belirli bir önek ile başlamaz, ancak büyük harflerle yazılır.
+> Birçok genel işlev "AFX" önekiyle başlar ancak bazı, örneğin, iletişim kutusu veri değişimi (DDX) işlevleri ve veritabanı işlevlerinin birçoğu, bu kuralı takip etmez. Tüm genel değişkenler ön ek olarak "AFX" ile başlar. Makrolar belirli bir ön ek ile başlamaz, ancak büyük harflerle yazılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../mfc/class-library-overview.md)
+[Sınıfa genel bakış](../../mfc/class-library-overview.md)

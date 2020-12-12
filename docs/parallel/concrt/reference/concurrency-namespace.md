@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: eşzamanlılık ad alanı'
 title: concurrency Ad Alanı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,18 +21,18 @@ f1_keywords:
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: f1d33ca2-679b-4442-b140-22a9d9df61d1
-ms.openlocfilehash: f710ead679484c41b006566a711a03ba153201ec
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c17e058c6666f944ea9f34b90995e9b9d343b40e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335806"
 ---
 # <a name="concurrency-namespace"></a>concurrency Ad Alanı
 
 `Concurrency`Ad alanı, C++ için eşzamanlı bir programlama çerçevesi olan eşzamanlılık çalışma zamanı erişim sağlayan sınıfları ve işlevleri sağlar. Daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../../../parallel/concrt/concurrency-runtime.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace concurrency;
@@ -179,7 +180,7 @@ namespace concurrency;
 |[asend Işlevi](concurrency-namespace-functions.md#asend)|Fazla Yüklendi. Verileri hedef bloğuna yaymaya yönelik bir görevi zamanlayan zaman uyumsuz gönderme işlemi.|
 |[cancel_current_task Işlevi](concurrency-namespace-functions.md#cancel_current_task)|Yürütülmekte olan görevi iptal eder. Bu işlev, görevin yürütülmesini iptal etmek için bir görevin gövdesinden çağrılabilir ve durumu girmeye neden olur `canceled` .<br /><br /> Bir ' ın gövdesinde değilseniz bu işlevi çağırmak için desteklenen bir senaryo değildir `task` . Bunun yapılması, uygulamanızda kilitlenme veya yanıt verme gibi tanımsız davranışlara neden olur.|
 |[create_async Işlevi](concurrency-namespace-functions.md#create_async)|Kullanıcı tarafından sağlanan lambda veya işlev nesnesini temel alan Windows Çalışma Zamanı zaman uyumsuz yapı oluşturur. Öğesinin dönüş türü `create_async` `IAsyncAction^` , `IAsyncActionWithProgress<TProgress>^` `IAsyncOperation<TResult>^` `IAsyncOperationWithProgress<TResult, TProgress>^` yöntemine geçirilen lambda imzasına göre,,, veya ' den biridir.|
-|[create_task Işlevi](concurrency-namespace-functions.md#create_task)|Fazla Yüklendi. Bir PPL [görev](task-class.md) nesnesi oluşturur. `create_task`, bir görev oluşturucusunu kullandığınız her yerde kullanılabilir. Görev oluştururken anahtar sözcüğünün kullanılmasına izin verdiğinden, genellikle kolaylık sağlaması için sağlanır **`auto`** .|
+|[create_task Işlevi](concurrency-namespace-functions.md#create_task)|Fazla Yüklendi. Bir PPL [görev](task-class.md) nesnesi oluşturur. `create_task` , bir görev oluşturucusunu kullandığınız her yerde kullanılabilir. Görev oluştururken anahtar sözcüğünün kullanılmasına izin verdiğinden, genellikle kolaylık sağlaması için sağlanır **`auto`** .|
 |[CreateResourceManager Işlevi](concurrency-namespace-functions.md#createresourcemanager)|Eşzamanlılık Çalışma Zamanı Kaynak Yöneticisi tek örneğini temsil eden bir arabirim döndürür. Kaynak Yöneticisi, kaynakların birbirleriyle birlikte çalışmak isteyen zamanlayıcılar 'ye atanmasından sorumludur.|
 |[DisableTracing Işlevi](concurrency-namespace-functions.md#disabletracing)|Eşzamanlılık Çalışma Zamanı izlemeyi devre dışı bırakır. ETW izlemenin varsayılan olarak kaydı silindiğinden bu işlev kullanım dışıdır.|
 |[EnableTracing Işlevi](concurrency-namespace-functions.md#enabletracing)|Eşzamanlılık Çalışma Zamanı izlemeye izin vermez. ETW izleme artık varsayılan olarak açık olduğundan bu işlev kullanım dışıdır.|
@@ -197,8 +198,8 @@ namespace concurrency;
 |[make_join Işlevi](concurrency-namespace-functions.md#make_join)|Fazla Yüklendi. `non_greedy multitype_join`İsteğe bağlı `Scheduler` veya `ScheduleGroup` iki veya daha fazla giriş kaynağından bir mesajlaşma bloğu oluşturur.|
 |[make_task Işlevi](concurrency-namespace-functions.md#make_task)|Bir nesne oluşturmak için bir fabrika yöntemi `task_handle` .|
 |[parallel_buffered_sort Işlevi](concurrency-namespace-functions.md#parallel_buffered_sort)|Fazla Yüklendi. Belirli bir aralıktaki öğeleri azalan düzende veya ikili koşul tarafından belirtilen bir sıralama ölçütüne göre paralel olarak düzenler. Bu işlev, daha `std::sort` fazla alana ihtiyaç duyması dışında karşılaştırma tabanlı, kararsız ve yerinde bir sıralama olduğundan anlam açısından benzerdir `O(n)` ve sıralanan öğeler için varsayılan başlatma gerektirir.|
-|[parallel_for Işlevi](concurrency-namespace-functions.md#parallel_for)|Fazla Yüklendi. `parallel_for`bir dizi dizin üzerinde dolaşır ve paralel olarak her yinelemede Kullanıcı tarafından sağlanan bir işlevi yürütür.|
-|[parallel_for_each Işlevi](concurrency-namespace-functions.md#parallel_for_each)|Fazla Yüklendi. `parallel_for_each`bir aralıktaki her öğeye, paralel olarak belirtilen bir işlev uygular. `for_each` `std` Öğe üzerindeki yineleme paralel olarak gerçekleştirilmesinin ve yinelemenin sırası belirlenmemesi dışında, ad alanındaki işleve anlamsal olarak eşdeğerdir. Bağımsız değişkeni, `_Func` `operator()(T)` parametrenin `T` yinelemekte olan kapsayıcının öğe türü olduğu formun işlev çağrısı işlecini desteklemelidir.|
+|[parallel_for Işlevi](concurrency-namespace-functions.md#parallel_for)|Fazla Yüklendi. `parallel_for` bir dizi dizin üzerinde dolaşır ve paralel olarak her yinelemede Kullanıcı tarafından sağlanan bir işlevi yürütür.|
+|[parallel_for_each Işlevi](concurrency-namespace-functions.md#parallel_for_each)|Fazla Yüklendi. `parallel_for_each` bir aralıktaki her öğeye, paralel olarak belirtilen bir işlev uygular. `for_each` `std` Öğe üzerindeki yineleme paralel olarak gerçekleştirilmesinin ve yinelemenin sırası belirlenmemesi dışında, ad alanındaki işleve anlamsal olarak eşdeğerdir. Bağımsız değişkeni, `_Func` `operator()(T)` parametrenin `T` yinelemekte olan kapsayıcının öğe türü olduğu formun işlev çağrısı işlecini desteklemelidir.|
 |[parallel_invoke Işlevi](concurrency-namespace-functions.md#parallel_invoke)|Fazla Yüklendi. Parametre olarak sağlanan işlev nesnelerini paralel olarak yürütür ve yürütmeyi tamamlayana kadar blokları engeller. Her işlev nesnesi bir lambda ifadesi, işlev işaretçisi veya imza ile işlev çağrısı işlecini destekleyen herhangi bir nesne olabilir `void operator()()` .|
 |[parallel_radixsort Işlevi](concurrency-namespace-functions.md#parallel_radixsort)|Fazla Yüklendi. Belirli bir aralıktaki öğeleri, bir taban x sıralama algoritmasını kullanarak azalan düzende düzenler. Bu bir yansıtma işlevi gerektiren bir kararlı sıralama işlevidir. Bu, öğeleri işaretsiz tamsayı benzeri anahtarlar halinde sıralamak için proje öğeleri olabilir. Sıralanan öğeler için varsayılan başlatma gereklidir.|
 |[parallel_reduce Işlevi](concurrency-namespace-functions.md#parallel_reduce)|Fazla Yüklendi. Ardışık kısmi toplamları hesaplayarak, belirtilen aralıktaki tüm öğelerin toplamını hesaplar veya paralel olan belirli bir ikili işlemi kullanmaktan farklı şekilde elde edilen kısmi sonuçların sonucunu hesaplar. `parallel_reduce``std::accumulate`, ikili işlemin ilişkilendirilebilir olmasını gerektirdiğinden ve ilk değer yerine bir kimlik değeri gerektirdiğinden anlam olarak benzerdir.|

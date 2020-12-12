@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: türetilmiş pencere sınıfları'
 title: Türetilen Pencere Sınıfları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - derived classes [MFC], window classes
 - window classes [MFC], derived
 ms.assetid: 6f7e437e-fbde-4a06-bfab-72d9dbf05292
-ms.openlocfilehash: c84284b765e740fa0a13972e9902e7737e15bbab
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9219267b5351f972257d9770f8e8b38039b85788
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623170"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335894"
 ---
 # <a name="derived-window-classes"></a>Türetilen Pencere Sınıfları
 
@@ -40,7 +41,7 @@ Daha fazla bilgi için bkz. [çerçeve pencereleri](frame-windows.md).
 *Görünümler*<br/>
 Görünümler `CWnd` -türetilmiş sınıf [CView](reference/cview-class.md) (veya türetilen sınıflarından biri) kullanılarak oluşturulur. Bir görünüm belgeye iliştirilir ve belge ve Kullanıcı arasında bir aracı görevi görür. Bir görünüm, genellikle bir SDI çerçeve penceresinin veya bir MDI alt çerçeve penceresinin (ya da bir araç çubuğu ile/veya bir durum çubuğu tarafından kapsanmayan istemci alanının bir bölümü) istemci alanını dolduran bir alt penceredir (MDI alt öğesi değil).
 
-*İletişim Kutuları*<br/>
+*İletişim kutuları*<br/>
 İletişim kutuları `CWnd` -türetilmiş sınıf [CDialog](reference/cdialog-class.md)kullanılarak oluşturulur.
 
 *Formlar*<br/>
@@ -49,14 +50,14 @@ Görünümler `CWnd` -türetilmiş sınıf [CView](reference/cview-class.md) (ve
 *Denetimler*<br/>
 Düğmeler, liste kutuları ve Birleşik giriş kutuları gibi denetimler, öğesinden türetilmiş diğer sınıflar kullanılarak oluşturulur `CWnd` . Bkz. [Denetim konuları](controls-mfc.md).
 
-*Denetim Çubukları*<br/>
+*Denetim çubukları*<br/>
 Denetimleri içeren alt pencereler. Araç çubukları ve durum çubukları örnekleri içerir. Bkz. [Denetim çubukları](control-bars.md).
 
 ## <a name="window-class-hierarchy"></a>Pencere sınıfı hiyerarşisi
 
 *MFC başvurusunda* [MFC hiyerarşi grafiğine](hierarchy-chart.md) bakın. Görünümler [belge/görünüm mimarisinde](document-view-architecture.md)açıklanmıştır. İletişim kutuları [Iletişim kutularında](dialog-boxes.md)açıklanmaktadır.
 
-## <a name="creating-your-own-special-purpose-window-classes"></a>Kendi özel amaçlı pencere sınıflarınızı oluşturma
+## <a name="creating-your-own-special-purpose-window-classes"></a>Kendi Special-Purpose pencere sınıflarınızı oluşturma
 
 Sınıf kitaplığı tarafından sunulan pencere sınıflarının yanı sıra, özel amaçlı alt pencereler de gerekebilir. Böyle bir pencere oluşturmak için kendi [CWnd](reference/cwnd-class.md)-türetilmiş sınıfınızı oluşturun ve bir çerçevenin ya da görünümün alt penceresi yapın. Çerçevenin bir belge çerçevesi penceresinin istemci alanının kapsamını yönettiğini göz önünde bulundurun. İstemci alanının çoğu bir görünüm tarafından yönetilir, ancak denetim çubukları veya kendi özel pencereleri gibi diğer pencereler, alanı görünümle paylaşabilir. Bir çerçeve penceresinin istemci alanındaki alt pencereleri konumlandırmak için [CView](reference/cview-class.md) ve [CControlBar](reference/ccontrolbar-class.md) sınıflardaki mekanizmalarla etkileşimde bulunmak gerekebilir.
 

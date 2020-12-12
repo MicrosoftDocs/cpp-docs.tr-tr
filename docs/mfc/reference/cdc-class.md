@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDC sınıfı'
 title: CDC sınıfı
 ms.date: 11/19/2018
 f1_keywords:
@@ -402,18 +403,18 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 432d560da0ae3459ba43faed9a50b9771b0de5d1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e6c17055dddbe4abae51d2a55a4a143f4c4b0f4f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212559"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185420"
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 
 Cihaz bağlamı nesnelerinin bir sınıfını tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDC : public CObject
@@ -603,7 +604,7 @@ class CDC : public CObject
 |[CDC:: Setmıterlimit](#setmiterlimit)|Cihaz bağlamı için Gönye birleştirmeleri uzunluğunun sınırını ayarlar.|
 |[CDC:: SetOutputDC](#setoutputdc)|`m_hDC`, Çıkış cihazı bağlamını ayarlar.|
 |[CDC:: SetPixel](#setpixel)|Belirtilen renkteki pikseli belirtilen rengin en yakın rengine ayarlar.|
-|[CDC:: SetPixelV](#setpixelv)|Belirtilen koordinatlardaki pikseli belirtilen rengin en yakın yaklaşık rengine ayarlar. `SetPixelV`, `SetPixel` gerçekten boyanmış olan noktanın renk değerini döndürmesi gerekmediğinden daha hızlıdır.|
+|[CDC:: SetPixelV](#setpixelv)|Belirtilen koordinatlardaki pikseli belirtilen rengin en yakın yaklaşık rengine ayarlar. `SetPixelV` , `SetPixel` gerçekten boyanmış olan noktanın renk değerini döndürmesi gerekmediğinden daha hızlıdır.|
 |[CDC:: SetPolyFillMode](#setpolyfillmode)|Çokgen doldurma modunu ayarlar.|
 |[CDC:: SetROP2](#setrop2)|Geçerli çizim modunu ayarlar.|
 |[CDC:: Setıdblttrmode](#setstretchbltmode)|Bit eşlem uzatma modunu ayarlar.|
@@ -651,11 +652,11 @@ Bir nesne kullanmak için `CDC` onu oluşturun ve ardından, cihaz bağlamların
 > [!NOTE]
 > Windows 95/98 ' de tüm ekran koordinatları 16 bitle sınırlıdır. Bu nedenle, **`int`** bir üye işlevine geçilen bir, `CDC` -32768 ile 32767 arasında olmalıdır.
 
-Belirli kullanımlar için Microsoft Foundation Class Kitaplığı, öğesinden türetilmiş çeşitli sınıflar sağlar `CDC` . `CPaintDC`ve çağrılarını Kapsüller `BeginPaint` `EndPaint` . `CClientDC`pencerenin istemci alanıyla ilişkili bir görüntüleme bağlamını yönetir. `CWindowDC`çerçevesi ve denetimleri de dahil olmak üzere tüm pencereyle ilişkili bir görüntüleme bağlamını yönetir. `CMetaFileDC`bir cihaz bağlamını bir meta dosyası ile ilişkilendirir.
+Belirli kullanımlar için Microsoft Foundation Class Kitaplığı, öğesinden türetilmiş çeşitli sınıflar sağlar `CDC` . `CPaintDC` ve çağrılarını Kapsüller `BeginPaint` `EndPaint` . `CClientDC` pencerenin istemci alanıyla ilişkili bir görüntüleme bağlamını yönetir. `CWindowDC` çerçevesi ve denetimleri de dahil olmak üzere tüm pencereyle ilişkili bir görüntüleme bağlamını yönetir. `CMetaFileDC` bir cihaz bağlamını bir meta dosyası ile ilişkilendirir.
 
-`CDC`, bir cihaz bağlamının yerleşimini tersine çevirme için, bir pencereden bir pencereden kalıtımla almayan iki üye işlevi ( [GetLayout](#getlayout) ve [SetLayout](#setlayout)) sağlar. Bu tür sağdan sola yön, Arapça veya Ibranice gibi kültürler için yazılan uygulamalar için, karakter düzeninin Avrupa standardı olmadığı durumlarda gereklidir.
+`CDC` , bir cihaz bağlamının yerleşimini tersine çevirme için, bir pencereden bir pencereden kalıtımla almayan iki üye işlevi ( [GetLayout](#getlayout) ve [SetLayout](#setlayout)) sağlar. Bu tür sağdan sola yön, Arapça veya Ibranice gibi kültürler için yazılan uygulamalar için, karakter düzeninin Avrupa standardı olmadığı durumlarda gereklidir.
 
-`CDC`iki cihaz bağlamı içerir, [m_hDC](#m_hdc) ve [m_hAttribDC](#m_hattribdc), bu da bir `CDC` nesne oluştururken aynı cihaza başvurur. `CDC`Tüm çıktı GDI çağrılarını `m_hDC` ve en çok ÖZNITELIK GDI çağrılarını yönlendirir `m_hAttribDC` . (Bir öznitelik çağrısı örneği `GetTextColor` , ancak bir `SetTextColor` Çıkış çağrıdır.)
+`CDC` iki cihaz bağlamı içerir, [m_hDC](#m_hdc) ve [m_hAttribDC](#m_hattribdc), bu da bir `CDC` nesne oluştururken aynı cihaza başvurur. `CDC` Tüm çıktı GDI çağrılarını `m_hDC` ve en çok ÖZNITELIK GDI çağrılarını yönlendirir `m_hAttribDC` . (Bir öznitelik çağrısı örneği `GetTextColor` , ancak bir `SetTextColor` Çıkış çağrıdır.)
 
 Örneğin, çerçeve `CMetaFileDC` fiziksel bir cihazdan öznitelikleri okurken bir meta dosyasına çıktı gönderecek bir nesne uygulamak için bu iki cihaz bağlamlarını kullanır. Baskı Önizleme, çerçevede benzer bir biçimde uygulanır. Ayrıca, uygulamaya özgü kodunuzda benzer bir şekilde iki cihaz bağlamı da kullanabilirsiniz.
 
@@ -680,7 +681,7 @@ Hakkında daha fazla bilgi için `CDC` bkz. [cihaz bağlamları](../../mfc/devic
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="cdcabortdoc"></a><a name="abortdoc"></a>CDC:: AbortDoc
+## <a name="cdcabortdoc"></a><a name="abortdoc"></a> CDC:: AbortDoc
 
 Geçerli yazdırma işini sonlandırır ve [StartDoc](#startdoc) üye işlevine yapılan son çağrıdan bu yana uygulamanın cihaza yazdığı her şeyi siler.
 
@@ -704,7 +705,7 @@ Başarılıysa 0 ' dan büyük veya buna eşit bir değer ya da bir hata oluştu
 
 Bu üye işlevi, ABORTDOC yazıcı kaçış yerini alır.
 
-`AbortDoc`şunları sonlandırmak için kullanılmalıdır:
+`AbortDoc` şunları sonlandırmak için kullanılmalıdır:
 
 - [SetAbortProc](#setabortproc)kullanarak bir Abort işlevi belirtmeyen işlemler yazdırılıyor.
 
@@ -720,7 +721,7 @@ Yazdırma işini başlatmak için Print Manager kullanılmışsa, çağıran `Ab
 
   [CDC:: StartDoc](#startdoc)örneğine bakın.
 
-## <a name="cdcabortpath"></a><a name="abortpath"></a>CDC:: AbortPath
+## <a name="cdcabortpath"></a><a name="abortpath"></a> CDC:: AbortPath
 
 Cihaz bağlamındaki tüm yolları kapatır ve atar.
 
@@ -736,7 +737,7 @@ BOOL AbortPath();
 
 Cihaz bağlamında açık yol ayracı varsa, yol köşeli ayracı kapatılır ve yol atılır. Cihaz bağlamında kapalı bir yol varsa, yol atılır.
 
-## <a name="cdcaddmetafilecomment"></a><a name="addmetafilecomment"></a>CDC:: AddMetaFileComment
+## <a name="cdcaddmetafilecomment"></a><a name="addmetafilecomment"></a> CDC:: AddMetaFileComment
 
 Bir arabellekteki yorumu belirtilen bir Gelişmiş Biçim meta dosyasına kopyalar.
 
@@ -762,7 +763,7 @@ Yorumu içeren arabelleğe işaret eder.
 
 Bir yorum, örneğin, resmin kaynağı ve oluşturulduğu tarih gibi herhangi bir özel bilgi içerebilir. Bir yorum, bir uygulama imzasıyla ve ardından verilerin ardından başlamalıdır. Açıklamalar konuma özgü verileri içermemelidir. Konuma özgü veriler bir kaydın konumunu belirtir ve bir meta dosyasının başka bir meta dosya içine katıştırılabileceğinden dahil edilmemelidir. Bu işlev yalnızca gelişmiş meta dosyalarla birlikte kullanılabilir.
 
-## <a name="cdcalphablend"></a><a name="alphablend"></a>CDC:: harflerden Blend
+## <a name="cdcalphablend"></a><a name="alphablend"></a> CDC:: harflerden Blend
 
 Saydam veya yarı saydam piksel olan bit eşlemleri göstermek için bu üye işlevi çağırın.
 
@@ -820,7 +821,7 @@ Başarılı olursa doğru; Aksi halde yanlış.
 
 Daha fazla bilgi için bkz. Windows SDK [Alfablend](/windows/win32/api/wingdi/nf-wingdi-alphablend) .
 
-## <a name="cdcanglearc"></a><a name="anglearc"></a>CDC:: AngleArc
+## <a name="cdcanglearc"></a><a name="anglearc"></a> CDC:: AngleArc
 
 Bir çizgi segmenti ve bir yay çizer.
 
@@ -858,11 +859,11 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Çizgi segmenti, geçerli konumdan yay başlangıcına çizilir. Yay, verilen yarıçap ve merkeziyle bir dairenin çevresi üzerinde çizilir. Yay uzunluğu, verilen başlatma ve tarama açılarla tanımlanır.
 
-`AngleArc`geçerli konumu, yayı bitiş noktasına taşımaktır. Bu işlev tarafından çizilen yay, geçerli dönüştürme ve eşleme moduna bağlı olarak elips olarak görünebilir. Yayı çizmadan önce, bu işlev çizgi segmentini geçerli konumdan yay başlangıcına çizer. Yay, belirtilen orta nokta etrafında belirtilen yarıçapla bir sanal daire oluşturarak çizilir. Yay başlangıç noktası, dairenin x ekseninden, başlangıç açısına kadar olan derecenin arasında saatin ters olarak ölçülerek belirlenir. Bitiş noktası benzer şekilde, başlangıç noktasından saatin tersi yönde, tarama açısına kadar olan bir ölçüden ölçerek bulunur.
+`AngleArc` geçerli konumu, yayı bitiş noktasına taşımaktır. Bu işlev tarafından çizilen yay, geçerli dönüştürme ve eşleme moduna bağlı olarak elips olarak görünebilir. Yayı çizmadan önce, bu işlev çizgi segmentini geçerli konumdan yay başlangıcına çizer. Yay, belirtilen orta nokta etrafında belirtilen yarıçapla bir sanal daire oluşturarak çizilir. Yay başlangıç noktası, dairenin x ekseninden, başlangıç açısına kadar olan derecenin arasında saatin ters olarak ölçülerek belirlenir. Bitiş noktası benzer şekilde, başlangıç noktasından saatin tersi yönde, tarama açısına kadar olan bir ölçüden ölçerek bulunur.
 
 Tarama açısı 360 dereceden fazlaysa, yay birden çok kez artar. Bu işlev, satırları geçerli kalemi kullanarak çizer. Şekil doldurulmamış.
 
-## <a name="cdcarc"></a><a name="arc"></a>CDC:: Arc
+## <a name="cdcarc"></a><a name="arc"></a> CDC:: Arc
 
 Elips bir yay çizer.
 
@@ -916,7 +917,7 @@ Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parame
 Yay başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 *ptEnd 'ler*<br/>
-Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. `POINT`Bu parametre için bir yapı ya da bir `CPoint` nesne geçirebilirsiniz.
+Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. `POINT` Bu parametre için bir yapı ya da bir `CPoint` nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -932,7 +933,7 @@ Yay gerçek başlangıç noktası, belirtilen başlangıç noktası aracılığ�
 
 [!code-cpp[NVC_MFCDocView#29](../../mfc/codesnippet/cpp/cdc-class_1.cpp)]
 
-## <a name="cdcarcto"></a><a name="arcto"></a>CDC:: ArcTo
+## <a name="cdcarcto"></a><a name="arcto"></a> CDC:: ArcTo
 
 Elips bir yay çizer.
 
@@ -986,7 +987,7 @@ Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parame
 Yay başlangıç noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) veri yapısını veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 *ptEnd 'ler*<br/>
-Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. `POINT`Bu parametre için bir veri yapısını ya da bir `CPoint` nesneyi geçirebilirsiniz.
+Yay bitiş noktasını tanımlayan noktanın x ve y koordinatlarını belirtir (mantıksal birimler cinsinden). Bu noktanın, tam olarak yay üzerinde olması gerekmez. `POINT` Bu parametre için bir veri yapısını ya da bir `CPoint` nesneyi geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -998,7 +999,7 @@ Bu işlev öğesine benzerdir `CDC::Arc` , ancak geçerli konum güncelleştiril
 
 Geçerli konumdan, yayı başlangıç noktasına bir çizgi çizilir. Bir hata oluşursa geçerli konum, yayı bitiş noktasına ayarlanır. Yay geçerli kalem kullanılarak çizilir; doldurulmamış.
 
-## <a name="cdcattach"></a><a name="attach"></a>CDC:: Attach
+## <a name="cdcattach"></a><a name="attach"></a> CDC:: Attach
 
 Nesneye bir *HDC* eklemek için bu üye işlevini kullanın `CDC` .
 
@@ -1019,7 +1020,7 @@ Bir Windows cihaz bağlamı.
 
 *HDC* , `m_hDC` çıkış aygıtı bağlamı ve içinde, `m_hAttribDC` öznitelik cihaz bağlamı içinde depolanır.
 
-## <a name="cdcbeginpath"></a><a name="beginpath"></a>CDC:: BeginPath
+## <a name="cdcbeginpath"></a><a name="beginpath"></a> CDC:: BeginPath
 
 Cihaz bağlamında bir yol ayracı açar.
 
@@ -1041,7 +1042,7 @@ Bir yoldaki noktaları tanımlayan çizim işlevlerinin bir listesi için Window
 
 [!code-cpp[NVC_MFCDocView#30](../../mfc/codesnippet/cpp/cdc-class_2.cpp)]
 
-## <a name="cdcbitblt"></a><a name="bitblt"></a>CDC:: BitBlt
+## <a name="cdcbitblt"></a><a name="bitblt"></a> CDC:: BitBlt
 
 Kaynak cihaz bağlamından bir bit eşlemi Bu geçerli cihaz bağlamına kopyalar.
 
@@ -1093,13 +1094,13 @@ Raster işlem kodlarının tam listesi için, Windows SDK [tarama Işlemi kodlar
 
 Uygulama, bayt hizalanmış dikdörtgenlerde gerçekleşmesini sağlamak için, bayt sınırlarındaki Windows veya istemci alanını hizalayabilir `BitBlt` . (Pencere sınıflarını kaydettiğinizde CS_BYTEALIGNWINDOW veya CS_BYTEALIGNCLIENT bayraklarını ayarlayın.)
 
-`BitBlt`bayt hizalanmış dikdörtgenlerdeki işlemler, `BitBlt` bayt hizalı dikdörtgenlerdeki işlemlerden çok daha hızlıdır. Kendi cihaz içeriğiniz için bayt hizalama gibi sınıf stilleri belirtmek istiyorsanız, Microsoft Foundation sınıflarına güvenmek yerine bir pencere sınıfını kaydetmeniz gerekir. [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass)genel işlevini kullanın.
+`BitBlt` bayt hizalanmış dikdörtgenlerdeki işlemler, `BitBlt` bayt hizalı dikdörtgenlerdeki işlemlerden çok daha hızlıdır. Kendi cihaz içeriğiniz için bayt hizalama gibi sınıf stilleri belirtmek istiyorsanız, Microsoft Foundation sınıflarına güvenmek yerine bir pencere sınıfını kaydetmeniz gerekir. [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass)genel işlevini kullanın.
 
-GDI, hedef cihaz bağlamını kullanarak bir kez ve kaynak cihaz bağlamını kullanarak *nWidth* ve *nHeight*değerlerini dönüştürür. Elde edilen kapsamlar eşleşmiyorsa, GDI, `StretchBlt` kaynak bit eşlemi gereken şekilde sıkıştırmak veya uzatmak Için Windows işlevini kullanır.
+GDI, hedef cihaz bağlamını kullanarak bir kez ve kaynak cihaz bağlamını kullanarak *nWidth* ve *nHeight* değerlerini dönüştürür. Elde edilen kapsamlar eşleşmiyorsa, GDI, `StretchBlt` kaynak bit eşlemi gereken şekilde sıkıştırmak veya uzatmak Için Windows işlevini kullanır.
 
 Hedef, kaynak ve kalıp bit eşlemler aynı renk biçimine sahip değilse, `BitBlt` işlev kaynak ve kalıp bit eşlemlerini hedefle eşleşecek şekilde dönüştürür. Hedef bit eşlemin ön plan ve arka plan renkleri dönüştürme sırasında kullanılır.
 
-`BitBlt`İşlev tek renkli bir bit eşlemi renge dönüştürdüğünde, beyaz bitleri (1) arka plan rengine ve siyah bit (0) ön plan rengine ayarlar. Hedef cihaz bağlamının ön plan ve arka plan renkleri kullanılır. Rengi tek renkli olarak dönüştürmek için, `BitBlt` arka plan rengiyle eşleşen pikselleri beyaz olarak ayarlar ve diğer tüm pikselleri siyah olarak ayarlar. `BitBlt`renkli cihaz bağlamının ön plan ve arka plan renklerini kullanarak renkten tek renkli renge dönüştürülür.
+`BitBlt`İşlev tek renkli bir bit eşlemi renge dönüştürdüğünde, beyaz bitleri (1) arka plan rengine ve siyah bit (0) ön plan rengine ayarlar. Hedef cihaz bağlamının ön plan ve arka plan renkleri kullanılır. Rengi tek renkli olarak dönüştürmek için, `BitBlt` arka plan rengiyle eşleşen pikselleri beyaz olarak ayarlar ve diğer tüm pikselleri siyah olarak ayarlar. `BitBlt` renkli cihaz bağlamının ön plan ve arka plan renklerini kullanarak renkten tek renkli renge dönüştürülür.
 
 Tüm cihaz bağlamlarının desteklemediğini unutmayın `BitBlt` . Belirli bir cihaz bağlamının destekleyip desteklemediğini denetlemek için `BitBlt` `GetDeviceCaps` üye işlevini kullanın ve rasterleştircaps dizinini belirtin.
 
@@ -1107,7 +1108,7 @@ Tüm cihaz bağlamlarının desteklemediğini unutmayın `BitBlt` . Belirli bir 
 
   [CDC:: Createuyumluluk Bledc](#createcompatibledc)için örneğe bakın.
 
-## <a name="cdccdc"></a><a name="cdc"></a>CDC:: CDC
+## <a name="cdccdc"></a><a name="cdc"></a> CDC:: CDC
 
 Bir `CDC` nesnesi oluşturur.
 
@@ -1115,7 +1116,7 @@ Bir `CDC` nesnesi oluşturur.
 CDC();
 ```
 
-## <a name="cdcchord"></a><a name="chord"></a>CDC:: Chof
+## <a name="cdcchord"></a><a name="chord"></a> CDC:: Chof
 
 Bir çizgi çizer (bir elips ve Çizgi segmentinin kesişimine göre kapalı bir şekil).
 
@@ -1179,13 +1180,13 @@ Chmalların bitiş noktasını tanımlayan noktanın x ve y koordinatlarını be
 
 ( *X1*, *Y1*) ve ( *x2*, *Y2*) parametreleri, üst düzey ve sağ alt köşelerden oluşan bir dikdörtgenin bir parçası olan elips sınırlayıcı bir dikdörtgen sınırlayıcı belirler. ( *X3*, *Y3*) ve ( *x4*, *Y4*) parametreleri, elipsi kesiştiği bir çizginin uç noktalarını belirtir. Bu, seçili kalem kullanılarak çizilir ve seçili fırça kullanılarak doldurulur.
 
-İşlev tarafından çizilen Şekil `Chord` , en fazla genişletilir, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2*  -  *y1* ve şeklin genişliği *x2*  -  *x1*olduğu anlamına gelir.
+İşlev tarafından çizilen Şekil `Chord` , en fazla genişletilir, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2*  -   ve şeklin genişliği *x2*  -  *x1* olduğu anlamına gelir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#31](../../mfc/codesnippet/cpp/cdc-class_3.cpp)]
 
-## <a name="cdcclosefigure"></a><a name="closefigure"></a>CDC:: CloseFigure
+## <a name="cdcclosefigure"></a><a name="closefigure"></a> CDC:: CloseFigure
 
 Yoldaki açık bir şekli kapatır.
 
@@ -1199,13 +1200,13 @@ BOOL CloseFigure();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, geçerli konumdan şeklin ilk noktasına (genellikle üye işlevine en son çağrı tarafından belirtilen nokta) bir çizgi çizerek şekli kapatır `MoveTo` ve satır birleşimi stilini kullanarak satırları bağlar. Bir şekil, `LineTo` yerine üye işlevi kullanılarak kapatılırsa `CloseFigure` , bir JOIN yerine köşeyi oluşturmak için End Caps kullanılır. `CloseFigure`yalnızca cihaz bağlamında açık yol ayracı varsa çağrılmalıdır.
+İşlevi, geçerli konumdan şeklin ilk noktasına (genellikle üye işlevine en son çağrı tarafından belirtilen nokta) bir çizgi çizerek şekli kapatır `MoveTo` ve satır birleşimi stilini kullanarak satırları bağlar. Bir şekil, `LineTo` yerine üye işlevi kullanılarak kapatılırsa `CloseFigure` , bir JOIN yerine köşeyi oluşturmak için End Caps kullanılır. `CloseFigure` yalnızca cihaz bağlamında açık yol ayracı varsa çağrılmalıdır.
 
 Bir yol içindeki bir şekil, bu işlev kullanılarak açıkça kapatılmadığı takdirde açıktır. (Geçerli nokta ve şeklin başlangıç noktası aynı olsa bile bir şekil açık olabilir.) Yeni bir şekle başladıktan sonra yola eklenen herhangi bir çizgi veya eğri `CloseFigure` .
 
-## <a name="cdccreatecompatibledc"></a><a name="createcompatibledc"></a>CDC:: Createuyumluluk Bledc
+## <a name="cdccreatecompatibledc"></a><a name="createcompatibledc"></a> CDC:: Createuyumluluk Bledc
 
-*PDC*tarafından belirtilen cihazla uyumlu bir bellek cihaz bağlamı oluşturur.
+*PDC* tarafından belirtilen cihazla uyumlu bir bellek cihaz bağlamı oluşturur.
 
 ```
 BOOL CreateCompatibleDC(CDC* pDC);
@@ -1232,7 +1233,7 @@ Bu işlev yalnızca, raster işlemlerini destekleyen cihazlar için uyumlu cihaz
 
 [!code-cpp[NVC_MFCDocView#32](../../mfc/codesnippet/cpp/cdc-class_4.cpp)]
 
-## <a name="cdccreatedc"></a><a name="createdc"></a>CDC:: CreateDC
+## <a name="cdccreatedc"></a><a name="createdc"></a> CDC:: CreateDC
 
 Belirtilen cihaz için bir cihaz bağlamı oluşturur.
 
@@ -1268,7 +1269,7 @@ YAZDıR. [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) yapısı kullan
 
 Cihaz adları şu kuralları izler: son nokta üst üste (:) önerilir, ancak isteğe bağlıdır. Windows, iki nokta üst üste ile biten bir cihaz adının, iki nokta olmadan aynı adla aynı bağlantı noktasıyla eşlenmesi için Sonlandırıcı iki noktayı de şeritler. Sürücü ve bağlantı noktası adları başında veya sonunda boşluk içermemelidir. GDI çıkış işlevleri, bilgi bağlamlarla kullanılamaz.
 
-## <a name="cdccreateic"></a><a name="createic"></a>CDC:: CreateIC
+## <a name="cdccreateic"></a><a name="createic"></a> CDC:: CreateIC
 
 Belirtilen cihaz için bir bilgi bağlamı oluşturur.
 
@@ -1304,7 +1305,7 @@ Bilgi bağlamı cihaz bağlamı oluşturmadan cihaz hakkında bilgi almanın hı
 
 Cihaz adları şu kuralları izler: son nokta üst üste (:) önerilir, ancak isteğe bağlıdır. Windows, iki nokta üst üste ile biten bir cihaz adının, iki nokta olmadan aynı adla aynı bağlantı noktasıyla eşlenmesi için Sonlandırıcı iki noktayı de şeritler. Sürücü ve bağlantı noktası adları başında veya sonunda boşluk içermemelidir. GDI çıkış işlevleri, bilgi bağlamlarla kullanılamaz.
 
-## <a name="cdcdeletedc"></a><a name="deletedc"></a>CDC::D eleteDC
+## <a name="cdcdeletedc"></a><a name="deletedc"></a> CDC::D eleteDC
 
 Genel olarak, bu işlevi çağırmayın; yok edicisi sizin için bunu sizin için kullanacaktır.
 
@@ -1330,7 +1331,7 @@ Uygulama, işleyicisi [CWnd:: GetDC](../../mfc/reference/cwnd-class.md#getdc)ça
 
   [CPrintDialog:: GetPrinterDC](../../mfc/reference/cprintdialog-class.md#getprinterdc)örneğine bakın.
 
-## <a name="cdcdeletetempmap"></a><a name="deletetempmap"></a>CDC::D eleteTempMap
+## <a name="cdcdeletetempmap"></a><a name="deletetempmap"></a> CDC::D eleteTempMap
 
 `CWinApp`Boşta kalma süresi işleyicisi tarafından otomatik olarak çağırılır, `DeleteTempMap` `CDC` tarafından oluşturulan geçici nesneleri siler `FromHandle` , ancak `hDC` nesnelerle bağlantılı olarak cihaz bağlamı tutamaçlarını yok etmez `CDC` .
 
@@ -1338,7 +1339,7 @@ Uygulama, işleyicisi [CWnd:: GetDC](../../mfc/reference/cwnd-class.md#getdc)ça
 static void PASCAL DeleteTempMap();
 ```
 
-## <a name="cdcdetach"></a><a name="detach"></a>CDC::D etach
+## <a name="cdcdetach"></a><a name="detach"></a> CDC::D etach
 
 Nesnesinden ayırmak için bu işlevi çağırın `m_hDC` (çıkış cihazı bağlamını) ve `CDC` ıkısını de `m_hDC` `m_hAttribDC` null olarak ayarlayın.
 
@@ -1350,7 +1351,7 @@ HDC Detach();
 
 Bir Windows cihaz bağlamı.
 
-## <a name="cdcdptohimetric"></a><a name="dptohimetric"></a>CDC::D PtoHIMETRIC
+## <a name="cdcdptohimetric"></a><a name="dptohimetric"></a> CDC::D PtoHIMETRIC
 
 Bu işlevi, bir OLE 'e HIMETRIK boyutları verdiğinizde, pikselleri HIMETRIK 'e dönüştürerek kullanın.
 
@@ -1367,7 +1368,7 @@ void DPtoHIMETRIC(LPSIZE lpSize) const;
 
 Cihaz bağlamı nesnesinin eşleme modu MM_LOENGLISH, MM_HIENGLISH, MM_LOMETRIC veya MM_HIMETRIC ise, dönüştürme fiziksel inç piksel sayısını temel alır. Eşleme modu, kısıtlanmış olmayan diğer modlardan (ör. MM_TEXT) biriyse, dönüştürme mantıksal inç piksel sayısını temel alır.
 
-## <a name="cdcdptolp"></a><a name="dptolp"></a>CDC::D PtoLP
+## <a name="cdcdptolp"></a><a name="dptolp"></a> CDC::D PtoLP
 
 Cihaz birimlerini mantıksal birimlere dönüştürür.
 
@@ -1398,7 +1399,7 @@ Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../
 
 İşlevi, cihaz koordinat sisteminden GDI 'nın mantıksal koordinat sistemine kadar her bir noktanın koordinatlarını veya boyut boyutunu eşler. Dönüştürme geçerli eşleme moduna ve cihazın penceresi ve görünüm penceresinin kaynakları ve kapsamları ayarlarına bağlıdır.
 
-## <a name="cdcdraw3drect"></a><a name="draw3drect"></a>CDC::D raw3dRect
+## <a name="cdcdraw3drect"></a><a name="draw3drect"></a> CDC::D raw3dRect
 
 Üç boyutlu bir dikdörtgen çizmek için bu üye işlevini çağırın.
 
@@ -1442,13 +1443,13 @@ Sınırlayıcı dikdörtgeni (mantıksal birimler cinsinden) belirtir. Bu parame
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dikdörtgen, *clrTopLeft* tarafından belirtilen rengin üst ve sol taraflarla, sonra da *clrBottomRight*tarafından belirtilen rengin alt ve sağ taraflarından çizilir.
+Dikdörtgen, *clrTopLeft* tarafından belirtilen rengin üst ve sol taraflarla, sonra da *clrBottomRight* tarafından belirtilen rengin alt ve sağ taraflarından çizilir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#33](../../mfc/codesnippet/cpp/cdc-class_5.cpp)]
 
-## <a name="cdcdrawdragrect"></a><a name="drawdragrect"></a>CDC::D rawDragRect
+## <a name="cdcdrawdragrect"></a><a name="drawdragrect"></a> CDC::D rawDragRect
 
 Bir sürükleme dikdörtgenini yeniden çizmek için bu üye işlevi tekrar tekrar çağırın.
 
@@ -1488,7 +1489,7 @@ Görsel geri bildirimde bulunmak için bunu örnek fare konumu olarak bir döng�
 
 İlk kez çağırdığınızda `DrawDragRect` , *lpRectLast* parametresi null olmalıdır.
 
-## <a name="cdcdrawedge"></a><a name="drawedge"></a>CDC::D rampa
+## <a name="cdcdrawedge"></a><a name="drawedge"></a> CDC::D rampa
 
 Belirtilen tür ve stil dikdörtgeninin kenarlarını çizmek için bu üye işlevi çağırın.
 
@@ -1514,7 +1515,7 @@ BOOL DrawEdge(
 
 Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cdcdrawescape"></a><a name="drawescape"></a>CDC::D Rawkaçış
+## <a name="cdcdrawescape"></a><a name="drawescape"></a> CDC::D Rawkaçış
 
 Grafik cihaz arabirimi (GDI) aracılığıyla doğrudan kullanılamayan bir video görüntüsüne ait çizim özelliklerine erişir.
 
@@ -1544,7 +1545,7 @@ Belirtilen kaçış için gereken giriş yapısına işaret eder.
 
 Bir uygulama çağırdığında `DrawEscape` , *nInputSize* ve *lpszInputData* tarafından tanımlanan veriler doğrudan belirtilen görüntü sürücüsüne geçirilir.
 
-## <a name="cdcdrawfocusrect"></a><a name="drawfocusrect"></a>CDC::D rawFocusRect
+## <a name="cdcdrawfocusrect"></a><a name="drawfocusrect"></a> CDC::D rawFocusRect
 
 Dikdörtgenin odağa sahip olduğunu göstermek için kullanılan stilde bir dikdörtgen çizer.
 
@@ -1562,9 +1563,9 @@ void DrawFocusRect(LPCRECT lpRect);
 Bu bir Boolean XOR işlevi olduğundan, bu işlevi aynı dikdörtgenle ikinci kez çağırmak, dikdörtgeni ekranda kaldırır. Bu işlev tarafından çizilen dikdörtgen kaydırılamıyor. Bu işlev tarafından çizilmiş bir dikdörtgen içeren bir alanı kaydırmak için, ilk olarak, `DrawFocusRect` dikdörtgeni ekranda kaldırmak için çağırın, sonra alanı kaydırın ve ardından `DrawFocusRect` yeni konumda dikdörtgeni çizmek için yeniden çağırın.
 
 > [!CAUTION]
-> `DrawFocusRect`yalnızca MM_TEXT modunda çalışmaktadır. Diğer modlarda, bu işlev odak dikdörtgenini doğru çizmez, ancak hata değerlerini döndürmez.
+> `DrawFocusRect` yalnızca MM_TEXT modunda çalışmaktadır. Diğer modlarda, bu işlev odak dikdörtgenini doğru çizmez, ancak hata değerlerini döndürmez.
 
-## <a name="cdcdrawframecontrol"></a><a name="drawframecontrol"></a>CDC::D rawFrameControl
+## <a name="cdcdrawframecontrol"></a><a name="drawframecontrol"></a> CDC::D rawFrameControl
 
 Belirtilen tür ve stilin kare denetimini çizmek için bu üye işlevini çağırın.
 
@@ -1592,7 +1593,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Birçok durumda *nState* *nType* parametresine bağlıdır. Aşağıdaki listede, dört *nType* değeri ve *nState*arasındaki ilişki gösterilmektedir:
+Birçok durumda *nState* *nType* parametresine bağlıdır. Aşağıdaki listede, dört *nType* değeri ve *nState* arasındaki ilişki gösterilmektedir:
 
 - DFC_BUTTON
 
@@ -1648,7 +1649,7 @@ Bu kod, pencerenin sağ alt köşesine boyut kavrayıcıyı çizer. `OnPaint`Hi�
 
 [!code-cpp[NVC_MFCDocView#34](../../mfc/codesnippet/cpp/cdc-class_6.cpp)]
 
-## <a name="cdcdrawicon"></a><a name="drawicon"></a>CDC::D Rawıcon
+## <a name="cdcdrawicon"></a><a name="drawicon"></a> CDC::D Rawıcon
 
 Cihaza geçerli nesne tarafından temsil edilen bir simge çizer `CDC` .
 
@@ -1683,7 +1684,7 @@ Simgenin sol üst köşesinin mantıksal x ve y koordinatlarını belirtir. Bu p
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevi, simgenin sol üst köşesini *x* ve *y*tarafından belirtilen konuma koyar. Konum, cihaz bağlamının geçerli eşleme moduna tabidir.
+İşlevi, simgenin sol üst köşesini *x* ve *y* tarafından belirtilen konuma koyar. Konum, cihaz bağlamının geçerli eşleme moduna tabidir.
 
 Simge kaynağı daha önce, veya işlevleri kullanılarak yüklenmiş olmalıdır `CWinApp::LoadIcon` `CWinApp::LoadStandardIcon` `CWinApp::LoadOEMIcon` . `MM_TEXT`Bu işlev kullanılmadan önce eşleme modunun seçilmesi gerekir.
 
@@ -1691,7 +1692,7 @@ Simge kaynağı daha önce, veya işlevleri kullanılarak yüklenmiş olmalıdı
 
   [CWnd:: ısiconic](../../mfc/reference/cwnd-class.md#isiconic)için örneğe bakın.
 
-## <a name="cdcdrawstate"></a><a name="drawstate"></a>CDC::D rawState
+## <a name="cdcdrawstate"></a><a name="drawstate"></a> CDC::D rawState
 
 Bir görüntüyü göstermek ve devre dışı veya varsayılan durum gibi bir durumu belirtmek için görsel bir efekt uygulamak üzere bu üye işlevini çağırın.
 
@@ -1795,7 +1796,7 @@ Metin işaretçisi.
 Hızlandırıcı anımsatıcı içerebilen metin. *LDATA* parametresi, dizenin adresini belirtir ve *nTextLen* parametresi uzunluğu belirtir. *NTextLen* 0 ise, dizenin null ile sonlandırıldığını kabul edilir.
 
 *nTextLen*<br/>
-*LpszText*tarafından işaret edilen metin dizesinin uzunluğu. *NTextLen* 0 ise, dizenin null ile sonlandırıldığını kabul edilir.
+*LpszText* tarafından işaret edilen metin dizesinin uzunluğu. *NTextLen* 0 ise, dizenin null ile sonlandırıldığını kabul edilir.
 
 *lpDrawProc*<br/>
 Bir görüntüyü işlemek için kullanılan geri çağırma işlevine yönelik bir işaretçi. *NFlags* içindeki görüntü türü DST_COMPLEX ise bu parametre gereklidir. Bu, isteğe bağlıdır ve görüntü türü DST_TEXT NULL olabilir. Diğer tüm görüntü türleri için bu parametre yok sayılır. Geri çağırma işlevi hakkında daha fazla bilgi için Windows SDK [DrawStateProc](/windows/win32/api/winuser/nc-winuser-drawstateproc) işlevine bakın.
@@ -1807,7 +1808,7 @@ Görüntüyle ilgili bilgileri belirtir. Bu parametrenin anlamı, görüntü tü
 
 Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cdcdrawtext"></a><a name="drawtext"></a>CDC::D rawText
+## <a name="cdcdrawtext"></a><a name="drawtext"></a> CDC::D rawText
 
 Verilen dikdörtgenin metnini biçimlendirmek için bu üye işlevi çağırın. Ek biçimlendirme seçenekleri belirtmek için, [CDC::D rawTextEx](#drawtextex)kullanın.
 
@@ -1850,7 +1851,7 @@ Metni biçimlendirme yöntemini belirtir. Windows SDK [DrawText](/windows/win32/
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sekmeleri uygun alanlara genişleterek, metni belirli bir dikdörtgenin soluna, sağına veya merkezine hizalayarak ve metni verilen dikdörtgenin içine sığan çizgilere bölerek metin biçimlendirir. Biçimlendirme türü *nFormat*tarafından belirtilir.
+Sekmeleri uygun alanlara genişleterek, metni belirli bir dikdörtgenin soluna, sağına veya merkezine hizalayarak ve metni verilen dikdörtgenin içine sığan çizgilere bölerek metin biçimlendirir. Biçimlendirme türü *nFormat* tarafından belirtilir.
 
 Bu üye işlevi, metin çizmek için cihaz bağlamının seçili yazı tipini, metin rengini ve arka plan rengini kullanır. DT_NOCLIP biçimi kullanılmamışsa metnin, `DrawText` verilen dikdörtgenin dışında görünmemesi için metni kırpar. DT_SINGLELINE biçim verilmediği takdirde, tüm biçimlendirmenin birden çok satıra sahip olduğu varsayılır.
 
@@ -1858,11 +1859,11 @@ Seçilen yazı tipi belirtilen dikdörtgen için çok büyükse, `DrawText` üye
 
 DT_CALCRECT Bayrağı belirtilmişse, *lpRect* tarafından belirtilen dikdörtgen, metni çizmek için gereken genişlik ve yüksekliği yansıtacak şekilde güncelleştirilir.
 
-TA_UPDATECP metin hizalama bayrağı ayarlandıysa (bkz [. CDC:: SetTextAlign](#settextalign)), `DrawText` metni, belirtilen dikdörtgenin solunda değil, geçerli konumdan başlayarak görüntüler. `DrawText`TA_UPDATECP bayrağı ayarlandığında metni kaydıramaz (yani, DT_WORDBREAK bayrağının hiçbir etkisi olmayacaktır).
+TA_UPDATECP metin hizalama bayrağı ayarlandıysa (bkz [. CDC:: SetTextAlign](#settextalign)), `DrawText` metni, belirtilen dikdörtgenin solunda değil, geçerli konumdan başlayarak görüntüler. `DrawText` TA_UPDATECP bayrağı ayarlandığında metni kaydıramaz (yani, DT_WORDBREAK bayrağının hiçbir etkisi olmayacaktır).
 
 Metin rengi [CDC:: SetTextColor](#settextcolor)ile ayarlanabilir.
 
-## <a name="cdcdrawtextex"></a><a name="drawtextex"></a>CDC::D rawTextEx
+## <a name="cdcdrawtextex"></a><a name="drawtextex"></a> CDC::D rawTextEx
 
 Metni verilen dikdörtgende biçimlendirir.
 
@@ -1906,11 +1907,11 @@ Ek biçimlendirme seçenekleri belirten bir [drawtextparams](/windows/win32/api/
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sekmeleri uygun alanlara genişleterek, metni belirli bir dikdörtgenin soluna, sağına veya merkezine hizalayarak ve metni verilen dikdörtgenin içine sığan çizgilere bölerek metin biçimlendirir. Biçimlendirme türü *nFormat* ve *lpDTParams*tarafından belirtilir. Daha fazla bilgi için Windows SDK bkz. [CDC::D rawText](#drawtext) ve [DrawTextEx](/windows/win32/api/winuser/nf-winuser-drawtextexw) .
+Sekmeleri uygun alanlara genişleterek, metni belirli bir dikdörtgenin soluna, sağına veya merkezine hizalayarak ve metni verilen dikdörtgenin içine sığan çizgilere bölerek metin biçimlendirir. Biçimlendirme türü *nFormat* ve *lpDTParams* tarafından belirtilir. Daha fazla bilgi için Windows SDK bkz. [CDC::D rawText](#drawtext) ve [DrawTextEx](/windows/win32/api/winuser/nf-winuser-drawtextexw) .
 
 Metin rengi [CDC:: SetTextColor](#settextcolor)ile ayarlanabilir.
 
-## <a name="cdcellipse"></a><a name="ellipse"></a>CDC:: Elips
+## <a name="cdcellipse"></a><a name="ellipse"></a> CDC:: Elips
 
 Elips çizer.
 
@@ -1947,13 +1948,13 @@ Elips 'in sınırlayıcı dikdörtgenini belirtir. Ayrıca, bu parametre için b
 
 ### <a name="remarks"></a>Açıklamalar
 
-Elipsin ortası, *x1*, *Y1*, *x2*, ve *Y2*veya *lpRect*tarafından belirtilen sınırlayıcı dikdörtgenin ortatdır. Elips geçerli kalemle çizilir ve iç kısmı geçerli fırçayla doldurulur.
+Elipsin ortası, *x1*, *Y1*, *x2*, ve *Y2* veya *lpRect* tarafından belirtilen sınırlayıcı dikdörtgenin ortatdır. Elips geçerli kalemle çizilir ve iç kısmı geçerli fırçayla doldurulur.
 
-Bu işlev tarafından çizilen Şekil, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, şeklin yüksekliğinin *Y2*  -  *y1* ve şeklin genişliği *x2*  -  *x1*olduğu anlamına gelir.
+Bu işlev tarafından çizilen Şekil, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, şeklin yüksekliğinin *Y2*  -   ve şeklin genişliği *x2*  -  *x1* olduğu anlamına gelir.
 
 Sınırlayıcı dikdörtgenin genişliği veya yüksekliği 0 ise, elips çizilmez.
 
-## <a name="cdcenddoc"></a><a name="enddoc"></a>CDC:: EndDoc
+## <a name="cdcenddoc"></a><a name="enddoc"></a> CDC:: EndDoc
 
 [StartDoc](#startdoc) üye işlevine yapılan bir çağrı ile başlatılan bir yazdırma işini sonlandırır.
 
@@ -1977,7 +1978,7 @@ Bu işlev meta dosyaların içinde kullanılmamalıdır.
 
   [CDC:: StartDoc](#startdoc)örneğine bakın.
 
-## <a name="cdcendpage"></a><a name="endpage"></a>CDC:: EndPage
+## <a name="cdcendpage"></a><a name="endpage"></a> CDC:: EndPage
 
 Cihaza uygulamanın bir sayfaya yazma tamamlandığını bildirir.
 
@@ -1999,7 +2000,7 @@ Bu üye işlevi, NEWFRAME yazıcı kaçış yerini alır. NEWFRAME 'in aksine, b
 
   [CDC:: StartDoc](#startdoc)örneğine bakın.
 
-## <a name="cdcendpath"></a><a name="endpath"></a>CDC:: EndPath
+## <a name="cdcendpath"></a><a name="endpath"></a> CDC:: EndPath
 
 Bir yol ayracını kapatır ve köşeli ayracın cihaz bağlamına göre tanımlanan yolu seçer.
 
@@ -2015,7 +2016,7 @@ BOOL EndPath();
 
   [CDC:: BeginPath](#beginpath)örneğine bakın.
 
-## <a name="cdcenumobjects"></a><a name="enumobjects"></a>CDC:: EnumObjects
+## <a name="cdcenumobjects"></a><a name="enumobjects"></a> CDC:: EnumObjects
 
 Bir cihaz bağlamında kullanılabilen kalemleri ve fırçaları numaralandırır.
 
@@ -2063,7 +2064,7 @@ Ayrıca, geri çağırma işlevlerinin Windows 'a döndürülmeden önce Microso
 
 [!code-cpp[NVC_MFCDocView#35](../../mfc/codesnippet/cpp/cdc-class_7.cpp)]
 
-## <a name="cdcescape"></a><a name="escape"></a>CDC:: kaçış
+## <a name="cdcescape"></a><a name="escape"></a> CDC:: kaçış
 
 Bu üye işlevi Win32 programlamasında neredeyse kullanılmıyor.
 
@@ -2090,7 +2091,7 @@ Gerçekleştirilecek kaçış işlevini belirtir.
 Kaçış işlevlerinin tüm listesi için, Windows SDK [kaçış](/windows/win32/api/wingdi/nf-wingdi-escape) bölümüne bakın.
 
 *nCount*<br/>
-*LpszInData*tarafından işaret edilen veri baytlarının sayısını belirtir.
+*LpszInData* tarafından işaret edilen veri baytlarının sayısını belirtir.
 
 *lpszInData*<br/>
 Bu kaçış için gereken giriş veri yapısına işaret eder.
@@ -2146,7 +2147,7 @@ Bu üye işlevi, uygulamaların GDI aracılığıyla doğrudan kullanılamayan b
 
 Uygulamanız önceden tanımlanmış kaçış değerlerini kullanıyorsa, ilk sürümü kullanın. Uygulamanız özel kaçış değerlerini tanımlıyorsa ikinci sürümü kullanın. İkinci sürüm hakkında daha fazla bilgi için Windows SDK [ExtEscape](/windows/win32/api/wingdi/nf-wingdi-extescape) bakın.
 
-## <a name="cdcexcludecliprect"></a><a name="excludecliprect"></a>CDC:: Excludeclienprect
+## <a name="cdcexcludecliprect"></a><a name="excludecliprect"></a> CDC:: Excludeclienprect
 
 Varolan kırpma bölgesinin belirtilen dikdörtgenden oluşan yeni bir kırpma bölgesi oluşturur.
 
@@ -2191,9 +2192,9 @@ Yeni kırpma bölgesinin türünü belirtir. Aşağıdaki değerlerden herhangi 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu dikdörtgenin genişliği, *x2*x1 'nin mutlak değeriyle belirtilir ve  -  *x1*32.767 birimi aşmamalıdır. Bu sınır, dikdörtgenin yüksekliği de için geçerlidir.
+Bu dikdörtgenin genişliği, *x2* x1 'nin mutlak değeriyle belirtilir ve  -  32.767 birimi aşmamalıdır. Bu sınır, dikdörtgenin yüksekliği de için geçerlidir.
 
-## <a name="cdcexcludeupdatergn"></a><a name="excludeupdatergn"></a>CDC:: ExcludeUpdateRgn
+## <a name="cdcexcludeupdatergn"></a><a name="excludeupdatergn"></a> CDC:: ExcludeUpdateRgn
 
 Penceredeki güncelleştirilmiş bir bölgeyi nesneyle ilişkili kırpma bölgesinden dışlayarak pencerenin geçersiz alanlarının çizilmesini önler `CDC` .
 
@@ -2218,7 +2219,7 @@ Dışlanan bölgenin türü. Aşağıdaki değerlerden herhangi biri olabilir:
 
 - Bölgede SIMPLEREGIÇAKıŞAN kenarlık yok.
 
-## <a name="cdcextfloodfill"></a><a name="extfloodfill"></a>CDC:: Extfgevdfill
+## <a name="cdcextfloodfill"></a><a name="extfloodfill"></a> CDC:: Extfgevdfill
 
 Görüntüleme yüzeyi alanını geçerli fırçayla doldurur.
 
@@ -2239,14 +2240,14 @@ Doldurmanın başladığı noktanın mantıksal x koordinatını belirtir.
 Doldurmanın başladığı noktanın mantıksal y koordinatını belirtir.
 
 *crColor*<br/>
-Doldurulacak alanın veya sınırın rengini belirtir. *CrColor* yorumu *nFillType*değerine bağlıdır.
+Doldurulacak alanın veya sınırın rengini belirtir. *CrColor* yorumu *nFillType* değerine bağlıdır.
 
 *nFillType*<br/>
 Gerçekleştirilecek taşma dolgusu türünü belirtir. Bu, aşağıdaki değerlerden biri olmalıdır:
 
-- FLOODFILLBORDER doldurma alanı, *crColor*tarafından belirtilen renge göre sınırlanır. Bu stil, tarafından gerçekleştirilen doldurma ile aynıdır `FloodFill` .
+- FLOODFILLBORDER doldurma alanı, *crColor* tarafından belirtilen renge göre sınırlanır. Bu stil, tarafından gerçekleştirilen doldurma ile aynıdır `FloodFill` .
 
-- FLOODFILLSURFACE doldurma alanı *crColor*tarafından belirtilen renkle tanımlanır. Doldurma, renkle karşılaşıldığı sürece tüm yönlere sürekli olarak devam eder. Bu stil, çok renkli sınırlara sahip alanların doldurulması için faydalıdır.
+- FLOODFILLSURFACE doldurma alanı *crColor* tarafından belirtilen renkle tanımlanır. Doldurma, renkle karşılaşıldığı sürece tüm yönlere sürekli olarak devam eder. Bu stil, çok renkli sınırlara sahip alanların doldurulması için faydalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2254,15 +2255,15 @@ Gerçekleştirilecek taşma dolgusu türünü belirtir. Bu, aşağıdaki değerl
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi, `FloodFill` *nFillType*içinde bir doldurma türü belirtebileceğiniz için şundan daha fazla esneklik sunar.
+Bu üye işlevi, `FloodFill` *nFillType* içinde bir doldurma türü belirtebileceğiniz için şundan daha fazla esneklik sunar.
 
-*NFillType* , FLOODFILLBORDER olarak ayarlandıysa, alanın *crColor*tarafından belirtilen renkle tamamen sınırlı olduğu varsayılır. İşlevi *x* ve *y* tarafından belirtilen noktada başlar ve tüm yönlere renk sınırına girer.
+*NFillType* , FLOODFILLBORDER olarak ayarlandıysa, alanın *crColor* tarafından belirtilen renkle tamamen sınırlı olduğu varsayılır. İşlevi *x* ve *y* tarafından belirtilen noktada başlar ve tüm yönlere renk sınırına girer.
 
-*NFillType* , ÇIÇODFILLSURFACE olarak ayarlandıysa, işlev *x* ve *y* tarafından belirtilen noktada başlar ve tüm yönlere devam ederek *crColor*tarafından belirtilen rengi içeren tüm bitişik alanları doldurun.
+*NFillType* , ÇIÇODFILLSURFACE olarak ayarlandıysa, işlev *x* ve *y* tarafından belirtilen noktada başlar ve tüm yönlere devam ederek *crColor* tarafından belirtilen rengi içeren tüm bitişik alanları doldurun.
 
 Yalnızca bellek cihaz bağlamları ve raster görüntüleme teknolojisi desteğini destekleyen cihazlar `ExtFloodFill` . Daha fazla bilgi için bkz. [GetDeviceCaps](#getdevicecaps) üye işlevi.
 
-## <a name="cdcexttextout"></a><a name="exttextout"></a>CDC:: ExtTextOut
+## <a name="cdcexttextout"></a><a name="exttextout"></a> CDC:: ExtTextOut
 
 Şu anda seçili olan yazı tipini kullanarak dikdörtgen bir bölge içinde bir karakter dizesi yazmak için bu üye işlevi çağırın.
 
@@ -2323,9 +2324,9 @@ Bitişik karakter hücrelerinin kaynakları arasındaki mesafeyi belirten bir de
 
 Dikdörtgen bölge donuk olabilir (geçerli arka plan rengiyle doldurulmuştur) ve bir kırpma bölgesi olabilir.
 
-*Noseçenekler* 0 Ise ve *lpRect* null ise, işlev dikdörtgen bir bölge kullanmadan cihaz bağlamına metin yazar. Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Uygulamanın, çağrı yaptığı sırada geçerli konumu güncelleştirmesi gerekiyorsa `ExtTextOut` , uygulama `CDC` *nFlags* üye işlevini TA_UPDATECP olarak ayarlanmış şekilde çağırabilir [SetTextAlign](#settextalign) . Bu bayrak ayarlandığında Windows, sonraki çağrılarındaki *x* ve *y* 'yi yoksayar `ExtTextOut` ve bunun yerine geçerli konumu kullanır. Bir uygulama geçerli konumu güncelleştirmek için TA_UPDATECP kullandığında, `ExtTextOut` geçerli konumu önceki metin satırının sonuna veya *Lpdxgenişlikleri*tarafından işaret edilen öğenin son öğesi tarafından belirtilen konuma (hangisi daha büyükse) ayarlar.
+*Noseçenekler* 0 Ise ve *lpRect* null ise, işlev dikdörtgen bir bölge kullanmadan cihaz bağlamına metin yazar. Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Uygulamanın, çağrı yaptığı sırada geçerli konumu güncelleştirmesi gerekiyorsa `ExtTextOut` , uygulama `CDC` *nFlags* üye işlevini TA_UPDATECP olarak ayarlanmış şekilde çağırabilir [](#settextalign) . Bu bayrak ayarlandığında Windows, sonraki çağrılarındaki *x* ve *y* 'yi yoksayar `ExtTextOut` ve bunun yerine geçerli konumu kullanır. Bir uygulama geçerli konumu güncelleştirmek için TA_UPDATECP kullandığında, `ExtTextOut` geçerli konumu önceki metin satırının sonuna veya *Lpdxgenişlikleri* tarafından işaret edilen öğenin son öğesi tarafından belirtilen konuma (hangisi daha büyükse) ayarlar.
 
-## <a name="cdcfillpath"></a><a name="fillpath"></a>CDC:: FillPath
+## <a name="cdcfillpath"></a><a name="fillpath"></a> CDC:: FillPath
 
 Geçerli yoldaki tüm açık rakamları kapatır ve geçerli fırça ve çokgen doldurma modunu kullanarak yolun iç kısmını doldurur.
 
@@ -2341,7 +2342,7 @@ BOOL FillPath();
 
 İç kısmı doldurulduktan sonra, yol cihaz bağlamından atılır.
 
-## <a name="cdcfillrect"></a><a name="fillrect"></a>CDC:: FillRect
+## <a name="cdcfillrect"></a><a name="fillrect"></a> CDC:: FillRect
 
 Belirtilen fırçayı kullanarak belirli bir dikdörtgeni dolduracak şekilde bu üye işlevini çağırın.
 
@@ -2367,11 +2368,11 @@ Fırçanın, [CBrush](../../mfc/reference/cbrush-class.md) üye Işlevleri [Crea
 
 Belirtilen dikdörtgeni doldururken, `FillRect` dikdörtgenin sağ ve alt kenarları dahil değildir. GDI, geçerli eşleme modundan bağımsız olarak, bir dikdörtgeni, doğru sütunu ve alt satırı içermez, ancak eklemez. `FillRect``top` `bottom` belirtilen dikdörtgenin,, `left` , ve üyelerinin değerlerini karşılaştırır `right` . `bottom`Küçüktür veya eşittir veya eşitse ya da `top` `right` eşitse `left` , dikdörtgen çizilmez.
 
-`FillRect`, [CDC:: FillSolidRect](#fillsolidrect); öğesine benzerdir. Ancak, `FillRect` bir fırça alır ve bu nedenle düz renk, titremeli rengi, taranmış fırçalar veya bir örüntü sahip bir dikdörtgeni doldurmanız için kullanılabilir. `FillSolidRect`yalnızca düz renkler kullanır (COLORREF parametresiyle gösterilir). `FillRect`genellikle daha yavaştır `FillSolidRect` .
+`FillRect` , [CDC:: FillSolidRect](#fillsolidrect); öğesine benzerdir. Ancak, `FillRect` bir fırça alır ve bu nedenle düz renk, titremeli rengi, taranmış fırçalar veya bir örüntü sahip bir dikdörtgeni doldurmanız için kullanılabilir. `FillSolidRect` yalnızca düz renkler kullanır (COLORREF parametresiyle gösterilir). `FillRect` genellikle daha yavaştır `FillSolidRect` .
 
-## <a name="cdcfillrgn"></a><a name="fillrgn"></a>CDC:: FillRgn
+## <a name="cdcfillrgn"></a><a name="fillrgn"></a> CDC:: FillRgn
 
-*PRgn* tarafından belirtilen bölgeyi *pBrush*tarafından belirtilen fırçayla doldurur.
+*PRgn* tarafından belirtilen bölgeyi *pBrush* tarafından belirtilen fırçayla doldurur.
 
 ```
 BOOL FillRgn(
@@ -2399,7 +2400,7 @@ Fırçanın,,, `CBrush` `CreateHatchBrush` `CreatePatternBrush` `CreateSolidBrus
 
   [CRgn:: CreateRoundRectRgn](../../mfc/reference/crgn-class.md#createroundrectrgn)için örneğe bakın.
 
-## <a name="cdcfillsolidrect"></a><a name="fillsolidrect"></a>CDC:: FillSolidRect
+## <a name="cdcfillsolidrect"></a><a name="fillsolidrect"></a> CDC:: FillSolidRect
 
 Verilen dikdörtgeni belirtilen düz renkle dolduracak şekilde bu üye işlevi çağırın.
 
@@ -2437,12 +2438,12 @@ Dikdörtgenin yüksekliğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`FillSolidRect`[CDC:: FillRect](#fillrect); öğesine çok benzer. Ancak, `FillSolidRect` yalnızca düz renkler kullanır (COLORREF parametresi tarafından gösterilir), `FillRect` bir fırça alır ve bu nedenle bir dikdörtgeni düz renk, titremeli rengi, taranmış fırçalar veya bir örüntüle dolduracak şekilde kullanılabilir. `FillSolidRect`genellikle değerinden daha hızlıdır `FillRect` .
+`FillSolidRect`[CDC:: FillRect](#fillrect); öğesine çok benzer. Ancak, `FillSolidRect` yalnızca düz renkler kullanır (COLORREF parametresi tarafından gösterilir), `FillRect` bir fırça alır ve bu nedenle bir dikdörtgeni düz renk, titremeli rengi, taranmış fırçalar veya bir örüntüle dolduracak şekilde kullanılabilir. `FillSolidRect` genellikle değerinden daha hızlıdır `FillRect` .
 
 > [!NOTE]
-> ' İ çağırdığınızda, `FillSolidRect` daha önce [SetBkColor](#setbkcolor)kullanılarak ayarlanan arka plan rengi *clr*tarafından belirtilen renge ayarlanır.
+> ' İ çağırdığınızda, `FillSolidRect` daha önce [SetBkColor](#setbkcolor)kullanılarak ayarlanan arka plan rengi *clr* tarafından belirtilen renge ayarlanır.
 
-## <a name="cdcflattenpath"></a><a name="flattenpath"></a>CDC:: DÜZEDEN yol
+## <a name="cdcflattenpath"></a><a name="flattenpath"></a> CDC:: DÜZEDEN yol
 
 Seçili yoldaki tüm eğrileri geçerli cihaz bağlamına dönüştürür ve her eğriyi bir satır dizisine dönüştürür.
 
@@ -2454,7 +2455,7 @@ BOOL FlattenPath();
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-## <a name="cdcfloodfill"></a><a name="floodfill"></a>CDC:: FloodFill
+## <a name="cdcfloodfill"></a><a name="floodfill"></a> CDC:: FloodFill
 
 Görüntüleme yüzeyi alanını geçerli fırçayla doldurur.
 
@@ -2478,19 +2479,19 @@ Sınırın rengini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sıfır dışı; Aksi takdirde 0 döndürülür, doldurma tamamlanmayabilir, verilen nokta *crColor*tarafından belirtilen sınır rengine sahiptir veya nokta kırpma bölgesinin dışındadır.
+İşlev başarılı olursa sıfır dışı; Aksi takdirde 0 döndürülür, doldurma tamamlanmayabilir, verilen nokta *crColor* tarafından belirtilen sınır rengine sahiptir veya nokta kırpma bölgesinin dışındadır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alanın, *crColor*tarafından belirtilen şekilde sınırlı olduğu varsayılır. `FloodFill`İşlevi *x* ve *y* tarafından belirtilen noktada başlar ve renk sınırlarına tüm yönlere devam eder.
+Alanın, *crColor* tarafından belirtilen şekilde sınırlı olduğu varsayılır. `FloodFill`İşlevi *x* ve *y* tarafından belirtilen noktada başlar ve renk sınırlarına tüm yönlere devam eder.
 
 Yalnızca bellek cihaz bağlamları ve raster görüntüleme teknolojisini destekleyen cihazlar `FloodFill` üye işlevini destekler. RC_BITBLT özelliği hakkında daha fazla bilgi için bkz `GetDeviceCaps` . üye işlevi.
 
 `ExtFloodFill`İşlev benzer bir özellik sağlar, ancak daha fazla esneklik sağlar.
 
-## <a name="cdcframerect"></a><a name="framerect"></a>CDC:: FrameRect
+## <a name="cdcframerect"></a><a name="framerect"></a> CDC:: FrameRect
 
-*LpRect*tarafından belirtilen dikdörtgenin çevresine bir kenarlık çizer.
+*LpRect* tarafından belirtilen dikdörtgenin çevresine bir kenarlık çizer.
 
 ```cpp
 void FrameRect(
@@ -2514,9 +2515,9 @@ Dikdörtgenin `bottom` koordinatı küçüktür veya eşitse ya da küçüktür 
 
 Tarafından çizilen sınır, `FrameRect` `Rectangle` aynı koordinatları kullanılarak ( `Rectangle` 1 mantıksal birim genişliğinde bir kalem kullanıyorsa), üye işlevi tarafından çizilen bir kenarlıkla aynı konumda bulunur. Dikdörtgenin iç kısmı doldurulmamış `FrameRect` .
 
-## <a name="cdcframergn"></a><a name="framergn"></a>CDC:: FrameRgn
+## <a name="cdcframergn"></a><a name="framergn"></a> CDC:: FrameRgn
 
-*PBrush*tarafından belirtilen fırçayı kullanarak *pRgn* tarafından belirtilen bölgenin etrafına bir kenarlık çizer.
+*PBrush* tarafından belirtilen fırçayı kullanarak *pRgn* tarafından belirtilen bölgenin etrafına bir kenarlık çizer.
 
 ```
 BOOL FrameRgn(
@@ -2548,7 +2549,7 @@ Cihaz birimlerindeki yatay fırça darbeleri içindeki kenarlığın yüksekliğ
 
   [CRgn:: CombineRgn](../../mfc/reference/crgn-class.md#combinergn)için örneğe bakın.
 
-## <a name="cdcfromhandle"></a><a name="fromhandle"></a>CDC:: FromHandle
+## <a name="cdcfromhandle"></a><a name="fromhandle"></a> CDC:: FromHandle
 
 Bir `CDC` cihaz bağlamına bir tanıtıcı verildiğinde, nesne için bir işaretçi döndürür.
 
@@ -2573,7 +2574,7 @@ Bir `CDC` nesne tutamaya iliştirilmişse, geçici bir `CDC` nesne oluşturulur 
 
   [CPrintDialog:: GetPrinterDC](../../mfc/reference/cprintdialog-class.md#getprinterdc)örneğine bakın.
 
-## <a name="cdcgetarcdirection"></a><a name="getarcdirection"></a>CDC:: GetArcDirection
+## <a name="cdcgetarcdirection"></a><a name="getarcdirection"></a> CDC:: GetArcDirection
 
 Cihaz bağlamı için geçerli yay yönünü döndürür.
 
@@ -2595,7 +2596,7 @@ Bir hata oluşursa, dönüş değeri sıfırdır.
 
 Yay ve dikdörtgen işlevleri yay yönünü kullanır.
 
-## <a name="cdcgetaspectratiofilter"></a><a name="getaspectratiofilter"></a>CDC:: GetAspectRatioFilter
+## <a name="cdcgetaspectratiofilter"></a><a name="getaspectratiofilter"></a> CDC:: GetAspectRatioFilter
 
 Geçerli en boy oranı filtresinin ayarını alır.
 
@@ -2611,7 +2612,7 @@ CSize GetAspectRatioFilter() const;
 
 En boy oranı, bir cihazın piksel genişliği ve yüksekliğiyle oluşturulan orandır. Bir cihazın en boy oranıyla ilgili bilgiler, yazı tiplerinin oluşturulması, seçilmesi ve gösterilmesi için kullanılır. Windows, tüm kullanılabilir yazı tiplerinin belirli bir boyut oranı için tasarlanan yazı tiplerini seçmek için, en boy oranı filtresi olan özel bir filtre sağlar. Filtre, üye işlevi tarafından belirtilen en boy oranını kullanır `SetMapperFlags` .
 
-## <a name="cdcgetbkcolor"></a><a name="getbkcolor"></a>CDC:: GetBkColor
+## <a name="cdcgetbkcolor"></a><a name="getbkcolor"></a> CDC:: GetBkColor
 
 Geçerli arka plan rengini döndürür.
 
@@ -2627,7 +2628,7 @@ Bir RGB renk değeri.
 
 Arka plan modu donuk ise, sistem, stili oluşturulmuş satırlardaki boşlukları, fırçalar içindeki taranmış çizgiler arasındaki boşlukları ve karakter hücrelerindeki arka planı bir arada dolduracak şekilde arka plan rengini kullanır. Sistem Ayrıca renk ve tek renkli cihaz bağlamları arasında bit eşlemler dönüştürürken arka plan rengini de kullanır.
 
-## <a name="cdcgetbkmode"></a><a name="getbkmode"></a>CDC:: GetBkMode
+## <a name="cdcgetbkmode"></a><a name="getbkmode"></a> CDC:: GetBkMode
 
 Arka plan modunu döndürür.
 
@@ -2643,7 +2644,7 @@ DONUK veya saydam olabilen geçerli arka plan modu.
 
 Arka plan modu, sistemin metin, taranmış fırçalar veya düz bir çizgi olmayan herhangi bir kalem stili çizmeksizin çizim yüzeyindeki mevcut arka plan renklerini kaldırıp kaldırmadığını tanımlar.
 
-## <a name="cdcgetboundsrect"></a><a name="getboundsrect"></a>CDC:: GetBoundsRect
+## <a name="cdcgetboundsrect"></a><a name="getboundsrect"></a> CDC:: GetBoundsRect
 
 Belirtilen cihaz bağlamı için geçerli birikmiş sınırlayıcı dikdörtgeni döndürür.
 
@@ -2677,7 +2678,7 @@ Sınırlayıcı dikdörtgenin döndürülmeden sonra temizlenip temizlenmeyeceğ
 
 - DCB_DISABLE sınırlayıcı birikme kapalıdır.
 
-## <a name="cdcgetbrushorg"></a><a name="getbrushorg"></a>CDC:: Getbrühorg
+## <a name="cdcgetbrushorg"></a><a name="getbrushorg"></a> CDC:: Getbrühorg
 
 Cihaz bağlamı için seçili olan fırçanın başlangıcını (cihaz birimlerinde) alır.
 
@@ -2693,7 +2694,7 @@ Fırçanın (cihaz birimlerindeki) bir [CPoint](../../atl-mfc-shared/reference/c
 
 İlk fırça kaynağı, istemci alanının (0, 0). Dönüş değeri, bu noktayı Masaüstü penceresinin kaynağına göre cihaz birimlerinde belirtir.
 
-## <a name="cdcgetcharacterplacement"></a><a name="getcharacterplacement"></a>CDC:: Getkarakteryerleşimi
+## <a name="cdcgetcharacterplacement"></a><a name="getcharacterplacement"></a> CDC:: Getkarakteryerleşimi
 
 Bir karakter dizesindeki çeşitli bilgi türlerini alır.
 
@@ -2742,7 +2743,7 @@ Dizenin gerekli dizilere nasıl işlenmesi gerektiğini belirtir. Bu parametre, 
 
 Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [Getkarakteryerleştirmesi](/windows/win32/api/wingdi/nf-wingdi-getcharacterplacementw)işlevinin işlevselliğine öykünür.
 
-## <a name="cdcgetcharabcwidths"></a><a name="getcharabcwidths"></a>CDC:: GetCharABCWidths
+## <a name="cdcgetcharabcwidths"></a><a name="getcharabcwidths"></a> CDC:: GetCharABCWidths
 
 Geçerli TrueType yazı tipinde belirtilen aralıktaki ardışık karakterlerin genişliğini alır.
 
@@ -2790,7 +2791,7 @@ Varsayılan karakterin ABC genişlikleri, şu anda seçili olan yazı tipinin d�
 
 TrueType olmayan yazı tiplerinde karakterlerin genişliklerini almak için, uygulamaların [GetCharWidth](/windows/win32/api/wingdi/nf-wingdi-getcharwidthw) Windows işlevini kullanması gerekir.
 
-## <a name="cdcgetcharabcwidthsi"></a><a name="getcharabcwidthsi"></a>CDC:: GetCharABCWidthsI
+## <a name="cdcgetcharabcwidthsi"></a><a name="getcharabcwidthsi"></a> CDC:: GetCharABCWidthsI
 
 Geçerli TrueType yazı tipinde belirtilen bir aralıktaki ardışık karakter dizinlerinin genişliğini mantıksal birimlerde alır.
 
@@ -2824,7 +2825,7 @@ Karakter genişliklerini alan bir [ABC](/windows/win32/api/wingdi/ns-wingdi-abc)
 
 Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetCharABCWidthsI](/windows/win32/api/wingdi/nf-wingdi-getcharabcwidthsi)işlevinin işlevselliğine öykünür.
 
-## <a name="cdcgetcharwidth"></a><a name="getcharwidth"></a>CDC:: GetCharWidth
+## <a name="cdcgetcharwidth"></a><a name="getcharwidth"></a> CDC:: GetCharWidth
 
 Giriş cihazı bağlamını kullanarak, geçerli yazı tipindeki ardışık bir karakter grubundaki tek tek karakterlerin genişliklerini alır `m_hAttribDC` .
 
@@ -2862,11 +2863,11 @@ Karakter genişliklerini almak için bir arabelleğe işaret eder. Döndürülen
 
 Örneğin, *nFirstChar* , ' a ' harfini tanımlarsa ve *nLastChar* ' z ' harfini tanımlıyorsa, işlev tüm küçük harfli karakterlerin genişliklerini alır.
 
-İşlevi, *lpBuffer*tarafından işaret edilen arabellekteki değerleri depolar. Bu arabellek, tüm genişlikleri tutabilecek kadar büyük olmalıdır. Diğer bir deyişle, verilen örnekte en az 26 giriş olmalıdır.
+İşlevi, *lpBuffer* tarafından işaret edilen arabellekteki değerleri depolar. Bu arabellek, tüm genişlikleri tutabilecek kadar büyük olmalıdır. Diğer bir deyişle, verilen örnekte en az 26 giriş olmalıdır.
 
 Ardışık karakter grubundaki bir karakter belirli bir yazı tipinde yoksa, varsayılan karakterin genişlik değeri atanır.
 
-## <a name="cdcgetcharwidthi"></a><a name="getcharwidthi"></a>CDC:: GetCharWidthI
+## <a name="cdcgetcharwidthi"></a><a name="getcharwidthi"></a> CDC:: GetCharWidthI
 
 Geçerli yazı tipindeki belirli bir aralıktaki ardışık karakter dizinlerinin mantıksal koordinatlara göre genişlerini alır.
 
@@ -2900,7 +2901,7 @@ Genişlikler alan bir arabelleğin işaretçisi.
 
 Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetCharWidthI](/windows/win32/api/wingdi/nf-wingdi-getcharwidthi)işlevinin işlevselliğine öykünür.
 
-## <a name="cdcgetclipbox"></a><a name="getclipbox"></a>CDC:: GetClipBox
+## <a name="cdcgetclipbox"></a><a name="getclipbox"></a> CDC:: GetClipBox
 
 Geçerli kırpma sınırının etrafında daha sıkı test sınırlayıcı dikdörtgeninin boyutlarını alır.
 
@@ -2927,9 +2928,9 @@ Kırpma bölgesinin türü. Aşağıdaki değerlerden herhangi biri olabilir:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Boyutlar, *lpRect*tarafından işaret edilen arabelleğe kopyalanır.
+Boyutlar, *lpRect* tarafından işaret edilen arabelleğe kopyalanır.
 
-## <a name="cdcgetcoloradjustment"></a><a name="getcoloradjustment"></a>CDC:: Getcolorayarlaması
+## <a name="cdcgetcoloradjustment"></a><a name="getcoloradjustment"></a> CDC:: Getcolorayarlaması
 
 Cihaz bağlamı için renk ayarlama değerlerini alır.
 
@@ -2946,7 +2947,7 @@ Renk ayarlama değerlerini almak için [colorayarlamasının](/windows/win32/api
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-## <a name="cdcgetcurrentbitmap"></a><a name="getcurrentbitmap"></a>CDC:: GetCurrentBitmap
+## <a name="cdcgetcurrentbitmap"></a><a name="getcurrentbitmap"></a> CDC:: GetCurrentBitmap
 
 Şu anda seçili olan nesneye bir işaretçi döndürür `CBitmap` .
 
@@ -2962,7 +2963,7 @@ CBitmap* GetCurrentBitmap() const;
 
 Bu üye işlevi, geçici nesneler döndürebilir.
 
-## <a name="cdcgetcurrentbrush"></a><a name="getcurrentbrush"></a>CDC:: GetCurrentBrush
+## <a name="cdcgetcurrentbrush"></a><a name="getcurrentbrush"></a> CDC:: GetCurrentBrush
 
 Şu anda seçili olan nesneye bir işaretçi döndürür `CBrush` .
 
@@ -2978,7 +2979,7 @@ CBrush* GetCurrentBrush() const;
 
 Bu üye işlevi, geçici nesneler döndürebilir.
 
-## <a name="cdcgetcurrentfont"></a><a name="getcurrentfont"></a>CDC:: GetCurrentFont
+## <a name="cdcgetcurrentfont"></a><a name="getcurrentfont"></a> CDC:: GetCurrentFont
 
 Şu anda seçili olan nesneye bir işaretçi döndürür `CFont` .
 
@@ -2994,7 +2995,7 @@ CFont* GetCurrentFont() const;
 
 Bu üye işlevi, geçici nesneler döndürebilir.
 
-## <a name="cdcgetcurrentpalette"></a><a name="getcurrentpalette"></a>CDC:: GetCurrentPalette
+## <a name="cdcgetcurrentpalette"></a><a name="getcurrentpalette"></a> CDC:: GetCurrentPalette
 
 Şu anda seçili olan nesneye bir işaretçi döndürür `CPalette` .
 
@@ -3010,7 +3011,7 @@ CPalette* GetCurrentPalette() const;
 
 Bu üye işlevi, geçici nesneler döndürebilir.
 
-## <a name="cdcgetcurrentpen"></a><a name="getcurrentpen"></a>CDC:: GetCurrentPen
+## <a name="cdcgetcurrentpen"></a><a name="getcurrentpen"></a> CDC:: GetCurrentPen
 
 Şu anda seçili olan nesneye bir işaretçi döndürür `CPen` .
 
@@ -3026,7 +3027,7 @@ CPen* GetCurrentPen() const;
 
 Bu üye işlevi, geçici nesneler döndürebilir.
 
-## <a name="cdcgetcurrentposition"></a><a name="getcurrentposition"></a>CDC:: GetCurrentPosition
+## <a name="cdcgetcurrentposition"></a><a name="getcurrentposition"></a> CDC:: GetCurrentPosition
 
 Geçerli konumu alır (mantıksal koordinatlardaki).
 
@@ -3042,7 +3043,7 @@ Nesne olarak geçerli konum `CPoint` .
 
 Geçerli konum `MoveTo` üye işlevle ayarlanabilir.
 
-## <a name="cdcgetdcbrushcolor"></a><a name="getdcbrushcolor"></a>CDC:: Getdcbrühcolor
+## <a name="cdcgetdcbrushcolor"></a><a name="getdcbrushcolor"></a> CDC:: Getdcbrühcolor
 
 Geçerli fırça rengini alır.
 
@@ -3060,7 +3061,7 @@ COLORREF GetDCBrushColor() const;
 
 Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [Getdcbrühcolor](/windows/win32/api/wingdi/nf-wingdi-getdcbrushcolor)işlevinin işlevselliğine öykünür.
 
-## <a name="cdcgetdcpencolor"></a><a name="getdcpencolor"></a>CDC:: GetDCPenColor
+## <a name="cdcgetdcpencolor"></a><a name="getdcpencolor"></a> CDC:: GetDCPenColor
 
 Geçerli kalem rengini alır.
 
@@ -3078,7 +3079,7 @@ COLORREF GetDCPenColor() const;
 
 Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [GetDCPenColor](/windows/win32/api/wingdi/nf-wingdi-getdcpencolor)Win32 işlevini kullanır.
 
-## <a name="cdcgetdevicecaps"></a><a name="getdevicecaps"></a>CDC:: GetDeviceCaps
+## <a name="cdcgetdevicecaps"></a><a name="getdevicecaps"></a> CDC:: GetDeviceCaps
 
 Görüntü cihazı hakkında çok çeşitli cihaza özgü bilgileri alır.
 
@@ -3099,7 +3100,7 @@ Döndürülecek bilgi türünü belirtir. Değerlerin listesi için Windows SDK 
 
   [CPrintDialog:: GetDefaults](../../mfc/reference/cprintdialog-class.md#getdefaults)örneğine bakın.
 
-## <a name="cdcgetfontdata"></a><a name="getfontdata"></a>CDC:: GetFontData
+## <a name="cdcgetfontdata"></a><a name="getfontdata"></a> CDC:: GetFontData
 
 Ölçeklenebilir bir yazı tipi dosyasından yazı tipi ölçümü bilgilerini alır.
 
@@ -3133,13 +3134,13 @@ Alınacak bilgilerin uzunluğunu bayt cinsinden belirtir. Bu parametre 0 ise, `G
 
 Alınacak bilgiler, yazı tipi dosyasına bir konum ve döndürülecek bilgilerin uzunluğu belirtilerek tanımlanır.
 
-Bir uygulama bazen `GetFontData` bir belge ile bir TrueType yazı tipi kaydetmek için üye işlevini kullanabilir. Bunu yapmak için, uygulama yazı tipinin katıştırılabileceğini belirler ve ardından, *Dwtable*, *Dwkayması*ve *cbData* parametreleri için 0 belirterek tüm yazı tipi dosyasını alır.
+Bir uygulama bazen `GetFontData` bir belge ile bir TrueType yazı tipi kaydetmek için üye işlevini kullanabilir. Bunu yapmak için, uygulama yazı tipinin katıştırılabileceğini belirler ve ardından, *Dwtable*, *Dwkayması* ve *cbData* parametreleri için 0 belirterek tüm yazı tipi dosyasını alır.
 
 Uygulamalar, `otmfsType` [Outlinetextmetric](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısının üyesini denetleyerek bir yazı tipinin katıştırılamayacağını tespit edebilir. Bit 1 ' in `otmfsType` ayarlanmış olması halinde, yazı tipi için eklemeye izin verilmez. Bit 1 boş ise, yazı tipi gömülebilir. Bit 2 ayarlanmışsa, katıştırma salt okunurdur.
 
 Bir uygulama, TrueType olmayan bir yazı tipi için bilgi almak üzere bu işlevi kullanmayı denerse, `GetFontData` üye işlevi-1 döndürür.
 
-## <a name="cdcgetfontlanguageinfo"></a><a name="getfontlanguageinfo"></a>CDC:: GetFontLanguageInfo
+## <a name="cdcgetfontlanguageinfo"></a><a name="getfontlanguageinfo"></a> CDC:: GetFontLanguageInfo
 
 Belirtilen görüntüleme bağlamı için seçili olan yazı tipiyle ilgili bilgileri döndürür.
 
@@ -3155,7 +3156,7 @@ Dönüş değeri şu anda seçili olan yazı tipinin özelliklerini tanımlar. O
 
 Bu üye işlevi, Windows SDK açıklanan [GetFontLanguageInfo](/windows/win32/api/wingdi/nf-wingdi-getfontlanguageinfo)işlevinin işlevselliğine öykünür.
 
-## <a name="cdcgetglyphoutline"></a><a name="getglyphoutline"></a>CDC:: GetGlyphOutline
+## <a name="cdcgetglyphoutline"></a><a name="getglyphoutline"></a> CDC:: GetGlyphOutline
 
 Geçerli yazı tipinde bir ana hat karakteri için ana hat eğrisini veya bit eşlemi alır.
 
@@ -3194,7 +3195,7 @@ Karakter hücresindeki glifin yerleşimini açıklayan bir GLYPHÖLÇÜMLER yap�
 İşlevin, ana hat karakteriyle ilgili bilgileri kopyaladığı bir arabelleğe işaret eder. *NFormat* GGO_NATIVE değerini belirtiyorsa, bilgiler TTPOLYGONHEADER ve TTPOLYCURVE yapıları biçiminde kopyalanır. Bu değer NULL ise ve *nFormat* GGO_BITMAP ya da GGO_NATIVE değeri ise, işlev arabelleğin gereken boyutunu döndürür.
 
 *lpmat2*<br/>
-Karakter için bir dönüştürme matrisi içeren bir [mat2](/windows/win32/api/wingdi/ns-wingdi-mat2) yapısına işaret eder. Bu parametre, *nFormat*için GGO_NATIVE değeri BELIRTILDIĞINDE bile null olamaz.
+Karakter için bir dönüştürme matrisi içeren bir [mat2](/windows/win32/api/wingdi/ns-wingdi-mat2) yapısına işaret eder. Bu parametre, *nFormat* için GGO_NATIVE değeri BELIRTILDIĞINDE bile null olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3202,11 +3203,11 @@ Karakter için bir dönüştürme matrisi içeren bir [mat2](/windows/win32/api/
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir uygulama, *lpmat2*tarafından işaret edilen yapıda 2 ' ye kadar bir dönüşüm matrisi belirterek bit eşlem biçiminde alınan karakterleri döndürebilir.
+Bir uygulama, *lpmat2* tarafından işaret edilen yapıda 2 ' ye kadar bir dönüşüm matrisi belirterek bit eşlem biçiminde alınan karakterleri döndürebilir.
 
-Glif anahattı bir dizi kontur olarak döndürülür. Her bir kontur, bir [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) yapısı tarafından tanımlanır ve `TTPOLYCURVE` bunu anlatmak için gereken birçok yapıyı izler. Tüm noktaları [Pointfx](/windows/win32/api/wingdi/ns-wingdi-pointfx) yapıları olarak döndürülür ve göreli taşımaları değil mutlak konumları temsil eder. TTPOLYGONHEADER yapısının üyesi tarafından verilen başlangıç noktası, `pfxStart` bir [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) konturun ana hattının başladığı noktasıdır. Aşağıdaki [TTPOLYCURVE](/windows/win32/api/wingdi/ns-wingdi-ttpolycurve) yapıları, tek çizgi kayıtları veya eğri kayıtları olabilir. Çoklu çizgi kayıtları bir dizi noktalardır; noktaları arasına çizilen çizgiler, karakterin ana hattını anlatmaktadır. Eğri kayıtları, TrueType tarafından kullanılan karesel eğrileri temsil eder (yani, ikinci derece b-splines).
+Glif anahattı bir dizi kontur olarak döndürülür. Her bir kontur, bir [TTPOLYGONHEADER](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) yapısı tarafından tanımlanır ve `TTPOLYCURVE` bunu anlatmak için gereken birçok yapıyı izler. Tüm noktaları [Pointfx](/windows/win32/api/wingdi/ns-wingdi-pointfx) yapıları olarak döndürülür ve göreli taşımaları değil mutlak konumları temsil eder. TTPOLYGONHEADER yapısının üyesi tarafından verilen başlangıç noktası, `pfxStart` bir [](/windows/win32/api/wingdi/ns-wingdi-ttpolygonheader) konturun ana hattının başladığı noktasıdır. Aşağıdaki [TTPOLYCURVE](/windows/win32/api/wingdi/ns-wingdi-ttpolycurve) yapıları, tek çizgi kayıtları veya eğri kayıtları olabilir. Çoklu çizgi kayıtları bir dizi noktalardır; noktaları arasına çizilen çizgiler, karakterin ana hattını anlatmaktadır. Eğri kayıtları, TrueType tarafından kullanılan karesel eğrileri temsil eder (yani, ikinci derece b-splines).
 
-## <a name="cdcgetgraphicsmode"></a><a name="getgraphicsmode"></a>CDC:: GetGraphicsMode
+## <a name="cdcgetgraphicsmode"></a><a name="getgraphicsmode"></a> CDC:: GetGraphicsMode
 
 Belirtilen cihaz bağlamı için geçerli grafik modunu alır.
 
@@ -3226,7 +3227,7 @@ Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/e
 
 Bu yöntem, [GetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-getgraphicsmode)Windows GDI işlevini sarmalanmış.
 
-## <a name="cdcgethalftonebrush"></a><a name="gethalftonebrush"></a>CDC:: GetHalftoneBrush
+## <a name="cdcgethalftonebrush"></a><a name="gethalftonebrush"></a> CDC:: GetHalftoneBrush
 
 Bir yarı ton fırçası almak için bu üye işlevini çağırın.
 
@@ -3244,7 +3245,7 @@ Bir yarı ton fırçası, titremeli deseni oluşturmak için alternatif ön plan
 
 ![Bir titremeli Pen darbesinin ayrıntısı](../../mfc/reference/media/vc318s1.gif "Bir titremeli Pen darbesinin ayrıntısı")
 
-## <a name="cdcgetkerningpairs"></a><a name="getkerningpairs"></a>CDC:: GetKerningPairs
+## <a name="cdcgetkerningpairs"></a><a name="getkerningpairs"></a> CDC:: GetKerningPairs
 
 Belirtilen cihaz bağlamında seçili olan yazı tipi için karakter karakter aralığı çiftlerini alır.
 
@@ -3257,16 +3258,16 @@ int GetKerningPairs(
 ### <a name="parameters"></a>Parametreler
 
 *Nçiftler*<br/>
-*Lpkronnpair*tarafından Işaret edilen [kerningpair](/windows/win32/api/wingdi/ns-wingdi-kerningpair) yapılarının sayısını belirtir. İşlev, *nPairs*tarafından belirtilenden daha fazla karakter aralığı çifti kopyalamacaktır.
+*Lpkronnpair* tarafından Işaret edilen [kerningpair](/windows/win32/api/wingdi/ns-wingdi-kerningpair) yapılarının sayısını belirtir. İşlev, *nPairs* tarafından belirtilenden daha fazla karakter aralığı çifti kopyalamacaktır.
 
 *lpkronnpair*<br/>
-`KERNINGPAIR`İşlev döndürüldüğünde karakter aralığı çiftlerini alan bir yapı dizisine işaret eder. Bu dizi en az *nPairs*tarafından belirtilen sayıda yapıya sahip olmalıdır. Bu parametre NULL ise, işlev yazı tipi için karakter aralığı çiftinin toplam sayısını döndürür.
+`KERNINGPAIR`İşlev döndürüldüğünde karakter aralığı çiftlerini alan bir yapı dizisine işaret eder. Bu dizi en az *nPairs* tarafından belirtilen sayıda yapıya sahip olmalıdır. Bu parametre NULL ise, işlev yazı tipi için karakter aralığı çiftinin toplam sayısını döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 İşlev başarılı olursa, alınan karakter çiftinin sayısını veya yazı tipindeki toplam karakter aralığı çiftinin sayısını belirtir. İşlev başarısız olursa veya yazı tipi için bir karakter aralığı çifti yoksa sıfır döndürülür.
 
-## <a name="cdcgetlayout"></a><a name="getlayout"></a>CDC:: GetLayout
+## <a name="cdcgetlayout"></a><a name="getlayout"></a> CDC:: GetLayout
 
 Yazıcı veya dosya dosyası gibi bir cihaz bağlamı için metin ve grafiklerin yerleşimini öğrenmek için bu üye işlevini çağırın.
 
@@ -3282,7 +3283,7 @@ Başarılı olursa, geçerli cihaz bağlamı için Düzen bayrakları. Aksi takd
 
 Varsayılan düzen soldan sağa doğru.
 
-## <a name="cdcgetmapmode"></a><a name="getmapmode"></a>CDC:: GetMapMode
+## <a name="cdcgetmapmode"></a><a name="getmapmode"></a> CDC:: GetMapMode
 
 Geçerli eşleme modunu alır.
 
@@ -3301,7 +3302,7 @@ Eşleme modlarının bir açıklaması için, bkz `SetMapMode` . üye işlevi.
 > [!NOTE]
 > DC 'yi sağdan sola düzenine dönüştürmek için [SetLayout](#setlayout) ' ı çağırırsanız, `SetLayout` eşleme modunu otomatik olarak MM_ISOTROPIC olarak değiştirir. Sonuç olarak, ' nin sonraki çağrısı `GetMapMode` MM_ISOTROPIC döndürür.
 
-## <a name="cdcgetmiterlimit"></a><a name="getmiterlimit"></a>CDC:: Getmıterlimit
+## <a name="cdcgetmiterlimit"></a><a name="getmiterlimit"></a> CDC:: Getmıterlimit
 
 Cihaz bağlamı için gönye sınırını döndürür.
 
@@ -3317,7 +3318,7 @@ float GetMiterLimit() const;
 
 Gönye birleştirmeleri olan geometrik çizgiler çizilirken, Gönye sınırı kullanılır.
 
-## <a name="cdcgetnearestcolor"></a><a name="getnearestcolor"></a>CDC:: GetNearestColor
+## <a name="cdcgetnearestcolor"></a><a name="getnearestcolor"></a> CDC:: GetNearestColor
 
 Belirtilen mantıksal renkle en iyi eşleşen düz rengi döndürür.
 
@@ -3338,7 +3339,7 @@ Cihazın temsil ettiği *crColor* değerine en yakın düz rengi TANıMLAYAN bir
 
 Verilen cihaz bu rengi temsil edebiliyor olmalıdır.
 
-## <a name="cdcgetoutlinetextmetrics"></a><a name="getoutlinetextmetrics"></a>CDC:: Getoutlinetextölçümleri
+## <a name="cdcgetoutlinetextmetrics"></a><a name="getoutlinetextmetrics"></a> CDC:: Getoutlinetextölçümleri
 
 TrueType yazı tiplerinin ölçüm bilgilerini alır.
 
@@ -3367,7 +3368,7 @@ Bir yapıya işaret eder `OUTLINETEXTMETRIC` . Bu parametre NULL ise, işlev al�
 
 [Outlinetextmetric](/windows/win32/api/wingdi/ns-wingdi-outlinetextmetricw) yapısı, bir [textmetric](/windows/win32/api/wingdi/ns-wingdi-textmetricw) yapısı dahil olmak üzere TrueType biçimiyle birlikte sunulan yazı tipi ölçüm bilgilerinin çoğunu içerir. Yapının son dört üyesi, `OUTLINETEXTMETRIC` dizelerin işaretçileridir. Uygulamalar, diğer Üyeler için gereken alana ek olarak bu dizeler için alan ayırmalıdır. Dizelerin boyutuyla ilgili sistem tarafından uygulanan sınır olmadığından, bellek ayırmak için en basit yöntem, işleve yapılan ilk çağrıda *lpotm* için null belirterek gereken boyutu almadır `GetOutlineTextMetrics` .
 
-## <a name="cdcgetoutputcharwidth"></a><a name="getoutputcharwidth"></a>CDC:: GetOutputCharWidth
+## <a name="cdcgetoutputcharwidth"></a><a name="getoutputcharwidth"></a> CDC:: GetOutputCharWidth
 
 , Çıkış cihazı bağlamını kullanır `m_hDC` ve geçerli yazı tipindeki ardışık bir karakter grubundaki tek tek karakterlerin genişliklerini alır.
 
@@ -3397,11 +3398,11 @@ Geçerli yazı tipinde ardışık bir karakter grubu için genişlik değerlerin
 
 Örneğin, *nFirstChar* , ' a ' harfini tanımlarsa ve *nLastChar* ' z ' harfini tanımlıyorsa, işlev tüm küçük harfli karakterlerin genişliklerini alır.
 
-İşlevi, *lpBuffer*tarafından işaret edilen arabellekteki değerleri depolar. Bu arabellek, tüm genişlikleri tutabilecek kadar büyük olmalıdır; diğer bir deyişle, verilen örnekte en az 26 giriş olmalıdır.
+İşlevi, *lpBuffer* tarafından işaret edilen arabellekteki değerleri depolar. Bu arabellek, tüm genişlikleri tutabilecek kadar büyük olmalıdır; diğer bir deyişle, verilen örnekte en az 26 giriş olmalıdır.
 
 Ardışık karakter grubundaki bir karakter belirli bir yazı tipinde yoksa, varsayılan karakterin genişlik değeri atanır.
 
-## <a name="cdcgetoutputtabbedtextextent"></a><a name="getoutputtabbedtextextent"></a>CDC:: GetOutputTabbedTextExtent
+## <a name="cdcgetoutputtabbedtextextent"></a><a name="getoutputtabbedtextextent"></a> CDC:: GetOutputTabbedTextExtent
 
 [M_hDC](#m_hdc), çıkış cihazı bağlamını kullanarak bir karakter dizesinin genişlik ve yüksekliğini hesaplamak için bu üye işlevini çağırın.
 
@@ -3424,10 +3425,10 @@ CSize GetOutputTabbedTextExtent(
 Ölçülecek bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
 *nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
+*LpszString* tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
-Dizideki, *lpnTabStopPositions*tarafından işaret edilen sekme durağı konumlarının sayısını belirtir.
+Dizideki, *lpnTabStopPositions* tarafından işaret edilen sekme durağı konumlarının sayısını belirtir.
 
 *lpnTabStopPositions*<br/>
 Mantıksal birimlerde sekme durağı konumlarını içeren bir tamsayı dizisine işaret eder. Sekme duraklarının artan sırada sıralanması gerekir; en küçük x değeri dizideki ilk öğe olmalıdır. Geri sekmelere izin verilmez.
@@ -3441,15 +3442,15 @@ Bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesindeki dizenin 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize bir veya daha fazla sekme karakteri içeriyorsa, dizenin genişliği *lpnTabStopPositions*tarafından belirtilen sekme duraklarını temel alır. İşlev, dizenin boyutlarını hesaplamak için seçili olan yazı tipini kullanır.
+Dize bir veya daha fazla sekme karakteri içeriyorsa, dizenin genişliği *lpnTabStopPositions* tarafından belirtilen sekme duraklarını temel alır. İşlev, dizenin boyutlarını hesaplamak için seçili olan yazı tipini kullanır.
 
 Geçerli kırpma bölgesi, işlev tarafından döndürülen genişliği ve yüksekliği kaydırmıyor `GetOutputTabbedTextExtent` .
 
 Bazı cihazlar normal hücre dizilerine karakter yerleştirmediğinden (yani karakterlerin karakter aralığı varsa), bir dizedeki karakterlerin kapsamlarının toplamı, dizenin kapsamına eşit olmayabilir.
 
-*NTabPositions* 0 Ise ve *lpnTabStopPositions* null ise, sekmeler sekiz ortalama karakter genişliğine genişletilir. *NTabPositions* 1 ise, sekme durağı, dizideki ilk değer tarafından belirtilen uzaklığa göre, *lpnTabStopPositions* işaret eder. *LpnTabStopPositions* tek bir değerden daha fazla işaret ediyorsa, dizideki her bir değer Için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
+*NTabPositions* 0 Ise ve *lpnTabStopPositions* null ise, sekmeler sekiz ortalama karakter genişliğine genişletilir. *NTabPositions* 1 ise, sekme durağı, dizideki ilk değer tarafından belirtilen uzaklığa göre, *lpnTabStopPositions* işaret eder. *LpnTabStopPositions* tek bir değerden daha fazla işaret ediyorsa, dizideki her bir değer Için *nTabPositions* tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
 
-## <a name="cdcgetoutputtextextent"></a><a name="getoutputtextextent"></a>CDC:: GetOutputTextExtent
+## <a name="cdcgetoutputtextextent"></a><a name="getoutputtextextent"></a> CDC:: GetOutputTextExtent
 
 Bu üye işlevi, çıkış cihazı bağlamını kullanmak için çağırın, [m_hDC](#m_hdc)ve geçerli yazı tipini kullanarak bir metin satırının genişliğini ve yüksekliğini hesaplar.
 
@@ -3467,7 +3468,7 @@ CSize GetOutputTextExtent(const CString& str) const;
 Bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
 *nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
+*LpszString* tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *üstbilgisine*<br/>
 `CString`Ölçülecek belirtilen karakterleri içeren nesne.
@@ -3482,7 +3483,7 @@ Geçerli kırpma bölgesi tarafından döndürülen genişliği ve yüksekliği 
 
 Bazı cihazlar normal hücre dizilerine karakter yerleştirmediğinden (yani, karakter aralığı yerine geçen), bir dizedeki karakterlerin kapsamlarının toplamı, dizenin kapsamına eşit olmayabilir.
 
-## <a name="cdcgetoutputtextmetrics"></a><a name="getoutputtextmetrics"></a>CDC:: Getoutputtextölçümleri
+## <a name="cdcgetoutputtextmetrics"></a><a name="getoutputtextmetrics"></a> CDC:: Getoutputtextölçümleri
 
 Çıkış cihazı bağlamını kullanarak geçerli yazı tipinin ölçümlerini alır `m_hDC` .
 
@@ -3499,7 +3500,7 @@ BOOL GetOutputTextMetrics(LPTEXTMETRIC lpMetrics) const;
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-## <a name="cdcgetpath"></a><a name="getpath"></a>CDC:: GetPath
+## <a name="cdcgetpath"></a><a name="getpath"></a> CDC:: GetPath
 
 Satır bitiş noktaları ve cihaz bağlamına seçilen yolda bulunan eğrilerin denetim noktaları tanımlayan koordinatları alır.
 
@@ -3545,9 +3546,9 @@ Cihaz bağlamı kapalı bir yol içermelidir. Yolun noktaları mantıksal koordi
 
   [CDC:: BeginPath](#beginpath)örneğine bakın.
 
-## <a name="cdcgetpixel"></a><a name="getpixel"></a>CDC:: GetPixel
+## <a name="cdcgetpixel"></a><a name="getpixel"></a> CDC:: GetPixel
 
-*X* ve *y*tarafından belirtilen noktada pikselin RGB renk değerini alır.
+*X* ve *y* tarafından belirtilen noktada pikselin RGB renk değerini alır.
 
 ```
 COLORREF GetPixel(
@@ -3580,7 +3581,7 @@ Tüm cihazlar `GetPixel` işlevi desteklemez. Daha fazla bilgi için bkz. [GetDe
 
 `GetPixel`Member işlevinin iki formu vardır. Birincisi iki koordinat değeri alır; İkincisi, bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını veya bir [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini alır.
 
-## <a name="cdcgetpolyfillmode"></a><a name="getpolyfillmode"></a>CDC:: GetPolyFillMode
+## <a name="cdcgetpolyfillmode"></a><a name="getpolyfillmode"></a> CDC:: GetPolyFillMode
 
 Geçerli Çokgen doldurma modunu alır.
 
@@ -3596,7 +3597,7 @@ int GetPolyFillMode() const;
 
 `SetPolyFillMode`Çokgen doldurma modlarının açıklaması için üye işlevine bakın.
 
-## <a name="cdcgetrop2"></a><a name="getrop2"></a>CDC:: GetROP2
+## <a name="cdcgetrop2"></a><a name="getrop2"></a> CDC:: GetROP2
 
 Geçerli çizim modunu alır.
 
@@ -3612,7 +3613,7 @@ int GetROP2() const;
 
 Çizim modu, kalemin renklerinin ve Dolgulu nesnelerin iç kısmının, görüntüleme yüzeyinde zaten bulunan renkle nasıl birleştirildiğini belirtir.
 
-## <a name="cdcgetsafehdc"></a><a name="getsafehdc"></a>CDC:: GetSafeHdc
+## <a name="cdcgetsafehdc"></a><a name="getsafehdc"></a> CDC:: GetSafeHdc
 
 Çıkış cihazı bağlamını [m_hDC](#m_hdc)almak için bu üye işlevi çağırın.
 
@@ -3628,7 +3629,7 @@ Bir cihaz bağlamı tanıtıcısı.
 
 Bu üye işlevi null işaretçilerle de çalışır.
 
-## <a name="cdcgetstretchbltmode"></a><a name="getstretchbltmode"></a>CDC:: Getıblbltmode
+## <a name="cdcgetstretchbltmode"></a><a name="getstretchbltmode"></a> CDC:: Getıblbltmode
 
 Geçerli bit eşlem uzatma modunu alır.
 
@@ -3646,7 +3647,7 @@ Bit eşlem uzatma modu, bilgilerin üye işlev tarafından uzatılmış veya sı
 
 STRETCH_ANDSCANS ve STRETCH_ORSCANS modları genellikle tek renkli bit eşlemlerde ön plan piksellerini korumak için kullanılır. STRETCH_DELETESCANS modu, genellikle renk bit eşlemlerinin rengini korumak için kullanılır.
 
-## <a name="cdcgettabbedtextextent"></a><a name="gettabbedtextextent"></a>CDC:: GetTabbedTextExtent
+## <a name="cdcgettabbedtextextent"></a><a name="gettabbedtextextent"></a> CDC:: GetTabbedTextExtent
 
 [M_hAttribDC](#m_hattribdc), öznitelik cihazı bağlamını kullanarak bir karakter dizesinin genişlik ve yüksekliğini hesaplamak için bu üye işlevini çağırın.
 
@@ -3669,10 +3670,10 @@ CSize GetTabbedTextExtent(
 Bir karakter dizesini işaret eder. Ayrıca, bu parametre için bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesi geçirebilirsiniz.
 
 *nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
+*LpszString* tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
-Dizideki, *lpnTabStopPositions*tarafından işaret edilen sekme durağı konumlarının sayısını belirtir.
+Dizideki, *lpnTabStopPositions* tarafından işaret edilen sekme durağı konumlarının sayısını belirtir.
 
 *lpnTabStopPositions*<br/>
 Mantıksal birimlerde sekme durağı konumlarını içeren bir tamsayı dizisine işaret eder. Sekme duraklarının artan sırada sıralanması gerekir; en küçük x değeri dizideki ilk öğe olmalıdır. Geri sekmelere izin verilmez.
@@ -3686,15 +3687,15 @@ Bir [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesindeki dizenin 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize bir veya daha fazla sekme karakteri içeriyorsa, dizenin genişliği *lpnTabStopPositions*tarafından belirtilen sekme duraklarını temel alır. İşlev, dizenin boyutlarını hesaplamak için seçili olan yazı tipini kullanır.
+Dize bir veya daha fazla sekme karakteri içeriyorsa, dizenin genişliği *lpnTabStopPositions* tarafından belirtilen sekme duraklarını temel alır. İşlev, dizenin boyutlarını hesaplamak için seçili olan yazı tipini kullanır.
 
 Geçerli kırpma bölgesi, işlev tarafından döndürülen genişliği ve yüksekliği kaydırmıyor `GetTabbedTextExtent` .
 
 Bazı cihazlar normal hücre dizilerine karakter yerleştirmediğinden (yani karakterlerin karakter aralığı varsa), bir dizedeki karakterlerin kapsamlarının toplamı, dizenin kapsamına eşit olmayabilir.
 
-*NTabPositions* 0 Ise ve *lpnTabStopPositions* null ise, sekmeler ortalama karakter genişliği sekiz katına genişletilir. *NTabPositions* 1 ise, sekme durağı, dizideki ilk değer tarafından belirtilen uzaklığa göre, *lpnTabStopPositions* işaret eder. *LpnTabStopPositions* tek bir değerden daha fazla işaret ediyorsa, dizideki her bir değer Için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
+*NTabPositions* 0 Ise ve *lpnTabStopPositions* null ise, sekmeler ortalama karakter genişliği sekiz katına genişletilir. *NTabPositions* 1 ise, sekme durağı, dizideki ilk değer tarafından belirtilen uzaklığa göre, *lpnTabStopPositions* işaret eder. *LpnTabStopPositions* tek bir değerden daha fazla işaret ediyorsa, dizideki her bir değer Için *nTabPositions* tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır.
 
-## <a name="cdcgettextalign"></a><a name="gettextalign"></a>CDC:: GetTextAlign
+## <a name="cdcgettextalign"></a><a name="gettextalign"></a> CDC:: GetTextAlign
 
 Cihaz bağlamı için metin hizalama bayraklarının durumunu alır.
 
@@ -3738,7 +3739,7 @@ Metin hizalama bayrakları, `TextOut` ve `ExtTextOut` üye işlevlerinin dizenin
 
 1. Bu sonucun ve bayrağın eşitliğini test edin.
 
-## <a name="cdcgettextcharacterextra"></a><a name="gettextcharacterextra"></a>CDC:: Gettextkarakterextra
+## <a name="cdcgettextcharacterextra"></a><a name="gettextcharacterextra"></a> CDC:: Gettextkarakterextra
 
 Intercharacter aralıklarının miktarı için geçerli ayarı alır.
 
@@ -3756,7 +3757,7 @@ GDI, bir metin satırını cihaz bağlamına yazdığında, bu boşluğu kesme k
 
 Intercharacter boşluk miktarı için varsayılan değer 0 ' dır.
 
-## <a name="cdcgettextcolor"></a><a name="gettextcolor"></a>CDC:: GetTextColor
+## <a name="cdcgettextcolor"></a><a name="gettextcolor"></a> CDC:: GetTextColor
 
 Geçerli metin rengini alır.
 
@@ -3772,7 +3773,7 @@ Bir RGB renk değeri olarak geçerli metin rengi.
 
 Metin rengi, GDI metin-çıkış üye işlevleri [TextOut](#textout), [ExtTextOut](#exttextout)ve [TabbedTextOut](#tabbedtextout)kullanılarak çizilen karakterlerin ön plan rengidir.
 
-## <a name="cdcgettextextent"></a><a name="gettextextent"></a>CDC:: GetTextExtent
+## <a name="cdcgettextextent"></a><a name="gettextextent"></a> CDC:: GetTextExtent
 
 Boyutları belirleyebilmek için geçerli yazı tipini kullanarak bir metin satırının genişliğini ve yüksekliğini hesaplamak üzere bu üye işlevini çağırın.
 
@@ -3809,7 +3810,7 @@ Geçerli kırpma bölgesi tarafından döndürülen genişliği ve yüksekliği 
 
 Bazı cihazlar normal hücre dizilerine karakter yerleştirmediğinden (yani, karakter aralığı yerine geçen), bir dizedeki karakterlerin kapsamlarının toplamı, dizenin kapsamına eşit olmayabilir.
 
-## <a name="cdcgettextextentexpointi"></a><a name="gettextextentexpointi"></a>CDC:: Gettexıtexpointı
+## <a name="cdcgettextextentexpointi"></a><a name="gettextextentexpointi"></a> CDC:: Gettexıtexpointı
 
 Belirtilen bir dizedeki belirli bir alana sığacak ve bir diziyi bu karakterlerin her biri için metin Uzantısı ile dolduracak olan karakter sayısını alır.
 
@@ -3829,16 +3830,16 @@ BOOL GetTextExtentExPointI(
 Kapsam alınacak bir karakter dizini dizisine yönelik bir işaretçi.
 
 *CGI*<br/>
-*Pgiin*tarafından işaret edilen dizideki karakter sayısını belirtir.
+*Pgiin* tarafından işaret edilen dizideki karakter sayısını belirtir.
 
 *Nmaxkapsam*<br/>
 Biçimlendirilen dizenin mantıksal birimlerinde izin verilen en büyük genişliği belirtir.
 
 *lpnFit*<br/>
-*Nmaxuzantısı*tarafından belirtilen alana sığacak en fazla karakter sayısını alan bir tamsayı işaretçisi. *LPNFit* null olduğunda, *nmaxkapsam* yok sayılır.
+*Nmaxuzantısı* tarafından belirtilen alana sığacak en fazla karakter sayısını alan bir tamsayı işaretçisi. *LPNFit* null olduğunda, *nmaxkapsam* yok sayılır.
 
 *alpDx*<br/>
-Kısmi karakter kapsamlarını alan tamsayılar dizisine yönelik bir işaretçi. Dizideki her öğe, karakter indisler dizisinin başlangıcı ve *Nmaxuzantısı*tarafından belirtilen boşluğa uyan karakterlerden biri arasındaki uzaklığı mantıksal birimlerde verir. Bu dizide en az *CGI*tarafından belirtilen karakter dizinleri olan çok sayıda öğe olması gerekse de işlev, diziyi, *LPNFit*tarafından belirtilen sayıda karakter dizini için yalnızca uzantıya doldurur. *LpnDx* null ise, işlev kısmi dize genişliklerini hesaplamaz.
+Kısmi karakter kapsamlarını alan tamsayılar dizisine yönelik bir işaretçi. Dizideki her öğe, karakter indisler dizisinin başlangıcı ve *Nmaxuzantısı* tarafından belirtilen boşluğa uyan karakterlerden biri arasındaki uzaklığı mantıksal birimlerde verir. Bu dizide en az *CGI* tarafından belirtilen karakter dizinleri olan çok sayıda öğe olması gerekse de işlev, diziyi, *LPNFit* tarafından belirtilen sayıda karakter dizini için yalnızca uzantıya doldurur. *LpnDx* null ise, işlev kısmi dize genişliklerini hesaplamaz.
 
 *lpSize*<br/>
 Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi. Bu değer NULL olamaz.
@@ -3851,7 +3852,7 @@ Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windo
 
 Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi [Gettexbir Texpointi](/windows/win32/api/wingdi/nf-wingdi-gettextextentexpointi)işlevinin işlevselliğine öykünür.
 
-## <a name="cdcgettextextentpointi"></a><a name="gettextextentpointi"></a>CDC:: Gettextpointı
+## <a name="cdcgettextextentpointi"></a><a name="gettextextentpointi"></a> CDC:: Gettextpointı
 
 Belirtilen glif dizinleri dizisinin genişliğini ve yüksekliğini alır.
 
@@ -3868,7 +3869,7 @@ BOOL GetTextExtentPointI(
 Kapsam alınacak bir karakter dizini dizisine yönelik bir işaretçi.
 
 *CGI*<br/>
-*Pgiin*tarafından işaret edilen dizideki karakter sayısını belirtir.
+*Pgiin* tarafından işaret edilen dizideki karakter sayısını belirtir.
 
 *lpSize*<br/>
 Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windows/win32/api/windef/ns-windef-size) yapısına yönelik işaretçi. Bu değer NULL olamaz.
@@ -3881,7 +3882,7 @@ Mantıksal birimlerde glif dizinleri dizisinin boyutlarını alan [Boyut](/windo
 
 Bu üye işlevi, Windows SDK açıklanan [Gettexıda Tpointi](/windows/win32/api/wingdi/nf-wingdi-gettextextentpointi)işlevinin işlevselliğine öykünür.
 
-## <a name="cdcgettextface"></a><a name="gettextface"></a>CDC:: GetTextFace
+## <a name="cdcgettextface"></a><a name="gettextface"></a> CDC:: GetTextFace
 
 Geçerli fontun yazı tipi adını bir arabelleğe kopyalamak için bu üye işlevi çağırın.
 
@@ -3912,7 +3913,7 @@ Sonlandırıcı null karakteri dahil değil, arabelleğe kopyalanmış bayt say�
 
 Yazı tipi adı null ile sonlandırılmış bir dize olarak kopyalanır.
 
-## <a name="cdcgettextmetrics"></a><a name="gettextmetrics"></a>CDC:: Gettextölçümleri
+## <a name="cdcgettextmetrics"></a><a name="gettextmetrics"></a> CDC:: Gettextölçümleri
 
 Geçerli yazı tipine ait ölçümleri, öznitelik cihaz bağlamını kullanarak alır.
 
@@ -3929,7 +3930,7 @@ BOOL GetTextMetrics(LPTEXTMETRIC lpMetrics) const;
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-## <a name="cdcgetviewportext"></a><a name="getviewportext"></a>CDC:: GetViewportExt
+## <a name="cdcgetviewportext"></a><a name="getviewportext"></a> CDC:: GetViewportExt
 
 Cihaz bağlamının görünüm penceresinin x ve y-kapsamlarını alır.
 
@@ -3941,7 +3942,7 @@ CSize GetViewportExt() const;
 
 X ve y-uzantıları (cihaz birimlerinde) bir `CSize` nesne olarak.
 
-## <a name="cdcgetviewportorg"></a><a name="getviewportorg"></a>CDC:: GetViewportOrg
+## <a name="cdcgetviewportorg"></a><a name="getviewportorg"></a> CDC:: GetViewportOrg
 
 Cihaz içeriğiyle ilişkili görünüm penceresinin kaynağının x ve y koordinatlarını alır.
 
@@ -3953,7 +3954,7 @@ CPoint GetViewportOrg() const;
 
 Görünüm penceresinin (cihaz koordinatlarındaki) bir nesne olarak kaynağı `CPoint` .
 
-## <a name="cdcgetwindow"></a><a name="getwindow"></a>CDC:: GetWindow
+## <a name="cdcgetwindow"></a><a name="getwindow"></a> CDC:: GetWindow
 
 Görüntüleme cihazı içeriğiyle ilişkili pencereyi döndürür.
 
@@ -3969,7 +3970,7 @@ CWnd* GetWindow() const;
 
 Bu gelişmiş bir işlevdir. Örneğin, bu üye işlevi yazdırırken veya baskı önizlemede görüntüleme penceresini döndüremeyebilir. Her zaman çıktı ile ilişkili pencereyi döndürür. Verilen DC 'yi kullanan çıkış işlevleri Bu pencerede çizilir.
 
-## <a name="cdcgetwindowext"></a><a name="getwindowext"></a>CDC:: GetWindowExt
+## <a name="cdcgetwindowext"></a><a name="getwindowext"></a> CDC:: GetWindowExt
 
 Cihaz içeriğiyle ilişkili pencerenin x ve y-kapsamlarını alır.
 
@@ -3981,7 +3982,7 @@ CSize GetWindowExt() const;
 
 X ve y-uzantıları (mantıksal birimler cinsinden) bir `CSize` nesne olarak.
 
-## <a name="cdcgetwindoworg"></a><a name="getwindoworg"></a>CDC:: GetWindowOrg
+## <a name="cdcgetwindoworg"></a><a name="getwindoworg"></a> CDC:: GetWindowOrg
 
 Cihaz içeriğiyle ilişkili pencerenin kaynağının x ve y koordinatlarını alır.
 
@@ -3993,7 +3994,7 @@ CPoint GetWindowOrg() const;
 
 Pencerenin (mantıksal koordinatlarda) bir nesne olarak kaynağı `CPoint` .
 
-## <a name="cdcgetworldtransform"></a><a name="getworldtransform"></a>CDC:: GetWorldTransform
+## <a name="cdcgetworldtransform"></a><a name="getworldtransform"></a> CDC:: GetWorldTransform
 
 Geçerli dünya alanını sayfa boşluğu dönüşümüne alır.
 
@@ -4018,7 +4019,7 @@ Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/e
 
 Bu yöntem, [GetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-getworldtransform)Windows GDI işlevini sarmalanmış.
 
-## <a name="cdcgradientfill"></a><a name="gradientfill"></a>CDC:: GradientFill
+## <a name="cdcgradientfill"></a><a name="gradientfill"></a> CDC:: GradientFill
 
 Dikdörtgen ve üçgen yapıları bir taraftan diğerine düzgün bir şekilde aşağı doğru bir renkle dolduracak şekilde bu üye işlevi çağırın.
 
@@ -4056,7 +4057,7 @@ Başarılı olursa doğru; Aksi halde yanlış.
 
 Daha fazla bilgi için `GradientFill` Windows SDK bakın.
 
-## <a name="cdcgraystring"></a><a name="graystring"></a>CDC:: gri dize
+## <a name="cdcgraystring"></a><a name="graystring"></a> CDC:: gri dize
 
 Bir bellek bit eşlemine metin yazarak, bit eşlem 'i seçerek ve ardından bit eşlemi görüntülemeye kopyalayarak, belirtilen konumda soluk (gri) metin çizer.
 
@@ -4119,7 +4120,7 @@ Ayrıca, geri çağırma işlevlerinin Windows 'a döndürülmeden önce Microso
 
 Çerçeve Önizleme modundayken, üye işlevine yapılan bir çağrı `GrayString` `TextOut` çağrıya çevrilir ve geri çağırma işlevi çağrılmaz.
 
-## <a name="cdchimetrictodp"></a><a name="himetrictodp"></a>CDC:: HIMETRICtoDP
+## <a name="cdchimetrictodp"></a><a name="himetrictodp"></a> CDC:: HIMETRICtoDP
 
 Bu işlevi kullanarak, HIMETRIK boyutları OLE 'den piksellere dönüştürebilirsiniz.
 
@@ -4136,7 +4137,7 @@ void HIMETRICtoDP(LPSIZE lpSize) const;
 
 Cihaz bağlamı nesnesinin eşleme modu MM_LOENGLISH, MM_HIENGLISH, MM_LOMETRIC veya MM_HIMETRIC ise, dönüştürme fiziksel inç piksel sayısını temel alır. Eşleme modu, kısıtlanmış olmayan diğer modlardan (ör. MM_TEXT) biriyse, dönüştürme mantıksal inç piksel sayısını temel alır.
 
-## <a name="cdchimetrictolp"></a><a name="himetrictolp"></a>CDC:: HIMETRICtoLP
+## <a name="cdchimetrictolp"></a><a name="himetrictolp"></a> CDC:: HIMETRICtoLP
 
 HIMETRIK birimleri mantıksal birimlere dönüştürmek için bu işlevi çağırın.
 
@@ -4155,9 +4156,9 @@ OLE 'den HIMETRIK boyutları alırken ve bunları uygulamanızın doğal eşleme
 
 Dönüştürme, önce HIMETRIK birimleri piksel olarak dönüştürerek ve ardından bu birimleri, cihaz bağlamının geçerli eşleme birimleri kullanılarak mantıksal birimlere dönüştürerek yapılır. Cihazın penceresi ve görünüm penceresinin uzatmaların sonucu etkileyeceğini unutmayın.
 
-## <a name="cdcintersectcliprect"></a><a name="intersectcliprect"></a>CDC:: IntersectClipRect
+## <a name="cdcintersectcliprect"></a><a name="intersectcliprect"></a> CDC:: IntersectClipRect
 
-Geçerli bölgenin kesişimini ve *x1*, *Y1*, *x2*ve *Y2*tarafından belirtilen dikdörtgeni oluşturarak yeni bir kırpma bölgesi oluşturur.
+Geçerli bölgenin kesişimini ve *x1*, *Y1*, *x2* ve *Y2* tarafından belirtilen dikdörtgeni oluşturarak yeni bir kırpma bölgesi oluşturur.
 
 ```
 int IntersectClipRect(
@@ -4202,7 +4203,7 @@ Yeni kırpma bölgesinin türü. Aşağıdaki değerlerden herhangi biri olabili
 
 GDI, sonraki tüm çıktıyı yeni sınır içine sığacak şekilde kırpar. Genişlik ve yükseklik 32.767 ' i aşmamalıdır.
 
-## <a name="cdcinvertrect"></a><a name="invertrect"></a>CDC:: ınevirtrect
+## <a name="cdcinvertrect"></a><a name="invertrect"></a> CDC:: ınevirtrect
 
 Verilen dikdörtgenin içeriğini tersine çevirir.
 
@@ -4225,9 +4226,9 @@ Dikdörtgen boşsa hiçbir şey çizilmez.
 
 [!code-cpp[NVC_MFCDocView#36](../../mfc/codesnippet/cpp/cdc-class_8.cpp)]
 
-## <a name="cdcinvertrgn"></a><a name="invertrgn"></a>CDC:: Evirtrgn
+## <a name="cdcinvertrgn"></a><a name="invertrgn"></a> CDC:: Evirtrgn
 
-*PRgn*tarafından belirtilen bölgedeki renkleri tersine çevirir.
+*PRgn* tarafından belirtilen bölgedeki renkleri tersine çevirir.
 
 ```
 BOOL InvertRgn(CRgn* pRgn);
@@ -4246,7 +4247,7 @@ Tersine kullanılacak bölgeyi tanımlar. Bölgenin koordinatları mantıksal bi
 
 Tek renkli ekranlarda, işlev beyaz pikselleri siyah ve siyah piksel beyaz hale getirir. Renkli ekranlarda, Inversion, renklerin ekran için nasıl oluşturulduğuna bağlıdır.
 
-## <a name="cdcisprinting"></a><a name="isprinting"></a>CDC:: IsPrinting
+## <a name="cdcisprinting"></a><a name="isprinting"></a> CDC:: IsPrinting
 
 Cihaz bağlamının yazdırma için kullanılıp kullanılmadığını belirler.
 
@@ -4258,7 +4259,7 @@ BOOL IsPrinting() const;
 
 `CDC`Nesne bir yazıcı DC ise sıfır dışında; Aksi takdirde 0.
 
-## <a name="cdclineto"></a><a name="lineto"></a>CDC:: LineTo
+## <a name="cdclineto"></a><a name="lineto"></a> CDC:: LineTo
 
 Geçerli konumdan *x* ve *y* (veya *Point*) tarafından belirtilen noktayı içerecek şekilde bir çizgi çizer.
 
@@ -4287,13 +4288,13 @@ Satırın uç noktasını belirtir. `POINT`Bu parametre için bir yapı ya da bi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çizgi seçili kalemle çizilir. Geçerli konum *x*, *y* veya *işaret*olarak ayarlandı.
+Çizgi seçili kalemle çizilir. Geçerli konum *x*, *y* veya *işaret* olarak ayarlandı.
 
 ### <a name="example"></a>Örnek
 
   [CRect:: CenterPoint](../../atl-mfc-shared/reference/crect-class.md#centerpoint)örneğine bakın.
 
-## <a name="cdclptodp"></a><a name="lptodp"></a>CDC:: LPtoDP
+## <a name="cdclptodp"></a><a name="lptodp"></a> CDC:: LPtoDP
 
 Mantıksal birimleri cihaz birimlerine dönüştürür.
 
@@ -4326,7 +4327,7 @@ Bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya bir [CRect]
 
 Noktanın x ve y koordinatları,-32.768 ile 32.767 arasında 2 baytlık işaretli tamsayılardır. Eşleme modunun Bu limitlerden daha büyük değerlere neden olacağı durumlarda, sistem değerleri sırasıyla-32.768 ve 32.767 olarak ayarlar.
 
-## <a name="cdclptohimetric"></a><a name="lptohimetric"></a>CDC:: Lptohimetrik
+## <a name="cdclptohimetric"></a><a name="lptohimetric"></a> CDC:: Lptohimetrik
 
 Mantıksal birimleri HIMETRIK birimlerine dönüştürmek için bu işlevi çağırın.
 
@@ -4345,7 +4346,7 @@ Bu işlevi kullanarak, bir OLE için HIMETRIK boyutlar verdiğinizde, uygulaman�
 
 Dönüştürme işlemi, önce mantıksal birimleri, cihaz bağlamının geçerli eşleme birimlerini kullanarak piksellere dönüştürerek ve sonra bu birimleri HIMETRIMETRIK birimlerine dönüştürerek gerçekleştirilir.
 
-## <a name="cdcm_hattribdc"></a><a name="m_hattribdc"></a>CDC:: m_hAttribDC
+## <a name="cdcm_hattribdc"></a><a name="m_hattribdc"></a> CDC:: m_hAttribDC
 
 Bu nesnenin öznitelik cihaz bağlamı `CDC` .
 
@@ -4357,7 +4358,7 @@ HDC m_hAttribDC;
 
 Varsayılan olarak, bu cihaz bağlamı değerine eşittir `m_hDC` . Genel olarak, `CDC` cihaz bağlamından bilgi isteyen GDI çağrıları öğesine yönlendirilir `m_hAttribDC` . Bu iki cihaz bağlamlarının kullanımı hakkında daha fazla bilgi için [CDC](../../mfc/reference/cdc-class.md) sınıfının açıklamasına bakın.
 
-## <a name="cdcm_hdc"></a><a name="m_hdc"></a>CDC:: m_hDC
+## <a name="cdcm_hdc"></a><a name="m_hdc"></a> CDC:: m_hDC
 
 Bu nesne için çıkış aygıtı bağlamı `CDC` .
 
@@ -4369,7 +4370,7 @@ HDC m_hDC;
 
 Varsayılan olarak, `m_hDC` `m_hAttribDC` tarafından Sarmalanan diğer cihaz bağlamına eşittir `CDC` . Genel olarak, `CDC` çıktı oluşturan GDI çağrıları `m_hDC` cihaz bağlamına gider. Öğesini başlatabilir `m_hDC` ve `m_hAttribDC` farklı cihazlara işaret edebilirsiniz. Bu iki cihaz bağlamlarının kullanımı hakkında daha fazla bilgi için [CDC](../../mfc/reference/cdc-class.md) sınıfının açıklamasına bakın.
 
-## <a name="cdcmaskblt"></a><a name="maskblt"></a>CDC:: MaskBlt
+## <a name="cdcmaskblt"></a><a name="maskblt"></a> CDC:: MaskBlt
 
 Verilen maske ve tarama işlemini kullanarak kaynak ve hedef bit eşlemlerin renk verilerini birleştirir.
 
@@ -4435,7 +4436,7 @@ Bu işlev çağrıldığında kaynak cihaz bağlamı için bir döndürme veya y
 
 Kaynak, model ve hedef bit eşlemlerin renk biçimleri farklıysa, bu işlev, hedef biçimiyle eşleşecek şekilde, ya da her ikisini de veya her ikisini birden dönüştürür. Maske bit eşlemi tek renkli bir bit eşlem değilse bir hata oluşur. Gelişmiş bir dosya kaydedilirken, kaynak cihaz bağlamı gelişmiş bir dosya cihazı bağlamını tanımlarsa bir hata oluşur (ve işlev 0 döndürür). Tüm cihazlar desteklenmez `MaskBlt` . Bir uygulamanın `GetDeviceCaps` Bu işlevi destekleyip desteklemediğini belirlemesi için bir uygulama çağırmalıdır. Maske bit eşlem sağlanmazsa, bu işlev `BitBlt` , ön plan tarama işlem kodu kullanılarak tam olarak benzer şekilde davranır. Maske bit eşlemindeki piksel uzaklıkları, kaynak cihaz bağlamının bit eşlemindeki noktaya (0, 0) eşlenir. Bu, bir maske bit eşleminin bir maske kümesi içerdiği durumlarda faydalıdır; bir uygulama, ' a gönderilen piksel farklarını ve dikdörtgen boyutlarını ayarlayarak, bunlardan herhangi birini bir maske blime görevine kolayca uygulayabilir `MaskBlt` .
 
-## <a name="cdcmodifyworldtransform"></a><a name="modifyworldtransform"></a>CDC:: ModifyWorldTransform
+## <a name="cdcmodifyworldtransform"></a><a name="modifyworldtransform"></a> CDC:: ModifyWorldTransform
 
 Belirtilen modu kullanarak bir cihaz bağlamı için dünya dönüşümünü değiştirir.
 
@@ -4465,7 +4466,7 @@ Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/e
 
 Bu yöntem, Windows GDI işlevi [ModifyWorldTransform](/windows/win32/api/wingdi/nf-wingdi-modifyworldtransform)' i sarmalanmış.
 
-## <a name="cdcmoveto"></a><a name="moveto"></a>CDC:: MoveTo
+## <a name="cdcmoveto"></a><a name="moveto"></a> CDC:: MoveTo
 
 Geçerli konumu *x* ve *y* (veya *Point*) tarafından belirtilen noktaya kaydırır.
 
@@ -4496,7 +4497,7 @@ Yeni konumu belirtir. `POINT`Bu parametre için bir yapı ya da bir `CPoint` nes
 
   [CRect:: CenterPoint](../../atl-mfc-shared/reference/crect-class.md#centerpoint)örneğine bakın.
 
-## <a name="cdcoffsetcliprgn"></a><a name="offsetcliprgn"></a>CDC:: OffsetClipRgn
+## <a name="cdcoffsetcliprgn"></a><a name="offsetcliprgn"></a> CDC:: OffsetClipRgn
 
 Cihaz bağlamının kırpma bölgesini belirtilen uzaklıklara göre kaydırır.
 
@@ -4535,7 +4536,7 @@ Yeni bölgenin türü. Aşağıdaki değerlerden herhangi biri olabilir:
 
 İşlevi x-ekseni ve *y* birimlerinin bölge *x* birimlerini y ekseni üzerinde taşır.
 
-## <a name="cdcoffsetviewportorg"></a><a name="offsetviewportorg"></a>CDC:: OffsetViewportOrg
+## <a name="cdcoffsetviewportorg"></a><a name="offsetviewportorg"></a> CDC:: OffsetViewportOrg
 
 Görünüm penceresinin koordinatlarını geçerli görünüm penceresinin koordinatlarına göre değiştirir.
 
@@ -4557,7 +4558,7 @@ Geçerli kaynağın y koordinatına eklenecek cihaz birimi sayısını belirtir.
 
 Bir nesne olarak önceki Görünüm penceresi kaynağı (cihaz koordinatlarında) `CPoint` .
 
-## <a name="cdcoffsetwindoworg"></a><a name="offsetwindoworg"></a>CDC:: OffsetWindowOrg
+## <a name="cdcoffsetwindoworg"></a><a name="offsetwindoworg"></a> CDC:: OffsetWindowOrg
 
 Pencere kaynağının koordinatlarını geçerli pencere başlangıcının koordinatlarına göre değiştirir.
 
@@ -4579,7 +4580,7 @@ Geçerli kaynağın y koordinatına eklenecek mantıksal birim sayısını belir
 
 Önceki pencere kaynağı (mantıksal koordinatlardaki) bir nesne olarak `CPoint` .
 
-## <a name="cdcoperator-hdc"></a><a name="operator_hdc"></a>CDC:: operator HDC
+## <a name="cdcoperator-hdc"></a><a name="operator_hdc"></a> CDC:: operator HDC
 
 Nesnenin cihaz bağlamı tanıtıcısını almak için bu işleci kullanın `CDC` .
 
@@ -4595,7 +4596,7 @@ Başarılı olursa, cihaz bağlamı nesnesinin tanıtıcısı; Aksi takdirde, NU
 
 İşleyiciyi doğrudan Windows API 'Leri çağırmak için kullanabilirsiniz.
 
-## <a name="cdcpaintrgn"></a><a name="paintrgn"></a>CDC::P aintRgn
+## <a name="cdcpaintrgn"></a><a name="paintrgn"></a> CDC::P aintRgn
 
 Geçerli fırçayı kullanarak *pRgn* tarafından belirtilen bölgeyi doldurur.
 
@@ -4612,7 +4613,7 @@ Doldurulacak bölgeyi tanımlar. Verilen bölgenin koordinatları mantıksal bir
 
 İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.
 
-## <a name="cdcpatblt"></a><a name="patblt"></a>CDC::P atBlt
+## <a name="cdcpatblt"></a><a name="patblt"></a> CDC::P atBlt
 
 Cihazda bir bit model oluşturur.
 
@@ -4662,7 +4663,7 @@ Bu kalıp, seçilen fırçanın bir birleşimidir ve zaten cihazda olan desenini
 
 Tüm cihaz bağlamları `PatBlt` işlevi desteklemez. Bir cihaz bağlamının destekleyip desteklemediğini anlamak için, bir,,,,,,,,,,,,,,,,,,,,, `PatBlt` `GetDeviceCaps` RC_BITBLT bayrağının
 
-## <a name="cdcpie"></a><a name="pie"></a>CDC::P IE
+## <a name="cdcpie"></a><a name="pie"></a> CDC::P IE
 
 Ortası ve iki uç nokta satırlara göre birleştirilmiş bir elips yay çizerek pasta şekilli bir kama çizer.
 
@@ -4716,7 +4717,7 @@ Sınırlayıcı dikdörtgeni belirtir. `CRect`Bu parametre için bir nesne ya da
 Yay başlangıç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez. Bu parametre için bir [nokta](/windows/win32/api/windef/ns-windef-point) yapısını ya da [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesnesini geçirebilirsiniz.
 
 *ptEnd 'ler*<br/>
-Yay uç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez. `POINT`Bu parametre için bir yapı ya da bir `CPoint` nesne geçirebilirsiniz.
+Yay uç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması gerekmez. `POINT` Bu parametre için bir yapı ya da bir `CPoint` nesne geçirebilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4724,17 +4725,17 @@ Yay uç noktasını belirtir. Bu noktanın, tam olarak yay üzerinde olması ger
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yay Merkezi, *x1*, *Y1*, *x2*ve *Y2* (veya *lpRect*tarafından) tarafından belirtilen sınırlayıcı dikdörtgenin ortatdır. Yayı başlangıç ve bitiş noktaları, *x3*, *Y3*, *x4*ve *Y4* (ya da *ptStart* ve *ptEnd*tarafından) tarafından belirtilir.
+Yay Merkezi, *x1*, *Y1*, *x2* ve *Y2* (veya *lpRect* tarafından) tarafından belirtilen sınırlayıcı dikdörtgenin ortatdır. Yayı başlangıç ve bitiş noktaları, *x3*, *Y3*, *x4* ve *Y4* (ya da *ptStart* ve *ptEnd* tarafından) tarafından belirtilir.
 
-Yay, seçili kalemle çizilir ve saatin tersi yönde taşınır. Her bir uç noktadan yay merkezine iki ek çizgi çizilir. Pasta şeklindeki alan, geçerli fırça ile doldurulur. *X3* eşittir *x4* ve *Y3* *eşitse, sonuç olarak elips*merkezinden noktaya ( *x3*, *Y3*) veya ( *x4*, *Y4*) tek bir çizgi içeren bir elips olur.
+Yay, seçili kalemle çizilir ve saatin tersi yönde taşınır. Her bir uç noktadan yay merkezine iki ek çizgi çizilir. Pasta şeklindeki alan, geçerli fırça ile doldurulur. *X3* eşittir *x4* ve *Y3* *eşitse, sonuç olarak elips* merkezinden noktaya ( *x3*, *Y3*) veya ( *x4*, *Y4*) tek bir çizgi içeren bir elips olur.
 
-Bu işlev tarafından çizilen Şekil, ' i uzatır, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2*  -  *y1* ve şeklin genişliği *x2*  -  *x1*olduğu anlamına gelir. Sınırlayıcı dikdörtgenin Width ve yüksekliğinin her ikisi de 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Bu işlev tarafından çizilen Şekil, ' i uzatır, ancak sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2*  -   ve şeklin genişliği *x2*  -  *x1* olduğu anlamına gelir. Sınırlayıcı dikdörtgenin Width ve yüksekliğinin her ikisi de 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#37](../../mfc/codesnippet/cpp/cdc-class_9.cpp)]
 
-## <a name="cdcplaymetafile"></a><a name="playmetafile"></a>CDC::P layMetaFile
+## <a name="cdcplaymetafile"></a><a name="playmetafile"></a> CDC::P layMetaFile
 
 Belirtilen meta dosya içeriğini cihaz bağlamında çalar.
 
@@ -4771,7 +4772,7 @@ Gelişmiş bir meta dosyası isteğe bağlı bir palet içeriyorsa, uygulama iki
 
 Çıkış cihazı bağlamının durumları bu işlev tarafından korunur. Oluşturulan ancak gelişmiş meta dosyasında silinmediği tüm nesneler bu işlev tarafından silinir. Bu işlevi durdurmak için bir uygulama, `CancelDC` işlemi sonlandırmak için başka bir iş parçacığından Windows işlevini çağırabilir. Bu durumda, işlev sıfır döndürür.
 
-## <a name="cdcplgblt"></a><a name="plgblt"></a>CDC::P lgBlt
+## <a name="cdcplgblt"></a><a name="plgblt"></a> CDC::P lgBlt
 
 Kaynak cihaz bağlamındaki belirtilen dikdörtgenden alınan renk verileri bitlerinin, belirtilen cihaz bağlamında belirtilen parallekenar ile bir bit blok aktarımı gerçekleştirir.
 
@@ -4837,7 +4838,7 @@ Hedef koordinatları hedef cihaz bağlamına göre dönüştürülür; kaynak ko
 
 Kaynak ve hedef cihaz bağlamları uyumsuz cihazları temsil ediyorsa, `PlgBlt` bir hata döndürür.
 
-## <a name="cdcpolybezier"></a><a name="polybezier"></a>CDC::P olyBezier
+## <a name="cdcpolybezier"></a><a name="polybezier"></a> CDC::P olyBezier
 
 Bir veya daha fazla Bzier splines çizer.
 
@@ -4865,7 +4866,7 @@ Bu işlev, *lpPoints* parametresi tarafından belirtilen uç noktaları ve denet
 
 Geçerli konum işlev tarafından kullanılmıyor veya güncelleştirilmedi `PolyBezier` . Şekil doldurulmamış. Bu işlev, satırları geçerli kalemi kullanarak çizer.
 
-## <a name="cdcpolybezierto"></a><a name="polybezierto"></a>CDC::P olyBezierTo
+## <a name="cdcpolybezierto"></a><a name="polybezierto"></a> CDC::P olyBezierTo
 
 Bir veya daha fazla Bzier splines çizer.
 
@@ -4889,13 +4890,13 @@ Uç noktaları ve denetim noktalarını içeren bir [nokta](/windows/win32/api/w
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, *lpPoints* parametresi tarafından belirtilen denetim noktalarını kullanarak üçüncü dereceden Bzier daki cetvelleri çizer. İlk eğri, denetim noktaları olarak ilk iki noktayı kullanarak geçerli konumdan üçüncü noktaya çizilir. Sonraki her eğri için, işlevin tam olarak üç noktası olması gerekir ve bir sonraki için başlangıç noktası olarak önceki eğri bitiş noktasını kullanır. `PolyBezierTo`geçerli konumu son Bzier eğrisi bitiş noktasına kaydırır. Şekil doldurulmamış. Bu işlev, satırları geçerli kalemi kullanarak çizer.
+Bu işlev, *lpPoints* parametresi tarafından belirtilen denetim noktalarını kullanarak üçüncü dereceden Bzier daki cetvelleri çizer. İlk eğri, denetim noktaları olarak ilk iki noktayı kullanarak geçerli konumdan üçüncü noktaya çizilir. Sonraki her eğri için, işlevin tam olarak üç noktası olması gerekir ve bir sonraki için başlangıç noktası olarak önceki eğri bitiş noktasını kullanır. `PolyBezierTo` geçerli konumu son Bzier eğrisi bitiş noktasına kaydırır. Şekil doldurulmamış. Bu işlev, satırları geçerli kalemi kullanarak çizer.
 
 ### <a name="example"></a>Örnek
 
   [CDC:: BeginPath](#beginpath)örneğine bakın.
 
-## <a name="cdcpolydraw"></a><a name="polydraw"></a>CDC::P olyDraw
+## <a name="cdcpolydraw"></a><a name="polydraw"></a> CDC::P olyDraw
 
 Çizgi parçaları ve Bzier splines kümesi çizer.
 
@@ -4943,7 +4944,7 @@ Bu işlev `CDC::MoveTo` ,, `CDC::LineTo` ve üye işlevlerine yapılan ardışı
 
   [CDC:: BeginPath](#beginpath)örneğine bakın.
 
-## <a name="cdcpolygon"></a><a name="polygon"></a>CDC::P olygon
+## <a name="cdcpolygon"></a><a name="polygon"></a> CDC::P olygon
 
 Geçerli kalemi kullanarak, satırlara göre bağlı iki veya daha fazla noktadan (köşeler) oluşan bir çokgen çizer.
 
@@ -4975,9 +4976,9 @@ Geçerli Çokgen doldurma modu, `GetPolyFillMode` ve üye işlevleri kullanılar
 
 [!code-cpp[NVC_MFCDocView#38](../../mfc/codesnippet/cpp/cdc-class_10.cpp)]
 
-## <a name="cdcpolyline"></a><a name="polyline"></a>CDC::P olyline
+## <a name="cdcpolyline"></a><a name="polyline"></a> CDC::P olyline
 
-*LpPoints*tarafından belirtilen noktaları bağlayan bir çizgi kesimleri kümesi çizer.
+*LpPoints* tarafından belirtilen noktaları bağlayan bir çizgi kesimleri kümesi çizer.
 
 ```
 BOOL Polyline(
@@ -5003,7 +5004,7 @@ Satırlar, geçerli kalemin kullanıldığı sonraki noktalara göre ilk noktada
 
 Daha fazla bilgi için Windows SDK [Çoklu çizgi](/windows/win32/api/wingdi/nf-wingdi-polyline) bölümüne bakın.
 
-## <a name="cdcpolylineto"></a><a name="polylineto"></a>CDC::P olylineTo
+## <a name="cdcpolylineto"></a><a name="polylineto"></a> CDC::P olylineTo
 
 Bir veya daha fazla düz çizgi çizer.
 
@@ -5027,9 +5028,9 @@ Dizideki noktaların sayısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli konumdan, geçerli kalemden *lpPoints* parametresi tarafından belirtilen ilk noktaya bir çizgi çizilir. Her ek satır için işlev, önceki satırın bitiş noktasından *lpPoints*tarafından belirtilen bir sonraki noktaya çizer. `PolylineTo`geçerli konumu son satırın bitiş noktasına kaydırır. Bu işlev tarafından çizilen çizgi kesimleri kapalı bir şekil içeriyorsa, şekil doldurulmaz.
+Geçerli konumdan, geçerli kalemden *lpPoints* parametresi tarafından belirtilen ilk noktaya bir çizgi çizilir. Her ek satır için işlev, önceki satırın bitiş noktasından *lpPoints* tarafından belirtilen bir sonraki noktaya çizer. `PolylineTo` geçerli konumu son satırın bitiş noktasına kaydırır. Bu işlev tarafından çizilen çizgi kesimleri kapalı bir şekil içeriyorsa, şekil doldurulmaz.
 
-## <a name="cdcpolypolygon"></a><a name="polypolygon"></a>CDC::P olyPolygon
+## <a name="cdcpolypolygon"></a><a name="polypolygon"></a> CDC::P olyPolygon
 
 Geçerli Çokgen doldurma modu kullanılarak doldurulmuş iki veya daha fazla Çokgen oluşturur.
 
@@ -5065,7 +5066,7 @@ Her biri, *lpPoints* dizisindeki çokgenlerin birindeki noktaların sayısını 
 
 Geçerli Çokgen doldurma modu, `GetPolyFillMode` ve üye işlevleri kullanılarak alınabilir veya ayarlanabilir `SetPolyFillMode` .
 
-## <a name="cdcpolypolyline"></a><a name="polypolyline"></a>CDC::P olyPolyline
+## <a name="cdcpolypolyline"></a><a name="polypolyline"></a> CDC::P olyPolyline
 
 Birden çok bağlantılı çizgi segmentini çizer.
 
@@ -5095,7 +5096,7 @@ Karşılık gelen Çokgen için *lpPoints* dizisindeki noktaların sayısını b
 
 Çizgi kesimleri, geçerli kalem kullanılarak çizilir. Segmentler tarafından oluşturulan rakamlar doldurulmamış. Geçerli konum bu işlev tarafından kullanılmıyor veya güncelleştirilmedi.
 
-## <a name="cdcptvisible"></a><a name="ptvisible"></a>CDC::P tVisible
+## <a name="cdcptvisible"></a><a name="ptvisible"></a> CDC::P tVisible
 
 Verilen noktanın cihaz bağlamının kırpma bölgesi içinde olup olmadığını belirler.
 
@@ -5122,7 +5123,7 @@ Mantıksal koordinatları denetlenecek noktayı belirtir. `POINT`Bu parametre i�
 
 Belirtilen nokta kırpma bölgesi içindeyse sıfır dışı; Aksi takdirde 0.
 
-## <a name="cdcqueryabort"></a><a name="queryabort"></a>CDC:: QueryAbort
+## <a name="cdcqueryabort"></a><a name="queryabort"></a> CDC:: QueryAbort
 
 Yazdırma uygulaması için [SetAbortProc](#setabortproc) üye işlevi tarafından yüklenen Abort işlevini çağırır ve yazdırmanın sonlandırılması gerekip gerekmediğini sorgular.
 
@@ -5134,7 +5135,7 @@ BOOL QueryAbort() const;
 
 Yazdırma devam etmelidir veya bir iptal yordamı yoksa, dönüş değeri sıfır dışı olur. Yazdırma işinin sonlandırılması gerekiyorsa bu 0 ' dır. Dönüş değeri, Abort işlevi tarafından sağlanır.
 
-## <a name="cdcrealizepalette"></a><a name="realizepalette"></a>CDC:: RealizePalette
+## <a name="cdcrealizepalette"></a><a name="realizepalette"></a> CDC:: RealizePalette
 
 Geçerli mantıksal paletten sistem paletine olan girdileri eşler.
 
@@ -5154,7 +5155,7 @@ Bir pencerede giriş odağı ve çağrılar olduğunda `RealizePalette` , Window
 
 Ayrıca, Windows, etkin olmayan pencereler tarafından istenen renklerle, işlevi mümkün olan renge en yakın şekilde çağıran renklerle eşleşir. Bu, etkin olmayan Windows 'da görüntülenrenklerde istenmeyen değişiklikleri önemli ölçüde azaltır.
 
-## <a name="cdcrectangle"></a><a name="rectangle"></a>CDC:: dikdörtgen
+## <a name="cdcrectangle"></a><a name="rectangle"></a> CDC:: dikdörtgen
 
 Geçerli kalemi kullanarak bir dikdörtgen çizer.
 
@@ -5193,13 +5194,13 @@ Mantıksal birimlerde dikdörtgeni belirtir. `CRect`Bu parametre için bir nesne
 
 Dikdörtgenin iç kısmı geçerli fırça kullanılarak doldurulur.
 
-Dikdörtgen, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, dikdörtgenin yüksekliğinin *Y2*  -  *y1* ve dikdörtgenin genişliği *x2*  -  *x1*olduğu anlamına gelir. Dikdörtgenin Width ve Height değeri 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Dikdörtgen, sağ ve alt koordinatları kapsamaz, ancak içermez. Bu, dikdörtgenin yüksekliğinin *Y2*  -   ve dikdörtgenin genişliği *x2*  -  *x1* olduğu anlamına gelir. Dikdörtgenin Width ve Height değeri 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#39](../../mfc/codesnippet/cpp/cdc-class_11.cpp)]
 
-## <a name="cdcrectvisible"></a><a name="rectvisible"></a>CDC:: RectVisible
+## <a name="cdcrectvisible"></a><a name="rectvisible"></a> CDC:: RectVisible
 
 Verilen dikdörtgenin herhangi bir kısmının görüntüleme bağlamının kırpma bölgesi içinde olup olmadığını belirler.
 
@@ -5216,7 +5217,7 @@ virtual BOOL RectVisible(LPCRECT lpRect) const;
 
 Belirli bir dikdörtgenin herhangi bir bölümü kırpma bölgesi içinde yer alıyorsa sıfır dışı. Aksi takdirde 0.
 
-## <a name="cdcreleaseattribdc"></a><a name="releaseattribdc"></a>CDC:: ReleaseAttribDC
+## <a name="cdcreleaseattribdc"></a><a name="releaseattribdc"></a> CDC:: ReleaseAttribDC
 
 NULL olarak ayarlamak için bu üye işlevini çağırın `m_hAttribDC` .
 
@@ -5228,7 +5229,7 @@ virtual void ReleaseAttribDC();
 
 Bunun oluşmasına neden olmaz `Detach` . Yalnızca çıkış aygıtı bağlamı `CDC` nesnesine iliştirilir ve yalnızca ayrılmış olabilir.
 
-## <a name="cdcreleaseoutputdc"></a><a name="releaseoutputdc"></a>CDC:: ReleaseOutputDC
+## <a name="cdcreleaseoutputdc"></a><a name="releaseoutputdc"></a> CDC:: ReleaseOutputDC
 
 Üyeyi NULL olarak ayarlamak için bu üye işlevini çağırın `m_hDC` .
 
@@ -5240,7 +5241,7 @@ virtual void ReleaseOutputDC();
 
 Bu üye işlevi, çıkış aygıtı bağlamı nesneye eklendiğinde çağrılamaz `CDC` . `Detach`Çıkış cihazı bağlamını ayırmak için üye işlevini kullanın.
 
-## <a name="cdcresetdc"></a><a name="resetdc"></a>CDC:: ResetDC
+## <a name="cdcresetdc"></a><a name="resetdc"></a> CDC:: ResetDC
 
 Nesne tarafından Sarmalanan cihaz bağlamını güncelleştirmek için bu üye işlevi çağırın `CDC` .
 
@@ -5267,9 +5268,9 @@ Bu üye işlevi, sürücü adını, cihaz adını veya çıkış bağlantı nokt
 
 Bu üye işlevi çağırmadan önce, cihaz bağlamına seçilmiş olan tüm nesnelerin (hisse senedi nesneleri) seçili olduğundan emin olmanız gerekir.
 
-## <a name="cdcrestoredc"></a><a name="restoredc"></a>CDC:: RestoreDC
+## <a name="cdcrestoredc"></a><a name="restoredc"></a> CDC:: RestoreDC
 
-Cihaz bağlamını *nSavedDC*tarafından tanımlanan önceki duruma geri yükler.
+Cihaz bağlamını *nSavedDC* tarafından tanımlanan önceki duruma geri yükler.
 
 ```
 virtual BOOL RestoreDC(int nSavedDC);
@@ -5286,11 +5287,11 @@ Belirtilen bağlam geri yüklenmişse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`RestoreDC`daha önceki çağrılar tarafından oluşturulan bir yığından üye işlevine kayan durum bilgilerini ekleyerek cihaz bağlamını geri yükler `SaveDC` .
+`RestoreDC` daha önceki çağrılar tarafından oluşturulan bir yığından üye işlevine kayan durum bilgilerini ekleyerek cihaz bağlamını geri yükler `SaveDC` .
 
 Yığın, çeşitli cihaz bağlamlarının durum bilgilerini içerebilir. *NSavedDC* tarafından belirtilen bağlam yığının en üstünde değilse, `RestoreDC` *nSavedDC* tarafından belirtilen cihaz bağlamı ve yığının en üstü arasındaki tüm durum bilgilerini siler. Silinen bilgiler kaybolur.
 
-## <a name="cdcroundrect"></a><a name="roundrect"></a>CDC:: RoundRect
+## <a name="cdcroundrect"></a><a name="roundrect"></a> CDC:: RoundRect
 
 Geçerli kalemi kullanarak yuvarlatılmış köşeler içeren bir dikdörtgen çizer.
 
@@ -5342,13 +5343,13 @@ Mantıksal birimlerde sınırlayıcı dikdörtgeni belirtir. `CRect`Bu parametre
 
 Dikdörtgenin iç kısmı geçerli fırça kullanılarak doldurulur.
 
-Bu işlevin çiztiği şekil, sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2*  -  *y1* ve şeklin genişliği *x2*  -  *x1*olduğu anlamına gelir. Sınırlayıcı dikdörtgenin yüksekliği ve genişliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
+Bu işlevin çiztiği şekil, sağ ve alt koordinatları içermez. Bu, şeklin yüksekliğinin *Y2*  -   ve şeklin genişliği *x2*  -  *x1* olduğu anlamına gelir. Sınırlayıcı dikdörtgenin yüksekliği ve genişliği 2 birimden büyük ve 32.767 birimden az olmalıdır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#40](../../mfc/codesnippet/cpp/cdc-class_12.cpp)]
 
-## <a name="cdcsavedc"></a><a name="savedc"></a>CDC:: SaveDC
+## <a name="cdcsavedc"></a><a name="savedc"></a> CDC:: SaveDC
 
 Durum bilgilerini (kırpma bölgesi, seçili nesneler ve eşleme modu gibi) Windows tarafından tutulan bir bağlam yığınına kopyalayarak cihaz bağlamının geçerli durumunu kaydeder.
 
@@ -5364,9 +5365,9 @@ Kaydedilen cihaz bağlamını tanımlayan bir tamsayı. Bir hata oluşursa 0 ' d
 
 Kaydedilen cihaz bağlamı daha sonra kullanılarak geri yüklenebilir `RestoreDC` .
 
-`SaveDC`, herhangi bir sayıda cihaz bağlamı durumunu kaydetmek için herhangi bir sayıda kullanılabilir.
+`SaveDC` , herhangi bir sayıda cihaz bağlamı durumunu kaydetmek için herhangi bir sayıda kullanılabilir.
 
-## <a name="cdcscaleviewportext"></a><a name="scaleviewportext"></a>CDC:: ScaleViewportExt
+## <a name="cdcscaleviewportext"></a><a name="scaleviewportext"></a> CDC:: ScaleViewportExt
 
 Geçerli değerlere göre görünüm penceresi genişletmesini değiştirir.
 
@@ -5406,7 +5407,7 @@ Formüller aşağıdaki gibi yazılır:
 
 Yeni Görünüm penceresi uzantıları, geçerli kapsamlar belirtilen pay ile çarpılarak ve ardından belirtilen paydaya bölünerek hesaplanır.
 
-## <a name="cdcscalewindowext"></a><a name="scalewindowext"></a>CDC:: ScaleWindowExt
+## <a name="cdcscalewindowext"></a><a name="scalewindowext"></a> CDC:: ScaleWindowExt
 
 Pencere kapsamlarını geçerli değerlere göre değiştirir.
 
@@ -5446,7 +5447,7 @@ Formüller aşağıdaki gibi yazılır:
 
 Yeni pencere kapsamları, geçerli kapsamlar belirtilen pay ile çarpılarak ve ardından belirtilen paydaya bölünerek hesaplanır.
 
-## <a name="cdcscrolldc"></a><a name="scrolldc"></a>CDC:: ScrollDC
+## <a name="cdcscrolldc"></a><a name="scrolldc"></a> CDC:: ScrollDC
 
 Bit bir dikdörtgeni yatay ve dikey olarak kaydırır.
 
@@ -5472,7 +5473,7 @@ Dikey kaydırma birimlerinin sayısını belirtir.
 `RECT` `CRect` Kaydırma dikdörtgeninin koordinatlarını içeren yapıya veya nesneye işaret eder.
 
 *lpRectClip*<br/>
-`RECT` `CRect` Kırpma dikdörtgeninin koordinatlarını içeren yapıya veya nesneye işaret eder. Bu dikdörtgen, *lpRectScroll*tarafından işaret edilen orijinalden daha küçük olduğunda, kaydırma yalnızca küçük dikdörtgende gerçekleşir.
+`RECT` `CRect` Kırpma dikdörtgeninin koordinatlarını içeren yapıya veya nesneye işaret eder. Bu dikdörtgen, *lpRectScroll* tarafından işaret edilen orijinalden daha küçük olduğunda, kaydırma yalnızca küçük dikdörtgende gerçekleşir.
 
 *pRgnUpdate*<br/>
 Kaydırma işleminin kapsamadığı bölgeyi tanımlar. `ScrollDC`İşlev bu bölgeyi tanımlar; bir dikdörtgen olması gerekmez.
@@ -5490,7 +5491,7 @@ Kaydırma yürütülürse sıfır dışı; Aksi takdirde 0.
 
 Bir uygulamanın `ScrollWindow` `CWnd` , bir pencerenin tüm istemci alanını kaydırmak gerektiğinde, sınıfının üye işlevini kullanması gerekir. Aksi takdirde, kullanması gerekir `ScrollDC` .
 
-## <a name="cdcselectclippath"></a><a name="selectclippath"></a>CDC:: SelectClipPath
+## <a name="cdcselectclippath"></a><a name="selectclippath"></a> CDC:: SelectClipPath
 
 Geçerli yolu cihaz bağlamı için bir kırpma bölgesi olarak seçer ve yeni bölgeyi belirtilen modu kullanarak var olan herhangi bir kırpma bölgesiyle birleştirerek.
 
@@ -5521,7 +5522,7 @@ Yolu kullanma yöntemini belirtir. Aşağıdaki değerlere izin verilir:
 
 Tanımlanan cihaz bağlamı kapalı bir yol içermelidir.
 
-## <a name="cdcselectcliprgn"></a><a name="selectcliprgn"></a>CDC:: Selectclienprgn
+## <a name="cdcselectcliprgn"></a><a name="selectcliprgn"></a> CDC:: Selectclienprgn
 
 Belirtilen bölgeyi cihaz bağlamı için geçerli kırpma bölgesi olarak seçer.
 
@@ -5545,13 +5546,13 @@ Seçilecek bölgeyi tanımlar.
 *nMode*<br/>
 Gerçekleştirilecek işlemi belirtir. Aşağıdaki değerlerden biri olmalıdır:
 
-- Yeni kırpma bölgesi RGN_AND, geçerli kırpma bölgesinin çakışan alanlarının ve *pRgn*tarafından tanımlanan bölgenin birleştirir.
+- Yeni kırpma bölgesi RGN_AND, geçerli kırpma bölgesinin çakışan alanlarının ve *pRgn* tarafından tanımlanan bölgenin birleştirir.
 
-- Yeni kırpma bölgesinin RGN_COPY, *pRgn*tarafından tanımlanan bölgenin bir kopyasıdır. Bu işlevsellik ilk sürümü ile aynıdır `SelectClipRgn` . *PRgn* tarafından tanımlanan bölge null ise, yeni kırpma bölgesi varsayılan kırpma bölgesi (null bölge) olur.
+- Yeni kırpma bölgesinin RGN_COPY, *pRgn* tarafından tanımlanan bölgenin bir kopyasıdır. Bu işlevsellik ilk sürümü ile aynıdır `SelectClipRgn` . *PRgn* tarafından tanımlanan bölge null ise, yeni kırpma bölgesi varsayılan kırpma bölgesi (null bölge) olur.
 
-- Yeni kırpma bölgesinin RGN_DIFF, geçerli kırpma bölgesinin alanını *pRgn*tarafından tanımlanan bölgeden çıkarılan alanlarla birleştirir.
+- Yeni kırpma bölgesinin RGN_DIFF, geçerli kırpma bölgesinin alanını *pRgn* tarafından tanımlanan bölgeden çıkarılan alanlarla birleştirir.
 
-- Yeni kırpma bölgesi RGN_OR, geçerli kırpma bölgesini ve *pRgn*tarafından tanımlanan bölgeyi birleştirir.
+- Yeni kırpma bölgesi RGN_OR, geçerli kırpma bölgesini ve *pRgn* tarafından tanımlanan bölgeyi birleştirir.
 
 - Yeni kırpma bölgesi RGN_XOR, geçerli kırpma bölgesini ve *pRgn* tarafından tanımlanan bölgeyi birleştirir ancak çakışan tüm bölgeleri dışlar.
 
@@ -5575,7 +5576,7 @@ Yalnızca seçili bölgenin bir kopyası kullanılır. Bölgenin kendisi herhang
 
 GDI 'daki grafik nesnelerinin ölçeklendirilmesi gereken uygulamalar, ölçekleme faktörünü belirleyebilmek için GETSCALINGFACTOR yazıcı kaçış işlevini kullanabilir. Bu ölçeklendirme faktörü kırpmayı etkiler. Grafikleri kırpmak için bir bölge kullanılıyorsa, GDI koordinatları ölçekleme faktörüne böler. Bölge metin kırpmak için kullanılırsa, GDI hiçbir ölçeklendirme ayarı yapmaz. 1 ölçekleme faktörü, koordinatların 2 ' ye bölünmesine neden olur. 2 ölçekleme faktörü, koordinatların 4 ' e bölünmesine neden olur; vb.
 
-## <a name="cdcselectobject"></a><a name="selectobject"></a>CDC:: NesneSeç
+## <a name="cdcselectobject"></a><a name="selectobject"></a> CDC:: NesneSeç
 
 Cihaz bağlamında bir nesne seçer.
 
@@ -5624,13 +5625,13 @@ Bir Region parametresi alan üye işlevinin sürümü, üye işlevi ile aynı g�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıfı, `CDC` kalemler, fırçalar, yazı tipleri, bit eşlemler ve bölgeler dahil olmak üzere belirli tür GDI nesneleri için özelleştirilmiş beş sürüm sağlar. Yeni seçilen nesne, aynı türdeki önceki nesnenin yerini almıştır. Örneğin, genel sürümünün *pObject* 'ı `SelectObject` bir [CPen](../../mfc/reference/cpen-class.md) nesnesine işaret ediyorsa, işlev geçerli kalemin *pObject*tarafından belirtilen kalemle yerini alır.
+Sınıfı, `CDC` kalemler, fırçalar, yazı tipleri, bit eşlemler ve bölgeler dahil olmak üzere belirli tür GDI nesneleri için özelleştirilmiş beş sürüm sağlar. Yeni seçilen nesne, aynı türdeki önceki nesnenin yerini almıştır. Örneğin, genel sürümünün *pObject* 'ı `SelectObject` bir [CPen](../../mfc/reference/cpen-class.md) nesnesine işaret ediyorsa, işlev geçerli kalemin *pObject* tarafından belirtilen kalemle yerini alır.
 
 Bir uygulama tek seferde yalnızca bir bellek cihaz bağlamına bir bit eşlem seçebilir. Bit eşlemin biçimi tek renkli olmalıdır veya cihaz içeriğiyle uyumlu olmalıdır; Aksi takdirde `SelectObject` bir hata döndürür.
 
 Windows 3,1 ve üzeri için işlev, `SelectObject` bir meta dosyasında kullanılıp kullanılmadığını veya bunun aynı değeri döndürür. Önceki Windows sürümlerinde, `SelectObject` başarılı için sıfır olmayan bir değer ve bir meta dosyasında kullanıldığında hata için 0 değeri döndürüldü.
 
-## <a name="cdcselectpalette"></a><a name="selectpalette"></a>CDC:: SelectPalette
+## <a name="cdcselectpalette"></a><a name="selectpalette"></a> CDC:: SelectPalette
 
 *PPalette* tarafından, cihaz bağlamının seçili palet nesnesi olarak belirtilen mantıksal paleti seçer.
 
@@ -5650,7 +5651,7 @@ Mantıksal paletin bir arka plan paleti olmaya zorlanıp zorlanmayacağını bel
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`CPalette` *PPalette*tarafından belirtilen paletle değiştirilmiş mantıksal paleti tanımlayan nesneye yönelik bir işaretçi. Bir hata oluşursa NULL olur.
+`CPalette` *PPalette* tarafından belirtilen paletle değiştirilmiş mantıksal paleti tanımlayan nesneye yönelik bir işaretçi. Bir hata oluşursa NULL olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5658,7 +5659,7 @@ Yeni palet, GDI tarafından cihaz bağlamında görüntülenecek renkleri denetl
 
 Bir uygulama, birden fazla cihaz bağlamına bir mantıksal palet seçebilir. Ancak, mantıksal bir paletteki değişiklikler seçildiği tüm cihaz bağlamlarını etkileyecektir. Bir uygulama birden fazla cihaz bağlamına bir palet seçerse, cihaz bağlamlarının hepsi aynı fiziksel cihaza ait olmalıdır.
 
-## <a name="cdcselectstockobject"></a><a name="selectstockobject"></a>CDC:: Selectstokobject
+## <a name="cdcselectstockobject"></a><a name="selectstockobject"></a> CDC:: Selectstokobject
 
 Önceden tanımlanmış hisse senedi kalemlerden, fırçalardan veya yazı tiplerinden birine karşılık gelen bir [CGdiObject](../../mfc/reference/cgdiobject-class.md) nesnesi seçer.
 
@@ -5699,7 +5700,7 @@ virtual CGdiObject* SelectStockObject(int nIndex);
 
 - OEM 'e bağlı sabit yazı OEM_FIXED_FONT.
 
-- Sistem yazı tipini SYSTEM_FONT. Varsayılan olarak, Windows, menü, iletişim kutusu denetimleri ve diğer metinleri çizmek için sistem yazı tipini kullanır. Ancak, iletişim kutuları ve pencereler tarafından kullanılan yazı tipini almak için SYSTEM_FONT güvenmemelidir. Bunun yerine, `SystemParametersInfo` geçerli yazı tipini almak için işlevi SPI_GETNONCLIENTMETRICS parametresiyle kullanın. `SystemParametersInfo`geçerli temayı hesaba alıp açıklamalı alt yazılar, menüler ve ileti iletişimleri için yazı tipi bilgileri sağlar.
+- Sistem yazı tipini SYSTEM_FONT. Varsayılan olarak, Windows, menü, iletişim kutusu denetimleri ve diğer metinleri çizmek için sistem yazı tipini kullanır. Ancak, iletişim kutuları ve pencereler tarafından kullanılan yazı tipini almak için SYSTEM_FONT güvenmemelidir. Bunun yerine, `SystemParametersInfo` geçerli yazı tipini almak için işlevi SPI_GETNONCLIENTMETRICS parametresiyle kullanın. `SystemParametersInfo` geçerli temayı hesaba alıp açıklamalı alt yazılar, menüler ve ileti iletişimleri için yazı tipi bilgileri sağlar.
 
 - 3,0 sürümünden önceki Windows 'da kullanılan sabit genişlikte sistem yazı tipini SYSTEM_FIXED_FONT. Bu nesne Windows 'un önceki sürümleriyle uyumluluk için kullanılabilir.
 
@@ -5709,7 +5710,7 @@ virtual CGdiObject* SelectStockObject(int nIndex);
 
 `CGdiObject`İşlev başarılı olursa değiştirilmiş nesneye yönelik bir işaretçi. İşaret eden gerçek nesne bir [CPen](../../mfc/reference/cpen-class.md), [CBrush](../../mfc/reference/cbrush-class.md)veya [CFont](../../mfc/reference/cfont-class.md) nesnesidir. Çağrı başarısız olursa, dönüş değeri NULL olur.
 
-## <a name="cdcsetabortproc"></a><a name="setabortproc"></a>CDC:: SetAbortProc
+## <a name="cdcsetabortproc"></a><a name="setabortproc"></a> CDC:: SetAbortProc
 
 Yazdırma işi için iptal yordamını kurar.
 
@@ -5750,7 +5751,7 @@ Geri çağırma kayıt arabirimleri artık tür açısından güvenlidir (belirl
 
 Ayrıca, geri çağırma işlevlerinin Windows 'a döndürülmeden önce Microsoft Foundation özel durumlarını yakalamayacağını unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
-## <a name="cdcsetarcdirection"></a><a name="setarcdirection"></a>CDC:: SetArcDirection
+## <a name="cdcsetarcdirection"></a><a name="setarcdirection"></a> CDC:: SetArcDirection
 
 Yay ve dikdörtgen işlevleri için kullanılacak çizim yönünü ayarlar.
 
@@ -5781,7 +5782,7 @@ Varsayılan yönü saatin tersi olur. `SetArcDirection`İşlevi, aşağıdaki i�
 |`Chord`|`RoundRect`|
 |`Ellipse`||
 
-## <a name="cdcsetattribdc"></a><a name="setattribdc"></a>CDC:: SetAttribDC
+## <a name="cdcsetattribdc"></a><a name="setattribdc"></a> CDC:: SetAttribDC
 
 Öznitelik cihazı bağlamını ayarlamak için bu işlevi çağırın `m_hAttribDC` .
 
@@ -5798,7 +5799,7 @@ Bir Windows cihaz bağlamı.
 
 Bu üye işlevi, cihaz bağlamını `CDC` nesnesine eklemez. Bir nesneye yalnızca çıkış aygıtı bağlamı iliştirilir `CDC` .
 
-## <a name="cdcsetbkcolor"></a><a name="setbkcolor"></a>CDC:: SetBkColor
+## <a name="cdcsetbkcolor"></a><a name="setbkcolor"></a> CDC:: SetBkColor
 
 Geçerli arka plan rengini belirtilen renge ayarlar.
 
@@ -5821,7 +5822,7 @@ Arka plan modu donuk ise, sistem, stili oluşturulmuş satırlardaki boşluklar�
 
 Cihaz belirtilen rengi görüntüleyemez, sistem arka plan rengini en yakın fiziksel renge ayarlar.
 
-## <a name="cdcsetbkmode"></a><a name="setbkmode"></a>CDC:: SetBkMode
+## <a name="cdcsetbkmode"></a><a name="setbkmode"></a> CDC:: SetBkMode
 
 Arka plan modunu ayarlar.
 
@@ -5850,7 +5851,7 @@ Arka plan modu, sistemin metin, taranmış fırçalar veya düz bir çizgi olmay
 
   [CWnd:: OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor)için örneğe bakın.
 
-## <a name="cdcsetboundsrect"></a><a name="setboundsrect"></a>CDC:: SetBoundsRect
+## <a name="cdcsetboundsrect"></a><a name="setboundsrect"></a> CDC:: SetBoundsRect
 
 Belirtilen cihaz bağlamı için sınırlayıcı dikdörtgen bilgilerin birikdiğini denetler.
 
@@ -5876,7 +5877,7 @@ Yeni dikdörtgenin birikmiş dikdörtgenle nasıl birleştirileceğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sınırlayıcı dikdörtgenin geçerli durumu. *Bayraklar*gibi, dönüş değeri **DCB_** değerlerinin bir birleşimi olabilir:
+İşlev başarılı olursa sınırlayıcı dikdörtgenin geçerli durumu. *Bayraklar* gibi, dönüş değeri **DCB_** değerlerinin bir birleşimi olabilir:
 
 - DCB_ACCUMULATE sınırlayıcı dikdörtgen boş değil. Bu değer, her zaman ayarlanır.
 
@@ -5888,7 +5889,7 @@ Yeni dikdörtgenin birikmiş dikdörtgenle nasıl birleştirileceğini belirtir.
 
 Windows, tüm çizim işlemleri için sınırlayıcı bir dikdörtgen tutabilir. Bu dikdörtgen, uygulama tarafından sorgulanabilir ve sıfırlanabilir. Çizim sınırları, bit eşlem önbellekleri için geçersiz kılma için yararlıdır.
 
-## <a name="cdcsetbrushorg"></a><a name="setbrushorg"></a>CDC:: Setbrühorg
+## <a name="cdcsetbrushorg"></a><a name="setbrushorg"></a> CDC:: Setbrühorg
 
 GDI 'nın uygulamanın cihaz bağlamında seçtiği bir sonraki fırçaya atayabileceği kaynağı belirtir.
 
@@ -5921,7 +5922,7 @@ Fırça kaynağı için varsayılan Koordinatlar (0, 0). Bir fırçanın kaynağ
 
 `SetBrushOrg`Hisse senedi nesneleriyle birlikte kullanmayın `CBrush` .
 
-## <a name="cdcsetcoloradjustment"></a><a name="setcoloradjustment"></a>CDC:: Setcolorayarlaması
+## <a name="cdcsetcoloradjustment"></a><a name="setcoloradjustment"></a> CDC:: Setcolorayarlaması
 
 Belirtilen değerleri kullanarak cihaz bağlamı için renk ayarlama değerlerini ayarlar.
 
@@ -5942,7 +5943,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Renk ayarlama değerleri, `CDC::StretchBlt` yarı ton modu ayarlandığında üye işlevine yapılan çağrılar için kaynak bit eşlemin giriş rengini ayarlamak için kullanılır.
 
-## <a name="cdcsetdcbrushcolor"></a><a name="setdcbrushcolor"></a>CDC:: Setdcbrühcolor
+## <a name="cdcsetdcbrushcolor"></a><a name="setdcbrushcolor"></a> CDC:: Setdcbrühcolor
 
 Geçerli cihaz bağlamı (DC) fırça rengini belirtilen renk değerine ayarlar.
 
@@ -5965,7 +5966,7 @@ Yeni fırça rengini belirtir.
 
 Bu yöntem, Windows SDK açıklandığı gibi [Setdcbrühcolor](/windows/win32/api/wingdi/nf-wingdi-setdcbrushcolor)işlevinin işlevselliğine öykünür.
 
-## <a name="cdcsetdcpencolor"></a><a name="setdcpencolor"></a>CDC:: SetDCPenColor
+## <a name="cdcsetdcpencolor"></a><a name="setdcpencolor"></a> CDC:: SetDCPenColor
 
 Geçerli cihaz bağlamı (DC) kalem rengini belirtilen renk değerine ayarlar.
 
@@ -5986,7 +5987,7 @@ Yeni kalem rengini belirtir.
 
 Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, [SetDCPenColor](/windows/win32/api/wingdi/nf-wingdi-setdcpencolor)Win32 işlevini kullanır.
 
-## <a name="cdcsetgraphicsmode"></a><a name="setgraphicsmode"></a>CDC:: SetGraphicsMode
+## <a name="cdcsetgraphicsmode"></a><a name="setgraphicsmode"></a> CDC:: SetGraphicsMode
 
 Belirtilen cihaz bağlamı için grafik modunu ayarlar.
 
@@ -6009,7 +6010,7 @@ Hatada 0 döndürür. Genişletilmiş hata bilgilerini almak için [GetLastError
 
 Bu yöntem, [SetGraphicsMode](/windows/win32/api/wingdi/nf-wingdi-setgraphicsmode)Windows GDI işlevini sarmalanmış.
 
-## <a name="cdcsetlayout"></a><a name="setlayout"></a>CDC:: SetLayout
+## <a name="cdcsetlayout"></a><a name="setlayout"></a> CDC:: SetLayout
 
 Bir cihaz bağlamı için metin ve grafiklerin yerleşimini sağdan sola, Arapça ve Ibranice gibi kültürler için standart düzeni değiştirmek üzere bu üye işlevini çağırın.
 
@@ -6044,7 +6045,7 @@ Birçok bit eşlem gibi bazı durumlarda, soldan sağa düzeni korumak isteyebil
 
 Düzeni LAYOUT_RTL bayrağıyla değiştirdiğinizde normalde sağ veya sol belirten bayraklar ters çevrilir. Karışıklıkları önlemek için standart bayraklar için alternatif adlar tanımlamak isteyebilirsiniz. Önerilen alternatif bayrak adlarının bir listesi için Windows SDK [SetLayout](/windows/win32/api/wingdi/nf-wingdi-setlayout) bölümüne bakın.
 
-## <a name="cdcsetmapmode"></a><a name="setmapmode"></a>CDC:: SetMapMode
+## <a name="cdcsetmapmode"></a><a name="setmapmode"></a> CDC:: SetMapMode
 
 Eşleme modunu ayarlar.
 
@@ -6090,7 +6091,7 @@ MM_HIENGLISH, MM_HIMETRIC, MM_LOENGLISH, MM_LOMETRIC ve MM_TWIPS modları, fizik
 
   [CView:: Onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)örneğine bakın.
 
-## <a name="cdcsetmapperflags"></a><a name="setmapperflags"></a>CDC:: SetMapperFlags
+## <a name="cdcsetmapperflags"></a><a name="setmapperflags"></a> CDC:: SetMapperFlags
 
 Bir mantıksal yazı tipini fiziksel bir yazı tipine dönüştürürken yazı tipi Eşleyici tarafından kullanılan yöntemi değiştirir.
 
@@ -6115,7 +6116,7 @@ Yalnızca raster yazı tiplerini kullanan bir uygulama, `SetMapperFlags` yazı t
 
 Fiziksel yazı tipinin, mantıksal yazı tipinde belirtile eşleşen bir en boy oranı yoksa, GDI yeni bir en boy oranı seçer ve bu yeni en boy oranıyla eşleşen bir yazı tipi seçer.
 
-## <a name="cdcsetmiterlimit"></a><a name="setmiterlimit"></a>CDC:: Setmıterlimit
+## <a name="cdcsetmiterlimit"></a><a name="setmiterlimit"></a> CDC:: Setmıterlimit
 
 Cihaz bağlamı için Gönye birleştirmeleri uzunluğunun sınırını ayarlar.
 
@@ -6136,7 +6137,7 @@ Cihaz bağlamı için yeni gönye sınırını belirtir.
 
 Gönye uzunluğu, birleştirmenin dışında bulunan satır duvarlarının kesişimindeki çizgi duvarlarının kesişiminden uzaklık olarak tanımlanır (). Gönye sınırı, gönye uzunluğunun çizgi genişliğine olan izin verilen en yüksek orandır. Varsayılan Gönye sınırı 10,0 ' dir.
 
-## <a name="cdcsetoutputdc"></a><a name="setoutputdc"></a>CDC:: SetOutputDC
+## <a name="cdcsetoutputdc"></a><a name="setoutputdc"></a> CDC:: SetOutputDC
 
 Çıkış cihazı bağlamını ayarlamak için bu üye işlevini çağırın `m_hDC` .
 
@@ -6153,9 +6154,9 @@ Bir Windows cihaz bağlamı.
 
 Bu üye işlevi, yalnızca bir cihaz bağlamı nesneye iliştirilmişse çağrılabilir `CDC` . Bu üye işlevi, `m_hDC` cihaz bağlamını nesnesine eklemez ancak eklemez `CDC` .
 
-## <a name="cdcsetpixel"></a><a name="setpixel"></a>CDC:: SetPixel
+## <a name="cdcsetpixel"></a><a name="setpixel"></a> CDC:: SetPixel
 
-Belirtilen noktadaki pikseli, *crColor*tarafından belirtilen rengin en yakın yaklaşık olarak ayarlar.
+Belirtilen noktadaki pikseli, *crColor* tarafından belirtilen rengin en yakın yaklaşık olarak ayarlar.
 
 ```
 COLORREF SetPixel(
@@ -6192,7 +6193,7 @@ Nokta, kırpma bölgesinde olmalıdır. Nokta kırpma bölgesinde değilse, işl
 
 Tüm cihazlar `SetPixel` işlevi desteklemez. Bir cihazın destekleyip desteklemediğini denetlemek için, bir,,,,,,,,,,,,,,,,,,,,, `SetPixel` `GetDeviceCaps` RC_BITBLT bayrağının
 
-## <a name="cdcsetpixelv"></a><a name="setpixelv"></a>CDC:: SetPixelV
+## <a name="cdcsetpixelv"></a><a name="setpixelv"></a> CDC:: SetPixelV
 
 Belirtilen koordinatlardaki pikseli belirtilen rengin en yakın yaklaşık rengine ayarlar.
 
@@ -6227,9 +6228,9 @@ Ayarlanacak noktanın mantıksal x ve y koordinatlarını belirtir. Bu parametre
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nokta, hem kırpma bölgesinde hem de cihaz yüzeyi görünür bölümünde olmalıdır. Tüm cihazlar üye işlevini desteklemez. Daha fazla bilgi için, üye işlevindeki RC_BITBLT özelliğine bakın `CDC::GetDeviceCaps` . `SetPixelV`, `SetPixel` gerçekten boyanmış olan noktanın renk değerini döndürmesi gerekmediğinden daha hızlıdır.
+Nokta, hem kırpma bölgesinde hem de cihaz yüzeyi görünür bölümünde olmalıdır. Tüm cihazlar üye işlevini desteklemez. Daha fazla bilgi için, üye işlevindeki RC_BITBLT özelliğine bakın `CDC::GetDeviceCaps` . `SetPixelV` , `SetPixel` gerçekten boyanmış olan noktanın renk değerini döndürmesi gerekmediğinden daha hızlıdır.
 
-## <a name="cdcsetpolyfillmode"></a><a name="setpolyfillmode"></a>CDC:: SetPolyFillMode
+## <a name="cdcsetpolyfillmode"></a><a name="setpolyfillmode"></a> CDC:: SetPolyFillMode
 
 Çokgen doldurma modunu ayarlar.
 
@@ -6252,7 +6253,7 @@ Başarılı olursa önceki doldurma modu; Aksi takdirde 0.
 
 Çokgen doldurma modu SARGı olduğunda, sistem bir alanın doldurulup doldurulmayacağını belirleyen yönü kullanır. Bir Çokgendeki her çizgi segmenti saat yönünde veya saatin tersi yönde çizilir. Kapalı bir alandan bir şeklin dışına çizilen bir sanal çizgi saat yönünde bir satır segmentinde geçtiğinde bir sayı artırılır. Satır saatin tersi bir satır segmentinden geçtiğinde, sayı azaltılır. Satır, şekil şeklin dışına ulaştığında sayı sıfır değilse, alan doldurulur.
 
-## <a name="cdcsetrop2"></a><a name="setrop2"></a>CDC:: SetROP2
+## <a name="cdcsetrop2"></a><a name="setrop2"></a> CDC:: SetROP2
 
 Geçerli çizim modunu ayarlar.
 
@@ -6309,7 +6310,7 @@ Windows SDK verilen değerlerden herhangi biri olabilir.
 
 Çizim modu yalnızca raster cihazlar içindir; vektör cihazlara uygulanmaz. Çizim modları, ikili işleçler ve, OR ve XOR (dışlamalı veya) ve birli işlem DEĞIL, iki değişkenin olası tüm Boole birleşimlerini temsil eden ikili raster işlem kodlarıdır.
 
-## <a name="cdcsetstretchbltmode"></a><a name="setstretchbltmode"></a>CDC:: Setıdblttrmode
+## <a name="cdcsetstretchbltmode"></a><a name="setstretchbltmode"></a> CDC:: Setıdblttrmode
 
 Üye işlevi için bit eşlem uzatma modunu ayarlar `StretchBlt` .
 
@@ -6348,7 +6349,7 @@ NOKTALı resım modu, kaynak görüntünün diğer üç moddan daha fazla işlen
 
 Cihaz sürücüsünün özelliklerine bağlı olarak ek uzatma modları de kullanılabilir olabilir.
 
-## <a name="cdcsettextalign"></a><a name="settextalign"></a>CDC:: SetTextAlign
+## <a name="cdcsettextalign"></a><a name="settextalign"></a> CDC:: SetTextAlign
 
 Metin hizalama bayraklarını ayarlar.
 
@@ -6389,7 +6390,7 @@ Başarılı olursa, önceki metin hizalama ayarı. Düşük sıralı bayt yatay 
 
 `TextOut`Ve `ExtTextOut` üye işlevleri, bir metin dizesini bir görüntü veya cihazda konumlandırılırken bu bayrakları kullanır. Bayraklar, belirli bir nokta ile metni sınıralan bir dikdörtgen arasındaki ilişkiyi belirtir. Bu noktanın koordinatları üye işlevine parametre olarak geçirilir `TextOut` . Metnin sınırlarını belirten dikdörtgen metin dizesindeki bitişik karakter hücrelerine göre biçimlendirilir.
 
-## <a name="cdcsettextcharacterextra"></a><a name="settextcharacterextra"></a>CDC:: Settextkarakterekstra
+## <a name="cdcsettextcharacterextra"></a><a name="settextcharacterextra"></a> CDC:: Settextkarakterekstra
 
 Intercharacter boşluk miktarını ayarlar.
 
@@ -6410,7 +6411,7 @@ Her karaktere eklenecek ek alan miktarını (mantıksal birimler cinsinden) beli
 
 GDI, bir metin satırını cihaz bağlamına yazdığında, bu boşluğu kesme karakterleri de dahil olmak üzere her karaktere ekler. Intercharacter boşluk miktarı için varsayılan değer 0 ' dır.
 
-## <a name="cdcsettextcolor"></a><a name="settextcolor"></a>CDC:: SetTextColor
+## <a name="cdcsettextcolor"></a><a name="settextcolor"></a> CDC:: SetTextColor
 
 Metin rengini belirtilen renge ayarlar.
 
@@ -6437,7 +6438,7 @@ Cihaz belirtilen rengi temsil edemez, sistem metin rengini en yakın fiziksel re
 
   [CWnd:: OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor)için örneğe bakın.
 
-## <a name="cdcsettextjustification"></a><a name="settextjustification"></a>CDC:: Settextgerekçe
+## <a name="cdcsettextjustification"></a><a name="settextjustification"></a> CDC:: Settextgerekçe
 
 Dizedeki kesme karakterlerine boşluk ekler.
 
@@ -6465,7 +6466,7 @@ Bir uygulama, `GetTextMetrics` bir yazı tipinin kesme karakterini almak için �
 
 `SetTextJustification`Üye işlevi çağrıldıktan sonra, bir metin çıkış işlevine (gibi) yapılan bir çağrı, belirtilen `TextOut` ek alanı belirtilen sayıda kesme karakteri arasında eşit olarak dağıtır. Kesme karakteri genellikle boşluk karakteridir (ASCII 32), ancak başka bir karakter olarak bir yazı tipi ile tanımlanabilir.
 
-Üye işlevi `GetTextExtent` genellikle ile birlikte kullanılır `SetTextJustification` . `GetTextExtent`hizalamadan önce belirli bir çizginin genişliğini hesaplar. Bir uygulama, hizalama sonrasında dizenin genişliğinden döndürülen değeri çıkararak *nBreakExtra* parametresinde ne kadar alan belirleyeceğini belirleyebilir `GetTextExtent` .
+Üye işlevi `GetTextExtent` genellikle ile birlikte kullanılır `SetTextJustification` . `GetTextExtent` hizalamadan önce belirli bir çizginin genişliğini hesaplar. Bir uygulama, hizalama sonrasında dizenin genişliğinden döndürülen değeri çıkararak *nBreakExtra* parametresinde ne kadar alan belirleyeceğini belirleyebilir `GetTextExtent` .
 
 `SetTextJustification`İşlevi, farklı yazı tiplerinde birden çok çalıştırma içeren bir çizgiyi hizalamak için kullanılabilir. Bu durumda, her bir çalıştırmayı ayrı ayrı hizalayarak ve yazarak satırın öbek oluşturulması gerekir.
 
@@ -6473,7 +6474,7 @@ Hizalama sırasında yuvarlama hataları oluşabileceğinden, sistem geçerli ha
 
 Her satır hizalandıktan sonra, bir sonraki satıra eklenmesini engellemek için bu hata koşulunun temizlenmesi gerekir. Terim, `SetTextJustification` *nBreakExtra* kümesi 0 olarak çağırarak temizlenemez.
 
-## <a name="cdcsetviewportext"></a><a name="setviewportext"></a>CDC:: SetViewportExt
+## <a name="cdcsetviewportext"></a><a name="setviewportext"></a> CDC:: SetViewportExt
 
 Cihaz bağlamının görünüm penceresinin x ve y-kapsamlarını belirler.
 
@@ -6517,7 +6518,7 @@ MM_ISOTROPIC modu ayarlandığında, bir uygulamanın `SetWindowExt` çağrı ya
 
   [CView:: Onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)örneğine bakın.
 
-## <a name="cdcsetviewportorg"></a><a name="setviewportorg"></a>CDC:: SetViewportOrg
+## <a name="cdcsetviewportorg"></a><a name="setviewportorg"></a> CDC:: SetViewportOrg
 
 Cihaz bağlamının Görünüm penceresi kaynağını ayarlar.
 
@@ -6554,7 +6555,7 @@ Görünüm penceresi kaynak, GDI 'nın, üye işlevi tarafından belirtilen mant
 
   [CView:: Onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)örneğine bakın.
 
-## <a name="cdcsetwindowext"></a><a name="setwindowext"></a>CDC:: SetWindowExt
+## <a name="cdcsetwindowext"></a><a name="setwindowext"></a> CDC:: SetWindowExt
 
 Cihaz içeriğiyle ilişkili pencerenin x ve y-kapsamlarını ayarlar.
 
@@ -6605,7 +6606,7 @@ MM_ISOTROPIC modu ayarlandığında, bir uygulamanın `SetWindowExt` çağrılma
 
   [CView:: Onhazırlık EDC](../../mfc/reference/cview-class.md#onpreparedc)örneğine bakın.
 
-## <a name="cdcsetwindoworg"></a><a name="setwindoworg"></a>CDC:: SetWindowOrg
+## <a name="cdcsetwindoworg"></a><a name="setwindoworg"></a> CDC:: SetWindowOrg
 
 Cihaz bağlamının pencere kaynağını ayarlar.
 
@@ -6638,7 +6639,7 @@ Pencere, cihaz bağlamı Görünüm penceresi ile birlikte, GDI eşlemelerinin m
 
 Pencere kaynağı, GDI 'nın, işlev tarafından belirtilen cihaz koordinat sistemindeki bir nokta olan görünüm penceresi kaynağını eşlendiği mantıksal koordinat sistemindeki noktayı işaret ediyor `SetWindowOrg` . GDI, pencere kaynağını Görünüm penceresi kaynağına eşlemek için gereken aynı süreci izleyerek diğer tüm noktaları eşler. Örneğin, pencere başlangıç noktasındaki nokta etrafında bir daire içinde olan tüm noktaları, görünüm penceresinin başlangıç noktasındaki bir daire içinde olacaktır. Benzer şekilde, bir satırdaki pencere kaynağı üzerinden geçen tüm noktaları, görünüm penceresinin kaynağı üzerinden geçen bir satırda olacaktır.
 
-## <a name="cdcsetworldtransform"></a><a name="setworldtransform"></a>CDC:: SetWorldTransform
+## <a name="cdcsetworldtransform"></a><a name="setworldtransform"></a> CDC:: SetWorldTransform
 
 Belirtilen cihaz bağlamı için dünya alanı ve sayfa alanı arasında iki boyutlu doğrusal bir dönüşüm ayarlar. Bu dönüşüm, grafik çıkışını ölçeklendirmek, döndürmek, yamultmak veya çevirmek için kullanılabilir.
 
@@ -6663,7 +6664,7 @@ Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/e
 
 Bu yöntem, [SetWorldTransform](/windows/win32/api/wingdi/nf-wingdi-setworldtransform)Windows GDI işlevini sarmalanmış.
 
-## <a name="cdcstartdoc"></a><a name="startdoc"></a>CDC:: StartDoc
+## <a name="cdcstartdoc"></a><a name="startdoc"></a> CDC:: StartDoc
 
 Yeni bir yazdırma işinin başladığı ve sonraki `StartPage` ve `EndPage` çağrıların, bir çağrı gerçekleşene kadar aynı iş altında biriktirilmeli olduğunu bildirir `EndDoc` .
 
@@ -6692,7 +6693,7 @@ Bu, bir sayfadan daha uzun belgelerin diğer işlerle birlikte etkilenmemesini s
 
 Windows sürümleri 3,1 ve üzeri için, bu işlev STARTDOC yazıcı kaçış yerini alır. Bu işlevin kullanılması, birden fazla sayfa içeren belgelerin diğer yazdırma işleriyle birlikte olmamasını sağlar.
 
-`StartDoc`Meta dosyaların içinde kullanılmamalıdır.
+`StartDoc` Meta dosyaların içinde kullanılmamalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -6700,7 +6701,7 @@ Bu kod parçası varsayılan yazıcıyı alır, bir yazdırma işi açar ve "Hel
 
 [!code-cpp[NVC_MFCDocView#41](../../mfc/codesnippet/cpp/cdc-class_13.cpp)]
 
-## <a name="cdcstartpage"></a><a name="startpage"></a>CDC:: StartPage
+## <a name="cdcstartpage"></a><a name="startpage"></a> CDC:: StartPage
 
 Yazıcı sürücüsünü veri alacak şekilde hazırlamak için bu üye işlevi çağırın.
 
@@ -6714,7 +6715,7 @@ int StartPage();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`StartPage`NEWFRAME ve BANıNFO kaçışları yerine geçer.
+`StartPage` NEWFRAME ve BANıNFO kaçışları yerine geçer.
 
 Yazdırma çağrılarının dizisine genel bakış için, [StartDoc](#startdoc) üye işlevine bakın.
 
@@ -6724,7 +6725,7 @@ Sistem, `ResetDC` ve çağrıları arasındaki üye işlevini devre dışı `Sta
 
   [CDC:: StartDoc](#startdoc)örneğine bakın.
 
-## <a name="cdcstretchblt"></a><a name="stretchblt"></a>CDC::% Blblt
+## <a name="cdcstretchblt"></a><a name="stretchblt"></a> CDC::% Blblt
 
 Bir bit eşlemi kaynak dikdörtgenden hedef dikdörtgene kopyalar ve gerekirse, bit eşlem öğesini hedef dikdörtgenin boyutlarına uyacak şekilde uzatır veya sıkıştırır.
 
@@ -6812,7 +6813,7 @@ Bit eşlem çizilirse sıfır dışında bir değer, aksi durumda 0.
 
 İşlevi, `SetStretchBltMode` bit eşlemin nasıl uzatılaceğini veya sıkıştırılacağını anlamak için hedef cihaz bağlamının uzatma modunu (tarafından ayarlanır) kullanır.
 
-`StretchBlt`İşlevi, *pSrcDC* tarafından verilen kaynak cihazdan bit eşlemi, üye işlevi çağrılan cihaz bağlamı nesnesi tarafından temsil edilen hedef cihaza taşımaktadır. *XSrc*, *ySrc*, *nSrcWidth*ve *nsrchsekiz* parametreleri, kaynak dikdörtgenin sol üst köşesini ve boyutlarını tanımlar. *X*, *y*, *nWidth*ve *nHeight* parametreleri, hedef dikdörtgenin sol üst köşesini ve boyutlarını verir. *DwRop* tarafından belirtilen raster işlemi, kaynak bit eşlemin ve hedef cihazda bulunan bitlerin nasıl birleştirildiğini tanımlar.
+`StretchBlt`İşlevi, *pSrcDC* tarafından verilen kaynak cihazdan bit eşlemi, üye işlevi çağrılan cihaz bağlamı nesnesi tarafından temsil edilen hedef cihaza taşımaktadır. *XSrc*, *ySrc*, *nSrcWidth* ve *nsrchsekiz* parametreleri, kaynak dikdörtgenin sol üst köşesini ve boyutlarını tanımlar. *X*, *y*, *nWidth* ve *nHeight* parametreleri, hedef dikdörtgenin sol üst köşesini ve boyutlarını verir. *DwRop* tarafından belirtilen raster işlemi, kaynak bit eşlemin ve hedef cihazda bulunan bitlerin nasıl birleştirildiğini tanımlar.
 
 Bu `StretchBlt` işlev, *nSrcWidth* ve *nWidth* veya *nsrchsekiz* ve *nHeight* parametrelerinin işaretleri farklıysa bir bit eşlemin ayna görüntüsünü oluşturur. *NSrcWidth* ve *nWidth* farklı işaretlere sahipse, işlev bit eşlemin x ekseni üzerinde bir ayna görüntüsünü oluşturur. *Nsrchsekiz* ve *nHeight* farklı işaretlere sahipse, işlev y ekseni üzerinde bit eşlemin ayna görüntüsünü oluşturur.
 
@@ -6824,7 +6825,7 @@ Hedef, kaynak ve kalıp bit eşlemler aynı renk biçimine sahip değilse, `Stre
 
 Tüm cihazlar `StretchBlt` işlevi desteklemez. Bir cihazın destekleyip desteklemediğini denetlemek için, bir,,,,,,,,,,,,,,,,,,,,, `StretchBlt` `GetDeviceCaps` RC_STRETCHBLT bayrağının
 
-## <a name="cdcstrokeandfillpath"></a><a name="strokeandfillpath"></a>CDC:: StrokeAndFillPath
+## <a name="cdcstrokeandfillpath"></a><a name="strokeandfillpath"></a> CDC:: StrokeAndFillPath
 
 Bir yoldaki tüm açık rakamları kapatır, geçerli kalemi kullanarak yolun ana hattını konturleyerek, geçerli fırçayı kullanarak iç kısmını doldurur.
 
@@ -6840,7 +6841,7 @@ BOOL StrokeAndFillPath();
 
 Cihaz bağlamı kapalı bir yol içermelidir. `StrokeAndFillPath`Üye işlevi, yoldaki tüm açık rakamları kapatmakla aynı etkiye sahiptir ve bu, doldurulmuş bölgenin, kalem geniş olsa bile konturlu bölge ile çakışmayacak şekilde, yolu ayrı olarak doldurup doldurun.
 
-## <a name="cdcstrokepath"></a><a name="strokepath"></a>CDC:: StrokePath
+## <a name="cdcstrokepath"></a><a name="strokepath"></a> CDC:: StrokePath
 
 Geçerli kalemi kullanarak belirtilen yolu işler.
 
@@ -6856,7 +6857,7 @@ BOOL StrokePath();
 
 Cihaz bağlamı kapalı bir yol içermelidir.
 
-## <a name="cdctabbedtextout"></a><a name="tabbedtextout"></a>CDC:: TabbedTextOut
+## <a name="cdctabbedtextout"></a><a name="tabbedtextout"></a> CDC:: TabbedTextOut
 
 Sekme durağı konumları dizisinde belirtilen değerlere genişleterek, belirtilen konumda bir karakter dizesi yazmak için bu üye işlevi çağırın.
 
@@ -6891,7 +6892,7 @@ Dizenin başlangıç noktasının mantıksal y koordinatını belirtir.
 Çizilecek karakter dizesini işaret eder. Bu parametre için bir karakter dizisine ya da bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) nesnesine bir işaretçi geçirebilirsiniz.
 
 *nCount*<br/>
-*LpszString*tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
+*LpszString* tarafından işaret [edilen dizenin uzunluğunu](/windows/win32/gdi/specifying-length-of-text-output-string) belirtir.
 
 *nTabPositions*<br/>
 Sekme durağı konumları dizisindeki değer sayısını belirtir.
@@ -6913,11 +6914,11 @@ Dizenin (mantıksal birimlerde) bir nesne olarak boyutları `CSize` .
 
 Metin şu anda seçili olan yazı tipinde yazılır. *NTabPositions* 0 Ise ve *lpnTabStopPositions* null ise, sekmeler ortalama karakter genişliği sekiz katına genişletilir.
 
-*NTabPositions* 1 ise, sekme durağı *lpnTabStopPositions* dizisindeki ilk değer tarafından belirtilen uzaklığa göre ayrılır. *LpnTabStopPositions* dizisi birden fazla değer içeriyorsa dizideki her bir değer Için *nTabPositions*tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır. *NTabOrigin* parametresi, bir uygulamanın `TabbedTextOut` işlevi tek bir satır için birkaç kez çağırmasını sağlar. Uygulama her seferinde *nTabOrigin* değeri aynı değere ayarlandığında, işlevi birden çok kez çağırırsa, Işlevi *nTabOrigin*tarafından belirtilen konuma göre tüm sekmeleri genişletir.
+*NTabPositions* 1 ise, sekme durağı *lpnTabStopPositions* dizisindeki ilk değer tarafından belirtilen uzaklığa göre ayrılır. *LpnTabStopPositions* dizisi birden fazla değer içeriyorsa dizideki her bir değer Için *nTabPositions* tarafından belirtilen sayıya kadar bir sekme durağı ayarlanır. *NTabOrigin* parametresi, bir uygulamanın `TabbedTextOut` işlevi tek bir satır için birkaç kez çağırmasını sağlar. Uygulama her seferinde *nTabOrigin* değeri aynı değere ayarlandığında, işlevi birden çok kez çağırırsa, Işlevi *nTabOrigin* tarafından belirtilen konuma göre tüm sekmeleri genişletir.
 
 Varsayılan olarak, geçerli konum işlev tarafından kullanılmaz veya güncelleştirilmez. Bir uygulamanın işlevi çağırdığında geçerli konumu güncelleştirmesi gerekiyorsa, uygulama, *nFlags* TA_UPDATECP olarak ayarlanan [SetTextAlign](#settextalign) üye işlevini çağırabilir. Bu bayrak ayarlandığında, Windows, sonraki çağrılarındaki *x* ve *y* parametrelerini `TabbedTextOut` , bunun yerine geçerli konumu kullanarak yoksayar.
 
-## <a name="cdctextout"></a><a name="textout"></a>CDC:: TextOut
+## <a name="cdctextout"></a><a name="textout"></a> CDC:: TextOut
 
 O anda seçili yazı tipini kullanarak belirtilen konumda bir karakter dizesi yazar.
 
@@ -6965,7 +6966,7 @@ Uygulamanın, çağrı yaptığı sırada geçerli konumu güncelleştirmesi ger
 
   [CDC:: BeginPath](#beginpath)örneğine bakın.
 
-## <a name="cdctransparentblt"></a><a name="transparentblt"></a>CDC:: TransparentBlt
+## <a name="cdctransparentblt"></a><a name="transparentblt"></a> CDC:: TransparentBlt
 
 Belirtilen kaynak cihaz bağlamından bir piksel dikdörtgeni hedef cihaz bağlamına karşılık gelen renk verilerinin bit bloğunu aktarmak için bu üye işlevini çağırın.
 
@@ -7021,11 +7022,11 @@ Başarılı olursa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`TransparentBlt`saydamlığa izin verir; diğer bir deyişle, *clrTransparent* tarafından belirtilen RGB rengi aktarım için saydam olarak işlenir.
+`TransparentBlt` saydamlığa izin verir; diğer bir deyişle, *clrTransparent* tarafından belirtilen RGB rengi aktarım için saydam olarak işlenir.
 
 Daha fazla bilgi için Windows SDK [TransparentBlt](/windows/win32/api/wingdi/nf-wingdi-transparentblt) bakın.
 
-## <a name="cdcupdatecolors"></a><a name="updatecolors"></a>CDC:: UpdateColors
+## <a name="cdcupdatecolors"></a><a name="updatecolors"></a> CDC:: UpdateColors
 
 İstemci alanındaki geçerli renkleri piksel olarak bir piksel temelinde sistem paletiyle eşleştirerek cihaz bağlamının istemci alanını güncelleştirir.
 
@@ -7041,7 +7042,7 @@ Renk paletleri kullanma hakkında daha fazla bilgi için Windows SDK [UpdateColo
 
 `UpdateColors`Üye işlevi, genellikle alanı yeniden çizmeyi kullanmaktan daha hızlı bir şekilde istemci alanı güncelleştirir. Ancak, işlev, sistem paleti değiştirilmeden önce her bir pikselin rengine bağlı olarak renk çevirisini gerçekleştirdiğinden, bu işleve yapılan her çağrı bazı renk doğruluğu kaybına neden olur.
 
-## <a name="cdcwidenpath"></a><a name="widenpath"></a>CDC:: WidenPath
+## <a name="cdcwidenpath"></a><a name="widenpath"></a> CDC:: WidenPath
 
 Yol, şu anda cihaz bağlamına seçili olan kalem kullanılarak konturlandığında, geçerli yolu boyanmış alan olarak tekrar tanımlar.
 

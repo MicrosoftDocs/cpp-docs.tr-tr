@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock'
 title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 ms.date: 4/2/2020
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - ungetwch_nolock function
 - _ungetwch function
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
-ms.openlocfilehash: 2a7b3b2a71b633eac64ad5ebc5203d70f31626ed
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d7491f80f5c8a619d6382f5811c0ff2fccc00125
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341405"
 ---
 # <a name="_ungetch-_ungetwch-_ungetch_nolock-_ungetwch_nolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 
@@ -89,7 +90,7 @@ Gönderilecek karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Her iki işlev de başarılı olursa *c* karakterini döndürür. Bir hata varsa, **_Ungetch** **EOF** değerini döndürür ve **_ungetwch** **weof**döndürür.
+Her iki işlev de başarılı olursa *c* karakterini döndürür. Bir hata varsa, **_Ungetch** **EOF** değerini döndürür ve **_ungetwch** **weof** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -110,8 +111,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ungetch**, **_ungetch_nolock**|\<conio. h>|
-|**_ungetwch**, **_ungetwch_nolock**|\<conio. h> veya \<wchar. h>|
+|**_ungetch**, **_ungetch_nolock**|\<conio.h>|
+|**_ungetwch**, **_ungetwch_nolock**|\<conio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -159,6 +160,6 @@ Whitetoken = White
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3415'
 title: Derleyici hatası C3415
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3415
 ms.assetid: fa2db8ab-2820-4ec3-a740-fb5e2adcfb29
-ms.openlocfilehash: da7b49d30866b9fa5ab27a93357fd2812aaa2806
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3f50f2bd7a443c01f820aa1915f14d83e0b0dbe8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74742931"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321919"
 ---
 # <a name="compiler-error-c3415"></a>Derleyici hatası C3415
 
@@ -19,7 +20,7 @@ farklı özniteliklere sahip birden çok ' section_name ' bölümü bulundu (' V
 
 [Bölüm](../../preprocessor/section.md) pragmaları içinde çakışan değerler belirtildi.
 
-`value`,, ntımage. h içinde belirtildiği gibi, bölüm için geçerli ayardır. Örneğin:
+`value` ,, ntımage. h içinde belirtildiği gibi, bölüm için geçerli ayardır. Örneğin:
 
 ```
 // Section contains extended relocations.

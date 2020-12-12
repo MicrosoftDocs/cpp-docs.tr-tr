@@ -1,5 +1,6 @@
 ---
-title: CDockablePaneAdapter Sınıfı
+description: 'Daha fazla bilgi edinin: CDockablePaneAdapter sınıfı'
+title: CDockablePaneAdapter sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDockablePaneAdapter
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - CDockablePaneAdapter [MFC], SaveState
 - CDockablePaneAdapter [MFC], SetWrappedWnd
 ms.assetid: 6ed6cf82-f39c-4d0c-bf7c-8641495cf8f3
-ms.openlocfilehash: 2fbaf99e4cc9bcbecf1a94012713b34e986f7ecb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0a46ef15d35194203d6e5c035555de0d80b63c72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375591"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185043"
 ---
-# <a name="cdockablepaneadapter-class"></a>CDockablePaneAdapter Sınıfı
+# <a name="cdockablepaneadapter-class"></a>CDockablePaneAdapter sınıfı
 
-Türetilmiş bölmeler için `CWnd`yerleştirme desteği sağlar.
+İle türetilmiş bölmeler için yerleştirme desteği sağlar `CWnd` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDockablePaneAdapter : public CDockablePane
@@ -35,36 +36,36 @@ class CDockablePaneAdapter : public CDockablePane
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDockablePaneAdapter::GetWrappedWnd](#getwrappedwnd)|Sarılmış pencereyi döndürür.|
-|[CDockablePaneAdapter::LoadState](#loadstate)|[(CDockablePane geçersiz kılar::LoadState](cdockablepane-class.md#loadstate).)|
-|[CDockablePaneAdapter::SaveState](#savestate)|[(CDockablePane geçersiz kılar::SaveState](cdockablepane-class.md).)|
-|[CDockablePaneAdapter::SetWrappedWnd](#setwrappedwnd)||
+|[CDockablePaneAdapter:: GetWrappedWnd](#getwrappedwnd)|Sarmalanan pencereyi döndürür.|
+|[CDockablePaneAdapter:: LoadState](#loadstate)|( [CDockablePane:: LoadState](cdockablepane-class.md#loadstate)geçersiz kılar)|
+|[CDockablePaneAdapter:: Savemlak](#savestate)|( [CDockablePane:: sav,](cdockablepane-class.md)geçersiz kılar.)|
+|[CDockablePaneAdapter:: SetWrappedWnd](#setwrappedwnd)||
 
 ## <a name="remarks"></a>Açıklamalar
 
-Genellikle, [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) veya [CMFCBaseTabCtrl::InsertTab](../../mfc/reference/cmfcbasetabctrl-class.md#inserttab) yöntemlerini kullandığınızda çerçeve bu sınıfın nesnelerini anlık olarak kullanır.
+Genellikle, [CMFCBaseTabCtrl:: AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) veya [CMFCBaseTabCtrl:: InsertTab](../../mfc/reference/cmfcbasetabctrl-class.md#inserttab) yöntemlerini kullandığınızda Framework bu sınıfın nesnelerini başlatır.
 
-`CDockablePaneAdapter` Davranışı özelleştirmek istiyorsanız, yeni bir sınıf türünve çalışma zamanı sınıf bilgilerini [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](../../mfc/reference/cmfcbasetabctrl-class.md#setdockingbarwrapperrtc)kullanarak sekmeli bir pencereye ayarlamanız.
+Davranışı özelleştirmek istiyorsanız `CDockablePaneAdapter` , bundan yeni bir sınıf türetirsiniz ve çalışma zamanı sınıfı bilgilerini, [CMFCBaseTabCtrl:: SetDockingBarWrapperRTC](../../mfc/reference/cmfcbasetabctrl-class.md#setdockingbarwrapperrtc)kullanarak bir sekmeli pencereye ayarlamanız yeterlidir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)\
-•&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CPane](../../mfc/reference/cpane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CDockablePane](../../mfc/reference/cdockablepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CDockablePaneAdapter](../../mfc/reference/cdockablepaneadapter-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└ &nbsp; [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CWnd](../../mfc/reference/cwnd-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CBasePane](../../mfc/reference/cbasepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CPane](../../mfc/reference/cpane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CDockablePane](../../mfc/reference/cdockablepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CDockablePaneAdapter](../../mfc/reference/cdockablepaneadapter-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxDockablePaneAdapter.h
+**Üstbilgi:** afxDockablePaneAdapter. h
 
-## <a name="cdockablepaneadaptergetwrappedwnd"></a><a name="getwrappedwnd"></a>CDockablePaneAdapter::GetWrappedWnd
+## <a name="cdockablepaneadaptergetwrappedwnd"></a><a name="getwrappedwnd"></a> CDockablePaneAdapter:: GetWrappedWnd
 
-Takılabilir bölme bağdaştırıcısı için temel pencereyi döndürür.
+Yerleştirilebilir bölmesi bağdaştırıcısı için temeldeki pencereyi döndürür.
 
 ```
 virtual CWnd* GetWrappedWnd() const;
@@ -72,15 +73,15 @@ virtual CWnd* GetWrappedWnd() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sarılmış pencereiçin bir işaretçi.
+Sarmalanan pencereye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sarılmış pencereye erişmek için bu işlevi kullanın.
+Sarmalanan pencereye erişmek için bu işlevi kullanın.
 
-## <a name="cdockablepaneadapterloadstate"></a><a name="loadstate"></a>CDockablePaneAdapter::LoadState
+## <a name="cdockablepaneadapterloadstate"></a><a name="loadstate"></a> CDockablePaneAdapter:: LoadState
 
-Bölmenin durumunu kayıt defterinden yükler.
+Bölme durumunu kayıt defterinden yükler.
 
 ```
 virtual BOOL LoadState(
@@ -92,19 +93,19 @@ virtual BOOL LoadState(
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-[içinde] Profil adı.
+'ndaki Profil adı.
 
-*Nındex*<br/>
-[içinde] Profil dizini.
+*nDizin*<br/>
+'ndaki Profil dizini.
 
-*uiID*<br/>
-[içinde] Bölme kimliği.
+*Uııd*<br/>
+'ndaki Bölme KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockablepaneadaptersavestate"></a><a name="savestate"></a>CDockablePaneAdapter::SaveState
+## <a name="cdockablepaneadaptersavestate"></a><a name="savestate"></a> CDockablePaneAdapter:: Savemlak
 
 Bölmenin durumunu kayıt defterine kaydeder.
 
@@ -118,21 +119,21 @@ virtual BOOL SaveState(
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-[içinde] Profil adı.
+'ndaki Profil adı.
 
-*Nındex*<br/>
-[içinde] Profil dizini (pencerenin denetim kimliği varsayılan).
+*nDizin*<br/>
+'ndaki Profil dizini (varsayılan olarak pencerenin Denetim KIMLIĞI olur).
 
-*uiID*<br/>
-[içinde] Bölme kimliği.
+*Uııd*<br/>
+'ndaki Bölme KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockablepaneadaptersetwrappedwnd"></a><a name="setwrappedwnd"></a>CDockablePaneAdapter::SetWrappedWnd
+## <a name="cdockablepaneadaptersetwrappedwnd"></a><a name="setwrappedwnd"></a> CDockablePaneAdapter:: SetWrappedWnd
 
-Takılabilir bölme bağdaştırıcısı için temel pencereyi ayarlar.
+Yerleştirilebilir bölmesi bağdaştırıcısı için temeldeki pencereyi ayarlar.
 
 ```
 virtual BOOL SetWrappedWnd(CWnd* pWnd);
@@ -140,8 +141,8 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-[içinde] Bölme bağdaştırıcısının kaydırması için pencereye işaretçi.
+*pWnd*<br/>
+'ndaki Bölme bağdaştırıcısının sarılacağı pencerenin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -149,6 +150,6 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)
+[CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md)

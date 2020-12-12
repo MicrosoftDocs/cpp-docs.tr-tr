@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _get_daylight'
 title: _get_daylight
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - daylight saving time offset
 - _get_daylight function
 ms.assetid: f85a6ba3-e187-4ca7-aed7-ffc694c8ac4c
-ms.openlocfilehash: 226242c5dd6c3c204d2449bd14ee7dee4f5fe7b5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: dcb4ffb80ea79d89cad84617d4c8e4dceb1735c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919395"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341483"
 ---
 # <a name="_get_daylight"></a>_get_daylight
 
@@ -61,9 +62,9 @@ Başarılıysa sıfır veya bir hata oluşursa **errno** değeri.
 
 **_Get_daylight** işlevi, gün ışığından yararlanma saatine kadar olan saat sayısını tamsayı olarak alır. Gün ışığından yararlanma saati etkin ise, varsayılan konum bir saattir (birkaç bölge iki saatlik bir sapmayı gözlemlese de).
 
-*Saatler* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamada](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+*Saatler* **null** ise, geçersiz parametre işleyicisi [parametre doğrulamada](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL** döndürür.
 
-Makro **_daylight** veya kullanım dışı işlev **__daylight**yerine bu işlevi kullanmanızı öneririz.
+Makro **_daylight** veya kullanım dışı işlev **__daylight** yerine bu işlevi kullanmanızı öneririz.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -71,7 +72,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_daylight**|\<Time. h>|
+|**_get_daylight**|\<time.h>|
 
 Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi için: derleme görevleri dosyası Içeriği'
 title: Derleme Görevleri Dosyası İçeriği
 ms.date: 11/04/2016
 helpviewer_keywords:
 - makefiles
 - makefiles, contents
 ms.assetid: 29362adb-d963-4c00-84a6-b38c2ffe6a36
-ms.openlocfilehash: 208b2dcf6c170c6c4fdc814a299a2657adc364a4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: db2ad308a45264a176daf5fb54c974153d314a3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169922"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196991"
 ---
 # <a name="contents-of-a-makefile"></a>Derleme Görevleri Dosyası İçeriği
 
@@ -18,11 +19,11 @@ Derleme görevleri dosyası şunları içerir:
 
 - [Açıklama blokları](description-blocks.md)
 
-- [Komut](commands-in-a-makefile.md)
+- [Komutlar](commands-in-a-makefile.md)
 
-- [Larının](macros-and-nmake.md)
+- [Makrolar](macros-and-nmake.md)
 
-- [Çıkarım kuralları](inference-rules.md)
+- [Çıkarsama kuralları](inference-rules.md)
 
 - [Nokta yönergeleri](dot-directives.md)
 

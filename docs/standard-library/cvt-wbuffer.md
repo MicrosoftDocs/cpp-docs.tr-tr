@@ -1,5 +1,6 @@
 ---
-title: '&lt;cvt-wbuffer &gt;'
+description: 'Daha fazla bilgi edinin: &lt; CVT/wbuffer&gt;'
+title: '&lt;CVT-wbuffer&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - stdext.cvt.<cvt/wbuffer>
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - cvt/wbuffer header
 ms.assetid: 6e6eb44c-1bc4-4d8c-a4bd-b39c753ce725
-ms.openlocfilehash: a360b9cd0b163615bed71ee4b070f8d97848fa66
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: afc88236d744e3556fd0eb3563da4db1f6d57dd4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233038"
 ---
-# <a name="ltcvtwbuffergt"></a>&lt;cvt/wbuffer &gt;
+# <a name="ltcvtwbuffergt"></a>&lt;CVT/wbuffer&gt;
 
-Visual Studio 'nun önceki sürümlerindeki üst bilgi `<cvt/wstring>`, stdext:: CVT ad alanındaki sınıf şablonu [wbuffer_convert sınıfını](../standard-library/wbuffer-convert-class.md) tanımladı. Üst bilgi geriye dönük uyumluluk için korunur. Yeni kod, `std` ad alanında [\<locale >](../standard-library/locale.md) tanımlanan sınıfının sürümünü kullanmalıdır
+`<cvt/wstring>`Visual Studio 'nun önceki sürümlerindeki üst bilgi, stdext:: CVT ad alanındaki sınıf şablonu [wbuffer_convert](../standard-library/wbuffer-convert-class.md) sınıfını tanımladı. Üst bilgi geriye dönük uyumluluk için korunur. Yeni kod, ad alanında tanımlanan sınıfının sürümünü kullanmalıdır [\<locale>](../standard-library/locale.md) `std`
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <cvt/wbuffer>

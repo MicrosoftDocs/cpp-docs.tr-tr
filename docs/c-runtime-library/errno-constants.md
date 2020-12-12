@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: errno sabitleri'
 title: errno Sabitleri
 ms.date: 09/17/2018
 f1_keywords:
@@ -41,16 +42,16 @@ helpviewer_keywords:
 - EXDEV constant
 - EILSEQ constant
 ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
-ms.openlocfilehash: 34f92bedfa9606c90196f2e3a5e47dc341b23aea
-ms.sourcegitcommit: 6ddfb8be5e5923a4d90a2c0f93f76a27ce7ac299
+ms.openlocfilehash: 4eb92b66970f1ef9455a0d7dd741ad02a60c26d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74898752"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329344"
 ---
 # <a name="errno-constants"></a>errno Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <errno.h>
@@ -77,7 +78,7 @@ Aşağıdaki **errno** değeri desteklenir:
 |**EDOM**|Matematik bağımsız değişkeni.|
 |**EEXıST**|Dosyalar var. Zaten var olan bir dosya oluşturulmaya çalışıldı. Örneğin, **_O_CREAT** ve **_O_EXCL** bayrakları bir **_open** çağrısında belirtilir, ancak adlandırılmış dosya zaten var.|
 |**EıLSEQ**|Geçersiz bayt dizisi (örneğin, bir MBCS dizesinde).|
-|**EıNVAL**|Geçersiz bağımsız değişken. Bir işleve bağımsız değişkenlerden biri için geçersiz bir değer verildi. Örneğin, bir dosya işaretçisi ( **fseek**çağrısı aracılığıyla) konumlandırılırken kaynak için verilen değer dosyanın başlangıcından öncedir.|
+|**EıNVAL**|Geçersiz bağımsız değişken. Bir işleve bağımsız değişkenlerden biri için geçersiz bir değer verildi. Örneğin, bir dosya işaretçisi ( **fseek** çağrısı aracılığıyla) konumlandırılırken kaynak için verilen değer dosyanın başlangıcından öncedir.|
 |**EMFıLE**|Çok fazla açık dosya. Daha fazla dosya tanımlayıcısı yok, bu nedenle başka dosya açılamaz.|
 |**ENOENT**|Böyle bir dosya veya dizin yok. Belirtilen dosya veya dizin yok veya bulunamıyor. Bu ileti, belirtilen bir dosya yoksa veya bir yolun bileşeni var olan bir dizin belirtmezse gerçekleşebilir.|
 |**ENOEXEC**|Exec biçim hatası. Yürütülebilir dosya olmayan veya geçersiz bir yürütülebilir dosya biçimine sahip bir dosya yürütülmeye çalışıldı.|
@@ -173,4 +174,4 @@ POSIX ile uyumluluk için aşağıdaki değerler desteklenir. Bunlar, POSIX olma
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

@@ -1,17 +1,18 @@
 ---
+description: 'Daha fazla bilgi edinin: ham dize değişmez değerine Dönüştür'
 title: Ham dize değişmez değerine Dönüştür
 ms.date: 11/16/2016
 ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
-ms.openlocfilehash: 5636e00bfe8655d84fb2e4b64e0391324ab35d7d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f83cb955bc2b30957306e1467a2d353377d5f33a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185563"
 ---
 # <a name="convert-to-raw-string-literal"></a>Ham dize değişmez değerine Dönüştür
 
-**Ne:** Herhangi bir C++ dizeyi ham dize değişmez değerine açmanızı sağlar.
+**Ne:** Bir dizeyi C++ ham dize değişmez değerine açmanızı sağlar.
 
 **Ne zaman:** Kaçış karakteri olan bir dizeniz var, kaçış karakterleri olarak işlenmemelidir.
 
@@ -23,12 +24,12 @@ ms.locfileid: "80171820"
 
    ![Vurgulanan kod](images/stringliteral_highlight.png)
 
-1. Ardından, aşağıdakilerden birini yapın:
-   * **Klavyenizdeki**
+1. Sonra, aşağıdakilerden birini yapın:
+   * **Klavye**
      * **CTRL +** tuşlarına basın. **hızlı eylemleri ve yeniden düzenlemeler** menüsünü tetiklemek ve bağlam menüsünden **Ham dize değişmez değerine Dönüştür** ' ü seçin.
-   * **Tığında**
+   * **Fare**
      * Koda sağ tıklayın, **Hızlı Eylemler ve yeniden düzenlemeler** menüsünü seçin ve bağlam menüsünden **Ham dize değişmez değerine Dönüştür** ' ü seçin.
-     * Sol kenar boşluğunda görüntülenen ![ampul](images/bulb.png) simgesine tıklayın ve bağlam menüsünden **Ham dize değişmez değerine Dönüştür** ' ü seçin.
+     * ![ ](images/bulb.png) Sol kenar boşluğunda görüntülenen ampul simgesine tıklayın ve bağlam menüsünden **Ham dize değişmez değerine Dönüştür** ' ü seçin.
 
 1. Dize hemen bir ham dize değişmez değerine dönüştürülür.
 

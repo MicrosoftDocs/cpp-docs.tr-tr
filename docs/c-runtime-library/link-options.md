@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlantı seçenekleri'
 title: Bağlantı Seçenekleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - threadlocale.obj
 - pnoarg.obj
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
-ms.openlocfilehash: 146722fb0dd3a4fc774ede692808b1e6bfb1e5c7
-ms.sourcegitcommit: fe146adb3a02872538637196bb3c45aeeeaaf5c2
+ms.openlocfilehash: affb5d95af176ba49aa2aeafff5ac84653df2ad8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84506864"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246532"
 ---
 # <a name="link-options"></a>Bağlantı Seçenekleri
 
@@ -43,7 +44,7 @@ CRT lib dizini, herhangi bir kod değişikliği yapmadan belirli CRT özellikler
 
 Bu nesnelerin CLR saf mod sürümleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez. Yerel ve/clr kodu için normal sürümleri kullanın.
 
-|Yerel ve/clr|Saf mod|Description|
+|Yerel ve/clr|Saf mod|Açıklama|
 |----------------------|---------------|-----------------|
 |binmode.obj|pbinmode.obj|Varsayılan dosya çevirisi modunu binary olarak ayarlar. Bkz. [_fmode](../c-runtime-library/fmode.md).|
 |chkstk.obj|yok|CRT kullanılırken yığın denetimi ve alloca desteği sağlar.|

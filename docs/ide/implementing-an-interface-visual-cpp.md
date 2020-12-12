@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: arabirim uygulama'
 title: Arabirim uygulama
 ms.date: 11/12/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - interfaces, implementing
 - implement interface wizard [C++]
 ms.assetid: 72f8731b-7e36-45db-8b10-7ef211a773cd
-ms.openlocfilehash: bb1db35e269ef884f3ebdf4564d8f0a3e579db50
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 202471577ec72f4cc28fa5cdceb3566d60e04653
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69509516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313222"
 ---
 # <a name="implement-an-interface"></a>Arabirim uygulama
 
@@ -59,16 +60,16 @@ Arabirimler ve uygulamalar ile ilgili bir tartışma için, Windows SDK içindek
   |Seçenek|Açıklama|
   |------------|-----------------|
   |**Project**|Tür kitaplığı projenin bir parçasıdır.|
-  |**Defteri**|Tür kitaplığı sisteme kaydedilir. Kayıtlı tür kitaplıkları **kullanılabilir tür kitaplıklarında**listelenmiştir.|
-  |**Dosya**|Tür kitaplığı sistemde kayıtlı değildir, ancak bir dosyada tutulur. Dosya konumunu **konuma**girin.|
+  |**Kapsayıcı Kayıt Defteri**|Tür kitaplığı sisteme kaydedilir. Kayıtlı tür kitaplıkları **kullanılabilir tür kitaplıklarında** listelenmiştir.|
+  |**Dosya**|Tür kitaplığı sistemde kayıtlı değildir, ancak bir dosyada tutulur. Dosya konumunu **konuma** girin.|
 
 - **Kullanılabilir tür kitaplıkları**
 
-  Uygulayabileceğiniz arabirim tanımlarını tutan kullanılabilir tür kitaplıklarını görüntüler. **Arabirim uygulama**altındaki **Dosya** ' yı seçerseniz, bu kutu değişiklik için kullanılamaz.
+  Uygulayabileceğiniz arabirim tanımlarını tutan kullanılabilir tür kitaplıklarını görüntüler. **Arabirim uygulama** altındaki **Dosya** ' yı seçerseniz, bu kutu değişiklik için kullanılamaz.
 
 - **Konum**
 
-  **Kullanılabilir tür kitaplıkları** listesinde şu anda seçili olan tür kitaplığının konumunu görüntüler. **Arabirim Uygula**altında **Dosya** ' yı seçtiyseniz, kullanılacak tür kitaplığını tutan bir dosyayı bulmak için üç nokta düğmesini seçin.
+  **Kullanılabilir tür kitaplıkları** listesinde şu anda seçili olan tür kitaplığının konumunu görüntüler. **Arabirim Uygula** altında **Dosya** ' yı seçtiyseniz, kullanılacak tür kitaplığını tutan bir dosyayı bulmak için üç nokta düğmesini seçin.
 
 - **Arabirimler**
 
@@ -89,4 +90,4 @@ Arabirimler ve uygulamalar ile ilgili bir tartışma için, Windows SDK içindek
   Nesneniz üzerinde uygulamak üzere seçtiğiniz arabirimlerin adlarını görüntüler.
 
   > [!NOTE]
-  > Öğesinden `IDispatch`türetilen birden fazla arabirim varsa veya sınıfınızın zaten başka bir arabiriminden türetilmiş bir arabirimi uygulamaya çalışırsanız, COM_MAP girdilerini kesinleştirmeniz gerekir. Daha fazla bilgi için bkz. [COM_INTERFACE_ENTRY2](../atl/reference/com-interface-entry-macros.md#com_interface_entry2).
+  > Öğesinden türetilen birden fazla arabirim varsa `IDispatch` veya sınıfınıza zaten başka bir arabirimden türetilmiş bir arabirim uygulamaya çalışırsanız, COM_MAP girdilerini kesinleştirmeniz gerekir. Daha fazla bilgi için bkz. [COM_INTERFACE_ENTRY2](../atl/reference/com-interface-entry-macros.md#com_interface_entry2).

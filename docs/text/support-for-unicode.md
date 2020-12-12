@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Unicode desteği'
 title: Unicode desteği
 ms.date: 01/09/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - character sets [C++], Unicode
 - localization [C++], character sets
 - Unicode [C++], installing support
-ms.openlocfilehash: 90c07874b61656a8bec0f9ef373f2ee8f339e994
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3226f488afc8d9899777ac0b717dd012fec2cc3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215380"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335760"
 ---
 # <a name="support-for-unicode"></a>Unicode desteği
 
@@ -33,8 +34,8 @@ MFC çerçevesi genelinde Unicode özellikli etkindir ve MFC, aşağıdaki tablo
 |Taşınabilir olmayan veri türü|Bu makro ile değiştirilmiştir|
 |-----------------------------|----------------------------|
 |**`char`**, **`wchar_t`**|`_TCHAR`|
-|**`char*`**, `LPSTR` (Win32 veri türü),`LPWSTR`|`LPTSTR`|
-|`const char*`, `LPCSTR` (Win32 veri türü),`LPCWSTR`|`LPCTSTR`|
+|**`char*`**, `LPSTR` (Win32 veri türü), `LPWSTR`|`LPTSTR`|
+|`const char*`, `LPCSTR` (Win32 veri türü), `LPCWSTR`|`LPCTSTR`|
 
 Sınıfı `CString` `_TCHAR` , temeli olarak kullanılır ve kolay dönüştürmeler için oluşturucular ve işleçler sağlar. Unicode için dize işlemlerinin çoğu, Windows ANSI karakter kümesini işlemek için kullanılan mantığla kullanılarak yazılabilir, ancak temel işlem birimi 8 bitlik bir bayt yerine 16 bitlik bir karakter olabilir. Çok baytlı karakter kümeleriyle çalışmaktan farklı olarak, bir Unicode karakteri iki farklı bayt gibi kabul etmeniz gerekmez (ve kullanmamalısınız). Bununla birlikte, tek bir karakterin bir vekil çift karakter çifti tarafından temsil edildiği olasılığa karşı uğraşmanız gerekir. Genel olarak, bir dizenin uzunluğunu, dar veya geniş olan karakterlerin sayısı ile aynı olduğunu varsayan bir kod yazın.
 

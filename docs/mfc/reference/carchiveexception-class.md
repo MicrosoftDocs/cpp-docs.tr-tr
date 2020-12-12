@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CArchiveException Class'
 title: CArchiveException sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - CArchiveException [MFC], m_cause
 - CArchiveException [MFC], m_strFileName
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
-ms.openlocfilehash: 68f64cfd7dc96da04fcc0945a6b996eab4101487
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ce8355583e0a7a3fd8a382873a0e4b2a1ea91b83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231890"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185407"
 ---
 # <a name="carchiveexception-class"></a>CArchiveException sınıfı
 
 Serileştirme özel durum koşulunu temsil eder
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CArchiveException : public CException
@@ -48,7 +49,7 @@ class CArchiveException : public CException
 
 `CArchiveException`Sınıfı, özel durumun nedenini gösteren bir ortak veri üyesini içerir.
 
-`CArchiveException`nesneler, [CArchive](../../mfc/reference/carchive-class.md) üye işlevleri içinde oluşturulur ve oluşturulur. Bu nesnelere bir **catch** ifadesinin kapsamı içinde erişebilirsiniz. Nedeni kodu işletim sisteminden bağımsızdır. Özel durum işleme hakkında daha fazla bilgi için bkz. [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
+`CArchiveException` nesneler, [CArchive](../../mfc/reference/carchive-class.md) üye işlevleri içinde oluşturulur ve oluşturulur. Bu nesnelere bir **catch** ifadesinin kapsamı içinde erişebilirsiniz. Nedeni kodu işletim sisteminden bağımsızdır. Özel durum işleme hakkında daha fazla bilgi için bkz. [özel durum işleme (MFC)](../../mfc/exception-handling-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -62,7 +63,7 @@ class CArchiveException : public CException
 
 **Üstbilgi:** AFX. h
 
-## <a name="carchiveexceptioncarchiveexception"></a><a name="carchiveexception"></a>CArchiveException::CArchiveException
+## <a name="carchiveexceptioncarchiveexception"></a><a name="carchiveexception"></a> CArchiveException::CArchiveException
 
 Nesne oluşturur ve `CArchiveException` nesnenin *neden* değerini nesnede depolar.
 
@@ -86,7 +87,7 @@ CArchiveException(
 
 Bu oluşturucuyu doğrudan kullanmayın; Bunun yerine, genel işlevini çağırın `AfxThrowArchiveException` .
 
-## <a name="carchiveexceptionm_cause"></a><a name="m_cause"></a>CArchiveException:: m_cause
+## <a name="carchiveexceptionm_cause"></a><a name="m_cause"></a> CArchiveException:: m_cause
 
 Özel durumun nedenini belirtir.
 
@@ -98,29 +99,29 @@ int m_cause;
 
 Bu veri üyesi, türünde ortak bir değişkendir **`int`** . Değerleri, numaralandırılmış bir tür tarafından tanımlanır `CArchiveException` . Numaralandırıcılar ve anlamları aşağıdaki gibidir:
 
-- `CArchiveException::none`Hata oluşmadı.
+- `CArchiveException::none` Hata oluşmadı.
 
-- `CArchiveException::genericException`Belirtilmeyen hata.
+- `CArchiveException::genericException` Belirtilmeyen hata.
 
-- `CArchiveException::readOnly`Yükleme için açılmış bir arşive yazmaya çalışıldı.
+- `CArchiveException::readOnly` Yükleme için açılmış bir arşive yazmaya çalışıldı.
 
-- `CArchiveException::endOfFile`Bir nesne okunurken dosyanın sonuna erişildi.
+- `CArchiveException::endOfFile` Bir nesne okunurken dosyanın sonuna erişildi.
 
-- `CArchiveException::writeOnly`Depolanması için açılan bir arşivden okunmaya çalışıldı.
+- `CArchiveException::writeOnly` Depolanması için açılan bir arşivden okunmaya çalışıldı.
 
-- `CArchiveException::badIndex`Geçersiz dosya biçimi.
+- `CArchiveException::badIndex` Geçersiz dosya biçimi.
 
-- `CArchiveException::badClass`Yanlış türdeki bir nesneye bir nesne okunmaya çalışıldı.
+- `CArchiveException::badClass` Yanlış türdeki bir nesneye bir nesne okunmaya çalışıldı.
 
-- `CArchiveException::badSchema`Sınıfının farklı bir sürümüne sahip bir nesne okunmaya çalışıldı.
+- `CArchiveException::badSchema` Sınıfının farklı bir sürümüne sahip bir nesne okunmaya çalışıldı.
 
     > [!NOTE]
     >  Bu `CArchiveException` neden Numaralandırıcılar `CFileException` neden numaralandırıcılardan farklıdır.
 
     > [!NOTE]
-    > `CArchiveException::generic`kullanım dışıdır. Bunun yerine `genericException` kullanın. **Genel** bir uygulamada kullanılırsa ve/clr ile derlense, şifre çöz kolay olmayan sözdizimi hataları olur.
+    > `CArchiveException::generic` kullanım dışıdır. Bunun yerine `genericException` kullanın. **Genel** bir uygulamada kullanılırsa ve/clr ile derlense, şifre çöz kolay olmayan sözdizimi hataları olur.
 
-## <a name="carchiveexceptionm_strfilename"></a><a name="m_strfilename"></a>CArchiveException:: m_strFileName
+## <a name="carchiveexceptionm_strfilename"></a><a name="m_strfilename"></a> CArchiveException:: m_strFileName
 
 Bu özel durum koşulunun dosya adını belirtir.
 

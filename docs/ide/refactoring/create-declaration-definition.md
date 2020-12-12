@@ -1,34 +1,35 @@
 ---
-title: Oluşturma bildirimi / tanımı
+description: 'Hakkında daha fazla bilgi edinin: bildirim/tanım oluşturma'
+title: Bildirim/tanım oluştur
 ms.date: 10/19/2018
 ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
-ms.openlocfilehash: 59ae3ebc23303554a35eea17c7e28850a4a1499a
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: cd111e05f531cc01c499094521cbd51d98980c4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185550"
 ---
-# <a name="create-declaration--definition"></a>Oluşturma bildirimi / tanımı
+# <a name="create-declaration--definition"></a>Bildirim/tanım oluştur
 
-**Ne:** Anında bildirim veya bir işlev tanımı oluşturmanıza olanak sağlar.
+**Ne:** Bir işlevin bildirimini veya tanımını hemen üretmenizi sağlar.
 
-**ne zaman:** Size bir bildirim ya da tam tersi gerektiren bir işleviniz oldu.
+**Ne zaman:** Bildirim gerektiren bir işleviniz veya tam tersi de geçerlidir.
 
-**Neden:** Bildirimi/tanımı el ile oluşturabilirsiniz, ancak bu, otomatik olarak gerekirse başlık/kod dosyası oluşturma oluşturur.
+**Neden:** Bildirimi/tanımı el ile oluşturabilirsiniz, ancak bu işlem, gerekirse üstbilgi/kod dosyası oluşturarak otomatik olarak oluşturulur.
 
-**Nasıl:**
+**Oluşturulacağı**
 
-1. Metin veya fare imlecinizi bildirim veya tanım oluşturmak istediğiniz işlevin üzerine yerleştirin.
+1. Metin veya fare imlecinizi, bildirim veya tanım oluşturmak istediğiniz işlevin üzerine yerleştirin.
 
-   ![Vurgulanmış kodu](images/createdefinition_highlight.png)
+   ![Vurgulanan kod](images/createdefinition_highlight.png)
 
-1. Ardından, aşağıdakilerden birini yapın:
+1. Sonra, aşağıdakilerden birini yapın:
    * **Klavye**
-     * Tuşuna **Ctrl +.** Tetikleyici için **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **oluşturma bildirimi / tanımı** bağlam menüsünden.
+     * **CTRL +** tuşlarına basın. **hızlı eylemleri ve yeniden düzenlemeler** menüsünü tetiklemek ve bağlam menüsünden **bildirim/tanım oluştur** ' u seçin.
    * **Fare**
-     * Sağ tıklayıp **hızlı Eylemler ve yeniden düzenlemeler** menü ve select **oluşturma bildirimi / tanımı** bağlam menüsünden.
+     * Sağ tıklayın ve **Hızlı Eylemler ve yeniden düzenlemeler** menüsünü seçin ve bağlam menüsünden **bildirim/tanım oluştur** ' u seçin.
 
-1. İşlev bildirimi/tanımı açılan Önizleme pencerede görürsünüz kaynak veya üst bilgi dosyası oluşturulur.  Kaynak veya üst dosya yoksa, bu da oluşturulacak ve projede yerleştirilir.
+1. İşlevin bildirimi/tanımı, bir açılan önizleme penceresinde göreceğiniz kaynak veya üstbilgi dosyasında oluşturulacaktır.  Kaynak veya üstbilgi dosyası yoksa, bu da oluşturulup projeye yerleştirilir.
 
-   ![Oluşturma bildirimi / tanımı neden](images/createdefinition_result.png)
+   ![Bildirim/tanım sonucu oluştur](images/createdefinition_result.png)

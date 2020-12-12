@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDHtmlDialog sınıfı'
 title: CDHtmlDialog sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -116,12 +117,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 9cc01c94357d7aac7fa6fa98127628a60746e1e8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aa99d10b0d0ff6920f839d7588d80f489b971384
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842890"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185290"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 
@@ -402,7 +403,7 @@ void DDX_DHtml_CheckBox(
 *szID*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*deeri*<br/>
+*değer*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="example"></a>Örnek
@@ -468,7 +469,7 @@ HTML denetiminin ID parametresi için belirttiğiniz değer.
 *Dı*<br/>
 Veri alışverişi yapmak istediğiniz HTML öğesinin dağıtım KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 Takas edilmekte olan değer.
 
 ## <a name="cdhtmldialogddx_dhtml_radio"></a><a name="ddx_dhtml_radio"></a> CDHtmlDialog::D DX_DHtml_Radio
@@ -490,7 +491,7 @@ void DDX_DHtml_Radio(
 *szID*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*deeri*<br/>
+*değer*<br/>
 Takas edilmekte olan değer.
 
 ## <a name="cdhtmldialogddx_dhtml_selectindex"></a><a name="ddx_dhtml_selectindex"></a> CDHtmlDialog::D DX_DHtml_SelectIndex
@@ -512,7 +513,7 @@ void DDX_DHtml_SelectIndex(
 *szID*<br/>
 HTML denetiminin parametresi için belirttiğiniz değer `id` .
 
-*deeri*<br/>
+*değer*<br/>
 Takas edilmekte olan değer.
 
 ## <a name="cdhtmldialogddx_dhtml_selectstring"></a><a name="ddx_dhtml_selectstring"></a> CDHtmlDialog::D DX_DHtml_SelectString
@@ -534,7 +535,7 @@ void DDX_DHtml_SelectString(
 *szID*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*deeri*<br/>
+*değer*<br/>
 Takas edilmekte olan değer.
 
 ## <a name="cdhtmldialogddx_dhtml_selectvalue"></a><a name="ddx_dhtml_selectvalue"></a> CDHtmlDialog::D DX_DHtml_SelectValue
@@ -556,7 +557,7 @@ void DDX_DHtml_SelectValue(
 *szID*<br/>
 HTML denetiminin ID parametresi için belirttiğiniz değer.
 
-*deeri*<br/>
+*değer*<br/>
 Takas edilmekte olan değer.
 
 ### <a name="example"></a>Örnek
@@ -703,7 +704,7 @@ HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
 
 ### <a name="parameters"></a>Parametreler
 
-bir HTML belgesi işaretçisine yönelik bir işaretçi olan * \* \* pphtmldoc* .
+bir HTML belgesi işaretçisine yönelik bir işaretçi olan *\* \* pphtmldoc* .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -737,7 +738,7 @@ Bu üye işlevi, Windows SDK bölümünde açıklandığı gibi, CDHtmlDialog '�
 
 ## <a name="cdhtmldialoggetelement"></a><a name="getelement"></a> CDHtmlDialog:: GetElement
 
-*SzElementId*tarafından belirtilen HTML öğesinde bir arabirim döndürür.
+*SzElementId* tarafından belirtilen HTML öğesinde bir arabirim döndürür.
 
 ```
 HRESULT GetElement(
@@ -776,7 +777,7 @@ Sayfada aynı KIMLIĞE sahip birden fazla öğe varsa ikinci aşırı yükleme b
 
 ## <a name="cdhtmldialoggetelementhtml"></a><a name="getelementhtml"></a> CDHtmlDialog:: GetElementHtml
 
-`innerHTML` *SzElementId*tarafından tanımlanan html öğesinin özelliğini alır.
+`innerHTML` *SzElementId* tarafından tanımlanan html öğesinin özelliğini alır.
 
 ```
 BSTR GetElementHtml(LPCTSTR szElementId);
@@ -793,7 +794,7 @@ Bir HTML öğesinin KIMLIĞI.
 
 ## <a name="cdhtmldialoggetelementinterface"></a><a name="getelementinterface"></a> CDHtmlDialog:: Getelementınterface
 
-*SzElementId*tarafından tanımlanan html öğesinden istenen arabirim işaretçisini alır.
+*SzElementId* tarafından tanımlanan html öğesinden istenen arabirim işaretçisini alır.
 
 ```
 template <class Q> HRESULT GetElementInterface(
@@ -827,7 +828,7 @@ Standart bir HRESULT değeri.
 
 ## <a name="cdhtmldialoggetelementproperty"></a><a name="getelementproperty"></a> CDHtmlDialog:: GetElementProperty
 
-*SzElementId*tarafından tanımlanan html öğesinden *DISPID* tarafından tanımlanan özelliğin değerini alır.
+*SzElementId* tarafından tanımlanan html öğesinden *DISPID* tarafından tanımlanan özelliğin değerini alır.
 
 ```
 VARIANT GetElementProperty(
@@ -849,7 +850,7 @@ Bir özelliğin dağıtım KIMLIĞI.
 
 ## <a name="cdhtmldialoggetelementtext"></a><a name="getelementtext"></a> CDHtmlDialog:: GetElementText
 
-`innerText` *SzElementId*tarafından tanımlanan html öğesinin özelliğini alır.
+`innerText` *SzElementId* tarafından tanımlanan html öğesinin özelliğini alır.
 
 ```
 BSTR GetElementText(LPCTSTR szElementId);
@@ -1012,7 +1013,7 @@ BOOL m_bUseHtmlTitle;
 
 ### <a name="remarks"></a>Açıklamalar
 
-**E**_ **busehtmltitle** değeri true ise, iletişim kutusu başlığı html belgesinin başlığına eşit olarak ayarlanır; Aksi takdirde, iletişim kutusu kaynağındaki başlık kullanılır.
+**E** _ **busehtmltitle** değeri true ise, iletişim kutusu başlığı html belgesinin başlığına eşit olarak ayarlanır; Aksi takdirde, iletişim kutusu kaynağındaki başlık kullanılır.
 
 ## <a name="cdhtmldialogm_nhtmlresid"></a><a name="m_nhtmlresid"></a> CDHtmlDialog:: m_nHtmlResID
 
@@ -1064,7 +1065,7 @@ LPTSTR m_szHtmlResID;
 
 ## <a name="cdhtmldialognavigate"></a><a name="navigate"></a> CDHtmlDialog:: gezinmek
 
-*LpszURL*tarafından belirtilen URL tarafından tanımlanan kaynağa gider.
+*LpszURL* tarafından belirtilen URL tarafından tanımlanan kaynağa gider.
 
 ```cpp
 void Navigate(

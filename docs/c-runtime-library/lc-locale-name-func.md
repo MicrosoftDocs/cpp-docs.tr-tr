@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ___lc_locale_name_func'
 title: ___lc_locale_name_func
 ms.date: 4/2/2020
 api_name:
@@ -22,18 +23,18 @@ f1_keywords:
 helpviewer_keywords:
 - ___lc_locale_name_func
 ms.assetid: ef858308-872e-43de-95e0-9b1b4084343e
-ms.openlocfilehash: c48041c6c01e22c7771c0b5449de2cc8df1a2df0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3431318608516fda908cd3c8ab9562c5044d20ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912980"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246558"
 ---
 # <a name="___lc_locale_name_func"></a>___lc_locale_name_func
 
 İç CRT işlevi. İş parçacığının geçerli yerel ayar adını alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 wchar_t** ___lc_locale_name_func(void);
@@ -45,7 +46,7 @@ wchar_t** ___lc_locale_name_func(void);
 
 ## <a name="remarks"></a>Açıklamalar
 
-`___lc_locale_name_func`, CRT verileri için iş parçacığı yerel depolama alanından geçerli yerel ayar adını almak için diğer CRT işlevleri tarafından kullanılan bir iç CRT işlevidir. Bu bilgiler [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi veya [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevleri kullanılarak da kullanılabilir.
+`___lc_locale_name_func` , CRT verileri için iş parçacığı yerel depolama alanından geçerli yerel ayar adını almak için diğer CRT işlevleri tarafından kullanılan bir iç CRT işlevidir. Bu bilgiler [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) işlevi veya [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevleri kullanılarak da kullanılabilir.
 
 İç CRT işlevleri uygulamaya özgüdür ve her sürümde değiştirilebilir. Kodunuzda kullanımını önermiyoruz.
 
