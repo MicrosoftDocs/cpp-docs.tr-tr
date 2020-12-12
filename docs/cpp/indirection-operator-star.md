@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yöneltme Işleci: *'
 title: 'Yönlendirme İşleci: *'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - operators [C++], indirection
 - indirection operator [C++], syntax
 ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
-ms.openlocfilehash: 8f27cfd943455d52b04c41ef2d2d83e6e03a84c0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d82e65676178fcfc9a62b10a780360c0c69d0d2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178292"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113915"
 ---
 # <a name="indirection-operator-"></a>Yönlendirme İşleci: *
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 * cast-expression
@@ -24,7 +25,7 @@ ms.locfileid: "80178292"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Birli yöneltme işleci (<strong>\*</strong>) bir işaretçiye başvurur; Yani, bir işaretçi değerini bir l değerine dönüştürür. Yöneltme işlecinin işleneni, bir tür işaretçisi olmalıdır. Yöneltme ifadesinin sonucu, işaretçi türünün türetildiği türüdür. <strong>\*</strong> işlecinin bu bağlamda kullanımı, çarpının, çarpma olan bir ikili işleç olarak farklıdır.
+Birli yöneltme işleci ( <strong>\*</strong> ) bir işaretçiye başvurur; diğer bir deyişle, bir işaretçi değerini bir l değerine dönüştürür. Yöneltme işlecinin işleneni, bir tür işaretçisi olmalıdır. Yöneltme ifadesinin sonucu, işaretçi türünün türetildiği türüdür. <strong>\*</strong>Bu bağlamda işlecinin kullanımı, çarpının, çarpma olan bir ikili işleç olarak farklıdır.
 
 İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir depolama konumuna işaret ediyorsa, sonuç depolama konumunu gösteren l değeridir.
 
@@ -65,4 +66,4 @@ int main() {
 [Birli İşleçli İfadeler](../cpp/expressions-with-unary-operators.md)<br/>
 [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [Address-of İşleci: &](../cpp/address-of-operator-amp.md)<br/>
-[İşleçlerin Yöneltmesi ve Adresi](../c-language/indirection-and-address-of-operators.md)
+[Yöneltme ve adres Işleçleri](../c-language/indirection-and-address-of-operators.md)

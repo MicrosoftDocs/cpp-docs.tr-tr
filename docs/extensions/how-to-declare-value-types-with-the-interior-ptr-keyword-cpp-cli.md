@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: interior_ptr anahtar sözcüğü ile değer türleri bildirme (C++/CLı)'
 title: 'Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - _ptr keyword
 - value types, declaring
 ms.assetid: 49eea66e-eeba-49bd-95b0-ba297be436e3
-ms.openlocfilehash: b5d17f3621271faa03e30e24f259d8d7cebbb491
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: b8d5c554f212a9536b0ad063d67e044c08194015
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414496"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119180"
 ---
 # <a name="how-to-declare-value-types-with-the-interior_ptr-keyword-ccli"></a>Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)
 
@@ -22,7 +23,7 @@ Bir **interior_ptr** , bir değer türü ile kullanılabilir.
 
 ## <a name="example-interior_ptr-with-value-type"></a>Örnek: değer türü ile interior_ptr
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Aşağıdaki C++/CLı örneği, bir **interior_ptr** değer türüyle nasıl kullanacağınızı gösterir.
 
@@ -67,7 +68,7 @@ int main() {
 
 ## <a name="example-this-pointer"></a>Örnek: Bu işaretçi
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Değer türünde, **`this`** işaretçi bir interior_ptr değerlendirir.
 
@@ -89,7 +90,7 @@ value struct V {
 
 ## <a name="example-address-of-operator"></a>Örnek: Address-of işleci
 
-### <a name="description"></a>Description
+### <a name="description"></a>Açıklama
 
 Aşağıdaki örnek, statik üyelerle adres işlecinin nasıl kullanılacağını göstermektedir.
 

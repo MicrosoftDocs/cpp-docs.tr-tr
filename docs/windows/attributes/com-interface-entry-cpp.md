@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: com_interface_entry (C++)'
 title: com_interface_entry (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - com_interface_entry attribute
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-ms.openlocfilehash: 8339afb97df57f5080629dfed08823c5c091c5a3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2f182149eeac887292391cbb06f625aff261e91f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844125"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114891"
 ---
 # <a name="com_interface_entry-c"></a>com_interface_entry (C++)
 
 Hedef sınıfın COM eşlemesine bir arabirim girişi ekler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ com_interface_entry(
@@ -108,7 +109,7 @@ END_COM_MAP()
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
-|**Tekrarlanabilir**|Yes|
+|**Yinelenebilir**|Evet|
 |**Gerekli öznitelikler**|Aşağıdakilerden biri veya daha fazlası: `coclass` , `progid` , veya `vi_progid` .|
 |**Geçersiz öznitelikler**|Yok|
 

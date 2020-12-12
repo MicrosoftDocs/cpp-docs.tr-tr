@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel üye işlevleri'
 title: Özel üye işlevleri
 ms.date: 12/06/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - move operators [C++]
 - assignment operators [C++]
 ms.assetid: 017d6817-b012-44f0-b153-f3076c251ea7
-ms.openlocfilehash: b15a0e50774bbc4e70912a31f9a57ea0439f2c12
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ab3b5be3c7006729e135cc273e9b7856adbd3252
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178697"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113837"
 ---
 # <a name="special-member-functions"></a>Özel üye işlevleri
 
@@ -24,7 +25,7 @@ Varsayılan bir özel üye işlevini açık bir şekilde **= Default** anahtar s
 
 Bazı durumlarda, derleyici, tanımlanmamış ve bu nedenle çağrılabilir olmayan *Silinmiş* özel üye işlevleri oluşturabilir. Bu, sınıf üzerinde belirli bir özel üye işlevine yapılan çağrının anlamlı olmadığı ve sınıfın diğer özellikleri verildiği durumlarda meydana gelebilir. Özel bir üye işlevinin otomatik olarak oluşturulmasını açıkça engellemek için, **= Delete** anahtar sözcüğünü kullanarak silinmiş olarak bildirebilirsiniz.
 
-Derleyici, yalnızca başka bir Oluşturucu bildirmediği zaman bağımsız değişken alan bir Oluşturucu olan *varsayılan bir Oluşturucu*oluşturur. Yalnızca parametre alan bir Oluşturucu bildirdiyseniz, varsayılan bir Oluşturucu çağırmayı deneyen kod derleyicinin bir hata mesajı üretmesine neden olur. Derleyicinin ürettiği varsayılan Oluşturucu, nesnesinin basit üye temelli [varsayılan başlatmasını](initializers.md#default_initialization) gerçekleştirir. Varsayılan başlatma, tüm üye değişkenlerini belirsiz bir durumda bırakır.
+Derleyici, yalnızca başka bir Oluşturucu bildirmediği zaman bağımsız değişken alan bir Oluşturucu olan *varsayılan bir Oluşturucu* oluşturur. Yalnızca parametre alan bir Oluşturucu bildirdiyseniz, varsayılan bir Oluşturucu çağırmayı deneyen kod derleyicinin bir hata mesajı üretmesine neden olur. Derleyicinin ürettiği varsayılan Oluşturucu, nesnesinin basit üye temelli [varsayılan başlatmasını](initializers.md#default_initialization) gerçekleştirir. Varsayılan başlatma, tüm üye değişkenlerini belirsiz bir durumda bırakır.
 
 Varsayılan yıkıcı nesnenin üye Wise yok edilmesini gerçekleştirir. Yalnızca bir taban sınıf yıkıcısı sanal ise sanal olur.
 
@@ -32,4 +33,4 @@ Varsayılan kopyalama ve taşıma oluşturma ve atama işlemleri, üye temelli b
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Dil Başvurusu](cpp-language-reference.md)
+[C++ dil başvurusu](cpp-language-reference.md)

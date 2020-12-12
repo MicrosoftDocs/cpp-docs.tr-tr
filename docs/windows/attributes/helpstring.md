@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: HelpString'
 title: HelpString (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - helpstring attribute [C++]
 ms.assetid: 0401e905-a63e-4fad-98d0-d1efea111966
-ms.openlocfilehash: 57f7a5bfd5bd0e7a6509797ec34e88531304ec92
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3b3aa2470080f33fd4a9dea4f063e908c0431d5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831040"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148817"
 ---
 # <a name="helpstring"></a>helpstring
 
 Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ helpstring("string") ]
@@ -25,7 +26,7 @@ Uygulandığı öğeyi anlatmak için kullanılan bir karakter dizesini belirtir
 
 ### <a name="parameters"></a>Parametreler
 
-*dizisinde*<br/>
+*string*<br/>
 Yardım dizesinin metni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -41,7 +42,7 @@ Yardım dizesinin metni.
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**arabirim**, **`typedef`** , **`class`** , yöntem, Özellik|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

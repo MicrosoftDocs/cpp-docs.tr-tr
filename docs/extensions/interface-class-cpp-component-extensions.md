@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Interface sınıfı (C++/CLı ve C++/CX)'
 title: interface class (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - interface class keyword
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
-ms.openlocfilehash: 8a637332110fa18a7a5803d7512c643e29d66eab
-ms.sourcegitcommit: 68ae6f9ea17f32734b32bb06ffeec12d8d33f0fe
+ms.openlocfilehash: 8d6fd1eda0ddaaf6ab995e09ad1d84f78fcc91be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87807751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119036"
 ---
 # <a name="interface-class--ccli-and-ccx"></a>interface class (C++/CLI ve C++/CX)
 
@@ -21,7 +22,7 @@ Bir arabirim bildirir.  Yerel arabirimler hakkında daha fazla bilgi için bkz. 
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 interface_access interface class name : inherit_access base_interface {};
@@ -37,14 +38,14 @@ Derlemenin dışında bir arabirimin erişilebilirliği.  Olası değerler şunl
 Arabirimin adı.
 
 *inherit_access*<br/>
-*Base_interface*erişilebilirliği.  Temel arabirim için izin verilen tek erişilebilirlik, **`public`** (varsayılan) olur.
+*Base_interface* erişilebilirliği.  Temel arabirim için izin verilen tek erişilebilirlik, **`public`** (varsayılan) olur.
 
 *base_interface*<br/>
-Seçim Arabirim *adı*için temel arabirim.
+Seçim Arabirim *adı* için temel arabirim.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Interface struct** , **Interface sınıfına**eşdeğerdir.
+**Interface struct** , **Interface sınıfına** eşdeğerdir.
 
 Arabirim, işlevler, olaylar ve özellikler için bildirimler içerebilir.  Tüm arabirim üyelerinin genel erişilebilirliği vardır. Arabirim ayrıca statik veri üyeleri, işlevler, olaylar ve özellikler içerebilir ve bu statik üyelerin arabirimde tanımlanması gerekir.
 
@@ -52,7 +53,7 @@ Arabirim, bir sınıfın nasıl uygulanabileceğini tanımlar. Arabirim bir sın
 
 Bir arabirimden türetilen bir sınıf veya yapının, arabirimin tüm üyelerini uygulaması gerekir. Arabirim *adı* uygularken, ayrıca listedeki arabirimleri de uygulamalısınız `base_interface` .
 
-Daha fazla bilgi için bkz.
+Daha fazla bilgi için bkz:
 
 - [Arabirim statik Oluşturucusu](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)
 
@@ -72,7 +73,7 @@ Geliştirme ortamında, anahtar sözcüğü vurgulayarak ( **`interface class`**
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -82,7 +83,7 @@ Derleyici seçeneği:`/ZW`
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

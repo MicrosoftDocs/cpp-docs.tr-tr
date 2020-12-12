@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __identifier (C++/CLı)'
 title: __tanımlayıcı (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - __identifier keyword [C++]
 ms.assetid: 348428af-afa7-4ff3-b571-acf874301cf2
-ms.openlocfilehash: 5f95e9fc55acd33705b855c7c4f0ef268d4776a0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 663d05ef482a97b4ac33664ab62f1556e62763a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219696"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119102"
 ---
 # <a name="__identifier-ccli"></a>__tanımlayıcı (C++/CLI)
 
@@ -21,7 +22,7 @@ C++ anahtar sözcüklerinin tanımlayıcı olarak kullanılmasına izin vermez.
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 __identifier(C++_keyword)
@@ -35,7 +36,7 @@ Anahtar sözcük olmayan tanımlayıcılara izin verilen **__identifier** anahta
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ### <a name="examples"></a>Örnekler
 
@@ -69,7 +70,7 @@ int main() {
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

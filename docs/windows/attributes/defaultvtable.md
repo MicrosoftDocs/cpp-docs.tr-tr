@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: defaultvtable'
 title: defaultvtable (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - defaultvtable attribute
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
-ms.openlocfilehash: 6b1d6960a065bf2df46852d3df1ca53d4239f1bc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9cabb2e3487788b56a37e7380ef9a9e08cf2bc67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839497"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122154"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 
 Bir COM nesnesi için varsayılan vtable arabirimi olarak bir arabirimi tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ defaultvtable(interface) ]
@@ -67,7 +68,7 @@ class CMyC3 : public IMyI3 {};
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass**|
 |**Geçersiz öznitelikler**|Yok|
 

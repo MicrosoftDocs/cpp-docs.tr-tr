@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: görüntü listesinden görüntü sürükleme'
 title: Görüntü Listesinden Görüntü Sürükleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - image lists [MFC], dragging images from
 - images [MFC], dragging from image lists
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
-ms.openlocfilehash: 5d15b0b66d2270174dbfbcfd21bb77f5f41558c7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4d81be73484d32d9b26e5aa4ae48b7e550306493
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626480"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118855"
 ---
 # <a name="dragging-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Sürükleme
 
@@ -22,7 +23,7 @@ ms.locfileid: "84626480"
 
 [DragEnter](reference/cimagelist-class.md#dragenter) üye işlevi, sürükle resminin bir pencere içindeki ilk konumunu ayarlar ve görüntüyü konuma çizer. Parametreler, görüntünün çizildiği pencerenin bir işaretçisini ve penceredeki ilk konumun koordinatlarını belirten bir noktayı içerir. Koordinatlar, pencerenin sol üst köşesine göre değil, istemci alanına göre değil. Aynı değer, koordinatları parametre olarak alan tüm resim sürükleme işlevleri için de geçerlidir. Bu, koordinatları belirtirken kenarlık, başlık çubuğu ve menü çubuğu gibi pencere öğelerinin genişlikleri için telafi etmeniz gereken anlamına gelir. Çağrılırken **boş** bir pencere tutamacı belirtirseniz `DragEnter` , sürükleme işlevleri görüntüyü masaüstü penceresiyle ilişkili cihaz bağlamına çizer ve koordinatlar ekranın sol üst köşesine göre yapılır.
 
-`DragEnter`sürükleme işlemi sırasında, diğer tüm güncelleştirmeleri verilen pencereye kilitler. Sürükleme işlemi sırasında bir sürükle ve bırak işleminin hedefini vurgulama gibi herhangi bir çizim yapmanız gerekiyorsa, [DragLeave](reference/cimagelist-class.md#dragleave) üye işlevini kullanarak sürüklenen görüntüyü geçici olarak gizleyebilirsiniz. Ayrıca, [DragShowNoLock](reference/cimagelist-class.md#dragshownolock) üye işlevini de kullanabilirsiniz.
+`DragEnter` sürükleme işlemi sırasında, diğer tüm güncelleştirmeleri verilen pencereye kilitler. Sürükleme işlemi sırasında bir sürükle ve bırak işleminin hedefini vurgulama gibi herhangi bir çizim yapmanız gerekiyorsa, [DragLeave](reference/cimagelist-class.md#dragleave) üye işlevini kullanarak sürüklenen görüntüyü geçici olarak gizleyebilirsiniz. Ayrıca, [DragShowNoLock](reference/cimagelist-class.md#dragshownolock) üye işlevini de kullanabilirsiniz.
 
 Görüntüyü sürüklemeyi tamamladığınızda [EndDrag](reference/cimagelist-class.md#enddrag) çağrısı yapın.
 

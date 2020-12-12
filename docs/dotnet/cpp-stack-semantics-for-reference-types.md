@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: başvuru türleri için C++ yığın semantiği'
 title: Referans Türleri için C++ Yığın Anlamları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - reference types, C++ stack semantics for
 ms.assetid: 319a1304-f4a4-4079-8b84-01cec847d531
-ms.openlocfilehash: 886d0d16d8b81364078db5604ab10d8dcc3fa561
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a7f377225e70eff4093d4b9820a3d14644b96f58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87197845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124325"
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
 
@@ -113,4 +114,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıflar ve yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)
+[Sınıflar ve Yapılar](../extensions/classes-and-structs-cpp-component-extensions.md)

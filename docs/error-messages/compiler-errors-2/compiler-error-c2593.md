@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2593'
 title: Derleyici hatası C2593
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2593
 ms.assetid: 4a0fe9bb-2163-447d-91f6-1890ed8250f6
-ms.openlocfilehash: 2a385e35376ddce528678980705595bfb98aca95
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 849cd79b1d469d957cf1bde499ce66bd54a64074
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759353"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120171"
 ---
 # <a name="compiler-error-c2593"></a>Derleyici hatası C2593
 
@@ -39,9 +40,9 @@ int main() {
 }
 ```
 
-Bu hata, bir `CArchive` nesnesi kullanılarak bir kayan nokta değişkeninin serileştirilmesinin nedeni olabilir. Derleyici `<<` işlecini belirsiz olarak tanımlar. `CArchive` seri hale C++ getirilecek basit türler `BYTE`, `WORD`, `DWORD`ve `LONG`sabit boyutlu türlerdir. Tüm tamsayı türlerinin serileştirme için bu türlerden birine dönüştürülmesi gerekir. Kayan nokta türleri `CArchive::Write()` üye işlevi kullanılarak arşivlenmelidir.
+Bu hata, bir nesne kullanılarak kayan nokta değişkeni serileştirilmesinin nedeni olabilir `CArchive` . Derleyici `<<` işleci belirsiz olarak tanımlar. Seri hale getirebilen basit C++ türleri,,, `CArchive` ve sabit boyutlu türlerdir `BYTE` `WORD` `DWORD` `LONG` . Tüm tamsayı türlerinin serileştirme için bu türlerden birine dönüştürülmesi gerekir. Kayan nokta türleri, üye işlevi kullanılarak arşivlenmelidir `CArchive::Write()` .
 
-Aşağıdaki örnek, `ar`arşivlemek için bir kayan nokta değişkeninin (`f`) nasıl arşivleneceği gösterilmektedir:
+Aşağıdaki örnek, bir kayan nokta değişkeninin () arşivlemek için nasıl arşivleneceği gösterilmektedir `f` `ar` :
 
 ```
 ar.Write(&f, sizeof( float ));

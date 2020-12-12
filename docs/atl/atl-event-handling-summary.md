@@ -1,51 +1,52 @@
 ---
-title: ATL olay işleme özeti
+description: 'Daha fazla bilgi edinin: ATL olay Işleme Özeti'
+title: ATL olay Işleme Özeti
 ms.date: 11/04/2016
 helpviewer_keywords:
 - event handling, implementing
 ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
-ms.openlocfilehash: 0e3a47719e3160170ed1bfa64b315415ddc7a1c8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c041de6cbd0e0852d5ce0e51d892c21c7d9a23d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148661"
 ---
-# <a name="atl-event-handling-summary"></a>ATL olay işleme özeti
+# <a name="atl-event-handling-summary"></a>ATL olay Işleme Özeti
 
-Genel olarak, COM olayları işleme göreceli olarak basit bir işlemdir. Üç ana adım vardır:
+Genel olarak, COM olaylarını işlemek görece basit bir işlemdir. Üç ana adım vardır:
 
 - Nesneniz üzerinde olay arabirimini uygulayın.
 
-- Olay kaynağı, nesnenizin olayları almak istediğini önerin.
+- Olay kaynağını, nesnenizin olayları almak istediğini tavsiye edin.
 
-- Olay kaynağı, nesnenizin artık olayları almaya gerektiğinde eşlemesindeki.
+- Nesnenizin artık olayları alması gerekmiyorsa olay kaynağını geri alın.
 
 ## <a name="implementing-the-interface"></a>Arabirimi uygulama
 
-ATL kullanarak arabirimi uygulama dört ana yolu vardır.
+ATL kullanarak arabirim uygulama kullanmanın dört ana yolu vardır.
 
-|Öğesinden türetilen|Arabirim türü için uygun|Tüm yöntemleri * uygulamak gerektirir|Çalışma zamanında bir tür kitaplığı gerektirir|
+|Türet|Arabirim türü için uygun|Tüm yöntemleri uygulamanız gerekir *|Çalışma zamanında bir tür kitaplığı gerektirir|
 |-----------------|---------------------------------|---------------------------------------------|-----------------------------------------|
-|Arabirimi|Vtable|Evet|Hayır|
-|[Idispatchımpl](../atl/reference/idispatchimpl-class.md)|Çift|Evet|Evet|
+|Arabirim|Vtable|Evet|Hayır|
+|[IDispatchImpl](../atl/reference/idispatchimpl-class.md)|İkili|Evet|Evet|
 |[IDispEventImpl](../atl/reference/idispeventimpl-class.md)|Dispinterface|Hayır|Evet|
 |[IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md)|Dispinterface|Hayır|Hayır|
 
-\* ATL desteği sınıfları kullanırken, hiçbir zaman uygulamak için gerekli `IUnknown` veya `IDispatch` yöntemleri el ile.
+\* ATL destek sınıfları kullanılırken, `IUnknown` veya `IDispatch` yöntemlerini el ile uygulamanız gerekmez.
 
-## <a name="advising-and-unadvising-the-event-source"></a>Bildiren ve olay kaynağı Unadvising
+## <a name="advising-and-unadvising-the-event-source"></a>Olay kaynağını danışmanlama ve geri Temizleme
 
-Bildiren ve ATL kullanarak bir olay kaynağı unadvising başlıca üç yolu vardır.
+ATL kullanarak bir olay kaynağını sağlamanın ve geri almanın üç ana yolu vardır.
 
-|Öneri işlevi|Eşlemesindeki işlevi|İle kullanmak için en uygun|Bir tanımlama bilgisi izlemek gerektirir|Açıklamalar|
+|Advise işlevi|Unadvise işlevi|İle kullanım için en uygun|Bir tanımlama bilgisinin izlenmesini gerektirir|Yorumlar|
 |---------------------|-----------------------|--------------------------------|---------------------------------------------|--------------|
-|[AtlAdvise](reference/connection-point-global-functions.md#atladvise), [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise)|[AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise)|Vtable veya ikili arabirimler|Evet|`AtlAdvise` Genel bir ATL işlevdir. `CComPtrBase::Advise` tarafından kullanılan [CComPtr](../atl/reference/ccomptr-class.md) ve [CComQIPtr](../atl/reference/ccomqiptr-class.md).|
-|[IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise)|[IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise)|[Idispeventımpl](../atl/reference/idispeventimpl-class.md) veya [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md)|Hayır|Daha az parametre `AtlAdvise` olduğundan daha fazla işi temel sınıf yapar.|
-|[CComCompositeControl::AdviseSinkMap(TRUE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|[CComCompositeControl::AdviseSinkMap(FALSE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|Bileşik denetimler ActiveX denetimlerinde|Hayır|`CComCompositeControl::AdviseSinkMap` tüm girişleri olay eşlemesi havuz önerir. Aynı işlevin girişleri unadvises. Bu yöntem tarafından otomatik olarak çağrılır `CComCompositeControl` sınıfı.|
-|[CAxDialogImpl::AdviseSinkMap(TRUE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|[CAxDialogImpl::AdviseSinkMap(FALSE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|Bir iletişim kutusuna ActiveX denetimleri|Hayır|`CAxDialogImpl::AdviseSinkMap` öneren ve iletişim kutusu kaynağı tüm ActiveX denetimlerinde unadvises. Bu otomatik olarak sizin yerinize gerçekleştirilir.|
+|[AtlAdvise](reference/connection-point-global-functions.md#atladvise), [CComPtrBase:: Advise](../atl/reference/ccomptrbase-class.md#advise)|[AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise)|Vtable veya çift arabirimler|Evet|`AtlAdvise` , genel bir ATL işlevidir. `CComPtrBase::Advise` , [CComPtr](../atl/reference/ccomptr-class.md) ve [CComQIPtr](../atl/reference/ccomqiptr-class.md)tarafından kullanılır.|
+|[IDispEventSimpleImpl::D ıspeventadmenlik](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise)|[IDispEventSimpleImpl::D ispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise)|[IDispEventImpl](../atl/reference/idispeventimpl-class.md) veya [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md)|Hayır|`AtlAdvise`Temel sınıfın daha fazla iş yaptığından daha az parametre.|
+|[CComCompositeControl:: Advisesınkmap (TRUE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|[CComCompositeControl:: Advisesınkmap (FALSE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|Bileşik denetimlerde ActiveX denetimleri|Hayır|`CComCompositeControl::AdviseSinkMap` olay havuzu haritadaki tüm girdileri önerir. Aynı işlev, girişlerin bir öneren olduğunu kaldırır. Bu yöntem, sınıfı tarafından otomatik olarak çağrılır `CComCompositeControl` .|
+|[CAxDialogImpl:: Advisesınkmap (TRUE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|[CAxDialogImpl:: Advisesınkmap (FALSE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|İletişim kutusunda ActiveX denetimleri|Hayır|`CAxDialogImpl::AdviseSinkMap` iletişim kaynağındaki tüm ActiveX denetimlerini önerir ve bu denetimlerin karşılangeri vermez. Bu sizin için otomatik olarak yapılır.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Olay İşleme](../atl/event-handling-and-atl.md)<br/>
-[IDispEventImpl Destekleme](../atl/supporting-idispeventimpl.md)
+[Olay Işleme](../atl/event-handling-and-atl.md)<br/>
+[IDispEventImpl desteği](../atl/supporting-idispeventimpl.md)

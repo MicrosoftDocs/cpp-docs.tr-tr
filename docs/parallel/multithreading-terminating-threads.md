@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: çoklu iş parçacığı: MFC 'de Iş parçacıklarını sonlandırma"
 title: "Çoklu iş parçacığı: MFC 'de Iş parçacıklarını sonlandırma"
 ms.date: 08/27/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - stopping threads
 - AfxEndThread method
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
-ms.openlocfilehash: 0625be0a628a6ae991acd2fa1f7118a4deabccda
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dc353bc0edf14d718ee11e140fca11e4c0545588
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149883"
 ---
 # <a name="multithreading-terminating-threads-in-mfc"></a>Çoklu iş parçacığı: MFC 'de Iş parçacıklarını sonlandırma
 
@@ -28,19 +29,19 @@ Bir iş parçacığının sonlandırılmasına iki normal durum neden olur: dene
 
 - [Bir Iş parçacığının çıkış kodunu alma](#_core_retrieving_the_exit_code_of_a_thread)
 
-## <a name="normal-thread-termination"></a><a name="_core_normal_thread_termination"></a>Normal Iş parçacığı sonlandırma
+## <a name="normal-thread-termination"></a><a name="_core_normal_thread_termination"></a> Normal Iş parçacığı sonlandırma
 
 Çalışan iş parçacığı için normal iş parçacığı sonlandırması basittir: denetim işlevinden çıkın ve sonlandırma nedenini belirten bir değer döndürün. [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) işlevini ya da bir **`return`** ifadesini kullanabilirsiniz. Genellikle 0 başarılı tamamlamayı belirtir, ancak bu kadar çok.
 
 Kullanıcı arabirimi iş parçacığı için, işlem yalnızca basittir: Kullanıcı arabirimi iş parçacığı içinden, Windows SDK [PostQuitMessage](/windows/win32/api/winuser/nf-winuser-postquitmessage) ' ı çağırın. Alan tek parametre, `PostQuitMessage` iş parçacığının çıkış kodudur. Çalışan iş parçacıkları için 0 genellikle başarılı tamamlamayı belirtir.
 
-## <a name="premature-thread-termination"></a><a name="_core_premature_thread_termination"></a>Erken Iş parçacığı sonlandırma
+## <a name="premature-thread-termination"></a><a name="_core_premature_thread_termination"></a> Erken Iş parçacığı sonlandırma
 
 Bir iş parçacığını erken sonlandırmak neredeyse basittir: iş parçacığı içinden [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) çağrısı yapın. İstenen çıkış kodunu tek parametre olarak geçirin. Bu işlem, iş parçacığının yürütülmesini bırakır, iş parçacığının yığınını kaldırır, iş parçacığına ekli olan tüm dll 'Leri ayırır ve iş parçacığı nesnesini bellekten siler.
 
-`AfxEndThread`Sonlandırılacak iş parçacığının içinden çağrılmalıdır. Bir iş parçacığını başka bir iş parçacığından sonlandırmak isterseniz, iki iş parçacığı arasında bir iletişim yöntemi ayarlamanız gerekir.
+`AfxEndThread` Sonlandırılacak iş parçacığının içinden çağrılmalıdır. Bir iş parçacığını başka bir iş parçacığından sonlandırmak isterseniz, iki iş parçacığı arasında bir iletişim yöntemi ayarlamanız gerekir.
 
-## <a name="retrieving-the-exit-code-of-a-thread"></a><a name="_core_retrieving_the_exit_code_of_a_thread"></a>Bir Iş parçacığının çıkış kodunu alma
+## <a name="retrieving-the-exit-code-of-a-thread"></a><a name="_core_retrieving_the_exit_code_of_a_thread"></a> Bir Iş parçacığının çıkış kodunu alma
 
 Çalışan ya da Kullanıcı arabirimi iş parçacığının çıkış kodunu almak için [GetExitCodeThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodethread) işlevini çağırın. Bu işlev hakkında daha fazla bilgi için Windows SDK bakın. Bu işlev iş parçacığına olan tanıtıcıyı ( `m_hThread` nesnelerin veri üyesinde depolanır `CWinThread` ) ve bir DWORD adresini alır.
 

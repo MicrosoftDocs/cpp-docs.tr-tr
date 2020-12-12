@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ımportlib'
 title: ımportlib (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - importlib attribute
 ms.assetid: f129e459-b8d3-4aca-a0bc-ee53e18b62ed
-ms.openlocfilehash: 004533282ca089a076df6b110d52701abc16f71d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f3000be3415ed944d621ebcd36442e33951efc84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842227"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114955"
 ---
 # <a name="importlib"></a>importlib
 
 Oluşturulan tür kitaplığı için kullanılabilir başka bir tür kitaplığına derlenmiş olan türleri oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ importlib("tlb_file") ];
@@ -34,7 +35,7 @@ Geçerli projenin tür kitaplığına içeri aktarılmasını istediğiniz. tlb 
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, **ımportlib**kullanımına ilişkin bir örnek gösterir:
+Aşağıdaki kod, **ımportlib** kullanımına ilişkin bir örnek gösterir:
 
 ```cpp
 // cpp_attr_ref_importlib.cpp
@@ -48,7 +49,7 @@ Aşağıdaki kod, **ımportlib**kullanımına ilişkin bir örnek gösterir:
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

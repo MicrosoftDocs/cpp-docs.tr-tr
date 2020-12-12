@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: tanımlayıcılar (C++)'
 title: Tanımlayıcılar (C++)
 ms.date: 05/07/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - white space, in C++ identifiers
 - identifiers [C++]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-ms.openlocfilehash: 2d16dd318cd42b6294ef60edf44a16ccaf47b99b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 24798675940761eb7a2b8cbdeb6d63592bb4d05a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114019"
 ---
 # <a name="identifiers-c"></a>Tanımlayıcılar (C++)
 
@@ -87,7 +88,7 @@ int main() {
 }
 ```
 
-Bir tanımlayıcıda izin verilen karakter aralığı, C++/CLı kodu derlenirken daha az kısıtlayıcıdır. /Clr kullanılarak derlenen koddaki tanımlayıcılar [standart ECMA-335: ortak dil altyapısı (CLI)](https://www.ecma-international.org/publications/standards/Ecma-335.htm)izlemelidir.
+Bir tanımlayıcıda izin verilen karakter aralığı, C++/CLı kodu derlenirken daha az kısıtlayıcıdır. /Clr kullanılarak derlenen koddaki tanımlayıcılar  [standart ECMA-335: ortak dil altyapısı (CLI)](https://www.ecma-international.org/publications/standards/Ecma-335.htm)izlemelidir.
 
 **SON Microsoft 'a özgü**
 

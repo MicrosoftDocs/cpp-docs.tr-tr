@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çarpma yapısı'
 title: multiplies Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - multiplies class
 - multiplies struct
 ms.assetid: ec85e8af-70ad-44ad-90f0-d961a5847864
-ms.openlocfilehash: 3bccaf2a5e6594652a1179b357cdbbee2d2436b3
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 552f36d2060ca9ad6141438a45a128e84b705630
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240578"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114994"
 ---
 # <a name="multiplies-struct"></a>multiplies Yapısı
 
-Çarpma işlemi gerçekleştirir. önceden tanımlanmış bir işlev nesnesi (ikili `operator*`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde çarpma işlemini (ikili) gerçekleştiren önceden tanımlanmış bir işlev nesnesi `operator*` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,17 +41,17 @@ struct multiplies<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Bir ikili destekleyen bir türü `operator*` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator*`Belirtilen veya çıkartılan türlerin işlenenlerini alan ikiliyi destekleyen bir tür.
 
-*Sol*\
-Çarpma işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+Çarpma işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Çarpma işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+Çarpma işleminin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left * Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator*`.
+Sonucu `Left * Right` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator*` .
 
 ## <a name="example"></a>Örnek
 

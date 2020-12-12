@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yığın sabitleri'
 title: Yığın Sabitleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,16 +24,16 @@ helpviewer_keywords:
 - _HEAPBADPTR constants
 - heap constants
 ms.assetid: 3f751bb9-2dc4-486f-b5f5-9061c96d3754
-ms.openlocfilehash: 44c7a280ebffd0073f1dfb3a0a3cbdbd2efee0fb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: da90be1855f9a4714bc2d441651ac721ede84c1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289604"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120701"
 ---
 # <a name="heap-constants"></a>Yığın Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <malloc.h>
@@ -40,20 +41,20 @@ ms.locfileid: "62289604"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sabitler yığının durumunu gösteren dönüş değeri verir.
+Bu sabitler, yığın durumunu gösteren dönüş değerini verir.
 
-|Sabit|Açıklama|
+|Sabit|Anlamı|
 |--------------|-------------|
 |`_HEAPBADBEGIN`|İlk üstbilgi bilgileri bulunamadı veya geçersiz.|
-|`_HEAPBADNODE`|Bozuk düğümü bulundu veya yığın zarar görmüş.|
-|`_HEAPBADPTR`|**_pentry** alanını **_heapınfo** yapısı geçerli bir işaretçiyi yığına içermiyor (`_heapwalk` yalnızca yordam).|
-|`_HEAPEMPTY`|Yığın başlatılmadı.|
-|`_HEAPEND`|Yığının sonuna başarıyla ulaşıldı (`_heapwalk` yalnızca yordam).|
-|`_HEAPOK`|Yığın tutarlıdır (`_heapset` ve `_heapchk` yordamlar yalnızca). Kadar hiç hata; **_Heapınfo** yapısı sonraki giriş hakkında bilgiler içerir (`_heapwalk` yalnızca yordam).|
+|`_HEAPBADNODE`|Hatalı düğüm bulundu veya yığın hasarlı.|
+|`_HEAPBADPTR`|**_HEAPINFO** yapısının **_pentry** alanı yığında geçerli işaretçi içermiyor ( `_heapwalk` yalnızca yordam).|
+|`_HEAPEMPTY`|Yığın başlatılmamış.|
+|`_HEAPEND`|Yığın sonuna başarıyla erişildi ( `_heapwalk` yalnızca yordam).|
+|`_HEAPOK`|Yığın tutarlı ( `_heapset` ve `_heapchk` yalnızca yordamlar). Şu ana kadar hata yok; **_HEAPINFO** yapısı sonraki giriş hakkında bilgiler içerir ( `_heapwalk` yalnızca yordam).|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
 [_heapset](../c-runtime-library/heapset.md)<br/>
 [_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi edinin: kaynak kodu organizasyonu (C++ şablonları)'
 title: Kaynak kodu organizasyonu (C++ şablonları)
 ms.date: 04/22/2019
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
-ms.openlocfilehash: ecd682056f27200ae31c27295c1aabaf72c74a18
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 72777c550cf36fd635432a8ce840af92f0a3f893
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113876"
 ---
 # <a name="source-code-organization-c-templates"></a>Kaynak kodu organizasyonu (C++ şablonları)
 
 Bir sınıf şablonu tanımlarken, kaynak kodu üye tanımlarının ihtiyaç duyduğunda derleyicinin görebilmesi için bu şekilde düzenlemeniz gerekir. *Ekleme modelini* veya *açık örnek oluşturma* modelini kullanma seçeneğiniz vardır. Ekleme modelinde, bir şablon kullanan her dosyaya üye tanımlarını dahil edersiniz. Bu yaklaşım en basit olanıdır ve şablonlarınızda somut türlerin kullanılabileceği koşullarda maksimum esneklik sağlar. Bunun olumsuz yanı, derleme sürelerini arttırabilirler. Bir proje ve/veya dahil edilen dosyaların kendisi büyükse etki önemli olabilir. Açık örnek oluşturma yaklaşımıyla, şablon belirli türler için somut sınıflar veya sınıf üyeleri başlatır.  Bu yaklaşım, derleme sürelerini hızlandırmaya devam edebilir, ancak kullanımı yalnızca şablon uygulayıcının etkin olduğu sınıflarla sınırlandırır. Genel olarak, derleme süreleri bir sorun haline gelmediği takdirde ekleme modelini kullanmanızı öneririz.
 
-## <a name="background"></a>Arka Plan
+## <a name="background"></a>Arka plan
 
 Şablonlar, derleyicinin bir şablon ya da üyesi için nesne kodu oluşturmadığını anlamda sıradan sınıflar gibi değildir. Şablon somut türlerle örneklenene kadar oluşturulacak bir şey yok. Derleyici gibi bir şablon örneği ile karşılaştığında `MyClass<int> mc;` ve bu imzaya sahip hiçbir sınıf henüz mevcut değilse, yeni bir sınıf oluşturur. Ayrıca, kullanılan herhangi bir üye işlevi için kod oluşturmaya çalışır. Bu tanımlar doğrudan veya dolaylı olarak, Derlenmekte olan. cpp dosyasında #included olmayan bir dosyada yer alıyorsa, derleyici bunları göremez.  Derleyicinin görünüm noktasından bu bir hata değildir, çünkü işlevler başka bir çeviri biriminde tanımlanabileceğinden, bu durumda bağlayıcı onları bulacaktır.  Bağlayıcı bu kodu bulamazsa, *çözümlenmemiş bir dış* hata oluşturur.
 

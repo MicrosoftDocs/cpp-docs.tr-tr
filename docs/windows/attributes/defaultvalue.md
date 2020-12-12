@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: DefaultValue'
 title: DefaultValue (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - defaultvalue attribute
 ms.assetid: efa5d050-b2cc-4d9e-9b8e-79954f218d3a
-ms.openlocfilehash: 53b6a50bd7156eb9d6873e5ef08f6d75508fa3e1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 907c736861d39064103af28917f35a97c0c7b1e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841694"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122167"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
 Türü belirtilmiş bir isteğe bağlı parametre için varsayılan değer belirtimine izin verir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ defaultvalue= value ]
@@ -25,7 +26,7 @@ Türü belirtilmiş bir isteğe bağlı parametre için varsayılan değer belir
 
 ### <a name="parameters"></a>Parametreler
 
-*deeri*<br/>
+*değer*<br/>
 Parametresi için varsayılan değer.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -59,7 +60,7 @@ __interface IFireTabCtrl : IDispatch {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Arabirim parametresi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 
@@ -73,4 +74,4 @@ Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#
 [retval](retval.md)<br/>
 ['ndaki](in-cpp.md)<br/>
 [pointer_default](pointer-default.md)<br/>
-[unique](unique-cpp.md)
+[eşi](unique-cpp.md)

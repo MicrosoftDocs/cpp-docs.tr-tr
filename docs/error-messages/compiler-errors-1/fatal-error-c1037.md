@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1037'
 title: Önemli hata C1037
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1037
 ms.assetid: 79103bca-ccfb-42e7-aef9-9b90c15b162f
-ms.openlocfilehash: 782ccec01faad34ba79553626db06cf87ba0740c
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 9947843fa99b6b545ffc4120d839d4bae5c2cee0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075033"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97123844"
 ---
 # <a name="fatal-error-c1037"></a>Önemli hata C1037
 

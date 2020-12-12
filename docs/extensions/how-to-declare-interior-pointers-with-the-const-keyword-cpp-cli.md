@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: const anahtar sözcüğü ile Iç Işaretçileri bildirme (C++/CLı)'
 title: 'Nasıl yapılır: const Anahtar Sözcüğü ile İç İşaretçileri Bildirme (C++/CLI)'
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - pointers, interior
 ms.assetid: 64e08b0e-9396-4046-ab51-8f6588f32330
-ms.openlocfilehash: c5768487c9b720b1a49e50de88022a2bdc02d482
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f977d0766126c073dc94273e44e27ac32f34d82b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119312"
 ---
 # <a name="how-to-declare-interior-pointers-with-the-const-keyword-ccli"></a>Nasıl yapılır: const Anahtar Sözcüğü ile İç İşaretçileri Bildirme (C++/CLI)
 

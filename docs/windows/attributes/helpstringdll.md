@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: helpstringdll'
 title: helpstringdll (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - helpstringdll attribute [C++]
 ms.assetid: 121271fa-f061-492b-b87f-bbfcf4b02e7b
-ms.openlocfilehash: 0c90a6a203189eff927819a3319fac6a8e9f6a55
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 13a64f7f98a9d63e6a176911caad1246ad64af75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842851"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148804"
 ---
 # <a name="helpstringdll"></a>helpstringdll
 
 Belge dizesi aramasını (Yerelleştirme) gerçekleştirmek için kullanılacak DLL 'in adını belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ helpstringdll("string") ]
@@ -25,7 +26,7 @@ Belge dizesi aramasını (Yerelleştirme) gerçekleştirmek için kullanılacak 
 
 ### <a name="parameters"></a>Parametreler
 
-*dizisinde*<br/>
+*string*<br/>
 Belge dizesi aramasını gerçekleştirmek için kullanılacak DLL.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -52,7 +53,7 @@ __interface IMyI
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **interface**, Interface yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

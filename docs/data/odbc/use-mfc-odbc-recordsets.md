@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ODBC kayıt kümelerini kullanma'
 title: MFC ODBC Kayıt Kümelerini Kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - recordsets, MFC ODBC
 - ODBC recordsets
 ms.assetid: ebde4180-e3de-474a-a5ab-6135e41763a7
-ms.openlocfilehash: 42316b5411637e16480abbde196dc15fc6c256c3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0da2de00c707e5f3d8ea74688f49853c6e916330
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212555"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124481"
 ---
 # <a name="use-mfc-odbc-recordsets"></a>MFC ODBC Kayıt Kümelerini Kullanma
 
@@ -78,4 +79,4 @@ Bu konularda, MFC aracılığıyla ODBC kayıt kümeleriyle nasıl çalışılac
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+[Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3461'
 title: Derleyici hatası C3461
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3461
 ms.assetid: bd66833a-545d-445a-bdfe-dee771a450a4
-ms.openlocfilehash: c5195e0a9bba1bc9e5962f3d3ae1795bb098be3d
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 6158e0d6d38290a1925beba89fe77cba8f01c87b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113500"
 ---
 # <a name="compiler-error-c3461"></a>Derleyici hatası C3461
 

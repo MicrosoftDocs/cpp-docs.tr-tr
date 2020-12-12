@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_trivially_copyable sınıfı'
 title: is_trivially_copyable sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_copyable
 ms.assetid: 89a53bf8-036c-4108-91e1-fe34adbde8b3
-ms.openlocfilehash: d3062ae311b63be76ba07185f4f8173afa4229cc
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0c3590f1549f064492b361ae2ddeff665e9365ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459758"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118478"
 ---
-# <a name="istriviallycopyable-class"></a>is_trivially_copyable sınıfı
+# <a name="is_trivially_copyable-class"></a>is_trivially_copyable sınıfı
 
 Türün bir üçlü kopyalanabilir türü olup olmadığını test eder.
 
@@ -26,7 +27,7 @@ struct is_trivially_copyable;
 
 ### <a name="parameters"></a>Parametreler
 
-*ŞI*\
+*Şı*\
 Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -35,7 +36,7 @@ Tür *T* bir örnek bir kopyalanabilir türü ise true, aksi takdirde false değ
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 

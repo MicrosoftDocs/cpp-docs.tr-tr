@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL Hizmetleri'
 title: ATL Hizmetleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,43 +8,43 @@ helpviewer_keywords:
 - services, ATL
 - ATL services
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
-ms.openlocfilehash: 052169154a62cbd07a82f08087fc2c2db8ae46c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1cb1f526434cefe57dc4675d592f836e04a6cdb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62251921"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148609"
 ---
 # <a name="atl-services"></a>ATL Hizmetleri
 
-Böylece bir hizmet olarak çalışır, ATL COM nesnesi oluşturmak için hizmet (EXE) ATL projesi Sihirbazı'nda sunucu seçeneklerini listeden seçmeniz yeterlidir. Sihirbaz, ardından türetilen bir sınıf oluşturacak `CAtlServiceModuleT` hizmeti uygulamak için.
+ATL COM nesneniz bir hizmette çalışacak şekilde oluşturmak için, ATL Proje Sihirbazı 'ndaki sunucu seçenekleri listesinden hizmet (EXE) seçeneğini belirlemeniz yeterlidir. Sihirbaz daha sonra hizmeti uygulamak için öğesinden türetilmiş bir sınıf oluşturur `CAtlServiceModuleT` .
 
-ATL COM nesnesi bir hizmet olarak yapılandırıldığında, yalnızca yerel sunucu olarak kayıtlı ve Denetim Masası'ndaki Hizmetler listesinde görünmez. Hizmet olarak yerel bir sunucuya olarak hizmeti hata ayıklaması daha kolay olmasıdır. Hizmet olarak yüklemek için komut isteminde aşağıdaki komutu çalıştırın:
+ATL COM nesnesi bir hizmet olarak yapılandırıldığında, yalnızca yerel bir sunucu olarak kaydedilir ve Denetim Masası 'ndaki Hizmetler listesinde görünmez. Bunun nedeni, hizmetin bir hizmet olarak bir yerel sunucu olarak hata ayıklamanın daha kolay olması olabilir. Hizmet olarak yüklemek için komut isteminde aşağıdaki komutu çalıştırın:
 
-`YourEXE``.exe /Service`
+`YourEXE` `.exe /Service`
 
-Kaldırmak için aşağıdaki komutu çalıştırın:
+Kaldırmak için aşağıdakileri çalıştırın:
 
-`YourEXE``.exe /UnregServer`
+`YourEXE` `.exe /UnregServer`
 
-Bu bölümdeki ilk dört konular ele yürütülmesi sırasında oluşan eylemleri `CAtlServiceModuleT` üye işlevleri. Bu konular işlevler genellikle çağrılır aynı sırada görünür. Bu konular Anlayışınızı geliştirmek için bir başvuru olarak ATL projesi Sihirbazı tarafından oluşturulan kaynak kodu kullanmak için bir fikirdir. Bu ilk dört konular şunlardır:
+Bu bölümdeki ilk dört konu, üye işlevlerinin yürütülmesi sırasında oluşan eylemleri tartışır `CAtlServiceModuleT` . Bu konular, işlevlerin genellikle çağrılmasıyla aynı sırada görüntülenir. Bu konuların anlaşılmasından yararlanarak, ATL Proje Sihirbazı tarafından oluşturulan kaynak kodu başvuru olarak kullanmak iyi bir fikirdir. Bu ilk dört konu şunlardır:
 
-- [CAtlServiceModuleT::Start işlevi](../atl/reference/catlservicemodulet-class.md#start)
+- [CAtlServiceModuleT:: Start Işlevi](../atl/reference/catlservicemodulet-class.md#start)
 
-- [CAtlServiceModuleT::ServiceMain işlevi](../atl/reference/catlservicemodulet-class.md#servicemain)
+- [CAtlServiceModuleT:: ServiceMain Işlevi](../atl/reference/catlservicemodulet-class.md#servicemain)
 
-- [CAtlServiceModuleT::Run işlevi](../atl/reference/catlservicemodulet-class.md#run)
+- [CAtlServiceModuleT:: Run Işlevi](../atl/reference/catlservicemodulet-class.md#run)
 
-- [CAtlServiceModuleT::Handler işlevi](../atl/reference/catlservicemodulet-class.md#handler)
+- [CAtlServiceModuleT:: Handler Işlevi](../atl/reference/catlservicemodulet-class.md#handler)
 
-Hizmet geliştirme ile ilgili kavramları son üç konular açıklanmaktadır:
+Son üç konuda bir hizmet geliştirmeyle ilgili kavramlar ele alınmaktadır:
 
-- [Kayıt defteri girdilerini](../atl/registry-entries.md) ATL Hizmetleri
+- ATL Hizmetleri için [kayıt defteri girişleri](../atl/registry-entries.md)
 
 - [DCOMCNFG](../atl/dcomcnfg.md)
 
-- [Hata ayıklama ipuçları](../atl/debugging-tips.md) ATL Hizmetleri
+- ATL Hizmetleri için [hata ayıklama ipuçları](../atl/debugging-tips.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)
+[Kavramlar](../atl/active-template-library-atl-concepts.md)

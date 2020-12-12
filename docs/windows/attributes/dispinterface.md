@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dispınterface'
 title: dispınterface (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - dispinterface attribute
 ms.assetid: 61c5a4a1-ae92-47e9-8ee4-f847be90172b
-ms.openlocfilehash: dd2a0883418ff79af53285d3cf51dba7601a363c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fe39e537ccbc350f3733653a710dfd0f0d817339
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845399"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122141"
 ---
 # <a name="dispinterface"></a>dispinterface
 
@@ -47,7 +48,7 @@ dispinterface helloPro
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**arayüz**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|`dual`, `object`, `oleautomation`, `local`, `ms_union`|
 
@@ -58,7 +59,7 @@ Daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#
 [IDL öznitelikleri](idl-attributes.md)<br/>
 [Kullanıma göre öznitelikler](attributes-by-usage.md)<br/>
 [uuid](uuid-cpp-attributes.md)<br/>
-[çift](dual.md)<br/>
-[özel](custom-cpp.md)<br/>
+[Çift](dual.md)<br/>
+[Özel](custom-cpp.md)<br/>
 [object](object-cpp.md)<br/>
 [__interface](../../cpp/interface.md)

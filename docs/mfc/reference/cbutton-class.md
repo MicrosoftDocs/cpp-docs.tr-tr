@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CButton sınıfı'
 title: CButton sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 7e2156c7fba6d5c621ab9e73b4739be45941fcc5
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: af7b9bec8298942bcb414e83be24257dd62652cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561992"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122583"
 ---
 # <a name="cbutton-class"></a>CButton sınıfı
 
@@ -153,7 +154,7 @@ Bir düğme denetimi tarafından kendi üst öğesine (genellikle [CDialog](../.
 
 Her ileti eşleme girişi aşağıdaki biçimi alır:
 
-**Üzerinde \_ ** _Bildirim_ **(** _kimlik_, _memberFxn_ **)**
+**Üzerinde \_** _Bildirim_ **(** _kimlik_, _memberFxn_ **)**
 
 Burada *kimlik* bildirimi gönderen denetimin alt pencere kimliğini belirtir ve *memberFxn* , bildirimi işlemek için yazdığınız ana üye işlevinin adıdır.
 
@@ -776,7 +777,7 @@ Bu yöntem, Windows SDK açıklanan [BCM_SETDROPDOWNSTATE](/windows/win32/Contro
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bölünmüş düğme denetimine programlı bir şekilde erişmek için kullanılan *m_splitButton*değişkenini tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
+Aşağıdaki kod örneği, bölünmüş düğme denetimine programlı bir şekilde erişmek için kullanılan *m_splitButton* değişkenini tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 
@@ -894,7 +895,7 @@ Bu yöntem, Windows SDK açıklanan [BCM_SETNOTE](/windows/win32/Controls/bcm-se
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, komut bağlantısı denetimine programlı olarak erişmek için kullanılan *m_cmdLink*değişkenini tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
+Aşağıdaki kod örneği, komut bağlantısı denetimine programlı olarak erişmek için kullanılan *m_cmdLink* değişkenini tanımlar. Bu değişken aşağıdaki örnekte kullanılır.
 
 [!code-cpp[NVC_MFC_CButton_s1#1](../../mfc/reference/codesnippet/cpp/cbutton-class_10.h)]
 

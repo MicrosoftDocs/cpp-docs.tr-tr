@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: com::p tr sınıfı'
 title: com::ptr Sınıfı
 ms.date: 01/16/2019
 ms.topic: reference
@@ -16,18 +17,18 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::ptr class
 ms.assetid: 0144d0e4-919c-45f9-a3f8-fbc9edba32bf
-ms.openlocfilehash: 9cb0ad23450d06bb314b0e2d6fa1d01784d633e2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 73016d425d06ecbda12702afc1793a4bab81ccc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124403"
 ---
 # <a name="comptr-class"></a>com::ptr Sınıfı
 
 Bir CLR sınıfının üyesi olarak kullanılabilecek COM nesnesi için sarmalayıcı.  Sarmalayıcı aynı zamanda COM nesnesinin yaşam süresi yönetimini de otomatikleştirir ve yok edicisi çağrıldığında nesnenin sahip olduğu tüm başvuruları serbest bırakır. [CComPtr sınıfına](../atl/reference/ccomptr-class.md)benzer.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template<class _interface_type>
@@ -198,7 +199,7 @@ int main() {
 
 **Ad alanı** msclr:: com
 
-## <a name="ptrptr"></a><a name="ptr"></a>PTR::p tr
+## <a name="ptrptr"></a><a name="ptr"></a> PTR::p tr
 
 Sahip olunan COM nesnesine bir işaretçi döndürür.
 
@@ -285,7 +286,7 @@ int main() {
 }
 ```
 
-## <a name="ptrptr"></a><a name="tilde-ptr"></a>PTR:: ~ PTR
+## <a name="ptrptr"></a><a name="tilde-ptr"></a> PTR:: ~ PTR
 
 Yapıları kaldırır `com::ptr` .
 
@@ -360,7 +361,7 @@ int main() {
 }
 ```
 
-## <a name="ptrattach"></a><a name="attach"></a>PTR:: Attach
+## <a name="ptrattach"></a><a name="attach"></a> PTR:: Attach
 
 Bir COM nesnesini bir öğesine ekler `com::ptr` .
 
@@ -461,7 +462,7 @@ int main() {
 }
 ```
 
-## <a name="ptrcreateinstance"></a><a name="createInstance"></a>PTR:: CreateInstance
+## <a name="ptrcreateinstance"></a><a name="createInstance"></a> PTR:: CreateInstance
 
 İçindeki bir COM nesnesinin örneğini oluşturur `com::ptr` .
 
@@ -516,7 +517,7 @@ Toplama nesnesinin IUnknown arabirimine yönelik işaretçi (IUnknown denetimi).
 Yeni oluşturulan nesneyi yöneten kodun çalışacağı bağlam. Değerler `CLSCTX` numaralandırmasından alınır. `cls_context`Belirtilmemişse, CLSCTX_ALL değeri kullanılır.
 
 *rclsıd*<br/>
-`CLSID`nesneyi oluşturmak için kullanılacak verilerle ve kodla ilişkili.
+`CLSID` nesneyi oluşturmak için kullanılacak verilerle ve kodla ilişkili.
 
 ### <a name="exceptions"></a>Özel durumlar
 
@@ -579,7 +580,7 @@ int main() {
 }
 ```
 
-## <a name="ptrdetach"></a><a name="detach"></a>PTR::D etach
+## <a name="ptrdetach"></a><a name="detach"></a> PTR::D etach
 
 COM nesnesinin sahipliğini verir ve nesneye bir işaretçi döndürür.
 
@@ -599,7 +600,7 @@ Dahili olarak, `QueryInterface` sahip olunan com nesnesinde çağrılır ve herh
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Detach`İlk olarak, çağıran adına COM nesnesine bir başvuru ekler ve sonra öğesine ait tüm başvuruları yayınlar `com::ptr` .  Çağıran, sonunda döndürülen nesneyi yok etmek için serbest bırakmalıdır.
+`Detach` İlk olarak, çağıran adına COM nesnesine bir başvuru ekler ve sonra öğesine ait tüm başvuruları yayınlar `com::ptr` .  Çağıran, sonunda döndürülen nesneyi yok etmek için serbest bırakmalıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -684,7 +685,7 @@ int main() {
 }
 ```
 
-## <a name="ptrgetinterface"></a><a name="getInterface"></a>PTR:: GetInterface
+## <a name="ptrgetinterface"></a><a name="getInterface"></a> PTR:: GetInterface
 
 Sahip olunan COM nesnesine bir işaretçi döndürür.
 
@@ -826,7 +827,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="ptrqueryinterface"></a><a name="queryInterface"></a>PTR:: QueryInterface
+## <a name="ptrqueryinterface"></a><a name="queryInterface"></a> PTR:: QueryInterface
 
 Bir arabirim için sahip olunan COM nesnesini sorgular ve sonucu başka bir öğesine ekler `com::ptr` .
 
@@ -957,7 +958,7 @@ int main() {
 <#document>persnickety</#document>
 ```
 
-## <a name="ptrrelease"></a><a name="release"></a>PTR:: Release
+## <a name="ptrrelease"></a><a name="release"></a> PTR:: Release
 
 COM nesnesinde sahip olunan tüm başvuruları yayınlar.
 
@@ -1045,7 +1046,7 @@ int main() {
 }
 ```
 
-## <a name="ptroperator-gt"></a><a name="operator-arrow"></a>PTR:: operator-&gt;
+## <a name="ptroperator-gt"></a><a name="operator-arrow"></a> PTR:: operator-&gt;
 
 Üye erişim işleci, sahip olunan COM nesnesinde yöntemleri çağırmak için kullanılır.
 
@@ -1187,7 +1188,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="ptroperator"></a><a name="operator-assign"></a>PTR:: operator =
+## <a name="ptroperator"></a><a name="operator-assign"></a> PTR:: operator =
 
 Bir COM nesnesini bir öğesine ekler `com::ptr` .
 
@@ -1292,7 +1293,7 @@ int main() {
 }
 ```
 
-## <a name="ptroperator-bool"></a><a name="operator-bool"></a>PTR:: operator bool
+## <a name="ptroperator-bool"></a><a name="operator-bool"></a> PTR:: operator bool
 
 `com::ptr`Bir koşullu ifadede kullanmak için işleci.
 
@@ -1363,7 +1364,7 @@ int main() {
 DOM Document created.
 ```
 
-## <a name="ptroperator"></a><a name="operator-logical-not"></a>PTR:: operator!
+## <a name="ptroperator"></a><a name="operator-logical-not"></a> PTR:: operator!
 
 Sahip olunan COM nesnesinin geçersiz olup olmadığını belirleme işleci.
 

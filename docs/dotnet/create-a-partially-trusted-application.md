@@ -1,5 +1,6 @@
 ---
-title: 'Nasıl Yapılır: Kısmen Güvenilen Bir Uygulama Oluşturma (C++/CLI)'
+description: "Daha fazla bilgi edinin: nasıl yapılır: CRT kitaplık DLL 'inin bağımlılığını kaldırarak kısmen güvenilir uygulama oluşturma"
+title: 'Nasıl yapılır: kısmen güvenilen bir uygulama oluşturma (C++/CLı)'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,33 +11,33 @@ helpviewer_keywords:
 - interop [C++], partially trusted applications
 - /clr compiler option [C++], partially trusted applications
 ms.assetid: 4760cd0c-4227-4f23-a7fb-d25b51bf246e
-ms.openlocfilehash: 9df3a751f4073472b9495425599aaf43878db99a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 937262595df4415d5620b60d9ccd8c17a6c44abf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364399"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124286"
 ---
 # <a name="how-to-create-a-partially-trusted-application-by-removing-dependency-on-the-crt-library-dll"></a>Nasıl yapılır: CRT Kitaplık DLL'inden Bağımlılık Kaldırarak Kısmen Güvenilir Uygulama Oluşturma
 
-Bu konu, msvcm90.dll bağımlılığını kaldırarak Visual C++ kullanarak kısmen güvenilen bir Ortak Dil Çalışma Zamanı uygulamasının nasıl oluşturulacağını tartışır.
+Bu konuda, msvcm90.dll bağımlılığı kaldırılarak Visual C++ kullanılarak kısmen güvenilir bir ortak dil çalışma zamanı uygulamasının nasıl oluşturulacağı açıklanmaktadır.
 
-**/clr** ile oluşturulmuş bir Visual C++ uygulaması, C-Runtime Kitaplığı'nın bir parçası olan msvcm90.dll'ye bağımlı olacaktır. Uygulamanızın kısmi bir güven ortamında kullanılmasını istediğinizde, CLR DLL'nizde belirli kod erişim güvenlik kurallarını uygular. Bu nedenle, msvcm90.dll yerel kod içerdiğinden ve kod erişim güvenlik ilkesi üzerinde uygulanamaz, çünkü bu bağımlılığı kaldırmak için gerekli olacaktır.
+**/Clr** ile derlenen bir Visual C++ uygulaması, C çalışma zamanı kitaplığının bir parçası olan msvcm90.dll bir bağımlılığa sahip olur. Uygulamanızın kısmi güven ortamında kullanılmasını istediğinizde, CLR, DLL 'niz üzerinde belirli kod erişimi güvenlik kurallarını uygular. Bu nedenle, msvcm90.dll yerel kod içerdiğinden ve kod erişimi güvenlik ilkesi üzerinde zorlanamadığından, bu bağımlılığı kaldırmak gerekir.
 
-Uygulamanız C-Runtime Kitaplığı'nın herhangi bir işlevini kullanmıyorsa ve bu kitapletmeye olan bağımlılığı kodunuzdan kaldırmak istiyorsanız, **/NODEFAULTLIB:msvcmrt.lib** bağlayıcı seçeneğini ve ptrustm.lib veya ptrustmd.lib bağlantılarını kullanmanız gerekir. Bu kitaplıklar, bir uygulamanın başlatılması ve başlatılması için nesne dosyaları, başlatma kodu tarafından kullanılan özel durum sınıfları ve yönetilen özel durum işleme kodu içerir. Bu kitaplıklardan birine bağlanmak msvcm90.dll üzerindeki tüm bağımlılıkları ortadan kaldırır.
+Uygulamanız C çalışma zamanı kitaplığı 'nın herhangi bir işlevselliğini kullanmıyorsa ve bu kitaplıktaki bağımlılığı kodunuzda kaldırmak istiyorsanız, **/nodefaultlib: msvcmrt. lib** bağlayıcı seçeneğini kullanmanız ve ptrustm. lib ya da ptrustmd. lib ile bağlantı oluşturmanız gerekir. Bu kitaplıklar, bir uygulamanın başlatılması ve başlatılmasına yönelik nesne dosyalarını, başlatma kodu tarafından kullanılan özel durum sınıflarını ve yönetilen özel durum işleme kodunu içerir. Bu kitaplıklarınızdan birinde bağlama, msvcm90.dll bağımlılığı kaldırır.
 
 > [!NOTE]
-> Derleme uninitialization sırası ptrust kitaplıkları kullanan uygulamalar için farklı olabilir. Normal uygulamalar için derlemeler genellikle yüklendikleri ters sırada boşaltılır, ancak bu garanti edilmez. Kısmi güven uygulamaları için derlemeler genellikle yüklendikleri sırada boşaltılır. Bu da garanti edilmez.
+> Derleme geri başlatmasının sırası, ptrust kitaplıklarını kullanan uygulamalar için farklılık gösterebilir. Normal uygulamalar için derlemeler genellikle yüklendikleri sırada kaldırılır, ancak bu garanti edilmez. Kısmi güven uygulamaları için, derlemeler genellikle yüklendikleri sırayla kaldırılır. Bu da garanti edilmez.
 
-### <a name="to-create-a-partially-trusted-mixed-clr-application"></a>Kısmen güvenilen karma (/clr) bir uygulama oluşturmak için
+### <a name="to-create-a-partially-trusted-mixed-clr-application"></a>Kısmen güvenilen bir karma (/CLR) uygulaması oluşturmak için
 
-1. msvcm90.dll bağımlılığını kaldırmak için, **/NODEFAULTLIB:msvcmrt.lib** bağlayıcı seçeneğini kullanarak bu kitaplığı eklememek için bağlayıcıya belirtmeniz gerekir. Visual Studio geliştirme ortamını kullanarak veya programlı olarak nasıl yapılacağınız hakkında bilgi [için](../build/reference/nodefaultlib-ignore-libraries.md)bkz.
+1. msvcm90.dll bağımlılığı kaldırmak için, **/nodefaultlib: msvcmrt. lib** bağlayıcı seçeneğini kullanarak bu kitaplığı dahil etmek için bağlayıcı olarak belirtmeniz gerekir. Visual Studio geliştirme ortamı veya program aracılığıyla bunun nasıl yapılacağı hakkında bilgi için bkz. [/nodefaultlib (kitaplıkları Yoksay)](../build/reference/nodefaultlib-ignore-libraries.md).
 
-1. Bağlayıcı giriş bağımlılıklarına ptrustm kitaplıklarından birini ekleyin. Uygulamanızı sürüm modunda oluşturuyorsanız ptrustm.lib'i kullanın. Hata ayıklama modu için ptrustmd.lib kullanın. Visual Studio geliştirme ortamını kullanarak veya programlı olarak bunu nasıl yapacağınız hakkında bilgi için [bkz. Bağlayıcı Girişi olarak Lib Dosyaları](../build/reference/dot-lib-files-as-linker-input.md).
+1. Ptrustm kitaplıklarından birini bağlayıcı girişi bağımlılıklarına ekleyin. Uygulamanızı yayın modunda oluşturuyorsanız ptrustm. lib kullanın. Hata ayıklama modu için ptrustmd. lib kullanın. Visual Studio geliştirme ortamı veya program aracılığıyla bunun nasıl yapılacağı hakkında bilgi için bkz [.. Bağlayıcı girişi olarak lib dosyaları](../build/reference/dot-lib-files-as-linker-input.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)<br/>
-[Karışık Derlemeleri Başlatma](../dotnet/initialization-of-mixed-assemblies.md)<br/>
-[Karma Derlemeler için Kütüphane Desteği](../dotnet/library-support-for-mixed-assemblies.md)<br/>
-[/link (Seçenekleri Bağlayıcıya Geçir)](../build/reference/link-pass-options-to-linker.md)
+[Karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)<br/>
+[Karışık derlemeleri başlatma](../dotnet/initialization-of-mixed-assemblies.md)<br/>
+[Karışık derlemeler için kitaplık desteği](../dotnet/library-support-for-mixed-assemblies.md)<br/>
+[/Link (Seçenekleri Bağlayıcıya Geçir)](../build/reference/link-pass-options-to-linker.md)

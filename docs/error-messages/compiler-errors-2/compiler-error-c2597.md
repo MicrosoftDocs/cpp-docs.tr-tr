@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2597'
 title: Derleyici hatası C2597
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2597
 ms.assetid: 2e48127d-e3ff-4a40-8156-2863e45b1a38
-ms.openlocfilehash: 680268948f8642b02768bd4b3092666982e14eb7
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b3430da85cef961b7c26b55e8dee9f1911533faf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120145"
 ---
 # <a name="compiler-error-c2597"></a>Derleyici hatası C2597
 
@@ -19,7 +20,7 @@ statik olmayan ' Identifier ' üyesine başvuru geçersiz
 
 Olası nedenler:
 
-1. Statik üye işlevinde statik olmayan bir üye belirtilmiş. Statik olmayan üyeye erişmek için, sınıfın yerel bir örneğini geçirmeniz veya oluşturmanız ya da bir üye erişim işleci (`.` ya da `->`) kullanmanız gerekir.
+1. Statik üye işlevinde statik olmayan bir üye belirtilmiş. Statik olmayan üyeye erişmek için, sınıfın yerel bir örneğini geçirmeniz veya oluşturmanız ya da bir üye erişim işleci ( `.` veya) kullanmanız gerekir `->` .
 
 1. Belirtilen tanımlayıcı bir sınıf, yapı veya birleşimin üyesi değil. Tanımlayıcı yazımını denetleyin.
 

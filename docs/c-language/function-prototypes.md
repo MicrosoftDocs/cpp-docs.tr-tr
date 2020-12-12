@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlev prototipleri'
 title: İşlev Prototipleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - functions [C], return types
 - prototypes [C++], function
 ms.assetid: d152f8e6-971e-432c-93ca-5a91400653c2
-ms.openlocfilehash: 76e8abdaa2e2d0d8ba14209b45982b6a7f63f2e4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d8e83e68daaa610387f3a23c06ad5ee49a8b3944
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227861"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151846"
 ---
 # <a name="function-prototypes"></a>İşlev Prototipleri
 
 İşlev bildirimi, işlev tanımından önce gelir ve bir işlevin adını, dönüş türünü, depolama sınıfını ve diğer özniteliklerini belirtir. Prototip olması için, işlev bildiriminin işlevin bağımsız değişkenleri için türler ve tanımlayıcılar de kurması gerekir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *bildirim*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirim-tanımlayıcılar* *özniteliği-seq*<sub>opt</sub> *init-declarator-list*<sub>opt</sub> **;**
@@ -42,7 +43,7 @@ ms.locfileid: "87227861"
 *bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
 
-*Direct-bildirimci*:/ \* bir işlev bildirimci\*/<br/>
+*Direct-bildirimci*:/ \* bir işlev bildirimci \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***parametre türü-liste***)**   / \* Yeni stil bildirimci      \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Direct-bildirimci***(***tanımlayıcı listesi*<sub>opt</sub> **)**  / \* eski stil bildirimci    \*/
 
@@ -83,7 +84,7 @@ struct S;
 void func1( struct S * );
 ```
 
-**/Ze**altında, etiket hala genel kapsama girilir.
+**/Ze** altında, etiket hala genel kapsama girilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

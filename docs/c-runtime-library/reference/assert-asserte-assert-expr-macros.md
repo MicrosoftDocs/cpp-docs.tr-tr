@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ASSERT, _ASSERTE, _ASSERT_EXPR makroları'
 title: _ASSERT, _ASSERTE _ASSERT_EXPR makrolar
 ms.date: 11/04/2016
 api_location:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - _ASSERT macro
 - _ASSERT_EXPR macro
 ms.assetid: e98fd2a6-7f5e-4aa8-8fe8-e93490deba36
-ms.openlocfilehash: d07fbe5de7afdc62f952727660447c5e4f0b78aa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 28c90d2c92feb298b2416633e783c5d0a87e4bd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232644"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117581"
 ---
 # <a name="_assert-_asserte-_assert_expr-macros"></a>_ASSERT, _ASSERTE _ASSERT_EXPR makrolar
 
 Bir ifadeyi değerlendirin ve sonuç **false** olduğunda bir hata ayıklama raporu oluşturun (yalnızca hata ayıklama sürümü).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 // Typical usage:
@@ -62,9 +63,9 @@ Raporun parçası olarak görüntülenecek geniş bir dize.
 
 **_ASSERT_EXPR**, **_assert** ve **_ASSERTE** *Boolean* bağımsız değişkenini değerlendirin ve sonuç **`false`** (0) olduğunda bir hata ayıklama raporu oluşturmak için bir tanılama iletisi yazdırır [ve _CrtDbgReportW](crtdbgreport-crtdbgreportw.md) çağırır. **_Assert** makrosu basit bir tanılama iletisi yazdırır, **_ASSERTE** iletide başarısız olan ifadenin bir dize gösterimini içerir ve **_ASSERT_EXPR** , tanılama iletisinde *ileti* dizesini içerir. Bu makrolar, *Boolean* sıfır olarak değerlendirildiğinde hiçbir şey yapmaz.
 
-**_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** **_CrtDbgReportW**çağırın, bu da tüm çıktının geniş karakterlerle olmasına neden olur. **_ASSERTE** , *Boolean* 'ta Unicode karakterlerini doğru bir şekilde yazdırır ve **_ASSERT_EXPR** Unicode karakterleri *iletiye*yazdırır.
+**_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** **_CrtDbgReportW** çağırın, bu da tüm çıktının geniş karakterlerle olmasına neden olur. **_ASSERTE** , *Boolean* 'ta Unicode karakterlerini doğru bir şekilde yazdırır ve **_ASSERT_EXPR** Unicode karakterleri *iletiye* yazdırır.
 
-**_ASSERTE** makro başarısız ifadeyi belirttiğinden ve **_ASSERT_EXPR** oluşturulan raporda bir ileti belirtmenizi sağladığından, kullanıcıların sorunu uygulama kaynak koduna girmeden belirlemesine olanak sağlar. Ancak, **_ASSERT_EXPR** tarafından yazdırılan her bir *iletinin* ve **_ASSERTE** tarafından değerlendirilen her ifadenin, bir dize sabiti olarak uygulamanızın çıkış (hata ayıklama sürümü) dosyasına dahil olduğu bir dezavantajı vardır. Bu nedenle, **_ASSERT_EXPR** veya **_ASSERTE**için çok sayıda çağrı yapılırsa, bu ifadeler çıkış dosyanızın boyutunu büyük ölçüde artırabilir.
+**_ASSERTE** makro başarısız ifadeyi belirttiğinden ve **_ASSERT_EXPR** oluşturulan raporda bir ileti belirtmenizi sağladığından, kullanıcıların sorunu uygulama kaynak koduna girmeden belirlemesine olanak sağlar. Ancak, **_ASSERT_EXPR** tarafından yazdırılan her bir *iletinin* ve **_ASSERTE** tarafından değerlendirilen her ifadenin, bir dize sabiti olarak uygulamanızın çıkış (hata ayıklama sürümü) dosyasına dahil olduğu bir dezavantajı vardır. Bu nedenle, **_ASSERT_EXPR** veya **_ASSERTE** için çok sayıda çağrı yapılırsa, bu ifadeler çıkış dosyanızın boyutunu büyük ölçüde artırabilir.
 
 [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevleriyle aksi belirtilmedikçe iletiler, ayarlamaya eşdeğer bir açılan iletişim kutusunda görünür:
 

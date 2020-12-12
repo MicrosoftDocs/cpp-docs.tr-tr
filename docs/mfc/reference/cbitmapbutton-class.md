@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CBitmapButton sınıfı'
 title: CBitmapButton sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-ms.openlocfilehash: 0cf4554f86f4a9275e4d96b3db519fde7fb05b22
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 93d114dce87aba4643af427f3726a5ffab004b77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122713"
 ---
 # <a name="cbitmapbutton-class"></a>CBitmapButton sınıfı
 
 Metin yerine biteşlenmiş görüntülerle etiketlenmiş basma düğmeli denetimleri oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CBitmapButton : public CButton
@@ -49,7 +50,7 @@ class CBitmapButton : public CButton
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CBitmapButton`nesneler, farklı durumların görüntülerini içeren en fazla dört bit eşlem içerir. bir düğme, (veya normal), aşağı (veya seçili), odaklanmış ve devre dışı olarak kabul edilebilir. Yalnızca ilk bit eşlem gereklidir; Diğerleri isteğe bağlıdır.
+`CBitmapButton` nesneler, farklı durumların görüntülerini içeren en fazla dört bit eşlem içerir. bir düğme, (veya normal), aşağı (veya seçili), odaklanmış ve devre dışı olarak kabul edilebilir. Yalnızca ilk bit eşlem gereklidir; Diğerleri isteğe bağlıdır.
 
 Bit eşlem düğmesi görüntüleri görüntünün etrafındaki ve görüntünün etrafında kenarlık içerir. Kenarlık genellikle düğmenin durumunu gösteren bir bölüm oynar. Örneğin, odaklanmış durum için bit eşlem genellikle, yukarı durumu için, ancak kenardan kesik çizgili bir dikdörtgen ya da kenarlıkta kalın bir düz çizgi ile aynıdır. Devre dışı bırakılan durum için bit eşlem genellikle en düşük bir kontrast (soluk veya gri bir menü seçimi gibi) içerir.
 
@@ -112,7 +113,7 @@ Hakkında daha fazla bilgi için `CBitmapButton` bkz. [denetimler](../../mfc/con
 
 **Üstbilgi:** afxext. h
 
-## <a name="cbitmapbuttonautoload"></a><a name="autoload"></a>CBitmapButton:: oto Load
+## <a name="cbitmapbuttonautoload"></a><a name="autoload"></a> CBitmapButton:: oto Load
 
 İletişim kutusu içindeki bir düğmeyi, sınıfının bir nesnesiyle ilişkilendirir `CBitmapButton` , bitmapi ada göre yükler ve düğmeyi bit eşlemle sığacak şekilde boyutlandırır.
 
@@ -142,7 +143,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]
 
-## <a name="cbitmapbuttoncbitmapbutton"></a><a name="cbitmapbutton"></a>CBitmapButton:: CBitmapButton
+## <a name="cbitmapbuttoncbitmapbutton"></a><a name="cbitmapbutton"></a> CBitmapButton:: CBitmapButton
 
 Bir `CBitmapButton` nesnesi oluşturur.
 
@@ -158,7 +159,7 @@ C++ nesnesini oluşturduktan sonra `CBitmapButton` , Windows düğme denetimini 
 
 [!code-cpp[NVC_MFCControlLadenDialog#57](../../mfc/codesnippet/cpp/cbitmapbutton-class_2.cpp)]
 
-## <a name="cbitmapbuttonloadbitmaps"></a><a name="loadbitmaps"></a>CBitmapButton:: Loadbitmapler
+## <a name="cbitmapbuttonloadbitmaps"></a><a name="loadbitmaps"></a> CBitmapButton:: Loadbitmapler
 
 Kaynak adlarına veya KIMLIK numaralarına göre tanımlanan bit eşlem görüntülerini yüklemek istediğinizde veya işlevini kullanamıyorsa, `AutoLoad` Örneğin bir iletişim kutusunun parçası olmayan bir bit eşlem düğmesi oluşturduğunuz zaman bu işlevi kullanın.
 
@@ -210,7 +211,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 [!code-cpp[NVC_MFCControlLadenDialog#58](../../mfc/codesnippet/cpp/cbitmapbutton-class_3.cpp)]
 
-## <a name="cbitmapbuttonsizetocontent"></a><a name="sizetocontent"></a>CBitmapButton:: SizeToContent
+## <a name="cbitmapbuttonsizetocontent"></a><a name="sizetocontent"></a> CBitmapButton:: SizeToContent
 
 Bit eşlem düğmesini bit eşlem boyutuna göre yeniden boyutlandırmak için bu işlevi çağırın.
 

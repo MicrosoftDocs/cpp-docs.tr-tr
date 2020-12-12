@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: atexit'
 title: atexit
 ms.date: 11/04/2016
 api_name:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - processing, at exit
 - atexit function
 ms.assetid: 92c156d2-8052-4e58-96dc-00128baac6f9
-ms.openlocfilehash: b91e6dad81f006b0b94ac17a940e840386f6d2b1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 82c0bbfdb9af62faff9239781b5db340183e25fa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117542"
 ---
 # <a name="atexit"></a>atexit
 
@@ -54,7 +55,7 @@ int atexit(
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Atexit** işlevi, program normal olarak sonlandırıldığında *çağrılan işlevin adresini* geçti. **Atexit** 'e yönelik art arda yapılan çağrılar, en son, ilk çıkar (LIFO) sırada yürütülen işlevlerin bir kaydını oluşturur. **Atexit** 'e geçirilen işlevler parametre alamaz. **atexit** ve **_onexit** işlev kaydını tutmak için yığını kullanır. Bu nedenle, kayıt olabilecek işlevlerin sayısı yalnızca yığın bellekle sınırlıdır.
+**Atexit** işlevi, program normal olarak sonlandırıldığında *çağrılan işlevin adresini* geçti. **Atexit** 'e yönelik art arda yapılan çağrılar, en son, ilk çıkar (LIFO) sırada yürütülen işlevlerin bir kaydını oluşturur. **Atexit** 'e geçirilen işlevler parametre alamaz. **atexit** ve **_onexit** işlev kaydını tutmak için yığın kullanır. Bu nedenle, kayıt olabilecek işlevlerin sayısı yalnızca yığın bellekle sınırlıdır.
 
 **Atexit** işlevindeki kod, **atexit** işlevi çağrıldığında önceden KALDıRıLMıŞ olan herhangi bir dll üzerinde herhangi bir bağımlılık içermemelidir.
 
@@ -64,7 +65,7 @@ ANSI uyumlu bir uygulama oluşturmak için ANSI-standart **atexit** işlevini ku
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**atexit**|\<Stdlib. h >|
+|**atexit**|\<stdlib.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -114,7 +115,7 @@ This is executed next.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[durdur](abort.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
