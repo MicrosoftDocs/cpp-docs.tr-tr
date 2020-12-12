@@ -1,16 +1,17 @@
 ---
+description: Hakkında daha fazla bilgi edinin:/Qspectre
 title: /Qspectre
 ms.date: 09/06/2019
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SpectreMitigation
 helpviewer_keywords:
 - /Qspectre
-ms.openlocfilehash: a4872d18fed4523e235aee70839f1e482d78f345
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 576052a9db8a4ce63c82afaf644f41fa847ad9a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225498"
 ---
 # <a name="qspectre"></a>/Qspectre
 
@@ -43,7 +44,7 @@ Kodunuz bir güven sınırını kesen veriler üzerinde çalışıyorsa, bu soru
 
 **/Qspectre** seçeneği, Visual Studio 2017 sürüm 15.5.5 ' de ve 23 Ocak 2018 tarihinde veya sonrasında yapılan tüm Microsoft C++ derleyicileri (MSVC) güncelleştirmelerinde bulunur. Derleyiciyi güncelleştirmek ve Spectre-hafiftılan kitaplıkları tek tek bileşenler olarak yüklemek için Visual Studio Yükleyicisi kullanın. **/Qspectre** seçeneği, Visual Studio 2015 güncelleştirme 3 ' te bir yama aracılığıyla da kullanılabilir. Daha fazla bilgi için bkz. [KB 4338871](https://support.microsoft.com/help/4338871).
 
-Visual Studio 2017 sürüm 15,5 ' nin tüm sürümleri ve Visual Studio 2017 sürüm 15,6 ' in tüm önizlemeleri. belgelenmemiş bir seçeneği ekleyin, **/d2guardspecload** . Bu, **/Qspectre** 'in ilk davranışına eşdeğerdir. Bu derleyicinin bu sürümlerindeki kodunuzda aynı azaltmaları uygulamak için **/d2guardspecload** ' i kullanabilirsiniz. Derlemenizi, bu seçeneği destekleyen derleyicilerde **/Qspectre** kullanmak üzere güncelleştirmenizi öneririz. **/Qspectre** seçeneği, derleyicinin sonraki sürümlerinde yeni azaltıcı etkenleri de destekleyebilir.
+Visual Studio 2017 sürüm 15,5 ' nin tüm sürümleri ve Visual Studio 2017 sürüm 15,6 ' in tüm önizlemeleri. belgelenmemiş bir seçeneği ekleyin, **/d2guardspecload**. Bu, **/Qspectre**'in ilk davranışına eşdeğerdir. Bu derleyicinin bu sürümlerindeki kodunuzda aynı azaltmaları uygulamak için **/d2guardspecload** ' i kullanabilirsiniz. Derlemenizi, bu seçeneği destekleyen derleyicilerde **/Qspectre** kullanmak üzere güncelleştirmenizi öneririz. **/Qspectre** seçeneği, derleyicinin sonraki sürümlerinde yeni azaltıcı etkenleri de destekleyebilir.
 
 ### <a name="effect"></a>Etki
 
@@ -63,7 +64,7 @@ Visual Studio 2017 sürüm 15,5 ' nin tüm sürümleri ve Visual Studio 2017 sü
 - İçin Visual C++ ATL \[ (x86/x64) | ARM | ARM64] Spectre azaltmaları ile
 - \[X86/x64 için VISUAL C++ MFC | ARM | ARM64] Spectre azaltmaları ile
 
-Kodunuzu **/Qspectre** kullanarak oluşturursanız ve bu kitaplıklar yüklü değilse, derleme SISTEMI **Uyarı MSB8038: Spectre azaltma etkindir ancak Spectre hafifletme kitaplıkları bulunamadı** . MFC veya ATL kodunuz derlenmezse ve bağlayıcı önemli hata LNK1104 gibi bir hata bildirirse **: ' oldnames. lib ' dosyası** açılamıyor, bu eksik kitaplıklar neden olabilir.
+Kodunuzu **/Qspectre** kullanarak oluşturursanız ve bu kitaplıklar yüklü değilse, derleme SISTEMI **Uyarı MSB8038: Spectre azaltma etkindir ancak Spectre hafifletme kitaplıkları bulunamadı**. MFC veya ATL kodunuz derlenmezse ve bağlayıcı önemli hata LNK1104 gibi bir hata bildirirse **: ' oldnames. lib ' dosyası** açılamıyor, bu eksik kitaplıklar neden olabilir.
 
 ### <a name="additional-information"></a>Ek bilgiler
 

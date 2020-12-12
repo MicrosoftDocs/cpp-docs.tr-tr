@@ -1,38 +1,39 @@
 ---
+description: Hakkında daha fazla bilgi edinin:/Qsafe_fp_loads
 title: /Qsafe_fp_loads
 ms.date: 01/24/2018
-ms.openlocfilehash: 57aece79dfab617121371e0489aa80f18e143372
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e569b308d2da982c72775699ff2149daa45a8f2a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225524"
 ---
-# <a name="qsafefploads"></a>/Qsafe_fp_loads
+# <a name="qsafe_fp_loads"></a>/Qsafe_fp_loads
 
-Kayan nokta değerleri için tamsayı taşıma yönergelerini gerektirir ve belirli kayan nokta yükleme iyileştirmelerini devre dışı bırakır.
+Kayan nokta değerleri için tamsayı taşıma yönergeleri gerektirir ve belirli kayan nokta yükleme iyileştirmelerini devre dışı bırakır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/Qsafe_fp_loads**
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/ Qsafe_fp_loads** yalnızca derleyicilerde kullanılabilir x86 hedef; x64 veya ARM hedefleyen derleyicilerde kullanılabilir değil.
+**/Qsafe_fp_loads** yalnızca x86 'yi hedefleyen derleyicilerde kullanılabilir; x64 veya ARM 'yi hedefleyen derleyicilerde kullanılamaz.
 
-**/ Qsafe_fp_loads** zorlar, derleyicinin bellek ile MMX arasında veri taşımak için kayan nokta taşıma yönergeler yerine tamsayı taşıma yönergelerini kullanmasını kaydeder. Bu seçenek ayrıca kayıt yük iyileştirme değeri bir özel durum yüküne neden olabilir, birden çok denetim yollarında yüklenebilir kayan nokta değerleri için devre dışı bırakır; Örneğin, bir NaN değerini.
+**/Qsafe_fp_loads** derleyiciyi, verileri bellek ve MMX kayıtları arasında taşımak için kayan nokta taşıma yönergeleri yerine tamsayı taşıma yönergeleri kullanmak üzere zorlar. Bu seçenek ayrıca, değer yüklemede bir özel duruma neden olabileceği zaman birden fazla denetim yoluna yüklenebilen kayan nokta değerleri için yükleme iyileştirmesi kaydetmeyi devre dışı bırakır — Örneğin, bir NaN değeri.
 
-Bu seçeneği tarafından geçersiz kılınır [/FP: except](fp-specify-floating-point-behavior.md). **/ Qsafe_fp_loads** tarafından belirtilen derleyici davranışı kümesini belirtir **/FP: except**.
+Bu seçenek [/FP: except](fp-specify-floating-point-behavior.md)tarafından geçersiz kılınır. **/Qsafe_fp_loads** **/FP: except** tarafından belirtilen derleyici davranışının bir alt kümesini belirtir.
 
-**/ Qsafe_fp_loads** ile uyumsuz [/CLR](clr-common-language-runtime-compilation.md) ve [Fast](fp-specify-floating-point-behavior.md). Kayan nokta derleyici seçenekleri hakkında daha fazla bilgi için bkz. [FP (Floating-Point davranışını belirtin)](fp-specify-floating-point-behavior.md).
+**/Qsafe_fp_loads** [/clr](clr-common-language-runtime-compilation.md) ve [/FP: Fast](fp-specify-floating-point-behavior.md)ile uyumsuzdur. Kayan nokta derleyicisi seçenekleri hakkında daha fazla bilgi için bkz. [/FP (Floating-Point davranışını belirt)](fp-specify-floating-point-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. Derleyici seçeneğini girin **ek seçenekler** kutusu. Seçin **Tamam** değişikliği uygulamak için.
+1. **Ek seçenekler** kutusunda derleyici seçeneğini girin. Değişikliği uygulamak için **Tamam ' ı** seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -40,6 +41,6 @@ Bu seçeneği tarafından geçersiz kılınır [/FP: except](fp-specify-floating
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[/Q seçenekler (düşük düzey Işlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

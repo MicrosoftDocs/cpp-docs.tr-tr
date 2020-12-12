@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için:/RANGE
 title: /RANGE
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - /RANGE dumpbin option
 - -RANGE dumpbin option
 ms.assetid: 7eeba266-32be-49cc-a350-96bdf541f98a
-ms.openlocfilehash: c631057e47e1a52a58d2b1304133dfdfc008ae14
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9af54bddde977e92b5256f0835c31afbff1405d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319713"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225407"
 ---
 # <a name="range"></a>/RANGE
 
-/RAWDATA veya /DISASM gibi diğer DUMPBIN seçenekleri ile birlikte kullanıldığında dumpbin çıktısını değiştirir.
+/RAWDATA veya/DISASMGIBI diğer dumpbin seçenekleriyle birlikte kullanıldığında dumpbin çıkışını değiştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,19 +27,19 @@ ms.locfileid: "62319713"
 
 ## <a name="parameters"></a>Parametreler
 
-*vaMin*<br/>
-Başlamak için DUMPBIN işlemi istediğiniz sanal adres.
+*Vadk*<br/>
+Dumpbin işleminin başlamasını istediğiniz sanal adres.
 
 *vaMax*<br/>
-(İsteğe bağlı) DUMPBIN işlemi sonlandırmak için istediğiniz sanal adres. Belirtilmezse, dosyanın sonuna dumpbin geçer.
+Seçim Dumpbin işleminin bitmesini istediğiniz sanal adres. Belirtilmemişse, dumpbin dosyanın sonuna gider.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Görüntü sanal adreslerini görmek için eşleme dosyası (RVA + Base) görüntüsü için kullandığınız **/DISASM** veya **OPTIONAL** dumpbin veya Visual Studio hata ayıklayıcısını ayrıştırma penceresinde seçeneği.
+Bir görüntünün sanal adreslerini görmek için görüntü için eşleme dosyasını (RVA + taban), dumpbin için **/disasm** veya **/Headers** seçeneğini veya Visual Studio hata ayıklayıcısındaki ayrıştırma penceresini kullanın.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, **/aralığı** görüntülenme durumunu değiştirmek için kullanılan **/disasm** seçeneği. Bu örnekte, başlangıç değeri bir ondalık sayı olarak ifade edilir ve bitiş değeri, onaltılık bir sayı belirtilir.
+Bu örnekte, **/deasm** seçeneğinin görüntüsünü değiştirmek için **/Range** kullanılır. Bu örnekte, başlangıç değeri ondalık sayı olarak ifade edilir ve bitiş değeri onaltılık sayı olarak belirtilir.
 
 ```
 dumpbin /disasm /range:4219334,0x004061CD t.exe

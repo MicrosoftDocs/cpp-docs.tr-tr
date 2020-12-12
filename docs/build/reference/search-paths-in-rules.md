@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kurallar içinde arama yolları'
 title: Yolları Kurallarda Ara
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - inference rules in NMAKE
 - rules, inference
 ms.assetid: 38feded6-536d-425d-bf40-fff3173a5506
-ms.openlocfilehash: eab6e9d32940aaf5729ce82c4e8258a3a3132208
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bf070fc57907b68eb458b8a5276698282ef30f9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224887"
 ---
 # <a name="search-paths-in-rules"></a>Yolları Kurallarda Ara
 
@@ -22,7 +23,7 @@ ms.locfileid: "62318868"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağımlılığı tam olarak belirtilen yollar çıkarım kuralı yolları eşleşiyorsa çıkarım kuralı bir bağımlılık için geçerlidir. Belirtin bağımlı öğenin dizininde *frompath* ve hedef dizinde *topath*; boşluk izin verilir. Her bir uzantı için yalnızca bir yol belirtin. Bir uzantı bir yolu diğer bir yolu gerektirir. Geçerli dizini belirlemek için bir nokta (.) ya da boş küme ayraçları ({}) kullanın. Makrolar temsil edebilir *frompath* ve *topath*; ön işleme sırasında çağrılır.
+Bir çıkarım kuralı, yalnızca bağımlılıkta belirtilen yollar, çıkarım kuralı yollarıyla tam olarak eşleşiyorsa bir bağımlılık için geçerlidir. Bağımsız olarak, *frompath* ve hedefin dizinini *toPath* içinde belirtin; boşluklara izin verilmez. Her uzantı için yalnızca bir yol belirtin. Bir uzantıdaki yol, diğeri için bir yol gerektirir. Geçerli dizini belirtmek için, nokta (.) veya boş küme ayraçları ({}) kullanın. Makrolar *frompath* ve *toPath*'i temsil edebilir. Bunlar ön işleme sırasında çağırılır.
 
 ## <a name="example"></a>Örnek
 
@@ -59,4 +60,4 @@ Bağımlılığı tam olarak belirtilen yollar çıkarım kuralı yolları eşle
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kural Tanımlama](defining-a-rule.md)
+[Kural tanımlama](defining-a-rule.md)

@@ -1,13 +1,14 @@
 ---
+description: Daha fazla bilgi edinin:/Qvec-report (otomatik Vektörleştirici raporlama düzeyi)
 title: /Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)
 ms.date: 11/04/2016
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a
-ms.openlocfilehash: 2007e80db0ee0aec362869315767505ec06ab109
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 734dabffa3bf19ecaba42d35d208eb27ec7b2968
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836874"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225472"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)
 
@@ -45,5 +46,5 @@ Neden kodları ve iletileri hakkında bilgi için bkz. [Vektörtorizer ve parale
 
 [/Q seçenekler (düşük düzey Işlemler)](q-options-low-level-operations.md)<br/>
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
 [Visual Studio 'da yerel kod vektörleştirme](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

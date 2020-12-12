@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz./RELEASE (sağlama toplamını ayarla)
 title: /RELEASE (Sağlama Toplamını Ayarla)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - checksum setting
 - RELEASE linker option
 ms.assetid: 93bcadf4-29ac-4824-914b-6997e3751d22
-ms.openlocfilehash: 1dc09b38beeb763733f8fa6a8ffa972059b30e03
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed1e55dffb02ace26e91e262bd3e9514f056196e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225329"
 ---
 # <a name="release-set-the-checksum"></a>/RELEASE (Sağlama Toplamını Ayarla)
 
@@ -25,21 +26,21 @@ ms.locfileid: "62318933"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Release seçeneği, .exe dosyasının üst bilgisinde sağlama toplamını ayarlar.
+/RELEASE seçeneği,. exe dosyasının üst bilgisindeki sağlama toplamını ayarlar.
 
-İşletim sistemi sağlama toplamı için cihaz sürücüleri gerektirir. Gelecekteki işletim sistemleriyle uyumluluğu sağlamak için yayın sürümleri, aygıt sürücüsü için sağlama toplamı ayarlayın.
+İşletim sistemi cihaz sürücüleri için sağlama toplamı gerektirir. Gelecekteki işletim sistemleriyle uyumluluğu sağlamak için cihaz sürücülerinizin yayın sürümleri için sağlama toplamını ayarlayın.
 
-/ Release seçeneği varsayılan olarak ayarlanır, [natıve](subsystem-specify-subsystem.md) seçeneği belirtildi.
+/RELEASE seçeneği, [/Subsystem: NATIVE](subsystem-specify-subsystem.md) seçeneği belirtildiğinde varsayılan olarak ayarlanır.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **Gelişmiş** özellik sayfası.
+1. **Gelişmiş** Özellik sayfasına tıklayın.
 
-1. Değiştirme **kümesi sağlama toplamı** özelliği.
+1. **Set checksum** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -48,4 +49,4 @@ ms.locfileid: "62318933"
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)
