@@ -1,5 +1,6 @@
 ---
-title: Platform::RecreateException yöntemi
+description: 'Daha fazla bilgi edinin: Platform:: ReCreateException yöntemi'
+title: 'Platform:: RecreateException yöntemi'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: fa73d1ab-86e4-4d26-a7d9-81938c1c7e77
-ms.openlocfilehash: 9e167efc54352d125e849956a2da8d8e8cad4ed6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 273f60055e4cf5a940558ba5dcaa4aa6a7c70bca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308061"
 ---
-# <a name="platformrecreateexception-method"></a>Platform::ReCreateException yöntemi
+# <a name="platformrecreateexception-method"></a>Platform:: ReCreateException yöntemi
 
-Bu yöntem, yalnızca dahili kullanım içindir ve kullanıcı kodu için tasarlanmamıştır. Bunun yerine Exception::CreateException yöntemi kullanın.
+Bu yöntem yalnızca dahili kullanım içindir ve Kullanıcı kodu için tasarlanmamıştır. Bunun yerine Exception:: CreateException metodunu kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,8 +27,8 @@ static Exception^ ReCreateException(int hr)
 
 ### <a name="parameters"></a>Parametreler
 
-*İK*
+*sa*
 
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-Yeni bir Platform::Exception döndürür ^ bağlı olarak belirtilen HRESULT.
+Belirtilen HRESULT temelinde yeni bir platform:: Exception ^ döndürür.

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3240'
 title: Derleyici hatası C3240
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3240
 ms.assetid: 1a8dc213-b80c-47ae-ada0-e9554b635d1e
-ms.openlocfilehash: e38ac53d0473c4fe5daace0f8c674c06b2ae0161
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a8e78e6bb846d96fc0087c3d02d1eb757a0586f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307372"
 ---
 # <a name="compiler-error-c3240"></a>Derleyici hatası C3240
 

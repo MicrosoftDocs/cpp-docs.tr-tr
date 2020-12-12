@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l'
 title: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 ms.date: 4/2/2020
 api_name:
@@ -63,12 +64,12 @@ helpviewer_keywords:
 - strnset_s function
 - _wcsnset_s function
 ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
-ms.openlocfilehash: 123f8c4945d98ccf3dd94a48dbbb0fef3b35a8e5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 388d0ed82b811187f10d68fed7e48b954fdb3e2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911215"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305916"
 ---
 # <a name="_strnset_s-_strnset_s_l-_wcsnset_s-_wcsnset_s_l-_mbsnset_s-_mbsnset_s_l"></a>_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 
@@ -146,9 +147,9 @@ Bu işlevler bağımsız değişkenlerini doğrular. *Str* geçerli bir null ile
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, en çok, *Str* 'nin ilk *sayı* karakterini *c*olarak ayarlar. *Count* değeri *Str*değerinden büyükse, *Str* değeri *say*yerine kullanılır. *Count* değeri *numberOfElements* değerinden büyükse ve bu parametrelerin her ikisi de *Str*boyutundan fazlaysa bir hata oluşur.
+Bu işlevler, en çok, *Str* 'nin ilk *sayı* karakterini *c* olarak ayarlar. *Count* değeri *Str* değerinden büyükse, *Str* değeri *say* yerine kullanılır. *Count* değeri *numberOfElements* değerinden büyükse ve bu parametrelerin her ikisi de *Str* boyutundan fazlaysa bir hata oluşur.
 
-**_wcsnset_s** ve **_mbsnset_s** , **_strnset_s**geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsnset_s** dize bağımsız değişkeni geniş karakterli bir dizedir; Bu **_mbsnset_s** , açok baytlı karakter dizesidir. Bu üç işlev, aynı şekilde davranır.
+**_wcsnset_s** ve **_mbsnset_s** , **_strnset_s** geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsnset_s** dize bağımsız değişkeni geniş karakterli bir dizedir; Bu **_mbsnset_s** , açok baytlı karakter dizesidir. Bu üç işlev, aynı şekilde davranır.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -167,11 +168,11 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strnset_s**|\<String. h>|
-|**_strnset_s_l**|\<Tchar. h>|
-|**_wcsnset_s**|\<String. h> veya \<wchar. h>|
-|**_wcsnset_s_l**|\<Tchar. h>|
-|**_mbsnset_s**, **_mbsnset_s_l**|\<mbstring. h>|
+|**_strnset_s**|\<string.h>|
+|**_strnset_s_l**|\<tchar.h>|
+|**_wcsnset_s**|\<string.h> veya \<wchar.h>|
+|**_wcsnset_s_l**|\<tchar.h>|
+|**_mbsnset_s**, **_mbsnset_s_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -201,7 +202,7 @@ After:  **** is a test
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __segmentlimit'
 title: __segmentlimit
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - __segmentlimit intrinsic
 - lsl instruction
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
-ms.openlocfilehash: 9239d8de8ce2065d09ee7975301a2cb41832ba89
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 49f8688918e07e143615af7b184a784daa0eaaa1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307008"
 ---
 # <a name="__segmentlimit"></a>__segmentlimit
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`lsl` (Yükleme segmenti sınırı) yönergesini üretir.
+`lsl`(Yükleme segmenti sınırı) yönergesini üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,9 +34,9 @@ unsigned long __segmentlimit(
 *a*\
 'ndaki Segment seçiciyi belirten bir sabit.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Seçici geçerli ve geçerli izin düzeyinde görünür durumdaysa,tarafından belirtilen kesim seçicisinin kesim sınırı.
+Seçici geçerli ve geçerli izin düzeyinde görünür durumdaysa, *tarafından belirtilen* kesim seçicisinin kesim sınırı.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -43,7 +44,7 @@ Seçici geçerli ve geçerli izin düzeyinde görünür durumdaysa,tarafından b
 |---------------|------------------|
 |`__segmentlimit`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

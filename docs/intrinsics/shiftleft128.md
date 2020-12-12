@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __shiftleft128'
 title: __shiftleft128
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-ms.openlocfilehash: 5da9ac81cedbdd24e10eb438892f88510c32ca24
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e0e1402660c2ddb6f5993e5186302ff489ed864f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218009"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306995"
 ---
 # <a name="__shiftleft128"></a>__shiftleft128
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-2 64-bit miktarlar `LowPart` olarak temsil edilen 128 bitlik miktarı ve `HighPart`tarafından `Shift` belirtilen bir dizi bit ile sola kaydırır ve sonucun yüksek 64 bitlerini döndürür.
+2 64-bit miktarlar olarak temsil edilen 128 bitlik miktarı `LowPart` ve `HighPart` tarafından belirtilen bir dizi bit ile sola kaydırır `Shift` ve sonucun yüksek 64 bitlerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,7 +41,7 @@ unsigned __int64 __shiftleft128(
 *Karakter*\
 'ndaki Kaydırılacak bit sayısı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Sonucun yüksek 64 bitleri.
 
@@ -48,13 +49,13 @@ Sonucun yüksek 64 bitleri.
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`__shiftleft128`|X64|
+|`__shiftleft128`|x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-*SHIFT* değeri her zaman modül 64 ' dir; örneğin `__shiftleft128(1, 0, 64)`, çağırdığınızda, işlev düşük parçalı `0` bitleri sola kayacaktır ve bunun yerine `0` `1` yüksek bir kısmını döndürür, aksi takdirde beklenmeyebilir.
+*SHIFT* değeri her zaman modül 64 ' dir; Örneğin, çağırdığınızda, `__shiftleft128(1, 0, 64)` işlev düşük parçalı `0` bitleri sola kayacaktır ve bunun yerine yüksek bir kısmını döndürür, `0` `1` Aksi takdirde beklenmeyebilir.
 
 ## <a name="example"></a>Örnek
 
@@ -98,5 +99,5 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__kaydırıcı Tri, 128](../intrinsics/shiftright128.md)\
+[__shiftright128](../intrinsics/shiftright128.md)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

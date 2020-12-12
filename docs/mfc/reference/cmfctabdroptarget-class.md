@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCTabDropTarget sınıfı'
 title: CMFCTabDropTarget sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDropEx
 - CMFCTabDropTarget [MFC], Register
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-ms.openlocfilehash: 9160cfd847977f98ac22eecd72632822c751a3aa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2a12d171a934912993a61ba4ae915d9e1f3a5cf6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834238"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306787"
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget sınıfı
 
@@ -105,7 +106,7 @@ virtual DROPEFFECT OnDragEnter(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bırakma, *işaret*tarafından belirtilen konumda gerçekleşirse oluşur. Aşağıdakilerden biri veya birkaçı olabilir:
+Bırakma, *işaret* tarafından belirtilen konumda gerçekleşirse oluşur. Aşağıdakilerden biri veya birkaçı olabilir:
 
 - DROPEFFECT_NONE
 
@@ -168,7 +169,7 @@ virtual DROPEFFECT OnDragOver(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bırakma, *işaret*tarafından belirtilen konumda gerçekleşirse oluşur. Aşağıdakilerden biri veya birkaçı olabilir:
+Bırakma, *işaret* tarafından belirtilen konumda gerçekleşirse oluşur. Aşağıdakilerden biri veya birkaçı olabilir:
 
 - DROPEFFECT_NONE
 
@@ -232,7 +233,7 @@ Ortaya çıkan bırakma efekti. Aşağıdakilerden biri veya birkaçı olabilir:
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem `CMFCBaseTabCtrl::OnDrop` , araç çubuğu çerçevesi özelleştirme modundaysa ve Pano veri biçimi kullanılabilir olduğunda çağırır. Çağrısı `CMFCBaseTabCtrl::OnDrop` sıfır dışında bir değer döndürürse, bu yöntem *DROPEFFECT*tarafından belirtilen varsayılan bırakma efektini döndürür. Aksi takdirde, bu yöntem DROPEFFECT_NONE döndürür. Bırakma efektleri hakkında daha fazla bilgi için bkz. [COleDropTarget:: OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).
+Bu yöntem `CMFCBaseTabCtrl::OnDrop` , araç çubuğu çerçevesi özelleştirme modundaysa ve Pano veri biçimi kullanılabilir olduğunda çağırır. Çağrısı `CMFCBaseTabCtrl::OnDrop` sıfır dışında bir değer döndürürse, bu yöntem *DROPEFFECT* tarafından belirtilen varsayılan bırakma efektini döndürür. Aksi takdirde, bu yöntem DROPEFFECT_NONE döndürür. Bırakma efektleri hakkında daha fazla bilgi için bkz. [COleDropTarget:: OnDropEx](../../mfc/reference/coledroptarget-class.md#ondropex).
 
 Özelleştirme modu hakkında daha fazla bilgi için bkz. [CMFCToolBar:: IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode). Pano veri biçimleri hakkında daha fazla bilgi için bkz. [Copadataobject:: IsDataAvailable](../../mfc/reference/coledataobject-class.md#isdataavailable).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Platform:: ValueType sınıfı'
 title: 'Platform:: ValueType sınıfı'
 ms.date: 02/03/2017
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::ValueType Class
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
-ms.openlocfilehash: f4ce34fa3f197424833d34bdb866712d412e69c3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e6873b4b884586d06dae6e2fd1966041fd49bcc8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307814"
 ---
 # <a name="platformvaluetype-class"></a>Platform:: ValueType sınıfı
 

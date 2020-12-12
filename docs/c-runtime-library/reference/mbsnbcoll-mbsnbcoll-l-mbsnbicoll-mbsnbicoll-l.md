@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l'
 title: _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - _tcsncoll_l function
 - _tcsnicoll_l function
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
-ms.openlocfilehash: 491a652f19e9e1895aa62092c5c890923008f6e1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 97dc0c8664b16b775529184c93b155f8746b3d7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304720"
 ---
 # <a name="_mbsnbcoll-_mbsnbcoll_l-_mbsnbicoll-_mbsnbicoll_l"></a>_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 
@@ -100,7 +101,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değeri, *Dize1* ve *dize2*alt dizelerinin ilişkisini gösterir.
+Dönüş değeri, *Dize1* ve *dize2* alt dizelerinin ilişkisini gösterir.
 
 |Döndürülen değer|Açıklama|
 |------------------|-----------------|
@@ -108,13 +109,13 @@ Dönüş değeri, *Dize1* ve *dize2*alt dizelerinin ilişkisini gösterir.
 |0|*Dize1* substring, *dize2* alt dizesi ile özdeş.|
 |> 0|*Dize1* substring, *dize2* alt dizinden büyük.|
 
-*Dize1* veya *dize2* **null** veya *sayı* **INT_MAX**değerinden büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_NLSCMPERROR** döndürür ve **errno** , **EINVAL**olarak ayarlanır. **_NLSCMPERROR**kullanmak için String. h veya mbstring. h ekleyin.
+*Dize1* veya *dize2* **null** veya *sayı* **INT_MAX** değerinden büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_NLSCMPERROR** döndürür ve **errno** , **EINVAL** olarak ayarlanır. **_NLSCMPERROR** kullanmak için String. h veya mbstring. h ekleyin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, en çok, *Dize1* *ve* *dize2* içindeki ilk *sayı* baytlarını harmanlar ve bir değer *döndürür.* *Dize1* veya *dize2* alt dizesi içindeki son bayt bir ön bayt ise, karşılaştırmaya dahil değildir; Bu işlevler yalnızca alt dizelerdeki tüm karakterleri karşılaştırır. **_mbsnbicoll** , **_mbsnbcoll**büyük/küçük harfe duyarsız bir sürümdür. [_Mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) ve [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md)gibi, **_mbsnbcoll** ve **_mbsnbicoll** iki çok baytlı karakter dizesini, kullanımda olan çok baytlı [kod sayfası](../../c-runtime-library/code-pages.md) tarafından belirtilen naicographic sırasına göre Harmanla.
+Bu işlevlerin her biri, en çok, *Dize1* *ve* *dize2* içindeki ilk *sayı* baytlarını harmanlar ve bir değer *döndürür.* *Dize1* veya *dize2* alt dizesi içindeki son bayt bir ön bayt ise, karşılaştırmaya dahil değildir; Bu işlevler yalnızca alt dizelerdeki tüm karakterleri karşılaştırır. **_mbsnbicoll** , **_mbsnbcoll** büyük/küçük harfe duyarsız bir sürümdür. [_Mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) ve [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md)gibi, **_mbsnbcoll** ve **_mbsnbicoll** iki çok baytlı karakter dizesini, kullanımda olan çok baytlı [kod sayfası](../../c-runtime-library/code-pages.md) tarafından belirtilen naicographic sırasına göre Harmanla.
 
-Bazı kod sayfaları ve karşılık gelen karakter kümeleri için, karakter kümesindeki karakterlerin sırası lexicographic karakter sıraından farklı bir şekilde değişebilir. "C" yerel ayarında bu durum böyle değildir: ASCII karakter kümesindeki karakterlerin sırası karakterlerin lexicographic sırasıyla aynıdır. Ancak, bazı Avrupa kod sayfalarında, örneğin, ' a ' karakteri (0x61) karakter kümesindeki ' ä ' (değer 0xE4) karakterinden önce gelir, ancak ' ä ' karakteri ' a ' lexıgrafik karakterinden önce gelir. Bu örnekte, dizelerin bayt olarak bir lexıgraphic karşılaştırması gerçekleştirmek için **_mbsnbcmp**yerine **_mbsnbcoll** kullanın; yalnızca dize eşitliği denetlemek için **_mbsnbcmp**kullanın.
+Bazı kod sayfaları ve karşılık gelen karakter kümeleri için, karakter kümesindeki karakterlerin sırası lexicographic karakter sıraından farklı bir şekilde değişebilir. "C" yerel ayarında bu durum böyle değildir: ASCII karakter kümesindeki karakterlerin sırası karakterlerin lexicographic sırasıyla aynıdır. Ancak, bazı Avrupa kod sayfalarında, örneğin, ' a ' karakteri (0x61) karakter kümesindeki ' ä ' (değer 0xE4) karakterinden önce gelir, ancak ' ä ' karakteri ' a ' lexıgrafik karakterinden önce gelir. Bu örnekte, dizelerin bayt olarak bir lexıgraphic karşılaştırması gerçekleştirmek için **_mbsnbcmp** yerine **_mbsnbcoll** kullanın; yalnızca dize eşitliği denetlemek için **_mbsnbcmp** kullanın.
 
 **Coll** işlevleri karşılaştırmayı için lexıgrafik 'i karşılaştırmak üzere harmanlarken, **CMP** işlevleri yalnızca dize eşitlik için test ederken, **coll** işlevleri karşılık gelen **CMP** sürümlerinden çok daha yavaştır. Bu nedenle, **coll** işlevleri, yalnızca karakter kümesi sırası ve geçerli kod sayfasındaki lexıgraphic karakter sırası arasında bir fark olduğunda kullanılmalıdır ve bu fark karşılaştırma açısından ilgi açısından önemlidir.
 
@@ -135,10 +136,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcoll**|\<mbstring. h>|
-|**_mbsnbcoll_l**|\<mbstring. h>|
-|**_mbsnbicoll**|\<mbstring. h>|
-|**_mbsnbicoll_l**|\<mbstring. h>|
+|**_mbsnbcoll**|\<mbstring.h>|
+|**_mbsnbcoll_l**|\<mbstring.h>|
+|**_mbsnbicoll**|\<mbstring.h>|
+|**_mbsnbicoll_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -148,6 +149,6 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)<br/>
 [_mbsnbicmp, _mbsnbicmp_l](mbsnbicmp-mbsnbicmp-l.md)<br/>
-[strcoll İşlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
+[strcoll Işlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

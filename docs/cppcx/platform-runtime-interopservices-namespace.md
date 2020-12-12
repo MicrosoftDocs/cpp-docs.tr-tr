@@ -1,5 +1,6 @@
 ---
-title: 'Platform::Runtime:: InteropServices Namespace'
+description: 'Daha fazla bilgi edinin: Platform:: Runtime:: InteropServices ad alanı'
+title: 'Platform:: Runtime:: InteropServices ad alanı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Runtime::InteropServices Namespace
 ms.assetid: 546b981a-a360-4a78-b89f-fdf0df848747
-ms.openlocfilehash: c527c642228d97d8b185e3b97ff38304b09d5769
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 710da76e27f8b1d6460a8f2c9809efff07ce132c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330199"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308035"
 ---
-# <a name="platformruntimeinteropservices-namespace"></a>Platform::Runtime:: InteropServices Namespace
+# <a name="platformruntimeinteropservices-namespace"></a>Platform:: Runtime:: InteropServices ad alanı
 
-Bu ad alanı, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.
+Bu ad alanı yalnızca iç kullanım amaçlıdır ve geliştirme için kullanılması amaçlanmamaktadır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Platform {
@@ -28,9 +29,9 @@ namespace Platform {
 
 ### <a name="members"></a>Üyeler
 
-Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri görüntüleyebilir.
+Bu ad alanı iç kullanım için tasarlanmış olsa da, tarayıcılar bu ad alanının aşağıdaki üyelerini görüntüleyebilir.
 
-|Ad|Açıklama|
+|Ad|Görüyorum|
 |----------|------------|
 |ComInterfaceType| numaralandırması|
 |InterfaceTypeAttribute||
@@ -45,10 +46,10 @@ Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri 
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
-**Namespace:** Platform::InteropServices
+**Ad alanı:** Platform:: InteropServices
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)
+[Platform ad alanı](platform-namespace-c-cx.md)

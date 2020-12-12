@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3241'
 title: Derleyici hatası C3241
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3241
 ms.assetid: 2ca14879-bba0-4a23-b22a-72cfff92d6a4
-ms.openlocfilehash: 6a618a9c538558d2aa4b995cbc9071bb8e94a5bc
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c940599ccee67338c6a088793970b7a255d83ff2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754588"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307346"
 ---
 # <a name="compiler-error-c3241"></a>Derleyici hatası C3241
 

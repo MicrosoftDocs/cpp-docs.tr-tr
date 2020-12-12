@@ -1,5 +1,6 @@
 ---
-title: 'Platform:: TypeCode numaralandırması'
+description: 'Daha fazla bilgi edinin: Platform:: TypeCode numaralandırması'
+title: Platform::TypeCode Numaralandırması
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::TypeCode Enumeration
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
-ms.openlocfilehash: 86bc17c45f36a5a72b089340e166df11e9a4334d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3e7bc3d5fa3cf8aec29a9aa3f20c7d02489eddf9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214295"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307892"
 ---
-# <a name="platformtypecode-enumeration"></a>Platform:: TypeCode numaralandırması
+# <a name="platformtypecode-enumeration"></a>Platform::TypeCode Numaralandırması
 
 Yerleşik bir türü temsil eden sayısal bir kategori belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum class TypeCode {};
@@ -33,7 +34,7 @@ enum class TypeCode {};
 |DateTime|Bir tarih saat türü.|
 |Ondalık|Sayısal bir tür.|
 |Çift|Default:: float64 türü.|
-|Boş|Kağıt|
+|Olmamalıdır|Kağıt|
 |Int16|Varsayılan:: int16 türü.|
 |Int32|Varsayılan:: Int32 türü.|
 |Int64|Default:: int64 türü.|

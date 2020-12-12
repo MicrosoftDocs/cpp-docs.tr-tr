@@ -1,20 +1,21 @@
 ---
+description: 'Daha fazla bilgi edinin: ortam sabitleri'
 title: Ortam Sabitleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MAX_ENV constant
 - _MAX_ENV constant
 ms.assetid: 5224f540-231c-47aa-be9a-467efd1db281
-ms.openlocfilehash: 789d4e27de5b21a76bfd6155ec7f49135a21593a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 639ef81868580d82c5b6c208c32944a313a6dec9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305071"
 ---
 # <a name="environmental-constants"></a>Ortam Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <stdlib.h>
@@ -22,12 +23,12 @@ ms.locfileid: "62289968"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sabit dizeler için ortam uzunluğu tanımlar.
+Bu sabit, dizeler için çevresel uzunluğu tanımlar.
 
-|Sabit|Açıklama|
+|Sabit|Anlamı|
 |--------------|-------------|
-|`_MAX_ENV`|Bir ortam dize boyutu en fazla dize.|
+|`_MAX_ENV`|Bir ortam dizesinin en büyük dize boyutu.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

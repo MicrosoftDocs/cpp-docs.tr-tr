@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __sidt'
 title: __sidt
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - sidt instruction
 - __sidt intrinsic
 ms.assetid: 01e83d14-6e63-4dea-8f64-5a0339d69641
-ms.openlocfilehash: d6b685da0e02373307a3149c5b7b28213f37ad40
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 075351bc10981dd8453381e9ce9393a046dfd884
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222330"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306969"
 ---
 # <a name="__sidt"></a>__sidt
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Kesme tanımlayıcısı tablo yazmacın (ıDTR) değerini belirtilen bellek konumunda depolar.
 
@@ -37,11 +38,11 @@ void __sidt(void * Destination);
 |---------------|------------------|
 |`__sidt`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev, `SIDT` makine yönergesine eşdeğerdir. `__sidt` Daha fazla bilgi için belgeyi arayın, "Intel mimarisi yazılım geliştiricisi El Ile, birim 2: Yönerge kümesi başvurusu, " [Intel Corporation](https://software.intel.com/articles/intel-sdm) sitesinde.
+`__sidt`İşlev, `SIDT` makine yönergesine eşdeğerdir. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) sitesinde "Intel mimarisi yazılım geliştiricisi el kitabı, toplu 2: yönerge kümesi başvurusu" belgesinde arama yapın.
 
 **SON Microsoft 'a özgü**
 

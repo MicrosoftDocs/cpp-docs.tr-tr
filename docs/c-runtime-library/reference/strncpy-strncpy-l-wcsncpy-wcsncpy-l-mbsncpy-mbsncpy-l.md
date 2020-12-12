@@ -1,4 +1,5 @@
 ---
+description: ': Strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l hakkında daha fazla bilgi edinin'
 title: strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 ms.date: 4/2/2020
 api_name:
@@ -68,12 +69,12 @@ helpviewer_keywords:
 - tcsncpy function
 - _strncpy_l function
 ms.assetid: ac4345a1-a129-4f2f-bb8a-373ec58ab8b0
-ms.openlocfilehash: 1a21d9cb06b9459a7f015cd8f2a8fee75a1ab979
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 28d3998ccfe1e7460fa628d462732f233c553b10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919276"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306111"
 ---
 # <a name="strncpy-_strncpy_l-wcsncpy-_wcsncpy_l-_mbsncpy-_mbsncpy_l"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 
@@ -175,18 +176,18 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*StrDest*döndürür. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
+*StrDest* döndürür. Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strncpy** Işlevi, *strSource* başlangıç *sayısı* karakterlerini *strDest* olarak kopyalar ve *strDest*değerini döndürür. *Count* , *strSource*'un uzunluğuna eşit veya daha küçükse, kopyalanmış dizeye bir null karakter otomatik olarak eklenmez. *Count* , *strSource*uzunluğundan büyükse, hedef dize, uzunluk *sayısına*kadar olan null karakterlerle doldurulur. Kaynak ve hedef dizeler çakıştığında, **strncpy** davranışı tanımsızdır.
+**Strncpy** Işlevi, *strSource* başlangıç *sayısı* karakterlerini *strDest* olarak kopyalar ve *strDest* değerini döndürür. *Count* , *strSource*'un uzunluğuna eşit veya daha küçükse, kopyalanmış dizeye bir null karakter otomatik olarak eklenmez. *Count* , *strSource* uzunluğundan büyükse, hedef dize, uzunluk *sayısına* kadar olan null karakterlerle doldurulur. Kaynak ve hedef dizeler çakıştığında, **strncpy** davranışı tanımsızdır.
 
 > [!IMPORTANT]
-> **strncpy** , *strDest*içinde yeterli alanı denetlemez; Bu, arabellek taşmalarının olası bir nedenini sağlar. *Count* bağımsız değişkeni, kopyalanmış karakter sayısını sınırlar; Bu, *strDest*boyutu için bir sınır değildir. Aşağıdaki örneğe bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **strncpy** , *strDest* içinde yeterli alanı denetlemez; Bu, arabellek taşmalarının olası bir nedenini sağlar. *Count* bağımsız değişkeni, kopyalanmış karakter sayısını sınırlar; Bu, *strDest* boyutu için bir sınır değildir. Aşağıdaki örneğe bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-*StrDest* veya *strSource* **null** bir işaretçisiyse veya *sayı* sıfıra eşit veya daha küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*StrDest* veya *strSource* **null** bir işaretçisiyse veya *sayı* sıfıra eşit veya daha küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
-**wcsncpy** ve **_mbsncpy** , **strncpy**öğesinin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsncpy** ve **_mbsncpy** bağımsız değişkenleri ve dönüş değeri buna göre farklılık gösterir. Bu altı işlev, aynı şekilde davranır.
+**wcsncpy** ve **_mbsncpy** , **strncpy** öğesinin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsncpy** ve **_mbsncpy** bağımsız değişkenleri ve dönüş değeri buna göre farklılık gösterir. Bu altı işlev, aynı şekilde davranır.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayar yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -208,9 +209,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncpy**|\<String. h>|
-|**wcsncpy**|\<String. h> veya \<wchar. h>|
-|**_mbsncpy**, **_mbsncpy_l**|\<mbstring. h>|
+|**strncpy**|\<string.h>|
+|**wcsncpy**|\<string.h> veya \<wchar.h>|
+|**_mbsncpy**, **_mbsncpy_l**|\<mbstring.h>|
 
 Ek platform uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -287,7 +288,7 @@ Otomatik değişkenlerin yerleşimi ve hata algılama ve kod koruma düzeyi, de�
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

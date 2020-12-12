@@ -1,61 +1,62 @@
 ---
+description: 'Daha fazla bilgi edinin: dizeler (C++/CX)'
 title: Dizeler (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 5b34e1df-7c2b-4269-aba8-b767d36c49d9
-ms.openlocfilehash: a67b9a4552dc83791c05029cca76f60fd83df0f1
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 83ea4cd86b57e8bfd81968cbb617b7b8af81b978
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745356"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307619"
 ---
 # <a name="strings-ccx"></a>Dizeler (C++/CX)
 
-Windows Runtime'daki metin C++/CX'te [Platform:String Class](../cppcx/platform-string-class.md)ile temsil edilir. `Platform::String Class` Dizeleri Windows Runtime sınıflarında yöntemlere ileri geri aktarırken veya uygulama ikili arabirimi (ABI) sınırındaki diğer Windows Runtime bileşenleriyle etkileşimde bulunurken kullanın. Birkaç `Platform::String Class` yaygın dize işlemleri için yöntemler sağlar, ancak tam özellikli dize sınıfı olarak tasarlanmaz. C++ modülünüzde, önemli bir metin işleme için [wstring](../standard-library/basic-string-class.md) gibi standart C++ dize türlerini kullanın ve genel arabirime geçmeden önce nihai sonucu [Platform::String^](../cppcx/platform-string-class.md) olarak dönüştürün. Bu arasında `wstring` dönüştürmek için kolay `wchar_t*` ve `Platform::String`verimli ya da .
+Windows Çalışma Zamanı metin, C++/CX ile [Platform:: String sınıfı](../cppcx/platform-string-class.md)tarafından temsil edilir. `Platform::String Class`Dizeleri Windows çalışma zamanı sınıflardaki yöntemlere geri ve ileri geçirdiğinizde veya uygulama ikili arabirimi (ABI) sınırları genelinde diğer Windows çalışma zamanı bileşenleriyle etkileşim kurarken kullanın. , `Platform::String Class` Birkaç yaygın dize işlemi için yöntemler sağlar, ancak tam özellikli bir dize sınıfı olacak şekilde tasarlanmamıştır. C++ modülünüzün herhangi bir önemli metin işleme için [wstring](../standard-library/basic-string-class.md) gibi standart C++ dize türlerini kullanın ve ardından son sonucu, genel arabirime veya ortak bir arabirimden geçirmeden önce [Platform:: String ^](../cppcx/platform-string-class.md) olarak dönüştürün. Veya arasında dönüştürme kolay ve verimlidir `wstring` `wchar_t*` `Platform::String` .
 
 **Hızlı geçiş**
 
-Bazı durumlarda, derleyici, temel dize verilerini `Platform::String` kopyalamadan `String` güvenli bir şekilde bir işlev oluşturabileceğini veya bir işleve geçebileceğini doğrulayabilir. Bu tür işlemler *hızlı geçiş* olarak bilinir ve saydam olarak gerçekleşir.
+Bazı durumlarda, derleyici, `Platform::String` `String` temel alınan dize verilerini kopyalamadan bir işleve güvenle bir şekilde bir şekilde veri kurabilecebildiğini veya geçirebildiğini doğrulayabilirler. Bu gibi işlemler *Hızlı geçiş* olarak bilinir ve saydam olarak oluşur.
 
-## <a name="string-construction"></a>Dize yapısı
+## <a name="string-construction"></a>Dize oluşturma
 
-Bir `String` nesnenin değeri( 16 bit Unicode) `char16` karakterden oluşan değişmez (salt okunur) bir dizidir. Bir `String` nesne değişmez olduğundan, yeni bir dize gerçek `String` bir değişkene `String` atanması aslında `String` özgün nesnenin yerine yeni bir nesne alır. Concatenation işlemleri özgün `String` nesnenin imha ve yeni bir nesnenin oluşturulması nı içerir.
+Bir nesnenin değeri, `String` `char16` (16 bit Unicode) karakterlerinden oluşan sabit bir (salt okunurdur) dizidir. Bir `String` nesne sabit olduğundan, bir değişkene yeni bir dize sabit değeri atanması `String` aslında özgün `String` nesnenin yerini yeni bir `String` nesneyle değiştirir. Birleştirme işlemleri özgün nesnenin yok edilmesini `String` ve yeni bir nesne oluşturulmasını içerir.
 
-**Sabit değerler**
+**Değişmez Değerler**
 
-*Gerçek karakter,* tek tırnak işaretleriyle çevrili bir karakterdir ve *edebi dize* çift tırnak işaretleriyle ekilen bir karakter dizisidir. String^ değişkenini initialiseleştirmek için bir literal kullanırsanız, derleyici, `char16` literal'ın karakterlerden oluştuğunu varsayar. Diğer bir deyişle, 'L' dize değiştirici ile literal önce veya **bir _T()** veya **TEXT()** makro içinde literal içine almak zorunda değilsiniz. Unicode için C++ desteği hakkında daha fazla bilgi için [Unicode Programlama Özeti'ne](../text/unicode-programming-summary.md)bakın.
+*Sabit karakter* , tek tırnak işareti içine alınmış bir karakterdir ve *sabit dize* , çift tırnak işareti içine alınmış bir karakter dizisidir. Dize ^ değişkenini başlatmak için bir değişmez değer kullanırsanız, derleyici değişmez değerin karakterlerden oluştuğunu varsayar `char16` . Diğer bir deyişle, ' L ' dize değiştiricisiyle veya değişmez değeri bir **_T ()** ya da **metin ()** makrosunda almanız gerekmez. Unicode için C++ desteği hakkında daha fazla bilgi için bkz. [Unicode Programlama Özeti](../text/unicode-programming-summary.md).
 
-Aşağıdaki örnek, nesneleri oluşturmak `String` için çeşitli yollar gösterir.
+Aşağıdaki örnek, nesneleri oluşturmak için çeşitli yollar gösterir `String` .
 
 [!code-cpp[cx_strings#01](../cppcx/codesnippet/CPP/cppcx_strings/class1.cpp#01)]
 
 ## <a name="string-handling-operations"></a>Dize işleme işlemleri
 
-Sınıf, `String` dizeleri ve diğer temel dize işlemleri karşılaştırma, koncatenating yöntemleri ve işleçleri sağlar. Daha kapsamlı dize manipülasyonları `String::Data()` gerçekleştirmek için, `String^` nesnenin değerini almak `const wchar_t*`için üye işlevi kullanın. Daha sonra zengin dize `std::wstring`işleme işlevleri sağlayan bir , baş harflerini almak için bu değeri kullanın.
+`String`Sınıfı, dizeleri ve diğer temel dize işlemlerini bitişme, karşılaştırma için yöntemler ve işleçler sağlar. Daha kapsamlı dize düzenlemeleri gerçekleştirmek için `String::Data()` üye işlevini kullanarak `String^` nesnesinin değerini bir olarak alın `const wchar_t*` . Daha sonra bu değeri kullanarak `std::wstring` , zengin dize işleme işlevleri sağlayan bir ' ı başlatın.
 
 [!code-cpp[cx_strings#03](../cppcx/codesnippet/CPP/cppcx_strings/class1.cpp#03)]
 
-## <a name="string-conversions"></a>Dize dönüşümleri
+## <a name="string-conversions"></a>Dize dönüştürmeleri
 
-A `Platform::String` yalnızca `char16` karakterleri veya `NULL` karakteri içerebilir. Uygulamanızın 8 bit karakterlerle çalışması gerekiyorsa, metni bir `const wchar_t*`' olarak ayıklamak için [String::Data'yı](../cppcx/platform-string-class.md#data) kullanın. Daha sonra veri üzerinde çalışmak ve yeni `wchar_t*` `Platform::String`bir oluşturmak için kullanabileceğiniz bir veya [wstring](../standard-library/basic-string-class.md), geri dönüştürmek için uygun Windows işlevleri veya Standart Kitaplık işlevleri kullanabilirsiniz .
+`Platform::String` `char16` , Yalnızca karakter veya `NULL` karakter içerebilir. Uygulamanızın 8 bitlik karakterlerle çalışması gerekiyorsa, metni bir olarak ayıklamak için [::D ata dizesini](../cppcx/platform-string-class.md#data) kullanın `const wchar_t*` . Daha sonra, veriler üzerinde işlem yapmak ve bunu bir veya wstring 'e dönüştürmek için uygun Windows işlevleri veya standart kitaplık işlevlerini kullanabilir ve bunu `wchar_t*` Yeni bir oluşturmak için [](../standard-library/basic-string-class.md)kullanabilirsiniz `Platform::String` .
 
-Aşağıdaki kod parçası, bir `String^` değişkenin bir `wstring` değişkene nasıl dönüştürüldüğünü gösterir. Bu örnekte kullanılan dize işleme hakkında daha fazla bilgi için [basic_string bkz.](../standard-library/basic-string-class.md#replace)
+Aşağıdaki kod parçası, bir `String^` değişkenin bir değişkene ve bir değişkene nasıl dönüştürüleceğini gösterir `wstring` . Bu örnekte kullanılan dize düzenlemesi hakkında daha fazla bilgi için, bkz. [basic_string:: Replace](../standard-library/basic-string-class.md#replace).
 
 [!code-cpp[cx_strings#04](../cppcx/codesnippet/CPP/cppcx_strings/class1.cpp#04)]
 
 ## <a name="string-length-and-embedded-null-values"></a>Dize uzunluğu ve gömülü NULL değerleri
 
-[String::Uzunluk,](../cppcx/platform-string-class.md#length) bayt sayısını değil, dizedeki karakter sayısını döndürür. Bir dize oluşturmak için yığın semantiklerini kullandığınızda açıkça belirtmediğiniz sürece sonlandırıcı NULL karakteri sayılmaz.
+[Dize:: length](../cppcx/platform-string-class.md#length) , bayt sayısını değil dizedeki karakter sayısını döndürür. Bir dize oluşturmak için yığın semantiğini kullandığınızda onu açıkça belirtmediğiniz müddetçe, Sonlandırıcı NULL karakteri sayılmaz.
 
-A `Platform::String` katıştırılmış NULL değerlerini içerebilir, ancak yalnızca NULL bir bir birlikteleştirme işleminin sonucu olduğunda. Katıştılı NULL'ler dize gerçeklerinde desteklenmez; bu nedenle, gömülü NULL'leri bu şekilde `Platform::String`kullanarak bir . Bir özellik atandığında dize görüntülendiğinde, örneğin, bir `Platform::String` `TextBlock::Text` özellik için atandığında gömülü NULL değerleri yoksayılır. Dize değeri `Data` özellik tarafından döndürüldüğünde katıştırılmış NULL'ler kaldırılır.
+`Platform::String`Yalnızca null bir birleştirme işleminin sonucu olduğunda, gömülü null değerler içerebilir. Gömülü null değerler dize sabit değerlerinde desteklenmez; Bu nedenle, öğesini başlatmak için gömülü null değerleri bu şekilde kullanamazsınız `Platform::String` . Bir öğesine gömülü NULL değerler `Platform::String` dize görüntülenirken yok sayılır, örneğin, bir `TextBlock::Text` özelliğe atandığında. Dize değeri özelliği tarafından döndürüldüğünde gömülü null değerler kaldırılır `Data` .
 
 ## <a name="stringreference"></a>StringReference
 
-Bazı durumlarda kodunuz (a) std alır::wstring veya wchar_t dize veya L"" dize literal ve sadece giriş parametresi olarak bir String^ alır başka bir yöntem üzerine geçer. Özgün dize arabelleği geçerli kaldığı ve işlev dönmeden önce mutasyona uğramadığı `wchar_t*` sürece, dize veya dizeyi bir [Platforma dönüştürebilirsiniz::StringReference](../cppcx/platform-stringreference-class.md), ve bir `Platform::String^`. Kullanıcı tanımlı `StringReference` bir dönüştürme olduğu `Platform::String^`için buna izin verilir. Kullanarak `StringReference` dize verilerinin ekstra bir kopyasını yapmaktan kaçınabilirsiniz. Çok sayıda dize geçtiğiniz döngülerde veya çok büyük dizeleri geçerken, potansiyel olarak kullanarak `StringReference`önemli bir performans artışı elde edebilirsiniz. Ancak `StringReference` özgün dize arabelleği ödünç aldığı için, bellek bozulmasını önlemek için aşırı özen kullanmanız gerekir. Özgün dize, `StringReference` yöntem döndürdüğünde kapsamda olacağı garanti edilmedikçe, bir eşzamanlı yönteme geçmemelisiniz. StringReference'dan başlatılan string^ ikinci bir atama işlemi gerçekleşirse, dize verilerinin bir ayırmasını ve kopyasını zorlar. Bu durumda, performans avantajı `StringReference`kaybedersiniz.
+Bazı durumlarda, kodunuz (a) bir std:: wstring veya wchar_t String ya da L "" dize sabit değeri alır ve bunu yalnızca giriş parametresi olarak ^ dizesi alan başka bir yönteme geçirir. Özgün dize arabelleğinin kendisi geçerli kaldığı ve işlevin döndürdüğü bir zaman olmadığı sürece, `wchar_t*` String veya String değişmez değerini bir [Platform:: stringreference](../cppcx/platform-stringreference-class.md)öğesine dönüştürebilir ve yerine bunu geçirebilirsiniz `Platform::String^` . `StringReference`İçin Kullanıcı tanımlı bir dönüştürmesi olduğundan buna izin verilir `Platform::String^` . Kullanarak, `StringReference` dize verilerinin fazladan bir kopyasını yapmaktan kaçınabilirsiniz. Çok sayıda dizeyi geçirdiğiniz veya çok büyük dizeleri geçirirken Döngülerde, kullanarak önemli bir performans geliştirmesi elde edebilirsiniz `StringReference` . Ancak `StringReference` asıl dize arabelleğini temel alarak, bellek bozulmasını önlemek için çok dikkatli olmanız gerekir. `StringReference`Özgün dizenin, bu yöntemin döndürdüğü zaman kapsamda olması garanti edilmediği takdirde, bir zaman uyumsuz metoda geçirmemelisiniz. Bir StringReference 'dan başlatılan ^ dizesi, ikinci bir atama işlemi gerçekleşirse dize verilerinin bir ayırmasını ve kopyasını zorlar. Bu durumda, ' nin performans avantajını kaybedersiniz `StringReference` .
 
-Standart `StringReference` bir C++ sınıfı türü olduğunu, ref sınıfı olmadığını unutmayın, bunu tanımladığınız ref sınıflarının ortak arabiriminde kullanamazsınız.
+`StringReference`Bir başvuru sınıfı değil, standart bir C++ sınıf türü olduğunu unutmayın, bunu tanımladığınız başvuru sınıflarının ortak arabiriminde kullanamazsınız.
 
-Aşağıdaki örnek, StringReference'ın nasıl kullanılacağını gösterir:
+Aşağıdaki örnek, StringReference 'ın nasıl kullanılacağını gösterir:
 
 ```cpp
 void GetDecodedStrings(std::vector<std::wstring> strings)

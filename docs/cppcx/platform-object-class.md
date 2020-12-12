@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Platform:: Object Class'
 title: 'Platform:: Object sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,18 +13,18 @@ f1_keywords:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-ms.openlocfilehash: dded4602eda9653f50d26ef1b4aae86af96a262b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a190d5a56bb27fb95ac2c2c8bd2ba0e0d0572427
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213040"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308256"
 ---
 # <a name="platformobject-class"></a>Platform:: Object sınıfı
 
 Windows Çalışma Zamanı uygulamalarında ref sınıfları ve başvuru yapıları için ortak davranış sağlar. Tüm ref sınıfı ve ref struct örnekleri, dolaylı olarak platform:: Object ^ türüne dönüştürülebilir ve sanal ToString metodunu geçersiz kılabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public ref class Object : Object
@@ -44,7 +45,7 @@ public ref class Object : Object
 |[Nesne:: Equals](#equals)|Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.|
 |[Nesne:: GetHashCode](#gethashcode)|Bu örneğe ilişkin karma kodu döndürür.|
 |[Nesne:: ReferenceEquals](#referenceequals)|Belirtilen nesne örneklerinin aynı örnek olup olmadığını belirler.|
-|[ToString](#tostring)|Geçerli nesneyi temsil eden dizeyi döndürür. Geçersiz kılınabilir.|
+|[Yönte](#tostring)|Geçerli nesneyi temsil eden dizeyi döndürür. Geçersiz kılınabilir.|
 |[GetType](#gettype)|Geçerli örneği açıklayan bir [Platform:: Type](../cppcx/platform-type-class.md) alır.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -59,11 +60,11 @@ public ref class Object : Object
 
 **Ad alanı:** Platformunun
 
-## <a name="objectequals-method"></a><a name="equals"></a>Object:: Equals yöntemi
+## <a name="objectequals-method"></a><a name="equals"></a> Object:: Equals yöntemi
 
 Belirtilen nesnenin geçerli nesneye eşit olup olmadığını belirler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool Equals(
@@ -80,11 +81,11 @@ Karşılaştırma yapılacak nesne.
 
 **`true`** nesneler eşitse, tersi durumda **`false`** .
 
-## <a name="objectgethashcode-method"></a><a name="gethashcode"></a>Object:: GetHashCode yöntemi
+## <a name="objectgethashcode-method"></a><a name="gethashcode"></a> Object:: GetHashCode yöntemi
 
 `IUnknown`Bu örnek için BIR com nesnesi veya BIR com nesnesi değilse hesaplanan karma değeri olan * kimlik değerini döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:int GetHashCode();
@@ -98,11 +99,11 @@ Bu nesneyi benzersiz bir şekilde tanımlayan sayısal bir değer.
 
 Eşlemlerdeki nesneler için anahtar oluşturmak üzere GetHashCode kullanabilirsiniz. Karma kodlarını, [nesne:: Equals](#equals)kullanarak karşılaştırabilirsiniz. Kod yolu son derece kritiktir ve `GetHashCode` `Equals` yeterince hızlı değilse, temel alınan com katmanına açılır ve yerel `IUnknown` işaretçi karşılaştırmaları yapabilirsiniz.
 
-## <a name="objectgettype-method"></a><a name="gettype"></a>Object:: GetType yöntemi
+## <a name="objectgettype-method"></a><a name="gettype"></a> Object:: GetType yöntemi
 
 Bir nesnenin çalışma zamanı türünü açıklayan bir [Platform:: Type](../cppcx/platform-type-class.md) nesnesi döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 Object::GetType();
@@ -124,21 +125,21 @@ Sınıf adı için bir nesne döndürmek için [TypeId](../extensions/typeid-cpp
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
 
-## <a name="objectobject-constructor"></a><a name="ctor"></a>Object:: Object Oluşturucusu
+## <a name="objectobject-constructor"></a><a name="ctor"></a> Object:: Object Oluşturucusu
 
 Nesne sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:Object();
 ```
 
-## <a name="objectreferenceequals-method"></a><a name="referenceequals"></a>Object:: ReferenceEquals yöntemi
+## <a name="objectreferenceequals-method"></a><a name="referenceequals"></a> Object:: ReferenceEquals yöntemi
 
 Belirtilen nesne örneklerinin aynı örnek olup olmadığını belirler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2);
@@ -156,11 +157,11 @@ Karşılaştırma yapılacak ikinci nesne.
 
 **`true`** iki nesne aynı ise, Aksi takdirde, **`false`** .
 
-## <a name="objecttostring-method-ccx"></a><a name="tostring"></a>Object:: ToString yöntemi (C++/CX)
+## <a name="objecttostring-method-ccx"></a><a name="tostring"></a> Object:: ToString yöntemi (C++/CX)
 
 Geçerli nesneyi temsil eden dizeyi döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:

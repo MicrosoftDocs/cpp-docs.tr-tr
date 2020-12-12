@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ostrstream sınıfı'
 title: ostrstream Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - std::ostrstream [C++], rdbuf
 - std::ostrstream [C++], str
 ms.assetid: e2e34679-b266-4728-a8e1-8eda5d400e46
-ms.openlocfilehash: f17d8006aea6c5467f8de270318386bb12df264a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9966f044d48aa762d681bafcfc22441f7124c9a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305149"
 ---
 # <a name="ostrstream-class"></a>ostrstream Sınıfı
 
 Öğelerin ve kodlanmış nesnelerin, [strstreambuffer](../standard-library/strstreambuf-class.md)sınıfının Akış arabelleğine eklenmesini denetleyen bir nesne tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class ostrstream : public ostream
@@ -57,7 +58,7 @@ Nesnesi, sınıfının bir nesnesini depolar `strstreambuf` .
 
 **Ad alanı:** std
 
-## <a name="ostrstreamfreeze"></a><a name="freeze"></a>ostrstream:: Freeze
+## <a name="ostrstreamfreeze"></a><a name="freeze"></a> ostrstream:: Freeze
 
 Akış arabelleği işlemleri aracılığıyla akış arabelleğinin kullanılamamasına neden olur.
 
@@ -78,7 +79,7 @@ void freeze(bool _Freezeit = true);
 
 Tarafından kullanılan bir örnek için bkz. [strstream:: Freeze](../standard-library/strstreambuf-class.md#freeze) `freeze` .
 
-## <a name="ostrstreamostrstream"></a><a name="ostrstream"></a>ostrstream:: ostrstream
+## <a name="ostrstreamostrstream"></a><a name="ostrstream"></a> ostrstream:: ostrstream
 
 Türünde bir nesne oluşturur `ostrstream` .
 
@@ -103,13 +104,13 @@ Arabelleğin giriş ve çıkış modu. Daha fazla bilgi için bkz. [ios_base:: O
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her iki Oluşturucu da,**sb**strstreamarabelleğe sınıfının saklı nesnesi olan [ostream](../standard-library/ostream-typedefs.md#ostream)(SB) öğesini çağırarak temel sınıfı başlatır `sb` . [strstreambuf](../standard-library/strstreambuf-class.md) İlk Oluşturucu çağırarak da başlatılır `sb` `strstreambuf` . İkinci Oluşturucu, temel sınıfı iki yönden birini başlatır:
+Her iki Oluşturucu da,strstreamarabelleğe sınıfının saklı nesnesi olan [ostream](../standard-library/ostream-typedefs.md#ostream)(SB) öğesini çağırarak temel sınıfı başlatır `sb` . [](../standard-library/strstreambuf-class.md) İlk Oluşturucu çağırarak da başlatılır `sb` `strstreambuf` . İkinci Oluşturucu, temel sınıfı iki yönden birini başlatır:
 
 - `_Mode`  &  **İos_base:: App**= = 0 ise, `ptr` bir öğe dizisinin ilk öğesini `count` ve Oluşturucu çağrılarını `strstreambuf` ( `ptr` , `count` , `ptr` ) belirlemelidir.
 
 - Aksi takdirde, `ptr` ilk öğesi tarafından atanan bir C dizesi içeren bir Count öğeleri dizisinin ilk öğesi `ptr` ve Oluşturucu `strstreambuf` ( `ptr` , `count` , `ptr`  +  `strlen` ( `ptr` )) çağırır.
 
-## <a name="ostrstreampcount"></a><a name="pcount"></a>ostrstream::p sayısı
+## <a name="ostrstreampcount"></a><a name="pcount"></a> ostrstream::p sayısı
 
 Denetlenen diziye yazılan öğe sayısının sayısını döndürür.
 
@@ -129,7 +130,7 @@ Denetlenen diziye yazılan öğe sayısı.
 
 Tarafından kullanılan bir örnek için bkz. [strstream::p Count](../standard-library/strstreambuf-class.md#pcount) `pcount` .
 
-## <a name="ostrstreamrdbuf"></a><a name="rdbuf"></a>ostrstream:: rdarabelleğe
+## <a name="ostrstreamrdbuf"></a><a name="rdbuf"></a> ostrstream:: rdarabelleğe
 
 Akışın ilişkili strstreamsize nesnesine bir işaretçi döndürür.
 
@@ -149,7 +150,7 @@ Akışın ilişkilendirildiği strstreamarabelleğe yönelik bir işaretçi.
 
 Tarafından kullanılan bir örnek için bkz. [strstreamarabelleğe::p Count](../standard-library/strstreambuf-class.md#pcount) `rdbuf` .
 
-## <a name="ostrstreamstr"></a><a name="str"></a>ostrstream:: Str
+## <a name="ostrstreamstr"></a><a name="str"></a> ostrstream:: Str
 
 Çağırır [ve](../standard-library/strstreambuf-class.md#freeze)sonra denetlenen sıranın başlangıcına bir işaretçi döndürür.
 

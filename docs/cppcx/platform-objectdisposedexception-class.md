@@ -1,5 +1,6 @@
 ---
-title: Platform::ObjectDisposedException sınıfı
+description: 'Daha fazla bilgi edinin: Platform:: ObjectDisposedException sınıfı'
+title: 'Platform:: ObjectDisposedException sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::ObjectDisposedException
 ms.assetid: 68506fe4-d09c-4407-999f-1e3edb261d41
-ms.openlocfilehash: 566f8a05a6b81adb78113dd4ba0fb1c47fc65a2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0a7bbab72a8d641a4fdef0fed837ffcc127eea7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183138"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308243"
 ---
-# <a name="platformobjectdisposedexception-class"></a>Platform::ObjectDisposedException sınıfı
+# <a name="platformobjectdisposedexception-class"></a>Platform:: ObjectDisposedException sınıfı
 
-Silinen bir nesne üzerinde bir işlem gerçekleştirildiğinde oluşturulur.
+Atılmış bir nesne üzerinde bir işlem gerçekleştirildiğinde oluşturulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public ref class ObjectDisposedException : COMException,    IException,    IPrintable,    IEquatable
@@ -27,18 +28,18 @@ public ref class ObjectDisposedException : COMException,    IException,    IPrin
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md).
+Daha fazla bilgi için bkz. [COMException](../cppcx/platform-comexception-class.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)
+[Platform:: COMException sınıfı](../cppcx/platform-comexception-class.md)

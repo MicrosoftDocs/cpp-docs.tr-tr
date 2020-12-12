@@ -1,5 +1,6 @@
 ---
-title: Platform ad alanı (C++/CX)
+description: 'Daha fazla bilgi edinin: Platform ad alanı (C++/CX)'
+title: Platform Ad Alanı (C++/CX)
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform Namespace (C++/CX)
 ms.assetid: b160e822-d424-43d2-ba60-57b0e81f259c
-ms.openlocfilehash: ffbfdde1a9c610f6bcb2356a26acb2b85ed9624a
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 80f1b82ed39212812c8d316d4b7de09bf20ccad8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64345771"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308321"
 ---
-# <a name="platform-namespace-ccx"></a>Platform ad alanı (C++/CX)
+# <a name="platform-namespace-ccx"></a>Platform Ad Alanı (C++/CX)
 
-Windows çalışma zamanı ile uyumlu olan yerleşik türler içerir.
+Windows Çalışma Zamanı uyumlu yerleşik türler içerir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 using namespace Platform;
@@ -28,86 +29,86 @@ using namespace Platform;
 
 **Öznitelikler**
 
-Platform ad alanı öznitelikleri, sınıflar, numaralandırmalar, arabirimler ve yapıları içerir. Platform, ayrıca iç içe ad alanlarını içerir.
+Platform ad alanı öznitelikler, sınıflar, numaralandırmalar, arabirimler ve yapılar içerir. Platform iç içe geçmiş ad alanları da içerir.
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
-|Bayraklar|Bir numaralandırma bir bit alanı olarak davranılıp gösterir. diğer bir deyişle, bir dizi bayrakları.|
-|MTAThread|Bir uygulama için iş parçacığı modeli çok iş parçacıklı grup (MTA) olduğunu gösterir.|
-|STAThread|Bir uygulama için iş parçacığı modeli tek iş parçacıklı grup (STA) olduğunu gösterir.|
+|Bayraklar|Bir numaralandırmanın bir bit alanı olarak değerlendirileceğini belirtir; Yani, bir bayrak kümesi.|
+|MTAThread|Bir uygulama için iş parçacığı modelinin çok iş parçacıklı apartman (MTA) olduğunu gösterir.|
+|STAThread|Bir uygulamanın iş parçacığı modelinin tek iş parçacıklı Apartment (STA) olduğunu gösterir.|
 
 **Sınıflar**
 
-Platform ad alanı, aşağıdaki sınıfları içerir.
+Platform ad alanı aşağıdaki sınıflara sahiptir.
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-----------|-----------------|
-|[Platform::AccessDeniedException Sınıfı](../cppcx/platform-accessdeniedexception-class.md)|Bir kaynağa veya özellik erişimi reddedilirse oluşturulur.|
-|[Platform::Agile Sınıfı](../cppcx/platform-agile-class.md)|Çevik olmayan bir nesne, Çevik bir nesne olarak temsil eder.|
-|[Platform::Array Sınıfı](../cppcx/platform-array-class.md)|Tek boyutlu, değiştirilebilir bir dizi temsil eder.|
-|[Platform::ArrayReference Sınıfı](../cppcx/platform-arrayreference-class.md)|Dizi, başlatma kopyalama işlemlerini en aza indirmek için optimize edilmiştir temsil eder.|
-|[Platform::Box Sınıfı](../cppcx/platform-box-class.md)|Uygulama ikili arabiriminde (ABI) bu tür geçirildiğinde Windows::Foundation::DateTime veya Int64 gibi bir değer türü sarmalayan bir Kutulu türü bildirmek için kullanılan veya türünde bir değişkende depolanan [Platform::Object ^](../cppcx/platform-object-class.md).|
-|[Platform::ChangedStateException Sınıfı](../cppcx/platform-changedstateexception-class.md)|Yöntemin sonuçları geçersiz kılmalarını üst koleksiyon değiştikten sonra bir koleksiyon yineleyici veya koleksiyon görünümü yöntemler çağrıldığında oluşturulur.|
-|[Platform::ClassNotRegisteredException Sınıfı](../cppcx/platform-classnotregisteredexception-class.md)|Bir COM sınıfı kaydedilmemiş olduğu zaman oluşturulur.|
-|[Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)|Tanınmayan değer bir COM yöntem çağrısından döndürülen olmadığında oluşan özel durumu temsil eder.|
-|[Platform::Delegate Sınıfı](../cppcx/platform-delegate-class.md)|Bir geri çağırma işlevini imzası temsil eder.|
-|[Platform::DisconnectedException Sınıfı](../cppcx/platform-disconnectedexception-class.md)|Nesnenin, istemcileriyle bağlantısı kesildi.|
-|[Platform::Exception Sınıfı](../cppcx/platform-exception-class.md)|Uygulama yürütme sırasında oluşan hataları temsil eder. Özel durumlar için temel sınıf.|
-|[Platform::FailureException Sınıfı](../cppcx/platform-failureexception-class.md)|İşlemi başarısız olduğunda oluşturulur. Bunu E_FAIL HRESULT eşdeğerdir.|
-|[Platform::Guid değer Sınıfı](../cppcx/platform-guid-value-class.md)|Bir GUID, Windows çalışma zamanı tür sisteminde temsil eder.|
-|[Platform::InvalidArgumentException Sınıfı](../cppcx/platform-invalidargumentexception-class.md)|Bir yöntem için sağlanan bağımsız değişkenlerden biri geçerli olmadığında oluşturulur.|
-|[Platform::InvalidCastException Sınıfı](../cppcx/platform-invalidcastexception-class.md)|Geçersiz atama veya açık dönüştürme durumlarda oluşturulur.|
-|[Platform::MTAThreadAttribute Sınıfı](../cppcx/platform-mtathreadattribute-class.md)|Bir uygulama için iş parçacığı modeli çok iş parçacıklı grup (MTA) olduğunu gösterir.|
-|[Platform::NotImplementedException Sınıfı](../cppcx/platform-notimplementedexception-class.md)|Sınıf üzerinde bir arabirim yönteminin uygulanmadı durum.|
-|[Platform::NullReferenceException Sınıfı](../cppcx/platform-nullreferenceexception-class.md)|Bir null Nesne başvurusu başvuru girişimi olduğunda oluşturulur.|
-|[Platform::Object Sınıfı](../cppcx/platform-object-class.md)|Genel davranış sağlayan bir temel sınıf.|
-|[Platform::ObjectDisposedException Sınıfı](../cppcx/platform-objectdisposedexception-class.md)|Silinen bir nesne üzerinde bir işlem gerçekleştirildiğinde oluşturulur.|
-|[Platform::OperationCanceledException Sınıfı](../cppcx/platform-operationcanceledexception-class.md)|Bir işlem iptal edildiğinde oluşturulur.|
-|[Platform::OutOfBoundsException Sınıfı](../cppcx/platform-outofboundsexception-class.md)|Bir işlem, geçerli aralığın dışında veri erişim girişiminde bulunduğunda oluşturulur.|
-|[Platform::OutOfMemoryException Sınıfı](../cppcx/platform-outofmemoryexception-class.md)|İşlemi tamamlamak için bellek yetersiz olduğunda oluşturulur.|
-|[Platform::STAThreadAttribute Sınıfı](../cppcx/platform-stathreadattribute-class.md)|Bir uygulama için iş parçacığı modeli tek iş parçacıklı grup (STA) olduğunu gösterir.|
-|[Platform::String Sınıfı](../cppcx/platform-string-class.md)|Unicode karakter metin temsil etmek için kullanılan sıralı bir koleksiyonu.|
-|[Platform::StringReference Sınıfı](../cppcx/platform-stringreference-class.md)|Kopya ek yükü en az dize arabelleklerinin erişim sağlar.|
-|[Platform::Type Sınıfı](../cppcx/platform-type-class.md)|Yerleşik bir tür tarafından bir kategori sabit listesi tanımlar.|
-|[Platform::ValueType Sınıfı](../cppcx/platform-valuetype-class.md)|Temel sınıf için değer türlerinin örnekleri.|
-|[Platform::WeakReference Sınıfı](../cppcx/platform-weakreference-class.md)|Başvuru sayısını artırmaz zayıf bir başvuru ref sınıf nesnelerine sağlar.|
-|[Platform::WriteOnlyArray Sınıfı](../cppcx/platform-writeonlyarray-class.md)|FillArray tasarımın yöntemlerde giriş parametresi olarak kullanılan bir tek boyutlu salt yazılır dizisini temsil eder.|
-|[Platform::WrongThreadException Sınıfı](../cppcx/platform-wrongthreadexception-class.md)|Bir iş parçacığı için iş parçacığının grubunu ait olmayan bir proxy nesnesi için bir arabirim işaretçisi aracılığıyla çağırdığında oluşturulur.|
+|[Platform:: AccessDeniedException Oluşturucusu sınıfı](../cppcx/platform-accessdeniedexception-class.md)|Bir kaynak veya özelliğe erişim reddedildiğinde tetiklenir.|
+|[Platform:: çevik sınıfı](../cppcx/platform-agile-class.md)|Çevik olmayan bir nesneyi çevik bir nesne olarak temsil eder.|
+|[Platform:: Array sınıfı](../cppcx/platform-array-class.md)|Tek boyutlu, değiştirilebilir bir diziyi temsil eder.|
+|[Platform:: ArrayReference sınıfı](../cppcx/platform-arrayreference-class.md)|Kopyalama işlemlerini en aza indirmek için başlatma en iyi duruma getirilmiş bir diziyi temsil eder.|
+|[Platform:: Box sınıfı](../cppcx/platform-box-class.md)|Windows:: Foundation gibi bir değer türünü kapsülleyen paketlenmiş bir tür bildirmek için kullanılır:D: Bu tür, uygulama ikili arabirimine (ABı) geçirildiğinde veya [Platform:: Object ^](../cppcx/platform-object-class.md)türünde bir değişkende depolanıyorsa.|
+|[Platform:: ChangedStateException sınıfı](../cppcx/platform-changedstateexception-class.md)|Üst koleksiyon değiştirildikten sonra bir koleksiyon yineleyici veya koleksiyon görünümü metotları çağrıldığında, yöntemin sonuçları geçersiz kılınırken oluşturulur.|
+|[Platform:: Classnotregisteredexception Oluşturucusu sınıfı](../cppcx/platform-classnotregisteredexception-class.md)|Bir COM sınıfı kaydedilmemişse oluşturulur.|
+|[Platform:: COMException sınıfı](../cppcx/platform-comexception-class.md)|Bir COM yöntem çağrısından tanınmayan bir değer döndürüldüğünde oluşturulan özel durumu temsil eder.|
+|[Platform::D elegate sınıfı](../cppcx/platform-delegate-class.md)|Geri çağırma işlevinin imzasını temsil eder.|
+|[Platform::D isconnectedException sınıfı](../cppcx/platform-disconnectedexception-class.md)|Nesnenin istemcileriyle bağlantısı kesildi.|
+|[Platform:: Exception sınıfı](../cppcx/platform-exception-class.md)|Uygulama yürütme sırasında oluşan hataları temsil eder. Özel durumlar için temel sınıf.|
+|[Platform:: FailureException sınıfı](../cppcx/platform-failureexception-class.md)|İşlem başarısız olduğunda oluşturulur. HRESULT E_FAIL eşdeğerdir.|
+|[Platform::Guid değer sınıfı](../cppcx/platform-guid-value-class.md)|Windows Çalışma Zamanı tür sistemindeki bir GUID 'YI temsil eder.|
+|[Platform:: InvalidArgumentException Sınıfı](../cppcx/platform-invalidargumentexception-class.md)|Bir yönteme verilen bağımsız değişkenlerden biri geçerli değilse oluşturulur.|
+|[Platform:: InvalidCastException sınıfı](../cppcx/platform-invalidcastexception-class.md)|Geçersiz atama ya da açık dönüştürme durumlarında oluşturulur.|
+|[Platform:: MTAThreadAttribute sınıfı](../cppcx/platform-mtathreadattribute-class.md)|Bir uygulama için iş parçacığı modelinin çok iş parçacıklı apartman (MTA) olduğunu gösterir.|
+|[Platform:: NotImplementedException sınıfı](../cppcx/platform-notimplementedexception-class.md)|Sınıf üzerinde bir arabirim yöntemi uygulanmadığından oluşturulur.|
+|[Platform:: NullReferenceException sınıfı](../cppcx/platform-nullreferenceexception-class.md)|Null nesne başvurusunu başvuru girişimi olduğunda oluşturulur.|
+|[Platform:: Object sınıfı](../cppcx/platform-object-class.md)|Ortak davranış sağlayan bir temel sınıf.|
+|[Platform:: ObjectDisposedException sınıfı](../cppcx/platform-objectdisposedexception-class.md)|Atılmış bir nesne üzerinde bir işlem gerçekleştirildiğinde oluşturulur.|
+|[Platform:: Operationolaydexception sınıfı](../cppcx/platform-operationcanceledexception-class.md)|Bir işlem iptal edildiğinde oluşturulur.|
+|[Platform:: OutOfBoundsException sınıfı](../cppcx/platform-outofboundsexception-class.md)|Bir işlem geçerli Aralık dışında veriye erişmeye çalıştığında oluşturulur.|
+|[Platform:: OutOfMemoryException sınıfı](../cppcx/platform-outofmemoryexception-class.md)|İşlemi gerçekleştirmek için yeterli bellek kalmadığında oluşturulur.|
+|[Platform:: STAThreadAttribute sınıfı](../cppcx/platform-stathreadattribute-class.md)|Bir uygulamanın iş parçacığı modelinin tek iş parçacıklı Apartment (STA) olduğunu gösterir.|
+|[Platform:: String sınıfı](../cppcx/platform-string-class.md)|Metni göstermek için kullanılan, ardışık bir Unicode karakter koleksiyonu.|
+|[Platform:: StringReference sınıfı](../cppcx/platform-stringreference-class.md)|En az kopya yük yüküyle dize arabelleklerine erişim sağlar.|
+|[Platform:: Type sınıfı](../cppcx/platform-type-class.md)|Bir kategori numaralandırması ile yerleşik bir türü tanımlar.|
+|[Platform:: ValueType sınıfı](../cppcx/platform-valuetype-class.md)|Değer türlerinin örnekleri için temel sınıf.|
+|[Platform:: WeakReference sınıfı](../cppcx/platform-weakreference-class.md)|Başvuru sayısını artmayan başvuru sınıfı nesnelerine zayıf bir başvuru sağlar.|
+|[Platform:: WriteOnlyArray sınıfı](../cppcx/platform-writeonlyarray-class.md)|FillArray modelini uygulayan metotlarda giriş parametresi olarak kullanılan tek boyutlu bir salt yazılır diziyi temsil eder.|
+|[Platform:: yanlışlıkla Gthreadexception sınıfı](../cppcx/platform-wrongthreadexception-class.md)|Bir iş parçacığı, iş parçacığının grubuna ait olmayan bir ara sunucu nesnesi için olan bir arabirim işaretçisi aracılığıyla çağırdığında oluşturulur.|
 
-**Arabirim uygulamaları**
+**Arabirim Uygulamaları**
 
-Platform ad alanı, aşağıdaki arabirimlerinden tanımlar.
-
-|Arabirim|Açıklama|
-|---------------|-----------------|
-|[Platform::IBox Arabirimi](../cppcx/platform-ibox-interface.md)|Değer türleri parametreleri Platform::Object yazılan işlevlere geçirmek için kullanılan ^.|
-|[Platform::IBoxArray Arabirimi](../cppcx/platform-iboxarray-interface.md)|İşlevler parametreleri Platform::Array yazılan diziler değer türlerinin geçirmek için kullanılan arabirim.|
-|[Platform::IDisposable Arabirimi](../cppcx/platform-idisposable-interface.md)|Yönetilmeyen kaynakları serbest bırakmak için kullanılır.|
-
-**Sabit Listeleri**
-
-Aşağıdaki numaralandırmalar Platform ad alanı vardır.
+Platform ad alanı aşağıdaki arabirimleri tanımlar.
 
 |Arabirim|Açıklama|
 |---------------|-----------------|
-|[Platform::CallbackContext Numaralandırması](../cppcx/platform-callbackcontext-enumeration.md)|Bir temsilci Oluşturucu parametresi olarak kullanılan bir sabit listesi. Bu geri çağırma kaynak iş parçacığına veya çağıran iş parçacığına sıraya olup olmadığını belirler.|
-|[Platform::TypeCode Numaralandırması](../cppcx/platform-typecode-enumeration.md)|Yerleşik türünü temsil eden sayısal bir kategorisini belirtir.|
+|[Platform:: Ibox arabirimi](../cppcx/platform-ibox-interface.md)|Parametreleri Platform:: Object ^ olarak yazılan işlevlere değer türlerini geçirmek için kullanılır.|
+|[Platform:: ıboxarray arabirimi](../cppcx/platform-iboxarray-interface.md)|Parametreleri Platform:: Array olarak yazılan işlevlere değer türlerinin dizilerini geçirmek için kullanılan arabirim.|
+|[Platform:: IDisposable arabirimi](../cppcx/platform-idisposable-interface.md)|Yönetilmeyen kaynakları serbest bırakmak için kullanılır.|
+
+**Listelemeler**
+
+Platform ad alanı aşağıdaki numaralandırmalara sahiptir.
+
+|Arabirim|Açıklama|
+|---------------|-----------------|
+|[Platform::CallbackContext Numaralandırması](../cppcx/platform-callbackcontext-enumeration.md)|Temsilci oluşturucusunun parametresi olarak kullanılan bir sabit listesi. Geri aramanın, kaynak iş parçacığına veya çağıran iş parçacığına sıraya sokulıp edilmeyeceğini belirler.|
+|[Platform::TypeCode Numaralandırması](../cppcx/platform-typecode-enumeration.md)|Yerleşik bir türü temsil eden sayısal bir kategori belirtir.|
 
 **Yapılar**
 
-Platform ad alanı, aşağıdaki yapılar vardır.
+Platform ad alanında aşağıdaki yapılar bulunur.
 
 |Yapı|Açıklama|
 |---------------|-----------------|
-|[Platform::Enum Sınıfı](../cppcx/platform-enum-class.md)|Adlandırılmış bir sabiti temsil eder.|
-|[Platform::Guid değer Sınıfı](../cppcx/platform-guid-value-class.md)|Bir GUID temsil eder.|
-|[Platform::IntPtr değer Sınıfı](../cppcx/platform-intptr-value-class.md)|Boyutu (32 bit veya 64-bit) platform için uygun olan imzalı bir işaretçi.|
-|[Platform::SizeT değer sınıfı](../cppcx/platform-sizet-value-class.md)|Bir nesnenin boyutunu temsil etmek için kullanılan bir imzasız veri türü.|
-|[Platform::UIntPtr değer Sınıfı](../cppcx/platform-uintptr-value-class.md)|Boyutu (32 bit veya 64-bit) platform için uygun olan bir işaretsiz işaretçi.|
+|[Platform:: enum sınıfı](../cppcx/platform-enum-class.md)|Adlandırılmış sabiti temsil eder.|
+|[Platform::Guid değer sınıfı](../cppcx/platform-guid-value-class.md)|Bir GUID 'YI temsil eder.|
+|[Platform::IntPtr değer sınıfı](../cppcx/platform-intptr-value-class.md)|Boyutu platform için uygun olan işaretli bir işaretçi (32 bit veya 64 bit).|
+|[Platform::SizeT değer sınıfı](../cppcx/platform-sizet-value-class.md)|Bir nesnenin boyutunu temsil etmek için kullanılan işaretsiz veri türü.|
+|[Platform::UIntPtr değer sınıfı](../cppcx/platform-uintptr-value-class.md)|Boyutu platform için uygun olan işaretsiz bir işaretçi (32 bit veya 64 bit).|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)<br/>
-[Platform::Runtime::CompilerServices Ad Alanı](../cppcx/platform-runtime-compilerservices-namespace.md)<br/>
-[Platform::Runtime::InteropServices Ad Alanı](../cppcx/platform-runtime-interopservices-namespace.md)<br/>
-[Platform::Metadata Ad Alanı](../cppcx/platform-metadata-namespace.md)
+[Platform:: Collections ad alanı](../cppcx/platform-collections-namespace.md)<br/>
+[Platform:: Runtime:: CompilerServices Ad alanı](../cppcx/platform-runtime-compilerservices-namespace.md)<br/>
+[Platform:: Runtime:: InteropServices ad alanı](../cppcx/platform-runtime-interopservices-namespace.md)<br/>
+[Platform:: Metadata ad alanı](../cppcx/platform-metadata-namespace.md)

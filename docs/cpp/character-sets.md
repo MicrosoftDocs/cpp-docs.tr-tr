@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: belirteçler ve karakter kümeleri'
 title: Belirteçler ve karakter kümeleri
 ms.date: 12/10/2019
 helpviewer_keywords:
@@ -8,36 +9,36 @@ helpviewer_keywords:
 - universal character names
 - basic execution character set (C++)
 ms.assetid: 379a2af6-6422-425f-8352-ef0bca6c0d74
-ms.openlocfilehash: 1f6dbe2faa6348d61ec00b411cc35e8ef5ceb57a
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: b5a6868f5e4c01772758acaa0e44459e72b16a84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308477"
 ---
 # <a name="tokens-and-character-sets"></a>Belirteçler ve karakter kümeleri
 
-Bir C++ Programın metni belirteçlerden ve *boşluklardan*oluşur. Bir belirteç C++ programının derleyicisi için anlamlı olan en küçük öğesidir. C++ Ayrıştırıcı şu tür belirteçleri tanır:
+Bir C++ programının metni belirteçlerden ve *boşluklardan* oluşur. Bir belirteç C++ programının derleyicisi için anlamlı olan en küçük öğesidir. C++ ayrıştırıcısı şu tür belirteçleri tanır:
 
-- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+- [Anahtar sözcükler](../cpp/keywords-cpp.md)
 - [Tanımlayıcılar](../cpp/identifiers-cpp.md)
-- [Sayısal, Boole ve İşaretçi Değişmez Değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)
-- [Dize ve Karakter Değişmez Değerleri](../cpp/string-and-character-literals-cpp.md)
-- [Kullanıcı Tanımlı Sabit Değerler](../cpp/user-defined-literals-cpp.md)
+- [Sayısal, Boole ve Işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)
+- [Dize ve karakter değişmez değerleri](../cpp/string-and-character-literals-cpp.md)
+- [Kullanıcı tanımlı değişmez değerler](../cpp/user-defined-literals-cpp.md)
 - [İşleçler](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
-- [Noktalama İşaretçileri](../cpp/punctuators-cpp.md)
+- [Noktalama İşaretleri](../cpp/punctuators-cpp.md)
 
-Belirteçler genellikle *boşluk*ile ayrılır ve bu bir veya daha fazla olabilir:
+Belirteçler genellikle *boşluk* ile ayrılır ve bu bir veya daha fazla olabilir:
 
 - Boşluklar
 - Yatay veya dikey sekmeler
 - Yeni satırlar
 - Form akışları
-- Açıklamalar
+- Yorumlar
 
 ## <a name="basic-source-character-set"></a>Temel kaynak karakter kümesi
 
-Standart C++ , kaynak dosyalarında kullanılabilecek *temel bir kaynak karakter kümesini* belirtir. Bu küme dışındaki karakterleri göstermek için, bir *evrensel karakter adı*kullanılarak ek karakterler belirtilebilir. MSVC uygulama ek karakterlere izin verir. *Temel kaynak karakter kümesi* , kaynak dosyalarında kullanılabilecek 96 karakterden oluşur. Bu küme boşluk karakterini, yatay sekmeyi, dikey sekmeyi, form akışını ve yeni satır denetim karakterlerini ve bu grafik karakter kümesini içerir:
+C++ standardı, kaynak dosyalarında kullanılabilecek *temel bir kaynak karakter kümesini* belirtir. Bu küme dışındaki karakterleri göstermek için, bir *evrensel karakter adı* kullanılarak ek karakterler belirtilebilir. MSVC uygulama ek karakterlere izin verir. *Temel kaynak karakter kümesi* , kaynak dosyalarında kullanılabilecek 96 karakterden oluşur. Bu küme boşluk karakterini, yatay sekmeyi, dikey sekmeyi, form akışını ve yeni satır denetim karakterlerini ve bu grafik karakter kümesini içerir:
 
 `a b c d e f g h i j k l m n o p q r s t u v w x y z`
 
@@ -47,19 +48,19 @@ Standart C++ , kaynak dosyalarında kullanılabilecek *temel bir kaynak karakter
 
 `_ { } [ ] # ( ) < > % : ; . ? * + - / ^ & | ~ ! = , \ " '`
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-MSVC, temel kaynak karakter kümesinin üyesi olarak `$` karakterini içerir. MSVC, dosya kodlamaya bağlı olarak kaynak dosyalarında ek bir karakter kümesinin kullanılmasına da izin verir. Varsayılan olarak, Visual Studio varsayılan kod sayfasını kullanarak kaynak dosyalarını depolar. Kaynak dosyaları yerel ayara özgü bir kod sayfası veya bir Unicode kod sayfası kullanılarak kaydedildiğinde, MSVC, temel kaynak karakter kümesinde açıkça izin verilmeyen denetim kodları hariç, kaynak kodunuzda bu kod sayfasının herhangi bir karakterini kullanmanıza izin verir. Örneğin, bir Japonca kod sayfası kullanarak dosyayı kaydederseniz, Japonca karakterleri açıklamalara, tanımlayıcılara veya dize sabit değerlerine yerleştirebilirsiniz. MSVC, geçerli çok baytlı karakterlere veya Unicode kod noktalarına çevrilemeyen karakter dizileri için izin vermez. Derleyici seçeneklerine bağlı olarak, izin verilen tüm karakterler tanımlayıcıda görünmeyebilir. Daha fazla bilgi edinmek için bkz. [Tanımlayıcılar](../cpp/identifiers-cpp.md).
+MSVC, `$` karakteri temel kaynak karakter kümesinin bir üyesi olarak içerir. MSVC, dosya kodlamaya bağlı olarak kaynak dosyalarında ek bir karakter kümesinin kullanılmasına da izin verir. Varsayılan olarak, Visual Studio varsayılan kod sayfasını kullanarak kaynak dosyalarını depolar. Kaynak dosyaları yerel ayara özgü bir kod sayfası veya bir Unicode kod sayfası kullanılarak kaydedildiğinde, MSVC, temel kaynak karakter kümesinde açıkça izin verilmeyen denetim kodları hariç, kaynak kodunuzda bu kod sayfasının herhangi bir karakterini kullanmanıza izin verir. Örneğin, bir Japonca kod sayfası kullanarak dosyayı kaydederseniz, Japonca karakterleri açıklamalara, tanımlayıcılara veya dize sabit değerlerine yerleştirebilirsiniz. MSVC, geçerli çok baytlı karakterlere veya Unicode kod noktalarına çevrilemeyen karakter dizileri için izin vermez. Derleyici seçeneklerine bağlı olarak, izin verilen tüm karakterler tanımlayıcıda görünmeyebilir. Daha fazla bilgi edinmek için bkz. [Tanımlayıcılar](../cpp/identifiers-cpp.md).
 
 **SON Microsoft 'a özgü**
 
 ### <a name="universal-character-names"></a>Evrensel karakter adları
 
-Programlar C++ temel kaynak karakter kümesinde belirtilenlerden çok daha fazla karakter kullanabileceğinden, *evrensel karakter adlarını*kullanarak bu karakterleri taşınabilir bir şekilde belirtebilirsiniz. Evrensel karakter adı, Unicode kod noktasını temsil eden bir karakter dizisinden oluşur.  Bunlar iki formu alır. U + NNNNNNNN biçimindeki bir Unicode kod noktasını göstermek için `\UNNNNNNNN` kullanın; burada, NNNNNNNN sekiz basamaklı onaltılık kod noktası sayısıdır. U + 0000NNNN biçimindeki bir Unicode kod noktasını göstermek için dört basamaklı `\uNNNN` kullanın.
+C++ programları temel kaynak karakter kümesinde belirtilenlerden çok daha fazla karakter kullanabileceğinden, *evrensel karakter adlarını* kullanarak bu karakterleri taşınabilir bir şekilde belirtebilirsiniz. Evrensel karakter adı, Unicode kod noktasını temsil eden bir karakter dizisinden oluşur.  Bunlar iki formu alır. `\UNNNNNNNN`U + NNNNNNNN biçimindeki bir Unicode kod noktasını temsil etmek için kullanın; burada, nnnnnnnn sekiz basamaklı onaltılık kod noktası sayısıdır. `\uNNNN`U + 0000NNNN biçimindeki bir Unicode kod noktasını göstermek için dört basamaklı kullanın.
 
 Evrensel karakter adları, tanımlayıcılarında ve dize ve karakter değişmez değerlerinde kullanılabilir. Bir evrensel karakter adı, 0xD800-0xDFFF aralığındaki bir yedek kod noktasını temsil etmek için kullanılamaz. Bunun yerine, istenen kod noktasını kullanın; Derleyici, gerekli tüm yedekleri otomatik olarak oluşturur. Ek kısıtlamalar, tanımlayıcılarda kullanılabilecek evrensel karakter adları için geçerlidir. Daha fazla bilgi için bkz. [tanımlayıcılar](../cpp/identifiers-cpp.md) ve [dize ve karakter sabit değerleri](../cpp/string-and-character-literals-cpp.md).
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Microsoft C++ derleyicisi, evrensel karakter adı biçimindeki bir karakteri ve değişmez değer formunu birbirinin yerine değerlendirir. Örneğin, evrensel karakter adı formunu kullanarak bir tanımlayıcı bildirebilir ve bunu değişmez bir biçimde kullanabilirsiniz:
 

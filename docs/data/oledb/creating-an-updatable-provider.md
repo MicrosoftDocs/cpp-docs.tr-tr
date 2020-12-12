@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: güncelleştirilebilir sağlayıcı oluşturma'
 title: Güncelleştirilebilir Sağlayıcı Oluşturma
 ms.date: 08/16/2018
 helpviewer_keywords:
@@ -6,81 +7,81 @@ helpviewer_keywords:
 - notifications, support in providers
 - OLE DB providers, creating
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
-ms.openlocfilehash: 720ceba397d17642402de4d44cbb4481852fa153
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 948b50f5e49ca8288e5fcf1ada75ae07d4a8b39f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365553"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305422"
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 
-Visual C++ veri deposunu güncelleştirebilen (yazabilen) güncellenebilir sağlayıcıları veya sağlayıcıları destekler. Bu konu, OLE DB şablonlarını kullanarak nasıl güncellenilebilir sağlayıcılar oluşturulacak şekilde açıklanmıştır.
+Visual C++, veri deposunu güncelleştirebilen (yazabilmesi) güncelleştirilebilir sağlayıcıları veya sağlayıcıları destekler. Bu konu, OLE DB şablonları kullanarak güncellenebilir sağlayıcıların nasıl oluşturulacağını açıklamaktadır.
 
-Bu konu, uygulanabilir bir sağlayıcı ile başlıyor varsayar. Güncel bir sağlayıcı oluşturmak için iki adım vardır. Öncelikle sağlayıcının veri deposunda nasıl değişiklik yapacağına karar vermeniz gerekir; özellikle, değişikliklerin hemen yapılıp yapılmayacağı veya bir güncelleştirme komutu verilene kadar ertelenip ertelenmeyeceği. ["Sağlayıcıları Güncelle"](#vchowmakingprovidersupdatable)bölümü, sağlayıcı kodunda yapmanız gereken değişiklikleri ve ayarları açıklar.
+Bu konu başlığı altında, bir çalışılabilir sağlayıcı ile başladığınız varsayılmaktadır. Güncelleştirilebilir bir sağlayıcı oluşturmak için iki adım vardır. İlk olarak sağlayıcının veri deposunda nasıl değişiklik yapacağına karar vermelisiniz; Özellikle, değişikliklerin hemen yapılıp yapılmayacağını veya bir Update komutu verilene kadar ertelenmesini sağlar. "[Sağlayıcıları güncelleştirilebilir hale getirme](#vchowmakingprovidersupdatable)" bölümünde, sağlayıcı kodunda yapmanız gereken değişiklikler ve ayarlar açıklanmaktadır.
 
-Ardından, sağlayıcınızın tüketicinin talep edebileceği her şeyi destekleyecek tüm işlevleri içerdiğinden emin olmalısınız. Tüketici veri deposunu güncelleştirmek istiyorsa, sağlayıcının veri deposunda veri kalıcılığı olan kod içermesi zorundadır. Örneğin, veri kaynağınızda bu tür işlemleri gerçekleştirmek için C Run-Time Kitaplığını veya MFC'yi kullanabilirsiniz. "Veri[Kaynağına Yazma](#vchowwritingtothedatasource)" bölümü, veri kaynağına nasıl yazılalıyapılacağını, NULL ve varsayılan değerlerle nasıl başa çıkılsüreceğini ve sütun bayraklarını nasıl ayarlayabildiğini açıklar.
+Daha sonra, sağlayıcının tüketicinin talep edebildiği her şeyi desteklemek için tüm işlevleri içerdiğinden emin olmanız gerekir. Tüketici veri deposunu güncelleştirmek istiyorsa, sağlayıcının verileri veri deposuna devam eden bir kod içermesi gerekir. Örneğin, veri kaynağınızda bu tür işlemleri gerçekleştirmek için C Run-Time kitaplığını veya MFC 'yi kullanabilirsiniz. "[Veri kaynağına yazma](#vchowwritingtothedatasource)" bölümünde veri kaynağına yazma, null ve varsayılan değerlerle ilgilenme ve sütun bayraklarını ayarlama işlemleri açıklanmaktadır.
 
 > [!NOTE]
-> [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) güncelbir sağlayıcı örneğidir. UpdatePV MyProv ile aynıdır ama güncelleyici desteği ile.
+> [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) güncelleştirilebilir sağlayıcıya bir örnektir. UpdatePV, Updatable desteğiyle birlikte MyProv ile aynıdır.
 
-## <a name="making-providers-updatable"></a><a name="vchowmakingprovidersupdatable"></a>Sağlayıcıları Güncele getirilebilir hale getirme
+## <a name="making-providers-updatable"></a><a name="vchowmakingprovidersupdatable"></a> Sağlayıcıları güncelleştirilebilir hale getirme
 
-Bir sağlayıcıyı güncelletilebilir hale getirmenin anahtarı, sağlayıcınızın veri deposunda hangi işlemleri gerçekleştirmesini istediğinizi ve sağlayıcının bu işlemleri nasıl yürütmesini istediğinizi anlamaktır. Özellikle, en önemli sorun, veri deposundaki güncelleştirmelerin güncelleştirme komutu verilene kadar hemen yapılıp yapılmayacağı veya ertelenip ertelenmeyeceğidir (toplu işlenmedi).
+Bir sağlayıcıyı güncelleştirilebilir hale getirmek için gereken anahtar, sağlayıcınızın veri deposunda hangi işlemleri gerçekleştirmesini istediğinizi ve sağlayıcının bu işlemleri nasıl gerçekleştirmesini istediğinizi anlamaktır. Özellikle, önemli sorun, bir Update komutu verilene kadar veri deposundaki güncelleştirmelerin hemen veya ertelenmiş (toplu) olarak yapılıp yapılmayacağını belirtir.
 
-Öncelikle rowset sınıfınızdan `IRowsetChangeImpl` mı `IRowsetUpdateImpl` yoksa sıra kümesi sınıfınızdan mı devraldığınıza karar vermelisiniz. Bunlardan hangisini uygulamayı seçtiğinize bağlı olarak, üç yöntemin `SetData`işlevselliği etkilenir: , , `InsertRows`ve `DeleteRows`.
+Önce `IRowsetChangeImpl` `IRowsetUpdateImpl` satır kümesi sınıfınızdan mi yoksa bu sınıftan mi devralma gerektiğine karar vermelisiniz. Uygulamak istediğiniz bu seçeneklere bağlı olarak, üç yöntemin işlevselliği etkilenecektir: `SetData` , `InsertRows` ve `DeleteRows` .
 
-- [IRowsetChangeImpl'den](../../data/oledb/irowsetchangeimpl-class.md)miras alırsanız, bu üç yöntemi çağırmak hemen veri deposunu değiştirir.
+- [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md)'den devralma yaparsanız, bu üç yöntemi çağırmak veri deposunu hemen değiştirir.
 
-- [IRowsetUpdateImpl'den](../../data/oledb/irowsetupdateimpl-class.md)devralırsanız, yöntemler veri deposundaki değişiklikleri `Update`, `GetOriginalData`veya `Undo`. Güncelleştirme birkaç değişiklik içeriyorsa, toplu iş modunda gerçekleştirilir (toplu iş değiştirmelerin önemli miktarda bellek yükü ekleyebileceğini unutmayın).
+- [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md)'den devralma yaparsanız, veya çağrısı yapılıncaya kadar Yöntemler veri deposundaki değişiklikleri erteler `Update` `GetOriginalData` `Undo` . Güncelleştirme birkaç değişiklik içeriyorsa, bunlar Batch modunda gerçekleştirilir (toplu işleme değişikliklerinin önemli miktarda bellek yükü ekleyebileceğini unutmayın).
 
-`IRowsetUpdateImpl` Bu türetilmiştir `IRowsetChangeImpl`unutmayın. Böylece, `IRowsetUpdateImpl` yeteneği artı toplu iş yeteneği değiştirmek verir.
+`IRowsetUpdateImpl`Öğesinden türetildiğine unutmayın `IRowsetChangeImpl` . Bu nedenle, `IRowsetUpdateImpl` özelliği ve toplu iş özelliğini değiştirmenize olanak sağlar.
 
-### <a name="to-support-updatability-in-your-provider"></a>Sağlayıcınızda yükseltilebilirliği desteklemek için
+### <a name="to-support-updatability-in-your-provider"></a>Sağlayıcınızdaki Güncelleştirilebilirliği desteklemek için
 
-1. Rowset sınıfınızda, `IRowsetChangeImpl` devralan `IRowsetUpdateImpl`veya . Bu sınıflar, veri deposunu değiştirmek için uygun arabirimler sağlar:
+1. Satır kümesi sınıfınıza, veya ' den ' i alın `IRowsetChangeImpl` `IRowsetUpdateImpl` . Bu sınıflar veri deposunu değiştirmek için uygun arabirimler sağlar:
 
    **IRowsetChange ekleme**
 
-   Bu `IRowsetChangeImpl` formu kullanarak devralma zincirinize ekleyin:
+   `IRowsetChangeImpl`Bu formu kullanarak devralma zincirinize ekleyin:
 
     ```cpp
     IRowsetChangeImpl< rowset-name, storage-name >
     ```
 
-   Ayrıca `COM_INTERFACE_ENTRY(IRowsetChange)` rowset `BEGIN_COM_MAP` sınıfındabölüme ekleyin.
+   Ayrıca `COM_INTERFACE_ENTRY(IRowsetChange)` `BEGIN_COM_MAP` satır kümesi sınıfınıza bölümüne de ekleyin.
 
-   **IRowsetUpdate ekleme**
+   **IRowsetUpdate ekleniyor**
 
-   Bu `IRowsetUpdate` formu kullanarak devralma zincirinize ekleyin:
+   `IRowsetUpdate`Bu formu kullanarak devralma zincirinize ekleyin:
 
     ```cpp
     IRowsetUpdateImpl< rowset-name, storage>
     ```
 
    > [!NOTE]
-   > `IRowsetChangeImpl` Çizgiyi kalıtım zincirinden çıkarmalısın. Daha önce bahsedilen yönergeye bu bir istisna `IRowsetChangeImpl`için kod içermelidir.
+   > `IRowsetChangeImpl`Devralma Zincirinizden satırı kaldırmanız gerekir. Daha önce bahsedilen yönergedeki bu bir özel durum için kodu içermelidir `IRowsetChangeImpl` .
 
-1. COM haritanıza aşağıdakileri`BEGIN_COM_MAP ... END_COM_MAP`ekleyin ( ):
+1. Aşağıdakileri COM haritanızda ( `BEGIN_COM_MAP ... END_COM_MAP` ) ekleyin:
 
-   |  Eğer uygularsanız   |           COM haritasına ekle             |
+   |  Uygularsanız   |           COM haritasına Ekle             |
    |---------------------|--------------------------------------|
    | `IRowsetChangeImpl` | `COM_INTERFACE_ENTRY(IRowsetChange)` |
    | `IRowsetUpdateImpl` | `COM_INTERFACE_ENTRY(IRowsetUpdate)` |
 
-   | Eğer uygularsanız | Özellik kümesi haritasına ekle |
+   | Uygularsanız | Özellik kümesi eşlemesine Ekle |
    |----------------------|-----------------------------|
    | `IRowsetChangeImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)` |
    | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
-1. Komutunuzda, özellik kümesi haritanıza aşağıdakileri`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`ekleyin ( ):
+1. Komutunuz için, özellik kümesi haritanızda () aşağıdakini ekleyin `BEGIN_PROPSET_MAP ... END_PROPSET_MAP` :
 
-   |  Eğer uygularsanız   |                                             Özellik kümesi haritasına ekle                                              |
+   |  Uygularsanız   |                                             Özellik kümesi eşlemesine Ekle                                              |
    |---------------------|------------------------------------------------------------------------------------------------------------------|
    | `IRowsetChangeImpl` |                            `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`                             |
    | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
-1. Özellik kümesi haritanızda, aşağıdaki ayarların tümlerini aşağıda göründükleri gibi eklemeniz gerekir:
+1. Özellik kümesi haritalarınız içinde, aşağıdaki ayarların tümünü aşağıda göründükleri gibi de dahil etmelisiniz:
 
     ```cpp
     PROPERTY_INFO_ENTRY_VALUE(UPDATABILITY, DBPROPVAL_UP_CHANGE |
@@ -100,95 +101,95 @@ Bir sağlayıcıyı güncelletilebilir hale getirmenin anahtarı, sağlayıcın�
       DBPROPFLAGS_READ, VARIANT_FALSE, 0)
     ```
 
-   Bu makro aramalarında kullanılan değerleri özellik disleri ve değerleri için Atldb.h'ye bakarak bulabilirsiniz (Atldb.h çevrimiçi belgelerden farklıysa, Atldb.h belgelerin yerini alabiliyor).
+   Özellik kimlikleri ve değerleri için Atldb. h ' ye bakarak bu makro çağrılarında kullanılan değerleri bulabilirsiniz (atldb. h çevrimiçi belgelerden farklıysa, Atldb. h belgelerinin yerini alır).
 
    > [!NOTE]
-   > Ayarların `VARIANT_FALSE` `VARIANT_TRUE` çoğu OLE DB şablonları tarafından gereklidir; OLE DB belirtimi, okunabilir/yazılabilir, ancak OLE DB şablonları yalnızca bir değeri destekleyebilir diyor.
+   > `VARIANT_FALSE`OLE DB şablonları için çoğu ve `VARIANT_TRUE` ayarı gereklidir; OLE DB belirtimi, bunların okunabilir/yazılabilir olduğunu söyler, ancak OLE DB şablonları yalnızca bir değeri destekleyebilir.
 
    **IRowsetChangeImpl uygularsanız**
 
-   Uygularsanız, `IRowsetChangeImpl`sağlayıcınızda aşağıdaki özellikleri ayarlamanız gerekir. Bu özellikler öncelikle üzerinden arabirimleri `ICommandProperties::SetProperties`istemek için kullanılır.
+   Uygulamasını uygularsanız `IRowsetChangeImpl` , sağlayıcınızda aşağıdaki özellikleri ayarlamanız gerekir. Bu özellikler öncelikle aracılığıyla arabirim istemek için kullanılır `ICommandProperties::SetProperties` .
 
-   - `DBPROP_IRowsetChange`: Bu otomatik `DBPROP_IRowsetChange`olarak ayarlar .
+   - `DBPROP_IRowsetChange`: Bu otomatik olarak ayarlanır `DBPROP_IRowsetChange` .
 
-   - `DBPROP_UPDATABILITY`: Desteklenen yöntemleri belirten bir bitmask `SetData` `DeleteRows` `IRowsetChange`: `InsertRow`, , veya .
+   - `DBPROP_UPDATABILITY`: Üzerinde desteklenen yöntemleri belirten bir bit maskesi `IRowsetChange` : `SetData` , `DeleteRows` , veya `InsertRow` .
 
-   - `DBPROP_CHANGEINSERTEDROWS`: Tüketici `IRowsetChange::DeleteRows` arayabilir `SetData` veya yeni eklenen satırlar için.
+   - `DBPROP_CHANGEINSERTEDROWS`: Tüketici `IRowsetChange::DeleteRows` `SetData` Yeni ekli satırları çağırabilir veya kullanabilir.
 
-   - `DBPROP_IMMOBILEROWS`: Rowset, eklenen veya güncelleştirilmiş satırları yeniden sıralamaz.
+   - `DBPROP_IMMOBILEROWS`: Satır kümesi, ekli veya güncelleştirilmiş satırları yeniden sıramayacak.
 
    **IRowsetUpdateImpl uygularsanız**
 
-   Uygularsanız, `IRowsetUpdateImpl` `IRowsetChangeImpl` daha önce listelenen tüm özellikleri ayarlamaya ek olarak sağlayıcınızda aşağıdaki özellikleri ayarlamanız gerekir:
+   Uygulamasını uygularsanız, `IRowsetUpdateImpl` daha önce listelenen tüm özellikleri ayarlamaya ek olarak, aşağıdaki özellikleri sağlayıcınızda ayarlamanız gerekir `IRowsetChangeImpl` :
 
    - `DBPROP_IRowsetUpdate`.
 
-   - `DBPROP_OWNINSERT`: READ_ONLY VE VARIANT_TRUE olmalıdır.
+   - `DBPROP_OWNINSERT`: READ_ONLY ve VARIANT_TRUE olmalıdır.
 
-   - `DBPROP_OWNUPDATEDELETE`: READ_ONLY VE VARIANT_TRUE olmalıdır.
+   - `DBPROP_OWNUPDATEDELETE`: READ_ONLY ve VARIANT_TRUE olmalıdır.
 
-   - `DBPROP_OTHERINSERT`: READ_ONLY VE VARIANT_TRUE olmalıdır.
+   - `DBPROP_OTHERINSERT`: READ_ONLY ve VARIANT_TRUE olmalıdır.
 
-   - `DBPROP_OTHERUPDATEDELETE`: READ_ONLY VE VARIANT_TRUE olmalıdır.
+   - `DBPROP_OTHERUPDATEDELETE`: READ_ONLY ve VARIANT_TRUE olmalıdır.
 
-   - `DBPROP_REMOVEDELETED`: READ_ONLY VE VARIANT_TRUE olmalıdır.
+   - `DBPROP_REMOVEDELETED`: READ_ONLY ve VARIANT_TRUE olmalıdır.
 
    - `DBPROP_MAXPENDINGROWS`.
 
    > [!NOTE]
-   > Bildirimleri destekliyorsanız, başka özellikleriniz de olabilir; bu listeiçin `IRowsetNotifyCP` bölüme bakın.
+   > Bildirimleri destekederseniz Ayrıca bazı diğer özelliklere de sahip olabilirsiniz; `IRowsetNotifyCP` Bu liste için bölümüne bakın.
 
-## <a name="writing-to-the-data-source"></a><a name="vchowwritingtothedatasource"></a>Veri Kaynağına Yazma
+## <a name="writing-to-the-data-source"></a><a name="vchowwritingtothedatasource"></a> Veri kaynağına yazma
 
-Veri kaynağından okumak için `Execute` işlevi arayın. Veri kaynağına yazmak için `FlushData` işlevi arayın. (Genel anlamda floş, bir tabloda yaptığınız değişiklikleri veya dizinle diske kaydetmek anlamına gelir.)
+Veri kaynağından okumak için, `Execute` işlevini çağırın. Veri kaynağına yazmak için `FlushData` işlevini çağırın. (Genel anlamda, Temizleme, bir tabloda veya dizinde disk dizinine yaptığınız değişiklikleri kaydetme anlamına gelir.)
 
 ```cpp
 FlushData(HROW, HACCESSOR);
 ```
 
-Satır tutamacı (HROW) ve erişimci tanıtıcı (HACCESSOR) bağımsız değişkenleri, yazacak bölgeyi belirtmenize olanak sağlar. Genellikle, aynı anda tek bir veri alanı yazarsınız.
+Satır tanıtıcısı (HROW) ve erişimci tanıtıcısı (HACCESSOR) bağımsız değişkenleri yazılacak bölgeyi belirtmenizi sağlar. Genellikle, her seferinde tek bir veri alanı yazarsınız.
 
-Yöntem, `FlushData` verileri ilk depolandığı biçimde yazar. Bu işlevi geçersiz kılmazsanız, sağlayıcınız doğru çalışır, ancak değişiklikler veri deposuna atılamaz.
+`FlushData`Yöntemi, verileri özgün olarak saklandığı biçimde yazar. Bu işlevi geçersiz kılamazsınız, sağlayıcınız doğru şekilde çalışır, ancak değişiklikler veri deposuna silinir.
 
-### <a name="when-to-flush"></a>Flush ne zaman
+### <a name="when-to-flush"></a>Ne zaman boşaltım
 
-Sağlayıcı şablonları, verilerin veri deposuna yazılması gerektiğinde FlushData'yı arar; bu genellikle (ancak her zaman değil) aşağıdaki işlevlere yapılan çağrıların bir sonucu olarak ortaya çıkar:
+Sağlayıcı şablonları, verilerin veri deposuna yazılması gerektiğinde, Flushverilerini çağırır; Bu genellikle aşağıdaki işlevlere yapılan çağrıların sonucu olarak (her zaman değil) oluşur:
 
 - `IRowsetChange::DeleteRows`
 
 - `IRowsetChange::SetData`
 
-- `IRowsetChange::InsertRows`(satıra eklenecek yeni veriler varsa)
+- `IRowsetChange::InsertRows` (satıra eklenecek yeni veriler varsa)
 
 - `IRowsetUpdate::Update`
 
-### <a name="how-it-works"></a>Nasıl Çalışır?
+### <a name="how-it-works"></a>Nasıl çalıştığı
 
-Tüketici floş gerektiren bir arama yapar (Güncelleştirme gibi) ve bu çağrı her zaman aşağıdakileri yapar sağlayıcıya iletilir:
+Tüketici, temizleme işlemi gerektiren bir çağrı yapar (örneğin, güncelleştirme) ve bu çağrı sağlayıcıya geçirilir ve her zaman aşağıdakileri yapar:
 
-- Durum `SetDBStatus` değeriniz bağlı olduğunda aramalar.
+- `SetDBStatus`Bir durum değeri bağladınız her seferinde çağırır.
 
 - Sütun bayraklarını denetler.
 
-- Aramalar `IsUpdateAllowed`.
+- Çağırır `IsUpdateAllowed` .
 
-Bu üç adım güvenliği sağlamaya yardımcı olur. Sonra sağlayıcı `FlushData`çağırır.
+Bu üç adım güvenlik sağlamaya yardımcı olur. Ardından sağlayıcı çağırır `FlushData` .
 
-### <a name="how-to-implement-flushdata"></a>FlushData Nasıl Uygulanır?
+### <a name="how-to-implement-flushdata"></a>FlushData nasıl uygulanır?
 
-Uygulamak `FlushData`için, dikkate çeşitli sorunları almak gerekir:
+Uygulamak için `FlushData` birkaç sorunu dikkate almanız gerekir:
 
-Veri deposunun değişiklikleri işleyediğinden emin olun.
+Veri deposunun değişiklikleri işleyebileceği doğrulanıyor.
 
-NULL değerlerini işleme.
+NULL değerleri işleme.
 
-### <a name="handling-default-values"></a>Varsayılan değerleri işleme.
+### <a name="handling-default-values"></a>Varsayılan değerler işleniyor.
 
-Kendi `FlushData` yönteminizi uygulamak için şunları yapmanız gerekir:
+Kendi yönteminizi uygulamak için şunları yapmanız `FlushData` gerekir:
 
-- Rowset sınıfına git.
+- Satır kümesi Sınıfınıza gidin.
 
-- Rowset sınıfında aşağıdakileri bildirgeyi koydu:
+- Satır kümesi sınıfında şu bildirimi koyun:
 
    ```cpp
    HRESULT FlushData(HROW, HACCESSOR)
@@ -197,21 +198,21 @@ Kendi `FlushData` yönteminizi uygulamak için şunları yapmanız gerekir:
    }
    ```
 
-- Bir uygulama `FlushData`sağlayın.
+- Uygulamasının bir uygulamasını sağlayın `FlushData` .
 
-`FlushData` Yalnızca güncelleştirilen satır ve sütunları saklar. Optimizasyon için depolanan geçerli satır ve sütunu belirlemek için HROW ve HACCESSOR parametrelerini kullanabilirsiniz.
+İyi bir uygulama `FlushData` , yalnızca gerçekten güncellenen satırları ve sütunları depolar. En iyi duruma getirme için depolanmakta olan geçerli satırı ve sütunu öğrenmek için HROW ve HACCESSOR parametrelerini kullanabilirsiniz.
 
-Genellikle, en büyük sorun kendi yerel veri deposu ile çalışmaktır. Mümkünse şunları deneyin:
+Genellikle en büyük zorluk kendi yerel veri deponuzla çalışmaktadır. Mümkünse şunları deneyin:
 
-- Veri deponuza yazma yöntemini olabildiğince basit tutun.
+- Veri deponuza yazma yöntemini mümkün olduğunca basit tutun.
 
-- NULL değerlerini işleme (isteğe bağlı ancak tavsiye edilir).
+- NULL değerleri işleyin (isteğe bağlı ancak önerilir).
 
-- Varsayılan değerleri işleme (isteğe bağlı ancak tavsiye edilir).
+- Varsayılan değerleri işleyin (isteğe bağlı ancak önerilir).
 
-Yapmanız gereken en iyi şey, NULL ve varsayılan değerler için veri deposunuzda gerçek belirtilen değerlere sahip olmaktır. Bu verileri tahmin edebilirsiniz en iyisidir. Değilse, NULL ve varsayılan değerlere izin vermemeniz önerilir.
+En iyi şey, veri deponuzda NULL ve varsayılan değerler için belirtilen gerçek değerleri içermelidir. Bu verileri tahmin etmek için en iyi seçenektir. Aksi takdirde, NULL ve varsayılan değerlere izin vermeniz önerilir.
 
-Aşağıdaki örnek, `FlushData` örnekteki `RUpdateRowset` sınıfta nasıl uygulandığını `UpdatePV` gösterir (örnek koddaki Rowset.h'ye bakın):
+Aşağıdaki örnek örnekteki sınıfında nasıl `FlushData` uygulandığını gösterir `RUpdateRowset` `UpdatePV` (örnek kodda rowset. h öğesine bakın):
 
 ```cpp
 ///////////////////////////////////////////////////////////////////////////
@@ -293,27 +294,27 @@ HRESULT FlushData(HROW, HACCESSOR)
 }
 ```
 
-### <a name="handling-changes"></a>Değişiklikleri Işleme
+### <a name="handling-changes"></a>Değişiklikleri işleme
 
-Sağlayıcınızın değişiklikleri işlemesi için öncelikle veri deponuzun (metin dosyası veya video dosyası gibi) üzerinde değişiklik yapmanızı sağlayan olanaklara sahip olduğundan emin olmanız gerekir. Yoksa, bu kodu sağlayıcı projeden ayrı olarak oluşturmanız gerekir.
+Sağlayıcınızın değişiklikleri işlemesi için, önce veri deponuzda (örneğin, bir metin dosyası veya video dosyası) üzerinde değişiklik yapmanıza olanak sağlayan tesislere sahip olduğundan emin olmanız gerekir. Değilse, bu kodu sağlayıcı projesinden ayrı olarak oluşturmanız gerekir.
 
-### <a name="handling-null-data"></a>NULL Verilerini Işleme
+### <a name="handling-null-data"></a>NULL verileri işleme
 
-Bir son kullanıcının NULL verisi göndermesi mümkündür. Veri kaynağındaki alanlara NULL değerleri yazdığınızda, olası sorunlar olabilir. Şehir ve posta kodu değerlerini kabul eden bir sipariş alma uygulaması düşünün; ya da her iki değeri de kabul edebilir, ama ikisi de kabul etmez, çünkü bu durumda teslim imkansız olacaktır. Bu nedenle, uygulamanız için anlamlı olan alanlardaki null değerlerinin belirli birleşimlerini kısıtlamanız gerekir.
+Son kullanıcının NULL verileri gönderebilmesi mümkündür. Veri kaynağındaki alanlara NULL değerler yazdığınızda olası sorunlar olabilir. Şehir ve posta kodu değerlerini kabul eden bir sıra alma uygulaması düşünün; Her iki değeri de kabul edebilir, ancak bu durum teslimatı mümkün olmadığı için hiçbirini içermez. Bu nedenle, uygulamanız için anlamlı olan alanlarda bazı NULL değer birleşimlerini kısıtlamanız gerekir.
 
-Sağlayıcı geliştiricisi olarak, bu verileri nasıl depoladığınızı, veri deposundan bu verileri nasıl okuyacağınızı ve bunu kullanıcıya nasıl belirttiğinizi göz önünde bulundurmanız gerekir. Özellikle, veri kaynağındaki satır kümesi verilerinin veri durumunu nasıl değiştireceğiniz göz önünde bulundurulmalıdır (örneğin, DataStatus = NULL). Bir tüketici NULL değeri içeren bir alana eriştığında hangi değeri döndüreceğine siz karar verirsiniz.
+Sağlayıcı geliştiricisi olarak, bu verileri nasıl depolayacağınızı, veri deposundaki verileri nasıl okuyacağınızı ve Kullanıcı için nasıl belirtduğunuzu göz önünde bulundurmanız gerekir. Özellikle, veri kaynağındaki satır kümesi verilerinin veri durumunun nasıl değiştirileceğini düşünmeniz gerekir (örneğin, DataStatus = NULL). Bir Tüketici NULL değer içeren bir alana eriştiğinde döndürülecek değere karar verirsiniz.
 
-UpdatePV örneğindeki koda bakın; sağlayıcının NULL verilerini nasıl işleyeceğini gösterir. UpdatePV'de sağlayıcı, veri deposuna "NULL" dizesini yazarak NULL verilerini depolar. Veri deposundan NULL verilerini okuduğunda, bu dizeyi görür ve arabelleği boşalarak null dizesini oluşturur. Ayrıca, veri değeri `IRowsetImpl::GetDBStatus` boşsa DBSTATUS_S_ISNULL döndürdeğinin geçersiz kılındığı da bir geçersiz kılma vardır.
+UpdatePV örneğindeki koda bakın; bir sağlayıcının NULL verileri nasıl işleyebileceğini gösterir. UpdatePV öğesinde sağlayıcı, veri deposunda "NULL" dizesini yazarak NULL verileri depolar. Veri deposundan NULL verileri okuduğunda, bu dizeyi görür ve sonra bir NULL dize oluşturarak arabelleği boşaltır. Ayrıca, `IRowsetImpl::GetDBStatus` Bu veri değeri boş ise DBSTATUS_S_ISNULL döndürdüğü bir geçersiz kılma içerir.
 
-### <a name="marking-nullable-columns"></a>Nullable Sütunları İşaretleme
+### <a name="marking-nullable-columns"></a>Null yapılabilir sütunları işaretleme
 
-Şema satır kümelerini de uygularsanız (bakınız), `IDBSchemaRowsetImpl`uygulamanız DBSCHEMA_COLUMNS rowset'te (genellikle Sağlayıcınızda CxxxSchemaColSchemaRowset tarafından işaretlenir) sütunun geçersiz olduğunu belirtmelidir.
+Ayrıca, şema satır kümeleri (bkz. `IDBSchemaRowsetImpl` ) uygularsanız, uygulamanız DBSCHEMA_COLUMNS satır kümesinde (genellikle CxxxSchemaColSchemaRowset tarafından olarak işaretlenir) sütunun null değer atanabilir olduğunu belirtmelidir.
 
-Ayrıca, tüm boşatılabilir sütunların DBCOLUMNFLAGS_ISNULLABLE değerini içerdiğini belirtmeniz `GetColumnInfo`gerekir.
+Ayrıca, tüm null yapılabilir sütunların, sürümünüze DBCOLUMNFLAGS_ISNULLABLE değerini içermesini de belirtmeniz gerekir `GetColumnInfo` .
 
-OLE DB şablonları uygulamasında, sütunları nullable olarak işaretlemezseniz, sağlayıcı bunların bir değer içermesi gerektiğini varsayar ve tüketicinin bu değerleri null değerleri göndermesine izin vermez.
+OLE DB şablonları uygulamasında, sütunları null yapılabilir olarak işaretlemediğinizi, sağlayıcı bir değer içermesi gerektiğini varsayar ve tüketicinin bu değeri, null değerler göndermesini sağlar.
 
-Aşağıdaki örnek, güncelleştirmepv'de işlevin CUpdateCommand'da nasıl uygulandığını `CommonGetColInfo` gösterir (bkz. UpProvRS.cpp). Sütunların bu DBCOLUMNFLAGS_ISNULLABLE boşsütunlar için nasıl olduğunu unutmayın.
+Aşağıdaki örnek, bir işlevin, `CommonGetColInfo` UpdatePV Içindeki CUpdateCommand (bkz. UpProvRS. cpp) içinde nasıl uygulandığını gösterir. Sütunlarda null yapılabilir sütunlar için bu DBCOLUMNFLAGS_ISNULLABLE nasıl sahip olduğunu aklınızda edin.
 
 ```cpp
 /////////////////////////////////////////////////////////////////////////////
@@ -370,11 +371,11 @@ ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols, bool bBookma
 
 ### <a name="default-values"></a>Varsayılan Değerler
 
-NULL verilerinde olduğu gibi, değişen varsayılan değerlerle başa çıkma sorumluluğunuz da sizdedir.
+NULL verilerde olduğu gibi, değişen varsayılan değerlerle ilgilenme sorumluluğu vardır.
 
-Varsayılan `FlushData` ve `Execute` S_OK dönmektir. Bu nedenle, bu işlevi geçersiz kılmazsanız, değişiklikler başarılı görünür (S_OK döndürülür), ancak bunlar veri deposuna aktarılacak.
+`FlushData`Ve ' nin varsayılan ' i `Execute` S_OK döndürmemelidir. Bu nedenle, bu işlevi geçersiz kılamazsınız, değişiklikler başarılı olarak görünür (S_OK döndürülür), ancak bunlar veri deposuna aktarılmaz.
 
-Örnekte `UpdatePV` (Rowset.h'de), `SetDBStatus` yöntem varsayılan değerleri aşağıdaki gibi işler:
+`UpdatePV`Örnekte (rowset. h), `SetDBStatus` yöntemi varsayılan değerleri aşağıdaki şekilde işler:
 
 ```cpp
 virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,
@@ -411,13 +412,13 @@ virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,
 }
 ```
 
-### <a name="column-flags"></a>Sütun Bayrakları
+### <a name="column-flags"></a>Sütun bayrakları
 
-Sütunlarınızda varsayılan değerleri destekliyorsanız, sağlayıcı sınıfı SchemaRowset\>sınıfındaki \<meta verileri kullanarak ayarlamanız gerekir. Ayarlayın. `m_bColumnHasDefault = VARIANT_TRUE`
+Sütunlarınızın varsayılan değerlerini destekederseniz, bunu SchemaRowset sınıfında meta verileri kullanarak ayarlamanız gerekir \<provider class\> . Ayarlayın `m_bColumnHasDefault = VARIANT_TRUE` .
 
-Ayrıca, DBCOLUMNFLAGS numaralandırılmış türü kullanılarak belirtilen sütun bayraklarını ayarlama sorumluluğunuz da vardır. Sütun bayrakları sütun özelliklerini açıklar.
+Ayrıca, DBCOLUMNFLAGS numaralandırılmış türü kullanılarak belirtilen sütun bayraklarını ayarlama sorumluluğuna de sahipsiniz. Sütun bayrakları sütun özelliklerini tanımlıyor.
 
-Örneğin, (Session.h'deki `CUpdateSessionColSchemaRowset` `UpdatePV` sınıfta) ilk sütun şu şekilde ayarlanır:
+Örneğin, `CUpdateSessionColSchemaRowset` içindeki sınıfında `UpdatePV` (Session. h), ilk sütun bu şekilde ayarlanır:
 
 ```cpp
 // Set up column 1
@@ -432,8 +433,8 @@ lstrcpyW(trData[0].m_szColumnDefault, OLESTR("0"));
 m_rgRowData.Add(trData[0]);
 ```
 
-Bu kod, diğer şeylerin yanı sıra, sütunun varsayılan değeri 0'ı desteklediğini, yazılabilir olmasını ve sütundaki tüm verilerin aynı uzunluğa sahip olduğunu belirtir. Bir sütundaki verilerin değişken uzunluğa sahip olmasını istiyorsanız, bu bayrağı ayarlamazsınız.
+Bu kod, diğer şeyler arasında, sütunun varsayılan değeri olan 0 ' ı desteklediğini, yazılabilir olduğunu ve sütundaki tüm verilerin aynı uzunluğa sahip olduğunu belirtir. Sütundaki verilerin değişken uzunlukta olmasını istiyorsanız bu bayrağı ayarlayamazsınız.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[OLE DB Sağlayıcısı Oluşturma](creating-an-ole-db-provider.md)
+[OLE DB sağlayıcısı oluşturma](creating-an-ole-db-provider.md)

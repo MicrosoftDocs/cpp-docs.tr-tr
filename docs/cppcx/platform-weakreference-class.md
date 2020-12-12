@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: Platform:: WeakReference sınıfı'
 title: 'Platform:: WeakReference sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-ms.openlocfilehash: befefba7cc76f24f6dddd58d0c5f040bfd205508
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: edf3220d8916ff4bdb1462f3dd04149a4e9a9709
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216602"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307801"
 ---
 # <a name="platformweakreference-class"></a>Platform:: WeakReference sınıfı
 
 Bir başvuru sınıfının örneğine zayıf bir başvuruyu temsil eder.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class WeakReference
@@ -49,11 +50,11 @@ class WeakReference
 
 WeakReference sınıfının kendisi bir başvuru sınıfı değil ve bu nedenle Platform:: Object ^ öğesinden almıyor ve bir ortak metodun imzasında kullanılamaz.
 
-## <a name="weakreferenceoperator"></a><a name="operator-assign"></a>WeakReference:: operator =
+## <a name="weakreferenceoperator"></a><a name="operator-assign"></a> WeakReference:: operator =
 
 WeakReference 'a bir değer atar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 WeakReference& operator=(decltype(__nullptr));
@@ -66,21 +67,21 @@ WeakReference& operator=(const volatile ::Platform::Object^ const otherArg);
 
 Yukarıdaki listede son aşırı yükleme bir WeakReference değişkenine bir başvuru sınıfı atamanıza olanak sağlar. Bu durumda, ref sınıfı [Platform:: Object](../cppcx/platform-object-class.md)^ öğesine Alta ayarlanır. Özgün türü daha sonra [WeakReference:: Resolve \<T> ](#resolve) üye işlevindeki tür parametresi için bağımsız değişken olarak belirterek geri yükleyin.
 
-## <a name="weakreferenceoperator-booltype"></a><a name="booltype"></a>WeakReference:: işleç BoolType
+## <a name="weakreferenceoperator-booltype"></a><a name="booltype"></a> WeakReference:: işleç BoolType
 
 WeakReference sınıfı için güvenli bool modelini uygular. Kodınızdan açıkça çağrılmamalıdır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 BoolType BoolType();
 ```
 
-## <a name="weakreferenceresolve-method-platform-namespace"></a><a name="resolve"></a>WeakReference:: Resolve Yöntemi (Platform ad alanı)
+## <a name="weakreferenceresolve-method-platform-namespace"></a><a name="resolve"></a> WeakReference:: Resolve Yöntemi (Platform ad alanı)
 
 Özgün başvuru sınıfına bir tanıtıcı döndürür veya **`nullptr`** nesne artık mevcut değilse.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename T>
@@ -108,11 +109,11 @@ if (bar != nullptr)
 
 Tür parametresinin T, t değil olduğunu unutmayın.
 
-## <a name="weakreferenceweakreference-constructor"></a><a name="ctor"></a>WeakReference:: WeakReference Oluşturucusu
+## <a name="weakreferenceweakreference-constructor"></a><a name="ctor"></a> WeakReference:: WeakReference Oluşturucusu
 
 WeakReference oluşturmak için çeşitli yollar sağlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 WeakReference();

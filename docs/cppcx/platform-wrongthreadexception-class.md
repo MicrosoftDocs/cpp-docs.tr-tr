@@ -1,5 +1,6 @@
 ---
-title: Platform::WrongThreadException sınıfı
+description: 'Daha fazla bilgi edinin: Platform:: yanlışlıkla Gthreadexception sınıfı'
+title: 'Platform:: yanlışlıkla Gthreadexception sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::WrongThreadException
 ms.assetid: c193f97e-0392-4535-a4c4-0711e4e4a836
-ms.openlocfilehash: dde8c9afff6be083580042a958f59e057bc44350
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a7fbaed7766a3928ca24d56f5233c38d9298d466
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62396086"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307736"
 ---
-# <a name="platformwrongthreadexception-class"></a>Platform::WrongThreadException sınıfı
+# <a name="platformwrongthreadexception-class"></a>Platform:: yanlışlıkla Gthreadexception sınıfı
 
-Bir iş parçacığı için iş parçacığının grubunu ait değil bir proxy nesnesi için bir arabirim işaretçisi aracılığıyla çağırdığında oluşturulur.
+Bir iş parçacığı, iş parçacığının grubuna ait olmayan bir ara sunucu nesnesi için arabirim işaretçisi yoluyla çağırdığında oluşturulur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public ref class WrongThreadException : COMException,    IException,    IPrintable,    IEquatable
@@ -27,18 +28,18 @@ public ref class WrongThreadException : COMException,    IException,    IPrintab
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md).
+Daha fazla bilgi için bkz. [COMException](../cppcx/platform-comexception-class.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform
+**Ad alanı:** Platformunun
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)
+[Platform:: COMException sınıfı](../cppcx/platform-comexception-class.md)

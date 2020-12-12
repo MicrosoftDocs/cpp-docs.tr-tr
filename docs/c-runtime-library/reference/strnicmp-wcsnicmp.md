@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: strnıcmp, wcsnıcmp'
 title: strnicmp, wcsnicmp
 ms.date: 12/16/2019
 api_name:
@@ -26,15 +27,15 @@ helpviewer_keywords:
 - strnicmp function
 - wcsnicmp function
 ms.assetid: 01324ee4-0bd9-43e9-b2a3-53d180270a64
-ms.openlocfilehash: 6f52df6d0a75922fefb63ee233250f20b1209f74
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: f69874c6dedb72ad0ef2b44f468e2d08236302d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75300501"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306059"
 ---
 # <a name="strnicmp-wcsnicmp"></a>strnicmp, wcsnicmp
 
-`strnicmp` ve `wcsnicmp` Microsoft 'a özgü işlev adları [_strnicmp ve _wcsnicmp](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) işlevlerinin kullanım dışı diğer adlarıdır. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) oluşturur C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Adlar, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlevleri hala desteklenmektedir.
+Microsoft 'a özgü işlev adları `strnicmp` ve `wcsnicmp` [_strnicmp ve _wcsnicmp](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) işlevleri için kullanım dışı diğer adlar. Varsayılan olarak, [Derleyici Uyarısı (düzey 3) oluşturur C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Adlar, uygulamaya özgü adlarla ilgili standart C kurallarını izlemediğinden kullanım dışı bırakılmıştır. Ancak, işlevleri hala desteklenmektedir.
 
 Bunun yerine [_strnicmp ve _wcsnicmp](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) kullanmanızı öneririz. Ya da bu işlev adlarını kullanmaya devam edebilir ve uyarıyı devre dışı bırakabilirsiniz. Daha fazla bilgi için bkz. [Uyarı](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) ve [POSIX işlev adlarını](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)kapatma.

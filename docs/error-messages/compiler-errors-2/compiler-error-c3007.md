@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3007'
 title: Derleyici hatası C3007
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3007
 ms.assetid: e415ef42-bdc9-4f32-8198-5e25b289a089
-ms.openlocfilehash: 9b80cc556887bf04efa3d98a31ccfd7ed1a2e4d7
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 5203dd3d81d2e255f13e21e66cd961413db11a18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305357"
 ---
 # <a name="compiler-error-c3007"></a>Derleyici hatası C3007
 

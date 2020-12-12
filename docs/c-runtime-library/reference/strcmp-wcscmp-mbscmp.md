@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strcmp, wcscmp, _mbscmp, _mbscmp_l'
 title: strcmp, wcscmp, _mbscmp, _mbscmp_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - _ftcscmp function
 - ftcscmp function
 ms.assetid: 5d216b57-7a5c-4cb3-abf0-0f4facf4396d
-ms.openlocfilehash: 805e355fe12cb2f7ead6180edd45ad0748570141
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0c611b92b39d04e455bbd31f22f98898723ff7c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306163"
 ---
 # <a name="strcmp-wcscmp-_mbscmp-_mbscmp_l"></a>strcmp, wcscmp, _mbscmp, _mbscmp_l
 
@@ -94,7 +95,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri için dönüş değeri, *Dize1* ile *dize2*arasındaki sıralı ilişkiyi belirtir.
+Bu işlevlerin her biri için dönüş değeri, *Dize1* ile *dize2* arasındaki sıralı ilişkiyi belirtir.
 
 |Değer|Dize1 ile dize2 arasındaki ilişki|
 |-----------|----------------------------------------|
@@ -102,11 +103,11 @@ Bu işlevlerin her biri için dönüş değeri, *Dize1* ile *dize2*arasındaki s
 |0|*Dize1* *dize2* ile aynıdır|
 |> 0|*Dize1* *dize2* 'den büyük|
 
-Bir parametre doğrulama hatası üzerinde **_mbscmp** ve **_mbscmp_l** String. h> ve \<mbstring. \<h> içinde tanımlanan **_NLSCMPERROR**döndürün.
+Bir parametre doğrulama hatası üzerinde **_mbscmp** ve **_mbscmp_l** , ve ' de tanımlanan **_NLSCMPERROR** döndürün \<string.h> \<mbstring.h> .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcmp** işlevi, *Dize1* ve *dize2* için sıralı bir karşılaştırma gerçekleştirir ve ilişkilerini gösteren bir değer döndürür. **wcscmp** ve **_mbscmp** , sırasıyla **strcmp**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **_mbscmp** , geçerli çok baytlı kod sayfasına göre çok baytlı karakter dizilerini tanır ve bir hata üzerinde **_NLSCMPERROR** döndürür. **_mbscmp_l** aynı davranışa sahiptir, ancak geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [kod sayfaları](../../c-runtime-library/code-pages.md). Ayrıca, *Dize1* veya *dize2* null Işaretçisiyse, **_mbscmp** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **_mbscmp** ve **_mbscmp_l** **_NLSCMPERROR** döndürün ve **errno** öğesini **EINVAL**olarak ayarlayın. **strcmp** ve **wcscmp** parametrelerini doğrulamaz. Bu işlevler, aynı şekilde davranır.
+**Strcmp** işlevi, *Dize1* ve *dize2* için sıralı bir karşılaştırma gerçekleştirir ve ilişkilerini gösteren bir değer döndürür. **wcscmp** ve **_mbscmp** , sırasıyla **strcmp**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **_mbscmp** , geçerli çok baytlı kod sayfasına göre çok baytlı karakter dizilerini tanır ve bir hata üzerinde **_NLSCMPERROR** döndürür. **_mbscmp_l** aynı davranışa sahiptir, ancak geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [kod sayfaları](../../c-runtime-library/code-pages.md). Ayrıca, *Dize1* veya *dize2* null Işaretçisiyse, **_mbscmp** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **_mbscmp** ve **_mbscmp_l** **_NLSCMPERROR** döndürün ve **errno** öğesini **EINVAL** olarak ayarlayın. **strcmp** ve **wcscmp** parametrelerini doğrulamaz. Bu işlevler, aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -122,15 +123,15 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 Karakter kümesi ve lexicographic karakter sırasının farklı olduğu yerlerde, dizelerin lexıgrafgrafik karşılaştırması için **strcmp** yerine **strsıtıl** kullanabilirsiniz. Alternatif olarak, özgün dizelerde **strxfrm** ' i kullanabilir ve ardından elde edilen dizelerde **strcmp** ' yi kullanabilirsiniz.
 
-**Strcmp** işlevleri büyük/küçük harfe duyarlıdır. stricmp, ** \_wcsıcmp**ve ** \_mbsıcmp** , önce bunları küçük formlarına dönüştürerek dizeleri karşılaştırın. ** \_** ASCII tablosunda (' [', '\\', '] ', ' ^ ', ' _ ' ve '\`') ' Z ' ve ' a ' arasında bulunan karakterler içeren iki dize, durumlarına bağlı olarak farklı şekilde karşılaştırın. Örneğin, "ABCDE" ve "ABCD ^" dizeleri, karşılaştırma küçük harfli ("ABCDE" > "abcd ^") ve diğer şekilde ("ABCDE" < "abcd ^") büyük harfli bir şekilde karşılaştırın.
+**Strcmp** işlevleri büyük/küçük harfe duyarlıdır. **\_ stricmp**, **\_ wcsıcmp** ve **\_ mbsıcmp** , önce bunları küçük formlarına dönüştürerek dizeleri karşılaştırın. ASCII tablosunda (' [', ' \\ ', '] ', ' ^ ', ' _ ' ve ' ') ' Z ' ve ' a ' arasında bulunan karakterler içeren iki dize, \` durumlarına bağlı olarak farklı şekilde karşılaştırın. Örneğin, "ABCDE" ve "ABCD ^" dizeleri, karşılaştırma küçük harfli ("ABCDE" > "abcd ^") ve diğer şekilde ("ABCDE" < "abcd ^") büyük harfli bir şekilde karşılaştırın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcmp**|\<String. h>|
-|**wcscmp**|\<String. h> veya \<wchar. h>|
-|**_mbscmp**|\<mbstring. h>|
+|**strcmp**|\<string.h>|
+|**wcscmp**|\<string.h> veya \<wchar.h>|
+|**_mbscmp**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -192,7 +193,7 @@ Compare strings:
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
 [_memicmp, _memicmp_l](memicmp-memicmp-l.md)<br/>
-[strcoll İşlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
+[strcoll Işlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
 [_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

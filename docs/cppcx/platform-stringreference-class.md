@@ -1,5 +1,6 @@
 ---
-title: Platform::StringReference Sınıfı
+description: 'Daha fazla bilgi edinin: Platform:: StringReference sınıfı'
+title: 'Platform:: StringReference sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -9,18 +10,18 @@ f1_keywords:
 - VCCORLIB/Platform::StringReference::GetHSTRING
 - VCCORLIB/Platform::StringReference::GetString
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-ms.openlocfilehash: 4748eecdf67ae5a60ddf97783a934a05e80b406c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5c211776bccbd3ba2fedaf769502f7dad71b6eb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307957"
 ---
-# <a name="platformstringreference-class"></a>Platform::StringReference Sınıfı
+# <a name="platformstringreference-class"></a>Platform:: StringReference sınıfı
 
-En az kopyalama işlemleriyle giriş parametrelerinden `Platform::String^` diğer yöntemlere string verilerini geçirmek için kullanabileceğiniz bir enoptimizasyon türü.
+`Platform::String^`Giriş parametrelerinden dize verilerini, en az kopyalama işlemlerine sahip diğer yöntemlere geçirmek için kullanabileceğiniz bir iyileştirme türü.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class StringReference
@@ -32,41 +33,41 @@ class StringReference
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[StringReference::StringReference](#ctor)|Örnekleri oluşturmak için iki `StringReference`oluşturucu.|
+|[StringReference:: StringReference](#ctor)|Örnekleri oluşturmak için iki Oluşturucu `StringReference` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[StringReference::Data](#data)|Dize verilerini char16 değerleri dizisi olarak döndürür.|
-|[StringReference::Uzunluk](#length)|Dizedeki karakter sayısını döndürür.|
-|[StringReference::GetHSTRING](#gethstring)|Dize verilerini HSTRING olarak döndürür.|
-|[StringReference::GetString](#getstring)|Dize verilerini `Platform::String^`' olarak döndürür.|
+|[StringReference::D ata](#data)|Dize verilerini Char16 değerlerinin bir dizisi olarak döndürür.|
+|[StringReference:: length](#length)|Dizedeki karakter sayısını döndürür.|
+|[StringReference:: GetHSTRING](#gethstring)|String verisini bir HSTRING olarak döndürür.|
+|[StringReference:: GetString](#getstring)|Dize verilerini olarak döndürür `Platform::String^` .|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[StringReference::operator=](#operator-assign)|Yeni `StringReference` bir `StringReference` örneğe aatar.|
-|[StringReference::operator()](#operator-call)|A'yı `StringReference` bir'e `Platform::String^`dönüştürür.|
+|[StringReference:: operator =](#operator-assign)|Yeni bir `StringReference` örneğe bir atar `StringReference` .|
+|[StringReference:: operator ()](#operator-call)|Bir `StringReference` öğesine dönüştürür `Platform::String^` .|
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Minimum desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Minimum desteklenen sunucu:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Ad alanı:** Platform
+**Ad alanı:** Platformunun
 
-**Başlık:** vccorlib.h
+**Üstbilgi:** vccorlib. h
 
-## <a name="stringreferencedata-method"></a><a name="data"></a>StringReference::Data Yöntemi
+## <a name="stringreferencedata-method"></a><a name="data"></a> StringReference::D ata yöntemi
 
-Bunun `StringReference` içeriğini char16 değerleri dizisi olarak döndürür.
+Bunun içeriğini `StringReference` Char16 değerlerinin bir dizisi olarak döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 const ::default::char16 * Data() const;
@@ -74,13 +75,13 @@ const ::default::char16 * Data() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Char16 UNICODE metin karakterleri dizisi.
+Char16 UNICODE metin karakterlerinden oluşan bir dizi.
 
-## <a name="stringreferencegethstring-method"></a><a name="gethstring"></a>StringReference::GetHSTRING Yöntemi
+## <a name="stringreferencegethstring-method"></a><a name="gethstring"></a> StringReference:: GetHSTRING yöntemi
 
-Dize içeriğini bir `__abi_HSTRING`.
+Dizenin içeriğini bir olarak döndürür `__abi_HSTRING` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 __abi_HSTRING GetHSTRING() const;
@@ -88,15 +89,15 @@ __abi_HSTRING GetHSTRING() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize `__abi_HSTRING` verilerini içeren bir.
+`__abi_HSTRING`Dize verilerini içeren bir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="stringreferencegetstring-method"></a><a name="getstring"></a>StringReference::GetString Yöntemi
+## <a name="stringreferencegetstring-method"></a><a name="getstring"></a> StringReference:: GetString yöntemi
 
-Dize içeriğini bir `Platform::String^`. olarak döndürür
+Dizenin içeriğini bir olarak döndürür `Platform::String^` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 __declspec(no_release_return) __declspec(no_refcount)
@@ -105,13 +106,13 @@ __declspec(no_release_return) __declspec(no_refcount)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize verilerini içeren a. `Platform::String^`
+`Platform::String^`Dize verilerini içeren bir.
 
-## <a name="stringreferencelength-method"></a><a name="length"></a>StringReference::Uzunluk Yöntemi
+## <a name="stringreferencelength-method"></a><a name="length"></a> StringReference:: length yöntemi
 
 Dizedeki karakter sayısını döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned int Length() const;
@@ -119,11 +120,11 @@ unsigned int Length() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dizedeki karakter sayısını belirten imzasız bir karşıcı.
+Dizedeki karakter sayısını belirten işaretsiz bir tamsayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="stringreferenceoperator-operator"></a><a name="operator-assign"></a>StringReference::operator= Operatör
+## <a name="stringreferenceoperator-operator"></a><a name="operator-assign"></a> StringReference:: operator = Işleci
 
 Belirtilen nesneyi geçerli `StringReference` nesneye atar.
 
@@ -137,24 +138,24 @@ StringReference& operator=(const ::default::char16* __strArg);
 ### <a name="parameters"></a>Parametreler
 
 *__fstrArg*<br/>
-Geçerli `StringReference` nesneyi `StringReference` başlatmak için kullanılan bir nesnenin adresi.
+`StringReference`Geçerli nesneyi başlatmak için kullanılan nesnenin adresi `StringReference` .
 
 *__strArg*<br/>
-Geçerli `StringReference` nesneyi başlatmak için kullanılan char16 değerleri dizisini işaretçi.
+Geçerli nesneyi başlatmak için kullanılan Char16 değerleri dizisine yönelik işaretçi `StringReference` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türdeki `StringReference`bir nesneye başvuru.
+Türündeki bir nesneye başvuru `StringReference` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ref `StringReference` sınıfı değil standart bir C++ sınıfı olduğundan Object **Browser'da**görünmez.
+, `StringReference` Bir başvuru sınıfı değil, standart bir C++ sınıfı olduğundan **nesne tarayıcısı** görünmüyor.
 
-## <a name="stringreferenceoperator--operator"></a><a name="operator-call"></a>StringReference::operator() Operatör
+## <a name="stringreferenceoperator--operator"></a><a name="operator-call"></a> StringReference:: operator () Işleci
 
-Nesneyi `StringReference` nesneye `Platform::String^` dönüştürür.
+Nesneyi `StringReference` `Platform::String^` nesnesine dönüştürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 __declspec(no_release_return) __declspec(no_refcount)
@@ -163,9 +164,9 @@ __declspec(no_release_return) __declspec(no_refcount)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Türdeki `Platform::String`bir nesneye bir tanıtıcı.
+Türündeki bir nesneye yönelik bir tanıtıcı `Platform::String` .
 
-## <a name="stringreferencestringreference-constructor"></a><a name="ctor"></a>StringReference::StringReference Constructor
+## <a name="stringreferencestringreference-constructor"></a><a name="ctor"></a> StringReference:: StringReference Oluşturucusu
 
 `StringReference` sınıfının yeni bir örneğini başlatır.
 
@@ -181,18 +182,18 @@ StringReference(const ::default::char16* __strArg, size_t __lenArg);
 ### <a name="parameters"></a>Parametreler
 
 *__fstrArg*<br/>
-Verileri `StringReference` yeni örneği başlatmak için kullanılır.
+`StringReference`Verileri yeni örneği başlatmak için kullanılır.
 
 *__strArg*<br/>
-Yeni örneği başlatmak için kullanılan char16 değerleri dizisiiçin işaretçi.
+Yeni örneği başlatmak için kullanılan Char16 değerleri dizisine yönelik işaretçi.
 
 *__lenArg*<br/>
-'deki `__strArg`öğelerin sayısı.
+İçindeki öğe sayısı `__strArg` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu oluşturucunun ilk sürümü varsayılan oluşturucudur. İkinci `__fstrArg` sürüm, parametre `StringReference` tarafından belirtilen nesneden yeni bir örnek sınıf ını başolarak adlandırır. Üçüncü ve dördüncü aşırı yüklemeler `StringReference` char16 değerlerinden bir dizi yeni bir örneği başlatma. char16 16 bit UNICODE metin karakterini temsil eder.
+Bu oluşturucunun ilk sürümü varsayılan oluşturucudur. İkinci sürüm, `StringReference` parametresi tarafından belirtilen nesneden yeni bir örnek sınıfı başlatır `__fstrArg` . Üçüncü ve dördüncü aşırı yüklemeler, `StringReference` Char16 değerlerinin dizisinden yeni bir örnek başlatır. Char16 16 bit UNICODE metin karakterini temsil eder.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform::StringReference Sınıfı](../cppcx/platform-stringreference-class.md)
+[Platform:: StringReference sınıfı](../cppcx/platform-stringreference-class.md)

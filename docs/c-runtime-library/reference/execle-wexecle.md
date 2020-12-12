@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _execle _wexecle'
 title: _execle, _wexecle
 ms.date: 11/04/2016
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _wexecle function
 - _execle function
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
-ms.openlocfilehash: 3480b2220c71984dcc30cec54d00deac1f4dfbc7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 28e05222d0ee91f44f96717056117a67afe5c0b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937384"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304902"
 ---
 # <a name="_execle-_wexecle"></a>_execle, _wexecle
 
@@ -82,8 +83,8 @@ Başarılı olursa, bu işlevler çağıran işleme geri dönmez. -1 ' in dönü
 |-------------------|-----------------|
 |**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB 'yi aşıyor.|
 |**EACCES**|Belirtilen dosyada bir kilitleme veya paylaşım ihlali vardır.|
-|**EINVAL**|Geçersiz parametre.|
-|**EMFILE**|Çok fazla dosya açık. (Çalıştırılabilir olup olmadığını anlamak için belirtilen dosyanın açılması gerekir.)|
+|**EıNVAL**|Geçersiz parametre.|
+|**EMFıLE**|Çok fazla dosya açık. (Çalıştırılabilir olup olmadığını anlamak için belirtilen dosyanın açılması gerekir.)|
 |**ENOENT**|Dosya veya yol bulunamadı.|
 |**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
 |**ENOMEM**|Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; ya da çağıran işlemin doğru şekilde ayrılmadığını gösteren geçersiz bir blok var.|
@@ -100,22 +101,22 @@ Bu işlevlerin her biri yeni bir işlem yükler ve yürütür ve her komut satı
 
 |İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_execle**|\<Process. h >|\<errno. h >|
-|**_wexecle**|\<Process. h > veya \<wchar. h >|\<errno. h >|
+|**_execle**|\<process.h>|\<errno.h>|
+|**_wexecle**|\<process.h> veya \<wchar.h>|\<errno.h>|
 
 Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[_Exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)içindeki örneğe bakın.
+[_Exec, _Wexec işlevlerde](../../c-runtime-library/exec-wexec-functions.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec İşlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[durdur](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

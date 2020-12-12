@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: memcpy_s wmemcpy_s'
 title: memcpy_s, wmemcpy_s
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - memcpy_s function
 - wmemcpy_s function
 ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
-ms.openlocfilehash: 7b3df3542974f99009285c8df652cff1fd4fa173
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 77c71e594d9a3853438987e85e43700d1f467718
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304758"
 ---
 # <a name="memcpy_s-wmemcpy_s"></a>memcpy_s, wmemcpy_s
 
@@ -81,16 +82,16 @@ Başarılıysa sıfır; hatada hata kodu.
 
 |*HD*|*Hedef boyutu*|*src*|*biriktirme*|Döndürülen değer|*Hedef* içeriği|
 |------------|----------------|-----------|---|------------------|------------------------|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|0|0|Değiştirilmedi|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|sıfır olmayan|**EıNVAL**|Değiştirilmedi|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|sıfır olmayan|**EıNVAL**|*hedef* sıfırlandı|
-|kaydedilmemiş|< *biriktirme*|kaydedilmemiş|sıfır olmayan|**ERANGE**|*hedef* sıfırlandı|
+|herhangi biri|herhangi biri|herhangi biri|0|0|Değiştirilmedi|
+|**DEĞER**|herhangi biri|herhangi biri|sıfır olmayan|**EıNVAL**|Değiştirilmedi|
+|herhangi biri|herhangi biri|**DEĞER**|sıfır olmayan|**EıNVAL**|*hedef* sıfırlandı|
+|herhangi biri|< *biriktirme*|herhangi biri|sıfır olmayan|**ERANGE**|*hedef* sıfırlandı|
 
 ## <a name="remarks"></a>Açıklamalar
 
 **memcpy_s** , *src* 'den hedefe kadar olan *sayı* baytlarını *hedef*; **wmemcpy_s** kopya *sayısı* geniş karakter (iki bayt). Kaynak ve hedef çakıştığında **memcpy_s** davranışı tanımsızdır. Çakışan bölgeleri işlemek için **memmove_s** kullanın.
 
-Bu işlevler, parametrelerini doğrular. *Count* değeri sıfır değilse ve *hedef* ya da *src* null işaretçisiyse veya *destsize* *Count*değerinden küçükse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** veya **ERANGE** döndürür ve **errno** değerini döndürülen değere ayarlar.
+Bu işlevler, parametrelerini doğrular. *Count* değeri sıfır değilse ve *hedef* ya da *src* null işaretçisiyse veya *destsize* *Count* değerinden küçükse, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** veya **ERANGE** döndürür ve **errno** değerini döndürülen değere ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -98,8 +99,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memcpy_s**|\<Memory. h> veya \<String. h>|
-|**wmemcpy_s**|\<wchar. h>|
+|**memcpy_s**|\<memory.h> veya \<string.h>|
+|**wmemcpy_s**|\<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _bstr_t:: operator ='
 title: _bstr_t::operator =
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - operator = [C++], bstr
 - operator= [C++], bstr
 ms.assetid: fb31bb1b-ce29-4388-b5fd-8dac830cf18a
-ms.openlocfilehash: 5b7f499dd84a67020232aab84966647378daadad
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 78447048a45567df603acf3af0bc51cefbdb187d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308789"
 ---
 # <a name="_bstr_toperator-"></a>_bstr_t::operator =
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Varolan bir `_bstr_t` nesnesine yeni bir değer atar.
+Varolan bir nesneye yeni bir değer atar `_bstr_t` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,16 +33,16 @@ _bstr_t& operator=(const _variant_t& var);
 #### <a name="parameters"></a>Parametreler
 
 *S1*<br/>
-Var olan bir `_bstr_t` nesnesine atanacak `_bstr_t` nesnesi.
+`_bstr_t`Varolan bir nesneye atanacak nesne `_bstr_t` .
 
 *S2*<br/>
-Mevcut bir `_bstr_t` nesnesine atanacak çok baytlı bir dize.
+Varolan bir nesneye atanacak çok baytlı bir dize `_bstr_t` .
 
 *bekletmeden*<br/>
-Varolan bir `_bstr_t` nesnesine atanacak Unicode dizesi.
+Varolan bir nesneye atanacak Unicode dizesi `_bstr_t` .
 
-*var*<br/>
-Var olan bir `_bstr_t` nesnesine atanacak `_variant_t` nesnesi.
+*l*<br/>
+`_variant_t`Varolan bir nesneye atanacak nesne `_bstr_t` .
 
 **SON Microsoft 'a özgü**
 
@@ -51,4 +52,4 @@ Bkz. [_bstr_t:: Assign](../cpp/bstr-t-assign.md) **işleç =** kullanma örneği
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t Sınıfı](../cpp/bstr-t-class.md)
+[_bstr_t sınıfı](../cpp/bstr-t-class.md)

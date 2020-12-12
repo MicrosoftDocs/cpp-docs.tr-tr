@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _rotr8 _rotr16'
 title: _rotr8, _rotr16
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - _rotr8 intrinsic
 - _rotr16 intrinsic
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
-ms.openlocfilehash: 66598a4e6cdc26fa60a87cd32abaa34319ebe6cc
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 95908956fe34b654c3602f27b495eb58a0b8f8c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218046"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307047"
 ---
 # <a name="_rotr8-_rotr16"></a>_rotr8, _rotr16
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Giriş değerlerini, belirtilen sayıda bit konumuyla en az önemli bit (LSB) sağa döndürün.
 
@@ -42,7 +43,7 @@ unsigned short _rotr16(
 *karakter*\
 'ndaki Döndürülecek bit sayısı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Döndürülen değer.
 
@@ -53,7 +54,7 @@ Döndürülen değer.
 |`_rotr8`|x86, ARM, x64, ARM64|
 |`_rotr16`|x86, ARM, x64, ARM64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _execl _wexecl'
 title: _execl, _wexecl
 ms.date: 11/04/2016
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _wexecl function
 - execl function
 ms.assetid: 81fefb8a-0a06-4221-b2bc-be18e38e89f4
-ms.openlocfilehash: 714ef80c4909e92100c4fa869b7544239f8edeb7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8775dbae1f566ff42aeadaedf310323cfca410ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941947"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305006"
 ---
 # <a name="_execl-_wexecl"></a>_execl, _wexecl
 
@@ -77,38 +78,38 @@ Başarılı olursa, bu işlevler çağıran işleme geri dönmez. -1 ' in dönü
 |-----------------|-----------------|
 |**E2BIG**|Bağımsız değişkenler ve ortam ayarları için gereken alan 32 KB 'yi aşıyor.|
 |**EACCES**|Belirtilen dosyada bir kilitleme veya paylaşım ihlali vardır.|
-|**EINVAL**|Geçersiz parametre (bir veya daha fazla parametre null işaretçi veya boş dize).|
-|**EMFILE**|Çok fazla dosya açık (belirtilen dosyanın yürütülebilir olup olmadığını anlamak için açılması gerekir).|
+|**EıNVAL**|Geçersiz parametre (bir veya daha fazla parametre null işaretçi veya boş dize).|
+|**EMFıLE**|Çok fazla dosya açık (belirtilen dosyanın yürütülebilir olup olmadığını anlamak için açılması gerekir).|
 |**ENOENT**|Dosya veya yol bulunamadı.|
 |**ENOEXEC**|Belirtilen dosya yürütülebilir değil veya geçersiz bir yürütülebilir dosya biçimine sahip.|
 |**ENOMEM**|Yeni işlemi yürütmek için yeterli kullanılabilir bellek yok; kullanılabilir bellek bozulmuş; ya da çağıran işlemin düzgün bir şekilde ayrılmadığını belirten geçersiz bir blok var.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri, her komut satırı bağımsız değişkenini ayrı bir parametre olarak geçirerek yeni bir işlem yükler ve yürütür. İlk bağımsız değişken komut veya yürütülebilir dosya adıdır ve ikinci bağımsız değişken ilki ile aynı olmalıdır. Yürütülen işlemde `argv[0]` olur. Üçüncü bağımsız değişken, yürütülen işlemin ilk bağımsız `argv[1]`değişkenidir.
+Bu işlevlerin her biri, her komut satırı bağımsız değişkenini ayrı bir parametre olarak geçirerek yeni bir işlem yükler ve yürütür. İlk bağımsız değişken komut veya yürütülebilir dosya adıdır ve ikinci bağımsız değişken ilki ile aynı olmalıdır. `argv[0]`Yürütülen işlemde olur. Üçüncü bağımsız değişken, yürütülen işlemin ilk bağımsız değişkenidir `argv[1]` .
 
-**_Execl** işlevleri parametrelerini doğrular. Herhangi bir *cmdname* veya *arg0* null işaretçi ya da boş dize ise, yürütmenin devam etmesine izin veriliyorsa, bu işlevler geçersiz parametre [](../../c-runtime-library/parameter-validation.md) işleyicisini çağırır, bu işlevler **errno** **olarak ayarlanır. EıNVAL** ve Return-1. Yeni bir işlem yürütülmedi.
+**_Execl** işlevleri parametrelerini doğrular. *Cmdname* veya *arg0* null bir işaretçi ya da boş bir dize ise, yürütmenin devam etmesine izin veriliyorsa, bu işlevler [geçersiz parametre işleyicisini](../../c-runtime-library/parameter-validation.md) çağırır, bu işlevler **errno** , **EINVAL** ve Return-1 olarak ayarlanır. Yeni bir işlem yürütülmedi.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_execl**|\<Process. h >|\<errno. h >|
-|**_wexecl**|\<Process. h > veya \<wchar. h >|\<errno. h >|
+|**_execl**|\<process.h>|\<errno.h>|
+|**_wexecl**|\<process.h> veya \<wchar.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-[_Exec, _wexec Functions](../../c-runtime-library/exec-wexec-functions.md)içindeki örneğe bakın.
+[_Exec, _Wexec işlevlerde](../../c-runtime-library/exec-wexec-functions.md)örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[_exec, _wexec İşlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[durdur](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

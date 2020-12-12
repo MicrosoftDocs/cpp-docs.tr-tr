@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: atama'
 title: Atama
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - polymorphic classes [C++]
 - classes [C++], polymorphism
 ms.assetid: 3dbeb06e-2f4b-4693-832d-624bc8ec95de
-ms.openlocfilehash: bb06db3af6aee031b6cb2d69b38a9404304420fc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0850b20db0e3f951414ba2b1d480cdcf43fb971f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190150"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308646"
 ---
 # <a name="casting"></a>Atama
 
@@ -28,7 +29,7 @@ Sınıf hiyerarşisi
 
 `C` türünden bir nesne, aşağıdaki şekilde gösterildiği gibi sanallaştırılabilir.
 
-![B ve A alt&#45;nesneleriyle C sınıfı](../cpp/media/vc38zz2.gif "B ve A alt&#45;nesneleriyle C sınıfı") <br/>
+![B sınıfı ve alt&#45;nesneleriyle C sınıfı](../cpp/media/vc38zz2.gif "B sınıfı ve alt&#45;nesneleriyle C sınıfı") <br/>
 Alt nesneler B ve A ile C sınıfı
 
 `C` sınıfının bir örneği göz önünde bulundurulduğunda, bir `B` alt nesnesi ve bir `A` alt nesnesi vardır. `C` ve `A` alt nesneleriyle birlikte `B` örneği, "tam nesne"dir.

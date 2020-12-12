@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l'
 title: _strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 ms.date: 4/2/2020
 api_name:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - mbsnextc_l function
 - wcsnextc function
 ms.assetid: e3086173-9eb5-4540-a23a-5d866bd05340
-ms.openlocfilehash: 4017dc4f72a0072df8d0969406169a26c1da43ac
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8eb1af549e3ef983441870350cbfdc4361f26e9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306098"
 ---
 # <a name="_strnextc-_wcsnextc-_mbsnextc-_mbsnextc_l"></a>_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 
@@ -92,13 +93,13 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri *Str*içindeki bir sonraki karakterin tamsayı değerini döndürür.
+Bu işlevlerin her biri *Str* içindeki bir sonraki karakterin tamsayı değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnextc** işlevi, dize işaretçisini ilerletmeksizin *Str*içindeki bir sonraki çok baytlı karakterin tamsayı değerini döndürür. **_mbsnextc** , kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır.
+**_Mbsnextc** işlevi, dize işaretçisini ilerletmeksizin *Str* içindeki bir sonraki çok baytlı karakterin tamsayı değerini döndürür. **_mbsnextc** , kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır.
 
-*Str* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev 0 döndürür.
+*Str* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev 0 döndürür.
 
 **Güvenlik notunun** Bu API, bir arabellek taşması sorunu ile ilgili olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırılarına karşı sık kullanılan bir yöntemdir ve bu da garanti edilmemiş ayrıcalık yükselmesine neden olur. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
@@ -110,7 +111,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsnextc**|**_strnextc**|**_mbsnextc**|**_wcsnextc**|
 
-**_strnextc** ve **_wcsnextc** , **_mbsnextc**tek baytlık karakter dizesidir ve geniş karakterli dize sürümleridir. **_wcsnextc** *Str*içindeki bir sonraki geniş karakterin tamsayı değerini döndürür. **_strnextc** *Str*içindeki bir sonraki tek baytlı karakterin tamsayı değerini döndürür. **_strnextc** ve **_wcsnextc** yalnızca bu eşleme için sağlanır ve aksi halde kullanılmamalıdır. Daha fazla bilgi için bkz. [Genel metin eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve [Genel metin eşlemelerini](../../c-runtime-library/generic-text-mappings.md)kullanma.
+**_strnextc** ve **_wcsnextc** , **_mbsnextc** tek baytlık karakter dizesidir ve geniş karakterli dize sürümleridir. **_wcsnextc** *Str* içindeki bir sonraki geniş karakterin tamsayı değerini döndürür. **_strnextc** *Str* içindeki bir sonraki tek baytlı karakterin tamsayı değerini döndürür. **_strnextc** ve **_wcsnextc** yalnızca bu eşleme için sağlanır ve aksi halde kullanılmamalıdır. Daha fazla bilgi için bkz. [Generic-Text eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve [Genel metin eşlemelerini](../../c-runtime-library/generic-text-mappings.md)kullanma.
 
 **_mbsnextc_l** , bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -118,10 +119,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnextc**|\<mbstring. h>|
-|**_mbsnextc_l**|\<mbstring. h>|
-|**_strnextc**|\<Tchar. h>|
-|**_wcsnextc**|\<Tchar. h>|
+|**_mbsnextc**|\<mbstring.h>|
+|**_mbsnextc_l**|\<mbstring.h>|
+|**_strnextc**|\<tchar.h>|
+|**_wcsnextc**|\<tchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -129,7 +130,7 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strdec, _wcsdec, _mbsdec, _mbsdec_l](strdec-wcsdec-mbsdec-mbsdec-l.md)<br/>
 [_strinc, _wcsinc, _mbsinc, _mbsinc_l](strinc-wcsinc-mbsinc-mbsinc-l.md)<br/>
 [_strninc, _wcsninc, _mbsninc, _mbsninc_l](strninc-wcsninc-mbsninc-mbsninc-l.md)<br/>

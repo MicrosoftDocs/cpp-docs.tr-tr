@@ -1,5 +1,6 @@
 ---
-title: 'Platform::Runtime:: CompilerServices Namespace'
+description: 'Şu konuda daha fazla bilgi edinin: Platform:: Runtime:: CompilerServices Ad alanı'
+title: 'Platform:: Runtime:: CompilerServices Ad alanı'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Runtime::CompilerServices Namespace
 ms.assetid: 8613b6b3-b193-45d1-b956-881a4a700788
-ms.openlocfilehash: 88eac06eeb97fce26f321e8beb494b6b9e66be41
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 273a218c0a53ff28188491277ffb6f7f0fe7f744
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308048"
 ---
-# <a name="platformruntimecompilerservices-namespace"></a>Platform::Runtime:: CompilerServices Namespace
+# <a name="platformruntimecompilerservices-namespace"></a>Platform:: Runtime:: CompilerServices Ad alanı
 
-Bu ad alanı, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.
+Bu ad alanı yalnızca iç kullanım amaçlıdır ve geliştirme için kullanılması amaçlanmamaktadır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Platform {
@@ -28,26 +29,26 @@ namespace Platform {
 
 ### <a name="members"></a>Üyeler
 
-Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri görüntüleyebilir.
+Bu ad alanı iç kullanım için tasarlanmış olsa da, tarayıcılar bu ad alanının aşağıdaki üyelerini görüntüleyebilir.
 
-|Ad|Açıklama|
+|Ad|Görüyorum|
 |----------|------------|
 |CallConvCdecl||
 |CallConvFastcall||
 |CallConvStdcall||
 |CallConvThiscall||
-|IndexerNameAttribute||
-|IsBoxed||
-|IsByValue||
+|IndexerNameAttribute nesnesinin Oluşturucusu||
+|Ipaketlenmiş||
+|Ibyvalue||
 |IsConst||
-|IsCopyConstructed||
-|IsExplicitlyDereferenced||
+|Icopyinşa||
+|Isexplicitlybaşvurulduğunu||
 |IsImplicitlyDereferenced||
 |IsLong||
-|IsSignUnspecifiedByte||
+|Idisignuntasbyte||
 |IsSigned||
 |IsUdtReturn||
-|IsVolatile||
+|Ivolatile||
 |OnePhaseConstructedAttribute||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
@@ -56,10 +57,10 @@ Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri 
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
-**Namespace:** Platform::CompilerServices
+**Ad alanı:** Platform:: CompilerServices
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)
+[Platform ad alanı](platform-namespace-c-cx.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _bstr_t:: operator + =, +'
 title: _bstr_t::operator +=, +
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - += operator [C++], appending strings
 - + operator [C++], _bstr_t objects
 ms.assetid: d28316ce-c2c8-4a38-bdb3-44fa4e582c44
-ms.openlocfilehash: b9eddca85d66f4978e1b33299ca655cd880cf45e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e3ae71a3a43e189251ac0ddaf77572656a031aaf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308815"
 ---
 # <a name="_bstr_toperator--"></a>_bstr_t::operator +=, +
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`_bstr_t` nesnenin sonuna karakterler ekler veya iki dizeyi birleştirir.
+Nesnenin sonuna karakter ekler `_bstr_t` veya iki dizeyi birleştirir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,16 +46,16 @@ Unicode dizesi.
 
 Bu işleçler dize birleştirmesi gerçekleştirir:
 
-- **işleç + = (** *S1* **)** *S1* `BSTR` Kapsüldeki karakterleri bu nesnenin Encapsulated `BSTR`sonuna ekler.
+- **işleç + = (***S1***)** S1 'in kapsüllenmiş içindeki karakterleri `BSTR` Bu nesnenin  kapsüllendiği uca ekler `BSTR` .    
 
-- **operator + (** *S1* **)** Bu nesnenin `BSTR` *S1*ile birleştirerek oluşturulan yeni `_bstr_t` döndürür.
+- **operator + (***S1***)** `_bstr_t`Bu nesnenin S1 ile birleştirerek oluşturulan yeni bir döndürür `BSTR` .     
 
-- **+ işleci (** *S2* **&#124;** *S1* **)** *S1*' de kapsüllenmiş `BSTR` bir çok *baytlı dize,* Unicode 'a dönüştürülen bir çok baytlı dize birleştirerek oluşturulan yeni bir `_bstr_t` döndürür.
+- **operator + (***S2* **&#124;** *S1***)** `_bstr_t`S1 içinde kapsülle birlikte, bir çok baytlı dize olan *S2*'yi birleştirerek oluşturulan yeni bir döndürür `BSTR` .         
 
-- **operator + (** *S3* **,** *S1* **)** *S1*içinde kapsüllenmiş `BSTR` bir Unicode dize *S3* ile birleştirerek oluşturulan yeni bir `_bstr_t` döndürür.
+- **operator + (***S3* **,***S1***)** `_bstr_t`S1 içinde kapsüllenmiş ile bir Unicode dize *S3* ile birleştirerek oluşturulan yeni bir döndürür `BSTR` .       
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_bstr_t Sınıfı](../cpp/bstr-t-class.md)
+[_bstr_t sınıfı](../cpp/bstr-t-class.md)
