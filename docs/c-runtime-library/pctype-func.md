@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __pctype_func'
 title: __pctype_func
 ms.date: 4/2/2020
 api_name:
@@ -22,18 +23,18 @@ f1_keywords:
 helpviewer_keywords:
 - __pctype_func
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-ms.openlocfilehash: a7972744d322cf16d056f70fff83f529a183020e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 80374d17015336e553c3ca566dd6752963dd3eef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213651"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213474"
 ---
 # <a name="__pctype_func"></a>__pctype_func
 
 Bir karakter sınıflandırma bilgileri dizisine bir işaretçi alır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 const unsigned short *__pctype_func(

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: volatile (C++)'
 title: volatile (C++)
 ms.date: 05/07/2019
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - volatile objects
 - objects [C++], volatile
 ms.assetid: 81db4a85-ed5a-4a2c-9a53-5d07a771d2de
-ms.openlocfilehash: bbdd7d03d820b9fc0d541dbb31d55b641226f14e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb7bda39ded03342b03ed889125992960210b940
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213344"
 ---
 # <a name="volatile-c"></a>volatile (C++)
 
 Programda bir nesnenin donanım tarafından değiştirilebileceğini bildirmek için kullanabileceğiniz bir tür niteleyicisi.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 volatile declarator ;
@@ -30,7 +31,7 @@ volatile declarator ;
 
 Derleyicinin bu anahtar sözcüğü nasıl yorumlayacağını değiştirmek için [/volatile](../build/reference/volatile-volatile-keyword-interpretation.md) derleyici anahtarını kullanabilirsiniz.
 
-Visual Studio, **`volatile`** hedef mimarisine bağlı olarak anahtar sözcüğünü farklı yorumlar. ARM için, bir **/volatile** derleyici seçeneği belirtilmemişse, derleyici **/volatile: iso** belirtilmişse olarak çalışır. ARM dışındaki mimariler için, bir **/volatile** derleyici seçeneği belirtilmemişse, derleyici, **/volatile: MS** belirtilmişse olarak çalışır; Bu nedenle, ARM dışındaki mimariler **için, iş**parçacıkları arasında paylaşılan bellek ile ilgilenirken doğrudan eşitleme temelleri ve derleyici iç bilgileri kullanmanızı kesinlikle öneririz.
+Visual Studio, **`volatile`** hedef mimarisine bağlı olarak anahtar sözcüğünü farklı yorumlar. ARM için, bir **/volatile** derleyici seçeneği belirtilmemişse, derleyici **/volatile: iso** belirtilmişse olarak çalışır. ARM dışındaki mimariler için, bir **/volatile** derleyici seçeneği belirtilmemişse, derleyici, **/volatile: MS** belirtilmişse olarak çalışır; Bu nedenle, ARM dışındaki mimariler **için, iş** parçacıkları arasında paylaşılan bellek ile ilgilenirken doğrudan eşitleme temelleri ve derleyici iç bilgileri kullanmanızı kesinlikle öneririz.
 
 **`volatile`** Kesme işleyicileri gibi zaman uyumsuz süreçler tarafından kullanılan bellek konumlarına erişim sağlamak için niteleyiciyi kullanabilirsiniz.
 
