@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fegetround, fesetround'
 title: fegetround, fesetround
 ms.date: 04/05/2018
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - fegetround function
 - fesetround function
 ms.assetid: 596af00b-be2f-4f57-b2f5-460485f9ff0b
-ms.openlocfilehash: b210dbce3104820f667d4ad0b4421277567b279f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f3c112efc1c380ac4ce4495f4365e2a47a1d8fd2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322556"
 ---
 # <a name="fegetround-fesetround"></a>fegetround, fesetround
 
@@ -63,16 +64,16 @@ Başarı durumunda **fesetround** 0 döndürür. Aksi takdirde, sıfır olmayan 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kayan nokta işlemleri, birkaç yuvarlama modundan birini kullanabilir. Bu denetim, sonuçlar depolandığında kayan nokta işlemlerinin sonuçlarının yönünü gösteren bu denetimdir. Bunlar, \<fenv. h > tarafından tanımlanan kayan nokta yuvarlama makrolarının adlarıdır ve davranışlardır:
+Kayan nokta işlemleri, birkaç yuvarlama modundan birini kullanabilir. Bu denetim, sonuçlar depolandığında kayan nokta işlemlerinin sonuçlarının yönünü gösteren bu denetimdir. Bunlar, içinde tanımlanan kayan nokta yuvarlama makrolarının adları ve davranışlardır \<fenv.h> :
 
-|Makrosu|Açıklama|
+|Makroya|Açıklama|
 |-----------|-----------------|
 |FE_DOWNWARD|Negatif sonsuza doğru yuvarla.|
 |FE_TONEAREST|En yakın sayıya yaklaşın.|
 |FE_TOWARDZERO|Sıfıra yuvarla.|
 |FE_UPWARD|Pozitif sonsuza doğru yuvarla.|
 
-Varsayılan FE_TONEAREST davranışı, en yakın değere doğru (0) en az önemli bir bit ile gösterilebilir tablo değerleri arasındaki sonuç sayısını yuvarlayamak olur.
+FE_TONEAREST varsayılan davranışı, en yakın değere doğru (0) en az önemli bir bit ile gösterilebilir tablo değerleri arasındaki sonuç sayısını yuvarlayamak olur.
 
 Geçerli yuvarlama modu bu işlemleri etkiler:
 
@@ -86,19 +87,19 @@ Geçerli yuvarlama modu bu işlemleri etkiler:
 
 Geçerli yuvarlama modu bu işlemleri etkilemez:
 
-- **TRUNC**, **CEIL**, **Floor**ve **lround** kitaplığı işlevleri.
+- **TRUNC**, **CEIL**, **Floor** ve **lround** kitaplığı işlevleri.
 
 - Her zaman sıfır ile yuvarlatılmış olan kayan nokta, tamsayı örtük ve Dönüştürmelere.
 
 - Her zaman en yakın değere yuvarlak olan sabit ifadelerde kayan nokta aritmetik işleçlerinin sonuçları.
 
-Bu işlevleri kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevleri kullanmak için, çağrıdan önce yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir `#pragma fenv_access(on)` . Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**fegetround**, **fesetround**|\<fenv. h >|\<cfenv >|
+|**fegetround**, **fesetround**|\<fenv.h>|\<cfenv>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

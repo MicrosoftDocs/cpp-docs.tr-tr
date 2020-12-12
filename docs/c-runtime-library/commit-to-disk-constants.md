@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: diske alma sabitleri'
 title: Commit-To-Disk Sabitleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - commit-to-disk constants
 ms.assetid: 0b903b23-b4fa-431e-a937-51d95f695ecf
-ms.openlocfilehash: c02b18e5a4a731957a7c74cc45e6e181fe23fad8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 416729f4b3b7bfdfdcb0ba11193f6c2a52691e6e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62290124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322653"
 ---
 # <a name="commit-to-disk-constants"></a>Commit-To-Disk Sabitleri
 
-**Microsoft'a özgü**
+**Microsoft'a Özgü**
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <stdio.h>
@@ -25,32 +26,32 @@ ms.locfileid: "62290124"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu Microsoft'a özgü sabiti, açık dosya ile ilgili arabellek işletim sistemi arabelleklerini veya disk temizlenmediğini belirtin. Okuma/yazma erişimi türünü belirleyen dizesinde modu dahildir (**"r"**, **"w"**, **"a"**, **"r +"**, **"w +"** , **"a +"**).
+Bu Microsoft 'a özgü sabitler, Açık dosyayla ilişkili arabelleğin işletim sistemi arabelleklerine veya diske temizlenip temizlenmediğini belirtir. Mod, okuma/yazma erişimi türünü belirten dizeye dahildir (**"r"**, " **w"**, **"a"**, **"r +"**, **"w +"**, **"a +"**).
 
-Yürütme disk modları aşağıdaki gibidir:
+Diske kaydet modları aşağıdaki gibidir:
 
-- **c**
+- **,**
 
-   Belirtilen arabellek yazılı içeriğini diske yazar. Bu işleme disk işlevi yalnızca ya da yapılan açık çağrıları ortaya [fflush](../c-runtime-library/reference/fflush.md) veya [_flushall](../c-runtime-library/reference/flushall.md) işlevi. Bu mod, hassas verilerle ilgilenirken kullanışlıdır. Örneğin, programınız çağrısı yapıldıktan sonra sona ererse `fflush` veya `_flushall`, verilerinizi işletim sisteminin arabellekler ulaştığını emin olabilirsiniz. Ancak, bir dosya ile açılmadıkça **c** seçeneği, veri hiçbir zaman kılmaktadır diske işletim sistemi de sonlandırır.
+   Belirtilen arabelleğin yazılı olmayan içeriğini diske yazar. Bu işlemi diske kaydet işlevi yalnızca [fflush](../c-runtime-library/reference/fflush.md) veya [_flushall](../c-runtime-library/reference/flushall.md) işlevine yönelik açık çağrılardan oluşur. Bu mod hassas verilerle ilgilenirken faydalıdır. Örneğin, programınız veya çağrısından sonra sonlandırılırsa `fflush` `_flushall` , verilerinizin işletim sisteminin arabelleklerine ulaştığından emin olabilirsiniz. Ancak, bir dosya **c** seçeneğiyle açılmadığı takdirde, işletim sistemi de sonlandığında veriler hiçbir şekilde diske yapmayabilir.
 
 - **n**
 
-   Belirtilen arabellek yazılı içeriğini işletim sisteminin arabelleğe yazar. İşletim sistemi, veriyi önbelleğe alma ve sonra yazmak için bir en iyi zamanı belirler diske. Birçok koşullar altında bu davranışı verimli program davranışını sağlar. Ancak, veri saklama (banka işlemleri veya uçak bileti bilgi gibi) önemliyse kullanmayı **c** seçeneği. **n** mod varsayılandır.
+   Belirtilen arabelleğin yazılı içeriğini işletim sisteminin arabelleklerine yazar. İşletim sistemi verileri önbelleğe alabilir ve ardından diske yazmak için en iyi zamanı belirleyebilir. Birçok koşulda, bu davranış etkin program davranışına olanak sağlar. Ancak, verilerin saklama süresi kritik ise (örneğin, banka işlemleri veya hava yolu bilet bilgileri) **c** seçeneğini kullanmayı düşünün. **N** modu varsayılandır.
 
 > [!NOTE]
-> **c** ve **n** seçenekleri için standart ANSI parçası olmayan `fopen`, ancak Microsoft uzantılarıdır ve ANSI taşınabilirliğinin istendiği durumlarda kullanılmamalıdır.
+> **C** ve **n** seçenekleri için ANSI standardının bir parçası değildir `fopen` , ancak Microsoft uzantıları olur ve ANSI taşınabilirliği istendiği yerde kullanılmamalıdır.
 
-## <a name="using-the-commit-to-disk-feature-with-existing-code"></a>Yürütme Disk özelliği mevcut kodu ile kullanma
+## <a name="using-the-commit-to-disk-feature-with-existing-code"></a>Mevcut kodla diske kaydet özelliğini kullanma
 
-Varsayılan olarak, çağrılar [fflush](../c-runtime-library/reference/fflush.md) veya [_flushall](../c-runtime-library/reference/flushall.md) kitaplık işlevleri için işletim sistemi tarafından korunan arabellekler veri yazma. İşletim sistemi, gerçekten verileri diske yazmak için en iyi zamanı belirler. Çalışma zamanı kitaplığının işleme disk özellik kritik verileri doğrudan disk yerine işletim sisteminin arabellekler yazıldığından emin olanak sağlar. Nesne dosyalarını COMMODE.OBJ ile bağlayarak yeniden olmadan, bu özellik için varolan bir program verebilirsiniz.
+Varsayılan olarak, [fflush](../c-runtime-library/reference/fflush.md) veya [_flushall](../c-runtime-library/reference/flushall.md) kitaplığı işlevlerine yapılan çağrılar, işletim sistemi tarafından tutulan arabelleklere veri yazar. İşletim sistemi, verileri diske gerçekten yazmak için en iyi zamanı belirler. Çalışma zamanı kitaplığının diske kaydet özelliği, kritik verilerin işletim sisteminin arabellekleri yerine doğrudan diske yazılmasını sağlamanıza olanak tanır. Bu özelliği, nesne dosyalarını COMMODE. OBJ ile bağlayarak mevcut bir programa yeniden yazmadan izin verebilirsiniz.
 
-Oluşturulan yürütülebilir dosya olarak çağrılar `fflush` doğrudan disk ve çağrıları arabellek içeriğini yazma `_flushall` arabelleklerin içeriğini diske yazma. Bu iki işlevler COMMODE.OBJ tarafından etkilenen yalnızca olanlardır.
+Elde edilen yürütülebilir dosyada, `fflush` arabelleğin içeriğini doğrudan diske yazmak için çağırır ve `_flushall` Tüm arabelleklerin içeriğini diske yazmak için çağırır. Bu iki işlev, COMMODE. OBJ tarafından etkilenen tek şeydir.
 
-**END Microsoft özgü**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Stream g/ç](../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../c-runtime-library/stream-i-o.md)<br/>
 [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)<br/>
 [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

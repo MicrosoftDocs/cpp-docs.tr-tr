@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bahselearexcept'
 title: feclearexcept1
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - feclearexcept function
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
-ms.openlocfilehash: 9899d7068a289e7d5f71cb42a8373869d60c3070
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 09eb34ddb781a40418152ec8cc6893074c58a617
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322595"
 ---
 # <a name="feclearexcept"></a>feclearexcept
 
@@ -55,7 +56,7 @@ Temizlenecek özel durum bayrakları.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Söz konusu işlev, **hariç** *tutulan*tarafından belirtilen kayan nokta özel durum bayraklarını temizlemeye çalışır. İşlevi, fenv. h içinde tanımlanan bu özel durum makrolarını destekler:
+Söz konusu işlev, **hariç** *tutulan* tarafından belirtilen kayan nokta özel durum bayraklarını temizlemeye çalışır. İşlevi, fenv. h içinde tanımlanan bu özel durum makrolarını destekler:
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
@@ -70,9 +71,9 @@ Söz konusu işlev, **hariç** *tutulan*tarafından belirtilen kayan nokta özel
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**feclearexcept**|\<fenv. h >|\<cfenv >|
+|**feclearexcept**|\<fenv.h>|\<cfenv>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

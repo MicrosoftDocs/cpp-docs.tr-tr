@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fegetexceptflag'
 title: fegetexceptflag
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - fegetexceptflag function
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
-ms.openlocfilehash: b840408ce704ad5519fbf233de41c8d5422006ad
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: 9690263168c9eef46b5a8b684fa00dfd9d6f8715
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972184"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322569"
 ---
 # <a name="fegetexceptflag"></a>fegetexceptflag
 
@@ -48,10 +49,10 @@ int fegetexceptflag(
 ### <a name="parameters"></a>Parametreler
 
 *pStatus*<br/>
-**Fexcept_t** nesnesine yönelik bir işaretçi, *hariç tutulan*tarafından belirtilen özel durum bayraklarının geçerli değerlerini içerir.
+**Fexcept_t** nesnesine yönelik bir işaretçi, *hariç tutulan* tarafından belirtilen özel durum bayraklarının geçerli değerlerini içerir.
 
 *hariç tutulan*<br/>
-*PStatus*içinde depolanacak kayan nokta özel durum bayrakları.
+*PStatus* içinde depolanacak kayan nokta özel durum bayrakları.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -59,7 +60,7 @@ Başarılı olduğunda 0 döndürür. Aksi takdirde, sıfır olmayan bir değer 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fegetexceptflag** işlevi, *pStatus*tarafından işaret edilen **fexcept_t** nesnesindeki *exceptler* tarafından belirtilen kayan nokta özel durum bayraklarının geçerli durumunu depolar.  *pStatus* geçerli bir **fexcept_t** nesnesine işaret etmelidir ya da sonraki davranış tanımsızdır. **Fegetexceptflag** işlevi, \<fenv. h > içinde tanımlanan bu özel durum makrolarını destekler:
+**Fegetexceptflag** işlevi, *pStatus* tarafından işaret edilen **fexcept_t** nesnesindeki *exceptler* tarafından belirtilen kayan nokta özel durum bayraklarının geçerli durumunu depolar.  *pStatus* geçerli bir **fexcept_t** nesnesine işaret etmelidir ya da sonraki davranış tanımsızdır. **Fegetexceptflag** işlevi, içinde tanımlanan bu özel durum makrolarını destekler \<fenv.h> :
 
 |Özel durum makrosu|Açıklama|
 |---------------------|-----------------|
@@ -72,13 +73,13 @@ Başarılı olduğunda 0 döndürür. Aksi takdirde, sıfır olmayan bir değer 
 
 *Hariç tutulan* bağımsız değişken sıfır, desteklenen kayan nokta özel durumu makrolarından biri veya iki ya da daha fazla makronun BIT düzeyinde ya da daha fazlası olabilir. Diğer bağımsız değişken değerinin etkisi tanımsızdır.
 
-Bu işlevi kullanmak için, çağrıdan önce `#pragma fenv_access(on)` yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir. Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
+Bu işlevi kullanmak için, çağrıdan önce yönergesini kullanarak erişimi engelleyebilecek kayan nokta iyileştirmelerini kapatmanız gerekir `#pragma fenv_access(on)` . Daha fazla bilgi için bkz. [fenv_access](../../preprocessor/fenv-access.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İşlev|C üstbilgisi|C++üst bilgi|
+|İşlev|C üstbilgisi|C++ üstbilgisi|
 |--------------|--------------|------------------|
-|**fegetexceptflag**|\<fenv. h >|\<cfenv >|
+|**fegetexceptflag**|\<fenv.h>|\<cfenv>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

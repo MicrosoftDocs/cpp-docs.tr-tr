@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: taşıma Kılavuzu: COM Spy'
 title: 'Taşıma Kılavuzu: COM Spy'
 ms.date: 11/04/2016
 ms.assetid: 24aa0d52-4014-4acb-8052-f4e2e4bbc3bb
-ms.openlocfilehash: c21049a2faa8bb34ecd1ba75a5beda1db119f0fc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 69a97a04d255e64fdde0d863e637d72dfb238967
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322652"
 ---
 # <a name="porting-guide-com-spy"></a>Taşıma Kılavuzu: COM Spy
 
@@ -31,7 +32,7 @@ Projeleri yükseltmekte olan sık karşılaşılan sorunlardan biri, proje özel
 
 Bağlantı noktası verilen projeyi oluşturma, bir dizi hata ve uyarı meydana gelir.
 
-`ComSpyCtl`Bu derleyici hatası nedeniyle, derleme yapmaz:
+`ComSpyCtl` Bu derleyici hatası nedeniyle, derleme yapmaz:
 
 ```Output
 atlcom.h(611): error C2664: 'HRESULT CComSpy::IPersistStreamInit_Save(LPSTREAM,BOOL,ATL::ATL_PROPMAP_ENTRY *)': cannot convert argument 3 from 'const ATL::ATL_PROPMAP_ENTRY *' to 'ATL::ATL_PROPMAP_ENTRY *'atlcom.h(611): note: Conversion loses qualifiersatlcom.h(608): note: while compiling class template member function 'HRESULT ATL::IPersistStreamInitImpl<CComSpy>::Save(LPSTREAM,BOOL)'\spy\spy\comspyctl\ccomspy.h(28): note: see reference to class template instantiation 'ATL::IPersistStreamInitImpl<CComSpy>' being compiled

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fdopen _wfdopen'
 title: _fdopen, _wfdopen
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _tfdopen function
 - streams, associating with files
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
-ms.openlocfilehash: 227f9e31c689b0259c429e2ffd9fce074903bd71
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e7b255017f0c4de060a91307bc816eb46af03d20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920173"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322627"
 ---
 # <a name="_fdopen-_wfdopen"></a>_fdopen, _wfdopen
 
@@ -73,27 +74,27 @@ Dosya erişiminin türü.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri açık akışa bir işaretçi döndürür. Null işaretçi değeri bir hatayı gösterir. Bir hata oluştuğunda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** , hatalı bir dosya tanımlayıcısı belirten **EBADF**, ya da *modun* null bir işaretçi olduğunu gösteren **EINVAL**olarak ayarlanmıştır.
+Bu işlevlerin her biri açık akışa bir işaretçi döndürür. Null işaretçi değeri bir hatayı gösterir. Bir hata oluştuğunda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** , hatalı bir dosya tanımlayıcısı belirten **EBADF**, ya da *modun* null bir işaretçi olduğunu gösteren **EINVAL** olarak ayarlanmıştır.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fdopen** işlevi, bir g/ç akışını *FD*tarafından tanımlanan dosyayla ilişkilendirir ve bu nedenle alt düzey g/ç için açılan bir dosyanın arabelleğe alınıp biçimlendirilmesi için izin verir. **_wfdopen** , **_fdopen**geniş karakterli bir sürümüdür; _wfdopen *mod* bağımsız değişkeni **_wfdopen** geniş karakterli bir dizedir. **_wfdopen** ve **_fdopen** aynı şekilde davranır.
+**_Fdopen** işlevi, bir g/ç akışını *FD* tarafından tanımlanan dosyayla ilişkilendirir ve bu nedenle alt düzey g/ç için açılan bir dosyanın arabelleğe alınıp biçimlendirilmesi için izin verir. **_wfdopen** , **_fdopen** geniş karakterli bir sürümüdür; _wfdopen *mod* bağımsız değişkeni  geniş karakterli bir dizedir. **_wfdopen** ve **_fdopen** aynı şekilde davranır.
 
-**_Fdopen** geçirilen dosya tanımlayıcıları, döndürülen **Dosya &#42;** akışına aittir. **_Fdopen** başarılı olursa dosya tanımlayıcısında [ \_Close](close.md) 'u çağırmayın. Döndürülen dosyada [fclose](fclose-fcloseall.md) çağırma **&#42;** dosya tanımlayıcısını da kapatır.
+**_Fdopen** geçirilen dosya tanımlayıcıları, döndürülen **Dosya &#42;** akışına aittir. **_Fdopen** başarılı olursa dosya tanımlayıcısında [ \_ Close](close.md) 'u çağırmayın. Döndürülen dosyada [fclose](fclose-fcloseall.md) çağırma **&#42;** dosya tanımlayıcısını da kapatır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|Tchar.h yordamı|\_UNICODE ve \_MBCS tanımlı değil|\_Tanımlanan MBCS|\_Tanımlanan UNICODE|
+|Tchar.h yordamı|\_UNICODE ve \_ MBCS tanımlı değil|\_Tanımlanan MBCS|\_Tanımlanan UNICODE|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tfdopen**|**_fdopen**|**_fdopen**|**_wfdopen**|
 
 *Mod* karakter dizesi, dosya için istenen dosya erişiminin türünü belirtir:
 
-| *modundaysa* | Erişim |
+| *modundaysa* | Access |
 |--------|--------|
 | **sağ** | Okuma için açılır. Dosya yoksa veya bulunamazsa, **fopen** çağrısı başarısız olur. |
 | **anlatımı** | Yazma için boş bir dosya açar. Verilen dosya varsa, içeriği yok edilir. |
@@ -111,33 +112,33 @@ Yukarıdaki değerlere ek olarak, aşağıdaki karakterler de yeni satır karakt
 | **şı** | Metin (çevrilmiş) modunda aç. Bu modda, satır başı satır besleme (CR-LF) birleşimleri girişte tek satırlık akışlara (LF) çevrilir ve LF karakterleri çıkışta CR-LF birleşimlerine çevrilir. Ayrıca CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. |
 | **kenarı** | İkili (çevrilmemiş) modda açın. **T** modundaki tüm çeviriler bastırılır. |
 | **,** | Bir **fflush** veya **_flushall** çağrılırsa, dosya arabelleği içeriğinin doğrudan diske yazılması için ilişkili *dosya adı* için COMMIT bayrağını etkinleştirin. |
-| **No** | İlişkili *dosya adı* için COMMIT bayrağını "No-COMMIT" olarak sıfırlayın. Bu varsayılandır. Ayrıca, programınızı Commode. obj ile bağlarsanız Genel tamamlama bayrağını da geçersiz kılar. Programınızı Commode. obj ile açıkça bağmadığınız takdirde Genel tamamlama bayrağı varsayılan olarak "No-COMMIT" olur. |
+| **n** | İlişkili *dosya adı* için COMMIT bayrağını "No-COMMIT" olarak sıfırlayın. Bu varsayılan seçenektir. Ayrıca, programınızı Commode. obj ile bağlarsanız Genel tamamlama bayrağını da geçersiz kılar. Programınızı Commode. obj ile açıkça bağmadığınız takdirde Genel tamamlama bayrağı varsayılan olarak "No-COMMIT" olur. |
 
-**T**, **c**ve **n** *modu* seçenekleri, **fopen** ve **_fdopen**için Microsoft uzantılarıdır. ANSI taşınabilirliği korumak istiyorsanız bunları kullanmayın.
+**T**, **c** ve **n** *modu* seçenekleri, **fopen** ve **_fdopen** için Microsoft uzantılarıdır. ANSI taşınabilirliği korumak istiyorsanız bunları kullanmayın.
 
-**T** veya **b** *modunda*verilmezse, varsayılan çeviri modu [ \_fMode](../../c-runtime-library/fmode.md)genel değişkeni tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve null değerini döndürür. Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+**T** veya **b** *modunda* verilmezse, varsayılan çeviri modu [ \_ fMode](../../c-runtime-library/fmode.md)genel değişkeni tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve null değerini döndürür. Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-**Fopen** ve **_fdopen** için kullanılan *mod* dizesi için geçerli karakterler, bu tabloda gösterildiği gibi [ \_Open](open-wopen.md) ve [ \_Sopen](sopen-wsopen.md)içinde kullanılan *oflag* bağımsız değişkenlerine karşılık gelir:
+**Fopen** ve **_fdopen** için kullanılan *mod* dizesi için geçerli karakterler, bu tabloda gösterildiği gibi [ \_ Open](open-wopen.md) ve [ \_ Sopen](sopen-wsopen.md)içinde kullanılan *oflag* bağımsız değişkenlerine karşılık gelir:
 
 |*Mod* dizesindeki karakterler|**_Open** ve **_sopen** için eşdeğer *oflag* değeri|
 |---------------------------------|---------------------------------------------------|
-|**a**|**\_O\_yalnızca o &#124; \_o\_ekleme** (genellikle ** \_o\_ \_&#124; o\_&#124; \_\_** o)|
-|**a +**|**\_O\_rdwr &#124; \_o\_Append** (genellikle ** \_o\_rdwr &#124; \_o\_Append &#124; \_o\_creat** )|
-|**sağ**|**\_O\_yalnızca RD**|
-|**r +**|**\_O\_rdwr**|
-|**anlatımı**|**\_Yalnızca\_wronly** (genellikle ** \_o\_&#124; \_o\_creat &#124; \_o\_TRUNC**)|
-|**w +**|**\_O\_rdwr** (genellikle ** \_o\_, rdwr \_&#124;\_o creat \_&#124;\_o TRUNC**)|
-|**kenarı**|**\_O\_ikili**|
-|**şı**|**\_O\_metni**|
+|**a**|**\_ O \_ yalnızca o &#124; \_ o \_ ekleme** (genellikle **\_ o \_ &#124; \_ o \_ &#124; \_ \_** o)|
+|**a +**|**\_ O \_ rdwr &#124; \_ o \_ append** (genellikle **\_ o \_ rdwr &#124; \_ o \_ append &#124; \_ o \_ creat** )|
+|**sağ**|**\_O \_ Yalnızca RD**|
+|**r +**|**\_O \_ rdwr**|
+|**w**|**\_ \_ Yalnızca wronly** (genellikle **\_ o \_ &#124; o \_ \_ creat &#124; \_ o \_ TRUNC**)|
+|**w +**|**\_ O \_ rdwr** (genellikle **\_ o, \_ rdwr &#124; \_ o \_ creat &#124; \_ o \_ TRUNC**)|
+|**kenarı**|**\_O \_ ikili**|
+|**şı**|**\_O \_ metni**|
 |**,**|Yok|
-|**No**|Yok|
+|**n**|Yok|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fdopen**|\<stdio. h>|
-|**_wfdopen**|\<stdio. h> veya \<wchar. h>|
+|**_fdopen**|\<stdio.h>|
+|**_wfdopen**|\<stdio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -178,7 +179,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_fdopentxt"></a>Giriş: crt_fdopen. txt
+### <a name="input-crt_fdopentxt"></a>Giriş: crt_fdopen.txt
 
 ```Input
 Line one
@@ -193,9 +194,9 @@ Lines in file: 2
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[\_DUP, \_dUP2](dup-dup2.md)<br/>
-[fclose, \_fcloseall](fclose-fcloseall.md)<br/>
-[fopen, \_wfopen](fopen-wfopen.md)<br/>
-[serbest açık, \_wfreopen](freopen-wfreopen.md)<br/>
-[\_açık, \_wopen](open-wopen.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
+[\_DUP, \_ dUP2](dup-dup2.md)<br/>
+[fclose, \_ fcloseall](fclose-fcloseall.md)<br/>
+[fopen, \_ wfopen](fopen-wfopen.md)<br/>
+[serbest açık, \_ wfreopen](freopen-wfreopen.md)<br/>
+[\_açık, \_ wopen](open-wopen.md)<br/>
