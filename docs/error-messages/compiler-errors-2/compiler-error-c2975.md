@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2975'
 title: Derleyici hatası C2975
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2975
 ms.assetid: 526f6b9d-6c76-4c12-9252-1b1d7c1e06c7
-ms.openlocfilehash: 70fc648de8bcf4f1e85edf3a12cc0b7d3d70625f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9f9108d1dc4e0fe61b6dd2135fb69bbaedfaedf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201571"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210354"
 ---
 # <a name="compiler-error-c2975"></a>Derleyici hatası C2975
 
@@ -35,7 +36,7 @@ int main() {
 }
 ```
 
-&#95; &#95;Ayrıca, [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md)ile bir derleme&#95; &#95; zamanı sabiti olarak çizgi kullandığınızda da C2975 oluşur. Bir çözüm, **/Zi**yerine [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) ile derlenmelidir.
+C2975 Ayrıca, [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md)ile derleme zamanı sabiti olarak &#95;&#95;satırı&#95;&#95; kullandığınızda da oluşur. Bir çözüm, **/Zi** yerine [/Zi](../../build/reference/z7-zi-zi-debug-information-format.md) ile derlenmelidir.
 
 ```cpp
 // C2975b.cpp

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2569'
 title: Derleyici hatası C2569
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2569
 ms.assetid: 092bed1e-f631-436c-9586-7750629f6fac
-ms.openlocfilehash: 7299fe8daa1fa0fc6e1291bf8c683b33235e8bbf
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bf6b0670cfd90cadc939010a75f9faa9c7c25c30
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209041"
 ---
 # <a name="compiler-error-c2569"></a>Derleyici hatası C2569
 

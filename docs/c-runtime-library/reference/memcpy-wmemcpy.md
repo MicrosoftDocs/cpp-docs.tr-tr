@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: memckopyala, wmemcpy'
 title: memcpy, wmemcpy
 ms.date: 11/04/2016
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - wmemcpy function
 - memcpy function
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
-ms.openlocfilehash: bf7f12cd00780347f23252764aace449dd6f5722
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: f8645a01dee79f86f1ba23e74b3284d9b51de5aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303297"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209561"
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 
@@ -58,7 +59,7 @@ wchar_t *wmemcpy(
 *HD*<br/>
 Yeni arabellek.
 
-*YN*<br/>
+*src*<br/>
 Kopyalanacak arabellek.
 
 *biriktirme*<br/>
@@ -66,17 +67,17 @@ Kopyalanacak karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Hedef*değeri.
+*Hedef* değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**memckay** , *src* 'den *hedefe*kadar olan *sayıları* bayt olarak kopyalar; **wmemcpy** kopya *sayısı* geniş karakter (iki bayt). Kaynak ve hedef çakışırsa, **memcservicebehavior** davranışı tanımsızdır. Çakışan bölgeleri işlemek için **memmove** kullanın.
+**memckay** , *src* 'den *hedefe* kadar olan *sayıları* bayt olarak kopyalar; **wmemcpy** kopya *sayısı* geniş karakter (iki bayt). Kaynak ve hedef çakışırsa, **memcservicebehavior** davranışı tanımsızdır. Çakışan bölgeleri işlemek için **memmove** kullanın.
 
 > [!IMPORTANT]
 > Hedef arabelleğinin boyut veya Kaynak arabelleğinden daha büyük olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 > [!IMPORTANT]
-> Bu nedenle çok sayıda arabellek taşması ve bu nedenle olası güvenlik açıkları, **memcler**'in hatalı kullanımıyla izlenmediğinden, bu Işlev güvenlik geliştirme yaşam döngüsü (SDL) tarafından "yasaklanmış" işlevler arasında listelenir.  Bazı VC + + kitaplık sınıflarının **memcleyde**kullanmaya devam edip edebiliriz.  Ayrıca, VC + + derleyici iyileştiricinin bazen **memcleya**çağrıları yaydığı gözlemleyebilirsiniz.  Görsel C++ ürün, SDL işlemine uygun olarak geliştirilmiştir ve bu nedenle bu yasaklanmış işlevin kullanımı yakından değerlendirilir.  Kitaplık kullanımı durumunda, bu çağrılar aracılığıyla arabellek taşmalarına izin verilmeyeceğini sağlamak için çağrılar dikkatle scrutinized.  Derleyici söz konusu olduğunda bazen bazı kod desenleri **memctable**deseniyle aynı şekilde tanınır ve bu nedenle, işlev çağrısıyla değiştirilmiştir.  Bu gibi durumlarda, **memckopyala** kullanımı özgün yönergelerden daha güvenli değildir; Bunlar, performansı ayarlanmış **memcler** işlevine yapılan bir çağrıya en iyi duruma getirilmiştir.  "Güvenli" CRT işlevlerinin kullanılması güvenliği garanti etmez (yalnızca güvenli olmaması önerilir), "yasaklanmış" işlevlerinin kullanılması olma tehlikesi 'yi garanti etmez (yalnızca güvenliği sağlamak için daha fazla scrlanlı olması gerekir).
+> Bu nedenle çok sayıda arabellek taşması ve bu nedenle olası güvenlik açıkları, **memcler**'in hatalı kullanımıyla izlenmediğinden, bu Işlev güvenlik geliştirme yaşam döngüsü (SDL) tarafından "yasaklanmış" işlevler arasında listelenir.  Bazı VC + + kitaplık sınıflarının **memcleyde** kullanmaya devam edip edebiliriz.  Ayrıca, VC + + derleyici iyileştiricinin bazen **memcleya** çağrıları yaydığı gözlemleyebilirsiniz.  Visual C++ ürün, SDL işlemine uygun olarak geliştirilmiştir ve bu nedenle bu yasaklanmış işlevin kullanımı yakından değerlendirilir.  Kitaplık kullanımı durumunda, bu çağrılar aracılığıyla arabellek taşmalarına izin verilmeyeceğini sağlamak için çağrılar dikkatle scrutinized.  Derleyici söz konusu olduğunda bazen bazı kod desenleri **memctable** deseniyle aynı şekilde tanınır ve bu nedenle, işlev çağrısıyla değiştirilmiştir.  Bu gibi durumlarda, **memckopyala** kullanımı özgün yönergelerden daha güvenli değildir; Bunlar, performansı ayarlanmış **memcler** işlevine yapılan bir çağrıya en iyi duruma getirilmiştir.  "Güvenli" CRT işlevlerinin kullanılması güvenliği garanti etmez (yalnızca güvenli olmaması önerilir), "yasaklanmış" işlevlerinin kullanılması olma tehlikesi 'yi garanti etmez (yalnızca güvenliği sağlamak için daha fazla scrlanlı olması gerekir).
 >
 > VC + + derleyicisi ve kitaplıklar tarafından daha dikkatli **scrutinized olduğundan,** bu çağrılara, başka BIR şekilde SDL ile uyumlu olan kod içinde izin verilir.  uygulama kaynak kodunda tanıtılan **memcler** çağrıları yalnızca, bu kullanım güvenlik uzmanları tarafından incelenmek için SDL ile uyumludur.
 
@@ -98,8 +99,8 @@ veya
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**memcpy**|\<Memory. h > veya \<String. h >|
-|**wmemcpy**|\<wchar. h >|
+|**memcpy**|\<memory.h> veya \<string.h>|
+|**wmemcpy**|\<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -109,7 +110,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ara Bellek Düzenlemesi](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Arabellek Işleme](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>
 [memchr, wmemchr](memchr-wmemchr.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>

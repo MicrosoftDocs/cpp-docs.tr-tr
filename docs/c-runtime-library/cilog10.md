@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CIlog10'
 title: _CIlog10
 ms.date: 4/2/2020
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - _CIlog10 intrinsic
 - CIlog10 intrinsic
 ms.assetid: 05d7fcaa-3cff-4cc5-8d44-015e7cacba24
-ms.openlocfilehash: ba5868892a352f071774a817e375c1f43505ed02
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e10dbe43eb9799b62a0ede515efaf75658fee932
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918016"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209652"
 ---
 # <a name="_cilog10"></a>_CIlog10
 
-Yığındaki en `log10` üstteki değerde bir işlem gerçekleştirir.
+`log10`Yığındaki en üstteki değerde bir işlem gerçekleştirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 void __cdecl _CIlog10();
@@ -44,7 +45,7 @@ void __cdecl _CIlog10();
 
 ## <a name="remarks"></a>Açıklamalar
 
-`log10` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. İşlev, kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmaya engel olduğundan yürütmeyi hızlandırır.
+İşlevin bu sürümünde `log10` derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. İşlev, kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmaya engel olduğundan yürütmeyi hızlandırır.
 
 Elde edilen değer yığının en üstüne gönderilir.
 

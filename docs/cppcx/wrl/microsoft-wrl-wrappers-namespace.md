@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Microsoft:: WRL:: sarmalayıcılar ad alanı'
 title: Microsoft::WRL::Wrappers Ad Alanı
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Wrappers namespace
 ms.assetid: 36ac38c7-1fc3-42da-a879-5c68661dc9e1
-ms.openlocfilehash: ece26b3f9928d44a593de830cf8a25c57e4c2d89
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 603fa14b0e43f481b1afe56d98e355d328f284fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213752"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209405"
 ---
 # <a name="microsoftwrlwrappers-namespace"></a>Microsoft::WRL::Wrappers Ad Alanı
 
 Nesnelerin, dizelerin ve tanıtıcıların ömür yönetimini kolaylaştıran kaynak alımı başlatma (SII) sarmalayıcı türlerini tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Microsoft::WRL::Wrappers;
@@ -36,15 +37,15 @@ namespace Microsoft::WRL::Wrappers;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CriticalSection Sınıfı](criticalsection-class.md)|Kritik bir bölüm nesnesini temsil eder.|
-|[Event Sınıfı (WRL)](event-class-wrl.md)|Bir olayı temsil eder.|
+|[Kritiksection sınıfı](criticalsection-class.md)|Kritik bir bölüm nesnesini temsil eder.|
+|[Event sınıfı (WRL)](event-class-wrl.md)|Bir olayı temsil eder.|
 |[HandleT Sınıfı](handlet-class.md)|Bir nesneye olan tanıtıcıyı temsil eder.|
-|[HString Sınıfı](hstring-class.md)|HSTRıNG tutamaçlarını işlemek için destek sağlar.|
-|[HStringReference Sınıfı](hstringreference-class.md)|Varolan bir dizeden oluşturulan bir HSTRıNG temsil eder.|
+|[HString sınıfı](hstring-class.md)|HSTRıNG tutamaçlarını işlemek için destek sağlar.|
+|[HStringReference sınıfı](hstringreference-class.md)|Varolan bir dizeden oluşturulan bir HSTRıNG temsil eder.|
 |[Mutex sınıfı](mutex-class.md)|Paylaşılan bir kaynağı özel olarak denetleyen bir eşitleme nesnesini temsil eder.|
-|[RoInitializeWrapper Sınıfı](roinitializewrapper-class.md)|Windows Çalışma Zamanı başlatır.|
-|[Semafor Sınıfı](semaphore-class.md)|Sınırlı sayıda kullanıcıyı destekleyebilen, paylaşılan bir kaynağı denetleyen bir eşitleme nesnesini temsil eder.|
-|[SRWLock Sınıfı](srwlock-class.md)|İnce bir okuyucu/yazıcı kilidini temsil eder.|
+|[RoInitializeWrapper sınıfı](roinitializewrapper-class.md)|Windows Çalışma Zamanı başlatır.|
+|[Semafor sınıfı](semaphore-class.md)|Sınırlı sayıda kullanıcıyı destekleyebilen, paylaşılan bir kaynağı denetleyen bir eşitleme nesnesini temsil eder.|
+|[SRWLock sınıfı](srwlock-class.md)|İnce bir okuyucu/yazıcı kilidini temsil eder.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -54,4 +55,4 @@ namespace Microsoft::WRL::Wrappers;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)

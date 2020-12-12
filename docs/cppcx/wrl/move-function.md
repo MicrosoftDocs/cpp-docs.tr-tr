@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Move Işlevi'
 title: Move İşlevi
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Move function
 ms.assetid: c9525426-97e8-4d8c-9877-b689d8a0dc67
-ms.openlocfilehash: 65fe85e95453165430c7ef3cfd4c4bb2babd9868
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: eada3cac16abc445a9c48d01240f4ccf46d78372
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213713"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209314"
 ---
 # <a name="move-function"></a>Move İşlevi
 
@@ -29,7 +30,7 @@ inline typename RemoveReference<T>::Type&& Move(
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Bağımsız değişkenin türü.
 
 *değişkeni*<br/>
@@ -43,7 +44,7 @@ Başvuru veya rvalue-başvuru nitelikleri sonrasında parametre *arg* , varsa, k
 
 Belirtilen bağımsız değişkeni bir konumdan diğerine kaydırır.
 
-Daha fazla bilgi için, [rvalue başvuru bildirimci: & &](../../cpp/rvalue-reference-declarator-amp-amp.md)' nin **taşıma semantiğini** bölümüne bakın.
+Daha fazla bilgi için, [rvalue başvuru bildirimci:  &&](../../cpp/rvalue-reference-declarator-amp-amp.md)' nin **taşıma semantiğini** bölümüne bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -53,4 +54,4 @@ Daha fazla bilgi için, [rvalue başvuru bildirimci: & &](../../cpp/rvalue-refer
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

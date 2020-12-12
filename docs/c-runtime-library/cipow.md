@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CIpow'
 title: _CIpow
 ms.date: 4/2/2020
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - CIpow intrinsic
 - _CIpow intrinsic
 ms.assetid: 477aaf0c-ac58-4252-89dd-9f3e35d47536
-ms.openlocfilehash: 80acead0f40896db6c27cca8440a3069a18c5332
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 69a51df94101091a59f188b1e39d62abb29de2b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917969"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209639"
 ---
 # <a name="_cipow"></a>_CIpow
 
 *X* 'in, yığındaki en üstteki değerlere göre *y* kuvvetini hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 void __cdecl _CIpow();
@@ -44,7 +45,7 @@ void __cdecl _CIpow();
 
 ## <a name="remarks"></a>Açıklamalar
 
-`pow` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
+İşlevin bu sürümünde `pow` derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
 Elde edilen değer yığının en üstüne gönderilir.
 

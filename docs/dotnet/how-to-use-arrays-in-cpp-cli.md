@@ -1,23 +1,24 @@
 ---
-title: 'Nasıl yapılır: İçindeki diziler kullanın C++/CLI'
+description: 'Daha fazla bilgi edinin: nasıl yapılır: C++/CLı içinde dizileri kullanma'
+title: 'Nasıl yapılır: C++/CLI Üzerinde Dizi Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - arrays [C++], single-dimension
 ms.assetid: 301cfb3e-199f-42c8-8151-629dce9e87f3
-ms.openlocfilehash: 65d384cbac7691d000ae6e895c9cf63e71726689
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d88f1b0b936c6a2f8589e78ac7ae585e4550fec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209224"
 ---
-# <a name="how-to-use-arrays-in-ccli"></a>Nasıl yapılır: İçindeki diziler kullanın C++/CLI
+# <a name="how-to-use-arrays-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Dizi Kullanma
 
-Bu makalede, dizilerde kullanmayı açıklar C++/CLI.
+Bu makalede, C++/CLI'DE dizilerin nasıl kullanılacağı açıklanır.
 
 ## <a name="single-dimension-arrays"></a>Tek boyutlu diziler
 
-Aşağıdaki örnek, tek boyutlu diziler, başvuru, değer ve yerel işaretçi türleri oluşturma işlemi gösterilmektedir. Ayrıca, bir tek boyutlu dizi bir işlevden döndürülecek nasıl ve tek boyutlu dizi bir işleve bağımsız değişken olarak geçirmek de gösterilmektedir.
+Aşağıdaki örnek, başvuru, değer ve yerel işaretçi türlerinin tek boyutlu dizilerinin nasıl oluşturulacağını gösterir. Ayrıca, bir işlevden tek boyutlu bir dizinin nasıl dönediğini ve bir işleve bağımsız değişken olarak tek boyutlu bir dizinin nasıl geçirileceğini gösterir.
 
 ```cpp
 // mcppv2_sdarrays.cpp
@@ -151,7 +152,7 @@ MyStruct1[0] = 40
 MyStruct1[1] = 41
 ```
 
-Sonraki örnek, tek boyutlu yönetilen diziler üzerinde toplama başlatma gerçekleştirme gösterir.
+Sonraki örnek, tek boyutlu yönetilen diziler üzerinde toplu başlatmanın nasıl gerçekleştirileceğini gösterir.
 
 ```cpp
 // mcppv2_sdarrays_aggregate_init.cpp
@@ -204,7 +205,7 @@ IntArray[1, 0] = 11
 IntArray[1, 1] = 11
 ```
 
-Bu örnek çok boyutlu yönetilen bir dizi üzerinde toplama başlatma gerçekleştirme gösterir:
+Bu örnek, çok boyutlu bir yönetilen dizide toplu başlatmanın nasıl gerçekleştirileceğini gösterir:
 
 ```cpp
 // mcppv2_mdarrays_aggregate_initialization.cpp
@@ -248,9 +249,9 @@ int main() {
 }
 ```
 
-## <a name="jagged-arrays"></a>Basit diziler
+## <a name="jagged-arrays"></a>Sivri diziler
 
-Bu bölüm, yönetilen diziler başvuru, değer ve yerel işaretçi türleri, tek boyutlu diziler oluşturma işlemi gösterilmektedir. Ayrıca, bir tek boyutlu dizi yönetilen diziler bir işlevden döndürülecek nasıl ve tek boyutlu dizi bir işleve bağımsız değişken olarak geçirmek de gösterilmektedir.
+Bu bölümde, başvuru, değer ve yerel işaretçi türlerinin yönetilen dizilerinin tek boyutlu dizilerinin nasıl oluşturulacağı gösterilmektedir. Ayrıca, bir işlevden yönetilen dizilerin tek boyutlu dizisinin nasıl dönediğini ve bir işleve bağımsız değişken olarak tek boyutlu bir dizinin nasıl geçirileceğini gösterir.
 
 ```cpp
 // mcppv2_array_of_arrays.cpp
@@ -347,7 +348,7 @@ IntArray[1] = 11
 41
 ```
 
-Aşağıdaki örnek, basit diziler ile toplama başlatma gerçekleştirme gösterir.
+Aşağıdaki örnek, pürüzlü Diziler ile toplu başlatmanın nasıl gerçekleştirileceğini gösterir.
 
 ```cpp
 // mcppv2_array_of_arrays_aggregate_init.cpp
@@ -452,9 +453,9 @@ MyClass0[1] = 1
 [ g h ]
 ```
 
-## <a name="managed-arrays-as-template-type-parameters"></a>Dizileri şablon türü parametreleri olarak yönetilen
+## <a name="managed-arrays-as-template-type-parameters"></a>Şablon türü parametreleri olarak yönetilen diziler
 
-Bu örnek, bir şablon parametresi olarak yönetilen bir dizi kullanmayı gösterir:
+Bu örnek, yönetilen bir dizinin bir parametre olarak bir şablon olarak nasıl kullanılacağını gösterir:
 
 ```cpp
 // mcppv2_template_type_params.cpp
@@ -484,7 +485,7 @@ Return Code: 0
 
 ## <a name="typedefs-for-managed-arrays"></a>Yönetilen diziler için tür tanımları
 
-Bu örnek, yönetilen bir dizi için bir typedef yapmak nasıl gösterir:
+Bu örnekte, yönetilen bir dizi için bir typedef nasıl yapılacağı gösterilmektedir:
 
 ```cpp
 // mcppv2_typedef_arrays.cpp
@@ -499,11 +500,11 @@ int main() {
 }
 ```
 
-## <a name="sorting-arrays"></a>Sıralama dizileri
+## <a name="sorting-arrays"></a>Dizileri sıralama
 
-Standart C++ dizilerden farklı olarak yönetilen diziler dolaylı olarak, ortak davranışını devralan bir dizi temel sınıfından türetilir. Bir örnek `Sort` herhangi bir dizideki öğeleri sıralamak için kullanılan yöntem.
+Standart C++ dizilerinin aksine, yönetilen diziler örtük olarak ortak davranışı devraldığı bir dizi temel sınıftan türetilir. Bir örnek `Sort` , herhangi bir dizideki öğeleri sıralamak için kullanılabilecek yöntemidir.
 
-Temel gerçek türler içeren diziler için çağırabilirsiniz `Sort` yöntemi. Sıralama ölçütü geçersiz kılabilir ve için karmaşık tür dizilerini sıralama yapmak istediğinizde bunu yaparsanız bu nedenle gereklidir. Bu durumda, dizi öğe türü uygulamalıdır <xref:System.IComparable.CompareTo%2A> yöntemi.
+Temel iç türleri içeren diziler için `Sort` yöntemini çağırabilirsiniz. Sıralama ölçütlerini geçersiz kılabilirsiniz, ancak bunu yapmak karmaşık türdeki diziler için sıralamak istediğinizde gereklidir. Bu durumda, dizi öğesi türünün yöntemini uygulaması gerekir <xref:System.IComparable.CompareTo%2A> .
 
 ```cpp
 // array_sort.cpp
@@ -520,9 +521,9 @@ int main() {
 
 ## <a name="sorting-arrays-by-using-custom-criteria"></a>Özel ölçütler kullanarak dizileri sıralama
 
-Temel gerçek türler içeren dizileri sıralamak için çağrı `Array::Sort` yöntemi. Ancak, karmaşık türler içeren veya varsayılan sıralama ölçütleri geçersiz kılmak için geçersiz sıralama dizilerine <xref:System.IComparable.CompareTo%2A> yöntemi.
+Temel iç türleri içeren dizileri sıralamak için, yalnızca `Array::Sort` yöntemini çağırın. Ancak, karmaşık türler içeren dizileri sıralamak veya varsayılan sıralama ölçütlerini geçersiz kılmak için yöntemini geçersiz kılın <xref:System.IComparable.CompareTo%2A> .
 
-Aşağıdaki örnekte, bir yapı adlı `Element` türetilir <xref:System.IComparable>ve sağlamak yazılan bir <xref:System.IComparable.CompareTo%2A> iki tamsayı ortalama sıralama ölçütü kullanan yöntemi.
+Aşağıdaki örnekte, adlı bir yapı `Element` öğesinden türetilir <xref:System.IComparable> ve <xref:System.IComparable.CompareTo%2A> sıralama ölçütü olarak iki tamsayının ortalamasını kullanan bir yöntem sağlamak için yazılır.
 
 ```cpp
 using namespace System;
@@ -566,9 +567,9 @@ int main() {
 }
 ```
 
-## <a name="array-covariance"></a>Dizi kovaryansı
+## <a name="array-covariance"></a>Dizi Kovaryans
 
-Başvuru sınıfı D doğrudan veya dolaylı taban sınıfının B göz önünde bulundurulduğunda, D türünde bir dizi türü b'bir dizi değişkenine atanabilir
+Doğrudan veya dolaylı temel sınıf B 'ye sahip olan D başvuru sınıfı, b türünde bir dizi değişkenine D türünde bir dizi atanabilir.
 
 ```cpp
 // clr_array_covariance.cpp
@@ -581,9 +582,9 @@ int main() {
 }
 ```
 
-Bir dizi öğesine atama, atama ile uyumlu olacaktır dinamik dizi türüne sahip. Uyumsuz türde bir dizi öğesine atama neden `System::ArrayTypeMismatchException` oluşturulması için.
+Dizi öğesine atama, dizinin dinamik türüyle atama ile uyumlu olacaktır. Uyumsuz bir türe sahip bir dizi öğesine atama, oluşturulmasına neden olur `System::ArrayTypeMismatchException` .
 
-Dizi kovaryansı değer sınıfı türü bir dizi için geçerli değildir. Örneğin, Int32 dizileri nesnesine dönüştürülemez ^ kutulama kullanarak bile, dizileri.
+Dizi Kovaryans, değer sınıfı türündeki diziler için geçerlidir. Örneğin, Int32 dizileri, kutulama kullanılarak bile değil, nesne ^ dizilerine dönüştürülemez.
 
 ```cpp
 // clr_array_covariance2.cpp

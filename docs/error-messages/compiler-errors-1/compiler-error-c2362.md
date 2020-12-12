@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2362'
 title: Derleyici hatası C2362
 ms.date: 06/03/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2362
 ms.assetid: 7aafecbc-b3cf-45a6-9ec3-a17e3f222511
-ms.openlocfilehash: 330932f53627f8ba09e9e089cec7809eeeb6ab1c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9043b6e82fd45923e7108d6a6f8934416eaaa328
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80206082"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210926"
 ---
 # <a name="compiler-error-c2362"></a>Derleyici hatası C2362
 

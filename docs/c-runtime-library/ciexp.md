@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CIexp'
 title: _CIexp
 ms.date: 4/2/2020
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - CIexp intrinsic
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
-ms.openlocfilehash: 90a8fdac4b3b671853d2274de26040e3bf67def4
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bc1e4ccb081fe31f786fcd19d3d8c761a7472212
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918040"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209678"
 ---
 # <a name="_ciexp"></a>_CIexp
 
 Yığındaki en üstteki değerin üstel değerini hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 void __cdecl _CIexp();
@@ -44,7 +45,7 @@ void __cdecl _CIexp();
 
 ## <a name="remarks"></a>Açıklamalar
 
-`exp` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
+İşlevin bu sürümünde `exp` derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
 Elde edilen değer yığının en üstüne gönderilir.
 

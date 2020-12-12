@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2953'
 title: Derleyici hatası C2953
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2953
 ms.assetid: 8dbcfa24-8296-4e40-bdc4-5526c07d8892
-ms.openlocfilehash: 8a8d591bfbfa30a4ad2fbed171b5febbd46524b0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3bfc51d08318a4870f993a1d0cfe86eb1a38929e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747676"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210625"
 ---
 # <a name="compiler-error-c2953"></a>Derleyici hatası C2953
 

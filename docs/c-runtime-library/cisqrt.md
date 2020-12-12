@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CIsqrt'
 title: _CIsqrt
 ms.date: 4/2/2020
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - CIsqrt intrinsic
 - _CIsqrt intrinsic
 ms.assetid: 663548ea-398c-48ee-8397-a787c6ebb937
-ms.openlocfilehash: baedb0541e16c28d18d0062fa5498fb8e2c8dea8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b643ad301acc217f3fac1bbf1aeee1d7141702a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918362"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209626"
 ---
 # <a name="_cisqrt"></a>_CIsqrt
 
 Yığındaki en üstteki değerin kare kökünü hesaplar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 void __cdecl _CIsqrt();
@@ -44,7 +45,7 @@ void __cdecl _CIsqrt();
 
 ## <a name="remarks"></a>Açıklamalar
 
-`sqrt` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
+İşlevin bu sürümünde `sqrt` derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
 Elde edilen değer yığının en üstüne gönderilir.
 

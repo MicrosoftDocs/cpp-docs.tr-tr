@@ -1,27 +1,28 @@
 ---
-title: Derleyici Hatası C2669
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2669'
+title: Derleyici hatası C2669
 ms.date: 11/04/2016
 f1_keywords:
 - C2669
 helpviewer_keywords:
 - C2669
 ms.assetid: f9cb8111-bcdc-484b-a863-2c42e15a0496
-ms.openlocfilehash: 7944ced947ba1d7c8b10172560ce6237a554e236
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01b40131a2eef4ff83d10c5088b2cae3eb7e55e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300797"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210653"
 ---
-# <a name="compiler-error-c2669"></a>Derleyici Hatası C2669
+# <a name="compiler-error-c2669"></a>Derleyici hatası C2669
 
-üye işlevi anonim birleşimde izin verilmiyor
+anonim birleşimde üye işleve izin verilmiyor
 
-[Anonim birleşimler](../../cpp/unions.md#anonymous_unions) üye işlevleri sahip olamaz.
+[Anonim birleşimlerde](../../cpp/unions.md#anonymous_unions) üye işlevleri olamaz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2669 oluşturur:
+Aşağıdaki örnek C2669 oluşturur:
 
 ```cpp
 // C2669.cpp

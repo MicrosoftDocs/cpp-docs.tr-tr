@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları uyarısı LNK4092'
 title: Bağlayıcı Araçları Uyarısı LNK4092
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4092
 ms.assetid: d569ec47-a338-40e1-940b-8a8061459acb
-ms.openlocfilehash: 706ab843f4b079b507033af76a7f407816fce820
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6ef835981a8ed7921147697d6ed9fc79ceeb7033
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183364"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210016"
 ---
 # <a name="linker-tools-warning-lnk4092"></a>Bağlayıcı Araçları Uyarısı LNK4092
 
@@ -26,4 +27,4 @@ int var = 1;
 int *pvar = &var;
 ```
 
-Değeri DLL 'nin belleğe yüklendiği yere bağlı olduğundan, bağlayıcı `pvar` çözümlenemiyor, bu nedenle DLL 'ye bir yeniden konumlandırma kaydı koyar. DLL belleğe yüklendiğinde, `var` adresi çözülebilir ve `pvar` atanabilir. Başka bir işlem aynı DLL 'yi yüklerse, ancak aynı adrese yükleyemezse, `var` adresi için yeniden konumlandırma ikinci işlem için güncelleştirilir ve ilk işlemin adres alanı yanlış adrese işaret eder.
+`pvar`DEĞERI dll 'nin belleğe yüklendiği yere bağlı olduğundan bağlayıcı çözümlenemiyor, bu nedenle dll 'ye bir konum değiştirme kaydı koyar. DLL belleğe yüklendiğinde, adresi `var` çözülebilir ve `pvar` atanabilir. Başka bir işlem aynı DLL 'yi yüklerse, ancak aynı adrese yükleyemezse, adresi için yeniden konumlandırma `var` ikinci işlem için güncelleştirilir ve ilk işlemin adres alanı yanlış adrese işaret eder.
