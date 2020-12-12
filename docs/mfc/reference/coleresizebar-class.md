@@ -1,5 +1,6 @@
 ---
-title: COleResizeBar Sınıfı
+description: 'Daha fazla bilgi edinin: COleResizeBar Class'
+title: COleResizeBar sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COleResizeBar
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - COleResizeBar [MFC], COleResizeBar
 - COleResizeBar [MFC], Create
 ms.assetid: 56a708d9-28c5-4eb0-9404-77b688d91c63
-ms.openlocfilehash: beb0c37b6ac23310b7d5c8506fbdaf677dd74d8d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bdd97e854257e2f858b52ed45f4066b26c71394d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376147"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226720"
 ---
-# <a name="coleresizebar-class"></a>COleResizeBar Sınıfı
+# <a name="coleresizebar-class"></a>COleResizeBar sınıfı
 
 Yerinde OLE öğelerinin yeniden boyutlandırılmasını destekleyen bir denetim çubuğu türü.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class COleResizeBar : public CControlBar
@@ -31,43 +32,43 @@ class COleResizeBar : public CControlBar
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleResizeBar::COleResizeBar](#coleresizebar)|Bir `COleResizeBar` nesne inşa eder.|
+|[COleResizeBar::COleResizeBar](#coleresizebar)|Bir `COleResizeBar` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COleResizeBar::Oluştur](#create)|Bir Windows alt penceresi oluşturur ve baş harflerini oluşturur ve nesneyle `COleResizeBar` ilişkilendirer.|
+|[COleResizeBar:: Create](#create)|Windows alt penceresi oluşturup başlatır ve `COleResizeBar` nesnesiyle ilişkilendirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`COleResizeBar`nesneler, yumurtadan çıkmış kenarlıklı ve dış yeniden boyutlandırma kollarına sahip bir [CRectTracker](../../mfc/reference/crecttracker-class.md) olarak görünür.
+`COleResizeBar` nesneler, taranmış bir kenarlık ve dış yeniden boyutlandırma tutamaçlarıyla bir [CRectTracker](../../mfc/reference/crecttracker-class.md) olarak görünür.
 
-`COleResizeBar`nesneler genellikle [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md) sınıfından türetilen çerçeve penceresi nesnelerinin katıştirilmiş üyeleridir.
+`COleResizeBar` nesneler, genellikle [Coleipframewnd](../../mfc/reference/coleipframewnd-class.md) sınıfından türetilmiş çerçeve pencere nesnelerinin katıştırılmış üyeleridir.
 
-Daha fazla bilgi için [Etkinleştirme](../../mfc/activation-cpp.md)makalesine bakın.
+Daha fazla bilgi için [etkinleştirme](../../mfc/activation-cpp.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Ccontrolbar](../../mfc/reference/ccontrolbar-class.md)
+[CControlBar](../../mfc/reference/ccontrolbar-class.md)
 
 `COleResizeBar`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxole.h
+**Üstbilgi:** afxole. h
 
-## <a name="coleresizebarcoleresizebar"></a><a name="coleresizebar"></a>COleResizeBar::COleResizeBar
+## <a name="coleresizebarcoleresizebar"></a><a name="coleresizebar"></a> COleResizeBar::COleResizeBar
 
-Bir `COleResizeBar` nesne inşa eder.
+Bir `COleResizeBar` nesnesi oluşturur.
 
 ```
 COleResizeBar();
@@ -75,11 +76,11 @@ COleResizeBar();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeniden `Create` boyutlandırma çubuğu nesnesini oluşturmak için arayın.
+`Create`Yeniden boyutlandırma çubuğu nesnesini oluşturmak için çağırın.
 
-## <a name="coleresizebarcreate"></a><a name="create"></a>COleResizeBar::Oluştur
+## <a name="coleresizebarcreate"></a><a name="create"></a> COleResizeBar:: Create
 
-Bir alt pencere oluşturur ve `COleResizeBar` nesneyle ilişkilendirer.
+Bir alt pencere oluşturur ve `COleResizeBar` nesnesiyle ilişkilendirir.
 
 ```
 virtual BOOL Create(
@@ -91,21 +92,21 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Yeniden boyutlandırma çubuğunun üst penceresine işaretçi.
+Yeniden boyutlandırma çubuğunun üst penceresine yönelik işaretçi.
 
-*Dwstyle*<br/>
+*dwStyle*<br/>
 [Pencere stili](../../mfc/reference/styles-used-by-mfc.md#window-styles) özniteliklerini belirtir.
 
-*Nıd*<br/>
-Yeniden boyutlandırma çubuğunun alt pencere kimliği.
+*NID*<br/>
+Yeniden boyutlandırma çubuğunun alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yeniden boyutlandırma çubuğu oluşturulduysa sıfırsız; aksi takdirde 0.
+Yeniden boyutlandırma çubuğu oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek SUPERPAD](../../overview/visual-cpp-samples.md)<br/>
-[CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[COleServerDoc Sınıfı](../../mfc/reference/coleserverdoc-class.md)
+[MFC örnek üst PANELI](../../overview/visual-cpp-samples.md)<br/>
+[CControlBar sınıfı](../../mfc/reference/ccontrolbar-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Cotaserverdoc sınıfı](../../mfc/reference/coleserverdoc-class.md)

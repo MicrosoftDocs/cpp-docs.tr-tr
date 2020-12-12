@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/QIfist (_ftol gösterme)
 title: /QIfist (Suppress _ftol)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - -QIfist compiler option [C++]
 - /QIfist compiler option [C++]
 ms.assetid: 1afd32a5-f658-4b66-85f4-e0ce4cb955bd
-ms.openlocfilehash: 5d6e12a1003ea125b0da4bfef580d8096e97553a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 79e9242d66b532f558307d05b222b2fd8cfd43ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336097"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225654"
 ---
 # <a name="qifist-suppress-_ftol"></a>/QIfist (Suppress _ftol)
 
-Kullanım dışı. Kayan nokta türünden integral `_ftol` türüne dönüştürme gerektiğinde yardımcı işlevin çağrısını bastırır.
+Kullanım dışı. `_ftol`Bir kayan nokta türünden integral türüne dönüştürme gerektiğinde yardımcı işlevin çağrısını bastırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /QIfist
@@ -28,36 +29,36 @@ Kullanım dışı. Kayan nokta türünden integral `_ftol` türüne dönüştür
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> **/QIfist** sadece x86'yı hedefleyen derleyicide mevcuttur; bu derleyici seçeneği x64 veyaARM hedefleyen derleyicilerde kullanılamaz.
+> **/Qifist** yalnızca x86 'yi hedefleyen derleyicide kullanılabilir; Bu derleyici seçeneği, x64 orARM 'yi hedefleyen derleyicilerde kullanılamaz.
 
-`_ftol` İşlev, kayan nokta türünden integral türüne dönüştürmenin yanı sıra, denetim sözcüğünün 10 ve 11 bitlerini ayarlayarak kayan nokta biriminin (FPU) yuvarlama modunun sıfıra (budanma) doğru olmasını sağlar. Bu, kayan nokta türünden integral türüne dönüştürmenin ANSI C standardında açıklandığı gibi oluştuğunu garanti eder (sayının kesirli kısmı atılır). **/QIfist**kullanırken, bu garanti artık geçerli değildir. Yuvarlama modu, Intel başvuru kılavuzlarında belgelenen dört moddan biri olacaktır:
+Bir kayan nokta türünden integral türüne dönüştürmenin yanı sıra, `_ftol` işlevi, denetim sözcüğünün bit 10 ve 11 ' i ayarlanarak kayan nokta biriminin (FPU) yuvarlama modunun sıfıra (Truncate) doğru olmasını sağlar. Bu, ANSI C standardı tarafından açıklandığı şekilde bir kayan nokta türünden integral türüne dönüştürmenin (sayının kesirli kısmı atılır) meydana gelir. **/QIfist** kullanılırken, bu garanti artık geçerli değildir. Yuvarlama modu, Intel Başvuru Kılavuzu ' nda belgelenen dört bir tane olacaktır:
 
-- En yakına doğru yuvarlama (eşit uzaklıktaysa çift sayı)
+- En yakın (eşif ise eşit sayı)
 
-- Negatif sonsuzluğa doğru yuvarlama
+- Negatif sonsuza doğru yuvarla
 
-- Pozitif sonsuzluğa doğru yuvarlama
+- Pozitif sonsuza yuvarla
 
-- Sıfıra doğru yuvarlama
+- Sıfıra yuvarla
 
-FPU'nun yuvarlama davranışını değiştirmek için [_control87, _controlfp _control87_2 \_](../../c-runtime-library/reference/control87-controlfp-control87-2.md) C Çalışma Zamanı işlevini kullanabilirsiniz. FPU'nun varsayılan yuvarlama modu "En yakına doğru yuvarlama" olur. **/QIfist** kullanmak uygulamanızın performansını artırabilir, ancak risk olmadan değil. Üretim ortamlarında **/QIfist** ile oluşturulmuş koda güvenmeden önce, kodunuzun yuvarlama modlarına duyarlı bölümlerini iyice test etmelisiniz.
+FPU 'nin yuvarlama davranışını değiştirmek için [_control87, _controlfp, \_ _control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md) C Run-Time işlevini kullanabilirsiniz. FPU 'nın varsayılan yuvarlama modu "en yakına yuvarlanır". **/Qifist** kullanmak uygulamanızın performansını iyileştirebilir, ancak risk olmadan kullanılamaz. Üretim ortamlarında **/Qifist** ile oluşturulan koda bağlı olmadan önce, kodunuzun, yuvarlama modlarında hassas olan kısımlarını kapsamlı bir şekilde test etmelisiniz.
 
-[/arch (x86)](arch-x86.md) ve **/QIfist** aynı derlemede kullanılamaz.
+[/Arch (x86)](arch-x86.md) ve **/qifist** aynı compiland üzerinde kullanılamaz.
 
 > [!NOTE]
-> **/QIfist** varsayılan olarak geçerli değildir, çünkü yuvarlama uçları kayan nokta yuvarlama noktasını da etkiler (her hesaplamadan sonra oluşur), bu nedenle C stili (sıfıra doğru) yuvarlama için bayrakları ayarladığınızda, kayan nokta hesaplamalarınız farklı olabilir. **/QIfist,** kodunuz kayan nokta sayısının kesirli kısmını keserek beklenen davranışa bağlıysa kullanılmamalıdır. Emin değilseniz, **/QIfist**kullanmayın.
+> Varsayılan olarak, yuvarlama bitleri kayan nokta yuvarlama (her hesaplamadan sonra meydana gelir) olarak kayan nokta yuvarlama için de etkilediği için **/Qifist** varsayılan olarak etkin değildir, bu nedenle, C stili için bayrakları ayarladığınızda (sıfıra doğru), kayan nokta hesaplamalarınız farklı olabilir. Kodunuz, kayan noktalı sayının kesirli kısmını kesilmesinin beklenen davranışına bağımlıysa, **/Qifist** kullanılmamalıdır. Emin değilseniz, **/Qifist** kullanmayın.
 
-**/QIfist** seçeneği Visual Studio 2005'ten itibaren amortismana hazırdır. Derleyici int dönüşüm hızı float önemli iyileştirmeler yaptı. Azalan derleyici seçenekleri listesi için, [Kategoriye Göre Listelenen Derleyici Seçenekleri'nde](compiler-options-listed-by-category.md) **Azalan ve Kaldırılan Derleyici Seçenekleri'ne** bakın.
+**/Qifist** seçeneği, Visual Studio 2005 ' den itibaren kullanımdan kaldırılmıştır. Derleyici, kayan nokta dönüştürme hızına göre önemli geliştirmeler yaptı. Kullanım dışı bırakılan derleyici seçeneklerinin bir listesi için, bkz. [kategoriye göre listelenen derleyici seçeneklerinde](compiler-options-listed-by-category.md) **kullanım dışı ve kaldırılmış derleyici seçenekleri** .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 1. **C/C++** klasörünü tıklatın.
 
-1. Komut **Satırı** özelliği sayfasını tıklatın.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. **Ek Seçenekler** kutusuna derleyici seçeneğini yazın.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -65,6 +66,6 @@ FPU'nun yuvarlama davranışını değiştirmek için [_control87, _controlfp _c
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/Q Seçenekler (Düşük Düzey İşlemler)](q-options-low-level-operations.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[/Q seçenekler (düşük düzey Işlemler)](q-options-low-level-operations.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)
