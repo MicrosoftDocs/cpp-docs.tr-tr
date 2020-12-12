@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fp_contract pragma'
 title: fp_contract pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,26 +9,26 @@ helpviewer_keywords:
 - pragmas, fp_contract
 - fp_contract pragma
 ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
-ms.openlocfilehash: 833d8e7f4b8c9da18901610e52afed619468c5c3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cefcf0519f08b3fd68a0f8b464938ea7cdbda6d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218568"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261183"
 ---
 # <a name="fp_contract-pragma"></a>fp_contract pragması
 
 Kayan nokta dalgalanıp gerçekleşmeyeceğini belirler. Kayan nokta karşıtı, iki ayrı kayan nokta işlemini tek bir yönergede birleştiren FMA (Fkullandınız-çarp-Add) gibi bir yönergedir. Bu yönergelerin kullanılması kayan nokta duyarlığını etkileyebilir, çünkü her işlemden sonra yuvarlama yerine, işlemci her iki işlemden sonra yalnızca bir kez yer alabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#pragma fp_contract (** { **on** | **off** } **)**
+> **#pragma fp_contract (** { **on**  |  **off** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **fp_contract** 'dir. Bu, derleyiciye mümkün olan yerlerde kayan nokta karşıtı yönergeler kullanmasını söyler. Tek kayan nokta talimatlarını korumak için **fp_contract** ayarlayın.
+Varsayılan olarak, **fp_contract** **Açık** olur. Bu, derleyiciye mümkün olan yerlerde kayan nokta karşıtı yönergeler kullanmasını söyler. Tek tek kayan nokta yönergelerini korumak için **fp_contract** **kapalı** olarak ayarlayın.
 
-Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [/FP (kayan nokta davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md).
+Kayan nokta davranışı hakkında daha fazla bilgi için bkz. [/FP (Floating-Point davranışını belirt)](../build/reference/fp-specify-floating-point-behavior.md).
 
 Diğer kayan nokta pragmaları şunlardır:
 
@@ -37,7 +38,7 @@ Diğer kayan nokta pragmaları şunlardır:
 
 ## <a name="example"></a>Örnek
 
-Bu örnekten oluşturulan kod, hedef işlemcide kullanılabilir olduğunda bile, Fuse-çarp-Add yönergesini kullanmaz. Dışarı `#pragma fp_contract (off)`yorum yaptıysanız oluşturulan kod, varsa, bir Fuse-çarp-Add yönergesi kullanabilir.
+Bu örnekten oluşturulan kod, hedef işlemcide kullanılabilir olduğunda bile, Fuse-çarp-Add yönergesini kullanmaz. Dışarı yorum yaptıysanız `#pragma fp_contract (off)` oluşturulan kod, varsa, bir Fuse-çarp-Add yönergesi kullanabilir.
 
 ```cpp
 // pragma_directive_fp_contract.cpp

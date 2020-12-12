@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: XDCMake başvurusu'
 title: XDCMake Başvurusu
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,53 +7,53 @@ f1_keywords:
 helpviewer_keywords:
 - xdcmake program
 ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac
-ms.openlocfilehash: 9970470d1feb471f9e0b8c9284a08337dac7ef0f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c9e597828ca37b67a21a5b2f442fffcac001b541
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335854"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261001"
 ---
 # <a name="xdcmake-reference"></a>XDCMake Başvurusu
 
-xdcmake.exe .xdc dosyalarını bir .xml dosyasında derleyen bir programdır. Bir .xdc dosyası, kaynak kodu [/doc](doc-process-documentation-comments-c-cpp.md) ile derlendiğinde ve kaynak kod dosyası XML etiketleri ile işaretlenmiş belge yorumları içerdiğinde, her kaynak kodu dosyası için MSVC derleyicisi tarafından oluşturulur.
+xdcmake.exe. xdc dosyalarını bir. xml dosyasına derleyen bir programdır. Kaynak kodu [/doc](doc-process-documentation-comments-c-cpp.md) ile derlendiğinde ve kaynak kod dosyası xml etiketleriyle işaretlenmiş belge açıklamalarını içerdiğinde, bir. xdc dosyası her kaynak kodu dosyası için MSVC derleyicisi tarafından oluşturulur.
 
 ### <a name="to-use-xdcmakeexe-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamında xdcmake.exe kullanmak için
 
-1. Projenin **Özellik Sayfaları** iletişim kutusunu açın. Ayrıntılar için [Visual Studio'da C++ derleyicisi ayarlanın ve özellikler oluşturun.](../working-with-project-properties.md)
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Yapılandırma **Özellikleri** klasörünü açın.
+1. **Yapılandırma özellikleri** klasörünü açın.
 
-1. **XML Belge Açıklamaları** özelliği sayfasını tıklatın.
+1. **XML belgesi açıklamaları** Özellik sayfasına tıklayın.
 
 > [!NOTE]
-> komut satırındaki xdcmake.exe seçenekleri, geliştirme ortamında (özellik sayfaları) kullanıldığında seçeneklerden farklıdır. Geliştirme ortamında xdcmake.exe kullanma hakkında bilgi için, [XML Belge Jeneratör Aracı Özellik Sayfaları](xml-document-generator-tool-property-pages.md)bakın.
+> Komut satırındaki xdcmake.exe seçenekleri, xdcmake.exe geliştirme ortamında (Özellik sayfaları) kullanıldığında kullanılan seçeneklerden farklıdır. Geliştirme ortamında xdcmake.exe kullanma hakkında daha fazla bilgi için bkz. [XML Document Generator aracı özellik sayfaları](xml-document-generator-tool-property-pages.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-xdcmake`input_filename options`
+xdcmake `input_filename options`
 
 ## <a name="parameters"></a>Parametreler
 
 *input_filename*<br/>
-xdcmake.exe girişi olarak kullanılan .xdc dosyalarının dosya adı. Bir veya daha fazla .xdc dosya belirtin veya geçerli dizindeki tüm .xdc dosyalarını kullanmak için *.xdc kullanın.
+xdcmake.exe giriş olarak kullanılan. xdc dosyalarının dosya adı. Bir veya daha fazla. xdc dosyası belirtin veya geçerli dizindeki tüm. xdc dosyalarını kullanmak için *. xdc kullanın.
 
 *Seçenekler*<br/>
-Sıfır veya daha fazlası aşağıdakilerden:
+Aşağıdakilerden sıfır veya daha fazlası:
 
 |Seçenek|Açıklama|
 |------------|-----------------|
-|/?, /help|Xdcmake.exe için yardım görüntüleyin.|
-|/assembly:*dosya adı*|.xml dosyasındaki \<montaj> etiketinin değerini belirtmenizi sağlar.  Varsayılan olarak, \<derleme> etiketinin değeri .xml dosyasının dosya adı ile aynıdır.|
-|/nologo|Telif hakkı iletisi bastırın.|
-|/out:*dosya adı*|.xml dosyasının adını belirtmenizi sağlar.  Varsayılan olarak, .xml dosyasının adı xdcmake.exe tarafından işlenen ilk .xdc dosyasının dosya adıdır.|
+|/?,/Help|xdcmake.exe için yardımı görüntüleyin.|
+|/Assembly:*filename*|\<assembly>. Xml dosyasında etiketinin değerini belirtmenize izin verir.  Varsayılan olarak, \<assembly> etiketinin değeri. xml dosyasının dosya adıyla aynıdır.|
+|/nologo|Telif hakkı iletisini gizleyin.|
+|/Out:*filename*|. Xml dosyasının adını belirtmenizi sağlar.  Varsayılan olarak,. xml dosyasının adı, xdcmake.exe tarafından işlenen ilk. xdc dosyasının dosya adıdır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio bir proje inşa ederken otomatik olarak xdcmake.exe çağırır. Ayrıca komut satırında xdcmake.exe çağırabilirsiniz.
+Visual Studio, bir proje derlerken xdcmake.exe otomatik olarak çağırır. Ayrıca, komut satırında xdcmake.exe çağırabilirsiniz.
 
-Kaynak kod dosyalarına belge açıklamaları ekleme hakkında daha fazla bilgi için [Belgeler için Önerilen Etiketlere](recommended-tags-for-documentation-comments-visual-cpp.md) bakın Açıklamalar.
+Belge açıklamalarını kaynak kodu dosyalarına ekleme hakkında daha fazla bilgi için bkz. [belge açıklamaları Için önerilen Etiketler](recommended-tags-for-documentation-comments-visual-cpp.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[XML Dokümantasyon](xml-documentation-visual-cpp.md)
+[XML Belgeleri](xml-documentation-visual-cpp.md)

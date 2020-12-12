@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _close'
 title: _close
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - close function
 - files [C++], closing
 ms.assetid: 4708a329-8acf-4cd9-b7b0-a952e1897247
-ms.openlocfilehash: c642820bf1bc2e2afbd14e17832fb3fdb6f865b8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d65d65cea5d379cad11e45e63efc725ee056ea91
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919851"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260741"
 ---
 # <a name="_close"></a>_close
 
@@ -58,11 +59,11 @@ Dosya başarıyla kapatıldıysa **_close** 0 döndürür. -1 ' in dönüş değ
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Close** işlevi *FD*ile ilişkili dosyayı kapatır.
+**_Close** işlevi *FD* ile ilişkili dosyayı kapatır.
 
-Dosya tanımlayıcısı ve temel alınan işletim sistemi dosya tanıtıcısı kapalıdır. Bu nedenle, dosya başlangıçta bir **Win32 işlevi kullanılarak** açıldıysa ve **_open_osfhandle**kullanarak bir dosya tanımlayıcısına dönüştürülürse, **CloseHandle** çağrısı yapmak gerekli değildir.
+Dosya tanımlayıcısı ve temel alınan işletim sistemi dosya tanıtıcısı kapalıdır. Bu nedenle, dosya başlangıçta bir **Win32 işlevi kullanılarak** açıldıysa ve **_open_osfhandle** kullanarak bir dosya tanımlayıcısına dönüştürülürse, **CloseHandle** çağrısı yapmak gerekli değildir.
 
-Bu işlev, parametrelerini doğrular. *FD* hatalı bir dosya tanımlayıcısıdır, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EBADF**olarak ayarlanır.
+Bu işlev, parametrelerini doğrular. *FD* hatalı bir dosya tanımlayıcısıdır, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EBADF** olarak ayarlanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -70,7 +71,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_close**|\<GÇ. h>|\<errno. h>|
+|**_close**|\<io.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

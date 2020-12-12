@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: XML veri Oluşturucu aracı özellik sayfası'
 title: XML Verileri Oluşturma Aracı Özellik Sayfası
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - XML Data Generator Tool property page
 ms.assetid: b2ef1c12-3419-429d-bb9d-bd7d9ffe1ffb
-ms.openlocfilehash: 51042e3eab0c789d2e923f40de2d0ee82d06a5ab
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4d6548deb3ae872e002f2a445acbd2a28619c9c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316450"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260988"
 ---
 # <a name="xml-data-generator-tool-property-page"></a>XML Verileri Oluşturma Aracı Özellik Sayfası
 
-**XML verileri oluşturma aracı** özellik sayfası, bir veri kümesi için bir proje eklediğinizde kullanılabilir.
+Bir projeye veri kümesi eklediğinizde **XML veri Oluşturucu aracı** Özellik sayfası kullanılabilir hale gelir.
 
-**XML verileri oluşturma aracı** özellik sayfası, aşağıdaki özellikleri içerir:
+**XML veri Oluşturucu aracı** Özellik sayfası aşağıdaki özellikleri içerir:
 
 - **Çıkış dosyası**
 
@@ -27,16 +28,16 @@ ms.locfileid: "62316450"
 
 - **Başlangıç başlığını gösterme**
 
-   Başlangıç başlığının ve bilgi iletilerinin görüntülenmesini bastırır.
+   Başlangıç başlığının ve bilgi iletilerinin görüntülenmesini önler.
 
-- **Oluşturulmuş Proxy dili**
+- **Oluşturulan proxy dili**
 
-   Yönetilen kod yayma gerekip gerekmediğini belirler.
+   Yönetilen kodun yayanıp bildirilmeyeceğini belirler.
 
-Erişim hakkında daha fazla bilgi için **XML verileri oluşturma aracı** özellik sayfasında bakın [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+**XML veri Oluşturucu aracı** Özellik sayfasına erişme hakkında daha fazla bilgi için bkz. [Visual Studio 'da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-Bu nesnenin üyeleri programlamayla erişme hakkında daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>
+Bu nesnenin üyelerine programlı olarak erişme hakkında daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCXMLDataGeneratorTool>
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ projesi özellik Sayfa başvurusu](property-pages-visual-cpp.md)
+[C++ proje özellik sayfası başvurusu](property-pages-visual-cpp.md)

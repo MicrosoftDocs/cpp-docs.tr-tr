@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2847'
 title: Derleyici hatası C2847
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2847
 ms.assetid: 9ad9a0e0-8b16-49d9-a5be-f8eda2372aa9
-ms.openlocfilehash: b8b31dc461c1d589151701c6946f6ac1a95c5517
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: fc9b7a75d662778bc532bb35e4520fb5627c9f2a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738992"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260221"
 ---
 # <a name="compiler-error-c2847"></a>Derleyici hatası C2847
 

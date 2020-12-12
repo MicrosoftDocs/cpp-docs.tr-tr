@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: XML belgeleri (Visual C++)'
 title: XML Belgeleri (Visual C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,40 +8,40 @@ helpviewer_keywords:
 - comments, C++ source code files
 - /// delimiter for C++ documentation
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
-ms.openlocfilehash: c25c54e81bb9c10fc871a2abc178f57e661ae4e6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 762380d08483292866cb96b34be4d85f7a2f510a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260949"
 ---
 # <a name="xml-documentation-visual-c"></a>XML Belgeleri (Visual C++)
 
-Visual C++'da, kaynak kodunuza .xml dosyasına işlenecek yorumlar ekleyebilirsiniz. Bu dosya daha sonra, kodunuzdaki sınıflar için belge oluşturan bir işleme giriş olabilir.
+Visual C++, kaynak kodunuza bir. xml dosyasına işlenecek açıklamalar ekleyebilirsiniz. Bu dosya daha sonra kodunuzdaki sınıflar için belgeler oluşturan bir işlemin girişi olabilir.
 
-Visual C++ kod dosyasında, XML dokümantasyon yorumları bir yöntem veya tür tanımından önce doğrudan bulunmalıdır. Yorumlar, IntelliSense QuickInfo veri ipucunu aşağıdaki senaryolarda doldurmak için kullanılabilir:
+Bir Visual C++ kod dosyasında, XML belge yorumlarının doğrudan bir yöntemden veya tür tanımından önce konumlandırılmaları gerekir. Açıklamalar, IntelliSense QuickInfo veri ipucunu aşağıdaki senaryolarda doldurmak için kullanılabilir:
 
-1. kod, eşlik eden .winmd dosyasına sahip bir Windows Runtime bileşeni olarak derlendiğinde
+1. kod, eşlik eden bir. winmd dosyası olan bir Windows Çalışma Zamanı bileşeni olarak derlenmişse
 
 1. kaynak kodu geçerli projeye dahil edildiğinde
 
-1. tür bildirimleri ve uygulamaları aynı üstbilgi dosyasında bulunan bir kütüphanede
+1. tür bildirimleri ve uygulamaları aynı üstbilgi dosyasında bulunan bir kitaplıkta
 
 > [!NOTE]
-> Geçerli sürümde, kod yorumları şablonlar veya şablon türü içeren herhangi bir şey (örneğin, şablon olarak parametre alan bir işlev) üzerinde işlenmez. Bu tür yorumların eklenmesi tanımlanmamış davranışlara neden olur.
+> Geçerli sürümde, kod açıklamaları şablonlarda veya bir şablon türü içeren herhangi bir şeye (örneğin, bir parametreyi şablon olarak alan bir işlev) işlenmez. Bu tür açıklamaları eklemek tanımsız davranışa neden olur.
 
-Belge açıklamaları içeren bir .xml dosyası oluşturma yla ilgili ayrıntılar için aşağıdaki konulara bakın.
+Belge açıklamalarıyla bir. xml dosyası oluşturma hakkında daha fazla bilgi için aşağıdaki konulara bakın.
 
 |Hakkında bilgi için|Bkz.|
 |---------------------------|---------|
-|Kullanılacak derleyici seçenekleri|[/doc](doc-process-documentation-comments-c-cpp.md)|
-|Belgelerde sık kullanılan işlevselliği sağlamak için kullanabileceğiniz etiketler|[Dokümantasyon Yorumları için Önerilen Etiketler](recommended-tags-for-documentation-comments-visual-cpp.md)|
-|Derleyicinin kodunuzdaki yapıları tanımlamak için ürettiği kimlik dizeleri|[.xml Dosyasını İşle](dot-xml-file-processing.md)|
-|Belge etiketleri nasıl sınırlandırılı|[Visual C++ Belge Etiketleri için Sınırlayıcılar](delimiters-for-visual-cpp-documentation-tags.md)|
-|Bir veya daha fazla .xdc dosyasından .xml dosyası oluşturma.|[XDCMake Başvurusu](xdcmake-reference.md)|
-|Visual Studio özellik alanlarıyla ilgili olarak XML hakkındaki bilgilere bağlantılar|[Görsel Stüdyo'da XML](/visualstudio/xml-tools/xml-tools-in-visual-studio)|
+|Kullanılacak derleyici seçenekleri|[/Doc](doc-process-documentation-comments-c-cpp.md)|
+|Belgelerde yaygın olarak kullanılan işlevselliği sağlamak için kullanabileceğiniz Etiketler|[Belge açıklamaları için önerilen Etiketler](recommended-tags-for-documentation-comments-visual-cpp.md)|
+|Kodunuzda yapıları tanımlamak için derleyicinin ürettiği KIMLIK dizeleri|[. Xml dosyası işleniyor](dot-xml-file-processing.md)|
+|Belge etiketlerini sınırlandıran|[Visual C++ Belge Etiketleri için Sınırlayıcılar](delimiters-for-visual-cpp-documentation-tags.md)|
+|Bir veya daha fazla. xdc dosyasından bir. xml dosyası oluşturuluyor.|[XDCMake başvurusu](xdcmake-reference.md)|
+|Visual Studio Özellik alanlarıyla ilgili olarak XML hakkında bilgi bağlantıları|[Visual Studio 'da XML](/visualstudio/xml-tools/xml-tools-in-visual-studio)|
 
-Bir belge açıklama metnine XML özel karakterler koymanız gerekiyorsa, XML varlıkları veya CDATA bölümünü kullanmanız gerekir.
+Bir belge açıklamasının metnine XML özel karakterleri yerleştirmeniz gerekiyorsa, XML varlıkları veya CDATA bölümü kullanmanız gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

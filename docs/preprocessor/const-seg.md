@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: const_seg pragma'
 title: const_seg pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - pragmas, const_seg
 - const_seg pragma
 ms.assetid: 1eb58ee2-fb0e-4a39-9621-699c8f5ef957
-ms.openlocfilehash: 04467df1205bd6d4c70687422572aef898d46f68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 596f44a030aa6c09824d5798e54a3b126ce34544
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231630"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261209"
 ---
 # <a name="const_seg-pragma"></a>const_seg pragması
 
 [Const](../cpp/const-cpp.md) değişkenlerinin nesne (. obj) dosyasında depolandığı bölümü (segmenti) belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#pragma const_seg (** ["*bölüm-adı*" [ **,** "*bölüm-sınıfı*"]] **)**\
 > **#pragma const_seg (** { **Push**  |  **pop** } [ **,** *tanımlayıcı* ] [ **,** "*bölüm-adı*" [ **,** "*bölüm-sınıfı*"]] **)**
@@ -27,16 +28,16 @@ ms.locfileid: "87231630"
 ### <a name="parameters"></a>Parametreler
 
 **hareketle**\
-Seçim İç derleyici yığınına bir kayıt koyar. **Gönderim** bir *tanımlayıcıya* ve *bölüm adına*sahip olabilir.
+Seçim İç derleyici yığınına bir kayıt koyar. **Gönderim** bir *tanımlayıcıya* ve *bölüm adına* sahip olabilir.
 
 **cağımız**\
-Seçim İç derleyici yığınının en üstünden bir kaydı kaldırır. Bir **pop** bir *tanımlayıcıya* ve *bölüm adına*sahip olabilir. *Tanımlayıcıyı*kullanarak yalnızca bir **pop** komutu kullanarak birden çok kayıt ekleyebilirsiniz. *Bölüm adı* , pop sonrasında etkin const bölüm adı olur.
+Seçim İç derleyici yığınının en üstünden bir kaydı kaldırır. Bir **pop** bir *tanımlayıcıya* ve *bölüm adına* sahip olabilir. *Tanımlayıcıyı* kullanarak yalnızca bir **pop** komutu kullanarak birden çok kayıt ekleyebilirsiniz. *Bölüm adı* , pop sonrasında etkin const bölüm adı olur.
 
 *Tanımlayıcısını*\
-Seçim **Push**ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. Pop ile kullanıldığında, *tanımlayıcı* kaldırılana kadar yönerge, iç yığının içinden **açılır**. İç yığında *tanımlayıcı* bulunmazsa hiçbir şey yapılmadı.
+Seçim **Push** ile kullanıldığında, iç derleyici yığınındaki kayda bir ad atar. Pop ile kullanıldığında, *tanımlayıcı* kaldırılana kadar yönerge, iç yığının içinden **açılır**. İç yığında *tanımlayıcı* bulunmazsa hiçbir şey yapılmadı.
 
 "*bölüm-adı*" \
-Seçim Bir bölümün adı. **Pop**ile kullanıldığında, yığın çıkar ve *bölüm adı* etkin const bölüm adı olur.
+Seçim Bir bölümün adı. **Pop** ile kullanıldığında, yığın çıkar ve *bölüm adı* etkin const bölüm adı olur.
 
 "*bölüm-sınıfı*" \
 Seçim Yoksayıldı, ancak Microsoft C++ ' ın 2,0 sürümünden önceki sürümleriyle uyumluluk için eklenmiştir.
@@ -45,7 +46,7 @@ Seçim Yoksayıldı, ancak Microsoft C++ ' ın 2,0 sürümünden önceki sürüm
 
 Bir nesne dosyasındaki *bölüm* , bir birim olarak belleğe yüklenen adlandırılmış veri bloğudur. *Const bölümü* , sabit veri içeren bir bölümdür. Bu makalede, koşullar *segmenti* ve *bölümü* aynı anlama sahiptir.
 
-**Const_seg** pragma yönergesi, derleyiciye çeviri biriminden tüm sabit veri öğelerini *bölüm adı*adlı bir const bölümüne koymasını söyler. Değişkenler için nesne dosyasındaki varsayılan bölüm **`const`** `.rdata` . Yapı değerleri gibi bazı **`const`** değişkenler otomatik olarak kod akışına eklenir. Satır içi kod içinde görünmez `.rdata` . *Bölüm adı* parametresi olmayan **const_seg** pragma yönergesi, sonraki veri öğelerinin bölüm adını ' **`const`** ye sıfırlar `.rdata` .
+**Const_seg** pragma yönergesi, derleyiciye çeviri biriminden tüm sabit veri öğelerini *bölüm adı* adlı bir const bölümüne koymasını söyler. Değişkenler için nesne dosyasındaki varsayılan bölüm **`const`** `.rdata` . Yapı değerleri gibi bazı **`const`** değişkenler otomatik olarak kod akışına eklenir. Satır içi kod içinde görünmez `.rdata` . *Bölüm adı* parametresi olmayan **const_seg** pragma yönergesi, sonraki veri öğelerinin bölüm adını ' **`const`** ye sıfırlar `.rdata` .
 
 Bir içinde dinamik başlatma gerektiren bir nesne tanımlarsanız `const_seg` , sonuç tanımsız bir davranıştır.
 

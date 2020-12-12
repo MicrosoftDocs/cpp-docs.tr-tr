@@ -1,5 +1,6 @@
 ---
-title: CBaseKeyFrame Sınıfı
+description: 'Daha fazla bilgi edinin: CBaseKeyFrame sınıfı'
+title: CBaseKeyFrame sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CBaseKeyFrame
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - CBaseKeyFrame [MFC], m_bIsKeyframeAtOffset
 - CBaseKeyFrame [MFC], m_keyframe
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
-ms.openlocfilehash: 3fcd55f6a157f4b837090a3608fb509b870aae5d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0bebd91183eab9be71e8df4928dc621565718cb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352985"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261267"
 ---
-# <a name="cbasekeyframe-class"></a>CBaseKeyFrame Sınıfı
+# <a name="cbasekeyframe-class"></a>CBaseKeyFrame sınıfı
 
-Anahtar çerçevenin temel işlevselliğini uygular.
+, Bir ana karenin temel işlevlerini uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CBaseKeyFrame : public CObject;
@@ -43,44 +44,44 @@ class CBaseKeyFrame : public CObject;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CBaseKeyFrame::CBaseKeyFrame](#cbasekeyframe)|Anahtar kare nesnesi oluşturuyor.|
+|[CBaseKeyFrame:: CBaseKeyFrame](#cbasekeyframe)|Bir ana kare nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CBaseKeyFrame::AddToStoryboard](#addtostoryboard)|Film şeridine bir anahtar çerçevesi ekler.|
-|[CBaseKeyFrame::GetAnimationKeyframe](#getanimationkeyframe)|Temel anahtar kare değerini verir.|
-|[CbaseKeyFrame::Isadded](#isadded)|Film şeridine bir anahtar çerçevesi eklenip eklenmediğini söyler.|
-|[CBaseKeyFrame::IsKeyframeAtOffset](#iskeyframeatoffset)|Anahtar çerçevesinin ofset'te veya geçişten sonra film şeridine eklenip eklenmeyeceğini belirtir.|
+|[CBaseKeyFrame:: AddToStoryboard](#addtostoryboard)|Görsel taslağa bir ana kare ekler.|
+|[CBaseKeyFrame:: GetAnimationKeyframe](#getanimationkeyframe)|Temeldeki ana kare değerini döndürür.|
+|[CBaseKeyFrame:: IsAdded](#isadded)|Görsel taslağa bir ana kare eklenip eklenmeyeceğini söyler.|
+|[CBaseKeyFrame:: ıskeyframeatoffset](#iskeyframeatoffset)|Ana karenin, uzaklığında veya geçişten sonra film şeridine eklenip eklenmeyeceğini belirtir.|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CBaseKeyFrame::m_bAdded](#m_badded)|Bu anahtar çerçevenin bir film şeridine eklenip eklenmediğini belirtir.|
-|[CBaseKeyFrame::m_bIsKeyframeAtOffset](#m_biskeyframeatoffset)|Bu anahtar çerçevenin, varolan başka bir anahtar çerçeveden bir ofsette mi yoksa bazı geçişin sonunda mı bir ofset olarak film şeridine eklenmesi gerektiğini belirtir.|
-|[CBaseKeyFrame::m_keyframe](#m_keyframe)|Windows Animasyon API anahtar çerçeveyi temsil eder. Bir anahtar çerçevesi baş harfe başlatıldığında, önceden tanımlanmış değer UI_ANIMATION_KEYFRAME_STORYBOARD_START olarak ayarlanır.|
+|[CBaseKeyFrame:: m_bAdded](#m_badded)|Bu ana karenin bir görsel taslağa eklenip eklenmeyeceğini belirtir.|
+|[CBaseKeyFrame:: m_bIsKeyframeAtOffset](#m_biskeyframeatoffset)|Bu ana karenin, varolan başka bir ana kareden veya bazı geçişin sonundaki bir uzaklığa görsel taslağa eklenip eklenmeyeceğini belirtir.|
+|[CBaseKeyFrame:: m_keyframe](#m_keyframe)|Bir Windows animasyon API 'SI ana karesini temsil eder. Bir ana kare başlatılmazsa UI_ANIMATION_KEYFRAME_STORYBOARD_START önceden tanımlanmış değere ayarlanır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-UI_ANIMATION_KEYFRAME değişkeni kapsüller. Herhangi bir anahtar kare uygulaması için bir taban sınıf olarak hizmet vermektedir. Anahtar çerçevesi, bir film şeridi içindeki bir anı temsil eder ve geçişlerin başlangıç ve bitiş saatlerini belirtmek için kullanılabilir. İki tür anahtar kare vardır : belirtilen ofsette (zaman içinde) film şeridine eklenen anahtar kareler veya belirtilen geçişten sonra eklenen anahtar kareler. Animasyon başlamadan önce bazı geçişlerin süreleri bilinemediğinden, bazı anahtar karelerin gerçek değerleri yalnızca çalışma zamanında belirlenir. Anahtar kareler geçişlere bağlı olabileceğinden, anahtar kareler sırayla anahtar çerçevelerine bağlıdır, anahtar kare zincirleri inşa ederken sonsuz yinelemeleri önlemek önemlidir.
+UI_ANIMATION_KEYFRAME değişkenini kapsüller. Tüm ana kare uygulamaları için bir temel sınıf işlevi görür. Bir ana kare, bir film şeridi içinde zaman içindeki bir süreyi temsil eder ve geçişlerin başlangıç ve bitiş zamanlarını belirtmek için kullanılabilir. Görsel taslağa belirtilen uzaklığa (zamanında) veya belirtilen geçişten sonra eklenen ana karelere eklenen iki ana kare türü vardır. Bazı geçişlerin süreleri animasyon başlamadan önce tanınamadığından, bazı ana karelerin gerçek değerleri yalnızca çalışma zamanında belirlenir. Ana kareler, bağımlılarına bağlı olabileceğinden, ana kare zincirlerini oluştururken sonsuz yinelenen işlemleri engellemek önemlidir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 `CBaseKeyFrame`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-## <a name="cbasekeyframeaddtostoryboard"></a><a name="addtostoryboard"></a>CBaseKeyFrame::AddToStoryboard
+## <a name="cbasekeyframeaddtostoryboard"></a><a name="addtostoryboard"></a> CBaseKeyFrame:: AddToStoryboard
 
-Film şeridine bir anahtar çerçevesi ekler.
+Görsel taslağa bir ana kare ekler.
 
 ```
 virtual BOOL AddToStoryboard(
@@ -91,30 +92,30 @@ virtual BOOL AddToStoryboard(
 ### <a name="parameters"></a>Parametreler
 
 *pStoryboard*<br/>
-Bir film şeridi için bir işaretçi.
+Görsel taslağa yönelik işaretçi.
 
-*bDeepAdd*<br/>
-Bu parametre TRUE ise ve eklenen anahtar çerçeve başka bir anahtar çerçeveye veya geçişe bağlıysa, bu yöntem önce bu anahtar çerçevesi veya geçiş şeridine eklemeye çalışır.
+*Boderin ekleme*<br/>
+Bu parametre TRUE ise ve eklenmekte olan ana kare diğer bir ana kareye veya geçişe göre farklılık gösteriyorsa, bu yöntem, önce bu ana kareyi veya geçişi bir film şeridine eklemeye çalışır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtar çerçevesi film şeridine başarıyla eklenmiştirsa DOĞRU; aksi takdirde YANLIŞ.
+Ana kare, görsel taslağa başarıyla eklendiyse TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, film şeridine bir anahtar çerçevesi eklemek için adlandırılır.
+Bu yöntem, görsel taslağa bir ana kare eklemek için çağırılır.
 
-## <a name="cbasekeyframecbasekeyframe"></a><a name="cbasekeyframe"></a>CBaseKeyFrame::CBaseKeyFrame
+## <a name="cbasekeyframecbasekeyframe"></a><a name="cbasekeyframe"></a> CBaseKeyFrame:: CBaseKeyFrame
 
-Anahtar kare nesnesi oluşturuyor.
+Bir ana kare nesnesi oluşturur.
 
 ```
 CBaseKeyFrame();
 ```
 
-## <a name="cbasekeyframegetanimationkeyframe"></a><a name="getanimationkeyframe"></a>CBaseKeyFrame::GetAnimationKeyframe
+## <a name="cbasekeyframegetanimationkeyframe"></a><a name="getanimationkeyframe"></a> CBaseKeyFrame:: GetAnimationKeyframe
 
-Temel anahtar kare değerini verir.
+Temeldeki ana kare değerini döndürür.
 
 ```
 UI_ANIMATION_KEYFRAME GetAnimationKeyframe() const;
@@ -122,15 +123,15 @@ UI_ANIMATION_KEYFRAME GetAnimationKeyframe() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli bir anahtar kare. Varsayılan değer UI_ANIMATION_KEYFRAME_STORYBOARD_START.
+Geçerli bir ana kare. Varsayılan değer UI_ANIMATION_KEYFRAME_STORYBOARD_START.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, temel anahtar kare değerine bir erişimdir.
+Bu, temeldeki ana kare değerine yönelik bir erişimcidir.
 
-## <a name="cbasekeyframeisadded"></a><a name="isadded"></a>CbaseKeyFrame::Isadded
+## <a name="cbasekeyframeisadded"></a><a name="isadded"></a> CBaseKeyFrame:: IsAdded
 
-Film şeridine bir anahtar çerçevesi eklenip eklenmediğini söyler.
+Görsel taslağa bir ana kare eklenip eklenmeyeceğini söyler.
 
 ```
 BOOL IsAdded() const;
@@ -138,15 +139,15 @@ BOOL IsAdded() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir film şeridine bir anahtar çerçevesi eklenirse DOĞRU; otehrwise YANLIŞ.
+Görsel taslağa bir ana kare eklenirse doğru; otehrwise yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Temel sınıfta IsAdded her zaman TRUE döndürür, ancak türemiş sınıflarda geçersiz kılındı.
+Temel sınıfta IsAdded her zaman TRUE değerini döndürür, ancak türetilmiş sınıflarda geçersiz kılınır.
 
-## <a name="cbasekeyframeiskeyframeatoffset"></a><a name="iskeyframeatoffset"></a>CBaseKeyFrame::IsKeyframeAtOffset
+## <a name="cbasekeyframeiskeyframeatoffset"></a><a name="iskeyframeatoffset"></a> CBaseKeyFrame:: ıskeyframeatoffset
 
-Anahtar çerçevesinin ofset'te veya geçişten sonra film şeridine eklenip eklenmeyeceğini belirtir.
+Ana karenin, uzaklığında veya geçişten sonra film şeridine eklenip eklenmeyeceğini belirtir.
 
 ```
 BOOL IsKeyframeAtOffset() const;
@@ -154,31 +155,31 @@ BOOL IsKeyframeAtOffset() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Anahtar çerçevesi belirli bir ofset de film şeridine eklenecekse DOĞRU. Anahtar çerçevesi bir geçişten sonra film şeridine eklenecekse YANLIŞ.
+Belirtilen bir uzaklığa göre ana karenin görsel taslağa eklenmesi gerekiyorsa TRUE. Bir geçişten sonra ana karenin görsel taslağa eklenmesi gerekiyorsa FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Anahtar çerçevesinin ofset olarak film şeridine eklenip eklenmeyeceğini belirtir. Ofset veya geçiş türemiş bir sınıfta belirtilmelidir.
+Ana karenin, uzaklığında görsel taslağa eklenip eklenmeyeceğini belirtir. Türetilmiş bir sınıfta, fark veya geçiş belirtilmesi gerekir.
 
-## <a name="cbasekeyframem_badded"></a><a name="m_badded"></a>CBaseKeyFrame::m_bAdded
+## <a name="cbasekeyframem_badded"></a><a name="m_badded"></a> CBaseKeyFrame:: m_bAdded
 
-Bu anahtar çerçevenin bir film şeridine eklenip eklenmediğini belirtir.
+Bu ana karenin bir görsel taslağa eklenip eklenmeyeceğini belirtir.
 
 ```
 BOOL m_bAdded;
 ```
 
-## <a name="cbasekeyframem_biskeyframeatoffset"></a><a name="m_biskeyframeatoffset"></a>CBaseKeyFrame::m_bIsKeyframeAtOffset
+## <a name="cbasekeyframem_biskeyframeatoffset"></a><a name="m_biskeyframeatoffset"></a> CBaseKeyFrame:: m_bIsKeyframeAtOffset
 
-Bu anahtar çerçevenin, varolan başka bir anahtar çerçeveden bir ofsette mi yoksa bazı geçişin sonunda mı bir ofset olarak film şeridine eklenmesi gerektiğini belirtir.
+Bu ana karenin, varolan başka bir ana kareden veya bazı geçişin sonundaki bir uzaklığa görsel taslağa eklenip eklenmeyeceğini belirtir.
 
 ```
 BOOL m_bIsKeyframeAtOffset;
 ```
 
-## <a name="cbasekeyframem_keyframe"></a><a name="m_keyframe"></a>CBaseKeyFrame::m_keyframe
+## <a name="cbasekeyframem_keyframe"></a><a name="m_keyframe"></a> CBaseKeyFrame:: m_keyframe
 
-Windows Animasyon API anahtar çerçeveyi temsil eder. Bir anahtar çerçevesi baş harfe başlatıldığında, önceden tanımlanmış değer UI_ANIMATION_KEYFRAME_STORYBOARD_START olarak ayarlanır.
+Bir Windows animasyon API 'SI ana karesini temsil eder. Bir ana kare başlatılmazsa UI_ANIMATION_KEYFRAME_STORYBOARD_START önceden tanımlanmış değere ayarlanır.
 
 ```
 UI_ANIMATION_KEYFRAME m_keyframe;

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: asctime, _wasctime'
 title: asctime, _wasctime
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - time structure conversion
 - time, converting
 ms.assetid: 974f1727-10ff-4ed4-8cac-2eb2d681f576
-ms.openlocfilehash: 00c6be8ee409d76b80d323102950f8c1d6420ba3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3ae075481b364af01bfa75f1cc29423de9fcdbf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909428"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260806"
 ---
 # <a name="asctime-_wasctime"></a>asctime, _wasctime
 
@@ -71,7 +72,7 @@ Saat/tarih yapısı.
 
 Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [asctime_s, _wasctime_s](asctime-s-wasctime-s.md).
 
-**Asctime** işlevi bir yapı olarak depolanan bir saati bir karakter dizesine dönüştürür. *Timeptr* değeri genellıkle, zaman içinde tanımlanan bir **TM** yapısına işaretçi döndüren **gmtime** veya **localtime**çağrısından elde edilir. Olsun.
+**Asctime** işlevi bir yapı olarak depolanan bir saati bir karakter dizesine dönüştürür. *Timeptr* değeri genellıkle, Time. H içinde tanımlanan bir **TM** yapısına işaretçi döndüren **gmtime** veya **localtime** çağrısından elde edilir.
 
 |timeptr üyesi|Değer|
 |--------------------|-----------|
@@ -87,15 +88,15 @@ Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [asctime_s, _wasctime_s
 
 Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Yerel saati yapılandırma hakkında daha fazla bilgi için saat, [_ftime](ftime-ftime32-ftime64.md)ve [localtime](localtime-localtime32-localtime64.md) işlevlerine ve [_tzset](tzset.md) [işlevine, saat](time-time32-time64.md)dilimi ortamı ve genel değişkenleri tanımlama hakkında bilgi için bkz..
 
-**Asctime** tarafından üretilen dize sonucu tam 26 karakter içerir ve forma `Wed Jan 02 02:03:55 1980\n\0`sahiptir. 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. **asctime** , dönüş dizesini tutmak için tek ve statik olarak ayrılmış bir arabellek kullanır. Bu işleve yapılan her çağrı, önceki çağrının sonucunu yok eder.
+**Asctime** tarafından üretilen dize sonucu tam 26 karakter içerir ve forma sahiptir `Wed Jan 02 02:03:55 1980\n\0` . 24 saatlik bir saat kullanılır. Tüm alanların sabit bir genişliği vardır. Yeni satır karakteri ve null karakter, dizenin son iki konumunu kaplar. **asctime** , dönüş dizesini tutmak için tek ve statik olarak ayrılmış bir arabellek kullanır. Bu işleve yapılan her çağrı, önceki çağrının sonucunu yok eder.
 
 **_wasctime** , **astime**'ın geniş karakterli bir sürümüdür. **_wasctime** ve **yoksaati** aynı şekilde davranır.
 
-Bu işlevler, parametrelerini doğrular. *Timeptr* null bir işaretçisiyse veya Aralık dışı değerler Içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
+Bu işlevler, parametrelerini doğrular. *Timeptr* null bir işaretçisiyse veya Aralık dışı değerler Içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev **null** değerini döndürür ve **errno** 'ı **EINVAL** olarak ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
-### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme
+### <a name="generic-text-routine-mapping"></a>Generic-Text rutin eşleme
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -105,8 +106,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**asctime**|\<Time. h>|
-|**_wasctime**|\<Time. h> veya \<wchar. h>|
+|**asctime**|\<time.h>|
+|**_wasctime**|\<time.h> veya \<wchar.h>|
 
 ## <a name="example"></a>Örnek
 

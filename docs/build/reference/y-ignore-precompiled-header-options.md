@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:/Y-(önceden derlenmiş üst bilgi seçeneklerini yoksay)
 title: /Y (Önceden Derlenmiş Başlık Seçeneklerini Yoksay)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - -Y- compiler option [C++]
 - /Y- compiler option [C++]
 ms.assetid: cfaecb36-58db-46b8-b04d-cca6072b1b7a
-ms.openlocfilehash: c56c25d587d84e599718d2e1a74d469def3501f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b3d1eb6d404e0463ee547c1905f792b485bf65f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316190"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260845"
 ---
 # <a name="y--ignore-precompiled-header-options"></a>/Y (Önceden Derlenmiş Başlık Seçeneklerini Yoksay)
 
-Tüm diğer nedenler `/Y` derleyici seçeneklerini yok sayılacak (ve kendisini geçersiz kılınamaz).
+Diğer tüm `/Y` derleyici seçeneklerinin yoksayılmasına neden olur (ve kendisi geçersiz kılınamaz).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /Y-
@@ -27,21 +28,21 @@ Tüm diğer nedenler `/Y` derleyici seçeneklerini yok sayılacak (ve kendisini 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz:
+Önceden derlenmiş üstbilgiler hakkında daha fazla bilgi için bkz.
 
-- [/Y (Önceden Derlenmiş Üst Bilgiler)](y-precompiled-headers.md)
+- [/Y (önceden derlenmiş üst bilgiler)](y-precompiled-headers.md)
 
-- [Önceden Derlenmiş Üst Bilgi Dosyaları](../creating-precompiled-header-files.md)
+- [Ön derlenmiş üstbilgi dosyaları](../creating-precompiled-header-files.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -49,5 +50,5 @@ Tüm diğer nedenler `/Y` derleyici seçeneklerini yok sayılacak (ve kendisini 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

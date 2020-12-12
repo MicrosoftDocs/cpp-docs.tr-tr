@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Array sınıfı (C++ Standart Kitaplığı)'
 title: Array sınıfı (C++ Standart Kitaplığı) | Microsoft Docs
 ms.date: 11/13/2019
 f1_keywords:
@@ -96,18 +97,18 @@ helpviewer_keywords:
 - std::array [C++], size
 - std::array [C++], swap
 ms.assetid: fdfd43a5-b2b5-4b9e-991f-93bf10fb4293
-ms.openlocfilehash: f826bb679d3391855d0a0dbc7c4355a735b9c529
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 058d1a6f3ad49392271f553fe381cc31624be360
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261131"
 ---
 # <a name="array-class-c-standard-library"></a>Array sınıfı (C++ Standart Kitaplığı)
 
 Türündeki öğelerin uzunluğunu denetleyen nesneyi tanımlar `N` `Ty` . Dizi, nesnesinde bulunan bir dizisi olarak depolanır `Ty` `array<Ty, N>` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Ty, std::size_t N>
@@ -200,7 +201,7 @@ Eklenecek nesne veya Aralık.
 
 Varsayılan Oluşturucu `array()` denetimli sırayı başlatılmamış olarak bırakır (veya varsayılan olarak başlatılır). Başlatılmamış bir denetim sırası belirtmek için bunu kullanırsınız.
 
-Kopya Oluşturucu, `array(const array& right)` denetimli sırayı sırasıyla [*Right* `.begin()` , *Right* `.end()` ) başlatır. Dizi nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+Kopya Oluşturucu, `array(const array& right)` denetimli sırayı sırasıyla [*Right* `.begin()` , *Right* `.end()` ) başlatır. Dizi nesnesi *sağa* tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1089,7 +1090,7 @@ Erişim için öğenin konumu.
 
 Üye işlevleri, konumundaki denetimli sıranın öğesine bir başvuru *döndürür.* Bu konum geçersizse, davranış tanımsızdır.
 
-Ayrıca, bir **dizinin**öğesine başvuru almak için üye olmayan bir [Get](array-functions.md#get) işlevi de mevcuttur.
+Ayrıca, bir **dizinin** öğesine başvuru almak için üye olmayan bir [Get](array-functions.md#get) işlevi de mevcuttur.
 
 ### <a name="example"></a>Örnek
 
@@ -1502,7 +1503,7 @@ void swap(array& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. Bir dizi öğe ataması gerçekleştirir ve Oluşturucu çağrıları ile orantılıdır `N` .
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir . Bir dizi öğe ataması gerçekleştirir ve Oluşturucu çağrıları ile orantılıdır `N` .
 
 Ayrıca, iki **dizi** örneğini değiştirmek için üye olmayan bir [değiştirme](array-functions.md#swap) işlevi de mevcuttur.
 
