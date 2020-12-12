@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: tamsayı limitleri'
 title: Tamsayı Sınırları
 ms.date: 01/29/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - limits.h header file
 - integer limits
 ms.assetid: 6922bdbf-0f49-443b-bc03-ee182e4cbd57
-ms.openlocfilehash: a113dd687e6f135af950f461e024b9fd9feaf1b5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 78081f8af1c3d1e1f9f71e5d61dea4ee2bd7085c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213391"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345530"
 ---
 # <a name="integer-limits"></a>Tamsayı Sınırları
 
@@ -40,9 +41,9 @@ Tamsayı türleri için sınırlar aşağıdaki tabloda listelenmiştir. Bu sın
 | `LONG_MIN` | Türünde bir değişken için minimum değer **`long`** . | -2147483648 |
 | `LONG_MAX` | Türünde bir değişken için maksimum değer **`long`** . | 2147483647 |
 | `ULONG_MAX` | Türünde bir değişken için maksimum değer **`unsigned long`** . | 4294967295 (0xffffffff) |
-| `LLONG_MIN` | Türünde bir değişken için minimum değer**`long long`** | -9223372036854775808 |
-| `LLONG_MAX` | Türünde bir değişken için en büyük değer**`long long`** | 9223372036854775807 |
-| `ULLONG_MAX` | Türünde bir değişken için en büyük değer**`unsigned long long`** | 18446744073709551615 (0xffffffffffffffff) |
+| `LLONG_MIN` | Türünde bir değişken için minimum değer **`long long`** | -9223372036854775808 |
+| `LLONG_MAX` | Türünde bir değişken için en büyük değer **`long long`** | 9223372036854775807 |
+| `ULLONG_MAX` | Türünde bir değişken için en büyük değer **`unsigned long long`** | 18446744073709551615 (0xffffffffffffffff) |
 
 Bir değer en büyük tamsayı gösterimini aşarsa, Microsoft derleyicisi bir hata oluşturur.
 

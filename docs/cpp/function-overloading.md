@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işlev aşırı yüklemesi'
 title: İşlev Aşırı Yüklemesi
 ms.date: 03/27/2019
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - function overloading
 - declaring functions [C++], overloading
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
-ms.openlocfilehash: 0eaaf5c8fd18d4d00652107a5a2071b2f5774d7c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 59fb43c849518251170b6f84a74cd8cbc2e2ed22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345556"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 
 C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bu işlevlere *aşırı yüklenmiş* işlevler denir. Aşırı yüklenmiş işlevler, bağımsız değişkenlerin türlerine ve sayısına bağlı olarak bir işlev için farklı semantikler vermenizi sağlar.
 
-Örneğin, `print` bir bağımsız değişken alan bir işlev, `std::string` türünde bir bağımsız değişken alan bir çok farklı görevi gerçekleştirebilir **`double`** . Aşırı yükleme, veya gibi adları kullanmak zorunda kalmanızı `print_string` sağlar `print_double` . Derleme zamanında derleyici, çağıran tarafından geçirilen bağımsız değişkenlerin türüne göre hangi aşırı yüklemeyi kullanacağınızı seçer.  `print(42.0)`Öğesini çağırırsanız, `void print(double d)` işlev çağrılır. `print("hello world")`Öğesini çağırdığınızda `void print(std::string)` aşırı yükleme çağrılacaktır.
+Örneğin, `print` bir bağımsız değişken alan bir işlev, `std::string`  türünde bir bağımsız değişken alan bir çok farklı görevi gerçekleştirebilir **`double`** . Aşırı yükleme, veya gibi adları kullanmak zorunda kalmanızı `print_string` sağlar `print_double` . Derleme zamanında derleyici, çağıran tarafından geçirilen bağımsız değişkenlerin türüne göre hangi aşırı yüklemeyi kullanacağınızı seçer.  `print(42.0)`Öğesini çağırırsanız, `void print(double d)` işlev çağrılır. `print("hello world")`Öğesini çağırdığınızda `void print(std::string)` aşırı yükleme çağrılacaktır.
 
 Hem üye işlevlerini hem de üye olmayan işlevleri aşırı yükleyebilirsiniz. Aşağıdaki tabloda, C++'nın aynı kapsamda aynı ana sahip işlev gruplarını birbirinden ayırmak için işlev bildiriminin hangi bölümlerini kullandığını gösterir.
 
@@ -26,13 +27,13 @@ Hem üye işlevlerini hem de üye olmayan işlevleri aşırı yükleyebilirsiniz
 |İşlev Bildirimi Öğesi|Aşırı yükleme için kullanılır mı?|
 |----------------------------------|---------------------------|
 |İşlevin dönüş türü|Hayır|
-|Bağımsız değişkenlerin sayısı|Yes|
-|Bağımsız değişkenlerin türü|Yes|
-|Üç nokta için varlık veya yokluğu|Yes|
+|Bağımsız değişkenlerin sayısı|Evet|
+|Bağımsız değişkenlerin türü|Evet|
+|Üç nokta için varlık veya yokluğu|Evet|
 |Adların kullanımı **`typedef`**|Hayır|
 |Belirtilmemiş dizi sınırları|Hayır|
-|**`const`** veya**`volatile`**|Evet, tüm işleve uygulandığında|
-|[Ref niteleyicileri](#ref-qualifiers)|Yes|
+|**`const`** veya **`volatile`**|Evet, tüm işleve uygulandığında|
+|[Ref niteleyicileri](#ref-qualifiers)|Evet|
 
 ## <a name="example"></a>Örnek
 
@@ -155,7 +156,7 @@ F1 = Add( F2, 23 );
 
 Yukarıdaki ifade iki küme oluşturur:
 
-|1: kesir türünde Ilk bağımsız değişkene sahip aday Işlevleri|2. ayarla: Ikinci bağımsız değişkeni türüne dönüştürülebileceği aday Işlevleri**`int`**|
+|1: kesir türünde Ilk bağımsız değişkene sahip aday Işlevleri|2. ayarla: Ikinci bağımsız değişkeni türüne dönüştürülebileceği aday Işlevleri **`int`**|
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 |Varyant 1|Varyant 1 ( **`int`** **`long`** Standart dönüştürme kullanılarak dönüştürülebilir)|
 |Varyant 3||
@@ -170,7 +171,7 @@ F1 = Add( 3, 6 );
 
 Önceki işlev çağrısı aşağıdaki kümeleri oluşturur:
 
-|Set 1: Ilk bağımsız değişken türünde olan aday Işlevleri**`int`**|2: tür Ikinci bağımsız değişkenine sahip aday Işlevleri ayarla**`int`**|
+|Set 1: Ilk bağımsız değişken türünde olan aday Işlevleri **`int`**|2: tür Ikinci bağımsız değişkenine sahip aday Işlevleri ayarla **`int`**|
 |---------------------------------------------------------------------|----------------------------------------------------------------------|
 |Varyant 2 ( **`int`** **`long`** Standart dönüştürme kullanılarak dönüştürülebilir)|Varyant 1 ( **`int`** **`long`** Standart dönüştürme kullanılarak dönüştürülebilir)|
 
@@ -337,9 +338,9 @@ UDC udc;
 LogToFile( udc );
 ```
 
-Yukarıdaki örnekte Kullanıcı tanımlı dönüştürme, **Long işleci**türüne dönüştürülecek şekilde çağrılır `udc` **`long`** . Türe Kullanıcı tanımlı dönüştürme **`long`** tanımlanmazsa, dönüştürmenin şu şekilde devam etmiş olması gerekir: tür, `UDC` **`int`** Kullanıcı tanımlı dönüştürme kullanılarak türe dönüştürüldü. Sonra tür türüne Standart dönüştürme, **`int`** **`long`** bildirimdeki bağımsız değişkenle eşleşecek şekilde uygulandı.
+Yukarıdaki örnekte Kullanıcı tanımlı dönüştürme, **Long işleci** türüne dönüştürülecek şekilde çağrılır `udc` **`long`** . Türe Kullanıcı tanımlı dönüştürme **`long`** tanımlanmazsa, dönüştürmenin şu şekilde devam etmiş olması gerekir: tür, `UDC` **`int`** Kullanıcı tanımlı dönüştürme kullanılarak türe dönüştürüldü. Sonra tür türüne Standart dönüştürme, **`int`** **`long`** bildirimdeki bağımsız değişkenle eşleşecek şekilde uygulandı.
 
-Bir bağımsız değişkenle eşleşmesi gereken kullanıcı tanımlı dönüştürmeler gerekliyse, en iyi eşleşme değerlendirilirken standart dönüşümler kullanılmaz. Birden fazla aday işlevi Kullanıcı tanımlı dönüştürme gerektirse de işlevler eşit kabul edilir. Örnek:
+Bir bağımsız değişkenle eşleşmesi gereken kullanıcı tanımlı dönüştürmeler gerekliyse, en iyi eşleşme değerlendirilirken standart dönüşümler kullanılmaz. Birden fazla aday işlevi Kullanıcı tanımlı dönüştürme gerektirse de işlevler eşit kabul edilir. Örneğin:
 
 ```cpp
 // argument_matching2.cpp
@@ -398,7 +399,7 @@ obj.name
 
 `->*`Ve `.*` (üye işaretçisi) işleçlerinin sol işleneni, `.` ve `->` (üye seçim) işleçleriyle bağımsız değişken eşleştirmesine göre aynı şekilde değerlendirilir.
 
-## <a name="ref-qualifiers-on-member-functions"></a><a name="ref-qualifiers"></a>Üye işlevlerde ref niteleyicileri
+## <a name="ref-qualifiers-on-member-functions"></a><a name="ref-qualifiers"></a> Üye işlevlerde ref niteleyicileri
 
 Başvuru niteleyicileri, nesnesine göre işaret edilen nesnenin **`this`** bir rvalue veya lvalue olmasına göre bir üye işlevinin aşırı yüklenmesine olanak sağlar.  Bu özellik, verilere işaretçi erişimi sağlamamasını seçtiğiniz senaryolarda gereksiz kopyalama işlemlerini önlemek için kullanılabilir. Örneğin, sınıfın `C` oluşturucusunda bazı verileri Başlatan olduğunu varsayın ve bu verilerin bir kopyasını üye işlevinde döndürür `get_data()` . Türünde bir nesne `C` yok edilmek üzere olan bir rvalue ise, derleyici, `get_data() &&` verileri kopyalamak yerine taşınan aşırı yüklemeyi seçer.
 
@@ -462,7 +463,7 @@ Yalnızca, belirtilen bellek modeli değiştiricisinin temelinde, yalnızca dön
     void Print( PSTR szToPrint );
     ```
 
-   Önceki iki işlevin aynı bağımsız değişken listeleri vardır. `PSTR`, türü için bir eş anlamlı `char *` . Üye kapsamında, bu kod bir hata oluşturur.
+   Önceki iki işlevin aynı bağımsız değişken listeleri vardır. `PSTR` , türü için bir eş anlamlı `char *` . Üye kapsamında, bu kod bir hata oluşturur.
 
 - Numaralandırılmış türler farklı türlerdir ve aşırı yüklenmiş işlevleri ayırt etmek için kullanılabilir.
 
@@ -489,7 +490,7 @@ Sınıf kapsamı kesinlikle gözlemlenmiştir; Bu nedenle, bir temel sınıfta b
 
 Temel sınıf işlevi ' Virtual ' olarak bildirilirse, türetilmiş sınıf işlevi onu *gizleyecek* şekilde ifade edilir. Hem geçersiz kılma hem de gizleme aşırı yükleme dışında farklıdır.
 
-Blok kapsamı kesinlikle gözlemlenmiştir; Bu nedenle, dosya kapsamında belirtilen bir işlev yerel olarak tanımlanan bir işlevle aynı kapsamda değildir. Yerel olarak tanımlanan bir işlev, dosya kapsamında belirtilen bir işlevle aynı ada sahipse, yerel olarak belirtilen işlev aşırı yüklemeye neden olmak yerine dosya kapsamlı işlevi gizler. Örnek:
+Blok kapsamı kesinlikle gözlemlenmiştir; Bu nedenle, dosya kapsamında belirtilen bir işlev yerel olarak tanımlanan bir işlevle aynı kapsamda değildir. Yerel olarak tanımlanan bir işlev, dosya kapsamında belirtilen bir işlevle aynı ada sahipse, yerel olarak belirtilen işlev aşırı yüklemeye neden olmak yerine dosya kapsamlı işlevi gizler. Örneğin:
 
 ```cpp
 // declaration_matching1.cpp

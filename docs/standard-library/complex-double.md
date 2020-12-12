@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: karmaşık &lt; Çift&gt;'
 title: karmaşık &lt; Çift&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - complex<double> function
 ms.assetid: 0d0b9d2a-9b9b-410b-82a0-86b6df127e47
-ms.openlocfilehash: b9bf4780dd78800653804762301b36ff6bb30a92
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9238e71fcdd70576276eb1ba429a48eeec954601
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325042"
 ---
 # <a name="complexltdoublegt"></a>karmaşık &lt; Çift&gt;
 
 **`double`** İlki, karmaşık bir sayının gerçek bölümünü ve sanal parçayı temsil eden ikincisini temsil eden, her ikisi de türünde sıralı bir nesne çifti depolayan bir nesne tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <>
@@ -112,7 +113,7 @@ arg ( c3 ) = 0.896055 radians, which is 51.3402 degrees.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi**:\<complex>
+**Üst bilgi**: \<complex>
 
 **Ad alanı:** std
 

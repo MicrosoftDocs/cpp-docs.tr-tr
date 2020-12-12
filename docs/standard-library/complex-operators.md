@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; karmaşık &gt; işleçler'
 title: '&lt;karmaşık &gt; işleçler'
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: 325e194e9cc5b597ae010477ecbe313be11b179a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 88930dbf0b96d42c5c643305b56121cec8a1bacd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325016"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;karmaşık &gt; işleçler
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 İki karmaşık sayı arasında eşitsizlik için, biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilir.
 
@@ -163,7 +164,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="operator"></a><a name="op_star"></a>işlecinde\*
+## <a name="operator"></a><a name="op_star"></a> işlecinde\*
 
 , Biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayıyı çarpar.
 
@@ -260,7 +261,7 @@ int main( )
 }
 ```
 
-## <a name="operator"></a><a name="op_add"></a>işleç +
+## <a name="operator"></a><a name="op_add"></a> işleç +
 
 , Biri veya her ikisi de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayı ekler.
 
@@ -298,7 +299,7 @@ Değer ve türü parametre girişleri tarafından belirtilen iki sayının eklen
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir. Birli işleç *sola*döndürüyor.
+Bu işlem, verilerin belirli bir biçime dönüştürülmesi gerekmeden basit aritmetik işlemlerin yürütülebilmesi için aşırı yüklenmiştir. Birli işleç *sola* döndürüyor.
 
 ### <a name="example"></a>Örnek
 
@@ -400,7 +401,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-"></a><a name="operator-"></a>işlecinde
+## <a name="operator-"></a><a name="operator-"></a> işlecinde
 
 , Bir veya her ikisini de gerçek ve sanal parçalar için türün alt kümesine ait olabilen iki karmaşık sayıyı çıkartır.
 
@@ -434,7 +435,7 @@ complex<Type> operator-(const complex<Type>& left);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Sağdan* *soldan*çıkarma işleminden kaynaklanan karmaşık sayı, değerleri parametre girişleri tarafından belirtilen iki sayı.
+*Sağdan* *soldan* çıkarma işleminden kaynaklanan karmaşık sayı, değerleri parametre girişleri tarafından belirtilen iki sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -542,7 +543,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
 
-## <a name="operator"></a><a name="op_div"></a>işlecinde
+## <a name="operator"></a><a name="op_div"></a> işlecinde
 
 İki karmaşık sayıyı, birini veya her ikisini de gerçek ve sanal parçalar için türün alt kümesine ait olabilir.
 
@@ -662,7 +663,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> işlecinde&lt;&lt;
 
 Çıkış akışına belirtilen karmaşık bir sayı ekler.
 
@@ -683,7 +684,7 @@ Karmaşık sayının girildiği çıkış akışı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen karmaşık sayının değerini bir Kartezyen biçiminde ( *gerçek bölüm, sanal bölüm* ) yazar. *Ostr*
+Belirtilen karmaşık sayının değerini bir Kartezyen biçiminde ( *gerçek bölüm, sanal bölüm* ) yazar. 
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -724,7 +725,7 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 İki karmaşık sayı arasındaki eşitlik için bir veya her ikisinin de gerçek ve sanal parçalar için türün alt kümesine ait olabileceğini sınar.
 
@@ -863,7 +864,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>işlecinde&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> işlecinde&gt;&gt;
 
 Giriş akışından karmaşık bir değer ayıklar.
 
@@ -884,7 +885,7 @@ Giriş akışından ayıklanan karmaşık sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*ISTR* 'tan belirtilen karmaşık sayının değerini okur ve *sağa*döndürür.
+*ISTR* 'tan belirtilen karmaşık sayının değerini okur ve *sağa* döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 

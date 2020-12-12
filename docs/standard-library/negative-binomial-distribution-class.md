@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: negative_binomial_distribution sınıfı'
 title: negative_binomial_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
-ms.openlocfilehash: fd5153a8eb0652aed7d963fb1dbdb1277e4f6718
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 59b13cce627faed54427a08acf71de3546aca96e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836458"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338227"
 ---
 # <a name="negative_binomial_distribution-class"></a>negative_binomial_distribution Sınıfı
 
 Negatif bir binom dağılımı üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template<class IntType = int>
@@ -243,9 +244,9 @@ Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 **Önkoşul:** `0.0 < k` ' `0.0 < p ≤ 1.0`
 
-İlk Oluşturucu, saklı `p` değeri *p* değerini tutan ve saklanan `k` değeri *k*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı `p` değeri *p* değerini tutan ve saklanan `k` değeri *k* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="negative_binomial_distributionparam_type"></a><a name="param_type"></a> negative_binomial_distribution::p aram_type
 

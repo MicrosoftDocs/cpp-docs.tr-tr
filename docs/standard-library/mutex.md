@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; mutex&gt;'
 title: '&lt;mutex&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <mutex>
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-ms.openlocfilehash: d5ff6f2a81a5caa564792e2c0cb43b7722c3e1dd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b04b62629253e725e650009f373702f907b9116a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838561"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338253"
 ---
 # <a name="ltmutexgt"></a>&lt;mutex&gt;
 
@@ -27,7 +28,7 @@ ms.locfileid: "88838561"
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> **/Clr**kullanılarak derlenen kodda, bu üst bilgi engellenir.
+> **/Clr** kullanılarak derlenen kodda, bu üst bilgi engellenir.
 
 Sınıflar `mutex` ve `recursive_mutex` *mutex türlerdir*. Mutex türü, bir varsayılan oluşturucuya ve özel durum oluşturmayan bir yıkıcıya sahiptir. Bu nesneler, birden çok iş parçacığı aynı nesneyi kilitlemeyi denediğinde karşılıklı dışlama sağlayan yöntemlere sahiptir. Özellikle, bir mutex türü, ve yöntemlerini `lock` içerir `try_lock` `unlock` :
 
@@ -45,7 +46,7 @@ Sınıflar `mutex` ve `recursive_mutex` *mutex türlerdir*. Mutex türü, bir va
 
 - `try_lock_until`Yöntemi bir bağımsız değişken kullanılarak çağrılabilir olmalıdır, türü bir zaman `Abs_time` [hatası:: time_point](../standard-library/time-point-class.md)örneklemedir. Yöntemi, mutex 'in sahipliğini almaya çalışır, ancak `Abs_time` başarıyı ne olursa olsun tarafından belirtilen süreden daha sonra Hayır sonucunu döndürür. Dönüş değeri, **`true`** Yöntem sahipliği alırsa öğesine dönüştürür; Aksi takdirde, dönüş değeri değerine dönüştürülür **`false`** .
 
-Mutex türü, *kilitlenebilir tür*olarak da bilinir. Üye işlevi sağlamıyorsa `try_lock` , bu, *temel bir kilitlenebilir türüdür*. Zaman uyumlu bir mutex türü, *zaman aşımına uğramış bir tür*olarak da bilinir.
+Mutex türü, *kilitlenebilir tür* olarak da bilinir. Üye işlevi sağlamıyorsa `try_lock` , bu, *temel bir kilitlenebilir türüdür*. Zaman uyumlu bir mutex türü, *zaman aşımına uğramış bir tür* olarak da bilinir.
 
 ## <a name="members"></a>Üyeler
 

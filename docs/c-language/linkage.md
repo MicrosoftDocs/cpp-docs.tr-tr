@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlantı'
 title: Bağlantı
 ms.date: 11/04/2016
 helpviewer_keywords:
 - linkage [C++]
 - linkage [C++], identifier names and scope
 ms.assetid: 986ee549-2d6c-487a-9e3b-a1f643bc5bdc
-ms.openlocfilehash: 68ca606dedab2739892a64aa4b6f4cbb80a016ac
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 8b2f22b6f399dcdca642d6de8cf67d68036c5e17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243503"
 ---
 # <a name="linkage"></a>Bağlantı
 

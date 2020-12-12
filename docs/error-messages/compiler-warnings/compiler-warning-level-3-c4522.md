@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4522'
 title: Derleyici Uyarısı (düzey 3) C4522
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4522
 ms.assetid: 7065dc27-0b6c-4e68-a345-c51cdb99a20b
-ms.openlocfilehash: e791e490929daa4742a4db985f5a4f99f4db9d37
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 8663bf6ea70edd6612fd3d124989f6e657185947
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992049"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257972"
 ---
 # <a name="compiler-warning-level-3-c4522"></a>Derleyici Uyarısı (düzey 3) C4522
 

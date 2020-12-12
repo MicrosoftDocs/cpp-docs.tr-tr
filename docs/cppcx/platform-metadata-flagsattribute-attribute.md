@@ -1,5 +1,6 @@
 ---
-title: 'Platform::metadata:: FlagsAttribute özniteliği'
+description: ': Platform:: Metadata:: FlagsAttribute özniteliği hakkında daha fazla bilgi'
+title: 'Platform:: Metadata:: FlagsAttribute özniteliği'
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Metadata::FlagsAttribute Attribute
 ms.assetid: 56f4a191-cc81-4742-aff8-bd2219c0735c
-ms.openlocfilehash: 3a09aa89cbe73469e994271179192ef7713e3a0e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 943f70eead655b3e429c538ca41689cd24159a67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291967"
 ---
-# <a name="platformmetadataflagsattribute-attribute"></a>Platform::metadata:: FlagsAttribute özniteliği
+# <a name="platformmetadataflagsattribute-attribute"></a>Platform:: Metadata:: FlagsAttribute özniteliği
 
-Bir numaralandırma bir bit alanı olarak davranılıp gösterir. diğer bir deyişle, bir dizi bayrakları.
+Bir numaralandırmanın bir bit alanı olarak değerlendirileceğini belirtir; Yani, bir bayrak kümesi.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public ref class Flags abstract : Attribute
@@ -26,22 +27,22 @@ public ref class Flags abstract : Attribute
 
 ## <a name="inheritance"></a>Devralma
 
-[Platform::Object](../cppcx/platform-object-class.md)
+[Platform:: Object](../cppcx/platform-object-class.md)
 
-[Platform::metadata:: attribute](../cppcx/platform-metadata-attribute-attribute.md)
+[Platform:: Metadata:: öznitelik](../cppcx/platform-metadata-attribute-attribute.md)
 
 ### <a name="remarks"></a>Açıklamalar
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** Platform::metadata
+**Ad alanı:** Platform:: Metadata
 
-**Meta veri:** platform.winmd
+**Meta veri:** platform. winmd
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform::Metadata Ad Alanı](../cppcx/platform-metadata-namespace.md)
+[Platform:: Metadata ad alanı](../cppcx/platform-metadata-namespace.md)

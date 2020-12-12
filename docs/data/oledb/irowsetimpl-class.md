@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IRowsetImpl sınıfı'
 title: IRowsetImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -88,12 +89,12 @@ helpviewer_keywords:
 - m_iRowset
 - m_rgRowHandles
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-ms.openlocfilehash: 27a07d10256147d3c3ed383744ba1ee5fdfd06a1
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 45b34d0404383bc425b0b4938782b2a34e725808
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317421"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl Sınıfı
 
@@ -276,7 +277,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 
 Oluşturucu.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 IRowsetImpl();
@@ -379,7 +380,7 @@ Sağlayıcı, DBSTATUS_S_ISNULL ve DBSTATUS_S_DEFAULT için özel işlem sağlam
 
 Bir sağlayıcının geri getirmeyi destekleyip desteklemediğini gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned m_bCanFetchBack:1;
@@ -393,7 +394,7 @@ unsigned m_bCanFetchBack:1;
 
 Bir sağlayıcının imlece geriye doğru kayıp gidemeyeceğini gösterir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned  m_bCanScrollBack:1;
@@ -407,7 +408,7 @@ unsigned  m_bCanScrollBack:1;
 
 İmleç konumunun satır kümesinde tanımlanıp tanımlanmadığını belirlemede kullanılan bir bit bayrağı.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 unsigned m_bReset:1;
@@ -415,13 +416,13 @@ unsigned m_bReset:1;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüketici negatif [GetNextRows](#getnextrows) `lOffset` veya *Crow* ile GetNextRows öğesini çağırırsa ve `m_bReset` true ise, `GetNextRows` satır kümesinin sonuna gider. `m_bReset`Yanlış ise, tüketici OLE DB belirtimine uyum olarak bir hata kodu alır. `m_bReset`Bayrak, **`true`** satır kümesi ilk oluşturulduğunda ve tüketici [IRowsetImpl:: RestartPosition](#restartposition)öğesini çağırdığında olarak ayarlanır. ' İ çağırdığınızda olarak ayarlanır **`false`** `GetNextRows` .
+Tüketici negatif [](#getnextrows) `lOffset` veya *Crow* ile GetNextRows öğesini çağırırsa ve `m_bReset` true ise, `GetNextRows` satır kümesinin sonuna gider. `m_bReset`Yanlış ise, tüketici OLE DB belirtimine uyum olarak bir hata kodu alır. `m_bReset`Bayrak, **`true`** satır kümesi ilk oluşturulduğunda ve tüketici [IRowsetImpl:: RestartPosition](#restartposition)öğesini çağırdığında olarak ayarlanır. ' İ çağırdığınızda olarak ayarlanır **`false`** `GetNextRows` .
 
 ## <a name="irowsetimplm_irowset"></a><a name="irowset"></a> IRowsetImpl:: m_iRowset
 
 İmleci temsil eden satır kümesi dizini.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 DBROWOFFSET m_iRowset;
@@ -431,7 +432,7 @@ DBROWOFFSET m_iRowset;
 
 Şu anda sağlayıcı tarafından yanıt olarak bulunan satır tanıtıcılarının Haritası `GetNextRows` .
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 MapClass m_rgRowHandles;
@@ -439,7 +440,7 @@ MapClass m_rgRowHandles;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Satır tutamaçları çağırarak kaldırılır `ReleaseRows` . *MapClass*tanımı Için [IRowsetImpl 'ya genel bakış ' a](../../data/oledb/irowsetimpl-class.md) bakın.
+Satır tutamaçları çağırarak kaldırılır `ReleaseRows` . *MapClass* tanımı Için [IRowsetImpl 'ya genel bakış ' a](../../data/oledb/irowsetimpl-class.md) bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

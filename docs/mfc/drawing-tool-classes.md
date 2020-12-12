@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Çizim araç sınıfları'
 title: Çizim Aracı Sınıfları
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - screen output classes [MFC]
 - output classes [MFC]
 ms.assetid: e907bd89-38b5-47c9-b76a-95e0bf3bb41d
-ms.openlocfilehash: 161144161566293079d4c51324c5c481578ebd5b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 49ccf077cb53c8d955716f2d07946a7f20985817
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206168"
 ---
 # <a name="drawing-tool-classes"></a>Çizim Aracı Sınıfları
 

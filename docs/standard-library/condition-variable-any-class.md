@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: condition_variable_any sınıfı'
 title: condition_variable_any Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::condition_variable_any::wait
 - std::condition_variable_any::wait_for
 - std::condition_variable_any::wait_until
-ms.openlocfilehash: 9dc73de515aa8e321dbb28ca4a859b256613fbfe
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 853944a8eab0698fae6a12cace4ce9426ada8f3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325003"
 ---
 # <a name="condition_variable_any-class"></a>condition_variable_any Sınıfı
 
@@ -139,7 +140,7 @@ Veya döndüren herhangi bir **`true`** ifade **`false`** .
 
 İlk yöntem, `cv_status::timeout` *Rel_time* geçtiğinde bekleme sonlandırılırsa döndürür. Aksi takdirde, yöntemi döndürür `cv_status::no_timeout` .
 
-İkinci yöntem *Pred*değerini döndürür.
+İkinci yöntem *Pred* değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -194,11 +195,11 @@ Veya döndüren herhangi bir **`true`** ifade **`false`** .
 
 Bir tür döndüren yöntemler `cv_status` `cv_status::timeout` , *Abs_time* geçtiğinde bekleme sona erdiğinde döndürülür. Aksi halde Yöntemler döndürülür `cv_status::no_timeout` .
 
-Döndüren yöntemler **`bool`** *Pred*değerini döndürür.
+Döndüren yöntemler **`bool`** *Pred* değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk yöntem, `condition_variable` nesneye [notify_one](../standard-library/condition-variable-class.md#notify_one) veya [notify_all](../standard-library/condition-variable-class.md#notify_all)veya *Abs_time*kadar bir çağrı tarafından bildirilene kadar engeller. Ayrıca, uyanabilir 'i de uyandırabilirler.
+İlk yöntem, `condition_variable` nesneye [notify_one](../standard-library/condition-variable-class.md#notify_one) veya [notify_all](../standard-library/condition-variable-class.md#notify_all)veya *Abs_time* kadar bir çağrı tarafından bildirilene kadar engeller. Ayrıca, uyanabilir 'i de uyandırabilirler.
 
 Etkin ikinci yöntem aşağıdaki kodu yürütür.
 

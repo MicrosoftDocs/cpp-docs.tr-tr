@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1306'
 title: Bağlayıcı Araçları Hatası LNK1306
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,38 +7,38 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1306
 ms.assetid: fad1df6a-0bd9-412f-b0d1-7c9bc749c584
-ms.openlocfilehash: ddaa8797e0cf8ff617408aedc770b21cc656cec4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: aa6386da7c836eea8365d8a4ffde0bbd80d0fa81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62160464"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193662"
 ---
 # <a name="linker-tools-error-lnk1306"></a>Bağlayıcı Araçları Hatası LNK1306
 
-> DLL giriş noktası işlevi yönetilemez; Yerel derleme
+> DLL giriş noktası işlevi yönetilemez; Yerel olarak derle
 
-`DllMain` MSIL olarak derlenemiyor; Yerelden derlenmelidir.
+`DllMain` MSIL 'e derlenemiyor; Yerel olarak derlenmesi gerekir.
 
-Bu sorunu çözmek için
+Bu sorunu çözmek için,
 
-- Olmadan giriş noktasını içeren dosyanın derleme **/CLR**.
+- Giriş noktasını içeren dosyayı **/clr** olmadan derleyin.
 
-- Giriş noktası koymak bir `#pragma unmanaged` bölümü.
+- Giriş noktasını bir `#pragma unmanaged` bölüme koyun.
 
-Daha fazla bilgi için bkz.:
+Daha fazla bilgi için bkz:
 
-- [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
+- [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
 
 - [managed, unmanaged](../../preprocessor/managed-unmanaged.md)
 
-- [Karışık Derlemeleri Başlatma](../../dotnet/initialization-of-mixed-assemblies.md)
+- [Karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md)
 
 - [DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md)
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, LNK1306 oluşturur.
+Aşağıdaki örnek LNK1306 oluşturur.
 
 ```cpp
 // LNK1306.cpp
@@ -49,7 +50,7 @@ int __stdcall NewDllMain( HINSTANCE h, ULONG ulReason, PVOID pvReserved ) {
 }
 ```
 
-Bu sorunu gidermek için/CLR seçeneği bu dosyayı derleyin veya bunları kullanmanızı kullanmayın bir `#pragma` yönergesi, bu örnekte gösterildiği gibi yönetilmeyen bir bölümde giriş noktası tanımı koymak için:
+Bu sorunu onarmak için, bu dosyayı derlemek için/clr seçeneğini kullanmayın veya `#pragma` giriş noktası tanımını Bu örnekte gösterildiği gibi yönetilmeyen bir bölüme koymak için bir yönerge kullanın:
 
 ```cpp
 // LNK1306fix.cpp

@@ -1,69 +1,70 @@
 ---
+description: 'Daha fazla bilgi edinin: kitaplık Işlevleri'
 title: Kitaplık İşlevleri
 ms.date: 11/04/2016
 ms.assetid: 90c096ab-31df-479e-91d8-289900dc0bff
-ms.openlocfilehash: 6cb9c0197ad625487a2c0e98d176c46c4bba4139
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fceed64171e687cff3c987bab9782823147d6fbc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62232793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243555"
 ---
 # <a name="library-functions"></a>Kitaplık İşlevleri
 
-- [NULL Makro](../c-language/null-macro.md)
+- [NULL makro](../c-language/null-macro.md)
 
-- [assert İşlevinin Yazdırdığı Tanılama](../c-language/diagnostic-printed-by-the-assert-function.md)
+- [Onaylama Işlevi tarafından yazdırılan tanı](../c-language/diagnostic-printed-by-the-assert-function.md)
 
-- [Karakter Test Etme](../c-language/character-testing.md)
+- [Karakter testi](../c-language/character-testing.md)
 
-- [Etki Alanı Hataları](../c-language/domain-errors.md)
+- [Etki alanı hataları](../c-language/domain-errors.md)
 
-- [Kayan Nokta Değerlerinin Yetersiz Kalması](../c-language/underflow-of-floating-point-values.md)
+- [Floating-Point değerlerinin yetersiz kalması](../c-language/underflow-of-floating-point-values.md)
 
 - [Fmod Işlevi](../c-language/fmod-function.md)
 
 - [Signal Işlevi](../c-language/signal-function-c.md)
 
-- [Varsayılan Sinyaller](../c-language/default-signals.md)
+- [Varsayılan sinyaller](../c-language/default-signals.md)
 
-- [Satırbaşı Karakterlerini Sonlandırma](../c-language/terminating-newline-characters.md)
+- [Yeni satır karakterlerini sonlandırma](../c-language/terminating-newline-characters.md)
 
-- [Boş Satırlar](../c-language/blank-lines.md)
+- [Boş satırlar](../c-language/blank-lines.md)
 
-- [Boş Karakterler](../c-language/null-characters.md)
+- [Null karakterler](../c-language/null-characters.md)
 
-- [Ekleme Modunda Dosya Konumu](../c-language/file-position-in-append-mode.md)
+- [Ekleme modunda dosya konumu](../c-language/file-position-in-append-mode.md)
 
-- [Metin Dosyalarının Kesilmesi](../c-language/truncation-of-text-files.md)
+- [Metin dosyalarının kesilmesi](../c-language/truncation-of-text-files.md)
 
-- [Dosyayı Ara Belleğe Alma](../c-language/file-buffering.md)
+- [Dosya arabelleğe alma](../c-language/file-buffering.md)
 
-- [Sıfır Uzunluklu Dosyalar](../c-language/zero-length-files.md)
+- [Sıfır uzunluklu dosyalar](../c-language/zero-length-files.md)
 
 - [Dosya Adları](../c-language/filenames.md)
 
-- [Dosya Erişim Sınırları](../c-language/file-access-limits.md)
+- [Dosya erişim sınırları](../c-language/file-access-limits.md)
 
-- [Açık Dosyaları Silme](../c-language/deleting-open-files.md)
+- [Açık dosyaları silme](../c-language/deleting-open-files.md)
 
-- [Varolan Adla Yeniden Adlandırma](../c-language/renaming-with-a-name-that-exists.md)
+- [Var olan bir adla yeniden adlandırma](../c-language/renaming-with-a-name-that-exists.md)
 
-- [Kayan Nokta Değerlerini Okuma](../c-language/reading-pointer-values.md)
+- [Işaretçi değerlerini okuma](../c-language/reading-pointer-values.md)
 
-- [Okuma Aralıkları](../c-language/reading-ranges.md)
+- [Aralıkları okuma](../c-language/reading-ranges.md)
 
-- [Dosya Konumu Hataları](../c-language/file-position-errors.md)
+- [Dosya konumu hataları](../c-language/file-position-errors.md)
 
-- [perror İşlevinin Ürettiği İletiler](../c-language/messages-generated-by-the-perror-function.md)
+- [Perror Işlevi tarafından oluşturulan iletiler](../c-language/messages-generated-by-the-perror-function.md)
 
-- [Sıfır Bellek Ayırma](../c-language/allocating-zero-memory.md)
+- [Sıfır bellek ayırma](../c-language/allocating-zero-memory.md)
 
 - [Abort Işlevi](../c-language/abort-function-c.md)
 
 - [Atexit Işlevi](../c-language/atexit-function-c.md)
 
-- [Ortam Adları](../c-language/environment-names.md)
+- [Ortam adları](../c-language/environment-names.md)
 
 - [Sistem Işlevi](../c-language/system-function.md)
 
@@ -75,4 +76,4 @@ ms.locfileid: "62232793"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)
+[Uygulama tanımlı davranış](../c-language/implementation-defined-behavior.md)

@@ -1,26 +1,27 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; Yeni &gt; İşleçler ve numaralandırmalar'
 title: '&lt;Yeni &gt; İşleçler ve numaralandırmalar'
 ms.date: 11/04/2016
 f1_keywords:
 - new/std::operator delete
 - new/std::operator new
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
-ms.openlocfilehash: 2af2b3bc24e045d66626607781bc97f83686d559
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e5b6a675b200c80dc56778a66d63d5940561eb1a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338171"
 ---
 # <a name="ltnewgt-operators-and-enums"></a>&lt;Yeni &gt; İşleçler ve numaralandırmalar
 
-## <a name="enum-align_val_t"></a><a name="op_align_val_t"></a>Enum align_val_t
+## <a name="enum-align_val_t"></a><a name="op_align_val_t"></a> Enum align_val_t
 
 ```cpp
 enum class align_val_t : size_t {};
 ```
 
-## <a name="operator-delete"></a><a name="op_delete"></a>delete işleci
+## <a name="operator-delete"></a><a name="op_delete"></a> delete işleci
 
 Nesneler için depolama alanını serbest bırakmak için bir Delete ifadesi tarafından çağrılan işlev.
 
@@ -47,9 +48,9 @@ Bir *PTR* null değeri için varsayılan davranış hiçbir şey yapmaz. Diğer 
 
 ### <a name="example"></a>Örnek
 
-**İşleç Delete**kullanan bir örnek için bkz. [New işleci](../standard-library/new-operators.md#op_new) .
+**İşleç Delete** kullanan bir örnek için bkz. [New işleci](../standard-library/new-operators.md#op_new) .
 
-## <a name="operator-delete"></a><a name="op_delete_arr"></a>delete [] işleci
+## <a name="operator-delete"></a><a name="op_delete_arr"></a> delete [] işleci
 
 Bir nesne dizisi için depolamayı serbest bırakmak için bir Delete ifadesi tarafından çağrılan işlev.
 
@@ -76,7 +77,7 @@ Değeri, silme işlemi tarafından geçersiz işlenecek olan işaretçi.
 
 Kullanım örnekleri için bkz. [New operator&#91;&#93;](../standard-library/new-operators.md#op_new_arr) `operator delete[]` .
 
-## <a name="operator-new"></a><a name="op_new"></a>New işleci
+## <a name="operator-new"></a><a name="op_new"></a> New işleci
 
 Tek tek nesneler için depolama alanı ayırmak üzere yeni bir ifade tarafından çağrılan işlev.
 
@@ -116,15 +117,15 @@ Yeni bir işleyicinin gerekli davranışı, aşağıdaki işlemlerden birini ger
 
 [Yeni bir işleyicinin](../standard-library/new-typedefs.md#new_handler) varsayılan davranışı türünde bir nesne oluşturmak şeklindedir `bad_alloc` . Null işaretçi varsayılan yeni işleyiciyi belirler.
 
-Art arda yapılan çağrılar (size_t) tarafından ayrılan depolama ve contiguity, `operator new` burada depolanan ilk değerler gibi belirtilmemiş.**size_t**
+Art arda yapılan çağrılar (size_t) tarafından ayrılan depolama ve contiguity, `operator new` burada depolanan ilk değerler gibi belirtilmemiş.
 
 İkinci işlev, `count` Bu boyuttaki herhangi bir nesneyi temsil edecek şekilde hizalı bir depolama uygun şekilde bayt ayırmak için yerleştirme yeni bir ifade tarafından çağırılır. Program, bu işlev imzasıyla C++ standart kitaplığı tarafından tanımlanan varsayılan sürümü değiştiren alternatif bir işlev tanımlayabilir, bu nedenle değiştirilebilir.
 
 Varsayılan davranış, `operator new` ( `count` ) işlevi başarılı olursa döndürülür. Aksi halde, null bir işaretçi döndürür.
 
-Üçüncü işlev, formun yerleştirme ifadesi tarafından çağrılır **`new`** `new ( args ) T` . Burada, *bağımsız değişkenler* tek bir nesne işaretçisinden oluşur. Bu, bilinen bir adreste bir nesne oluşturmak için yararlı olabilir. İşlev *PTR*döndürür.
+Üçüncü işlev, formun yerleştirme ifadesi tarafından çağrılır **`new`** `new ( args ) T` . Burada, *bağımsız değişkenler* tek bir nesne işaretçisinden oluşur. Bu, bilinen bir adreste bir nesne oluşturmak için yararlı olabilir. İşlev *PTR* döndürür.
 
-**New işlecine**göre ayrılan depolama alanını serbest bırakmak için [işleç silme](../standard-library/new-operators.md#op_delete)çağrısı yapın.
+**New işlecine** göre ayrılan depolama alanını serbest bırakmak için [işleç silme](../standard-library/new-operators.md#op_delete)çağrısı yapın.
 
 Yeni bir oluşturma veya atma davranışı hakkında bilgi için bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md).
 
@@ -171,7 +172,7 @@ int main( )
 }
 ```
 
-## <a name="operator-new"></a><a name="op_new_arr"></a>New işleci []
+## <a name="operator-new"></a><a name="op_new_arr"></a> New işleci []
 
 Bir nesne dizisi için depolama alanı ayırmak üzere yeni bir ifade tarafından çağrılan ayırma işlevi.
 

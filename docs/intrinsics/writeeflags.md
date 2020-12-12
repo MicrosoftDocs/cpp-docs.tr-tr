@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __writeeflags'
 title: __writeeflags
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - __writeeflags intrinsics
 ms.assetid: a62a522c-d7fa-4f10-a620-a3b32bdf3f17
-ms.openlocfilehash: 6b9b6976369ed810789e5749a2e30029cad4c2d7
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: 9c439194782f52b474ec6c6365705ebd8756c6b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74858054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331871"
 ---
 # <a name="__writeeflags"></a>__writeeflags
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen değeri program durumu ve denetim (EFLAGS) kaydına yazar.
 
@@ -28,8 +29,8 @@ void __writeeflags(unsigned __int64 Value); /* x64 */
 
 ### <a name="parameters"></a>Parametreler
 
-*Değer*\
-'ndaki EFLAGS kaydına yazılacak değer. `Value` parametresi 32 bit platformun 32 bit uzunluğunda ve 64-bit platform için 64 bit uzunluğundadır.
+*Deeri*\
+'ndaki EFLAGS kaydına yazılacak değer. `Value`Parametresi, 32 bit platformun 32 bit uzunluğunda ve 64 bit platform için 64 bit uzunluğunda olur.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -37,15 +38,15 @@ Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|
+|Alanlarla|Mimari|
 |---------------|------------------|
 |`__writeeflags`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici iç](../intrinsics/compiler-intrinsics.md) bilgileri\
+[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)\
 [__readeflags](../intrinsics/readeflags.md)

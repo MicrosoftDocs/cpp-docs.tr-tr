@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: ActiveX denetiminde veri bağlamayı kullanma'
 title: 'MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma'
 ms.date: 11/19/2018
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: b32dbd8e1777f11998085a90e8851b25e4298e1a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eb6a6ea52dee7aaf1fcb4c9f15db89cfa5f25deb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225000"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206090"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 
@@ -31,7 +32,7 @@ ActiveX denetimlerinin daha güçlü kullanımlarının biri, bir denetimin öze
 Bu makalede, görevinizdeki denetim tarafı ele alınmaktadır. Veri bağlama etkileşimlerinin veritabanı ile uygulanması, Denetim kapsayıcısının sorumluluğundadır. Kapsayıcıınızda veritabanı etkileşimlerini yönetme işlemi, bu belgenin kapsamı dışındadır. Veri bağlama denetimini nasıl hazırlayacağınız, bu makalenin geri kalanında açıklanmaktadır.
 
 ![Bir veri&#45;bağlantılı denetimin kavramsal diyagramı](../mfc/media/vc374v1.gif "Bir veri&#45;bağlantılı denetimin kavramsal diyagramı") <br/>
-Veriye dayalı bir denetimin kavramsal diyagramı
+Data-Bound denetiminin kavramsal diyagramı
 
 `COleControl`Sınıfı, veri bağlamayı uygulamak için kolay bir işlem yapan iki üye işlevi sağlar. İlk işlev olan [Boundpropertyrequestedıt](reference/colecontrol-class.md#boundpropertyrequestedit), özellik değerini değiştirmek için izin istemek üzere kullanılır. [BoundPropertyChanged](reference/colecontrol-class.md#boundpropertychanged), ikinci işlev, özellik değeri başarıyla değiştirildikten sonra çağrılır.
 
@@ -41,7 +42,7 @@ Bu makalede aşağıdaki konular ele alınmaktadır:
 
 - [Bağlanabilir get/set yöntemi oluşturma](#vchowcreatingbindablegetsetmethod)
 
-## <a name="creating-a-bindable-stock-property"></a><a name="vchowcreatingbindablestockproperty"></a>Bağlanabilir hisse senedi özelliği oluşturma
+## <a name="creating-a-bindable-stock-property"></a><a name="vchowcreatingbindablestockproperty"></a> Bağlanabilir hisse senedi özelliği oluşturma
 
 [Bağlanabilir bir get/set yöntemi](#vchowcreatingbindablegetsetmethod)istediğinizden daha büyük olsa da, veri bağlantılı bir stok özelliği oluşturmak mümkündür.
 
@@ -70,7 +71,7 @@ Bu noktada, denetiminiz veri kaynağındaki verileri görüntüleyebilir, ancak 
 
 Artık, denetimi kaydeden projeyi oluşturabilirsiniz. Denetimi bir iletişim kutusuna eklediğinizde, **veri alanı** ve **veri kaynağı** özellikleri eklenir ve artık denetimde görüntülenecek bir veri kaynağı ve alanı seçebilirsiniz.
 
-## <a name="creating-a-bindable-getset-method"></a><a name="vchowcreatingbindablegetsetmethod"></a>Bağlanabilir get/set yöntemi oluşturma
+## <a name="creating-a-bindable-getset-method"></a><a name="vchowcreatingbindablegetsetmethod"></a> Bağlanabilir get/set yöntemi oluşturma
 
 Veri bağlantılı get/set yöntemine ek olarak, [bağlanabilir bir stok özelliği](#vchowcreatingbindablestockproperty)de oluşturabilirsiniz.
 
@@ -95,11 +96,11 @@ Veri bağlantılı get/set yöntemine ek olarak, [bağlanabilir bir stok özelli
 
 1. **Özellik türü** açılan liste kutusundan bir veri türü seçin. **`short`** Bu örnek için kullanın.
 
-1. **Uygulama türü**Için, **get/set yöntemleri**' ne tıklayın.
+1. **Uygulama türü** Için, **get/set yöntemleri**' ne tıklayın.
 
-1. Öznitelikleri projenin içindeki Özellik tanımına eklemek için IDL öznitelikleri sekmesinden aşağıdaki onay kutularını seçin: **bağlanabilir**, **requestedıt**, **displaybind**ve **defaultbind** . IDL dosyası. Bu öznitelikler, denetimi kullanıcıya görünür hale getirir ve stok özelliğini varsayılan bağlanabilir özelliği yapar.
+1. Öznitelikleri projenin içindeki Özellik tanımına eklemek için IDL öznitelikleri sekmesinden aşağıdaki onay kutularını seçin: **bağlanabilir**, **requestedıt**, **displaybind** ve **defaultbind** . IDL dosyası. Bu öznitelikler, denetimi kullanıcıya görünür hale getirir ve stok özelliğini varsayılan bağlanabilir özelliği yapar.
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 1. `SetMyProp`İşlevin gövdesini aşağıdaki kodu içerecek şekilde değiştirin:
 

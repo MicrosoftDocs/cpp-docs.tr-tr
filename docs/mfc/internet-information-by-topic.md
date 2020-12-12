@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: konuya göre Internet bilgileri'
 title: Konuya Göre Internet Bilgileri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC, Internet applications
 ms.assetid: 93a8b6c9-d274-492a-90b3-cf43a77edb1d
-ms.openlocfilehash: a74c32fb0111ec9a3b0b067239ab491ff7c63248
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bcc8879645bbbf706ddea3e51649f7dd12f33b9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338340"
 ---
 # <a name="internet-information-by-topic"></a>Konuya Göre Internet Bilgileri
 

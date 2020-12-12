@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1309'
 title: Bağlayıcı Araçları Hatası LNK1309
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1309
 ms.assetid: 10146071-883f-4849-97d1-c7468f90efbb
-ms.openlocfilehash: 88b05512fd45adb6dc96a6c130ceccb74f3ab14e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e04498ae5226f748b6ba5cc2ce0cd9340f4547c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80194908"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193649"
 ---
 # <a name="linker-tools-error-lnk1309"></a>Bağlayıcı Araçları Hatası LNK1309
 
@@ -21,7 +22,7 @@ ms.locfileid: "80194908"
 
 **/Clrimagetype** Ile bir clr görüntü türü istendi, ancak bir veya daha fazla modül bu türle uyumsuz olduğu için bağlayıcı bu türde bir görüntü üretemedi.
 
-Örneğin, **/Clrimagetype: Safe** belirtirseniz ve **/clr: Pure**ile oluşturulmuş bir modül geçirirseniz LNK1309 görürsünüz.
+Örneğin, **/Clrimagetype: Safe** belirtirseniz ve **/clr: Pure** ile oluşturulmuş bir modül geçirirseniz LNK1309 görürsünüz.
 
 **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri ve destek kitaplıkları Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 

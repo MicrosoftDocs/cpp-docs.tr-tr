@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: yazı tiplerini kullanma'
 title: 'MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma'
 ms.date: 11/19/2018
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - SelectStockFont method [MFC]
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
-ms.openlocfilehash: 02c52d2544afdc9d13fc3ec67ad9eed757a3f277
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5f0c495ee92dbcfcb27627628f3bcf92982f719f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499697"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206012"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
 
@@ -58,7 +59,7 @@ Yazı tipi nesnesine [GetFont](reference/colecontrol-class.md#getfont), [SetFont
 
 1. **Özellik adı** kutusunda **yazı tipi**' ne tıklayın.
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 Özellik Ekleme Sihirbazı, denetim sınıfı uygulama dosyasında bulunan denetimin dağıtım eşlemesine aşağıdaki satırı ekler:
 
@@ -84,7 +85,7 @@ Hisse senedi başlığı özelliği, hisse senedi yazı tipi özellik bilgileri 
 
 1. **Özellik adı** kutusunda, **başlık**' a tıklayın.
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 Özellik Ekleme Sihirbazı, denetim sınıfı uygulama dosyasında bulunan denetimin dağıtım eşlemesine aşağıdaki satırı ekler:
 
@@ -124,13 +125,13 @@ Stok yazı tipi özelliğine ek olarak, ActiveX denetimi özel yazı tipi özell
 
    Bu, Özellik Ekleme Sihirbazı ' nı açar.
 
-1. **Özellik adı** kutusuna özellik için bir ad yazın. Bu örnek için **HeadingFont**kullanın.
+1. **Özellik adı** kutusuna özellik için bir ad yazın. Bu örnek için **HeadingFont** kullanın.
 
-1. **Uygulama türü**Için, **get/set yöntemleri**' ne tıklayın.
+1. **Uygulama türü** Için, **get/set yöntemleri**' ne tıklayın.
 
 1. **Özellik türü** kutusunda, özelliğin türü için **IDispatch** ' i seçin <strong>\*</strong> .
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 Özellik Ekleme Sihirbazı, `HeadingFont` özel özelliği sınıfına ve örneğe eklemek için kodu oluşturur `CSampleCtrl` . IDL dosyası. `HeadingFont`Bir get/set özellik türü olduğundan, Özellik Ekleme Sihirbazı `CSampleCtrl` sınıfın dağıtım eşlemesini bir DISP_PROPERTY_EX_ID[DISP_PROPERTY_EX](reference/dispatch-maps.md#disp_property_ex) makro girişi içerecek şekilde değiştirir:
 
@@ -225,7 +226,7 @@ Bu, adlı arabirimin bir uygulamasını oluşturur `IPropertyNotifySink` `Headin
 
 ### <a name="additions-to-the-implementation-file"></a>Uygulama dosyasına eklemeler
 
-Başlık yazı tipini Başlatan kodda (denetim oluşturucusunda) &*m_xFontNotification* &*m_xHeadingFontNotify*olarak değiştirin. Ardından aşağıdaki kodu ekleyin:
+Başlık yazı tipini Başlatan kodda (denetim oluşturucusunda) &*m_xFontNotification* &*m_xHeadingFontNotify* olarak değiştirin. Ardından aşağıdaki kodu ekleyin:
 
 [!code-cpp[NVC_MFC_AxFont#20](codesnippet/cpp/mfc-activex-controls-using-fonts_20.cpp)]
 

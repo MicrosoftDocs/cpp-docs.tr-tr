@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: const_mem_fun_ref_t sınıfı'
 title: const_mem_fun_ref_t Sınıfı
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun_ref_t class
 ms.assetid: 316ddbaa-9f46-4931-8eba-ea4ca66360ef
-ms.openlocfilehash: 09d8569253dbeb1a873f4fc7b64b55658511d18e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 484416676b7957e3be08ddf03544d2679f1fbf18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228368"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324964"
 ---
 # <a name="const_mem_fun_ref_t-class"></a>const_mem_fun_ref_t Sınıfı
 
 **`const`** Bir başvuru bağımsız değişkeniyle başlatıldığında bir birli işlev nesnesi olarak çağrılması için bağımsız değişken alan bir üye işlevine izin veren bir bağdaştırıcı sınıfı. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Result, class Type>
@@ -43,7 +44,7 @@ Uyarlanabilir bir birli işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, bir *Pm* `Type` özel üye nesnesinde, sınıfının üye işlevine bir Işaretçi olması gereken PM kopyasını depolar. Üye işlevini `operator()` döndürülen (**soldaki** \* ) olarak tanımlar. `Pm` () **`const`**.
+Sınıf şablonu, bir  `Type` özel üye nesnesinde, sınıfının üye işlevine bir Işaretçi olması gereken PM kopyasını depolar. Üye işlevini `operator()` döndürülen (**soldaki** \* ) olarak tanımlar. `Pm` () **`const`**.
 
 ## <a name="example"></a>Örnek
 

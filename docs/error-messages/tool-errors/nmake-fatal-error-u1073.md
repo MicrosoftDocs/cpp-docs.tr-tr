@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: NMAKE önemli hatası U1073'
 title: NMAKE Önemli Hatası U1073
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1073
 ms.assetid: d46bf2dd-400a-4802-9db2-f832e1c97f02
-ms.openlocfilehash: 97d44594540d18bf008757506a9e36e6d16d2cd7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bd622f37720cf5e992a1d82ea97ca1ff50344c0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80182701"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345452"
 ---
 # <a name="nmake-fatal-error-u1073"></a>NMAKE Önemli Hatası U1073
 

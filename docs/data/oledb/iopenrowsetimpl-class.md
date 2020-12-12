@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: IOpenRowsetImpl sınıfı'
 title: IOpenRowsetImpl Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - CreateRowset method
 - OpenRowset method
 ms.assetid: d259cedc-1db4-41cf-bc9f-5030907ab486
-ms.openlocfilehash: a3c94c75db21218aae1205bf9c5c379ab772a7f8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4ec7f8ebdab132854172f7e5f4dff7387e46717f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843722"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317434"
 ---
 # <a name="iopenrowsetimpl-class"></a>IOpenRowsetImpl Sınıfı
 
 Arabirim için uygulama sağlar `IOpenRowset` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class SessionClass>
@@ -57,7 +58,7 @@ Sınıfınız, öğesinden türetilir `IOpenRowsetImpl` .
 
 Satır kümesi nesnesi oluşturur. Doğrudan Kullanıcı tarafından çağrılmaz. *OLE DB Programcı başvurusunda* [IOpenRowset:: OPENROWSET](/previous-versions/windows/desktop/ms716724(v=vs.85)) öğesine bakın.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template template <class RowsetClass>
@@ -77,7 +78,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 Kullanıcının satır kümesi sınıfını temsil eden bir şablon sınıfı üyesi. Genellikle sihirbaz tarafından oluşturulur.
 
 *pRowsetObj*<br/>
-dışı Satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak bir COM nesnesine geçirmeden önce satır kümesinde daha fazla iş gerçekleştirmeniz gerekiyorsa kullanılabilir. *PRowsetObj* ömrü *ppRowset*ile ilişkilidir.
+dışı Satır kümesi nesnesi işaretçisi. Genellikle bu parametre kullanılmaz, ancak bir COM nesnesine geçirmeden önce satır kümesinde daha fazla iş gerçekleştirmeniz gerekiyorsa kullanılabilir. *PRowsetObj* ömrü *ppRowset* ile ilişkilidir.
 
 Diğer parametreler için *OLE DB Programcı başvurusunda* [IOpenRowset:: OPENROWSET](/previous-versions/windows/desktop/ms716724(v=vs.85)) bölümüne bakın.
 
@@ -85,7 +86,7 @@ Diğer parametreler için *OLE DB Programcı başvurusunda* [IOpenRowset:: OPENR
 
 ' İ açar ve tek bir temel tablodan veya dizindeki tüm satırları içeren bir satır kümesi döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 HRESULT OpenRowset(IUnknown* pUnkOuter,
@@ -103,7 +104,7 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem ATLDB içinde bulunamadı. Olsun. Bir sağlayıcı oluşturduğunuzda ATL nesne Sihirbazı tarafından oluşturulur.
+Bu yöntem ATLDB. H içinde bulunamadı. Bir sağlayıcı oluşturduğunuzda ATL nesne Sihirbazı tarafından oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

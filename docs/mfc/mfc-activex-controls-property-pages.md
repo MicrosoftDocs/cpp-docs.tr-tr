@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: Özellik sayfaları'
 title: 'MFC ActiveX Denetimleri: Özellik Sayfaları'
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CPropertyPageDialog class [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-ms.openlocfilehash: 3d22085daa503a7c778111718445920f98b98a89
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 40267857b12b2f23c07f03d0ee77b2ae8e6bf1a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206155"
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX Denetimleri: Özellik Sayfaları
 
@@ -35,7 +36,7 @@ ActiveX denetimi özellik sayfaları iki şekilde görüntülenir:
 ![Circ3 için Özellikler iletişim kutusu](../mfc/media/vc373i1.gif "Circ3 için Özellikler iletişim kutusu") <br/>
 Özellikler Iletişim kutusu
 
-Bu makalede, bir ActiveX denetiminde özellik sayfalarını kullanmayla ilgili konular ele alınmaktadır. Bu güncelleştirmeler şunlardır:
+Bu makalede, bir ActiveX denetiminde özellik sayfalarını kullanmayla ilgili konular ele alınmaktadır. Bunlar:
 
 - [Bir ActiveX denetimi için varsayılan özellik sayfasını uygulama](#_core_implementing_the_default_property_page)
 
@@ -45,13 +46,13 @@ Bu makalede, bir ActiveX denetiminde özellik sayfalarını kullanmayla ilgili k
 
 ActiveX denetiminde Özellik sayfaları kullanma hakkında daha fazla bilgi için aşağıdaki makalelere bakın:
 
-- [MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme](mfc-activex-controls-adding-another-custom-property-page.md)
+- [MFC ActiveX denetimleri: başka bir özel özellik sayfası ekleme](mfc-activex-controls-adding-another-custom-property-page.md)
 
-- [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX denetimleri: stok özellik sayfalarını kullanma](mfc-activex-controls-using-stock-property-pages.md)
 
 ActiveX denetimi dışında bir MFC uygulamasında özellik sayfalarını kullanma hakkında bilgi için, bkz. [Özellik sayfaları](property-sheets-mfc.md).
 
-## <a name="implementing-the-default-property-page"></a><a name="_core_implementing_the_default_property_page"></a>Varsayılan özellik sayfasını uygulama
+## <a name="implementing-the-default-property-page"></a><a name="_core_implementing_the_default_property_page"></a> Varsayılan özellik sayfasını uygulama
 
 Denetim projenizi oluşturmak için ActiveX Denetim Sihirbazı 'nı kullanırsanız, ActiveX Denetim Sihirbazı [COlePropertyPage sınıfından](reference/colepropertypage-class.md)türetilen denetim için varsayılan bir özellik sayfası sınıfı sağlar. Başlangıçta bu özellik sayfası boştur, ancak buna herhangi bir iletişim kutusu denetimi veya denetim kümesi ekleyebilirsiniz. ActiveX Denetim Sihirbazı varsayılan olarak yalnızca bir özellik sayfası sınıfı oluşturduğundan, Sınıf Görünümü kullanılarak ek özellik sayfası sınıflarının (Ayrıca öğesinden türetilmiş `COlePropertyPage` ) oluşturulması gerekir. Bu yordam hakkında daha fazla bilgi için bkz. [MFC ActiveX denetimleri: başka bir özel özellik sayfası ekleme](mfc-activex-controls-adding-another-custom-property-page.md).
 
@@ -67,7 +68,7 @@ Denetim projenizi oluşturmak için ActiveX Denetim Sihirbazı 'nı kullanırsan
 
 Örneğin, aşağıdaki yordamlar basit bir denetim ("Sample" adlı) kullanır. Örnek, ActiveX Denetim Sihirbazı kullanılarak oluşturulmuştur ve yalnızca hisse senedi başlık özelliğini içerir.
 
-## <a name="adding-controls-to-a-property-page"></a><a name="_core_adding_controls_to_a_property_page"></a>Özellik sayfasına denetim ekleme
+## <a name="adding-controls-to-a-property-page"></a><a name="_core_adding_controls_to_a_property_page"></a> Özellik sayfasına denetim ekleme
 
 #### <a name="to-add-controls-to-a-property-page"></a>Bir özellik sayfasına denetimler eklemek için
 
@@ -87,7 +88,7 @@ Denetim projenizi oluşturmak için ActiveX Denetim Sihirbazı 'nı kullanırsan
 
 Artık Kullanıcı arabirimi değiştiriltiğine göre, düzenleme kutusunu açıklamalı alt yazı özelliği ile bağlamanız gerekir. Bu, işlevi düzenleyerek aşağıdaki bölümde yapılır `CSamplePropPage::DoDataExchange` .
 
-## <a name="customizing-the-dodataexchange-function"></a><a name="_core_customizing_the_dodataexchange_function"></a>DoDataExchange Işlevini özelleştirme
+## <a name="customizing-the-dodataexchange-function"></a><a name="_core_customizing_the_dodataexchange_function"></a> DoDataExchange Işlevini özelleştirme
 
 Özellik sayfası [CWnd::D oDataExchange](reference/cwnd-class.md#dodataexchange) işlevi, özellik sayfası değerlerini denetimdeki özelliklerin gerçek değerleriyle bağlayabilmeniz için izin verir. Bağlantı kurmak için uygun özellik sayfası alanlarını ilgili denetim özellikleriyle eşlemeniz gerekir.
 

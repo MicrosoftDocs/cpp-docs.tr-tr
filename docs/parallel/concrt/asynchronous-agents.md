@@ -1,65 +1,66 @@
 ---
+description: 'Daha fazla bilgi edinin: zaman uyumsuz aracılar'
 title: Zaman Uyumsuz Aracılar
 ms.date: 11/19/2018
 helpviewer_keywords:
 - asynchronous agents
 - agents [Concurrency Runtime]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
-ms.openlocfilehash: ff6fa851519066c3c399a28557fd8f103d0e94be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 38d2325404d83443ed0bd054793ca200a562359f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62412814"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338289"
 ---
 # <a name="asynchronous-agents"></a>Zaman Uyumsuz Aracılar
 
-Bir *zaman uyumsuz aracılar* (veya yalnızca *aracı*) daha büyük bilgi işlem görevlerini çözümlemek için diğer aracıları ile zaman uyumsuz olarak çalışan bir uygulama bileşeni. Bir aracının ayarlanmış bir ömrü olan bir görev olarak düşünün. Örneğin, bir aracı kullanılabilir olduğunda (örneğin, klavye, disk üzerindeki bir dosya veya bir ağ bağlantısı) bir giriş/çıkış cihaz ve başka bir aracı verilerini bu veriler üzerinde eylem gerçekleştirebilir okuyabilir. İlk aracı ileti geçirme ikinci aracı daha fazla veri kullanılabilir olduğunu bildirmek için kullanır. Eşzamanlılık Çalışma zamanı Görev Zamanlayıcısı'nı engelleyin ve işbirliği içerisinde devamlılığı yield aracıları etkinleştirmek üzere etkili bir mekanizma sağlar. daha az verimli önalım gerektirmeden.
+*Zaman uyumsuz bir aracı* (veya yalnızca *Aracı*), daha büyük bilgi işlem görevlerini çözümlemek için diğer aracılarla zaman uyumsuz olarak çalışan bir uygulama bileşenidir. Bir aracıyı, belirlenen yaşam döngüsü olan bir görev olarak düşünün. Örneğin, bir aracı bir giriş/çıkış cihazından (klavye, diskteki bir dosya veya ağ bağlantısı gibi) verileri okuyabilir ve başka bir aracı, kullanılabilir olduğunda bu veriler üzerinde işlem gerçekleştirebilir. İlk aracı ikinci aracıya daha fazla veri kullanılabildiğini bildirmek için ileti geçirme kullanır. Eşzamanlılık Çalışma Zamanı Görev Zamanlayıcı, aracıların daha az verimli önalım gerekmeden, aracıları engellemesini ve kullanmasını sağlamak için verimli bir mekanizma sağlar.
 
-Agents kitaplığı tanımlar [concurrency::agent](../../parallel/concrt/reference/agent-class.md) zaman uyumsuz bir Aracıdan temsil eden sınıf. `agent` bildiren sanal yöntemi soyut bir sınıf olan [concurrency::agent::run](reference/agent-class.md#run). `run` Aracı tarafından gerçekleştirilen görevin yöntemini yürütür. Çünkü `run` olan soyut, bu yöntem, türetilen her bir sınıf içinde uygulamanız gerekir `agent`.
+Aracılar Kitaplığı, zaman uyumsuz bir aracıyı temsil etmek için [concurrency:: Agent](../../parallel/concrt/reference/agent-class.md) sınıfını tanımlar. `agent` , [concurrency:: Agent:: Run](reference/agent-class.md#run)sanal metodunu bildiren soyut bir sınıftır. `run`Yöntemi, aracı tarafından gerçekleştirilen görevi yürütür. `run`Soyut olduğundan, bu yöntemi içinden türettiğiniz her sınıfta uygulamanız gerekir `agent` .
 
 ## <a name="agent-life-cycle"></a>Aracı yaşam döngüsü
 
-Aracıları ayarlanmış bir yaşam döngüsü vardır. [Concurrency::agent_status](reference/concurrency-namespace-enums.md#agent_status) numaralandırması bir aracının çeşitli durumları tanımlar. Aşağıdaki resimde, nasıl aracıları bir durumdan diğerine ilerleme durumu gösteren bir durum diyagramı verilmiştir. Bu çizimde, düz çizgiler uygulamanızdan çağıran yöntemleri gösterir; noktalı çizgiler çalışma zamanını şuradan çağıran yöntemleri gösterir.
+Aracıların ayarlanmış bir yaşam döngüsü vardır. [Concurrency:: agent_status](reference/concurrency-namespace-enums.md#agent_status) numaralandırması bir aracının çeşitli durumlarını tanımlar. Aşağıdaki çizim, aracıların bir durumdan diğerine ilerleme durumunu gösteren bir durum diyagramıdır. Bu çizimde, düz çizgiler uygulamanızdan çağırdığınız yöntemleri temsil eder; noktalı çizgiler, çalışma zamanından çağrılan yöntemleri temsil eder.
 
-![Aracı durumu diyagramını](../../parallel/concrt/media/agentstate.png "aracı durumu diyagramı")
+![Aracı durumu diyagramı](../../parallel/concrt/media/agentstate.png "Aracı durumu diyagramı")
 
-Aşağıdaki tabloda her durumda açıklanmaktadır `agent_status` sabit listesi.
+Aşağıdaki tabloda, Numaralandırmadaki her durum açıklanmaktadır `agent_status` .
 
 |Aracı durumu|Açıklama|
 |-----------------|-----------------|
-|`agent_created`|Aracı yürütme için zamanlanan değil.|
-|`agent_runnable`|Çalışma zamanı aracı yürütme için zamanlama olduğu.|
-|`agent_started`|Aracıyı başlatıldı ve çalışıyor.|
-|`agent_done`|Aracı işlemi tamamlandı.|
-|`agent_canceled`|Aracıyı girdiği önce iptal edildi `started` durumu.|
+|`agent_created`|Aracı yürütme için zamanlanmamış.|
+|`agent_runnable`|Çalışma zamanı aracıyı yürütme için zamanlıyor.|
+|`agent_started`|Aracı başlatıldı ve çalışıyor.|
+|`agent_done`|Aracı bitti.|
+|`agent_canceled`|Aracı, durumu girmeden önce iptal edildi `started` .|
 
-`agent_created` bir aracı ilk durumu `agent_runnable` ve `agent_started` etkin durumlar ve `agent_done` ve `agent_canceled` terminal durumlarıdır.
+`agent_created` , bir aracının başlangıç durumudur `agent_runnable` ve `agent_started` etkin durumlardır ve, `agent_done` `agent_canceled` Terminal durumlarıdır.
 
-Kullanım [concurrency::agent::status](reference/agent-class.md#status) yönteminin geçerli durumunu almak için bir `agent` nesne. Ancak `status` yöntemidir, eşzamanlılık açısından güvenli, aracının durumunu zaman değiştirebilirsiniz `status` yöntemi döndürür. Örneğin, içinde bir aracı olabilir `agent_started` çağırdığınızda durumu `status` yöntemi, ancak taşınabilir `agent_done` hemen sonrasına durum `status` yöntemi döndürür.
+Bir nesnenin geçerli durumunu almak için [concurrency:: Agent:: Status](reference/agent-class.md#status) metodunu kullanın `agent` . `status`Yöntemi eşzamanlılık açısından güvenli olsa da, aracının durumu yöntemin döndürdüğü zamana göre değişebilir `status` . Örneğin, `agent_started` yöntemini çağırdığınızda bir aracı durumunda olabilir `status` , ancak `agent_done` yöntemin döndürdüğü hemen sonra duruma taşınır `status` .
 
-## <a name="methods-and-features"></a>Yöntemleri ve özellikleri
+## <a name="methods-and-features"></a>Yöntemler ve Özellikler
 
-Aşağıdaki tabloda ait önemli yöntemlerden bazıları gösterilmektedir `agent` sınıfı. Tüm hakkında daha fazla bilgi için `agent` sınıfı yöntemleri [agent sınıfı](../../parallel/concrt/reference/agent-class.md).
+Aşağıdaki tabloda sınıfına ait olan önemli yöntemlerin bazıları gösterilmektedir `agent` . Tüm sınıf yöntemleri hakkında daha fazla bilgi için `agent` bkz. [Aracı sınıfı](../../parallel/concrt/reference/agent-class.md).
 
 |Yöntem|Açıklama|
 |------------|-----------------|
-|[start](reference/agent-class.md#start)|Zamanlamalar `agent` yürütme için nesne ve ayarlar `agent_runnable` durumu.|
-|[run](reference/agent-class.md#run)|Tarafından gerçekleştirilmesi gereken görev yürütülmeden `agent` nesne.|
-|[Bitti](reference/agent-class.md#done)|Aracıya taşır `agent_done` durumu.|
-|[İptal](../../parallel/concrt/cancellation-in-the-ppl.md#cancel)|Aracı başlatılmadıysa, bu yöntem aracısının yürütme iptal eder ve ayarlar `agent_canceled` durumu.|
-|[Durumu](reference/agent-class.md#status)|Geçerli durumunu alır `agent` nesne.|
-|[bekleme](reference/agent-class.md#wait)|Bekler `agent` girmek için nesne `agent_done` veya `agent_canceled` durumu.|
-|[wait_for_all](reference/agent-class.md#wait_for_all)|Sağlanan tüm bekler `agent` girmek için nesneleri `agent_done` veya `agent_canceled` durumu.|
-|[wait_for_one](reference/agent-class.md#wait_for_one)|En az biri sağlanan için bekleyeceği `agent` girmek için nesneleri `agent_done` veya `agent_canceled` durumu.|
+|[başından](reference/agent-class.md#start)|`agent`Yürütmek için nesneyi zamanlar ve durumu olarak ayarlar `agent_runnable` .|
+|[çalışmaz](reference/agent-class.md#run)|Nesnesi tarafından gerçekleştirilecek görevi yürütür `agent` .|
+|[bitti](reference/agent-class.md#done)|Bir aracıyı `agent_done` duruma kaydırır.|
+|[İptal](../../parallel/concrt/cancellation-in-the-ppl.md#cancel)|Aracı başlatılmamışsa, bu yöntem aracının yürütülmesini iptal eder ve `agent_canceled` duruma getirir.|
+|[durumlarına](reference/agent-class.md#status)|Nesnenin geçerli durumunu alır `agent` .|
+|[bekleneceğini](reference/agent-class.md#wait)|`agent`Nesnenin veya durumunun girilmesi için bekler `agent_done` `agent_canceled` .|
+|[wait_for_all](reference/agent-class.md#wait_for_all)|Tüm sağlanmış `agent` nesnelerin `agent_done` veya durumunu girmesini bekler `agent_canceled` .|
+|[wait_for_one](reference/agent-class.md#wait_for_one)|Belirtilen nesnelerden en az birinin `agent` veya durumun girilmesi için bekler `agent_done` `agent_canceled` .|
 
-Bir aracı nesnesi oluşturduktan sonra çağrı [concurrency::agent::start](reference/agent-class.md#start) yürütme için zamanlamak için yöntemi. Çalışma zamanı çağrıları `run` aracı zamanlar ve ayarlar sonra yöntemi `agent_runnable` durumu.
+Bir aracı nesnesi oluşturduktan sonra, yürütme için zamanlamak üzere [concurrency:: Agent:: Start](reference/agent-class.md#start) metodunu çağırın. Çalışma zamanı `run` aracıyı zamanladıktan sonra yöntemi çağırır ve durumu olarak ayarlar `agent_runnable` .
 
-Çalışma zamanı zaman uyumsuz aracılar tarafından oluşturulan özel durumları yönetmez. Aracıları ve özel durum işleme hakkında daha fazla bilgi için bkz. [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
+Çalışma zamanı, zaman uyumsuz aracılar tarafından oluşturulan özel durumları yönetmez. Özel durum işleme ve aracıları hakkında daha fazla bilgi için bkz. [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).
 
 ## <a name="example"></a>Örnek
 
-Temel bir aracı tabanlı uygulamanın nasıl oluşturulacağını gösteren bir örnek için bkz: [izlenecek yol: Aracı tabanlı uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md).
+Temel aracı tabanlı bir uygulamanın nasıl oluşturulacağını gösteren bir örnek için bkz. [Izlenecek yol: Agent-Based uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

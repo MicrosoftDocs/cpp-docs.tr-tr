@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: paralel sıralama yordamı yazmak için parallel_invoke kullanma'
 title: 'Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - structured_task_group class, example
 - improving parallel performance with task groups [Concurrency Runtime]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-ms.openlocfilehash: 9d84cdbecb7cc6d39cb30077780c558db85888c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4146bed939e265f611d79c465681c10ef28a1ebe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205684"
 ---
 # <a name="how-to-use-parallel_invoke-to-write-a-parallel-sort-routine"></a>Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma
 
@@ -24,7 +25,7 @@ Bitonic sıralaması, giriş sıralarının tüm birleşimlerini sıralayan bir 
 > [!NOTE]
 > Bu örnek, çizim için bir paralel sıralama yordamı kullanır. Ayrıca, PPL 'nin sağladığı yerleşik sıralama algoritmalarından de yararlanabilirsiniz: [eşzamanlılık::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [eşzamanlılık::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)ve [eşzamanlılık::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 Bu belgede aşağıdaki görevler açıklanmaktadır:
 
@@ -32,7 +33,7 @@ Bu belgede aşağıdaki görevler açıklanmaktadır:
 
 - [Paralel olarak Sırtonic sıralama gerçekleştirmek için parallel_invoke kullanma](#parallel)
 
-## <a name="performing-bitonic-sort-serially"></a><a name="serial"></a>Bitonic sıralama hizmeti gerçekleştiriliyor
+## <a name="performing-bitonic-sort-serially"></a><a name="serial"></a> Bitonic sıralama hizmeti gerçekleştiriliyor
 
 Aşağıdaki örnek, bitonic sıralama algoritmasının seri sürümünü gösterir. `bitonic_sort`İşlevi, diziyi iki bölüme böler, bu bölümleri karşıt yönlere göre sıralar ve sonra sonuçları birleştirir. Bu işlev, her bölümü sıralamak için iki kez yinelemeli olarak çağırır.
 
@@ -40,7 +41,7 @@ Aşağıdaki örnek, bitonic sıralama algoritmasının seri sürümünü göste
 
 [[Üst](#top)]
 
-## <a name="using-parallel_invoke-to-perform-bitonic-sort-in-parallel"></a><a name="parallel"></a>Paralel olarak Sırtonic sıralama gerçekleştirmek için parallel_invoke kullanma
+## <a name="using-parallel_invoke-to-perform-bitonic-sort-in-parallel"></a><a name="parallel"></a> Paralel olarak Sırtonic sıralama gerçekleştirmek için parallel_invoke kullanma
 
 Bu bölümde, `parallel_invoke` bıtonic sıralama algoritmasını paralel olarak gerçekleştirmek için algoritmanın nasıl kullanılacağı açıklanmaktadır.
 

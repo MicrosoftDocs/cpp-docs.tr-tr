@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ActiveX denetimleri: Özellikler'
 title: 'MFC ActiveX Denetimleri: Özellikler'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC]
 ms.assetid: b678a53c-0d9e-476f-8aa0-23b80baaba46
-ms.openlocfilehash: c7ed0fddea660409f5089159b71d39a29b01d538
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9331be68c2e09fe3a4ad83d21e3ed58bbdfdd61e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618181"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206142"
 ---
 # <a name="mfc-activex-controls-properties"></a>MFC ActiveX Denetimleri: Özellikler
 
@@ -27,13 +28,13 @@ Yöntemler gibi hem özel hem de stok özellikleri, sınıfın özelliklerini ve
 
 Aşağıdaki makaleler, ActiveX denetim özelliklerini daha ayrıntılı bir şekilde ele almaktadır:
 
-- [MFC ActiveX Denetimleri: Stok Özellikler Ekleme](mfc-activex-controls-adding-stock-properties.md)
+- [MFC ActiveX denetimleri: stok özellikleri ekleme](mfc-activex-controls-adding-stock-properties.md)
 
-- [MFC ActiveX Denetimleri: Özel Özellikler Ekleme](mfc-activex-controls-adding-custom-properties.md)
+- [MFC ActiveX denetimleri: özel özellikler ekleme](mfc-activex-controls-adding-custom-properties.md)
 
-- [MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama](mfc-activex-controls-advanced-property-implementation.md)
+- [MFC ActiveX denetimleri: Gelişmiş özellik uygulama](mfc-activex-controls-advanced-property-implementation.md)
 
-- [MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme](mfc-activex-controls-accessing-ambient-properties.md)
+- [MFC ActiveX denetimleri: ortam özelliklerine erişme](mfc-activex-controls-accessing-ambient-properties.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

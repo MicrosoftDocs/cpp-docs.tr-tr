@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Negate struct'
 title: negate Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - negate struct
 - negate class
 ms.assetid: 8a372686-786e-4262-b37c-ca13dc11e62f
-ms.openlocfilehash: cb45f61323a407e90c2a455460a4d2cdd7b6720a
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fccc583d38b797a856ed4e0915e5e0255bb9eaee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338238"
 ---
 # <a name="negate-struct"></a>negate Yapısı
 
-Aritmetik olumsuzlama işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (birli `operator-`) bağımsız değişken üzerinde.
+Bağımsız değişkeninde aritmetik olumsuzlama işlemini (birli) gerçekleştiren önceden tanımlanmış bir işlev nesnesi `operator-` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,15 +40,15 @@ struct negate<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*\
-Destekleyen herhangi bir türü bir `operator-` belirtilen veya çıkarsanan türünde bir işlenen alan.
+*Türüyle*\
+`operator-`Belirtilen veya Çıkarsanan türün bir işleneni alan öğesini destekleyen herhangi bir tür.
 
-*Sol*\
-Negatif işlenen. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *türü*.
+*Tarafta*\
+İç içe yapılacak işlenen. Özel şablon, Çıkarsanan tür *türünün* lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `-Left`. Özelleşmiş şablon birli tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator-`.
+Sonucu `-Left` . Özel şablon, birli tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator-` .
 
 ## <a name="example"></a>Örnek
 

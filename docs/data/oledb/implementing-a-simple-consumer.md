@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: basit bir tüketici uygulama'
 title: Basit Tüketici Uygulama
 ms.date: 08/19/2019
 helpviewer_keywords:
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-ms.openlocfilehash: 2d59989f8afd180b39153eed1ad0a20435aad9d4
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 9670b14d64a38cd8cfc6122386f69296838fb378
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923909"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317447"
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
 

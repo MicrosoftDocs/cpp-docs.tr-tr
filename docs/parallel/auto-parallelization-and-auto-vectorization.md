@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: otomatik paralelleştirme ve otomatik vektör haline getirme'
 title: Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 ms.date: 11/04/2016
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-ms.openlocfilehash: adc0dd9346cc2850b02e01804e26044c367f2d14
-ms.sourcegitcommit: fcc3aeb271449f8be80348740cffef39ba543407
+ms.openlocfilehash: 4de73924ab6c28335ea6fcf2e6473e74d68bd189
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82538623"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338319"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 
@@ -24,7 +25,7 @@ void loop_test(int u) {
 }
 ```
 
-`u` Küçük bir değer olabileceğinden, derleyici bu döngüyü otomatik olarak paralel hale getirmek. Ancak, her zaman büyük olacağını bildiğiniz `u` için yine de paralelleştirmeye devam edebilirsiniz. Otomatik paralelleştirme özelliğini etkinleştirmek için [#pragma loop (hint_parallel (n))](../preprocessor/loop.md)belirtin; burada `n` , paralel hale getirmek arası iş parçacığı sayısıdır. Aşağıdaki örnekte, derleyici bu döngüyü 8 iş parçacığı boyunca paralel hale getirmek dener.
+`u`Küçük bir değer olabileceğinden, derleyici bu döngüyü otomatik olarak paralel hale getirmek. Ancak, her zaman büyük olacağını bildiğiniz için yine de paralelleştirmeye devam edebilirsiniz `u` . Otomatik paralelleştirme özelliğini etkinleştirmek için [#pragma loop (hint_parallel (n))](../preprocessor/loop.md)belirtin; burada, `n` paralel hale getirmek arası iş parçacığı sayısıdır. Aşağıdaki örnekte, derleyici bu döngüyü 8 iş parçacığı boyunca paralel hale getirmek dener.
 
 ```cpp
 void loop_test(int u) {
@@ -36,7 +37,7 @@ void loop_test(int u) {
 
 Tüm [pragma yönergelerinde](../preprocessor/pragma-directives-and-the-pragma-keyword.md)olduğu gibi, alternatif pragma sözdizimi `__pragma(loop(hint_parallel(n)))` de desteklenir.
 
-Derleyicinin paralel hale getirmek izin vermese de bazı döngüler vardır. Bir örneği aşağıda verilmiştir:
+Derleyicinin paralel hale getirmek izin vermese de bazı döngüler vardır. Aşağıda bir örnek verilmiştir:
 
 ```cpp
 #pragma loop(hint_parallel(8))
@@ -83,7 +84,7 @@ d:\myproject\mytest.cpp(4) : loop parallelized
 d:\myproject\mytest.cpp(4) : loop not parallelized due to reason '1008'
 ```
 
-İki farklı [/Qpar-report (otomatik paralelleştirme raporlama düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md) seçenekleri arasındaki çıkışdaki farka dikkat edin. `/Qpar-report:1`paralelleştirme iletilerini yalnızca başarıyla paralelleştirilmiş döngüler için verir. `/Qpar-report:2`hem başarılı hem de başarısız döngü paralelleştirmesinde paralelleştirme iletileri verir.
+İki farklı [/Qpar-report (otomatik paralelleştirme raporlama düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md) seçenekleri arasındaki çıkışdaki farka dikkat edin. `/Qpar-report:1` paralelleştirme iletilerini yalnızca başarıyla paralelleştirilmiş döngüler için verir. `/Qpar-report:2` hem başarılı hem de başarısız döngü paralelleştirmesinde paralelleştirme iletileri verir.
 
 Neden kodları ve iletileri hakkında daha fazla bilgi için bkz. [Vektörtorizer ve paralelleştirme iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
 
@@ -91,7 +92,7 @@ Neden kodları ve iletileri hakkında daha fazla bilgi için bkz. [Vektörtorize
 
 Otomatik Vektörleştirici, kodunuzdaki döngüleri analiz eder ve mümkünse hedef bilgisayardaki vektör yazmaçlarını ve yönergeleri kullanır. Bu, kodunuzun performansını iyileştirebilir. Derleyici, Intel veya AMD işlemcilerde SSE2, AVX ve AVX2 yönergelerini veya [/Arch](../build/reference/arch-minimum-cpu-architecture.md) ANAHTARıNA göre ARM işlemcileriyle ilgili Neon yönergelerini hedefler.
 
-Otomatik Vektörleştirici, `/arch` anahtar tarafından belirtilenden farklı yönergeler oluşturabilir. Bu yönergeler, kodun hala doğru çalıştığından emin olmak için bir çalışma zamanı denetimi tarafından korunur. Örneğin, derlerken `/arch:SSE2`SSE 4.2 yönergeleri dağıtılabilir. Çalışma zamanı denetimi, SSE 4.2 'ın hedef işlemcide kullanılabilir olduğunu doğrular ve işlemci bu yönergeleri desteklemiyorsa, döngünün SSE olmayan bir sürümüne atlar.
+Otomatik Vektörleştirici, anahtar tarafından belirtilenden farklı yönergeler oluşturabilir `/arch` . Bu yönergeler, kodun hala doğru çalıştığından emin olmak için bir çalışma zamanı denetimi tarafından korunur. Örneğin, derlerken `/arch:SSE2` SSE 4.2 yönergeleri dağıtılabilir. Çalışma zamanı denetimi, SSE 4.2 'ın hedef işlemcide kullanılabilir olduğunu doğrular ve işlemci bu yönergeleri desteklemiyorsa, döngünün SSE olmayan bir sürümüne atlar.
 
 Varsayılan olarak, otomatik Vektörleştirici etkindir. Vektörleştirme altında kodunuzun performansını karşılaştırmak istiyorsanız, belirli bir döngünün vektörleştirilmesini devre dışı bırakmak için [#pragma döngüsünü (no_vector)](../preprocessor/loop.md) kullanabilirsiniz.
 
@@ -103,7 +104,7 @@ for (int i = 0; i < 1000; ++i)
 
 Tüm [pragma yönergelerinde](../preprocessor/pragma-directives-and-the-pragma-keyword.md)olduğu gibi, alternatif pragma sözdizimi `__pragma(loop(no_vector))` de desteklenir.
 
-Otomatik paralelleştirme sayesinde, [/Qvec-report (otomatik Vektörleştirici raporlama düzeyi)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md) komut satırı seçeneğini, yalnızca`/Qvec-report:1`başarıyla vektör haline getirilmiş döngüleri veya hem başarıyla hem de başarılı ve başarısız vektörleştirilmiş döngüleri`/Qvec-report:2`raporlamak için belirtebilirsiniz.
+Otomatik paralelleştirme sayesinde, [/Qvec-report (otomatik Vektörleştirici raporlama düzeyi)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md) komut satırı seçeneğini, yalnızca başarıyla vektör haline getirilmiş döngüleri `/Qvec-report:1` veya hem başarıyla hem de başarılı ve başarısız vektörleştirilmiş döngüleri raporlamak için belirtebilirsiniz `/Qvec-report:2` .
 
 Neden kodları ve iletileri hakkında daha fazla bilgi için bkz. [Vektörtorizer ve paralelleştirme iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
 
@@ -113,7 +114,7 @@ Vektörleştirici 'in uygulamada nasıl çalıştığını gösteren bir örnek 
 
 [loop](../preprocessor/loop.md)<br/>
 [Yerel kodda paralel programlama](/archive/blogs/nativeconcurrency)<br/>
-[/Qpar (Otomatik Paralel Hale Getirici)](../build/reference/qpar-auto-parallelizer.md)<br/>
-[/Qpar-rapor (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
+[/Qpar (otomatik paralel hale getirici)](../build/reference/qpar-auto-parallelizer.md)<br/>
+[/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [/Qvec-report (otomatik Vektörleştirici raporlama düzeyi)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)<br/>
 [Vektörleştirici ve paralelleştirme Iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)

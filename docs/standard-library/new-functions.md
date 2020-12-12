@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; Yeni &gt; işlevler'
 title: '&lt;Yeni &gt; işlevler'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 - new/std::nothrow
 - new/std::set_new_handler
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
-ms.openlocfilehash: 6b51a5bcbb9c90370cef1391d4020862d2e2cefd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b46a21223fcee4f1e208f97e087e47445d5526c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212182"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338185"
 ---
 # <a name="ltnewgt-functions"></a>&lt;Yeni &gt; işlevler
 
-## <a name="get_new_handler"></a><a name="get_new_handler"></a>get_new_handler
+## <a name="get_new_handler"></a><a name="get_new_handler"></a> get_new_handler
 
 ```cpp
 new_handler get_new_handler() noexcept;
@@ -25,7 +26,7 @@ new_handler get_new_handler() noexcept;
 
 Geçerli öğesini döndürür `new_handler` .
 
-## <a name="launder"></a><a name="launder"></a>eksik
+## <a name="launder"></a><a name="launder"></a> eksik
 
 ```cpp
 template <class T>
@@ -39,7 +40,7 @@ Türü *T*'ye benzer bir nesneyi tutan bellekteki bir baytın adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-X 'e işaret eden *T \* * türünde bir değer.
+X 'e işaret eden *T \** türünde bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -59,7 +60,7 @@ const int b = p->n; // undefined behavior
 const int c = std::launder(p)->n; // OK
 ```
 
-## <a name="nothrow"></a><a name="nothrow"></a>nothrow
+## <a name="nothrow"></a><a name="nothrow"></a> nothrow
 
 Ve sürümleri için bağımsız değişken olarak kullanılacak bir nesne sağlar **`nothrow`** **`new`** **`delete`** .
 
@@ -75,7 +76,7 @@ Nesne, [std:: nothrow_t](../standard-library/nothrow-t-structure.md)parametre t�
 
 İşlev parametresi olarak nasıl kullanıldığına dair örnekler için bkz. [New işleci](../standard-library/new-operators.md#op_new) ve [New New&#91;&#93;](../standard-library/new-operators.md#op_new_arr) `std::nothrow_t` .
 
-## <a name="set_new_handler"></a><a name="set_new_handler"></a>set_new_handler
+## <a name="set_new_handler"></a><a name="set_new_handler"></a> set_new_handler
 
 **Yeni işleç** , bellek ayırma denemesinde başarısız olduğunda çağrılacak bir Kullanıcı işlevi yüklüyor.
 

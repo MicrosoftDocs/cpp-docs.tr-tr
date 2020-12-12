@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çerçeve pencereleri'
 title: Çerçeve Pencereleri
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-ms.openlocfilehash: 39c0b4b866fa123d8bcae639342c925570d96e1b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ee993b7f8314c28dba38c9ca607366f6fb93da1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625816"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193506"
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 
@@ -45,7 +46,7 @@ Yaygın olarak kullanılan başka bir düzenleme ise çerçeve penceresinin, gen
 
 - [Çerçeve penceresi sınıfları](frame-window-classes.md)
 
-- [Uygulama Sihirbazı tarafından oluşturulan çerçeve pencere sınıfları](frame-window-classes-created-by-the-application-wizard.md)
+- [Uygulama Sihirbazı tarafından oluşturulan Frame-Window sınıfları](frame-window-classes-created-by-the-application-wizard.md)
 
 - [Çerçeve pencere stilleri](frame-window-styles-cpp.md)
 
@@ -59,7 +60,7 @@ Yaygın olarak kullanılan başka bir düzenleme ise çerçeve penceresinin, gen
 
 - [Çerçeve pencerelerini yok etme](destroying-frame-windows.md)
 
-- [MDI alt pencerelerini yönetme](managing-mdi-child-windows.md)
+- [MDI alt öğe pencerelerini yönetme](managing-mdi-child-windows.md)
 
 - Birden fazla görünüm içeren bir çerçeve penceresinde [geçerli görünümü yönetme](managing-the-current-view.md)
 
@@ -77,7 +78,7 @@ Yaygın olarak kullanılan başka bir düzenleme ise çerçeve penceresinin, gen
 
 **Diğer Windows türleriyle ilgili konular**
 
-- [Görünümleri Kullanma](using-views.md)
+- [Görünümleri kullanma](using-views.md)
 
 - [İletişim kutuları](dialog-boxes.md)
 

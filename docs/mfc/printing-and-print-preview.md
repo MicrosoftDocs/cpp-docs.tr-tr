@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yazdırma ve baskı önizleme'
 title: Yazdırma ve Baskı Önizleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - print preview
 - printing [MFC], print preview
 ms.assetid: d15059cd-32de-4450-95f7-e73aece238f6
-ms.openlocfilehash: 26ced8172a36d34883d6b65997bb3a81fdc3c319
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 57dfd8eed1719b17f776a62273c9afa9ff5e80f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205843"
 ---
 # <a name="printing-and-print-preview"></a>Yazdırma ve Baskı Önizleme
 

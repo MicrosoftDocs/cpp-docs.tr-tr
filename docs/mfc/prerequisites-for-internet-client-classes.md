@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Internet Istemci sınıfları için Önkoşullar'
 title: Internet İstemci Sınıfları için Önkoşullar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - prerequisites, Internet client classes [MFC]
 - Gopher client applications [MFC]
 ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
-ms.openlocfilehash: aaf5756df69728e8ae89fb278bc0671bfc6840b7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9159aa6b3ae4918e406524be05e00fca66cd28a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205882"
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>Internet İstemci Sınıfları için Önkoşullar
 
@@ -73,4 +74,4 @@ Bir Internet istemcisi tarafından gerçekleştirilen bazı eylemler (örneğin,
 
 [Win32 Internet Uzantıları (Winınet)](win32-internet-extensions-wininet.md)<br/>
 [Internet Istemci uygulamaları oluşturmak için MFC sınıfları](mfc-classes-for-creating-internet-client-applications.md)<br/>
-[MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[MFC WinINet sınıfları kullanarak Internet Istemci uygulaması yazma](writing-an-internet-client-application-using-mfc-wininet-classes.md)
