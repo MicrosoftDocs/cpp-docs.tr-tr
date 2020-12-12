@@ -1,5 +1,6 @@
 ---
-title: Invokemodeoptions yapısı
+description: 'Daha fazla bilgi edinin: ınvokemodeoptions yapısı'
+title: InvokeModeOptions Yapısı
 ms.date: 03/22/2018
 ms.topic: reference
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - InvokeModeOptions structure
 - InvokeMode enum
-ms.openlocfilehash: 9bca49479d97ee371f6728f90a9aa96da0387f54
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1e1382242c95c47355239c220c43c278280dd451
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213843"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298987"
 ---
-# <a name="invokemodeoptions-structure"></a>Invokemodeoptions yapısı
+# <a name="invokemodeoptions-structure"></a>InvokeModeOptions Yapısı
 
-Temsilci sırasındaki tüm olayların mi tetikleneceği yoksa bir hata olduktan sonra tetiklenmesi mi durdurulacağı belirtir. `InvokeMode` numaralandırmasında izin verilen değerler belirtilmiştir.
+Temsilci sırasındaki tüm olayların mi tetikleneceği yoksa bir hata olduktan sonra tetiklenmesi mi durdurulacağı belirtir. İzin verilen değerler sabit listesinde belirtilir `InvokeMode` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum InvokeMode
@@ -41,5 +42,5 @@ struct InvokeModeOptions
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)<br/>
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)<br/>
 [Microsoft:: WRL:: AgileEventSource sınıfı](agileeventsource-class.md)

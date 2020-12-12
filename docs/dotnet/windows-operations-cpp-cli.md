@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Windows Işlemleri (C++/CLı)'
 title: Windows İşlemleri (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - registry, writing to
 - Visual C++, writing to Windows Registry
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
-ms.openlocfilehash: 3c4ef2a69c25313ff444e0fabaea6eef2feeeee2
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 95fff25cb5c921272972e343dd3a85d53f909c52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501660"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298727"
 ---
 # <a name="windows-operations-ccli"></a>Windows İşlemleri (C++/CLI)
 

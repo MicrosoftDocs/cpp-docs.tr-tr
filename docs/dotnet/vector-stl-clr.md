@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: vektör (STL/CLR)'
 title: vektör (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -91,12 +92,12 @@ helpviewer_keywords:
 - value_type member [STL/CLR]
 - vector member [STL/CLR]
 ms.assetid: f90060d5-097a-4e9d-9a26-a634b5b9c6c2
-ms.openlocfilehash: 9abecfa6e0bbdf74514e2b7162d1d22a84fa01b2
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5997a70fb6b6e37fd4b1ff19c34fdc15750bbe4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298740"
 ---
 # <a name="vector-stlclr"></a>vektör (STL/CLR)
 
@@ -251,7 +252,7 @@ Eklenecek öğenin değeri.
 
 `InIt`Bir tamsayı türünde ise ikinci üye işlevi ile aynı şekilde davranır `assign((size_type)first, (value_type)last)` . Aksi takdirde, denetlenen diziyi [ `first` ,) sırasıyla değiştirir `last` . Bunu, denetimli diziyi başka bir sıra kopyalamak için kullanırsınız.
 
-Üçüncü üye işlevi, denetlenen diziyi Numaralandırıcı *sağ*tarafından belirlenen sırayla değiştirir. Denetim, bir Numaralandırıcı tarafından tanımlanan bir dizinin bir kopyasını denetimli sıra haline getirmek için kullanılır.
+Üçüncü üye işlevi, denetlenen diziyi Numaralandırıcı *sağ* tarafından belirlenen sırayla değiştirir. Denetim, bir Numaralandırıcı tarafından tanımlanan bir dizinin bir kopyasını denetimli sıra haline getirmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -313,7 +314,7 @@ Erişim için öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, *POS*konumundaki denetimli sıranın öğesine bir başvuru döndürür. Konumunu bildiğiniz bir öğeyi okumak veya yazmak için bunu kullanırsınız.
+Üye işlevi, *POS* konumundaki denetimli sıranın öğesine bir başvuru döndürür. Konumunu bildiğiniz bir öğeyi okumak veya yazmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -352,7 +353,7 @@ a x c
 
 Son öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reference back();
@@ -403,7 +404,7 @@ a b x
 
 Son öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property value_type back_item;
@@ -454,7 +455,7 @@ a b x
 
 Denetlenen dizinin başlangıcını belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 iterator begin();
@@ -509,7 +510,7 @@ x y c
 
 Kapsayıcı için ayrılan depolamanın boyutunu raporlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 size_type capacity();
@@ -559,7 +560,7 @@ capacity() = 9, ok = True
 
 Tüm öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void clear();
@@ -616,7 +617,7 @@ size() = 0
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T2 const_iterator;
@@ -657,7 +658,7 @@ a b c
 
 Bir öğe için sabit bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% const_reference;
@@ -701,7 +702,7 @@ a b c
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T4 const_reverse_iterator;
@@ -743,7 +744,7 @@ c b a
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int difference_type;
@@ -797,7 +798,7 @@ begin()-end() = -3
 
 Bir öğe olup olmadığını sınar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 bool empty();
@@ -848,7 +849,7 @@ empty() = True
 
 Denetlenen dizinin bitişini belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 iterator end();
@@ -919,12 +920,12 @@ Silinecek aralığın başlangıcı.
 *soyadına*<br/>
 Silinecek aralığın sonu.
 
-*konum*<br/>
+*olmadığı*<br/>
 Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, tarafından işaret edilen kontrollü sıranın öğesini *olduğu*gibi kaldırır. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye işlevi, tarafından işaret edilen kontrollü sıranın öğesini *olduğu* gibi kaldırır. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
 İkinci üye işlevi, [,) aralığındaki denetlenen sıranın öğelerini kaldırır `first` `last` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
@@ -983,7 +984,7 @@ size() = 1
 
 İlk öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reference front();
@@ -1034,7 +1035,7 @@ x b c
 
 İlk öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property value_type front_item;
@@ -1085,7 +1086,7 @@ x b c
 
 Kapsayıcının genel arabiriminin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::
@@ -1151,7 +1152,7 @@ a b c d e
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::Generic::
@@ -1209,7 +1210,7 @@ a a c
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::Generic::
@@ -1266,7 +1267,7 @@ a c c
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef GValue generic_value;
@@ -1350,7 +1351,7 @@ Eklenecek sabit listesi.
 *Acil*<br/>
 Eklenecek öğenin değeri.
 
-*konum*<br/>
+*olmadığı*<br/>
 Kapsayıcının ekleneceği yer.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1363,7 +1364,7 @@ Kapsayıcının ekleneceği yer.
 
 `InIt`Bir tamsayı türü ise, üçüncü üye işlevi ile aynı şekilde davranır `insert(where, (size_type)first, (value_type)last)` . Aksi takdirde, [ `first` ,) dizisini ekler `last` . Başka bir dizide kopyalanmış sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
 
-Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
+Dördüncü üye işlevi, *sağ* tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
 Tek bir öğe eklenirken, öğe kopyalarının sayısı, ekleme noktası ve sıranın bir kapanış ucu arasındaki öğe sayısında doğrusal olur. (Sıranın her iki ucunda bir veya daha fazla öğe eklenirken, hiçbir öğe kopyası gerçekleşmez.) `InIt` Bir giriş yineleyicidir, üçüncü üye işlevi dizideki her öğe için etkin bir şekilde tek bir ekleme gerçekleştirir. Aksi halde, öğe eklerken `N` , öğe kopyalarının sayısı doğrusal `N` ve ekleme noktası ile sıranın bir kapanış ucu arasındaki öğe sayısına eklenir.
 
@@ -1431,7 +1432,7 @@ a x b c y y a x b
 
 Denetlenen dizi için bir yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T1 iterator;
@@ -1546,7 +1547,7 @@ Erişim için öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Member işleci, *POS*konumundaki öğesine bir referene döndürür. Bu, konumunu bildiğiniz bir öğeye erişmek için kullanılır.
+Member işleci, *POS* konumundaki öğesine bir referene döndürür. Bu, konumunu bildiğiniz bir öğeye erişmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1585,7 +1586,7 @@ a x c
 
 Son öğeyi kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void pop_back();
@@ -1632,7 +1633,7 @@ a b
 
 Yeni bir son öğe ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void push_back(value_type val);
@@ -1672,7 +1673,7 @@ a b c
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reverse_iterator rbegin();
@@ -1727,7 +1728,7 @@ a y x
 
 Bir öğe için bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% reference;
@@ -1782,7 +1783,7 @@ A B C
 
 Ters denetlenen sıranın sonunu belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reverse_iterator rend();
@@ -1851,7 +1852,7 @@ Kapsayıcının yeni en düşük kapasitesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, `capacity()` henceileri 'nin en az *sayı*döndürdüğünden emin olmanızı sağlar. Kapsayıcının, belirtilen boyuta kadar büyüene kadar, denetlenen sıra için depolamayı yeniden ayırmaya gerek gerektirmediğinden emin olmak için bunu kullanırsınız.
+Üye işlevi, `capacity()` henceileri 'nin en az *sayı* döndürdüğünden emin olmanızı sağlar. Kapsayıcının, belirtilen boyuta kadar büyüene kadar, denetlenen sıra için depolamayı yeniden ayırmaya gerek gerektirmediğinden emin olmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1910,7 +1911,7 @@ Padding öğesinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri hem [vector:: size (STL/CLR)](#size) `()` henceileri 'nin *new_size*döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri olan öğeleri ekler `value_type()` ; İkinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe [vektörü:: size (STL/CLR)](#size) zamanlarını etkin bir şekilde siler `() -` `new_size` . Kontrol edilen sıranın boyut *new_size*sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre kullanabilirsiniz.
+Üye işlevleri hem [vector:: size (STL/CLR)](#size) `()` henceileri 'nin *new_size* döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri olan öğeleri ekler `value_type()` ; İkinci üye işlevi ise değer *Val* ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe [vektörü:: size (STL/CLR)](#size) zamanlarını etkin bir şekilde siler `() -` `new_size` . Kontrol edilen sıranın boyut *new_size* sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -1953,7 +1954,7 @@ x x x x x
 
 Denetlenen sıra için ters yineleyicinin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T3 reverse_iterator;
@@ -2002,7 +2003,7 @@ x b a
 
 Öğe sayısını sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 size_type size();
@@ -2055,7 +2056,7 @@ size() = 2 after adding 2
 
 İki öğe arasındaki işaretli mesafenin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int size_type;
@@ -2113,7 +2114,7 @@ void swap(vector<Value>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir . Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2164,7 +2165,7 @@ a b c
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 cli::array<Value>^ to_array();
@@ -2213,7 +2214,7 @@ a b c
 
 Öğenin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value value_type;
@@ -2221,7 +2222,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametre *değeri*için bir eş anlamlı.
+Tür, şablon parametre *değeri* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -2300,13 +2301,13 @@ Oluşturucu:
 
 `vector(vector<Value>% right);`
 
-denetlenen sırayı [ `right.begin()` ,) sırasıyla başlatır `right.end()` . Bunu, *vektör nesnesi tarafından*denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanırsınız.
+denetlenen sırayı [ `right.begin()` ,) sırasıyla başlatır `right.end()` . Bunu, *vektör nesnesi tarafından* denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanırsınız.
 
 Oluşturucu:
 
 `vector(vector<Value>^ right);`
 
-denetlenen sırayı [ `right->begin()` ,) sırasıyla başlatır `right->end()` . Bu işlemi, tutamacı *doğru*olan vektör nesnesi tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanırsınız.
+denetlenen sırayı [ `right->begin()` ,) sırasıyla başlatır `right->end()` . Bu işlemi, tutamacı *doğru* olan vektör nesnesi tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanırsınız.
 
 Oluşturucu:
 
@@ -2318,7 +2319,7 @@ Oluşturucu:
 
 `vector(size_type count, value_type val);`
 
-her biri değer *Val*ile denetlenen diziyi *say* öğesi ile başlatır. Kapsayıcıyı aynı değere sahip olan öğelerle birlikte doldurmanız için kullanabilirsiniz.
+her biri değer *Val* ile denetlenen diziyi *say* öğesi ile başlatır. Kapsayıcıyı aynı değere sahip olan öğelerle birlikte doldurmanız için kullanabilirsiniz.
 
 Oluşturucu:
 
@@ -2332,7 +2333,7 @@ Oluşturucu:
 
 `vector(System::Collections::Generic::IEnumerable<Value>^ right);`
 
-denetlenen sırayı Numaralandırıcı *hakkı*tarafından belirlenen sırayla başlatır. Denetlenen diziyi, Numaralandırıcı tarafından tanımlanan başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+denetlenen sırayı Numaralandırıcı *hakkı* tarafından belirlenen sırayla başlatır. Denetlenen diziyi, Numaralandırıcı tarafından tanımlanan başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2490,7 +2491,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi takdirde, `left->size() < right->size()` İki vektörün öğe öğesine göre karşılaştırıldığı zaman, sol *taraftaki bir* süre önce kaldığını test etmek için bunu kullanır. *left*
+İşleç işlevi, `i` `!(right[i] < left[i])` bunun da doğru olduğu en düşük konum için true değerini döndürür `left[i] < right[i]` . Aksi takdirde, `left->size() < right->size()` İki vektörün öğe öğesine göre karşılaştırıldığı zaman, sol *taraftaki bir* süre önce kaldığını test etmek için bunu kullanır. 
 
 ### <a name="example"></a>Örnek
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IsSame yapısı'
 title: IsSame Yapısı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::IsSame structure
 - Microsoft::WRL::Details::IsSame::value constant
 ms.assetid: 1eddbc3f-3cc5-434f-8495-e4477e1f868e
-ms.openlocfilehash: 8c209d5a8d2a35f2643e90e5595d86f41519f30b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b00e85f55fc80af2dd00dc20f090a7b18678f579
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298935"
 ---
 # <a name="issame-structure"></a>IsSame Yapısı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <typename T1, typename T2>
@@ -60,7 +61,7 @@ Ad                    | Açıklama
 
 **Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="issamevalue"></a><a name="value"></a>IsSame:: değer
+## <a name="issamevalue"></a><a name="value"></a> IsSame:: değer
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 

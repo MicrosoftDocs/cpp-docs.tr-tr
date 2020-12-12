@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbbtype _mbbtype_l'
 title: _mbbtype, _mbbtype_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - mbbtype function
 - mbbtype_l function
 ms.assetid: b8e34b40-842a-4298-aa39-0bd2d8e51c2a
-ms.openlocfilehash: dca59f2d31cc5ad843a48e9825ef6a617d46ae4a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6a646682144acb346827eaa78382915f026fa455
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919594"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299611"
 ---
 # <a name="_mbbtype-_mbbtype_l"></a>_mbbtype, _mbbtype_l
 
@@ -75,7 +76,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbbtype** dizedeki Byte türünü döndürür. Bu karar, denetim testi koşulunu sağlayan *tür*değeri tarafından belirtilen bağlama duyarlıdır. *tür* , dizedeki önceki baytın türüdür. Aşağıdaki tablodaki bildirim sabitleri Mbctype. h içinde tanımlanmıştır.
+**_mbbtype** dizedeki Byte türünü döndürür. Bu karar, denetim testi koşulunu sağlayan *tür* değeri tarafından belirtilen bağlama duyarlıdır. *tür* , dizedeki önceki baytın türüdür. Aşağıdaki tablodaki bildirim sabitleri Mbctype. h içinde tanımlanmıştır.
 
 |*Tür* değeri|için testleri **_mbbtype**|Döndürülen değer|*,*|
 |---------------------|--------------------------|------------------|---------|
@@ -91,7 +92,7 @@ Kullanılacak yerel ayar.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevin **_mbbtype** sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbbtype_l** sürüm, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Önceki sürümlerde **_mbbtype** **chkctype**olarak adlandırılmıştı. Yeni kod için, bunun yerine **_mbbtype** kullanın.
+Önceki sürümlerde **_mbbtype** **chkctype** olarak adlandırılmıştı. Yeni kod için, bunun yerine **_mbbtype** kullanın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -99,13 +100,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_mbbtype**|\<mbstring. h>|\<Mbctype. h> *|
-|**_mbbtype_l**|\<mbstring. h>|\<Mbctype. h> *|
+|**_mbbtype**|\<mbstring.h>|\<mbctype.h>*|
+|**_mbbtype_l**|\<mbstring.h>|\<mbctype.h>*|
 
-\*Dönüş değeri olarak kullanılan bildirim sabitlerinin tanımları için.
+\* Dönüş değeri olarak kullanılan bildirim sabitlerinin tanımları için.
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>

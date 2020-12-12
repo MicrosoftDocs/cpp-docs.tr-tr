@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _unlock_file'
 title: _unlock_file
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _unlock_file function
 - unlocking files
 ms.assetid: cf380a51-6d3a-4f38-bd64-2d4fb57b4369
-ms.openlocfilehash: ed79f66baebf71c89e537c8343779bef44ebfbb8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6b639ca178f9cb397e9ec14f383b952e94400e7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909200"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299364"
 ---
 # <a name="_unlock_file"></a>_unlock_file
 
@@ -56,7 +57,7 @@ Dosya tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Unlock_file** işlevi *Dosya*tarafından belirtilen dosyanın kilidini açar. Bir dosyanın kilidini açmak, diğer işlemlere göre dosyaya erişim sağlar. Bu işlev, **_lock_file** daha önce *Dosya* İşaretçisinde çağrılmadığı müddetçe çağrılmamalıdır. Kilitli olmayan bir dosyada **_unlock_file** çağırmak kilitlenmeye neden olabilir. Bir örnek için bkz. [_lock_file](lock-file.md).
+**_Unlock_file** işlevi *Dosya* tarafından belirtilen dosyanın kilidini açar. Bir dosyanın kilidini açmak, diğer işlemlere göre dosyaya erişim sağlar. Bu işlev, **_lock_file** daha önce *Dosya* İşaretçisinde çağrılmadığı müddetçe çağrılmamalıdır. Kilitli olmayan bir dosyada **_unlock_file** çağırmak kilitlenmeye neden olabilir. Bir örnek için bkz. [_lock_file](lock-file.md).
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -64,13 +65,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_unlock_file**|\<stdio. h>|
+|**_unlock_file**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_lock_file](lock-file.md)<br/>

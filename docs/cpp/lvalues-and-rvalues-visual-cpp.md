@@ -1,20 +1,21 @@
 ---
+description: 'Daha fazla bilgi edinin: lvalues ve rvalues (C++)'
 title: 'Değer kategorileri: lvalues ve rvalues (C++)'
 ms.date: 05/07/2019
 helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
-ms.openlocfilehash: b4b3ba5fdbc11ec97870b0f06fd1aabd3b57f5ca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b92ddc3aad62f1eaf7af6a6bc113c1a0fdd70769
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225975"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299247"
 ---
 # <a name="lvalues-and-rvalues-c"></a>Lvalues ve Rvalues (C++)
 
-Her C++ ifadesinin bir türü vardır ve bir *değer kategorisine*aittir. Değer kategorileri, derleyicilerin ifade değerlendirmesi sırasında geçici nesneleri oluştururken, kopyalarken ve taşırken izlemesi gereken kuralların temelini oluşturur.
+Her C++ ifadesinin bir türü vardır ve bir *değer kategorisine* aittir. Değer kategorileri, derleyicilerin ifade değerlendirmesi sırasında geçici nesneleri oluştururken, kopyalarken ve taşırken izlemesi gereken kuralların temelini oluşturur.
 
 C++ 17 standardı, ifade değeri kategorilerini aşağıdaki şekilde tanımlar:
 

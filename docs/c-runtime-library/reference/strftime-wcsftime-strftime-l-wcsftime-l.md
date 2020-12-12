@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strftime, wcsftime, _strftime_l _wcsftime_l'
 title: strftime, wcsftime, _strftime_l, _wcsftime_l
 ms.date: 4/2/2020
 api_name:
@@ -42,18 +43,18 @@ helpviewer_keywords:
 - _tcsftime function
 - time strings
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
-ms.openlocfilehash: 36a84c5de41f3358adbcba42010ed8e6f3c83939
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f6297af6ad7c0f6f9a0280cc47ea7a0caa6440af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299572"
 ---
 # <a name="strftime-wcsftime-_strftime_l-_wcsftime_l"></a>strftime, wcsftime, _strftime_l, _wcsftime_l
 
 Bir zaman dizesini biçimlendirin.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 size_t strftime(
@@ -98,7 +99,7 @@ Biçim denetimi dizesi.
 *timeptr*<br/>
 **TM** veri yapısı.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -111,9 +112,9 @@ Sonlandırıcı null değeri de dahil olmak üzere toplam karakter sayısı *MAX
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strftime** ve **wcsftime** işlevleri, sağlanan *Biçim* bağımsız değişkenine göre *timeptr* Içindeki **TM** Time değerini biçimlendirir ve sonucu buffer *strDest*içinde depolar. En çok, *MaxSize* karakterleri dizeye yerleştirilir. *Timeptr* yapısındaki alanların açıklaması için bkz. [asctime](asctime-wasctime.md). **wcsftime** , **strftime**'ın geniş karakterli eşdeğeridir. dize işaretçisi bağımsız değişkeni, bir geniş karakter dizesine işaret eder. Bu işlevler, aynı şekilde davranır.
+**Strftime** ve **wcsftime** işlevleri, sağlanan *Biçim* bağımsız değişkenine göre *timeptr* Içindeki **TM** Time değerini biçimlendirir ve sonucu buffer *strDest* içinde depolar. En çok, *MaxSize* karakterleri dizeye yerleştirilir. *Timeptr* yapısındaki alanların açıklaması için bkz. [asctime](asctime-wasctime.md). **wcsftime** , **strftime**'ın geniş karakterli eşdeğeridir. dize işaretçisi bağımsız değişkeni, bir geniş karakter dizesine işaret eder. Bu işlevler, aynı şekilde davranır.
 
-Bu işlev, parametrelerini doğrular. *StrDest*, *Format*veya *timeptr* bir null işaretçisiyse veya *timeptr* tarafından ele alınan **TM** veri yapısı geçersizse (örneğin, saat veya tarih için Aralık dışında değerler içeriyorsa) veya *Biçim* dizesi geçersiz bir biçimlendirme kodu içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev 0 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar.
+Bu işlev, parametrelerini doğrular. *StrDest*, *Format* veya *timeptr* bir null işaretçisiyse veya *timeptr* tarafından ele alınan **TM** veri yapısı geçersizse (örneğin, saat veya tarih için Aralık dışında değerler içeriyorsa) veya *Biçim* dizesi geçersiz bir biçimlendirme kodu içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev 0 döndürür ve **errno** öğesini **EINVAL** olarak ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -123,7 +124,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsftime**|**strftime**|**strftime**|**wcsftime**|
 
-*Biçim* bağımsız değişkeni bir veya daha fazla kodlardan oluşur; **printf**içinde olduğu gibi, biçimlendirme kodlarının öncesinde bir yüzde işareti () bulunur **%** . İle başlamayan karakterler **%** , *strDest*öğesine değiştirilmeden kopyalanır. Geçerli yerel ayarın **LC_TIME** kategorisi, **strftime**çıkış biçimlendirmesini etkiler. ( **LC_TIME**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md).) **Strftime** ve **wcsftime** işlevleri şu anda ayarlanmış yerel ayarı kullanır. Bu işlevlerin **_strftime_l** ve **_wcsftime_l** sürümleri, yerel ayarı bir parametre olarak ele aldıkları ve şu anda ayarlanmış yerel ayar yerine bunu kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+*Biçim* bağımsız değişkeni bir veya daha fazla kodlardan oluşur; **printf** içinde olduğu gibi, biçimlendirme kodlarının öncesinde bir yüzde işareti () bulunur **%** . İle başlamayan karakterler **%** , *strDest* öğesine değiştirilmeden kopyalanır. Geçerli yerel ayarın **LC_TIME** kategorisi, **strftime** çıkış biçimlendirmesini etkiler. ( **LC_TIME** hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md).) **Strftime** ve **wcsftime** işlevleri şu anda ayarlanmış yerel ayarı kullanır. Bu işlevlerin **_strftime_l** ve **_wcsftime_l** sürümleri, yerel ayarı bir parametre olarak ele aldıkları ve şu anda ayarlanmış yerel ayar yerine bunu kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 **Strftime** işlevleri şu biçimlendirme kodlarını destekler:
 
@@ -141,7 +142,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |**% F**|**% Y ile eşdeğer-% m-% d**|
 |**% g**|ISO 8601 hafta tabanlı yılın ondalık sayı olarak son 2 basamağı (00-99)|
 |**% G**|Bir ondalık sayı olarak ISO 8601 hafta tabanlı yıl|
-|**% h**|Kısaltılmış ay adı ( **% b**ile eşdeğer)|
+|**% h**|Kısaltılmış ay adı ( **% b** ile eşdeğer)|
 |**% H**|24 saat biçiminde saat (00-23)|
 |**% I**|12 saat biçiminde saat (01-12)|
 |**% j**|Ondalık sayı olarak yılın günü (001-366)|
@@ -174,9 +175,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |**% #a**, **% #A**, **% #b**, **% #B**, **% #g**, **% #G**, **% #h**, **% #n**, **%**#p, **% #t**, **% #u,%** **#w**, **% #X**, **% #z**, **%**#Z, **%#%**|**#** bayrak yoksayıldı.|
 |**% #c**|Yerel ayar için uygun olan uzun tarih ve saat gösterimi. Örneğin: "Salı, 12 Mart 1995, 12:41:29".|
 |**% #x**|Yerel ayara uygun uzun tarih gösterimi. Örneğin: "Salı, 12 Mart 1995".|
-|**% #d**, **% #D**, **% #e**, **% #F**, **% #H**, **% #I**, **% #j**, **% #m**, **%**#M, **% #r**, **% #R,%**#S, **% #T**,% **#U,%** **#V**, **% #W**, **% #y**, **%** #Y **%#S**|Baştaki sıfırları veya boşlukları (varsa) kaldırın.|
+|**% #d**, **% #D**, **% #e**, **% #F**, **% #H**, **% #I**, **% #j**, **% #m**, **%**#M, **% #r**, **% #R,%**#S, **% #T**,% **#U,%** **#V**, **% #W**, **% #y**, **%** #Y |Baştaki sıfırları veya boşlukları (varsa) kaldırın.|
 
-**% V**, **% g**ve **% g**tarafından üretilen ISO 8601 haftası ve hafta tabanlı yıl, Pazartesi günü başlayan, hafta 1 yılı, yılın en az dört günü içeren ilk hafta olan 4 Ocak 'tan oluşan hafta. Yılın ilk Pazartesi değeri 2, 3 veya 4 ise, önceki günler önceki yılın son haftasının bir parçasıdır. Bu günler için, **% V** 53 ile değiştirilmiştir ve hem **% g** hem de **% g** , önceki yılın rakamıyla değiştirilmiştir.
+**% V**, **% g** ve **% g** tarafından üretilen ISO 8601 haftası ve hafta tabanlı yıl, Pazartesi günü başlayan, hafta 1 yılı, yılın en az dört günü içeren ilk hafta olan 4 Ocak 'tan oluşan hafta. Yılın ilk Pazartesi değeri 2, 3 veya 4 ise, önceki günler önceki yılın son haftasının bir parçasıdır. Bu günler için, **% V** 53 ile değiştirilmiştir ve hem **% g** hem de **% g** , önceki yılın rakamıyla değiştirilmiştir.
 
 > [!NOTE]
 > `strftime`Öğesinden bir işaretçiye döndürülen işlevlerden birini kullanırken, `tm` `gmtime` ve belirticileri ile yazdırılan değerler `%Z` doğru olmayacaktır `%z` . Bunun nedeni, `tm` C standardı tarafından belirtilen yapının saat dilimi adı ve kaydırmasına ilişkin bilgileri içermez. Bunun yerine, saat dilimi bilgileri genel değişkenler [ `_timezone` ve ile `_dstbias` ](../../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)doldurulur.
@@ -198,7 +199,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yerel Ayar](../../c-runtime-library/locale.md) <br/>
+[Ayarlar](../../c-runtime-library/locale.md) <br/>
 [Zaman Yönetimi](../../c-runtime-library/time-management.md) <br/>
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md) <br/>
 [localeconv](localeconv.md) <br/>

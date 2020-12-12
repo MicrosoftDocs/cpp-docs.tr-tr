@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt alanı değişimi: RFX Işlevlerini kullanma'
 title: 'Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - RFX (ODBC) [C++], data types
 - function calls, RFX functions
 ms.assetid: c594300b-5a29-4119-a68b-e7ca32def696
-ms.openlocfilehash: 4d621fbe2207114dd51845b819d309802a009690
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8b597a6ca8ae43922b6bba57b63ea2fc93fb82d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298766"
 ---
 # <a name="record-field-exchange-using-the-rfx-functions"></a>Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma
 
@@ -26,7 +27,7 @@ Bu konuda, geçersiz kılmanın gövdesini oluşturan RFX işlev çağrıların�
 
 RFX genel işlevleri, veri kaynağındaki sütunlar ve kayıt kümenizin veri üyeleri arasındaki verileri değiş tokuş ediyor. RFX işlev çağrılarını kayıt kümenizin [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) üye işlevine yazarsınız. Bu konu, işlevleri kısaca açıklar ve RFX işlevlerinin kullanılabildiği veri türlerini gösterir. [Teknik not43](../../mfc/tn043-rfx-routines.md) ek veri türleri IÇIN kendi RFX işlevlerinizi nasıl yazacağınız açıklanmaktadır.
 
-## <a name="rfx-function-syntax"></a><a name="_core_rfx_function_syntax"></a>RFX Işlevi sözdizimi
+## <a name="rfx-function-syntax"></a><a name="_core_rfx_function_syntax"></a> RFX Işlevi sözdizimi
 
 Her RFX işlevi üç parametre alır (bazıları isteğe bağlı dördüncü veya beşinci bir parametre alır):
 
@@ -38,11 +39,11 @@ Her RFX işlevi üç parametre alır (bazıları isteğe bağlı dördüncü vey
 
 - Seçim Bazı işlevlerde, aktarılmakta olan dize veya dizinin uzunluk üst sınırı. Bu varsayılan değer 255 bayttır, ancak bunu değiştirmek isteyebilirsiniz. En büyük boyut, en büyük bir `CString` nesne boyutunu ( **INT_MAX** (2.147.483.647) bayt) temel alır, ancak büyük olasılıkla bu boyuttan önce sürücü limitleriyle karşılaşacaksınız.
 
-- Seçim `RFX_Text`İşlevinde bazen bir sütunun veri türünü belirtmek için beşinci bir parametre kullanırsınız.
+- Seçim `RFX_Text` İşlevinde bazen bir sütunun veri türünü belirtmek için beşinci bir parametre kullanırsınız.
 
 Daha fazla bilgi için bkz. *sınıf kitaplığı başvurusunda* [makrolar ve genel](../../mfc/reference/mfc-macros-and-globals.md) öğeler altındaki RFX işlevleri. Parametreleri özel olarak kullanarak ilgili bir örnek için bkz. [kayıt kümesi: toplamları ve diğer toplama sonuçlarını alma (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md).
 
-## <a name="rfx-data-types"></a><a name="_core_rfx_data_types"></a>RFX veri türleri
+## <a name="rfx-data-types"></a><a name="_core_rfx_data_types"></a> RFX veri türleri
 
 Sınıf kitaplığı, veri kaynağı ve kayıt kümeleriniz arasında birçok farklı veri türünü aktarmaya yönelik RFX işlevlerini sağlar. Aşağıdaki liste, RFX işlevlerini veri türüne göre özetler. Kendi RFX işlevi çağrılarınızı yazmanız gereken durumlarda, veri türüne göre bu işlevlerden birini seçin.
 

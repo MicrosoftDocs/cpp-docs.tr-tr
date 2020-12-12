@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: tmpfile'
 title: tmpfile
 ms.date: 11/04/2016
 api_name:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - tmpfile function
 - temporary files, creating
 ms.assetid: c4a4dc24-70da-438d-ae4e-98352d88e375
-ms.openlocfilehash: f58c23050fe89f84f283c3784a7c0cee72637bf2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 27760a7d1369a0292c6719667b8cb182ce7df815
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957551"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299520"
 ---
 # <a name="tmpfile"></a>tmpfile
 
 Geçici bir dosya oluşturur. Daha güvenli bir sürüm kullanılabilir olduğundan bu işlev kullanım dışıdır; bkz. [tmpfile_s](tmpfile-s.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 FILE *tmpfile( void );
@@ -51,15 +52,15 @@ Başarılı olursa, **tmpfile** bir akış işaretçisi döndürür. Aksi halde,
 
 **Tmpfile** işlevi, geçici bir dosya oluşturur ve bu akışa bir işaretçi döndürür. Geçici dosya kök dizinde oluşturulur. Kök dışında bir dizinde geçici bir dosya oluşturmak için, [fopen](fopen-wfopen.md)ile birlikte [tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) veya [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) kullanın.
 
-Dosya açılamadığı için **tmpfile** **null** bir işaretçi döndürür. Bu geçici dosya, dosya kapatıldığında, program normal olarak sonlandırıldığında veya **_rmtmp** çağrıldığında, geçerli çalışma dizininin değişmediği kabul edildiğinde otomatik olarak silinir. Geçici dosya **w + b** (ikili okuma/yazma) modunda açılır.
+Dosya açılamadığı için **tmpfile** **null** bir işaretçi döndürür. Dosya kapatıldığında, program normal olarak sonlandırıldığında veya **_rmtmp** çağrıldığında, geçerli çalışma dizininin değişmediği varsayılarak bu geçici dosya otomatik olarak silinir. Geçici dosya **w + b** (ikili okuma/yazma) modunda açılır.
 
-TMP_MAX 'den fazlasını denerseniz hata oluşabilir (bkz. STDIO. H) **tmpfile**ile çağırır.
+TMP_MAX daha fazlasını denerseniz hata oluşabilir (bkz. STDIO. H) **tmpfile** ile çağırır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**tmpfile**|\<stdio. h >|
+|**tmpfile**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -104,6 +105,6 @@ Temporary file 3 was created
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](rmtmp.md)<br/>
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>

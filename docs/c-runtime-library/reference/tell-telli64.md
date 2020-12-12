@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _tell _telli64'
 title: _tell, _telli64
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-ms.openlocfilehash: 27653f7b65acd1681cc96a99576a416a211fcd19
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d82b79a65edb7c88944336604ed329d67876094a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912244"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299559"
 ---
 # <a name="_tell-_telli64"></a>_tell, _telli64
 
@@ -80,7 +81,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_tell**, **_telli64**|\<GÇ. h>|
+|**_tell**, **_telli64**|\<io.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -117,7 +118,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_telltxt"></a>Giriş: crt_tell. txt
+### <a name="input-crt_telltxt"></a>Giriş: crt_tell.txt
 
 ```Input
 Line one.

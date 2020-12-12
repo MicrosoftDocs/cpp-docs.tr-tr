@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Protected (C++)'
 title: protected (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - protected keyword [C++], member access
 - protected keyword [C++]
 ms.assetid: 863d299f-fc0d-45d5-a1a7-bd24b7778a93
-ms.openlocfilehash: 25b25447737a075bcf4f02f1c3049c996fb4c678
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 17b74db6ae257e757253c12fdfeb4fa9bac2a3db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299117"
 ---
 # <a name="protected-c"></a>protected (C++)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 protected:

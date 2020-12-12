@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: va_arg, va_copy, va_end, va_start'
 title: va_arg, va_copy, va_end, va_start
 ms.date: 11/04/2016
 api_name:
@@ -40,18 +41,18 @@ helpviewer_keywords:
 - va_alist macro
 - va_copy macro
 ms.assetid: a700dbbd-bfe5-4077-87b6-3a07af74a907
-ms.openlocfilehash: d35cf3aea99b7e832afb7d2a8e0aaa9d008226fa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 368a08e3ceb78d09d11a9f661772c6b0abef471f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231292"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299286"
 ---
 # <a name="va_arg-va_copy-va_end-va_start"></a>va_arg, va_copy, va_end, va_start
 
 Değişken bağımsız değişken listelerine erişir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 type va_arg(
@@ -86,7 +87,7 @@ Bağımsız değişken listesi işaretçisi.
 *Src* 'den başlatılacak bağımsız değişkenlerin listesi işaretçisi
 
 *src*<br/>
-*Hedefe*kopyalanacak bağımsız değişkenlerin başlatılmış listesinin işaretçisi.
+*Hedefe* kopyalanacak bağımsız değişkenlerin başlatılmış listesinin işaretçisi.
 
 *prev_param*<br/>
 İlk isteğe bağlı bağımsız değişkenden önce gelen parametre.
@@ -97,7 +98,7 @@ Bağımsız değişken listesi işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Va_arg**, **va_copy**, **va_end**ve **va_start** makrolar, işlev değişken sayıda bağımsız değişken alırsa bir işleve bağımsız değişkenlere erişmek için taşınabilir bir yol sağlar. Makroların iki sürümü vardır: STDARG 'de tanımlanan makrolar. H ISO C99 standardına uygun; VARARGS içinde tanımlanan makrolar. H kullanım dışı bırakılmıştır, ancak ANSI c89 standardına göre yazılmış kodla geriye dönük uyumluluk için korunur.
+**Va_arg**, **va_copy**, **va_end** ve **va_start** makrolar, işlev değişken sayıda bağımsız değişken alırsa bir işleve bağımsız değişkenlere erişmek için taşınabilir bir yol sağlar. Makroların iki sürümü vardır: STDARG 'de tanımlanan makrolar. H ISO C99 standardına uygun; VARARGS içinde tanımlanan makrolar. H kullanım dışı bırakılmıştır, ancak ANSI c89 standardına göre yazılmış kodla geriye dönük uyumluluk için korunur.
 
 Bu makrolar, işlevin sabit sayıda gerekli bağımsız değişken aldığını ve ardından değişken sayıda isteğe bağlı bağımsız değişken aldığını varsayar. Gerekli bağımsız değişkenler işleve normal parametreler olarak gösterilir ve parametre adlarıyla erişilebilir. İsteğe bağlı bağımsız değişkenlere STDARG içindeki makrolarla erişilir. H (veya VARARGS. H c89 Standard 'dan önce yazılan kod için), bağımsız değişken listesindeki ilk isteğe bağlı bağımsız değişkene bir işaretçi ayarlar, listedeki bağımsız değişkenleri alır ve bağımsız değişken işleme tamamlandığında işaretçiyi sıfırlar.
 
@@ -105,14 +106,14 @@ STDARG 'de tanımlanan C standart makroları. H, aşağıdaki gibi kullanılır:
 
 - **va_start** , işleve geçirilen bağımsız değişkenler listesindeki ilk isteğe bağlı bağımsız değişkene *arg_ptr* ayarlar. *Arg_ptr* bağımsız değişkeni **va_list** türüne sahip olmalıdır. Bağımsız değişken *prev_param* bağımsız değişken listesindeki ilk isteğe bağlı bağımsız değişkenden hemen önce gelen gerekli parametrenin adıdır. *Prev_param* , YAZMAÇ depolama sınıfı ile bildirilirse, makronun davranışı tanımsızdır. **va_start** , **va_arg** ilk kez kullanılmadan önce kullanılmalıdır.
 
-- **va_arg** , *arg_ptr*tarafından verilen konumdan *türünde* bir değer alır ve bir sonraki bağımsız değişkenin başladığı yeri anlamak için *tür* boyutunu kullanarak listedeki bir sonraki bağımsız değişkene işaret eden *arg_ptr* artırır. **va_arg** , işlev içindeki bağımsız değişkenleri almak için herhangi bir sayıda kez kullanılabilir.
+- **va_arg** , *arg_ptr* tarafından verilen konumdan *türünde* bir değer alır ve bir sonraki bağımsız değişkenin başladığı yeri anlamak için *tür* boyutunu kullanarak listedeki bir sonraki bağımsız değişkene işaret eden *arg_ptr* artırır. **va_arg** , işlev içindeki bağımsız değişkenleri almak için herhangi bir sayıda kez kullanılabilir.
 
-- **va_copy** bir bağımsız değişken listesinin bir kopyasını geçerli durumunda yapar. *Src* parametresi zaten **va_start**ile başlatılmış olmalıdır; **va_arg** çağrılarıyla güncelleştirilmiş olabilir, ancak **va_end**sıfırlanmamalıdır. *Hedef* **va_arg** tarafından alınan sonraki bağımsız değişken *src*'den alınan sonraki bağımsız değişkenle aynıdır.
+- **va_copy** bir bağımsız değişken listesinin bir kopyasını geçerli durumunda yapar. *Src* parametresi zaten **va_start** ile başlatılmış olmalıdır; **va_arg** çağrılarıyla güncelleştirilmiş olabilir, ancak **va_end** sıfırlanmamalıdır. *Hedef* **va_arg** tarafından alınan sonraki bağımsız değişken *src*'den alınan sonraki bağımsız değişkenle aynıdır.
 
-- Tüm bağımsız değişkenler alındıktan sonra, **va_end** işaretçiyi **null**olarak sıfırlar. **va_end** , işlevin dönüşmeden önce **va_start** veya **va_copy** ile başlatılan her bağımsız değişken listesinde çağrılmalıdır.
+- Tüm bağımsız değişkenler alındıktan sonra, **va_end** işaretçiyi **null** olarak sıfırlar. **va_end** , işlevin dönüşmeden önce **va_start** veya **va_copy** ile başlatılan her bağımsız değişken listesinde çağrılmalıdır.
 
 > [!NOTE]
-> VARARGS içindeki makrolar. H kullanım dışıdır ve yalnızca ANSI c89 standardına göre yazılmış kodla geriye dönük uyumluluk için korunur. Diğer tüm durumlarda, stdarg 'lerdeki makroları kullanın. Olsun.
+> VARARGS içindeki makrolar. H kullanım dışıdır ve yalnızca ANSI c89 standardına göre yazılmış kodla geriye dönük uyumluluk için korunur. Diğer tüm durumlarda, STDARGS. H içindeki makroları kullanın.
 
 [/Clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)kullanılarak derlendiklerinde, bu makroları kullanan programlar, yerel ve ortak dil çalışma zamanı (CLR) tür sistemleri arasındaki farklılıklar nedeniyle beklenmedik sonuçlar oluşturabilir. Bu programı göz önünde bulundurun:
 
@@ -156,7 +157,7 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<stdio.h> '\<stdarg.h>
+**Üst bilgi:** \<stdio.h> ' \<stdarg.h>
 
 **Kullanım dışı üst bilgi:**\<varargs.h>
 

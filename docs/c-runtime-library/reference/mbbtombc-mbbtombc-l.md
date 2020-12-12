@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbbtombc _mbbtombc_l'
 title: _mbbtombc, _mbbtombc_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _mbbtombc_l function
 - _mbbtombc function
 ms.assetid: 78593389-b0fc-43b6-8c1f-2a6bf702d64e
-ms.openlocfilehash: b2088ea83729a74a60e75d1710529480f34cd638
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 20aa3c9abdc9d4dad1f6da50abdb9977f2b22694
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299663"
 ---
 # <a name="_mbbtombc-_mbbtombc_l"></a>_mbbtombc, _mbbtombc_l
 
@@ -70,7 +71,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Mbbtombc** başarıyla *c*'yi dönüştürdüğünde çok baytlı bir karakter döndürür; Aksi takdirde, *c*döndürür.
+**_Mbbtombc** başarıyla *c*'yi dönüştürdüğünde çok baytlı bir karakter döndürür; Aksi takdirde, *c* döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -78,7 +79,7 @@ Kullanılacak yerel ayar.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevin sürümleri aynıdır, çünkü **_mbbtombc** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır **_mbbtombc_l** ve bunun yerine geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Önceki sürümlerde **_mbbtombc** **hantozen**olarak adlandırılmıştır. Yeni kod için **_mbbtombc**kullanın.
+Önceki sürümlerde **_mbbtombc** **hantozen** olarak adlandırılmıştır. Yeni kod için **_mbbtombc** kullanın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -86,8 +87,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbbtombc**|\<mbstring. h>|
-|**_mbbtombc_l**|\<mbstring. h>|
+|**_mbbtombc**|\<mbstring.h>|
+|**_mbbtombc_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

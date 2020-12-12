@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __ptr32 __ptr64'
 title: __ptr32, __ptr64
 ms.date: 10/09/2018
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - _ptr64 keyword [C++]
 - __ptr32 keyword [C++]
 ms.assetid: afb563d8-7458-4fe7-9c30-bd4b5385a59f
-ms.openlocfilehash: 5ff2fa22c8a466252cfaf8b80dc8d56774aff58e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3393cdfddf08ba2ae5366cacae8554faa7c4a50c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299039"
 ---
 # <a name="__ptr32-__ptr64"></a>__ptr32, __ptr64
 
@@ -39,7 +40,7 @@ int * __ptr64 p64;
 32 bitlik bir sistemde, ile belirtilen bir işaretçi **`__ptr64`** 32 bitlik bir işaretçiye kesilir. 64 bitlik bir sistemde, ile belirtilen bir işaretçi **`__ptr32`** 64 bit işaretçiye zorlanır.
 
 > [!NOTE]
-> **`__ptr32`** **`__ptr64`** **/Clr: Pure**ile derleme yaparken veya kullanamazsınız. Aksi halde, derleyici hatası C2472 oluşturulur. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
+> **`__ptr32`** **`__ptr64`** **/Clr: Pure** ile derleme yaparken veya kullanamazsınız. Aksi halde, derleyici hatası C2472 oluşturulur. **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
 Önceki sürümlerle uyumluluk için, **_ptr32** ve **_ptr64** , için eş anlamlılardır **`__ptr32`** ve **`__ptr64`** [/za \( Disable dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) gibi derleyici seçeneği belirtilmiştir.
 

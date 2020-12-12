@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbccpy _mbccpy_l'
 title: _mbccpy, _mbccpy_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _mbccpy function
 - mbccpy_l function
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
-ms.openlocfilehash: a265a37ba4c16dd15e6b50035dcc65bc8afbe7c7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a5d63a2d4ccd623d035fdc423774d6a344d107f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919576"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299598"
 ---
 # <a name="_mbccpy-_mbccpy_l"></a>_mbccpy, _mbccpy_l
 
@@ -81,9 +82,9 @@ Kullanılacak yerel ayar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbccpy** işlevi bir çok baytlı karakteri *src* 'den *hedefe*kopyalar.
+**_Mbccpy** işlevi bir çok baytlı karakteri *src* 'den *hedefe* kopyalar.
 
-Bu işlev, parametrelerini doğrular. **_Mbccpy** *hedef* veya *src*için null bir işaretçi geçirtiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL**olarak ayarlanır.
+Bu işlev, parametrelerini doğrular. **_Mbccpy** *hedef* veya *src* için null bir işaretçi geçirtiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır.
 
 **_mbccpy** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_mbccpy_l** , **_mbccpy** bir yerel ayara bağımlı davranış için geçirilen yerel ayarı kullanması dışında, **_mbccpy_l** aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -102,13 +103,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbccpy**|\<Mbctype. h>|
-|**_mbccpy_l**|\<Mbctype. h>|
+|**_mbccpy**|\<mbctype.h>|
+|**_mbccpy_l**|\<mbctype.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

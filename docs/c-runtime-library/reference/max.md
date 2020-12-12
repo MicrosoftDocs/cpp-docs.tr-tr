@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __max'
 title: __max
 ms.date: 04/05/2018
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - maximum macro
 - __max macro
 ms.assetid: 05c936f6-0e22-45d6-a58d-4bc102e9dae2
-ms.openlocfilehash: 4cdfd99ec344cd357900d76dfc7f9400046e448a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 709bbb7aee48e65fdd3feb21eb1984135faae2f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299662"
 ---
 # <a name="__max"></a>__max
 
@@ -56,13 +57,13 @@ Karşılaştırılacak herhangi bir sayısal tür değeri.
 
 **__Max** makro iki değeri karşılaştırır ve daha büyük bir değeri döndürür. Bağımsız değişkenler, imzalanmış veya imzasız herhangi bir sayısal veri türü olabilir. Bağımsız değişkenlerin ve dönüş değerinin her ikisi de aynı veri türünde olmalıdır.
 
-Döndürülen bağımsız değişken makro tarafından iki kez değerlendirilir. Bağımsız değişken, `*p++`gibi değerlendiriliyorsa değeri değiştiren bir ifadesiyse bu beklenmeyen sonuçlara neden olabilir.
+Döndürülen bağımsız değişken makro tarafından iki kez değerlendirilir. Bağımsız değişken, değerlendiriliyorsa değeri değiştiren bir ifadesiyse, bu beklenmeyen sonuçlara yol açabilir `*p++` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Makrosu|Gerekli başlık|
+|Makroya|Gerekli başlık|
 |-------------|---------------------|
-|**__max**|\<Stdlib. h >|
+|**__max**|\<stdlib.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -70,5 +71,5 @@ Daha fazla bilgi için bkz. [__min](min.md)örneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [__min](min.md)<br/>

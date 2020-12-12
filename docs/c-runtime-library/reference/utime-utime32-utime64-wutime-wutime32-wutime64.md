@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64'
 title: _utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 ms.date: 4/2/2020
 api_name:
@@ -66,12 +67,12 @@ helpviewer_keywords:
 - tutime64 function
 - tutime32 function
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
-ms.openlocfilehash: dbff557cd116eb1df44f015b17716408c8dc54c2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7ec25f60c508464abf8232419f8867bc3f0a20fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299351"
 ---
 # <a name="_utime-_utime32-_utime64-_wutime-_wutime32-_wutime64"></a>_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 
@@ -131,9 +132,9 @@ Değişiklik tarihi gece yarısından sonra, 1 Ocak 1970 ve kullanılan işlevin
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Utime** işlevi, *filename*tarafından belirtilen dosyanın değiştirilme saatini ayarlar. İşlemin saati değiştirmek için dosyaya yazma erişimi olmalıdır. Windows işletim sisteminde, **_utimbuf** yapısındaki erişim süresini ve değiştirme saatini değiştirebilirsiniz. *Süreler* **null** bir işaretçisiyse, değiştirme saati geçerli yerel saate ayarlanır. Aksi takdirde, *süreler* , sys\utimeiçinde tanımlanan **_utimbuf**türünde bir yapıya işaret etmelidir. Olsun.
+**_Utime** işlevi, *filename* tarafından belirtilen dosyanın değiştirilme saatini ayarlar. İşlemin saati değiştirmek için dosyaya yazma erişimi olmalıdır. Windows işletim sisteminde, **_utimbuf** yapısındaki erişim süresini ve değiştirme saatini değiştirebilirsiniz. *Süreler* **null** bir işaretçisiyse, değiştirme saati geçerli yerel saate ayarlanır. Aksi takdirde, *süreler* , SYS\UTIME.exe içinde tanımlanan **_utimbuf** türünde bir yapıya işaret etmelidir.
 
-**_Utimbuf** yapısı, dosya değiştirme tarihlerini değiştirmek için **_utime** tarafından kullanılan dosya erişimini ve değişiklik zamanlarını depolar. Yapının her ikisi de **time_t**aşağıdaki alanları vardır:
+**_Utimbuf** yapısı, dosya değiştirme tarihlerini değiştirmek için **_utime** tarafından kullanılan dosya erişimini ve değişiklik zamanlarını depolar. Yapının her ikisi de **time_t** aşağıdaki alanları vardır:
 
 | Alan |   |
 |-------|---|
@@ -144,7 +145,7 @@ Değişiklik tarihi gece yarısından sonra, 1 Ocak 1970 ve kullanılan işlevin
 
 **_utime** , **_utime** dosya *adı* bağımsız değişkeninin bir dosya adı ya da bir dosyanın yolu olan dosya tanımlayıcısı yerine bir dosya adı olması dışında **_futime** aynıdır.
 
-**_wutime** , **_utime**geniş karakterli bir sürümüdür; _wutime *dosya adı* bağımsız **_wutime** değişkeni, geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
+**_wutime** , **_utime** geniş karakterli bir sürümüdür; _wutime *dosya adı* bağımsız  değişkeni, geniş karakterli bir dizedir. Bu işlevler, aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -160,9 +161,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli üst bilgiler|İsteğe bağlı üstbilgiler|
 |-------------|----------------------|----------------------|
-|**_utime**, **_utime32**, **_utime64**|\<sys/utime. h>|\<errno. h>|
-|**_utime64**|\<sys/utime. h>|\<errno. h>|
-|**_wutime**|\<utime. h> veya \<wchar. h>|\<errno. h>|
+|**_utime**, **_utime32**, **_utime64**|\<sys/utime.h>|\<errno.h>|
+|**_utime64**|\<sys/utime.h>|\<errno.h>|
+|**_wutime**|\<utime.h> veya \<wchar.h>|\<errno.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
