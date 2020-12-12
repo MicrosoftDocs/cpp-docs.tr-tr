@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sınıf kitaplığına genel bakış'
 title: Sınıf Kitaplığına Genel Bakış
 ms.date: 09/17/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - class libraries, MFC
 - class libraries
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
-ms.openlocfilehash: bf30f1b0aa83ef002337b76601f04c7103963441
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 458fc06aa8e13a2f2f7024c11a822496bccefbea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620740"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176697"
 ---
 # <a name="class-library-overview"></a>Sınıf Kitaplığına Genel Bakış
 
@@ -23,23 +24,23 @@ Bu genel bakış, Microsoft Foundation Class Kitaplığı (MFC) sürüm 9,0 ' de
 
 Kitaplığın sınıfları aşağıdaki kategorilerde sunulmuştur:
 
-- [Kök Sınıf: CObject](root-class-cobject.md)
+- [Kök sınıf: CObject](root-class-cobject.md)
 
 - [MFC uygulama mimarisi sınıfları](mfc-application-architecture-classes.md)
 
   - [Uygulama ve Iş parçacığı destek sınıfları](application-and-thread-support-classes.md)
 
-  - [Komut Yönlendirme Sınıfları](command-routing-classes.md)
+  - [Komut yönlendirme sınıfları](command-routing-classes.md)
 
   - [Belge sınıfları](document-classes.md)
 
-  - [Görünüm Sınıfları (Mimari)](view-classes-architecture.md)
+  - [Görünüm sınıfları (mimari)](view-classes-architecture.md)
 
   - [Çerçeve penceresi sınıfları (mimari)](frame-window-classes-architecture.md)
 
   - [Belge-şablon sınıfları](document-template-classes.md)
 
-- [Pencere, İletişim Kutusu ve Denetim Sınıfları](window-dialog-and-control-classes.md)
+- [Pencere, Iletişim kutusu ve denetim sınıfları](window-dialog-and-control-classes.md)
 
   - [Çerçeve penceresi sınıfları (Windows)](frame-window-classes-windows.md)
 
@@ -51,31 +52,31 @@ Kitaplığın sınıfları aşağıdaki kategorilerde sunulmuştur:
 
   - [Denetim çubuğu sınıfları](control-bar-classes.md)
 
-- [Sınıf Çizme ve Boyama](drawing-and-printing-classes.md)
+- [Sınıfları çizme ve yazdırma](drawing-and-printing-classes.md)
 
-  - [Çıktı (Cihaz Bağlamı) Sınıfları](output-device-context-classes.md)
+  - [Çıktı (cihaz bağlamı) sınıfları](output-device-context-classes.md)
 
   - [Çizim aracı sınıfları](drawing-tool-classes.md)
 
-- [Basit Veri Türü Sınıfları](simple-data-type-classes.md)
+- [Basit veri türü sınıfları](simple-data-type-classes.md)
 
 - [Dizi, liste ve eşleme sınıfları](array-list-and-map-classes.md)
 
   - [Diziler, listeler ve haritalar için şablon sınıfları](template-classes-for-arrays-lists-and-maps.md)
 
-  - [Kullanıma Hazır Dizi Sınıfları](ready-to-use-array-classes.md)
+  - [Kullanıma hazırlama dizisi sınıfları](ready-to-use-array-classes.md)
 
-  - [Kullanıma Hazır Liste Sınıfları](ready-to-use-list-classes.md)
+  - [Kullanıma hazırlama liste sınıfları](ready-to-use-list-classes.md)
 
   - [Kullanıma hazırlama eşleme sınıfları](ready-to-use-map-classes.md)
 
-- [Dosya ve Veritabanı Sınıfları](file-and-database-classes.md)
+- [Dosya ve veritabanı sınıfları](file-and-database-classes.md)
 
   - [Dosya g/ç sınıfları](file-i-o-classes.md)
 
-  - [DAO Sınıfları](dao-classes.md)
+  - [DAO sınıfları](dao-classes.md)
 
-  - [ODBC Sınıfları](odbc-classes.md)
+  - [ODBC sınıfları](odbc-classes.md)
 
   - [OLE DB sınıfları](ole-db-classes.md)
 
@@ -83,9 +84,9 @@ Kitaplığın sınıfları aşağıdaki kategorilerde sunulmuştur:
 
   - [Windows Sockets sınıfları](windows-sockets-classes.md)
 
-  - [Win32 Internet Sınıfları](win32-internet-classes.md)
+  - [Win32 Internet sınıfları](win32-internet-classes.md)
 
-- [OLE Sınıfları](ole-classes.md)
+- [OLE sınıfları](ole-classes.md)
 
   - [OLE kapsayıcı sınıfları](ole-container-classes.md)
 
@@ -93,17 +94,17 @@ Kitaplığın sınıfları aşağıdaki kategorilerde sunulmuştur:
 
   - [OLE sürükle ve bırak ve Veri Aktarımı sınıfları](ole-drag-and-drop-and-data-transfer-classes.md)
 
-  - [OLE Ortak İletişim Kutusu Sınıfları](ole-common-dialog-classes.md)
+  - [OLE ortak Iletişim kutusu sınıfları](ole-common-dialog-classes.md)
 
-  - [OLE Otomasyon Sınıfları](ole-automation-classes.md)
+  - [OLE Otomasyon sınıfları](ole-automation-classes.md)
 
-  - [OLE Denetim Sınıfları](ole-control-classes.md)
+  - [OLE denetim sınıfları](ole-control-classes.md)
 
-  - [Etkin Belge Sınıfları](active-document-classes.md)
+  - [Etkin belge sınıfları](active-document-classes.md)
 
   - [OLE ile Ilgili sınıflar](ole-related-classes.md)
 
-- [Hata Ayıklama ve Özel Durum Sınıfları](debugging-and-exception-classes.md)
+- [Hata ayıklama ve özel durum sınıfları](debugging-and-exception-classes.md)
 
   - [Destek sınıflarında hata ayıklama](debugging-support-classes.md)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: Pano: diğer biçimleri ekleme'
 title: 'Pano: Diğer Biçimleri Ekleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,22 +10,22 @@ helpviewer_keywords:
 - registering custom Clipboard data formats
 - custom Clipboard data formats
 ms.assetid: aea58159-65ed-4385-aeaa-3d9d5281903b
-ms.openlocfilehash: 52089364a6be423c69a7031cd0d99e1924de1444
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 3259660725f324436cc606574eb36499f74e7054
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626070"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176645"
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer Biçimleri Ekleme
 
-Bu konu, özellikle OLE desteği için desteklenen biçimlerin listesini genişletmeyi açıklamaktadır. [Pano: veri kopyalama ve yapıştırma](clipboard-copying-and-pasting-data.md) Pano 'dan kopyalamayı ve yapıştırmayı desteklemek için gereken en düşük uygulamayı tanımlar. Bu tümü uygularsanız, panoya yerleştirilmiş olan tek Biçim **CF_METAFILEPICT**, **cf_embedsource**, **CF_OBJECTDESCRIPTOR**ve muhtemelen **CF_LINKSOURCE**. Çoğu uygulama, panoda bu üçünden daha fazla biçime sahip olacaktır.
+Bu konu, özellikle OLE desteği için desteklenen biçimlerin listesini genişletmeyi açıklamaktadır. [Pano: veri kopyalama ve yapıştırma](clipboard-copying-and-pasting-data.md) Pano 'dan kopyalamayı ve yapıştırmayı desteklemek için gereken en düşük uygulamayı tanımlar. Bu tümü uygularsanız, panoya yerleştirilmiş olan tek Biçim **CF_METAFILEPICT**, **cf_embedsource**, **CF_OBJECTDESCRIPTOR** ve muhtemelen **CF_LINKSOURCE**. Çoğu uygulama, panoda bu üçünden daha fazla biçime sahip olacaktır.
 
-## <a name="registering-custom-formats"></a><a name="_core_registering_custom_formats"></a>Özel biçimleri kaydetme
+## <a name="registering-custom-formats"></a><a name="_core_registering_custom_formats"></a> Özel biçimleri kaydetme
 
 Kendi özel biçimlerinizi oluşturmak için özel Pano biçimini kaydederken kullandığınız yordamın aynısını izleyin: biçimin adını **RegisterClipboardFormat** işlevine geçirin ve dönüş DEĞERINI biçim kimliği olarak kullanın.
 
-## <a name="placing-formats-on-the-clipboard"></a><a name="_core_placing_formats_on_the_clipboard"></a>Biçimleri Panoya yerleştirme
+## <a name="placing-formats-on-the-clipboard"></a><a name="_core_placing_formats_on_the_clipboard"></a> Biçimleri Panoya yerleştirme
 
 Panoya yerleştirilenlere daha fazla biçim eklemek için, ya `OnGetClipboardData` da `COleClientItem` `COleServerItem` (kopyalanacak verilerin yerel olup olmadığına bağlı olarak) türetilmiş sınıftaki işlevi geçersiz kılmanız gerekir. Bu işlevde, aşağıdaki yordamı kullanmanız gerekir.
 
@@ -48,4 +49,4 @@ Bu teknik MFC OLE örnek programı [Hiersvr](../overview/visual-cpp-samples.md) 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pano: OLE Pano Mekanizmasını Kullanma](clipboard-using-the-ole-clipboard-mechanism.md)
+[Pano: OLE Pano mekanizmasını kullanma](clipboard-using-the-ole-clipboard-mechanism.md)

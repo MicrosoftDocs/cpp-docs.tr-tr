@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2751'
 title: Derleyici hatası C2751
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2751
 ms.assetid: 44a3abdf-8a87-4a09-b34b-532c220c310a
-ms.openlocfilehash: 7b9d8ca4acbbda011cdfa7a467cbb8323dcc7cc5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5eb41526946ee4318d8a1e96b04a527c828c914c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174461"
 ---
 # <a name="compiler-error-c2751"></a>Derleyici hatası C2751
 

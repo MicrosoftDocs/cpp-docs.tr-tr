@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır:/clr derlemesini algılama'
 title: 'Nasıl yapılır: algılama-CLR derlemesi'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - compilation, detecting /clr
 - /clr compiler option [C++], detecting use of
 ms.assetid: a9310045-4810-4637-a64a-0b31a08791c1
-ms.openlocfilehash: 42b2952e3b63023ca26c6b1f7d0ccb8871082499
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 25cd241a08f79bcae629c05fb3c7982a387120ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988216"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175722"
 ---
 # <a name="how-to-detect-clr-compilation"></a>Nasıl yapılır: /clr Derlemesini Algılama
 
-Bir modülün **/clr**ile derlenmiş olup olmadığını görmek için `_MANAGED` veya `_M_CEE` makrosunu kullanın. Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
+`_MANAGED` `_M_CEE` Bir modülün **/clr** ile derlenmiş olup olmadığını görmek için veya makrosunu kullanın. Daha fazla bilgi için bkz. [/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).
 
 Makrolar hakkında daha fazla bilgi için bkz. [önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md).
 
@@ -37,4 +38,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

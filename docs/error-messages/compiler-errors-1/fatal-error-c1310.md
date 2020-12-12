@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1310'
 title: Önemli hata C1310
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1310
 ms.assetid: ac48aa51-8023-42fe-b844-3f8bf228fbef
-ms.openlocfilehash: bd8baeb3cfe1624eaf292b3a54fc15a46ea68e11
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: edd4cb75c77ec272ddd3f985b4bfefac93e04e83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74746987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177763"
 ---
 # <a name="fatal-error-c1310"></a>Önemli hata C1310
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3209'
 title: Derleyici hatası C3209
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3209
 ms.assetid: 1de44e39-69d1-4894-8f89-ff92136e8e5d
-ms.openlocfilehash: 79a5bc77f0e18a8e55954e25e67a836af8157596
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 81b2453a8e6318c082d6cd8838cc4a384ba80517
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755141"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173928"
 ---
 # <a name="compiler-error-c3209"></a>Derleyici hatası C3209
 

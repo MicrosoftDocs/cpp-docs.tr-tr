@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3214'
 title: Derleyici hatası C3214
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3214
 ms.assetid: 49ee4a9a-2549-4adb-9d3a-38e154303c2e
-ms.openlocfilehash: 4eda0abd0bbfb3bf5757e39062fa3c229f698624
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8f1b558b37e3a9f4daa08ecdd2f90b0f7a74a2a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173824"
 ---
 # <a name="compiler-error-c3214"></a>Derleyici hatası C3214
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: AsyncStatusInternal numaralandırması'
 title: AsyncStatusInternal Numaralandırması
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - AsyncStatusInternal enumeration
 ms.assetid: b783923f-3f1c-4487-9384-be572cbc62d7
-ms.openlocfilehash: 0eadd1e3a287feecd36b00b231b42c31218352c1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3227699a0e7b8933dc5839e65fb3489328d3b1f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175800"
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal Numaralandırması
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum AsyncStatusInternal;
@@ -26,24 +27,24 @@ enum AsyncStatusInternal;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman uyumsuz işlemlerin durumu ve `Windows::Foundation::AsyncStatus` numaralandırması arasındaki iç numaralandırmalar arasındaki eşlemeyi belirtir.
+Zaman uyumsuz işlemlerin ve numaralandırmanın durumunun iç numaralandırmalar arasındaki eşlemeyi belirtir `Windows::Foundation::AsyncStatus` .
 
 ## <a name="members"></a>Üyeler
 
 `_Created`<br/>
-`::Windows::Foundation::AsyncStatus::Created` eşdeğerdir
+Eşdeğer `::Windows::Foundation::AsyncStatus::Created`
 
 `_Started`<br/>
-`::Windows::Foundation::AsyncStatus::Started` eşdeğerdir
+Eşdeğer `::Windows::Foundation::AsyncStatus::Started`
 
 `_Completed`<br/>
-`::Windows::Foundation::AsyncStatus::Completed` eşdeğerdir
+Eşdeğer `::Windows::Foundation::AsyncStatus::Completed`
 
 `_Cancelled`<br/>
-`::Windows::Foundation::AsyncStatus::Cancelled` eşdeğerdir
+Eşdeğer `::Windows::Foundation::AsyncStatus::Cancelled`
 
 `_Error`<br/>
-`::Windows::Foundation::AsyncStatus::Error` eşdeğerdir
+Eşdeğer `::Windows::Foundation::AsyncStatus::Error`
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -53,4 +54,4 @@ Zaman uyumsuz işlemlerin durumu ve `Windows::Foundation::AsyncStatus` numaralan
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

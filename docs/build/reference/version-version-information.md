@@ -1,4 +1,5 @@
 ---
+description: :/VERSION (sürüm bilgileri) hakkında daha fazla bilgi
 title: /VERSION (Sürüm Bilgileri)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - /VERSION linker option
 - VERSION linker option
 ms.assetid: b86d0e86-dca6-4316-aee2-d863ccb9f223
-ms.openlocfilehash: 626461fc7a9fc6dd7b6578e836733d154a66862a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c6a27e4829c4acf66db2887e01a147aceb1c5d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316502"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176372"
 ---
 # <a name="version-version-information"></a>/VERSION (Sürüm Bilgileri)
 
@@ -26,28 +27,28 @@ ms.locfileid: "62316502"
 
 ## <a name="arguments"></a>Arguments
 
-*Ana* ve *küçük*<br/>
-İstediğiniz .exe veya .dll dosyasının üst bilgisinde sürüm numarası.
+*büyük* ve *küçük*<br/>
+. Exe veya. dll dosyasının üst bilgisinde istediğiniz sürüm numarası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ VERSION seçeneği .exe veya .dll dosyasının üst bilgisinde sürüm numarası put söyler. DUMPBIN kullanma [OPTIONAL ](headers.md) /VERSION etkisini görmek için isteğe bağlı üstbilgi değerleri alanının görüntü sürümünü görmek için.
+/VERSION seçeneği, bağlayıcının. exe veya. dll dosyasının üstbilgisine bir sürüm numarası vermesini söyler. /Version'in etkisini görmek için Isteğe bağlı üst BILGI DEĞERLERININ görüntü sürümü alanını görmek için DUMPBIN [/Headers](headers.md) komutunu kullanın.
 
-*Ana* ve *küçük* bağımsız değişkenler 0 ile 65.535 aralığındaki ondalık sayı. Varsayılan değer 0,0 sürümüdür.
+*Büyük* ve *küçük* bağımsız değişkenler 0 ile 65.535 arasında ondalık sayılardır. Varsayılan sürüm 0,0 ' dir.
 
-/ VERSION ile belirtilen bilgileri dosya Gezgini'nde özelliklerini görüntülerken bir uygulama için görüntülenen sürüm bilgilerini etkilemez. Bu sürüm bilgileri, uygulama oluşturmak için kullanılan bir kaynak dosyasından gelir. Bkz: [sürüm bilgileri Düzenleyicisi](../../windows/version-information-editor.md) daha fazla bilgi için.
+/VERSION ile belirtilen bilgiler, dosya Gezgini 'nde özelliklerini görüntülediğinizde bir uygulama için görüntülenen sürüm bilgilerini etkilemez. Bu sürüm bilgileri, uygulamayı oluşturmak için kullanılan bir kaynak dosyasından gelir. Daha fazla bilgi için bkz. [sürüm bilgileri Düzenleyicisi](../../windows/version-information-editor.md) .
 
-Bir sürüm numarası eklemek için başka bir yöntem, [sürüm](version-c-cpp.md) modül-tanımlama bildirimi.
+Sürüm numarası eklemenin başka bir yolu ise [Sürüm](version-c-cpp.md) modülü tanımı deyimidir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **genel** özellik sayfası.
+1. **Genel** Özellik sayfasına tıklayın.
 
-1. Değiştirme **sürüm** özelliği.
+1. **Version** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -56,4 +57,4 @@ Bir sürüm numarası eklemek için başka bir yöntem, [sürüm](version-c-cpp.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

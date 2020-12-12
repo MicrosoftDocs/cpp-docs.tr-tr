@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2521'
 title: Derleyici hatası C2521
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2521
 ms.assetid: 6042821b-e345-4a54-a7e9-a2c9019ea016
-ms.openlocfilehash: cabd13b3292995d2baa8c5c66e9bc9ee85118c44
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a85ae6db2bd2f41ecbdd3aef385068cd2515e2bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74746454"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177737"
 ---
 # <a name="compiler-error-c2521"></a>Derleyici hatası C2521
 

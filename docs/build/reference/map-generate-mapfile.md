@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/MAP (mapfile üret)
 title: /MAP (Eşlem Dosyası Oluştur)
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - mapfiles, specifying file name
 - /MAP linker option
 ms.assetid: 9ccce53d-4e36-43da-87b0-7603ddfdea63
-ms.openlocfilehash: 9a45fd5ea44b8908e77f847275bde42b86385cdb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 28e3823099b4893dcf344a0b1aae99577d850821
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321611"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176437"
 ---
 # <a name="map-generate-mapfile"></a>/MAP (Eşlem Dosyası Oluştur)
 
@@ -30,44 +31,44 @@ ms.locfileid: "62321611"
 
 ## <a name="arguments"></a>Arguments
 
-*Dosya adı*<br/>
-Mapfile kullanıcı tarafından belirtilen adı. Varsayılan adını değiştirir.
+*filename*<br/>
+Mapfile için Kullanıcı tarafından belirtilen bir ad. Varsayılan adı değiştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Map seçeneği bağlayıcıya eşlem dosyası oluşturmasını söyler.
+/MAP seçeneği, bağlayıcıya bir mapfile oluşturmasını söyler.
 
-Varsayılan olarak, bağlayıcı temel programının adını ve uzantısını .map ile eşlem dosyası adı. İsteğe bağlı *filename* bir eşlem dosyası için varsayılan adı geçersiz kılmanıza da olanak tanır.
+Varsayılan olarak, bağlayıcı map dosyasını programın temel adıyla ve. Map uzantısıyla adlandırır. İsteğe bağlı *Dosya* adı, bir mapfile için varsayılan adı geçersiz kılmanızı sağlar.
 
-Bir eşlem bağlantılandırılan program hakkında aşağıdaki bilgileri içeren bir metin dosyasıdır:
+Eşlem dosyası, bağlanan programla ilgili olarak aşağıdaki bilgileri içeren bir metin dosyasıdır:
 
-- Dosyanın temel adı Modül adı
+- Dosyanın temel adı olan modül adı
 
-- (Dosya sisteminden değil) programı dosya üstbilgisi itibaren zaman damgası
+- Program dosyası başlığından zaman damgası (dosya sisteminden değil)
 
-- Programında, her grubun başlangıç adresi ile gruplarının bir listesini (olarak *bölümü*:*uzaklığı*), uzunluğunu, grup adı ve sınıfı
+- Her grubun başlangıç adresi ( *bölüm*:*konum*), uzunluk, Grup adı ve sınıf ile programdaki grupların listesi
 
-- Her adresi ile ortak semboller listesini (olarak *bölümü*:*uzaklığı*), sembol adı, düz bir adres ve simgenin tanımlandığı .obj dosyası
+- Her adresle ( *bölüm*:*konum* olarak), sembol adı, düz adres ve bir simgenin tanımlandığı. obj dosyasının bulunduğu genel simgelerin listesi
 
-- Giriş noktası (olarak *bölümü*:*uzaklığı*)
+- Giriş noktası ( *bölüm*:*konum*)
 
-[Mapınfo](mapinfo-include-information-in-mapfile.md) seçeneği mapfile içinde dahil edilecek ek bilgiler belirtir.
+[/MapInfo](mapinfo-include-information-in-mapfile.md) seçeneği, mapfile 'a dahil edilecek ek bilgileri belirtir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **hata ayıklama** özellik sayfası.
+1. **Hata ayıklama** Özellik sayfasına tıklayın.
 
-1. Değiştirme **harita dosyası oluştur** özelliği.
+1. **Eşleme dosyası oluştur** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateMapFile%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapFileName%2A>.
+1. Bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateMapFile%2A> <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapFileName%2A> . ve.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

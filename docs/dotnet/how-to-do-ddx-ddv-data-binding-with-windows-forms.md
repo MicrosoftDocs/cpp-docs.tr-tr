@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: Windows Forms ile DDX/DDV veri bağlamayı yapma'
 title: 'Nasıl yapılır: Windows Forms ile DDX-DDV veri bağlaması yapma'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC [C++], hosting a Windows Forms Control
 - Windows Forms [C++], MFC support
 ms.assetid: b2957370-cf1f-4779-94ac-228cd393686c
-ms.openlocfilehash: a0759eba1c55e72f2c0a99964b0b2d254df82a25
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 55dfdaac595b6de0369d7db555c40b8cd38d6c01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175657"
 ---
 # <a name="how-to-do-ddxddv-data-binding-with-windows-forms"></a>Nasıl yapılır: Windows Forms ile DDX/DDV Veri Bağlaması Yapma
 

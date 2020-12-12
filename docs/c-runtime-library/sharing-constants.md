@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sabitleri paylaşma'
 title: Paylaşım Sabitleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - _SH_DENYNO constant
 - SH_COMPAT constant
 ms.assetid: 95fadc3a-55dc-473d-98b5-e8211900465d
-ms.openlocfilehash: dc27b3af0d430aedb8159b4591004f46d197ccd5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7cda55d16a9b59c30e9fdbce47c565552839e792
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62268319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176177"
 ---
 # <a name="sharing-constants"></a>Paylaşım Sabitleri
 
-Dosya Paylaşımı için sabitler modları.
+Dosya paylaşım modları için sabitler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <share.h>
@@ -39,20 +40,20 @@ Dosya Paylaşımı için sabitler modları.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Shflag* bağımsız değişken bir veya daha fazla bildirim sabitleri oluşur Paylaşım modu belirler. Bunlar ile birleştirilebilir *oflag* bağımsız değişkenleri (bkz [dosya sabitleri](../c-runtime-library/file-constants.md)).
+*Shflag* bağımsız değişkeni, bir veya daha fazla bildirim sabitinden oluşan paylaşım modunu belirler. Bunlar, *oflag* bağımsız değişkenleriyle birleştirilebilir (bkz. [Dosya sabitleri](../c-runtime-library/file-constants.md)).
 
-Aşağıdaki tabloda, sabitleri ve anlamlarını listeler:
+Aşağıdaki tabloda sabitler ve anlamları listelenmektedir:
 
-|Sabit|Açıklama|
+|Sabit|Anlamı|
 |--------------|-------------|
-|`_SH_DENYRW`|Okuma ve dosyaya yazma erişimi engeller|
-|`_SH_DENYWR`|Dosya yazma erişimi engeller|
-|`_SH_DENYRD`|Dosya okuma erişimi engeller|
-|`_SH_DENYNO`|İzinleri okuma ve yazma erişimi|
-|`_SH_SECURE`|Güvenli modu ayarlar (paylaşılan okuma, yazma için açar).|
+|`_SH_DENYRW`|Dosyaya okuma ve yazma erişimini reddeder|
+|`_SH_DENYWR`|Dosyaya yazma erişimini reddeder|
+|`_SH_DENYRD`|Dosyaya okuma erişimini reddeder|
+|`_SH_DENYNO`|Okuma ve yazma erişimine izin verir|
+|`_SH_SECURE`|Güvenli modu (paylaşılan okuma, dışlamalı yazma erişimi) ayarlar.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

@@ -1,5 +1,6 @@
 ---
-title: işleç&lt; (&lt;örnek kapsayıcısı&gt;)
+description: ': İşleci hakkında daha fazla bilgi edinin &lt; ( &lt; örnek kapsayıcı &gt; )'
+title: işleç &lt; ( &lt; örnek kapsayıcı &gt; )
 ms.date: 11/04/2016
 f1_keywords:
 - std::operator<
@@ -14,21 +15,21 @@ helpviewer_keywords:
 - < operator
 - operator <, valarrays
 ms.assetid: 31027dd6-53be-428b-b950-1dcb25393597
-ms.openlocfilehash: 6ef43fb762c4da71062fc846048f21c0112bfafc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e7bba9be33a2dc4dea6257b159966c867bb33929
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215273"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176489"
 ---
-# <a name="operatorlt-ltsample-containergt"></a>işleç&lt; (&lt;örnek kapsayıcısı&gt;)
+# <a name="operatorlt-ltsample-containergt"></a>işleç &lt; ( &lt; örnek kapsayıcı &gt; )
 
 > [!NOTE]
-> Bu konu, C++ standart kitaplıkta kullanılan C++ kapsayıcıların Işlevsel bir örneği olarak Microsoft belgelerimde yer almaktadır. Daha fazla bilgi için bkz [ C++ . standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konu, C++ standart kitaplığı 'nda kullanılan kapsayıcılardan oluşan işlevsel bir örnek olarak Microsoft C++ belgelerinde yer almaktadır. Daha fazla bilgi için bkz. [C++ standart kitaplık kapsayıcıları](../standard-library/stl-containers.md).
 
-Sınıf şablonu [kapsayıcısının](../standard-library/sample-container-class.md)iki nesnesini karşılaştırmak için **işleç <** aşırı yükler.
+Sınıf şablonu [kapsayıcısının](../standard-library/sample-container-class.md)iki nesnesini karşılaştırmak için **işleç<** aşırı yükler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Ty>
@@ -43,6 +44,6 @@ bool operator<(
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<örnek kapsayıcı >](../standard-library/sample-container.md)\
-\ [başla](../standard-library/container-class-begin.md)
+[\<sample container>](../standard-library/sample-container.md)\
+[başladı](../standard-library/container-class-begin.md)\
 [erer](../standard-library/container-class-end.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: uygulama ve Iş parçacığı destek sınıfları'
 title: Uygulama ve İş Parçacığı Destek Sınıfları
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - synchronization classes [MFC], multithreading
 - application support classes [MFC]
 ms.assetid: 3c1d14fd-c35c-48f1-86ce-1e0f9a32c36d
-ms.openlocfilehash: 7e64cc50a121f457b7e32e0ed549db2fa9950843
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 89ab6e324a777c272dcbcfabc746c03cb6731589
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176749"
 ---
 # <a name="application-and-thread-support-classes"></a>Uygulama ve İş Parçacığı Destek Sınıfları
 
@@ -24,7 +25,7 @@ Her uygulamanın bir ve yalnızca bir uygulama nesnesi vardır; Bu nesne çalı�
 
 Microsoft Foundation Class (MFC) kitaplığı, bir uygulama içinde birden çok yürütme iş parçacığını destekler. Tüm uygulamaların en az bir iş parçacığı olmalıdır; nesneniz tarafından kullanılan iş parçacığı `CWinApp` Bu birincil iş parçacığıdır.
 
-`CWinThread`işletim sisteminin iş parçacığı oluşturma yeteneklerini bir bölümünü kapsüller. Birden çok iş parçacığını daha kolay hale getirmek için MFC, Win32 eşitleme nesnelerine bir C++ arabirimi sağlamak üzere eşitleme nesnesi sınıfları da sağlar.
+`CWinThread` işletim sisteminin iş parçacığı oluşturma yeteneklerini bir bölümünü kapsüller. Birden çok iş parçacığını daha kolay hale getirmek için MFC, Win32 eşitleme nesnelerine bir C++ arabirimi sağlamak üzere eşitleme nesnesi sınıfları da sağlar.
 
 ## <a name="application-and-thread-classes"></a>Uygulama ve Iş parçacığı sınıfları
 
@@ -32,7 +33,7 @@ Microsoft Foundation Class (MFC) kitaplığı, bir uygulama içinde birden çok 
 Uygulamayı başlatmak, çalıştırmak ve sonlandırmak için kodu kapsüller. Uygulama nesneniz bu sınıftan türetilecektir.
 
 [CWinThread](reference/cwinthread-class.md)<br/>
-Tüm iş parçacıkları için temel sınıf. Doğrudan kullanın veya `CWinThread` İş parçacığınıza Kullanıcı arabirimi işlevleri gerçekleştirdiğinde öğesinden bir sınıf türetebilirsiniz. `CWinApp`, öğesinden türetilir `CWinThread` .
+Tüm iş parçacıkları için temel sınıf. Doğrudan kullanın veya `CWinThread` İş parçacığınıza Kullanıcı arabirimi işlevleri gerçekleştirdiğinde öğesinden bir sınıf türetebilirsiniz. `CWinApp` , öğesinden türetilir `CWinThread` .
 
 ## <a name="synchronization-object-classes"></a>Eşitleme nesnesi sınıfları
 

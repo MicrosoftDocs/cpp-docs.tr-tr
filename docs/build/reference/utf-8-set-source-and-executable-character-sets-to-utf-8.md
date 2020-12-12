@@ -1,5 +1,6 @@
 ---
-title: /UTF-8 belirtildiğinde (kaynak ve yürütülebilir karakter kümelerini olarak UTF-8ayarla)
+description: 'Hakkında daha fazla bilgi edinin: `/utf-8` (kaynak ve yürütülebilir karakter kümelerini olarak ayarla UTF-8 )'
+title: /UTF-8 belirtildiğinde (kaynak ve yürütülebilir karakter kümelerini olarak ayarla UTF-8 )
 ms.date: 04/26/2020
 f1_keywords:
 - /utf-8
@@ -10,26 +11,26 @@ no-loc:
 - UTF
 - UTF-8
 - UTF-16
-ms.openlocfilehash: c98a30b0ec4b36b8bd87fb0956d9382751975cfd
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: f9d58315a55d0e390ec07a1907af0befda127c54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168871"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176411"
 ---
-# <a name="utf-8-set-source-and-executable-character-sets-to-opno-locutf-8"></a>`/utf-8`(Kaynak ve yürütülebilir karakter kümelerini olarak UTF-8ayarla)
+# <a name="utf-8-set-source-and-executable-character-sets-to-no-locutf-8"></a>`/utf-8` (Kaynak ve yürütülebilir karakter kümelerini olarak ayarla UTF-8 )
 
-Hem kaynak karakter kümesini hem de yürütme karakter kümesini belirtir UTF-8.
+Hem kaynak karakter kümesini hem de yürütme karakter kümesini belirtir UTF-8 .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/utf-8`**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Öğesini kullanarak UTF-8hem kaynak **`/utf-8`** hem de yürütme karakter kümelerini belirtmek için seçeneğini kullanabilirsiniz. Komut satırında belirtmeye **`/source-charset:utf-8 /execution-charset:utf-8`** eşdeğerdir. Bu seçeneklerden herhangi biri, **`/validate-charset`** varsayılan olarak seçeneği de sunar. Desteklenen kod sayfası tanımlayıcılarının ve karakter kümesi adlarının listesi için bkz. [kod sayfası tanımlayıcıları](/windows/win32/Intl/code-page-identifiers).
+Öğesini **`/utf-8`** kullanarak hem kaynak hem de yürütme karakter kümelerini belirtmek için seçeneğini kullanabilirsiniz UTF-8 . **`/source-charset:utf-8 /execution-charset:utf-8`** Komut satırında belirtmeye eşdeğerdir. Bu seçeneklerden herhangi biri, **`/validate-charset`** Varsayılan olarak seçeneği de sunar. Desteklenen kod sayfası tanımlayıcılarının ve karakter kümesi adlarının listesi için bkz. [kod sayfası tanımlayıcıları](/windows/win32/Intl/code-page-identifiers).
 
-Varsayılan olarak, Visual Studio kaynak dosyanın kodlanmış bir Unicode biçiminde olup olmadığını (örneğin, UTF-16 veya UTF-8) tespit etmek için bir bayt sırası işareti algılar. Herhangi bir bayt düzeni işareti bulunmazsa, veya **`/utf-8`** **`/source-charset`** seçeneğini kullanarak bir kod sayfası belirtmediğiniz müddetçe, kaynak dosyanın geçerli kullanıcı kodu sayfası kullanılarak kodlandığını varsayar. Visual Studio, birkaç karakter kodlamalarını kullanarak C++ kaynak kodunuzu kaydetmenizi sağlar. Kaynak ve yürütme karakter kümeleri hakkında bilgi için, dil belgelerindeki [karakter kümelerine](../../cpp/character-sets.md) bakın.
+Varsayılan olarak, Visual Studio kaynak dosyanın kodlanmış bir Unicode biçiminde olup olmadığını (örneğin, veya) tespit etmek için bir bayt sırası işareti algılar UTF-16 UTF-8 . Herhangi bir bayt düzeni işareti bulunmazsa, veya seçeneğini kullanarak bir kod sayfası belirtmediğiniz müddetçe, kaynak dosyanın geçerli kullanıcı kodu sayfası kullanılarak kodlandığını varsayar **`/utf-8`** **`/source-charset`** . Visual Studio, birkaç karakter kodlamalarını kullanarak C++ kaynak kodunuzu kaydetmenizi sağlar. Kaynak ve yürütme karakter kümeleri hakkında bilgi için, dil belgelerindeki [karakter kümelerine](../../cpp/character-sets.md) bakın.
 
 ## <a name="set-the-option-in-visual-studio-or-programmatically"></a>Visual Studio veya program aracılığıyla seçeneği ayarlama
 
@@ -37,9 +38,9 @@ Varsayılan olarak, Visual Studio kaynak dosyanın kodlanmış bir Unicode biçi
 
 1. Proje **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri** > **C/C++** > **komut satırı** Özellik sayfası ' nı seçin.
+1. **Yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı** Özellik sayfası ' nı seçin.
 
-1. **Ek seçenekler**' de, tercih **`/utf-8`** ettiğiniz kodlamayı belirtme seçeneğini ekleyin.
+1. **Ek seçenekler**' de, **`/utf-8`** tercih ettiğiniz kodlamayı belirtme seçeneğini ekleyin.
 
 1. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
@@ -49,8 +50,8 @@ Varsayılan olarak, Visual Studio kaynak dosyanın kodlanmış bir Unicode biçi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
 [/Execution-charset (yürütme karakter kümesini Ayarla)](execution-charset-set-execution-character-set.md)<br/>
-[/source-charset (Kaynak Karakter Kümesini Ayarla)](source-charset-set-source-character-set.md)<br/>
+[/Source-charset (kaynak karakter kümesini Ayarla)](source-charset-set-source-character-set.md)<br/>
 [/validate-charset (Uyumlu karakterler için doğrula)](validate-charset-validate-for-compatible-characters.md)

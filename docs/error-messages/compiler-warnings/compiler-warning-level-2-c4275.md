@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 2) C4275'
 title: Derleyici Uyarısı (düzey 2) C4275
 ms.date: 02/08/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4275
 ms.assetid: 18de967a-0a44-4dbc-a2e8-fc4c067ba909
-ms.openlocfilehash: ad12c1c27006a57c8339e9dad82e4d8e1a239a6e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0dd212d7439b73c28a5426574b72ff8150abe93c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162003"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173655"
 ---
 # <a name="compiler-warning-level-2-c4275"></a>Derleyici Uyarısı (düzey 2) C4275
 
@@ -33,7 +34,7 @@ ms.locfileid: "80162003"
 
 Sanal işlevler içeren bir sınıf tanımlayan bir DLL tanımlayarak ve türü nesneleri oluşturmak ve silmek için çağırabilmeniz gereken işlevleri belirleyerek sınıfları dışarı aktarmaya kaçınabilirsiniz.  Böylece, yalnızca türündeki sanal işlevleri çağırabilirsiniz.
 
-Standart kitaplıktaki bir türden türetmeniz C++ halinde C4275, hata ayıklama sürümü ( **/MTD**) ve derleyici hata Iletisinin `_Container_base`başvurduğu durumlarda görselde yok sayılabilir. C++
+C++ standart kitaplığındaki bir türden türetmeniz halinde C4275, bir hata ayıklama sürümü (**/MTD**) ve derleyici hata iletisinin başvurduğu bir türden türeterek Visual C++ yok sayılabilir `_Container_base` .
 
 ```cpp
 // C4275.cpp

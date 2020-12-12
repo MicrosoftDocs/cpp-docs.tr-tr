@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Platform:: COMException sınıfı'
 title: 'Platform:: COMException sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
@@ -9,18 +10,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::COMException Class
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-ms.openlocfilehash: 1d0d36ec16303d6bdaa5f2344cd5d48fba03c8bf
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 71f6c3fa6d29a884627f2bf5aae07fbc0349ec9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176125"
 ---
 # <a name="platformcomexception-class"></a>Platform:: COMException sınıfı
 
 Uygulama yürütme sırasında oluşan COM hatalarını temsil eder. COMException, bir dizi önceden tanımlanmış standart özel durum için temel sınıftır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 public ref class COMException : Exception,    IException,    IPrintable,    IEquatable
@@ -55,7 +56,7 @@ COMException sınıfı aşağıdaki özelliklere sahiptir.
 
 Aşağıdaki önceden tanımlanmış özel durumlar COMException öğesinden türetilir. Bunlar, COMException 'dan yalnızca kendi adında, oluşturucusunun adına ve temel alınan HRESULT değerine göre farklılık gösterir.
 
-|Adı|Temel alınan HRESULT|Açıklama|
+|Ad|Temel alınan HRESULT|Açıklama|
 |----------|------------------------|-----------------|
 |COMException|*Kullanıcı tanımlı HRESULT*|Bir COM yöntem çağrısından tanınmayan HRESULT döndürüldüğünde oluşturulur.|
 |AccessDeniedException Oluşturucusu|E_ACCESSDENIED|Bir kaynak veya özelliğe erişim reddedildiğinde oluşturulur.|
@@ -81,7 +82,7 @@ Aşağıdaki önceden tanımlanmış özel durumlar COMException öğesinden tü
 
 **Meta veri:** platform. winmd
 
-## <a name="ctor"></a>COMException:: COMException Oluşturucusu
+## <a name="comexceptioncomexception-constructor"></a><a name="ctor"></a> COMException:: COMException Oluşturucusu
 
 COMException sınıfının yeni bir örneğini başlattıktan sonra.
 
@@ -96,11 +97,11 @@ COMException( int hresult )
 *HRESULT*<br/>
 Özel durumla temsil edilen HRESULT hatası.
 
-## <a name="hresult"></a>COMException:: HResult özelliği
+## <a name="comexceptionhresult-property"></a><a name="hresult"></a> COMException:: HResult özelliği
 
 Özel duruma karşılık gelen HRESULT.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:
@@ -115,11 +116,11 @@ Hatayı belirten bir HRESULT değeri.
 
 HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [com hata kodlarının yapısı](/windows/win32/com/structure-of-com-error-codes).
 
-## <a name="message"></a>COMException:: Message özelliği
+## <a name="comexceptionmessage-property"></a><a name="message"></a> COMException:: Message özelliği
 
 Özel durumu açıklayan ileti.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 public:property String^ Message {    String^ get();}

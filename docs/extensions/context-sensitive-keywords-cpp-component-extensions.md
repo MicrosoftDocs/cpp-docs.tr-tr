@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Context-Sensitive anahtar sözcükleri (C++/CLı ve C++/CX)'
 title: Bağlama Duyarlı Anahtar Sözcükler (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - context-sensitive keywords
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
-ms.openlocfilehash: 82bf4c3f0deed788b7b1e50f1d8d82e63dc27f6f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7c005b1a6149f010b9729db5459fa3951bc50521
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176866"
 ---
 # <a name="context-sensitive-keywords--ccli-and-ccx"></a>Bağlama Duyarlı Anahtar Sözcükler (C++/CLI ve C++/CX)
 
@@ -46,7 +47,7 @@ Aşağıda, bağlama duyarlı anahtar sözcüklerin bir listesi verilmiştir:
 
 - [sealed](sealed-cpp-component-extensions.md)
 
-- `where`( [genel](generics-cpp-component-extensions.md)türlerin parçası)
+- `where` ( [genel](generics-cpp-component-extensions.md)türlerin parçası)
 
 Okunabilirlik amacıyla, bağlama duyarlı anahtar sözcüklerinizi Kullanıcı tanımlı semboller olarak sınırlamak isteyebilirsiniz.
 
@@ -58,7 +59,7 @@ Okunabilirlik amacıyla, bağlama duyarlı anahtar sözcüklerinizi Kullanıcı 
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -68,7 +69,7 @@ Derleyici seçeneği:`/ZW`
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

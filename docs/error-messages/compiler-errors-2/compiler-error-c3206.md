@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3206'
 title: Derleyici hatası C3206
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3206
 ms.assetid: d62995b5-e349-4418-bbe8-8a5e776ca7b0
-ms.openlocfilehash: 7a602238ca5a2f2a64eaa601cc6733a897b9fdb4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ea4ded5daebe0f002a3d0363fba125c2c02f332b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738693"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174019"
 ---
 # <a name="compiler-error-c3206"></a>Derleyici hatası C3206
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strcpy, wcscpy, _mbscpy'
 title: strcpy, wcscpy, _mbscpy
 ms.date: 4/2/2020
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _ftcscpy function
 - _mbscpy function
 ms.assetid: f97a4f81-e9ee-4f15-888a-0fa5d7094c5a
-ms.openlocfilehash: cb63dfc9ee817458393b7b544d04683b0d17918e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8417fa8cf473552dcc509272a2ce660b4be7a68d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915262"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176190"
 ---
 # <a name="strcpy-wcscpy-_mbscpy"></a>strcpy, wcscpy, _mbscpy
 
@@ -103,7 +104,7 @@ Bu işlevlerin her biri, hedef dizeyi döndürür. Bir hatayı göstermek için 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcpy** işlevi, Sonlandırıcı null karakteri de dahil olmak üzere *strSource*'u *strDestination*tarafından belirtilen konuma kopyalar. Kaynak ve hedef dizeler çakıştığında, **strcpy** davranışı tanımsızdır.
+**Strcpy** işlevi, Sonlandırıcı null karakteri de dahil olmak üzere *strSource*'u *strDestination* tarafından belirtilen konuma kopyalar. Kaynak ve hedef dizeler çakıştığında, **strcpy** davranışı tanımsızdır.
 
 > [!IMPORTANT]
 > **Strcpy** , *strSource*'U Kopyalayamadan önce *strDestination* içinde yeterli alanı denetlemediğinden, arabellek taşmalarının olası bir nedeni vardır. Bu nedenle, bunun yerine [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md) kullanmanızı öneririz.
@@ -124,9 +125,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcpy**|\<String. h>|
-|**wcscpy**|\<String. h> veya \<wchar. h>|
-|**_mbscpy**|\<mbstring. h>|
+|**strcpy**|\<string.h>|
+|**wcscpy**|\<string.h> veya \<wchar.h>|
+|**_mbscpy**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

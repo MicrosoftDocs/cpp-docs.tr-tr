@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/VERBOSE (ilerleme iletilerini Yazdır)
 title: /VERBOSE (İlerleme iletilerini yazdır)
 ms.date: 06/13/2019
 f1_keywords:
@@ -13,44 +14,44 @@ helpviewer_keywords:
 - dependencies [C++], dependency information in linker output
 - VERBOSE linker option
 ms.assetid: 9c347d98-4c37-4724-a39e-0983934693ab
-ms.openlocfilehash: bbf7b5966c741535f26202979cbfd71f839cc537
-ms.sourcegitcommit: e79188287189b76b34eb7e8fb1bfe646bdb586bc
+ms.openlocfilehash: 9d1a22a1b05f42a707b2449fbb114ba06db85ff5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141661"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176424"
 ---
 # <a name="verbose-print-progress-messages"></a>/VERBOSE (İlerleme iletilerini yazdır)
 
-Bağlantı işlemi sırasında ilerleme iletilerini çıkış.
+Bağlantı işlemi sırasında ilerleme iletisi çıkışları.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ VERBOSE**\[ **:** {**CLR**|**ICF**|**INCR** | **LIB**|**REF**|**SAFESEH**|**UNUSEDDELAYLOAD** | **UNUSEDLIBS**}\]
+> **/Verbose** \[ **:**{**clr** | **ICF** | **INR** | **LIB** | **ref** | **SafeSEH** | **UNUSEDDELAYLOAD** | **UNUSEDLIBS**}\]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bağlayıcı bağlantı oturumunun ilerleme durumu hakkında bilgi gönderir **çıkış** penceresi. Komut satırında, bilgiler Standart çıkışa gönderilir ve bir dosyaya yönlendirilebilir.
+Bağlayıcı, bağlama oturumunun ilerleme durumu hakkında bilgileri **Çıkış** penceresine gönderir. Komut satırında, bilgiler standart çıktıya gönderilir ve bir dosyaya yönlendirilebilir.
 
 | Seçenek | Açıklama |
 | ------------ | ----------------- |
-| / VERBOSE | Bağlama işleminin ayrıntılarını görüntüler. |
-| / VERBOSE: CLR | Özel bağlayıcı etkinliği hakkındaki bilgileri görüntüler nesneleri ve meta veriler kullanılarak derlenmiş [/CLR](clr-common-language-runtime-compilation.md). |
-| /VERBOSE:ICF | Kullanımından kaynaklanan bağlayıcı etkinliği hakkındaki bilgileri görüntüler [/OPT: ICF](opt-optimizations.md). |
-| /VERBOSE:INCR | Artımlı bağlantı işlemi hakkındaki bilgileri görüntüler. |
-| / VERBOSE: LIB | Kitaplıkları gösteren ilerleme durumu iletilerini görüntüler aranır.<br/> Görüntülenen bilgiler kitaplık arama işlemini içerir. Sembol (ile tam yolu) her kitaplığı ve nesne adını listeler, kitaplık ve ve simgeye başvuran nesnelerin bir listesini çözülüyor. |
-| / VERBOSE: BAŞVURU | Kullanımından kaynaklanan bağlayıcı etkinliği hakkındaki bilgileri görüntüler [/OPT: ref](opt-optimizations.md). |
-| / VERBOSE: SAFESEH | Ne zaman yapılandırılmış özel durum işleme ile uyumsuz modüller hakkında daha fazla bilgi görüntüler [SAFESEH](safeseh-image-has-safe-exception-handlers.md) belirtilmemiş. |
-| / VERBOSE: UNUSEDDELAYLOAD | Her gecikmesi hakkında bilgileri görüntüler görüntüsü oluşturulurken kullanılan sembol yüklü DLL'leri yüklendi. |
-| / VERBOSE: UNUSEDLIBS | Görüntü oluşturulduğunda, kullanılmayan tüm kitaplık dosyaları hakkındaki bilgileri görüntüler. |
+| /VERBOSE | Bağlama işlemiyle ilgili ayrıntıları görüntüler. |
+| /VERBOSE: CLR | [/Clr](clr-common-language-runtime-compilation.md)kullanılarak derlenen nesnelere ve meta verilere özel bağlayıcı etkinliği hakkındaki bilgileri görüntüler. |
+| /VERBOSE: ıCF | [/OPT: ICF](opt-optimizations.md)'nin kullanılması sonucunda oluşan bağlayıcı etkinliğiyle ilgili bilgileri görüntüler. |
+| /VERBOSE: INCR | Artımlı bağlantı işlemiyle ilgili bilgileri görüntüler. |
+| /VERBOSE: LIB | Yalnızca aranan kitaplıkları gösteren ilerleme mesajlarını görüntüler.<br/> Görünen bilgiler, kitaplık arama işlemini içerir. Her bir kitaplığı ve nesne adını (tam yol ile), kitaplıktan çözümlenen simgeyi ve sembole başvuruda bulunan nesnelerin bir listesini listeler. |
+| /VERBOSE: REF | [/OPT: ref](opt-optimizations.md)kullanımını belirten bağlayıcı etkinliği hakkındaki bilgileri görüntüler. |
+| /VERBOSE: SAFESEH | [/SafeSEH](safeseh-image-has-safe-exception-handlers.md) belirtilmediğinde güvenli yapılandırılmış özel durum işleme ile uyumsuz modüllerle ilgili bilgileri görüntüler. |
+| /VERBOSE: UNUSEDDELAYLOAD | Görüntü oluşturulduğunda kullanılan herhangi bir simge olmayan Gecikmeli yüklenen dll 'Ler hakkındaki bilgileri görüntüler. |
+| /VERBOSE: UNUSEDLIBS | Görüntü oluşturulduğunda kullanılmayan tüm kitaplık dosyaları hakkındaki bilgileri görüntüler. |
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **komut satırı** özellik sayfasını seçin.
 
-1. Seçeneği ekleyin **ek seçenekler** kutusu.
+1. Seçeneği **ek seçenekler** kutusuna ekleyin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -59,4 +60,4 @@ Bağlayıcı bağlantı oturumunun ilerleme durumu hakkında bilgi gönderir **�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

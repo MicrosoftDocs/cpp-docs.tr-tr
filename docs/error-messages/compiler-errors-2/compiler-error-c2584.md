@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2584'
 title: Derleyici hatası C2584
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2584
 ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
-ms.openlocfilehash: 2c3b10ecd6808ccd864ecf877fe9f1d0e9f30a3a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7820019c3ec49928f59980adbd9ec814d67c3499
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177685"
 ---
 # <a name="compiler-error-c2584"></a>Derleyici hatası C2584
 
 ' Class ': ' Base2 ' doğrudan tabanına erişilemiyor; zaten bir ' Base1 ' tabanı var
 
-`Class` zaten `Base1`doğrudan türetiliyor. `Base2` Ayrıca `Base1`türetilir. `Class` `Base2` türetilemez, çünkü `Base1` zaten bir doğrudan temel sınıf olduğundan, bu, yasal olmayan `Base1` yeniden devralmıştı.
+`Class` zaten doğrudan türetiliyor `Base1` . `Base2` Ayrıca öğesinden türetilir `Base1` . `Class` öğesinden türetilemiyor `Base2` çünkü bu, yasal olmayan (dolaylı) `Base1` `Base1` bir doğrudan temel sınıf olduğundan, bir daha devralınamaz.
 
 ## <a name="example"></a>Örnek
 

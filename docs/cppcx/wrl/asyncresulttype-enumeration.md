@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: AsyncResultType numaralandırması'
 title: AsyncResultType Numaralandırması
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - AsyncResultType enumeration
 ms.assetid: 4195d234-3f3f-4363-9118-6ad2a7551cf2
-ms.openlocfilehash: b8a2a9ec803fba1be0012fcb58bf3b42e78f9071
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 431c0cabf98b3636bbae02b2f05a14d11d122740
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175826"
 ---
 # <a name="asyncresulttype-enumeration"></a>AsyncResultType Numaralandırması
 
-`GetResults()` yöntemi tarafından döndürülen sonuç türünü belirtir.
+Yöntem tarafından döndürülen sonuç türünü belirtir `GetResults()` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum AsyncResultType;
@@ -30,8 +31,8 @@ enum AsyncResultType;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|`MultipleResults`|`Start` durumu ve `Close()` çağrılmadan önce aşamalı olarak sunulan birden çok sonuç kümesi.|
-|`SingleResult`|`Complete` olayı oluştuktan sonra sunulan tek bir sonuç.|
+|`MultipleResults`|Durum ve Before arasında aşamalı olarak sunulan birden çok sonuç kümesi `Start` `Close()` .|
+|`SingleResult`|Olay oluştuktan sonra sunulan tek bir sonuç `Complete` .|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -41,4 +42,4 @@ enum AsyncResultType;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)

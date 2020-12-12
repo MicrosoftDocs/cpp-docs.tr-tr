@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l'
 title: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 ms.date: 5/28/2020
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - tcscpy_s function
 - wcscpy_s function
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
-ms.openlocfilehash: b2957490dbf045b9a3258a72b6bda0aaf1a38c0f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a20f16971ccc7d1f85fe92c5d2d14386e7e55022
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176203"
 ---
 # <a name="strcpy_s-wcscpy_s-_mbscpy_s-_mbscpy_s_l"></a>strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 
@@ -59,7 +60,7 @@ Bir dizeyi kopyalar. [Strcpy, wcscpy _mbscpy](strcpy-wcscpy-mbscpy.md) bu SÜRÜ
 > [!IMPORTANT]
 > **_mbscpy_s** ve **_mbscpy_s_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t strcpy_s(
@@ -116,12 +117,12 @@ errno_t _mbscpy_s_l(
 Hedef dize arabelleğinin konumu.
 
 *dest_size*<br/>
-**`char`** Daraltma ve çok baytlı işlevler için birim cinsinden hedef dize arabelleğinin boyutu ve **`wchar_t`** geniş işlevlere yönelik birimler. Bu değer sıfırdan büyük ve **RSIZE_MAX**daha büyük olmalıdır. Bu boyut hesaplarının dizeyi izleyen Sonlandırıcı için olduğundan emin olun `NULL` .
+**`char`** Daraltma ve çok baytlı işlevler için birim cinsinden hedef dize arabelleğinin boyutu ve **`wchar_t`** geniş işlevlere yönelik birimler. Bu değer sıfırdan büyük ve **RSIZE_MAX** daha büyük olmalıdır. Bu boyut hesaplarının dizeyi izleyen Sonlandırıcı için olduğundan emin olun `NULL` .
 
 *src*<br/>
 Null ile sonlandırılmış kaynak dize arabelleği.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -138,9 +139,9 @@ Başarılıysa sıfır; Aksi takdirde bir hata.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcpy_s** işlevi, sonlandırma null karakteri dahil *src*adresinin içeriğini *hedef*tarafından belirtilen konuma kopyalar. Hedef dize, kaynak dizeyi ve Sonlandırıcı null karakterini barındıracak kadar büyük olmalıdır. Kaynak ve hedef dizeler çakıştığında **strcpy_s** davranışı tanımsızdır.
+**Strcpy_s** işlevi, sonlandırma null karakteri dahil *src* adresinin içeriğini *hedef* tarafından belirtilen konuma kopyalar. Hedef dize, kaynak dizeyi ve Sonlandırıcı null karakterini barındıracak kadar büyük olmalıdır. Kaynak ve hedef dizeler çakıştığında **strcpy_s** davranışı tanımsızdır.
 
-**wcscpy_s** , **strcpy_s**geniş karakter sürümüdür ve **_mbscpy_s** çok baytlı karakter sürümüdür. **Wcscpy_s** bağımsız değişkenleri geniş karakterli dizelerdir; **_mbscpy_s** ve **_mbscpy_s_l** olanlar çok baytlı karakter dizeleridir. Bu işlevler, aynı şekilde davranır. **_mbscpy_s_l** , geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanması hariç **_mbscpy_s** aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**wcscpy_s** , **strcpy_s** geniş karakter sürümüdür ve **_mbscpy_s** çok baytlı karakter sürümüdür. **Wcscpy_s** bağımsız değişkenleri geniş karakterli dizelerdir; **_mbscpy_s** ve **_mbscpy_s_l** olanlar çok baytlı karakter dizeleridir. Bu işlevler, aynı şekilde davranır. **_mbscpy_s_l** , geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanması hariç **_mbscpy_s** aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
 Hedef *veya* *src* null bir işaretçisiyse veya hedef dize boyutu *Dest_size* çok küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EINVAL** döndürür ve *dest* veya *src* null bir Işaretçi olduğunda **errno** ' ı **EINVAL** olarak ayarlar ve hedef dize çok küçük olduğunda **ERANGE** döndürür ve **errno** , **ERANGE** olarak ayarlanır.
 

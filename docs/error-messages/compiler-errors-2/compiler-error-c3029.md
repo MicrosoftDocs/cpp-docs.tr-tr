@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3029'
 title: Derleyici hatası C3029
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3029
 ms.assetid: 655eb04d-504a-468d-8c0c-bda1e5f297b7
-ms.openlocfilehash: 12c06757ed6ec7560f7dd647e241ddd08a0484d5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ec9164c43dd44e4fe69273c2cad7c3e6beead394
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74736756"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174188"
 ---
 # <a name="compiler-error-c3029"></a>Derleyici hatası C3029
 

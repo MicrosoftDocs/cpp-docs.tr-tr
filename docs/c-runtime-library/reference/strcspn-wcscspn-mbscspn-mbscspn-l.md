@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strcspn, wcscspn, _mbscspn, _mbscspn_l'
 title: strcspn, wcscspn, _mbscspn, _mbscspn_l
 ms.date: 4/2/2020
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - mbscspn function
 - _tcscspn function
 ms.assetid: f73f51dd-b533-4e46-ba29-d05c553708a6
-ms.openlocfilehash: 8fb3e0fe7590dac9fc3ce107b3c1b2a5800c867b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a453d14541bb6e74b63d869c4d9dcc5d6d4f49e2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915248"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176164"
 ---
 # <a name="strcspn-wcscspn-_mbscspn-_mbscspn_l"></a>strcspn, wcscspn, _mbscspn, _mbscspn_l
 
@@ -94,7 +95,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevler, *strCharSet*içindeki *Str* içindeki ilk karakter dizinini döndürür. *Str* içindeki karakterlerden hiçbiri *strCharSet*içinde değilse, dönüş değeri *Str*'in uzunluğudur.
+Bu işlevler, *strCharSet* içindeki *Str* içindeki ilk karakter dizinini döndürür. *Str* içindeki karakterlerden hiçbiri *strCharSet* içinde değilse, dönüş değeri *Str*'in uzunluğudur.
 
 Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
 
@@ -102,7 +103,7 @@ Bir hatayı göstermek için hiçbir dönüş değeri ayrılmadı.
 
 **wcscspn** ve **_mbscspn** , **strcspn**'nin geniş karakterli ve çok baytlı karakter sürümleridir. **Wcscspn** bağımsız değişkenleri geniş karakterli dizelerdir; **_mbscspn** olanlar çok baytlı karakter dizeleridir.
 
-**_mbscspn** parametrelerini doğrular. Herhangi bir *Str* veya *strCharSet* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev 0 döndürür ve **errno** öğesini **EINVAL**olarak ayarlar. **strcspn** ve **wcscspn** parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
+**_mbscspn** parametrelerini doğrular. Herhangi bir *Str* veya *strCharSet* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev 0 döndürür ve **errno** öğesini **EINVAL** olarak ayarlar. **strcspn** ve **wcscspn** parametrelerini doğrulamaz. Bu üç işlev, aynı şekilde davranır.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -119,9 +120,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcspn**|\<String. h>|
-|**wcscspn**|\<String. h> veya \<wchar. h>|
-|**_mbscspn**, **_mbscspn_l**|\<mbstring. h>|
+|**strcspn**|\<string.h>|
+|**wcscspn**|\<string.h> veya \<wchar.h>|
+|**_mbscspn**, **_mbscspn_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -163,7 +164,7 @@ strcspn( "", "" ) = 0
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

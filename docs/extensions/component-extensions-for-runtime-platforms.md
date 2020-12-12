@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: .NET ve UWP için bileşen uzantıları'
 title: .NET ve UWP için Bileşen Uzantıları
 ms.date: 10/12/2018
 ms.topic: overview
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - keywords [C++]
 - Managed Extensions for C++, replacement syntax
 ms.assetid: 1e400ee6-3ac9-4910-a608-9d3d5993e423
-ms.openlocfilehash: 887fa14153e728735937604d531782a9ae7535bb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5ba82479db4229db5f6b962955641f75e3b42e00
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176918"
 ---
 # <a name="component-extensions-for-net-and-uwp"></a>.NET ve UWP için Bileşen Uzantıları
 
@@ -31,7 +32,7 @@ C++/CX uzantıları, C++/CLI'NIN bir alt kümesidir. Uzantı söz dizimi çoğu 
 
 ## <a name="data-type-keywords"></a>Veri türü anahtar sözcükleri
 
-Dil uzantıları, boşluk ile ayrılmış iki belirteçden oluşan *toplama anahtar sözcüklerini*içerir. Belirteçlerin ayrı olarak kullanıldıkları bir anlamı olabilir ve birlikte kullanıldıkları bir anlamı vardır. Örneğin, "ref" sözcüğü sıradan bir tanımlayıcıdır ve "Class" sözcüğü, yerel bir sınıfı bildiren bir anahtar sözcüktür. Ancak, bu sözcükler form **başvuru sınıfında**birleştirildiğinde, elde edilen toplama anahtar sözcüğü, *çalışma zamanı sınıfı*olarak bilinen bir varlık bildirir.
+Dil uzantıları, boşluk ile ayrılmış iki belirteçden oluşan *toplama anahtar sözcüklerini* içerir. Belirteçlerin ayrı olarak kullanıldıkları bir anlamı olabilir ve birlikte kullanıldıkları bir anlamı vardır. Örneğin, "ref" sözcüğü sıradan bir tanımlayıcıdır ve "Class" sözcüğü, yerel bir sınıfı bildiren bir anahtar sözcüktür. Ancak, bu sözcükler form **başvuru sınıfında** birleştirildiğinde, elde edilen toplama anahtar sözcüğü, *çalışma zamanı sınıfı* olarak bilinen bir varlık bildirir.
 
 Uzantılar ayrıca *bağlama duyarlı* anahtar sözcükler içerir. Anahtar sözcüğü, kendisini içeren deyimin türüne ve bu deyimdeki yerleşimine göre bağlama duyarlı olarak değerlendirilir. Örneğin, belirteç "özelliği" bir tanımlayıcı olabilir veya özel bir ortak sınıf üyesi türü bildirebilir.
 
@@ -39,13 +40,13 @@ Aşağıdaki tabloda, C++ dil uzantısında anahtar sözcükler listelenmektedir
 
 |Sözcükle|Bağlama duyarlı|Amaç|Başvuru|
 |-------------|-----------------------|-------------|---------------|
-|**başvuru sınıfı**<br /><br /> **ref yapısı**|Hayır|Bir sınıf bildirir.|[Sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md)|
-|**değer sınıfı**<br /><br /> **value yapısı**|Hayır|Değer sınıfını bildirir.|[Sınıflar ve yapılar](classes-and-structs-cpp-component-extensions.md)|
+|**başvuru sınıfı**<br /><br /> **ref yapısı**|Hayır|Bir sınıf bildirir.|[Sınıflar ve Yapılar](classes-and-structs-cpp-component-extensions.md)|
+|**değer sınıfı**<br /><br /> **value yapısı**|Hayır|Değer sınıfını bildirir.|[Sınıflar ve Yapılar](classes-and-structs-cpp-component-extensions.md)|
 |**arabirim sınıfı**<br /><br /> **arabirim yapısı**|Hayır|Bir arabirim bildirir.|[arabirim sınıfı](interface-class-cpp-component-extensions.md)|
 |**sabit listesi sınıfı**<br /><br /> **Enum yapısı**|Hayır|Bir sabit listesi bildirir.|[sabit listesi sınıfı](enum-class-cpp-component-extensions.md)|
-|**`property`**|Yes|Bir özellik bildirir.|[özelliði](property-cpp-component-extensions.md)|
-|**ğini**|Yes|Bir temsilci bildirir.|[delegate (C++/CLI ve C++/CX)](delegate-cpp-component-extensions.md)|
-|**olay**|Yes|Bir olayı bildirir.|[olay](event-cpp-component-extensions.md)|
+|**`property`**|Evet|Bir özellik bildirir.|[özelliði](property-cpp-component-extensions.md)|
+|**ğini**|Evet|Bir temsilci bildirir.|[delegate (C++/CLI ve C++/CX)](delegate-cpp-component-extensions.md)|
+|**olay**|Evet|Bir olayı bildirir.|[olay](event-cpp-component-extensions.md)|
 
 ## <a name="override-specifiers"></a>Geçersiz Kılma Tanımlayıcıları
 
@@ -53,10 +54,10 @@ Türetme için geçersiz kılma davranışını nitelemek için aşağıdaki ana
 
 |Sözcükle|Bağlama duyarlı|Amaç|Başvuru|
 |-------------|-----------------------|-------------|---------------|
-|**Soyut**|Yes|İşlevlerin veya sınıfların soyut olduğunu gösterir.|[Soyut](abstract-cpp-component-extensions.md)|
+|**Soyut**|Evet|İşlevlerin veya sınıfların soyut olduğunu gösterir.|[Soyut](abstract-cpp-component-extensions.md)|
 |**`new`**|Hayır|Bir işlevin temel sınıf sürümünün geçersiz kılınmadığını gösterir.|[yeni (vtable'de yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)|
-|**override**|Yes|Bir yöntemin temel sınıf sürümünün geçersiz kılınması olması gerektiğini belirtir.|[override](override-cpp-component-extensions.md)|
-|**sealed**|Yes|Sınıfların temel sınıf olarak kullanılmasını önler.|[sealed](sealed-cpp-component-extensions.md)|
+|**override**|Evet|Bir yöntemin temel sınıf sürümünün geçersiz kılınması olması gerektiğini belirtir.|[override](override-cpp-component-extensions.md)|
+|**sealed**|Evet|Sınıfların temel sınıf olarak kullanılmasını önler.|[sealed](sealed-cpp-component-extensions.md)|
 
 ## <a name="keywords-for-generics"></a>Genel türler için anahtar sözcükler
 
@@ -65,7 +66,7 @@ Aşağıdaki anahtar sözcükler genel türleri desteklemek için eklenmiştir. 
 |Sözcükle|Bağlama duyarlı|Amaç|
 |-------------|-----------------------|-------------|
 |**yorlar**|Hayır|Genel bir tür bildirir.|
-|**konum**|Yes|Genel tür parametresine uygulanan kısıtlamaları belirtir.|
+|**olmadığı**|Evet|Genel tür parametresine uygulanan kısıtlamaları belirtir.|
 
 ## <a name="miscellaneous-keywords"></a>Çeşitli anahtar sözcükler
 
@@ -73,12 +74,12 @@ Aşağıdaki anahtar sözcükler C++ uzantılarına eklenmiştir.
 
 |Sözcükle|Bağlama duyarlı|Amaç|Başvuru|
 |-------------|-----------------------|-------------|---------------|
-|**finally**|Yes|Varsayılan özel durum handller davranışını gösterir.|[Özel Durum İşleme](exception-handling-cpp-component-extensions.md)|
+|**finally**|Evet|Varsayılan özel durum handller davranışını gösterir.|[Özel Durum İşleme](exception-handling-cpp-component-extensions.md)|
 |**for each, in**|Hayır|Bir koleksiyonun öğelerini numaralandırır.|[for each, in](../dotnet/for-each-in.md)|
 |**gcnew**|Hayır|Atık toplanan yığında türleri ayırır. Ve yerine kullanın **`new`** **`delete`** .|[yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
-|**Yeni başvuru**|Yes|Windows Çalışma Zamanı türünü ayırır. Ve yerine kullanın **`new`** **`delete`** .|[yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
-|**initonly**|Yes|Üyenin yalnızca bildirimde veya statik oluşturucuda başlatılabileceğini belirtir.|[initonly (C++/CLI)](../dotnet/initonly-cpp-cli.md)|
-|**ayarını**|Yes|Değişmez değer değişkeni oluşturur.|[ayarını](literal-cpp-component-extensions.md)|
+|**Yeni başvuru**|Evet|Windows Çalışma Zamanı türünü ayırır. Ve yerine kullanın **`new`** **`delete`** .|[yeni başvuru, gcnew](ref-new-gcnew-cpp-component-extensions.md)|
+|**initonly**|Evet|Üyenin yalnızca bildirimde veya statik oluşturucuda başlatılabileceğini belirtir.|[initonly (C++/CLI)](../dotnet/initonly-cpp-cli.md)|
+|**ayarını**|Evet|Değişmez değer değişkeni oluşturur.|[ayarını](literal-cpp-component-extensions.md)|
 |**`nullptr`**|Hayır|Bir tanıtıcı veya işaretçinin bir nesneyi işaret içermediğini belirtir.|[nullptr](nullptr-cpp-component-extensions.md)|
 
 ## <a name="template-constructs"></a>Şablon yapıları
@@ -128,7 +129,7 @@ Bu bölümde, ek programlama yapıları ve CLR ile ilgili konular listelenmekted
 |[Tür İletme (C++/CLI)](type-forwarding-cpp-cli.md)|İstemci kodunun yeniden derlenmesi zorunda olmaması için, bir sevkiyat derlemesinde bir türün başka bir derlemeye taşınmasını sağlar.|
 |[Kullanıcı tanımlı öznitelikler](user-defined-attributes-cpp-component-extensions.md)|Kullanıcı tanımlı öznitelikleri gösterir.|
 |[#using yönergesi](../preprocessor/hash-using-directive-cpp.md)|Dış derlemeleri içeri aktarır.|
-|[XML belgeleri](../build/reference/xml-documentation-visual-cpp.md)|[/Doc (Işlem belgeleri açıklamaları)](../build/reference/doc-process-documentation-comments-c-cpp.md) kullanılarak XML tabanlı kod belgelerini açıklar (C/C++)|
+|[XML Belgeleri](../build/reference/xml-documentation-visual-cpp.md)|[/Doc (Işlem belgeleri açıklamaları)](../build/reference/doc-process-documentation-comments-c-cpp.md) kullanılarak XML tabanlı kod belgelerini açıklar (C/C++)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

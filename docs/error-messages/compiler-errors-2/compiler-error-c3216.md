@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3216'
 title: Derleyici hatası C3216
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3216
 ms.assetid: bbab1efe-8779-4489-8bb0-b11e45f5cbe5
-ms.openlocfilehash: 6b4f51dc0e27381ef64fc6cd1e4e279736a725aa
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0f7ea3950b4fb832bdb349e788fbd73309918dd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97173733"
 ---
 # <a name="compiler-error-c3216"></a>Derleyici hatası C3216
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2752'
 title: Derleyici hatası C2752
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2752
 ms.assetid: ae42b3ec-84a9-4e9d-8d59-3d208132d0b2
-ms.openlocfilehash: 3095999b6141ad89e0f94e29d726512af1d58b0c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5a508ca9c286392bc05dd30602e138880882f813
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759587"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97174435"
 ---
 # <a name="compiler-error-c2752"></a>Derleyici hatası C2752
 
