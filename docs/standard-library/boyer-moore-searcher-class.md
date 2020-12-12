@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: boyer_moore_searcher sınıfı'
 title: boyer_moore_searcher sınıfı
 ms.date: 08/03/2019
 f1_keywords:
 - functional/std::boyer_moore_searcher
 helpviewer_keywords:
 - std::boyer_moore_searcher [C++]
-ms.openlocfilehash: d6fa4dd203336107614ca3431f38846f0c3c89af
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7d8efe145870847aae8e961dad1b4a92fec8bd57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039826"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325417"
 ---
 # <a name="boyer_moore_searcher-class"></a>boyer_moore_searcher sınıfı
 
-`boyer_moore_searcher`Sınıfı, nesne oluşturucusunda belirtilen bir diziyi aramak Için Boyer-Moore algoritmasını kullanan bir işlev nesnesi türüdür. Arama, nesnenin işlev çağrısı işlecine belirtilen başka bir sıra içinde yapılır. Bu sınıf, [std:: Search](algorithm-functions.md#search)'ün aşırı yüklemelerinin birine bir parametre olarak geçirilir.
+`boyer_moore_searcher`Sınıfı, nesne oluşturucusunda belirtilen bir diziyi aramak için Boyer-Moore algoritmasını kullanan bir işlev nesnesi türüdür. Arama, nesnenin işlev çağrısı işlecine belirtilen başka bir sıra içinde yapılır. Bu sınıf, [std:: Search](algorithm-functions.md#search)'ün aşırı yüklemelerinin birine bir parametre olarak geçirilir.
 
 ## <a name="syntax"></a>Syntax
 
@@ -40,7 +41,7 @@ class boyer_moore_searcher
 
 ## <a name="members"></a>Üyeler
 
-| Üye | Description |
+| Üye | Açıklama |
 | - | - |
 | **Oluşturucu** | |
 | [boyer_moore_searcher](#boyer-moore-searcher-constructor) | Bir Arayıcının örneği oluşturur. |
@@ -75,7 +76,7 @@ Dizi öğeleri için isteğe bağlı eşitlik karşılaştırma koşulu. Bir eş
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BinaryPredicate*, *hash*veya *Randomaccessıterator* türlerinin kopya Oluşturucusu tarafından oluşturulan özel durumları ya da *BinaryPredicate* veya *hash*çağrı işlecini oluşturur.
+*BinaryPredicate*, *hash* veya *Randomaccessıterator* türlerinin kopya Oluşturucusu tarafından oluşturulan özel durumları ya da *BinaryPredicate* veya *hash* çağrı işlecini oluşturur.
 
 Bu sınıf C++ 17 ' de yenidir.
 
@@ -100,7 +101,7 @@ pair<RandomAccessIterator2, RandomAccessIterator2> operator()(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama deseninin `[pat_first, pat_last)` boş olması halinde döndürür `make_pair(first, first)` . Arama deseninin bulunamaması halinde döndürür `make_pair(last, last)` . Aksi takdirde, `[first, last)` Pred değerine göre eşit olan bir dizinin başlangıcına ve sonuna kadar yineleyiciler çifti döndürür `[pat_first, pat_last)` . *pred*
+Arama deseninin `[pat_first, pat_last)` boş olması halinde döndürür `make_pair(first, first)` . Arama deseninin bulunamaması halinde döndürür `make_pair(last, last)` . Aksi takdirde, `[first, last)` Pred değerine göre eşit olan bir dizinin başlangıcına ve sonuna kadar yineleyiciler çifti döndürür `[pat_first, pat_last)` . 
 
 Bu sınıf C++ 17 ' de yenidir.
 

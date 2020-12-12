@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: istreambuf_iterator sınıfı'
 title: istreambuf_iterator Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,18 +19,18 @@ helpviewer_keywords:
 - std::istreambuf_iterator [C++], traits_type
 - std::istreambuf_iterator [C++], equal
 ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
-ms.openlocfilehash: b76e327c46a180c1e7ae7287ee9fe49573f3a7a6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 221141f5dd97be80b6f13b677f4ed253d75e1054
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217707"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306735"
 ---
 # <a name="istreambuf_iterator-class"></a>istreambuf_iterator Sınıfı
 
 Sınıf şablonu istreambuf_iterator, bir giriş akışı arabelleğinden karakter öğelerini çıkaran ve işaretçi türündeki bir nesne üzerinden eriştiği bir giriş Yineleyici nesnesini açıklar `basic_streambuf` \< **CharType**, **Traits**> .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType class Traits = char_traits <CharType>>
@@ -87,7 +88,7 @@ Null olmayan bir saklı işaretçiyle istreambuf_iterator sınıfının bir nesn
 
 **Ad alanı:** std
 
-## <a name="istreambuf_iteratorchar_type"></a><a name="char_type"></a>istreambuf_iterator:: char_type
+## <a name="istreambuf_iteratorchar_type"></a><a name="char_type"></a> istreambuf_iterator:: char_type
 
 Öğesinin karakter türü için sağlayan bir tür `ostreambuf_iterator` .
 
@@ -97,7 +98,7 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, *CharType*şablon parametresi için bir eş anlamlı.
+Tür, *CharType* şablon parametresi için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -132,7 +133,7 @@ int main( )
 }
 ```
 
-## <a name="istreambuf_iteratorequal"></a><a name="equal"></a>istreambuf_iterator:: eşittir
+## <a name="istreambuf_iteratorequal"></a><a name="equal"></a> istreambuf_iterator:: eşittir
 
 İki giriş akışı arabellek yineleyiciler arasındaki denklik için testler.
 
@@ -181,7 +182,7 @@ int main( )
 }
 ```
 
-## <a name="istreambuf_iteratorint_type"></a><a name="int_type"></a>istreambuf_iterator:: int_type
+## <a name="istreambuf_iteratorint_type"></a><a name="int_type"></a> istreambuf_iterator:: int_type
 
 İçin tamsayı türü sağlayan bir tür `istreambuf_iterator` .
 
@@ -212,7 +213,7 @@ The inttype1 = 100.
 */
 ```
 
-## <a name="istreambuf_iteratoristream_type"></a><a name="istream_type"></a>istreambuf_iterator:: istream_type
+## <a name="istreambuf_iteratoristream_type"></a><a name="istream_type"></a> istreambuf_iterator:: istream_type
 
 Akış türü için sağlayan bir tür `istreambuf_iterator` .
 
@@ -228,7 +229,7 @@ Tür için bir eş anlamlı `basic_istream` \< **CharType**, **Traits**> .
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [istreambuf_iterator](#istreambuf_iterator) `istream_type` .
 
-## <a name="istreambuf_iteratoristreambuf_iterator"></a><a name="istreambuf_iterator"></a>istreambuf_iterator:: istreambuf_iterator
+## <a name="istreambuf_iteratoristreambuf_iterator"></a><a name="istreambuf_iterator"></a> istreambuf_iterator:: istreambuf_iterator
 
 Giriş akışından karakter okumak için başlatılan bir istreambuf_iterator oluşturur.
 
@@ -247,7 +248,7 @@ Eklendiği giriş akışı `istreambuf_iterator` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, giriş akışı arabellek işaretçisini *strBuffer*ile başlatır. İkinci Oluşturucu, giriş akışı arabellek işaretçisini *_Istr*ile başlatır. `rdbuf`ve sonuç olarak, sonunda türünde bir nesne ayıklamaya ve depolamaya çalışır `CharType` .
+İlk Oluşturucu, giriş akışı arabellek işaretçisini *strBuffer* ile başlatır. İkinci Oluşturucu, giriş akışı arabellek işaretçisini *_Istr* ile başlatır. `rdbuf`ve sonuç olarak, sonunda türünde bir nesne ayıklamaya ve depolamaya çalışır `CharType` .
 
 ### <a name="example"></a>Örnek
 
@@ -281,7 +282,7 @@ int main( )
 }
 ```
 
-## <a name="istreambuf_iteratoroperator"></a><a name="op_star"></a>istreambuf_iterator:: operator *
+## <a name="istreambuf_iteratoroperator"></a><a name="op_star"></a> istreambuf_iterator:: operator *
 
 Başvuru kaldırma işleci akıştaki sonraki karakteri döndürür.
 
@@ -321,7 +322,7 @@ int main( )
 }
 ```
 
-## <a name="istreambuf_iteratoroperator"></a><a name="op_add_add"></a>istreambuf_iterator:: operator + +
+## <a name="istreambuf_iteratoroperator"></a><a name="op_add_add"></a> istreambuf_iterator:: operator + +
 
 Giriş akışındaki sonraki öğeyi döndürür ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.
 
@@ -366,7 +367,7 @@ int main( )
 }
 ```
 
-## <a name="istreambuf_iteratoroperator-gt"></a><a name="op_arrow"></a>istreambuf_iterator:: operator-&gt;
+## <a name="istreambuf_iteratoroperator-gt"></a><a name="op_arrow"></a> istreambuf_iterator:: operator-&gt;
 
 Varsa, bir üyenin değerini döndürür.
 
@@ -376,9 +377,9 @@ const Elem* operator->() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşleci ** & \* \* bunu**döndürür.
+İşleci **& \* \* bunu** döndürür.
 
-## <a name="istreambuf_iteratorstreambuf_type"></a><a name="streambuf_type"></a>istreambuf_iterator:: streambuf_type
+## <a name="istreambuf_iteratorstreambuf_type"></a><a name="streambuf_type"></a> istreambuf_iterator:: streambuf_type
 
 İstreambuf_iterator akış türü için sağlayan bir tür.
 
@@ -394,7 +395,7 @@ Tür için bir eş anlamlı `basic_streambuf` \< **CharType**, **Traits**> .
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [istreambuf_iterator](#istreambuf_iterator) `istreambuf_type` .
 
-## <a name="istreambuf_iteratortraits_type"></a><a name="traits_type"></a>istreambuf_iterator:: traits_type
+## <a name="istreambuf_iteratortraits_type"></a><a name="traits_type"></a> istreambuf_iterator:: traits_type
 
 Öğesinin karakter nitelikleri türü için sağlayan bir tür `istream_iterator` .
 
@@ -404,7 +405,7 @@ typedef Traits traits_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametresi *nitelikleri*için bir eş anlamlı.
+Tür, şablon parametresi *nitelikleri* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 

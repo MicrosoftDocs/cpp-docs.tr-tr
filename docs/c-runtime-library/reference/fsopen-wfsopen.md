@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fsopen _wfsopen'
 title: _fsopen, _wfsopen
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - _wfsopen function
 - file sharing [C++]
 ms.assetid: 5e4502ab-48a9-4bee-a263-ebac8d638dec
-ms.openlocfilehash: 7c7f079d8867416ab4f091d7c95a01ab9e40c0e8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c7b54a6735939e26c8ff0153abc640e3dc2c8b41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910148"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318344"
 ---
 # <a name="_fsopen-_wfsopen"></a>_fsopen, _wfsopen
 
@@ -80,17 +81,17 @@ Açılacak dosyanın adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri akışa bir işaretçi döndürür. Null işaretçi değeri bir hatayı gösterir. *Dosya adı* veya *mod* **null** ya da boş bir dize ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevlerin her biri akışa bir işaretçi döndürür. Null işaretçi değeri bir hatayı gösterir. *Dosya adı* veya *mod* **null** ya da boş bir dize ise, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fsopen** işlevi dosya *adı* tarafından belirtilen dosyayı bir akış olarak açar ve mod ve *shflag* bağımsız değişkenleri tarafından tanımlanan şekilde dosyayı sonraki paylaşılan okuma veya yazma için hazırlar. **_wfsopen** , **_fsopen**geniş karakterli bir sürümüdür; _wfsopen *dosya adı* ve *mod* bağımsız **_wfsopen** değişkenleri geniş karakterli dizelerdir. **_wfsopen** ve **_fsopen** aynı şekilde davranır.
+**_Fsopen** işlevi dosya *adı* tarafından belirtilen dosyayı bir akış olarak açar ve mod ve *shflag* bağımsız değişkenleri tarafından tanımlanan şekilde dosyayı sonraki paylaşılan okuma veya yazma için hazırlar. **_wfsopen** , **_fsopen** geniş karakterli bir sürümüdür; _wfsopen *dosya adı* ve *mod* bağımsız  değişkenleri geniş karakterli dizelerdir. **_wfsopen** ve **_fsopen** aynı şekilde davranır.
 
 Karakter dizesi *modu* , aşağıdaki tabloda gösterildiği gibi, dosya için istenen erişim türünü belirtir.
 
-|Sözleşme Dönemi|Tanım|
+|Süre|Tanım|
 |----------|----------------|
 |**sağ**|Okuma için açılır. Dosya yoksa veya bulunamıyorsa, **_fsopen** çağrısı başarısız olur.|
 |**anlatımı**|Yazma için boş bir dosya açar. Verilen dosya varsa, içeriği yok edilir.|
@@ -103,7 +104,7 @@ Mevcut dosyaları yok etmek için **"w"** ve **"w +"** türlerini dikkatli kulla
 
 **"A"** veya **"a +"** erişim türüyle bir dosya açıldığında, dosyanın sonunda tüm yazma işlemleri gerçekleşir. Dosya işaretçisi, [fseek](fseek-fseeki64.md) veya [geri sarma](rewind.md)kullanılarak yeniden konumlandırılabilir, ancak herhangi bir yazma işlemi yapılmadan önce her zaman dosyanın sonuna geri taşınır. Bu nedenle, mevcut verilerin üzerine yazılamaz. **"R +"**, **"w +"** veya **"a +"** erişim türü belirtildiğinde, hem okuma hem de yazma için izin verilir (dosyanın güncelleştirme için açık olduğu söylenir). Ancak, okuma ve yazma arasında geçiş yaparken, aradaki bir [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md)veya [geri sarma](rewind.md) işlemi olmalıdır. İsterseniz, [fsetpos](fsetpos.md) veya [fseek](fseek-fseeki64.md) işlemi için geçerli konum belirtilebilir. Yukarıdaki değerlere ek olarak, yeni satırlar için çeviri modunu belirtmek ve dosya yönetimi için aşağıdaki karakterlerden biri *moda* dahil edilebilir.
 
-|Sözleşme Dönemi|Tanım|
+|Süre|Tanım|
 |----------|----------------|
 |**şı**|Metin (çevrilmiş) modunda bir dosya açar. Bu modda, satır başı satır besleme (CR-LF) birleşimleri, giriş ve LF karakterleri üzerinde tek satırlık akışlara (LF) çevrilir ve çıkışta CR-LF birleşimlerine çevrilir. Ayrıca CTRL + Z, girişte bir dosya sonu karakteri olarak yorumlanır. Okuma veya okuma/yazma için açılan dosyalarda, **_fsopen** DOSYANıN sonunda CTRL + Z olup olmadığını denetler ve mümkünse onu kaldırır. Bu işlem yapılır çünkü bu, CTRL + Z ile biten bir dosya içinde gezinmek için [fseek](fseek-fseeki64.md) ve [fsöyleyin](ftell-ftelli64.md) kullanılması, [fseek](fseek-fseeki64.md) 'in dosyanın sonuna doğru şekilde davranmasına neden olabilir.|
 |**kenarı**|İkili (çevrilmemiş) modda bir dosya açar; Yukarıdaki Çeviriler bastırılır.|
@@ -112,11 +113,11 @@ Mevcut dosyaları yok etmek için **"w"** ve **"w +"** türlerini dikkatli kulla
 |**T**|Geçici olarak bir dosya belirtir. Mümkünse, diske boşaltılmaz.|
 |**TID**|Geçici olarak bir dosya belirtir. Son dosya işaretçisi kapatıldığında silinir.|
 
-**T** veya **b** *modda*verilmezse, çeviri modu **_fmode**varsayılan mod değişkeni tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve **null**değerini döndürür. Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
+**T** veya **b** *modda* verilmezse, çeviri modu **_fmode** varsayılan mod değişkeni tarafından tanımlanır. **T** veya **b** bağımsız değişkene öneki varsa, Işlev başarısız olur ve **null** değerini döndürür. Metin ve ikili modların bir tartışması için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
 *Shflag* bağımsız değişkeni, Share. h içinde tanımlanan aşağıdaki bildirim sabitlerinden birini içeren sabit bir ifadedir.
 
-|Sözleşme Dönemi|Tanım|
+|Süre|Tanım|
 |----------|----------------|
 |**_SH_COMPAT**|16 bit uygulamalar için uyumluluk modunu ayarlar.|
 |**_SH_DENYNO**|Okuma ve yazma erişimine izin verir.|
@@ -136,8 +137,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |--------------|---------------------|----------------------|
-|**_fsopen**|\<stdio. h>|\<Share. h><br /><br /> *Shflag* parametresi için bildirim sabiti.|
-|**_wfsopen**|\<stdio. h> veya \<wchar. h>|\<Share. h><br /><br /> *Shflag* parametresi için bildirim sabiti.|
+|**_fsopen**|\<stdio.h>|\<share.h><br /><br /> *Shflag* parametresi için bildirim sabiti.|
+|**_wfsopen**|\<stdio.h> veya \<wchar.h>|\<share.h><br /><br /> *Shflag* parametresi için bildirim sabiti.|
 
 ## <a name="example"></a>Örnek
 
@@ -173,7 +174,7 @@ No one else in the network can write to this file until we are done.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [_fdopen, _wfdopen](fdopen-wfdopen.md)<br/>
 [ferror](ferror.md)<br/>

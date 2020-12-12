@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4905'
 title: Derleyici Uyarısı (düzey 1) C4905
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4905
 ms.assetid: 40240bf4-b14e-4c22-aeb2-52f2851532f6
-ms.openlocfilehash: 76f4786f808618b02ad93054d31992bbe710613e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ee2d3aecd26128c69325fdba15bbae44f2de0a8d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199348"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338583"
 ---
 # <a name="compiler-warning-level-1-c4905"></a>Derleyici Uyarısı (düzey 1) C4905
 

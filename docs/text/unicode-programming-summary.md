@@ -1,16 +1,17 @@
 ---
+description: Daha fazla bilgi için bkz. Unicode Programlama Özeti
 title: Unicode Programlama Özeti
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Unicode [C++], programming with
 - Unicode [C++], MFC and C run-time functions
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-ms.openlocfilehash: 5095e1c58db3e5c35eb9215367f2fbb064bc228a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fe07aa4ff57e8dbf92377d54820adf8463d98211
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306631"
 ---
 # <a name="unicode-programming-summary"></a>Unicode Programlama Özeti
 

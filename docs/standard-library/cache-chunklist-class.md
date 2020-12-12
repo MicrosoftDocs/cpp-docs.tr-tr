@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: cache_chunklist sınıfı'
 title: cache_chunklist Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - stdext::cache_chunklist [C++], allocate
 - stdext::cache_chunklist [C++], deallocate
 ms.assetid: af19eccc-4ae7-4a34-bbb2-81e397424cb9
-ms.openlocfilehash: 1ee422423356a18f1c81796790593a20dc03fbab
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 264713ed12727d45928f40f2bc6a790e0e3b1db1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325404"
 ---
 # <a name="cache_chunklist-class"></a>cache_chunklist Sınıfı
 
 Tek boyuttaki bellek bloklarını ayıran ve ayıran [blok ayırıcıyı](../standard-library/allocators-header.md) tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <std::size_t Sz, std::size_t Nelts = 20>
@@ -37,7 +38,7 @@ Ayrılacak dizideki öğelerin sayısı.
 
 Bu sınıf şablonu, gerektiğinde bir bellek bloğu için depolama alanı ayırmak üzere alt ayırma blokları, ham bellek öbeklerini ayırmak için **New işlecini** kullanır; serbest bırakılmış bellek bloklarını her bir öbek için ayrı bir ücretsiz listede depolar ve herhangi bir bellek bloğu kullanımda olduğunda bir öbeği serbest bırakmak için **işleç silme** kullanır.
 
-Her bellek bloğunda, *Sz* kullanılabilir bellek ve onun ait olduğu öbek için bir işaretçi bulunur. Her öbek `Nelts` bellek blokları, üç işaretçi, bir int ve **New işleci** ve **delete işleci** için gerekli olan verileri içerir.
+Her bellek bloğunda,  kullanılabilir bellek ve onun ait olduğu öbek için bir işaretçi bulunur. Her öbek `Nelts` bellek blokları, üç işaretçi, bir int ve **New işleci** ve **delete işleci** için gerekli olan verileri içerir.
 
 ### <a name="constructors"></a>Oluşturucular
 

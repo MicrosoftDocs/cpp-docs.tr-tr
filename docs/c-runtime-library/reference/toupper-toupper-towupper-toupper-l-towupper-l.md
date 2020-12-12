@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ToUpper, _toupper, kasaüstü, _toupper_l, _towupper_l'
 title: toupper, _toupper, towupper, _toupper_l, _towupper_l
 ms.date: 4/2/2020
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - characters, converting
 - toupper function
 ms.assetid: cdef1b0f-b19c-4d11-b7d2-cf6334c9b6cc
-ms.openlocfilehash: 943b66bf03420dc707415fd5da0ddf8cc3107d85
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cb2a121d1fa96c0149a329520f5c71c1cc4f4d9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318318"
 ---
 # <a name="toupper-_toupper-towupper-_toupper_l-_towupper_l"></a>toupper, _toupper, towupper, _toupper_l, _towupper_l
 
@@ -120,15 +121,15 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |**_totupper_l**|**_toupper_l**|**_mbctoupper_l**|**_towupper_l**|
 
 > [!NOTE]
-> **_toupper_l** ve **_towupper_l** yerel ayar bağımlılığını yoktur ve doğrudan çağrılması için tasarlanmamıştır. **_Totupper_l**tarafından iç kullanım için sağlanır.
+> **_toupper_l** ve **_towupper_l** yerel ayar bağımlılığını yoktur ve doğrudan çağrılması için tasarlanmamıştır. **_Totupper_l** tarafından iç kullanım için sağlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ToUpper**|\<CType. h>|
-|**_toupper**|\<CType. h>|
-|**kasaüstü**|\<CType. h> veya \<wchar. h>|
+|**ToUpper**|\<ctype.h>|
+|**_toupper**|\<ctype.h>|
+|**kasaüstü**|\<ctype.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -139,6 +140,6 @@ Bkz. [işlevleri](../../c-runtime-library/to-functions.md).
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [, isw yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
-[to İşlevleri](../../c-runtime-library/to-functions.md)<br/>
+[to Işlevleri](../../c-runtime-library/to-functions.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: boyer_moore_horspool_searcher sınıfı'
 title: boyer_moore_horspool_searcher sınıfı
 ms.date: 08/03/2019
 f1_keywords:
 - functional/std::boyer_moore_horspool_searcher
 helpviewer_keywords:
 - std::boyer_moore_horspool_searcher [C++]
-ms.openlocfilehash: 1eb1f099ca2976dd4b0ea80ebdfb93a8b5c61f70
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 727af034dbb20bd1a0d09ae7de8f88da16a6ba36
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039839"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325431"
 ---
 # <a name="boyer_moore_horspool_searcher-class"></a>boyer_moore_horspool_searcher sınıfı
 
@@ -40,7 +41,7 @@ class boyer_moore_horspool_searcher
 
 ## <a name="members"></a>Üyeler
 
-| Üye | Description |
+| Üye | Açıklama |
 | - | - |
 | **Oluşturucu** | |
 | [boyer_moore_horspool_searcher](#boyer-moore-horspool-searcher-constructor) | Bir Arayıcının örneği oluşturur. |
@@ -75,7 +76,7 @@ Dizi öğeleri için isteğe bağlı eşitlik karşılaştırma koşulu. Bir eş
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BinaryPredicate*, *hash*veya *Randomaccessıterator* türlerinin kopya Oluşturucusu tarafından oluşturulan özel durumları ya da *BinaryPredicate* veya *hash*çağrı işlecini oluşturur.
+*BinaryPredicate*, *hash* veya *Randomaccessıterator* türlerinin kopya Oluşturucusu tarafından oluşturulan özel durumları ya da *BinaryPredicate* veya *hash* çağrı işlecini oluşturur.
 
 Bu sınıf C++ 17 ' de yenidir.
 
@@ -100,7 +101,7 @@ pair<RandomAccessIterator2, RandomAccessIterator2> operator()(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arama deseninin `[pat_first, pat_last)` boş olması halinde döndürür `make_pair(first, first)` . Arama deseninin bulunamaması halinde döndürür `make_pair(last, last)` . Aksi takdirde, `[first, last)` Pred değerine göre eşit olan bir dizinin başlangıcına ve sonuna kadar yineleyiciler çifti döndürür `[pat_first, pat_last)` . *pred*
+Arama deseninin `[pat_first, pat_last)` boş olması halinde döndürür `make_pair(first, first)` . Arama deseninin bulunamaması halinde döndürür `make_pair(last, last)` . Aksi takdirde, `[first, last)` Pred değerine göre eşit olan bir dizinin başlangıcına ve sonuna kadar yineleyiciler çifti döndürür `[pat_first, pat_last)` . 
 
 Bu sınıf C++ 17 ' de yenidir.
 

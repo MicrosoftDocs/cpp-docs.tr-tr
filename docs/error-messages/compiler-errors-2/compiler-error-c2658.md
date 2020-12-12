@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2658'
 title: Derleyici hatası C2658
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2658
 ms.assetid: 638368e8-7893-4a14-abec-13c768a9543a
-ms.openlocfilehash: 77a9122d20561ceee4f211394b3b81900d5580ac
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6f86bb2147d13a0192cb7272e3ac2f3f580b1493
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286052"
 ---
 # <a name="compiler-error-c2658"></a>Derleyici hatası C2658
 

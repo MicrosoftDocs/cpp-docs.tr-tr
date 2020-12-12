@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: cache_freelist sınıfı'
 title: cache_freelist Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - stdext::cache_freelist [C++], allocate
 - stdext::cache_freelist [C++], deallocate
 ms.assetid: 840694de-36ba-470f-8dae-2b723d5a8cd9
-ms.openlocfilehash: bbe0ff0f2297afcec99bd162ebe6a6d3e10f9bce
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9d5b3da272cff39b0c9d7d69df2c744d6952cd03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560732"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325388"
 ---
 # <a name="cache_freelist-class"></a>cache_freelist Sınıfı
 
 Tek boyuttaki bellek bloklarını ayıran ve ayıran [blok ayırıcıyı](../standard-library/allocators-header.md) tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <std::size_t Sz, class Max>
@@ -38,9 +39,9 @@ Ayrılacak dizideki öğelerin sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Cache_freelist sınıf şablonu, *SZ*boyutundaki bellek bloklarının boş bir listesini tutar. Ücretsiz liste dolduğunda, bellek bloklarını serbest bırakmak için **işleç Delete** kullanır. Ücretsiz liste boş olduğunda yeni bellek blokları ayırmak için **New işlecini** kullanır. Ücretsiz listenin en büyük boyutu, *en* büyük parametrede geçirilen sınıf en büyük sınıfına göre belirlenir.
+Cache_freelist sınıf şablonu, *SZ* boyutundaki bellek bloklarının boş bir listesini tutar. Ücretsiz liste dolduğunda, bellek bloklarını serbest bırakmak için **işleç Delete** kullanır. Ücretsiz liste boş olduğunda yeni bellek blokları ayırmak için **New işlecini** kullanır. Ücretsiz listenin en büyük boyutu, *en* büyük parametrede geçirilen sınıf en büyük sınıfına göre belirlenir.
 
-Her bellek bloğunda, *Sz* kullanılabilir bellek ve **New işleci** ve **delete işleci** için gerekli bellek bulunur.
+Her bellek bloğunda,  kullanılabilir bellek ve **New işleci** ve **delete işleci** için gerekli bellek bulunur.
 
 ### <a name="constructors"></a>Oluşturucular
 
