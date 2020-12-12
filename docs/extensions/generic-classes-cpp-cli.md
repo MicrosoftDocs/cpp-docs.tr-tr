@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: genel sınıflar (C++/CLı)'
 title: Genel Sınıflar (C++/CLI)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - generic classes
 - generics [C++], declaring generic classes
 ms.assetid: 0beb99e1-1ec4-4fee-9836-ce9657d67a3a
-ms.openlocfilehash: fd287d8e9fe08ccd42436569eafee3f6935700e2
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 6b27f5220ab45fb62858bca2cec9ba0e46e9ec0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301769"
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 
 Genel bir sınıf aşağıdaki form kullanılarak bildirilmiştir:
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 [attributes]
@@ -41,9 +42,9 @@ Yukarıdaki sözdiziminde, aşağıdaki terimler kullanılır:
 Seçim Ek bildirime dayalı bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. öznitelikler.
 
 *sınıf anahtarı*<br/>
-**`class`** Ya da**`typename`**
+**`class`** Ya da **`typename`**
 
-tür parametrelerinin adlarını belirten, *tür-parametre*tanımlayıcıları, virgülle ayrılmış bir liste.
+tür parametrelerinin adlarını belirten, *tür-parametre* tanımlayıcıları, virgülle ayrılmış bir liste.
 
 *kısıtlama-yan tümceler*<br/>
 Tür parametrelerinin kısıtlamalarını belirten **WHERE** yan tümcelerinin listesi (virgülle ayrılmamış). Şu formu alır:
@@ -60,7 +61,7 @@ Genel sınıf için erişilebilirlik değiştiricileri. Windows Çalışma Zaman
 Genel sınıfın adı, geçerli herhangi bir C++ tanımlayıcısı.
 
 *ilerine*<br/>
-Seçim İzin verilen değiştiriciler **Sealed** ve **abstract**içerir.
+Seçim İzin verilen değiştiriciler **Sealed** ve **abstract** içerir.
 
 *temel liste*<br/>
 Tek bir temel sınıfı ve uygulanan tüm arabirimleri içeren bir liste, tümü virgülle ayrılır.
@@ -276,7 +277,7 @@ Aşağıdaki özel kurallar genel sınıfların içindeki yöntemlere uygulanır
 
 Ek tür parametrelerine sahip olmayan genel sınıflardaki metotlar genellikle genel olmayan olarak adlandırılır ancak kapsayan genel sınıf tarafından örtülü olarak parametrelenir.
 
-Genel olmayan bir metodun imzası, kapsayan sınıfın bir veya daha fazla tür parametresini doğrudan ya da açık bir oluşturulmuş türde içerebilir. Örnek:
+Genel olmayan bir metodun imzası, kapsayan sınıfın bir veya daha fazla tür parametresini doğrudan ya da açık bir oluşturulmuş türde içerebilir. Örneğin:
 
 `void MyMethod(MyClass<ItemType> x) {}`
 
@@ -341,7 +342,7 @@ Amount: $123.00**
 
 ## <a name="generic-methods-in-generic-classes"></a>Genel sınıflarda genel metotlar
 
-Genel ve genel olmayan sınıflarda genel yöntemler bildirebilirsiniz. Örnek:
+Genel ve genel olmayan sınıflarda genel yöntemler bildirebilirsiniz. Örneğin:
 
 ## <a name="example-declare-generic-and-non-generic-methods"></a>Örnek: genel ve genel olmayan yöntemler bildirin
 

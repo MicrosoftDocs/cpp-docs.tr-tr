@@ -1,5 +1,6 @@
 ---
-title: '&lt;valarray&gt; işlevleri'
+description: 'Hakkında daha fazla bilgi edinin: &lt; valarray &gt; Functions'
+title: '&lt;valarray &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - valarray/std::abs
@@ -40,16 +41,16 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: 12275f93c751b4d9ffafcae62621b251a8bc9bfc
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: c1e660c73abc34864a0acf1966f8bfd37b51d87e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422418"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300404"
 ---
-# <a name="ltvalarraygt-functions"></a>&lt;valarray&gt; işlevleri
+# <a name="ltvalarraygt-functions"></a>&lt;valarray &gt; işlevleri
 
-## <a name="abs"></a>mutlak
+## <a name="abs"></a><a name="abs"></a> mutlak
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin mutlak değerine eşit olan bir valarray döndürür.
 
@@ -60,7 +61,7 @@ valarray<Type> abs(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -104,7 +105,7 @@ The initial valarray is: 0 -1 -2 -3 4 5 6 7 8 .
 The absolute value of the initial valarray is: 0 1 2 3 4 5 6 7 8 .
 ```
 
-## <a name="acos"></a>acos
+## <a name="acos"></a><a name="acos"></a> acos
 
 , Bir giriş valarray öğeleri üzerinde çalışır, öğeleri girdi valarray öğelerinin Arkkosinüs değerine eşit olan bir valarray döndürür.
 
@@ -115,7 +116,7 @@ valarray<Type> acos(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -177,7 +178,7 @@ The arccosine of the initial valarray is:
          0  radians, which is            0  degrees
 ```
 
-## <a name="asin"></a>Asin
+## <a name="asin"></a><a name="asin"></a> Asin
 
 , Bir giriş valarray öğeleri üzerinde çalışır, öğeleri girdi valarray öğelerinin arksinüsünü eşit olan bir valarray döndürür.
 
@@ -188,7 +189,7 @@ valarray<Type> asin(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -250,7 +251,7 @@ The arcsine of the initial valarray is:
     1.5708  radians, which is           90  degrees
 ```
 
-## <a name="atan"></a>atan
+## <a name="atan"></a><a name="atan"></a> atan
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin arktanjant değerinin asıl değerine eşit olan bir valarray döndürür.
 
@@ -261,7 +262,7 @@ valarray<Type> atan(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -326,7 +327,7 @@ The arcsine of the initial valarray is:
     1.5608  radians, which is      89.4271  degrees
 ```
 
-## <a name="atan2"></a>atan2
+## <a name="atan2"></a><a name="atan2"></a> atan2
 
 Öğeleri, valarışın sabitlerinin ve öğelerinin bir birleşimiyle belirtilen Kartezyen bileşenlerinin ark birleşimine eşit olan bir valarray döndürür.
 
@@ -343,21 +344,21 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri, arktanjant bağımsız değişkeninin y koordinatı için değerler sağlayan sabit sayısal veri türü veya giriş valarray.
 
-*sağ*\
+*Right*\
 Öğeleri arktanjant bağımsız değişkeninin x koordinatı için değerler sağlayan sabit sayısal veri türü veya giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri `I`, öğesinin arktanjant değerine eşit olan bir valarray:
+Öğeleri `I` öğesinin arktanjant değerine eşit olan bir valarray:
 
-- ilk şablon işlevi için `left` [ *i* ]/ *_Righ*t [ *i* ].
+- `left` İlk şablon işlevi için [ *i* ]/ *_Righ* t [ *i* ].
 
-- ikinci şablon işlevi için `left` [ *I* ]/`right`.
+- `left` [ *I* ]/ `right` ikinci şablon işlevi için.
 
-- Üçüncü şablon işlevi için `left` / `right` [ *I* ].
+- `left` / `right` [ *I* ] üçüncü şablon işlevi için.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -420,14 +421,14 @@ The atan2 ( y / x ) of the initial valarrays is:
  -0.785398  radians, which is          -45degrees
 ```
 
-## <a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a> başladı
 
 ```cpp
 template <class T> unspecified 1 begin(valarray<T>& v);
 template <class T> unspecified 2 begin(const valarray<T>& v);
 ```
 
-## <a name="cos"></a>cos
+## <a name="cos"></a><a name="cos"></a> cos
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin kosinüs değerine eşit olan bir valarray döndürür.
 
@@ -438,7 +439,7 @@ valarray<Type> cos(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -504,7 +505,7 @@ The cosine of the initial valarray is:
 -1
 ```
 
-## <a name="cosh"></a>Cosh
+## <a name="cosh"></a><a name="cosh"></a> Cosh
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin hiperbolik kosinüs değerine eşit olan bir valarray döndürür.
 
@@ -515,7 +516,7 @@ valarray<Type> cosh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -587,14 +588,14 @@ The hyperbolic cosine of the initial valarray is:
 11.592
 ```
 
-## <a name="end"></a>erer
+## <a name="end"></a><a name="end"></a> erer
 
 ```cpp
 template <class T> unspecified 1 end(valarray<T>& v);
 template <class T> unspecified 2 end(const valarray<T>& v);
 ```
 
-## <a name="exp"></a>exp
+## <a name="exp"></a><a name="exp"></a> exp
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin doğal üslerinin değerine eşit olan bir valarray döndürür.
 
@@ -605,7 +606,7 @@ valarray<Type> exp(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -657,7 +658,7 @@ The natural exponential of the initial valarray is:
 22026.5
 ```
 
-## <a name="log"></a>açmasını
+## <a name="log"></a><a name="log"></a> açmasını
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin doğal logaritmasına eşit olan bir valarray döndürür.
 
@@ -668,7 +669,7 @@ valarray<Type> log(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -720,7 +721,7 @@ The natural logarithm of the initial valarray is:
 4.38203
 ```
 
-## <a name="log10"></a>log10
+## <a name="log10"></a><a name="log10"></a> log10
 
 , Bir giriş valarray öğeleri üzerinde çalışır; bu bir valarray, öğeleri 10 tabanında veya giriş valarray öğelerinin ortak logaritmasına eşit olan bir döndürür.
 
@@ -731,7 +732,7 @@ valarray<Type> log10(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -785,9 +786,9 @@ The common logarithm of the initial valarray is:
 2
 ```
 
-## <a name="pow"></a>POW
+## <a name="pow"></a><a name="pow"></a> POW
 
-Giriş valarışın ve sabitlerin öğeleri üzerinde çalışır, öğeleri bir giriş valarray öğeleri tarafından belirtilen bir tabana veya bir giriş valarray öğeleri tarafından belirtilen bir sabite ya da bir valarray sabit.
+Giriş valarışın ve sabitlerin öğeleri üzerinde çalışır, öğeleri bir giriş valarray öğeleri tarafından belirtilen bir tabana veya bir giriş valarray ya da bir sabite göre belirtilen bir sabite yükseltilmiş olan bir valarray döndürür.
 
 ```cpp
 template <class Type>
@@ -811,21 +812,21 @@ pow(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üs olarak kullanılacak her öğe için temel sağlayan giriş valarray.
 
-*sağ*\
+*Right*\
 Öğeleri, öğeleri üs olarak kullanılacak her öğe için güç sağlayan giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeleri `I` şuna eşit olan bir valarray:
+Öğeleri `I` Şuna eşit olan bir valarray:
 
-- ilk şablon işlevi için *[i] `left` [* i *] güç* `right` oluştu.
+- `left` [ *İ* ] `right` ilk şablon işlevi için [ *i* ] gücüne yükseltildi.
 
-- ikinci şablon işlevi için güç `right` `left` [ *I* ] oluştu.
+- `left` [ *I* ] `right` ikinci şablon işlevine yönelik güce yükseltildi.
 
-- Üçüncü şablon işlevi için Power `right` [ *I* ] `left` yükseltildi.
+- `left``right`Üçüncü şablon işlevi için [ *I* ] gücüne yükseltildi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -882,7 +883,7 @@ n = 4   gives 256
 n = 5   gives 1024
 ```
 
-## <a name="sin"></a>sin
+## <a name="sin"></a><a name="sin"></a> sin
 
 , Bir giriş valarray öğeleri üzerinde çalışır, öğeleri girdi valarray öğelerinin Sinüs değerine eşit olan bir valarray döndürür.
 
@@ -893,7 +894,7 @@ valarray<Type> sin(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -959,7 +960,7 @@ The sine of the initial valarray is:
 -2.06823e-013
 ```
 
-## <a name="sinh"></a>sinh
+## <a name="sinh"></a><a name="sinh"></a> sinh
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin hiperbolik sinüsünü eşit olan bir valarray döndürür.
 
@@ -970,7 +971,7 @@ valarray<Type> sinh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1042,7 +1043,7 @@ The hyperbolic sine of the initial valarray is:
 11.5487
 ```
 
-## <a name="sqrt"></a>k
+## <a name="sqrt"></a><a name="sqrt"></a> k
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin kare köküne eşit olan bir valarray döndürür.
 
@@ -1053,7 +1054,7 @@ valarray<Type> sqrt(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1096,7 +1097,7 @@ The initial valarray is: ( 0 1 4 9 16 ).
 The square root of the initial valarray is: ( 0 1 2 3 4 ).
 ```
 
-## <a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki valarışın öğelerini değiş tokuş eder.
 
@@ -1109,17 +1110,17 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 `valarray` türünün bir nesnesi.
 
-*sağ*\
+*Right*\
 `valarray` türünün bir nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi `left.swap(right)`yürütür.
+Şablon işlevi yürütülür `left.swap(right)` .
 
-## <a name="tan"></a>Başlangıçtan
+## <a name="tan"></a><a name="tan"></a> Başlangıçtan
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin tanjantını eşit olan bir valarray döndürür.
 
@@ -1130,7 +1131,7 @@ valarray<Type> tan(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1196,7 +1197,7 @@ The tangent of the initial valarray is:
 -9.6701e+012
 ```
 
-## <a name="tanh"></a>tanh
+## <a name="tanh"></a><a name="tanh"></a> tanh
 
 , Bir giriş valarray öğeleri üzerinde çalışır ve öğeleri, giriş valarray öğelerinin hiperbolik tanjantisine eşit olan bir valarray döndürür.
 
@@ -1207,7 +1208,7 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*sol*\
+*tarafta*\
 Öğeleri üye işlevi tarafından işletilebilir giriş valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri

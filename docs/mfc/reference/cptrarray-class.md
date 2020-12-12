@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CPtrArray sınıfı'
 title: CPtrArray sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,18 +43,18 @@ helpviewer_keywords:
 - CPtrArray [MFC], SetAtGrow
 - CPtrArray [MFC], SetSize
 ms.assetid: c23b87a3-bf84-49d6-a66b-61e999d0938a
-ms.openlocfilehash: 5db9f69348e96fffc1aa6fdc88134d777eb5406d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7cde7f76d604562c1161ccc577feea1e43b2076e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301353"
 ---
 # <a name="cptrarray-class"></a>CPtrArray sınıfı
 
 Void işaretçileri dizilerini destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CPtrArray : public CObject
@@ -105,7 +106,7 @@ class CPtrArray : public CObject
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPtrArray`çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek bir işaretçi dizisi öğelerinin dökümünü almanız gerekiyorsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+`CPtrArray` çalışma zamanı türü erişimini ve bir nesneye dökümünü desteklemek için IMPLEMENT_DYNAMIC makrosunu ekler `CDumpContext` . Tek bir işaretçi dizisi öğelerinin dökümünü almanız gerekiyorsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
 > [!NOTE]
 > Bir dizi kullanmadan önce, `SetSize` boyutunu belirlemek ve için bellek ayırmak üzere kullanın. Kullanmıyorsanız `SetSize` , diziye öğe eklemek, bu öğenin sık olarak yeniden tahsis edilmesine ve kopyalanmasına neden olur. Sık yeniden ayırma ve kopyalama verimsiz ve bellek parçalara ayırma yapılabilir.

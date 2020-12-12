@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbccpy_s _mbccpy_s_l'
 title: _mbccpy_s, _mbccpy_s_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _tccpy_s_l function
 - _mbccpy_s_l function
 ms.assetid: b6e965fa-53c1-4ec3-85ef-a1c4b4f2b2da
-ms.openlocfilehash: 85db4e478b070823bb14028018d918e0f3cabbd7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6764c100fb52b025db2d8f79a72c7c6420a64bee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920316"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303537"
 ---
 # <a name="_mbccpy_s-_mbccpy_s_l"></a>_mbccpy_s, _mbccpy_s_l
 
@@ -102,11 +103,11 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır; hatada hata kodu. *Src* veya *dest* **null**ise veya **BuffSizeinBytes** bayttan fazlası *hedefe*kopyalanacaksa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Başarılıysa sıfır; hatada hata kodu. *Src* veya *dest* **null** ise veya **BuffSizeinBytes** bayttan fazlası *hedefe* kopyalanacaksa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbccpy_s** işlevi bir çok baytlı karakteri *src* 'den *hedefe*kopyalar. *Src* , [_ismbblead](ismbblead-ismbblead-l.md)örtük çağrısıyla belirlendiği şekilde çok baytlı bir karakterin ön bayta işaret ediyorsa, *src* 'nin gösterdiği tek bayt kopyalanır. *Src* bir ön bayta işaret ediyorsa, ancak aşağıdaki bayt 0 ' dır ve bu nedenle geçersiz olursa, 0 *hedefe*kopyalanır, **errno** **Eilseq**olarak ayarlanır ve işlev **eilseq**' i döndürür.
+**_Mbccpy_s** işlevi bir çok baytlı karakteri *src* 'den *hedefe* kopyalar. *Src* , [_ismbblead](ismbblead-ismbblead-l.md)örtük çağrısıyla belirlendiği şekilde çok baytlı bir karakterin ön bayta işaret ediyorsa, *src* 'nin gösterdiği tek bayt kopyalanır. *Src* bir ön bayta işaret ediyorsa, ancak aşağıdaki bayt 0 ' dır ve bu nedenle geçersiz olursa, 0 *hedefe* kopyalanır, **errno** **Eilseq** olarak ayarlanır ve işlev **eilseq**' i döndürür.
 
 **_mbccpy_s** , null Sonlandırıcı eklemez; Ancak, *src* bir null karaktere işaret ediyorsa, bu null *hedefe* kopyalanır (Bu yalnızca normal bir tek baytlık kopyasıdır).
 
@@ -119,7 +120,7 @@ Başarılıysa sıfır; hatada hata kodu. *Src* veya *dest* **null**ise veya **B
 |ön bayt ve ardından 0 olmayan|ön bayt ve ardından 0 olmayan|2|0|
 |ön bayt izleyen 0|0|1|**EıLSEQ**|
 
-İkinci satırın yalnızca ilk olarak özel bir durum olduğunu unutmayın. Ayrıca tablonun *buffSizeInBytes* >= *pkopyalanmış*olduğunu varsaydığını unutmayın.
+İkinci satırın yalnızca ilk olarak özel bir durum olduğunu unutmayın. Ayrıca tablonun *buffSizeInBytes*  >=  *pkopyalanmış* olduğunu varsaydığını unutmayın.
 
 **_mbccpy_s** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_mbccpy_s_l** , **_mbccpy_s** bir yerel ayara bağımlı davranış için geçirilen yerel ayarı kullanması dışında, **_mbccpy_s_l** aynıdır.
 
@@ -137,13 +138,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbccpy_s**|\<mbstring. h>|
-|**_mbccpy_s_l**|\<mbstring. h>|
+|**_mbccpy_s**|\<mbstring.h>|
+|**_mbccpy_s_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

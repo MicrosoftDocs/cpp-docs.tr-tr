@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _lsearch_s'
 title: _lsearch_s
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _lsearch_s function
 - lsearch_s function
 ms.assetid: d2db0635-be7a-4799-8660-255f14450882
-ms.openlocfilehash: d8c421eb3c7a6a617ce073cbf5f36416294c1874
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: fdc3d8011dac00cd8d19fe414c2ae1aa78120eee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920452"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299962"
 ---
 # <a name="_lsearch_s"></a>_lsearch_s
 
@@ -65,7 +66,7 @@ Aranacak nesne.
 *base*<br/>
 Aranacak dizinin tabanına yönelik işaretçi.
 
-*number*<br/>
+*sayısından*<br/>
 Öğe sayısı.
 
 *boyutla*<br/>
@@ -81,20 +82,20 @@ Karşılaştırma işlevinde erişilebilir olabilecek bir nesne işaretçisi.
 
 *Anahtar* bulunursa **_lsearch_s** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* *Anahtar* bulunamazsa, **_lsearch_s** dizinin sonunda yeni eklenen öğeye bir işaretçi döndürür.
 
-İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null** değerini döndürür. Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*anahtar*|*base*|*Karşılaştır*|*number*|*boyutla*|**errno**|
+|*anahtar*|*base*|*Karşılaştır*|*sayısından*|*boyutla*|**errno**|
 |-----------|------------|---------------|-----------|------------|-------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|**DEĞER**|kaydedilmemiş|! = 0|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|sıfır|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|a|kaydedilmemiş|**EıNVAL**|
+|**DEĞER**|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|
+|herhangi biri|**DEĞER**|herhangi biri|! = 0|herhangi biri|**EıNVAL**|
+|herhangi biri|herhangi biri|herhangi biri|herhangi biri|sıfır|**EıNVAL**|
+|herhangi biri|herhangi biri|**DEĞER**|a|herhangi biri|**EıNVAL**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lsearch_s** işlevi, her *Genişlik* baytından oluşan *sayı* öğeleri dizisindeki değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch_s**aksine, **_lsearch_s** dizinin sıralanmasını gerektirmez. *Anahtar* bulunmazsa **_lsearch_s** dizinin sonuna ve Artımlar *sayısına*ekler.
+**_Lsearch_s** işlevi, her *Genişlik* baytından oluşan *sayı* öğeleri dizisindeki değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch_s** aksine, **_lsearch_s** dizinin sıralanmasını gerektirmez. *Anahtar* bulunmazsa **_lsearch_s** dizinin sonuna ve Artımlar *sayısına* ekler.
 
 *Compare* işlevi, iki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan yordamın bir işaretçisidir. *Compare* işlevi, ilk bağımsız değişken olarak bağlam işaretçisini de alır. **_lsearch_s** çağrılar arama sırasında bir veya daha fazla kez *karşılaştırıp* her çağrıda iki dizi öğesine işaretçiler geçirerek. *Compare* öğeleri karşılaştırmalıdır ve sıfır dışında bir değere (öğelerin farklı olduğu anlamına gelir) veya 0 (öğeler özdeş) döndürmelidir.
 
@@ -106,7 +107,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lsearch_s**|\<Search. h>|
+|**_lsearch_s**|\<search.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

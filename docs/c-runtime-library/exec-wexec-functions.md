@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _exec, _wexec Işlevleri'
 title: _exec, _wexec İşlevleri
 ms.date: 11/04/2016
 api_location:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - _exec function
 - _texecvpe function
 ms.assetid: a261df93-206a-4fdc-b8ac-66aa7db83bc6
-ms.openlocfilehash: ecfcf88b09a4383fc050e9737a0ffe7203f9a050
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0a28c7bdc192e2e72c751e953987509c07611934
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839731"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300105"
 ---
 # <a name="_exec-_wexec-functions"></a>_exec, _wexec İşlevleri
 
@@ -128,7 +129,7 @@ Bağımsız değişken işaretçileri ayrı parametreler olarak (,,, `_execl` ve
 
 `_execv`,, `_execve` , `_execvp` Ve `_execvpe` çağrıları yeni işlem için parametre sayısı değişken olduğunda faydalıdır. Parametrelere yönelik işaretçiler dizi olarak geçirilir `argv` . `argv`[0] parametresi, genellikle bir işaretçisidir `cmdname` . [ `argv` 1]- `argv` [] parametreleri, `n` yeni parametre listesini oluşturan karakter dizelerini işaret ettikten sonra. Parametre `argv` `n` listesinin sonunu işaretlemek için [+ 1] parametresi **null** bir işaretçi olmalıdır.
 
-Bir çağrı yapıldığında açık olan dosyalar `_exec` Yeni işlemde açık kalır. `_execl`,, `_execlp` , `_execv` Ve `_execvp` çağrılarında, yeni işlem çağıran işlemin ortamını devralır. `_execle`, `_execlpe` , `_execve` ve `_execvpe` çağrıları, bir ortam ayarları listesini parametresi aracılığıyla geçirerek yeni işlem için ortamı değiştirir `envp` . `envp` , bir karakter işaretçileri dizisi olan her öğe (Final öğesi hariç), bir ortam değişkenini tanımlayan null ile sonlandırılmış bir dizeye işaret eder. Bu tür bir dize genellikle `NAME` = `value` `NAME` bir ortam değişkeninin adı olduğu ve `value` söz konusu değişkenin ayarlandığı dize değerinin bulunduğu biçimdedir. ( `value` Çift tırnak işareti içine alınmadığını unutmayın.) Dizinin son öğesi `envp` **null**olmalıdır. `envp`Kendisi **null**olduğunda, yeni işlem çağıran işlemin ortam ayarlarını devralır.
+Bir çağrı yapıldığında açık olan dosyalar `_exec` Yeni işlemde açık kalır. `_execl`,, `_execlp` , `_execv` Ve `_execvp` çağrılarında, yeni işlem çağıran işlemin ortamını devralır. `_execle`, `_execlpe` , `_execve` ve `_execvpe` çağrıları, bir ortam ayarları listesini parametresi aracılığıyla geçirerek yeni işlem için ortamı değiştirir `envp` . `envp` , bir karakter işaretçileri dizisi olan her öğe (Final öğesi hariç), bir ortam değişkenini tanımlayan null ile sonlandırılmış bir dizeye işaret eder. Bu tür bir dize genellikle `NAME` = `value` `NAME` bir ortam değişkeninin adı olduğu ve `value` söz konusu değişkenin ayarlandığı dize değerinin bulunduğu biçimdedir. ( `value` Çift tırnak işareti içine alınmadığını unutmayın.) Dizinin son öğesi `envp` **null** olmalıdır. `envp`Kendisi **null** olduğunda, yeni işlem çağıran işlemin ortam ayarlarını devralır.
 
 İşlevlerden biriyle yürütülen bir program `_exec` , programın. exe dosya üstbilgisindeki en büyük ayırma alanının varsayılan olarak 0xFFFFH değerine ayarlanmış olması halinde belleğe yüklenir.
 

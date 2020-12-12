@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Comment pragma'
 title: açıklama pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -10,26 +11,26 @@ helpviewer_keywords:
 - pragmas, comment
 - comment pragma
 ms.assetid: 20f099ff-6303-49b3-9c03-a94b6aa69b85
-ms.openlocfilehash: 3175ad5318bcc6fd9aa6233258ccec9033c89be8
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 71172632ee1589c3f6d66136e9567929bff5d08c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300820"
 ---
 # <a name="comment-pragma"></a>açıklama pragması
 
 Bir nesne dosyasına veya yürütülebilir dosyaya bir yorum kaydı koyar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#pragma açıklaması (** *Açıklama türü* [ **,** "*Açıklama-dizesi*"] **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Açıklama türü* , aşağıda açıklanan, açıklama kaydı türünü belirten önceden tanımlanmış tanımlayıcılardan biridir. İsteğe bağlı *Açıklama dizesi* , bazı açıklama türleri için ek bilgi sağlayan bir dize sabit değeri. *Açıklama dizesi* bir dize sabit değeri olduğundan, dize sabit değerleri için kaçış karakterleri, gömülü tırnak işaretleri (`"`) ve birleştirme ile ilgili tüm kurallara uyar.
+*Açıklama türü* , aşağıda açıklanan, açıklama kaydı türünü belirten önceden tanımlanmış tanımlayıcılardan biridir. İsteğe bağlı *Açıklama dizesi* , bazı açıklama türleri için ek bilgi sağlayan bir dize sabit değeri. *Açıklama dizesi* bir dize sabit değeri olduğundan, dize sabit değerleri için kaçış karakterleri, gömülü tırnak işaretleri () ve birleştirme ile ilgili tüm kurallara uyar `"` .
 
-### <a name="compiler"></a>derleyicisi
+### <a name="compiler"></a>compiler
 
 Derleyicinin adını ve sürüm numarasını nesne dosyasına koyar. Bu açıklama kaydı bağlayıcı tarafından yok sayılır. Bu kayıt türü için bir *Açıklama dizesi* parametresi sağlarsanız, derleyici bir uyarı oluşturur.
 
@@ -49,17 +50,17 @@ Nesne dosyasına bir [bağlayıcı seçeneği](../build/reference/linker-options
 
 Bağlayıcı tanımlayıcısına yalnızca aşağıdaki (*Açıklama türü*) bağlayıcı seçeneklerinin geçirilmesi sağlanır:
 
-- [/DEFAULTLIB](../build/reference/defaultlib-specify-default-library.md)
+- [/DEFAULTLıB](../build/reference/defaultlib-specify-default-library.md)
 
 - [/EXPORT](../build/reference/export-exports-a-function.md)
 
 - [/INCLUDE](../build/reference/include-force-symbol-references.md)
 
-- [/MANIFESTDEPENDENCY](../build/reference/manifestdependency-specify-manifest-dependencies.md)
+- [/MANıFESTDEPENDENCY](../build/reference/manifestdependency-specify-manifest-dependencies.md)
 
 - [/MERGE](../build/reference/merge-combine-sections.md)
 
-- [/SECTION](../build/reference/section-specify-section-attributes.md)
+- [/SECTıON](../build/reference/section-specify-section-attributes.md)
 
 ### <a name="user"></a>kullanıcı
 

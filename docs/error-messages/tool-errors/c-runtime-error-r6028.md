@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C çalışma zamanı hatası R6028'
 title: C Çalışma Zamanı Hatası R6028
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - R6028
 ms.assetid: 81e99079-4388-4244-a4f7-4641c508871c
-ms.openlocfilehash: 1c165b7c9351e34ef6316962cd90663f2b6152ab
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f4b634814331a7301fccef77be31034afc77084a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197138"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301782"
 ---
 # <a name="c-runtime-error-r6028"></a>C Çalışma Zamanı Hatası R6028
 
@@ -30,6 +31,6 @@ yığın başlatılamıyor
 
 **Programcılar için bilgiler**
 
-Bu hata, işletim sistemi uygulama için bellek havuzunu oluşturamadığında meydana gelir. Özellikle, hata belirten NULL döndüren `HeapCreate`Win32 işlevi adlı C çalışma zamanı (CRT) çağırdı.
+Bu hata, işletim sistemi uygulama için bellek havuzunu oluşturamadığında meydana gelir. Özellikle, `HeapCreate` hata BELIRTEN null döndüren C çalışma zamanı (CRT) Win32 işlevini çağırdı.
 
 Uygulama başlatma sırasında bu hata ortaya çıkarsa, sistem kusurlu sürücülerin yüklü olması sebebiyle yığın isteklerini karşılayamayabilir. Windows Update'e veya güncelleştirilmiş sürücüler için donanım satıcınızın web sitesine bakın.

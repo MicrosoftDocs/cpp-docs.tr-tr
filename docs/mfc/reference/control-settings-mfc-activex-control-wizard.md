@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetim ayarları, MFC ActiveX Denetim Sihirbazı'
 title: Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-ms.openlocfilehash: 1578ca7f4134e51e0ba0d3c2b247dcafcb0fbd67
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 31e8c5fd257128e17017d3d0fa801fc812f99397
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405019"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301600"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 
@@ -23,7 +24,7 @@ Bu sayfada denetimin verimliliğini en üst düzeye çıkarmak için seçenekler
 
 - **Temelinde denetim oluştur**
 
-   Bu listede, denetiminizin devralması gereken denetim türünü seçebilirsiniz. Liste, için kullanılabilir olan denetim sınıflarının `CreateWindowEx` ve commctrl. h içinde belirtilen ek ortak denetimlerin bir alt kümesidir. Seçiminiz, `PreCreateWindow` *ProjName*CTRL. cpp dosyasındaki işlevindeki denetimin stilini belirler. Daha fazla bilgi için bkz. [MFC ActiveX denetimleri: altsınıflama a Windows Control](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
+   Bu listede, denetiminizin devralması gereken denetim türünü seçebilirsiniz. Liste, için kullanılabilir olan denetim sınıflarının `CreateWindowEx` ve commctrl. h içinde belirtilen ek ortak denetimlerin bir alt kümesidir. Seçiminiz, `PreCreateWindow` *ProjName* CTRL. cpp dosyasındaki işlevindeki denetimin stilini belirler. Daha fazla bilgi için bkz. [MFC ActiveX denetimleri: altsınıflama a Windows Control](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md).
 
    |Denetim|Açıklama|
    |-------------|-----------------|
@@ -59,7 +60,7 @@ Bu sayfada denetimin verimliliğini en üst düzeye çıkarmak için seçenekler
    > [!NOTE]
    > Kullanıcının denetim için yardım 'a nasıl eriştiği, yardım 'ı nasıl uyguladığınıza ve denetim yardımını kapsayıcı yardımı ile tümleştirdiğinize bağlıdır.
 
-   Bu seçeneği belirlediğinizde, `AboutBox` denetim yöntemini proje denetim sınıfına ekler (C*ProjName*CTRL. cpp) ve proje dağıtım eşlemesine AboutBox ekler. Varsayılan olarak, bu seçenek seçilidir.
+   Bu seçeneği belirlediğinizde, `AboutBox` denetim yöntemini proje denetim sınıfına ekler (C *ProjName* CTRL. cpp) ve proje dağıtım eşlemesine AboutBox ekler. Varsayılan olarak, bu seçenek seçilidir.
 
 - **İyileştirilmiş çizim kodu**
 
@@ -71,11 +72,11 @@ Bu sayfada denetimin verimliliğini en üst düzeye çıkarmak için seçenekler
 
 - **Kırpılmamış cihaz bağlamı**
 
-   Tarafından yapılan çağrıyı devre dışı bırakmak için denetim üstbilgisindeki [Cotacontrol:: GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags) (*ProjName*CTRL. h) değerini geçersiz kılar `IntersectClipRect` `COleControl` . Bu seçeneği belirlediğinizde, küçük bir hız avantajı sağlar. **Penceresiz etkinleştirme**' yi seçerseniz bu özellik kullanılamaz. Daha fazla bilgi için bkz. [kırpılmamış cihaz bağlamı kullanma](../../mfc/using-an-unclipped-device-context.md).
+   Tarafından yapılan çağrıyı devre dışı bırakmak için denetim üstbilgisindeki [Cotacontrol:: GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags) (*ProjName* CTRL. h) değerini geçersiz kılar `IntersectClipRect` `COleControl` . Bu seçeneği belirlediğinizde, küçük bir hız avantajı sağlar. **Penceresiz etkinleştirme**' yi seçerseniz bu özellik kullanılamaz. Daha fazla bilgi için bkz. [kırpılmamış cihaz bağlamı kullanma](../../mfc/using-an-unclipped-device-context.md).
 
 - **Titreşimsiz etkinleştirme**
 
-   Çizim işlemlerini ve denetimin etkin ve etkin olmayan durumları arasında gerçekleşen görsel titreşimi ortadan kaldırır. **Penceresiz etkinleştirme**' yi seçerseniz bu özellik kullanılamaz. Bu seçeneği belirlediğinizde, `noFlickerActivate` bayrak [Coelcontrol:: GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags)tarafından döndürülen bayraklardan biridir. Daha fazla bilgi için bkz. [titreşimsiz etkinleştirme sağlama](../../mfc/providing-flicker-free-activation.md).
+   Çizim işlemlerini ve denetimin etkin ve etkin olmayan durumları arasında gerçekleşen görsel titreşimi ortadan kaldırır. **Penceresiz etkinleştirme**' yi seçerseniz bu özellik kullanılamaz. Bu seçeneği belirlediğinizde, `noFlickerActivate` bayrak [Coelcontrol:: GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags)tarafından döndürülen bayraklardan biridir. Daha fazla bilgi için bkz. [Flicker-Free etkinleştirme sağlama](../../mfc/providing-flicker-free-activation.md).
 
 - **Nesne Ekle iletişim kutusunda kullanılabilir**
 
@@ -95,6 +96,6 @@ Bu sayfada denetimin verimliliğini en üst düzeye çıkarmak için seçenekler
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetim Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
+[MFC ActiveX denetimi Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [Uygulama ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
-[Denetim Adları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-names-mfc-activex-control-wizard.md)
+[Denetim adları, MFC ActiveX denetimi Sihirbazı](../../mfc/reference/control-names-mfc-activex-control-wizard.md)

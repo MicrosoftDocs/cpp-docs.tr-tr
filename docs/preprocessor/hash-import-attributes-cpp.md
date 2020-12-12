@@ -1,23 +1,24 @@
 ---
+description: 'Daha fazla bilgi edinin: #import öznitelikleri (C++)'
 title: '#import öznitelikleri (C++)'
 ms.date: 08/29/2019
 helpviewer_keywords:
 - '#import directive, attributes'
 ms.assetid: 2a5085e3-82ee-4f83-892b-0aa6cc13863b
-ms.openlocfilehash: fc2af69025d47a9ea6cea0e2c9e1423151b01606
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 87719ba549efab4e0acf13d7e957c6841900d5fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215299"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300468"
 ---
 # <a name="import-attributes-c"></a>#import öznitelikleri (C++)
 
-`#import` yönergesinde kullanılan özniteliklere bağlantılar sağlar.
+Yönergeyle kullanılan özniteliklere bağlantılar sağlar `#import` .
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Aşağıdaki öznitelikler `#import` yönergesinde kullanılabilir.
+Aşağıdaki öznitelikler yönerge için kullanılabilir `#import` .
 
 |Öznitelik|Açıklama|
 |---------------|-----------------|
@@ -30,7 +31,7 @@ Aşağıdaki öznitelikler `#import` yönergesinde kullanılabilir.
 |[implementation_only](../preprocessor/implementation-only.md)|. Tlh üst bilgi dosyasının (birincil üstbilgi dosyası) oluşturulmasını engeller.|
 |[include()](../preprocessor/include-parens.md)|Otomatik dışlamayı devre dışı bırakır.|
 |[inject_statement](../preprocessor/inject-statement.md)|Bağımsız değişkenini tür kitaplığı üstbilgisine kaynak metin olarak ekler.|
-|[named_guids](../preprocessor/named-guids.md)|Derleyiciye, `LIBID_MyLib`, `CLSID_MyCoClass`, `IID_MyInterface`ve `DIID_MyDispInterface`biçiminde eski stilde GUID değişkenleri tanımlayıp başlatmasını söyler.|
+|[named_guids](../preprocessor/named-guids.md)|Derleyicinin,, ve biçiminde, eski stilde GUID değişkenlerini tanımlamasını ve başlatmasını söyler `LIBID_MyLib` `CLSID_MyCoClass` `IID_MyInterface` `DIID_MyDispInterface` .|
 |[no_auto_exclude](../preprocessor/no-auto-exclude.md)|Otomatik dışlamayı devre dışı bırakır.|
 |[no_dual_interfaces](../preprocessor/no-dual-interfaces.md)|Derleyicinin çift arabirim yöntemleri için sarmalayıcı işlevleri üretme şeklini değiştirir.|
 |[no_implementation](../preprocessor/no-implementation.md)|Sarmalayıcı üye işlevlerinin uygulamalarını içeren. TLI üst bilgisinin oluşturulmasını engeller.|
@@ -38,7 +39,7 @@ Aşağıdaki öznitelikler `#import` yönergesinde kullanılabilir.
 |[no_registry](../preprocessor/no-registry.md)|Derleyiciye tür kitaplıkları için kayıt defterinde arama olmadığını söyler.|
 |[no_search_namespace](../preprocessor/no-search-namespace.md)|[No_namespace](../preprocessor/no-namespace.md) özniteliğiyle aynı işlevselliğe sahiptir, ancak #import yönergesini [auto_search](../preprocessor/auto-search.md) özniteliğiyle kullandığınız tür kitaplıklarında kullanılır.|
 |[no_smart_pointers](../preprocessor/no-smart-pointers.md)|Tür kitaplığındaki tüm arabirimler için akıllı işaretçiler oluşturulmasını engeller.|
-|[raw_dispinterfaces](../preprocessor/raw-dispinterfaces.md)|Derleyiciye, `IDispatch::Invoke` çağıran ve HRESULT hata kodunu döndüren dispınterface yöntemleri ve özellikleri için alt düzey sarmalayıcı işlevleri oluşturmasını söyler.|
+|[raw_dispinterfaces](../preprocessor/raw-dispinterfaces.md)|Derleyiciye, dispınterface yöntemleri ve `IDispatch::Invoke` hresult hata kodunu çağıran ve döndüren özellikler için alt düzey sarmalayıcı işlevleri oluşturmasını söyler.|
 |[raw_interfaces_only](../preprocessor/raw-interfaces-only.md)|Bu sarmalayıcı işlevlerini kullanan hata işleme sarmalayıcı işlevlerinin ve [özellik](../cpp/property-cpp.md) bildirimlerinin oluşturulmasını engeller.|
 |[raw_method_prefix](../preprocessor/raw-method-prefix.md)|Ad çakışmalarını önlemek için farklı bir ön ek belirtir.|
 |[raw_native_types](../preprocessor/raw-native-types.md)|Üst düzey sarmalayıcı işlevlerinde COM destek sınıflarının kullanımını devre dışı bırakır ve bunun yerine alt düzey veri türlerinin kullanılmasını zorlar.|

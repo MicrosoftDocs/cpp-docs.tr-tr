@@ -1,5 +1,6 @@
 ---
-title: CPictureHolder Sınıfı
+description: 'Daha fazla bilgi edinin: Cpictureş sınıfı'
+title: Cpictureş sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPictureHolder
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - CPictureHolder [MFC], SetPictureDispatch
 - CPictureHolder [MFC], m_pPict
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
-ms.openlocfilehash: edb93b05c1187d2c78f4c1120ee76282167c9b49
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 47eacb66191e21b300aaa0d06bc23155fabaf651
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301483"
 ---
-# <a name="cpictureholder-class"></a>CPictureHolder Sınıfı
+# <a name="cpictureholder-class"></a>Cpictureş sınıfı
 
-Kullanıcının denetiminizde bir resim görüntülemesine olanak tanıyan bir Resim özelliği uygular.
+Kullanıcının denetiinizdeki bir resmi görüntülemesine izin veren bir Picture özelliği uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CPictureHolder
@@ -49,37 +50,37 @@ class CPictureHolder
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPictureHolder::CPictureHolder](#cpictureholder)|Bir `CPictureHolder` nesne inşa eder.|
+|[Cpictureş:: Cpicturetutucusu](#cpictureholder)|Bir `CPictureHolder` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPictureHolder::CreateEmpty](#createempty)|Boş `CPictureHolder` bir nesne oluşturur.|
-|[CPictureHolder::CreateFromBitmap](#createfrombitmap)|Bir bit `CPictureHolder` haritasından bir nesne oluşturur.|
-|[CPictureHolder::CreateFromIcon](#createfromicon)|Simgeden `CPictureHolder` bir nesne oluşturur.|
-|[CPictureHolder::CreateFromMetafile](#createfrommetafile)|Meta dosyadan bir `CPictureHolder` nesne oluşturur.|
-|[CPictureHolder::GetDisplayString](#getdisplaystring)|Denetim kapsayıcısının özellik tarayıcısında görüntülenen dizeyi alır.|
-|[CPictureHolder::GetPictureDispatch](#getpicturedispatch)|Nesnenin `CPictureHolder` `IDispatch` arabirimini döndürür.|
-|[CPictureHolder::GetType](#gettype)|Nesnenin `CPictureHolder` bir biteşmi, meta dosya mı yoksa simge mi olduğunu söyler.|
-|[CPictureHolder::Render](#render)|Resmi işler.|
-|[CPictureHolder::SetPictureDispatch](#setpicturedispatch)|Nesnenin `CPictureHolder` `IDispatch` arabirimini ayarlar.|
+|[Cpictureş:: CreateEmpty](#createempty)|Boş bir `CPictureHolder` nesne oluşturur.|
+|[Cpictureş:: CreateFromBitmap](#createfrombitmap)|`CPictureHolder`Bit eşlemden bir nesne oluşturur.|
+|[Cpictureş:: CreateFromIcon](#createfromicon)|`CPictureHolder`Bir simgeden bir nesne oluşturur.|
+|[Cpictureş:: CreateFromMetafile](#createfrommetafile)|`CPictureHolder`Meta dosyasından bir nesne oluşturur.|
+|[Cpictureş:: GetDisplayString](#getdisplaystring)|Denetim kapsayıcısının özellik tarayıcısında görünen dizeyi alır.|
+|[Cpictureş:: GetPictureDispatch](#getpicturedispatch)|`CPictureHolder`Nesnenin `IDispatch` arabirimini döndürür.|
+|[Cpictureş:: GetType](#gettype)|`CPictureHolder`Nesnenin bit eşlem, meta dosyası veya simge olduğunu söyler.|
+|[Cpictureş:: Render](#render)|Resmi işler.|
+|[Cpictureş:: SetPictureDispatch](#setpicturedispatch)|`CPictureHolder`Nesnenin `IDispatch` arabirimini ayarlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPictureHolder::m_pPict](#m_ppict)|Resim nesnesine işaretçi.|
+|[Cpictureş:: m_pPict](#m_ppict)|Resim nesnesine yönelik bir işaretçi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CPictureHolder`taban sınıfa sahip değildir.
+`CPictureHolder` taban sınıfına sahip değildir.
 
-Stok Resim özelliği yle, geliştirici görüntülenmek üzere bir bit eşlemi, simge veya metadosya belirtebilir.
+Hisse senedi resmi özelliği ile geliştirici, ekran için bir bit eşlem, simge veya meta dosya belirtebilir.
 
-Özel resim özellikleri oluşturma hakkında daha fazla bilgi için [MFC ActiveX Denetimleri makalesine bakın: ActiveX Denetiminde Resimleri Kullanma.](../../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)
+Özel resim özellikleri oluşturma hakkında daha fazla bilgi için [MFC ActiveX denetimleri: ActiveX denetiminde resim kullanma](../../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -87,19 +88,19 @@ Stok Resim özelliği yle, geliştirici görüntülenmek üzere bir bit eşlemi,
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxctl.h
+**Üst bilgi:** afxctl. h
 
-## <a name="cpictureholdercpictureholder"></a><a name="cpictureholder"></a>CPictureHolder::CPictureHolder
+## <a name="cpictureholdercpictureholder"></a><a name="cpictureholder"></a> Cpictureş:: Cpicturetutucusu
 
-Bir `CPictureHolder` nesne inşa eder.
+Bir `CPictureHolder` nesnesi oluşturur.
 
 ```
 CPictureHolder();
 ```
 
-## <a name="cpictureholdercreateempty"></a><a name="createempty"></a>CPictureHolder::CreateEmpty
+## <a name="cpictureholdercreateempty"></a><a name="createempty"></a> Cpictureş:: CreateEmpty
 
-Boş `CPictureHolder` bir nesne oluşturur ve bir `IPicture` arabirime bağlanır.
+Boş bir `CPictureHolder` nesne oluşturur ve bunu bir arabirime bağlar `IPicture` .
 
 ```
 BOOL CreateEmpty();
@@ -107,11 +108,11 @@ BOOL CreateEmpty();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne başarıyla oluşturulursa sıfırsız; aksi takdirde 0.
+Nesne başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cpictureholdercreatefrombitmap"></a><a name="createfrombitmap"></a>CPictureHolder::CreateFromBitmap
+## <a name="cpictureholdercreatefrombitmap"></a><a name="createfrombitmap"></a> Cpictureş:: CreateFromBitmap
 
-Resim nesnesini bir 'deki başlangıç `CPictureHolder`olarak almak için bir bit eşlemi kullanır.
+İçindeki resim nesnesini başlatmak için bir bit eşlem kullanır `CPictureHolder` .
 
 ```
 BOOL CreateFromBitmap(
@@ -130,35 +131,35 @@ BOOL CreateFromBitmap(
 
 ### <a name="parameters"></a>Parametreler
 
-*idResource*<br/>
-Bitmap kaynağının kaynak kimliği.
+*ıdresource*<br/>
+Bir bit eşlem kaynağının kaynak KIMLIĞI.
 
-*pBitmap*<br/>
-[CBitmap](../../mfc/reference/cbitmap-class.md) nesnesine işaretçi.
+*Pbımap*<br/>
+[CBitmap](../../mfc/reference/cbitmap-class.md) nesnesine yönelik işaretçi.
 
 *pPal*<br/>
-[CPalette](../../mfc/reference/cpalette-class.md) nesnesine işaretçi.
+[CPalette](../../mfc/reference/cpalette-class.md) nesnesine yönelik işaretçi.
 
-*bTransferOwnership*<br/>
-Resim nesnesinin bit eşlemi ve palet nesnelerinin sahipliğini alıp almayacağını gösterir.
+*Btransfersahiplik*<br/>
+Resim nesnesinin bit eşlem ve palet nesneleri sahipliğini alıp etmeyeceğini belirtir.
 
-*Hbm*<br/>
-`CPictureHolder` Nesnenin oluşturulduğu bit eşlenere işle.
+*HBM*<br/>
+Nesnenin oluşturulduğu bit eşlem için tanıtıcı `CPictureHolder` .
 
 *hpal*<br/>
-Bit eşlemi işlemek için kullanılan palete işle.
+Bit eşlemi işlemek için kullanılan paleti işleme.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne başarıyla oluşturulursa sıfırsız; aksi takdirde 0.
+Nesne başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*bTransferOwnership* TRUE ise, arayan bu çağrı döndükten sonra bit eşlemi veya palet nesnesini herhangi bir şekilde kullanmamalıdır. *bTransferOwnership* FALSE ise, arayan bit eşlemi ve palet nesnelerinin resim nesnesinin ömrü boyunca geçerli kalmasını sağlamaktan sorumludur.
+*Btransfersahiplik* true ise, çağıran, bu çağrı geri çağrıldıktan sonra herhangi bir şekilde bit eşlem veya palet nesnesini kullanmamalıdır. *Btransfersahiplik* false ise, çağıran, resim nesnesinin kullanım ömrü boyunca bit eşlem ve palet nesnelerinin geçerli kalmasını sağlamaktan sorumludur.
 
-## <a name="cpictureholdercreatefromicon"></a><a name="createfromicon"></a>CPictureHolder::CreateFromIcon
+## <a name="cpictureholdercreatefromicon"></a><a name="createfromicon"></a> Cpictureş:: CreateFromIcon
 
-Resim nesnesini bir 'de başlatmak için bir `CPictureHolder`simge kullanır.
+İçindeki resim nesnesini başlatmak için bir simge kullanır `CPictureHolder` .
 
 ```
 BOOL CreateFromIcon(
@@ -171,26 +172,26 @@ BOOL CreateFromIcon(
 
 ### <a name="parameters"></a>Parametreler
 
-*idResource*<br/>
-Bitmap kaynağının kaynak kimliği.
+*ıdresource*<br/>
+Bir bit eşlem kaynağının kaynak KIMLIĞI.
 
-*Hıcon*<br/>
-Nesnenin oluşturulduğu simgeye `CPictureHolder` işleyin.
+*HICON*<br/>
+Nesnenin oluşturulduğu simgeye yönelik işleyici `CPictureHolder` .
 
-*bTransferOwnership*<br/>
-Resim nesnesinin simge nesnesinin sahipliğini alıp almayacağını gösterir.
+*Btransfersahiplik*<br/>
+Resim nesnesinin simge nesnesinin sahipliğini alıp etmeyeceğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne başarıyla oluşturulursa sıfırsız; aksi takdirde 0.
+Nesne başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*bTransferOwnership* TRUE ise, arayan bu çağrı döndükten sonra simge nesnesini hiçbir şekilde kullanmamalıdır. *bTransferOwnership* FALSE ise, arayan simge nesnesinin resim nesnesinin ömrü boyunca geçerli kalmasını sağlamaktan sorumludur.
+*Btransfersahiplik* true ise, çağıran, bu çağrı geri çağrıldıktan sonra herhangi bir şekilde Icon nesnesini kullanmamalıdır. *Btransfersahiplik* false ise, çağıran, simge nesnesinin resim nesnesinin kullanım ömrü boyunca geçerli kalmasını sağlamaktan sorumludur.
 
-## <a name="cpictureholdercreatefrommetafile"></a><a name="createfrommetafile"></a>CPictureHolder::CreateFromMetafile
+## <a name="cpictureholdercreatefrommetafile"></a><a name="createfrommetafile"></a> Cpictureş:: CreateFromMetafile
 
-Resim nesnesini bir `CPictureHolder`'de başlatmak için bir metadosya kullanır.
+Bir meta dosyası kullanarak resim nesnesini ' de başlatır `CPictureHolder` .
 
 ```
 BOOL CreateFromMetafile(
@@ -202,27 +203,27 @@ BOOL CreateFromMetafile(
 
 ### <a name="parameters"></a>Parametreler
 
-*hmf*<br/>
-Nesneyi oluşturmak için kullanılan `CPictureHolder` metadosyaya işle.
+*HMF*<br/>
+Nesneyi oluşturmak için kullanılan meta dosyası için tanıtıcı `CPictureHolder` .
 
 *xExt*<br/>
-Resmin X ölçüde.
+Resmin X uzantısı.
 
-*yExt*<br/>
-Resmin Y kapsamı.
+*yıln*<br/>
+Resmin Y uzantısı.
 
-*bTransferOwnership*<br/>
-Resim nesnesinin metadosya nesnesinin sahipliğini alıp almayacağını gösterir.
+*Btransfersahiplik*<br/>
+Resim nesnesinin meta dosya nesnesinin sahipliğini alıp etmeyeceğini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne başarıyla oluşturulursa sıfırsız; aksi takdirde 0.
+Nesne başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*bTransferOwnership* TRUE ise, arayan bu çağrı döndükten sonra metadosya nesnesini herhangi bir şekilde kullanmamalıdır. *bTransferOwnership* FALSE ise, arayan metadosya nesnesinin resim nesnesinin ömrü boyunca geçerli kalmasını sağlamaktan sorumludur.
+*Btransfersahiplik* true ise, çağıran, bu çağrı geri çağrıldıktan sonra herhangi bir şekilde meta dosyası nesnesini kullanmamalıdır. *Btransfersahiplik* yanlış ise, dosya kümesi nesnesinin resim nesnesinin kullanım ömrü boyunca geçerli kalmasını sağlamaktan sorumludur.
 
-## <a name="cpictureholdergetdisplaystring"></a><a name="getdisplaystring"></a>CPictureHolder::GetDisplayString
+## <a name="cpictureholdergetdisplaystring"></a><a name="getdisplaystring"></a> Cpictureş:: GetDisplayString
 
 Kapsayıcının özellik tarayıcısında görüntülenen dizeyi alır.
 
@@ -233,15 +234,15 @@ BOOL GetDisplayString(CString& strValue);
 ### <a name="parameters"></a>Parametreler
 
 *strValue*<br/>
-Ekran dizesini tutmak için [CString'e](../../atl-mfc-shared/reference/cstringt-class.md) başvuru.
+Görüntüleme dizesini tutan [CString](../../atl-mfc-shared/reference/cstringt-class.md) başvurusu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dize başarıyla alınırsa sıfırsız; aksi takdirde 0.
+Dize başarıyla alınırsa sıfır dışı; Aksi takdirde 0.
 
-## <a name="cpictureholdergetpicturedispatch"></a><a name="getpicturedispatch"></a>CPictureHolder::GetPictureDispatch
+## <a name="cpictureholdergetpicturedispatch"></a><a name="getpicturedispatch"></a> Cpictureş:: GetPictureDispatch
 
-Bu işlev nesnenin `CPictureHolder` `IPictureDisp` arabirimine bir işaretçi döndürür.
+Bu işlev, nesnenin arabirimine bir işaretçi döndürür `CPictureHolder` `IPictureDisp` .
 
 ```
 LPPICTUREDISP GetPictureDispatch();
@@ -249,15 +250,15 @@ LPPICTUREDISP GetPictureDispatch();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnenin `CPictureHolder` `IPictureDisp` arabirimine işaretçi.
+Nesnenin arabirimine yönelik bir işaretçi `CPictureHolder` `IPictureDisp` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Arayan, bu `Release` işaretçiyi bitirdiğinde bu işaretçiyi aramalıdır.
+Çağıran, `Release` ile işiniz bittiğinde bu işaretçiye çağrı sağlamalıdır.
 
-## <a name="cpictureholdergettype"></a><a name="gettype"></a>CPictureHolder::GetType
+## <a name="cpictureholdergettype"></a><a name="gettype"></a> Cpictureş:: GetType
 
-Resmin bitmap, metadosya veya simge olup olmadığını gösterir.
+Resmin bir bit eşlem, meta dosya veya simge olduğunu gösterir.
 
 ```
 short GetType();
@@ -269,23 +270,23 @@ Resmin türünü gösteren bir değer. Olası değerler ve anlamları aşağıda
 
 |Değer|Anlamı|
 |-----------|-------------|
-|PICTYPE_UNINITIALIZED|`CPictureHolder`nesne birleştiricidir.|
-|PICTYPE_NONE|`CPictureHolder`nesne boştur.|
-|PICTYPE_BITMAP|Resim bir bitmap olduğunu.|
-|PICTYPE_METAFILE|Resim bir metadosyadır.|
+|PICTYPE_UNINITIALIZED|`CPictureHolder` nesne başlatılmadı.|
+|PICTYPE_NONE|`CPictureHolder` nesne boş.|
+|PICTYPE_BITMAP|Resim bir bit eşlemdir.|
+|PICTYPE_METAFILE|Resim bir meta dosyası.|
 |PICTYPE_ICON|Resim bir simgedir.|
 
-## <a name="cpictureholderm_ppict"></a><a name="m_ppict"></a>CPictureHolder::m_pPict
+## <a name="cpictureholderm_ppict"></a><a name="m_ppict"></a> Cpictureş:: m_pPict
 
-Nesnenin `CPictureHolder` `IPicture` arabirimine işaretçi.
+Nesnenin arabirimine yönelik bir işaretçi `CPictureHolder` `IPicture` .
 
 ```
 LPPICTURE m_pPict;
 ```
 
-## <a name="cpictureholderrender"></a><a name="render"></a>CPictureHolder::Render
+## <a name="cpictureholderrender"></a><a name="render"></a> Cpictureş:: Render
 
-*Resmi rcRender*tarafından başvurulan dikdörtgende işler.
+Resmi, *Rcrender* tarafından başvurulan dikdörtgende işler.
 
 ```cpp
 void Render(
@@ -296,18 +297,18 @@ void Render(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Resmin oluşturulmak üzere görüntübağlamını işaretle.
+*Kökündeki*<br/>
+Resmin işlendiği görüntü bağlamına yönelik işaretçi.
 
 *rcRender*<br/>
-Resmin oluşturulabilmek için dikdörtgen.
+Resmin işlendiği dikdörtgen.
 
-*rcWBounds*<br/>
-Resmi oluşturan nesnenin sınırlayıcı dikdörtgenini temsil eden dikdörtgen. Bir denetim için, bu dikdörtgen COleControl bir geçersiz kılma geçirilen *rcBounds* [parametresi::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).
+*Rcwsınır*<br/>
+Resmi işleyen nesnenin sınırlayıcı dikdörtgenini temsil eden bir dikdörtgen. Bir denetim için bu dikdörtgen, [Coelcontrol:: OnDraw](../../mfc/reference/colecontrol-class.md#ondraw)geçersiz kılınmasına geçirilen *rcsınırlara* parametresidir.
 
-## <a name="cpictureholdersetpicturedispatch"></a><a name="setpicturedispatch"></a>CPictureHolder::SetPictureDispatch
+## <a name="cpictureholdersetpicturedispatch"></a><a name="setpicturedispatch"></a> Cpictureş:: SetPictureDispatch
 
-Nesneyi `CPictureHolder` bir `IPictureDisp` arabirime bağlar.
+`CPictureHolder`Nesnesini bir `IPictureDisp` arabirime bağlar.
 
 ```cpp
 void SetPictureDispatch(LPPICTUREDISP pDisp);
@@ -316,9 +317,9 @@ void SetPictureDispatch(LPPICTUREDISP pDisp);
 ### <a name="parameters"></a>Parametreler
 
 *pDisp*<br/>
-Yeni `IPictureDisp` arabirimi işaretçi.
+Yeni arabirime yönelik işaretçi `IPictureDisp` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[Cfontholder Sınıfı](../../mfc/reference/cfontholder-class.md)
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Cfontheski sınıfı](../../mfc/reference/cfontholder-class.md)

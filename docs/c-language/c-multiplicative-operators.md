@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C Multipereptive Işleçleri'
 title: C Çarpma İşleçleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - slash (/) operator
 - multiplication operator [C++], multiplicative operators
 ms.assetid: 495471c9-319b-4eb4-bd97-039a025fd3a9
-ms.openlocfilehash: 32ff74be0fd1afb1d8a21d74abb194eaa5e273df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 61689435c5e76238feba26d5a49ffe3530798f88
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227991"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300274"
 ---
 # <a name="c-multiplicative-operators"></a>C Çarpma İşleçleri
 
 Çarpma işleçleri çarpma ( <strong>\*</strong> ), Bölüm ( **/** ) ve kalan ( **%** ) işlemleri gerçekleştirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *çoğulereptive-ifade*: &nbsp; &nbsp; &nbsp; &nbsp; *cast-* ifade &nbsp; &nbsp; &nbsp; &nbsp; *çoğulereptive-Expression* <strong>\*</strong> *cast-ifade* &nbsp; &nbsp; &nbsp; &nbsp; *çoğulereptive-Expression* **/** *cast-* Expression &nbsp; &nbsp; &nbsp; &nbsp; *çoğulereptive-Expression* **%** *cast-ifade*
 
@@ -78,7 +79,7 @@ Bu ifade, `n` 10 ' un 3 ' i bölündüğünde, 1 tamsayı kalanı atar.
 
 **Microsoft'a Özgü**
 
-Kalanın işareti, bölünme işaretiyle aynıdır. Örnek:
+Kalanın işareti, bölünme işaretiyle aynıdır. Örneğin:
 
 ```
 50 % -6 = 2

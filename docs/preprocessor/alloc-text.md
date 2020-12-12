@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: alloc_text pragma'
 title: alloc_text pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - alloc_text pragma
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-ms.openlocfilehash: c638c2026a493453aeb5aff00ba6273efb5f184e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 496a083c251684ebba004eef00bf466e72211ada
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219449"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301067"
 ---
 # <a name="alloc_text-pragma"></a>alloc_text pragması
 
 Belirtilen işlev tanımlarının bulunduğu kod bölümünü adlandırır. Pragma, işlev bildirimcisi ve adlandırılan işlevlerin işlev tanımı arasında gerçekleşmelidir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#pragma alloc_text (** "*textsection*" **,** *işlev1* [**,** *function2* ...] **)**
 

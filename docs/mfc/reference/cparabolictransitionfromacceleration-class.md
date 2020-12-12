@@ -1,5 +1,6 @@
 ---
-title: CParabolicTransitionFromAcceleration Sınıf
+description: 'Daha fazla bilgi edinin: CParabolicTransitionFromAcceleration Class'
+title: CParabolicTransitionFromAcceleration sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CParabolicTransitionFromAcceleration
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - CParabolicTransitionFromAcceleration [MFC], m_dblFinalValue
 - CParabolicTransitionFromAcceleration [MFC], m_dblFinalVelocity
 ms.assetid: 1e59b86f-358b-4da0-a4fd-8eaf5e85e00f
-ms.openlocfilehash: 0aa5831e2262602ee46bd69031e5927a86b978e1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 037c2ff8391b655c556339547966b14ee094fee0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301496"
 ---
-# <a name="cparabolictransitionfromacceleration-class"></a>CParabolicTransitionFromAcceleration Sınıf
+# <a name="cparabolictransitionfromacceleration-class"></a>CParabolicTransitionFromAcceleration sınıfı
 
-Parabolik ivme geçişini kapsüller.
+Bir parabolik hızlandırma geçişini kapsüller.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CParabolicTransitionFromAcceleration : public CBaseTransition;
@@ -37,43 +38,43 @@ class CParabolicTransitionFromAcceleration : public CBaseTransition;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CParaboicTransitionFromAcceleration::CParaboicTransitionFromAcceleration From](#cparabolictransitionfromacceleration)|Parabolik ivme geçişi kurar ve belirtilen parametrelerle başlatleştirir.|
+|[CParabolicTransitionFromAcceleration::CParabolicTransitionFromAcceleration](#cparabolictransitionfromacceleration)|Bir parabolik hızlandırma geçişi oluşturur ve belirtilen parametrelerle başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CParaboicTransitionFromAcceleration::Oluştur](#create)|Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. (CBaseTransition geçersiz [kılar::Oluştur](../../mfc/reference/cbasetransition-class.md#create).)|
+|[CParabolicTransitionFromAcceleration:: Create](#create)|Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır. ( [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create)geçersiz kılar.)|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CParaboicTransitionFromAcceleration::m_dblAcceleration](#m_dblacceleration)|Geçiş sırasında animasyon değişkeninin ivmesi.|
-|[CParaboicTransitionFromAcceleration::m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
-|[CParaboicTransitionFromAcceleration::m_dblFinalVelocity](#m_dblfinalvelocity)|Geçiş in sonundaanimasyon değişkeninin hızı.|
+|[CParabolicTransitionFromAcceleration:: m_dblAcceleration](#m_dblacceleration)|Geçiş sırasında animasyon değişkeninin hızlandırma.|
+|[CParabolicTransitionFromAcceleration:: m_dblFinalValue](#m_dblfinalvalue)|Geçişin sonundaki animasyon değişkeninin değeri.|
+|[CParabolicTransitionFromAcceleration:: m_dblFinalVelocity](#m_dblfinalvelocity)|Geçişin sonundaki animasyon değişkeninin hızı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Parabolik ivme geçişi sırasında, animasyon değişkeninin değeri ilk değerden belirli bir hızda biten son değere değişir. Hızlanma oranını belirterek değişkenin son değere ne kadar hızlı ulaştığını kontrol edebilirsiniz. Tüm geçişler otomatik olarak temizlenerek, operatör yeni kullanılarak ayrılması önerilir. Kapsüllü IUIAnimationTransition COM nesnesi CAnimationController tarafından oluşturulur::AnimateGroup, o zamana kadar NULL' s. Bu COM nesnesinin oluşturulduktan sonra üye değişkenleri değiştirmenin hiçbir etkisi yoktur.
+Bir parabolik hızlandırma geçişi sırasında animasyon değişkeninin değeri, başlangıç değerinden belirtilen bir hızta sona eren son değere değişir. İvmesinin hızını belirterek değişkenin son değere ne kadar hızlı ulaştığını kontrol edebilirsiniz. Tüm geçişler otomatik olarak temizlendiğinden, Yeni işleç kullanılarak ayrılmaları önerilir. Encapsulated IUIAnimationTransition COM nesnesi, NULL olana kadar CAnimationController:: AnimateGroup tarafından oluşturulur. Bu COM nesnesi oluşturulduktan sonra üye değişkenlerinin değiştirilmesinin etkisi olmaz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
-[CParaboicTransitionFromAcceleration](../../mfc/reference/cparabolictransitionfromacceleration-class.md)
+[CParabolicTransitionFromAcceleration](../../mfc/reference/cparabolictransitionfromacceleration-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-## <a name="cparabolictransitionfromaccelerationcparabolictransitionfromacceleration"></a><a name="cparabolictransitionfromacceleration"></a>CParaboicTransitionFromAcceleration::CParaboicTransitionFromAcceleration From
+## <a name="cparabolictransitionfromaccelerationcparabolictransitionfromacceleration"></a><a name="cparabolictransitionfromacceleration"></a> CParabolicTransitionFromAcceleration::CParabolicTransitionFromAcceleration
 
-Parabolik ivme geçişi kurar ve belirtilen parametrelerle başlatleştirir.
+Bir parabolik hızlandırma geçişi oluşturur ve belirtilen parametrelerle başlatır.
 
 ```
 CParabolicTransitionFromAcceleration(
@@ -84,18 +85,18 @@ CParabolicTransitionFromAcceleration(
 
 ### <a name="parameters"></a>Parametreler
 
-*dblFinalValue*<br/>
+*Dblfinaldeğeri*<br/>
 Geçişin sonundaki animasyon değişkeninin değeri.
 
-*dblFinalVelocity*<br/>
-Geçiş in sonundaanimasyon değişkeninin hızı.
+*Dblfinalhızı*<br/>
+Geçişin sonundaki animasyon değişkeninin hızı.
 
-*dblHızlanma*<br/>
-Geçiş sırasında animasyon değişkeninin ivmesi.
+*dblAcceleration*<br/>
+Geçiş sırasında animasyon değişkeninin hızlandırma.
 
-## <a name="cparabolictransitionfromaccelerationcreate"></a><a name="create"></a>CParaboicTransitionFromAcceleration::Oluştur
+## <a name="cparabolictransitionfromaccelerationcreate"></a><a name="create"></a> CParabolicTransitionFromAcceleration:: Create
 
-Kapsüllü geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
+Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığını çağırır.
 
 ```
 virtual BOOL Create(
@@ -105,22 +106,22 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*pKütüphane*<br/>
-Standart geçişlerin oluşturulmasından sorumlu geçiş kitaplığı için bir işaretçi.
+*pLibrary*<br/>
+Standart geçişlerin oluşturulmasından sorumlu olan geçiş kitaplığı için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçiş başarıyla oluşturulursa DOĞRU; aksi takdirde YANLIŞ.
+Geçiş başarıyla oluşturulursa doğru; Aksi halde yanlış.
 
-## <a name="cparabolictransitionfromaccelerationm_dblacceleration"></a><a name="m_dblacceleration"></a>CParaboicTransitionFromAcceleration::m_dblAcceleration
+## <a name="cparabolictransitionfromaccelerationm_dblacceleration"></a><a name="m_dblacceleration"></a> CParabolicTransitionFromAcceleration:: m_dblAcceleration
 
-Geçiş sırasında animasyon değişkeninin ivmesi.
+Geçiş sırasında animasyon değişkeninin hızlandırma.
 
 ```
 DOUBLE m_dblAcceleration;
 ```
 
-## <a name="cparabolictransitionfromaccelerationm_dblfinalvalue"></a><a name="m_dblfinalvalue"></a>CParaboicTransitionFromAcceleration::m_dblFinalValue
+## <a name="cparabolictransitionfromaccelerationm_dblfinalvalue"></a><a name="m_dblfinalvalue"></a> CParabolicTransitionFromAcceleration:: m_dblFinalValue
 
 Geçişin sonundaki animasyon değişkeninin değeri.
 
@@ -128,9 +129,9 @@ Geçişin sonundaki animasyon değişkeninin değeri.
 DOUBLE m_dblFinalValue;
 ```
 
-## <a name="cparabolictransitionfromaccelerationm_dblfinalvelocity"></a><a name="m_dblfinalvelocity"></a>CParaboicTransitionFromAcceleration::m_dblFinalVelocity
+## <a name="cparabolictransitionfromaccelerationm_dblfinalvelocity"></a><a name="m_dblfinalvelocity"></a> CParabolicTransitionFromAcceleration:: m_dblFinalVelocity
 
-Geçiş in sonundaanimasyon değişkeninin hızı.
+Geçişin sonundaki animasyon değişkeninin hızı.
 
 ```
 DOUBLE m_dblFinalVelocity;

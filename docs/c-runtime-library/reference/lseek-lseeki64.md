@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _lseek _lseeki64'
 title: _lseek, _lseeki64
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - file pointers [C++], moving
 - seek file pointers
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-ms.openlocfilehash: b99793c7d3f16eceec20c90f29824bca8321fb12
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5ac536a0f1388f8d664aa6721900256da368d652
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911313"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299975"
 ---
 # <a name="_lseek-_lseeki64"></a>_lseek, _lseeki64
 
@@ -67,9 +68,9 @@ __int64 _lseeki64(
 Açık bir dosyaya başvuran dosya tanımlayıcısı.
 
 *konumu*<br/>
-*Kaynaktan*gelen bayt sayısı.
+*Kaynaktan* gelen bayt sayısı.
 
-*tıdır*<br/>
+*başlangıç*<br/>
 Başlangıç konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -80,7 +81,7 @@ Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, err
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lseek** işlevi *FD* ile ilişkili dosya işaretçisini *kaynaktan*bayt *uzaklığa* yeni bir konuma taşıdır. Dosyadaki bir sonraki işlem yeni konumda oluşur. *Kaynak* bağımsız değişkeni, stdio. h içinde tanımlanan aşağıdaki sabitlerden biri olmalıdır.
+**_Lseek** işlevi *FD* ile ilişkili dosya işaretçisini *kaynaktan* bayt *uzaklığa* yeni bir konuma taşıdır. Dosyadaki bir sonraki işlem yeni konumda oluşur. *Kaynak* bağımsız değişkeni, stdio. h içinde tanımlanan aşağıdaki sabitlerden biri olmalıdır.
 
 |*kaynak* değeri||
 |-|-|
@@ -96,8 +97,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lseek**|\<GÇ. h>|
-|**_lseeki64**|\<GÇ. h>|
+|**_lseek**|\<io.h>|
+|**_lseeki64**|\<io.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

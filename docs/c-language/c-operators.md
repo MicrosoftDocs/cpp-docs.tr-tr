@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C Işleçleri'
 title: C İşleçleri
 ms.date: 06/14/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - associativity of operators
 - binary data, binary expressions
 ms.assetid: 13bc4c8e-2dc9-4b23-9f3a-25064e8777ed
-ms.openlocfilehash: 7868073f4932e4b77329e6df4a3de374bcf41ec9
-ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
+ms.openlocfilehash: 9e7e3a041b271117c0a7caeaa1ee97d88b4c037e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96035241"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300261"
 ---
 # <a name="c-operators"></a>C İşleçleri
 

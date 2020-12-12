@@ -1,5 +1,6 @@
 ---
-title: CPropertySheet Sınıfı
+description: 'Daha fazla bilgi edinin: CPropertySheet sınıfı'
+title: CPropertySheet sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPropertySheet
@@ -52,18 +53,18 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-ms.openlocfilehash: e8ab91b9a6fe76070d79ea2eee2e5765db2e99e3
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: f2ca56fefbb192e9ed64a97bd75bee4fbb1c6360
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750979"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301379"
 ---
-# <a name="cpropertysheet-class"></a>CPropertySheet Sınıfı
+# <a name="cpropertysheet-class"></a>CPropertySheet sınıfı
 
-Sekme iletişim kutuları olarak da bilinen özellik sayfalarını temsil eder.
+Sekme iletişim kutusu olarak da bilinen özellik sayfalarını temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CPropertySheet : public CWnd
@@ -73,63 +74,63 @@ class CPropertySheet : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CpropertySheet::cpropertysheet](#cpropertysheet)|Bir `CPropertySheet` nesne inşa eder.|
+|[CPropertySheet:: CPropertySheet](#cpropertysheet)|Bir `CPropertySheet` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPropertySheet::AddPage](#addpage)|Özellik sayfasına bir sayfa ekler.|
-|[CPropertySheet::Yapı](#construct)|Bir `CPropertySheet` nesne inşa eder.|
-|[CPropertySheet::Oluştur](#create)|Modeless özellik sayfası görüntüler.|
-|[CPropertySheet::DoModal](#domodal)|Modal özellik sayfası görüntüler.|
-|[CPropertySheet::EnableStackedTabs](#enablestackedtabs)|Özellik sayfasının yığılmış veya kaydırma sekmelerini kullanıp kullanmadığını gösterir.|
-|[CPropertySheet::EndDialog](#enddialog)|Özellik sayfasını sonlandırır.|
-|[CpropertySheet::GetActiveIndex](#getactiveindex)|Özellik sayfasının etkin sayfasının dizini alır.|
-|[CpropertySheet::GetActivePage](#getactivepage)|Etkin sayfa nesnesini döndürür.|
-|[CPropertySheet::GetPage](#getpage)|Belirtilen sayfaya bir işaretçi alır.|
-|[CpropertySheet::GetPageCount](#getpagecount)|Özellik sayfasındaki sayfa sayısını alır.|
-|[CpropertySheet::GetPageIndex](#getpageindex)|Özellik sayfasının belirtilen sayfasının dizinini alır.|
-|[CpropertySheet::gettabcontrol](#gettabcontrol)|Bir sekme denetimi için işaretçi alır.|
-|[CPropertySheet::MapDialogRect](#mapdialogrect)|Dikdörtgenin iletişim kutusu birimlerini ekran birimlerine dönüştürür.|
-|[CPropertySheet::OnInitDialog](#oninitdialog)|Özellik sayfası başlatmayı artırmak için geçersiz kılın.|
-|[CPropertySheet::PressButton](#pressbutton)|Bir özellik sayfasında belirtilen düğmenin seçimini simüle eder.|
-|[CÖzellik Sayfası::RemovePage](#removepage)|Bir sayfayı özellik sayfasından kaldırır.|
-|[CpropertySheet::SetActivePage](#setactivepage)|Etkin sayfa nesnesini programlı olarak ayarlar.|
-|[CpropertySheet::SetFinishText](#setfinishtext)|Bitiş düğmesi için metni ayarlar.|
-|[CPropertySheet::SetTitle](#settitle)|Özellik sayfasının alt yazısını ayarlar.|
-|[CPropertySheet::SetWizardButtons](#setwizardbuttons)|Sihirbaz düğmelerini etkinleştiri.|
-|[CpropertySheet::SetWizardMode](#setwizardmode)|Sihirbaz modunu etkinleştiri.|
+|[CPropertySheet:: AddPage](#addpage)|Özellik sayfasına bir sayfa ekler.|
+|[CPropertySheet:: yapısı](#construct)|Bir `CPropertySheet` nesnesi oluşturur.|
+|[CPropertySheet:: Create](#create)|Kalıcı olmayan bir özellik sayfası görüntüler.|
+|[CPropertySheet::D oModal](#domodal)|Kalıcı bir özellik sayfası görüntüler.|
+|[CPropertySheet:: Enablestackedtab](#enablestackedtabs)|Özellik sayfasının yığın veya kaydırma sekmeleri kullanıp kullanmadığını belirtir.|
+|[CPropertySheet:: EndDialog](#enddialog)|Özellik sayfasını sonlandırır.|
+|[CPropertySheet:: GetActiveIndex](#getactiveindex)|Özellik sayfasının etkin sayfasının dizinini alır.|
+|[CPropertySheet:: GetActivePage](#getactivepage)|Etkin sayfa nesnesini döndürür.|
+|[CPropertySheet:: GetPage](#getpage)|Belirtilen sayfaya bir işaretçi alır.|
+|[CPropertySheet:: GetPageCount](#getpagecount)|Özellik sayfasındaki sayfa sayısını alır.|
+|[CPropertySheet:: GetPageIndex](#getpageindex)|Özellik sayfasının belirtilen sayfasının dizinini alır.|
+|[CPropertySheet:: GetTabControl](#gettabcontrol)|Sekme denetimine yönelik bir işaretçi alır.|
+|[CPropertySheet:: MapDialogRect](#mapdialogrect)|Bir dikdörtgenin iletişim kutusu birimlerini ekran birimlerine dönüştürür.|
+|[CPropertySheet:: OnInitDialog](#oninitdialog)|Özellik sayfası başlatmasını artırmak için geçersiz kılın.|
+|[CPropertySheet::P ressButton](#pressbutton)|Bir özellik sayfasında belirtilen düğme seçimine benzetir.|
+|[CPropertySheet:: RemovePage](#removepage)|Özellik sayfasından bir sayfayı kaldırır.|
+|[CPropertySheet:: SetActivePage](#setactivepage)|Etkin sayfa nesnesini programlı olarak ayarlar.|
+|[CPropertySheet:: Setsonlandırhtext](#setfinishtext)|Son düğmesinin metnini ayarlar.|
+|[CPropertySheet:: SetTitle](#settitle)|Özellik sayfasının resim yazısını ayarlar.|
+|[CPropertySheet:: SetWizardButtons](#setwizardbuttons)|Sihirbaz düğmelerini etkinleştirilir.|
+|[CPropertySheet:: SetWizardMode](#setwizardmode)|Sihirbaz modunu sunar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPropertySheet::m_psh](#m_psh)|Windows [PROPSHEETHEADER](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
+|[CPropertySheet:: m_psh](#m_psh)|Windows [propsheetheader](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) yapısı. Temel özellik sayfası parametrelerine erişim sağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Özellik sayfası bir `CPropertySheet` nesne ve bir veya daha fazla [CPropertyPage](../../mfc/reference/cpropertypage-class.md) nesnesi oluşur. Çerçeve, bir özellik sayfasını sekme endeksleri kümesi ve şu anda seçili sayfayı içeren bir alan içeren bir pencere olarak görüntüler. Kullanıcı, uygun sekmeyi kullanarak belirli bir sayfaya yönlendirin.
+Bir özellik sayfası bir `CPropertySheet` nesne ve bir veya daha fazla [CPropertyPage](../../mfc/reference/cpropertypage-class.md) nesnesinden oluşur. Framework, bir özellik sayfasını bir sekme dizini kümesi ve şu anda seçili olan sayfayı içeren bir alan olan bir pencere olarak görüntüler. Kullanıcı ilgili sekmeyi kullanarak belirli bir sayfaya gider.
 
-`CPropertySheet`Windows 98 ve Windows NT 2000'de tanıtılan genişletilmiş [PROPSHEETHEADER](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) yapısı için destek sağlar. Yapı, "filigran" arka plan bit eşlemi kullanarak destekleyen ek bayraklar ve üyeler içerir.
+`CPropertySheet` Windows 98 ve Windows NT 2000 ' de tanıtılan genişletilmiş [propsheetheader](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2) yapısına yönelik destek sağlar. Yapı, "filigran" arka plan bit eşlemi kullanımını destekleyen ek bayraklar ve Üyeler içerir.
 
-Bu yeni görüntüleri özellik sayfası nesnenizde otomatik olarak görüntülemek için, [CPropertySheet'e](#construct) yapılan çağrıdabitmap ve palet görüntüleri için geçerli değerleri geçirin::Construct veya [CPropertySheet::CPropertySheet](#cpropertysheet).
+Bu yeni görüntüleri Özellik sayfası nesneniz içinde otomatik olarak göstermek için, [CPropertySheet:: yapı](#construct) veya [CPropertySheet:: CPropertySheet](#cpropertysheet)çağrısında bit eşlem ve palet görüntüleri için geçerli değerleri geçirin.
 
-[CDialog'dan](../../mfc/reference/cdialog-class.md)türetilmiş olmasa `CPropertySheet` da, `CPropertySheet` bir `CDialog` nesneyi yönetmek nesneyi yönetmek gibidir. Örneğin, bir özellik sayfasının oluşturulması iki parçalı yapı gerektirir: oluşturucuyu arayın ve ardından modal özellik sayfası için [DoModal'ı](#domodal) arayın veya modeless bir özellik sayfası için [oluştur.](#create) `CPropertySheet`iki tür oluşturucu vardır: [CPropertySheet::Construct](#construct) and [CPropertySheet::CPropertySheet](#cpropertysheet).
+`CPropertySheet` [CDialog](../../mfc/reference/cdialog-class.md)'dan türetilmese de, bir nesneyi yönetmek, `CPropertySheet` bir nesneyi yönetmek gibidir `CDialog` . Örneğin, bir özellik sayfasının oluşturulması iki bölümden oluşan oluşturma gerektirir: oluşturucuyu çağırın ve ardından kalıcı bir özellik sayfası veya kalıcı olmayan özellik [sayfası Için](#domodal) [oluşturun](#create) . `CPropertySheet` iki tür oluşturucuya sahiptir: [CPropertySheet:: yapý](#construct) ve [CPropertySheet:: CPropertySheet](#cpropertysheet).
 
-Bir `CPropertySheet` nesne oluştururken, bazı [Pencere Stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ilk şans özel durum oluşmasına neden olabilir. Bu, sayfa oluşturulmadan önce özellik sayfasının stilini değiştirmeye çalışan sistemden kaynaklanır. Bu özel durum önlemek için, aşağıdaki stilleri oluşturduğunuzda `CPropertySheet`ayarladığınızdan emin olun:
+Bir `CPropertySheet` nesne oluşturduğunuzda, bazı [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) birinci şans özel durumunun oluşmasına neden olabilir. Bu durum, sistem, sayfa oluşturulmadan önce Özellik sayfasının stilini değiştirmeye çalışırken oluşur. Bu özel durumdan kaçınmak için, aşağıdaki stilleri oluştururken ayarladığınızdan emin olun `CPropertySheet` :
 
 - DS_3DLOOK
 
 - DS_CONTROL
 
-- Ws_chıld
+- WS_CHILD
 
 - WS_TABSTOP
 
-Aşağıdaki stiller isteğe bağlıdır ve ilk şans özel durumu neden olmaz:
+Aşağıdaki stiller isteğe bağlıdır ve ilk şans özel durumuna neden olmaz:
 
 - DS_SHELLFONT
 
@@ -137,33 +138,33 @@ Aşağıdaki stiller isteğe bağlıdır ve ilk şans özel durumu neden olmaz:
 
 - WS_CLIPCHILDREN
 
-Başka `Window Styles` herhangi bir yasaktır ve bunları izin vermemelisiniz.
+Bazıları `Window Styles` yasaktır ve bunları etkinleştirememelisiniz.
 
-Bir `CPropertySheet` nesne ve harici bir nesne arasında veri alışverişi, bir `CDialog` nesne yle veri alışverişine benzer. Önemli fark, bir özellik sayfasının ayarlarının genellikle `CPropertyPage` `CPropertySheet` nesnenin kendisi yerine nesnelerin üye değişkenleri olmasıdır.
+Bir nesne `CPropertySheet` ile dış nesne arasında veri değişimi, bir nesne ile veri değişimi ile benzerdir `CDialog` . Önemli fark, bir özellik sayfası ayarlarının genellikle `CPropertyPage` nesnenin kendisi yerine nesnelerin üye değişkenlerinin olduğu nedenleridir `CPropertySheet` .
 
-Sihirbaz adı verilen ve kullanıcıya aygıt ayarlama veya bülten oluşturma gibi işlem adımlarından rehberlik eden özellik sayfaları dizisiiçeren bir özellik sayfası içeren bir sekme iletişim kutusu türü oluşturabilirsiniz. Sihirbaz türü sekmesi iletişim kutusunda, özellik sayfalarında sekmeler yoktur ve aynı anda yalnızca bir özellik sayfası görünür. Ayrıca, **Tamam** ve **Şimdi Uygula** düğmelerine sahip olmak yerine, sihirbaz türü sekmesi iletişim kutusunda **Geri Düğmesi,** **İleri** veya **Bitiş** düğmesi, **İptal** düğmesi ve **Yardım düğmesi** bulunur.
+Bir cihaz ayarlama veya bülten oluşturma gibi bir işlemin adımları boyunca kullanıcıya kılavuzluk eden Özellik sayfaları dizisi olan bir özellik sayfasından oluşan, sihirbaz adlı bir sekme iletişim kutusu türü oluşturabilirsiniz. Sihirbaz-tür sekmesi iletişim kutusunda, özellik sayfalarında sekmeler yoktur ve tek seferde yalnızca bir özellik sayfası görünür. Ayrıca, **Tamam** ve **Şimdi Uygula** düğmelerine sahip olmak yerine, bir sihirbaz türü sekme iletişim kutusu **geri** düğmesi, **İleri** veya **son** düğmesi, **iptal** düğmesi ve **Yardım** düğmesi içerir.
 
-Sihirbaz türünde bir iletişim kutusu oluşturmak için, standart bir özellik sayfası oluşturmak için izleyeceğiniz adımları izleyin, ancak [DoModal'ı](#domodal)aramadan önce [SetWizardMode'u](#setwizardmode) arayın. Sihirbaz düğmelerini etkinleştirmek için, işlevlerini ve görünümlerini özelleştirmek için bayrakları kullanarak [SetWizardButtons'ı](#setwizardbuttons)arayın. **Bitiş** düğmesini etkinleştirmek için, kullanıcı sihirbazın son sayfasında işlem yaptıktan sonra [SetFinishText'i](#setfinishtext) arayın.
+Bir sihirbaz türü iletişim kutusu oluşturmak için, bir standart özellik sayfası oluşturmak üzere izlemeniz gereken adımların aynısını izleyin, ancak [Dokalıcı](#domodal)çağrısı yapmadan önce [SetWizardMode](#setwizardmode) ' ı çağırın. Sihirbaz düğmelerini etkinleştirmek için, bayraklarını ve görünümlerini özelleştirmek üzere bayrakları kullanarak [SetWizardButton](#setwizardbuttons)öğesini çağırın. Son düğmesini etkinleştirmek için, sihirbazın son sayfasında Kullanıcı eylemi gerçekleştirildikten sonra [Setbithtext](#setfinishtext) çağrısı yapın. 
 
-Nesnelerin nasıl kullanılacağı `CPropertySheet` hakkında daha fazla bilgi [için, Makale Özellik Sayfaları ve Özellik Sayfaları'na](../../mfc/property-sheets-and-property-pages-in-mfc.md)bakın.
+Nesneleri kullanma hakkında daha fazla bilgi için `CPropertySheet` [Özellik sayfaları ve özellik sayfaları](../../mfc/property-sheets-and-property-pages-in-mfc.md)makalesine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 `CPropertySheet`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdlgs.h
+**Üstbilgi:** afxdlgs. h
 
-## <a name="cpropertysheetaddpage"></a><a name="addpage"></a>CPropertySheet::AddPage
+## <a name="cpropertysheetaddpage"></a><a name="addpage"></a> CPropertySheet:: AddPage
 
-Verilen sayfayı özellik sayfasına en doğru sekmeyle ekler.
+Verilen sayfayı Özellik sayfasında en sağdaki sekmeye ekler.
 
 ```cpp
 void AddPage(CPropertyPage* pPage);
@@ -172,27 +173,27 @@ void AddPage(CPropertyPage* pPage);
 ### <a name="parameters"></a>Parametreler
 
 *pPage*<br/>
-Özellik sayfasına eklenecek sayfayı işaret edin. NULL olamaz.
+Özellik sayfasına eklenecek sayfaya işaret eder. NULL olamaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Görünmesini istediğiniz soldan sağa sırayla özellik sayfasına sayfalar ekleyin.
+Özellik sayfasına, görünmesini istediğiniz soldan sağa doğru sırada sayfa ekleyin.
 
-`AddPage`[CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage) nesnesini nesnenin sayfa listesine `CPropertySheet` ekler, ancak sayfa için pencereyi gerçekte oluşturmaz. Çerçeve, kullanıcı bu sayfayı seçene kadar sayfa için pencere oluşturmayı erteler.
+`AddPage`[CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage) nesnesini `CPropertySheet` nesnenin sayfa listesine ekler ancak sayfa için gerçekten pencere oluşturmaz. Çerçeve, Kullanıcı bu sayfayı seçinceye kadar sayfanın pencere oluşturulmasını erteler.
 
-Bir özellik sayfası `AddPage`kullandığınızda, `CPropertySheet` 'nin üst `CPropertyPage`öğesidir. Özellik sayfasından özellik sayfasına erişmek için [CWnd'yi arayın::GetParent](../../mfc/reference/cwnd-class.md#getparent).
+Kullanarak bir özellik sayfası eklediğinizde, `AddPage` `CPropertySheet` öğesinin üst öğesidir `CPropertyPage` . Özellik sayfasından özellik sayfasına erişim kazanmak için [CWnd:: GetParent](../../mfc/reference/cwnd-class.md#getparent)öğesini çağırın.
 
-Aramak `AddPage`için özellik sayfası penceresinin oluşturulmasına kadar beklemek gerekli değildir. Genellikle, `AddPage` [DoModal](#domodal) veya [Create'i](#create)aramadan önce ararsınız.
+Çağrılacak Özellik sayfası penceresini oluşturmaya kadar beklemeniz gerekmez `AddPage` . Genellikle, `AddPage` [DoModal](#domodal) veya [Oluştur](#create)çağrısından önce çağıracaksınız.
 
-Özellik sayfasını `AddPage` görüntüledikten sonra ararsanız, sekme satırı yeni eklenen sayfayı yansıtır.
+`AddPage`Özellik sayfasını görüntülendikten sonra çağırdığınızda, sekme satırı yeni eklenen sayfayı yansıtır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#129](../../mfc/codesnippet/cpp/cpropertysheet-class_1.cpp)]
 
-## <a name="cpropertysheetconstruct"></a><a name="construct"></a>CPropertySheet::Yapı
+## <a name="cpropertysheetconstruct"></a><a name="construct"></a> CPropertySheet:: yapısı
 
-Bir `CPropertySheet` nesne inşa eder.
+Bir `CPropertySheet` nesnesi oluşturur.
 
 ```cpp
 void Construct(
@@ -225,43 +226,43 @@ void Construct(
 ### <a name="parameters"></a>Parametreler
 
 *nIDCaption*<br/>
-Özellik sayfası için kullanılacak resim yazısının kimliği.
+Özellik sayfası için kullanılacak açıklamalı alt yazının KIMLIĞI.
 
 *pParentWnd*<br/>
-Özellik sayfasının üst penceresine işaretçi. NULL ise, üst pencere uygulamanın ana penceresi olacaktır.
+Özellik sayfasının üst penceresine yönelik işaretçi. NULL ise, ana pencere uygulamanın ana penceresi olur.
 
-*iSelectPage*<br/>
-Başlangıçta üstte olacak sayfanın dizin. Varsayılan, sayfaya eklenen ilk sayfadır.
+*ıselectpage*<br/>
+Başlangıçta en üstte olacak sayfanın dizini. Varsayılan, sayfaya eklenen ilk sayfasıdır.
 
 *pszCaption*<br/>
-Özellik sayfası için kullanılacak resim yazısını içeren bir dize işaretçi. NULL olamaz.
+Özellik sayfası için kullanılacak açıklamalı alt yazı etiketini içeren bir dize işaretçisi. NULL olamaz.
 
-*hbmFili*<br/>
-Özellik sayfasının filigran bit haritasını işleyin.
+*hbmWatermark*<br/>
+Özellik sayfasının filigran bit eşlemini işleyin.
 
-*hpalWatermark*<br/>
-Filigran bit eşlemi ve/veya üstbilgi bit eşlemi paletine işleyin.
+*Hpalfiligran*<br/>
+Filigran bit eşlemi ve/veya üst bilgi bit eşlem paletini işleyin.
 
 *hbmHeader*<br/>
-Özellik sayfasının üstbilgi bit haritasına işleyin.
+Özellik sayfasının üst bilgi bit eşlemini işleyin.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf oluşturucularından biri zaten çağrılmadıysa bu üye işlevi çağırın. Örneğin, `CPropertySheet` nesne `Construct` dizilerini beyan ettiğinizde veya ayırdığınızda arayın. Diziler söz konusu olduğunda, `Construct` dizideki her üyeyi aramanız gerekir.
+Sınıf oluşturucularından biri zaten çağrılmışsa, bu üye işlevi çağırın. Örneğin, `Construct` nesne dizilerini bildirdiğinizde veya ayırdığınızda çağırın `CPropertySheet` . Diziler durumunda `Construct` dizideki her üye için çağrı yapmanız gerekir.
 
-Özellik sayfasını görüntülemek için [DoModal](#domodal) veya [Create'i](#create)arayın. İlk parametrede yer alan dize, özellik sayfasının resim yazısı çubuğuna yerleştirilir.
+Özellik sayfasını göstermek için [DoModal](#domodal) veya [Oluştur](#create)' u çağırın. İlk parametrede yer alan dize, özellik sayfasının başlık çubuğuna yerleştirilir.
 
-Yukarıda listelenen üçüncü veya dördüncü `Construct`prototipleri kullanırsanız filigran ve/veya üstbilgi görüntülerini otomatik olarak görüntüleyebilir ve *hbmWatermark*, *hpalWatermark*ve/veya *hbmHeader* parametreleri için geçerli değerleri geçirebilirsiniz.
+Yukarıda listelenen üçüncü veya dördüncü prototipten türlerini kullanırsanız `Construct` ve *hbmWatermark*, *hpalfiligran* ve/veya *hbmHeader* parametreleri için geçerli değerler geçirdiğinizde, filigranı ve/veya üst bilgi görüntülerini otomatik olarak gösterebilirsiniz.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, hangi koşullar altında `Construct`çağıracağınızı gösterir.
+Aşağıdaki örnek, hangi koşullarda çağrılacağını gösterir `Construct` .
 
 [!code-cpp[NVC_MFCDocView#130](../../mfc/codesnippet/cpp/cpropertysheet-class_2.cpp)]
 
-## <a name="cpropertysheetcpropertysheet"></a><a name="cpropertysheet"></a>CpropertySheet::cpropertysheet
+## <a name="cpropertysheetcpropertysheet"></a><a name="cpropertysheet"></a> CPropertySheet:: CPropertySheet
 
-Bir `CPropertySheet` nesne inşa eder.
+Bir `CPropertySheet` nesnesi oluşturur.
 
 ```
 CPropertySheet();
@@ -296,41 +297,41 @@ CPropertySheet(
 ### <a name="parameters"></a>Parametreler
 
 *nIDCaption*<br/>
-Özellik sayfası için kullanılacak resim yazısının kimliği.
+Özellik sayfası için kullanılacak açıklamalı alt yazının KIMLIĞI.
 
 *pParentWnd*<br/>
-Özellik sayfasının üst penceresine işaret ediyor. NULL ise, üst pencere uygulamanın ana penceresi olacaktır.
+Özellik sayfasının üst penceresine işaret eder. NULL ise, ana pencere uygulamanın ana penceresi olur.
 
-*iSelectPage*<br/>
-Başlangıçta üstte olacak sayfanın dizin. Varsayılan, sayfaya eklenen ilk sayfadır.
+*ıselectpage*<br/>
+Başlangıçta en üstte olacak sayfanın dizini. Varsayılan, sayfaya eklenen ilk sayfasıdır.
 
 *pszCaption*<br/>
-Özellik sayfası için kullanılacak resim yazısını içeren bir dize yi işaret eder. NULL olamaz.
+Özellik sayfası için kullanılacak açıklamalı alt yazı başlığını içeren bir dizeye işaret eder. NULL olamaz.
 
-*hbmFili*<br/>
-Özellik sayfasının arka plan bit haritasına bir tutamaç.
+*hbmWatermark*<br/>
+Özellik sayfasının arka plan bit eşlemiyle bir tanıtıcı.
 
-*hpalWatermark*<br/>
-Filigran bit eşlemi ve/veya üstbilgi bit eşlemi paletine bir tutamaç.
+*Hpalfiligran*<br/>
+Filigran bit eşlem ve/veya üst bilgi bit eşlem paleti için bir tanıtıcı.
 
 *hbmHeader*<br/>
-Özellik sayfasının üstbilgi bit haritasına bir tutamak.
+Özellik sayfasının üstbilgi bit eşlemiyle bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik sayfasını görüntülemek için [DoModal](#domodal) veya [Create'i](#create)arayın. İlk parametrede yer alan dize, özellik sayfasının resim yazısı çubuğuna yerleştirilir.
+Özellik sayfasını göstermek için [DoModal](#domodal) veya [Oluştur](#create)' u çağırın. İlk parametrede yer alan dize, özellik sayfasının başlık çubuğuna yerleştirilir.
 
-Birden çok parametreniz varsa (örneğin, bir dizi kullanıyorsanız), '' yerine `CPropertySheet` [Oluştur'u](#construct) kullanın.
+Birden çok parametreye sahipseniz (örneğin, bir dizi kullanıyorsanız), yerine [Yapı](#construct) kullanın `CPropertySheet` .
 
-Yukarıdaki üçüncü veya dördüncü prototipleri kullanırsanız ve `CPropertySheet` *hbmWatermark*, *hpalWatermark*ve/veya *hbmHeader* parametreleri için geçerli değerleri geçerseniz filigran ve/veya üstbilgi görüntülerini otomatik olarak görüntüleyebilirsiniz.
+Yukarıdaki üçüncü ve dördüncü prototiplerinizi kullanırsanız `CPropertySheet` ve *hbmWatermark*, *hpalfiligran* ve/veya *hbmHeader* parametreleri için geçerli değerler geçirirseniz, filigran ve/veya üst bilgi görüntülerini otomatik olarak gösterebilirsiniz.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#131](../../mfc/codesnippet/cpp/cpropertysheet-class_3.cpp)]
 
-## <a name="cpropertysheetcreate"></a><a name="create"></a>CPropertySheet::Oluştur
+## <a name="cpropertysheetcreate"></a><a name="create"></a> CPropertySheet:: Create
 
-Modeless özellik sayfası görüntüler.
+Kalıcı olmayan bir özellik sayfası görüntüler.
 
 ```
 virtual BOOL Create(CWnd* pParentWnd = NULL,
@@ -341,29 +342,29 @@ virtual BOOL Create(CWnd* pParentWnd = NULL,
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-Üst pencereye işaret ediyor. NULL ise, üst masaüstüdür.
+Ana pencereye işaret eder. NULL ise, üst düzey masaüstüdür.
 
-*Dwstyle*<br/>
-Özellik sayfası için pencere stilleri. Kullanılabilir stillerin tam listesi için [Bkz. Pencere Stilleri.](../../mfc/reference/styles-used-by-mfc.md#window-styles)
+*dwStyle*<br/>
+Özellik sayfası için pencere stilleri. Kullanılabilir stillerin tüm listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).
 
 *dwExStyle*<br/>
-Özellik sayfası için genişletilmiş pencere stilleri. Kullanılabilir stillerin tam listesi için [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) bölümüne bakın
+Özellik sayfası için genişletilmiş pencere stilleri. Kullanılabilir stillerin tüm listesi için bkz. [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellik sayfası başarıyla oluşturulursa sıfırolmayan; aksi takdirde 0.
+Özellik sayfası başarıyla oluşturulduysa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı yapıcının içinde `Create` olabilir veya oluşturucu çağrıldıktan sonra arayabilirsiniz.
+Çağrısı, `Create` oluşturucunun içinde olabilir veya Oluşturucu çağrıldıktan sonra bunu çağırabilirsiniz.
 
-*-1'i dwStyle*olarak geçirerek ifade edilen varsayılan stil, WS_SYSMENU aslında&#124;&#124;&#124;&#124;WS_CAPTION&#124;DS_CONTEXTHELP&#124;DS_CONTEXTHELP WS_VISIBLE&#124;&#124;DS_MODALFRAME&#124;WS_POPUP&#124;. Varsayılan genişletilmiş pencere stili, *dwExStyle*olarak 0 geçerek ifade, aslında WS_EX_DLGMODALFRAME.
+-1 ' i *dwStyle* olarak geçirerek ifade edilen varsayılan stil aslında WS_SYSMENU&#124;WS_POPUP&#124;WS_CAPTION&#124;DS_MODALFRAME&#124;DS_CONTEXTHELP&#124;WS_VISIBLE. Varsayılan genişletilmiş pencere stili, *dwExStyle* olarak 0 geçirilerek belirtilir, aslında ws_ex_dlgmodalframe.
 
-`Create` Üye işlev özellik sayfasını oluşturduktan hemen sonra geri döner. Mülkiyet sayfası yok etmek için, [CWnd::DestroyWindow](../../mfc/reference/cwnd-class.md#destroywindow)arayın.
+`Create`Üye işlevi, özellik sayfası oluşturulduktan hemen sonra geri döner. Özellik sayfasını yok etmek için [CWnd::D estroyWindow](../../mfc/reference/cwnd-class.md#destroywindow)öğesini çağırın.
 
-Modsuz özellik sayfaları, modal özellik sayfaları gibi Tamam, İptal, Şimdi Uygula ve Yardım düğmeleri yok bir `Create` çağrı ile görüntülenir. İstenilen düğmeler kullanıcı tarafından oluşturulmalıdır.
+Bir çağrısıyla birlikte görüntülenecek kalıcı olmayan özellik sayfaları `Create` , kalıcı Özellik sayfaları olarak Tamam, iptal, şimdi Uygula ve yardım düğmelerine sahip değildir. İstenen düğmelerin Kullanıcı tarafından oluşturulması gerekir.
 
-Modal özellik sayfası görüntülemek için bunun yerine [DoModal'ı](#domodal) arayın.
+Kalıcı bir özellik sayfasını göstermek için, bunun yerine [DoModal](#domodal) ' ı çağırın.
 
 ### <a name="example"></a>Örnek
 
@@ -371,9 +372,9 @@ Modal özellik sayfası görüntülemek için bunun yerine [DoModal'ı](#domodal
 
 [!code-cpp[NVC_MFCDocView#133](../../mfc/codesnippet/cpp/cpropertysheet-class_5.cpp)]
 
-## <a name="cpropertysheetdomodal"></a><a name="domodal"></a>CPropertySheet::DoModal
+## <a name="cpropertysheetdomodal"></a><a name="domodal"></a> CPropertySheet::D oModal
 
-Modal özellik sayfası görüntüler.
+Kalıcı bir özellik sayfası görüntüler.
 
 ```
 virtual INT_PTR DoModal();
@@ -381,30 +382,30 @@ virtual INT_PTR DoModal();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa İDOK veya IDCANCEL; aksi takdirde 0 veya -1. Özellik sayfası sihirbaz olarak kurulmuşsa [(bkz. SetWizardMode),](#setwizardmode) `DoModal` ID_WIZFINISH veya IDCANCEL döndürür.
+İşlev başarılı olursa ıDOK veya ıDCANCEL; Aksi takdirde 0 veya-1. Özellik sayfası sihirbaz olarak kurulduysa (bkz. [SetWizardMode](#setwizardmode)), `DoModal` ID_WIZFINISH veya IDCANCEL ' ı döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İade değeri, özellik sayfasını kapatan denetimin kimliğine karşılık gelir. Bu işlev döndükten sonra, özellik sayfasına karşılık gelen pencereler ve tüm sayfalar yok edilmiş olur. Nesnelerin kendileri hala var olacaktır. Genellikle, IDOK döndükten sonra `DoModal` [CPropertyPage](../../mfc/reference/cpropertypage-class.md) nesnelerinden veri alırsınız.
+Dönüş değeri, özellik sayfasını kapatan denetimin KIMLIĞINE karşılık gelir. Bu işlev döndüğünde, özellik sayfasına ve tüm sayfalara karşılık gelen pencereler yok edilir. Nesneler hala mevcut olacaktır. Genellikle, [CPropertyPage](../../mfc/reference/cpropertypage-class.md) nesnelerinden `DoModal` IDOK öğesini döndürdüğünü, verileri elde edersiniz.
 
-Modeless özellik sayfasını görüntülemek için bunun yerine [Oluştur'u](#create) arayın.
+Kalıcı olmayan bir özellik sayfasını göstermek için, bunun yerine [Create](#create) çağırın.
 
-Bir özellik sayfası ilgili iletişim kaynağından oluşturulduğunda, ilk şans özel duruma neden olabilir. Bu, sayfa oluşturulmadan önce iletişim kaynağının stilini gerekli stilde değiştiren özellik sayfasından kaynaklanır. Kaynaklar genellikle salt okunur olduğundan, bu bir özel durum neden olur. Sistem özel durumu işler ve değiştirilen kaynağın bir kopyasını yapar. Bu nedenle ilk şans özel durumu yoksayılabilir.
+Kendisine karşılık gelen iletişim kutusu kaynağından bir özellik sayfası oluşturulduğunda, ilk fırsat özel durumuna neden olabilir. Bu, özellik sayfasının, iletişim kaynağı stilini, sayfa oluşturulmadan önce gerekli stile değiştirme sonucu olur. Kaynaklar genellikle salt okunurdur, bu durum bir özel duruma neden olur. Sistem özel durumu işler ve değiştirilen kaynağın bir kopyasını oluşturur. Bu nedenle, ilk şans özel durumu yok sayılır.
 
 > [!NOTE]
-> Bu özel durum, eşzamanlı özel durum işleme modeliyle derleniyorsanız, işletim sistemi tarafından ele alınmalıdır. Özel durum işleme modelleri hakkında daha fazla bilgi için bkz: [/EH (Özel Durum Taşıma Modeli).](../../build/reference/eh-exception-handling-model.md) Bu durumda, aramayı, örneğin, tüm özel durumları işlediği bir C++ try-catch `CPropertySheet::DoModal` bloğuyla `catch (...)`sarmayın. Bu blok, işletim sistemi için amaçlanan özel durumu işler ve öngörülemeyen davranışlara neden olur. Ancak, Access İhlali özel durum işletim sistemine geçirilir belirli özel durum türleri veya yapılandırılmış özel durum işleme ile C++ özel durum işleme güvenle kullanabilirsiniz.
+> Bu özel durum, zaman uyumsuz özel durum işleme modeliyle derlerken, işletim sistemi tarafından işlenmelidir. Özel durum işleme modelleri hakkında daha fazla bilgi için bkz. [/Eh (özel durum Işleme modeli)](../../build/reference/eh-exception-handling-model.md). Bu durumda, `CPropertySheet::DoModal` , örneğin, catch 'in tüm özel durumları işlediği bir C++ try-catch bloğu ile çağrılarını sarmayın `catch (...)` . Bu blok, işletim sistemi için tasarlanan özel durumu işleyebilir ve öngörülemeyen davranışlara neden olur. Bununla birlikte, belirli özel durum türleriyle C++ özel durum işlemeyi güvenli bir şekilde kullanabilir veya erişim Ihlali özel durumunun işletim sistemine geçirildiği yapılandırılmış özel durum işleme ile birlikte kullanabilirsiniz.
 
-Bu ilk şans özel durum oluşturmayı önlemek için, özellik sayfasının doğru [Pencere Stillerine](../../mfc/reference/styles-used-by-mfc.md#window-styles)sahip olduğunu el ile garanti edebilirsiniz. Bir özellik sayfası için aşağıdaki stilleri ayarlamanız gerekir:
+Bu birinci şans özel durumunun oluşturulmasını önlemek için, özellik sayfasında doğru [pencere stillerinin](../../mfc/reference/styles-used-by-mfc.md#window-styles)olduğunu el ile garanti edebilirsiniz. Bir özellik sayfası için aşağıdaki stilleri ayarlamanız gerekir:
 
 - DS_3DLOOK
 
 - DS_CONTROL
 
-- Ws_chıld
+- WS_CHILD
 
 - WS_TABSTOP
 
-İlk şans özel durum larını neden olmadan aşağıdaki isteğe bağlı stilleri kullanabilirsiniz:
+Aşağıdaki isteğe bağlı stilleri, birinci şans özel durumuna neden olmadan kullanabilirsiniz:
 
 - DS_SHELLFONT
 
@@ -412,15 +413,15 @@ Bu ilk şans özel durum oluşturmayı önlemek için, özellik sayfasının do�
 
 - WS_CLIPCHILDREN
 
-Özellik sayfalarıyla uyumlu olmadığından diğer tüm Windows stillerini devre dışı kılabilir. Bu tavsiye genişletilmiş stiller için geçerli değildir. Bu standart stilleri uygun şekilde ayarlamak, özellik sayfasının değiştirilmesi gerekmediğini garanti eder ve ilk şans özel durumu oluşturmayı önler.
+Özellik sayfalarıyla uyumlu olmadıkları için diğer tüm Windows stillerini devre dışı bırakın. Bu öneri, genişletilmiş stiller için geçerlidir. Bu standart stilleri uygun şekilde ayarlamak, özellik sayfasının değiştirilmesini garantilemez ve birinci şans özel durumunu üretmemek için bir işlem yapar.
 
 ### <a name="example"></a>Örnek
 
-CPropertySheet için örneğe [bakın:AddPage](#addpage).
+[CPropertySheet:: AddPage](#addpage)örneğine bakın.
 
-## <a name="cpropertysheetenablestackedtabs"></a><a name="enablestackedtabs"></a>CPropertySheet::EnableStackedTabs
+## <a name="cpropertysheetenablestackedtabs"></a><a name="enablestackedtabs"></a> CPropertySheet:: Enablestackedtab
 
-Bir özellik sayfasına sekme satırları nın yığılıp yığılmayacağını gösterir.
+Bir özellik sayfasında sekmelerin satırlarının yığanıp ayrılmayacağını gösterir.
 
 ```cpp
 void EnableStackedTabs(BOOL bStacked);
@@ -428,20 +429,20 @@ void EnableStackedTabs(BOOL bStacked);
 
 ### <a name="parameters"></a>Parametreler
 
-*bYığılmış*<br/>
-Yığılmış sekmelerin özellik sayfasında etkin olup olmadığını gösterir. *bStacked'ı* FALSE'a ayarlayarak yığılmış etiket satırlarını devre dışı bırak.
+*Byığınlanmış*<br/>
+Özellik sayfasında yığılmış sekmelerin etkinleştirilip etkinleştirilmeyeceğini gösterir. *Byığınlanmış* değerini false olarak ayarlayarak, yığılmış satırları devre dışı bırakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bir özellik sayfasının özellik sayfasının genişliğinde tek bir satıra sığmayacak kadar sekmeleri varsa, sekmeler birden çok satırda istifler. Sekmeleri istiflemek yerine kaydırma sekmelerini `EnableStackedTabs` kullanmak için, [DoModal](#domodal) veya [Create'i](#create)aramadan önce FALSE'a ayarlanmış *bStacked* ile arayın.
+Varsayılan olarak, bir özellik sayfasında, özellik sayfasının genişliğine göre tek bir satıra sığacak kadar daha fazla sekme varsa, sekmeler birden çok satırda yığılır. Yığın sekmeleri yerine kaydırma sekmelerini kullanmak için, `EnableStackedTabs` [DoModal](#domodal) veya [Oluştur](#create)ÇAĞıRıLMADAN önce *byığılmış* kümesi false olarak çağırın.
 
-Bir modal veya modeless özellik sayfası oluştururken aramanız `EnableStackedTabs` gerekir. Bu stili türetilmiş `CPropertySheet`bir sınıfa dahil etmek için WM_CREATE için bir ileti işleyicisi yazın. CWnd geçersiz sürümünde::OnCreate , temel `EnableStackedTabs( FALSE )` sınıf uygulamasını aramadan önce arayın. [CWnd::OnCreate](../../mfc/reference/cwnd-class.md#oncreate)
+Kalıcı veya kalıcı olmayan bir `EnableStackedTabs` özellik sayfası oluşturduğunuzda çağırmanız gerekir. Bu stili bir `CPropertySheet` türetilmiş sınıfta birleştirmek için, WM_CREATE için bir ileti işleyicisi yazın. Geçersiz kılınan [CWnd:: OnCreate](../../mfc/reference/cwnd-class.md#oncreate)sürümünde, `EnableStackedTabs( FALSE )` temel sınıf uygulamasını çağırmadan önce çağırın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#134](../../mfc/codesnippet/cpp/cpropertysheet-class_6.cpp)]
 
-## <a name="cpropertysheetenddialog"></a><a name="enddialog"></a>CPropertySheet::EndDialog
+## <a name="cpropertysheetenddialog"></a><a name="enddialog"></a> CPropertySheet:: EndDialog
 
 Özellik sayfasını sonlandırır.
 
@@ -452,21 +453,21 @@ void EndDialog(int nEndID);
 ### <a name="parameters"></a>Parametreler
 
 *nEndID*<br/>
-Özellik sayfasının iade değeri olarak kullanılacak tanımlayıcı.
+Özellik sayfasının dönüş değeri olarak kullanılacak tanımlayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tamam, İptal veya Kapat düğmesine basıldığında bu üye işlev çerçeve tarafından çağrılır. Özellik sayfasını kapatması gereken bir olay oluşursa bu üye işlevi arayın.
+Bu üye işlevi, OK, Cancel veya Close düğmesine basıldığında Framework tarafından çağırılır. Özellik sayfasını kapatması gereken bir olay oluşursa, bu üye işlevi çağırın.
 
-Bu üye işlev yalnızca bir modal iletişim kutusu ile kullanılır.
+Bu üye işlevi yalnızca kalıcı iletişim kutusuyla birlikte kullanılır.
 
 ### <a name="example"></a>Örnek
 
-[CPropertySheet::PressButton](#pressbutton)için örneğe bakın.
+[CPropertySheet::P ressButton](#pressbutton)örneğine bakın.
 
-## <a name="cpropertysheetgetactiveindex"></a><a name="getactiveindex"></a>CpropertySheet::GetActiveIndex
+## <a name="cpropertysheetgetactiveindex"></a><a name="getactiveindex"></a> CPropertySheet:: GetActiveIndex
 
-Özellik sayfası penceresinin etkin sayfasının dizin numarasını alır ve döndürülen dizin numarasını `GetPage`parametre olarak kullanır.
+Özellik sayfası penceresinin etkin sayfasının dizin numarasını alır ve ardından için parametresi olarak döndürülen dizin numarasını kullanır `GetPage` .
 
 ```
 int GetActiveIndex() const;
@@ -478,9 +479,9 @@ Etkin sayfanın dizin numarası.
 
 ### <a name="example"></a>Örnek
 
-CPropertySheet örneğine [bakın:GetActivePage](#getactivepage).
+[CPropertySheet:: GetActivePage](#getactivepage)örneğine bakın.
 
-## <a name="cpropertysheetgetactivepage"></a><a name="getactivepage"></a>CpropertySheet::GetActivePage
+## <a name="cpropertysheetgetactivepage"></a><a name="getactivepage"></a> CPropertySheet:: GetActivePage
 
 Özellik sayfası penceresinin etkin sayfasını alır.
 
@@ -500,7 +501,7 @@ Etkin sayfada bazı eylemler gerçekleştirmek için bu üye işlevini kullanın
 
 [!code-cpp[NVC_MFCDocView#135](../../mfc/codesnippet/cpp/cpropertysheet-class_7.cpp)]
 
-## <a name="cpropertysheetgetpage"></a><a name="getpage"></a>CPropertySheet::GetPage
+## <a name="cpropertysheetgetpage"></a><a name="getpage"></a> CPropertySheet:: GetPage
 
 Bu özellik sayfasında belirtilen sayfaya bir işaretçi döndürür.
 
@@ -510,20 +511,20 @@ CPropertyPage* GetPage(int nPage) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nPage*<br/>
-0'dan başlayan istenilen sayfanın dizini. Dahil olmak üzere, özellik sayfasındaki sayfa sayısından 0 ile bir arasında olmalıdır.
+*Nsayfa*<br/>
+İstenen sayfanın dizini 0 ' dan başlayarak. 0 ile bir, özellik sayfasındaki (dahil) sayfa sayısından küçük olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-sayfanın işaretçisi *nPage* parametresine karşılık geliyor.
+Sayfanın, *nPage* parametresine karşılık gelen işaretçisi.
 
 ### <a name="example"></a>Örnek
 
-CPropertyPage örneğine [bakın::OnWizardFinish](../../mfc/reference/cpropertypage-class.md#onwizardfinish).
+[CPropertyPage:: Onwizardbitiş](../../mfc/reference/cpropertypage-class.md#onwizardfinish)örneğine bakın.
 
-## <a name="cpropertysheetgetpagecount"></a><a name="getpagecount"></a>CpropertySheet::GetPageCount
+## <a name="cpropertysheetgetpagecount"></a><a name="getpagecount"></a> CPropertySheet:: GetPageCount
 
-Özellik sayfasında şu anda bulunan sayfa sayısını belirler.
+Özellik sayfasındaki geçerli sayfa sayısını belirler.
 
 ```
 int GetPageCount() const;
@@ -535,9 +536,9 @@ int GetPageCount() const;
 
 ### <a name="example"></a>Örnek
 
-CPropertyPage örneğine [bakın::OnWizardFinish](../../mfc/reference/cpropertypage-class.md#onwizardfinish).
+[CPropertyPage:: Onwizardbitiş](../../mfc/reference/cpropertypage-class.md#onwizardfinish)örneğine bakın.
 
-## <a name="cpropertysheetgetpageindex"></a><a name="getpageindex"></a>CpropertySheet::GetPageIndex
+## <a name="cpropertysheetgetpageindex"></a><a name="getpageindex"></a> CPropertySheet:: GetPageIndex
 
 Özellik sayfasında belirtilen sayfanın dizin numarasını alır.
 
@@ -548,7 +549,7 @@ int GetPageIndex(CPropertyPage* pPage);
 ### <a name="parameters"></a>Parametreler
 
 *pPage*<br/>
-Bulunacak dizinle sayfaya işaret edin. NULL olamaz.
+Bulunan dizini içeren sayfaya işaret eder. NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -556,15 +557,15 @@ Bir sayfanın dizin numarası.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, SetActivePage `GetPageIndex` veya [GetPage'i](#setactivepage) kullanmak için sayfa [GetPage](#getpage)dizini almak için kullanılır.
+Örneğin, `GetPageIndex` [SetActivePage](#setactivepage) veya [GetPage](#getpage)kullanmak için sayfa dizinini almak üzere öğesini kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
-CPropertySheet örneğine [bakın:GetActivePage](#getactivepage).
+[CPropertySheet:: GetActivePage](#getactivepage)örneğine bakın.
 
-## <a name="cpropertysheetgettabcontrol"></a><a name="gettabcontrol"></a>CpropertySheet::gettabcontrol
+## <a name="cpropertysheetgettabcontrol"></a><a name="gettabcontrol"></a> CPropertySheet:: GetTabControl
 
-Sekme denetimine özgü bir şey yapmak için sekme denetimine işaretçi salar (diğer bir [deyişle, CTabCtrl'daki](../../mfc/reference/ctabctrl-class.md)API'lerden herhangi birini kullanmak için).
+Sekme denetimine özgü bir şey yapmak için Sekme denetimine yönelik bir işaretçi alır (diğer bir deyişle, [CTabCtrl](../../mfc/reference/ctabctrl-class.md)'teki API 'lerden herhangi birini kullanmak için).
 
 ```
 CTabCtrl* GetTabControl() const;
@@ -572,33 +573,33 @@ CTabCtrl* GetTabControl() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sekme denetimi için bir işaretçi.
+Sekme denetimine yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, başlatma sırasında sekmelerin her birine bit eşlemleri eklemek istiyorsanız bu üye işlevi arayın.
+Örneğin, başlatma sırasında sekmelerin her birine bit eşlemler eklemek istiyorsanız bu üye işlevini çağırın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#136](../../mfc/codesnippet/cpp/cpropertysheet-class_8.cpp)]
 
-## <a name="cpropertysheetm_psh"></a><a name="m_psh"></a>CPropertySheet::m_psh
+## <a name="cpropertysheetm_psh"></a><a name="m_psh"></a> CPropertySheet:: m_psh
 
-Üyeleri [PROPSHEETHEADER](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2)özelliklerini depolayan bir yapı.
+Üyeleri [propsheetheader](/windows/win32/api/prsht/ns-prsht-propsheetheadera_v2)özelliklerini depolayan bir yapı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yapıyı, özellik sayfasının oluşturulduktan sonra ancak [DoModal](#domodal) üye işlevi ile görüntülenmeden önce görünümünü ortaya çıkarmak için kullanın. Örneğin, *dwSize* üyesini `m_psh` özellik sayfasının sahip olmasını istediğiniz boyuta ayarlayın.
+Özellik sayfasının, oluşturulduktan sonra, ancak [DoModal](#domodal) üye işleviyle görüntülenmeden önce görünümünü başlatmak için bu yapıyı kullanın. Örneğin, *dwSize* üyesini `m_psh` Özellik sayfasının sahip olmasını istediğiniz boyuta ayarlayın.
 
-Üyelerinin listesi de dahil olmak üzere bu yapı hakkında daha fazla bilgi için Windows SDK'daki PROPSHEETHEADER sayfasına bakın.
+Bu yapı hakkında, üyelerinin bir listesi de dahil daha fazla bilgi için bkz. PROPSHEETHEADER Windows SDK.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#143](../../mfc/codesnippet/cpp/cpropertysheet-class_9.cpp)]
 
-## <a name="cpropertysheetmapdialogrect"></a><a name="mapdialogrect"></a>CPropertySheet::MapDialogRect
+## <a name="cpropertysheetmapdialogrect"></a><a name="mapdialogrect"></a> CPropertySheet:: MapDialogRect
 
-Dikdörtgenin iletişim kutusu birimlerini ekran birimlerine dönüştürür.
+Bir dikdörtgenin iletişim kutusu birimlerini ekran birimlerine dönüştürür.
 
 ```cpp
 void MapDialogRect(LPRECT lpRect) const;
@@ -606,20 +607,20 @@ void MapDialogRect(LPRECT lpRect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Lprect*<br/>
-Dönüştürülecek iletişim kutusu koordinatlarını içeren bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
+*lpRect*<br/>
+Dönüştürülecek iletişim kutusu koordinatlarını içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusu birimleri, iletişim kutusu metni için kullanılan yazı tipindeki karakterlerin ortalama genişliği ve yüksekliğinden türetilen geçerli iletişim kutusu temel birimi açısından belirtilir. Yatay birim, iletişim kutusu taban genişliği biriminin dörtte biridir ve bir dikey birim iletişim kutusu taban yüksekliği biriminin sekizde biridir.
+İletişim kutusu birimleri, iletişim kutusu metni için kullanılan yazı tipindeki ortalama genişlik ve karakterlerin yüksekliğinden türetilmiş geçerli iletişim kutusu taban birimi açısından belirtilir. Bir yatay birim iletişim kutusu taban genişliği biriminin dörtte biridir ve bir dikey birim iletişim kutusu Taban yükseklik biriminin sekizde biridir.
 
-[GetDialogBaseUnits](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits) Windows işlevi sistem yazı tipi için boyut bilgilerini döndürür, ancak kaynak tanım dosyasındaki DS_SETFONT stilini kullanırsanız her özellik sayfası için farklı bir yazı tipi belirtebilirsiniz. Windows SDK'da açıklanan [MapDialogRect](/windows/win32/api/winuser/nf-winuser-mapdialogrect) Windows işlevi, bu iletişim kutusu için uygun yazı tipini kullanır.
+[GetDialogBaseUnits](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits) Windows işlevi, sistem yazı tipi için boyut bilgilerini döndürür, ancak kaynak tanımı dosyasında DS_SETFONT stilini kullanırsanız her bir özellik sayfası için farklı bir yazı tipi belirtebilirsiniz. Windows SDK açıklanan [MapDialogRect](/windows/win32/api/winuser/nf-winuser-mapdialogrect) Windows işlevi, bu iletişim kutusu için uygun yazı tipini kullanır.
 
-Üye `MapDialogRect` işlev, kartbirimi oluşturmak veya bir kutu içinde bir denetim konumlandırmak için dikdörtgenin kullanılabilmesi için *lpRect'teki* iletişim kutusu birimlerini ekran birimleriyle (pikseller) değiştirir.
+`MapDialogRect`Üye işlevi, *Loprect* 'daki iletişim kutusu birimlerinin yerini ekran birimleri (piksel) ile değiştirir, böylece dikdörtgen bir iletişim kutusu oluşturmak veya bir kutuyu kutu içinde konumlandırmak için kullanılabilir.
 
-## <a name="cpropertysheetoninitdialog"></a><a name="oninitdialog"></a>CPropertySheet::OnInitDialog
+## <a name="cpropertysheetoninitdialog"></a><a name="oninitdialog"></a> CPropertySheet:: OnInitDialog
 
-Özellik sayfası başlatmayı artırmak için geçersiz kılar.
+Özellik sayfası başlatmasını artırmak için geçersiz kılar.
 
 ```
 virtual BOOL OnInitDialog();
@@ -627,19 +628,19 @@ virtual BOOL OnInitDialog();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Uygulamanın giriş odağının özellik sayfasındaki denetimlerden birine ayarlayıp ayarlamadığını belirtir. Sıfırsız `OnInitDialog` dönerse, Windows giriş odağı özellik sayfasındaki ilk denetime ayarlar. Uygulama, yalnızca giriş odağının özellik sayfasındaki denetimlerden birine açıkça ayarlamısa 0 döndürebilir.
+Uygulamanın, giriş odağını özellik sayfasındaki denetimlerden birine ayarlayıp ayarlamadığını belirtir. `OnInitDialog`Sıfır dışında bir değer döndürürse, Windows giriş odağını özellik sayfasındaki ilk denetime ayarlar. Uygulama, yalnızca giriş odağını özellik sayfasındaki denetimlerden birine açıkça ayarlamışsa 0 döndürebilir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, WM_INITDIALOG iletisine yanıt olarak çağrılır. Bu ileti, özellik sayfası görüntülenmeden hemen önce gerçekleşen [Create](#create) veya [DoModal](#domodal) aramaları sırasında özellik sayfasına gönderilir.
+Bu üye işlevi, WM_INITDIALOG iletisine yanıt olarak çağırılır. Bu ileti, özellik sayfası görüntülenmeden hemen önce gerçekleşen [Create](#create) veya [DoModal](#domodal) çağrıları sırasında özellik sayfasına gönderilir.
 
-Özellik sayfası başharfe atıldığında özel işleme gerçekleştirmeniz gerekiyorsa bu üye işlevi geçersiz kılın. Geçersiz kılınan sürümde, önce taban `OnInitDialog` sınıfı arayın, ancak geri dönüş değerini göz ardı edin. Normalde geçersiz kılınan üye işlevinizden TRUE'ya geri dönersiniz.
+Özellik sayfası başlatıldığında özel işlem gerçekleştirmeniz gerekiyorsa, bu üye işlevi geçersiz kılın. Geçersiz kılınan sürümde, önce temel sınıfı çağırın, `OnInitDialog` ancak dönüş değerini yok sayın. Normalde geçersiz kılınan üye işlevinizden doğru bir değer döndürülecektir.
 
-Bu üye işlev için ileti eşlemi girişine gerek yoktur.
+Bu üye işlevi için bir ileti eşleme girişi gerekmez.
 
-## <a name="cpropertysheetpressbutton"></a><a name="pressbutton"></a>CPropertySheet::PressButton
+## <a name="cpropertysheetpressbutton"></a><a name="pressbutton"></a> CPropertySheet::P ressButton
 
-Bir özellik sayfasında belirtilen düğmenin seçimini simüle eder.
+Bir özellik sayfasında belirtilen düğme seçimine benzetir.
 
 ```cpp
 void PressButton(int nButton);
@@ -647,36 +648,36 @@ void PressButton(int nButton);
 
 ### <a name="parameters"></a>Parametreler
 
-*nDüğme*<br/>
-nButton : Basılacak düğmeyi tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:
+*Ndüğme*<br/>
+nButton: basılan düğmeyi tanımlar. Bu parametre aşağıdaki değerlerden biri olabilir:
 
-- PSBTN_BACK Geri düğmesini seçer.
+- PSBTN_BACK geri düğmesini seçer.
 
-- PSBTN_NEXT Sonraki düğmesini seçer.
+- PSBTN_NEXT Ileri düğmesini seçer.
 
-- PSBTN_FINISH Bitiş düğmesini seçer.
+- PSBTN_FINISH son düğmesini seçer.
 
 - PSBTN_OK Tamam düğmesini seçer.
 
 - PSBTN_APPLYNOW Şimdi Uygula düğmesini seçer.
 
-- PSBTN_CANCEL İptal düğmesini seçer.
+- PSBTN_CANCEL Iptal düğmesini seçer.
 
 - PSBTN_HELP Yardım düğmesini seçer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows SDK Pressbutton iletisi hakkında daha fazla bilgi için [PSM_PRESSBUTTON](/windows/win32/Controls/psm-pressbutton) bakın.
+Windows SDK PressButton iletisi hakkında daha fazla bilgi için bkz. [PSM_PRESSBUTTON](/windows/win32/Controls/psm-pressbutton) .
 
-Çağrı, `PressButton` [PSN_APPLY](/windows/win32/Controls/psn-apply) bildirimini bir özellik sayfasından çerçeveye göndermez. Bu bildirimi göndermek için [CPropertyPage'i arayın::OnOK.](../../mfc/reference/cpropertypage-class.md#onok)
+' A yapılan bir çağrı `PressButton` , bir özellik sayfasından çerçeveye [PSN_APPLY](/windows/win32/Controls/psn-apply) bildirimi göndermeyecektir. Bu bildirimi göndermek için [CPropertyPage:: OnOK](../../mfc/reference/cpropertypage-class.md#onok)çağırın.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#137](../../mfc/codesnippet/cpp/cpropertysheet-class_10.cpp)]
 
-## <a name="cpropertysheetremovepage"></a><a name="removepage"></a>CÖzellik Sayfası::RemovePage
+## <a name="cpropertysheetremovepage"></a><a name="removepage"></a> CPropertySheet:: RemovePage
 
-Bir sayfayı özellik sayfasından kaldırır ve ilişkili pencereyi yok eder.
+Özellik sayfasından bir sayfayı kaldırır ve ilişkili pencereyi yok eder.
 
 ```cpp
 void RemovePage(CPropertyPage* pPage);
@@ -686,16 +687,16 @@ void RemovePage(int nPage);
 ### <a name="parameters"></a>Parametreler
 
 *pPage*<br/>
-Özellik sayfasından kaldırılacak sayfaya işaret edin. NULL olamaz.
+Özellik sayfasından kaldırılacak sayfayı işaret eder. NULL olamaz.
 
-*nPage*<br/>
-Kaldırılacak sayfanın dizin. Dahil olmak üzere, özellik sayfasındaki sayfa sayısından 0 ile bir arasında olmalıdır.
+*Nsayfa*<br/>
+Kaldırılacak sayfanın dizini. 0 ile bir, özellik sayfasındaki (dahil) sayfa sayısından küçük olmalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CPropertyPage](../../mfc/reference/cpropertypage-class.md) nesnesinin kendisi, pencerenin sahibi `CPropertySheet` kapatılana kadar yok edilmez.
+Pencerenin sahibi kapatılana kadar [CPropertyPage](../../mfc/reference/cpropertypage-class.md) nesnesinin kendisi yok edilmez `CPropertySheet` .
 
-## <a name="cpropertysheetsetactivepage"></a><a name="setactivepage"></a>CpropertySheet::SetActivePage
+## <a name="cpropertysheetsetactivepage"></a><a name="setactivepage"></a> CPropertySheet:: SetActivePage
 
 Etkin sayfayı değiştirir.
 
@@ -706,27 +707,27 @@ BOOL SetActivePage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>Parametreler
 
-*nPage*<br/>
-Ayarlanan sayfanın dizin. Bu, özellik sayfasındaki sayfa sayısından 0 ile bir arasında olmalıdır.
+*Nsayfa*<br/>
+Ayarlanacak sayfanın dizini. Bu, 0 ile bir, özellik sayfasındaki (dahil) sayfa sayısından az olmalıdır.
 
 *pPage*<br/>
-Özellik sayfasında ayarlanan sayfaya işaret edin. NULL olamaz.
+Özellik sayfasında ayarlanacak sayfaya işaret eder. NULL olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellik sayfası başarıyla etkinleştirilirse sıfıra inmez; aksi takdirde 0.
+Özellik sayfası başarıyla etkinleştirildiyse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örneğin, bir `SetActivePage` kullanıcının bir sayfadaki eylemi başka bir sayfanın etkin sayfa olmasına neden olacaksa kullanın.
+Örneğin, bir `SetActivePage` kullanıcının eylemi bir sayfada başka bir sayfanın etkin sayfa haline gelmesine neden olursa kullanın.
 
 ### <a name="example"></a>Örnek
 
-CPropertySheet örneğine [bakın:GetActivePage](#getactivepage).
+[CPropertySheet:: GetActivePage](#getactivepage)örneğine bakın.
 
-## <a name="cpropertysheetsetfinishtext"></a><a name="setfinishtext"></a>CpropertySheet::SetFinishText
+## <a name="cpropertysheetsetfinishtext"></a><a name="setfinishtext"></a> CPropertySheet:: Setsonlandırhtext
 
-Bitiş komutu düğmesindeki metni ayarlar.
+Son komut düğmesindeki metni ayarlar.
 
 ```cpp
 void SetFinishText(LPCTSTR lpszText);
@@ -734,20 +735,20 @@ void SetFinishText(LPCTSTR lpszText);
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszMetin*<br/>
-Bitiş komutu düğmesinde görüntülenecek metni işaret edin.
+*lpszText*<br/>
+Son komut düğmesinde görüntülenecek metni işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bitiş `SetFinishText` komutu düğmesindeki metni görüntülemek için arayın ve kullanıcı sihirbazın son sayfasındaki eylemi tamamladıktan sonra Sonraki ve Geri düğmelerini gizleyin.
+`SetFinishText`Komutu son komut düğmesinde göstermek için çağırın ve sihirbazın son sayfasında Kullanıcı eylemi tamamlandıktan sonra ileri ve geri düğmelerini gizleyin.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/cpp/cpropertysheet-class_11.cpp)]
 
-## <a name="cpropertysheetsettitle"></a><a name="settitle"></a>CPropertySheet::SetTitle
+## <a name="cpropertysheetsettitle"></a><a name="settitle"></a> CPropertySheet:: SetTitle
 
-Özellik sayfasının başlığını (çerçeve penceresinin başlık çubuğunda görüntülenen metin) belirtir.
+Özellik sayfasının başlığını belirtir (bir çerçeve penceresinin başlık çubuğunda görünen metin).
 
 ```cpp
 void SetTitle(
@@ -758,22 +759,22 @@ void SetTitle(
 ### <a name="parameters"></a>Parametreler
 
 *nStyle*<br/>
-Özellik sayfası başlığının stilini belirtir. Stil 0 veya PSH_PROPTITLE olarak belirtilmelidir. Stil PSH_PROPTITLE olarak ayarlanırsa, başlık olarak belirtilen metinden sonra "Özellikler" sözcüğü görüntülenir. Örneğin, arama `SetTitle`("Basit", PSH_PROPTITLE) "Basit Özellikler" özelliği sayfası başlığıyla sonuçlanır.
+Özellik sayfası başlığının stilini belirtir. Stil, 0 veya PSH_PROPTITLE olarak belirtilmelidir. Stil PSH_PROPTITLE olarak ayarlandıysa, "Özellikler" sözcüğü başlık olarak belirtilen metinden sonra görüntülenir. Örneğin, `SetTitle` ("basit", PSH_PROPTITLE) çağırmak, "basit özellikler" öğesinin bir özellik sayfası açıklamalı alt yazısı ile sonuçlanacaktır.
 
-*lpszMetin*<br/>
-Özellik sayfasının başlık çubuğunda başlık olarak kullanılacak metne işaret edin.
+*lpszText*<br/>
+Özellik sayfasının başlık çubuğunda başlık olarak kullanılacak metni gösterir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, bir özellik sayfası özellik sayfası oluşturucudaki resim yazısı parametresini kullanır.
+Varsayılan olarak, bir özellik sayfası, özellik sayfası oluşturucusunda Caption parametresini kullanır.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#139](../../mfc/codesnippet/cpp/cpropertysheet-class_12.cpp)]
 
-## <a name="cpropertysheetsetwizardbuttons"></a><a name="setwizardbuttons"></a>CPropertySheet::SetWizardButtons
+## <a name="cpropertysheetsetwizardbuttons"></a><a name="setwizardbuttons"></a> CPropertySheet:: SetWizardButtons
 
-Sihirbaz özellik sayfasında Geri, İleri veya Bitiş düğmesini etkinleştirir veya devre dışı kılabilir.
+Sihirbaz Özellik sayfasında geri, Ileri veya son düğmesini etkinleştirilir veya devre dışı bırakır.
 
 ```cpp
 void SetWizardButtons(DWORD dwFlags);
@@ -781,26 +782,26 @@ void SetWizardButtons(DWORD dwFlags);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwflags*<br/>
-Sihirbaz düğmelerinin işlevini ve görünümünü özelleştiren bir bayrak kümesi. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir:
+*dwFlags*<br/>
+Sihirbaz düğmelerinin işlevini ve görünümünü özelleştiren bayraklar kümesi. Bu parametre aşağıdaki değerlerin bir birleşimi olabilir:
 
-- PSWIZB_BACK Geri düğmesi
+- PSWIZB_BACK geri düğmesi
 
-- PSWIZB_NEXT Sonraki düğme
+- PSWIZB_NEXT Ileri düğmesi
 
-- PSWIZB_FINISH Bitiş düğmesi
+- PSWIZB_FINISH son düğmesi
 
-- PSWIZB_DISABLEDFINISH Devre Dışı Bitiş düğmesi
+- PSWIZB_DISABLEDFINISH devre dışı bitiş düğmesi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yalnızca `SetWizardButtons` iletişim kutusu açıldıktan sonra arayın; `SetWizardButtons` [DoModal'ı](#domodal)aramadan önce arayama. Genellikle, CPropertyPage `SetWizardButtons` aramanız [gerekir::OnSetActive](../../mfc/reference/cpropertypage-class.md#onsetactive).
+`SetWizardButtons`Yalnızca iletişim kutusu açıldıktan sonra çağrı yapın; `SetWizardButtons` [dokalıcı](#domodal)çağrısı yapmadan önce çağırılamaz. Genellikle, `SetWizardButtons` [CPropertyPage:: OnSetActive](../../mfc/reference/cpropertypage-class.md#onsetactive)öğesinden çağırmanız gerekir.
 
-Kullanıcı sihirbazı tamamladıktan sonra Bitiş düğmesindeki metni değiştirmek veya Sonraki ve Geri düğmelerini gizlemek istiyorsanız [SetFinishText'i](#setfinishtext)arayın. Bitiş ve Sonraki için aynı düğmenin paylaşıldığına dikkat edin. Aynı anda Bir Bitiş veya İleri düğmesini görüntüleyebilirsiniz, ancak her ikisini birden görüntülemezsiniz.
+Kullanıcı Sihirbazı tamamladıktan sonra son düğmedeki metni değiştirmek veya Ileri ve geri düğmelerini gizlemek istiyorsanız, [Setbithtext](#setfinishtext)' i çağırın. Aynı düğmenin son ve Ileri için paylaşıldığını unutmayın. Bir kerede bir son veya bir sonraki düğme görüntüleyebilirsiniz, ancak her ikisini birden kullanamazsınız.
 
 ### <a name="example"></a>Örnek
 
-`CPropertySheet` A'nın üç sihirbaz `CStylePage` `CColorPage`özelliği `CShapePage`vardır: , , ve .  Aşağıdaki kod parçası, sihirbaz özelliği sayfasındaki **Geri** ve **Sonraki** düğmelerini nasıl etkinleştirip devre dışı kkarşılayacak olduğunu gösterir.
+A, `CPropertySheet` üç sihirbaz Özellik sayfasına sahiptir: `CStylePage` , `CColorPage` ve `CShapePage` .  Aşağıdaki kod parçası, sihirbaz Özellik sayfasında **geri** ve **İleri** düğmelerinin nasıl etkinleştirileceğini ve devre dışı bırakılacağını gösterir.
 
 [!code-cpp[NVC_MFCDocView#140](../../mfc/codesnippet/cpp/cpropertysheet-class_13.cpp)]
 
@@ -808,9 +809,9 @@ Kullanıcı sihirbazı tamamladıktan sonra Bitiş düğmesindeki metni değişt
 
 [!code-cpp[NVC_MFCDocView#138](../../mfc/codesnippet/cpp/cpropertysheet-class_11.cpp)]
 
-## <a name="cpropertysheetsetwizardmode"></a><a name="setwizardmode"></a>CpropertySheet::SetWizardMode
+## <a name="cpropertysheetsetwizardmode"></a><a name="setwizardmode"></a> CPropertySheet:: SetWizardMode
 
-Sihirbaz olarak bir özellik sayfası kurar.
+Sihirbaz olarak bir özellik sayfası oluşturur.
 
 ```cpp
 void SetWizardMode();
@@ -818,11 +819,11 @@ void SetWizardMode();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sihirbaz özelliği sayfasının önemli bir özelliği, kullanıcının sekmeler yerine İleri veya Bitiş, Geri ve İptal düğmelerini kullanarak gezinmesidir.
+Sihirbaz Özellik sayfasının önemli özellikleri, kullanıcının sekmeler yerine Ileri veya son, geri ve Iptal düğmelerini kullanarak gezinmesine bağlıdır.
 
-`SetWizardMode` [DoModal'ı](#domodal)aramadan önce arayın. Aradıktan `SetWizardMode`sonra, `DoModal` ID_WIZFINISH (kullanıcı Finish düğmesiyle kapanırsa) veya IDCANCEL'ı iade edecektir.
+`SetWizardMode` [DoModal](#domodal)çağrılmadan önce çağırın. Çağrıldıktan sonra `SetWizardMode` , `DoModal` ID_WIZFINISH (Kullanıcı son düğme ile kapanırsa) veya IDCANCEL olarak döndürülür.
 
-`SetWizardMode`PSH_WIZARD bayrağını ayarlar.
+`SetWizardMode` PSH_WIZARD bayrağını ayarlar.
 
 ### <a name="example"></a>Örnek
 
@@ -830,9 +831,9 @@ Sihirbaz özelliği sayfasının önemli bir özelliği, kullanıcının sekmele
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Numune CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
-[MFC Numune CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek PROPDLG](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[MFC örnek CMNCTRL1](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek CMNCTRL2](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek PROPDLG](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek SNAPVW](../../overview/visual-cpp-samples.md)<br/>
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

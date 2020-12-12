@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _get_fmode'
 title: _get_fmode
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - file translation [C++], default mode
 - get_fmode function
 ms.assetid: 22ea70e2-b9b5-422d-b514-64f4beaea45c
-ms.openlocfilehash: 3e59e608f83874088b64d316c04053b94d8fbfdd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 56716b7e8c12c5a3de79098a8227be31148ae386
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909851"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303654"
 ---
 # <a name="_get_fmode"></a>_get_fmode
 
@@ -55,11 +56,11 @@ Geçerli varsayılan modla doldurulacak bir tamsayı işaretçisi: **_O_TEXT** v
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür; hatada hata kodu. *Pmode* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EINVAL**döndürür.
+Başarılıysa sıfır döndürür; hatada hata kodu. *Pmode* **null** ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EINVAL** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlevi [_fmode](../../c-runtime-library/fmode.md) genel değişkeninin değerini alır. Bu değişken, **_open**, **_pipe**, **fopen**ve [serbest açık](freopen-wfreopen.md)gibi alt düzey ve akış dosyası g/ç işlemleri için varsayılan dosya çevirisi modunu belirtir.
+İşlevi [_fmode](../../c-runtime-library/fmode.md) genel değişkeninin değerini alır. Bu değişken, **_open**, **_pipe**, **fopen** ve [serbest açık](freopen-wfreopen.md)gibi alt düzey ve akış dosyası g/ç işlemleri için varsayılan dosya çevirisi modunu belirtir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -67,7 +68,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_get_fmode**|\<Stdlib. h>|\<fcntl. h>|
+|**_get_fmode**|\<stdlib.h>|\<fcntl.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

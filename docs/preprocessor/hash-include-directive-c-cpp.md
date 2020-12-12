@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: #include yönergesi (C/C++)'
 title: '##include yönergesi (C/C++)'
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,21 +9,21 @@ helpviewer_keywords:
 - '#include directive'
 - include directive (#include)
 ms.assetid: 17067dc0-8db1-4f2d-b43e-ec12ecf83238
-ms.openlocfilehash: 0792f522427e5658de992969745878894fbd454d
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 491c6f06a6e2924c61ecd56dcb2ab2e5f4243512
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300448"
 ---
 # <a name="include-directive-cc"></a>#include yönergesi (C/C++)
 
 Önişlemci 'nin belirtilen bir dosyanın içeriğini, yönergenin göründüğü noktada kaynak programda görünmiş gibi vermesini söyler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#include** "*Path-spec*" \
-> **#include** *yol-spec* \<>
+> **#include**\<*path-spec*>
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -30,7 +31,7 @@ Sabit ve Makro tanımlarını içerme dosyaları halinde düzenleyebilir ve ard�
 
 *Path-spec* , isteğe bağlı olarak önceden bir dizin belirtimi olabilecek bir dosya adıdır. Dosya adı var olan bir dosyayı adı olmalıdır. *Path-spec* sözdizimi, programın derlendiği işletim sistemine bağlıdır.
 
-C++ [/Clr](../build/reference/clr-common-language-runtime-compilation.md)kullanılarak derlenen bir uygulamadaki derlemelere başvurma hakkında daha fazla bilgi için bkz. [#using](../preprocessor/hash-using-directive-cpp.md).
+[/Clr](../build/reference/clr-common-language-runtime-compilation.md)kullanılarak derlenen bir C++ uygulamasındaki derlemelere nasıl başvurulacağını hakkında bilgi için bkz. [#using](../preprocessor/hash-using-directive-cpp.md).
 
 Her iki sözdizimi biçimi de bu yönergenin, belirtilen içerme dosyasının tüm içeriğiyle değiştirilmesine neden olur. İki form arasındaki fark, yol tam olarak belirtilmediğinde Önişlemci 'nin üst bilgi dosyalarını arayacağı sıradır. Aşağıdaki tablo, iki sözdizimi formu arasındaki farkı gösterir.
 
@@ -39,11 +40,11 @@ Her iki sözdizimi biçimi de bu yönergenin, belirtilen içerme dosyasının t�
 |Alıntılanmış form|Önişlemci, içerme dosyalarını şu sırayla arar:<br/><br/> 1) **#include** ifadesini içeren dosyayla aynı dizinde.<br/><br/> 2) Şu anda açılan içerme dosyalarının dizinlerinde, açıldıkları ters sırada. Arama, üst öğe ekleme dosyası dizininde başlar ve herhangi bir doğru üst öğe içerme dosyasının dizinleriyle devam eder.<br/><br/> 3) her **/ı** derleyici seçeneği tarafından belirtilen yol üzerinde.<br/><br/> 4), ıNCLUDE ortam değişkeni tarafından belirtilen yollar üzerinde.|
 |Açılı ayraç formu|Önişlemci, içerme dosyalarını şu sırayla arar:<br/><br/> 1) her **/ı** derleyici seçeneği tarafından belirtilen yol üzerinde.<br/><br/> 2) komut satırında derleme yapıldığında, ıNCLUDE ortam değişkeni tarafından belirtilen yollar gösterilir.|
 
-Önişlemci, belirtilen ada sahip bir dosya bulduğu anda aramayı durduruyor. Çift tırnak işaretleri (`" "`) arasında ekleme dosyası için tamamen, belirsiz bir yol belirtimi eklerseniz, Önişlemci yalnızca bu yol belirtimini arar ve standart dizinleri yoksayar.
+Önişlemci, belirtilen ada sahip bir dosya bulduğu anda aramayı durduruyor. Çift tırnak işaretleri () arasında ekleme dosyası için tamamen, belirsiz bir yol belirtimi eklerseniz `" "` , Önişlemci yalnızca bu yol belirtimini arar ve standart dizinleri yoksayar.
 
-Çift tırnak işareti içine alınmış dosya adı tamamlanmamış bir yol belirtimi ise, önişlemci önce "üst" dosyanın dizininde arama yapar. Bir üst dosya **#include** yönergesini içeren dosyadır. Örneğin, *FILE1*adlı bir dosyaya *dosya2* adlı bir dosya eklerseniz, *FILE1* üst dosyadır.
+Çift tırnak işareti içine alınmış dosya adı tamamlanmamış bir yol belirtimi ise, önişlemci önce "üst" dosyanın dizininde arama yapar. Bir üst dosya **#include** yönergesini içeren dosyadır. Örneğin, *FILE1* adlı bir dosyaya *dosya2* adlı bir dosya eklerseniz, *FILE1* üst dosyadır.
 
-İçerme dosyaları "iç içe geçmiş" olabilir: **#İnclude** yönergesi, başka bir **#include** yönergesi tarafından adlandırılan dosyada görünebilir. Örneğin, *dosya2* , *File3*içerebilir. Bu durumda *FILE1* , *dosya2*'in üst öğesi olmaya devam eder, ancak bu, *File3*'in "bir üst öğesi" olacaktır.
+İçerme dosyaları "iç içe" olabilir: bir **#include** yönergesi, başka bir **#include** yönergesi tarafından adlandırılan bir dosyada görünebilir. Örneğin, *dosya2* , *File3* içerebilir. Bu durumda *FILE1* , *dosya2*'in üst öğesi olmaya devam eder, ancak bu, *File3*'in "bir üst öğesi" olacaktır.
 
 Dahil etme dosyaları iç içe olduğunda ve komut satırında derleme gerçekleştiğinde, Dizin arama ana dosyanın dizinlerinde başlar. Ardından, herhangi bir alt üst dosyanın dizinlerinde ilerler. Diğer bir deyişle, arama, işlenmekte olan kaynağı içeren dizine göre başlar. Dosya bulunamazsa, arama [/ı (ek içerme dizinleri)](../build/reference/i-additional-include-directories.md) derleyici seçeneği tarafından belirtilen dizinlere gider. Son olarak, ıNCLUDE ortam değişkeni tarafından belirtilen dizinler aranır.
 
@@ -67,9 +68,9 @@ Bu örnek, DEFS tarafından belirtilen dosyanın içeriğini ekler. Kaynak progr
 
 Ekleme dosyalarının iç içe geçirilmesi 10 düzeye kadar devam edebilir. İç içe **#include** işlendiğinde, Önişlemci kapsayan içerme dosyasını özgün kaynak dosyasına eklemeye devam eder.
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Dahil edilen kaynak dosyaları bulmak için önişlemci ilk olarak **/ı** derleyici seçeneği tarafından belirtilen dizinleri arar. **/I** seçeneği yoksa veya başarısız olursa, ön işlemci, köşeli parantez içinde herhangi bir içerme dosyasını bulmak için INCLUDE ortam değişkenini kullanır. INCLUDE ortam değişkeni ve **/ı** derleyici seçeneği, noktalı virgülle ( **;** ) ayırarak birden çok yol içerebilir. **/İ** seçeneğinin bir parçası olarak birden fazla dizin GÖRÜNÜRSE veya INCLUDE ortam değişkeni içinde, Önişlemci bunları göründükleri sırada arar.
+Dahil edilen kaynak dosyaları bulmak için önişlemci ilk olarak **/ı** derleyici seçeneği tarafından belirtilen dizinleri arar. **/I** seçeneği yoksa veya başarısız olursa, ön işlemci, köşeli parantez içinde herhangi bir içerme dosyasını bulmak için INCLUDE ortam değişkenini kullanır. INCLUDE ortam değişkeni ve **/ı** derleyici seçeneği, noktalı virgülle (**;**) ayırarak birden çok yol içerebilir. **/İ** seçeneğinin bir parçası olarak birden fazla dizin GÖRÜNÜRSE veya INCLUDE ortam değişkeni içinde, Önişlemci bunları göründükleri sırada arar.
 
 Örneğin, komut
 
@@ -77,7 +78,7 @@ Dahil edilen kaynak dosyaları bulmak için önişlemci ilk olarak **/ı** derle
 CL /ID:\MSVC\INCLUDE MYPROG.C
 ```
 
-Önişlemci 'nin D:\MSVC\INCLUDE\ dizinini STDIO gibi içerme dosyalarını aramasına neden olur. Olsun. Komutlar
+Önişlemci 'nin D:\MSVC\INCLUDE\ dizinini STDIO. H gibi içerme dosyalarını aramasına neden olur. Komutlar
 
 ```cmd
 SET INCLUDE=D:\MSVC\INCLUDE
@@ -88,11 +89,11 @@ aynı etkiye sahiptir. Her iki arama kümesi de başarısız olursa, önemli bir
 
 Dosya adı, iki nokta içeren bir yol içeren bir içerme dosyası için tam olarak belirtildiyse (örneğin, F:\MSVC\SPECIAL\INCL\TEST). H), Önişlemci yolu izler.
 
-Olarak `#include "path-spec"`belirtilen içerme dosyaları için Dizin arama, üst dosyanın diziniyle başlar ve ardından herhangi bir alt üst dosyanın dizinlerine ilerler. Diğer bir deyişle, arama işlemi işlenen **#include** yönergesini içeren kaynak dosyayı içeren dizine göre başlar. Herhangi bir üst öğe dosyası yoksa ve dosya bulunmazsa arama, dosya adı açılı ayraçlar içine alınmış gibi devam eder.
+Olarak belirtilen içerme dosyaları için `#include "path-spec"` Dizin arama, üst dosyanın diziniyle başlar ve ardından herhangi bir alt üst dosyanın dizinlerine ilerler. Diğer bir deyişle, arama işlemi işlenen **#include** yönergesini içeren kaynak dosyayı içeren dizine göre başlar. Herhangi bir üst öğe dosyası yoksa ve dosya bulunmazsa arama, dosya adı açılı ayraçlar içine alınmış gibi devam eder.
 
 **SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)\
-[/İ (ek ekleme dizinleri)](../build/reference/i-additional-include-directories.md)
+[/I (Ek içeren dizinler)](../build/reference/i-additional-include-directories.md)

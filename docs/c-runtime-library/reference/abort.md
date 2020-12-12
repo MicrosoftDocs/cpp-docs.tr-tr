@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: iptal'
 title: durdur
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - aborting current process
 - abort function
 - processes, aborting
-ms.openlocfilehash: f330d53df5af0efa41f4e3b3bb843bdc95210c70
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a1733cb99fca332a97f59540833d5c48eb258a4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910913"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303944"
 ---
 # <a name="abort"></a>durdur
 
@@ -41,7 +42,7 @@ Geçerli işlemi iptal eder ve bir hata kodu döndürür.
 > [!NOTE]
 > Test veya hata ayıklama senaryoları dışında Microsoft Store bir uygulama veya Evrensel Windows Platformu (UWP) uygulamasını kapatmak için bu yöntemi kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya Kullanıcı arabirimi yollarına [Microsoft Store ilkelerine](/legal/windows/agreements/store-policies)göre izin verilmez. Daha fazla bilgi için bkz. [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void abort( void );
@@ -49,13 +50,13 @@ void abort( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Abort** , çağırma işlemine denetim döndürmüyor. Varsayılan olarak, bir durdurma sinyali işleyicisini denetler ve bir ayarlanırsa, `SIGABRT` yükseltir. Ardından **iptal** , geçerli işlemi sonlandırır ve üst işleme bir çıkış kodu döndürür.
+**Abort** , çağırma işlemine denetim döndürmüyor. Varsayılan olarak, bir durdurma sinyali işleyicisini denetler ve `SIGABRT` bir ayarlanırsa, yükseltir. Ardından **iptal** , geçerli işlemi sonlandırır ve üst işleme bir çıkış kodu döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 **Microsoft'a Özgü**
 
-Varsayılan olarak, bir uygulama hata ayıklama çalışma zamanı kitaplığıyla oluşturulduğunda, **durdurma** yordamı oluşturulmadan önce `SIGABRT` bir hata mesajı görüntüler. Konsol modunda çalışan konsol uygulamaları için ileti gönderilir `STDERR`. Pencereli modda çalışan Windows Masaüstü uygulamaları ve konsol uygulamaları iletiyi bir ileti kutusunda görüntüler. İletiyi bastırmak için, `_WRITE_ABORT_MSG` bayrağı temizlemek için [_set_abort_behavior](set-abort-behavior.md) kullanın. Görünen ileti, kullanılan çalışma zamanı ortamının sürümüne bağlıdır. Visual C++ en son sürümleri kullanılarak oluşturulan uygulamalar için, ileti şuna benzer:
+Varsayılan olarak, bir uygulama hata ayıklama çalışma zamanı kitaplığıyla oluşturulduğunda, **durdurma** yordamı oluşturulmadan önce bir hata mesajı görüntüler `SIGABRT` . Konsol modunda çalışan konsol uygulamaları için ileti gönderilir `STDERR` . Pencereli modda çalışan Windows Masaüstü uygulamaları ve konsol uygulamaları iletiyi bir ileti kutusunda görüntüler. İletiyi bastırmak için, bayrağı temizlemek için [_set_abort_behavior](set-abort-behavior.md) kullanın `_WRITE_ABORT_MSG` . Görünen ileti, kullanılan çalışma zamanı ortamının sürümüne bağlıdır. Visual C++ en son sürümleri kullanılarak oluşturulan uygulamalar için, ileti şuna benzer:
 
 > R6010-Abort () çağrıldı
 
@@ -63,11 +64,11 @@ C çalışma zamanı kitaplığı 'nın önceki sürümlerinde bu ileti görünt
 
 > Bu uygulama, çalışma zamanının olağan dışı bir şekilde sonlanmasına istedi. Daha fazla bilgi için lütfen uygulamanın destek ekibine başvurun.
 
-Program hata ayıklama modunda derlendiğinde, ileti kutusu **iptal**etme, **yeniden deneme**veya **yoksayma**seçeneklerini görüntüler. Kullanıcı **iptal**' i seçerse program hemen sonlanır ve 3 çıkış kodu döndürür. Kullanıcı **yeniden dene**' yi seçerse, varsa, tam zamanında hata ayıklama için bir hata ayıklayıcı çağırılır. Kullanıcı **Yoksay**' ı seçerse, **Durdur** normal işlemeye devam eder.
+Program hata ayıklama modunda derlendiğinde, ileti kutusu **iptal** etme, **yeniden deneme** veya **yoksayma** seçeneklerini görüntüler. Kullanıcı **iptal**' i seçerse program hemen sonlanır ve 3 çıkış kodu döndürür. Kullanıcı **yeniden dene**' yi seçerse, varsa, tam zamanında hata ayıklama için bir hata ayıklayıcı çağırılır. Kullanıcı **Yoksay**' ı seçerse, **Durdur** normal işlemeye devam eder.
 
-Hem perakende hem de hata ayıklama yapılarında, **iptal** etme sinyali işleyicisinin ayarlanmış olup olmadığını denetler. Varsayılan olmayan bir sinyal işleyicisi ayarlandıysa, çağrıları `raise(SIGABRT)` **iptal** edin. Bir durdurma [signal](signal.md) sinyali işleyicisi işlevini `SIGABRT` sinyalle ilişkilendirmek için sinyal işlevini kullanın. Özel eylemleri gerçekleştirebilir — Örneğin, kaynakları veya günlük bilgilerini temizleyebilir — ve uygulamayı işleyici işlevindeki kendi hata kodunuzla sonlandırabilirsiniz. Özel bir sinyal işleyicisi tanımlanmamışsa, **Abort** , `SIGABRT` sinyali oluşturmaz.
+Hem perakende hem de hata ayıklama yapılarında, **iptal** etme sinyali işleyicisinin ayarlanmış olup olmadığını denetler. Varsayılan olmayan bir sinyal işleyicisi ayarlandıysa, çağrıları **iptal** edin `raise(SIGABRT)` . Bir durdurma sinyali işleyicisi işlevini sinyalle ilişkilendirmek için [sinyal](signal.md) işlevini kullanın `SIGABRT` . Özel eylemleri gerçekleştirebilir — Örneğin, kaynakları veya günlük bilgilerini temizleyebilir — ve uygulamayı işleyici işlevindeki kendi hata kodunuzla sonlandırabilirsiniz. Özel bir sinyal işleyicisi tanımlanmamışsa, **Abort** , `SIGABRT` sinyali oluşturmaz.
 
-Varsayılan olarak, masaüstü veya konsol uygulamalarının hata ayıklama olmayan Derlemeleriyle, **Durdur** ' u daha sonra hataları Microsoft 'a bildirmek Için Windows hata bildirimi hizmet mekanizmasını (eskiden Dr. Watson olarak biliniyordu) çağırır. Bu davranış, `_set_abort_behavior` `_CALL_REPORTFAULT` bayrağı çağırarak veya maskeleyerek etkinleştirilebilir veya devre dışı bırakılabilir. Bayrak ayarlandığında, Windows "bir sorun" programın düzgün çalışmayı durdurmasına neden oldu "gibi metin içeren bir ileti kutusu görüntüler. Kullanıcı hata **ayıklama** düğmesi ile bir hata ayıklayıcı çağırmayı seçebilir veya uygulamayı işletim sistemi tarafından tanımlanan bir hata koduyla sonlandırmak Için **programı kapat** düğmesini seçebilirsiniz.
+Varsayılan olarak, masaüstü veya konsol uygulamalarının hata ayıklama olmayan Derlemeleriyle, **Durdur** ' u daha sonra hataları Microsoft 'a bildirmek Için Windows hata bildirimi hizmet mekanizmasını (eskiden Dr. Watson olarak biliniyordu) çağırır. Bu davranış `_set_abort_behavior` , bayrağı çağırarak veya maskeleyerek etkinleştirilebilir veya devre dışı bırakılabilir `_CALL_REPORTFAULT` . Bayrak ayarlandığında, Windows "bir sorun" programın düzgün çalışmayı durdurmasına neden oldu "gibi metin içeren bir ileti kutusu görüntüler. Kullanıcı hata **ayıklama** düğmesi ile bir hata ayıklayıcı çağırmayı seçebilir veya uygulamayı işletim sistemi tarafından tanımlanan bir hata koduyla sonlandırmak Için **programı kapat** düğmesini seçebilirsiniz.
 
 Windows hata bildirimi işleyicisi çağrılmadığından, çıkış kodu 3 ile işlemi sonlandırmak için [_exit](exit-exit-exit.md) çağrıları **iptal** edin ve denetimi üst işleme veya işletim sistemine döndürür. `_exit`akış arabelleklerini temizlemez veya `atexit` / `_onexit` işleme yapmaz.
 
@@ -81,7 +82,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**durdurulmaya**|\<Process. h> veya \<Stdlib. h>|
+|**durdur**|\<process.h> veya \<stdlib.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -123,11 +124,11 @@ File could not be opened: No such file or directory
 
 [abort Kullanma](../../cpp/using-abort.md)<br/>
 [abort İşlevi](../../c-language/abort-function-c.md)<br/>
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
-[yükseltmek](raise.md)<br/>
+[tetikle](raise.md)<br/>
 [sinyal](signal.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [_DEBUG](../../c-runtime-library/debug.md)<br/>
 [_set_abort_behavior](set-abort-behavior.md)

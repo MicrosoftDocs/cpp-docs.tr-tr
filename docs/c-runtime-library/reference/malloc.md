@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: malloc'
 title: malloc
 ms.date: 4/2/2020
 api_name:
@@ -27,18 +28,18 @@ helpviewer_keywords:
 - malloc function
 - memory allocation
 ms.assetid: 144fcee2-be34-4a03-bb7e-ed6d4b99eea0
-ms.openlocfilehash: a093dbdbc4849b1c2f3d86e85a5e2b25a7b988e2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8026cf24ee49999026c58787b83b2c8c0a238a2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836666"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299793"
 ---
 # <a name="malloc"></a>malloc
 
 Bellek bloklarını ayırır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 void *malloc(
@@ -59,9 +60,9 @@ Ayrılacak bayt sayısı.
 
 **Malloc** işlevi en az bayt *boyutundaki* bir bellek bloğunu ayırır. Bir blok, hizalama ve bakım bilgileri için gereken alan nedeniyle *Boyut* baytından daha büyük olabilir.
 
-bellek ayırma **başarısız olursa veya** istenen bellek miktarı **_HEAP_MAXREQ**aşarsa, **malloc** olarak **errno** değeri. Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+bellek ayırma **başarısız olursa veya** istenen bellek miktarı **_HEAP_MAXREQ** aşarsa, **malloc** olarak **errno** değeri. Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Başlangıç kodu **_environ**, *envp*ve *argv* değişkenleri için depolama alanı ayırmak üzere **malloc** kullanır. Aşağıdaki işlevler ve geniş karakter karşılıkları de **malloc**öğesini çağırır.
+Başlangıç kodu **_environ**, *envp* ve *argv* değişkenleri için depolama alanı ayırmak üzere **malloc** kullanır. Aşağıdaki işlevler ve geniş karakter karşılıkları de **malloc** öğesini çağırır.
 
 :::row:::
    :::column span="":::
@@ -112,7 +113,7 @@ Başlangıç kodu **_environ**, *envp*ve *argv* değişkenleri için depolama al
    :::column-end:::
 :::row-end:::
 
-C++ [_set_new_mode](set-new-mode.md) işlevi, **malloc**için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılan değeri geçersiz kılmak için, `_set_new_mode(1)` programınızda erken çağırın veya NEWMODE ile bağlayın. OBJ (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
+C++ [_set_new_mode](set-new-mode.md) işlevi, **malloc** için yeni işleyici modunu ayarlar. Yeni işleyici modu, hata durumunda **malloc** 'ın [_set_new_handler](set-new-handler.md)tarafından ayarlanan yeni işleyici yordamını çağırıp çağırmayacağını gösterir. Varsayılan olarak, **malloc** bellek ayırma hatası üzerine yeni işleyici yordamını çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz, böylece **malloc** bellek ayıramadığında, **malloc** yeni işleyici yordamını **`new`** aynı nedenden dolayı başarısız olduğunda işlecin yaptığı şekilde çağırır. Varsayılan değeri geçersiz kılmak için, `_set_new_mode(1)` programınızda erken çağırın veya NEWMODE ile bağlayın. OBJ (bkz. [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
 
 Uygulama, C çalışma zamanı kitaplıklarının hata ayıklama sürümüyle bağlantılı olduğunda, **malloc** [_malloc_dbg](malloc-dbg.md)olarak çözümlenir. Hata ayıklama işlemi sırasında yığının nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 

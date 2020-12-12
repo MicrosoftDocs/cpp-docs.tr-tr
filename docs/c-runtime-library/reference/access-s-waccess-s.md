@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _access_s _waccess_s'
 title: _access_s, _waccess_s
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _access_s function
 - _waccess_s function
 ms.assetid: fb3004fc-dcd3-4569-8b27-d817546e947e
-ms.openlocfilehash: c3893b3d78a2c142ffc9e10eb6bbf299c5fddb9b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cf46f3996005584a8f17b25baac60b9c5683ed19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916904"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303849"
 ---
 # <a name="_access_s-_waccess_s"></a>_access_s, _waccess_s
 
@@ -70,7 +71,7 @@ Dosya veya dizin yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosyada verilen mod varsa her işlev 0 döndürür. Adlandırılmış dosya yoksa veya verilen modda erişilebilir değilse işlev bir hata kodu döndürür. Bu durumda, işlev kümeden aşağıdaki gibi bir hata kodu döndürür ve ayrıca aynı değere ayarlanır `errno` .
+Dosyada verilen mod varsa her işlev 0 döndürür. Adlandırılmış dosya yoksa veya verilen modda erişilebilir değilse işlev bir hata kodu döndürür. Bu durumda, işlev kümeden aşağıdaki gibi bir hata kodu döndürür ve ayrıca `errno` aynı değere ayarlanır.
 
 |errno değeri|Koşul|
 |-|-|
@@ -82,7 +83,7 @@ Daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dosyalarla birlikte kullanıldığında, **_access_s** işlevi belirtilen dosyanın mevcut olup olmadığını ve *mod*değeri tarafından belirtilen şekilde erişilebilir olup olmayacağını belirler. Dizinler ile kullanıldığında, **_access_s** yalnızca belirtilen dizinin mevcut olup olmadığını belirler. Windows 2000 ve sonraki işletim sistemlerinde, tüm dizinlerin okuma ve yazma erişimi vardır.
+Dosyalarla birlikte kullanıldığında, **_access_s** işlevi belirtilen dosyanın mevcut olup olmadığını ve *mod* değeri tarafından belirtilen şekilde erişilebilir olup olmayacağını belirler. Dizinler ile kullanıldığında, **_access_s** yalnızca belirtilen dizinin mevcut olup olmadığını belirler. Windows 2000 ve sonraki işletim sistemlerinde, tüm dizinlerin okuma ve yazma erişimi vardır.
 
 |mod değeri|İçin dosyayı denetler|
 |----------------|---------------------|
@@ -93,9 +94,9 @@ Dosyalarla birlikte kullanıldığında, **_access_s** işlevi belirtilen dosyan
 
 Dosyayı okuma veya yazma izni, bir dosyayı açabildiğinizden emin olmak için yeterli değil. Örneğin, bir dosya başka bir işlem tarafından kilitlenmişse, **_access_s** 0 döndürdüğünden bile erişilebilir olmayabilir.
 
-**_waccess_s** , **_waccess_s** *yol* bağımsız değişkeninin geniş karakterli bir dize olduğu **_access_s**geniş karakterli bir sürümüdür. Aksi takdirde, **_waccess_s** ve **_access_s** aynı şekilde davranır.
+**_waccess_s** , **_waccess_s** *yol* bağımsız değişkeninin geniş karakterli bir dize olduğu **_access_s** geniş karakterli bir sürümüdür. Aksi takdirde, **_waccess_s** ve **_access_s** aynı şekilde davranır.
 
-Bu işlevler, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler öğesini olarak `errno` `EINVAL` ayarlar ve döndürür `EINVAL`.
+Bu işlevler, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler öğesini `errno` olarak ayarlar `EINVAL` ve döndürür `EINVAL` .
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -109,8 +110,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_access_s**|\<GÇ. h>|\<errno. h>|
-|**_waccess_s**|\<wchar. h> veya \<GÇ. h>|\<errno. h>|
+|**_access_s**|\<io.h>|\<errno.h>|
+|**_waccess_s**|\<wchar.h> veya \<io.h>|\<errno.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -158,7 +159,7 @@ File crt_access_s.c does not have write permission.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_access, _waccess](access-waccess.md)<br/>
 [_chmod, _wchmod](chmod-wchmod.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>

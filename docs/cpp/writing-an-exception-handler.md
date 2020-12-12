@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: özel durum Işleyicisi yazma'
 title: Özel Durum İşleyicisi Yazma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - structured exception handling [C++], exception handlers
 - exception handling [C++], exception handlers
 ms.assetid: 71473fee-f773-4a34-bf12-82a3af79579c
-ms.openlocfilehash: 201dcaa6a90584d1f9535df11d5722a37bdceb89
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 174ab77240fc405e7c1175806167b6ec68f08c82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302809"
 ---
 # <a name="writing-an-exception-handler"></a>Özel Durum İşleyicisi Yazma
 
@@ -28,7 +29,7 @@ ms.locfileid: "80187290"
 
 - [Donanım özel durumları](../cpp/hardware-exceptions.md)
 
-- [Özel durum işleyicileriyle ilgili kısıtlamalar](../cpp/restrictions-on-exception-handlers.md)
+- [Özel durum işleyicileri kısıtlamaları](../cpp/restrictions-on-exception-handlers.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

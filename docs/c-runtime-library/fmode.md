@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fmode'
 title: _fmode
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - fmode function
 - _fmode function
 ms.assetid: ac6df9eb-e5cc-4c54-aff3-373c21983118
-ms.openlocfilehash: a41d665eab50203fc3bb176f8bb1bbc30737e844
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c4e7932369a2ad63b5498078e46cd5610b679ee0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303937"
 ---
-# <a name="fmode"></a>_fmode
+# <a name="_fmode"></a>_fmode
 
-`_fmode` Değişkenini metin veya ikili çeviri için varsayılan dosya çevirisi modu ayarlar. Bu genel değişkeni daha güvenli işlevsel sürümleri için kullanım dışı [_get_fmode](../c-runtime-library/reference/get-fmode.md) ve [_set_fmode](../c-runtime-library/reference/set-fmode.md), hangi kullanılmalıdır genel değişken yerine. Stdlıb.h içinde şu şekilde bildirilir.
+`_fmode`Değişken, metin veya ikili çeviri için varsayılan dosya çeviri modunu ayarlar. Bu genel değişken, genel değişken yerine kullanılması gereken [_get_fmode](../c-runtime-library/reference/get-fmode.md) ve [_set_fmode](../c-runtime-library/reference/set-fmode.md)daha güvenli işlevsel sürümler için kullanımdan kaldırılmıştır. Aşağıdaki gibi Stdlib. h içinde bildirilmiştir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 extern int _fmode;
@@ -28,18 +29,18 @@ extern int _fmode;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan ayar `_fmode` olduğu `_O_TEXT` metin modunda çeviri için. `_O_BINARY` ikili mod ayardır.
+Varsayılan ayarı, `_fmode` `_O_TEXT` metin modu çevirisi içindir. `_O_BINARY` , ikili mod ayarıdır.
 
-Değerini değiştirebilir `_fmode` üç yolla:
+Değerini `_fmode` üç şekilde değiştirebilirsiniz:
 
-- Binmode.obj bağlantıyla. Bu ilk ayarını değiştirir `_fmode` için `_O_BINARY`, hariç tüm dosyalar neden `stdin`, `stdout`, ve `stderr` İkili modda açılacak.
+- Binmode. obj ile bağlayın. Bu, ' nin başlangıç ayarını olarak değiştirir, ve,, `_fmode` `_O_BINARY` ve dışındaki tüm dosyalara `stdin` `stdout` `stderr` ikili modda açılabilir.
 
-- Çağrı yapmak `_get_fmode` veya `_set_fmode` almak veya ayarlamak için `_fmode` genel değişkeni, sırasıyla.
+- `_get_fmode` `_set_fmode` Genel değişkeni sırasıyla almak veya ayarlamak için veya ' a çağrı yapın `_fmode` .
 
-- Değiştirin `_fmode` programınızda ayarı tarafından doğrudan.
+- Değerini `_fmode` programınızda ayarlayarak doğrudan değerini değiştirin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Global Değişkenler](../c-runtime-library/global-variables.md)<br/>
+[Genel değişkenler](../c-runtime-library/global-variables.md)<br/>
 [_get_fmode](../c-runtime-library/reference/get-fmode.md)<br/>
 [_set_fmode](../c-runtime-library/reference/set-fmode.md)

@@ -1,4 +1,5 @@
 ---
+description: ': Atol, _atol_l, _wtol _wtol_l hakkında daha fazla bilgi edinin'
 title: atol, _atol_l, _wtol, _wtol_l
 ms.date: 4/2/2020
 api_name:
@@ -51,18 +52,18 @@ helpviewer_keywords:
 - wtol function
 - _wtol function
 ms.assetid: cedfc21c-2d64-4e9c-bd04-bdf60b12db46
-ms.openlocfilehash: ffb318a53b34e1d69e533b05f80e942c945e1af7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 99830a76d3392af71cf3f55992a4207dc3b6ce18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218734"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303693"
 ---
 # <a name="atol-_atol_l-_wtol-_wtol_l"></a>atol, _atol_l, _wtol, _wtol_l
 
 Bir dizeyi uzun tamsayıya Dönüştür.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 long atol(
@@ -86,14 +87,14 @@ long _wtol_l(
 *üstbilgisine*<br/>
 Dönüştürülecek dize.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Her işlev **`long`** , giriş karakterlerinin sayı olarak yorumlanarak üretilen değeri döndürür. Giriş Bu türden bir değere dönüştürülemiyorsa, dönüş değeri **Atol** Için 0l olur.
 
-Büyük pozitif tamsayı değerleriyle taşma durumunda, **Atol** **LONG_MAX**döndürür; büyük negatif tamsayı değerleriyle taşma durumunda **LONG_MIN** döndürülür. Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
+Büyük pozitif tamsayı değerleriyle taşma durumunda, **Atol** **LONG_MAX** döndürür; büyük negatif tamsayı değerleriyle taşma durumunda **LONG_MIN** döndürülür. Tüm Aralık dışı durumlarda **errno** , **ERANGE** olarak ayarlanır. Geçirilen parametre **null** Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -180,7 +181,7 @@ Overflow condition occurred.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

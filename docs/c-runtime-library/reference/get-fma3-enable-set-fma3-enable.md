@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _get_FMA3_enable _set_FMA3_enable'
 title: _get_FMA3_enable, _set_FMA3_enable
 ms.date: 04/05/2018
 api_name:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - _get_FMA3_enable
 - _set_FMA3_enable
 ms.assetid: 4c1dc4bc-e86b-451b-9211-5a2ba6c98ee4
-ms.openlocfilehash: dee75bf5b16b5fe5b619444f7f2736010bb42a84
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: d43b5e4e6db652c87bcddf9dd3c91371dc038f33
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303680"
 ---
 # <a name="_get_fma3_enable-_set_fma3_enable"></a>_get_FMA3_enable, _set_FMA3_enable
 
@@ -61,11 +62,11 @@ FMA3 uygulamaları farklı algoritmalar kullandığından, FMA3 uygulamaları et
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_set_FMA3_enable**, **_get_FMA3_enable**| C: \<Math. h ><br />C++: \<cmath > veya \<Math. h >|
+|**_set_FMA3_enable**, **_get_FMA3_enable**| , \<math.h><br />C++: \<cmath> veya \<math.h>|
 
 **_Set_FMA3_enable** ve **_get_FMA3_enable** işlevleri Microsoft 'a özgüdür. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Kayan Nokta Geçiş Sorunları](../../porting/floating-point-migration-issues.md)<br/>
+[Kayan nokta geçiş sorunları](../../porting/floating-point-migration-issues.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: uyumlu pragma'
 title: conform pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -9,39 +10,39 @@ helpviewer_keywords:
 - forScope conform pragma
 - pragmas, conform
 ms.assetid: 71b3e174-c53c-4bfc-adf3-af39b1554191
-ms.openlocfilehash: 816ff85bb19f549c6ea072073bd89fcd503545f2
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: bb9f62194196ea32e5f3326116894ea56ef83611
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300768"
 ---
 # <a name="conform-pragma"></a>conform pragması
 
-**C++Belirli**
+**C++ özel**
 
 [/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneğinin çalışma zamanı davranışını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#pragma uyumlu (** *ad* [ **, show** ] [ **,** { **on** | **off** }] [[ **,** { **Push** | **pop** }] [ **,** *tanımlayıcı* [ **,** { **on** **kapalı}** ]  |  ] ] **)**
+> **#pragma uyumlu (** *ad* [ **, gösterme** ] [ **,** { **on**  |  **kapalı** }] [[ **,** { **Push**  |  **pop** }] [ **,** *tanımlayıcı* [ **,** { **on**  |  **off** }]]] **)**
 
 ### <a name="parameters"></a>Parametreler
 
 *ada*\
-Değiştirilecek derleyici seçeneğinin adını belirtir. Geçerli tek *ad* `forScope`.
+Değiştirilecek derleyici seçeneğinin adını belirtir. Geçerli tek *ad* `forScope` .
 
 **göster**\
-Seçim Geçerli *adın* (true veya false) derleme sırasında bir uyarı mesajı aracılığıyla görüntülenmesine neden olur. Örneğin: `#pragma conform(forScope, show)`.
+Seçim Geçerli *adın* (true veya false) derleme sırasında bir uyarı mesajı aracılığıyla görüntülenmesine neden olur. Örneğin, `#pragma conform(forScope, show)`.
 
 **Açık**, **kapalı**\
 Seçim *Name* ayarının **on** olarak ayarlanması [/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneğini sağlar. Varsayılan değer **kapalıdır**.
 
 **hareketle**\
-Seçim *Adın* geçerli değerini iç derleyici yığınına iter. *Tanımlayıcıyı*belirtirseniz, bir *adın* yığına itilmesi için **Açık** veya **kapalı** değerini belirtebilirsiniz. Örneğin: `#pragma conform(forScope, push, myname, on)`.
+Seçim *Adın* geçerli değerini iç derleyici yığınına iter. *Tanımlayıcıyı* belirtirseniz, bir *adın* yığına itilmesi için **Açık** veya **kapalı** değerini belirtebilirsiniz. Örneğin, `#pragma conform(forScope, push, myname, on)`.
 
 **cağımız**\
-Seçim *Ad* değerini, iç derleyici yığınının en üstünde bulunan değere ayarlar ve sonra yığını açılır. Tanımlayıcı, **pop**ile belirtilirse, *tanımlayıcı*içeren kayıt bulunana kadar yığın geri alınır; bu da silinecek. yığındaki bir sonraki kayıttaki *ad* için geçerli değer, *ad*için yeni bir değer haline gelir. Yığın üzerinde bir kayıtta olmayan bir *tanımlayıcı* içeren **pop** belirtirseniz, **pop** yok sayılır.
+Seçim *Ad* değerini, iç derleyici yığınının en üstünde bulunan değere ayarlar ve sonra yığını açılır. Tanımlayıcı, **pop** ile belirtilirse, *tanımlayıcı* içeren kayıt bulunana kadar yığın geri alınır; bu da silinecek. yığındaki bir sonraki kayıttaki *ad* için geçerli değer, *ad* için yeni bir değer haline gelir. Yığın üzerinde bir kayıtta olmayan bir *tanımlayıcı* içeren **pop** belirtirseniz, **pop** yok sayılır.
 
 *Tanımlayıcısını*\
 Seçim **Push** veya **pop** komutuna eklenebilir. *Tanımlayıcı* kullanılıyorsa, bir **Açık** veya **kapalı** belirticisi de kullanılabilir.

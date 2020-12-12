@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CProgressCtrl Class'
 title: CProgressCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-ms.openlocfilehash: eda19ca2b94978201806e60d2ae8399e00e13f1f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: f5bd1bcae041d6bd61b715275b232fc5536cba2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561524"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301418"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 
@@ -191,7 +192,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 İlerleme çubuğu denetiminin stilini belirtir. Windows SDK [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) 'ta açıklanan pencere stillerinin herhangi bir birleşimini uygulayın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.
@@ -279,7 +280,7 @@ void GetRange(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, alt ve üst limitlerin değerlerini sırasıyla *nLower* ve *nUpper*tarafından başvurulan tamsayılara kopyalar.
+Bu işlev, alt ve üst limitlerin değerlerini sırasıyla *nLower* ve *nUpper* tarafından başvurulan tamsayılara kopyalar.
 
 ### <a name="example"></a>Örnek
 

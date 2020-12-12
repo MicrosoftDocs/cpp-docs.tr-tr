@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Genel Temsilciler (C++/CLı)'
 title: Genel Temsilciler (C++/CLI)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - generic delegates
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
-ms.openlocfilehash: 980beb21325e78baa9c6f3691f7b814c5266b79a
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: c3ce8f27d0a16d84774f3eeafbd5668384e3cf17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301756"
 ---
 # <a name="generic-delegates-ccli"></a>Genel Temsilciler (C++/CLI)
 
 Temsilcilerle genel tür parametreleri kullanabilirsiniz. Temsilciler hakkında daha fazla bilgi için bkz. [Temsilci (c++/CLI ve c++/cx)](delegate-cpp-component-extensions.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [attributes]

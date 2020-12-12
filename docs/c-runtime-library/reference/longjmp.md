@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: longjmp'
 title: longjmp
 ms.date: 08/14/2018
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - restoring stack environment and execution locale
 - longjmp function
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
-ms.openlocfilehash: 4f737818afe7136262362e4fe996745064568758
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bfcbac2ea54e167f65f0d303e08d6450e53ff0e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299988"
 ---
 # <a name="longjmp"></a>longjmp
 
 Bir çağrı tarafından ayarlanan yığın ortamını ve yürütme yerel ayarını geri yükler `setjmp` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 void longjmp(
@@ -50,12 +51,12 @@ void longjmp(
 *env*<br/>
 Ortamın depolandığı değişken.
 
-*deeri*<br/>
+*değer*<br/>
 Çağrıya döndürülecek değer `setjmp` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Longjmp** işlevi, daha önce *env* tarafından daha önce kaydedilen bir yığın ortamını ve yürütme yerel ayarını geri yükler `setjmp` . `setjmp`ve **longjmp** , yerel olarak yürütmek için bir yol sağlar **`goto`** ; genellikle yürütme denetimini, normal çağrı ve dönüş kuralları kullanılmadan daha önce çağrılan bir yordamın hata işleme veya kurtarma koduna geçirmek için kullanılır.
+**Longjmp** işlevi, daha önce *env* tarafından daha önce kaydedilen bir yığın ortamını ve yürütme yerel ayarını geri yükler `setjmp` . `setjmp` ve **longjmp** , yerel olarak yürütmek için bir yol sağlar **`goto`** ; genellikle yürütme denetimini, normal çağrı ve dönüş kuralları kullanılmadan daha önce çağrılan bir yordamın hata işleme veya kurtarma koduna geçirmek için kullanılır.
 
 ' A yapılan çağrı `setjmp` , geçerli yığın ortamının *env*'ye kaydedilmesine neden olur. Daha sonraki bir **longjmp** çağrısı, kaydedilen ortamı geri yükler ve denetimi ilgili çağrının hemen ardından gelen noktaya döndürür `setjmp` . Yürütme, *değer* çağrı tarafından döndürülmüş gibi devam eder `setjmp` . Yordam alma denetimi tarafından erişilebilen tüm değişkenlerin (yazmaç değişkenleri hariç) değerleri, **longjmp** çağrıldığında sahip oldukları değerleri içerir. Kayıt değişkenlerinin değerleri tahmin edilemez. Tarafından döndürülen değer `setjmp` sıfırdan farklı olmalıdır. *Değer* 0 olarak geçirilirse, 1 değeri gerçek dönüşte değiştirilir.
 
@@ -65,7 +66,7 @@ Windows 'daki Microsoft C++ kodunda, **longjmp** , özel durum işleme kodu olar
 
 Yalnızca **longjmp** ' i çağıran işlevden önce çağırın `setjmp` ; Aksi takdirde sonuçlar tahmin edilemez.
 
-**Longjmp**kullanırken aşağıdaki kısıtlamalara uyun:
+**Longjmp** kullanırken aşağıdaki kısıtlamalara uyun:
 
 - Kayıt değişkenlerinin değerlerinin aynı kalacağından emin değildir. Çağırma yordamında kayıt değişkenlerinin değerleri, `setjmp` **longjmp** yürütüldükten sonra uygun değerlere geri yüklenemez.
 

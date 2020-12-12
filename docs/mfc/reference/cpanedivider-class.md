@@ -1,5 +1,6 @@
 ---
-title: CPaneDivider Sınıf
+description: 'Daha fazla bilgi edinin: CPaneDivider sınıfı'
+title: CPaneDivider sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPaneDivider
@@ -84,20 +85,20 @@ helpviewer_keywords:
 - CPaneDivider [MFC], m_nDefaultWidth
 - CPaneDivider [MFC], m_pSliderRTC
 ms.assetid: 8e828a5d-232f-4127-b8e3-7fa45a7a476e
-ms.openlocfilehash: 0ebac4e18f65d789d5196266d57184744ad5ad28
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: f2541483f7881ab0b303750e69af776c2c3bc7a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753621"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301522"
 ---
-# <a name="cpanedivider-class"></a>CPaneDivider Sınıf
+# <a name="cpanedivider-class"></a>CPaneDivider sınıfı
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
-Sınıf `CPaneDivider` iki bölmeyi böler, iki bölme grubunu böler veya bir bölme grubunu ana çerçeve penceresinin istemci alanından ayırır.
+`CPaneDivider`Sınıfı iki bölmeyi böler, iki bölme grubunu böler veya bir bölmeler grubunu ana çerçeve penceresinin istemci alanından ayırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CPaneDivider : public CBasePane
@@ -107,92 +108,92 @@ class CPaneDivider : public CBasePane
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPaneDivider::CPaneBölücü](#cpanedivider)||
+|[CPaneDivider:: CPaneDivider](#cpanedivider)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPaneDivider::AddPaneContainer](#addpanecontainer)||
-|[CPaneDivider::AddPane](#addpane)||
-|[CPaneDivider::AddRecentPane](#addrecentpane)||
-|[CPaneDivider::CalcExpectedDockedRect](#calcexpecteddockedrect)||
-|[CPaneDivider::CalcFixedLayout](#calcfixedlayout)|[(Overrides CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|
-|[CPaneDivider::CheckVisibility](#checkvisibility)||
-|[CPaneDivider::CreateEx](#createex)|[(CBasePane geçersiz kılar::CreateEx](../../mfc/reference/cbasepane-class.md#createex).)|
-|[CPaneDivider::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|[(Overrides CBasePane::DoesAllowDynInsertBefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore).)|
-|[CPaneDivider::DoesContainFloatingPane](#doescontainfloatingpane)||
-|[CPaneDivider::FindPaneContainer](#findpanecontainer)||
-|[CPaneDivider::FindTabbedPane](#findtabbedpane)||
-|[CPaneDivider::GetDefaultWidth](#getdefaultwidth)||
-|[CPaneDivider::GetFirstPane](#getfirstpane)||
-|[CPaneDivider::GetPaneDividerStyle](#getpanedividerstyle)||
-|[CPaneDivider::GetRootContainerRect](#getrootcontainerrect)||
-|[CPaneDivider::GetWidth](#getwidth)||
-|[CPaneDivider::Init](#init)||
-|[CPaneDivider::InsertPane](#insertpane)||
-|[CPaneDivider::IsAutoHideMode](#isautohidemode)|(Geçersiz kılar [CBasePane::IsAutoHideMode](../../mfc/reference/cbasepane-class.md#isautohidemode).)|
-|[CPaneDivider::Varsayılan](#isdefault)||
-|[CPaneDivider::Yatay](#ishorizontal)|(Geçersiz Kılar [CBasePane::IsHorizontal](../../mfc/reference/cbasepane-class.md#ishorizontal).)|
-|[CPaneDivider::Taşı](#move)||
-|[CPaneDivider::NotifyAboutRelease](#notifyaboutrelease)||
-|[CPaneDivider::OnShowPane](#onshowpane)||
-|[CPaneDivider::ReleaseEmptyPaneContainers](#releaseemptypanecontainers)||
-|[CPaneDivider::RemovePane](#removepane)||
-|[CPaneDivider::ReplacePane](#replacepane)||
-|[CPaneDivider::RepositionPanes](#repositionpanes)||
-|[CPaneDivider::Serialize](#serialize)|(Geçersiz `CBasePane::Serialize`kılar .)|
-|[CPaneDivider::SetAutoHideMode](#setautohidemode)||
-|[CPaneDivider::SetPaneContainerManager](#setpanecontainermanager)||
-|[CPaneDivider::ShowWindow](#showwindow)||
-|[CPaneDivider::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||
-|[CPaneDivider::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)||
+|[CPaneDivider:: Addbölmesi kapsayıcısı](#addpanecontainer)||
+|[CPaneDivider:: AddPane](#addpane)||
+|[CPaneDivider:: AddRecentPane](#addrecentpane)||
+|[CPaneDivider:: CalcExpectedDockedRect](#calcexpecteddockedrect)||
+|[CPaneDivider:: CalcFixedLayout](#calcfixedlayout)|( [CBasePane:: CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).) öğesini geçersiz kılar|
+|[CPaneDivider:: CheckVisibility](#checkvisibility)||
+|[CPaneDivider:: CreateEx](#createex)|( [CBasePane:: CreateEx](../../mfc/reference/cbasepane-class.md#createex)geçersiz kılar.)|
+|[CPaneDivider::D Oesallowdynınsertbefore](#doesallowdyninsertbefore)|( [CBasePane::D Oesallowdynınsertbefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore)geçersiz kılar.)|
+|[CPaneDivider::D oesContainFloatingPane](#doescontainfloatingpane)||
+|[CPaneDivider:: Findbölmesi kapsayıcısı](#findpanecontainer)||
+|[CPaneDivider:: FindTabbedPane](#findtabbedpane)||
+|[CPaneDivider:: GetDefaultWidth](#getdefaultwidth)||
+|[CPaneDivider:: GetFirstPane](#getfirstpane)||
+|[CPaneDivider:: GetPaneDividerStyle](#getpanedividerstyle)||
+|[CPaneDivider:: GetRootContainerRect](#getrootcontainerrect)||
+|[CPaneDivider:: GetWidth](#getwidth)||
+|[CPaneDivider:: Init](#init)||
+|[CPaneDivider:: InsertPane](#insertpane)||
+|[CPaneDivider:: ısoto Hidemode](#isautohidemode)|( [CBasePane:: ısautosize modunu](../../mfc/reference/cbasepane-class.md#isautohidemode)geçersiz kılar.)|
+|[CPaneDivider:: IsDefault](#isdefault)||
+|[CPaneDivider:: ısyatay](#ishorizontal)|( [CBasePane:: ısyatay](../../mfc/reference/cbasepane-class.md#ishorizontal)geçersiz kılar.)|
+|[CPaneDivider:: Move](#move)||
+|[CPaneDivider:: Notifyai yayını](#notifyaboutrelease)||
+|[CPaneDivider:: OnShowPane](#onshowpane)||
+|[CPaneDivider:: ReleaseEmptyPaneContainers](#releaseemptypanecontainers)||
+|[CPaneDivider:: RemovePane](#removepane)||
+|[CPaneDivider:: ReplacePane](#replacepane)||
+|[CPaneDivider:: Depotionbölmeler](#repositionpanes)||
+|[CPaneDivider:: serileştirme](#serialize)|(Geçersiz kılmalar `CBasePane::Serialize` .)|
+|[CPaneDivider:: SetAutoHideMode](#setautohidemode)||
+|[CPaneDivider:: Setbölmesi Containermanager](#setpanecontainermanager)||
+|[CPaneDivider:: ShowWindow](#showwindow)||
+|[CPaneDivider:: StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||
+|[CPaneDivider:: Storerecenttabrelateınfo](#storerecenttabrelatedinfo)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPaneDivider::GetPanes](#getpanes)|[CPaneContainer Sınıfında](../../mfc/reference/cpanecontainer-class.md)bulunan bölmelerin listesini verir. Bu yöntem yalnızca varsayılan bölme bölücüler için çağrılmalıdır.|
-|[CPaneDivider::GetPaneBölücüler](#getpanedividers)|[CPaneContainer Sınıfında](../../mfc/reference/cpanecontainer-class.md)bulunan bölme bölücülerinin listesini verir. Bu yöntem yalnızca varsayılan bölme bölücüler için çağrılmalıdır.|
+|[CPaneDivider:: Getbölmeler](#getpanes)|[Cbölmesi kapsayıcı sınıfında](../../mfc/reference/cpanecontainer-class.md)bulunan bölmeler listesini döndürür. Bu yöntem yalnızca varsayılan bölme bölücüleri için çağrılmalıdır.|
+|[CPaneDivider:: GetPaneDividers](#getpanedividers)|[CPane kapsayıcı sınıfında](../../mfc/reference/cpanecontainer-class.md)bulunan bölme bölücülerin listesini döndürür. Bu yöntem yalnızca varsayılan bölme bölücüleri için çağrılmalıdır.|
 
-### <a name="data-members"></a>Veri Üyeleri
+### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPaneBölücü::m_nDefaultWidth](#m_ndefaultwidth)|Uygulamadaki tüm bölme bölücülerinin piksellerinde varsayılan genişliği belirtir.|
-|[CPaneBölücü::m_pSliderRTC](#m_psliderrtc)|Türetilmiş bir nesne hakkında çalışma `CPaneDivider`zamanı sınıf bilgileriiçin bir işaretçi tutar.|
+|[CPaneDivider:: m_nDefaultWidth](#m_ndefaultwidth)|Uygulamadaki tüm bölme ayırıcıdaki piksel cinsinden varsayılan genişliği belirtir.|
+|[CPaneDivider:: m_pSliderRTC](#m_psliderrtc)|, İle türetilmiş bir nesne hakkında çalışma zamanı sınıfı bilgileri için bir işaretçi tutar `CPaneDivider` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çerçeve, bölme `CPaneDivider` sabitlendiğinde nesneleri otomatik olarak oluşturur.
+Çerçeve, `CPaneDivider` bir bölme yerleştirildiğinde nesneleri otomatik olarak oluşturur.
 
-Bölme bölücüleri iki türü vardır:
+İki tür bölme bölücüleri vardır:
 
-- bir bölme grubu ana çerçeve penceresinin bir tarafına sabitlendiğinde varsayılan bölme bölücü oluşturulur. Varsayılan bölme [bölücücpanContainerManager Sınıfı](../../mfc/reference/cpanecontainermanager-class.md) için bir işaretçi tutar ve bölmeleri grubunda (bölmeyeniden boyutlandırma veya başka bir bölme veya kapsayıcı yerleştirme gibi) çoğu işlemleri terslime gibi kapsayıcı yöneticisine yönlendirir. Her yerleştirme bölmesi varsayılan bölme bölücü için bir işaretçi tutar.
+- bir bölme grubu, ana çerçeve penceresinin bir tarafına yerleştirildiğinde varsayılan bölme ayırıcıyı oluşturulur. Varsayılan bölme bölücü, [CPane Containermanager sınıfına](../../mfc/reference/cpanecontainermanager-class.md) yönelik bir işaretçi tutar ve bölmeler grubuna (bir bölmeyi yeniden boyutlandırma veya başka bir bölme ya da kapsayıcı yerleştirme gibi) kapsayıcı yöneticisine yeniden yönlendirir. Her takma bölmesi, varsayılan bölme ayraca bir işaretçi tutar.
 
-- Normal bir bölme bölücü sadece bir kapta iki bölmeleri böler. Daha fazla bilgi için [CPaneContainer Class'a](../../mfc/reference/cpanecontainer-class.md)bakın.
+- Normal bölme bölücü yalnızca bir kapsayıcıdaki iki bölmeyi böler. Daha fazla bilgi için bkz. [Cbölmesi kapsayıcı sınıfı](../../mfc/reference/cpanecontainer-class.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `CPaneDivider` nesnenin bir `CWorkspaceBar` nesneden nasıl alınabildiğini gösterir. Bu kod snippet [MDI Sekmeler Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, nesnesinden bir nesnenin nasıl alınacağını gösterir `CPaneDivider` `CWorkspaceBar` . Bu kod parçacığı, [MDI sekmeleri tanıtım örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_MDITabsDemo#5](../../mfc/reference/codesnippet/cpp/cpanedivider-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)\
-•&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CWnd](../../mfc/reference/cwnd-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;[CPaneDivider](../../mfc/reference/cpanedivider-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└ &nbsp; [CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CWnd](../../mfc/reference/cwnd-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CBasePane](../../mfc/reference/cbasepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CPaneDivider](../../mfc/reference/cpanedivider-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxPaneDivider.h
+**Üstbilgi:** afxPaneDivider. h
 
-## <a name="cpanedividersetautohidemode"></a><a name="setautohidemode"></a>CPaneDivider::SetAutoHideMode
+## <a name="cpanedividersetautohidemode"></a><a name="setautohidemode"></a> CPaneDivider:: SetAutoHideMode
 
 ```cpp
 void SetAutoHideMode(BOOL bMode);
@@ -200,11 +201,11 @@ void SetAutoHideMode(BOOL bMode);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bMode*<br/>
+'ndaki *Bmode*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividersetpanecontainermanager"></a><a name="setpanecontainermanager"></a>CPaneDivider::SetPaneContainerManager
+## <a name="cpanedividersetpanecontainermanager"></a><a name="setpanecontainermanager"></a> CPaneDivider:: Setbölmesi Containermanager
 
 ```cpp
 void SetPaneContainerManager(CPaneContainerManager* p);
@@ -212,11 +213,11 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *p*<br/>
+'ndaki *p*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedivideraddpane"></a><a name="addpane"></a>CPaneDivider::AddPane
+## <a name="cpanedivideraddpane"></a><a name="addpane"></a> CPaneDivider:: AddPane
 
 ```
 virtual void AddPane(CDockablePane* pBar);
@@ -224,11 +225,11 @@ virtual void AddPane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBar*<br/>
+'ndaki *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedivideraddpanecontainer"></a><a name="addpanecontainer"></a>CPaneDivider::AddPaneContainer
+## <a name="cpanedivideraddpanecontainer"></a><a name="addpanecontainer"></a> CPaneDivider:: Addbölmesi kapsayıcısı
 
 ```
 virtual BOOL AddPaneContainer(
@@ -243,16 +244,16 @@ virtual BOOL AddPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *barContainerManager*<br/>
-[içinde] *bOuterEdge*<br/>
-[içinde] *pTargetBar*<br/>
-[içinde] *dwHizalama*<br/>
+'ndaki *Barcontainermanager*<br/>
+'ndaki *Bukenar*<br/>
+'ndaki *pTargetBar*<br/>
+'ndaki *Dwhizalaması*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedivideraddrecentpane"></a><a name="addrecentpane"></a>CPaneDivider::AddRecentPane
+## <a name="cpanedivideraddrecentpane"></a><a name="addrecentpane"></a> CPaneDivider:: AddRecentPane
 
 ```
 virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
@@ -260,13 +261,13 @@ virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBar*<br/>
+'ndaki *pBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividercalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a>CPaneDivider::CalcExpectedDockedRect
+## <a name="cpanedividercalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a> CPaneDivider:: CalcExpectedDockedRect
 
 ```
 virtual void CalcExpectedDockedRect(
@@ -279,15 +280,15 @@ virtual void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pWndToDock*<br/>
-[içinde] *ptMouse*<br/>
-[içinde] *rektResult*<br/>
-[içinde] *bDrawTab*<br/>
-[içinde] *ppTargetBar*<br/>
+'ndaki *Pwndtodock*<br/>
+'ndaki *ptMouse*<br/>
+'ndaki *rectResult*<br/>
+'ndaki *bDrawTab*<br/>
+'ndaki *ppTargetBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividercalcfixedlayout"></a><a name="calcfixedlayout"></a>CPaneDivider::CalcFixedLayout
+## <a name="cpanedividercalcfixedlayout"></a><a name="calcfixedlayout"></a> CPaneDivider:: CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -297,14 +298,14 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bStretch*<br/>
-[içinde] *bHorz*<br/>
+'ndaki *Besnetme*<br/>
+'ndaki *bHorz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividercheckvisibility"></a><a name="checkvisibility"></a>CPaneDivider::CheckVisibility
+## <a name="cpanedividercheckvisibility"></a><a name="checkvisibility"></a> CPaneDivider:: CheckVisibility
 
 ```
 virtual BOOL CheckVisibility();
@@ -314,7 +315,7 @@ virtual BOOL CheckVisibility();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividercpanedivider"></a><a name="cpanedivider"></a>CPaneDivider::CPaneBölücü
+## <a name="cpanedividercpanedivider"></a><a name="cpanedivider"></a> CPaneDivider:: CPaneDivider
 
 ```
 CPaneDivider();
@@ -326,14 +327,14 @@ CPaneDivider(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bDefaultSlider*<br/>
-[içinde] *pParent*<br/>
+'ndaki *Bdefaultslider*<br/>
+'ndaki *pParent*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividercreateex"></a><a name="createex"></a>CPaneDivider::CreateEx
+## <a name="cpanedividercreateex"></a><a name="createex"></a> CPaneDivider:: CreateEx
 
 ```
 virtual BOOL CreateEx(
@@ -347,18 +348,18 @@ virtual BOOL CreateEx(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *dwStyleEx*<br/>
-[içinde] *dwStyle*<br/>
-[içinde] *rekt*<br/>
-[içinde] *pParentWnd*<br/>
-[içinde] *nID*<br/>
-[içinde] *pContext*<br/>
+'ndaki *dwStyleEx*<br/>
+'ndaki *dwStyle*<br/>
+'ndaki *Rect*<br/>
+'ndaki *pParentWnd*<br/>
+'ndaki *NID*<br/>
+'ndaki *pContext*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerdoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a>CPaneDivider::DoesAllowDynInsertBefore
+## <a name="cpanedividerdoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a> CPaneDivider::D Oesallowdynınsertbefore
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -368,7 +369,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerdoescontainfloatingpane"></a><a name="doescontainfloatingpane"></a>CPaneDivider::DoesContainFloatingPane
+## <a name="cpanedividerdoescontainfloatingpane"></a><a name="doescontainfloatingpane"></a> CPaneDivider::D oesContainFloatingPane
 
 ```
 virtual BOOL DoesContainFloatingPane();
@@ -378,7 +379,7 @@ virtual BOOL DoesContainFloatingPane();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerfindpanecontainer"></a><a name="findpanecontainer"></a>CPaneDivider::FindPaneContainer
+## <a name="cpanedividerfindpanecontainer"></a><a name="findpanecontainer"></a> CPaneDivider:: Findbölmesi kapsayıcısı
 
 ```
 CPaneContainer* FindPaneContainer(
@@ -388,14 +389,14 @@ CPaneContainer* FindPaneContainer(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBar*<br/>
-[içinde] *bLeftBar*<br/>
+'ndaki *pBar*<br/>
+'ndaki *Bleftbar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerfindtabbedpane"></a><a name="findtabbedpane"></a>CPaneDivider::FindTabbedPane
+## <a name="cpanedividerfindtabbedpane"></a><a name="findtabbedpane"></a> CPaneDivider:: FindTabbedPane
 
 ```
 CDockablePane* FindTabbedPane(UINT nID);
@@ -403,13 +404,13 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *nID*<br/>
+'ndaki *NID*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividergetdefaultwidth"></a><a name="getdefaultwidth"></a>CPaneDivider::GetDefaultWidth
+## <a name="cpanedividergetdefaultwidth"></a><a name="getdefaultwidth"></a> CPaneDivider:: GetDefaultWidth
 
 ```
 static int __stdcall GetDefaultWidth();
@@ -419,7 +420,7 @@ static int __stdcall GetDefaultWidth();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividergetfirstpane"></a><a name="getfirstpane"></a>CPaneDivider::GetFirstPane
+## <a name="cpanedividergetfirstpane"></a><a name="getfirstpane"></a> CPaneDivider:: GetFirstPane
 
 ```
 const CBasePane* GetFirstPane() const;
@@ -429,9 +430,9 @@ const CBasePane* GetFirstPane() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividergetpanedividers"></a><a name="getpanedividers"></a>CPaneDivider::GetPaneBölücüler
+## <a name="cpanedividergetpanedividers"></a><a name="getpanedividers"></a> CPaneDivider:: GetPaneDividers
 
-[CPaneContainer Sınıfında](../../mfc/reference/cpanecontainer-class.md)bulunan bölme bölücülerinin listesini verir. Bu yöntem yalnızca varsayılan bölme bölücüler için çağrılmalıdır.
+[CPane kapsayıcı sınıfında](../../mfc/reference/cpanecontainer-class.md)bulunan bölme bölücülerin listesini döndürür. Bu yöntem yalnızca varsayılan bölme bölücüleri için çağrılmalıdır.
 
 ```cpp
 void GetPaneDividers(CObList& lstSliders);
@@ -439,14 +440,14 @@ void GetPaneDividers(CObList& lstSliders);
 
 ### <a name="parameters"></a>Parametreler
 
-*lstSliders*<br/>
-[çıkış] Bölme kapsayıcısında bulunan bölme bölücülerinin listesini içerir.
+*Lstsürgüler*<br/>
+dışı Bölme kapsayıcısında bulunan bölme bölücülerin listesini içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem yalnızca varsayılan bölme bölücüleri için çağrılmalıdır. Varsayılan bölme bölücü, bölme kapsayıcısının tamamını yeniden boyutlandıran bir bölücüdür.
+Bu yöntem yalnızca varsayılan bölme bölücüleri için çağrılmalıdır. Varsayılan bölme ayırıcı, tüm bölme kapsayıcısını yeniden boyutlandıran bir bölümesdir.
 
-## <a name="cpanedividergetpanedividerstyle"></a><a name="getpanedividerstyle"></a>CPaneDivider::GetPaneDividerStyle
+## <a name="cpanedividergetpanedividerstyle"></a><a name="getpanedividerstyle"></a> CPaneDivider:: GetPaneDividerStyle
 
 ```
 DWORD GetPaneDividerStyle() const;
@@ -456,9 +457,9 @@ DWORD GetPaneDividerStyle() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividergetpanes"></a><a name="getpanes"></a>CPaneDivider::GetPanes
+## <a name="cpanedividergetpanes"></a><a name="getpanes"></a> CPaneDivider:: Getbölmeler
 
-[CPaneContainer Sınıfında](../../mfc/reference/cpanecontainer-class.md)bulunan bölmelerin listesini verir. Bu yöntem yalnızca varsayılan bölme bölücüleri almak için çağrılmalıdır.
+[Cbölmesi kapsayıcı sınıfında](../../mfc/reference/cpanecontainer-class.md)bulunan bölmeler listesini döndürür. Bu yöntem yalnızca varsayılan bölme bölücüleri almak için çağrılmalıdır.
 
 ```cpp
 void GetPanes(CObList& lstBars);
@@ -466,14 +467,14 @@ void GetPanes(CObList& lstBars);
 
 ### <a name="parameters"></a>Parametreler
 
-*lstBars*<br/>
-[çıkış] Bölme kapsayıcısında bulunan bölmelerin listesini içerir.
+*Lstbar çubukları*<br/>
+dışı Bölme kapsayıcısında bulunan bölmelerin listesini içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem yalnızca varsayılan bölme bölücüleri için çağrılmalıdır. Varsayılan bölme bölücü, bölme kapsayıcısının tamamını yeniden boyutlandıran bir bölücüdür.
+Bu yöntem yalnızca varsayılan bölme bölücüleri için çağrılmalıdır. Varsayılan bölme ayırıcı, tüm bölme kapsayıcısını yeniden boyutlandıran bir bölümesdir.
 
-## <a name="cpanedividergetrootcontainerrect"></a><a name="getrootcontainerrect"></a>CPaneDivider::GetRootContainerRect
+## <a name="cpanedividergetrootcontainerrect"></a><a name="getrootcontainerrect"></a> CPaneDivider:: GetRootContainerRect
 
 ```
 CRect GetRootContainerRect();
@@ -483,7 +484,7 @@ CRect GetRootContainerRect();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividergetwidth"></a><a name="getwidth"></a>CPaneDivider::GetWidth
+## <a name="cpanedividergetwidth"></a><a name="getwidth"></a> CPaneDivider:: GetWidth
 
 ```
 int GetWidth() const;
@@ -493,7 +494,7 @@ int GetWidth() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerinit"></a><a name="init"></a>CPaneDivider::Init
+## <a name="cpanedividerinit"></a><a name="init"></a> CPaneDivider:: Init
 
 ```cpp
 void Init(
@@ -503,12 +504,12 @@ void Init(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bDefaultSlider*<br/>
-[içinde] *pParent*<br/>
+'ndaki *Bdefaultslider*<br/>
+'ndaki *pParent*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerinsertpane"></a><a name="insertpane"></a>CPaneDivider::InsertPane
+## <a name="cpanedividerinsertpane"></a><a name="insertpane"></a> CPaneDivider:: InsertPane
 
 ```
 virtual BOOL InsertPane(
@@ -520,16 +521,16 @@ virtual BOOL InsertPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBarToInsert*<br/>
-[içinde] *pTargetBar*<br/>
-[içinde] *dwHizalama*<br/>
-[içinde] *lpRect*<br/>
+'ndaki *Pbartoınsert*<br/>
+'ndaki *pTargetBar*<br/>
+'ndaki *Dwhizalaması*<br/>
+'ndaki *lpRect*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerisautohidemode"></a><a name="isautohidemode"></a>CPaneDivider::IsAutoHideMode
+## <a name="cpanedividerisautohidemode"></a><a name="isautohidemode"></a> CPaneDivider:: ısoto Hidemode
 
 ```
 BOOL IsAutoHideMode() const;
@@ -539,7 +540,7 @@ BOOL IsAutoHideMode() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerisdefault"></a><a name="isdefault"></a>CPaneDivider::Varsayılan
+## <a name="cpanedividerisdefault"></a><a name="isdefault"></a> CPaneDivider:: IsDefault
 
 ```
 BOOL IsDefault() const;
@@ -549,7 +550,7 @@ BOOL IsDefault() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerishorizontal"></a><a name="ishorizontal"></a>CPaneDivider::Yatay
+## <a name="cpanedividerishorizontal"></a><a name="ishorizontal"></a> CPaneDivider:: ısyatay
 
 ```
 BOOL IsHorizontal() const;
@@ -559,15 +560,15 @@ BOOL IsHorizontal() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerm_ndefaultwidth"></a><a name="m_ndefaultwidth"></a>CPaneBölücü::m_nDefaultWidth
+## <a name="cpanedividerm_ndefaultwidth"></a><a name="m_ndefaultwidth"></a> CPaneDivider:: m_nDefaultWidth
 
-Uygulamadaki tüm bölme bölücülerinin pikselolarak varsayılan genişliğini belirtir.
+Uygulamadaki tüm bölme ayırıcıdaki varsayılan genişliği piksel cinsinden belirtir.
 
 ```
 AFX_IMPORT_DATA static int m_nDefaultWidth;
 ```
 
-## <a name="cpanedividermove"></a><a name="move"></a>CPaneDivider::Taşı
+## <a name="cpanedividermove"></a><a name="move"></a> CPaneDivider:: Move
 
 ```
 virtual void Move(
@@ -577,14 +578,14 @@ virtual void Move(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *ptOffset*<br/>
-[içinde] *bAdjustLayout*<br/>
+'ndaki *ptOffset*<br/>
+'ndaki *Roztlayout*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerm_psliderrtc"></a><a name="m_psliderrtc"></a>CPaneBölücü::m_pSliderRTC
+## <a name="cpanedividerm_psliderrtc"></a><a name="m_psliderrtc"></a> CPaneDivider:: m_pSliderRTC
 
-Türetilmiş bir nesne hakkında `CPaneDivider`çalışma zamanı sınıf bilgilerini çalıştırmak için bir işaretçi tutar.
+İle türetilmiş bir nesne hakkında çalışma zamanı sınıfı bilgilerine yönelik bir işaretçi tutar `CPaneDivider` .
 
 ```
 AFX_IMPORT_DATA static CRuntimeClass* m_pSliderRTC;
@@ -592,11 +593,11 @@ AFX_IMPORT_DATA static CRuntimeClass* m_pSliderRTC;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel bir bölme bölücü sağlık ettiyseniz bu üye değişkenini ayarlayın. Bu, bölme çizildiğinde bölme bölücünüzü oluşturmayı sağlar.
+Özel bir bölme etiketi oluşturursanız bu üye değişkenini ayarlayın. Bu, bölme çizildiğinde çerçevenin bölme ayracın oluşturulmasını sağlar.
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, üye değişkenin `m_pSliderRTC` nasıl ayarlandığını gösterir:
+Aşağıdaki örnekte, üye değişkeninin nasıl ayarlanacağı gösterilmektedir `m_pSliderRTC` :
 
 ```
 class CMySplitter : public CPaneDivider
@@ -607,7 +608,7 @@ class CMySplitter : public CPaneDivider
 CPaneDivider::m_pSliderRTC = RUNTIME_CLASS(CMySpliter);
 ```
 
-## <a name="cpanedividernotifyaboutrelease"></a><a name="notifyaboutrelease"></a>CPaneDivider::NotifyAboutRelease
+## <a name="cpanedividernotifyaboutrelease"></a><a name="notifyaboutrelease"></a> CPaneDivider:: Notifyai yayını
 
 ```
 virtual void NotifyAboutRelease();
@@ -615,7 +616,7 @@ virtual void NotifyAboutRelease();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedivideronshowpane"></a><a name="onshowpane"></a>CPaneDivider::OnShowPane
+## <a name="cpanedivideronshowpane"></a><a name="onshowpane"></a> CPaneDivider:: OnShowPane
 
 ```
 virtual void OnShowPane(
@@ -625,12 +626,12 @@ virtual void OnShowPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBar*<br/>
-[içinde] *bGöster*<br/>
+'ndaki *pBar*<br/>
+'ndaki *bShow*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerreleaseemptypanecontainers"></a><a name="releaseemptypanecontainers"></a>CPaneDivider::ReleaseEmptyPaneContainers
+## <a name="cpanedividerreleaseemptypanecontainers"></a><a name="releaseemptypanecontainers"></a> CPaneDivider:: ReleaseEmptyPaneContainers
 
 ```cpp
 void ReleaseEmptyPaneContainers();
@@ -638,7 +639,7 @@ void ReleaseEmptyPaneContainers();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerremovepane"></a><a name="removepane"></a>CPaneDivider::RemovePane
+## <a name="cpanedividerremovepane"></a><a name="removepane"></a> CPaneDivider:: RemovePane
 
 ```
 virtual void RemovePane(CDockablePane* pBar);
@@ -646,11 +647,11 @@ virtual void RemovePane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBar*<br/>
+'ndaki *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerreplacepane"></a><a name="replacepane"></a>CPaneDivider::ReplacePane
+## <a name="cpanedividerreplacepane"></a><a name="replacepane"></a> CPaneDivider:: ReplacePane
 
 ```
 virtual BOOL ReplacePane(
@@ -660,14 +661,14 @@ virtual BOOL ReplacePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBarToReplace*<br/>
-[içinde] *pBarToReplaceWith*<br/>
+'ndaki *Pbartoreplace*<br/>
+'ndaki *Pbartoreplacewith*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerrepositionpanes"></a><a name="repositionpanes"></a>CPaneDivider::RepositionPanes
+## <a name="cpanedividerrepositionpanes"></a><a name="repositionpanes"></a> CPaneDivider:: Depotionbölmeler
 
 ```
 virtual void RepositionPanes(
@@ -677,12 +678,12 @@ virtual void RepositionPanes(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *rectYeni*<br/>
-[içinde] *hdwp*<br/>
+'ndaki *Rectyeni*<br/>
+'ndaki *hdwp*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerserialize"></a><a name="serialize"></a>CPaneDivider::Serialize
+## <a name="cpanedividerserialize"></a><a name="serialize"></a> CPaneDivider:: serileştirme
 
 ```cpp
 void Serialize(CArchive& ar);
@@ -690,11 +691,11 @@ void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *ar*<br/>
+'ndaki *ar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividershowwindow"></a><a name="showwindow"></a>CPaneDivider::ShowWindow
+## <a name="cpanedividershowwindow"></a><a name="showwindow"></a> CPaneDivider:: ShowWindow
 
 ```cpp
 void ShowWindow(int nCmdShow);
@@ -702,11 +703,11 @@ void ShowWindow(int nCmdShow);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *nCmdShow*<br/>
+'ndaki *nCmdShow*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a>CPaneDivider::StoreRecentDockSiteInfo
+## <a name="cpanedividerstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a> CPaneDivider:: StoreRecentDockSiteInfo
 
 ```cpp
 void StoreRecentDockSiteInfo(CDockablePane* pBar);
@@ -714,11 +715,11 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBar*<br/>
+'ndaki *pBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cpanedividerstorerecenttabrelatedinfo"></a><a name="storerecenttabrelatedinfo"></a>CPaneDivider::StoreRecentTabRelatedInfo
+## <a name="cpanedividerstorerecenttabrelatedinfo"></a><a name="storerecenttabrelatedinfo"></a> CPaneDivider:: Storerecenttabrelateınfo
 
 ```cpp
 void StoreRecentTabRelatedInfo(
@@ -728,16 +729,16 @@ void StoreRecentTabRelatedInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDockingBar*<br/>
-[içinde] *pTabbedBar*<br/>
+'ndaki *pDockingBar*<br/>
+'ndaki *Ptabbedbar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CPaneContainerManager Sınıfı](../../mfc/reference/cpanecontainermanager-class.md)<br/>
-[CPaneContainer Sınıfı](../../mfc/reference/cpanecontainer-class.md)<br/>
-[CDockingManager Sınıfı](../../mfc/reference/cdockingmanager-class.md)<br/>
-[CBasePane Sınıfı](../../mfc/reference/cbasepane-class.md)
+[Cbölmesi Containermanager sınıfı](../../mfc/reference/cpanecontainermanager-class.md)<br/>
+[Cbölmesi kapsayıcı sınıfı](../../mfc/reference/cpanecontainer-class.md)<br/>
+[CDockingManager sınıfı](../../mfc/reference/cdockingmanager-class.md)<br/>
+[CBasePane sınıfı](../../mfc/reference/cbasepane-class.md)

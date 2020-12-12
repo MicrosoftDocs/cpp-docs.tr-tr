@@ -1,5 +1,6 @@
 ---
-title: CD2DRectU Sınıfı
+description: 'Daha fazla bilgi edinin: CD2DRectU Class'
+title: CD2DRectU sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CD2DRectU
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - CD2DRectU [MFC], CD2DRectU
 - CD2DRectU [MFC], IsNull
 ms.assetid: a62f17d1-011d-4867-8f51-fd7e7c00561d
-ms.openlocfilehash: 26e647ae01a498a6ad8ca2d7c866f33b01910881
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dadbaf37f1ed11f96f29c7e4cf78eebf8095590d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301626"
 ---
-# <a name="cd2drectu-class"></a>CD2DRectU Sınıfı
+# <a name="cd2drectu-class"></a>CD2DRectU sınıfı
 
-Bir sarmalayıcı. `D2D1_RECT_U`
+İçin bir sarmalayıcı `D2D1_RECT_U` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CD2DRectU : public D2D1_RECT_U;
@@ -31,21 +32,21 @@ class CD2DRectU : public D2D1_RECT_U;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DRectU::CD2DRectU](#cd2drectu)|Fazla Yüklendi. Nesneden `D2D1_RECT_U` `CD2DRectU` bir nesne inşa eder.|
+|[CD2DRectU::CD2DRectU](#cd2drectu)|Fazla Yüklendi. Nesnesinden bir `CD2DRectU` nesne oluşturur `D2D1_RECT_U` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DRectU::IsNull](#isnull)|İfadenin geçerli veri içermediğini gösteren bir **boolean** değeri döndürür (NULL).|
+|[CD2DRectU:: IsNull](#isnull)|Bir ifadenin geçerli veri içerip içermediğini gösteren bir **Boole** değeri döndürür (null).|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DRectU::operatör CRect](#operator_crect)|`CD2DRectU` Nesneye `CRect` dönüştürür.|
+|[CD2DRectU:: operator ekibi](#operator_crect)|`CD2DRectU`Nesnesine dönüştürür `CRect` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,11 +56,11 @@ class CD2DRectU : public D2D1_RECT_U;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget. h
 
-## <a name="cd2drectucd2drectu"></a><a name="cd2drectu"></a>CD2DRectU::CD2DRectU
+## <a name="cd2drectucd2drectu"></a><a name="cd2drectu"></a> CD2DRectU::CD2DRectU
 
-CRect nesnesinden bir CD2DRectU nesnesi oluşturuyor.
+CRect nesnesinden bir CD2DRectU nesnesi oluşturur.
 
 ```
 CD2DRectU(const CRect& rect);
@@ -76,23 +77,23 @@ CD2DRectU(
 ### <a name="parameters"></a>Parametreler
 
 *Rect*<br/>
-kaynak dikdörtgen
+Kaynak dikdörtgeni
 
-*uLeft*<br/>
-kaynak sol koordinat
+*Uıleft*<br/>
+Kaynak Sol koordinatı
 
 *uTop*<br/>
-kaynak üst koordinat
+Kaynak üst koordinat
 
-*uHakkı*<br/>
-kaynak sağ koordinat
+*uRight dili*<br/>
+Kaynak sağ koordinatı
 
 *uBottom*<br/>
 kaynak alt koordinat
 
-## <a name="cd2drectuisnull"></a><a name="isnull"></a>CD2DRectU::IsNull
+## <a name="cd2drectuisnull"></a><a name="isnull"></a> CD2DRectU:: IsNull
 
-Bir ifadenin geçerli veri içermediğini belirten bir Boolean değeri döndürür (Null).
+Bir ifadenin geçerli veri içerip içermediğini gösteren bir Boole değeri döndürür (null).
 
 ```
 BOOL IsNull() const;
@@ -100,11 +101,11 @@ BOOL IsNull() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dikdörtgenin üst, sol, alt ve sağ değerlerinin tümü 0'a eşitse DOĞRU; aksi takdirde YANLIŞ.
+Dikdörtgenin üst, sol, alt ve sağ değerlerinin tümü 0 ' a eşit ise TRUE; Aksi halde yanlış.
 
-## <a name="cd2drectuoperator-crect"></a><a name="operator_crect"></a>CD2DRectU::operatör CRect
+## <a name="cd2drectuoperator-crect"></a><a name="operator_crect"></a> CD2DRectU:: operator ekibi
 
-CD2DRectU'u CRect nesnesine dönüştürür.
+CD2DRectU öğesini CRect nesnesine dönüştürür.
 
 ```
 operator CRect();

@@ -1,18 +1,17 @@
 ---
 title: C Anahtar Sözcükleri
 description: Standart C ve Microsoft C derleyicisi uzantılarında anahtar sözcükler.
-ms.date: 10/30/2020
+ms.date: 12/8/2020
 helpviewer_keywords:
 - keywords [C]
 - redefining keywords
 - Microsoft-specific keywords
-ms.assetid: 2d932335-97bf-45cd-b367-4ae00db0ff42
-ms.openlocfilehash: 9efa3fc353a2386a465227c39f4ae83565ae12c3
-ms.sourcegitcommit: 4abc6c4c9694f91685cfd77940987e29a51e3143
+ms.openlocfilehash: 1bcef118881a0596406d6ff455dd453220ff81c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93238492"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300391"
 ---
 # <a name="c-keywords"></a>C Anahtar Sözcükleri
 
@@ -69,7 +68,7 @@ C dili aşağıdaki anahtar sözcükleri kullanır:
         **`_Atomic`**<sup>2, b</sup>\
         **`_Bool`**<sup>1, a</sup>\
         **`_Complex`**<sup>1, b</sup>\
-        **`_Generic`**<sup>2, a</sup>\
+        **[`_Generic`](generic_selection.md)**<sup>2, a</sup>\
         **`_Imaginary`**<sup>1, b</sup>\
         **`_Noreturn`**<sup>2, a</sup>\
         **`_Static_assert`**<sup>2, a</sup>\

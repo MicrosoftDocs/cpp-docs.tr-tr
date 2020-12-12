@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Web Browser-Style MFC uygulaması oluşturma'
 title: Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma
 ms.date: 06/25/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Web browsers
 - Web applications [MFC], creating
 ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
-ms.openlocfilehash: e02e928f65ab4cd918e730135abc62ed3237decf
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0ee8250be20b53979c2a3e059d83237389091e72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215130"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301288"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma
 
@@ -24,9 +25,9 @@ Web tarayıcı stili bir uygulama, Internet 'ten (HTML veya etkin belgeler) veya
 
 1. [MFC uygulaması oluşturma](../../mfc/reference/creating-an-mfc-application.md)yönergelerini izleyin.
 
-1. MFC Uygulama Sihirbazı [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında, **belge/görünüm mimarisi** kutusunun seçili olduğundan emin olun. ( **Tek belge** veya **birden çok belge**seçebilirsiniz, ancak **iletişim temelli**değildir.)
+1. MFC Uygulama Sihirbazı [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) sayfasında, **belge/görünüm mimarisi** kutusunun seçili olduğundan emin olun. ( **Tek belge** veya **birden çok belge** seçebilirsiniz, ancak **iletişim temelli** değildir.)
 
-1. [Oluşturulan sınıfları gözden geçir](../../mfc/reference/generated-classes-mfc-application-wizard.md) sayfasında, `CHtmlView`seçmek için **temel sınıf** açılan menüsünü kullanın.
+1. [Oluşturulan sınıfları gözden geçir](../../mfc/reference/generated-classes-mfc-application-wizard.md) sayfasında, öğesini seçmek için **temel sınıf** açılan menüsünü kullanın `CHtmlView` .
 
 1. Çatı uygulamasına yerleşik olarak kullanmak istediğiniz diğer seçenekleri seçin.
 
@@ -35,11 +36,11 @@ Web tarayıcı stili bir uygulama, Internet 'ten (HTML veya etkin belgeler) veya
 WebBrowser denetimi köprüler ve Tekdüzen Kaynak Bulucu (URL) gezintisi aracılığıyla Web 'e gözatmayı destekler. Denetim, kullanıcının önceden gözatılan siteler, klasörler ve belgeler boyunca İleri ve geri göz atmasına izin veren bir geçmiş listesi tutar. Denetim doğrudan gezinti, köprüler, geçmiş listeleri, Sık Kullanılanlar ve güvenlik ' i işler. Uygulamalar, etkin belgeleri de barındırmak için WebBrowser denetimini etkin bir belge kapsayıcısı olarak kullanabilir. Bu nedenle, Microsoft Excel elektronik tabloları veya Word belgeleri gibi zengin biçimli belgeler, WebBrowser denetimi içinden yerinde açılabilir ve düzenlenebilir. WebBrowser denetimi aynı zamanda herhangi bir ActiveX denetimini barındırasağlayan bir ActiveX denetim kapsayıcısıdır.
 
 > [!NOTE]
-> WebBrowser ActiveX denetimi (ve bu nedenle `CHtmlView`) yalnızca Internet Explorer 4,0 veya sonraki bir sürümünün yüklendiği Windows sürümleri altında çalışan uygulamalarda kullanılabilir.
+> WebBrowser ActiveX denetimi (ve bu nedenle `CHtmlView` ) yalnızca Internet Explorer 4,0 veya sonraki bir sürümünün yüklendiği Windows sürümleri altında çalışan uygulamalarda kullanılabilir.
 
-`CHtmlView` yalnızca Microsoft Web tarayıcısı denetimini uyguladığından, yazdırma desteği diğer [CView](../../mfc/reference/cview-class.md)ile türetilmiş sınıflar gibi değildir. Bunun yerine, WebBrowser denetimi Yazıcı Kullanıcı arabirimini ve yazdırmayı uygular. Sonuç olarak, `CHtmlView` baskı önizlemeyi desteklemez ve Framework diğer yazdırma desteği işlevlerini sağlamaz: Örneğin, [CView:: OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting), [CView:: OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)ve [CView](../../mfc/reference/cview-class.md#onendprinting):: OnEndPrinting, diğer MFC uygulamalarında kullanılabilir.
+`CHtmlView`Yalnızca Microsoft Web tarayıcısı denetimini uyguladığından, yazdırma desteği diğer [CView](../../mfc/reference/cview-class.md)ile türetilmiş sınıflar gibi değildir. Bunun yerine, WebBrowser denetimi Yazıcı Kullanıcı arabirimini ve yazdırmayı uygular. Sonuç olarak, `CHtmlView` baskı önizlemeyi desteklemez ve Framework diğer yazdırma desteği işlevleri için sağlamaz: Örneğin, [CView:: OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting), [CView:: OnBeginPrinting](../../mfc/reference/cview-class.md#onbeginprinting)ve [CVIEW](../../mfc/reference/cview-class.md#onendprinting):: OnEndPrinting, diğer MFC uygulamalarında kullanılabilir.
 
-`CHtmlView` Web tarayıcısı denetimi için bir sarmalayıcı işlevi görür. Bu, uygulamanıza bir Web veya HTML sayfası üzerinde bir görünüm sağlar. Sihirbaz, Microsoft Visual C++ Web sitesine gezinti bağlantısı sağlayan görünüm sınıfındaki [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) işlevinde bir geçersiz kılma oluşturur:
+`CHtmlView` Web tarayıcısı denetimi için bir sarmalayıcı işlevi görür. Bu, uygulamanıza bir Web veya HTML sayfası üzerinde bir görünüm sağlar. Sihirbaz, görünüm sınıfındaki [OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) işlevinde bir geçersiz kılma oluşturur ve bu, Microsoft Visual C++ Web sitesine bir gezinti bağlantısı sağlar:
 
 ```cpp
 void CWebView::OnInitialUpdate()

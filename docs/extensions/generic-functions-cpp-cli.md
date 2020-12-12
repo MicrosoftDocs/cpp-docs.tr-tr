@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: genel Işlevler (C++/CLı)'
 title: Genel İşlevler (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - methods [C++], generic
 - generic functions
 ms.assetid: 8e409364-58f9-4360-b486-e7d555e0c218
-ms.openlocfilehash: 3d648a23176786985a7ca1e22165c7c5a695e601
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cd2c5390499e6858824fae7a3368afe6de8c6c56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216017"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301743"
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 
@@ -34,13 +35,13 @@ Bu özellik Windows Çalışma Zamanı desteklenmez.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 Genel işlev, tür parametreleriyle belirtilen bir işlevdir. Çağrıldığında, tür parametreleri yerine gerçek türler kullanılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [attributes] [modifiers]
@@ -87,7 +88,7 @@ Bir sınıf veya yapı Oluşturucu, genel tür parametreleriyle bildirilemez.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

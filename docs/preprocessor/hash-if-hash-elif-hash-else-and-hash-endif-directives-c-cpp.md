@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: #if, #elif, #else ve #endif yönergeleri (C/C++)'
 title: '##if, #elif, #else ve #endif yönergeleri (C/C++)'
 ms.date: 08/29/2019
 f1_keywords:
@@ -21,16 +22,16 @@ helpviewer_keywords:
 - elif directive (#elif)
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
-ms.openlocfilehash: acbc54a80573bbbf29ad5cf67e7e5fd9351eeaa3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 511f79da4957f7a26c9af9dbcad46fc29e70d785
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231604"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300494"
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else ve #endif yönergeleri (C/C++)
 
-**#İf** yönergesi, **#elif**, **#else**ve **#endif** yönergeleriyle bir kaynak dosyanın bölümlerinin derlemesini denetler. Yazdığınız ifadenin ( **#if**sonrasında) sıfır dışında bir değeri varsa, **#if** yönergesini izleyen satır grubu, çeviri biriminde tutulur.
+**#İf** yönergesi, **#elif**, **#else** ve **#endif** yönergeleriyle bir kaynak dosyanın bölümlerinin derlemesini denetler. Yazdığınız ifadenin ( **#if** sonrasında) sıfır dışında bir değeri varsa, **#if** yönergesini izleyen satır grubu, çeviri biriminde tutulur.
 
 ## <a name="grammar"></a>Dilbilgisi
 
@@ -63,19 +64,19 @@ ms.locfileid: "87231604"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kaynak dosyadaki her bir **#if** yönergesi, bir kapanış **#endif** yönergesi ile eşleşmelidir. **#İf** ve **#endif** yönergeleri arasında herhangi bir sayıda **#elif** yönerge görünebilir, ancak en fazla bir **#else** yönergesine izin verilir. Varsa **#else** yönergesi, **#endif**önce son yönerge olmalıdır.
+Kaynak dosyadaki her bir **#if** yönergesi, bir kapanış **#endif** yönergesi ile eşleşmelidir. **#İf** ve **#endif** yönergeleri arasında herhangi bir sayıda **#elif** yönerge görünebilir, ancak en fazla bir **#else** yönergesine izin verilir. Varsa **#else** yönergesi, **#endif** önce son yönerge olmalıdır.
 
-**#İf**, **#elif**, **#else**ve **#endif** yönergeleri, diğer **#if** yönergelerinin *metin* bölümlerine iç içe olabilir. Her iç içe **#else**, **#elif**veya **#endif** yönergesi, en yakın önceki **#if** yönergesine aittir.
+**#İf**, **#elif**, **#else** ve **#endif** yönergeleri, diğer **#if** yönergelerinin *metin* bölümlerine iç içe olabilir. Her iç içe **#else**, **#elif** veya **#endif** yönergesi, en yakın önceki **#if** yönergesine aittir.
 
-**#İf** ve **#ifdef**gibi tüm koşullu derleme yönergelerinin, dosyanın sonundan önce bir kapanış **#endif** yönergesiyle eşleşmesi gerekir. Aksi takdirde, bir hata iletisi oluşturulur. Koşullu derleme yönergeleri içerme dosyalarında yer aldığı zaman, aynı koşulları karşılamaları gerekir: ekleme dosyasının sonunda eşleşmeyen koşullu derleme yönergeleri olmaması gerekir.
+**#İf** ve **#ifdef** gibi tüm koşullu derleme yönergelerinin, dosyanın sonundan önce bir kapanış **#endif** yönergesiyle eşleşmesi gerekir. Aksi takdirde, bir hata iletisi oluşturulur. Koşullu derleme yönergeleri içerme dosyalarında yer aldığı zaman, aynı koşulları karşılamaları gerekir: ekleme dosyasının sonunda eşleşmeyen koşullu derleme yönergeleri olmaması gerekir.
 
-Makro değiştirme bir **#elif** komutu izleyen satırın parçası içinde yapılır, bu nedenle bir makro çağrısı *sabit ifadesinde*kullanılabilir.
+Makro değiştirme bir **#elif** komutu izleyen satırın parçası içinde yapılır, bu nedenle bir makro çağrısı *sabit ifadesinde* kullanılabilir.
 
 Önişlemci, daha fazla işleme için verilen *metin* oluşumlarından birini seçer. *Metinde* belirtilen bir blok herhangi bir metin dizisi olabilir. Birden fazla satır kaplayabilirler. Genellikle *metin* , derleyici veya Önişlemci anlamı olan program metinidir.
 
 Önişlemci seçili *metni* işler ve derleyiciye geçirir. *Metin* Önişlemci yönergeleri içeriyorsa, Önişlemci bu yönergeleri yürütür. Yalnızca Önişlemci tarafından seçilen metin blokları derlenir.
 
-Önişlemci, her **#if** veya **#elif** yönergesinden sonra sabit ifadeyi değerlendirerek, doğru (sıfır olmayan) bir sabit ifade bulana kadar tek bir *metin* öğesi seçer. **#** İlişkili **#elif**, **#else**veya **#endif**kadar tüm metinleri (ile başlayan diğer Önişlemci yönergeleri dahil) seçer.
+Önişlemci, her **#if** veya **#elif** yönergesinden sonra sabit ifadeyi değerlendirerek, doğru (sıfır olmayan) bir sabit ifade bulana kadar tek bir *metin* öğesi seçer. **#** İlişkili **#elif**, **#else** veya **#endif** kadar tüm metinleri (ile başlayan diğer Önişlemci yönergeleri dahil) seçer.
 
 *Sabit ifadenin* tüm oluşumları false ise veya **#elif** yönergesi görünmüyorsa, Önişlemci, **#else** yan tümcesinden sonra metin bloğunu seçer. **#Else** yan tümcesi yoksa ve **#if** bloğundaki *sabit ifadenin* tüm örnekleri false olduğunda, hiçbir metin bloğu seçili değildir.
 
@@ -147,7 +148,7 @@ Aşağıdaki örnekteki koşullu derleme deyimleri, adlı önceden tanımlanmı�
 #endif
 ```
 
-İlk **#if** bloğu, iç içe **#if**, **#else**ve **#endif** yönergelerinin oluşan iki kümesini gösterir. İlk yönergeler kümesi yalnızca true ise işlenir `DLEVEL > 5` . Aksi takdirde, **#else** sonraki deyimler işlenir.
+İlk **#if** bloğu, iç içe **#if**, **#else** ve **#endif** yönergelerinin oluşan iki kümesini gösterir. İlk yönergeler kümesi yalnızca true ise işlenir `DLEVEL > 5` . Aksi takdirde, **#else** sonraki deyimler işlenir.
 
 İkinci örnekteki **#elif** ve **#else** yönergeleri, değerini temel alarak dört seçenekten birini yapmak için kullanılır `DLEVEL` . Bu, `STACK` tanımına bağlı olarak 0, 100 veya 200 olarak ayarlanır `DLEVEL` . `DLEVEL`5 ' ten büyükse, ifade
 

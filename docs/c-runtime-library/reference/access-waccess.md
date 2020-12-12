@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _access _waccess'
 title: _access, _waccess
 ms.date: 4/2/2020
 api_name:
@@ -37,18 +38,18 @@ helpviewer_keywords:
 - _waccess function
 - taccess function
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
-ms.openlocfilehash: fdada7f02115f44aa6a7e3c5e9bdfdf5e65f8b2f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d8cb62050482f29be0bef2b8433a65c2730de2fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303745"
 ---
 # <a name="_access-_waccess"></a>_access, _waccess
 
 Bir dosyanın salt okunurdur olup olmadığını belirler. Daha güvenli sürümler kullanılabilir; bkz. [_access_s, _waccess_s](access-s-waccess-s.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _access(
@@ -83,7 +84,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-Dosyalarla birlikte kullanıldığında, **_access** işlevi, belirtilen dosya veya dizinin var olduğunu ve *mod*değeri tarafından belirtilen özniteliklere sahip olup olmadığını belirler. Dizinler ile kullanıldığında **_access** yalnızca belirtilen dizinin mevcut olup olmadığını belirler; Windows 2000 ve sonraki işletim sistemlerinde, tüm dizinlerin okuma ve yazma erişimi vardır.
+Dosyalarla birlikte kullanıldığında, **_access** işlevi, belirtilen dosya veya dizinin var olduğunu ve *mod* değeri tarafından belirtilen özniteliklere sahip olup olmadığını belirler. Dizinler ile kullanıldığında **_access** yalnızca belirtilen dizinin mevcut olup olmadığını belirler; Windows 2000 ve sonraki işletim sistemlerinde, tüm dizinlerin okuma ve yazma erişimi vardır.
 
 |*mod* değeri|İçin dosyayı denetler|
 |------------------|---------------------|
@@ -94,7 +95,7 @@ Dosyalarla birlikte kullanıldığında, **_access** işlevi, belirtilen dosya v
 
 Bu işlev yalnızca dosya ve dizinin salt okunurdur olup olmadığını denetler, dosya sistemi güvenlik ayarlarını denetlemez. İçin bir erişim belirtecine ihtiyacınız vardır. Dosya sistemi güvenliği hakkında daha fazla bilgi için bkz. [erişim belirteçleri](/windows/win32/SecAuthZ/access-tokens). Bu işlevi sağlamak için ATL sınıfı vardır; bkz. [CAccessToken sınıfı](../../atl/reference/caccesstoken-class.md).
 
-**_waccess** , **_access**geniş karakterli bir sürümüdür; _waccess *yol* bağımsız değişkeni **_waccess** , geniş karakterli bir dizedir. **_waccess** ve **_access** aynı şekilde davranır.
+**_waccess** , **_access** geniş karakterli bir sürümüdür; _waccess *yol* bağımsız değişkeni  , geniş karakterli bir dizedir. **_waccess** ve **_access** aynı şekilde davranır.
 
 Bu işlev, parametrelerini doğrular. *Yol* null veya *mod* geçerli bir mod belirtmezse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa işlev öğesini `errno` olarak ayarlar `EINVAL` ve-1 döndürür.
 

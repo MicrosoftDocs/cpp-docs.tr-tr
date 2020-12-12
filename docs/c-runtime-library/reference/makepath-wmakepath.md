@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _makepath _wmakepath'
 title: _makepath, _wmakepath
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _wmakepath function
 - tmakepath function
 ms.assetid: 5930b197-a7b8-46eb-8519-2841a58cd026
-ms.openlocfilehash: 19a20de40bb02e49f618e8e617c9659788dc3e25
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2193c9fafdfea5fbacfef69256e5fd1fbfaf9828
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914390"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299845"
 ---
 # <a name="_makepath-_wmakepath"></a>_makepath, _wmakepath
 
@@ -78,19 +79,19 @@ Tam yol arabelleği.
 İstenen sürücüye karşılık gelen bir harf (A, B, vb.) ve isteğe bağlı bir sonda iki nokta içerir. **_makepath** eksik ise bileşik yola otomatik olarak iki nokta ekler. *Sürücü* **null** veya boş bir dizeye işaret ediyorsa, bileşik *yol* dizesinde bir sürücü harfi görünmez.
 
 *öğesini*<br/>
-Sürücü göstergesini veya gerçek dosya adını içermeyen dizinlerin yolunu içerir. Sondaki eğik çizgi isteğe bağlıdır, bir eğik çizgi (/) veya ters eğik çizgi (\\) ya da her ikisi tek bir *dir* bağımsız değişkeninde kullanılabilir. Sondaki eğik çizgi (/veya \\) belirtilmemişse, otomatik olarak eklenir. *Dır* **null** ise veya boş bir dizeye işaret ediyorsa, bileşik *yol* dizesine dizin yolu eklenmez.
+Sürücü göstergesini veya gerçek dosya adını içermeyen dizinlerin yolunu içerir. Sondaki eğik çizgi isteğe bağlıdır, bir eğik çizgi (/) veya ters eğik çizgi ( \\ ) ya da her ikisi tek bir *dir* bağımsız değişkeninde kullanılabilir. Sondaki eğik çizgi (/veya \\ ) belirtilmemişse, otomatik olarak eklenir. *Dır* **null** ise veya boş bir dizeye işaret ediyorsa, bileşik *yol* dizesine dizin yolu eklenmez.
 
 *fname*<br/>
 Dosya adı uzantıları olmayan taban dosya adını içerir. *Fname* **null** veya boş bir dizeye işaret ediyorsa, bileşik *yol* dizesine dosya adı eklenmez.
 
 *leri*<br/>
-Gerçek dosya adı uzantısını, önde gelen nokta (.) ile veya olmadan içerir. **_makepath** , *EXT*içinde görünmezse dönemi otomatik olarak ekler. *EXT* **null** ise veya boş bir dizeye işaret ediyorsa, bileşik *yol* dizesinde uzantı eklenmez.
+Gerçek dosya adı uzantısını, önde gelen nokta (.) ile veya olmadan içerir. **_makepath** , *EXT* içinde görünmezse dönemi otomatik olarak ekler. *EXT* **null** ise veya boş bir dizeye işaret ediyorsa, bileşik *yol* dizesinde uzantı eklenmez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Makepath** işlevi, tek tek bileşenlerden bir bileşik yol dizesi oluşturur ve sonucu *yolda*depolar. *Yol* , bir sürücü harfi, dizin yolu, dosya adı ve dosya adı uzantısı içerebilir. **_wmakepath** , **_makepath**geniş karakterli bir sürümüdür; **_wmakepath** bağımsız değişkenler geniş karakterli dizelerdir. **_wmakepath** ve **_makepath** aynı şekilde davranır.
+**_Makepath** işlevi, tek tek bileşenlerden bir bileşik yol dizesi oluşturur ve sonucu *yolda* depolar. *Yol* , bir sürücü harfi, dizin yolu, dosya adı ve dosya adı uzantısı içerebilir. **_wmakepath** , **_makepath** geniş karakterli bir sürümüdür; **_wmakepath** bağımsız değişkenler geniş karakterli dizelerdir. **_wmakepath** ve **_makepath** aynı şekilde davranır.
 
-**Güvenlik notunun** Null ile sonlandırılmış bir dize kullanın. Arabellek taşmasını önlemek için, null ile sonlandırılmış dize, *yol* arabelleğinin boyutunu aşmamalıdır. **_makepath** bileşik yol dizesinin uzunluğunun **_MAX_PATH**aşmadığından emin değil. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Güvenlik notunun** Null ile sonlandırılmış bir dize kullanın. Arabellek taşmasını önlemek için, null ile sonlandırılmış dize, *yol* arabelleğinin boyutunu aşmamalıdır. **_makepath** bileşik yol dizesinin uzunluğunun **_MAX_PATH** aşmadığından emin değil. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -102,14 +103,14 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 *Yol* bağımsız değişkeni, tüm yolu tutabilecek kadar büyük olan boş bir arabelleğe işaret etmelidir. Bileşik *yolun* Stdlib. h içinde tanımlanan **_MAX_PATH** sabitinden büyük olmaması gerekir.
 
-Yol **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Ayrıca, **errno** **EINVAL**olarak ayarlanır. Diğer tüm parametrelerde **null** değerlere izin verilir.
+Yol **null** Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Ayrıca, **errno** **EINVAL** olarak ayarlanır. Diğer tüm parametrelerde **null** değerlere izin verilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_makepath**|\<Stdlib. h>|
-|**_wmakepath**|\<Stdlib. h> veya \<wchar. h>|
+|**_makepath**|\<stdlib.h>|
+|**_wmakepath**|\<stdlib.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -153,7 +154,7 @@ Path extracted with _splitpath:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
 [_splitpath, _wsplitpath](splitpath-wsplitpath.md)<br/>
 [_makepath_s, _wmakepath_s](makepath-s-wmakepath-s.md)<br/>

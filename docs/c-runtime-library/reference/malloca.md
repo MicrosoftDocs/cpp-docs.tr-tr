@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _malloca'
 title: _malloca
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - malloca function
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
-ms.openlocfilehash: 64bed4dac2bbaeb60c7b04a600af38f455caf08d
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 8357bc15ba432a0adb390494882ee4b63adf70f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008262"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299806"
 ---
 # <a name="_malloca"></a>_malloca
 
@@ -54,11 +55,11 @@ Yığından ayrılacak bayt sayısı.
 
 **_Malloca** yordamı **`void`** , ayrılan alana bir işaretçi döndürür ve bu, herhangi bir nesne türünün depolanması için uygun şekilde hizalı olarak garanti edilir. *Boyut* 0 ise, **_malloca** sıfır uzunluklu bir öğe ayırır ve bu öğeye geçerli bir işaretçi döndürür.
 
-*Boyut* **_ALLOCA_S_THRESHOLD**değerinden büyükse **_malloca** yığına ayırmaya çalışır ve alan ayrılamadığında null bir işaretçi döndürür. *Boyut* **_ALLOCA_S_THRESHOLD**küçüktür veya eşitse **_malloca** yığına ayrılmaya çalışır ve alan ayrılamadığında bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durumu değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işlemeyi kullanmak yerine, bu özel durumu yakalamak için [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH) kullanmanız gerekir.
+*Boyut* **_ALLOCA_S_THRESHOLD** değerinden büyükse **_malloca** yığına ayırmaya çalışır ve alan ayrılamadığında null bir işaretçi döndürür. *Boyut* **_ALLOCA_S_THRESHOLD** küçüktür veya eşitse **_malloca** yığına ayrılmaya çalışır ve alan ayrılamadığında bir yığın taşması özel durumu oluşturulur. Yığın taşması özel durumu bir C++ özel durumu değil; Bu, yapılandırılmış bir özel durumdur. C++ özel durum işlemeyi kullanmak yerine, bu özel durumu yakalamak için [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH) kullanmanız gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_malloca** , istek **_ALLOCA_S_THRESHOLD**tarafından verilen bayt cinsinden belirli bir boyutu aşarsa program yığınından veya yığında *Boyut* baytları ayırır. **_Malloca** ve **_alloca** arasındaki fark, **_alloca** her zaman yığına ayrılan, boyuttan bağımsız olarak olur. _Alloca **farklı olarak,** ayrılan belleği serbest bırakmak için bir çağrı gerektirmeyen veya buna izin veren **_alloca**aksine, **_malloca** belleği boşaltmak için [_freea](freea.md) kullanılmasını gerektirir. Hata ayıklama modunda **_malloca** her zaman yığından bellek ayırır.
+**_malloca** , istek **_ALLOCA_S_THRESHOLD** tarafından verilen bayt cinsinden belirli bir boyutu aşarsa program yığınından veya yığında *Boyut* baytları ayırır. **_Malloca** ve **_alloca** arasındaki fark, **_alloca** her zaman yığına ayrılan, boyuttan bağımsız olarak olur. _Alloca **farklı olarak,** ayrılan belleği serbest bırakmak için bir çağrı gerektirmeyen veya buna izin veren aksine, **_malloca** belleği boşaltmak için [_freea](freea.md) kullanılmasını gerektirir. Hata ayıklama modunda **_malloca** her zaman yığından bellek ayırır.
 
 Özel durum işleyicisinde (EH) **_malloca** açıkça çağırmak için kısıtlamalar vardır. X86 sınıfı işlemcilerde çalışan EH yordamları kendi bellek çerçevesinde çalışır: kendi görevlerini, kapsayan işlevin yığın işaretçisinin geçerli konumuna bağlı olmayan bellek alanında gerçekleştirirler. En yaygın uygulamalar Windows NT yapılandırılmış özel durum işleme (SEH) ve C++ catch yan tümcesi ifadelerini içerir. Bu nedenle, aşağıdaki senaryolardan herhangi birinde **_malloca** açıkça çağırmak, çağıran Eh yordamına geri dönme sırasında program hatasına neden olur:
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: pError, _wperror'
 title: perror, _wperror
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _wperror function
 - perror function
 ms.assetid: 34fce792-16fd-4673-9849-cd88b54b6cd5
-ms.openlocfilehash: 64b9abe6313cc13e1e20f8f66ba486cdeb3e4892
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e63108ac90170d460ee8a2c86e1db773343c1911
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919328"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304694"
 ---
 # <a name="perror-_wperror"></a>perror, _wperror
 
@@ -64,7 +65,7 @@ Yazdırılacak dize iletisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**PError** işlevi **stderr**'e bir hata iletisi yazdırır. **_wperror** , **_perror**geniş karakterli bir sürümüdür; _wperror *ileti* bağımsız değişkeni **_wperror** geniş karakterli bir dizedir. **_wperror** ve **_perror** aynı şekilde davranır.
+**PError** işlevi **stderr**'e bir hata iletisi yazdırır. **_wperror** , **_perror** geniş karakterli bir sürümüdür; _wperror *ileti* bağımsız değişkeni  geniş karakterli bir dizedir. **_wperror** ve **_perror** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -76,7 +77,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 *ileti* önce, ardından iki nokta üst üste, ardından hatayı üreten son kitaplık çağrısının sistem hata iletisi ve son olarak bir yeni satır karakteri ile yazdırılır. *İleti* null işaretçisiyse veya null bir dize işaretçisiyse, **pError** yalnızca sistem hata iletisini yazdırır.
 
-Hata numarası [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkeninde SAKLANıR (errno içinde tanımlanmıştır). H). Sistem hata iletilerine, hata numarasına göre sıralanmış bir ileti dizisi olan [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişken aracılığıyla erişilir. **pError** , **_sys_errlist**için dizin olarak **errno** değeri kullanarak uygun hata iletisini yazdırır. [_Sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkeninin değeri, **_sys_errlist** dizisindeki en fazla öğe sayısı olarak tanımlanır.
+Hata numarası [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkeninde SAKLANıR (errno içinde tanımlanmıştır). H). Sistem hata iletilerine, hata numarasına göre sıralanmış bir ileti dizisi olan [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)değişken aracılığıyla erişilir. **pError** , **_sys_errlist** için dizin olarak **errno** değeri kullanarak uygun hata iletisini yazdırır. [_Sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) değişkeninin değeri, **_sys_errlist** dizisindeki en fazla öğe sayısı olarak tanımlanır.
 
 Doğru sonuçlar için, bir kitaplık yordamı hata ile döndüğünde **pError** 'ı hemen çağırın. Aksi halde, sonraki çağrılar **errno** değerinin üzerine yazabilir.
 
@@ -86,8 +87,8 @@ Windows işletim sisteminde, bazı errno 'da listelenen bir değer **yok** . H k
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**perror**|\<stdio. h> veya \<Stdlib. h>|
-|**_wperror**|\<stdio. h> veya \<wchar. h>|
+|**perror**|\<stdio.h> veya \<stdlib.h>|
+|**_wperror**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -145,7 +146,7 @@ _strerror says open failed: No such file or directory
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [clearerr](clearerr.md)<br/>
 [ferror](ferror.md)<br/>
-[strerror, _strerror, _wcserror \__wcserror](strerror-strerror-wcserror-wcserror.md)<br/>
+[strerror, _strerror, _wcserror \_ _wcserror](strerror-strerror-wcserror-wcserror.md)<br/>

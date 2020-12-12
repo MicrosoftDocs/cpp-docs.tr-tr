@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: #define yönergesi (C/C++)'
 title: '##define yönergesi (C/C++)'
 ms.date: 08/29/2019
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - '#define directive, syntax'
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-ms.openlocfilehash: e9e5b7a02ee55c05aa44278fbceb9c42f372c443
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6821f775492671d860f4491354fff77e66150101
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300475"
 ---
 # <a name="define-directive-cc"></a>#define yönergesi (C/C++)
 
-**#Define** bir tanımlayıcı ya da bir belirteç dizesiyle parametreli tanımlayıcı ilişkisi olan bir *makro*oluşturur. Makro tanımlandıktan sonra derleyici, kaynak dosyadaki her bir tanımlayıcı oluşumu için belirteç dizesini değiştirebilir.
+**#Define** bir tanımlayıcı ya da bir belirteç dizesiyle parametreli tanımlayıcı ilişkisi olan bir *makro* oluşturur. Makro tanımlandıktan sonra derleyici, kaynak dosyadaki her bir tanımlayıcı oluşumu için belirteç dizesini değiştirebilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#define** *tanımlayıcı* *belirteci-dize*<sub>katılımı</sub>\
 > **#define** *tanımlayıcı* **(** *tanımlayıcı*<sub>opt</sub>**,** ... **,** *tanımlayıcı*<sub>opt</sub> **)** *belirteç-dize*<sub>katılımı</sub>
@@ -36,7 +37,7 @@ ms.locfileid: "91506668"
 
 İkinci sözdizimi formu, parametrelere sahip bir işlev benzeri makroyu tanımlar. Bu form, parantez içinde görünmesi gereken parametrelerin isteğe bağlı bir listesini kabul eder. Makro tanımlandıktan sonra, sonraki *tanımlayıcı*( *tanımlayıcı*<sub>opt</sub>,..., *tanımlayıcı*<sub>opt</sub> ) tekrarının her biri, biçimsel parametreler için değiştirilen gerçek bağımsız değişkenlere sahip *belirteç dize* bağımsız değişkeninin bir sürümüyle değiştirilir.
 
-Biçimsel parametre adları, gerçek değerlerin yerine geçen konumları işaretlemek için *token-string* içinde görünür. Her parametre adı, *belirteç dizesinde*birden çok kez görünebilir ve adlar herhangi bir sırada görünebilir. Çağrıdaki bağımsız değişkenlerin sayısı, makro tanımındaki parametre sayısıyla eşleşmelidir. Parantez kullanımı, karmaşık gerçek bağımsız değişkenlerin doğru şekilde yorumlanmasına karşı garanti garantisi sağlar.
+Biçimsel parametre adları, gerçek değerlerin yerine geçen konumları işaretlemek için *token-string* içinde görünür. Her parametre adı, *belirteç dizesinde* birden çok kez görünebilir ve adlar herhangi bir sırada görünebilir. Çağrıdaki bağımsız değişkenlerin sayısı, makro tanımındaki parametre sayısıyla eşleşmelidir. Parantez kullanımı, karmaşık gerçek bağımsız değişkenlerin doğru şekilde yorumlanmasına karşı garanti garantisi sağlar.
 
 Listedeki biçimsel parametreler virgülle ayrılır. Listedeki her adın benzersiz olması ve listenin parantez içine alınması gerekir. Hiçbir boşluk *tanımlayıcıyı* ve açma parantezini ayırabilirler. Çizgi birleştirme kullanın — `\` birden çok kaynak satırındaki uzun yönergeler için, yeni satır karakterinden hemen önce bir ters eğik çizgi () koyun. Biçimsel parametre adının kapsamı, *token-string*' i sonlandıran yeni satıra genişletilir.
 
@@ -53,7 +54,7 @@ Aşağıdaki bağımsız değişkenlerle makrolar aşağıda verilmiştir **#def
     ((rand()%(int)(((max) + 1)-(min)))+ (min))
 ```
 
-Yan etkileri olan bağımsız değişkenler bazen makroların beklenmedik sonuçlar üretmesine neden olur. Belirli bir biçimsel parametre, *belirteç dizesinde*birden fazla kez görünebilir. Bu biçimsel parametre yan etkileri olan bir ifadeyle değiştirilirse ifade, yan etkileri olan bir kez daha fazla değerlendirilemeyebilir. ( [Belirteç yapıştırma işleci (# #)](../preprocessor/token-pasting-operator-hash-hash.md)altındaki örneklere bakın.)
+Yan etkileri olan bağımsız değişkenler bazen makroların beklenmedik sonuçlar üretmesine neden olur. Belirli bir biçimsel parametre, *belirteç dizesinde* birden fazla kez görünebilir. Bu biçimsel parametre yan etkileri olan bir ifadeyle değiştirilirse ifade, yan etkileri olan bir kez daha fazla değerlendirilemeyebilir. ( [Belirteç yapıştırma işleci (# #)](../preprocessor/token-pasting-operator-hash-hash.md)altındaki örneklere bakın.)
 
 `#undef`Yönergesi, bir tanımlayıcının Önişlemci tanımının unutmasına neden olur. Daha fazla bilgi için [#undef yönergesine](../preprocessor/hash-undef-directive-c-cpp.md) bakın.
 
