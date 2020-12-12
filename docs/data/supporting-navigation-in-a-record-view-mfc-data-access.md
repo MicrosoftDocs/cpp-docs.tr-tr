@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bir kayıt görünümünde Gezintiyi Destekleme (MFC veri erişimi)'
 title: Bir kayıt görünümünde Gezintiyi Destekleme (MFC veri erişimi)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - record views, navigation
 - navigation [C++], in record view
 ms.assetid: 227f2a6d-87c9-4656-807a-8e246965bcce
-ms.openlocfilehash: dcac4c43cf553528d5c84a090f7e4265e3a1321c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 828c514235f9f319c441ba21302b21d56e7611ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319046"
 ---
 # <a name="supporting-navigation-in-a-record-view--mfc-data-access"></a>Bir kayıt görünümünde Gezintiyi Destekleme (MFC veri erişimi)
 
@@ -24,4 +25,4 @@ Bu konu başlığı altında, aşağıdaki bilgiler dahil olmak üzere [CRecordV
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)<br/>
-[ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)
+[ODBC sürücü listesi](../data/odbc/odbc-driver-list.md)

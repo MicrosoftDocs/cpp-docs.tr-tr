@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: add_cv sınıfı'
 title: add_cv Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - add_cv class
 - add_cv
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
-ms.openlocfilehash: 0afeea71daf8358b2aeeefe8d368c135a54a6ad6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bc25efd879a27b3d3af2e5f4db8dd74fafa3fb45
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222634"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319937"
 ---
 # <a name="add_cv-class"></a>add_cv Sınıfı
 
 Türden **`const volatile`** türü oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T>
@@ -35,7 +36,7 @@ Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değiştirilen türün örneği, t `add_cv<T>` `type` **`typedef`** zaten CV niteleyicilerine sahip olmadığı *T* , bir başvuru ya da bir işlev olduğu müddetçe *T* , hem [add_volatile](add-volatile-class.md) hem de [add_const](add-const-class.md)tarafından değiştirilmiş bir üyeye sahiptir.
+Değiştirilen türün örneği, t `add_cv<T>` `type` **`typedef`** zaten CV niteleyicilerine sahip olmadığı  , bir başvuru ya da bir işlev olduğu müddetçe  , hem [add_volatile](add-volatile-class.md) hem de [add_const](add-const-class.md)tarafından değiştirilmiş bir üyeye sahiptir.
 
 `add_cv_t<T>`Yardımcı türü, typedef üyesine erişmek için bir kısayoldur `add_cv<T>` `type` .
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtSetDbgFlag'
 title: _CrtSetDbgFlag
 ms.date: 11/04/2016
 api_name:
@@ -53,16 +54,16 @@ helpviewer_keywords:
 - CRTDBG_CHECK_CRT_DF macro
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: b5657ffb-6178-4cbf-9886-1af904ede94c
-ms.openlocfilehash: 8506b593a579c8dd1791e56c320bd9d8e2ee9ba2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: cbeda5cdd3434e753f873533f4d362243d5aa64a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938623"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319592"
 ---
 # <a name="_crtsetdbgflag"></a>_CrtSetDbgFlag
 
-Hata ayıklama yığını yöneticisinin (yalnızca hata ayıklama sürümü) ayırma davranışını denetlemek için **_Crtdbgflag** bayrağının durumunu alır veya değiştirir.
+Hata ayıklama yığın yöneticisinin ayırma davranışını denetlemek için **_crtDbgFlag** bayrağının durumunu alır veya değiştirir (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,42 +76,42 @@ int _CrtSetDbgFlag(
 ### <a name="parameters"></a>Parametreler
 
 *newFlag*<br/>
-**_Crtdbgflag**için yeni durum.
+**_CrtDbgFlag** için yeni durum.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Crtdbgflag**öğesinin önceki durumunu döndürür.
+**_CrtDbgFlag** önceki durumunu döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtsetdbgflag** işlevi, uygulamanın hata ayıklama yığın yöneticisinin **_Crtdbgflag** bayrağının bit alanlarını değiştirerek bellek ayırmalarını nasıl izlediğini denetlemesine olanak tanır. Bitleri (etkinleştirerek) ayarlayarak, uygulama hata ayıklama yığın yöneticisinden özel hata ayıklama işlemleri gerçekleştirmesini, uygulamanın ne zaman çıkıp raporlamadığında bellek sızıntılarını denetleme, düşük bellek koşullarını serbest bırakılan bellek bloklarının, yığının bağlantılı listesinde kalması ve her ayırma isteğindeki her bir bellek bloğunu inceleyerek yığının bütünlüğünü doğrulaması gerekir. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtsetdbgflag** çağrısı, ön işleme sırasında kaldırılır.
+**_CrtSetDbgFlag** işlevi, uygulamanın hata ayıklama yığın yöneticisinin **_crtDbgFlag** bayrağının bit alanlarını değiştirerek bellek ayırmalarını nasıl izlediğini denetlemesine olanak tanır. Bitleri (etkinleştirerek) ayarlayarak, uygulama hata ayıklama yığın yöneticisinden özel hata ayıklama işlemleri gerçekleştirmesini isteyebilir. Bu uygulama, varsa uygulamanın çıkış yaptığı ve raporlarken, serbest bırakılan bellek bloklarının, yığın bağlantılı listesinde kalması gerektiğini belirterek ve her bir bellek bloğunu her bir ayırma isteğinde inceleyerek yığının bütünlüğünü doğrulamaya yönelik özel hata ayıklama işlemleri gerçekleştirebilir. [_DEBUG](../../c-runtime-library/debug.md) tanımlı olmadığında, **_CrtSetDbgFlag** çağrıları ön işleme sırasında kaldırılır.
 
-Aşağıdaki tabloda **_Crtdbgflag** için bit alanları listelenmiş ve davranışlarını açıklanmaktadır. BITS ayarı daha fazla tanılama çıktısı ve azaltılmış program yürütme hızı ile sonuçlandığından, bu bitler varsayılan olarak ayarlı değildir (kapalı değildir). Bu bit alanları hakkında daha fazla bilgi için bkz. [yığın durum raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details).
+Aşağıdaki tabloda **_crtDbgFlag** için bit alanları listelenmiş ve davranışlarını açıklanmaktadır. BITS ayarı daha fazla tanılama çıktısı ve azaltılmış program yürütme hızı ile sonuçlandığından, bu bitler varsayılan olarak ayarlı değildir (kapalı değildir). Bu bit alanları hakkında daha fazla bilgi için bkz. [yığın durum raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details).
 
 |Bit alanı|Varsayılan|Açıklama|
 |---------------|-------------|-----------------|
-|**_CRTDBG_ALLOC_MEM_DF**|DAYANIR|DAYANIR Hata ayıklama yığın ayırmalarını ve **_Client_block**gibi bellek blok türü tanımlayıcılarının kullanımını etkinleştirin. DIŞINA Yığının bağlantılı listesine yeni ayırmalar ekleyin, ancak blok türünü **_IGNORE_BLOCK**olarak ayarlayın.<br /><br /> Yığın frekansı denetim makrolarıyla de birleştirilebilir.|
-|**_CRTDBG_CHECK_ALWAYS_DF**|KAPALI|DAYANIR Her ayırma ve ayırmayı kaldırma isteğinde [_Crtcheckmemory](crtcheckmemory.md) çağrısı yapın. Kapalı: **_Crtcheckmemory** açıkça çağrılmalıdır.<br /><br /> Yığın frekansı denetim makroları bu bayrak ayarlandığında hiçbir etkiye sahip değildir.|
-|**_CRTDBG_CHECK_CRT_DF**|KAPALI|DAYANIR **_CRT_BLOCK** türlerini sızıntı algılama ve bellek durumu fark işlemlerine dahil edin. DIŞINA Çalışma zamanı kitaplığı tarafından dahili olarak kullanılan bellek bu işlemler tarafından yok sayılır.<br /><br /> Yığın frekansı denetim makrolarıyla de birleştirilebilir.|
-|**_CRTDBG_DELAY_FREE_MEM_DF**|KAPALI|DAYANIR Serbest bırakılan bellek bloklarını yığının bağlantılı listesinde tutun, **_Free_block** türünü atayın ve bunları 0xDD bayt değeri ile doldurur. DIŞINA Serbest bırakılan blokları yığının bağlantılı listesinde tutmayın.<br /><br /> Yığın frekansı denetim makrolarıyla de birleştirilebilir.|
-|**_CRTDBG_TAAK_CHECK_DF**|KAPALI|DAYANIR Bir [_Crtdumpmemorysızıntıları](crtdumpmemoryleaks.md) çağrısıyla otomatik sızıntı denetimi gerçekleştirin ve uygulamanın ayrılan tüm belleği serbest bir şekilde gerçekleştiremeyeceği bir hata raporu oluşturun. DIŞINA Program çıkışında sızıntı denetimini otomatik olarak gerçekleştirmeyin.<br /><br /> Yığın frekansı denetim makrolarıyla de birleştirilebilir.|
+|**_CRTDBG_ALLOC_MEM_DF**|AÇIK|Açık: hata ayıklama yığın ayırmalarını ve **_CLIENT_BLOCK** gibi bellek blok türü tanımlayıcılarının kullanımını etkinleştirin. Kapalı: yığının bağlantılı listesine yeni ayırmalar ekleyin, ancak blok türünü **_IGNORE_BLOCK** olarak ayarlayın.<br /><br /> Yığın frekansı denetim makrolarıyla de birleştirilebilir.|
+|**_CRTDBG_CHECK_ALWAYS_DF**|KAPALI|Açık: her ayırma ve ayırmayı kaldırma isteğindeki [_CrtCheckMemory](crtcheckmemory.md) çağırın. Kapalı: **_CrtCheckMemory** açıkça çağrılmalıdır.<br /><br /> Yığın frekansı denetim makroları bu bayrak ayarlandığında hiçbir etkiye sahip değildir.|
+|**_CRTDBG_CHECK_CRT_DF**|KAPALI|Açık: **_CRT_BLOCK** türlerini sızıntı algılama ve bellek durumu fark Işlemlerine dahil edin. Kapalı: çalışma zamanı kitaplığı tarafından dahili olarak kullanılan bellek bu işlemler tarafından yok sayılır.<br /><br /> Yığın frekansı denetim makrolarıyla de birleştirilebilir.|
+|**_CRTDBG_DELAY_FREE_MEM_DF**|KAPALI|Açık: yığının bağlantılı listesinde serbest bırakılan bellek bloklarını tutun, **_free_block** türü atayın ve bunları 0xDD bayt değeri ile doldurur. Kapalı: yığın bağlantılı listesinde serbest bırakılmış blokları tutma.<br /><br /> Yığın frekansı denetim makrolarıyla de birleştirilebilir.|
+|**_CRTDBG_LEAK_CHECK_DF**|KAPALI|Açık: bir [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) çağrısıyla otomatik sızıntı denetimi gerçekleştirin ve uygulamanın ayrılan tüm belleği serbest bir şekilde serbest bir şekilde gerçekleştiremeyeceği bir hata raporu oluşturun. Kapalı: program Çıkışta sızıntı denetimini otomatik olarak gerçekleştirmeyin.<br /><br /> Yığın frekansı denetim makrolarıyla de birleştirilebilir.|
 
 **Yığın denetimi sıklık makroları**
 
-C çalışma zamanı kitaplığı 'nın, **malloc**, **realloc**, **Free**ve **_msize**çağrısı sayısına göre hata ayıklama yığınının ( **_CrtCheckMemory**) doğrulanmasını ne sıklıkta gerçekleştireceğini belirtebilirsiniz.
+C çalışma zamanı kitaplığı 'nın, **malloc**, **realloc**, **Free** ve **_msize** çağrı sayısına göre hata ayıklama yığınının (**_CrtCheckMemory**) doğrulanmasını ne sıklıkta gerçekleştireceğini belirtebilirsiniz.
 
-**_Crtsetdbgflag** daha sonra bir değer Için *newFlag* parametresinin üstteki 16 bitini inceler. Belirtilen değer, **_Crtcheckmemory** çağrıları arasındaki **malloc**, **realloc**, **ücretsiz**ve **_msize** çağrılarının sayısıdır. Bu amaçla önceden tanımlanmış dört makro sağlanır.
+**_CrtSetDbgFlag** daha sonra bir değer Için *newFlag* parametresinin üstteki 16 bitini inceler. Belirtilen değer, **_CrtCheckMemory** çağrıları arasındaki **malloc**, **realloc**, **ücretsiz** ve **_msize** çağrılarının sayısıdır. Bu amaçla önceden tanımlanmış dört makro sağlanır.
 
-|Makrosu|_CrtCheckMemory çağrıları arasındaki malloc, realloc, ücretsiz ve _msize çağrılarının sayısı|
+|Makroya|_CrtCheckMemory çağrıları arasındaki malloc, realloc, ücretsiz ve _msize çağrısı sayısı|
 |-----------|------------------------------------------------------------------------------------------|
 |_CRTDBG_CHECK_EVERY_16_DF|16|
 |_CRTDBG_CHECK_EVERY_128_DF|128|
 |_CRTDBG_CHECK_EVERY_1024_DF|1024|
 |_CRTDBG_CHECK_DEFAULT_DF|0 (varsayılan olarak, yığın denetimi yok)|
 
-Varsayılan olarak, **_Crtcheckmemory** , her 1.024 kez **malloc**, **realloc**, **Free**ve **_msize**çağrısı yaptığınızda çağrılır.
+Varsayılan olarak, **_CrtCheckMemory** her 1.024 kez **malloc**, **realloc**, **ücretsiz** ve **_msize** çağırdığınızda çağrılır.
 
-Örneğin, aşağıdaki kod ile her 16 **malloc**, **realloc**, **ücretsiz**ve **_msize** işlemlerinde bir yığın denetimi belirtebilirsiniz:
+Örneğin, her 16 **malloc**, **realloc**, **ücretsiz** ve **_msize** işlemini aşağıdaki kodla bir yığın denetimi belirtebilirsiniz:
 
 ```C
 #include <crtdbg.h>
@@ -129,21 +130,21 @@ int main( )
 }
 ```
 
-_CRTDBG_CHECK_ALWAYS_DF belirtildiğinde *newFlag* parametresinin üst 16 biti yok sayılır. Bu durumda, **malloc**, **realloc**, **Free**ve **_Msize**her çağırdığınızda **_CrtCheckMemory** çağrılır.
+_CRTDBG_CHECK_ALWAYS_DF belirtildiğinde *newFlag* parametresinin üstteki 16 bit yok sayılır. Bu durumda, **malloc**, **realloc**, **ücretsiz** ve **_msize** her çağırdığınızda **_CrtCheckMemory** çağrılır.
 
-*newFlag* , **_Crtdbgflag** öğesine uygulanacak yeni durumdur ve her bir bit alanı için değerlerin bir birleşimidir.
+*newFlag* , **_crtDbgFlag** uygulanacak yeni durumdur ve her bir bit alanı için değerlerin bir birleşimidir.
 
 ### <a name="to-change-one-or-more-of-these-bit-fields-and-create-a-new-state-for-the-flag"></a>Bu bit alanlarından bir veya daha fazlasını değiştirmek ve bayrak için yeni bir durum oluşturmak için
 
-1. Geçerli **_crtDbgFlag** durumunu elde etmek ve döndürülen değeri geçici bir değişkende depolamak Için *newFlag* WITH **_Crtdbg_report_flag** Ile **_CrtSetDbgFlag** çağrısı yapın.
+1. Geçerli **_crtDbgFlag** durumunu almak ve döndürülen değeri geçici bir değişkende depolamak Için *newflag* ile **_CRTDBG_REPORT_FLAG** **_CrtSetDbgFlag** çağırın.
 
 1. Karşılık gelen bit maskeleri olan (uygulama kodunda bildirim sabitlerine göre gösterilen) bir bit düzeyinde **veya** geçici değişkenin herhangi bir bitini açın.
 
-1. Değişkeni uygun bit maskelerinden bit düzeyinde **olmayan** bir bit düzeyinde **ve**yaparak diğer bitleri kapatın.
+1. Değişkeni uygun bit maskelerinden bit düzeyinde **olmayan** bir bit düzeyinde **ve** yaparak diğer bitleri kapatın.
 
-1. **_Crtdbgflag**için yeni durum ayarlamak üzere geçici değişkende depolanan değere eşit olan *newFlag* Ile **_CrtSetDbgFlag** öğesini çağırın.
+1. Yeni durumu **_crtDbgFlag** ayarlamak Için, *newflag* ile **_CrtSetDbgFlag** geçici değişkende depolanan değere eşit olarak çağırın.
 
-Aşağıdaki kod, serbest bırakılan bellek bloklarını yığının bağlantılı listesinde tutarak ve **_Crtcheckmemory** ' ın her ayırma isteğinde çağrılmasına engel olarak düşük bellekli koşulların benzetimini nasıl benzediğini göstermektedir:
+Aşağıdaki kod, serbest bırakılan bellek bloklarını yığının bağlantılı listesinde tutarak ve **_CrtCheckMemory** her ayırma isteğinde çağrıldığından, düşük bellek koşullarının benzetimini nasıl benzediğini göstermektedir:
 
 ```C
 // Get the current state of the flag
@@ -164,15 +165,15 @@ _CrtSetDbgFlag( tmpFlag );
 
 Bellek yönetimine ve hata ayıklama yığınına genel bakış için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
-**_Crtsetdbgflag** işleviyle bir bayrağı devre dışı bırakmak Için, **ve** bit seviyesinde bit düzeyinde **olmayan** bir değişken gerekir.
+**_CrtSetDbgFlag** işleviyle bir bayrağı devre dışı bırakmak için, bit seviyesinde bit düzeyinde **değil** , **ve** değişkeni gerekir.
 
-*NewFlag* geçerli bir değer değilse, bu Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **_crtDbgFlag**öğesinin önceki durumunu döndürür.
+*NewFlag* geçerli bir değer değilse, bu Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **_crtDbgFlag** önceki durumunu döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtSetDbgFlag**|\<Crtdbg. h >|
+|**_CrtSetDbgFlag**|\<crtdbg.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -246,6 +247,6 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>
 [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
 [_CrtCheckMemory](crtcheckmemory.md)<br/>

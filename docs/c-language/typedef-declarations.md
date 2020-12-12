@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: typedef bildirimleri'
 title: Typedef Bildirimleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - typedef declarations
 - types [C], declarations
 ms.assetid: e92a3b82-9269-4bc6-834a-6f431ccac83e
-ms.openlocfilehash: 3d477e33def7168d01f9c5f8a64579fed0b497eb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fdb478d0654f0ee9dca30f89e232e9f36bae3f10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87190071"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319849"
 ---
 # <a name="typedef-declarations"></a>Typedef Bildirimleri
 
@@ -19,7 +20,7 @@ Typedef bildirimi, depolama sınıfı olarak typedef içeren bir bildirimidir. B
 
 Bir typedef bildirimi, bir değişken veya işlev bildirimiyle aynı şekilde yorumlanır, ancak bildirim tarafından belirtilen türün olması yerine tanımlayıcı tür için bir eş anlamlı olur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *bildirim*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirim-belirteçleri init-declarator-list*<sub>opt</sub> **;**
@@ -51,7 +52,7 @@ Bir typedef bildirimi, bir değişken veya işlev bildirimiyle aynı şekilde yo
 
 Bir typedef bildiriminin tür oluşturmadığını unutmayın. Mevcut türler için eş anlamlıları veya diğer yollarla belirtilenebilir türlerin adlarını oluşturur. Bir typedef adı bir tür belirleyici olarak kullanıldığında, bazı tür belirticileriyle birleştirilebilir, ancak diğerleri değildir. Kabul edilebilir değiştiriciler **`const`** ve içerir **`volatile`** .
 
-Typedef adları, ad alanını sıradan tanımlayıcılarla paylaşır (daha fazla bilgi için bkz. [ad alanları](../c-language/name-spaces.md) ). Bu nedenle, bir program bir typedef adına ve aynı ada sahip bir yerel kapsam tanımlayıcısına sahip olabilir. Örnek:
+Typedef adları, ad alanını sıradan tanımlayıcılarla paylaşır (daha fazla bilgi için bkz. [ad alanları](../c-language/name-spaces.md) ). Bu nedenle, bir program bir typedef adına ve aynı ada sahip bir yerel kapsam tanımlayıcısına sahip olabilir. Örneğin:
 
 ```C
 typedef char FlagType;

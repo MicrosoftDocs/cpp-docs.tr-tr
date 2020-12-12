@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: add_volatile sınıfı'
 title: add_volatile Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - add_volatile class
 - add_volatile
 ms.assetid: cde57277-d764-402d-841e-97611ebaab14
-ms.openlocfilehash: e8c213a116ff7a7d4218179f0e944ac4f84a75e5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6f138c9009d127efe2d640124d9af1e114eb0732
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230278"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319875"
 ---
 # <a name="add_volatile-class"></a>add_volatile Sınıfı
 
 **`volatile`** Belirtilen türden bir tür yapar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Ty>
@@ -35,7 +36,7 @@ Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Öğesinin bir örneği `add_volatile<T>` **`typedef`** `type` bir başvuru, bir işlev veya geçici *T* nitelenmiş bir tür *ise t* olan bir üyeye sahiptir, aksi halde **`volatile`** *t*. Diğer ad, `add_volatile_t` üyeye erişmek için bir kısayoldur **`typedef`** `type` .
+Öğesinin bir örneği `add_volatile<T>` **`typedef`** `type` bir başvuru, bir işlev veya geçici  nitelenmiş bir tür *ise t* olan bir üyeye sahiptir, aksi halde **`volatile`** *t*. Diğer ad, `add_volatile_t` üyeye erişmek için bir kısayoldur **`typedef`** `type` .
 
 ## <a name="example"></a>Örnek
 

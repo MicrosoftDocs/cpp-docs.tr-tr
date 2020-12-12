@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: onaylama ve User-Supplied Iletileri (C++)'
 title: Onaylama ve Kullanıcının Sağladığı İletiler (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - '#error%2C assert%2C static_assert [C++]'
 - user-supplied messages [C++], compile time
 ms.assetid: ebf7d885-61c8-4233-b0ae-1c9a38e0f385
-ms.openlocfilehash: a4861b3e1d17835f11f5e148d6b62051a6747f80
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eb0dd5d94ffe49017ecb89f53063993bedd12382
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319579"
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>Onaylama ve Kullanıcının Sağladığı İletiler (C++)
 

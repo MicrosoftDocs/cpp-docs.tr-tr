@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: yer Işaretlerini kullanma'
 title: Yer İşaretlerini Kullanma
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - bookmarks, OLE DB
 - OLE DB providers, bookmark support
 ms.assetid: 7fa1d1a8-5063-4aa9-93ee-815bb9c98fae
-ms.openlocfilehash: 8caa33b3bafbaa9e537d9669aa7b60a9355475ef
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d0cf27a5f93b3e6b00fa6f8cbb69ae7414f4d819
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319163"
 ---
 # <a name="using-bookmarks"></a>Yer İşaretlerini Kullanma
 
-Satır kümesini açmadan önce, sağlayıcıya yer işaretlerini kullanmak istediğinizi söylemeniz gerekir. Bunu yapmak için özelliği `DBPROP_BOOKMARKS` **`true`** özellik kümesi içinde olarak ayarlayın. Sağlayıcı, yer işaretlerini sütun sıfır olarak alır, bu yüzden statik erişimci kullanıyorsanız özel makro BOOKMARK_ENTRY ve `CBookmark` sınıfını kullanmanız gerekir. `CBookmark`, bağımsız değişkenin, yer işareti arabelleğinin bayt cinsinden uzunluğu olduğu bir şablon sınıfıdır. Bir yer işareti için gereken arabellek uzunluğu sağlayıcıya bağlıdır. Aşağıdaki örnekte gösterildiği gibi ODBC OLE DB sağlayıcısını kullanıyorsanız, arabelleğin 4 bayt olması gerekir.
+Satır kümesini açmadan önce, sağlayıcıya yer işaretlerini kullanmak istediğinizi söylemeniz gerekir. Bunu yapmak için özelliği `DBPROP_BOOKMARKS` **`true`** özellik kümesi içinde olarak ayarlayın. Sağlayıcı, yer işaretlerini sütun sıfır olarak alır, bu yüzden statik erişimci kullanıyorsanız özel makro BOOKMARK_ENTRY ve `CBookmark` sınıfını kullanmanız gerekir. `CBookmark` , bağımsız değişkenin, yer işareti arabelleğinin bayt cinsinden uzunluğu olduğu bir şablon sınıfıdır. Bir yer işareti için gereken arabellek uzunluğu sağlayıcıya bağlıdır. Aşağıdaki örnekte gösterildiği gibi ODBC OLE DB sağlayıcısını kullanıyorsanız, arabelleğin 4 bayt olması gerekir.
 
 ```cpp
 class CProducts

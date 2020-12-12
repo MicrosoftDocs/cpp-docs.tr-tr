@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Clang bağlayıcı Özellikleri (Android C++)'
 title: Clang Bağlayıcısı Özellikleri (Android C++)
 ms.date: 10/23/2017
 ms.assetid: 66e88848-116c-4eb0-bc57-183394d35b57
@@ -25,18 +26,18 @@ f1_keywords:
 - VC.Project.VCLinkerTool.Clang.AdditionalOptionsPage
 - VC.Project.VCLinkerTool.Clang.AdditionalDependencies
 - VC.Project.VCLinkerTool.Clang.LibraryDependencies
-ms.openlocfilehash: 55b944040157d13741b992f4ec66c35d1b117d95
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 65cbfb3d77dad3d78d8b343274d0fa65cf3ed457
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446532"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319280"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang bağlayıcı Özellikleri (Android C++)
 
-| Özellik | Açıklama | Yapabileceği |
+| Özellik | Açıklama | Seçenekler |
 |--|--|--|
-| Çıkış Dosyası | Seçeneği, bağlayıcının oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar. (-o) |
+| Çıkış dosyası | Seçeneği, bağlayıcının oluşturduğu programın varsayılan adını ve konumunu geçersiz kılar. (-o) |
 | Ilerlemeyi göster | Bağlayıcı Ilerleme Iletilerini yazdırır. |
 | Sürüm | -Version seçeneği, bağlayıcıya yürütülebilir dosyanın üstbilgisine bir sürüm numarası koymasını söyler. |
 | Ayrıntılı çıktıyı etkinleştir | -Verbose seçeneği, bağlayıcıya hata ayıklama için ayrıntılı iletiler çıkışını söyler. |
@@ -55,5 +56,5 @@ ms.locfileid: "79446532"
 | Yürütülebilir yığın gerektir | Bu seçenek çıktıyı yürütülebilir yığın gerektirmeyen olarak işaretler. |
 | Tüm arşiv | Tüm arşiv kaynaklardaki tüm kodu ve ek bağımlılıkları kullanır. |
 | Ek Seçenekler | Ek seçenekler. |
-| {1&gt;Ek Bağımlılıklar&lt;1} | Bağlantı komut satırına eklenecek ek öğeleri belirtir. |
+| Ek bağımlılıklar | Bağlantı komut satırına eklenecek ek öğeleri belirtir. |
 | Kitaplık bağımlılıkları | Bu seçenek bağlayıcı komut satırına eklenecek ek kitaplıkların belirtilmesine izin verir. Ek kitaplıklar, *LIB* ile başlayan ve *. a* veya *. so* uzantılı bağlayıcı komut satırının sonuna eklenir.  (-lFILE) |

@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: Android yerel etkinlik uygulaması oluşturma'
 title: Android Yerel Etkinlik Uygulaması Oluşturma
 ms.date: 10/17/2019
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
-ms.openlocfilehash: 664729a920076839f5f9b4440768fe3adb846803
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: d8ccccde40c89553d12fd98645cda2877e581273
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924190"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319332"
 ---
 # <a name="create-an-android-native-activity-app"></a>Android Yerel Etkinlik Uygulaması Oluşturma
 
@@ -23,11 +24,11 @@ Bu öğreticide ilk olarak yeni bir Android yerel etkinlik projesi oluşturup bi
 
 ::: moniker range="msvc-150"
 
-1. Visual Studio 'da **Dosya** > **Yeni** > **Proje** ' yi seçin.
+1. Visual Studio 'da **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunda, **Şablonlar** altında **Visual C++** > **platformlar arası** ' ı seçin ve ardından **yerel etkinlik uygulaması (Android)** şablonunu seçin.
+1. **Yeni proje** iletişim kutusunda, **Şablonlar** altında **Visual C++** > **platformlar arası**' ı seçin ve ardından **yerel etkinlik uygulaması (Android)** şablonunu seçin.
 
-1. Uygulamaya *MyAndroidApp* gibi bir ad verin ve ardından **Tamam** ' ı seçin.
+1. Uygulamaya *MyAndroidApp* gibi bir ad verin ve ardından **Tamam**' ı seçin.
 
    ![Yerel etkinlik projesi oluşturma](../cross-platform/media/cppmdd-newproject.png "Yerel etkinlik projesi oluşturma")
 
@@ -39,11 +40,11 @@ Bu öğreticide ilk olarak yeni bir Android yerel etkinlik projesi oluşturup bi
 
 ::: moniker range=">=msvc-160"
 
-1. Visual Studio 'da **Dosya** > **Yeni** > **Proje** ' yi seçin.
+1. Visual Studio 'da **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje oluştur** iletişim kutusunda, **yerel etkinlik uygulaması (Android)** şablonunu seçin ve ardından **İleri** ' yi seçin.
+1. **Yeni proje oluştur** iletişim kutusunda, **yerel etkinlik uygulaması (Android)** şablonunu seçin ve ardından **İleri**' yi seçin.
 
-1. **Yeni projenizi yapılandırın** iletişim kutusunda, **Proje adı** alanına *MyAndroidApp* gibi bir ad girin ve ardından **Oluştur** ' u seçin.
+1. **Yeni projenizi yapılandırın** iletişim kutusunda, **Proje adı** alanına *MyAndroidApp* gibi bir ad girin ve ardından **Oluştur**' u seçin.
 
    Visual Studio yeni çözümü oluşturur ve Çözüm Gezgini açar.
 
@@ -51,7 +52,7 @@ Bu öğreticide ilk olarak yeni bir Android yerel etkinlik projesi oluşturup bi
 
 Yeni Android yerel etkinlik uygulaması çözümü iki proje içerir:
 
-- `MyAndroidApp.NativeActivity` Android 'de yerel etkinlik olarak çalıştırılacak uygulamanız için başvuruları ve birleştirici kodu içerir. Birleştirici kodundan giriş noktalarının uygulanması *Main. cpp* ' dir. Önceden derlenmiş üstbilgiler *pch. h* içinde. Bu yerel etkinlik uygulaması projesi, bir paylaşılan kitaplık olarak derlenir *. bu nedenle* paketleme projesi tarafından çekilir.
+- `MyAndroidApp.NativeActivity` Android 'de yerel etkinlik olarak çalıştırılacak uygulamanız için başvuruları ve birleştirici kodu içerir. Birleştirici kodundan giriş noktalarının uygulanması *Main. cpp*' dir. Önceden derlenmiş üstbilgiler *pch. h* içinde. Bu yerel etkinlik uygulaması projesi, bir paylaşılan kitaplık olarak derlenir *. bu nedenle* paketleme projesi tarafından çekilir.
 
 - `MyAndroidApp.Packaging` Android cihazında veya öykünücüsünde dağıtım için *. apk* dosyası oluşturur. Bu, bildirim özelliklerini ayarladığınız kaynakları ve *AndroidManifest.xml* dosyasını içerir. Ayrıca, ant yapı sürecini denetleyen *build.xml* dosyasını da içerir. Varsayılan olarak, doğrudan Visual Studio 'dan dağıtılabilmesi ve çalıştırmak için başlangıç projesi olarak ayarlanır.
 
@@ -75,7 +76,7 @@ Yükleme ve kurulumunuzu doğrulamak için şablon tarafından oluşturulan uygu
 
      Başka öykünücüleri yüklediyseniz veya bir Android cihazı bağladıysanız, bunları dağıtım hedefi açılan listesinden seçebilirsiniz.
 
-1. Hata ayıklamayı başlatmak için **F5** 'e veya **Shift** + hata ayıklama olmadan başlamak için SHIFT **'e basın** .
+1. Hata ayıklamayı başlatmak için **F5** 'e veya  + hata ayıklama olmadan başlamak için SHIFT **'e basın** .
 
    Varsayılan uygulama, Android öykünücüsünde olduğu gibi görünür.
 
@@ -83,6 +84,6 @@ Yükleme ve kurulumunuzu doğrulamak için şablon tarafından oluşturulan uygu
 
    Visual Studio, kodunuzu yüklemek ve dağıtmak için birkaç saniye geçen öykünücüyü başlatır. Uygulamanız başlatıldıktan sonra, kesme noktaları ayarlayabilir ve kod içinde ilerlemek, Yereller incelemek ve değerleri izlemek için hata ayıklayıcıyı kullanabilirsiniz.
 
-1. **Shift** + Hata ayıklamayı durdurmak için SHIFT **F5** tuşuna basın.
+1.  + Hata ayıklamayı durdurmak için SHIFT **F5** tuşuna basın.
 
    Öykünücü çalışmaya devam eden ayrı bir işlemdir. Kodunuzu aynı öykünücüye birden çok kez düzenleyebilir, derleyebilir ve dağıtabilirsiniz.

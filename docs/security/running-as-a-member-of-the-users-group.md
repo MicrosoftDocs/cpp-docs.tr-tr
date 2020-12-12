@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kullanıcılar grubunun üyesi olarak çalıştırma'
 title: Kullanıcı Grubu Üyesi Olarak Çalıştırma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - user accounts [C++]
 - administrator (not running as) [C++]
 ms.assetid: e48a03ec-d345-49f6-809a-1a291eecbc81
-ms.openlocfilehash: 117ef426950fc9aff5ae41e894f0d7ae898369cd
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7b3f73dc572a3a132300eb0f246f68030f0b27dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319999"
 ---
 # <a name="running-as-a-member-of-the-users-group"></a>Kullanıcı Grubu Üyesi Olarak Çalıştırma
 
@@ -30,7 +31,7 @@ Geliştiricilerin normalde kullandığı Windows Kullanıcı hesapları, kullan�
 
 ## <a name="exposing-customers-to-security-risks"></a>Müşterileri güvenlik risklerine sunma
 
-Yöneticiler grubunun parçası değil geliştiriciler için özellikle önemlidir çünkü geliştirme makinelerini korumaya ek olarak, geliştiricilerin müşterilerin Yöneticiler grubuna katılması gereken kodu yanlışlıkla yazmasını engeller. Geliştirdiğiniz uygulamaları yürütmek için sıralama. Geliştirme sırasında yönetici erişimi gerektiren kod tanıtıldığında, çalışma zamanında başarısız olur ve uygulamanızın artık müşterilerin yönetici olarak çalıştırılmasını gerektirdiğini size uyarır.
+Yöneticiler grubunun parçası değil geliştiriciler için özellikle önemlidir çünkü geliştirme makinelerini korumaya ek olarak, geliştirmekte olan uygulamaları yürütmek için geliştiricilerin müşterilerin Yöneticiler grubuna katılması gereken kodu yanlışlıkla yazmasını engeller. Geliştirme sırasında yönetici erişimi gerektiren kod tanıtıldığında, çalışma zamanında başarısız olur ve uygulamanızın artık müşterilerin yönetici olarak çalıştırılmasını gerektirdiğini size uyarır.
 
 ## <a name="code-that-requires-administrator-privileges"></a>Yönetici ayrıcalıkları gerektiren kod
 
@@ -44,7 +45,7 @@ Bazı kodlar yürütmek için yönetici erişimi gerektirir. Mümkünse, bu kodu
 
 Genellikle, bu eylemlerin uygulama yükleme programlarıyla sınırlı olması gerekir. Bu, kullanıcıların yalnızca geçici olarak yönetici durumunu kullanmasına izin verir.
 
-## <a name="debugging"></a>Hata ayıklama
+## <a name="debugging"></a>Hata Ayıklama
 
 Hata ayıklama grubunun bir parçası haline getirerek, Visual Studio içinde (yerel ve yönetilmeyen), yönetici olmayan tüm uygulamalarda hata ayıklaması yapabilirsiniz. Bu, Işleme Iliştir komutunu kullanarak çalışan bir uygulamaya ekleme olanağını içerir. Ancak, farklı bir kullanıcı tarafından başlatılan yerel veya yönetilen uygulamaların hatalarını ayıklamak için yönetici grubunun bir parçası olması gerekir.
 

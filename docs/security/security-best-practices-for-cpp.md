@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C++ için En Iyi güvenlik uygulamaları'
 title: C++ İçin En İyi Güvenlik Uygulamaları
 ms.date: 05/08/2018
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - security [C++]
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
-ms.openlocfilehash: 63c5567cf1b06d52aa4b458a9ca127039e5c5daf
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 512029445dee7dd995e56b224e454e0f7f68d322
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319977"
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 
@@ -40,7 +41,7 @@ Bu derleyici seçeneği, arabellek taşması, Başlatılmamış bellek, null iş
 [`/DYNAMICBASE` (Adres boşluğu düzeni rastgele seçimini kullan)](../build/reference/dynamicbase-use-address-space-layout-randomization.md)<br/>
 Bu bağlayıcı seçeneği, yürütmenin başlangıcında bellekte farklı konumlara yüklenebilen yürütülebilir bir görüntünün oluşturulmasına olanak tanıyor. Bu seçenek ayrıca, bellekte yığın konumunun çok daha az öngörülebilir hale gelmesini sağlar.
 
-## <a name="security-enhanced-crt"></a>Güvenliği artırılmış CRT
+## <a name="security-enhanced-crt"></a>Security-Enhanced CRT
 
 C çalışma zamanı kitaplığı (CRT), güvenlik riskleri ortaya çıkaran işlevlerin güvenli sürümlerini (örneğin, denetlenmeyen dize kopyalama işlevi) içerecek şekilde geliştirilmiştir `strcpy` . Bu işlevlerin daha eski ve güvenli olmayan sürümleri kullanım dışı olduğundan, derleme zamanı uyarılarına neden olur. Derleme uyarılarını bastırmak yerine bu CRT işlevlerinin güvenli sürümlerini kullanmanızı öneririz. Daha fazla bilgi için bkz. [CRT Içindeki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md).
 

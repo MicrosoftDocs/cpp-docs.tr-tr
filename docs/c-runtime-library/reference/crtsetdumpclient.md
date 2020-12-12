@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtSetDumpClient'
 title: _CrtSetDumpClient
 ms.date: 11/04/2016
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - _CrtSetDumpClient function
 - CrtSetDumpClient function
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
-ms.openlocfilehash: fd2b037ce10f708ab133f31a20636438b0d04b93
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 89a2648aae62fc7f62b04519eacce4e0f67002f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319540"
 ---
 # <a name="_crtsetdumpclient"></a>_CrtSetDumpClient
 
 **_CLIENT_BLOCK** türü bellek bloklarının dökümünü almak için uygulama tanımlı bir işlev yüklüyor (yalnızca hata ayıklama sürümü).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
@@ -61,7 +62,7 @@ Daha önce tanımlanan istemci blok dökümü işlevini döndürür.
 void DumpClientFunction( void *userPortion, size_t blockSize );
 ```
 
-*Userbölüm* bağımsız değişkeni, bellek bloğunun Kullanıcı veri bölümünün başlangıcına yönelik bir Işaretçidir ve *blok boyutu* ayrılan bellek bloğunun boyutunu bayt cinsinden belirtir. İstemci blok dökümü işlevi döndürmelidir **`void`** . **_CrtSetDumpClient** geçirilen istemci dökümü işlevinin Işaretçisi, Crtdbg. h içinde tanımlanan **_CRT_DUMP_CLIENT**türüdür:
+*Userbölüm* bağımsız değişkeni, bellek bloğunun Kullanıcı veri bölümünün başlangıcına yönelik bir Işaretçidir ve *blok boyutu* ayrılan bellek bloğunun boyutunu bayt cinsinden belirtir. İstemci blok dökümü işlevi döndürmelidir **`void`** . **_CrtSetDumpClient** geçirilen istemci dökümü işlevinin Işaretçisi, Crtdbg. h içinde tanımlanan **_CRT_DUMP_CLIENT** türüdür:
 
 ```C
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );

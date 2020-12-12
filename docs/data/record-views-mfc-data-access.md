@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt görünümleri (MFC veri erişimi)'
 title: Kayıt görünümleri (MFC veri erişimi)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - record views [C++]
 - forms [C++], data access tasks
 ms.assetid: 562122d9-01d8-4284-acf6-ea109ab0408d
-ms.openlocfilehash: 31dbd92219f263c625050524279b97ef38ba9ba1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 098a45c0bff0dfaf1aba83f12dddad9a5f943638
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209137"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319059"
 ---
 # <a name="record-views--mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi)
 
 Bu bölüm yalnızca MFC ODBC sınıfları için geçerlidir. OLE DB kaydı görünümleri hakkında daha fazla bilgi için bkz. [COleDBRecordView](../mfc/reference/coledbrecordview-class.md) ve [OLE DB kayıt Görünümlerini kullanma](../data/oledb/using-ole-db-record-views.md).
 
-Form tabanlı veri erişimi uygulamalarını desteklemek için, sınıf kitaplığı [CRecordView](../mfc/reference/crecordview-class.md)sınıfına sağlar. Kayıt görünümü, denetimleri bir [kayıt kümesi](../data/odbc/recordset-odbc.md) nesnesinin alan veri üyelerine doğrudan eşlenmiş olan bir form görünümü nesnesidir (ve dolaylı olarak bir sorgu sonucu veya veri kaynağındaki tablodaki karşılık gelen sütunlara). Temel sınıf [CFormView](../mfc/reference/cformview-class.md)gibi `CRecordView`, bir iletişim şablonu kaynağını temel alır.
+Form tabanlı veri erişimi uygulamalarını desteklemek için, sınıf kitaplığı [CRecordView](../mfc/reference/crecordview-class.md)sınıfına sağlar. Kayıt görünümü, denetimleri bir [kayıt kümesi](../data/odbc/recordset-odbc.md) nesnesinin alan veri üyelerine doğrudan eşlenmiş olan bir form görünümü nesnesidir (ve dolaylı olarak bir sorgu sonucu veya veri kaynağındaki tablodaki karşılık gelen sütunlara). Temel sınıf [CFormView](../mfc/reference/cformview-class.md)gibi `CRecordView` bir iletişim kutusu şablon kaynağını temel alır.
 
 ## <a name="form-uses"></a>Form kullanımları
 
@@ -33,7 +34,7 @@ Formlar çeşitli veri erişim görevleri için yararlıdır:
 
 ## <a name="further-reading-about-record-views"></a>Kayıt görünümleri hakkında daha fazla bilgi
 
-Konulardaki malzemeler hem ODBC tabanlı hem de DAO tabanlı sınıflar için geçerlidir. ODBC için `CRecordView` ve DAO için `CDaoRecordView` kullanın.
+Konulardaki malzemeler hem ODBC tabanlı hem de DAO tabanlı sınıflar için geçerlidir. `CRecordView`ODBC için ve `CDaoRecordView` DAO için kullanın.
 
 Konu başlıkları şunlardır:
 
@@ -50,4 +51,4 @@ Konu başlıkları şunlardır:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri erişim programlama (MFC/ATL)](../data/data-access-programming-mfc-atl.md)<br/>
-[ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)
+[ODBC sürücü listesi](../data/odbc/odbc-driver-list.md)

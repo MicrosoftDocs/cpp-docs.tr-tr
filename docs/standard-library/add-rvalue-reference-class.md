@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: add_rvalue_reference sınıfı'
 title: add_rvalue_reference Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - add_rvalue_reference Class
 ms.assetid: 76b0cb7c-1031-45d0-b409-f03ab0297580
-ms.openlocfilehash: 6d7cc1d45ed3b963de0a0a004c1696ddbf0af440
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f4f5b58ddd2aa1e02b3023a27ef2feba83624326
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319888"
 ---
 # <a name="add_rvalue_reference-class"></a>add_rvalue_reference Sınıfı
 
 Bir nesne veya işlev türü ise, şablon parametresinin bir rvalue başvuru türünü oluşturur. Aksi takdirde, başvuru daraltma semantiklerinden dolayı tür, şablon parametresiyle aynıdır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class T>
@@ -34,7 +35,7 @@ Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`add_rvalue_reference`Sınıfı adlı bir üyeye sahiptir `type` ve bu, *T*Şablon parametresine bir rvalue başvurusu türü için diğer addır. Başvuru daraltma semantiğinin anlamı, nesne olmayan ve işlev olmayan tür *t*Için `T&&` bir *t*. Örneğin, *T* bir lvalue başvuru türü olduğunda, `add_rvalue_reference<T>::type` bir rvalue başvurusu değil, lvalue başvuru türüdür.
+`add_rvalue_reference`Sınıfı adlı bir üyeye sahiptir `type` ve bu, *T* Şablon parametresine bir rvalue başvurusu türü için diğer addır. Başvuru daraltma semantiğinin anlamı, nesne olmayan ve işlev olmayan tür *t* Için `T&&` bir *t*. Örneğin, *T* bir lvalue başvuru türü olduğunda, `add_rvalue_reference<T>::type` bir rvalue başvurusu değil, lvalue başvuru türüdür.
 
 Kolaylık olması için, \<type_traits> `add_rvalue_reference_t` öğesinin üyesi olan bir yardımcı şablonu tanımlar `type` `add_rvalue_reference` .
 
@@ -71,7 +72,7 @@ All static_assert tests of add_rvalue_reference passed.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Üst bilgi\<type_traits>
+Üst bilgi \<type_traits>
 
 Ad alanı: std
 

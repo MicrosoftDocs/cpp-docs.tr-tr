@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtGetDumpClient'
 title: _CrtGetDumpClient
 ms.date: 11/04/2016
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - _CrtGetDumpClient function
 - CrtGetDumpClient function
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
-ms.openlocfilehash: 4b5c6c7d4d123d2d419f104ddaabd57c10ad320e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b4163e6f4f252eddd304f2704c3f5a9aa62b5371
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319758"
 ---
 # <a name="_crtgetdumpclient"></a>_CrtGetDumpClient
 
-**_Client_block** türü bellek bloklarının dökümünü yapmak için geçerli uygulama tanımlı işlevi alır (yalnızca hata ayıklama sürümü).
+**_CLIENT_BLOCK** türü bellek bloklarının dökümünü yapmak için geçerli uygulama tanımlı işlevi alır (yalnızca hata ayıklama sürümü).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
@@ -48,7 +49,7 @@ Geçerli döküm yordamını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtgetdumpclient** Işlevi, C çalışma zamanı hata ayıklama belleği döküm Işlemi Için **_Client_block** bellek bloklarına depolanan nesneleri dökme için geçerli kanca işlevini alır.
+**_CrtGetDumpClient** Işlevi, C çalışma zamanı hata ayıklama belleği döküm işlemi için **_CLIENT_BLOCK** bellek bloklarına depolanan nesneleri dökme eden geçerli kanca işlevini alır.
 
 Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemci tanımlı kanca işlevlerinizi yazma hakkında daha fazla bilgi için bkz. [hata ayıklama kanca Işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -56,7 +57,7 @@ Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemc
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtGetDumpClient**|\<Crtdbg. h >|
+|**_CrtGetDumpClient**|\<crtdbg.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -66,6 +67,6 @@ Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtReportBlockType](crtreportblocktype.md)<br/>
 [_CrtSetDumpClient](crtsetdumpclient.md)<br/>

@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt kümesi: tablo için sınıf bildirme (ODBC)'
 title: 'Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)'
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ODBC recordsets, declaring class for tables
 - recordsets, declaring classes for tables
 ms.assetid: 3fe286c2-3f3d-493d-9d8c-762310939d08
-ms.openlocfilehash: ec5731e7e5058206e210c5a9a5bb1a189c940c91
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0785fbf684942748075729be630a6b309c183d06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212946"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319215"
 ---
 # <a name="recordset-declaring-a-class-for-a-table-odbc"></a>Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)
 
@@ -30,6 +31,6 @@ Kayıt kümeleri için diğer kullanımlar şunları içerir:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>
-[Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
-[Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+[Kayıt kümesi: kayıt kümeleri oluşturma ve kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)<br/>
+[Kayıt kümesi: önceden tanımlanmış sorgu için bir sınıf bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)<br/>
+[Kayıt kümesi: JOIN gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

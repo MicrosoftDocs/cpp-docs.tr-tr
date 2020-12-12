@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtDbgReport _CrtDbgReportW'
 title: _CrtDbgReport, _CrtDbgReportW
 ms.date: 11/04/2016
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - CrtDbgReportW function
 - _CrtDbgReportW function
 ms.assetid: 6e581fb6-f7fb-4716-9432-f0145d639ecc
-ms.openlocfilehash: 986777f755a749e858f7e51b5aa19f10090db13a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 523dc65f846804b13b83bf08b0499b2459fe22ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938834"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319810"
 ---
 # <a name="_crtdbgreport-_crtdbgreportw"></a>_CrtDbgReport, _CrtDbgReportW
 
@@ -66,59 +67,59 @@ int _CrtDbgReportW(
 ### <a name="parameters"></a>Parametreler
 
 *reportType*<br/>
-Rapor türü: **_CRT_WARN**, **_CRT_ERROR**ve **_CRT_ASSERT**.
+Rapor türü: **_CRT_WARN**, **_CRT_ERROR** ve **_CRT_ASSERT**.
 
-*kısaltın*<br/>
-Onaylama/rapor gerçekleştiği veya **null**olan kaynak dosyanın adı işaretçisi.
+*filename*<br/>
+Onaylama/rapor gerçekleştiği veya **null** olan kaynak dosyanın adı işaretçisi.
 
 *onayın*<br/>
-Onaylama/rapor gerçekleştiği veya **null**olan kaynak dosyadaki satır numarası.
+Onaylama/rapor gerçekleştiği veya **null** olan kaynak dosyadaki satır numarası.
 
 *Ladı*<br/>
 Onaylama veya rapor gerçekleştiği modülün (. exe veya. dll) adı işaretçisi.
 
-*format*<br/>
+*formatını*<br/>
 Kullanıcı iletisini oluşturmak için kullanılan format-Control dize işaretçisi.
 
 *değişkendir*<br/>
-*Biçim*tarafından kullanılan isteğe bağlı değiştirme bağımsız değişkenleri.
+*Biçim* tarafından kullanılan isteğe bağlı değiştirme bağımsız değişkenleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Tüm rapor hedefleri için, **_Crtdbgreport** ve **_Crtdbgreportw** bir hata oluşursa-1 ve herhangi bir hatayla karşılaşılması durumunda 0 döndürür. Ancak, rapor hedefi bir hata ayıklama iletisi penceresidir ve Kullanıcı **yeniden dene** düğmesine tıkladığında, bu işlevler 1 döndürür. Kullanıcı hata ayıklama Iletisi penceresindeki **Durdur** düğmesine tıkladığında, bu işlevler hemen durdurulur ve bir değer döndürmez.
+Tüm rapor hedefleri için, **_CrtDbgReport** ve **_CrtDbgReportW** bir hata oluşursa-1 ve herhangi bir hatayla karşılaşılana 0 döndürür. Ancak, rapor hedefi bir hata ayıklama iletisi penceresidir ve Kullanıcı **yeniden dene** düğmesine tıkladığında, bu işlevler 1 döndürür. Kullanıcı hata ayıklama Iletisi penceresindeki **Durdur** düğmesine tıkladığında, bu işlevler hemen durdurulur ve bir değer döndürmez.
 
-[_Rpt, _RPTF](rpt-rptf-rptw-rptfw-macros.md) hata ayıklama makroları, hata ayıklama raporlarını oluşturmak Için **_Crtdbgreport** öğesini çağırır. Bu makroların geniş karakterli sürümlerinin yanı sıra [_Onaylama, _ASSERTE](assert-asserte-assert-expr-macros.md), [_rptw](rpt-rptf-rptw-rptfw-macros.md) ve [_rptfw](rpt-rptf-rptw-rptfw-macros.md), hata ayıklama raporlarını oluşturmak Için **_CrtDbgReportW** kullanın. **_CrtDbgReport** veya **_Crtdbgreportw** 1 değerini döndürdüğünüzde, tam zamanında (JIT) hata ayıklamanın etkin olması şartıyla bu makrolar hata ayıklayıcıyı başlatır.
+_RPT hata ayıklama makroları, hata ayıklama raporlarını oluşturmak için **_CrtDbgReport** çağırır [_RPTF](rpt-rptf-rptw-rptfw-macros.md) . Bu makroların geniş karakterli sürümlerinin yanı sıra [_ASSERT, _ASSERTE](assert-asserte-assert-expr-macros.md), [_rptw](rpt-rptf-rptw-rptfw-macros.md) ve [_rptfw](rpt-rptf-rptw-rptfw-macros.md), hata ayıklama raporlarını oluşturmak için **_CrtDbgReportW** kullanır. **_CrtDbgReport** veya **_CrtDbgReportW** 1 ' i döndürdüğünüzde, tam zamanında (JIT) hata ayıklamanın etkinleştirildiğinden bu makrolar hata ayıklayıcıyı başlatır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtdbgreport** ve **_Crtdbgreportw** , hata ayıklama raporunu üç farklı hedefe gönderebilir: hata ayıklama rapor dosyası, hata ayıklama İzleyicisi (Visual Studio hata ayıklayıcı) veya hata ayıklama iletisi penceresi. Her rapor türü için hedefi veya hedefleri belirtmek için, [_CrtSetReportMode](crtsetreportmode.md) ve [_Crtsetreportfile](crtsetreportfile.md)olmak üzere iki yapılandırma işlevi kullanılır. Bu işlevler, her rapor türü için raporlama hedefinin veya hedeflerin ayrı olarak denetlenmesini sağlar. Örneğin, bir **_CRT_WARN** reportType *'ın yalnızca* hata ayıklama Izleyicisine gönderileceğini, bir **_CRT_ASSERT** *reportType* , bir hata ayıklama iletisi penceresine ve Kullanıcı tanımlı bir rapor dosyasına gönderilmesini belirtmek mümkündür.
+**_CrtDbgReport** ve **_CrtDbgReportW** , hata ayıklama raporunu üç farklı hedefe gönderebilir: hata ayıklama rapor dosyası, hata ayıklama İzleyicisi (Visual Studio hata ayıklayıcı) veya hata ayıklama iletisi penceresi. [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md)iki yapılandırma işlevi, her rapor türü için hedefi veya hedefleri belirtmek için kullanılır. Bu işlevler, her rapor türü için raporlama hedefinin veya hedeflerin ayrı olarak denetlenmesini sağlar. Örneğin, bir **_CRT_WARN** *reportType* 'ın yalnızca hata ayıklama izleyicisine gönderileceğini belirtmek mümkündür. bu, bir tür **_CRT_ASSERT** *reportType* iletisi penceresine ve Kullanıcı tanımlı bir rapor dosyasına gönderilir.
 
-**_Crtdbgreportw** , **_Crtdbgreport**öğesinin geniş karakterli sürümüdür. Tüm çıkış ve dize parametreleri geniş karakterli dizelerdir; Aksi takdirde, tek baytlık karakter sürümü ile aynıdır.
+**_CrtDbgReportW** , **_CrtDbgReport** geniş karakter sürümüdür. Tüm çıkış ve dize parametreleri geniş karakterli dizelerdir; Aksi takdirde, tek baytlık karakter sürümü ile aynıdır.
 
-**_Crtdbgreport** ve **_Crtdbgreportw** [**n** *] bağımsız değişkenlerini*, **printf** ya **da tarafından tanımlanan aynı kuralları kullanarak biçim dizesinde değiştirerek hata ayıklama raporu için Kullanıcı iletisini oluşturun wprintf** işlevleri. Bu işlevler daha sonra hata ayıklama raporunu oluşturur ve geçerli rapor modlarına ve *reportType*için tanımlanan dosyaya göre hedef veya hedefleri tespit edin. Rapor bir hata ayıklama iletisi penceresine gönderildiğinde, *dosya adı*, **LineNumber**ve *ModuleName* pencerede görüntülenen bilgilere dahil edilir.
+**_CrtDbgReport** ve **_CrtDbgReportW** , [**n** *] bağımsız değişkenlerini* **printf** veya **wprintf** işlevleri tarafından tanımlanan kuralların kullanıldığı *Biçim* dizesine geçirerek hata ayıklama raporu için Kullanıcı iletisini oluşturun. Bu işlevler daha sonra hata ayıklama raporunu oluşturur ve geçerli rapor modlarına ve *reportType* için tanımlanan dosyaya göre hedef veya hedefleri tespit edin. Rapor bir hata ayıklama iletisi penceresine gönderildiğinde, *dosya adı*, **LineNumber** ve *ModuleName* pencerede görüntülenen bilgilere dahil edilir.
 
-Aşağıdaki tabloda, rapor modu veya modlar ve dosya için kullanılabilen seçimler ve **_Crtdbgreport** ve **_Crtdbgreportw**için ortaya çıkan davranış listelenmektedir. Bu seçenekler, \<Crtdbg. h > bit bayrakları olarak tanımlanmıştır.
+Aşağıdaki tabloda, rapor modu veya modlar ve dosya için kullanılabilir seçenekler ve **_CrtDbgReport** ve **_CrtDbgReportW** elde edilen davranış listelenmiştir. Bu seçenekler içinde bit bayrakları olarak tanımlanmıştır \<crtdbg.h> .
 
 |Rapor modu|Rapor dosyası|**_CrtDbgReport**, **_CrtDbgReportW** davranışı|
 |-----------------|-----------------|------------------------------------------------|
 |**_CRTDBG_MODE_DEBUG**|Geçerli değil|Windows [OutputDebugString](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) API kullanarak ileti yazar.|
-|**_CRTDBG_MODE_WNDW**|Geçerli değil|İletiyi **iptal**etme, **yeniden deneme**ve **yoksayma** düğmeleriyle birlikte göstermek Için ileti kutusu oluşturmak üzere Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) API 'sini çağırır. Kullanıcı **Durdur**' a tıkladığında **_CrtDbgReport** veya **_CrtDbgReport** hemen iptal edilir. Kullanıcı **yeniden dene**' ye tıkladığında 1 döndürür. Kullanıcı **Yoksay**' ı tıklarsa, yürütme devam eder ve **_CrtDbgReport** ve **_Crtdbgreportw** 0 döndürür. Hata durumu var olduğunda **Yoksay** ' a tıkladığınızda genellikle "tanımsız davranış" ile sonuçlanır.|
-|**_CRTDBG_MODE_FILE**|**__HFILE**|Windows [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile) API 'sini kullanarak Kullanıcı tarafından sağlanan **tanıtıcıya**ileti yazar ve dosya tanıtıcısının geçerliliğini doğrulamaz; uygulama, rapor dosyasını açmaktan ve geçerli bir dosya tanıtıcısını geçirmekten sorumludur.|
+|**_CRTDBG_MODE_WNDW**|Geçerli değil|İletiyi **iptal** etme, **yeniden deneme** ve **yoksayma** düğmeleriyle birlikte göstermek Için ileti kutusu oluşturmak üzere Windows [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) API 'sini çağırır. Kullanıcı **iptal**' i tıklarsa **_CrtDbgReport** veya **_CrtDbgReport** hemen iptal edilir. Kullanıcı **yeniden dene**' ye tıkladığında 1 döndürür. Kullanıcı **Yoksay**' ı tıklarsa, yürütme devam eder ve **_CrtDbgReport** ve **_CrtDbgReportW** 0 döndürür. Hata durumu var olduğunda **Yoksay** ' a tıkladığınızda genellikle "tanımsız davranış" ile sonuçlanır.|
+|**_CRTDBG_MODE_FILE**|**__HFILE**|Windows [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile) API 'sini kullanarak Kullanıcı tarafından sağlanan **tanıtıcıya** ileti yazar ve dosya tanıtıcısının geçerliliğini doğrulamaz; uygulama, rapor dosyasını açmaktan ve geçerli bir dosya tanıtıcısını geçirmekten sorumludur.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|**Stderr**'e ileti yazar.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|**Stdout**'a ileti yazar.|
 
-Rapor bir, iki veya üç hedefe veya hiç hedefe gönderilebilir. Rapor modunu veya modlarını ve rapor dosyasını belirtme hakkında daha fazla bilgi için, bkz. [_Crtsetreportmode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevleri. Hata ayıklama makroları ve raporlama işlevlerini kullanma hakkında daha fazla bilgi için bkz: [Raporlama makroları](/visualstudio/debugger/macros-for-reporting).
+Rapor bir, iki veya üç hedefe veya hiç hedefe gönderilebilir. Rapor modunu veya modlarını ve rapor dosyasını belirtme hakkında daha fazla bilgi için [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevlerine bakın. Hata ayıklama makroları ve raporlama işlevlerini kullanma hakkında daha fazla bilgi için bkz: [Raporlama makroları](/visualstudio/debugger/macros-for-reporting).
 
-Uygulamanızın **_Crtdbgreport** ve **_Crtdbgreportw**tarafından sağlanmasından daha fazla esneklik ihtiyacı varsa, kendi raporlama Işlevinizi yazabilir ve [_Crtsetreporthook](crtsetreporthook.md) kullanarak C çalışma zamanı kitaplığı raporlama mekanizmasına bağlayabilirsiniz. çalışmayacaktır.
+Uygulamanızın **_CrtDbgReport** ve **_CrtDbgReportW** tarafından sağlanmasından daha fazla esneklik gerekiyorsa, kendi raporlama işlevinizi yazabilir ve [_CrtSetReportHook](crtsetreporthook.md) işlevini kullanarak C çalışma zamanı kitaplığı raporlama mekanizmasına bağlayabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtDbgReport**|\<Crtdbg. h >|
-|**_CrtDbgReportW**|\<Crtdbg. h >|
+|**_CrtDbgReport**|\<crtdbg.h>|
+|**_CrtDbgReportW**|\<crtdbg.h>|
 
-**_Crtdbgreport** ve **_Crtdbgreportw** , Microsoft uzantılarıdır. Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_CrtDbgReport** ve **_CrtDbgReportW** Microsoft uzantılarıdır. Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -141,7 +142,7 @@ Rapor işlevinin nasıl değiştirileceği hakkında bir örnek için bkz. [crt_
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtSetReportMode](crtsetreportmode.md)<br/>
 [_CrtSetReportFile](crtsetreportfile.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>

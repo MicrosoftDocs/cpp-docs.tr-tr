@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: C++ ile platformlar arası mobil geliştirme'
 title: C++ ile platformlar arası mobil geliştirmeyi yükleme
 ms.date: 10/17/2019
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-ms.openlocfilehash: b9a6b78450969f5228ccf16cc7b0cff02a4d3b1e
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 45059cbadcd8e8c304c65262ffcb89bf767095e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319228"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>C++ ile platformlar arası mobil geliştirmeyi yükleme
 
@@ -70,7 +71,7 @@ Visual Studio Yükleyicisi, C++ iş yüküne **sahip bir mobil geliştirme** iç
 
 1. **Iş yükleri** sekmesi seçili olduğunda, aşağı kaydırın ve Visual Studio yükleyicisi C++ iş yüküne **sahip mobil geliştirmeyi** seçin. Bu iş yükü seçildiğinde, C++ geliştirmesi için gereken diğer bileşenler de seçilidir. Aynı anda yüklemek için diğer iş yüklerini ve ayrı bileşenleri de seçebilirsiniz. UWP 'yi de hedefleyen platformlar arası kod oluşturmak için **Evrensel Windows platformu geliştirme** iş yükünü seçin.
 
-1. **Yükleme ayrıntıları** bölmesinde, **C++ ile mobil geliştirme** ' ı genişletin. **Isteğe bağlı** bölümünde, NDK, Google Android Emulator, Intel Hardware Accelerated Execution Manager ve IncrediBuild Build Acceleration aracının ek sürümlerini seçebilirsiniz.
+1. **Yükleme ayrıntıları** bölmesinde, **C++ ile mobil geliştirme**' ı genişletin. **Isteğe bağlı** bölümünde, NDK, Google Android Emulator, Intel Hardware Accelerated Execution Manager ve IncrediBuild Build Acceleration aracının ek sürümlerini seçebilirsiniz.
 
 1. Varsayılan olarak, bir veya daha fazla Android SDK Kurulum bileşeni iş yüküne dahildir. Android SDK ek sürümleri mevcuttur. Yüklemenize bir tane eklemek için, **tek tek bileşenler** sekmesini seçin, sonra seçiminizi yapmak için SDK 'lar **, kitaplıklar ve çerçeveler** bölümüne gidin.
 
@@ -99,13 +100,13 @@ Android SDK öykünücülerini kullanmak için donanım hızlandırmayı ayarlam
 
 ### <a name="to-set-the-paths-for-third-party-tools"></a>Üçüncü taraf araçların yollarını ayarlamak için
 
-1. Visual Studio menü çubuğunda **Araçlar**  >  **Seçenekler** ' i seçin.
+1. Visual Studio menü çubuğunda **Araçlar**  >  **Seçenekler**' i seçin.
 
-1. **Seçenekler** iletişim kutusunda **platformlar arası**  >  **C++**  >  **Android** ' i seçin.
+1. **Seçenekler** iletişim kutusunda **platformlar arası**  >  **C++**  >  **Android**' i seçin.
 
    ![Android araç yolu seçenekleri](../cross-platform/media/cppmdd-options-android.png "Android araç yolu seçenekleri")
 
-1. Bir araç tarafından kullanılan yolu değiştirmek için yolun yanındaki onay kutusunu işaretleyin ve metin kutusunda klasör yolunu düzenleyin. Klasörü seçmek için bir **Konum Seç** iletişim kutusunu açmak için de ( **...** ) düğmesini kullanabilirsiniz.
+1. Bir araç tarafından kullanılan yolu değiştirmek için yolun yanındaki onay kutusunu işaretleyin ve metin kutusunda klasör yolunu düzenleyin. Klasörü seçmek için bir **Konum Seç** iletişim kutusunu açmak için de (**...**) düğmesini kullanabilirsiniz.
 
 1. Özel araç klasörü konumlarını kaydetmek için **Tamam ' ı** seçin.
 

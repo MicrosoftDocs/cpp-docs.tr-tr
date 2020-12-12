@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C2300 Ile derleyici hataları C2399 arasındaki'
 title: C2300 ile C2399 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
@@ -56,125 +57,125 @@ helpviewer_keywords:
 - C2398
 - C2399
 ms.assetid: 07ca45b5-b2f0-4049-837b-40a7a3caed88
-ms.openlocfilehash: 28ab73857b46fed29e2ba8d7bc051ffb81b54bb3
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 95763db7f8be0c0918d2f15f515f327325c386dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857362"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318955"
 ---
 # <a name="compiler-errors-c2300-through-c2399"></a>C2300 ile C2399 arasındaki derleyici hataları
 
-Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
+Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata iletilerinin bir alt kümesini açıklar.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|`Message`|
+|Hata|İleti|
 |-----------|-------------|
-|[Derleyici Hatası C2300](compiler-error-c2300.md)|'*sınıfı*': sınıf adında bir yok edici yok ' ~*sınıfı*'|
-|[Derleyici Hatası C2301](compiler-error-c2301.md)|Sol ' -> ~*tanımlayıcı*' sınıfını/yapıya/birleşime işaret etmelidir|
-|[Derleyici Hatası C2302](compiler-error-c2302.md)|Sol '. ~*tanımlayıcı*' sınıf/yapı/birleşim türünde olmalıdır|
-|Derleyici Hatası C2303|Yapılandırılmış özel durum işleme bir eş yordamda kullanılamaz|
-|Derleyici Hatası C2304|'*anahtar sözcüğü*' bir catch bloğu içinde kullanılamaz|
-|Derleyici Hatası C2305|'*dosya*' Bu modül için hata ayıklama bilgilerini içermiyor|
-|Derleyici Hatası C2306|'*dosya*' Bu modülün en son hata ayıklama bilgileri içermiyor|
-|[Derleyici Hatası C2307](compiler-error-c2307.md)|pragma *yönergesi* Artımlı derleme etkinleştirildiyse, işlevin dışına taşınmalıdır|
-|[Derleyici Hatası C2308](compiler-error-c2308.md)|uyumsuz dizeler birleştiriliyor|
-|[Derleyici Hatası C2309](compiler-error-c2309.md)|catch işleyicisi parantez içine alınmış bir özel durum bildirimi bekleniyor.|
-|[Derleyici Hatası C2310](compiler-error-c2310.md)|catch işleyicilerinin bir tür belirtmesi gerekir|
-|[Derleyici Hatası C2311](compiler-error-c2311.md)|'*türü*': satırındaki '...' tarafından yakalandı *numarası*|
-|[Derleyici Hatası C2312](compiler-error-c2312.md)|'*type1*': tarafından yakalandı '*type2*' satırındaki *numarası*|
-|[Derleyici Hatası C2313](compiler-error-c2313.md)|'*type1*': başvuruya göre yakalanan ('*type2*') satırındaki *numarası*|
-|Derleyici Hatası C2314|anahtar sözcüğü '*keyword1*' kullanım dışı bırakılmıştır: Kullan '*keyword2*' yerine|
-|[Derleyici Hatası C2315](compiler-error-c2315.md)|'*type1*': başvuru tarafından yakalandı '*type2*' satırındaki *numarası*|
-|[Derleyici Hatası C2316](compiler-error-c2316.md)|'*türü*': yok edici ve/veya kopya oluşturucusu, erişilemez veya silinmiş olarak yakalanamıyor|
-|[Derleyici Hatası C2317](compiler-error-c2317.md)|'satırında başlayan blok deneyin' '*sayı*' hiç catch işleyicisi yok|
-|[Derleyici Hatası C2318](compiler-error-c2318.md)|hiçbir try bloğu bu catch işleyicisiyle ilişkilendirilmedi|
-|[Derleyici Hatası C2319](compiler-error-c2319.md)|' try/catch' bileşik deyim gelmelidir. Eksik ' {'|
-|[Derleyici Hatası C2320](compiler-error-c2320.md)|Beklenen ':' erişim belirticisinden için '*belirticisi*'|
-|Derleyici Hatası C2321|'*tanımlayıcı*' bir anahtar kelimedir ve bu bağlamda kullanılamaz|
-|[Derleyici Hatası C2322](compiler-error-c2322.md)|'*tanımlayıcı*': dllimport'un adresi '*tanımlayıcı*' statik değil|
-|Derleyici Hatası C2323|'*tanımlayıcı*': üye olmayan operator new veya delete işlevleri bildirilemez statik veya genel ad başka bir ad alanı|
-|[Derleyici Hatası C2324](compiler-error-c2324.md)|'*tanımlayıcı*': beklenmeyen sağındaki ':: ~'|
-|[Derleyici Hatası C2325](compiler-error-c2325.md)|'*type1*': sağında beklenmeyen tür ' -> ~': beklenen '*type2*'|
-|[Derleyici Hatası C2326](compiler-error-c2326.md)|'*bildirimci*': işlev erişemiyor '*tanımlayıcı*'|
-|[Derleyici Hatası C2327](compiler-error-c2327.md)|'*tanımlayıcı*': tür adı, statik veya numaralandırıcı değil|
-|Derleyici Hatası C2328|'*anahtar sözcüğü*': anahtar sözcüğü henüz desteklenmiyor|
-|Derleyici Hatası C2329|'*tanımlayıcı*': işlev işaretçileri için __ptr64|
-|Derleyici Hatası C2330|'implementation_key ()' yalnızca #pragma start_map_region/stop_map_region ile sınırlanmış bir bölge içinde geçerlidir|
-|Derleyici Hatası C2331|Erişim '*tanımlayıcı*'artık tanımlanmış'*accessibility1*', daha önce olacak şekilde tanımlandı'*accessibility2*'|
-|[Derleyici Hatası C2332](compiler-error-c2332.md)|'*typedef*': Etiket adı eksik|
-|[Derleyici Hatası C2333](compiler-error-c2333.md)|'*işlevi*': işlev bildiriminde hata; işlev gövdesi atlanıyor|
-|[Derleyici Hatası C2334](compiler-error-c2334.md)|Önceki beklenmeyen belirteçler '*belirteci*'; görünen işlev gövdesi atlanıyor|
-|Derleyici Hatası C2335|'*tanımlayıcı*': bir tür bir işlevin parametre listesine eklenemiyor|
-|Derleyici Hatası C2336|'*türü*': geçersiz tür|
-|[Derleyici Hatası C2337](compiler-error-c2337.md)|'*özniteliği*': öznitelik bulunamadı|
-|[Derleyici Hatası C2338](compiler-error-c2338.md)|*(Dış sağlayıcı hata iletisi)*|
-|Derleyici Hatası C2339|'*tanımlayıcı*': Katıştırılmış IDL içinde geçersiz tür|
-|Derleyici Hatası C2340|'*tanımlayıcı*': 'static' yalnızca kullanılabilir bir sınıf tanımı içinde|
-|[Derleyici Hatası C2341](compiler-error-c2341.md)|'*bölüm*': kesim kullanmak için kullanılmadan önce #pragma data_seg, code_seg veya section kullanılarak tanımlanmalıdır|
-|Derleyici Hatası C2342|sözdizimi hatası: çelişen tür niteleyicileri|
-|Derleyici Hatası C2343|'*bölüm*': çelişen bölüm öznitelikleri|
-|[Derleyici Hatası C2344](compiler-error-c2344.md)|Hizalama (*numarası*): hizalama ikinin üssü olmalıdır|
-|[Derleyici Hatası C2345](compiler-error-c2345.md)|Hizalama (*numarası*): Geçersiz hizalama değeri|
-|[Derleyici Hatası C2346](compiler-error-c2346.md)|'*işlevi*' yerel olarak derlenemez: '*açıklama*'|
-|Derleyici Hatası C2347|Kullanımdan kalktı.|
-|[Derleyici Hatası C2348](compiler-error-c2348.md)|'*türü*': C stili bir toplama değil; katıştırılmış IDL ile dışarı aktarılamaz|
-|[Derleyici Hatası C2349](compiler-error-c2349.md)|'*işlevi*' yönetilen olarak derlenemez: '*açıklama*'; #pragma unmanaged kullanın|
-|[Derleyici Hatası C2350](compiler-error-c2350.md)|'*tanımlayıcı*' statik üyesi değil|
-|[Derleyici Hatası C2351](compiler-error-c2351.md)|artık kullanılmayan C++ oluşturucusu başlatma sözdizimi|
-|[Derleyici Hatası C2352](compiler-error-c2352.md)|'*tanımlayıcı*': statik olmayan üye işlev geçersiz şekilde çağrıldı|
-|[Derleyici Hatası C2353](compiler-error-c2353.md)|özel durum belirtimine izin verilmez|
-|Derleyici Hatası C2354|Kullanımdan kalktı.|
-|[Derleyici Hatası C2355](compiler-error-c2355.md)|'this': yalnızca statik olmayan üye işlevlerin veya statik olmayan veri üyesi başlatıcıları içinde başvurulabilir|
-|[Derleyici Hatası C2356](compiler-error-c2356.md)|başlatma kesiminin çeviri birimi sırasında değiştirmemelidir|
-|[Derleyici Hatası C2357](compiler-error-c2357.md)|'*tanımlayıcı*': bir işlev türü olmalıdır '*türü*'|
-|Derleyici Hatası C2358|'*tanımlayıcı*': statik özellik bir sınıf tanımının dışında tanımlanamaz|
-|Derleyici Hatası C2359|Kullanımdan kalktı.|
-|[Derleyici Hatası C2360](compiler-error-c2360.md)|öğesinin başlatılması '*tanımlayıcı*' 'case' etiketiyle atlandı|
-|[Derleyici Hatası C2361](compiler-error-c2361.md)|öğesinin başlatılması '*tanımlayıcı*' 'default' etiketiyle atlandı|
-|[Derleyici Hatası C2362](compiler-error-c2362.md)|öğesinin başlatılması '*tanımlayıcısı*' tarafından atlandığını ' goto *etiket*'|
-|Derleyici Hatası C2363|derleyici iç sayısal sınır işlevi bir dize sabit değeri bağımsız değişkeni gerektirir|
-|[Derleyici Hatası C2364](compiler-error-c2364.md)|'*türü*': özel öznitelik için geçersiz tür|
-|[Derleyici Hatası C2365](compiler-error-c2365.md)|'*Üye1*': yeniden tanımlama; önceki tanım oldu '*üye2*'|
-|Derleyici Hatası C2366|'*tanımlayıcı*': yeniden tanımlama; implementation_key belirticileri farklı|
-|Derleyici Hatası C2367|Kullanımdan kalktı.|
-|[Derleyici Hatası C2368](compiler-error-c2368.md)|'*tanımlayıcı*': yeniden tanımlama; ayırma belirticileri farklı|
-|[Derleyici Hatası C2369](compiler-error-c2369.md)|'*tanımlayıcı*': yeniden tanımlama; indisler farklı|
-|[Derleyici Hatası C2370](compiler-error-c2370.md)|'*tanımlayıcı*': yeniden tanımlama; depolama sınıfı farklı|
-|[Derleyici Hatası C2371](compiler-error-c2371.md)|'*tanımlayıcı*': yeniden tanımlama; temel türler farklı|
-|[Derleyici Hatası C2372](compiler-error-c2372.md)|'*tanımlayıcı*': yeniden tanımlama; yöneltme türleri farklı|
-|[Derleyici Hatası C2373](compiler-error-c2373.md)|'*tanımlayıcı*': yeniden tanımlama; tür değiştiricileri farklı|
-|[Derleyici Hatası C2374](compiler-error-c2374.md)|'*tanımlayıcı*': yeniden tanımlama; birden fazla başlatma|
-|[Derleyici Hatası C2375](compiler-error-c2375.md)|'*tanımlayıcı*': yeniden tanımlama; bağlantı farklı|
-|[Derleyici Hatası C2376](compiler-error-c2376.md)|'*tanımlayıcı*': yeniden tanımlama; based ayırması farklı|
-|[Derleyici Hatası C2377](compiler-error-c2377.md)|'*tanımlayıcı*': yeniden tanımlama; typedef başka herhangi bir simgeyle aşırı yüklenemez|
-|[Derleyici Hatası C2378](compiler-error-c2378.md)|'*tanımlayıcı*': yeniden tanımlama; simge bir typedef ile aşırı yüklenemez|
-|[Derleyici Hatası C2379](compiler-error-c2379.md)|biçimsel parametre *numarası* yükseltildiğinde farklı türe sahip|
-|[Derleyici Hatası C2380](compiler-error-c2380.md)|öncesinde türler '*tanımlayıcı*' (oluşturucu dönüş türü veya sınıf adının geçerli adlının yeniden tanımlanması geçersiz?)|
-|[Derleyici Hatası C2381](compiler-error-c2381.md)|'*tanımlayıcı*': yeniden tanımlama; '__declspec(noreturn)' veya '[[noreturn]]' farklı|
-|[Derleyici Hatası C2382](compiler-error-c2382.md)|'*tanımlayıcı*': yeniden tanımlama; özel durum belirtimleri farklı|
-|[Derleyici Hatası C2383](compiler-error-c2383.md)|'*tanımlayıcı*': Bu Simgede varsayılan bağımsız değişkenlere izin verilmez|
-|[Derleyici Hatası C2384](compiler-error-c2384.md)|'*üye*': thread_local veya __declspec(thread) yönetilen WinRT sınıfının bir üyesine uygulanamıyor|
-|[Derleyici Hatası C2385](compiler-error-c2385.md)|Belirsiz erişimini '*üye*'|
-|[Derleyici Hatası C2386](compiler-error-c2386.md)|'*tanımlayıcı*': Bu ada sahip bir simge geçerli kapsamda zaten var.|
-|[Derleyici Hatası C2387](compiler-error-c2387.md)|'*tanımlayıcı*': belirsiz taban sınıfı|
-|[Derleyici Hatası C2388](compiler-error-c2388.md)|'*tanımlayıcı*': bir simge hem __declspec(appdomain) hem de __declspec(process) ile bildirimi yapılamaz|
-|[Derleyici Hatası C2389](compiler-error-c2389.md)|'*işleci*': geçersiz işleç 'nullptr'|
-|[Derleyici Hatası C2390](compiler-error-c2390.md)|'*tanımlayıcı*': Geçersiz depolama sınıfı*belirticisi*'|
-|[Derleyici Hatası C2391](compiler-error-c2391.md)|'*tanımlayıcı*': 'friend' tür tanımı sırasında kullanılamaz|
-|[Derleyici Hatası C2392](compiler-error-c2392.md)|'*Üye1*': değişken türler yönetilen WinRT türlerinde, aksi takdirde desteklenmiyor döndürür '*üye2*' üzerine yazılırdı|
-|[Derleyici Hatası C2393](compiler-error-c2393.md)|'*sembol*': per-appdomain simgesi kesiminde ayrılamaz '*segment*'|
-|[Derleyici Hatası C2394](compiler-error-c2394.md)|'*türü*:: işleci *işleci*': CLR/WinRT işleci geçerli değil. En az bir parametre aşağıdaki türlerde olmalıdır:  'T ^', 'T ^ %', 'T ^ &', burada T = '*türü*'|
-|[Derleyici Hatası C2395](compiler-error-c2395.md)|'*türü*:: işleci *işleci*': CLR/WinRT işleci geçerli değil. En az bir parametre aşağıdaki türlerde olmalıdır: 'T', 'T %', 'T &', 'T ^', 'T ^ %', 'T ^ &', burada T = '*türü*'|
-|[Derleyici Hatası C2396](compiler-error-c2396.md)|'*type1*:: işleci *type2*': CLR/WinRT kullanıcı tanımlı dönüştürme işlevi geçerli değil. Dönüştürmek veya Dönüştür: 'T ^', 'T ^ %', 'T ^ &', burada T = '*type1*'|
-|[Derleyici Hatası C2397](compiler-error-c2397.md)|dönüştürme işlemi '*type1*'to'*type2*' bir daraltma dönüşümü gerektirir|
-|Derleyici Hatası c2398 arasındaki|Öğe '*numarası*': dönüştürme '*type1*'to'*type2*' bir daraltma dönüşümü gerektirir|
-|Derleyici Hatası c2399 arasındaki|Kullanımdan kalktı.|
+|[Derleyici hatası C2300](compiler-error-c2300.md)|'*Class*': sınıfta ' ~*Class*' adlı bir yıkıcı yok|
+|[Derleyici hatası C2301](compiler-error-c2301.md)|'->~*Identifier*' sol tarafı sınıfa/yapıya/birleşime işaret etmelidir|
+|[Derleyici hatası C2302](compiler-error-c2302.md)|'. ~*Identifier*' sol tarafında Class/struct/Union türü olmalıdır|
+|Derleyici hatası C2303|Yapılandırılmış özel durum işleme bir eş yordamda kullanılamaz|
+|Derleyici hatası C2304|'*anahtar sözcüğü*' bir catch bloğunun içinde kullanılamaz|
+|Derleyici hatası C2305|'*File*' bu modülle ilgili hata ayıklama bilgileri içermiyor|
+|Derleyici hatası C2306|'*File*' bu modülle ilgili en son hata ayıklama bilgilerini içermiyor|
+|[Derleyici hatası C2307](compiler-error-c2307.md)|Artımlı derleme etkinse pragma *yönergesi* işlevin dışına taşınmalıdır|
+|[Derleyici hatası C2308](compiler-error-c2308.md)|eşleşmeyen dizeler birleştiriliyor|
+|[Derleyici hatası C2309](compiler-error-c2309.md)|catch işleyicisi parantez içinde bir özel durum bildirimi bekliyordu|
+|[Derleyici hatası C2310](compiler-error-c2310.md)|catch işleyicilerinin bir tür belirtmesi gerekir|
+|[Derleyici hatası C2311](compiler-error-c2311.md)|'*Type*': '... ' tarafından yakalandı satır *numarası*|
+|[Derleyici hatası C2312](compiler-error-c2312.md)|'*Type1*': satır *numarasında* '*type2*' tarafından yakalandı|
+|[Derleyici hatası C2313](compiler-error-c2313.md)|'*Type1*': satır *numarasında* başvuruya ('*type2*') göre yakalandı|
+|Derleyici hatası C2314|'*keyword1*' anahtar sözcüğü kullanım dışı: bunun yerine '*keyword2*' kullanın|
+|[Derleyici hatası C2315](compiler-error-c2315.md)|'*Type1*': başvuru, satır *numarasında* '*type2*' tarafından yakalandı|
+|[Derleyici hatası C2316](compiler-error-c2316.md)|'*Type*': yıkıcı ve/veya kopya Oluşturucu erişilemediğinden veya silindiğinden yakalanamıyor|
+|[Derleyici hatası C2317](compiler-error-c2317.md)|'*Number*' satırında başlayan ' TRY ' bloğunda hiç catch işleyicisi yok|
+|[Derleyici hatası C2318](compiler-error-c2318.md)|Bu catch işleyicisiyle ilişkili try bloğu yok|
+|[Derleyici hatası C2319](compiler-error-c2319.md)|' try/catch ' arkasından bir bileşik ifade gelmelidir. ' {' Eksik|
+|[Derleyici hatası C2320](compiler-error-c2320.md)|'*tanımlayıcısı*' erişim belirticisini izlemek için ': ' bekleniyor|
+|Derleyici hatası C2321|'*Identifier*' bir anahtar sözcüktür ve bu bağlamda kullanılamaz|
+|[Derleyici hatası C2322](compiler-error-c2322.md)|'*tanımlayıcı*': '*Identifier*' dllimport 'un adresi statik değil|
+|Derleyici hatası C2323|'*Identifier*': üye olmayan operator new veya delete işlevleri statik olarak veya genel ad alanından başka bir ad alanı içinde bildirilemez|
+|[Derleyici hatası C2324](compiler-error-c2324.md)|'*tanımlayıcı*': ':: ~ ' sağında beklenmeyen|
+|[Derleyici hatası C2325](compiler-error-c2325.md)|'*Type1*': '->~ ' sağında beklenmeyen tür: '*type2*' bekleniyor|
+|[Derleyici hatası C2326](compiler-error-c2326.md)|'*bildirimci*': işlev '*Identifier*' öğesine erişemiyor|
+|[Derleyici hatası C2327](compiler-error-c2327.md)|'*Identifier*': bir tür adı, statik veya Numaralandırıcı değil|
+|Derleyici hatası C2328|'*anahtar sözcüğü*': anahtar sözcük henüz desteklenmiyor|
+|Derleyici hatası C2329|'*tanımlayıcı*': işlev işaretçileri için __ptr64 kullanılamaz|
+|Derleyici hatası C2330|' implementation_key () ' yalnızca #pragma start_map_region/stop_map_region ile sınırlanmış bir bölgede geçerlidir|
+|Derleyici hatası C2331|'*Identifier*' erişimi artık '*accessibility1*' olarak tanımlandı, daha önce '*accessibility2*' olarak tanımlandı|
+|[Derleyici hatası C2332](compiler-error-c2332.md)|'*typedef*': etiket adı eksik|
+|[Derleyici hatası C2333](compiler-error-c2333.md)|'*Function*': işlev bildiriminde hata; işlev gövdesi atlanıyor|
+|[Derleyici hatası C2334](compiler-error-c2334.md)|'*token*' öncesinde beklenmeyen belirteçler; görünen işlev gövdesi atlanıyor|
+|Derleyici hatası C2335|'*tanımlayıcı*': bir tür, işlev parametre listesinde tanıtılamaz|
+|Derleyici hatası C2336|'*Type*': geçersiz tür|
+|[Derleyici hatası C2337](compiler-error-c2337.md)|'*Attribute*': öznitelik bulunamadı|
+|[Derleyici hatası C2338](compiler-error-c2338.md)|*(dış sağlayıcıdan alınan hata iletisi)*|
+|Derleyici hatası C2339|'*tanımlayıcı*': katıştırılmış IDL içinde geçersiz tür|
+|Derleyici hatası C2340|'*tanımlayıcı*': ' static ' yalnızca bir sınıf tanımı içinde kullanılabilir|
+|[Derleyici hatası C2341](compiler-error-c2341.md)|'*section*': segment, kullanılmadan önce #pragma data_seg, code_seg veya bölüm kullanılarak tanımlanmalıdır|
+|Derleyici hatası C2342|sözdizimi hatası: çakışan tür niteleyicileri|
+|Derleyici hatası C2343|'*section*': çakışan bölüm öznitelikleri|
+|[Derleyici hatası C2344](compiler-error-c2344.md)|align (*sayı*): hizalama ikinin üssü olmalıdır|
+|[Derleyici hatası C2345](compiler-error-c2345.md)|align (*sayı*): geçersiz hizalama değeri|
+|[Derleyici hatası C2346](compiler-error-c2346.md)|'*Function*' yerel olarak derlenemez: '*Açıklama*'|
+|Derleyici hatası C2347|Kullanımdan kalktı.|
+|[Derleyici hatası C2348](compiler-error-c2348.md)|'*Type*': C stili bir toplama değil; katıştırılmış IDL içinde verilemez|
+|[Derleyici hatası C2349](compiler-error-c2349.md)|'*Function*' yönetilen olarak derlenemez: '*Açıklama*'; yönetilmeyen #pragma kullan|
+|[Derleyici hatası C2350](compiler-error-c2350.md)|'*Identifier*' statik bir üye değil|
+|[Derleyici hatası C2351](compiler-error-c2351.md)|kullanılmayan C++ Oluşturucusu başlatma sözdizimi|
+|[Derleyici hatası C2352](compiler-error-c2352.md)|'*tanımlayıcı*': statik olmayan üye işlev için geçersiz çağrı|
+|[Derleyici hatası C2353](compiler-error-c2353.md)|özel durum belirtimine izin verilmiyor|
+|Derleyici hatası C2354|Kullanımdan kalktı.|
+|[Derleyici hatası C2355](compiler-error-c2355.md)|' this ': yalnızca statik olmayan üye işlevlerin veya statik olmayan veri üyesi başlatıcılarının içinde başvurulabilir|
+|[Derleyici hatası C2356](compiler-error-c2356.md)|başlatma segmenti çeviri birimi sırasında değişmemelidir|
+|[Derleyici hatası C2357](compiler-error-c2357.md)|'*Identifier*': '*Type*' türünde bir işlev olmalıdır|
+|Derleyici hatası C2358|'*tanımlayıcı*': statik özellik bir sınıf tanımının dışında tanımlanamaz|
+|Derleyici hatası C2359|Kullanımdan kalktı.|
+|[Derleyici hatası C2360](compiler-error-c2360.md)|'*Identifier*' öğesinin başlatılması ' Case ' etiketiyle atlandı|
+|[Derleyici hatası C2361](compiler-error-c2361.md)|'*Identifier*' öğesinin başlatılması ' default ' etiketiyle atlandı|
+|[Derleyici hatası C2362](compiler-error-c2362.md)|'*Identifier*' öğesinin başlatılması ' Goto *Label*' tarafından atlandı|
+|Derleyici hatası C2363|Derleyici iç sayısal sınır işlevi, bir dize sabit değeri bağımsız değişkeni gerektirir|
+|[Derleyici hatası C2364](compiler-error-c2364.md)|'*Type*': özel öznitelik için geçersiz tür|
+|[Derleyici hatası C2365](compiler-error-c2365.md)|'*member1*': yeniden tanımlama; önceki tanım '*member2*' idi|
+|Derleyici hatası C2366|'*tanımlayıcı*': yeniden tanımlama; farklı implementation_key belirticileri|
+|Derleyici hatası C2367|Kullanımdan kalktı.|
+|[Derleyici hatası C2368](compiler-error-c2368.md)|'*tanımlayıcı*': yeniden tanımlama; farklı ayırma tanımlayıcıları|
+|[Derleyici hatası C2369](compiler-error-c2369.md)|'*tanımlayıcı*': yeniden tanımlama; farklı alt simgeler|
+|[Derleyici hatası C2370](compiler-error-c2370.md)|'*tanımlayıcı*': yeniden tanımlama; farklı depolama sınıfı|
+|[Derleyici hatası C2371](compiler-error-c2371.md)|'*tanımlayıcı*': yeniden tanımlama; farklı temel türler|
+|[Derleyici hatası C2372](compiler-error-c2372.md)|'*tanımlayıcı*': yeniden tanımlama; farklı yöneltme türleri|
+|[Derleyici hatası C2373](compiler-error-c2373.md)|'*tanımlayıcı*': yeniden tanımlama; farklı tür değiştiricileri|
+|[Derleyici hatası C2374](compiler-error-c2374.md)|'*tanımlayıcı*': yeniden tanımlama; çoklu başlatma|
+|[Derleyici hatası C2375](compiler-error-c2375.md)|'*tanımlayıcı*': yeniden tanımlama; farklı bağlantı|
+|[Derleyici hatası C2376](compiler-error-c2376.md)|'*tanımlayıcı*': yeniden tanımlama; farklı tabanlı ayırma|
+|[Derleyici hatası C2377](compiler-error-c2377.md)|'*tanımlayıcı*': yeniden tanımlama; TypeDef başka bir simgeyle aşırı yüklenemez|
+|[Derleyici hatası C2378](compiler-error-c2378.md)|'*tanımlayıcı*': yeniden tanımlama; sembol, TypeDef ile aşırı yüklenemez|
+|[Derleyici hatası C2379](compiler-error-c2379.md)|biçimsel parametre *numarası* yükseltildiğinde farklı türe sahip|
+|[Derleyici hatası C2380](compiler-error-c2380.md)|'*Identifier*' öncesinde tür (dönüş türü olan Oluşturucu veya geçerli sınıf adı için geçersiz yeniden tanımlama mi var?)|
+|[Derleyici hatası C2381](compiler-error-c2381.md)|'*tanımlayıcı*': yeniden tanımlama; ' __declspec (noreturn) ' veya ' [[noreturn]] ' farklı|
+|[Derleyici hatası C2382](compiler-error-c2382.md)|'*tanımlayıcı*': yeniden tanımlama; farklı özel durum belirtimleri|
+|[Derleyici hatası C2383](compiler-error-c2383.md)|'*Identifier*': Bu sembolde varsayılan bağımsız değişkenlere izin verilmiyor|
+|[Derleyici hatası C2384](compiler-error-c2384.md)|'*üye*': yönetilen/WinRT sınıfının üyesine thread_local veya __declspec (iş parçacığı) uygulanamıyor|
+|[Derleyici hatası C2385](compiler-error-c2385.md)|'*member*' öğesine belirsiz erişim|
+|[Derleyici hatası C2386](compiler-error-c2386.md)|'*tanımlayıcı*': geçerli kapsamda bu ada sahip bir simge zaten var|
+|[Derleyici hatası C2387](compiler-error-c2387.md)|'*tanımlayıcı*': belirsiz taban sınıf|
+|[Derleyici hatası C2388](compiler-error-c2388.md)|'*tanımlayıcı*': bir simge hem __declspec (AppDomain) hem de __declspec (işlem) ile bildirilemez|
+|[Derleyici hatası C2389](compiler-error-c2389.md)|'*operator*': geçersiz işleç ' nullptr '|
+|[Derleyici hatası C2390](compiler-error-c2390.md)|'*tanımlayıcı*': Hatalı depolama sınıfı '*belirleyicisi*'|
+|[Derleyici hatası C2391](compiler-error-c2391.md)|'*tanımlayıcı*': ' Friend ' tür tanımı sırasında kullanılamaz|
+|[Derleyici hatası C2392](compiler-error-c2392.md)|'*member1*': covaryant dönüş türleri yönetilen/WinRT türlerinde desteklenmez; Aksi takdirde '*member2*' geçersiz kılınır|
+|[Derleyici hatası C2393](compiler-error-c2393.md)|'*symbol*': per-AppDomain simgesi segmenti '*segment*' içinde ayrılamaz|
+|[Derleyici hatası C2394](compiler-error-c2394.md)|'*Type*:: operator *Işleci*': clr/WinRT işleci geçerli değil. En az bir parametre şu türlerde olmalıdır: 'T ^ ', 'T ^% ', 'T ^& ', burada T = '*Type*'|
+|[Derleyici hatası C2395](compiler-error-c2395.md)|'*Type*:: operator *Işleci*': clr/WinRT işleci geçerli değil. En az bir parametre şu türlerde olmalıdır: 'T ', 'T% ', 'T& ', 'T ^ ', 'T ^% ', 'T ^& ', burada T = '*Type*'|
+|[Derleyici hatası C2396](compiler-error-c2396.md)|'*Type1*:: operator *type2*': clr/WinRT Kullanıcı tanımlı dönüştürme işlevi geçerli değil. Ya dönüştürmeniz gerekir: 'T ^ ', 't ^% ', 'T ^& ', burada T = '*Type1*'|
+|[Derleyici hatası C2397](compiler-error-c2397.md)|'*Type1*' öğesinden '*type2*' öğesine dönüştürme bir daraltma dönüştürmesi gerektirir|
+|Derleyici hatası C2398|'*Number*' öğesi: '*Type1*' öğesinden '*type2*' öğesine dönüştürme bir daraltma dönüştürmesi gerektiriyor|
+|Derleyici hatası C2399 arasındaki|Kullanımdan kalktı.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
-[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[C/C++ derleyicisi ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C2000 ile C3999 arasındaki derleyici hataları](../compiler-errors-1/compiler-errors-c2000-c3999.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3084'
 title: Derleyici hatası C3084
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3084
 ms.assetid: 0362cb70-e24e-476f-a24d-8f5bb97c3afd
-ms.openlocfilehash: 337cd7f37bf94c7a3d5cffe6b167d4661e3b0a81
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 8603930e9087f1e407d5e8df65078604836b9a16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751462"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320125"
 ---
 # <a name="compiler-error-c3084"></a>Derleyici hatası C3084
 

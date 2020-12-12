@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2930'
 title: Derleyici hatası C2930
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2930
 ms.assetid: f07eecd1-e5d1-4518-bd89-b1fd2a003a17
-ms.openlocfilehash: b30e614236298cf9a07cbc29e028039903f9748f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 880c6610ca175e9fee1722f4481fea35239bd452
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320352"
 ---
 # <a name="compiler-error-c2930"></a>Derleyici hatası C2930
 

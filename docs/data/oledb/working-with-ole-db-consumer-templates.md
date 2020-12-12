@@ -1,52 +1,53 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: OLE DB tüketici şablonlarıyla çalışma'
 title: OLE DB Tüketici Şablonlarıyla Çalışma
 ms.date: 10/24/2018
 helpviewer_keywords:
 - sample applications [C++], OLE DB Templates
 - OLE DB consumer templates, about consumer templates
 ms.assetid: 526aa897-5961-4396-85cb-c84f77113551
-ms.openlocfilehash: f1cc18d2192a42d22e31ee346f1e233cd7615ac0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 62d4920ab38cf960a3dec0bf8845016a42d798a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319085"
 ---
 # <a name="working-with-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonlarıyla Çalışma
 
 Aşağıdaki konularda, yaygın senaryolarda OLE DB tüketici şablonlarının kullanımına ilişkin bazı örnekler verilmiştir:
 
-- [Veritabanı Öznitelikleriyle Veri Erişimini Basitleştirme](../../data/oledb/simplifying-data-access-with-database-attributes.md)
+- [Veritabanı öznitelikleriyle veri erişimini basitleştirme](../../data/oledb/simplifying-data-access-with-database-attributes.md)
 
-- [Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)
+- [Wizard-Generated Erişimcilerde alan durumu veri üyeleri](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)
 
-- [Basit Bir Satır Kümesinde Geçiş Yapma](../../data/oledb/traversing-a-simple-rowset.md)
+- [Basit bir satır kümesinde geçiş yapma](../../data/oledb/traversing-a-simple-rowset.md)
 
-- [Parametreleştirilmiş Sorgu Verme](../../data/oledb/issuing-a-parameterized-query.md)
+- [Parametreli sorgu verme](../../data/oledb/issuing-a-parameterized-query.md)
 
-- [Veri Getirme](../../data/oledb/fetching-data.md)
+- [Veriler getiriliyor](../../data/oledb/fetching-data.md)
 
-- [Satır Kümelerini Güncelleştirme](../../data/oledb/updating-rowsets.md)
+- [Satır kümelerini güncelleştirme](../../data/oledb/updating-rowsets.md)
 
-- [Saklı Yordamları Kullanma](../../data/oledb/using-stored-procedures.md)
+- [Saklı yordamları kullanma](../../data/oledb/using-stored-procedures.md)
 
-- [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)
+- [Erişimcileri kullanma](../../data/oledb/using-accessors.md)
 
-- [Şema Satır Kümeleri ile Meta Verileri Alma](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)
+- [Şema satır kümeleriyle meta veriler alma](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)
 
-- [OLE DB'de İşlemleri Destekleme](../../data/oledb/supporting-transactions-in-ole-db.md)
+- [OLE DB Işlemler destekleme](../../data/oledb/supporting-transactions-in-ole-db.md)
 
-- [OLE DB Kayıt Görünümlerini Kullanma](../../data/oledb/using-ole-db-record-views.md)
+- [OLE DB kaydı Görünümlerini kullanma](../../data/oledb/using-ole-db-record-views.md)
 
-- [Varolan ADO Kayıt Kümesini Kullanma](../../data/oledb/using-an-existing-ado-recordset.md)
+- [Var olan bir ADO kayıt kümesini kullanma](../../data/oledb/using-an-existing-ado-recordset.md)
 
-- [Başka Bir Tablo Satır için Başvuru İçerirken Sütunu Güncelleştirme](../../data/oledb/updating-a-column-when-another-table-contains-a-reference-to-the-row.md)
+- [Başka bir tablo satıra başvuru Içerdiğinde sütunu güncelleştirme](../../data/oledb/updating-a-column-when-another-table-contains-a-reference-to-the-row.md)
 
-- [Yer İşaretlerini Kullanma](../../data/oledb/using-bookmarks.md)
+- [Yer Işaretlerini kullanma](../../data/oledb/using-bookmarks.md)
 
 - [BLOB Alma](../../data/oledb/retrieving-a-blob.md)
 
-- [Bildirimleri Alma](../../data/oledb/receiving-notifications.md)
+- [Bildirimler alınıyor](../../data/oledb/receiving-notifications.md)
 
 OLE DB tüketicisi oluşturma ve uygulama örneği için bkz. [basit tüketici oluşturma](../../data/oledb/creating-an-ole-db-consumer.md).
 

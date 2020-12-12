@@ -1,14 +1,15 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ve ATL'
 title: MFC ve ATL
 ms.date: 01/24/2018
 ms.assetid: 31b1a3a8-4154-4c4a-af10-fafc23ecdc5c
 ms.topic: overview
-ms.openlocfilehash: a0ad1eac7991655eae5ae1a328145e66031e40dd
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 9e21ebfa317f3d70e18fb8dd8cf77b80399f8f5b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320098"
 ---
 # <a name="mfc-and-atl"></a>MFC ve ATL
 

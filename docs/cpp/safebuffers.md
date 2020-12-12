@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: safebuffers'
 title: safebuffers
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __declspec keyword (C++), safebuffers
 - safebuffers __declspec keyword
 ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
-ms.openlocfilehash: 456e84cfba40a4219f44fe1549272621f79d09a2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8fefa12ffcbd81d58f4f5002e27751f03d7c1cb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213248"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319358"
 ---
 # <a name="safebuffers"></a>safebuffers
 
@@ -20,7 +21,7 @@ ms.locfileid: "87213248"
 
 Derleyiciye bir işlev için arabellek taşması güvenlik denetimlerini eklememesini bildirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 __declspec( safebuffers )
@@ -37,7 +38,7 @@ Uzman düzeyde el ile kod incelemesi veya harici analiz, işlevde arabellek taş
 
 ## <a name="inline-functions"></a>Satır İçi İşlevler
 
-*Birincil bir işlev* , bir *İkincil işlevin*kopyasını eklemek için bir [ıntıl](inline-functions-cpp.md) anahtar sözcüğü kullanabilir. **`__declspec(safebuffers)`** Anahtar sözcüğü bir işleve uygulanmışsa, bu işlev için arabellek taşması algılama bastırılır. Ancak, ıntıl, **`__declspec(safebuffers)`** anahtar sözcüğünü aşağıdaki yollarla etkiler.
+*Birincil bir işlev* , bir *İkincil işlevin* kopyasını eklemek için bir [ıntıl](inline-functions-cpp.md) anahtar sözcüğü kullanabilir. **`__declspec(safebuffers)`** Anahtar sözcüğü bir işleve uygulanmışsa, bu işlev için arabellek taşması algılama bastırılır. Ancak, ıntıl, **`__declspec(safebuffers)`** anahtar sözcüğünü aşağıdaki yollarla etkiler.
 
 **/GS** derleyici seçeneğinin her iki işlev için de belirtildiğini varsayalım, ancak birincil işlev **`__declspec(safebuffers)`** anahtar sözcüğünü belirtiyor. İkincil işlevdeki veri yapıları, bunu güvenlik denetimleri için uygun hale getirir ve işlev bu denetimleri engellemez. Bu durumda:
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4655'
 title: Derleyici Uyarısı (düzey 1) C4655
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4655
 ms.assetid: 540f2c7a-e4a1-49af-84b4-03eeea1bbf41
-ms.openlocfilehash: d4c409c2d69099853a872142e05ef0fcda5a7655
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2573ac5410114a0fe4ff4b074b83bbbb2efc8c97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318798"
 ---
 # <a name="compiler-warning-level-1-c4655"></a>Derleyici Uyarısı (düzey 1) C4655
 

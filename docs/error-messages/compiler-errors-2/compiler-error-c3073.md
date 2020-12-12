@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3073'
 title: Derleyici hatası C3073
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3073
 ms.assetid: b24b9b8b-f9fb-4c3c-a1a0-97fad2081bfc
-ms.openlocfilehash: 0b53e704c14746579a32550726364c062a9ade6f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: e26938d6c708c364bb2447b793abf7d51adb5779
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756753"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320253"
 ---
 # <a name="compiler-error-c3073"></a>Derleyici hatası C3073
 
@@ -19,7 +20,7 @@ ms.locfileid: "74756753"
 
 [/Clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) derlemesinde, derleyici bir başvuru türü için bir kopya Oluşturucu oluşturmaz. Herhangi bir **/clr** derlemesinde, bir tür örneğinin kopyalanmasını beklediğinizi bir başvuru türü için kendi kopya oluşturucuyu tanımlamanız gerekir.
 
-Daha fazla bilgi için bkz [ C++ . başvuru türleri için yığın semantiği](../../dotnet/cpp-stack-semantics-for-reference-types.md).
+Daha fazla bilgi için bkz. [başvuru türleri için C++ yığın semantiği](../../dotnet/cpp-stack-semantics-for-reference-types.md).
 
 ## <a name="example"></a>Örnek
 

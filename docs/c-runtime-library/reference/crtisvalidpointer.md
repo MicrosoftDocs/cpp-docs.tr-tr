@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtIsValidPointer'
 title: _CrtIsValidPointer
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - CrtIsValidPointer function
 - _CrtIsValidPointer function
 ms.assetid: 91c35590-ea5e-450f-a15d-ad8d62ade1fa
-ms.openlocfilehash: 490d2dea097935dee2cd2a003aa28e32f1ced69d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0bc0c3f9cf3ab581a145c626abee5641cf6bd550
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938779"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319696"
 ---
 # <a name="_crtisvalidpointer"></a>_CrtIsValidPointer
 
@@ -59,27 +60,27 @@ Bellek aralığını öğrenmek için okuma/yazma erişilebilirliği.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Crtisvalidpointer** , belirtilen işaretçi null değilse true değerini döndürür. Visual Studio 2010 ' den önceki CRT kitaplık sürümlerinde, bellek aralığı belirtilen işlem veya işlemler için geçerliyse TRUE değerini döndürür. Aksi takdirde, işlev FALSE döndürür.
+**_CrtIsValidPointer** , belirtilen işaretçi null değilse true değerini döndürür. Visual Studio 2010 ' den önceki CRT kitaplık sürümlerinde, bellek aralığı belirtilen işlem veya işlemler için geçerliyse TRUE değerini döndürür. Aksi takdirde, işlev FALSE döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2010 ' deki CRT kitaplığı ile başlayarak, *Boyut* ve *erişim* parametreleri yok sayılır ve **_crtisvalidpointer** yalnızca belirtilen *adresin* null olmadığını doğrular. Bu testin kolayca gerçekleştirilebilmesi için, bu işlevi kullanmanızı önermiyoruz. Visual Studio 2010 ' den önceki sürümlerde işlev, *adreste* başlayan ve *Boyut* baytları için genişleyen bellek aralığının belirtilen erişilebilirlik işlemi veya işlemler için geçerli olduğunu doğrular. *ERIŞIM* doğru olarak ayarlandığında, bellek aralığı hem okuma hem de yazma için doğrulanır. *ERIŞIM* false olduğunda, bellek aralığı yalnızca okuma için onaylanır. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtisvalidpointer** çağrısı, ön işleme sırasında kaldırılır.
+Visual Studio 2010 ' deki CRT kitaplığı ile başlayarak, *Boyut* ve *erişim* parametreleri yok sayılır ve **_CrtIsValidPointer** yalnızca belirtilen *adresin* null olmadığını doğrular. Bu testin kolayca gerçekleştirilebilmesi için, bu işlevi kullanmanızı önermiyoruz. Visual Studio 2010 ' den önceki sürümlerde işlev, *adreste* başlayan ve *Boyut* baytları için genişleyen bellek aralığının belirtilen erişilebilirlik işlemi veya işlemler için geçerli olduğunu doğrular. *ERIŞIM* doğru olarak ayarlandığında, bellek aralığı hem okuma hem de yazma için doğrulanır. *ERIŞIM* false olduğunda, bellek aralığı yalnızca okuma için onaylanır. [_DEBUG](../../c-runtime-library/debug.md) tanımlı olmadığında, **_CrtIsValidPointer** çağrıları ön işleme sırasında kaldırılır.
 
-Bu işlev TRUE veya FALSE döndürdüğünden, basit bir hata ayıklama hata işleme mekanizması oluşturmak için [_Onaylama](assert-asserte-assert-expr-macros.md) makrolarından birine geçirilebilir. Aşağıdaki örnek, bellek aralığı hem okuma hem de yazma işlemleri için geçerli değilse bir onaylama hatasına neden olur:
+Bu işlev TRUE veya FALSE döndürdüğünden, basit bir hata ayıklama hata işleme mekanizması oluşturmak için [_assert](assert-asserte-assert-expr-macros.md) makrolarından birine geçirilebilir. Aşağıdaki örnek, bellek aralığı hem okuma hem de yazma işlemleri için geçerli değilse bir onaylama hatasına neden olur:
 
 ```C
 _ASSERTE( _CrtIsValidPointer( address, size, TRUE ) );
 ```
 
-**_Crtisvalidpointer** 'ın diğer hata ayıklama işlevleri ve makroları ile nasıl kullanılabileceği hakkında daha fazla bilgi için bkz: [Raporlama makroları](/visualstudio/debugger/macros-for-reporting). Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+**_CrtIsValidPointer** diğer hata ayıklama işlevleri ve makroları ile nasıl kullanılabileceği hakkında daha fazla bilgi için bkz. about [Macros](/visualstudio/debugger/macros-for-reporting). Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtIsValidPointer**|\<Crtdbg. h >|
+|**_CrtIsValidPointer**|\<crtdbg.h>|
 
-**_Crtisvalidpointer** bir Microsoft uzantısıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**_CrtIsValidPointer** bir Microsoft uzantısıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -87,8 +88,8 @@ Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-
 
 ## <a name="example"></a>Örnek
 
-[_Crtısvalidheappointer](crtisvalidheappointer.md) konusunun örneğine bakın.
+[_CrtIsValidHeapPointer](crtisvalidheappointer.md) konusunun örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>

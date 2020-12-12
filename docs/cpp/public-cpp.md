@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Public (C++)'
 title: public (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - public keyword [C++]
 ms.assetid: f3e10a59-39f6-4bcd-827e-3e99f8f89497
-ms.openlocfilehash: 0f6b58896cbcb11901721125f9b1a32a99acb357
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1fd9377647568a9f4e2079d93097ca49bd6ed9be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319449"
 ---
 # <a name="public-c"></a>public (C++)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 public:

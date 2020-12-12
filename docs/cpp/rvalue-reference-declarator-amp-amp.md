@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: rvalue başvuru bildirimci: &amp;&amp;'
 title: 'Rvalue başvuru bildirimci: &amp;&amp;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-ms.openlocfilehash: 953aafe79115ad32a172c878eb910dd06b81e3f4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6c88116c5834c027d72874d1377e79799faa80ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319384"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru bildirimci: &amp;&amp;
 
@@ -27,11 +28,11 @@ type-id && cast-expression
 
 Rvalue başvuruları, bir lvalue değerini rvalue ile ayırt etmenizi sağlar. Lvalue başvuruları ve Rvalue başvuruları sözdizimsel ve anlamsal olarak benzerdir, ancak biraz farklı kuralları izler. Lvalues ve rvalues hakkında daha fazla bilgi için bkz. [lvalues ve rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md). Lvalue başvuruları hakkında daha fazla bilgi için bkz. [lvalue başvuru bildirimci: &](../cpp/lvalue-reference-declarator-amp.md).
 
-Aşağıdaki bölümlerde, Rvalue başvurularını *taşıma semantiğinin* ve *kusursuz iletme*uygulamasının nasıl desteklediği açıklanır.
+Aşağıdaki bölümlerde, Rvalue başvurularını *taşıma semantiğinin* ve *kusursuz iletme* uygulamasının nasıl desteklediği açıklanır.
 
 ## <a name="move-semantics"></a>Taşıma semantiği
 
-Rvalue başvuruları, uygulamalarınızın performansını önemli ölçüde artırabilen *taşıma semantiğinin*uygulanmasını destekler. Taşıma semantiği, kaynakları (dinamik olarak ayrılan bellek gibi) bir nesneden diğerine aktaran bir kod yazmanızı sağlar. Taşıma semantiği, kaynakların programın başka bir yerinde başvuramadığı geçici nesnelerden aktarılmasını sağladığından, bu yüzden.
+Rvalue başvuruları, uygulamalarınızın performansını önemli ölçüde artırabilen *taşıma semantiğinin* uygulanmasını destekler. Taşıma semantiği, kaynakları (dinamik olarak ayrılan bellek gibi) bir nesneden diğerine aktaran bir kod yazmanızı sağlar. Taşıma semantiği, kaynakların programın başka bir yerinde başvuramadığı geçici nesnelerden aktarılmasını sağladığından, bu yüzden.
 
 Taşıma semantiğini uygulamak için, genellikle sınıfınıza bir *taşıma Oluşturucu* ve isteğe bağlı olarak bir taşıma atama işleci (**operator =**) sağlarsınız. Kaynakları rvalues olan kopyalama ve atama işlemleri otomatik olarak taşıma semantiğinin avantajlarından yararlanır. Varsayılan kopya oluşturucusunun aksine, derleyici varsayılan bir taşıma Oluşturucusu sağlamaz. Taşıma oluşturucusu yazma ve uygulamanızda kullanma hakkında daha fazla bilgi için bkz. [Taşıma Oluşturucuları ve taşıma atama işleçleri (C++)](../cpp/move-constructors-and-move-assignment-operators-cpp.md).
 

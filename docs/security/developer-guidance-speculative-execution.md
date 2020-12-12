@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kurgusal yürütme tarafı kanalları için C++ Geliştirici Kılavuzu'
 title: Kurgusal yürütme tarafı kanalları için C++ Geliştirici Kılavuzu
 ms.date: 07/10/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Spectre
 - CVE-2017-5753
 - Speculative Execution
-ms.openlocfilehash: 72dffd25eef847d1bdffe61c4a18a27d9cb33644
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 41376f02c04a9baf83fec19791d77c169c73fa31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842461"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97320085"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme tarafı kanalları için C++ Geliştirici Kılavuzu
 
@@ -51,13 +52,13 @@ Mimari perspektifinden, bu kod dizisi `untrusted_index` her zaman en az bir değ
 
 CPU sonunda bu yanlış tahmin tespit ederken, kalan kenar etkileri, sınırların dışına okunan bayt değeri hakkındaki bilgileri açığa çıkarmak üzere CPU önbelleğinde kalabilir `buffer` . Bu yan etkiler, içindeki her bir önbellek satırına ne kadar hızlı erişildiğini inceleyerek sistemde çalışan daha az ayrıcalıklı bir bağlam tarafından algılanabilir `shared_buffer` . Bunu gerçekleştirmek için gerçekleştirilebilecek adımlar şunlardır:
 
-1. ** `ReadByte` `untrusted_index` Birden `buffer_size` az kez çağırın **. Saldırma bağlamı, kurban 'in, `ReadByte` dal tahmine dayalı olarak alınmamasına benzer şekilde (örneğin, RPC aracılığıyla) çağırmasına yol açabilir `untrusted_index` `buffer_size` .
+1. **`ReadByte` `untrusted_index` Birden `buffer_size` az kez çağırın**. Saldırma bağlamı, kurban 'in, `ReadByte` dal tahmine dayalı olarak alınmamasına benzer şekilde (örneğin, RPC aracılığıyla) çağırmasına yol açabilir `untrusted_index` `buffer_size` .
 
-2. **İçindeki `shared_buffer` tüm önbellek çizgilerini temizler **. Saldırma bağlamı, tarafından başvurulan paylaşılan bellek bölgesindeki tüm önbellek çizgilerini boşaltmalıdır `shared_buffer` . Bellek bölgesi paylaşıldığından bu, basittir ve gibi iç bilgiler kullanılarak gerçekleştirilebilir `_mm_clflush` .
+2. **İçindeki `shared_buffer` tüm önbellek çizgilerini temizler**. Saldırma bağlamı, tarafından başvurulan paylaşılan bellek bölgesindeki tüm önbellek çizgilerini boşaltmalıdır `shared_buffer` . Bellek bölgesi paylaşıldığından bu, basittir ve gibi iç bilgiler kullanılarak gerçekleştirilebilir `_mm_clflush` .
 
-3. ** `ReadByte` `untrusted_index` Değerinden `buffer_size` büyük olan öğesini çağırın **. Saldırıda bulunan bağlam, kurban 'in `ReadByte` dalın alınmamasını, yanlış tahmin edecek şekilde çağırmasına neden olur. Bu, işlemcinin, IF bloğunun gövdesini daha büyük bir şekilde yürütmesine olanak sağlar ve bu `untrusted_index` `buffer_size` nedenle, bir sınırların dışında bir okuma ile başa çıkar `buffer` . Sonuç olarak, `shared_buffer` sınır dışında okunan bir gizli dizi değeri kullanılarak dizine alınır ve bu nedenle ilgili önbellek SATıRıNıN CPU tarafından yüklenmesine neden olur.
+3. **`ReadByte` `untrusted_index` Değerinden `buffer_size` büyük olan öğesini çağırın**. Saldırıda bulunan bağlam, kurban 'in `ReadByte` dalın alınmamasını, yanlış tahmin edecek şekilde çağırmasına neden olur. Bu, işlemcinin, IF bloğunun gövdesini daha büyük bir şekilde yürütmesine olanak sağlar ve bu `untrusted_index` `buffer_size` nedenle, bir sınırların dışında bir okuma ile başa çıkar `buffer` . Sonuç olarak, `shared_buffer` sınır dışında okunan bir gizli dizi değeri kullanılarak dizine alınır ve bu nedenle ilgili önbellek SATıRıNıN CPU tarafından yüklenmesine neden olur.
 
-4. ** `shared_buffer` En hızlı şekilde erişildiğini görmek için içindeki her bir önbellek satırını okuyun**. Saldırıda bulunan bağlam, içindeki her bir önbellek satırını okuyabilir `shared_buffer` ve diğerlerinden önemli ölçüde daha hızlı yüklenen önbellek satırını tespit edebilir. Bu, adım 3 ' te getirilen, büyük olasılıkla önbellek satırdır. Bu örnekteki bayt değeri ile Önbellek satırı arasında 1:1 bir ilişki olduğundan, bu, saldırganın sınırların dışında okunan baytın gerçek değerini çıkarması için izin verir.
+4. **`shared_buffer` En hızlı şekilde erişildiğini görmek için içindeki her bir önbellek satırını okuyun**. Saldırıda bulunan bağlam, içindeki her bir önbellek satırını okuyabilir `shared_buffer` ve diğerlerinden önemli ölçüde daha hızlı yüklenen önbellek satırını tespit edebilir. Bu, adım 3 ' te getirilen, büyük olasılıkla önbellek satırdır. Bu örnekteki bayt değeri ile Önbellek satırı arasında 1:1 bir ilişki olduğundan, bu, saldırganın sınırların dışında okunan baytın gerçek değerini çıkarması için izin verir.
 
 Yukarıdaki adımlar, bir CVE-2017-5753 örneğini kullanmaktan yararlanarak TEMIZLEME + yeniden yükleme olarak bilinen bir tekniği kullanmanın bir örneğini sağlar.
 
@@ -71,7 +72,7 @@ Aşağıdaki tabloda, geliştiricilerin bu güvenlik açıklarına karşı endi�
 |----------------|----------------|
 |Sanal makine sınırı|Başka bir sanal makineden güvenilmeyen verileri alan ayrı sanal makinelerde iş yüklerini yalıtmak için uygulamalar risk altında olabilir.|
 |Çekirdek sınırı|Yönetici olmayan bir kullanıcı modundan güvenilmeyen verileri alan çekirdek modu bir cihaz sürücüsü risk altında olabilir.|
-|İşlem sınırı|Yerel sistemde çalışan, uzak yordam çağrısı (RPC), paylaşılan bellek veya diğer Işlem arası Iletişim (IPC) mekanizmaları gibi başka bir işlemden güvenilmeyen verileri alan bir uygulama risk altında olabilir.|
+|İşlem sınırı|Yerel sistemde çalışan, uzak yordam çağrısı (RPC), paylaşılan bellek veya diğer Inter-Process Iletişim (IPC) mekanizmaları gibi başka bir işlemden güvenilmeyen verileri alan bir uygulama risk altında olabilir.|
 |Şifreleme sınırı|Güvenli bir kuşatma (örneğin, Intel SGX) içinde yürütülen ve güvenilir olmayan verileri şifreleme dışından alan bir uygulama risk altında olabilir.|
 |Dil sınırı|Daha yüksek düzeyde bir dilde yazılan güvenilmeyen kodu, ya da tam zamanında (JıT) derleyen ve yürüten bir uygulama riskli olabilir.|
 
@@ -302,7 +303,7 @@ void DispatchMessage(unsigned int untrusted_message_id, unsigned char *buffer, u
 
 ## <a name="mitigation-options"></a>Risk azaltma seçenekleri
 
-Kaynak kodda değişiklik yapılarak, yansımalı yürütme tarafı kanal güvenlik açıkları azaltılabilir. Bu değişiklikler, bir açığa *çıkarma engeli*ekleyerek ya da bir uygulamanın tasarımında değişiklik yaparak, bir güvenlik açığı oluşturarak ya da gizli bilgilerin yansımalı yürütmeye erişilememesi için değişiklikler yaparak bir güvenlik açığının belirli örneklerini azaltmaya yönelik olabilir.
+Kaynak kodda değişiklik yapılarak, yansımalı yürütme tarafı kanal güvenlik açıkları azaltılabilir. Bu değişiklikler, bir açığa *çıkarma engeli* ekleyerek ya da bir uygulamanın tasarımında değişiklik yaparak, bir güvenlik açığı oluşturarak ya da gizli bilgilerin yansımalı yürütmeye erişilememesi için değişiklikler yaparak bir güvenlik açığının belirli örneklerini azaltmaya yönelik olabilir.
 
 ### <a name="speculation-barrier-via-manual-instrumentation"></a>El ile izleme yoluyla yansımalı engel
 

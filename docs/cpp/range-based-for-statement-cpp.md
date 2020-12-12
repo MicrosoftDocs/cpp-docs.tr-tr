@@ -1,28 +1,29 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Aralık tabanlı for deyimleri (C++)'
 title: Range-based for Deyimi (C++)
 ms.date: 11/04/2016
 ms.assetid: 5750ba1d-ba48-4236-a923-e32de8345c2d
-ms.openlocfilehash: 1197080e2e96e0e5c51bc06e93026567a33c7842
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0d32086009190fe69333a2f36ff03bb551396d98
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319397"
 ---
 # <a name="range-based-for-statement-c"></a>Range-based for Deyimi (C++)
 
 `statement` içindeki her öğe için `expression` öğesini tekrar tekrar ve sırayla yürütür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`for (`***for-Range-bildirimi* **`:`** *ifade***`)`**\
 &emsp;*ifade*
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aralık tabanlı ifadeyi kullanarak, **`for`** tekrarlayabilmeniz gereken herhangi bir şey olarak tanımlanmış bir *Aralık*aracılığıyla yürütülmesi gereken döngüler oluşturun — örneğin, `std::vector` veya aralığı bir ve Ile tanımlanmış herhangi bir C++ standart kitaplık sırası `begin()` `end()` . Bölümünde bildirildiği ad, `for-range-declaration` deyimin yereldir **`for`** ve veya içinde yeniden bildirilemez `expression` `statement` . [`auto`](../cpp/auto-cpp.md)Anahtar sözcüğünün deyimin bölümünde tercih edildiğini unutmayın `for-range-declaration` .
+Aralık tabanlı ifadeyi kullanarak, **`for`** tekrarlayabilmeniz gereken herhangi bir şey olarak tanımlanmış bir *Aralık* aracılığıyla yürütülmesi gereken döngüler oluşturun — örneğin, `std::vector` veya aralığı bir ve Ile tanımlanmış herhangi bir C++ standart kitaplık sırası `begin()` `end()` . Bölümünde bildirildiği ad, `for-range-declaration` deyimin yereldir **`for`** ve veya içinde yeniden bildirilemez `expression` `statement` . [`auto`](../cpp/auto-cpp.md)Anahtar sözcüğünün deyimin bölümünde tercih edildiğini unutmayın `for-range-declaration` .
 
-**Visual Studio 2017 ' de yeni:**  Aralık tabanlı **`for`** döngüler artık bunu gerektirmez `begin()` ve `end()` aynı türdeki nesneleri döndürebilir. Bu `end()` , Ranges-v3 teklifinde tanımlandığı şekilde aralıklar tarafından kullanılan bir Sentinel nesnesi döndürmesini sağlar. Daha fazla bilgi için bkz. [Aralık tabanlı `For` döngüyü](https://wg21.link/p0184r0) ve [GitHub 'daki Range-v3 kitaplığını](https://github.com/ericniebler/range-v3)Genelleştirme.
+**Visual Studio 2017 ' de yeni:**  Aralık tabanlı **`for`** döngüler artık bunu gerektirmez `begin()` ve `end()` aynı türdeki nesneleri döndürebilir. Bu `end()` , Ranges-v3 teklifinde tanımlandığı şekilde aralıklar tarafından kullanılan bir Sentinel nesnesi döndürmesini sağlar. Daha fazla bilgi için bkz. GitHub 'da [Range-Based `For` döngüsünü](https://wg21.link/p0184r0) ve [Range-v3 kitaplığını](https://github.com/ericniebler/range-v3)Genelleştirme.
 
 Bu kod **`for`** , bir dizi ve vektör aracılığıyla yinelemek için Aralık tabanlı döngülerin nasıl kullanılacağını gösterir:
 
@@ -109,6 +110,6 @@ Aralık tabanlı hakkında bu olguları göz önünde bulundurun **`for`** :
 [`auto`](../cpp/auto-cpp.md)<br/>
 [Yineleme Deyimleri](../cpp/iteration-statements-cpp.md)<br/>
 [Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
-[`while`İfade (C++)](../cpp/while-statement-cpp.md)<br/>
-[`do-while`İfade (C++)](../cpp/do-while-statement-cpp.md)<br/>
-[`for`İfade (C++)](../cpp/for-statement-cpp.md)
+[`while` İfade (C++)](../cpp/while-statement-cpp.md)<br/>
+[`do-while` İfade (C++)](../cpp/do-while-statement-cpp.md)<br/>
+[`for` İfade (C++)](../cpp/for-statement-cpp.md)

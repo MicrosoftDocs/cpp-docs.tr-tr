@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fseek, _lseek sabitleri'
 title: fseek, _lseek Sabitleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - SEEK_END constant
 - SEEK_CUR constant
 ms.assetid: 9deeb13e-5aa3-4c33-80d8-721c80a4de9d
-ms.openlocfilehash: 2e6cb2e0d781212f3b5e7758554507dfa438a716
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: be12597682074f610b0a69395146b400fed4d6b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289708"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319823"
 ---
-# <a name="fseek-lseek-constants"></a>fseek, _lseek Sabitleri
+# <a name="fseek-_lseek-constants"></a>fseek, _lseek Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <stdio.h>
@@ -27,16 +28,16 @@ ms.locfileid: "62289708"
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Kaynak* bağımsız değişkeni başlangıç konumunu belirten ve aşağıdaki bildirim sabitleri biri olabilir:
+*Kaynak* bağımsız değişkeni başlangıç konumunu belirtir ve aşağıdaki bildirim sabitlerinden biri olabilir:
 
-|Sabit|Açıklama|
+|Sabit|Anlamı|
 |--------------|-------------|
 |`SEEK_END`|Dosya sonu|
-|`SEEK_CUR`|Dosya işaretçisini geçerli konumu|
-|`SEEK_SET`|Dosyasının başında|
+|`SEEK_CUR`|Dosya işaretçisinin geçerli konumu|
+|`SEEK_SET`|Dosya başlangıcı|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [fseek, _fseeki64](../c-runtime-library/reference/fseek-fseeki64.md)<br/>
 [_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

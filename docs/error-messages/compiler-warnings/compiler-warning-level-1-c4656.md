@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4656'
 title: Derleyici Uyarısı (düzey 1) C4656
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4656
 ms.assetid: b5aaef74-2320-4345-a6ae-b813881a491c
-ms.openlocfilehash: a78da51a99aa924eadbf5c9f458ceb0a75889141
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d902a7f7629f8bcbadab4ead240c06ebbf1aa33c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318831"
 ---
 # <a name="compiler-warning-level-1-c4656"></a>Derleyici Uyarısı (düzey 1) C4656
 

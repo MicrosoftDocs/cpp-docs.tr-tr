@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: dinamik erişimcileri kullanma'
 title: Dinamik Erişimcileri Kullanma
 ms.date: 10/18/2018
 helpviewer_keywords:
 - accessors [C++], dynamic
 - dynamic accessors
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
-ms.openlocfilehash: 4f42d6f20da819cf325cad06a04878b46e52352a
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 9cc1cbf1f4c408317802698c01b228b48a5614c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008675"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319150"
 ---
 # <a name="using-dynamic-accessors"></a>Dinamik Erişimcileri Kullanma
 
@@ -150,7 +151,7 @@ int main(int argc, char* argv[] )
 
 ## <a name="using-cdynamicparameteraccessor"></a>CDynamicParameterAccessor kullanma
 
-[CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) , [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) `CDynamicParameterAccessor` [ICommandText](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) arabirimini çağırarak ayarlanacak parametre bilgilerini alan, CDynamicAccessor ile benzerdir. Sağlayıcı, `ICommandWithParameters` tüketicinin bu sınıfı kullanması için destek sağlamalıdır.
+[CDynamicParameterAccessor](../../data/oledb/cdynamicparameteraccessor-class.md) , [](../../data/oledb/cdynamicaccessor-class.md) `CDynamicParameterAccessor` [ICommandText](/sql/relational-databases/native-client-ole-db-interfaces/icommandwithparameters) arabirimini çağırarak ayarlanacak parametre bilgilerini alan, CDynamicAccessor ile benzerdir. Sağlayıcı, `ICommandWithParameters` tüketicinin bu sınıfı kullanması için destek sağlamalıdır.
 
 Parametre bilgileri, bu sınıf tarafından oluşturulan ve yönetilen bir arabellekte saklanır. [CDynamicParameterAccessor:: GetParam](./cdynamicparameteraccessor-class.md#getparam) ve [CDynamicParameterAccessor:: GetParamType](./cdynamicparameteraccessor-class.md#getparamtype)kullanarak arabellekteki parametre verilerini al.
 

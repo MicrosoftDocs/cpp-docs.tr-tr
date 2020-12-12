@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtGetReportHook'
 title: _CrtGetReportHook
 ms.date: 11/04/2016
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - CrtGetReportHook function
 - _CrtGetReportHook function
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
-ms.openlocfilehash: bc005dda435b5e11d6c3c886de180ed85b9c2a04
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 9c950341e3f1b0231620449d983fcfe5bc0f5f12
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942397"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319745"
 ---
 # <a name="_crtgetreporthook"></a>_CrtGetReportHook
 
 Hata ayıklama Raporlama işlemi için C çalışma zamanına dönüştürmek üzere istemci tanımlı raporlama işlevini alır (yalnızca hata ayıklama sürümü).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 _CRT_REPORT_HOOK _CrtGetReportHook( void );
@@ -48,7 +49,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtgetreporthook** , bir uygulamanın C çalışma zamanı hata ayıklama kitaplığı Raporlama işlemi için geçerli raporlama işlevini almasına izin verir.
+**_CrtGetReportHook** , bir uygulamanın C çalışma zamanı hata ayıklama kitaplığı Raporlama işlemi için geçerli raporlama işlevini almasına izin verir.
 
 Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemci tanımlı kanca işlevlerinizi yazma hakkında daha fazla bilgi için bkz. [hata ayıklama kanca Işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -56,7 +57,7 @@ Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemc
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtGetReportHook**|\<Crtdbg. h >|
+|**_CrtGetReportHook**|\<crtdbg.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -66,9 +67,9 @@ Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-
 
 ## <a name="example"></a>Örnek
 
-**_Crtsetreporthook**kullanımına ilişkin bir örnek için bkz. [Report](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
+**_CrtSetReportHook** kullanmanın bir örneği için bkz. [Report](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtSetReportHook](crtsetreporthook.md)<br/>

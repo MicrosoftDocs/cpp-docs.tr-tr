@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: add_const sınıfı'
 title: add_const Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - add_const class
 - add_const
 ms.assetid: 1262a1eb-8c9c-4dd6-9f43-88ba280182f1
-ms.openlocfilehash: c82a3fac8ef95da9e226ca3e2e9122b3c8774cbf
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ce1dd895a5968234feca7905d3b9f8d571336053
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620836"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319950"
 ---
 # <a name="add_const-class"></a>add_const Sınıfı
 
 Türünden const türü yapar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Ty>

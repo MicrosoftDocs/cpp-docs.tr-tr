@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtReportBlockType'
 title: _CrtReportBlockType
 ms.date: 11/04/2016
 api_name:
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - _BLOCK_SUBTYPE macro
 - BLOCK_TYPE macro
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
-ms.openlocfilehash: 1fccb66632e832b491832cfac12fb1940bdf0f87
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b05b7fe73896068a05368df001ca5c80fedfb69a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319631"
 ---
 # <a name="_crtreportblocktype"></a>_CrtReportBlockType
 
 Verilen bir hata ayıklama yığını blok işaretçisi ile ilişkili blok türünü/alt türü döndürür.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _CrtReportBlockType(
@@ -59,7 +60,7 @@ Geçerli bir hata ayıklama yığın işaretçisi geçirildiğinde, **_CrtReport
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtReportBlockType**tarafından döndürülen türü ve alt türü ayıklamak için, döndürülen değer üzerinde makrolar **_BLOCK_TYPE** ve **_BLOCK_SUBTYPE** (Crtdbg. h içinde tanımlanan) kullanın.
+**_CrtReportBlockType** tarafından döndürülen türü ve alt türü ayıklamak için, döndürülen değer üzerinde makrolar **_BLOCK_TYPE** ve **_BLOCK_SUBTYPE** (Crtdbg. h içinde tanımlanan) kullanın.
 
 Ayırma bloğu türleri ve bunların nasıl kullanıldığı hakkında bilgi için bkz. [hata ayıklama yığınındaki blok türleri](/visualstudio/debugger/crt-debug-heap-details).
 

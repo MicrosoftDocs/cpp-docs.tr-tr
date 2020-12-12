@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtIsMemoryBlock'
 title: _CrtIsMemoryBlock
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _CrtIsMemoryBlock function
 - CrtIsMemoryBlock function
 ms.assetid: f7cbbc60-3690-4da0-a07b-68fd7f250273
-ms.openlocfilehash: f29745acd06f6f5b3fa96367444e800bdc3e8e3a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 81a4b515461a45f566f95728180013408ccda43a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938734"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319722"
 ---
 # <a name="_crtismemoryblock"></a>_CrtIsMemoryBlock
 
@@ -57,38 +58,38 @@ Doğrulanacak bellek bloğunun başlangıcına yönelik işaretçi.
 Belirtilen bloğun boyutu (bayt).
 
 *requestNumber*<br/>
-Bloğun veya **null**ayırma numarası işaretçisi.
+Bloğun veya **null** ayırma numarası işaretçisi.
 
-*kısaltın*<br/>
-Bloğu veya **null değerini**isteyen kaynak dosyanın adı işaretçisi.
+*filename*<br/>
+Bloğu veya **null değerini** isteyen kaynak dosyanın adı işaretçisi.
 
 *onayın*<br/>
 Kaynak dosyadaki satır numarası işaretçisi veya **null**.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Crtismemoryblock** , belirtilen bellek bloğu yerel yığında bulunuyorsa ve geçerli bir hata ayıklama yığın blok türü tanımlayıcısına sahipse **true** değerini döndürür; Aksi takdirde, işlev **false**döndürür.
+**_CrtIsMemoryBlock** , belirtilen bellek bloğu yerel yığında bulunuyorsa ve geçerli bir hata ayıklama yığın blok türü tanımlayıcısına sahipse **true** değerini döndürür; Aksi takdirde, işlev **false** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtımemoryblock** işlevi, belirtilen bir bellek bloğunun uygulamanın yerel yığınında bulunduğunu ve geçerli bir blok türü tanımlayıcısına sahip olduğunu doğrular. Bu işlev, nesne ayırma sıra numarasını ve bellek bloğu ayırmanın ilk olarak istediği kaynak dosya adı/satır numarasını almak için de kullanılabilir. *RequestNumber*, *filename*veya *onayın* parametrelerinin**null** olmayan değerlerini geçirme, **_crtismemoryblock** 'in, blok içindeki bu parametreleri bellek bloğunun hata ayıklama üstbilgisindeki değerlere almasına neden olur. yerel yığın. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtismemoryblock** çağrıları ön işleme sırasında kaldırılır.
+**_CrtIsMemoryBlock** işlevi, belirtilen bir bellek bloğunun uygulamanın yerel yığınında bulunduğunu ve geçerli bir blok türü tanımlayıcısına sahip olduğunu doğrular. Bu işlev, nesne ayırma sıra numarasını ve bellek bloğu ayırmanın ilk olarak istediği kaynak dosya adı/satır numarasını almak için de kullanılabilir. *RequestNumber*, *filename* veya *onayın* parametreleri için **null** olmayan değerler geçirmek **_CrtIsMemoryBlock** , yerel yığında blok bulursa, bu parametreleri bellek bloğunun hata ayıklama üstbilgisindeki değerlere ayarlamaya neden olur. [_DEBUG](../../c-runtime-library/debug.md) tanımlı olmadığında, **_CrtIsMemoryBlock** çağrıları ön işleme sırasında kaldırılır.
 
-**_Crtismemoryblock** başarısız olursa, **false** döndürür ve çıkış parametreleri varsayılan değerlere başlatılır: *requestNumber* ve **LineNumber** , 0 olarak ayarlanır ve *filename* **null**olarak ayarlanır.
+**_CrtIsMemoryBlock** başarısız olursa, **yanlış** döndürür ve çıkış parametreleri varsayılan değerlere başlatılır: *requestNumber* ve **LineNumber** değeri 0 olarak ayarlanır ve *filename* **null** olarak ayarlanır.
 
-Bu işlev **true** veya **false**döndürdüğünden, basit bir hata ayıklama hata Işleme mekanizması oluşturmak için [_onaylama](assert-asserte-assert-expr-macros.md) makrolarından birine geçirilebilir. Aşağıdaki örnek, belirtilen adres yerel yığında bulunmuyorsa bir onaylama hatasına neden olur:
+Bu işlev **true** veya **false** döndürdüğünden, basit bir hata ayıklama hata işleme mekanizması oluşturmak için [_assert](assert-asserte-assert-expr-macros.md) makrolarından birine geçirilebilir. Aşağıdaki örnek, belirtilen adres yerel yığında bulunmuyorsa bir onaylama hatasına neden olur:
 
 ```C
 _ASSERTE( _CrtIsMemoryBlock( userData, size, &requestNumber,
           &filename, &linenumber ) );
 ```
 
-**_Crtılationmemoryblock** diğer hata ayıklama işlevleriyle ve makrolarıyla nasıl kullanılabileceği hakkında daha fazla bilgi için bkz: [Raporlama makroları](/visualstudio/debugger/macros-for-reporting). Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+**_CrtIsMemoryBlock** diğer hata ayıklama işlevleri ve makroları ile nasıl kullanılabileceği hakkında daha fazla bilgi için bkz. about [Macros](/visualstudio/debugger/macros-for-reporting). Bellek bloklarının taban yığının hata ayıklama sürümünde nasıl ayrıldığı, başlatıldığı ve yönetildiği hakkında bilgi için bkz. [CRT hata ayıklama yığını ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtIsMemoryBlock**|\<Crtdbg. h >|
+|**_CrtIsMemoryBlock**|\<crtdbg.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -98,8 +99,8 @@ Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-
 
 ## <a name="example"></a>Örnek
 
-[_Crtısvalidheappointer](crtisvalidheappointer.md) konusunun örneğine bakın.
+[_CrtIsValidHeapPointer](crtisvalidheappointer.md) konusunun örneğine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>

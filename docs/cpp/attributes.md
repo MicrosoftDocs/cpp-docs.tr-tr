@@ -1,13 +1,14 @@
 ---
+description: Daha fazla bilgi için bkz. C++ içindeki öznitelikler
 title: C++ içindeki öznitelikler
 ms.date: 05/06/2019
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: efdc62e2343135aee483520f633bac99519455b4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2c22cacdede278114ed0e2242165280facbb492a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319554"
 ---
 # <a name="attributes-in-c"></a>C++ içindeki öznitelikler
 
@@ -35,13 +36,13 @@ void Foo(int);
 
 Öznitelikler, satıcıya özgü uzantılara yönelik #pragma yönergeleri, __declspec () (Visual C++) veya &#95;&#95;özniteliği&#95;&#95;  (GNU) gibi standartlaştırılmış bir alternatifi temsil eder. Ancak, yine de satıcıya özgü yapıları, çoğu amaçla kullanmanız gerekecektir. Standart Şu anda uygun bir derleyicinin tanıması gereken aşağıdaki öznitelikleri belirtiyor:
 
-- `[[noreturn]]`Bir işlevin hiçbir şekilde döndüğünü belirtir; diğer bir deyişle, her zaman bir özel durum oluşturur. Derleyici, varlıkların derleme kurallarını ayarlayabilir `[[noreturn]]` .
+- `[[noreturn]]` Bir işlevin hiçbir şekilde döndüğünü belirtir; diğer bir deyişle, her zaman bir özel durum oluşturur. Derleyici, varlıkların derleme kurallarını ayarlayabilir `[[noreturn]]` .
 
-- `[[carries_dependency]]`İşlevin, iş parçacığı eşitlemesine göre veri bağımlılığı sıralamasını yaymayacağını belirtir. Özniteliği bir veya daha fazla parametreye uygulanabilir, bu da geçirilen bağımsız değişkenin işlev gövdesine bir bağımlılık taşıdığının belirtilmesi olabilir. Dönüş değerinin işlevin bir bağımlılığını taşıdığının belirtilmesi için özniteliği işlevin kendisini uygulanabilir. Derleyici bu bilgileri daha verimli kod oluşturmak için kullanabilir.
+- `[[carries_dependency]]` İşlevin, iş parçacığı eşitlemesine göre veri bağımlılığı sıralamasını yaymayacağını belirtir. Özniteliği bir veya daha fazla parametreye uygulanabilir, bu da geçirilen bağımsız değişkenin işlev gövdesine bir bağımlılık taşıdığının belirtilmesi olabilir. Dönüş değerinin işlevin bir bağımlılığını taşıdığının belirtilmesi için özniteliği işlevin kendisini uygulanabilir. Derleyici bu bilgileri daha verimli kod oluşturmak için kullanabilir.
 
 - `[[deprecated]]`**Visual Studio 2015 ve üzeri:** Bir işlevin kullanılması amaçlanmadığını belirtir ve bir kitaplık arabiriminin gelecek sürümlerinde bulunmayabilir. Derleyici bunu, istemci kodu işlevi çağırmaya çalıştığında bir bilgi iletisi oluşturmak için kullanabilir. Bir sınıfın bildirimine, bir typedef adına, değişkene, statik olmayan veri üyesine, işleve, bir ad alanına, bir numaralandırma, bir Numaralandırıcı veya bir şablon özelleştirmesine uygulanabilir.
 
-- `[[fallthrough]]`**Visual Studio 2017 ve üzeri:** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir) `[[fallthrough]]` öznitelik, bir derleyici için bir ipucu olarak ( [switch](switch-statement-cpp.md) veya kodu okuyan herhangi bir kişi), fallthrough davranışın amaçlanan bir ipucu olarak kullanılabilir. Microsoft C++ derleyicisi Şu anda fallthrough davranışa göre uyarı vermiyor, bu nedenle bu özniteliğin hiçbir etkisi derleyici davranışı yoktur.
+- `[[fallthrough]]`**Visual Studio 2017 ve üzeri:** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir) `[[fallthrough]]` öznitelik, bir derleyici için bir ipucu olarak ( [](switch-statement-cpp.md) veya kodu okuyan herhangi bir kişi), fallthrough davranışın amaçlanan bir ipucu olarak kullanılabilir. Microsoft C++ derleyicisi Şu anda fallthrough davranışa göre uyarı vermiyor, bu nedenle bu özniteliğin hiçbir etkisi derleyici davranışı yoktur.
 
 - `[[nodiscard]]`**Visual Studio 2017 sürüm 15,3 ve üzeri:** ( [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)ile kullanılabilir) bir işlevin dönüş değerinin atılmak üzere amaçlanmadığını belirtir. Aşağıdaki örnekte gösterildiği gibi, uyarı C4834 başlatır:
 
@@ -60,7 +61,7 @@ void Foo(int);
 
 ## <a name="microsoft-specific-attributes"></a>Microsoft 'a özgü öznitelikler
 
-- `[[gsl::suppress(rules)]]`Bu Microsoft 'a özgü öznitelik, koddaki [yönergeler destek kitaplığı (GSL)](https://github.com/Microsoft/GSL) kurallarını zorlayan dama uyarılarını gizleme için kullanılır. Örneğin, şu kod parçacığını göz önünde bulundurun:
+- `[[gsl::suppress(rules)]]` Bu Microsoft 'a özgü öznitelik, koddaki [yönergeler destek kitaplığı (GSL)](https://github.com/Microsoft/GSL) kurallarını zorlayan dama uyarılarını gizleme için kullanılır. Örneğin, şu kod parçacığını göz önünde bulundurun:
 
     ```cpp
     int main()

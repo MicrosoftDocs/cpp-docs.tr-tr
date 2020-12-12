@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Android ve iOS üzerinde OpenGL ES uygulaması oluşturma'
 title: Android ve iOS Üzerinde OpenGL ES uygulaması oluşturma
 ms.date: 10/09/2019
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-ms.openlocfilehash: 278fd66202332417f7663542f0d66a3ec545b715
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: c840e9bbfd450c412ff7c0646127c157a3af565a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924294"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319423"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Android ve iOS Üzerinde OpenGL ES uygulaması oluşturma
 
@@ -27,11 +28,11 @@ Bu öğreticide, önce yeni bir OpenGL ES uygulama projesi oluşturursunuz. ard�
 
 ::: moniker range="msvc-150"
 
-1. Visual Studio 'da **Dosya** > **Yeni** > **Proje** ' yi seçin.
+1. Visual Studio 'da **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunda, **Şablonlar** altında **Visual C++** > **platformlar arası** ' ı seçin ve ardından **OpenGLES uygulaması (Android, iOS)** şablonunu seçin.
+1. **Yeni proje** iletişim kutusunda, **Şablonlar** altında **Visual C++** > **platformlar arası**' ı seçin ve ardından **OpenGLES uygulaması (Android, iOS)** şablonunu seçin.
 
-1. Uygulamaya *Myopengtasapp* gibi bir ad verin ve ardından **Tamam** ' ı seçin.
+1. Uygulamaya *Myopengtasapp* gibi bir ad verin ve ardından **Tamam**' ı seçin.
 
    ![Yeni OpenGLES uygulama projesi](../cross-platform/media/cppmdd-opengles-newproj.png "Yeni OpenGLES uygulama projesi")
 
@@ -43,11 +44,11 @@ Bu öğreticide, önce yeni bir OpenGL ES uygulama projesi oluşturursunuz. ard�
 
 ::: moniker range=">=msvc-160"
 
-1. Visual Studio 'da **Dosya** > **Yeni** > **Proje** ' yi seçin.
+1. Visual Studio 'da **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje oluştur** Iletişim kutusunda **OpenGLES uygulaması (Android, iOS)** şablonunu seçin ve ardından **İleri** ' yi seçin.
+1. **Yeni proje oluştur** Iletişim kutusunda **OpenGLES uygulaması (Android, iOS)** şablonunu seçin ve ardından **İleri**' yi seçin.
 
-1. **Yeni projenizi yapılandırın** iletişim kutusunda, **Proje adı** alanına *Myopengtasapp* gibi bir ad girin ve ardından **Oluştur** ' u seçin.
+1. **Yeni projenizi yapılandırın** iletişim kutusunda, **Proje adı** alanına *Myopengtasapp* gibi bir ad girin ve ardından **Oluştur**' u seçin.
 
    Visual Studio yeni çözümü oluşturur ve Çözüm Gezgini açar.
 
@@ -57,9 +58,9 @@ Bu öğreticide, önce yeni bir OpenGL ES uygulama projesi oluşturursunuz. ard�
 
 Yeni OpenGL ES uygulama çözümü, üç kitaplık projesi ve iki uygulama projesi içerir. Kitaplıklar klasörü, paylaşılan bir kod projesi içerir. Ve Paylaşılan koda başvuran, platforma özgü iki proje:
 
-- `MyOpenGLESApp.Android.NativeActivity` Uygulamanızı Android 'de yerel bir etkinlik olarak uygulayan başvuruları ve birleştirici kodu içerir. Birleştirici kodundan gelen giriş noktaları, içindeki ortak paylaşılan kodu içeren *Main. cpp* öğesine uygulanır `MyOpenGLESApp.Shared` . Önceden derlenmiş üstbilgiler *pch. h* içinde. Bu yerel etkinlik uygulaması projesi, proje tarafından çekilen paylaşılan bir kitaplık ( *. so* ) dosyasında derlenir `MyOpenGLESApp.Android.Packaging` .
+- `MyOpenGLESApp.Android.NativeActivity` Uygulamanızı Android 'de yerel bir etkinlik olarak uygulayan başvuruları ve birleştirici kodu içerir. Birleştirici kodundan gelen giriş noktaları, içindeki ortak paylaşılan kodu içeren *Main. cpp* öğesine uygulanır `MyOpenGLESApp.Shared` . Önceden derlenmiş üstbilgiler *pch. h* içinde. Bu yerel etkinlik uygulaması projesi, proje tarafından çekilen paylaşılan bir kitaplık (*. so*) dosyasında derlenir `MyOpenGLESApp.Android.Packaging` .
 
-- `MyOpenGLESApp.iOS.StaticLibrary` içindeki paylaşılan kodu içeren bir iOS statik kitaplık ( *. a* ) dosyası oluşturur `MyOpenGLESApp.Shared` . Proje tarafından oluşturulan uygulamayla bağlantılıdır `MyOpenGLESApp.iOS.Application` .
+- `MyOpenGLESApp.iOS.StaticLibrary` içindeki paylaşılan kodu içeren bir iOS statik kitaplık (*. a*) dosyası oluşturur `MyOpenGLESApp.Shared` . Proje tarafından oluşturulan uygulamayla bağlantılıdır `MyOpenGLESApp.iOS.Application` .
 
 - `MyOpenGLESApp.Shared` platformlar arasında çalışacak paylaşılan kodu içerir. Platforma özgü kodun koşullu derlenmesi için Önişlemci makrolarını kullanır. Paylaşılan kod hem hem de proje başvurusu tarafından alınır `MyOpenGLESApp.Android.NativeActivity` `MyOpenGLESApp.iOS.StaticLibrary` .
 
@@ -81,7 +82,7 @@ Yeni OpenGL ES uygulama çözümü, üç kitaplık projesi ve iki uygulama proje
 
    Öykünücüyü hedeflemek için x86 kullanın. Bir cihazı hedeflemek için cihaz işlemcisini temel alan çözüm platformunu seçin. **Çözüm platformları** listesi görüntülenmiyorsa, **Düğme Ekle/Kaldır** listesinden **çözüm platformları** ' nı seçin ve ardından platformunuzu seçin.
 
-1. **Çözüm Gezgini** ' de, proje için kısayol menüsünü açın `MyOpenGLESApp.Android.Packaging` ve ardından **Oluştur** ' u seçin.
+1. **Çözüm Gezgini**' de, proje için kısayol menüsünü açın `MyOpenGLESApp.Android.Packaging` ve ardından **Oluştur**' u seçin.
 
    ![Android paketleme projesi oluştur](../cross-platform/media/cppmdd-opengles-andbuild.png "Android paketleme projesi oluştur")
 
@@ -95,7 +96,7 @@ Yeni OpenGL ES uygulama çözümü, üç kitaplık projesi ve iki uygulama proje
 
    Başka öykünücüleri yüklemiş veya bir Android cihazı bağlamış olabilirsiniz. Bunları dağıtım hedefi açılan listesinden seçebilirsiniz. Uygulamayı çalıştırmak için, oluşturulan çözüm platformunun hedef cihazın platformuyla eşleşmesi gerekir.
 
-1. Hata ayıklamayı başlatmak için **F5** 'e veya **Shift** + hata ayıklama olmadan başlamak için SHIFT **'e basın** .
+1. Hata ayıklamayı başlatmak için **F5** 'e veya  + hata ayıklama olmadan başlamak için SHIFT **'e basın** .
 
    Visual Studio, kodunuzu yüklemek ve dağıtmak için birkaç saniye geçen öykünücüyü başlatır. Uygulamanın Öykünücüde nasıl göründüğü aşağıda verilmiştir:
 
@@ -103,7 +104,7 @@ Yeni OpenGL ES uygulama çözümü, üç kitaplık projesi ve iki uygulama proje
 
    Uygulamanız başlatıldıktan sonra, kesme noktaları ayarlayabilir ve kod içinde ilerlemek, Yereller incelemek ve değerleri izlemek için hata ayıklayıcıyı kullanabilirsiniz.
 
-1. **Shift** + Hata ayıklamayı durdurmak için SHIFT **F5** tuşuna basın.
+1.  + Hata ayıklamayı durdurmak için SHIFT **F5** tuşuna basın.
 
    Öykünücü çalışmaya devam eden ayrı bir işlemdir. Kodunuzu aynı öykünücüye birden çok kez düzenleyebilir, derleyebilir ve dağıtabilirsiniz. Uygulamanız öykünücü üzerindeki uygulama koleksiyonunda görünür ve doğrudan buradan başlatılabilir.
 
@@ -125,7 +126,7 @@ Uygulamanızı bir iOS cihazına dağıtmak için önce Xcode 'da otomatik oturu
 
 1. Yeni bir **tek görünüm uygulaması** Xcode projesi oluşturun. Proje oluşturma sırasında gerekli alanları girin. Proje yalnızca daha sonra uygulamanın bir derlemesini imzalamak için kullanılan bir sağlama profili oluşturmak için kullanıldığından, değerler rastgele olabilir.
 
-1. [Apple bir geliştirici programı](https://developer.apple.com/programs/) hesabına KAYıTLı Apple Kimliğinizi Xcode 'a ekleyin. Apple KIMLIĞINIZ, uygulamaları imzalamak için imzalama kimliği olarak kullanılır. İmza kimliğinizi Xcode 'a eklemek için **Xcode** menüsünü açın ve **Tercihler** ' i seçin. **Hesaplar** ' ı seçin ve Apple Kimliğinizi eklemek için Ekle düğmesine (+) tıklayın. Ayrıntılı yönergeler için bkz. [Apple ID hesabınızı ekleme](https://help.apple.com/xcode/mac/current/#/devaf282080a).
+1. [Apple bir geliştirici programı](https://developer.apple.com/programs/) hesabına KAYıTLı Apple Kimliğinizi Xcode 'a ekleyin. Apple KIMLIĞINIZ, uygulamaları imzalamak için imzalama kimliği olarak kullanılır. İmza kimliğinizi Xcode 'a eklemek için **Xcode** menüsünü açın ve **Tercihler**' i seçin. **Hesaplar** ' ı seçin ve Apple Kimliğinizi eklemek için Ekle düğmesine (+) tıklayın. Ayrıntılı yönergeler için bkz. [Apple ID hesabınızı ekleme](https://help.apple.com/xcode/mac/current/#/devaf282080a).
 
 1. Xcode projesinin "genel" ayarlarından, **paket tanımlayıcısının** değerini olarak değiştirin `com.<NameOfVSProject>` ; burada, `<NameOfVSProject>` oluşturduğunuz Visual Studio çözüm projesiyle aynı addır. Örneğin, Visual Studio 'da adlı bir proje oluşturduysanız `MyOpenGLESApp` , **paket tanımlayıcısını** olarak ayarlayın `com.MyOpenGLESApp` .
 
@@ -159,7 +160,7 @@ Uygulamanızı bir iOS cihazına dağıtmak için önce Xcode 'da otomatik oturu
 
 1. Dosyayı kapatın `project.pbxproj` , ardından kaldırılan Myopengyesapp. iOS. Application projesinin kısayol menüsünü açın ve projeyi yeniden yüklemek Için **projeyi yeniden yükle** ' yi seçin.
 
-1. Şimdi, projenin kısayol menüsünü açarak ve **Build** ' i seçerek Myopengtasapp. IOS. Application projesini derleyin.
+1. Şimdi, projenin kısayol menüsünü açarak ve **Build**' i seçerek Myopengtasapp. IOS. Application projesini derleyin.
 
    ![İOS uygulama projesi oluştur](../cross-platform/media/cppmdd-opengles-iosbuild.png "İOS uygulama projesi oluştur")
 
@@ -175,7 +176,7 @@ Uygulamanızı bir iOS cihazına dağıtmak için önce Xcode 'da otomatik oturu
 
    ![İOS uygulamasında kesme noktasında hata ayıklayıcı](../cross-platform/media/cppmdd-opengles-iosdebug.png "İOS uygulamasında kesme noktasında hata ayıklayıcı")
 
-1. **Shift** + Hata ayıklamayı durdurmak için SHIFT **F5** tuşuna basın.
+1.  + Hata ayıklamayı durdurmak için SHIFT **F5** tuşuna basın.
 
    Oluşturulan iOS uygulaması ve kitaplık projeleri, C++ kodunu yalnızca paylaşılan kodu uygulayan bir statik kitaplığa koyar. Uygulama kodunun çoğu `Application` projede bulunur. Bu şablon projesindeki Paylaşılan kitaplık koduna yapılan çağrılar *Gameviewcontroller. d* dosyasında yapılır. İOS uygulamanızı derlemek için, Visual Studio, Mac üzerinde çalışan bir uzak istemciyle iletişim gerektiren Xcode platform araç takımını kullanır.
 

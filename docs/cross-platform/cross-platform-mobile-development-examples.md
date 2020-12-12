@@ -1,17 +1,18 @@
 ---
+description: 'Daha fazla bilgi edinin: platformlar arası mobil geliştirme örnekleri'
 title: Platformlar arası mobil geliştirme örnekleri
 ms.date: 10/17/2019
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
-ms.openlocfilehash: 0c2e40be96bd0efdad608daaab973c34e8c90495
-ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
+ms.openlocfilehash: 4577791a21fc7340414df1e03eea320c094661f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78177586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319267"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Platformlar arası mobil geliştirme örnekleri
 
-**Mobil geliştirme C++**  tarafından iş yükü ile yüklenen şablonların birkaçı, bilgi almak için kullanabileceğiniz tüm örnekleri üretir. Ayrıca, Windows Geliştirme Merkezi 'nde, Visual Studio 'da indirebileceğiniz ve deneyebileceğiniz birkaç örnek uygulama vardır.
+C++ iş yüküne **sahip mobil geliştirme** tarafından yüklenen şablonlardan bazıları, hakkında bilgi edinmek için kullanabileceğiniz tüm örnekleri üretir. Ayrıca, Windows Geliştirme Merkezi 'nde, Visual Studio 'da indirebileceğiniz ve deneyebileceğiniz birkaç örnek uygulama vardır.
 
 - [Merhaba-JNI Android uygulaması örneği](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)
 
@@ -27,7 +28,7 @@ ms.locfileid: "78177586"
 
 - [Twkaybs Android kitaplığı örneği](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)
 
-   Bu örnek, Android NDK Twkaybs örneğinin bir bağlantı noktasıdır. Bu, hem dinamik olarak yüklenen paylaşılan bir kitaplığı hem de Java C++ yerel arabirim uygulamasından çağrılan bir yöntemi uygulayan statik bir Android yerel kitaplığını kullanır. Bu örnek, geliştiricilerin, Visual Studio ile uçtan uca bir JNı Android uygulaması oluşturmak için statik/dinamik paylaşılan kitaplıkları nasıl kullanacağınızı anlayabilmesi için iyi bir başlangıç noktasıdır.
+   Bu örnek, Android NDK Twkaybs örneğinin bir bağlantı noktasıdır. Bu, hem dinamik olarak yüklenen paylaşılan bir kitaplığı hem de Java yerel arabirim uygulamasından çağrılan bir yöntemi uygulayan statik bir C++ Android yerel kitaplığını kullanır. Bu örnek, geliştiricilerin, Visual Studio ile uçtan uca bir JNı Android uygulaması oluşturmak için statik/dinamik paylaşılan kitaplıkları nasıl kullanacağınızı anlayabilmesi için iyi bir başlangıç noktasıdır.
 
 - [Tea Pot Android uygulaması örneği](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)
 
@@ -41,6 +42,6 @@ ms.locfileid: "78177586"
 
    Bu örnek, özellikle Visual Studio ile birlikte kullanılmak üzere Android NDK test-libstdc + + örneğinin bir bağlantı noktasıdır. Bu örnek, geliştiricilerin standart kitaplığı kullanmayı anlayabilmesi için iyi bir başlangıç noktasıdır.
 
-  Visual Studio 'daki örneklerden birini açmak için zip dosyasını indirin ve indirilen dosyanın **Özellikler** sayfasını Gezgin içinde açın. **Engellemeyi kaldır** düğmesini seçin ve ardından **Tamam**' ı seçin. ZIP dosyasının içeriğini uygun bir konuma ayıklayın, sonra ayıklanan örnekteki C++ klasörü açın ve çözüm dosyasını açın.
+  Visual Studio 'daki örneklerden birini açmak için zip dosyasını indirin ve indirilen dosyanın **Özellikler** sayfasını Gezgin içinde açın. **Engellemeyi kaldır** düğmesini seçin ve ardından **Tamam**' ı seçin. ZIP dosyasının içeriğini uygun bir konuma ayıklayın, sonra ayıklanan örnekteki C++ klasörünü açın ve çözüm dosyasını açın.
 
-  Örneği oluşturmak için **F7**tuşuna basın veya menü çubuğunda **Oluştur**, **çözüm oluştur**' u seçin.
+  Örneği oluşturmak için **F7** tuşuna basın veya menü çubuğunda **Oluştur**, **çözüm oluştur**' u seçin.

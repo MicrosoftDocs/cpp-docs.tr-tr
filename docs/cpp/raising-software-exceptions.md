@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yazılım özel durumlarını yükseltme'
 title: Yazılım özel durumlarını oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - software exceptions [C++]
 - formats [C++], exception codes
 ms.assetid: be1376c3-c46a-4f52-ad1d-c2362840746a
-ms.openlocfilehash: f50d84bd034cc6eeb00dc17cb3b7272a988b6731
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 737bec4af99ad7743a8f7740d57919f169c2b509
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319410"
 ---
 # <a name="raising-software-exceptions"></a>Yazılım özel durumlarını oluşturma
 
@@ -30,11 +31,11 @@ Yapılandırılmış özel durum işlemeyi hatalarla birlikte kullanmak için:
 
 - Olay için kendi özel durum kodunuzu tanımlayın.
 
-- Bir sorunu saptadığınızda `RaiseException` çağırın.
+- `RaiseException`Bir sorunu tespit ettiğinizde çağırın.
 
 - Tanımladığınız özel durum kodunu test etmek için özel durum işleme filtrelerini kullanın.
 
-\<Winerror. h > dosyası, özel durum kodlarının biçimini gösterir. Mevcut bir özel durum koduyla çakışan bir kod tanımlamadığınızdan emin olmak için, üçüncü en önemli biti 1 olarak ayarlayın. En önemli dört bit, aşağıdaki tabloda gösterildiği gibi ayarlanmalıdır.
+\<winerror.h>Dosya, özel durum kodlarının biçimini gösterir. Mevcut bir özel durum koduyla çakışan bir kod tanımlamadığınızdan emin olmak için, üçüncü en önemli biti 1 olarak ayarlayın. En önemli dört bit, aşağıdaki tabloda gösterildiği gibi ayarlanmalıdır.
 
 |Bits|Önerilen ikili ayar|Açıklama|
 |----------|--------------------------------|-----------------|
@@ -51,7 +52,7 @@ Sonuç olarak oluşan hata kodu, en yüksek dört bit onaltılık E olarak ayarl
 #define STATUS_FILE_BAD_FORMAT        0xE0000002
 ```
 
-Bir özel durum kodu tanımladıktan sonra, özel durum yükseltmek için kullanabilirsiniz. Örneğin, aşağıdaki kod, bir bellek ayırma sorununa yanıt olarak `STATUS_INSUFFICIENT_MEM` özel durumunu başlatır:
+Bir özel durum kodu tanımladıktan sonra, özel durum yükseltmek için kullanabilirsiniz. Örneğin, aşağıdaki kod, `STATUS_INSUFFICIENT_MEM` bir bellek ayırma sorununa yanıt olarak özel durumu oluşturur:
 
 ```cpp
 lpstr = _malloc( nBufferSize );
@@ -73,5 +74,5 @@ __except (GetExceptionCode() == STATUS_INSUFFICIENT_MEM ||
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)<br/>
-[Yapılandırılmış özel durum işleme (CC++/)](../cpp/structured-exception-handling-c-cpp.md)
+[Özel Durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)<br/>
+[Yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

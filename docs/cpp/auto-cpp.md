@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `auto` (C++)'
 title: auto (C++)
 ms.date: 12/10/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: be268635e61005efbdb01ed8c4eec79c7cb9b800
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 2237c8aa3cb1b1078a8b90ba5a3ba6cba0a7134b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319475"
 ---
 # <a name="auto-c"></a>`auto` C++
 
@@ -122,7 +123,7 @@ int main()
 
 Aşağıdaki tabloda **`auto`** , anahtar sözcüğünün kullanımıyla ilgili kısıtlamalar ve derleyicinin yaydığı karşılık gelen tanılama hata iletisi listelenmektedir.
 
-|Hata numarası|Description|
+|Hata numarası|Açıklama|
 |------------------|-----------------|
 |[C3530](../error-messages/compiler-errors-2/compiler-error-c3530.md)|**`auto`** Anahtar sözcüğü diğer tür tanımlayıcılarla birleştirilemez.|
 |[C3531](../error-messages/compiler-errors-2/compiler-error-c3531.md)|**`auto`** Anahtar sözcüğüyle belirtilen sembolün bir başlatıcısı olmalıdır.|

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `selectany`'
 title: selectany
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], selectany
 - selectany __declspec keyword
 ms.assetid: 9c353017-5a42-4f50-b741-bd13da1ce84d
-ms.openlocfilehash: 6cd2ec4e22d94c42432a1fc3e39afd5540302d22
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: e17ad5787211aacbb206d5e68ba355047711b96a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319345"
 ---
 # `selectany`
 
@@ -91,4 +92,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [`__declspec`](../cpp/declspec.md)<br/>
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)
