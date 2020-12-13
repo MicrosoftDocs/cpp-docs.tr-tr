@@ -1,4 +1,5 @@
 ---
+description: ': Nothrow hakkında daha fazla bilgi edinin (C++)'
 title: nothrow (C++)
 ms.date: 01/03/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], nothrow
 - nothrow __declspec keyword
 ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
-ms.openlocfilehash: 8ce0e9ea6a39ef7760c7a6d0802913326433cf68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7e438541221fe097aefb2e52d190e223fa1cf2fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227276"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146256"
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
 
@@ -20,7 +21,7 @@ ms.locfileid: "87227276"
 
 **`__declspec`** İşlevlerin bildiriminde kullanılabilen genişletilmiş bir öznitelik.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > *dönüş türü* __declspec (nothrow) [*Call-Convention*] *işlev-adı* ([*Argument-List*])
 

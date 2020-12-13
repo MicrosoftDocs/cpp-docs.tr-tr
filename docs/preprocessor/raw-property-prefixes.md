@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: raw_property_prefixes Import özniteliği'
 title: raw_property_prefixes içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,39 +7,39 @@ f1_keywords:
 helpviewer_keywords:
 - raw_property_prefixes attribute
 ms.assetid: 03a0f48c-c460-4175-a762-9f7f8d84b12f
-ms.openlocfilehash: d4d91470781e7c5f673fd228c24904322d1db8b3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 7289f9aeba249249ecf78ffb3ad3b32669ac9fe3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216043"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142720"
 ---
 # <a name="raw_property_prefixes-import-attribute"></a>raw_property_prefixes içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
 Diğer özellik yöntemi için alternatif önekler belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **raw_property_prefixes (** "*getprefix*" **,** "*putprefıx*" **,** "*putrefprefix*" **)**
+> **#import** *türü-kitaplık* **raw_property_prefixes (** "*getprefix*" **,** "*putprefıx*" **,** "*putrefprefix*" **)**
 
 ### <a name="parameters"></a>Parametreler
 
 *GetPrefix*\
-`propget` Yöntemler için kullanılacak önek.
+Yöntemler için kullanılacak önek `propget` .
 
 *PutPrefix*\
-`propput` Yöntemler için kullanılacak önek.
+Yöntemler için kullanılacak önek `propput` .
 
 *PutRefPrefix*\
-`propputref` Yöntemler için kullanılacak önek.
+Yöntemler için kullanılacak önek `propputref` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, alt düzey `propget`, `propput`ve `propputref` yöntemleri sırasıyla, `put_`, ve `putref_`' nin `get_`ön eklerini kullanarak adlandırılan üye işlevleri tarafından gösterilir. Bu önekler, MIDL tarafından oluşturulan üstbilgi dosyalarında kullanılan adlarla uyumludur.
+Varsayılan olarak, alt düzey `propget` , `propput` ve `propputref` yöntemleri sırasıyla,, ve ' nin ön eklerini kullanarak adlandırılan üye işlevleri tarafından gösterilir `get_` `put_` `putref_` . Bu önekler, MIDL tarafından oluşturulan üstbilgi dosyalarında kullanılan adlarla uyumludur.
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

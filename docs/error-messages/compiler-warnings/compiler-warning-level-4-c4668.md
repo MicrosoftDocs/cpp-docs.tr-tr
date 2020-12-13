@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4668'
 title: Derleyici Uyarısı (düzey 4) C4668
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4668
 ms.assetid: c6585460-bc4a-4a15-9242-4cbfce53c961
-ms.openlocfilehash: 84834ce0f980502e16a8398d35da85d1a005c9cb
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 559043027bf9fab38470223ea7735ca70297aabf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990555"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134062"
 ---
 # <a name="compiler-warning-level-4-c4668"></a>Derleyici Uyarısı (düzey 4) C4668
 

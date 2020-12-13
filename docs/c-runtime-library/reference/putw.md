@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _putw'
 title: _putw
 ms.date: 4/2/2020
 api_name:
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - streams, writing integers to
 - _putw function
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
-ms.openlocfilehash: 12f54c54b59e43d9a2861489171dd6c9c9436a8a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e49240d7410f47042f515f310ba79f9a9eb38398
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232436"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146399"
 ---
 # <a name="_putw"></a>_putw
 
 Bir akışa tamsayı yazar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _putw(
@@ -59,13 +60,13 @@ int _putw(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan değeri döndürür. **EOF** dönüş değeri bir hata gösterebilir. **EOF** aynı zamanda geçerli bir tamsayı değeri olduğundan, hatayı doğrulamak için **ferror** kullanın. *Stream* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EOF**döndürür.
+Yazılan değeri döndürür. **EOF** dönüş değeri bir hata gösterebilir. **EOF** aynı zamanda geçerli bir tamsayı değeri olduğundan, hatayı doğrulamak için **ferror** kullanın. *Stream* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EOF** döndürür.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Putw** işlevi, **`int`** akışın geçerli konumuna türünde bir ikili değer yazar *.* **_putw** akıştaki öğelerin hizalamasını etkilemez veya özel bir hizalama kabul etmez. **_putw** öncelikle önceki kitaplıklarla uyumluluk içindir. Taşınabilir bir dosya boyutu **_putw** **`int`** ve içindeki bayt sıralaması **`int`** sistemler arasında farklı olduğundan taşınabilirlik sorunları _putw meydana gelebilir.
+**_Putw** işlevi, **`int`** akışın geçerli konumuna türünde bir ikili değer yazar *.* **_putw** akıştaki öğelerin hizalamasını etkilemez veya özel bir hizalama kabul etmez. **_putw** öncelikle önceki kitaplıklarla uyumluluk içindir. Taşınabilir bir dosya boyutu  **`int`** ve içindeki bayt sıralaması **`int`** sistemler arasında farklı olduğundan taşınabilirlik sorunları _putw meydana gelebilir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

@@ -1,66 +1,67 @@
 ---
-title: 'CFixedStringT: Örnek özel dize Yöneticisi'
+description: 'Daha fazla bilgi edinin: CFixedStringT: özel bir dize Yöneticisi örneği'
+title: 'CFixedStringT: özel bir dize Yöneticisi örneği'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CFixedStringT class, using a custom string manager
 ms.assetid: 1cf11fd7-51b8-4b94-87af-02bc25f47dd6
-ms.openlocfilehash: 2b6da5d4166b220ef63500d0154ab32dc72b40f4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c9af2530500ad5972c01d063116e7ac981109493
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142512"
 ---
-# <a name="cfixedstringt-example-of-a-custom-string-manager"></a>CFixedStringT: Örnek özel dize Yöneticisi
+# <a name="cfixedstringt-example-of-a-custom-string-manager"></a>CFixedStringT: özel bir dize Yöneticisi örneği
 
-ATL kitaplığı uygulayan bir sınıf tarafından kullanılan bir özel dize Yöneticisi örneği [CFixedStringT](../atl-mfc-shared/reference/cfixedstringt-class.md)adlı **CFixedStringMgr**. `CFixedStringT` türetilen [CStringT](../atl-mfc-shared/reference/cstringt-class.md) ve karakter verilerini ayıran bir parçası olarak bir dize uygulayan `CFixedStringT` dizesi tarafından belirtilen uzunluğundan az olduğu sürece kendisini nesne `t_nChars` şablonparametresi`CFixedStringT`. Bu yaklaşımda, sabit arabellek boyutu dize uzunluğu arttıkça sürece dize yığın hiç gerekmez. Çünkü `CFixedStringT` mu her zaman kullanın, dize verileri, ayırmak için bir yığın kullanamazsınız `CAtlStringMgr` kendi dize Yöneticisi olarak. Bir özel dize Yöneticisi'ni kullanır (`CFixedStringMgr`), uygulama [Iatlstringmgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) arabirimi. Bu arabirim içinde ele alınmıştır [uygulama özel dize Yöneticisi (Gelişmiş yöntem)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md).
+ATL Kitaplığı, CFixedStringT adlı sınıf tarafından kullanılan özel bir dize [](../atl-mfc-shared/reference/cfixedstringt-class.md)yöneticisinin bir örneğini **uygular.** `CFixedStringT` , [CStringT](../atl-mfc-shared/reference/cstringt-class.md) 'den türetilir ve `CFixedStringT` dize, şablon parametresi tarafından belirtilen uzunluktan daha az olduğu sürece, kendi karakter verilerini nesnenin bir parçası olarak ayıran bir dize uygular `t_nChars` `CFixedStringT` . Bu yaklaşımla, dizenin uzunluğu sabit arabelleğin ötesine genişlemediği takdirde dize her bir yığına gerektirmez. `CFixedStringT`, Dize verilerini ayırmak için her zaman bir yığın kullanmadığından, `CAtlStringMgr` dize Yöneticisi olarak kullanamaz. Bu `CFixedStringMgr` , [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) arabirimini uygulayan özel bir dize Yöneticisi () kullanır. Bu arabirim, [özel bir dize Yöneticisi (Gelişmiş Yöntem) uygulamasında](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md)ele alınmıştır.
 
-Oluşturucusu `CFixedStringMgr` üç parametreleri alır:
+İçin Oluşturucu `CFixedStringMgr` üç parametre alır:
 
-- *pData:* Sabit bir işaretçi `CStringData` kullanılacak yapısı.
+- *pData:* Kullanılacak sabit yapıya yönelik bir işaretçi `CStringData` .
 
-- *nChars:* En fazla karakter sayısını `CStringData` yapısı tutabilir.
+- *nChars:* Yapının tutabilecek en fazla karakter sayısı `CStringData` .
 
-- *pMgr:* Bir işaretçi `IAtlStringMgr` arabirimi manager'ın bir"Yedekleme dize."
+- *pMgr:* `IAtlStringMgr` "Yedekleme dizesi Yöneticisi" arabirimine yönelik bir işaretçi.
 
-Oluşturucu değerlerini depolar *pData* ve *pMgr* , ilgili üye değişkenlerine (`m_pData` ve `m_pMgr`). Ardından, sıfır olarak sabit arabellek başvuru sayısı-1 ve en büyük boyutuna eşit kullanılabilir uzunluğu arabellek uzunluğunu ayarlar. Başvuru sayısı değeri arabellek kilitli gösterir ve bu örneği kullanmak için `CFixedStringMgr` dize Yöneticisi olarak.
+Oluşturucu, *pData* ve *pMgr* değerlerini ilgili üye değişkenlerinde ( `m_pData` ve `m_pMgr` ) depolar. Ardından, arabelleğin uzunluğunu sıfıra, kullanılabilir uzunluğu sabit arabelleğin en büyük boyutuna, ve başvuru sayısını-1 olarak ayarlar. Başvuru sayısı değeri, arabelleğin kilitli olduğunu ve bu örneğini `CFixedStringMgr` dize Yöneticisi olarak kullanacağını gösterir.
 
-Arabellek kilitli olarak işaretlemek, engeller diğer `CStringT` arabellek paylaşılan bir başvuru tutan gelen örnekleri. Başka `CStringT` örnekleri izin verilen olacağını tarafından içerilen arabellek için olası arabellek paylaşmak için `CFixedStringT` diğer dizeleri hala arabellek kullandığınız sırada silinecek.
+Arabelleği kilitli olarak işaretlemek, diğer `CStringT` örneklerin arabelleğe bir paylaşılan başvuru tutmasını önler. Diğer `CStringT` örneklerin arabelleği paylaşmasına izin veriliyorsa, `CFixedStringT` diğer dizeler halen arabelleği kullanırken, tarafından içerilen arabelleğin silinmesi mümkün olacaktır.
 
-`CFixedStringMgr` tam bir uygulamasıdır `IAtlStringMgr` arabirimi. Her yöntemin uygulanmasını ayrı olarak ele alınmıştır.
+`CFixedStringMgr` , arabirimin tam bir uygulamasıdır `IAtlStringMgr` . Her yöntemin uygulanması ayrı olarak ele alınmıştır.
 
-## <a name="implementation-of-cfixedstringmgrallocate"></a>CFixedStringMgr::Allocate uygulaması
+## <a name="implementation-of-cfixedstringmgrallocate"></a>CFixedStringMgr:: allocate uygulama
 
-Uygulamasını `CFixedStringMgr::Allocate` dize istenen boyutu sabit arabellek boyutu küçük veya ona eşit olup olmadığını denetler (depolanan `m_pData` üyesi). Sabit arabellek yeteri kadar büyük olursa `CFixedStringMgr` sabit arabellek uzunluğu sıfır kilitler. Dize uzunluğu dışında sabit arabellek boyutunu büyütün değil sürece `CStringT` arabellek yeniden tahsis olmaz.
+İlk olarak, `CFixedStringMgr::Allocate` dizenin istenen boyutunun sabit arabelleğin (üyede depolanan) boyutundan küçük veya ona eşit olup olmadığını denetler `m_pData` . Sabit arabellek yeterince büyükse, `CFixedStringMgr` sabit arabelleği sıfır uzunluğuna kilitler. Dize uzunluğu sabit arabelleğin boyutunun ötesinde büyümediğinde, `CStringT` arabelleği yeniden ayırmak zorunda değildir.
 
-Dize istenen boyutu sabit arabellekten daha büyük olup olmadığı `CFixedStringMgr` için yedekleme dize Yöneticisi isteği iletir. Öbek arabelleğinden ayırmak için yedekleme dize Yöneticisi'ni kabul edilir. Ancak bu arabellek dönmeden önce `CFixedStringMgr` arabellek kilitler ve arabellek dize manager işaretçi işaretçisi ile değiştirir `CFixedStringMgr` nesne. Bu denemelerinin yeniden tahsis ya da boş arabellek sağlar `CStringT` içine çağıracak `CFixedStringMgr`.
+Dizenin istenen boyutu sabit arabellekten büyükse `CFixedStringMgr` , isteği yedekleme dize yöneticisine iletir. Yedekleme dize Yöneticisi, yığındaki arabelleği ayırmak için kullanılır. Ancak, bu arabelleği döndürmeden önce `CFixedStringMgr` arabelleği kilitler ve arabelleğin dize Yöneticisi işaretçisini nesnenin işaretçiyle değiştirir `CFixedStringMgr` . Bu, arabelleği yeniden ayırma veya serbest bırakma girişimlerinin ' i `CStringT` çağırabilmesini sağlar `CFixedStringMgr` .
 
-## <a name="implementation-of-cfixedstringmgrreallocate"></a>CFixedStringMgr::ReAllocate uygulaması
+## <a name="implementation-of-cfixedstringmgrreallocate"></a>CFixedStringMgr:: yeniden tahsis uygulama
 
-Uygulamasını `CFixedStringMgr::ReAllocate` için uygulaması çok benzer `Allocate`.
+Uygulamasının uygulamasına uygulanması `CFixedStringMgr::ReAllocate` çok benzerdir `Allocate` .
 
-Sabit arabellek önceliksiz arabellek ise ve istenen arabellek boyutu sabit arabellek küçüktür, hiçbir ayırma gerçekleştirilir. Ancak, önceliksiz arabellek sabit arabellek değilse yedekleme Yöneticisi ile ayrılan bir arabellek olması gerekir. Bu durumda yedekleme Yöneticisi arabellek yeniden ayırmak üzere kullanılır.
+Yeniden ayrılan arabellek sabit arabellekte ise ve istenen arabellek boyutu sabit arabellekten küçükse, hiçbir ayırma yapılmaz. Ancak, yeniden ayrılan arabellek sabit arabellek değilse, Yedekleme Yöneticisi ile ayrılmış bir arabellek olması gerekir. Bu durumda, arabelleği yeniden ayırmak için Yedekleme Yöneticisi kullanılır.
 
-Önceliksiz arabellek sabit arabellek ve yeni arabellek boyutu sabit arabellek içinde sığmayacak kadar büyük ise `CFixedStringMgr` yedekleme Yöneticisi'ni kullanarak yeni bir arabelleği ayırır. Sabit arabellek içeriği daha sonra yeni belleğe kopyalanır.
+Yeniden ayrılan arabellek sabit arabellekte ise ve yeni arabellek boyutu sabit arabelleğe sığmayacak kadar büyükse, `CFixedStringMgr` Backup Manager 'ı kullanarak yeni bir arabellek ayırır. Sabit arabelleğin içeriği daha sonra yeni arabelleğe kopyalanır.
 
-## <a name="implementation-of-cfixedstringmgrfree"></a>CFixedStringMgr::Free uygulaması
+## <a name="implementation-of-cfixedstringmgrfree"></a>CFixedStringMgr:: Free uygulama
 
-Uygulamasını `CFixedStringMgr::Free` olarak aynı deseni izler `Allocate` ve `ReAllocate`. Bırakılan arabellek sabit arabellek ise, yöntem bir sıfır uzunluklu kilitli arabellek ayarlar. Bırakılan arabellek yedek yöneticisiyle ayırdığınızda `CFixedStringMgr` ücretsiz için yedekleme Yöneticisi'ni kullanır.
+Uygulamasının uygulanması, `CFixedStringMgr::Free` ve ile aynı kalıbı izler `Allocate` `ReAllocate` . Serbest bırakılmakta olan arabellek sabit arabellekte ise, yöntemi sıfır uzunluklu bir kilitli arabelleğe ayarlar. Serbest bırakılmakta olan arabellek Yedekleme Yöneticisi ile ayrıldıysa, `CFixedStringMgr` bunu serbest bırakmak için yedekleme yöneticisini kullanır.
 
-## <a name="implementation-of-cfixedstringmgrclone"></a>CFixedStringMgr::Clone uygulaması
+## <a name="implementation-of-cfixedstringmgrclone"></a>CFixedStringMgr:: Clone uygulama
 
-Uygulamasını `CFixedStringMgr::Clone` her zaman yedek Yöneticisi için bir işaretçi döndürür yerine `CFixedStringMgr` kendisi. Çünkü böyle her örneğini `CFixedStringMgr` yalnızca tek bir örneği ile ilişkili olabilir `CStringT`. Diğer örneklerini `CStringT` manager kopyalamayı deneyen almanız gerekir yedekleme Yöneticisi yerine. Yedekleme Yöneticisi paylaşılmasını destekleyen olmasıdır.
+Uygulamasının uygulanması, `CFixedStringMgr::Clone` her zaman Yedekleme Yöneticisi yerine bir işaretçi döndürür `CFixedStringMgr` . Bu durum, her örneği `CFixedStringMgr` yalnızca öğesinin tek bir örneğiyle ilişkilendirilemediğinden oluşur `CStringT` . `CStringT`Yöneticiyi kopyalamaya çalışan diğer tüm örnekler bunun yerine yedekleme yöneticisini almalıdır. Bunun nedeni, yedekleme yöneticisinin paylaşılmakta olmasını desteklemedir.
 
-## <a name="implementation-of-cfixedstringmgrgetnilstring"></a>CFixedStringMgr::GetNilString uygulaması
+## <a name="implementation-of-cfixedstringmgrgetnilstring"></a>CFixedStringMgr:: GetNilString uygulamasının uygulanması
 
-Uygulamasını `CFixedStringMgr::GetNilString` sabit arabelleğini döndürür. Bire iletişimi nedeniyle `CFixedStringMgr` ve `CStringT`, belirli bir örneğini `CStringT` hiçbir zaman aynı anda birden fazla arabellek kullanır. Bu nedenle, boş bir dize ve bir gerçek bir dize arabelleğine hiçbir zaman aynı anda gereklidir.
+Uygulamasının uygulanması, `CFixedStringMgr::GetNilString` sabit arabelleği döndürür. Ve ' nin bire bir yazışmaları nedeniyle `CFixedStringMgr` `CStringT` , belirli bir örneği `CStringT` hiçbir zaman aynı anda birden fazla arabellek kullanmaz. Bu nedenle, bir Nil dize ve gerçek bir dize arabelleği aynı anda hiçbir zaman gerekli değildir.
 
-Sabit Arabellek kullanımda değil her `CFixedStringMgr` sıfır uzunlukta başlatılır sağlar. Bu boş dize olarak kullanılmasını sağlar. Eklenen bir ek olarak `nAllocLength` sabit arabellek üye her zaman sabit arabellek tam boyuta ayarlayın. Diğer bir deyişle `CStringT` çağırmadan dize büyüyebilir [IAtlStringMgr::Reallocate](../atl-mfc-shared/reference/iatlstringmgr-class.md#reallocate)nil dize için bile.
+Sabit arabellek kullanımda olmadığı zaman, `CFixedStringMgr` sıfır uzunlukla başlatılmış olmasını sağlar. Bu, Nil dize olarak kullanılmasına izin verir. Ek olarak, `nAllocLength` sabit arabelleğin üyesi her zaman sabit arabelleğin tam boyutuna ayarlanır. Bu, `CStringT` Nil dize için bile [IAtlStringMgr::](../atl-mfc-shared/reference/iatlstringmgr-class.md#reallocate)yeniden ayırma çağrılmadan dizeyi büyüyebileceği anlamına gelir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** cstringt.h
+**Üstbilgi:** CStringT. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
+[CStringT ile bellek yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)

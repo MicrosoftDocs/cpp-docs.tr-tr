@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _countof makrosu'
 title: _countof Makrosu
 ms.date: 03/22/2018
 api_location:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - countof macro
 - _countof macro
 ms.assetid: 86198767-f7e5-4beb-898d-3cbbf60350a3
-ms.openlocfilehash: 3debd63da7d218e29f31847034c69d89b4691643
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 190f47aa7bb6bcf6bbd9478cce9df90aca81b437
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146464"
 ---
 # <a name="_countof-macro"></a>_countof Makrosu
 
@@ -47,19 +48,19 @@ Bir dizinin adı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dizideki öğe sayısı, bir **size_t**olarak ifade edilir.
+Dizide **size_t** olarak ifade edilen öğe sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_countof** , işlev benzeri bir önişlemci makrosu olarak uygulanır. C++ Sürümünde statik olarak tanımlanmış bir dizi yerine bir işaretçi geçirilirse, derleme zamanında tespit edilecek ek şablon makineleri vardır.
+**_countof** , işlev benzeri bir önişlemci makrosu olarak uygulanır. C++ sürümünde, statik olarak tanımlanmış bir dizi yerine bir işaretçi geçirilirse, derleme zamanında tespit edilecek ek şablon makineleri vardır.
 
-*Dizinin* işaretçi değil, gerçekten bir dizi olduğundan emin olun. C 'de, *dizi* işaretçiyse, **_countof** hatalı sonuçlar üretir. İçinde C++, *dizi bir işaretçiyse* , **_countof** derleme işlemi başarısız olur.  Bir işleve parametre olarak geçirilen bir dizi, *bir işaretçiye işaret*eden, bu, işlevin içinde, dizinin kapsamını belirlemede **_countof** kullanamıyoruz.
+*Dizinin* işaretçi değil, gerçekten bir dizi olduğundan emin olun. C 'de, *dizi* işaretçiyse **_countof** hatalı sonuçlar üretir. C++ ' da, *dizi* işaretçiyse **_countof** derlenemiyor.  Bir işleve parametre olarak geçirilen bir dizi, *bir işaretçiye işaret* eden, bu, işlevin içinde, dizinin kapsamını belirlemede **_countof** kullanamıyoruz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Makrosu|Gerekli başlık|
+|Makroya|Gerekli başlık|
 |-----------|---------------------|
-|**_countof**|\<Stdlib. h >|
+|**_countof**|\<stdlib.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -90,4 +91,4 @@ _countof(arr) = 20 elements
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[sizeof İşleci](../../cpp/sizeof-operator.md)<br/>
+[sizeof Işleci](../../cpp/sizeof-operator.md)<br/>

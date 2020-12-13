@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL/MFC paylaşılan sınıfları'
 title: ATL-MFC paylaşılan sınıfları
 ms.custom: index-page
 ms.date: 11/04/2016
@@ -23,29 +24,29 @@ helpviewer_keywords:
 - CString objects, shared class
 - shared classes
 ms.assetid: e13aaac3-21ec-4f4d-8834-432b40fde544
-ms.openlocfilehash: 5632de3d248ded83c1db2c0b469de165e676bf9d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba5927436b5f5c7bd31b21ec6dd7f187e2eb4e83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142591"
 ---
 # <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları
 
-Bu yardımcı sınıflar, herhangi bir MFC DLL gerek kalmadan herhangi bir yerel C++ projesinde kullanılabilir.
+Bu yardımcı program sınıfları herhangi bir MFC DLL gerektirmeksizin herhangi bir yerel C++ projesinde kullanılabilir.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[MFC ve ATL arasında paylaşılan sınıfları](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)<br/>
-MFC ve ATL arasında paylaşılan sınıfların bağlantılarını sağlar.
+[MFC ve ATL arasında paylaşılan sınıflar](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)<br/>
+MFC ve ATL arasında paylaşılan sınıflara bağlantılar sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [Etkin Şablon kitaplığı (ATL) başvurusu](../atl/atl-com-desktop-components.md)<br/>
 COM nesnelerinin programlamasını basitleştiren, şablona dayalı bir küme C++ sınıfı olan ATL kitaplığı için bir başvuru malzemesi sağlar.
 
-[Microsoft Foundation Class (MFC) kitaplığı başvurusu](../mfc/mfc-desktop-applications.md)<br/>
-Sınıflar, bir dizi oluşturan Windows API için yazılan uygulamanın çerçevesi bir uygulama çerçevesi olan MFC Kitaplığı için başvuru materyalleri sağlar.
+[Microsoft Foundation Class Kitaplığı (MFC) başvurusu](../mfc/mfc-desktop-applications.md)<br/>
+İçinde, Windows API 'si için yazılmış bir uygulamanın çerçevesi olan bir uygulama çerçevesi oluşturan MFC kitaplığı için başvuru malzemesi sağlar.
 
 [Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)<br/>
-Uygulamanızdaki veya saklı yordamları mantık hatalarını düzeltmek için Visual Studio hata ayıklayıcı kullanımına ilişkin bağlantılar sağlar.
+Uygulamanızdaki veya saklı yordamlardaki mantık hatalarını düzeltmek için Visual Studio hata ayıklayıcısını kullanma bağlantıları sağlar.

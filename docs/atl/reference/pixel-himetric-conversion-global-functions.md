@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Pixel/HIMETRIK dönüştürme genel Işlevleri'
 title: Pixel-HIMETRIK dönüştürme genel Işlevleri
 ms.date: 11/04/2016
 f1_keywords:
 - atlwin/ATL::AtlHiMetricToPixel
 - atlwin/ATL::AtlPixelToHiMetric
 ms.assetid: ecb1b1b2-7e9d-4fbc-a855-16252d2d794c
-ms.openlocfilehash: e71dccbccbe43ea7df3b6a7005da138a8e31aeb3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 53753ff92b04466a94b821fdc4b4f221117c6ade
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834693"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138989"
 ---
 # <a name="pixelhimetric-conversion-global-functions"></a>Pixel/HIMETRIK dönüştürme genel Işlevleri
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2396'
 title: Derleyici hatası C2396
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C2396
 ms.assetid: 1b515ef6-7af4-400f-b4ed-564313ea15f6
-ms.openlocfilehash: 5020732ce5186ee1c6e9d2ea13f452fe9988bdfa
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 654b812fbd152a6effb60e6f0919f99bf5039a1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74744842"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145398"
 ---
 # <a name="compiler-error-c2396"></a>Derleyici hatası C2396
 
-' your_type:: operator'type ' ': CLR veya WinRT Kullanıcı tanımlı dönüştürme functionvalid geçerli değil. Ya dönüştürmeniz gerekir: 'T ^ ', 't ^% ', 'T ^ & ', burada T = ' your_type '
+' your_type:: operator'type ' ': CLR veya WinRT Kullanıcı tanımlı dönüştürme functionvalid geçerli değil. Ya dönüştürmeniz gerekir: 'T ^ ', 't ^% ', 'T ^& ', burada T = ' your_type '
 
 Windows Çalışma Zamanı veya yönetilen türdeki bir dönüştürme işlevinde, türü dönüştürme işlevini içeren türle aynı olan en az bir parametre yoktu.
 

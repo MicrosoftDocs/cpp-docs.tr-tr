@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDialogImpl sınıfı'
 title: CDialogImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: b92b5130b31e88565d79b59a24b2bd377d0d84c0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 228a63edde7eb66960a0acad5d60088d909946a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834732"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141862"
 ---
 # <a name="cdialogimpl-class"></a>CDialogImpl sınıfı
 
@@ -31,7 +32,7 @@ Bu sınıf, kalıcı veya kalıcı olmayan iletişim kutusu oluşturmak için y�
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <class T,

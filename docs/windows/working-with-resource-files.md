@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kaynak dosyalarla çalışma'
 title: Kaynak dosyalarla çalışma (C++)
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - resources [C++], about resource files
 - resource files [C++], about resource files
 ms.assetid: 2699a539-b369-4b78-80f0-df03eb7b6780
-ms.openlocfilehash: 3e387a1cefb6577760a34c7957d4f5019b1d49ef
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c8e1a891839ee19201a98f9beb5e538e24c1d3f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502904"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135804"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 

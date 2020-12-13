@@ -1,4 +1,5 @@
 ---
+description: :/MAPıNFO hakkında daha fazla bilgi edinin (mapfile içindeki bilgileri dahil et)
 title: /MAPINFO (Bilgileri Eşlem Dosyasına Dahil Et)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - MAPINFO linker option
 - -MAPINFO linker option
 ms.assetid: 533d2bce-f9b7-4fea-ae1c-0b4864c9d10b
-ms.openlocfilehash: 491df211856a9d7ceb02b6a401270f15b9da3b96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5cf785182bd91923c3398d542d7e60d9afdb4a4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137910"
 ---
 # <a name="mapinfo-include-information-in-mapfile"></a>/MAPINFO (Bilgileri Eşlem Dosyasına Dahil Et)
 
@@ -26,17 +27,17 @@ ms.locfileid: "62321442"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Mapınfo seçeneği belirtirseniz oluşturulduğu mapfile içinde belirtilen bilgileri içerecek şekilde söyler [/MAP](map-generate-mapfile.md) seçeneği.  EXPORTS bağlayıcıya dışarı aktarılan işlevleri içerir.
+/MAPıNFO seçeneği, bağlayıcıya, [/Map](map-generate-mapfile.md) seçeneğini belirtirseniz oluşturulan bir mapfile öğesine belirtilen bilgileri dahil etmek üzere söyler.  Dışarı aktarmalar, bağlayıcıya dışarı aktarılan işlevleri eklemesini söyler.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **hata ayıklama** özellik sayfası.
+1. **Hata ayıklama** Özellik sayfasına tıklayın.
 
-1. Değişiklik **eşlem aktarımları** özellikleri:
+1. **Eşleme dışa aktarma** özelliklerini değiştirme:
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -45,4 +46,4 @@ Mapınfo seçeneği belirtirseniz oluşturulduğu mapfile içinde belirtilen bil
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

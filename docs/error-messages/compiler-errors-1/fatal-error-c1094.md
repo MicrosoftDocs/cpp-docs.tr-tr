@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1094'
 title: Önemli hata C1094
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C1094
 ms.assetid: 9e1193b2-cb95-44f9-bf6f-019e0d41dd97
-ms.openlocfilehash: 99bfeea47ff46b6dadac9b32fa61306d54520d0f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: af83c6fa80a6e1b115146ad05513539fea7d348c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145099"
 ---
 # <a name="fatal-error-c1094"></a>Önemli hata C1094
 
 '-Zmval1 ': komut satırı seçeneği önceden derlenmiş üstbilgiyi oluşturmak için kullanılan değerle tutarsız ('-Zmval2 ')
 
-[/Rivc](../../build/reference/yc-create-precompiled-header-file.md) öğesine geçirilen değer, [/yu](../../build/reference/yu-use-precompiled-header-file.md) öğesine geçirilen değer olmalıdır ( **/ZM** değerleri, kullanan veya aynı önceden derlenmiş üst bilgi dosyasını oluşturan tüm derlemelerde aynı olmalıdır).
+[/Rivc](../../build/reference/yc-create-precompiled-header-file.md) öğesine geçirilen değer, [/yu](../../build/reference/yu-use-precompiled-header-file.md) öğesine geçirilen değer olmalıdır (**/ZM** değerleri, kullanan veya aynı önceden derlenmiş üst bilgi dosyasını oluşturan tüm derlemelerde aynı olmalıdır).
 
 Aşağıdaki örnek C1094 oluşturur:
 

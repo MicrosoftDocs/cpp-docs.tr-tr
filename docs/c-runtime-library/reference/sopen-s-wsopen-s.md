@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _sopen_s _wsopen_s'
 title: _sopen_s, _wsopen_s
 ms.date: 4/2/2020
 api_name:
@@ -37,18 +38,18 @@ helpviewer_keywords:
 - _sopen_s function
 - files [C++], sharing
 ms.assetid: 059a0084-d08c-4973-9174-55e391b72aa2
-ms.openlocfilehash: bddee0b6c5e08e7a7fbae3ca72c3125fa9849c03
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 14a15f78ad452873813f9a6eb4f65de93cd055b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229395"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137000"
 ---
 # <a name="_sopen_s-_wsopen_s"></a>_sopen_s, _wsopen_s
 
 Paylaşım için bir dosya açar. [_Sopen ve _wsopen](sopen-wsopen.md) bu SÜRÜMLERINDE, [CRT 'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 errno_t _sopen_s(
@@ -92,7 +93,7 @@ Sıfır olmayan dönüş değeri bir hatayı gösterir; Bu durumda, **errno** a�
 |-|-|
 | **EACCES** |  Verilen yol bir dizin veya dosya salt okunurdur, ancak yazma işlemi için açık bir işlem denendi. |
 | **EEXıST** |  **_O_CREAT** ve **_o_excl** bayrakları belirtildi, ancak *dosya adı* zaten var. |
-| **EıNVAL** |  Geçersiz *oflag*, *shflag*veya *pmode* bağımsız değişkeni ya da *PFH* veya *filename* null bir işaretçiydi. |
+| **EıNVAL** |  Geçersiz *oflag*, *shflag* veya *pmode* bağımsız değişkeni ya da *PFH* veya *filename* null bir işaretçiydi. |
 | **EMFıLE** | Kullanılabilir başka dosya tanımlayıcısı yok. |
 | **ENOENT** | Dosya veya yol bulunamadı. |
 
@@ -104,7 +105,7 @@ Bir hata durumunda-1, *PFH* üzerinden döndürülür ( *PFH* null işaretçisiy
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Sopen_s** işlevi dosya *adı* tarafından belirtilen dosyayı açar ve dosyayı *oflag* ve *shflag*tarafından tanımlanan şekilde paylaşılan okuma veya yazma için hazırlar. **_wsopen_s** , **_sopen_s**geniş karakterli bir sürümüdür; _wsopen_s *dosya adı* bağımsız **_wsopen_s** değişkeni, geniş karakterli bir dizedir. **_wsopen_s** ve **_sopen_s** aynı şekilde davranır.
+**_Sopen_s** işlevi dosya *adı* tarafından belirtilen dosyayı açar ve dosyayı *oflag* ve *shflag* tarafından tanımlanan şekilde paylaşılan okuma veya yazma için hazırlar. **_wsopen_s** , **_sopen_s** geniş karakterli bir sürümüdür; _wsopen_s *dosya adı* bağımsız  değişkeni, geniş karakterli bir dizedir. **_wsopen_s** ve **_sopen_s** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -114,7 +115,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tsopen_s**|**_sopen_s**|**_sopen_s**|**_wsopen_s**|
 
-*Gecikme* tamsayı ifadesi, içinde tanımlanan bir veya daha fazla bildirim sabiti birleştirilerek oluşturulur \<fcntl.h> . İki veya daha fazla *sabit bağımsız değişkeni*bir şekilde kullandığınızda, BIT düzeyinde OR işleci ( **&#124;** ) ile birleştirilir.
+*Gecikme* tamsayı ifadesi, içinde tanımlanan bir veya daha fazla bildirim sabiti birleştirilerek oluşturulur \<fcntl.h> . İki veya daha fazla *sabit bağımsız değişkeni* bir şekilde kullandığınızda, BIT düzeyinde OR işleci ( **&#124;** ) ile birleştirilir.
 
 |*oflag* sabiti|Davranış|
 |-|-|
@@ -123,24 +124,24 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 | **_O_CREAT** | Bir dosya oluşturur ve yazmak için açar. Dosya *adı* tarafından belirtilen dosya varsa herhangi bir etkiye sahip değildir. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
 | **_O_CREAT** &#124; **_O_SHORT_LIVED** | Geçici olarak bir dosya oluşturur ve mümkünse disk boşaltılamaz. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
 | **_O_CREAT** &#124; **_O_TEMPORARY** | Geçici olarak bir dosya oluşturur; Dosya, son dosya tanımlayıcısı kapatıldığında silinir. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
-| **_O_CREAT** &#124;`_O_EXCL` | Dosya *adı* tarafından belirtilen bir dosya varsa bir hata değeri döndürür. Yalnızca **_O_CREAT**ile kullanıldığında geçerlidir. |
+| **_O_CREAT** &#124; `_O_EXCL` | Dosya *adı* tarafından belirtilen bir dosya varsa bir hata değeri döndürür. Yalnızca **_O_CREAT** ile kullanıldığında geçerlidir. |
 | **_O_NOINHERIT** | Paylaşılan bir dosya tanımlayıcısının oluşturulmasını engeller. |
 | **_O_RANDOM** | Önbellek için en iyi duruma getirilmiş, ancak sınırlı olmamak üzere, diskten rastgele erişim |
-| **_O_RDONLY** | Yalnızca okuma için bir dosya açar. **_O_RDWR** veya **_O_WRONLY**ile belirtilemez. |
-| **_O_RDWR** | Hem okuma hem de yazma için bir dosya açar. **_O_RDONLY** veya **_O_WRONLY**ile belirtilemez. |
+| **_O_RDONLY** | Yalnızca okuma için bir dosya açar. **_O_RDWR** veya **_O_WRONLY** ile belirtilemez. |
+| **_O_RDWR** | Hem okuma hem de yazma için bir dosya açar. **_O_RDONLY** veya **_O_WRONLY** ile belirtilemez. |
 | **_O_SEQUENTIAL** | Önbellek için en iyi duruma getirilmiş, ancak sınırlı olmamak üzere önbelleğe alınan bir disk erişimi belirtir. |
 | **_O_TEXT** | Metin (çevrilmiş) modunda bir dosya açar. (Daha fazla bilgi için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [fopen](fopen-wfopen.md).) |
-| **_O_TRUNC** | Bir dosya açar ve sıfır uzunluğa kırpar; dosya yazma iznine sahip olmalıdır. **_O_RDONLY**ile belirtilemez. **_O_CREAT** **_O_TRUNC** , mevcut bir dosyayı açar veya bir dosya oluşturur. **Note:** **_O_TRUNC** bayrağı belirtilen dosyanın içeriğini yok eder. |
-| **_O_WRONLY** | Yalnızca yazma için bir dosya açar. **_O_RDONLY** veya **_O_RDWR**ile belirtilemez. |
+| **_O_TRUNC** | Bir dosya açar ve sıfır uzunluğa kırpar; dosya yazma iznine sahip olmalıdır. **_O_RDONLY** ile belirtilemez. **_O_CREAT** **_O_TRUNC** , mevcut bir dosyayı açar veya bir dosya oluşturur. **Note:** **_O_TRUNC** bayrağı belirtilen dosyanın içeriğini yok eder. |
+| **_O_WRONLY** | Yalnızca yazma için bir dosya açar. **_O_RDONLY** veya **_O_RDWR** ile belirtilemez. |
 | **_O_U16TEXT** | Unicode UTF-16 modunda bir dosya açar. |
 | **_O_U8TEXT** | Unicode UTF-8 modunda bir dosya açar. |
 | **_O_WTEXT** | Unicode modunda bir dosya açar. |
 
-Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR**veya **_O_WRONLY**belirtmeniz gerekir. Erişim modu için varsayılan değer yoktur.
+Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR** veya **_O_WRONLY** belirtmeniz gerekir. Erişim modu için varsayılan değer yoktur.
 
-**_O_WTEXT**, **_O_U8TEXT**veya **_O_U16TEXT**kullanarak Unicode modunda bir dosya açıldığında giriş işlevleri, dosyadaki okunan verileri, tür olarak depolanan UTF-16 verilerine çevirir **`wchar_t`** . Unicode modunda açılan bir dosyaya yazan işlevler, tür olarak depolanan UTF-16 verileri içeren arabellekler bekler **`wchar_t`** . Dosya UTF-8 olarak kodlanmışsa, UTF-16 verileri yazıldığında UTF-8 ' e çevrilir ve dosyanın UTF-8 kodlu içeriği okunarak UTF-16 ' a çevrilir. Unicode modunda tek sayıda bayt okuma veya yazma girişimi bir parametre doğrulama hatasına neden olur. Programınızda depolanan verileri UTF-8 olarak okumak veya yazmak için Unicode modu yerine bir metin veya ikili dosya modu kullanın. Gerekli tüm kodlama çevirilerinden siz sorumlusunuz.
+**_O_WTEXT**, **_O_U8TEXT** veya **_O_U16TEXT** kullanarak Unicode modunda bir dosya açıldığında giriş işlevleri, dosyadaki okunan verileri, tür olarak depolanan UTF-16 verilerine çevirir **`wchar_t`** . Unicode modunda açılan bir dosyaya yazan işlevler, tür olarak depolanan UTF-16 verileri içeren arabellekler bekler **`wchar_t`** . Dosya UTF-8 olarak kodlanmışsa, UTF-16 verileri yazıldığında UTF-8 ' e çevrilir ve dosyanın UTF-8 kodlu içeriği okunarak UTF-16 ' a çevrilir. Unicode modunda tek sayıda bayt okuma veya yazma girişimi bir parametre doğrulama hatasına neden olur. Programınızda depolanan verileri UTF-8 olarak okumak veya yazmak için Unicode modu yerine bir metin veya ikili dosya modu kullanın. Gerekli tüm kodlama çevirilerinden siz sorumlusunuz.
 
-**_Sopen_s** **_O_WRONLY**  |  **_O_APPEND** (ekleme modu) ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**ile çağrılırsa, ilk olarak dosyayı okumak ve yazmak için açmaya çalışır, ürün reçetesini okuyabilir ve sonra yalnızca yazmak üzere yeniden açabilirsiniz. Dosyayı okuma ve yazma için açmak başarısız olursa, dosyayı yalnızca yazma için açar ve Unicode modu ayarı için varsayılan değeri kullanır.
+**_Sopen_s** **_O_WRONLY**  |  **_O_APPEND** (ekleme modu) ve **_O_WTEXT**, **_O_U16TEXT** veya **_O_U8TEXT** ile çağrılırsa, ilk olarak dosyayı okumak ve yazmak için açmaya çalışır, ürün reçetesini okuyabilir ve sonra yalnızca yazmak üzere yeniden açabilirsiniz. Dosyayı okuma ve yazma için açmak başarısız olursa, dosyayı yalnızca yazma için açar ve Unicode modu ayarı için varsayılan değeri kullanır.
 
 *Shflag* bağımsız değişkeni, içinde tanımlanan aşağıdaki bildirim sabitlerinden birini içeren sabit bir ifadedir \<share.h> .
 
@@ -151,7 +152,7 @@ Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR**veya **_O_WRONLY*
 | **_SH_DENYRD** | Bir dosyaya okuma erişimini reddeder. |
 | **_SH_DENYNO** | Okuma ve yazma erişimine izin verir. |
 
-*Pmode* bağımsız değişkeni, **_sopen**aksine her zaman gereklidir. **_O_CREAT**belirttiğinizde, dosya yoksa *pmode* , yeni dosya ilk kez kapatıldığında ayarlanan dosyanın izin ayarlarını belirtir. Aksi halde *pmode* yok sayılır. *pmode* , **_S_IWRITE** bildirim sabitlerinden birini veya her ikisini içeren bir tamsayı ifadesidir ve içinde tanımlanan **_S_IREAD** \<sys\stat.h> . Her iki sabit de verildiğinde, bit düzeyinde OR işleci ile birleştirilir. *Pmode* 'un anlamı aşağıdaki gibidir.
+*Pmode* bağımsız değişkeni, **_sopen** aksine her zaman gereklidir. **_O_CREAT** belirttiğinizde, dosya yoksa *pmode* , yeni dosya ilk kez kapatıldığında ayarlanan dosyanın izin ayarlarını belirtir. Aksi halde *pmode* yok sayılır. *pmode* , **_S_IWRITE** bildirim sabitlerinden birini veya her ikisini içeren bir tamsayı ifadesidir ve içinde tanımlanan **_S_IREAD** \<sys\stat.h> . Her iki sabit de verildiğinde, bit düzeyinde OR işleci ile birleştirilir. *Pmode* 'un anlamı aşağıdaki gibidir.
 
 |*pmode*|Anlamı|
 |-|-|

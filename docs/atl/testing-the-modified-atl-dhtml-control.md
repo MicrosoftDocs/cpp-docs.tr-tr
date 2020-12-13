@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: değiştirilen ATL DHTML denetimini test etme'
 title: Değiştirilen ATL DHTML denetimini test etme
 ms.date: 11/06/2018
 helpviewer_keywords:
@@ -6,41 +7,41 @@ helpviewer_keywords:
 - testing controls
 - DHTML controls, testing
 ms.assetid: 42316118-9433-410f-9d8a-0efcc1eff824
-ms.openlocfilehash: 55cdaba64ccb95ee5695c082a5e146b1e7dc2cf3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a797eab308ad7fb8c5c7b72566ec3d57a169370b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196580"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138339"
 ---
 # <a name="testing-the-modified-atl-dhtml-control"></a>Değiştirilen ATL DHTML denetimini test etme
 
-Şimdi nasıl çalıştığını görmek için yeni denetim deneyin.
+Nasıl çalıştığını görmek için yeni denetiminizi deneyin.
 
-## <a name="to-build-and-test-the-modified-control"></a>Derleme ve değiştirilmiş denetim test etmek için
+## <a name="to-build-and-test-the-modified-control"></a>Değiştirilen denetimi derlemek ve test etmek için
 
-1. Projeyi oluşturmak ve açılır **Test kapsayıcısı**. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) erişim hakkında daha fazla bilgi için **Test kapsayıcısı**.
+1. Projeyi yeniden derleyin ve **Test kapsayıcısında** açın. **Test kapsayıcısına** erişme hakkında bilgi için bkz. test [kapsayıcısı Ile özellikleri ve olayları test etme](../mfc/testing-properties-and-events-with-test-container.md) .
 
-   Tüm eklediğiniz düğmeleri göstermek için denetimin boyutunu ayarlayın.
+   Eklediğiniz tüm düğmeleri göstermek için denetimi yeniden boyutlandırın.
 
-1. HTML değiştirerek eklediğiniz iki düğme inceleyin. Her düğme içinde tanımlanan etiketi taşıyan [ATL DHTML denetimini değiştirme](../atl/modifying-the-atl-dhtml-control.md): **Yenileme** ve **HelloHTML**.
+1. HTML 'yi değiştirerek eklediğiniz iki düğmeyi inceleyin. Her düğme [, atl dhtml denetimini değiştirme](../atl/modifying-the-atl-dhtml-control.md)bölümünde belirlediğiniz etiketi kapsar: **Refresh** ve **HelloHTML**.
 
-1. Nasıl çalıştıklarını görmeniz için iki yeni düğme test edin.
+1. Nasıl çalıştığını görmek için iki yeni düğme test edin.
 
-Artık kullanıcı Arabirimi parçası olmayan yöntemleri test edin.
+Şimdi, Kullanıcı arabiriminin parçası olmayan yöntemleri test edin.
 
-1. Denetimin kenarlık etkin şekilde vurgulayın.
+1. Denetimi vurgulayın, bu nedenle sınır etkinleştirilir.
 
-1. Üzerinde **denetimi** menüsünde seçin **çağırma yöntemleri**.
+1. **Denetim** menüsünde **yöntemleri çağır**' ı seçin.
 
-   Etiketli yöntemlerle **yöntem adı** kapsayıcı çağırabileceğiniz yöntemler şunlardır: `MethodInvoked` ve `GoToURL`. Tüm diğer yöntemler kullanıcı Arabirimi tarafından denetlenir.
+   Listedeki **Yöntem adı** etiketli Yöntemler kapsayıcının çağırayteme yöntemleridir: `MethodInvoked` ve `GoToURL` . Diğer tüm yöntemler Kullanıcı arabirimi tarafından denetlenir.
 
-1. Çağırmak ve bir yöntem Seç **Invoke** yöntemin ileti kutusu görüntülemek için veya gitmek için `www.microsoft.com`.
+1. Çağrılacak yöntemi seçin ve yöntemin ileti kutusunu veya ' ye gitmek için **çağır** ' ı seçin `www.microsoft.com` .
 
-1. İçinde **çağırma yöntemleri** iletişim kutusunda **Kapat**.
+1. **Yöntemleri çağır** Iletişim kutusunda **Kapat**' ı seçin.
 
-Çeşitli öğeler ve bir ATL DHTML denetimini oluşturan dosyaları hakkında daha fazla bilgi için bkz: [DHTML denetim projesinin öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md).
+ATL DHTML denetimini oluşturan çeşitli öğeler ve dosyalar hakkında daha fazla bilgi edinmek için bkz. [DHTML denetim projesinin öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[DHTML denetimi için destek](../atl/atl-support-for-dhtml-controls.md)
+[DHTML denetimi desteği](../atl/atl-support-for-dhtml-controls.md)

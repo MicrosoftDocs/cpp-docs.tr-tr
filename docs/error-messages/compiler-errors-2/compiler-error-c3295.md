@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3295'
 title: Derleyici hatası C3295
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3295
 ms.assetid: 83f0aa4d-0e0a-4905-9f66-fcf9991fc07a
-ms.openlocfilehash: 4ee79e87085b0b939a762fec4c576c393846c2ae
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 55fab24088690f5d5bb92da0cc55442bcebeed01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144631"
 ---
 # <a name="compiler-error-c3295"></a>Derleyici hatası C3295
 

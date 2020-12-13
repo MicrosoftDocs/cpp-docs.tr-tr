@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dize dönüştürme makroları'
 title: Dize dönüştürme makroları
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 - atlconv/ATL::DEVMODEW2A
 - atlconv/ATL::TEXTMETRICW2A
 ms.assetid: 2ff7c0b6-2bde-45fe-897f-6128e18e0c27
-ms.openlocfilehash: 60cccebf4e1db8369ea5a88f04a37b96838ff49f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a7717f7876d9dbe23c0b95fd68b4bcd971e81267
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835161"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138781"
 ---
 # <a name="string-conversion-macros"></a>Dize dönüştürme makroları
 
@@ -36,7 +37,7 @@ MACRONAME( address_of_structure )
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örnek:
+Örneğin:
 
 [!code-cpp[NVC_ATL_Utilities#128](../../atl/codesnippet/cpp/string-conversion-macros_1.cpp)]
 
@@ -59,7 +60,7 @@ Yapıda dönüştürülen dört dize `TEXTMETRIC` ilk karakterdir ( `tmFirstChar
 |yok|**A**|**Anlatımı**|
 |**\_KODLAMALARı**|**Anlatımı**|**Anlatımı**|
 |**OLE2ANSI**|**A**|**A**|
-|** \_ UNICODE** ve **OLE2ANSI**|**Anlatımı**|**A**|
+|**\_ UNICODE** ve **OLE2ANSI**|**Anlatımı**|**A**|
 
 Aşağıdaki tabloda `DEVMODE` ve `TEXTMETRIC` dize dönüştürme makroları listelenmektedir.
 

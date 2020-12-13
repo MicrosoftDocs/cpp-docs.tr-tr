@@ -1,5 +1,6 @@
 ---
-title: IDispatch ve IErrorInfo destekleme
+description: 'Hakkında daha fazla bilgi edinin: IDispatch ve IErrorInfo'
+title: IDispatch ve IErrorInfo desteği
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ISupportErrorInfoImpl method
@@ -7,19 +8,19 @@ helpviewer_keywords:
 - IDispatchImpl class
 - IDispatch class support in ATL
 ms.assetid: 7db2220f-319d-4ce9-9382-d340019f14f7
-ms.openlocfilehash: 2dcebd215ff5e1bdf72323323dfbaebd16fa3403
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 4622c8811fafc9512400345e5876dd24c466bc93
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342033"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138456"
 ---
-# <a name="supporting-idispatch-and-ierrorinfo"></a>IDispatch ve IErrorInfo destekleme
+# <a name="supporting-idispatch-and-ierrorinfo"></a>IDispatch ve IErrorInfo desteği
 
-Şablon sınıfı kullanabileceğiniz [Idispatchımpl](../atl/reference/idispatchimpl-class.md) bir varsayılan uygulamasını sağlamak üzere `IDispatch Interface` nesneniz üzerinde herhangi bir ikili arabirimler kısmı.
+Nesnelerinizde herhangi bir çift arabirimin bölümünün varsayılan bir uygulamasını sağlamak için [IDispatchImpl](../atl/reference/idispatchimpl-class.md) şablon sınıfını kullanabilirsiniz `IDispatch Interface` .
 
-Nesnenizin kullanıyorsa `IErrorInfo` hataları istemciye geri sonra nesnenizin desteklemelidir bildirmek için arabirimi `ISupportErrorInfo Interface` arabirimi. Şablon sınıfı [Isupporterrorınfoımpl](../atl/reference/isupporterrorinfoimpl-class.md) nesneniz üzerinde hatası veriyorsa tek bir arabirim yalnızca varsa, bu uygulama için kolay bir yol sağlar.
+Nesneniz `IErrorInfo` hataları istemciye geri bildirmek için arabirimini kullanıyorsa, nesnenizin arabirimini desteklemesi gerekir `ISupportErrorInfo Interface` . [Iımporterrorınfoımpl](../atl/reference/isupporterrorinfoimpl-class.md) şablon sınıfı, yalnızca nesneniz üzerinde hata üreten tek bir arabiriminiz varsa bunu uygulamak için kolay bir yol sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)
+[ATL COM nesnelerinin temelleri](../atl/fundamentals-of-atl-com-objects.md)

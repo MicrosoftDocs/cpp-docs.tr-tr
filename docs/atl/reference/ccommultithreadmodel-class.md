@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComMultiThreadModel sınıfı'
 title: CComMultiThreadModel sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - CComMultiThreadModel class
 - threading [ATL]
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-ms.openlocfilehash: 38ed43e77492484b7c8d8cb06cad71e695d41c4a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 705709e18d91714cca8eb3a5cb365ac9f6a9a90b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224285"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146568"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel sınıfı
 
-`CComMultiThreadModel`bir değişkenin değerini artırma ve azaltma için iş parçacığı açısından güvenli yöntemler sağlar.
+`CComMultiThreadModel` bir değişkenin değerini artırma ve azaltma için iş parçacığı açısından güvenli yöntemler sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CComMultiThreadModel
@@ -57,15 +58,15 @@ Genellikle, `CComMultiThreadModel` iki **`typedef`** adlardan birini ([CComObjec
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel` ; D =`CComMultiThreadModel`
+S = `CComSingleThreadModel` ; D = `CComMultiThreadModel`
 
-`CComMultiThreadModel`, üç **`typedef`** ad tanımlar. `AutoCriticalSection`ve `CriticalSection` önemli bir bölümün sahipliğini almak ve serbest bırakmak için yöntemler sağlayan başvuru sınıfları. `ThreadModelNoCS`[CComMultiThreadModelNoCS (CComMultiThreadModelNoCS-class.md) sınıfına başvurur.
+`CComMultiThreadModel` , üç **`typedef`** ad tanımlar. `AutoCriticalSection` ve `CriticalSection` önemli bir bölümün sahipliğini almak ve serbest bırakmak için yöntemler sağlayan başvuru sınıfları. `ThreadModelNoCS` [CComMultiThreadModelNoCS (CComMultiThreadModelNoCS-class.md) sınıfına başvurur.
 
 ## <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** atlbase. h
 
-## <a name="ccommultithreadmodelautocriticalsection"></a><a name="autocriticalsection"></a>CComMultiThreadModel:: oto Kritiksection
+## <a name="ccommultithreadmodelautocriticalsection"></a><a name="autocriticalsection"></a> CComMultiThreadModel:: oto Kritiksection
 
 Kullanırken `CComMultiThreadModel` **`typedef`** ad, `AutoCriticalSection` bir kritik bölüm nesnesinin sahipliğini almak ve serbest bırakmak Için Yöntemler sağlayan [Ccomautocriticalhandle bölümüne](ccomautocriticalsection-class.md)başvurur.
 
@@ -131,7 +132,7 @@ Aşağıdaki tablolarda, `InternalAddRef` `Lock` `ThreadModel` uygulama tarafın
 |`InternalAddRef`|Artış iş parçacığı açısından güvenli değildir.|Artış iş parçacığı güvenlidir.|
 |`Lock`|Hiçbir şey yapmaz; kilitlenecek kritik bölüm yok.|Hiçbir şey yapmaz; kilitlenecek kritik bölüm yok.|
 
-## <a name="ccommultithreadmodelcriticalsection"></a><a name="criticalsection"></a>CComMultiThreadModel:: Kritiksection
+## <a name="ccommultithreadmodelcriticalsection"></a><a name="criticalsection"></a> CComMultiThreadModel:: Kritiksection
 
 Kullanırken `CComMultiThreadModel` **`typedef`** ad, `CriticalSection` önemli bir bölüm nesnesinin sahipliğini almak ve serbest bırakmak Için Yöntemler sağlayan [ccomcriticalhandle bölümüne](ccomcriticalsection-class.md)başvurur.
 
@@ -155,9 +156,9 @@ Buna ek olarak `CriticalSection` , **`typedef`** ad [oto](#autocriticalsection)a
 
 Bkz. [CComMultiThreadModel:: oto Kritiksection](#autocriticalsection).
 
-## <a name="ccommultithreadmodeldecrement"></a><a name="decrement"></a>CComMultiThreadModel::D ecrement
+## <a name="ccommultithreadmodeldecrement"></a><a name="decrement"></a> CComMultiThreadModel::D ecrement
 
-Bu statik işlev, *p*tarafından işaret edilen değişkenin değerini azaltan, [Stalockedazaltma](/windows/win32/api/winnt/nf-winnt-interlockeddecrement)Win32 işlevini çağırır.
+Bu statik işlev, *p* tarafından işaret edilen değişkenin değerini azaltan, [Stalockedazaltma](/windows/win32/api/winnt/nf-winnt-interlockeddecrement)Win32 işlevini çağırır.
 
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw ();
@@ -174,11 +175,11 @@ Azalış sonucu 0 ise `Decrement` 0 değerini döndürür. Azalış sonucu sıf�
 
 ### <a name="remarks"></a>Açıklamalar
 
-`InterlockedDecrement`aynı anda birden fazla iş parçacığının bu değişkeni kullanmasını önler.
+`InterlockedDecrement` aynı anda birden fazla iş parçacığının bu değişkeni kullanmasını önler.
 
-## <a name="ccommultithreadmodelincrement"></a><a name="increment"></a>CComMultiThreadModel:: Increment
+## <a name="ccommultithreadmodelincrement"></a><a name="increment"></a> CComMultiThreadModel:: Increment
 
-Bu statik işlev, *p*tarafından işaret edilen değişkenin değerini artıran bir Win32 Işlevi [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement)çağırır.
+Bu statik işlev, *p* tarafından işaret edilen değişkenin değerini artıran bir Win32 Işlevi [InterlockedIncrement](/windows/win32/api/winnt/nf-winnt-interlockedincrement)çağırır.
 
 ```
 static ULONG WINAPI Increment(LPLONG p) throw ();
@@ -195,9 +196,9 @@ Artış sonucu 0 ise `Increment` 0 değerini döndürür. Artışın sonucu sıf
 
 ### <a name="remarks"></a>Açıklamalar
 
-`InterlockedIncrement`aynı anda birden fazla iş parçacığının bu değişkeni kullanmasını önler.
+`InterlockedIncrement` aynı anda birden fazla iş parçacığının bu değişkeni kullanmasını önler.
 
-## <a name="ccommultithreadmodelthreadmodelnocs"></a><a name="threadmodelnocs"></a>CComMultiThreadModel:: ThreadModelNoCS
+## <a name="ccommultithreadmodelthreadmodelnocs"></a><a name="threadmodelnocs"></a> CComMultiThreadModel:: ThreadModelNoCS
 
 Kullanırken `CComMultiThreadModel` **`typedef`** ad, `ThreadModelNoCS` [CComMultiThreadModelNoCS](ccommultithreadmodelnocs-class.md)sınıfına başvurur.
 
@@ -207,7 +208,7 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComMultiThreadModelNoCS`bir değişkeni artırma ve azaltma için iş parçacığı açısından güvenli yöntemler sağlar; Ancak, kritik bir bölüm sağlamaz.
+`CComMultiThreadModelNoCS` bir değişkeni artırma ve azaltma için iş parçacığı açısından güvenli yöntemler sağlar; Ancak, kritik bir bölüm sağlamaz.
 
 [CComSingleThreadModel](ccomsinglethreadmodel-class.md) ve `CComMultiThreadModelNoCS` Ayrıca için tanımlar içerir `ThreadModelNoCS` . Aşağıdaki tabloda, iş parçacığı modeli sınıfı ve başvurduğu sınıf arasındaki ilişki gösterilmektedir `ThreadModelNoCS` :
 

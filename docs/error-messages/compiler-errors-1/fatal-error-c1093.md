@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1093'
 title: Önemli hata C1093
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1093
 ms.assetid: 61b120e2-44cc-4824-981a-7eb72aa57745
-ms.openlocfilehash: 2ac5729fa74430aa8254f9e2889d24de05c0f54a
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: b02a3786b8859ff6ae227d3cf7a40dab775cb7a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69501068"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145112"
 ---
 # <a name="fatal-error-c1093"></a>Önemli hata C1093
 
