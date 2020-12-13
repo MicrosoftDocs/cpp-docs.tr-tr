@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __writegsbyte, __writegsdword, __writegsqword, __writegsword'
 title: __writegsbyte, __writegsdword, __writegsqword, __writegsword
 ms.date: 09/02/2019
 f1_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - __writegsword intrinsic
 - __writegsdword intrinsic
 ms.assetid: 7746cf6d-2259-4139-9aab-c07dd75c8037
-ms.openlocfilehash: 7b9e812776e9b2bb0820905d088111669096db64
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e3dd3284d38f4c1518fbf5f7184d15fc0c9d67d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221205"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331835"
 ---
 # <a name="__writegsbyte-__writegsdword-__writegsqword-__writegsword"></a>__writegsbyte, __writegsdword, __writegsqword, __writegsword
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 GS segmentinin başlangıcına göre bir uzaklıktan belirtilen bir konuma bellek yazın.
 
@@ -58,12 +59,12 @@ void __writegsqword(
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`__writegsbyte`|X64|
-|`__writegsdword`|X64|
-|`__writegsqword`|X64|
-|`__writegsword`|X64|
+|`__writegsbyte`|x64|
+|`__writegsdword`|x64|
+|`__writegsqword`|x64|
+|`__writegsword`|x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -73,5 +74,5 @@ Bu yordamlar yalnızca iç öğe olarak kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__readgsbyte, \__readgsdword, \__readgsqword, \__readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)\
+[__readgsbyte, \_ _readgsdword, \_ _readgsqword, \_ _readgsword](../intrinsics/readgsbyte-readgsdword-readgsqword-readgsword.md)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

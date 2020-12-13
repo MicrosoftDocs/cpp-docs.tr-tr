@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SCC, SCC, SCC, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l'
 title: iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
 ms.date: 11/04/2016
 api_name:
@@ -65,12 +66,12 @@ helpviewer_keywords:
 - iscsym function
 - iscsymf function
 ms.assetid: 944dfb99-f2b8-498c-9f55-dbcf370d0a2c
-ms.openlocfilehash: bc38e72818446a94a51a37b8df5c8c8582971b3f
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: e6b979800caf404ee79f8913b0431b941acd20cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332694"
 ---
 # <a name="iscsym-iscsymf-__iscsym-__iswcsym-__iscsymf-__iswcsymf-_iscsym_l-_iswcsym_l-_iscsymf_l-_iswcsymf_l"></a>iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
 
@@ -113,10 +114,10 @@ int _iswcsymf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*<br/>
-Test etmek için bir tamsayı. *c* , işlevin dar karakter sürümü için 0-255 aralığında olmalıdır.
+*,*<br/>
+Sınanacak tamsayı. *c* , işlevin dar karakter sürümü için 0-255 aralığında olmalıdır.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -127,18 +128,18 @@ Kullanılacak yerel ayar.
 
 Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece bu yordamlar makrolar olarak tanımlanır. Bu yordamların makro sürümlerini kullandığınızda, bağımsız değişkenler birden çok kez değerlendirilebilirler. Bağımsız değişken listesi içinde yan etkileri olan ifadeleri kullanırken dikkatli olun.
 
-Geriye dönük uyumluluk için, **SCC** ve **SCC** 'ler yalnızca [ &#95; &#95;stdc&#95; ](../../preprocessor/predefined-macros.md) tanımlanmadığında veya 0 olarak tanımlandığında makrolar olarak tanımlanır; Aksi takdirde bunlar tanımsızdır.
+Geriye dönük uyumluluk için, **SCC** ve **scc** 'ler yalnızca [&#95;&#95;stdc&#95;&#95;](../../preprocessor/predefined-macros.md) tanımlanmadığında veya 0 olarak tanımlandığında makrolar olarak tanımlanır; Aksi takdirde bunlar tanımsızdır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**SCC** **, SCC,** **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|C: \<CType. h ><br /><br /> C++: \<cctype > veya \<CType. h >|
+|**SCC** **, SCC,** **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|, \<ctype.h><br /><br /> C++: \<cctype> veya \<ctype.h>|
 
-**SCC** **, SCC,** **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**ve **_iswcsymf_l** yordamları Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+**SCC** **, SCC,** **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l** ve **_iswcsymf_l** yordamları Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
-[locale](../../c-runtime-library/locale.md)<br/>
-[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
+[Karakter sınıflandırması](../../c-runtime-library/character-classification.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[, isw yordamları](../../c-runtime-library/is-isw-routines.md)<br/>

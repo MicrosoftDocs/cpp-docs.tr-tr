@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCVisualManager sınıfı'
 title: CMFCVisualManager sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -344,12 +345,12 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-ms.openlocfilehash: bf6c663b6c841f4bc06255845d924cab58d87f1f
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: ae915c74ec97c2e9ec65da2c24674dd38637ba60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683916"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331680"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager sınıfı
 
@@ -392,7 +393,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: GetMDITabsBordersSize](#getmditabsborderssize)|, Mdısekmeleri penceresinin kenarlık boyutunu almak için Framework tarafından çağırılır.|
 |[CMFCVisualManager:: Getmenuıtemtextcolor](#getmenuitemtextcolor)||
 |[CMFCVisualManager:: GetMenuShadowDepth](#getmenushadowdepth)|Bir menü gölgesinin genişliğini ve yüksekliğini belirleyen bir değer döndürür.|
-|[CMFCVisualManager:: GetNcBtnSize](#getncbtnsize)|Geçerli görsel yöneticiye bağlı olarak sistem düğmelerinin boyutunu anlamak için Framework tarafından çağırılır. Sistem düğmeleri **, komutlarla eşlenen**, **simge durumuna küçültme**, **Ekranı Kapla**ve **geri yükleme**için ana çerçevenin açıklamalı alt yazısının bulunduğu düğmelerdir.|
+|[CMFCVisualManager:: GetNcBtnSize](#getncbtnsize)|Geçerli görsel yöneticiye bağlı olarak sistem düğmelerinin boyutunu anlamak için Framework tarafından çağırılır. Sistem düğmeleri **, komutlarla eşlenen**, **simge durumuna küçültme**, **Ekranı Kapla** ve **geri yükleme** için ana çerçevenin açıklamalı alt yazısının bulunduğu düğmelerdir.|
 |[CMFCVisualManager:: GetPopupMenuBorderSize](#getpopupmenubordersize)|Bir açılan menünün kenarlığının boyutunu almak için Framework tarafından çağırılır.|
 |[CMFCVisualManager:: GetPropertyGridGroupColor](#getpropertygridgroupcolor)|Bir özellik listesinin arka plan rengini almak için Framework tarafından çağırılır.|
 |[CMFCVisualManager:: GetPropertyGridGroupTextColor](#getpropertygridgrouptextcolor)|Bir özellik listesinin metin rengini almak için Framework tarafından çağırılır.|
@@ -447,7 +448,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: OnDrawMenuResizeBar](#ondrawmenuresizebar)||
 |[CMFCVisualManager:: OnDrawMenuScrollButton](#ondrawmenuscrollbutton)|Bir menü kaydırma düğmesi çizdiğinde framework tarafından çağırılır.|
 |[CMFCVisualManager:: OnDrawMenuShadow](#ondrawmenushadow)||
-|[CMFCVisualManager:: OnDrawMenuSystemButton](#ondrawmenusystembutton)|Menü **sistem düğmelerini çizerken**Framework tarafından çağırılır, **simge durumuna küçültün**, **Ekranı Kapla**ve **geri yükleyin**.|
+|[CMFCVisualManager:: OnDrawMenuSystemButton](#ondrawmenusystembutton)|Menü **sistem düğmelerini çizerken** Framework tarafından çağırılır, **simge durumuna küçültün**, **Ekranı Kapla** ve **geri yükleyin**.|
 |[CMFCVisualManager:: OnDrawMiniFrameBorder](#ondrawminiframeborder)||
 |[CMFCVisualManager:: OnDrawOutlookBarSplitter](#ondrawoutlookbarsplitter)|Bir Outlook çubuğu için Bölümlendirici çizdiğinde framework tarafından çağırılır. Bölümlendirici, denetimleri gruplamak için kullanılan yatay bir çubukdır.|
 |[CMFCVisualManager:: OnDrawOutlookPageButtonBorder](#ondrawoutlookpagebuttonborder)|Bir Outlook sayfası düğmesinin kenarlığını çizerken Framework tarafından çağırılır. Outlook çubuğu düğmeleri, ekran tarafından görüntülenebilecek daha fazla düğme içeriyorsa Outlook sayfa düğmeleri görüntülenir.|
@@ -475,13 +476,13 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: Ondrawribbongallerbutton](#ondrawribbongallerybutton)||
 |[CMFCVisualManager:: Ondrawribbonkeytıp](#ondrawribbonkeytip)||
 |[CMFCVisualManager:: OnDrawRibbonLabel](#ondrawribbonlabel)|Şerit etiketini çizerken Framework tarafından çağırılır.|
-|[CMFCVisualManager:: OnDrawRibbonMainPanelButtonBorder](#ondrawribbonmainpanelbuttonborder)|**Ana** panelde konumlandırılmış bir Şerit düğmesinin kenarlığını çizerken Framework tarafından çağırılır. **Ana** panel, Kullanıcı **ana düğmeye**tıkladığında görüntülenen paneldir.|
+|[CMFCVisualManager:: OnDrawRibbonMainPanelButtonBorder](#ondrawribbonmainpanelbuttonborder)|**Ana** panelde konumlandırılmış bir Şerit düğmesinin kenarlığını çizerken Framework tarafından çağırılır. **Ana** panel, Kullanıcı **ana düğmeye** tıkladığında görüntülenen paneldir.|
 |[CMFCVisualManager:: OnDrawRibbonMainPanelFrame](#ondrawribbonmainpanelframe)|Çerçeveyi **ana** bölmenin etrafında çizdiğinde framework tarafından çağırılır.|
 |[CMFCVisualManager:: OnDrawRibbonMenuCheckFrame](#ondrawribbonmenucheckframe)||
 |[CMFCVisualManager:: OnDrawRibbonPanel](#ondrawribbonpanel)|Bir şerit paneli çizdiğinde framework tarafından çağırılır.|
 |[CMFCVisualManager:: OnDrawRibbonPanelCaption](#ondrawribbonpanelcaption)|Şerit bölmesinin resim yazısını çizdiğinde framework tarafından çağırılır.|
 |[CMFCVisualManager:: OnDrawRibbonProgressBar](#ondrawribbonprogressbar)|Bir [CMFCRibbonProgressBar](../../mfc/reference/cmfcribbonprogressbar-class.md) nesnesi çizdiğinde framework tarafından çağırılır.|
-|[CMFCVisualManager:: OnDrawRibbonQuickAccessToolBarSeparator](#ondrawribbonquickaccesstoolbarseparator)|Şeridin **hızlı erişim araç çubuğuna**bir ayırıcı çizdiğinde framework tarafından çağırılır.|
+|[CMFCVisualManager:: OnDrawRibbonQuickAccessToolBarSeparator](#ondrawribbonquickaccesstoolbarseparator)|Şeridin **hızlı erişim araç çubuğuna** bir ayırıcı çizdiğinde framework tarafından çağırılır.|
 |[CMFCVisualManager:: OnDrawRibbonRecentFilesFrame](#ondrawribbonrecentfilesframe)|Son kullanılan dosyalar listesinin çevresine bir çerçeve çizdiğinde framework tarafından çağırılır.|
 |[CMFCVisualManager:: OnDrawRibbonSliderChannel](#ondrawribbonsliderchannel)|Bir [CMFCRibbonSlider](../../mfc/reference/cmfcribbonslider-class.md) nesnesinin kanalını çizerken Framework tarafından çağırılır.|
 |[CMFCVisualManager:: OnDrawRibbonSliderThumb](#ondrawribbonsliderthumb)|Bir nesnenin Thumb öğesini çizdiğinde framework tarafından çağırılır `CMFCRibbonSlider` .|
@@ -825,7 +826,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*PBar*içindeki metnin rengini gösteren [colorref](/windows/win32/gdi/colorref) parametresi.
+*PBar* içindeki metnin rengini gösteren [colorref](/windows/win32/gdi/colorref) parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -979,7 +980,7 @@ Sistem düğmelerinin boyutunu belirten bir [CSize](../../atl-mfc-shared/referen
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sistem **düğmeleri,, komutlarla eşlenen**, **simge durumuna küçültme**, **Ekranı Kapla**ve **geri yükleme**için çerçeve penceresinin açıklamalı alt yazısının düğmelerdir. Bu düğmelerin boyutu geçerli görsel yöneticiye bağlıdır. Uygulamanızdaki sistem düğmelerinin boyutunu özelleştirmek istiyorsanız bu yöntemi geçersiz kılın.
+Sistem **düğmeleri,, komutlarla eşlenen**, **simge durumuna küçültme**, **Ekranı Kapla** ve **geri yükleme** için çerçeve penceresinin açıklamalı alt yazısının düğmelerdir. Bu düğmelerin boyutu geçerli görsel yöneticiye bağlıdır. Uygulamanızdaki sistem düğmelerinin boyutunu özelleştirmek istiyorsanız bu yöntemi geçersiz kılın.
 
 ## <a name="cmfcvisualmanagergetpopupmenubordersize"></a><a name="getpopupmenubordersize"></a> CMFCVisualManager:: GetPopupMenuBorderSize
 
@@ -1414,7 +1415,7 @@ virtual COLORREF GetToolbarButtonTextColor(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Durum ile belirtilen*durum olduğunda *pButton* 'ın metin rengi.
+*Durum ile belirtilen* durum olduğunda *pButton* 'ın metin rengi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2001,7 +2002,7 @@ virtual void OnDrawCaptionButton (
 'ndaki Başlık düğmesinin devre dışı olup olmadığını belirten bir Boolean parametresi.
 
 *nImageID*<br/>
-'ndaki Düğme için kullanılacak simgenin görüntü dizini. *NImageID* -1 ise, bu yöntem *pButton*içinde kaydedilmiş görüntü dizinini kullanır.
+'ndaki Düğme için kullanılacak simgenin görüntü dizini. *NImageID* -1 ise, bu yöntem *pButton* içinde kaydedilmiş görüntü dizinini kullanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2258,7 +2259,7 @@ virtual void OnDrawFloatingToolbarBorder(
 
 Kayan araç çubuğu, mini çerçeve penceresi olarak görünen bir araç çubuğudur. Genellikle, bu, bir Kullanıcı bir araç çubuğunu artık yerleştirilmemesi için sürüklediğinde meydana gelir.
 
-Kenarlığın boyutu, *rectBorderSize*karşılık gelen parametreyle belirtilir. Örneğin, araç çubuğunun üst kenarlığının genişliği tarafından belirtilir `rectBorderSize.top` .
+Kenarlığın boyutu, *rectBorderSize* karşılık gelen parametreyle belirtilir. Örneğin, araç çubuğunun üst kenarlığının genişliği tarafından belirtilir `rectBorderSize.top` .
 
 Bir kayan araç çubuğunun kenarlığının görünümünü özelleştirmek için türetilmiş bir görsel yöneticisinde bu yöntemi geçersiz kılın.
 
@@ -2544,7 +2545,7 @@ virtual void OnDrawMenuSystemButton(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Menü sistem düğmeleri, başlık çubuğunda bulunan **kapatma**, **simge durumuna küçültme**, **Ekranı Kapla**ve **geri yükleme** düğmelerindedir.
+Menü sistem düğmeleri, başlık çubuğunda bulunan **kapatma**, **simge durumuna küçültme**, **Ekranı Kapla** ve **geri yükleme** düğmelerindedir.
 
 Bu yöntem için varsayılan uygulama, DFC_CAPTION türü ile [CDC::D rawFrameControl](../../mfc/reference/cdc-class.md#drawframecontrol) çağırır. Sistem düğmelerinin görünümünü özelleştirmek için türetilen Visual Manager sınıfınıza bu yöntemi geçersiz kılın.
 
@@ -2773,7 +2774,7 @@ virtual void OnDrawRibbonApplicationButton(
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Ana düğmenin**görünümünü özelleştirmek istiyorsanız türetilmiş bir görsel yöneticisinde bu yöntemi geçersiz kılın.
+**Ana düğmenin** görünümünü özelleştirmek istiyorsanız türetilmiş bir görsel yöneticisinde bu yöntemi geçersiz kılın.
 
 ## <a name="cmfcvisualmanagerondrawribbonbuttonborder"></a><a name="ondrawribbonbuttonborder"></a> CMFCVisualManager:: OnDrawRibbonButtonBorder
 
@@ -3187,7 +3188,7 @@ virtual void OnDrawRibbonMainPanelButtonBorder(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ana panelde bir için kenarlığın görünümünü özelleştirmek üzere türetilmiş bir görsel yöneticisinde bu yöntemi geçersiz kılın `CMFCRibbonButton` . **Main**
+Ana panelde bir için kenarlığın görünümünü özelleştirmek üzere türetilmiş bir görsel yöneticisinde bu yöntemi geçersiz kılın `CMFCRibbonButton` . 
 
 ## <a name="cmfcvisualmanagerondrawribbonmainpanelframe"></a><a name="ondrawribbonmainpanelframe"></a> CMFCVisualManager:: OnDrawRibbonMainPanelFrame
 
@@ -3350,7 +3351,7 @@ virtual void OnDrawRibbonQuickAccessToolBarSeparator(
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Hızlı erişim araç çubuğundaki**şerit ayırıcılarının görünümünü özelleştirmek için bu yöntemi türetilmiş bir sınıfta geçersiz kılın.
+**Hızlı erişim araç çubuğundaki** şerit ayırıcılarının görünümünü özelleştirmek için bu yöntemi türetilmiş bir sınıfta geçersiz kılın.
 
 ## <a name="cmfcvisualmanagerondrawribbonrecentfilesframe"></a><a name="ondrawribbonrecentfilesframe"></a> CMFCVisualManager:: OnDrawRibbonRecentFilesFrame
 
@@ -3782,7 +3783,7 @@ virtual void OnDrawStatusBarProgress(
 'ndaki İlerleme çubuğunun başlangıç rengini gösteren [colorref](/windows/win32/gdi/colorref) parametresi. Değer, bir renk gradyanının başlangıcı ya da ilerleme çubuğunun tamamen rengi olur.
 
 *clrProgressBarDest*<br/>
-'ndaki İlerleme çubuğu için bir renk gradyanının sonunu gösteren COLORREF parametresi. *ClrProgressBarDest* -1 ise, çerçeve ilerleme çubuğunu bir renk gradyanı olarak çizmez. Bunun yerine, tüm ilerleme çubuğunu *clrBar*tarafından belirtilen renkle doldurur.
+'ndaki İlerleme çubuğu için bir renk gradyanının sonunu gösteren COLORREF parametresi. *ClrProgressBarDest* -1 ise, çerçeve ilerleme çubuğunu bir renk gradyanı olarak çizmez. Bunun yerine, tüm ilerleme çubuğunu *clrBar* tarafından belirtilen renkle doldurur.
 
 *clrProgressText*<br/>
 'ndaki Geçerli ilerlemenin metinsel gösteriminin metin rengini gösteren COLORREF parametresi. *BPROGRESSTEXT* false olarak ayarlandıysa bu parametre yoksayılır.
@@ -3892,7 +3893,7 @@ virtual void OnDrawTabCloseButton(
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PTabWnd*öğesinin etkin sekmesindeki **Kapat** düğmesinin görünümünü özelleştirmek için bu yöntemi türetilmiş bir görsel yöneticisinde geçersiz kılın.
+*PTabWnd* öğesinin etkin sekmesindeki **Kapat** düğmesinin görünümünü özelleştirmek için bu yöntemi türetilmiş bir görsel yöneticisinde geçersiz kılın.
 
 ## <a name="cmfcvisualmanagerondrawtabcontent"></a><a name="ondrawtabcontent"></a> CMFCVisualManager:: OnDrawTabContent
 
@@ -3998,7 +3999,7 @@ virtual void OnDrawTask(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve görev çubuğundaki görevleri hem simge hem de metin olarak görüntüler. *Picons* parametresi, *pTask*tarafından belirtilen görevin simgesini içerir.
+Çerçeve görev çubuğundaki görevleri hem simge hem de metin olarak görüntüler. *Picons* parametresi, *pTask* tarafından belirtilen görevin simgesini içerir.
 
 Görev çubuğundaki görevlerin görünüşünü özelleştirmek için türetilmiş bir sınıfta bu yöntemi geçersiz kılın.
 
@@ -4853,7 +4854,7 @@ virtual void OnHighlightMenuItem(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin varsayılan uygulamasında *pButton* veya *clrText*parametreleri kullanılmaz. *Rect* tarafından belirtilen dikdörtgeni Standart arka plan rengiyle doldurur.
+Bu yöntemin varsayılan uygulamasında *pButton* veya *clrText* parametreleri kullanılmaz. *Rect* tarafından belirtilen dikdörtgeni Standart arka plan rengiyle doldurur.
 
 Vurgulanan menü öğelerinin görünümünü özelleştirmek için türetilmiş bir görsel yöneticisinde bu yöntemi geçersiz kılın. Vurgulanan bir menü öğesinin metin rengini değiştirmek için *clrText* parametresini kullanın.
 

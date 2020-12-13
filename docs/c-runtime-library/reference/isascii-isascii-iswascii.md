@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: isascıı, __isascii, ıwascıı'
 title: isascii, __isascii, iswascii
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - istascii function
 - iswascii function
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
-ms.openlocfilehash: 3e04b85c9ce7519593802c21311315d534dce6a5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0d0a7964ba5b9a3133f100ea94fd4bac95407627
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332734"
 ---
 # <a name="isascii-__isascii-iswascii"></a>isascii, __isascii, iswascii
 
@@ -90,8 +91,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isascıı**, **__isascii**|C: \<CType. h><br /><br /> C++: \<cctype> veya \<ctype. h>|
-|**iswascıı**|C: \<wctype. h>, \<ctype. h> veya \<wchar. h><br /><br /> C++: \<cwctype>, \<cctype>, \<wctype. h>, \<CType. h> veya \<wchar. h>|
+|**isascıı**, **__isascii**|, \<ctype.h><br /><br /> C++: \<cctype> veya \<ctype.h>|
+|**iswascıı**|C: \<wctype.h> , \<ctype.h> veya \<wchar.h><br /><br /> C++: \<cwctype> , \<cctype> , \<wctype.h> , \<ctype.h> , veya \<wchar.h>|
 
 **Isascıı**, **__isascii** ve **ıwascıı** işlevleri, Microsoft 'a özgüdür. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

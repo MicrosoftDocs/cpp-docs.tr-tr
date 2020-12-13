@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _heapchk'
 title: _heapchk
 ms.date: 4/2/2020
 api_name:
@@ -31,18 +32,18 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-ms.openlocfilehash: 2ddbdaec5861d48cc23a7cbcd28332e8c06ebbfe
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 57cde789c8d6e6b8c8da91adf4a6f274ce557ed7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916207"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332798"
 ---
 # <a name="_heapchk"></a>_heapchk
 
 Yığın üzerinde tutarlılık denetimleri çalıştırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _heapchk( void );
@@ -60,11 +61,11 @@ int _heapchk( void );
 | **_HEAPEMPTY** | Yığın başlatılmamış. |
 | **_HEAPOK** | Yığın tutarlı görünüyor. |
 
-Buna ek olarak, bir hata oluşursa **_heapchk** **errno** , **ENOSYS**olarak ayarlanır.
+Buna ek olarak, bir hata oluşursa **_heapchk** **errno** , **ENOSYS** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Heapchk** işlevi, yığının en az tutarlılığını denetleyerek yığında ilgili sorunları ayıklamanıza yardımcı olur. İşletim sistemi **_heapchk**(örneğin, Windows 98) desteklemiyorsa, işlev **_HEAPOK** döndürür ve **errno** , **ENOSYS**olarak ayarlar.
+**_Heapchk** işlevi, yığının en az tutarlılığını denetleyerek yığında ilgili sorunları ayıklamanıza yardımcı olur. İşletim sistemi **_heapchk**(örneğin, Windows 98) desteklemiyorsa, işlev **_HEAPOK** döndürür ve **errno** , **ENOSYS** olarak ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -72,7 +73,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_heapchk**|\<malloc. h>|\<errno. h>|
+|**_heapchk**|\<malloc.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -121,7 +122,7 @@ OK - heap is fine
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
 [_heapmin](heapmin.md)<br/>
 [_heapset](../../c-runtime-library/heapset.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMonthCalCtrl sınıfı'
 title: CMonthCalCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -90,12 +91,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-ms.openlocfilehash: d986aa5f8e232f0ab94858dbdfae5754536ccdb9
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 4c4c4684167a9c1c569f69f582688b294ac95233
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562148"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331599"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 
@@ -345,7 +346,7 @@ Bu yöntem, Windows SDK açıklanan [MCM_GETCALID](/windows/win32/Controls/mcm-g
 
 ## <a name="cmonthcalctrlgetcolor"></a><a name="getcolor"></a> CMonthCalCtrl:: GetColor
 
-*NRegion*tarafından belirtilen ay Takvim denetimindeki bir alanın rengini alır.
+*NRegion* tarafından belirtilen ay Takvim denetimindeki bir alanın rengini alır.
 
 ```
 COLORREF GetColor(int nRegion) const;

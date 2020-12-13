@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _isctype, ıswctype, _isctype_l, _iswctype_l'
 title: _isctype, iswctype, _isctype_l, _iswctype_l
 ms.date: 4/2/2020
 api_name:
@@ -46,16 +47,16 @@ helpviewer_keywords:
 - isctype function
 - _iswctype function
 ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3
-ms.openlocfilehash: 2261eab574a8bc206a02f9e505beff88cf4c7fcf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2b8bd10cd4240e4382d17cb8028589ddf4dd8b2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918960"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332668"
 ---
 # <a name="_isctype-iswctype-_isctype_l-_iswctype_l"></a>_isctype, iswctype, _isctype_l, _iswctype_l
 
-*DESC* bağımsız değişkeni tarafından belirtilen CType özelliği için test *c* . Her geçerli *DESC*değeri için, eşdeğer bir geniş karakter sınıflandırma yordamı vardır.
+*DESC* bağımsız değişkeni tarafından belirtilen CType özelliği için test *c* . Her geçerli *DESC* değeri için, eşdeğer bir geniş karakter sınıflandırma yordamı vardır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -112,10 +113,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_isctype**|\<CType. h>|
-|**iswctype**|\<CType. h> veya \<wchar. h>|
-|**_isctype_l**|\<CType. h>|
-|**_iswctype_l**|\<CType. h> veya \<wchar. h>|
+|**_isctype**|\<ctype.h>|
+|**iswctype**|\<ctype.h> veya \<wchar.h>|
+|**_isctype_l**|\<ctype.h>|
+|**_iswctype_l**|\<ctype.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __writemsr'
 title: __writemsr
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - wrmsr instruction
 - __writemsr intrinsic
 ms.assetid: 938b1553-51a8-4822-a818-6bed79b0fde5
-ms.openlocfilehash: 7819477edb8d4e6b18a1213a73ba67065ea7ff57
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0ab7392d9df07a9083ca095bc7002a6bf7d45628
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331849"
 ---
 # <a name="__writemsr"></a>__writemsr
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Modele özgü Register (`wrmsr`) yönergesini yazmayı üretir.
+Modele özgü Register () yönergesini yazmayı üretir `wrmsr` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -44,7 +45,7 @@ void __writemsr(
 |---------------|------------------|
 |`__writemsr`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

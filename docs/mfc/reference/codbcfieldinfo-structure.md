@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CODBCFieldInfo Yapısı'
 title: CODBCFieldInfo Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - ODBC [MFC], data source information
 - CODBCFieldInfo structure [MFC]
 ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
-ms.openlocfilehash: bc2ad0c8319a60b773211dbd6b52b57bb2dbcafb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7cd7072719bec46cfbfaeb02c5c86d714c4de13c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388201"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331422"
 ---
 # <a name="codbcfieldinfo-structure"></a>CODBCFieldInfo Yapısı
 
-`CODBCFieldInfo` Yapısı bir ODBC veri kaynağı alanları hakkında bilgileri içerir.
+`CODBCFieldInfo`Yapı, BIR ODBC veri kaynağındaki alanlarla ilgili bilgiler içerir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,27 +38,27 @@ struct CODBCFieldInfo
 Alanın adı.
 
 *m_nSQLType*<br/>
-Alan SQL veri türü. Bu, bir ODBC SQL veri türü veya bir sürücüye özel SQL veri türü olabilir. Geçerli ODBC SQL veri türleri listesi için Windows SDK'sı "SQL veri türleri" konusuna bakın. Sürücü özgü SQL veri türleri hakkında daha fazla bilgi için sürücünün belgelerine bakın.
+Alanın SQL veri türü. Bu bir ODBC SQL veri türü veya sürücüye özgü bir SQL veri türü olabilir. Geçerli ODBC SQL veri türlerinin bir listesi için, Windows SDK "SQL veri türleri" başlığına bakın. Sürücüye özgü SQL veri türleri hakkında daha fazla bilgi için sürücünün belgelerine bakın.
 
 *m_nPrecision*<br/>
-Verilen duyarlık alan. Ayrıntılar için Windows SDK'yı "Duyarlığı, Ölçek, uzunluğu ve görüntüleme boyutu" konularına bakın.
+Alanın en büyük duyarlığı. Ayrıntılar için Windows SDK "duyarlık, ölçek, uzunluk ve görüntüleme boyutu" başlığına bakın.
 
 *m_nScale*<br/>
-Ölçeğin alan. Ayrıntılar için Windows SDK'yı "Duyarlığı, Ölçek, uzunluğu ve görüntüleme boyutu" konularına bakın.
+Alanın ölçeği. Ayrıntılar için Windows SDK "duyarlık, ölçek, uzunluk ve görüntüleme boyutu" başlığına bakın.
 
 *m_nNullability*<br/>
-Olup alan, bir Null değer kabul eder. Bu iki değerden biri olabilir: SQL_NULLABLE alan Null değerleri kabul eder ya da alan kabul edilmez, SQL_NO_NULLS değerleri Null.
+Alanın null bir değer kabul edip etmeyeceğini belirtir. Bu iki değerden biri olabilir: alan null değerleri kabul ederse SQL_NULLABLE veya alan null değerleri kabul etmezse SQL_NO_NULLS.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu bilgileri almak için arama [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo).
+Bu bilgileri almak için [CRecordset:: GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)çağırın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxdb.h
+**Üstbilgi:** Afxdb. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)<br/>
-[CRecordset::GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)
+[Yapılar, stiller, geri çağrılar ve Ileti haritaları](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CRecordset:: GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)<br/>
+[CRecordset:: GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)

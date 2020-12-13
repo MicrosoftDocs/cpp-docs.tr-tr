@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: RemoveReference yapısı'
 title: RemoveReference Yapısı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - RemoveReference structure
 ms.assetid: 43ff91bb-815a-440e-b9fb-7dcbb7c863af
-ms.openlocfilehash: 7753c1ad41f12fa8c14d2f10c9e2f91e043a5846
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0bcf3685e44b756ce324adc8301d7afb5b4b3f40
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213609"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332500"
 ---
 # <a name="removereference-structure"></a>RemoveReference Yapısı
 
@@ -33,7 +34,7 @@ struct RemoveReference<T&&>;
 
 ### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Bir sınıf.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -60,4 +61,4 @@ Belirtilen sınıf şablonu parametresinden başvuruyu veya rvalue-Reference nit
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

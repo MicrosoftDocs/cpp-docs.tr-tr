@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: El Ile erişimcileri kullanma'
 title: El ile Çalışan Erişimcileri Kullanma
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - manual accessors
 - accessors [C++], manual
 ms.assetid: 29f00a89-0240-482b-8413-4120b9644672
-ms.openlocfilehash: b76c6a2d0af404bc526fee8f511320a58ffd86ec
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 73363be83e06a3eeced114dc90c65f82601a4a16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218292"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332473"
 ---
 # <a name="using-manual-accessors"></a>El ile Çalışan Erişimcileri Kullanma
 

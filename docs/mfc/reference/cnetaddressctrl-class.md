@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Cnetaddressc$sınıfı'
 title: Cnetaddressc$sınıfı
 ms.date: 11/19/2018
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: e92ea79727248afd84dd08058ea8f23cc8d14f44
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 66f2bb647d02b262f9264d5a99f84a3fb23fc119
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686593"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331510"
 ---
 # <a name="cnetaddressctrl-class"></a>Cnetaddressc$sınıfı
 

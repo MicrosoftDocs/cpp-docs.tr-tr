@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ecvt'
 title: _ecvt
 ms.date: 4/2/2020
 api_name:
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - converting double numbers
 - ecvt function
 ms.assetid: a916eb05-92d1-4b5c-8563-093acdb49dc8
-ms.openlocfilehash: 227010fde5dc5ec82fc13c724c8d5a2f43788a8f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9226ac29827db8d412a1266eeba1ccd2b889e2ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332859"
 ---
 # <a name="_ecvt"></a>_ecvt
 
 Bir **`double`** sayıyı dizeye dönüştürür. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz. [_ecvt_s](ecvt-s.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 char *_ecvt(
@@ -53,7 +54,7 @@ char *_ecvt(
 
 ### <a name="parameters"></a>Parametreler
 
-*deeri*<br/>
+*değer*<br/>
 Dönüştürülecek sayı.
 
 *biriktirme*<br/>
@@ -73,7 +74,7 @@ Dönüştürülen sayının işareti.
 
 **_Ecvt** işlevi bir kayan nokta numarasını bir karakter dizesine dönüştürür. *Değer* parametresi dönüştürülecek kayan noktalı sayıdır. Bu işlev, *değerin* *sayı rakamlarını sayı* olarak bir dize olarak depolar ve null karakteri (' \ 0 ') ekler. *Değer* içindeki *basamak sayısı sayıyı aşarsa,* düşük sıra basamağı yuvarlanır. *Count* basamaktan daha azı varsa, dize sıfırlar ile doldurulur.
 
-**_Ecvt** tarafından döndürülen toplam basamak sayısı **_CVTBUFSIZE**aşamaz.
+**_Ecvt** tarafından döndürülen toplam basamak sayısı **_CVTBUFSIZE** aşamaz.
 
 Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *değer* işareti, çağrıdan sonra *Ara* ve *imzala* öğesinden elde edilebilir. *Ara* parametresi, dizenin başlangıcına göre ondalık noktanın konumunu sağlayan bir tamsayı değerine işaret eder. 0 veya negatif bir tamsayı değeri, ondalık noktanın ilk basamağın solunda olduğunu gösterir. *Sign* parametresi, dönüştürülmüş sayının işaretini gösteren bir tamsayıyı işaret eder. Tamsayı değeri 0 ise, sayı pozitif olur. Aksi takdirde, sayı negatif olur.
 
@@ -81,7 +82,7 @@ Yalnızca rakamlar dizede depolanır. Ondalık noktanın konumu ve *değer* işa
 
 **_ecvt** ve **_fcvt** dönüştürme için tek bir statik olarak ayrılmış arabellek kullanır. Bu yordamların birine yapılan her bir çağrı, önceki çağrının sonucunu yok eder.
 
-Bu işlev, parametrelerini doğrular. *Ara* veya *işaret* **null**veya *sayı* 0 ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve **null** döndürülür.
+Bu işlev, parametrelerini doğrular. *Ara* veya *işaret* **null** veya *sayı* 0 ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve **null** döndürülür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

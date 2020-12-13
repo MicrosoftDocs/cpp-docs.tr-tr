@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CObList sınıfı'
 title: CObList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,18 +51,18 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
-ms.openlocfilehash: a13363ef9b200051c26781ab6e9870a10de06d88
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: edfa476780e07b41f4f1e0abede24244ad837578
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274585"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331447"
 ---
 # <a name="coblist-class"></a>CObList sınıfı
 
 `CObject`Ardışık olarak veya işaretçi değerine göre erişilebilen, benzersiz olmayan işaretçilerin sıralı listesini destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CObList : public CObject
@@ -359,7 +360,7 @@ Aşağıdaki tabloda şuna benzer diğer üye işlevleri gösterilmektedir `CObL
 
 |Sınıf|Üye İşlevi|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void \*& GetAt (konum** *konumu* **) const;**<br /><br /> ** \*& GetAt (konum** *konumu* **) void;**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void \*& GetAt (konum** *konumu* **) const;**<br /><br /> **\*& GetAt (konum** *konumu* **) void;**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString& GetAt (konum** *konumu* **) const;**<br /><br /> **CString& GetAt (konum** *konumu* **);**|
 
 ### <a name="example"></a>Örnek
@@ -452,7 +453,7 @@ Sınıfın listesi için bkz. [CObList:: CObList](#coblist) `CAge` .
 
 ## <a name="coblistgetnext"></a><a name="getnext"></a> CObList:: GetNext
 
-*RPosition*tarafından tanımlanan liste öğesini alır ve ardından listedeki bir *rPosition* `POSITION` sonraki girdinin değerine rPosition değerini ayarlar.
+*RPosition* tarafından tanımlanan liste öğesini alır ve ardından listedeki bir  `POSITION` sonraki girdinin değerine rPosition değerini ayarlar.
 
 ```
 CObject*& GetNext(POSITION& rPosition);
@@ -503,7 +504,7 @@ a CAge at $46C0 21
 
 ## <a name="coblistgetprev"></a><a name="getprev"></a> CObList:: Getöncekini
 
-*RPosition*tarafından tanımlanan liste öğesini alır ve ardından listedeki ÖNCEKI girdinin konum değerine *rPosition* değerini ayarlar.
+*RPosition* tarafından tanımlanan liste öğesini alır ve ardından listedeki ÖNCEKI girdinin konum değerine *rPosition* değerini ayarlar.
 
 ```
 CObject*& GetPrev(POSITION& rPosition);

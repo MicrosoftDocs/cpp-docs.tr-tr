@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: ısinf'
 title: isinf
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 - math/isinf
 helpviewer_keywords:
 - isinf function
-ms.openlocfilehash: 7366f340477bf1bb50ebe1e53bcec1f3e16e0863
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f174855ddbb8cc43fd7338d4254c0f03bf53967d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332638"
 ---
 # <a name="isinf"></a>isinf
 
 Kayan nokta değerinin sonsuzluk olup olmadığını belirler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int isinf(
@@ -37,7 +38,7 @@ Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**isinf** **`true`** *x* bağımsız değişkeni pozitif veya negatif sonsuzluk ise ısinf sıfır dışında bir değer döndürür (C++ kodunda). bağımsız değişken sonlu veya NAN ise **ısinf** 0 döndürür ( **`false`** C++ kodunda). Hem normal hem de alt normal kayan nokta değerleri sonlu kabul edilir.
+ **`true`** *x* bağımsız değişkeni pozitif veya negatif sonsuzluk ise ısinf sıfır dışında bir değer döndürür (C++ kodunda). bağımsız değişken sonlu veya NAN ise **ısinf** 0 döndürür ( **`false`** C++ kodunda). Hem normal hem de alt normal kayan nokta değerleri sonlu kabul edilir.
 
 ## <a name="remarks"></a>Açıklamalar
 

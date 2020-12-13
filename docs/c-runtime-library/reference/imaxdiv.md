@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ımaxdıv'
 title: imaxdiv
 ms.date: 04/05/2018
 api_name:
@@ -24,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-ms.openlocfilehash: 298356da8e8e76c132b963ef4f71db6a3d0e74f7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3e1f417c1fb45b452b3cd07560bfec68d21fd1a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505631"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332768"
 ---
 # <a name="imaxdiv"></a>imaxdiv
 
@@ -58,7 +59,7 @@ Payda.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Imaxdiv** işlevi, *numer* ile Mase 'yi *böler ve bu* sayede bölümü ve kalanı hesaplar. **İmaxdiv_t** yapısı, bölüm, **intmax_t** **quot**ve geri kalanı **intmax_t** **REM**' u içerir. Bölüm işareti, matematik bölümü ile aynıdır. Mutlak değeri, matematik alanının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisiyle sonlanır.
+**Imaxdiv** işlevi, *numer* ile Mase 'yi *böler ve bu* sayede bölümü ve kalanı hesaplar. **İmaxdiv_t** yapısı, bölüm, **intmax_t** **quot** ve geri kalanı **intmax_t** **REM**' u içerir. Bölüm işareti, matematik bölümü ile aynıdır. Mutlak değeri, matematik alanının mutlak değerinden daha küçük olan en büyük tamsayıdır. Payda 0 ise, program bir hata iletisiyle sonlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 

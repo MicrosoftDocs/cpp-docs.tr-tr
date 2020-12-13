@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMultiDocTemplate sınıfı'
 title: CMultiDocTemplate sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CMultiDocTemplate [MFC], CMultiDocTemplate
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
-ms.openlocfilehash: af950d188c4e02a38a39ed3c672f0f8c4161bee8
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: 70b77c04fed41da3b5f025f6a600b9ecfd4bc89b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331572"
 ---
 # <a name="cmultidoctemplate-class"></a>CMultiDocTemplate sınıfı
 
 Birden çok belge arabirimi (MDI) uygulayan bir belge şablonu tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMultiDocTemplate : public CDocTemplate
@@ -31,7 +32,7 @@ Bu sınıfın üye işlevleri sanal. Belgeler için bkz. [CDocTemplate](../../mf
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CMultiDocTemplate:: CMultiDocTemplate](#cmultidoctemplate)|Bir `CMultiDocTemplate` nesnesi oluşturur.|
 
@@ -69,7 +70,7 @@ Hakkında daha fazla bilgi için `CMultiDocTemplate` bkz. [Belge şablonları ve
 
 **Üstbilgi:** Afxwin. h
 
-## <a name="cmultidoctemplatecmultidoctemplate"></a><a name="cmultidoctemplate"></a>CMultiDocTemplate:: CMultiDocTemplate
+## <a name="cmultidoctemplatecmultidoctemplate"></a><a name="cmultidoctemplate"></a> CMultiDocTemplate:: CMultiDocTemplate
 
 Bir `CMultiDocTemplate` nesnesi oluşturur.
 
@@ -124,7 +125,7 @@ Bu kaynak türleri hakkında daha fazla bilgi için bkz. [kaynak düzenleyiciler
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)<br/>
 [CSingleDocTemplate sınıfı](../../mfc/reference/csingledoctemplate-class.md)<br/>
-[CWinApp Sınıfı](../../mfc/reference/cwinapp-class.md)
+[CWinApp sınıfı](../../mfc/reference/cwinapp-class.md)

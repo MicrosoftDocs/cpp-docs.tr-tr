@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l'
 title: _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - _tcscanf_s function
 - tcscanf_s_l function
 ms.assetid: 9ccab74d-916f-42a6-93d8-920525efdf4b
-ms.openlocfilehash: a869ae4ab1b5f81c4198f620662604b79f19c2ab
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e379d454b9acd9cda75eb41721f55f0818004858
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332942"
 ---
 # <a name="_cscanf_s-_cscanf_s_l-_cwscanf_s-_cwscanf_s_l"></a>_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 
@@ -65,7 +66,7 @@ Konsoldan biçimlendirilen verileri okur. [_Cscanf, _cscanf_l, _cwscanf _cwscanf
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _cscanf_s(
@@ -96,23 +97,23 @@ Biçim denetimi dizesi.
 *değişkendir*<br/>
 İsteğe bağlı parametreler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Başarıyla dönüştürülen ve atanan alan sayısı. Dönüş değeri, okunan ancak atanmamış alanları içermez. Dosyanın sonunda okuma girişimi için dönüş değeri **EOF** olur. Klavye girişi, işletim sistemi komut satırı düzeyinde yeniden yönlendirildiğinde bu durum oluşabilir. 0 dönüş değeri hiçbir alanın atanmadığı anlamına gelir.
 
-Bu işlevler, parametrelerini doğrular. *Biçim* null işaretçisiyse, bu Işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevler, parametrelerini doğrular. *Biçim* null işaretçisiyse, bu Işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cscanf_s** işlevi, verileri doğrudan konsolundan *bağımsız değişken*tarafından verilen konumlara okur. [_Getche](getch-getwch.md) işlevi karakterleri okumak için kullanılır. Her isteğe bağlı parametre, *biçimdeki*bir tür belirticisine karşılık gelen türe sahip bir değişkene bir işaretçi olmalıdır. Biçim, giriş alanlarının yorumunu denetler ve [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) işlevi için *Biçim* parametresiyle aynı form ve işleve sahiptir. **_Cscanf_s** normalde giriş karakterini yankılarken, son çağrı **_ungetch**, bunu yapmaz.
+**_Cscanf_s** işlevi, verileri doğrudan konsolundan *bağımsız değişken* tarafından verilen konumlara okur. [_Getche](getch-getwch.md) işlevi karakterleri okumak için kullanılır. Her isteğe bağlı parametre, *biçimdeki* bir tür belirticisine karşılık gelen türe sahip bir değişkene bir işaretçi olmalıdır. Biçim, giriş alanlarının yorumunu denetler ve [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) işlevi için *Biçim* parametresiyle aynı form ve işleve sahiptir. **_Cscanf_s** normalde giriş karakterini yankılarken, son çağrı **_ungetch**, bunu yapmaz.
 
-**Scanf** ailesindeki işlevlerin diğer güvenli sürümleri gibi **_cscanf_s** ve **_cswscanf_s** , **c**, **c**, **s**, **s**ve **[** tür alanı karakterleri için boyut bağımsız değişkenleri gerektirir. Daha fazla bilgi için bkz. [scanf Width belirtimi](../../c-runtime-library/scanf-width-specification.md).
+**Scanf** ailesindeki işlevlerin diğer güvenli sürümleri gibi **_cscanf_s** ve **_cswscanf_s** , **c**, **c**, **s**, **s** ve **[** tür alanı karakterleri için boyut bağımsız değişkenleri gerektirir. Daha fazla bilgi için bkz. [scanf Width belirtimi](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
-> Boyut parametresi **`unsigned`** **size_t**değil türündedir.
+> Boyut parametresi **`unsigned`** **size_t** değil türündedir.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 

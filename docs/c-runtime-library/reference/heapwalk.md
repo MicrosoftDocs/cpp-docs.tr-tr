@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _heapwalk'
 title: _heapwalk
 ms.date: 11/04/2016
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - heapwalk function
 - _heapwalk function
 ms.assetid: 2df67649-fb00-4570-a8b1-a4eca5738744
-ms.openlocfilehash: 8dc7ee9335f227bde93a414748ff70b165c44f8d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 08d877757a443a52a94952032291e69f3466f007
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70954770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332783"
 ---
 # <a name="_heapwalk"></a>_heapwalk
 
@@ -54,38 +55,38 @@ Yığın bilgileri içeren arabellek.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_heapizlenecek yol** , malloc. h içinde tanımlanan aşağıdaki tamsayı bildirim sabitlerinden birini döndürür.
+**_heapwalk** , malloc. h içinde tanımlanan aşağıdaki tamsayı bildirimi sabitlerinden birini döndürür.
 
-|Dönüş değeri|Açıklama|
+|Döndürülen değer|Anlamı|
 |-|-|
 |**_HEAPBADBEGIN**| İlk üstbilgi bilgisi geçersiz veya bulunamadı.|
 |**_HEAPBADNODE**| Yığın hasarlı veya hatalı düğüm bulundu.|
-|**_HEAPBADPTR**| **_Heapınfo** yapısının **_pentry** alanı yığında geçerli bir işaretçi içermiyor veya *entryınfo* null bir işaretçisidir.|
+|**_HEAPBADPTR**| **_HEAPINFO** yapısının **_pentry** alanı yığında geçerli bir işaretçi içermiyor veya *entryınfo* null bir işaretçisidir.|
 |**_HEAPEND**| Yığının sonuna başarıyla erişildi.|
 |**_HEAPEMPTY**| Yığın başlatılmadı.|
-|**_CENPOK**| Şu ana kadar hata yok; *entryınfo* , sonraki yığın girişi hakkında bilgilerle güncelleştirilir.|
+|**_HEAPOK**| Şu ana kadar hata yok; *entryınfo* , sonraki yığın girişi hakkında bilgilerle güncelleştirilir.|
 
-Ayrıca, bir hata oluşursa, **_heapizlenecek yol** , **errsys** olarak ayarlar.
+Buna ek olarak, bir hata oluşursa **_heapwalk** **errno** , **ENOSYS** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Heapyürüme** işlevi programlarda yığın ile ilgili sorunların hatalarını ayıklamasına yardımcı olur. İşlevi yığın boyunca ilerler, her çağrı için bir girişe geçiş yapın ve bir sonraki yığın girişi hakkında bilgi içeren **_Heapınfo** türünde bir yapıya bir işaretçi döndürür. Malloc. h içinde tanımlanan **_Heapınfo** türü aşağıdaki öğeleri içerir.
+**_Heapwalk** işlevi, programlardaki yığında ilgili sorunları ayıklamanıza yardımcı olur. İşlevi yığın boyunca ilerler, her çağrı için bir girişe geçiş yapın ve bir sonraki yığın girişi hakkında bilgi içeren **_HEAPINFO** türünde bir yapıya bir işaretçi döndürür. Malloc. h içinde tanımlanan **_HEAPINFO** türü, aşağıdaki öğeleri içerir.
 
-|Alan|Açıklama|
+|Alan|Anlamı|
 |-|-|
 |`int *_pentry`|Yığın giriş işaretçisi.|
 |`size_t _size`|Yığın girişinin boyutu.|
 |`int _useflag`|Yığın girişinin kullanımda olup olmadığını belirten bayrak.|
 
-**_Cenpok** döndüren **_heapizlenecek** bir çağrı, girişin boyutunu **_Size** alanına depolar ve **_useflag** alanını **_FREEENTRY** ya da **_USEDENTRY** (her ikisi de malloc. h içinde tanımlanan sabitler) olarak ayarlar. Yığındaki ilk giriş hakkında bu bilgileri almak için, **_pentry** üyesi **null**olan **_HEAPINFO** yapısına bir **işaretçi geçirin.** İşletim sistemi **_heapizlenecek yol**(örneğin, Windows 98) desteklemiyorsa, Işlev **_HEAPEND** döndürür ve **errno** , **ENOSYS**olarak ayarlar.
+**_HEAPOK** döndüren **_heapwalk** çağrısı **_Size** alanına girdinin boyutunu depolar ve **_useflag** alanını **_FREEENTRY** veya **_USEDENTRY** (her ikisi de malloc. h içinde tanımlanan sabitler) olarak ayarlar. Yığındaki ilk giriş hakkında bu bilgileri almak için, **_pentry** üyesi **NULL** olan bir **_HEAPINFO** yapısına işaretçi **_heapwalk** geçirin. İşletim sistemi **_heapwalk**(örneğin, Windows 98) desteklemiyorsa, işlev **_HEAPEND** döndürür ve **errno** , **ENOSYS** olarak ayarlar.
 
-Bu işlev, parametresini doğrular. *Entryınfo* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve Işlev **_HEAPBADPTR**döndürür.
+Bu işlev, parametresini doğrular. *Entryınfo* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **_HEAPBADPTR** döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_heapwalk**|\<malloc. h >|\<errno. h >|
+|**_heapwalk**|\<malloc.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -174,7 +175,7 @@ OK - end of heap
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[Bellek ayırma](../../c-runtime-library/memory-allocation.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
 [_heapchk](heapchk.md)<br/>
 [_heapmin](heapmin.md)<br/>

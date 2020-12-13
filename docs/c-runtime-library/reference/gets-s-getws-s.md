@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: gets_s _getws_s'
 title: gets_s, _getws_s
 ms.date: 4/2/2020
 api_name:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - gets_s function
 - standard input, reading from
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
-ms.openlocfilehash: b01456d3ed37c34dbc10980ebdfbe008e27f624a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 17120283019a8065be9663a92541e510632a3626
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332811"
 ---
 # <a name="gets_s-_getws_s"></a>gets_s, _getws_s
 
@@ -83,13 +84,13 @@ Başarılı olursa *arabelleği* döndürür. **Null** işaretçisi bir hata vey
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Gets_s** işlevi standart giriş akışı **stdin** öğesinden bir satırı okur ve *arabelleğe*kaydeder. Satır, ilk yeni satır karakteri (' \n ') dahil olmak üzere tüm karakterlerden oluşur. **gets_s** sonra satırı döndürmeden önce yeni satır karakterini null karakter (' \ 0 ') ile değiştirir. Buna karşılık **fgets_s** işlevi yeni satır karakterini korur.
+**Gets_s** işlevi standart giriş akışı **stdin** öğesinden bir satırı okur ve *arabelleğe* kaydeder. Satır, ilk yeni satır karakteri (' \n ') dahil olmak üzere tüm karakterlerden oluşur. **gets_s** sonra satırı döndürmeden önce yeni satır karakterini null karakter (' \ 0 ') ile değiştirir. Buna karşılık **fgets_s** işlevi yeni satır karakterini korur.
 
 Okunan ilk karakter dosya sonu karakter ise, *arabelleğin* başlangıcında null karakter depolanır ve **null** döndürülür.
 
-**_getws_s** , **gets_s**geniş karakterli bir sürümüdür; bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir.
+**_getws_s** , **gets_s** geniş karakterli bir sürümüdür; bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir.
 
-*Buffer* **null** veya *sizeInCharacters* , sıfıra eşit veya daha küçükse ya da arabellek giriş satırını ve null sonlandırıcıyı içermesi için çok küçük ise, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre işleyicisi çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve errno, **ERANGE**olarak ayarlanır.
+*Buffer* **null** veya *sizeInCharacters* , sıfıra eşit veya daha küçükse ya da arabellek giriş satırını ve null sonlandırıcıyı içermesi için çok küçük ise, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre işleyicisi çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve errno, **ERANGE** olarak ayarlanır.
 
 C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -105,10 +106,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**gets_s**|\<stdio. h>|
-|**_getws_s**|\<stdio. h> veya \<wchar. h>|
+|**gets_s**|\<stdio.h>|
+|**_getws_s**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -137,7 +138,7 @@ The line entered was: Hello there!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [gets, _getws](../../c-runtime-library/gets-getws.md)<br/>
 [fgets, fgetws](fgets-fgetws.md)<br/>
 [fputs, fputws](fputs-fputws.md)<br/>

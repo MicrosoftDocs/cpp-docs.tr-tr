@@ -1,4 +1,5 @@
 ---
+description: 'Bu konuda daha fazla bilgi edinin: isalpha, iswalpha, _isalpha_l _iswalpha_l'
 title: isalpha, iswalpha, _isalpha_l, _iswalpha_l
 ms.date: 4/2/2020
 api_name:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - istalpha function
 - _istalpha function
 ms.assetid: ed6cc2be-c4b0-4475-87ac-bc06d8c23064
-ms.openlocfilehash: abce570aecc307efd4986fab78d45954d7a79588
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 044564d64c9f7d358633a866c53a25e6ab16d26a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919794"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332761"
 ---
 # <a name="isalpha-iswalpha-_isalpha_l-_iswalpha_l"></a>isalpha, iswalpha, _isalpha_l, _iswalpha_l
 
@@ -84,7 +85,7 @@ Geçerli yerel ayar yerine kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamların her biri, *c* , alfabetik bir karakterin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , a-z veya a-z aralıkları içindeyse, **ısalpha** sıfır dışında bir değer döndürür. **iswalpha** sıfır dışında bir değeri yalnızca [ıswupper](isupper-isupper-l-iswupper-iswupper-l.md) veya **ıswlower** 'in sıfır dışında olduğu geniş karakterler için döndürür; diğer bir deyişle, **iswcnyy**, **ıswdigit**, **ıswpunct**veya **ıswspace** 'in sıfır dışında olmadığı, uygulama tanımlı bir küme olan herhangi bir geniş karakter için. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
+Bu yordamların her biri, *c* , alfabetik bir karakterin belirli bir gösterimiyse sıfır olmayan bir değer döndürür. *c* , a-z veya a-z aralıkları içindeyse, **ısalpha** sıfır dışında bir değer döndürür. **iswalpha** sıfır dışında bir değeri yalnızca [ıswupper](isupper-isupper-l-iswupper-iswupper-l.md) veya **ıswlower** 'in sıfır dışında olduğu geniş karakterler için döndürür; diğer bir deyişle, **iswcnyy**, **ıswdigit**, **ıswpunct** veya **ıswspace** 'in sıfır dışında olmadığı, uygulama tanımlı bir küme olan herhangi bir geniş karakter için. Bu yordamların her biri, *c* , test koşulunu karşılamadığı takdirde 0 döndürür.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli yerel ayar yerine geçirilen yerel ayar parametresini kullanır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -105,10 +106,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isalpha**|\<CType. h>|
-|**iswalpha**|\<CType. h> veya \<wchar. h>|
-|**_isalpha_l**|\<CType. h>|
-|**_iswalpha_l**|\<CType. h> veya \<wchar. h>|
+|**isalpha**|\<ctype.h>|
+|**iswalpha**|\<ctype.h> veya \<wchar.h>|
+|**_isalpha_l**|\<ctype.h>|
+|**_iswalpha_l**|\<ctype.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

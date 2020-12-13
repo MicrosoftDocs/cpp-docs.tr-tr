@@ -1,21 +1,22 @@
 ---
+description: 'Daha fazla bilgi edinin: denetim çizimini Iyileştirme'
 title: Denetim Çizimini İyileştirme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
-ms.openlocfilehash: 17cb7318e667fe4e16416d51e7e7fba02553cfe6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 93e948d4a572f4e02c8676b2af1b6f8943004f26
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621011"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331813"
 ---
 # <a name="optimizing-control-drawing"></a>Denetim Çizimini İyileştirme
 
 Bir denetimin kendisini kapsayıcı tarafından sağlanan bir cihaz bağlamına çizmesi istendiğinde, genellikle GDI nesnelerini (örneğin, kalemler, fırçalar ve yazı tipleri) cihaz bağlamına seçer, çizim işlemlerini gerçekleştirir ve önceki GDI nesnelerini geri yükler. Kapsayıcıda aynı cihaz bağlamına çizilmek üzere birden çok denetim varsa ve her denetim gereken GDI nesnelerini seçerse, denetimler önceden seçili nesneleri tek tek geri yüklemediyseniz, zaman kaydedilebilir. Tüm denetimler çizildikten sonra kapsayıcı özgün nesneleri otomatik olarak geri yükleyebilir.
 
-Bir kapsayıcının bu tekniği destekleyip desteklemediğini algılamak için, bir denetim [Colicontrol:: IsOptimizedDraw](reference/colecontrol-class.md#isoptimizeddraw) üye işlevini çağırabilir. Bu işlev **true**değerini döndürürse denetim, daha önce seçilen nesneleri geri yüklemenin normal adımını atlayabilir.
+Bir kapsayıcının bu tekniği destekleyip desteklemediğini algılamak için, bir denetim [Colicontrol:: IsOptimizedDraw](reference/colecontrol-class.md#isoptimizeddraw) üye işlevini çağırabilir. Bu işlev **true** değerini döndürürse denetim, daha önce seçilen nesneleri geri yüklemenin normal adımını atlayabilir.
 
 Aşağıdaki (iyileştirilmemiş) işleve sahip bir denetim düşünün `OnDraw` :
 
@@ -44,8 +45,8 @@ Son olarak, gereksiz çağrıları ortadan kaldırmak için `SelectObject` `OnDr
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri: İyileştirme](mfc-activex-controls-optimization.md)<br/>
+[MFC ActiveX denetimleri: Iyileştirme](mfc-activex-controls-optimization.md)<br/>
 [Coelcontrol sınıfı](reference/colecontrol-class.md)<br/>
 [MFC ActiveX denetimleri](mfc-activex-controls.md)<br/>
-[MFC ActiveX Denetim Sihirbazı](reference/mfc-activex-control-wizard.md)<br/>
-[MFC ActiveX Denetimleri: ActiveX Denetimini Boyama](mfc-activex-controls-painting-an-activex-control.md)
+[MFC ActiveX denetimi Sihirbazı](reference/mfc-activex-control-wizard.md)<br/>
+[MFC ActiveX denetimleri: ActiveX denetimini boyama](mfc-activex-controls-painting-an-activex-control.md)

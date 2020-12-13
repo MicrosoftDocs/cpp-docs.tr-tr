@@ -1,5 +1,6 @@
 ---
-title: CMFCVisualManagerVS2005 Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCVisualManagerVS2005 Class'
+title: CMFCVisualManagerVS2005 sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCVisualManagerVS2005
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - CMFCVisualManagerVS2005 [MFC], OnFillMiniFrameCaption
 - CMFCVisualManagerVS2005 [MFC], OnUpdateSystemColors
 ms.assetid: ea39b9ae-327e-4a51-bce7-dc84c78f005b
-ms.openlocfilehash: b92077ecf4670dd5395296327c767ee3c7b848ba
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 74192e1c0e4c7189a64d872bcc1761cf21e5365d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319913"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331643"
 ---
-# <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 Sınıfı
+# <a name="cmfcvisualmanagervs2005-class"></a>CMFCVisualManagerVS2005 sınıfı
 
-`CMFCVisualManagerVS2005`bir uygulamaya Microsoft Visual Studio 2005 görünümü verir.
+`CMFCVisualManagerVS2005` bir uygulamaya Microsoft Visual Studio 2005 görünümü verir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
@@ -59,40 +60,40 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCVisualManagerVS2005::GetDockingTabsBordersSize](#getdockingtabsborderssize)|Çerçeve, kenetlenmiş ve sekmeli bir bölme çizerken bu yöntemi çağırır. [(CMFCVisualManager geçersiz kılar::GetDockingTabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getdockingtabsborderssize).)|
-|[CMFCVisualManagerVS2005::GetMDITabsBordersSize](#getmditabsborderssize)|Çerçeve, pencereyi çizilmeden önce bir MDITabs penceresinin kenarlık boyutunu belirlemek için bu yöntemi çağırır. [(CMFCVisualManager geçersiz kılar::GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize).)|
-|[CMFCVisualManagerVS2005::GetPropertyGridGroupColor](#getpropertygridgroupcolor)|[(CMFCVisualManagerOffice2003 geçersiz kılar::GetPropertyGridGroupColor](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#getpropertygridgroupcolor).)|
-|[CMFCVisualManagerVS2005::GetTabFrameColors](#gettabframecolors)|[(CMFCVisualManagerOffice2003 geçersiz kılar::GetTabFrameColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#gettabframecolors).)|
-|[CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons](#hasoverlappedautohidebuttons)|Otomatik gizleme düğmelerinin geçerli görsel yöneticide çakışıp çakışmadığını döndürür. [(Overrides CMFCVisualManager::HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#hasoverlappedautohidebuttons).)|
-|[CMFCVisualManagerVS2005::OndrawAutoHideButtonBorder](#ondrawautohidebuttonborder)|[(CMFCVisualManagerOffice2003 geçersiz kılar::OnDrawAutoHideButtonBorder](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawautohidebuttonborder).)|
-|[CMFCVisualManagerVS2005::OnDrawCaptionButton](#ondrawcaptionbutton)|(Geçersiz `CMFCVisualManagerOfficeXP::OnDrawCaptionButton`kılar .)|
-|[CMFCVisualManagerVS2005::OnDrawPaneCaption](#ondrawpanecaption)|[(CMFCVisualManagerOffice2003::OnDrawPaneCaption](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawpanecaption)geçersiz kılar.)|
-|[CMFCVisualManagerVS2005::OnDrawSeparator](#ondrawseparator)|[(CMFCVisualManagerOffice2003 geçersiz kılar::OnDrawSeparator](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawseparator).)|
-|[CMFCVisualManagerVS2005::Ondrawtab](#ondrawtab)|[(CMFCVisualManagerOffice2003 geçersiz kılar::OnDrawTab](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawtab).)|
-|[CMFCVisualManagerVS2005::OndrawToolBoxFrame](#ondrawtoolboxframe)|[(CMFCVisualManager geçersiz kılar::OnDrawToolBoxFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawtoolboxframe).)|
-|[CMFCVisualManagerVS2005::OnEraseTabsArea](#onerasetabsarea)|[(CMFCVisualManagerOffice2003 geçersiz kılar::OnEraseTabsArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onerasetabsarea).)|
-|[CMFCVisualManagerVS2005::OnfillAutoHideButtonBackground](#onfillautohidebuttonbackground)|[(CMFCVisualManagerOffice2003::OnFillAutoHideButtonBackground](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onfillautohidebuttonbackground)geçersiz kılar.)|
-|[CMFCVisualManagerVS2005::OnFillHighlightedArea](#onfillhighlightedarea)|[(CMFCVisualManagerOffice2003::OnFillHighlightedArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onfillhighlightedarea)geçersiz kılar.)|
-|[CMFCVisualManagerVS2005::OnfillMiniFrameCaption](#onfillminiframecaption)|(Geçersiz `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`kılar .)|
-|[CMFCVisualManagerVS2005::OnUpdateSystemColors](#onupdatesystemcolors)|[(CMFCVisualManagerOffice2003 geçersiz kılar::OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onupdatesystemcolors).)|
+|[CMFCVisualManagerVS2005:: GetDockingTabsBordersSize](#getdockingtabsborderssize)|Framework, yerleştirilmiş ve sekmeli bir bölme çizdiğinde bu yöntemi çağırır. ( [CMFCVisualManager:: GetDockingTabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getdockingtabsborderssize)geçersiz kılar.)|
+|[CMFCVisualManagerVS2005:: GetMDITabsBordersSize](#getmditabsborderssize)|Framework, pencereyi çizmadan önce bir Mdısekmeleri penceresinin kenarlık boyutunu belirlemede bu yöntemi çağırır. ( [CMFCVisualManager:: GetMDITabsBordersSize](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize)geçersiz kılar.)|
+|[CMFCVisualManagerVS2005:: GetPropertyGridGroupColor](#getpropertygridgroupcolor)|( [CMFCVisualManagerOffice2003:: GetPropertyGridGroupColor](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#getpropertygridgroupcolor)geçersiz kılar.)|
+|[CMFCVisualManagerVS2005:: GetTabFrameColors](#gettabframecolors)|( [CMFCVisualManagerOffice2003:: GetTabFrameColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#gettabframecolors)geçersiz kılınır.)|
+|[CMFCVisualManagerVS2005:: HasOverlappedAutoHideButtons](#hasoverlappedautohidebuttons)|Geçerli görsel yöneticisinde otomatik gizleme düğmelerinin örtüşmesini geri döndürür. ( [CMFCVisualManager:: HasOverlappedAutoHideButtons](../../mfc/reference/cmfcvisualmanager-class.md#hasoverlappedautohidebuttons)geçersiz kılınır.)|
+|[CMFCVisualManagerVS2005:: Ondrawoto Hidebuttonborder](#ondrawautohidebuttonborder)|( [CMFCVisualManagerOffice2003:: Ondrawoto Hidebuttonborder](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawautohidebuttonborder)geçersiz kılar.)|
+|[CMFCVisualManagerVS2005:: OnDrawCaptionButton](#ondrawcaptionbutton)|(Geçersiz kılmalar `CMFCVisualManagerOfficeXP::OnDrawCaptionButton` .)|
+|[CMFCVisualManagerVS2005:: Ondrawbölmesi başlığı](#ondrawpanecaption)|( [CMFCVisualManagerOffice2003:: Ondrawbölmesi başlığını](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawpanecaption)geçersiz kılar.)|
+|[CMFCVisualManagerVS2005:: OnDrawSeparator](#ondrawseparator)|( [CMFCVisualManagerOffice2003:: OnDrawSeparator](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawseparator)geçersiz kılar.)|
+|[CMFCVisualManagerVS2005:: OnDrawTab](#ondrawtab)|( [CMFCVisualManagerOffice2003:: OnDrawTab](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#ondrawtab)geçersiz kılar.)|
+|[CMFCVisualManagerVS2005:: OnDrawToolBoxFrame](#ondrawtoolboxframe)|( [CMFCVisualManager:: OnDrawToolBoxFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawtoolboxframe)geçersiz kılar.)|
+|[CMFCVisualManagerVS2005::OnEraseTabsArea](#onerasetabsarea)|(Geçersiz kılmalar [CMFCVisualManagerOffice2003:: OnEraseTabsArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onerasetabsarea).)|
+|[CMFCVisualManagerVS2005:: OnFillAutoHideButtonBackground](#onfillautohidebuttonbackground)|( [CMFCVisualManagerOffice2003:: OnFillAutoHideButtonBackground](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onfillautohidebuttonbackground)öğesini geçersiz kılar.)|
+|[CMFCVisualManagerVS2005::OnFillHighlightedArea](#onfillhighlightedarea)|(Geçersiz kılmalar [CMFCVisualManagerOffice2003:: OnFillHighlightedArea](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onfillhighlightedarea).)|
+|[CMFCVisualManagerVS2005:: OnFillMiniFrameCaption](#onfillminiframecaption)|(Geçersiz kılmalar `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption` .)|
+|[CMFCVisualManagerVS2005:: OnUpdateSystemColors](#onupdatesystemcolors)|( [CMFCVisualManagerOffice2003:: OnUpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onupdatesystemcolors)geçersiz kılınır.)|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Uygulamanızın görsel görünümünü Microsoft Visual Studio 2005'e benzetecek şekilde değiştirmek için CMFCVisualManagerVS2005 sınıfını kullanırsınız.
+Uygulamanızın görsel görünümünü Microsoft Visual Studio 2005 şuna benzer şekilde değiştirmek için CMFCVisualManagerVS2005 sınıfını kullanırsınız.
 
-Bu sınıfın tüm üyeleri, bu sınıfın atası olan [CMFCVisualManager Sınıfı'ndan](../../mfc/reference/cmfcvisualmanager-class.md)türetilen sanal işlevlerdir.
+Bu sınıfın tüm üyeleri, bu sınıfın üst öğesinden türetilmiş sanal işlevlerdir, [CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, görsel yönetici VS 2005'in nasıl kullanılacağını göstermektedir. Bu kod snippet [Masaüstü Uyarı Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, Visual Manager VS 2005 ' nin nasıl kullanılacağını göstermektedir. Bu kod parçacığı, [Masaüstü Uyarısı tanıtım örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#9](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagervs2005-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CMFCBaseVisualManager](../../mfc/reference/cmfcbasevisualmanager-class.md)
 
@@ -106,9 +107,9 @@ Aşağıdaki örnek, görsel yönetici VS 2005'in nasıl kullanılacağını gö
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxvisualmanagervs2005.h
+**Üstbilgi:** afxvisualmanagervs2005. h
 
-## <a name="cmfcvisualmanagervs2005getdockingtabsborderssize"></a><a name="getdockingtabsborderssize"></a>CMFCVisualManagerVS2005::GetDockingTabsBordersSize
+## <a name="cmfcvisualmanagervs2005getdockingtabsborderssize"></a><a name="getdockingtabsborderssize"></a> CMFCVisualManagerVS2005:: GetDockingTabsBordersSize
 
 ```
 virtual int GetDockingTabsBordersSize();
@@ -118,7 +119,7 @@ virtual int GetDockingTabsBordersSize();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005getmditabsborderssize"></a><a name="getmditabsborderssize"></a>CMFCVisualManagerVS2005::GetMDITabsBordersSize
+## <a name="cmfcvisualmanagervs2005getmditabsborderssize"></a><a name="getmditabsborderssize"></a> CMFCVisualManagerVS2005:: GetMDITabsBordersSize
 
 ```
 virtual int GetMDITabsBordersSize();
@@ -128,7 +129,7 @@ virtual int GetMDITabsBordersSize();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005getpropertygridgroupcolor"></a><a name="getpropertygridgroupcolor"></a>CMFCVisualManagerVS2005::GetPropertyGridGroupColor
+## <a name="cmfcvisualmanagervs2005getpropertygridgroupcolor"></a><a name="getpropertygridgroupcolor"></a> CMFCVisualManagerVS2005:: GetPropertyGridGroupColor
 
 ```
 virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
@@ -136,13 +137,13 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pPropList*<br/>
+'ndaki *pPropList*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005gettabframecolors"></a><a name="gettabframecolors"></a>CMFCVisualManagerVS2005::GetTabFrameColors
+## <a name="cmfcvisualmanagervs2005gettabframecolors"></a><a name="gettabframecolors"></a> CMFCVisualManagerVS2005:: GetTabFrameColors
 
 ```
 virtual void GetTabFrameColors(
@@ -159,19 +160,19 @@ virtual void GetTabFrameColors(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pTabWnd*<br/>
-[içinde] *clrKaranlık*<br/>
-[içinde] *clrSiyah*<br/>
-[içinde] *clrHighlight*<br/>
-[içinde] *clrYüz*<br/>
-[içinde] *clrDarkShadow*<br/>
-[içinde] *clrLight*<br/>
-[içinde] *pbrFace*<br/>
-[içinde] *pbrBlack*<br/>
+'ndaki *pTabWnd*<br/>
+'ndaki *Clrkoyu*<br/>
+'ndaki *clrBlack*<br/>
+'ndaki *clrHighlight*<br/>
+'ndaki *clrFace*<br/>
+'ndaki *clrDarkShadow*<br/>
+'ndaki *clrLight*<br/>
+'ndaki *Pbryüz*<br/>
+'ndaki *pbrBlack*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005hasoverlappedautohidebuttons"></a><a name="hasoverlappedautohidebuttons"></a>CMFCVisualManagerVS2005::HasOverlappedAutoHideButtons
+## <a name="cmfcvisualmanagervs2005hasoverlappedautohidebuttons"></a><a name="hasoverlappedautohidebuttons"></a> CMFCVisualManagerVS2005:: HasOverlappedAutoHideButtons
 
 ```
 virtual BOOL HasOverlappedAutoHideButtons() const;
@@ -181,7 +182,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005ondrawautohidebuttonborder"></a><a name="ondrawautohidebuttonborder"></a>CMFCVisualManagerVS2005::OndrawAutoHideButtonBorder
+## <a name="cmfcvisualmanagervs2005ondrawautohidebuttonborder"></a><a name="ondrawautohidebuttonborder"></a> CMFCVisualManagerVS2005:: Ondrawoto Hidebuttonborder
 
 ```
 virtual void OnDrawAutoHideButtonBorder(
@@ -193,14 +194,14 @@ virtual void OnDrawAutoHideButtonBorder(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *rektBounds*<br/>
-[içinde] *rectBorderSize*<br/>
-[içinde] *pDüğme*<br/>
+'ndaki *PDC*<br/>
+'ndaki *Rectsınır*<br/>
+'ndaki *Rectborderboyutu*<br/>
+'ndaki *pButton*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005ondrawcaptionbutton"></a><a name="ondrawcaptionbutton"></a>CMFCVisualManagerVS2005::OnDrawCaptionButton
+## <a name="cmfcvisualmanagervs2005ondrawcaptionbutton"></a><a name="ondrawcaptionbutton"></a> CMFCVisualManagerVS2005:: OnDrawCaptionButton
 
 ```
 virtual void OnDrawCaptionButton(
@@ -215,17 +216,17 @@ virtual void OnDrawCaptionButton(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *pDüğme*<br/>
-[içinde] *bAktif*<br/>
-[içinde] *bHorz*<br/>
-[içinde] *bMaximized*<br/>
-[içinde] *bDevre dışı*<br/>
-[içinde] *nImageID*<br/>
+'ndaki *PDC*<br/>
+'ndaki *pButton*<br/>
+'ndaki *bActive*<br/>
+'ndaki *bHorz*<br/>
+'ndaki *büyütülmüş*<br/>
+'ndaki *Bdisabled*<br/>
+'ndaki *nImageID*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005ondrawpanecaption"></a><a name="ondrawpanecaption"></a>CMFCVisualManagerVS2005::OnDrawPaneCaption
+## <a name="cmfcvisualmanagervs2005ondrawpanecaption"></a><a name="ondrawpanecaption"></a> CMFCVisualManagerVS2005:: Ondrawbölmesi başlığı
 
 ```
 virtual COLORREF OnDrawPaneCaption(
@@ -238,17 +239,17 @@ virtual COLORREF OnDrawPaneCaption(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *pBar*<br/>
-[içinde] *bAktif*<br/>
-[içinde] *rektCaption*<br/>
-[içinde] *rectDüğmeler*<br/>
+'ndaki *PDC*<br/>
+'ndaki *pBar*<br/>
+'ndaki *bActive*<br/>
+'ndaki *rectCaption*<br/>
+'ndaki *Rectbuttons*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005ondrawseparator"></a><a name="ondrawseparator"></a>CMFCVisualManagerVS2005::OnDrawSeparator
+## <a name="cmfcvisualmanagervs2005ondrawseparator"></a><a name="ondrawseparator"></a> CMFCVisualManagerVS2005:: OnDrawSeparator
 
 ```
 virtual void OnDrawSeparator(
@@ -260,14 +261,14 @@ virtual void OnDrawSeparator(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *pBar*<br/>
-[içinde] *rekt*<br/>
-[içinde] *bIsHoriz*<br/>
+'ndaki *PDC*<br/>
+'ndaki *pBar*<br/>
+'ndaki *Rect*<br/>
+'ndaki *Bishoriz*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005ondrawtab"></a><a name="ondrawtab"></a>CMFCVisualManagerVS2005::Ondrawtab
+## <a name="cmfcvisualmanagervs2005ondrawtab"></a><a name="ondrawtab"></a> CMFCVisualManagerVS2005:: OnDrawTab
 
 ```
 virtual void OnDrawTab(
@@ -280,15 +281,15 @@ virtual void OnDrawTab(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *rectTab*<br/>
-[içinde] *iTab*<br/>
-[içinde] *bIsActive*<br/>
-[içinde] *pTabWnd*<br/>
+'ndaki *PDC*<br/>
+'ndaki *Recttab*<br/>
+'ndaki *ITAB*<br/>
+'ndaki *Bıactıve*<br/>
+'ndaki *pTabWnd*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005ondrawtoolboxframe"></a><a name="ondrawtoolboxframe"></a>CMFCVisualManagerVS2005::OndrawToolBoxFrame
+## <a name="cmfcvisualmanagervs2005ondrawtoolboxframe"></a><a name="ondrawtoolboxframe"></a> CMFCVisualManagerVS2005:: OnDrawToolBoxFrame
 
 ```
 virtual void OnDrawToolBoxFrame(
@@ -298,12 +299,12 @@ virtual void OnDrawToolBoxFrame(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *rekt*<br/>
+'ndaki *PDC*<br/>
+'ndaki *Rect*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005onerasetabsarea"></a><a name="onerasetabsarea"></a>CMFCVisualManagerVS2005::OnEraseTabsArea
+## <a name="cmfcvisualmanagervs2005onerasetabsarea"></a><a name="onerasetabsarea"></a> CMFCVisualManagerVS2005::OnEraseTabsArea
 
 ```
 virtual void OnEraseTabsArea(
@@ -314,13 +315,13 @@ virtual void OnEraseTabsArea(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *rekt*<br/>
-[içinde] *pTabWnd*<br/>
+'ndaki *PDC*<br/>
+'ndaki *Rect*<br/>
+'ndaki *pTabWnd*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005onfillautohidebuttonbackground"></a><a name="onfillautohidebuttonbackground"></a>CMFCVisualManagerVS2005::OnfillAutoHideButtonBackground
+## <a name="cmfcvisualmanagervs2005onfillautohidebuttonbackground"></a><a name="onfillautohidebuttonbackground"></a> CMFCVisualManagerVS2005:: OnFillAutoHideButtonBackground
 
 ```
 virtual void OnFillAutoHideButtonBackground(
@@ -331,13 +332,13 @@ virtual void OnFillAutoHideButtonBackground(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *rekt*<br/>
-[içinde] *pDüğme*<br/>
+'ndaki *PDC*<br/>
+'ndaki *Rect*<br/>
+'ndaki *pButton*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005onfillhighlightedarea"></a><a name="onfillhighlightedarea"></a>CMFCVisualManagerVS2005::OnFillHighlightedArea
+## <a name="cmfcvisualmanagervs2005onfillhighlightedarea"></a><a name="onfillhighlightedarea"></a> CMFCVisualManagerVS2005::OnFillHighlightedArea
 
 ```
 virtual void OnFillHighlightedArea(
@@ -349,14 +350,14 @@ virtual void OnFillHighlightedArea(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *rekt*<br/>
-[içinde] *pFırça*<br/>
-[içinde] *pDüğme*<br/>
+'ndaki *PDC*<br/>
+'ndaki *Rect*<br/>
+'ndaki *pBrush*<br/>
+'ndaki *pButton*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005onfillminiframecaption"></a><a name="onfillminiframecaption"></a>CMFCVisualManagerVS2005::OnfillMiniFrameCaption
+## <a name="cmfcvisualmanagervs2005onfillminiframecaption"></a><a name="onfillminiframecaption"></a> CMFCVisualManagerVS2005:: OnFillMiniFrameCaption
 
 ```
 virtual COLORREF OnFillMiniFrameCaption(
@@ -368,16 +369,16 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pDC*<br/>
-[içinde] *rektCaption*<br/>
-[içinde] *pFrameWnd*<br/>
-[içinde] *bAktif*<br/>
+'ndaki *PDC*<br/>
+'ndaki *rectCaption*<br/>
+'ndaki *pFrameWnd*<br/>
+'ndaki *bActive*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcvisualmanagervs2005onupdatesystemcolors"></a><a name="onupdatesystemcolors"></a>CMFCVisualManagerVS2005::OnUpdateSystemColors
+## <a name="cmfcvisualmanagervs2005onupdatesystemcolors"></a><a name="onupdatesystemcolors"></a> CMFCVisualManagerVS2005:: OnUpdateSystemColors
 
 ```
 virtual void OnUpdateSystemColors();
@@ -387,9 +388,9 @@ virtual void OnUpdateSystemColors();
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCVisualManager Sınıfı](../../mfc/reference/cmfcvisualmanager-class.md)<br/>
-[CMFCVisualManagerOfficeXP Sınıfı](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)<br/>
-[CMFCVisualManagerWindows Sınıfı](../../mfc/reference/cmfcvisualmanagerwindows-class.md)<br/>
-[CMFCVisualManagerOffice2003 Sınıfı](../../mfc/reference/cmfcvisualmanageroffice2003-class.md)
+[CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md)<br/>
+[CMFCVisualManagerOfficeXP sınıfı](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)<br/>
+[CMFCVisualManagerWindows sınıfı](../../mfc/reference/cmfcvisualmanagerwindows-class.md)<br/>
+[CMFCVisualManagerOffice2003 sınıfı](../../mfc/reference/cmfcvisualmanageroffice2003-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _dupenv_s _wdupenv_s'
 title: _dupenv_s, _wdupenv_s
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - dupenv_s function
 - tdupenv_s function
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
-ms.openlocfilehash: 39184eff5db511dfb920782c3e29bf2b0cc9340e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3163645b83ec701478cca76d98fe5e17acdc86d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332882"
 ---
 # <a name="_dupenv_s-_wdupenv_s"></a>_dupenv_s, _wdupenv_s
 
@@ -74,7 +75,7 @@ errno_t _wdupenv_s(
 Değişkenin değerini depolayan arabellek.
 
 *numberOfElements*<br/>
-*Arabelleğin*boyutu.
+*Arabelleğin* boyutu.
 
 *varname*<br/>
 Ortam değişkeni adı.
@@ -83,26 +84,26 @@ Ortam değişkeni adı.
 
 Başarı durumunda sıfır, hata durumunda hata kodu.
 
-Bu işlevler parametrelerini doğrular; *buffer* veya *varname* **null**ise, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **errno** olarak **EINVAL** ve **EINVAL**döndürür.
+Bu işlevler parametrelerini doğrular; *buffer* veya *varname* **null** ise, [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **errno** olarak **EINVAL** ve **EINVAL** döndürür.
 
-Bu işlevler yeterli bellek ayıramıyorsa, *buffer* 'ı null ve *numberOfElements* **değeri** 0 olarak ayarlar ve **ENOMEM**döndürür.
+Bu işlevler yeterli bellek ayıramıyorsa, *buffer* 'ı null ve *numberOfElements* **değeri** 0 olarak ayarlar ve **ENOMEM** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Dupenv_s** işlevi, *varname*için ortam değişkenlerinin listesini arar. Değişken bulunursa **_dupenv_s** bir arabellek ayırır ve değişkenin değerini arabelleğe kopyalar. Arabelleğin adresi ve uzunluğu, *buffer* ve *numberOfElements*' de döndürülür. Arabelleği ayırarak **_dupenv_s** , [_wgetenv_s getenv_s](getenv-s-wgetenv-s.md)daha uygun bir alternatif sağlar.
+**_Dupenv_s** işlevi, *varname* için ortam değişkenlerinin listesini arar. Değişken bulunursa **_dupenv_s** bir arabellek ayırır ve değişkenin değerini arabelleğe kopyalar. Arabelleğin adresi ve uzunluğu, *buffer* ve *numberOfElements*' de döndürülür. Arabelleği ayırarak **_dupenv_s** , [_wgetenv_s getenv_s](getenv-s-wgetenv-s.md)daha uygun bir alternatif sağlar.
 
 > [!NOTE]
 > Bu, [ücretsiz](free.md)olarak arayarak belleği boşaltmak için çağıran programın sorumluluğundadır.
 
-Değişken bulunamazsa, *buffer* **null**olarak ayarlanır, *numberOfElements* 0 olarak ayarlanır ve bu durum bir hata durumu olarak değerlendirilmediği için dönüş değeri 0 ' dır.
+Değişken bulunamazsa, *buffer* **null** olarak ayarlanır, *numberOfElements* 0 olarak ayarlanır ve bu durum bir hata durumu olarak değerlendirilmediği için dönüş değeri 0 ' dır.
 
-Arabelleğin boyutuyla ilgilenmiyorsanız *numberOfElements*Için **null değeri** geçirebilirsiniz.
+Arabelleğin boyutuyla ilgilenmiyorsanız *numberOfElements* Için **null değeri** geçirebilirsiniz.
 
-**_Dupenv_s** Windows işletim sisteminde büyük küçük harfe duyarlı değildir. **_dupenv_s** , ortama erişmek için **_environ** genel değişken tarafından işaret edilen ortamın kopyasını kullanır. **_Environ**tartışmak için [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md) açıklamaları bölümüne bakın.
+**_Dupenv_s** Windows işletim sisteminde büyük küçük harfe duyarlı değildir. **_dupenv_s** , ortama erişmek için **_environ** genel değişken tarafından işaret edilen ortamın kopyasını kullanır. **_Environ** tartışmak için [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md) açıklamaları bölümüne bakın.
 
 *Buffer* değeri, ortam değişkeninin değerinin bir kopyasıdır; Bunun değiştirilmesi, ortam üzerinde hiçbir etkiye sahip değildir. Bir ortam değişkeninin değerini değiştirmek için [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md) işlevini kullanın.
 
-**_wdupenv_s** , **_dupenv_s**geniş karakterli bir sürümüdür; **_wdupenv_s** bağımsız değişkenleri geniş karakterli dizelerdir. **_Wenviron** genel değişkeni, **_environ**geniş karakterli bir sürümüdür. **_Wenviron**hakkında daha fazla bilgi için [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md) açıklamaları bölümüne bakın.
+**_wdupenv_s** , **_dupenv_s** geniş karakterli bir sürümüdür; **_wdupenv_s** bağımsız değişkenleri geniş karakterli dizelerdir. **_Wenviron** genel değişkeni, **_environ** geniş karakterli bir sürümüdür. **_Wenviron** hakkında daha fazla bilgi için [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md) açıklamaları bölümüne bakın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -116,8 +117,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_dupenv_s**|\<Stdlib. h>|
-|**_wdupenv_s**|\<Stdlib. h> veya \<wchar. h>|
+|**_dupenv_s**|\<stdlib.h>|
+|**_wdupenv_s**|\<stdlib.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -149,7 +150,7 @@ nonexistentvariable = (null)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [Çevresel sabitler](../../c-runtime-library/environmental-constants.md)<br/>
 [_dupenv_s_dbg, _wdupenv_s_dbg](dupenv-s-dbg-wdupenv-s-dbg.md)<br/>
 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)<br/>

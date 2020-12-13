@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _eof'
 title: _eof
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - testing, for end-of-file
 - end of file
 ms.assetid: 265703f4-d07e-4005-abf3-b1d0cdd9e0b0
-ms.openlocfilehash: 5d00be1da0f329c43f1b6ea0f912ede74b307bbb
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 98e277c11755d6c3c7cb34a426e006a66f503193
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915052"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332828"
 ---
 # <a name="_eof"></a>_eof
 
@@ -57,7 +58,7 @@ Açık dosyaya başvuran dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_eof** , geçerli konum dosya sonu ise 1 veya değilse 0 döndürür. -1 ' in dönüş değeri bir hatayı gösterir; Bu durumda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** , **EBADF**olarak ayarlanır, bu da geçersiz bir dosya tanımlayıcısını gösterir.
+**_eof** , geçerli konum dosya sonu ise 1 veya değilse 0 döndürür. -1 ' in dönüş değeri bir hatayı gösterir; Bu durumda, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** , **EBADF** olarak ayarlanır, bu da geçersiz bir dosya tanımlayıcısını gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -69,7 +70,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|İsteğe bağlı başlık|
 |--------------|---------------------|---------------------|
-|**_eof**|\<GÇ. h>|\<errno. h>|
+|**_eof**|\<io.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -113,7 +114,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crt_eoftxt"></a>Giriş: crt_eof. txt
+### <a name="input-crt_eoftxt"></a>Giriş: crt_eof.txt
 
 ```Input
 This file contains some text.
