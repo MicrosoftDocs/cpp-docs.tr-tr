@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _bittestandreset _bittestandreset64'
 title: _bittestandreset, _bittestandreset64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - _bittestandreset intrinsic
 - _bittestandreset64 intrinsic
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
-ms.openlocfilehash: 9e0c869b926b2f9f3c04fd648f84ef33b8d16fcd
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5d0b6133b981a7008bbe4979ee123cebd5ef99fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337172"
 ---
 # <a name="_bittestandreset-_bittestandreset64"></a>_bittestandreset, _bittestandreset64
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`b` Adresin`a`bitini İnceleme, geçerli değerini döndürme ve biti 0 olarak sıfırlama yönergesini oluşturun.
+Adresin bitini İnceleme `b` `a` , geçerli değerini döndürme ve biti 0 olarak sıfırlama yönergesini oluşturun.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,7 +46,7 @@ unsigned char _bittestandreset64(
 *kenarı*\
 'ndaki Sınanacak bit konumu.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Belirtilen konumdaki bit.
 
@@ -56,7 +57,7 @@ Belirtilen konumdaki bit.
 |`_bittestandreset`|x86, ARM, x64, ARM64|
 |`_bittestandreset64`|x64, ARM64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

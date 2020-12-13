@@ -1,23 +1,24 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: derleyici iç bilgileri ve derleme dili'
 title: Derleyici İç Bilgileri ve Derleme Dili
 ms.date: 09/02/2019
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137
-ms.openlocfilehash: 36feb6971a8f5e4affd4f71b6afc1d508b2802f1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0207921a951345ca3a9091803294ec5df668fcb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171690"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337138"
 ---
 # <a name="compiler-intrinsics-and-assembly-language"></a>Derleyici iç bilgileri ve derleme dili
 
 Belgenin bu bölümünde, derleyici iç bilgilerine ve derleme diline yer verilmiştir.
 
-## <a name="related-articles"></a>İlgili makaleler
+## <a name="related-articles"></a>İlgili makaleler:
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)|Microsoft C 'de ve C++ x86, ARM ve x64 mimarileri için kullanılabilen iç işlevleri açıklar.|
+|[Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)|X86, ARM ve x64 mimarileri için Microsoft C ve C++ ' da kullanılabilen iç işlevleri açıklar.|
 |[Satır içi assembler](../assembler/inline/inline-assembler.md)|Visual C/C++ satır içi derleyici ile x86 işlemcilerin nasıl kullanıldığı açıklanmaktadır.|
 |[ARM Assembler başvurusu](../assembler/arm/arm-assembler-reference.md)|Microsoft ARM derleyicisi (armasm) ve ilgili araçlara yönelik başvuru materyali sağlamaktadır.|
 |[Microsoft Macro Assembler başvurusu](../assembler/masm/microsoft-macro-assembler-reference.md)|Microsoft Macro derleyicisi (masm) ve ilgili araçlara yönelik başvuru materyali sağlamaktadır.|

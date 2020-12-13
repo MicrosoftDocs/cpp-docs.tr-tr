@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3303'
 title: Derleyici hatası C3303
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3303
 ms.assetid: c6f6ea3d-f6b7-4401-8bbb-f283a2c05540
-ms.openlocfilehash: 8e802c4c085efd5051d7e8efcd67c7d53a354d99
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2600339df86a90b5c691fe6e01ce28241210c607
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337398"
 ---
 # <a name="compiler-error-c3303"></a>Derleyici hatası C3303
 

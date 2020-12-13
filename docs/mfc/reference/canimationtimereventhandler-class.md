@@ -1,5 +1,6 @@
 ---
-title: CAnimationTimerEventHandler Sınıfı
+description: 'Daha fazla bilgi edinin: CAnimationTimerEventHandler sınıfı'
+title: CAnimationTimerEventHandler sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationTimerEventHandler
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - CAnimationTimerEventHandler [MFC], OnRenderingTooSlow
 - CAnimationTimerEventHandler [MFC], SetAnimationController
 ms.assetid: 188dea3b-4b5e-4f6b-8df9-09d993a21619
-ms.openlocfilehash: d1653e50fef03deb8eb23dd9a989d1ca2a529dd8
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5d5f3e07eeb7ffe3f3bb226afd566330808303ac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81755096"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336755"
 ---
-# <a name="canimationtimereventhandler-class"></a>CAnimationTimerEventHandler Sınıfı
+# <a name="canimationtimereventhandler-class"></a>CAnimationTimerEventHandler sınıfı
 
-Zamanlama olayları oluştuğunda Animasyon API'sı tarafından çağrılan bir geri arama uygular.
+, Zamanlama olayları gerçekleştiğinde animasyon API 'Sı tarafından çağrılan bir geri çağırma uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAnimationTimerEventHandler>;
@@ -37,17 +38,17 @@ class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAn
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationTimerEventHandler::CreateInstance](#createinstance)|Geri `CAnimationTimerEventHandler` arama örneği oluşturur.|
-|[CAnimationTimerEventHandler::OnPostUpdate](#onpostupdate)|Animasyon güncelleştirmesi tamamlandıktan sonra oluşan olayları işler. (Geçersiz `CUIAnimationTimerEventHandlerBase::OnPostUpdate`kılar .)|
-|[CAnimationTimerEventHandler::OnPreUpdate](#onpreupdate)|Animasyon güncelleştirmesi başlamadan önce meydana gelen olayları işler. (Geçersiz `CUIAnimationTimerEventHandlerBase::OnPreUpdate`kılar .)|
-|[CAnimationTimerEventHandler::OnRenderingTooSlow](#onrenderingtooslow)|Animasyonun oluşturma kare hızı minimum istenen kare hızının altına düştüğünde oluşan olayları işler. (Geçersiz `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`kılar .)|
-|[CAnimationTimerEventHandler::SetAnimationController](#setanimationcontroller)|Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.|
+|[CAnimationTimerEventHandler:: CreateInstance](#createinstance)|Geri çağırma örneği oluşturur `CAnimationTimerEventHandler` .|
+|[CAnimationTimerEventHandler:: OnPostUpdate](#onpostupdate)|Bir animasyon güncelleştirmesi tamamlandıktan sonra oluşan olayları işler. (Geçersiz kılmalar `CUIAnimationTimerEventHandlerBase::OnPostUpdate` .)|
+|[CAnimationTimerEventHandler:: OnPreUpdate](#onpreupdate)|Animasyon güncelleştirme başlamadan önce oluşan olayları işler. (Geçersiz kılmalar `CUIAnimationTimerEventHandlerBase::OnPreUpdate` .)|
+|[CAnimationTimerEventHandler:: Onrenderingtoolow](#onrenderingtooslow)|Bir animasyonun işleme çerçevesi oranı, istenen en düşük kare hızının altına düştüğünde oluşan olayları işler. (Geçersiz kılmalar `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow` .)|
+|[CAnimationTimerEventHandler:: SetAnimationController](#setanimationcontroller)|Olayları yönlendirmek için animasyon denetleyicisine bir işaretçi depolar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu olay işleyicisi oluşturulur ve IUIAnimationTimer geçirilir::SetTimerEventHandler cAnimationController::EnableAnimationTimerEventHandler çağırdığınızda.
+Bu olay işleyicisi oluşturulur ve CAnimationController:: EnableAnimationTimerEventHandler öğesini çağırdığınızda IUIAnimationTimer:: SetTimerEventHandler öğesine geçirilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -59,11 +60,11 @@ Bu olay işleyicisi oluşturulur ve IUIAnimationTimer geçirilir::SetTimerEventH
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-## <a name="canimationtimereventhandlercreateinstance"></a><a name="createinstance"></a>CAnimationTimerEventHandler::CreateInstance
+## <a name="canimationtimereventhandlercreateinstance"></a><a name="createinstance"></a> CAnimationTimerEventHandler:: CreateInstance
 
-CAnimationTimerEventHandler geri çağırma örneği oluşturur.
+CAnimationTimerEventHandler geri çağrısının bir örneğini oluşturur.
 
 ```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -74,17 +75,17 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olayları alacak animasyon denetleyicisi için bir işaretçi.
+Olay alacak bir animasyon denetleyicisi işaretçisi.
 
 *ppTimerEventHandler*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa, S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
+Yöntem başarılı olursa S_OK döndürür. Aksi takdirde, bir HRESULT hata kodu döndürür.
 
-## <a name="canimationtimereventhandleronpostupdate"></a><a name="onpostupdate"></a>CAnimationTimerEventHandler::OnPostUpdate
+## <a name="canimationtimereventhandleronpostupdate"></a><a name="onpostupdate"></a> CAnimationTimerEventHandler:: OnPostUpdate
 
-Animasyon güncelleştirmesi tamamlandıktan sonra oluşan olayları işler.
+Bir animasyon güncelleştirmesi tamamlandıktan sonra oluşan olayları işler.
 
 ```
 IFACEMETHOD(OnPostUpdate)();
@@ -92,11 +93,11 @@ IFACEMETHOD(OnPostUpdate)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-yöntem başarılı olursa S_OK; aksi takdirde E_FAIL.
+Yöntem başarılı olursa S_OK; Aksi takdirde E_FAIL.
 
-## <a name="canimationtimereventhandleronpreupdate"></a><a name="onpreupdate"></a>CAnimationTimerEventHandler::OnPreUpdate
+## <a name="canimationtimereventhandleronpreupdate"></a><a name="onpreupdate"></a> CAnimationTimerEventHandler:: OnPreUpdate
 
-Animasyon güncelleştirmesi başlamadan önce meydana gelen olayları işler.
+Animasyon güncelleştirme başlamadan önce oluşan olayları işler.
 
 ```
 IFACEMETHOD(OnPreUpdate)();
@@ -104,11 +105,11 @@ IFACEMETHOD(OnPreUpdate)();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-yöntem başarılı olursa S_OK; aksi takdirde E_FAIL.
+Yöntem başarılı olursa S_OK; Aksi takdirde E_FAIL.
 
-## <a name="canimationtimereventhandleronrenderingtooslow"></a><a name="onrenderingtooslow"></a>CAnimationTimerEventHandler::OnRenderingTooSlow
+## <a name="canimationtimereventhandleronrenderingtooslow"></a><a name="onrenderingtooslow"></a> CAnimationTimerEventHandler:: Onrenderingtoolow
 
-Animasyonun oluşturma kare hızı minimum istenen kare hızının altına düştüğünde oluşan olayları işler.
+Bir animasyonun işleme çerçevesi oranı, istenen en düşük kare hızının altına düştüğünde oluşan olayları işler.
 
 ```
 IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
@@ -116,15 +117,15 @@ IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
 
 ### <a name="parameters"></a>Parametreler
 
-*Fps*
+*fps*
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-yöntem başarılı olursa S_OK; aksi takdirde E_FAIL.
+Yöntem başarılı olursa S_OK; Aksi takdirde E_FAIL.
 
-## <a name="canimationtimereventhandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>CAnimationTimerEventHandler::SetAnimationController
+## <a name="canimationtimereventhandlersetanimationcontroller"></a><a name="setanimationcontroller"></a> CAnimationTimerEventHandler:: SetAnimationController
 
-Olayları yönlendirmek için animasyon denetleyicisine işaretçi saklar.
+Olayları yönlendirmek için animasyon denetleyicisine bir işaretçi depolar.
 
 ```cpp
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -133,7 +134,7 @@ void SetAnimationController(CAnimationController* pAnimationController);
 ### <a name="parameters"></a>Parametreler
 
 *pAnimationController*<br/>
-Olayları alacak animasyon denetleyicisi için bir işaretçi.
+Olay alacak bir animasyon denetleyicisi işaretçisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

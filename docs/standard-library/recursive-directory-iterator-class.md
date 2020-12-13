@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: recursive_directory_iterator sınıfı'
 title: recursive_directory_iterator Sınıfı
 ms.date: 09/10/2018
 f1_keywords:
 - filesystem/std::tr2::sys::recursive_directory_iterator
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
-ms.openlocfilehash: 0f9bdc3edd7f5798afaa8d170adc35708a6aafa2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b9b5909c62a745233362eeac1adb879c1585098c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217629"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337903"
 ---
 # <a name="recursive_directory_iterator-class"></a>recursive_directory_iterator Sınıfı
 
@@ -17,7 +18,7 @@ Bir dizindeki dosya adlarıyla sıralı olabilecek, muhtemelen alt dizinlere yin
 
 Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi Gezintisi (C++)](../standard-library/file-system-navigation.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class recursive_directory_iterator;
@@ -82,7 +83,7 @@ for (recursive_directory_iterator next(path("abc")), end; next != end; ++next)
 
 **Ad alanı:** std:: TR2:: sys
 
-## <a name="recursive_directory_iteratordepth"></a><a name="depth"></a>recursive_directory_iterator::d epth
+## <a name="recursive_directory_iteratordepth"></a><a name="depth"></a> recursive_directory_iterator::d epth
 
 Değerini döndürür `mystack.size() - 1` , bu nedenle `pval` 0 ' dır.
 
@@ -90,7 +91,7 @@ Değerini döndürür `mystack.size() - 1` , bu nedenle `pval` 0 ' dır.
 int depth() const;
 ```
 
-## <a name="recursive_directory_iteratordisable_recursion_pending"></a><a name="disable_recursion_pending"></a>recursive_directory_iterator::d isable_recursion_pending
+## <a name="recursive_directory_iteratordisable_recursion_pending"></a><a name="disable_recursion_pending"></a> recursive_directory_iterator::d isable_recursion_pending
 
 **`true`** İçinde depolar `no_push` .
 
@@ -98,7 +99,7 @@ int depth() const;
 void disable_recursion_pending();
 ```
 
-## <a name="recursive_directory_iteratorincrement"></a><a name="increment"></a>recursive_directory_iterator:: Increment
+## <a name="recursive_directory_iteratorincrement"></a><a name="increment"></a> recursive_directory_iterator:: Increment
 
 Sıradaki dosya adına ilerler.
 
@@ -115,7 +116,7 @@ Belirtilen hata kodu.
 
 İşlev, iç içe dizideki bir sonraki dosya adına ilerle çalışır. Başarılı olursa, bu dosya adını ' de depolar `myentry` ; Aksi takdirde, sıra sonu Yineleyici oluşturur.
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_neq"></a>recursive_directory_iterator:: operator! =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_neq"></a> recursive_directory_iterator:: operator! =
 
 `!(*this == right)` döndürür.
 
@@ -128,7 +129,7 @@ bool operator!=(const recursive_directory_iterator& right) const;
 *Right*\
 Karşılaştırma için [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) .
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_as"></a>recursive_directory_iterator:: operator =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_as"></a> recursive_directory_iterator:: operator =
 
 Varsayılan olarak ayarlanmış üye atama işleçleri beklenen şekilde davranır.
 
@@ -142,7 +143,7 @@ recursive_directory_iterator& operator=(recursive_directory_iterator&&) noexcept
 *recursive_directory_iterator*\
 İçine kopyalandığı [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) `recursive_directory_iterator` .
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_eq"></a>recursive_directory_iterator:: operator = =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_eq"></a> recursive_directory_iterator:: operator = =
 
 **`true`** Yalnızca **`*this`** ve *sağ* sıralı yineleyiciler ise veya her ikisi de dizi sırası yineleyiciler değilse döndürür.
 
@@ -155,7 +156,7 @@ bool operator==(const recursive_directory_iterator& right) const;
 *Right*\
 Karşılaştırma için [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) .
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_multiply"></a>recursive_directory_iterator:: operator *
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_multiply"></a> recursive_directory_iterator:: operator *
 
 `myentry` döndürür.
 
@@ -163,7 +164,7 @@ Karşılaştırma için [recursive_directory_iterator](../standard-library/recur
 const directory_entry& operator*() const;
 ```
 
-## <a name="recursive_directory_iteratoroperator-"></a><a name="op_cast"></a>recursive_directory_iterator:: operator->
+## <a name="recursive_directory_iteratoroperator-"></a><a name="op_cast"></a> recursive_directory_iterator:: operator->
 
 `&**this` döndürür.
 
@@ -171,7 +172,7 @@ const directory_entry& operator*() const;
 const directory_entry * operator->() const;
 ```
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_increment"></a>recursive_directory_iterator:: operator + +
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_increment"></a> recursive_directory_iterator:: operator + +
 
 Değerini artırır `recursive_directory_iterator` .
 
@@ -190,7 +191,7 @@ Belirtilen artış.
 
 İlk üye işlevi çağırır `increment()` ve sonra döndürür **`*this`** . İkinci üye işlevi nesnenin bir kopyasını yapar, çağırır ve `increment()` sonra kopyayı döndürür.
 
-## <a name="recursive_directory_iteratoroptions"></a><a name="options"></a>recursive_directory_iterator:: seçenekler
+## <a name="recursive_directory_iteratoroptions"></a><a name="options"></a> recursive_directory_iterator:: seçenekler
 
 `myoptions` döndürür.
 
@@ -198,7 +199,7 @@ Belirtilen artış.
 directory_options options() const;
 ```
 
-## <a name="recursive_directory_iteratorpop"></a><a name="pop"></a>recursive_directory_iterator::p op
+## <a name="recursive_directory_iteratorpop"></a><a name="pop"></a> recursive_directory_iterator::p op
 
 Sonraki nesneyi döndürür.
 
@@ -210,7 +211,7 @@ void pop();
 
 `depth() == 0`Nesne bir sıra sonu yineleyicisi olursa. Aksi takdirde, üye işlevi geçerli (ayrıntılı) dizinin taranmasını sonlandırır ve bir sonraki daha düşük derinlikte devam eder.
 
-## <a name="recursive_directory_iteratorrecursion_pending"></a><a name="recursion_pending"></a>recursive_directory_iterator:: recursion_pending
+## <a name="recursive_directory_iteratorrecursion_pending"></a><a name="recursion_pending"></a> recursive_directory_iterator:: recursion_pending
 
 `!no_push` döndürür.
 
@@ -218,7 +219,7 @@ void pop();
 bool recursion_pending() const;
 ```
 
-## <a name="recursive_directory_iteratorrecursive_directory_iterator"></a><a name="recursive_directory_iterator"></a>recursive_directory_iterator:: recursive_directory_iterator
+## <a name="recursive_directory_iteratorrecursive_directory_iterator"></a><a name="recursive_directory_iterator"></a> recursive_directory_iterator:: recursive_directory_iterator
 
 Bir oluşturur `recursive_directory_iterator` .
 

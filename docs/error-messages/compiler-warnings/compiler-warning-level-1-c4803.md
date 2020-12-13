@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4803'
 title: Derleyici Uyarısı (düzey 1) C4803
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4803
 ms.assetid: 2552f3a6-c418-49f4-98a2-a929857be658
-ms.openlocfilehash: ebf7b3baec3519a142c7a1835aa15a980974bb48
-ms.sourcegitcommit: 458dcc794e3841919c01a3a5ff6b9a3767f8861b
+ms.openlocfilehash: 95646895133febbf03750d1b7a07d3a8141b6eff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74052343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334929"
 ---
 # <a name="compiler-warning-level-1-c4803"></a>Derleyici Uyarısı (düzey 1) C4803
 

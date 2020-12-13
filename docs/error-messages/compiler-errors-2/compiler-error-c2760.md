@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2760'
 title: Derleyici hatası C2760
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2760
 ms.assetid: 585757fd-d519-43f3-94e5-50316ac8b90b
-ms.openlocfilehash: 5680de2fe0364d7cdc5e7ef017bd298423ea4c21
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: bba26b68a2e4c98cf478098b2e44e82962afd9f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273663"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336159"
 ---
 # <a name="compiler-error-c2760"></a>Derleyici hatası C2760
 

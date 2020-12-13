@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __int2c'
 title: __int2c
 ms.date: 09/02/2019
 f1_keywords:
@@ -9,20 +10,20 @@ helpviewer_keywords:
 - int 2c instruction
 - __int2c intrinsic
 ms.assetid: aa20ff30-adef-42bb-8577-8010f3122f8e
-ms.openlocfilehash: d8c94ae78a121157a6347548356631b04e8733d5
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0ca1cc4d998a6e144d1d172f02ec8b9aa4c739e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336902"
 ---
 # <a name="__int2c"></a>__int2c
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Kesmeyi tetikleyen yönergeyi üretir. `int 2c` `2c`
+`int 2c`Kesmeyi tetikleyen yönergeyi üretir `2c` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void __int2c(void);
@@ -34,7 +35,7 @@ void __int2c(void);
 |---------------|------------------|
 |`__int2c`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 **SON Microsoft 'a özgü**
 

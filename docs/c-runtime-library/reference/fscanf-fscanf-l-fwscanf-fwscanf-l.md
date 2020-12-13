@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fscanf, _fscanf_l, fwscanf, _fwscanf_l'
 title: fscanf, _fscanf_l, fwscanf, _fwscanf_l
 ms.date: 11/04/2016
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _ftscanf function
 - fwscanf_l function
 ms.assetid: 9004e978-6c5f-4bb2-98fd-51e5948933f2
-ms.openlocfilehash: 1c143cbc1bf642e7efc6f10b9615fdaca8a236d1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fbdcffa7492d8a4f5d465ac0a62eefecca2e5c84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336530"
 ---
 # <a name="fscanf-_fscanf_l-fwscanf-_fwscanf_l"></a>fscanf, _fscanf_l, fwscanf, _fwscanf_l
 
@@ -86,24 +87,24 @@ int _fwscanf_l(
 *ka*<br/>
 **Dosya** yapısına yönelik işaretçi.
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *değişkendir*<br/>
 İsteğe bağlı bağımsız değişkenler.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Bir hata oluşursa veya dosya akışının sonuna ilk dönüştürmeden önce ulaşılırsa, **fscanf** ve **fwscanf**için dönüş değeri **EOF** olur.
+Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Bir hata oluşursa veya dosya akışının sonuna ilk dönüştürmeden önce ulaşılırsa, **fscanf** ve **fwscanf** için dönüş değeri **EOF** olur.
 
-Bu işlevler, parametrelerini doğrular. *Stream* veya *Format* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevler, parametrelerini doğrular. *Stream* veya *Format* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fscanf** işlevi, geçerli *akış* konumundaki verileri *bağımsız değişken* (varsa) tarafından verilen konumlara okur. Her *bağımsız değişken* , *biçimdeki*bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. *Format* , giriş alanlarının yorumunu denetler ve **scanf**için *Format* bağımsız değişkeniyle aynı forma ve işleve sahiptir; *biçimin*açıklaması için bkz. [scanf](scanf-scanf-l-wscanf-wscanf-l.md) .
+**Fscanf** işlevi, geçerli *akış* konumundaki verileri *bağımsız değişken* (varsa) tarafından verilen konumlara okur. Her *bağımsız değişken* , *biçimdeki* bir tür belirticisine karşılık gelen bir tür değişkenine bir işaretçi olmalıdır. *Format* , giriş alanlarının yorumunu denetler ve **scanf** için *Format* bağımsız değişkeniyle aynı forma ve işleve sahiptir; *biçimin* açıklaması için bkz. [scanf](scanf-scanf-l-wscanf-wscanf-l.md) .
 
 **fwscanf** , **fscanf**; öğesinin geniş karakterli bir sürümüdür. **fwscanf** biçim bağımsız değişkeni geniş karakterli bir dizedir. Bu işlevler akış ANSI modunda açılırsa aynı şekilde davranır. **fscanf** Şu anda UNICODE akışından girişi desteklememektedir.
 
@@ -111,7 +112,7 @@ Bu işlevler, parametrelerini doğrular. *Stream* veya *Format* null Işaretçis
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_ftscanf**|**fscanf**|**fscanf**|**fwscanf**|
 |**_ftscanf_l**|**_fscanf_l**|**_fscanf_l**|**_fwscanf_l**|
@@ -122,8 +123,8 @@ Daha fazla bilgi için bkz. [Biçim belirtim alanları-scanf işlevleri ve wscan
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fscanf**, **_fscanf_l**|\<stdio. h >|
-|**fwscanf**, **_fwscanf_l**|\<stdio. h > veya \<wchar. h >|
+|**fscanf**, **_fscanf_l**|\<stdio.h>|
+|**fwscanf**, **_fwscanf_l**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -188,7 +189,7 @@ x
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_cscanf, _cscanf_l, _cwscanf, _cwscanf_l](cscanf-cscanf-l-cwscanf-cwscanf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>

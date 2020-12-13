@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __clrcall'
 title: __clrcall
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __clrcall keyword [C++]
 ms.assetid: 92096695-683a-40ed-bf65-0c8443572152
-ms.openlocfilehash: 85e9025c26cc821cdbd8e5218e184f05e2b96b24
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 3c3932333a198063d2878be7ff8618524ff2eb5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685837"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335568"
 ---
 # <a name="__clrcall"></a>__clrcall
 
@@ -19,13 +20,13 @@ Bir işlevin yalnızca yönetilen koddan çağrılabilecek olduğunu belirtir.  
 
 Yönetilen bir işlevden sanal yönetilen işleve veya yönetilen işlevden işaretçi aracılığıyla yönetilen işleve çağrı yaparken performansı artırmak için **__clrcall** kullanın.
 
-Giriş noktaları ayrı, derleyici tarafından oluşturulan işlevlerdir. Bir işlevde hem yerel hem de yönetilen giriş noktaları varsa, bunlardan biri işlev uygulamasıyla gerçek işlev olur. Diğer işlev ise gerçek işleve çağıran ayrı bir işlev (bir dönüştürücü) olacaktır ve ortak dil çalışma zamanının PInvoke gerçekleştirmesini sağlar. Bir işlevi **__clrcall**olarak işaretlerken, Işlev uygulamasının MSIL olması gerektiğini ve yerel giriş noktası işlevinin üretilmeyeceğini belirtirsiniz.
+Giriş noktaları ayrı, derleyici tarafından oluşturulan işlevlerdir. Bir işlevde hem yerel hem de yönetilen giriş noktaları varsa, bunlardan biri işlev uygulamasıyla gerçek işlev olur. Diğer işlev ise gerçek işleve çağıran ayrı bir işlev (bir dönüştürücü) olacaktır ve ortak dil çalışma zamanının PInvoke gerçekleştirmesini sağlar. Bir işlevi **__clrcall** olarak işaretlerken, Işlev uygulamasının MSIL olması gerektiğini ve yerel giriş noktası işlevinin üretilmeyeceğini belirtirsiniz.
 
 **__Clrcall** belirtilmemişse, yerel bir işlevin adresini alırken, derleyici yerel giriş noktasını kullanır. **__clrcall** , işlevin yönetildiğini ve yönetilen ' dan Native ' e geçiş işlemi yapmanız gerekmediğini gösterir. Bu durumda, derleyici yönetilen giriş noktasını kullanır.
 
 `/clr`(Not `/clr:pure` veya) kullanıldığında `/clr:safe` ve **__clrcall** kullanılmazsa, bir işlevin adresini almak her zaman yerel giriş noktası işlevinin adresini döndürür. **__Clrcall** kullanıldığında, yerel giriş noktası işlevi oluşturulmaz, bu nedenle bir giriş noktası dönüştürücü işlevi değil, yönetilen işlevin adresini alırsınız. Daha fazla bilgi için bkz. [Double thunking](../dotnet/double-thunking-cpp.md). **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-[/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) , tüm işlevlerin ve işlev işaretçilerinin **__clrcall** olduğunu ve derleyicinin compiland içindeki bir işlevin **__clrcall**dışında bir şey işaretlenmesini sağlar. **/Clr: Pure** kullanıldığında, **__clrcall** yalnızca işlev işaretçilerinde ve dış bildirimlerde belirtilebilir.
+[/clr (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) , tüm işlevlerin ve işlev işaretçilerinin **__clrcall** olduğunu ve derleyicinin compiland içindeki bir işlevin **__clrcall** dışında bir şey işaretlenmesini sağlar. **/Clr: Pure** kullanıldığında, **__clrcall** yalnızca işlev işaretçilerinde ve dış bildirimlerde belirtilebilir.
 
 Bu işlevin MSIL uygulamasına sahip olduğu sürece **/clr** kullanılarak derlenen mevcut C++ kodundan **__clrcall** işlevleri doğrudan çağırabilirsiniz. **__clrcall** işlevler, satır içi asm içeren işlevlerden doğrudan çağrılamaz ve örneğin, bu işlevler ile derlense bıle, CPU 'ya özgü ıntrinıcs 'yi çağırır `/clr` .
 
@@ -33,7 +34,7 @@ Bu işlevin MSIL uygulamasına sahip olduğu sürece **/clr** kullanılarak derl
 
 ## <a name="examples"></a>Örnekler
 
-Bir işlev **__clrcall**ile bildirildiğinde, gerektiğinde kod oluşturulacaktır; Örneğin, işlev çağrıldığında.
+Bir işlev **__clrcall** ile bildirildiğinde, gerektiğinde kod oluşturulacaktır; Örneğin, işlev çağrıldığında.
 
 ```cpp
 // clrcall2.cpp

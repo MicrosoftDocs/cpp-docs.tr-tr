@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _bittestandcomplement _bittestandcomplement64'
 title: _bittestandcomplement, _bittestandcomplement64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - _bittestandcomplement intrinsic
 - _bittestandcomplement64 intrinsic
 ms.assetid: 53fa12dd-835e-4e5d-baec-a431c8678806
-ms.openlocfilehash: b1dcfe86aad18c8261029c9111681e1882bc96f5
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 8a701b2a38dcfa2e6efe3044b63a78533a7a6efa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222208"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337186"
 ---
 # <a name="_bittestandcomplement-_bittestandcomplement64"></a>_bittestandcomplement, _bittestandcomplement64
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`b` Adresin`a`bitini incelediği bir yönerge oluşturun, geçerli değerini döndürür ve bitini kendi tamamlayıcısı olarak ayarlar.
+Adresin bitini incelediği bir yönerge oluşturun `b` `a` , geçerli değerini döndürür ve bitini kendi tamamlayıcısı olarak ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,7 +46,7 @@ unsigned char _bittestandcomplement64(
 *kenarı*\
 'ndaki Sınanacak bit konumu.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Belirtilen konumdaki bit.
 
@@ -56,7 +57,7 @@ Belirtilen konumdaki bit.
 |`_bittestandcomplement`|x86, ARM, x64, ARM64|
 |`_bittestandcomplement64`|x64, ARM64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

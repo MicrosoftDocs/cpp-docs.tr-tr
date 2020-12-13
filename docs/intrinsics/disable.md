@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _disable'
 title: _disable
 ms.date: 09/02/2019
 f1_keywords:
@@ -9,20 +10,20 @@ helpviewer_keywords:
 - rsm instruction
 - disable intrinsic
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
-ms.openlocfilehash: 94be850e1d494ff62df84922b46f28481be68314
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: c118315a4fea2dad401cc5c6f3621a8ec3b1794c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216822"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337100"
 ---
 # <a name="_disable"></a>_disable
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Kesmeleri devre dışı bırakır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void _disable(void);
@@ -34,11 +35,11 @@ void _disable(void);
 |---------------|------------------|
 |`_disable`|x86, ARM, x64, ARM64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_disable`İşlemciyi kesme bayrağını temizlemesini söyler. X86 sistemlerinde, bu işlev Clear Interrupt bayrağı (`cli`) yönergesini üretir.
+`_disable` İşlemciyi kesme bayrağını temizlemesini söyler. X86 sistemlerinde, bu işlev Clear Interrupt bayrağı ( `cli` ) yönergesini üretir.
 
 Bu işlev yalnızca çekirdek modunda kullanılabilir. Kullanıcı modunda kullanılıyorsa, çalışma zamanında ayrıcalıklı yönerge özel durumu oluşturulur.
 

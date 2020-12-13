@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Visual C++ metin ve dizeler'
 title: Visual C++'da Metin ve Dizeler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - portability [C++], character sets
 - MBCS [C++], international programming
 ms.assetid: a1bb27ac-abe5-4c6b-867d-f761d4b93205
-ms.openlocfilehash: 80b7139996fddc82b206828d4a036922fa1446d5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3b77df006e095871d11fb3bfbc3d83b081d6052f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335729"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++'da Metin ve Dizeler
 
@@ -38,19 +39,19 @@ Uluslararası pazarlar için uygulama geliştirmenin önemli bir yönü, yerel k
 ## <a name="in-this-section"></a>Bu Bölümde
 
 [Unicode ve MBCS](../text/unicode-and-mbcs.md)<br/>
-Unicode ve C++ MBCS programlama için görsel desteği açıklar.
+Unicode ve MBCS programlamasına yönelik Visual C++ desteğini açıklar.
 
-[Unicode Desteği](../text/support-for-unicode.md)<br/>
+[Unicode desteği](../text/support-for-unicode.md)<br/>
 Tek bir bayt içinde temsil edilemeyecek karakter kümeleri de dahil olmak üzere tüm karakter kümelerini desteklemeye yönelik bir belirtim olan Unicode ' u açıklar.
 
 [Çok baytlı karakter kümesi desteği (MBCS)](../text/support-for-multibyte-character-sets-mbcss.md)<br/>
 Japonca ve Çince gibi tek bir baytta temsil edilemeyecek karakter kümelerini desteklemek için Unicode 'a alternatif olarak MBCS 'yi açıklar.
 
-[Tchar.h'de Genel Metin Eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)<br/>
+[Tchar. h 'de Genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)<br/>
 Birçok veri türü, yordamlar ve diğer nesneler için Microsoft 'a özgü genel metin eşlemeleri sağlar.
 
-[Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma](../text/how-to-convert-between-various-string-types.md)<br/>
-Çeşitli görsel C++ dize türlerinin diğer dizelere nasıl dönüştürüleceğini gösterir.
+[Nasıl yapılır: çeşitli dize türleri arasında dönüştürme](../text/how-to-convert-between-various-string-types.md)<br/>
+Çeşitli Visual C++ dize türlerinin diğer dizelere nasıl dönüştürüleceğini gösterir.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
@@ -58,7 +59,7 @@ Birçok veri türü, yordamlar ve diğer nesneler için Microsoft 'a özgü gene
 C çalışma zamanı kitaplığı 'nda uluslararası desteği açıklar.
 
 [Uluslararası örnekler](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/International)<br/>
-Görselde C++uluslararası duruma getirme gösteren örneklere bağlantılar sağlar.
+Visual C++ uluslararası duruma getirme gösteren örneklere bağlantılar sağlar.
 
 [Dil ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
 C çalışma zamanı kitaplığındaki dili ve ülke/bölge dizelerini sağlar.

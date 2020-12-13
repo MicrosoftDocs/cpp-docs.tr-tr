@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: derleyici iç bilgileri'
 title: Derleyici iç bilgileri
 ms.date: 09/02/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - cl.exe compiler, performance
 - cl.exe compiler, intrinsics
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
-ms.openlocfilehash: 7438c90eec8b1f88a4c1608953ce21772254f02c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c81608af1021919691b6241e14b1fefbe03643f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230538"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337160"
 ---
 # <a name="compiler-intrinsics"></a>Derleyici iç bilgileri
 
@@ -26,7 +27,7 @@ Kod diğer derleyiciler ile derleniyorsa ve bazı hedef mimarilerde kullanılabi
 
 Ve gibi bazı iç öğeler **`__assume`** `__ReadWriteBarrier` derleyiciye bilgi sağlar ve bu da iyileştiricinin davranışını etkiler.
 
-Bazı iç bilgiler yalnızca iç bilgiler olarak kullanılabilir ve bazıları hem işlev hem de iç uygulamalarda kullanılabilir. Yalnızca belirli işlevleri etkinleştirmek mi yoksa tüm iç bilgileri etkinleştirmek mi istediğinize bağlı olarak derleyicinin iç uygulamayı iki şekilde kullanmasını bildirebilirsiniz. İlk yöntem, `#pragma intrinsic(` *iç işlev ad listesini*kullanmaktır `)` . Pragma, virgülle ayrılmış tek bir iç veya birden çok iç yapı belirtmek için kullanılabilir. İkincisi, belirli bir platformdaki tüm iç bilgileri kullanılabilir hale getiren [/Oi (iç Işlevler üret)](../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanmaktır. **/Oi**altında, `#pragma function(` bir işlev çağrısının bir iç yerine kullanılmasına zorlamak için *iç işlev adı-liste* kullanın `)` . Belirli bir iç belge için olan belgeler, yordamın yalnızca bir iç öğe olarak kullanılabileceğini fark etdiğine göre, iç uygulama, **/Oi** veya belirtilen olduklarına bakılmaksızın kullanılır `#pragma intrinsic` . Her durumda, **/Oi** veya `#pragma intrinsic` izin verir, ancak en iyi duruma getirmeyi zorunlu hale getirmez. İyileştirici hala işlevi çağırabilir.
+Bazı iç bilgiler yalnızca iç bilgiler olarak kullanılabilir ve bazıları hem işlev hem de iç uygulamalarda kullanılabilir. Yalnızca belirli işlevleri etkinleştirmek mi yoksa tüm iç bilgileri etkinleştirmek mi istediğinize bağlı olarak derleyicinin iç uygulamayı iki şekilde kullanmasını bildirebilirsiniz. İlk yöntem, `#pragma intrinsic(` *iç işlev ad listesini* kullanmaktır `)` . Pragma, virgülle ayrılmış tek bir iç veya birden çok iç yapı belirtmek için kullanılabilir. İkincisi, belirli bir platformdaki tüm iç bilgileri kullanılabilir hale getiren [/Oi (iç Işlevler üret)](../build/reference/oi-generate-intrinsic-functions.md) derleyici seçeneğini kullanmaktır. **/Oi** altında, `#pragma function(` bir işlev çağrısının bir iç yerine kullanılmasına zorlamak için *iç işlev adı-liste* kullanın `)` . Belirli bir iç belge için olan belgeler, yordamın yalnızca bir iç öğe olarak kullanılabileceğini fark etdiğine göre, iç uygulama, **/Oi** veya belirtilen olduklarına bakılmaksızın kullanılır `#pragma intrinsic` . Her durumda, **/Oi** veya `#pragma intrinsic` izin verir, ancak en iyi duruma getirmeyi zorunlu hale getirmez. İyileştirici hala işlevi çağırabilir.
 
 Bazı standart C/C++ kitaplığı işlevleri bazı mimarilerde iç uygulamalarda kullanılabilir. CRT işlevini çağırırken, komut satırında **/Oi** belirtilmişse iç uygulama kullanılır.
 

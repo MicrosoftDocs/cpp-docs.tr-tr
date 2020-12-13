@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _BitScanReverse _BitScanReverse64'
 title: _BitScanReverse, _BitScanReverse64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - _BitScanReverse intrinsic
 - BitScanReverse intrinsic
 ms.assetid: 2520a207-af8b-4aad-9ae7-831abeadf376
-ms.openlocfilehash: 848c153967e5581f08f1d499a28ab282ee2602df
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 1a535dcc95f9fbf791de3ecd2c2d54eddcc0399c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216951"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337209"
 ---
 # <a name="_bitscanreverse-_bitscanreverse64"></a>_BitScanReverse, _BitScanReverse64
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Maske verilerini, küme bit (1) için en önemli bit (MSB) ile en az önemli bit (LSB) ile arayın.
 
@@ -45,16 +46,16 @@ dışı İlk küme bitinin (1) bulunduğu bit konumuyla yüklendi.
 *Maskesi*\
 'ndaki Aranacak 32-bit veya 64 bit değeri.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-`Index` Ayarlanmışsa sıfır olmayan veya ayarlanmış bir bit bulunmazsa 0.
+Ayarlanmışsa sıfır `Index` olmayan veya ayarlanmış bir bit bulunmazsa 0.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_BitScanReverse`|x86, ARM, x64, ARM64|\<Intrin. h >|
-|`_BitScanReverse64`|ARM64, x64|\<Intrin. h >|
+|`_BitScanReverse`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_BitScanReverse64`|ARM64, x64|\<intrin.h>|
 
 ## <a name="example"></a>Örnek
 

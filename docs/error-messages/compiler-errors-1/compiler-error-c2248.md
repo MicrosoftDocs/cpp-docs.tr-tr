@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2248'
 title: Derleyici hatası C2248
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2248
 ms.assetid: 7a3ba0e8-d3b9-4bb9-95db-81ef17e31d23
-ms.openlocfilehash: d35ded4b06423be53911f3efd0b55d75cb979773
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f2d840195fd6cdeb4cc8e1e90a06a502378ac634
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212819"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337602"
 ---
 # <a name="compiler-error-c2248"></a>Derleyici hatası C2248
 

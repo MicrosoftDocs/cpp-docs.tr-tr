@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CMFCPopupMenu sınıfı'
 title: CMFCPopupMenu sınıfı
 ms.date: 10/18/2018
 f1_keywords:
@@ -160,12 +161,12 @@ helpviewer_keywords:
 - CMFCPopupMenu [MFC], OnChangeHot
 - CMFCPopupMenu [MFC], OnChooseItem
 ms.assetid: 9555dca1-8c9c-44c9-af72-0659ddad128e
-ms.openlocfilehash: 89089559916419bc27b0528430fe7ad12ca804b0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 97429da34643945ff75b2a16e7bbaf6df439e425
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334760"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu sınıfı
 
@@ -228,7 +229,7 @@ class CMFCPopupMenu : public CMiniFrameWnd
 |[CMFCPopupMenu:: InsertSeparator](#insertseparator)|Belirtilen konumdaki açılır menüye bir ayırıcı ekler.|
 |[CMFCPopupMenu:: ısalwaysckaybetme](#isalwaysclose)||
 |[CMFCPopupMenu:: ısalwaysshowemptytoolsentry](#isalwaysshowemptytoolsentry)||
-|[CMFCPopupMenu:: IsCustomizePane](#iscustomizepane)|Açılır menünün bir **QuickCustomizePane**olarak çalışıp çalışmadığını gösterir.|
+|[CMFCPopupMenu:: IsCustomizePane](#iscustomizepane)|Açılır menünün bir **QuickCustomizePane** olarak çalışıp çalışmadığını gösterir.|
 |[CMFCPopupMenu:: IsEscClose](#isescclose)||
 |[CMFCPopupMenu:: IsIdle](#isidle)|Açılır menünün Şu anda boşta olup olmadığını gösterir.|
 |[CMFCPopupMenu:: IsMenuSound](#ismenusound)||
@@ -447,7 +448,7 @@ Yöntem başarılı olursa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*BOwnMessage* true ise, çerçeve herhangi bir menü Iletisini *pWndParent*öğesine yönlendirir. *bOwnMessage* true Ise, *PWNDPARENT* null olmamalıdır. *BOwnMessage* false ise, çerçeve menü iletilerini ana açılır menüye yönlendirir.
+*BOwnMessage* true ise, çerçeve herhangi bir menü Iletisini *pWndParent* öğesine yönlendirir. *bOwnMessage* true Ise, *PWNDPARENT* null olmamalıdır. *BOwnMessage* false ise, çerçeve menü iletilerini ana açılır menüye yönlendirir.
 
 ### <a name="example"></a>Örnek
 
@@ -906,7 +907,7 @@ int InsertItem(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, şu anda açılır menüdeki öğe sayısından daha büyük bir tamsayı gibi *ıınsertat*için geçersiz bir değer sağlarsanız başarısız olur.
+Bu yöntem, şu anda açılır menüdeki öğe sayısından daha büyük bir tamsayı gibi *ıınsertat* için geçersiz bir değer sağlarsanız başarısız olur.
 
 ## <a name="cmfcpopupmenuinsertseparator"></a><a name="insertseparator"></a> CMFCPopupMenu:: InsertSeparator
 
@@ -953,7 +954,7 @@ static BOOL __stdcall IsAlwaysShowEmptyToolsEntry();
 
 ## <a name="cmfcpopupmenuiscustomizepane"></a><a name="iscustomizepane"></a> CMFCPopupMenu:: IsCustomizePane
 
-Açılır menünün bir **QuickCustomizePane**olarak çalışıp çalışmadığını gösterir.
+Açılır menünün bir **QuickCustomizePane** olarak çalışıp çalışmadığını gösterir.
 
 ```
 BOOL IsCustomizePane();
@@ -961,11 +962,11 @@ BOOL IsCustomizePane();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Açılır pencere bir **QuckCustomizePane**ise doğru; Aksi halde yanlış.
+Açılır pencere bir **QuckCustomizePane** ise doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcının açılır menüyü doğrudan özelleştirmesini sağlamak için **QuickCustomizePane** kullanın. **QuickCustomizePane** `CMFCPopupMenu` Kullanıcı doğrudan düzenlemek için bir araç çubuğu düğmesine tıkladığında görünen QuickCustomizePane.
+Kullanıcının açılır menüyü doğrudan özelleştirmesini sağlamak için **QuickCustomizePane** kullanın.  `CMFCPopupMenu` Kullanıcı doğrudan düzenlemek için bir araç çubuğu düğmesine tıkladığında görünen QuickCustomizePane.
 
 Uygulamanız [Cmdiframewndex:: OnShowCustomizePane](../../mfc/reference/cmdiframewndex-class.md#onshowcustomizepane)sırasında bu yöntemi çağırmalıdır.
 
@@ -1255,7 +1256,7 @@ static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 
 ### <a name="remarks"></a>Açıklamalar
 
-*Type*için geçerli değerler listesi için bkz. [CMFCPopupMenu:: GetAnimationType](#getanimationtype) .
+*Type* için geçerli değerler listesi için bkz. [CMFCPopupMenu:: GetAnimationType](#getanimationtype) .
 
 ## <a name="cmfcpopupmenusetautodestroy"></a><a name="setautodestroy"></a> CMFCPopupMenu:: SetAutoDestroy
 

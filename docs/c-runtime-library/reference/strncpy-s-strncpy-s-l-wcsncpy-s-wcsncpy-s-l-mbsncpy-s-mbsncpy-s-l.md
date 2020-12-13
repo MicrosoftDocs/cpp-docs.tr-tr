@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l'
 title: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 ms.date: 4/2/2020
 api_name:
@@ -54,12 +55,12 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 08921ff44d2d69ab77eb210b2123016ea61c4f67
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: eb4ea7c5f7b288640fe0797d9f6c5428fe28e0af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008275"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336491"
 ---
 # <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
@@ -162,7 +163,7 @@ Hedef dizenin karakter cinsinden boyutu.
 *strSource*<br/>
 Kaynak dize.
 
-*count*<br/>
+*biriktirme*<br/>
 Kopyalanacak karakter sayısı veya [_TRUNCATE](../../c-runtime-library/truncate.md).
 
 *locale*<br/>
@@ -183,9 +184,9 @@ Başarılı olursa **sıfır, kesme oluştuysa, aksi** takdirde hata kodu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, *strSource* 'un ilk *d* karakterini *strDest*konumuna kopyalamaya çalışır; burada *D* , *Count* , *strSource*uzunluğunun küçüktür. Bu *D* karakterleri, *strDest* içinde sığar (boyutu *numberOfElements*olarak verilir) ve hala boş bir Sonlandırıcı için yer bırakır, bu karakterler kopyalanır ve bir Sonlandırıcı null değeri eklenir; Aksi halde, *strDest*[0] null karakter olarak ayarlanır ve [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
+Bu işlevler, *strSource* 'un ilk *d* karakterini *strDest* konumuna kopyalamaya çalışır; burada *D* , *Count* , *strSource* uzunluğunun küçüktür. Bu *D* karakterleri, *strDest* içinde sığar (boyutu *numberOfElements* olarak verilir) ve hala boş bir Sonlandırıcı için yer bırakır, bu karakterler kopyalanır ve bir Sonlandırıcı null değeri eklenir; Aksi halde, *strDest*[0] null karakter olarak ayarlanır ve [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
 
-Yukarıdaki paragrafın bir istisnası vardır. *Count* **_TRUNCATE**ise, *strSource* 'un büyük bir bölümü, her zaman eklenmiş olan sonlandırma null değeri Için oda terk edilirken, *strDest* içine sığacak şekilde kopyalanır.
+Yukarıdaki paragrafın bir istisnası vardır. *Count* **_TRUNCATE** ise, *strSource* 'un büyük bir bölümü, her zaman eklenmiş olan sonlandırma null değeri Için oda terk edilirken, *strDest* içine sığacak şekilde kopyalanır.
 
 Örneğin,
 
@@ -203,13 +204,13 @@ strncpy_s(dst, 5, "a long string", _TRUNCATE);
 strncpy_s(dst, 5, "a long string", 4);
 ```
 
-**Strncpy**'nin aksine, *Count* 'un *strSource*uzunluğundan daha büyük olması, hedef dizenin uzunluk *sayısına*kadar olan null karakterlerle doldurulmuş olmadığını unutmayın.
+**Strncpy**'nin aksine, *Count* 'un *strSource* uzunluğundan daha büyük olması, hedef dizenin uzunluk *sayısına* kadar olan null karakterlerle doldurulmuş olmadığını unutmayın.
 
 Kaynak ve hedef dizeler çakıştığında **strncpy_s** davranışı tanımsızdır.
 
-*StrDest* veya *strSource* **null**ise veya *numberOfElements* 0 ise, geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
+*StrDest* veya *strSource* **null** ise veya *numberOfElements* 0 ise, geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL** olarak ayarlar.
 
-**wcsncpy_s** ve **_mbsncpy_s** , **strncpy_s**geniş karakter ve çok baytlı karakter sürümleridir. **Wcsncpy_s** ve **mbsncpy_s** bağımsız değişkenleri ve dönüş değeri buna göre farklılık gösterir. Bu altı işlev, aynı şekilde davranır.
+**wcsncpy_s** ve **_mbsncpy_s** , **strncpy_s** geniş karakter ve çok baytlı karakter sürümleridir. **Wcsncpy_s** ve **mbsncpy_s** bağımsız değişkenleri ve dönüş değeri buna göre farklılık gösterir. Bu altı işlev, aynı şekilde davranır.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 

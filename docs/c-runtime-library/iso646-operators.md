@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: ISO646 Işleçleri'
 title: ISO646 İşleçleri
 ms.date: 04/11/2018
 ms.assetid: 93e6d3e7-4889-4d8e-8dcb-c1a6b9bbe0f5
-ms.openlocfilehash: 49fba3eda1be77b3a5026039fbd7b4594e317777
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: dafe41000ae702effff17bf333de7efd6d474063
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335705"
 ---
 # <a name="iso646-operators"></a>ISO646 İşleçleri
 
@@ -26,7 +27,7 @@ Belirli işleçlere ve noktalama işaretlerine okunabilir alternatifler sağlar.
 |[not_eq](../c-runtime-library/reference/not-eq.md)|!= işleci alternatifi.|
 |[veya](../c-runtime-library/reference/or.md)| &#124;&#124; işlecine bir alternatifi.|
 |[or_eq](../c-runtime-library/reference/or-eq.md)|&#124;= işlecine bir alternatifi.|
-|[xor](../c-runtime-library/reference/xor.md)|^ işleci alternatifi.|
+|[XOR](../c-runtime-library/reference/xor.md)|^ işleci alternatifi.|
 |[xor_eq](../c-runtime-library/reference/xor-eq.md)|^= işleci alternatifi.|
 
 ## <a name="see-also"></a>Ayrıca bkz.

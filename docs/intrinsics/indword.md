@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __indword'
 title: __indword
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - in instruction
 - __indword intrinsic
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-ms.openlocfilehash: 790b65c8a565124df92b82b7ea17174788086a96
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: bd637027ee930b551f08508874554e2b19f22461
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222111"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336933"
 ---
 # <a name="__indword"></a>__indword
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`in` Yönergeleri kullanarak belirtilen bağlantı noktasından bir çift verinin bir Double sözcüğünü okur.
+Yönergeleri kullanarak belirtilen bağlantı noktasından bir çift verinin bir Double sözcüğünü okur `in` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,7 +35,7 @@ unsigned long __indword(
 *Bağ*\
 'ndaki Okunacak bağlantı noktası.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Bağlantı noktasından okunan sözcük.
 
@@ -44,7 +45,7 @@ Bağlantı noktasından okunan sözcük.
 |---------------|------------------|
 |`__indword`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

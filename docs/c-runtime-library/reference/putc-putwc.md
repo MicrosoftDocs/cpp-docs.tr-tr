@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: putc, putwc'
 title: putc, putwc
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _puttc function
 - puttc function
 ms.assetid: a37b2e82-9d88-4565-8190-ff8d04c0ddb9
-ms.openlocfilehash: 2a30302a72d228d709cd16d25d7b62d9ce64a8ba
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1dc5395938c1ac7d5f297a27dabc809ceb03b39c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918921"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335626"
 ---
 # <a name="putc-putwc"></a>putc, putwc
 
@@ -69,13 +70,13 @@ Yazılacak karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan karakteri döndürür. Bir hata veya dosya sonu koşulunu göstermek için **putc** ve **putchar** , **EOF**döndürür; **putwc** ve **putwchar** **, weof**döndürmelidir. Dört yordam için, bir hatayı veya dosya sonunu denetlemek için [ferror](ferror.md) veya [feof](feof.md) kullanın. *Akış*için null bir işaretçi geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** veya **weof** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Yazılan karakteri döndürür. Bir hata veya dosya sonu koşulunu göstermek için **putc** ve **putchar** , **EOF** döndürür; **putwc** ve **putwchar** **, weof** döndürmelidir. Dört yordam için, bir hatayı veya dosya sonunu denetlemek için [ferror](ferror.md) veya [feof](feof.md) kullanın. *Akış* için null bir işaretçi geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** veya **weof** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Putc** yordamı, tek bir *c* karakterini geçerli konumdaki çıkış *akışına* yazar. **Putc**'ye herhangi bir tamsayı geçirilebilir, ancak yalnızca alt 8 bit yazılır. **Putchar** yordamı ile `putc( c, stdout )`aynıdır. Her yordam için, bir okuma hatası oluşursa, akışın hata göstergesi ayarlanır. **putc** ve **putchar** , sırasıyla **fputc** ve **_fputchar**benzerdir, ancak hem işlev hem de makro olarak uygulanır (bkz. [işlevler ve makrolar arasında seçim yapma](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)). **putwc** ve **putwchar** sırasıyla **putc** ve **putchar**öğesinin geniş karakterli sürümleridir. Akış ANSI modunda açılırsa **putwc** ve **putc** aynı şekilde davranır. **putc** Şu anda bir UNICODE akışına çıktıyı desteklememektedir.
+**Putc** yordamı, tek bir *c* karakterini geçerli konumdaki çıkış *akışına* yazar. **Putc**'ye herhangi bir tamsayı geçirilebilir, ancak yalnızca alt 8 bit yazılır. **Putchar** yordamı ile aynıdır `putc( c, stdout )` . Her yordam için, bir okuma hatası oluşursa, akışın hata göstergesi ayarlanır. **putc** ve **putchar** , sırasıyla **fputc** ve **_fputchar** benzerdir, ancak hem işlev hem de makro olarak uygulanır (bkz. [işlevler ve makrolar arasında seçim yapma](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)). **putwc** ve **putwchar** sırasıyla **putc** ve **putchar** öğesinin geniş karakterli sürümleridir. Akış ANSI modunda açılırsa **putwc** ve **putc** aynı şekilde davranır. **putc** Şu anda bir UNICODE akışına çıktıyı desteklememektedir.
 
 **_Nolock** sonekine sahip sürümler, diğer iş parçacıkları tarafından girişime karşı korunmamaları dışında aynıdır. Daha fazla bilgi için bkz. **_putc_nolock, _putwc_nolock**.
 
@@ -91,10 +92,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**putc**|\<stdio. h>|
-|**putwc**|\<stdio. h> veya \<wchar. h>|
+|**putc**|\<stdio.h>|
+|**putwc**|\<stdio.h> veya \<wchar.h>|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout**ve **stderr**Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsol Evrensel Windows Platformu (UWP) uygulamalarında desteklenmez. Console, **STDIN**, **stdout** ve **stderr** Ile ilişkili standart akış TUTAMAÇLARı, C çalışma zamanı işlevlerinin UWP uygulamalarında kullanabilmesi için yeniden yönlendirilmelidir. Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -133,6 +134,6 @@ This is the line of output
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

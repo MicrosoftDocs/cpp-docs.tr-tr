@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2857'
 title: Derleyici hatası C2857
 ms.date: 09/13/2018
 f1_keywords:
@@ -6,28 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - C2857
 ms.assetid: b57302bd-58ec-45ae-992a-1e282d5eeccc
-ms.openlocfilehash: 11b620f9748ac85e731d79b0652c0392375b2ea4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 85f2a9cffc8a96998a102d9e8219d9656cb3386f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201857"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337524"
 ---
 # <a name="compiler-error-c2857"></a>Derleyici hatası C2857
 
-> /I*filename* komut satırı seçeneğiyle belirtilen ' #include ' ifadesiyle kaynak dosyada bulunamadı
+> /I *filename* komut satırı seçeneğiyle belirtilen ' #include ' ifadesiyle kaynak dosyada bulunamadı
 
 [/Yıc](../../build/reference/yc-create-precompiled-header-file.md) seçeneği, derlenen kaynak dosyasında bulunmayan bir içerme dosyasının adını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ön derlenmiş üst bilgi (PCH) dosyası oluşturmak için kaynak dosyada **/Yıc**<em>filename</em> seçeneğini kullandığınızda, bu kaynak dosya dosya *adı* üst bilgi dosyasını içermelidir. Belirtilen *dosya adı*dahil olmak üzere kaynak dosyanın içerdiği her dosya, PCH dosyasına dahildir. PCH dosyasını kullanmak için **/yu**<em>filename</em> seçeneği kullanılarak derlenen diğer kaynak dosyalarında dosya *adı* ekleme, dosyadaki ilk açıklama olmayan satır olmalıdır. Derleyici, kaynak dosyasındaki bu dahil etmeden önce herhangi bir şeyi yoksayar.
+Ön derlenmiş üst bilgi (PCH) dosyası oluşturmak için kaynak dosyada **/Yıc**<em>filename</em> seçeneğini kullandığınızda, bu kaynak dosya dosya *adı* üst bilgi dosyasını içermelidir. Belirtilen *dosya adı* dahil olmak üzere kaynak dosyanın içerdiği her dosya, PCH dosyasına dahildir. PCH dosyasını kullanmak için **/yu**<em>filename</em> seçeneği kullanılarak derlenen diğer kaynak dosyalarında dosya *adı* ekleme, dosyadaki ilk açıklama olmayan satır olmalıdır. Derleyici, kaynak dosyasındaki bu dahil etmeden önce herhangi bir şeyi yoksayar.
 
-Bu hata, PCH kaynak dosyanızda derlenmemiş koşullu derleme bloğunda bir `#include "filename"` ifadesiyle kaynaklanabilir.
+Bu hata, `#include "filename"` pch kaynak dosyanızda derlenmemiş bir koşullu derleme bloğundaki bir deyimin oluşmasına neden olabilir.
 
 ## <a name="example"></a>Örnek
 
-Tipik kullanımda, projenizdeki bir kaynak dosya, PCH kaynak dosyası olarak atanır ve bir üst bilgi dosyası, PCH üstbilgi dosyası olarak kullanılır. Tipik bir PCH üstbilgi dosyası projenizde kullanılan tüm kitaplık üst bilgilerine sahiptir, ancak hala geliştirme aşamasında olan yerel üstbilgiler değildir. Bu örnekte, PCH üstbilgi dosyası *my_pch. h*olarak adlandırılır.
+Tipik kullanımda, projenizdeki bir kaynak dosya, PCH kaynak dosyası olarak atanır ve bir üst bilgi dosyası, PCH üstbilgi dosyası olarak kullanılır. Tipik bir PCH üstbilgi dosyası projenizde kullanılan tüm kitaplık üst bilgilerine sahiptir, ancak hala geliştirme aşamasında olan yerel üstbilgiler değildir. Bu örnekte, PCH üstbilgi dosyası *my_pch. h* olarak adlandırılır.
 
 ```cpp
 // my_pch.h

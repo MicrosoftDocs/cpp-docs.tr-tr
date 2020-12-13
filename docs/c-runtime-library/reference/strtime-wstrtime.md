@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strtime _wstrtime'
 title: _strtime, _wstrtime
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _tstrtime function
 - time, copying
 ms.assetid: 9e538161-cf49-44ec-bca5-c0ab0b9e4ca3
-ms.openlocfilehash: 7d9752ff9eb1fd7a4fa08c2a6ab89fefe456dad1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0cb5d5deaa89d832ed1cecd231ed1c8f456ccace
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910916"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337752"
 ---
 # <a name="_strtime-_wstrtime"></a>_strtime, _wstrtime
 
@@ -76,13 +77,13 @@ Zaman dizesi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonuç karakter dizesi *timestr*için bir işaretçi döndürür.
+Sonuç karakter dizesi *timestr* için bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strtime** işlevi, geçerli yerel saati *timestr*tarafından işaret edilen arabelleğe kopyalar. Süre SS **: DD: ss** olarak biçimlendirilir; burada **SS** , 24 saatlik gösterimde saati temsil eden iki haneye, **mm** , saati geçen dakikaları temsil eden iki haneye ve **nn** saniyeyi temsil eden iki haneye sahiptir. Örneğin, **18:23:44** dizesi 23 dakika ve 44 saniye içinde 6 P.M. temsil eder Arabellek en az 9 bayt uzunluğunda olmalıdır.
+**_Strtime** işlevi, geçerli yerel saati *timestr* tarafından işaret edilen arabelleğe kopyalar. Süre SS **: DD: ss** olarak biçimlendirilir; burada **SS** , 24 saatlik gösterimde saati temsil eden iki haneye, **mm** , saati geçen dakikaları temsil eden iki haneye ve **nn** saniyeyi temsil eden iki haneye sahiptir. Örneğin, **18:23:44** dizesi 23 dakika ve 44 saniye içinde 6 P.M. temsil eder Arabellek en az 9 bayt uzunluğunda olmalıdır.
 
-**_wstrtime** , **_strtime**geniş karakterli bir sürümüdür; **_wstrtime** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır. *Timestr* **null** işaretçisiyse veya *timestr* yanlış biçimlendirildiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Özel durumun devam etmesine izin *timestr* veriliyorsa, bu işlevler **null** döndürür ve *timestr* **null** ise, errno olarak **EINVAL** **olarak ayarlanır** . **errno** **ERANGE**
+**_wstrtime** , **_strtime** geniş karakterli bir sürümüdür; **_wstrtime** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır. *Timestr* **null** işaretçisiyse veya *timestr* yanlış biçimlendirildiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Özel durumun devam etmesine izin  veriliyorsa, bu işlevler **null** döndürür ve *timestr* **null** ise, errno olarak **EINVAL** **olarak ayarlanır** .  
 
 C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -98,8 +99,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strtime**|\<Time. h>|
-|**_wstrtime**|\<Time. h> veya \<wchar. h>|
+|**_strtime**|\<time.h>|
+|**_wstrtime**|\<time.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

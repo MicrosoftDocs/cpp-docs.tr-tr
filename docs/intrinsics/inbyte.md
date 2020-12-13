@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __inbyte'
 title: __inbyte
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - in instruction
 - __inbyte intrinsic
 ms.assetid: 03b61799-2a08-474d-adc4-2cbf7c81a4d5
-ms.openlocfilehash: f0036763ed7315a54fbfe6dcc873b46b52f0730c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 77cc1cfb792ffa2f6aef9879820e644372895193
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222145"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337020"
 ---
 # <a name="__inbyte"></a>__inbyte
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`in` Tarafından`Port`belirtilen bağlantı noktasından okunan tek bir bayt döndüren yönergeyi oluşturur.
+`in`Tarafından belirtilen bağlantı noktasından okunan tek bir bayt döndüren yönergeyi oluşturur `Port` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,7 +35,7 @@ unsigned char __inbyte(
 *Bağ*\
 'ndaki Okunacak bağlantı noktası.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Belirtilen bağlantı noktasından okunan bayt.
 
@@ -44,7 +45,7 @@ Belirtilen bağlantı noktasından okunan bayt.
 |---------------|------------------|
 |`__inbyte`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 **SON Microsoft 'a özgü**
 

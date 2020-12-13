@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: ATL önceden tanımlanmış sembolleri'
 title: ATL Önceden Tanımlanmış Semboller
 ms.date: 02/14/2019
 helpviewer_keywords:
 - symbols [C++], ATL predefined
 - ATL symbols
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
-ms.openlocfilehash: 8134f334b0143a360fd3e02c04bca7a65ce67ce0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0234137f8311e369c39fcc3d13ea394eb70c9d87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337805"
 ---
 # <a name="atl-predefined-symbols"></a>ATL Önceden Tanımlanmış Semboller
 

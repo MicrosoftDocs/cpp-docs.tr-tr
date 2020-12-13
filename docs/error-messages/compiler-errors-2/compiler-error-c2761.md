@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2761'
 title: Derleyici hatası C2761
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2761
 ms.assetid: 38c79a05-b56d-485b-820f-95e8c0cb926f
-ms.openlocfilehash: 7493934879068109c582a85592f485c1d391e2de
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 624a375aedc78b6d63f3a6c5a1185edfade28c7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743392"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336145"
 ---
 # <a name="compiler-error-c2761"></a>Derleyici hatası C2761
 

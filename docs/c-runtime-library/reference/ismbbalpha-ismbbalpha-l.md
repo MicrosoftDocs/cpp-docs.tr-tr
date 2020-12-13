@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ismbbalpha _ismbbalpha_l'
 title: _ismbbalpha, _ismbbalpha_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbalpha function
 - _ismbbalpha_l function
 ms.assetid: 8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0
-ms.openlocfilehash: 1fa92d8e0f0ed331110666add1015fbdacf20f07
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 93ae26ff54af4cdee5f99e51c8f85d14ec51ae4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917494"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335660"
 ---
 # <a name="_ismbbalpha-_ismbbalpha_l"></a>_ismbbalpha, _ismbbalpha_l
 
@@ -70,7 +71,7 @@ Kullanılacak yerel ayar.
 
 `isalpha(c) || _ismbbkalnum(c)`
 
-*c*için sıfır veya değilse 0 olur. **_ismbbalpha** , yerel ayara bağımlı karakter ayarları için geçerli yerel ayarı kullanır. **_ismbbalpha_l** , geçirilen yerel ayarı kullanması dışında aynıdır.
+*c* için sıfır veya değilse 0 olur. **_ismbbalpha** , yerel ayara bağımlı karakter ayarları için geçerli yerel ayarı kullanır. **_ismbbalpha_l** , geçirilen yerel ayarı kullanması dışında aynıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -80,8 +81,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbalpha**|\<Mbctype. h>|
-|**_ismbbalpha_l**|\<Mbctype. h>|
+|**_ismbbalpha**|\<mbctype.h>|
+|**_ismbbalpha_l**|\<mbctype.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -91,5 +92,5 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

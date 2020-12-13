@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2757'
 title: Derleyici hatası C2757
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2757
 ms.assetid: 421f102f-8a32-4d47-a109-811ddf2c909d
-ms.openlocfilehash: a9f4661495e0fa5219a517b6f6ca410323a77269
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: e0be0f2a4c8dc5a5646400cbd0fa99e343ea82d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759535"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336181"
 ---
 # <a name="compiler-error-c2757"></a>Derleyici hatası C2757
 

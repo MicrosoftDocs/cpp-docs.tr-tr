@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __getcallerseflags'
 title: __getcallerseflags
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - _getcallerseflags intrinsic
 ms.assetid: 2386596f-33aa-4cc7-b026-5a834637270a
-ms.openlocfilehash: d6279db10ec38da7482b26e19e31f2d34dd48a07
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: bc73ca965f61ee4b5291c48f9680d4aa2f1774a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222173"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337001"
 ---
 # <a name="__getcallerseflags"></a>__getcallerseflags
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Çağıranın bağlamından EFLAGS değerini döndürür.
 
@@ -26,7 +27,7 @@ ms.locfileid: "70222173"
 unsigned int __getcallerseflags(void);
 ```
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Çağıranın bağlamından EFLAGS değeri.
 
@@ -36,7 +37,7 @@ unsigned int __getcallerseflags(void);
 |---------------|------------------|
 |`__getcallerseflags`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

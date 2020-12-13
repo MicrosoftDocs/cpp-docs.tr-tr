@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l'
 title: _strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - tcsnicoll function
 - _strnicoll function
 ms.assetid: abf0c569-725b-428d-9ff2-924f430104b4
-ms.openlocfilehash: 7694edda5ef2b214a1ca391ab1b922b8bfbf35e0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7fbbf44747bdcd0b95ccb603d735fc2ac0ecf6b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336467"
 ---
 # <a name="_strnicoll-_wcsnicoll-_mbsnicoll-_strnicoll_l-_wcsnicoll_l-_mbsnicoll_l"></a>_strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
 
@@ -135,7 +136,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, aşağıdaki gibi, *Dize1* ve *dize2*alt dizelerinin ilişkisini gösteren bir değer döndürür.
+Bu işlevlerin her biri, aşağıdaki gibi, *Dize1* ve *dize2* alt dizelerinin ilişkisini gösteren bir değer döndürür.
 
 |Döndürülen değer|Dize1 ile dize2 arasındaki ilişki|
 |------------------|----------------------------------------|
@@ -143,13 +144,13 @@ Bu işlevlerin her biri, aşağıdaki gibi, *Dize1* ve *dize2*alt dizelerinin il
 |0|*Dize1* ile *dize2* özdeş|
 |> 0|*dize2* 'den büyük *Dize1*|
 
-Bu işlevlerin her biri **_NLSCMPERROR**döndürür. **_NLSCMPERROR**kullanmak için, her iki dizeyi de ekleyin. H veya MBSTRING. Olsun. **_wcsnicoll** , *Dize1* veya *dize2* 'nin harmanlama sırasının etki alanı dışındaki geniş karakter kodlarını içermesi durumunda başarısız olabilir. Bir hata oluştuğunda, **_wcsnicoll** **errno** , **EINVAL**olarak ayarlayabilir. **_Wcsnicoll**çağrısıyla ilgili bir hata olup olmadığını denetlemek için **errno** ' ı 0 olarak ayarlayın ve ardından **_wcsnicoll**çağrıldıktan sonra **errno** ' u denetleyin.
+Bu işlevlerin her biri **_NLSCMPERROR** döndürür. **_NLSCMPERROR** kullanmak için, her iki dizeyi de ekleyin. H veya MBSTRING. H. **_wcsnicoll** , *Dize1* veya *dize2* 'nin harmanlama sırasının etki alanı dışındaki geniş karakter kodlarını içermesi durumunda başarısız olabilir. Bir hata oluştuğunda, **_wcsnicoll** **errno** , **EINVAL** olarak ayarlayabilir. **_Wcsnicoll** çağrısıyla ilgili bir hata olup olmadığını denetlemek için **errno** ' ı 0 olarak ayarlayın ve ardından **_wcsnicoll** çağrıldıktan sonra **errno** ' u denetleyin.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu işlevlerin her biri, kod sayfasına göre *Dize1* ve *dize2* içindeki ilk *sayı* karakterlerinin büyük küçük harf duyarsız bir karşılaştırmasını yapar. Bu işlevler yalnızca, kod sayfasındaki karakter kümesi sırası ve lexicographic karakter sırası arasında bir fark olduğunda kullanılmalıdır ve bu fark, dize karşılaştırması için ilginin. **_L** soneki olmayan bu işlevlerin sürümleri, geçerli yerel ayarı ve kod sayfasını kullanır. **_L** sonekine sahip sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Bu işlevlerin hepsi parametrelerini doğrular. *Dize1* veya *dize2* , null bir işaretçiyse veya sayı **INT_MAX**büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_NLSCMPERROR** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevlerin hepsi parametrelerini doğrular. *Dize1* veya *dize2* , null bir işaretçiyse veya sayı **INT_MAX** büyükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **_NLSCMPERROR** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -165,9 +166,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strnicoll**, **_strnicoll_l**|\<String. h>|
-|**_wcsnicoll**, **_wcsnicoll_l**|\<wchar. h> veya \<String. h>|
-|**_mbsnicoll**, **_mbsnicoll_l**|\<mbstring. h>|
+|**_strnicoll**, **_strnicoll_l**|\<string.h>|
+|**_wcsnicoll**, **_wcsnicoll_l**|\<wchar.h> veya \<string.h>|
+|**_mbsnicoll**, **_mbsnicoll_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -175,7 +176,7 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[strcoll İşlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
+[strcoll Işlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
 [localeconv](localeconv.md)<br/>
 [_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

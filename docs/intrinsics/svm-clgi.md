@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __svm_clgi'
 title: __svm_clgi
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - CLGI instruction
 - __svm_clgi intrinsic
 ms.assetid: 6640f5ab-9472-46f9-a042-e15c4f1ff858
-ms.openlocfilehash: 740c76e5dcc8f94b9257272624a6ad3c1f9726c1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: d0b372e28b0b119d3576dd87b34f1edf883f1337
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336868"
 ---
 # <a name="__svm_clgi"></a>__svm_clgi
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Genel kesme bayrağını temizler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void __svm_clgi( void );
@@ -28,9 +29,9 @@ void __svm_clgi( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev, `CLGI` makine yönergesine eşdeğerdir. `__svm_clgi` Genel kesme bayrağı, bir g/ç tamamlama, bir donanım sıcaklık uyarısı veya hata ayıklama özel durumu gibi olaylar nedeniyle mikro işlemcinin kesme, erteleme veya tanıtıcı kesintileri olduğunu belirler.
+`__svm_clgi`İşlev, `CLGI` makine yönergesine eşdeğerdir. Genel kesme bayrağı, bir g/ç tamamlama, bir donanım sıcaklık uyarısı veya hata ayıklama özel durumu gibi olaylar nedeniyle mikro işlemcinin kesme, erteleme veya tanıtıcı kesintileri olduğunu belirler.
 
-Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, "AMD64 mimari programcı 'nin El Ile birim 2 ' yi aratın: Sistem programlama, " [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesinde.
+Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) SITESINDE "AMD64 Architecture Programmer 'ın el ile Volume 2: sistem programlama" ifadesini aratın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -38,7 +39,7 @@ Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve
 |---------------|------------------|
 |`__svm_clgi`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 **SON Microsoft 'a özgü**
 

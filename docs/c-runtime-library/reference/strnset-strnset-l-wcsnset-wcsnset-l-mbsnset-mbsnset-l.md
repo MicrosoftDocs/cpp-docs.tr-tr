@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l'
 title: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 ms.date: 4/2/2020
 api_name:
@@ -73,12 +74,12 @@ helpviewer_keywords:
 - strings [C++], initializing
 - tcsnset_l function
 ms.assetid: 3f306489-5763-48e5-b939-aefee7c94ef5
-ms.openlocfilehash: eb23e63fa5eba7ab79fc45b8c8cb6ea350685a7e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dc0ca21ff23cbbf016b53ec55ed3e1960fbe2fb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231331"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336444"
 ---
 # <a name="_strnset-_strnset_l-_wcsnset-_wcsnset_l-_mbsnset-_mbsnset_l"></a>_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 
@@ -87,7 +88,7 @@ Bir dizenin karakterlerini verilen karaktere başlatır. Bu işlevlerin daha gü
 > [!IMPORTANT]
 > **_mbsnset** ve **_mbsnset_l** , Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 char *_strnset(
@@ -136,7 +137,7 @@ Karakter ayarı.
 *biriktirme*<br/>
 Ayarlanacak karakter sayısı.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -145,11 +146,11 @@ Değiştirilen dizeye bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strnset** işlev, en çok, *Str* 'nin ilk *sayı* karakterlerini *c* 'ye (dönüştürüldü **`char`** ) ayarlar. *Count* değeri *Str*uzunluğundan büyükse, *Str* uzunluğu *sayı*yerine kullanılır.
+**_Strnset** işlev, en çok, *Str* 'nin ilk *sayı* karakterlerini *c* 'ye (dönüştürüldü **`char`** ) ayarlar. *Count* değeri *Str* uzunluğundan büyükse, *Str* uzunluğu *sayı* yerine kullanılır.
 
-**_wcsnset** ve **_mbsnset** , **_strnset**geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsnset** dize bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsnset** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**_wcsnset** ve **_mbsnset** , **_strnset** geniş karakter ve çok baytlı karakter sürümleridir. **_Wcsnset** dize bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsnset** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-**_mbsnset** parametrelerini doğrular; *Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **_Mbsnset** **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. **_strnset** ve **_wcsnset** parametrelerini doğrulamaz.
+**_mbsnset** parametrelerini doğrular; *Str* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **_Mbsnset** **null** değerini döndürür ve **errno** 'ı **EINVAL** olarak ayarlar. **_strnset** ve **_wcsnset** parametrelerini doğrulamaz.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -201,8 +202,8 @@ After:  **** is a test
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>

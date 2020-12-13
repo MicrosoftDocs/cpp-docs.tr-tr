@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Rank sınıfı'
 title: rank Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - rank class
 - rank
 ms.assetid: bc9f1b8f-800f-46ca-b6f4-d8579ed5406a
-ms.openlocfilehash: cab8d4bb782c7e02df62874a40db14479558da99
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0ec9e66b31e4dd118de3e21761bb9b2175b0c5e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458175"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337928"
 ---
 # <a name="rank-class"></a>rank Sınıfı
 
@@ -32,7 +33,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür sorgusu, *dizi türünün boyut*sayısını veya *Ty* bir dizi türü değilse 0 değerini tutar.
+Tür *sorgusu, dizi türünün boyut* sayısını veya *Ty* bir dizi türü değilse 0 değerini tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -63,11 +64,11 @@ rank<int[5][10]> == 2
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[extent Sınıfı](../standard-library/extent-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[kapsam sınıfı](../standard-library/extent-class.md)

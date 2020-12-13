@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: emitidl'
 title: emitidl (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-ms.openlocfilehash: 32362f287320e69d1680cbe07ca050143b507514
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 21c4f7fc067eb37b8816bdedd1f338908950566e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846335"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337793"
 ---
 # <a name="emitidl"></a>emitidl
 
 Sonraki tüm IDL özniteliklerinin işlenip işlenmeyeceğini ve oluşturulan. IDL dosyasına yerleştirilip yerleştirilmeyeceğini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ emitidl(state, defaultimports=boolean) ];
@@ -28,7 +29,7 @@ Sonraki tüm IDL özniteliklerinin işlenip işlenmeyeceğini ve oluşturulan. I
 *durumunda*<br/>
 Şu olası değerlerden biri: **`true`** , **`false`** ,, `forced` `restricted` , `push` veya `pop` .
 
-- **`true`** Bir kaynak kod dosyasında karşılaşılan IDL kategorisi öznitelikleri oluşturulan. IDL dosyasına yerleştirilir. Bu, **emitidl**için varsayılan ayardır.
+- **`true`** Bir kaynak kod dosyasında karşılaşılan IDL kategorisi öznitelikleri oluşturulan. IDL dosyasına yerleştirilir. Bu, **emitidl** için varsayılan ayardır.
 
 - **`false`** Bir kaynak kod dosyasında karşılaşılan IDL kategorisi öznitelikleri oluşturulan. IDL dosyasına yerleştirilmez.
 
@@ -57,7 +58,7 @@ Derleyici yeni bir dosya ile karşılaştığında, **emitidl** örtülü olarak
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

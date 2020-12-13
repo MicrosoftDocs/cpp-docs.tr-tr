@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __emul __emulu'
 title: __emul, __emulu
 ms.date: 09/02/2019
 f1_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - __emul intrinsic
 - __emulu intrinsic
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
-ms.openlocfilehash: 16b2b38f6f44b99c9f5b9370ba586342a860684e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cdcbd14e4e72bcaf7d2c7fd5f098a291e32227cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216748"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337058"
 ---
 # <a name="__emul-__emulu"></a>__emul, __emulu
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 32 bit tamsayının tutabileceğinden taşan çoğullications gerçekleştirir.
 
@@ -44,7 +45,7 @@ unsigned __int64 __emulu(
 *kenarı*\
 'ndaki Çarpma 'nın ikinci tamsayı işleneni.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Çarpma sonucu.
 
@@ -55,13 +56,13 @@ unsigned __int64 __emulu(
 |`__emul`|x86, x64|
 |`__emulu`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__emul`2 32 bitlik imzalı değerler alır ve çarpma 'nın sonucunu 64 bit işaretli tamsayı değeri olarak döndürür.
+`__emul` 2 32 bitlik imzalı değerler alır ve çarpma 'nın sonucunu 64 bit işaretli tamsayı değeri olarak döndürür.
 
-`__emulu`2 32 bitlik işaretsiz tamsayı değerleri alır ve çarpma 'nın sonucunu 64 bit işaretsiz bir tamsayı değeri olarak döndürür.
+`__emulu` 2 32 bitlik işaretsiz tamsayı değerleri alır ve çarpma 'nın sonucunu 64 bit işaretsiz bir tamsayı değeri olarak döndürür.
 
 ## <a name="example"></a>Örnek
 
@@ -95,7 +96,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 -268435456 * 2 = -536870912

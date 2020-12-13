@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CColumnAccessor sınıfı'
 title: CColumnAccessor Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CColumnAccessor class
 ms.assetid: 6ce1e67f-6a20-490d-9326-c168b43eee7e
-ms.openlocfilehash: 2a3b1dac51a8300a915a7177c36f15512b583fa0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7551f39d34bb4f13b4ffae358db05aede2adb9e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80212116"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335529"
 ---
 # <a name="ccolumnaccessor-class"></a>CColumnAccessor Sınıfı
 
 Eklenen tüketici kodu oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CColumnAccessor : public CAccessorBase
@@ -29,23 +30,23 @@ class CColumnAccessor : public CAccessorBase
 
 Eklenen kodda, her sütun ayrı bir erişimci olarak bağlanır. Bu sınıfın eklenen kodda kullanıldığını bilmeniz gerekir (örneğin, hata ayıklama sırasında onunla karşılaşabilirsiniz), ancak genellikle bunu veya yöntemlerini doğrudan kullanmak zorunda kalmaz.
 
-`CColumnAccessor`, her biri işlevleri diğer erişimci sınıfı yöntemlerine karşılık gelen aşağıdaki saplama yöntemlerini uygular:
+`CColumnAccessor` her biri işlevleri diğer erişimci sınıfı yöntemlerine karşılık gelen aşağıdaki saplama yöntemlerini uygular:
 
-- oluşturucuyu `CColumnAccessor`; `CColumnAccessor` nesnesini başlatır ve başlatır.
+- `CColumnAccessor` Oluşturucu; nesneyi örnekleyen ve başlatır `CColumnAccessor` .
 
-- `CreateAccessor`, sütun bağlama yapıları için bellek ayırır ve sütun veri üyelerini başlatır.
+- `CreateAccessor` Sütun bağlama yapıları için bellek ayırır ve sütun veri üyelerini başlatır.
 
-- `BindColumns`, sütunları erişimcilere bağlar.
+- `BindColumns` Sütunları erişimcilere bağlar.
 
-- `SetParameterBuffer` parametreler için arabellekleri ayırır.
+- `SetParameterBuffer` Parametreler için arabellekleri ayırır.
 
-- `AddParameter` parametre girişi yapılarına bir parametre girişi ekler.
+- `AddParameter` Parametre girişi yapılarına bir parametre girişi ekler.
 
-- `HasOutputColumns` erişimcinin çıkış sütunları olup olmadığını belirler
+- `HasOutputColumns` Erişimcinin çıkış sütunları içerip içermediğini belirler
 
-- `HasParameters` erişimcinin parametrelere sahip olup olmadığını belirler.
+- `HasParameters` Erişimcinin parametrelere sahip olup olmadığını belirler.
 
-- `BindParameters` oluşturulan parametreleri sütunlara bağlar.
+- `BindParameters` Oluşturulan parametreleri sütunlara bağlar.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -54,4 +55,4 @@ Eklenen kodda, her sütun ayrı bir erişimci olarak bağlanır. Bu sınıfın e
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE DB tüketici şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+[OLE DB tüketici şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

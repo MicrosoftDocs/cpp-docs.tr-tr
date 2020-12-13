@@ -1,22 +1,23 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: variant_alternative struct'
 title: variant_alternative yapısı
 ms.date: 04/04/2019
 f1_keywords:
 - variant/std::variant_alternative
 helpviewer_keywords:
 - variant_alternative struct
-ms.openlocfilehash: f637a2e588297cb44b582a9c5fa108034d99d8f3
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: bbad42afa517c7f6ad46561a85c1b73e71041a57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68267873"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337854"
 ---
-# <a name="variantalternative-struct"></a>variant_alternative yapısı
+# <a name="variant_alternative-struct"></a>variant_alternative yapısı
 
-Değişken nesneleri yardımcı olur.
+Değişken nesnelerine yardımcı olur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <size_t I, class T>

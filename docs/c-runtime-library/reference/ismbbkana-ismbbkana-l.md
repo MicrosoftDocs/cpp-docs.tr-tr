@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ismbbkana _ismbbkana_l'
 title: _ismbbkana, _ismbbkana_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbkana function
 - ismbbkana_l function
 ms.assetid: 64d4eb4a-205a-40ef-be35-ff9d77fabbaf
-ms.openlocfilehash: dd788d18692e11886caf4ee12703bb5878de1163
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3b4c005068a6a646c256d0f091e4b86e15df2acb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918942"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335653"
 ---
 # <a name="_ismbbkana-_ismbbkana_l"></a>_ismbbkana, _ismbbkana_l
 
@@ -77,12 +78,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ismbbkana**|\<Mbctype. h>|
-|**_ismbbkana_l**|\<Mbctype. h>|
+|**_ismbbkana**|\<mbctype.h>|
+|**_ismbbkana_l**|\<mbctype.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
 [_ismbb yordamlar](../../c-runtime-library/ismbb-routines.md)<br/>

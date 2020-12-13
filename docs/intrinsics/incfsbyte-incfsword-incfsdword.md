@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __incfsbyte, __incfsword, __incfsdword'
 title: __incfsbyte, __incfsword, __incfsdword
 ms.date: 09/02/2019
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - __incfsdword intrinsic
 - __incfsbyte intrinsic
 ms.assetid: 820457fb-e35e-42d3-bcb6-725da3281c64
-ms.openlocfilehash: 43824829043304f5762d049b5c75a72b57e2102c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 29d86de51ad282789cb19b72ca953f65af2dc19d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336965"
 ---
 # <a name="__incfsbyte-__incfsword-__incfsdword"></a>__incfsbyte, __incfsword, __incfsdword
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-`FS` Segmentin başına göreli bir uzaklıktan belirtilen bir bellek konumundaki değere bir değer ekleyin.
+Segmentin başına göreli bir uzaklıktan belirtilen bir bellek konumundaki değere bir değer ekleyin `FS` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -43,7 +44,7 @@ void __incfsdword(
 ### <a name="parameters"></a>Parametreler
 
 *Konumu*\
-'ndaki Öğesinin başından itibaren olan `FS`fark.
+'ndaki Öğesinin başından itibaren olan fark `FS` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -53,7 +54,7 @@ void __incfsdword(
 |`__incfsword`|x86|
 |`__incfsdword`|x86|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -63,7 +64,7 @@ Bu iç bilgiler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnız
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)\
-[\__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
-[\__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
+[\__addfsbyte, \_ _addfsword, \_ _addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)\
+[\__readfsbyte, \_ _readfsdword, \_ _readfsqword, \_ _readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
+[\__writefsbyte, \_ _writefsdword, \_ _writefsqword, \_ _writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

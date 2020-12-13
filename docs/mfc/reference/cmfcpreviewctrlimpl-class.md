@@ -1,5 +1,6 @@
 ---
-title: CMFCPreviewCtrlImpl Sınıfı
+description: 'Daha fazla bilgi edinin: Cmfcönizleme Ctrlimpl sınıfı'
+title: Cmfcönizleme Ctrlımpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCPreviewCtrlImpl
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - CMFCPreviewCtrlImpl [MFC], m_font
 - CMFCPreviewCtrlImpl [MFC], m_pDocument
 ms.assetid: 06257fa0-54c9-478d-9d68-c9698c3f93ed
-ms.openlocfilehash: 0c0a594a84b45ce7bf6f2c2fa5d1a547fa10eaa6
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 09e4b8e023a55110986aafccfd2646d8e7775c31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751840"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334725"
 ---
-# <a name="cmfcpreviewctrlimpl-class"></a>CMFCPreviewCtrlImpl Sınıfı
+# <a name="cmfcpreviewctrlimpl-class"></a>Cmfcönizleme Ctrlımpl sınıfı
 
-Bu sınıf, Zengin Önizleme için Shell tarafından sağlanan ana bilgisayar penceresine yerleştirilen bir pencere uygular.
+Bu sınıf, kabuk tarafından zengin önizleme için sunulan bir konak penceresine yerleştirilmiş bir pencere uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCPreviewCtrlImpl : public CWnd;
@@ -57,65 +58,65 @@ class CMFCPreviewCtrlImpl : public CWnd;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCPreviewCtrlImpl::~CMFCPreviewCtrlImpl](#dtor)|Bir önizleme denetim nesnesini yok eder.|
-|[CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl](#cmfcpreviewctrlimpl)|Bir önizleme denetim nesnesi oluşturuyor.|
+|[Cmfcönizleme Ctrlımpl:: ~ Cmfcönizleme Ctrlımpl](#dtor)|Bir önizleme denetim nesnesinin yapılarını kaldırır.|
+|[Cmfcönizleme Ctrlımpl:: Cmfcönizleme Ctrlımpl](#cmfcpreviewctrlimpl)|Bir önizleme denetim nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCPreviewCtrlImpl::Oluştur](#create)|Fazla Yüklendi. Windows penceresini oluşturmak için Zengin Önizleme işleyicisi tarafından çağrılır.|
-|[CMFCPreviewCtrlImpl::Destroy](#destroy)|Bu denetimi yok etmesi gerektiğinde Zengin Önizleme işleyicisi tarafından çağrılır.|
-|[CMFCPreviewCtrlImpl::Odak](#focus)|Bu denetime giriş odağı ayarlar.|
-|[CMFCPreviewCtrlImpl::GetDocument](#getdocument)|Bu önizleme denetimine bağlı bir belge döndürür.|
-|[CMFCPreviewCtrlImpl::Yeniden Çiz](#redraw)|Bu denetimi yeniden çizmeyi söyler.|
-|[CMFCPreviewCtrlImpl::SetDocument](#setdocument)|Belge uygulaması ve önizleme denetimi arasında bir ilişki oluşturmak için önizleme işleyicisi tarafından çağrılır.|
-|[CMFCPreviewCtrlImpl::SetHost](#sethost)|Bu denetim için yeni bir ebeveyn ayarlar.|
-|[CMFCPreviewCtrlImpl::SetPreviewVisuals](#setpreviewvisuals)|Zengin önizleme içeriğinin görsellerini ayarlaması gerektiğinde Zengin Önizleme işleyicisi tarafından çağrılır.|
-|[CMFCPreviewCtrlImpl::SetRect](#setrect)|Bu denetim için yeni bir sınırlayıcı dikdörtgen ayarlar.|
+|[Cmfcönizleme Ctrlımpl:: Create](#create)|Fazla Yüklendi. Windows penceresini oluşturmak için zengin bir önizleme işleyicisi tarafından çağırılır.|
+|[Cmfcönizleme Ctrlımpl::D estroy](#destroy)|Bu denetimi yok etmeniz gerektiğinde zengin bir önizleme işleyicisi tarafından çağırılır.|
+|[Cmfcönizleme Ctrlımpl:: Focus](#focus)|Giriş odağını bu denetime ayarlar.|
+|[Cmfcönizleme Ctrlımpl:: GetDocument](#getdocument)|Bu önizleme denetimine bağlı bir belge döndürür.|
+|[Cmfcönizleme Ctrlımpl:: yeniden Çiz](#redraw)|Bu denetime yeniden çizim söyler.|
+|[Cmfcönizleme Ctrlımpl:: SetDocument](#setdocument)|Belge uygulamasıyla önizleme denetimi arasında bir ilişki oluşturmak için Önizleme işleyicisi tarafından çağırılır.|
+|[Cmfcönizleme Ctrlımpl:: SetHost](#sethost)|Bu denetim için yeni bir üst ayarlar.|
+|[Cmfcönizleme Ctrlımpl:: Setönizleme görselleri](#setpreviewvisuals)|Zengin önizleme içeriği görselleri ayarlaması gerektiğinde zengin bir önizleme işleyicisi tarafından çağırılır.|
+|[Cmfcönizleme Ctrlımpl:: SetRect](#setrect)|Bu denetim için yeni bir sınırlayıcı dikdörtgen ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCPreviewCtrlImpl::DoPaint](#dopaint)|Önizlemeyi işlemek için çerçeve tarafından çağrılır.|
+|[Cmfcönizleme Ctrlımpl::D oPaint](#dopaint)|Önizlemeyi işlemek için Framework tarafından çağırılır.|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCPreviewCtrlImpl::m_clrBackColor](#m_clrbackcolor)|Önizleme penceresinin arka plan rengi.|
-|[CMFCPreviewCtrlImpl::m_clrTextColor](#m_clrtextcolor)|Önizleme penceresinin metin rengi.|
-|[CMFCPreviewCtrlImpl::m_font](#m_font)|Önizleme penceresinde metni görüntülemek için kullanılan yazı tipi.|
-|[CMFCPreviewCtrlImpl::m_pDocument](#m_pdocument)|Denetiminde içeriği önizlemesi yapılan bir belgenin işaretçisi.|
+|[Cmfcönizleme Ctrlımpl:: m_clrBackColor](#m_clrbackcolor)|Önizleme penceresinin arka plan rengi.|
+|[Cmfcönizleme Ctrlımpl:: m_clrTextColor](#m_clrtextcolor)|Önizleme penceresinin metin rengi.|
+|[Cmfcönizleme Ctrlımpl:: m_font](#m_font)|Önizleme penceresinde metin görüntülemek için kullanılan yazı tipi.|
+|[Cmfcönizleme Ctrlımpl:: m_pDocument](#m_pdocument)|İçeriği denetimde önizlenen bir belgeye yönelik işaretçi.|
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 [CMFCPreviewCtrlImpl](../../mfc/reference/cmfcpreviewctrlimpl-class.md)
 
-## <a name="cmfcpreviewctrlimplcmfcpreviewctrlimpl"></a><a name="cmfcpreviewctrlimpl"></a>CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl
+## <a name="cmfcpreviewctrlimplcmfcpreviewctrlimpl"></a><a name="cmfcpreviewctrlimpl"></a> Cmfcönizleme Ctrlımpl:: Cmfcönizleme Ctrlımpl
 
-Bir önizleme denetim nesnesi oluşturuyor.
+Bir önizleme denetim nesnesi oluşturur.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
-CMFCPreviewCtrlImpl();
+Cmfcönizleme Ctrlımpl ();
 
-## <a name="cmfcpreviewctrlimplcreate"></a><a name="create"></a>CMFCPreviewCtrlImpl::Oluştur
+## <a name="cmfcpreviewctrlimplcreate"></a><a name="create"></a> Cmfcönizleme Ctrlımpl:: Create
 
-Fazla Yüklendi. Windows penceresini oluşturmak için Zengin Önizleme işleyicisi tarafından çağrılır.
+Fazla Yüklendi. Windows penceresini oluşturmak için zengin bir önizleme işleyicisi tarafından çağırılır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -134,31 +135,31 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-Zengin Önizleme için Shell tarafından sağlanan ana bilgisayar penceresine bir tutamaç.
+Zengin Önizleme için kabuğun sağladığı konak penceresine yönelik bir tanıtıcı.
 
-*Çhc*<br/>
+*PRC*<br/>
 Pencerenin başlangıç boyutunu ve konumunu belirtir.
 
-*Pcontext*<br/>
-Oluşturma bağlamına işaretçi.
+*pContext*<br/>
+Oluşturma bağlamına yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yaratılış başarılı olduysa DOĞRU; aksi takdirde YANLIŞ.
+Oluşturma başarılı olursa doğru; Aksi halde yanlış.
 
-## <a name="cmfcpreviewctrlimpldestroy"></a><a name="destroy"></a>CMFCPreviewCtrlImpl::Destroy
+## <a name="cmfcpreviewctrlimpldestroy"></a><a name="destroy"></a> Cmfcönizleme Ctrlımpl::D estroy
 
-Bu denetimi yok etmesi gerektiğinde Zengin Önizleme işleyicisi tarafından çağrılır.
+Bu denetimi yok etmeniz gerektiğinde zengin bir önizleme işleyicisi tarafından çağırılır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 virtual void Destroy();
 ```
 
-## <a name="cmfcpreviewctrlimpldopaint"></a><a name="dopaint"></a>CMFCPreviewCtrlImpl::DoPaint
+## <a name="cmfcpreviewctrlimpldopaint"></a><a name="dopaint"></a> Cmfcönizleme Ctrlımpl::D oPaint
 
-Önizlemeyi işlemek için çerçeve tarafından çağrılır.
+Önizlemeyi işlemek için Framework tarafından çağırılır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -170,24 +171,24 @@ virtual void DoPaint(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pdc*<br/>
-Boyama için aygıt bağlamına işaretçi.
+*Kökündeki*<br/>
+Boyama için bir cihaz bağlamı işaretçisi.
 
-## <a name="cmfcpreviewctrlimplfocus"></a><a name="focus"></a>CMFCPreviewCtrlImpl::Odak
+## <a name="cmfcpreviewctrlimplfocus"></a><a name="focus"></a> Cmfcönizleme Ctrlımpl:: Focus
 
-Bu denetime giriş odağı ayarlar.
+Giriş odağını bu denetime ayarlar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 virtual void Focus();
 ```
 
-## <a name="cmfcpreviewctrlimplgetdocument"></a><a name="getdocument"></a>CMFCPreviewCtrlImpl::GetDocument
+## <a name="cmfcpreviewctrlimplgetdocument"></a><a name="getdocument"></a> Cmfcönizleme Ctrlımpl:: GetDocument
 
 Bu önizleme denetimine bağlı bir belge döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 ATL::IDocument* GetDocument();
@@ -195,59 +196,59 @@ ATL::IDocument* GetDocument();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İçeriği denetimde önizlemesi olan bir belgenin işaretçisi.
+İçeriği denetimde önizlenen bir belge işaretçisi.
 
-## <a name="cmfcpreviewctrlimplm_clrbackcolor"></a><a name="m_clrbackcolor"></a>CMFCPreviewCtrlImpl::m_clrBackColor
+## <a name="cmfcpreviewctrlimplm_clrbackcolor"></a><a name="m_clrbackcolor"></a> Cmfcönizleme Ctrlımpl:: m_clrBackColor
 
 Önizleme penceresinin arka plan rengi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 COLORREF m_clrBackColor;
 ```
 
-## <a name="cmfcpreviewctrlimplm_clrtextcolor"></a><a name="m_clrtextcolor"></a>CMFCPreviewCtrlImpl::m_clrTextColor
+## <a name="cmfcpreviewctrlimplm_clrtextcolor"></a><a name="m_clrtextcolor"></a> Cmfcönizleme Ctrlımpl:: m_clrTextColor
 
 Önizleme penceresinin metin rengi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 COLORREF m_clrTextColor;
 ```
 
-## <a name="cmfcpreviewctrlimplm_font--font-used-to-display-text-in-the-preview-window"></a><a name="m_font"></a>CMFCPreviewCtrlImpl::m_font Font önizleme penceresinde metin görüntülemek için kullanılır.
+## <a name="cmfcpreviewctrlimplm_font--font-used-to-display-text-in-the-preview-window"></a><a name="m_font"></a> Cmfcpreview Ctrlımpl:: m_font önizleme penceresinde metin görüntülemek için kullanılan yazı tipi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 CFont m_font;
 ```
 
-## <a name="cmfcpreviewctrlimplm_pdocument"></a><a name="m_pdocument"></a>CMFCPreviewCtrlImpl::m_pDocument
+## <a name="cmfcpreviewctrlimplm_pdocument"></a><a name="m_pdocument"></a> Cmfcönizleme Ctrlımpl:: m_pDocument
 
-Denetiminde içeriği önizlemesi yapılan bir belgenin işaretçisi.
+İçeriği denetimde önizlenen bir belgeye yönelik işaretçi.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 ATL::IDocument* m_pDocument;
 ```
 
-## <a name="cmfcpreviewctrlimplredraw"></a><a name="redraw"></a>CMFCPreviewCtrlImpl::Yeniden Çiz
+## <a name="cmfcpreviewctrlimplredraw"></a><a name="redraw"></a> Cmfcönizleme Ctrlımpl:: yeniden Çiz
 
-Bu denetimi yeniden çizmeyi söyler.
+Bu denetime yeniden çizim söyler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 virtual void Redraw();
 ```
 
-## <a name="cmfcpreviewctrlimplsetdocument"></a><a name="setdocument"></a>CMFCPreviewCtrlImpl::SetDocument
+## <a name="cmfcpreviewctrlimplsetdocument"></a><a name="setdocument"></a> Cmfcönizleme Ctrlımpl:: SetDocument
 
-Belge uygulaması ve önizleme denetimi arasında bir ilişki oluşturmak için önizleme işleyicisi tarafından çağrılır.
+Belge uygulamasıyla önizleme denetimi arasında bir ilişki oluşturmak için Önizleme işleyicisi tarafından çağırılır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -259,12 +260,12 @@ void SetDocument(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBelge*<br/>
-Belge uygulaması için bir işaretçi.
+*pDocument*<br/>
+Belge uygulamasına yönelik bir işaretçi.
 
-## <a name="cmfcpreviewctrlimplsethost"></a><a name="sethost"></a>CMFCPreviewCtrlImpl::SetHost
+## <a name="cmfcpreviewctrlimplsethost"></a><a name="sethost"></a> Cmfcönizleme Ctrlımpl:: SetHost
 
-Bu denetim için yeni bir ebeveyn ayarlar.
+Bu denetim için yeni bir üst ayarlar.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -277,11 +278,11 @@ virtual void SetHost(
 ### <a name="parameters"></a>Parametreler
 
 *hWndParent*<br/>
-Yeni üst pencerenin tutamacı.
+Yeni ana pencereye yönelik bir tanıtıcı.
 
-## <a name="cmfcpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a>CMFCPreviewCtrlImpl::SetPreviewVisuals
+## <a name="cmfcpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a> Cmfcönizleme Ctrlımpl:: Setönizleme görselleri
 
-Zengin önizleme içeriğinin görsellerini ayarlaması gerektiğinde Zengin Önizleme işleyicisi tarafından çağrılır.
+Zengin önizleme içeriği görselleri ayarlaması gerektiğinde zengin bir önizleme işleyicisi tarafından çağırılır.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -295,16 +296,16 @@ virtual void SetPreviewVisuals(
 
 ### <a name="parameters"></a>Parametreler
 
-*clrGeri*<br/>
+*clrBack*<br/>
 Önizleme penceresinin arka plan rengi.
 
-*clrMetin*<br/>
+*clrText*<br/>
 Önizleme penceresinin metin rengi.
 
-*plf*<br/>
-Önizleme penceresinde metni görüntülemek için kullanılan yazı tipi.
+*PLF*<br/>
+Önizleme penceresinde metin görüntülemek için kullanılan yazı tipi.
 
-## <a name="cmfcpreviewctrlimplsetrect"></a><a name="setrect"></a>CMFCPreviewCtrlImpl::SetRect
+## <a name="cmfcpreviewctrlimplsetrect"></a><a name="setrect"></a> Cmfcönizleme Ctrlımpl:: SetRect
 
 Bu denetim için yeni bir sınırlayıcı dikdörtgen ayarlar.
 
@@ -319,21 +320,21 @@ virtual void SetRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Çhc*<br/>
+*PRC*<br/>
 Önizleme denetiminin yeni boyutunu ve konumunu belirtir.
 
 *bRedraw*<br/>
-Denetimin yeniden çizilip çizilmeyeceğini belirtir.
+Denetimin yeniden çizilip çizmeyeceğini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genellikle ana bilgisayar denetimi yeniden boyutlandırıldığında yeni bir sınırlayıcı dikdörtgen ayarlanır.
+Genellikle, ana bilgisayar denetimi yeniden boyutlandırılırken yeni bir sınırlayıcı dikdörtgen ayarlanır.
 
-## <a name="cmfcpreviewctrlimplcmfcpreviewctrlimpl"></a><a name="dtor"></a>CMFCPreviewCtrlImpl::~CMFCPreviewCtrlImpl
+## <a name="cmfcpreviewctrlimplcmfcpreviewctrlimpl"></a><a name="dtor"></a> Cmfcönizleme Ctrlımpl:: ~ Cmfcönizleme Ctrlımpl
 
-Bir önizleme denetim nesnesini yok eder.
+Bir önizleme denetim nesnesinin yapılarını kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 virtual ~CMFCPreviewCtrlImpl();

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; Random&gt;'
 title: '&lt;Fi&gt;'
 ms.date: 08/24/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-ms.openlocfilehash: e66ffbfba7a7cc4a7dfebbc2dcc074842de3c1ac
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4080e305620dbe4b8fa1674762c27ece4eccd0a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831444"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337967"
 ---
 # <a name="ltrandomgt"></a>&lt;Fi&gt;
 
@@ -28,7 +29,7 @@ Rastgele sayı oluşturma tesislerini tanımlar, tek düzen dağıtılmış rast
 
 ## <a name="summary"></a>Özet
 
-*Rastgele sayı Oluşturucu* , sözde rastgele değerler dizisi üreten bir nesnedir. Belirli bir aralıkta eşit olarak dağıtılan değerleri oluşturan bir Oluşturucu, *tek bir rastgele sayı Oluşturucu* (URNG). Bir URNG işlevi görecek şekilde tasarlanan bir sınıf şablonu, bu sınıfta daha sonra açıklanan belirli ortak nitelikleri varsa, bir *motor* olarak adlandırılır. Bir URNG, dağıtım tarafından tanımlanan bir şekilde dağıtılan değerler oluşturmak için, bir dağıtım ile birlikte, dağıtım tarafından bir bağımsız değişken olarak *distribution* `operator()` dağıtılır.
+*Rastgele sayı Oluşturucu* , sözde rastgele değerler dizisi üreten bir nesnedir. Belirli bir aralıkta eşit olarak dağıtılan değerleri oluşturan bir Oluşturucu, *tek bir rastgele sayı Oluşturucu* (URNG). Bir URNG işlevi görecek şekilde tasarlanan bir sınıf şablonu, bu sınıfta daha sonra açıklanan belirli ortak nitelikleri varsa, bir *motor* olarak adlandırılır. Bir URNG, dağıtım tarafından tanımlanan bir şekilde dağıtılan değerler oluşturmak için, bir dağıtım ile birlikte, dağıtım tarafından bir bağımsız değişken olarak  `operator()` dağıtılır.
 
 Bu bağlantılar, bu makalenin başlıca bölümlerine atlayın:
 
@@ -360,7 +361,7 @@ Aşağıdaki bölümlerde, üst bilgide sunulan dağıtımlar listelenmektedir \
 |[fisher_f_distribution sınıfı](../standard-library/fisher-f-distribution-class.md)|Gerçek (kayan nokta) değerlerinin bir F dağıtımını (Snedecor 'in F dağıtımı veya Fisher-Snedecor dağıtımı olarak da bilinir) oluşturur.|
 |[lognormal_distribution sınıfı](../standard-library/lognormal-distribution-class.md)|Gerçek (kayan nokta) değerleri için bir günlük-normal dağıtımı üretir.|
 |[normal_distribution sınıfı](../standard-library/normal-distribution-class.md)|Gerçek (kayan nokta) değerlerinin normal (Gauss) dağılımını üretir.|
-|[student_t_distribution sınıfı](../standard-library/student-t-distribution-class.md)|Öğrenci 'nin gerçek (kayan nokta) değerlerinin *t*dağılımı üretir.|
+|[student_t_distribution sınıfı](../standard-library/student-t-distribution-class.md)|Öğrenci 'nin gerçek (kayan nokta) değerlerinin *t* dağılımı üretir.|
 
 [[Rastgele sayı dağıtımları](#distributions)]
 
@@ -461,7 +462,7 @@ Her altyapı, için sonraki çağrılar tarafından oluşturulacak değerlerin s
 
 - **`typedef`**, `numeric-type` `result_type` dağıtımın tarafından döndürülen türdür `operator()` . , `numeric-type` Örnek oluşturma sırasında şablon parametresi olarak geçirilir.
 
-- `template <class URNG> result_type operator()(URNG& gen)``gen`bir tek düzen dağıtılmış rastgele değerler kaynağı ve *dağıtımın saklı parametreleri*olarak kullanarak, dağıtımın tanımına göre dağıtılan değerleri döndürür.
+- `template <class URNG> result_type operator()(URNG& gen)``gen`bir tek düzen dağıtılmış rastgele değerler kaynağı ve *dağıtımın saklı parametreleri* olarak kullanarak, dağıtımın tanımına göre dağıtılan değerleri döndürür.
 
 - `template <class URNG> result_type operator()(URNG& gen, param_type p)``gen`yapısal olarak dağıtılmış rastgele değerlerin ve parametre yapısının kaynağı olarak kullanarak, dağıtımın tanımına uygun olarak dağıtılmış değerleri döndürür `p` .
 
@@ -497,8 +498,8 @@ Visual Studio 'da `mt19937` ve `random_device` Bu karşılaştırma tablosunda g
 
 |URNG|Hızlı|Şifreleme-güvenli|Seedable|Belirlenimci|
 |----------|-----------|---------------------|---------------|--------------------|
-|`mt19937`|Yes|Hayır|Yes|Yes<sup>*</sup>|
-|`random_device`|Hayır|Yes|Hayır|Hayır|
+|`mt19937`|Evet|Hayır|Evet|Yes<sup>*</sup>|
+|`random_device`|Hayır|Evet|Hayır|Hayır|
 
 <sup>* Bilinen bir çekirdek ile sağlandığında.</sup>
 

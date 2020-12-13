@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: mbrlen'
 title: mbrlen
 ms.date: 4/2/2020
 api_name:
@@ -26,18 +27,18 @@ f1_keywords:
 helpviewer_keywords:
 - mbrlen function
 ms.assetid: dde8dee9-e091-4c4c-81b3-639808885ae1
-ms.openlocfilehash: 2e0e0ec9d92744fc904bae5ac7f91db8049de4cd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1a485090c056cb1e5f075bfd226ac7d4717ec0ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842123"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336494"
 ---
 # <a name="mbrlen"></a>mbrlen
 
 Çok baytlı bir karakterin ortasında yeniden başlatma özelliği ile geçerli yerel ayarda çok baytlı bir karakteri tamamlamaya yönelik gereken bayt sayısını belirleme.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 size_t mbrlen(
@@ -52,11 +53,11 @@ size_t mbrlen(
 *üstbilgisine*<br/>
 Çok baytlı bir karakter dizesinde incelemek için sonraki bayta yönelik işaretçi.
 
-*count*<br/>
+*biriktirme*<br/>
 İncelenecek en fazla bayt sayısı.
 
 *mbstate*<br/>
-*Str*ilk baytının geçerli kaydırma durumuna yönelik işaretçi.
+*Str* ilk baytının geçerli kaydırma durumuna yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -75,7 +76,7 @@ Aşağıdaki değerlerden biri:
 
 **Mbrlen** işlevi, *mbstate* parametresinde tamamlanmamış bir çok baytlı karakterin vardiya durumunu kaydeder ve kullanır. Bu, daha çok baytlı bir karakterin ortasında yeniden başlatma yeteneğini, gerekirse en fazla *sayıda* baytı inceleyerek **mbrlen** özelliğini sağlar. *Mbstate* null işaretçisiyse **mbrlen** , SHIFT durumunu depolamak için bir iç, statik **mbstate_t** nesnesi kullanır. İç **mbstate_t** nesnesi iş parçacığı açısından güvenli olmadığından, her zaman kendi *mbstate* parametresini ayırmanız ve geçirmeniz önerilir.
 
-**Mbrlen** işlevi, yeniden başlangıçından [_mbclen, mblen _mblen_l](mbclen-mblen-mblen-l.md) farklıdır. Kaydırma durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* içinde depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama, **wcstomb**yerine **wcsrkaldırıldı s** öğesine yapılan sonraki bir çağrı kullanılırsa **wcslen** yerine **wcsrlen** kullanmalıdır.
+**Mbrlen** işlevi, yeniden başlangıçından [_mbclen, mblen _mblen_l](mbclen-mblen-mblen-l.md) farklıdır. Kaydırma durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* içinde depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama, **wcstomb** yerine **wcsrkaldırıldı s** öğesine yapılan sonraki bir çağrı kullanılırsa **wcslen** yerine **wcsrlen** kullanmalıdır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -158,4 +159,4 @@ Character count: 25
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>

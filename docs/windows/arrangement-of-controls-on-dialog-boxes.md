@@ -1,4 +1,5 @@
 ---
+description: ': Nasıl yapılır: düzen denetimleri hakkında daha fazla bilgi edinin (C++)'
 title: 'Nasıl yapılır: düzen denetimleri (C++) | Microsoft Docs'
 ms.date: 02/15/2019
 f1_keywords:
@@ -80,12 +81,12 @@ helpviewer_keywords:
 - CListBox class, scroll bar width
 - scroll bars [C++], width
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
-ms.openlocfilehash: ac21096f18b1331759f9bf7dfe613100298b7296
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 75fef5d47df163e1b21b9dd2861ec652179d9eb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509661"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337843"
 ---
 # <a name="how-to-layout-controls-c"></a>Nasıl yapılır: düzen denetimleri (C++)
 
@@ -133,7 +134,7 @@ Bir iletişim kutusu oluşturduğunuzda, kenar boşlukları olarak adlandırıla
 
 - Kenar boşluğunu geri getirmek için, işaretçiyi kenar boşluğunun sıfır konumunun üzerine getirin ve kenar boşluğunu konuma taşıyın.
 
-Kılavuzlar, düzenleyicide görüntülenen iletişim kutusunda ve **iletişim kutusu düzenleyicisinin**sol tarafında ve sol tarafındaki cetvellerdeki ilgili oklarda mavi noktalı çizgiler olarak görünür. Denetimlerin boyutlandırma tutamaçları denetimler taşındığında kılavuzlara yaslanırlar ve daha önce kılavuza daha önce bir denetim yoksa kılavuzlar denetimlere yaslanırlar. Bir kılavuz taşındığında, bu denetime eklenen denetimler de taşınır. Kılavuzlardan biri taşındığında birden fazla kılavuza yapışmış denetimler yeniden boyutlandırılır.
+Kılavuzlar, düzenleyicide görüntülenen iletişim kutusunda ve **iletişim kutusu düzenleyicisinin** sol tarafında ve sol tarafındaki cetvellerdeki ilgili oklarda mavi noktalı çizgiler olarak görünür. Denetimlerin boyutlandırma tutamaçları denetimler taşındığında kılavuzlara yaslanırlar ve daha önce kılavuza daha önce bir denetim yoksa kılavuzlar denetimlere yaslanırlar. Bir kılavuz taşındığında, bu denetime eklenen denetimler de taşınır. Kılavuzlardan biri taşındığında birden fazla kılavuza yapışmış denetimler yeniden boyutlandırılır.
 
 - Cetvel içinde bir kılavuz oluşturmak için bir kılavuz oluşturmak üzere bir kez seçin ya da kılavuz ayarlarını belirtebileceğiniz **Kılavuz ayarları** iletişim kutusunu başlatmak için çift tıklayın.
 
@@ -168,7 +169,7 @@ Kılavuzların yapışma efektini devre dışı bırakmak için fare ile birlikt
 - Kılavuzlarını kapatmak için menü **biçimlendirme**  >  **Kılavuzu ayarları**' na gidin. Ardından, **Düzen kılavuzlarındaki** **hiçbiri**' ni seçin.
 
    > [!TIP]
-   > Kısayol tuşlarını menü **biçimi**  >  **geçiş kılavuzlarındaki**de kullanabilirsiniz.
+   > Kısayol tuşlarını menü **biçimi**  >  **geçiş kılavuzlarındaki** de kullanabilirsiniz.
 
 ## <a name="select-controls"></a>Denetimleri Seç
 
@@ -190,9 +191,9 @@ Bir denetim seçildiğinde, düz (etkin) veya boş (etkin) boyutlandırma tutama
 
 Birden çok denetimi boyutlandırdığınızda veya hizaladığınızda, **Iletişim kutusu Düzenleyicisi** diğer denetimlerin nasıl boyutlandırıldığını veya hizalandığını anlamak için baskın denetimi kullanır. Varsayılan olarak, baskın denetim, seçilen ilk denetimdir.
 
-- Baskın denetimi belirtmek için **CTRL** tuşunu basılı tutun ve *önce*diğer denetimlerin boyutunu veya konumunu etkilemek için kullanmak istediğiniz denetimi seçin. **CTRL** tuşunu basılı tutarak ve seçim içinde bir denetim seçtiğinizde, bu denetimin bu seçimde de baskın denetim olması gerekir.
+- Baskın denetimi belirtmek için **CTRL** tuşunu basılı tutun ve *önce* diğer denetimlerin boyutunu veya konumunu etkilemek için kullanmak istediğiniz denetimi seçin. **CTRL** tuşunu basılı tutarak ve seçim içinde bir denetim seçtiğinizde, bu denetimin bu seçimde de baskın denetim olması gerekir.
 
-- Baskın denetimi değiştirmek için, seçili olan tüm denetimlerin dışında seçim yaparak geçerli seçimi temizleyin ve *önce*farklı bir denetim seçerek yukarıdaki yordamı tekrarlayın.
+- Baskın denetimi değiştirmek için, seçili olan tüm denetimlerin dışında seçim yaparak geçerli seçimi temizleyin ve *önce* farklı bir denetim seçerek yukarıdaki yordamı tekrarlayın.
 
 > [!NOTE]
 > Baskın denetimin boyutlandırma tutamaçları, alt denetimlerin tutamaçları boş olduğu sürece Solid ' dir. Daha fazla yeniden boyutlandırma veya hizalama, baskın denetimi temel alır.
@@ -212,7 +213,7 @@ Bir denetimi yeniden boyutlandırmak için boyutlandırma tutamaçlarını kulla
 
 - Bir denetimin içindeki metne sığması için otomatik olarak boyutunu belirlemek için, menü **biçimi** ' ne gidin veya denetime sağ tıklayın ve **içeriğe göre boyutlandır**' ı seçin.
 
-- Denetimleri aynı boyutta yapmak için, yeniden boyutlandırmak istediğiniz denetimleri seçin ve menü **biçimi**  >  **aynı boyuta getir**' e gidip **her ikisi**, **Yükseklik**veya **Genişlik**' i seçin.
+- Denetimleri aynı boyutta yapmak için, yeniden boyutlandırmak istediğiniz denetimleri seçin ve menü **biçimi**  >  **aynı boyuta getir**' e gidip **her ikisi**, **Yükseklik** veya **Genişlik**' i seçin.
 
    Bir denetim grubunu, serinin ilk bölümünde seçilen denetim olan baskın denetimin boyutuna göre yeniden boyutlandırır. Gruptaki denetimlerin son boyutu, baskın denetimin boyutuna bağlıdır.
 
@@ -270,12 +271,12 @@ Bir denetimi yeniden boyutlandırmak için boyutlandırma tutamaçlarını kulla
    |**Dikey**|İletişim kutusunda denetimleri dikey olarak ortalayın.|
    |**Yatay**|İletişim kutusunda denetimleri yatay olarak ortalayın.|
 
-- Basma düğmelerini hizalamak için bir veya daha fazla gönderme düğmesi seçin. Menü **biçimlendirme**  >  **Düzenle düğmelerine**gidin ve aşağıdaki düzenlemelerin birini seçin:
+- Basma düğmelerini hizalamak için bir veya daha fazla gönderme düğmesi seçin. Menü **biçimlendirme**  >  **Düzenle düğmelerine** gidin ve aşağıdaki düzenlemelerin birini seçin:
 
    |Sidir|Açıklama|
    |---|---|
    |**Right**|İletişim kutusunun sağ kenarında basma düğmelerini hizalar.|
-   |**Aşağıya**|İletişim kutusunun alt kenarı üzerinde basma düğmelerini hizalar.|
+   |**Alt**|İletişim kutusunun alt kenarı üzerinde basma düğmelerini hizalar.|
 
    Bir Gönder düğmesi dışında bir denetim seçerseniz, konumu etkilenmez.
 

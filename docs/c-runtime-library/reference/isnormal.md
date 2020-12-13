@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IsNormal'
 title: isnormal
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 - math/isnormal
 helpviewer_keywords:
 - isnormal function
-ms.openlocfilehash: 2e12cabb57f2e51c08b4d93af33dae85164d016b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3afae5196a7a6b2b149028ad347f95baa27b1544
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337764"
 ---
 # <a name="isnormal"></a>isnormal
 
 Kayan nokta değerinin normal bir değer olup olmadığını belirler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int isnormal(
@@ -37,7 +38,7 @@ Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**isnormal** **`true`** *x* bağımsız değişkeni sıfır, alt normal, sonsuz veya NaN ise, IsNormal sıfır dışında bir değer döndürür (C++ kodunda). Aksi takdirde, **IsNormal** 0 döndürür ( **`false`** C++ kodunda).
+ **`true`** *x* bağımsız değişkeni sıfır, alt normal, sonsuz veya NaN ise, IsNormal sıfır dışında bir değer döndürür (C++ kodunda). Aksi takdirde, **IsNormal** 0 döndürür ( **`false`** C++ kodunda).
 
 ## <a name="remarks"></a>Açıklamalar
 

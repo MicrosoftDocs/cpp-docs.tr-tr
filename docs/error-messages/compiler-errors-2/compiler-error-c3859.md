@@ -1,22 +1,23 @@
 ---
-title: Derleyici Hatası C3859
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3859'
+title: Derleyici hatası C3859
 ms.date: 03/08/2019
 f1_keywords:
 - C3859
 helpviewer_keywords:
 - C3859
 ms.assetid: 40e93b25-4393-4467-90de-035434a665c7
-ms.openlocfilehash: 9b20224207ba797c6ee93c06404e4d90c3d02525
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 25c05425072cda6924d90f08c9aeff7446a4e85b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391887"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336106"
 ---
-# <a name="compiler-error-c3859"></a>Derleyici Hatası C3859
+# <a name="compiler-error-c3859"></a>Derleyici hatası C3859
 
-> sanal bellek aralığı için PCH aştı; Lütfen bir komut satırı seçeneği ile yeniden derle '-Zm*değer*' veya üzeri
+> PCH için sanal bellek aralığı aşıldı; Lütfen '-ZM *Value*' veya daha büyük bir komut satırı seçeneğiyle yeniden derleyin
 
-Sanal belleği, önceden derlenmiş üst bilgi için derleyicinin koymak çalışılırken veri miktarı çok küçüktür. Visual Studio 2015'ten başlayarak **/Zm** öneri yalnızca önemli kullanırken `#pragma hdrstop` yönergesi. Diğer durumlarda, Windows sanal bellek baskısı sorunları gösteren sahte bir hata var.
+Ön derlenmiş üst bilgi için ayrılan sanal bellek, derleyicinin kendisine koymaya çalıştığı veri miktarı için çok küçük. Visual Studio 2015 ' den başlayarak **/za** önerisi yalnızca yönerge kullanılırken önemlidir `#pragma hdrstop` . Diğer durumlarda, Windows sanal bellek baskısı sorunlarını gösteren bir çok değerli hatadır.
 
-Önceden derlenmiş üst bilgi kullanıyorsa bir `#pragma hdrstop` yönergesi, kullanım **/Zm** önceden derlenmiş üstbilgi dosyası için daha büyük bir değer belirtmek için derleyici bayrağı. Aksi takdirde yapınız paralel derleme işlem sayısını azaltmayı deneyin. Daha fazla bilgi için [/Zm (belirtin önceden derlenmiş üst bilgi bellek ayırma sınırını)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).
+Ön derlenmiş üst bilgi bir `#pragma hdrstop` yönerge kullanıyorsa, önceden derlenmiş üstbilgi dosyası için daha büyük bir değer belirtmek üzere **/zı** derleyici bayrağını kullanın. Aksi takdirde, derinizdeki paralel derleme işlemlerinin sayısını azaltmayı göz önünde bulundurun. Daha fazla bilgi için bkz. [/ZD (önceden derlenmiş üst bilgi bellek ayırma sınırını belirt)](../../build/reference/zm-specify-precompiled-header-memory-allocation-limit.md).

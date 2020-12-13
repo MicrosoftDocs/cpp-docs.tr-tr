@@ -1,5 +1,6 @@
 ---
-title: '&lt;ratio &gt;'
+description: 'Daha fazla bilgi edinin: &lt; oran&gt;'
+title: '&lt;sabit&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - ratio/std::mega
@@ -31,18 +32,18 @@ f1_keywords:
 - ratio/std::deci
 - ratio/std::deca
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-ms.openlocfilehash: 5f6919c84c3fb125e149ba6bcd69b6b7f996d17f
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 8fab74cde47e4078781b665044bc2becd0a9dac3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337945"
 ---
-# <a name="ltratiogt"></a>&lt;ratio &gt;
+# <a name="ltratiogt"></a>&lt;sabit&gt;
 
-Derleme zamanında Rational numaralarını depolamak ve işlemek için kullanılan sabitleri ve şablonları tanımlamak için standart üst bilgi \<ratio > ekleyin.
+\<ratio>Derleme zamanında Rational numaralarını depolamak ve işlemek için kullanılan sabitleri ve şablonları tanımlamak için standart üstbilgiyi ekleyin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 #include <ratio>
@@ -60,17 +61,17 @@ struct ratio // holds the ratio of Numerator to Denominator
 }
 ```
 
-Şablon `ratio` statik sabitleri tanımlar `num` ve `num`  /  `den` = = Pay/payda ve `num` `den` ve `den` hiçbir ortak etkene sahip olmaz. `num`  /  `den`, sınıf şablonuyla temsil edilen değerdir. Bu nedenle, `type` örnek oluşturma `ratio<num, den>` belirler.
+Şablon `ratio` statik sabitleri `num` ve `den` Bu `num`  /  `den` = = pay/paydayı tanımlar ve `num` `den` ortak faktörlere sahip değildir. `num` / `den` , sınıf şablonuyla temsil edilen değerdir. Bu nedenle, `type` örnek oluşturmayı gösterir `ratio<num, den>` .
 
 ### <a name="specializations"></a>Uzmanlıklar
 
-\<ratio > Ayrıca, aşağıdaki biçime sahip `ratio` uzmanlıklarını da tanımlar.
+\<ratio> Ayrıca, `ratio` aşağıdaki biçime sahip olan öğesinin uzmanlıklarını tanımlar.
 
 `template <class R1, class R2> struct ratio_specialization`
 
-Her özelleşmenin `ratio` de özelleştirilmesi gereken iki şablon parametresi alır. @No__t_0 değeri, ilişkili bir mantıksal işlem tarafından belirlenir.
+Her özelleşmenin de özelleştirilmiş olması gereken iki şablon parametresi alır `ratio` . Değeri, `type` ilişkili bir mantıksal işlem tarafından belirlenir.
 
-|Name|`type` değeri|
+|Ad|`type` Deeri|
 |----------|------------------|
 |`ratio_add`|`R1 + R2`|
 |`ratio_divide`|`R1 / R2`|

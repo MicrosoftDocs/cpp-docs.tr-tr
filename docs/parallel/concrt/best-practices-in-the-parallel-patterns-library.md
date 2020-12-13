@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: paralel Desenler kitaplığındaki En Iyi uygulamalar'
 title: Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - best practices, Parallel Patterns Library
 - Parallel Patterns Library, best practices
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
-ms.openlocfilehash: 0bd49dda881df402a8c511714c22be37da3a50c4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 72b0ff36532decbc55ae792ee407b3b711bd54a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231734"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334696"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 
@@ -20,7 +21,7 @@ Bu belgede, paralel Desenler kitaplığı 'nın (PPL) etkili bir şekilde kullan
 
 PPL hakkında daha fazla bilgi için bkz. [paralel Desenler kitaplığı (ppl)](../../parallel/concrt/parallel-patterns-library-ppl.md).
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 Bu belgede aşağıdaki bölümler yer alır:
 
@@ -44,7 +45,7 @@ Bu belgede aşağıdaki bölümler yer alır:
 
 - [Bir görevin ömrü boyunca değişkenlerin geçerli olduğundan emin olun](#lifetime)
 
-## <a name="do-not-parallelize-small-loop-bodies"></a><a name="small-loops"></a>Paralel hale getirmek küçük döngü gövdeleri oluşturun
+## <a name="do-not-parallelize-small-loop-bodies"></a><a name="small-loops"></a> Paralel hale getirmek küçük döngü gövdeleri oluşturun
 
 Görece küçük döngü gövdelerinin paralelleştirmesiyle, ilişkili zamanlama ek yükünün paralel işlemenin avantajlarından yararlanmasına neden olabilir. İki dizide her öğe çiftini ekleyen aşağıdaki örneği göz önünde bulundurun.
 
@@ -54,7 +55,7 @@ Her paralel döngü yinelemesinin iş yükü, paralel işleme yükünden faydala
 
 [[Üst](#top)]
 
-## <a name="express-parallelism-at-the-highest-possible-level"></a><a name="highest"></a>Hızlı paralellik mümkün olan en yüksek düzeyde
+## <a name="express-parallelism-at-the-highest-possible-level"></a><a name="highest"></a> Hızlı paralellik mümkün olan en yüksek düzeyde
 
 Yalnızca düşük düzeyde kod paralel hale getirmek, işlemci sayısı arttıkça ölçeklendiremez bir çatal JOIN yapısı ortaya çıkarabilir. *Çatal-JOIN* yapısı, bir görevin çalışmasını daha küçük paralel alt görevlere böler ve bu alt görevlerin bitmesini bekler. Her alt görev yinelemeli olarak kendisini ek alt görevlere bölebilir.
 
@@ -76,11 +77,11 @@ Bu örnekteki zamanlama ek yükünü azaltmak için, paralel hale getirmek iç d
 
 [!code-cpp[concrt-image-processing-filter#22](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_5.cpp)]
 
-Paralel olarak görüntü işleme gerçekleştirmek için bir işlem hattı kullanan benzer bir örnek için bkz. [Izlenecek yol: görüntü Işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+Paralel olarak görüntü işleme gerçekleştirmek için bir işlem hattı kullanan benzer bir örnek için bkz. [Izlenecek yol: Image-Processing ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 [[Üst](#top)]
 
-## <a name="use-parallel_invoke-to-solve-divide-and-conquer-problems"></a><a name="divide-and-conquer"></a>Bölme ve Conquer sorunlarını gidermek için parallel_invoke kullanma
+## <a name="use-parallel_invoke-to-solve-divide-and-conquer-problems"></a><a name="divide-and-conquer"></a> Bölme ve Conquer sorunlarını gidermek için parallel_invoke kullanma
 
 Bir *bölme ve uyum* sorunu, bir görevi alt görevlere bölmek için özyineleme kullanan çatal-JOIN yapısının bir biçimidir. [Concurrency:: task_group](reference/task-group-class.md) ve [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) sınıflarına ek olarak, Ayrıca, bölme ve Conquer sorunlarını gidermek için [eşzamanlılık::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) algoritmasını da kullanabilirsiniz. `parallel_invoke`Algoritma, görev grubu nesnelerinden daha kısa bir sözdizimine sahiptir ve sabit sayıda paralel göreviniz olduğunda faydalıdır.
 
@@ -94,7 +95,7 @@ Bu örneğin tüm sürümü için bkz. [nasıl yapılır: Parallel_invoke kullan
 
 [[Üst](#top)]
 
-## <a name="use-cancellation-or-exception-handling-to-break-from-a-parallel-loop"></a><a name="breaking-loops"></a>Paralel bir döngüden ayırmak için Iptal veya özel durum Işlemeyi kullanma
+## <a name="use-cancellation-or-exception-handling-to-break-from-a-parallel-loop"></a><a name="breaking-loops"></a> Paralel bir döngüden ayırmak için Iptal veya özel durum Işlemeyi kullanma
 
 PPL, bir görev grubu veya paralel algoritma tarafından gerçekleştirilen paralel çalışmayı iptal etmenin iki yolunu sağlar. Tek yönlü [eşzamanlılık:: task_group](reference/task-group-class.md) ve [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) sınıfları tarafından sağlanmış olan iptal mekanizmasını kullanmaktır. Diğer bir deyişle, bir görev çalışma işlevinin gövdesinde bir özel durum oluşturulur. İptal mekanizması, bir paralel iş ağacını iptal etmek için özel durum işleme göre daha etkilidir. *Paralel çalışma ağacı* , bazı görev gruplarının diğer görev gruplarını içerdiği ilgili görev gruplarının grubudur. İptal mekanizması, bir görev grubunu ve onun alt görev gruplarını yukarıdan aşağı doğru bir şekilde iptal eder. Buna karşılık, özel durum işleme bir alt şekilde çalışır ve özel durum yukarı doğru yayıldıklarından her bir alt görev grubunu bağımsız olarak iptal etmelidir.
 
@@ -118,7 +119,7 @@ PPL tarafından sunulan iptal ve özel durum işleme mekanizmaları hakkında da
 
 [[Üst](#top)]
 
-## <a name="understand-how-cancellation-and-exception-handling-affect-object-destruction"></a><a name="object-destruction"></a>Iptal ve özel durum Işlemenin nesne yok etme işlemini nasıl etkilediğini anlayın
+## <a name="understand-how-cancellation-and-exception-handling-affect-object-destruction"></a><a name="object-destruction"></a> Iptal ve özel durum Işlemenin nesne yok etme işlemini nasıl etkilediğini anlayın
 
 Bir paralel çalışma ağacında, iptal edilen bir görev alt görevlerin çalışmasını engeller. Bu, alt görevlerden biri, uygulamanız için önemli bir işlem gerçekleştirdiğinde (örneğin, bir kaynağı boşaltma gibi) soruna neden olabilir. Ayrıca, Görev iptali bir özel durumun nesne yıkıcısı aracılığıyla yaymasına ve uygulamanızda tanımsız davranışlara neden olabilir.
 
@@ -126,7 +127,7 @@ Aşağıdaki örnekte, `Resource` sınıfı bir kaynağı açıklar ve `Containe
 
 [!code-cpp[concrt-parallel-resource-destruction#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_10.h)]
 
-Bu düzende kendi kendine sorun olmasa da, paralel olarak iki görevi çalıştıran aşağıdaki kodu göz önünde bulundurun. İlk görev bir nesne oluşturur `Container` ve ikinci görev genel görevi iptal eder. Örnek olarak, örneğin, nesne oluşturulduktan [concurrency::event](../../parallel/concrt/reference/event-class.md) sonra iptal `Container` işleminin gerçekleşmesini ve `Container` iptal işlemi oluştuktan sonra nesnenin yok edilmesinden emin olmak için, örnek iki eşzamanlılık:: Event nesnesi kullanır.
+Bu düzende kendi kendine sorun olmasa da, paralel olarak iki görevi çalıştıran aşağıdaki kodu göz önünde bulundurun. İlk görev bir nesne oluşturur `Container` ve ikinci görev genel görevi iptal eder. Örnek olarak, örneğin, nesne oluşturulduktan [](../../parallel/concrt/reference/event-class.md) sonra iptal `Container` işleminin gerçekleşmesini ve `Container` iptal işlemi oluştuktan sonra nesnenin yok edilmesinden emin olmak için, örnek iki eşzamanlılık:: Event nesnesi kullanır.
 
 [!code-cpp[concrt-parallel-resource-destruction#2](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_11.cpp)]
 
@@ -148,7 +149,7 @@ Bu görevlerin iptal edilmeyeceği garantisi vermediğiniz sürece kaynakları b
 
 [[Üst](#top)]
 
-## <a name="do-not-block-repeatedly-in-a-parallel-loop"></a><a name="repeated-blocking"></a>Paralel bir döngüde sürekli olarak Engellenmeyin
+## <a name="do-not-block-repeatedly-in-a-parallel-loop"></a><a name="repeated-blocking"></a> Paralel bir döngüde sürekli olarak Engellenmeyin
 
 [Eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) veya [eşzamanlılık: arallel_for_each:p](reference/concurrency-namespace-functions.md#parallel_for_each) işlemleri gibi bir paralel döngü, çalışma zamanının kısa bir süre içinde çok sayıda iş parçacığı oluşturmasına neden olabilir.
 
@@ -164,7 +165,7 @@ Bu düzenin önüne geçmek için kodunuzu yeniden düzenlemeniz önerilir. Bu �
 
 [[Üst](#top)]
 
-## <a name="do-not-perform-blocking-operations-when-you-cancel-parallel-work"></a><a name="blocking"></a>Paralel çalışmayı Iptal ettiğinizde engelleyici Işlemler gerçekleştirmeyin
+## <a name="do-not-perform-blocking-operations-when-you-cancel-parallel-work"></a><a name="blocking"></a> Paralel çalışmayı Iptal ettiğinizde engelleyici Işlemler gerçekleştirmeyin
 
 Mümkün olduğunda, paralel işi iptal etmek için [concurrency:: task_group:: Cancel](reference/task-group-class.md#cancel) veya [concurrency:: structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) metodunu çağırmadan önce engelleyici işlemler gerçekleştirmeyin.
 
@@ -182,11 +183,11 @@ Aşağıdaki örnek, gereksiz çalışmanın nasıl önleneceği ve bu sayede pe
 
 [[Üst](#top)]
 
-## <a name="do-not-write-to-shared-data-in-a-parallel-loop"></a><a name="shared-writes"></a>Paralel bir döngüde paylaşılan verilere yazma
+## <a name="do-not-write-to-shared-data-in-a-parallel-loop"></a><a name="shared-writes"></a> Paralel bir döngüde paylaşılan verilere yazma
 
 Eşzamanlılık Çalışma Zamanı çeşitli veri yapıları sağlar, örneğin [critical_section](../../parallel/concrt/reference/critical-section-class.md), eş zamanlı erişimi paylaşılan verilere eşitler. Bu veri yapıları birçok durumda faydalıdır; Örneğin, birden çok görev nadiren bir kaynağa paylaşılan erişim gerektirirken.
 
-[concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) `critical_section` Bir [std:: Array](../../standard-library/array-class-stl.md) nesnesindeki asal sayıların sayısını hesaplamak için eşzamanlılık::p arallel_for_each algoritmasını ve nesnesini kullanan aşağıdaki örneği göz önünde bulundurun. Bu örnek ölçeklenmez çünkü her iş parçacığının paylaşılan değişkene erişmek için beklemesi gerekir `prime_sum` .
+[](reference/concurrency-namespace-functions.md#parallel_for_each) `critical_section` Bir [std:: Array](../../standard-library/array-class-stl.md) nesnesindeki asal sayıların sayısını hesaplamak için eşzamanlılık::p arallel_for_each algoritmasını ve nesnesini kullanan aşağıdaki örneği göz önünde bulundurun. Bu örnek ölçeklenmez çünkü her iş parçacığının paylaşılan değişkene erişmek için beklemesi gerekir `prime_sum` .
 
 [!code-cpp[concrt-parallel-sum-of-primes#2](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_15.cpp)]
 
@@ -202,7 +203,7 @@ Bu örneğin tüm sürümü için bkz. [nasıl yapılır: performansı artırmak
 
 [[Üst](#top)]
 
-## <a name="when-possible-avoid-false-sharing"></a><a name="false-sharing"></a>Mümkün olduğunda, yanlış paylaşıma karşı kaçının
+## <a name="when-possible-avoid-false-sharing"></a><a name="false-sharing"></a> Mümkün olduğunda, yanlış paylaşıma karşı kaçının
 
 Ayrı işlemcilerde çalışan birden fazla eş zamanlı görev aynı önbellek satırında bulunan değişkenlere yazdığınızda *yanlış paylaşım* oluşur. Bir görev değişkenlerden birine yazdığında her iki değişken için de önbellek satırı geçersiz kılınır. Önbellek satırı her geçersiz kılınışında her işlemcinin önbellek satırını yeniden yüklemesi gerekir. Bu nedenle, yanlış paylaşım uygulamanızda performansın düşmesine neden olabilir.
 
@@ -224,7 +225,7 @@ Görevler arasında veri paylaşmak gerektiğinde [eşzamanlılık:: combinable]
 
 [[Üst](#top)]
 
-## <a name="make-sure-that-variables-are-valid-throughout-the-lifetime-of-a-task"></a><a name="lifetime"></a>Bir görevin ömrü boyunca değişkenlerin geçerli olduğundan emin olun
+## <a name="make-sure-that-variables-are-valid-throughout-the-lifetime-of-a-task"></a><a name="lifetime"></a> Bir görevin ömrü boyunca değişkenlerin geçerli olduğundan emin olun
 
 Bir görev grubuna veya paralel algoritmaya bir lambda ifadesi sağladığınızda, yakalama yan tümcesi, lambda ifadesinin gövdesinin, kapsayan kapsamdaki değişkenlere değere göre veya başvuruya göre erişip erişemeyeceğini belirtir. Değişkenleri başvuruya göre lambda ifadesine geçirdiğinizde, bu değişkenin yaşam süresinin görev bitene kadar devam ettiğinden emin olmanız gerekir.
 
@@ -264,7 +265,7 @@ Lambda ifadeleri hakkında daha fazla bilgi için bkz. [lambda ifadeleri](../../
 [Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)<br/>
 [PPL'de İptal](cancellation-in-the-ppl.md)<br/>
 [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
-[İzlenecek yol: görüntü Işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
+[İzlenecek yol: Image-Processing ağ oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
 [Nasıl yapılır: paralel sıralama yordamı yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br/>
 [Nasıl yapılır: paralel bir döngüden ayırmak için Iptal kullanma](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br/>
 [Nasıl yapılır: performansı artırmak için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>

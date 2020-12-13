@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _InterlockedAddLargeStatistic'
 title: _InterlockedAddLargeStatistic
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - _InterlockedAddLargeStatistic intrinsic
 - InterlockedAddLargeStatistic intrinsic
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409
-ms.openlocfilehash: de8c5b7dfd2462dddcb98324ebacc44c8148d85e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 52ca32d0f9b08d638a66923f8f0204eb515b447e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222095"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336881"
 ---
 # <a name="_interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 İlk işlenenin 64 bitlik bir değer olduğu bir kenetlenmiş ekleme işlemi gerçekleştirir.
 
@@ -38,7 +39,7 @@ long _InterlockedAddLargeStatistic(
 *Deeri*\
 'ndaki İkinci işlenen; ilk işlenene eklenecek değer.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 İkinci işlenenin değeri.
 
@@ -48,13 +49,13 @@ long _InterlockedAddLargeStatistic(
 |---------------|------------------|
 |`_InterlockedAddLargeStatistic`|x86|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-İki ayrı kilitli yönerge olarak uygulandığından, içatomikdeğildir.`_InterlockedAddLargeStatistic` İç işleminin yürütülmesi sırasında başka bir iş parçacığında gerçekleşen atomik 64 bit okuma tutarsız bir değer okumasına neden olabilir.
+`_InterlockedAddLargeStatistic`İki ayrı kilitli yönerge olarak uygulandığından, iç atomik değildir. İç işleminin yürütülmesi sırasında başka bir iş parçacığında gerçekleşen atomik 64 bit okuma tutarsız bir değer okumasına neden olabilir.
 
-`_InterlockedAddLargeStatistic`okuma/yazma engeli olarak davranır. Daha fazla bilgi için bkz. [_Readwriteengeli](../intrinsics/readwritebarrier.md).
+`_InterlockedAddLargeStatistic` okuma/yazma engeli olarak davranır. Daha fazla bilgi için bkz. [_ReadWriteBarrier](../intrinsics/readwritebarrier.md).
 
 **SON Microsoft 'a özgü**
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3860'
 title: Derleyici hatası C3860
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3860
 ms.assetid: 1fb5110d-594e-4f1c-8773-888233af1313
-ms.openlocfilehash: 38113ba9c75ab3e3e9b0ea058cb96e733a484f13
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 0405efd8eec4357c9f0b93aa8303cd8557ebd3fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336094"
 ---
 # <a name="compiler-error-c3860"></a>Derleyici hatası C3860
 

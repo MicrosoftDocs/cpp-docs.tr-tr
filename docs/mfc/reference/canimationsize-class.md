@@ -1,5 +1,6 @@
 ---
-title: CAnimationSize Sınıfı
+description: 'Daha fazla bilgi edinin: CAnimationSize sınıfı'
+title: CAnimationSize sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAnimationSize
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - CAnimationSize [MFC], m_cxValue
 - CAnimationSize [MFC], m_cyValue
 ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
-ms.openlocfilehash: 1f4a5b8b52d8bd37d1ed83618e7451dd85f84c32
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 894675c485077291c3fca35acfb9bfa9a3d10286
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81755122"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336768"
 ---
-# <a name="canimationsize-class"></a>CAnimationSize Sınıfı
+# <a name="canimationsize-class"></a>CAnimationSize sınıfı
 
-Boyutları canlandırılabilen bir boyut nesnesinin işlevselliğini uygular.
+Boyutları animasyon uygulanabilir olan bir boyut nesnesi işlevselliğini uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CAnimationSize : public CAnimationBaseObject;
@@ -47,48 +48,48 @@ class CAnimationSize : public CAnimationBaseObject;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CanimationSize::CanimationSize](#canimationsize)|Fazla Yüklendi. Animasyon boyutu nesnesi oluşturuyor.|
+|[CAnimationSize:: CAnimationSize](#canimationsize)|Fazla Yüklendi. Bir animasyon boyutu nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CanimasyonBoyutu::Ekle Geçişi](#addtransition)|Genişlik ve Yükseklik için geçişler ekler.|
-|[CAnimationSize::GetCX](#getcx)|Genişliği temsil eden CAnimationVariable'e erişim sağlar.|
-|[CAnimationSize::GetCY](#getcy)|Yüksekliği temsil eden CAnimationVariable'e erişim sağlar.|
-|[CanimasyonBoyutu::Varsayılan Değeri Al](#getdefaultvalue)|Genişlik ve Yükseklik için varsayılan değerleri döndürür.|
-|[CAnimationSize::GetValue](#getvalue)|Geçerli değeri verir.|
-|[CanimasyonBoyutu::SetDefaultValue](#setdefaultvalue)|Varsayılan değeri ayarlar.|
+|[CAnimationSize:: AddTransition](#addtransition)|Genişlik ve yükseklik için geçişler ekler.|
+|[CAnimationSize:: GetCX](#getcx)|Genişliği temsil eden CAnimationVariable öğesine erişim sağlar.|
+|[CAnimationSize:: GetCY](#getcy)|Yüksekliği temsil eden CAnimationVariable öğesine erişim sağlar.|
+|[CAnimationSize:: GetDefaultValue](#getdefaultvalue)|Genişlik ve yükseklik için varsayılan değerleri döndürür.|
+|[CAnimationSize:: GetValue](#getvalue)|Geçerli değeri döndürür.|
+|[CAnimationSize:: SetDefaultValue](#setdefaultvalue)|Varsayılan değeri ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationSize::GetAnimationVariableList](#getanimationvariablelist)|Kapsüllenmiş animasyon değişkenlerini bir listeye koyar. [(CAnimationBaseObject geçersiz kılar::GetAnimationVariableList](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist).)|
+|[CAnimationSize:: GetAnimationVariableList](#getanimationvariablelist)|Encapsulated animasyon değişkenlerini bir listeye koyar. ( [CAnimationBaseObject:: GetAnimationVariableList](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist)geçersiz kılınır.)|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationSize::operatör CSize](#operator_csize)|CAnimationSize'ı CSize'a dönüştürür.|
-|[CAnimationSize::operator=](#operator_eq)|CAnimationSize için szSrc atar.|
+|[CAnimationSize:: işleç CSize](#operator_csize)|CAnimationSize boyutunu CSize dönüştürür.|
+|[CAnimationSize:: operator =](#operator_eq)|SzSrc 'yi CAnimationSize atar.|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAnimationSize::m_cxValue](#m_cxvalue)|Animasyon boyutunun genişliğini temsil eden kapsüllü animasyon değişkeni.|
-|[CAnimationSize::m_cyValue](#m_cyvalue)|Animasyon boyutunun yüksekliğini temsil eden kapsüllü animasyon değişkeni.|
+|[CAnimationSize:: m_cxValue](#m_cxvalue)|Animasyon boyutunun genişliğini temsil eden Encapsulated animasyon değişkeni.|
+|[CAnimationSize:: m_cyValue](#m_cyvalue)|Animasyon boyutunun yüksekliğini temsil eden Encapsulated animasyon değişkeni.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-CAnimationSize sınıfı iki CAnimationVariable nesnesini kapsüller ve uygulamalarda bir boyutu temsil edebilir. Örneğin, ekrandaki herhangi iki boyutlu bir nesnenin boyutunu (dikdörtgen, denetim vb. gibi) canlandırmak için bu sınıfı kullanabilirsiniz. Uygulamada bu sınıfı kullanmak için, bu sınıfın bir nesnesini anlık olarak eklemeniz, CAnimationController'ı kullanarak animasyon denetleyicisine ekleyin::AddAnimationObject ve Genişlik ve/veya Yükseklik'e uygulanacak her geçiş için AddTransition'ı arayın.
+CAnimationSize sınıfı iki CAnimationVariable nesnesini kapsüller ve uygulamalarda bir boyut temsil edebilir. Örneğin, bu sınıfı, ekranda herhangi bir iki boyutlu nesnenin boyutunu hareketlendirmek için kullanabilirsiniz (dikdörtgen, denetim vb.). Bu sınıfı uygulamada kullanmak için, bu sınıfın bir nesnesinin örneğini oluşturun, CAnimationController:: AddAnimationObject öğesini kullanarak animasyon denetleyicisine ekleyin ve her bir geçişin genişlik ve/veya yüksekliğe uygulanması için AddTransition çağrısı yapın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)
 
@@ -96,11 +97,11 @@ CAnimationSize sınıfı iki CAnimationVariable nesnesini kapsüller ve uygulama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-## <a name="canimationsizeaddtransition"></a><a name="addtransition"></a>CanimasyonBoyutu::Ekle Geçişi
+## <a name="canimationsizeaddtransition"></a><a name="addtransition"></a> CAnimationSize:: AddTransition
 
-Genişlik ve Yükseklik için geçişler ekler.
+Genişlik ve yükseklik için geçişler ekler.
 
 ```cpp
 void AddTransition(
@@ -111,18 +112,18 @@ void AddTransition(
 ### <a name="parameters"></a>Parametreler
 
 *pCXTransition*<br/>
-Genişlik için geçiş için bir işaretçi.
+Genişlik için geçiş işaretçisi.
 
 *pCYTransition*<br/>
-Yükseklik için geçiş için bir işaretçi.
+Yükseklik geçişi için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genişlik ve Yükseklik için animasyon değişkenlerine uygulanacak iç geçişler listesine belirtilen geçişleri eklemek için bu işlevi arayın. Geçişler eklediğinizde, bunlar hemen uygulanmaz ve dahili bir listede depolanır. Geçişler CAnimationController::AnimateGroup'u aradiğinizde uygulanır (belirli bir değer için bir film şeridine eklenir). Boyutlardan birine geçiş uygulamanız gerekmiyorsa, NULL'u geçebilirsiniz.
+Belirtilen geçişleri genişlik ve yükseklik için animasyon değişkenlerine uygulanacak iç geçiş listesine eklemek için bu işlevi çağırın. Geçişler eklediğinizde, bunlar hemen uygulanmaz ve dahili bir listede depolanır. CAnimationController:: AnimateGroup ' i çağırdığınızda geçişler uygulanır (belirli bir değer için bir görsel taslağa eklenir). Boyutlardan birine geçiş uygulamanız gerekmiyorsa NULL geçirebilirsiniz.
 
-## <a name="canimationsizecanimationsize"></a><a name="canimationsize"></a>CanimationSize::CanimationSize
+## <a name="canimationsizecanimationsize"></a><a name="canimationsize"></a> CAnimationSize:: CAnimationSize
 
-Animasyon boyutu nesnesi oluşturuyor.
+Bir animasyon boyutu nesnesi oluşturur.
 
 ```
 CAnimationSize();
@@ -136,25 +137,25 @@ CAnimationSize(
 
 ### <a name="parameters"></a>Parametreler
 
-*szVarsayılan*<br/>
+*szDefault*<br/>
 Varsayılan boyutu belirtir.
 
-*nGroupID*<br/>
-Grup Kimliğini belirtir.
+*Ngroupıd*<br/>
+Grup KIMLIĞINI belirtir.
 
-*nObjectID*<br/>
-Nesne Kimliğini belirtir.
+*Nobjectıd*<br/>
+Nesne KIMLIĞINI belirtir.
 
 *dwUserData*<br/>
 Kullanıcı tanımlı verileri belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesne, 0 olarak ayarlanacak genişlik, yükseklik, Nesne Kimliği ve Grup Kimliği için varsayılan değerlerle oluşturulur. Bunlar daha sonra setdefaultvalue ve SetID kullanılarak çalışma zamanında değiştirilebilir.
+Nesne, 0 olarak ayarlanacak genişlik, yükseklik, nesne KIMLIĞI ve Grup KIMLIĞI için varsayılan değerlerle oluşturulur. Bu, daha sonra SetDefaultValue ve SetID kullanılarak çalışma zamanında değiştirilebilir.
 
-## <a name="canimationsizegetanimationvariablelist"></a><a name="getanimationvariablelist"></a>CAnimationSize::GetAnimationVariableList
+## <a name="canimationsizegetanimationvariablelist"></a><a name="getanimationvariablelist"></a> CAnimationSize:: GetAnimationVariableList
 
-Kapsüllenmiş animasyon değişkenlerini bir listeye koyar.
+Encapsulated animasyon değişkenlerini bir listeye koyar.
 
 ```
 virtual void GetAnimationVariableList(
@@ -164,12 +165,12 @@ virtual void GetAnimationVariableList(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lst*<br/>
-İşlev döndüğünde, genişlik ve yüksekliği temsil eden iki CAnimationVariable nesnelerine işaretçiler içerir.
+*LST*<br/>
+İşlev döndüğünde, genişliği ve yüksekliği temsil eden iki CAnimationVariable nesnesine işaretçiler içerir.
 
-## <a name="canimationsizegetcx"></a><a name="getcx"></a>CAnimationSize::GetCX
+## <a name="canimationsizegetcx"></a><a name="getcx"></a> CAnimationSize:: GetCX
 
-Genişliği temsil eden CAnimationVariable'e erişim sağlar.
+Genişliği temsil eden CAnimationVariable öğesine erişim sağlar.
 
 ```
 CAnimationVariable& GetCX();
@@ -177,15 +178,15 @@ CAnimationVariable& GetCX();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genişliği temsil eden kapsüllü CAnimationVariable'e bir başvuru.
+Genişliği temsil eden kapsüllenmiş CAnimationVariable başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Genişlik temsil eden temel CAnimationVariable doğrudan erişim elde etmek için bu yöntemi arayabilirsiniz.
+Bu yöntemi, genişliği temsil eden temeldeki CAnimationVariable öğesine doğrudan erişim sağlamak için çağırabilirsiniz.
 
-## <a name="canimationsizegetcy"></a><a name="getcy"></a>CAnimationSize::GetCY
+## <a name="canimationsizegetcy"></a><a name="getcy"></a> CAnimationSize:: GetCY
 
-Yüksekliği temsil eden CAnimationVariable'e erişim sağlar.
+Yüksekliği temsil eden CAnimationVariable öğesine erişim sağlar.
 
 ```
 CAnimationVariable& GetCY();
@@ -193,15 +194,15 @@ CAnimationVariable& GetCY();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yüksekliği temsil eden kapsüllü CAnimationVariable'e bir başvuru.
+Yüksekliği temsil eden kapsüllenmiş CAnimationVariable başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yükseklik'i temsil eden temel CAnimationVariable'e doğrudan erişim elde etmek için bu yöntemi arayabilirsiniz.
+Bu yöntemi, yüksekliği temsil eden temeldeki CAnimationVariable öğesine doğrudan erişim almak için çağırabilirsiniz.
 
-## <a name="canimationsizegetdefaultvalue"></a><a name="getdefaultvalue"></a>CanimasyonBoyutu::Varsayılan Değeri Al
+## <a name="canimationsizegetdefaultvalue"></a><a name="getdefaultvalue"></a> CAnimationSize:: GetDefaultValue
 
-Genişlik ve Yükseklik için varsayılan değerleri döndürür.
+Genişlik ve yükseklik için varsayılan değerleri döndürür.
 
 ```
 CSize GetDefaultValue();
@@ -213,11 +214,11 @@ Varsayılan değerleri içeren bir CSize nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha önce oluşturucu veya SetDefaultValue tarafından ayarlanmış varsayılan değeri almak için bu işlevi arayın.
+Daha önce constructor veya SetDefaultValue tarafından ayarlanan varsayılan değeri almak için bu işlevi çağırın.
 
-## <a name="canimationsizegetvalue"></a><a name="getvalue"></a>CAnimationSize::GetValue
+## <a name="canimationsizegetvalue"></a><a name="getvalue"></a> CAnimationSize:: GetValue
 
-Geçerli değeri verir.
+Geçerli değeri döndürür.
 
 ```
 BOOL GetValue(CSize& szValue);
@@ -225,36 +226,36 @@ BOOL GetValue(CSize& szValue);
 
 ### <a name="parameters"></a>Parametreler
 
-*szDeğer*<br/>
-Çıkış. Bu yöntem döndüğünde geçerli değeri içerir.
+*szValue*<br/>
+Çıktıların. Bu yöntemin döndürdüğü geçerli değeri içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU, geçerli değer başarıyla alındıysa; aksi takdirde YANLIŞ.
+Geçerli değer başarıyla alınırsa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon boyutunun geçerli değerini almak için bu işlevi arayın. Bu yöntem başarısız olursa veya Genişlik ve Boyut için COM nesneleri temele atılmıştır, szValue daha önce oluşturucu veya SetDefaultValue tarafından ayarlanmış varsayılan değer içerir.
+Animasyon boyutunun geçerli değerini almak için bu işlevi çağırın. Bu yöntem başarısız olursa veya genişlik ve boyut için temel alınan COM nesneleri başlatılmazsa, szValue daha önce oluşturucuda veya SetDefaultValue tarafından ayarlanan varsayılan değeri içerir.
 
-## <a name="canimationsizem_cxvalue"></a><a name="m_cxvalue"></a>CAnimationSize::m_cxValue
+## <a name="canimationsizem_cxvalue"></a><a name="m_cxvalue"></a> CAnimationSize:: m_cxValue
 
-Animasyon boyutunun genişliğini temsil eden kapsüllü animasyon değişkeni.
+Animasyon boyutunun genişliğini temsil eden Encapsulated animasyon değişkeni.
 
 ```
 CAnimationVariable m_cxValue;
 ```
 
-## <a name="canimationsizem_cyvalue"></a><a name="m_cyvalue"></a>CAnimationSize::m_cyValue
+## <a name="canimationsizem_cyvalue"></a><a name="m_cyvalue"></a> CAnimationSize:: m_cyValue
 
-Animasyon boyutunun yüksekliğini temsil eden kapsüllü animasyon değişkeni.
+Animasyon boyutunun yüksekliğini temsil eden Encapsulated animasyon değişkeni.
 
 ```
 CAnimationVariable m_cyValue;
 ```
 
-## <a name="canimationsizeoperator-csize"></a><a name="operator_csize"></a>CAnimationSize::operatör CSize
+## <a name="canimationsizeoperator-csize"></a><a name="operator_csize"></a> CAnimationSize:: işleç CSize
 
-CAnimationSize'ı CSize'a dönüştürür.
+CAnimationSize boyutunu CSize dönüştürür.
 
 ```
 operator CSize();
@@ -262,15 +263,15 @@ operator CSize();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Animasyon boyutunun CSize olarak geçerli değeri.
+Animasyon boyutunun geçerli değeri CSize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev dahili olarak GetValue çağırır. GetValue herhangi bir nedenle başarısız olursa, döndürülen boyut Genişlik ve Yükseklik için varsayılan değerleri içerir.
+Bu işlev, bir dahili olarak GetValue çağırır. GetValue bir nedenden dolayı başarısız olursa, döndürülen boyut genişlik ve yükseklik için varsayılan değerleri içerir.
 
-## <a name="canimationsizeoperator"></a><a name="operator_eq"></a>CAnimationSize::operator=
+## <a name="canimationsizeoperator"></a><a name="operator_eq"></a> CAnimationSize:: operator =
 
-CAnimationSize için szSrc atar.
+SzSrc 'yi CAnimationSize atar.
 
 ```cpp
 void operator=(const CSize& szSrc);
@@ -279,13 +280,13 @@ void operator=(const CSize& szSrc);
 ### <a name="parameters"></a>Parametreler
 
 *szSrc*<br/>
-CSize veya SIZE anlamına gelir.
+CSize veya boyutuna başvurur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-CAnimationSize için szSrc atar. Animasyon başlamadan önce bunu yapmanız önerilir, çünkü bu işleç, temel COM nesnelerini oluşturulduklarında Genişlik ve Yükseklik için yeniden oluşturan SetDefaultValue'ı çağırır. Bu animasyon nesnesini olaylara abone olduysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
+SzSrc 'yi CAnimationSize atar. Bu işleç, oluşturulduklarında genişlik ve yükseklik için temeldeki COM nesnelerini yeniden oluşturan SetDefaultValue ' ı çağırdığı için, animasyon başlamadan önce bunu yapmanız önerilir. Bu animasyon nesnesini olaylara abone oldıysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
 
-## <a name="canimationsizesetdefaultvalue"></a><a name="setdefaultvalue"></a>CanimasyonBoyutu::SetDefaultValue
+## <a name="canimationsizesetdefaultvalue"></a><a name="setdefaultvalue"></a> CAnimationSize:: SetDefaultValue
 
 Varsayılan değeri ayarlar.
 
@@ -295,12 +296,12 @@ void SetDefaultValue(const CSize& szDefault);
 
 ### <a name="parameters"></a>Parametreler
 
-*szVarsayılan*<br/>
+*szDefault*<br/>
 Yeni varsayılan boyutu belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Animasyon nesnesine varsayılan değer ayarlamak için bu işlevi kullanın. Bu yöntem, varsayılan değerleri animasyon boyutunun Genişliği ve Yüksekliği'ne atar. Ayrıca, oluşturuldukları takdirde altta yatan COM nesnelerini yeniden oluşturur. Bu animasyon nesnesini olaylara abone olduysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
+Animasyon nesnesine varsayılan bir değer ayarlamak için bu işlevi kullanın. Bu yöntemler varsayılan değerleri animasyon boyutunun genişliğine ve yüksekliğine atar. Ayrıca, oluşturulan temel COM nesnelerini de yeniden oluşturur. Bu animasyon nesnesini olaylara abone oldıysanız (ValueChanged veya IntegerValueChanged), bu olayları yeniden etkinleştirmeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
