@@ -1,4 +1,5 @@
 ---
+description: ': Strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l hakkında daha fazla bilgi edinin'
 title: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 ms.date: 4/2/2020
 api_name:
@@ -64,12 +65,12 @@ helpviewer_keywords:
 - _mbsncat_l function
 - tcsncat function
 ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
-ms.openlocfilehash: 98f13967d8abbe079934d0c09ab71c5e279d2b7f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 509afe42e4fbf4cec9f0a7a077f0bf4ce0a1423e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918147"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344776"
 ---
 # <a name="strncat-_strncat_l-wcsncat-_wcsncat_l-_mbsncat-_mbsncat_l"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 
@@ -149,10 +150,10 @@ Hedef dizeye bir işaretçi döndürür. Bir hatayı göstermek için hiçbir d�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strncat** işlevi, en çok, *strSource* 'un Ilk *sayı* karakterlerini *strDest*öğesine ekler. *StrSource* başlangıç karakteri, *strDest*'in Sonlandırıcı null karakterinin üzerine yazar. *StrSource* içinde null bir karakter görünürse, *sayı* karakterleri eklendikten sonra **strncat** , *strSource*'tan null karaktere kadar tüm karakterleri ekler. *Count* , *strSource*uzunluğundan fazlaysa, *strSource* uzunluğu *sayı*yerine kullanılır. Her durumda, sonuçta elde edilen dize bir null karakterle sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
+**Strncat** işlevi, en çok, *strSource* 'un Ilk *sayı* karakterlerini *strDest* öğesine ekler. *StrSource* başlangıç karakteri, *strDest*'in Sonlandırıcı null karakterinin üzerine yazar. *StrSource* içinde null bir karakter görünürse, *sayı* karakterleri eklendikten sonra **strncat** , *strSource*'tan null karaktere kadar tüm karakterleri ekler. *Count* , *strSource* uzunluğundan fazlaysa, *strSource* uzunluğu *sayı* yerine kullanılır. Her durumda, sonuçta elde edilen dize bir null karakterle sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
 
 > [!IMPORTANT]
-> **strncat** , *strDest*içinde yeterli alanı denetlemez; Bu nedenle arabellek taşmalarının olası bir nedeni vardır. *Count* değerinin eklenen karakter sayısını sınırlayıp sınırlamadığını aklınızda bulundurun; Bu, *strDest*boyutu için bir sınır değildir. Aşağıdaki örneğe bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **strncat** , *strDest* içinde yeterli alanı denetlemez; Bu nedenle arabellek taşmalarının olası bir nedeni vardır. *Count* değerinin eklenen karakter sayısını sınırlayıp sınırlamadığını aklınızda bulundurun; Bu, *strDest* boyutu için bir sınır değildir. Aşağıdaki örneğe bakın. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 **wcsncat** ve **_mbsncat** , **strncat**'in geniş karakterli ve çok baytlı karakter sürümleridir. **Wcsncat** 'in dize bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsncat** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
@@ -170,16 +171,16 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |**_tcsncat_l**|**_strncat_l**|**_mbsnbcat_l**|**_wcsncat_l**|
 
 > [!NOTE]
-> **_strncat_l** ve **_wcsncat_l** yerel ayar bağımlılığını yoktur ve doğrudan çağrılması için tasarlanmamıştır. **_Tcsncat_l**tarafından iç kullanım için sağlanır.
+> **_strncat_l** ve **_wcsncat_l** yerel ayar bağımlılığını yoktur ve doğrudan çağrılması için tasarlanmamıştır. **_Tcsncat_l** tarafından iç kullanım için sağlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncat**|\<String. h>|
-|**wcsncat**|\<String. h> veya \<wchar. h>|
-|**_mbsncat**|\<mbstring. h>|
-|**_mbsncat_l**|\<mbstring. h>|
+|**strncat**|\<string.h>|
+|**wcsncat**|\<string.h> veya \<wchar.h>|
+|**_mbsncat**|\<mbstring.h>|
+|**_mbsncat_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -246,4 +247,4 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

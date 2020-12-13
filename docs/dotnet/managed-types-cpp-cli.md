@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yönetilen türler (C++/CLı)'
 title: Yönetilen Türler (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - exceptions, diagnosing odd behavior
 - compatibility, between assemblies
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
-ms.openlocfilehash: c542151bda780e5306db35049d988e6514fffd62
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ccf126152216cfddb9a78cb5abc608f23cc3ba80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225611"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344464"
 ---
 # <a name="managed-types-ccli"></a>Yönetilen Türler (C++/CLI)
 
 Visual C++, ortak dil çalışma zamanının özelliklerine yönelik destek sağlayan ve çalışma zamanının avantajları ve kısıtlamalarına tabi olan yönetilen türler aracılığıyla .NET özelliklerine erişim sağlar.
 
-## <a name="managed-types-and-the-main-function"></a><a name="main_functions"></a>Yönetilen türler ve Main Işlevi
+## <a name="managed-types-and-the-main-function"></a><a name="main_functions"></a> Yönetilen türler ve Main Işlevi
 
 Kullanarak bir uygulama yazarken **`/clr`** , **Main ()** işlevinin bağımsız değişkenleri yönetilen bir tür olamaz.
 
@@ -40,7 +41,7 @@ Doğru imzaya bir örnek:
 int main(int, char*[], char*[]) {}
 ```
 
-## <a name="net-framework-equivalents-to-c-native-types"></a><a name="dotnet"></a>C++ yerel türlerine .NET Framework eşdeğerleri
+## <a name="net-framework-equivalents-to-c-native-types"></a><a name="dotnet"></a> C++ yerel türlerine .NET Framework eşdeğerleri
 
 Aşağıdaki tabloda, **sistem** ad alanında önceden tanımlanmış türlerin diğer adları olan yerleşik Visual C++ türleri için anahtar sözcükler gösterilmektedir.
 
@@ -51,18 +52,18 @@ Aşağıdaki tabloda, **sistem** ad alanında önceden tanımlanmış türlerin 
 |**`signed char`** |<xref:System.SByte?displayProperty=nameWithType>|
 |**`unsigned char`**|<xref:System.Byte?displayProperty=nameWithType>|
 |**`wchar_t`**|<xref:System.Char?displayProperty=nameWithType>|
-|**`short`**'**`signed short`**|<xref:System.Int16?displayProperty=nameWithType>|
+|**`short`** ' **`signed short`**|<xref:System.Int16?displayProperty=nameWithType>|
 |**`unsigned short`**|<xref:System.UInt16?displayProperty=nameWithType>|
-|**`int`**, **`signed int`** , **`long`** ve**`signed long`**|<xref:System.Int32?displayProperty=nameWithType>|
-|**`unsigned int`**'**`unsigned long`**|<xref:System.UInt32?displayProperty=nameWithType>|
-|**`__int64`**'**`signed __int64`**|<xref:System.Int64?displayProperty=nameWithType>|
+|**`int`**, **`signed int`** , **`long`** ve **`signed long`**|<xref:System.Int32?displayProperty=nameWithType>|
+|**`unsigned int`** ' **`unsigned long`**|<xref:System.UInt32?displayProperty=nameWithType>|
+|**`__int64`** ' **`signed __int64`**|<xref:System.Int64?displayProperty=nameWithType>|
 |**`unsigned __int64`**|<xref:System.UInt64?displayProperty=nameWithType>|
 |**`float`**|<xref:System.Single?displayProperty=nameWithType>|
-|**`double`**'**`long double`**|<xref:System.Double?displayProperty=nameWithType>|
+|**`double`** ' **`long double`**|<xref:System.Double?displayProperty=nameWithType>|
 
 Veya için varsayılan olarak derleyici seçeneği hakkında daha fazla bilgi **`signed char`** için **`unsigned char`** , bkz. [ `/J` (varsayılan **`char`** tür: **`unsigned`** )](../build/reference/j-default-char-type-is-unsigned.md).
 
-## <a name="version-issues-for-value-types-nested-in-native-types"></a><a name="version_issues"></a>Yerel türlerde Iç Içe geçmiş değer türleri için sürüm sorunları
+## <a name="version-issues-for-value-types-nested-in-native-types"></a><a name="version_issues"></a> Yerel türlerde Iç Içe geçmiş değer türleri için sürüm sorunları
 
 İstemci derlemesi oluşturmak için kullanılan imzalanmış (tanımlayıcı ad) bir derleme bileşeni düşünün. Bileşen, bir yerel birleşim, sınıf veya dizi üyesinin türü olarak istemcisinde kullanılan bir değer türü içerir. Bileşenin gelecek bir sürümü değer türünün boyutunu veya yerleşimini değiştirirse, istemcinin yeniden derlenmesi gerekir.
 
@@ -127,7 +128,7 @@ S.i = 11
 
 Ancak, `struct S` nested_value_types. cpp içine başka bir üye eklerseniz (örneğin, `double d;` ) ve istemciyi yeniden derlemeden bileşeni yeniden derliyorsanız, sonuç işlenmeyen bir özel durumdur (türünde <xref:System.IO.FileLoadException?displayProperty=fullName> ).
 
-## <a name="how-to-test-for-equality"></a><a name="test_equality"></a>Nasıl yapılır: eşitlik için test etme
+## <a name="how-to-test-for-equality"></a><a name="test_equality"></a> Nasıl yapılır: eşitlik için test etme
 
 Aşağıdaki örnekte, C++ için Yönetilen Uzantılar kullanan bir eşitlik testi, tutamaçların neye başvurabileceği üzerine dayalıdır.
 
@@ -152,7 +153,7 @@ IL_0012:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                string)
 ```
 
-## <a name="how-to-diagnose-and-fix-assembly-compatibility-problems"></a><a name="diagnose_fix"></a>Nasıl yapılır: derleme uyumluluk sorunlarını tanılama ve çözme
+## <a name="how-to-diagnose-and-fix-assembly-compatibility-problems"></a><a name="diagnose_fix"></a> Nasıl yapılır: derleme uyumluluk sorunlarını tanılama ve çözme
 
 Bu konuda, derleme zamanında başvurulan bir derlemenin sürümü çalışma zamanında başvurulan derlemenin sürümü ile eşleşmediği ve bu sorundan kaçınmak için neler gerçekleşebileceği açıklanmaktadır.
 

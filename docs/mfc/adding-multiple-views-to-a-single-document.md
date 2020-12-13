@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tek bir belgeye birden çok görünüm ekleme'
 title: Tek Bir Belgeye Birden Çok Görünüm Ekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - single document interface (SDI), adding views
 - views [MFC], SDI applications
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-ms.openlocfilehash: 95de3a582c3d45db858e2b4bce0268e1dab63931
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 84f50ad96e4c5939c7ee2e97f8babfaa5221b6f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215978"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343737"
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>Tek Bir Belgeye Birden Çok Görünüm Ekleme
 
@@ -41,7 +42,7 @@ Bu konunun geri kalanında aşağıdakiler varsayılmaktadır:
 
 - `CNewView``CView`, yeni türetilmiş nesnenin adıdır ve `CNewView` NewView içinde bildirilmiştir ve tanımlanır *. H* ve *NewView. CPP*.
 
-## <a name="modify-the-existing-application-class"></a><a name="vcconmodifyexistingapplicationa1"></a>Mevcut uygulama sınıfını değiştirme
+## <a name="modify-the-existing-application-class"></a><a name="vcconmodifyexistingapplicationa1"></a> Mevcut uygulama sınıfını değiştirme
 
 Uygulamanın görünümler arasında geçmesi için, görünümleri depolamak için üye değişkenleri ve bunları değiştirmek için bir yöntem ekleyerek uygulama sınıfını değiştirmeniz gerekir.
 
@@ -59,17 +60,17 @@ MyWinApp 'in içerme bölümüne aşağıdaki satırı ekleyin *. CPP*:
 
 Değişikliklerinizi kaydedin ve bir sonraki adımla devam edin.
 
-## <a name="create-and-modify-the-new-view-class"></a><a name="vcconnewviewclassa2"></a>Yeni görünüm sınıfını oluşturma ve değiştirme
+## <a name="create-and-modify-the-new-view-class"></a><a name="vcconnewviewclassa2"></a> Yeni görünüm sınıfını oluşturma ve değiştirme
 
 Yeni görünüm sınıfının oluşturulması, Sınıf Görünümü tarafından kullanılabilen **Yeni sınıf** komutu kullanılarak kolayca yapılır. Bu sınıf için tek gereksinim, öğesinden türetilmiş olur `CView` . Bu yeni sınıfı uygulamaya ekleyin. Projeye yeni bir sınıf ekleme hakkında ayrıntılı bilgi için bkz. [sınıf ekleme](../ide/adding-a-class-visual-cpp.md).
 
 Sınıfı projeye ekledikten sonra bazı görünüm sınıfı üyelerinin erişilebilirliğini değiştirmeniz gerekir.
 
-*NewView 'ı değiştirin. *Erişim belirticisini **`protected`** **`public`** Oluşturucu ve yıkıcı için olarak değiştirerek H. Bu, sınıfın dinamik olarak oluşturulmasını ve yok edilmesinin yanı sıra, görünür olmadan önce görünüm görünümünü değiştirmesini sağlar.
+*NewView 'ı değiştirin.* Erişim belirticisini **`protected`** **`public`** Oluşturucu ve yıkıcı için olarak değiştirerek H. Bu, sınıfın dinamik olarak oluşturulmasını ve yok edilmesinin yanı sıra, görünür olmadan önce görünüm görünümünü değiştirmesini sağlar.
 
 Değişikliklerinizi kaydedin ve bir sonraki adımla devam edin.
 
-## <a name="create-and-attach-the-new-view"></a><a name="vcconattachnewviewa3"></a>Yeni görünüm oluştur ve Ekle
+## <a name="create-and-attach-the-new-view"></a><a name="vcconattachnewviewa3"></a> Yeni görünüm oluştur ve Ekle
 
 Yeni görünümü oluşturup eklemek için, `InitInstance` uygulama sınıfınızın işlevini değiştirmeniz gerekir. Değişiklik, yeni bir görünüm nesnesi oluşturan yeni kod ekler ve ardından hem hem de `m_pOldView` `m_pNewView` varolan iki görünüm nesnesiyle birlikte başlatılır.
 
@@ -81,7 +82,7 @@ Yeni görünüm işlev içinde oluşturulduğundan `InitInstance` , hem yeni hem
 
 Değişikliklerinizi kaydedin ve bir sonraki adımla devam edin.
 
-## <a name="implement-the-switching-function"></a><a name="vcconswitchingfunctiona4"></a>Anahtarlama Işlevini uygulama
+## <a name="implement-the-switching-function"></a><a name="vcconswitchingfunctiona4"></a> Anahtarlama Işlevini uygulama
 
 Önceki adımda yeni bir görünüm nesnesi oluşturan ve başlatılan kodu eklediniz. Son ana parça, değiştirme yöntemini uygulamaktır `SwitchView` .
 
@@ -91,7 +92,7 @@ Uygulama sınıfınızın (MyWinApp) uygulama dosyasının sonunda *. CPP*), aş
 
 Değişikliklerinizi kaydedin ve bir sonraki adımla devam edin.
 
-## <a name="add-support-for-switching-the-view"></a><a name="vcconswitchingtheviewa5"></a>Görünümü değiştirmek için destek ekleme
+## <a name="add-support-for-switching-the-view"></a><a name="vcconswitchingtheviewa5"></a> Görünümü değiştirmek için destek ekleme
 
 Son adım, uygulamanın görünümler arasında geçmesi gerektiğinde yöntemini çağıran kodun eklenmesini içerir `SwitchView` . Bu işlem birkaç yolla yapılabilir: Kullanıcı için yeni bir menü öğesi ekleyerek, belirli koşullar karşılandığında görünümleri dahili olarak seçme veya değiştirme.
 

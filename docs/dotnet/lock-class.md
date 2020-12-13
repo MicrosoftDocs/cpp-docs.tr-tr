@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Lock sınıfı'
 title: lock Sınıfı
 ms.date: 01/16/2019
 ms.topic: reference
@@ -14,18 +15,18 @@ f1_keywords:
 helpviewer_keywords:
 - msclr::lock class
 ms.assetid: 5123edd9-6aed-497d-9a0b-f4b6d6c0d666
-ms.openlocfilehash: 7b2f187ec940af95523d0bbfb9265d7d9d6f69e8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d00614e814d171664a75ec61b9227942806b8cca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508650"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344503"
 ---
 # <a name="lock-class"></a>lock Sınıfı
 
 Bu sınıf, birkaç iş parçacığından bir nesneye erişimi eşitlemek için bir kilit almayı otomatikleştirir.  Oluşturulduğunda kilidi devralır ve yok edildiğinde kilidi bırakır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 ref class lock;

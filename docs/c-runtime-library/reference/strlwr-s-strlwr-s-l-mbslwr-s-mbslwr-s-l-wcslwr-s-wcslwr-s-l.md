@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l'
 title: _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - tcslwr_s_l function
 - strings [C++], converting case
 ms.assetid: 4883d31b-bdac-4049-83a1-91dfdeceee79
-ms.openlocfilehash: 42333433277e1ac593bb2662967b73907ed13c92
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d2a5b0ba3fb8868a4f88c8ee96ecc5fad69c9114
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919951"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344828"
 ---
 # <a name="_strlwr_s-_strlwr_s_l-_mbslwr_s-_mbslwr_s_l-_wcslwr_s-_wcslwr_s_l"></a>_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
 
@@ -158,11 +159,11 @@ Kullanılacak yerel ayar.
 
 Başarılıysa sıfır; hatada sıfır olmayan bir hata kodu.
 
-Bu işlevler, parametrelerini doğrular. *Str* geçerli bir null ile sonlandırılmış dize değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır. *NumberOfElements* dizenin uzunluğundan küçükse, işlevler **EINVAL** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Bu işlevler, parametrelerini doğrular. *Str* geçerli bir null ile sonlandırılmış dize değilse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler **EINVAL** döndürür ve **errno** , **EINVAL** olarak ayarlanır. *NumberOfElements* dizenin uzunluğundan küçükse, işlevler **EINVAL** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strlwr_s** işlevi, *Str* ile küçük harflerden oluşan büyük harfleri yerinde dönüştürür. **_mbslwr_s** , **_strlwr_s**çok baytlık bir karakter sürümüdür. **_wcslwr_s** , **_strlwr_s**geniş karakterli bir sürümüdür.
+**_Strlwr_s** işlevi, *Str* ile küçük harflerden oluşan büyük harfleri yerinde dönüştürür. **_mbslwr_s** , **_strlwr_s** çok baytlık bir karakter sürümüdür. **_wcslwr_s** , **_strlwr_s** geniş karakterli bir sürümüdür.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -183,9 +184,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strlwr_s**, **_strlwr_s_l**|\<String. h>|
-|**_mbslwr_s**, **_mbslwr_s_l**|\<mbstring. h>|
-|**_wcslwr_s**, **_wcslwr_s_l**|\<String. h> veya \<wchar. h>|
+|**_strlwr_s**, **_strlwr_s_l**|\<string.h>|
+|**_mbslwr_s**, **_mbslwr_s_l**|\<mbstring.h>|
+|**_wcslwr_s**, **_wcslwr_s_l**|\<string.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -231,5 +232,5 @@ Upper: THE STRING TO END ALL STRINGS!
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l](strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: pencere belleğini ayırma ve ayırmayı kaldırma'
 title: Pencere Belleğini Ayırma ve Serbest Bırakma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - window objects [MFC], deallocating memory for
 - storage for window objects [MFC], allocating
 ms.assetid: 7c962539-8461-4846-b5ca-fe3b15c313dc
-ms.openlocfilehash: 33d471b41c8f1fd670e25626049ecd9b06b034e1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7648914289babffdfb5195f1ec53cd736e26892c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87195206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343724"
 ---
 # <a name="allocating-and-deallocating-window-memory"></a>Pencere Belleğini Ayırma ve Serbest Bırakma
 

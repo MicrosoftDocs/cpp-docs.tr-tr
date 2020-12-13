@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4282'
 title: Derleyici Uyarısı (düzey 3) C4282
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - C4282
 ms.assetid: 155bef24-7bd1-497b-a24b-4a0d784b44cd
-ms.openlocfilehash: 81b9757f604f517c6c91bf16d80d5f29d6a46249
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ea5e9dd08ee04408494d9181616635c03f937880
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80198958"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344113"
 ---
 # <a name="compiler-warning-level-3-c4282"></a>Derleyici Uyarısı (düzey 3) C4282
 
 sonra tür ' Type '
 
-Bu uyarı, **operator->** `type`aracılığıyla kendisini çağırır.
+Bu uyarı, **operator->** kendisini aracılığıyla çağırC4281shows `type` .

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kilitleme'
 title: lock
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - lock
 - synchronization
 ms.assetid: 48c90da6-d6fb-4710-9c7c-2b9c9344bda1
-ms.openlocfilehash: b6d7dc28fc840a99fe0f3f05f92252e996b37944
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: d84c6604025e95a7ff0dd7485a38c3eb3a827a64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446249"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344477"
 ---
 # <a name="lock"></a>lock
 
-Bir nesneye erişimin eşitlenmesini otomatikleştiren `lock` sınıfını tanımlar.
+`lock`Bir nesneye erişimin eşitlenmesini otomatikleştiren sınıfı tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <msclr\lock.h>
@@ -29,10 +30,10 @@ Bir nesneye erişimin eşitlenmesini otomatikleştiren `lock` sınıfını tanı
 
 Bu üst bilgi dosyasında:
 
-[lock Sınıfı](../dotnet/lock-class.md)
+[Lock sınıfı](../dotnet/lock-class.md)
 
-[lock_when Enum](../dotnet/lock-when-enum.md)
+[lock_when Numaralandırması](../dotnet/lock-when-enum.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Support Library](../dotnet/cpp-support-library.md)
+[C++ destek kitaplığı](../dotnet/cpp-support-library.md)

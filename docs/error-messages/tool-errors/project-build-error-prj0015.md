@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: proje derleme hatası PRJ0015'
 title: Proje Derleme Hatası PRJ0015
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0015
 ms.assetid: 2096c8f1-e96c-49a4-a690-1cb893a8bf6f
-ms.openlocfilehash: d88a3c2c25542cf492f374fb9857e709697c865d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: eba9584884501e2503fc86d0cfb535f0a48b93e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192581"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343853"
 ---
 # <a name="project-build-error-prj0015"></a>Proje Derleme Hatası PRJ0015
 

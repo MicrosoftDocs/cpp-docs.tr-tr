@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2324'
 title: Derleyici hatası C2324
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2324
 ms.assetid: 215f0544-85b0-452d-825f-17a388b6a61c
-ms.openlocfilehash: 924341d75c7126f8af30da1038781f9e559e9c2b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 25aa799e9419b0bbab32b7362b1fdd9c604a66c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74747897"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344451"
 ---
 # <a name="compiler-error-c2324"></a>Derleyici hatası C2324
 

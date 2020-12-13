@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l'
 title: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - wcsncat_s_l function
 - mbsncat_s function
 ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
-ms.openlocfilehash: 4aba4a2bd843fe0946c2e444b305f776065a57be
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c260c1a77908962441dba094686578e61db0e386
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919356"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344789"
 ---
 # <a name="strncat_s-_strncat_s_l-wcsncat_s-_wcsncat_s_l-_mbsncat_s-_mbsncat_s_l"></a>strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 
@@ -178,13 +179,13 @@ Başarılı olursa 0 döndürür. hata durumunda hata kodu.
 
 |*strDestination*|*numberOfElements*|*strSource*|Döndürülen değer|*StrDestination* içeriği|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**Null** veya Sonlandırılmamış|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|0 veya çok küçük|kaydedilmemiş|**ERANGE**|değiştirilmedi|
+|**Null** veya Sonlandırılmamış|herhangi biri|herhangi biri|**EıNVAL**|değiştirilmedi|
+|herhangi biri|herhangi biri|**DEĞER**|**EıNVAL**|değiştirilmedi|
+|herhangi biri|0 veya çok küçük|herhangi biri|**ERANGE**|değiştirilmedi|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, *strSource* 'un ilk *d* karakterini *strDest*sonuna eklemeye çalışır; burada *D* *Count* , *strSource*'un uzunluğundan daha küçüktür. Bu *D* karakterlerinin eklenmesi, *strDest* içine sığar (boyutu *numberOfElements*olarak verilir) ve boş bir Sonlandırıcı için boşluk bırakın, bu karakterlerin sonuna, özgün Sonlandırıcı boş değeri olan *strDest*ile başlayarak yeni bir Sonlandırıcı null eklenir; Aksi halde, *strDest*[0] null karakter olarak ayarlanır ve [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
+Bu işlevler, *strSource* 'un ilk *d* karakterini *strDest* sonuna eklemeye çalışır; burada *D* *Count* , *strSource*'un uzunluğundan daha küçüktür. Bu *D* karakterlerinin eklenmesi, *strDest* içine sığar (boyutu *numberOfElements* olarak verilir) ve boş bir Sonlandırıcı için boşluk bırakın, bu karakterlerin sonuna, özgün Sonlandırıcı boş değeri olan *strDest* ile başlayarak yeni bir Sonlandırıcı null eklenir; Aksi halde, *strDest*[0] null karakter olarak ayarlanır ve [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
 
 Yukarıdaki paragrafın bir istisnası vardır. *Sayı* [_TRUNCATE](../../c-runtime-library/truncate.md) ise, *strSource* 'un büyük bölümü *strDest* 'e eklenir, ancak bir sonlandırma null değeri eklemek için oda ayrılmaya devam eder.
 
@@ -204,7 +205,7 @@ Kesme davranışı gerekiyorsa **_TRUNCATE** kullanın veya *Boyut* parametresin
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
 ```
 
-or
+veya
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
@@ -212,9 +213,9 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 Her durumda, sonuçta elde edilen dize bir null karakterle sonlandırılır. Çakışan dizeler arasında kopyalama gerçekleşmesi durumunda davranış tanımsızdır.
 
-*StrSource* veya *strDest* **null**ise veya *numberOfElements* değeri sıfırsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev parametrelerini değiştirmeden **EINVAL** döndürür.
+*StrSource* veya *strDest* **null** ise veya *numberOfElements* değeri sıfırsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev parametrelerini değiştirmeden **EINVAL** döndürür.
 
-**wcsncat_s** ve **_mbsncat_s** , **strncat_s**geniş karakter ve çok baytlı karakter sürümleridir. **Wcsncat_s** dize bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsncat_s** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**wcsncat_s** ve **_mbsncat_s** , **strncat_s** geniş karakter ve çok baytlı karakter sürümleridir. **Wcsncat_s** dize bağımsız değişkenleri ve dönüş değeri geniş karakterli dizelerdir; **_mbsncat_s** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -231,15 +232,15 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |**_tcsncat_s**|**strncat_s**|**_mbsnbcat_s**|**wcsncat_s**|
 |**_tcsncat_s_l**|**_strncat_s_l**|**_mbsnbcat_s_l**|**_wcsncat_s_l**|
 
-**_strncat_s_l** ve **_wcsncat_s_l** yerel bir bağımlılık yoktur; Bunlar yalnızca **_tcsncat_s_l**için sağlanır.
+**_strncat_s_l** ve **_wcsncat_s_l** yerel bir bağımlılık yoktur; Bunlar yalnızca **_tcsncat_s_l** için sağlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strncat_s**|\<String. h>|
-|**wcsncat_s**|\<String. h> veya \<wchar. h>|
-|**_mbsncat_s**, **_mbsncat_s_l**|\<mbstring. h>|
+|**strncat_s**|\<string.h>|
+|**wcsncat_s**|\<string.h> veya \<wchar.h>|
+|**_mbsncat_s**, **_mbsncat_s_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -384,7 +385,7 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

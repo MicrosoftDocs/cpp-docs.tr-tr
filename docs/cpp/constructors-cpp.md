@@ -1,4 +1,5 @@
 ---
+description: ': Oluşturucular hakkında daha fazla bilgi edinin (C++)'
 title: Oluşturucular (C++)
 ms.date: 12/27/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: b8373eda52967db881d7d58477fcd2a9181ac3ee
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: bd93053d63e76aef9f2284e18f7748334a3fc6ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924729"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344633"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -202,7 +203,7 @@ Kopya oluşturucuyu silinmiş olarak tanımlayarak, nesnenizin kopyalanmasını 
     Box (const Box& other) = delete;
 ```
 
-Nesneyi kopyalamaya çalışmak C2280 hatasını üretir *: silinen bir işleve başvurulmaya çalışılıyor* .
+Nesneyi kopyalamaya çalışmak C2280 hatasını üretir *: silinen bir işleve başvurulmaya çalışılıyor*.
 
 ## <a name="move-constructors"></a><a name="move_constructors"></a> Taşıma Oluşturucuları
 
@@ -212,7 +213,7 @@ Nesneyi kopyalamaya çalışmak C2280 hatasını üretir *: silinen bir işleve 
 Box(Box&& other);
 ```
 
-Derleyici, nesnenin yok edileceği ve artık kaynaklarına ihtiyacı olmayan aynı türde başka bir nesne tarafından başlatıldığı bazı durumlarda bir taşıma Oluşturucusu seçer. Aşağıdaki örnekte, bir taşıma Oluşturucusu aşırı yükleme çözümlemesi tarafından seçildiğinde bir durum gösterilmektedir. Çağıran oluşturucuda `get_Box()` , döndürülen değer bir bir bir "(süresi *xvalue* dolacak) değeridir. Herhangi bir değişkene atanmamış ve bu nedenle kapsam dışına geçmek üzere. Bu örneğe ilişkin mosyon sağlamak için, içeriği temsil eden büyük bir dize vektörü sunalım. Vektör ve dizelerini kopyalamak yerine, vector öğesinin artık yeni nesneye ait olması için "kutu" süresi dolan değerden "buar" ' A yapılan çağrı, `std::move` ve sınıflarının her ikisi de `vector` `string` kendi taşıma oluşturucularını uygulayacağından gereklidir.
+Derleyici, nesnenin yok edileceği ve artık kaynaklarına ihtiyacı olmayan aynı türde başka bir nesne tarafından başlatıldığı bazı durumlarda bir taşıma Oluşturucusu seçer. Aşağıdaki örnekte, bir taşıma Oluşturucusu aşırı yükleme çözümlemesi tarafından seçildiğinde bir durum gösterilmektedir. Çağıran oluşturucuda `get_Box()` , döndürülen değer bir bir bir "(süresi  dolacak) değeridir. Herhangi bir değişkene atanmamış ve bu nedenle kapsam dışına geçmek üzere. Bu örneğe ilişkin mosyon sağlamak için, içeriği temsil eden büyük bir dize vektörü sunalım. Vektör ve dizelerini kopyalamak yerine, vector öğesinin artık yeni nesneye ait olması için "kutu" süresi dolan değerden "buar" ' A yapılan çağrı, `std::move` ve sınıflarının her ikisi de `vector` `string` kendi taşıma oluşturucularını uygulayacağından gereklidir.
 
 ```cpp
 #include <iostream>
@@ -643,7 +644,7 @@ Derived d4 calls: Base()*/
 
 ::: moniker range=">=msvc-150"
 
-**Visual Studio 2017 ve üzeri** : **`using`** **/std: c++ 17** modundaki ifade, türetilmiş sınıftaki oluşturucularla aynı imzaya sahip olanlar hariç, temel sınıftan tüm oluşturucuların kapsamına getirir. Genel olarak, türetilen sınıf yeni veri üyeleri veya oluşturucular bildirmediği zaman devralma oluşturucularının kullanılması en iyisidir.
+**Visual Studio 2017 ve üzeri**: **`using`** **/std: c++ 17** modundaki ifade, türetilmiş sınıftaki oluşturucularla aynı imzaya sahip olanlar hariç, temel sınıftan tüm oluşturucuların kapsamına getirir. Genel olarak, türetilen sınıf yeni veri üyeleri veya oluşturucular bildirmediği zaman devralma oluşturucularının kullanılması en iyisidir.
 
 ::: moniker-end
 

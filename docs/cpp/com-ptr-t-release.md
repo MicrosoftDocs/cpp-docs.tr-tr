@@ -1,4 +1,5 @@
 ---
+description: ': _Com_ptr_t:: Release hakkında daha fazla bilgi edinin'
 title: _com_ptr_t::Release
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - Release method [C++]
 ms.assetid: db448b34-0efa-4f02-b701-ad1ca3ae6ca5
-ms.openlocfilehash: 73de3c2d19063f0738b8b0a3c510ea520f58de0b
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a1b81295ab249b1826ea6d373f782d91765df3b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344724"
 ---
 # <a name="_com_ptr_trelease"></a>_com_ptr_t::Release
 
 **Microsoft'a Özgü**
 
-Kapsüllenmiş **Release** arabirim `IUnknown` işaretçisi üzerinde Sürüm üye işlevini çağırır.
+Kapsüllenmiş arabirim işaretçisindeki **yayın** üye işlevini çağırır `IUnknown` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 void Release( );
@@ -28,10 +29,10 @@ void Release( );
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kapsüllenmiş arabirim işaretçisini `IUnknown::Release` çağırır `E_POINTER` ve bu arabirim işaretçisi NULL ise hata yükseltir.
+`IUnknown::Release` `E_POINTER` Bu ARABIRIM işaretçisi null ise, kapsüllenmiş arabirim işaretçisindeki çağrılar bir hata ortaya koyar.
 
-**END Microsoft Özel**
+**SON Microsoft 'a özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)
+[_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)

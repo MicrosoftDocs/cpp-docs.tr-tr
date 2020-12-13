@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: C. OpenMP C ve C++ dilbilgisi'
 title: C. OpenMP C ve C++ dil bilgisi
 ms.date: 01/16/2019
 ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
-ms.openlocfilehash: 85e18161079b49e83cc9fedb3184ee220c889e75
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9543d721afbff1069b5497ba8dc7092089a1b706
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362952"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342510"
 ---
 # <a name="c-openmp-c-and-c-grammar"></a>C. OpenMP C ve C++ dil bilgisi
 
@@ -16,221 +17,221 @@ ms.locfileid: "62362952"
 
 ## <a name="c1-notation"></a>C.1 Gösterim
 
-Bir terminal olmayan, adının dilbilgisi kuralları oluşur değiştirme alternatifleri tarafından ayrı satırlarda üste, ardından.
+Dilbilgisi kuralları, terminal dışı bir, ardından iki nokta üst üste ve ardından ayrı satırlardaki değiştirme alternatifleri ile oluşur.
 
-Söz dizimi ifade terimi<sub>iyileştirilmiş</sub> dönem içinde değişiklik isteğe bağlı olduğunu gösterir.
+Sözdizimsel ifade terimi<sub>kabul etme</sub> , terimin değiştirme içinde isteğe bağlı olduğunu gösterir.
 
-Söz dizimi ifade *terimi*<sub>optseq</sub> eşdeğerdir *terimi-seq*<sub>iyileştirilmiş</sub> aşağıdaki ek kuralları ile:
+Sözdizimi ifade *terimi*<sub>seçeneksırası</sub> , aşağıdaki ek kurallarla *terim sırası*<sub>kabul etme</sub> ile eşdeğerdir:
 
-*Terim-seq*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*Terim*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*term-seq* *term*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*term-seq*   `,` *term*
+*terim sırası*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*terimli*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*terim sırası* *terimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*terim-sıra* `,` *terim*   
 
 ## <a name="c2-rules"></a>C.2 Kurallar
 
-Gösterimi, standart C 6.1 bölümünde açıklanmıştır. Bu dil bilgisi ek OpenMP C ve C++ yönergeleri için temel dil dilbilgisi uzantılarını göstermektedir.
+Gösterim, C standardının 6,1 bölümünde açıklanmaktadır. Bu dilbilgisi eki, OpenMP C ve C++ yönergeleri için temel dil dilbilgisinde uzantıları gösterir.
 
-**/\* in C++ (ISO/IEC 14882:1998) \*/**
+**/\* C++ ' da (ISO/ıEC 14882:1998) \*/**
 
-*deyimi-seq*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP yönergesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*deyimi-seq deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*deyimi-seq openmp yönergesi*
+*Ekstre-sıra*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP-yönergesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre-Seq ekstresi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre-Seq OpenMP-Directive*
 
-**/\* in C90 (ISO/IEC 9899:1990) \*/**
+**/\* C90 içinde (ISO/ıEC 9899:1990) \*/**
 
-*ifade listesinin*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP yönergesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade listesinin deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ifade listesinin openmp yönergesi*
+*Ekstre-liste*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP-yönergesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre-List ekstresi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade-List OpenMP-Directive*
 
-**/\* in C99 (ISO/IEC 9899:1999) \*/**
+**/\* C99 içinde (ISO/ıEC 9899:1999) \*/**
 
-*Blok öğesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP yönergesi*
+*blok-öğe*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bağımsız*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP-yönergesi*
 
-**/\* Standart deyimleri \*/**
+**/\* Standart deyimler \*/**
 
-*deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP yapısı*
+*ifade*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP-yapı*
 
-*OpenMP yapısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Paralel yapısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Yapı için*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bölümler yapısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tek yapısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Yapı için Parallel*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Paralel bölümleri yapısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Ana yapısı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Critical yapı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*atomic yapı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sıralı yapısı*
+*OpenMP-yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*paralel yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*for-yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bölümler-yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tek yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*paralel-for-yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*paralel-bölümler-yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ana yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Kritik-yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Atomik yapı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sıralı-yapı*
 
-*OpenMP yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*barrier yönergesi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Flush yönergesi*
+*OpenMP-yönergesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bariyer-yönerge*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Flush-yönergesi*
 
-*Yapısal blok*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Deyimi*
+*yapılandırılmış blok*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ekstre*
 
-*Paralel yapı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Paralel yönergesi yapısal blok*
+*paralel yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Parallel-Directive yapılandırılmış bloğu*
 
-*Paralel yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel` *Paralel yan tümcesi*<sub>optseq</sub> *yeni satır*
+*Parallel-Directive*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel`*Parallel yan tümce*<sub>seçeneksırası</sub> *yeni satır*
 
-*Paralel yan tümcesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Paralel yan benzersiz*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Veri yan tümcesi*
+*Parallel-yan tümcesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique-Parallel-yan tümcesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-yan tümcesi*
 
-*Paralel yan benzersiz*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `if (` *İfade*   `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `num_threads (` *İfade*   `)`
+*Unique-Parallel-yan tümcesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `if (`*ifade*   `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `num_threads (`*ifade*   `)`
 
-*Yapı için*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*yönergesi için yineleme deyimi*
+*için-yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*for-Directive yineleme-ekstresi*
 
-*yönergesi için*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp for` *yan tümcesi için*<sub>optseq</sub> *yeni satır*
+*for-yönergesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp for`*for-Clause*<sub>seçeneksırası</sub> *yeni satır*
 
-*yan tümcesi için*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*for yan benzersiz*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Veri yan tümcesi*<br/>
+*for-yan tümcesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique-for-yan tümcesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-yan tümcesi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
-*for yan benzersiz*:<br/>
+*Unique-for-yan tümcesi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `ordered`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (` *zamanlama türü*   `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (` *zamanlama türü* `,` *ifadesi*   `)`
+&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (`*zamanlama türü*   `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (`*zamanlama türü* `,` *ifade*      `)`
 
-*zamanlama türü*:<br/>
+*zamanlama-tür*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `static`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `dynamic`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `guided`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `runtime`
 
-*bölümler yapısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bölüm yönergesi bölümüne kapsamı*
+*bölümler-yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sections-Directive bölüm-kapsam*
 
-*Bölüm yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp sections` *bölümler yan tümcesi*<sub>optseq</sub> *yeni satır*
+*bölümler-yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp sections`*sections-yan tümce*<sub>seçeneksırası</sub> *yeni-satır*
 
-*bölümler yan tümcesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Veri yan tümcesi*<br/>
+*sections-yan tümce*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-yan tümcesi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
-*Kapsam bölümü*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*{Bölüm dizisi}*
+*bölüm kapsamı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*{Section-Sequence}*
 
-*Bölüm dizisi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bölüm yönergesi*<sub>iyileştirilmiş</sub> *yapısal blok*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Bölüm dizisi bölüm yönergesi yapısal blok*
+*bölüm sırası*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bölüm-yönerge*<sub>opt</sub> *yapılandırılmış-blok*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bölüm-dizi bölümü-yönerge yapılandırılmış-blok*
 
-*Bölüm yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp section` *Yeni satır*
+*bölüm-yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp section`*yeni satır*
 
 *tek yapı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tek yönergesi yapısal blok*
+&nbsp;&nbsp;&nbsp;&nbsp;*tek yönergeyle yapılandırılmış blok*
 
-*tek yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp single` *tek yan tümceli*<sub>optseq</sub> *yeni satır*
+*tek yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp single`*tek yan tümce*<sub>seçeneksırası</sub> *yeni satır*
 
-*tek yan tümceli*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Veri yan tümcesi*<br/>
+*Single yan tümcesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-yan tümcesi*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
-*Yapı için Parallel*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*yönergesi için paralel yineleme deyimi*
+*:*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Parallel-for-Directive yineleme-ekstresi*
 
-*yönergesi için paralel*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel for` *Paralel for yan*<sub>optseq</sub> *yeni satır*
+*Parallel-for-yönergesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel for`*Parallel-for-yan tümcesi*<sub>seçeneksırası</sub> *yeni satır*
 
-*Paralel for yan*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Paralel yan benzersiz*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*for yan benzersiz*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Veri yan tümcesi*
+*Parallel-for-yan tümcesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique-Parallel-yan tümcesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique-for-yan tümcesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-yan tümcesi*
 
-*Paralel bölümleri yapısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Paralel bölümleri yönergesi bölümüne kapsamı*
+*paralel-bölümler-yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Parallel-sections-Directive bölümü-kapsam*
 
-*Paralel bölümleri yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel sections` *Paralel bölümleri yan*<sub>optseq</sub> *yeni satır*
+*paralel-bölümler-yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel sections`*Parallel-sections-yan tümce*<sub>seçeneksırası</sub> *yeni-satır*
 
-*Paralel bölümleri yan*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Paralel yan benzersiz*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Veri yan tümcesi*
+*Parallel-sections-yan tümcesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique-Parallel-yan tümcesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-yan tümcesi*
 
-*Ana yapısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Ana yönergesi yapısal blok*
+*ana yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ana yönerge yapılandırılmış-blok*
 
-*Ana yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp master` *Yeni satır*
+*ana yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp master`*yeni satır*
 
-*Critical yapı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Critical yönergesini yapısal blok*
+*kritik-yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*kritik-yönerge yapılandırılmış blok*
 
-*Critical yönergesini*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp critical` *Bölge ifade*<sub>iyileştirilmiş</sub> *yeni satır*
+*kritik-yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp critical`*bölge tümceciği*<sub>katılım</sub> *yeni satırı*
 
-*Bölge ifade*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*(tanımlayıcı)*
+*bölge tümceciği*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*
 
-*barrier yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp barrier` *Yeni satır*
+*engel-yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp barrier`*yeni satır*
 
-*atomic yapı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*atomic yönergesini ifade deyimi*
+*atomik yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Atomik yönerge ifadesi-deyim*
 
-*atomic yönergesini*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp atomic` *Yeni satır*
+*atomik yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp atomic`*yeni satır*
 
-*Flush yönergesini*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp flush` *Flush değişkenleri*<sub>iyileştirilmiş</sub> *yeni satır*
+*Flush-yönergesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp flush`*Flush-VARS*<sub>opt</sub> *yeni satır*
 
-*Flush değişkenleri*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*(değişken-listesi)*
+*Flush-VARS*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*(değişken listesi)*
 
-*sıralı yapısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sıralı yönergesi yapısal blok*
+*sıralı-yapı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sıralı-yönerge yapılandırılmış-blok*
 
-*sıralı yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp ordered` *Yeni satır*
+*sıralı-yönerge*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp ordered`*yeni satır*
 
-**/\* Standart bildirimleri \*/**
+**/\* Standart bildirimler \*/**
 
-*bildirimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*threadprivate yönergesi*
+*bildirim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*threadprivate-yönergesi*
 
-*threadprivate yönergesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp threadprivate (` *değişken listesi* `)` *yeni satır*
+*threadprivate-yönergesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp threadprivate (`*değişken listesi* `)` *yeni satır*    
 
-*Veri yan*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `private (` *değişken listesi*   `)`<br/>
+*veri yan tümcesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `private (`*değişken listesi*   `)`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `copyprivate (`  *değişken listesi*    `)`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `firstprivate (`  *değişken listesi*    `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `lastprivate (` *değişken listesi*    `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `shared (` *değişken listesi*   `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `lastprivate (`*değişken listesi*    `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `shared (`*değişken listesi*   `)`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `default ( shared )`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `default ( none )`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `reduction (`  *Azaltma işleci*`:`*değişken listesi*    `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `reduction (`  *azaltma-işleç* `:` *değişken listesi*          `)`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `copyin (`  *değişken listesi*    `)`
 
-*Azaltma işleci*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Biri:   `+ \* - & ^ | && ||`
+*azaltma-işleç*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Aşağıdakilerden biri:   `+ \* - & ^ | && ||`
 
-**/\* C \*/**
-
-*değişken listesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*değişken listesi* `,` *tanımlayıcısı*
-
-**/\* c++'ta \*/**
+**/\* C 'de \*/**
 
 *değişken listesi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*deyim kimliği*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*değişken listesi* `,` *kimliği ifadesi*
+&nbsp;&nbsp;&nbsp;&nbsp;*Tanımlayıcısını*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*değişken listesi* `,` *tanımlayıcı*   
+
+**/\* C++ ' da \*/**
+
+*değişken listesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*kimlik ifadesi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*değişken listesi* `,` *kimlik ifadesi*   

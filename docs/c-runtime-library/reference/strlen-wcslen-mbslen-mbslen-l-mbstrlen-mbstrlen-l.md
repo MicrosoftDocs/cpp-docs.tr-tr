@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l'
 title: strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 ms.date: 4/2/2020
 api_name:
@@ -57,19 +58,19 @@ helpviewer_keywords:
 - strlen function
 - _mbslen function
 ms.assetid: 16462f2a-1e0f-4eb3-be55-bf1c83f374c2
-ms.openlocfilehash: 4dc50decb3c7c72aaa89b729b30d4581d32164c9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 54001a90003ff3a6931f43687fc08366607caf2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919967"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344841"
 ---
 # <a name="strlen-wcslen-_mbslen-_mbslen_l-_mbstrlen-_mbstrlen_l"></a>strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 
 Geçerli yerel ayarı veya belirtilen yerel ayarı kullanarak bir dizenin uzunluğunu alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](strnlen-strnlen-s.md)
 
 > [!IMPORTANT]
-> **_mbslen**, **_mbslen_l**, **_mbstrlen**ve **_mbstrlen_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbslen**, **_mbslen_l**, **_mbstrlen** ve **_mbstrlen_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -106,7 +107,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, Terminal null hariç olmak üzere *Str*içindeki karakter sayısını döndürür. Dize geçersiz bir çok baytlı karakter içeriyorsa döndürülen `((size_t)(-1))` **_mbstrlen** ve **_mbstrlen_l**dışında bir hata göstermek için hiçbir dönüş değeri ayrılmamıştır.
+Bu işlevlerin her biri, Terminal null hariç olmak üzere *Str* içindeki karakter sayısını döndürür. Dize geçersiz bir çok baytlı karakter içeriyorsa döndürülen **_mbstrlen** ve **_mbstrlen_l** dışında bir hata göstermek için hiçbir dönüş değeri ayrılmamıştır `((size_t)(-1))` .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -124,7 +125,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |**_tcsclen**|**strlen**|**_mbslen**|**wcslen**|
 |**_tcsclen_l**|**strlen**|**_mbslen_l**|**wcslen**|
 
-**_mbslen** ve **_mbslen_l** bir çok baytlı karakter dizesindeki çok baytlı karakterlerin sayısını döndürür ancak çok baytlı karakter geçerliliği için test etmez. çok baytlı karakter geçerliliği için **_mbstrlen** ve **_mbstrlen_l** test edin ve çok baytlı karakter dizilerini tanıyın. **_Mbstrlen** veya **_mbstrlen_l** geçirilen dize, kod sayfası için geçersiz bir çok baytlı karakter içeriyorsa, işlev-1 döndürür ve **errno** 'u **eilseq**olarak ayarlar.
+**_mbslen** ve **_mbslen_l** bir çok baytlı karakter dizesindeki çok baytlı karakterlerin sayısını döndürür ancak çok baytlı karakter geçerliliği için test etmez. çok baytlı karakter geçerliliği için **_mbstrlen** ve **_mbstrlen_l** test edin ve çok baytlı karakter dizilerini tanıyın. **_Mbstrlen** veya **_mbstrlen_l** geçirilen dize, kod sayfası için geçersiz bir çok baytlı karakter içeriyorsa, işlev-1 döndürür ve **errno** 'u **eilseq** olarak ayarlar.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -132,10 +133,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strlen**|\<String. h>|
-|**wcslen**|\<String. h> veya \<wchar. h>|
-|**_mbslen**, **_mbslen_l**|\<mbstring. h>|
-|**_mbstrlen**, **_mbstrlen_l**|\<Stdlib. h>|
+|**strlen**|\<string.h>|
+|**wcslen**|\<string.h> veya \<wchar.h>|
+|**_mbslen**, **_mbslen_l**|\<mbstring.h>|
+|**_mbstrlen**, **_mbstrlen_l**|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -205,12 +206,12 @@ Bytes in 'ABCァD' : 6
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strcoll İşlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
+[strcoll Işlevleri](../../c-runtime-library/strcoll-functions.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

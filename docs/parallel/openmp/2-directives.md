@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: 2. Yönergeler'
 title: 2. Yönergeler
 ms.date: 01/18/2019
 ms.assetid: d1a69374-6c03-45fb-8c86-e91cea8adae8
-ms.openlocfilehash: 5b2649a65efd3368cf8a4d2649a424b1a539f1ef
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 66b4ee4cdf3fec1740ed9b471c1c57cffebad6d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841980"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342575"
 ---
 # <a name="2-directives"></a>2. Yönergeler
 
@@ -34,7 +35,7 @@ Bir OpenMP yönergesi, yapılandırılmış bir blok olması gereken en fazla bi
 
 ## <a name="22-conditional-compilation"></a>2,2 Koşullu derleme
 
-`_OPENMP`Makro adı, OpenMP uyumlu uygulamalar tarafından, onaylanan belirtiminin yılı ve ayı olacak şekilde, Decimal sabit *yyyymm*olarak tanımlanır. Bu makro bir `#define` veya `#undef` ön işleme yönergesinin konusu olmamalıdır.
+`_OPENMP`Makro adı, OpenMP uyumlu uygulamalar tarafından, onaylanan belirtiminin yılı ve ayı olacak şekilde, Decimal sabit *yyyymm* olarak tanımlanır. Bu makro bir `#define` veya `#undef` ön işleme yönergesinin konusu olmamalıdır.
 
 ```cpp
 #ifdef _OPENMP
@@ -182,20 +183,20 @@ Aşağıdakilerden biri:
 - `>`
 - `>=`
 
-*lb*, *b*ve *incr*<br>
+*lb*, *b* ve *incr*<br>
 Sabit tamsayı ifadelerini döngüye sokun. Bu ifadelerin değerlendirmesi sırasında eşitleme yoktur, bu nedenle değerlendirilen yan etkiler belirsiz sonuçlar üretir.
 
-Kurallı form, döngü yineleme sayısının döngüye girişte hesaplanmasını sağlar. Bu hesaplama, integral promosyonları sonrasında *var*türündeki değerlerle yapılır. Özellikle, *b* `-` *lb* `+` *incr* değeri bu tür içinde temsil ediediliyorsa, sonuç belirsiz olur. Daha ayrıntılı olarak, *mantıksal op* `<` veya ise `<=` *incr-Expr* , döngünün her yinelemesinde *var* olmasına neden olmalıdır.   *Mantıksal op* `>` veya ise `>=` , *incr-Expr* , döngünün her yinelemesinde *var* olmasına neden olmalıdır.
+Kurallı form, döngü yineleme sayısının döngüye girişte hesaplanmasını sağlar. Bu hesaplama, integral promosyonları sonrasında *var* türündeki değerlerle yapılır. Özellikle, *b* `-` *lb* `+` *incr* değeri bu tür içinde temsil ediediliyorsa, sonuç belirsiz olur. Daha ayrıntılı olarak, *mantıksal op* `<` veya ise `<=` *incr-Expr* , döngünün her yinelemesinde *var* olmasına neden olmalıdır.   *Mantıksal op* `>` veya ise `>=` , *incr-Expr* , döngünün her yinelemesinde *var* olmasına neden olmalıdır.
 
-`schedule`Yan tümcesi, `for` döngünün yinelemelerinin takım iş parçacıkları arasında nasıl bölüneceğini belirtir. Bir programın doğruluğu, belirli bir yinelemeyi yürüten iş parçacığına bağlı olmamalıdır. *Chunk_size*değeri, belirtilmişse pozitif bir değer içeren bir döngü sabit tamsayı ifadesi olmalıdır. Bu ifadenin değerlendirmesi sırasında eşitleme yoktur, bu nedenle değerlendirilen yan etkiler belirsiz sonuçlar üretir. Zamanlama *türü* aşağıdaki değerlerden biri olabilir:
+`schedule`Yan tümcesi, `for` döngünün yinelemelerinin takım iş parçacıkları arasında nasıl bölüneceğini belirtir. Bir programın doğruluğu, belirli bir yinelemeyi yürüten iş parçacığına bağlı olmamalıdır. *Chunk_size* değeri, belirtilmişse pozitif bir değer içeren bir döngü sabit tamsayı ifadesi olmalıdır. Bu ifadenin değerlendirmesi sırasında eşitleme yoktur, bu nedenle değerlendirilen yan etkiler belirsiz sonuçlar üretir. Zamanlama *türü* aşağıdaki değerlerden biri olabilir:
 
 Tablo 2-1: `schedule` yan tümce *türü* değerleri
 
 |Değer|Açıklama|
 |-|-|
-|static|`schedule(static,` *Chunk_size* `)` belirtildiğinde, yinelemeler *chunk_size*belirtilen boyut öbeklerine bölünür. Parçalar, iş parçacığı numarası sırasına göre bir kez, takım iş parçacığına bir hepsini bir kez daha kez atanır. *Chunk_size* belirtilmediğinde, yineleme alanı her iş parçacığına bir öbek atandığında, boyutu yaklaşık olarak eşit olan parçalara bölünür.|
+|static|`schedule(static,` *Chunk_size* `)` belirtildiğinde, yinelemeler *chunk_size* belirtilen boyut öbeklerine bölünür. Parçalar, iş parçacığı numarası sırasına göre bir kez, takım iş parçacığına bir hepsini bir kez daha kez atanır. *Chunk_size* belirtilmediğinde, yineleme alanı her iş parçacığına bir öbek atandığında, boyutu yaklaşık olarak eşit olan parçalara bölünür.|
 |dynamic|`schedule(dynamic,` *Chunk_size* `)` belirtildiğinde, yinelemeler, her biri *chunk_size* yineleme içeren bir dizi yığından ayrılır. Her bir öbek, bir atamayı bekleyen bir iş parçacığına atanır. İş parçacığı, yineleme öbekini yürütür ve sonra bir öbek atanıncaya kadar bir sonraki atamaya bekler. Atanacak son öbekte daha az sayıda yineleme olabilir. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
-|temelli|`schedule(guided,` *Chunk_size* `)` belirtildiğinde, yinelemeler, azalan boyutlarla öbeklerdeki iş parçacıklarına atanır. Bir iş parçacığı atanmış yineleme öbeğini bitirdiğinde, hiçbiri ayrılana kadar dinamik olarak başka bir öbek atanır. 1 *chunk_size* için, her öbekin boyutu, iş parçacığı sayısına bölünen atanmamış yineleme sayısının yaklaşık olarak sayısıdır. Bu boyutlar neredeyse üstel olarak 1 ' i azaltır. *K* değeri 1 ' den büyük olan bir *chunk_size* için, en son öbekin *k* yinelemeden daha az yineleme olması dışında, Boyutlar neredeyse katlanarak *k*olarak azalır. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
+|temelli|`schedule(guided,` *Chunk_size* `)` belirtildiğinde, yinelemeler, azalan boyutlarla öbeklerdeki iş parçacıklarına atanır. Bir iş parçacığı atanmış yineleme öbeğini bitirdiğinde, hiçbiri ayrılana kadar dinamik olarak başka bir öbek atanır. 1 *chunk_size* için, her öbekin boyutu, iş parçacığı sayısına bölünen atanmamış yineleme sayısının yaklaşık olarak sayısıdır. Bu boyutlar neredeyse üstel olarak 1 ' i azaltır. *K* değeri 1 ' den büyük olan bir *chunk_size* için, en son öbekin *k* yinelemeden daha az yineleme olması dışında, Boyutlar neredeyse katlanarak *k* olarak azalır. *Chunk_size* belirtilmediğinde, varsayılan olarak 1 olur.|
 |çalışma zamanı|`schedule(runtime)`Belirtildiğinde, zamanlama ile ilgili karar, çalışma zamanına kadar ertelenir. Öbeklerin zamanlama *türü* ve boyutu, ortam değişkeni ayarlanarak çalışma zamanında seçilebilir `OMP_SCHEDULE` . Bu ortam değişkeni ayarlanmamışsa, sonuçta elde edilen zamanlama uygulama tanımlı olur. Belirtildiğinde  `schedule(runtime)` *chunk_size* belirtilmemelidir.|
 
 Açıkça tanımlanmış bir yan tümce yokluğunda `schedule` , varsayılan değer `schedule` uygulama tanımlı ' dır.
@@ -220,7 +221,7 @@ OpenMP uyumlu bir program doğru yürütme için belirli bir zamanlamaya dayanma
 
 - Bir yönergede yalnızca tek bir `nowait` yan tümce görünebilir `for` .
 
-- *Chunk_size*, *lb*, *b*veya *incr* ifadeleri içinde herhangi bir yan etkilerin ne zaman oluşması veya ne sıklıkla oluşması belirtilmemiş olur.
+- *Chunk_size*, *lb*, *b* veya *incr* ifadeleri içinde herhangi bir yan etkilerin ne zaman oluşması veya ne sıklıkla oluşması belirtilmemiş olur.
 
 - *Chunk_size* ifadesinin değeri, ekipteki tüm iş parçacıkları için aynı olmalıdır.
 
@@ -416,11 +417,11 @@ if (x!=0) {
 
 - *x* skaler türü olan bir lvalue deyimidir.
 
-- *Expr* skaler türü olan bir ifadedir ve *x*tarafından belirlenen nesneye başvurmuyor.
+- *Expr* skaler türü olan bir ifadedir ve *x* tarafından belirlenen nesneye başvurmuyor.
 
 - *binop* , aşırı yüklenmiş bir operatör değildir ve,,,,,,, `+` `*` `-` `/` `&` `^` `|` `<<` , veya `>>` ' den biridir.
 
-Uygulama tanımlı olsa da, bir uygulamanın tüm `atomic` yönergeleri `critical` aynı benzersiz *ada*sahip yönergelerden değiştirse de, `atomic` yönerge iyileştirilmesine izin verir. Genellikle atomik güncelleştirmeyi en az ek yük ile gerçekleştirebileceğiniz donanım yönergeleri sağlanır.
+Uygulama tanımlı olsa da, bir uygulamanın tüm `atomic` yönergeleri `critical` aynı benzersiz *ada* sahip yönergelerden değiştirse de, `atomic` yönerge iyileştirilmesine izin verir. Genellikle atomik güncelleştirmeyi en az ek yük ile gerçekleştirebileceğiniz donanım yönergeleri sağlanır.
 
 Yalnızca *x* tarafından atanan nesnenin yükü ve deposu atomik; *ifadenin* değerlendirmesi atomik değildir. Yarış koşullarından kaçınmak için, bu konumdaki tüm güncelleştirmeler, `atomic` yarış koşullarından muaf oldukları bilinenler haricinde yönergesiyle korunmalıdır.
 
@@ -457,9 +458,9 @@ Yönergesinin sözdizimi aşağıdaki gibidir `flush` :
 #pragma omp flush [(variable-list)]  new-line
 ```
 
-Eşitleme gerektiren nesneler değişkenlere göre atananlardan sonra, bu değişkenler isteğe bağlı *değişken listesinde*belirlenebilir. *Değişken listesinde*bir işaretçi varsa, işaretçinin başvurduğu nesne değil işaretçi kendisi temizlenir.
+Eşitleme gerektiren nesneler değişkenlere göre atananlardan sonra, bu değişkenler isteğe bağlı *değişken listesinde* belirlenebilir. *Değişken listesinde* bir işaretçi varsa, işaretçinin başvurduğu nesne değil işaretçi kendisi temizlenir.
 
-`flush` *Değişken listesi* olmayan bir yönerge, erişilemeyen nesneler hariç tüm paylaşılan nesneleri otomatik depolama süresiyle eşitler. (Bu, bir `flush` *değişken listesi*ile öğesinden daha fazla yüke neden olabilir.) `flush` *Değişken listesi* olmayan bir yönerge aşağıdaki yönergeler için kapsanır:
+`flush` *Değişken listesi* olmayan bir yönerge, erişilemeyen nesneler hariç tüm paylaşılan nesneleri otomatik depolama süresiyle eşitler. (Bu, bir `flush` *değişken listesi* ile öğesinden daha fazla yüke neden olabilir.) `flush` *Değişken listesi* olmayan bir yönerge aşağıdaki yönergeler için kapsanır:
 
 - `barrier`
 - Giriş ve çıkış `critical`
@@ -597,7 +598,7 @@ Yönerge yan tümceleri içinde görünen tüm değişkenler görünür olmalıd
 
 Aşağıdaki bölümlerde veri paylaşımı özniteliği yan tümceleri açıklanır:
 
-- [private](#2721-private)
+- [özelleştirme](#2721-private)
 - [firstprivate](#2722-firstprivate)
 - [lastprivate](#2723-lastprivate)
 - [Paylaşılan](#2724-shared)
@@ -709,7 +710,7 @@ Bir değişkenin varsayılan veri paylaşımı özniteliği `private` , `firstpr
 
 #### <a name="2726-reduction"></a>2.7.2.6 reduction
 
-Bu yan tümce, işleç *op*ile *değişken listesinde*görünen skaler değişkenlerde bir azalma gerçekleştirir. `reduction`Yan tümcesinin sözdizimi şöyledir:
+Bu yan tümce, işleç *op* ile *değişken listesinde* görünen skaler değişkenlerde bir azalma gerçekleştirir. `reduction`Yan tümcesinin sözdizimi şöyledir:
 
 `reduction(`*op* `:` *değişken listesi*`)`
 
@@ -732,7 +733,7 @@ Listede belirtilen azaltma değişkenlerinden biri.
 Skalar azaltma değişkenlerinin virgülle ayrılmış listesi.
 
 *ifadeyi*<br/>
-*X*başvurusu olmayan skaler türü olan bir ifade.
+*X* başvurusu olmayan skaler türü olan bir ifade.
 
 *üs*<br/>
 Aşırı yüklenmiş bir işleç değil,,,,, `+` `*` `-` `&` `^` `|` , `&&` , veya `||` .
@@ -828,7 +829,7 @@ variable-list
 )
 ```
 
-`copyprivate`Bağımsız tümcesinin değişken listesi içindeki değişkenlerde etkisi, yapısıyla ilişkili yapılandırılmış bloğun yürütülmesi `single` ve ekipteki iş parçacıklarından önce, yapının sonunda engeli kapatmadan önce oluşur. Ardından, tüm diğer iş parçacıklarında, *değişken listesindeki*her bir değişken için, bu değişken yapının yapısal bloğunu yürüten iş parçacığında karşılık gelen değişkenin değeri ile tanımlanır (atama ölçütü olarak).
+`copyprivate`Bağımsız tümcesinin değişken listesi içindeki değişkenlerde etkisi, yapısıyla ilişkili yapılandırılmış bloğun yürütülmesi `single` ve ekipteki iş parçacıklarından önce, yapının sonunda engeli kapatmadan önce oluşur. Ardından, tüm diğer iş parçacıklarında, *değişken listesindeki* her bir değişken için, bu değişken yapının yapısal bloğunu yürüten iş parçacığında karşılık gelen değişkenin değeri ile tanımlanır (atama ölçütü olarak).
 
 `copyprivate`Yan tümcesine yönelik kısıtlamalar aşağıdaki gibidir:
 

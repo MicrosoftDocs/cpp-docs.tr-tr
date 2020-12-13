@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Makeayırıcı sınıfı'
 title: MakeAllocator Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::MakeAllocator::MakeAllocator, constructor
 - Microsoft::WRL::Details::MakeAllocator::~MakeAllocator, destructor
 ms.assetid: a1114615-abd7-4a56-9bc3-750c118f0fa1
-ms.openlocfilehash: 19d3ab294df8adc059424c97e5733ae9ebb75c9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c4e550dec37096a5ff6a41eccd4eb41968721a7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344529"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator Sınıfı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<
@@ -58,7 +59,7 @@ Zayıf başvuru desteği olan veya olmayan bir etkinleştirilebilir sınıfı i�
 
 `MakeAllocator`Kullanıcı tanımlı bir bellek ayırma modeli uygulamak için sınıfını geçersiz kılın.
 
-`MakeAllocator`Genellikle, oluşturma sırasında bir nesne oluşturduğunda bellek sızıntılarını engellemek için kullanılır.
+`MakeAllocator` Genellikle, oluşturma sırasında bir nesne oluşturduğunda bellek sızıntılarını engellemek için kullanılır.
 
 ## <a name="members"></a>Üyeler
 
@@ -86,7 +87,7 @@ Ad                                 | Açıklama
 
 **Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="makeallocatorallocate"></a><a name="allocate"></a>Makeayırıcı:: allocate
+## <a name="makeallocatorallocate"></a><a name="allocate"></a> Makeayırıcı:: allocate
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -106,7 +107,7 @@ Ayrılan belleğin boyutu, geçerli şablon parametresi tarafından belirtilen t
 
 Bir geliştiricinin yalnızca `Allocate()` farklı bir bellek ayırma modeli uygulamak için yöntemini geçersiz kılması gerekir.
 
-## <a name="makeallocatordetach"></a><a name="detach"></a>Makeayırıcı::D etach
+## <a name="makeallocatordetach"></a><a name="detach"></a> Makeayırıcı::D etach
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -120,7 +121,7 @@ Geçerli nesneden [ayırma](#allocate) yöntemiyle ayrılan belleği ilişkilend
 
 `Detach()`' İ çağırdığınızda, yöntemi tarafından belirtilen belleği silmekten siz sorumlusunuz `Allocate` .
 
-## <a name="makeallocatormakeallocator"></a><a name="makeallocator"></a>Makeayırıcı:: Makeayırıcı
+## <a name="makeallocatormakeallocator"></a><a name="makeallocator"></a> Makeayırıcı:: Makeayırıcı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -132,7 +133,7 @@ MakeAllocator();
 
 `MakeAllocator` sınıfının yeni bir örneğini başlatır.
 
-## <a name="makeallocatormakeallocator"></a><a name="tilde-makeallocator"></a>Makeayırıcı:: ~ Makeayırıcı
+## <a name="makeallocatormakeallocator"></a><a name="tilde-makeallocator"></a> Makeayırıcı:: ~ Makeayırıcı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 

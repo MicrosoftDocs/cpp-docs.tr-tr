@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Işlev çağırma Işleci: ()'
 title: 'İşlev çağırma işleci: ()'
 ms.date: 06/11/2020
 helpviewer_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
 no-loc:
 - opt
-ms.openlocfilehash: 5bb87795d3e91d853dc0d269ee9d2aa3ba025c0e
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: 351674f345c7213a3c164ff88e9a165775088c68
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344568"
 ---
 # <a name="function-call-operator-"></a>İşlev Çağırma İşleci: ()
 
 İşlev çağrısı, *`postfix-expression`* bir işlev veya çağrılabilir bir nesne ve ardından işlev çağrısı işleci tarafından değerlendirilen bir ifade tarafından oluşturulan bir türüdür **`()`** . Bir nesne `operator ()` , nesne için işlev çağrısı semantiğini sağlayan bir işlev bildirebilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > *`postfix-expression`*:\
 > &emsp;*`postfix-expression`* **`(`** *`argument-expression-list`* <sub>opt</sub> **`)`**
@@ -136,7 +137,7 @@ int main()
 }
 ```
 
-Önceki kod `Point` , *x* ve *y* koordinatlarını temsil eden özel veri nesnelerini içeren adlı bir sınıfı tanımlar. Bu veri nesnelerinin değiştirilmesi ve değerlerinin alınması gerekir. Bu program, böyle bir sınıf için yalnızca birkaç tasarımdan biridir; `GetX`ve ya da işlevlerinin kullanımı, `SetX` `GetY` `SetY` başka bir tasarıma sahiptir.
+Önceki kod `Point` , *x* ve *y* koordinatlarını temsil eden özel veri nesnelerini içeren adlı bir sınıfı tanımlar. Bu veri nesnelerinin değiştirilmesi ve değerlerinin alınması gerekir. Bu program, böyle bir sınıf için yalnızca birkaç tasarımdan biridir; `GetX` ve ya da işlevlerinin kullanımı, `SetX` `GetY` `SetY` başka bir tasarıma sahiptir.
 
 Sınıf türleri, sınıf türlerine işaretçiler veya sınıf türlerine yapılan başvurular döndüren işlevler, üye seçim işleçleri için sol işlenen olarak kullanılabilir. Aşağıdaki kod geçerlidir:
 

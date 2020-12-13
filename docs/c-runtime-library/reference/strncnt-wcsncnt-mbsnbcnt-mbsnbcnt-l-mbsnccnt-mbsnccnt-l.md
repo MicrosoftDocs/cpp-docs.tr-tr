@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l'
 title: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 ms.date: 4/2/2020
 api_name:
@@ -58,21 +59,21 @@ helpviewer_keywords:
 - _mbsnccnt function
 - _wcsncnt function
 ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
-ms.openlocfilehash: 77746af98e5d62b80d5a0d2d93eb1f717c74b33e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9030c66e226cc36e08ca1730a8178b0000216d9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344750"
 ---
 # <a name="_strncnt-_wcsncnt-_mbsnbcnt-_mbsnbcnt_l-_mbsnccnt-_mbsnccnt_l"></a>_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 
 Belirtilen bir Count içindeki karakter veya bayt sayısını döndürür.
 
 > [!IMPORTANT]
-> **_mbsnbcnt**, **_mbsnbcnt_l**, **_mbsnccnt**ve **_mbsnccnt_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnbcnt**, **_mbsnbcnt_l**, **_mbsnccnt** ve **_mbsnccnt_l** Windows çalışma zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 size_t _strncnt(
@@ -109,24 +110,24 @@ size_t _mbsnccnt_l(
 İncelenme dizesi.
 
 *biriktirme*<br/>
-*Str*içinde İncelenme karakter veya bayt sayısı.
+*Str* içinde İncelenme karakter veya bayt sayısı.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsnbcnt** ve **_mbsnbcnt_l** , *Str*çok baytlı karakterlerinin ilk *sayısında* bulunan bayt sayısını döndürür. **_mbsnccnt** ve **_mbsnccnt_l** , *Str*'nin ilk bayt *sayısında* bulunan karakter sayısını döndürür. *Str* incelemesi tamamlanmadan null karakter ile karşılaşılırsa, null karakterden önce bulunan bayt veya karakter sayısını döndürür. *Str* *sayı* sayısından az karakter veya bayttan oluşuyorsa, dizedeki karakter veya bayt sayısını döndürür. *Count* değeri sıfırdan küçükse 0 döndürür. Önceki sürümlerde, bu işlevlerin size_t yerine bir dönüş değeri vardı **`int`** . **size_t**
+**_mbsnbcnt** ve **_mbsnbcnt_l** , *Str* çok baytlı karakterlerinin ilk *sayısında* bulunan bayt sayısını döndürür. **_mbsnccnt** ve **_mbsnccnt_l** , *Str*'nin ilk bayt *sayısında* bulunan karakter sayısını döndürür. *Str* incelemesi tamamlanmadan null karakter ile karşılaşılırsa, null karakterden önce bulunan bayt veya karakter sayısını döndürür. *Str* *sayı* sayısından az karakter veya bayttan oluşuyorsa, dizedeki karakter veya bayt sayısını döndürür. *Count* değeri sıfırdan küçükse 0 döndürür. Önceki sürümlerde, bu işlevlerin size_t yerine bir dönüş değeri vardı **`int`** . 
 
 **_strncnt** , tek baytlık dize *Str*'nin ilk *sayım* baytındaki karakter sayısını döndürür. **_wcsncnt** , geniş karakterli dize *Str*'nin ilk *sayı* geniş karakterdeki karakter sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_mbsnbcnt** ve **_mbsnbcnt_l** sayı *Str*çok baytlı karakterlerinin ilk *sayısında* bulunan bayt sayısı. **_mbsnbcnt** ve **_mbsnbcnt_l** **mtob** yerine ve **mtob**yerine kullanılmalıdır.
+**_mbsnbcnt** ve **_mbsnbcnt_l** sayı *Str* çok baytlı karakterlerinin ilk *sayısında* bulunan bayt sayısı. **_mbsnbcnt** ve **_mbsnbcnt_l** **mtob** yerine ve **mtob** yerine kullanılmalıdır.
 
-**_mbsnccnt** ve **_mbsnccnt_l** sayısı *Str*'nin ilk baytlarında bulunan karakter sayısını *say.* **_Mbsnccnt** ve **_mbsnccnt_l** iki baytlık bir karakterin ikinci baytında boş bir karakterle karşılaşırsanız, ilk bayt de null olarak değerlendirilir ve döndürülen sayı değerine dahil değildir. **_mbsnccnt** ve **_mbsnccnt_l** **bTom** **'ın yerine**kullanılması gerekir.
+**_mbsnccnt** ve **_mbsnccnt_l** sayısı *Str*'nin ilk baytlarında bulunan karakter sayısını *say.* **_Mbsnccnt** ve **_mbsnccnt_l** iki baytlık bir karakterin ikinci baytında boş bir karakterle karşılaşırsanız, ilk bayt de null olarak değerlendirilir ve döndürülen sayı değerine dahil değildir. **_mbsnccnt** ve **_mbsnccnt_l** **bTom** **'ın yerine** kullanılması gerekir.
 
-*Str* **null** bir işaretçisiyse veya *sayı* 0 ise, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır, **errno** , **EINVAL**olarak ayarlanır ve işlev 0 döndürür.
+*Str* **null** bir işaretçisiyse veya *sayı* 0 ise, bu işlevler [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır, **errno** , **EINVAL** olarak ayarlanır ve işlev 0 döndürür.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -185,6 +186,6 @@ The first 10 characters are single-byte.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>

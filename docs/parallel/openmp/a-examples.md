@@ -1,21 +1,22 @@
 ---
+description: 'Şunlar hakkında daha fazla bilgi edinin: A. örnekleri'
 title: A. Örnekler
 ms.date: 01/18/2019
 ms.assetid: c0f6192f-a205-449b-b84c-cb30dbcc8b8f
-ms.openlocfilehash: 061490d34829175bfbdcd84d6208aa396bb19671
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d52b59f9f83cf791c03fb49ca726273a2c977e58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362978"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342549"
 ---
 # <a name="a-examples"></a>A. Örnekler
 
-Bu belgede tanımlanan yapıları örnekleri aşağıda verilmiştir. Yalnızca gerekli olduğunda bileşik bir yönergesinden sonra bir deyim ve olmayan bileşik deyim, önceki yönergesinden kaynaklandığından girintili hale getirilir.
+Aşağıda, bu belgede tanımlanan yapıların örnekleri verilmiştir. Bir yönergeyi izleyen bir ifade yalnızca gerekli olduğunda ve bileşik olmayan bir deyimin kendisinden önceki bir yönergeden girintilendiği bir ifadedir.
 
-## <a name="a1-a-simple-loop-in-parallel"></a>A.1 bir basit döngüyü paralel
+## <a name="a1-a-simple-loop-in-parallel"></a>A. 1 basit bir döngü paralel
 
-Aşağıdaki örnek, bir döngü kullanarak paralel hale getirmek gösterilmiştir [için paralel](2-directives.md#251-parallel-for-construct) yönergesi. Döngü yineleme değişkeni varsayılan olarak, özel olduğundan bir özel yan tümcesinde açıkça belirtmeniz gerekmez.
+Aşağıdaki örnek, [Parallel for](2-directives.md#251-parallel-for-construct) direktifini kullanarak bir döngünün nasıl paralel hale getirmek gösterir. Loop yineleme değişkeni varsayılan olarak özeldir, bu nedenle özel bir yan tümcesinde açıkça belirtilmesi gerekmez.
 
 ```cpp
 #pragma omp parallel for
@@ -23,9 +24,9 @@ Aşağıdaki örnek, bir döngü kullanarak paralel hale getirmek gösterilmişt
         b[i] = (a[i] + a[i-1]) / 2.0;
 ```
 
-## <a name="a2-conditional-compilation"></a>A.2 koşullu derleme
+## <a name="a2-conditional-compilation"></a>A. 2 Koşullu derleme
 
-Aşağıdaki örnekler OpenMP makrosu kullanarak koşullu derleme kullanımını gösterir [_OPENMP](2-directives.md#22-conditional-compilation). OpenMP derleme ile `_OPENMP` olur Makro tanımlı.
+Aşağıdaki örneklerde, OpenMP makro [_OPENMP](2-directives.md#22-conditional-compilation)kullanılarak Koşullu derlemenin kullanımı gösterilmektedir. OpenMP derlemesi ile `_OPENMP` makro tanımlı hale gelir.
 
 ```cpp
 # ifdef _OPENMP
@@ -33,7 +34,7 @@ Aşağıdaki örnekler OpenMP makrosu kullanarak koşullu derleme kullanımını
 # endif
 ```
 
-Tek bir yönergesinde test edilecek birden fazla Makro tanımlı önişlemci işleci sağlar.
+Tanımlı Önişlemci işleci, tek bir yönergede birden fazla makronun test olmasını sağlar.
 
 ```cpp
 # if defined(_OPENMP) && defined(VERBOSE)
@@ -41,9 +42,9 @@ Tek bir yönergesinde test edilecek birden fazla Makro tanımlı önişlemci iş
 # endif
 ```
 
-## <a name="a3-parallel-regions"></a>A.3 paralel bölgeleri
+## <a name="a3-parallel-regions"></a>A. 3 paralel bölgesi
 
-[Paralel](2-directives.md#23-parallel-construct) yönergesi dilimi kaba paralel programlarında kullanılabilir. Aşağıdaki örnekte, her bir iş parçacığı bir paralel bölgenin içinde hangi bölümünün genel dizi karar `x` üzerinde çalışmak için iş parçacığı sayısına göre:
+[Paralel](2-directives.md#23-parallel-construct) yönerge, kaba Gresel paralel programlarda kullanılabilir. Aşağıdaki örnekte, paralel bölgedeki her iş parçacığı, `x` iş parçacığı numarasına göre genel dizinin hangi bölümünün üzerinde çalışacağına karar veriyor:
 
 ```cpp
 #pragma omp parallel shared(x, npoints) private(iam, np, ipoints)
@@ -55,9 +56,9 @@ Tek bir yönergesinde test edilecek birden fazla Makro tanımlı önişlemci iş
 }
 ```
 
-## <a name="a4-the-nowait-clause"></a>A.4 nowait yan tümcesi
+## <a name="a4-the-nowait-clause"></a>A. 4 nowait yan tümcesi
 
-Bir paralel bölgenin içinde çok sayıda bağımsız döngüler varsa, kullanabileceğiniz [nowait](2-directives.md#241-for-construct) sonunda örtük engel önlemek için yan tümcesi `for` yönergesi, aşağıdaki gibi:
+Bir paralel bölge içinde çok sayıda bağımsız döngü varsa, yönergenin sonunda belirtilen engelinden kaçınmak için [nowait](2-directives.md#241-for-construct) yan tümcesini `for` aşağıdaki gibi kullanabilirsiniz:
 
 ```cpp
 #pragma omp parallel
@@ -71,9 +72,9 @@ Bir paralel bölgenin içinde çok sayıda bağımsız döngüler varsa, kullana
 }
 ```
 
-## <a name="a5-the-critical-directive"></a>A.5 critical yönergesini
+## <a name="a5-the-critical-directive"></a>A. 5 kritik yönerge
 
-Aşağıdaki örnek birkaç içerir [kritik](2-directives.md#262-critical-construct) yönergeleri. Örnekte, bir görev sıradan çıkarılan ve üzerinde çalıştığınız bir kuyruğa alma modeli gösterilmektedir. Aynı görevi kuyruktan çıkarma işlemlerini birçok iş parçacığı karşı koruma sağlamak için sıradan çıkarmak işlemi olmalıdır bir `critical` bölümü. Bu örnekte iki kuyrukları bağımsız olduğundan, tarafından korumalı olup olmadıklarını `critical` yönergeleri farklı adlarla *xaxis* ve *yaxis*.
+Aşağıdaki örnek birkaç [kritik](2-directives.md#262-critical-construct) yönergesi içerir. Örnek, bir görevin çıkarılan ve üzerinde çalıştığı bir sıraya alma modelini göstermektedir. Aynı görevi kuyruğa almaya yönelik birçok iş parçacığına karşı koruma sağlamak için, kaldırma işlemi bir `critical` bölümde olmalıdır. Bu örnekteki iki sıra bağımsız olduğundan, `critical` farklı adlara sahip yönergeler tarafından korunur, *xaxis* ve *YAxis*.
 
 ```cpp
 #pragma omp parallel shared(x, y) private(x_next, y_next)
@@ -87,9 +88,9 @@ Aşağıdaki örnek birkaç içerir [kritik](2-directives.md#262-critical-constr
 }
 ```
 
-## <a name="a6-the-lastprivate-clause"></a>A.6 lastprivate yan tümcesi
+## <a name="a6-the-lastprivate-clause"></a>A. 6 lastprivate yan tümcesi
 
-Bazı durumlarda doğru yürütme son yineleme döngüsü bir değişkene atar değere bağlıdır. Tür bağımsız değişkenleri olarak tüm değişkenleri programlara listelemelidir bir [lastprivate](2-directives.md#2723-lastprivate) yan tümcesi değişkenlerin değerleri, döngü sırayla yürütülen aynı olacak şekilde.
+Doğru yürütme bazen bir döngünün son yinelemesinin bir değişkene atadığı değere bağlıdır. Bu tür programlar, bir [lastprivate](2-directives.md#2723-lastprivate) yan tümcesine bağımsız değişken olarak, değişkenlerin değerlerinin ardışık olarak yürütüldüğü zaman ile aynı olması için bağımsız değişkenler olarak listelenecek.
 
 ```cpp
 #pragma omp parallel
@@ -101,11 +102,11 @@ Bazı durumlarda doğru yürütme son yineleme döngüsü bir değişkene atar d
 a[i]=b[i];
 ```
 
-Yukarıdaki örnekte, değerini `i` paralel bölgenin sonunda eşit olacaktır `n-1`, sıralı bir durumda gibi.
+Yukarıdaki örnekte, `i` paralel bölgenin sonundaki değeri `n-1` , sıralı durumda olduğu gibi eşit olacaktır.
 
-## <a name="a7-the-reduction-clause"></a>A.7 reduction yan tümcesini
+## <a name="a7-the-reduction-clause"></a>A. 7 azaltma yan tümcesi
 
-Aşağıdaki örnek, gösterir [azaltma](2-directives.md#2726-reduction) yan tümcesi:
+Aşağıdaki örnek, [azaltma](2-directives.md#2726-reduction) yan tümcesini göstermektedir:
 
 ```cpp
 #pragma omp parallel for private(i) shared(x, y, n) \
@@ -116,9 +117,9 @@ Aşağıdaki örnek, gösterir [azaltma](2-directives.md#2726-reduction) yan tü
     }
 ```
 
-## <a name="a8-parallel-sections"></a>A.8 paralel bölümleri
+## <a name="a8-parallel-sections"></a>A. 8 paralel bölümleri
 
-Aşağıdaki örnekte (için [bölümünde 2.4.2](2-directives.md#242-sections-construct)), İşlevler *xaxis*, *yaxis*, ve *zaxis* eşzamanlı olarak yürütülebilir. İlk `section` yönergesi, isteğe bağlıdır.  Tüm `section` sözcük kapsamı içinde görünür gereken yönergeleri `parallel sections` oluşturun.
+Aşağıdaki örnekte ( [Bölüm 2.4.2 sections](2-directives.md#242-sections-construct)için) *xaxis*, *YAxis* ve *Zaxis* işlevleri eşzamanlı olarak çalıştırılabilir. İlk `section` yönerge isteğe bağlıdır.  Tüm `section` yönergelerin yapının sözcük biçiminde görünmesi gerekir `parallel sections` .
 
 ```cpp
 #pragma omp parallel sections
@@ -132,9 +133,9 @@ Aşağıdaki örnekte (için [bölümünde 2.4.2](2-directives.md#242-sections-c
 }
 ```
 
-## <a name="a9-single-directives"></a>A.9 Single yönergelerini
+## <a name="a9-single-directives"></a>A. 9 tek yönergeler
 
-Aşağıdaki örnek, gösterir [tek](2-directives.md#243-single-construct) yönergesi. Örnekte, yalnızca bir iş parçacığı (karşılaştığı genellikle ilk iş parçacığında `single` yönergesi) ilerleme iletisi yazdırır. Hangi iş parçacığının yürütecek şekilde için kullanıcı varsayımlar yapmamalısınız `single` bölümü. Diğer tüm iş parçacıklarının atlanacak `single` bölümünde ve sonunda engel Durdur `single` oluşturun. Diğer iş parçacıkları iş parçacığını yürütmek için beklemenize gerek kalmadan geçebilirsiniz `single` bölümünde, bir `nowait` yan tümcesi belirtilebilir `single` yönergesi.
+Aşağıdaki örnek, [tek](2-directives.md#243-single-construct) yönergeyi göstermektedir. Örnekte, yalnızca bir iş parçacığı (genellikle yönergeyle karşılaştığı ilk iş parçacığı `single` ) ilerleme iletisini yazdırır. Kullanıcı, bölümü hangi iş parçacığının yürütebileceği konusunda hiçbir varsayımda olmamalıdır `single` . Diğer tüm iş parçacıkları bu `single` bölümü atlar ve yapının sonundaki engelde durur `single` . Diğer iş parçacıkları, bölümü yürüten iş parçacığını beklemeden devam edebiliyorsa `single` , yönergede bir `nowait` yan tümce belirtilebilir `single` .
 
 ```cpp
 #pragma omp parallel
@@ -150,9 +151,9 @@ Aşağıdaki örnek, gösterir [tek](2-directives.md#243-single-construct) yöne
 }
 ```
 
-## <a name="a10-sequential-ordering"></a>A.10 ardışık sıralamayı
+## <a name="a10-sequential-ordering"></a>A. 10 sıralı sıralama
 
-[Bölümler sıralı](2-directives.md#266-ordered-construct) sıralı olarak paralel olarak yapmış iş çıktısı sıralama için kullanışlıdır. Aşağıdaki program, dizinleri sırayla kullanıma yazdırır:
+[Sıralı bölümler](2-directives.md#266-ordered-construct) , paralel olarak gerçekleştirilen çalışmanın çıkışını sıralı olarak sıralamak için faydalıdır. Aşağıdaki program dizinleri ardışık sırayla yazdırır:
 
 ```cpp
 #pragma omp for ordered schedule(dynamic)
@@ -165,9 +166,9 @@ void work(int k)
 }
 ```
 
-## <a name="a11-a-fixed-number-of-threads"></a>A.11 iş sabit bir iş parçacığı sayısı
+## <a name="a11-a-fixed-number-of-threads"></a>A. 11 sabit iş parçacığı sayısı
 
-Bazı programlar, doğru bir şekilde yürütmek için iş parçacığı, bir sabit, belirlenmiş sayısına bağlıdır.  İş parçacığı sayısını yerleştirmenin dinamik ayarına için varsayılan ayar, uygulama tanımlı olduğu için dinamik iş parçacıkları özelliği devre dışı bırakırsınız ve taşınabilirlik açıkça tutmak için iş parçacığı sayısını ayarlayın programlara seçebilirsiniz. Aşağıdaki örnek kullanarak bunun nasıl yapılacağını gösterir [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function), ve [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function):
+Bazı programlar, doğru şekilde yürütmek için sabit, daha önceden belirtilen sayıda iş parçacığına bağımlıdır.  İş parçacığı sayısı için dinamik ayarlamaya yönelik varsayılan ayar uygulama tanımlı olduğundan, bu tür programlar dinamik iş parçacıkları özelliğini kapatmayı ve taşınabilirliği sağlamak için iş parçacıklarının sayısını açıkça ayarlamayı seçebilirler. Aşağıdaki örnek, [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function)kullanarak bunun nasıl yapılacağını gösterir ve [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function):
 
 ```cpp
 omp_set_dynamic(0);
@@ -182,13 +183,13 @@ omp_set_num_threads(16);
 }
 ```
 
-Bu örnekte, yalnızca 16 iş parçacıkları tarafından yürütülürse programı doğru bir şekilde yürütür. Uygulama 16 iş parçacığı destekleme kapasitesine sahip değilse, bu örnek davranışını uygulama tarafından tanımlanır.
+Bu örnekte, program yalnızca 16 iş parçacığı tarafından yürütülürse doğru yürütülür. Uygulamanın 16 iş parçacığını destekleme yeteneği yoksa, bu örneğin davranışı uygulama tanımlı olur.
 
-Bir paralel bölgenin çalışan iş parçacıklarının sayısını ayarlama dinamik iş parçacıkları bakılmaksızın bir paralel bölgenin sırasında sabit kalır. Dinamik iş parçacıkları mekanizması paralel bölgenin başlangıcında kullanılacak iş parçacığı sayısını belirler ve bölgeyi süresi boyunca sabit tutar.
+Paralel bölgeyi yürüten iş parçacıklarının sayısı, dinamik iş parçacıkları ayarından bağımsız olarak bir paralel bölge sırasında sabit kalır. Dinamik iş parçacıkları mekanizması, paralel bölgenin başlangıcında kullanılacak iş parçacığı sayısını belirler ve bölge süresince bu sabiti korur.
 
-## <a name="a12-the-atomic-directive"></a>A.12 atomic yönergesini
+## <a name="a12-the-atomic-directive"></a>A. 12 atomik yönerge
 
-Aşağıdaki örnek, yarış durumları ortadan kaldırır (bir öğenin aynı anda güncelleştirmeleri *x* birçok iş parçacığı tarafından) kullanarak [atomik](2-directives.md#264-atomic-construct) yönergesi:
+Aşağıdaki örnek, [atomik](2-directives.md#264-atomic-construct) yönergesini kullanarak yarış koşullarını (bir *x* öğesinin çok sayıda iş parçacığı için eşzamanlı güncelleştirmeleri) engeller:
 
 ```cpp
 #pragma omp parallel for shared(x, y, index, n)
@@ -200,13 +201,13 @@ Aşağıdaki örnek, yarış durumları ortadan kaldırır (bir öğenin aynı a
     }
 ```
 
-Kullanmanın avantajı `atomic` yönergesiyse Bu örnekte iki farklı öğeler paralel olarak gerçekleşmesi için x güncelleştirmeleri sağlar. Varsa bir [kritik](2-directives.md#262-critical-construct) yönergesi öğelerine tüm güncelleştirmeleri sonra bunun yerine kullanılır *x* seri olarak (, tüm sipariş garanti rağmen) yürütülür.
+`atomic`Bu örnekte yönergesini kullanmanın avantajı, x 'in iki farklı öğesinin güncelleştirmelerinin paralel olarak oluşmasına izin verir. Bunun yerine [kritik](2-directives.md#262-critical-construct) bir yönerge kullanılıyorsa, *x* öğelerine yapılan tüm güncelleştirmeler hizmet dışı olarak çalıştırılır (ancak hiçbir garanti edilemez sırada değildir).
 
-`atomic` Yönergesi hemen ardından yalnızca C veya C++ ifadesi için geçerlidir.  Sonuç olarak, öğeleri *y* Bu örnekte otomatik olarak güncelleştirilmez.
+`atomic`Yönergesi yalnızca hemen sonrasında C veya C++ bildirimine uygulanır.  Sonuç olarak, *y* öğeleri bu örnekte otomatik olarak güncellenmez.
 
-## <a name="a13-a-flush-directive-with-a-list"></a>A A.13 flush yönergesini liste ile
+## <a name="a13-a-flush-directive-with-a-list"></a>A. 13 bir liste ile Temizleme yönergesi
 
-Aşağıdaki örnekte `flush` yönerge noktadan noktaya eşitleme iş parçacıkları çiftleri arasındaki belirli nesneleri için:
+Aşağıdaki örnek, `flush` iş parçacığı çiftleri arasında belirli nesnelerin noktadan noktaya eşitlenmesi için yönergesini kullanır:
 
 ```cpp
 int   sync[NUMBER_OF_THREADS];
@@ -240,9 +241,9 @@ float work[NUMBER_OF_THREADS];
 }
 ```
 
-## <a name="a14-a-flush-directive-without-a-list"></a>A A.14 flush yönergesini liste olmadan
+## <a name="a14-a-flush-directive-without-a-list"></a>A. 14 bir liste olmadan Temizleme yönergesi
 
-Aşağıdaki örnek (için [bölümünde 2.6.5](2-directives.md#265-flush-directive)) etkilenen paylaşılan nesneler ayıran bir `flush` yönergesi yok listeden etkilenmez paylaşılan nesneleri ile:
+Aşağıdaki örnek ( [Section 2.6.5](2-directives.md#265-flush-directive)için), `flush` etkilenmeyen paylaşılan nesnelerden liste içermeyen bir yönergeden etkilenen paylaşılan nesneleri ayırır:
 
 ```cpp
 // omp_flush_without_list.c
@@ -297,9 +298,9 @@ int main()
 }
 ```
 
-## <a name="a15-the-number-of-threads-used"></a>A.15 kullanılan iş parçacığı sayısı
+## <a name="a15-the-number-of-threads-used"></a>A. 15 kullanılan iş parçacığı sayısı
 
-Aşağıdaki yanlış örneği göz önünde bulundurun (için [bölümünde 3.1.2](3-run-time-library-functions.md#312-omp_get_num_threads-function)):
+Aşağıdaki yanlış örneği ( [Bölüm 3.1.2](3-run-time-library-functions.md#312-omp_get_num_threads-function)için) göz önünde bulundurun:
 
 ```cpp
 np = omp_get_num_threads(); // misplaced
@@ -308,9 +309,9 @@ np = omp_get_num_threads(); // misplaced
         work(i);
 ```
 
-`omp_get_num_threads()` Çağrısı 1 döndürür seri koddaki bölümünde bu nedenle *np* her zaman bir önceki örnekte 1'e eşit olacaktır. Paralel bölge için dağıtılacak iş parçacığı sayısını belirlemek için çağrı paralel bölgenin içinde olmalıdır.
+`omp_get_num_threads()`Çağrı, kodun seri bölümünde 1 değerini döndürür. bu nedenle, önceki örnekte *NP* her zaman 1 ' e eşit olur. Paralel bölge için dağıtılacak iş parçacıklarının sayısını öğrenmek için, çağrının paralel bölgenin içinde olması gerekir.
 
-Aşağıdaki örnek, bir sorgu için iş parçacığı sayısı dahil olmak üzere bu program yeniden gösterilmektedir:
+Aşağıdaki örnek, iş parçacığı sayısı için bir sorgu eklemeden bu programın nasıl yeniden yazalınacağını gösterir:
 
 ```cpp
 #pragma omp parallel private(i)
@@ -320,9 +321,9 @@ Aşağıdaki örnek, bir sorgu için iş parçacığı sayısı dahil olmak üze
 }
 ```
 
-## <a name="a16-locks"></a>A.16 kilitleri
+## <a name="a16-locks"></a>A. 16 kilitleri
 
-Aşağıdaki örnekte (için [bölümünde 3.2](3-run-time-library-functions.md#32-lock-functions)), kilit işlevleri bağımsız değişken türü olmalıdır `omp_lock_t`, ve onu temizlemek için gerek yoktur.  Kilit işlevleri ilk kritik bölüm girişi beklenirken boşta olması, ancak ikinci girişe beklenirken diğer işleri yapmak için iş parçacığı neden.  `omp_set_lock` İşlevi blokları, ancak `omp_test_lock` işlevi değil, iş izin vererek `skip()` yapılacak.
+Aşağıdaki örnekte ( [3,2 bölümü](3-run-time-library-functions.md#32-lock-functions)için), kilit işlevlerinin bağımsız değişkeninin türü olmalıdır `omp_lock_t` ve bunu temizlemeye gerek yoktur.  Kilit işlevleri, ilk kritik bölüm girişi beklenirken iş parçacıklarının boşta olmasına neden olur, ancak saniye girişi beklenirken diğer işleri yapmak için kullanılır.  `omp_set_lock`İşlev engeller, ancak `omp_test_lock` üzerinde iş yapılmasına izin vermez `skip()` .
 
 ```cpp
 // omp_using_locks.c
@@ -360,9 +361,9 @@ int main() {
 }
 ```
 
-## <a name="a17-nestable-locks"></a>A.17 Nestable kilit
+## <a name="a17-nestable-locks"></a>A. 17 Nestable kilitleri
 
-Aşağıdaki örnek (için [bölümünde 3.2](3-run-time-library-functions.md#32-lock-functions)) nestable kilit tüm yapısına ve üyelerini birine güncelleştirmeleri eşitlemek için nasıl kullanılabileceğini gösterir.
+Aşağıdaki örnek ( [3,2 bölümü](3-run-time-library-functions.md#32-lock-functions)için), her ikisini de bir yapıya ve üyelerinden birine eşitlemeyi sağlamak için bir iç içe konulabilir kilidinin nasıl kullanılabileceğini gösterir.
 
 ```cpp
 #include <omp.h>
@@ -405,9 +406,9 @@ void f(pair *p)
 }
 ```
 
-## <a name="a18-nested-for-directives"></a>A.18 iç içe yönergeleri için
+## <a name="a18-nested-for-directives"></a>A. 18 Iç Içe yönergeler
 
-Aşağıdaki örnek, `for` [yönerge iç içe](2-directives.md#29-directive-nesting) uyumlu olduğundan iç ve dış `for` yönergeleri bağlamak için farklı paralel bölgeleri:
+`for`İç ve dış yönergeler farklı paralel bölgelere bağladığından, aşağıdaki [Yönerge iç içe geçirme](2-directives.md#29-directive-nesting) örneği uyumludur `for` :
 
 ```cpp
 #pragma omp parallel default(shared)
@@ -425,7 +426,7 @@ Aşağıdaki örnek, `for` [yönerge iç içe](2-directives.md#29-directive-nest
 }
 ```
 
-Yukarıdaki örnekte aşağıdaki çeşitlemesi ayrıca büyük/küçük harf uyumludur:
+Yukarıdaki örneğin aşağıdaki bir çeşitlemesi de uyumludur:
 
 ```cpp
 #pragma omp parallel default(shared)
@@ -448,11 +449,11 @@ void work1(int i, int n)
 }
 ```
 
-## <a name="a19-examples-showing-incorrect-nesting-of-work-sharing-directives"></a>A.19 iş paylaşım A.19 örnekler yönergeleri
+## <a name="a19-examples-showing-incorrect-nesting-of-work-sharing-directives"></a>Hatalı iş paylaşımı yönergelerini gösteren bir. 19 örnek
 
-Bu bölümdeki örneklerde göstermek [yönerge iç içe](2-directives.md#29-directive-nesting) kuralları.
+Bu bölümdeki örneklerde, [Yönerge iç içe](2-directives.md#29-directive-nesting) kuralları gösterilmektedir.
 
-Aşağıdaki örnek uyumsuz olduğundan iç ve dış `for` yönergeleri iç içe ve aynı bağlama `parallel` yönergesi:
+İç ve dış `for` yönergeler iç içe yerleştirilmiş ve aynı yönergeye bağlanan için aşağıdaki örnek uyumlu değildir `parallel` :
 
 ```cpp
 void wrong1(int n)
@@ -470,7 +471,7 @@ void wrong1(int n)
 }
 ```
 
-Önceki örnekte bulunan aşağıdaki dinamik olarak iç içe geçmiş sürüm da uyumsuzdur:
+Yukarıdaki örneğin aşağıdaki dinamik olarak iç içe geçmiş sürümü de uyumlu değildir:
 
 ```cpp
 void wrong2(int n)
@@ -493,7 +494,7 @@ void work1(int i, int n)
 }
 ```
 
-Aşağıdaki örnek, uyumsuz, çünkü `for` ve `single` yönergeleri iç içe ve bunların aynı paralel bölgeye bağlayın:
+Aşağıdaki örnek, `for` ve `single` yönergeleri iç içe yerleştirilmiş olduğundan ve aynı paralel bölgeye bağlandıklarından uyumlu değildir:
 
 ```cpp
 void wrong3(int n)
@@ -510,7 +511,7 @@ void wrong3(int n)
 }
 ```
 
-Aşağıdaki örnek uyumsuz olduğundan bir `barrier` yönergesi içinde bir `for` kilitlenmeyle neden olabilir:
+Aşağıdaki örnek uyumlu değildir çünkü içindeki bir `barrier` yönerge `for` kilitlenmeye neden olabilir:
 
 ```cpp
 void wrong4(int n)
@@ -528,7 +529,7 @@ void wrong4(int n)
 }
 ```
 
-Aşağıdaki örnek, uyumsuz, çünkü `barrier` aynı anda yalnızca tek bir iş parçacığı, kritik bölüm girebilirsiniz Bunun nedeni, kilitlenmeyle sonuçları:
+Aşağıdaki örnek uyumlu değildir çünkü `barrier` aynı anda yalnızca bir iş parçacığının önemli bölümü girebileceği bir durum nedeniyle kilitlenme oluşur:
 
 ```cpp
 void wrong5()
@@ -545,7 +546,7 @@ void wrong5()
 }
 ```
 
-Aşağıdaki örnek, uyumsuz, çünkü `barrier` yalnızca bir iş parçacığı çalıştırır. Bunun nedeni, kilitlenmeyle sonuçları `single` bölümü:
+Aşağıdaki örnek uyumlu değildir çünkü `barrier` yalnızca bir iş parçacığının yalnızca bir iş parçacığı tarafından yürütüldüğü durum nedeniyle kilitlenme oluşur `single` :
 
 ```cpp
 void wrong6()
@@ -564,11 +565,11 @@ void wrong6()
 }
 ```
 
-## <a name="a20-bind-barrier-directives"></a>A.20 bağlama barrier yönergelerini
+## <a name="a20-bind-barrier-directives"></a>A. 20 bağlama engeli yönergeleri
 
-Yönerge bağlama için çağrı kurallarını bir `barrier` yönergesi en yakın kapsayan bağlamak için `parallel` yönergesi. Yönerge bağlama hakkında daha fazla bilgi için bkz. [bölümünde 2.8](2-directives.md#28-directive-binding).
+`barrier`En yakın kapsayan yönergeyi bağlamak üzere bir yönerge için yönerge bağlama kuralları çağrısı `parallel` . Yönerge bağlama hakkında daha fazla bilgi için bkz. [bölüm 2,8](2-directives.md#28-directive-binding).
 
-Aşağıdaki örnekte, çağrısından *ana* için *sub2* uyumlu olduğundan `barrier` (içinde *sub3*) bir paralel bölgenin içinde bağlar *sub2* . Çağrısından *ana* için *Abon1* uyumlu olduğundan `barrier` paralel bölgenin içinde alt yordam bağlar *sub2*.  Çağrısından *ana* için *sub3* uyumlu olduğundan `barrier` için herhangi bir paralel bölgenin bağlamayan ve göz ardı edilir. Ayrıca, `barrier` yalnızca takım iş parçacıkları kapsayan bir paralel bölgenin içinde oluşturulan tüm iş parçacıkları ve eşitler *Abon1*.
+Aşağıdaki örnekte,  (  `barrier` *sub3* içinde), *sub2* içindeki Parallel bölgesine bağlandığı için Main to sub2 çağrısı uyumludur. *Main* to *sub1* çağrısı, `barrier` altyordam *sub2* içindeki paralel bölgeye bağlandığından uyumludur.  *Main* to *sub3* çağrısı, `barrier` herhangi bir paralel bölgeye bağlanmadığından ve yoksayıldığından uyumlu olur. Ayrıca, `barrier` yalnızca kapsayan paralel bölgedeki iş parçacıklarının ekibini eşitler, *sub1* içinde oluşturulan tüm iş parçacıkları değildir.
 
 ```cpp
 int main()
@@ -603,9 +604,9 @@ void sub3(int n)
 }
 ```
 
-## <a name="a21-scope-variables-with-the-private-clause"></a>A.21 private yan tümcesi kapsam değişkenleri
+## <a name="a21-scope-variables-with-the-private-clause"></a>A. 21 Private yan tümcesiyle kapsam değişkenleri
 
-Değerlerini `i` ve `j` paralel bölgeden Çıkışta aşağıdaki örnekte tanımlanmamış:
+`i`Aşağıdaki örnekteki ve değerleri `j` paralel bölgeden çıkışta tanımsız:
 
 ```cpp
 int i, j;
@@ -619,11 +620,11 @@ j = 2;
 printf_s("%d %d\n", i, j);
 ```
 
-Daha fazla bilgi için `private` yan tümcesi bkz [bölümünde 2.7.2.1](2-directives.md#2721-private).
+Yan tümcesi hakkında daha fazla bilgi için `private` bkz. [Section 2.7.2.1](2-directives.md#2721-private).
 
-## <a name="a22-the-defaultnone-clause"></a>A.22 default(none) yan tümcesi
+## <a name="a22-the-defaultnone-clause"></a>A. 22 default (None) yan tümcesi
 
-Aşağıdaki örnek tarafından etkilenen değişkenleri ayırır `default(none)` olmayan değişkenleri from yan tümcesi:
+Aşağıdaki örnek, yan tümcesinden etkilenen değişkenleri olmayan `default(none)` değişkenlerden ayırır:
 
 ```cpp
 // openmp_using_clausedefault.c
@@ -658,15 +659,15 @@ void fun(int a) {
 }
 ```
 
-Daha fazla bilgi için `default` yan tümcesi bkz [bölümünde 2.7.2.5](2-directives.md#2725-default).
+Yan tümcesi hakkında daha fazla bilgi için `default` bkz. [Section 2.7.2.5](2-directives.md#2725-default).
 
-## <a name="a23-examples-of-the-ordered-directive"></a>A.23 ordered yönergesi örnekleri
+## <a name="a23-examples-of-the-ordered-directive"></a>A. 23 sıralı yönergeye örnek
 
-Sıralı bölümlerle olması mümkündür bir `for` ile belirtilen `ordered` yan tümcesi. İlk örnek uyumsuz olduğundan aşağıdaki kural API belirtir:
+Yan tümcesiyle belirtilen çok sayıda sıralı bölüm olması mümkündür `for` `ordered` . API aşağıdaki kuralı belirttiğinden, ilk örnek uyumlu değildir:
 
-"Bir yineleme döngüsü ile bir `for` yapısı gerekir değil yürütme aynı `ordered` yönerge fazla bir kez ve gerekir değil yürütme birden fazla `ordered` yönergesi." (Bkz [bölümünde 2.6.6](2-directives.md#266-ordered-construct).)
+"Yapı içeren bir döngünün yinelemesi `for` aynı `ordered` yönergeyi birden çok kez yürütmemelidir ve birden fazla yönerge yürütmemelidir `ordered` ." (Bkz. [Bölüm 2.6.6](2-directives.md#266-ordered-construct).)
 
-Uyumsuz Bu örnekte, iki sıralı bölümü tüm yinelemeleri yürütün:
+Bu uyumsuz örnekte, tüm yinelemeler iki sıralı bölümü yürütür:
 
 ```cpp
 #pragma omp for ordered
@@ -682,7 +683,7 @@ for (i=0; i<n; i++)
 }
 ```
 
-Aşağıdaki uyumlu örnekte gösterildiği bir `for` birden çok bölüm sıralı:
+Aşağıdaki uyumlu örnek, birden `for` fazla sıralanmış bölüm ile birlikte göstermektedir:
 
 ```cpp
 #pragma omp for ordered
@@ -706,9 +707,9 @@ for (i=0; i<n; i++)
 }
 ```
 
-## <a name="a24-example-of-the-private-clause"></a>A.24 özel yan tümcesi
+## <a name="a24-example-of-the-private-clause"></a>A. 24 Private yan tümcesinin örneği
 
-[Özel](2-directives.md#2721-private) bir paralel bölgenin yan tümcesi olan yalnızca dinamik kapsam bölgesi için değil, bölge sözcük kapsamı için etkili.  Bu nedenle, değişken kullanıldığı aşağıdaki örnekte *bir* içinde `for` yordamı döngüde *f* özel bir kopyası anlamına gelir *bir*, while bir kullanımı yordamı *g* genel başvuruyor *bir*.
+Bir paralel bölgenin [özel](2-directives.md#2721-private) yan tümcesi, bölgenin dinamik kapsamı için değil, yalnızca bölgenin sözcük kapsamı için geçerli olur.  Bu nedenle, aşağıdaki örnekte, f yordamının içindeki döngüsü içindeki *a* değişkeninin tüm kullanımları `for` , *a*'nın özel bir  kopyasına başvurur, ancak bu da bir kullanım genel *a*'ya başvurur. 
 
 ```cpp
 int a;
@@ -733,9 +734,9 @@ void g(int k, int n)
 }
 ```
 
-## <a name="a25-examples-of-the-copyprivate-data-attribute-clause"></a>A.25 copyprivate veri özniteliği yan tümcesi örnekleri
+## <a name="a25-examples-of-the-copyprivate-data-attribute-clause"></a>A. 25 copyprivate veri özniteliği yan tümcesinin örnek örnekleri
 
-**Örnek 1:** [Copyprivate](2-directives.md#2728-copyprivate) yan tümcesi tüm özel değişkenler, diğer iş parçacıklarını örneklerine doğrudan tek bir iş parçacığı tarafından alınan değerleri yayın için kullanılabilir.
+**Örnek 1:** [Copyprivate](2-directives.md#2728-copyprivate) yan tümcesi, tek bir iş parçacığı tarafından alınan değerleri, diğer iş parçacıklarında özel değişkenlerin tüm örneklerine doğrudan yayımlamak için kullanılabilir.
 
 ```cpp
 float x, y;
@@ -755,9 +756,9 @@ void init( )
 }
 ```
 
-Rutin varsa *init* çağrılır seri bir bölgeden davranışını varlığını yönergeleri ile etkilenmez. Çağrısından sonra *get_values* yordam iş parçacığı tarafından yürütüldü, hiçbir iş parçacığı tarafından belirlenen özel nesneleri kadar yapısı bırakır *bir*, *b*, *x*, ve *y* tüm iş parçacıklarının okunan değerleri ile tanımlanan olur.
+Bir seri bölgesinden yordam *başlatma* işlemi çağrılırsa, bu davranış, yönergelerin varlığını etkilemez. *Get_values* yordamına yapılan çağrı bir iş parçacığı tarafından yürütüldükten sonra, tüm iş parçacıklarında *a*, *b*, *x* ve *y* tarafından atanan özel nesneler okunan değerlerle tanımlanana kadar hiçbir iş parçacığı bu yapıyı bırakır.
 
-**Örnek 2:** Önceki örnekte aksine, okuma, belirli bir iş parçacığına göre örneğin ana iş parçacığı gerçekleştirilmelidir varsayalım. Bu durumda, `copyprivate` yan tümcesi, doğrudan yayın yapmak için kullanılamaz, ancak paylaşılan geçici nesnelere erişim sağlamak için kullanılabilir.
+**Örnek 2:** Önceki örneğe karşılık olarak, okuma 'nın belirli bir iş parçacığı tarafından gerçekleştirilmesi gerektiğini, ana iş parçacığını söylediğini varsayalım. Bu durumda, `copyprivate` yan tümce yayını doğrudan yapmak için kullanılamaz, ancak geçici bir paylaşılan nesneye erişim sağlamak için kullanılabilir.
 
 ```cpp
 float read_next( )
@@ -788,7 +789,7 @@ float read_next( )
 }
 ```
 
-**Örnek 3:** Bir paralel bölgenin içinde gerekli kilit nesne sayısını kolayca girme önce belirlenemiyor olduğunu varsayalım. `copyprivate` Yan tümcesi, bir paralel bölgenin içinde atanan paylaşılan kilit nesneler erişim sağlamak için kullanılabilir.
+**Örnek 3:** Paralel bir bölgede gerekli kilit nesnelerinin sayısının, girmeden önce kolayca belirlenemeyeceğini varsayın. `copyprivate`Yan tümcesi, bu paralel bölge içinde ayrılan paylaşılan kilit nesnelerine erişim sağlamak için kullanılabilir.
 
 ```cpp
 #include <omp.h>
@@ -807,9 +808,9 @@ omp_lock_t *new_lock()
 }
 ```
 
-## <a name="a26-the-threadprivate-directive"></a>A.26 threadprivate yönergesi
+## <a name="a26-the-threadprivate-directive"></a>A. 26 threadprivate yönergesi
 
-Aşağıdaki örnek nasıl kullanılacağını gösteren [threadprivate](2-directives.md#271-threadprivate-directive) ayrı sayaç her iş parçacığı vermek yönergesi.
+Aşağıdaki örneklerde, her iş parçacığına ayrı bir sayaç sağlamak için [threadprivate](2-directives.md#271-threadprivate-directive) yönergesinin nasıl kullanılacağı gösterilmektedir.
 
 ### <a name="example-1"></a>Örnek 1
 
@@ -836,12 +837,12 @@ int sub()
 }
 ```
 
-## <a name="a27-c99-variable-length-arrays"></a>A.27 C99 değişken uzunluklu dizilerin kullanımı
+## <a name="a27-c99-variable-length-arrays"></a>A. 27 C99 değişken uzunlukta diziler
 
-Aşağıdaki örnek, C99 değişken uzunluklu dizilerin kullanımı (VLAs) kullanmayı gösterir. bir [firstprivate](2-directives.md#2722-firstprivate) yönergesi.
+Aşağıdaki örnek, bir [firstprivate](2-directives.md#2722-firstprivate) yönergesinde C99 değişken uzunluğu dizilerinin (Vlas) nasıl kullanılacağını gösterir.
 
 > [!NOTE]
-> Değişken uzunluklu dizilerin kullanımı, Visual C++'da şu anda desteklenmemektedir.
+> Değişken uzunluğu dizileri Şu anda Visual C++ desteklenmiyor.
 
 ```cpp
 void f(int m, int C[m][m])
@@ -853,9 +854,9 @@ void f(int m, int C[m][m])
 }
 ```
 
-## <a name="a28-the-numthreads-clause"></a>A.28 num_threads yan tümcesi
+## <a name="a28-the-num_threads-clause"></a>A. 28 num_threads yan tümcesi
 
-Aşağıdaki örnek, gösterir [num_threads](2-directives.md#23-parallel-construct) yan tümcesi. Paralel bölgenin en fazla 10 iş parçacığı ile yürütülür.
+Aşağıdaki örnekte [num_threads](2-directives.md#23-parallel-construct) yan tümcesi gösterilmektedir. Paralel bölge, en fazla 10 iş parçacığı ile yürütülür.
 
 ```cpp
 #include <omp.h>
@@ -870,9 +871,9 @@ main()
 }
 ```
 
-## <a name="a29-work-sharing-constructs-inside-a-critical-construct"></a>A.29 iş paylaşım yapıları critical yapı içinde
+## <a name="a29-work-sharing-constructs-inside-a-critical-construct"></a>Kritik bir yapı içinde. 29 Iş paylaşımı yapıları
 
-Aşağıdaki örnek, bir iş paylaşımı yapısı içinde kullanarak gösterir. bir `critical` oluşturun. İş paylaşım oluşturmak için bu örnek uyumludur ve `critical` yapısı paralel aynı bölgeye bağlama yok.
+Aşağıdaki örnek, bir yapı içinde iş paylaşımı yapısının kullanımını gösterir `critical` . Bu örnek, iş paylaşımı yapısı ve `critical` Yapı aynı paralel bölgeye bağlanmadığından uyumludur.
 
 ```cpp
 void f()
@@ -897,9 +898,9 @@ void f()
 }
 ```
 
-## <a name="a30-reprivatization"></a>A.30 yeniden özelleştirmenin
+## <a name="a30-reprivatization"></a>A. 30 özelleştirmenin
 
-Aşağıdaki örnek, değişkenlerin yeniden özelleştirmenin gösterir. Özel değişkenler işaretlenebilir `private` iç içe geçmiş bir yönergede. Bu değişkenler kapsayan bir paralel bölgenin içinde paylaşmak gerekmez.
+Aşağıdaki örnek değişkenlerin özelleştirmenin gösterir. Özel değişkenler, `private` iç içe geçmiş bir yönergede yeniden işaretlenebilir. Bu değişkenleri kapsayan paralel bölgede paylaşmanız gerekmez.
 
 ```cpp
 int i, a;
@@ -915,9 +916,9 @@ int i, a;
 }
 ```
 
-## <a name="a31-thread-safe-lock-functions"></a>A.31 iş parçacığı güvenli kilit işlevleri
+## <a name="a31-thread-safe-lock-functions"></a>A. 31 Iş parçacığı güvenli kilit işlevleri
 
-Aşağıdaki C++ örnek gösterir kullanarak bir dizi bir paralel bölgenin içinde kilit başlatmak nasıl [omp_init_lock](3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions).
+Aşağıdaki C++ örneği, [omp_init_lock](3-run-time-library-functions.md#321-omp_init_lock-and-omp_init_nest_lock-functions)kullanarak bir paralel bölgede bir kilit dizisinin nasıl başlatılacağını göstermektedir.
 
 ```cpp
 // A_13_omp_init_lock.cpp

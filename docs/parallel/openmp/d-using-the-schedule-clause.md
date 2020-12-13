@@ -1,19 +1,20 @@
 ---
-title: D. Zamanlama yan tümcesi
+description: 'Hakkında daha fazla bilgi edinin: D. Schedule yan tümcesi'
+title: D. schedule yan tümcesi
 ms.date: 01/22/2019
 ms.assetid: bf3d8f51-ea05-4803-bf55-657c12e91efe
-ms.openlocfilehash: 89e011784c5cccedc4a75f38d553458ea2e5d7e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd1bb4f9a6c661205e2e647fc9e45d81903008c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362887"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342497"
 ---
-# <a name="d-the-schedule-clause"></a>D. Zamanlama yan tümcesi
+# <a name="d-the-schedule-clause"></a>D. schedule yan tümcesi
 
-Bir paralel bölgenin sonuna en az bir engel olan ve başka engelleri içindeki olabilir. Her engel diğer takım üyelerinin gelmesi son iş parçacığı için beklemeniz gerekir. Böylece engel yaklaşık aynı zamanda tüm iş parçacıklarının ulaşırsınız bu bekleme süresi en aza indirmek için paylaşılan iş dağıtılmalıdır. Paylaşılan bazıları iş bulunan `for` oluşturur, `schedule` yan tümcesi bu amaç için kullanılabilir.
+Paralel bir bölgede en az bir engel vardır ve bunun sonunda daha fazla engelleri olabilir. Her bir engelte, takımın diğer üyelerinin son iş parçacığının gelmesi için beklemesi gerekir. Bu bekleme süresini en aza indirmek için, paylaşılan iş tüm iş parçacıklarının aynı anda yaklaşık olarak engelde gelmesi için dağıtılmalıdır. Bu paylaşılan çalışmalarından bazıları yapılar içinde yer alıyorsa `for` , `schedule` yan tümce bu amaçla kullanılabilir.
 
-Zamanlama için seçtiğiniz aynı nesneleri yinelenen başvurular olduğunda bir `for` yapısı temelde önbellekler ve bellek erişim zamanları Tekdüzen olup boyutunu ve durum gibi bellek sisteminin özelliklerine göre belirlenemedi veya nonuniform. Bu tür konular bazı iş parçacıkları bazı döngüler görece daha az iş atanmış olsa bile her bir iş parçacığı aynı döngüleri, bir dizi bir dizinin öğeleri kümesini tutarlı bir şekilde başvurmak için tercih yapabilir. Bu ayar kullanılarak yapılabilir `static` döngüler için aynı sınırları ile zamanlama. Aşağıdaki örnekte, sıfır olarak ikinci döngüsünde, alt sınır olsa bile kullanılan `k` zamanlama önemli değilse daha doğal olacaktır.
+Aynı nesnelere tekrarlanmış başvurular olduğunda, bir yapı için zamanlama seçimi `for` birincil olarak bellek sisteminin özelliklerine göre belirlenebilir. Örneğin, önbelleğe alma ve boyut ve bellek erişim sürelerinin tek tek veya tek biçimli olup olmadığı. Bu tür konular, bazı iş parçacıklarının bazı Döngülerde görece daha az iş olmasına rağmen her bir iş parçacığının bir dizi döngü içinde her zaman sürekli olarak aynı öğe kümesine başvurmalarını tercih edebilir. Bu kurulum, `static` Tüm döngüler için aynı sınırlara sahip zamanlama kullanılarak yapılabilir. Aşağıdaki örnekte,, `k` zamanlama önemli değilse daha doğal olmasına rağmen, ikinci döngüde alt sınır olarak sıfır kullanılır.
 
 ```cpp
 #pragma omp parallel
@@ -27,9 +28,9 @@ Zamanlama için seçtiğiniz aynı nesneleri yinelenen başvurular olduğunda bi
 }
 ```
 
-Kalan örneklerde, bu bellek kabul erişimi baskın göz önünde bulundurarak değil. Aksi belirtilmediği sürece, tüm iş parçacıklarının karşılaştırılabilir hesaplama kaynaklarını alır. Bu gibi durumlarda, zamanlama için tercih ettiğiniz bir `for` yapısı, en yakın önceki arasında gerçekleştirilecek olan paylaşılan iş bağlıdır ve süreçlerinin önündeki engelleri örtük kapanış engel veya varsa yaklaşan engel en yakın bir `nowait` yan tümcesi. Zamanlamayı her tür için bu zamanlama türü nasıl en iyi seçenek olabilir kısa bir örnek gösterir. Kısa bir açıklama her bir örnek aşağıda verilmiştir.
+Kalan örneklerde, bellek erişiminin baskın bir değerlendirme olmadığı varsayılır. Aksi belirtilmedikçe, tüm iş parçacıkları karşılaştırılabilir hesaplama kaynakları alır. Bu durumlarda, bir yapı için zamanlama seçimi, `for` en yakın önceki engeli ve kapsanan kapanış engeli ile bir yan tümce varsa en yakın yaklaşan engel arasında gerçekleştirilecek tüm paylaşılan çalışmaya bağlıdır `nowait` . Her zamanlama türü için, kısa bir örnek, bu zamanlama türünün en iyi seçim olma olasılığını gösterir. Her bir örnek için kısa bir tartışma aşağıda verilmiştir.
 
-`static` Zamanlama en basit durum için tek bir içeren bir paralel bölgenin uygun ayrıca `for` , aynı iş miktarı her bir yineleme oluşturun.
+`static`Zamanlama, tek bir yapı içeren bir paralel bölge `for` olan ve her bir yineleme için aynı iş miktarını gerektiren bir paralel bölge olan en basit durum için de uygundur.
 
 ```cpp
 #pragma omp parallel for schedule(static)
@@ -38,11 +39,11 @@ for(i=0; i<n; i++) {
 }
 ```
 
-`static` Zamanlama özelliklerine göre nitelenen, her iş parçacığının yaklaşık aynı sayıda yineleme başka bir iş parçacığı alır ve her bir iş parçacığı atanmış yinelemeleri bağımsız olarak belirleyebilirsiniz. Bu nedenle eşitleme işi dağıtmak için gereklidir ve her yinelemede aynı miktarda iş gerektirdiğini varsayım altında tüm iş parçacıkları, aynı anda ancak ondan haberdar tamamlanmalıdır.
+`static`Zamanlama, her bir iş parçacığının diğer iş parçacığıyla yaklaşık olarak aynı sayıda yinelemeyi aldığı ve her bir iş parçacığının kendisine atanan yinelemeleri bağımsız olarak belirleyebilen özelliklere göre belirlenir. Bu nedenle, çalışmayı dağıtmak için herhangi bir eşitleme gerekmez ve her bir yinelemenin aynı iş miktarı için gerekli olduğu varsayımıyla, tüm iş parçacıklarının aynı anda tamamlanmaları gerekir.
 
-Bir takımın *p* iş parçacıkları, izin *ceiling(n/p)* tamsayı olması *q*, hangi karşılayan *n p =\*q - r* ile*0 < = r < p*. Bir adet `static` Bu örnek atadığınız için zamanlamasını *q* ilk yinelemelere *p-1* iş parçacıklarını ve *q-r* yinelemelere son iş parçacığı.  Kabul edilebilir başka bir uygulama atadığınız *q* ilk yinelemelere *p-r* iş parçacıklarını ve *q-1* kalan için yineleme *r*iş parçacıkları. Bu örnekte, bir program, belirli bir uygulama ayrıntıları güvenmemelisiniz neden gösterilmektedir.
+Bir *p* iş parçacığı ekibi için *tavan (n/p)* , *0 <= r < p* ile *n = p \* q-r* ' y i karşılayan, *q* tamsayı olmalıdır. `static`Bu örnek için zamanlamanın bir uygulanması, ilk *p-1* iş parçacığına *soru* -cevap yineleme ve son iş parçacığına *q-r* yinelemelerini atar.  Başka bir kabul edilebilir uygulama, ilk *p-r* iş parçacığına *q* yineleme ve kalan *r* iş parçacığı için *q-1* yinelemelerini atayacaktır. Bu örnekte, bir programın belirli bir uygulamanın ayrıntılarına dayanmaması gösterilmektedir.
 
-`dynamic` Zamanlama durumu için uygun bir `for` değişen veya hatta beklenmeyen sayıda işin gerektiren yinelemeler oluşturun.
+`dynamic`Zamanlama `for` , yinelemeler, hatta tahmin edilemeyen, hatta tahmin edilemeyen iş miktarları gerektiren bir yapının olması için uygundur.
 
 ```cpp
 #pragma omp parallel for schedule(dynamic)
@@ -51,11 +52,11 @@ Bir takımın *p* iş parçacıkları, izin *ceiling(n/p)* tamsayı olması *q*,
 }
 ```
 
-`dynamic` Zamanlama daha uzun sürer, son yineleme yürütmek için başka bir iş parçacığı için iş parçacığı engel bekler özelliği göre nitelenen. Bu gereksinim, yinelemeler teker teker eşitleme her atama için kullanılabilir olduklarında iş parçacıkları atanmalarının gerekli olduğu anlamına gelir. En düşük öbek boyutunu belirterek eşitleme ek yükü azaltılabilir *k* 1 ' den büyük iş parçacıkları kalmayacak şekilde *k* kadar kısa bir zaman *k* kalır. Bu iş parçacığı engel, kendi son öbeği (en fazla) yürütmek için başka bir iş parçacığı alan daha uzun bekler garanti eder *k* yineleme.
+`dynamic`Zamanlama, iş parçacığının, son yinelemesini yürütmek için başka bir iş parçacığı kullandığından daha uzun süre boyunca engel olmadığı özelliği tarafından belirlenir. Bu gereksinim, her atamaya yönelik eşitlemeyle birlikte iş parçacıkları için her seferinde bir kez atanması gerektiği anlamına gelir. Eşitleme ek yükü, 1 ' *den büyük bir* en düşük öbek boyutu değeri olarak düşürüldüğünden azaltılabilir, bu sayede iş parçacıkları, *k* 'den az kalana kadar bir *kez atanır.* Bu, herhangi bir iş parçacığının son öbeğini (en fazla) *k* yinelemesi yürütmek için başka bir iş parçacığı kullandığından daha uzun süre beklememesini güvence altına alır.
 
-`dynamic` Zamanlama hesaplama kaynaklarını değişen iş parçacıklarının alırsanız yararlı olabilir, çok çeşitli sayıda işin her yineleme için aynı etkiye sahiptir. Benzer şekilde, dinamik zamanlamayı da iş parçacığı ulaşırsınız faydalı olabilir `for` bazı durumlarda karşın çeşitli zamanlarda oluşturmak `guided` zamanlama tercih olabilir.
+`dynamic`İş parçacıkları, her yinelemede değişen miktarda iş ile aynı etkiye sahip olan değişen hesaplama kaynakları alıyorsa, zamanlama yararlı olabilir. Benzer şekilde, dinamik zamanlama aynı zamanda iş parçacıkları yapıyı farklı zamanlarda geldiğinde yararlı olabilir `for` , ancak bu durumda `guided` zamanlama tercih edilebilir.
 
-`guided` Zamanlama, iş parçacıkları geldiğinde farklı zamanlarda ve çalışması için uygun bir `for` her yineleme aynı miktarda iş hakkında gerektiren ile oluşturun. Bu durum oluşabilir, örneğin, `for` yapısı bir veya daha fazla bölüm tarafından öncesinde veya `for` ile oluşturur `nowait` yan tümceleri.
+`guided`Zamanlama, iş parçacıklarının `for` aynı iş miktarı hakkında gerekli olan her bir yineleme ile aynı zamanda farklı zamanlarda gelebileceği durum için uygundur. Örneğin, `for` yapının öncesinde bir veya daha fazla bölüm ya da `for` yan tümceleri olan yapılar olması durumunda bu durum oluşabilir `nowait` .
 
 ```cpp
 #pragma omp parallel
@@ -71,12 +72,12 @@ Bir takımın *p* iş parçacıkları, izin *ceiling(n/p)* tamsayı olması *q*,
 }
 ```
 
-Gibi `dynamic`, `guided` zamanlama engel son onun yinelemesini yürütmek için başka bir iş parçacığı alan daha uzun veya son iş parçacığı bekler garantileri *k* öbek boyutu, yinelemeler *k* belirtilir. Bu tür zamanlamalar arasından `guided` zamanlaması nitelenen özellik tarafından en az eşitlemeler gerektirir. Öbek boyutu için *k*, tipik bir uygulaması atar *q = ceiling(n/p)* ilk kullanılabilir iş parçacığı yinelemelere ayarlayın *n* büyüğü, *n-q* ve *p\*k*ve tüm yinelemelerle Atanana dek yineleyin.
+Benzer şekilde `dynamic` , `guided` zamanlama, bir iş parçacığının, son yinelemeyi yürütmek için başka bir iş parçacığı aldığına veya bir *k* öbek boyutu belirtilmişse son *k* yinelemelerine engel olmasını garanti eder. Bu tür zamanlamalar arasında, `guided` zamanlama en az eşitleme gerektirdiğinden özelliği tarafından belirlenir. Öbek boyutu *k* için tipik bir uygulama, kullanılabilir ilk iş parçacığına *q = tavan (n/p)* yinelemelerini atar, *n* 'yi *n-q* ve *p \* k*'ın daha büyük bir öğesine ayarlar ve tüm yinelemeler atanıncaya kadar yinelenir.
 
-En iyi zamanlaması seçimi Bu örneklerde olduğu gibi açık değilken, `runtime` zamanlama farklı zamanlamalar ve Öbek boyutları ile değiştirin ve programı yeniden derlemeniz gerekmeden denemek için kullanışlıdır. En iyi zamanlama program uygulandığı giriş verileri (bazı bilinebilen biçimde) bağlı olduğunda bu da yararlı olabilir.
+En uygun zamanlamanın seçimi bu örneklerde olduğu kadar net olmadığı için, `runtime` zamanlama, programı değiştirmek ve yeniden derlemek zorunda kalmadan farklı zamanlamalar ve öbek boyutları denemek için uygundur. Ayrıca, programın uygulandığı giriş verilerinde en uygun zamanlamanın (bazı öngörülebilir bir şekilde) bağlı olduğu durumlarda da yararlı olabilir.
 
-Farklı zamanlamalar gereksinimlerimi karşılamama örneği görmek için sekiz iş parçacıkları arasında 1000 yineleme paylaşımı göz önünde bulundurun. Sabit bir miktarda her yineleme iş olduğunu varsayın ve bunu zaman birimi kullanabilirsiniz.
+Farklı zamanlamalar arasındaki dengelerin bir örneğini görmek için, 1000 yinelemelerini sekiz iş parçacığı arasında paylaşmayı göz önünde bulundurun. Her yinelemede sabit bir iş miktarı olduğunu varsayın ve bu süreyi zaman birimi olarak kullanın.
 
-Tüm iş parçacıkları aynı anda başlatırsanız `static` zamanlaması ile eşitleme 125 birimlerindeki yürütmek yapı neden olur. Ancak, bir iş parçacığı sonlarında ulaşan, 100 birimi olduğunu varsayın. Ardından kalan yedi iş parçacıkları engel 100 birimine bekleyin ve 225 için tüm yapı için yürütme süresini artırır.
+Tüm iş parçacıkları aynı anda başladıysanız, `static` zamanlama yapının, eşitleme olmadan 125 birimlerinde yürütülmesine neden olur. Ancak, bir iş parçacığının 100 birimi geç olduğunu varsayalım. Ardından kalan yedi iş parçacığı, engelde 100 birim bekler ve tüm yapının yürütme süresi 225 olarak artar.
 
-Çünkü hem `dynamic` ve `guided` zamanlamaları engel birimi birden fazla iş parçacığı bekler, bunların yürütme sürelerini büyük olasılıkla gecikmeler artırılana yalnızca 138 birimlerine artırmak yapı için Gecikmeli iş parçacığı neden olduğundan emin olun Eşitleme. Böyle gecikmeler göz ardı edilebilir değilse, eşitleme sayısı için 1000 olduğunu önemli olur `dynamic` ancak için yalnızca 41 `guided`, bir varsayılan öbek boyutu varsayılıyor. 25, öbek boyutu ile `dynamic` ve `guided` hem 150 birimleri yanı sıra herhangi bir gecikme gerekli eşitlemeleri, hangi şimdi sayı yalnızca 40 ve 20 ' den sırasıyla son.
+Hem hem de `dynamic` `guided` zamanlamaları, bir iş parçacığının engel üzerinde birden fazla birim beklemediğinden emin olduğundan, Gecikmeli iş parçacığı yapının yürütme sürelerinin yalnızca 138 birim kullanmasına neden olur, bu da eşitlemeden gecikmelerden daha fazla zaman arttırır. Bu gecikmeler göz ardı edilmemişse, eşitleme sayısının 1000 olması ve `dynamic` `guided` varsayılan öbek boyutunu varsayarak yalnızca 41 için olması önemli olur. 25 öbek boyutuyla `dynamic` ve `guided` her ikisi de 150 birimde ve ayrıca, sırasıyla yalnızca 40 ve 20 ' de olan gerekli eşitlemelerden her türlü gecikme ile tamamlanır.

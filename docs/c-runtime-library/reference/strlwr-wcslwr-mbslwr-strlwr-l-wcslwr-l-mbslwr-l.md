@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l'
 title: _strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 ms.date: 4/2/2020
 api_name:
@@ -67,12 +68,12 @@ helpviewer_keywords:
 - strings [C++], converting case
 - _mbslwr_l function
 ms.assetid: d279181d-2e7d-401f-ab44-6e7c2786a046
-ms.openlocfilehash: 9ba2570ff02cf11cb5822666b5569fa88caf76b9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7d0d103185494d26890fc62061ebd16c168fc477
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919939"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344815"
 ---
 # <a name="_strlwr-_wcslwr-_mbslwr-_strlwr_l-_wcslwr_l-_mbslwr_l"></a>_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l
 
@@ -148,11 +149,11 @@ Bu işlevlerin her biri, dönüştürülmüş dizeye bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strlwr** işlevi, yerel ayarın **LC_CTYPE** kategori ayarı tarafından belirlendiği şekilde *Str* 'deki büyük harfleri küçük harfe dönüştürür. Diğer karakterler etkilenmez. **LC_CTYPE**hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**_Strlwr** işlevi, yerel ayarın **LC_CTYPE** kategori ayarı tarafından belirlendiği şekilde *Str* 'deki büyük harfleri küçük harfe dönüştürür. Diğer karakterler etkilenmez. **LC_CTYPE** hakkında daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md). **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayarı kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**_Wcslwr** ve **_mbslwr** işlevleri, **_strlwr**geniş karakter ve çok baytlı karakter sürümleridir. **_Wcslwr** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir; **_mbslwr** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
+**_Wcslwr** ve **_mbslwr** işlevleri, **_strlwr** geniş karakter ve çok baytlı karakter sürümleridir. **_Wcslwr** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir; **_mbslwr** olanlar çok baytlı karakter dizeleridir. Bu üç işlev, aynı şekilde davranır.
 
-*Str* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler özgün dizeyi döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
+*Str* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler özgün dizeyi döndürür ve **errno** 'ı **EINVAL** olarak ayarlar.
 
 C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -169,9 +170,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strlwr**, **_strlwr_l**|\<String. h>|
-|**_wcslwr**, **_wcslwr_l**|\<String. h> veya \<wchar. h>|
-|**_mbslwr**, **_mbslwr_l**|\<mbstring. h>|
+|**_strlwr**, **_strlwr_l**|\<string.h>|
+|**_wcslwr**, **_wcslwr_l**|\<string.h> veya \<wchar.h>|
+|**_mbslwr**, **_mbslwr_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

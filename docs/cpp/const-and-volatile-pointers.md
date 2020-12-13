@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: const ve volatile işaretçileri'
 title: const ve volatile işaretçiler
 ms.date: 11/19/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - pointers, and volatile
 - const keyword [C++], volatile pointers
 ms.assetid: 0c92dc6c-400e-4342-b345-63ddfe649d7e
-ms.openlocfilehash: a8fd25777d1169ba281fbee173c1c8f5673c8b56
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 142c6b83c242af969c5f6e1494a56e9598cf537d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344685"
 ---
 # <a name="const-and-volatile-pointers"></a>const ve volatile işaretçiler
 
@@ -43,7 +44,7 @@ const char cch = 'A';
 char ch = 'B';
 ```
 
-İki nesnenin önceki bildirimleri ( `cch` **const char**türünde ve `ch` **char türünde)** verildiğinde, aşağıdaki bildirim/başlatmalar geçerlidir:
+İki nesnenin önceki bildirimleri ( `cch` **const char** türünde ve `ch` **char türünde)** verildiğinde, aşağıdaki bildirim/başlatmalar geçerlidir:
 
 ```cpp
 const char *pch1 = &cch;
@@ -87,7 +88,7 @@ errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *str
 Yukarıdaki ifade, üç bağımsız değişkenin ikisi de işaretçisiyse [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md)bir işlev bildirir **`char`** . Bağımsız değişkenler değere göre değil, başvuruya göre geçirildiğinden ve `strDestination` `strSource` olarak bildirilmemiş ise, işlev her ikisini de değiştirmek ücretsizdir `strSource` **`const`** . Bildirimi, `strSource` **`const`** `strSource` çağrılan işlev tarafından değiştirilemeyen çağıranı sağlar.
 
 > [!NOTE]
-> *TypeName* 'ten TypeName 'e standart bir dönüştürme olduğundan <strong>\*</strong> **`const`** *typename* <strong>\*</strong> , strcpy_s türünde bir bağımsız değişken geçirmek geçerlidir `char *` . [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) Ancak, tersi doğru değildir; **`const`** bir nesne veya işaretçiden özniteliği kaldırmak için örtük dönüştürme yok.
+> *TypeName* 'ten TypeName 'e standart bir dönüştürme olduğundan <strong>\*</strong> **`const`**  <strong>\*</strong> , strcpy_s türünde bir bağımsız değişken geçirmek geçerlidir `char *` . [](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) Ancak, tersi doğru değildir; **`const`** bir nesne veya işaretçiden özniteliği kaldırmak için örtük dönüştürme yok.
 
 **`const`** Verilen türdeki bir işaretçiye aynı türdeki bir işaretçiye atama uygulanabilir. Ancak, işaretçi olmayan bir işaretçi **`const`** bir **`const`** işaretçiye atanamaz. Aşağıdaki kod, doğru ve hatalı atamaları gösterir:
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: const (C++)'
 title: const (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - const keyword [C++]
 ms.assetid: b21c0271-1ad0-40a0-b21c-5e812bba0318
-ms.openlocfilehash: db79e228f1fabc4b2da0a7778126a1b576a67768
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 35943a9b417029e92fe478d375423901c201b810
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344659"
 ---
 # <a name="const-c"></a>const (C++)
 
 Bir veri bildirimini değiştirirken **`const`** anahtar sözcüğü nesne veya değişkenin değiştirilebilir olmadığı belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 const declaration ;

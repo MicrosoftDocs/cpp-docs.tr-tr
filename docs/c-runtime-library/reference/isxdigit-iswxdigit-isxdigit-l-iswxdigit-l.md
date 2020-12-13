@@ -1,4 +1,5 @@
 ---
+description: 'Bu konuda daha fazla bilgi edinin: ıxdigit, ıswxdigit, _isxdigit_l _iswxdigit_l'
 title: isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - hexadecimal characters
 - iswxdigit function
 ms.assetid: c8bc5146-0b58-4e3f-bee3-f2318dd0f829
-ms.openlocfilehash: 3aefa39d9fabb2b8a3124955f3ab0787e9e174f3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 87e9e8d07f9a0da38bc6590f27fcb770fc2b789b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916593"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344854"
 ---
 # <a name="isxdigit-iswxdigit-_isxdigit_l-_iswxdigit_l"></a>isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 
@@ -103,10 +104,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isxdigit**|\<CType. h>|
-|**iswxbasamağı**|\<CType. h> veya \<wchar. h>|
-|**_isxdigit_l**|\<CType. h>|
-|**_iswxdigit_l**|\<CType. h> veya \<wchar. h>|
+|**isxdigit**|\<ctype.h>|
+|**iswxbasamağı**|\<ctype.h> veya \<wchar.h>|
+|**_isxdigit_l**|\<ctype.h>|
+|**_iswxdigit_l**|\<ctype.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
