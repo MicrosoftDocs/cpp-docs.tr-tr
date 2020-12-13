@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: dllexport ve dllimport ile satır Içi C++ Işlevlerini tanımlama'
 title: dllexport ve dllimport ile Satır İçin C++ İşlevlerini Tanımlama
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - dllimport attribute [C++], inline functions
 - dllexport attribute [C++], inline functions
 ms.assetid: 3b48678b-e7b8-4eda-bb46-b5d34dcf7817
-ms.openlocfilehash: cf3c73e21834391d894a2924f78f6e6143c3a2b6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 158fc5a8fa3805763b1a5abc731abc8905310a27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221724"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339481"
 ---
 # <a name="defining-inline-c-functions-with-dllexport-and-dllimport"></a>dllexport ve dllimport ile Satır İçin C++ İşlevlerini Tanımlama
 

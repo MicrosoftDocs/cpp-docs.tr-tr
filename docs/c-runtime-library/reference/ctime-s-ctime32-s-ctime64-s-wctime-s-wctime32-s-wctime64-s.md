@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s'
 title: ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 ms.date: 4/2/2020
 api_name:
@@ -59,12 +60,12 @@ helpviewer_keywords:
 - _ctime32_s function
 - _tctime32_s function
 ms.assetid: 36ac419a-8000-4389-9fd8-d78b747a009b
-ms.openlocfilehash: ca7636f7054b6c7e228b57e0e776250f1b4ccb32
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8a0f7b281bab32de5c6b5d7f2cf83fb5e1ed811f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914816"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339624"
 ---
 # <a name="ctime_s-_ctime32_s-_ctime64_s-_wctime_s-_wctime32_s-_wctime64_s"></a>ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s
 
@@ -139,7 +140,7 @@ errno_t _wctime64_s(
 
 - **_Ctime64_s** veya **_Wctime64_s** kullanırsanız ve *Sourcetime* 23:59:59, 31 Aralık 3000, UTC 'den sonraki bir tarihi temsil eder.
 
-- **_Ctime_s** veya **_wctime_s**kullanıyorsanız, bu işlevler önceki işlevlere sarmalayıcılardır. Açıklamalar bölümüne bakın.
+- **_Ctime_s** veya **_wctime_s** kullanıyorsanız, bu işlevler önceki işlevlere sarmalayıcılardır. Açıklamalar bölümüne bakın.
 
 *numberOfElements*<br/>
 Arabelleğin boyutu.
@@ -155,15 +156,15 @@ Başarılıysa sıfır. Geçersiz bir parametre nedeniyle hata oluşursa, [param
 
 |*arabelleğin*|*numberOfElements*|*sourceTime*|Döndürülmesini|*Arabellekteki* değer|
 |--------------|------------------------|------------|------------|-----------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|Değiştirilmedi|
-|**Null** değil (geçerli belleğe işaret eder)|0|kaydedilmemiş|**EıNVAL**|Değiştirilmedi|
-|**Null** değil|0< boyutu < 26|kaydedilmemiş|**EıNVAL**|Boş dize|
+|**DEĞER**|herhangi biri|herhangi biri|**EıNVAL**|Değiştirilmedi|
+|**Null** değil (geçerli belleğe işaret eder)|0|herhangi biri|**EıNVAL**|Değiştirilmedi|
+|**Null** değil|0< boyutu < 26|herhangi biri|**EıNVAL**|Boş dize|
 |**Null** değil|>= 26|NULL|**EıNVAL**|Boş dize|
 |**Null** değil|>= 26|< 0|**EıNVAL**|Boş dize|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ctime_s** işlevi, bir [time_t](../../c-runtime-library/standard-types.md) yapısı olarak depolanan bir zaman değerini bir karakter dizesine dönüştürür. *Sourcetime* değeri genellikle gece yarısından beri geçen saniye sayısı ( [time](time-time32-time64.md)00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) döndüren bir çağrıdan alınmıştır. Dönüş değeri dizesi tam 26 karakter içerir ve şu biçimdedir:
+**Ctime_s** işlevi, bir [time_t](../../c-runtime-library/standard-types.md) yapısı olarak depolanan bir zaman değerini bir karakter dizesine dönüştürür. *Sourcetime* değeri genellikle gece yarısından beri geçen saniye sayısı ( [](time-time32-time64.md)00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC) döndüren bir çağrıdan alınmıştır. Dönüş değeri dizesi tam 26 karakter içerir ve şu biçimdedir:
 
 `Wed Jan 02 02:03:55 1980\n\0`
 
@@ -171,9 +172,9 @@ Başarılıysa sıfır. Geçersiz bir parametre nedeniyle hata oluşursa, [param
 
 Dönüştürülen karakter dizesi de yerel saat dilimi ayarlarına göre ayarlanır. Yerel saati yapılandırma hakkında bilgi için [saat](time-time32-time64.md), [_ftime](ftime-ftime32-ftime64.md)ve [localtime32_s](localtime-s-localtime32-s-localtime64-s.md) işlevlerine ve saat dilimi ortamı ile genel değişkenleri tanımlama hakkında bilgi için [_tzset](tzset.md) işlevine bakın.
 
-**_wctime32_s** ve **_wctime64_s** , **_ctime32_s** ve **_ctime64_s**'ın geniş karakterli sürümüdür; geniş karakterli dizeye bir işaretçi döndürülüyor. Aksi takdirde, **_ctime64_s**, **_wctime32_s**ve **_wctime64_s** **_ctime32_s**aynı şekilde davranır.
+**_wctime32_s** ve **_wctime64_s** , **_ctime32_s** ve **_ctime64_s**'ın geniş karakterli sürümüdür; geniş karakterli dizeye bir işaretçi döndürülüyor. Aksi takdirde, **_ctime64_s**, **_wctime32_s** ve **_wctime64_s** **_ctime32_s** aynı şekilde davranır.
 
-**ctime_s** , **_ctime64_s** değerlendirilen ve **time_t** **__time64_t**eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t**olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T**tanımlayabilirsiniz. Bunu yapmak **ctime_s** **_ctime32_s**değerlendirmesine neden olur. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
+**ctime_s** , **_ctime64_s** değerlendirilen ve **time_t** **__time64_t** eşdeğer bir satır içi işlevdir. Derleyicinin **time_t** eski 32 bit **time_t** olarak yorumlamasını zorlamak istiyorsanız **_USE_32BIT_TIME_T** tanımlayabilirsiniz. Bunu yapmak **ctime_s** **_ctime32_s** değerlendirmesine neden olur. Uygulamanız 18 Ocak 2038 ' den sonra başarısız olabileceğinden ve 64-bit platformlarda izin verilmediği için bu önerilmez.
 
 C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir ve bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -193,8 +194,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**ctime_s**, **_ctime32_s**, **_ctime64_s**|\<Time. h>|
-|**_wctime_s**, **_wctime32_s**, **_wctime64_s**|\<Time. h> veya \<wchar. h>|
+|**ctime_s**, **_ctime32_s**, **_ctime64_s**|\<time.h>|
+|**_wctime_s**, **_wctime32_s**, **_wctime64_s**|\<time.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

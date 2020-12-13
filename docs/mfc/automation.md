@@ -1,5 +1,6 @@
 ---
-title: Otomasyon
+description: 'Daha fazla bilgi edinin: Otomasyon'
+title: Otomatikleştirme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Automation servers, about Automation servers
@@ -20,14 +21,14 @@ helpviewer_keywords:
 - MFC COM, Automation
 - methods [MFC], Automation
 ms.assetid: 329117f0-c1aa-4680-a901-bfb71277dfba
-ms.openlocfilehash: e5790be14f26f59c2b51b339c8bee7c5eca7d692
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8a038a3590c3db9c90c8f99eaaa6f98d2c4e20cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339845"
 ---
-# <a name="automation"></a>Otomasyon
+# <a name="automation"></a>Otomatikleştirme
 
 Otomasyon (eski adıyla OLE Otomasyonu), bir uygulamanın başka bir uygulamada uygulanan nesneleri işlemesini veya işlenebilmeleri için nesneleri kullanıma sunmasını mümkün kılar.
 
@@ -47,7 +48,7 @@ Destek Otomasyonu, kullanıcılara ve çözüm sağlayıcılarına sağladığı
 
 Microsoft Excel ve Microsoft Visual C++ gibi birçok ticari uygulama, işlevlerinin çoğunu otomatik hale getirmenizi sağlar. Örneğin, Visual C++ ' de, yapılandırmaları, kod düzenlemenin yönlerini veya hata ayıklama görevlerini otomatikleştirebilmek için VBScript makroları yazabilirsiniz.
 
-## <a name="passing-parameters-in-automation"></a><a name="_core_passing_parameters_in_automation"></a>Otomasyon 'da parametreleri geçirme
+## <a name="passing-parameters-in-automation"></a><a name="_core_passing_parameters_in_automation"></a> Otomasyon 'da parametreleri geçirme
 
 Otomasyon yöntemleri oluştururken bir zorluk, otomasyon sunucuları ve istemciler arasında veri geçirmek için Tekdüzen "güvenli" mekanizması sağlamaya yardımcı olur. Otomasyon, verileri geçirmek için **değişken** türünü kullanır. **Değişken** türü etiketli bir birleşimdir. Bu, değer için bir veri üyesine (Bu anonim bir C++ birleşimi) ve birleşimde depolanan bilgilerin türünü gösteren bir veri üyesine sahiptir. **Değişken** türü bir dizi standart veri türünü destekler: 2-ve 4 baytlık tamsayılar, 4 ve 8 baytlık kayan noktalı sayılar, dizeler ve Boole değerleri. Ayrıca, **HRESULT** (OLE hata kodları), **para birimi** (sabit noktalı sayısal tür) ve **Tarih** (mutlak tarih ve saat) türlerini ve bunlara yönelik işaretçileri `IUnknown` ve arabirimleri de destekler `IDispatch` .
 
@@ -61,7 +62,7 @@ Otomasyon yöntemleri oluştururken bir zorluk, otomasyon sunucuları ve istemci
 
 - [Calcdriv](../overview/visual-cpp-samples.md) MFCCALC 'yi yönlendiren Otomasyon istemci uygulaması.
 
-- [InProc](../overview/visual-cpp-samples.md) Işlem Içi bir Otomasyon sunucu uygulaması gösterir.
+- [InProc](../overview/visual-cpp-samples.md) Bir In-Process Automation sunucu uygulaması gösterir.
 
 - [Ipdrive](../overview/visual-cpp-samples.md) INPROC 'yi yönlendiren Otomasyon istemci uygulaması.
 

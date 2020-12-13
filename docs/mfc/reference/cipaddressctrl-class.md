@@ -1,5 +1,6 @@
 ---
-title: CIPAddressCtrl Sınıfı
+description: 'Şu konuda daha fazla bilgi edinin: Şifreddresscskclass'
+title: Şifreddressc, sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CIPAddressCtrl
@@ -24,18 +25,18 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-ms.openlocfilehash: 0613dea766b022acf140a82bb4b01784793c2589
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: e5791726bc31e9b7485d0de7ecfc5461408ed02a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340950"
 ---
-# <a name="cipaddressctrl-class"></a>CIPAddressCtrl Sınıfı
+# <a name="cipaddressctrl-class"></a>Şifreddressc, sınıfı
 
-Windows ortak IP Adresi denetiminin işlevselliğini sağlar.
+Windows ortak IP adresi denetimi işlevlerini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CIPAddressCtrl : public CWnd
@@ -45,46 +46,46 @@ class CIPAddressCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CIPAddressCtrl::CIPAddressCtrl](#cipaddressctrl)|Bir `CIPAddressCtrl` nesne inşa eder.|
+|[Şifreddressci:: Şifreadresisci](#cipaddressctrl)|Bir `CIPAddressCtrl` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CIPAddressCtrl::ClearAddress](#clearaddress)|IP Adresi Denetimi'nin içeriğini temizler.|
-|[CIPAddressCtrl::Oluştur](#create)|IP Adresi Denetimi oluşturur ve bir `CIPAddressCtrl` nesneye bağlar.|
-|[CIPAddressCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleri ile bir IP Adresi denetimi oluşturur `CIPAddressCtrl` ve bir nesneye bağlar.|
-|[CIPAddressCtrl::GetAddress](#getaddress)|IP Adresi Denetimi'ndeki dört alanın adres değerlerini alır.|
-|[CIPAddressCtrl::Boş](#isblank)|IP Adres Denetimi'ndeki tüm alanların boş olup olmadığını belirler.|
-|[CIPAddressCtrl::SetAddress](#setaddress)|IP Adresi Denetimi'ndeki dört alanın adres değerlerini ayarlar.|
-|[CIPAddressCtrl::SetFieldFocus](#setfieldfocus)|Klavye odağıIP Adres Denetimi'nde belirtilen alana ayarlar.|
-|[CIPAddressCtrl::SetFieldAralığı](#setfieldrange)|IP Adresi Denetimi'nde belirtilen alandaki aralığı ayarlar.|
+|[Şifreddressci:: ClearAddress](#clearaddress)|IP adresi denetiminin içeriğini temizler.|
+|[Şifreddressci:: Create](#create)|Bir IP adresi denetimi oluşturur ve bunu bir nesneye ekler `CIPAddressCtrl` .|
+|[Şifreddressci:: CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir IP adresi denetimi oluşturur ve bunu bir `CIPAddressCtrl` nesneye ekler.|
+|[Şifreddressci:: GetAddress](#getaddress)|IP adresi denetimindeki tüm dört alan için adres değerlerini alır.|
+|[Şifreleri:: ISBLANK](#isblank)|IP adresi denetimindeki tüm alanların boş olup olmadığını belirler.|
+|[Şifreddressci:: SetAddress](#setaddress)|IP adresi denetimindeki tüm dört alan için adres değerlerini ayarlar.|
+|[Şifreoddresscn:: SetFieldFocus](#setfieldfocus)|Klavye odağını IP adresi denetimindeki belirtilen alana ayarlar.|
+|[Şifreddressch:: SetFieldRange](#setfieldrange)|IP adresi denetimindeki belirtilen alanın aralığını ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir düzenleme denetimine benzer bir denetim olan IP Adresi denetimi, Internet Protokolü (IP) biçiminde sayısal bir adres girmenize ve işlemenize olanak tanır.
+Bir düzenleme denetimine benzer bir denetim olan bir IP adresi denetimi, Internet Protokolü (IP) biçiminde bir sayısal adres girmenize ve değiştirmenize olanak sağlar.
 
-Bu denetim (ve `CIPAddressCtrl` bu nedenle sınıf) yalnızca Microsoft Internet Explorer 4.0 ve sonraki programlar altında çalışan programlar için kullanılabilir. Ayrıca Windows ve Windows NT gelecekteki sürümleri altında satışa sunulacak.
+Bu denetim (ve bu nedenle `CIPAddressCtrl` sınıfı) yalnızca Microsoft Internet Explorer 4,0 ve üzeri sürümlerde çalışan programlar için kullanılabilir. Bunlar, Windows ve Windows NT 'nin sonraki sürümlerinde de kullanılabilir.
 
-IP Adres Denetimi hakkında daha genel bilgi için Windows SDK'daki [IP Adres Denetimleri'ne](/windows/win32/Controls/ip-address-controls) bakın.
+IP adresi denetimi hakkında daha fazla genel bilgi için, Windows SDK [IP adresi denetimleri](/windows/win32/Controls/ip-address-controls) bölümüne bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 `CIPAddressCtrl`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** afxcmn.h
+**Üstbilgi:** afxcmn. h
 
-## <a name="cipaddressctrlcipaddressctrl"></a><a name="cipaddressctrl"></a>CIPAddressCtrl::CIPAddressCtrl
+## <a name="cipaddressctrlcipaddressctrl"></a><a name="cipaddressctrl"></a> Şifreddressci:: Şifreadresisci
 
 Bir `CIPAddressCtrl` nesnesi oluşturur.
 
@@ -92,9 +93,9 @@ Bir `CIPAddressCtrl` nesnesi oluşturur.
 CIPAddressCtrl();
 ```
 
-## <a name="cipaddressctrlclearaddress"></a><a name="clearaddress"></a>CIPAddressCtrl::ClearAddress
+## <a name="cipaddressctrlclearaddress"></a><a name="clearaddress"></a> Şifreddressci:: ClearAddress
 
-IP Adresi Denetimi'nin içeriğini temizler.
+IP adresi denetiminin içeriğini temizler.
 
 ```cpp
 void ClearAddress();
@@ -102,11 +103,11 @@ void ClearAddress();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [IPM_CLEARADDRESS](/windows/win32/Controls/ipm-clearaddress)davranışını uygular.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [IPM_CLEARADDRESS](/windows/win32/Controls/ipm-clearaddress)davranışını uygular.
 
-## <a name="cipaddressctrlcreate"></a><a name="create"></a>CIPAddressCtrl::Oluştur
+## <a name="cipaddressctrlcreate"></a><a name="create"></a> Şifreddressci:: Create
 
-IP Adresi Denetimi oluşturur ve bir `CIPAddressCtrl` nesneye bağlar.
+Bir IP adresi denetimi oluşturur ve bunu bir nesneye ekler `CIPAddressCtrl` .
 
 ```
 virtual BOOL Create(
@@ -118,35 +119,35 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwstyle*<br/>
-IP Adresi denetiminin stili. Pencere stillerinin bir birleşimini uygulayın. Denetim bir alt pencere olması gerektiğinden, WS_CHILD stilieklemeniz gerekir. Windows stilleri listesi için Windows SDK'daki [CreateWindow'a](/windows/win32/api/winuser/nf-winuser-createwindoww) bakın.
+*dwStyle*<br/>
+IP adresi denetiminin stili. Pencere stillerinin birleşimini uygulayın. Denetimin bir alt pencere olması gerektiğinden WS_CHILD stilini dahil etmeniz gerekir. Windows stillerinin listesi için Windows SDK [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) ' a bakın.
 
 *Rect*<br/>
-IP Adresi Denetimi'nin boyutuna ve konumuna bir başvuru. Bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya [RECT](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
+IP adresi denetiminin boyut ve konumuna bir başvuru. Bu, bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısı olabilir.
 
 *pParentWnd*<br/>
-IP Adresi Denetimi'nin üst penceresine işaretçi. NULL olmamalıdır.
+IP adresi denetiminin üst penceresine yönelik bir işaretçi. NULL olmaması gerekir.
 
-*Nıd*<br/>
-IP Adresi Denetimi'nin kimliği.
+*NID*<br/>
+IP adresi denetiminin KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başlatma başarılı olduysa sıfırsız; aksi takdirde 0.
+Başlatma başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir nesneyi `CIPAddressCtrl` iki adımda inşa ee.
+`CIPAddressCtrl`İki adımda bir nesne oluşturursunuz.
 
-1. Nesneyi oluşturan oluşturucuyu `CIPAddressCtrl` çağırın.
+1. Nesnesini oluşturan oluşturucuyu çağırın `CIPAddressCtrl` .
 
-1. ARAMA `Create`, IP Adres Denetimi oluşturur.
+1. `Create`IP adresi denetimini oluşturan çağrısı.
 
-Genişletilmiş windows stillerini denetiminiz ile kullanmak istiyorsanız, `Create`'' yerine [CreateEx'i](#createex) arayın.
+Denetimi ile genişletilmiş Windows stilleri kullanmak istiyorsanız, yerine [CreateEx](#createex) çağırın `Create` .
 
-## <a name="cipaddressctrlcreateex"></a><a name="createex"></a>CIPAddressCtrl::CreateEx
+## <a name="cipaddressctrlcreateex"></a><a name="createex"></a> Şifreddressci:: CreateEx
 
-Denetim (alt pencere) oluşturmak ve `CIPAddressCtrl` nesneyle ilişkilendirmek için bu işlevi çağırın.
+Bir denetim (alt pencere) oluşturmak ve nesneyle ilişkilendirmek için bu işlevi çağırın `CIPAddressCtrl` .
 
 ```
 virtual BOOL CreateEx(
@@ -160,31 +161,31 @@ virtual BOOL CreateEx(
 ### <a name="parameters"></a>Parametreler
 
 *dwExStyle*<br/>
-Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerilistesi için Windows SDK'daki [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) için *dwExStyle* parametreye bakın.
+Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stillerinin listesi için, Windows SDK için bkz. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Için *dwExStyle* parametresi.
 
-*Dwstyle*<br/>
-IP Adresi denetiminin stili. Pencere stillerinin bir birleşimini uygulayın. Denetim bir alt pencere olması gerektiğinden, WS_CHILD stilieklemeniz gerekir. Windows stilleri listesi için Windows SDK'daki [CreateWindow'a](/windows/win32/api/winuser/nf-winuser-createwindoww) bakın.
+*dwStyle*<br/>
+IP adresi denetiminin stili. Pencere stillerinin birleşimini uygulayın. Denetimin bir alt pencere olması gerektiğinden WS_CHILD stilini dahil etmeniz gerekir. Windows stillerinin listesi için Windows SDK [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) ' a bakın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatlarında oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [RECT](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
-Denetimin üst öğesi olan pencereye işaretçi.
+Denetimin üst öğesi olan pencerenin işaretçisi.
 
-*Nıd*<br/>
-Denetimin alt pencere kimliği.
+*NID*<br/>
+Denetimin alt pencere KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfırsız eğer başarılı; aksi takdirde 0.
+Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows `CreateEx` genişletilmiş stil önsöz **WS_EX_** tarafından belirtilen genişletilmiş Windows stilleri uygulamak için [Oluştur](#create) yerine kullanın.
+`CreateEx`Windows genişletilmiş stil ön yüzü **ws_ex_** tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için [Create](#create) yerine kullanın.
 
-## <a name="cipaddressctrlgetaddress"></a><a name="getaddress"></a>CIPAddressCtrl::GetAddress
+## <a name="cipaddressctrlgetaddress"></a><a name="getaddress"></a> Şifreddressci:: GetAddress
 
-IP Adresi Denetimi'ndeki dört alanın adres değerlerini alır.
+IP adresi denetimindeki tüm dört alan için adres değerlerini alır.
 
 ```
 int GetAddress(
@@ -202,35 +203,35 @@ int GetAddress(DWORD& dwAddress);
 Paketlenmiş bir IP adresinden alan 0 değerine başvuru.
 
 *nField1*<br/>
-Paketlenmiş bir IP adresinden alan 1 değerine bir başvuru.
+Paketlenmiş bir IP adresinden alan 1 değerine başvuru.
 
 *nField2*<br/>
-Paketlenmiş bir IP adresinden alan 2 değerine bir başvuru.
+Paketlenmiş bir IP adresinden alan 2 değerine başvuru.
 
 *nField3*<br/>
-Paketlenmiş bir IP adresinden alan 3 değerine bir başvuru.
+Paketlenmiş bir IP adresinden alan 3 değerine başvuru.
 
 *dwAddress*<br/>
-IP adresini alan bir DWORD değerinin adresine yapılan başvuru. *dwAddress'in* nasıl doldurulduğunu gösteren bir tabloiçin **Açıklamalar'a** bakın.
+IP adresini alan bir DWORD değeri adresine başvuru. *DwAddress* 'in nasıl doldurulacağını gösteren bir tablo için bkz. **açıklamalar** .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-IP Adresi Denetimi'ndeki boş olmayan alanların sayısı.
+IP adresi denetimindeki boş olmayan alan sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [IPM_GETADDRESS](/windows/win32/Controls/ipm-getaddress)davranışını uygular. Yukarıdaki ilk prototipte, kontrolden 0'dan 3'e kadar olan alanlardaki sayılar sırasıyla soldan sağa okunur ve dört parametreyi doldurun. Yukarıdaki ikinci *prototipte, dwAddress* aşağıdaki gibi doldurulur.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [IPM_GETADDRESS](/windows/win32/Controls/ipm-getaddress)davranışını uygular. Yukarıdaki ilk prototipte, denetimin 0 ile 3 arasındaki alanlarındaki sayılar, soldan sağa doğru okundu ve dört parametreyi dolduracaktır. Yukarıdaki ikinci prototipde *dwAddress* aşağıdaki gibi doldurulur.
 
 |Alan|Alan değerini içeren bitler|
 |-----------|-------------------------------------|
-|0|24 ile 31 arası|
-|1|16 ile 23 arası|
-|2|8 ile 15 arasında|
-|3|0 ile 7 arasında|
+|0|24 ila 31|
+|1|16 ila 23|
+|2|8 ila 15|
+|3|0 ila 7|
 
-## <a name="cipaddressctrlisblank"></a><a name="isblank"></a>CIPAddressCtrl::Boş
+## <a name="cipaddressctrlisblank"></a><a name="isblank"></a> Şifreleri:: ISBLANK
 
-IP Adres Denetimi'ndeki tüm alanların boş olup olmadığını belirler.
+IP adresi denetimindeki tüm alanların boş olup olmadığını belirler.
 
 ```
 BOOL IsBlank() const;
@@ -238,15 +239,15 @@ BOOL IsBlank() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tüm IP Adresi Denetimi alanları boşsa sıfırsız; aksi takdirde 0.
+Tüm IP adresi denetim alanları boşsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Controls/ipm-isblank)iletisinin IPM_ISBLANK davranışını uygular.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [IPM_ISBLANK](/windows/win32/Controls/ipm-isblank)davranışını uygular.
 
-## <a name="cipaddressctrlsetaddress"></a><a name="setaddress"></a>CIPAddressCtrl::SetAddress
+## <a name="cipaddressctrlsetaddress"></a><a name="setaddress"></a> Şifreddressci:: SetAddress
 
-IP Adresi Denetimi'ndeki dört alanın adres değerlerini ayarlar.
+IP adresi denetimindeki tüm dört alan için adres değerlerini ayarlar.
 
 ```cpp
 void SetAddress(
@@ -273,22 +274,22 @@ Paketlenmiş bir IP adresinden alan 2 değeri.
 Paketlenmiş bir IP adresinden alan 3 değeri.
 
 *dwAddress*<br/>
-Yeni IP adresini içeren bir DWORD değeri. DWORD değerinin nasıl doldurulduğunu gösteren bir tabloiçin **Açıklamalar'a** bakın.
+Yeni IP adresini içeren bir DWORD değeri. DWORD değerinin nasıl doldurulacağını gösteren bir tablo için bkz. **açıklamalar** .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [IPM_SETADDRESS](/windows/win32/Controls/ipm-setaddress)davranışını uygular. Yukarıdaki ilk prototipte, kontrolden 0'dan 3'e kadar olan alanlardaki sayılar sırasıyla soldan sağa okunur ve dört parametreyi doldurun. Yukarıdaki ikinci *prototipte, dwAddress* aşağıdaki gibi doldurulur.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [IPM_SETADDRESS](/windows/win32/Controls/ipm-setaddress)davranışını uygular. Yukarıdaki ilk prototipte, denetimin 0 ile 3 arasındaki alanlarındaki sayılar, soldan sağa doğru okundu ve dört parametreyi dolduracaktır. Yukarıdaki ikinci prototipde *dwAddress* aşağıdaki gibi doldurulur.
 
 |Alan|Alan değerini içeren bitler|
 |-----------|-------------------------------------|
-|0|24 ile 31 arası|
-|1|16 ile 23 arası|
-|2|8 ile 15 arasında|
-|3|0 ile 7 arasında|
+|0|24 ila 31|
+|1|16 ila 23|
+|2|8 ila 15|
+|3|0 ila 7|
 
-## <a name="cipaddressctrlsetfieldfocus"></a><a name="setfieldfocus"></a>CIPAddressCtrl::SetFieldFocus
+## <a name="cipaddressctrlsetfieldfocus"></a><a name="setfieldfocus"></a> Şifreoddresscn:: SetFieldFocus
 
-Klavye odağıIP Adres Denetimi'nde belirtilen alana ayarlar.
+Klavye odağını IP adresi denetimindeki belirtilen alana ayarlar.
 
 ```cpp
 void SetFieldFocus(WORD nField);
@@ -296,16 +297,16 @@ void SetFieldFocus(WORD nField);
 
 ### <a name="parameters"></a>Parametreler
 
-*nAlan*<br/>
-Odak ayarlanmalıdır sıfır tabanlı alan dizini. Bu değer alan sayısından büyükse, odak ilk boş alana ayarlanır. Tüm alanlar boş değilse, odak ilk alana ayarlanır.
+*Nalan*<br/>
+Odağın ayarlanması gereken sıfır tabanlı alan dizini. Bu değer, alan sayısından büyükse, odak ilk boş alana ayarlanır. Tüm alanlar boş değilse, odak ilk alana ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi [Win32](/windows/win32/Controls/ipm-setfocus)iletisinin IPM_SETFOCUS davranışını uygular.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [IPM_SETFOCUS](/windows/win32/Controls/ipm-setfocus)davranışını uygular.
 
-## <a name="cipaddressctrlsetfieldrange"></a><a name="setfieldrange"></a>CIPAddressCtrl::SetFieldAralığı
+## <a name="cipaddressctrlsetfieldrange"></a><a name="setfieldrange"></a> Şifreddressch:: SetFieldRange
 
-IP Adresi Denetimi'nde belirtilen alandaki aralığı ayarlar.
+IP adresi denetimindeki belirtilen alanın aralığını ayarlar.
 
 ```cpp
 void SetFieldRange(
@@ -316,20 +317,20 @@ void SetFieldRange(
 
 ### <a name="parameters"></a>Parametreler
 
-*nAlan*<br/>
+*Nalan*<br/>
 Aralığın uygulanacağı sıfır tabanlı alan dizini.
 
 *nLower*<br/>
-Bu IP Adresi Denetimi'nde belirtilen alanın alt sınırını alan bir tamsayıya başvuru.
+Bu IP adresi denetimindeki belirtilen alanın alt sınırını alan bir tamsayıya yönelik başvuru.
 
 *nUpper*<br/>
-Bu IP Adresi Denetimi'nde belirtilen alanın üst sınırını alan bir tamsayıya başvuru.
+Bu IP adresi denetimindeki belirtilen alanın üst sınırını alan bir tamsayıya yönelik başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, Windows SDK'da açıklandığı gibi Win32 iletisinin [IPM_SETRANGE](/windows/win32/Controls/ipm-setrange)davranışını uygular. Win32 iletisi ile kullanılan *wRange* parametresi yerine alanın alt ve üst sınırlarını belirtmek için *nLower* ve *nUpper*olmak üzere iki parametreyi kullanın.
+Bu üye işlevi, Windows SDK açıklandığı gibi Win32 ileti [IPM_SETRANGE](/windows/win32/Controls/ipm-setrange)davranışını uygular. Win32 iletisiyle kullanılan *wRange* parametresi yerine, alanın alt ve üst sınırlarını belirtmek Için *nLower* ve *nUpper* parametrelerini kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWnd Sınıfı](../../mfc/reference/cwnd-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[CWnd sınıfı](../../mfc/reference/cwnd-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

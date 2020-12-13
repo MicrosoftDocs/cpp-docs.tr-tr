@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: varsayılan bağımsız değişkenler'
 title: Varsayılan Bağımsız Değişkenler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - arguments [C++], default
 - defaults [C++], arguments
 ms.assetid: d32cf516-05cb-4d4d-b169-92f5649fdfa2
-ms.openlocfilehash: ef0c81501fe37bd27a23daf2dd1c58b3e6a4f6c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7926070c4fa521dd190a7a9eff626e1c21463d06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221737"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339494"
 ---
 # <a name="default-arguments"></a>Varsayılan Bağımsız Değişkenler
 

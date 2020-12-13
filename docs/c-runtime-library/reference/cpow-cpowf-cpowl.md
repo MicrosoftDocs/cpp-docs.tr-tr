@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: cpow, cpowf, cpowl'
 title: cpow, cpowf, cpowl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cpowf function
 - complex/cpowl function
 ms.assetid: 83fe2187-22b7-4295-ab16-4d77abdbb80b
-ms.openlocfilehash: 005bafd4b19164f5c85be839a90fc7d5259d61bf
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 3e12cab3a7ec8c7f3f4bf8cd4739e10f022de8fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942697"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339650"
 ---
 # <a name="cpow-cpowf-cpowl"></a>cpow, cpowf, cpowl
 
@@ -67,7 +68,7 @@ _Lcomplex cpowl(
 ### <a name="parameters"></a>Parametreler
 
 *x*<br/>
-Temel.
+Taban.
 
 *Iz*<br/>
 Üs.
@@ -78,13 +79,13 @@ X değeri negatif gerçek eksen boyunca *x* için kesilmiş bir dala sahip *x* *
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **cpow** aşırı yüklerini çağırabilirsiniz. C programında **cpow** her zaman **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **cpow** aşırı yüklerini çağırabilirsiniz. C programında **cpow** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**cpow**, **cpowf**, **cpowl**|\<karmaşık. h >|\<ccomplex >|
+|**cpow**,               **cpowf**, **cpowl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

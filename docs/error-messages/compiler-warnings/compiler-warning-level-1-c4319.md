@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4319'
 title: Derleyici Uyarısı (düzey 1) C4319
 ms.date: 01/18/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4319
 ms.assetid: 1fac8048-9bd6-4552-a21c-192c67772bb9
-ms.openlocfilehash: 2d5ae8fcf5a527031c3a974b227f713675f31ffa
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: af38714ab506fad389d9d2407b5a83aebf01f7c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70926109"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340066"
 ---
 # <a name="compiler-warning-level-1-c4319"></a>Derleyici Uyarısı (düzey 1) C4319
 
 > ' ~ ': '*Type1*' değerini daha büyük boyuttaki '*type2*' öğesine genişletme
 
-**~** (Bit düzeyinde tamamlama) işlecinin sonucu işaretsiz olur ve daha büyük bir türe dönüştürüldüğünde sıfır genişletilir.
+**~**(Bit düzeyinde tamamlama) işlecinin sonucu işaretsiz olur ve daha büyük bir türe dönüştürüldüğünde sıfır genişletilir.
 
 ## <a name="example"></a>Örnek
 

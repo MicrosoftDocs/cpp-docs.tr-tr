@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2414'
 title: Derleyici hatası C2414
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2414
 ms.assetid: bbe94e03-862e-4990-b15e-544ae464727d
-ms.openlocfilehash: fbe627a57e5defc499a4bc5d463e0bf33494acba
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5bf2d017ac0018fe092b5a003dee021dd13370b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205666"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340339"
 ---
 # <a name="compiler-error-c2414"></a>Derleyici hatası C2414
 

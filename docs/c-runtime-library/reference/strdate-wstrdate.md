@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strdate _wstrdate'
 title: _strdate, _wstrdate
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _tstrdate function
 - copying dates
 ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
-ms.openlocfilehash: ea3aec8c007a6c0cae76de2f76d8ca2bafad2241
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1e0daab087653edf57b3f268aa14192ab145cac6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911862"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340573"
 ---
 # <a name="_strdate-_wstrdate"></a>_strdate, _wstrdate
 
@@ -76,17 +77,17 @@ Biçimlendirilen Tarih dizesini içeren bir arabelleğin işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, sonuçta elde *edilen dize karakter*dizesi için bir işaretçi döndürür.
+Bu işlevlerin her biri, sonuçta elde *edilen dize karakter* dizesi için bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
 Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz. [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md). Mümkün olan yerlerde daha güvenli işlevlerin kullanılması önerilir.
 
-**_Strdate** işlevi, **mm**/geçerli sistem tarihini *ertestr*tarafından işaret edilen arabelleğe, mm**gg**/**yy**, yani **AA** de ayı temsil eden iki basamakla, **gg** günü temsil eden iki basamakla ve **yy** yılın son iki basamağından oluşur. Örneğin, **12/05/99** dizesi 5 Aralık 1999 ' i temsil eder. Arabellek en az 9 bayt uzunluğunda olmalıdır.
+**_Strdate** işlevi, geçerli sistem tarihini *ertestr* tarafından işaret edilen arabelleğe,  / **mm gg** / **yy**, yani **AA** de ayı temsil eden iki basamakla, **gg** günü temsil eden iki basamakla ve **yy** yılın son iki basamağından oluşur. Örneğin, **12/05/99** dizesi 5 Aralık 1999 ' i temsil eder. Arabellek en az 9 bayt uzunluğunda olmalıdır.
 
-Eğer *davtestr* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Eğer *davtestr* **null** Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
-**_wstrdate** , **_strdate**geniş karakterli bir sürümüdür; **_wstrdate** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
+**_wstrdate** , **_strdate** geniş karakterli bir sürümüdür; **_wstrdate** bağımsız değişkeni ve dönüş değeri geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
 
 C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -102,8 +103,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strdate**|\<Time. h>|
-|**_wstrdate**|\<Time. h> veya \<wchar. h>|
+|**_strdate**|\<time.h>|
+|**_wstrdate**|\<time.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

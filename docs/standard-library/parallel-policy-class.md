@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: parallel_policy sınıfı'
 title: parallel_policy sınıfı
 ms.date: 04/18/2019
 f1_keywords:
 - execution/std::execution::parallel_policy
-ms.openlocfilehash: 7bb2b095a50e664dfc585e0bd4aaa608a6ad8e95
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 1cead0bcc44256bf7d41d061d592849a7411b057
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340807"
 ---
-# <a name="parallelpolicy-class"></a>parallel_policy sınıfı
+# <a name="parallel_policy-class"></a>parallel_policy sınıfı
 
-Paralel algoritma aşırı yükleme belirsizliği ortadan kaldırmak ve bir paralel algoritma 's yürütme paralel belirtmek için benzersiz bir türü olarak kullanılır.
+Paralel algoritma aşırı yüklemesini belirsizliği ortadan kaldırmak için benzersiz bir tür olarak kullanılır ve paralel algoritma yürütmenin paralelleştirilmesine işaret edilebilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class execution::parallel_policy;
@@ -22,4 +23,4 @@ class execution::parallel_policy;
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir paralel algoritma ile yürütülmesi sırasında `execution::parallel_policy` yakalanmayan bir özel durum ile bir öğe erişimi işlevine çağırmayı bulunup bulunmadığını ilke `terminate()` çağrılması.
+Bir paralel algoritmanın ilkeyle yürütülmesi sırasında `execution::parallel_policy` , bir öğe erişim işlevinin çağrılması yakalanamayan bir özel durum ile çıkış yaparken, `terminate()` çağırılır.

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Return deyimleri (C++)'
 title: return Deyimi (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - return keyword [C++], syntax
 - return keyword [C++]
 ms.assetid: a498903a-056a-4df0-a6cf-72f633a62210
-ms.openlocfilehash: 6a1ed4f374f133abd0233826d1b58896d49576cf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bb847900a0a9fc4c5d723d1b0392f27b6b5cf667
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225871"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340482"
 ---
 # <a name="return-statement-c"></a>return Deyimi (C++)
 
 Bir işlevin yürütülmesini sonlandırır ve denetimi çağırma işlevine (veya işlevden denetim aktarırsanız, işletim sistemine `main` ) döndürür. Yürütme, çağrının hemen ardından gelen noktada çağırma işlevinde sürdürülür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 return [expression];

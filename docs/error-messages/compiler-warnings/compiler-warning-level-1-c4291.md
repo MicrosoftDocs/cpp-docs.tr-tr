@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4291'
 title: Derleyici Uyarısı (düzey 1) C4291
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4291
 ms.assetid: c2b95dea-38f2-4609-9104-707c30798da4
-ms.openlocfilehash: e45856702eef7f24595d10b81f39047d8f9a08b2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 190fbb1ed91c5524dcd83a0a02a0b0280e264891
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221009"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340118"
 ---
 # <a name="compiler-warning-level-1-c4291"></a>Derleyici Uyarısı (düzey 1) C4291
 
@@ -23,7 +24,7 @@ Yerleştirme [silme](../../cpp/delete-operator-cpp.md)işlemi olmayan [Yeni](../
 
 İşlecini **`new`** özel bir bağımsız değişken olmadan kullanırsanız ve [/GX](../../build/reference/gx-enable-exception-handling.md), [/EHS](../../build/reference/eh-exception-handling-model.md)veya/EHa seçenekleriyle derlerseniz, **`delete`** Oluşturucu bir özel durum oluşturursa, derleyici işleci çağırmak için kod üretir.
 
-İşlecin yerleştirme formunu **`new`** (ayırmanın boyutuna ek olarak bağımsız değişkenlerle birlikte) kullanıyorsanız ve nesnenin Oluşturucusu bir özel durum oluşturursa, derleyici işleci çağırmak için kod oluşturur **`delete`** ; ancak yalnızca **`delete`** , belleği ayrılan işlecin yerleştirme formuyla eşleşen bir operatör yerleştirme formu varsa bunu olur **`new`** . Örnek:
+İşlecin yerleştirme formunu **`new`** (ayırmanın boyutuna ek olarak bağımsız değişkenlerle birlikte) kullanıyorsanız ve nesnenin Oluşturucusu bir özel durum oluşturursa, derleyici işleci çağırmak için kod oluşturur **`delete`** ; ancak yalnızca **`delete`** , belleği ayrılan işlecin yerleştirme formuyla eşleşen bir operatör yerleştirme formu varsa bunu olur **`new`** . Örneğin:
 
 ```cpp
 // C4291.cpp

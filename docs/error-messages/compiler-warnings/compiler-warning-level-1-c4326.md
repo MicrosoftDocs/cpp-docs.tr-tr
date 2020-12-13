@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4326'
 title: Derleyici Uyarısı (düzey 1) C4326
 ms.date: 08/27/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4326
 ms.assetid: d44d2c4e-9456-42d3-b35b-4ba4b2d42ec7
-ms.openlocfilehash: 41d8b271660ce0b6840e701ddac0f0538b265968
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d7c82d7a0157b53e60281bbe7c45a38cc765a73d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87196558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340053"
 ---
 # <a name="compiler-warning-level-1-c4326"></a>Derleyici Uyarısı (düzey 1) C4326
 
@@ -19,7 +20,7 @@ ms.locfileid: "87196558"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir işlev *Type1*dışında bir tür döndürdü. Örneğin, [/za](../../build/reference/za-ze-disable-language-extensions.md)kullanarak **Main** bir döndürmez **`int`** .
+Bir işlev *Type1* dışında bir tür döndürdü. Örneğin, [/za](../../build/reference/za-ze-disable-language-extensions.md)kullanarak **Main** bir döndürmez **`int`** .
 
 ## <a name="example"></a>Örnek
 

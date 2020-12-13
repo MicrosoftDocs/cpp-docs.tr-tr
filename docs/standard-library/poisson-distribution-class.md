@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: poisson_distribution sınıfı'
 title: poisson_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,18 +24,18 @@ helpviewer_keywords:
 - std::poisson_distribution [C++], param_type
 - std::poisson_distribution [C++], param_type
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
-ms.openlocfilehash: bf5cd289ab0ee02d6c9e09e95d01008191899cd6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b640517a63665ebec4573da8aff9e537412de589
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832652"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340677"
 ---
 # <a name="poisson_distribution-class"></a>poisson_distribution Sınıfı
 
 Bir Poisson dağılımı üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class IntType = int>
@@ -77,7 +78,7 @@ Sınıf şablonu, bir Poisson dağılımı ile Kullanıcı tarafından belirtile
 [poisson_distribution](#poisson_distribution)\
 [param_type](#param_type)
 
-Property işlevi, `mean()` depolanan dağıtım parametresi *ortalaması*için değeri döndürür.
+Property işlevi, `mean()` depolanan dağıtım parametresi *ortalaması* için değeri döndürür.
 
 Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
@@ -215,9 +216,9 @@ Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 **Önkoşul:**`0.0 < mean`
 
-İlk Oluşturucu, saklı `mean` değeri değeri *Ortalama*olan bir nesne oluşturur.
+İlk Oluşturucu, saklı `mean` değeri değeri *Ortalama* olan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="poisson_distributionparam_type"></a><a name="param_type"></a> poisson_distribution::p aram_type
 

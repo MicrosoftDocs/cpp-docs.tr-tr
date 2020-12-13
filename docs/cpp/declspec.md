@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `__declspec`'
 title: __declspec
 ms.date: 03/21/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - _declspec
 helpviewer_keywords:
 - __declspec keyword [C++]
-ms.openlocfilehash: 06af67a24b7514b22e34852dc2c6ee3f35daa24e
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: d0567c522e0e21f70b9ed8acfa428c3374fd09f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521128"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339546"
 ---
 # `__declspec`
 
@@ -101,5 +102,5 @@ __declspec( thread ) int tls_i = 1;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
-[C genişletilmiş depolama sınıfı öznitelikleri](../c-language/c-extended-storage-class-attributes.md)
+[Anahtar sözcükler](../cpp/keywords-cpp.md)<br/>
+[C genişletilmiş Storage-Class öznitelikleri](../c-language/c-extended-storage-class-attributes.md)

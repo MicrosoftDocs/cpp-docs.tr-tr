@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ısprint, ıswprint, _isprint_l _iswprint_l'
 title: isprint, iswprint, _isprint_l, _iswprint_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - iswprint_l function
 - _isprint_l function
 ms.assetid: a8bbcdb0-e8d0-4d8c-ae4e-56d3bdee6ca3
-ms.openlocfilehash: 9921164220bc5289a7ae4a211c88107b4dac8e9c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e5d0ee00fbdbc6e5dd0778da5008b026a7c0e23f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918515"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339611"
 ---
 # <a name="isprint-iswprint-_isprint_l-_iswprint_l"></a>isprint, iswprint, _isprint_l, _iswprint_l
 
@@ -100,10 +101,10 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**isprint**|\<CType. h>|
-|**iswprınt**|\<CType. h> veya \<wchar. h>|
-|**_isprint_l**|\<CType. h>|
-|**_iswprint_l**|\<CType. h> veya \<wchar. h>|
+|**isprint**|\<ctype.h>|
+|**iswprınt**|\<ctype.h> veya \<wchar.h>|
+|**_isprint_l**|\<ctype.h>|
+|**_iswprint_l**|\<ctype.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

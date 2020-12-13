@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: bildirimler ve tanımlar (C++)'
 title: Bildirimler ve tanımlar (C++)
 ms.date: 12/12/2019
 ms.assetid: 678f1424-e12f-45e0-a957-8169e5fef6cb
-ms.openlocfilehash: 688c1960e37fe74edecabebc4cb8090af9d0dd58
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 00d86e4df70e150a2e9f2417050b47b943a054ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339520"
 ---
 # <a name="declarations-and-definitions-c"></a>Bildirimler ve tanımlar (C++)
 
@@ -44,13 +45,13 @@ namespace N {
 
 9. satırda, tür adlı bir değişken `obj` `C` bildirilmiştir. Ancak, bu bildirim bir hata oluşturur çünkü `C` daha sonra program içinde bildirilmemiş ve ileriye dönük olarak bildirilmemiş. Hatayı onarmak için önce tüm *tanımını* taşıyabilir `C` ya da `main` bunun için bir ileri bildirim ekleyebilirsiniz. Bu davranış, C# gibi işlevlerin ve sınıfların bir kaynak dosyadaki bildirim noktasından önce kullanılabileceği diğer dillerden farklıdır.
 
-10. satırda, tür adlı bir değişken `str` `std::string` bildirilmiştir. Bu ad, `std::string` `string` 1. satırda kaynak dosyayla birleştirilmiş [üst bilgi dosyasında](header-files-cpp.md) tanıtıldığı için görülebilir. `std`, `string` sınıfının bildirildiği ad alanıdır.
+10. satırda, tür adlı bir değişken `str` `std::string` bildirilmiştir. Bu ad, `std::string` `string` 1. satırda kaynak dosyayla birleştirilmiş [üst bilgi dosyasında](header-files-cpp.md) tanıtıldığı için görülebilir. `std` , `string` sınıfının bildirildiği ad alanıdır.
 
 11. satırda, ad bildirilmemiş olduğundan bir hata oluşur `j` . Bir bildirimin, javaScript gibi diğer dillerin aksine bir tür sağlaması gerekir. 12 **`auto`** . satırda anahtar sözcüğü kullanılır, bu da derleyiciye başlatıldığı değere göre türü çıkarmasını söyler `k` . Bu örnekte derleyici **`int`** tür için seçer.  
 
 ## <a name="declaration-scope"></a>Bildirim kapsamı
 
-Bildirim tarafından tanıtılan ad, bildirimin gerçekleştiği *kapsam* içinde geçerlidir. Önceki örnekte, işlevinin içinde bildirildiği değişkenler `main` *Yerel değişkenlerdir*. `i` *Genel kapsamda*Main dışında adlı başka bir değişken bildirebilir ve tamamen ayrı bir varlık olabilir. Ancak, bu tür bir ad yinelemesi programcı karışıklığına ve hatalara neden olabilir ve kaçınılması gerekir. 21. satırda, sınıf `C` ad alanının kapsamında bildirilmiştir `N` . Ad alanı kullanımı *ad çakışmalarını*önlemeye yardımcı olur. Çoğu C++ Standart Kitaplık adı ad alanı içinde bildirilmiştir `std` . Kapsam kurallarının bildirimlerle nasıl etkileşim kurduğu hakkında daha fazla bilgi için bkz. [scope](../cpp/scope-visual-cpp.md).
+Bildirim tarafından tanıtılan ad, bildirimin gerçekleştiği *kapsam* içinde geçerlidir. Önceki örnekte, işlevinin içinde bildirildiği değişkenler `main` *Yerel değişkenlerdir*. `i` *Genel kapsamda* Main dışında adlı başka bir değişken bildirebilir ve tamamen ayrı bir varlık olabilir. Ancak, bu tür bir ad yinelemesi programcı karışıklığına ve hatalara neden olabilir ve kaçınılması gerekir. 21. satırda, sınıf `C` ad alanının kapsamında bildirilmiştir `N` . Ad alanı kullanımı *ad çakışmalarını* önlemeye yardımcı olur. Çoğu C++ Standart Kitaplık adı ad alanı içinde bildirilmiştir `std` . Kapsam kurallarının bildirimlerle nasıl etkileşim kurduğu hakkında daha fazla bilgi için bkz. [scope](../cpp/scope-visual-cpp.md).
 
 ## <a name="definitions"></a>Tanımlar
 
@@ -102,7 +103,7 @@ C++ programı birden fazla [derleme birimi](header-files-cpp.md)içerebilir. Ayr
 [`extern`](extern-cpp.md)<br/>
 [Başlatıcılar](initializers.md)<br/>
 [Diğer adlar ve tür tanımları](aliases-and-typedefs-cpp.md)<br/>
-[`using`bağımsız](using-declaration.md)<br/>
+[`using` bağımsız](using-declaration.md)<br/>
 [`volatile`](volatile-cpp.md)<br/>
 [`decltype`](decltype-cpp.md)<br/>
 [C++ içindeki öznitelikler](attributes.md)<br/>

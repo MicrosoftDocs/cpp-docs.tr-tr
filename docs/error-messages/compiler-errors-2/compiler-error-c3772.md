@@ -1,33 +1,34 @@
 ---
-title: Derleyici Hatası C3772
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3772'
+title: Derleyici hatası C3772
 ms.date: 11/04/2016
 f1_keywords:
 - C3772
 helpviewer_keywords:
 - C3772
 ms.assetid: 63e938d4-088d-41cc-a562-5881a05b5710
-ms.openlocfilehash: 420e1eb12cbb178459a96f55efab444a538e6c2b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 679c5bc47e9b31ebf085dec63a46549a10484cac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400181"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340131"
 ---
-# <a name="compiler-error-c3772"></a>Derleyici Hatası C3772
+# <a name="compiler-error-c3772"></a>Derleyici hatası C3772
 
-"name": Geçersiz arkadaş şablonu bildirimi
+"ad": geçersiz arkadaş şablonu bildirimi
 
-Bir sınıf şablonu uzmanlığı olan bir arkadaş bildirmek için geçersiz. Bir sınıf şablonunun bir açık veya kısmı özelleştirmesine bildirmek ve aynı deyimde, özelleştirme, bir arkadaş bildirin. *Adı* yer tutucu geçersiz bildirimi tanımlar.
+Bir sınıf şablonu özelleştirmesi arkadaşını bildirmek geçersizdir. Bir sınıf şablonunun açık veya kısmi özelleştirmesi bildiremezsiniz ve aynı ifadede bu özelleşmenin arkadaşını bildirin. *Ad* yer tutucusu geçersiz bildirimi tanımlar.
 
 ### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
 
-- Bir sınıf şablonu uzmanlığı olan bir arkadaş bildirmeyin.
+- Bir sınıf şablonu özelleştirmesi arkadaşını bildirme.
 
-- Uygun, uygulamanız için bir arkadaş sınıf şablonu bildirmek veya belirli bir kısmi veya açık uzmanlığı olan bir arkadaş bildirin.
+- Uygulamanız için uygunsa, sınıf şablonunun bir arkadaşını bildirin veya belirli bir kısmi veya açık özelleşmenin arkadaşını bildirin.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneği, bir arkadaş sınıf şablonu kısmi özelleştirmesi, bildirdiğinden başarısız olur.
+Aşağıdaki kod örneği, bir sınıf şablonunun kısmi özelleştirmesi için bir arkadaş bildirdiği için başarısız olur.
 
 ```cpp
 // c3772.cpp
@@ -60,4 +61,4 @@ class X {
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Şablonlar](../../cpp/templates-cpp.md)<br/>
-[Şablon Uzmanlığı](../../cpp/template-specialization-cpp.md)
+[Şablon özelleştirmesi](../../cpp/template-specialization-cpp.md)

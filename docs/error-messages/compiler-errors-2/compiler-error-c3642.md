@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3642'
 title: Derleyici hatası C3642
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3642
 ms.assetid: 429790c2-9614-4d85-b31c-687c8d8f83ff
-ms.openlocfilehash: 7c3f9f05bf04c9a1c20fff7910836e7b50468a8e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 77d65d2bb2c426fe78671328b0eccab739b9dabe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74742463"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340313"
 ---
 # <a name="compiler-error-c3642"></a>Derleyici hatası C3642
 
@@ -19,9 +20,9 @@ ms.locfileid: "74742463"
 
 [__Clrcall](../../cpp/clrcall.md) çağırma kuralıyla işaretlenen bir işlev yerel (yönetilmeyen) koddan çağrılamaz.
 
-*return_type/args* işlevin adı ya da çağırmaya çalıştığınız `__clrcall` işlevin türüdür.  Bir tür, bir işlev işaretçisi aracılığıyla çağrılırken kullanılır.
+*return_type/args* işlevin adı ya da `__clrcall` çağırmaya çalıştığınız işlevin türüdür.  Bir tür, bir işlev işaretçisi aracılığıyla çağrılırken kullanılır.
 
-Yerel bağlamdan yönetilen bir işlevi çağırmak için `__clrcall` işlevini çağıracak bir "sarmalayıcı" işlevi ekleyebilirsiniz. Ya da, CLR sıralama mekanizmasını kullanabilirsiniz; daha fazla bilgi için bkz. [nasıl yapılır: PInvoke kullanarak Işlev Işaretçilerini sıralama](../../dotnet/how-to-marshal-function-pointers-using-pinvoke.md) .
+Yerel bağlamdan yönetilen bir işlevi çağırmak için, işlevi çağıracak bir "sarmalayıcı" işlevi ekleyebilirsiniz `__clrcall` . Ya da, CLR sıralama mekanizmasını kullanabilirsiniz; daha fazla bilgi için bkz. [nasıl yapılır: PInvoke kullanarak Işlev Işaretçilerini sıralama](../../dotnet/how-to-marshal-function-pointers-using-pinvoke.md) .
 
 Aşağıdaki örnek C3642 oluşturur:
 

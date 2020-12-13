@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __readfsbyte, __readfsdword, __readfsqword, __readfsword'
 title: __readfsbyte, __readfsdword, __readfsqword, __readfsword
 ms.date: 09/02/2019
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - readfsqword intrinsic
 - __readfsqword intrinsic
 ms.assetid: f6ee7203-4179-402c-a464-0746c84ce6ac
-ms.openlocfilehash: 30040b33fe8c686bc0cda585c525ae2926cdf314
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2b733ced12045253c78e823379c10a5e70f65143
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222368"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340989"
 ---
 # <a name="__readfsbyte-__readfsdword-__readfsqword-__readfsword"></a>__readfsbyte, __readfsdword, __readfsqword, __readfsword
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 FS segmentinin başına göreli bir uzaklıktan belirtilen bir konumdan belleği okuyun.
 
@@ -49,11 +50,11 @@ unsigned __int64 __readfsqword(
 ### <a name="parameters"></a>Parametreler
 
 *Konumu*\
-'ndaki Öğesinden okunacak kadar olan `FS` Aralık.
+'ndaki Öğesinden okunacak kadar olan Aralık `FS` .
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-Konumdaki `FS:[Offset]`Byte, Word, doubleword veya quadword (çağrılan işlevin adıyla gösterildiği gibi) bellek içeriği.
+Konumdaki Byte, Word, doubleword veya quadword (çağrılan işlevin adıyla gösterildiği gibi) bellek içeriği `FS:[Offset]` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -64,7 +65,7 @@ Konumdaki `FS:[Offset]`Byte, Word, doubleword veya quadword (çağrılan işlevi
 |`__readfsqword`|x86|
 |`__readfsword`|x86|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -74,5 +75,5 @@ Bu yordamlar yalnızca iç bilgiler olarak kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
+[__writefsbyte, \_ _writefsdword, \_ _writefsqword, \_ _writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
 [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

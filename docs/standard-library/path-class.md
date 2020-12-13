@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: yol sınıfı'
 title: path Sınıfı
 ms.date: 09/27/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::path
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
-ms.openlocfilehash: fb56afbc1d29f1d321b394342382f89b06768720
-ms.sourcegitcommit: b5854134553db1d99a5761bec131841c374a3098
+ms.openlocfilehash: 469d594800036b165f8693162ca11ca161736cf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91958665"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340781"
 ---
 # <a name="path-class"></a>path Sınıfı
 
@@ -68,7 +69,7 @@ class path;
 |[is_absolute](#is_absolute)|Windows için işlev döndürür `has_root_name() && has_root_directory()` . POSIX için, işlev döndürür `has_root_directory()` .|
 |[is_relative](#is_relative)|`!is_absolute()` döndürür.|
 |[make_preferred](#make_preferred)|Her ayırıcıyı gerektiğinde preferred_separator dönüştürür.|
-|[Yerel](#native)|`myname` döndürür.|
+|[native (yerel)](#native) |`myname` döndürür.|
 |[parent_path](#parent_path)|Öğesinin üst yol bileşenini döndürür `myname` .|
 |[preferred_separator](#preferred_separator)|Sabit nesne, ana bilgisayar işletim sistemine bağlı olarak yol bileşenlerini ayırmak için tercih edilen karakteri verir. |
 |[relative_path](#relative_path)|Göreli yol bileşenini döndürür `myname` . |
@@ -79,7 +80,7 @@ class path;
 |[root_name](#root_name)|Kök adı bileşenini döndürür `myname` . |
 |[root_path](#root_path)|Kök yolu bileşenini döndürür `myname` .|
 |[stem](#stem)|Bileşenini döndürür `stem` `myname` .|
-|[dize](#string)|İçinde depolanan sırayı dönüştürür `mypath` .|
+|[string](#string)|İçinde depolanan sırayı dönüştürür `mypath` .|
 |[Kur](#swap)|Yürütülür `swap(mypath, right.mypath)` .|
 |[u16string](#u16string)|İçinde depolanan diziyi `mypath` UTF-16 ' a dönüştürür ve türündeki bir nesne içinde depolanmış şekilde döndürür `u16string` .|
 |[u32string](#u32string)|İçinde depolanan diziyi `mypath` UTF-32 ' a dönüştürür ve türündeki bir nesne içinde depolanmış şekilde döndürür `u32string` .|

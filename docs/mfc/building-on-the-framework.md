@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Framework üzerinde oluşturma'
 title: Framework'te Derleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - applications [MFC]
 - MFC, application development
 ms.assetid: 883f0f19-866f-4221-8a3d-5607941dc8d0
-ms.openlocfilehash: 2c171b223892c8bca1b32e18c57c09027558c192
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: dd9423bb8cf80463631d6a39212db42ab94a67ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339793"
 ---
 # <a name="building-on-the-framework"></a>Framework'te Derleme
 
@@ -24,7 +25,7 @@ MFC çerçevesi ile uygulama yapılandırma rolünüzde, uygulamaya özgü kayna
 
 - [OLE uygulamaları oluşturmak için Işlem dizisi](sequence-of-operations-for-creating-ole-applications.md)
 
-- [ActiveX Denetimleri Oluşturmak için İşlem Dizisi](sequence-of-operations-for-creating-activex-controls.md)
+- [ActiveX denetimleri oluşturmak için Işlem dizisi](sequence-of-operations-for-creating-activex-controls.md)
 
 - [Veritabanı uygulamaları oluşturmak için Işlem dizisi](sequence-of-operations-for-creating-database-applications.md)
 
@@ -32,4 +33,4 @@ MFC çerçevesi ile uygulama yapılandırma rolünüzde, uygulamaya özgü kayna
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](general-mfc-topics.md)
+[Genel MFC konuları](general-mfc-topics.md)

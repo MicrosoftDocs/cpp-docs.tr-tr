@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Plus struct'
 title: plus Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - plus class
 - plus struct
 ms.assetid: 4594abd5-b2f2-4fac-9b6b-fc9a2723f8cf
-ms.openlocfilehash: 628823a7fc3c176f83bbb1dca59ec194b5d3db97
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9f4b821da3f31255b71730d0f8c800450141d7c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372077"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340729"
 ---
 # <a name="plus-struct"></a>plus Yapısı
 
-Bağımsız değişkenlerinde ekleme işlemini (ikili) `operator+`gerçekleştiren önceden tanımlanmış bir işlev nesnesi.
+Bağımsız değişkenlerinde ekleme işlemini (ikili) gerçekleştiren önceden tanımlanmış bir işlev nesnesi `operator+` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,18 +40,18 @@ struct plus<void>
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*, *T*, *U*\
-Belirtilen veya çıkarılan `operator+` türlerin operands alan bir ikili destekleyen bir tür.
+*Tür*, *T*, *U*\
+`operator+`Belirtilen veya çıkartılan türlerin işlenenlerini alan ikiliyi destekleyen bir tür.
 
-*Sol*\
-Ekleme işleminin sol operand'ı. Özelleştirilmemiş *şablon, türünden*bir lvalue başvuru bağımsız değişkeni alır. Özelleştirilmiş şablon, çıkarılan *t*tipinin lvalue ve rvalue referans bağımsız değişkenlerinin mükemmel iletilmesi yapar.
+*Tarafta*\
+Toplama işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*Doğru*\
-Ekleme işleminin sağ operand'ı. Özelleştirilmemiş *şablon, türünden*bir lvalue başvuru bağımsız değişkeni alır. Özelleştirilmiş şablon, çıkarılan *u*türündeki lvalue ve rvalue referans bağımsız değişkenlerinin mükemmel iletilmesi yapar.
+*Right*\
+Toplama işleminin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bunun `Left + Right`sonucu. Özelleştirilmiş şablon, ikili olarak döndürülen türe sahip sonucun mükemmel `operator+`iletilmesi yapar.
+Sonucu `Left + Right` . Özel şablon, ikili tarafından döndürülen türe sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator+` .
 
 ## <a name="example"></a>Örnek
 

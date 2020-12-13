@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları uyarısı LNK4076'
 title: Bağlayıcı Araçları Uyarısı LNK4076
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4076
 ms.assetid: c424d43b-abb3-4df4-be66-8907b859a555
-ms.openlocfilehash: 3f5c5f6bd33fd0e43ccf3c7b55ab54a3cc25ba68
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f94a51c5516cec83de31b1cd1fc19b7c90c81063
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339871"
 ---
 # <a name="linker-tools-warning-lnk4076"></a>Bağlayıcı Araçları Uyarısı LNK4076
 
 geçersiz artımlı durum dosyası ' filename '; Artımlı olmayan şekilde bağlama
 
-BAĞLANTı, artımlı durum (. Ilk) dosyasına yazamıyor. `filename` bozulmuş ya da artımlı bir bağlantı veritabanı değil. Dosyayı kaldırın ve yeniden bağlayın.
+BAĞLANTı, artımlı durum (. Ilk) dosyasına yazamıyor. Ya `filename` bozulmuş ya da artımlı bir bağlantı veritabanı değil. Dosyayı kaldırın ve yeniden bağlayın.

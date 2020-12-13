@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: decltype (C++)'
 title: decltype  (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-ms.openlocfilehash: 9e769bbef66bd1b55b9d445874f00d37a736025e
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: e581436a43fc9632961fcb888dfb0b23974fc2df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683487"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339507"
 ---
 # <a name="decltype--c"></a>decltype  (C++)
 
@@ -39,11 +40,11 @@ Bir ifade. Daha fazla bilgi için bkz. [ifadeler](../cpp/expressions-cpp.md).
 
 Derleyici, *ifade* parametresinin türünü belirleyebilmek için aşağıdaki kuralları kullanır.
 
-- *İfade* parametresi bir tanımlayıcı veya [sınıf üyesi erişimsiyse](../cpp/member-access-operators-dot-and.md), `decltype(expression)` *ifadesi*tarafından adlandırılan varlığın türüdür. Böyle bir varlık yoksa veya *ifade* parametresi bir dizi aşırı yüklenmiş işlev olarak isimlendiriyor ise, derleyici bir hata iletisi verir.
+- *İfade* parametresi bir tanımlayıcı veya [sınıf üyesi erişimsiyse](../cpp/member-access-operators-dot-and.md), `decltype(expression)` *ifadesi* tarafından adlandırılan varlığın türüdür. Böyle bir varlık yoksa veya *ifade* parametresi bir dizi aşırı yüklenmiş işlev olarak isimlendiriyor ise, derleyici bir hata iletisi verir.
 
 - *İfade* parametresi bir işleve veya aşırı yüklenmiş bir operatör işlevine yapılan bir çağrıdır, `decltype(expression)` işlevin dönüş türüdür. Aşırı yüklenmiş işlecin etrafındaki parantezler yoksayılır.
 
-- *İfade* parametresi bir [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)ise, `decltype(expression)` *ifadenin*türüdür. *İfade* parametresi bir [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)ise, `decltype(expression)` *ifadenin*türüne bir [lvalue başvurusudur](../cpp/lvalue-reference-declarator-amp.md) .
+- *İfade* parametresi bir [rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)ise, `decltype(expression)` *ifadenin* türüdür. *İfade* parametresi bir [lvalue](../cpp/lvalues-and-rvalues-visual-cpp.md)ise, `decltype(expression)` *ifadenin* türüne bir [lvalue başvurusudur](../cpp/lvalue-reference-declarator-amp.md) .
 
 Aşağıdaki kod örneği, **`decltype`** tür belirticisinin bazı kullanımlarını gösterir. İlk olarak, aşağıdaki deyimleri kodladığınızı varsayalım.
 
@@ -74,13 +75,13 @@ template<typename T, typename U>
 UNKNOWN func(T&& t, U&& u){ return t + u; };
 ```
 
-**`decltype`** Tür belirticisinin giriş geliştiricisi, bir geliştiricinin şablon işlevinin döndürdüğü ifadenin türünü almasını sağlar. *alternative function declaration syntax* **`auto`** **`decltype`** *Geç belirtilen* bir dönüş türü bildirmek için daha sonra, anahtar sözcüğü ve tür belirticisinden daha sonra gösterilen alternatif işlev bildirimi sözdizimini kullanın. Sonradan belirtilmiş dönüş türü, bildirim kodlandığında değil, derlendiğinde belirlenir.
+**`decltype`** Tür belirticisinin giriş geliştiricisi, bir geliştiricinin şablon işlevinin döndürdüğü ifadenin türünü almasını sağlar.  **`auto`** **`decltype`** *Geç belirtilen* bir dönüş türü bildirmek için daha sonra, anahtar sözcüğü ve tür belirticisinden daha sonra gösterilen alternatif işlev bildirimi sözdizimini kullanın. Sonradan belirtilmiş dönüş türü, bildirim kodlandığında değil, derlendiğinde belirlenir.
 
 Aşağıdaki prototip, alternatif bir işlev bildiriminin sözdizimini göstermektedir. **`const`** Ve **`volatile`** niteleyicileri ve **`throw`** [özel durum belirtiminin](../cpp/exception-specifications-throw-cpp.md) isteğe bağlı olduğunu unutmayın. *Function_body* yer tutucusu, işlevin ne yaptığını belirten bileşik bir ifadeyi temsil eder. En iyi kodlama uygulaması olarak, deyimindeki *ifade* yer tutucusu, **`decltype`** varsa, deyimi tarafından belirtilen ifadeyle eşleşmelidir ( **`return`** varsa, *function_body*.
 
-**`auto`***function_name* **`(`** *Parametreler*<sub>opt</sub> kabul etme **`)`** **`const`** <sub>opt</sub> **`volatile`** <sub>opt</sub> **`->`** **`decltype(`** *ifadesi* **`)`** **`noexcept`** <sub>opt</sub> **`{`** *function_body***`};`**
+**`auto`***function_name* **`(`** *Parametreler*<sub>opt</sub> kabul etme **`)`** **`const`** <sub></sub> **`volatile`** <sub></sub> **`->`** **`decltype(`** *ifadesi* **`)`** **`noexcept`** <sub>opt</sub> **`{`** *function_body***`};`**
 
-Aşağıdaki kod örneğinde, `myFunc` şablon işlevinin sonradan belirtilen dönüş türü, `t` ve `u` şablon bağımsız değişkenlerinin türleri tarafından belirlenir. En iyi kodlama uygulaması olarak, kod örneği aynı zamanda tam olarak iletmeyi destekleyen Rvalue başvurularını ve `forward` işlev şablonunu kullanır *perfect forwarding*. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+Aşağıdaki kod örneğinde, `myFunc` şablon işlevinin sonradan belirtilen dönüş türü, `t` ve `u` şablon bağımsız değişkenlerinin türleri tarafından belirlenir. En iyi kodlama uygulaması olarak, kod örneği aynı zamanda tam olarak iletmeyi destekleyen Rvalue başvurularını ve `forward` işlev şablonunu kullanır . Daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ```cpp
 //C++11

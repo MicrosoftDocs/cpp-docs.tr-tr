@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: kayıt kümesi: kayıtları toplu ekleme (ODBC)'
 title: 'Kayıt Kümesi: Kayıtları Toplu Ekleme (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - recordsets, adding records
 - bulk record additions to recordsets
 ms.assetid: 4685f656-14b9-4f10-a1c5-147b2b89a0b4
-ms.openlocfilehash: f561cb0275933a973e97ef0518148e81e14a0234
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5cb47fc8e96a38b2e5cc6c83cf464f28f2a85aaf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340404"
 ---
 # <a name="recordset-adding-records-in-bulk-odbc"></a>Kayıt Kümesi: Kayıtları Toplu Ekleme (ODBC)
 
@@ -20,13 +21,13 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 MFC [CRecordset](../../mfc/reference/crecordset-class.md) sınıfının, bir tabloya toplu olarak yeni kayıtlar eklerken verimliliği artıran yeni bir iyileştirmesi vardır.
 
 > [!NOTE]
-> Bu konu, toplu satır yakalamanın uygulanmadığı `CRecordset` türetilen nesneler için geçerlidir. Toplu satır getirme kullanıyorsanız, bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> Bu konu, `CRecordset` toplu satır yakalamanın uygulanmadığı, öğesinden türetilmiş nesneler için geçerlidir. Toplu satır getirme kullanıyorsanız, bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-[CRecordset:: Open](../../mfc/reference/crecordset-class.md#open) üye Işlevine yönelik *dwOptions* parametresine yönelik yeni bir seçenek, `optimizeBulkAdd`, `Requery` veya `Close`çağrılmadan arka arkaya birden çok kayıt eklerken performansı geliştirir. Yalnızca ilk `Update` çağrısından önce kirli olan alanlar, sonraki `AddNew`/`Update` çağrıları için kirli olarak işaretlenir.
+[CRecordset:: Open](../../mfc/reference/crecordset-class.md#open) üye Işlevine *dwOptions* parametresine yönelik yeni bir seçenek, `optimizeBulkAdd` veya çağrılmadan birden çok kayıt art arda eklenirken performansı geliştirir `Requery` `Close` . Yalnızca ilk çağrıdan önce kirli olan alanlar `Update` sonraki çağrılar için kirli olarak işaretlenir `AddNew` / `Update` .
 
-Kayıt ekleme, düzenlemesi ve silme için `::SQLSetPos` ODBC API işlevinden yararlanmak üzere veritabanı sınıflarını kullanıyorsanız, bu iyileştirme gereksizdir.
+`::SQLSetPos`Kayıt ekleme, düzenlemesi ve silme için ODBC API işlevinden yararlanmak üzere veritabanı sınıflarını kullanıyorsanız, bu iyileştirme gereksizdir.
 
-ODBC Imleç kitaplığı yüklenirse veya ODBC sürücüsü `::SQLSetPos`ekleme, düzenlemenin ve silmeyi desteklemiyorsa, bu iyileştirmenin toplu ekleme performansını artırmalıdır. Bu iyileştirmeyi açmak için, kayıt kümeniz için `Open` çağrısındaki *dwOptions* parametresini aşağıdaki şekilde ayarlayın:
+ODBC Imleç kitaplığı yüklenirse veya ODBC sürücüsü ekleme, düzenlemenin ve silmeyi desteklemez `::SQLSetPos` , bu iyileştirme toplu ekleme performansını artırmalıdır. Bu iyileştirmeyi açmak için, kayıt kümenizin çağrısındaki *dwOptions* parametresini `Open` Şu şekilde ayarlayın:
 
 ```
 appendOnly | optimizeBulkAdd
@@ -35,5 +36,5 @@ appendOnly | optimizeBulkAdd
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
-[Kayıt Kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+[Kayıt kümesi: kayıtları ekleme, güncelleştirme ve silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)<br/>
+[Kayıt kümesi: kayıtları kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

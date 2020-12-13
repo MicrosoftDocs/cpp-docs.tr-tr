@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: otomasyon sunucuları'
 title: Otomasyon Sunucuları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - dispatch maps [MFC], Automation servers
 - servers, Automation
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
-ms.openlocfilehash: 4c2ef77e20b7dccfa8cd6830c090111601331642
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e97bcf524b96e459cd1a3caddec7cdaf0c030962
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339832"
 ---
 # <a name="automation-servers"></a>Otomasyon Sunucuları
 
@@ -27,7 +28,7 @@ Bu Otomasyon nesnelerinin dış arabirimi olarak özellikleri ve yöntemleri var
 
 Otomasyon, yaygın, iyi tanımlanmış bir arabirim aracılığıyla uygulama işlevselliğini ortaya çıkararak uygulamaları, uygulamaya özgü farklı makro dilleri yerine Microsoft Visual Basic gibi tek bir genel programlama dilinde oluşturmayı mümkün kılar.
 
-## <a name="support-for-automation-servers"></a><a name="_core_support_for_automation_servers"></a>Otomasyon sunucuları için destek
+## <a name="support-for-automation-servers"></a><a name="_core_support_for_automation_servers"></a> Otomasyon sunucuları için destek
 
 Visual C++ ve MFC çerçevesi otomasyon sunucuları için kapsamlı destek sağlar. Otomasyon sunucusu oluşturma konusunda ek yükün çoğunu idare eder; böylece çabalarınızı uygulamanızın işlevlerine odaklanırsınız.
 

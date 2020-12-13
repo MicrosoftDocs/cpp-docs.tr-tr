@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _strdec, _wcsdec, _mbsdec, _mbsdec_l'
 title: _strdec, _wcsdec, _mbsdec, _mbsdec_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - wcsdec function
 - _mbsdec function
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
-ms.openlocfilehash: c3988beac1a3c1b3d7fa831405208ddc564456a3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 85001258baea9e7c6509bfdd33a74f9a0eccd80f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914491"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340560"
 ---
 # <a name="_strdec-_wcsdec-_mbsdec-_mbsdec_l"></a>_strdec, _wcsdec, _mbsdec, _mbsdec_l
 
@@ -85,17 +86,17 @@ unsigned char *_mbsdec_l(
 ### <a name="parameters"></a>Parametreler
 
 *başından*<br/>
-Kaynak dizedeki herhangi bir karakter (veya **_mbsdec** ve **_mbsdec_l**için, herhangi bir çok baytlı karakterin ilk baytı) işaretçisi; *Başlangıç* , Kaynak dizedeki *geçerli* öğesinden önce gelmelidir.
+Kaynak dizedeki herhangi bir karakter (veya **_mbsdec** ve **_mbsdec_l** için, herhangi bir çok baytlı karakterin ilk baytı) işaretçisi; *Başlangıç* , Kaynak dizedeki *geçerli* öğesinden önce gelmelidir.
 
 *geçerli*<br/>
-Kaynak dizedeki herhangi bir karakter (veya **_mbsdec** ve **_mbsdec_l**için, herhangi bir çok baytlı karakterin ilk baytı) işaretçisi; *geçerli* , Kaynak dizedeki *başlangıçtan* sonra gelmelidir.
+Kaynak dizedeki herhangi bir karakter (veya **_mbsdec** ve **_mbsdec_l** için, herhangi bir çok baytlı karakterin ilk baytı) işaretçisi; *geçerli* , Kaynak dizedeki *başlangıçtan* sonra gelmelidir.
 
 *locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsdec**, **_mbsdec_l**, **_strdec**ve **_wcsdec** her biri, hemen *geçerli*olan karaktere bir işaretçi döndürür; *Başlangıç* değeri *geçerli*olandan büyük veya ona eşitse **_mbsdec** **null** değerini döndürür. **_tcsdec** , bu işlevlerden biriyle eşlenir ve dönüş değeri eşlemeye bağlıdır.
+**_mbsdec**, **_mbsdec_l**, **_strdec** ve **_wcsdec** her biri, hemen *geçerli* olan karaktere bir işaretçi döndürür; *Başlangıç* değeri *geçerli* olandan büyük veya ona eşitse **_mbsdec** **null** değerini döndürür. **_tcsdec** , bu işlevlerden biriyle eşlenir ve dönüş değeri eşlemeye bağlıdır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -103,7 +104,7 @@ Kullanılacak yerel ayar.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) .  **_mbsdec** , kullanılmakta olan yerel ayara göre çok baytlı karakter dizilerini tanır, bunun yerine geçirilen yerel ayar parametresini kullanması hariç **_mbsdec_l** aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-*Start* veya *Current* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
+*Start* veya *Current* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL** olarak ayarlar.
 
 > [!IMPORTANT]
 > Bu işlevler, arabellek taşma tehditlerine karşı savunmasız olabilir. Arabellek taşmaları, sistem saldırıları için kullanılabilir ve bu ayrıcalıklar ayrıcalık yükselmesine neden olabilir. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
@@ -118,22 +119,22 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 **_strdec** ve **_wcsdec** , **_mbsdec** ve **_mbsdec_l**'ın tek baytlık karakter ve geniş karakterli sürümleridir. **_strdec** ve **_wcsdec** yalnızca bu eşleme için sağlanır ve aksi halde kullanılmamalıdır.
 
-Daha fazla bilgi için bkz. [Genel metin eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve [Genel metin eşlemelerini](../../c-runtime-library/generic-text-mappings.md)kullanma.
+Daha fazla bilgi için bkz. [Generic-Text eşlemelerini](../../c-runtime-library/using-generic-text-mappings.md) ve [Genel metin eşlemelerini](../../c-runtime-library/generic-text-mappings.md)kullanma.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_mbsdec**|\<mbstring. h>|\<Mbctype. h>|
-|**_mbsdec_l**|\<mbstring. h>|\<Mbctype. h>|
-|**_strdec**|\<Tchar. h>||
-|**_wcsdec**|\<Tchar. h>||
+|**_mbsdec**|\<mbstring.h>|\<mbctype.h>|
+|**_mbsdec_l**|\<mbstring.h>|\<mbctype.h>|
+|**_strdec**|\<tchar.h>||
+|**_wcsdec**|\<tchar.h>||
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte **_tcsdec**kullanımı gösterilmektedir.
+Aşağıdaki örnekte **_tcsdec** kullanımı gösterilmektedir.
 
 ```cpp
 // crt_tcsdec.cpp
@@ -159,7 +160,7 @@ int main()
 }
 ```
 
-Aşağıdaki örnekte **_mbsdec**kullanımı gösterilmektedir.
+Aşağıdaki örnekte **_mbsdec** kullanımı gösterilmektedir.
 
 ```cpp
 // crt_mbsdec.cpp

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: wcsrkaldırıldı s'
 title: wcsrtombs
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - string conversion, wide characters
 - wide characters, strings
 ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d
-ms.openlocfilehash: cad31f28c5542a96eae9f144344882b71806052a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 34fabe44c0e239eba4201b180df026655a4277f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340521"
 ---
 # <a name="wcsrtombs"></a>wcsrtombs
 
@@ -77,13 +78,13 @@ Başarıyla dönüştürülen bayt sayısını döndürür, null Sonlandırıcı
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wcsrişaretlenen s** işlevi, *mbstate*içinde bulunan belirtilen dönüştürme durumundan başlayarak, bir geniş karakter dizesini, *wcstr*içinde dolaylı olarak işaret edilen değerleri *mbstr*adresine dönüştürür. Karşılık gelen bir karakter ile karşılaşıldığında veya bir sonraki karakter, *say*'da bulunan sınırı aştığında, her karakter için dönüştürme işlemi devam edecek. **Wcsrkaldırıldı s** geniş karakterli null karakterle (L ' \ 0 ') karşılaşırsa veya *sayı* gerçekleştiğinde, bunu 8 bit 0 değerine dönüştürür ve duraklar.
+**Wcsrişaretlenen s** işlevi, *mbstate* içinde bulunan belirtilen dönüştürme durumundan başlayarak, bir geniş karakter dizesini, *wcstr* içinde dolaylı olarak işaret edilen değerleri *mbstr* adresine dönüştürür. Karşılık gelen bir karakter ile karşılaşıldığında veya bir sonraki karakter, *say*'da bulunan sınırı aştığında, her karakter için dönüştürme işlemi devam edecek. **Wcsrkaldırıldı s** geniş karakterli null karakterle (L ' \ 0 ') karşılaşırsa veya *sayı* gerçekleştiğinde, bunu 8 bit 0 değerine dönüştürür ve duraklar.
 
 Bu nedenle, *mbstr* konumundaki çok baytlı karakter dizesi, dönüştürme sırasında yalnızca **wcsrkaldırıldı s** bir geniş karakter null karakteriyle karşılaştığında null sonlandırılmış olur. *Wcstr* ve *mbstr* tarafından işaret edilen diziler çakıştığında, **wcsrkaldırıldı s** davranışı tanımsızdır. **wcsrkaldırıldı s** , geçerli yerel ayarın LC_TYPE kategorisinden etkilendi.
 
-**Wcsr^ s** işlevi [, wcstombs öğesinden farklı, _wcstombs_l](wcstombs-wcstombs-l.md) yeniden başlangıçlarından farklıdır. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama **wcsnlen**yerine **wcsrlen** s çağrısı, **wcstomb**yerine daha sonra bir **wcsrkaldırıldı** for çağrısı kullanıldıysa,.
+**Wcsr^ s** işlevi [, wcstombs öğesinden farklı, _wcstombs_l](wcstombs-wcstombs-l.md) yeniden başlangıçlarından farklıdır. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır.  Örneğin, bir uygulama **wcsnlen** yerine **wcsrlen** s çağrısı, **wcstomb** yerine daha sonra bir **wcsrkaldırıldı** for çağrısı kullanıldıysa,.
 
-*Mbstr* bağımsız değişkeni **null**ise, **wcsrkaldırıldı s** , hedef dizenin bayt cinsinden gereken boyutunu döndürür. *Mbstate* null ise, iç **mbstate_t** dönüştürme durumu kullanılır. *Wchar* karakter dizisinin karşılık gelen bir çok baytlı karakter temsili yoksa,-1 döndürülür ve **errno** , **eilseq**olarak ayarlanır.
+*Mbstr* bağımsız değişkeni **null** ise, **wcsrkaldırıldı s** , hedef dizenin bayt cinsinden gereken boyutunu döndürür. *Mbstate* null ise, iç **mbstate_t** dönüştürme durumu kullanılır. *Wchar* karakter dizisinin karşılık gelen bir çok baytlı karakter temsili yoksa,-1 döndürülür ve **errno** , **eilseq** olarak ayarlanır.
 
 C++ ' da bu işlevin, bu işlevin daha yeni ve güvenli karşılığı sağlayan bir şablon aşırı yüklemesi vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -143,13 +144,13 @@ The string was successfuly converted.
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wcsrtombs**|\<wchar. h>|
+|**wcsrtombs**|\<wchar.h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [wcrtomb](wcrtomb.md)<br/>
 [wcrtomb_s](wcrtomb-s.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>

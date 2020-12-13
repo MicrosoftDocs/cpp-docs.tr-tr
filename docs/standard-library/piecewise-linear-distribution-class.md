@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: piecewise_linear_distribution sınıfı'
 title: piecewise_linear_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - std::piecewise_linear_distribution [C++], param_type
 - std::piecewise_linear_distribution [C++], param_type
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
-ms.openlocfilehash: 57c6e19bc56068c98f6c85978c7af68e56cb4f2a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8ba2a0707599c8510488290c5d0c227d464588ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832691"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340742"
 ---
 # <a name="piecewise_linear_distribution-class"></a>piecewise_linear_distribution Sınıfı
 
 Her aralıkta doğrusal olarak değişen olasılığa sahip, değişen genişlik aralıklarına sahip piecewise doğrusal bir dağıtım oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class RealType = double>
@@ -299,7 +300,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-Başlatıcı listesi *aralıklarıyla* ve ağırlık *tfunc*işlevinden oluşturulan ağırlıklarla bir dağıtım nesnesi oluşturur.
+Başlatıcı listesi *aralıklarıyla* ve ağırlık *tfunc* işlevinden oluşturulan ağırlıklarla bir dağıtım nesnesi oluşturur.
 
 Olarak tanımlanan Oluşturucu
 
@@ -312,7 +313,7 @@ piecewise_linear_distribution(
     UnaryOperation weightfunc);
 ```
 
-[] üzerinde eşit olarak dağıtılan *sayı* aralıklarına sahip bir dağıtım nesnesi oluşturur `xmin,xmax` , her Aralık ağırlıklarını, ağırlıkçalıştır *weightfunc*işlevine göre atanır ve *ağırlıklı tfunc* bir parametre kabul etmeli ve her ikisi de dönüştürülebilir bir dönüş değerine sahip olmalıdır **`double`** . Ön **koşul:** `xmin < xmax` .
+[] üzerinde eşit olarak dağıtılan *sayı* aralıklarına sahip bir dağıtım nesnesi oluşturur `xmin,xmax` , her Aralık ağırlıklarını, ağırlıkçalıştır işlevine göre atanır ve *ağırlıklı tfunc* bir parametre kabul etmeli ve her ikisi de dönüştürülebilir bir dönüş değerine sahip olmalıdır **`double`** . Ön **koşul:** `xmin < xmax` .
 
 Olarak tanımlanan Oluşturucu
 

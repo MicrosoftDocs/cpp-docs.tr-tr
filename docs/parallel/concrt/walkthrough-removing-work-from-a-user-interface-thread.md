@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: User-Interface iş parçacığından kaldırma'
 title: 'İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma'
 ms.date: 08/19/2019
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 003678f3c79f2abfa7ceb0c67fecd69cf178f442
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 816e8446771cda907397f43386c33476cf3665b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340924"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma
 
@@ -34,7 +35,7 @@ Bu yönergeyi başlamadan önce aşağıdaki konuları okuyun:
 
 Ayrıca, bu yönergeyi başlamadan önce MFC uygulama geliştirme ve GDI+ temellerini de anladığınızı öneririz. MFC hakkında daha fazla bilgi için bkz. [MFC masaüstü uygulamaları](../../mfc/mfc-desktop-applications.md). GDI+ hakkında daha fazla bilgi için bkz. [GDI+](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 Bu izlenecek yol aşağıdaki bölümleri içerir:
 
@@ -42,13 +43,13 @@ Bu izlenecek yol aşağıdaki bölümleri içerir:
 
 - [Mandelbrot uygulamasının seri sürümünü uygulama](#serial)
 
-- [Kullanıcı arabirimi Iş parçacığından Iş kaldırma](#removing-work)
+- [User-Interface iş parçacığından Iş kaldırılıyor](#removing-work)
 
 - [Çizim performansını iyileştirme](#performance)
 
 - [Iptal için destek ekleme](#cancellation)
 
-## <a name="creating-the-mfc-application"></a><a name="application"></a>MFC uygulaması oluşturma
+## <a name="creating-the-mfc-application"></a><a name="application"></a> MFC uygulaması oluşturma
 
 Bu bölümde, temel MFC uygulamasının nasıl oluşturulacağı açıklanmaktadır.
 
@@ -56,21 +57,21 @@ Bu bölümde, temel MFC uygulamasının nasıl oluşturulacağı açıklanmaktad
 
 1. Tüm varsayılan ayarlarla bir MFC uygulaması oluşturmak için **MFC Uygulama Sihirbazı** ' nı kullanın. Visual Studio sürümünüz için sihirbazın nasıl açılacağı hakkında yönergeler için bkz. [Izlenecek yol: yenı MFC kabuk denetimlerini kullanma](../../mfc/walkthrough-using-the-new-mfc-shell-controls.md) .
 
-1. Proje için bir ad yazın, örneğin, `Mandelbrot` ve ardından **MFC Uygulama sihirbazını**göstermek için **Tamam** ' a tıklayın.
+1. Proje için bir ad yazın, örneğin, `Mandelbrot` ve ardından **MFC Uygulama sihirbazını** göstermek için **Tamam** ' a tıklayın.
 
 1. **Uygulama türü** bölmesinde **tek belge**' yi seçin. **Belge/görünüm mimarisi desteği** onay kutusunun temizlenmiş olduğundan emin olun.
 
-1. Projeyi oluşturmak ve **MFC Uygulama Sihirbazı 'nı**kapatmak için **son** ' a tıklayın.
+1. Projeyi oluşturmak ve **MFC Uygulama Sihirbazı 'nı** kapatmak için **son** ' a tıklayın.
 
    Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için, **Yapı** menüsünde **çözüm oluştur**' a tıklayın. Uygulama başarıyla yapılandığında **hata ayıklama** menüsünde **hata ayıklamayı Başlat** ' a tıklayarak uygulamayı çalıştırın.
 
-## <a name="implementing-the-serial-version-of-the-mandelbrot-application"></a><a name="serial"></a>Mandelbrot uygulamasının seri sürümünü uygulama
+## <a name="implementing-the-serial-version-of-the-mandelbrot-application"></a><a name="serial"></a> Mandelbrot uygulamasının seri sürümünü uygulama
 
 Bu bölüm, Mandelbrot Fractal 'in nasıl çizileceğini açıklar. Bu sürüm, Mandeli Fractal 'i bir GDI+ [bit eşlem](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) nesnesine çizer ve ardından bu bit eşlemin içeriğini istemci penceresine kopyalar.
 
 #### <a name="to-implement-the-serial-version-of-the-mandelbrot-application"></a>Mandelbrot uygulamasının seri sürümünü uygulamak için
 
-1. *Pch. h* Içinde (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ), aşağıdaki yönergeyi ekleyin `#include` :
+1. *Pch. h* Içinde (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ), aşağıdaki yönergeyi ekleyin `#include` :
 
    [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
 
@@ -114,7 +115,7 @@ Her pikselin hesaplaması hesaplama açısından pahalı olduğundan, UI iş par
 
 [[Üst](#top)]
 
-## <a name="removing-work-from-the-ui-thread"></a><a name="removing-work"></a>Kullanıcı arabirimi Iş parçacığından kaldırma
+## <a name="removing-work-from-the-ui-thread"></a><a name="removing-work"></a> Kullanıcı arabirimi Iş parçacığından kaldırma
 
 Bu bölüm, çizim işinin Mandelbrot uygulamasındaki UI iş parçacığından nasıl kaldırılacağını gösterir. Çizim işini UI iş parçacığından çalışan iş parçacığına taşıyarak, çalışan iş parçacığı görüntüyü arka planda oluşturduğu için Kullanıcı arabirimi iş parçacığı iletileri işleyebilir.
 
@@ -124,7 +125,7 @@ Bu örnek ayrıca, Kullanıcı arabirimi iş parçacığını ve çalışan iş 
 
 #### <a name="to-remove-the-drawing-work-from-the-ui-thread"></a>Kullanıcı arabirimi iş parçacığından çizim işini kaldırmak için
 
-1. *Pch. h* Içinde (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ), aşağıdaki yönergeleri ekleyin `#include` :
+1. *Pch. h* Içinde (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ), aşağıdaki yönergeleri ekleyin `#include` :
 
    [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 
@@ -152,7 +153,7 @@ Bu örnek ayrıca, Kullanıcı arabirimi iş parçacığını ve çalışan iş 
 
 [[Üst](#top)]
 
-## <a name="improving-drawing-performance"></a><a name="performance"></a>Çizim performansını iyileştirme
+## <a name="improving-drawing-performance"></a><a name="performance"></a> Çizim performansını iyileştirme
 
 Her bir pikselin hesaplaması diğer tüm hesaplamalarından bağımsız olduğundan, Mandelert Fractal 'in üretimi paralelleştirme için iyi bir adaydır. Çizim yordamını paralel hale getirmek için, **`for`** yöntemindeki dış döngüyü `CChildView::DrawMandelbrot` aşağıdaki şekilde [eşzamanlılık::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmasına bir çağrıya dönüştürün.
 
@@ -162,7 +163,7 @@ Her bir bit eşlem öğesinin hesaplaması bağımsız olduğundan, bit eşlem b
 
 [[Üst](#top)]
 
-## <a name="adding-support-for-cancellation"></a><a name="cancellation"></a>Iptal için destek ekleme
+## <a name="adding-support-for-cancellation"></a><a name="cancellation"></a> Iptal için destek ekleme
 
 Bu bölümde pencere yeniden boyutlandırmanın nasıl işleneceği ve pencere yok edildiğinde etkin çizim görevlerinin nasıl iptal edileceği açıklanmaktadır.
 

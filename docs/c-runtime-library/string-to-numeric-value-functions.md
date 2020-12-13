@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: sayısal değer Işlevlerine dize'
 title: Sayısal Değer İşlevleri Dizesi
 ms.date: 11/04/2016
 api_location:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - parsing, numeric strings
 - string conversion, to numeric values
 ms.assetid: 11cbd9ce-033b-4914-bf66-029070e7e385
-ms.openlocfilehash: b4936e09de5ee26356b71b66154071a93e252b6f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f560c83c8ae8d510b70804540e5360982770773c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339572"
 ---
 # <a name="string-to-numeric-value-functions"></a>Sayısal Değer İşlevleri Dizesi
 
@@ -58,17 +59,17 @@ Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir 
 
 Bir dönüştürme bitiş karakteri için Kullanıcı tarafından sağlanan işaretçi, çağrı zamanında **null** olarak ayarlanmamışsa, taramayı durduran karaktere yönelik bir işaretçi burada depolanır. Hiçbir dönüştürme gerçekleştirilemiyorsa (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), dize işaretçisinin değeri o adreste saklanır.
 
-`strtod`aşağıdaki biçimde bir dize bekler:
+`strtod` aşağıdaki biçimde bir dize bekler:
 
 [*boşluk*] [*imzala*] [`digits`] [**.**`digits`] [{**d** &#124; **d** &#124; **e** &#124; **e**} [*oturum açma*] `digits` ]
 
-Boşluk veya sekme karakterlerinden oluşan bir *boşluk* , yoksayılan karakter içerebilir; *işareti* artı ( **+** ) ya da eksi ( **-** ); ve `digits` bir veya daha fazla ondalık basamak. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, giriş harfinden (**d**, **d**, **e**veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
+Boşluk veya sekme karakterlerinden oluşan bir *boşluk* , yoksayılan karakter içerebilir; *işareti* artı ( **+** ) ya da eksi ( **-** ); ve `digits` bir veya daha fazla ondalık basamak. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, giriş harfinden (**d**, **d**, **e** veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
 
 `strtol`,, `strtoul` `_strtoi64` Ve `_strtoui64` işlevleri aşağıdaki biçimde bir dize bekler:
 
 [*boşluk*] [{ **+** &#124; **-** }] [**0** [{ **x** &#124; **x** }]] [ `digits` ]
 
-Temel bağımsız değişken 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. 0 ise, temeli belirlemekte, dönüştürme sonu işaretçisi tarafından başvurulan başlangıç karakterleri kullanılır. İlk karakter 0 ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır; Aksi takdirde, ondalık sayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arasında değerler atanır; yalnızca atanmış değerlerine *tabandan* küçük olan harflerine izin verilir. `strtoul`ve `_strtoui64` artı ( **+** ) ya da eksi ( **-** ) işareti ön ekine izin verir; baştaki eksi işareti, dönüş değerinin nelenmiş olduğunu gösterir.
+Temel bağımsız değişken 2 ile 36 arasındaysa, sayının temeli olarak kullanılır. 0 ise, temeli belirlemekte, dönüştürme sonu işaretçisi tarafından başvurulan başlangıç karakterleri kullanılır. İlk karakter 0 ise ve ikinci karakter ' x ' veya ' X ' değilse, dize sekizlik bir tamsayı olarak yorumlanır; Aksi takdirde, ondalık sayı olarak yorumlanır. İlk karakter ' 0 ' ise ve ikinci karakter ' x ' veya ' X ' ise, dize onaltılık tamsayı olarak yorumlanır. İlk karakter ' 1 '-' 9 ' arasında ise, dize bir ondalık tamsayı olarak yorumlanır. ' A '-' z ' (veya ' A '-' Z ' arasındaki), 10 ile 35 arasında değerler atanır; yalnızca atanmış değerlerine *tabandan* küçük olan harflerine izin verilir. `strtoul` ve `_strtoui64` artı ( **+** ) ya da eksi ( **-** ) işareti ön ekine izin verir; baştaki eksi işareti, dönüş değerinin nelenmiş olduğunu gösterir.
 
 Çıkış değeri `LC_NUMERIC` yerel ayarın kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
@@ -87,14 +88,14 @@ Bu işlevler tarafından döndürülen değer taşma veya yetersiz durumuna nede
 |`_strtoui64`|Taşma|**_UI64_MAX**|
 |`_strtoui64`|Dönüştürme yok|0|
 
-**_I64_MAX**, _**I64_MIN**ve **_UI64_MAX** sınırlar halinde tanımlanmıştır. Olsun.
+**_I64_MAX**, _ **I64_MIN** ve **_UI64_MAX** sınırlar. H içinde tanımlanır.
 
 `wcstod`,,, `wcstol` `wcstoul` ve, sırasıyla,,, `_wcstoi64` `_wcstoui64` ve ' nin geniş karakterli sürümleridir `strtod` `strtol` `strtoul` `_strtoi64` `_strtoui64` ; Bu geniş karakter işlevlerinin her birine bir dönüştürme sonu bağımsız değişkeninin işaretçisi geniş karakterli bir dizedir. Aksi takdirde, bu geniş karakter işlevlerinin her biri, tek baytlık karakter karşılığına benzer şekilde davranır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../c-runtime-library/data-conversion.md)<br/>
-[Yerel Ayar](../c-runtime-library/locale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [Kayan nokta desteği](../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)

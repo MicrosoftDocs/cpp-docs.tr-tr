@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: devralma anahtar sözcükleri'
 title: Devralınan Anahtar Sözcükler
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - derived classes [C++], declaring
 - inheritance, keywords
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
-ms.openlocfilehash: bc9afdcb7971c478c1cad9185cece57ea6326a48
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 05d13303064c2857780af62b1b4beba00483b72e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233736"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340469"
 ---
 # <a name="inheritance-keywords"></a>Devralınan Anahtar Sözcükler
 
@@ -40,7 +41,7 @@ burada:
 *sınıf adı*<br/>
 Bildirildiği sınıfın adı.
 
-C++, sınıfın tanımından önce bir sınıf üyesine yönelik bir işaretçi bildirmenize olanak tanır. Örnek:
+C++, sınıfın tanımından önce bir sınıf üyesine yönelik bir işaretçi bildirmenize olanak tanır. Örneğin:
 
 ```cpp
 class S;
@@ -74,7 +75,7 @@ komut satırı seçenekleri veya pragmalar ne olursa olsun, üye işaretçileri 
 > [!NOTE]
 > Bir sınıf işaretçisinin üye gösteriminin aynı iletme bildirimi, bu sınıfın üyelerine işaretçiler bildiren her bir çeviri biriminde gerçekleşmelidir ve bu bildirimin, üyelerin işaretçilerine bildirilmeden önce gerçekleşmesi gerekir.
 
-Önceki sürümlerle uyumluluk için, **_single_inheritance**, **_multiple_inheritance**ve **_virtual_inheritance** **`__single_inheritance`** ,, **`__multiple_inheritance`** ve **`__virtual_inheritance`** [< za \( dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, ve için eş anlamlılardır.
+Önceki sürümlerle uyumluluk için, **_single_inheritance**, **_multiple_inheritance** ve **_virtual_inheritance** **`__single_inheritance`** ,, **`__multiple_inheritance`** ve **`__virtual_inheritance`** [< za \( dil uzantılarını devre dışı bırak](../build/reference/za-ze-disable-language-extensions.md) derleyici seçeneği belirtildiğinde, ve için eş anlamlılardır.
 
 **SON Microsoft 'a özgü**
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Queue Class'
 title: queue Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - std::queue [C++], push
 - std::queue [C++], size
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204
-ms.openlocfilehash: e0bfa4ab037b52b237bd674d5f705de4e9699383
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b2b30e7a564fa1889d9adc2bb99e48ec1a623c25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832613"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340625"
 ---
 # <a name="queue-class"></a>queue Sınıfı
 
 Ön ve geri öğelerine erişimi sınırlayan, bazı temel kapsayıcı türleri için bir işlev kısıtlaması sağlayan bir şablon kapsayıcı bağdaştırıcı sınıfı. Öğeler geri eklenebilir veya ön öğeden kaldırılabilir ve öğeler sıranın her iki ucundan de incelenebilir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Type, class Container = deque <Type>>
@@ -52,7 +53,7 @@ Kuyruğu uygulamak için kullanılan temeldeki kapsayıcının türü.
 
 `Type`Bir kuyruk nesnesinin ilk şablon parametresinde ifade edilen sınıfın öğeleri, [value_type](#value_type) ile eşanlamlıdır ve `Container` ikinci şablon parametresi tarafından belirlenen temeldeki kapsayıcı sınıfında öğe türüyle eşleşmelidir. , `Type` Bu türdeki nesneleri kopyalamak ve bu türdeki değişkenlere değer atamak mümkün olduğundan, atanabilir olmalıdır.
 
-Sıra için uygun temel kapsayıcı sınıfları, [deque](../standard-library/deque-class.md) ,, ve işlemlerini destekleyen herhangi bir sıra kapsayıcısını ve [Listeyi](../standard-library/list-class.md)içerir `front` `back` `push_back` `pop_front` . Temel alınan kapsayıcı sınıfı kapsayıcı bağdaştırıcısında kapsüllenir, bu da yalnızca ortak arabirim olarak dizi kapsayıcısı üye işlevlerinin sınırlı kümesini sunar.
+Sıra için uygun temel kapsayıcı sınıfları, [](../standard-library/deque-class.md) ,, ve işlemlerini destekleyen herhangi bir sıra kapsayıcısını ve [Listeyi](../standard-library/list-class.md)içerir `front` `back` `push_back` `pop_front` . Temel alınan kapsayıcı sınıfı kapsayıcı bağdaştırıcısında kapsüllenir, bu da yalnızca ortak arabirim olarak dizi kapsayıcısı üye işlevlerinin sınırlı kümesini sunar.
 
 Sıra nesneleri eşitlik karşılaştırılabilir ve yalnızca sınıf öğelerinin `Type` eşitlik karşılaştırılabilir olması halinde ve yalnızca sınıf öğeleri karşılaştırılabilir değilse küçüktür ve karşılaştırılabilir `Type` .
 

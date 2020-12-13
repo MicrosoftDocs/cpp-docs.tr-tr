@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: iOS kullanarak derlemek için Araçlar yükleyip yapılandırma'
 title: iOS kullanarak derlemeye yönelik araçları yükleme ve yapılandırma
 ms.date: 10/17/2019
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-ms.openlocfilehash: 26dea080f3d3f05885f348dcaf1c66a0db2a36b5
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: e6d91dc679d86085c1886cab0d330a4fafb3c617
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339468"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>iOS kullanarak derlemeye yönelik araçları yükleme ve yapılandırma
 
@@ -18,7 +19,7 @@ ms.locfileid: "90041997"
 
 İOS kullanarak derlemek için araçları yükledikten sonra, Visual Studio ve Mac 'te iOS geliştirmesi için uzak aracıyı hızlı bir şekilde yapılandırmak ve güncellemek üzere bu makaleye başvurun.
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 İOS için kod geliştirmek üzere uzak aracıyı yüklemek ve kullanmak için, önce aşağıdaki önkoşullara sahip olmanız gerekir:
 
@@ -121,7 +122,7 @@ Uzak aracıyı başlattığınızda, bunu durdurmadan, Visual Studio 'dan kullan
 
 #### <a name="to-stop-the-remote-agent"></a>Uzak aracıyı durdurmak için
 
-- Terminal penceresinde `vcremote` üzerinde çalışıyor, **Control** + **C**girin.
+- Terminal penceresinde `vcremote` üzerinde çalışıyor, **Control** + **C** girin.
 
 ## <a name="configure-the-remote-agent-in-visual-studio"></a><a name="ConfigureVS"></a> Visual Studio 'da uzak Aracıyı yapılandırma
 

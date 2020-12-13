@@ -1,5 +1,6 @@
 ---
-title: Belge-görünüm mimarisi
+description: 'Daha fazla bilgi edinin: belge/görünüm mimarisi'
+title: Document-View mimarisi
 ms.date: 11/19/2018
 helpviewer_keywords:
 - CView class [MFC], view architecture
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: a74aeba651d385cf3a5386e94ec20e4e56b7cd57
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ef6746a77a3f8a482c347d61685fccad3e6b4dfb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624783"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339728"
 ---
 # <a name="documentview-architecture"></a>Belge/Görünüm Mimarisi
 
@@ -68,7 +69,7 @@ Belgeler, ilişkili görünümleri ve görünümleri çerçevesini görüntüley
 
 - [Belgeleri kullanma](using-documents.md)
 
-- [Görünümleri Kullanma](using-views.md)
+- [Görünümleri kullanma](using-views.md)
 
 - [Birden çok belge türü, görünüm ve çerçeve penceresi](multiple-document-types-views-and-frame-windows.md)
 
@@ -87,6 +88,6 @@ Belgeler, ilişkili görünümleri ve görünümleri çerçevesini görüntüley
 [Kullanıcı arabirimi öğeleri](user-interface-elements-mfc.md)<br/>
 [Windows](windows.md)<br/>
 [Çerçeve pencereleri](frame-windows.md)<br/>
-[Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi](document-templates-and-the-document-view-creation-process.md)<br/>
+[Belge şablonları ve belge/görünüm oluşturma Işlemi](document-templates-and-the-document-view-creation-process.md)<br/>
 [Belge/görünüm oluşturma](document-view-creation.md)<br/>
 [Yeni belgeler, pencereler ve görünümler oluşturma](creating-new-documents-windows-and-views.md)
