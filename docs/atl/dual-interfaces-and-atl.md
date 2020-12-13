@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çift arabirimler ve ATL'
 title: Çift arabirimler ve ATL
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,36 +7,36 @@ helpviewer_keywords:
 - ATL, dual interfaces
 - dual interfaces, about dual interfaces
 ms.assetid: 5a390e89-d2c4-41f0-8538-cab2c5e5d4c8
-ms.openlocfilehash: efa523099aaca77fba06efdaeabd1c7562a372a5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7b277b719d30b398d7b4a401c4b65402be954d99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147998"
 ---
 # <a name="dual-interfaces-and-atl"></a>Çift arabirimler ve ATL
 
-Çift arabirim metotlarını dispinterface yöntemi olarak veya vtable yöntemler olarak erişilmesini sağlar. Bu bölümde bir ATL açısından ikili arabirimler özelliklerinden bazılarını ele alınmaktadır.
+Çift arabirim, yöntemlerine dispınterface yöntemleri veya vtable yöntemleri olarak erişilmesine izin verir. Bu bölüm, ATL perspektifinden çift arabirimlerin bazı özelliklerini kapsar.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Çift Arabirim Uygulama](../atl/implementing-a-dual-interface.md)<br/>
-Sınıfları ve çift arabirim uygulama içinde ilgili sihirbazları açıklar.
+[Çift arabirim uygulama](../atl/implementing-a-dual-interface.md)<br/>
+Çift arabirim uygulamayla ilgili sınıfları ve sihirbazları açıklar.
 
-[Birden Çok Çift Arabirim](../atl/multiple-dual-interfaces.md)<br/>
-Tek bir nesnede birden çok çift arabirim kullanıma anlatılmaktadır.
+[Birden çok çift arabirim](../atl/multiple-dual-interfaces.md)<br/>
+Tek bir nesne üzerinde birden çok çift arabirimi nasıl kullanıma sunabileceğiniz açıklanmaktadır.
 
-[Nonextensible özniteliği](../atl/nonextensible-attribute.md)<br/>
-Ne zaman kullanılacağı ele alınmaktadır **nonextensible** , arabirim tanımı özniteliği.
+[Genişletilebilir olmayan öznitelik](../atl/nonextensible-attribute.md)<br/>
+Arabirim tanımınızda **genişletilebilen olmayan** özniteliğin ne zaman kullanılacağını açıklar.
 
-[Çift Arabirimler ve Olaylar](../atl/dual-interfaces-and-events.md)<br/>
-Çift arabirim arabirim bir olay yapmayı değil tasarım nedenleri açıklanır.
+[Çift arabirimler ve olaylar](../atl/dual-interfaces-and-events.md)<br/>
+Bir olay arabirimini çift arabirim haline getirmemek için tasarım nedenlerini açıklar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
-Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
+Etkin Şablon kitaplığı 'nı kullanarak programla programlama hakkında kavramsal konuların bağlantılarını sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)
+[Kavramlar](../atl/active-template-library-atl-concepts.md)

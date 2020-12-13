@@ -1,5 +1,6 @@
 ---
-title: CAtlDllModuleT Sınıfı
+description: 'Daha fazla bilgi edinin: Catldllmodület sınıfı'
+title: Catldllmodület sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlDllModuleT
@@ -14,14 +15,14 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlDllModuleT class
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
-ms.openlocfilehash: e0896a28c24877465213a71ac5207c537c731003
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: b6b6f87fc77187b150824fcd67fae254eb6d8f57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168779"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147439"
 ---
-# <a name="catldllmodulet-class"></a>CAtlDllModuleT Sınıfı
+# <a name="catldllmodulet-class"></a>Catldllmodület sınıfı
 
 Bu sınıf, bir DLL 'in modülünü temsil eder.
 
@@ -35,20 +36,20 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınız öğesinden `CAtlDllModuleT`türetilir.
+Sınıfınız öğesinden türetilir `CAtlDllModuleT` .
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[Catldllmodület:: Catldllmodület](#catldllmodulet)|Oluşturucu.|
 |[Catldllmodület:: ~ Catldllmodület](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[Catldllmodület::D llCanUnloadNow](#dllcanunloadnow)|DLL 'in kaldırılacaksa test eder.|
 |[Catldllmodület::D llGetClassObject](#dllgetclassobject)|Bir sınıf üreteci döndürür.|
@@ -59,7 +60,7 @@ Sınıfınız öğesinden `CAtlDllModuleT`türetilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CAtlDllModuleT`bir dinamik bağlantı kitaplığı (DLL) modülünü temsil eder ve tüm DLL projeleri tarafından kullanılan işlevleri sağlar. [Catlmodület](../../atl/reference/catlmodulet-class.md) sınıfının bu özelleştirmesi kayıt desteğini içerir.
+`CAtlDllModuleT` bir dinamik bağlantı kitaplığı (DLL) modülünü temsil eder ve tüm DLL projeleri tarafından kullanılan işlevleri sağlar. [Catlmodület](../../atl/reference/catlmodulet-class.md) sınıfının bu özelleştirmesi kayıt desteğini içerir.
 
 ATL 'deki modüller hakkında daha fazla bilgi için bkz. [ATL modül sınıfları](../../atl/atl-module-classes.md).
 
@@ -77,7 +78,7 @@ ATL 'deki modüller hakkında daha fazla bilgi için bkz. [ATL modül sınıflar
 
 **Üstbilgi:** atlbase. h
 
-## <a name="catldllmoduletcatldllmodulet"></a><a name="catldllmodulet"></a>Catldllmodület:: Catldllmodület
+## <a name="catldllmoduletcatldllmodulet"></a><a name="catldllmodulet"></a> Catldllmodület:: Catldllmodület
 
 Oluşturucu.
 
@@ -85,7 +86,7 @@ Oluşturucu.
 CAtlDllModuleT() throw();
 ```
 
-## <a name="catldllmoduletcatldllmodulet"></a><a name="dtor"></a>Catldllmodület:: ~ Catldllmodület
+## <a name="catldllmoduletcatldllmodulet"></a><a name="dtor"></a> Catldllmodület:: ~ Catldllmodület
 
 Yok edicisi.
 
@@ -93,7 +94,7 @@ Yok edicisi.
 ~CAtlDllModuleT() throw();
 ```
 
-## <a name="catldllmoduletdllcanunloadnow"></a><a name="dllcanunloadnow"></a>Catldllmodület::D llCanUnloadNow
+## <a name="catldllmoduletdllcanunloadnow"></a><a name="dllcanunloadnow"></a> Catldllmodület::D llCanUnloadNow
 
 DLL 'in kaldırılacaksa test eder.
 
@@ -105,7 +106,7 @@ HRESULT DllCanUnloadNow() throw();
 
 DLL bellekten kaldırılacaksa S_OK döndürür veya S_FALSE.
 
-## <a name="catldllmoduletdllgetclassobject"></a><a name="dllgetclassobject"></a>Catldllmodület::D llGetClassObject
+## <a name="catldllmoduletdllgetclassobject"></a><a name="dllgetclassobject"></a> Catldllmodület::D llGetClassObject
 
 Sınıf üreteci döndürür.
 
@@ -125,13 +126,13 @@ Oluşturulacak nesnenin CLSID değeri.
 İstenen arabirimin IID 'si.
 
 *PPV*<br/>
-*Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
+*Riıd* tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="catldllmoduletdllmain"></a><a name="dllmain"></a>Catldllmodület::D llMain
+## <a name="catldllmoduletdllmain"></a><a name="dllmain"></a> Catldllmodület::D llMain
 
 İsteğe bağlı giriş, bir dinamik bağlantı kitaplığı (DLL) içine işaret.
 
@@ -155,7 +156,7 @@ Her zaman TRUE döndürür.
 
 DLL_THREAD_ATTACH ve DLL_THREAD_DETACH bildirim çağrılarını devre dışı bırakmak, çok sayıda dll içeren çok iş parçacıklı uygulamalar için faydalı bir iyileştirme olabilir. Bu, iş parçacığı oluşturma ve silme, dll 'Lerin ek/çıkarılabilir bu iş parçacığı düzeyi bildirimlerine ihtiyacı yoktur.
 
-## <a name="catldllmoduletdllregisterserver"></a><a name="dllregisterserver"></a>Catldllmodület::D llRegisterServer
+## <a name="catldllmoduletdllregisterserver"></a><a name="dllregisterserver"></a> Catldllmodület::D llRegisterServer
 
 DLL içindeki nesneler için sistem kayıt defterine giriş ekler.
 
@@ -172,7 +173,7 @@ Tür kitaplığının kaydı varsa TRUE. Varsayılan değer TRUE 'dur.
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="catldllmoduletdllunregisterserver"></a><a name="dllunregisterserver"></a>Catldllmodület::D llUnregisterServer
+## <a name="catldllmoduletdllunregisterserver"></a><a name="dllunregisterserver"></a> Catldllmodület::D llUnregisterServer
 
 DLL içindeki nesneler için sistem kayıt defterindeki girişleri kaldırır.
 
@@ -189,7 +190,7 @@ Tür kitaplığının kayıt defterinden kaldırılması durumunda TRUE. Varsay�
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="catldllmoduletgetclassobject"></a><a name="getclassobject"></a>Catldllmodület:: GetClassObject
+## <a name="catldllmoduletgetclassobject"></a><a name="getclassobject"></a> Catldllmodület:: GetClassObject
 
 Belirtilen CLSID 'nin bir nesnesini oluşturur.
 
@@ -209,7 +210,7 @@ Oluşturulacak nesnenin CLSID değeri.
 İstenen arabirimin IID 'si.
 
 *PPV*<br/>
-*Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
+*Riıd* tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *PPV* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -221,7 +222,7 @@ Bu yöntem, [Catldllmodület::D llgetclassobject](#dllgetclassobject) tarafında
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CAtlModuleT Sınıfı](../../atl/reference/catlmodulet-class.md)<br/>
-[CAtlExeModuleT Sınıfı](../../atl/reference/catlexemodulet-class.md)<br/>
+[Catlmodület sınıfı](../../atl/reference/catlmodulet-class.md)<br/>
+[CAtlExeModuleT sınıfı](../../atl/reference/catlexemodulet-class.md)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

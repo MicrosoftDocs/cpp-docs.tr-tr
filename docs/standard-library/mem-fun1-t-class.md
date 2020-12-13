@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: mem_fun1_t sınıfı'
 title: mem_fun1_t Sınıfı
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - mem_fun1_t class
 ms.assetid: 01a8c2c2-b2f7-4e3f-869c-5b5b9f06ea54
-ms.openlocfilehash: 00d9322a8f0530da2e48b3f16fb52c00f9d1b075
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: a0fd8f060757c7dc5004ad753fd168c9e644e1b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687742"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149090"
 ---
 # <a name="mem_fun1_t-class"></a>mem_fun1_t Sınıfı
 
-Bir işaretçi bağımsız değişkeniyle başlatıldığında bir ikili işlev nesnesi olarak çağrılması için tek bir bağımsız değişken alan `non_const` üye işlevine izin veren bir bağdaştırıcı sınıfı. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
+`non_const`Bir işaretçi bağımsız değişkeniyle başlatıldığında bir ikili işlev nesnesi olarak çağrılması için tek bir bağımsız değişken alan bir üye işlevine izin veren bir bağdaştırıcı sınıfı. C++ 11 ' de kullanım dışı bırakılmıştır ve C++ 17 ' de kaldırılmıştır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,14 +34,14 @@ class mem_fun1_t : public binary_function<Type *, Arg, Result> {
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pm* \
-İşlev nesnesine dönüştürülecek `Type` sınıfının üye işlevine yönelik bir işaretçi.
+*_Pm*\
+İşlev nesnesine dönüştürülecek sınıfın üye işlevine yönelik bir işaretçi `Type` .
 
-*_Pleft* \
-*_Pm* üye işlevinin çağrıldığı nesne.
+*_Pleft*\
+*_Pm* member işlevinin çağrıldığı nesne.
 
-*sağ* \
-*_Pm*'ye verilen bağımsız değişken.
+*Right*\
+*_Pm* için verilen bağımsız değişken.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -48,8 +49,8 @@ Uyarlanabilir bir ikili işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıf şablonu, bir özel üye nesnesinde `Type` sınıfının üye işlevine bir işaretçi olması gereken *_Pm*öğesinin bir kopyasını depolar. Üye işlevini döndüren `operator()` tanımlar ( **_Pleft** -> \* `_Pm`) (**sağ**).
+Sınıf şablonu, bir  `Type` özel üye nesnesinde, sınıfının üye işlevine bir işaretçi olması gereken _Pm kopyasını depolar. Üye işlevini `operator()` döndüren (**_Pleft** -> \* `_Pm` ) (**sağdaki**) olarak tanımlar.
 
 ## <a name="example"></a>Örnek
 
-@No__t_0 Oluşturucusu genellikle doğrudan kullanılmaz; `mem_fun` yardımcı işlevi, üye işlevlerini uyarlamak için kullanılır. Üye işlev bağdaştırıcılarını nasıl kullanacağınızı gösteren bir örnek için bkz. [mem_fun](../standard-library/functional-functions.md#mem_fun) .
+Oluşturucusu `mem_fun1_t` genellikle doğrudan kullanılmaz; yardımcı işlevi `mem_fun` üye işlevlerini uyarlamak için kullanılır. Üye işlev bağdaştırıcılarını nasıl kullanacağınızı gösteren bir örnek için bkz. [mem_fun](../standard-library/functional-functions.md#mem_fun) .

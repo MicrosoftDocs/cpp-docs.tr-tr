@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ClassFactory sınıfı'
 title: ClassFactory Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - Microsoft::WRL::ClassFactory::QueryInterface method
 - Microsoft::WRL::ClassFactory::Release method
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
-ms.openlocfilehash: bbf20e2269e6d62206e06e748174d7b88898cd68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e6503cba1060c432b2cb85020799b83f0ee16c6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87198105"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135310"
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
 
 , Arabiriminin temel işlevlerini uygular `IClassFactory` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -114,7 +115,7 @@ Ad                                            | Açıklama
 
 **Ad alanı:** Microsoft:: WRL
 
-## <a name="classfactoryaddref"></a><a name="addref"></a>ClassFactory:: AddRef
+## <a name="classfactoryaddref"></a><a name="addref"></a> ClassFactory:: AddRef
 
 Geçerli nesne için başvuru sayısını artırır `ClassFactory` .
 
@@ -129,13 +130,13 @@ STDMETHOD_(
 
 Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
 
-## <a name="classfactoryclassfactory"></a><a name="classfactory"></a>ClassFactory:: ClassFactory
+## <a name="classfactoryclassfactory"></a><a name="classfactory"></a> ClassFactory:: ClassFactory
 
 ```cpp
 WRL_NOTHROW ClassFactory();
 ```
 
-## <a name="classfactorylockserver"></a><a name="lockserver"></a>ClassFactory:: LockServer
+## <a name="classfactorylockserver"></a><a name="lockserver"></a> ClassFactory:: LockServer
 
 Geçerli nesne tarafından izlenen temeldeki nesne sayısını artırır veya azaltır `ClassFactory` .
 
@@ -158,7 +159,7 @@ Başarılı olursa S_OK; Aksi takdirde, E_FAIL.
 
 `ClassFactory`[Modül](module-class.md) sınıfının temel bir örneğindeki nesneleri izler.
 
-## <a name="classfactoryqueryinterface"></a><a name="queryinterface"></a>ClassFactory:: QueryInterface
+## <a name="classfactoryqueryinterface"></a><a name="queryinterface"></a> ClassFactory:: QueryInterface
 
 Parametreye göre belirtilen arabirime bir işaretçi alır.
 
@@ -174,13 +175,13 @@ STDMETHOD(
 Arabirim KIMLIĞI.
 
 *ppvObject*<br/>
-Bu işlem tamamlandığında, parametre *riıd*tarafından belirtilen arabirime yönelik bir işaretçi.
+Bu işlem tamamlandığında, parametre *riıd* tarafından belirtilen arabirime yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Başarılı olursa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
 
-## <a name="classfactoryrelease"></a><a name="release"></a>ClassFactory:: Release
+## <a name="classfactoryrelease"></a><a name="release"></a> ClassFactory:: Release
 
 Geçerli nesne için başvuru sayısını azaltır `ClassFactory` .
 

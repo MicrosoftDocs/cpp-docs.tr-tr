@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ccomautocriticalhandle bölüm sınıfı'
 title: Ccomautocriticalhandle bölüm sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComAutoCriticalSection class
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
-ms.openlocfilehash: 26b43fa4adc40993a44318c67be990c781b5cdf6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2441c714b95a3bbefed4a699055d14c6915cffda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226639"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146971"
 ---
 # <a name="ccomautocriticalsection-class"></a>Ccomautocriticalhandle bölüm sınıfı
 
-`CComAutoCriticalSection`kritik bölüm nesnesinin sahipliğini almak ve serbest bırakmak için yöntemler sağlar.
+`CComAutoCriticalSection` kritik bölüm nesnesinin sahipliğini almak ve serbest bırakmak için yöntemler sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CComAutoCriticalSection : public CComCriticalSection
@@ -36,7 +37,7 @@ class CComAutoCriticalSection : public CComCriticalSection
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComAutoCriticalSection`, kurucudaki kritik bölüm nesnesini otomatik olarak başlatan sınıf [Ccomcriticalhandle bölümüne](../../atl/reference/ccomcriticalsection-class.md)benzerdir `CComAutoCriticalSection` .
+`CComAutoCriticalSection` , kurucudaki kritik bölüm nesnesini otomatik olarak başlatan sınıf [Ccomcriticalhandle bölümüne](../../atl/reference/ccomcriticalsection-class.md)benzerdir `CComAutoCriticalSection` .
 
 Genellikle, `CComAutoCriticalSection` **`typedef`** ad [oto](ccommultithreadmodel-class.md#autocriticalsection)adı ' nı kullanırsınız. Bu ad `CComAutoCriticalSection` , [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) kullanılırken başvuruda bulunur.
 
@@ -52,7 +53,7 @@ Genellikle, `CComAutoCriticalSection` **`typedef`** ad [oto](ccommultithreadmode
 
 **Üstbilgi:** atlcore. h
 
-## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="ccomautocriticalsection"></a>Ccomautocriticalhandle bölümü:: Ccomautocriticalhandle bölümü
+## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="ccomautocriticalsection"></a> Ccomautocriticalhandle bölümü:: Ccomautocriticalhandle bölümü
 
 Oluşturucu.
 
@@ -64,7 +65,7 @@ CComAutoCriticalSection();
 
 Kritik bölüm nesnesini başlatan [InitializeCriticalSection](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection)Win32 işlevini çağırır.
 
-## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="dtor"></a>Ccomautocriticalhandle bölümü:: ~ Ccomautocriticalhandle bölümü
+## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="dtor"></a> Ccomautocriticalhandle bölümü:: ~ Ccomautocriticalhandle bölümü
 
 Yok edicisi.
 

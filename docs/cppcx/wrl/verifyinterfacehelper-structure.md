@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: VerifyInterfaceHelper yapısı'
 title: VerifyInterfaceHelper Yapısı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::VerifyInterfaceHelper structure
 - Microsoft::WRL::Details::VerifyInterfaceHelper::Verify method
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
-ms.openlocfilehash: 09c2cc7e08e2dc0e8df42c64d285c37627c5925a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a9b51eac55666d15b8362fc070d0feb731e9674d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135037"
 ---
 # <a name="verifyinterfacehelper-structure"></a>VerifyInterfaceHelper Yapısı
 
-Windows Runtime C++ Şablon Kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+Windows Çalışma Zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,10 +33,10 @@ struct VerifyInterfaceHelper<false, I>;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ⅰ*<br/>
-Doğrulamak için bir arayüz.
+*Kaydedemiyorum*<br/>
+Doğrulanacak bir arabirim.
 
-*isWinRTInterface*
+*Iswınrtınterface*
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -45,7 +46,7 @@ Doğrulamak için bir arayüz.
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                            | Açıklama
+Ad                                            | Açıklama
 ----------------------------------------------- | ---------------------------------------------------------------------------------------------------
 [VerifyInterfaceHelper::Verify Metodu](#verify) | Geçerli şablon parametresi tarafından belirtilen arabirimin belirli gereksinimleri karşıladığını doğrular.
 
@@ -55,13 +56,13 @@ Adı                                            | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** implements.h
+**Üst bilgi:** uygular. h
 
-**Ad alanı:** Microsoft::WRL::D etails
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="verifyinterfacehelperverify"></a><a name="verify"></a>VerifyInterfaceHelper::Doğrula
+## <a name="verifyinterfacehelperverify"></a><a name="verify"></a> VerifyInterfaceHelper:: Verify
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 static void Verify();

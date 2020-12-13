@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bileşik denetim ekleme'
 title: Bileşik denetim ekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,21 +7,21 @@ helpviewer_keywords:
 - composite controls
 - ATL Control Wizard
 ms.assetid: f10b1927-9fc6-40a7-ac29-efdac70584fe
-ms.openlocfilehash: 89cadf3c966eebb1b96cbd378bb422cbcff48727
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8306056a369dfe0829e2eeebc90a871da798c9d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147738"
 ---
 # <a name="inserting-a-composite-control"></a>Bileşik denetim ekleme
 
-**Sınıfı Ekle** iletişim kutusu, bir projeye ATL nesnesi eklemek tanır. Proje adı gösteren Çözüm Gezgini içinde sağ tıklayarak bu iletişim kutusuna erişmek **Ekle**ve ardından **sınıfı Ekle**.
+**Sınıf Ekle** iletişim kutusu, BIR projeye ATL nesnesi eklemenize olanak tanır. Çözüm Gezgini ' de proje adına sağ tıklayıp **Ekle**' nin üzerine gelip **Sınıf Ekle**' ye tıklayarak bu iletişim kutusuna erişin.
 
-İçinde **sınıfı Ekle** iletişim kutusunda **ATL denetimi**. Bu başlatır [ATL denetimi Sihirbazı](../atl/reference/atl-control-wizard.md). Bileşik denetim oluşturmak için Seç **seçenekleri** sekmesine ve tıklayın **bileşik denetim** onay kutusu.
+**Sınıf Ekle** iletişim kutusunda, **ATL denetimi**' ni seçin. Bu, [atl Denetim Sihirbazı 'nı](../atl/reference/atl-control-wizard.md)başlatır. Bileşik denetim oluşturmak için, **Seçenekler** sekmesini seçin ve **bileşik denetim** onay kutusuna tıklayın.
 
-Varsayılan HTML sayfasını denetim görüntülemek için oluşturulur.
+Denetimi görüntülemek için varsayılan bir HTML sayfası oluşturulacak.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
+[Bileşik denetim temelleri](../atl/atl-composite-control-fundamentals.md)

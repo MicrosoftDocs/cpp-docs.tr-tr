@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComObjectRootEx sınıfı'
 title: CComObjectRootEx sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,18 +21,18 @@ f1_keywords:
 helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-ms.openlocfilehash: b4dbc42cb0c6fe2c9c6692e0db37267ce3fff361
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9fe0140944e3da5ddf70e0da38d054a35bb648ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142486"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx sınıfı
 
 Bu sınıf, hem toplanmış hem de toplanmış nesneler için nesne başvuru sayısı yönetimini işlemek için yöntemler sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template<class ThreadModel>
@@ -52,7 +53,7 @@ Yöntemleri istenen iş parçacığı modelini uygulayan sınıf. İş parçacı
 |[CComObjectRootEx](#ccomobjectrootex)|Oluşturucu.|
 |[InternalAddRef](#internaladdref)|Toplanmayan bir nesne için başvuru sayısını artırır.|
 |[InternalRelease](#internalrelease)|Toplanmayan bir nesne için başvuru sayısını azaltır.|
-|[İne](#lock)|İş parçacığı modeli çok iş parçacıklı ise, kritik bir bölüm nesnesinin sahipliğini edinir.|
+|[Kilitle](#lock)|İş parçacığı modeli çok iş parçacıklı ise, kritik bir bölüm nesnesinin sahipliğini edinir.|
 |[Kaldırın](#unlock)|İş parçacığı modeli çok iş parçacıklı ise, kritik bir bölüm nesnesinin sahipliğini yayınlar.|
 
 ### <a name="ccomobjectrootbase-methods"></a>CComObjectRootBase yöntemleri
@@ -135,7 +136,7 @@ Sınıfınızın Oluşturucusu yerine ' de başlatma avantajları vardır `Final
 
 ### <a name="example"></a>Örnek
 
-Genellikle, `CComObjectRootEx` toplanan bir nesne oluşturmak için öğesinden türetilmiş sınıfta bu yöntemi geçersiz kılın. Örnek:
+Genellikle, `CComObjectRootEx` toplanan bir nesne oluşturmak için öğesinden türetilmiş sınıfta bu yöntemi geçersiz kılın. Örneğin:
 
 [!code-cpp[NVC_ATL_COM#40](../../atl/codesnippet/cpp/ccomobjectrootex-class_1.h)]
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SRWLock sınıfı'
 title: SRWLock Sınıfı
 ms.date: 09/25/2018
 ms.topic: reference
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::SRWLock::TryLockExclusive method
 - Microsoft::WRL::Wrappers::SRWLock::TryLockShared method
 ms.assetid: 4fa250e3-5f29-4b06-ac24-61b6c04ade93
-ms.openlocfilehash: e305ad54e30455ce7c25f356c454791da0783591
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 10bc3dc700f90d5154ece1546cdf3ec464ea6e56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135193"
 ---
 # <a name="srwlock-class"></a>SRWLock Sınıfı
 
-İnce bir okuyucu/yazar kilidini temsil eder.
+İnce bir okuyucu/yazıcı kilidini temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class SRWLock;
@@ -40,38 +41,38 @@ class SRWLock;
 
 ## <a name="remarks"></a>Açıklamalar
 
-İnce bir okuyucu/yazar kilidi, bir nesneye veya kaynağa iş parçacıkları arasında erişimi eşitlemek için kullanılır. Daha fazla bilgi için [senkronizasyon işlevlerine](/windows/win32/Sync/synchronization-functions)bakın.
+Bir nesne veya kaynağa iş parçacıkları arasındaki erişimi eşleştirmek için ince bir okuyucu/yazıcı kilidi kullanılır. Daha fazla bilgi için bkz. [eşitleme işlevleri](/windows/win32/Sync/synchronization-functions).
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-Adı                | Açıklama
+Ad                | Açıklama
 ------------------- | -------------------------------------------------------------------
-`SyncLockExclusive` | Özel modda edinilen `SRWLock` bir nesnenin eşanlamlısı.
-`SyncLockShared`    | Paylaşılan modda edinilen `SRWLock` bir nesnenin eş anlamlısı.
+`SyncLockExclusive` | `SRWLock`Özel modda alınan bir nesne için eş anlamlı.
+`SyncLockShared`    | `SRWLock`Paylaşılan modda alınan bir nesne için eş anlamlı.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Adı                                     | Açıklama
+Ad                                     | Açıklama
 ---------------------------------------- | --------------------------------------------------
-[SRWLock::SRWLock](#srwlock-constructor) | `SRWLock` sınıfının yeni bir örneğini başlatır.
-[SRWLock::~SRWLock](#tilde-srwlock)      | Sınıfın bir örneğini `SRWLock` deinitialize eder.
+[SRWLock:: SRWLock](#srwlock-constructor) | `SRWLock` sınıfının yeni bir örneğini başlatır.
+[SRWLock:: ~ SRWLock](#tilde-srwlock)      | Sınıfının bir örneğini kaldırır `SRWLock` .
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                           | Açıklama
+Ad                                           | Açıklama
 ---------------------------------------------- | -------------------------------------------------------------------------------------------------------
-[SRWLock::LockExclusive](#lockexclusive)       | Özel modda bir `SRWLock` nesne edinir.
-[SRWLock::LockShared](#lockshared)             | Paylaşılan modda bir `SRWLock` nesne kazanır.
-[SRWLock::TryLockExclusive](#trylockexclusive) | Geçerli veya `SRWLock` belirtilen `SRWLock` nesne için özel modda bir nesne elde etmeye çalışır.
-[SRWLock::trylockpaylaşılan](#trylockshared)       | Geçerli veya `SRWLock` belirtilen `SRWLock` nesne için paylaşılan modda bir nesne elde etmeye çalışır.
+[SRWLock:: LockExclusive](#lockexclusive)       | `SRWLock`Özel modda bir nesne elde edin.
+[SRWLock:: LockShared](#lockshared)             | `SRWLock`Paylaşılan modda bir nesne alır.
+[SRWLock:: TryLockExclusive](#trylockexclusive) | `SRWLock`Geçerli veya belirtilen nesne için özel modda bir nesne edinmeye çalışır `SRWLock` .
+[SRWLock:: TryLockShared](#trylockshared)       | `SRWLock`Geçerli veya belirtilen nesne için paylaşılan modda bir nesne edinmeye çalışır `SRWLock` .
 
-### <a name="protected-data-member"></a>Korumalı Veri Üyesi
+### <a name="protected-data-member"></a>Korumalı veri üyesi
 
-Adı                                      | Açıklama
+Ad                                      | Açıklama
 ----------------------------------------- | -----------------------------------------------------------------------
-[SRWLock::SRWLock_](#srwlock-data-member) | Geçerli `SRWLock` nesne için temel kilit değişkenini içerir.
+[SRWLock:: SRWLock_](#srwlock-data-member) | Geçerli nesne için temeldeki kilit değişkenini içerir `SRWLock` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -79,21 +80,21 @@ Adı                                      | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Ad alanı:** Microsoft::WRL::Sarmalayıcılar
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar
 
-## <a name="srwlocksrwlock"></a><a name="tilde-srwlock"></a>SRWLock::~SRWLock
+## <a name="srwlocksrwlock"></a><a name="tilde-srwlock"></a> SRWLock:: ~ SRWLock
 
-Sınıfın bir örneğini `SRWLock` deinitialize eder.
+Sınıfının bir örneğini kaldırır `SRWLock` .
 
 ```cpp
 ~SRWLock();
 ```
 
-## <a name="srwlocklockexclusive"></a><a name="lockexclusive"></a>SRWLock::LockExclusive
+## <a name="srwlocklockexclusive"></a><a name="lockexclusive"></a> SRWLock:: LockExclusive
 
-Özel modda bir `SRWLock` nesne edinir.
+`SRWLock`Özel modda bir nesne elde edin.
 
 ```cpp
 SyncLockExclusive LockExclusive();
@@ -105,16 +106,16 @@ static SyncLockExclusive LockExclusive(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kilit*<br/>
-Bir `SRWLock` nesneye işaretçi.
+*ine*<br/>
+Bir nesne işaretçisi `SRWLock` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özel `SRWLock` modda bir nesne.
+`SRWLock`Özel moddaki bir nesne.
 
-## <a name="srwlocklockshared"></a><a name="lockshared"></a>SRWLock::LockShared
+## <a name="srwlocklockshared"></a><a name="lockshared"></a> SRWLock:: LockShared
 
-Paylaşılan modda bir `SRWLock` nesne kazanır.
+`SRWLock`Paylaşılan modda bir nesne alır.
 
 ```cpp
 SyncLockShared LockShared();
@@ -126,14 +127,14 @@ static SyncLockShared LockShared(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kilit*<br/>
-Bir `SRWLock` nesneye işaretçi.
+*ine*<br/>
+Bir nesne işaretçisi `SRWLock` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Paylaşılan `SRWLock` modda bir nesne.
+`SRWLock`Paylaşılan moddaki bir nesne.
 
-## <a name="srwlocksrwlock"></a><a name="srwlock-constructor"></a>SRWLock::SRWLock
+## <a name="srwlocksrwlock"></a><a name="srwlock-constructor"></a> SRWLock:: SRWLock
 
 `SRWLock` sınıfının yeni bir örneğini başlatır.
 
@@ -141,17 +142,17 @@ Paylaşılan `SRWLock` modda bir nesne.
 SRWLock();
 ```
 
-## <a name="srwlocksrwlock_"></a><a name="srwlock-data-member"></a>SRWLock::SRWLock_
+## <a name="srwlocksrwlock_"></a><a name="srwlock-data-member"></a> SRWLock:: SRWLock_
 
-Geçerli `SRWLock` nesne için temel kilit değişkenini içerir.
+Geçerli nesne için temeldeki kilit değişkenini içerir `SRWLock` .
 
 ```cpp
 SRWLOCK SRWLock_;
 ```
 
-## <a name="srwlocktrylockexclusive"></a><a name="trylockexclusive"></a>SRWLock::TryLockExclusive
+## <a name="srwlocktrylockexclusive"></a><a name="trylockexclusive"></a> SRWLock:: TryLockExclusive
 
-Geçerli veya `SRWLock` belirtilen `SRWLock` nesne için özel modda bir nesne elde etmeye çalışır. Arama başarılı olursa, arama iş parçacığı kilidin sahipliğini alır.
+`SRWLock`Geçerli veya belirtilen nesne için özel modda bir nesne edinmeye çalışır `SRWLock` . Çağrı başarılı olursa, çağıran iş parçacığı kilidin sahipliğini alır.
 
 ```cpp
 SyncLockExclusive TryLockExclusive();
@@ -163,16 +164,16 @@ static SyncLockExclusive TryLockExclusive(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kilit*<br/>
-Bir `SRWLock` nesneye işaretçi.
+*ine*<br/>
+Bir nesne işaretçisi `SRWLock` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, `SRWLock` özel modda bir nesne ve arama iş parçacığı kilidin sahipliğini alır. Aksi takdirde, durumu geçersiz olan bir `SRWLock` nesne.
+Başarılı olursa, `SRWLock` özel moddaki bir nesne ve çağıran iş parçacığı kilidin sahipliğini alır. Aksi takdirde, `SRWLock` durumu geçersiz olan bir nesne.
 
-## <a name="srwlocktrylockshared"></a><a name="trylockshared"></a>SRWLock::trylockpaylaşılan
+## <a name="srwlocktrylockshared"></a><a name="trylockshared"></a> SRWLock:: TryLockShared
 
-Geçerli veya `SRWLock` belirtilen `SRWLock` nesne için paylaşılan modda bir nesne elde etmeye çalışır.
+`SRWLock`Geçerli veya belirtilen nesne için paylaşılan modda bir nesne edinmeye çalışır `SRWLock` .
 
 ```cpp
 WRL_NOTHROW SyncLockShared TryLockShared();
@@ -183,9 +184,9 @@ WRL_NOTHROW static SyncLockShared TryLockShared(
 
 ### <a name="parameters"></a>Parametreler
 
-*Kilit*<br/>
-Bir `SRWLock` nesneye işaretçi.
+*ine*<br/>
+Bir nesne işaretçisi `SRWLock` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, `SRWLock` paylaşılan moddaki bir nesne ve arama iş parçacığı kilidin sahipliğini alır. Aksi takdirde, durumu geçersiz olan bir `SRWLock` nesne.
+Başarılı olursa, `SRWLock` paylaşılan moddaki bir nesne ve çağıran iş parçacığı kilidin sahipliğini alır. Aksi takdirde, `SRWLock` durumu geçersiz olan bir nesne.

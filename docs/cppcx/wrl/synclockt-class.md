@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SyncLockT Sınıfı'
 title: SyncLockT Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT, destructor
 - Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock method
 ms.assetid: a967f6f7-3555-43d1-b210-2bb65d63d15e
-ms.openlocfilehash: 6a6e176020624f02e778ba5684a374abfbafa9e4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 289a31d87ce395be2d2a72a8fe062c9c0bfa8f56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87184676"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135115"
 ---
 # <a name="synclockt-class"></a>SyncLockT Sınıfı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <typename SyncTraits>
@@ -84,7 +85,7 @@ Ad                      | Açıklama
 
 **Ad alanı:** Microsoft:: WRL:: sarmalayıcılar::D euçlar
 
-## <a name="synclocktsynclockt"></a><a name="tilde-synclockt"></a>SyncLockT:: ~ SyncLockT
+## <a name="synclocktsynclockt"></a><a name="tilde-synclockt"></a> SyncLockT:: ~ SyncLockT
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -98,7 +99,7 @@ Sınıfının bir örneğini kaldırır `SyncLockT` .
 
 Bu yıkıcı ayrıca geçerli örneğin kilidini açar `SyncLockT` .
 
-## <a name="synclocktislocked"></a><a name="islocked"></a>SyncLockT:: ıskilitlendi
+## <a name="synclocktislocked"></a><a name="islocked"></a> SyncLockT:: ıskilitlendi
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -114,7 +115,7 @@ bool IsLocked() const;
 
 Geçerli `SyncLockT` nesnenin bir kaynağa sahip olup olmadığını gösterir; diğer bir deyişle, `SyncLockT` nesne *kilitlenir*.
 
-## <a name="synclocktsync_"></a><a name="sync"></a>SyncLockT:: sync_
+## <a name="synclocktsync_"></a><a name="sync"></a> SyncLockT:: sync_
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -126,7 +127,7 @@ typename SyncTraits::Type sync_;
 
 Sınıfı tarafından temsil edilen temel kaynağı barındırır `SyncLockT` .
 
-## <a name="synclocktsynclockt"></a><a name="synclockt"></a>SyncLockT:: SyncLockT
+## <a name="synclocktsynclockt"></a><a name="synclockt"></a> SyncLockT:: SyncLockT
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -152,9 +153,9 @@ Başka bir nesneye başvuru `SyncLockWithStatusT` .
 
 `SyncLockT` sınıfının yeni bir örneğini başlatır.
 
-İlk Oluşturucu, geçerli `SyncLockT` nesneyi `SyncLockT` *diğer*parametre tarafından belirtilen başka bir nesneden başlatır ve ardından diğer nesneyi geçersiz kılar `SyncLockT` . İkinci Oluşturucu olur **`protected`** ve geçerli `SyncLockT` nesneyi geçersiz bir duruma başlatır.
+İlk Oluşturucu, geçerli `SyncLockT` nesneyi `SyncLockT` *diğer* parametre tarafından belirtilen başka bir nesneden başlatır ve ardından diğer nesneyi geçersiz kılar `SyncLockT` . İkinci Oluşturucu olur **`protected`** ve geçerli `SyncLockT` nesneyi geçersiz bir duruma başlatır.
 
-## <a name="synclocktunlock"></a><a name="unlock"></a>SyncLockT:: unlock
+## <a name="synclocktunlock"></a><a name="unlock"></a> SyncLockT:: unlock
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 

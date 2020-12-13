@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAtlTransactionManager sınıfı'
 title: CAtlTransactionManager sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-ms.openlocfilehash: 74afc1a82c12d6138198f5696d300825e06aba1e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 25d5ea7e9b4838f483dd7f9ee408cdd5bd4c88cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147192"
 ---
 # <a name="catltransactionmanager-class"></a>CAtlTransactionManager sınıfı
 
@@ -59,7 +60,7 @@ class CAtlTransactionManager;
 |Ad|Açıklama|
 |----------|-----------------|
 |[Kapat](#close)|İşlem tanıtıcısını kapatır.|
-|[Uygulayın](#commit)|İşlemin yürütüldüğü istek.|
+|[İşleme](#commit)|İşlemin yürütüldüğü istek.|
 |[Oluştur](#create)|İşlem tanıtıcısını oluşturur.|
 |[CreateFile](#createfile)|Bir dosya, dosya akışı veya dizini işlem temelli bir işlem olarak oluşturur veya açar.|
 |[DeleteFile](#deletefile)|Var olan bir dosyayı işlenen işlem olarak siler.|
@@ -72,7 +73,7 @@ class CAtlTransactionManager;
 |[RegCreateKeyEx](#regcreatekeyex)|Belirtilen kayıt defteri anahtarını oluşturur ve bir işlem ile ilişkilendirir. Anahtar zaten varsa, işlev onu açar.|
 |[RegDeleteKey](#regdeletekey)|Bir alt anahtarı ve değerlerini, kayıt defterinin belirtilen platforma özgü görünümünden işlem temelli bir işlem olarak siler.|
 |[RegOpenKeyEx](#regopenkeyex)|Belirtilen kayıt defteri anahtarını açar ve bir işlem ile ilişkilendirir.|
-|[Etkin](#rollback)|İşlemin geri alınmasına yönelik istekler.|
+|[Geri alma](#rollback)|İşlemin geri alınmasına yönelik istekler.|
 |[SetFileAttributes](#setfileattributes)|Bir dosya veya dizinin özniteliklerini işlem temelli bir işlem olarak ayarlar.|
 
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri
@@ -296,7 +297,7 @@ Dosya veya dizinin adı.
 Alınacak öznitelik bilgilerinin düzeyi.
 
 *Lpfileınformation*<br/>
-Öznitelik bilgilerini alan bir arabelleğin işaretçisi. Bu arabellekte depolanan öznitelik bilgilerinin türü, *fInfoLevelId*değerine göre belirlenir. *FInfoLevelId* parametresi GetFileExInfoStandard ise, bu parametre WIN32_FILE_ATTRIBUTE_DATA yapısına işaret eder.
+Öznitelik bilgilerini alan bir arabelleğin işaretçisi. Bu arabellekte depolanan öznitelik bilgilerinin türü, *fInfoLevelId* değerine göre belirlenir. *FInfoLevelId* parametresi GetFileExInfoStandard ise, bu parametre WIN32_FILE_ATTRIBUTE_DATA yapısına işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 

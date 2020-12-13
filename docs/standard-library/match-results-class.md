@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: match_results Sınıfı'
 title: match_results Sınıfı
 ms.date: 09/10/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - match_results class
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
-ms.openlocfilehash: 8ce9ed987baf63f2cc9f095e2955a8165e977193
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 55c73f558f4355c66a6c6180007bee0d83045a51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212221"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149337"
 ---
 # <a name="match_results-class"></a>match_results Sınıfı
 
 Bir dizi alt eşleşme tutar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class BidIt, class Alloc>
@@ -66,7 +67,7 @@ Sınıf şablonu, `sub_match<BidIt>` bir normal ifade araması tarafından oluş
 |[erer](#end)|Alt eşleşme sırasının sonunu belirtir.|
 |[formatını](#format)|Alt eşleşmeleri biçimlendirir.|
 |[get_allocator](#get_allocator)|Depolanan ayırıcıyı döndürür.|
-|[uzunluklu](#length)|Alt eşleşme uzunluğunu döndürür.|
+|[length](#length)|Alt eşleşme uzunluğunu döndürür.|
 |[max_size](#max_size)|En fazla sayıda alt eşleşme alır.|
 |[yerine](#position)|Bir alt grubun başlangıç sapmasını alın.|
 |[koy](#prefix)|İlk alt eşleşmeden önce sırayı alır.|
@@ -80,7 +81,7 @@ Sınıf şablonu, `sub_match<BidIt>` bir normal ifade araması tarafından oluş
 |İşleç|Açıklama|
 |-|-|
 |[işleç =](#op_eq)|Match_results nesnesini kopyalayın.|
-|[işleç\[\]](#op_at)|Bir alt nesneye erişin.|
+|[işlecinde\[\]](#op_at)|Bir alt nesneye erişin.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -188,7 +189,7 @@ next submatch: matched == false
 empty == false
 ```
 
-## <a name="match_resultsallocator_type"></a><a name="allocator_type"></a>match_results:: allocator_type
+## <a name="match_resultsallocator_type"></a><a name="allocator_type"></a> match_results:: allocator_type
 
 Depolamayı yönetmek için bir ayırıcı türü.
 
@@ -198,9 +199,9 @@ typedef Alloc allocator_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TypeDef, şablon bağımsız değişkeni *ayırma*için bir eş anlamlı.
+TypeDef, şablon bağımsız değişkeni *ayırma* için bir eş anlamlı.
 
-## <a name="match_resultsbegin"></a><a name="begin"></a>match_results:: Begin
+## <a name="match_resultsbegin"></a><a name="begin"></a> match_results:: Begin
 
 Alt eşleşme sırasının başlangıcını belirtir.
 
@@ -212,7 +213,7 @@ const_iterator begin() const;
 
 Üye işlevi, dizinin ilk öğesinde (veya boş bir dizinin sonunun ötesinde) işaret eden bir rastgele erişim yineleyici döndürür.
 
-## <a name="match_resultschar_type"></a><a name="char_type"></a>match_results:: char_type
+## <a name="match_resultschar_type"></a><a name="char_type"></a> match_results:: char_type
 
 Öğenin türü.
 
@@ -224,7 +225,7 @@ typedef typename iterator_traits<BidIt>::value_type char_type;
 
 TypeDef, `iterator_traits<BidIt>::value_type` Aranan karakter dizisinin öğe türü olan türün bir eş anlamlısıdır.
 
-## <a name="match_resultsconst_iterator"></a><a name="const_iterator"></a>match_results:: const_iterator
+## <a name="match_resultsconst_iterator"></a><a name="const_iterator"></a> match_results:: const_iterator
 
 Alt eşleşmeler için const yineleyici türü.
 
@@ -236,7 +237,7 @@ typedef T0 const_iterator;
 
 TypeDef, denetimli sıra için sabit bir rastgele erişim Yineleyici işlevi görebilecek bir nesneyi tanımlar.
 
-## <a name="match_resultsconst_reference"></a><a name="const_reference"></a>match_results:: const_reference
+## <a name="match_resultsconst_reference"></a><a name="const_reference"></a> match_results:: const_reference
 
 Bir öğe const başvurusunun türü.
 
@@ -248,7 +249,7 @@ typedef const typename Alloc::const_reference const_reference;
 
 TypeDef, denetlenen dizinin bir öğesine sabit başvuru olarak işlev görebilecek bir nesne açıklar.
 
-## <a name="match_resultsdifference_type"></a><a name="difference_type"></a>match_results::d ifference_type
+## <a name="match_resultsdifference_type"></a><a name="difference_type"></a> match_results::d ifference_type
 
 Yineleyici farkının türü.
 
@@ -260,7 +261,7 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 
 TypeDef türün eşanlamlısıdır `iterator_traits<BidIt>::difference_type` ; denetimli sıranın öğelerine işaret eden iki yineleyiciler arasındaki farkı temsil eden bir nesneyi tanımlar.
 
-## <a name="match_resultsempty"></a><a name="empty"></a>match_results:: boş
+## <a name="match_resultsempty"></a><a name="empty"></a> match_results:: boş
 
 Alt eşleşme olmaması için testler.
 
@@ -272,7 +273,7 @@ bool empty() const;
 
 Üye işlevi yalnızca normal ifade araması başarısız olursa true değerini döndürür.
 
-## <a name="match_resultsend"></a><a name="end"></a>match_results:: End
+## <a name="match_resultsend"></a><a name="end"></a> match_results:: End
 
 Alt eşleşme sırasının sonunu belirtir.
 
@@ -284,7 +285,7 @@ const_iterator end() const;
 
 Üye işlevi, dizinin sonunun hemen ötesinde işaret eden bir yineleyici döndürür.
 
-## <a name="match_resultsformat"></a><a name="format"></a>match_results:: Format
+## <a name="match_resultsformat"></a><a name="format"></a> match_results:: Format
 
 Alt eşleşmeleri biçimlendirir.
 
@@ -312,11 +313,11 @@ Biçim bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her üye işlevi, *FMT*biçimindeki denetimin altında biçimli metin üretir. İlk üye işlevi, biçimli metni *bağımsız değişkeni tarafından* tanımlanan diziye yazar *ve döndürür.* İkinci üye işlevi, biçimli metnin bir kopyasını tutan bir String nesnesi döndürür.
+Her üye işlevi, *FMT* biçimindeki denetimin altında biçimli metin üretir. İlk üye işlevi, biçimli metni *bağımsız değişkeni tarafından* tanımlanan diziye yazar *ve döndürür.* İkinci üye işlevi, biçimli metnin bir kopyasını tutan bir String nesnesi döndürür.
 
 Biçimli metin oluşturmak için. biçim dizesindeki değişmez metin genellikle hedef diziye kopyalanır. Biçim dizesindeki her çıkış dizisi temsil ettiği metin tarafından değiştirilir. Kopyalama ve değiştirmeyle ilgili ayrıntılar işleve geçirilen biçim bayrakları tarafından denetlenir.
 
-## <a name="match_resultsget_allocator"></a><a name="get_allocator"></a>match_results:: get_allocator
+## <a name="match_resultsget_allocator"></a><a name="get_allocator"></a> match_results:: get_allocator
 
 Depolanan ayırıcıyı döndürür.
 
@@ -328,7 +329,7 @@ allocator_type get_allocator() const;
 
 Üye işlevi, nesnelerini ayırmak için tarafından kullanılan ayırıcı nesnesinin bir kopyasını döndürür **`*this`** `sub_match` .
 
-## <a name="match_resultsiterator"></a><a name="iterator"></a>match_results:: Yineleyici
+## <a name="match_resultsiterator"></a><a name="iterator"></a> match_results:: Yineleyici
 
 Alt eşleşmeler için Yineleyici türü.
 
@@ -340,7 +341,7 @@ typedef const_iterator iterator;
 
 Türü, denetimli sıra için rastgele erişim Yineleyici işlevi görebilecek bir nesneyi tanımlar.
 
-## <a name="match_resultslength"></a><a name="length"></a>match_results:: length
+## <a name="match_resultslength"></a><a name="length"></a> match_results:: length
 
 Alt eşleşme uzunluğunu döndürür.
 
@@ -357,7 +358,7 @@ Alt eşleşmenin dizini.
 
 Üye işlevi döndürür `(*this)[sub].length()` .
 
-## <a name="match_resultsmatch_results"></a><a name="match_results"></a>match_results:: match_results
+## <a name="match_resultsmatch_results"></a><a name="match_results"></a> match_results:: match_results
 
 Nesnesini oluşturur.
 
@@ -377,9 +378,9 @@ Kopyalanacak match_results nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, `match_results` alt eşleşme içermeyen bir nesne oluşturur. İkinci Oluşturucu, `match_results` *sağ*kopyası olan bir nesne oluşturur.
+İlk Oluşturucu, `match_results` alt eşleşme içermeyen bir nesne oluşturur. İkinci Oluşturucu, `match_results` *sağ* kopyası olan bir nesne oluşturur.
 
-## <a name="match_resultsmax_size"></a><a name="max_size"></a>match_results:: max_size
+## <a name="match_resultsmax_size"></a><a name="max_size"></a> match_results:: max_size
 
 En fazla sayıda alt eşleşme alır.
 
@@ -391,7 +392,7 @@ size_type max_size() const;
 
 Üye işlevi, nesnenin denetleyecan en uzun sırasının uzunluğunu döndürür.
 
-## <a name="match_resultsoperator"></a><a name="op_eq"></a>match_results:: operator =
+## <a name="match_resultsoperator"></a><a name="op_eq"></a> match_results:: operator =
 
 Match_results nesnesini kopyalayın.
 
@@ -406,9 +407,9 @@ Kopyalanacak match_results nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Member işleci, tarafından denetlenen sıranın, **`*this`** *sağdan*denetlenen sıranın bir kopyasıyla yerini alır.
+Member işleci, tarafından denetlenen sıranın, **`*this`** *sağdan* denetlenen sıranın bir kopyasıyla yerini alır.
 
-## <a name="match_resultsoperator"></a><a name="op_at"></a>match_results:: operator []
+## <a name="match_resultsoperator"></a><a name="op_at"></a> match_results:: operator []
 
 Bir alt nesneye erişin.
 
@@ -425,7 +426,7 @@ Alt eşleşmenin dizini.
 
 Üye işlevi denetlenen sıranın *n* öğesine bir başvuru ya da `sub_match` `size() <= n` yakalama grubu *n* , eşleşmenin bir parçası değilse boş bir nesneye bir başvuru döndürür.
 
-## <a name="match_resultsposition"></a><a name="position"></a>match_results::p onumu
+## <a name="match_resultsposition"></a><a name="position"></a> match_results::p onumu
 
 Bir alt grubun başlangıç sapmasını alın.
 
@@ -442,7 +443,7 @@ Alt eşleşmenin dizini.
 
 Üye işlevi `std::distance(prefix().first, (*this)[sub].first)` , diğer bir deyişle, hedef dizideki ilk karakterden, denetimli sıranın öğesine göre işaret edilen alt eşleşenlerin ilk karakterine olan uzaklığı döndürür `n` .
 
-## <a name="match_resultsprefix"></a><a name="prefix"></a>match_results::p yeniden düzeltir
+## <a name="match_resultsprefix"></a><a name="prefix"></a> match_results::p yeniden düzeltir
 
 İlk alt eşleşmeden önce sırayı alır.
 
@@ -454,7 +455,7 @@ const_reference prefix() const;
 
 Üye işlevi, `sub_match<BidIt>` hedef dizinin başlangıcında başlayan ve ' de biten karakter dizisini işaret eden bir öğesine bir başvuru döndürür `(*this)[0].first` , diğer bir deyişle, eşleşen alt dizinin önündeki metni işaret eder.
 
-## <a name="match_resultsreference"></a><a name="reference"></a>match_results:: Reference
+## <a name="match_resultsreference"></a><a name="reference"></a> match_results:: Reference
 
 Öğe başvurusunun türü.
 
@@ -466,7 +467,7 @@ typedef const_reference reference;
 
 Tür için bir eş anlamlı türü `const_reference` .
 
-## <a name="match_resultssize"></a><a name="size"></a>match_results:: size
+## <a name="match_resultssize"></a><a name="size"></a> match_results:: size
 
 Alt eşleşmelerin sayısını sayar.
 
@@ -478,7 +479,7 @@ size_type size() const;
 
 Üye işlevi, arama için kullanılan normal ifadede bulunan yakalama gruplarının sayısından bir daha fazla döndürür veya hiçbir arama yapılmmışsa sıfırdır.
 
-## <a name="match_resultssize_type"></a><a name="size_type"></a>match_results:: size_type
+## <a name="match_resultssize_type"></a><a name="size_type"></a> match_results:: size_type
 
 Alt eşleşme sayısı türü.
 
@@ -490,7 +491,7 @@ typedef typename Alloc::size_type size_type;
 
 Tür için bir eş anlamlı türü `Alloc::size_type` .
 
-## <a name="match_resultsstr"></a><a name="str"></a>match_results:: Str
+## <a name="match_resultsstr"></a><a name="str"></a> match_results:: Str
 
 Bir alt eşleşme döndürür.
 
@@ -507,7 +508,7 @@ Alt eşleşmenin dizini.
 
 Üye işlevi döndürür `string_type((*this)[sub])` .
 
-## <a name="match_resultsstring_type"></a><a name="string_type"></a>match_results:: string_type
+## <a name="match_resultsstring_type"></a><a name="string_type"></a> match_results:: string_type
 
 Bir dizenin türü.
 
@@ -519,7 +520,7 @@ typedef basic_string<char_type> string_type;
 
 Tür için bir eş anlamlı türü `basic_string<char_type>` .
 
-## <a name="match_resultssuffix"></a><a name="suffix"></a>match_results:: suffix
+## <a name="match_resultssuffix"></a><a name="suffix"></a> match_results:: suffix
 
 Son alt eşleşmesinden sonra sırayı alır.
 
@@ -531,7 +532,7 @@ const_reference suffix() const;
 
 Üye işlevi, `sub_match<BidIt>` hedef dizinin sonunda başlayan ve biten karakter dizisine işaret eden bir türü bir başvuru döndürür `(*this)[size() - 1].second` , diğer bir deyişle, eşleşen alt diziyi izleyen metni gösterir.
 
-## <a name="match_resultsswap"></a><a name="swap"></a>match_results:: swap
+## <a name="match_resultsswap"></a><a name="swap"></a> match_results:: swap
 
 İki match_results nesnesini değiştirir.
 
@@ -548,7 +549,7 @@ void swap(const match_results& right) throw();
 
 Üye işlevi, **`*this`** sabit zamanlı ve *sağ* içeriğini değiştirir ve özel durum oluşturmaz.
 
-## <a name="match_resultsvalue_type"></a><a name="value_type"></a>match_results:: value_type
+## <a name="match_resultsvalue_type"></a><a name="value_type"></a> match_results:: value_type
 
 Alt eşleşme türü.
 

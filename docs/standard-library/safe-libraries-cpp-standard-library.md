@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Güvenli Kitaplıklar: C++ standart kitaplığı'
 title: 'Güvenli Kitaplıklar: C++ Standart Kitaplık'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,24 +7,24 @@ helpviewer_keywords:
 - Safe Libraries, C++ Standard Library
 - Safe C++ Standard Library
 ms.assetid: 3993340f-1f29-4d81-b3f5-52a52bc8e148
-ms.openlocfilehash: e352489ca12b5815aab5517defc72571abe177fb
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7027031054bf9ef7c2a157d6162539bc3801dec4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148895"
 ---
 # <a name="safe-libraries-c-standard-library"></a>Güvenli Kitaplıklar: C++ Standart Kitaplık
 
-Standart Kitaplığı dahil olmak üzere Microsoft C++ile birlikte gelen kitaplıklarda, daha güvenli hale getirmek için çeşitli geliştirmeler yapılmıştır. C++
+C++ standart kitaplığı dahil olmak üzere Microsoft C++ ile birlikte gelen kitaplıklarda, daha güvenli hale getirmek için çeşitli geliştirmeler yapılmıştır.
 
-C++ Standart kitaplıktaki çeşitli yöntemler, bir arabellek taşmasına veya diğer kod hatalarına yol açabileceğinden güvenli olmayabilecek olarak tanımlandı. Bu yöntemlerin kullanımı önerilmez ve bunları değiştirmek için yeni, daha güvenli yöntemler oluşturulmuştur. Bu yeni yöntemlerin hepsi `_s`biter.
+C++ standart kitaplığı 'ndaki çeşitli yöntemler, bir arabellek taşmasına veya diğer kod hatalarına yol açabileceğinden güvenli olmayabilecek olarak tanımlandı. Bu yöntemlerin kullanımı önerilmez ve bunları değiştirmek için yeni, daha güvenli yöntemler oluşturulmuştur. Tüm bu yeni yöntemler ile biter `_s` .
 
 Yineleyicilerin ve algoritmaların daha güvenli olması için çeşitli geliştirmeler yapılmıştır. Daha fazla bilgi için bkz. [onay yineleyiciler](../standard-library/checked-iterators.md), [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md) ve [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıdaki tabloda, güvenli olmayabilecek C++ ve daha güvenli eşdeğer olan standart kitaplık yöntemleri listelenmektedir:
+Aşağıdaki tabloda, güvenli olmayabilecek ve daha güvenli eşdeğer olan C++ standart kitaplığı yöntemleri listelenmektedir:
 
 |Güvensiz olabilecek Yöntem|Daha güvenli eşdeğer|
 |-------------------------------|----------------------|
@@ -38,10 +39,10 @@ Yukarıdaki güvensiz olabilecek yöntemlerden birini çağırırsanız veya yin
 
 [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md)
 
-[Denetlenmiş Yineleyiciler](../standard-library/checked-iterators.md)
+[İşaretli yineleyiciler](../standard-library/checked-iterators.md)
 
-[Hata Ayıklama Yineleyici Desteği](../standard-library/debug-iterator-support.md)
+[Hata ayıklama Yineleyici desteği](../standard-library/debug-iterator-support.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)
+[C++ standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)

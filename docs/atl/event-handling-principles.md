@@ -1,5 +1,6 @@
 ---
-title: Olay İşleme İlkeleri (ATL)
+description: 'Daha fazla bilgi edinin: olay Işleme Ilkeleri'
+title: Olay Işleme Ilkeleri (ATL)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - event handling, implementing
@@ -8,40 +9,40 @@ helpviewer_keywords:
 - dual interfaces, event interfaces
 - event handling, dual event interfaces
 ms.assetid: d17ca7cb-54f2-4658-ab8b-b721ac56801d
-ms.openlocfilehash: 2e810853e7c81f279039e0b3dfda5199d38deee2
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 29b9542b4e026d320857990a0ef6253f310535e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147985"
 ---
-# <a name="event-handling-principles"></a>Olay Taşıma İlkeleri
+# <a name="event-handling-principles"></a>Olay Işleme Ilkeleri
 
-Tüm olay işleme için ortak üç adım vardır. Şunları yapmanız gerekir:
+Tüm olay işleme için yaygın olarak kullanılan üç adım vardır. Şunları yapmanız gerekir:
 
-- Nesnenizde olay arabirimini uygulayın.
+- Nesneniz üzerinde olay arabirimini uygulayın.
 
-- Nesnenizin olayları almak istediğini olay kaynağına bildirin.
+- Olay kaynağını, nesnenizin olayları almak istediğini tavsiye edin.
 
-- Nesnenizin artık olayları alması gerekmediğinde olay kaynağına bildirin.
+- Nesnenizin artık olayları alması gerekmiyorsa olay kaynağını geri alın.
 
-Olay arabirimini uygulama şekliniz türüne bağlıdır. Olay arabirimi vtable, çift veya dispinterface olabilir. Bu arabirimi tanımlamak için olay kaynağının tasarımcısı kalmış; bu arayüzü uygulamak size kalmış.
+Olay arabirimini uygulama yöntemi, türüne bağlıdır. Olay Arabirimi vtable, Dual veya bir dispınterface olabilir. Bu, arabirimi tanımlamak için olay kaynağının tasarımcısına kadar olur; Bu arabirim sizin için uygulanır.
 
 > [!NOTE]
-> Olay arabiriminin çift olmamasının teknik bir nedeni olmamasına rağmen, çift kullanımından kaçınmak için bir dizi iyi tasarım nedeni vardır. Ancak, bu olay *kaynağının*tasarımcısı / uygulayıcısı tarafından yapılan bir karardır. Olayın `sink`perspektifinden çalıştığından, çift olay arabirimi uygulamaktan başka seçeneğiniz olmayabilir olasılığına izin verebilirsiniz. Çift arayüzler hakkında daha fazla bilgi [için, Bkz. Çift Arayüzler ve ATL.](../atl/dual-interfaces-and-atl.md)
+> Bir olay arabiriminin çift olamaz gibi bir teknik neden olmasa da, duals kullanmaktan kaçınmak için bazı iyi tasarım nedenleri vardır. Ancak bu, olay *kaynağının* tasarımcı/uygulayıcısı tarafından yapılan bir karardır. Olayın perspektifinden çalıştığınızdan `sink` , herhangi bir seçeneğe sahip olmayabilirsiniz ancak ikili bir olay arabirimini uygulamak için izin vermeniz gerekir. Çift arabirimler hakkında daha fazla bilgi için bkz. [Dual Interfaces and ATL](../atl/dual-interfaces-and-atl.md).
 
-Olay kaynağının tavsiye edilmesi üç adıma ayrılabilir:
+Olay kaynağının önerisi üç adımdan ayrılabilir:
 
-- [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer)için kaynak nesneyi sorgulayın.
+- [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer)için kaynak nesnesini sorgulayın.
 
-- [IConnectionPointContainer'ı arayın::Sizi](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) ilgilendiren olay arabiriminin IID'sini geçen FindConnectionPoint. Başarılı olursa, bu bir bağlantı noktası nesnesi üzerinde [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) arabirimi döndürecek.
+- Sizi ilgilendiren olay arabiriminin IID 'sini geçirerek [ınewctionpointcontainer:: FindConnectionPoint](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) çağırın. Bu işlem başarılı olursa, bir bağlantı noktası nesnesine [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) arabirimini döndürür.
 
-- [Çağrı IConnectionPoint::Olay](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) `IUnknown` lavabo geçen tavsiye. Başarılı olursa, bu `DWORD` bağlantıyı temsil eden bir çerez döndürecek.
+- Olay havuzunu geçirerek [ınewctionpoint:: Advise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-advise) öğesini çağırın `IUnknown` . Bu işlem başarılı olursa, `DWORD` bağlantıyı temsil eden bir tanımlama bilgisi döndürür.
 
-Olayları alma konusundaki ilginizi başarıyla kaydettirdikten sonra, nesnenizin olay arabirimindeki yöntemler kaynak nesne tarafından çalıştırılan olaylara göre çağrılacaktır. Artık etkinlik almanıza gerek kalmadığında, tanımlama bilgisini IConnectionPoint üzerinden bağlantı noktasına geri [geçirebilirsiniz::Unadvise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-unadvise). Bu, kaynak ve lavabo arasındaki bağlantıyı koparacaktır.
+Olayları alma hakkında sizi başarıyla kaydettikten sonra, nesnenizin olay arabirimindeki Yöntemler, kaynak nesne tarafından tetiklenen olaylara göre çağrılır. Artık olay almanız gerekmiyorsa, bu tanımlama bilgisini [IConnectionPoint:: Unadvise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-unadvise)aracılığıyla bağlantı noktasına geri geçirebilirsiniz. Bu, kaynak ve havuz arasındaki bağlantıyı keser.
 
-Olayları işlerken başvuru döngülerinden kaçınmaya dikkat edin.
+Olayları işlerken başvuru döngülerinden kaçınmak için dikkatli olun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Olay Yönetimi](../atl/event-handling-and-atl.md)
+[Olay Işleme](../atl/event-handling-and-atl.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: max_fixed_size sınıfı'
 title: max_fixed_size Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - stdext::max_fixed_size [C++], released
 - stdext::max_fixed_size [C++], saved
 ms.assetid: 8c8f4588-37e9-4579-8168-ba3553800914
-ms.openlocfilehash: e62884c83d71b4e9f1902fa4bc7f52f5e0a4e0ee
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 3238013547078640af42914fa21dddec622a9973
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561693"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149285"
 ---
 # <a name="max_fixed_size-class"></a>max_fixed_size Sınıfı
 
 [Freelist](../standard-library/freelist-class.md) nesnesini sabit maksimum uzunlukla sınırlayan bir [Max Class](../standard-library/allocators-header.md) nesnesi tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <std::size_t Max>

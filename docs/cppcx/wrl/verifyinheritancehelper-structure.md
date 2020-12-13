@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: VerifyInheritanceHelper yapısı'
 title: VerifyInheritanceHelper Yapısı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::VerifyInheritanceHelper structure
 - Microsoft::WRL::Details::VerifyInheritanceHelper::Verify method
 ms.assetid: 8a48a702-0f71-4807-935b-8311f0a7a8b6
-ms.openlocfilehash: 3650cfb70ffc12572b3965534eff4e1f2ecb2cf5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 672455482a2d21cb695124cad31740b6325c377d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374227"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135050"
 ---
 # <a name="verifyinheritancehelper-structure"></a>VerifyInheritanceHelper Yapısı
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,7 +33,7 @@ struct VerifyInheritanceHelper<I, Nil>;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ⅰ*<br/>
+*Kaydedemiyorum*<br/>
 Bir tür.
 
 *Temel*<br/>
@@ -40,15 +41,15 @@ Başka bir tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir arabirimin başka bir arabirimden türetilip türetilenin test edilir.
+Bir arabirimin başka bir arabirimden türetilip türetilmediğini sınar.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                                       | Açıklama
+Ad                                       | Açıklama
 ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------
-[VerifyInheritanceHelper::Doğrula](#verify) | Geçerli şablon parametreleri tarafından belirtilen iki arabirimi sınar ve bir arabirimin diğerinden türetilip türetilip türetilemeyeceğini belirler.
+[VerifyInheritanceHelper:: Verify](#verify) | Geçerli şablon parametreleri tarafından belirtilen iki arabirimi sınar ve bir arabirimin diğerine mi türetilemeyeceğini belirler.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -56,13 +57,13 @@ Adı                                       | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** implements.h
+**Üst bilgi:** uygular. h
 
-**Ad alanı:** Microsoft::WRL::D etails
+**Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="verifyinheritancehelperverify"></a><a name="verify"></a>VerifyInheritanceHelper::Doğrula
+## <a name="verifyinheritancehelperverify"></a><a name="verify"></a> VerifyInheritanceHelper:: Verify
 
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılması amaçlanmamıştır.
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 ```cpp
 static void Verify();
@@ -70,6 +71,6 @@ static void Verify();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçerli şablon parametreleri tarafından belirtilen iki arabirimi sınar ve bir arabirimin diğerinden türetilip türetilip türetilemeyeceğini belirler.
+Geçerli şablon parametreleri tarafından belirtilen iki arabirimi sınar ve bir arabirimin diğerine mi türetilemeyeceğini belirler.
 
-Bir arabirim diğerinden türetilmiş değilse bir hata yayımlanır.
+Bir arabirim diğerine türetilmediği takdirde bir hata yayınlanır.

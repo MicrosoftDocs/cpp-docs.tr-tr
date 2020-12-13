@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAtlException Sınıfı'
 title: CAtlException Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlException class
 ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
-ms.openlocfilehash: f09d9b2f46233cf356f5ade8a5b90e08a213d276
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: b6d788bc8d852fa0b8d091682ff7740aa4ebbbed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168208"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147478"
 ---
 # <a name="catlexception-class"></a>CAtlException Sınıfı
 
 Bu sınıf, ATL özel durumunu tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CAtlException
@@ -30,33 +31,33 @@ class CAtlException
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlException:: CAtlException](#catlexception)|Oluşturucu.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlException:: operator HRESULT](#operator_hresult)|Geçerli nesneyi bir HRESULT değerine yayınlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlException:: m_hr](#m_hr)|Nesne tarafından oluşturulan ve hata koşulunu depolamak için kullanılan HRESULT türündeki değişken.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `CAtlException` nesne, ATL işlemiyle ilgili bir özel durum koşulunu temsil eder. `CAtlException` Sınıfı, özel durumun nedenini belirten bir genel veri üyesini ve özel durumu HRESULT gibi değerlendirmesine izin veren bir atama işlecini içerir.
+Bir `CAtlException` nesne, ATL işlemiyle ilgili bir özel durum koşulunu temsil eder. `CAtlException`Sınıfı, özel durumun nedenini belirten bir genel veri üyesini ve özel durumu HRESULT gibi değerlendirmesine izin veren bir atama işlecini içerir.
 
-Genel olarak, doğrudan bir `AtlThrow` `CAtlException` nesne oluşturmak yerine çağıracaksınız.
+Genel olarak, `AtlThrow` doğrudan bir nesne oluşturmak yerine çağıracaksınız `CAtlException` .
 
 ## <a name="requirements"></a>Gereksinimler
 
 **Üstbilgi:** atlexcept. h
 
-## <a name="catlexceptioncatlexception"></a><a name="catlexception"></a>CAtlException:: CAtlException
+## <a name="catlexceptioncatlexception"></a><a name="catlexception"></a> CAtlException:: CAtlException
 
 Oluşturucu.
 
@@ -67,10 +68,10 @@ CAtlException() throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*HR*<br/>
+*sa*<br/>
 HRESULT hata kodu.
 
-## <a name="catlexceptionoperator-hresult"></a><a name="operator_hresult"></a>CAtlException:: operator HRESULT
+## <a name="catlexceptionoperator-hresult"></a><a name="operator_hresult"></a> CAtlException:: operator HRESULT
 
 Geçerli nesneyi bir HRESULT değerine yayınlar.
 
@@ -78,7 +79,7 @@ Geçerli nesneyi bir HRESULT değerine yayınlar.
 operator HRESULT() const throw ();
 ```
 
-## <a name="catlexceptionm_hr"></a><a name="m_hr"></a>CAtlException:: m_hr
+## <a name="catlexceptionm_hr"></a><a name="m_hr"></a> CAtlException:: m_hr
 
 HRESULT veri üyesi.
 

@@ -1,5 +1,6 @@
 ---
-title: CAutoRevertImpersonation Sınıfı
+description: 'Daha fazla bilgi edinin: CAutoRevertImpersonation Class'
+title: CAutoRevertImpersonation sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAutoRevertImpersonation
@@ -11,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoRevertImpersonation class
 ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838
-ms.openlocfilehash: ea119436fd36d0814c05f1b48380028ad3f63f0c
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 48009a4d146866d36eebc75ada8f9ae12058287a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81748245"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147088"
 ---
-# <a name="cautorevertimpersonation-class"></a>CAutoRevertImpersonation Sınıfı
+# <a name="cautorevertimpersonation-class"></a>CAutoRevertImpersonation sınıfı
 
-Bu sınıf, [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnelerini kapsam dışına çıktığında taklit etmeyen bir duruma geri döner.
+Bu sınıf, kapsam dışına geçtiğinde [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnelerini taklit olmayan bir duruma döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CAutoRevertImpersonation
@@ -32,34 +33,34 @@ class CAutoRevertImpersonation
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAutoRevertTaklit::CAutoRevertTaklit](#cautorevertimpersonation)|Nesne `CAutoRevertImpersonation` yi inşa eder|
-|[CAutoRevertTaklit::~CAutoRevertTaklit](#dtor)|Nesneyi yok eder ve erişim token kimliğe bürünme geri.|
+|[CAutoRevertImpersonation:: CAutoRevertImpersonation](#cautorevertimpersonation)|Bir `CAutoRevertImpersonation` nesne oluşturur|
+|[CAutoRevertImpersonation:: ~ CAutoRevertImpersonation](#dtor)|Nesneyi yok eder ve erişim belirteci kimliğe bürünme işlemini geri alır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAutoRevertTaklit::Ekle](#attach)|Erişim belirtecinin kimliğe bürünme yeniden sürümünü otomatikleştirir.|
-|[CAutoRevertTaklit::Detach](#detach)|Otomatik kimliğe bürünme yeniden sürümünü iptal eder.|
-|[CAutoRevertImpersonation::GetAccessToken](#getaccesstoken)|Bu nesneyle ilişkili erişim belirteç akımını alır.|
+|[CAutoRevertImpersonation:: Attach](#attach)|Bir erişim belirtecinin kimliğe bürünme yeniden sürümünü otomatikleştirir.|
+|[CAutoRevertImpersonation::D etach](#detach)|Otomatik kimliğe bürünme yeniden sürümünü iptal eder.|
+|[CAutoRevertImpersonation:: GetAccessToken](#getaccesstoken)|Bu nesneyle ilişkili geçerli erişim belirtecini alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-[Erişim belirteci,](/windows/win32/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve windows nt veya Windows 2000 sistemine oturum açmış her kullanıcıya ayrılan bir nesnedir. Bu erişim belirteçleri `CAccessToken` sınıfla birlikte temsil edilebilir.
+[Erişim belirteci](/windows/win32/SecAuthZ/access-tokens) bir işlemin veya iş parçacığının güvenlik bağlamını açıklayan ve BIR Windows NT veya Windows 2000 sisteminde oturum açan her kullanıcıya ayrılan bir nesnedir. Bu erişim belirteçleri sınıfıyla temsil edilebilir `CAccessToken` .
 
-Bazen erişim belirteçleri taklit etmek gereklidir. Bu sınıf kolaylık sağlamak amacıyla sağlanır, ancak erişim belirteçleri kimliğe bürünme gerçekleştirmez; yalnızca kimliğim taklidi olmayan bir duruma otomatik reversion gerçekleştirir. Bunun nedeni, belirteç erişim kimliğe bürünme birkaç farklı şekilde gerçekleştirilebilir olmasıdır.
+Bazen erişim belirteçlerinin taklit olması gerekir. Bu sınıf kolaylık olarak sunulmaktadır, ancak erişim belirteçleri kişiliğe bürünme işlemini gerçekleştirmez; yalnızca otomatik yeniden sürümü kimliğine bürünülmüş bir duruma getirir. Bunun nedeni, belirteç erişiminin kimliğe bürünme özelliğinin birçok farklı şekilde gerçekleştirilebilmesinden kaynaklanır.
 
-Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Denetimi'ne](/windows/win32/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsecurity.h
+**Üstbilgi:** atlsecurity. h
 
-## <a name="cautorevertimpersonationattach"></a><a name="attach"></a>CAutoRevertTaklit::Ekle
+## <a name="cautorevertimpersonationattach"></a><a name="attach"></a> CAutoRevertImpersonation:: Attach
 
-Erişim belirtecinin kimliğe bürünme yeniden sürümünü otomatikleştirir.
+Bir erişim belirtecinin kimliğe bürünme yeniden sürümünü otomatikleştirir.
 
 ```cpp
 void Attach(const CAccessToken* pAT) throw();
@@ -67,16 +68,16 @@ void Attach(const CAccessToken* pAT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pAT*<br/>
-[CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesinin adresi otomatik olarak döndürülecek
+*Başak*<br/>
+Otomatik olarak geri döndürülecek [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesinin adresi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem yalnızca [CAutoRevertImpersonation](../../atl/reference/cautorevertimpersonation-class.md) nesnesi NULL `CAccessToken` işaretçisi ile oluşturulduğunda veya [Ayırma](#detach) daha önce çağrıldıysa kullanılmalıdır. Basit durumlarda, bu yöntemi kullanmak gerekli değildir.
+Bu yöntem yalnızca, [CAutoRevertImpersonation](../../atl/reference/cautorevertimpersonation-class.md) nesnesi null `CAccessToken` işaretçiyle oluşturulduysa veya [ayırma](#detach) daha önce çağrılırsa kullanılmalıdır. Basit durumlarda, bu yöntemin kullanılması gerekli değildir.
 
-## <a name="cautorevertimpersonationcautorevertimpersonation"></a><a name="cautorevertimpersonation"></a>CAutoRevertTaklit::CAutoRevertTaklit
+## <a name="cautorevertimpersonationcautorevertimpersonation"></a><a name="cautorevertimpersonation"></a> CAutoRevertImpersonation:: CAutoRevertImpersonation
 
-Bir `CAutoRevertImpersonation` nesne inşa eder.
+Bir `CAutoRevertImpersonation` nesnesi oluşturur.
 
 ```
 CAutoRevertImpersonation(const CAccessToken* pAT) throw();
@@ -84,16 +85,16 @@ CAutoRevertImpersonation(const CAccessToken* pAT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pAT*<br/>
-[CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesinin adresi otomatik olarak döndürülecek.
+*Başak*<br/>
+Otomatik olarak geri döndürülecek [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesinin adresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Erişim belirteci gerçek kimliğe bürünme ayrı ve tercihen bir `CAutoRevertImpersonation` nesnenin oluşturulmasından önce gerçekleştirilmelidir. `CAutoRevertImpersonation` Nesne kapsam dışına çıktığında bu kimliğe bürünme otomatik olarak geri döndürülecektir.
+Erişim belirtecinin gerçek kimliğe bürünme işleminden ayrı olarak ve tercihen bir nesne oluşturmadan önce gerçekleştirilmelidir `CAutoRevertImpersonation` . Nesne kapsam dışına geçtiğinde bu kimliğe bürünme otomatik olarak geri döndürülür `CAutoRevertImpersonation` .
 
-## <a name="cautorevertimpersonationcautorevertimpersonation"></a><a name="dtor"></a>CAutoRevertTaklit::~CAutoRevertTaklit
+## <a name="cautorevertimpersonationcautorevertimpersonation"></a><a name="dtor"></a> CAutoRevertImpersonation:: ~ CAutoRevertImpersonation
 
-Nesneyi yok eder ve erişim token kimliğe bürünme geri.
+Nesneyi yok eder ve erişim belirteci kimliğe bürünme işlemini geri alır.
 
 ```
 ~CAutoRevertImpersonation() throw();
@@ -101,9 +102,9 @@ Nesneyi yok eder ve erişim token kimliğe bürünme geri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İnşaatta veya [Ekle](#attach) yöntemi yle sağlanan [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesi için şu anda geçerli olan herhangi bir kimliğe bürünme geri döner. Hayır `CAccessToken` ilişkili ise, yıkıcı hiçbir etkisi yoktur.
+Oluşturma sırasında veya [Attach](#attach) yöntemi aracılığıyla belirtilen [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesi için geçerli olarak kimliğe bürünme işlemini geri döndürür. Hayır `CAccessToken` ilişkili değilse, yok edicinin hiçbir etkisi yoktur.
 
-## <a name="cautorevertimpersonationdetach"></a><a name="detach"></a>CAutoRevertTaklit::Detach
+## <a name="cautorevertimpersonationdetach"></a><a name="detach"></a> CAutoRevertImpersonation::D etach
 
 Otomatik kimliğe bürünme yeniden sürümünü iptal eder.
 
@@ -113,15 +114,15 @@ const CAccessToken* Detach() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce ilişkili [CAccessToken](../../atl/reference/caccesstoken-class.md)adresi , veya NULL eğer hiçbir ilişkilendirme var.
+Daha önce ilişkili [CAccessToken](../../atl/reference/caccesstoken-class.md)adresi veya ILIŞKILENDIRME yoksa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Detach'ı** çağırmak, nesnenin `CAutoRevertImpersonation` bu nesneyle ilişkili [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesi için şu anda geçerli olan herhangi bir kimliğe bürünme sini geri almamasını engeller. `CAutoRevertImpersonation`daha sonra hiçbir etkisi olmadan yok edilebilir veya `CAccessToken` [ekle](#attach)kullanarak aynı veya başka bir nesne ile yeniden ilişkilendirilebilir.
+**Ayırma** çağrısı, `CAutoRevertImpersonation` nesnenin bu nesneyle Ilişkili [CAccessToken](../../atl/reference/caccesstoken-class.md) nesnesi için şu anda etkin olan kimliğe bürünme işlemini geri almasını engeller. `CAutoRevertImpersonation`daha sonra, herhangi bir etkisi olmadan veya Iliştirme kullanılarak aynı ya da başka bir nesneyle yeniden ilişkilendirilmeden yok edilebilir `CAccessToken` . [](#attach)
 
-## <a name="cautorevertimpersonationgetaccesstoken"></a><a name="getaccesstoken"></a>CAutoRevertImpersonation::GetAccessToken
+## <a name="cautorevertimpersonationgetaccesstoken"></a><a name="getaccesstoken"></a> CAutoRevertImpersonation:: GetAccessToken
 
-Bu nesneyle ilişkili erişim belirteç akımını alır.
+Bu nesneyle ilişkili geçerli erişim belirtecini alır.
 
 ```
 const CAccessToken* GetAccessToken() throw();
@@ -129,14 +130,14 @@ const CAccessToken* GetAccessToken() throw();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Daha önce ilişkili [CAccessToken](../../atl/reference/caccesstoken-class.md)adresi , veya NULL eğer hiçbir ilişkilendirme var.
+Daha önce ilişkili [CAccessToken](../../atl/reference/caccesstoken-class.md)adresi veya ILIŞKILENDIRME yoksa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, `CAccessToken` nesnenin bir kimliğe bürünme reversion içeren amaçlar için çağrılırsa, Bunun yerine [Detach](#detach) yöntemi kullanılmalıdır.
+Bu yöntem, nesnenin kimliğe bürünme özelliğinin yeniden sürümünü içeren amaçlarla çağrılırsa `CAccessToken` , bunun yerine [Detach](#detach) yöntemi kullanılmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATLSecurity Örneği](../../overview/visual-cpp-samples.md)<br/>
-[Erişim Belirteçleri](/windows/win32/SecAuthZ/access-tokens)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[ATLSecurity örneği](../../overview/visual-cpp-samples.md)<br/>
+[Erişim belirteçleri](/windows/win32/SecAuthZ/access-tokens)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

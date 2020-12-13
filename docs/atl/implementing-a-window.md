@@ -1,29 +1,30 @@
 ---
-title: Pencere (ATL) uygulama
+description: 'Daha fazla bilgi edinin: pencere uygulama'
+title: Pencere uygulama (ATL)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, windows
 - CWindowImpl class, using
 - windows [C++], implementing in ATL
 ms.assetid: eb1ce8d6-72f9-4894-aae7-e60a61665628
-ms.openlocfilehash: 0572e3b65b2d249c569a119a7f260395d91373cd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0f8dd9b9a172d1497256a8ddda19df40eeed207
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147790"
 ---
 # <a name="implementing-a-window"></a>Pencere uygulama
 
-Sınıf [Cwindowımpl](../atl/reference/cwindowimpl-class.md) pencere uygulamak ve kendi iletileri işleyen olanak tanır. ATL içinde teslim etme iletisi, ileti eşlemesi üzerinde temel alır. Bu bölümde açıklanmaktadır:
+[CWindowImpl](../atl/reference/cwindowimpl-class.md) sınıfı, bir pencere uygulamanıza ve iletilerini işleetmenize olanak tanır. ATL 'de ileti teslim etme bir ileti eşlemesine dayalıdır. Bu bölümde şunları açıklanmaktadır:
 
-- Nasıl yapılır [ileti işleyicisi ekleme](../atl/adding-an-atl-message-handler.md) bir denetime.
+- Bir denetime [ileti işleyicisi ekleme](../atl/adding-an-atl-message-handler.md) .
 
-- Hangi [ileti eşlemeleri](../atl/message-maps-atl.md) olan ve bunların nasıl kullanıldığı.
+- Hangi [ileti haritaları](../atl/message-maps-atl.md) ve bunların nasıl kullanılacağı.
 
-- Sözdizimi [ileti işleyici işlevlerini](../atl/message-handler-functions.md).
+- [İleti işleyici işlevleri](../atl/message-handler-functions.md)için sözdizimi.
 
-- Nasıl yapılır [Cwindowımpl ile pencere uygulama](../atl/implementing-a-window-with-cwindowimpl.md).
+- [CWindowImpl ile bir pencere uygulama](../atl/implementing-a-window-with-cwindowimpl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

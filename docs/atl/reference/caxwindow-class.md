@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAxWindow sınıfı'
 title: CAxWindow sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-ms.openlocfilehash: b74ecb9af2decf92f873cef8d016907b6c9474cf
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 0b1cdabbce4fd6a36f6f3e9fb15b3f28249065c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353083"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146997"
 ---
 # <a name="caxwindow-class"></a>CAxWindow sınıfı
 
@@ -160,7 +161,7 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin ikinci sürümü kullanılırsa, bir HTML denetimi oluşturulur ve *Dwrestıd*tarafından tanımlanan kaynağa bağlanır.
+Bu yöntemin ikinci sürümü kullanılırsa, bir HTML denetimi oluşturulur ve *Dwrestıd* tarafından tanımlanan kaynağa bağlanır.
 
 Bu yöntem, arama ile aynı sonucu verir:
 
@@ -225,7 +226,7 @@ dışı Denetimin konumunu alacak bir işaretçinin adresi `IUnknown` . NULL ola
 'ndaki Kapsanan nesnedeki bir giden arabirimin arabirim tanımlayıcısı. IID_NULL olabilir.
 
 *punkSink*<br/>
-'ndaki `IUnknown` *Iıdsink*tarafından belirtilen kapsanan nesnedeki bağlantı noktasına bağlanacak havuz nesnesinin arabirimine yönelik bir işaretçi.
+'ndaki `IUnknown` *Iıdsink* tarafından belirtilen kapsanan nesnedeki bağlantı noktasına bağlanacak havuz nesnesinin arabirimine yönelik bir işaretçi.
 
 *Dwresd*<br/>
 'ndaki Bir HTML kaynağının kaynak KIMLIĞI. WebBrowser denetimi oluşturulacak ve belirtilen kaynakla yüklenecek.

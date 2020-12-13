@@ -1,5 +1,6 @@
 ---
-title: CHwndRenderTarget Sınıfı
+description: 'Daha fazla bilgi edinin: CHwndRenderTarget sınıfı'
+title: CHwndRenderTarget sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CHwndRenderTarget
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - CHwndRenderTarget [MFC], Resize
 - CHwndRenderTarget [MFC], m_pHwndRenderTarget
 ms.assetid: aa65b69f-7202-46ea-af81-ef325da0b840
-ms.openlocfilehash: d1669d89183cd971e1afe0f05a1bad040f6b07df
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 3a3058105fff5e5ac304f2cc980cd93f2bac70a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752706"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143643"
 ---
-# <a name="chwndrendertarget-class"></a>CHwndRenderTarget Sınıfı
+# <a name="chwndrendertarget-class"></a>CHwndRenderTarget sınıfı
 
-ID2D1HwndRenderTarget için bir sarmalayıcı.
+ID2D1HwndRenderTarget için sarmalayıcı.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CHwndRenderTarget : public CRenderTarget;
@@ -47,50 +48,50 @@ class CHwndRenderTarget : public CRenderTarget;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CHwndRenderHedef::CHwndRenderHedef](#chwndrendertarget)|HWND bir CHwndRenderTarget nesnesi oluşturmaz.|
+|[CHwndRenderTarget:: CHwndRenderTarget](#chwndrendertarget)|HWND 'den bir CHwndRenderTarget nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CHwndRenderTarget::Ekle](#attach)|Nesneye varolan render hedef arabirimi ataşır|
-|[CHwndRenderTarget::CheckWindowState](#checkwindowstate)|Bu işleme hedefiyle ilişkili HWND'nin tıkanıp tıkanmadığını gösterir.|
-|[CHwndRenderTarget::Oluştur](#create)|Pencereyle ilişkili bir render hedefi oluşturur|
-|[CHwndRenderHedef::Detach](#detach)|Ayırıcılar hedef arabirimi nesneden işleme|
-|[CHwndRenderHedef::GetHwnd](#gethwnd)|Bu işleme hedefiyle ilişkili HWND'yi döndürür.|
-|[CHwndRenderTarget::GetHwndRenderTarget](#gethwndrendertarget)|ID2D1HwndRenderTarget arabirimini döndürür.|
-|[CHwndRenderTarget::Yeniden Oluşturma](#recreate)|Pencereyle ilişkili bir render hedefini yeniden oluşturur|
-|[CHwndRenderTarget::Yeniden boyutlandırma](#resize)|Render hedefinin boyutunu belirtilen piksel boyutuyla değiştirir|
+|[CHwndRenderTarget:: Attach](#attach)|Mevcut işleme hedefi arabirimini nesneye iliştirir|
+|[CHwndRenderTarget:: CheckWindowState](#checkwindowstate)|Bu işleme hedefi ile ilişkilendirilen HWND 'in, occluded olup olmadığını gösterir.|
+|[CHwndRenderTarget:: oluştur](#create)|Pencereyle ilişkili bir işleme hedefi oluşturur|
+|[CHwndRenderTarget::D etach](#detach)|Nesneden işleme hedefi arabirimini ayırır|
+|[CHwndRenderTarget:: GetHwnd](#gethwnd)|Bu işleme hedefi ile ilişkili HWND 'yi döndürür.|
+|[CHwndRenderTarget:: GetHwndRenderTarget](#gethwndrendertarget)|ID2D1HwndRenderTarget arabirimini döndürür.|
+|[CHwndRenderTarget:: yeniden oluştur](#recreate)|Pencereyle ilişkili bir işleme hedefini yeniden oluşturur|
+|[CHwndRenderTarget:: yeniden boyutlandır](#resize)|Oluşturma hedefinin boyutunu belirtilen piksel boyutuna dönüştürür|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CHwndRenderTarget::operatör ID2D1HwndRenderTarget*](#operator_id2d1hwndrendertarget_star)|ID2D1HwndRenderTarget arabirimini döndürür.|
+|[CHwndRenderTarget:: operator ID2D1HwndRenderTarget *](#operator_id2d1hwndrendertarget_star)|ID2D1HwndRenderTarget arabirimini döndürür.|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CHwndRenderTarget::m_pHwndRenderTarget](#m_phwndrendertarget)|ID2D1HwndRenderTarget nesnesine işaretçi.|
+|[CHwndRenderTarget:: m_pHwndRenderTarget](#m_phwndrendertarget)|ID2D1HwndRenderTarget nesnesine yönelik bir işaretçi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CRenderTarget](../../mfc/reference/crendertarget-class.md)
 
-[CHwndRenderHedef](../../mfc/reference/chwndrendertarget-class.md)
+[CHwndRenderTarget](../../mfc/reference/chwndrendertarget-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget. h
 
-## <a name="chwndrendertargetattach"></a><a name="attach"></a>CHwndRenderTarget::Ekle
+## <a name="chwndrendertargetattach"></a><a name="attach"></a> CHwndRenderTarget:: Attach
 
-Nesneye varolan render hedef arabirimi ataşır
+Mevcut işleme hedefi arabirimini nesneye iliştirir
 
 ```cpp
 void Attach(ID2D1HwndRenderTarget* pTarget);
@@ -99,11 +100,11 @@ void Attach(ID2D1HwndRenderTarget* pTarget);
 ### <a name="parameters"></a>Parametreler
 
 *pTarget*<br/>
-Varolan render hedef arabirimi. NULL olamaz
+Mevcut işleme hedefi arabirimi. NULL olamaz
 
-## <a name="chwndrendertargetcheckwindowstate"></a><a name="checkwindowstate"></a>CHwndRenderTarget::CheckWindowState
+## <a name="chwndrendertargetcheckwindowstate"></a><a name="checkwindowstate"></a> CHwndRenderTarget:: CheckWindowState
 
-Bu işleme hedefiyle ilişkili HWND'nin tıkanıp tıkanmadığını gösterir.
+Bu işleme hedefi ile ilişkilendirilen HWND 'in, occluded olup olmadığını gösterir.
 
 ```
 D2D1_WINDOW_STATE CheckWindowState() const;
@@ -111,11 +112,11 @@ D2D1_WINDOW_STATE CheckWindowState() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu işleme hedefiyle ilişkili HWND'nin tıkanıp tıkanmadığını gösteren bir değer.
+Bu işleme hedefi ile ilişkilendirilen HWND 'in, occluded olup olmadığını gösteren bir değer.
 
-## <a name="chwndrendertargetchwndrendertarget"></a><a name="chwndrendertarget"></a>CHwndRenderHedef::CHwndRenderHedef
+## <a name="chwndrendertargetchwndrendertarget"></a><a name="chwndrendertarget"></a> CHwndRenderTarget:: CHwndRenderTarget
 
-HWND bir CHwndRenderTarget nesnesi oluşturmaz.
+HWND 'den bir CHwndRenderTarget nesnesi oluşturur.
 
 ```
 CHwndRenderTarget(HWND hwnd = NULL);
@@ -123,12 +124,12 @@ CHwndRenderTarget(HWND hwnd = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hwnd*<br/>
-Bu render hedefi ile ilişkili HWND
+*lendiği*<br/>
+Bu işleme hedefi ile ilişkilendirilen HWND
 
-## <a name="chwndrendertargetcreate"></a><a name="create"></a>CHwndRenderTarget::Oluştur
+## <a name="chwndrendertargetcreate"></a><a name="create"></a> CHwndRenderTarget:: oluştur
 
-Pencereyle ilişkili bir render hedefi oluşturur
+Pencereyle ilişkili bir işleme hedefi oluşturur
 
 ```
 BOOL Create(HWND hWnd);
@@ -136,16 +137,16 @@ BOOL Create(HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hwnd*<br/>
-Bu render hedefi ile ilişkili HWND
+*lendiği*<br/>
+Bu işleme hedefi ile ilişkilendirilen HWND
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür
 
-## <a name="chwndrendertargetdetach"></a><a name="detach"></a>CHwndRenderHedef::Detach
+## <a name="chwndrendertargetdetach"></a><a name="detach"></a> CHwndRenderTarget::D etach
 
-Ayırıcılar hedef arabirimi nesneden işleme
+Nesneden işleme hedefi arabirimini ayırır
 
 ```
 ID2D1HwndRenderTarget* Detach();
@@ -153,11 +154,11 @@ ID2D1HwndRenderTarget* Detach();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hedef arabirimini ayırılamak için işaretçi.
+Ayrılmış işleme hedefi arabirimine yönelik işaretçi.
 
-## <a name="chwndrendertargetgethwnd"></a><a name="gethwnd"></a>CHwndRenderHedef::GetHwnd
+## <a name="chwndrendertargetgethwnd"></a><a name="gethwnd"></a> CHwndRenderTarget:: GetHwnd
 
-Bu işleme hedefiyle ilişkili HWND'yi döndürür.
+Bu işleme hedefi ile ilişkili HWND 'yi döndürür.
 
 ```
 HWND GetHwnd() const;
@@ -165,9 +166,9 @@ HWND GetHwnd() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-HWND bu render hedefi ile ilişkili.
+Bu işleme hedefi ile ilişkilendirilen HWND.
 
-## <a name="chwndrendertargetgethwndrendertarget"></a><a name="gethwndrendertarget"></a>CHwndRenderTarget::GetHwndRenderTarget
+## <a name="chwndrendertargetgethwndrendertarget"></a><a name="gethwndrendertarget"></a> CHwndRenderTarget:: GetHwndRenderTarget
 
 ID2D1HwndRenderTarget arabirimini döndürür.
 
@@ -177,17 +178,17 @@ ID2D1HwndRenderTarget* GetHwndRenderTarget();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne henüz başharfe çevrilmediyse ID2D1HwndRenderTarget arabirimine veya NULL'a işaretçi.
+ID2D1HwndRenderTarget arabirimine yönelik işaretçi veya nesne henüz başlatılamıyorsa NULL.
 
-## <a name="chwndrendertargetm_phwndrendertarget"></a><a name="m_phwndrendertarget"></a>CHwndRenderTarget::m_pHwndRenderTarget
+## <a name="chwndrendertargetm_phwndrendertarget"></a><a name="m_phwndrendertarget"></a> CHwndRenderTarget:: m_pHwndRenderTarget
 
-ID2D1HwndRenderTarget nesnesine işaretçi.
+ID2D1HwndRenderTarget nesnesine yönelik bir işaretçi.
 
 ```
 ID2D1HwndRenderTarget* m_pHwndRenderTarget;
 ```
 
-## <a name="chwndrendertargetoperator-id2d1hwndrendertarget"></a><a name="operator_id2d1hwndrendertarget_star"></a>CHwndRenderTarget::operatör ID2D1HwndRenderTarget*
+## <a name="chwndrendertargetoperator-id2d1hwndrendertarget"></a><a name="operator_id2d1hwndrendertarget_star"></a> CHwndRenderTarget:: operator ID2D1HwndRenderTarget *
 
 ID2D1HwndRenderTarget arabirimini döndürür.
 
@@ -197,11 +198,11 @@ operator ID2D1HwndRenderTarget*();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne henüz başharfe çevrilmediyse ID2D1HwndRenderTarget arabirimine veya NULL'a işaretçi.
+ID2D1HwndRenderTarget arabirimine yönelik işaretçi veya nesne henüz başlatılamıyorsa NULL.
 
-## <a name="chwndrendertargetrecreate"></a><a name="recreate"></a>CHwndRenderTarget::Yeniden Oluşturma
+## <a name="chwndrendertargetrecreate"></a><a name="recreate"></a> CHwndRenderTarget:: yeniden oluştur
 
-Pencereyle ilişkili bir render hedefini yeniden oluşturur
+Pencereyle ilişkili bir işleme hedefini yeniden oluşturur
 
 ```
 BOOL ReCreate(HWND hWnd);
@@ -209,16 +210,16 @@ BOOL ReCreate(HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hwnd*<br/>
-Bu render hedefi ile ilişkili HWND
+*lendiği*<br/>
+Bu işleme hedefi ile ilişkilendirilen HWND
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Yöntem başarılı olursa, TRUE döndürür. Aksi takdirde, FALSE döndürür.
 
-## <a name="chwndrendertargetresize"></a><a name="resize"></a>CHwndRenderTarget::Yeniden boyutlandırma
+## <a name="chwndrendertargetresize"></a><a name="resize"></a> CHwndRenderTarget:: yeniden boyutlandır
 
-Render hedefinin boyutunu belirtilen piksel boyutuyla değiştirir
+Oluşturma hedefinin boyutunu belirtilen piksel boyutuna dönüştürür
 
 ```
 BOOL Resize(const CD2DSizeU& size);
@@ -226,8 +227,8 @@ BOOL Resize(const CD2DSizeU& size);
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-Aygıt piksellerinde render hedefinin yeni boyutu
+*boyutla*<br/>
+Oluşturma hedefinin cihaz piksellerindeki yeni boyutu
 
 ### <a name="return-value"></a>Dönüş Değeri
 

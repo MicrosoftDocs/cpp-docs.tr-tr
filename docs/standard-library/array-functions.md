@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; dizi &gt; işlevleri'
 title: '&lt;dizi &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::array [C++], get
 - std::get [C++]
 - std::swap [C++]
-ms.openlocfilehash: 3389ba769d6b61a363e8cbfcf5f6a4e9ec679469
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b2f6cd72c5f82f36914f96dee6924654a96a9fc1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844710"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149558"
 ---
 # <a name="ltarraygt-functions"></a>&lt;dizi &gt; işlevleri
 

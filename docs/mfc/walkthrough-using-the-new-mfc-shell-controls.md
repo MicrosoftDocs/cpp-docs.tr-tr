@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: yeni MFC kabuk denetimlerini kullanma'
 title: 'İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - shell controls (MFC)
 ms.assetid: f0015caa-199d-4aaf-9501-5a239fce9095
-ms.openlocfilehash: 0d8db9044a64305bd7bb9ef6fe10de9ecef1ce51
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 26b2d5afbf3f74d98df122b00e5471f2a88563b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924759"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142915"
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma
 
@@ -29,25 +30,25 @@ Bu adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklıl
 
 ### <a name="to-create-an-mfc-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de MFC projesi oluşturmak için
 
-1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
+1.  >  > **Yeni proje oluştur** iletişim kutusunu açmak için ana menüden dosya yeni **Proje** ' yi seçin.
 
 1. Üstteki arama kutusuna **MFC** yazın ve ardından sonuçlar listesinden **MFC uygulaması** ' nı seçin.
 
-1. **İleri** ’ye tıklayın. Sonraki sayfada, proje için bir ad girin ve isterseniz proje konumunu belirtin.
+1. **İleri**’ye tıklayın. Sonraki sayfada, proje için bir ad girin ve isterseniz proje konumunu belirtin.
 
 1. Projeyi oluşturmak için **Oluştur** düğmesini seçin.
 
    **MFC Uygulama Sihirbazı** görüntülendikten sonra, aşağıdaki seçenekleri kullanın:
 
-   1. Sol tarafta **uygulama türü** ' nu seçin. Sonra **tek belge** ' yi seçin ve **belge/görünüm mimarisi desteği** ' ni seçin. **Proje stili** altında, **Visual Studio** ' yı seçin ve **görsel stil ve renkler** açılan listesinden **Office 2007 (mavi tema)** seçeneğini belirleyin.
+   1. Sol tarafta **uygulama türü** ' nu seçin. Sonra **tek belge** ' yi seçin ve **belge/görünüm mimarisi desteği**' ni seçin. **Proje stili** altında, **Visual Studio**' yı seçin ve **görsel stil ve renkler** açılan listesinden **Office 2007 (mavi tema)** seçeneğini belirleyin.
 
-   1. **Birleşik belge desteği** bölmesinde **hiçbiri** ' ni seçin.
+   1. **Birleşik belge desteği** bölmesinde **hiçbiri**' ni seçin.
 
    1. **Belge şablonu özellikleri** bölmesinde hiçbir değişiklik yapmayın.
 
    1. **Kullanıcı arabirimi özellikleri** bölmesinde, **bir menü çubuğu ve araç çubuğu kullan** seçeneğinin seçildiğinden emin olun. Diğer tüm seçenekleri olduğu gibi bırakın.
 
-   1. **Gelişmiş Özellikler** bölmesinde, **ActiveX denetimleri** , **ortak denetim bildirimi** ve **Gezinti Bölmesi** seçeneğini belirleyin. Diğer her şeyi olduğu gibi bırakın. **Gezinti Bölmesi** seçeneği, sihirbazın pencerenin sol tarafında zaten eklenmiş olan bölmeyi oluşturmasına neden olur `CMFCShellTreeCtrl` .
+   1. **Gelişmiş Özellikler** bölmesinde, **ActiveX denetimleri**, **ortak denetim bildirimi** ve **Gezinti Bölmesi** seçeneğini belirleyin. Diğer her şeyi olduğu gibi bırakın. **Gezinti Bölmesi** seçeneği, sihirbazın pencerenin sol tarafında zaten eklenmiş olan bölmeyi oluşturmasına neden olur `CMFCShellTreeCtrl` .
 
    1. **Oluşturulan sınıflar** bölmesinde hiçbir değişiklik yapamıyoruz, bu nedenle yeni MFC projenizi oluşturmak için **son** ' a tıklayın.
 
@@ -57,15 +58,15 @@ Bu adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklıl
 
 ### <a name="to-create-an-mfc-project-in-visual-studio-2017-or-earlier"></a>Visual Studio 2017 veya önceki sürümlerde MFC projesi oluşturmak için
 
-1. **MFC Uygulama Sihirbazı 'nı** kullanarak yenı bir MFC uygulaması oluşturun. Sihirbazı çalıştırmak için, **Dosya** menüsünden **Yeni** ' yi seçin ve ardından **Proje** ' yi seçin. **Yeni proje** iletişim kutusu görüntülenir.
+1. **MFC Uygulama Sihirbazı 'nı** kullanarak yenı bir MFC uygulaması oluşturun. Sihirbazı çalıştırmak için, **Dosya** menüsünden **Yeni**' yi seçin ve ardından **Proje**' yi seçin. **Yeni proje** iletişim kutusu görüntülenir.
 
-1. **Yeni proje** iletişim kutusunda, **proje türleri** bölmesinde **Visual C++** düğümünü genişletin ve **MFC** ' yi seçin. Ardından, **Şablonlar** bölmesinde **MFC uygulaması** ' nı seçin. Proje için bir ad yazın (gibi) `MFCShellControls` ve **Tamam** ' a tıklayın.
+1. **Yeni proje** iletişim kutusunda, **proje türleri** bölmesinde **Visual C++** düğümünü genişletin ve **MFC**' yi seçin. Ardından, **Şablonlar** bölmesinde **MFC uygulaması**' nı seçin. Proje için bir ad yazın (gibi) `MFCShellControls` ve **Tamam**' a tıklayın.
 
    **MFC Uygulama Sihirbazı** görüntülendikten sonra, aşağıdaki seçenekleri kullanın:
 
-   1. **Uygulama türü** bölmesinde, **uygulama türü** altında **sekmeli belgeler** seçeneğini temizleyin. Sonra, **tek belge** ' yi seçin ve **belge/görünüm mimarisi desteği** ' ni seçin. **Proje stili** altında, **Visual Studio** ' yı seçin ve **görsel stil ve renkler** açılan listesinden **Office 2007 (mavi tema)** seçeneğini belirleyin.
+   1. **Uygulama türü** bölmesinde, **uygulama türü** altında **sekmeli belgeler** seçeneğini temizleyin. Sonra, **tek belge** ' yi seçin ve **belge/görünüm mimarisi desteği**' ni seçin. **Proje stili** altında, **Visual Studio**' yı seçin ve **görsel stil ve renkler** açılan listesinden **Office 2007 (mavi tema)** seçeneğini belirleyin.
 
-   1. **Birleşik belge desteği** bölmesinde **hiçbiri** ' ni seçin.
+   1. **Birleşik belge desteği** bölmesinde **hiçbiri**' ni seçin.
 
    1. **Belge şablonu dizeleri** bölmesinde hiçbir değişiklik yapmayın.
 
@@ -73,13 +74,13 @@ Bu adımlar, kullandığınız Visual Studio sürümüne bağlı olarak farklıl
 
    1. **Kullanıcı arabirimi özellikleri** bölmesinde, **bir menü çubuğu ve araç çubuğu kullan** seçeneğinin seçildiğinden emin olun. Diğer tüm seçenekleri olduğu gibi bırakın.
 
-   1. **Gelişmiş Özellikler** bölmesinde, **Gelişmiş Özellikler** altında yalnızca **ActiveX denetimleri** ve **ortak denetim bildirimi** ' ni seçin. **Gelişmiş çerçeve bölmeleri** altında yalnızca **Gezinti Bölmesi** seçeneğini belirleyin. Sihirbazın pencerenin sol tarafında zaten eklenmiş olan bölmeyi oluşturmasına neden olur `CMFCShellTreeCtrl` .
+   1. **Gelişmiş Özellikler** bölmesinde, **Gelişmiş Özellikler** altında yalnızca **ActiveX denetimleri** ve **ortak denetim bildirimi**' ni seçin. **Gelişmiş çerçeve bölmeleri** altında yalnızca **Gezinti Bölmesi** seçeneğini belirleyin. Sihirbazın pencerenin sol tarafında zaten eklenmiş olan bölmeyi oluşturmasına neden olur `CMFCShellTreeCtrl` .
 
    1. **Oluşturulan sınıflar** bölmesinde hiçbir değişiklik yapamıyoruz, bu nedenle yeni MFC projenizi oluşturmak için **son** ' a tıklayın.
 
 ::: moniker-end
 
-Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için **Build** menüsünden **Build Solution** ' ı seçin. Uygulama başarıyla yapılıyorsanız **Hata Ayıkla** menüsünden **hata ayıklamayı Başlat** ' ı seçerek uygulamayı çalıştırın.
+Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için **Build** menüsünden **Build Solution**' ı seçin. Uygulama başarıyla yapılıyorsanız **Hata Ayıkla** menüsünden **hata ayıklamayı Başlat** ' ı seçerek uygulamayı çalıştırın.
 
 Sihirbaz, standart bir menü çubuğu, standart bir araç çubuğu, standart bir durum çubuğu ve bir **klasör** görünümü ve **Takvim** görünümü Içeren pencerenin solunda bir Outlook çubuğu olan bir uygulamayı otomatik olarak oluşturur.
 
@@ -128,9 +129,9 @@ Sihirbaz, standart bir menü çubuğu, standart bir araç çubuğu, standart bir
    }
    ```
 
-1. Şimdi `CMFCShellControlsView` Windows iletisini işleyecek olan sınıfı güncelleştiririz `WM_CREATE` . **Sınıf görünümü** penceresini açın ve `CMFCShellControlsView` sınıfı seçin. Sağ tıklayın ve **Özellikler** ' i seçin.
+1. Şimdi `CMFCShellControlsView` Windows iletisini işleyecek olan sınıfı güncelleştiririz `WM_CREATE` . **Sınıf görünümü** penceresini açın ve `CMFCShellControlsView` sınıfı seçin. Sağ tıklayın ve **Özellikler**' i seçin.
 
-   Sonra, [sınıf Sihirbazı](reference/mfc-class-wizard.md)'nda **iletiler** sekmesine tıklayın. İletiyi bulana kadar aşağı kaydırın `WM_CREATE` . Yanındaki aşağı açılan listeden `WM_CREATE` **\<Add> onoluştur** ' u seçin. Komut, ABD için bir ileti işleyicisi oluşturur ve MFC ileti haritasını otomatik olarak güncelleştirir.
+   Sonra, [sınıf Sihirbazı](reference/mfc-class-wizard.md)'nda **iletiler** sekmesine tıklayın. İletiyi bulana kadar aşağı kaydırın `WM_CREATE` . Yanındaki aşağı açılan listeden `WM_CREATE` **\<Add> onoluştur**' u seçin. Komut, ABD için bir ileti işleyicisi oluşturur ve MFC ileti haritasını otomatik olarak güncelleştirir.
 
    `OnCreate`Yönteminde, şimdi `CMFCShellListCtrl` nesnemizi oluşturacağız. `OnCreate`MFCShellControlsView. cpp kaynak dosyasında yöntem tanımını bulun ve uygulamasını aşağıdaki kodla değiştirin:
 
@@ -196,7 +197,7 @@ Sihirbaz, standart bir menü çubuğu, standart bir araç çubuğu, standart bir
     #include "MainFrm.h"
     ```
 
-1. Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için **Build** menüsünden **Build Solution** ' ı seçin. Uygulama başarıyla yapılıyorsanız **Hata Ayıkla** menüsünden **hata ayıklamayı Başlat** ' ı seçerek çalıştırın.
+1. Uygulamanın oluşturup çalıştırarak başarıyla oluşturulduğunu doğrulayın. Uygulamayı derlemek için **Build** menüsünden **Build Solution**' ı seçin. Uygulama başarıyla yapılıyorsanız **Hata Ayıkla** menüsünden **hata ayıklamayı Başlat** ' ı seçerek çalıştırın.
 
    Artık görünüm bölmesinde seçilen öğenin ayrıntılarını görmeniz gerekir `CMFCShellTreeCtrl` . İçindeki bir düğüme tıkladığınızda, `CMFCShellTreeCtrl` `CMFCShellListCtrl` otomatik olarak güncelleştirilir. Benzer şekilde, içindeki bir klasörü çift tıklattığınızda, `CMFCShellListCtrl` `CMFCShellTreeCtrl` otomatik olarak güncelleştirilmeleri gerekir.
 
@@ -206,7 +207,7 @@ Sihirbaz, standart bir menü çubuğu, standart bir araç çubuğu, standart bir
 
 - Sihirbaz hem **Klasörler** bölmesi hem de **Takvim** bölmesi olan bir Outlook çubuğu oluşturdu. **Gezgin** penceresinde **Takvim** bölmesi olması mantıklı değildir, bu nedenle bu bölmeyi Şimdi kaldırın.
 
-- , `CMFCShellListCtrl` Dosyaların **büyük simgeler** , **küçük simgeler** , **liste** ve **Ayrıntılar** gibi farklı modlarda görüntülenmesini destekler. Uygulamanızı bu işlevselliği uygulamak için güncelleştirin. İpucu: [Visual C++ örneklerine](../overview/visual-cpp-samples.md)bakın.
+- , `CMFCShellListCtrl` Dosyaların **büyük simgeler**, **küçük simgeler**, **liste** ve **Ayrıntılar** gibi farklı modlarda görüntülenmesini destekler. Uygulamanızı bu işlevselliği uygulamak için güncelleştirin. İpucu: [Visual C++ örneklerine](../overview/visual-cpp-samples.md)bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

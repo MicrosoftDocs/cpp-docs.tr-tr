@@ -1,5 +1,6 @@
 ---
-title: CComSimpleThreadAllocator Sınıfı
+description: 'Daha fazla bilgi edinin: Ccomsimplethreadayırıcı sınıfı'
+title: Ccomsimplethreadayırıcı sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CComSimpleThreadAllocator
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - CComSimpleThreadAllocator class
 - ATL threads, allocating
 ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d
-ms.openlocfilehash: 4a3cce492db4db9f46aeb4efe738ee6a594ddcfc
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5925707ecd459475d9e9002af76fb76dd9cf9d38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142200"
 ---
-# <a name="ccomsimplethreadallocator-class"></a>CComSimpleThreadAllocator Sınıfı
+# <a name="ccomsimplethreadallocator-class"></a>Ccomsimplethreadayırıcı sınıfı
 
-Bu sınıf, sınıf `CComAutoThreadModule`için iş parçacığı seçimini yönetir.
+Bu sınıf, sınıf için iş parçacığı seçimini yönetir `CComAutoThreadModule` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CComSimpleThreadAllocator
@@ -32,21 +33,21 @@ class CComSimpleThreadAllocator
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CComSimpleThreadAllocator::GetThread](#getthread)|Bir iş parçacığı seçer.|
+|[Ccomsimplethreadayırıcı:: GetThread](#getthread)|Bir iş parçacığı seçer.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComSimpleThreadAllocator`[CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)için iş parçacığı seçimi yönetir. `CComSimpleThreadAllocator::GetThread`yalnızca her iş parçacığı arasında döngüleri ve sırayla bir sonraki döndürür.
+`CComSimpleThreadAllocator`[CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)için iş parçacığı seçimini yönetir. `CComSimpleThreadAllocator::GetThread` Her bir iş parçacığı boyunca döngü yapar ve sıradaki bir sonrakini döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="ccomsimplethreadallocatorgetthread"></a><a name="getthread"></a>CComSimpleThreadAllocator::GetThread
+## <a name="ccomsimplethreadallocatorgetthread"></a><a name="getthread"></a> Ccomsimplethreadayırıcı:: GetThread
 
-Dizideki bir sonraki iş parçacığı belirterek bir iş parçacığı seçer.
+Sıradaki bir sonraki iş parçacığını belirterek bir iş parçacığı seçer.
 
 ```
 int GetThread(CComApartment* /* pApt */, int nThreads);
@@ -55,22 +56,22 @@ int GetThread(CComApartment* /* pApt */, int nThreads);
 ### <a name="parameters"></a>Parametreler
 
 *pApt*<br/>
-ATL'nin varsayılan uygulamasında kullanılmaz.
+ATL 'nin varsayılan uygulamasında kullanılmıyor.
 
 *nThreads*<br/>
-EXE modülündeki maksimum iş parçacığı sayısı.
+EXE modülündeki iş parçacığı sayısı üst sınırı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Sıfır ve *(nThreads* - 1) arasında bir sonda. EXE modülündeki iş parçacıklarından birini tanımlar.
+Sıfır ve (*nThreads* -1) arasında bir tamsayı. EXE modülündeki iş parçacıklarından birini tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Farklı bir `GetThread` seçim yöntemi sağlamak veya *pApt* parametresini kullanmak için geçersiz kılınabilirsiniz.
+`GetThread`Farklı bir seçim yöntemi sağlamak ya da *pApt* parametresini kullanmak için geçersiz kılabilirsiniz.
 
-`GetThread`[CComAutoThreadModule tarafından çağrılır::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance).
+`GetThread`[CComAutoThreadModule:: CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance)tarafından çağrılır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CComApartment Sınıfı](../../atl/reference/ccomapartment-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[CComApartment sınıfı](../../atl/reference/ccomapartment-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

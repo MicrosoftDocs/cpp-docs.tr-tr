@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: rts_alloc sınıfı'
 title: rts_alloc Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - stdext::rts_alloc [C++], deallocate
 - stdext::rts_alloc [C++], equals
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-ms.openlocfilehash: 04a6578c7abd07ff84f4c0a5cee68cfd7ec8ef04
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b2fe4bf3fe3f54e8fe1de3d89605280b2ba2b857
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148947"
 ---
 # <a name="rts_alloc-class"></a>rts_alloc Sınıfı
 
 Rts_alloc sınıf şablonu, bir dizi önbellek örneği tutan ve derleme süresi yerine çalışma zamanında ayırma ve ayırmayı kaldırma için hangi örneği kullanacağınızı belirleyen bir [filtre](../standard-library/allocators-header.md) tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Cache>
@@ -45,7 +46,7 @@ Bu sınıf şablonu, birden çok blok ayırıcı örneği barındırır ve derle
 |-|-|
 |[allocate](#allocate)|Bellek bloğunu ayırır.|
 |[kaldırmak](#deallocate)|Belirli bir konumdan başlayarak depolama alanından belirtilen sayıda nesneyi serbest bırakır.|
-|[equals](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
+|[eşittir](#equals)|, Eşitlik için iki önbelleği karşılaştırır.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -72,7 +73,7 @@ Ayrılan nesneye yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `caches[_IDX].allocate(count)` , dizinin `_IDX` istenen blok boyutu *sayısı*tarafından belirlendiği, veya *Count* çok büyükse, öğesini döndürür `operator new(count)` . `cache`, önbellek nesnesini temsil eder.
+Üye işlevi `caches[_IDX].allocate(count)` , dizinin `_IDX` istenen blok boyutu *sayısı* tarafından belirlendiği, veya *Count* çok büyükse, öğesini döndürür `operator new(count)` . `cache`, önbellek nesnesini temsil eder.
 
 ## <a name="rts_allocdeallocate"></a><a name="deallocate"></a> rts_alloc::d eallocate
 
@@ -92,7 +93,7 @@ Depolamadan serbest bırakmak için nesne sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi `caches[_IDX].deallocate(ptr, count)` , dizinin `_IDX` istenen blok boyutu *sayısı*tarafından belirlendiği, ya da *Count* çok büyükse, döndürür `operator delete(ptr)` .
+Üye işlevi `caches[_IDX].deallocate(ptr, count)` , dizinin `_IDX` istenen blok boyutu *sayısı* tarafından belirlendiği, ya da *Count* çok büyükse, döndürür `operator delete(ptr)` .
 
 ## <a name="rts_allocequals"></a><a name="equals"></a> rts_alloc:: Equals
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; eşleme &gt; işleçleri'
 title: '&lt;harita &gt; işleçleri'
 ms.date: 03/27/2019
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: 5cfd40add5e2b2503a5eea9610cadffd97bb0a80
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: edd22b4de7c8a4590f2d3570f3315a05abd66f7a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149428"
 ---
 # <a name="ltmapgt-operators"></a>&lt;harita &gt; işleçleri
 

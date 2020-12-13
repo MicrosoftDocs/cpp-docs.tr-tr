@@ -1,5 +1,6 @@
 ---
-title: CAtlModule Sınıfı
+description: 'Daha fazla bilgi edinin: CAtlModule sınıfı'
+title: CAtlModule sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlModule
@@ -20,18 +21,18 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlModule class
 ms.assetid: 63fe02f1-4c4b-4e7c-ae97-7ad7b4252415
-ms.openlocfilehash: 10658b118c97afe99144c3a4d25e0297aba3727f
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 3ae2caa59f330f9f43a3ae66e7f5eb38ddabc89c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168021"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147244"
 ---
-# <a name="catlmodule-class"></a>CAtlModule Sınıfı
+# <a name="catlmodule-class"></a>CAtlModule sınıfı
 
 Bu sınıf, birkaç ATL modül sınıfı tarafından kullanılan yöntemleri sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
@@ -41,14 +42,14 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlModule:: CAtlModule](#catlmodule)|Oluşturucu.|
 |[CAtlModule:: ~ CAtlModule](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlModule:: Addcommonrgsdeğiştirmeler](#addcommonrgsreplacements)|ATL kayıt defteri bileşeni (kaydedici) değiştirme eşlemesine parametreler eklemek için bu yöntemi geçersiz kılın.|
 |[CAtlModule:: AddTermFunc](#addtermfunc)|Modül sonlandırıldığında çağrılacak yeni bir işlev ekler.|
@@ -58,12 +59,12 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 |[CAtlModule:: Term](#term)|Tüm veri üyelerini yayınlar.|
 |[CAtlModule:: unlock](#unlock)|Kilit sayısını azaltır.|
 |[CAtlModule:: UpdateRegistryFromResourceD](#updateregistryfromresourced)|Bir nesneyi kaydetmek veya kaydını silmek için belirtilen bir kaynakta bulunan betiği çalıştırır.|
-|[CAtlModule:: UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper)|Bu yöntem, kayıt defteri `UpdateRegistryFromResourceD` güncelleştirmesini gerçekleştirmek için tarafından çağırılır.|
+|[CAtlModule:: UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper)|Bu yöntem `UpdateRegistryFromResourceD` , kayıt defteri güncelleştirmesini gerçekleştirmek için tarafından çağırılır.|
 |[CAtlModule:: UpdateRegistryFromResourceS](#updateregistryfromresources)|Bir nesneyi kaydetmek veya kaydını silmek için belirtilen bir kaynakta bulunan betiği çalıştırır. Bu yöntem, ATL kayıt defteri bileşenine statik olarak bağlantı sağlar.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CAtlModule:: m_libid](#m_libid)|Geçerli modülün GUID 'sini içerir.|
 |[CAtlModule:: m_pGIT](#m_pgit)|Genel arabirim tablosuna yönelik işaretçi.|
@@ -86,7 +87,7 @@ Bu sınıf, ATL 'nin önceki sürümlerinde kullanılan eski [CComModule sınıf
 
 **Üstbilgi:** atlbase. h
 
-## <a name="catlmoduleaddcommonrgsreplacements"></a><a name="addcommonrgsreplacements"></a>CAtlModule:: Addcommonrgsdeğiştirmeler
+## <a name="catlmoduleaddcommonrgsreplacements"></a><a name="addcommonrgsreplacements"></a> CAtlModule:: Addcommonrgsdeğiştirmeler
 
 ATL kayıt defteri bileşeni (kaydedici) değiştirme eşlemesine parametreler eklemek için bu yöntemi geçersiz kılın.
 
@@ -109,7 +110,7 @@ Değiştirilebilen parametreler, bir kaydedici istemcisinin çalışma zamanı v
 
 Daha fazla ayrıntı için [değiştirilebilen parametreleri (kayıt sahibinin ön işlemcisi) kullanma](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) konusuna bakın.
 
-## <a name="catlmoduleaddtermfunc"></a><a name="addtermfunc"></a>CAtlModule:: AddTermFunc
+## <a name="catlmoduleaddtermfunc"></a><a name="addtermfunc"></a> CAtlModule:: AddTermFunc
 
 Modül sonlandırıldığında çağrılacak yeni bir işlev ekler.
 
@@ -129,7 +130,7 @@ Eklenecek işlevin işaretçisi.
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="catlmodulecatlmodule"></a><a name="catlmodule"></a>CAtlModule:: CAtlModule
+## <a name="catlmodulecatlmodule"></a><a name="catlmodule"></a> CAtlModule:: CAtlModule
 
 Oluşturucu.
 
@@ -141,7 +142,7 @@ CAtlModule() throw();
 
 Veri üyelerini başlatır ve modülün iş parçacığı etrafında kritik bir bölüm başlatır.
 
-## <a name="catlmodulecatlmodule"></a><a name="dtor"></a>CAtlModule:: ~ CAtlModule
+## <a name="catlmodulecatlmodule"></a><a name="dtor"></a> CAtlModule:: ~ CAtlModule
 
 Yok edicisi.
 
@@ -153,7 +154,7 @@ Yok edicisi.
 
 Tüm veri üyelerini yayınlar.
 
-## <a name="catlmodulegetgitptr"></a><a name="getgitptr"></a>CAtlModule:: GetGITPtr
+## <a name="catlmodulegetgitptr"></a><a name="getgitptr"></a> CAtlModule:: GetGITPtr
 
 Genel arabirim tablosuna bir işaretçi alır.
 
@@ -178,7 +179,7 @@ Hata ayıklama yapılarında, *PPGIT* null değerine eşitse ya da genel arabiri
 
 Genel arabirim tablosu hakkında bilgi için bkz. [IGlobalInterfaceTable](/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable) .
 
-## <a name="catlmodulegetlockcount"></a><a name="getlockcount"></a>CAtlModule:: GetLockCount
+## <a name="catlmodulegetlockcount"></a><a name="getlockcount"></a> CAtlModule:: GetLockCount
 
 Kilit sayısını döndürür.
 
@@ -190,7 +191,7 @@ virtual LONG GetLockCount() throw();
 
 Kilit sayısını döndürür. Bu değer tanılama ve hata ayıklama için yararlı olabilir.
 
-## <a name="catlmodulelock"></a><a name="lock"></a>CAtlModule:: Lock
+## <a name="catlmodulelock"></a><a name="lock"></a> CAtlModule:: Lock
 
 Kilit sayısını artırır.
 
@@ -202,7 +203,7 @@ virtual LONG Lock() throw();
 
 Kilit sayısını artırır ve güncelleştirilmiş değeri döndürür. Bu değer tanılama ve hata ayıklama için yararlı olabilir.
 
-## <a name="catlmodulem_libid"></a><a name="m_libid"></a>CAtlModule:: m_libid
+## <a name="catlmodulem_libid"></a><a name="m_libid"></a> CAtlModule:: m_libid
 
 Geçerli modülün GUID 'sini içerir.
 
@@ -210,7 +211,7 @@ Geçerli modülün GUID 'sini içerir.
 static GUID m_libid;
 ```
 
-## <a name="catlmodulem_pgit"></a><a name="m_pgit"></a>CAtlModule:: m_pGIT
+## <a name="catlmodulem_pgit"></a><a name="m_pgit"></a> CAtlModule:: m_pGIT
 
 Genel arabirim tablosuna yönelik işaretçi.
 
@@ -218,7 +219,7 @@ Genel arabirim tablosuna yönelik işaretçi.
 IGlobalInterfaceTable* m_pGIT;
 ```
 
-## <a name="catlmoduleterm"></a><a name="term"></a>CAtlModule:: Term
+## <a name="catlmoduleterm"></a><a name="term"></a> CAtlModule:: Term
 
 Tüm veri üyelerini yayınlar.
 
@@ -230,7 +231,7 @@ void Term() throw();
 
 Tüm veri üyelerini yayınlar. Bu yöntem yıkıcı tarafından çağırılır.
 
-## <a name="catlmoduleunlock"></a><a name="unlock"></a>CAtlModule:: unlock
+## <a name="catlmoduleunlock"></a><a name="unlock"></a> CAtlModule:: unlock
 
 Kilit sayısını azaltır.
 
@@ -242,7 +243,7 @@ virtual LONG Unlock() throw();
 
 Kilit sayısını azaltır ve güncelleştirilmiş değeri döndürür. Bu değer tanılama ve hata ayıklama için yararlı olabilir.
 
-## <a name="catlmoduleupdateregistryfromresourced"></a><a name="updateregistryfromresourced"></a>CAtlModule:: UpdateRegistryFromResourceD
+## <a name="catlmoduleupdateregistryfromresourced"></a><a name="updateregistryfromresourced"></a> CAtlModule:: UpdateRegistryFromResourceD
 
 Bir nesneyi kaydetmek veya kaydını silmek için belirtilen bir kaynakta bulunan betiği çalıştırır.
 
@@ -278,15 +279,15 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*LpszRes veya Nresd*tarafından belirtilen kaynakta bulunan betiği çalıştırır. *BRegister* true ise, bu yöntem nesneyi sistem kayıt defterine kaydeder; Aksi takdirde, nesneyi kayıt defterinden kaldırır.
+*LpszRes veya Nresd* tarafından belirtilen kaynakta bulunan betiği çalıştırır. *BRegister* true ise, bu yöntem nesneyi sistem kayıt defterine kaydeder; Aksi takdirde, nesneyi kayıt defterinden kaldırır.
 
 ATL kayıt defteri bileşeni (kaydedici) statik olarak bağlamak için bkz. [CAtlModule:: UpdateRegistryFromResourceS](#updateregistryfromresources).
 
 Bu yöntem, [CAtlModule:: UpdateRegistryFromResourceDHelper](#updateregistryfromresourcedhelper) ve [ıkaydedic:: ResourceUnregister](iregistrar-class.md#resourceunregister)öğesini çağırır.
 
-## <a name="catlmoduleupdateregistryfromresourcedhelper"></a><a name="updateregistryfromresourcedhelper"></a>CAtlModule:: UpdateRegistryFromResourceDHelper
+## <a name="catlmoduleupdateregistryfromresourcedhelper"></a><a name="updateregistryfromresourcedhelper"></a> CAtlModule:: UpdateRegistryFromResourceDHelper
 
-Bu yöntem, kayıt defteri `UpdateRegistryFromResourceD` güncelleştirmesini gerçekleştirmek için tarafından çağırılır.
+Bu yöntem `UpdateRegistryFromResourceD` , kayıt defteri güncelleştirmesini gerçekleştirmek için tarafından çağırılır.
 
 ```cpp
 inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
@@ -314,7 +315,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 Bu yöntem, [CAtlModule:: UpdateRegistryFromResourceD](#updateregistryfromresourced)uygulamasını sağlar.
 
-## <a name="catlmoduleupdateregistryfromresources"></a><a name="updateregistryfromresources"></a>CAtlModule:: UpdateRegistryFromResourceS
+## <a name="catlmoduleupdateregistryfromresources"></a><a name="updateregistryfromresources"></a> CAtlModule:: UpdateRegistryFromResourceS
 
 Bir nesneyi kaydetmek veya kaydını silmek için belirtilen bir kaynakta bulunan betiği çalıştırır. Bu yöntem, ATL kayıt defteri bileşenine statik olarak bağlantı sağlar.
 
@@ -350,7 +351,7 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CAtlModule:: UpdateRegistryFromResourceD](#updateregistryfromresourced) ' ye benzer `CAtlModule::UpdateRegistryFromResourceS` şekilde, atl kayıt defteri bileşeni (kaydedici) için statik bir bağlantı oluşturur.
+[CAtlModule:: UpdateRegistryFromResourceD](#updateregistryfromresourced) ' ye benzer şekılde `CAtlModule::UpdateRegistryFromResourceS` , atl kayıt defteri bileşeni (kaydedici) için statik bir bağlantı oluşturur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

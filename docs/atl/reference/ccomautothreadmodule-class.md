@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComAutoThreadModule sınıfı'
 title: CComAutoThreadModule sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - CComAutoThreadModule class
 - apartment model modules
 ms.assetid: 13063ea5-a57e-4aac-97d3-227137262811
-ms.openlocfilehash: 405b05548cda2b2d379b849d9278293b8d747d2e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fe6ded878a054bdcdc2569c8ca347e2ac20410b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833796"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146945"
 ---
 # <a name="ccomautothreadmodule-class"></a>CComAutoThreadModule sınıfı
 
@@ -31,7 +32,7 @@ ATL 7,0 itibariyle `CComAutoThreadModule` artık kullanılmıyor: daha fazla ayr
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <class ThreadAllocator = CComSimpleThreadAllocator>
@@ -52,7 +53,7 @@ class CComAutoThreadModule : public CComModule
 |[CreateInstance](#createinstance)|Bir iş parçacığı seçer ve ardından ilişkili grupta bir nesne oluşturur.|
 |[GetDefaultThreads](#getdefaultthreads)|Se Modül için iş parçacığı sayısını işlemci sayısına göre dinamik olarak hesaplar.|
 |[Dengeleyici](#init)|Modülün iş parçacıklarını oluşturur.|
-|[İne](#lock)|Modüldeki ve geçerli iş parçacığındaki kilit sayısını artırır.|
+|[Kilitle](#lock)|Modüldeki ve geçerli iş parçacığındaki kilit sayısını artırır.|
 |[Kaldırın](#unlock)|Modüldeki ve geçerli iş parçacığındaki kilit sayısını azaltır.|
 
 ### <a name="data-members"></a>Veri üyeleri
@@ -73,7 +74,7 @@ class CComAutoThreadModule : public CComModule
 
 `CComAutoThreadModule`Birden çok apartmanlarda nesne oluşturmak istediğiniz sırada modülünüzü türetebilirsiniz. Ayrıca, sınıf fabrikası olarak [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) belirtmek için nesnenizin sınıf tanımına [declare_classfactory_auto_thread](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makrosunu da dahil etmeniz gerekir.
 
-Varsayılan olarak, ATL COM AppWizard (Visual Studio .NET içindeki ATL Proje Sihirbazı), modülünüzü sınıfından türetecektir `CComModule` . Kullanmak için `CComAutoThreadModule` , sınıf tanımını değiştirin. Örnek:
+Varsayılan olarak, ATL COM AppWizard (Visual Studio .NET içindeki ATL Proje Sihirbazı), modülünüzü sınıfından türetecektir `CComModule` . Kullanmak için `CComAutoThreadModule` , sınıf tanımını değiştirin. Örneğin:
 
 [!code-cpp[NVC_ATL_AxHost#2](../../atl/codesnippet/cpp/ccomautothreadmodule-class_1.cpp)]
 
@@ -117,7 +118,7 @@ HRESULT CreateInstance(
 'ndaki İstenen arabirimin IID 'si.
 
 *ppvObj*<br/>
-dışı *Riıd*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObj* null olarak ayarlanır.
+dışı *Riıd* tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObj* null olarak ayarlanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -172,7 +173,7 @@ HRESULT Init(
 *Lama*<br/>
 'ndaki Nesne eşleme girdileri dizisine yönelik bir işaretçi.
 
-*olsun*<br/>
+*h*<br/>
 'ndaki Ya da öğesine geçirilen HıNSTANCE `DLLMain` `WinMain` .
 
 *plibıd*<br/>
@@ -183,7 +184,7 @@ HRESULT Init(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veri üyelerini başlatır ve *nThreads*tarafından belirtilen iş parçacığı sayısını oluşturur.
+Veri üyelerini başlatır ve *nThreads* tarafından belirtilen iş parçacığı sayısını oluşturur.
 
 ## <a name="ccomautothreadmodulelock"></a><a name="lock"></a> CComAutoThreadModule:: Lock
 
