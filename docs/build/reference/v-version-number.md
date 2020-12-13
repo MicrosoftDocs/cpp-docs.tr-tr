@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/V (sürüm numarası)
 title: /V (Sürüm Numarası)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,45 +11,45 @@ helpviewer_keywords:
 - V compiler option [C++]
 - -V compiler option [C++]
 ms.assetid: 3e93fb7a-5dfd-49a6-bd49-3dca8052e0f3
-ms.openlocfilehash: 7bebd3ab9677bb340203bbf857e4ee9f287e36e6
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5025642d4ae30315d24754a7ee46268050cfb22a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317321"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187058"
 ---
 # <a name="v-version-number"></a>/V (Sürüm Numarası)
 
-Kullanım dışı. Bir metin dizesi .obj dosyasına katıştırır.
+Kullanım dışı. . Obj dosyasına bir metin dizesi gömer.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 /Vstring
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Bağımsız değişkenler
 
 *string*<br/>
-Sürüm numarası veya telif hakkı bildirimi bir .obj dosyasında katıştırılmış belirten bir dize.
+Bir. obj dosyasına katıştırılacak sürüm numarasını veya telif hakkı bildirimini belirten bir dize.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Stringcan etiketi bir sürüm numarası veya telif hakkı bildirimi içeren bir .obj dosyası. Dize bir parçası olmaları durumunda herhangi bir boşluk veya sekme karakterlerinden çift tırnak işaretleri (") içine alınması gerekir. Ters eğik çizgi (\\) dizesini bir parçası olmaları durumunda tüm çift tırnak işareti gelmelidir. Arasında boşluk **/V** ve `string` isteğe bağlıdır.
+Stringbir. obj dosyasını bir sürüm numarasıyla veya bir telif hakkı bildirimi ile etiketleyebilir. Dizenin bir parçası olmaları durumunda herhangi bir boşluk veya sekme karakteri çift tırnak işareti (") içine alınmalıdır. Bir ters eğik çizgi ( \\ ), dizenin bir parçası olmaları durumunda tüm çift tırnak işaretlerinden önce gelmelidir. **/V** ile `string` isteğe bağlı bir boşluk.
 
-Ayrıca [yorum (C/C++)](../../preprocessor/comment-c-cpp.md) .obj dosyasında derleyicinin adını ve sürüm numarasını yerleştirmek için derleyici açıklama türü bağımsız değişkeni.
+Derleyicinin adını ve sürüm numarasını. obj dosyasına yerleştirmek için, derleyici açıklama türü bağımsız değişkeniyle birlikte [Comment (C/C++)](../../preprocessor/comment-c-cpp.md) öğesini de kullanabilirsiniz.
 
-**/V** seçeneği Visual Studio 2005'te; başlayarak kullanım dışı **/V** öncelikle olan sanal cihaz sürücüleri (VXD) oluşturulmasını desteklemede kullanılan ve vxd oluşturma Visual C++ araç takımı tarafından artık desteklenmiyor. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
+**/V** seçeneği Visual Studio 2005 ' den itibaren kullanımdan kaldırılmıştır; **/V** öncelikle sanal cihaz sürücülerini (VXDs) oluşturmayı desteklemek için kullanılır ve VxDs 'in derleme Visual C++ araç takımı tarafından desteklenmez. Kullanım dışı bırakılan derleyici seçeneklerinin bir listesi için, bkz. [kategoriye göre listelenen derleyici seçeneklerinde](compiler-options-listed-by-category.md) **kullanım dışı ve kaldırılmış derleyici seçenekleri** .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -56,5 +57,5 @@ Ayrıca [yorum (C/C++)](../../preprocessor/comment-c-cpp.md) .obj dosyasında de
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

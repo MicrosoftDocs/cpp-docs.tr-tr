@@ -1,5 +1,6 @@
 ---
-title: CDocObjectServer Sınıfı
+description: 'Daha fazla bilgi edinin: CDocObjectServer Class'
+title: CDocObjectServer sınıfı
 ms.date: 09/12/2018
 f1_keywords:
 - CDocObjectServer
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - CDocObjectServer [MFC], OnApplyViewState
 - CDocObjectServer [MFC], OnSaveViewState
 ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
-ms.openlocfilehash: f415df35b13e50eee092f87eca0627e5cf143720
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5a87363fef66a4819fc8efd504da96398cf3c89e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753287"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184952"
 ---
-# <a name="cdocobjectserver-class"></a>CDocObjectServer Sınıfı
+# <a name="cdocobjectserver-class"></a>CDocObjectServer sınıfı
 
-Normal `COleDocument` bir sunucuyu tam bir DocObject sunucusuna dönüştürmek için `IOleDocument`gereken `IOleDocumentView` `IOleCommandTarget`ek `IPrint`OLE arabirimlerini uygular: , , ve .
+,,, Ve için normal bir sunucu oluşturmak için gereken ek OLE arabirimlerini uygular `COleDocument` :,, `IOleDocument` `IOleDocumentView` `IOleCommandTarget` ve `IPrint` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDocObjectServer : public CCmdTarget
@@ -37,49 +38,49 @@ class CDocObjectServer : public CCmdTarget
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDocObjectServer::CDocObjectServer](#cdocobjectserver)|Bir `CDocObjectServer` nesne inşa eder.|
+|[CDocObjectServer::CDocObjectServer](#cdocobjectserver)|Bir `CDocObjectServer` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDocObjectServer::ActivateDocObject](#activatedocobject)|Belge nesnesi sunucusuetkinleştirir, ancak göstermez.|
+|[CDocObjectServer:: ActivateDocObject](#activatedocobject)|Belge nesne sunucusunu etkinleştirir, ancak göstermez.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CdocObjectServer::OnactivateView](#onactivateview)|DocObject görünümünü görüntüler.|
-|[CdocObjectServer::OnApplyViewState](#onapplyviewstate)|DocObject görünümünün durumunu geri yükler.|
-|[CdocObjectServer::OnSaveViewState](#onsaveviewstate)|DocObject görünümünün durumunu kaydeder.|
+|[CDocObjectServer:: OnActivateView](#onactivateview)|DocObject görünümünü görüntüler.|
+|[CDocObjectServer:: OnApplyViewState](#onapplyviewstate)|DocObject görünümünün durumunu geri yükler.|
+|[CDocObjectServer:: OnSaveViewState](#onsaveviewstate)|DocObject görünümünün durumunu kaydeder.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDocObjectServer`türetilir `CCmdTarget` ve arabirimleri `COleServerDoc` ortaya çıkarmak için yakın çalışır.
+`CDocObjectServer` , ' dan türetilir `CCmdTarget` ve `COleServerDoc` arabirimleri kullanıma sunmak için ile yakından birlikte çalışarak.
 
-DocObject sunucu belgesi, Sunucu arabirimini DocObject öğelerine temsil eden [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) nesneleri içerebilir.
+Bir DocObject sunucu belgesi, DocObject öğelerine sunucu arabirimini temsil eden [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) nesneleri içerebilir.
 
-DocObject sunucunuzu özelleştirmek için kendi sınıfınızı türetin ve görünüm kurulum işlevlerini, `CDocObjectServer` [OnActivateView,](#onactivateview) [OnApplyViewState](#onapplyviewstate)ve [OnSaveViewState'i](#onsaveviewstate)geçersiz kılın. Çerçeve çağrılarına yanıt olarak sınıfınızın yeni bir örneğini sağlamanız gerekir.
+DocObject sunucunuzu özelleştirmek için, kendi sınıfınızı ' dan türetirsiniz `CDocObjectServer` ve görünüm kurulum işlevlerini, [OnActivateView](#onactivateview), [OnApplyViewState](#onapplyviewstate)ve [OnSaveViewState](#onsaveviewstate)' i geçersiz kılın. Çerçeve çağrılarına yanıt olarak sınıfınızın yeni bir örneğini belirtmeniz gerekecektir.
 
-DocObjects hakkında daha fazla bilgi için *MFC Başvurusu'nda* [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) ve [COleCmdUI'ye](../../mfc/reference/colecmdui-class.md) bakın.
+DocObjects hakkında daha fazla bilgi için bkz. *MFC başvurusunda* [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) ve [copacmduı](../../mfc/reference/colecmdui-class.md) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
 `CDocObjectServer`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdocob.h
+**Üstbilgi:** Afxdocob. h
 
-## <a name="cdocobjectserveractivatedocobject"></a><a name="activatedocobject"></a>CDocObjectServer::ActivateDocObject
+## <a name="cdocobjectserveractivatedocobject"></a><a name="activatedocobject"></a> CDocObjectServer:: ActivateDocObject
 
-Belge nesnesi sunucusunu etkinleştirmek (ancak göstermemek) için bu işlevi arayın.
+Belge nesne sunucusunu etkinleştirmek (ancak göstermek değil) için bu işlevi çağırın.
 
 ```cpp
 void ActivateDocObject();
@@ -87,13 +88,13 @@ void ActivateDocObject();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ActivateDocObject`'s `IOleDocumentSite` `ActivateMe` yöntemini çağırır, ancak CDocObjectServer'a yapılan çağrıda verilen görünümün nasıl ayarlanıp görüntülenenebildiği hakkında belirli yönergeleri beklediği için görünümü [göstermez::OnActivateView](#onactivateview).
+`ActivateDocObject` çağrılarının `IOleDocumentSite` `ActivateMe` yöntemi, ancak [CDocObjectServer:: OnActivateView](#onactivateview)çağrısında belirtilen görünümü ayarlama ve görüntüleme hakkında özel yönergeler beklediği için görünümü göstermez.
 
-Birlikte `ActivateDocObject` ve `OnActivateView` etkinleştirin ve DocObject görünümünü görüntüleyin. DocObject etkinleştirme, diğer OLE yerinde etkinleştirme türlerinden farklıdır. DocObject etkinleştirme, yerinde ambar kenarlıkları ve nesne süslemelerini (boyutlandırma tutamaçları gibi) görüntüleyen atlar, nesne kapsamı işlevlerini yok sayar ve görünüm dikdörtgeninin içinde kaydırma çubukları çizer, bu dikdörtgenin dışına çizim yapmak yerine (normal yerinde etkinleştirmede olduğu gibi).
+Birlikte, `ActivateDocObject` ve öğesini `OnActivateView` etkinleştirin ve DocObject görünümünü görüntüleyin. DocObject etkinleştirmesi diğer tür OLE yerinde etkinleştirmede farklılık gösterir. DocObject etkinleştirmesi, yerinde tarama kenarlıklarını ve nesne donatılarını (boyutlandırma tutamaçları gibi) görüntülemeyi atlar, nesne uzantısı işlevlerini yoksayar ve görünüm dikdörtgeni içinde kaydırma çubukları çizer (normal yerinde etkinleştirmeye benzer şekilde).
 
-## <a name="cdocobjectservercdocobjectserver"></a><a name="cdocobjectserver"></a>CDocObjectServer::CDocObjectServer
+## <a name="cdocobjectservercdocobjectserver"></a><a name="cdocobjectserver"></a> CDocObjectServer::CDocObjectServer
 
-Bir `CDocObjectServer` nesne yi inşa eder ve başharfe ait hale raz.
+Bir nesnesi oluşturur ve başlatır `CDocObjectServer` .
 
 ```
 explicit CDocObjectServer(
@@ -103,19 +104,19 @@ explicit CDocObjectServer(
 
 ### <a name="parameters"></a>Parametreler
 
-*pSahibi*<br/>
-DocObject sunucusunun istemcisi olan istemci site belgesine işaretçi.
+*pOwner*<br/>
+DocObject sunucusu için istemci olan istemci sitesi belgesine yönelik bir işaretçi.
 
-*pDocSite*<br/>
-Kapsayıcı tarafından `IOleDocumentSite` uygulanan arabirime işaretçi.
+*Pdocsıte*<br/>
+`IOleDocumentSite`Kapsayıcı tarafından uygulanan arabirime yönelik bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir DocObject etkin olduğunda, istemci sitesi `IOleDocumentSite`OLE arabirimi ( ) DocObject sunucusunun istemcisiyle (kapsayıcı) iletişim kurmasına olanak tanır. Bir DocObject sunucusu etkinleştirildiğinde, önce kapsayıcının arabirimi uyguladığını `IOleDocumentSite` denetler. Eğer öyleyse, [COleServerDoc::GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) kapsayıcı DocObjects destekler olmadığını görmek için denir. Varsayılan olarak, `GetDocObjectServer` NULL döndürür. Yeni `COleServerDoc::GetDocObjectServer` `CDocObjectServer` bir nesne veya kendi türemiş bir nesne oluşturmak için `COleServerDoc` geçersiz kılmanız gerekir, kapsayıcı işaretçileri ve oluşturucu için bağımsız değişkenolarak arabirimi ile. `IOleDocumentSite`
+Bir DocObject etkin olduğunda, istemci sitesi OLE arabirimi (), `IOleDocumentSite` DocObject sunucusunun istemcisiyle (kapsayıcı) iletişim kurmasına izin verir. Bir DocObject sunucusu etkinleştirildiğinde, önce kapsayıcının arabirimini uygulayıp uygulamadığını denetler `IOleDocumentSite` . Bu durumda, kapsayıcının DocObjects 'i destekleyip desteklemediğini görmek için [Copaserverdoc:: GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) çağırılır. Varsayılan olarak, `GetDocObjectServer` null değerini döndürür. `COleServerDoc::GetDocObjectServer` `CDocObjectServer` `COleServerDoc` Kapsayıcının ve arabiriminin işaretçilerine bağımsız değişkenler olarak, yeni bir nesne veya türetilmiş bir nesne oluşturmak için geçersiz kılmanız gerekir `IOleDocumentSite` .
 
-## <a name="cdocobjectserveronactivateview"></a><a name="onactivateview"></a>CdocObjectServer::OnactivateView
+## <a name="cdocobjectserveronactivateview"></a><a name="onactivateview"></a> CDocObjectServer:: OnActivateView
 
-DocObject görünümünü görüntülemek için bu işlevi arayın.
+DocObject görünümünü görüntülemek için bu işlevi çağırın.
 
 ```
 virtual HRESULT OnActivateView();
@@ -123,13 +124,13 @@ virtual HRESULT OnActivateView();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir hata veya uyarı değeri verir. Varsayılan olarak, başarılı olursa NOERROR döndürür; aksi takdirde, E_FAIL.
+Bir hata veya uyarı değeri döndürür. Varsayılan olarak, başarılı olursa NOERROR döndürür; Aksi takdirde, E_FAIL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev yerinde bir çerçeve penceresi oluşturur, görünüm içinde kaydırma çubukları çizer, sunucunun kapsayıcısıyla paylaştığı menüleri ayarlar, çerçeve denetimleri ekler, etkin nesneyi ayarlar, sonra nihayet yerinde çerçeve penceresini gösterir ve odağı ayarlar.
+Bu işlev bir yerinde çerçeve penceresi oluşturur, görünümün içinde kaydırma çubukları çizer, sunucu paylaşımlarının kapsayıcıyla birlikte menüler ayarlar, çerçeve denetimleri ekler, etkin nesneyi ayarlar, ardından son olarak yerinde çerçeve penceresini gösterir ve odağı ayarlar.
 
-## <a name="cdocobjectserveronapplyviewstate"></a><a name="onapplyviewstate"></a>CdocObjectServer::OnApplyViewState
+## <a name="cdocobjectserveronapplyviewstate"></a><a name="onapplyviewstate"></a> CDocObjectServer:: OnApplyViewState
 
 DocObject görünümünün durumunu geri yüklemek için bu işlevi geçersiz kılın.
 
@@ -140,17 +141,17 @@ virtual void OnApplyViewState(CArchive& ar);
 ### <a name="parameters"></a>Parametreler
 
 *Ar*<br/>
-Görünüm `CArchive` durumunu seri hale getirmek için bir nesne.
+`CArchive`Görünüm durumunun seri hale getirilecek bir nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, görünüm anlık olarak görüntülendikten sonra ilk kez görüntülendiğinde çağrılır. `OnApplyViewState`daha önce `CArchive` [OnSaveViewState](#onsaveviewstate)ile kaydedilen nesnedeki verilere göre kendisini yeniden başlatması için bir görünüm bildirir. Kapsayıcı görünüm durumu verilerini `CArchive` herhangi bir şekilde yorumlamaya çalışmadığından, görünüm nesnedeki verileri doğrulamalıdır.
+Bu işlev, görünümü, örneği oluşturulduktan sonra ilk kez görüntülenirken çağrılır. `OnApplyViewState` bir görünümün kendisini, `CArchive` daha önce [OnSaveViewState](#onsaveviewstate)ile kaydedilen nesnedeki verilere göre yeniden başlatmasını söyler. `CArchive`Kapsayıcı, Görünüm durumu verilerini herhangi bir şekilde yorumlamaya çalışmadığından nesnenin verileri doğrulaması gerekir.
 
-Görünümünüzün `OnSaveViewState` durumuna özgü kalıcı bilgileri depolamak için kullanabilirsiniz. Bilgileri depolamak `OnSaveViewState` için geçersiz kılarsanız, bu `OnApplyViewState` bilgileri okumak ve yeni etkinleştirildiğinde görünümünüze uygulamak için geçersiz kılmak isteyebilirsiniz.
+`OnSaveViewState`Görünümü, görünümlerinizin durumuna özgü kalıcı bilgileri depolamak için kullanabilirsiniz. `OnSaveViewState`Bilgileri depolamak için geçersiz kıldıysanız, `OnApplyViewState` Bu bilgileri okumak ve yeni etkinleştirildiğinde görünümse uygulamak için geçersiz kılmak isteyeceksiniz.
 
-## <a name="cdocobjectserveronsaveviewstate"></a><a name="onsaveviewstate"></a>CdocObjectServer::OnSaveViewState
+## <a name="cdocobjectserveronsaveviewstate"></a><a name="onsaveviewstate"></a> CDocObjectServer:: OnSaveViewState
 
-DocObject görünümünüz hakkında ek durum bilgilerini kaydetmek için bu işlevi geçersiz kılın.
+DocObject görünüminizdeki ek durum bilgilerini kaydetmek için bu işlevi geçersiz kılın.
 
 ```
 virtual void OnSaveViewState(CArchive& ar);
@@ -159,16 +160,16 @@ virtual void OnSaveViewState(CArchive& ar);
 ### <a name="parameters"></a>Parametreler
 
 *Ar*<br/>
-Görünüm `CArchive` durumunun seri hale getirildiği bir nesne.
+`CArchive`Görünüm durumunun serileştirildiği bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Durumunuz görünüm türü, yakınlaştırma faktörü, ekleme ve seçim noktası gibi özellikleri içerebilir. Kapsayıcı genellikle görünümü devre dışı atmadan önce bu işlevi çağırır. Kaydedilen durum daha sonra [OnApplyViewState](#onapplyviewstate)aracılığıyla geri yüklenebilir.
+Durumlarınız görünüm türü, yakınlaştırma faktörü, ekleme ve seçim noktası gibi özellikleri içerebilir. Kapsayıcı genellikle bu işlevi, görünümü devre dışı bırakmadan önce çağırır. Kaydedilen durum daha sonra [OnApplyViewState](#onapplyviewstate)aracılığıyla geri yüklenebilir.
 
-Görünümünüzün `OnSaveViewState` durumuna özgü kalıcı bilgileri depolamak için kullanabilirsiniz. Bilgileri depolamak `OnSaveViewState` için geçersiz kılarsanız, bu `OnApplyViewState` bilgileri okumak ve yeni etkinleştirildiğinde görünümünüze uygulamak için geçersiz kılmak isteyebilirsiniz.
+`OnSaveViewState`Görünümü, görünümlerinizin durumuna özgü kalıcı bilgileri depolamak için kullanabilirsiniz. `OnSaveViewState`Bilgileri depolamak için geçersiz kıldıysanız, `OnApplyViewState` Bu bilgileri okumak ve yeni etkinleştirildiğinde görünümse uygulamak için geçersiz kılmak isteyeceksiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CDocObjectServerItem Sınıfı](../../mfc/reference/cdocobjectserveritem-class.md)
+[CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CDocObjectServerItem sınıfı](../../mfc/reference/cdocobjectserveritem-class.md)

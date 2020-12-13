@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Cedıt sınıfı'
 title: Cedıt sınıfı
 ms.date: 09/12/2018
 f1_keywords:
@@ -94,12 +95,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: 0e15472ddaad214d575a7479680454ae6b4d3178
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8dbf5ffd05473720682703a9f309f8483591f143
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561628"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184700"
 ---
 # <a name="cedit-class"></a>Cedıt sınıfı
 
@@ -831,7 +832,7 @@ Düzenleme denetiminin metninde istenen karakterin sıfır tabanlı dizin değer
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*NIndex*tarafından belirtilen karakter dizinini içeren satırın sıfır tabanlı satır numarası. *Nindex* -1 ise, seçimin ilk karakterini içeren satırın numarası döndürülür. Seçim yoksa, geçerli satır numarası döndürülür.
+*NIndex* tarafından belirtilen karakter dizinini içeren satırın sıfır tabanlı satır numarası. *Nindex* -1 ise, seçimin ilk karakterini içeren satırın numarası döndürülür. Seçim yoksa, geçerli satır numarası döndürülür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -972,7 +973,7 @@ Belirtilen karakterin sıfır tabanlı dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Nchar*tarafından belirtilen karakterin sol üst köşesinin koordinatları.
+*Nchar* tarafından belirtilen karakterin sol üst köşesinin koordinatları.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -989,7 +990,7 @@ Daha fazla bilgi için Windows SDK [EM_POSFROMCHAR](/windows/win32/Controls/em-p
 
 ## <a name="ceditreplacesel"></a><a name="replacesel"></a> Cedıt:: ReplaceSel
 
-Bir düzenleme denetimindeki geçerli seçimi *lpszNewText*tarafından belirtilen metinle değiştirmek için bu işlevi çağırın.
+Bir düzenleme denetimindeki geçerli seçimi *lpszNewText* tarafından belirtilen metinle değiştirmek için bu işlevi çağırın.
 
 ```cpp
 void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
@@ -1207,7 +1208,7 @@ Bir parola karakteri ayarlandığında, bu karakter Kullanıcı türlerindeki he
 
 Bu üye işlevin çok satırlı bir düzenleme denetimi üzerinde hiçbir etkisi yoktur.
 
-`SetPasswordChar`Üye işlevi çağrıldığında, `CEdit` tüm görünür karakterleri *ch*tarafından belirtilen karakteri kullanarak yeniden çizer.
+`SetPasswordChar`Üye işlevi çağrıldığında, `CEdit` tüm görünür karakterleri *ch* tarafından belirtilen karakteri kullanarak yeniden çizer.
 
 Düzenleme denetimi [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) stille oluşturulduysa, varsayılan parola karakteri bir yıldız işareti () olarak ayarlanır <strong>\*</strong> . `SetPasswordChar` *Ch* kümesi 0 olarak çağrılırsa bu stil kaldırılır.
 

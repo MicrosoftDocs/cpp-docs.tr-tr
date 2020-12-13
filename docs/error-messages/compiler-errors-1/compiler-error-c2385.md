@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2385'
 title: Derleyici hatası C2385
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2385
 ms.assetid: 6d3dd1f2-e56d-49d7-865c-6a9acdb17417
-ms.openlocfilehash: 1247e4da05d65677f602a82591efd3e0c0c374e0
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7978af162045d52e187e41999c55dcad716baeb1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74745265"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185914"
 ---
 # <a name="compiler-error-c2385"></a>Derleyici hatası C2385
 

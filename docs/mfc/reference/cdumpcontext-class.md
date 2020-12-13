@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDumpContext sınıfı'
 title: CDumpContext sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,18 +19,18 @@ helpviewer_keywords:
 - CDumpContext [MFC], HexDump
 - CDumpContext [MFC], SetDepth
 ms.assetid: 98c52b2d-14b5-48ed-b423-479a4d1c60fa
-ms.openlocfilehash: 3a81e06586e6de14d57ce4c4de36dc30c73383f1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 955be92c4a3b08fe6e1d5a947166133143667ac7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184783"
 ---
 # <a name="cdumpcontext-class"></a>CDumpContext sınıfı
 
 , İnsan tarafından okunabilen metin biçiminde akış odaklı tanılama çıkışını destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDumpContext
@@ -57,11 +58,11 @@ class CDumpContext
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[CDumpContext:: işleci&lt;&lt;](#operator_lt_lt)|Döküm bağlamına değişkenler ve nesneler ekler.|
+|[CDumpContext:: işleci &lt;&lt;](#operator_lt_lt)|Döküm bağlamına değişkenler ve nesneler ekler.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDumpContext`taban sınıfına sahip değildir.
+`CDumpContext` taban sınıfına sahip değildir.
 
 Dökümüden büyük bir olasılıkla, önceden tanımlanmış bir nesne olan [afxDump](diagnostic-services.md#afxdump)'ı kullanabilirsiniz `CDumpContext` . `afxDump`Nesne yalnızca Microsoft Foundation Class Kitaplığı hata ayıklama sürümünde kullanılabilir.
 
@@ -75,7 +76,7 @@ Windows ortamı altında, kavramsal olarak akışa benzeyen önceden tanımlanm�
 
 Sınıfınızın uygulamasında [IMPLEMENT_DYNAMIC](../../mfc/reference/run-time-object-model-services.md#implement_dynamic) veya [IMPLEMENT_SERIAL](../../mfc/reference/run-time-object-model-services.md#implement_serial) makrosunu kullanırsanız, `CObject::Dump` türetilmiş sınıfınızın adını yazdıracaksınız `CObject` . Aksi takdirde, yazdırılır `CObject` .
 
-`CDumpContext`Sınıfı, kitaplığın hata ayıklama ve yayın sürümleriyle kullanılabilir, ancak `Dump` üye Işlevi yalnızca hata ayıklama sürümünde tanımlanmıştır. **#ifdef _DEBUG**  /  `#endif` Özel üye işlevleriniz de dahil olmak üzere tanılama kodunuzu parantez içine almak için #ifdef _debug deyimlerini kullanın `Dump` .
+`CDumpContext`Sınıfı, kitaplığın hata ayıklama ve yayın sürümleriyle kullanılabilir, ancak `Dump` üye Işlevi yalnızca hata ayıklama sürümünde tanımlanmıştır.   /  `#endif` Özel üye işlevleriniz de dahil olmak üzere tanılama kodunuzu parantez içine almak için #ifdef _debug deyimlerini kullanın `Dump` .
 
 Kendi nesneniz oluşturmadan önce `CDumpContext` , `CFile` döküm hedefi görevi gören bir nesne oluşturmanız gerekir.
 
@@ -91,7 +92,7 @@ Hakkında daha fazla bilgi için `CDumpContext` bkz. [MFC uygulamalarında hata 
 
 **Üstbilgi:** AFX. h
 
-## <a name="cdumpcontextcdumpcontext"></a><a name="cdumpcontext"></a>CDumpContext:: CDumpContext
+## <a name="cdumpcontextcdumpcontext"></a><a name="cdumpcontext"></a> CDumpContext:: CDumpContext
 
 Sınıfının bir nesnesini oluşturur `CDumpContext` .
 
@@ -114,7 +115,7 @@ Döküm bağlamı etkinken temel içine yazma `CFile` ; Aksi takdirde, döküm i
 
 [!code-cpp[NVC_MFC_Utilities#12](../../mfc/codesnippet/cpp/cdumpcontext-class_1.cpp)]
 
-## <a name="cdumpcontextdumpashex"></a><a name="dumpashex"></a>CDumpContext::D umpAsHex
+## <a name="cdumpcontextdumpashex"></a><a name="dumpashex"></a> CDumpContext::D umpAsHex
 
 Belirtilen türü onaltılık sayı olarak biçimlendirilen şekilde döker.
 
@@ -141,7 +142,7 @@ Belirtilen türdeki öğenin bir onaltılık sayı olarak dökümünü almak iç
 
 [!code-cpp[NVC_MFC_Utilities#13](../../mfc/codesnippet/cpp/cdumpcontext-class_2.cpp)]
 
-## <a name="cdumpcontextflush"></a><a name="flush"></a>CDumpContext:: Flush
+## <a name="cdumpcontextflush"></a><a name="flush"></a> CDumpContext:: Flush
 
 Arabelleklerden kalan tüm verileri, döküm bağlamına eklenen dosyaya yazılacak şekilde zorlar.
 
@@ -153,7 +154,7 @@ void Flush();
 
 [!code-cpp[NVC_MFC_Utilities#14](../../mfc/codesnippet/cpp/cdumpcontext-class_3.cpp)]
 
-## <a name="cdumpcontextgetdepth"></a><a name="getdepth"></a>CDumpContext:: GetDepth
+## <a name="cdumpcontextgetdepth"></a><a name="getdepth"></a> CDumpContext:: GetDepth
 
 Derin veya basit bir dökümün işlem içinde olup olmadığını belirler.
 
@@ -169,7 +170,7 @@ Döküm tarafından ayarlandığı şekilde döküm derinliği `SetDepth` .
 
   [SetDepth](#setdepth)örneğine bakın.
 
-## <a name="cdumpcontexthexdump"></a><a name="hexdump"></a>CDumpContext:: Onaltıkdöküm
+## <a name="cdumpcontexthexdump"></a><a name="hexdump"></a> CDumpContext:: Onaltıkdöküm
 
 Onaltılık sayı olarak biçimlendirilen bir bayt dizisinin dökümünü yapar.
 
@@ -203,7 +204,7 @@ Tek, belirli bir öğe türünün onaltılık sayı olarak dökümünü yapmak i
 
 [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/cpp/cdumpcontext-class_4.cpp)]
 
-## <a name="cdumpcontextoperator-ltlt"></a><a name="operator_lt_lt"></a>CDumpContext:: işleci&lt;&lt;
+## <a name="cdumpcontextoperator-ltlt"></a><a name="operator_lt_lt"></a> CDumpContext:: işleci &lt;&lt;
 
 Belirtilen verileri döküm bağlamına verir.
 
@@ -245,7 +246,7 @@ Sınıfınızın uygulamasında IMPLEMENT_DYNAMIC veya IMPLEMENT_SERIAL makrosun
 
 [!code-cpp[NVC_MFC_Utilities#17](../../mfc/codesnippet/cpp/cdumpcontext-class_5.cpp)]
 
-## <a name="cdumpcontextsetdepth"></a><a name="setdepth"></a>CDumpContext:: SetDepth
+## <a name="cdumpcontextsetdepth"></a><a name="setdepth"></a> CDumpContext:: SetDepth
 
 Döküm derinliğini ayarlar.
 

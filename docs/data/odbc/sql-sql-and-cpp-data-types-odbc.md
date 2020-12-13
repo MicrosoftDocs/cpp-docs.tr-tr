@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: SQL: SQL ve C++ veri türleri (ODBC)'
 title: 'SQL: SQL ve C++ Veri Türleri (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - SQL data types [C++]
 - SQL [C++], vs. C++ data types
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
-ms.openlocfilehash: 424ae09f6462d4d34b5a847fc210f9329e76d788
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7dd0e4fe94ef61436a7a62e1bb653e803c0b6168
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185979"
 ---
 # <a name="sql-sql-and-c-data-types-odbc"></a>SQL: SQL ve C++ Veri Türleri (ODBC)
 
@@ -25,26 +26,26 @@ Aşağıdaki tabloda ANSI SQL veri türleri C++ veri türleriyle eşlenir. Bu, [
 |ANSI SQL veri türü|C++ veri türü|
 |------------------------|---------------------|
 |**CHAR**|`CString`|
-|**KATEGORI**|`CString`1|
+|**KATEGORI**|`CString` 1|
 |**Small**|**`int`**|
-|**GERÇEK SAYI**|**`float`**|
+|**GERÇEK**|**`float`**|
 |**GIR**|**`long`**|
 |**FLOAT**|**`double`**|
 |**ÇIFT**|**`double`**|
-|**RAKAMLARDAN**|`CString`1|
+|**RAKAMLARDAN**|`CString` 1|
 |**VARCHAR**|`CString`|
 |**LONGVARCHAR**|`CLongBinary`, `CString` 2|
 |**SÜRÜMLERI**|**BOOL**|
 |**Iç**|**BYTE**|
-|**BIGıNT**|`CString`1|
+|**BIGıNT**|`CString` 1|
 |**Ý**|`CByteArray`|
 |**IKILI**|`CByteArray`|
 |**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3|
-|**GÜNCEL**|`CTime`, `CString`|
-|**IŞıNıZDA**|`CTime`, `CString`|
+|**DATE**|`CTime`, `CString`|
+|**TIME**|`CTime`, `CString`|
 |**ILIŞKIN**|`CTime`, `CString`|
 
-1. **DECIMAL** **NUMERIC** `CString` **Sql_c_char** varsayılan ODBC aktarım türü olduğundan, ANSI DECIMAL ve sayısal eşleme.
+1.   `CString` **Sql_c_char** varsayılan ODBC aktarım türü olduğundan, ANSI DECIMAL ve sayısal eşleme.
 
 2. 255 karakterlerin ötesindeki karakter verileri, ile eşlendiğinde varsayılan olarak kesilir `CString` . *NMaxLength* bağımsız değişkenini açıkça ayarlayarak kesme uzunluğunu genişletebilirsiniz `RFX_Text` .
 
@@ -52,7 +53,7 @@ Aşağıdaki tabloda ANSI SQL veri türleri C++ veri türleriyle eşlenir. Bu, [
 
 ODBC imleç kitaplığını kullanmıyorsanız, Microsoft SQL Server ODBC sürücüsünü ve MFC ODBC veritabanı sınıflarını kullanarak iki veya daha fazla uzun değişken uzunluklu alanı güncelleştirmeye çalışırken bir sorunla karşılaşabilirsiniz. ODBC türleri, **SQL_LONGVARCHAR** ve **SQL_LONGVARBINARY**, metin ve görüntü SQL Server türleriyle eşlenir. `CDBException`Aynı çağrısındaki iki veya daha fazla değişken uzunluklu alanı güncelleştirirseniz oluşturulur `CRecordset::Update` . Bu nedenle, birden çok uzun sütunu eşzamanlı olarak güncelleştirme `CRecordset::Update` . Birden çok uzun sütunu aynı anda ODBC API 'siyle güncelleştirebilirsiniz `SQLPutData` . ODBC imleç kitaplığını da kullanabilirsiniz, ancak bu, imleçleri destekleyen ve imleç kitaplığına gerek olmayan SQL Server sürücüsü gibi sürücüler için önerilmez.
 
-MFC ODBC veritabanı sınıfları ve Microsoft SQL Server ODBC sürücüsü ile ODBC imleç kitaplığını kullanıyorsanız, **ASSERT** `CDBException` `CRecordset::Update` çağrısı izleyen bir çağrı varsa, ile birlikte bir onaylama gerçekleşmeyebilir `CRecordset::Requery` . Bunun yerine, `CRecordset::Close` ve yerine çağırın `CRecordset::Open` `CRecordset::Requery` . SQL Server ve SQL Server ODBC sürücüsü yerel imleçler için yerel destek sağladığından ve ODBC imleç kitaplığı gerekli olmadığından, başka bir çözüm ODBC imleç kitaplığını kullanmaz.
+MFC ODBC veritabanı sınıfları ve Microsoft SQL Server ODBC sürücüsü ile ODBC imleç kitaplığını kullanıyorsanız,  `CDBException` `CRecordset::Update` çağrısı izleyen bir çağrı varsa, ile birlikte bir onaylama gerçekleşmeyebilir `CRecordset::Requery` . Bunun yerine, `CRecordset::Close` ve yerine çağırın `CRecordset::Open` `CRecordset::Requery` . SQL Server ve SQL Server ODBC sürücüsü yerel imleçler için yerel destek sağladığından ve ODBC imleç kitaplığı gerekli olmadığından, başka bir çözüm ODBC imleç kitaplığını kullanmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

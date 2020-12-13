@@ -1,5 +1,6 @@
 ---
-title: CDockingManager Sınıfı
+description: 'Daha fazla bilgi edinin: CDockingManager sınıfı'
+title: CDockingManager sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDockingManager
@@ -160,18 +161,18 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: 76fd12b0817c99d0d08327f9d9156eadf3559dc5
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5bbcc2a31739a5a81d66713bab47662b96c74e50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753330"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185057"
 ---
-# <a name="cdockingmanager-class"></a>CDockingManager Sınıfı
+# <a name="cdockingmanager-class"></a>CDockingManager sınıfı
 
-Ana çerçeve penceresinde yerleştirme düzenini denetleyen temel işlevselliği uygular.
+Ana çerçeve penceresinde yerleştirme yerleşimini denetleyen temel işlevselliği uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDockingManager : public CObject
@@ -181,104 +182,104 @@ class CDockingManager : public CObject
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDockingManager::AddDockSite](#adddocksite)|Bir dock bölmesi oluşturur ve denetim çubukları listesine ekler.|
-|[CDockingManager::AddHiddenMDITabbedBar](#addhiddenmditabbedbar)|Gizli MDI sekmeli çubuk bölmeleri listesine bir çubuk bölmesine tutamaç ekler.|
-|[CDockingManager::AddMiniFrame](#addminiframe)|Mini çerçeveler listesine bir çerçeve ekler.|
-|[CDockingManager::AddPane](#addpane)|Yerleştirme yöneticisine bir bölme kaydeder.|
-|[CDockingManager::AdjustDockingLayout](#adjustdockinglayout)|Çerçeve penceresindeki tüm bölmelerin düzenini yeniden hesaplar ve ayarlar.|
-|[CDockingManager::AdjustPaneFrames](#adjustpaneframes)|WM_NCCALCSIZE iletisinin tüm bölmelere ve `CPaneFrameWnd` pencerelere gönderilmesine neden olur.|
-|[CDockingManager::AdjustRectToClientArea](#adjustrecttoclientarea)|Dikdörtgenin hizalanmasını ayarlar.|
-|[CDockingManager::AlignAutoHidePane](#alignautohidepane)|Bir yerleştirme bölmesini otomatik hide modunda yeniden boyutlandırır, böylece çerçevenin istemci alanının tam genişliğini veya yüksekliğini dock siteleri ile çevrili alır.|
-|[CDockingManager::AutoHidePane](#autohidepane)|Otomatik hide araç çubuğu oluşturur.|
-|[CDockingManager::BringBarsToTop](#bringbarstotop)|Belirtilen hizalamayı en üste getiren sabitlenmiş çubukları getirir.|
-|[CDockingManager::BuildPanesMenu](#buildpanesmenu)|Bir menüye yerleştirme bölmelerinin ve araç çubuklarının adlarını ekler.|
-|[CDockingManager::CalcExpectedDockedRect](#calcexpecteddockedrect)|Kenetlenmiş bir pencerenin beklenen dikdörtgenini hesaplar.|
-|[CDockingManager::Oluştur](#create)|Bir yerleştirme yöneticisi oluşturur.|
-|[CDockingManager::DeterminePaneAndStatus](#determinepaneandstatus)|Belirli bir noktayı içeren bölmeyi ve yerleştirme durumunu belirler.|
-|[CDockingManager::DisableRestoreDockState](#disablerestoredockstate)|Kayıt defterinden yerleştirme düzeninin yüklenmesine olanak tanır veya devre dışı kılır.|
-|[CDockingManager::DockPane](#dockpane)|Bölmeyi başka bir bölmeye veya çerçeve penceresine sabitler.|
-|[CDockingManager::DockPaneLeftOf](#dockpaneleftof)|Başka bir bölmenin soluna bir bölme yapıştırın.|
-|[CDockingManager::EnableAutoHidePanes](#enableautohidepanes)|Bölmenin ana çerçeveye sabitlemesini sağlar, bir dock bölmesi oluşturur ve denetim çubukları listesine ekler.|
-|[CDockingManager::Etkinleştirme Docking](#enabledocking)|Bir dock bölmesi oluşturur ve bölmenin ana çerçeveye sabitlemesini sağlar.|
-|[CDockingManager::EnableDockSiteMenu](#enabledocksitemenu)|Tüm yerleştirme bölmelerinin alt yazılarında açılır menüyü açan ek bir düğme görüntüler.|
-|[CDockingManager::EnablePaneContextMenu](#enablepanecontextmenu)|Kullanıcı sağ fare düğmesini tıklattığında ve kitaplık WM_CONTEXTMENU iletisini işlediğinde, uygulama araç çubukları ve yerleştirme bölmelerinin listesini içeren özel bir bağlam menüsünü görüntülemek için kitaplüye bildirir.|
-|[CDockingManager::FindDockSite](#finddocksite)|Belirtilen konumda olan ve belirtilen hizaya sahip çubuk bölmesini alır.|
-|[CDockingManager::FindDockSiteByPane](#finddocksitebypane)|Hedef çubuk bölmesinin kimliğine sahip çubuk bölmesini döndürür.|
-|[CDockingManager::FindPaneByID](#findpanebyid)|Belirtilen denetim kimliğine göre bir bölme bulur.|
-|[CDockingManager::FixupVirtualRects](#fixupvirtualrects)|Tüm geçerli araç çubuğu konumlarını sanal dikdörtgenlere adatır.|
-|[CDockingManager::FrameFromPoint](#framefrompoint)|Verilen noktayı içeren çerçeveyi döndürür.|
-|[CDockingManager::GetClientAreaBounds](#getclientareabounds)|İstemci alanının sınırlarını içeren dikdörtgeni alır.|
-|[CDockingManager::GetDockingMode](#getdockingmode)|Geçerli yerleştirme modunu döndürür.|
-|[CDockingManager::GetDockSiteFrameWnd](#getdocksiteframewnd)|Ana pencere çerçevesiiçin bir işaretçi alır.|
-|[CDockingManager::GetEnabledAutoHideAlignment](#getenabledautohidealignment)|Bölmelerin etkin hizalanmasını verir.|
-|[CDockingManager::GetMiniFrames](#getminiframes)|Mini çerçevelerin bir listesini alır.|
-|[CDockingManager::GetOuterEdgeBounds](#getouteredgebounds)|Çerçevenin dış kenarlarını içeren bir dikdörtgen alır.|
-|[CDockingManager::GetPaneList](#getpanelist)|Yerleştirme yöneticisine ait bölmelerin listesini verir. Bu, tüm kayan bölmeleri içerir.|
-|[CDockingManager::GetSmartDockingManager](#getsmartdockingmanager)|Akıllı yerleştirme yöneticisine bir işaretçi alır.|
-|[CDockingManager::GetSmartDockingManagerPermanent](#getsmartdockingmanagerpermanent)|Akıllı yerleştirme yöneticisine bir işaretçi alır.|
-|[CDockingManager::GetSmartDockingParams](#getsmartdockingparams)|Yerleştirme yöneticisi için akıllı yerleştirme parametrelerini verir.|
-|[CDockingManager::GetSmartDockingTheme](#getsmartdockingtheme)|Akıllı yerleştirme işaretçilerini görüntülemek için kullanılan bir tema döndüren statik bir yöntem.|
-|[CDockingManager::HideAutoHidePanes](#hideautohidepanes)|Otomatik hide modunda olan bir bölmeyi gizler.|
-|[CDockingManager::InsertDockSite](#insertdocksite)|Bir dock bölmesi oluşturur ve denetim çubukları listesine ekler.|
-|[CDockingManager::InsertPane](#insertpane)|Denetim çubukları listesine bir denetim bölmesi ekler.|
-|[CDockingManager::IsDockSiteMenu](#isdocksitemenu)|Açılır menü yürek bölmelerin alt yazılarında görüntülenip görüntülenmediğini belirtir.|
-|[CDockingManager::IsInAdjustLayout](#isinadjustlayout)|Tüm bölmelerin düzenlerinin ayarlı paçüsten olup olmadığını belirler.|
-|[CDockingManager::IsOLEContainerMode](#isolecontainermode)|Yerleştirme yöneticisinin OLE kapsayıcı modunda olup olmadığını belirtir.|
-|[CDockingManager::IsPointNearDockSite](#ispointneardocksite)|Belirli bir noktanın dock bölgesine yakın olup olmadığını belirler.|
-|[CDockingManager::IsPrintPreviewValid](#isprintpreviewvalid)|Yazdırma önizleme modunun ayarlı olup olmadığını belirler.|
-|[CDockingManager::LoadState](#loadstate)|Takma yöneticisinin durumunu kayıt defterinden yükler.|
-|[CDockingManager::LockUpdate](#lockupdate)|Verilen pencereyi kilitler.|
-|[CDockingManager::OnActivateFrame](#onactivateframe)|Çerçeve penceresi etkin hale getirildiğinde veya devre dışı bırakıldığında çerçeve tarafından çağrılır.|
-|[CDockingManager::OnClosePopupMenu](#onclosepopupmenu)|Etkin bir açılır menü bir WM_DESTROY iletisi işlediğinde çerçeve tarafından çağrılır.|
-|[CDockingManager::OnMoveMiniFrame](#onmoveminiframe)|Bir mini çerçeve penceresi taşımak için çerçeve tarafından çağrılır.|
-|[CDockingManager::OnPaneContextMenu](#onpanecontextmenu)|Bölmelerin bir listesini içeren bir menü oluşturduğunda çerçeve tarafından çağrılır.|
-|[CDockingManager::PaneFromPoint](#panefrompoint)|Verilen noktayı içeren bölmeyi döndürür.|
-|[CDockingManager::ProcessPaneContextMenuCommand](#processpanecontextmenucommand)|Belirtilen komut için bir onay kutusunu seçmek veya temizlemek ve gösterilen bölmenin düzenini yeniden hesaplamak için çerçeve tarafından çağrılır.|
-|[CDockingManager::RecalcLayout](#recalclayout)|Denetimler listesinde bulunan denetimlerin iç düzenini yeniden hesaplar.|
-|[CDockingManager::ReleaseEmptyPaneContainers](#releaseemptypanecontainers)|Boş bölme kapsayıcılarını serbest bırakır.|
-|[CDockingManager::RemoveHiddenMDITabbedBar](#removehiddenmditabbedbar)|Belirtilen gizli çubuk bölmesini kaldırır.|
-|[CDockingManager::RemoveMiniFrame](#removeminiframe)|Mini çerçeveler listesinden belirtilen bir çerçeveyi kaldırır.|
-|[CDockingManager::RemovePaneFromDockManager](#removepanefromdockmanager)|Bölmenin kaydını kaldırır ve yerleştirme yöneticisindeki listeden kaldırır.|
-|[CDockingManager::ReplacePane](#replacepane)|Bir bölmeyi diğeriyle değiştirir.|
-|[CDockingManager::ResortMiniFramesForZOrder](#resortminiframesforzorder)|Mini çerçeveler listesindeki çerçeveleri tatil eder.|
-|[CDockingManager::SaveState](#savestate)|Takma yöneticisinin durumunu kayıt defterine kaydeder.|
-|[CDockingManager::SendMessageToMiniFrames](#sendmessagetominiframes)|Belirtilen iletiyi tüm mini çerçevelere gönderir.|
-|[CDockingManager::Serialize](#serialize)|Yerleştirme yöneticisini bir arşive yazar. (CObject geçersiz [kılar::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
-|[CDockingManager::SetAutohideZOrder](#setautohidezorder)|Denetim çubuklarının ve belirtilen bölmenin boyutunu, genişliğini ve yüksekliğini ayarlar.|
-|[CDockingManager::SetDockingMode](#setdockingmode)|Yerleştirme modunu ayarlar.|
-|[CDockingManager::SetDockState](#setdockstate)|Denetim çubuklarının, mini çerçevelerin ve otomatik hide çubuklarının takma durumunu ayarlar.|
-|[CDockingManager::SetPrintPreviewMode](#setprintpreviewmode)|Yazdırma önizlemesinde görüntülenen çubukların yazdırma önizleme modunu ayarlar.|
-|[CDockingManager::SetSmartDockingParams](#setsmartdockingparams)|Akıllı yerleştirme davranışını tanımlayan parametreleri ayarlar.|
-|[CDockingManager::ShowDelayShowMiniFrames](#showdelayshowminiframes)|Mini çerçevelerin pencerelerini gösterir veya gizler.|
-|[CDockingManager::ShowPanes](#showpanes)|Denetim ve otomatik hide çubukların bölmelerini gösterir veya gizler.|
-|[CDockingManager::Başlangıç Docking](#startsdocking)|Akıllı yerleştirme yöneticisinin hizasına göre belirtilen pencerenin akıllı yerleştirmesini başlatır.|
-|[CDockingManager::StopSDocking](#stopsdocking)|Akıllı kenetlenmeyi durdurur.|
+|[CDockingManager:: AddDockSite](#adddocksite)|Bir yerleştirme bölmesi oluşturur ve denetim çubukları listesine ekler.|
+|[CDockingManager:: Addhiddenmdıtabbedbar](#addhiddenmditabbedbar)|Bir çubuk bölmesine gizli MDI sekmeli çubuk bölmeleri listesine bir işleyici ekler.|
+|[CDockingManager:: AddMiniFrame](#addminiframe)|Mini kareler listesine bir çerçeve ekler.|
+|[CDockingManager:: AddPane](#addpane)|Yerleştirme yöneticisiyle bir bölme kaydeder.|
+|[CDockingManager:: AdjustDockingLayout](#adjustdockinglayout)|Bir çerçeve penceresinde tüm bölmelerin yerleşimini yeniden hesaplar ve ayarlar.|
+|[CDockingManager:: Adjustbölmesi çerçeveleri](#adjustpaneframes)|WM_NCCALCSIZE iletisinin tüm bölmelere ve pencerelere gönderilmesine neden olur `CPaneFrameWnd` .|
+|[CDockingManager:: AdjustRectToClientArea](#adjustrecttoclientarea)|Bir dikdörtgenin hizalamasını ayarlar.|
+|[CDockingManager:: AlignAutoHidePane](#alignautohidepane)|Bir yerleştirme bölmesini otomatik olarak yeniden boyutlandırır ve bu sayede, sitelerin Dock 'ın istemci alanının tam genişliğini veya yüksekliğini sitelere yerleştir.|
+|[CDockingManager:: oto Hidepane](#autohidepane)|Otomatik gizleme araç çubuğu oluşturur.|
+|[CDockingManager:: BringBarsToTop](#bringbarstotop)|Belirtilen hizalamayı en üste getiren sabitlenmiş çubukları getirir.|
+|[CDockingManager:: BuildPanesMenu](#buildpanesmenu)|Bir menüye yerleştirme bölmeleri ve araç çubuklarının adlarını ekler.|
+|[CDockingManager:: CalcExpectedDockedRect](#calcexpecteddockedrect)|Yerleşik pencerenin beklenen dikdörtgenini hesaplar.|
+|[CDockingManager:: Create](#create)|Bir yerleştirme Yöneticisi oluşturur.|
+|[CDockingManager::D Eterminebölmesi Andstatus](#determinepaneandstatus)|Belirli bir noktayı ve yerleştirme durumunu içeren bölmeyi belirler.|
+|[CDockingManager::D isableRestoreDockState](#disablerestoredockstate)|Kayıt defterinden yerleştirme düzeninin yüklenmesine izin vermez veya devre dışı bırakır.|
+|[CDockingManager::D ockPane](#dockpane)|Bir bölmeyi başka bir bölmeye veya bir çerçeve penceresine göre oluşturma.|
+|[CDockingManager::D ockPaneLeftOf](#dockpaneleftof)|Başka bir bölmenin solunda bir bölme noktası oluşturma.|
+|[CDockingManager:: Enableoto Hidebölmeleri](#enableautohidepanes)|Bölmenin ana çerçeveye yerleştirmeyi sağlar, bir dock bölmesi oluşturur ve denetim çubukları listesine ekler.|
+|[CDockingManager:: EnableDocking](#enabledocking)|Bir yerleştirme bölmesi oluşturur ve bölmenin ana çerçeveye yerleştirmeyi sağlar.|
+|[CDockingManager:: EnableDockSiteMenu](#enabledocksitemenu)|Tüm yerleştirme bölmelerindeki açıklamalı alt yazıların açılan menüyü açan ek bir düğme görüntüler.|
+|[CDockingManager:: Enablebölmesi ContextMenu](#enablepanecontextmenu)|Kitaplığa, Kullanıcı sağ fare düğmesine tıkladığında ve kitaplık WM_CONTEXTMENU iletiyi işlerken, uygulama araç çubukları ve yerleştirme bölmeleri listesine sahip özel bir bağlam menüsü görüntülemesini söyler.|
+|[CDockingManager:: FindDockSite](#finddocksite)|Belirtilen konumdaki ve belirtilen hizalamaya sahip olan çubuk bölmesini alır.|
+|[CDockingManager:: FindDockSiteByPane](#finddocksitebypane)|Hedef çubuk bölmesinin kimliği olan çubuk bölmesini döndürür.|
+|[CDockingManager:: Findbölmesi Byıd](#findpanebyid)|Belirtilen denetim KIMLIĞIYLE bir bölme bulur.|
+|[CDockingManager:: FixupVirtualRects](#fixupvirtualrects)|Tüm geçerli araç çubuğu konumlarını sanal dikdörtgenlere kaydeder.|
+|[CDockingManager:: FrameFromPoint](#framefrompoint)|Verilen noktayı içeren çerçeveyi döndürür.|
+|[CDockingManager:: Getclientareasýnýrlarý](#getclientareabounds)|İstemci alanının sınırlarını içeren dikdörtgeni alır.|
+|[CDockingManager:: GetDockingMode](#getdockingmode)|Geçerli yerleştirme modunu döndürür.|
+|[CDockingManager:: GetDockSiteFrameWnd](#getdocksiteframewnd)|Üst pencere çerçevesine bir işaretçi alır.|
+|[CDockingManager:: Getenabledadutohidehizalaması](#getenabledautohidealignment)|Bölmelerin etkin hizalamasını döndürür.|
+|[CDockingManager:: Getminiframe 'Ler](#getminiframes)|Miniframe 'ler listesini alır.|
+|[CDockingManager:: Getouteredgesınırlara](#getouteredgebounds)|Çerçevenin dış kenarlarını içeren bir dikdörtgen alır.|
+|[CDockingManager:: Getbölmesi listesi](#getpanelist)|Yerleşik yöneticiye ait olan bölmelerin listesini döndürür. Bu, tüm kayan bölmeleri içerir.|
+|[CDockingManager:: GetSmartDockingManager](#getsmartdockingmanager)|Akıllı yerleştirme Yöneticisi için bir işaretçi alır.|
+|[CDockingManager:: Getsmartdockingmanagerkalıcı](#getsmartdockingmanagerpermanent)|Akıllı yerleştirme Yöneticisi için bir işaretçi alır.|
+|[CDockingManager:: GetSmartDockingParams](#getsmartdockingparams)|Yerleşik yöneticinin akıllı yerleştirme parametrelerini döndürür.|
+|[CDockingManager:: GetSmartDockingTheme](#getsmartdockingtheme)|Akıllı yerleştirme işaretleyicilerini göstermek için kullanılan bir temayı döndüren statik bir yöntem.|
+|[CDockingManager:: Hideoto Hidebölmeleri](#hideautohidepanes)|Otomatik gizleme modundaki bir bölmeyi gizler.|
+|[CDockingManager:: ınsertdocksite](#insertdocksite)|Bir yerleştirme bölmesi oluşturur ve denetim çubukları listesine ekler.|
+|[CDockingManager:: InsertPane](#insertpane)|Denetim çubukları listesine bir denetim bölmesi ekler.|
+|[CDockingManager:: IsDockSiteMenu](#isdocksitemenu)|Tüm bölmelerin resim yazılarında bir açılır menünün görüntülenip görüntülenmeyeceğini belirtir.|
+|[CDockingManager:: ısınadjustlayout](#isinadjustlayout)|Tüm bölmelerin düzenlerin ayarlanacağını belirler.|
+|[CDockingManager:: ısolecontainermode](#isolecontainermode)|Yerleşik yöneticinin OLE kapsayıcı modunda olup olmadığını belirtir.|
+|[CDockingManager:: Ispointyaklaştığında Docksite](#ispointneardocksite)|Belirtilen noktanın Dock sitesine yakın olup olmadığını belirler.|
+|[CDockingManager:: ısprintönizlemesi geçerli](#isprintpreviewvalid)|Baskı Önizleme modunun ayarlanmış olup olmadığını belirler.|
+|[CDockingManager:: LoadState](#loadstate)|Kayıt defterindeki yerleştirme yöneticisinin durumunu yükler.|
+|[CDockingManager:: LockUpdate](#lockupdate)|Verilen pencereyi kilitler.|
+|[CDockingManager:: OnActivateFrame](#onactivateframe)|Çerçeve penceresi etkin hale getirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.|
+|[CDockingManager:: OnClosePopupMenu](#onclosepopupmenu)|Etkin bir açılır menü WM_DESTROY bir ileti işlediğinde Framework tarafından çağırılır.|
+|[CDockingManager:: OnMoveMiniFrame](#onmoveminiframe)|Bir mini çerçeve penceresini taşımak için Framework tarafından çağırılır.|
+|[CDockingManager:: Onbölmesi ContextMenu](#onpanecontextmenu)|Bir bölme listesi olan bir menü oluşturduğunda Framework tarafından çağırılır.|
+|[CDockingManager::P aneFromPoint](#panefrompoint)|Verilen noktayı içeren bölmeyi döndürür.|
+|[CDockingManager::P rocessPaneContextMenuCommand](#processpanecontextmenucommand)|Belirtilen komutun onay kutusunu seçmek veya temizlemek ve gösterilen bölmenin yerleşimini yeniden hesaplamak için Framework tarafından çağırılır.|
+|[CDockingManager:: RecalcLayout](#recalclayout)|Denetimler listesinde bulunan denetimlerin iç yerleşimini yeniden hesaplar.|
+|[CDockingManager:: ReleaseEmptyPaneContainers](#releaseemptypanecontainers)|Boş bölme kapsayıcılarını serbest bırakır.|
+|[CDockingManager:: Removehiddenmdıtabbedbar](#removehiddenmditabbedbar)|Belirtilen gizli çubuk bölmesini kaldırır.|
+|[CDockingManager:: RemoveMiniFrame](#removeminiframe)|Belirtilen çerçeveyi mini çerçeveler listesinden kaldırır.|
+|[CDockingManager:: RemovePaneFromDockManager](#removepanefromdockmanager)|Bir bölmenin kaydını siler ve yerleştirme yöneticisindeki listeden kaldırır.|
+|[CDockingManager:: ReplacePane](#replacepane)|Bir bölmeyi diğeri ile değiştirir.|
+|[CDockingManager:: Resortminifoymesforzorder](#resortminiframesforzorder)|Mini çerçeveler listesindeki çerçeveleri yeniden ölçeklendirin.|
+|[CDockingManager:: Savemlak](#savestate)|Yerleştirme yöneticisinin durumunu kayıt defterine kaydeder.|
+|[CDockingManager:: Sendmessagetominiframe](#sendmessagetominiframes)|Belirtilen iletiyi tüm mini çerçevelere gönderir.|
+|[CDockingManager:: serileştirme](#serialize)|Yerleştirme yöneticisini bir arşive yazar. ( [CObject:: Serialize](../../mfc/reference/cobject-class.md#serialize)geçersiz kılar.)|
+|[CDockingManager:: SetAutohideZOrder](#setautohidezorder)|Denetim çubuklarının boyutunu, genişliğini ve yüksekliğini, belirtilen bölmeyi ayarlar.|
+|[CDockingManager:: SetDockingMode](#setdockingmode)|Yerleştirme modunu ayarlar.|
+|[CDockingManager:: SetDockState](#setdockstate)|Denetim çubuklarının, Mini karelerin ve otomatik gizleme çubuklarının yerleştirme durumunu ayarlar.|
+|[CDockingManager:: Setprintönizleme modu](#setprintpreviewmode)|Baskı önizlemede görüntülenen çubukların Baskı Önizleme modunu ayarlar.|
+|[CDockingManager:: SetSmartDockingParams](#setsmartdockingparams)|Akıllı yerleştirme davranışını tanımlayan parametreleri ayarlar.|
+|[CDockingManager:: Showdelayshowminiframe](#showdelayshowminiframes)|Mini çerçevelerin pencerelerini gösterir veya gizler.|
+|[CDockingManager:: Showbölmeler](#showpanes)|Denetim ve otomatik gizleme çubuklarının bölmelerini gösterir veya gizler.|
+|[CDockingManager:: StartSDocking](#startsdocking)|Akıllı yerleşik yöneticinin hizalamasına göre belirtilen pencerenin akıllı olarak yuvalanmasına başlar.|
+|[CDockingManager:: StopSDocking](#stopsdocking)|Akıllı yerleştirmeyi durdur.|
 
-### <a name="data-members"></a>Veri Üyeleri
+### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDockingManager::m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode)|Yerleştirme yöneticisinin bölmeleri OLE kapsayıcı modunda gizleyip gizlemediğini belirtir.|
-|[CDockingManager::m_dockModeGlobal](#m_dockmodeglobal)|Genel yerleştirme modunu belirtir.|
-|[CDockingManager::m_nDockSensitivity](#m_ndocksensitivity)|Yerleştirme hassasiyetini belirtir.|
-|[CDockingManager::m_nTimeOutBeforeDockingBarDock](#m_ntimeoutbeforedockingbardock)|Yerleştirme bölmesi hemen yerleştirme modunda kenetlenmeden önce saati milisaniye cinsinden belirtir.|
-|[CDockingManager::m_nTimeOutBeforeToolBarDock](#m_ntimeoutbeforetoolbardock)|Araç çubuğu ana çerçeve penceresine sabitlenmeden önce saati milisaniye cinsinden belirtir.|
+|[CDockingManager:: m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode)|Yerleştirme yöneticisinin, OLE kapsayıcı modundaki bölmeleri gizleyemeyeceğini belirtir.|
+|[CDockingManager:: m_dockModeGlobal](#m_dockmodeglobal)|Genel yerleştirme modunu belirtir.|
+|[CDockingManager:: m_nDockSensitivity](#m_ndocksensitivity)|Yerleştirme hassasiyetini belirtir.|
+|[CDockingManager:: m_nTimeOutBeforeDockingBarDock](#m_ntimeoutbeforedockingbardock)|Takma bölmesinin anında yerleştirme moduna yerleştirilme süresini milisaniye olarak belirtir.|
+|[CDockingManager:: m_nTimeOutBeforeToolBarDock](#m_ntimeoutbeforetoolbardock)|Bir araç çubuğunun ana çerçeve penceresine yerleştirilme süresini milisaniye olarak belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ana çerçeve penceresi bu sınıfı otomatik olarak oluşturur ve başharfe ait hale tir.
+Ana çerçeve penceresi bu sınıfı otomatik olarak oluşturur ve başlatır.
 
-Yerleştirme yöneticisi nesnesi, yerleştirme düzeninde bulunan tüm bölmelerin bir listesini ve ana çerçeve penceresine ait tüm [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) pencerelerinin listesini tutar.
+Docking Manager nesnesi, yerleştirme düzeninde olan tüm bölmelerin bir listesini ve ayrıca ana çerçeve penceresine ait olan tüm [Cpgframewnd](../../mfc/reference/cpaneframewnd-class.md) pencerelerinin bir listesini tutar.
 
-Sınıf, `CDockingManager` bölme veya `CPaneFrameWnd` pencere bulmak için kullanabileceğiniz bazı hizmetleri uygular. Ana çerçeve penceresi nesnesi sarılmış çünkü genellikle doğrudan bu hizmetleri aramayın. Daha fazla bilgi için [CPaneFrameWnd Class'a](../../mfc/reference/cpaneframewnd-class.md)bakın.
+`CDockingManager`Sınıfı, bir bölmeyi veya pencereyi bulmak için kullanabileceğiniz bazı hizmetleri uygular `CPaneFrameWnd` . Genellikle bu hizmetleri, ana çerçeve pencere nesnesine sarmalandıklarından doğrudan çağırmayın. Daha fazla bilgi için bkz. [Cbölmesi Framewnd sınıfı](../../mfc/reference/cpaneframewnd-class.md).
 
-## <a name="customization-tips"></a>Özelleştirme İpuçları
+## <a name="customization-tips"></a>Özelleştirme Ipuçları
 
-Aşağıdaki ipuçları nesneler `CDockingManager` için geçerlidir:
+Aşağıdaki ipuçları nesneler için geçerlidir `CDockingManager` :
 
-- [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md) bu yerleştirme modlarını destekler:
+- [CDockingManager sınıfı](../../mfc/reference/cdockingmanager-class.md) bu yerleştirme modlarını destekler:
 
   - `AFX_DOCK_TYPE::DT_IMMEDIATE`
 
@@ -286,29 +287,29 @@ Aşağıdaki ipuçları nesneler `CDockingManager` için geçerlidir:
 
   - `AFX_DOCK_TYPE::DT_SMART`
 
-  Bu yerleştirme modları [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) tarafından tanımlanır ve [CDockingManager::SetDockingMode](#setdockingmode)numaralı telefonu arayarak ayarlanır.
+  Bu yerleştirme modları [CDockingManager:: m_dockModeGlobal](#m_dockmodeglobal) tarafından tanımlanır ve [CDockingManager:: SetDockingMode](#setdockingmode)çağırarak ayarlanır.
 
-- Kayan olmayan, yeniden boyutlandırılamaz bir bölme oluşturmak istiyorsanız, [CDockingManager'ı arayın:AddPane](#addpane) yöntemini. Bu yöntem bölmeyi, bölmenin düzeninden sorumlu olan yerleştirme yöneticisine kaydeder.
+- Kayan olmayan, yeniden boyutlandırılabilir bir bölme oluşturmak istiyorsanız [CDockingManager:: AddPane](#addpane) yöntemini çağırın. Bu yöntem, bölmeyi bölmenin düzeninden sorumlu olan yerleştirme Yöneticisi ile kaydeder.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `CDockingManager` `CDockingManager` nesneyi yapılandırmak için sınıfta çeşitli yöntemlerin nasıl kullanılacağını gösterir. Örnek, tüm yerleştirme bölmelerinin altyazılarında açılır menüyü açan ek bir düğmenin nasıl görüntülanacağını ve nesnenin yerleştirme modunu nasıl ayarlanacağını gösterir. Bu kod snippet [Visual Studio Demo örnek](../../overview/visual-cpp-samples.md)parçasıdır.
+Aşağıdaki örnek, `CDockingManager` bir nesneyi yapılandırmak için sınıfında çeşitli yöntemlerin nasıl kullanıldığını gösterir `CDockingManager` . Örnek, tüm yerleştirme bölmelerindeki açıklamalı alt yazıların açılan menüyü açan ve nesnenin yerleştirme modunun nasıl ayarlanacağı hakkında ek bir düğmenin nasıl görüntüleneceğini gösterir. Bu kod parçacığı, [Visual Studio Demo örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#24](../../mfc/codesnippet/cpp/cdockingmanager-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CDockingManager](../../mfc/reference/cdockingmanager-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxDockingManager.h
+**Üstbilgi:** afxDockingManager. h
 
-## <a name="cdockingmanageradddocksite"></a><a name="adddocksite"></a>CDockingManager::AddDockSite
+## <a name="cdockingmanageradddocksite"></a><a name="adddocksite"></a> CDockingManager:: AddDockSite
 
-Bir dock bölmesi oluşturur ve denetim çubukları listesine ekler.
+Bir yerleştirme bölmesi oluşturur ve denetim çubukları listesine ekler.
 
 ```
 BOOL AddDockSite(
@@ -318,19 +319,19 @@ BOOL AddDockSite(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bilgi*<br/>
-[içinde] Dock bölme hizalama içeren bir bilgi yapısına başvuru.
+*bilgisine*<br/>
+'ndaki Dock bölmesi hizalamasını içeren bir bilgi yapısına başvuru.
 
 *ppDockBar*<br/>
-[çıkış] Yeni dock bölmesine işaretçi için bir işaretçi.
+dışı Yeni yerleştirme bölmesi işaretçisi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dock bölmesi başarıyla oluşturulduysa DOĞRU; YANLIŞ aksi takdirde.
+Dock bölmesi başarıyla oluşturulduysa TRUE; Aksi takdirde FALSE.
 
-## <a name="cdockingmanageraddhiddenmditabbedbar"></a><a name="addhiddenmditabbedbar"></a>CDockingManager::AddHiddenMDITabbedBar
+## <a name="cdockingmanageraddhiddenmditabbedbar"></a><a name="addhiddenmditabbedbar"></a> CDockingManager:: Addhiddenmdıtabbedbar
 
-Gizli MDI sekmeli çubuk bölmeleri listesine bir çubuk bölmesine tutamaç ekler.
+Bir çubuk bölmesine gizli MDI sekmeli çubuk bölmeleri listesine bir işleyici ekler.
 
 ```cpp
 void AddHiddenMDITabbedBar(CDockablePane* pBar);
@@ -339,11 +340,11 @@ void AddHiddenMDITabbedBar(CDockablePane* pBar);
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[içinde] Çubuk bölmeye işaretçi
+'ndaki Çubuk bölmesi işaretçisi
 
-## <a name="cdockingmanageraddpane"></a><a name="addpane"></a>CDockingManager::AddPane
+## <a name="cdockingmanageraddpane"></a><a name="addpane"></a> CDockingManager:: AddPane
 
-Yerleştirme yöneticisine bir bölme kaydeder.
+Yerleştirme yöneticisiyle bir bölme kaydeder.
 
 ```
 BOOL AddPane(
@@ -355,29 +356,29 @@ BOOL AddPane(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-[içinde, dışarı] Yerleştirme yöneticisine eklemek için bölmeyi belirtir.
+*pWnd*<br/>
+[in, out] Yerleştirme yöneticisine eklenecek bölmeyi belirtir.
 
 *bTail*<br/>
-[içinde] Yerleştirme yöneticisi için bölme listesinin sonuna bölmeeklemek için TRUE; aksi takdirde, YANLIŞ.
+'ndaki Bölmeyi yerleştirme yöneticisinin bölme listesinin sonuna eklemek için TRUE; Aksi takdirde, FALSE.
 
 *bAutoHide*<br/>
-[içinde] Yalnızca dahili kullanım için. Her zaman varsayılan değeri FALSE kullanın.
+'ndaki Yalnızca iç kullanım içindir. Her zaman varsayılan değeri FALSE kullanın.
 
 *bInsertForOuterEdge*<br/>
-[içinde] Yalnızca dahili kullanım için. Her zaman varsayılan değeri FALSE kullanın.
+'ndaki Yalnızca iç kullanım içindir. Her zaman varsayılan değeri FALSE kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme, yerleştirme yöneticisine başarıyla kaydedilmişse DOĞRUDUR; aksi takdirde, YANLIŞ.
+Bölme, yerleşik yöneticiye başarıyla kaydettirilirse doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayan olmayan, yeniden boyutlandırılamayan bölmeleri yerleştirme yöneticisine kaydetmek için bu yöntemi arayın. Bölmeleri kaydetmezseniz, yerleştirme yöneticisi yerleştirildiğinde bunlar doğru görünmez.
+Yerleştirme Yöneticisi ile kayan olmayan, yeniden boyutlandırılabilir bölmeleri kaydetmek için bu yöntemi çağırın. Bölmeleri kaydetmeyin, yerleştirme Yöneticisi yerleştirildiğinde doğru görünmez.
 
-## <a name="cdockingmanageradjustdockinglayout"></a><a name="adjustdockinglayout"></a>CDockingManager::AdjustDockingLayout
+## <a name="cdockingmanageradjustdockinglayout"></a><a name="adjustdockinglayout"></a> CDockingManager:: AdjustDockingLayout
 
-Çerçeve penceresindeki tüm bölmelerin düzenini yeniden hesaplar ve ayarlar.
+Bir çerçeve penceresinde tüm bölmelerin yerleşimini yeniden hesaplar ve ayarlar.
 
 ```
 virtual void AdjustDockingLayout(HDWP hdwp = NULL);
@@ -386,13 +387,13 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ### <a name="parameters"></a>Parametreler
 
 *hdwp*<br/>
-[içinde] Ertelenmiş pencere konumu yapısını belirtir. Daha fazla bilgi için [Windows Veri Türleri'ne](/windows/win32/WinProg/windows-data-types)bakın.
+'ndaki Ertelenmiş pencere konumu yapısını belirtir. Daha fazla bilgi için bkz. [Windows veri türleri](/windows/win32/WinProg/windows-data-types).
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingmanageraddminiframe"></a><a name="addminiframe"></a>CDockingManager::AddMiniFrame
+## <a name="cdockingmanageraddminiframe"></a><a name="addminiframe"></a> CDockingManager:: AddMiniFrame
 
-Mini çerçeveler listesine bir çerçeve ekler.
+Mini kareler listesine bir çerçeve ekler.
 
 ```
 virtual BOOL AddMiniFrame(CPaneFrameWnd* pWnd);
@@ -400,16 +401,16 @@ virtual BOOL AddMiniFrame(CPaneFrameWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-[içinde] Çerçeve için bir işaretçi.
+*pWnd*<br/>
+'ndaki Çerçeve işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Çerçeve mini çerçeveler listesinde değilse ve başarıyla eklenmiştir DOĞRU; YANLIŞ aksi takdirde.
+Çerçeve, Mini çerçeveler listesinde değilse ve başarıyla eklendiyse doğru; Aksi takdirde FALSE.
 
-## <a name="cdockingmanageradjustpaneframes"></a><a name="adjustpaneframes"></a>CDockingManager::AdjustPaneFrames
+## <a name="cdockingmanageradjustpaneframes"></a><a name="adjustpaneframes"></a> CDockingManager:: Adjustbölmesi çerçeveleri
 
-WM_NCCALCSIZE iletisinin tüm bölmelere ve `CPaneFrameWnd` pencerelere gönderilmesine neden olur.
+WM_NCCALCSIZE iletisinin tüm bölmelere ve pencerelere gönderilmesine neden olur `CPaneFrameWnd` .
 
 ```
 virtual void AdjustPaneFrames();
@@ -417,9 +418,9 @@ virtual void AdjustPaneFrames();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingmanageradjustrecttoclientarea"></a><a name="adjustrecttoclientarea"></a>CDockingManager::AdjustRectToClientArea
+## <a name="cdockingmanageradjustrecttoclientarea"></a><a name="adjustrecttoclientarea"></a> CDockingManager:: AdjustRectToClientArea
 
-Dikdörtgenin hizalanmasını ayarlar.
+Bir dikdörtgenin hizalamasını ayarlar.
 
 ```
 virtual BOOL AdjustRectToClientArea(
@@ -429,19 +430,19 @@ virtual BOOL AdjustRectToClientArea(
 
 ### <a name="parameters"></a>Parametreler
 
-*rektResult*<br/>
-[içinde] Bir `CRect` nesneye başvuru
+*rectResult*<br/>
+'ndaki Bir `CRect` nesneye başvuru
 
-*dwHizalama*<br/>
-[içinde] Nesnenin `CRect` hizalanması
+*Dwhizalaması*<br/>
+'ndaki `CRect` Nesnenin hizalaması
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesnenin hizalaması `CRect` ayarlanmışsa DOĞRU; YANLIŞ aksi takdirde.
+`CRect`Nesnenin hizalaması AYARLANMıŞSA doğru; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*dwAlignment* parametresi aşağıdaki değerlerden birine sahip olabilir:
+*Dwhizalaması* parametresi aşağıdaki değerlerden birine sahip olabilir:
 
 - CBRS_ALIGN_TOP
 
@@ -451,9 +452,9 @@ Nesnenin hizalaması `CRect` ayarlanmışsa DOĞRU; YANLIŞ aksi takdirde.
 
 - CBRS_ALIGN_RIGHT
 
-## <a name="cdockingmanageralignautohidepane"></a><a name="alignautohidepane"></a>CDockingManager::AlignAutoHidePane
+## <a name="cdockingmanageralignautohidepane"></a><a name="alignautohidepane"></a> CDockingManager:: AlignAutoHidePane
 
-Bir yerleştirme bölmesini otomatik hide modunda yeniden boyutlandırır, böylece çerçevenin istemci alanının tam genişliğini veya yüksekliğini dock siteleri ile çevrili alır.
+Bir yerleştirme bölmesini otomatik olarak yeniden boyutlandırır ve bu sayede, sitelerin Dock 'ın istemci alanının tam genişliğini veya yüksekliğini sitelere yerleştir.
 
 ```cpp
 void AlignAutoHidePane(
@@ -464,14 +465,14 @@ void AlignAutoHidePane(
 ### <a name="parameters"></a>Parametreler
 
 *pDefaultSlider*<br/>
-[içinde] Yerleştirme kaydırıcısı bölmesi.
+'ndaki Takma kaydırıcı bölmesi.
 
 *bIsVisible*<br/>
-[içinde] Yerleştirme bölmesi görünürse DOĞRU; YANLIŞ aksi takdirde.
+'ndaki Takma bölmesi görünür durumdaysa doğru; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagerautohidepane"></a><a name="autohidepane"></a>CDockingManager::AutoHidePane
+## <a name="cdockingmanagerautohidepane"></a><a name="autohidepane"></a> CDockingManager:: oto Hidepane
 
-Otomatik hide araç çubuğu oluşturur.
+Otomatik gizleme araç çubuğu oluşturur.
 
 ```
 CMFCAutoHideToolBar* AutoHidePane(
@@ -482,16 +483,16 @@ CMFCAutoHideToolBar* AutoHidePane(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[içinde] Çubuk bölmesine bir işaretçi.
+'ndaki Çubuk bölmesine yönelik bir işaretçi.
 
-*pCurrAutoHideToolBar*<br/>
-[içinde] Otomatik gizleme araç çubuğuiçin bir işaretçi.
+*Pcuroyutohidetoolbar*<br/>
+'ndaki Otomatik gizleme araç çubuğuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Otomatik gizleme araç çubuğu oluşturulmamadıysa NULL; aksi takdirde yeni araç çubuğuna bir işaretçi.
+Otomatik gizle araç çubuğu oluşturulmadıysa NULL; Aksi takdirde yeni araç çubuğuna yönelik bir işaretçi.
 
-## <a name="cdockingmanagerbringbarstotop"></a><a name="bringbarstotop"></a>CDockingManager::BringBarsToTop
+## <a name="cdockingmanagerbringbarstotop"></a><a name="bringbarstotop"></a> CDockingManager:: BringBarsToTop
 
 Belirtilen hizalamayı en üste getiren sabitlenmiş çubukları getirir.
 
@@ -503,15 +504,15 @@ void BringBarsToTop(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwHizalama*<br/>
-[içinde] Diğer pencerelerin üstüne getirilen dock çubuklarının hizalaması.
+*Dwhizalaması*<br/>
+'ndaki Diğer pencerelerin üst kısmına getirilen yerleştirme çubuklarının hizalaması.
 
-*bExcludeDockedBars*<br/>
-[içinde] Kenetlenmiş çubukların üstte olmasını engellemek için TRUE; aksi takdirde YANLIŞ.
+*Bexcludedockedçubuklarının*<br/>
+'ndaki Yerleşik çubukların üstte olmasını hariç tutmak için TRUE; Aksi halde yanlış.
 
-## <a name="cdockingmanagerbuildpanesmenu"></a><a name="buildpanesmenu"></a>CDockingManager::BuildPanesMenu
+## <a name="cdockingmanagerbuildpanesmenu"></a><a name="buildpanesmenu"></a> CDockingManager:: BuildPanesMenu
 
-Bir menüye yerleştirme bölmelerinin ve araç çubuklarının adlarını ekler.
+Bir menüye yerleştirme bölmeleri ve araç çubuklarının adlarını ekler.
 
 ```cpp
 void BuildPanesMenu(
@@ -522,14 +523,14 @@ void BuildPanesMenu(
 ### <a name="parameters"></a>Parametreler
 
 *Menü*<br/>
-[içinde] Yerleştirme bölmelerinin ve araç çubuklarının adlarını eklemek için bir menü.
+'ndaki Yerleştirme bölmeleri ve araç çubuklarının adlarını eklemek için bir menü.
 
-*bToolbarsSadece*<br/>
-[içinde] Menüye yalnızca araç çubuğu adları eklemek için TRUE; YANLIŞ aksi takdirde.
+*bToolbarsOnly*<br/>
+'ndaki Menüye yalnızca araç çubuğu adlarını eklemek için TRUE; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagercalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a>CDockingManager::CalcExpectedDockedRect
+## <a name="cdockingmanagercalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a> CDockingManager:: CalcExpectedDockedRect
 
-Kenetlenmiş bir pencerenin beklenen dikdörtgenini hesaplar.
+Yerleşik pencerenin beklenen dikdörtgenini hesaplar.
 
 ```cpp
 void CalcExpectedDockedRect(
@@ -542,28 +543,28 @@ void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-[içinde] Kenetlenme penceresine bir işaretçi.
+*pWnd*<br/>
+'ndaki Sabitlemek üzere pencereye yönelik bir işaretçi.
 
 *ptMouse*<br/>
-[içinde] Fare konumu.
+'ndaki Fare konumu.
 
-*rektResult*<br/>
-[çıkış] Hesaplanan dikdörtgen.
+*rectResult*<br/>
+dışı Hesaplanan dikdörtgen.
 
 *bDrawTab*<br/>
-[içinde] TRUE bir sekme çizmek için; aksi takdirde YANLIŞ.
+'ndaki Bir sekme çizmek için TRUE; Aksi halde yanlış.
 
 *ppTargetBar*<br/>
-[çıkış] Hedef bölmeye işaretçi için bir işaretçi.
+dışı Hedef bölmeye bir işaretçi işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir kullanıcı pencereyi *ptMouse* tarafından belirtilen noktaya sürüklüp oraya sabitlerse, pencerenin kapalacağı dikdörtgeni hesaplar.
+Bu yöntem, bir Kullanıcı pencereyi *ptMouse* tarafından belirtilen noktaya sürüklediyseniz ve üzerine yerleştirildiğinde bir pencerenin kaplayacağı dikdörtgeni hesaplar.
 
-## <a name="cdockingmanagercreate"></a><a name="create"></a>CDockingManager::Oluştur
+## <a name="cdockingmanagercreate"></a><a name="create"></a> CDockingManager:: Create
 
-Bir yerleştirme yöneticisi oluşturur.
+Bir yerleştirme Yöneticisi oluşturur.
 
 ```
 BOOL Create(CFrameWnd* pParentWnd);
@@ -572,15 +573,15 @@ BOOL Create(CFrameWnd* pParentWnd);
 ### <a name="parameters"></a>Parametreler
 
 *pParentWnd*<br/>
-[içinde] Yerleştirme yöneticisinin ana çerçevesine işaretçi. Bu değer NULL olmamalıdır.
+'ndaki Yerleştirme yöneticisinin üst çerçevesine yönelik bir işaretçi. Bu değer NULL olmamalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU her zaman.
+Her zaman TRUE.
 
-## <a name="cdockingmanagerdeterminepaneandstatus"></a><a name="determinepaneandstatus"></a>CDockingManager::DeterminePaneAndStatus
+## <a name="cdockingmanagerdeterminepaneandstatus"></a><a name="determinepaneandstatus"></a> CDockingManager::D Eterminebölmesi Andstatus
 
-Belirli bir noktayı içeren bölmeyi ve yerleştirme durumunu belirler.
+Belirli bir noktayı ve yerleştirme durumunu içeren bölmeyi belirler.
 
 ```
 virtual AFX_CS_STATUS DeterminePaneAndStatus(
@@ -594,23 +595,23 @@ virtual AFX_CS_STATUS DeterminePaneAndStatus(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pt*<br/>
-[içinde] Denetlemek için bölmenin konumu.
+*yönergelerinin*<br/>
+'ndaki Denetlenecek bölmenin konumu.
 
-*nDuyarlılık*<br/>
-[içinde] Denetlenen her bölmenin pencere dikdörtgenini artırma değeri. Verilen nokta bu artan bölgedeyse, bir bölme arama ölçütlerini karşılar.
+*Duyarlılık*<br/>
+'ndaki İşaretlenen her bölmenin pencere dikdörtgenini artırma değeri. Verilen nokta bu daha fazla bölgede ise, bir bölme arama ölçütlerini karşılar.
 
-*dwEnabledAlignment*<br/>
-[içinde] Yerleştirme bölmesinin hizalaması.
+*Dwenabledhizalaması*<br/>
+'ndaki Yerleştirme bölmesinin hizalaması.
 
 *ppTargetBar*<br/>
-[çıkış] Hedef bölmeye işaretçi için bir işaretçi.
+dışı Hedef bölmeye bir işaretçi işaretçisi.
 
-*pBarToIgnore*<br/>
-[içinde] Yöntemin yoksaydığı bölme.
+*Pbartoıgnore*<br/>
+'ndaki Yöntemin yok saydığı bölme.
 
 *pBarToDock*<br/>
-[içinde] Kenetlenmiş bölme.
+'ndaki Yerleştirilmiş pencere.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -618,18 +619,18 @@ Yerleştirme durumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirme durumu aşağıdaki değerlerden biri olabilir:
+Takma durumu aşağıdaki değerlerden biri olabilir:
 
 |AFX_CS_STATUS değeri|Anlamı|
 |---------------------------|-------------|
-|CS_NOTHING|İşaretçi bir dock sitesi üzerinde değil. Bu nedenle, bölmenin kayan tutun.|
-|CS_DOCK_IMMEDIATELY|İşaretçi hemen modda dock sitesi üzerindedir (DT_IMMEDIATE stili etkindir), bu nedenle bölmenin hemen sabitlemesi gerekir.|
-|CS_DELAY_DOCK|İşaretçi, başka bir yerleştirme bölmesi olan veya ana çerçevenin kenarı olan bir dock sitesi üzerindedir.|
-|CS_DELAY_DOCK_TO_TAB|İşaretçi, bölmenin sekmeli bir pencerede sabitlenemesine neden olan bir dock sitesi üzerindedir. Bu, fare başka bir yerleştirme bölmesinin alt yazısının üzerinde veya sekmeli bölmenin sekme alanı nın üzerinde olduğunda oluşur.|
+|CS_NOTHING|İşaretçi bir dock sitesi üzerinde değil. Bu nedenle, bölmeyi yüzer durumda tutun.|
+|CS_DOCK_IMMEDIATELY|İşaretçi, yerleştirme sitesinin anında modda (DT_IMMEDIATE stil etkin) üzerinde bulunur, bu nedenle bölme hemen yerleştirilmelidir.|
+|CS_DELAY_DOCK|İşaretçi, başka bir yerleştirme bölmesi olan veya ana çerçevenin bir kenarı olan bir dock sitesi üzerinde bulunur.|
+|CS_DELAY_DOCK_TO_TAB|İşaretçi, bölmenin sekmeli pencereye yerleştirilmesine neden olan bir dock sitesi üzerinde bulunur. Bu, fare başka bir yerleştirme bölmesinin bir açıklamalı alt yazısının üzerindeyken veya sekmeli bölmenin sekme alanında olduğunda gerçekleşir.|
 
-## <a name="cdockingmanagerdisablerestoredockstate"></a><a name="disablerestoredockstate"></a>CDockingManager::DisableRestoreDockState
+## <a name="cdockingmanagerdisablerestoredockstate"></a><a name="disablerestoredockstate"></a> CDockingManager::D isableRestoreDockState
 
-Kayıt defterinden yerleştirme düzeninin yüklenmesine olanak tanır veya devre dışı kılır.
+Kayıt defterinden yerleştirme düzeninin yüklenmesine izin vermez veya devre dışı bırakır.
 
 ```cpp
 void DisableRestoreDockState(BOOL bDisable = TRUE);
@@ -637,16 +638,16 @@ void DisableRestoreDockState(BOOL bDisable = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bDisable*<br/>
-[içinde] Kayıt defterinden yerleştirme düzeninin yüklenmesinin devre dışı sayılmak için DOĞRU; aksi takdirde, YANLIŞ.
+*bWindows*<br/>
+'ndaki Kayıt defterinden yerleştirme düzeninin yüklenmesini devre dışı bırakmak için TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama durumu yüklenirken yerleştirme bölmelerinin ve araç çubuklarının geçerli düzenini korumanız gerektiğinde bu yöntemi arayın.
+Uygulama durumu yüklenirken yerleştirme bölmeleri ve araç çubuklarının geçerli yerleşimini korumanız gerektiğinde bu yöntemi çağırın.
 
-## <a name="cdockingmanagerdockpane"></a><a name="dockpane"></a>CDockingManager::DockPane
+## <a name="cdockingmanagerdockpane"></a><a name="dockpane"></a> CDockingManager::D ockPane
 
-Bölmeyi başka bir bölmeye veya çerçeve penceresine sabitler.
+Bir bölmeyi başka bir bölmeye veya bir çerçeve penceresine göre oluşturma.
 
 ```cpp
 void DockPane(
@@ -658,17 +659,17 @@ void DockPane(
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[içinde] Bir çubuk bölmesine dock için bir işaretçi.
+'ndaki Bir çubuk bölmesine yerleştirmek için bir işaretçi.
 
 *nDockBarID*<br/>
-[içinde] Rıhtıma demirlemek için barın kimliği.
+'ndaki Sabitlemek için çubuğun kimliği.
 
-*Lprect*<br/>
-[içinde] Hedef dikdörtgen.
+*lpRect*<br/>
+'ndaki Hedef dikdörtgen.
 
-## <a name="cdockingmanagerdockpaneleftof"></a><a name="dockpaneleftof"></a>CDockingManager::DockPaneLeftOf
+## <a name="cdockingmanagerdockpaneleftof"></a><a name="dockpaneleftof"></a> CDockingManager::D ockPaneLeftOf
 
-Başka bir bölmenin soluna bir bölme yapıştırın.
+Başka bir bölmenin solunda bir bölme noktası oluşturma.
 
 ```
 BOOL DockPaneLeftOf(
@@ -679,18 +680,18 @@ BOOL DockPaneLeftOf(
 ### <a name="parameters"></a>Parametreler
 
 *pBarToDock*<br/>
-[içinde] bölmenin *pTargetBar'ın*soluna sabitlenecek bir işaretçi.
+'ndaki *PTargetBar*'un soluna yerleştirilen bölmeye yönelik bir işaretçi.
 
 *pTargetBar*<br/>
-[içinde] Hedef bölmeye bir işaretçi.
+'ndaki Hedef bölmeye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme başarıyla kenetlenmişse DOĞRU; aksi takdirde, YANLIŞ.
+Bölme başarıyla yerleştirilmişse doğru; Aksi takdirde, FALSE.
 
-## <a name="cdockingmanagerenableautohidepanes"></a><a name="enableautohidepanes"></a>CDockingManager::EnableAutoHidePanes
+## <a name="cdockingmanagerenableautohidepanes"></a><a name="enableautohidepanes"></a> CDockingManager:: Enableoto Hidebölmeleri
 
-Bölmenin ana çerçeveye sabitlemesini sağlar, bir dock bölmesi oluşturur ve denetim çubukları listesine ekler.
+Bölmenin ana çerçeveye yerleştirmeyi sağlar, bir dock bölmesi oluşturur ve denetim çubukları listesine ekler.
 
 ```
 BOOL EnableAutoHidePanes(DWORD dwStyle);
@@ -698,16 +699,16 @@ BOOL EnableAutoHidePanes(DWORD dwStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwstyle*<br/>
-[içinde] Yerleştirme hizalaması.
+*dwStyle*<br/>
+'ndaki Yerleştirme hizalaması.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dock bölmesi başarıyla oluşturulduysa DOĞRU; YANLIŞ aksi takdirde.
+Dock bölmesi başarıyla oluşturulduysa TRUE; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagerenabledocking"></a><a name="enabledocking"></a>CDockingManager::Etkinleştirme Docking
+## <a name="cdockingmanagerenabledocking"></a><a name="enabledocking"></a> CDockingManager:: EnableDocking
 
-Bir dock bölmesi oluşturur ve bölmenin ana çerçeveye sabitlemesini sağlar.
+Bir yerleştirme bölmesi oluşturur ve bölmenin ana çerçeveye yerleştirmeyi sağlar.
 
 ```
 BOOL EnableDocking(DWORD dwStyle);
@@ -715,16 +716,16 @@ BOOL EnableDocking(DWORD dwStyle);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dwstyle*<br/>
-[içinde] Yerleştirme hizalaması.
+*dwStyle*<br/>
+'ndaki Yerleştirme hizalaması.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dock bölmesi başarıyla oluşturulduysa DOĞRU; YANLIŞ aksi takdirde.
+Dock bölmesi başarıyla oluşturulduysa TRUE; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagerenabledocksitemenu"></a><a name="enabledocksitemenu"></a>CDockingManager::EnableDockSiteMenu
+## <a name="cdockingmanagerenabledocksitemenu"></a><a name="enabledocksitemenu"></a> CDockingManager:: EnableDockSiteMenu
 
-Tüm yerleştirme bölmelerinin alt yazılarında açılır menüyü açan ek bir düğme görüntüler.
+Tüm yerleştirme bölmelerindeki açıklamalı alt yazıların açılan menüyü açan ek bir düğme görüntüler.
 
 ```
 static void EnableDockSiteMenu(BOOL bEnable = TRUE);
@@ -732,26 +733,26 @@ static void EnableDockSiteMenu(BOOL bEnable = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEtkinleştir*<br/>
-[içinde] Dock site menüsünü etkinleştirmek için TRUE; aksi takdirde, YANLIŞ.
+*bEnable*<br/>
+'ndaki Site yerleştir menüsünü etkinleştirmek için TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dock site menüsü, bölmenin yerleştirme durumunu değiştirmek için aşağıdaki seçenekleri görüntüler:
+Site Yerleştir menüsünde, bölmenin yerleştirme durumunu değiştirmek için aşağıdaki seçenekler görüntülenir:
 
-- `Floating`- Bir bölmeyi yüzdürer
+- `Floating` -Bir bölmeyi aşağı kayarak
 
-- `Docking`- Bölmenin en son sabitlendiği yerdeki ana çerçeveye bir bölme yapıştırılır
+- `Docking` -Bölmenin en son yerleştirildiği konumdaki ana çerçevede bölme noktası oluşturma
 
-- `AutoHide`- Bölmeyi otomatik hide moduna geçer
+- `AutoHide` -Bölmeyi otomatik gizleme moduna geçirir
 
-- `Hide`- Bölmeyi gizler
+- `Hide` -Bölmeyi gizler
 
-Varsayılan olarak, bu menü görüntülenmez.
+Varsayılan olarak, bu menü gösterilmez.
 
-## <a name="cdockingmanagerenablepanecontextmenu"></a><a name="enablepanecontextmenu"></a>CDockingManager::EnablePaneContextMenu
+## <a name="cdockingmanagerenablepanecontextmenu"></a><a name="enablepanecontextmenu"></a> CDockingManager:: Enablebölmesi ContextMenu
 
-Kullanıcı sağ fare düğmesini tıklattığında ve kitaplık WM_CONTEXTMENU iletisini işlediğinde, uygulama araç çubukları ve yerleştirme bölmelerinin listesini içeren özel bir bağlam menüsünü görüntülemek için kitaplüye bildirir.
+Kitaplığa, Kullanıcı sağ fare düğmesine tıkladığında ve kitaplık WM_CONTEXTMENU iletiyi işlerken, uygulama araç çubukları ve yerleştirme bölmeleri listesine sahip özel bir bağlam menüsü görüntülemesini söyler.
 
 ```cpp
 void EnablePaneContextMenu(
@@ -763,21 +764,21 @@ void EnablePaneContextMenu(
 
 ### <a name="parameters"></a>Parametreler
 
-*bEtkinleştir*<br/>
-[içinde] TRUE ise, kitaplık otomatik bağlam menüsü için desteği açar; FALSE kitaplığı otomatik bağlam menüsü için desteği kapatırsa.
+*bEnable*<br/>
+'ndaki TRUE ise, kitaplık otomatik bağlam menüsü desteğini etkinleştirir; FALSE ise, kitaplık otomatik bağlam menüsü desteğini devre dışı bırakır.
 
 *uiCustomizeCmd*<br/>
-[içinde] Menüdeki **Özelleştir** öğesi için bir komut kimliği.
+'ndaki Menüdeki **Özelleştirme** öğesi için bir komut kimliği.
 
 *strCustomizeText*<br/>
-[içinde] **Özelleştir** öğesinin metni.
+'ndaki **Özelleştirme** öğesi metni.
 
-*bToolbarsSadece*<br/>
-[içinde] TRUE ise, menü yalnızca uygulama araç çubuklarının listesini görüntüler; FALSE ise, kitaplık bu listeye uygulama yerleştirme bölmeleri ekler.
+*bToolbarsOnly*<br/>
+'ndaki TRUE ise, menü yalnızca uygulama araç çubuklarının bir listesini görüntüler; FALSE ise, kitaplık uygulama yerleştirme bölmelerini bu listeye ekler.
 
-## <a name="cdockingmanagerfinddocksite"></a><a name="finddocksite"></a>CDockingManager::FindDockSite
+## <a name="cdockingmanagerfinddocksite"></a><a name="finddocksite"></a> CDockingManager:: FindDockSite
 
-Belirtilen konumda olan ve belirtilen hizaya sahip çubuk bölmesini alır.
+Belirtilen konumdaki ve belirtilen hizalamaya sahip olan çubuk bölmesini alır.
 
 ```
 virtual CDockSite* FindDockSite(
@@ -787,19 +788,19 @@ virtual CDockSite* FindDockSite(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwHizalama*<br/>
-[içinde] Çubuk bölmesinin hizalanması.
+*Dwhizalaması*<br/>
+'ndaki Çubuk bölmesinin hizalaması.
 
-*bDış*<br/>
-[içinde] TRUE ise, denetim çubukları listesinde baş konumundaki çubuğu alın. Aksi takdirde, denetim çubukları listesinde kuyruk konumundaki çubuğu alın.
+*bOuter*<br/>
+'ndaki DOĞRU ise, denetim çubukları listesindeki baş konumdaki çubuğu alın. Aksi takdirde, denetim çubukları listesindeki kuyruk konumundaki çubuğu alın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen hizalama olan yerleştirme bölmesi; NULL aksi takdirde.
+Belirtilen hizalamayı içeren yerleştirme bölmesi; Aksi takdirde NULL.
 
-## <a name="cdockingmanagerfindpanebyid"></a><a name="findpanebyid"></a>CDockingManager::FindPaneByID
+## <a name="cdockingmanagerfindpanebyid"></a><a name="findpanebyid"></a> CDockingManager:: Findbölmesi Byıd
 
-Belirtilen denetim kimliğine göre bir bölme bulur.
+Belirtilen denetim KIMLIĞIYLE bir bölme bulur.
 
 ```
 virtual CBasePane* FindPaneByID(
@@ -810,20 +811,20 @@ virtual CBasePane* FindPaneByID(
 ### <a name="parameters"></a>Parametreler
 
 *uBarID*<br/>
-[içinde] Bulmak için bölmenin denetim kimliğini belirtir.
+'ndaki Bulunacak bölmenin denetim KIMLIĞINI belirtir.
 
-*bSearchMiniFrames*<br/>
-[içinde] TRUE arama tüm kayan bölmeleri eklemek için. Yalnızca kenetlenmiş bölmeleri içerecek şekilde YANLIŞ.
+*Bsearchminiframe 'Ler*<br/>
+'ndaki Aramaya tüm kayan bölmeleri dahil etmek için TRUE. Yalnızca sabitlenmiş bölmeleri dahil etmek için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen denetim kimliğine sahip [CBasePane](../../mfc/reference/cbasepane-class.md) nesnesi veya belirtilen bölme bulunamıyorsa NULL.
+Belirtilen denetim KIMLIĞINE sahip [CBasePane](../../mfc/reference/cbasepane-class.md) nesnesi veya belirtilen bölme bulunamazsa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingmanagerfinddocksitebypane"></a><a name="finddocksitebypane"></a>CDockingManager::FindDockSiteByPane
+## <a name="cdockingmanagerfinddocksitebypane"></a><a name="finddocksitebypane"></a> CDockingManager:: FindDockSiteByPane
 
-Hedef çubuk bölmesinin kimliğine sahip çubuk bölmesini döndürür.
+Hedef çubuk bölmesinin kimliği olan çubuk bölmesini döndürür.
 
 ```
 virtual CDockSite* FindDockSiteByPane(CPane* pTargetBar);
@@ -832,15 +833,15 @@ virtual CDockSite* FindDockSiteByPane(CPane* pTargetBar);
 ### <a name="parameters"></a>Parametreler
 
 *pTargetBar*<br/>
-[içinde] Hedef çubuk bölmesine bir işaretçi.
+'ndaki Hedef çubuk bölmesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hedef çubuk bölmesinin kimliğine sahip çubuk bölme; Böyle bir çubuk bölme yoksa NULL.
+Hedef çubuk bölmesinin kimliğine sahip olan çubuk bölmesi; Böyle bir çubuk bölmesi yoksa NULL.
 
-## <a name="cdockingmanagerfixupvirtualrects"></a><a name="fixupvirtualrects"></a>CDockingManager::FixupVirtualRects
+## <a name="cdockingmanagerfixupvirtualrects"></a><a name="fixupvirtualrects"></a> CDockingManager:: FixupVirtualRects
 
-Tüm geçerli araç çubuğu konumlarını sanal dikdörtgenlere adatır.
+Tüm geçerli araç çubuğu konumlarını sanal dikdörtgenlere kaydeder.
 
 ```
 virtual void FixupVirtualRects();
@@ -848,9 +849,9 @@ virtual void FixupVirtualRects();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı bir araç çubuğunu sürüklemeye başladığında, uygulama sanal *dikdörtgendeki*özgün konumunu hatırlar. Kullanıcı bir araç çubuğunu dock sitesinde taşırsa, araç çubuğu diğer araç çubuklarını değiştirebilir. Diğer araç çubuklarının özgün konumları ilgili sanal dikdörtgenlerde depolanır.
+Kullanıcı bir araç çubuğunu sürüklemeye başladığında, uygulama *sanal dikdörtgenin* orijinal konumunu anımsar. Kullanıcı bir araç çubuğunu dock sitesinde taşırken, araç çubuğu diğer araç çubuklarına kayabilir. Diğer araç çubuklarının özgün konumları ilgili sanal dikdörtgenlerde depolanır.
 
-## <a name="cdockingmanagerframefrompoint"></a><a name="framefrompoint"></a>CDockingManager::FrameFromPoint
+## <a name="cdockingmanagerframefrompoint"></a><a name="framefrompoint"></a> CDockingManager:: FrameFromPoint
 
 Verilen noktayı içeren çerçeveyi döndürür.
 
@@ -863,20 +864,20 @@ virtual CPaneFrameWnd* FrameFromPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pt*<br/>
-[içinde] Kontrol etmek için ekran koordinatlarında noktayı belirtir.
+*yönergelerinin*<br/>
+'ndaki Denetlenecek işaretçiyi ekran koordinatları olarak belirtir.
 
 *pFrameToExclude*<br/>
-[içinde] Dışlan bir çerçeveiçin bir işaretçi.
+'ndaki Dışlanacak çerçeveye yönelik bir işaretçi.
 
 *bFloatMultiOnly*<br/>
-[içinde] TRUE örnekleri olmayan çerçeveleri dışlamak `CMultiPaneFrameWnd`için ; YANLIŞ aksi takdirde.
+'ndaki Örneği olmayan kareleri hariç tutmak için TRUE `CMultiPaneFrameWnd` . Aksi takdirde FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Verilen noktayı içeren çerçeve; NULL aksi takdirde.
+Verilen noktayı içeren çerçeve; Aksi takdirde NULL.
 
-## <a name="cdockingmanagergetclientareabounds"></a><a name="getclientareabounds"></a>CDockingManager::GetClientAreaBounds
+## <a name="cdockingmanagergetclientareabounds"></a><a name="getclientareabounds"></a> CDockingManager:: Getclientareasýnýrlarý
 
 İstemci alanının sınırlarını içeren dikdörtgeni alır.
 
@@ -889,13 +890,13 @@ void GetClientAreaBounds(CRect& rcClient);
 ### <a name="parameters"></a>Parametreler
 
 *rcClient*<br/>
-[çıkış] İstemci alanının sınırlarını içeren dikdörtgen için bir başvuru.
+dışı İstemci alanının sınırlarını içeren dikdörtgene bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 İstemci alanının sınırlarını içeren dikdörtgen.
 
-## <a name="cdockingmanagergetdockingmode"></a><a name="getdockingmode"></a>CDockingManager::GetDockingMode
+## <a name="cdockingmanagergetdockingmode"></a><a name="getdockingmode"></a> CDockingManager:: GetDockingMode
 
 Geçerli yerleştirme modunu döndürür.
 
@@ -905,7 +906,7 @@ static AFX_DOCK_TYPE GetDockingMode();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yerleştirme modunu temsil eden bir yerumerator değeri. Aşağıdaki değerlerden biri olabilir:
+Geçerli yerleştirme modunu temsil eden bir Numaralandırıcı değeri. Aşağıdaki değerlerden biri olabilir:
 
 - DT_STANDARD
 
@@ -915,11 +916,11 @@ Geçerli yerleştirme modunu temsil eden bir yerumerator değeri. Aşağıdaki d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirme modunu ayarlamak için [CDockingManager'ı arayın::SetDockingMode.](#setdockingmode)
+Takma modunu ayarlamak için [CDockingManager:: SetDockingMode](#setdockingmode)komutunu çağırın.
 
-## <a name="cdockingmanagergetdocksiteframewnd"></a><a name="getdocksiteframewnd"></a>CDockingManager::GetDockSiteFrameWnd
+## <a name="cdockingmanagergetdocksiteframewnd"></a><a name="getdocksiteframewnd"></a> CDockingManager:: GetDockSiteFrameWnd
 
-Ana pencere çerçevesiiçin bir işaretçi alır.
+Üst pencere çerçevesine bir işaretçi alır.
 
 ```
 CFrameWnd* GetDockSiteFrameWnd() const;
@@ -927,11 +928,11 @@ CFrameWnd* GetDockSiteFrameWnd() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ana pencere çerçevesiiçin bir işaretçi.
+Üst pencere çerçevesine yönelik bir işaretçi.
 
-## <a name="cdockingmanagergetenabledautohidealignment"></a><a name="getenabledautohidealignment"></a>CDockingManager::GetEnabledAutoHideAlignment
+## <a name="cdockingmanagergetenabledautohidealignment"></a><a name="getenabledautohidealignment"></a> CDockingManager:: Getenabledadutohidehizalaması
 
-Bölmelerin etkin hizalanmasını verir.
+Bölmelerin etkin hizalamasını döndürür.
 
 ```
 DWORD GetEnabledAutoHideAlignment() const;
@@ -939,15 +940,15 @@ DWORD GetEnabledAutoHideAlignment() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-CBRS_ALIGN_ bayraklarının bityiş li bir leşimi veya otomatik hide bölmeleri etkinleştirilmezse 0. Daha fazla bilgi için [Bkz. CFrameWnd::EnableDocking](../../mfc/reference/cframewnd-class.md#enabledocking).
+CBRS_ALIGN_ bayraklarının bit düzeyinde birleşimi veya otomatik gizleme bölmeleri etkinleştirilmemişse 0. Daha fazla bilgi için bkz. [CFrameWnd:: EnableDocking](../../mfc/reference/cframewnd-class.md#enabledocking).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yöntem, otomatik hide denetim çubukları için etkin hizalama döndürür. Otomatik hide çubukları etkinleştirmek için [CFrameWndEx'i arayın::Otomatik HidePanes'i etkinleştirin.](../../mfc/reference/cframewndex-class.md#enableautohidepanes)
+Yöntemi otomatik gizleme denetim çubukları için etkinleştirilmiş hizalamayı döndürür. Otomatik gizleme çubuklarını etkinleştirmek için [CFrameWndEx:: Enableotomatik Hidebölmelerini](../../mfc/reference/cframewndex-class.md#enableautohidepanes)çağırın.
 
-## <a name="cdockingmanagergetminiframes"></a><a name="getminiframes"></a>CDockingManager::GetMiniFrames
+## <a name="cdockingmanagergetminiframes"></a><a name="getminiframes"></a> CDockingManager:: Getminiframe 'Ler
 
-Mini çerçevelerin bir listesini alır.
+Miniframe 'ler listesini alır.
 
 ```
 const CObList& GetMiniFrames() const;
@@ -955,9 +956,9 @@ const CObList& GetMiniFrames() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yerleştirme yöneticisine ait denetim çubuklarını içeren mini çerçevelerin listesi.
+Yerleşik yöneticiye ait olan denetim çubuklarını içeren miniframe 'ler listesi.
 
-## <a name="cdockingmanagergetouteredgebounds"></a><a name="getouteredgebounds"></a>CDockingManager::GetOuterEdgeBounds
+## <a name="cdockingmanagergetouteredgebounds"></a><a name="getouteredgebounds"></a> CDockingManager:: Getouteredgesınırlara
 
 Çerçevenin dış kenarlarını içeren bir dikdörtgen alır.
 
@@ -969,9 +970,9 @@ CRect GetOuterEdgeBounds() const;
 
 Çerçevenin dış kenarlarını içeren bir dikdörtgen.
 
-## <a name="cdockingmanagergetpanelist"></a><a name="getpanelist"></a>CDockingManager::GetPaneList
+## <a name="cdockingmanagergetpanelist"></a><a name="getpanelist"></a> CDockingManager:: Getbölmesi listesi
 
-Yerleştirme yöneticisine ait bölmelerin listesini verir. Bu, tüm kayan bölmeleri içerir.
+Yerleşik yöneticiye ait olan bölmelerin listesini döndürür. Bu, tüm kayan bölmeleri içerir.
 
 ```cpp
 void GetPaneList(
@@ -983,27 +984,27 @@ void GetPaneList(
 
 ### <a name="parameters"></a>Parametreler
 
-*lstBars*<br/>
-[içinde, dışarı] Geçerli yerleştirme yöneticisinin tüm bölmelerini içerir.
+*Lstbar çubukları*<br/>
+[in, out] Geçerli yerleşik yöneticinin tüm bölmelerini içerir.
 
-*bIncludeAutohide*<br/>
-[içinde] Autohide modunda olan bölmeleri eklemek için TRUE; aksi takdirde, YANLIŞ.
+*Bincludeotomatik gizle*<br/>
+'ndaki Otomatik gizleme modunda olan bölmeleri dahil etmek için TRUE; Aksi takdirde, FALSE.
 
-*pRTCFiltre*<br/>
-[içinde] NULL değilse, döndürülen liste yalnızca belirtilen çalışma zamanı sınıfının bölmelerini içerir.
+*pRTCFilter*<br/>
+'ndaki NULL değilse, döndürülen listede yalnızca belirtilen çalışma zamanı sınıfının bölmeleri bulunur.
 
-*bIncludeTabs*<br/>
-[içinde] SEKMELER eklemek için TRUE; aksi takdirde, YANLIŞ.
+*Bincludesekmeleri*<br/>
+'ndaki Sekmeleri dahil etmek için doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirme yöneticisinde sekmeli bölmeler varsa, yöntem işaretçileri [CBaseTabbedPane Sınıfı](../../mfc/reference/cbasetabbedpane-class.md) nesnelerine döndürür ve sekmeleri açıkça düzeltmeniz gerekir.
+Yerleştirme yöneticisinde sekmeli bölmeler varsa, yöntem [CBaseTabbedPane sınıfı](../../mfc/reference/cbasetabbedpane-class.md) nesnelerine işaretçiler döndürür ve sekmeleri açıkça numaralandırabilirsiniz.
 
-Belirli bir bölme sınıfı elde etmek için *pRTCFilter'i* kullanın. Örneğin, bu değeri uygun şekilde ayarlayarak yalnızca araç çubukları elde edebilirsiniz.
+Belirli bir bölme sınıfı elde etmek için *pRTCFilter* kullanın. Örneğin, bu değeri uygun şekilde ayarlayarak yalnızca araç çubuklarını elde edebilirsiniz.
 
-## <a name="cdockingmanagergetsmartdockingmanager"></a><a name="getsmartdockingmanager"></a>CDockingManager::GetSmartDockingManager
+## <a name="cdockingmanagergetsmartdockingmanager"></a><a name="getsmartdockingmanager"></a> CDockingManager:: GetSmartDockingManager
 
-Akıllı yerleştirme yöneticisine bir işaretçi alır.
+Akıllı yerleştirme Yöneticisi için bir işaretçi alır.
 
 ```
 CSmartDockingManager* GetSmartDockingManager();
@@ -1011,11 +1012,11 @@ CSmartDockingManager* GetSmartDockingManager();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Akıllı yerleştirme yöneticisiiçin bir işaretçi.
+Akıllı yerleştirme Yöneticisi işaretçisi.
 
-## <a name="cdockingmanagergetsmartdockingmanagerpermanent"></a><a name="getsmartdockingmanagerpermanent"></a>CDockingManager::GetSmartDockingManagerPermanent
+## <a name="cdockingmanagergetsmartdockingmanagerpermanent"></a><a name="getsmartdockingmanagerpermanent"></a> CDockingManager:: Getsmartdockingmanagerkalıcı
 
-Akıllı yerleştirme yöneticisine bir işaretçi alır.
+Akıllı yerleştirme Yöneticisi için bir işaretçi alır.
 
 ```
 CSmartDockingManager* GetSmartDockingManagerPermanent() const;
@@ -1023,11 +1024,11 @@ CSmartDockingManager* GetSmartDockingManagerPermanent() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Akıllı yerleştirme yöneticisiiçin bir işaretçi.
+Akıllı yerleştirme Yöneticisi işaretçisi.
 
-## <a name="cdockingmanagergetsmartdockingparams"></a><a name="getsmartdockingparams"></a>CDockingManager::GetSmartDockingParams
+## <a name="cdockingmanagergetsmartdockingparams"></a><a name="getsmartdockingparams"></a> CDockingManager:: GetSmartDockingParams
 
-Yerleştirme yöneticisi için akıllı yerleştirme parametrelerini verir.
+Yerleşik yöneticinin akıllı yerleştirme parametrelerini döndürür.
 
 ```
 static CSmartDockingInfo& GetSmartDockingParams();
@@ -1035,13 +1036,13 @@ static CSmartDockingInfo& GetSmartDockingParams();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli yerleştirme yöneticisi için akıllı yerleştirme parametrelerini içeren sınıf. Daha fazla bilgi için [CSmartDockingInfo Sınıfı'na](../../mfc/reference/csmartdockinginfo-class.md)bakın.
+Geçerli yerleşik yöneticinin akıllı yerleştirme parametrelerini içeren sınıf. Daha fazla bilgi için bkz. [CSmartDockingInfo sınıfı](../../mfc/reference/csmartdockinginfo-class.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingmanagerhideautohidepanes"></a><a name="hideautohidepanes"></a>CDockingManager::HideAutoHidePanes
+## <a name="cdockingmanagerhideautohidepanes"></a><a name="hideautohidepanes"></a> CDockingManager:: Hideoto Hidebölmeleri
 
-Otomatik hide modunda olan bir bölmeyi gizler.
+Otomatik gizleme modundaki bir bölmeyi gizler.
 
 ```cpp
 void HideAutoHidePanes(
@@ -1052,14 +1053,14 @@ void HideAutoHidePanes(
 ### <a name="parameters"></a>Parametreler
 
 *pBarToExclude*<br/>
-[içinde] Bir çubuğun gizlenmemasını engellemek için işaretçi.
+'ndaki Gizlenerek dışlanacak bir çubuğa yönelik işaretçi.
 
-*bHemen*<br/>
-[içinde] Hemen bölmeyi gizlemek için TRUE; Otohide etkisi ile bölmeyi gizlemek için FALSE.
+*banında*<br/>
+'ndaki Bölmeyi hemen gizlemek için TRUE; Bölmeyi otomatik gizleme efektiyle gizlemek için FALSE.
 
-## <a name="cdockingmanagerinsertdocksite"></a><a name="insertdocksite"></a>CDockingManager::InsertDockSite
+## <a name="cdockingmanagerinsertdocksite"></a><a name="insertdocksite"></a> CDockingManager:: ınsertdocksite
 
-Bir dock bölmesi oluşturur ve denetim çubukları listesine ekler.
+Bir yerleştirme bölmesi oluşturur ve denetim çubukları listesine ekler.
 
 ```
 BOOL InsertDockSite(
@@ -1070,20 +1071,20 @@ BOOL InsertDockSite(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bilgi*<br/>
-[içinde] Dock bölmesi hakkında hizalama bilgilerini içeren bir yapı.
+*bilgisine*<br/>
+'ndaki Dock bölmesi hakkında hizalama bilgilerini içeren bir yapı.
 
 *dwAlignToInsertAfter*<br/>
-[içinde] Dock bölmesinin hizalanması.
+'ndaki Dock bölmesinin hizalaması.
 
 *ppDockBar*<br/>
-[çıkış] Dock bölmesine işaretçi için bir işaretçi.
+dışı Dock bölmesine yönelik bir işaretçi işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dock bölmesi başarıyla oluşturulduysa DOĞRU; YANLIŞ aksi takdirde.
+Dock bölmesi başarıyla oluşturulduysa TRUE; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagerinsertpane"></a><a name="insertpane"></a>CDockingManager::InsertPane
+## <a name="cdockingmanagerinsertpane"></a><a name="insertpane"></a> CDockingManager:: InsertPane
 
 Denetim çubukları listesine bir denetim bölmesi ekler.
 
@@ -1097,25 +1098,25 @@ BOOL InsertPane(
 ### <a name="parameters"></a>Parametreler
 
 *pControlBar*<br/>
-[içinde] Denetim bölmesine işaretçi.
+'ndaki Denetim bölmesine yönelik bir işaretçi.
 
 *pTarget*<br/>
-[içinde] Hedef bölmeye işaretçi.
+'ndaki Hedef bölmeye yönelik bir işaretçi.
 
 *bAfter*<br/>
-[içinde] Hedef bölmenin konumundan sonra bölmeyi eklemek için DOĞRU; YANLIŞ aksi takdirde.
+'ndaki Hedef bölmenin konumundan sonra bölmeyi eklemek için TRUE; Aksi takdirde FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim bölmesi denetim çubukları listesine başarıyla eklenirse DOĞRU; YANLIŞ aksi takdirde.
+Denetim bölmesi denetim çubukları listesine başarıyla eklendiyse TRUE; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim bölmesi denetim çubukları listesinde zaten yse veya hedef bölme denetim çubukları listesinde yoksa bu yöntem yanlış döndürür.
+Denetim bölmesi zaten denetim çubukları listesinde ise veya hedef bölme denetim çubukları listesinde yoksa, bu yöntem false döndürür.
 
-## <a name="cdockingmanagerisdocksitemenu"></a><a name="isdocksitemenu"></a>CDockingManager::IsDockSiteMenu
+## <a name="cdockingmanagerisdocksitemenu"></a><a name="isdocksitemenu"></a> CDockingManager:: IsDockSiteMenu
 
-Açılır menü yürek bölmelerin alt yazılarında görüntülenip görüntülenmediğini belirtir.
+Tüm bölmelerin resim yazılarında bir açılır menünün görüntülenip görüntülenmeyeceğini belirtir.
 
 ```
 static BOOL IsDockSiteMenu();
@@ -1123,15 +1124,15 @@ static BOOL IsDockSiteMenu();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir dock site menüsü tüm yerleştirme bölmelerinin altyazılarında görüntülenirse DOĞRU; aksi takdirde YANLIŞ.
+Tüm yerleştirme bölmelerindeki resim yazılarında bir Yerleştir sitesi menüsü görüntüleniyorsa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CDockingManager::EnableDockSiteMenu'yi](#enabledocksitemenu)arayarak dock site menüsünü etkinleştirebilirsiniz.
+[CDockingManager:: EnableDockSiteMenu](#enabledocksitemenu)' i çağırarak site menüsünü Yerleştir ' i etkinleştirebilirsiniz.
 
-## <a name="cdockingmanagerisinadjustlayout"></a><a name="isinadjustlayout"></a>CDockingManager::IsInAdjustLayout
+## <a name="cdockingmanagerisinadjustlayout"></a><a name="isinadjustlayout"></a> CDockingManager:: ısınadjustlayout
 
-Tüm bölmelerin düzenlerinin ayarlı paçüsten olup olmadığını belirler.
+Tüm bölmelerin düzenlerin ayarlanacağını belirler.
 
 ```
 BOOL IsInAdjustLayout() const;
@@ -1139,11 +1140,11 @@ BOOL IsInAdjustLayout() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Tüm bölmelerin düzenleri ayarlanırsa DOĞRU; YANLIŞ aksi takdirde.
+Tüm bölmelerin düzenleri ayarlanıyorsa doğru; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagerisolecontainermode"></a><a name="isolecontainermode"></a>CDockingManager::IsOLEContainerMode
+## <a name="cdockingmanagerisolecontainermode"></a><a name="isolecontainermode"></a> CDockingManager:: ısolecontainermode
 
-Yerleştirme yöneticisinin OLE kapsayıcı modunda olup olmadığını belirtir.
+Yerleşik yöneticinin OLE kapsayıcı modunda olup olmadığını belirtir.
 
 ```
 BOOL IsOLEContainerMode() const;
@@ -1151,15 +1152,15 @@ BOOL IsOLEContainerMode() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yerleştirme yöneticisi OLE kapsayıcı modundaysa DOĞRU; aksi takdirde, YANLIŞ.
+Yerleştirme Yöneticisi OLE kapsayıcı modundaysa doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-OLE kapsayıcı modunda, tüm yerleştirme bölmeleri ve uygulama araç çubukları gizlenir. [CDockingManager::m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode) to TRUE'yu ayarladıysanız bölmeler de bu modda gizlenir.
+OLE kapsayıcı modunda, tüm yerleştirme bölmeleri ve uygulama araç çubukları gizlidir. [CDockingManager:: M_BHIDEDOCKINGBARSINCONTAINERMODE](#m_bhidedockingbarsincontainermode) true olarak ayarladıysanız bölmeler da bu modda gizlenir.
 
-## <a name="cdockingmanagerispointneardocksite"></a><a name="ispointneardocksite"></a>CDockingManager::IsPointNearDockSite
+## <a name="cdockingmanagerispointneardocksite"></a><a name="ispointneardocksite"></a> CDockingManager:: Ispointyaklaştığında Docksite
 
-Belirli bir noktanın dock bölgesine yakın olup olmadığını belirler.
+Belirtilen noktanın Dock sitesine yakın olup olmadığını belirler.
 
 ```
 BOOL IsPointNearDockSite(
@@ -1170,22 +1171,22 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nokta*<br/>
-[içinde] Belirtilen nokta.
+*seçeneğinin*<br/>
+'ndaki Belirtilen nokta.
 
-*dwBarAlignment*<br/>
-[çıkış] Noktanın hangi kenarın yakın olduğunu belirtir. Olası değerler CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM.
+*Dwbarhizalaması*<br/>
+dışı Noktanın yakınında olduğunu belirtir. Olası değerler şunlardır CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM.
 
-*bOuterEdge*<br/>
-[çıkış] Nokta rıhtım alanının dış sınırına yakınsa DOĞRU; YANLIŞ aksi takdirde.
+*Bukenar*<br/>
+dışı Nokta, dock sitesinin dış kenarlığına yaklaşmışsa TRUE; Aksi takdirde FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nokta rıhtım alanına yakınsa DOĞRU; aksi takdirde YANLIŞ.
+Nokta dock sitesinin yakınında ise doğru; Aksi halde yanlış.
 
-## <a name="cdockingmanagerisprintpreviewvalid"></a><a name="isprintpreviewvalid"></a>CDockingManager::IsPrintPreviewValid
+## <a name="cdockingmanagerisprintpreviewvalid"></a><a name="isprintpreviewvalid"></a> CDockingManager:: ısprintönizlemesi geçerli
 
-Yazdırma önizleme modunun ayarlı olup olmadığını belirler.
+Baskı Önizleme modunun ayarlanmış olup olmadığını belirler.
 
 ```
 BOOL IsPrintPreviewValid() const;
@@ -1193,11 +1194,11 @@ BOOL IsPrintPreviewValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yazdırma önizleme modu ayarlanmışsa TRUE; YANLIŞ aksi takdirde.
+Baskı önizleme modu ayarlandıysa doğru; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagerloadstate"></a><a name="loadstate"></a>CDockingManager::LoadState
+## <a name="cdockingmanagerloadstate"></a><a name="loadstate"></a> CDockingManager:: LoadState
 
-Takma yöneticisinin durumunu kayıt defterinden yükler.
+Kayıt defterindeki yerleştirme yöneticisinin durumunu yükler.
 
 ```
 virtual BOOL LoadState(
@@ -1208,16 +1209,16 @@ virtual BOOL LoadState(
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-[içinde] Profil adı.
+'ndaki Profil adı.
 
-*uiID*<br/>
-[içinde] Yanaşma yöneticisinin kimliği.
+*Uııd*<br/>
+'ndaki Yerleştirme yöneticisinin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yerleştirme yöneticisi durumu başarıyla yüklenmişse DOĞRU; aksi takdirde YANLIŞ.
+Yerleştirme Yöneticisi durumu başarıyla yüklenmişse, doğru; Aksi halde yanlış.
 
-## <a name="cdockingmanagerlockupdate"></a><a name="lockupdate"></a>CDockingManager::LockUpdate
+## <a name="cdockingmanagerlockupdate"></a><a name="lockupdate"></a> CDockingManager:: LockUpdate
 
 Verilen pencereyi kilitler.
 
@@ -1227,16 +1228,16 @@ void LockUpdate(BOOL bLock);
 
 ### <a name="parameters"></a>Parametreler
 
-*Blok*<br/>
-[içinde] Pencere kilitliyse DOĞRU; YANLIŞ aksi takdirde.
+*Engelleyin*<br/>
+'ndaki Pencere kilitliyse doğru; Aksi takdirde FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir pencere kilitlendiğinde, hareket ettirilemez ve yeniden çizilemez.
+Bir pencere kilitlendiğinde, taşınamaz ve yeniden çizilmez.
 
-## <a name="cdockingmanagerm_bhidedockingbarsincontainermode"></a><a name="m_bhidedockingbarsincontainermode"></a>CDockingManager::m_bHideDockingBarsInContainerMode
+## <a name="cdockingmanagerm_bhidedockingbarsincontainermode"></a><a name="m_bhidedockingbarsincontainermode"></a> CDockingManager:: m_bHideDockingBarsInContainerMode
 
-Yerleştirme yöneticisinin bölmeleri OLE kapsayıcı modunda gizleyip gizlemediğini belirtir.
+Yerleştirme yöneticisinin, OLE kapsayıcı modundaki bölmeleri gizleyemeyeceğini belirtir.
 
 ```
 AFX_IMPORT_DATA static BOOL m_bHideDockingBarsInContainerMode;
@@ -1244,9 +1245,9 @@ AFX_IMPORT_DATA static BOOL m_bHideDockingBarsInContainerMode;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Uygulama OLE kapsayıcı modundayken ana çerçeveye sabitlenmiş tüm bölmeleri görünür tutmak istiyorsanız bu değeri FALSE olarak ayarlayın. Varsayılan olarak, bu değer TRUE'dur.
+Uygulama OLE kapsayıcı modundayken görünen ana çerçeveye yerleştirilmiş tüm bölmeleri tutmak istiyorsanız bu değeri FALSE olarak ayarlayın. Bu değer varsayılan olarak TRUE 'dur.
 
-## <a name="cdockingmanagerm_dockmodeglobal"></a><a name="m_dockmodeglobal"></a>CDockingManager::m_dockModeGlobal
+## <a name="cdockingmanagerm_dockmodeglobal"></a><a name="m_dockmodeglobal"></a> CDockingManager:: m_dockModeGlobal
 
 Genel yerleştirme modunu belirtir.
 
@@ -1256,9 +1257,9 @@ AFX_IMPORT_DATA static AFX_DOCK_TYPE m_dockModeGlobal;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, her yerleştirme bölmesi bu yerleştirme modunu kullanır. Bu alanın ayarlanabileceği değerler hakkında daha fazla bilgi için [Bkz. CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).
+Varsayılan olarak, her takma bölmesi bu yerleştirme modunu kullanır. Bu alanın ayarlandığı değerler hakkında daha fazla bilgi için bkz. [CBasePane:: GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).
 
-## <a name="cdockingmanagerm_ndocksensitivity"></a><a name="m_ndocksensitivity"></a>CDockingManager::m_nDockSensitivity
+## <a name="cdockingmanagerm_ndocksensitivity"></a><a name="m_ndocksensitivity"></a> CDockingManager:: m_nDockSensitivity
 
 Yerleştirme hassasiyetini belirtir.
 
@@ -1268,11 +1269,11 @@ AFX_IMPORT_DATA static int m_nDockSensitivity;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirme duyarlılığı, kayan bölmenin, çerçeve nin durumunu kenetlenmiş olarak değiştirmeden önce bir yerleştirme bölmesine, yerleştirme alanına veya başka bir bölmeye ne kadar yaklaşabileceğini tanımlar.
+Yerleştirme duyarlılığı, çerçeve durumunu sabitlenmiş olarak değiştirmeden önce bir kayan bölmenin bir yerleştirme bölmesine, yerleştirme sitesine veya başka bir bölmeye Nasıl yaklaşabileceğini tanımlar.
 
-## <a name="cdockingmanagerm_ntimeoutbeforedockingbardock"></a><a name="m_ntimeoutbeforedockingbardock"></a>CDockingManager::m_nTimeOutBeforeDockingBarDock
+## <a name="cdockingmanagerm_ntimeoutbeforedockingbardock"></a><a name="m_ntimeoutbeforedockingbardock"></a> CDockingManager:: m_nTimeOutBeforeDockingBarDock
 
-Yerleştirme bölmesi hemen yerleştirme modunda kenetlenmeden önce saati milisaniye cinsinden belirtir.
+Takma bölmesinin anında yerleştirme moduna yerleştirilme süresini milisaniye olarak belirtir.
 
 ```
 static UINT m_nTimeOutBeforeDockingBarDock;
@@ -1280,11 +1281,11 @@ static UINT m_nTimeOutBeforeDockingBarDock;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölme kenetlenmeden önce, çerçeve belirtilen süreyi bekler. Bu, kullanıcı hala sürüklerken bölmenin yanlışlıkla bir konuma sabitlemesini önler.
+Bir bölme yerleştirilmadan önce, çerçeve belirtilen süreyi bekler. Bu, Kullanıcı hala sürüklerken bölmenin bir konuma yanlışlıkla yerleştirilmelerini önler.
 
-## <a name="cdockingmanagerm_ntimeoutbeforetoolbardock"></a><a name="m_ntimeoutbeforetoolbardock"></a>CDockingManager::m_nTimeOutBeforeToolBarDock
+## <a name="cdockingmanagerm_ntimeoutbeforetoolbardock"></a><a name="m_ntimeoutbeforetoolbardock"></a> CDockingManager:: m_nTimeOutBeforeToolBarDock
 
-Araç çubuğu ana çerçeve penceresine sabitlenmeden önce saati milisaniye cinsinden belirtir.
+Bir araç çubuğunun ana çerçeve penceresine yerleştirilme süresini milisaniye olarak belirtir.
 
 ```
 static UINT m_nTimeOutBeforeToolBarDock;
@@ -1292,11 +1293,11 @@ static UINT m_nTimeOutBeforeToolBarDock;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Araç çubuğu kenetlenmeden önce, çerçeve belirtilen süreyi bekler. Bu, kullanıcı hala sürüklerken araç çubuğunun yanlışlıkla bir konuma sabitlemesini önler.
+Bir araç çubuğu yerleştirilmadan önce, çerçeve belirtilen süreyi bekler. Bu, Kullanıcı hala sürüklerken araç çubuğunun bir konuma yanlışlıkla yerleştirilmelerini önler.
 
-## <a name="cdockingmanageronactivateframe"></a><a name="onactivateframe"></a>CDockingManager::OnActivateFrame
+## <a name="cdockingmanageronactivateframe"></a><a name="onactivateframe"></a> CDockingManager:: OnActivateFrame
 
-Çerçeve penceresi etkin hale getirildiğinde veya devre dışı bırakıldığında çerçeve tarafından çağrılır.
+Çerçeve penceresi etkin hale getirildiğinde veya devre dışı bırakıldığında Framework tarafından çağırılır.
 
 ```
 virtual void OnActivateFrame(BOOL bActivate);
@@ -1304,12 +1305,12 @@ virtual void OnActivateFrame(BOOL bActivate);
 
 ### <a name="parameters"></a>Parametreler
 
-*bEtkinleştir*<br/>
-[içinde] TRUE ise, çerçeve penceresi etkin hale getirilir; FALSE ise, çerçeve penceresi devre dışı bırakılır.
+*Bacetkinleştir*<br/>
+'ndaki TRUE ise çerçeve penceresi etkin hale getirilir; YANLıŞSA, çerçeve penceresi devre dışı bırakılır.
 
-## <a name="cdockingmanageronclosepopupmenu"></a><a name="onclosepopupmenu"></a>CDockingManager::OnClosePopupMenu
+## <a name="cdockingmanageronclosepopupmenu"></a><a name="onclosepopupmenu"></a> CDockingManager:: OnClosePopupMenu
 
-Etkin bir açılır menü bir WM_DESTROY iletisi işlediğinde çerçeve tarafından çağrılır.
+Etkin bir açılır menü WM_DESTROY bir ileti işlediğinde Framework tarafından çağırılır.
 
 ```cpp
 void OnClosePopupMenu();
@@ -1317,11 +1318,11 @@ void OnClosePopupMenu();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, geçerli ana pencereyi kapatmak üzereyken WM_DESTROY bir ileti gönderir. Bir `CMFCPopupMenu` nesne WM_DESTROY iletisi `CMFCPopupMenu` işlerken çerçeve penceresine ait nesnelerden bildirimleri işlemek için bu yöntemi geçersiz kılın.
+Çerçeve, geçerli ana pencereyi kapatmak üzere olduğunda bir WM_DESTROY iletisi gönderir. `CMFCPopupMenu`Bir `CMFCPopupMenu` nesne WM_DESTROY iletisini işlediğinde çerçeve penceresine ait nesnelerden bildirimleri işlemek için bu yöntemi geçersiz kılın.
 
-## <a name="cdockingmanageronmoveminiframe"></a><a name="onmoveminiframe"></a>CDockingManager::OnMoveMiniFrame
+## <a name="cdockingmanageronmoveminiframe"></a><a name="onmoveminiframe"></a> CDockingManager:: OnMoveMiniFrame
 
-Bir mini çerçeve penceresi taşımak için çerçeve tarafından çağrılır.
+Bir mini çerçeve penceresini taşımak için Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
@@ -1330,15 +1331,15 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ### <a name="parameters"></a>Parametreler
 
 *pFrame*<br/>
-[içinde] Mini çerçeve penceresi için bir işaretçi.
+'ndaki Mini çerçeve penceresine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yöntem başarılı olursa DOĞRU; aksi takdirde YANLIŞ.
+Yöntem başarılı olursa doğru; Aksi halde yanlış.
 
-## <a name="cdockingmanageronpanecontextmenu"></a><a name="onpanecontextmenu"></a>CDockingManager::OnPaneContextMenu
+## <a name="cdockingmanageronpanecontextmenu"></a><a name="onpanecontextmenu"></a> CDockingManager:: Onbölmesi ContextMenu
 
-Bölmelerin bir listesini içeren bir menü oluşturduğunda çerçeve tarafından çağrılır.
+Bir bölme listesi olan bir menü oluşturduğunda Framework tarafından çağırılır.
 
 ```cpp
 void OnPaneContextMenu(CPoint point);
@@ -1346,10 +1347,10 @@ void OnPaneContextMenu(CPoint point);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nokta*<br/>
-[içinde] Menünün konumunu belirtir.
+*seçeneğinin*<br/>
+'ndaki Menünün konumunu belirtir.
 
-## <a name="cdockingmanagerpanefrompoint"></a><a name="panefrompoint"></a>CDockingManager::PaneFromPoint
+## <a name="cdockingmanagerpanefrompoint"></a><a name="panefrompoint"></a> CDockingManager::P aneFromPoint
 
 Verilen noktayı içeren bölmeyi döndürür.
 
@@ -1372,38 +1373,38 @@ virtual CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nokta*<br/>
-[içinde] Kontrol etmek için ekran koordinatlarında noktayı belirtir.
+*seçeneğinin*<br/>
+'ndaki Denetlenecek işaretçiyi ekran koordinatları olarak belirtir.
 
-*nDuyarlılık*<br/>
-[içinde] Denetlenen her bölmenin pencere dikdörtgenini şişirme değeri. Verilen nokta bu şişirilmiş bölgedeyse, bölme arama ölçütlerini karşılar.
+*Duyarlılık*<br/>
+'ndaki İşaretlenen her bölmenin pencere dikdörtgenini Şişir değeri. Söz konusu nokta bu anormal bölgede ise, bir bölme arama ölçütlerini karşılar.
 
 *bExactBar*<br/>
-[içinde] *NSensitivity* parametresini yoksaymak için DOĞRU; aksi takdirde, YANLIŞ.
+'ndaki *Nduyarlılık* parametresini YOKSAYMAK için true; Aksi takdirde, FALSE.
 
 *pRTCBarType*<br/>
-[içinde] NULL değilse, yöntem yalnızca belirtilen türdeki bölmeleri arar.
+'ndaki NULL değilse, yöntemi yalnızca belirtilen türdeki bölmeleri arar.
 
-*bCheckGörünürlük*<br/>
-[içinde] True sadece görünür bölmeleri kontrol etmek için; aksi takdirde, YANLIŞ.
+*bCheckVisibility*<br/>
+'ndaki Yalnızca görünür bölmeleri denetlemek için TRUE; Aksi takdirde, FALSE.
 
-*dwHizalama*<br/>
-[çıkış] Belirtilen noktada bir bölme bulunursa, bu parametre bölmenin belirtilen noktaya en yakın tarafını içerir. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+*Dwhizalaması*<br/>
+dışı Belirtilen noktada bir bölme bulunursa, bu parametre belirtilen noktaya en yakın bölmenin tarafını içerir. Daha fazla bilgi için, açıklamalar bölümüne bakın.
 
-*pBarToIgnore*<br/>
-[içinde] NULL değilse, yöntem bu parametre tarafından belirtilen bölmeleri yoksa.
+*Pbartoıgnore*<br/>
+'ndaki NULL değilse, yöntemi bu parametre tarafından belirtilen bölmeleri yoksayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Verilen noktayı içeren [CBasePane](../../mfc/reference/cbasepane-class.md)türetilmiş nesne veya bölme bulunamadıysa NULL.
+[CBasePane](../../mfc/reference/cbasepane-class.md)-verilen noktayı içeren türetilmiş nesne veya hiçbir bölme bulunmazsa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlev döndürdüğünde ve bir bölme bulunduğunda, *dwAlignment* belirtilen noktanın hizalanmasını içerir. Örneğin, nokta bölmenin en üstüne en yakın sayılsaydı, *dwAlignment* CBRS_ALIGN_TOP olarak ayarlanır.
+İşlev döndürüldüğünde ve bir bölme bulunduğunda *dwhizalaması* belirtilen noktanın hizalamasını içerir. Örneğin, nokta bölmenin en üstünde yer alıyorsa *Dwhizalaması* CBRS_ALIGN_TOP olarak ayarlanır.
 
-## <a name="cdockingmanagerprocesspanecontextmenucommand"></a><a name="processpanecontextmenucommand"></a>CDockingManager::ProcessPaneContextMenuCommand
+## <a name="cdockingmanagerprocesspanecontextmenucommand"></a><a name="processpanecontextmenucommand"></a> CDockingManager::P rocessPaneContextMenuCommand
 
-Belirtilen komut için bir onay kutusunu seçmek veya temizlemek ve gösterilen bölmenin düzenini yeniden hesaplamak için çerçeve tarafından çağrılır.
+Belirtilen komutun onay kutusunu seçmek veya temizlemek ve gösterilen bölmenin yerleşimini yeniden hesaplamak için Framework tarafından çağırılır.
 
 ```
 BOOL ProcessPaneContextMenuCommand(
@@ -1415,25 +1416,25 @@ BOOL ProcessPaneContextMenuCommand(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-[içinde] Menüdeki bir kontrol çubuğunun kimliği.
+*NID*<br/>
+'ndaki Menüdeki bir denetim çubuğunun kimliği.
 
-*Ncode*<br/>
-[içinde] Komut bildirim kodu.
+*nCode*<br/>
+'ndaki Komut bildirim kodu.
 
-*pEkstra*<br/>
-[içinde] `CCmdUI` *nCode'un* CN_UPDATE_COMMAND_UI olup olmadığını işaretçiye atan geçersiz kılma işaretçisi.
+*pExtra*<br/>
+'ndaki Void işaretçisi, `CCmdUI` *ncode* CN_UPDATE_COMMAND_UI ise işaretçisine bir işaretçi olarak oluşturulur.
 
 *pHandlerInfo*<br/>
-[içinde] Bilgi yapısına işaretçi. Bu parametre kullanılmaz.
+'ndaki Bilgi yapısına yönelik bir işaretçi. Bu parametre kullanılmaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*pEXtra* NULL değilse ve *nCode* CN_UPDATE_COMMAND_UI eşitse veya belirtilen *nID'ye*sahip bir kontrol çubuğu varsa DOĞRU.
+*PExtra* null değilse ve *nCode* CN_UPDATE_COMMAND_UI eşitse ya da belirtilen *NID*'ye sahip bir denetim çubuğu varsa true.
 
-## <a name="cdockingmanagerrecalclayout"></a><a name="recalclayout"></a>CDockingManager::RecalcLayout
+## <a name="cdockingmanagerrecalclayout"></a><a name="recalclayout"></a> CDockingManager:: RecalcLayout
 
-Denetimler listesinde bulunan denetimlerin iç düzenini yeniden hesaplar.
+Denetimler listesinde bulunan denetimlerin iç yerleşimini yeniden hesaplar.
 
 ```
 virtual void RecalcLayout(BOOL bNotify = TRUE);
@@ -1442,9 +1443,9 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ### <a name="parameters"></a>Parametreler
 
 *bNotify*<br/>
-[içinde] Bu parametre kullanılmaz.
+'ndaki Bu parametre kullanılmaz.
 
-## <a name="cdockingmanagerreleaseemptypanecontainers"></a><a name="releaseemptypanecontainers"></a>CDockingManager::ReleaseEmptyPaneContainers
+## <a name="cdockingmanagerreleaseemptypanecontainers"></a><a name="releaseemptypanecontainers"></a> CDockingManager:: ReleaseEmptyPaneContainers
 
 Boş bölme kapsayıcılarını serbest bırakır.
 
@@ -1452,7 +1453,7 @@ Boş bölme kapsayıcılarını serbest bırakır.
 void ReleaseEmptyPaneContainers();
 ```
 
-## <a name="cdockingmanagerremovehiddenmditabbedbar"></a><a name="removehiddenmditabbedbar"></a>CDockingManager::RemoveHiddenMDITabbedBar
+## <a name="cdockingmanagerremovehiddenmditabbedbar"></a><a name="removehiddenmditabbedbar"></a> CDockingManager:: Removehiddenmdıtabbedbar
 
 Belirtilen gizli çubuk bölmesini kaldırır.
 
@@ -1463,11 +1464,11 @@ void RemoveHiddenMDITabbedBar(CDockablePane* pBar);
 ### <a name="parameters"></a>Parametreler
 
 *pBar*<br/>
-[içinde] Kaldırmak için bir çubuk bölmeiçin bir işaretçi.
+'ndaki Kaldırılacak çubuk bölmesine yönelik bir işaretçi.
 
-## <a name="cdockingmanagerremoveminiframe"></a><a name="removeminiframe"></a>CDockingManager::RemoveMiniFrame
+## <a name="cdockingmanagerremoveminiframe"></a><a name="removeminiframe"></a> CDockingManager:: RemoveMiniFrame
 
-Mini çerçeveler listesinden belirtilen bir çerçeveyi kaldırır.
+Belirtilen çerçeveyi mini çerçeveler listesinden kaldırır.
 
 ```
 virtual BOOL RemoveMiniFrame(CPaneFrameWnd* pWnd);
@@ -1475,16 +1476,16 @@ virtual BOOL RemoveMiniFrame(CPaneFrameWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-[içinde] Kaldırılacak bir çerçeveiçin işaretçi.
+*pWnd*<br/>
+'ndaki Kaldırılacak çerçeveye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Belirtilen çerçeve kaldırılırsa DOĞRU; YANLIŞ aksi takdirde.
+Belirtilen çerçeve kaldırılırsa doğru; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagerremovepanefromdockmanager"></a><a name="removepanefromdockmanager"></a>CDockingManager::RemovePaneFromDockManager
+## <a name="cdockingmanagerremovepanefromdockmanager"></a><a name="removepanefromdockmanager"></a> CDockingManager:: RemovePaneFromDockManager
 
-Bölmenin kaydını kaldırır ve yerleştirme yöneticisindeki listeden kaldırır.
+Bir bölmenin kaydını siler ve yerleştirme yöneticisindeki listeden kaldırır.
 
 ```cpp
 void RemovePaneFromDockManager(
@@ -1497,24 +1498,24 @@ void RemovePaneFromDockManager(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-[içinde] Kaldırılacak bölmeiçin bir işaretçi.
+*pWnd*<br/>
+'ndaki Kaldırılacak bölmeye yönelik bir işaretçi.
 
-*bYok et*<br/>
-[içinde] TRUE ise, kaldırılan bölme yok edilir.
+*bDestroy*<br/>
+'ndaki TRUE ise kaldırılan bölme yok edilir.
 
-*bAdjustLayout*<br/>
-[içinde] TRUE ise, yerleştirme düzenini hemen ayarlayın.
+*Roztlayout*<br/>
+'ndaki DOĞRU ise, yerleştirme yerleşimini hemen ayarlayın.
 
 *bAutoHide*<br/>
-[içinde] TRUE ise bölme otomatik hide çubukları listesinden kaldırılır. FALSE ise, bölme normal bölmeler listesinden kaldırılır.
+'ndaki TRUE ise bölme otomatik gizleme çubukları listesinden kaldırılır. YANLıŞSA, bölme normal bölmeler listesinden kaldırılır.
 
-*pBarReplacement*<br/>
-[içinde] Kaldırılan bölmenin yerini alan bölmeye işaretçi.
+*Pbardeğiştirme*<br/>
+'ndaki Kaldırılan bölmenin yerini alan bölme işaretçisi.
 
-## <a name="cdockingmanagerreplacepane"></a><a name="replacepane"></a>CDockingManager::ReplacePane
+## <a name="cdockingmanagerreplacepane"></a><a name="replacepane"></a> CDockingManager:: ReplacePane
 
-Bir bölmeyi diğeriyle değiştirir.
+Bir bölmeyi diğeri ile değiştirir.
 
 ```
 BOOL ReplacePane(
@@ -1525,26 +1526,26 @@ BOOL ReplacePane(
 ### <a name="parameters"></a>Parametreler
 
 *pOriginalBar*<br/>
-[içinde] Özgün bölmeye işaretçi.
+'ndaki Özgün bölmeye yönelik bir işaretçi.
 
 *pNewBar*<br/>
-[içinde] Özgün bölmenin yerini alan bölmeye işaretçi.
+'ndaki Orijinal bölmenin yerini alan bölmeye yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bölme başarıyla değiştirilirse DOĞRU; YANLIŞ aksi takdirde.
+Bölme başarıyla değiştirildiyse doğru; Aksi takdirde FALSE.
 
-## <a name="cdockingmanagerresortminiframesforzorder"></a><a name="resortminiframesforzorder"></a>CDockingManager::ResortMiniFramesForZOrder
+## <a name="cdockingmanagerresortminiframesforzorder"></a><a name="resortminiframesforzorder"></a> CDockingManager:: Resortminifoymesforzorder
 
-Mini çerçeveler listesindeki çerçeveleri tatil eder.
+Mini çerçeveler listesindeki çerçeveleri yeniden ölçeklendirin.
 
 ```cpp
 void ResortMiniFramesForZOrder();
 ```
 
-## <a name="cdockingmanagersavestate"></a><a name="savestate"></a>CDockingManager::SaveState
+## <a name="cdockingmanagersavestate"></a><a name="savestate"></a> CDockingManager:: Savemlak
 
-Takma yöneticisinin durumunu kayıt defterine kaydeder.
+Yerleştirme yöneticisinin durumunu kayıt defterine kaydeder.
 
 ```
 virtual BOOL SaveState(
@@ -1555,20 +1556,20 @@ virtual BOOL SaveState(
 ### <a name="parameters"></a>Parametreler
 
 *lpszProfileName*<br/>
-[içinde] Kayıt defteri anahtarına giden yol.
+'ndaki Kayıt defteri anahtarının yolu.
 
-*uiID*<br/>
-[içinde] Yerleştirme yöneticisi kimliği.
+*Uııd*<br/>
+'ndaki Yerleştirme Yöneticisi KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Devlet başarıyla kaydedildiyse DOĞRU; aksi takdirde YANLIŞ.
+Durum başarıyla kaydedilmişse doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Takma yöneticisinin durumunu kayıt defterine kaydetmek, denetim çubuklarının durumlarını, otomatik hide çubuklarının durumlarını ve yerleştirme yöneticisinde bulunan mini çerçevelerin durumlarını kaydetmeyi içerir.
+Yerleştirme yöneticisinin durumunu kayıt defterine kaydetmek, denetim çubuklarının durumlarının, otomatik gizleme çubuklarının durumlarının ve yerleştirme yöneticisinde bulunan mini çerçevelerin durumlarının kaydedilmesini içerir.
 
-## <a name="cdockingmanagersendmessagetominiframes"></a><a name="sendmessagetominiframes"></a>CDockingManager::SendMessageToMiniFrames
+## <a name="cdockingmanagersendmessagetominiframes"></a><a name="sendmessagetominiframes"></a> CDockingManager:: Sendmessagetominiframe
 
 Belirtilen iletiyi tüm mini çerçevelere gönderir.
 
@@ -1582,19 +1583,19 @@ BOOL SendMessageToMiniFrames(
 ### <a name="parameters"></a>Parametreler
 
 *uMessage*<br/>
-[içinde] Gönderilecek ileti.
+'ndaki Gönderilecek ileti.
 
-*Wparam*<br/>
-[içinde] Ek ileti bağımlı bilgiler.
+*wParam*<br/>
+'ndaki Ek ileti bağımlı bilgileri.
 
-*Lparam*<br/>
-[içinde] Ek ileti bağımlı bilgiler.
+*lParam*<br/>
+'ndaki Ek ileti bağımlı bilgileri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU her zaman.
+Her zaman TRUE.
 
-## <a name="cdockingmanagerserialize"></a><a name="serialize"></a>CDockingManager::Serialize
+## <a name="cdockingmanagerserialize"></a><a name="serialize"></a> CDockingManager:: serileştirme
 
 Yerleştirme yöneticisini bir arşive yazar.
 
@@ -1605,15 +1606,15 @@ void Serialize(CArchive& ar);
 ### <a name="parameters"></a>Parametreler
 
 *Ar*<br/>
-[içinde] Arşiv nesnesine başvuru.
+'ndaki Bir arşiv nesnesine bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirme yöneticisinin bir arşive yazılması, yerleştirme denetim çubukları nın ve kaydırıcılarının sayısını belirlemeyi ve denetim çubuklarını, mini çerçeveleri, otomatik hide çubuklarını ve MDI sekmeli çubuklarını arşive yazmayı içerir.
+Yerleştirme yöneticisini bir arşive yazmak, yerleştirme denetim çubuklarının ve kaydırıcılarının sayısını belirlemeyi ve denetim çubukları, Mini kareler, otomatik gizleme çubukları ve MDI sekmeli çubuklarını arşive yazmak için gerekir.
 
-## <a name="cdockingmanagersetautohidezorder"></a><a name="setautohidezorder"></a>CDockingManager::SetAutohideZOrder
+## <a name="cdockingmanagersetautohidezorder"></a><a name="setautohidezorder"></a> CDockingManager:: SetAutohideZOrder
 
-Denetim çubuklarının ve belirtilen bölmenin boyutunu, genişliğini ve yüksekliğini ayarlar.
+Denetim çubuklarının boyutunu, genişliğini ve yüksekliğini, belirtilen bölmeyi ayarlar.
 
 ```cpp
 void SetAutohideZOrder(CDockablePane* pAHDockingBar);
@@ -1622,9 +1623,9 @@ void SetAutohideZOrder(CDockablePane* pAHDockingBar);
 ### <a name="parameters"></a>Parametreler
 
 *pAHDockingBar*<br/>
-[içinde] Takılabilir bölmeiçin bir işaretçi.
+'ndaki Bir yerleştirilebilir bölmesi işaretçisi.
 
-## <a name="cdockingmanagersetdockingmode"></a><a name="setdockingmode"></a>CDockingManager::SetDockingMode
+## <a name="cdockingmanagersetdockingmode"></a><a name="setdockingmode"></a> CDockingManager:: SetDockingMode
 
 Yerleştirme modunu ayarlar.
 
@@ -1637,34 +1638,34 @@ static void SetDockingMode(
 ### <a name="parameters"></a>Parametreler
 
 *dockMode*<br/>
-Yeni yerleştirme modunu belirtir. Daha fazla bilgi için Açıklamalar bölümüne bakın.
+Yeni yerleştirme modunu belirtir. Daha fazla bilgi için, açıklamalar bölümüne bakın.
 
 *Tema*<br/>
-Akıllı yerleştirme işaretleri için kullanılacak temayı belirtir. Aşağıdaki numaralandırılmış değerlerden biri olabilir: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
+Akıllı yerleştirme işaretçileri için kullanılacak temayı belirtir. Bu, aşağıdaki numaralandırılmış değerlerden biri olabilir: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Yerleştirme modunu ayarlamak için bu statik yöntemi çağırın.
 
-*dockMode* aşağıdaki değerlerden biri olabilir:
+*Dockmode* aşağıdaki değerlerden biri olabilir:
 
-- DT_STANDARD - Visual Studio .NET 2003'te uygulanan standart yerleştirme modu. Bölmeler sürükleme bağlamı olmadan sürüklenir.
+- Visual Studio .NET 2003 ' de uygulanan DT_STANDARD Standart yerleştirme modu. Bölmeler, sürükleme bağlamı olmadan sürüklenir.
 
-- DT_IMMEDIATE - Microsoft Visio'da uygulandığı gibi anında yerleştirme modu. Bölmeler sürükleme bağlamıyla sürüncemede kalır, ancak işaretçiler görüntülenmez.
+- DT_IMMEDIATE-Microsoft Visio 'da uygulanan anında yerleştirme modu. Bölmeler bir sürükleme bağlamı ile sürüklenir, ancak hiçbir işaretleyici gösterilmez.
 
-- DT_SMART - Visual Studio 2005'te uygulanan akıllı yerleştirme modu. Bölmeler sürükleme bağlamıyla sürüklenir ve bölmenin nerede sabitlenebileceğini gösteren akıllı işaretçiler görüntülenir.
+- DT_SMART-Visual Studio 2005 ' de uygulanan akıllı yerleştirme modu. Bölmeler bir sürükleme bağlamı ile sürüklenir ve bölmenin nerede yerleştirildiğini gösteren akıllı işaretleyiciler görüntülenir.
 
-## <a name="cdockingmanagersetdockstate"></a><a name="setdockstate"></a>CDockingManager::SetDockState
+## <a name="cdockingmanagersetdockstate"></a><a name="setdockstate"></a> CDockingManager:: SetDockState
 
-Denetim çubuklarının, mini çerçevelerin ve otomatik hide çubuklarının takma durumunu ayarlar.
+Denetim çubuklarının, Mini karelerin ve otomatik gizleme çubuklarının yerleştirme durumunu ayarlar.
 
 ```
 virtual void SetDockState();
 ```
 
-## <a name="cdockingmanagersetprintpreviewmode"></a><a name="setprintpreviewmode"></a>CDockingManager::SetPrintPreviewMode
+## <a name="cdockingmanagersetprintpreviewmode"></a><a name="setprintpreviewmode"></a> CDockingManager:: Setprintönizleme modu
 
-Yazdırma önizlemesinde görüntülenen çubukların yazdırma önizleme modunu ayarlar.
+Baskı önizlemede görüntülenen çubukların Baskı Önizleme modunu ayarlar.
 
 ```cpp
 void SetPrintPreviewMode(
@@ -1674,13 +1675,13 @@ void SetPrintPreviewMode(
 
 ### <a name="parameters"></a>Parametreler
 
-*bÖnizleme*<br/>
-[içinde] Yazdırma önizleme modu ayarlanmışsa TRUE; YANLIŞ aksi takdirde.
+*bPreview*<br/>
+'ndaki Baskı önizleme modu ayarlandıysa doğru; Aksi takdirde FALSE.
 
-*pDevlet*<br/>
-[içinde] Önizleme durumuna işaretçi. Bu parametre kullanılmaz.
+*pState*<br/>
+'ndaki Önizleme durumuna yönelik bir işaretçi. Bu parametre kullanılmaz.
 
-## <a name="cdockingmanagersetsmartdockingparams"></a><a name="setsmartdockingparams"></a>CDockingManager::SetSmartDockingParams
+## <a name="cdockingmanagersetsmartdockingparams"></a><a name="setsmartdockingparams"></a> CDockingManager:: SetSmartDockingParams
 
 Akıllı yerleştirme davranışını tanımlayan parametreleri ayarlar.
 
@@ -1691,15 +1692,15 @@ static void SetSmartDockingParams(CSmartDockingInfo& params);
 ### <a name="parameters"></a>Parametreler
 
 *params*<br/>
-[içinde, dışarı] Akıllı yerleştirme parametrelerini tanımlar.
+[in, out] Akıllı yerleştirme parametrelerini tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Akıllı yerleştirme işaretçilerinin görünümünü, rengini veya şeklini özelleştirmek istiyorsanız bu yöntemi arayın.
+Akıllı yerleştirme işaretlerinin görünümünü, rengini veya şeklini özelleştirmek istiyorsanız bu yöntemi çağırın.
 
-Akıllı yerleştirme işaretleri için varsayılan görünümü kullanmak için, [csmartDockingInfo Sınıfı'nın](../../mfc/reference/csmartdockinginfo-class.md) başharflenmemiş bir örneğini *paramlara*geçirin.
+Akıllı yerleştirme işaretçileri için varsayılan görünümü kullanmak için, bir [CSmartDockingInfo sınıfının](../../mfc/reference/csmartdockinginfo-class.md) başlatılmamış örneğini *params*'e geçirin.
 
-## <a name="cdockingmanagershowdelayshowminiframes"></a><a name="showdelayshowminiframes"></a>CDockingManager::ShowDelayShowMiniFrames
+## <a name="cdockingmanagershowdelayshowminiframes"></a><a name="showdelayshowminiframes"></a> CDockingManager:: Showdelayshowminiframe
 
 Mini çerçevelerin pencerelerini gösterir veya gizler.
 
@@ -1709,12 +1710,12 @@ void ShowDelayShowMiniFrames(BOOL bshow);
 
 ### <a name="parameters"></a>Parametreler
 
-*bGöster*<br/>
-[içinde] Gösterilen çerçevenin penceresini etkin kılmak için TRUE; ÇERÇEVEPENCERESI gizlemek için FALSE.
+*bShow*<br/>
+'ndaki Gösterilen çerçevenin penceresini etkin hale getirmek için TRUE; Çerçevenin penceresini gizlemek için FALSE.
 
-## <a name="cdockingmanagershowpanes"></a><a name="showpanes"></a>CDockingManager::ShowPanes
+## <a name="cdockingmanagershowpanes"></a><a name="showpanes"></a> CDockingManager:: Showbölmeler
 
-Denetim ve otomatik hide çubukların bölmelerini gösterir veya gizler.
+Denetim ve otomatik gizleme çubuklarının bölmelerini gösterir veya gizler.
 
 ```
 virtual BOOL ShowPanes(BOOL bShow);
@@ -1722,16 +1723,16 @@ virtual BOOL ShowPanes(BOOL bShow);
 
 ### <a name="parameters"></a>Parametreler
 
-*bGöster*<br/>
-[içinde] DOĞRU bölmeleri göstermek için; Bölmeleri gizlemek için YANLIŞ.
+*bShow*<br/>
+'ndaki Bölmeleri göstermek için TRUE; Bölmeleri gizlemek için FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her zaman FALSE.
 
-## <a name="cdockingmanagerstartsdocking"></a><a name="startsdocking"></a>CDockingManager::Başlangıç Docking
+## <a name="cdockingmanagerstartsdocking"></a><a name="startsdocking"></a> CDockingManager:: StartSDocking
 
-Akıllı yerleştirme yöneticisinin hizasına göre belirtilen pencerenin akıllı yerleştirmesini başlatır.
+Akıllı yerleşik yöneticinin hizalamasına göre belirtilen pencerenin akıllı olarak yuvalanmasına başlar.
 
 ```cpp
 void StartSDocking(CWnd* pDockingWnd);
@@ -1740,19 +1741,19 @@ void StartSDocking(CWnd* pDockingWnd);
 ### <a name="parameters"></a>Parametreler
 
 *pDockingWnd*<br/>
-[içinde] Kenetlenme penceresi için bir işaretçi.
+'ndaki Sabitlemek üzere bir pencere işaretçisi.
 
-## <a name="cdockingmanagerstopsdocking"></a><a name="stopsdocking"></a>CDockingManager::StopSDocking
+## <a name="cdockingmanagerstopsdocking"></a><a name="stopsdocking"></a> CDockingManager:: StopSDocking
 
-Akıllı kenetlenmeyi durdurur.
+Akıllı yerleştirmeyi durdur.
 
 ```cpp
 void StopSDocking();
 ```
 
-## <a name="cdockingmanagergetsmartdockingtheme"></a><a name="getsmartdockingtheme"></a>CDockingManager::GetSmartDockingTheme
+## <a name="cdockingmanagergetsmartdockingtheme"></a><a name="getsmartdockingtheme"></a> CDockingManager:: GetSmartDockingTheme
 
-Akıllı yerleştirme işaretçilerini görüntülemek için kullanılan bir tema döndüren statik bir yöntem.
+Akıllı yerleştirme işaretleyicilerini göstermek için kullanılan bir temayı döndüren statik bir yöntem.
 
 ```
 static AFX_SMARTDOCK_THEME __stdcall GetSmartDockingTheme();
@@ -1766,9 +1767,9 @@ Aşağıdaki numaralandırılmış değerlerden birini döndürür: AFX_SDT_DEFA
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[CFrameWndEx Sınıfı](../../mfc/reference/cframewndex-class.md)<br/>
-[CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
-[CPaneFrameWnd Sınıf](../../mfc/reference/cpaneframewnd-class.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md)<br/>
+[CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
+[Cbölmesi Framewnd sınıfı](../../mfc/reference/cpaneframewnd-class.md)

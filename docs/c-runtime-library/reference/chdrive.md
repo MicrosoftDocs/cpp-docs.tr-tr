@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _chdrive'
 title: _chdrive
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _chdrive function
 - chdrive function
 ms.assetid: 212a1a4b-4fa8-444e-9677-7fca4c8c47e3
-ms.openlocfilehash: a597a67c7d2083cf5860112f6ed55ff248053d17
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d3935c64d8ae67c72f8516e4c2d21a7a0aa6e21b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917012"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186694"
 ---
 # <a name="_chdrive"></a>_chdrive
 
@@ -62,7 +63,7 @@ Geçerli çalışma sürücüsü başarıyla değiştirilmişse sıfır (0); Aks
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Sürücü* 1 ile 26 arasında değilse, geçersiz parametre Işleyicisi [parametre doğrulamada](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde çağrılır. Yürütmenin devam etmesine izin veriliyorsa **_chdrive** işlevi-1 döndürür, **errno** , **eacces**olarak ayarlanır ve **_doserrno** **ERROR_INVALID_DRIVE**olarak ayarlanır.
+*Sürücü* 1 ile 26 arasında değilse, geçersiz parametre Işleyicisi [parametre doğrulamada](../../c-runtime-library/parameter-validation.md)açıklandığı şekilde çağrılır. Yürütmenin devam etmesine izin veriliyorsa **_chdrive** işlevi-1 döndürür, **errno** , **eacces** olarak ayarlanır ve **_doserrno** **ERROR_INVALID_DRIVE** olarak ayarlanır.
 
 **_Chdrive** işlevi, kendisini iş parçacığı açısından güvenli olmayan **SetCurrentDirectory** işlevine bağımlı olduğundan iş parçacığı açısından güvenli değildir. Çok iş parçacıklı bir uygulamada güvenle **_chdrive** kullanmak için kendi iş parçacığı eşitlemesini sağlamanız gerekir. Daha fazla bilgi için bkz. [SetCurrentDirectory](/windows/win32/api/winbase/nf-winbase-setcurrentdirectory).
 
@@ -74,7 +75,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_chdrive**|\<Direct. h>|
+|**_chdrive**|\<direct.h>|
 
 Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

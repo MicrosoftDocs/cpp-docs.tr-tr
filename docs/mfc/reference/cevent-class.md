@@ -1,5 +1,6 @@
 ---
-title: CEvent Sınıfı
+description: 'Daha fazla bilgi edinin: CEvent sınıfı'
+title: CEvent sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CEvent
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - CEvent [MFC], SetEvent
 - CEvent [MFC], Unlock
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
-ms.openlocfilehash: 009a17342cb92025d67bf2fe0df1b9d5c7c0c6f0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0db33c89b52c3c6cb3dbf37cb3ea3da96e6c6c71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373952"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184705"
 ---
-# <a name="cevent-class"></a>CEvent Sınıfı
+# <a name="cevent-class"></a>CEvent sınıfı
 
-Bir iş parçacığının bir olayın oluştuğunu diğerine bildirmesini sağlayan bir eşitleme nesnesi olan bir olayı temsil eder.
+Bir olayı, bir olayın gerçekleştiği başka bir iş parçacığının bilgilendirmek için izin veren bir eşitleme nesnesi olan bir olayı temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CEvent : public CSyncObject
@@ -37,36 +38,36 @@ class CEvent : public CSyncObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CEvent::cEvent](#cevent)|Bir `CEvent` nesne inşa eder.|
+|[CEvent:: CEvent](#cevent)|Bir `CEvent` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CEvent::PulseOlay](#pulseevent)|Olayı kullanılabilir (sinyalli) olarak ayarlar, bekleyen iş parçacıklarını serbest bırakır ve olayı kullanılamaz (sinyalsiz) olarak ayarlar.|
-|[CEvent::ResetEvent](#resetevent)|Olayı kullanılamaz (sinyal siz) olarak ayarlar.|
-|[CEvent::SetEvent](#setevent)|Olayı kullanılabilir (sinyalli) ayarlar ve bekleyen iş parçacıklarını serbest bırakır.|
-|[CEvent::Kilidini Aç](#unlock)|Olay nesnesini serbest bırakır.|
+|[CEvent::P ulseEvent](#pulseevent)|Olayı kullanılabilir (sinyal) olarak ayarlar, iş parçacıklarını bekleyen yayınlar ve olayı kullanılamaz (sinyal dışı) olarak ayarlar.|
+|[CEvent:: ResetEvent](#resetevent)|Olayı kullanılamaz (sinyal dışı) olarak ayarlar.|
+|[CEvent:: SetEvent](#setevent)|Olayı kullanılabilir (sinyal) olarak ayarlar ve bekleyen iş parçacıklarını yayınlar.|
+|[CEvent:: unlock](#unlock)|Olay nesnesini serbest bırakır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Olaylar, bir iş parçacığının görevini ne zaman gerçekleştireceklerini bilmesi gerektiğinde yararlıdır. Örneğin, yeni veriler kullanılabilir olduğunda verileri veri arşivine kopyalayan bir iş parçacığının bildirilmesi gerekir. Yeni veriler `CEvent` kullanılabilir olduğunda kopya iş parçacığı bildirmek için bir nesne kullanarak, iş parçacığı görevini mümkün olan en kısa sürede gerçekleştirebilir.
+Olaylar, bir iş parçacığının görevini ne zaman gerçekleştireceğini bilmemiz gereken durumlarda faydalıdır. Örneğin, verileri bir veri arşivine kopyalayan bir iş parçacığına yeni veriler kullanılabilir olduğunda bildirilmesi gerekir. `CEvent`Yeni veriler kullanılabilir olduğunda kopya iş parçacığına bildirimde bulunan bir nesne kullanarak, iş parçacığı görevini mümkün olan en kısa sürede gerçekleştirebilir.
 
-`CEvent`nesnelerin iki türü vardır: manuel ve otomatik.
+`CEvent` nesneler iki türe sahiptir: el ile ve otomatik.
 
-Otomatik `CEvent` bir nesne, en az bir iş parçacığı serbest bırakıldıktan sonra otomatik olarak sinyalvermeyen (kullanılamayan) duruma geri döner. Varsayılan olarak, `CEvent` inşaat sırasında `TRUE` *bManualReset* parametresini geçmedikçe nesne otomatiktir.
+Bir otomatik `CEvent` nesne, en az bir iş parçacığı yayımlandıktan sonra otomatik olarak, sinyal olmayan (kullanılamayan) bir duruma geri döner. Varsayılan olarak, `CEvent` `TRUE` oluşturma sırasında *bManualReset* parametresi için geçiş yapmadığınız takdirde bir nesne otomatiktir.
 
-El `CEvent` ile nesne, diğer işlev çağrılana kadar [SetEvent](#setevent) veya [ResetEvent](#resetevent) tarafından ayarlanan durumda kalır. El ile `CEvent` nesne oluşturmak `TRUE` için, inşaat sırasında parametre için geçirin. `bManualReset`
+El ile `CEvent` nesne, diğer işlev çağrılana kadar [SetEvent](#setevent) veya [ResetEvent](#resetevent) tarafından ayarlanan durumda kalır. El ile nesne oluşturmak için `CEvent` , `TRUE` `bManualReset` oluşturma sırasında parametresini geçirin.
 
-Bir `CEvent` nesneyi kullanmak `CEvent` için, gerektiğinde nesneyi oluşturun. Beklemek istediğiniz olayın adını belirtin ve uygulamanızın başlangıçta bu olaya sahip olması gerektiğini de belirtin. Daha sonra oluşturucu döndüğünde olaya erişebilirsiniz. Olay nesnesine sinyal vermek (kullanılabilir hale getirmek) için [SetEvent'i](#setevent) arayın ve denetlenendeki kaynağa erişmeyi bitirdiğinizde [Unlock'u](#unlock) arayın.
+Bir nesne kullanmak için `CEvent` , `CEvent` gerekli olduğunda nesneyi oluşturun. Beklemek istediğiniz olayın adını belirtin ve uygulamanızın başlangıçta sahip olması gerektiğini de belirtin. Daha sonra, Oluşturucu döndüğünde olaya erişebilirsiniz. Olay nesnesini işaret etmek için [SetEvent](#setevent) çağırın (kullanılabilir hale getirin) ve ardından denetlenen kaynağa erişmeyi bitirdiğinizde [unlock](#unlock) öğesini çağırın.
 
-Nesneleri kullanmak `CEvent` için alternatif bir yöntem, denetlemek `CEvent` istediğiniz sınıfa veri üyesi olarak bir tür değişkeni eklemektir. Denetlenen nesnenin oluşturulması sırasında, veri `CEvent` üyesinin oluşturucuyu arayın ve olayın başlangıçta sinyal verilip verilmediğini belirtin ve ayrıca istediğiniz olay nesnesinin türünü, olayın adını (işlem sınırları arasında kullanılacaksa) ve istediğiniz güvenlik özniteliklerini belirtin.
+Nesneleri kullanmak için alternatif bir yöntem `CEvent` , `CEvent` denetlemek istediğiniz sınıfa bir veri üyesi olarak türünde bir değişken eklemektir. Denetlenen nesnenin yapımını yaparken, `CEvent` veri üyesinin oluşturucusunu çağırın ve olayın başlangıçta döndürülüp belirtilmediğini ve ayrıca istediğiniz olay nesnesi türünü, olayın adını (işlem sınırları boyunca kullanılacaksa) ve istediğiniz güvenlik özniteliklerini belirtin.
 
-Bu şekilde bir nesne `CEvent` tarafından denetlenir bir kaynağa erişmek için, önce kaynağınızın erişim yönteminde [CSingleLock](../../mfc/reference/csinglelock-class.md) türünden veya [CMultiLock](../../mfc/reference/cmultilock-class.md) türünden bir değişken oluşturun. Ardından kilit `Lock` nesnesinin yöntemini arayın (örneğin, [CMultiLock::Lock).](../../mfc/reference/cmultilock-class.md#lock) Bu noktada, iş parçacığınız kaynağa erişebilir, kaynağın serbest bırakılmasını ve erişim kazanmasını bekler veya kaynağın serbest bırakılmasını, zaman dolmasını bekler ve kaynağa erişemeyecektir. Her durumda, kaynağınıza iş parçacığı güvenli bir şekilde erişildi. Kaynağı serbest bırakmak `SetEvent` için olay nesnesini işaretlemeyi `Unlock` ve ardından kilit nesnesinin yöntemini (örneğin, [CMultiLock::Unlock](../../mfc/reference/cmultilock-class.md#unlock)) kullanın veya kilit nesnesinin kapsam dışına düşmesine izin verin.
+Bir nesne tarafından denetlenen bir kaynağa `CEvent` Bu şekilde erişmek için, öncelikle kaynağınızın erişim yönteminde [CSingleLock](../../mfc/reference/csinglelock-class.md) ya da [CMultiLock](../../mfc/reference/cmultilock-class.md) türünde bir değişken oluşturun. Ardından, `Lock` Lock nesnesinin yöntemini çağırın (örneğin, [CMultiLock:: Lock](../../mfc/reference/cmultilock-class.md#lock)). Bu noktada, iş parçacığlarınız kaynağa erişim kazanacaktır, kaynağın serbest bırakılacağını ve erişim kazanmasını ya da kaynağın serbest bırakılacağını, zaman aşımına gelmesini ve kaynağa erişim kazanmasının tamamlanmasını bekler. Herhangi bir durumda, kaynağınız iş parçacığı güvenli bir şekilde erişilir. Kaynağı serbest bırakmak için, `SetEvent` olay nesnesini sinyalin çağırın ve ardından `Unlock` kilit nesnesinin yöntemini kullanın (örneğin, [CMultiLock:: unlock](../../mfc/reference/cmultilock-class.md#unlock)) veya kilit nesnesinin kapsam dışına çıkmasına izin verin.
 
-Nesnelerin nasıl kullanılacağı `CEvent` hakkında daha fazla bilgi için bkz: Çoklu İş [Parçacığı: Eşitleme Sınıfları Nasıl Kullanılır.](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)
+Nesneleri kullanma hakkında daha fazla bilgi için `CEvent` bkz. [Çoklu Iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
 ## <a name="example"></a>Örnek
 
@@ -76,7 +77,7 @@ Nesnelerin nasıl kullanılacağı `CEvent` hakkında daha fazla bilgi için bkz
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CSyncObject](../../mfc/reference/csyncobject-class.md)
 
@@ -84,11 +85,11 @@ Nesnelerin nasıl kullanılacağı `CEvent` hakkında daha fazla bilgi için bkz
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxmt.h
+**Başlık:** afxmt. h
 
-## <a name="ceventcevent"></a><a name="cevent"></a>CEvent::cEvent
+## <a name="ceventcevent"></a><a name="cevent"></a> CEvent:: CEvent
 
-Adlandırılmış veya adsız `CEvent` bir nesne oluşturuyor.
+Adlandırılmış veya adlandırılmamış bir `CEvent` nesne oluşturur.
 
 ```
 CEvent(
@@ -100,30 +101,30 @@ CEvent(
 
 ### <a name="parameters"></a>Parametreler
 
-*bInitiallyOwnOwn*<br/>
-TRUE ise, `CMultilock` `CSingleLock` nesnenin iş parçacığı etkinleştirilir. Aksi takdirde, kaynağa erişmek isteyen tüm iş parçacıkları nın beklemesi gerekir.
+*Biniyown*<br/>
+TRUE ise, veya nesnesi için iş `CMultilock` parçacığı `CSingleLock` etkindir. Aksi takdirde, kaynağa erişmek isteyen tüm iş parçacıklarının beklemesi gerekir.
 
 *bManualReset*<br/>
-TRUE ise, olay nesnesinin el ile bir olay olduğunu belirtir, aksi takdirde olay nesnesi otomatik bir olaydır.
+TRUE ise, olay nesnesinin manuel bir olay olduğunu belirtir, aksi takdirde olay nesnesi bir otomatik olaydır.
 
-*Lpszname*<br/>
-Nesnenin `CEvent` adı. Nesne işlem sınırları arasında kullanılacaksa sağlanmalıdır. Ad varolan bir olayla eşleşiyorsa, `CEvent` oluşturucu bu adın olayına başvuran yeni bir nesne oluşturur. Ad, olay olmayan varolan bir eşitleme nesnesi ile eşleşirse, yapı başarısız olur. NULL ise, ad null olacaktır.
+*lpszName*<br/>
+`CEvent`Nesnenin adı. Nesne, işlem sınırları genelinde kullanılacaksa, sağlanmalıdır. Ad var olan bir olayla eşleşiyorsa, Oluşturucu `CEvent` Bu adın olayına başvuran yeni bir nesne oluşturur. Ad, olay olmayan mevcut bir eşitleme nesnesiyle eşleşiyorsa, oluşturma başarısız olur. NULL ise ad null olur.
 
 *lpsaAttribute*<br/>
-Olay nesnesi için güvenlik öznitelikleri. Bu yapının tam açıklaması için Windows SDK'daki [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) bakın.
+Olay nesnesi için güvenlik öznitelikleri. Bu yapının tam açıklaması için Windows SDK [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir `CEvent` nesneye erişmek veya serbest bırakmak için bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesnesi oluşturun ve [kilitle](../../mfc/reference/csinglelock-class.md#lock) ve [kilidini](../../mfc/reference/csinglelock-class.md#unlock) aç üye işlevlerini arayın.
+Bir nesneye erişmek veya onu serbest bırakmak için `CEvent` bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesnesi oluşturun ve [Lock](../../mfc/reference/csinglelock-class.md#lock) ve [unlock](../../mfc/reference/csinglelock-class.md#unlock) üye işlevlerini çağırın.
 
-Bir `CEvent` nesnenin durumunu sinyal (iş parçacıkları beklemek zorunda değildir) olarak değiştirmek için SetEvent veya [PulseEvent'i](#setevent) arayın. [PulseEvent](#pulseevent) Bir `CEvent` nesnenin durumunu sinyal verilmeyen (iş parçacıkları beklemeli) ayarlamak için [ResetEvent'i](#resetevent)arayın.
+Bir `CEvent` nesnenin durumunu sinyal olarak değiştirmek için (iş parçacıkları beklemek zorunda değildir), [SetEvent](#setevent) veya [PulseEvent](#pulseevent)çağırın. Bir `CEvent` nesnenin durumunu sinyal dışı olarak ayarlamak için (iş parçacıkları beklemesi gerekir), [ResetEvent](#resetevent)çağırın.
 
 > [!IMPORTANT]
-> Nesneyi `CEvent` oluşturduktan sonra, mutex'in zaten var olmadığından emin olmak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) kullanın. Mutex beklenmedik bir şekilde var olsaydı, bir haydut süreci çömelme olduğunu gösterebilir ve kötü niyetli mutex kullanmak niyetinde olabilir. Bu durumda, önerilen güvenlik bilinçli yordamı tutamacı kapatmak ve nesne oluştururken bir hata var gibi devam etmektir.
+> Nesneyi oluşturduktan sonra `CEvent` , mutex ' [](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) i kullanarak mutex 'in zaten mevcut olmadığından emin olun. Mutex beklenmedik bir şekilde mevcutsa, bir standart dışı işlemin ele geçirilmesi gerektiğini belirtebilir ve mutex 'i kötü amaçlı olarak kullanmak için bu olabilir. Bu durumda, önerilen güvenlik bilincine sahip yordam, tanıtıcıyı kapatmak ve nesneyi oluştururken bir hata olması gibi devam eder.
 
-## <a name="ceventpulseevent"></a><a name="pulseevent"></a>CEvent::PulseOlay
+## <a name="ceventpulseevent"></a><a name="pulseevent"></a> CEvent::P ulseEvent
 
-Olayın durumunu sinyal (kullanılabilir) olarak ayarlar, bekleyen iş parçacıklarını serbest bırakır ve otomatik olarak sinyal sizde (kullanılamaz) sıfırlar.
+Olayın durumunu sinyal (kullanılabilir) olarak ayarlar, bekleyen iş parçacıklarını yayınlar ve sinyal dışı (kullanılamaz) otomatik olarak sıfırlar.
 
 ```
 BOOL PulseEvent();
@@ -131,19 +132,19 @@ BOOL PulseEvent();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olduysa sıfırsız; aksi takdirde 0.
+İşlev başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olay el ile yse, tüm bekleyen iş parçacıkları serbest bırakılır, olay `PulseEvent` sinyal verilmez olarak ayarlanır ve döndürür. Olay otomatikse, tek bir iş parçacığı serbest bırakılır, olay `PulseEvent` sinyal verilmedi ve döndürür.
+Olay el ile ise, bekleyen tüm iş parçacıkları serbest bırakılır, olay sinyalsiz olarak ayarlanır ve `PulseEvent` döndürür. Olay otomatiktir, tek bir iş parçacığı serbest bırakılır, olay sinyalsiz olarak ayarlanır ve `PulseEvent` döndürür.
 
-Hiçbir iş parçacığı bekliyorsa veya iş parçacığı `PulseEvent` hemen serbest bırakılamazsa, olayın durumunu sinyal verilmeyen ve döndürecek şekilde ayarlar.
+Bekleyen iş parçacığı yoksa veya hiçbir iş parçacığı hemen yayımlanamadığında, `PulseEvent` olayın durumunu sinyalsiz ve geri dönüşler olarak ayarlar.
 
-`PulseEvent`çekirdek modu asynchronous yordam çağrısı ile bekleme durumundan anlık olarak kaldırılabilen temel Win32 `PulseEvent` işlevini kullanır. Bu `PulseEvent` nedenle, güvenilmez ve yeni uygulamalar tarafından kullanılmamalıdır. Daha fazla bilgi için [PulseEvent işlevine](/windows/win32/api/winbase/nf-winbase-pulseevent)bakın.
+`PulseEvent``PulseEvent`, çekirdek modu zaman uyumsuz yordam çağrısı tarafından, bekleme durumundan geçici olarak kaldırılabilecek temel Win32 işlevini kullanır. Bu nedenle, `PulseEvent` güvenilir değildir ve yeni uygulamalar tarafından kullanılmamalıdır. Daha fazla bilgi için bkz. [PulseEvent işlevi](/windows/win32/api/winbase/nf-winbase-pulseevent).
 
-## <a name="ceventresetevent"></a><a name="resetevent"></a>CEvent::ResetEvent
+## <a name="ceventresetevent"></a><a name="resetevent"></a> CEvent:: ResetEvent
 
-[SetEvent](#setevent) üye işlevi tarafından açıkça sinyal olarak ayarlanana kadar olayın durumunu sinyalsiz olarak ayarlar.
+Açıkça [SetEvent](#setevent) üye işlevi tarafından sinyal olarak ayarlanana kadar, olayın durumunu sinyal dışı olarak ayarlar.
 
 ```
 BOOL ResetEvent();
@@ -151,17 +152,17 @@ BOOL ResetEvent();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olduysa sıfırsız; aksi takdirde 0.
+İşlev başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, bu olaya erişmek isteyen tüm iş parçacıklarının beklemesine neden olur.
+Bu, bu olaya erişmek isteyen tüm iş parçacıklarının beklemesini sağlar.
 
-Bu üye işlev otomatik olaylar tarafından kullanılmaz.
+Bu üye işlevi otomatik olaylar tarafından kullanılmıyor.
 
-## <a name="ceventsetevent"></a><a name="setevent"></a>CEvent::SetEvent
+## <a name="ceventsetevent"></a><a name="setevent"></a> CEvent:: SetEvent
 
-Bekleyen iş parçacıklarını serbest bırakarak olayın durumunu sinyalolarak ayarlar.
+Etkinliğin durumunu, bekleyen iş parçacıklarını serbest bırakarak, sinyal olarak ayarlar.
 
 ```
 BOOL SetEvent();
@@ -169,13 +170,13 @@ BOOL SetEvent();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nonzero işlevi başarılı olsaydı, aksi takdirde 0.
+İşlev başarılı olursa sıfır dışı, değilse 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Olay el ile yapılırsa, [ResetEvent](#resetevent) çağrılana kadar olay sinyalolarak kalır. Bu durumda birden fazla iş parçacığı serbest bırakılabilir. Olay otomatikse, tek bir iş parçacığı serbest bırakılına kadar olay sinyalolarak kalır. Sistem daha sonra sinyal verilmeyen olayın durumunu ayarlar. İş parçacığı beklemiyorsa, bir iş parçacığı serbest bırakılına kadar durum sinyalolarak kalır.
+Olay manuel ise, [ResetEvent](#resetevent) çağrılana kadar olay sinyalde kalır. Bu durumda birden fazla iş parçacığı yayımlaneklenebilir. Olay otomatiktir, tek bir iş parçacığı serbest bırakılana kadar olay sinyal olarak kalır. Sistem daha sonra olayın durumunu sinyal dışı olarak ayarlar. Bekleyen bir iş parçacığı yoksa, bir iş parçacığı serbest bırakılana kadar durum sinyal kalır.
 
-## <a name="ceventunlock"></a><a name="unlock"></a>CEvent::Kilidini Aç
+## <a name="ceventunlock"></a><a name="unlock"></a> CEvent:: unlock
 
 Olay nesnesini serbest bırakır.
 
@@ -185,13 +186,13 @@ BOOL Unlock();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Olay nesnesinin sahibi iş parçacığı ve olay otomatik bir olaysa sıfırolmayan; aksi takdirde 0.
+İş parçacığı olay nesnesine sahipse ve olay bir otomatik olayse sıfır olmayan bir değer; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlev, kilit nesnesi yeniden kullanılacaksa, şu anda otomatik bir olaya sahip olan iş parçacıkları tarafından çağrılır. Kilit nesnesi yeniden kullanılamazsa, bu işlev kilit nesnesinin yıkıcısı tarafından çağrılacaktır.
+Bu üye işlevi, işlem tamamlandıktan sonra, kendi kilitleme nesneleri yeniden kullanılacak şekilde serbest bir olaya sahip olan iş parçacıkları tarafından çağırılır. Kilit nesnesi yeniden kullanılmazsa, bu işlev kilit nesnesinin yıkıcısı tarafından çağrılacaktır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CSyncObject Sınıfı](../../mfc/reference/csyncobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[CSyncObject sınıfı](../../mfc/reference/csyncobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

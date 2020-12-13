@@ -1,5 +1,6 @@
 ---
-title: CDockingPanesRow Sınıfı
+description: 'Daha fazla bilgi edinin: CDockingPanesRow sınıfı'
+title: CDockingPanesRow sınıfı
 ms.date: 10/18/2018
 f1_keywords:
 - CDockingPanesRow
@@ -90,20 +91,20 @@ helpviewer_keywords:
 - CDockingPanesRow [MFC], ShowPane
 - CDockingPanesRow [MFC], UpdateVisibleState
 ms.assetid: e7a17832-0ebb-4bce-b799-cec9b60f76fe
-ms.openlocfilehash: d7535ae6c5246a372fd1a48573716bb166991d4e
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: bf031b19c25cde36705333feb3baa3af9e1932ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185017"
 ---
-# <a name="cdockingpanesrow-class"></a>CDockingPanesRow Sınıfı
+# <a name="cdockingpanesrow-class"></a>CDockingPanesRow sınıfı
 
-Bir dock sitesinin aynı yatay veya dikey satırında (sütun) bulunan bölmelerin listesini yönetir.
+Bir dock sitesinin aynı yatay veya dikey satırında (sütun) bulunan bölmeler listesini yönetir.
 
-Daha fazla ayrıntı için Visual Studio kurulumunuzun **VC\\atlmfc\\\\src mfc** klasöründe bulunan kaynak koduna bakın.
+Daha ayrıntılı bilgi için Visual Studio yüklemenizin **VC \\ atlmfc \\ src \\ MFC** klasöründe bulunan kaynak koduna bakın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDockingPanesRow : public CObject
@@ -113,78 +114,78 @@ class CDockingPanesRow : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`CDockingPanesRow::CDockingPanesRow`|Varsayılan oluşturucu.|
+|`CDockingPanesRow::CDockingPanesRow`|Varsayılan Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDockingPanesRow::AddPane](#addpane)||
-|[CDockingPanesRow::AddPaneFromRow](#addpanefromrow)||
-|[CDockingPanesRow::ArrangePanes](#arrangepanes)|Bölmeleri belirtilen kenar boşluğu ve boşluk parametrelerine göre sırahalinde düzenler.|
-|[CDockingPanesRow::CalcFixedLayout](#calcfixedlayout)||
-|[CDockingPanesRow::Oluştur](#create)||
-|[CDockingPanesRow::ExpandStretchedPanes](#expandstretchedpanes)||
-|[CDockingPanesRow::ExpandStretchedPanesRect](#expandstretchedpanesrect)||
-|[CDockingPanesRow::FixupVirtualRects](#fixupvirtualrects)||
-|[CDockingPanesRow::GetAvailableLength](#getavailablelength)||
-|[CDockingPanesRow::GetAvailableSpace](#getavailablespace)||
-|[CDockingPanesRow::GetClientRect](#getclientrect)||
-|[CDockingPanesRow::GetDockSite](#getdocksite)||
-|[CDockingPanesRow::GetExtraSpace](#getextraspace)||
-|[CDockingPanesRow::GetGroupFromPane](#getgroupfrompane)||
-|[CDockingPanesRow::GetID](#getid)||
-|[CDockingPanesRow::GetMaxPaneSize](#getmaxpanesize)||
-|[CDockingPanesRow::GetPaneCount](#getpanecount)||
-|[CDockingPanesRow::GetPaneList](#getpanelist)||
-|[CDockingPanesRow::GetRowAlignment](#getrowalignment)||
-|[CDockingPanesRow::GetRowHeight](#getrowheight)||
-|[CDockingPanesRow::GetRowOffset](#getrowoffset)||
-|[CDockingPanesRow::GetVisibleCount](#getvisiblecount)||
-|[CDockingPanesRow::GetWindowRect](#getwindowrect)||
-|[CDockingPanesRow::HasPane](#haspane)||
-|[CDockingPanesRow::Boş](#isempty)||
-|[CDockingPanesRow::IsExclusiveRow](#isexclusiverow)||
-|[CDockingPanesRow::Yatay](#ishorizontal)||
-|[CDockingPanesRow::Görünür](#isvisible)||
-|[CDockingPanesRow::Taşı](#move)||
-|[CDockingPanesRow::MovePane](#movepane)||
-|[CDockingPanesRow::OnResizePane](#onresizepane)||
-|[CDockingPanesRow::RedrawAll](#redrawall)||
-|[CDockingPanesRow::RemovePane](#removepane)||
-|[CDockingPanesRow::ReplacePane](#replacepane)||
-|[CDockingPanesRow::RepositionPanes](#repositionpanes)||
-|[CDockingPanesRow::Yeniden boyutlandırma](#resize)||
-|[CDockingPanesRow::ResizeByPaneDivider](#resizebypanedivider)||
-|[CDockingPanesRow::ScreenToClient](#screentoclient)||
-|[CDockingPanesRow::SetExtra](#setextra)||
-|[CDockingPanesRow::ShowDockSiteRow](#showdocksiterow)||
-|[CDockingPanesRow::ShowPane](#showpane)||
-|[CDockingPanesRow::UpdateVisibleState](#updatevisiblestate)||
+|[CDockingPanesRow:: AddPane](#addpane)||
+|[CDockingPanesRow:: AddPaneFromRow](#addpanefromrow)||
+|[CDockingPanesRow:: Arrangebölmelerini](#arrangepanes)|Bir satırdaki bölmeleri belirtilen kenar boşluğu ve Aralık parametrelerine göre düzenler.|
+|[CDockingPanesRow:: CalcFixedLayout](#calcfixedlayout)||
+|[CDockingPanesRow:: Create](#create)||
+|[CDockingPanesRow:: Expandıdiedbölmeler](#expandstretchedpanes)||
+|[CDockingPanesRow:: Expandıdiedpanesrect](#expandstretchedpanesrect)||
+|[CDockingPanesRow:: FixupVirtualRects](#fixupvirtualrects)||
+|[CDockingPanesRow:: GetAvailableLength](#getavailablelength)||
+|[CDockingPanesRow:: GetAvailableSpace](#getavailablespace)||
+|[CDockingPanesRow:: GetClientRect](#getclientrect)||
+|[CDockingPanesRow:: GetDockSite](#getdocksite)||
+|[CDockingPanesRow:: GetExtraSpace](#getextraspace)||
+|[CDockingPanesRow:: GetGroupFromPane](#getgroupfrompane)||
+|[CDockingPanesRow:: GetId](#getid)||
+|[CDockingPanesRow:: GetMaxPaneSize](#getmaxpanesize)||
+|[CDockingPanesRow:: Getbölmesi sayısı](#getpanecount)||
+|[CDockingPanesRow:: Getbölmesi listesi](#getpanelist)||
+|[CDockingPanesRow:: Getrowhizalaması](#getrowalignment)||
+|[CDockingPanesRow:: GetRowHeight](#getrowheight)||
+|[CDockingPanesRow:: Getrowkayması](#getrowoffset)||
+|[CDockingPanesRow:: GetVisibleCount](#getvisiblecount)||
+|[CDockingPanesRow:: GetWindowRect](#getwindowrect)||
+|[CDockingPanesRow:: HasPane](#haspane)||
+|[CDockingPanesRow:: IsEmpty](#isempty)||
+|[CDockingPanesRow:: ısexclusiverow](#isexclusiverow)||
+|[CDockingPanesRow:: ısyatay](#ishorizontal)||
+|[CDockingPanesRow:: IsVisible](#isvisible)||
+|[CDockingPanesRow:: Move](#move)||
+|[CDockingPanesRow:: MovePane](#movepane)||
+|[CDockingPanesRow:: OnResizePane](#onresizepane)||
+|[CDockingPanesRow:: RedrawAll](#redrawall)||
+|[CDockingPanesRow:: RemovePane](#removepane)||
+|[CDockingPanesRow:: ReplacePane](#replacepane)||
+|[CDockingPanesRow:: kayıt bölmeleri](#repositionpanes)||
+|[CDockingPanesRow:: Resize](#resize)||
+|[CDockingPanesRow:: ResizeByPaneDivider](#resizebypanedivider)||
+|[CDockingPanesRow:: ScreenToClient](#screentoclient)||
+|[CDockingPanesRow:: SetExtra](#setextra)||
+|[CDockingPanesRow:: Showdocksıterow](#showdocksiterow)||
+|[CDockingPanesRow:: ShowPane](#showpane)||
+|[CDockingPanesRow:: UpdateVisibleState](#updatevisiblestate)||
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDockingPanesRow`nesneler dock site nesneleri tarafından dahili olarak oluşturulur.
+`CDockingPanesRow` nesneler, site nesneleri Dock tarafından dahili olarak oluşturulur.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir `CDockingPanesRow` nesnenin bir `CMFCAutoHideBar` nesneden nasıl alınabildiğini gösterir.
+Aşağıdaki örnek, nesnesinden bir nesnenin nasıl alınacağını gösterir `CDockingPanesRow` `CMFCAutoHideBar` .
 
 [!code-cpp[NVC_MFC_RibbonApp#26](../../mfc/reference/codesnippet/cpp/cdockingpanesrow-class_1.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CDockingPanesRow](../../mfc/reference/cdockingpanesrow-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxDockingPanesRow.h
+**Üstbilgi:** afxDockingPanesRow. h
 
-## <a name="cdockingpanesrowaddpane"></a><a name="addpane"></a>CDockingPanesRow::AddPane
+## <a name="cdockingpanesrowaddpane"></a><a name="addpane"></a> CDockingPanesRow:: AddPane
 
 ```
 virtual void AddPane(
@@ -196,17 +197,17 @@ virtual void AddPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pControlBar*<br/>
+'ndaki *pControlBar*<br/>
 
-[içinde] *dockMethod*<br/>
+'ndaki *Dockyöntemi*<br/>
 
-[içinde] *lpRect*<br/>
+'ndaki *lpRect*<br/>
 
-[içinde] *bAddLast*<br/>
+'ndaki *Baddlast*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowaddpanefromrow"></a><a name="addpanefromrow"></a>CDockingPanesRow::AddPaneFromRow
+## <a name="cdockingpanesrowaddpanefromrow"></a><a name="addpanefromrow"></a> CDockingPanesRow:: AddPaneFromRow
 
 ```
 virtual void AddPaneFromRow(
@@ -216,15 +217,15 @@ virtual void AddPaneFromRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pControlBar*<br/>
+'ndaki *pControlBar*<br/>
 
-[içinde] *dockMethod*<br/>
+'ndaki *Dockyöntemi*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowarrangepanes"></a><a name="arrangepanes"></a>CDockingPanesRow::ArrangePanes
+## <a name="cdockingpanesrowarrangepanes"></a><a name="arrangepanes"></a> CDockingPanesRow:: Arrangebölmelerini
 
-Yerleştirme bölmelerini belirtilen kenar boşluğu ve boşluk parametrelerine göre üst üste düzenler.
+Yerleştirme bölmelerini, belirtilen kenar boşluğu ve Aralık parametrelerine göre bir satırda yerleştirir.
 
 ```
 virtual void ArrangePanes(
@@ -235,16 +236,16 @@ virtual void ArrangePanes(
 ### <a name="parameters"></a>Parametreler
 
 *nMargin*<br/>
-[içinde] Satırın sol üst köşesinden ilk bölmenin mahsup, piksel olarak belirtir.
+'ndaki Satırın sol üst köşesinden ilk bölmenin aralığını piksel cinsinden belirtir.
 
 *nSpacing*<br/>
-[içinde] Pikseller halinde, bölmeler arasındaki aralığı belirtir.
+'ndaki Bölmeler arasındaki aralığı piksel cinsinden belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bölmeleri kenetlenecekleri satırda düzenlemek için bu yöntemi arayın. Bu yöntemi aradıktan sonra, `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)`aramanız gerekir.
+Bu yöntemi, yerleştirme yapılacak sırada bölmeleri düzenlemek için çağırın. Bu yöntemi çağırdıktan sonra çağrısı yapmanız gerekir `CDockingPanesRow::FixupVirtualRects(FALSE, NULL)` .
 
-## <a name="cdockingpanesrowcalcfixedlayout"></a><a name="calcfixedlayout"></a>CDockingPanesRow::CalcFixedLayout
+## <a name="cdockingpanesrowcalcfixedlayout"></a><a name="calcfixedlayout"></a> CDockingPanesRow:: CalcFixedLayout
 
 ```
 virtual CSize CalcFixedLayout(
@@ -254,15 +255,15 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bStretch*<br/>
+'ndaki *Besnetme*<br/>
 
-[içinde] *bHorz*<br/>
+'ndaki *bHorz*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowcdockingpanesrow"></a><a name="cdockingpanesrow"></a>CDockingPanesRow::CDockingPanesRow
+## <a name="cdockingpanesrowcdockingpanesrow"></a><a name="cdockingpanesrow"></a> CDockingPanesRow:: CDockingPanesRow
 
 ```
 CDockingPanesRow(
@@ -273,15 +274,15 @@ CDockingPanesRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pParentDockBar*<br/>
+'ndaki *Pparentdockbar*<br/>
 
-[içinde] *nOffset*<br/>
+'ndaki *nKonum*<br/>
 
-[içinde] *nYükseklik*<br/>
+'ndaki *nHeight*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowcreate"></a><a name="create"></a>CDockingPanesRow::Oluştur
+## <a name="cdockingpanesrowcreate"></a><a name="create"></a> CDockingPanesRow:: Create
 
 ```
 virtual BOOL Create();
@@ -291,7 +292,7 @@ virtual BOOL Create();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowexpandstretchedpanes"></a><a name="expandstretchedpanes"></a>CDockingPanesRow::ExpandStretchedPanes
+## <a name="cdockingpanesrowexpandstretchedpanes"></a><a name="expandstretchedpanes"></a> CDockingPanesRow:: Expandıdiedbölmeler
 
 ```cpp
 void ExpandStretchedPanes();
@@ -299,7 +300,7 @@ void ExpandStretchedPanes();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowexpandstretchedpanesrect"></a><a name="expandstretchedpanesrect"></a>CDockingPanesRow::ExpandStretchedPanesRect
+## <a name="cdockingpanesrowexpandstretchedpanesrect"></a><a name="expandstretchedpanesrect"></a> CDockingPanesRow:: Expandıdiedpanesrect
 
 ```cpp
 void ExpandStretchedPanesRect();
@@ -307,7 +308,7 @@ void ExpandStretchedPanesRect();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowfixupvirtualrects"></a><a name="fixupvirtualrects"></a>CDockingPanesRow::FixupVirtualRects
+## <a name="cdockingpanesrowfixupvirtualrects"></a><a name="fixupvirtualrects"></a> CDockingPanesRow:: FixupVirtualRects
 
 ```cpp
 void FixupVirtualRects(
@@ -317,13 +318,13 @@ void FixupVirtualRects(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bMoveBackToVirtualRect*<br/>
+'ndaki *Bmovebacktovirtualrect*<br/>
 
-[içinde] *pBarToExclude*<br/>
+'ndaki *Pbartoexclude*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetavailablelength"></a><a name="getavailablelength"></a>CDockingPanesRow::GetAvailableLength
+## <a name="cdockingpanesrowgetavailablelength"></a><a name="getavailablelength"></a> CDockingPanesRow:: GetAvailableLength
 
 ```
 virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;
@@ -331,13 +332,13 @@ virtual int GetAvailableLength(BOOL bUseVirtualRect = FALSE) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bUseVirtualRect*<br/>
+'ndaki *Busevirtualrect*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetavailablespace"></a><a name="getavailablespace"></a>CDockingPanesRow::GetAvailableSpace
+## <a name="cdockingpanesrowgetavailablespace"></a><a name="getavailablespace"></a> CDockingPanesRow:: GetAvailableSpace
 
 ```
 virtual void GetAvailableSpace(CRect& rect);
@@ -345,11 +346,11 @@ virtual void GetAvailableSpace(CRect& rect);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *rekt*<br/>
+'ndaki *Rect*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetclientrect"></a><a name="getclientrect"></a>CDockingPanesRow::GetClientRect
+## <a name="cdockingpanesrowgetclientrect"></a><a name="getclientrect"></a> CDockingPanesRow:: GetClientRect
 
 ```cpp
 void GetClientRect(CRect& rect) const;
@@ -357,11 +358,11 @@ void GetClientRect(CRect& rect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *rekt*<br/>
+'ndaki *Rect*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetdocksite"></a><a name="getdocksite"></a>CDockingPanesRow::GetDockSite
+## <a name="cdockingpanesrowgetdocksite"></a><a name="getdocksite"></a> CDockingPanesRow:: GetDockSite
 
 ```
 CDockSite* GetDockSite() const;
@@ -371,7 +372,7 @@ CDockSite* GetDockSite() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetextraspace"></a><a name="getextraspace"></a>CDockingPanesRow::GetExtraSpace
+## <a name="cdockingpanesrowgetextraspace"></a><a name="getextraspace"></a> CDockingPanesRow:: GetExtraSpace
 
 ```
 int GetExtraSpace() const;
@@ -381,7 +382,7 @@ int GetExtraSpace() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetgroupfrompane"></a><a name="getgroupfrompane"></a>CDockingPanesRow::GetGroupFromPane
+## <a name="cdockingpanesrowgetgroupfrompane"></a><a name="getgroupfrompane"></a> CDockingPanesRow:: GetGroupFromPane
 
 ```cpp
 void GetGroupFromPane(
@@ -391,13 +392,13 @@ void GetGroupFromPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBar*<br/>
+'ndaki *pBar*<br/>
 
-[içinde] *lst*<br/>
+'ndaki *lst*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetid"></a><a name="getid"></a>CDockingPanesRow::GetID
+## <a name="cdockingpanesrowgetid"></a><a name="getid"></a> CDockingPanesRow:: GetId
 
 ```
 int GetID() const;
@@ -407,7 +408,7 @@ int GetID() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetmaxpanesize"></a><a name="getmaxpanesize"></a>CDockingPanesRow::GetMaxPaneSize
+## <a name="cdockingpanesrowgetmaxpanesize"></a><a name="getmaxpanesize"></a> CDockingPanesRow:: GetMaxPaneSize
 
 ```
 int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;
@@ -415,13 +416,13 @@ int GetMaxPaneSize(BOOL bSkipHiddenBars = TRUE) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bSkipHiddenBars*<br/>
+'ndaki *Bskiphiddenbar çubukları*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetpanecount"></a><a name="getpanecount"></a>CDockingPanesRow::GetPaneCount
+## <a name="cdockingpanesrowgetpanecount"></a><a name="getpanecount"></a> CDockingPanesRow:: Getbölmesi sayısı
 
 ```
 int GetPaneCount() const;
@@ -431,7 +432,7 @@ int GetPaneCount() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetpanelist"></a><a name="getpanelist"></a>CDockingPanesRow::GetPaneList
+## <a name="cdockingpanesrowgetpanelist"></a><a name="getpanelist"></a> CDockingPanesRow:: Getbölmesi listesi
 
 ```
 const CObList& GetPaneList() const;
@@ -441,7 +442,7 @@ const CObList& GetPaneList() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetrowalignment"></a><a name="getrowalignment"></a>CDockingPanesRow::GetRowAlignment
+## <a name="cdockingpanesrowgetrowalignment"></a><a name="getrowalignment"></a> CDockingPanesRow:: Getrowhizalaması
 
 ```
 DWORD GetRowAlignment() const;
@@ -451,7 +452,7 @@ DWORD GetRowAlignment() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetrowheight"></a><a name="getrowheight"></a>CDockingPanesRow::GetRowHeight
+## <a name="cdockingpanesrowgetrowheight"></a><a name="getrowheight"></a> CDockingPanesRow:: GetRowHeight
 
 ```
 int GetRowHeight() const;
@@ -461,7 +462,7 @@ int GetRowHeight() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetrowoffset"></a><a name="getrowoffset"></a>CDockingPanesRow::GetRowOffset
+## <a name="cdockingpanesrowgetrowoffset"></a><a name="getrowoffset"></a> CDockingPanesRow:: Getrowkayması
 
 ```
 int GetRowOffset() const;
@@ -471,7 +472,7 @@ int GetRowOffset() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetvisiblecount"></a><a name="getvisiblecount"></a>CDockingPanesRow::GetVisibleCount
+## <a name="cdockingpanesrowgetvisiblecount"></a><a name="getvisiblecount"></a> CDockingPanesRow:: GetVisibleCount
 
 ```
 virtual int GetVisibleCount();
@@ -481,7 +482,7 @@ virtual int GetVisibleCount();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowgetwindowrect"></a><a name="getwindowrect"></a>CDockingPanesRow::GetWindowRect
+## <a name="cdockingpanesrowgetwindowrect"></a><a name="getwindowrect"></a> CDockingPanesRow:: GetWindowRect
 
 ```cpp
 void GetWindowRect(CRect& rect) const;
@@ -489,11 +490,11 @@ void GetWindowRect(CRect& rect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *rekt*<br/>
+'ndaki *Rect*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowhaspane"></a><a name="haspane"></a>CDockingPanesRow::HasPane
+## <a name="cdockingpanesrowhaspane"></a><a name="haspane"></a> CDockingPanesRow:: HasPane
 
 ```
 BOOL HasPane(CBasePane* pControlBar);
@@ -501,13 +502,13 @@ BOOL HasPane(CBasePane* pControlBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pControlBar*<br/>
+'ndaki *pControlBar*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowisempty"></a><a name="isempty"></a>CDockingPanesRow::Boş
+## <a name="cdockingpanesrowisempty"></a><a name="isempty"></a> CDockingPanesRow:: IsEmpty
 
 ```
 virtual BOOL IsEmpty() const;
@@ -517,7 +518,7 @@ virtual BOOL IsEmpty() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowisexclusiverow"></a><a name="isexclusiverow"></a>CDockingPanesRow::IsExclusiveRow
+## <a name="cdockingpanesrowisexclusiverow"></a><a name="isexclusiverow"></a> CDockingPanesRow:: ısexclusiverow
 
 ```
 virtual BOOL IsExclusiveRow() const;
@@ -527,7 +528,7 @@ virtual BOOL IsExclusiveRow() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowishorizontal"></a><a name="ishorizontal"></a>CDockingPanesRow::Yatay
+## <a name="cdockingpanesrowishorizontal"></a><a name="ishorizontal"></a> CDockingPanesRow:: ısyatay
 
 ```
 bool IsHorizontal() const;
@@ -537,7 +538,7 @@ bool IsHorizontal() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowisvisible"></a><a name="isvisible"></a>CDockingPanesRow::Görünür
+## <a name="cdockingpanesrowisvisible"></a><a name="isvisible"></a> CDockingPanesRow:: IsVisible
 
 ```
 virtual BOOL IsVisible() const;
@@ -547,7 +548,7 @@ virtual BOOL IsVisible() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowmove"></a><a name="move"></a>CDockingPanesRow::Taşı
+## <a name="cdockingpanesrowmove"></a><a name="move"></a> CDockingPanesRow:: Move
 
 ```
 virtual void Move(int nOffset);
@@ -555,11 +556,11 @@ virtual void Move(int nOffset);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *nOffset*<br/>
+'ndaki *nKonum*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowmovepane"></a><a name="movepane"></a>CDockingPanesRow::MovePane
+## <a name="cdockingpanesrowmovepane"></a><a name="movepane"></a> CDockingPanesRow:: MovePane
 
 ```cpp
 void MovePane(
@@ -587,25 +588,25 @@ void MovePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pControlBar*<br/>
+'ndaki *pControlBar*<br/>
 
-[içinde] *ptOffset*<br/>
+'ndaki *ptOffset*<br/>
 
-[içinde] *bSwapControlBars*<br/>
+'ndaki *Bswapcontrolçubuklar*<br/>
 
-[içinde] *hdwp*<br/>
+'ndaki *hdwp*<br/>
 
-[içinde] *rectTarget*<br/>
+'ndaki *Recttarget*<br/>
 
-[içinde] *nOffset*<br/>
+'ndaki *nKonum*<br/>
 
-[içinde] *bForward*<br/>
+'ndaki *bilet*<br/>
 
-[içinde] *nAbsolutOffset*<br/>
+'ndaki *Nabsolutoffset*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowonresizepane"></a><a name="onresizepane"></a>CDockingPanesRow::OnResizePane
+## <a name="cdockingpanesrowonresizepane"></a><a name="onresizepane"></a> CDockingPanesRow:: OnResizePane
 
 ```
 virtual void OnResizePane(CBasePane* pControlBar);
@@ -613,11 +614,11 @@ virtual void OnResizePane(CBasePane* pControlBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pControlBar*<br/>
+'ndaki *pControlBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowredrawall"></a><a name="redrawall"></a>CDockingPanesRow::RedrawAll
+## <a name="cdockingpanesrowredrawall"></a><a name="redrawall"></a> CDockingPanesRow:: RedrawAll
 
 ```cpp
 void RedrawAll();
@@ -625,7 +626,7 @@ void RedrawAll();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowremovepane"></a><a name="removepane"></a>CDockingPanesRow::RemovePane
+## <a name="cdockingpanesrowremovepane"></a><a name="removepane"></a> CDockingPanesRow:: RemovePane
 
 ```
 virtual void RemovePane(CPane* pControlBar);
@@ -633,11 +634,11 @@ virtual void RemovePane(CPane* pControlBar);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pControlBar*<br/>
+'ndaki *pControlBar*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowreplacepane"></a><a name="replacepane"></a>CDockingPanesRow::ReplacePane
+## <a name="cdockingpanesrowreplacepane"></a><a name="replacepane"></a> CDockingPanesRow:: ReplacePane
 
 ```
 virtual BOOL ReplacePane(
@@ -647,15 +648,15 @@ virtual BOOL ReplacePane(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pBarOld*<br/>
+'ndaki *Pbarold*<br/>
 
-[içinde] *pBarNew*<br/>
+'ndaki *Pbarnew*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowrepositionpanes"></a><a name="repositionpanes"></a>CDockingPanesRow::RepositionPanes
+## <a name="cdockingpanesrowrepositionpanes"></a><a name="repositionpanes"></a> CDockingPanesRow:: kayıt bölmeleri
 
 ```
 virtual void RepositionPanes(
@@ -667,17 +668,17 @@ virtual void RepositionPanes(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *rectNewParentBarArea*<br/>
+'ndaki *Rectnewparentbararea*<br/>
 
-[içinde] *nSide*<br/>
+'ndaki *Nsıde*<br/>
 
-[içinde] *bGenişletin*<br/>
+'ndaki *Bexpand*<br/>
 
-[içinde] *nOffset*<br/>
+'ndaki *nKonum*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowresize"></a><a name="resize"></a>CDockingPanesRow::Yeniden boyutlandırma
+## <a name="cdockingpanesrowresize"></a><a name="resize"></a> CDockingPanesRow:: Resize
 
 ```
 virtual int Resize(int nOffset);
@@ -685,13 +686,13 @@ virtual int Resize(int nOffset);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *nOffset*<br/>
+'ndaki *nKonum*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowresizebypanedivider"></a><a name="resizebypanedivider"></a>CDockingPanesRow::ResizeByPaneDivider
+## <a name="cdockingpanesrowresizebypanedivider"></a><a name="resizebypanedivider"></a> CDockingPanesRow:: ResizeByPaneDivider
 
 ```
 virtual int ResizeByPaneDivider(int /*ignored*/);
@@ -699,13 +700,13 @@ virtual int ResizeByPaneDivider(int /*ignored*/);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *yok sayıldı*<br/>
+'ndaki *yoksayıldı*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowscreentoclient"></a><a name="screentoclient"></a>CDockingPanesRow::ScreenToClient
+## <a name="cdockingpanesrowscreentoclient"></a><a name="screentoclient"></a> CDockingPanesRow:: ScreenToClient
 
 ```cpp
 void ScreenToClient(CRect& rect) const;
@@ -713,11 +714,11 @@ void ScreenToClient(CRect& rect) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *rekt*<br/>
+'ndaki *Rect*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowsetextra"></a><a name="setextra"></a>CDockingPanesRow::SetExtra
+## <a name="cdockingpanesrowsetextra"></a><a name="setextra"></a> CDockingPanesRow:: SetExtra
 
 ```cpp
 void SetExtra(
@@ -727,13 +728,13 @@ void SetExtra(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *nExtraSpace*<br/>
+'ndaki *Nextraspace*<br/>
 
-[içinde] *rowExtraAlign*<br/>
+'ndaki *Rowextraalign*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowshowdocksiterow"></a><a name="showdocksiterow"></a>CDockingPanesRow::ShowDockSiteRow
+## <a name="cdockingpanesrowshowdocksiterow"></a><a name="showdocksiterow"></a> CDockingPanesRow:: Showdocksıterow
 
 ```
 virtual void ShowDockSiteRow(
@@ -743,13 +744,13 @@ virtual void ShowDockSiteRow(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bGöster*<br/>
+'ndaki *bShow*<br/>
 
-[içinde] *bGecikme*<br/>
+'ndaki *bDelay*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowshowpane"></a><a name="showpane"></a>CDockingPanesRow::ShowPane
+## <a name="cdockingpanesrowshowpane"></a><a name="showpane"></a> CDockingPanesRow:: ShowPane
 
 ```
 virtual BOOL ShowPane(
@@ -760,17 +761,17 @@ virtual BOOL ShowPane(
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *pControlBar*<br/>
+'ndaki *pControlBar*<br/>
 
-[içinde] *bGöster*<br/>
+'ndaki *bShow*<br/>
 
-[içinde] *bGecikme*<br/>
+'ndaki *bDelay*<br/>
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdockingpanesrowupdatevisiblestate"></a><a name="updatevisiblestate"></a>CDockingPanesRow::UpdateVisibleState
+## <a name="cdockingpanesrowupdatevisiblestate"></a><a name="updatevisiblestate"></a> CDockingPanesRow:: UpdateVisibleState
 
 ```
 virtual void UpdateVisibleState(BOOL bDelay);
@@ -778,14 +779,14 @@ virtual void UpdateVisibleState(BOOL bDelay);
 
 ### <a name="parameters"></a>Parametreler
 
-[içinde] *bGecikme*<br/>
+'ndaki *bDelay*<br/>
 
 ### <a name="remarks"></a>Açıklamalar
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[CDockSite Sınıfı](../../mfc/reference/cdocksite-class.md)<br/>
-[CPane Sınıfı](../../mfc/reference/cpane-class.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[CDockSite sınıfı](../../mfc/reference/cdocksite-class.md)<br/>
+[CPane sınıfı](../../mfc/reference/cpane-class.md)

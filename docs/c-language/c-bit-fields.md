@@ -1,22 +1,23 @@
 ---
+description: 'Daha fazla bilgi edinin: C bit alanları'
 title: C Bit Alanları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - bitfields
 - bit fields
 ms.assetid: 9faf74c4-7fd5-4b44-ad18-04485193d06e
-ms.openlocfilehash: 4878a9c8c206851b13484446b436952e655e06db
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e89f74fc68cad11eee63b3dd1101fa71e0b72e27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234295"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186967"
 ---
 # <a name="c-bit-fields"></a>C Bit Alanları
 
 Bir yapı veya birleşim üyeleri için bildirimcilerin yanı sıra, bir yapı bildirimci, "bit alanı" olarak adlandırılan belirtilen sayıda bit de olabilir. Uzunluğu, alan adı için bildirimciden bir iki nokta üst üste kadar ayarlanır. Bit alanı integral türü olarak yorumlanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *struct-declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*bildirimci*<br/>

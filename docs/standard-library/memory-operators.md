@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; bellek &gt; işleçleri'
 title: '&lt;bellek &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,16 +11,16 @@ f1_keywords:
 - memory/std::operator<<
 - memory/std::operator==
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-ms.openlocfilehash: 15762e4853cfd018c7cff997a3ed9ba7d86b3c2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cbf52aa2af13a0eae241444d88e0eeabe7efe47b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233060"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183951"
 ---
 # <a name="ltmemorygt-operators"></a>&lt;bellek &gt; işleçleri
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 Nesneler arasında eşitsizlik için testler.
 
@@ -120,7 +121,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 Nesneler arasındaki eşitlik için testler.
 
@@ -232,7 +233,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>işlecinde&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> işlecinde&gt;=
 
 Bir nesne için ikinci bir nesneden büyük veya ona eşit olan testler.
 
@@ -266,7 +267,7 @@ Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 Şablon işleçleri döndürülür `left.get() >= right.get()` .
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 Bir nesne için ikinci bir nesneden daha az olan testler.
 
@@ -296,7 +297,7 @@ Sol işaretçiye göre denetlenen tür.
 *Ty2*\
 Sağ işaretçiye göre denetlenen tür.
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>işlecinde&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> işlecinde&lt;=
 
 Bir nesne için ikinci bir nesneden daha az veya eşit olan testler.
 
@@ -328,9 +329,9 @@ Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işleçleri döndürüyor`left.get() <= right.get()`
+Şablon işleçleri döndürüyor `left.get() <= right.get()`
 
-## <a name="operatorgt"></a><a name="op_gt"></a>işlecinde&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> işlecinde&gt;
 
 Bir nesne için ikinci bir nesneden daha büyük olan testler.
 
@@ -360,7 +361,7 @@ Sol paylaşılan işaretçi tarafından denetlenen tür.
 *Ty2*\
 Doğru paylaşılan işaretçi tarafından denetlenen tür.
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>işlecinde&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> işlecinde&lt;&lt;
 
 Paylaşılan işaretçiyi akışa yazar.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDragListBox sınıfı'
 title: CDragListBox sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - CDragListBox [MFC], Dropped
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
-ms.openlocfilehash: b260d3a88fc8c3f2d341005c1e47cfd9ab668e1e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0dfa61503bd9c1aa3017d37b873a8948f61e68e2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500355"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184782"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox sınıfı
 
 Sınıfı, bir Windows liste kutusunun işlevlerini sağlamaya ek olarak, `CDragListBox` kullanıcının dosya adları gibi liste kutusu öğelerini liste kutusunda taşımasına izin verir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDragListBox : public CListBox
@@ -196,7 +197,7 @@ Varsayılan davranış, liste kutusu öğesini ve verilerini yeni konuma kopyala
 
 ## <a name="cdraglistboxitemfrompt"></a><a name="itemfrompt"></a> CDragListBox:: ıtemfrompt
 
-*PT*konumunda bulunan liste kutusu öğesinin sıfır tabanlı dizinini almak için bu işlevi çağırın.
+*PT* konumunda bulunan liste kutusu öğesinin sıfır tabanlı dizinini almak için bu işlevi çağırın.
 
 ```
 int ItemFromPt(

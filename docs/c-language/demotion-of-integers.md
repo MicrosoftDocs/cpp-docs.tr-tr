@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: tamsayıların Indirgenmesi'
 title: Tam Sayıların İndirgenmesi
 ms.date: 11/04/2016
 helpviewer_keywords:
 - demoting integers
 ms.assetid: 51fb3654-60b0-4de7-80eb-bd910086c18a
-ms.openlocfilehash: aee0a5041cd37b1fbad785b760b8cefde74eb195
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d80adff34223d8aa785fa6ffa079a54af198a309
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218890"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186824"
 ---
 # <a name="demotion-of-integers"></a>Tam Sayıların İndirgenmesi
 
@@ -35,4 +36,4 @@ char y = (char)0x1234;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kesirli](../c-language/integers.md)
+[Tam Sayılar](../c-language/integers.md)

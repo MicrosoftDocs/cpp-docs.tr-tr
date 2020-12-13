@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: wstring_convert sınıfı'
 title: wstring_convert Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,18 +23,18 @@ helpviewer_keywords:
 - std::wstring_convert [C++], converted
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
-ms.openlocfilehash: 01754ca4239d89a64fdb67a85e82b90c5a24872d
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 53c3e311967295294d158bb0342d365d45f5e031
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560758"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187747"
 ---
 # <a name="wstring_convert-class"></a>wstring_convert Sınıfı
 
 Sınıf şablonu, `wstring_convert` geniş bir dize ve bir bayt dizesi arasında dönüşümler gerçekleştirir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Codecvt, class Elem = wchar_t>
@@ -86,7 +87,7 @@ Bu sınıf şablonunun bir nesnesi şunları depolar:
 |[from_bytes](#from_bytes)|Bir bayt dizesini geniş bir dizeye dönüştürür.|
 |[to_bytes](#to_bytes)|Geniş bir dizeyi bayt dizesine dönüştürür.|
 |[dönüştürdüğünüzde](#converted)|Başarılı dönüştürme sayısını döndürür.|
-|[state](#state)|Dönüştürmenin durumunu temsil eden bir nesne döndürür.|
+|[durumunda](#state)|Dönüştürmenin durumunu temsil eden bir nesne döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 

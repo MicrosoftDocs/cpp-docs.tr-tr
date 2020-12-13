@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; bellek&gt;'
 title: '&lt;bellek&gt;'
 ms.date: 08/04/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - std::<memory>
 helpviewer_keywords:
 - memory header
-ms.openlocfilehash: 0e3ce4a4411bd6d4c352802a96c97e93c66491df
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 27aea86d8329ee37c3aa1409b7dde7091cfe43bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836471"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183782"
 ---
 # <a name="ltmemorygt"></a>&lt;bellek&gt;
 
@@ -31,7 +32,7 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 |Ad|Açıklama|
 |-|-|
 |[AddressOf](../standard-library/memory-functions.md#addressof)|Bir nesnenin doğru adresini alır.|
-|[align](../standard-library/memory-functions.md#align)|Sağlanan hizalama ve başlangıç adresini temel alarak belirli bir boyut aralığı için bir işaretçi döndürür.|
+|[acaktır](../standard-library/memory-functions.md#align)|Sağlanan hizalama ve başlangıç adresini temel alarak belirli bir boyut aralığı için bir işaretçi döndürür.|
 |[allocate_shared](../standard-library/memory-functions.md#allocate_shared)|Belirtilen bir `shared_ptr` ayırıcıyla verilen tür için ayrılan ve oluşturulan nesneler için bir oluşturur.|
 |[atomic_compare_exchange_strong](../standard-library/memory-functions.md#atomic_compare_exchange_strong)||
 |[atomic_compare_exchange_weak](../standard-library/memory-functions.md#atomic_compare_exchange_weak)||
@@ -91,9 +92,9 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 
 |Ad|Açıklama|
 |-|-|
-|[allocator](../standard-library/allocator-class.md)|Sınıf şablonu **, türünde nesne**dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar.|
+|[allocator](../standard-library/allocator-class.md)|Sınıf şablonu **, türünde nesne** dizileri için depolama ayırmayı ve boşaltmayı yöneten bir nesneyi tanımlar.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Ayırıcı tarafından etkinleştirilen kapsayıcı tarafından gerek duyulan bilgilerin tamamını belirleyen nesneyi tanımlar.|
-|[auto_ptr](../standard-library/auto-ptr-class.md)|Sınıf şablonu, **Type** <strong>\*</strong> kapsayan auto_ptr yok edilirken onun işaret ettiği nesnenin silindiğini sağlayan türü tür bir ayrılmış nesneye bir işaretçi depolayan bir nesneyi tanımlar.|
+|[auto_ptr](../standard-library/auto-ptr-class.md)|Sınıf şablonu,  <strong>\*</strong> kapsayan auto_ptr yok edilirken onun işaret ettiği nesnenin silindiğini sağlayan türü tür bir ayrılmış nesneye bir işaretçi depolayan bir nesneyi tanımlar.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|Bozuk weak_ptr özel durumunu raporlar.|
 |[enabled_shared_from_this](../standard-library/enable-shared-from-this-class.md)|Bir oluşturulmasına yardımcı olur `shared_ptr` .|
 |[pointer_traits](../standard-library/pointer-traits-struct.md)|`allocator_traits`İşaretçi türü olan bir ayırıcıyı tanımlayan türünde bir nesne için gereken bilgileri sağlar `Ptr` .|

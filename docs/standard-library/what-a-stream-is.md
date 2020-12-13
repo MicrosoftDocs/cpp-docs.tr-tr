@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Stream'
 title: Akışın Ne Olduğu
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - streams [C++], in iostream classes
 - streams [C++]
 ms.assetid: a7e661e9-6cd1-4543-a9a4-c58ee9fd32f3
-ms.openlocfilehash: 80f2d17d7de2ddca1ef1501cacdb44f41c06594b
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 3786fe05f25949129c1bce63bdbbd73a16209475
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187786"
 ---
 # <a name="what-a-stream-is"></a>Akışın Ne Olduğu
 
-C gibi, C++ yerleşik giriş/çıkış özelliğine sahip değildir. Ancak C++ , tüm derleyiciler, ıostream sınıfları olarak bilinen bir Systematik, nesne odaklı g/ç paketiyle paketlenmiştir. Akış, ıostream sınıflarının merkezi kavramıdır. Stream nesnesini, bayt için kaynak ve hedef olarak davranan akıllı bir dosya olarak düşünebilirsiniz. Akışın özellikleri, sınıfı ve özelleştirilmiş ekleme ve ayıklama işleçleri tarafından belirlenir.
+C gibi C++ ' da yerleşik giriş/çıkış yeteneği yoktur. Ancak tüm C++ derleyicileri, ıostream sınıfları olarak bilinen bir sistematik, nesne odaklı g/ç paketiyle paketlenmiş olarak sunulur. Akış, ıostream sınıflarının merkezi kavramıdır. Stream nesnesini, bayt için kaynak ve hedef olarak davranan akıllı bir dosya olarak düşünebilirsiniz. Akışın özellikleri, sınıfı ve özelleştirilmiş ekleme ve ayıklama işleçleri tarafından belirlenir.
 
 Cihaz sürücüleri aracılığıyla disk işletim sistemi, Genişletilmiş dosyalar olarak klavye, ekran, yazıcı ve iletişim bağlantı noktalarıyla ilgilidir. İostream sınıfları, bu genişletilmiş dosyalarla etkileşime geçin. Yerleşik sınıflar, disk g/ç için bu verilerle özdeş olan ve bu da akış sınıflarının türemesini kolaylaştıran bir sözdizimi ile belleği okumayı ve yazmayı destekler.
 
@@ -26,4 +27,4 @@ Cihaz sürücüleri aracılığıyla disk işletim sistemi, Genişletilmiş dosy
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[iostream Programlaması](../standard-library/iostream-programming.md)
+[iostream programlama](../standard-library/iostream-programming.md)

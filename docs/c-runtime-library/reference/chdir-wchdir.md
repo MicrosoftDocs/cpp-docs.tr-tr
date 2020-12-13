@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _chdir _wchdir'
 title: _chdir, _wchdir
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - chdir function
 - directories [C++], changing
 ms.assetid: 85e9393b-62ac-45d5-ab2a-fa2217f6152e
-ms.openlocfilehash: a54b42ee92392971fdb6979ee2dc3a3b9c65f184
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 190e9d6445417aed8c35843cb4c386d49535ebbd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917048"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186720"
 ---
 # <a name="_chdir-_wchdir"></a>_chdir, _wchdir
 
@@ -67,11 +68,11 @@ Yeni çalışma dizininin yolu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevler, başarılı olursa 0 değerini döndürür. -1 dönüş değeri hata olduğunu gösterir. Belirtilen yol bulunamazsa, **errno** , **ENOENT**olarak ayarlanır. *DizinAdı* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
+Bu işlevler, başarılı olursa 0 değerini döndürür. -1 dönüş değeri hata olduğunu gösterir. Belirtilen yol bulunamazsa, **errno** , **ENOENT** olarak ayarlanır. *DizinAdı* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chdir** işlevi geçerli çalışma dizinini *DizinAdı*tarafından belirtilen dizine değiştirir. *DizinAdı* parametresi var olan bir dizine başvurmalıdır. Bu işlev, herhangi bir sürücüdeki geçerli çalışma dizinini değiştirebilir. *DizinAdı*içinde yeni bir sürücü harfi belirtilmişse, varsayılan sürücü harfi de değiştirilir. Örneğin, bir, varsayılan sürücü harfi ve \BIN geçerli çalışma dizinidir, aşağıdaki çağrı C sürücüsü için geçerli çalışma dizinini değiştirir ve yeni varsayılan sürücü olarak C 'yi oluşturur:
+**_Chdir** işlevi geçerli çalışma dizinini *DizinAdı* tarafından belirtilen dizine değiştirir. *DizinAdı* parametresi var olan bir dizine başvurmalıdır. Bu işlev, herhangi bir sürücüdeki geçerli çalışma dizinini değiştirebilir. *DizinAdı* içinde yeni bir sürücü harfi belirtilmişse, varsayılan sürücü harfi de değiştirilir. Örneğin, bir, varsayılan sürücü harfi ve \BIN geçerli çalışma dizinidir, aşağıdaki çağrı C sürücüsü için geçerli çalışma dizinini değiştirir ve yeni varsayılan sürücü olarak C 'yi oluşturur:
 
 ```C
 _chdir("c:\temp");
@@ -79,11 +80,11 @@ _chdir("c:\temp");
 
 Yollarda isteğe bağlı ters eğik çizgi karakterini (**&#92;**) kullandığınızda, tek bir ters eğik çizgi (**&#92;**) göstermek için bir C dize sabit değerine iki ters eğik çizgi (**&#92;&#92;**) koymanız gerekir.
 
-**_wchdir** , **_chdir**geniş karakterli bir sürümüdür; _wchdir *DizinAdı* bağımsız değişkeni **_wchdir** geniş karakterli bir dizedir. **_wchdir** ve **_chdir** aynı şekilde davranır.
+**_wchdir** , **_chdir** geniş karakterli bir sürümüdür; _wchdir *DizinAdı* bağımsız değişkeni  geniş karakterli bir dizedir. **_wchdir** ve **_chdir** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
-### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme:
+### <a name="generic-text-routine-mapping"></a>Generic-Text yordam eşlemesi:
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -93,8 +94,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_chdir**|\<Direct. h>|\<errno. h>|
-|**_wchdir**|\<Direct. h> veya \<wchar. h>|\<errno. h>|
+|**_chdir**|\<direct.h>|\<errno.h>|
+|**_wchdir**|\<direct.h> veya \<wchar.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

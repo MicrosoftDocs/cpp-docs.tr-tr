@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDrawingManager sınıfı'
 title: CDrawingManager sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: 1cc469b63e448e964dacc4d853905b22155dfe0e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b30218dd41e3591c4a39df078bb19e3ac653ba1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184796"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 
@@ -391,7 +392,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PBmpSaveBottom* ve *Pbmpsaveriright*parametrelerini kullanarak aşağıdan ve sağ gölgelerdeki iki geçerli bit eşlem sağlayabilirsiniz. Bu [CBitmap](../../mfc/reference/cbitmap-class.md) nesnelerinde eklı bir GDI nesnesi varsa, `DrawShadow` Bu bit eşlemler gölgeler olarak kullanacaktır. `CBitmap`Parametrelerde eklenmiş BIR GDI nesnesi yoksa, `DrawShadow` Gölgeyi çizer ve bit eşlemleri parametrelere ekler. Sonraki çağrılarında `DrawShadow` , çizim işlemini hızlandırmak için bu bit eşlemleri sağlayabilirsiniz. Sınıf ve GDI nesneleri hakkında daha fazla bilgi için `CBitmap` bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
+*PBmpSaveBottom* ve *Pbmpsaveriright* parametrelerini kullanarak aşağıdan ve sağ gölgelerdeki iki geçerli bit eşlem sağlayabilirsiniz. Bu [CBitmap](../../mfc/reference/cbitmap-class.md) nesnelerinde eklı bir GDI nesnesi varsa, `DrawShadow` Bu bit eşlemler gölgeler olarak kullanacaktır. `CBitmap`Parametrelerde eklenmiş BIR GDI nesnesi yoksa, `DrawShadow` Gölgeyi çizer ve bit eşlemleri parametrelere ekler. Sonraki çağrılarında `DrawShadow` , çizim işlemini hızlandırmak için bu bit eşlemleri sağlayabilirsiniz. Sınıf ve GDI nesneleri hakkında daha fazla bilgi için `CBitmap` bkz. [grafik nesneleri](../../mfc/graphic-objects.md).
 
 Bu parametrelerden biri ise `NULL` `DrawShadow` otomatik olarak gölgeyi çizecek.
 
@@ -443,7 +444,7 @@ void Fill4ColorsGradient(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir dikdörtgen iki renk gradyanına göre dolduğunda, *bHorz*değerine bağlı olarak, bunlar birbirlerinin üzerinde veya yanında bulunur. Her renk gradyanı, [CDrawingManager:: FillGradient](#fillgradient)yöntemiyle bağımsız olarak hesaplanır.
+Bir dikdörtgen iki renk gradyanına göre dolduğunda, *bHorz* değerine bağlı olarak, bunlar birbirlerinin üzerinde veya yanında bulunur. Her renk gradyanı, [CDrawingManager:: FillGradient](#fillgradient)yöntemiyle bağımsız olarak hesaplanır.
 
 Bu yöntem, *nPercentage* 0 ' dan küçükse veya 100 ' den büyükse bir onaylama hatası oluşturur.
 
@@ -555,7 +556,7 @@ Yöntem başarılı olduysa doğru; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*NPercentage*parametresi için, daha küçük bir değer daha koyu bir renk gösterir.
+*NPercentage* parametresi için, daha küçük bir değer daha koyu bir renk gösterir.
 
 *NPercentage* için maksimum değer 200 ' dir. 200 değerinden büyük bir değer dikdörtgenin görünümünü değiştirmez. Değer-1 ise, bu yöntem dikdörtgenin doygunluğunu sınırlamak için *clrDisabled* kullanır.
 
@@ -612,7 +613,7 @@ static COLORREF __stdcall HLStoRGB_ONE(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
+*Olsun*<br/>
 'ndaki Rengin tonunu temsil eden 0 ile 1 arasında bir sayı.
 
 *L*<br/>
@@ -644,7 +645,7 @@ static COLORREF __stdcall HLStoRGB_TWO(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
+*Olsun*<br/>
 'ndaki Renk için tonu temsil eden 0 ile 360 arasında bir sayı.
 
 *L*<br/>
@@ -717,7 +718,7 @@ static BYTE __stdcall HueToRGB(
 *m2*<br/>
 'ndaki Bkz. açıklamalar.
 
-*olsun*<br/>
+*h*<br/>
 'ndaki Bkz. açıklamalar.
 
 *rm1*<br/>
@@ -816,7 +817,7 @@ Yarı saydam piksel için son renk.
 
 Bu, yarı saydam bit eşlemler renklendirmesi için yardımcı sınıftır ve doğrudan programcı tarafından çağrılacak şekilde tasarlanmamıştır.
 
-*DstPixel*içeren yöntemin sürümünü kullandığınızda, son renk *dstPixel* ve *srcPixel*'in bir birleşimidir. *SrcPixel* rengi, *dstPixel*'in temel rengi üzerinde kısmen saydam bir renktir.
+*DstPixel* içeren yöntemin sürümünü kullandığınızda, son renk *dstPixel* ve *srcPixel*'in bir birleşimidir. *SrcPixel* rengi, *dstPixel*'in temel rengi üzerinde kısmen saydam bir renktir.
 
 ## <a name="cdrawingmanagerprepareshadowmask"></a><a name="prepareshadowmask"></a> CDrawingManager::P repareShadowMask
 
@@ -901,13 +902,13 @@ static void __stdcall RGBtoHSV(
 *'ye*<br/>
 'ndaki Bir RGB gösteriminde dönüştürülecek renk.
 
-*H*<br/>
+*Olsun*<br/>
 dışı Bu yöntemin renk için elde edilen tonu depoladığı bir Double işaretçisi.
 
 *S*<br/>
 dışı Bu yöntemin, renk için elde edilen doygunluğu depoladığı bir Double işaretçisi.
 
-*Yönetim*<br/>
+*V*<br/>
 dışı Bu yöntemin, renk için elde edilen değeri depoladığı bir Double işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1036,7 +1037,7 @@ Sağlanan renklerin ağırlıklı karışımını temsil eden bir renk.
 
 *K1* veya *K2* sıfırdan küçükse bu yöntem hata ile başarısız olur. Bu parametrelerin her ikisi de 0 olarak ayarlandıysa, yöntemi döndürür `RGB(0, 0, 0)` .
 
-Ağırlıklı oran şu formül ile hesaplanır: (color1 \* K1 + COLOR2 \* K2)/(K1 + K2). Ağırlıklı oran saptandıktan sonra yöntem, karışık rengin parlaklığını hesaplar. Daha sonra, parlaklığı *dblLumRatio*ile çarpar. Değer 1,0 ' den büyükse, yöntemi karışık rengin parlaklığını yeni değere ayarlar. Aksi takdirde, parlaklık 1,0 olarak ayarlanır.
+Ağırlıklı oran şu formül ile hesaplanır: (color1 \* K1 + COLOR2 \* K2)/(K1 + K2). Ağırlıklı oran saptandıktan sonra yöntem, karışık rengin parlaklığını hesaplar. Daha sonra, parlaklığı *dblLumRatio* ile çarpar. Değer 1,0 ' den büyükse, yöntemi karışık rengin parlaklığını yeni değere ayarlar. Aksi takdirde, parlaklık 1,0 olarak ayarlanır.
 
 ## <a name="cdrawingmanagerdrawrotated"></a><a name="drawrotated"></a> CDrawingManager::D Rawdöndürülmüş
 

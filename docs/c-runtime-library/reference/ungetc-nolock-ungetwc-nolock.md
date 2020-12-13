@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ungetc_nolock _ungetwc_nolock'
 title: _ungetc_nolock, _ungetwc_nolock
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - ungettc_nolock function
 - ungetc_nolock function
 ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
-ms.openlocfilehash: 397abcda60dc80f790fcdaba1e6eb0a390f68dc5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 4b8e788cd64ca00de47109bb12780e2ccc7f4e0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915996"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186629"
 ---
 # <a name="_ungetc_nolock-_ungetwc_nolock"></a>_ungetc_nolock, _ungetwc_nolock
 
@@ -72,7 +73,7 @@ Gönderilecek karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, bu işlevlerin her biri *c*karakter bağımsız değişkenini döndürür. *C* yeniden gönderilemezse veya hiçbir karakter okunmunup, giriş akışı değiştirilmez ve **_ungetc_nolock** **EOF**döndürür; **_Ungetwc_nolock** **, weof**döndürür. *Stream* **null**Ise, **EOF** veya **weof** değeri döndürülür ve **errno** değeri **EINVAL**olarak ayarlanır.
+Başarılı olursa, bu işlevlerin her biri *c* karakter bağımsız değişkenini döndürür. *C* yeniden gönderilemezse veya hiçbir karakter okunmunup, giriş akışı değiştirilmez ve **_ungetc_nolock** **EOF** döndürür; **_Ungetwc_nolock** **, weof** döndürür. *Stream* **null** Ise, **EOF** veya **weof** değeri döndürülür ve **errno** değeri **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -92,13 +93,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_ungetc_nolock**|\<stdio. h>|
-|**_ungetwc_nolock**|\<stdio. h> veya \<wchar. h>|
+|**_ungetc_nolock**|\<stdio.h>|
+|**_ungetwc_nolock**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

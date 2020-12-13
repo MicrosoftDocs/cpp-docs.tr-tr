@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:/CLRSUPPORTLASTERROR (PInvoke çağrıları için son hata kodunu koru)
 title: /CLRSUPPORTLASTERROR (PInvoke Çağrıları için Son Hata Kodunu Koru)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - /CLRSUPPORTLASTERROR linker option
 - -CLRSUPPORTLASTERROR linker option
 ms.assetid: b7057990-4154-4b1d-9fc9-6236f7be7575
-ms.openlocfilehash: ccf13971bf77fb8e960b781e4a1aa2a0e06a5d61
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 253d67e2ced2667d3ca8c7b9330ed3e6d4182d9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686109"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182417"
 ---
 # <a name="clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls"></a>/CLRSUPPORTLASTERROR (PInvoke Çağrıları için Son Hata Kodunu Koru)
 
-Varsayılan olarak açık olan **/CLRSUPPORTLASTERROR**, P/Invoke mekanizması aracılığıyla çağrılan işlevlerin son hata kodunu korur, bu da **/clr**ile derlenen koddan dll 'lerde yerel işlevleri çağırmanıza olanak sağlar.
+Varsayılan olarak açık olan **/CLRSUPPORTLASTERROR**, P/Invoke mekanizması aracılığıyla çağrılan işlevlerin son hata kodunu korur, bu da **/clr** ile derlenen koddan dll 'lerde yerel işlevleri çağırmanıza olanak sağlar.
 
 ## <a name="syntax"></a>Syntax
 
@@ -26,9 +27,9 @@ Varsayılan olarak açık olan **/CLRSUPPORTLASTERROR**, P/Invoke mekanizması a
 
 ## <a name="remarks"></a>Açıklamalar
 
-Son hata kodunun korunması, performansı azaltır.  Son hata kodunu korumak için performans etkisi uygulanmasını istemiyorsanız,  **/CLRSUPPORTLASTERROR: No**ile bağlayın.
+Son hata kodunun korunması, performansı azaltır.  Son hata kodunu korumak için performans etkisi uygulanmasını istemiyorsanız,  **/CLRSUPPORTLASTERROR: No** ile bağlayın.
 
-Yalnızca sistem dll 'Lerinde işlevlere yönelik son hata kodunu koruyan **/CLRSUPPORTLASTERROR: SYSTEMDLL**ile bağlantı kurarak performans etkisini en aza indirmenize sağlayabilirsiniz.
+Yalnızca sistem dll 'Lerinde işlevlere yönelik son hata kodunu koruyan **/CLRSUPPORTLASTERROR: SYSTEMDLL** ile bağlantı kurarak performans etkisini en aza indirmenize sağlayabilirsiniz.
 
 > [!NOTE]
 > Son hatanın korunması, CLR kodu tarafından tüketilen yönetilmeyen işlevlerde aynı modülde desteklenmez.

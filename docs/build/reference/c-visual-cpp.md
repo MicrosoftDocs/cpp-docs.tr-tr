@@ -1,5 +1,6 @@
 ---
-title: '&lt;c > (C++ belgeleri açıklamaları)'
+description: 'Hakkında daha fazla bilgi edinin: &lt; c&gt;'
+title: '&lt;c> (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - <c>
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - <c> C++ XML tag
 - c C++ XML tag
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
-ms.openlocfilehash: 43e1417e5a749f2ea51346bbf6db235ba08a7bcf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35d06183136a82c602b5e4daa288fb4518962154
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294778"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182625"
 ---
-# <a name="ltcgt"></a>&lt;c&gt;
+# <a name="ltcgt"></a>&lt;,&gt;
 
-\<c > etiketi gösteren metin açıklamasını içinde kod olarak işaretlenmelidir. Kullanım [ \<kod >](code-visual-cpp.md) çok satırlı kod olarak belirtmek için.
+\<c>Etiket, bir açıklama içindeki metnin kod olarak işaretlenmesi gerektiğini gösterir. [\<code>](code-visual-cpp.md)Birden çok satırı kod olarak göstermek için kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -26,12 +27,12 @@ ms.locfileid: "62294778"
 
 #### <a name="parameters"></a>Parametreler
 
-*Metin*<br/>
-Kod olarak belirtmek istediğiniz metin.
+*metin*<br/>
+Kod olarak göstermek istediğiniz metin.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
 ## <a name="example"></a>Örnek
 

@@ -1,5 +1,6 @@
 ---
-title: CDocObjectServerItem Sınıfı
+description: 'Daha fazla bilgi edinin: CDocObjectServerItem Class'
+title: CDocObjectServerItem sınıfı
 ms.date: 03/27/2019
 f1_keywords:
 - CDocObjectServerItem
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - CDocObjectServerItem [MFC], OnHide
 - CDocObjectServerItem [MFC], OnShow
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
-ms.openlocfilehash: 1f0f5cf93aab35a17f7174b2beee0d1398564a3d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a2d0d924433d812ec5f283d67e8313d20203ca3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184926"
 ---
-# <a name="cdocobjectserveritem-class"></a>CDocObjectServerItem Sınıfı
+# <a name="cdocobjectserveritem-class"></a>CDocObjectServerItem sınıfı
 
-DocObject sunucuları için özel olarak OLE sunucu fiillerini uygular.
+Özellikle DocObject sunucuları için OLE sunucu fiillerini uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDocObjectServerItem : public COleServerItem
@@ -37,51 +38,51 @@ class CDocObjectServerItem : public COleServerItem
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDocObjectServerItem::CDocObjectServerItem](#cdocobjectserveritem)|Bir `CDocObjectServerItem` nesne inşa eder.|
+|[CDocObjectServerItem:: CDocObjectServerItem](#cdocobjectserveritem)|Bir `CDocObjectServerItem` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDocObjectServerItem::GetDocument](#getdocument)|Öğeyi içeren belgeiçin bir işaretçi alır.|
+|[CDocObjectServerItem:: GetDocument](#getdocument)|Öğeyi içeren belgeye bir işaretçi alır.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CdocObjectServerItem::OndoVerb](#ondoverb)|Bir fiili yürütmek için çağrıldı.|
-|[CdocObjectServerItem::OnHide](#onhide)|Çerçeve bir DocObject öğesini gizlemeye çalışırsa bir özel durum atar.|
-|[CdocObjectServerItem::Onshow](#onshow)|DocObject öğesini yerinde etkin kılmak için çerçeve tarafından çağrılır. Öğe Bir DocObject değilse, [COleServerItem çağırır::OnShow](../../mfc/reference/coleserveritem-class.md#onshow).|
+|[CDocObjectServerItem:: OnDoVerb](#ondoverb)|Bir fiil yürütmek için çağırılır.|
+|[CDocObjectServerItem:: OnHide](#onhide)|Çerçeve bir DocObject öğesini gizlemeyi denediğinde bir özel durum oluşturur.|
+|[CDocObjectServerItem:: OnShow](#onshow)|DocObject öğesini yerinde etkin hale getirmek için Framework tarafından çağırılır. Öğe bir DocObject değilse [Copaserverıtem:: OnShow](../../mfc/reference/coleserveritem-class.md#onshow)öğesini çağırır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDocObjectServerItem`geçersiz üye işlevleri tanımlar: [OnHide](#onhide), [OnDoVerb](#ondoverb), ve [OnShow](#onshow).
+`CDocObjectServerItem` geçersiz kılınabilir üye işlevlerini tanımlar: [OnHide](#onhide), [OnDoVerb](#ondoverb)ve [OnShow](#onshow).
 
-Kullanmak `CDocObjectServerItem`için, türetilmiş `COleServerDoc`sınıfınızdaki [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) geçersiz kılmanın yeni `CDocObjectServerItem` bir nesne döndürür olduğundan emin olun. Öğenizdeki herhangi bir işlevselliği değiştirmeniz gerekiyorsa, kendi `CDocObjectServerItem`türetilmiş sınıfınızın yeni bir örneğini oluşturabilirsiniz.
+Kullanmak için `CDocObjectServerItem` , türetilmiş sınıfınıza [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) geçersiz kılmanın `COleServerDoc` Yeni bir nesne döndürdüğünden emin olmanız gerekir `CDocObjectServerItem` . Öğedeki işlevleri değiştirmeniz gerekiyorsa, kendi türetilmiş sınıfınızın yeni bir örneğini oluşturabilirsiniz `CDocObjectServerItem` .
 
-DocObjects hakkında daha fazla bilgi için *MFC Başvurusu'nda* [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) ve [COleCmdUI'ye](../../mfc/reference/colecmdui-class.md) bakın.
+DocObjects hakkında daha fazla bilgi için bkz. *MFC başvurusunda* [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) ve [copacmduı](../../mfc/reference/colecmdui-class.md) .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
 [CDocItem](../../mfc/reference/cdocitem-class.md)
 
-[Coleserverıtem](../../mfc/reference/coleserveritem-class.md)
+[COleServerItem](../../mfc/reference/coleserveritem-class.md)
 
 `CDocObjectServerItem`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdocob.h
+**Üstbilgi:** Afxdocob. h
 
-## <a name="cdocobjectserveritemcdocobjectserveritem"></a><a name="cdocobjectserveritem"></a>CDocObjectServerItem::CDocObjectServerItem
+## <a name="cdocobjectserveritemcdocobjectserveritem"></a><a name="cdocobjectserveritem"></a> CDocObjectServerItem:: CDocObjectServerItem
 
-Bir `CDocObjectServerItem` nesne inşa eder.
+Bir `CDocObjectServerItem` nesnesi oluşturur.
 
 ```
 CDocObjectServerItem(COleServerDoc* pServerDoc, BOOL bAutoDelete);
@@ -90,14 +91,14 @@ CDocObjectServerItem(COleServerDoc* pServerDoc, BOOL bAutoDelete);
 ### <a name="parameters"></a>Parametreler
 
 *pServerDoc*<br/>
-Yeni DocObject öğesini içerecek belgenin işaretçisi.
+Yeni DocObject öğesini içerecek belgeye yönelik bir işaretçi.
 
 *bAutoDelete*<br/>
-Bir bağlantı yayımlandığında nesnenin silinip silinemeyeceğini gösterir. `CDocObjectServerItem` Nesne belgenizin verilerinin ayrılmaz bir parçasıysa bağımsız değişkeni FALSE olarak ayarlayın. Nesne, belgenizin verilerinde çerçeve tarafından silinebilecek bir aralığı tanımlamak için kullanılan ikincil bir yapıysa, true olarak ayarlayın.
+Bir bağlantı serbest bırakıldığında nesnenin silinip silinemeyeceğini gösterir. `CDocObjectServerItem`Nesne, belgenizin verilerinin integral bir parçasıysa bağımsız DEĞIŞKENI false olarak ayarlayın. Nesne, çerçeve tarafından silinebilen belge verilerinde bir aralığı tanımlamak için kullanılan ikincil bir yapıdır, bunu TRUE olarak ayarlayın.
 
-## <a name="cdocobjectserveritemgetdocument"></a><a name="getdocument"></a>CDocObjectServerItem::GetDocument
+## <a name="cdocobjectserveritemgetdocument"></a><a name="getdocument"></a> CDocObjectServerItem:: GetDocument
 
-Öğeyi içeren belgeiçin bir işaretçi alır.
+Öğeyi içeren belgeye bir işaretçi alır.
 
 ```
 COleServerDoc* GetDocument() const;
@@ -105,15 +106,15 @@ COleServerDoc* GetDocument() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğeyi içeren belgenin işaretçisi; Öğe belgenin bir parçası değilse NULL.
+Öğeyi içeren belgeye yönelik bir işaretçi; Öğe bir belgenin parçası değilse NULL.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, [cdocobjectServerItem](#cdocobjectserveritem) oluşturucuya bağımsız değişken olarak geçtiğiniz sunucu belgesine erişim sağlar.
+Bu, [CDocObjectServerItem](#cdocobjectserveritem) oluşturucusuna bağımsız değişken olarak geçirilmiş sunucu belgesine erişim sağlar.
 
-## <a name="cdocobjectserveritemondoverb"></a><a name="ondoverb"></a>CdocObjectServerItem::OndoVerb
+## <a name="cdocobjectserveritemondoverb"></a><a name="ondoverb"></a> CDocObjectServerItem:: OnDoVerb
 
-Belirtilen fiili yürütmek için çerçeve tarafından çağrılır.
+Belirtilen fiili yürütmek için Framework tarafından çağırılır.
 
 ```
 virtual void OnDoVerb(LONG iVerb);
@@ -121,16 +122,16 @@ virtual void OnDoVerb(LONG iVerb);
 
 ### <a name="parameters"></a>Parametreler
 
-*iFiil*<br/>
-Yürütmek için fiil belirtir. Olası değerler için Windows SDK'daki [IOleObject::DoVerb'e](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) bakın.
+*ıverb*<br/>
+Yürütülecek fiili belirtir. Olası değerler için bkz. [IOleObject::D oVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe bir DocObject ise ve OLEIVERB_INPLACEACTIVATE veya OLEIVERB_SHOW belirtilmişse, varsayılan uygulama [OnShow](#onshow) üye işlevini çağırır. Öğe bir DocObject değilse veya farklı bir fiil belirtilirse, varsayılan uygulama [COleServerItem çağırır::OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb).
+Varsayılan uygulama, öğe bir DocObject ise ve OLEIVERB_INPLACEACTIVATE ya da OLEIVERB_SHOW belirtilmişse [OnShow](#onshow) üye işlevini çağırır. Öğe bir DocObject değilse veya farklı bir fiil belirtilmişse, varsayılan uygulama [Copaserverıtem:: OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb)öğesini çağırır.
 
-## <a name="cdocobjectserveritemonhide"></a><a name="onhide"></a>CdocObjectServerItem::OnHide
+## <a name="cdocobjectserveritemonhide"></a><a name="onhide"></a> CDocObjectServerItem:: OnHide
 
-Öğeyi gizlemek için çerçeve tarafından çağrılır.
+Öğeyi gizlemek için Framework tarafından çağırılır.
 
 ```
 virtual void OnHide();
@@ -138,11 +139,11 @@ virtual void OnHide();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe Bir DocObject ise varsayılan uygulama bir özel durum atar. Etkin bir DocObject öğesini gizleyemezsiniz, çünkü tüm görünümü alır. Kaybolması için DocObject öğesini devre dışı bırakmanız gerekir. Öğe Bir DocObject değilse, varsayılan uygulama [COleServerItem çağırır::OnHide](../../mfc/reference/coleserveritem-class.md#onhide).
+Varsayılan uygulama, öğe bir DocObject ise bir özel durum oluşturur. Tüm görünümü aldığı için etkin bir DocObject öğesini gizleyemezsiniz. Geçici hale getirmek için DocObject öğesini devre dışı bırakmanız gerekir. Öğe bir DocObject değilse, varsayılan uygulama [Cotaserverıtem:: OnHide](../../mfc/reference/coleserveritem-class.md#onhide)öğesini çağırır.
 
-## <a name="cdocobjectserveritemonshow"></a><a name="onshow"></a>CdocObjectServerItem::Onshow
+## <a name="cdocobjectserveritemonshow"></a><a name="onshow"></a> CDocObjectServerItem:: OnShow
 
-Sunucu uygulamasına DocObject öğesini yerinde etkin hale getirmetalimatı vermek için çerçeve tarafından çağrılır.
+Sunucu uygulamasına DocObject öğesini yerinde etkin hale getirmek için Framework tarafından çağırılır.
 
 ```
 virtual void OnShow();
@@ -150,11 +151,11 @@ virtual void OnShow();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Öğe Bir DocObject değilse, varsayılan uygulama [COleServerItem çağırır::OnShow](../../mfc/reference/coleserveritem-class.md#onopen). Bir DocObject öğesini açarken özel işleme gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın.
+Öğe bir DocObject değilse, varsayılan uygulama [Cotaserverıtem:: OnShow](../../mfc/reference/coleserveritem-class.md#onopen)öğesini çağırır. Bir DocObject öğesi açarken özel işlem gerçekleştirmek istiyorsanız bu işlevi geçersiz kılın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[COleServerItem Sınıfı](../../mfc/reference/coleserveritem-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CDocObjectServer Sınıfı](../../mfc/reference/cdocobjectserver-class.md)<br/>
-[COleDocObjectItem Sınıfı](../../mfc/reference/coledocobjectitem-class.md)
+[Cotaserverıtem sınıfı](../../mfc/reference/coleserveritem-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CDocObjectServer sınıfı](../../mfc/reference/cdocobjectserver-class.md)<br/>
+[Cotadocobjectıtem sınıfı](../../mfc/reference/coledocobjectitem-class.md)
