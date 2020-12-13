@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l'
 title: _snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -52,18 +53,18 @@ helpviewer_keywords:
 - _sntscanf_s function
 - snwscanf_s_l function
 ms.assetid: 72356653-7362-461a-af73-597b9c0a8094
-ms.openlocfilehash: 6c814d0085fed90f1b3c36684f54368d811c294f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 13ffbc1de17cfe3c154bf1cef512dd7cc58974f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229408"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137078"
 ---
 # <a name="_snscanf_s-_snscanf_s_l-_snwscanf_s-_snwscanf_s_l"></a>_snscanf_s, _snscanf_s_l, _snwscanf_s, _snwscanf_s_l
 
 Belirtilen uzunluktaki bir dizeden biçimlendirilen verileri okur. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleriyle [_snscanf, _snscanf_l, _snwscanf _snwscanf_l](snscanf-snscanf-l-snwscanf-snwscanf-l.md) sürümleridir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int __cdecl _snscanf_s(
@@ -95,13 +96,13 @@ int __cdecl _snwscanf_s_l(
 *girişinin*<br/>
 İncelenecek giriş dizesi.
 
-*uzunluklu*<br/>
-*Girişte*incelenecek karakter sayısı.
+*length*<br/>
+*Girişte* incelenecek karakter sayısı.
 
 *formatını*<br/>
 Bir veya daha fazla biçim belirticisi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 *argument_list*<br/>
@@ -111,7 +112,7 @@ Biçim dizesine göre atanacak isteğe bağlı bağımsız değişkenler.
 
 Bu işlevlerin her ikisi de başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Dönüş değeri bir hata **için veya** ilk dönüştürmeden önce dizenin sonuna ulaşılırsa. Daha fazla bilgi için bkz. [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
-*Giriş* veya *Biçim* **null** işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Giriş* veya *Biçim* **null** işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -119,10 +120,10 @@ Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_er
 
 Bu işlev, giriş dizesinden inceleyecek sabit sayıda karakter belirtme olanağı sunmasının dışında **sscanf_s** gibidir. Daha fazla bilgi için bkz. [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 
-Arabellek boyutu parametresi, **c**, **c**, **s**, **s**ve **[** türünde alan karakterleriyle gereklidir. Daha fazla bilgi için bkz. [scanf Type alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
+Arabellek boyutu parametresi, **c**, **c**, **s**, **s** ve **[** türünde alan karakterleriyle gereklidir. Daha fazla bilgi için bkz. [scanf Type alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> Boyut parametresi **`unsigned`** **size_t**değil türündedir.
+> Boyut parametresi **`unsigned`** **size_t** değil türündedir.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 

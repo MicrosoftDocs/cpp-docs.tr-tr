@@ -1,32 +1,33 @@
 ---
-title: 'Nasıl yapılır: Bir derlemeden STL/CLR kapsayıcısı sunma'
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: bir derlemeden STL/CLR kapsayıcısını kullanıma sunma'
+title: 'Nasıl yapılır: Bir Derlemeden STL/CLR Kapsayıcısı Sunma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - STL/CLR Containers [STL/CLR]
 - STL/CLR, cross-assembly issues
 ms.assetid: 87efb41b-3db3-4498-a2e7-f3ef8a99f04d
-ms.openlocfilehash: 206a95cbaa808f54d7ae0e500b5a2bea272d974b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4ed92af956def030c80f8f303f0a7501c4944c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387337"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134985"
 ---
-# <a name="how-to-expose-an-stlclr-container-from-an-assembly"></a>Nasıl yapılır: Bir derlemeden STL/CLR kapsayıcısı sunma
+# <a name="how-to-expose-an-stlclr-container-from-an-assembly"></a>Nasıl yapılır: Bir Derlemeden STL/CLR Kapsayıcısı Sunma
 
-STL/CLR kapsayıcıları gibi `list` ve `map` şablon başvuru sınıfları uygulanır. C++ şablonları, derleme zamanında örneği oluşturulur çünkü tam olarak aynı imzaya sahip, ancak farklı derlemelerde farklı olan iki şablon sınıfları aslında farklı türleridir. Bu şablonu sınıfları bütünleştirilmiş kod sınırları arasında kullanılamaz anlamına gelir.
+Ve gibi STL/CLR kapsayıcıları `list` `map` şablon başvuru sınıfları olarak uygulanır. C++ şablonları derleme zamanında örneklendiği için, tam olarak aynı imzaya sahip ancak farklı derlemelerdeki iki şablon sınıfı aslında farklı türlerdir. Bu, şablon sınıflarının derleme sınırları genelinde kullanılamayacağı anlamına gelir.
 
-Çapraz derleme paylaşımı mümkün kılmak için STL/CLR kapsayıcıları yönelik genel arabirimi uygulayan <xref:System.Collections.Generic.ICollection%601>. Genel türler, C++, C# ve Visual Basic gibi destekleyen tüm diller, bu genel arabirimini kullanarak, STL/CLR kapsayıcıları erişebilirsiniz.
+Çapraz derleme paylaşımını mümkün kılmak için, STL/CLR kapsayıcıları genel arabirimi uygular <xref:System.Collections.Generic.ICollection%601> . Bu genel arabirimi kullanarak, C++, C# ve Visual Basic dahil olmak üzere genel türleri destekleyen tüm diller STL/CLR kapsayıcılarına erişebilir.
 
-Bu konu adında bir C++ derlemesinde yazılmış bazı STL/CLR kapsayıcıları öğelerini görüntülemek gösterilmektedir `StlClrClassLibrary`. Erişmek için iki derleme göstereceğiz `StlClrClassLibrary`. İlk derleme, C++ ve C# ikinci yazılır.
+Bu konu başlığı altında, adlı bir C++ derlemesinde yazılmış çeşitli STL/CLR kapsayıcılarının öğelerinin nasıl görüntüleneceği gösterilmektedir `StlClrClassLibrary` . Erişmek için iki derleme gösteriyoruz `StlClrClassLibrary` . İlk derleme C++ dilinde, ikincisi ise C# dilinde yazılır.
 
-İki derleme de C++ ile yazılmış, bir kapsayıcının yönelik genel arabirimi kullanarak erişebilirsiniz, `generic_container` typedef. Örneğin, bir kapsayıcı türü varsa `cliext::vector<int>`, genel arabirimi ise: `cliext::vector<int>::generic_container`. Benzer şekilde, bir yineleyici yönelik genel arabirimi kullanarak alabileceğiniz `generic_iterator` giriş olarak bir tür tanımı: `cliext::vector<int>::generic_iterator`.
+Her iki derleme da C++ dilinde yazılmışsa, bir kapsayıcının genel arabirimine typedef öğesini kullanarak erişebilirsiniz `generic_container` . Örneğin, türünde bir kapsayıcınız varsa `cliext::vector<int>` , genel arabirimi: `cliext::vector<int>::generic_container` . Benzer şekilde, genel arabirim üzerinde, TypeDef ile olduğu gibi bir yineleyici alabilirsiniz `generic_iterator` : `cliext::vector<int>::generic_iterator` .
 
-Bu tür tanımlarından C++ üstbilgi dosyalarında bildirilen olduğundan, diğer dillerde yazılmış bunları kullanamazsınız. Bu nedenle, genel arabirimi erişmeye `cliext::vector<int>` , C# veya herhangi bir .NET dil kullanan `System.Collections.Generic.ICollection<int>`. Bu koleksiyon üzerinde yinelemek için kullanmak bir `foreach` döngü.
+Bu tür tanımları 'ler C++ başlık dosyalarında bildirildiği için, diğer dillerde yazılmış derlemeler bunları kullanamaz. Bu nedenle, `cliext::vector<int>` C# veya başka bir .net dilinde için genel arabirime erişmek için kullanın `System.Collections.Generic.ICollection<int>` . Bu koleksiyonu yinelemek için bir `foreach` döngü kullanın.
 
-Aşağıdaki tabloda her bir STL/CLR kapsayıcısı uygulayan yönelik genel arabirimi listelenmektedir:
+Aşağıdaki tabloda her bir STL/CLR kapsayıcısının uyguladığı genel arabirim listelenmektedir:
 
-|STL/CLR kapsayıcısı|Genel arabirimi|
+|STL/CLR kapsayıcısı|Genel arabirim|
 |------------------------|-----------------------|
 |`deque<T>`|`ICollection<T>`|
 |`hash_map<K, V>`|`IDictionary<K, V>`|
@@ -41,13 +42,13 @@ Aşağıdaki tabloda her bir STL/CLR kapsayıcısı uygulayan yönelik genel ara
 |`vector<T>`|`ICollection<T>`|
 
 > [!NOTE]
-> Çünkü `queue`, `priority_queue`, ve `stack` kapsayıcıları yineleyicileri desteklemez, genel arabirimler uygulayamaz ve erişilen çapraz derleme olamaz.
+> `queue`, `priority_queue` Ve `stack` kapsayıcıları yineleyiciler desteklemediğinden, bunlar genel arabirimler uygulamaz ve çapraz derlemeye erişilemez.
 
 ## <a name="example-1"></a>Örnek 1
 
 ### <a name="description"></a>Açıklama
 
-Bu örnekte biz özel STL/CLR üye verileri içeren bir C++ sınıfı olarak bildirin. Biz, ardından sınıf özel koleksiyonlar erişim vermek için ortak yöntemleri bildirin. İki farklı şekilde, bir C++ istemciler için ve diğer .NET istemcileri için bir tane desteklemiyoruz.
+Bu örnekte, özel STL/CLR üye verilerini içeren bir C++ sınıfı bildiririz. Daha sonra, sınıfının özel koleksiyonlarına erişim vermek için ortak Yöntemler bildiririz. Biri C++ istemcileri ve diğeri de diğer .NET istemcileri için olmak üzere iki farklı şekilde yapılır.
 
 ### <a name="code"></a>Kod
 
@@ -105,9 +106,9 @@ namespace StlClrClassLibrary {
 
 ### <a name="description"></a>Açıklama
 
-Bu örnekte biz örnek 1'de bildirilen sınıf uygulayın. Bu sınıf kitaplığı kullanmak istemcileri için sırada, bildirim aracı kullanıyoruz **mt.exe** DLL bildirim dosyası eklemek için. Ayrıntılar için açıklamalarına bakın.
+Bu örnekte, örnek 1 ' de belirtilen sınıfı uyguladık. İstemcilerin bu sınıf kitaplığını kullanabilmesi için, bildirim dosyasını DLL 'ye eklemek üzere **mt.exe** bildirim aracını kullanırız. Ayrıntılar için bkz. kod açıklamaları.
 
-Bildirim aracı ve yan yana derlemeler ile ilgili daha fazla bilgi için bkz [yapı C/C++ yalıtılmış uygulamalar ve yan yana derlemeler](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md).
+Bildirim Aracı ve yan yana derlemeler hakkında daha fazla bilgi için bkz. [C/C++ yalıtılmış uygulamalar ve yan yana derlemeler oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md).
 
 ### <a name="code"></a>Kod
 
@@ -199,7 +200,7 @@ namespace StlClrClassLibrary
 
 ### <a name="description"></a>Açıklama
 
-Bu örnekte, örnek 1 ve 2'de oluşturulan sınıf kitaplığı kullanan bir C++ istemci oluştururuz. Bu istemcinin kullandığı `generic_container` STL/CLR kapsayıcıları kapsayıcılar yinelemek ve bunların içeriğini görüntülemek için tür tanımları.
+Bu örnekte, 1 ve 2. örneklerde oluşturulan sınıf kitaplığını kullanan bir C++ istemcisi oluşturacağız. Bu istemci, `generic_container` kapsayıcıları yinelemek ve içeriklerini göstermek için STL/CLR kapsayıcılarının tür tanımları değerlerini kullanır.
 
 ### <a name="code"></a>Kod
 
@@ -265,7 +266,7 @@ int main(array<System::String ^> ^args)
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 cliext::deque contents:
@@ -293,7 +294,7 @@ cliext::vector contents:
 
 ### <a name="description"></a>Açıklama
 
-Bu örnekte, örnek 1 ve 2'de oluşturulan sınıf kitaplığı kullanan bir C# istemci oluştururuz. Bu istemcinin kullandığı <xref:System.Collections.Generic.ICollection%601> STL/CLR kapsayıcıları kapsayıcılar yinelemek ve bunların içeriğini görüntülemek için yöntemleri.
+Bu örnekte, 1 ve 2. örneklerde oluşturulan sınıf kitaplığını kullanan bir C# istemcisi oluşturacağız. Bu istemci, <xref:System.Collections.Generic.ICollection%601> kapsayıcıları yinelemek ve içeriklerini göstermek IÇIN STL/CLR kapsayıcılarının yöntemlerini kullanır.
 
 ### <a name="code"></a>Kod
 
@@ -360,7 +361,7 @@ namespace CsConsoleApp
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 cliext::deque contents:
@@ -386,4 +387,4 @@ cliext::vector contents:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)
+[STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md)

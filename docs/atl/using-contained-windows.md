@@ -1,39 +1,40 @@
 ---
-title: İçerdeki Pencereleri Kullanma
+description: 'Hakkında daha fazla bilgi edinin: kapsanan pencereleri kullanma'
+title: Kapsanan pencereleri kullanma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, windows
 - windows [C++], ATL
 - contained windows in ATL
 ms.assetid: 7b3d79e5-b569-413f-9b98-df4f14efbe2b
-ms.openlocfilehash: 5da765eae28d411c98e79af5b9173f48ea66ef8c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 11beb998365a10a8126e37ecbf7388ec6177e659
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138222"
 ---
-# <a name="using-contained-windows"></a>İçerdeki Pencereleri Kullanma
+# <a name="using-contained-windows"></a>Kapsanan pencereleri kullanma
 
-ATL [ccontainedwindowT](../atl/reference/ccontainedwindowt-class.md)içeren pencereler ilerler. İçe sahip pencere, iletilerini kendi sınıfında işlemek yerine kapsayıcı nesneye devreden bir pencereyi temsil eder.
+ATL, [CContainedWindowT](../atl/reference/ccontainedwindowt-class.md)ile içerilen pencereleri uygular. İçerilen bir pencere, iletilerini kendi sınıfında işlemek yerine bir kapsayıcı nesnesine temsilcerek bir pencereyi temsil eder.
 
 > [!NOTE]
-> İçerdeki pencereleri kullanmak için `CContainedWindowT` bir sınıf türetmeniz gerekmez.
+> Kapsanan pencereleri kullanmak için ' den bir sınıf türetmeniz gerekmez `CContainedWindowT` .
 
-İçerdiği pencerelerle, varolan bir Windows sınıfını üst sınıfa alabilir veya varolan bir pencereyi alt sınıfa göre sınıflandırabilirsiniz. Varolan bir Windows sınıfının üst sınıflarını oluşturan bir pencere oluşturmak için, önce nesnenin oluşturucusundaki varolan sınıf adını belirtin. `CContainedWindowT` O `CContainedWindowT::Create`zaman ara. Varolan bir pencereyi alt sınıfa aktarmak için bir Windows sınıf adı belirtmeniz gerekmez (NULL'u oluşturucuya geçirin). Alt sınıflı olan pencereye tutamacı olan `CContainedWindowT::SubclassWindow` yöntemi aramanız yeterlidir.
+İçerilen pencereler ile var olan bir Windows sınıfının üst sınıfını ya da varolan bir pencerenin alt sınıfını kullanabilirsiniz. Var olan bir Windows sınıfını üst sınıflara uygulayan bir pencere oluşturmak için, önce nesne oluşturucusunda var olan sınıf adını belirtin `CContainedWindowT` . Ardından öğesini çağırın `CContainedWindowT::Create` . Varolan bir pencerenin alt sınıfını almak için, bir Windows sınıf adı belirtmeniz gerekmez (oluşturucuya NULL değeri geçirin). Yöntemi, alt `CContainedWindowT::SubclassWindow` sınıflandırılmakta olan pencereye yönelik tanıtıcıyla birlikte çağırmak yeterlidir.
 
-İçerdiği pencereleri genellikle kapsayıcı sınıfının veri üyeleri olarak kullanırsınız. Kapsayıcı bir pencere olması gerekmez; ancak, [CMessageMap](../atl/reference/cmessagemap-class.md)türetmek gerekir.
+Genellikle kapsayıcı sınıfının veri üyeleri olarak içerilen pencereleri kullanırsınız. Kapsayıcının bir pencere olması gerekmez; Ancak, [CMessageMap](../atl/reference/cmessagemap-class.md)öğesinden türemelidir.
 
-İçe yer alan bir pencere, iletilerini işlemek için alternatif ileti eşlemlerini kullanabilir. Birden fazla bulunan pencereniz varsa, her biri ayrı bir pencereye karşılık gelen birkaç alternatif ileti eşlemesi bildirmeniz gerekir.
+İçerilen bir pencere, iletilerini işlemek için alternatif ileti eşlemeleri kullanabilir. İçerilen birden fazla pencere varsa, her biri ayrı içerilen pencereye karşılık gelen birkaç alternatif ileti eşlemesi bildirmeniz gerekir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıda, iki pencereiçeren bir kapsayıcı sınıfı örneği verilmiştir:
+Aşağıda, iki içerilen pencere içeren bir kapsayıcı sınıfına örnek verilmiştir:
 
 [!code-cpp[NVC_ATL_Windowing#67](../atl/codesnippet/cpp/using-contained-windows_1.h)]
 
-İçerdiği pencereler hakkında daha fazla bilgi için [SUBEDIT](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) örneğine bakın.
+İçerilen pencereler hakkında daha fazla bilgi için bkz. alt [DIT](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) örneği.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Sınıfları](../atl/atl-window-classes.md)
+[Pencere sınıfları](../atl/atl-window-classes.md)
