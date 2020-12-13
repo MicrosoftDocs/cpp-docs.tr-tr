@@ -1,47 +1,48 @@
 ---
+description: 'Daha fazla bilgi edinin: bileşik belge desteği, MFC Uygulama Sihirbazı'
 title: Birleşik Belge Desteği, MFC Uygulama Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.exe.compdoc
 ms.assetid: 42e1af83-12c4-438d-92eb-13835afdb148
-ms.openlocfilehash: b2ff4f312132b690223f124fd8790d0e2c172b7f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5ccd95812c7b8a4379528b4c784a3d7ca09f538f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331368"
 ---
 # <a name="compound-document-support-mfc-application-wizard"></a>Birleşik Belge Desteği, MFC Uygulama Sihirbazı
 
-MFC Uygulama Sihirbazı bu sayfada, hangi düzeye bileşik ve etkin belge desteği uygulamanızın sağladığı gösterir. Uygulamanızı bileşik belgeleri ve belge şablonları desteklemek için belge/görünüm mimarisini desteklemelidir.
+MFC Uygulama Sihirbazı 'nın bu sayfasında, uygulamanızın bileşik ve etkin belge desteğini hangi düzeye sağladığını belirtin. Uygulamanız, bileşik belge ve belge şablonlarını desteklemek için belge/görünüm mimarisini desteklemelidir.
 
-Varsayılan olarak, uygulamanın bileşik belge desteği içerir. Bu varsayılanı kabul ederseniz, uygulamanız etkin belgeler veya bileşik dosyalar desteklemez.
+Varsayılan olarak, uygulama hiçbir bileşik belge desteği içermez. Bu varsayılanı kabul ediyorsanız, uygulamanız etkin belgeleri veya bileşik dosyaları desteklemez.
 
 - **Birleşik belge desteği**
 
-  Uygulamanızı kapsayıcı desteği, sunucu desteği veya her ikisi de görüntüleyip görüntülemeyeceğini belirler. Bu alan hakkında daha fazla bilgi için bkz:
+  Uygulamanızın kapsayıcı desteğini, sunucu desteğini veya her ikisini de sağladığını belirler. Bu alan hakkında daha fazla bilgi için bkz.
 
-  - [Kapsayıcılar: Kapsayıcı Uygulama](../../mfc/containers-implementing-a-container.md)
+  - [Kapsayıcılar: kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md)
 
-  - [Sunucular: Sunucu Uygulama](../../mfc/servers-implementing-a-server.md)
-
-  |Seçenek|Açıklama|
-  |------------|-----------------|
-  |**Yok.**|Nesne Bağlama ve Katıştırma (OLE) desteği gösterir. Varsayılan olarak, Uygulama Sihirbazı'nı ActiveX desteği olmayan bir uygulama oluşturur.|
-  |**Kapsayıcı**|Bağlantılı veya katıştırılmış nesneleri içerir.|
-  |**Mini sunucu**|Uygulama oluşturabilir ve yönetebilirsiniz bileşik belge nesneleri gösterir. Mini sunucuların çalıştıramazsınız Not, tek başına duramaz ve yalnızca katıştırılmış öğeleri destekler.|
-  |**Tam sunucu**|Uygulama oluşturabilir ve yönetebilirsiniz bileşik belge nesneleri gösterir. Tüm sunucuları tek başına ve hem bağlantılı hem de katıştırılmış öğeleri destek çalıştırabilir.|
-  |**Kapsayıcı/tam sunucu**|Uygulama bir kapsayıcı hem bir sunucu uygulanıp uygulanamayacağını gösterir. Uygulamanın kendi belgelerine gömülü veya bağlantılı öğeleri içeren bir kapsayıcıdır. Bir sunucu kapsayıcı uygulamalar tarafından kullanım için Otomasyon öğeleri oluşturan bir uygulamadır.|
-
-- **Ek Seçenekler**
-
-  Uygulamanız etkin belgeler destekleyip desteklemediğini belirtir. Bkz: [etkin belgeler](../../mfc/active-documents.md) bu özellik hakkında daha fazla bilgi.
+  - [Sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md)
 
   |Seçenek|Açıklama|
   |------------|-----------------|
-  |**Etkin belge sunucusu**|Uygulama oluşturma ve yönetme etkin belgeler gösterir. Bu seçeneği belirlerseniz, etkin belgeyi sunucunuz için bir dosya uzantısı belirtmelisiniz **dosya uzantısı** kutusunda [belge şablonu dizeleri](../../mfc/reference/document-template-strings-mfc-application-wizard.md) Sihirbazı sayfası. Bkz: [etkin belge sunucuları](../../mfc/active-document-servers.md) daha fazla bilgi için.|
-  |**Etkin belge kapsayıcısı**|Uygulamanın kendi çerçevesi içindeki etkin belgeler içerebilir gösterir. Etkin belgeler, örneğin, Internet Explorer belge veya Microsoft Word dosyaları ya da Excel elektronik Office belgeleri içerebilir. Bkz: [etkin belge kapsaması](../../mfc/active-document-containment.md) daha fazla bilgi için.|
-  |**Bileşik dosyalar için destek**|Bileşik dosya biçimini kullanarak kapsayıcı uygulamasının belgeleri serileştirilecek değil. Bu seçenek belleğe nesnelerini içeren bütün dosyasını yüklenmesini zorlar. Tek tek nesneler için artımlı kaydeder kullanılabilir değil. Bir nesne değiştirilir ve daha sonra kaydedilmiş dosyasındaki tüm nesneler kaydedilir.|
+  |**Hiçbiri**|Nesne bağlama ve Katıştırma (OLE) için destek bulunmadığını gösterir. Varsayılan olarak, uygulama Sihirbazı ActiveX desteği olmayan bir uygulama oluşturur.|
+  |**Kapsayıcı**|Bağlı ve katıştırılmış nesneleri içerir.|
+  |**Mini sunucu**|Uygulamanın bileşik belge nesneleri oluşturup yönetebileceğini belirtir. Mini sunucuların tek başına çalıştırılmadığını ve yalnızca katıştırılmış öğeleri desteklediğini unutmayın.|
+  |**Tam sunucu**|Uygulamanın bileşik belge nesneleri oluşturup yönetebileceğini belirtir. Tam sunucular tek başına çalıştırabilir ve hem bağlantılı hem de katıştırılmış öğeleri destekleyebilir.|
+  |**Kapsayıcı/tam sunucu**|Uygulamanın hem kapsayıcı hem de sunucu olduğunu gösterir. Kapsayıcı, katıştırılmış veya bağlantılı öğeleri kendi belgelerine birleştiresağlayan bir uygulamadır. Sunucu, kapsayıcı uygulamaları tarafından kullanılmak üzere Otomasyon öğeleri oluşturabileceğiniz bir uygulamadır.|
+
+- **Ek seçenekler**
+
+  Uygulamanızın etkin belgeleri destekleyip desteklemediğini gösterir. Bu özellik hakkında daha fazla bilgi için bkz. [etkin belgeler](../../mfc/active-documents.md) .
+
+  |Seçenek|Açıklama|
+  |------------|-----------------|
+  |**Etkin belge sunucusu**|Uygulamanın etkin belgeler oluşturup yönetebileceğini belirtir. Bu seçeneği belirlerseniz, sihirbazın [belge şablonu dizeleri](../../mfc/reference/document-template-strings-mfc-application-wizard.md) sayfasındaki **Dosya Uzantısı** kutusunda etkin belge sunucunuz için bir dosya uzantısı belirtmeniz gerekir. Daha fazla bilgi için bkz. [etkin belge sunucuları](../../mfc/active-document-servers.md) .|
+  |**Etkin belge kapsayıcısı**|Uygulamanın, çerçevesinin içinde etkin belgeler içerebileceğini gösterir. Etkin belgeler, örneğin Internet Explorer belgeleri veya Microsoft Word dosyaları ya da Excel elektronik tabloları gibi Office belgeleri dahil olabilir. Daha fazla bilgi için bkz. [etkin belge kapsamı](../../mfc/active-document-containment.md) .|
+  |**Bileşik dosyalar için destek**|, Bileşik dosya biçimi kullanılarak kapsayıcı uygulamanın belgelerini serileştirmez. Bu seçenek, nesneleri içeren bir dosyanın tamamını belleğe yüklemeye zorlar. Tek tek nesnelere artımlı kaydetme yok. Bir nesne değiştirilirse ve daha sonra kaydedilmişse, dosyadaki tüm nesneler kaydedilir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,15 +1,16 @@
 ---
+description: ': Nasıl yapılır: kodunuzda Izleme uygulama hakkında daha fazla bilgi edinin'
 title: 'Nasıl yapılır: Kodunuzda İzleme Uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CRectTracker class [MFC], implementing trackers
 ms.assetid: baaeca2c-5114-485f-bf58-8807db1bc973
-ms.openlocfilehash: 3d71543261021c7e20041d317401b7b7b8d0616e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1b9211978c6ba5169a2d55e272b7e3ddf0678fd6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621665"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330202"
 ---
 # <a name="how-to-implement-tracking-in-your-code"></a>Nasıl yapılır: Kodunuzda İzleme Uygulama
 
@@ -55,4 +56,4 @@ Uygulamanızda, yeniden boyutlandırma, taşıma veya isabet algılama gibi izle
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzleyiciler: OLE Uygulamanızda İzleyicileri Uygulama](trackers-implementing-trackers-in-your-ole-application.md)
+[İzleyiciler: OLE uygulamanızda Izleyicileri uygulama](trackers-implementing-trackers-in-your-ole-application.md)

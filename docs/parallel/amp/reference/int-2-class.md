@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: int_2 sınıfı'
 title: int_2 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,18 +29,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_2::operator+=
 - amp_short_vectors/Concurrency::graphics::int_2::operator--
 ms.assetid: 258b02e9-f1ee-46c2-8edd-dc9f69184846
-ms.openlocfilehash: 000bda3a6ecc5b1ebf9be4e07ce8d703b6cd9194
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 7ee3f2726ce5c96a51a8246933c8d2d9d9eacc38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330041"
 ---
 # <a name="int_2-class"></a>int_2 Sınıfı
 
 İki tamsayının kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class int_2;
@@ -63,38 +64,38 @@ class int_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|int_2::get_x||
-|int_2::get_xy||
-|int_2::get_y||
-|int_2::get_yx||
-|int_2::ref_g||
-|int_2::ref_r||
-|int_2::ref_x||
-|int_2::ref_y||
+|int_2:: get_x||
+|int_2:: get_xy||
+|int_2:: get_y||
+|int_2:: get_yx||
+|int_2:: ref_g||
+|int_2:: ref_r||
+|int_2:: ref_x||
+|int_2:: ref_y||
 |int_2:: set_x||
 |int_2:: set_xy||
-|int_2::set_y||
-|int_2::set_yx||
+|int_2:: set_y||
+|int_2:: set_yx||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
 |int_2:: operator-||
-|int_2::operator--||
-|int_2::operator%=||
-|int_2:: operator & =||
+|int_2:: operator--||
+|int_2:: operator% =||
+|int_2:: operator&=||
 |int_2:: operator * =||
 |int_2:: operator/=||
-|int_2::operator^=||
+|int_2:: operator ^ =||
 |int_2:: operator&#124;=||
 |int_2:: operator ~||
-|int_2::operator++||
-|int_2::operator+=||
-|int_2:: operator <\<=||
-|int_2::operator=||
-|int_2::operator-=||
-|int_2:: operator > > =||
+|int_2:: operator + +||
+|int_2:: operator + =||
+|int_2:: operator<\<=||
+|int_2:: operator =||
+|int_2:: operator-=||
+|int_2:: operator>>=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
@@ -109,11 +110,11 @@ class int_2;
 |int_2:: g||
 |int_2:: gr||
 |int_2:: r||
-|int_2::rg||
+|int_2:: RG||
 |int_2:: x||
 |int_2:: XY||
 |int_2:: y||
-|int_2::yx||
+|int_2:: yx||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -125,7 +126,7 @@ class int_2;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>int_2
+## <a name="int_2"></a><a name="ctor"></a> int_2
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -181,7 +182,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="int_2__size"></a>boyutla
+## <a name="size"></a><a name="int_2__size"></a> boyutla
 
 ```cpp
 static const int size = 2;

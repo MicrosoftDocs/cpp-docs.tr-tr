@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: geçersiz kılınabilir CWinApp Üye Işlevleri'
 title: Geçersiz Kılınabilir CWinApp Üye İşlevleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - application class [MFC]
 - CWinApp class [MFC], overridables
 ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
-ms.openlocfilehash: 7ae72a52c37582f8398ebc03f404ff105fe14650
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 3958ad0edc1fbdb77e1f6ce3252fd03d7595344a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624007"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330103"
 ---
 # <a name="overridable-cwinapp-member-functions"></a>Geçersiz Kılınabilir CWinApp Üye İşlevleri
 
-[CWinApp](reference/cwinapp-class.md) , birden fazla geçersiz kılınabilir üye işlevi sağlar ( `CWinApp` Bu üyeleri türetilmiş sınıfından bu üyeleri geçersiz kılar [CWinThread](reference/cwinthread-class.md) `CWinApp` ):
+[CWinApp](reference/cwinapp-class.md) , birden fazla geçersiz kılınabilir üye işlevi sağlar ( `CWinApp` Bu üyeleri türetilmiş sınıfından bu üyeleri geçersiz kılar [](reference/cwinthread-class.md) `CWinApp` ):
 
 - [InitInstance](initinstance-member-function.md)
 
@@ -29,4 +30,4 @@ ms.locfileid: "84624007"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWinApp: Uygulama Sınıfı](cwinapp-the-application-class.md)
+[CWinApp: uygulama sınıfı](cwinapp-the-application-class.md)

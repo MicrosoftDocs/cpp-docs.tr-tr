@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: norm_2 sınıfı'
 title: norm_2 Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,18 +29,18 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_2
 - amp_short_vectors/Concurrency::graphics::norm_2::operator--
 ms.assetid: 80703f9b-61f4-414a-93fd-bc774f7d3393
-ms.openlocfilehash: 09bd33b5a8d9148c7959f69fcab4a260fe05c332
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 5b4b19d83672a88828d3cad8be7f22a2f54a431e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329983"
 ---
 # <a name="norm_2-class"></a>norm_2 Sınıfı
 
 İki normal sayının kısa vektörünü temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class norm_2;
@@ -63,31 +64,31 @@ class norm_2;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|norm_2::get_x||
-|norm_2::get_xy||
-|norm_2::get_y||
-|norm_2::get_yx||
+|norm_2:: get_x||
+|norm_2:: get_xy||
+|norm_2:: get_y||
+|norm_2:: get_yx||
 |norm_2:: ref_g||
-|norm_2::ref_r||
-|norm_2::ref_x||
-|norm_2::ref_y||
+|norm_2:: ref_r||
+|norm_2:: ref_x||
+|norm_2:: ref_y||
 |norm_2:: set_x||
-|norm_2::set_xy||
-|norm_2::set_y||
-|norm_2::set_yx||
+|norm_2:: set_xy||
+|norm_2:: set_y||
+|norm_2:: set_yx||
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
 |Ad|Açıklama|
 |----------|-----------------|
-|norm_2::operator-||
-|norm_2::operator--||
-|norm_2::operator*=||
+|norm_2:: operator-||
+|norm_2:: operator--||
+|norm_2:: operator * =||
 |norm_2:: operator/=||
-|norm_2::operator++||
-|norm_2::operator+=||
-|norm_2::operator=||
-|norm_2::operator-=||
+|norm_2:: operator + +||
+|norm_2:: operator + =||
+|norm_2:: operator =||
+|norm_2:: operator-=||
 
 ### <a name="public-constants"></a>Genel sabitler
 
@@ -100,13 +101,13 @@ class norm_2;
 |Ad|Açıklama|
 |----------|-----------------|
 |norm_2:: g||
-|norm_2::gr||
+|norm_2:: gr||
 |norm_2:: r||
-|norm_2::rg||
+|norm_2:: RG||
 |norm_2:: x||
 |norm_2:: XY||
 |norm_2:: y||
-|norm_2::yx||
+|norm_2:: yx||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -118,7 +119,7 @@ class norm_2;
 
 **Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="ctor"></a>norm_2
+## <a name="norm_2"></a><a name="ctor"></a> norm_2
 
 Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.
 
@@ -188,7 +189,7 @@ Başlatma değeri.
 *_Other*<br/>
 Başlatmak için kullanılan nesne.
 
-## <a name="norm_2__size"></a>boyutla
+## <a name="size"></a><a name="norm_2__size"></a> boyutla
 
 ```cpp
 static const int size = 2;

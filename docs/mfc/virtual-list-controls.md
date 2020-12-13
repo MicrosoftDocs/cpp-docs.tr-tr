@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sanal liste denetimleri'
 title: Sanal Liste Denetimleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - list controls [MFC], List view
 - virtual list controls
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
-ms.openlocfilehash: 12200697af90a3c83fea3df676bd4d2488598d45
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1d441fc74ab6b1ae395ce0b23bcba08c1703213f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331350"
 ---
 # <a name="virtual-list-controls"></a>Sanal Liste Denetimleri
 
@@ -21,7 +22,7 @@ Sanal liste denetimi, LVS_OWNERDATA stili olan bir liste görünümü denetimidi
 > [!NOTE]
 > MFC ' de sanal liste işlevselliği sağlamaya ek olarak `CListCtrl` [Clienstview](../mfc/reference/clistview-class.md) sınıfında aynı işlevselliği de sağlar.
 
-Sanal liste denetimleri geliştirilirken bilmeniz gereken bazı uyumluluk sorunları vardır. Daha fazla bilgi için Windows SDK liste-görünüm denetimleri konusunun uyumluluk sorunları bölümüne bakın.
+Sanal liste denetimleri geliştirilirken bilmeniz gereken bazı uyumluluk sorunları vardır. Daha fazla bilgi için Windows SDK List-View denetimleri konusunun uyumluluk sorunları bölümüne bakın.
 
 ## <a name="handling-the-lvn_getdispinfo-notification"></a>LVN_GETDISPINFO bildirimini işleme
 
@@ -55,7 +56,7 @@ Aşağıdaki örnek, önbelleği Handler işlevine geçirilen aralıkla güncell
 
 [!code-cpp[NVC_MFCControlLadenDialog#25](../mfc/codesnippet/cpp/virtual-list-controls_3.cpp)]
 
-Bir önbelleğin hazırlanması ve sürdürülmesi hakkında daha fazla bilgi için, Windows SDK liste-görünüm denetimleri konusunun önbellek yönetimi bölümüne bakın.
+Bir önbelleği hazırlama ve sürdürme hakkında daha fazla bilgi için Windows SDK List-View denetimleri konusunun önbellek yönetimi bölümüne bakın.
 
 ## <a name="finding-specific-items"></a>Belirli öğeleri bulma
 

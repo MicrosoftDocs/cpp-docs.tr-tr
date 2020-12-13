@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3201'
 title: Derleyici hatası C3201
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3201
 ms.assetid: ec19cd64-1789-40a3-b2db-dff2852b9d98
-ms.openlocfilehash: 4da6616c59ea4b8a720c8e2dc9742e37a9939171
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3cd6e037cd9dbb0638040e2f3eca61dab1dabb46
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738771"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330644"
 ---
 # <a name="compiler-error-c3201"></a>Derleyici hatası C3201
 

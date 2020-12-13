@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mkdir _wmkdir'
 title: _mkdir, _wmkdir
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _mkdir function
 - _tmkdir function
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
-ms.openlocfilehash: f4714e3e763b827772a7d2eb61ae2e14f0aece02
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 75be13432a5ba0cdc2aa47d2c0e8cbb35e8f982e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330972"
 ---
 # <a name="_mkdir-_wmkdir"></a>_mkdir, _wmkdir
 
@@ -79,9 +80,9 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mkdir** işlevi belirtilen *dirname* ile yeni bir dizin oluşturur. **_mkdir** her çağrı için yalnızca bir yeni dizin oluşturabilir, bu nedenle yalnızca en son *DizinAdı* bileşeni yeni bir dizin adını verebilir. **_mkdir** yol sınırlayıcılarını çevirmez. Windows NT 'de, ters eğik çizgi ( \\) ve eğik çizgi (/), çalışma zamanı yordamlarında karakter dizelerinde geçerli yol sınırlayıcılardır.
+**_Mkdir** işlevi belirtilen *dirname* ile yeni bir dizin oluşturur. **_mkdir** her çağrı için yalnızca bir yeni dizin oluşturabilir, bu nedenle yalnızca en son *DizinAdı* bileşeni yeni bir dizin adını verebilir. **_mkdir** yol sınırlayıcılarını çevirmez. Windows NT 'de, ters eğik çizgi ( \\ ) ve eğik çizgi (/), çalışma zamanı yordamlarında karakter dizelerinde geçerli yol sınırlayıcılardır.
 
-**_wmkdir** , **_mkdir**geniş karakterli bir sürümüdür; _wmkdir *DizinAdı* bağımsız değişkeni **_wmkdir** geniş karakterli bir dizedir. **_wmkdir** ve **_mkdir** aynı şekilde davranır.
+**_wmkdir** , **_mkdir** geniş karakterli bir sürümüdür; _wmkdir *DizinAdı* bağımsız değişkeni  geniş karakterli bir dizedir. **_wmkdir** ve **_mkdir** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -95,8 +96,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mkdir**|\<Direct. h>|
-|**_wmkdir**|\<Direct. h> veya \<wchar. h>|
+|**_mkdir**|\<direct.h>|
+|**_wmkdir**|\<direct.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

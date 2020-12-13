@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kalıcılığı ve başlatmayı Iyileştirme'
 title: Kalıcılığı ve Başlatmayı İyileştirme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - optimization, ActiveX controls
 - optimizing performance, ActiveX controls
 ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
-ms.openlocfilehash: 57b98f7e2e4f9e23175b8b01c2e37ff49c499949
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 440239daa0ecfc4a5955a0ccbecb33bf801da7ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623992"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330151"
 ---
 # <a name="optimizing-persistence-and-initialization"></a>Kalıcılığı ve Başlatmayı İyileştirme
 
-Varsayılan olarak, bir denetimdeki Kalıcılık ve başlatma, üye işlevi tarafından işlenir `DoPropExchange` . Tipik denetimde, bu işlev **PX_** `PX_Color` `PX_Font` her bir özellik için bir tane olmak üzere birkaç px_ işleve (,, vb.) çağrı içerir.
+Varsayılan olarak, bir denetimdeki Kalıcılık ve başlatma, üye işlevi tarafından işlenir `DoPropExchange` . Tipik denetimde, bu işlev  `PX_Color` `PX_Font` her bir özellik için bir tane olmak üzere birkaç px_ işleve (,, vb.) çağrı içerir.
 
 Bu yaklaşım, tek bir `DoPropExchange` uygulamanın başlatma için kullanılabilmesi, ikili biçimde kalıcı hale getirme ve bu nedenle bazı kapsayıcılar tarafından kullanılan "özellik-paket" biçiminde Kalıcılık için kullanılması avantajına sahiptir. Bu bir işlev, özelliklerle ilgili tüm bilgileri ve bunların varsayılan değerlerini tek bir uygun yerde sağlar.
 
@@ -32,7 +33,7 @@ Bu denetimin ikili kalıcılığının performansını artırmak için, `Seriali
 
 `dwVersion`Yerel değişken, denetimin kalıcı durumunun yüklenmekte veya kaydedilmekte olduğunu algılamak için kullanılabilir. [CPropExchange:: GetVersion](reference/cpropexchange-class.md#getversion)çağırmak yerine bu değişkeni kullanabilirsiniz.
 
-Bir **bool** özelliği için kalıcı biçimde küçük bir boşluk kaydetmek için (ve tarafından üretilen biçimde uyumlu tutmak için `PX_Bool` ), özelliği aşağıdaki gibi bir **bayt**olarak saklayabilirsiniz:
+Bir **bool** özelliği için kalıcı biçimde küçük bir boşluk kaydetmek için (ve tarafından üretilen biçimde uyumlu tutmak için `PX_Bool` ), özelliği aşağıdaki gibi bir **bayt** olarak saklayabilirsiniz:
 
 [!code-cpp[NVC_MFC_AxOpt#3](codesnippet/cpp/optimizing-persistence-and-initialization_3.cpp)]
 
@@ -46,4 +47,4 @@ Aynı denetim için, aşağıdaki gibi [Copacontrol:: OnResetState](reference/co
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetimleri: İyileştirme](mfc-activex-controls-optimization.md)
+[MFC ActiveX denetimleri: Iyileştirme](mfc-activex-controls-optimization.md)

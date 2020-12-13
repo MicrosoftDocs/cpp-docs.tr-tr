@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Dizin sınıfı'
 title: index Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - index structure
 ms.assetid: cbe79b08-0ba7-474c-9828-f1a71da39eb3
-ms.openlocfilehash: 50222015e6b365dc161fd4334067c26c7f288337
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 46b49a7e0f65f06ad64ed32367cdfe6f6ca5ed1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330047"
 ---
 # <a name="index-class"></a>index Sınıfı
 
-*N*boyutlu dizin vektörü tanımlar.
+*N* boyutlu bir dizin vektörü tanımlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,35 +30,35 @@ class index;
 ### <a name="parameters"></a>Parametreler
 
 *_Rank*<br/>
-Boyutların sıralaması veya sayısı.
+Boyut veya boyut sayısı.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[dizin Oluşturucu](#index_ctor)|`index` sınıfının yeni bir örneğini başlatır.|
+|[Dizin Oluşturucu](#index_ctor)|`index` sınıfının yeni bir örneğini başlatır.|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[işleç-](#operator--)|Nesnenin her öğesini `index` eriter.|
-|[işleç%=](#operator_mod_eq)|Bu öğe bir sayıya bölündüğünde nesnedeki her öğenin `index` modüllerini (kalan) hesaplar.|
-|[işleç*=](#operator_star_eq)|Nesnenin her öğesini `index` bir sayıyla çarpar.|
-|[işleç/=](#operator_div_eq)|Nesnenin her öğesini bir sayıya `index` böler.|
-|[dizin::operatör\[\]](#operator_at)|Belirtilen dizinde olan öğeyi döndürür.|
-|[işleç++](#operator_add_add)|Nesnenin her öğesini `index` decrements.|
-|[işleç+=](#operator_add_eq)|Nesnenin her öğesine belirtilen `index` sayıyı ekler.|
-|[işleç=](#operator_eq)|Belirtilen `index` nesnenin içeriğini buna kopyalar.|
-|[işleç-=](#operator_-_eq)|Nesnenin her öğesinden belirtilen sayıyı `index` çıkarır.|
+|[işleç--](#operator--)|Nesnenin her öğesini azaltır `index` .|
+|[işleç% =](#operator_mod_eq)|`index`Bu öğe bir sayıyla bölündüğünde nesnedeki her öğenin mod (geri kalanı) sayısını hesaplar.|
+|[işleç * =](#operator_star_eq)|Nesne öğelerinin her birini `index` bir sayı ile çarpar.|
+|[işleç/=](#operator_div_eq)|Nesnenin her öğesini `index` bir sayıya böler.|
+|[index:: operator\[\]](#operator_at)|Belirtilen dizindeki öğeyi döndürür.|
+|[işleç + +](#operator_add_add)|Nesnenin her öğesini arttırır `index` .|
+|[işleç + =](#operator_add_eq)|Nesnenin her öğesine belirtilen sayıyı ekler `index` .|
+|[işleç =](#operator_eq)|Belirtilen `index` nesnenin içeriğini buna kopyalar.|
+|[işleç-=](#operator_-_eq)|Nesnenin her öğesinden belirtilen sayıyı çıkartır `index` .|
 
-### <a name="public-constants"></a>Genel Sabitler
+### <a name="public-constants"></a>Genel sabitler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[sıralama Sabit](#rank)|Nesnenin sıralamasını `index` depolar.|
+|[sıralama sabiti](#rank)|Nesnenin derecesini depolar `index` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -65,17 +66,17 @@ Boyutların sıralaması veya sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yapı, `index` *N-boyutlu*bir boşlukta benzersiz bir konum belirten *N* tamsayılarının koordinat vektörütemsil eder. Vektördeki değerler en önemliden en az anlamlıya doğru sıralanır. [Operatör=](#operator_eq)kullanarak bileşenlerin değerlerini alabilirsiniz.
+Yapı, n `index` boyutlu bir alanda benzersiz bir konum belirten *n* tamsayının koordinat vektörünü temsil eder. Vektördeki değerler en önemli değerden en az önemli olarak sıralanır. [İşleç =](#operator_eq)kullanarak bileşenlerin değerlerini alabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** amp.h
+**Üst bilgi:** amp. h
 
-**Ad alanı:** Eşzamanlılık
+**Ad alanı:** Zamanlı
 
-## <a name="index-constructor"></a><a name="index_ctor"></a>dizin Oluşturucu
+## <a name="index-constructor"></a><a name="index_ctor"></a> Dizin Oluşturucu
 
-Dizin sınıfının yeni bir örneğini başolarak karşılar.
+Dizin sınıfının yeni bir örneğini başlatır.
 
 ```cpp
 index() restrict(amp,cpu);
@@ -107,26 +108,26 @@ explicit index(
 ### <a name="parameters"></a>Parametreler
 
 *_Array*<br/>
-Rütbe değerlerine sahip tek boyutlu bir dizi.
+Sıralama değerleriyle tek boyutlu bir dizi.
 
 *_I*<br/>
-Tek boyutlu bir dizinde dizin konumu.
+Tek boyutlu dizindeki dizin konumu.
 
 *_I0*<br/>
 En önemli boyutun uzunluğu.
 
 *_I1*<br/>
-Bir sonrakien-en önemli boyutun uzunluğu.
+Bir sonraki en-önemli boyutun uzunluğu.
 
 *_I2*<br/>
 En az önemli boyutun uzunluğu.
 
 *_Other*<br/>
-Yeni dizin nesnesinin dayandığı bir dizin nesnesi.
+Yeni dizin nesnesinin temel aldığı bir dizin nesnesi.
 
-## <a name="operator--"></a><a name="operator--"></a>işleç-
+## <a name="operator--"></a><a name="operator--"></a> işleç--
 
-Dizin nesnesinin her öğesini kararları.
+Index nesnesinin her bir öğesini azaltır.
 
 ```cpp
 index<_Rank>& operator--() restrict(amp,cpu);
@@ -136,13 +137,13 @@ index operator--(
 ) restrict(amp,cpu);
 ```
 
-### <a name="return-values"></a>Döndürülen değerler
+### <a name="return-values"></a>Dönüş değerleri
 
-Önek işleci için dizin nesnesi (*bu). Sonek işleci için yeni bir dizin nesnesi.
+Önek işleci için dizin nesnesi (* this). Son ek işleci için yeni bir dizin nesnesi.
 
-## <a name="operator"></a><a name="operator_mod_eq"></a>işleç%=
+## <a name="operator"></a><a name="operator_mod_eq"></a> işleç% =
 
-Dizin nesnesindeki her öğenin modüllerini (kalan) hesaplar, bu öğe belirtilen sayıya bölündüğünde.
+Bu öğe belirtilen sayıya bölündüğünde Dizin nesnesindeki her öğenin mod (geri kalanı) sayısını hesaplar.
 
 ```cpp
 index<_Rank>& operator%=(
@@ -153,15 +154,15 @@ index<_Rank>& operator%=(
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Modülü bulmak için bölünecek sayı.
+Mod sayısını bulmak için bölünecek sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Dizin nesnesi.
 
-## <a name="operator"></a><a name="operator_star_eq"></a>işleç*=
+## <a name="operator"></a><a name="operator_star_eq"></a> işleç * =
 
-Dizin nesnesindeki her öğeyi belirtilen sayıyla çarpar.
+Dizin nesnesindeki her öğeyi belirtilen sayı ile çarpar.
 
 ```cpp
 index<_Rank>& operator*=(
@@ -172,11 +173,11 @@ index<_Rank>& operator*=(
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Çarpımı gereken sayı.
+Çarpılacak sayı.
 
-## <a name="operator"></a><a name="operator_div_eq"></a>işleç/=
+## <a name="operator"></a><a name="operator_div_eq"></a> işleç/=
 
-Dizin nesnesindeki her öğeyi belirtilen sayıya böler.
+Dizin nesnesindeki her öğeyi belirtilen sayıda böler.
 
 ```cpp
 index<_Rank>& operator/=(
@@ -189,9 +190,9 @@ index<_Rank>& operator/=(
 *_Rhs*<br/>
 Bölünecek sayı.
 
-## <a name="operator"></a><a name="operator_at"></a>Işleç\[\]
+## <a name="operator"></a><a name="operator_at"></a> işlecinde\[\]
 
-Dizin bileşenini belirtilen konumda döndürür.
+Belirtilen konumdaki dizinin bileşenini döndürür.
 
 ```cpp
 int operator[] (
@@ -206,7 +207,7 @@ int& operator[] (
 ### <a name="parameters"></a>Parametreler
 
 *_Index*<br/>
-0'dan eksi 1'e kadar bir sonda.
+0 ile sıra eksi 1 arasında bir tamsayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -224,9 +225,9 @@ std::cout << idx[1] << "\n";
 std::cout << idx[2] << "\n";
 ```
 
-## <a name="operator"></a><a name="operator_add_add"></a>işleç++
+## <a name="operator"></a><a name="operator_add_add"></a> işleç + +
 
-Dizin nesnesinin her öğesini artışlar.
+Index nesnesinin her bir öğesini arttırır.
 
 ```cpp
 index<_Rank>& operator++() restrict(amp,cpu);
@@ -238,9 +239,9 @@ index<_Rank> operator++(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Önek işleci için dizin nesnesi (*bu). Sonek işleci için yeni bir dizin nesnesi.
+Önek işleci için dizin nesnesi (* this). Son ek işleci için yeni bir dizin nesnesi.
 
-## <a name="operator"></a><a name="operator_add_eq"></a>işleç+=
+## <a name="operator"></a><a name="operator_add_eq"></a> işleç + =
 
 Dizin nesnesinin her öğesine belirtilen sayıyı ekler.
 
@@ -263,7 +264,7 @@ Eklenecek sayı.
 
 Dizin nesnesi.
 
-## <a name="operator"></a><a name="operator_eq"></a>işleç=
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 Belirtilen dizin nesnesinin içeriğini buna kopyalar.
 
@@ -276,15 +277,15 @@ index<_Rank>& operator=(
 ### <a name="parameters"></a>Parametreler
 
 *_Other*<br/>
-Kopyalanması gereken dizin nesnesi.
+Kopyalanacak dizin nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Bu dizin nesnesine bir başvuru.
 
-## <a name="operator-"></a><a name="operator_-_eq"></a>işleç-=
+## <a name="operator-"></a><a name="operator_-_eq"></a> işleç-=
 
-Dizin nesnesinin her öğesinden belirtilen sayıyı çıkarır.
+Dizin nesnesinin her öğesinden belirtilen sayıyı çıkartır.
 
 ```cpp
 index<_Rank>& operator-=(
@@ -299,15 +300,15 @@ index<_Rank>& operator-=(
 ### <a name="parameters"></a>Parametreler
 
 *_Rhs*<br/>
-Çıkarılabilen numara.
+Çıkarılacak sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Dizin nesnesi.
 
-## <a name="rank"></a><a name="rank"></a>Rütbe
+## <a name="rank"></a><a name="rank"></a> Sırası
 
-Dizin nesnesinin sıralamasını alır.
+Dizin nesnesinin derecesini alır.
 
 ```cpp
 static const int rank = _Rank;
@@ -315,4 +316,4 @@ static const int rank = _Rank;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)
+[Eşzamanlılık ad alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ımportidl'
 title: ımportıdl (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - importidl attribute
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
-ms.openlocfilehash: 8f3c2c5c67ac216d096d1082814c561698f3f732
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b10caa9f4b1467727c70b6d968ca6aa33b58da0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842253"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329889"
 ---
 # <a name="importidl"></a>importidl
 
 Belirtilen. IDL dosyasını oluşturulan. IDL dosyasına ekler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ importidl(idl_file) ];
@@ -30,9 +31,9 @@ Uygulamanız için oluşturulacak. IDL dosyası ile birleştirmek istediğiniz. 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Importıdl** C++ özniteliği, *idl_file*bölümü, programınızın üretilen. IDL dosyasına ve kitaplık bölümüne ( *idl_file*) programınızın oluşturulan. IDL dosyasının Kitaplık bölümüne koyar.
+**Importıdl** C++ özniteliği, *idl_file* bölümü, programınızın üretilen. IDL dosyasına ve kitaplık bölümüne ( *idl_file*) programınızın oluşturulan. IDL dosyasının Kitaplık bölümüne koyar.
 
-Örneğin, üretilen. IDL dosyanıza birlikte kodlanmış bir. IDL dosyası kullanmak istiyorsanız, **ımportidl**kullanmak isteyebilirsiniz.
+Örneğin, üretilen. IDL dosyanıza birlikte kodlanmış bir. IDL dosyası kullanmak istiyorsanız, **ımportidl** kullanmak isteyebilirsiniz.
 
 ## <a name="example"></a>Örnek
 
@@ -48,7 +49,7 @@ Uygulamanız için oluşturulacak. IDL dosyası ile birleştirmek istediğiniz. 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

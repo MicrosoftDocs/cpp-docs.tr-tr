@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi: taşıma Kılavuzu: Spy + +'
 title: 'Taşıma Kılavuzu: Spy++'
 ms.date: 10/23/2019
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 6f63f082d96f33246592b0e7f39b6788417f8a32
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7c417a6f313ba6f77e0330bd9511b40c8e1285b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217863"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331258"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 
@@ -19,7 +20,7 @@ Spy + +, Windows Masaüstü için Kullanıcı arabirimi öğeleriyle ilgili her 
 
 Bu durum, özellikle Visual C++ 6,0 ' den beri Visual C++ her bir sürümü ile güncelleştirilmemiş eski projeler için MFC ve Win32 API kullanan Windows masaüstü uygulamalarının oluşturulması için tipik olarak kabul edilmektedir.
 
-## <a name="step-1-converting-the-project-file"></a><a name="convert_project_file"></a>1. adım. Proje dosyası dönüştürülüyor.
+## <a name="step-1-converting-the-project-file"></a><a name="convert_project_file"></a> 1. adım. Proje dosyası dönüştürülüyor.
 
 Visual C++ 6,0 ' den iki eski. DSW dosyası olan proje dosyası, daha fazla dikkat gerektiren sorunlar olmadan kolayca dönüştürülür. Bir proje Spy + + uygulamasıdır. Diğeri, destekleyen bir DLL olan C dilinde yazılmış SpyHk. [Burada](../porting/visual-cpp-porting-and-upgrading-guide.md)açıklandığı gibi daha karmaşık projeler kolayca yükseltilmeyebilir.
 
@@ -29,7 +30,7 @@ Visual C++ 6,0 ' den iki eski. DSW dosyası olan proje dosyası, daha fazla dikk
 
 Biri çok sayıda C++ dosyası ve C dilinde yazılmış başka bir DLL olan iki projeniz vardır.
 
-## <a name="step-2-header-file-problems"></a><a name="header_file_problems"></a>2. adım. Üstbilgi dosyası sorunları
+## <a name="step-2-header-file-problems"></a><a name="header_file_problems"></a> 2. adım. Üstbilgi dosyası sorunları
 
 Yeni dönüştürülen bir proje oluştururken, genellikle bulacağınız ilk şey, projenizin kullandığı başlık dosyalarının bulunamadığını halledir.
 
@@ -39,11 +40,11 @@ Spy + + ' da bulunamayan dosyalardan biri verstamp. h idi. Bir Internet aramadan
 1>C:\Program Files (x86)\Windows Kits\8.1\Include\shared\common.ver(212): error RC2104: undefined keyword or key name: VER_FILEFLAGSMASK
 ```
 
-Kullanılabilir içerme dosyalarında bir sembol bulmanın en kolay yolu, **dosyalarda bul** (**CTRL** + **SHIFT** + **F**) ' in kullanılması ve **Visual C++ içerme dizinleri**belirtmektir. Bunu ntverp. h içinde bulduk. Verdamgamız. h dahil olmak üzere ntverp. h ile değiştirilmiştir ve bu hata kayboldu.
+Kullanılabilir içerme dosyalarında bir sembol bulmanın en kolay yolu, **dosyalarda bul** (**CTRL** + **SHIFT** + **F**) ' in kullanılması ve **Visual C++ içerme dizinleri** belirtmektir. Bunu ntverp. h içinde bulduk. Verdamgamız. h dahil olmak üzere ntverp. h ile değiştirilmiştir ve bu hata kayboldu.
 
-## <a name="step-3-linker-outputfile-setting"></a><a name="linker_output_settings"></a>3. adım. Bağlayıcı ÇıktıDosyası ayarı
+## <a name="step-3-linker-outputfile-setting"></a><a name="linker_output_settings"></a> 3. adım. Bağlayıcı ÇıktıDosyası ayarı
 
-Daha eski projeler bazen, yükseltmeden sonra sorunlara neden olabilecek geleneksel konumlara yerleştirilmiş dosyalardır. Bu durumda, `$(SolutionDir)` Visual Studio 'nun proje klasörlerinden birine değil **Include** , orada yer alan bazı üst bilgi dosyalarını bulabileceğinden emin olmak için proje özelliklerine ekleme yoluna eklememiz gerekir.
+Daha eski projeler bazen, yükseltmeden sonra sorunlara neden olabilecek geleneksel konumlara yerleştirilmiş dosyalardır. Bu durumda, `$(SolutionDir)` Visual Studio 'nun proje klasörlerinden birine değil  , orada yer alan bazı üst bilgi dosyalarını bulabileceğinden emin olmak için proje özelliklerine ekleme yoluna eklememiz gerekir.
 
 MSBuild şikayetleri **Link. ÇıktıDosyası** ÖZELLIĞININ, MSB8012 veren **targetPath** ve **TargetName** değerleriyle eşleşmez.
 
@@ -53,9 +54,9 @@ warning MSB8012: TargetPath(...\spyxx\spyxxhk\.\..\Debug\SpyxxHk.dll) does not m
 
 **LINK. çıkışdosyası** , derleme çıktıdır (ÖRNEĞIN, exe, dll) ve normalde ' den oluşturulur ve `$(TargetDir)$(TargetName)$(TargetExt)` yol, dosya adı ve uzantı verir. Bu, eski Visual C++ derleme aracından (vcbuild.exe) projeleri yeni derleme aracına (MSBuild.exe) geçirirken yaygın bir hatadır. Visual Studio 2010 ' de derleme aracı değişikliği gerçekleştiği için, önce 2010 bir projeyi 2010 veya sonraki bir sürüme geçirdiğinizde bu sorunla karşılaşabilirsiniz. Temel sorun, projenin diğer proje ayarlarına dayanmasından ne olduğunu belirlemek için her zaman mümkün olmadığından, proje Geçiş Sihirbazı 'nın **LINK. çıkışdosyası** değerini güncelleştirmemesinden bağımsız olur. Bu nedenle, genellikle el ile ayarlamanız gerekir. Daha fazla ayrıntı için Visual C++ bloguna bu [gönderisine](https://devblogs.microsoft.com/cppblog/visual-studio-2010-c-project-upgrade-guide/) bakın.
 
-Bu durumda, yapılandırmaya bağlı olarak, dönüştürülen projedeki **Link. ÇıktıDosyası** özelliği .\Debug\Spyxx.exe ve Spy + + projesi için .\Release\Spyxx.exe olarak ayarlanmıştır. En iyi sonuç, yalnızca bu sabit kodlanmış değerleri `$(TargetDir)$(TargetName)$(TargetExt)` **Tüm yapılandırmalarda**değiştirmek içindir. Bu işe yaramazsa, bu değerlerin ayarlandığı **genel** bölümdeki Özellikler ' i buradan özelleştirebilir veya ( **çıkış dizini**, **hedef adı**ve **hedef uzantısı**) özellikleri değiştirebilirsiniz. Görüntülemekte olduğunuz özellik makrolar kullanıyorsa, açılan listede **Düzenle** ' yi seçerek, makro değişimlerin yaptığı son dizeyi gösteren bir iletişim kutusu açabilirsiniz. **Makrolar** düğmesini seçerek kullanılabilir tüm makroları ve bunların geçerli değerlerini görüntüleyebilirsiniz.
+Bu durumda, yapılandırmaya bağlı olarak, dönüştürülen projedeki **Link. ÇıktıDosyası** özelliği .\Debug\Spyxx.exe ve Spy + + projesi için .\Release\Spyxx.exe olarak ayarlanmıştır. En iyi sonuç, yalnızca bu sabit kodlanmış değerleri `$(TargetDir)$(TargetName)$(TargetExt)` **Tüm yapılandırmalarda** değiştirmek içindir. Bu işe yaramazsa, bu değerlerin ayarlandığı **genel** bölümdeki Özellikler ' i buradan özelleştirebilir veya ( **çıkış dizini**, **hedef adı** ve **hedef uzantısı**) özellikleri değiştirebilirsiniz. Görüntülemekte olduğunuz özellik makrolar kullanıyorsa, açılan listede **Düzenle** ' yi seçerek, makro değişimlerin yaptığı son dizeyi gösteren bir iletişim kutusu açabilirsiniz. **Makrolar** düğmesini seçerek kullanılabilir tüm makroları ve bunların geçerli değerlerini görüntüleyebilirsiniz.
 
-## <a name="step-4-updating-the-target-windows-version"></a><a name="updating_winver"></a>4. adım. Hedef Windows sürümü güncelleştiriliyor
+## <a name="step-4-updating-the-target-windows-version"></a><a name="updating_winver"></a> 4. adım. Hedef Windows sürümü güncelleştiriliyor
 
 Sonraki hata, WINVER sürümünün MFC 'de artık desteklenmediğini gösterir. Windows XP için WINVER 0x0501.
 
@@ -81,7 +82,7 @@ WINVER, Windows 7 olarak ayarlayacağız. Değerin kendisi yerine Windows 7 (_WI
 #define WINVER _WINNT_WIN32_WIN7 // Minimum targeted Windows version is Windows 7
 ```
 
-## <a name="step-5-linker-errors"></a><a name="linker_errors"></a>5. adım. Bağlayıcı hataları
+## <a name="step-5-linker-errors"></a><a name="linker_errors"></a> 5. adım. Bağlayıcı hataları
 
 Bu değişikliklerle, SpyHk (DLL) projesi oluşturulur ancak bir bağlayıcı hatası üretir.
 
@@ -98,7 +99,7 @@ BOOL WINAPI DLLEntryPoint(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved
 
 C DLL projesi SpyHK.dll, artık hata olmadan derleme ve bağlantı.
 
-## <a name="step-6-more-outdated-header-files"></a><a name="outdated_header_files"></a>Adım 6. Daha güncel olmayan başlık dosyaları
+## <a name="step-6-more-outdated-header-files"></a><a name="outdated_header_files"></a> Adım 6. Daha güncel olmayan başlık dosyaları
 
 Bu noktada, spyxx ana yürütülebilir projesi üzerinde çalışmaya başladık.
 
@@ -106,7 +107,7 @@ Diğer birkaç içerme dosyası bulunamadı: ctl3d. h ve penwin. h. Üstbilginin
 
 Kademeli olarak ortadan kaldırdığınız çok sayıda derleme hatası olan bir proje verildiğinde, yönergeyi kaldırdığınızda güncel olmayan bir API 'nin tüm kullanımlarını bulmak gerçekçi değildir `#include` . Bu işlemi hemen algılamadık, ancak daha sonraki bir noktada WM_DLGBORDER tanımsız bir hataya geldi. Bu, ctl3d. h ' den gelen tanımsız simgelerden yalnızca biridir. Süresi geçmiş bir API ile ilgili olduğunu belirledikten sonra, koddaki tüm başvuruları kaldırdık.
 
-## <a name="step-7-updating-old-iostreams-code"></a><a name="updating_iostreams_code"></a>7. adım. Eski Iostreams kodu güncelleştiriliyor
+## <a name="step-7-updating-old-iostreams-code"></a><a name="updating_iostreams_code"></a> 7. adım. Eski Iostreams kodu güncelleştiriliyor
 
 Sonraki hata, Iostreams kullanan eski C++ kodu ile yaygındır.
 
@@ -254,7 +255,7 @@ mstream& operator<<(LPTSTR psz)
 
 Bu tür dönüştürmeye daha eski, daha az sıkı derleyici altında izin verilir, ancak daha son uygunluk değişiklikleri daha doğru kod gerektirir.
 
-## <a name="step-8-the-compilers-more-strict-conversions"></a><a name="stricter_conversions"></a>8. adım. Derleyicinin daha katı dönüşümler
+## <a name="step-8-the-compilers-more-strict-conversions"></a><a name="stricter_conversions"></a> 8. adım. Derleyicinin daha katı dönüşümler
 
 Aşağıdakiler gibi birçok hata da sunuyoruz:
 
@@ -292,9 +293,9 @@ Değişiklikten sonra aşağıdaki kodu sunuyoruz:
 afx_msg LRESULT OnNcHitTest(CPoint point);
 ```
 
-Bu işlevin, CWnd 'den türetilmiş farklı sınıflarda on kez yinelendiği hakkında daha fazla tekrarda bulunduğundan, imleç düzenleyiciyle ilgili **olarak** simgeye git (klavye: **F12**) ve **bildirim** ' i (klavye: **CTRL** + **F12**) kullanın. **Find Symbol** **Tanıma Git** genellikle ikiden fazla yararlı olur. **Bildirimine git** , friend sınıfı bildirimleri veya iletme başvuruları gibi tanımlayıcı sınıf bildirimi dışındaki bildirimleri bulur.
+Bu işlevin, CWnd 'den türetilmiş farklı sınıflarda on kez yinelendiği hakkında daha fazla tekrarda bulunduğundan, imleç düzenleyiciyle ilgili **olarak** simgeye git (klavye: **F12**) ve **bildirim** ' i (klavye: **CTRL** + **F12**) kullanın.  **Tanıma Git** genellikle ikiden fazla yararlı olur. **Bildirimine git** , friend sınıfı bildirimleri veya iletme başvuruları gibi tanımlayıcı sınıf bildirimi dışındaki bildirimleri bulur.
 
-## <a name="step-9-mfc-changes"></a><a name="mfc_changes"></a>9. adım. MFC değişiklikleri
+## <a name="step-9-mfc-changes"></a><a name="mfc_changes"></a> 9. adım. MFC değişiklikleri
 
 Sonraki hata ayrıca değiştirilmiş bir bildirim türüyle ilgilidir ve aynı zamanda bir makroda de gerçekleşir.
 
@@ -316,7 +317,7 @@ afx_msg void OnActivateApp(BOOL bActive, DWORD dwThreadId);
 
 Bu noktada, projeyi derleyebiliriz. Bununla birlikte çalışmak için birkaç uyarı vardır; ancak, MBCS 'den Unicode 'a dönüştürme veya güvenli CRT işlevlerini kullanarak güvenliği artırma gibi, yükseltmenin isteğe bağlı bölümleri vardır.
 
-## <a name="step-10-addressing-compiler-warnings"></a><a name="compiler_warnings"></a>10. adım. Derleyici uyarılarını adresleme
+## <a name="step-10-addressing-compiler-warnings"></a><a name="compiler_warnings"></a> 10. adım. Derleyici uyarılarını adresleme
 
 Uyarıların tam listesini almak için, yalnızca geçerli derlemeden uyarı raporları aldığınızdan, yalnızca derlenmiş olan her şeyin yeniden derlendiğinden emin olmak için, normal derleme yerine çözüm üzerinde **tümünü yeniden derle** yapmanız gerekir. Diğer soru, geçerli Uyarı düzeyinin kabul edilip edilmeyeceğini veya daha yüksek bir uyarı düzeyi kullanılmasını sağlar.  Büyük bir kod taşıma sırasında, özellikle eski kod, daha yüksek bir uyarı düzeyi kullanılarak uygun olabilir.  Ayrıca, varsayılan uyarı düzeyiyle başlamak ve tüm uyarıları almak için uyarı düzeyini artırmak isteyebilirsiniz. Kullanıyorsanız `/Wall` , sistem üstbilgi dosyalarında bazı uyarılar alırsınız, bu sayede birçok kişi, `/W4` sistem üstbilgileri için uyarı almadan kendi kodlarında en fazla uyarıyı almak için kullanılır. Uyarıların hata olarak gösterilmesini istiyorsanız, `/WX` seçeneğini ekleyin. Bu ayarlar, **Proje özellikleri** iletişim kutusunun **C/C++** bölümünde bulunur.
 
@@ -500,7 +501,7 @@ warning C4211: nonstandard extension used: redefined extern to static
 
 Bu sorun, bir değişken ilk kez bildirildiğinde **`extern`** ve daha sonra bildirildiği zaman oluşur **`static`** . Bu iki depolama sınıfı belirticinin anlamı birbirini dışlıyor, ancak buna Microsoft uzantısı olarak izin verilir. Kodun diğer derleyicilere taşınabilir olmasını veya `/Za` (ANSI uyumluluğu) ile derlemeyi istediyseniz, bildirimleri eşleşen depolama sınıfı belirticilerine sahip olacak şekilde değiştirirsiniz.
 
-## <a name="step-11-porting-from-mbcs-to-unicode"></a><a name="porting_to_unicode"></a>11. adım. MBCS 'den Unicode 'a taşıma
+## <a name="step-11-porting-from-mbcs-to-unicode"></a><a name="porting_to_unicode"></a> 11. adım. MBCS 'den Unicode 'a taşıma
 
 Windows dünyasında Unicode söylediğimizi, genellikle UTF-16 anlamına geldiğini unutmayın. Linux gibi diğer işletim sistemleri UTF-8 kullanır, ancak Windows genellikle değildir. MFC 'nin MBCS sürümü Visual Studio 2013 ve 2015 ' de kullanımdan kaldırılmıştır, ancak artık Visual Studio 2017 ' de kullanımdan kaldırılmıştır. Visual Studio 2013 veya 2015 kullanıyorsanız, bu adımı, başka bir iş yapmak veya zaman aşımı süresini uygun bir zamana kadar erteleyebilmek için, MBCS 'nin kullanım dışı olduğunu belirten, geçici olarak ortadan kaldırmak isteyebilir. Geçerli kod MBCS kullanır ve MFC 'nin ANSI/MBCS sürümünü yüklememiz gereken ile devam eder. Büyük MFC kitaplığı, C++ yüklemesinde varsayılan Visual Studio **Desktop geliştirmenin** bir parçası değildir, bu nedenle yükleyicideki isteğe bağlı bileşenlerden seçilmelidir. Bkz. [MFC MBCS dll eklentisi](../mfc/mfc-mbcs-dll-add-on.md). Bu özelliği indirerek ve Visual Studio 'yu yeniden başlattıktan sonra, MFC 'nin MBCS sürümünü derleyip bağlayabilirsiniz, ancak Visual Studio 2013 veya 2015 kullanıyorsanız MBCS hakkında uyarı almak için, proje özelliklerinin ön **işlemci** bölümünde veya *stffx. h* üstbilgi dosyasının veya diğer ortak üstbilgi dosyasının başlangıcında de önceden tanımlanmış makrolar listenize NO_WARN_MBCS_MFC_DEPRECATION eklemeniz gerekir.
 
@@ -518,7 +519,7 @@ msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\Sp
 
 Şimdi eski çok baytlı karakter kümesi (MBCS) kodunu Unicode olarak güncelleştirmemize izin verin. Bu bir Windows uygulaması olduğundan, içkin Windows masaüstü platformu 'na bağlı olduğundan, Windows 'un kullandığı UTF-16 Unicode ' a bağlantı göndereceğiz. Platformlar arası kod yazıyorsanız veya bir Windows uygulamasını başka bir platforma taşırken, diğer işletim sistemlerinde yaygın olarak kullanılan UTF-8 ' e geçiş yapmayı düşünmek isteyebilirsiniz.
 
-UTF-16 Unicode 'a taşıma seçeneği, yine de MBCS 'ye derleme yapmak isteyip istememize karar vermelidir.  MBCS 'yi destekleme seçeneğine sahip olmak istiyoruz, **`char`** **`wchar_t`** \_ \_ derleme sırasında MBCS veya UNICODE tanımlandığına bağlı olarak, ya da olarak çözümlenen bır karakter türü olarak TCHAR makrosunu kullanacağız. Ve ilişkili API 'Leri yerine çeşitli API 'lerin TCHAR ve TCHAR sürümlerine geçiş yapmak, **`wchar_t`** yalnızca \_ MBCS makrosunu UNICODE yerine tanımlayarak, KODUNUZUN bir MBCS sürümüne geri dönebilirsiniz \_ . TCHAR 'ın yanı sıra, yaygın olarak kullanılan typedefs, makrolar ve işlevler gibi çeşitli TCHAR sürümleri mevcuttur. Örneğin, LPCSTR yerine LPCTSTR ve bu şekilde devam eder. Proje Özellikleri iletişim kutusunda, **yapılandırma özellikleri**altında, **genel** bölümünde, **Unicode**karakter kümesini kullan ' ı kullanarak **karakter kümesi** özelliğini **kullanın** . Bu ayar, derleme sırasında önceden tanımlanan makroyu etkiler. Hem UNICODE makrosu hem de \_ Unicode makrosu vardır. Proje özelliği her ikisini de sürekli olarak etkiler. Windows üstbilgileri, MFC gibi Visual C++ üst bilgileri \_ Unicode kullanır, ancak biri tanımlandığında diğeri her zaman tanımlanır.
+UTF-16 Unicode 'a taşıma seçeneği, yine de MBCS 'ye derleme yapmak isteyip istememize karar vermelidir.  MBCS 'yi destekleme seçeneğine sahip olmak istiyoruz, **`char`** **`wchar_t`** \_ \_ derleme sırasında MBCS veya UNICODE tanımlandığına bağlı olarak, ya da olarak çözümlenen bır karakter türü olarak TCHAR makrosunu kullanacağız. Ve ilişkili API 'Leri yerine çeşitli API 'lerin TCHAR ve TCHAR sürümlerine geçiş yapmak, **`wchar_t`** yalnızca \_ MBCS makrosunu UNICODE yerine tanımlayarak, KODUNUZUN bir MBCS sürümüne geri dönebilirsiniz \_ . TCHAR 'ın yanı sıra, yaygın olarak kullanılan typedefs, makrolar ve işlevler gibi çeşitli TCHAR sürümleri mevcuttur. Örneğin, LPCSTR yerine LPCTSTR ve bu şekilde devam eder. Proje Özellikleri iletişim kutusunda, **yapılandırma özellikleri** altında, **genel** bölümünde, **Unicode** karakter kümesini kullan ' ı kullanarak **karakter kümesi** özelliğini **kullanın** . Bu ayar, derleme sırasında önceden tanımlanan makroyu etkiler. Hem UNICODE makrosu hem de \_ Unicode makrosu vardır. Proje özelliği her ikisini de sürekli olarak etkiler. Windows üstbilgileri, MFC gibi Visual C++ üst bilgileri \_ Unicode kullanır, ancak biri tanımlandığında diğeri her zaman tanımlanır.
 
 TCHAR 'dan UTF-16 Unicode 'a gitmek için iyi bir [kılavuz](/previous-versions/cc194801(v=msdn.10)) vardır. Bu yolu seçtik. İlk olarak, **karakter kümesi** özelliğini **Unicode karakter kümesini kullanacak** şekilde değiştiririz ve projeyi yeniden derliyoruz.
 
@@ -542,7 +543,7 @@ wsprintf(szTmp, "%d.%2.2d.%4.4d", rmj, rmm, rup);
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);
 ```
 
-\_T makrosu, **`char`** **`wchar_t`** MBCS veya UNICODE ayarlarına bağlı olarak dize sabiti derlemesini dize veya dize olarak oluşturma etkisine sahiptir. Tüm dizeleri \_ Visual Studio 'da T ile değiştirmek için, önce **hızlı değiştirme** (klavye: **CTRL** + **F**) kutusunu veya **dosyalardaki Değiştir** (klavye: **CTRL** + **SHIFT** + **H**) öğesini açın, sonra **Normal ifadeleri kullan** onay kutusunu seçin. `((\".*?\")|('.+?'))`Arama metni ve `_T($1)` değiştirme metni olarak girin. Zaten \_ bazı dizelerin etrafında t Makronuz varsa, bu yordam onu tekrar ekler ve ayrıca, kullandığınız gibi t 'yi kullanmak istemediğiniz durumlar da bulabilir. bu \_ `#include` nedenle, **Tümünü değiştirmek**yerine **Sonrakini değiştirme** 'yi kullanmak en iyisidir.
+\_T makrosu, **`char`** **`wchar_t`** MBCS veya UNICODE ayarlarına bağlı olarak dize sabiti derlemesini dize veya dize olarak oluşturma etkisine sahiptir. Tüm dizeleri \_ Visual Studio 'da T ile değiştirmek için, önce **hızlı değiştirme** (klavye: **CTRL** + **F**) kutusunu veya **dosyalardaki Değiştir** (klavye: **CTRL** + **SHIFT** + **H**) öğesini açın, sonra **Normal ifadeleri kullan** onay kutusunu seçin. `((\".*?\")|('.+?'))`Arama metni ve `_T($1)` değiştirme metni olarak girin. Zaten \_ bazı dizelerin etrafında t Makronuz varsa, bu yordam onu tekrar ekler ve ayrıca, kullandığınız gibi t 'yi kullanmak istemediğiniz durumlar da bulabilir. bu \_ `#include` nedenle, **Tümünü değiştirmek** yerine **Sonrakini değiştirme** 'yi kullanmak en iyisidir.
 
 Bu özel işlev olan [wsprintf](/windows/win32/api/winuser/nf-winuser-wsprintfw), aslında Windows üst bilgilerinde tanımlanmıştır ve bunun, olası arabellek taşmasından dolayı kullanılması tavsiye edilir. Arabellek için boyut verilmemiş `szTmp` , bu nedenle işlevin, arabelleğe yazılacak tüm verileri tutabilmesini denetme yolu yoktur. Daha benzer sorunları giderdiğimiz güvenli CRT 'ye taşıma hakkında bir sonraki bölüme bakın. [_Stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)ile değiştiriliyor.
 
@@ -616,7 +617,7 @@ Kuşkusuz, `wcscpy` gerçekten kullanılması gereken `wcscpy_s` daha güvenli s
 
 Bu Spy + + çözümü ile çalışımızda, ortalama bir C++ geliştiricisinin kodu Unicode 'a dönüştürmesi için iki çalışma günü yaklaşık olarak gerçekleşmelidir. Yeniden test süresini içermiyordu.
 
-## <a name="step-12-porting-to-use-the-secure-crt"></a><a name="porting_to_secure_crt"></a>12. adım. Güvenli CRT kullanmak için taşıma
+## <a name="step-12-porting-to-use-the-secure-crt"></a><a name="porting_to_secure_crt"></a> 12. adım. Güvenli CRT kullanmak için taşıma
 
 CRT işlevlerinin güvenli sürümlerini ( **_s** son eki olan sürümler) kullanmak üzere kodun taşıma işlemi bir sonraki seçenektir. Bu durumda genel strateji, işlevi **_s** sürümüyle değiştirmek ve genellikle gerekli ek arabellek boyutu parametrelerini eklemektir. Çoğu durumda bu, boyut bilindiğinden basittir. Diğer durumlarda, boyutun hemen kullanılamadığı yerde, CRT işlevini kullanan işleve ek parametreler eklemek veya belki de hedef arabelleğin kullanımını inceleyerek uygun boyut sınırlarının ne olduğunu görmeniz gerekir.
 
@@ -634,9 +635,9 @@ Bazı yaygın durumlar: için, ' a `memcpy` geçiş yaparken `memcpy_s` , kopyal
 
 Bu teknikler sayesinde, kodun güvenli CRT işlevlerini kullanmak için bir gün boyunca dönüştürülmesi gerekir. Şablon aşırı yüklerini seçip boyut parametrelerini el ile eklemek istiyorsanız, büyük olasılıkla iki kez daha zaman alabilir.
 
-## <a name="step-13-zcforscope--is-deprecated"></a><a name="deprecated_forscope"></a>13. adım. /Zc: forScope-kullanım dışı
+## <a name="step-13-zcforscope--is-deprecated"></a><a name="deprecated_forscope"></a> 13. adım. /Zc: forScope-kullanım dışı
 
-Visual C++ 6,0 ' den itibaren, derleyici, bir döngüde belirtilen değişkenlerin kapsamını döngünün kapsamına göre sınırlayan geçerli standarda uyar. [/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği (proje özelliklerindeki**döngü kapsamı için uygunluğu zorla** ), bunun hata olarak raporlanıp raporlanmadığını denetler. Kodumuzu uyumlu olacak şekilde güncelleştirmemiz ve yalnızca döngünün dışında bildirimler ekleyeceğiz. Kod değişikliği yapmaktan kaçınmak için, C++ proje özelliklerinin **dil** bölümündeki bu ayarı değiştirebilirsiniz `No (/Zc:forScope-)` . Ancak, `/Zc:forScope-` Visual C++ gelecek bir sürümünde kaldırılabileceğini aklınızda bulundurun. bu nedenle, kodunuzun standart ile uyumlu olacak şekilde değiştirilmesi gerekir.
+Visual C++ 6,0 ' den itibaren, derleyici, bir döngüde belirtilen değişkenlerin kapsamını döngünün kapsamına göre sınırlayan geçerli standarda uyar. [/Zc: forScope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) derleyici seçeneği (proje özelliklerindeki **döngü kapsamı için uygunluğu zorla** ), bunun hata olarak raporlanıp raporlanmadığını denetler. Kodumuzu uyumlu olacak şekilde güncelleştirmemiz ve yalnızca döngünün dışında bildirimler ekleyeceğiz. Kod değişikliği yapmaktan kaçınmak için, C++ proje özelliklerinin **dil** bölümündeki bu ayarı değiştirebilirsiniz `No (/Zc:forScope-)` . Ancak, `/Zc:forScope-` Visual C++ gelecek bir sürümünde kaldırılabileceğini aklınızda bulundurun. bu nedenle, kodunuzun standart ile uyumlu olacak şekilde değiştirilmesi gerekir.
 
 Bu sorunların düzeltilmesi nispeten kolaydır, ancak kodunuza bağlı olarak çok sayıda kodu etkileyebilir. Tipik bir sorun aşağıda verilmiştir.
 

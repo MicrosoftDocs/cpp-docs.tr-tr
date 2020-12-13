@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: short_vector_traits yapısı'
 title: short_vector_traits Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::short_vector_traits
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector_traits::size Constant
 ms.assetid: cd9492da-9e02-4a6e-9d50-b61252cdb460
-ms.openlocfilehash: d743f74deaea5cb31cd609ece90891c8cfe2258f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dc211c8e66cbd31c57655afce22376909cf77530
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329894"
 ---
 # <a name="short_vector_traits-structure"></a>short_vector_traits Yapısı
 
-short_vector_traits, altta yatan vektör uzunluğunun ve kısa vektör tipinin veya skaler türünün skaler türünün alınmasını sağlar
+short_vector_traits, bir kısa vektör türünün veya skaler türün temel vektör uzunluğunun ve skaler türünün alınmasına izin verir
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -81,23 +82,23 @@ struct short_vector_traits<double_4>;
 
 ## <a name="members"></a>Üyeler
 
-### <a name="public-typedefs"></a>Genel Typedefs
+### <a name="public-typedefs"></a>Ortak tür tanımları
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[short_vector_traits::short_vector_traits Yapıcı](#ctor)||
+|[short_vector_traits:: short_vector_traits Oluşturucusu](#ctor)||
 
-### <a name="public-constants"></a>Genel Sabitler
+### <a name="public-constants"></a>Genel sabitler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[short_vector_traits::boyut Sabiti](#size)||
+|[short_vector_traits:: size sabiti](#size)||
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -105,17 +106,17 @@ struct short_vector_traits<double_4>;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** amp_short_vectors.h
+**Üst bilgi:** amp_short_vectors. h
 
-**Ad alanı:** Eşzamanlılık::grafikler
+**Ad alanı:** Eşzamanlılık:: grafik
 
-## <a name="short_vector_traitsshort_vector_traits-constructor"></a><a name="ctor"></a>short_vector_traits::short_vector_traits Yapıcı
+## <a name="short_vector_traitsshort_vector_traits-constructor"></a><a name="ctor"></a> short_vector_traits:: short_vector_traits Oluşturucusu
 
 ```cpp
 short_vector_traits();
 ```
 
-## <a name="short_vector_traitssize-constant"></a><a name="size"></a>short_vector_traits::boyut Sabiti
+## <a name="short_vector_traitssize-constant"></a><a name="size"></a> short_vector_traits:: size sabiti
 
 ```cpp
 static int const size = 1;

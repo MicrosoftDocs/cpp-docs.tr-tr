@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _lock'
 title: _lock
 ms.date: 11/04/2016
 api_name:
@@ -23,19 +24,19 @@ helpviewer_keywords:
 - lock function
 - _lock function
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
-ms.openlocfilehash: 9ab7cab2209dc2e02cacca6d540927aa39dc3965
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 9b95c8b7ad0f0ce84348f9581d9acb611373a27b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745373"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331048"
 ---
 # <a name="_lock"></a>_lock
 
-Çok iş parçacığı kilidi kazanır.
+Çoklu iş parçacığı kilidi alır.
 
 > [!IMPORTANT]
-> Bu işlev geçersizdir. Visual Studio 2015'ten itibaren CRT'de kullanılamaz.
+> Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,15 +49,15 @@ void __cdecl _lock
 #### <a name="parameters"></a>Parametreler
 
 *locknum*<br/>
-[içinde] Elde etmek için kilidin tanımlayıcısı.
+'ndaki Elde edilecek kilit tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kilit zaten elde edilmişse, bu yöntem kilidi yine de edinir ve dahili c çalışma süresi (CRT) hatasına neden olur. Yöntem bir kilit elde edemiyorsa, önemli bir hatayla çıkar `_RT_LOCK`ve hata kodunu .
+Kilit zaten alınırsa, bu yöntem kilidi yine de alır ve bir iç C çalışma zamanı (CRT) hatasına neden olur. Yöntem bir kilit elde edemez, önemli bir hatayla çıkar ve hata kodunu olarak ayarlar `_RT_LOCK` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Kaynak:** mlock.c
+**Kaynak:** MLOCK. c
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

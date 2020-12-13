@@ -1,5 +1,6 @@
 ---
-title: Belge şablonları ve belge görünümü oluşturma Işlemi
+description: 'Hakkında daha fazla bilgi edinin: belge şablonları ve belge/görünüm oluşturma Işlemi'
+title: Belge şablonları ve Document-View oluşturma Işlemi
 ms.date: 11/19/2018
 helpviewer_keywords:
 - icons, for multiple document templates
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CDocTemplate class [MFC]
 - templates [MFC], document templates
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-ms.openlocfilehash: b96a11926927e89890ca268dcff7d347079b25fb
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 324d46df1027c03e7f41564691742c5c065cf85c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330243"
 ---
 # <a name="document-templates-and-the-documentview-creation-process"></a>Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi
 
@@ -37,8 +38,8 @@ Her belge şablonu için, uygulamanın belge şablonları listesindeki konumuna 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel MFC Konuları](general-mfc-topics.md)<br/>
-[Belge Şablonu Oluşturma](document-template-creation.md)<br/>
+[Genel MFC konuları](general-mfc-topics.md)<br/>
+[Belge şablonu oluşturma](document-template-creation.md)<br/>
 [Belge/görünüm oluşturma](document-view-creation.md)<br/>
-[MFC Nesneleri Arasındaki İlişki](relationships-among-mfc-objects.md)<br/>
+[MFC nesneleri arasındaki ilişkiler](relationships-among-mfc-objects.md)<br/>
 [Yeni belgeler, pencereler ve görünümler oluşturma](creating-new-documents-windows-and-views.md)

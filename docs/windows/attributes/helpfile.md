@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: HelpFile'
 title: HelpFile (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - helpfile attribute
 ms.assetid: d75161c1-1363-4019-ae09-e7e3b8a3971e
-ms.openlocfilehash: 385c6da6a432f0954e62c9f16a22f0b70b73b317
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ff3207c39bc5f83ededb2f7f299cf798b16f0eaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331154"
 ---
 # <a name="helpfile"></a>helpfile
 
 Bir tür kitaplığı için yardım dosyasının adını ayarlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ helpfile("filename") ]
@@ -34,14 +35,14 @@ Yardım konularını içeren dosyanın adı.
 
 ## <a name="example"></a>Örnek
 
-**HelpFile**öğesinin nasıl kullanılacağına ilişkin bir örnek için [Modül](module-cpp.md) örneğine bakın.
+**HelpFile** öğesinin nasıl kullanılacağına ilişkin bir örnek için [Modül](module-cpp.md) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**arabirim**, **`typedef`** , **`class`** , yöntem, **`property`**|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

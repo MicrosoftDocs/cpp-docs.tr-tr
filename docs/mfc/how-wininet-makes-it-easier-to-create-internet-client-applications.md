@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: WinINet 'in Internet Istemci uygulamaları oluşturmayı kolaylaştırması"
 title: WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WinInet classes [MFC], vs. WinSock
 - WinInet classes [MFC], Internet client applications
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
-ms.openlocfilehash: 54f63da7451dfef39a33e6b437be938cb1652326
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: efee0b201a165fab8aaf838eedb2ba83b9a5b946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624568"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330134"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 
@@ -48,4 +49,4 @@ Bilgisayarınız tarafından Internet 'teki diğer bilgisayarlara istemci olarak
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Win32 Internet Uzantıları (Winınet)](win32-internet-extensions-wininet.md)<br/>
-[MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](how-mfc-makes-it-easier-to-create-internet-client-applications.md)
+[MFC 'nin Internet Istemci uygulamaları oluşturmayı daha kolay hale getirir](how-mfc-makes-it-easier-to-create-internet-client-applications.md)

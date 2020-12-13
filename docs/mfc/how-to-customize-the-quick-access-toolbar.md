@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: hızlı erişim araç çubuğunu özelleştirme'
 title: 'Nasıl yapılır: Hızlı Erişim Araç Çubuğunu Özelleştirme'
 ms.date: 09/07/2019
 helpviewer_keywords:
 - quick access toolbar [MFC], customization
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
-ms.openlocfilehash: 5d168fc395e27eea3705fc8e69c88569ecb0f7ee
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cb7935f9e340734f8af0e7ec9197e139c30af894
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330230"
 ---
 # <a name="how-to-customize-the-quick-access-toolbar"></a>Nasıl yapılır: Hızlı Erişim Araç Çubuğunu Özelleştirme
 

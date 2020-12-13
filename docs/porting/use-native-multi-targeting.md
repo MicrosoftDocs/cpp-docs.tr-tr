@@ -1,16 +1,17 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: eski projeler oluşturmak için Visual Studio 'da yerel çoklu sürüm kullanımını kullanın"
 title: Visual Studio’da eski projeleri oluşturmak için yerel çoklu sürüm paketi kullanma
 ms.date: 10/25/2019
 helpviewer_keywords:
 - C++ native multi-targeting
 - upgrading Visual C++ applications, retargeting
 ms.assetid: b115aabe-a9dc-4525-90d3-367d97ea20c9
-ms.openlocfilehash: 14100a70fa3bb883d257017eaf9174c5340317b4
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: d7f7ea617ac5f895a6fb9b04f89caebbb6130e43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404814"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331193"
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Visual Studio’da eski projeleri oluşturmak için yerel çoklu sürüm paketi kullanma
 
@@ -44,7 +45,7 @@ Yükseltmesiz ' ı seçerseniz, Visual Studio çözümünüzde veya proje dosyal
 
 ## <a name="instructions-for-visual-studio-2008"></a>Visual Studio 2008 için yönergeler
 
-Visual Studio 2008, **VCBuild**adlı C++ için kendi adanmış derleme sistemine sahipti. Visual Studio 2010 ' den başlayarak, Visual Studio C++ projeleri **MSBuild**'i kullanacak şekilde değiştirilmiştir. Bu, kalıcı veya çoklu hedeflemenin yükseltilmesinden bağımsız olarak Visual Studio 2008 projelerinizi Visual Studio 'nun en son sürümünde derlemek için bir güncelleştirme adımından gitmeniz gerekir. Güncelleştirilmiş projeniz, Visual Studio 2008 IDE kullanılarak oluşturulan ikililer ile tamamen uyumlu ikili dosyalar oluşturuyor.
+Visual Studio 2008, **VCBuild** adlı C++ için kendi adanmış derleme sistemine sahipti. Visual Studio 2010 ' den başlayarak, Visual Studio C++ projeleri **MSBuild**'i kullanacak şekilde değiştirilmiştir. Bu, kalıcı veya çoklu hedeflemenin yükseltilmesinden bağımsız olarak Visual Studio 2008 projelerinizi Visual Studio 'nun en son sürümünde derlemek için bir güncelleştirme adımından gitmeniz gerekir. Güncelleştirilmiş projeniz, Visual Studio 2008 IDE kullanılarak oluşturulan ikililer ile tamamen uyumlu ikili dosyalar oluşturuyor.
 
 İlk olarak, Visual Studio 'nun geçerli sürümüne ek olarak Visual Studio 2010 ' i Visual Studio 2008 ile aynı bilgisayara yüklemeniz gerekir. Visual Studio 2008 projelerini hedeflemek için gereken **MSBuild** betikleri yalnızca visual Studio 2010 tarafından yüklenir.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4754'
 title: Derleyici Uyarısı (düzey 4) C4754
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4754
 ms.assetid: e0e4606a-754a-4f42-a274-21a34978d21d
-ms.openlocfilehash: 85c99feee72d94f50ec19394cf8aec7a3c9811bc
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: b997f81a7d922837ff3f1ea2e5d015e5267428dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330522"
 ---
 # <a name="compiler-warning-level-4-c4754"></a>Derleyici Uyarısı (düzey 4) C4754
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dosya Izni sabitleri'
 title: Dosya İzin Sabitleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - _S_IWRITE constant
 - _S_IREAD constant
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
-ms.openlocfilehash: 9f6126b867e29ca37468c6ff383224a483639c78
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: a220ec404202b1f962a4c0bf51d20b7eea2720ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443281"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331082"
 ---
 # <a name="file-permission-constants"></a>Dosya İzin Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <sys/stat.h>
@@ -26,9 +27,9 @@ ms.locfileid: "79443281"
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_O_CREAT` (`_open`, `_sopen`) belirtildiğinde Bu sabitlerden biri gereklidir.
+`_O_CREAT`( `_open` ,) Belirtildiğinde Bu sabitlerden biri gereklidir `_sopen` .
 
-`pmode` bağımsız değişkeni, dosyanın izin ayarlarını aşağıda gösterildiği gibi belirtir.
+`pmode`Bağımsız değişkeni, dosyanın izin ayarlarını aşağıda gösterildiği gibi belirtir.
 
 |Sabit|Anlamı|
 |--------------|-------------|
@@ -36,7 +37,7 @@ ms.locfileid: "79443281"
 |`_S_IWRITE`|İzin verilen yazma|
 |`_S_IREAD` &#124; `_S_IWRITE`|Okuma ve yazma izni verildi|
 
-`_umask`için `pmode` bağımsız değişkeni olarak kullanıldığında, bildirim sabiti, izin ayarını aşağıdaki şekilde ayarlar.
+`pmode`İçin bağımsız değişken olarak kullanıldığında `_umask` , bildirim sabiti, izin ayarını aşağıdaki gibi ayarlar.
 
 |Sabit|Anlamı|
 |--------------|-------------|
@@ -50,4 +51,4 @@ ms.locfileid: "79443281"
 [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
 [_umask](../c-runtime-library/reference/umask.md)<br/>
 [Standart Türler](../c-runtime-library/standard-types.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

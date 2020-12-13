@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: eşzamanlılık ad alanı işlevleri'
 title: eşzamanlılık ad alanı işlevleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,12 +34,12 @@ f1_keywords:
 - ppltasks/concurrency::when_all
 - ppltasks/concurrency::when_any
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
-ms.openlocfilehash: 25cd74e20102bbc1a75e4b4efe1bf234845f7fcb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: db49a58084e8e6fbbe4e3ea1ccd9253c7743baea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840186"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331289"
 ---
 # <a name="concurrency-namespace-functions"></a>eşzamanlılık ad alanı işlevleri
 
@@ -1432,7 +1433,7 @@ Yük türünün kaynağından alınan bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parametrenin `_Timeout` sabiti dışında bir değeri varsa `COOPERATIVE_TIMEOUT_INFINITE` , bir ileti alınmadan önce belirtilen süre dolarsa, özel durum [operation_timed_out](operation-timed-out-class.md) oluşturulur. Sıfır uzunlukta bir zaman aşımı istiyorsanız, [try_receive](concurrency-namespace-functions.md) `receive` `0` daha verimli olduğu ve zaman aşımları üzerinde özel durumlar oluşturmadığından, bir zaman aşımı (sıfır) ile çağırmak yerine try_receive işlevini kullanmanız gerekir.
+Parametrenin `_Timeout` sabiti dışında bir değeri varsa `COOPERATIVE_TIMEOUT_INFINITE` , bir ileti alınmadan önce belirtilen süre dolarsa, özel durum [operation_timed_out](operation-timed-out-class.md) oluşturulur. Sıfır uzunlukta bir zaman aşımı istiyorsanız, [](concurrency-namespace-functions.md) `receive` `0` daha verimli olduğu ve zaman aşımları üzerinde özel durumlar oluşturmadığından, bir zaman aşımı (sıfır) ile çağırmak yerine try_receive işlevini kullanmanız gerekir.
 
 Daha fazla bilgi için bkz. [Ileti geçirme işlevleri](../../../parallel/concrt/message-passing-functions.md).
 
@@ -1526,7 +1527,7 @@ void __cdecl set_task_execution_resources(
 *_ProcessAffinityMask*<br/>
 Eşzamanlılık Çalışma Zamanı çalışan iş parçacıklarının kısıtlanması gereken benzeşim maskesi. Bu yöntemi, 64 ' den fazla donanım iş parçacığından yalnızca Eşzamanlılık Çalışma Zamanı, geçerli işlemci grubunun bir alt kümesiyle sınırlamak istiyorsanız kullanın. Genel olarak, 64 ' den fazla donanım iş parçacığından oluşan makinelerde benzeşimi kısıtlamak için bir parametre olarak bir grup benzeşiminin dizisini kabul eden yönteminin sürümünü kullanmanız gerekir.
 
-*count*<br/>
+*biriktirme*<br/>
 `GROUP_AFFINITY`Parametre tarafından belirtilen dizideki girdi sayısı `_PGroupAffinity` .
 
 *_PGroupAffinity*<br/>

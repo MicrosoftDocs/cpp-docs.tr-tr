@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: combinable Class'
 title: combinable Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ f1_keywords:
 helpviewer_keywords:
 - combinable class
 ms.assetid: fe0bfbf6-6250-47da-b8d0-f75369f0b5be
-ms.openlocfilehash: d445b8ac1d2a8487e9e1ec4f21f63cf5ef071e91
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 117441be8ff7a54543adb419a1cb908d2eb9bec7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224974"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331331"
 ---
 # <a name="combinable-class"></a>combinable Sınıfı
 
 `combinable<T>`Nesne, paralel algoritmalar sırasında kilit içermeyen iş parçacığı yerel alt hesaplamaları gerçekleştirmek için, verilerin iş parçacığına özel kopyalarını sağlamak üzere tasarlanmıştır. Paralel işlemin sonunda, iş parçacığı özel alt hesaplamaları daha sonra nihai bir sonuçla birleştirilebilir. Bu sınıf, paylaşılan bir değişken yerine kullanılabilir ve bu paylaşılan değişkende çok fazla çekişme olmaması durumunda performans iyileştirmesine neden olabilir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename T>
@@ -73,7 +74,7 @@ Daha fazla bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../../parall
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="clear"></a><a name="clear"></a>lediğiniz
+## <a name="clear"></a><a name="clear"></a> lediğiniz
 
 Önceki kullanımlardan tüm ara hesaplama sonuçlarını temizler.
 
@@ -81,7 +82,7 @@ Daha fazla bilgi için bkz. [paralel kapsayıcılar ve nesneler](../../../parall
 void clear();
 ```
 
-## <a name="combinable"></a><a name="ctor"></a>combinable
+## <a name="combinable"></a><a name="ctor"></a> combinable
 
 Yeni bir `combinable` nesne oluşturur.
 
@@ -113,7 +114,7 @@ Var olan bir `combinable` nesne buna kopyalanacak.
 
 Üçüncü Oluşturucu kopya oluşturucudur.
 
-## <a name="combinable"></a><a name="dtor"></a>~ combinable
+## <a name="combinable"></a><a name="dtor"></a> ~ combinable
 
 Bir nesneyi yok eder `combinable` .
 
@@ -121,7 +122,7 @@ Bir nesneyi yok eder `combinable` .
 ~combinable();
 ```
 
-## <a name="combine"></a><a name="combine"></a>bile
+## <a name="combine"></a><a name="combine"></a> bile
 
 Sağlanan birleştirme functor 'u çağırarak iş parçacığı yerel alt hesaplamaları kümesinden son bir değer hesaplar.
 
@@ -142,7 +143,7 @@ Alt hesaplamaları birleştirmek için kullanılan functor. İmzası veya olur `
 
 Tüm iş parçacığı-özel alt hesaplamaları birleştirmenin nihai sonucu.
 
-## <a name="combine_each"></a><a name="combine_each"></a>combine_each
+## <a name="combine_each"></a><a name="combine_each"></a> combine_each
 
 İş parçacığı yerel alt hesaplamaları kümesinden bir son değeri, iş parçacığı yerel alt hesaplama başına sağlanan birleştirme functor 'u çağırarak hesaplar. Nihai sonuç, Function nesnesi tarafından biriktirilir.
 
@@ -159,7 +160,7 @@ Tek iş parçacığı yerel alt hesaplamayı birleştirmek için çağrılacak i
 *_FnCombine*<br/>
 Bir alt hesaplamayı birleştirmek için kullanılan functor. İmzası veya olur `void (T)` `void (const T&)` ve ilişkilendirilebilir ve iletişim olmalıdır.
 
-## <a name="local"></a><a name="local"></a>Yerel
+## <a name="local"></a><a name="local"></a> Yerel
 
 Thread-Private alt hesaplama için bir başvuru döndürür.
 
@@ -178,7 +179,7 @@ Boole başvurusu. Bu bağımsız değişken tarafından başvurulan Boolean değ
 
 İş parçacığı özel alt hesaplama başvurusu.
 
-## <a name="operator"></a><a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 `combinable`Başka bir nesneden bir nesneye atar `combinable` .
 

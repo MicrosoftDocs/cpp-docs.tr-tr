@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: invalid_compute_domain sınıfı'
 title: invalid_compute_domain Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_compute_domain class
 ms.assetid: ac7a7166-8bdb-4db1-8caf-ea129ab5117e
-ms.openlocfilehash: 09418991e805e494c1d79ef31980bbec66a2e172
-ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
+ms.openlocfilehash: 7598180a12cacabcdb308c3924c84eb17ec90ed7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92135573"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329996"
 ---
 # <a name="invalid_compute_domain-class"></a>invalid_compute_domain Sınıfı
 

@@ -1,18 +1,19 @@
 ---
-title: Açık geçersiz kılmalarC++(/CLI C++ve/CX)
+description: 'Daha fazla bilgi edinin: açık geçersiz kılmalar (C++/CLı ve C++/CX)'
+title: Açık Geçersiz Kılmalar (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - overriding, override [C++]
 ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
-ms.openlocfilehash: c199301794daaa140ede2fd99b0ae755cea70f97
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a24460f8135ff5379f14533dbaff83bde8918e4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330343"
 ---
-# <a name="explicit-overrides--ccli-and-ccx"></a>Açık geçersiz kılmalarC++(/CLI C++ve/CX)
+# <a name="explicit-overrides--ccli-and-ccx"></a>Açık Geçersiz Kılmalar (C++/CLI ve C++/CX)
 
 Bu konu, bir temel sınıfın veya arabirimin bir üyesini açıkça geçersiz kılmayı açıklar. Adlandırılmış (açık) geçersiz kılma yalnızca, farklı bir ada sahip türetilmiş bir yöntemle bir yöntemi geçersiz kılmak için kullanılmalıdır.
 
@@ -30,7 +31,7 @@ overriding-function-declarator = function { overriding-function-definition }
 *geçersiz kılma işlevi-bildirimci*<br/>
 Geçersiz kılma işlevinin dönüş türü, adı ve bağımsız değişken listesi.  Geçersiz kılma işlevinin, geçersiz kılınan işlevle aynı ada sahip olması gerekmediğini unutmayın.
 
-*type*<br/>
+*türüyle*<br/>
 Geçersiz kılınacak bir işlev içeren temel tür.
 
 *çalışmayacaktır*<br/>
@@ -55,7 +56,7 @@ Derleyici seçeneği: `/ZW`
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerel koddaki veya `/clr:oldSyntax`Derlenmiş koddaki açık geçersiz kılmalar hakkında daha fazla bilgi için bkz. [Açık geçersiz kılmalar](../cpp/explicit-overrides-cpp.md).
+Yerel koddaki veya ile derlenen kodda açık geçersiz kılmalar hakkında daha fazla bilgi için `/clr:oldSyntax` bkz. [Açık geçersiz kılmalar](../cpp/explicit-overrides-cpp.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -174,4 +175,4 @@ public:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

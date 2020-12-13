@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbctombb _mbctombb_l'
 title: _mbctombb, _mbctombb_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - mbctombb function
 - _mbctombb_l function
 ms.assetid: d90970b8-71ff-4586-b6a2-f9ceb811f776
-ms.openlocfilehash: d5fcae2a0e403d75383e2998b1ea127dd6f2ef89
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 326ef50ae447594b347086bbbee9493cfe37e546
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914278"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330993"
 ---
 # <a name="_mbctombb-_mbctombb_l"></a>_mbctombb, _mbctombb_l
 
@@ -70,7 +71,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa **_mbctombb** ve **_mbctombb_l** , *c*'ye karşılık gelen tek baytlık karakteri döndürür. Aksi takdirde, *c*döndürür.
+Başarılı olursa **_mbctombb** ve **_mbctombb_l** , *c*'ye karşılık gelen tek baytlık karakteri döndürür. Aksi takdirde, *c* döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -78,7 +79,7 @@ Başarılı olursa **_mbctombb** ve **_mbctombb_l** , *c*'ye karşılık gelen t
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . Bu işlevin **_l** soneki olmadan sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürüm, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-Önceki sürümlerde **_mbctombb** **zentohan**olarak adlandırılmıştı. Bunun yerine **_mbctombb** kullanın.
+Önceki sürümlerde **_mbctombb** **zentohan** olarak adlandırılmıştı. Bunun yerine **_mbctombb** kullanın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -86,8 +87,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbctombb**|\<mbstring. h>|
-|**_mbctombb_l**|\<mbstring. h>|
+|**_mbctombb**|\<mbstring.h>|
+|**_mbctombb_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

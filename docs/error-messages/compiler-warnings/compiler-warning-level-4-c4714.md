@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4714'
 title: Derleyici Uyarısı (düzey 4) C4714
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4714
 ms.assetid: 22c7fd0c-899d-4e9b-95f3-725b2c49fb46
-ms.openlocfilehash: 286a9e6e12643d3dadd070e7c4cf4b2dd350c02c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: aca186ba6d81c0d769837e26023538e7e980fbc6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330572"
 ---
 # <a name="compiler-warning-level-4-c4714"></a>Derleyici Uyarısı (düzey 4) C4714
 

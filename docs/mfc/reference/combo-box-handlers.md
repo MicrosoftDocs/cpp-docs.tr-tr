@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Birleşik giriş kutusu Işleyicileri'
 title: Birleşik Giriş Kutusu İşleyicileri
 ms.date: 11/04/2016
 f1_keywords:
@@ -27,31 +28,31 @@ helpviewer_keywords:
 - ON_CBN_SELENDOK
 - ON_CBN_SELCHANGE
 ms.assetid: 7f092412-01b7-4242-95ec-41ba506b9d71
-ms.openlocfilehash: ed83bcf565ec420d159c73ddfd82827aac88693f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5d15e1db53d48c597ab0f47577746bfbc6790ad3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62373264"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331372"
 ---
 # <a name="combo-box-handlers"></a>Birleşik Giriş Kutusu İşleyicileri
 
-Aşağıdaki eşleme girişleri için işlev prototipleri karşılık gelir.
+Aşağıdaki eşleme girdileri işlev prototiptürlerine karşılık gelir.
 
 |Eşleme girişi|İşlev prototipi|
 |---------------|------------------------|
-|ON_CBN_CLOSEUP ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn (.)|
-|ON_CBN_DBLCLK( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
-|ON_CBN_DROPDOWN( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
-|ON_CBN_EDITCHANGE ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
-|ON_CBN_EDITUPDATE ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
-|ON_CBN_ERRSPACE ( \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
-|ON_CBN_KILLFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
-|ON_CBN_SELCHANGE( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
-|ON_CBN_SELENDCANCEL( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
-|ON_CBN_SELENDOK( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
-|ON_CBN_SETFOCUS( \<id>, \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_CLOSEUP ( \<id> , \<memberFxn> )|afx_msg void memberFxn ()|
+|ON_CBN_DBLCLK ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_DROPDOWN ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_EDITCHANGE ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_EDITUPDATE ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_ERRSPACE ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_KILLFOCUS ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_SELCHANGE ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_SELENDCANCEL ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_SELENDOK ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
+|ON_CBN_SETFOCUS ( \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)
+[İleti haritaları](../../mfc/reference/message-maps-mfc.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: RuntimeClass Sınıfı'
 title: RuntimeClass Sınıfı
 ms.date: 09/11/2018
 ms.topic: reference
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - Microsoft::WRL::RuntimeClass::RuntimeClass, constructor
 - Microsoft::WRL::RuntimeClass::~RuntimeClass, destructor
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
-ms.openlocfilehash: 64b4124ba3c60fdcb53fc29c7b791c0f73a49579
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f62eec0b5ac9b8fc8ecac390ea07077743fdcb51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376232"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330758"
 ---
 # <a name="runtimeclass-class"></a>RuntimeClass Sınıfı
 
-Belirtilen arabirimleri devralan ve belirtilen Windows Runtime, klasik COM ve zayıf başvuru desteği sağlayan bir WinRT veya COM sınıfını temsil eder.
+Belirtilen arabirimleri devralan bir WinRT veya COM sınıfını temsil eder ve belirtilen Windows Çalışma Zamanı, klasik COM ve zayıf başvuru desteğini sağlar.
 
-Bu sınıf WinRT ve COM sınıflarının ortak uygulamasını sağlar, `AddRef` `Release` modülün `QueryInterface`referans sayısını yönetir ve etkinleştirilebilir nesneler için sınıf fabrikası sağlamak için destek sağlar.
+Bu sınıf,,, vb. uygulamasını sağlayan WinRT ve com sınıflarının ortak bir uygulamasını `QueryInterface` sağlar `AddRef` `Release` ve modülün başvuru sayısını yönetir ve etkinleştirilebilir nesneleri için sınıf fabrikası sağlama desteğine sahiptir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -52,58 +53,58 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 ### <a name="parameters"></a>Parametreler
 
 *classFlags*<br/>
-İsteğe bağlı parametre. Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırma değerlerinin birleşimi. Makro, `__WRL_CONFIGURATION_LEGACY__` projedeki tüm çalışma zamanı sınıfları için classFlags'in varsayılan değerini değiştirmek için tanımlanabilir. Tanımlanmışsa, RuntimeClass örnekleri varsayılan olarak çevik değildir. Tanımlanmadığında, RuntimeClass örnekleri varsayılan olarak çeviktir. Belirsizlikten kaçınmak için her `Microsoft::WRL::FtmBase` `TInterfaces` zaman `RuntimeClassType::InhibitFtmBase`in veya . Unutmayın, InhibitFtmBase ve FtmBase her ikisi de kullanılırsa nesne çevik olacaktır.
+İsteğe bağlı parametre. Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) numaralandırma değerinin birleşimi. `__WRL_CONFIGURATION_LEGACY__`Makro, projedeki tüm çalışma zamanı sınıfları Için classFlags varsayılan değerini değiştirmek üzere tanımlanabilir. Tanımlanmışsa, RuntimeClass örnekleri varsayılan olarak çevik değildir. Tanımlanmadığında, RuntimeClass örnekleri varsayılan olarak çevik olarak işlenir. Belirsizlik olmaması için, veya ' de öğesini her zaman belirtin `Microsoft::WRL::FtmBase` `TInterfaces` `RuntimeClassType::InhibitFtmBase` . Bunun her ikisi de varsa, ' nin ve FtmBase 'in her ikisi de kullanılıyorsa, bu nesnenin çevik olacağını aklınızda görürsünüz.
 
-*TInterfaces*<br/>
-Nesnenin ötesinde `IUnknown`uyguladığı arabirimler `IInspectable` veya [RuntimeClassType](runtimeclasstype-enumeration.md)tarafından denetlenen diğer arabirimler listesi. Ayrıca, özellikle `Microsoft::WRL::FtmBase` nesneyi çevik yapmak ve uygulanmasına `IMarshal`neden olmak için türetilecek diğer sınıfları listeleyebilir.
+*Tınterfaces*<br/>
+Nesnenin ötesinde uyguladığı arabirimlerin listesi `IUnknown` `IInspectable` veya [RuntimeClassType](runtimeclasstype-enumeration.md)tarafından denetlenen diğer arabirimler. Ayrıca, özellikle de `Microsoft::WRL::FtmBase` nesneyi çevik hale getirmek ve uygulamaya yol açmak için türetilmiş diğer sınıfları listeleyebilir `IMarshal` .
 
 ## <a name="members"></a>Üyeler
 
 `RuntimeClassInitialize`<br/>
-`MakeAndInitialize` Şablon işlevi nesneyi oluşturmak için kullanılırsa nesneyi başharfleyen bir işlev. Nesne başarıyla başharfe S_OK veya başlatma başarısız olduysa bir COM hata kodu döndürür. COM hata kodu, `MakeAndInitialize`'nin döndürme değeri olarak yayılır. Şablon işlevi `RuntimeClassInitialize` nesneyi oluşturmak için kullanılıyorsa yöntemin çağrılmadığını unutmayın. `Make`
+`MakeAndInitialize`Nesneyi oluşturmak için şablon işlevi kullanılıyorsa nesneyi Başlatan bir işlev. Nesne başarıyla başlatılmışsa S_OK veya başlatma başarısız olursa bir COM hata kodu döndürür. COM hata kodu, dönüş değeri olarak dağıtılır `MakeAndInitialize` . `RuntimeClassInitialize` `Make` Nesne oluşturmak için şablon işlevi kullanılıyorsa yönteminin çağrılmadığını unutmayın.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-| Adı                                               | Açıklama                                                     |
+| Ad                                               | Açıklama                                                     |
 | -------------------------------------------------- | --------------------------------------------------------------- |
-| [RuntimeClass::RuntimeClass](#runtimeclass)        | Sınıfın geçerli örneğini `RuntimeClass` başolarak karşılar.   |
-| [RuntimeClass::~RuntimeClass](#tilde-runtimeclass) | Sınıfın geçerli örneğini `RuntimeClass` deinitialize eder. |
+| [RuntimeClass:: RuntimeClass](#runtimeclass)        | Sınıfın geçerli örneğini başlatır `RuntimeClass` .   |
+| [RuntimeClass:: ~ RuntimeClass](#tilde-runtimeclass) | Sınıfın geçerli örneğini kaldırır `RuntimeClass` . |
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-| Adı                                                      | Açıklama                                                                                        |
+| Ad                                                      | Açıklama                                                                                        |
 | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [RuntimeClass::AddRef](#addref)                           | Geçerli `RuntimeClass` nesne için başvuru sayısını artırımı.                              |
-| [RuntimeClass::DecrementReference](#decrementreference)   | Geçerli `RuntimeClass` nesne için başvuru sayısını eriter.                              |
-| [RuntimeClass::GetIids](#getiids)                         | Geçerli `RuntimeClass` nesne tarafından uygulanan arabirim dislerini içerebilen bir dizi alır. |
-| [RuntimeClass::GetRuntimeClassName](#getruntimeclassname) | Geçerli `RuntimeClass` nesnenin çalışma zamanı sınıf adını alır.                                  |
-| [RuntimeClass::GetTrustLevel](#gettrustlevel)             | Geçerli `RuntimeClass` nesnenin güven düzeyini alır.                                         |
-| [RuntimeClass::GetWeakReference](#getweakreference)       | Geçerli `RuntimeClass` nesne için zayıf başvuru nesnesine bir işaretçi alır.                 |
-| [RuntimeClass::InternalAddRef](#internaladdref)           | Geçerli `RuntimeClass` nesneye başvuru sayısını artırımı.                               |
-| [RuntimeClass::QueryInterface](#queryinterface)           | Belirtilen arabirim kimliği için bir işaretçi alır.                                                 |
-| [RuntimeClass::Sürüm](#release)                         | Geçerli `RuntimeClass` nesne üzerinde bir COM Release işlemi gerçekleştirir.                             |
+| [RuntimeClass:: AddRef](#addref)                           | Geçerli nesne için başvuru sayısını artırır `RuntimeClass` .                              |
+| [RuntimeClass::D ecrementReference](#decrementreference)   | Geçerli nesne için başvuru sayısını azaltır `RuntimeClass` .                              |
+| [RuntimeClass:: Getııds](#getiids)                         | Geçerli nesne tarafından uygulanan arabirim kimliklerini içerebilen bir dizi alır `RuntimeClass` . |
+| [RuntimeClass:: GetRuntimeClassName](#getruntimeclassname) | Geçerli nesnenin çalışma zamanı sınıf adını alır `RuntimeClass` .                                  |
+| [RuntimeClass:: GetTrustLevel](#gettrustlevel)             | Geçerli nesnenin güven düzeyini alır `RuntimeClass` .                                         |
+| [RuntimeClass:: GetWeakReference](#getweakreference)       | Geçerli nesne için zayıf başvuru nesnesine bir işaretçi alır `RuntimeClass` .                 |
+| [RuntimeClass:: InternalAddRef](#internaladdref)           | Başvuru sayısını geçerli `RuntimeClass` nesneye yükseltir.                               |
+| [RuntimeClass:: QueryInterface](#queryinterface)           | Belirtilen arabirim KIMLIĞINE bir işaretçi alır.                                                 |
+| [RuntimeClass:: Release](#release)                         | Geçerli nesne üzerinde bir COM serbest bırakma işlemi gerçekleştirir `RuntimeClass` .                             |
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-Bu bir uygulama ayrıntısI.
+Bu bir uygulama ayrıntısıyla belirlenir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** implements.h
+**Üst bilgi:** uygular. h
 
-**Ad alanı:** Microsoft::WRL
+**Ad alanı:** Microsoft:: WRL
 
-## <a name="runtimeclassruntimeclass"></a><a name="tilde-runtimeclass"></a>RuntimeClass::~RuntimeClass
+## <a name="runtimeclassruntimeclass"></a><a name="tilde-runtimeclass"></a> RuntimeClass:: ~ RuntimeClass
 
-Sınıfın geçerli örneğini `RuntimeClass` deinitialize eder.
+Sınıfın geçerli örneğini kaldırır `RuntimeClass` .
 
 ```cpp
 virtual ~RuntimeClass();
 ```
 
-## <a name="runtimeclassaddref"></a><a name="addref"></a>RuntimeClass::AddRef
+## <a name="runtimeclassaddref"></a><a name="addref"></a> RuntimeClass:: AddRef
 
-Geçerli `RuntimeClass` nesne için başvuru sayısını artırımı.
+Geçerli nesne için başvuru sayısını artırır `RuntimeClass` .
 
 ```cpp
 STDMETHOD_(
@@ -114,11 +115,11 @@ STDMETHOD_(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="runtimeclassdecrementreference"></a><a name="decrementreference"></a>RuntimeClass::DecrementReference
+## <a name="runtimeclassdecrementreference"></a><a name="decrementreference"></a> RuntimeClass::D ecrementReference
 
-Geçerli `RuntimeClass` nesne için başvuru sayısını eriter.
+Geçerli nesne için başvuru sayısını azaltır `RuntimeClass` .
 
 ```cpp
 ULONG DecrementReference();
@@ -126,11 +127,11 @@ ULONG DecrementReference();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="runtimeclassgetiids"></a><a name="getiids"></a>RuntimeClass::GetIids
+## <a name="runtimeclassgetiids"></a><a name="getiids"></a> RuntimeClass:: Getııds
 
-Geçerli `RuntimeClass` nesne tarafından uygulanan arabirim dislerini içerebilen bir dizi alır.
+Geçerli nesne tarafından uygulanan arabirim kimliklerini içerebilen bir dizi alır `RuntimeClass` .
 
 ```cpp
 STDMETHOD(
@@ -142,19 +143,19 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*iidSay*<br/>
-Bu işlem tamamlandığında, dizi *iids*elemanlarının toplam sayısı.
+*IidCount*<br/>
+Bu işlem tamamlandığında, dizi *IIDS* içindeki toplam öğe sayısı.
 
-*iids*<br/>
-Bu işlem tamamlandığında, arabirim iLikleri dizisiiçin bir işaretçi.
+*IID*<br/>
+Bu işlem tamamlandığında, bir arabirim kimliği dizisine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, E_OUTOFMEMORY.
+Başarılı olursa S_OK; Aksi takdirde, E_OUTOFMEMORY.
 
-## <a name="runtimeclassgetruntimeclassname"></a><a name="getruntimeclassname"></a>RuntimeClass::GetRuntimeClassName
+## <a name="runtimeclassgetruntimeclassname"></a><a name="getruntimeclassname"></a> RuntimeClass:: GetRuntimeClassName
 
-Geçerli `RuntimeClass` nesnenin çalışma zamanı sınıf adını alır.
+Geçerli nesnenin çalışma zamanı sınıf adını alır `RuntimeClass` .
 
 ```cpp
 STDMETHOD( GetRuntimeClassName )(
@@ -169,15 +170,15 @@ Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tanımlanmamışsa `__WRL_STRICT__` veya `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` tanımlanmamışsa bir ileri savunma hatası yayımlanır.
+Bir onaylama hatası, `__WRL_STRICT__` veya tanımlanmamışsa yayılır `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` .
 
-## <a name="runtimeclassgettrustlevel"></a><a name="gettrustlevel"></a>RuntimeClass::GetTrustLevel
+## <a name="runtimeclassgettrustlevel"></a><a name="gettrustlevel"></a> RuntimeClass:: GetTrustLevel
 
-Geçerli `RuntimeClass` nesnenin güven düzeyini alır.
+Geçerli nesnenin güven düzeyini alır `RuntimeClass` .
 
 ```cpp
 STDMETHOD(GetTrustLevel)(
@@ -187,8 +188,8 @@ STDMETHOD(GetTrustLevel)(
 
 ### <a name="parameters"></a>Parametreler
 
-*güvenLvl*<br/>
-Bu işlem tamamlandığında, geçerli `RuntimeClass` nesnenin güven düzeyi.
+*trustLvl*<br/>
+Bu işlem tamamlandığında, geçerli nesnenin güven düzeyi `RuntimeClass` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -196,11 +197,11 @@ Her zaman S_OK.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tanımlanmamışsa `__WRL_STRICT__` veya `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` tanımlanmamışsa bir ileri savunma hatası yayımlanır.
+Bir onaylama hatası, `__WRL_STRICT__` veya tanımlanmamışsa yayılır `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` .
 
-## <a name="runtimeclassgetweakreference"></a><a name="getweakreference"></a>RuntimeClass::GetWeakReference
+## <a name="runtimeclassgetweakreference"></a><a name="getweakreference"></a> RuntimeClass:: GetWeakReference
 
-Geçerli `RuntimeClass` nesne için zayıf başvuru nesnesine bir işaretçi alır.
+Geçerli nesne için zayıf başvuru nesnesine bir işaretçi alır `RuntimeClass` .
 
 ```cpp
 STDMETHOD(
@@ -210,16 +211,16 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*Weakreference*<br/>
-Bu işlem tamamlandığında, zayıf bir başvuru nesnesine işaretçi.
+*weakReference*<br/>
+Bu işlem tamamlandığında, zayıf başvuru nesnesine yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 Her zaman S_OK.
 
-## <a name="runtimeclassinternaladdref"></a><a name="internaladdref"></a>RuntimeClass::InternalAddRef
+## <a name="runtimeclassinternaladdref"></a><a name="internaladdref"></a> RuntimeClass:: InternalAddRef
 
-Geçerli `RuntimeClass` nesneye başvuru sayısını artırımı.
+Başvuru sayısını geçerli `RuntimeClass` nesneye yükseltir.
 
 ```cpp
 ULONG InternalAddRef();
@@ -227,11 +228,11 @@ ULONG InternalAddRef();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Ortaya çıkan başvuru sayısı.
+Elde edilen başvuru sayısı.
 
-## <a name="runtimeclassqueryinterface"></a><a name="queryinterface"></a>RuntimeClass::QueryInterface
+## <a name="runtimeclassqueryinterface"></a><a name="queryinterface"></a> RuntimeClass:: QueryInterface
 
-Belirtilen arabirim kimliği için bir işaretçi alır.
+Belirtilen arabirim KIMLIĞINE bir işaretçi alır.
 
 ```cpp
 STDMETHOD(
@@ -243,19 +244,19 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Parametreler
 
-*Riid*<br/>
-Arayüz kimliği.
+*riıd*<br/>
+Arabirim KIMLIĞI.
 
-*ppvNesne*<br/>
-Bu opereation tamamlandığında, *riid* parametresi tarafından belirtilen arabirime bir işaretçi.
+*ppvObject*<br/>
+Bu işlem tamamlandığında, *riıd* parametresi tarafından belirtilen arabirime yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
-## <a name="runtimeclassrelease"></a><a name="release"></a>RuntimeClass::Sürüm
+## <a name="runtimeclassrelease"></a><a name="release"></a> RuntimeClass:: Release
 
-Geçerli `RuntimeClass` nesne üzerinde bir COM Release işlemi gerçekleştirir.
+Geçerli nesne üzerinde bir COM serbest bırakma işlemi gerçekleştirir `RuntimeClass` .
 
 ```cpp
 STDMETHOD_(
@@ -266,15 +267,15 @@ STDMETHOD_(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde, hatayı gösteren bir HRESULT.
+Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Başvuru sayısı sıfır olursa, `RuntimeClass` nesne silinir.
 
-## <a name="runtimeclassruntimeclass"></a><a name="runtimeclass"></a>RuntimeClass::RuntimeClass
+## <a name="runtimeclassruntimeclass"></a><a name="runtimeclass"></a> RuntimeClass:: RuntimeClass
 
-Sınıfın geçerli örneğini `RuntimeClass` başolarak karşılar.
+Sınıfın geçerli örneğini başlatır `RuntimeClass` .
 
 ```cpp
 RuntimeClass();

@@ -1,19 +1,20 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Evrensel Windows Platformu taşıma (C++)'
 title: Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 ms.date: 10/23/2019
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-ms.openlocfilehash: 7663fbac62687562f09a3a1ed66b8c09b75c51fd
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e5bc8dfdfb44fa59e860a571b119914309e5a660
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80167647"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331220"
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 
-Bu konuda, var olan C++ kodun Windows 10 uygulama platformunda bağlantı noktası oluşturma hakkında bilgi edinebilirsiniz Evrensel Windows platformu. *Evrensel* terimi, kodunuzun Windows 10 çalıştıran cihazlarda çalıştırılabileceği anlamına gelir. Windows 10 çalıştıran tüm cihazlarda iyi çalışan tek bir proje ve tek bir XAML temel kullanıcı arabirimi oluşturursunuz. Uygulamanın kullanıcı arabiriminin farklı görüntü boyutlarına uyum sağlamasına izin vermek için XAML 'deki dinamik düzen özelliklerini kullanabilirsiniz.
+Bu konu başlığında, var olan C++ kodunun Windows 10 uygulama platformunda bağlantı noktası oluşturma hakkında bilgi edinebilirsiniz Evrensel Windows Platformu. *Evrensel* terimi, kodunuzun Windows 10 çalıştıran cihazlarda çalıştırılabileceği anlamına gelir. Windows 10 çalıştıran tüm cihazlarda iyi çalışan tek bir proje ve tek bir XAML temel kullanıcı arabirimi oluşturursunuz. Uygulamanın kullanıcı arabiriminin farklı görüntü boyutlarına uyum sağlamasına izin vermek için XAML 'deki dinamik düzen özelliklerini kullanabilirsiniz.
 
-Windows Geliştirme Merkezi belgeleri, Evrensel Windows Platformu Windows 8.1 uygulamaları taşıma kılavuzunu içerir. Bkz. [Windows çalışma zamanı 8 ' den UWP 'e taşıma](/windows/uwp/porting/w8x-to-uwp-root). Kılavuz genellikle C# koda odaklansa da, kılavuzun çoğu için C++geçerlidir. Aşağıdaki yordamlar daha ayrıntılı bilgiler içerir. Ayrıca bkz. [bir masaüstü UYGULAMASıNDAN UWP 'ye geçme](/windows/uwp/porting/desktop-to-uwp-migrate).
+Windows Geliştirme Merkezi belgeleri, Evrensel Windows Platformu Windows 8.1 uygulamaları taşıma kılavuzunu içerir. Bkz. [Windows çalışma zamanı 8 ' den UWP 'e taşıma](/windows/uwp/porting/w8x-to-uwp-root). Kılavuz genellikle C# koduna odaklansa da, çoğu kılavuzun C++ için geçerli olması gerekir. Aşağıdaki yordamlar daha ayrıntılı bilgiler içerir. Ayrıca bkz. [bir masaüstü UYGULAMASıNDAN UWP 'ye geçme](/windows/uwp/porting/desktop-to-uwp-migrate).
 
 Bu konu, kodu UWP 'ye taşıma için aşağıdaki yordamları içerir.
 
@@ -21,9 +22,9 @@ Bu konu, kodu UWP 'ye taşıma için aşağıdaki yordamları içerir.
 
 - [Windows 8.1 çalışma zamanı bileşenini UWP 'e taşıma](#BK_81Component)
 
-Klasik bir Masaüstü Win32 DLL 'SI varsa ve bunu bir UWP uygulamasından çağırmak istiyorsanız, bunu da yapabilirsiniz. Bu tür yordamları kullanarak, mevcut bir klasik Windows Masaüstü C++ uygulaması veya platformlar arası standart C++ kodunuz için UWP Kullanıcı arabirimi katmanı oluşturabilirsiniz. Bkz. [nasıl yapılır: mevcut C++ kodu bir Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
+Klasik bir Masaüstü Win32 DLL 'SI varsa ve bunu bir UWP uygulamasından çağırmak istiyorsanız, bunu da yapabilirsiniz. Bu tür yordamları kullanarak, var olan bir klasik Windows Masaüstü C++ uygulaması veya platformlar arası standart C++ kodunuz için UWP Kullanıcı arabirimi katmanı oluşturabilirsiniz. Bkz. [nasıl yapılır: mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).
 
-## <a name="porting-a-windows-81-store-app-to-the-uwp"></a><a name="BK_81StoreApp"></a>Windows 8.1 Mağazası uygulamasını UWP 'e taşıma
+## <a name="porting-a-windows-81-store-app-to-the-uwp"></a><a name="BK_81StoreApp"></a> Windows 8.1 Mağazası uygulamasını UWP 'e taşıma
 
 Bir Windows 8.1 mağazası uygulamanız varsa, bu yordamı kullanarak UWP üzerinde ve Windows 10 çalıştıran herhangi bir cihazda çalışır hale getirebilirsiniz.  İlk olarak, derleyici ve kitaplıklardaki değişikliklerden kaynaklanan sorunları ortadan kaldırmak için Visual Studio 2019 ile projeyi bir Windows 8.1 projesi olarak derlemek iyi bir fikirdir. Bunu yaptıktan sonra, bunu bir Windows 10 UWP projesine dönüştürmenin iki yolu vardır. En kolay yol (aşağıdaki yordamda açıklandığı gibi), bir Evrensel Windows projesi oluşturmak ve var olan kodunuzu buna kopyalamak için kullanılır. Windows 8.1 Masaüstü ve Windows 8.1 telefon için evrensel bir proje kullanıyorsanız, projeniz XAML 'de iki farklı düzen ile başlar, ancak görüntüleme boyutuna göre ayarlayan tek bir dinamik düzen ile biter.
 
@@ -31,11 +32,11 @@ Bir Windows 8.1 mağazası uygulamanız varsa, bu yordamı kullanarak UWP üzeri
 
 1. Daha önce yapmadıysanız, Visual Studio 2017 ' de Windows 8.1 uygulama projenizi açın ve proje dosyasını yükseltmek için yönergeleri izleyin.
 
-   **Visual Studio kurulumunda Windows 8.1 araçları** 'nı yüklemeniz gerekir. Bu araçlar yüklü değilse, **Visual Studio** kurulumunu **Programlar ve Özellikler** penceresinden başlatın, **Visual Studio 2017**' i seçin ve kurulum penceresinde **Değiştir**' i seçin. **Windows 8.1 araçlarını**bulun, seçili olduğundan emin olun ve **Tamam**' ı seçin.
+   **Visual Studio kurulumunda Windows 8.1 araçları** 'nı yüklemeniz gerekir. Bu araçlar yüklü değilse, **Visual Studio** kurulumunu **Programlar ve Özellikler** penceresinden başlatın, **Visual Studio 2017**' i seçin ve kurulum penceresinde **Değiştir**' i seçin. **Windows 8.1 araçlarını** bulun, seçili olduğundan emin olun ve **Tamam**' ı seçin.
 
-1. **Proje özellikleri** penceresini açın ve **genel** > altında **C++** , **platform araç takımını** , Visual Studio 2017 için araç takımını **v141**olarak ayarlayın.
+1. **Proje özellikleri** penceresini açın ve **C++**  >  **genel** altında, **platform araç takımını** , Visual Studio 2017 için araç takımını **v141** olarak ayarlayın.
 
-1. Projeyi bir Windows 8.1 projesi olarak derleyin ve derleme hatalarını çözün. Bu aşamada oluşan tüm hatalar, büyük olasılıkla derleme araçlarındaki ve kitaplıklardaki önemli değişikliklerden kaynaklanır. Kodunuzu etkileyebilecek değişikliklerin ayrıntılı bir açıklaması için bkz. [görsel C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md) .
+1. Projeyi bir Windows 8.1 projesi olarak derleyin ve derleme hatalarını çözün. Bu aşamada oluşan tüm hatalar, büyük olasılıkla derleme araçlarındaki ve kitaplıklardaki önemli değişikliklerden kaynaklanır. Kodunuzu etkileyebilecek değişikliklerin ayrıntılı bir açıklaması için bkz. [Visual C++ değişiklik geçmişi 2003-2015](../porting/visual-cpp-change-history-2003-2015.md) .
 
    Projeniz düzgün bir şekilde oluşturulduktan sonra, Evrensel Windows (Windows 10) için bağlantı noktası oluşturmaya hazırlanın.
 
@@ -43,13 +44,13 @@ Bir Windows 8.1 mağazası uygulamanız varsa, bu yordamı kullanarak UWP üzeri
 
 1. Çözümü kapatın ve sonra **Windows Gezgini** 'ni veya komut satırını kullanarak, 1. adımda oluşturduğunuz projenin proje dosyası (. vcxproj) ile aynı klasöre kod dosyalarını (Extensions. cpp,. h ve. xaml Windows 8.1) kopyalayın. Package. appxmanifest dosyasını kopyalamayın ve Windows 8.1 Masaüstü ve telefon için ayrı bir kodunuz varsa, önce bunlardan birini bağlantı noktası olarak seçin (daha sonra başka bir iş yapmak için daha sonra başka bir iş yapmanız gerekir). Ve alt klasörleri ve bunların içeriğini kopyalamayı unutmayın. İstenirse, yinelenen adlara sahip tüm dosyaları değiştirmeyi seçin.
 
-1. Çözümü yeniden açın ve proje düğümünün kısayol menüsünden > **var olan öğeyi** **Ekle** ' yi seçin. Zaten projenin parçası olan herhangi biri dışında kopyaladığınız tüm dosyaları seçin.
+1. Çözümü yeniden açın ve   >  proje düğümünün kısayol menüsünden **Varolan öğe** Ekle ' yi seçin. Zaten projenin parçası olan herhangi biri dışında kopyaladığınız tüm dosyaları seçin.
 
    Tüm alt klasörleri denetleyin ve dosyaları da bunlara eklediğinizden emin olun.
 
-1. Eski projenizde aynı proje adını kullanmıyorsanız, Package. appxmanifest dosyasını açın ve **giriş noktasını** `App` sınıfının ad alanı adını yansıtacak şekilde güncelleştirin.
+1. Eski projenizde aynı proje adını kullanmıyorsanız Package. appxmanifest dosyasını açın ve **giriş noktasını** , sınıf için ad alanı adını yansıtacak şekilde güncelleştirin `App` .
 
-   Package. appxmanifest dosyasındaki **giriş noktası** alanı, `App` sınıfını içeren ad alanını içeren `App` sınıfı için kapsamlı bir ad içerir. Bir Evrensel Windows projesi oluşturduğunuzda, ad alanı projenin adına ayarlanır. Bu, eski projenizden kopyaladığınız dosyalardaki verilerden farklıysa, bunların eşleşmesini sağlamak için bir veya diğerini güncelleştirmeniz gerekir.
+   Package. appxmanifest dosyasındaki **giriş noktası** alanı sınıf için `App` sınıfı içeren ad alanını içeren bir kapsamlı ad içerir `App` . Bir Evrensel Windows projesi oluşturduğunuzda, ad alanı projenin adına ayarlanır. Bu, eski projenizden kopyaladığınız dosyalardaki verilerden farklıysa, bunların eşleşmesini sağlamak için bir veya diğerini güncelleştirmeniz gerekir.
 
 1. Windows SDK farklı sürümleri arasındaki son değişiklikler nedeniyle projeyi derleyin ve derleme hatalarını çözün.
 
@@ -68,7 +69,7 @@ Bir Windows 8.1 mağazası uygulamanız varsa, bu yordamı kullanarak UWP üzeri
 
 1. Uygulamanızın desteklediği her cihaz türü için bir öykünücü veya fiziksel cihazda uygulamayı çalıştırın ve hata ayıklayın. Bir öykünücü çalıştırmak için, Visual Studio 'Yu bir sanal makinede değil fiziksel bir bilgisayarda çalıştırmanız gerekir.
 
-## <a name="porting-a-windows-81-runtime-component-to-the-uwp"></a><a name="BK_81Component"></a>Windows 8.1 çalışma zamanı bileşenini UWP 'e taşıma
+## <a name="porting-a-windows-81-runtime-component-to-the-uwp"></a><a name="BK_81Component"></a> Windows 8.1 çalışma zamanı bileşenini UWP 'e taşıma
 
 Windows 8.1 Store uygulamalarıyla zaten çalışan bir DLL veya Windows Çalışma Zamanı bileşeni varsa, bu yordamı kullanarak bir bileşeni veya DLL 'yi UWP ve Windows 10 ' da çalışır durumda bulabilirsiniz. Temel yordam, yeni bir proje oluşturmak ve kodunuzu buna kopyalamak için kullanılır.
 
@@ -108,5 +109,5 @@ Visual Studio kullanarak yeni bir UWP projesi oluşturduysanız, bu hatayı gör
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Görsel C++ taşıma Kılavuzu](../porting/porting-to-the-universal-windows-platform-cpp.md)<br/>
+[Visual C++ taşıma Kılavuzu](../porting/porting-to-the-universal-windows-platform-cpp.md)<br/>
 [Evrensel Windows Platformu (UWP) için uygulama geliştirme](/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)

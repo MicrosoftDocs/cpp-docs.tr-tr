@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yerel ayar'
 title: Yerel Ayar
 ms.date: 04/11/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - setlocale function
 - locale routines
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
-ms.openlocfilehash: a747c60994afbf4293aca8e4a3290d20b4bc18a3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 660a4fb0103de8c1ac06272c711e02fcd6d12289
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87189590"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331068"
 ---
 # <a name="locale"></a>Yerel Ayar
 
@@ -27,7 +28,7 @@ Her bir iş parçacığının kendi yerel ayarına sahip olup olmadığını den
 
 Aşağıdaki tablodaki işlevlerin daha güvenli sürümleri, **_s** ("güvenli") son eki tarafından gösterilir. Daha fazla bilgi için bkz. [CRT Içindeki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md).
 
-## <a name="locale-dependent-routines"></a>Yerel ayara bağımlı yordamlar
+## <a name="locale-dependent-routines"></a>Locale-Dependent yordamlar
 
 |Yordam|Kullanın|**setlocale** kategori ayarı bağımlılığı|
 |-------------|---------|---------------------------------------------|

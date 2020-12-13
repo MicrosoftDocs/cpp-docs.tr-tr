@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4764'
 title: Derleyici Uyarısı (düzey 4) C4764
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4764
 ms.assetid: 7bd4296f-966b-484c-bf73-8dbc8e85b4a9
-ms.openlocfilehash: 28672d2271e380f6a8240bff98326d5334a0f98f
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: d694987893d0e6fc6f04b13551a4c86141222192
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74989184"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330505"
 ---
 # <a name="compiler-warning-level-4-c4764"></a>Derleyici Uyarısı (düzey 4) C4764
 

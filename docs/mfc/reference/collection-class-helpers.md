@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: koleksiyon sınıfı Yardımcıları'
 title: Koleksiyon Sınıfı Yardımcıları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - collection classes [MFC], helper functions
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-ms.openlocfilehash: 04b142cde12a9795f217559f875eef7fcec3b0f2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9d3838ba0ba05441debb183e47d7df4e39229742
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331395"
 ---
 # <a name="collection-class-helpers"></a>Koleksiyon Sınıfı Yardımcıları
 
-Koleksiyon sınıfları, `CMap` `CList` ve `CArray` öğeleri karşılaştırma, kopyalama ve serileştirme gibi amaçlar için şablonlu genel yardımcı işlevleri kullanır. , Ve ' a dayanan sınıfların bir parçası olarak `CMap` , `CList` `CArray` Bu işlevleri haritada, listenizde veya dizide depolanan verilerin türüne uyarlanmış sürümlerle gerektiği şekilde geçersiz kılmanız gerekir. Gibi yardımcı işlevleri geçersiz kılma hakkında daha fazla bilgi için `SerializeElements` bkz. [Koleksiyonlar: tür kullanımı uyumlu koleksiyon yapma](../../mfc/how-to-make-a-type-safe-collection.md). Bu `ConstructElements` ve `DestructElements` kullanım dışı bırakılmış olduğunu unutmayın.
+Koleksiyon sınıfları, `CMap` `CList` ve `CArray` öğeleri karşılaştırma, kopyalama ve serileştirme gibi amaçlar için şablonlu genel yardımcı işlevleri kullanır. , Ve ' a dayanan sınıfların bir parçası olarak `CMap` , `CList` `CArray` Bu işlevleri haritada, listenizde veya dizide depolanan verilerin türüne uyarlanmış sürümlerle gerektiği şekilde geçersiz kılmanız gerekir. Gibi yardımcı işlevleri geçersiz kılma hakkında daha fazla bilgi için `SerializeElements` bkz. [koleksiyonlar: Type-Safe koleksiyonu oluşturma](../../mfc/how-to-make-a-type-safe-collection.md). Bu `ConstructElements` ve `DestructElements` kullanım dışı bırakılmış olduğunu unutmayın.
 
 Microsoft Foundation Class Kitaplığı, topluluk sınıflarınızı özelleştirmenize yardımcı olması için afxtempl. h ' de aşağıdaki genel işlevleri sağlar:
 
@@ -59,13 +60,13 @@ Karşılaştırılacak ikinci öğe işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*PElement1* tarafından işaret edilen nesne, *pElement2*tarafından işaret edilen nesneye eşitse sıfır dışı olur; Aksi takdirde 0.
+*PElement1* tarafından işaret edilen nesne, *pElement2* tarafından işaret edilen nesneye eşitse sıfır dışı olur; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CMap`Çağrılar, `CMap` şablon parametreleri *anahtarını* ve *ARG_KEY*kullanır.
+`CMap`Çağrılar, `CMap` şablon parametreleri *anahtarını* ve *ARG_KEY* kullanır.
 
-Varsayılan uygulama, * \* pElement1* ve * \* pElement2*' nin karşılaştırmasının sonucunu döndürür. Öğeleri uygulamanız için uygun bir şekilde karşılaştıran şekilde bu işlevi geçersiz kılın.
+Varsayılan uygulama, *\* pElement1* ve *\* pElement2*' nin karşılaştırmasının sonucunu döndürür. Öğeleri uygulamanız için uygun bir şekilde karşılaştıran şekilde bu işlevi geçersiz kılın.
 
 C++ dili `==` basit türler (,, vb.) için karşılaştırma işlecini () tanımlar, **`char`** **`int`** **`float`** ancak sınıflar ve yapılar için bir karşılaştırma işleci tanımlamaz. `CompareElements`Bunu kullanan koleksiyon sınıflarından birini oluşturmak için veya kullanmak istiyorsanız, karşılaştırma işlecini veya aşırı yüklemeyi `CompareElements` uygun değerleri döndüren bir sürümle tanımlamanız gerekir.
 
@@ -103,7 +104,7 @@ Kopyalanacak öğe sayısı.
 
 Varsayılan uygulama, **=** kopyalama işlemini gerçekleştirmek için basit atama işlecini () kullanır. Kopyalanmakta olan türün aşırı yüklenmiş bir işleci yoksa, varsayılan uygulama bit düzeyinde bir kopya gerçekleştirir.
 
-Bu ve diğer yardımcı işlevleri uygulama hakkında daha fazla bilgi için bkz. [Koleksiyonlar: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
+Bu ve diğer yardımcı işlevleri uygulama hakkında daha fazla bilgi için bkz. [Koleksiyonlar: Type-Safe koleksiyonu oluşturma](../how-to-make-a-type-safe-collection.md).
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -214,11 +215,11 @@ Arşivlenen öğe sayısı
 
 Varsayılan uygulama bit düzeyinde okuma veya yazma yapmaz.
 
-Bu ve diğer yardımcı işlevleri uygulama hakkında daha fazla bilgi için bkz. [Koleksiyonlar: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md).
+Bu ve diğer yardımcı işlevleri uygulama hakkında daha fazla bilgi için bkz. [Koleksiyonlar: Type-Safe koleksiyonu oluşturma](../how-to-make-a-type-safe-collection.md).
 
 ### <a name="example"></a>Örnek
 
-Makale [koleksiyonları: tür kullanımı uyumlu koleksiyon yapma](../how-to-make-a-type-safe-collection.md)içindeki örneğe bakın.
+Makale [koleksiyonları: nasıl Type-Safe koleksiyonu yapılacağı hakkında](../how-to-make-a-type-safe-collection.md)örneğe bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 

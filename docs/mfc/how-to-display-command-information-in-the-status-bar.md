@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: durum çubuğunda komut bilgilerini görüntüleme'
 title: 'Nasıl Yapılır: Durum Çubuğunda Komut Bilgilerini Görüntüleme'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - status bars [MFC], message area
 - status bars [MFC], displaying command information
 ms.assetid: de895cbe-61ee-46bf-9787-76b247527d6d
-ms.openlocfilehash: bff5d5b20ecc9b20b7b1e8335cda34d582441425
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 568e8d356659d5267e8c4947f2981cd6243a7056
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622541"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330217"
 ---
 # <a name="how-to-display-command-information-in-the-status-bar"></a>Nasıl Yapılır: Durum Çubuğunda Komut Bilgilerini Görüntüleme
 
@@ -20,8 +21,8 @@ Uygulamanızın iskektlerini oluşturmak için uygulama Sihirbazı 'Nı çalış
 
 Programa eklediğiniz menü öğeleri için istem dizelerini tanımlayarak, bu durum çubuğu yardımına ekleyebilirsiniz. Bunu yapmak için, menü düzenleyicisinde menü öğesinin özelliklerini düzenlerken istem dizelerini sağlayın. Tanımladığınız dizeler uygulama kaynak dosyasında depolanır; Bunlar, anladıkları komutlarla aynı kimliklere sahiptir.
 
-Varsayılan olarak, uygulama Sihirbazı, program yeni iletileri beklerken görünen standart "hazır" iletisinin KIMLIĞINI **AFX_IDS_IDLEMESSAGE**ekler. Uygulama sihirbazında bağlama duyarlı Yardım seçeneğini belirtirseniz, ileti "yardım Için F1 'e basın." olarak değiştirilir.
+Varsayılan olarak, uygulama Sihirbazı, program yeni iletileri beklerken görünen standart "hazır" iletisinin KIMLIĞINI **AFX_IDS_IDLEMESSAGE** ekler. Uygulama sihirbazında Context-Sensitive yardım seçeneğini belirtirseniz, ileti "yardım Için F1 'e basın" olarak değiştirilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti İşleme ve Eşleme](message-handling-and-mapping.md)
+[İleti Işleme ve eşleme](message-handling-and-mapping.md)
