@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: num_put sınıfı'
 title: num_put Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - std::num_put [C++], do_put
 - std::num_put [C++], put
 ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
-ms.openlocfilehash: 32bfc29b7bc645dd37ae4aaaf498823c0d139dfc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 44f7d5248914969b360454bbec80e767a21be55f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224714"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338072"
 ---
 # <a name="num_put-class"></a>num_put Sınıfı
 
 Sayısal değerlerin tür dizilerine dönüştürmelerini denetlemek için bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu `CharType` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType,
@@ -71,7 +72,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 **Ad alanı:** std
 
-## <a name="num_putchar_type"></a><a name="char_type"></a>num_put:: char_type
+## <a name="num_putchar_type"></a><a name="char_type"></a> num_put:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -83,7 +84,7 @@ typedef CharType char_type;
 
 Tür, şablon parametresi için bir eş anlamlı `CharType` .
 
-## <a name="num_putdo_put"></a><a name="do_put"></a>num_put::d o_put
+## <a name="num_putdo_put"></a><a name="do_put"></a> num_put::d o_put
 
 Bir sayıyı, `CharType` belirli bir yerel ayar için biçimlendirilen sayıyı temsil eden bir dizi öğesine dönüştürmek için çağrılan bir sanal işlev.
 
@@ -161,17 +162,17 @@ Bir çıkış yineleyicisi, üretilen son öğeden sonraki konumdan bir konum ad
 
 Tamsayı çıkış alanı, bir dosya için bir dizi öğe oluşturmak için Print işlevleri tarafından kullanılan kurallar tarafından oluşturulur **`char`** . Her bir Char öğesi `CharType` , basit, bire bir eşleme ile türünde eşdeğer bir öğeyle eşlenecek şekilde varsayılır. Yazdırma işlevinin, boşluk veya 0 basamaklı bir alanı, ancak `do_put` bunun yerine kullanır `fill` . Eşdeğer yazdırma dönüştürme belirtimi aşağıdaki şekilde belirlenir:
 
-- Eğer **iosbase**ise. [flags](../standard-library/ios-base-class.md#flags)  &  `ios_base::basefield` bayraklar  ==  `ios_base::` [Ekim](../standard-library/ios-functions.md#oct), dönüştürme belirtimi `lo` .
+- Eğer **iosbase** ise. [](../standard-library/ios-base-class.md#flags)  &  `ios_base::basefield` bayraklar  ==  `ios_base::` [Ekim](../standard-library/ios-functions.md#oct), dönüştürme belirtimi `lo` .
 
 - **İosbase. Flags**  &  **ios_base: basefield**  ==  `ios_base::` [onaltılı](../standard-library/ios-functions.md#hex)ise, dönüştürme belirtimi olur `lx` .
 
 - Aksi takdirde, dönüştürme belirtimi olur `ld` .
 
-Eğer **iosbase**ise. [Genişlik](../standard-library/ios-base-class.md#width) sıfır dışında, bu değerin alan genişliği, önüne getirilir. İşlev daha sonra **ıosbase**öğesini çağırır. alan genişliğini sıfıra sıfırlamak için **Genişlik**(0).
+Eğer **iosbase** ise. [Genişlik](../standard-library/ios-base-class.md#width) sıfır dışında, bu değerin alan genişliği, önüne getirilir. İşlev daha sonra **ıosbase** öğesini çağırır. alan genişliğini sıfıra sıfırlamak için **Genişlik**(0).
 
-Doldurma yalnızca çıkış alanını belirtmek için gereken en az *sayıda öğe* **ıosbase**değerinden küçükse oluşur. [Genişlik](../standard-library/ios-base-class.md#width). Bu tür doldurma, dolgunun *N*  -  **Genişlik** kopyalarından oluşan bir dizisinden oluşur. **fill** Doldurma daha sonra aşağıdaki gibi gerçekleşir:
+Doldurma yalnızca çıkış alanını belirtmek için gereken en az *sayıda öğe* **ıosbase** değerinden küçükse oluşur. [Genişlik](../standard-library/ios-base-class.md#width). Bu tür doldurma, dolgunun *N*  -  **Genişlik** kopyalarından oluşan bir dizisinden oluşur.  Doldurma daha sonra aşağıdaki gibi gerçekleşir:
 
-- Eğer **iosbase**ise. **flags**  &  `ios_base::adjustfield` bayraklar  ==  `ios_base::` [sol](../standard-library/ios-functions.md#left), bayrak **-** önüne getirilir. (Doldurma, oluşturulan metinden sonra gerçekleşir.)
+- Eğer **iosbase** ise.   &  `ios_base::adjustfield` bayraklar  ==  `ios_base::` [sol](../standard-library/ios-functions.md#left), bayrak **-** önüne getirilir. (Doldurma, oluşturulan metinden sonra gerçekleşir.)
 
 - **İosbase. Flags**  &  **ios_base:: adjustfield**  ==  `ios_base::` [iç](../standard-library/ios-functions.md#internal), **0** bayrağı önüne getirilir. (Sayısal bir çıkış alanı için, yazdırma işlevlerinin 0 ile ayarlandığı doldurma oluşur.)
 
@@ -179,17 +180,17 @@ Doldurma yalnızca çıkış alanını belirtmek için gereken en az *sayıda ö
 
 Son olarak
 
-- Eğer **iosbase**ise. **flags**  &  bayraklar `ios_base::` [showpos](../standard-library/ios-functions.md#showpos) sıfır dışında, bayrak **+** dönüştürme belirtimine göre sona erer.
+- Eğer **iosbase** ise.   &  bayraklar `ios_base::` [showpos](../standard-library/ios-functions.md#showpos) sıfır dışında, bayrak **+** dönüştürme belirtimine göre sona erer.
 
-- Eğer **iosbase**ise. **bayraklar**  &  **ios_base::**[showbase](../standard-library/ios-functions.md#showbase) sıfırdan farklı, bayrak **#** dönüştürme belirtimine göre sona erer.
+- Eğer **iosbase** ise. **bayraklar**  &  **ios_base::**[showbase](../standard-library/ios-functions.md#showbase) sıfırdan farklı, bayrak **#** dönüştürme belirtimine göre sona erer.
 
-Bir tamsayı çıkış alanının biçimi, çağrı [use_facet](../standard-library/locale-functions.md#use_facet)**fac** [locale facet](../standard-library/locale-class.md#facet_class)  <  [tuş takımı](../standard-library/numpunct-class.md) \< **Elem**> ( **iosbase**) tarafından döndürülen yerel ayar modeli fac tarafından belirlenir. [getloc](../standard-library/ios-base-class.md#getloc)). Özellikle:
+Bir tamsayı çıkış alanının biçimi, çağrı [use_facet](../standard-library/locale-functions.md#use_facet) [](../standard-library/locale-class.md#facet_class)  <  [tuş takımı](../standard-library/numpunct-class.md) \< **Elem**> ( **iosbase**) tarafından döndürülen yerel ayar modeli fac tarafından belirlenir. [getloc](../standard-library/ios-base-class.md#getloc)). Özellikle:
 
 - **fac**. [Gruplandırma](../standard-library/numpunct-class.md#grouping) , basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler
 
 - **fac**. [thousands_sep](../standard-library/numpunct-class.md#thousands_sep) , herhangi bir ondalık noktanın solundaki basamak gruplarını ayıran Sırayı belirler
 
-**Fac**tarafından gruplandırma kısıtlaması yoksa. **Gruplandırma** (ilk öğesinin değeri CHAR_MAX), sonra **fac**örneği yoktur. `thousands_sep`çıktı alanında oluşturulur. Aksi takdirde, yazdırma dönüştürme gerçekleştikten sonra ayırıcılar eklenir.
+**Fac** tarafından gruplandırma kısıtlaması yoksa. **Gruplandırma** (ilk öğesinin değeri CHAR_MAX), sonra **fac** örneği yoktur. `thousands_sep` çıktı alanında oluşturulur. Aksi takdirde, yazdırma dönüştürme gerçekleştikten sonra ayırıcılar eklenir.
 
 İkinci sanal korumalı üye işlevi:
 
@@ -211,19 +212,19 @@ virtual iter_type do_put(iter_type next,
     double val) const;
 ```
 
-**Val**değerinden bir kayan nokta çıkış alanı ürettiğinden, ilki ile aynı şekilde davranır. **fac**. [decimal_point](../standard-library/numpunct-class.md#decimal_point) , kesir basamaklarından tamsayı basamaklarını ayıran diziyi belirler. Eşdeğer yazdırma dönüştürme belirtimi aşağıdaki şekilde belirlenir:
+**Val** değerinden bir kayan nokta çıkış alanı ürettiğinden, ilki ile aynı şekilde davranır. **fac**. [decimal_point](../standard-library/numpunct-class.md#decimal_point) , kesir basamaklarından tamsayı basamaklarını ayıran diziyi belirler. Eşdeğer yazdırma dönüştürme belirtimi aşağıdaki şekilde belirlenir:
 
-- Eğer **iosbase**ise. **flags**  &  `ios_base::floatfield` bayraklar  ==  `ios_base::` [düzeltildi](../standard-library/ios-functions.md#fixed), dönüştürme belirtimi `lf` .
+- Eğer **iosbase** ise.   &  `ios_base::floatfield` bayraklar  ==  `ios_base::` [düzeltildi](../standard-library/ios-functions.md#fixed), dönüştürme belirtimi `lf` .
 
-- Eğer **iosbase**ise. **bayraklar**  &  **ios_base:: floatfield**  ==  `ios_base::` [bilimsel](../standard-library/ios-functions.md#scientific), dönüştürme belirtimi `le` . Eğer **iosbase**ise. **flags**  &  bayraklar `ios_base::` [büyük harf](../standard-library/ios-functions.md#uppercase) sıfır dışında, `e` ile değiştirilmiştir `E` .
+- Eğer **iosbase** ise. **bayraklar**  &  **ios_base:: floatfield**  ==  `ios_base::` [bilimsel](../standard-library/ios-functions.md#scientific), dönüştürme belirtimi `le` . Eğer **iosbase** ise.   &  bayraklar `ios_base::` [büyük harf](../standard-library/ios-functions.md#uppercase) sıfır dışında, `e` ile değiştirilmiştir `E` .
 
-- Aksi takdirde, dönüştürme belirtimi **LG**' dir. Eğer **iosbase**ise. **bayraklar**  &  **ios_base:: büyük harf** sıfır dışı, `g` ile değiştirilmiştir `G` .
+- Aksi takdirde, dönüştürme belirtimi **LG**' dir. Eğer **iosbase** ise. **bayraklar**  &  **ios_base:: büyük harf** sıfır dışı, `g` ile değiştirilmiştir `G` .
 
-Eğer **iosbase**ise. **bayraklar**  &  **ios_base:: fixed** , sıfır veya **iosbase**. [duyarlık](../standard-library/ios-base-class.md#precision) sıfırdan büyük, **ıosbase**değeri ile bir duyarlık. **duyarlık** , dönüştürme belirtimine göre sona erer. Herhangi bir doldurma, bir tamsayı çıkış alanı ile aynı şekilde davranır. Doldurma karakteri **Fill**. Son olarak
+Eğer **iosbase** ise. **bayraklar**  &  **ios_base:: fixed** , sıfır veya **iosbase**. [duyarlık](../standard-library/ios-base-class.md#precision) sıfırdan büyük, **ıosbase** değeri ile bir duyarlık. **duyarlık** , dönüştürme belirtimine göre sona erer. Herhangi bir doldurma, bir tamsayı çıkış alanı ile aynı şekilde davranır. Doldurma karakteri **Fill**. Son olarak
 
-- Eğer **iosbase**ise. **flags**  &  bayraklar `ios_base::` [showpos](../standard-library/ios-functions.md#showpos) sıfır dışında, bayrak **+** dönüştürme belirtimine göre sona erer.
+- Eğer **iosbase** ise.   &  bayraklar `ios_base::` [showpos](../standard-library/ios-functions.md#showpos) sıfır dışında, bayrak **+** dönüştürme belirtimine göre sona erer.
 
-- Eğer **iosbase**ise. **flags**  &  bayraklar `ios_base::` [showpoint](../standard-library/ios-functions.md#showpoint) sıfırdan farklı, bayrak **#** dönüştürme belirtimine göre sona erer.
+- Eğer **iosbase** ise.   &  bayraklar `ios_base::` [showpoint](../standard-library/ios-functions.md#showpoint) sıfırdan farklı, bayrak **#** dönüştürme belirtimine göre sona erer.
 
 Dördüncü sanal korumalı üye işlevi:
 
@@ -258,7 +259,7 @@ virtual iter_type do_put(iter_type next,
 
 *Val*'Den bir Boole çıktı alanı oluşturması dışında, ilki ile aynı şekilde davranır.
 
-Boole çıkış alanı iki formdan birini alır. `iosbase.flags & ios_base::` [Boolalpha](../standard-library/ios-functions.md#boolalpha) ise, **`false`** üye işlevi, `do_put(_Next, _Iosbase, _Fill, (long)val)` genellikle 0 (için **`false`** ) veya 1 (için) olarak oluşturulan bir dizi üretir **`true`** . Aksi takdirde, oluşturulan sıra *fac*olur. [falsename](../standard-library/numpunct-class.md#falsename) (için **`false`** ) veya *fac*.[ truename](../standard-library/numpunct-class.md#truename) (için **`true`** ).
+Boole çıkış alanı iki formdan birini alır. `iosbase.flags & ios_base::` [Boolalpha](../standard-library/ios-functions.md#boolalpha) ise, **`false`** üye işlevi, `do_put(_Next, _Iosbase, _Fill, (long)val)` genellikle 0 (için **`false`** ) veya 1 (için) olarak oluşturulan bir dizi üretir **`true`** . Aksi takdirde, oluşturulan sıra *fac* olur. [falsename](../standard-library/numpunct-class.md#falsename) (için **`false`** ) veya *fac*.[ truename](../standard-library/numpunct-class.md#truename) (için **`true`** ).
 
 Yedinci sanal korumalı üye işlevi:
 
@@ -286,7 +287,7 @@ virtual iter_type do_put(iter_type next,
 
 Öğesini çağıran [PUT](#put)için örneğe bakın `do_put` .
 
-## <a name="num_putiter_type"></a><a name="iter_type"></a>num_put:: iter_type
+## <a name="num_putiter_type"></a><a name="iter_type"></a> num_put:: iter_type
 
 Bir çıkış yineleyiciyi açıklayan tür.
 
@@ -298,7 +299,7 @@ typedef OutputIterator iter_type;
 
 Tür, **OutputIterator** şablon parametresi için bir eş anlamlı.
 
-## <a name="num_putnum_put"></a><a name="num_put"></a>num_put:: num_put
+## <a name="num_putnum_put"></a><a name="num_put"></a> num_put:: num_put
 
 Türündeki nesneler için Oluşturucu `num_put` .
 
@@ -319,13 +320,13 @@ Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri
 
 - 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değil.
+- \> 1: Bu değerler tanımlı değil.
 
 Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
 Oluşturucu kendi temel nesnesini **locale::**[model](../standard-library/locale-class.md#facet_class)(_ *refs*) ile başlatır.
 
-## <a name="num_putput"></a><a name="put"></a>num_put::p UT
+## <a name="num_putput"></a><a name="put"></a> num_put::p UT
 
 Bir sayıyı, `CharType` belirli bir yerel ayar için biçimlendirilen sayıyı temsil eden bir dizi öğesine dönüştürür.
 

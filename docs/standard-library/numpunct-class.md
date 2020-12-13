@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: tuş takımı unct sınıfı'
 title: numpunct Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,18 +31,18 @@ helpviewer_keywords:
 - std::numpunct [C++], thousands_sep
 - std::numpunct [C++], truename
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
-ms.openlocfilehash: 602d8edef80f0e4d4abe4cb6773b774d174e1cbe
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 20ec48624734a533f81a1c3c7239eb0c05183de0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87202824"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338014"
 ---
 # <a name="numpunct-class"></a>numpunct Sınıfı
 
 `CharType`Sayısal ve Boolean ifadelerin biçimlendirme ve noktalama bilgileri hakkında bilgi temsil etmek için kullanılan türdeki dizileri açıklayan bir nesneyi tanımlayan bir sınıf şablonu.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType>
@@ -91,7 +92,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 **Ad alanı:** std
 
-## <a name="numpunctchar_type"></a><a name="char_type"></a>sayısal tuş takımı:: char_type
+## <a name="numpunctchar_type"></a><a name="char_type"></a> sayısal tuş takımı:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -103,7 +104,7 @@ typedef CharType char_type;
 
 Tür, **CharType** şablon parametresi için bir eş anlamlı.
 
-## <a name="numpunctdecimal_point"></a><a name="decimal_point"></a>tuş takımı unct::d ecimal_point
+## <a name="numpunctdecimal_point"></a><a name="decimal_point"></a> tuş takımı unct::d ecimal_point
 
 Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.
 
@@ -146,7 +147,7 @@ German_Germany.1252 decimal point ,
 German_Germany.1252 thousands separator .
 ```
 
-## <a name="numpunctdo_decimal_point"></a><a name="do_decimal_point"></a>tuş takımı unct::d o_decimal_point
+## <a name="numpunctdo_decimal_point"></a><a name="do_decimal_point"></a> tuş takımı unct::d o_decimal_point
 
 Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğeyi döndürmek için çağrılan korumalı sanal üye işlevi.
 
@@ -162,7 +163,7 @@ Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğe.
 
 Sanal üye işlevinin tarafından çağrıldığı [decimal_point](#decimal_point)için örneğe bakın `decimal_point` .
 
-## <a name="numpunctdo_falsename"></a><a name="do_falsename"></a>tuş takımı unct::d o_falsename
+## <a name="numpunctdo_falsename"></a><a name="do_falsename"></a> tuş takımı unct::d o_falsename
 
 Korumalı sanal üye işlevi, değerin metin temsili olarak kullanılacak bir dizi döndürür **`false`** .
 
@@ -182,7 +183,7 @@ Değerin metin temsili olarak kullanılacak bir dizi içeren dize **`false`** .
 
 Sanal üye işlevinin tarafından çağrıldığı [falsename](#falsename)için örneğe bakın `falsename` .
 
-## <a name="numpunctdo_grouping"></a><a name="do_grouping"></a>tuş takımı unct::d o_grouping
+## <a name="numpunctdo_grouping"></a><a name="do_grouping"></a> tuş takımı unct::d o_grouping
 
 Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürmek için çağrılan korumalı sanal üye işlevi.
 
@@ -196,13 +197,13 @@ Basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını b
 
 ### <a name="remarks"></a>Açıklamalar
 
-Korumalı sanal üye işlevi herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür. Kodlama, **lconv:: Grouping**ile aynıdır.
+Korumalı sanal üye işlevi herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür. Kodlama, **lconv:: Grouping** ile aynıdır.
 
 ### <a name="example"></a>Örnek
 
 Sanal üye işlevinin tarafından çağrıldığı [Gruplandırma](#grouping)örneğine bakın `grouping` .
 
-## <a name="numpunctdo_thousands_sep"></a><a name="do_thousands_sep"></a>tuş takımı unct::d o_thousands_sep
+## <a name="numpunctdo_thousands_sep"></a><a name="do_thousands_sep"></a> tuş takımı unct::d o_thousands_sep
 
 Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürmek için çağrılan korumalı sanal üye işlevi.
 
@@ -222,7 +223,7 @@ Korumalı sanal üye işlevi, `CharType` herhangi bir ondalık noktanın solunda
 
 Sanal üye işlevinin tarafından çağrıldığı [thousands_sep](#thousands_sep)için örneğe bakın `thousands_sep` .
 
-## <a name="numpunctdo_truename"></a><a name="do_truename"></a>tuş takımı unct::d o_truename
+## <a name="numpunctdo_truename"></a><a name="do_truename"></a> tuş takımı unct::d o_truename
 
 Değerin metin temsili olarak kullanılacak bir dize döndürmek için çağrılan korumalı bir sanal üye işlevi **`true`** .
 
@@ -240,7 +241,7 @@ Tüm yerel ayarlar, değeri temsil etmek için "true" dizesini döndürür **`tr
 
 Sanal üye işlevinin tarafından çağrıldığı [truename](#truename)örneğine bakın `truename` .
 
-## <a name="numpunctfalsename"></a><a name="falsename"></a>tuş takımı unct:: falsename
+## <a name="numpunctfalsename"></a><a name="falsename"></a> tuş takımı unct:: falsename
 
 Değerin metin temsili olarak kullanılacak bir dize döndürür **`false`** .
 
@@ -289,7 +290,7 @@ French_France.1252 truename true
 French_France.1252 falsename false
 ```
 
-## <a name="numpunctgrouping"></a><a name="grouping"></a>tuş takımı unct:: Grouping
+## <a name="numpunctgrouping"></a><a name="grouping"></a> tuş takımı unct:: Grouping
 
 Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür.
 
@@ -335,7 +336,7 @@ German_Germany.1252 international grouping:
 the 0th group to the left of the radix character is of size 3
 ```
 
-## <a name="numpunctnumpunct"></a><a name="numpunct"></a>tuş takımı unct:: tuş takımı unct
+## <a name="numpunctnumpunct"></a><a name="numpunct"></a> tuş takımı unct:: tuş takımı unct
 
 Türündeki nesneler için Oluşturucu `numpunct` .
 
@@ -356,15 +357,15 @@ Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri
 
 - 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değil.
+- \> 1: Bu değerler tanımlı değil.
 
 Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
 Oluşturucu kendi temel nesnesini **locale::**[model](../standard-library/locale-class.md#facet_class)() ile başlatır `_Refs` .
 
-## <a name="numpunctstring_type"></a><a name="string_type"></a>sayısal tuş takımı:: string_type
+## <a name="numpunctstring_type"></a><a name="string_type"></a> sayısal tuş takımı:: string_type
 
-**CharType**türünde karakterler içeren bir dizeyi tanımlayan tür.
+**CharType** türünde karakterler içeren bir dizeyi tanımlayan tür.
 
 ```cpp
 typedef basic_string<CharType, Traits, Allocator> string_type;
@@ -374,7 +375,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 
 Türü, nesne noktalama sıralarının kopyalarını depolayabilen [basic_string](../standard-library/basic-string-class.md) sınıf şablonu özelleştirmesi tanımlar.
 
-## <a name="numpunctthousands_sep"></a><a name="thousands_sep"></a>sayısal tuş takımı:: thousands_sep
+## <a name="numpunctthousands_sep"></a><a name="thousands_sep"></a> sayısal tuş takımı:: thousands_sep
 
 Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.
 
@@ -417,7 +418,7 @@ German_Germany.1252 decimal point ,
 German_Germany.1252 thousands separator .
 ```
 
-## <a name="numpuncttruename"></a><a name="truename"></a>tuş takımı unct:: truename
+## <a name="numpuncttruename"></a><a name="truename"></a> tuş takımı unct:: truename
 
 Değerin metin temsili olarak kullanılacak bir dize döndürür **`true`** .
 

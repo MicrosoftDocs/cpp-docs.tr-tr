@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _lfind_s'
 title: _lfind_s
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - searching, linear
 - _lfind_s function
 ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
-ms.openlocfilehash: 589a413c9f1fb49fbfe8cd1b5eacb9d452716523
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b495f8f6f6f39a07b6fa193ede45b5cb875528ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916514"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338868"
 ---
 # <a name="_lfind_s"></a>_lfind_s
 
@@ -64,7 +65,7 @@ Aranacak nesne.
 *base*<br/>
 Arama verileri tabanı işaretçisi.
 
-*number*<br/>
+*sayısından*<br/>
 Dizi öğelerinin sayısı.
 
 *boyutla*<br/>
@@ -78,22 +79,22 @@ Karşılaştırma işlevinde erişilebilir olabilecek bir nesne işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Anahtar bulunursa **_lfind_s** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* Anahtar bulunamazsa, **_Lfind_s** **null**döndürür.
+Anahtar bulunursa **_lfind_s** , *tabanında* eşleşen dizinin öğesine bir işaretçi *döndürür.* Anahtar bulunamazsa, **_Lfind_s** **null** döndürür.
 
-İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür.
+İşleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null** değerini döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|anahtar|base|compare|sayı|size|errno|
+|anahtar|base|compare|sayı|boyut|errno|
 |---------|----------|-------------|---------|----------|-----------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|**DEĞER**|kaydedilmemiş|! = 0|kaydedilmemiş|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|kaydedilmemiş|sıfır|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|a|kaydedilmemiş|**EıNVAL**|
+|**DEĞER**|herhangi biri|herhangi biri|herhangi biri|herhangi biri|**EıNVAL**|
+|herhangi biri|**DEĞER**|herhangi biri|! = 0|herhangi biri|**EıNVAL**|
+|herhangi biri|herhangi biri|herhangi biri|herhangi biri|sıfır|**EıNVAL**|
+|herhangi biri|herhangi biri|**DEĞER**|a|herhangi biri|**EıNVAL**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lfind_s** işlevi, her *Genişlik* baytından oluşan *sayı* öğeleri dizisindeki değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch_s**aksine, **_lfind_s** dizinin sıralanmasını gerektirmez. *Taban* bağımsız değişkeni, aranacak dizinin temelini gösteren bir işaretçidir. *Compare* bağımsız değişkeni, iki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan yordamın bir işaretçisidir. **_lfind_s** arama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırır, *bağlam* işaretçisini ve işaretçileri her çağrıda iki dizi öğesine geçirerek. *Compare* yordamı, öğeleri karşılaştırmalıdır ve sıfır dışında bir değere (öğelerin farklı olduğu anlamına gelir) veya 0 (öğeler özdeş) döndürür.
+**_Lfind_s** işlevi, her *Genişlik* baytından oluşan *sayı* öğeleri dizisindeki değer *anahtarı* için doğrusal bir arama gerçekleştirir. **Bsearch_s** aksine, **_lfind_s** dizinin sıralanmasını gerektirmez. *Taban* bağımsız değişkeni, aranacak dizinin temelini gösteren bir işaretçidir. *Compare* bağımsız değişkeni, iki dizi öğesini karşılaştıran ve ilişkilerini belirten bir değer döndüren kullanıcı tarafından sağlanan yordamın bir işaretçisidir. **_lfind_s** arama sırasında *karşılaştırma* yordamını bir veya daha fazla kez çağırır, *bağlam* işaretçisini ve işaretçileri her çağrıda iki dizi öğesine geçirerek. *Compare* yordamı, öğeleri karşılaştırmalıdır ve sıfır dışında bir değere (öğelerin farklı olduğu anlamına gelir) veya 0 (öğeler özdeş) döndürür.
 
 **_lfind_s** , karşılaştırma işlevinin bağımsız değişkenlerine ve işlevin parametre listesine *bağlam* işaretçisinin eklenmesi haricinde **_lfind** benzerdir. Arama veri yapısı bir nesnenin parçasıysa ve *Compare* işlevinin nesnenin üyelerine erişmesi gerekiyorsa *bağlam* işaretçisi yararlı olabilir. *Compare* işlevi, void işaretçisini uygun nesne türüne ve bu nesnenin üyelerine ekleyebilir. *Bağlam* parametresinin eklenmesi, verileri *karşılaştırma* işlevine uygun hale getirmek için statik değişkenlerle ilişkili hataların yeniden giriş oluşmasını önlemek için **_lfind_s** daha güvenli hale getirir.
 
@@ -103,7 +104,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_lfind_s**|\<Search. h>|
+|**_lfind_s**|\<search.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

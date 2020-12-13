@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: El Ile denetim ekleme'
 title: El İle Denetim Ekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - controls [MFC], adding to dialog boxes
 - common controls [MFC], adding
 ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
-ms.openlocfilehash: 4efd1c23c7e4d6f7d8e6fa9fe046f8de11c825a6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f6dfa65baa037aa168697aa7abcd3eedc76cc4d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626530"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339088"
 ---
 # <a name="adding-controls-by-hand"></a>El İle Denetim Ekleme
 
@@ -35,6 +36,6 @@ Düzenleme nesnesini oluşturduktan sonra, üye işlevini çağırarak giriş od
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetimleri Yapma ve Kullanma](making-and-using-controls.md)<br/>
+[Denetimleri yapma ve kullanma](making-and-using-controls.md)<br/>
 [Denetimler](controls-mfc.md)<br/>
 [CDialog:: OnInitDialog](reference/cdialog-class.md#oninitdialog)

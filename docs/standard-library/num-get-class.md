@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: num_get sınıfı'
 title: num_get Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - std::num_get [C++], do_get
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-ms.openlocfilehash: d5a88e904c437e79eabfa854a196aa48dbad955e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0236aac2e7c7859f966430bd276b4dffc42820b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228173"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338089"
 ---
 # <a name="num_get-class"></a>num_get Sınıfı
 
 Tür dizilerinin dize dönüştürmelerini denetlemek için bir yerel ayar modeli olarak kullanılabilecek bir nesneyi tanımlayan bir sınıf şablonu `CharType` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType, class InputIterator = istreambuf_iterator<CharType>>
@@ -62,7 +63,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 |Üye işlevi|Açıklama|
 |-|-|
 |[do_get](#do_get)|Bir karakter dizisinden sayısal veya Boolean değeri ayıklamak için çağrılan sanal işlev.|
-|[Al](#get)|Bir karakter dizisinden sayısal veya Boolean değeri ayıklar.|
+|[get](#get)|Bir karakter dizisinden sayısal veya Boolean değeri ayıklar.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -70,7 +71,7 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 **Ad alanı:** std
 
-## <a name="num_getchar_type"></a><a name="char_type"></a>num_get:: char_type
+## <a name="num_getchar_type"></a><a name="char_type"></a> num_get:: char_type
 
 Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.
 
@@ -80,9 +81,9 @@ typedef CharType char_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, **CharType**şablon parametresi için bir eş anlamlı.
+Tür, **CharType** şablon parametresi için bir eş anlamlı.
 
-## <a name="num_getdo_get"></a><a name="do_get"></a>num_get::d o_get
+## <a name="num_getdo_get"></a><a name="do_get"></a> num_get::d o_get
 
 Bir karakter dizisinden sayısal veya Boolean değeri ayıklamak için çağrılan sanal işlev.
 
@@ -199,7 +200,7 @@ virtual iter_type do_get(
     long& val) const;
 ```
 
-*first* `[first, last)` bir tam, boş olmayan tamsayı giriş alanı tanınana kadar dizideki ilk başlayan sıralı öğeleri eşleştirir. Başarılı olursa, bu alanı türü olarak eşdeğer değerine dönüştürür **`long`** ve sonucu *Val*içinde depolar. İlk öğeyi sayısal giriş alanından daha fazla tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlevi içinde *değer* ve Ayarlar ' da hiçbir şey depolar `ios_base::failbit` `state` . Geçerli bir tamsayı giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri eşitse `last` , işlevi ' de ayarlanır `ios_base::eofbit` `state` .
+ `[first, last)` bir tam, boş olmayan tamsayı giriş alanı tanınana kadar dizideki ilk başlayan sıralı öğeleri eşleştirir. Başarılı olursa, bu alanı türü olarak eşdeğer değerine dönüştürür **`long`** ve sonucu *Val* içinde depolar. İlk öğeyi sayısal giriş alanından daha fazla tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlevi içinde *değer* ve Ayarlar ' da hiçbir şey depolar `ios_base::failbit` `state` . Geçerli bir tamsayı giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri eşitse `last` , işlevi ' de ayarlanır `ios_base::eofbit` `state` .
 
 Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki bir dizi öğeyi eşleştirmek ve dönüştürmek için kullanılan kurallara göre dönüştürülür **`char`** . (Bu tür her **`char`** öğe, `Elem` basit, bire-tek, eşleme ile türünde eşdeğer bir öğeyle eşlenecek varsayılır.) Eşdeğer tarama dönüştürme belirtimi aşağıdaki şekilde belirlenir:
 
@@ -211,7 +212,7 @@ Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki bir dizi ö
 
 Aksi takdirde, dönüştürme belirtimi olur `ld` .
 
-Bir tamsayı girişi alanının biçimi, çağrı tarafından döndürülen [yerel ayar modeli](../standard-library/locale-class.md#facet_class) tarafından daha fazla belirlenir `fac` [use_facet](../standard-library/locale-functions.md#use_facet) `<` [numpunct](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [ios_base:: getloc](../standard-library/ios-base-class.md#getloc) `())` . Özellikle:
+Bir tamsayı girişi alanının biçimi, çağrı tarafından döndürülen [yerel ayar modeli](../standard-library/locale-class.md#facet_class) tarafından daha fazla belirlenir `fac` [use_facet](../standard-library/locale-functions.md#use_facet) `<` [](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [ios_base:: getloc](../standard-library/ios-base-class.md#getloc) `())` . Özellikle:
 
 `fac.`[tuş takımı unct:: Grouping](../standard-library/numpunct-class.md#grouping) `()` basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler
 
@@ -329,7 +330,7 @@ Boole girişi alanı iki formdan birini alır. `iosbase.flags() & ios_base::` [B
 
 Sanal üye işlevinin tarafından çağrıldığı [Get](#get)için örneğe bakın `do_get` .
 
-## <a name="num_getget"></a><a name="get"></a>num_get:: Get
+## <a name="num_getget"></a><a name="get"></a> num_get:: Get
 
 Bir karakter dizisinden sayısal veya Boolean değeri ayıklar.
 
@@ -437,7 +438,7 @@ Değer okunduktan sonra Yineleyici.
 
 Tüm üye işlevleri [do_get](#do_get)döndürür `( first, last, iosbase, state, val)` .
 
-İlk sanal korumalı üye işlevi, `first` `last` bir tam, boş olmayan tamsayı giriş alanı tanınıncaya kadar, [,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı türe eşit değerine dönüştürür **`long`** ve sonucu *Val*olarak depolar. İlk öğeyi sayısal giriş alanından daha fazla tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev *değer 'de değer* olarak hiçbir şey depolar ve `ios_base::failbit` *durum*olarak ayarlar. Geçerli bir tamsayı giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son*eşitse işlev `ios_base::eofbit` *durum*olarak ayarlanır.
+İlk sanal korumalı üye işlevi, `first` `last` bir tam, boş olmayan tamsayı giriş alanı tanınıncaya kadar, [,) dizisindeki ilk başlayarak sıralı öğeleri eşleştirmeyi dener. Başarılı olursa, bu alanı türe eşit değerine dönüştürür **`long`** ve sonucu *Val* olarak depolar. İlk öğeyi sayısal giriş alanından daha fazla tanımlayarak bir yineleyici döndürür. Aksi takdirde, işlev *değer 'de değer* olarak hiçbir şey depolar ve `ios_base::failbit` *durum* olarak ayarlar. Geçerli bir tamsayı giriş alanının herhangi bir ön ekinin ötesinde ilk öğeyi tanımlayarak bir yineleyici döndürür. Her iki durumda da, dönüş değeri *en son* eşitse işlev `ios_base::eofbit` *durum* olarak ayarlanır.
 
 Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki bir dizi öğeyi eşleştirmek ve dönüştürmek için kullanılan kurallara göre dönüştürülür **`char`** . Bu tür her **`char`** öğe `CharType` , basit, bire bir eşleme ile türünde eşdeğer bir öğeyle eşlenecek varsayılır. Eşdeğer tarama dönüştürme belirtimi aşağıdaki şekilde belirlenir:
 
@@ -449,7 +450,7 @@ Tamsayı girişi alanı, tarama işlevleri tarafından bir dosyadaki bir dizi ö
 
 - Aksi takdirde, dönüştürme belirtimi olur `ld` .
 
-Bir tamsayı girişi alanının biçimi, [locale facet](../standard-library/locale-class.md#facet_class) `fac` [use_facet](../standard-library/locale-functions.md#use_facet) `<` [`numpunct`](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [getloc](../standard-library/ios-base-class.md#getloc) `())` use_facet çağrısı tarafından döndürülen yerel ayar modeli tarafından daha fazla belirlenir. Özellikle:
+Bir tamsayı girişi alanının biçimi, [](../standard-library/locale-class.md#facet_class) `fac` [](../standard-library/locale-functions.md#use_facet) `<` [`numpunct`](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [getloc](../standard-library/ios-base-class.md#getloc) `())` use_facet çağrısı tarafından döndürülen yerel ayar modeli tarafından daha fazla belirlenir. Özellikle:
 
 - `fac.`[Gruplandırma](../standard-library/numpunct-class.md#grouping) , basamakların herhangi bir ondalık noktanın solunda nasıl gruplandığını belirler.
 
@@ -551,7 +552,7 @@ int main( )
 }
 ```
 
-## <a name="num_getiter_type"></a><a name="iter_type"></a>num_get:: iter_type
+## <a name="num_getiter_type"></a><a name="iter_type"></a> num_get:: iter_type
 
 Bir giriş yineleyiciyi açıklayan tür.
 
@@ -563,7 +564,7 @@ typedef InputIterator iter_type;
 
 Tür, şablon parametresi için bir eş anlamlı `InputIterator` .
 
-## <a name="num_getnum_get"></a><a name="num_get"></a>num_get:: num_get
+## <a name="num_getnum_get"></a><a name="num_get"></a> num_get:: num_get
 
 `num_get`Dizilerden sayısal değerler ayıklamak için kullanılan türündeki nesneler için Oluşturucu.
 
@@ -584,11 +585,11 @@ Nesnenin bellek yönetimi türünü belirtmek için kullanılan tamsayı değeri
 
 - 1: nesnenin ömrü el ile yönetilmelidir.
 
-- \>1: Bu değerler tanımlı değil.
+- \> 1: Bu değerler tanımlı değil.
 
 Yok edicisi korunduğu için doğrudan örnek mümkün değildir.
 
-Oluşturucu kendi temel nesnesini model ile başlatır `locale::` [facet](../standard-library/locale-class.md#facet_class) `(refs)` .
+Oluşturucu kendi temel nesnesini model ile başlatır `locale::` [](../standard-library/locale-class.md#facet_class) `(refs)` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

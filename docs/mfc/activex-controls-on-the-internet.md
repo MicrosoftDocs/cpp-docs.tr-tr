@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. Internet 'te ActiveX denetimleri
 title: Internet'te ActiveX Denetimleri
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Internet applications [MFC], ActiveX controls
 - networks [MFC], downloading with ActiveX controls
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
-ms.openlocfilehash: f06a6f6f71e922163fd95c59836c50b88b05ed3a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5f186d74ff0b448d1cef6a956a6495f6a8890798
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616474"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339143"
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 
@@ -43,7 +44,7 @@ ActiveX denetimleri Internet ile sınırlı değildir. Denetim, bu kapsayıcın�
 
 - İşlevselliği için gereken ek arabirimleri destekleme.
 
-## <a name="making-your-existing-controls-internet-friendly"></a>Mevcut denetimlerinizi Internet 'e uygun hale getirme
+## <a name="making-your-existing-controls-internet-friendly"></a>Mevcut denetimlerinizi Internet-Friendly oluşturma
 
 Internet ortamında iyi şekilde çalışacak bir denetim tasarlamak, Internet 'teki görece düşük iletim ücretleri için göz önünde bulundurmanız gerekir. Mevcut denetimlerinizi kullanabilirsiniz; Ancak, kod boyutunuzu daha küçük hale getirmek ve denetim özelliklerinizi zaman uyumsuz olarak indirmek için gerçekleştirmeniz gereken adımlar vardır.
 
@@ -89,7 +90,7 @@ Uygulama Sihirbazı 'nı kullanarak yeni bir denetim oluştururken, zaman uyumsu
 
 1. **Denetim ayarları** sayfasında, **özellikleri zaman uyumsuz olarak yükler**' i seçin. Bu seçeneğin belirlenmesi, sizin için Ready State özelliğini ve Ready durumu değişti olayını ayarlar.
 
-   Ayrıca, [ActiveX denetimleri: iyileştirme](mfc-activex-controls-optimization.md)' de açıklanan **penceresiz etkinleştirme**gibi diğer iyileştirmeler de seçebilirsiniz.
+   Ayrıca, [ActiveX denetimleri: iyileştirme](mfc-activex-controls-optimization.md)' de açıklanan **penceresiz etkinleştirme** gibi diğer iyileştirmeler de seçebilirsiniz.
 
 1. Projeyi oluşturmak için **son** ' a tıklayın.
 
@@ -107,7 +108,7 @@ Uygulama Sihirbazı 'nı kullanarak yeni bir denetim oluştururken, zaman uyumsu
 
    AFXCMN 'yi dahil etmeniz gerektiğini unutmayın. Bu `CListCtrl` sınıfı kullanın.
 
-1. Denetiminizin genel durumu değiştiğinde (örneğin, yüklenmeye veya Kullanıcı etkileşimlidir), çağrısı yapın `COleControl::InternalSetReadyState` . Denetiminizin yalnızca bir veri yolu özelliği varsa, indirmenin tamamlandığını kapsayıcıya bildirmek için **BSCF_LASTDATANOTIFICATION** kod ekleyebilirsiniz. Örnek:
+1. Denetiminizin genel durumu değiştiğinde (örneğin, yüklenmeye veya Kullanıcı etkileşimlidir), çağrısı yapın `COleControl::InternalSetReadyState` . Denetiminizin yalnızca bir veri yolu özelliği varsa, indirmenin tamamlandığını kapsayıcıya bildirmek için **BSCF_LASTDATANOTIFICATION** kod ekleyebilirsiniz. Örneğin:
 
    [!code-cpp[NVC_MFCActiveXControl#2](codesnippet/cpp/activex-controls-on-the-internet_2.cpp)]
 
@@ -117,11 +118,11 @@ Sonraki yordam, yeni türetilmiş sınıfı kullanmak için denetime bir özelli
 
 #### <a name="to-add-a-property"></a>Bir özellik eklemek için
 
-1. **Sınıf görünümü**, kitaplık düğümünün altındaki arabirime sağ tıklayın ve **Ekle**' yi ve ardından **Özellik Ekle**' yi seçin. Bu işlem **Özellik Ekleme Sihirbazı 'nı**başlatır.
+1. **Sınıf görünümü**, kitaplık düğümünün altındaki arabirime sağ tıklayın ve **Ekle**' yi ve ardından **Özellik Ekle**' yi seçin. Bu işlem **Özellik Ekleme Sihirbazı 'nı** başlatır.
 
-1. **Özellik Ekleme sihirbazında**, **Ayarla/al metotları** radyo düğmesini seçin, **özellik adını**yazın, örneğin, EditControlText yazın ve **özellik türü**olarak BSTR ' yi seçin.
+1. **Özellik Ekleme sihirbazında**, **Ayarla/al metotları** radyo düğmesini seçin, **özellik adını** yazın, örneğin, EditControlText yazın ve **özellik türü** olarak BSTR ' yi seçin.
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 1. `CDataPathProperty`ActiveX denetim sınıfınıza türetilmiş sınıfınızın bir üye değişkenini bildirin.
 
@@ -193,5 +194,5 @@ Kodunuz [COleControl:: InternalSetReadyState](reference/colecontrol-class.md#int
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Görevleri](mfc-internet-programming-tasks.md)<br/>
+[MFC Internet programlama görevleri](mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programlama Temelleri](mfc-internet-programming-basics.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2516'
 title: Derleyici hatası C2516
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2516
 ms.assetid: cd3accc1-0179-4a13-9587-616908c4ad1d
-ms.openlocfilehash: 678c90c5f4d41b0a05bbb07f2aada82e9bfcdb1e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1561a6917d26a9cc4c71a8970e7a75512c1a1b61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214665"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339291"
 ---
 # <a name="compiler-error-c2516"></a>Derleyici hatası C2516
 

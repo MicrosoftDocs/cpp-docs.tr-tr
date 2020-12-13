@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; Yeni&gt;'
 title: '&lt;new&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - new header
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
-ms.openlocfilehash: 0fe2d0e57c0746f25187028b85157d66ee736ca4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c99c036a7b4065e207bfe9ad71eb86e6d5f01d0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836432"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338145"
 ---
 # <a name="ltnewgt"></a>&lt;new&gt;
 

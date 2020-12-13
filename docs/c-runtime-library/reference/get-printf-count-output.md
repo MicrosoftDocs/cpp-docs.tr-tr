@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _get_printf_count_output'
 title: _get_printf_count_output
 ms.date: 11/04/2016
 api_name:
@@ -27,18 +28,18 @@ helpviewer_keywords:
 - get_printf_count_output function
 - _get_printf_count_output function
 ms.assetid: 850f9f33-8319-433e-98d8-6a694200d994
-ms.openlocfilehash: 15b37ac759821ad56cc5c03c9b98719d8f0cc19a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fe5ee728b7bc8400cd93ec4e93131496d59334c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955717"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339009"
 ---
 # <a name="_get_printf_count_output"></a>_get_printf_count_output
 
 [Printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-Family işlevlerinin **% n** biçimini destekleyip desteklemediğini gösterir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _get_printf_count_output();
@@ -56,7 +57,7 @@ int _get_printf_count_output();
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_printf_count_output**|\<stdio. h >|
+|**_get_printf_count_output**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

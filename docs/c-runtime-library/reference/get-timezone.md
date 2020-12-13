@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _get_timezone'
 title: _get_timezone
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - get_timezone function
 - _get_timezone function
 ms.assetid: 30ab0838-0ae9-4a2f-bfe6-a49ee443b21e
-ms.openlocfilehash: 28838825ab7a15f312f5f75a8ad9166926979690
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9fb42603d0b7d63cbbb18c4904c221cd2edeb0e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338965"
 ---
 # <a name="_get_timezone"></a>_get_timezone
 
@@ -61,7 +62,7 @@ Başarılıysa sıfır veya bir hata oluşursa **errno** değeri.
 
 **_Get_timezone** işlevi UTC ve yerel saat arasındaki farkı saniye cinsinden bir tamsayı olarak alır. Varsayılan değer, Pasifik standart saati için 28.800 saniyedir (UTC 'nin arkasında sekiz saat).
 
-*Saniyeler* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+*Saniyeler* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL** döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -69,7 +70,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_timezone**|\<Time. h>|
+|**_get_timezone**|\<time.h>|
 
 Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

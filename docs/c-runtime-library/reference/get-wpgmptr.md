@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _get_wpgmptr'
 title: _get_wpgmptr
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - wpgmptr global variable
 - _get_wpgmptr function
 ms.assetid: a77cdd13-2303-4b7c-9a60-8debdbef2011
-ms.openlocfilehash: ec21e4967d123c988886fa2e6ab996aad83ef206
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: fdc2f17a2c4d43a762f9fbab6629e2524742f0ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919675"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338928"
 ---
 # <a name="_get_wpgmptr"></a>_get_wpgmptr
 
@@ -56,7 +57,7 @@ errno_t _get_wpgmptr(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır döndürür; hatada hata kodu. *PValue* **null**ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL**döndürür.
+Başarılıysa sıfır döndürür; hatada hata kodu. *PValue* **null** ise, geçersiz parametre işleyicisi [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **EINVAL** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -68,7 +69,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_get_wpgmptr**|\<Stdlib. h>|
+|**_get_wpgmptr**|\<stdlib.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

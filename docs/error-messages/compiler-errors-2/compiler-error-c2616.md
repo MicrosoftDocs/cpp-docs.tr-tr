@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2616'
 title: Derleyici hatası C2616
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2616
 ms.assetid: 8d0c02d6-a0b0-4135-b10f-438d67da68c6
-ms.openlocfilehash: c83b9031b0e11052235d03bdd9ba8013a3848d9b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 71d611cfbe1403a7381c04abd62549a2696d2e6e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338649"
 ---
 # <a name="compiler-error-c2616"></a>Derleyici hatası C2616
 
@@ -19,4 +20,4 @@ ms.locfileid: "80177267"
 
 Bir başvuru, lvalue olmayan bir kümeden başlatılamaz.
 
-Bu, ANSI uyumluluğu ([/za](../../build/reference/za-ze-disable-language-extensions.md)) altında bir hata ve Microsoft uzantıları ( **/ze**) altında bir uyarı.
+Bu, ANSI uyumluluğu ([/za](../../build/reference/za-ze-disable-language-extensions.md)) altında bir hata ve Microsoft uzantıları (**/ze**) altında bir uyarı.

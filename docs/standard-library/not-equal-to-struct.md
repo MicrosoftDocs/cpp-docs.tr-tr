@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: not_equal_to struct'
 title: not_equal_to Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - not_equal_to function
 - not_equal_to struct
 ms.assetid: 333fce09-4f51-44e0-ba26-533bccffd485
-ms.openlocfilehash: 5ee1ce120490b91a5f904109f49bf36d88e6261f
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fabcfe2df6f0e4676d558eb9f7c47e1e9c356d62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338128"
 ---
-# <a name="notequalto-struct"></a>not_equal_to Yapısı
+# <a name="not_equal_to-struct"></a>not_equal_to Yapısı
 
-Eşitsizlik işlemi gerçekleştiren bir ikili koşula (`operator!=`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde eşitsizlik işlemini () gerçekleştiren bir ikili koşul `operator!=` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,21 +41,21 @@ struct not_equal_to<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Destekleyen herhangi bir türü bir `operator!=` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator!=`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
-*Sol*\
-Eşitsizlik işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+Eşitsizlik işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Eşitsizlik işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+Eşitsizlik işleminin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left != Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator!=`.
+Sonucu `Left != Right` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator!=` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Türündeki nesneler *türü* eşitlik karşılaştırması yapılabilir olmalıdır. Bunu gerektiren `operator!=` tanımlanmış nesne kümesini eşdeğerlik ilişkisi matematik özelliklerini karşılar. Tüm yerleşik sayısal ve işaretçi türleri, bu gereksinimi karşılamak.
+Tür türündeki nesneler eşitlik ile *karşılaştırılabilir olmalıdır.* Bu, `operator!=` nesne kümesinde tanımlanan öğesinin, bir denklik ilişkisinin matematik özelliklerini karşıladığından emin olmanızı gerektirir. Tüm yerleşik sayısal ve işaretçi türleri bu gereksinimi karşılar.
 
 ## <a name="example"></a>Örnek
 

@@ -1,23 +1,24 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nullopt_t struct'
 title: nullopt_t yapısı
 ms.date: 08/04/2019
 f1_keywords:
 - optional/std::nullopt_t
 - optional/std::nullopt
-ms.openlocfilehash: 1f453a5d75de3f6dedb133d55c094a4f4274e08f
-ms.sourcegitcommit: 16c0392fc8d96e814c3a40b0c5346d7389aeb525
+ms.openlocfilehash: 7a597dcc5f15843f125dc7572dc4c5694320f0bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957053"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338116"
 ---
 # <a name="nullopt_t-struct"></a>nullopt_t yapısı
 
-Tür, isteğe bağlı bir nesnenin bir değer içermediğini belirtmek için kullanılan benzersiz, boş bir tür. [](optional-class.md) `nullopt_t`
+`nullopt_t`Tür, [isteğe bağlı](optional-class.md) bir nesnenin bir değer içermediğini belirtmek için kullanılan benzersiz, boş bir tür.
 
-Türünün `nullopt` `optional` sabiti, bir türün başlatılmamış bir duruma sahip olduğunu gösterir. `nullopt_t` Bu, bir `optional` nesneyi başlatmak veya bir ile karşılaştırmak için kullanılabilir.
+Türünün sabiti, `nullopt` `nullopt_t` bir `optional` türün başlatılmamış bir duruma sahip olduğunu gösterir. Bu, bir `optional` nesneyi başlatmak veya bir ile karşılaştırmak için kullanılabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct nullopt_t;
@@ -26,5 +27,5 @@ inline constexpr nullopt_t nullopt{ /*implementation-defined*/ };
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<isteğe bağlı >](optional.md)\
+[\<optional>](optional.md)\
 [isteğe bağlı sınıf](optional-class.md)

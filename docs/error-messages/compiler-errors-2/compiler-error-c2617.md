@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2617'
 title: Derleyici hatası C2617
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2617
 ms.assetid: d6a435d2-7d95-4dbf-ad4a-abe4744f63e8
-ms.openlocfilehash: 60dd4e7de083bc4258eb7289d7b1c90d90871655
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 3522b9f07911fb674f95f6ae09193f9bc35567e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338636"
 ---
 # <a name="compiler-error-c2617"></a>Derleyici hatası C2617
 

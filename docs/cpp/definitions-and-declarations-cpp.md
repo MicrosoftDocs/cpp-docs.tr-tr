@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tanımlar ve bildirimler (C++)'
 title: Tanımlar ve Bildirimler (C++)
 ms.date: 11/04/2016
 ms.assetid: 56b809c0-e602-4f18-9ca5-cd7a8fbaaf30
-ms.openlocfilehash: c35c0adaa1b81e5bf9bfd9e779037bc6068b3174
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c22274534193011c1c5ec26aedbece339a9302b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221711"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339442"
 ---
 # <a name="definitions-and-declarations-c"></a>Tanımlar ve Bildirimler (C++)
 

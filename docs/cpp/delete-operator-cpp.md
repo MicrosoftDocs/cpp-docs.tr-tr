@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: delete Işleci (C++)'
 title: delete İşleci (C++)
 ms.date: 08/12/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - delete keyword [C++], deallocating objects
 - delete keyword [C++]
 ms.assetid: de39c900-3f57-489c-9598-dcb73c4b3930
-ms.openlocfilehash: 8ce9b8e606d5bbc2051af76e6dc4ac1350ec81a6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: a66fc3af12c08cc019569c1fc1db25a539dcb089
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509149"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339455"
 ---
 # <a name="delete-operator-c"></a>delete İşleci (C++)
 
 Bellek bloğunu kaldırır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > [ `::` ] `delete` *Cast ifadesi*\
 > [ `::` ] `delete []` *Cast ifadesi*
@@ -88,7 +89,7 @@ Using örnekleri için **`delete`** bkz. [New Operator](../cpp/new-operator-cpp.
 
 ## <a name="how-delete-works"></a>Silme nasıl kullanılır?
 
-Delete işleci, **Delete işlev işlecini**çağırır.
+Delete işleci, **Delete işlev işlecini** çağırır.
 
 Sınıf türü olmayan nesneler için ([Class](../cpp/class-cpp.md), [struct](../cpp/struct-cpp.md)veya [Union](../cpp/unions.md)), genel delete işleci çağrılır. Sınıf türündeki nesneler için, DELETE ifadesi birli kapsam çözümleme işleci () ile başlıyorsa, ayırmayı kaldırma işlevinin adı genel kapsamda çözümlenir `::` . Aksi takdirde, delete işleci, bellek ayırmayı yapmadan önce bir nesne için yıkıcıyı çağırır (işaretçi null değilse). Delete işleci sınıf başına ayrı olarak tanımlanabilir; belirli bir sınıf için böyle bir tanım yoksa, genel işleç silme işlemi çağrılır. Statik türünün sanal yok edicisi olan bir sınıf nesnesini serbest bırakmak için Delete ifadesi kullanılırsa, ayırmayı kaldırma işlevi nesnenin dinamik türünün sanal yıkıcısı aracılığıyla çözümlenir.
 

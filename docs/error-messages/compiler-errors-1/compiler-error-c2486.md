@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2486'
 title: Derleyici hatası C2486
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2486
 ms.assetid: 436da349-6461-4e32-bfca-4f3e620108e2
-ms.openlocfilehash: 75705bd8ecc850839e22fccbed1abf08687b3823
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c45e0bdb0f515743694fe372bea3afdb24e00177
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339364"
 ---
 # <a name="compiler-error-c2486"></a>Derleyici hatası C2486
 
 ' __LOCAL_SIZE ' öğesine yalnızca ' Naked ' özniteliği olan işlevde izin verilir
 
-Satır içi derleme işlevlerinde `__LOCAL_SIZE` adı, [Naked](../../cpp/naked-cpp.md) özniteliğiyle belirtilen işlevler için ayrılmıştır.
+Satır içi derleme işlevlerinde ad, `__LOCAL_SIZE` [Naked](../../cpp/naked-cpp.md) özniteliğiyle belirtilen işlevler için ayrılmıştır.
 
 Aşağıdaki örnek C2486 oluşturur:
 

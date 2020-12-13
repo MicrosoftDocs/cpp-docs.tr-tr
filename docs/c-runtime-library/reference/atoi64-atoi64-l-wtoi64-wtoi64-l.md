@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l'
 title: _atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 ms.date: 4/2/2020
 api_name:
@@ -54,18 +55,18 @@ helpviewer_keywords:
 - _wtoi64 function
 - _atoi64 function
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
-ms.openlocfilehash: 44b1abf816020258240d653cfbf8cd806fcb7dd1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4980206a13baccdd510ee2532d37cf3556bd46db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232566"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339000"
 ---
 # <a name="_atoi64-_atoi64_l-_wtoi64-_wtoi64_l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 
 Bir dizeyi 64 bitlik bir tamsayıya dönüştürür.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 __int64 _atoi64(
@@ -89,7 +90,7 @@ __int64 _wtoi64_l(
 *üstbilgisine*<br/>
 Dönüştürülecek dize.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -98,7 +99,7 @@ Her işlev **`__int64`** , giriş karakterlerinin sayı olarak yorumlanarak üre
 
 Büyük pozitif tamsayı değerleriyle taşma durumunda **_atoi64** , büyük negatif tamsayı değerleriyle taşma durumunda **I64_MAX** ve **I64_MIN** döndürür.
 
-Tüm Aralık dışı durumlarda **errno** , **ERANGE**olarak ayarlanır. Geçirilen parametre **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
+Tüm Aralık dışı durumlarda **errno** , **ERANGE** olarak ayarlanır. Geçirilen parametre **null** Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve 0 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -106,7 +107,7 @@ Bu işlevler, bir karakter dizesini 64 bitlik bir tamsayı değerine dönüştü
 
 Giriş dizesi, belirtilen türden sayısal bir değer olarak yorumlanabilen bir karakter dizisidir. İşlev, bir sayının parçası olarak tanıyamadığı ilk karakterde giriş dizesini okumayı durduruyor. Bu karakter, dizeyi sonlandıran null karakteri (' \ 0 ' veya L ' \ 0 ') olabilir.
 
-_Atoi64 *Str* bağımsız değişkeni **_atoi64** aşağıdaki biçimdedir:
+_Atoi64 *Str* bağımsız değişkeni  aşağıdaki biçimdedir:
 
 > [*boşluk*] [*imzala*] [*basamaklar*]
 
@@ -185,7 +186,7 @@ Overflow condition occurred.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>
 [_gcvt](gcvt.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini sıralama'
 title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - data marshaling [C++], strings
 - COM [C++], marshaling strings
 ms.assetid: 06590759-bf99-4e34-a3a9-4527ea592cc2
-ms.openlocfilehash: 3113f0bd04fc8433dc4c7f443914fca9245a54f4
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: d903a3c69407e6ea34779d8c335ec322ab38156a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414340"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339377"
 ---
 # <a name="how-to-marshal-com-strings-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama
 

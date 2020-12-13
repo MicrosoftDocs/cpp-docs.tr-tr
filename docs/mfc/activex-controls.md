@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: ActiveX denetimleri'
 title: ActiveX Denetimleri
 ms.date: 09/12/2018
 helpviewer_keywords:
 - ActiveX controls [MFC]
 ms.assetid: 52aaec4d-3889-402e-b57d-758078f8ac57
-ms.openlocfilehash: 1ea8c94e9e435bb4c5480049c3fd64456be17c82
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 2acb117ef10c2bbd6084d8b086b47ae8223abf1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339127"
 ---
 # <a name="activex-controls"></a>ActiveX Denetimleri
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: getc, getwc'
 title: getc, getwc
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - getwc function
 - gettc function
 ms.assetid: 354ef514-d0c7-404b-92f5-995f6a834bb3
-ms.openlocfilehash: 6248dd2287b2f11db72f64df1241affe8deec22d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0d48b0d1549009d6eb36f37f2f08cb393fde6ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919660"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338921"
 ---
 # <a name="getc-getwc"></a>getc, getwc
 
@@ -67,13 +68,13 @@ Giriş akışı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Okunan karakteri döndürür. Bir okuma hatası veya dosya sonu koşulu belirtmek için, **getc** **EOF**döndürür ve **getwc** , **weof**döndürür. **Getc**için, bir hatayı denetlemek veya dosya sonu için **ferror** veya **feof** kullanın. *Stream* **null**ise, **getc** ve **getwc** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** (veya **getwc**için **weof** ) döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+Okunan karakteri döndürür. Bir okuma hatası veya dosya sonu koşulu belirtmek için, **getc** **EOF** döndürür ve **getwc** , **weof** döndürür. **Getc** için, bir hatayı denetlemek veya dosya sonu için **ferror** veya **feof** kullanın. *Stream* **null** ise, **getc** ve **getwc** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** (veya **getwc** için **weof** ) döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her yordam, geçerli konumdaki bir dosyadan tek bir karakteri okur ve ilgili dosya işaretçisini (tanımlanmışsa) sonraki karakteri işaret etmek üzere arttırır. Dosya *akışıyla*ilişkilendirildi.
+Her yordam, geçerli konumdaki bir dosyadan tek bir karakteri okur ve ilgili dosya işaretçisini (tanımlanmışsa) sonraki karakteri işaret etmek üzere arttırır. Dosya *akışıyla* ilişkilendirildi.
 
 Bu işlevler çağıran iş parçacığını kilitler ve bu nedenle iş parçacığı güvenlidir. Kilitleme dışı bir sürüm için bkz. [_getc_nolock, _getwc_nolock](getc-nolock-getwc-nolock.md).
 
@@ -81,7 +82,7 @@ Rutin olarak özgü notlar izler.
 
 |Yordam|Açıklamalar|
 |-------------|-------------|
-|**getc**|**Fgetc**ile aynıdır, ancak bir işlev olarak ve bir makro olarak uygulanır.|
+|**getc**|**Fgetc** ile aynıdır, ancak bir işlev olarak ve bir makro olarak uygulanır.|
 |**getwc**|**Getc**'nin geniş karakterli sürümü. *Akışın* metin modunda veya ikili modda açılıp açılmayacağı için çok baytlı bir karakter veya geniş bir karakter okur.|
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
@@ -96,8 +97,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**getc**|\<stdio. h>|
-|**getwc**|\<stdio. h> veya \<wchar. h>|
+|**getc**|\<stdio.h>|
+|**getwc**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -138,7 +139,7 @@ int main()
 }
 ```
 
-### <a name="input-crt_getctxt"></a>Giriş: crt_getc. txt
+### <a name="input-crt_getctxt"></a>Giriş: crt_getc.txt
 
 ```Input
 Line one.
@@ -153,7 +154,7 @@ Input was: Line one.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fgetc, fgetwc](fgetc-fgetwc.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>
 [putc, putwc](putc-putwc.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _kbhit'
 title: _kbhit
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _kbhit function
 - keyboards, checking input
 ms.assetid: e82a1cc9-bbec-4150-b678-a7e433220fe4
-ms.openlocfilehash: bfe26a988c491c4d137bfc1badc093d56cde4010
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 439c3ef6a738bdd7802580eeef1056d0ea02ed58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916544"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338887"
 ---
 # <a name="_kbhit"></a>_kbhit
 
@@ -48,7 +49,7 @@ Klavye girişi için konsolu denetler.
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 
@@ -69,7 +70,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_kbhit**|\<conio. h>|
+|**_kbhit**|\<conio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -111,4 +112,4 @@ Key struck was 'q'
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>

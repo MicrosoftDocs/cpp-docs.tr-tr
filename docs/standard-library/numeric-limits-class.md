@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: numeric_limits sınıfı'
 title: numeric_limits Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -70,18 +71,18 @@ helpviewer_keywords:
 - std::numeric_limits [C++], tinyness_before
 - std::numeric_limits [C++], traps
 ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
-ms.openlocfilehash: eb2ee9bc6bc887ff6739c3da1bf2566dbdcbc016
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c0f3532b80eb2cba03a7c230d7b16aa8d3c6b616
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338058"
 ---
 # <a name="numeric_limits-class"></a>numeric_limits Sınıfı
 
 Sınıf şablonu, yerleşik sayısal türlerin aritmetik özelliklerini açıklar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Type>
@@ -125,7 +126,7 @@ Rastgele bir özelleşme için hiçbir üyenin anlamlı değerleri yoktur. Anlam
 |[max_digits10](#max_digits10)|Türün iki farklı değerinin farklı ondalık gösterimlerine sahip olduğundan emin olmak için gereken ondalık basamak sayısını döndürür.|
 |[max_exponent](#max_exponent)|Bu kuvvete bir taban tabanı oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en fazla pozitif integral üstel değeri döndürür.|
 |[max_exponent10](#max_exponent10)|Bir taban on bu kuvvete döndürüldüğünde kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük pozitif integral üstel değeri döndürür.|
-|[dk](#min)|Bir tür için en küçük normalleştirilmiş değeri döndürür.|
+|[Min](#min)|Bir tür için en küçük normalleştirilmiş değeri döndürür.|
 |[min_exponent](#min_exponent)|Bu kuvvete bir taban tabanı oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük negatif integral üstel değeri döndürür.|
 |[min_exponent10](#min_exponent10)|On 'un bir tabanı bu kuvvete oluşturulduğunda kayan nokta türünün sonlu bir değer olarak temsil edilebilmesi için en büyük negatif integral üssün birini döndürür.|
 |[quiet_NaN](#quiet_nan)|Tür için sessiz sayı değil (NAN) gösterimini döndürür.|
@@ -297,7 +298,7 @@ static constexpr Type epsilon() throw();
 
 #### <a name="remarks"></a>Açıklamalar
 
-Değer, türü için FLT_EPSILON **`float`** . `epsilon`bir tür için *, n* *N*  +  `epsilon`  +  *n* 'nin gösterilemeyen tablo olması gibi en küçük pozitif kayan nokta sayısı n.
+Değer, türü için FLT_EPSILON **`float`** . `epsilon`bir tür için *, n*   +  `epsilon`  +  *n* 'nin gösterilemeyen tablo olması gibi en küçük pozitif kayan nokta sayısı n.
 
 #### <a name="example"></a>Örnek
 
@@ -441,7 +442,7 @@ static constexpr bool has_infinity = false;
 
 #### <a name="remarks"></a>Açıklamalar
 
-İs_iec559 ise üye **`true`** döndürülür [is_iec559](#is_iec559) **`true`** .
+İs_iec559 ise üye **`true`** döndürülür [](#is_iec559) **`true`** .
 
 #### <a name="example"></a>Örnek
 
@@ -1161,7 +1162,7 @@ Tür için en küçük normalleştirilmiş değer.
 
 #### <a name="remarks"></a>Açıklamalar
 
-En küçük normalleştirilmiş değer tür için INT_MIN **`int`** ve tür için FLT_MIN **`float`** . [İs_bounded](#is_bounded) veya is_signed ise, dönüş değeri anlamlı olur **`true`** [is_signed](#is_signed) **`false`** .
+En küçük normalleştirilmiş değer tür için INT_MIN **`int`** ve tür için FLT_MIN **`float`** . [İs_bounded](#is_bounded) veya is_signed ise, dönüş değeri anlamlı olur **`true`** [](#is_signed) **`false`** .
 
 #### <a name="example"></a>Örnek
 

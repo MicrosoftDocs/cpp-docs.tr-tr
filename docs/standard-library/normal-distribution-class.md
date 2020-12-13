@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: normal_distribution sınıfı'
 title: normal_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: 0fed268b6c3f318b3e308f90e94862fdf969e3fa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: eb27debf104df3e33a324a0297624769af4860b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836406"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338138"
 ---
 # <a name="normal_distribution-class"></a>normal_distribution Sınıfı
 
 Normal bir dağıtım oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class RealType = double>
@@ -81,7 +82,7 @@ Sınıf şablonu, Kullanıcı tarafından belirtilen integral türünün değerl
 [normal_distribution](#normal_distribution)\
 [param_type](#param_type)
 
-Özelliği, `mean()` ve `stddev()` sırasıyla depolanan dağıtım parametrelerinin değerlerini döndürür. *mean* *stddev*
+Özelliği, `mean()` ve `stddev()` sırasıyla depolanan dağıtım parametrelerinin değerlerini döndürür.  
 
 Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
@@ -209,9 +210,9 @@ Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 **Önkoşul:**`0.0 < stddev`
 
-İlk Oluşturucu, saklı `mean` değeri değeri *Ortalama* olan ve saklı `stddev` değeri *StdDev*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı `mean` değeri değeri *Ortalama* olan ve saklı `stddev` değeri *StdDev* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="normal_distributionparam_type"></a><a name="param_type"></a> normal_distribution::p aram_type
 

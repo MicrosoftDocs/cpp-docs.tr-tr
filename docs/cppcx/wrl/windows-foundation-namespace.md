@@ -1,4 +1,5 @@
 ---
+description: ': Windows:: Foundation ad alanı hakkında daha fazla bilgi'
 title: Windows::Foundation Ad Alanı
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - Foundation namespace
 ms.assetid: 96a6b5e0-ddee-4b21-ae4e-da5feeb945c3
-ms.openlocfilehash: 4c8bc578fd9657fb964bc6148e3acc24b0cb5328
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ae0c8353758b7d8a08d351619e7f1e4c284f68a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339403"
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation Ad Alanı
 
 Nesne ve fabrika oluşturma gibi temel Windows Çalışma Zamanı işlevselliğine izin vermez.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Windows::Foundation;
@@ -31,8 +32,8 @@ namespace Windows::Foundation;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[ActivateInstance İşlevi](activateinstance-function.md)|Belirtilen bir sınıf KIMLIĞINDE tanımlanan belirli bir türün bir örneğini kaydeder ve alır.|
-|[GetActivationFactory İşlevi](getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme fabrikası alır.|
+|[ActivateInstance Işlevi](activateinstance-function.md)|Belirtilen bir sınıf KIMLIĞINDE tanımlanan belirli bir türün bir örneğini kaydeder ve alır.|
+|[GetActivationFactory Işlevi](getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme fabrikası alır.|
 
 ## <a name="requirements"></a>Gereksinimler
 

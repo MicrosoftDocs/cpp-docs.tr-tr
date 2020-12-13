@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: Cloakediıd yapısı'
 title: CloakedIid Yapısı
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - CloakedIid structure
 ms.assetid: 82e0e377-ca3a-46bc-b850-ae2c46c15bb5
-ms.openlocfilehash: 1cc9e79384bbf4aae44199c2f35331e3afd8fd8f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 06bddded27882ae1216064aafc311364a8d2fd9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214116"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338785"
 ---
 # <a name="cloakediid-structure"></a>CloakedIid Yapısı
 
-`RuntimeClass`, `Implements` ve `ChainInterfaces` şablonlarına, belirtilen arabirimin IID listesinde erişilebilir olmadığını gösterir.
+`RuntimeClass`, `Implements` Ve ' nin, `ChainInterfaces` belirtilen arabirime IID listesinde erişilebilir olmadığını gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,12 +28,12 @@ struct CloakedIid : T;
 
 #### <a name="parameters"></a>Parametreler
 
-*Şı*<br/>
+*T*<br/>
 Gizli (gizlenmiş) arabirim.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşağıda, **CloakedIid** 'ın nasıl kullanıldığına ilişkin bir örnek verilmiştir: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.
+Aşağıda, **CloakedIid** 'ın nasıl kullanıldığına ilişkin bir örnek verilmiştir: `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}` .
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -48,4 +49,4 @@ Aşağıda, **CloakedIid** 'ın nasıl kullanıldığına ilişkin bir örnek ve
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL Ad Alanı](microsoft-wrl-namespace.md)
+[Microsoft:: WRL ad alanı](microsoft-wrl-namespace.md)

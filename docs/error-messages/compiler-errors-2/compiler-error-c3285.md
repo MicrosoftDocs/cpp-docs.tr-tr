@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3285'
 title: Derleyici hatası C3285
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - C3285
 ms.assetid: 04e8f210-d67e-4810-b153-e1efe2986c8f
-ms.openlocfilehash: f5799511575617ad1705bbce50a939ee46599628
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d5b57b878ed47118e1857558b9d633bb5ef7286c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339338"
 ---
 # <a name="compiler-error-c3285"></a>Derleyici hatası C3285
 
 for each deyimleri, ' Type ' türündeki değişkenlerde çalışamaz
 
-`for each` deyimi bir dizideki veya nesne koleksiyonundaki her öğe için gömülü deyimler grubunu yineler.
+`for each`Deyimi bir dizideki veya nesne koleksiyonundaki her öğe için gömülü deyimler grubunu yineler.
 
-Daha fazla bilgi için [,](../../dotnet/for-each-in.md) bkz.
+Daha fazla bilgi için [,](../../dotnet/for-each-in.md) bkz..
 
 ## <a name="example"></a>Örnek
 

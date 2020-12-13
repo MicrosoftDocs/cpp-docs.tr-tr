@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: ActiveX denetim kapsayıcıları'
 title: ActiveX Denetim Kapsayıcıları
 ms.date: 09/12/2018
 helpviewer_keywords:
 - ActiveX control containers [MFC]
 - OLE controls [MFC], containers
 ms.assetid: 0eb1a713-e607-4c79-a0c7-67c5f1fd5fab
-ms.openlocfilehash: 42fa18c41ebd960aa8de080df00556ad5c909d40
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6de379cc152ff35e16366c1b5e920bf3548f4cd4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339117"
 ---
 # <a name="activex-control-containers"></a>ActiveX Denetim Kapsayıcıları
 
@@ -29,23 +30,23 @@ ActiveX Denetim kapsayıcısı, sunulan [Yöntemler](mfc-activex-controls-method
 
 Ek makaleler, bir ActiveX Denetim kapsayıcısı projesi oluşturmaktan Visual C++ ile oluşturulan ActiveX denetim kapsayıcılarıyla ilgili temel uygulama sorunlarına kadar çeşitli konuları ele almaktadır:
 
-- [MFC ActiveX Denetimi Kapsayıcısı Oluşturma](reference/creating-an-mfc-activex-control-container.md)
+- [MFC ActiveX denetimi kapsayıcısı oluşturma](reference/creating-an-mfc-activex-control-container.md)
 
-- [ActiveX Denetimleri için Kapsayıcılar](containers-for-activex-controls.md)
+- [ActiveX denetimleri için kapsayıcılar](containers-for-activex-controls.md)
 
-- [ActiveX Denetimi Kapsayıcıları: ActiveX Denetimi Kapsamasını El İle Etkinleştirme](activex-control-containers-manually-enabling-activex-control-containment.md)
+- [ActiveX denetim kapsayıcıları: ActiveX denetim kapsamayı El Ile etkinleştirme](activex-control-containers-manually-enabling-activex-control-containment.md)
 
-- [ActiveX Denetim Kapsayıcıları: Bir Denetim Kapsayıcısı Uygulamasına Denetim Ekleme](inserting-a-control-into-a-control-container-application.md)
+- [ActiveX denetim kapsayıcıları: Denetim kapsayıcısı uygulamasına denetim ekleme](inserting-a-control-into-a-control-container-application.md)
 
-- [ActiveX Denetim Kapsayıcıları: Bir Üye Değişkenine ActiveX Denetimi Bağlama](activex-control-containers-connecting-an-activex-control-to-a-member-variable.md)
+- [ActiveX denetim kapsayıcıları: bir ActiveX denetimini üye değişkenine bağlama](activex-control-containers-connecting-an-activex-control-to-a-member-variable.md)
 
 - [ActiveX denetim kapsayıcıları: ActiveX denetiminden olayları Işleme](activex-control-containers-handling-events-from-an-activex-control.md)
 
-- [ActiveX Denetim Kapsayıcıları: Denetim Özelliklerini Görüntüleme ve Değiştirme](activex-control-containers-viewing-and-modifying-control-properties.md)
+- [ActiveX denetim kapsayıcıları: denetim özelliklerini görüntüleme ve değiştirme](activex-control-containers-viewing-and-modifying-control-properties.md)
 
-- [ActiveX Denetim Kapsayıcıları: Bir ActiveX Denetim Kapsayıcısındaki ActiveX Denetimlerini Programlama](programming-activex-controls-in-a-activex-control-container.md)
+- [ActiveX denetim kapsayıcıları: ActiveX denetim kapsayıcısındaki ActiveX denetimlerini programlama](programming-activex-controls-in-a-activex-control-container.md)
 
-- [ActiveX Denetim Kapsayıcıları: İletişim Kutusu Dışındaki Kapsayıcılarda Denetimleri Kullanma](activex-control-containers-using-controls-in-a-non-dialog-container.md)
+- [ActiveX denetim kapsayıcıları: Iletişim kutusu olmayan bir kapsayıcıda denetimleri kullanma](activex-control-containers-using-controls-in-a-non-dialog-container.md)
 
 Bir iletişim kutusunda ActiveX denetimlerini kullanma hakkında daha fazla bilgi için, Iletişim kutusu [Düzenleyicisi](../windows/dialog-editor.md) konularına bakın.
 
