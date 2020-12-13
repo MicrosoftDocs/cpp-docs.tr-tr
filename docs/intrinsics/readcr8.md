@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __readcr8'
 title: __readcr8
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - __readcr8 intrinsic
 ms.assetid: fce16953-87ff-4fbe-8081-7962b97ae46c
-ms.openlocfilehash: 525775fde4cb96cecfcabef878780d5a2aa6743a
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 1961f00575956c8377131cd0871e59f79db5dc1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341028"
 ---
 # <a name="__readcr8"></a>__readcr8
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 CR8 yazmacın okur ve değerini döndürür.
 
@@ -25,7 +26,7 @@ CR8 yazmacın okur ve değerini döndürür.
 unsigned __int64 __readcr8(void);
 ```
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 CR8 kaydındaki değer.
 
@@ -33,9 +34,9 @@ CR8 kaydındaki değer.
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`__readcr8`|X64|
+|`__readcr8`|x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

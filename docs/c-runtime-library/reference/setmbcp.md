@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _setmbcp'
 title: _setmbcp
 ms.date: 4/2/2020
 api_name:
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - _setmbcp function
 - multibyte code pages
 ms.assetid: cfde53b5-0b73-4684-81b1-a8d3aafc85de
-ms.openlocfilehash: 9a981c40b9e525ba1ffc1f2198f2b6a859fd9ac7
-ms.sourcegitcommit: b51703a96ee35ee2376d5f0775b70f03ccbe6d9a
+ms.openlocfilehash: fe69360de2e6e0ebdea8c700ab398d56e669f022
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88086974"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342224"
 ---
 # <a name="_setmbcp"></a>_setmbcp
 
 Yeni bir çok baytlı kod sayfası ayarlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _setmbcp(
@@ -55,11 +56,11 @@ Yerel ayarda bağımsız çok baytlı yordamlar için yeni kod sayfası ayarı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Kod sayfası başarıyla ayarlandıysa 0 döndürür. *Kod sayfası için geçersiz*bir kod sayfası değeri sağlanırsa,-1 döndürür ve kod sayfası ayarı değiştirilmez. Bir bellek ayırma hatası oluşursa, **errno** 'ı **EINVAL** olarak ayarlar.
+Kod sayfası başarıyla ayarlandıysa 0 döndürür. *Kod sayfası için geçersiz* bir kod sayfası değeri sağlanırsa,-1 döndürür ve kod sayfası ayarı değiştirilmez. Bir bellek ayırma hatası oluşursa, **errno** 'ı **EINVAL** olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Setmbcp** işlevi yeni bir çok baytlı kod sayfasını belirtir. Varsayılan olarak, çalışma zamanı sistemi, çok baytlı kod sayfasını otomatik olarak sistem varsayılan ANSI kod sayfasına ayarlar. Çok baytlı kod sayfası ayarı, yerel ayara bağımlı olmayan tüm çok baytlı yordamları etkiler. Ancak, geçerli yerel ayar için tanımlanan kod sayfasını kullanmak üzere **_setmbcp** söylemek mümkündür (aşağıdaki bildirim sabitleri ve ilgili davranış sonuçları listesine bakın). Çok baytlı kod sayfası yerine yerel ayar kodu sayfasına bağımlı çok baytlı yordamların bir listesi için bkz. [çok baytlı karakter dizileri yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).
+**_Setmbcp** işlevi yeni bir çok baytlı kod sayfasını belirtir. Varsayılan olarak, çalışma zamanı sistemi, çok baytlı kod sayfasını otomatik olarak sistem varsayılan ANSI kod sayfasına ayarlar. Çok baytlı kod sayfası ayarı, yerel ayara bağımlı olmayan tüm çok baytlı yordamları etkiler. Ancak, geçerli yerel ayar için tanımlanan kod sayfasını kullanmak üzere **_setmbcp** söylemek mümkündür (aşağıdaki bildirim sabitleri ve ilgili davranış sonuçları listesine bakın). Çok baytlı kod sayfası yerine yerel ayar kodu sayfasına bağımlı çok baytlı yordamların bir listesi için, bkz. [Multibyte-Character dizileri yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md).
 
 *CodePage* bağımsız değişkeni aşağıdaki değerlerden herhangi birine ayarlanabilir:
 
@@ -69,9 +70,9 @@ Kod sayfası başarıyla ayarlandıysa 0 döndürür. *Kod sayfası için geçer
 
 - **_MB_CP_OEM** Program başlangıcında işletim sisteminden alınan OEM kod sayfasını kullanın.
 
-- **_MB_CP_SBCS** Tek baytlı kod sayfasını kullanın. Kod sayfası **_MB_CP_SBCS**olarak ayarlandığında, [_ismbblead](ismbblead-ismbblead-l.md) gibi bir yordam her zaman false döndürür.
+- **_MB_CP_SBCS** Tek baytlı kod sayfasını kullanın. Kod sayfası **_MB_CP_SBCS** olarak ayarlandığında, [_ismbblead](ismbblead-ismbblead-l.md) gibi bir yordam her zaman false döndürür.
 
-- **_MB_CP_UTF8** UTF-8 kullanın.  Kod sayfası **_MB_CP_UTF8**olarak ayarlandığında, [_ismbblead](ismbblead-ismbblead-l.md) gibi bir yordam her zaman false döndürür.
+- **_MB_CP_UTF8** UTF-8 kullanın.  Kod sayfası **_MB_CP_UTF8** olarak ayarlandığında, [_ismbblead](ismbblead-ismbblead-l.md) gibi bir yordam her zaman false döndürür.
 
 - Değerin bir ANSI, OEM veya diğer işletim sistemi tarafından desteklenen kod sayfası (desteklenmeyen UTF-7 hariç) olmasına bakılmaksızın herhangi bir diğer geçerli kod sayfası değeri.
 

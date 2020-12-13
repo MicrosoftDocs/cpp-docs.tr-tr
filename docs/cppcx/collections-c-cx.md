@@ -1,13 +1,14 @@
 ---
+description: 'Daha fazla bilgi edinin: Koleksiyonlar (C++/CX)'
 title: Koleksiyonlar (C++/CX)
 ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-ms.openlocfilehash: 84c6ecad5ffb4920972faf5aa564103ec1f5b5df
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: 4843441b5d5091bea36ff8c74bd84bddd5f7fa4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610952"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342055"
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C++/CX)
 
@@ -57,11 +58,11 @@ Daha sonraki bir noktada ABı üzerinde geçiş yapmanız gereken dizelerin vekt
 
 ## <a name="vectorproxy-elements"></a>VectorProxy öğeleri
 
-[Platform:: Collections](../cppcx/platform-collections-vectoriterator-class.md) :: [Vectorterator ve platform:: Collections:: VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) , `range for` bir [IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1) kapsayıcısı ile [std:: Sort](../standard-library/algorithm-functions.md#sort) gibi döngüler ve algoritmaların kullanımını etkinleştirir. Ancak, `IVector` C++ işaretçi başvurusu aracılığıyla öğelere erişilemez; yalnızca [GetAt](/uwp/api/windows.foundation.collections.ivector-1.getat) ve [SetAt](/uwp/api/windows.foundation.collections.ivector-1.setat) yöntemleri aracılığıyla erişilebilir. Bu nedenle, bu yineleyiciler ara sunucu sınıflarını kullanır `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` __\*__ __->__ Standart kitaplığın gerektirdiği şekilde,, ve __ \[ ]__ işleçleriyle tek tek öğelere erişim sağlar. ,,,, ' `IVector<Person^> vec` Nin türü olarak tamamen `*begin(vec)` konuşulur `VectorProxy<Person^>` . Ancak, proxy nesnesi neredeyse her zaman kodunuz için saydamdır. Bu proxy nesneleri yalnızca yineleyiciler tarafından iç kullanım için olduklarından belgelenmemiştir, ancak mekanizmanın nasıl çalıştığını öğrenmek faydalı olur.
+[Platform:: Collections](../cppcx/platform-collections-vectoriterator-class.md) :: [Vectorterator ve platform:: Collections:: VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) , `range for` bir [IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1) kapsayıcısı ile [std:: Sort](../standard-library/algorithm-functions.md#sort) gibi döngüler ve algoritmaların kullanımını etkinleştirir. Ancak, `IVector` C++ işaretçi başvurusu aracılığıyla öğelere erişilemez; yalnızca [GetAt](/uwp/api/windows.foundation.collections.ivector-1.getat) ve [SetAt](/uwp/api/windows.foundation.collections.ivector-1.setat) yöntemleri aracılığıyla erişilebilir. Bu nedenle, bu yineleyiciler ara sunucu sınıflarını kullanır `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` __\*__ __->__ Standart kitaplığın gerektirdiği şekilde,, ve __\[ ]__ işleçleriyle tek tek öğelere erişim sağlar. ,,,, ' `IVector<Person^> vec` Nin türü olarak tamamen `*begin(vec)` konuşulur `VectorProxy<Person^>` . Ancak, proxy nesnesi neredeyse her zaman kodunuz için saydamdır. Bu proxy nesneleri yalnızca yineleyiciler tarafından iç kullanım için olduklarından belgelenmemiştir, ancak mekanizmanın nasıl çalıştığını öğrenmek faydalı olur.
 
 `range for`Kapsayıcılar üzerinde bir döngü kullandığınızda `IVector` , `auto&&` Yineleyici değişkeninin öğelere doğru bir şekilde bağlanması için öğesini kullanın `VectorProxy` . **`auto`** Veya kullanıyorsanız `auto&` , derleyici uyarısı C4239 oluşturulur ve `VectoryProxy` Uyarı metninde bahsedilir.
 
-Aşağıdaki çizimde bir döngüsü gösterilmektedir `range for` `IVector<Person^>` . Yürütmenin 64. satırdaki kesme noktasında durdurulduğuna dikkat edin. **QuickWatch** penceresi, yineleyici değişkeninin `p` aslında `VectorProxy<Person^>` `m_v` ve `m_i` üye değişkenleri olduğunu gösterir. Ancak, `GetType` Bu değişkeni çağırdığınızda, örneğe özdeş türü döndürür `Person` `p2` . Bu, `VectorProxy` `ArrowProxy` **hızlı**bir şekilde, hata ayıklayıcı bazı derleyici hatalarını veya başka yerlerde görünebilse de, genellikle açıkça kod yazmanız gerekmez.
+Aşağıdaki çizimde bir döngüsü gösterilmektedir `range for` `IVector<Person^>` . Yürütmenin 64. satırdaki kesme noktasında durdurulduğuna dikkat edin. **QuickWatch** penceresi, yineleyici değişkeninin `p` aslında `VectorProxy<Person^>` `m_v` ve `m_i` üye değişkenleri olduğunu gösterir. Ancak, `GetType` Bu değişkeni çağırdığınızda, örneğe özdeş türü döndürür `Person` `p2` . Bu, `VectorProxy` `ArrowProxy` **hızlı** bir şekilde, hata ayıklayıcı bazı derleyici hatalarını veya başka yerlerde görünebilse de, genellikle açıkça kod yazmanız gerekmez.
 
 ![Döngüye göre&#45;Vektörtorproxy](../cppcx/media/vectorproxy-1.png "Döngüye göre&#45;Vektörtorproxy")
 
@@ -98,7 +99,7 @@ Genel olarak, iç eşleme işlevselliği için, `std::map` türü performans ned
 
 Koleksiyonlar dört kategoriye ayrılır: değiştirilebilir sürümler ve dizi koleksiyonlarının ve ilişkilendirilebilir koleksiyonların salt okunurdur. Ayrıca, C++/CX, koleksiyonlara erişimi basitleştiren üç Yineleyici sınıfı sağlayarak koleksiyonları geliştirir.
 
-Değiştirilebilir bir koleksiyonun öğeleri değiştirilebilir, ancak *Görünüm*olarak bilinen bir salt okuma koleksiyonunun öğeleri yalnızca okunabilir. Platform:: [Collections:: vector](../cppcx/platform-collections-vector-class.md) veya[Platform:: Collections:: vectorview](../cppcx/platform-collections-vectorview-class.md) koleksiyonunun öğelerine bir yineleyici veya koleksiyonun [vector:: GetAt](../cppcx/platform-collections-vector-class.md#getat) ve bir dizin kullanılarak erişilebilir. İlişkilendirilebilir bir koleksiyonun öğelerine, koleksiyonun [map:: Lookup](../cppcx/platform-collections-map-class.md#lookup) ve bir anahtar kullanılarak erişilebilir.
+Değiştirilebilir bir koleksiyonun öğeleri değiştirilebilir, ancak *Görünüm* olarak bilinen bir salt okuma koleksiyonunun öğeleri yalnızca okunabilir. Platform:: [Collections:: vector](../cppcx/platform-collections-vector-class.md) veya[Platform:: Collections:: vectorview](../cppcx/platform-collections-vectorview-class.md) koleksiyonunun öğelerine bir yineleyici veya koleksiyonun [vector:: GetAt](../cppcx/platform-collections-vector-class.md#getat) ve bir dizin kullanılarak erişilebilir. İlişkilendirilebilir bir koleksiyonun öğelerine, koleksiyonun [map:: Lookup](../cppcx/platform-collections-map-class.md#lookup) ve bir anahtar kullanılarak erişilebilir.
 
 [Platform:: Collections:: Map sınıfı](../cppcx/platform-collections-map-class.md)<br/>
 Değiştirilebilir, ilişkilendirilebilir bir koleksiyon. Eşleme öğeleri anahtar-değer çiftleridir. İlişkili değerini almak için bir anahtar aranıyor ve tüm anahtar-değer çiftlerine yineleme, her ikisi de desteklenir.

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l'
 title: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _vsprintf_p function
 - _vstprintf_p_l function
 ms.assetid: 00821c0d-9fee-4d8a-836c-0669cfb11317
-ms.openlocfilehash: e684bebc0a997e25963366b64fbab6d4f958e8eb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 02277b9f69aaecfe378bf9e6fd4f004feb741c79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945232"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342146"
 ---
 # <a name="_vsprintf_p-_vsprintf_p_l-_vswprintf_p-_vswprintf_p_l"></a>_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 
@@ -96,32 +97,32 @@ int _vswprintf_p_l(
 *biriktirme*<br/>
 Bu işlevin UNICODE sürümünde depolanacak en fazla karakter sayısı.
 
-*format*<br/>
+*formatını*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
 Bağımsız değişken listesi işaretçisi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_vsprintf_p** ve **_vswprintf_p** , yazılan karakter sayısını, Sonlandırıcı null karakterini veya bir çıkış hatası oluşursa negatif bir değeri geri döndürür.
+**_vsprintf_p** ve **_vswprintf_p** , sonlandıran null karakteri veya bir çıkış hatası oluşursa negatif bir değer dahil değil, yazılan karakter sayısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve sonra verilen verileri *arabelleğe*göre işaret eden belleğe biçimlendirir ve yazar.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve sonra verilen verileri *arabelleğe* göre işaret eden belleğe biçimlendirir ve yazar.
 
-Bu işlevler yalnızca konum parametrelerini destekledikleri için **vsprintf_s** ve **vswprintf_s** farklıdır. Daha fazla bilgi için bkz. [Printf_p konumsal Parameters](../../c-runtime-library/printf-p-positional-parameters.md).
+Bu işlevler, yalnızca konum parametrelerini destekledikleri **vsprintf_s** ve **vswprintf_s** farklıdır. Daha fazla bilgi için bkz. [Printf_p Konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-*Arabellek* veya *Biçim* parametreleri **null** işaretçilereyse, sayı sıfırsa veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Arabellek* veya *Biçim* parametreleri **null** işaretçilereyse, sayı sıfırsa veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vstprintf_p**|**_vsprintf_p**|**_vsprintf_p**|**_vswprintf_p**|
 |**_vstprintf_p_l**|**_vsprintf_p_l**|**_vsprintf_p_l**|**_vswprintf_p_l**|
@@ -130,10 +131,10 @@ Bu işlevler yalnızca konum parametrelerini destekledikleri için **vsprintf_s*
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_vsprintf_p**, **_vsprintf_p_l**|\<stdio. h > ve \<stdarg. h >|\<varargs. h > *|
-|**_vswprintf_p**, **_vswprintf_p_l**|\<stdio. h > veya \<wchar. h > ve \<stdarg. h >|\<varargs. h > *|
+|**_vsprintf_p**, **_vsprintf_p_l**|\<stdio.h> ve \<stdarg.h>|\<varargs.h>*|
+|**_vswprintf_p**, **_vswprintf_p_l**|\<stdio.h> or \<wchar.h> ve \<stdarg.h>|\<varargs.h>*|
 
-\*UNIX V uyumluluğu için gereklidir.
+\* UNIX V uyumluluğu için gereklidir.
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -188,10 +189,10 @@ This is a string
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
-[Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
+[vprintf Işlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
+[Biçim belirtimi sözdizimi: printf ve wprintf Işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>

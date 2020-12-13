@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OpenMP yan tümceleri'
 title: OpenMP Yan Tümceleri
 ms.date: 03/20/2019
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - schedule OpenMP clause
 - shared OpenMP clause
 ms.assetid: 806e7d8f-b204-4e4c-a12c-273ab540a7ca
-ms.openlocfilehash: 495f77003fa43922d49f2fc5203076cbf927f86f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3bdcb496238b2f8acef85819c43348c095293287
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505935"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342419"
 ---
 # <a name="openmp-clauses"></a>OpenMP Yan Tümceleri
 
@@ -49,7 +50,7 @@ Genel öznitelikler için:
 
 |Yan Tümce|Açıklama|
 |------|-----------|
-|[kullandıysanız](#if-openmp)|Bir döngünün paralel veya seri olarak yürütülmesi gerekip gerekmediğini belirtir.|
+|[if](#if-openmp)|Bir döngünün paralel veya seri olarak yürütülmesi gerekip gerekmediğini belirtir.|
 |[num_threads](#num-threads)|İş parçacığı ekipteki iş parçacığı sayısını ayarlar.|
 |[lerin](#ordered-openmp-clauses)|Döngüde [sıralı](openmp-directives.md#ordered-openmp-directives) bir yönerge kullanılacaksa, Parallel [for](openmp-directives.md#for-openmp) ifadesinde gereklidir.|
 |[çizelgesini](#schedule)|[For](openmp-directives.md#for-openmp) yönergesi için geçerlidir.|
@@ -59,11 +60,11 @@ Veri paylaşım öznitelikleri için:
 
 |Yan Tümce|Açıklama|
 |------|-----------|
-|[private](#private-openmp)|Her bir iş parçacığının kendi değişken örneğine sahip olması gerektiğini belirtir.|
+|[özelleştirme](#private-openmp)|Her bir iş parçacığının kendi değişken örneğine sahip olması gerektiğini belirtir.|
 |[firstprivate](#firstprivate)|Her bir iş parçacığının kendi değişken örneğine sahip olması gerektiğini ve değişkenin, paralel yapıdan önce mevcut olduğu için değişkenin değeri ile başlatılmış olması gerektiğini belirtir.|
 |[lastprivate](#lastprivate)|Kapsayan bağlamın değişkenin değişken sürümünün, son yinelemeyi (for-Loop yapısı) veya son bölümü (#pragma bölümleri) yürüttüğünü belirten özel sürüme eşit olarak ayarlandığını belirtir.|
 |[Paylaşılan](#shared-openmp)|Bir veya daha fazla değişkenin tüm iş parçacıkları arasında paylaşıldığını belirtir.|
-|[default](#default-openmp)|Bir paralel bölgedeki kapsama olmayan değişkenlerin davranışını belirtir.|
+|[varsayılanını](#default-openmp)|Bir paralel bölgedeki kapsama olmayan değişkenlerin davranışını belirtir.|
 |[reduction](#reduction)|Her iş parçacığı için özel bir veya daha fazla değişkenin, paralel bölgenin sonundaki bir azaltma işleminin konusu olduğunu belirtir.|
 |[copyin](#copyin)|Bir [threadprivate](openmp-directives.md#threadprivate) değişkeni için iş parçacıklarının ana iş parçacığının değerine erişmesine izin verir.|
 |[copyprivate](#copyprivate)|Bir veya daha fazla değişkenin tüm iş parçacıkları arasında paylaşıldığını belirtir.|
@@ -242,7 +243,7 @@ if(expression)
 
 ### <a name="parameters"></a>Parametreler
 
-*ifadesini*<br/>
+*expression*<br/>
 True (sıfır dışında) olarak değerlendirilirse bir integral ifadesi, paralel bölgedeki kodun paralel olarak yürütülmesine neden olur. İfade false (sıfır) olarak değerlendirilirse, paralel bölge seri olarak (tek bir iş parçacığı tarafından) yürütülür.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -409,7 +410,7 @@ Daha fazla bilgi için bkz. [2,3 paralel yapısı](../2-directives.md#23-paralle
 
 ### <a name="example"></a>Örnek
 
-Using [parallel](openmp-directives.md#parallel) yan tümcesinin bir örneği için bkz `num_threads` . Parallel.
+Using [](openmp-directives.md#parallel) yan tümcesinin bir örneği için bkz `num_threads` . Parallel.
 
 ## <a name="ordered"></a><a name="ordered-openmp-clauses"></a> lerin
 

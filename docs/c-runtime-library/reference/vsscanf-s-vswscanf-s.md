@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: vsscanf_s vswscanf_s'
 title: vsscanf_s, vswscanf_s
 ms.date: 11/04/2016
 api_name:
@@ -24,18 +25,18 @@ f1_keywords:
 - vswscanf_s
 - _vstscanf_s
 ms.assetid: 7b732e68-c6f4-4579-8917-122f5a7876e1
-ms.openlocfilehash: 9150642a6a21198ae43bdea5f33cc5a8f0b6a581
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3be22d5ea1399c426159bcd006e89585128cee55
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87189005"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342107"
 ---
 # <a name="vsscanf_s-vswscanf_s"></a>vsscanf_s, vswscanf_s
 
 Bir dizeden biçimlendirilen verileri okur. [Vsscanf, vswscanf](vsscanf-vswscanf.md) 'in bu SÜRÜMLERINDE, [CRT 'daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi güvenlik geliştirmeleri vardır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int vsscanf_s(
@@ -65,24 +66,24 @@ Değişken bağımsız değişken listesi.
 
 Bu işlevlerin her biri, başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Dönüş değeri bir hata **için veya** ilk dönüştürmeden önce dizenin sonuna ulaşılırsa.
 
-*Arabellek* veya *Biçim* **null** işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Arabellek* veya *Biçim* **null** işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Vsscanf_s** işlevi *arabellekteki* verileri, *Arglist* bağımsız değişken listesindeki her bağımsız değişken tarafından verilen konumlara okur. Bağımsız değişken listesindeki bağımsız değişkenler, *biçimde*bir tür belirticisine karşılık gelen bir türe sahip değişkenlere işaretçiler belirtir. Daha az güvenli olan **vsscanf**sürümünden farklı olarak, **[]** içinde bulunan **c**, **c**, **s**, **s**veya String-Control kümelerini tür alan karakterlerini kullandığınızda bir arabellek boyutu parametresi gerekir. Karakter cinsinden arabellek boyutu, her bir arabellek parametresinden hemen sonra ek bir parametre olarak sağlanmalıdır.
+**Vsscanf_s** işlevi *arabellekteki* verileri, *Arglist* bağımsız değişken listesindeki her bağımsız değişken tarafından verilen konumlara okur. Bağımsız değişken listesindeki bağımsız değişkenler, *biçimde* bir tür belirticisine karşılık gelen bir türe sahip değişkenlere işaretçiler belirtir. Daha az güvenli olan **vsscanf** sürümünden farklı olarak, **[]** içinde bulunan **c**, **c**, **s**, **s** veya String-Control kümelerini tür alan karakterlerini kullandığınızda bir arabellek boyutu parametresi gerekir. Karakter cinsinden arabellek boyutu, her bir arabellek parametresinden hemen sonra ek bir parametre olarak sağlanmalıdır.
 
 Arabellek boyutu, Sonlandırıcı null değerini içerir. Bir genişlik belirtimi alanı, okunan belirtecin arabelleğe sığmasını sağlamak için kullanılabilir. Bir genişlik belirtimi alanı kullanılmıyorsa ve okunan belirteç arabelleğe sığmayacak kadar büyük ise, bu arabelleğe hiçbir şey yazılmaz.
 
 Daha fazla bilgi için bkz. [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) ve [scanf türü alan karakterleri](../../c-runtime-library/scanf-type-field-characters.md).
 
 > [!NOTE]
-> Boyut parametresi **`unsigned`** **size_t**değil türündedir.
+> Boyut parametresi **`unsigned`** **size_t** değil türündedir.
 
 *Biçim* bağımsız değişkeni, giriş alanlarının yorumunu denetler ve **scanf_s** işlevi için *Biçim* bağımsız değişkeniyle aynı forma ve işleve sahiptir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.
 
-**vswscanf_s** , **vsscanf_s**geniş karakterli bir sürümüdür; **vswscanf_s** bağımsız değişkenler geniş karakterli dizelerdir. **vsscanf_s** çok baytlı onaltılık karakterleri işlemez. **Vswscanf_s** Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi takdirde, **vswscanf_s** ve **vsscanf_s** aynı şekilde davranır.
+**vswscanf_s** , **vsscanf_s** geniş karakterli bir sürümüdür; **vswscanf_s** bağımsız değişkenler geniş karakterli dizelerdir. **vsscanf_s** çok baytlı onaltılık karakterleri işlemez. **Vswscanf_s** Unicode tam genişlikli onaltılı veya "uyumluluk bölgesi" karakterlerini işlemez. Aksi takdirde, **vswscanf_s** ve **vsscanf_s** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: wcrtomb_s'
 title: wcrtomb_s
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - multibyte characters
 - characters, converting
 ms.assetid: 9a8a1bd0-1d60-463d-a3a2-d83525eaf656
-ms.openlocfilehash: 51985b008565cbe550065b85261b8beb53ed6f89
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6f716c6eccf1c8e9fe3afbc9271bc69976d87d73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342081"
 ---
 # <a name="wcrtomb_s"></a>wcrtomb_s
 
@@ -82,11 +83,11 @@ Bir hata oluşursa sıfır veya **errno** değeri döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wcrtomb_s** işlevi, $ *char*içinde bulunan değerden *mbstate*içinde bulunan değerden *mbchar*tarafından temsil edilen adrese kadar olan, belirtilen dönüştürme durumundan başlayarak geniş bir karakteri dönüştürür. *PReturnValue* değeri, dönüştürülecek baytların sayısı, en fazla **MB_CUR_MAX** baytı veya bir hata oluştuysa-1 olacaktır.
+**Wcrtomb_s** işlevi, $ *char* içinde bulunan değerden *mbstate* içinde bulunan değerden *mbchar* tarafından temsil edilen adrese kadar olan, belirtilen dönüştürme durumundan başlayarak geniş bir karakteri dönüştürür. *PReturnValue* değeri, dönüştürülecek baytların sayısı, en fazla **MB_CUR_MAX** baytı veya bir hata oluştuysa-1 olacaktır.
 
 *Mbstate* null ise, iç **mbstate_t** dönüştürme durumu kullanılır. *Wchar* içinde yer alan karakterin karşılık gelen bir çok baytlı karakteri yoksa, *pReturnValue* değeri-1 olur ve Işlev **errno** değeri **eilseq**' i döndürür.
 
-**Wcrtomb_s** işlevi [wctomb_s,](wctomb-s-wctomb-s-l.md) yeniden başlangıçlarından _wctomb_s_l farklıdır. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır. Örneğin, bir uygulama, **wcstombs_s**yerine **wcsrtombs_s** sonraki bir çağrı kullanıldıysa **wcslen**yerine **wcsrlen** kullanır.
+**Wcrtomb_s** işlevi [wctomb_s,](wctomb-s-wctomb-s-l.md) yeniden başlangıçlarından _wctomb_s_l farklıdır. Dönüştürme durumu, aynı veya diğer yeniden başlatılabilir işlevlere sonraki çağrılar için *mbstate* 'de depolanır. Yeniden başlatılabilir ve yeniden başlatılabilir işlevlerin kullanımı karıştırılması halinde sonuçlar tanımsızdır. Örneğin, bir uygulama, **wcstombs_s** yerine **wcsrtombs_s** sonraki bir çağrı kullanıldıysa **wcslen** yerine **wcsrlen** kullanır.
 
 C++ ' da, bu işlevin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
@@ -94,7 +95,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 ## <a name="exceptions"></a>Özel durumlar
 
-Geçerli iş parçacığında hiçbir işlev bu işlev yürütülürken ve *mbstate* null olduğunda, **wcrtomb_s** işlevi **setlocale** iş parçacığı güvenlidir.
+Geçerli iş parçacığında hiçbir işlev bu işlev yürütülürken ve *mbstate* null olduğunda, **wcrtomb_s** işlevi  iş parçacığı güvenlidir.
 
 ## <a name="example"></a>Örnek
 
@@ -144,11 +145,11 @@ The corresponding wide character "Q" was converted to a the "Q" multibyte charac
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wcrtomb_s**|\<wchar. h>|
+|**wcrtomb_s**|\<wchar.h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [mbsinit](mbsinit.md)<br/>

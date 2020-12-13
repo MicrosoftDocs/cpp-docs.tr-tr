@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: pin_ptr (C++/CLı)'
 title: pin_ptr (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - pinning pointers
 - pin_ptr keyword [C++]
 ms.assetid: 6c2e6c73-4ec2-4dce-8e1f-ccf3a9f9d0aa
-ms.openlocfilehash: 9a9144229b75c09a892ddbf5bd592e67c7c2b6d9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c7439b1e8bd1030a5f1326d24b38c47af5bb4874
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230564"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341080"
 ---
 # <a name="pin_ptr-ccli"></a>pin_ptr (C++/CLI)
 
-Yalnızca ortak dil çalışma zamanı ile kullanılan *sabitleme işaretçisini*bildirir.
+Yalnızca ortak dil çalışma zamanı ile kullanılan *sabitleme işaretçisini* bildirir.
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
@@ -33,7 +34,7 @@ Yalnızca ortak dil çalışma zamanı ile kullanılan *sabitleme işaretçisini
 
 *Sabitleme işaretçisi* , nesne işaret eden atık toplanan yığında taşınmasını engelleyen iç bir işaretçidir. Diğer bir deyişle, Sabitleme işaretçisinin değeri ortak dil çalışma zamanı tarafından değiştirilmez. Yönetilmeyen işlev çağrısının çözümlenmesi sırasında adresin beklenmedik şekilde değişmemesi için, yönetilen bir sınıfın adresini yönetilmeyen bir işleve geçirdiğinizde bu gereklidir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [cli::]pin_ptr<cv_qualifiertype>var = &initializer;
@@ -45,7 +46,7 @@ Yalnızca ortak dil çalışma zamanı ile kullanılan *sabitleme işaretçisini
 **`const`** veya **`volatile`** niteleyicileri. Varsayılan olarak sabitleme işaretçisi olur **`volatile`** . Yok ancak sabitleme işaretçisi bildirmek için bir hata değildir **`volatile`** .
 
 *türüyle*<br/>
-*Başlatıcı*türü.
+*Başlatıcı* türü.
 
 *l*<br/>
 **Pin_ptr** değişkeninin adı.
@@ -55,7 +56,7 @@ Bir başvuru türünün üyesi, yönetilen bir dizinin öğesi ya da yerel bir i
 
 ### <a name="remarks"></a>Açıklamalar
 
-**Pin_ptr** , yerel işaretçinin işlevselliğinin bir üst kümesini temsil eder. Bu nedenle, yerel bir işaretçiye atanabilecek her türlü şey bir **pin_ptr**da atanabilir. İç işaretçiye karşılaştırma ve işaretçi aritmetiği dahil olmak üzere yerel işaretçilerle aynı işlem kümesi gerçekleştirmesine izin verilir.
+**Pin_ptr** , yerel işaretçinin işlevselliğinin bir üst kümesini temsil eder. Bu nedenle, yerel bir işaretçiye atanabilecek her türlü şey bir **pin_ptr** da atanabilir. İç işaretçiye karşılaştırma ve işaretçi aritmetiği dahil olmak üzere yerel işaretçilerle aynı işlem kümesi gerçekleştirmesine izin verilir.
 
 Yönetilen bir sınıfın bir nesnesi veya alt nesnesi sabitlenebilir ve bu durumda ortak dil çalışma zamanı atık toplama sırasında taşınamaz. Bunun asıl kullanımı, yönetilmeyen bir işlev çağrısının gerçek parametresi olarak yönetilen verilere bir işaretçi geçirmektir. Bir koleksiyon çevrimi sırasında, çalışma zamanı sabitleme işaretçisi için oluşturulan meta verileri inceler ve işaret ettiği öğeyi taşımaz.
 
@@ -93,7 +94,7 @@ Sabitleme işaretçileri şu şekilde kullanılamaz:
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

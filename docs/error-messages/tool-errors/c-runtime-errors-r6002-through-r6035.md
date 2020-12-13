@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C çalışma zamanı hataları (Rxxxx)'
 title: C Çalışma Zamanı hataları
 ms.date: 04/16/2019
 f1_keywords:
@@ -10,16 +11,16 @@ f1_keywords:
 - R6023
 - R6034
 ms.assetid: 78019050-9a30-4b61-8250-a5702e0e2393
-ms.openlocfilehash: 8fc1c5365d4c09908235336575c80b9df6892f90
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 6e2e2df65a672f774e635b4f8bceb3b0d4d3cd57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856617"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341119"
 ---
 # <a name="c-runtime-errors-rxxxx"></a>C Çalışma Zamanı hataları (Rxxxx)
 
-C çalışma zamanı kitaplığı (CRT), uygulamanızı yüklenmiş veya çalışıyor olduğunda bir çalışma zamanı hatası bildirebilir. Her ileti için Microsoft Visual başvuruda bulunuyor olsa bile C++ çalışma zamanı kitaplığı değil anlama kitaplıkta bir hata yoktur. Bu hatalar, uygulamanızın kodunda bir hata veya çalışma zamanı kitaplığı işleyemez, düşük bellek gibi bir koşul belirtin. Uygulamanızı, engellemek veya hataları yakalamaya ve kolay bir hata sunmak için yazma iletisi sürece kullanıcılarınız için bunun yerine uygulamanızın son kullanıcılar bu hataları görebilirsiniz.
+C çalışma zamanı kitaplığı (CRT), uygulamanız yüklendiğinde veya çalıştırıldığında bir çalışma zamanı hatası bildirebilir. Her ileti Microsoft Visual C++ çalışma zamanı kitaplığına başvuruyorsa, kitaplıkta bir hata olduğu anlamına gelmez. Bu hatalar, uygulamanızın kodunda bir hata ya da çalışma zamanı kitaplığının düşük bellek gibi işleyemeyeceğini belirten bir koşul gösterir. Uygulamanızı engellemek veya hataları yakalayıp bunun yerine kullanıcılarınıza kolay bir hata iletisi sunmak için uygulamanızın son kullanıcıları bu hataları görebilir.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -39,8 +40,8 @@ C çalışma zamanı kitaplığı (CRT), uygulamanızı yüklenmiş veya çalı�
 [C çalışma zamanı hatası R6031](../../error-messages/tool-errors/c-runtime-error-r6031.md) \
 [C çalışma zamanı hatası R6032](../../error-messages/tool-errors/c-runtime-error-r6032.md) \
 [C çalışma zamanı hatası R6033](../../error-messages/tool-errors/c-runtime-error-r6033.md) \
-[C Çalışma Zamanı Hatası R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md)
+[C çalışma zamanı hatası R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md)
+[C/C++ Derleyicisi ve derleme araçları hata ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md)

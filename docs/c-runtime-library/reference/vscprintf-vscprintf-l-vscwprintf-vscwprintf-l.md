@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l'
 title: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
 ms.date: 11/04/2016
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - vscprintf function
 - vscprintf_l function
 ms.assetid: 1bc67d3d-21d5-49c9-ac8d-69e26b16a3c3
-ms.openlocfilehash: e7448c7f3313165009de15bbdf4c1bd9baaba3d1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 434a444b7b2c8a552c148c7c369a63b0c4a9acf2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342172"
 ---
 # <a name="_vscprintf-_vscprintf_l-_vscwprintf-_vscwprintf_l"></a>_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
 
@@ -81,35 +82,35 @@ int _vscwprintf_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*format*<br/>
+*formatını*<br/>
 Biçim denetimi dizesi.
 
 *argptr*<br/>
 Bağımsız değişken listesi işaretçisi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_vscprintf** , bağımsız değişken listesi tarafından işaret edilen dize yazdırıldıysa veya belirtilen biçimlendirme kodları kullanılarak bir dosyaya ya da arabelleğe gönderildiğinde üretilecek karakter sayısını döndürür. Döndürülen değer, Sonlandırıcı null karakterini içermiyor. **_vscwprintf** , geniş karakterler için aynı işlevi gerçekleştirir.
+**_vscprintf** , bağımsız değişken listesi tarafından işaret edilen dize yazdırıldıysa veya belirtilen biçimlendirme kodları kullanılarak bir dosyaya ya da arabelleğe gönderildiğinde oluşturulacak karakter sayısını döndürür. Döndürülen değer, Sonlandırıcı null karakterini içermiyor. **_vscwprintf** , geniş karakterler için aynı işlevi gerçekleştirir.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
-*Biçim* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Biçim* null Işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Her *bağımsız değişken* (varsa), *biçimde*karşılık gelen biçim belirtimine göre dönüştürülür. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir.
+Her *bağımsız değişken* (varsa), *biçimde* karşılık gelen biçim belirtimine göre dönüştürülür. Biçim sıradan karakterlerden oluşur ve [printf](printf-printf-l-wprintf-wprintf-l.md)için *Biçim* bağımsız değişkeniyle aynı form ve işleve sahiptir.
 
 > [!IMPORTANT]
 > *Biçim* Kullanıcı tanımlı bir dize ise, null olarak sonlandırıldığından ve doğru sayıda ve parametre türünde olduğundan emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vsctprintf**|**_vscprintf**|**_vscprintf**|**_vscwprintf**|
 |**_vsctprintf_l**|**_vscprintf_l**|**_vscprintf_l**|**_vscwprintf_l**|
@@ -118,8 +119,8 @@ Her *bağımsız değişken* (varsa), *biçimde*karşılık gelen biçim belirti
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_vscprintf**, **_vscprintf_l**|\<stdio. h >|
-|**_vscwprintf**, **_vscwprintf_l**|\<stdio. h > veya \<wchar. h >|
+|**_vscprintf**, **_vscprintf_l**|\<stdio.h>|
+|**_vscwprintf**, **_vscwprintf_l**|\<stdio.h> veya \<wchar.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -129,9 +130,9 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
 [sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
-[vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
+[vprintf Işlevleri](../../c-runtime-library/vprintf-functions.md)<br/>

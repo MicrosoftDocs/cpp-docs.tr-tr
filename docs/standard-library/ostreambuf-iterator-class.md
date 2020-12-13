@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: ostreambuf_iterator sınıfı'
 title: ostreambuf_iterator Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,18 +17,18 @@ helpviewer_keywords:
 - std::ostreambuf_iterator [C++], traits_type
 - std::ostreambuf_iterator [C++], failed
 ms.assetid: dad1e624-2f45-4e94-8887-a885e95f9071
-ms.openlocfilehash: e4e21bd0c1323afdc2c81a0e581c3557b8040193
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5b492c3de8cce296f7828c25947711b3666ee891
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87202447"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342276"
 ---
 # <a name="ostreambuf_iterator-class"></a>ostreambuf_iterator Sınıfı
 
 Sınıf şablonu ostreambuf_iterator, ardışık karakter öğelerini ayıklama **işleci>>** çıkış akışına yazan bir çıkış yineleyici nesnesini açıklar. `ostreambuf_iterator`S, çıkış akışına eklenmekte olan nesne türünde genel bir tür yerine karakterlerin bulunduğu [ostream_iterator sınıfından](../standard-library/ostream-iterator-class.md) farklıdır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class CharType = char class Traits = char_traits <CharType>>
@@ -80,7 +81,7 @@ Ostreambuf_iterator sınıfının, bir çıkış yineleyici için gereksinimleri
 
 **Ad alanı:** std
 
-## <a name="ostreambuf_iteratorchar_type"></a><a name="char_type"></a>ostreambuf_iterator:: char_type
+## <a name="ostreambuf_iteratorchar_type"></a><a name="char_type"></a> ostreambuf_iterator:: char_type
 
 Öğesinin karakter türü için sağlayan bir tür `ostreambuf_iterator` .
 
@@ -130,7 +131,7 @@ by charOutBuf are: OUT.
 */
 ```
 
-## <a name="ostreambuf_iteratorfailed"></a><a name="failed"></a>ostreambuf_iterator:: başarısız
+## <a name="ostreambuf_iteratorfailed"></a><a name="failed"></a> ostreambuf_iterator:: başarısız
 
 Çıkış akışı arabelleğine ekleme hatasını sınar.
 
@@ -144,7 +145,7 @@ bool failed() const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, **`true`** üyenin önceki bir sürümünde `operator=` , **subf**_-> çağrısı `sputc` **EOF**olarak döndürülen ' ı döndürür.
+Üye işlevi, **`true`** üyenin önceki bir sürümünde `operator=` , **subf** _-> çağrısı `sputc` **EOF** olarak döndürülen ' ı döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -181,9 +182,9 @@ No insertions failed.
 */
 ```
 
-## <a name="ostreambuf_iteratoroperator"></a><a name="op_star"></a>ostreambuf_iterator:: işleci\*
+## <a name="ostreambuf_iteratoroperator"></a><a name="op_star"></a> ostreambuf_iterator:: işleci\*
 
-\* *I*  =  *x*çıkış yineleyici ifadesini uygulamak için kullanılan bir işlevsiz bir başvuru işleci.
+\* *I*  =  *x* çıkış yineleyici ifadesini uygulamak için kullanılan bir işlevsiz bir başvuru işleci.
 
 ```cpp
 ostreambuf_iterator<CharType, Traits>& operator*();
@@ -195,7 +196,7 @@ Ostreamarabelleğe yineleyici nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işleç yalnızca çıkış yineleyici ifadesi \* *ı*  =  *x* ' te karakterleri akış arabelleğine çıkarmak için çalışır. Bir ostreamarabelleğe Yineleyici, yineleyiciyi döndürür; ** \* iter** , **iter**döndürüyor
+Bu işleç yalnızca çıkış yineleyici ifadesi \* *ı*  =  *x* ' te karakterleri akış arabelleğine çıkarmak için çalışır. Bir ostreamarabelleğe Yineleyici, yineleyiciyi döndürür; **\* iter** , **iter** döndürüyor
 
 ### <a name="example"></a>Örnek
 
@@ -228,7 +229,7 @@ OUT
 */
 ```
 
-## <a name="ostreambuf_iteratoroperator"></a><a name="op_add_add"></a>ostreambuf_iterator:: operator + +
+## <a name="ostreambuf_iteratoroperator"></a><a name="op_add_add"></a> ostreambuf_iterator:: operator + +
 
 İşlem çağrılmadan önce, bir ostream yineleyicisini aynı karaktere getiren bir işlevsel artış işleci.
 
@@ -243,7 +244,7 @@ Başlangıçta başvurulan karaktere veya dönüştürülebilir olan uygulama ta
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleci, \* *ı*  =  *x*çıkış yineleyici ifadesini uygulamak için kullanılır.
+İşleci, \* *ı*  =  *x* çıkış yineleyici ifadesini uygulamak için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -276,7 +277,7 @@ OUT
 */
 ```
 
-## <a name="ostreambuf_iteratoroperator"></a><a name="op_eq"></a>ostreambuf_iterator:: operator =
+## <a name="ostreambuf_iteratoroperator"></a><a name="op_eq"></a> ostreambuf_iterator:: operator =
 
 İşleç, ilişkili akış ara belleğine bir karakter ekler.
 
@@ -295,7 +296,7 @@ Akış arabelleğine yerleştirilen karaktere başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çıkış \* *i*  =  akışına yazmak için ı*x* çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci.
+Çıkış \*   =  akışına yazmak için ı *x* çıkış yineleyici ifadesini uygulamak için kullanılan atama işleci.
 
 ### <a name="example"></a>Örnek
 
@@ -328,7 +329,7 @@ OUT
 */
 ```
 
-## <a name="ostreambuf_iteratorostreambuf_iterator"></a><a name="ostreambuf_iterator_ostreambuf_iterator"></a>ostreambuf_iterator:: ostreambuf_iterator
+## <a name="ostreambuf_iteratorostreambuf_iterator"></a><a name="ostreambuf_iterator_ostreambuf_iterator"></a> ostreambuf_iterator:: ostreambuf_iterator
 
 `ostreambuf_iterator`Çıkış akışına karakter yazmak için başlatılan bir oluşturur.
 
@@ -347,7 +348,7 @@ ostreambuf_iterator(ostream_type& Ostr) throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, çıkış akışı arabellek işaretçisini *strBuffer*ile başlatır.
+İlk Oluşturucu, çıkış akışı arabellek işaretçisini *strBuffer* ile başlatır.
 
 İkinci Oluşturucu çıkış akışı arabellek işaretçisini ile başlatır `Ostr` . `rdbuf`. Saklı işaretçinin bir null işaretçi olmaması gerekir.
 
@@ -384,7 +385,7 @@ These characters are being written to the output stream.
 */
 ```
 
-## <a name="ostreambuf_iteratorostream_type"></a><a name="ostreambuf_iterator_ostream_type"></a>ostreambuf_iterator:: ostream_type
+## <a name="ostreambuf_iteratorostream_type"></a><a name="ostreambuf_iterator_ostream_type"></a> ostreambuf_iterator:: ostream_type
 
 Akış türü için sağlayan bir tür `ostream_iterator` .
 
@@ -394,13 +395,13 @@ typedef basicOstream<CharType, Traits> ostream_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür için bir eş anlamlı`basicOstream`\< **CharType**, **Traits**>
+Tür için bir eş anlamlı `basicOstream`\< **CharType**, **Traits**>
 
 ### <a name="example"></a>Örnek
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [ostreambuf_iterator](#ostreambuf_iterator_ostreambuf_iterator) `ostream_type` .
 
-## <a name="ostreambuf_iteratorstreambuf_type"></a><a name="streambuf_type"></a>ostreambuf_iterator:: streambuf_type
+## <a name="ostreambuf_iteratorstreambuf_type"></a><a name="streambuf_type"></a> ostreambuf_iterator:: streambuf_type
 
 Akış türü için sağlayan bir tür `ostreambuf_iterator` .
 
@@ -416,7 +417,7 @@ Tür, için bir eş anlamlı olur `basic_streambuf` \< **CharType**, **Traits**>
 
 Bildirme ve kullanma hakkında bir örnek için bkz. [ostreambuf_iterator](#ostreambuf_iterator_ostreambuf_iterator) `streambuf_type` .
 
-## <a name="ostreambuf_iteratortraits_type"></a><a name="traits_type"></a>ostreambuf_iterator:: traits_type
+## <a name="ostreambuf_iteratortraits_type"></a><a name="traits_type"></a> ostreambuf_iterator:: traits_type
 
 Öğesinin karakter nitelikleri türü için sağlayan bir tür `ostream_iterator` .
 

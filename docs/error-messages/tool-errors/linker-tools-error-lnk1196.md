@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1196'
 title: Bağlayıcı Araçları Hatası LNK1196
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1196
 ms.assetid: d0c6859b-85aa-45cc-9f5f-fc1f7070ab5a
-ms.openlocfilehash: 4dea4707eca79520931fa7b4fbcac9a194a4e4a9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a66ad675eea642500a3aff1e6b54e9003950f22b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80195155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341665"
 ---
 # <a name="linker-tools-error-lnk1196"></a>Bağlayıcı Araçları Hatası LNK1196
 

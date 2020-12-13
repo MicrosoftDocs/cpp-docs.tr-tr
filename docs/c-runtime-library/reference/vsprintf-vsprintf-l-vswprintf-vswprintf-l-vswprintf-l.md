@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l'
 title: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 ms.date: 09/03/2019
 api_name:
@@ -49,12 +50,12 @@ helpviewer_keywords:
 - vsprintf function
 - _vstprintf function
 ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
-ms.openlocfilehash: 9efb30428a146ec72c48d68ec411b21ca5bfef79
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: dd7e06817049f26e80c4be9f1d3f3df40444feaf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945335"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342120"
 ---
 # <a name="vsprintf-_vsprintf_l-vswprintf-_vswprintf_l-__vswprintf_l"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 
@@ -140,26 +141,26 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**vsprıntf** ve **vswprintf** , yazılan karakter sayısını, Sonlandırıcı null karakterini veya bir çıkış hatası oluşursa negatif bir değeri geri döndürür. *Arabellek* veya *Biçim* null işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+**vsprıntf** ve **vswprintf** , yazılan karakter sayısını, Sonlandırıcı null karakterini veya bir çıkış hatası oluşursa negatif bir değeri geri döndürür. *Arabellek* veya *Biçim* null işaretçisiyse, bu işlevler [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve sonra verilen verileri *arabelleğe*göre işaret eden belleğe biçimlendirir ve yazar.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve sonra verilen verileri *arabelleğe* göre işaret eden belleğe biçimlendirir ve yazar.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
 > [!IMPORTANT]
-> **Vsprıntf**' i kullanarak, yazılan karakter sayısını sınırlamanın bir yolu yoktur, bu da bu işlevi kullanan kodun arabellek taşmalarına açıktır. Bunun yerine [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) kullanın veya bir arabelleğin ne kadar büyük olacağını öğrenmek için [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) ' i çağırın. Ayrıca, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **Vsprıntf**' i kullanarak, yazılan karakter sayısını sınırlamanın bir yolu yoktur, bu da bu işlevi kullanan kodun arabellek taşmalarına açıktır. Bunun yerine [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) kullanın veya bir arabelleğin ne kadar büyük olacağını öğrenmek için [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) çağırın. Ayrıca, *biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**vswprintf** , **size_t**türünde ikinci parametreyi ( *Count*) gerektiren ISO C standardına uyar. Standart olmayan eski davranışı zorlamak için **_CRT_NON_CONFORMING_SWPRINTFS**tanımlayın. Eski davranış gelecek bir sürümde olmayabilir, bu nedenle kodun yeni uyumlu davranışı kullanacak şekilde değiştirilmesi gerekir.
+**vswprintf** , **size_t** türünde ikinci parametreyi ( *Count*) gerektiren ISO C standardına uyar. Olmayan eski davranışı zorlamak için **_CRT_NON_CONFORMING_SWPRINTFS** tanımlayın. Eski davranış gelecek bir sürümde olmayabilir, bu nedenle kodun yeni uyumlu davranışı kullanacak şekilde değiştirilmesi gerekir.
 
-' C++De, bu işlevlerde bu işlevlerin daha yeni ve güvenli karşılıkları çağıran şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
+C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vstprintf**|**vsprıntf**|**vsprıntf**|**vswprintf**|
 |**_vstprintf_l**|**_vsprintf_l**|**_vsprintf_l**|**_vswprintf_l**|
@@ -168,10 +169,10 @@ Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alı
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**vsprıntf**, **_vsprintf_l**|\<stdio. h > ve \<stdarg. h >|\<varargs. h > *|
-|**vswprintf**, **_vswprintf_l**|\<stdio. h > veya \<wchar. h > ve \<stdarg. h >|\<varargs. h > *|
+|**vsprıntf**, **_vsprintf_l**|\<stdio.h> ve \<stdarg.h>|\<varargs.h>*|
+|**vswprintf**, **_vswprintf_l**|\<stdio.h> or \<wchar.h> ve \<stdarg.h>|\<varargs.h>*|
 
-\*UNIX V uyumluluğu için gereklidir.
+\* UNIX V uyumluluğu için gereklidir.
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -231,5 +232,5 @@ This is a string
 [Biçim belirtimi sözdizimi: printf ve wprintf Işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)\
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)\
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)

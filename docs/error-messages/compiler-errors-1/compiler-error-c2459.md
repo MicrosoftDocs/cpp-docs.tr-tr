@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2459'
 title: Derleyici hatası C2459
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2459
 ms.assetid: 81e29f4c-5b60-40fb-9557-1cdc630d77e8
-ms.openlocfilehash: c49c348968f750c7e5c64ab9ef4f298d3fc74f67
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 35cd97b93a7095aedc0015e2e7d9910172425263
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74743997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341873"
 ---
 # <a name="compiler-error-c2459"></a>Derleyici hatası C2459
 

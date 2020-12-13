@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Section pragma'
 title: bölüm pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - pragmas, section
 - section pragma
 ms.assetid: c67215e9-2c4a-4b0f-b691-2414d2e2d96f
-ms.openlocfilehash: 47ae2ff2503317e937e2b3a497357afbd5522a64
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: f4a719c60fd5bdf4f8e8841aab88f82c30b92a95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342289"
 ---
 # <a name="section-pragma"></a>bölüm pragması
 
 Bir. obj dosyasında bir bölüm oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#pragma bölümü (** "*bölüm-adı*" [ **,** *öznitelikler* ] **)**
 
@@ -27,7 +28,7 @@ Bir. obj dosyasında bir bölüm oluşturur.
 
 Koşullar *segmenti* ve *bölümü* Bu makalede aynı anlama sahiptir.
 
-Bir bölüm tanımlandıktan sonra, derlemenin geri kalanı için geçerli kalır. Ancak, [__declspec (allocate)](../cpp/allocate.md)kullanmanız gerekir veya bölümüne hiçbir şey konmazsınız.
+Bir bölüm tanımlandıktan sonra, derlemenin geri kalanı için geçerli kalır. Ancak, [__declspec (tahsis)](../cpp/allocate.md)kullanmanız gerekir veya bölüme hiçbir şey yerleştirilmelidir.
 
 *bölüm adı* , bölümün adı haline gelen gerekli bir parametredir. Ad hiçbir standart bölüm adıyla çakışmamalıdır. Bir bölüm oluştururken kullanmamanız gereki adların listesi için bkz. [/section](../build/reference/section-specify-section-attributes.md) .
 
@@ -35,20 +36,20 @@ Bir bölüm tanımlandıktan sonra, derlemenin geri kalanı için geçerli kalı
 
 |Öznitelik|Açıklama|
 |-|-|
-|**read**|Verilerde okuma işlemlerine izin verir.|
+|**okuyamaz**|Verilerde okuma işlemlerine izin verir.|
 |**write**|Veriler üzerinde yazma işlemlerine izin verir.|
 |**yürütme**|Kodun yürütülmesini sağlar.|
 |**Paylaşılan**|, Görüntüyü yükleyen tüm süreçler arasında bölümü paylaşır.|
 |**nopage**|Bölümü disk belleğine değil olarak işaretler. Win32 cihaz sürücüleri için faydalıdır.|
 |**NoCache**|Bölümü önbelleklenebilir olarak işaretler. Win32 cihaz sürücüleri için faydalıdır.|
 |**mı**|Bölümü discardable olarak işaretler. Win32 cihaz sürücüleri için faydalıdır.|
-|**remove**|Bölümü bellekte yerleşik değil olarak işaretler. Yalnızca sanal aygıt sürücüleri (V*x*D) için.|
+|**temizlenmesine**|Bölümü bellekte yerleşik değil olarak işaretler. Yalnızca sanal aygıt sürücüleri (V *x* D) için.|
 
 Herhangi bir öznitelik belirtmezseniz, bölümünde **okuma** ve **yazma** öznitelikleri vardır.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, birinci bölüm pragması bölümü ve özniteliklerini tanımlar. Kullanılarak `mysec` `j` bildirilmemişolduğundan`__declspec(allocate)`tamsayı yerleştirmiyor. Bunun yerine `j` , veri bölümüne gider. Tamsayı `i` , `__declspec(allocate)` depolama sınıfı özniteliğinin `mysec` bir sonucu olarak ' a gider.
+Bu örnekte, birinci bölüm pragması bölümü ve özniteliklerini tanımlar. `j`Kullanılarak bildirilmemiş olduğundan tamsayı yerleştirmiyor `mysec` `__declspec(allocate)` . Bunun yerine, `j` veri bölümüne gider. Tamsayı, `i` `mysec` depolama sınıfı özniteliğinin bir sonucu olarak ' a gider `__declspec(allocate)` .
 
 ```cpp
 // pragma_section.cpp

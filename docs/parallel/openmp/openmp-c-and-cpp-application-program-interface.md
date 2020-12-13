@@ -1,23 +1,24 @@
 ---
+description: 'Daha fazla bilgi edinin: OpenMP C ve C++ uygulaması program arabirimi'
 title: OpenMP C ve C++ Uygulaması Program Arabirimi
 ms.date: 03/20/2019
 ms.assetid: efec8865-a755-452f-838f-ddbfecab44d4
-ms.openlocfilehash: dc3ab50059f16abc2cc6148395ef6982e5f85449
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a06c2640c78a48b88a243a4d11153ec808f83208
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362705"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342458"
 ---
 # <a name="openmp-c-and-c-application-program-interface"></a>OpenMP C ve C++ Uygulaması Program Arabirimi
 
-OpenMP C ve C++ API sürüm 2.0 belirtimi OpenMP mimarisini gözden geçirme panosundan açıklandığı gibi ele alınmaktadır.
+OpenMP mimarisi Inceleme panosundaki sürüm 2,0 belirtiminde belgelenen şekilde OpenMP C ve C++ API 'sini açıklar.
 
-Sürüm 2.0 Mart 2002
+Sürüm 2,0 Mart 2002
 
-Telif Hakkı 1997-2002 OpenMP mimarisini gözden geçirme Pano.
+Telif hakkı 1997-2002 OpenMP mimarisi Inceleme panosu.
 
-Sağlanan OpenMP mimarisi Review Board telif hakkı bildirimi tüm ücret veya malzemesinin bu bölümü kopyalamak için izin verilir ve bu belgenin başlığı görüntülenir. Kopyalama OpenMP mimarisi Review Board izinle olması koşuluyla, bildirim olduğu.
+Bu malzemenin tamamen veya bir parçası olmadan kopyalama izni verilir; OpenMP mimarisi gözden geçirme panosu telif hakkı bildirimi ve bu belgenin başlığı görüntülenir. Kopyalamanın, OpenMP mimarisi Inceleme panosunun izniyle olduğunu fark edebilirsiniz.
 
 ## <a name="contents"></a>İçindekiler
 

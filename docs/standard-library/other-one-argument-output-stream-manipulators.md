@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: diğer One-Argument çıkış akışı düzenlemeleri'
 title: Diğer Tek Bağımsız Değişkenli Çıkış Akışı Manipülatörleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - output streams, one-argument manipulators
 ms.assetid: e381dee8-6b16-4cef-805a-4a6a1d2b696b
-ms.openlocfilehash: 8fe30a0df70d84f7a8a9eafcdf22439cbe321043
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3ad50216375de1ca5e2d9fe41b206aa01a8c8e80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342263"
 ---
 # <a name="other-one-argument-output-stream-manipulators"></a>Diğer Tek Bağımsız Değişkenli Çıkış Akışı Manipülatörleri
 

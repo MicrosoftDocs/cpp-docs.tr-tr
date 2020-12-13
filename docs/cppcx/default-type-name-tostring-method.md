@@ -1,21 +1,22 @@
 ---
-title: 'Varsayılan:: (type_name):: ToString yöntemi'
+description: 'Daha fazla bilgi: varsayılan::(type_name):: ToString yöntemi'
+title: 'Varsayılan::(type_name):: ToString yöntemi'
 ms.date: 12/30/2016
 f1_keywords:
 - VCCORLIB/Platform::Object::ToString
 ms.assetid: 2541955f-d844-4bd8-944d-185198c86579
-ms.openlocfilehash: 22ced2fc13f550a4a1f1c809c4854670450ad288
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b46476cbfc0dfcbfa38954cc8d9e68c1ebdd315c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62347278"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342029"
 ---
-# <a name="defaulttypenametostring-method"></a>Varsayılan:: (type_name):: ToString yöntemi
+# <a name="defaulttype_nametostring-method"></a>Varsayılan::(type_name):: ToString yöntemi
 
-Geçerli türünü temsil eden bir dize döndürür.
+Geçerli türü temsil eden bir dize döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 String^ ToString();
@@ -23,18 +24,18 @@ String^ ToString();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli nesneyi temsil eden bir dize.
+Geçerli nesneyi temsil eden dize.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**En düşük desteklenen istemci:** Windows 8
+**Desteklenen en düşük istemci:** Windows 8
 
-**Sunucu desteklenen en düşük:** Windows Server 2012
+**Desteklenen en düşük sunucu:** Windows Server 2012
 
-**Namespace:** varsayılan
+**Ad alanı:** varsayılan
 
-**Başlık:** vccorlib.h
+**Üstbilgi:** vccorlib. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Varsayılan Ad Alanı](../cppcx/default-namespace.md)
+[varsayılan ad alanı](../cppcx/default-namespace.md)

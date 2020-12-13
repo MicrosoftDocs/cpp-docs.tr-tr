@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CrtSetReportHook'
 title: _CrtSetReportHook
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - CrtSetReportHook function
 - _CrtSetReportHook function
 ms.assetid: 1ae7c64f-8c84-4797-9574-b59f00f7a509
-ms.openlocfilehash: 77c1e499c66a76027e872783e256754ef72e465d
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1e99e17b3a245dfe78e5a0f7367e422f4dc97600
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342250"
 ---
 # <a name="_crtsetreporthook"></a>_CrtSetReportHook
 
@@ -55,19 +56,19 @@ C çalışma zamanı hata ayıklama raporlama işlemine bağlamak için yeni ist
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Crtsetreporthook** , bir uygulamanın kendi raporlama işlevini C çalışma zamanı hata ayıklama kitaplığı raporlama işleminde kullanmasına izin verir. Sonuç olarak, hata ayıklama raporu oluşturmak için [_Crtdbgreport](crtdbgreport-crtdbgreportw.md) çağrıldığında, önce uygulamanın raporlama işlevi çağırılır. Bu işlevsellik, bir uygulamanın hata ayıklama raporlarını filtreleme gibi işlemleri gerçekleştirmesini sağlar; böylece belirli bir ayırma türlerine odaklanabilir veya **_Crtdbgreport**kullanılarak kullanılamayan hedeflere bir rapor gönderebilirsiniz. [_Hata ayıklama](../../c-runtime-library/debug.md) tanımlanmadığında, **_Crtsetreporthook** çağrıları ön işleme sırasında kaldırılır.
+**_CrtSetReportHook** , bir uygulamanın kendi raporlama işlevini C çalışma zamanı hata ayıklama kitaplığı raporlama işleminde kullanmasına izin verir. Sonuç olarak, bir hata ayıklama raporu oluşturmak için [_CrtDbgReport](crtdbgreport-crtdbgreportw.md) her çağrıldığında, önce uygulamanın raporlama işlevi çağırılır. Bu işlevsellik, bir uygulamanın hata ayıklama raporlarını filtreleme gibi işlemleri gerçekleştirmesini sağlar; böylece belirli bir ayırma türlerine odaklanabilir veya **_CrtDbgReport** kullanarak kullanılamayan hedeflere rapor gönderebilirsiniz. [_DEBUG](../../c-runtime-library/debug.md) tanımlı olmadığında, **_CrtSetReportHook** çağrıları ön işleme sırasında kaldırılır.
 
-**_Crtsetreporthook**'in daha sağlam bir sürümü için bkz. [_Crtsetreporthook2](crtsetreporthook2-crtsetreporthookw2.md).
+**_CrtSetReportHook** daha sağlam bir sürümü için bkz. [_CrtSetReportHook2](crtsetreporthook2-crtsetreporthookw2.md).
 
-**_Crtsetreporthook** Işlevi, *reporthook* içinde belirtilen yeni istemci tanımlı raporlama işlevini yüklüyor ve önceki istemci tanımlı kancayı döndürüyor. Aşağıdaki örnek, istemci tanımlı bir rapor kancasını prototip olarak yazmanız gerektiğini göstermektedir:
+**_CrtSetReportHook** Işlevi, *reporthook* içinde belirtilen yeni istemci tanımlı raporlama işlevini yüklüyor ve önceki istemci tanımlı kancayı döndürüyor. Aşağıdaki örnek, istemci tanımlı bir rapor kancasını prototip olarak yazmanız gerektiğini göstermektedir:
 
 ```C
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
-Burada *reportType* , hata ayıklama rapor türüdür ( **_CRT_WARN**, **_CRT_ERROR**veya **_CRT_ASSERT**), *ileti* raporda yer almak için tam olarak birleştirilmiş hata ayıklama Kullanıcı iletisidir ve **returnValue** değeridir **_Crtdbgreport**tarafından döndürülmesi gereken istemci tanımlı raporlama işlevi tarafından belirtilir. Kullanılabilir rapor türlerinin tamamen açıklaması için, bkz. [_Crtsetreportmode](crtsetreportmode.md) işlevi.
+Burada *reportType* , hata ayıklama rapor türüdür (**_CRT_WARN**, **_CRT_ERROR** veya **_CRT_ASSERT**), *ileti* raporda yer almak için tam olarak birleştirilmiş hata ayıklama Kullanıcı iletisidir ve **returnValue** , **_CrtDbgReport** tarafından döndürülmesi gereken istemci tanımlı raporlama işlevi tarafından belirtilen değerdir. Kullanılabilir rapor türlerinin tamamı hakkında açıklama için [_CrtSetReportMode](crtsetreportmode.md) işlevine bakın.
 
-İstemci tanımlı raporlama işlevi, hata ayıklama iletisini daha fazla raporlama gerekmeden tamamen işlediğinde, işlev **true**döndürmelidir. İşlev **false**döndürdüğünde, rapor türü, mod ve dosya için geçerli ayarları kullanarak hata ayıklama raporu oluşturmak için **_CrtDbgReport** çağırılır. Ayrıca, uygulama, **_Crtdbgreport** Return değerini **returnValue**olarak belirterek, bir hata ayıklama kesmenin oluşup oluşmadığını da denetleyebilir. Hata ayıklama raporunun nasıl yapılandırıldığı ve oluşturulduğu hakkında açıklayıcı bir açıklama için, bkz. **_Crtsetreportmode**, [_CrtSetReportFile](crtsetreportfile.md)ve **_CrtDbgReport**.
+İstemci tanımlı raporlama işlevi, hata ayıklama iletisini daha fazla raporlama gerekmeden tamamen işlediğinde, işlev **true** döndürmelidir. İşlev **false** döndürdüğünde, rapor türü, mod ve dosya için geçerli ayarları kullanarak hata ayıklama raporu oluşturmak için **_CrtDbgReport** çağırılır. Buna ek olarak, **_CrtDbgReport** dönüş değeri **dönüşte** belirtilerek, uygulama bir hata ayıklama kesmenin oluşup oluşmadığını da denetleyebilir. Hata ayıklama raporunun nasıl yapılandırıldığı ve oluşturulduğu hakkında ayrıntılı bir açıklama için bkz. **_CrtSetReportMode**, [_CrtSetReportFile](crtsetreportfile.md)ve **_CrtDbgReport**.
 
 Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemci tanımlı kanca işlevlerinizi yazma hakkında daha fazla bilgi için bkz. [hata ayıklama kanca Işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -78,7 +79,7 @@ Diğer kanca özellikli çalışma zamanı işlevlerini kullanma ve kendi istemc
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_CrtSetReportHook**|\<Crtdbg. h >|
+|**_CrtSetReportHook**|\<crtdbg.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -88,5 +89,5 @@ Yalnızca [C çalışma zamanı kitaplıklarının](../../c-runtime-library/crt-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtGetReportHook](crtgetreporthook.md)<br/>

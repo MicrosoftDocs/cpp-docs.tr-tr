@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l'
 title: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _vsnwprintf_s function
 - formatted text [C++]
 ms.assetid: 147ccfce-58c7-4681-a726-ef54ac1c604e
-ms.openlocfilehash: edb534eb533d63c9298b7b7e9aced1be3e8652d9
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 27c91d6064b4a92da8a6f09e7d7e5b6bfb8bf95f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342159"
 ---
 # <a name="vsnprintf_s-_vsnprintf_s-_vsnprintf_s_l-_vsnwprintf_s-_vsnwprintf_s_l"></a>vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 
@@ -136,15 +137,15 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 **vsnprintf_s**, **_vsnprintf_s** ve **_vsnwprintf_s** yazılan karakter sayısını, Sonlandırıcı null değerini veya verilerin kesilmesi ya da bir çıkış hatası oluşursa negatif bir değer döndürür.
 
-* *Count* değeri *sizeOfBuffer* değerinden küçükse ve verilerin karakter sayısı *sayı ' den*küçük ya da buna eşitse veya *sayı* [_TRUNCATE](../../c-runtime-library/truncate.md) , verilerin karakter sayısı *sizeOfBuffer*değerinden küçükse, tüm veriler yazılır ve karakter sayısı döndürülür.
+* *Count* değeri *sizeOfBuffer* değerinden küçükse ve verilerin karakter sayısı *sayı ' den* küçük ya da buna eşitse veya *sayı* [_TRUNCATE](../../c-runtime-library/truncate.md) , verilerin karakter sayısı *sizeOfBuffer* değerinden küçükse, tüm veriler yazılır ve karakter sayısı döndürülür.
 
 * *Count* değeri *sizeOfBuffer* değerinden küçükse ancak veriler *sayı* karakterlerini aşarsa, ilk *sayı* karakteri yazılır. Kalan verilerin kesilmesi oluşur ve-1 geçersiz parametre işleyicisi çağırmadan döndürülür.
 
-* *Count* değeri [_TRUNCATE](../../c-runtime-library/truncate.md) , ya da veri karakter sayısı, *sizeOfBuffer*öğesine eşitse ya da aşarsa, dizenin çoğu *arabelleğe* sığacaktır (null değeri sonlandırma ile). Kalan verilerin kesilmesi oluşur ve-1 geçersiz parametre işleyicisi çağırmadan döndürülür.
+* *Count* değeri [_TRUNCATE](../../c-runtime-library/truncate.md) , ya da veri karakter sayısı, *sizeOfBuffer* öğesine eşitse ya da aşarsa, dizenin çoğu *arabelleğe* sığacaktır (null değeri sonlandırma ile). Kalan verilerin kesilmesi oluşur ve-1 geçersiz parametre işleyicisi çağırmadan döndürülür.
 
-* *Count* değeri, *sizeOfBuffer* değerine eşitse veya aşarsa, ancak veri karakter sayısı *sizeOfBuffer*değerinden küçükse, tüm veriler yazılır (null değeri sonlandırılıyor) ve karakter sayısı döndürülür.
+* *Count* değeri, *sizeOfBuffer* değerine eşitse veya aşarsa, ancak veri karakter sayısı *sizeOfBuffer* değerinden küçükse, tüm veriler yazılır (null değeri sonlandırılıyor) ve karakter sayısı döndürülür.
 
-* Eğer *Count* ve veri karakter sayısı her Ikisi de *sizeOfBuffer*değerine eşitse ya da aşarsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütme geçersiz parametre işleyiciden sonra devam ediyorsa, bu işlevler *arabelleği* boş bir dizeye ayarlar, **errno** , **ERANGE**ayarla ve-1 döndürür.
+* Eğer *Count* ve veri karakter sayısı her Ikisi de *sizeOfBuffer* değerine eşitse ya da aşarsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütme geçersiz parametre işleyiciden sonra devam ediyorsa, bu işlevler *arabelleği* boş bir dizeye ayarlar, **errno** , **ERANGE** ayarla ve-1 döndürür.
 
 * *Arabellek* veya *Biçim* **null** işaretçisiyse veya *sayı* sıfırdan küçükse veya eşitse, geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** olarak **EINVAL** ve-1 döndürür.
 
@@ -159,11 +160,11 @@ Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format
 
 ## <a name="remarks"></a>Açıklamalar
 
-**vsnprintf_s** **_vsnprintf_s**aynıdır. **vsnprintf_s** , ANSI standardına uyumluluk için eklenmiştir. **_vnsprintf** geriye dönük uyumluluk için tutulur.
+**vsnprintf_s** **_vsnprintf_s** aynıdır. **vsnprintf_s** , ANSI standardına uyumluluk için eklenmiştir. **_vnsprintf** geriye dönük uyumluluk için tutulur.
 
 Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, ardından, belirtilen verilerin karakter *sayısını* *arabelleğe* göre işaret eden belleğe göre biçimlendirir ve yazar ve bir Sonlandırıcı null değeri ekler.
 
-*Count* [_TRUNCATE](../../c-runtime-library/truncate.md)ise, bu işlevler dizenin büyük bir kısmını, bir Sonlandırıcı null değeri ayrılırken *arabelleğe* sığacak şekilde yazar. Tüm dize (null değeri sonlandırılıyor) *arabelleğe*sığıyorsa, bu işlevler yazılan karakter sayısını (Sonlandırıcı null dahil değil) döndürür; Aksi takdirde, bu işlevler, kesilmenin oluştuğunu göstermek için-1 döndürür.
+*Count* [_TRUNCATE](../../c-runtime-library/truncate.md)ise, bu işlevler dizenin büyük bir kısmını, bir Sonlandırıcı null değeri ayrılırken *arabelleğe* sığacak şekilde yazar. Tüm dize (null değeri sonlandırılıyor) *arabelleğe* sığıyorsa, bu işlevler yazılan karakter sayısını (Sonlandırıcı null dahil değil) döndürür; Aksi takdirde, bu işlevler, kesilmenin oluştuğunu göstermek için-1 döndürür.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
@@ -171,7 +172,7 @@ Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alı
 > *Biçimin* Kullanıcı tanımlı bir dize olmadığından emin olun. Daha fazla bilgi için bkz. [arabellek taşmalarını önleme](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 > [!NOTE]
-> Sonlandırıcı null değerinin boş olduğundan emin olmak için, *sayımın* arabellek uzunluğundan kesinlikle daha az olduğundan emin olun veya **_TRUNCATE**kullanın.
+> Sonlandırıcı null değerinin boş olduğundan emin olmak için, *sayımın* arabellek uzunluğundan kesinlikle daha az olduğundan emin olun veya **_TRUNCATE** kullanın.
 
 C++ ' da, bu işlevlerin kullanılması şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimini ortadan kaldırır) ve eski, güvenli olmayan işlevleri otomatik olarak yeni, güvenli karşılıklarıyla değiştirebilir. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 

@@ -1,5 +1,6 @@
 ---
-title: Yeni başvuru, gcnew (C++/CLI ve C++/CX)
+description: 'Daha fazla bilgi edinin: ref New, gcnew (C++/CLı ve C++/CX)'
+title: ref new, gcnew (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 f1_keywords:
@@ -10,24 +11,24 @@ helpviewer_keywords:
 - ref new keyword (C++)
 - gcnew keyword [C++]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
-ms.openlocfilehash: f7269a62d7899df4eb89f6dd9487310c0fda0b4d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bfe93d9d3966f8796c0fc0ab2cdf7b80115b3d33
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181817"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341067"
 ---
-# <a name="ref-new-gcnew--ccli-and-ccx"></a>Yeni başvuru, gcnew (C++/CLI ve C++/CX)
+# <a name="ref-new-gcnew--ccli-and-ccx"></a>ref new, gcnew (C++/CLI ve C++/CX)
 
-**Ref New** Aggregate anahtar sözcüğü, nesnenin erişilemez hale geldiği ve ayrılan nesneye bir tanıtıcı ([^](handle-to-object-operator-hat-cpp-component-extensions.md)) döndüren bir türün bir örneğini ayırır.
+**Ref New** Aggregate anahtar sözcüğü, nesne erişilemez hale geldiğinde ve ayrılan nesneye bir tanıtıcı () döndüren atık olarak toplanan bir türün bir örneğini ayırır [^](handle-to-object-operator-hat-cpp-component-extensions.md) .
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
 **Ref New** tarafından ayrılan bir türün örneği için bellek otomatik olarak serbest bırakılır.
 
-Bir **başvuru yeni** işlem, bellek ayıramadığında `OutOfMemoryException` oluşturur.
+Bir **başvuru yeni** bir işlem `OutOfMemoryException` , bellek ayıramadığında atar.
 
-Yerel C++ türlerin belleğinin nasıl ayrıldığı ve serbest bırakıldığı hakkında daha fazla bilgi için, bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md).
+Yerel C++ türleri için bellek ayırma ve serbest bırakma hakkında daha fazla bilgi için, bkz. [New ve delete işleçleri](../cpp/new-and-delete-operators.md).
 
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı
 
@@ -39,7 +40,7 @@ Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-Yönetilen bir tür için bellek (başvuru veya değer türü), **gcnew**tarafından ayrılır ve çöp toplama kullanılarak serbest bırakılır.
+Yönetilen bir tür için bellek (başvuru veya değer türü), **gcnew** tarafından ayrılır ve çöp toplama kullanılarak serbest bırakılır.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -89,4 +90,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)

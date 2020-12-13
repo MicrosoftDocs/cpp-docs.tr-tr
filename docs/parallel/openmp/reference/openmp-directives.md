@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OpenMP yönergeleri'
 title: OpenMP Yönergeleri
 ms.date: 03/20/2019
 f1_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - single OpenMP directive
 - threadprivate OpenMP directive
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
-ms.openlocfilehash: 21270e8cdeb17b6d06d903d328962435c627759f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 03730b1f5cda0972dbf86b345c6e44bdad4e949b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503825"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342406"
 ---
 # <a name="openmp-directives"></a>OpenMP Yönergeleri
 
@@ -77,8 +78,8 @@ Bir bellek konumunun otomatik olarak güncelleştirileceğini belirtir.
 
 ### <a name="parameters"></a>Parametreler
 
-*ifadesini*<br/>
-Bellek konumu birden fazla yazmaya karşı korumak istediğiniz *lvalue*olan bir ifade.
+*expression*<br/>
+Bellek konumu birden fazla yazmaya karşı korumak istediğiniz *lvalue* olan bir ifade.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -306,7 +307,7 @@ Bir `for` döngü. Tanımsız davranış, döngüde Kullanıcı kodu `for` Dizin
 
 `for`Yönergesi aşağıdaki yan tümceleri destekler:
 
-- [private](openmp-clauses.md#private-openmp)
+- [özelleştirme](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
 - [lastprivate](openmp-clauses.md#lastprivate)
 - [reduction](openmp-clauses.md#reduction)
@@ -535,10 +536,10 @@ Seçim Sıfır veya daha fazla yan tümce, **açıklamalar** bölümüne bakın.
 
 `parallel`Yönergesi aşağıdaki yan tümceleri destekler:
 
-- [kullandıysanız](openmp-clauses.md#if-openmp)
-- [private](openmp-clauses.md#private-openmp)
+- [if](openmp-clauses.md#if-openmp)
+- [özelleştirme](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
-- [default](openmp-clauses.md#default-openmp)
+- [varsayılanını](openmp-clauses.md#default-openmp)
 - [Paylaşılan](openmp-clauses.md#shared-openmp)
 - [copyin](openmp-clauses.md#copyin)
 - [reduction](openmp-clauses.md#reduction)
@@ -599,7 +600,7 @@ Seçim Sıfır veya daha fazla yan tümce, **açıklamalar** bölümüne bakın.
 
 `sections`Yönergesi aşağıdaki yan tümceleri destekler:
 
-- [private](openmp-clauses.md#private-openmp)
+- [özelleştirme](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
 - [lastprivate](openmp-clauses.md#lastprivate)
 - [reduction](openmp-clauses.md#reduction)
@@ -652,7 +653,7 @@ Seçim Sıfır veya daha fazla yan tümce, **açıklamalar** bölümüne bakın.
 
 `single`Yönergesi aşağıdaki yan tümceleri destekler:
 
-- [private](openmp-clauses.md#private-openmp)
+- [özelleştirme](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
 - [copyprivate](openmp-clauses.md#copyprivate)
 - [nowait](openmp-clauses.md#nowait)

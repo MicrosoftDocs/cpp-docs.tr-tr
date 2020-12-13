@@ -1,4 +1,5 @@
 ---
+description: ': Sealed (C++/CLı ve C++/CX) hakkında daha fazla bilgi'
 title: sealed (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - sealed keyword [C++]
 ms.assetid: 3d0d688a-41aa-45f5-a25a-65c44206521e
-ms.openlocfilehash: ab5d5b32ceb87a3b1ccf08d170889dd4825f6c17
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a1ec201f9b03d1f2cf4d11eb71ba166f48bc6cea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341054"
 ---
 # <a name="sealed--ccli-and-ccx"></a>sealed (C++/CLI ve C++/CX)
 
@@ -45,7 +46,7 @@ Bir işlev tarafından döndürülen tür.
 
 Ref sınıfları ve bunların sanal üye işlevleri için **Sealed** anahtar sözcüğünü kullanın. Daha fazla bilgi için bkz. [geçersiz kılma belirticileri ve yerel derlemeler](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
-Tür nitelik `__is_sealed(type)` kullanarak bir türün korumalı olup olmadığını derleme zamanında tespit edebilirsiniz. Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Bir türün nitelik türünü kullanarak korumalı olup olmadığını derleme zamanında tespit edebilirsiniz `__is_sealed(type)` . Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
 **Sealed** , bağlama duyarlı bir anahtar sözcüktür.  Daha fazla bilgi için bkz. [bağlama duyarlı anahtar sözcükler](context-sensitive-keywords-cpp-component-extensions.md).
 
@@ -140,4 +141,4 @@ public:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[.NET ve UWP İçin Bileşen Uzantıları](component-extensions-for-runtime-platforms.md)
+[.NET ve UWP için bileşen uzantıları](component-extensions-for-runtime-platforms.md)
