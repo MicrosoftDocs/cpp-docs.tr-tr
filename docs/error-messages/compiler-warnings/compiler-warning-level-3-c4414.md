@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Derleyici Uyarısı (düzey 3) C4414'
 title: Derleyici Uyarısı (düzey 3) C4414
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4414
 ms.assetid: bc81d3ad-55dc-4a6b-a6f2-ec0ef38347df
-ms.openlocfilehash: 4625f6bdb4aa6fe86ca881a8e36e5673e55ccb87
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c753852d40a044e99b91aa8a5976811aab52c5ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80185600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177178"
 ---
 # <a name="compiler-warning-level-3-c4414"></a>Derleyici Uyarısı (düzey 3) C4414
 

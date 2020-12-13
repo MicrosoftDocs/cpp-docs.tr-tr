@@ -1,16 +1,17 @@
 ---
+description: Daha fazla bilgi edinin:/clr ile C stili atamalar (C++/CLı)
 title: -clr ile C Türü Atamalar (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - C-style casts and /clr
 ms.assetid: d2a4401a-156a-4da9-8d12-923743e26913
-ms.openlocfilehash: daaf92e36550c5479903dec4869b1cb116c0a65a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: aedd794ca0f305f0cc292fb9048bd8dcceace7d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219800"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176996"
 ---
 # <a name="c-style-casts-with-clr-ccli"></a>/clr ile C Türü Atamalar (C++/CLI)
 
@@ -48,7 +49,7 @@ int main() {
 }
 ```
 
-Aşağıdaki örnek, bir **safe_cast**eşlenen C stili bir tür dönüştürmeyi gösterir.
+Aşağıdaki örnek, bir **safe_cast** eşlenen C stili bir tür dönüştürmeyi gösterir.
 
 ```cpp
 // cstyle_casts_2.cpp
@@ -158,7 +159,7 @@ int main() {
 
 ## <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

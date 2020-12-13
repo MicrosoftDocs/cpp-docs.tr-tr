@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2033'
 title: Derleyici hatası C2033
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2033
 ms.assetid: fd5a1637-9db2-4c98-a7cc-b63b39737cd9
-ms.openlocfilehash: 6fec222117f28e885d6187e6733559433f4943d3
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c7beabafb544f1ad76f6a8eabe24bd20a7e63f62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175436"
 ---
 # <a name="compiler-error-c2033"></a>Derleyici hatası C2033
 

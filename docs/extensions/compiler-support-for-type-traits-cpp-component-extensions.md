@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tür nitelikleri için derleyici desteği (C++/CLı ve C++/CX)'
 title: Tür Özellikleri için Derleyici Desteği (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -61,12 +62,12 @@ helpviewer_keywords:
 - __is_simple_value_class keyword [C++]
 - __has_trivial_constructor keyword [C++]
 ms.assetid: cd440630-0394-48c0-a16b-1580b6ef5844
-ms.openlocfilehash: 16c79e05c6ba6f50a3e6c0d6dd5f48963be40fa8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ec9efe1305a844779b4848cbae155d2946488d11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176931"
 ---
 # <a name="compiler-support-for-type-traits-ccli-and-ccx"></a>Tür Özellikleri için Derleyici Desteği (C++/CLI ve C++/CX)
 
@@ -253,7 +254,7 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
 
    **`true`** Türün bir sanal yok ediciye sahip olup olmadığını döndürür.
 
-   `__has_virtual_destructor`Ayrıca platform türlerinde ve bir platform türündeki Kullanıcı tanımlı yok edicinin sanal bir yıkıcıdır.
+   `__has_virtual_destructor` Ayrıca platform türlerinde ve bir platform türündeki Kullanıcı tanımlı yok edicinin sanal bir yıkıcıdır.
 
     ```cpp
     // has_virtual_destructor.cpp
@@ -272,7 +273,7 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
 
    **`true`** Türün soyut bir tür olup olmadığını döndürür. Yerel soyut türler hakkında daha fazla bilgi için bkz. [soyut sınıflar](../cpp/abstract-classes-cpp.md).
 
-   `__is_abstract`Platform türleri için de geçerlidir. En az bir üyesi olan bir arabirim, en az bir soyut üyeye sahip bir başvuru türü olan bir soyut türdür. Soyut platform türleri hakkında daha fazla bilgi için bkz. [abstract](abstract-cpp-component-extensions.md).
+   `__is_abstract` Platform türleri için de geçerlidir. En az bir üyesi olan bir arabirim, en az bir soyut üyeye sahip bir başvuru türü olan bir soyut türdür. Soyut platform türleri hakkında daha fazla bilgi için bkz. [abstract](abstract-cpp-component-extensions.md).
 
     ```cpp
     // is_abstract.cpp
@@ -291,7 +292,7 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
 
    **`true`** Her iki tür de aynı ise, ilk türün ikinci türün temel sınıfı olup olmadığını döndürür.
 
-   `__is_base_of`Platform türleri üzerinde de kullanılabilir. Örneğin, **`true`** ilk tür bir [arabirim sınıfı](interface-class-cpp-component-extensions.md) ise ve ikinci tür arabirimi uygularsa bu döndürülür.
+   `__is_base_of` Platform türleri üzerinde de kullanılabilir. Örneğin, **`true`** ilk tür bir [arabirim sınıfı](interface-class-cpp-component-extensions.md) ise ve ikinci tür arabirimi uygularsa bu döndürülür.
 
     ```cpp
     // is_base_of.cpp
@@ -407,7 +408,7 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
 
    **`true`** Tür, Oluşturucu ya da özel veya korumalı statik olmayan üyeler, temel sınıf ve sanal işlev olmadan bir sınıf veya birleşim ise döndürür. PODs hakkında daha fazla bilgi için bkz. C++ Standard, sections 8.5.1/1, 9/4 ve 3.9/10.
 
-   `__is_pod`, temel türlerde false döndürür.
+   `__is_pod` , temel türlerde false döndürür.
 
     ```cpp
     #include <stdio.h>
@@ -522,11 +523,11 @@ Aşağıdaki liste, derleyici tarafından desteklenen tür nitelikleri içerir. 
 
 ### <a name="remarks"></a>Açıklamalar
 
-`__has_finalizer(` *type* `)` Bu platform sonlandırıcıları desteklemediğinden nitelik tür türü desteklenmiyor.
+`__has_finalizer(`  `)` Bu platform sonlandırıcıları desteklemediğinden nitelik tür türü desteklenmiyor.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
@@ -536,7 +537,7 @@ Derleyici seçeneği:`/ZW`
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

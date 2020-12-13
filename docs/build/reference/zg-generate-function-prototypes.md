@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/zg (Işlev prototipleri üret)
 title: /Zg (İşlev Prototipleri Üret)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - -Zg compiler option [C++]
 - generate function prototypes compiler option
 ms.assetid: c8df1b46-24ff-46f2-8356-e0a144b21dd2
-ms.openlocfilehash: 591460b78a461aa2e33f873b79d6dcec0277f99f
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: ee0bed48f15acae867d344a60a6d42f3b17c7e85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446203"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178881"
 ---
 # <a name="zg-generate-function-prototypes"></a>/Zg (İşlev Prototipleri Üret)
 
-Kaldırıldı. Kaynak dosyada tanımlanan her işlev için bir işlev prototipi oluşturur, ancak kaynak dosyanın derleme yapmaz.
+Kaldırıldı. Kaynak dosyada tanımlanan her işlev için bir işlev prototipi oluşturur, ancak kaynak dosyayı derlemez.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /Zg
@@ -29,13 +30,13 @@ Kaldırıldı. Kaynak dosyada tanımlanan her işlev için bir işlev prototipi 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu derleyici seçeneği artık kullanılabilir. Bu, Visual Studio 2015'te kaldırıldı. Bu sayfa için Visual Studio'nun eski sürümlerini kullanıcılarına kalır.
+Bu derleyici seçeneği artık kullanılamıyor. Visual Studio 2015 ' de kaldırılmıştır. Bu sayfa, Visual Studio 'nun eski sürümlerinin kullanıcıları için kalır.
 
-İşlev prototipi işlev dönüş türü ve bağımsız değişken türü listesi içerir. Bağımsız değişken türü listesi işlevin biçimsel parametreler türlerinden oluşturulur. Kaynak dosyada zaten mevcut herhangi bir işlev prototipleri göz ardı edilir.
+İşlev prototipi, işlev dönüş türünü ve bir bağımsız değişken türü listesini içerir. Bağımsız değişken türü listesi, işlevin biçimsel parametre türlerinden oluşturulur. Kaynak dosyada zaten bulunan tüm işlev prototipleri yoksayıldı.
 
-Prototipleri listesini standart çıktıya yazılır. Bu liste, gerçek bağımsız değişkenler ve bir işlevin biçimsel parametreler uyumlu olduğunu doğrulamak yararlı bulabilirsiniz. Standart çıkışı bir dosyaya yeniden yönlendirerek listesini kaydedebilirsiniz. Kullanabileceğiniz sonra **#include** işlev prototipleri listesi kaynak dosyanıza bir parçası yapmak için. Bunun yapılması, derleyicinin tür bağımsız değişkeni denetimi gerçekleştirmek neden olur.
+Prototiptürlerin listesi standart çıktıya yazılır. Bu listeyi, bir işlevin gerçek bağımsız değişkenlerinin ve biçimsel parametrelerinin uyumlu olduğunu doğrulamak için yararlı bulabilirsiniz. Standart çıktıyı bir dosyaya yönlendirerek listeyi kaydedebilirsiniz. Ardından, işlev prototipleri listesini kaynak dosyanızın bir parçası yapmak için **#include** kullanabilirsiniz. Bunun yapılması derleyicinin bağımsız değişken tür denetimi gerçekleştirmesine neden olur.
 
-Kullanırsanız **/Zg** seçeneği ve programınızı yapısı, enum veya birleşim türü (veya gibi türler için işaretçiler) sahip biçimsel parametre içeriyor, her yapı, enum veya birleşim türü bildirimini (name) bir etiketi olması gerekir. Aşağıdaki örnekte etiket adı olan `MyStruct`.
+**/Zg** seçeneğini kullanırsanız ve programınız struct, Enum veya Union türü (veya bu tür işaretçiler) içeren biçimsel parametreler içeriyorsa, her bir yapının, numaralandırmanın veya birleşim türünün bildirimi bir etikete (ad) sahip olmalıdır. Aşağıdaki örnekte, etiket adı ' dir `MyStruct` .
 
 ```C
 // Zg_compiler_option.c
@@ -44,17 +45,17 @@ typedef struct MyStruct { int i; } T2;
 void f2(T2 * t) {}
 ```
 
-**/Zg** seçeneği, Visual Studio 2005'te kullanım dışı bırakıldı ve Visual Studio 2015'te kaldırılmıştır. MSVC derleyicisi, eski C stili kod desteğini kaldırmıştır. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](compiler-options-listed-by-category.md).
+**/Zg** seçeneği visual Studio 2005 ' de kullanımdan kaldırılmıştır ve visual Studio 2015 ' de kaldırılmıştır. MSVC derleyicisi, daha eski, C stili kod için desteği kaldırdı. Kullanım dışı bırakılan derleyici seçeneklerinin bir listesi için, bkz. [kategoriye göre listelenen derleyici seçeneklerinde](compiler-options-listed-by-category.md) **kullanım dışı ve kaldırılmış derleyici seçenekleri** .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **C/C++** klasör.
+1. **C/C++** klasörünü tıklatın.
 
-1. Tıklayın **komut satırı** özellik sayfası.
+1. **Komut satırı** Özellik sayfasına tıklayın.
 
-1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna derleyici seçeneğini yazın.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -62,5 +63,5 @@ void f2(T2 * t) {}
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

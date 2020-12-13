@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Vektörleştirici ve paralelleştirme iletileri'
 title: Vektör haline getirici ve paralel hale getirici iletileri
 ms.date: 04/17/2019
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 1cdbb40d06d2b3da7e6444e3a6743c6e6ae1c874
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 54465331b3301c8f792763b9d7d1e29b8d62b1a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405006"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177139"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör haline getirici ve paralel hale getirici iletileri
 
 [Otomatik paralelleştirme ve otomatik vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) ' ı, etkinlik hakkında bilgi iletileri ve bilgilendirici iletiler olarak ayarlamak için, [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) Microsoft C++ derleyici seçenekleri ' ni kullanabilirsiniz. Bu makalede, neden kodları ve iletiler açıklanmaktadır.
 
-## <a name="informational-messages"></a><a name="BKMK_InformationalMessages"></a>Bilgilendirici iletiler
+## <a name="informational-messages"></a><a name="BKMK_InformationalMessages"></a> Bilgilendirici iletiler
 
 Belirttiğiniz raporlama düzeyine bağlı olarak, aşağıdaki bilgi iletilerinin biri her döngü için görünür.
 
@@ -35,9 +36,9 @@ Neden kodları hakkında daha fazla bilgi için bu makalenin sonraki bölümüne
 
 Aşağıdaki bölümlerde paralelleştirme ve Vektörleştirici için olası neden kodları listelenmektedir.
 
-## <a name="5xx-reason-codes"></a><a name="BKMK_ReasonCode50x"></a>5xx neden kodları
+## <a name="5xx-reason-codes"></a><a name="BKMK_ReasonCode50x"></a> 5xx neden kodları
 
-5*xx* neden kodları paralelleştirme ve Vektörleştirici için geçerlidir.
+5 *xx* neden kodları paralelleştirme ve Vektörleştirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -198,9 +199,9 @@ void code_504(int *A) {
 }
 ```
 
-## <a name="10xx-reason-codes"></a><a name="BKMK_ReasonCode100x"></a>10xx neden kodları
+## <a name="10xx-reason-codes"></a><a name="BKMK_ReasonCode100x"></a> 10xx neden kodları
 
-10*xx* neden kodları paralelleştirme için geçerlidir.
+10 *xx* neden kodları paralelleştirme için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -407,9 +408,9 @@ void code_1010()
 }
 ```
 
-## <a name="11xx-reason-codes"></a><a name="BKMK_ReasonCode110x"></a>11xx neden kodları
+## <a name="11xx-reason-codes"></a><a name="BKMK_ReasonCode110x"></a> 11xx neden kodları
 
-11*xx* neden kodları Vektörleştirici için geçerlidir.
+11 *xx* neden kodları Vektörleştirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -555,9 +556,9 @@ void code_1106(int *A)
 }
 ```
 
-## <a name="12xx-reason-codes"></a><a name="BKMK_ReasonCode120x"></a>12XX neden kodları
+## <a name="12xx-reason-codes"></a><a name="BKMK_ReasonCode120x"></a> 12XX neden kodları
 
-12*xx* neden kodları vektörleştiriciye uygulanır.
+12 *xx* neden kodları vektörleştiriciye uygulanır.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -630,9 +631,9 @@ void code_1203(int *A)
 }
 ```
 
-## <a name="13xx-reason-codes"></a><a name="BKMK_ReasonCode130x"></a>13xx neden kodları
+## <a name="13xx-reason-codes"></a><a name="BKMK_ReasonCode130x"></a> 13xx neden kodları
 
-13*xx* neden kodları Vektörleştirici için geçerlidir.
+13 *xx* neden kodları Vektörleştirici için geçerlidir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -762,9 +763,9 @@ void code_1305( S_1305 *s, S_1305 x)
 }
 ```
 
-## <a name="14xx-reason-codes"></a><a name="BKMK_ReasonCode140x"></a>14xx neden kodları
+## <a name="14xx-reason-codes"></a><a name="BKMK_ReasonCode140x"></a> 14xx neden kodları
 
-Vektörleştirme ile uyumsuz bir seçenek belirtildiğinde 14*xx* neden kodları oluşur.
+Vektörleştirme ile uyumsuz bir seçenek belirtildiğinde 14 *xx* neden kodları oluşur.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|
@@ -834,9 +835,9 @@ void code_1404(int *A)
 }
 ```
 
-## <a name="15xx-reason-codes"></a><a name="BKMK_ReasonCode150x"></a>15xx neden kodları
+## <a name="15xx-reason-codes"></a><a name="BKMK_ReasonCode150x"></a> 15xx neden kodları
 
-15*xx* neden kodları diğer ad için geçerlidir. Bellekte bir konuma iki farklı ad tarafından erişilebildiğinde yumuşatma meydana gelir.
+15 *xx* neden kodları diğer ad için geçerlidir. Bellekte bir konuma iki farklı ad tarafından erişilebildiğinde yumuşatma meydana gelir.
 
 |Neden Kodu|Açıklama|
 |-----------------|-----------------|

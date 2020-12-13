@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fpreset'
 title: _fpreset
 ms.date: 04/05/2018
 api_name:
@@ -27,18 +28,18 @@ helpviewer_keywords:
 - floating-point numbers, resetting math package
 - _fpreset function
 ms.assetid: f31c6a04-b464-4f07-a7c4-42133360e328
-ms.openlocfilehash: 842b9c794d04d71f8f6ca97e35fb3cac2f7bb1ec
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 7818e0f02f6165c5041245e342a81b1dde25b091
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957010"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178699"
 ---
 # <a name="_fpreset"></a>_fpreset
 
 Kayan nokta paketini sıfırlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void _fpreset( void );
@@ -46,7 +47,7 @@ void _fpreset( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fönayar** işlevi kayan nokta matematik paketini yeniden başlatır. **_fönayar** genellikle **sinyal**, **sistem**veya **_exec** veya **_üretme** işlevleri ile kullanılır. Bir program kayan nokta hata sinyallerini (**Sigfpe**) **sinyalle**yakaladığı takdirde, **_fönayar** çağırarak ve **longjmp**kullanarak kayan nokta hatalarından güvenle kurtulayabilirsiniz.
+**_Fpreset** işlevi kayan nokta matematik paketini yeniden başlatır. **_fpreset** genellikle **sinyal**, **sistem** veya **_exec** veya **_spawn** işlevleri ile kullanılır. Bir program kayan nokta hata sinyallerini (**Sigfpe**) **sinyalle** yakaladığı takdirde, **_fpreset** çağırarak ve **longjmp** kullanarak kayan nokta hatalarından güvenle kurtulayabilirsiniz.
 
 Ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlığını desteklediğinden, bu işlev [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ile derlenirken kullanım dışıdır.
 
@@ -54,7 +55,7 @@ Ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlığını d
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_fpreset**|\<float. h >|
+|**_fpreset**|\<float.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -174,8 +175,8 @@ Error 131: Divide by zero
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[_exec, _wexec İşlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[signal](signal.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[sinyal](signal.md)<br/>
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

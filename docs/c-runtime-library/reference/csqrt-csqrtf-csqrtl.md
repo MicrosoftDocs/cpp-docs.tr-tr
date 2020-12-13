@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: csqrt, csqrtf, csqrtl'
 title: csqrt, csqrtf, csqrtl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - csqrtf function
 - csqrtl function
 ms.assetid: b65f086b-0f55-4622-a7a3-4e79d9c9c05c
-ms.openlocfilehash: 1afc79f0fba9663ec5fbb0a556da52c3a1c55ca6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: c9c18002f353f0dedf5a02ffe80e061651f41fa3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178751"
 ---
 # <a name="csqrt-csqrtf-csqrtl"></a>csqrt, csqrtf, csqrtl
 
@@ -66,7 +67,7 @@ _Lcomplex csqrtl(
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -80,13 +81,13 @@ Karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **csqrt** 'ın aşırı yüklerini çağırabilirsiniz. C programında **csqrt** her zaman bir **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **csqrt** 'ın aşırı yüklerini çağırabilirsiniz. C programında **csqrt** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**csqrt**, **csqrtf**, **csqrtl**|\<karmaşık. h >|\<ccomplex >|
+|**csqrt**,               **csqrtf**, **csqrtl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

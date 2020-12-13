@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: csinh, csinhf, csinhl'
 title: csinh, csinhf, csinhl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - csinhf function
 - csinhl function
 ms.assetid: cc616e55-d14d-4cd3-91f0-fbee03ce5edf
-ms.openlocfilehash: 7b377b34ee1a9f60f502c59b8c4ea1eed19c7500
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 1c34e403fa4fb023ee7ddbb707f7af789034559b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178777"
 ---
 # <a name="csinh-csinhf-csinhl"></a>csinh, csinhf, csinhl
 
@@ -66,7 +67,7 @@ _Lcomplex csinhl(
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -75,13 +76,13 @@ Radyan cinsinden bir açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **csinh** aşırı yüklerini çağırabilirsiniz. C programında **csinh** her zaman **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **csinh** aşırı yüklerini çağırabilirsiniz. C programında **csinh** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**csinh**, **csinhf**, **csinhl**|\<karmaşık. h >|\<ccomplex >|
+|**csinh**,               **csinhf**, **csinhl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

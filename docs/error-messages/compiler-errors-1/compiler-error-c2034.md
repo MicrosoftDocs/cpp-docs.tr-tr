@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2034'
 title: Derleyici hatası C2034
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2034
 ms.assetid: 953d70fa-bde9-4ce6-a55d-741e7bc63ff4
-ms.openlocfilehash: c416c833edf522e4e67cf84aaf7fc945ee8a7972
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: cbc3f8788e495a95b1eb5fb848322815b6f78d57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175423"
 ---
 # <a name="compiler-error-c2034"></a>Derleyici hatası C2034
 

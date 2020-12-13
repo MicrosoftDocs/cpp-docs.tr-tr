@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: başvuru sınıfı ve başvuru yapısı (C++/CLı ve C++/CX)'
 title: başvuru sınıfı ve başvuru yapısı (C++/CLı ve C++/CX)
 ms.date: 05/30/2019
 ms.topic: reference
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - value struct keyword [C++]
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-ms.openlocfilehash: 1ec29dcc09cd338136102c0f3b769055d5143973
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 633314e27118cfceddef449ab944c6dd0dbc4f9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176983"
 ---
 # <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>başvuru sınıfı ve başvuru yapısı (C++/CLı ve C++/CX)
 
@@ -26,7 +27,7 @@ ms.locfileid: "90075809"
 
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class_access ref class name modifier : inherit_access base_type {};
@@ -47,7 +48,7 @@ Sınıf veya yapının adı.
 Seçim [abstract](abstract-cpp-component-extensions.md) ve [Sealed](sealed-cpp-component-extensions.md) geçerli değiştiriciler.
 
 *inherit_access*<br/>
-Seçim *Base_type*erişilebilirliği. İzin verilen tek erişilebilirlik, **`public`** ( **`public`** varsayılandır).
+Seçim *Base_type* erişilebilirliği. İzin verilen tek erişilebilirlik, **`public`** ( **`public`** varsayılandır).
 
 *base_type*<br/>
 Seçim Temel tür. Ancak, bir değer türü temel tür olarak çalışamaz.
@@ -60,7 +61,7 @@ Daha fazla bilgi için, Windows Çalışma Zamanı ve ortak dil çalışma zaman
 
 Bir başvuru türü başka bir başvuru türünden devralırsa, taban sınıftaki sanal işlevlerin açıkça geçersiz kılınabilmesi gerekir ( [geçersiz kılma](override-cpp-component-extensions.md)ile) veya gizli ( [Yeni (vtable 'da yeni yuva)](new-new-slot-in-vtable-cpp-component-extensions.md)). Türetilmiş sınıf işlevlerinin de açıkça işaretlenmiş olması gerekir **`virtual`** .
 
-Bir türün **başvuru sınıfı** veya **başvuru yapısı**, ya da bir **değer sınıfı** veya **değer yapısı**olup olmadığı derleme zamanında algılamak için, veya kullanın `__is_ref_class (type)` `__is_value_class (type)` `__is_simple_value_class (type)` . Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
+Bir türün **başvuru sınıfı** veya **başvuru yapısı**, ya da bir **değer sınıfı** veya **değer yapısı** olup olmadığı derleme zamanında algılamak için, veya kullanın `__is_ref_class (type)` `__is_value_class (type)` `__is_simple_value_class (type)` . Daha fazla bilgi için bkz. [tür nitelikleri Için derleyici desteği](compiler-support-for-type-traits-cpp-component-extensions.md).
 
 Sınıflar ve yapılar hakkında daha fazla bilgi için bkz.
 

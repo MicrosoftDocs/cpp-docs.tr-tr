@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: abstract (C++/CLı ve C++/CX)'
 title: abstract (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - abstract keyword [C++]
 ms.assetid: cbae3408-0378-4ac8-b70d-c016b381a6d5
-ms.openlocfilehash: 1e729589f78c56111717a87a27f9c7370dca7b90
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e40d0d0c03bbf97b684d9e011f4bf614f6a44332
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214301"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177126"
 ---
 # <a name="abstract--ccli-and-ccx"></a>abstract (C++/CLI ve C++/CX)
 
@@ -25,15 +26,15 @@ ms.locfileid: "87214301"
 
 ## <a name="all-platforms"></a>Tüm Platformlar
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
-*sınıf bildirimi* *sınıfı tanımlayıcı* **Özet {} **
+*sınıf bildirimi* *sınıfı tanımlayıcı* **Özet {}**
 
 **`virtual`***Return-Type* *üye-Function-Identifier* **() abstract;**
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk örnek sözdizimi Özet olacak bir sınıf bildirir. Or derleyici seçeneği belirtilmişse, *sınıf bildirimi* bileşeni yerel bir c++ bildirimi (** `class` * * * * veya **`struct`** ) ya da bir c++ uzantı bildirimi (** ref class * * veya **ref struct**) olabilir `/ZW` `/clr` .
+İlk örnek sözdizimi Özet olacak bir sınıf bildirir. Or derleyici seçeneği belirtilmişse, *sınıf bildirimi* bileşeni yerel bir c++ bildirimi (**`class` * * * * veya **`struct`** ) ya da bir c++ uzantı bildirimi (** ref class * * veya **ref struct**) olabilir `/ZW` `/clr` .
 
 İkinci örnek sözdizimi, bir sanal üye işlevini soyut olacak şekilde bildirir. Bir işlev soyut bildirmek, onu saf bir sanal işlevi bildirerek de aynıdır. Bir üye işlevi soyut olarak bildirmek kapsayan sınıfın soyut olarak bildirilmesine neden olur.
 
@@ -49,17 +50,17 @@ Daha fazla bilgi için bkz. [başvuru sınıfları ve yapıları](../cppcx/ref-c
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 
-Aşağıdaki kod örneği, sınıf `X` **soyut**olarak işaretlendiğinden bir hata oluşturur.
+Aşağıdaki kod örneği, sınıf `X` **soyut** olarak işaretlendiğinden bir hata oluşturur.
 
 ```cpp
 // abstract_keyword.cpp
@@ -74,7 +75,7 @@ int main() {
 }
 ```
 
-Aşağıdaki kod örneği, **soyut**olarak işaretlenmiş bir yerel sınıf örneklediği için bir hata oluşturur. Derleyici seçeneği olmadan veya bu hata oluşur `/clr` .
+Aşağıdaki kod örneği, **soyut** olarak işaretlenmiş bir yerel sınıf örneklediği için bir hata oluşturur. Derleyici seçeneği olmadan veya bu hata oluşur `/clr` .
 
 ```cpp
 // abstract_keyword_2.cpp
@@ -88,7 +89,7 @@ int main() {
                     // cannot be instantiated. See declaration of 'X'}
 ```
 
-Aşağıdaki kod örneği bir hata oluşturur çünkü işlev `f` bir tanım içeriyor ancak **soyut**olarak işaretlenmiş. Örnekteki final ifadesinde, bir soyut sanal işlevi bildiren bir saf sanal işlevi bildirme ile eşdeğer olduğu gösterilmektedir.
+Aşağıdaki kod örneği bir hata oluşturur çünkü işlev `f` bir tanım içeriyor ancak **soyut** olarak işaretlenmiş. Örnekteki final ifadesinde, bir soyut sanal işlevi bildiren bir saf sanal işlevi bildirme ile eşdeğer olduğu gösterilmektedir.
 
 ```cpp
 // abstract_keyword_3.cpp

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: diziler (C++/CLı ve C++/CX)'
 title: Diziler (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - multidimensional arrays
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-ms.openlocfilehash: 814be57caafed117a1403105d46326ac53682578
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e75818b7c4de3123fefb6bed9f24da46f8212ed8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500895"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177113"
 ---
 # <a name="arrays-ccli-and-ccx"></a>Diziler (C++/CLI ve C++/CX)
 
@@ -40,7 +41,7 @@ Diziler hakkında daha fazla bilgi için bkz.
 
 Diziler `Platform` ad alanının üyeleridir. Diziler yalnızca bir boyutlu olabilir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 Sözdiziminin ilk örneği, dizi ayırmak için **ref New** Aggregate anahtar sözcüğünü kullanır. İkinci örnek bir yerel dizi bildirir.
 
@@ -65,7 +66,7 @@ Seçim Dizinin boyut sayısı. 1 olmalıdır.
 Dizi değişkeninin adı.
 
 *başlatma türü*<br/>
-Diziyi başlatacak değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdür. Ancak, *başlatma türünden* *dizi türüne*dönüştürme varsa türler farklı olabilir; Örneğin, *başlatma türü* *dizi türünden*türetildiyse.
+Diziyi başlatacak değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdür. Ancak, *başlatma türünden* *dizi türüne* dönüştürme varsa türler farklı olabilir; Örneğin, *başlatma türü* *dizi türünden* türetildiyse.
 
 *başlatma-listeleme*<br/>
 Seçim Dizi öğelerini başlatacak küme ayraçları içindeki bir virgülle ayrılmış değerler listesi. Örneğin, tek boyutlu 3 öğe dizisi bildiren *sıralama boyutu-listesi* ise `(3)` , *başlatma listesi* olabilir `{1,2,3}` .
@@ -96,7 +97,7 @@ int main() {
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 Sözdiziminin ilk örneği bir dizi ayırmak için **gcnew** anahtar sözcüğünü kullanır. İkinci örnek bir yerel dizi bildirir.
 
@@ -121,7 +122,7 @@ Seçim Dizinin boyut sayısı. Varsayılan değer 1 ' dir; maksimum değer 32 ' 
 Dizi değişkeninin adı.
 
 *başlatma türü*<br/>
-Diziyi başlatacak değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdür. Ancak, *başlatma türünden* *dizi türüne*dönüştürme varsa türler farklı olabilir; Örneğin, *başlatma türü* *dizi türünden*türetildiyse.
+Diziyi başlatacak değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdür. Ancak, *başlatma türünden* *dizi türüne* dönüştürme varsa türler farklı olabilir; Örneğin, *başlatma türü* *dizi türünden* türetildiyse.
 
 *sıralama-boyut-liste*<br/>
 Dizideki her boyutun boyutunun virgülle ayrılmış bir listesi. Alternatif olarak, *başlatma listesi* parametresi belirtilirse, derleyici her boyutun boyutunu verebilir ve *sıralama boyutu listesi* atlanabilir.

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yardımcı program (STL/CLR)'
 title: yardımcı program (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - operator<= member [STL/CLR]
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
-ms.openlocfilehash: faf7f607f9433fa3e4813957b24220a5e66e1e49
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: cb55acec88ca7b687ca7ad7790c4b0073944c0c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008613"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177997"
 ---
 # <a name="utility-stlclr"></a>yardımcı program (STL/CLR)
 
@@ -175,7 +176,7 @@ typedef Value1 first_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, *değer1*şablon parametresinin eşanlamlısıdır.
+Tür, *değer1* şablon parametresinin eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -290,7 +291,7 @@ Oluşturucu:
 
 `pair(Value1 val1, Value2 val2);`
 
-depolanan çifti *val1* ve *val2 & lt*ile başlatır.
+depolanan çifti *val1* ve *val2 & lt* ile başlatır.
 
 ### <a name="example"></a>Örnek
 
@@ -378,7 +379,7 @@ typedef Value2 second_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, typtemplate *parametresinin*eşanlamlısıdır.
+Tür, typtemplate *parametresinin* eşanlamlısıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -420,7 +421,7 @@ void swap(pair<Value1, Value2>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki depolanan değer çiftini değiştirir **`*this`** . *right*
+Üye işlevi, ve sağ arasındaki depolanan değer çiftini değiştirir **`*this`** . 
 
 ### <a name="example"></a>Örnek
 

@@ -1,22 +1,23 @@
 ---
-title: Öznitelik hedefleri (C++/CLI ve C++/CX)
+description: 'Daha fazla bilgi edinin: öznitelik hedefleri (C++/CLı ve C++/CX)'
+title: Öznitelik Hedefleri (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - custom attributes, targets
 ms.assetid: b4e6e224-da77-4520-b6e6-b96846e0ebc1
-ms.openlocfilehash: fe2c1d27042b51300d01ba70b951b7601d87701e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2c14f80c277feb7fc540eed8735a8a78e1cb1907
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177035"
 ---
-# <a name="attribute-targets-ccli-and-ccx"></a>Öznitelik hedefleri (C++/CLI ve C++/CX)
+# <a name="attribute-targets-ccli-and-ccx"></a>Öznitelik Hedefleri (C++/CLI ve C++/CX)
 
 Öznitelik kullanım belirticileri, öznitelik hedeflerini belirtmenizi sağlar.  Her öznitelik belirli dil öğelerine uygulamak için tanımlanır. Örneğin, bir öznitelik yalnızca sınıflar ve yapılar için uygulanacak şekilde tanımlanabilir.  Aşağıdaki liste, özel bir özniteliğin kullanılabileceği olası sözdizimsel öğeleri gösterir. Bu değerlerin birleşimleri (mantıksal OR kullanılarak) kullanılabilir.
 
-Öznitelik hedefini belirtmek için, özniteliği tanımlarken bir veya daha fazla <xref:System.AttributeTargets> numaralandırıcıyı <xref:System.AttributeUsageAttribute> geçirin.
+Özniteliği tanımlarken bir veya daha fazla numaralandırıcıları bir veya daha fazla Numaralandırıcı geçirmek için öznitelik hedefini belirtmek için <xref:System.AttributeTargets> <xref:System.AttributeUsageAttribute> .
 
 Geçerli öznitelik hedeflerinin listesi aşağıda verilmiştir:
 
@@ -193,13 +194,13 @@ Geçerli öznitelik hedeflerinin listesi aşağıda verilmiştir:
     };
     ```
 
-Genellikle, bir öznitelik, uygulandığı dil öğesinden hemen önce gelir. Ancak bazı durumlarda, bir özniteliğin konumu özniteliğin hedeflenen hedefini belirlemede yeterli değildir. Şu örneği göz önünde bulundurun:
+Genellikle, bir öznitelik, uygulandığı dil öğesinden hemen önce gelir. Ancak bazı durumlarda, bir özniteliğin konumu özniteliğin hedeflenen hedefini belirlemede yeterli değildir. Bu örneği ele alalım:
 
 ```cpp
 [Attr] int MyFn(double x)...
 ```
 
-Sözdizimsel olarak, özniteliğin yönteme veya metodun dönüş değerine uygulanması amaçlandığını söylemek için bir yol yoktur (Bu durumda, varsayılan olarak yöntemine ayarlanır). Böyle durumlarda, bir öznitelik kullanım belirleyicisi kullanılabilir. Örneğin, özniteliği dönüş değeri için uygulanabilir yapmak için, `returnvalue` belirticisini aşağıdaki gibi kullanın:
+Sözdizimsel olarak, özniteliğin yönteme veya metodun dönüş değerine uygulanması amaçlandığını söylemek için bir yol yoktur (Bu durumda, varsayılan olarak yöntemine ayarlanır). Böyle durumlarda, bir öznitelik kullanım belirleyicisi kullanılabilir. Örneğin, özniteliğini dönüş değerine uygulamak için, `returnvalue` aşağıdaki gibi, tanımlayıcısını kullanın:
 
 ```cpp
 [returnvalue:Attr] int MyFn(double x)... // applies to return value
@@ -274,4 +275,4 @@ value struct MyStruct {};
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı Tanımlı Öznitelikler](user-defined-attributes-cpp-component-extensions.md)
+[Kullanıcı tanımlı öznitelikler](user-defined-attributes-cpp-component-extensions.md)
