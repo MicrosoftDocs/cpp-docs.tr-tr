@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:. XMM (32-bit MASM)
 title: .XMM
 ms.date: 11/05/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - .XMM directive
 ms.assetid: db3062b6-8b2f-469b-aa02-df6571eab3ba
-ms.openlocfilehash: 6588c6ebe0e95b9e98c6d8f072c3dddd8eb2dd2d
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 009fc9ceb579e54acad25ff24f1996edd5b8f094
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130812"
 ---
 # <a name="xmm-32-bit-masm"></a>. XMM (32-bit MASM)
 
 Internet akışı SıMD uzantısı yönergelerinin derlemesini sunar. (yalnızca 32-bit masa.)
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **.XMM**
 

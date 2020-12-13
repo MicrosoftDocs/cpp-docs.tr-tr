@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ML önemli olmayan hatası A2004'
 title: ML Önemli Olmayan Hatası A2004
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - A2004
 ms.assetid: 74e219ba-4dec-467a-b121-18a76aa57230
-ms.openlocfilehash: 15de64569987fcfdd03c6bffba9efcb646c369b5
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: ac5d2be1a9123c1c7f6f7c72c0034723aad2123f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129434"
 ---
 # <a name="ml-nonfatal-error-a2004"></a>ML Önemli Olmayan Hatası A2004
 

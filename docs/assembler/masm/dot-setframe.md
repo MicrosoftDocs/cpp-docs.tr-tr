@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:. SETFRAME
 title: .SETFRAME
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,26 +7,26 @@ f1_keywords:
 helpviewer_keywords:
 - .SETFRAME directive
 ms.assetid: eaa9b5ed-4daa-4f1e-bdb6-100758007ab3
-ms.openlocfilehash: 8c491a811634995398a37aa001cc1c93f8434114
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: b3554da14344293f00c499bc3084e6ddfd93c2ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318247"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97131085"
 ---
 # <a name="setframe"></a>.SETFRAME
 
-Belirtilen yazmaç (*reg*) ve sapmayı (*konum*) kullanarak, çerçeve kaydı alanını ve geriye doğru izleme bilgilerini doldurur. Aralık 16 ' dan büyük ve 240 ' e eşit veya daha küçük olmalıdır. Bu yönerge Ayrıca, geçerli prolog sapmasını kullanarak belirtilen kayıt için bir `UWOP_SET_FPREG` bırakma kodu girişi oluşturur.
+Belirtilen yazmaç (*reg*) ve sapmayı (*konum*) kullanarak, çerçeve kaydı alanını ve geriye doğru izleme bilgilerini doldurur. Aralık 16 ' dan büyük ve 240 ' e eşit veya daha küçük olmalıdır. Bu yönerge ayrıca geçerli giriş `UWOP_SET_FPREG` sapmasını kullanarak belirtilen kayıt için bir geriye doğru izleme kodu girişi oluşturur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **. SETFRAME** *reg*, *konum*
 
 ## <a name="remarks"></a>Açıklamalar
 
-**. SETFRAME** , ml64. exe kullanıcılarına bir karenin nasıl bir kare işlevi olduğunu ve [işlem çerçevesi bildiriminden](proc.md) öğesine genişleten yalnızca prolog dahilinde izin verileceğini belirlemesine izin verir [. ENDPROLOG](dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca `.xdata` ve `.pdata`oluşturur. **. SETFRAME** önünde olmayan eylemleri gerçekten uygulayan yönergelerden önce gelmelidir. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
+**. SETFRAME** , ml64.exe kullanıcıların bir karenin nasıl bir kare işlevi olduğunu belirtmesini ve [işlem çerçevesi bildiriminden](proc.md) öğesine genişleten yalnızca prolog içinde nasıl izin verileceğini belirlemesine izin verir [. ENDPROLOG](dot-endprolog.md) yönergesi. Bu yönergeler kod oluşturmaz; yalnızca ve oluşturur `.xdata` `.pdata` . **. SETFRAME** önünde olmayan eylemleri gerçekten uygulayan yönergelerden önce gelmelidir. Anlaşma sağlamak için hem bırakma yönergelerini hem de bir makroya geri doğru bir şekilde kaydırmak için iyi bir uygulamadır.
 
-Daha fazla bilgi için bkz. [for x64 (ml64. exe)](masm-for-x64-ml64-exe.md).
+Daha fazla bilgi için bkz. [x64 Için ması (ml64.exe)](masm-for-x64-ml64-exe.md).
 
 ## <a name="sample"></a>Örnek
 
