@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3118'
 title: Derleyici hatası C3118
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3118
 ms.assetid: 40fbe681-8868-4cb2-a2b2-4db4449319a7
-ms.openlocfilehash: 876b007ce7e537a8871147637188b10a100e997b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: cc6d9c446603adaa314480f8f18ae8bd2c168277
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151105"
 ---
 # <a name="compiler-error-c3118"></a>Derleyici hatası C3118
 

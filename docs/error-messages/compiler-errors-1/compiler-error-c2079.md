@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2079'
 title: Derleyici hatası C2079
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2079
 ms.assetid: ca58d6d5-eccd-40b7-ba14-c003223c5bc7
-ms.openlocfilehash: ea158d8dada013f6b90d0fbe1e7502665c1c24da
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 73ca5d334ac3bf3157b61a1b2a9489282ae1fe00
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151222"
 ---
 # <a name="compiler-error-c2079"></a>Derleyici hatası C2079
 

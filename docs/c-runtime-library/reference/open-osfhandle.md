@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _open_osfhandle'
 title: _open_osfhandle
 ms.date: 4/2/2020
 api_name:
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - file handles [C++], associating
 - _open_osfhandle function
 ms.assetid: 30d94df4-7868-4667-a401-9eb67ecb7855
-ms.openlocfilehash: d0f86c2588eed506bc9b8408e01bccdb6d1aad9d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3b5fe486416ec49f01078a4d90cab998e4bbe6c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844073"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151664"
 ---
 # <a name="_open_osfhandle"></a>_open_osfhandle
 
 C çalışma zamanı dosya tanımlayıcısını var olan bir işletim sistemi dosya tanıtıcısı ile ilişkilendirir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 int _open_osfhandle (
@@ -63,7 +64,7 @@ Başarılı olursa, **_open_osfhandle** bir C çalışma zamanı dosya tanımlay
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Open_osfhandle** Işlevi bir C çalışma zamanı dosya tanımlayıcısı ayırır. Bu dosya tanımlayıcısını *osfhandle*tarafından belirtilen işletim sistemi dosyası tanıtıcısı ile ilişkilendirir. Derleyici uyarısından kaçınmak için, *osfhandle* bağımsız değişkenini **tanıtıcıdan** **intptr_t**atayın. *Flags* bağımsız değişkeni, içinde tanımlanan bir veya daha fazla bildirim sabitlerinden oluşan bir tamsayı ifadesidir \<fcntl.h> . *Bayrak* bağımsız değişkenini oluşturmak için iki veya daha fazla bildirim sabiti birleştirmek için BIT düzeyinde OR işlecini ( **&#124;** ) kullanabilirsiniz.
+**_Open_osfhandle** Işlevi bir C çalışma zamanı dosya tanımlayıcısı ayırır. Bu dosya tanımlayıcısını *osfhandle* tarafından belirtilen işletim sistemi dosyası tanıtıcısı ile ilişkilendirir. Derleyici uyarısından kaçınmak için, *osfhandle* bağımsız değişkenini **tanıtıcıdan** **intptr_t** atayın. *Flags* bağımsız değişkeni, içinde tanımlanan bir veya daha fazla bildirim sabitlerinden oluşan bir tamsayı ifadesidir \<fcntl.h> . *Bayrak* bağımsız değişkenini oluşturmak için iki veya daha fazla bildirim sabiti birleştirmek için BIT düzeyinde OR işlecini ( **&#124;** ) kullanabilirsiniz.
 
 Bu bildirim sabitleri içinde tanımlanmıştır \<fcntl.h> :
 
@@ -74,7 +75,7 @@ Bu bildirim sabitleri içinde tanımlanmıştır \<fcntl.h> :
 | **\_O \_ metni** | Dosyayı metin (çevrilmiş) modunda açar. |
 | **\_O \_ wtext** | Dosyayı Unicode (çevrilmiş UTF-16) modunda açar. |
 
-**_Open_osfhandle** çağrısı Win32 dosya tanıtıcısının sahipliğini dosya tanımlayıcısına aktarır. **_Open_osfhandle**kullanılarak açılan bir dosyayı kapatmak için [ \_ Kapat](close.md)' ı çağırın. Temel alınan işletim sistemi dosya tanıtıcısı, **_close**çağrısıyla de kapatılır. Özgün tanıtıcıda, **CloseHandle** Win32 işlevini çağırmayın. Dosya tanımlayıcısının bir **dosya &#42;** akışı varsa, [fclose](fclose-fcloseall.md) çağrısı hem dosya tanımlayıcısını hem de temel alınan tanıtıcıyı kapatır. Bu durumda, özgün tanıtıcıdaki dosya tanımlayıcısında veya **CloseHandle** üzerinde **_close** çağırmayın.
+**_Open_osfhandle** çağrısı Win32 dosya tanıtıcısının sahipliğini dosya tanımlayıcısına aktarır. **_Open_osfhandle** kullanılarak açılan bir dosyayı kapatmak için [ \_ Kapat](close.md)' ı çağırın. Temel alınan işletim sistemi dosya tanıtıcısı, **_close** çağrısıyla de kapatılır. Özgün tanıtıcıda, **CloseHandle** Win32 işlevini çağırmayın. Dosya tanımlayıcısının bir **dosya &#42;** akışı varsa, [fclose](fclose-fcloseall.md) çağrısı hem dosya tanımlayıcısını hem de temel alınan tanıtıcıyı kapatır. Bu durumda, özgün tanıtıcıdaki dosya tanımlayıcısında veya **CloseHandle** üzerinde **_close** çağırmayın.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

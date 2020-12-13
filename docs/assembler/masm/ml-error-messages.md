@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ML hata Iletileri'
 title: ML Hata İletileri
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), ML error messages
 ms.assetid: e7e164b3-6d65-4b5b-8925-bfbebc043523
-ms.openlocfilehash: 1b065433a1a6baf9bf2631aeb2f53421f8efb83b
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 08f9a3ccd1bfe79195bf3ba9acf5b5347cc35a1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75312631"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129707"
 ---
 # <a name="ml-error-messages"></a>ML Hata İletileri
 
@@ -30,19 +31,19 @@ Tüm hata iletileri aşağıdaki formu alır:
 
 burada:
 
-*Yardımcı program*\
+*Utility*\
 Hata iletisini gönderen program.
 
-*Dosya adı*\
+*Kısaltın*\
 Hata oluşturma koşulunu içeren dosya.
 
-*Satır*\
+*Satırı*\
 Hata koşulunun varolduğu yaklaşık satır.
 
 *Error_type*\
 Önemli hata, hata veya uyarı.
 
-*Kod*\
+*Kodudur*\
 Benzersiz 5 veya 6 basamaklı hata kodu.
 
 *Message_text*\

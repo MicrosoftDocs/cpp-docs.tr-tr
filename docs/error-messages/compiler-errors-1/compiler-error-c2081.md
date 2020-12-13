@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2081'
 title: Derleyici hatası C2081
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2081
 ms.assetid: 7db9892d-364d-4178-a49d-f8398ece09a0
-ms.openlocfilehash: 2e8e813d8162b9a191b6760366b52783e7c8609f
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: e6f75d6d478d9523d36a9671457cf2a5618e4f21
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75301996"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151183"
 ---
 # <a name="compiler-error-c2081"></a>Derleyici hatası C2081
 

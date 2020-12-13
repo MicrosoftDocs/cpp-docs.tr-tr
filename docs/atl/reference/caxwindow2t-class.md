@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAxWindow2T Class'
 title: CAxWindow2T sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAxWindow2 class
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
-ms.openlocfilehash: e29c30e95116ad68d3498f3f8d3231a63c92c0a7
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: b29ad7bc9a8df17905ef6bc8fc08ebf75e9f847d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353070"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152405"
 ---
 # <a name="caxwindow2t-class"></a>CAxWindow2T sınıfı
 

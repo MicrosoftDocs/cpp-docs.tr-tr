@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: C/C++ projeleri için kod analizi özelliklerini ayarlama'
 title: 'Nasıl yapılır: C/C++ Projeleri için Kod Analizi Özelliklerini Ayarlama'
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - code analysis properties
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
-ms.openlocfilehash: 0f1f5b18255c9d39c2922c5c4f049f1cbe40d37e
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 590254406242c369da9aff91d006313ed797078f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77418804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151573"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Nasıl yapılır: C/C++ Projeleri için Kod Analizi Özelliklerini Ayarlama
 
@@ -26,7 +27,7 @@ Kod Analizi aracının, projenizin her yapılandırmasındaki kodu çözümlemek
 
 ## <a name="code-analysis-property-page"></a>Kod Analizi Özellik sayfası
 
-**Kod Analizi** Özellik sayfası, bir MSBuild projesi için tüm kod analizi yapılandırma ayarlarını içerir. **Çözüm Gezgini**bir projenin kod analizi özellik sayfasını açmak için projeye sağ tıklayın ve ardından **Özellikler**' e tıklayın. Sonra, **yapılandırma özellikleri** ' ni genişletin ve **Kod Analizi** sekmesini seçin.
+**Kod Analizi** Özellik sayfası, bir MSBuild projesi için tüm kod analizi yapılandırma ayarlarını içerir. **Çözüm Gezgini** bir projenin kod analizi özellik sayfasını açmak için projeye sağ tıklayın ve ardından **Özellikler**' e tıklayın. Sonra, **yapılandırma özellikleri** ' ni genişletin ve **Kod Analizi** sekmesini seçin.
 
 ## <a name="project-configuration-and-platform"></a>Proje yapılandırması ve platformu
 
@@ -40,11 +41,11 @@ Kod Analizi, kodunuzun kalitesini iyileştirebilmeniz ve genel kullanım tehlikl
 
 ## <a name="cmake-configuration"></a>CMake yapılandırması
 
-CMake projelerinde, Kod analizini etkinleştirmek veya devre dışı bırakmak için `enableMicrosoftCodeAnalysis` değerini ve `CMakeSettings.json` içindeki `enableClangTidyCodeAnalysis` anahtarlarını değiştirin. Daha fazla bilgi için bkz. [Visual Studio 'Da Clang-Tidy kullanma](../code-quality/clang-tidy.md) .
+CMake projelerinde, `enableMicrosoftCodeAnalysis` içindeki ve anahtarlarının değerini, `enableClangTidyCodeAnalysis` `CMakeSettings.json` Kod analizini etkinleştirmek veya devre dışı bırakmak için değiştirin. Daha fazla bilgi için bkz. [Visual Studio 'da Clang-Tidy kullanma](../code-quality/clang-tidy.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Yönetilen Kod Kalitesini Analiz Etme](/visualstudio/code-quality/code-analysis-for-managed-code-overview)
 - [C/C++ İçin Kod Analizi Uyarıları](../code-quality/code-analysis-for-c-cpp-warnings.md)
-- [Çalıştırılacak C++ kuralları belirtmek için kural kümelerini kullanma](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
+- [Çalıştırılacak C++ kurallarını belirtmek için kural kümelerini kullanma](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 - [Clang-Tidy kullanma](../code-quality/clang-tidy.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fgetpos'
 title: fgetpos
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - fgetpos function
 - streams, file position indicator
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
-ms.openlocfilehash: b57a07dbe5c2c746e8af6b96f1864e4f4534849f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 72ee6e683d568de1650d5a046050230fa86dee24
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920356"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151768"
 ---
 # <a name="fgetpos"></a>fgetpos
 
@@ -61,7 +62,7 @@ Başarılı olursa **fgetpos** 0 döndürür. Hatada, sıfır dışında bir de�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fgetpos** işlevi, *akış* bağımsız değişkeninin dosya konumu göstergesinin geçerli değerini alır ve *POS*tarafından işaret edilen nesnede depolar. **Fsetpos** işlevi daha sonra *POS* 'ta depolanan bilgileri, **fgetpos** çağrıldığında *akış* bağımsız değişkeninin işaretçisini konumuna sıfırlamak için kullanabilir. *POS* değeri dahili bir biçimde depolanır ve yalnızca **fgetpos** ve **fsetpos**tarafından kullanılmak üzere tasarlanmıştır.
+**Fgetpos** işlevi, *akış* bağımsız değişkeninin dosya konumu göstergesinin geçerli değerini alır ve *POS* tarafından işaret edilen nesnede depolar. **Fsetpos** işlevi daha sonra *POS* 'ta depolanan bilgileri, **fgetpos** çağrıldığında *akış* bağımsız değişkeninin işaretçisini konumuna sıfırlamak için kullanabilir. *POS* değeri dahili bir biçimde depolanır ve yalnızca **fgetpos** ve **fsetpos** tarafından kullanılmak üzere tasarlanmıştır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -69,7 +70,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**fgetpos**|\<stdio. h>|
+|**fgetpos**|\<stdio.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -115,13 +116,13 @@ int main( void )
 }
 ```
 
-## <a name="input-crt_fgetpostxt"></a>Giriş: crt_fgetpos. txt
+## <a name="input-crt_fgetpostxt"></a>Giriş: crt_fgetpos.txt
 
 ```Input
 fgetpos gets a stream's file-position indicator.
 ```
 
-### <a name="output-crt_fgetpostxt"></a>Çıkış crt_fgetpos. txt
+### <a name="output-crt_fgetpostxt"></a>Çıkış crt_fgetpos.txt
 
 ```Output
 after fgetpos: gets a stream
@@ -130,5 +131,5 @@ after fsetpos: gets a stream
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fsetpos](fsetpos.md)<br/>

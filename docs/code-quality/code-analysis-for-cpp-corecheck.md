@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: C++ Temel Yönergeleri denetleyicisi başvurusu'
 title: C++ Temel Yönergeleri denetleyicisi başvurusu
 ms.date: 03/22/2018
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
-ms.openlocfilehash: a4dc50395a1da0eda68148123651123cf1607184
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 40d0e713d8064a952c785ca44ac5a7ba60f41b61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151586"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ Temel Yönergeleri denetleyicisi başvurusu
 

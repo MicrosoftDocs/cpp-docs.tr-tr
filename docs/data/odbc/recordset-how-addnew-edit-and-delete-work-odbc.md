@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: kayıt kümesi: AddNew, düzenleme ve silme Işi (ODBC)'
 title: 'Kayıt Kümesi: AddNew, Düzenleme ve Silmenin Çalışması (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,148 +18,148 @@ helpviewer_keywords:
 - ODBC recordsets [C++], editing records
 - records [C++], editing
 ms.assetid: cab43d43-235a-4bed-ac05-67d10e94f34e
-ms.openlocfilehash: 63718a6be3a9ce19ddbce923a84def21448c42a0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 44211b6e1b1a0fc80c874e86ba83c2e6ea0ea43e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366999"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151404"
 ---
 # <a name="recordset-how-addnew-edit-and-delete-work-odbc"></a>Kayıt Kümesi: AddNew, Düzenleme ve Silmenin Çalışması (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu `AddNew`konu, sınıfın `Edit` `CRecordset` , `Delete` ve üye işlevlerinin nasıl çalıştığını açıklar. Ele alınan konular:
+Bu konuda `AddNew` `Edit` sınıfının, ve `Delete` üye işlevlerinin nasıl çalıştığı açıklanmaktadır `CRecordset` . Ele alınan konular:
 
-- [Kayıt Ekleme Nasıl Çalışır?](#_core_adding_a_record)
+- [Kayıt ekleme nasıl yapılır?](#_core_adding_a_record)
 
-- [Eklenen Kayıtların Görünürlüğü](#_core_visibility_of_added_records)
+- [Eklenen kayıtların görünürlüğü](#_core_visibility_of_added_records)
 
-- [Kayıtları Düzenleme Nasıl Çalışır?](#_core_editing_an_existing_record)
+- [Kayıtları düzenlemenin nasıl çalıştığı](#_core_editing_an_existing_record)
 
-- [Kayıtları Silme Nasıl Çalışır?](#_core_deleting_a_record)
+- [Kayıtları silme çalışma şekli](#_core_deleting_a_record)
 
 > [!NOTE]
-> Bu konu, toplu satır `CRecordset` alma nın uygulanmadığı türetilen nesneler için geçerlidir. Toplu satır alma kullanıyorsanız, [bkz.](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)
+> Bu konu, `CRecordset` toplu satır yakalamanın uygulanmadığı, öğesinden türetilmiş nesneler için geçerlidir. Toplu satır getirme kullanıyorsanız, bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-Ek olarak, Kayıt Alanı [Değişimi okumak isteyebilirsiniz: Nasıl RFX Çalışır](../../data/odbc/record-field-exchange-how-rfx-works.md), güncelleştirme işlemlerinde RFX karşılık gelen rolünü açıklar.
+Ek olarak, güncelleştirme işlemlerinde RFX 'in karşılık gelen rolünü açıklayan [kayıt alanı değişimi](../../data/odbc/record-field-exchange-how-rfx-works.md)'ni okumak isteyebilirsiniz.
 
-## <a name="adding-a-record"></a><a name="_core_adding_a_record"></a>Kayıt Ekleme
+## <a name="adding-a-record"></a><a name="_core_adding_a_record"></a> Kayıt ekleme
 
-Bir kayıt kümesine yeni bir kayıt eklemek, kayıt kümesinin [AddNew](../../mfc/reference/crecordset-class.md#addnew) üye işlevini çağırmayı, yeni kaydın alan veri üyelerinin değerlerini ayarlamayı ve kaydı veri kaynağına yazmak için [Update](../../mfc/reference/crecordset-class.md#update) üye işlevini çağırmayı içerir.
+Bir kayıt kümesine yeni bir kayıt eklemek, kayıt kümesinin [AddNew](../../mfc/reference/crecordset-class.md#addnew) üye işlevinin çağrılmasını, yeni kaydın alan veri üyelerinin değerlerini ayarlamayı ve kaydı veri kaynağına yazmak için [Update](../../mfc/reference/crecordset-class.md#update) member işlevini çağırmayı içerir.
 
-Arama `AddNew`için bir ön koşul olarak, kayıt kümesi salt okunur olarak açılmamış olmalıdır. Ve `CanUpdate` `CanAppend` üye işlevler bu koşulları belirlemenize izin sağlar.
+Çağırma için bir önkoşul olarak `AddNew` , kayıt kümesi salt okunurdur olarak açılmamalıdır. `CanUpdate`Ve `CanAppend` üye işlevleri bu koşulları belirlemenizi sağlar.
 
-Ne zaman: `AddNew`
+Şunu çağırdığınızda `AddNew` :
 
-- Düzenarabelleği'ndeki kayıt depolanır, böylece işlem iptal edilirse içeriği geri yüklenebilir.
+- Düzenleme arabelleğindeki kayıt depolanır, böylece işlem iptal edilirse içerikleri geri yüklenebilir.
 
-- Alan veri üyeleri işaretlenir, böylece değişiklikler daha sonra algılanır. Alan verileri üyeleri de temiz (değişmeden) olarak işaretlenir ve Null olarak ayarlanır.
+- Alan veri üyeleri işaretlenir, böylece daha sonra yapılan değişiklikler algılanabilmesi mümkündür. Alan veri üyeleri de temiz (değiştirilmemiş) olarak işaretlenir ve null olarak ayarlanır.
 
-Aramadan `AddNew`sonra, edit arabelleği, değerlerle doldurulmaya hazır yeni, boş bir kaydı temsil eder. Bunu yapmak için, değerleri el ile bunlara atayarak ayarlarsınız. Bir alan için gerçek bir veri değeri belirtmek `SetFieldNull` yerine, Null değerini belirtmek için arayabilirsiniz.
+`AddNew`' İ çağırdığınızda, düzenleme arabelleği yeni, boş bir kaydı, değerlerle doldurulmaya hazırlanmak üzere temsil eder. Bunu yapmak için değerleri bunlara atayarak el ile ayarlarsınız. Bir alan için gerçek bir veri değeri belirtmek yerine, `SetFieldNull` null değerini belirtmek için öğesini çağırabilirsiniz.
 
-Değişikliklerinizi işlemek için `Update`. Yeni kayıt `Update` için aradiğinizde:
+Değişikliklerinizi yürütmek için ' i çağırın `Update` . `Update`Yeni kayıt için ' i çağırdığınızda:
 
-- ODBC sürücünüz `::SQLSetPos` ODBC API işlevini destekliyorsa, MFC kaydı veri kaynağına eklemek için işlevi kullanır. Ile, `::SQLSetPos`MFC bir SQL deyimi oluşturmak ve işlemek zorunda değildir, çünkü daha verimli bir kayıt ekleyebilirsiniz.
+- ODBC sürücünüz `::SQLSetPos` ODBC API işlevini destekliyorsa, MFC, kayıt verilerini veri kaynağına eklemek için işlevi kullanır. İle `::SQLSetPos` , MFC BIR SQL ifadesini oluşturmak ve işlemek zorunda olmadığı için bir kaydı daha verimli bir şekilde ekleyebilir.
 
-- Kullanılamıyorsa, `::SQLSetPos` MFC aşağıdakileri yapar:
+- Kullanılamaz ise `::SQLSetPos` MFC şunları yapar:
 
-   1. Hiçbir değişiklik algılanmadıysa, `Update` hiçbir şey yapmaz ve 0 döndürür.
+   1. Hiçbir değişiklik algılanmazsa, `Update` hiçbir şey yapmaz ve 0 döndürür.
 
-   1. Değişiklik varsa, `Update` bir SQL **INSERT** deyimi oluşturuyor. Tüm kirli alan veri üyeleri tarafından temsil edilen sütunlar **INSERT** deyiminde listelenir. Bir sütunu dahil etmeye zorlamak için [SetFieldDirty](../../mfc/reference/crecordset-class.md#setfielddirty) üye işlevini arayın:
+   1. Değişiklikler varsa, `Update` BIR SQL **Insert** ifadesini oluşturur. Tüm kirli alan verisi üyeleri tarafından temsil edilen sütunlar **Insert** ifadesinde listelenir. Bir sütunun eklenmesini zorlamak için [SetFieldDirty](../../mfc/reference/crecordset-class.md#setfielddirty) üye işlevini çağırın:
 
         ```cpp
         SetFieldDirty( &m_dataMember, TRUE );
         ```
 
-   1. `Update`yeni kaydı işler — **INSERT** deyimi yürütülür ve bir işlem devam etmediği sürece kayıt veri kaynağındaki tabloya (ve anlık görüntü değilse kayıt kümesine) adamıştır.
+   1. `Update` Yeni kaydı kaydeder — **Insert** deyimleri yürütülür ve bir işlem devam etmediği takdirde kayıt, veri kaynağındaki tabloya (ve bir anlık görüntü yoksa, bu kayıt kümesine) kaydedilir.
 
-   1. Depolanan kayıt düzen arabelleği geri yüklenir. `AddNew` **INSERT** deyiminin başarıyla yürütülüp yürütülmediğine bakılmaksızın, aramadan önce geçerli olan kayıt yeniden geçerlidir.
-
-   > [!TIP]
-   > Yeni bir kaydın tam denetimi için aşağıdaki yaklaşımı alın: değerlere sahip olacak tüm alanların değerlerini ayarlayın ve `SetFieldNull` ardından alana işaretçi ve DOĞRU (varsayılan) parametreyle çağırarak Null kalacak alanları açıkça ayarlayın. Bir alanın veri kaynağına yazılmadığından emin olmak `SetFieldDirty` istiyorsanız, alan için bir işaretçi ve FALSE parametresi ile arayın ve alanın değerini değiştirmeyin. Bir alanın Null olup olmadığını belirlemek `IsFieldNullable`için.
+   1. Depolanan kayıt düzenleme arabelleğine geri yüklendi. Çağrıdan önce geçerli olan kayıt `AddNew` **Insert** ifadesinin başarıyla yürütülüp yürütülmediğine bakılmaksızın geçerli olur.
 
    > [!TIP]
-   > Kayıt kümesi veri üyelerinin değeri ne zaman değiştirdiğini algılamak için, MFC bir kayıt kümesinde depolayabildiğiniz her veri türüne uygun PSEUDO_NULL bir değer kullanır. PSEUDO_NULL değerine açıkça bir alan ayarlamanız gerekiyorsa ve alan zaten Null olarak `SetFieldNull`işaretlenmişse, alanın adresini ilk parametrede ve FALSE'u ikinci parametrede geçirerek de aramalısınız.
+   > Yeni bir kaydın tüm denetimi için aşağıdaki yaklaşımı uygulayın: değer olacak herhangi bir alanın değerini ayarlayın ve ardından `SetFieldNull` alana yönelik bir işaretçi ve true parametresi (varsayılan) ile çağırarak null kalacak alanları açık olarak ayarlayın. Bir alanın veri kaynağına yazılmadığından emin olmak istiyorsanız, `SetFieldDirty` alana yönelik bir işaretçi ve false parametresini çağırın ve alanın değerini değiştirmeyin. Bir alanın null olmasına izin verilip verilmeyeceğini anlamak için çağrısı yapın `IsFieldNullable` .
 
-## <a name="visibility-of-added-records"></a><a name="_core_visibility_of_added_records"></a>Eklenen Kayıtların Görünürlüğü
+   > [!TIP]
+   > Kayıt kümesi veri üyelerinin değeri ne zaman değiştiğini algılamak için, MFC bir kayıt kümesinde depolayabileceği her veri türü için uygun bir PSEUDO_NULL değeri kullanır. PSEUDO_NULL değerine açıkça bir alan ayarlamanız gerekirse ve alan null olarak işaretlendiyse, aynı zamanda `SetFieldNull` ilk parametresindeki alanın adresini ve ikinci parametrede false değerini geçirerek çağırmanız gerekir.
 
-Ek bir kayıt kayıt setinizde ne zaman görünür? Eklenen kayıtlar bazen görünür ve bazen iki şeye bağlı olarak görünmez:
+## <a name="visibility-of-added-records"></a><a name="_core_visibility_of_added_records"></a> Eklenen kayıtların görünürlüğü
 
-- Şoförünün yapabilecekleri.
+Kayıt kümenize eklenen bir kayıt ne zaman görünür? Eklenen kayıtlar bazen, iki duruma bağlı olarak görünür ve bazen görünür değildir:
 
-- Çerçevenin yararlanabileceği şey.
+- Sürücünüzün özelliği.
 
-ODBC sürücünüz `::SQLSetPos` ODBC API işlevini destekliyorsa, MFC kayıt eklemek için işlevi kullanır. Ile `::SQLSetPos`, eklenen kayıtlar herhangi bir güncelmis MFC kayıt kümesi için görülebilir. İşlev için destek olmadan, eklenen kayıtlar görünmez `Requery` ve bunları görmek için aramanız gerekir. Kullanmak `::SQLSetPos` da daha verimlidir.
+- Framework 'ün avantajından faydalanabilir.
 
-## <a name="editing-an-existing-record"></a><a name="_core_editing_an_existing_record"></a>Varolan Kaydı Düzenleme
+ODBC sürücünüz `::SQLSetPos` ODBC API işlevini destekliyorsa, MFC, kayıt eklemek için işlevini kullanır. İle `::SQLSetPos` , eklenen kayıtlar güncellenebilir herhangi BIR MFC kayıt kümesi tarafından görülebilir. İşlevi için destek olmadan, eklenen kayıtlar görünmez ve bunları görmek için öğesini çağırmanız gerekir `Requery` . Kullanmak `::SQLSetPos` da daha etkilidir.
 
-Bir kayıt kümesindeki varolan bir kaydı düzenlemek, kayda kaydırmayı, kayıt setinin [Düzenle](../../mfc/reference/crecordset-class.md#edit) üye işlevini çağırmayı, yeni kaydın alan veri üyelerinin değerlerini ayarlamayı ve değiştirilen kaydı veri kaynağına yazmak için [Update](../../mfc/reference/crecordset-class.md#update) üye işlevini çağırmayı içerir.
+## <a name="editing-an-existing-record"></a><a name="_core_editing_an_existing_record"></a> Mevcut bir kaydı düzenleniyor
 
-Arama `Edit`için bir ön koşul olarak, kayıt kümesi güncellenebilir ve kayıt üzerinde olmalıdır. Ve `CanUpdate` `IsDeleted` üye işlevler bu koşulları belirlemenize izin sağlar. Geçerli kayıt da zaten silinmemiş olmalı ve kayıt kümesinde (her `IsBOF` `IsEOF` ikisi de ve 0 döndürün) kayıtlar olmalıdır.
+Bir kayıt kümesindeki mevcut bir kaydı düzenlemek, kayda kaydırma, kayıt kümesinin üye [düzenleme](../../mfc/reference/crecordset-class.md#edit) işlevini çağırma, yeni kaydın alan veri üyelerinin değerlerini ayarlama ve değiştirilen kaydın veri kaynağına yazılması için [Update](../../mfc/reference/crecordset-class.md#update) member işlevini çağırma ile ilgilidir.
 
-Aradığınızda, `Edit`edit arabelleğindeki kayıt (geçerli kayıt) depolanır. Depolanan kaydın değerleri daha sonra herhangi bir alanın değişip değişmediğini algılamak için kullanılır.
+Çağırma için bir önkoşul olarak `Edit` , kayıt kümesi güncelleştirilebilir ve bir kayıt üzerinde olmalıdır. `CanUpdate`Ve `IsDeleted` üye işlevleri bu koşulları belirlemenizi sağlar. Geçerli kayıt zaten silinmemiş olmalıdır ve kayıt kümesinde kayıt olmalıdır (her ikisi de `IsBOF` `IsEOF` 0 döndürür).
 
-Aradıktan `Edit`sonra, edit arabelleği hala geçerli kaydı temsil eder, ancak şimdi alan veri üyelerideğişiklikleri kabul etmeye hazırdır. Kaydı değiştirmek için, değiştirmek istediğiniz alan veri üyelerinin değerlerini el ile ayarlarsınız. Bir alan için gerçek bir veri değeri belirtmek `SetFieldNull` yerine, Null değerini belirtmek için arayabilirsiniz. Değişikliklerinizi işlemek için `Update`.
+`Edit`' İ çağırdığınızda, Düzenleme arabelleğindeki kayıt (geçerli kayıt) depolanır. Depolanan kaydın değerleri daha sonra herhangi bir alanın değişip değişmediğini algılamak için kullanılır.
+
+`Edit`' İ çağırdığınızda, düzenleme arabelleği hala geçerli kaydı temsil eder, ancak artık alan veri üyelerinde yapılan değişiklikleri kabul etmeye hazırdır. Kaydı değiştirmek için, düzenlemek istediğiniz herhangi bir alan veri üyesinin değerlerini el ile ayarlarsınız. Bir alan için gerçek bir veri değeri belirtmek yerine, `SetFieldNull` null değerini belirtmek için öğesini çağırabilirsiniz. Değişikliklerinizi yürütmek için çağrısı yapın `Update` .
 
 > [!TIP]
-> Çıkmak `AddNew` veya `Edit` modda, `Move` *parametre AFX_MOVE_REFRESH*ile arayın.
+> Veya modundan yararlanmak için `AddNew` `Edit` `Move` *AFX_MOVE_REFRESH* parametresiyle çağırın.
 
-Arama `Update`için ön koşul olarak, kayıt kümesi boş olmamalı ve geçerli kayıt silinmemiş olmalıdır. `IsBOF`, `IsEOF`, `IsDeleted` ve tüm 0 dönmelidir.
+Çağırma için bir önkoşul olarak `Update` , kayıt kümesi boş olmamalı ve geçerli kayıt silinmemelidir. `IsBOF`, `IsEOF` , ve `IsDeleted` hepsi 0 döndürmelidir.
 
-Düzenlenen kaydı `Update` aradiğinizde:
+`Update`Düzenlenen kayıt için öğesini çağırdığınızda:
 
-- ODBC sürücünüz `::SQLSetPos` ODBC API işlevini destekliyorsa, MFC veri kaynağındaki kaydı güncelleştirmek için işlevi kullanır. Sürücü, `::SQLSetPos`düzenleme arabelleğinizi sunucudaki ilgili kayıtla karşılaştırır ve ikisi farklıysa sunucudaki kaydı günceller. Ile, `::SQLSetPos`MFC bir SQL deyimi oluşturmak ve işlemek zorunda değildir, çünkü daha verimli bir kayıt güncelleştirebilirsiniz.
+- ODBC sürücünüz `::SQLSetPos` ODBC API işlevini destekliyorsa, MFC, veri kaynağındaki kaydı güncelleştirmek için işlevini kullanır. İle `::SQLSetPos` , sürücü, düzenleme arabelleğini sunucu üzerindeki ilgili kayıtla karşılaştırır ve ikisi farklıysa sunucu üzerindeki kaydı güncelleyerek sunucuda kayıt güncelleştirilir. İle `::SQLSetPos` MFC, BIR SQL ifadesini oluşturmak ve işlemek zorunda olmadığından bir kaydı daha verimli bir şekilde güncelleştirebilir.
 
-   \-veya -
+   \- veya
 
-- Kullanılamıyorsa, `::SQLSetPos` MFC aşağıdakileri yapar:
+- Kullanılamaz ise `::SQLSetPos` MFC şunları yapar:
 
-   1. Herhangi bir değişiklik olmadıysa, `Update` hiçbir şey yapmaz ve 0 döndürür.
+   1. Değişiklik yoksa, `Update` hiçbir şey yapmaz ve 0 döndürür.
 
-   1. Değişiklik varsa, `Update` bir SQL **UPDATE** deyimi oluşturuyor. **UPDATE** deyiminde listelenen sütunlar, değişen alan veri üyelerini temel alır.
+   1. Değişiklikler varsa, `Update` BIR SQL **Update** ekstresi oluşturur. **Update** ifadesinde listelenen sütunlar değişmiş alan veri üyelerini temel alır.
 
-   1. `Update`değişiklikleri işler — **UPDATE** deyimini yürütür ve bir işlem devam ediyorsa kayıt veri kaynağında değiştirilir, ancak işlem devam ediyorsa kaydedilmez (bkz. işlemin güncelleştirmeyi nasıl etkilediği hakkında bilgi almak için [Kayıt Kümesinde İşlem Gerçekleştirme (ODBC).](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) ODBC, kaydın bir kopyasını tutar ve bu da değişir.
+   1. `Update` değişiklikleri kaydeder — **Update** ifadesini yürütür — ve kayıt veri kaynağında değiştirilir, ancak bir işlem devam ediyorsa (bkz. işlem [: bir kayıt kümesinde Işlem gerçekleştirme (ODBC)](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md) , işlemin güncelleştirmeyi nasıl etkilediği hakkında bilgi edinmek için). ODBC, kaydın bir kopyasını tutar ve bu da değişir.
 
-   1. Için işlemin `AddNew`aksine, `Edit` işlem depolanan kaydı geri yüklemez. Düzenlenen kayıt geçerli kayıt olarak yerinde kalır.
+   1. İşlemin aksine `AddNew` , `Edit` işlem depolanan kaydı geri yüklemez. Düzenlenen kayıt geçerli kayıt olarak yerinde kalır.
 
    > [!CAUTION]
-   > Bir kayıt kümesini arayarak `Update`güncelleştirmeye hazırlanırken, kayıt setinizin tablonun birincil anahtarını oluşturan tüm sütunları (veya tablodaki benzersiz dizinin tüm sütunlarını veya satırı benzersiz olarak tanımlamak için yeterli sütunları) içerdiğine dikkat edin. Bazı durumlarda, çerçeve yalnızca kayıt setinizde seçilen sütunları kullanarak tablonuzdaki hangi kaydın güncelleştirilemesini belirleyebilir. Gerekli tüm sütunlar olmadan, tabloda birden çok kayıt güncelleştirilebilir. Bu durumda, çerçeve çağırdığınızda `Update`özel durumlar atar.
+   > Çağırarak bir kayıt kümesini güncelleştirmeye hazırlarken `Update` , kayıt kümenizin tablonun birincil anahtarını (veya tablodaki tüm benzersiz dizin sütunlarının tümünü veya satırı benzersiz olarak tanımlamak için yeterli sayıda sütunu) oluşturan tüm sütunları içerdiğinden emin olmalısınız. Bazı durumlarda Framework, tablonuzdaki hangi kaydın güncelleşdii belirlemek için yalnızca kayıt kümenizde seçilen sütunları kullanabilir. Tüm gerekli sütunlar olmadan, tabloda birden çok kayıt güncelleştirilemeyebilir. Bu durumda çerçeve, çağırdığınızda özel durum oluşturur `Update` .
 
    > [!TIP]
-   > Daha önce `AddNew` `Edit` işlevden birini aradıysanız veya aradıktan `Update`sonra, düzenleme arabelleği depolanan kayıtla yenilenir ve devam eden yeni veya düzenlenen kaydın yerine yenilenir. Bu `AddNew` davranış, bir iptal etmek veya `Edit` yeni bir başlangıç için bir yol verir: kayıt devam hatalı `Edit` olduğunu `AddNew` belirlerseniz, sadece arama veya tekrar.
+   > Çağrı `AddNew` yaptıktan sonra veya daha önce bir işlev çağırdıysanız `Edit` , çağrı yapmadan önce `Update` , düzenleme arabelleği saklı kayıtla yenilenir, bu da yeni veya düzenlenmiş kaydın devam ettiği şekilde değiştirilerek yapılır. Bu davranış, bir veya işlemini durdurmak için bir yol sağlar `AddNew` `Edit` ve yeni bir işlem başlatabilir: devam eden kaydın hatalı olduğunu belirlerseniz, `Edit` veya `AddNew` yeniden çağırın.
 
-## <a name="deleting-a-record"></a><a name="_core_deleting_a_record"></a>Kaydı Silme
+## <a name="deleting-a-record"></a><a name="_core_deleting_a_record"></a> Kayıt silme
 
-Bir kaydı niçin kayıt kümesinden silmek, kayda kaydırmayı ve kayıt setinin [Delete](../../mfc/reference/crecordset-class.md#delete) üye işlevini çağırmayı içerir. Aksine `AddNew` `Edit`ve `Delete` , '' için `Update`eşleşen bir çağrı gerektirmez.
+Kayıt kümesinden bir kaydı silmek, kayda kaydırma ve kayıt kümesinin üye [silme](../../mfc/reference/crecordset-class.md#delete) işlevini çağırma işlemini içerir. Ve öğelerinden farklı olarak `AddNew` `Edit` , `Delete` öğesine eşleşen bir çağrı gerektirmez `Update` .
 
-Arama `Delete`için bir ön koşul olarak, kayıt kümesi güncellenebilir olmalı ve bir kayıt olmalıdır. , `CanUpdate` `IsBOF`, `IsEOF`ve `IsDeleted` üye işlevler bu koşulları belirlemenize izin sağlar.
+Çağırma için bir önkoşul olarak `Delete` , kayıt kümesi güncelleştirilebilir olmalıdır ve bir kayıt üzerinde olmalıdır. `CanUpdate`,, `IsBOF` , `IsEOF` Ve `IsDeleted` üye işlevleri bu koşulları belirlemenizi sağlar.
 
-Ne zaman: `Delete`
+Şunu çağırdığınızda `Delete` :
 
-- ODBC sürücünüz `::SQLSetPos` ODBC API işlevini destekliyorsa, MFC veri kaynağındaki kaydı silmek için işlevi kullanır. Kullanmak `::SQLSetPos` genellikle SQL kullanmaktan daha etkilidir.
+- ODBC sürücünüz `::SQLSetPos` ODBC API işlevini destekliyorsa, MFC, veri kaynağındaki kaydı silmek için işlevini kullanır. Kullanmak `::SQLSetPos` genellıkle SQL kullanmaktan daha etkilidir.
 
-   \-veya -
+   \- veya
 
-- Kullanılamıyorsa, `::SQLSetPos` MFC aşağıdakileri yapar:
+- Kullanılamaz ise `::SQLSetPos` MFC şunları yapar:
 
-   1. Edit arabelleğindeki geçerli kayıt, içinde olduğu `AddNew` `Edit`gibi yedeklenmez ve.
+   1. Düzenleme arabelleğindeki geçerli kayıt, ve ' de olduğu gibi yedeklenmez `AddNew` `Edit` .
 
-   1. `Delete`kaydı kaldıran bir SQL **DELETE** deyimi oluşturuyor.
+   1. `Delete` kaydı kaldıran bir SQL **Delete** ifadesini oluşturur.
 
-      Edit arabelleğindeki geçerli kayıt içinde `AddNew` olduğu `Edit`gibi depolanmaz ve .
+      Düzenleme arabelleğindeki geçerli kayıt, ve içinde olarak depolanmaz `AddNew` `Edit` .
 
-   1. `Delete`silme işlemini işler — **DELETE** deyimini yürütür. Kayıt veri kaynağında silinir ve kayıt anlık görüntü ise, ODBC'de silinir.
+   1. `Delete` silme işlemini kaydeder — **Delete** ifadesini yürütür. Kayıt, veri kaynağında silinmiş olarak işaretlenir ve kayıt bir anlık görüntüdür, ODBC 'de.
 
-   1. Silinen kaydın değerleri hala kayıt kümesinin alan veri üyelerindedir, ancak alan veri üyeleri `IsDeleted` Null olarak işaretlenir ve kayıt kümesinin üye işlevi sıfır olmayan bir değer döndürür.
+   1. Silinen kaydın değerleri hala kayıt kümesinin alan veri üyeleridir, ancak alan veri üyeleri null olarak işaretlenmiş ve kayıt kümesinin `IsDeleted` üye işlevi sıfır dışında bir değer döndürüyor.
 
    > [!NOTE]
-   > Bir kaydı sildikten sonra, yeni kaydın verileriyle birlikte edit arabelleği yeniden doldurmak için başka bir kayda kaydırmanız gerekir. Tekrar aramak `Delete` veya aramak `Edit`bir hatadır.
+   > Bir kaydı sildikten sonra, yeni kaydın verileriyle düzenleme arabelleğini yeniden doldurmak için başka bir kayda kaydırmanız gerekir. Yeniden çağırmak veya çağırmak için bir hata oluştu `Delete` `Edit` .
 
-Güncelleştirme işlemlerinde kullanılan SQL deyimleri hakkında bilgi [için](../../data/odbc/sql.md)BKZ.
+Güncelleştirme işlemlerinde kullanılan SQL deyimleri hakkında daha fazla bilgi için bkz. [SQL](../../data/odbc/sql.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
-[Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+[Kayıt kümesi: güncelleştirmeler hakkında daha fazla bilgi (ODBC)](../../data/odbc/recordset-more-about-updates-odbc.md)<br/>
+[Kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

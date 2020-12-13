@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: tile_static anahtar sözcüğü'
 title: tile_static Anahtar Sözcüğü
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - tile_static keyword
 ms.assetid: d78384d4-65d9-45cf-b3df-7e904f489d06
-ms.openlocfilehash: 9476c0c446463c04084f46ed17a8ada7fb01fd7e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c719ab61fd6247800b7e1b6b8ac1a58dd51c6ac5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188135"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151417"
 ---
 # <a name="tile_static-keyword"></a>tile_static Anahtar Sözcüğü
 
@@ -19,7 +20,7 @@ ms.locfileid: "80188135"
 
 **Tile_static** anahtar sözcüğü aşağıdaki sınırlamalara sahiptir:
 
-- Yalnızca `restrict(amp)` değiştiricisine sahip bir işlevde bulunan değişkenlerde kullanılabilir.
+- Yalnızca değiştiriciye sahip bir işlevde bulunan değişkenlerde kullanılabilir `restrict(amp)` .
 
 - İşaretçi veya başvuru türleri olan değişkenlerde kullanılamaz.
 
@@ -27,7 +28,7 @@ ms.locfileid: "80188135"
 
 - Başlatılmamış **tile_static** değişkenin değeri tanımsız.
 
-- Bir **tile_static** değişkeni, `parallel_for_each`için döşeli olmayan bir çağrının belirtildiği bir çağrı grafiğinde bildirilirse, bir uyarı oluşturulur ve değişkenin davranışı tanımsız olur.
+- Bir **tile_static** değişkeni, üzerinde döşeli olmayan bir çağrının belirtildiği bir çağrı grafiğinde bildirilirse `parallel_for_each` , bir uyarı oluşturulur ve değişkenin davranışı tanımsız olur.
 
 ## <a name="example"></a>Örnek
 
@@ -146,7 +147,7 @@ for (int i = 0; i < 4; i++) {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)<br/>
-[C++ AMP'ye Genel Bakış](../parallel/amp/cpp-amp-overview.md)<br/>
-[parallel_for_each Işlevi (C++ amp)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)<br/>
-[İzlenecek yol: Matris Çarpım](../parallel/amp/walkthrough-matrix-multiplication.md)
+[Microsoft 'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md)<br/>
+[C++ AMP genel bakış](../parallel/amp/cpp-amp-overview.md)<br/>
+[parallel_for_each Işlevi (C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)<br/>
+[İzlenecek yol: Matris çarpma](../parallel/amp/walkthrough-matrix-multiplication.md)

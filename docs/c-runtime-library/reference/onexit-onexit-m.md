@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _onexit _onexit_m'
 title: _onexit, _onexit_m
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - registering exit routines
 - registering to be called on exit
 ms.assetid: 45743298-0e2f-46cf-966d-1ca44babb443
-ms.openlocfilehash: 9afcd729f19f11b82e8f24c2b7fcf9ec40990deb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0b79c521b04a4cb1597dda7c7ed2a19ae2dcf905
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951339"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151703"
 ---
 # <a name="_onexit-_onexit_m"></a>_onexit, _onexit_m
 
@@ -66,17 +67,17 @@ _onexit_t_m _onexit_m(
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Onexit** işlevi, program normal olarak sonlandırıldığında çağrılacak bir işlevin (*işlev*) adresini geçti. **_Onexit** için art arda ÇAĞRıLAR, LIFO (ilk kez geçen) sırada yürütülen işlevlerin bir kaydını oluşturur. **_Onexit** öğesine geçirilen işlevler parametre alamaz.
+**_Onexit** işlevi, program normal olarak sonlandırıldığında çağrılacak bir işlevin (*işlev*) adresini geçti. **_Onexit** için art arda yapılan ÇAĞRıLAR, LIFO (ilk kez geçen) sırada yürütülen işlevlerin bir kaydını oluşturur. **_Onexit** geçirilen işlevler parametre alamaz.
 
-Bir DLL içinden **_onexit** çağrıldığında, **DllMain 'ın DllMain** sonrasında dll 'nin kaldırılması sırasında **_onexit** ile kaydedilen yordamlar DLL_PROCESS_DETACH ile çağırılır.
+**_ONEXIT** dll içinden çağrıldığında, **_onexit** Ile kaydedilen yordamlar, **DLLMAIN** DLL_PROCESS_DETACH ile çağrıldıktan sonra dll 'nin kaldırılması durumunda çalıştırılır.
 
-**_onexit** bir Microsoft uzantısıdır. ANSI taşınabilirlik için [atexit](atexit.md)' i kullanın. İşlevin **_onexit_d** sürümü karma mod kullanımı içindir.
+**_onexit** bir Microsoft uzantısıdır. ANSI taşınabilirlik için [atexit](atexit.md)' i kullanın. İşlevin **_onexit_m** sürümü karma mod kullanımı içindir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_onexit**|\<Stdlib. h >|
+|**_onexit**|\<stdlib.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -125,7 +126,7 @@ int fn4()
 }
 ```
 
-### <a name="output"></a>Çıkış
+### <a name="output"></a>Çıktı
 
 ```Output
 This is executed first.
@@ -134,7 +135,7 @@ This is executed next.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [__dllonexit](../../c-runtime-library/dllonexit.md)<br/>

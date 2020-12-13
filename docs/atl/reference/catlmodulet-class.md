@@ -1,5 +1,6 @@
 ---
-title: CAtlModuleT Sınıfı
+description: 'Daha fazla bilgi edinin: Catlmodület sınıfı'
+title: Catlmodület sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAtlModuleT
@@ -14,14 +15,14 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlModuleT class
 ms.assetid: 9b74d02f-9117-47b1-a05e-c5945f83dd2b
-ms.openlocfilehash: b07e60265570e66337a2d13007e9ad57c6f369e4
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 841d4a41b7df818d9e966af1050fd9e376d89447
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147231"
 ---
-# <a name="catlmodulet-class"></a>CAtlModuleT Sınıfı
+# <a name="catlmodulet-class"></a>Catlmodület sınıfı
 
 Bu sınıf, ATL modülünü uygular.
 
@@ -35,19 +36,19 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınız öğesinden `CAtlModuleT`türetilir.
+Sınıfınız öğesinden türetilir `CAtlModuleT` .
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[Catlmodület:: Catlmodület](#catlmodulet)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[Catlmodület:: InitLibId](#initlibid)|Geçerli modülün GUID 'sini içeren veri üyesini başlatır.|
 |[Catlmodület:: Registerappıd](#registerappid)|EXE 'yi kayıt defterine ekler.|
@@ -60,7 +61,7 @@ Sınıfınız öğesinden `CAtlModuleT`türetilir.
 
 `CAtlModuleT`, [CAtlModule](../../atl/reference/catlmodule-class.md)'ten türetilmiş bir ÇALıŞTıRıLABILIR (exe) veya HIZMET (exe) atl modülü uygular. Yürütülebilir bir modül, yerel, işlem dışı bir sunucusudur, ancak hizmet modülü Windows başladığında arka planda çalışan bir Windows uygulamasıdır.
 
-`CAtlModuleT`modülün başlatılması, kaydedilmesi ve kaydının kaydı için destek sağlar.
+`CAtlModuleT` modülün başlatılması, kaydedilmesi ve kaydının kaydı için destek sağlar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -74,7 +75,7 @@ Sınıfınız öğesinden `CAtlModuleT`türetilir.
 
 **Üstbilgi:** atlbase. h
 
-## <a name="catlmoduletcatlmodulet"></a><a name="catlmodulet"></a>Catlmodület:: Catlmodület
+## <a name="catlmoduletcatlmodulet"></a><a name="catlmodulet"></a> Catlmodület:: Catlmodület
 
 Oluşturucu.
 
@@ -86,7 +87,7 @@ CAtlModuleT() throw();
 
 [Catlmodület:: InitLibId](#initlibid)çağırır.
 
-## <a name="catlmoduletinitlibid"></a><a name="initlibid"></a>Catlmodület:: InitLibId
+## <a name="catlmoduletinitlibid"></a><a name="initlibid"></a> Catlmodület:: InitLibId
 
 Geçerli modülün GUID 'sini içeren veri üyesini başlatır.
 
@@ -98,7 +99,7 @@ static void InitLibId() throw();
 
 [Catlmodület:: catlmodület](#catlmodulet)Oluşturucusu tarafından çağırılır.
 
-## <a name="catlmoduletregisterappid"></a><a name="registerappid"></a>Catlmodület:: Registerappıd
+## <a name="catlmoduletregisterappid"></a><a name="registerappid"></a> Catlmodület:: Registerappıd
 
 EXE 'yi kayıt defterine ekler.
 
@@ -110,7 +111,7 @@ HRESULT RegisterAppId() throw();
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="catlmoduletregisterserver"></a><a name="registerserver"></a>Catlmodület:: RegisterServer
+## <a name="catlmoduletregisterserver"></a><a name="registerserver"></a> Catlmodület:: RegisterServer
 
 Hizmeti kayıt defterine ekler.
 
@@ -132,7 +133,7 @@ Kaydedilecek nesnenin CLSID değerini gösterir. NULL ise (varsayılan değer), 
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="catlmoduletunregisterappid"></a><a name="unregisterappid"></a>Catlmodület:: Unregisterappıd
+## <a name="catlmoduletunregisterappid"></a><a name="unregisterappid"></a> Catlmodület:: Unregisterappıd
 
 EXE 'yi kayıt defterinden kaldırır.
 
@@ -144,7 +145,7 @@ HRESULT UnregisterAppId() throw();
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="catlmoduletunregisterserver"></a><a name="unregisterserver"></a>Catlmodület:: UnregisterServer
+## <a name="catlmoduletunregisterserver"></a><a name="unregisterserver"></a> Catlmodület:: UnregisterServer
 
 Hizmeti kayıt defterinden kaldırır.
 
@@ -166,7 +167,7 @@ Kaydı kaldırılacak nesnenin CLSID değerini gösterir. NULL ise (varsayılan 
 
 Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
-## <a name="catlmoduletupdateregistryappid"></a><a name="updateregistryappid"></a>Catlmodület:: Updateregıstryappid
+## <a name="catlmoduletupdateregistryappid"></a><a name="updateregistryappid"></a> Catlmodület:: Updateregıstryappid
 
 Kayıt defterindeki EXE bilgilerini güncelleştirir.
 
@@ -185,6 +186,6 @@ Başarılı S_OK veya hata durumunda HRESULT hatası döndürür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CAtlModule Sınıfı](../../atl/reference/catlmodule-class.md)<br/>
+[CAtlModule sınıfı](../../atl/reference/catlmodule-class.md)<br/>
 [Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

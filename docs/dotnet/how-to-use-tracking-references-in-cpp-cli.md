@@ -1,23 +1,24 @@
 ---
-title: 'Nasıl yapılır: İzleme başvurularını kullanma C++/CLI'
+description: "Hakkında daha fazla bilgi edinin: nasıl yapılır: C++/CLı 'da Izleme başvurularını kullanma"
+title: 'Nasıl yapılır: C++/CLI Üzerinde İzleme Başvurularını Kullanma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CLR types, passing by reference
 ms.assetid: d91e471c-34ff-4786-9e0d-c6db0494b946
-ms.openlocfilehash: 8be575bd39bc3b2e6512ba1bcb40d9206731f83a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c17101b5711feb503ad727d78b427e8766146960
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387142"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151391"
 ---
-# <a name="how-to-use-tracking-references-in-ccli"></a>Nasıl yapılır: İzleme başvurularını kullanma C++/CLI
+# <a name="how-to-use-tracking-references-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde İzleme Başvurularını Kullanma
 
-Bu makalede bir izleme başvurusunun (%) nasıl kullanılacağını gösterir. içinde C++/CLI ortak dil çalışma zamanı (CLR) türleri başvuruya göre geçirilecek.
+Bu makalede izleme başvurusunun nasıl kullanılacağı gösterilmektedir (%) C++/CLı ' da, ortak dil çalışma zamanı (CLR) türlerini başvuruya göre geçirme.
 
-## <a name="to-pass-clr-types-by-reference"></a>CLR Türleri başvuruya göre geçirmek için
+## <a name="to-pass-clr-types-by-reference"></a>CLR türlerini başvuruya göre geçirmek için
 
-Aşağıdaki örnek, bir izleme başvurusu CLR Türleri başvuruya göre geçirmek için nasıl kullanılacağını gösterir.
+Aşağıdaki örnek, bir izleme başvurusunun, CLR türlerini başvuruya göre geçirmek için nasıl kullanılacağını gösterir.
 
 ```cpp
 // tracking_reference_handles.cpp
@@ -70,7 +71,7 @@ int main() {
 zip == 20100
 ```
 
-Sonraki örnek, bir izleme başvurusu adresinin alınmasına döndürür gösterir bir [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md), değiştirmek ve bir izleme başvurusu verilere erişmek nasıl gösterilir.
+Sonraki örnek, bir izleme başvurusunun adresini alan bir [interior_ptr (C++/CLI)](../extensions/interior-ptr-cpp-cli.md)döndürdüğünü gösterir ve bir izleme başvurusu aracılığıyla verilerin nasıl değiştirileceğini ve erişebileceğini gösterir.
 
 ```cpp
 // tracking_reference_data.cpp
@@ -122,9 +123,9 @@ ctor: R(int)
 ctor: N(int i)
 ```
 
-## <a name="tracking-references-and-interior-pointers"></a>İzleme başvuruları ve iç işaretçiler
+## <a name="tracking-references-and-interior-pointers"></a>Başvuruları ve iç işaretçileri izleme
 
-Aşağıdaki kod örneği, izleme başvuruları ve iç işaretçiler arasında dönüştürme yapabilirsiniz gösterir.
+Aşağıdaki kod örneğinde, izleme başvuruları ve iç işaretçiler arasında dönüştürebileceğiniz gösterilmektedir.
 
 ```cpp
 // tracking_reference_interior_ptr.cpp
@@ -177,9 +178,9 @@ ctor: R(int)
 ctor: N(int i)
 ```
 
-## <a name="tracking-references-and-value-types"></a>İzleme başvuruları ve değer türleri
+## <a name="tracking-references-and-value-types"></a>Başvuruları ve değer türlerini izleme
 
-Bu örnek, bir değer türüne yönelik izleme başvurusuna aracılığıyla basit kutulama gösterir:
+Bu örnek, bir değer türüne yönelik izleme başvurusu aracılığıyla basit kutulamayı gösterir:
 
 ```cpp
 // tracking_reference_valuetypes_1.cpp
@@ -194,7 +195,7 @@ int main() {
 }
 ```
 
-Sonraki örnek, hem izleme başvuruları hem de değer türleri için yerel başvurular yoları olabileceğini gösterir.
+Sonraki örnek, hem izleme başvuruları hem de değer türlerine yerel başvurular içerebilmeniz gerektiğini gösterir.
 
 ```cpp
 // tracking_reference_valuetypes_2.cpp
@@ -219,7 +220,7 @@ int main() {
 13
 ```
 
-Aşağıdaki örnek, izleme başvuruları değer türleri ve yerel türleri ile birlikte kullanabileceğiniz gösterilmektedir.
+Aşağıdaki örnek, başvuruları değer türleriyle ve yerel türlerle birlikte izlemeyi kullanabileceğiniz gösterilmektedir.
 
 ```cpp
 // tracking_reference_valuetypes_3.cpp
@@ -254,7 +255,7 @@ int main() {
 5
 ```
 
-Bu örnek, bir değer türüne yönelik izleme başvurusuna atık olarak toplanmış yığınla bağlayabilirsiniz gösterir:
+Bu örnek, bir izleme başvurusunu atık toplanan yığında bir değer türüne bağlayacağınız gösterilmektedir:
 
 ```cpp
 // tracking_reference_valuetypes_4.cpp
@@ -292,9 +293,9 @@ Boxed new copy V: 1
 Original V: 4, Reference to handle of originally boxed V: 1
 ```
 
-## <a name="template-functions-that-take-native-value-or-reference-parameters"></a>Yerel alan şablon işlevlerini, değer veya başvuru parametreleri
+## <a name="template-functions-that-take-native-value-or-reference-parameters"></a>Yerel, değer veya başvuru parametreleri alan şablon işlevleri
 
-İzleme başvurusu bir şablon işlevi imzasında kullanarak, işlev bir parametre türü yerel olan, CLR değeri veya CLR başvuru tarafından çağrılabilir emin olun.
+Bir şablon işlevinin imzasında bir izleme başvurusu kullanarak, işlevin türü yerel, CLR değeri veya CLR başvurusu olan bir parametre tarafından çağrılabilir olmasını sağlayabilirsiniz.
 
 ```cpp
 // tracking_reference_template.cpp
@@ -343,4 +344,4 @@ T &
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzleme Başvurusu İşleci](../extensions/tracking-reference-operator-cpp-component-extensions.md)
+[İzleme başvurusu Işleci](../extensions/tracking-reference-operator-cpp-component-extensions.md)
