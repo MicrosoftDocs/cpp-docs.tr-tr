@@ -1,14 +1,15 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Windows Çalışma Zamanı C++ Şablon kitaplığı (WRL)'
 title: Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 ms.date: 11/04/2016
 ms.topic: overview
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 12bda00d6687340fbddfb8f81bbb83b6c2bd98a6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: cc94f907964efdf4bf93e8d92922f69373740d85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509800"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333922"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -137,7 +138,7 @@ Windows Çalışma Zamanı C++ Şablon kitaplığı, birkaç temel kavramı tems
 
 ### <a name="weakref"></a>WeakRef
 
-[WeakRef](weakref-class.md) , erişilebilir olabilecek veya erişilemeyen bir nesneye başvuran *zayıf bir başvuruyu*temsil eden bir akıllı işaretçi türüdür. Bir `WeakRef` nesne, klasık com tarafından değil yalnızca Windows çalışma zamanı tarafından kullanılabilir.
+[WeakRef](weakref-class.md) , erişilebilir olabilecek veya erişilemeyen bir nesneye başvuran *zayıf bir başvuruyu* temsil eden bir akıllı işaretçi türüdür. Bir `WeakRef` nesne, klasık com tarafından değil yalnızca Windows çalışma zamanı tarafından kullanılabilir.
 
 Bir `WeakRef` nesne, genellikle varlığı bir dış iş parçacığı veya uygulama tarafından denetlenen bir nesneyi temsil eder. Örneğin, bir `WeakRef` nesnesi bir dosya nesnesine başvurabilir. Dosya açıkken, `WeakRef` geçerli olur ve başvurulan dosya erişilebilir olur. Ancak dosya kapatıldığında, `WeakRef` geçersizdir ve dosyaya erişilemez.
 

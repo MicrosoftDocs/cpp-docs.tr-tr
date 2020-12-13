@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __svm_vmsave'
 title: __svm_vmsave
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - VMSAVE instruction
 - __svm_vmsave intrinsic
 ms.assetid: 617a60bd-8514-4ba1-8066-bcf4dd481030
-ms.openlocfilehash: f91efa7116a8a8e9ebe27c7e5e4e64c4f1533e9d
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5c0e4eb5f2d4c0f73921572811b070c8f87a2673
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333683"
 ---
 # <a name="__svm_vmsave"></a>__svm_vmsave
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen sanal makine denetim bloğunda (VMCB) işlemci durumunun bir alt kümesini depolar.
 
@@ -35,7 +36,7 @@ void __svm_vmsave(
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev, `VMSAVE` makine yönergesine eşdeğerdir. `__svm_vmsave` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için "AMD64 mimari programcı 'nin El Ile birim 2 ' yi arayın. Sistem programlama, "belge numarası 24593, düzeltme 3,11 veya üzeri, [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesi.
+`__svm_vmsave`İşlev, `VMSAVE` makine yönergesine eşdeğerdir. Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, "AMD64 Architecture Programmer 'ın manuel Volume 2: sistem programlama," belge numarası 24593, düzeltme 3,11 veya sonraki bir sürümü, [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesinde "belgeyi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -43,7 +44,7 @@ void __svm_vmsave(
 |---------------|------------------|
 |`__svm_vmsave`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 **SON Microsoft 'a özgü**
 

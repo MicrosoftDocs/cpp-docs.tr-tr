@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l'
 title: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - ismbstrail_l function
 - _ismbstrail_l function
 ms.assetid: 86d2cd7a-3cff-443a-b713-14cc17a231e9
-ms.openlocfilehash: 892545ba0ac66604b0ea1c5adcfa32dd64b68973
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 54745c2db33a68b35236c5b6169280e5e7dacfef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334135"
 ---
 # <a name="_ismbslead-_ismbstrail-_ismbslead_l-_ismbstrail_l"></a>_ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 
@@ -98,7 +99,7 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_ismbslead** , karakter bir ön bayt ise-1 döndürür **_ismbstrail** ve karakter bir iz baytı ise-1 döndürür. Giriş dizeleri geçerliyse ancak bir ön bayt ya da iz baytı değilse, bu işlevler sıfır döndürür. Bağımsız değişken **null**Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+**_ismbslead** , karakter bir ön bayt ise-1 döndürür **_ismbstrail** ve karakter bir iz baytı ise-1 döndürür. Giriş dizeleri geçerliyse ancak bir ön bayt ya da iz baytı değilse, bu işlevler sıfır döndürür. Bağımsız değişken **null** Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **null** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -112,12 +113,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_ismbslead**|\<Mbctype. h> veya \<mbstring. h>|\<CType. h>, * \<limit. h>, \<stdlib. h>|
-|**_ismbstrail**|\<Mbctype. h> veya \<mbstring. h>|\<CType. h>, * \<limit. h>, \<stdlib. h>|
-|**_ismbslead_l**|\<Mbctype. h> veya \<mbstring. h>|\<CType. h>, * \<limit. h>, \<stdlib. h>|
-|**_ismbstrail_l**|\<Mbctype. h> veya \<mbstring. h>|\<CType. h>, * \<limit. h>, \<stdlib. h>|
+|**_ismbslead**|\<mbctype.h> veya \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+|**_ismbstrail**|\<mbctype.h> veya \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+|**_ismbslead_l**|\<mbctype.h> veya \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
+|**_ismbstrail_l**|\<mbctype.h> veya \<mbstring.h>|\<ctype.h>,* \<limits.h>, \<stdlib.h>|
 
-\*Test koşullarına yönelik bildirim sabitleri için.
+\* Test koşullarına yönelik bildirim sabitleri için.
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

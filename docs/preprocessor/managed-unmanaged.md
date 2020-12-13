@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yönetilen, yönetilmeyen pragmalar'
 title: managed, unmanaged pragmalar
 ms.date: 08/29/2019
 f1_keywords:
@@ -12,22 +13,22 @@ helpviewer_keywords:
 - pragmas, managed
 - unmanaged pragma
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
-ms.openlocfilehash: 4c13155d1c84966a593df11baf525a0c3539f02c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 10f632b009c9922f67f4321acc862142d895e7ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218815"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333387"
 ---
 # <a name="managed-unmanaged-pragmas"></a>managed, unmanaged pragmalar
 
 İşlevleri yönetilen veya yönetilmeyen olarak derlemek için işlev düzeyi denetimini etkinleştirin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#pragma yönetiliyor**\
 > **#pragma yönetilmeyen**\
-> **#pragma Managed (** [ **push,** ] { **on** | **off** } **)** \
+> **#pragma Managed (** [ **push,** ] { **on**  |  **off** } **)**\
 > **#pragma Managed (pop)**
 
 ## <a name="remarks"></a>Açıklamalar
@@ -36,15 +37,15 @@ ms.locfileid: "70218815"
 
 Yerel platform için yönetilmeyen bir işlev derlenir. Programın bu bölümünün yürütülmesi, ortak dil çalışma zamanı tarafından yerel platforma geçirilir.
 
-İşlevler `/clr` , kullanıldığında varsayılan olarak yönetilen olarak derlenir.
+İşlevler, kullanıldığında varsayılan olarak yönetilen olarak derlenir `/clr` .
 
 Bu pragmalar uygulanırken:
 
 - Bir işlev gövdesinde değil, önce pragma ' ı ekleyin.
 
-- Pragma After `#include` deyimlerini ekleyin. Deyimlerden önce `#include` bu pragmaları kullanmayın.
+- Pragma After deyimlerini ekleyin `#include` . Deyimlerden önce bu pragmaları kullanmayın `#include` .
 
-Derleyici, derlemede kullanılmazsa **yönetilen** ve **yönetilmeyen** `/clr` pragmaları yoksayar.
+Derleyici, derlemede kullanılmazsa **yönetilen** ve **yönetilmeyen** pragmaları yoksayar `/clr` .
 
 Bir şablon işlevi örneği oluşturulduğunda, şablon tanımlandığında pragma durumu yönetilip yönetilmediğini belirler.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_error_mode'
 title: _set_error_mode
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _set_error_mode function
 - set_error_mode function
 ms.assetid: f0807be5-73d1-4a32-a701-3c9bdd139c5c
-ms.openlocfilehash: c1bb617e0f3792f2ac41d59df13d184423d56a9e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: f21983702adb0ae080443e5869485fe581a65f85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334096"
 ---
 # <a name="_set_error_mode"></a>_set_error_mode
 
@@ -40,7 +41,7 @@ C çalışma zamanının programı sona erdirmek için bir hata iletisi yazdığ
 > [!IMPORTANT]
 > Bu API, Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında CRT işlevleri desteklenmez](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _set_error_mode(
@@ -59,13 +60,13 @@ Eski ayarı döndürür veya bir hata oluşursa-1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**__Error_mode**değerini ayarlayarak hata çıktı havuzunu denetler. Örneğin, çıktıyı standart bir hataya yönlendirebilir veya **MessageBox** API 'sini kullanabilirsiniz.
+**__Error_mode** değerini ayarlayarak hata çıktı havuzunu denetler. Örneğin, çıktıyı standart bir hataya yönlendirebilir veya **MessageBox** API 'sini kullanabilirsiniz.
 
 *Mode_val* parametresi aşağıdaki değerlerden birine ayarlanabilir.
 
 |Değer|Açıklama|
 |---------------|-----------------|
-|**_OUT_TO_DEFAULT**|Hata havuzu **__app_type**tarafından belirlenir.|
+|**_OUT_TO_DEFAULT**|Hata havuzu **__app_type** tarafından belirlenir.|
 |**_OUT_TO_STDERR**|Hata havuzu standart bir hatadır.|
 |**_OUT_TO_MSGBOX**|Hata havuzu bir ileti kutusudur.|
 |**_REPORT_ERRMODE**|Geçerli **__error_mode** değerini bildirin.|

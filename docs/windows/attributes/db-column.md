@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: db_column'
 title: db_column (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 05f734a9b083d93f2501172d9455b7889c65a5a6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 931a285d28752273ecb1941702ff1cb32b42740c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333082"
 ---
 # <a name="db_column"></a>db_column
 
@@ -54,7 +55,7 @@ Seçim Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye deği�
 
 [Db_table](db-table.md) veya [db_command](db-command.md) öznitelikleriyle birlikte **db_column** kullanın.
 
-Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName* erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ .  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 Bir uygulamada kullanılan bu özniteliğe bir örnek için bkz. [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
@@ -101,9 +102,9 @@ class CProducts {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntemi|
-|**Tekrarlanabilir**|Hayır|
-|**Gerekli öznitelikler**|Hiçbiri|
-|**Geçersiz öznitelikler**|Hiçbiri|
+|**Yinelenebilir**|Hayır|
+|**Gerekli öznitelikler**|Yok|
+|**Geçersiz öznitelikler**|Yok|
 
 Öznitelik bağlamları hakkında daha fazla bilgi için bkz. [öznitelik bağlamları](cpp-attributes-com-net.md#contexts).
 

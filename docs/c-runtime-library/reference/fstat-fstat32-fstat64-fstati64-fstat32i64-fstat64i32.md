@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32'
 title: _fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 ms.date: 4/2/2020
 api_name:
@@ -57,18 +58,18 @@ helpviewer_keywords:
 - _fstati64 function
 - fstat32i64 function
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-ms.openlocfilehash: 75ab00e8ee464e9042ba266b8d72e5ded48785ee
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b7c9bd6994506cabd27bfad949bbe7ec3784ffcc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334251"
 ---
 # <a name="_fstat-_fstat32-_fstat64-_fstati64-_fstat32i64-_fstat64i32"></a>_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 
 Açık bir dosya hakkında bilgi alır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _fstat(
@@ -107,11 +108,11 @@ Sonuçları depolayacak yapıya yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Dosya durum bilgileri elde edilmişse 0 döndürür. -1 ' in dönüş değeri bir hatayı gösterir. Dosya tanımlayıcısı geçersizse veya *buffer* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** değeri **EBADF**olarak ayarlanır, geçersiz bir dosya tanımlayıcısı durumunda ya da *buffer* **null**ise **EINVAL**.
+Dosya durum bilgileri elde edilmişse 0 döndürür. -1 ' in dönüş değeri bir hatayı gösterir. Dosya tanımlayıcısı geçersizse veya *buffer* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** değeri **EBADF** olarak ayarlanır, geçersiz bir dosya tanımlayıcısı durumunda ya da *buffer* **null** ise **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fstat** işlevi *FD* ile ilişkili açık dosya hakkındaki bilgileri alır ve *arabelleğe*göre işaret eden yapıda depolar. SYS\Stat.h içinde tanımlanan **_stat** yapısı aşağıdaki alanları içerir.
+**_Fstat** işlevi *FD* ile ilişkili açık dosya hakkındaki bilgileri alır ve *arabelleğe* göre işaret eden yapıda depolar. SYS\Stat.h içinde tanımlanan **_stat** yapısı aşağıdaki alanları içerir.
 
 |Alan|Anlamı|
 |-|-|
@@ -124,7 +125,7 @@ Dosya durum bilgileri elde edilmişse 0 döndürür. -1 ' in dönüş değeri bi
 | **st_rdev** | Bir cihaz ise, *FD*; Aksi takdirde 0. |
 | **st_size** | Dosyanın bayt cinsinden boyutu. |
 
-*FD* bir cihaza başvuruyorsa, **st_atime**, **st_ctime**, **st_mtime**ve **st_size** alanları anlamlı değildir.
+*FD* bir cihaza başvuruyorsa, **st_atime**, **st_ctime**, **st_mtime** ve **st_size** alanları anlamlı değildir.
 
 Stat. h, Types. h içinde tanımlanan [_dev_t](../../c-runtime-library/standard-types.md) türünü kullandığından, kodunuzda stat. h öncesinde Types. h dahil etmeniz gerekir.
 
@@ -132,7 +133,7 @@ Stat. h, Types. h içinde tanımlanan [_dev_t](../../c-runtime-library/standard-
 
 Bu işlevlerin çeşitlemeleri 32 bit veya 64 bit zaman türlerini ve 32-bit veya 64-bit dosya uzunluklarını destekler. İlk sayısal sonek (**32** veya **64**) kullanılan zaman türü boyutunu belirtir; İkinci sonek, dosya boyutunun 32-bit veya 64 bit tamsayı olarak temsil edilip edilmeyeceğini gösteren **i32** veya **i64**.
 
-**_fstat** **_fstat64i32**eşdeğerdir ve **`struct`** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_fstat** 32 bitlik bir süre kullanır ve **`struct`** **_stat** 32 bit zaman içerir. Aynı, **_fstati64**için de geçerlidir.
+**_fstat** **_fstat64i32** eşdeğerdir ve **`struct`** **_stat** 64 bitlik bir süre içerir. **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe bu durum geçerlidir; bu durumda eski davranış geçerli olur; **_fstat** 32 bitlik bir süre kullanır ve **`struct`** **_stat** 32 bit zaman içerir. Aynı, **_fstati64** için de geçerlidir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

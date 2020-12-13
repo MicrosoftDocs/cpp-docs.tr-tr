@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: improper_scheduler_attach sınıfı'
 title: improper_scheduler_attach Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - improper_scheduler_attach class
 ms.assetid: 5a76da0a-091b-4748-8f62-b3a28f674f9e
-ms.openlocfilehash: 85adf3f919d94a82f5a68a5cd9e5f44cdca10006
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 755cd72d20eb88dbd1ff7c58586f0aaf3b964a6a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334626"
 ---
 # <a name="improper_scheduler_attach-class"></a>improper_scheduler_attach Sınıfı
 
-Bu sınıf, `Attach` yöntemi geçerli bağlama zaten eklenmiş olan bir `Scheduler` nesnesi üzerinde çağrıldığında oluşturulan bir özel durumu açıklar.
+Bu sınıf, `Attach` yöntemi `Scheduler` zaten geçerli bağlama eklenmiş bir nesne üzerinde çağrıldığında oluşturulan bir özel durumu açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class improper_scheduler_attach : public std::exception;
@@ -31,7 +32,7 @@ class improper_scheduler_attach : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[improper_scheduler_attach](#ctor)|Fazla Yüklendi. `improper_scheduler_attach` nesnesi oluşturur.|
+|[improper_scheduler_attach](#ctor)|Fazla Yüklendi. Bir `improper_scheduler_attach` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,9 +46,9 @@ class improper_scheduler_attach : public std::exception;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>improper_scheduler_attach
+## <a name="improper_scheduler_attach"></a><a name="ctor"></a> improper_scheduler_attach
 
-`improper_scheduler_attach` nesnesi oluşturur.
+Bir `improper_scheduler_attach` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP improper_scheduler_attach(_In_z_ const char* _Message) throw();
@@ -62,5 +63,5 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[Zamanlayıcı Sınıfı](scheduler-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[Zamanlayıcı sınıfı](scheduler-class.md)

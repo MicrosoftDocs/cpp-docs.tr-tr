@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Çeviri aşamaları'
 title: Çeviri aşamaları
 ms.date: 08/29/2019
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - file translation [C++], compiler process
 - files [C++], translation
 ms.assetid: a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db
-ms.openlocfilehash: d072c9aec48d815ba85f8a12576baa6447703f8c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 6a561fe9aa61df293a038a9edfd094dbdef4fe89
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333181"
 ---
 # <a name="phases-of-translation"></a>Çeviri aşamaları
 
-C ve C++ programları, her biri programın bazı metinlerini içeren bir veya daha fazla kaynak dosyadan oluşur. Bir kaynak dosyası, *içerme dosyaları*ile birlikte, ön `#include` işlemci yönergesi kullanılarak dahil edilen, ancak gibi koşullu `#if`derleme yönergeleri tarafından kaldırılan kodun bölümlerini dahil olmamak üzere bir *kaynak dosya olarak adlandırılır çeviri birimi*.
+C ve C++ programları, her biri programın bazı metinlerini içeren bir veya daha fazla kaynak dosyadan oluşur. Bir kaynak dosyası, *içerme dosyaları* ile birlikte, ön işlemci yönergesi kullanılarak dahil edilen `#include` , ancak gibi koşullu derleme yönergeleri tarafından kaldırılan kodun bölümlerini dahil olmamak üzere `#if` bir *çeviri birimi* olarak adlandırılır.
 
 Kaynak dosyalar farklı zamanlarda çevrilebilir. Aslında, yalnızca güncel olmayan dosyaları çevirmek yaygındır. Çevrilen çeviri birimleri ayrı nesne dosyalarına veya nesne kodu kitaplıklarına işlenebilir. Bu ayrı, çevrilmiş çeviri birimleri daha sonra yürütülebilir bir program veya dinamik bağlantı kitaplığı (DLL) oluşturacak şekilde bağlanır. Bağlayıcıya giriş olarak kullanılabilecek dosyalar hakkında daha fazla bilgi için bkz. [LINK Input Files](../build/reference/link-input-files.md).
 
@@ -46,13 +47,13 @@ Bir ters eğik çizgi ( **\\** ) ile biten ve hemen ardından yeni satır karakt
 Kaynak dosya, ön işleme belirteçlerine ve boşluk karakterlerine bölünmüştür. Kaynak dosyadaki yorumların her biri bir boşluk karakteriyle değiştirilmiştir. Yeni satır karakterleri korunur.
 
 *Ön*\
-Ön işleme yönergeleri yürütülür ve makrolar kaynak dosyasına genişletilir. İfade `#include` , eklenen herhangi bir metinde önceki üç çeviri adımı ile başlayarak çeviriyi çağırır.
+Ön işleme yönergeleri yürütülür ve makrolar kaynak dosyasına genişletilir. `#include`İfade, eklenen herhangi bir metinde önceki üç çeviri adımı ile başlayarak çeviriyi çağırır.
 
 *Karakter kümesi eşleme*\
-Tüm kaynak karakter kümesi üyeleri ve kaçış dizileri, yürütme karakter kümesi içindeki eşdeğerlerine dönüştürülür. Microsoft C ve C++için hem kaynak hem de yürütme karakter kümeleri ASCII 'dir.
+Tüm kaynak karakter kümesi üyeleri ve kaçış dizileri, yürütme karakter kümesi içindeki eşdeğerlerine dönüştürülür. Microsoft C ve C++ için hem kaynak hem de yürütme karakter kümeleri ASCII 'dir.
 
 *Dize birleştirme*\
-Tüm bitişik dize ve geniş dize sabit değerleri birleştirilir. Örneğin, `"String " "concatenation"` olur `"String concatenation"`.
+Tüm bitişik dize ve geniş dize sabit değerleri birleştirilir. Örneğin, `"String " "concatenation"` olur `"String concatenation"` .
 
 *İde*\
 Tüm belirteçler, sözdizimsel ve anlam açısından analiz edilir; Bu belirteçler nesne koduna dönüştürülür.
@@ -66,4 +67,4 @@ Bağlayıcı tüm dış başvuruları çözümler ve standart kitaplıklarla bir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Ön İşlemci](../preprocessor/preprocessor.md)
+[Ön işlemci](../preprocessor/preprocessor.md)

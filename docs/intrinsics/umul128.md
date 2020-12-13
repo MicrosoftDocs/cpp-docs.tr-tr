@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _umul128'
 title: _umul128
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - __umul128 intrinsic
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-ms.openlocfilehash: 205f0f7f9046ede624bb09e18d8ede32fadbc3de
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 7fd126b169bd01fc4d51d186879e019f8d86f008
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333599"
 ---
 # <a name="_umul128"></a>_umul128
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-İlk iki bağımsız değişken olarak geçirilen 2 64 bitlik işaretsiz tamsayıları çarpar ve ürünün yüksek 64 bitini tarafından `HighProduct` işaret edilen 64-bit işaretsiz tamsayıya koyar ve ürünün düşük 64 bitlerini döndürür.
+İlk iki bağımsız değişken olarak geçirilen 2 64 bitlik işaretsiz tamsayıları çarpar ve ürünün yüksek 64 bitini tarafından işaret edilen 64-bit işaretsiz tamsayıya koyar `HighProduct` ve ürünün düşük 64 bitlerini döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,15 +41,15 @@ unsigned __int64 _umul128(
 *HighProduct*\
 dışı Ürünün yüksek 64 bitleri.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Ürünün düşük 64 biti.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Alanlarla|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_umul128`|X64|\<Intrin. h >|
+|`_umul128`|x64|\<intrin.h>|
 
 ## <a name="example"></a>Örnek
 

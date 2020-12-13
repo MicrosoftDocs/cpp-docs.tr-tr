@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: optimize pragma'
 title: optimize pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,20 +9,20 @@ helpviewer_keywords:
 - pragmas, optimize
 - optimize pragma
 ms.assetid: cb13c1cc-186a-45bc-bee7-95a8de7381cc
-ms.openlocfilehash: 6d7b99b7a72c133d56a209cf42fa9ef670a4a7f9
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 9c7f07e44a31144c469bb13c936bc16d5fda39df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220509"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333206"
 ---
 # <a name="optimize-pragma"></a>optimize pragması
 
 İşlev işlevi temelinde iyileştirmeleri belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#pragma optimize et ("** [ *optimizasyon-List* ] **",** { **on** | **off** } **)**
+> **#pragma optimize et ("** [ *optimizasyon-List* ] **",** { **on**  |  **off** } **)**
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -33,7 +34,7 @@ ms.locfileid: "70220509"
 
 | Parametre (ler) | İyileştirme türü |
 |--------------------|--------------------------|
-| **g** | Genel iyileştirmeleri etkinleştirin. |
+| **Acil** | Genel iyileştirmeleri etkinleştirin. |
 | **s** veya **t** | Makine kodunun kısa veya hızlı dizilerini belirtin. |
 | **Iz** | Program yığınında çerçeve işaretçileri oluşturun. |
 
@@ -43,9 +44,9 @@ Bu parametreler, [/o](../build/reference/o-options-optimize-code.md) derleyici s
 #pragma optimize( "s", on )
 ```
 
-**OPTIMIZE** pragma 'ı boş dize ( **""** ) ile kullanmak, yönergenin özel bir biçimidir:
+**OPTIMIZE** pragma 'ı boş dize (**""**) ile kullanmak, yönergenin özel bir biçimidir:
 
-**Kapalı** parametresini kullandığınızda, tüm iyileştirmeleri, **g**, **s**, **t**ve **y**işlemlerini kapatır.
+**Kapalı** parametresini kullandığınızda, tüm iyileştirmeleri, **g**, **s**, **t** ve **y** işlemlerini kapatır.
 
 **On** parametresini kullandığınızda, en iyileştirmeleri [/o](../build/reference/o-options-optimize-code.md) derleyici seçeneğini kullanarak belirttikleriniz için sıfırlar.
 

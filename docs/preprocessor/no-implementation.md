@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: no_implementation Import özniteliği'
 title: no_implementation içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,30 +7,30 @@ f1_keywords:
 helpviewer_keywords:
 - no_implementation attribute
 ms.assetid: bdc67785-e131-409c-87bc-f4d2f4abb07b
-ms.openlocfilehash: 8f0a7454fdbedc1959b665ccb2a23748d21c342d
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0cfd51b344847d2e5658fd4e4ec1a9f30db51fe6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220774"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333328"
 ---
 # <a name="no_implementation-import-attribute"></a>no_implementation içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
-Sarmalayıcı üye işlevlerinin uygulamalarını içeren `.tli` üst bilginin oluşturulmasını engeller.
+`.tli`Sarmalayıcı üye işlevlerinin uygulamalarını içeren üst bilginin oluşturulmasını engeller.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **no_implementation**
+> **#import** *türü-kitaplık* **no_implementation**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu öznitelik belirtilmişse `.tlh` , tür kitaplığı öğelerini kullanıma sunma bildirimiyle birlikte üst bilgi, `.tli` başlık dosyasını dahil etmek için bir `#include` bildirim olmadan oluşturulur.
+Bu öznitelik belirtilmişse, `.tlh` tür kitaplığı öğelerini kullanıma sunma bildirimiyle birlikte üst bilgi, `#include` başlık dosyasını dahil etmek için bir bildirim olmadan oluşturulur `.tli` .
 
-Bu öznitelik, [implementation_only](../preprocessor/implementation-only.md)ile birlikte kullanılır.
+Bu öznitelik [implementation_only](../preprocessor/implementation-only.md)birlikte kullanılır.
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

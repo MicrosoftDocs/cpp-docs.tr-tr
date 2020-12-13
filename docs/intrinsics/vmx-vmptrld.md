@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __vmx_vmptrld'
 title: __vmx_vmptrld
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - __vmx_vmptrld intrinsic
 - VMPTRLD instruction
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
-ms.openlocfilehash: 79b5a8b34b652ae1f011e89c793a7157c9e435ee
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 850311e4423940ebd34a203e6d43ec961b3258f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333541"
 ---
 # <a name="__vmx_vmptrld"></a>__vmx_vmptrld
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 İşaretçiyi belirtilen adresten geçerli sanal makine denetim yapısına (VMCS) yükler.
 
@@ -33,30 +34,30 @@ int __vmx_vmptrld(
 *VmcsPhysicalAddress*\
 'ndaki VMCS işaretçisinin depolandığı adres.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-0\
+0
 İşlem başarılı oldu.
 
-1\
-İşlem, geçerli VNET `VM-instruction error field` 'lerin içinde kullanılabilir olan genişletilmiş durumla başarısız oldu.
+1
+İşlem, geçerli VNET 'lerin içinde kullanılabilir olan genişletilmiş durumla başarısız oldu `VM-instruction error field` .
 
-2\
+iki
 İşlem durum kullanılabilir olmadan başarısız oldu.
 
 ## <a name="remarks"></a>Açıklamalar
 
 VMCS işaretçisi 64 bitlik bir fiziksel adrestir.
 
-İşlev, `VMPTRLD` makine yönergesine eşdeğerdir. `__vmx_vmptrld` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) SITESINDE "ıa-32 Intel mimarisi Için Intel Sanallaştırma teknik belirtimi" belge numarası C97063-002 olan belgeyi arayın.
+`__vmx_vmptrld`İşlev, `VMPTRLD` makine yönergesine eşdeğerdir. Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, [Intel Corporation](https://software.intel.com/articles/intel-sdm) SITESINDE "ıa-32 Intel mimarisi Için Intel Sanallaştırma teknik belirtimi" belge numarası C97063-002 olan belgeyi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`__vmx_vmptrld`|X64|
+|`__vmx_vmptrld`|x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 **SON Microsoft 'a özgü**
 

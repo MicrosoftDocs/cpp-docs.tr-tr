@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IScheduler Yapısı'
 title: IScheduler Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ f1_keywords:
 helpviewer_keywords:
 - IScheduler structure
 ms.assetid: 471de85a-2b1a-4b6d-ab81-2eff2737161e
-ms.openlocfilehash: ccd82b5c5112bc322717f2b58d79d4c8f34f5bbd
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3a99ea5041c9d1146bb2247c1dcac54ff2fb7cf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368171"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334467"
 ---
 # <a name="ischeduler-structure"></a>IScheduler Yapısı
 
-Çalışma zamanlayıcısının soyutlama için bir arabirimi. Eşzamanlı Çalışma Zamanı Kaynak Yöneticisi, çalışma zamanlayıcılarıyla iletişim kurmak için bu arabirimi kullanır.
+Bir iş Scheduler soyutlaması için arabirim. Eşzamanlılık Çalışma Zamanı Kaynak Yöneticisi, iş zamanlayıcılar ile iletişim kurmak için bu arabirimi kullanır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct IScheduler;
@@ -35,19 +36,19 @@ struct IScheduler;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[IScheduler::AddVirtualProcessors](#addvirtualprocessors)|Kullanımı için sanal işlemci kökleri kümesi olan bir zamanlayıcı sağlar. Her `IVirtualProcessorRoot` arabirim, zamanlayıcı adına iş gerçekleştirebilecek tek bir iş parçacığı yürütme hakkını temsil eder.|
-|[IScheduler::GetId](#getid)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
-|[IScheduler::GetPolicy](#getpolicy)|Zamanlayıcının ilkesinin bir kopyasını döndürür. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için [Bkz. SchedulerPolicy.](schedulerpolicy-class.md)|
-|[IScheduler::NotifyResourcesExternallyBusy](#notifyresourcesexternallybusy)|Bu zamanlayıcıya, dizideki `ppVirtualProcessorRoots` sanal işlemci kökleri kümesi tarafından temsil edilen donanım iş parçacıklarının artık diğer zamanlayıcılar tarafından kullanıldığını belirtir.|
-|[IScheduler::NotifyResourcesExternallyIdle](#notifyresourcesexternallyidle)|Bu zamanlayıcıya, dizideki `ppVirtualProcessorRoots` sanal işlemci kökleri kümesi tarafından temsil edilen donanım iş parçacıklarının diğer zamanlayıcılar tarafından kullanılmadığını belirtir.|
-|[IScheduler::VirtualProcessors kaldırma](#removevirtualprocessors)|Daha önce bu zamanlayıcıya ayrılmış olan sanal işlemci köklerinin kaldırılmasını başlatır.|
-|[IScheduler::İstatistikler](#statistics)|Görev varış ve tamamlama oranları ve zamanlayıcı için sıra uzunluğu değişikliği ile ilgili bilgiler sağlar.|
+|[Isecheduler:: Addvirtualiþlemcileri](#addvirtualprocessors)|Kullanımı için bir sanal işlemci kökleri kümesi içeren bir Zamanlayıcı sağlar. Her `IVirtualProcessorRoot` arabirim Zamanlayıcı adına iş gerçekleştirebilen tek bir iş parçacığını yürütme hakkını temsil eder.|
+|[IScheduler:: GetId](#getid)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
+|[IComparer:: GetPolicy](#getpolicy)|Zamanlayıcı ilkesinin bir kopyasını döndürür. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [SchedulerPolicy](schedulerpolicy-class.md).|
+|[IScheduler:: Notifyresourcesexüçlü Allybusy](#notifyresourcesexternallybusy)|Bu Scheduler 'da dizideki sanal işlemci kökleri kümesi tarafından temsil edilen donanım iş parçacıklarının `ppVirtualProcessorRoots` artık diğer zamanlayıcılar tarafından kullanılmakta olduğunu bildirir.|
+|[IScheduler:: Notifyresourcesexüçlü Allyıdle](#notifyresourcesexternallyidle)|Bu zamanlayıcıya dizideki sanal işlemci kökleri kümesi tarafından temsil edilen donanım iş parçacıklarının `ppVirtualProcessorRoots` diğer zamanlayıcılar tarafından kullanılmadığını bildirir.|
+|[IScheduler:: Removevirtualişlemcilerle](#removevirtualprocessors)|Daha önce Bu Scheduler 'a ayrılmış olan sanal işlemci köklerinin kaldırılmasını başlatır.|
+|[IScheduler:: STATISTICS](#statistics)|Görev varışı ve tamamlanma ücretleri ile ilgili bilgiler ve Zamanlayıcı için sıra uzunluğu değişikliği sağlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi ile iletişim kuran özel bir zamanlayıcı uyguluyorsanız, `IScheduler` arabirimin uygulanmasını sağlamanız gerekir. Bu arabirim, zamanlayıcı ile Kaynak Yöneticisi arasındaki iki yönlü iletişim kanalının bir sonudur. Diğer uç, Kaynak Yöneticisi `IResourceManager` `ISchedulerProxy` tarafından uygulanan ve arayüzler tarafından temsil edilir.
+Kaynak Yöneticisi ile iletişim kuran özel bir Zamanlayıcı uygulamadıysanız, arabirimin bir uygulamasını sağlamanız gerekir `IScheduler` . Bu arabirim, bir Zamanlayıcı ve Kaynak Yöneticisi arasındaki iki yönlü bir kanalın bir bitişidir. Diğer son, `IResourceManager` `ISchedulerProxy` Kaynak Yöneticisi tarafından uygulanan ve arabirimleri tarafından temsil edilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,13 +56,13 @@ Kaynak Yöneticisi ile iletişim kuran özel bir zamanlayıcı uyguluyorsanız, 
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ischeduleraddvirtualprocessors-method"></a><a name="addvirtualprocessors"></a>IScheduler::AddVirtualProcessors Yöntemi
+## <a name="ischeduleraddvirtualprocessors-method"></a><a name="addvirtualprocessors"></a> Isecheduler:: Addvirtualiþlemciler yöntemi
 
-Kullanımı için sanal işlemci kökleri kümesi olan bir zamanlayıcı sağlar. Her `IVirtualProcessorRoot` arabirim, zamanlayıcı adına iş gerçekleştirebilecek tek bir iş parçacığı yürütme hakkını temsil eder.
+Kullanımı için bir sanal işlemci kökleri kümesi içeren bir Zamanlayıcı sağlar. Her `IVirtualProcessorRoot` arabirim Zamanlayıcı adına iş gerçekleştirebilen tek bir iş parçacığını yürütme hakkını temsil eder.
 
 ```cpp
 virtual void AddVirtualProcessors(
@@ -71,17 +72,17 @@ virtual void AddVirtualProcessors(
 
 ### <a name="parameters"></a>Parametreler
 
-*ppVirtualProcessorRoots*<br/>
-Zamanlayıcıya `IVirtualProcessorRoot` eklenen sanal işlemci köklerini temsil eden bir dizi arabirim.
+*Ppvirtualprocessorkökleri*<br/>
+`IVirtualProcessorRoot`Scheduler 'a eklenmekte olan sanal işlemci köklerini temsil eden bir arabirim dizisi.
 
-*Sayısı*<br/>
-Dizideki `IVirtualProcessorRoot` arabirimlerin sayısı.
+*biriktirme*<br/>
+`IVirtualProcessorRoot`Dizideki arabirimlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi, bir `AddVirtualProcessor` zamanlayıcıya ilk sanal işlemci kökleri kümesini vermek için yöntemi çağırır. Ayrıca, zamanlayıcılar arasında kaynakları yeniden dengeler zamanlayıcıya sanal işlemci kökleri eklemek için yöntemi çağırabilir.
+Kaynak Yöneticisi, `AddVirtualProcessor` bir Scheduler 'a ilk sanal işlemci kökleri kümesi vermek için yöntemini çağırır. Ayrıca, zamanlayıcılar arasında kaynakları yeniden dengeleyip Scheduler 'a sanal işlemci kökleri eklemek için yöntemini çağırabilir.
 
-## <a name="ischedulergetid-method"></a><a name="getid"></a>IScheduler::GetId Yöntemi
+## <a name="ischedulergetid-method"></a><a name="getid"></a> IComparer:: GetID Yöntemi
 
 Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.
 
@@ -95,13 +96,13 @@ Benzersiz bir tamsayı tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi tarafından sağlanan yöntemlere parametre olarak arabirimi kullanmadan önce, `IScheduler` arabirimi uygulayan nesne için benzersiz bir tanımlayıcı elde etmek için [GetSchedulerId](concurrency-namespace-functions.md) işlevini kullanmanız gerekir. İşlev çağrıldığında aynı tanımlayıcıyı `GetId` döndürmeniz beklenir.
+[](concurrency-namespace-functions.md) `IScheduler` Arabirimi, kaynak yöneticisi tarafından sağlanan yöntemlere parametre olarak kullanmadan önce, arabirimi uygulayan nesne için benzersiz bir tanımlayıcı elde etmek üzere GetSchedulerId işlevini kullanmanız gerekir. İşlev çağrıldığında aynı tanımlayıcıyı döndürmeli `GetId` .
 
-Farklı bir kaynaktan elde edilen bir tanımlayıcı tanımlanmamış davranışa neden olabilir.
+Farklı bir kaynaktan alınan bir tanımlayıcı, tanımsız davranışa neden olabilir.
 
-## <a name="ischedulergetpolicy-method"></a><a name="getpolicy"></a>IScheduler::GetPolicy Yöntemi
+## <a name="ischedulergetpolicy-method"></a><a name="getpolicy"></a> IComparer:: GetPolicy yöntemi
 
-Zamanlayıcının ilkesinin bir kopyasını döndürür. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için [Bkz. SchedulerPolicy.](schedulerpolicy-class.md)
+Zamanlayıcı ilkesinin bir kopyasını döndürür. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [SchedulerPolicy](schedulerpolicy-class.md).
 
 ```cpp
 virtual SchedulerPolicy GetPolicy() const = 0;
@@ -109,11 +110,11 @@ virtual SchedulerPolicy GetPolicy() const = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Zamanlayıcının politikasının bir kopyası.
+Zamanlayıcı ilkesinin bir kopyası.
 
-## <a name="ischedulernotifyresourcesexternallybusy-method"></a><a name="notifyresourcesexternallybusy"></a>IScheduler::NotifyResourcesExternallyBusy Yöntemi
+## <a name="ischedulernotifyresourcesexternallybusy-method"></a><a name="notifyresourcesexternallybusy"></a> IScheduler:: Notifyresourcesexüçlü Allybusy yöntemi
 
-Bu zamanlayıcıya, dizideki `ppVirtualProcessorRoots` sanal işlemci kökleri kümesi tarafından temsil edilen donanım iş parçacıklarının artık diğer zamanlayıcılar tarafından kullanıldığını belirtir.
+Bu Scheduler 'da dizideki sanal işlemci kökleri kümesi tarafından temsil edilen donanım iş parçacıklarının `ppVirtualProcessorRoots` artık diğer zamanlayıcılar tarafından kullanılmakta olduğunu bildirir.
 
 ```cpp
 virtual void NotifyResourcesExternallyBusy(
@@ -123,25 +124,25 @@ virtual void NotifyResourcesExternallyBusy(
 
 ### <a name="parameters"></a>Parametreler
 
-*ppVirtualProcessorRoots*<br/>
-Diğer zamanlayıcıların meşgul olduğu donanım iş parçacıklarıyla ilişkili `IVirtualProcessorRoot` bir dizi arabirim.
+*Ppvirtualprocessorkökleri*<br/>
+`IVirtualProcessorRoot`Diğer zamanlayıcılar meşgul hale geldiği donanım iş parçacıklarıyla ilişkili bir arabirim dizisi.
 
-*Sayısı*<br/>
-Dizideki `IVirtualProcessorRoot` arabirimlerin sayısı.
+*biriktirme*<br/>
+`IVirtualProcessorRoot`Dizideki arabirimlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirli bir donanım iş parçacığının aynı anda birden çok zamanlayıcıya atanması mümkündür. Bunun bir nedeni, kaynakları paylaşmadan, tüm zamanlayıcılar için minimum eşzamanlılık karşılamak için sistemde yeterli donanım iş parçacığı olmaması olabilir. Başka bir olasılık, kaynakların, sahip olan zamanlayıcı bunları kullanmadığında, bu donanım iş parçacığı üzerindeki tüm sanal işlemci kökleri devre dışı bırakılarak geçici olarak diğer zamanlayıcılara atanmasıdır.
+Belirli bir donanım iş parçacığının aynı anda birden çok zamanlayıcılar atanmak mümkündür. Bunun bir nedeni, kaynak paylaşmadan tüm zamanlayıcılar için en düşük eşzamanlılık gereksinimini karşılamak üzere sistemde yeterli donanım iş parçacığı olmaması olabilir. Diğer bir olasılık ise, sahip olan Scheduler tarafından kullanılmayan Zamanlayıcı, bu donanım iş parçacığında devre dışı bırakılan tüm sanal işlemci köklerine göre geçici olarak diğer zamanlayıcılar atanmış olur.
 
-Bir donanım iş parçacığının abonelik düzeyi, abone olunan iş parçacığı sayısı ve bu donanım iş parçacığıyla ilişkili etkinleştirilen sanal işlemci kökleriyle gösterilir. Belirli bir zamanlayıcının bakış açısından, donanım iş parçacığının dış abonelik düzeyi, diğer zamanlayıcıların katkıda bulunan abonelik bölümüdür. Bir donanım iş parçacığının dış abonelik düzeyi sıfırdan pozitif bölgeye geçtiğinde, kaynakların dışarıdan meşgul olduğuna dair bildirimler zamanlayıcıya gönderilir.
+Bir donanım iş parçacığının abonelik düzeyi, abone olunan iş parçacıklarının sayısıyla ve bu donanım iş parçacığıyla ilişkili etkinleştirilmiş sanal işlemci köklerine göre gösterilir. Belirli bir zamanlayıcının görünüm noktasından, bir donanım iş parçacığının dış abonelik düzeyi diğer zamanlayıcılar katkıda bulunan aboneliğin bölümüdür. Bir donanım iş parçacığı için dış abonelik düzeyi sıfırdan pozitif bölgeye geçerse, kaynakların dışarıdan meşgul olduğu bildirimler bir Scheduler 'a gönderilir.
 
-Bu yöntem üzerinden yapılan bildirimler yalnızca `MinConcurrency` ilke anahtarının değerinin `MaxConcurrency` ilke anahtarının değerine eşit olduğu bir ilkesi olan zamanlayıcılara gönderilir. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için [Bkz. SchedulerPolicy.](schedulerpolicy-class.md)
+Bu yöntem aracılığıyla yapılan bildirimler yalnızca ilke anahtarı değerinin ilke anahtarı için değere eşit olduğu bir ilkeye sahip zamanlayıcılar 'e gönderilir `MinConcurrency` `MaxConcurrency` . Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [SchedulerPolicy](schedulerpolicy-class.md).
 
-Bildirimler için yeterli olan bir zamanlayıcı, oluşturulduğunda bir dizi ilk bildirim alır ve yalnızca atandığı kaynakların dışarıdan meşgul veya boşta olup olmadığını bildirir.
+Bildirimleri niteleyen bir zamanlayıcı, oluşturulduğunda ilk bildirim kümesini alır, bu, yeni atanan kaynakların dışarıdan meşgul veya boşta olduğunu bilgilendirdi.
 
-## <a name="ischedulernotifyresourcesexternallyidle-method"></a><a name="notifyresourcesexternallyidle"></a>IScheduler::NotifyResourcesExternallyIdle Yöntemi
+## <a name="ischedulernotifyresourcesexternallyidle-method"></a><a name="notifyresourcesexternallyidle"></a> IComparer:: Notifyresourcesexdeallyıdle yöntemi
 
-Bu zamanlayıcıya, dizideki `ppVirtualProcessorRoots` sanal işlemci kökleri kümesi tarafından temsil edilen donanım iş parçacıklarının diğer zamanlayıcılar tarafından kullanılmadığını belirtir.
+Bu zamanlayıcıya dizideki sanal işlemci kökleri kümesi tarafından temsil edilen donanım iş parçacıklarının `ppVirtualProcessorRoots` diğer zamanlayıcılar tarafından kullanılmadığını bildirir.
 
 ```cpp
 virtual void NotifyResourcesExternallyIdle(
@@ -151,25 +152,25 @@ virtual void NotifyResourcesExternallyIdle(
 
 ### <a name="parameters"></a>Parametreler
 
-*ppVirtualProcessorRoots*<br/>
-Diğer zamanlayıcıların boşta olduğu donanım iş parçacıklarıyla ilişkili `IVirtualProcessorRoot` arabirimler dizisi.
+*Ppvirtualprocessorkökleri*<br/>
+`IVirtualProcessorRoot`Diğer zamanlayıcılar boşta hale geldiği donanım iş parçacıklarıyla ilişkili bir arabirim dizisi.
 
-*Sayısı*<br/>
-Dizideki `IVirtualProcessorRoot` arabirimlerin sayısı.
+*biriktirme*<br/>
+`IVirtualProcessorRoot`Dizideki arabirimlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Belirli bir donanım iş parçacığının aynı anda birden çok zamanlayıcıya atanması mümkündür. Bunun bir nedeni, kaynakları paylaşmadan, tüm zamanlayıcılar için minimum eşzamanlılık karşılamak için sistemde yeterli donanım iş parçacığı olmaması olabilir. Başka bir olasılık, kaynakların, sahip olan zamanlayıcı bunları kullanmadığında, bu donanım iş parçacığı üzerindeki tüm sanal işlemci kökleri devre dışı bırakılarak geçici olarak diğer zamanlayıcılara atanmasıdır.
+Belirli bir donanım iş parçacığının aynı anda birden çok zamanlayıcılar atanmak mümkündür. Bunun bir nedeni, kaynak paylaşmadan tüm zamanlayıcılar için en düşük eşzamanlılık gereksinimini karşılamak üzere sistemde yeterli donanım iş parçacığı olmaması olabilir. Diğer bir olasılık ise, sahip olan Scheduler tarafından kullanılmayan Zamanlayıcı, bu donanım iş parçacığında devre dışı bırakılan tüm sanal işlemci köklerine göre geçici olarak diğer zamanlayıcılar atanmış olur.
 
-Bir donanım iş parçacığının abonelik düzeyi, abone olunan iş parçacığı sayısı ve bu donanım iş parçacığıyla ilişkili etkinleştirilen sanal işlemci kökleriyle gösterilir. Belirli bir zamanlayıcının bakış açısından, donanım iş parçacığının dış abonelik düzeyi, diğer zamanlayıcıların katkıda bulunan abonelik bölümüdür. Bir donanım iş parçacığının dış abonelik düzeyi önceki pozitif değerden sıfıra düştüğünde, kaynakların dışarıdan meşgul olduğuna dair bildirimler zamanlayıcıya gönderilir.
+Bir donanım iş parçacığının abonelik düzeyi, abone olunan iş parçacıklarının sayısıyla ve bu donanım iş parçacığıyla ilişkili etkinleştirilmiş sanal işlemci köklerine göre gösterilir. Belirli bir zamanlayıcının görünüm noktasından, bir donanım iş parçacığının dış abonelik düzeyi diğer zamanlayıcılar katkıda bulunan aboneliğin bölümüdür. Bir donanım iş parçacığı için dış abonelik düzeyi önceki bir pozitif değerden sıfıra düşerse, kaynakların dışarıdan meşgul olduğu bildirimler bir Scheduler 'a gönderilir.
 
-Bu yöntem üzerinden yapılan bildirimler yalnızca `MinConcurrency` ilke anahtarının değerinin `MaxConcurrency` ilke anahtarının değerine eşit olduğu bir ilkesi olan zamanlayıcılara gönderilir. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için [Bkz. SchedulerPolicy.](schedulerpolicy-class.md)
+Bu yöntem aracılığıyla yapılan bildirimler yalnızca ilke anahtarı değerinin ilke anahtarı için değere eşit olduğu bir ilkeye sahip zamanlayıcılar 'e gönderilir `MinConcurrency` `MaxConcurrency` . Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz. [SchedulerPolicy](schedulerpolicy-class.md).
 
-Bildirimler için yeterli olan bir zamanlayıcı, oluşturulduğunda bir dizi ilk bildirim alır ve yalnızca atandığı kaynakların dışarıdan meşgul veya boşta olup olmadığını bildirir.
+Bildirimleri niteleyen bir zamanlayıcı, oluşturulduğunda ilk bildirim kümesini alır, bu, yeni atanan kaynakların dışarıdan meşgul veya boşta olduğunu bilgilendirdi.
 
-## <a name="ischedulerremovevirtualprocessors-method"></a><a name="removevirtualprocessors"></a>IScheduler::RemoveVirtualProcessors Yöntemi
+## <a name="ischedulerremovevirtualprocessors-method"></a><a name="removevirtualprocessors"></a> IComparer:: Removevirtualişlemcilerle yöntemi
 
-Daha önce bu zamanlayıcıya ayrılmış olan sanal işlemci köklerinin kaldırılmasını başlatır.
+Daha önce Bu Scheduler 'a ayrılmış olan sanal işlemci köklerinin kaldırılmasını başlatır.
 
 ```cpp
 virtual void RemoveVirtualProcessors(
@@ -179,21 +180,21 @@ virtual void RemoveVirtualProcessors(
 
 ### <a name="parameters"></a>Parametreler
 
-*ppVirtualProcessorRoots*<br/>
-Kaldırılacak `IVirtualProcessorRoot` sanal işlemci köklerini temsil eden arabirimler dizisi.
+*Ppvirtualprocessorkökleri*<br/>
+`IVirtualProcessorRoot`Kaldırılacak sanal işlemci köklerini temsil eden bir arabirim dizisi.
 
-*Sayısı*<br/>
-Dizideki `IVirtualProcessorRoot` arabirimlerin sayısı.
+*biriktirme*<br/>
+`IVirtualProcessorRoot`Dizideki arabirimlerin sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kaynak Yöneticisi, bir `RemoveVirtualProcessors` zamanlayıcıdan sanal işlemci kökleri kümesini geri almak için yöntemi çağırır. Zamanlayıcının, sanal işlemci kökleriyle yapıldığında her arabirimde [Kaldır](iexecutionresource-structure.md#remove) yöntemini çağırması beklenir. Yöntemi çağırdıktan `IVirtualProcessorRoot` `Remove` sonra arabirim kullanmayın.
+Kaynak Yöneticisi, `RemoveVirtualProcessors` bir Scheduler 'dan bir dizi sanal işlemci kökü geri alma yöntemini çağırır. Zamanlayıcı, sanal işlemci köklerinde tamamlandığında her arabirimdeki [Remove](iexecutionresource-structure.md#remove) metodunu çağırmalıdır. `IVirtualProcessorRoot`Üzerinde yöntemini çağırdıktan sonra bir arabirim kullanmayın `Remove` .
 
-Parametre `ppVirtualProcessorRoots` bir dizi arabirimi işaret eder. Kaldırılacak sanal işlemci kökleri kümesi arasında, kökler hiçbir zaman etkinleştirilmedi `Remove` yöntem kullanılarak hemen döndürülebilir. Etkinleştirilen ve çalışmayı yürüten veya devre dışı bırakılan ve çalışmanın gelmesini bekleyen kökler eşzamanlı olarak döndürülmelidir. Zamanlayıcı, sanal işlemci kökünü mümkün olan en kısa sürede kaldırmak için her türlü girişimi yapmalıdır. Sanal işlemci köklerinin kaldırılmasını geciktirmek zamanlayıcı içinde kasıtsız aşırı abonelik neden olabilir.
+Parametresi `ppVirtualProcessorRoots` bir arabirim dizisine işaret eder. Kaldırılacak sanal işlemci köklerinin kümesi arasında, köklerin hiçbir şekilde etkinleştirilmemesi, yöntemi kullanılarak hemen döndürülemez `Remove` . Etkinleştirilen ve işleri yürüten veya devre dışı bırakılan ve iş için bekleyen, zaman uyumsuz olarak döndürülmüş olan köklerdir. Zamanlayıcı, sanal işlemci kökünü mümkün olduğunca hızlı bir şekilde kaldırmayı denemelidir. Sanal işlemci köklerinin kaldırılması geciktirilmesi Zamanlayıcı içinde istenmeden fazla aboneliğe neden olabilir.
 
-## <a name="ischedulerstatistics-method"></a><a name="statistics"></a>IScheduler::İstatistik Yöntemi
+## <a name="ischedulerstatistics-method"></a><a name="statistics"></a> IComparer:: Statistics yöntemi
 
-Görev varış ve tamamlama oranları ve zamanlayıcı için sıra uzunluğu değişikliği ile ilgili bilgiler sağlar.
+Görev varışı ve tamamlanma ücretleri ile ilgili bilgiler ve Zamanlayıcı için sıra uzunluğu değişikliği sağlar.
 
 ```cpp
 virtual void Statistics(
@@ -205,25 +206,25 @@ virtual void Statistics(
 ### <a name="parameters"></a>Parametreler
 
 *pTaskCompletionRate*<br/>
-Bu yönteme yapılan son çağrıdan bu yana zamanlayıcı tarafından tamamlanan görev sayısı.
+Bu yönteme son çağrıdan bu yana Zamanlayıcı tarafından tamamlanmış görevlerin sayısı.
 
 *pTaskArrivalRate*<br/>
-Bu yönteme yapılan son çağrıdan bu yana zamanlayıcıya gelen görev sayısı.
+Bu yönteme son çağrıdan bu yana Scheduler 'da ulaşan görevlerin sayısı.
 
-*pNumberOfTasksEnqueued*<br/>
-Tüm zamanlayıcı kuyruklarında görev toplam sayısı.
+*Pnumberoftasksenkuyruğa alındı*<br/>
+Tüm Zamanlayıcı sıralarındaki toplam görev sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, bir zamanlayıcı için istatistik toplamak için Kaynak Yöneticisi tarafından çağrılır. Burada toplanan istatistikler, zamanlayıcıya daha fazla kaynak atamanın ne zaman uygun olduğunu ve kaynakları ne zaman uzaklaştıracağını belirlemek için dinamik geri bildirim algoritmalarını kullanmak için kullanılır. Zamanlayıcı tarafından sağlanan değerler iyimser olabilir ve geçerli sayıyı doğru şekilde yansıtmak zorunda değildir.
+Bu yöntem, Scheduler istatistiklerini toplamak için Kaynak Yöneticisi tarafından çağrılır. Burada toplanan istatistikler, Scheduler 'a daha fazla kaynak atamak için uygun olduğunda ve kaynakların ne zaman ele kullanılmayacağını öğrenmek için dinamik geri bildirim algoritmalarını yönlendirmek üzere kullanılacaktır. Zamanlayıcı tarafından belirtilen değerler iyimser olabilir ve geçerli sayıyı doğru bir şekilde yansıtması gerekmez.
 
-Kaynak Yöneticisi'nin, kaynak zamanlamanız ile Kaynak Yöneticisi'ne kayıtlı diğer zamanlayıcılar arasında nasıl dengeleyiş olduğunu belirlemek için görev gelişi gibi şeylerle ilgili geri bildirimlerkullanmasını istiyorsanız, bu yöntemi uygulamanız gerekir. İstatistik toplamamayı seçerseniz, ilke anahtarını `DynamicProgressFeedback` zamanlayıcınızın ilkesindeki değere `DynamicProgressFeedbackDisabled` ayarlayabilirsiniz ve Kaynak Yöneticisi bu yöntemi zamanlayıcınızda çağırmaz.
+Kaynak Yöneticisi, Scheduler ve Kaynak Yöneticisi kayıtlı diğer zamanlayıcılar arasında kaynağın nasıl dengelenmesi gerektiğini tespit etmek üzere görev varışı hakkında geri bildirim kullanmasını istiyorsanız bu yöntemi uygulamalısınız. İstatistik toplamamalıdır seçeneğini belirlerseniz, Zamanlayıcı ilkenizde ilke anahtarını bir değere ayarlayabilirsiniz `DynamicProgressFeedback` `DynamicProgressFeedbackDisabled` ve Kaynak Yöneticisi Scheduler 'da bu yöntemi çağırmaz.
 
-İstatistiksel bilgi yokluğunda, Kaynak Yöneticisi kaynak ayırma ve geçiş kararları almak için donanım iş parçacığı abonelik düzeylerini kullanır. Abonelik düzeyleri hakkında daha fazla bilgi için [bkz: IExecutionResource::CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
+İstatistiksel bilgiler yokluğunda Kaynak Yöneticisi, kaynak ayırma ve geçiş kararları almak için donanım iş parçacığı abonelik düzeylerini kullanacaktır. Abonelik düzeyleri hakkında daha fazla bilgi için bkz. [IExecutionResource:: CurrentSubscriptionLevel](iexecutionresource-structure.md#currentsubscriptionlevel).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[concurrency Ad Alanı](concurrency-namespace.md)<br/>
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [SchedulerPolicy Sınıfı](schedulerpolicy-class.md)<br/>
 [IExecutionContext Yapısı](iexecutioncontext-structure.md)<br/>

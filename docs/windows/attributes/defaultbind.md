@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: defaultbind'
 title: defaultbind (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - defaultbind attribute
 ms.assetid: b20a8437-24e6-4b6d-a2df-09fe5e1006e0
-ms.openlocfilehash: 36225dae3dffbd57d291989c56ac2995278a1bee
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4fbb6c9e9d563687ec4dd2746f7ab87702fe65d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842409"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333032"
 ---
 # <a name="defaultbind"></a>defaultbind
 
@@ -36,7 +37,7 @@ Nesneyi en iyi şekilde temsil eden tek ve bağlanabilir özelliği gösterir.
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Interface yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

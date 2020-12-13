@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: db_param'
 title: db_param (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-ms.openlocfilehash: 008a7f1ea07e6c23ad6d812ac4fbf3b30ef1da89
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 27666b4cdf027e24b54326a3acc5fe701b9f6f44
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333105"
 ---
 # <a name="db_param"></a>db_param
 
 Belirtilen üye değişkenini bir giriş veya çıkış parametresiyle ilişkilendirir ve değişkeni ayırır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ db_param(ordinal, paramtype="DBPARAMIO_INPUT", dbtype, precision, scale, status, length) ]
@@ -49,7 +50,7 @@ Seçim Sütun girişi için kullanılacak ölçek. Ayrıntılar için bkz `bScal
 *durumlarına*<br/>
 Seçim Bu sütunun durumunu tutmak için kullanılan bir üye değişkeni. Durum, sütun değerinin bir veri değeri mi yoksa NULL gibi başka bir değer mi olduğunu gösterir. Olası değerler için *OLE DB Programcı başvurusunda* [durum](/previous-versions/windows/desktop/ms722617(v=vs.85)) ' a bakın.
 
-*uzunluklu*<br/>
+*length*<br/>
 Seçim Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -60,7 +61,7 @@ Seçim Sütunun boyutunu bayt cinsinden tutmak için kullanılan bir üye deği�
 
 **db_param** , [db_table](db-table.md) veya [db_command](db-command.md) öznitelikleriyle birlikte kullanılır.
 
-Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName*erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ *YourClassName*.  Sınıf Görünümü, her iki sınıfı da görürsünüz.
+Tüketici öznitelik sağlayıcısı bu özniteliği bir sınıfa uygularsa, derleyici sınıfı, sınıfın \_ verdiği addır ve ayrıca derleyici *,* *YourClassName* erişimcisinden türetilen *kendi ClassName* adlı bir sınıf oluşturur \_ .  Sınıf Görünümü, her iki sınıfı da görürsünüz.
 
 ## <a name="example"></a>Örnek
 
@@ -107,7 +108,7 @@ struct CSalesbyYear {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , üye, yöntem, yerel|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

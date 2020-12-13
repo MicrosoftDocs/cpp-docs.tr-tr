@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: default (C++)'
 title: Varsayılan (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - attributes [C#], default attribute
 - defaults, default attribute
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
-ms.openlocfilehash: b53420d721b43f9a51b19c4cc8e4a83fc8b94ed4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 83c4a17f513db755395ed978d57c9c6f01f84ca3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842448"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333010"
 ---
 # <a name="default-c"></a>default (C++)
 
 Bir coclass içinde tanımlanan özel veya dispınterface 'in varsayılan programlama arabirimini temsil ettiğini belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ default(interface1, interface2) ]
@@ -98,7 +99,7 @@ int main() {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|**`class`**, **`struct`** , veri üyesi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|**coclass** (veya öğesine uygulandığında **`class`** **`struct`** )|
 |**Geçersiz öznitelikler**|Yok|
 

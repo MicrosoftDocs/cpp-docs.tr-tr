@@ -1,4 +1,5 @@
 ---
+description: Giriş ve çıkış hakkında daha fazla bilgi edinin
 title: Girdi ve Çıktı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,25 +11,25 @@ helpviewer_keywords:
 - I/O [CRT], routines
 - output routines
 ms.assetid: 1c177301-e341-4ca0-aedc-0a87fe1c75ae
-ms.openlocfilehash: 2669ed3437fe0eea7dd648367feabe66ae6ed6d4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0edd66765f1633dc0adf12b311faf81d3a030512
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62343192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334283"
 ---
 # <a name="input-and-output"></a>Girdi ve Çıktı
 
-G/ç işlevleri okuyup veri için dosyaları ve cihazlardan yazma. Dosya g/ç işlemleri metin modunda veya İkili modda gerçekleşir. Microsoft çalışma zamanı kitaplığının g/ç işlevleri üç tür vardır:
+G/ç işlevleri, dosyalara ve cihazlara veri okur ve bunları yazar. Dosya g/ç işlemleri metin modunda veya ikili modda gerçekleşirken. Microsoft çalışma zamanı kitaplığı 'nın üç tür g/ç işlevi vardır:
 
-- [Stream g/ç](../c-runtime-library/stream-i-o.md) işlevleri veri karakterlerin tek tek bir akış olarak değerlendir.
+- [Stream g/ç](../c-runtime-library/stream-i-o.md) işlevleri verileri ayrı karakterlerin akışı olarak değerlendirir.
 
-- [Düşük düzey g/ç](../c-runtime-library/low-level-i-o.md) işlevleri çağırma doğrudan akış g/ç tarafından sağlanan daha düşük düzeyli işlem için işletim sistemi.
+- Alt düzey [g/ç](../c-runtime-library/low-level-i-o.md) işlevleri, akış g/ç tarafından sağlananından daha düşük düzeydeki işlem için işletim sistemini doğrudan çağırır.
 
-- [Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md) işlevleri okuma veya doğrudan bir konsol (klavye ve ekran) veya bir g/ç bağlantı noktası (örneğin, yazıcı bağlantı noktasını) yazın.
+- [Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md) işlevleri doğrudan bir konsola (klavye ve ekran) veya g/ç bağlantı noktasına (yazıcı bağlantı noktası gibi) okur veya yazar.
 
    > [!NOTE]
-   > Bu iki tür işlev, genellikle akışı işlevleri arabelleğe ve düşük düzeyli işlevleri değildir çünkü uyumsuzdur. Belirli bir dosya işlenmeden için akış ya da düşük düzeyli işlevleri özel olarak kullanın.
+   > Stream işlevleri arabelleğe alındığından ve alt düzey işlevler olmadığından, bu iki tür işlev genellikle uyumsuzdur. Belirli bir dosyayı işlemek için, yalnızca Stream veya alt düzey işlevleri kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

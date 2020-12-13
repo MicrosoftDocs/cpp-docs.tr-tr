@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: defaultcollelem'
 title: defaultcollelem
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - defaultcollelem attribute
 ms.assetid: 3dbbd293-8b83-4f70-a36b-64cc1d0b6713
-ms.openlocfilehash: 8eb8658b178061938f7f04f5eb35a85ca1e34d07
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6d1d3bb77a9951fc82cd19a3dc9d6f42ee54b6c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842370"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333020"
 ---
 # <a name="defaultcollelem"></a>defaultcollelem
 
@@ -49,7 +50,7 @@ __interface IMyForm
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Interface yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

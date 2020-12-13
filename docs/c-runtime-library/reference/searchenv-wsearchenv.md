@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _searchenv _wsearchenv'
 title: _searchenv, _wsearchenv
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - searchenv function
 - environment paths
 ms.assetid: 9c944a27-d326-409b-aee6-410e8762d9d3
-ms.openlocfilehash: 83ba5663d569d449a0024db5abe2eb3ee903123b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 411cb2b909d3ed948adcce97c41ace1a806f2f02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913220"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334116"
 ---
 # <a name="_searchenv-_wsearchenv"></a>_searchenv, _wsearchenv
 
@@ -94,17 +95,17 @@ Yolun tamamını depolayan arabellek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Searchenv** rutin, belirtilen etki alanındaki hedef dosyayı arar. *Varname* değişkeni, Dizin yollarının bir listesini belirten herhangi bir ortam veya Kullanıcı tanımlı değişken (örneğin, **Path**, **LIB**veya **Include**) olabilir. **_Searchenv** , büyük/küçük harfe duyarlı olduğundan, *varname* ortam değişkeni durumuyla eşleşmelidir.
+**_Searchenv** rutin, belirtilen etki alanındaki hedef dosyayı arar. *Varname* değişkeni, Dizin yollarının bir listesini belirten herhangi bir ortam veya Kullanıcı tanımlı değişken (örneğin, **Path**, **LIB** veya **Include**) olabilir. **_Searchenv** , büyük/küçük harfe duyarlı olduğundan, *varname* ortam değişkeni durumuyla eşleşmelidir.
 
-Bu yordam, ilk olarak dosyayı geçerli çalışma dizininde arar. Dosyayı bulamazsa, ortam değişkeni tarafından belirtilen dizinlere bakar. Hedef dosya bu dizinlerden birinde ise, yeni oluşturulan yol, *yol adına*kopyalanır. Dosya *adı* dosyası bulunamazsa, *PathName* boş bir null ile sonlandırılmış dize içerir.
+Bu yordam, ilk olarak dosyayı geçerli çalışma dizininde arar. Dosyayı bulamazsa, ortam değişkeni tarafından belirtilen dizinlere bakar. Hedef dosya bu dizinlerden birinde ise, yeni oluşturulan yol, *yol adına* kopyalanır. Dosya *adı* dosyası bulunamazsa, *PathName* boş bir null ile sonlandırılmış dize içerir.
 
 *Yol* adı arabelleği, oluşturulan yol adının tam uzunluğuna uyum sağlamak için en az **_MAX_PATH** karakter uzunluğunda olmalıdır. Aksi takdirde **_searchenv** , *yol adının* arabelleği taşarak beklenmedik davranışa neden olabilir.
 
-**_wsearchenv** , **_searchenv**geniş karakterli bir sürümüdür ve **_wsearchenv** bağımsız değişkenler geniş karakterli dizelerdir. **_wsearchenv** ve **_searchenv** aynı şekilde davranır.
+**_wsearchenv** , **_searchenv** geniş karakterli bir sürümüdür ve **_wsearchenv** bağımsız değişkenler geniş karakterli dizelerdir. **_wsearchenv** ve **_searchenv** aynı şekilde davranır.
 
-*Dosya adı* boş bir dize ise, bu Işlevler **ENOENT**döndürür.
+*Dosya adı* boş bir dize ise, bu Işlevler **ENOENT** döndürür.
 
-*Filename* veya *PathName* **null** işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Filename* veya *PathName* **null** işaretçisiyse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 **Errno** ve hata kodları hakkında daha fazla bilgi için bkz. [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
@@ -122,8 +123,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_searchenv**|\<Stdlib. h>|
-|**_wsearchenv**|\<Stdlib. h> veya \<wchar. h>|
+|**_searchenv**|\<stdlib.h>|
+|**_wsearchenv**|\<stdlib.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

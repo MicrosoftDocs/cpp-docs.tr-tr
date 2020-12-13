@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IUMSCompletionList Yapısı'
 title: IUMSCompletionList Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSCompletionList structure
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a
-ms.openlocfilehash: c388cc98aedbd35b2d0e00a4653a85a47abcb838
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b54766e8b1c6f2e7c0afbb5e4e9a8efc0c455b4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334348"
 ---
 # <a name="iumscompletionlist-structure"></a>IUMSCompletionList Yapısı
 
-UMS tamamlanma listesini temsil eder. Ums iş parçacığı engellediğinde, özgün iş parçacığı engellenirken temel sanal işlemci kökünde ne zamanlanması na karar vermek için zamanlayıcının atanmış zamanlama bağlamı gönderilir. Özgün iş parçacığı engellediğinde, işletim sistemi bu arabirim üzerinden erişilebilen tamamlanma listesine sıralar. Zamanlayıcı, belirlenen zamanlama bağlamında veya iş aradığı başka bir yerde tamamlanma listesini sorgulayabilir.
+UMS tamamlama listesini temsil eder. Bir UMS iş parçacığı engellediğinde, başlangıçtaki iş parçacığı engellenirken temeldeki sanal işlemci kökünde zamanlanmak üzere bir karar vermek üzere Scheduler 'ın belirlenen zamanlama bağlamı gönderilir. Orijinal iş parçacığı kaldırılıyorsa, işletim sistemi bu arabirim aracılığıyla erişilebilen tamamlanma listesine sıraya alır. Zamanlayıcı, belirlenen zamanlama bağlamındaki veya iş için arama yaptığı başka bir yerde tamamlama listesini sorgulayabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct IUMSCompletionList;
@@ -29,13 +30,13 @@ struct IUMSCompletionList;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[IUMSCompletionList::GetUnblockBildirimler](#getunblocknotifications)|İlişkili iş `IUMSUnblockNotification` parçacığı yakınlıkları bu yöntem çağrıldığından beri engelini kaldıran yürütme bağlamlarını temsil eden bir arabirim zincirini alır.|
+|[IUMSCompletionList:: GetUnblockNotifications](#getunblocknotifications)|`IUMSUnblockNotification`Bu yöntemin en son çağrılmasından bu yana ilişkili iş parçacığı ara sunucuları engeli kaldırılmış olan yürütme bağlamlarını temsil eden bir arabirim zinciri alır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir zamanlayıcı, bu arabirimi kullanarak öğeleri tamamlama listesinden çıkarmak için hangi eylemlerin gerçekleştirildiği konusunda olağanüstü dikkatli olmalıdır. Öğeler zamanlayıcının çalıştırılabilir bağlamlar listesine yerleştirilmeli ve genellikle mümkün olan en kısa sürede erişilebilir olmalıdır. Dequeued öğelerden birine rasgele bir kilit sahipliği verilmiş olması tamamen mümkündür. Zamanlayıcı, öğeleri sıradan kaldırma çağrısı yla bu öğelerin genellikle zamanlayıcı nın içinden erişilebilen bir listedeki yerleşimi arasında engelleyebilecek rasgele işlev çağrıları yapamaz.
+Bir zamanlayıcı, tamamlanma listesinden öğeleri yeniden ayıklamanız için bu arabirimden kullandıktan sonra hangi eylemlerin gerçekleştirildiği konusunda dikkatli bir şekilde dikkat etmeniz gerekir. Öğeler Scheduler 'ın çalıştırılabilir içerik listesine yerleştirilmelidir ve genellikle mümkün olan en kısa sürede erişilebilir olmalıdır. Sıradan çıkarılan öğelerden birinin rastgele bir kilidin sahipliği verilmesinden tamamen mümkün değildir. Zamanlayıcı, öğeleri sıradan çıkarma ve bu öğelerin genellikle Zamanlayıcı içinden erişilebilen bir liste üzerinde yerleşimi arasında engelleyebilen rastgele bir işlev çağrısı yapabilir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -43,13 +44,13 @@ Bir zamanlayıcı, bu arabirimi kullanarak öğeleri tamamlama listesinden çık
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** concrtrm.h
+**Üstbilgi:** concrtrm. h
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="iumscompletionlistgetunblocknotifications-method"></a><a name="getunblocknotifications"></a>IUMSCompletionList::GetUnblockBildirimler Yöntemi
+## <a name="iumscompletionlistgetunblocknotifications-method"></a><a name="getunblocknotifications"></a> IUMSCompletionList:: GetUnblockNotifications yöntemi
 
-İlişkili iş `IUMSUnblockNotification` parçacığı yakınlıkları bu yöntem çağrıldığından beri engelini kaldıran yürütme bağlamlarını temsil eden bir arabirim zincirini alır.
+`IUMSUnblockNotification`Bu yöntemin en son çağrılmasından bu yana ilişkili iş parçacığı ara sunucuları engeli kaldırılmış olan yürütme bağlamlarını temsil eden bir arabirim zinciri alır.
 
 ```cpp
 virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
@@ -57,14 +58,14 @@ virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Arayüzler `IUMSUnblockNotification` zinciri.
+`IUMSUnblockNotification`Arabirim zinciri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yürütme bağlamları yeniden zamanlandıktan sonra döndürülen bildirimler geçersiz olur.
+Yürütme bağlamları yeniden zamanlandıktan sonra döndürülen bildirimler geçersizdir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[concurrency Ad Alanı](concurrency-namespace.md)<br/>
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
 [IUMSScheduler Yapısı](iumsscheduler-structure.md)<br/>
 [IUMSUnblockNotification Yapısı](iumsunblocknotification-structure.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: cpp_quote'
 title: cpp_quote (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
-ms.openlocfilehash: 27be83d123b5433f79c4c8a702197fc6f9f1a753
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fe8424fd16cb75e320f8c1a1f8e3e444cf2185ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333172"
 ---
 # <a name="cpp_quote"></a>cpp_quote
 
 Belirtilen dizeyi, tırnak karakterleri olmadan, oluşturulan. IDL dosyasına yayar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ cpp_quote("statement") ];
@@ -38,14 +39,14 @@ Ayrıca, **cpp_quote** kullanabilir ve MIDL derlemesinin bir parçası olarak bi
 
 ## <a name="example"></a>Örnek
 
-Örnek [için bkz](dual.md) . **cpp_quote**nasıl kullanacağınızı kullanın.
+Örnek [için bkz](dual.md) . **cpp_quote** nasıl kullanacağınızı kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Her yer|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

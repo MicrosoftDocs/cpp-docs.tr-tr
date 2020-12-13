@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: ITarget Sınıfı'
 title: ITarget Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - ITarget class
 ms.assetid: 5678db25-112a-4f72-be13-42e16b67c48b
-ms.openlocfilehash: 39aebd9d82f098225c1275ac6f43d64fc1ce3ba8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6a1e900fa67ac5ee72305f18679e7a0fc38a2386
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231721"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334406"
 ---
 # <a name="itarget-class"></a>ITarget Sınıfı
 
 `ITarget`Sınıfı tüm hedef bloklara yönelik arabirimdir. Hedef bloklar bunlara bloklar tarafından sunulan iletileri tüketir `ISource` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class T>
@@ -81,7 +82,7 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="itarget"></a><a name="dtor"></a>~ ITarget
+## <a name="itarget"></a><a name="dtor"></a> ~ ITarget
 
 Nesneyi yok eder `ITarget` .
 
@@ -89,7 +90,7 @@ Nesneyi yok eder `ITarget` .
 virtual ~ITarget();
 ```
 
-## <a name="link_source"></a><a name="link_source"></a>link_source
+## <a name="link_source"></a><a name="link_source"></a> link_source
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, belirtilen kaynak bloğunu bu `ITarget` bloğa bağlar.
 
@@ -106,7 +107,7 @@ virtual void link_source(_Inout_ ISource<T>* _PSource) = 0;
 
 Bu işlev doğrudan bir blok üzerinde çağrılmamalıdır `ITarget` . Bloklar, `link_target` `ISource` ilgili hedefte yöntemi çağıran bloklar üzerindeki yöntemi kullanılarak birbirine bağlanmalıdır `link_source` .
 
-## <a name="propagate"></a><a name="propagate"></a>aktarabilirsiniz
+## <a name="propagate"></a><a name="propagate"></a> aktarabilirsiniz
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, zaman uyumsuz bir iletiyi bu hedef bloğa bir kaynak bloğundan geçirir.
 
@@ -132,7 +133,7 @@ Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-e
 
 Ya da parametresi ise Yöntem [invalid_argument](../../../standard-library/invalid-argument-class.md) bir özel durum `_PMessage` oluşturur `_PSource` `NULL` .
 
-## <a name="send"></a><a name="send"></a>Gönder
+## <a name="send"></a><a name="send"></a> Gönder
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, zaman uyumlu olarak hedef bloğuna bir ileti geçirir.
 
@@ -162,7 +163,7 @@ Ya da parametresi ise Yöntem [invalid_argument](../../../standard-library/inval
 
 Döndürüldüğünde `send` , ileti zaten kabul edilmiştir ve hedef bloğa aktarılır ya da hedef tarafından reddedildi.
 
-## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a> supports_anonymous_source
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, ileti bloğunun kendisine bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmediğine bağlı olarak true veya false değerini döndürür. Geçersiz kılınan Yöntem döndürüyorsa **`true`** , daha sonraki bir zamanda ertelenen iletinin tüketimi kaynağın sourse bağlantı kayıt defterinde tanımlanmasını gerektirdiğinden hedef, sunulan bir iletiyi erteleyemiyor.
 
@@ -174,7 +175,7 @@ virtual bool supports_anonymous_source();
 
 **`true`** blok, bu kaynağa bağlı olmayan bir kaynaktaki iletiyi kabul edebilir **`false`** .
 
-## <a name="unlink_source"></a><a name="unlink_source"></a>unlink_source
+## <a name="unlink_source"></a><a name="unlink_source"></a> unlink_source
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, belirtilen kaynak bloğunun bu bloğundan bağlantısını kaldırır `ITarget` .
 
@@ -191,7 +192,7 @@ virtual void unlink_source(_Inout_ ISource<T>* _PSource) = 0;
 
 Bu işlev doğrudan bir blok üzerinde çağrılmamalıdır `ITarget` . Blokları, `unlink_target` `unlink_targets` `ISource` ilgili hedefte yöntemi çağırmak için veya bloklarda yöntemler kullanılarak kesilmelidir `unlink_source` .
 
-## <a name="unlink_sources"></a><a name="unlink_sources"></a>unlink_sources
+## <a name="unlink_sources"></a><a name="unlink_sources"></a> unlink_sources
 
 Türetilmiş bir sınıfta geçersiz kılınırsa, bu bloktaki tüm kaynak bloklarını kaldırır `ITarget` .
 

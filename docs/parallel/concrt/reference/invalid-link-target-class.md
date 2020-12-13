@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: invalid_link_target sınıfı'
 title: invalid_link_target Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_link_target class
 ms.assetid: 33b64885-34d8-4d4e-a893-02e9f19c958e
-ms.openlocfilehash: bd3d82c06c174c69c60dec33592110f4de72ac99
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: d080886c3aab0ecc120d4ce13f5f75f2eecfea8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334583"
 ---
 # <a name="invalid_link_target-class"></a>invalid_link_target Sınıfı
 
-Bu sınıf, bir mesajlaşma bloğunun `link_target` yöntemi çağrıldığında ve mesajlaşma bloğu hedefle bağlantı kuramıyor durumunda oluşturulan bir özel durumu açıklar. Bu, mesajlaşma bloğunun izin verdiği bağlantı sayısını aşmanın veya belirli bir hedefin aynı kaynağa iki kez bağlantı kurmaya çalıştığı sonuç olabilir.
+Bu sınıf, `link_target` bir mesajlaşma bloğunun yöntemi çağrıldığında ve mesajlaşma bloğu hedefle bağlantı kuramadı durumunda oluşturulan bir özel durumu açıklar. Bu, mesajlaşma bloğunun izin verdiği bağlantı sayısını aşmanın veya belirli bir hedefin aynı kaynağa iki kez bağlantı kurmaya çalıştığı sonuç olabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class invalid_link_target : public std::exception;
@@ -31,7 +32,7 @@ class invalid_link_target : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[invalid_link_target](#ctor)|Fazla Yüklendi. `invalid_link_target` nesnesi oluşturur.|
+|[invalid_link_target](#ctor)|Fazla Yüklendi. Bir `invalid_link_target` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,9 +46,9 @@ class invalid_link_target : public std::exception;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>invalid_link_target
+## <a name="invalid_link_target"></a><a name="ctor"></a> invalid_link_target
 
-`invalid_link_target` nesnesi oluşturur.
+Bir `invalid_link_target` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP invalid_link_target(_In_z_ const char* _Message) throw();
@@ -62,5 +63,5 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[Zaman Uyumsuz İleti Blokları](../../../parallel/concrt/asynchronous-message-blocks.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[Zaman uyumsuz Ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md)

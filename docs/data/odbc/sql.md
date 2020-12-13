@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SQL'
 title: SQL
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-ms.openlocfilehash: cdceec9f4a6a39e9e1a50fc002d4220801e8d15a
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 01a559b959d0f9a8c37f13a79855d55c5890f20e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404274"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333908"
 ---
 # <a name="sql"></a>SQL
 
@@ -21,7 +22,7 @@ SQL (Yapılandırılmış Sorgu Dili), verileri tanımlamanıza, sorgulamanızı
 > [!NOTE]
 > Bu bilgiler MFC ODBC sınıfları için geçerlidir. MFC DAO sınıflarıyla çalışıyorsanız, DAO yardımı 'nda Microsoft Jet veritabanı altyapısı SQL ve ANSI SQL ' in karşılaştırması konusuna bakın.
 
-SQL deyimleri **Create** veya **Select**gibi bir anahtar sözcük fiili ile başlar. SQL çok güçlü bir dildir; tek bir ifade, bir tablonun tamamını etkileyebilir.
+SQL deyimleri **Create** veya **Select** gibi bir anahtar sözcük fiili ile başlar. SQL çok güçlü bir dildir; tek bir ifade, bir tablonun tamamını etkileyebilir.
 
 Her biri göz önünde bulundurularak geliştirilen pek çok SQL sürümü vardır. MFC veritabanı sınıfları, X/Open ve SQL Access Group ortak uygulamalar ortamı (CAE) SQL taslak belirtimine (1991) karşılık gelen bir SQL deyimleri kümesini algılar. Bu deyimlerin sözdizimi hakkında daha fazla bilgi için, bkz. Ek C, [ODBC Programcı Başvuru](/sql/odbc/reference/odbc-programmer-s-reference) belgeleri.
 
@@ -33,16 +34,16 @@ Bu konuda aşağıdakiler açıklanmaktadır:
 
 - [Veritabanı SıNıFLARı SQL 'ı nasıl kullanır](#_core_how_the_database_classes_use_sql).
 
-## <a name="open-database-connectivity-odbc"></a><a name="_core_open_database_connectivity_.28.odbc.29"></a>Açık veritabanı bağlantısı (ODBC)
+## <a name="open-database-connectivity-odbc"></a><a name="_core_open_database_connectivity_.28.odbc.29"></a> Açık veritabanı bağlantısı (ODBC)
 
 Veritabanı sınıfları, koda SQL komutları katıştırmak yerine SQL 'yi çağrı düzeyinde bir arabirimde kullanarak ODBC ile uygulanır. ODBC, ODBC sürücüleri aracılığıyla bir [veri kaynağıyla](../../data/odbc/data-source-odbc.md) iletişim kurmak için SQL kullanır. Bu sürücüler, SQL 'i Yorumlar ve gerekirse, Microsoft Access gibi belirli bir veritabanı biçimiyle kullanılmak üzere çevirir. ODBC 'nin SQL 'in nasıl kullanıldığı hakkında daha fazla bilgi için bkz. [ODBC](../../data/odbc/odbc-basics.md) ve [ODBC Programcı Başvuru](/sql/odbc/reference/odbc-programmer-s-reference) belgeleri.
 
-## <a name="database-classes"></a><a name="_core_the_database_classes"></a>Veritabanı sınıfları
+## <a name="database-classes"></a><a name="_core_the_database_classes"></a> Veritabanı sınıfları
 
 > [!NOTE]
 > MFC ODBC Tüketicisi Sihirbazı, Visual Studio 2019 ve sonrasında kullanılamaz. Yine de bir tüketicisi el ile oluşturabilirsiniz.
 
-Veritabanı sınıfları, var olan bir [veri kaynağındaki](../../data/odbc/data-source-odbc.md)verileri değiştirmenize ve güncelleştirmenize olanak sağlayacak şekilde tasarlanmıştır. MFC [Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) ( **Sınıf Ekle**aracılığıyla erişilir) ve veritabanı sınıfları sizin için SQL deyimlerinin çoğunu oluşturur.
+Veritabanı sınıfları, var olan bir [veri kaynağındaki](../../data/odbc/data-source-odbc.md)verileri değiştirmenize ve güncelleştirmenize olanak sağlayacak şekilde tasarlanmıştır. MFC [Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md), [MFC ODBC Tüketicisi Sihirbazı](../../mfc/reference/adding-an-mfc-odbc-consumer.md) ( **Sınıf Ekle** aracılığıyla erişilir) ve veritabanı sınıfları sizin için SQL deyimlerinin çoğunu oluşturur.
 
 Veritabanı sınıfları, veri Işleme dili (DML) olarak bilinen bir SQL bölümünü kullanır. Bu komutlar, veri kaynağının tümü veya bir kısmı ile çalışmanıza, yeni kayıtlar eklemenize, kayıtları düzenlemenize ve kayıtları silmenize olanak sağlar. Aşağıdaki tabloda en yaygın SQL anahtar kelimeleri ve veritabanı sınıflarının bunları kullanma yolları listelenmektedir.
 
@@ -50,10 +51,10 @@ Veritabanı sınıfları, veri Işleme dili (DML) olarak bilinen bir SQL bölüm
 
 |SQL anahtar sözcüğü|Sihirbazlar ve veritabanı sınıfları onu kullanır|
 |-----------------|---------------------------------------------|
-|**SEÇIN**|Veri kaynağındaki hangi tablo ve sütunların kullanılacağını belirlemek için.|
+|**SELECT**|Veri kaynağındaki hangi tablo ve sütunların kullanılacağını belirlemek için.|
 |**WHERE**|Seçimi daralan bir filtre uygulamak için.|
-|**SİPARİŞ VEREN**|Kayıt kümesine bir sıralama düzeni uygulamak için.|
-|**EKLEYIN**|Yeni kayıtları bir kayıt kümesine eklemek için.|
+|**ORDER BY**|Kayıt kümesine bir sıralama düzeni uygulamak için.|
+|**INSERT**|Yeni kayıtları bir kayıt kümesine eklemek için.|
 |**SILMELI**|Kayıt kümesinden kayıtları silmek için.|
 |**UPDATE**|Bir kaydın alanlarını değiştirmek için.|
 
@@ -70,7 +71,7 @@ SQL veritabanları, C ve C++ ' da kullanılanlarla benzer veri türlerini kullan
 
 Desteklenen SQL deyimlerinin listesi, veri türleri, SQL Core dilbilgisi ve [MICROSOFT SQL](/sql/) belgelerinde SQL hakkında önerilen yayınların okuma listesi dahil olmak üzere SQL hakkında daha fazla bilgi edinebilirsiniz.
 
-## <a name="how-the-database-classes-use-sql"></a><a name="_core_how_the_database_classes_use_sql"></a>Veritabanı sınıfları SQL 'i nasıl kullanır?
+## <a name="how-the-database-classes-use-sql"></a><a name="_core_how_the_database_classes_use_sql"></a> Veritabanı sınıfları SQL 'i nasıl kullanır?
 
 Veritabanı sınıflarından türettiğiniz kayıt kümeleri ODBC 'yi bir veri kaynağıyla iletişim kurmak için kullanır ve ODBC, SQL deyimleri göndererek veri kaynağından kayıtları alır. Bu konu, veritabanı sınıfları ve SQL arasındaki ilişkiyi açıklar.
 

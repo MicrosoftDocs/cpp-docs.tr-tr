@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __ull_rshift'
 title: __ull_rshift
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - ull_rshift intrinsic
 - __ull_rshift intrinsic
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
-ms.openlocfilehash: bf9fe7775cee1c774c097a1b6bd371721c9fa34f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 5b819e4a1df8db7b7562023c6acc9dbbd94f7f76
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80074982"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333624"
 ---
 # <a name="__ull_rshift"></a>__ull_rshift
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 x64 üzerinde, ilk parametre tarafından belirtilen 64 bitlik bir değeri ikinci parametre tarafından belirtilen bir bit sayısıyla sağa kaydırır.
 
@@ -31,15 +32,15 @@ unsigned __int64 __ull_rshift(
 
 ### <a name="parameters"></a>Parametreler
 
-*maske*\
+*maskesi*\
 'ndaki Sağa kayılacak 64 bitlik tamsayı değeri.
 
 *nBit*\
 'ndaki Bit sayısı, x86 üzerindeki mod 32 ve x64 üzerinde mod 64.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
-`nBit` bitler tarafından kaydırılan maske.
+Bitler tarafından kaydırılan maske `nBit` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -47,11 +48,11 @@ unsigned __int64 __ull_rshift(
 |---------------|------------------|
 |`__ull_rshift`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 
-İkinci parametre x86 üzerinde 31 ' den büyükse (x64 üzerinde 63), kaydırma yapılacak bit sayısını öğrenmek için bu sayı modül 32 (x64 üzerinde 64) olarak alınır. Ad içindeki `ull` `unsigned long long (unsigned __int64)`gösterir.
+İkinci parametre x86 üzerinde 31 ' den büyükse (x64 üzerinde 63), kaydırma yapılacak bit sayısını öğrenmek için bu sayı modül 32 (x64 üzerinde 64) olarak alınır. `ull`Ad içindeki ' i gösterir `unsigned long long (unsigned __int64)` .
 
 ## <a name="example"></a>Örnek
 

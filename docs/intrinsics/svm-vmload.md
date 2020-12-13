@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __svm_vmload'
 title: __svm_vmload
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - __svm_vmload intrinsic
 - VMLOAD instruction
 ms.assetid: b46a5592-db76-4ffc-8694-2f3494e28bed
-ms.openlocfilehash: da6ca9786b9c7e5041b9a8ca908d567b16176436
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 975f6aed50007b0b184bbab2b9b48790e5e20616
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219815"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333720"
 ---
 # <a name="__svm_vmload"></a>__svm_vmload
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
 Belirtilen sanal makine denetim bloğundan (VMCB) işlemci durumunun bir alt kümesini yükler.
 
@@ -35,7 +36,7 @@ void __svm_vmload(
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşlev, `VMLOAD` makine yönergesine eşdeğerdir. `__svm_vmload` Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için "AMD64 mimari programcı 'nin El Ile birim 2 ' yi arayın. Sistem programlama, "belge numarası 24593, düzeltme 3,11, [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesinde.
+`__svm_vmload`İşlev, `VMLOAD` makine yönergesine eşdeğerdir. Bu işlev, bir konağın sanal makine izleyicisinin Konuk işletim sistemiyle ve uygulamalarına yönelik etkileşimini destekler. Daha fazla bilgi için, "AMD64 mimari programcı 'nin El Ile Volume 2: sistem programlama," belge numarası 24593, düzeltme 3,11, sonra [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) sitesinde "belgeyi arayın.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -43,7 +44,7 @@ void __svm_vmload(
 |---------------|------------------|
 |`__svm_vmload`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 **SON Microsoft 'a özgü**
 

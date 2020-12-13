@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel (C++)'
 title: özel (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: 7a1d9bd64a28fa7c08477c6011dc0e8236b7bcf6
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 7771230fd6eed5f567fb2e74e8cd869a0b3618f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521258"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333149"
 ---
 # <a name="custom-c"></a>özel (C++)
 
 Tür kitaplığındaki bir nesne için meta verileri tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 [ custom(
@@ -31,7 +32,7 @@ Tür kitaplığındaki bir nesne için meta verileri tanımlar.
 *uuid*<br/>
 Benzersiz bir KIMLIK.
 
-*deeri*<br/>
+*değer*<br/>
 Bir varyanta koyabileceğiniz bir değer.
 
 ## <a name="remarks"></a>Açıklamalar

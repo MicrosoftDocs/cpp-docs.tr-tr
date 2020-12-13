@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: invalid_scheduler_policy_value sınıfı'
 title: invalid_scheduler_policy_value Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_scheduler_policy_value class
 ms.assetid: 8c533e3f-2774-4192-8616-b2313b859bf7
-ms.openlocfilehash: 6a66b2b303a4b3b0cb8c2c7a3c515ac8cd1b33a0
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: c91295646b0bc85ea4ed5ee8f376c1ed029e4f0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143001"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334489"
 ---
 # <a name="invalid_scheduler_policy_value-class"></a>invalid_scheduler_policy_value Sınıfı
 
-Bu sınıf, bir `SchedulerPolicy` nesnesinin ilke anahtarı bu anahtar için geçersiz bir değere ayarlandığında oluşturulan bir özel durumu açıklar.
+Bu sınıf, bir nesnenin ilke anahtarı `SchedulerPolicy` Bu anahtar için geçersiz bir değere ayarlandığında oluşturulan bir özel durumu açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class invalid_scheduler_policy_value : public std::exception;
@@ -29,7 +30,7 @@ class invalid_scheduler_policy_value : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[invalid_scheduler_policy_value] (geçersiz-Scheduler-Policy-thread-Specification-Class. MD # ctor|Fazla Yüklendi. `invalid_scheduler_policy_value` nesnesi oluşturur.|
+|[invalid_scheduler_policy_value] (geçersiz-Scheduler-Policy-thread-Specification-Class. MD # ctor|Fazla Yüklendi. Bir `invalid_scheduler_policy_value` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -43,9 +44,9 @@ class invalid_scheduler_policy_value : public std::exception;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>invalid_scheduler_policy_value
+## <a name="invalid_scheduler_policy_value"></a><a name="ctor"></a> invalid_scheduler_policy_value
 
-`invalid_scheduler_policy_value` nesnesi oluşturur.
+Bir `invalid_scheduler_policy_value` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP invalid_scheduler_policy_value(_In_z_ const char* _Message) throw();
@@ -60,5 +61,5 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
 [SchedulerPolicy Sınıfı](schedulerpolicy-class.md)

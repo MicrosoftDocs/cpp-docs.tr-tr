@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: no_namespace Import özniteliği'
 title: no_namespace içeri aktarma özniteliği
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,30 +7,30 @@ f1_keywords:
 helpviewer_keywords:
 - no_namespace attribute
 ms.assetid: 5d81b741-a558-451b-b493-1f3b18967337
-ms.openlocfilehash: ba52aed69cdbb46c135e6de5078d718e93f99c87
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e1503015f455af65a138e4e3e6843fd0516d2773
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333311"
 ---
 # <a name="no_namespace-import-attribute"></a>no_namespace içeri aktarma özniteliği
 
-**C++Belirli**
+**C++ özel**
 
 Derleyicinin ad alanı adı üretmediğini belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#import** *tür kitaplığı* **no_namespace**
+> **#import** *türü-kitaplık* **no_namespace**
 
 ## <a name="remarks"></a>Açıklamalar
 
-`#import` Üstbilgi dosyasındaki tür kitaplığı içerikleri normalde bir ad alanında tanımlanır. Ad alanı adı, orijinal IDL dosyasının `library` bildiriminde belirtilir. **No_namespace** özniteliği belirtilmişse, bu ad alanı derleyici tarafından oluşturulmaz.
+Üstbilgi dosyasındaki tür kitaplığı içerikleri `#import` normalde bir ad alanında tanımlanır. Ad alanı adı, `library` ORIJINAL IDL dosyasının bildiriminde belirtilir. **No_namespace** özniteliği belirtilmişse, bu ad alanı derleyici tarafından oluşturulmaz.
 
 Farklı bir ad alanı adı kullanmak istiyorsanız bunun yerine [rename_namespace](../preprocessor/rename-namespace.md) özniteliğini kullanın.
 
-**SONA C++ özgü**
+**Son C++ özel**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

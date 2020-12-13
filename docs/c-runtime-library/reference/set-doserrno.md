@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _set_doserrno'
 title: _set_doserrno
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - set_doserrno function
 - _doserrno global variable
 ms.assetid: 8686c159-3797-4705-a53e-7457869ca6f3
-ms.openlocfilehash: 9de5ff8ccc4673468628275c3c3366681edc3776
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c4b7860764505ab7d3388bace6fa86b0726851e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334104"
 ---
 # <a name="_set_doserrno"></a>_set_doserrno
 
@@ -50,7 +51,7 @@ errno_t _set_doserrno( int error_value );
 ### <a name="parameters"></a>Parametreler
 
 *error_value*<br/>
-**_Doserrno**yeni değeri.
+**_Doserrno** yeni değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -66,7 +67,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_set_doserrno**|\<Stdlib. h>|\<errno. h>|
+|**_set_doserrno**|\<stdlib.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

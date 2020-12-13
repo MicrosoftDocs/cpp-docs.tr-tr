@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _fullpath _wfullpath'
 title: _fullpath, _wfullpath
 ms.date: 4/2/2020
 api_name:
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - _fullpath function
 - fullpath function
 ms.assetid: 4161ec17-0d22-45dd-b07d-0222553afae9
-ms.openlocfilehash: 8583ea17930721f8d8b80aa5066dbc07372ce243
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e9c02d100abc175f24194ce71627502544085f9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334159"
 ---
 # <a name="_fullpath-_wfullpath"></a>_fullpath, _wfullpath
 
 Belirtilen göreli yol adı için mutlak veya tam yol adı oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 char *_fullpath(
@@ -65,21 +66,21 @@ wchar_t *_wfullpath(
 ### <a name="parameters"></a>Parametreler
 
 *absPath*<br/>
-Mutlak veya tam yol adı veya **null**içeren bir arabelleğin işaretçisi.
+Mutlak veya tam yol adı veya **null** içeren bir arabelleğin işaretçisi.
 
 *relPath*<br/>
 Göreli yol adı.
 
 *'In*<br/>
-Mutlak yol adı arabelleğinin (*absPath*) uzunluk üst sınırı. Bu uzunluk, **_fullpath** için bayt cinsinden, **`wchar_t`** **_wfullpath**için geniş karakterler () cinsinden.
+Mutlak yol adı arabelleğinin (*absPath*) uzunluk üst sınırı. Bu uzunluk, **_fullpath** için bayt cinsinden, **`wchar_t`** **_wfullpath** için geniş karakterler () cinsinden.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri, mutlak yol adını (*absPath*) içeren bir arabelleğe yönelik bir işaretçi döndürür. Bir hata varsa (örneğin, *RelPath* içinde geçirilen değer geçerli olmayan veya bulunamayan bir sürücü harfi içeriyorsa veya oluşturulan mutlak yol adının (*absPath*) uzunluğu *MaxLength*'ten büyükse, işlev **null**değerini döndürür.
+Bu işlevlerin her biri, mutlak yol adını (*absPath*) içeren bir arabelleğe yönelik bir işaretçi döndürür. Bir hata varsa (örneğin, *RelPath* içinde geçirilen değer geçerli olmayan veya bulunamayan bir sürücü harfi içeriyorsa veya oluşturulan mutlak yol adının (*absPath*) uzunluğu *MaxLength*'ten büyükse, işlev **null** değerini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Fullpath** Işlevi, *RelPath* 'teki göreli yol adını tam nitelikli veya mutlak yoluna genişletir ve bu adı *absPath*olarak depolar. *AbsPath* **null**ise, yol adını tutmak için yeterli uzunlukta bir arabellek ayırmak üzere **malloc** kullanılır. Bu arabelleği serbest bırakmak için çağıranın sorumluluğundadır. Göreli yol adı geçerli konumdan başka bir konumun yolunu belirtir (örneğin, geçerli çalışma dizini: "."). Mutlak yol adı, dosya sisteminin kökünden istenen konuma ulaşmak için gereken yolun tamamını belirten göreli bir yol adının genişletmesinin bir yoludur. **_Makepath**farklı olarak, **_fullpath** "./" veya "Içeren göreli yollar (*RelPath*) için mutlak yol adı elde etmek üzere kullanılabilir. /"adında.
+**_Fullpath** Işlevi, *RelPath* 'teki göreli yol adını tam nitelikli veya mutlak yoluna genişletir ve bu adı *absPath* olarak depolar. *AbsPath* **null** ise, yol adını tutmak için yeterli uzunlukta bir arabellek ayırmak üzere **malloc** kullanılır. Bu arabelleği serbest bırakmak için çağıranın sorumluluğundadır. Göreli yol adı geçerli konumdan başka bir konumun yolunu belirtir (örneğin, geçerli çalışma dizini: "."). Mutlak yol adı, dosya sisteminin kökünden istenen konuma ulaşmak için gereken yolun tamamını belirten göreli bir yol adının genişletmesinin bir yoludur. **_Makepath** farklı olarak, **_fullpath** "./" veya "Içeren göreli yollar (*RelPath*) için mutlak yol adı elde etmek üzere kullanılabilir. /"adında.
 
 Örneğin, C çalışma zamanı yordamlarını kullanmak için, uygulamanın, yordamlar için bildirimleri içeren üst bilgi dosyalarını içermesi gerekir. Her üstbilgi dosyası include deyimleri, dosyanın konumunu göreli bir şekilde (uygulamanın çalışma dizininden) başvurur:
 
@@ -93,11 +94,11 @@ dosyanın mutlak yolu (gerçek dosya sistemi konumu) şu şekilde olabilir:
 
 `\\machine\shareName\msvcSrc\crt\headerFiles\stdlib.h`
 
-**_fullpath** çok baytlı karakter dizesi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre tanıyor. **_wfullpath** , **_fullpath**geniş karakterli bir sürümüdür; **_wfullpath** dize bağımsız değişkenleri geniş karakterli dizelerdir. **_wfullpath** ve **_fullpath** , **_wfullpath** çok baytlı karakter dizelerini işleyememesi dışında aynı şekilde davranır.
+**_fullpath** çok baytlı karakter dizesi bağımsız değişkenlerini uygun şekilde otomatik olarak işler ve çok baytlı karakter dizilerini kullanımda olan çok baytlı kod sayfasına göre tanıyor. **_wfullpath** , **_fullpath** geniş karakterli bir sürümüdür; **_wfullpath** dize bağımsız değişkenleri geniş karakterli dizelerdir. **_wfullpath** ve **_fullpath** , **_wfullpath** çok baytlı karakter dizelerini işleyememesi dışında aynı şekilde davranır.
 
 **_DEBUG** ve **_CRTDBG_MAP_ALLOC** her ikisi de tanımlıysa, **_fullpath** ve **_wfullpath** çağrıları, bellek ayırmalarının hata ayıklamasına izin vermek için **_fullpath_dbg** ve **_wfullpath_dbg** çağrılarıyla değiştirilmiştir. Daha fazla bilgi için bkz. [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md).
 
-Bu işlev, *maxlen* değeri 0 ' dan küçük veya buna eşit Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null**değerini döndürür.
+Bu işlev, *maxlen* değeri 0 ' dan küçük veya buna eşit Ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **errno** ' ı **EINVAL** olarak ayarlar ve **null** değerini döndürür.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -105,7 +106,7 @@ Bu işlev, *maxlen* değeri 0 ' dan küçük veya buna eşit Ise, [parametre do�
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tfullpath**|**_fullpath**|**_fullpath**|**_wfullpath**|
 
-*AbsPath* arabelleği **null**ise **_fullpath** , bir arabellek ayırmak ve *MaxLength* bağımsız değişkenini yok saymaya yönelik [malloc](malloc.md) çağırır. Bu arabelleği serbest bırakma sorumluluğu ( [ücretsiz](free.md)kullanılarak) uygun şekilde. *RelPath* bağımsız değişkeni bir disk sürücüsü belirtiyorsa, bu sürücünün geçerli dizini yol ile birleştirilir.
+*AbsPath* arabelleği **null** ise **_fullpath** , bir arabellek ayırmak ve *MaxLength* bağımsız değişkenini yok saymaya yönelik [malloc](malloc.md) çağırır. Bu arabelleği serbest bırakma sorumluluğu ( [ücretsiz](free.md)kullanılarak) uygun şekilde. *RelPath* bağımsız değişkeni bir disk sürücüsü belirtiyorsa, bu sürücünün geçerli dizini yol ile birleştirilir.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: fsöyleyin, _ftelli64'
 title: ftell, _ftelli64
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - file pointers [C++], getting current position
 - file pointers [C++]
 ms.assetid: 40149cd8-65f2-42ff-b70c-68e3e918cdd7
-ms.openlocfilehash: 273ad4990f78355029770e19e7cdcf36d7ba39bf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f3fec98cb9d90c8b63072a8e618f58246a6b0147
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910073"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334238"
 ---
 # <a name="ftell-_ftelli64"></a>ftell, _ftelli64
 
@@ -62,13 +63,13 @@ Hedef **Dosya** yapısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**fsöyleyin** ve **_ftelli64** geçerli dosya konumunu döndürür. **Fsöyleyin** ve **_ftelli64** tarafından döndürülen değer metin modunda açılan akışlar için fiziksel bayt sapmasını yansıtmayabilir, çünkü metin modu satır başı satır akışı çevirisine neden olur. Dosya konumlarına doğru dönmek için [_fseeki64](fseek-fseeki64.md) ile [fseek](fseek-fseeki64.md) veya **_ftelli64** **kullanın.** Hatada, **fsöyleyin** ve **_ftelli64** [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1L döndürür ve **errno** , errno içinde tanımlanan iki sabitden birine ayarlanır. Olsun. **EBADF** sabiti, *Stream* bağımsız değişkeninin geçerli bir dosya işaretçisi değeri olmadığı veya açık bir dosyaya başvurmayacağı anlamına gelir. **EINVAL** , işleve geçersiz bir *akış* bağımsız değişkeninin geçirildiği anlamına gelir. Arama yeteneğine sahip olmayan cihazlarda (örneğin, terminaller ve Yazıcılar) veya *akış* açık bir dosyaya başvurmadıysa, dönüş değeri tanımsız olur.
+**fsöyleyin** ve **_ftelli64** geçerli dosya konumunu döndürür. **Fsöyleyin** ve **_ftelli64** tarafından döndürülen değer metin modunda açılan akışlar için fiziksel bayt sapmasını yansıtmayabilir, çünkü metin modu satır başı satır akışı çevirisine neden olur. Dosya konumlarına doğru dönmek için [_fseeki64](fseek-fseeki64.md) ile [fseek](fseek-fseeki64.md) veya **_ftelli64** **kullanın.** Hatada, **fsöyleyin** ve **_ftelli64** [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler-1L döndürür ve **errno** , errno. H içinde tanımlanan iki sabitden birine ayarlanır. **EBADF** sabiti, *Stream* bağımsız değişkeninin geçerli bir dosya işaretçisi değeri olmadığı veya açık bir dosyaya başvurmayacağı anlamına gelir. **EINVAL** , işleve geçersiz bir *akış* bağımsız değişkeninin geçirildiği anlamına gelir. Arama yeteneğine sahip olmayan cihazlarda (örneğin, terminaller ve Yazıcılar) veya *akış* açık bir dosyaya başvurmadıysa, dönüş değeri tanımsız olur.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Fsöyleyin** ve **_ftelli64** işlevleri, *akış*ile ilişkili dosya işaretçisinin (varsa) geçerli konumunu alır. Konum, akışın başlangıcına göre bir konum olarak ifade edilir.
+**Fsöyleyin** ve **_ftelli64** işlevleri, *akış* ile ilişkili dosya işaretçisinin (varsa) geçerli konumunu alır. Konum, akışın başlangıcına göre bir konum olarak ifade edilir.
 
 Veri eklemek için bir dosya açıldığında, geçerli dosya konumu, sonraki yazmanın nerede gerçekleştiğine göre değil, son g/ç işlemi tarafından belirlenir. Örneğin, bir dosya ekleme için açılırsa ve son işlem bir okuuysa, dosya konumu sonraki yazma işleminin başlayacağı noktada, sonraki okuma işleminin başlayacağı noktasıdır. (Bir dosya ekleme için açıldığında, dosya konumu herhangi bir yazma işleminden önce dosyanın sonuna taşınır.) Ekleme için açılmış bir dosya üzerinde bir g/ç işlemi henüz gerçekleşmediyse dosya konumu dosyanın başlangıcıdır.
 
@@ -82,8 +83,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |--------------|---------------------|----------------------|
-|**fsöyleyin**|\<stdio. h>|\<errno. h>|
-|**_ftelli64**|\<stdio. h>|\<errno. h>|
+|**fsöyleyin**|\<stdio.h>|\<errno.h>|
+|**_ftelli64**|\<stdio.h>|\<errno.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -123,7 +124,7 @@ Position after trying to read 100 bytes: 100
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [fgetpos](fgetpos.md)<br/>
 [fseek, _fseeki64](fseek-fseeki64.md)<br/>

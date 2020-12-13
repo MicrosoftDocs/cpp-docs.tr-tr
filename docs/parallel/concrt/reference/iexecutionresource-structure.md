@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: IExecutionResource yapısı'
 title: IExecutionResource Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - IExecutionResource structure
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd
-ms.openlocfilehash: af6b10d1552770c776762ed195f5efceab30a3d5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 913155ac4ca19f116742134e9d39678ee92b44a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215796"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334654"
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource Yapısı
 
 Donanım iş parçacığı için bir soyutlama.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct IExecutionResource;
@@ -53,7 +54,7 @@ Yürütme kaynakları tek başına veya sanal işlemci köklerinin ilişkili ola
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="iexecutionresourcecurrentsubscriptionlevel-method"></a><a name="currentsubscriptionlevel"></a>IExecutionResource:: CurrentSubscriptionLevel yöntemi
+## <a name="iexecutionresourcecurrentsubscriptionlevel-method"></a><a name="currentsubscriptionlevel"></a> IExecutionResource:: CurrentSubscriptionLevel yöntemi
 
 Etkinleştirilen sanal işlemci köklerinin ve bu yürütme kaynağının gösterdiği temel alınan donanım iş parçacığı ile ilişkili olan abone olunan dış iş parçacıklarının sayısını döndürür.
 
@@ -75,7 +76,7 @@ Abonelik düzeyi, kaç çalışan iş parçacığının donanım iş parçacığ
 
 Kaynak Yöneticisi, kaynakların zamanlayıcılar arasında ne zaman taşınacağını belirleme yöntemlerinden biri olarak abonelik düzeyi bilgilerini kullanır.
 
-## <a name="iexecutionresourcegetexecutionresourceid-method"></a><a name="getexecutionresourceid"></a>IExecutionResource:: GetExecutionResourceId yöntemi
+## <a name="iexecutionresourcegetexecutionresourceid-method"></a><a name="getexecutionresourceid"></a> IExecutionResource:: GetExecutionResourceId yöntemi
 
 Bu yürütme kaynağının temsil ettiği donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.
 
@@ -91,7 +92,7 @@ Bu yürütme kaynağını temel alan donanım iş parçacığı için benzersiz 
 
 Her donanım iş parçacığına Eşzamanlılık Çalışma Zamanı tarafından benzersiz bir tanımlayıcı atanır. Birden çok yürütme kaynağı ilişkili donanım iş parçacığı ise, hepsi aynı yürütme kaynak tanımlayıcısına sahip olur.
 
-## <a name="iexecutionresourcegetnodeid-method"></a><a name="getnodeid"></a>IExecutionResource:: GetNodeId yöntemi
+## <a name="iexecutionresourcegetnodeid-method"></a><a name="getnodeid"></a> IExecutionResource:: GetNodeId yöntemi
 
 Bu yürütme kaynağının ait olduğu işlemci düğümü için benzersiz bir tanımlayıcı döndürür.
 
@@ -109,7 +110,7 @@ Eşzamanlılık Çalışma Zamanı, işlemci düğümleri gruplarındaki sistemd
 
 Düğüm sayısı [GetProcessorNodeCount](concurrency-namespace-functions.md)işlevinden elde edilebilir.
 
-## <a name="iexecutionresourceremove-method"></a><a name="remove"></a>IExecutionResource:: Remove yöntemi
+## <a name="iexecutionresourceremove-method"></a><a name="remove"></a> IExecutionResource:: Remove yöntemi
 
 Bu yürütme kaynağını Kaynak Yöneticisi döndürür.
 
@@ -130,9 +131,9 @@ Bu tek başına bir yürütme kaynağıdır ve [ISchedulerProxy:: SubscribeCurre
 
 `Remove`Arabirim arabirimden devraldığı için, bir yöntemi çağırarak sanal işlemci kökleri de kaynak yöneticisi döndürülebilir `IVirtualProcessorRoot` `IExecutionResource` . [IComparer:: Removevirtualprocessor](ischeduler-structure.md#removevirtualprocessors) yöntemine yapılan çağrıya yanıt olarak veya [IComparer Ulerproxy:: CreateOversubscriber](ischedulerproxy-structure.md#createoversubscriber) yönteminden edindiğiniz çok aboneli bir sanal işlemci kökü ile işiniz bittiğinde bir sanal işlemci kökünü geri almanız gerekebilir. Sanal işlemci kökleri için, hangi iş parçacığının yöntemi çağırabileceği konusunda bir kısıtlama yoktur `Remove` .
 
-`invalid_argument`parametresi `pScheduler` olarak ayarlandıysa oluşturulur `NULL` .
+`invalid_argument` parametresi `pScheduler` olarak ayarlandıysa oluşturulur `NULL` .
 
-`invalid_operation`parametresi `pScheduler` Bu yürütme kaynağının oluşturulduğu Scheduler 'dan farklıysa veya geçerli iş parçacığı iş parçacığı aboneliğini oluşturan iş parçacığından farklıysa, tek başına yürütme kaynağı ile oluşturulur.
+`invalid_operation` parametresi `pScheduler` Bu yürütme kaynağının oluşturulduğu Scheduler 'dan farklıysa veya geçerli iş parçacığı iş parçacığı aboneliğini oluşturan iş parçacığından farklıysa, tek başına yürütme kaynağı ile oluşturulur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

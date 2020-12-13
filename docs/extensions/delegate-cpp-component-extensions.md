@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Temsilci (C++/CLı ve C++/CX)'
 title: delegate (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - delegate keyword [C++]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
-ms.openlocfilehash: 77cd17eb8c164a08af9ec783f8aba422785609b6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 92cd46980775a340e6bf0d6857ace91645d65a7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333729"
 ---
 # <a name="delegate--ccli-and-ccx"></a>delegate (C++/CLI ve C++/CX)
 
@@ -33,7 +34,7 @@ Tür bir temsilciyise, derleme zamanında algılamak için `__is_delegate()` nit
 
 C++/CX, aşağıdaki söz dizimine sahip temsilcileri destekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 access
@@ -65,13 +66,13 @@ Temsilci ile aynı prototipi içeren bir olay bildirmek için *Delegate-Type-Ide
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 Ortak dil çalışma zamanı, aşağıdaki söz dizimine sahip temsilcileri destekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 access
@@ -125,7 +126,7 @@ Temsilciler hakkında daha fazla bilgi için bkz.
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

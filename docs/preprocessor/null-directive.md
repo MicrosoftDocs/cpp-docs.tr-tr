@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: null yönergesi'
 title: Null yönergesi
 ms.date: 08/29/2019
 helpviewer_keywords:
@@ -7,21 +8,21 @@ helpviewer_keywords:
 - preprocessor directives
 - preprocessor, directives
 ms.assetid: df59990f-b420-43f3-b415-5c25493abeee
-ms.openlocfilehash: 57aa48577bc08737bdf0fbd9e9a6a387ceeeb97e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 560d51d3e900e59cca816f301cab27a74f0bc7f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333263"
 ---
 # <a name="null-directive"></a>Null yönergesi
 
-Null ön işlemci yönergesi, tek başına bir satırda tek **#** bir sayı işareti (). Hiçbir etkisi yoktur.
+Null ön işlemci yönergesi, tek başına bir satırda tek bir sayı işareti ( **#** ). Hiçbir etkisi yoktur.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **#**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)
+[Ön işlemci yönergeleri](../preprocessor/preprocessor-directives.md)

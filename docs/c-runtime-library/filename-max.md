@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: FILENAME_MAX'
 title: FILENAME_MAX
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - FILENAME_MAX constant
 ms.assetid: fe368d24-3f31-42d6-859c-cbd84f446ee5
-ms.openlocfilehash: 28ebee819bc8a9b6370f67210881a561c9629ab4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 435128e3b780cedb7ca94b2f0aa8c2cccef58013
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62289682"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332968"
 ---
-# <a name="filenamemax"></a>FILENAME_MAX
+# <a name="filename_max"></a>FILENAME_MAX
 
-İzin verilen maksimum uzunluğu bir `filename` dize arabellek boyutu.
+Dize arabelleği boyutu için izin verilen en yüksek uzunluk `filename` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <stdio.h>
@@ -25,5 +26,5 @@ ms.locfileid: "62289682"
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yol Alanı Sınırları](../c-runtime-library/path-field-limits.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Yol alanı sınırları](../c-runtime-library/path-field-limits.md)<br/>
+[Global sabitler](../c-runtime-library/global-constants.md)

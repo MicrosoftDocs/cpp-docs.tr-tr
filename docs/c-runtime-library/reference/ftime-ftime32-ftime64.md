@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ftime, _ftime32, _ftime64'
 title: _ftime, _ftime32, _ftime64
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - ftime32 function
 - time, getting current
 ms.assetid: 96bc464c-3bcd-41d5-a212-8bbd836b814a
-ms.openlocfilehash: a0d012c89058209832d1e78867e89b4bd87bf226
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6f0e4a6061bcdc36b866f39fd2ad9e18efc49fa0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334199"
 ---
 # <a name="_ftime-_ftime32-_ftime64"></a>_ftime, _ftime32, _ftime64
 
@@ -63,24 +64,24 @@ void _ftime64( struct __timeb64 *timeptr );
 ### <a name="parameters"></a>Parametreler
 
 *timeptr*<br/>
-**_Timeb**, **__timeb32**veya **__timeb64** yapısına yönelik işaretçi.
+**_Timeb**, **__timeb32** veya **__timeb64** yapısına yönelik işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Ftime** işlevi geçerli yerel saati alır ve *timeptr*tarafından işaret edilen yapıda depolar. **_Timeb**, **__timeb32**ve **__timeb64** yapıları sys \<\\timeb. h> içinde tanımlanır. Bunlar, aşağıdaki tabloda listelenen dört alan içerirler.
+**_Ftime** işlevi geçerli yerel saati alır ve *timeptr* tarafından işaret edilen yapıda depolar. **_Timeb**, **__timeb32** ve **__timeb64** yapıları içinde tanımlanmıştır \<sys\\timeb.h> . Bunlar, aşağıdaki tabloda listelenen dört alan içerirler.
 
 |Alan|Açıklama|
 |-|-|
 |**dstflag**|Yerel Saat dilimi için günışığından tasarrutasarrufu süresi geçerli ise sıfır dışında. (Gün ışığından yararlanma saatinin nasıl belirlendiği hakkında bir açıklama için bkz. [_tzset](tzset.md) .)|
 |**milimetre TM**|Saniyenin bir saniye cinsinden kesri.|
-|**time**|Gece yarısından bu yana geçen süre (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC).|
-|**TI**|Dakikalar içinde, Westward, UTC ve yerel saat arasında hareket eden fark. **Saat dilimi** değeri, genel değişken **_timezone** değerinden ayarlanır (bkz. **_tzset**).|
+|**ışınızda**|Gece yarısından bu yana geçen süre (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC).|
+|**timezone**|Dakikalar içinde, Westward, UTC ve yerel saat arasında hareket eden fark. **Saat dilimi** değeri, genel değişken **_timezone** değerinden ayarlanır (bkz. **_tzset**).|
 
 **__Timeb64** yapısını kullanan **_ftime64** işlevi, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC; tarihine kadar ifade etmesine olanak tanır. **_ftime32** yalnızca tarihi 18 Ocak 2038, UTC 23:59:59 ile gösterir. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-**_Ftime** işlevi **_ftime64**eşdeğerdir ve **_timeb** **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe 64 bitlik bir zaman içerir; bu durumda eski davranış geçerli olur; **_ftime** 32 bitlik bir süre kullanır ve **_timeb** 32 bit zaman içerir.
+**_Ftime** işlevi **_ftime64** eşdeğerdir ve **_timeb** **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe 64 bitlik bir zaman içerir; bu durumda eski davranış geçerli olur; **_ftime** 32 bitlik bir süre kullanır ve **_timeb** 32 bit zaman içerir.
 
-**_ftime** parametrelerini doğrular. Null bir işaretçi *timeptr*olarak geçirilmemişse, Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **errno** ' ı **EINVAL**olarak ayarlar.
+**_ftime** parametrelerini doğrular. Null bir işaretçi *timeptr* olarak geçirilmemişse, Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **errno** ' ı **EINVAL** olarak ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -88,9 +89,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_ftime**|\<sys/Types. h> ve \<sys/timeb. h>|
-|**_ftime32**|\<sys/Types. h> ve \<sys/timeb. h>|
-|**_ftime64**|\<sys/Types. h> ve \<sys/timeb. h>|
+|**_ftime**|\<sys/types.h> ve \<sys/timeb.h>|
+|**_ftime32**|\<sys/types.h> ve \<sys/timeb.h>|
+|**_ftime64**|\<sys/types.h> ve \<sys/timeb.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

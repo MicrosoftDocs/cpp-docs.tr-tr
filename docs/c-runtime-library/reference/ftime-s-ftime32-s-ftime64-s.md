@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _ftime_s, _ftime32_s, _ftime64_s'
 title: _ftime_s, _ftime32_s, _ftime64_s
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - _ftime_s function
 - _ftime32_s function
 ms.assetid: d03080d9-a520-45be-aa65-504bdb197e8b
-ms.openlocfilehash: a77d149f367c7f565141fbc3be1db1bfc3f3f362
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 97b709f014c463022e18b209e374afd6c18c20e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909954"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334186"
 ---
 # <a name="_ftime_s-_ftime32_s-_ftime64_s"></a>_ftime_s, _ftime32_s, _ftime64_s
 
@@ -63,28 +64,28 @@ errno_t _ftime64_s( struct __timeb64 *timeptr );
 ### <a name="parameters"></a>Parametreler
 
 *timeptr*<br/>
-**_Timeb**, **__timeb32**veya **__timeb64** yapısına yönelik işaretçi.
+**_Timeb**, **__timeb32** veya **__timeb64** yapısına yönelik işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa sıfır, hata durumunda hata kodu. *Timeptr* **null**Ise, dönüş değeri **EINVAL**' dir.
+Başarılıysa sıfır, hata durumunda hata kodu. *Timeptr* **null** Ise, dönüş değeri **EINVAL**' dir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Ftime_s** işlevi geçerli yerel saati alır ve *timeptr*tarafından işaret edilen yapıda depolar. **_Timeb**, **__timeb32**ve **__timeb64** yapıları sys\timeb.exe içinde tanımlanmıştır. Bunlar, aşağıdaki tabloda listelenen dört alan içerirler.
+**_Ftime_s** işlevi geçerli yerel saati alır ve *timeptr* tarafından işaret edilen yapıda depolar. **_Timeb**, **__timeb32** ve **__timeb64** yapıları sys\timeb.exe içinde tanımlanmıştır. Bunlar, aşağıdaki tabloda listelenen dört alan içerirler.
 
 |Alan|Açıklama|
 |-|-|
 |**dstflag**|Yerel Saat dilimi için günışığından tasarrutasarrufu süresi geçerli ise sıfır dışında. (Gün ışığından yararlanma saatinin nasıl belirlendiği hakkında bir açıklama için bkz. [_tzset](tzset.md) .)|
 |**milimetre TM**|Saniyenin bir saniye cinsinden kesri.|
-|**time**|Gece yarısından bu yana geçen süre (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC).|
-|**TI**|Dakikalar içinde, Westward, UTC ve yerel saat arasında hareket eden fark. **Saat dilimi** değeri, genel değişken **_timezone** değerinden ayarlanır (bkz. **_tzset**).|
+|**ışınızda**|Gece yarısından bu yana geçen süre (00:00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC).|
+|**timezone**|Dakikalar içinde, Westward, UTC ve yerel saat arasında hareket eden fark. **Saat dilimi** değeri, genel değişken **_timezone** değerinden ayarlanır (bkz. **_tzset**).|
 
 **__Timeb64** yapısını kullanan **_ftime64_s** işlevi, dosya oluşturma tarihlerinin 23:59:59, 31 Aralık 3000, UTC; tarihine kadar ifade etmesine olanak tanır. **_ftime32_s** yalnızca tarihi 18 Ocak 2038, UTC 23:59:59 ile gösterir. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-**_Ftime_s** işlevi **_ftime64_s**eşdeğerdir ve **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe **_timeb** bit 64 bir zaman içerir, bu durumda eski davranış geçerli olur; **_ftime_s** 32 bitlik bir süre kullanır ve **_timeb** 32 bit zaman içerir.
+**_Ftime_s** işlevi **_ftime64_s** eşdeğerdir ve **_USE_32BIT_TIME_T** tanımlanmadığı müddetçe **_timeb** bit 64 bir zaman içerir, bu durumda eski davranış geçerli olur; **_ftime_s** 32 bitlik bir süre kullanır ve **_timeb** 32 bit zaman içerir.
 
-**_ftime_s** parametrelerini doğrular. Null bir işaretçi *timeptr*olarak geçirilmemişse, Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **errno** ' ı **EINVAL**olarak ayarlar.
+**_ftime_s** parametrelerini doğrular. Null bir işaretçi *timeptr* olarak geçirilmemişse, Işlev [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **errno** ' ı **EINVAL** olarak ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -92,9 +93,9 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|**_ftime_s**|\<sys/Types. h> ve \<sys/timeb. h>|
-|**_ftime32_s**|\<sys/Types. h> ve \<sys/timeb. h>|
-|**_ftime64_s**|\<sys/Types. h> ve \<sys/timeb. h>|
+|**_ftime_s**|\<sys/types.h> ve \<sys/timeb.h>|
+|**_ftime32_s**|\<sys/types.h> ve \<sys/timeb.h>|
+|**_ftime64_s**|\<sys/types.h> ve \<sys/timeb.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

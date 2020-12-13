@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _udiv128'
 title: _udiv128
 ms.date: 04/17/2019
 f1_keywords:
 - _udiv128
 helpviewer_keywords:
 - _udiv128 intrinsic
-ms.openlocfilehash: 5e8cc9ca3dbf19a04d07edb1d73df84f2e29a5c3
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: f88546a179106f4291fcaeb865f1aad9e67c4045
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857989"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333649"
 ---
 # <a name="_udiv128"></a>_udiv128
 
-`_udiv128` iç, 128 bitlik işaretsiz bir tamsayıyı 64 bit işaretsiz bir tamsayı ile böler. Dönüş değeri bölümü, iç, bir işaretçi parametresi ile geri kalanı döndürür. `_udiv128`, **Microsoft 'a özgüdür**.
+`_udiv128`İç, 128 bitlik işaretsiz bir tamsayıyı 64 bit işaretsiz bir tamsayı ile böler. Dönüş değeri bölümü, iç, bir işaretçi parametresi ile geri kalanı döndürür. `_udiv128` , **Microsoft 'a özgüdür**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,30 +33,30 @@ unsigned __int64 _udiv128(
 *Highbölünen* \
 'ndaki Bölünen yüksek 64 bitleri.
 
-*Lowkar* \
+*Lowbölünen* \
 'ndaki Bölünün düşük 64 bitleri.
 
-*bölen* \
+*Lene* \
 'ndaki Bölünecek 64 bitlik tamsayı.
 
-*kalan* \
+*geri kalanında* \
 dışı Kalanın 64 bitlik tamsayı bitleri.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Bölüm 64 bitleri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-128 bit bölünme sayısının üst 64 bitini ve *düşük olan 64 ' ı* *lowbölünen*olarak geçirin. İç değer bu değeri *bölene*böler. *Kalanı, kalanı tarafından işaret*edilen 64 bitlik işaretsiz tamsayıya depolar ve bölümün 64 bitlerini döndürür.
+128 bit bölünme sayısının üst 64 bitini ve *düşük olan 64 ' ı* *lowbölünen* olarak geçirin. İç değer bu değeri *bölene* böler. *Kalanı, kalanı tarafından işaret* edilen 64 bitlik işaretsiz tamsayıya depolar ve bölümün 64 bitlerini döndürür.
 
-`_udiv128` iç, Visual Studio 2019 RTM 'den başlayarak kullanılabilir.
+`_udiv128`İç, Visual Studio 2019 RTM 'den başlayarak kullanılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|İç|Mimari|Üstbilgi|
+|Alanlarla|Mimari|Üst bilgi|
 |---------------|------------------|------------|
-|`_udiv128`|X64|ımintrin. h > \<|
+|`_udiv128`|x64|\<immintrin.h>|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

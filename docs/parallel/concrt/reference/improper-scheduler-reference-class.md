@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: improper_scheduler_reference sınıfı'
 title: improper_scheduler_reference Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - improper_scheduler_reference class
 ms.assetid: 434a7512-7796-4255-92a7-f3bf71c6a7a7
-ms.openlocfilehash: 18536043b0d46a6f27f1e5c60778a22af82ad2d3
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 4857418e14908b2d085d52249236d6395284b98a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334605"
 ---
 # <a name="improper_scheduler_reference-class"></a>improper_scheduler_reference Sınıfı
 
-Bu sınıf, `Reference` yöntemi, bu Scheduler 'ın parçası olmayan bir bağlamdan kapatılmakta olan bir `Scheduler` nesnesi üzerinde çağrıldığında oluşturulan bir özel durumu açıklar.
+Bu sınıf `Reference` `Scheduler` , bu Scheduler 'ın parçası olmayan bir bağlamdan, yöntemi kapanmakta olan bir nesne üzerinde çağrıldığında oluşturulan bir özel durumu açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class improper_scheduler_reference : public std::exception;
@@ -31,7 +32,7 @@ class improper_scheduler_reference : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[improper_scheduler_reference](#ctor)|Fazla Yüklendi. `improper_scheduler_reference` nesnesi oluşturur.|
+|[improper_scheduler_reference](#ctor)|Fazla Yüklendi. Bir `improper_scheduler_reference` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,9 +46,9 @@ class improper_scheduler_reference : public std::exception;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>improper_scheduler_reference
+## <a name="improper_scheduler_reference"></a><a name="ctor"></a> improper_scheduler_reference
 
-`improper_scheduler_reference` nesnesi oluşturur.
+Bir `improper_scheduler_reference` nesnesi oluşturur.
 
 ```cpp
 explicit _CRTIMP improper_scheduler_reference(_In_z_ const char* _Message) throw();
@@ -62,5 +63,5 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[Zamanlayıcı Sınıfı](scheduler-class.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[Zamanlayıcı sınıfı](scheduler-class.md)

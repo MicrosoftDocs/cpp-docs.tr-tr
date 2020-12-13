@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Pack pragma'
 title: pack pragması
 ms.date: 07/22/2020
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 72f94520516cce2ae36b70795fb29e3d4d8068df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d4e4cbba13efabd148fdd61f59eebb15c56b1c41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219397"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333191"
 ---
 # <a name="pack-pragma"></a>pack pragması
 
 Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`#pragma pack( show )`**\
 > **`#pragma pack( push`** [ **`,`** *`identifier`* ] [ **`,`** *`n`* ] **`)`**\
@@ -32,7 +33,7 @@ Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
 Seçim Paketleme hizalaması için geçerli bayt değerini görüntüler. Değer bir uyarı iletisiyle görüntülenir.
 
 **`push`**\
-Seçim İç derleyici yığınında geçerli paketleme hizalama değerini iter ve geçerli paketleme hizalama değerini *n*olarak ayarlar. *N* belirtilmezse, geçerli paketleme hizalama değeri gönderilir.
+Seçim İç derleyici yığınında geçerli paketleme hizalama değerini iter ve geçerli paketleme hizalama değerini *n* olarak ayarlar. *N* belirtilmezse, geçerli paketleme hizalama değeri gönderilir.
 
 **`pop`**\
 Seçim Kaydı, iç derleyici yığınının üst öğesinden kaldırır. *N* ile belirtilmediyse **`pop`** , yığının en üstündeki sonuç kaydıyla ilişkili paketleme değeri, yeni paketleme hizalama değeridir. *N* belirtilmişse, örneğin, `#pragma pack(pop, 16)` *n* yeni paketleme hizalama değeri haline gelir. , Örneğin, öğesini kullanarak yüklerseniz, *`identifier`* `#pragma pack(pop, r1)` yığındaki tüm kayıtlar, kayıt bulunana kadar doldurulur *`identifier`* . Bu kayıt oluşur ve yığının en üstünde bulunan kayıtla ilişkili paketleme değeri yeni paketleme hizalama değeri olur. *`identifier`* Yığın üzerinde bulunan herhangi bir kayıtta bulunmayan öğesini kullanarak öğesini seçerseniz, **`pop`** yok sayılır.
@@ -102,7 +103,7 @@ int main() {
 0 4 6
 ```
 
-Aşağıdaki örnek, *Push*, *pop*ve *Show* sözdiziminin nasıl kullanılacağını göstermektedir.
+Aşağıdaki örnek, *Push*, *pop* ve *Show* sözdiziminin nasıl kullanılacağını göstermektedir.
 
 ```cpp
 // pragma_directives_pack_2.cpp
