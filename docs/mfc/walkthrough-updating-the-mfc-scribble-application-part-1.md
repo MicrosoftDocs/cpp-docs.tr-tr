@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: MFC karalama uygulamasını güncelleştirme (Bölüm 1)'
 title: 'İzlenecek yol: MFC karalama uygulamasını güncelleştirme (Bölüm 1)'
 ms.date: 09/09/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: 2abcb509a3d7a0045ad33bedccdd61fd1e0e58f8
-ms.sourcegitcommit: d8f65b1ddc9ea32e877c67e2c8f0ea7501183fc7
+ms.openlocfilehash: bb60e535031670eddc84e7170431ad6622d434b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93291080"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142980"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını güncelleştirme (Bölüm 1)
 
@@ -127,7 +128,7 @@ Bu izlenecek yol, kaynak dosyalarını [Izlenecek yol: MFC kullanarak şerit uyg
 
    1. toolbar.bmp dosyanın bir kopyasını oluşturun, ancak kopyayı şerit örneğine kaydedin. Kopya panelicons.bmp yeniden adlandırın ve sonra kopyayı karalama projenize taşıyın.
 
-1. MFC uygulaması için bit eşlemi içeri aktarın. **Kaynak görünümü** , **karalama. RC** düğümüne çift tıklayın, **bit eşlem** düğümüne çift tıklayın ve ardından **Kaynak Ekle** ' ye tıklayın. Görüntülenen iletişim kutusunda **Içeri aktar** ' a tıklayın. `res`Dizine gidin, main.bmp dosyasını seçin ve ardından **Aç** ' a tıklayın.
+1. MFC uygulaması için bit eşlemi içeri aktarın. **Kaynak görünümü**, **karalama. RC** düğümüne çift tıklayın, **bit eşlem** düğümüne çift tıklayın ve ardından **Kaynak Ekle**' ye tıklayın. Görüntülenen iletişim kutusunda **Içeri aktar**' a tıklayın. `res`Dizine gidin, main.bmp dosyasını seçin ve ardından **Aç**' a tıklayın.
 
    main.bmp bit eşlem bir 26x26 görüntüsü içerir. Bit eşlemin KIMLIĞINI olarak değiştirin `IDB_RIBBON_MAIN` .
 
@@ -161,17 +162,17 @@ Menüler kullanan bir uygulamayı şerit kullanan bir uygulamaya dönüştürdü
 
 ### <a name="to-add-a-ribbon-resource-to-the-project"></a>Projeye şerit kaynağı eklemek için
 
-1. **Çözüm Gezgini** ' de karalama projesi seçiliyken, **Proje** menüsünde **Kaynak Ekle** ' ye tıklayın.
+1. **Çözüm Gezgini**' de karalama projesi seçiliyken, **Proje** menüsünde **Kaynak Ekle**' ye tıklayın.
 
-1. **Kaynak Ekle** iletişim kutusunda, **Şerit** ' i seçin ve ardından **Yeni** ' ye tıklayın.
+1. **Kaynak Ekle** iletişim kutusunda, **Şerit** ' i seçin ve ardından **Yeni**' ye tıklayın.
 
-   Visual Studio bir şerit kaynağı oluşturur ve Tasarım görünümünde açar. Şerit kaynak KIMLIĞI, `IDR_RIBBON1` **kaynak görünümü** ' de görüntülenir. Şeritte bir kategori ve bir panel bulunur.
+   Visual Studio bir şerit kaynağı oluşturur ve Tasarım görünümünde açar. Şerit kaynak KIMLIĞI, `IDR_RIBBON1` **kaynak görünümü**' de görüntülenir. Şeritte bir kategori ve bir panel bulunur.
 
 1. Özelliklerini değiştirerek **uygulama** düğmesini özelleştirebilirsiniz. Bu kodda kullanılan ileti kimlikleri, karalama 1,0 için menüde zaten tanımlanmıştır.
 
 1. Tasarım görünümünde, özelliklerini görüntülemek için **uygulama** düğmesine tıklayın. Özellik değerlerini şu şekilde değiştirin: **görüntü** `IDB_RIBBON_MAIN` , **komut istemi** `File` , **anahtarlar** , `f` **büyük görüntüler** `IDB_RIBBON_FILELARGE` ve **küçük görüntüler** `IDB_RIBBON_FILESMALL` .
 
-1. Aşağıdaki değişiklikler Kullanıcı **uygulama** düğmesine tıkladığında görüntülenen menüyü oluşturur. **Ana öğeler** ' in yanındaki üç nokta ( **...** ) simgesine tıklayarak **öğeler düzenleyicisini** açın.
+1. Aşağıdaki değişiklikler Kullanıcı **uygulama** düğmesine tıkladığında görüntülenen menüyü oluşturur. **Ana öğeler** ' in yanındaki üç nokta (**...**) simgesine tıklayarak **öğeler düzenleyicisini** açın.
 
    1. **Öğe** türü **düğmesi** seçili olduğunda, düğme eklemek için **Ekle** ' ye tıklayın. **Açıklamalı alt yazı** , `&New` **ID** to `ID_FILE_NEW` , **Image** to `0` , **Image Large** `0` .
 
@@ -181,15 +182,15 @@ Menüler kullanan bir uygulamayı şerit kullanan bir uygulamaya dönüştürdü
 
    1. Düğme eklemek için **Ekle** ' ye tıklayın. **Açıklamalı alt yazı** , `&Print` **kimlik** - `ID_FILE_PRINT` , **resim** `4` ve **görüntü büyük** olarak değiştirin `4` .
 
-   1. **Öğe** türünü **ayırıcı** olarak değiştirin ve ardından **Ekle** ' ye tıklayın.
+   1. **Öğe** türünü **ayırıcı** olarak değiştirin ve ardından **Ekle**' ye tıklayın.
 
    1. **Öğe** türünü **düğme** olarak değiştirin. Beşinci düğme eklemek için **Ekle** ' ye tıklayın. **Açıklamalı alt yazı** , `&Close` **kimlik** - `ID_FILE_CLOSE` , **resim** `5` ve **görüntü büyük** olarak değiştirin `5` .
 
 1. Aşağıdaki değişiklikler, önceki adımda oluşturduğunuz **Yazdır** düğmesinin altında bir alt menü oluşturur.
 
-   1. **Yazdır** düğmesine tıklayın, **öğe** türünü **etiket** olarak değiştirin ve ardından **Ekle** ' ye tıklayın. **Açıklamalı alt yazı** değiştirin `Preview and print the document` .
+   1. **Yazdır** düğmesine tıklayın, **öğe** türünü **etiket** olarak değiştirin ve ardından **Ekle**' ye tıklayın. **Açıklamalı alt yazı** değiştirin `Preview and print the document` .
 
-   1. **Yazdır** düğmesine tıklayın, **öğe** türünü **düğme** olarak değiştirin ve **Ekle** ' ye tıklayın. **Açıklamalı alt yazı** , `&Print` **kimlik** - `ID_FILE_PRINT` , **resim** `4` ve **görüntü büyük** olarak değiştirin `4` .
+   1. **Yazdır** düğmesine tıklayın, **öğe** türünü **düğme** olarak değiştirin ve **Ekle**' ye tıklayın. **Açıklamalı alt yazı** , `&Print` **kimlik** - `ID_FILE_PRINT` , **resim** `4` ve **görüntü büyük** olarak değiştirin `4` .
 
    1. **Yazdır** düğmesine tıklayın ve sonra düğme eklemek için **Ekle** ' ye tıklayın. **Açıklamalı alt yazı** , `&Quick Print` **kimlik** - `ID_FILE_PRINT_DIRECT` , **resim** `7` ve **görüntü büyük** olarak değiştirin `7` .
 
@@ -200,7 +201,7 @@ Menüler kullanan bir uygulamayı şerit kullanan bir uygulamaya dönüştürdü
 1. Aşağıdaki değişiklik, **uygulama** düğmesi menüsünün altında görüntülenen bir çıkış düğmesi oluşturur.
 
    1. **Çözüm Gezgini** **kaynak görünümü** sekmesini seçin.
-   1. **Özellikler** penceresinde, **düğme** ' nin yanındaki üç nokta ( **...** ) simgesine tıklayarak **öğeler düzenleyicisini** açın.
+   1. **Özellikler** penceresinde, **düğme** ' nin yanındaki üç nokta (**...**) simgesine tıklayarak **öğeler düzenleyicisini** açın.
 
    1. **Öğe** türü **düğmesi** seçili olduğunda, düğme eklemek için **Ekle** ' ye tıklayın. **Açıklamalı** alt yazı `E&xit` , **ID** `ID_APP_EXIT` , **görüntü** olarak değiştirin `8` .
 
@@ -241,11 +242,11 @@ Artık **uygulama** düğmesini oluşturduğunuza göre, şerit 'e öğe ekleyeb
 
 1. Karalama programı yalnızca bir kategori gerektirir. Tasarım görünümünde, **araç kutusunda** **Kategori** ' ye çift tıklayarak bir tane ekleyin ve özelliklerini görüntüleyin. Özellik değerlerini şu şekilde değiştirin: **açıklamalı alt yazı** `&Home` , **büyük görüntüler** `IDB_RIBBON_HOMELARGE` , **küçük görüntüler** `IDB_RIBBON_HOMESMALL` .
 
-1. Her Şerit kategorisi adlandırılmış panellerde düzenlenir. Her panel ilgili işlemleri tamamlamaya yönelik bir denetim kümesi içerir. Bu kategoride bir panel vardır. **Panel** ' e tıklayın ve ardından **başlık** ' ı değiştirin `Edit` .
+1. Her Şerit kategorisi adlandırılmış panellerde düzenlenir. Her panel ilgili işlemleri tamamlamaya yönelik bir denetim kümesi içerir. Bu kategoride bir panel vardır. **Panel**' e tıklayın ve ardından **başlık** ' ı değiştirin `Edit` .
 
 1. **Düzenleme** paneline, belgenin içeriğini temizlemeden sorumlu bir düğme ekleyin. Bu düğmenin ileti KIMLIĞI, `IDR_SCRIBBTYPE` menü kaynağında zaten tanımlanmış. Düğme `Clear All` metni ve düğmeyi süsleyecek bit eşlemin dizini olarak belirtin. **Araç kutusunu** açın ve sonra bir **düğmeyi** **düzenleme** paneline sürükleyin. Düğmeye tıklayın ve ardından **başlık** ' ı `Clear All` , **kimlik** ' i `ID_EDIT_CLEAR_ALL` , **görüntü dizini** ' `0` ni, **büyük görüntü dizini** `0` ' ni değiştirin.
 
-1. Değişiklikleri kaydedin ve uygulamayı derleyin ve çalıştırın. Karalama uygulamasının görüntülenmesi gerekir ve bir menü çubuğu yerine pencerenin üst kısmında bir şerit çubuğu olmalıdır. Şerit çubuğunda bir kategori, **giriş** ve **giriş** bir panel, **düzenleme** olmalıdır. Eklediğiniz Şerit düğmelerinin mevcut olay işleyicileriyle ilişkilendirilmesi gerekir ve **Açık** , **kapalı** , **Kaydet** , **Yazdır** ve **Tümünü Temizle** düğmeleri beklendiği gibi çalışmalıdır.
+1. Değişiklikleri kaydedin ve uygulamayı derleyin ve çalıştırın. Karalama uygulamasının görüntülenmesi gerekir ve bir menü çubuğu yerine pencerenin üst kısmında bir şerit çubuğu olmalıdır. Şerit çubuğunda bir kategori, **giriş** ve **giriş** bir panel, **düzenleme** olmalıdır. Eklediğiniz Şerit düğmelerinin mevcut olay işleyicileriyle ilişkilendirilmesi gerekir ve **Açık**, **kapalı**, **Kaydet**, **Yazdır** ve **Tümünü Temizle** düğmeleri beklendiği gibi çalışmalıdır.
 
 ## <a name="setting-the-look-of-the-application"></a><a name="setlook"></a> Uygulamanın görünümünü ayarlama
 

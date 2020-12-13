@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Command-Line Error D8037'
 title: Komut Satırı Hatası D8037
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - D8037
 ms.assetid: acddaaa0-bd84-426f-a37b-8f680b379c9d
-ms.openlocfilehash: ed6778861c89bb9755087c4d58f094a57d5f760f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a3f01828bbe8d1df98260ebec2b5646442ec65e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136190"
 ---
 # <a name="command-line-error-d8037"></a>Komut Satırı Hatası D8037
 
@@ -22,4 +23,4 @@ Geçici derleyici ara dosyaları oluşturmak için yeterli alan yok. Bu hatayı 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [D8000 ile D9999 Arasındaki Komut Satırı Hataları](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)<br/>
-[MSVC Derleyicisi Seçenekleri](../../build/reference/compiler-options.md)
+[MSVC derleyici seçenekleri](../../build/reference/compiler-options.md)

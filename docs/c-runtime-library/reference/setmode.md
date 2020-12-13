@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _setmode'
 title: _setmode
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-ms.openlocfilehash: abedba6f1d414191732859e3e44b54cc16acc4e9
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 305e9a247410d762821ed0e3e004505adc1a4034
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008420"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146386"
 ---
 # <a name="_setmode"></a>_setmode
 
@@ -63,20 +64,20 @@ Yeni çeviri modu.
 
 Başarılı olursa, önceki çeviri modunu döndürür.
 
-Bu işleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev-1 döndürür ve **errno** **, geçersiz**bir dosya tanımlayıcısı ya da geçersiz bir *mod* bağımsız değişkenini gösteren **EINVAL**.
+Bu işleve geçersiz parametreler geçirilmemişse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev-1 döndürür ve **errno** **, geçersiz** bir dosya tanımlayıcısı ya da geçersiz bir *mod* bağımsız değişkenini gösteren **EINVAL**.
 
 Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Setmode** işlevi, *FD*tarafından verilen dosyanın çeviri modunu *mod* olarak belirler. **_O_TEXT** as *modu* , metin (yani, çevrilmiş) modunu belirler. Satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık bir akış karakteriyle çevrilir. Satır akış karakterleri, çıkışta CR-LF birleşimlerine çevrilir. **_O_BINARY** , bu çevirilerin gizlendiği ikili (çevrilmemiş) modu geçirme.
+**_Setmode** işlevi, *FD* tarafından verilen dosyanın çeviri modunu *mod* olarak belirler. **_O_TEXT** as *modu* , metin (yani, çevrilmiş) modunu belirler. Satır başı satır besleme (CR-LF) birleşimleri, girişte tek satırlık bir akış karakteriyle çevrilir. Satır akış karakterleri, çıkışta CR-LF birleşimlerine çevrilir. **_O_BINARY** , bu çevirilerin gizlendiği ikili (çevrilmemiş) modu geçirme.
 
-Ayrıca, bu belgenin devamındaki ikinci örnekte gösterildiği gibi, Unicode modunu etkinleştirmek için **_O_U16TEXT**, **_O_U8TEXT**veya **_O_WTEXT** geçirebilirsiniz.
+Ayrıca, bu belgenin devamındaki ikinci örnekte gösterildiği gibi, Unicode modunu etkinleştirmek için **_O_U16TEXT**, **_O_U8TEXT** veya **_O_WTEXT** geçirebilirsiniz.
 
 > [!CAUTION]
 > Unicode modu geniş yazdırma işlevlerine yöneliktir (örneğin, `wprintf` ) ve dar yazdırma işlevlerinde desteklenmez. Bir UNICODE modundaki bir dar Print işlevinin kullanımı bir onaylama tetikler.
 
-**_setmode** , genellikle **stdin** ve **stdout**varsayılan çeviri modunu değiştirmek için kullanılır, ancak bunu herhangi bir dosya üzerinde kullanabilirsiniz. Bir akışın dosya tanımlayıcısına **_setmode** uygularsanız, akışta herhangi bir giriş veya çıkış işlemini gerçekleştirmeden önce **_setmode** çağırın.
+**_setmode** , genellikle **stdin** ve **stdout** varsayılan çeviri modunu değiştirmek için kullanılır, ancak bunu herhangi bir dosya üzerinde kullanabilirsiniz. Bir akışın dosya tanımlayıcısına **_setmode** uygularsanız, akışta herhangi bir giriş veya çıkış işlemini gerçekleştirmeden önce **_setmode** çağırın.
 
 > [!CAUTION]
 > Bir dosya akışına veri yazarsanız, modu değiştirmek için **_setmode** kullanmadan önce [fflush](fflush.md) kullanarak kodu açık olarak temizleyin. Kodu temizlemeyin, beklenmeyen davranışlarla karşılaşabilirsiniz. Akışa veri yazmadınız, kodu temizlemeyin.

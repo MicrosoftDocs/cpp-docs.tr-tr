@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: wctomb, _wctomb_l'
 title: wctomb, _wctomb_l
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
-ms.openlocfilehash: 0a95d61c50af5f49e69df8ae20efccfd3fb8ff5f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f49915d062aa602ab361084cbcc7a9a034599de2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910423"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136818"
 ---
 # <a name="wctomb-_wctomb_l"></a>wctomb, _wctomb_l
 
@@ -70,13 +71,13 @@ Geniş bir karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Wctomb** geniş karakteri çok baytlı bir karaktere dönüştürdüğünde, geniş karakter içindeki bayt sayısını ( **MB_CUR_MAX**olmayan) döndürür. *Wchar* , geniş karakterli null karakterdir (L ' \ 0 '), **wctomb** 1 döndürür. Hedef işaretçi *mbchar* değeri **null**ise, **wctomb** 0 döndürür. Dönüştürme geçerli yerel ayarda mümkün değilse, **wctomb** -1 döndürür ve **errno** , **eilseq**olarak ayarlanır.
+**Wctomb** geniş karakteri çok baytlı bir karaktere dönüştürdüğünde, geniş karakter içindeki bayt sayısını ( **MB_CUR_MAX** olmayan) döndürür. *Wchar* , geniş karakterli null karakterdir (L ' \ 0 '), **wctomb** 1 döndürür. Hedef işaretçi *mbchar* değeri **null** ise, **wctomb** 0 döndürür. Dönüştürme geçerli yerel ayarda mümkün değilse, **wctomb** -1 döndürür ve **errno** , **eilseq** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wctomb** işlevi, *wchar* bağımsız değişkenini karşılık gelen çok baytlı karaktere dönüştürür ve sonucu *mbchar*üzerinde depolar. İşlevi herhangi bir programda herhangi bir noktadan çağırabilirsiniz. **wctomb** , herhangi bir yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_wctomb_l** , bunun yerine geçirilen yerel ayarı kullanması dışında **wctomb** ile aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
+**Wctomb** işlevi, *wchar* bağımsız değişkenini karşılık gelen çok baytlı karaktere dönüştürür ve sonucu *mbchar* üzerinde depolar. İşlevi herhangi bir programda herhangi bir noktadan çağırabilirsiniz. **wctomb** , herhangi bir yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_wctomb_l** , bunun yerine geçirilen yerel ayarı kullanması dışında **wctomb** ile aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-**wctomb** , parametrelerini doğrular. *Mbchar* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
+**wctomb** , parametrelerini doğrular. *Mbchar* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -84,7 +85,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wctomb**|\<Stdlib. h>|
+|**wctomb**|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

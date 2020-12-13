@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3661'
 title: Derleyici hatası C3661
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3661
 ms.assetid: 50793fd1-1829-4b29-ad0d-094ef2068b43
-ms.openlocfilehash: 5edda7eaf50dc4fca60f47128dc97de5d3a1a395
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f8b0321b98d9f9fd89de926532177b9a000d2ce2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80200383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134322"
 ---
 # <a name="compiler-error-c3661"></a>Derleyici hatası C3661
 

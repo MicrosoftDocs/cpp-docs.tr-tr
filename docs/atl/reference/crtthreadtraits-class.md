@@ -1,5 +1,6 @@
 ---
-title: CRTThreadTraits Sınıfı
+description: 'Daha fazla bilgi edinin: Crtthreadnitelikler sınıfı'
+title: Crtthreadnitelikler sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CRTThreadTraits
@@ -10,21 +11,21 @@ helpviewer_keywords:
 - threading [ATL], creation functions
 - threading [ATL], CRT threads
 ms.assetid: eb6e20b0-c2aa-4170-8e34-aaeeacc86343
-ms.openlocfilehash: a7cfddc64e8c1b4e192e718d05812e385fbe08ed
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 30f9f435ad447a33d513379ceee0d254f48dfec8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81331028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140848"
 ---
-# <a name="crtthreadtraits-class"></a>CRTThreadTraits Sınıfı
+# <a name="crtthreadtraits-class"></a>Crtthreadnitelikler sınıfı
 
-Bu sınıf bir CRT iş parçacığı için oluşturma işlevini sağlar. Iş parçacığı CRT işlevlerini kullanacaksa bu sınıfı kullanın.
+Bu sınıf, bir CRT iş parçacığı için oluşturma işlevi sağlar. İş parçacığı CRT işlevlerini kullanacaksanız, bu sınıfı kullanın.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CRTThreadTraits
@@ -34,29 +35,29 @@ class CRTThreadTraits
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CRTThreadÖzellikleri::CreateThread](#createthread)|(Statik) CRT işlevlerini kullanabilen bir iş parçacığı oluşturmak için bu işlevi çağırın.|
+|[Crtthreadnitelikler:: CreateThread](#createthread)|Se CRT işlevleri kullanılabilecek bir iş parçacığı oluşturmak için bu işlevi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-İş parçacığı özellikleri, belirli bir iş parçacığı türü için oluşturma işlevi sağlayan sınıflardır. Oluşturma işlevi, Windows [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) işleviyle aynı imzaya ve anlambilime sahiptir.
+İş parçacığı nitelikleri, belirli bir iş parçacığı türü için oluşturma işlevi sağlayan sınıflardır. Oluşturma işlevi, Windows [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) işleviyle aynı imzaya ve semantiğe sahiptir.
 
-İş parçacığı özellikleri aşağıdaki sınıflar tarafından kullanılır:
+İş parçacığı nitelikleri aşağıdaki sınıflar tarafından kullanılır:
 
-- [Cthreadpool](../../atl/reference/cthreadpool-class.md)
+- [CThreadPool](../../atl/reference/cthreadpool-class.md)
 
 - [CWorkerThread](../../atl/reference/cworkerthread-class.md)
 
-İş parçacığı CRT işlevlerini kullanmıyorsa, bunun yerine [Win32ThreadTraits'ı](../../atl/reference/win32threadtraits-class.md) kullanın.
+İş parçacığı CRT işlevlerini kullanmayacak, bunun yerine [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md) kullanın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlbase.h
+**Üstbilgi:** atlbase. h
 
-## <a name="crtthreadtraitscreatethread"></a><a name="createthread"></a>CRTThreadÖzellikleri::CreateThread
+## <a name="crtthreadtraitscreatethread"></a><a name="createthread"></a> Crtthreadnitelikler:: CreateThread
 
-CRT işlevlerini kullanabilen bir iş parçacığı oluşturmak için bu işlevi çağırın.
+CRT işlevleri kullanılabilecek bir iş parçacığı oluşturmak için bu işlevi çağırın.
 
 ```
 static HANDLE CreateThread(
@@ -71,10 +72,10 @@ static HANDLE CreateThread(
 ### <a name="parameters"></a>Parametreler
 
 *lpsa*<br/>
-Yeni iş parçacığı için güvenlik öznitelikleri.
+Yeni iş parçacığının güvenlik öznitelikleri.
 
 *dwStackSize*<br/>
-Yeni iş parçacığı için yığın boyutu.
+Yeni iş parçacığının yığın boyutu.
 
 *pfnThreadProc*<br/>
 Yeni iş parçacığının iş parçacığı yordamı.
@@ -85,19 +86,19 @@ Yeni iş parçacığının iş parçacığı yordamı.
 *dwCreationFlags*<br/>
 Oluşturma bayrakları (0 veya CREATE_SUSPENDED).
 
-*pdwThreadId*<br/>
-[çıkış] DWORD değişkeninin adresi, başarı, yeni oluşturulan iş parçacığının iş parçacığı kimliğini alır.
+*Pdwthreadıd*<br/>
+dışı Başarılı olan DWORD değişkeninin adresi, yeni oluşturulan iş parçacığının iş parçacığı KIMLIĞINI alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Hata da yeni oluşturulan iş parçacığı veya NULL için tanıtıcı döndürür. Genişletilmiş hata bilgilerini almak için [GetLastError'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) arayın.
+Yeni oluşturulan iş parçacığına olan tanıtıcıyı veya hatada NULL değerini döndürür. Genişletilmiş hata bilgilerini almak için [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) 'yi çağırın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin parametreleri hakkında daha fazla bilgi için [CreateThread'e](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) bakın.
+Bu işleve yönelik parametreler hakkında daha fazla bilgi için bkz. [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) .
 
-Bu işlev iş parçacığı oluşturmak için [_beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) çağırır.
+Bu işlev, iş parçacığını oluşturmak için [_beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) çağırır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

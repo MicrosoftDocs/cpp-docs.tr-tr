@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __stosw'
 title: __stosw
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __stosw intrinsic
 - rep stosw instruction
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133
-ms.openlocfilehash: 5fd29bbf1aebba115670fc1bc35e0d8cbe29c7ad
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2995276fb255858d6c3dd9f438487726e75fdf1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143695"
 ---
 # <a name="__stosw"></a>__stosw
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bir depo dizesi yönergesi (`rep stosw`) oluşturur.
+Bir depo dizesi yönergesi ( `rep stosw` ) oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -48,7 +49,7 @@ dışı İşlemin hedefi.
 |---------------|------------------|
 |`__stosw`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

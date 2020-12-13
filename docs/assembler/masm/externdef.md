@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: EXTERNDEF'
 title: EXTERNDEF
 ms.date: 12/06/2019
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXTERNDEF directive
 ms.assetid: 95a10de6-c345-4428-a2f2-90f7d411dc86
-ms.openlocfilehash: 2cc5884a7473da9175a6b6af4b4251314deffeb4
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: b0ffc2154996fc7cea9f0b61917cadf7b776972f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75313398"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130331"
 ---
 # <a name="externdef"></a>EXTERNDEF
 
-Türü *tür*olan bir veya daha fazla dış değişken, etiket veya *ad adı* adlandırılan sembolleri tanımlar.
+Türü *tür* olan bir veya daha fazla dış değişken, etiket veya *ad adı* adlandırılan sembolleri tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **Externdef** ⟦*dil türü*⟧ *adı* __:__ *tür* ⟦ __,__ ⟦*dil-tür*⟧ *adı* __:__ *tür* ... ⟧
+> **Externdef** ⟦*dil türü*⟧ *adı*__:__*tür* ⟦__,__ ⟦*dil-tür*⟧ *adı*__:__*tür* ... ⟧
 
 ## <a name="remarks"></a>Açıklamalar
 

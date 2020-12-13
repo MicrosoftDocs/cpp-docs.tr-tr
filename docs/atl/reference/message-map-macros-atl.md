@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Ileti eşleme makroları (ATL)'
 title: İleti eşleme makroları (ATL)
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,12 +38,12 @@ f1_keywords:
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
-ms.openlocfilehash: 9917f31dbb115552cf9dc9bde24f7b6921611750
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5efe2a6b5aaeb2fbbf3cb5b54ce376ebf00c3b75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139080"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 
@@ -104,7 +105,7 @@ ALT_MSG_MAP(msgMapID)
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL her ileti eşlemini bir sayıyla tanımlar. Varsayılan ileti eşlemesi (BEGIN_MSG_MAP makrosu ile belirtilen) 0 ile tanımlanır. Alternatif bir ileti eşlemesi *msgMapID*tarafından tanımlanır.
+ATL her ileti eşlemini bir sayıyla tanımlar. Varsayılan ileti eşlemesi (BEGIN_MSG_MAP makrosu ile belirtilen) 0 ile tanımlanır. Alternatif bir ileti eşlemesi *msgMapID* tarafından tanımlanır.
 
 İleti haritaları bir pencereye gönderilen iletileri işlemek için kullanılır. Örneğin, [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) , kapsayan nesne içindeki bir ileti eşlemesinin tanımlayıcısını belirtmenize olanak tanır. [CContainedWindow:: WindowProc](ccontainedwindowt-class.md#windowproc) daha sonra içerilen pencerenin iletilerini uygun işleyici işlevine ya da başka bir ileti eşlemesine yönlendirmek için bu ileti haritasını kullanır. İşleyici işlevleri bildiren makroların bir listesi için bkz. [BEGIN_MSG_MAP](#begin_msg_map).
 
@@ -145,7 +146,7 @@ BEGIN_MSG_MAP(theClass)
 
 [CWindowImpl:: WindowProc](cwindowimpl-class.md#windowproc) , pencereye gönderilen iletileri işlemek için varsayılan ileti eşlemesini kullanır. İleti eşleme, iletileri uygun işleyici işlevine ya da başka bir ileti eşlemesine yönlendirir.
 
-Aşağıdaki makrolar bir iletiyi bir işleyici işlevine eşler. Bu işlev, bir *sınıf*içinde tanımlanmalıdır.
+Aşağıdaki makrolar bir iletiyi bir işleyici işlevine eşler. Bu işlev, bir *sınıf* içinde tanımlanmalıdır.
 
 |Makroya|Açıklama|
 |-----------|-----------------|
@@ -318,7 +319,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 
 ### <a name="remarks"></a>Açıklamalar
 
-CHAIN_MSG_MAP_DYNAMIC, çalışma zamanında iletileri başka bir nesnede varsayılan ileti eşlemesine yönlendirir. Nesnesi ve ileti eşlemesi, [Cdynamiczincirde:: SetChainEntry](cdynamicchain-class.md#setchainentry)aracılığıyla tanımladığınız *dynaChainID*ile ilişkilendirilir. CHAIN_MSG_MAP_DYNAMIC kullanabilmeniz için sınıfınızı ' den türetmeniz gerekir `CDynamicChain` . Bir örnek için, [Cdynamiczincirine](../../atl/reference/cdynamicchain-class.md) genel bakış bölümüne bakın.
+CHAIN_MSG_MAP_DYNAMIC, çalışma zamanında iletileri başka bir nesnede varsayılan ileti eşlemesine yönlendirir. Nesnesi ve ileti eşlemesi, [Cdynamiczincirde:: SetChainEntry](cdynamicchain-class.md#setchainentry)aracılığıyla tanımladığınız *dynaChainID* ile ilişkilendirilir. CHAIN_MSG_MAP_DYNAMIC kullanabilmeniz için sınıfınızı ' den türetmeniz gerekir `CDynamicChain` . Bir örnek için, [Cdynamiczincirine](../../atl/reference/cdynamicchain-class.md) genel bakış bölümüne bakın.
 
 > [!NOTE]
 > [BEGIN_MSG_MAP](#begin_msg_map)bir ileti eşlemesine her zaman başlayın. Daha sonra, ALT_MSG_MAP ile sonraki alternatif ileti eşlemelerini bildirebilirsiniz. [End_msg_map](#end_msg_map) makro ileti eşlemesinin sonunu işaretler. Her ileti eşlemesinin BEGIN_MSG_MAP ve END_MSG_MAP tam olarak bir örneği olmalıdır.
@@ -408,7 +409,7 @@ COMMAND_HANDLER(id, code, func)
 
 ### <a name="remarks"></a>Açıklamalar
 
-COMMAND_HANDLER, bildirim koduna ve denetim tanımlayıcısına göre [WM_COMMAND](/windows/win32/menurc/wm-command) bir iletiyi belirtilen işleyici işlevine eşler. Örnek:
+COMMAND_HANDLER, bildirim koduna ve denetim tanımlayıcısına göre [WM_COMMAND](/windows/win32/menurc/wm-command) bir iletiyi belirtilen işleyici işlevine eşler. Örneğin:
 
 [!code-cpp[NVC_ATL_Windowing#119](../../atl/codesnippet/cpp/message-map-macros-atl_6.h)]
 

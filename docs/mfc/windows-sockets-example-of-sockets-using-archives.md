@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Windows Yuvaları: arşivleri kullanarak yuvalar örneği'
 title: 'Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - examples [MFC], Windows Sockets
 - Windows Sockets [MFC], with archives
 ms.assetid: 2e3c9bb2-7e7b-4f28-8dc5-6cb7a484edac
-ms.openlocfilehash: 275a6c274648225fedcec9d42c280f77af68158e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 726df9093f71a7c72fc72794044a417c5425d2a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132932"
 ---
 # <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek
 

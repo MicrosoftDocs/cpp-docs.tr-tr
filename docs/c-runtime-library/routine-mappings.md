@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: rutin eşlemeler'
 title: Rutin Eşlemeler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - TCHAR.H data types, list of routine mappings
 - generic-text mappings
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
-ms.openlocfilehash: 245a44a6722bdf704a5ce750dd285eb3eac66609
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 22febc86d47ca435e9667015f1130b472e515946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444863"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136805"
 ---
 # <a name="routine-mappings"></a>Rutin Eşlemeler
 
-Genel metin yordam eşlemeleri TCHAR 'da tanımlanmıştır. Olsun. `_tccpy` ve `_tclen` MBCS modelindeki işlevlere eşleyin; Bunlar, daha fazla olması için SBCS ve Unicode modellerindeki makrolara veya satır içi işlevlere eşlenir. Genel bir metin yordamı hakkında daha fazla bilgi için, karşılık gelen `SBCS`, `_MBCS`-veya `_UNICODE`ilgili yordam hakkında yardım konusuna bakın.
+Genel metin yordam eşlemeleri TCHAR. H içinde tanımlanır. `_tccpy` ve `_tclen` MBCS modelindeki işlevlere eşleyin; bu değerler, daha fazla olması IÇIN SBCS ve Unicode modellerindeki makrolara veya satır içi işlevlere eşlenir. Genel bir metin yordamı hakkında daha fazla bilgi için, ilgili `SBCS` -, `_MBCS` -veya `_UNICODE` ile ilgili yordam hakkında yardım konusuna bakın.
 
-Aşağıdaki tabloda yer aldığı sol sütunda listelenen ayrı yordamlar hakkında daha ayrıntılı bilgiler bu belgelerde bulunmamaktadır. Bununla birlikte, ilgili `SBCS`, `_MBCS`veya `_UNICODE`ilgili bir yordamın üzerinde kolayca bilgi arayabilirsiniz. Aşağıda listelenen herhangi bir genel metin yordamını aramak için **Yardım** menüsündeki **Ara** komutunu kullanın.
+Aşağıdaki tabloda yer aldığı sol sütunda listelenen ayrı yordamlar hakkında daha ayrıntılı bilgiler bu belgelerde bulunmamaktadır. Ancak, ilgili `SBCS` ,, `_MBCS` veya ile ilgili bir yordam üzerinde bilgileri kolayca arayabilirsiniz `_UNICODE` . Aşağıda listelenen herhangi bir genel metin yordamını aramak için **Yardım** menüsündeki **Ara** komutunu kullanın.
 
 İlgili bilgiler için, bkz [. TCHAR 'Da genel metin eşlemeleri. H](../text/generic-text-mappings-in-tchar-h.md).
 
@@ -262,8 +263,8 @@ Aşağıdaki tabloda yer aldığı sol sütunda listelenen ayrı yordamlar hakk�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel Metin Eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
-[Veri Türü Eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>
-[Sabit ve Global Değişken Eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[Örnek Genel Metin Programı](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)
+[Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
+[Veri türü eşlemeleri](../c-runtime-library/data-type-mappings.md)<br/>
+[Sabit ve global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
+[Örnek bir Generic-Text programı](../c-runtime-library/a-sample-generic-text-program.md)<br/>
+[Generic-Text eşlemelerini kullanma](../c-runtime-library/using-generic-text-mappings.md)

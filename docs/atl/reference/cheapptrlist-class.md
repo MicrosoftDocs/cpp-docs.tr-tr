@@ -1,5 +1,6 @@
 ---
-title: CHeapPtrList Sınıfı
+description: 'Daha fazla bilgi edinin: CHeapPtrList sınıfı'
+title: CHeapPtrList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CHeapPtrList
@@ -8,19 +9,19 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtrList class
 ms.assetid: cc70e585-362a-4007-81db-c705eb181226
-ms.openlocfilehash: 0500ab8f76049aeaf1c89355ea5450a93243b734
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7e3a97280f7abcd4b7efebf6726ac062215912d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326867"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141602"
 ---
-# <a name="cheapptrlist-class"></a>CHeapPtrList Sınıfı
+# <a name="cheapptrlist-class"></a>CHeapPtrList sınıfı
 
-Bu sınıf, yığın işaretçileri listesini yaparken yararlı yöntemler sağlar.
+Bu sınıf, yığın işaretçileri listesi oluştururken yararlı yöntemler sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,20 +37,20 @@ class CHeapPtrList
 *E*<br/>
 Koleksiyon sınıfında depolanacak nesne türü.
 
-*Ayırıcı*<br/>
-Kullanılacak bellek ayırma sınıfı. Varsayılan [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)olduğunu.
+*Öğe*<br/>
+Kullanılacak bellek ayırma sınıfı. Varsayılan değer [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)' dir.
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CHeapPtrList::CHeapPtrList](#cheapptrlist)|Oluşturucu.|
+|[CHeapPtrList:: CHeapPtrList](#cheapptrlist)|Oluşturucu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf bir oluşturucu sağlar ve [catlList](../../atl/reference/catllist-class.md) ve [CHeapPtrElementTraits](../../atl/reference/cheapptrelementtraits-class.md) bir koleksiyon sınıfı nesne yığın işaretçileri depolama oluşturulmasına yardımcı olmak için yöntemler türetilmiştir.
+Bu sınıf, öbek işaretçilerini depolayan bir koleksiyon sınıfı nesnesinin oluşturulmasına yardımcı olmak için bir oluşturucu sağlar ve [CAtlList](../../atl/reference/catllist-class.md) ve [Cheapptrelementnitelikler](../../atl/reference/cheapptrelementtraits-class.md) 'ten Yöntemler türetiliyor.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -59,9 +60,9 @@ Bu sınıf bir oluşturucu sağlar ve [catlList](../../atl/reference/catllist-cl
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcoll.h
+**Üstbilgi:** atlcoll. h
 
-## <a name="cheapptrlistcheapptrlist"></a><a name="cheapptrlist"></a>CHeapPtrList::CHeapPtrList
+## <a name="cheapptrlistcheapptrlist"></a><a name="cheapptrlist"></a> CHeapPtrList:: CHeapPtrList
 
 Oluşturucu.
 
@@ -76,11 +77,11 @@ Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarının ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
+Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarının bir ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CAtlList Sınıfı](../../atl/reference/catllist-class.md)<br/>
-[CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
-[CHeapPtrElementTraits Sınıfı](../../atl/reference/cheapptrelementtraits-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[CAtlList sınıfı](../../atl/reference/catllist-class.md)<br/>
+[CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)<br/>
+[Cheapptrelementnitelikler sınıfı](../../atl/reference/cheapptrelementtraits-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

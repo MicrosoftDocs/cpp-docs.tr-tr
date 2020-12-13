@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComEnumOnSTL sınıfı'
 title: CComEnumOnSTL sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnumOnSTL class
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-ms.openlocfilehash: b0674d64b471318d972d209373e0d74af0fa77f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1ff73796d7e3eefa76cbecdeb6d997bede2d2be5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146672"
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL sınıfı
 
 Bu sınıf, bir C++ standart kitaplığı koleksiyonunu temel alan bir COM Numaralandırıcı nesnesi tanımlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <class Base,
@@ -49,7 +50,7 @@ C++ standart kitaplığı kapsayıcı sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComEnumOnSTL`C++ standart kitaplığı koleksiyonunu temel alan bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf, kendi içinde veya [ıollectiononstlımpl](../../atl/reference/icollectiononstlimpl-class.md)ile birlikte kullanılabilir. Bu sınıfı kullanmanın tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
+`CComEnumOnSTL` C++ standart kitaplığı koleksiyonunu temel alan bir COM Numaralandırıcı nesnesi tanımlar. Bu sınıf, kendi içinde veya [ıollectiononstlımpl](../../atl/reference/icollectiononstlimpl-class.md)ile birlikte kullanılabilir. Bu sınıfı kullanmanın tipik adımları aşağıda özetlenmiştir. Daha fazla bilgi için bkz. [atl koleksiyonları ve Numaralandırıcılar](../../atl/atl-collections-and-enumerators.md).
 
 ## <a name="to-use-this-class-with-icollectiononstlimpl"></a>Bu sınıfı ıollectiononstlımpl ile kullanmak için:
 

@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:. TFCOND
 title: .TFCOND
 ms.date: 12/16/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - .TFCOND directive
 ms.assetid: e3c0fe44-bf68-4397-bf31-61995c69c4c2
-ms.openlocfilehash: dab8fba2924cc152f0ac976b8469f3c80ba9f548
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 985d04eaf3241e18b0ba967f6e51acbc4a1cc712
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130981"
 ---
 # <a name="tfcond"></a>.TFCOND
 
 Yanlış koşullu blokların listesini değiştirir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **.TFCOND**
 

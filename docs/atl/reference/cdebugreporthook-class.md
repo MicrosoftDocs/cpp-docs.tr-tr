@@ -1,5 +1,6 @@
 ---
-title: CDebugReportHook Sınıfı
+description: 'Daha fazla bilgi edinin: CDebugReportHook sınıfı'
+title: CDebugReportHook sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDebugReportHook
@@ -13,18 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - CDebugReportHook class
 ms.assetid: 798076c3-6e63-4286-83b8-aa1bbcd0c20c
-ms.openlocfilehash: 8380556bbe007326156bf0ec0eefc23052e8e056
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0b26965114caefb8727a34b99a7cacb30c415aac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81747727"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141979"
 ---
-# <a name="cdebugreporthook-class"></a>CDebugReportHook Sınıfı
+# <a name="cdebugreporthook-class"></a>CDebugReportHook sınıfı
 
-Adlandırılmış bir boruya hata ayıklama raporları göndermek için bu sınıfı kullanın.
+Bir adlandırılmış kanala hata ayıklama raporları göndermek için bu sınıfı kullanın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDebugReportHook
@@ -34,36 +35,36 @@ class CDebugReportHook
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDebugReportHook::CDebugReportHook](#cdebugreporthook)|[SetPipeName,](#setpipename) [SetTimeout](#settimeout)ve [SetHook'u](#sethook)çağırır.|
-|[CDebugReportHook::~CDebugReportHook](#dtor)|[CDebugReportHook çağırır::RemoveHook](#removehook).|
+|[CDebugReportHook:: CDebugReportHook](#cdebugreporthook)|[Setpıename](#setpipename), [setTimeout](#settimeout)ve [SetHook](#sethook)çağırır.|
+|[CDebugReportHook:: ~ CDebugReportHook](#dtor)|[CDebugReportHook:: RemoveHook](#removehook)çağırır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDebugReportHook::CDebugReportHookProc](#cdebugreporthookproc)|(Statik) C çalışma zamanı hata ayıklama raporlama işlemine bağlanan özel raporlama işlevi.|
-|[CDebugReportHook::RemoveHook](#removehook)|Adlandırılmış pipe'ye hata ayıklama raporları göndermeyi durdurmak ve önceki rapor kancasını geri yüklemek için bu yöntemi arayın.|
-|[CDebugReportHook::SetHook](#sethook)|Adlandırılmış boruya hata ayıklama raporları göndermeye başlamak için bu yöntemi arayın.|
-|[CDebugReportHook::SetPipeName](#setpipename)|Hata ayıklama raporlarının göndereceği makineyi ve borunun adını ayarlamak için bu yöntemi arayın.|
-|[CDebugReportHook::SetTimeout](#settimeout)|Bu sınıfın adlandırılmış borunun kullanılabilir olmasını bekleyeceği milisaniye cinsinden zamanı ayarlamak için bu yöntemi arayın.|
+|[CDebugReportHook:: CDebugReportHookProc](#cdebugreporthookproc)|Se C çalışma zamanı hata ayıklama raporlama işlemine bağlanan özel raporlama işlevi.|
+|[CDebugReportHook:: RemoveHook](#removehook)|Adlandırılmış kanala hata ayıklama raporları gönderilmesini durdurmak ve önceki rapor kancasını geri yüklemek için bu yöntemi çağırın.|
+|[CDebugReportHook:: SetHook](#sethook)|Adlandırılmış kanala hata ayıklama raporları göndermeye başlamak için bu yöntemi çağırın.|
+|[CDebugReportHook:: Setpıename](#setpipename)|Hata ayıklama raporlarının gönderileceği kanalın makine ve adını ayarlamak için bu yöntemi çağırın.|
+|[CDebugReportHook:: SetTimeout](#settimeout)|Bu sınıfın adlandırılmış kanalın kullanılabilir hale gelmesini bekleyeceği süreyi milisaniye olarak ayarlamak için bu yöntemi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Adlandırılmış bir boş¶neme raporları göndermek için hizmet veya uygulamalarınızın hata ayıklama yapılarında bu sınıfın bir örneğini oluşturun. Hata ayıklama [raporları, _CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) çağırarak veya [ATLTRACE](debugging-and-error-reporting-macros.md#atltrace) ve [ATLASSERT](debugging-and-error-reporting-macros.md#atlassert) makroları gibi bu işlev için bir sarmalayıcı kullanılarak oluşturulur.
+Hata ayıklama raporlarını bir adlandırılmış kanala göndermek için, hizmetlerinizin veya uygulamalarınızın hata ayıklama yapılarında bu sınıfın bir örneğini oluşturun. Hata ayıklama raporları, [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) çağırarak veya [atltrace](debugging-and-error-reporting-macros.md#atltrace) ve [ATLASSERT](debugging-and-error-reporting-macros.md#atlassert) makroları gibi bu işlev için bir sarmalayıcı kullanılarak oluşturulur.
 
-Bu sınıfın kullanımı etkileşimli olmayan [pencere istasyonlarında](/windows/win32/winstation/window-stations)çalışan bileşenleri devre dışı hata ayıklama sağlar.
+Bu sınıfın kullanımı etkileşimli olmayan [pencere istasyonlarda](/windows/win32/winstation/window-stations)çalışan bileşenlere etkileşimli olarak hata ayıklamanıza olanak tanır.
 
-Hata ayıklama raporlarının iş parçacığının temel güvenlik bağlamı kullanılarak gönderildiğini unutmayın. Web uygulamaları gibi düşük ayrıcalıklı kullanıcıların kimliğe bürünme gerçekleştiği durumlarda hata ayıklama raporlarının görüntülenebileceği için kimliğe bürünme geçici olarak devre dışı bırakılır.
+Hata ayıklama raporlarının, iş parçacığının temel güvenlik bağlamı kullanılarak gönderildiğini unutmayın. Kimliğe bürünme geçici olarak devre dışı bırakılmıştır, böylece hata ayıklama raporlarının, Web uygulamalarında olduğu gibi düşük ayrıcalıklı kullanıcıların kimliğe bürünme durumunda görüntülenebilmesini sağlayabilirsiniz.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlutil.h
+**Üstbilgi:** atlutil. h
 
-## <a name="cdebugreporthookcdebugreporthook"></a><a name="cdebugreporthook"></a>CDebugReportHook::CDebugReportHook
+## <a name="cdebugreporthookcdebugreporthook"></a><a name="cdebugreporthook"></a> CDebugReportHook:: CDebugReportHook
 
-[SetPipeName,](#setpipename) [SetTimeout](#settimeout)ve [SetHook'u](#sethook)çağırır.
+[Setpıename](#setpipename), [setTimeout](#settimeout)ve [SetHook](#sethook)çağırır.
 
 ```
 CDebugReportHook(
@@ -75,23 +76,23 @@ CDebugReportHook(
 ### <a name="parameters"></a>Parametreler
 
 *szMachineName*<br/>
-Hata ayıklama çıkışının gönderilmesi gereken makinenin adı. Varsayılan olarak yerel makine için.
+Hata ayıklama çıktısının gönderilmesi gereken makinenin adı. Yerel makinenin varsayılan değeri.
 
-*szPipeName*<br/>
-Hata ayıklama çıkışının gönderilmesi gereken adlandırılmış borunun adı.
+*Szpıename*<br/>
+Hata ayıklama çıktısının gönderilmesi gereken adlandırılmış kanalın adı.
 
 *dwTimeout*<br/>
-Bu sınıfın adlandırılmış borunun kullanılabilir olmasını bekleyeceği milisaniye cinsinden süre.
+Bu sınıfın adlandırılmış kanalın kullanılabilir hale gelmesi için bekleyeceği süre (milisaniye olarak).
 
-## <a name="cdebugreporthookcdebugreporthook"></a><a name="dtor"></a>CDebugReportHook::~CDebugReportHook
+## <a name="cdebugreporthookcdebugreporthook"></a><a name="dtor"></a> CDebugReportHook:: ~ CDebugReportHook
 
-[CDebugReportHook çağırır::RemoveHook](#removehook).
+[CDebugReportHook:: RemoveHook](#removehook)çağırır.
 
 ```
 ~CDebugReportHook() throw();
 ```
 
-## <a name="cdebugreporthookcdebugreporthookproc"></a><a name="cdebugreporthookproc"></a>CDebugReportHook::CDebugReportHookProc
+## <a name="cdebugreporthookcdebugreporthookproc"></a><a name="cdebugreporthookproc"></a> CDebugReportHook:: CDebugReportHookProc
 
 C çalışma zamanı hata ayıklama raporlama işlemine bağlanan özel raporlama işlevi.
 
@@ -104,28 +105,28 @@ static int __cdecl CDebugReportHookProc(
 
 ### <a name="parameters"></a>Parametreler
 
-*Reporttype*<br/>
+*reportType*<br/>
 Raporun türü (_CRT_WARN, _CRT_ERROR veya _CRT_ASSERT).
 
 *İleti*<br/>
 İleti dizesi.
 
-*Returnvalue*<br/>
+*returnValue*<br/>
 [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)tarafından döndürülmesi gereken değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Kanca, söz konusu iletiyi tamamen işlerse, başka bir raporlama gerektirmemesi için FALSE'u döndürür. İletiyi `_CrtDbgReport` normal şekilde bildirmesi gerekiyorsa TRUE döndürür.
+Kanca, söz konusu iletiyi başka bir raporlama gerekli olmayacak şekilde tamamen işlediğinde yanlış döndürür. `_CrtDbgReport`İletiyi normal şekilde raporlemelidir, doğru değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Raporlama işlevi, adlandırılmış boruyu açmaya ve diğer uçtaki işlemle iletişim kurmaya çalışır. Boru meşgulse, raporlama işlevi boru boşalana veya zaman aşımı süresi dolana kadar bekler. Zaman acısı oluşturucu veya [CDebugReportHook::SetTimeout](#settimeout)için bir çağrı tarafından ayarlanabilir.
+Raporlama işlevi, adlandırılmış kanalı açmaya çalışır ve diğer uçtaki işlemle iletişim kurar. Kanal meşgulse, raporlama işlevi kanal boşalıncaya veya zaman aşımı süresi dolana kadar bekler. Zaman aşımı, Oluşturucu veya [CDebugReportHook:: setTimeout](#settimeout)çağrısıyla ayarlanabilir.
 
-Bu işlevdeki kod, arama iş parçacığının temel güvenlik bağlamında yürütülür, diğer bir deyişle, kimliğe bürünme bu işlev süresince devre dışı bırakılır.
+Bu işlevdeki kod, çağıran iş parçacığının temel güvenlik bağlamında yürütülür, diğer bir deyişle, kimliğe bürünme bu işlevin süresi boyunca devre dışı bırakılır.
 
-## <a name="cdebugreporthookremovehook"></a><a name="removehook"></a>CDebugReportHook::RemoveHook
+## <a name="cdebugreporthookremovehook"></a><a name="removehook"></a> CDebugReportHook:: RemoveHook
 
-Adlandırılmış pipe'ye hata ayıklama raporları göndermeyi durdurmak ve önceki rapor kancasını geri yüklemek için bu yöntemi arayın.
+Adlandırılmış kanala hata ayıklama raporları gönderilmesini durdurmak ve önceki rapor kancasını geri yüklemek için bu yöntemi çağırın.
 
 ```cpp
 void RemoveHook() throw();
@@ -135,9 +136,9 @@ void RemoveHook() throw();
 
 Önceki rapor kancasını geri yüklemek için [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) çağırır.
 
-## <a name="cdebugreporthooksethook"></a><a name="sethook"></a>CDebugReportHook::SetHook
+## <a name="cdebugreporthooksethook"></a><a name="sethook"></a> CDebugReportHook:: SetHook
 
-Adlandırılmış boruya hata ayıklama raporları göndermeye başlamak için bu yöntemi arayın.
+Adlandırılmış kanala hata ayıklama raporları göndermeye başlamak için bu yöntemi çağırın.
 
 ```cpp
 void SetHook() throw();
@@ -145,11 +146,11 @@ void SetHook() throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CDebugReportHookProc](#cdebugreporthookproc) üzerinden adlandırılmış boruya yönlendirilen hata ayıklama raporlarının [_CrtSetReportHook2.](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) Bu sınıf, [RemoveHook](#removehook) çağrıldığında geri yüklenebilmeleri için önceki rapor kancasını izler.
+Adlandırılmış kanala [CDebugReportHookProc](#cdebugreporthookproc) aracılığıyla yönlendirilen hata ayıklama raporlarının [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) çağırır. Bu sınıf, [RemoveHook](#removehook) çağrıldığında geri yüklenebilmesi için önceki rapor kancasını izler.
 
-## <a name="cdebugreporthooksetpipename"></a><a name="setpipename"></a>CDebugReportHook::SetPipeName
+## <a name="cdebugreporthooksetpipename"></a><a name="setpipename"></a> CDebugReportHook:: Setpıename
 
-Hata ayıklama raporlarının göndereceği makineyi ve borunun adını ayarlamak için bu yöntemi arayın.
+Hata ayıklama raporlarının gönderileceği kanalın makine ve adını ayarlamak için bu yöntemi çağırın.
 
 ```
 BOOL SetPipeName(
@@ -160,18 +161,18 @@ BOOL SetPipeName(
 ### <a name="parameters"></a>Parametreler
 
 *szMachineName*<br/>
-Hata ayıklama çıkışının gönderilmesi gereken makinenin adı.
+Hata ayıklama çıktısının gönderilmesi gereken makinenin adı.
 
-*szPipeName*<br/>
-Hata ayıklama çıkışının gönderilmesi gereken adlandırılmış borunun adı.
+*Szpıename*<br/>
+Hata ayıklama çıktısının gönderilmesi gereken adlandırılmış kanalın adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarı doğru döndürür, başarısızlık false.
+Başarılı olduğunda TRUE, hatada FALSE döndürür.
 
-## <a name="cdebugreporthooksettimeout"></a><a name="settimeout"></a>CDebugReportHook::SetTimeout
+## <a name="cdebugreporthooksettimeout"></a><a name="settimeout"></a> CDebugReportHook:: SetTimeout
 
-Bu sınıfın adlandırılmış borunun kullanılabilir olmasını bekleyeceği milisaniye cinsinden zamanı ayarlamak için bu yöntemi arayın.
+Bu sınıfın adlandırılmış kanalın kullanılabilir hale gelmesini bekleyeceği süreyi milisaniye olarak ayarlamak için bu yöntemi çağırın.
 
 ```cpp
 void SetTimeout(DWORD dwTimeout);
@@ -180,7 +181,7 @@ void SetTimeout(DWORD dwTimeout);
 ### <a name="parameters"></a>Parametreler
 
 *dwTimeout*<br/>
-Bu sınıfın adlandırılmış borunun kullanılabilir olmasını bekleyeceği milisaniye cinsinden süre.
+Bu sınıfın adlandırılmış kanalın kullanılabilir hale gelmesi için bekleyeceği süre (milisaniye olarak).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

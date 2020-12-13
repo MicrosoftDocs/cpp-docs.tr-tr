@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: wcstombs, _wcstombs_l'
 title: wcstombs, _wcstombs_l
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 91234252-9ea1-423a-af99-e9d0ce4a40e3
-ms.openlocfilehash: 33c7554f1ab5c9822a1908a4b50d0ee0764615ae
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 070ba4dbf574ccd6b1afaec074dc9eb9f311e728
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910632"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136844"
 ---
 # <a name="wcstombs-_wcstombs_l"></a>wcstombs, _wcstombs_l
 
@@ -92,17 +93,17 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**Wcstombs** çok baytlı dizeyi başarıyla dönüştürdüğünde, Sonlandırıcı null (varsa) hariç olmak üzere çok baytlı çıkış dizesine yazılan bayt sayısını döndürür. *Mbstr* bağımsız değişkeni **null**ise, **wcstombs** , hedef dizenin bayt cinsinden gereken boyutunu döndürür. **Wcstombs** , çok baytlı bir karaktere dönüştüremediği geniş bir karakterle karşılaşırsa, **size_t** türüne-1 atama döndürür ve **errno** 'u **eilseq**olarak ayarlar.
+**Wcstombs** çok baytlı dizeyi başarıyla dönüştürdüğünde, Sonlandırıcı null (varsa) hariç olmak üzere çok baytlı çıkış dizesine yazılan bayt sayısını döndürür. *Mbstr* bağımsız değişkeni **null** ise, **wcstombs** , hedef dizenin bayt cinsinden gereken boyutunu döndürür. **Wcstombs** , çok baytlı bir karaktere dönüştüremediği geniş bir karakterle karşılaşırsa, **size_t** türüne-1 atama döndürür ve **errno** 'u **eilseq** olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wcstombs** işlevi, *wcstr* tarafından işaret edilen geniş karakterli dizeyi karşılık gelen çok baytlı karakterlere dönüştürür ve sonuçları *mbstr* dizisinde depolar. *Count* parametresi, çok baytlı çıkış dizesinde depolanabilecek en fazla bayt sayısını (yani *mbstr*boyutunu) gösterir. Genel olarak, geniş karakterli bir dize dönüştürülürken kaç baytın gerekli olacağını bilinen değildir. Bazı geniş karakterler çıktı dizesinde yalnızca bir bayt gerektirir; diğerleri iki gerektirir. Giriş dizesindeki her geniş karakter için çok baytlı çıkış dizesinde iki bayt varsa (geniş karakter null değeri dahil), sonucun sığması garanti edilir.
+**Wcstombs** işlevi, *wcstr* tarafından işaret edilen geniş karakterli dizeyi karşılık gelen çok baytlı karakterlere dönüştürür ve sonuçları *mbstr* dizisinde depolar. *Count* parametresi, çok baytlı çıkış dizesinde depolanabilecek en fazla bayt sayısını (yani *mbstr* boyutunu) gösterir. Genel olarak, geniş karakterli bir dize dönüştürülürken kaç baytın gerekli olacağını bilinen değildir. Bazı geniş karakterler çıktı dizesinde yalnızca bir bayt gerektirir; diğerleri iki gerektirir. Giriş dizesindeki her geniş karakter için çok baytlı çıkış dizesinde iki bayt varsa (geniş karakter null değeri dahil), sonucun sığması garanti edilir.
 
 **Wcstombs** geniş karakter null karakteriyle (L ' \ 0 ') karşılaşırsa veya bu *sayı* gerçekleştiğinde, bunu 8 bit 0 değerine dönüştürür ve duraklar. Bu nedenle, *mbstr* konumundaki çok baytlı karakter dizesi, dönüştürme sırasında yalnızca **wcstomb** bir geniş karakter null karakteriyle karşılaştığında null olarak sonlandırılır. *Wcstr* ve *mbstr* tarafından işaret edilen diziler çakışırsa, **wcstombs** davranışı tanımsızdır.
 
-*Mbstr* bağımsız değişkeni **null**ise, **wcstombs** , hedef dizenin bayt cinsinden gereken boyutunu döndürür.
+*Mbstr* bağımsız değişkeni **null** ise, **wcstombs** , hedef dizenin bayt cinsinden gereken boyutunu döndürür.
 
-**wcstombs** , parametrelerini doğrular. *Wcstr* **null**ise veya *sayı* **INT_MAX**değerinden büyükse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
+**wcstombs** , parametrelerini doğrular. *Wcstr* **null** ise veya *sayı* **INT_MAX** değerinden büyükse, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **errno** ' ı **EINVAL** olarak ayarlar ve-1 döndürür.
 
 **wcstombs** , yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_wcstombs_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -114,8 +115,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wcstombs**|\<Stdlib. h>|
-|**_wcstombs_l**|\<Stdlib. h>|
+|**wcstombs**|\<stdlib.h>|
+|**_wcstombs_l**|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

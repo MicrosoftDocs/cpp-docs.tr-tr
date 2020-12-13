@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: wctomb_s _wctomb_s_l'
 title: wctomb_s, _wctomb_s_l
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 7e94a888-deed-4dbd-b5e9-d4a0455538b8
-ms.openlocfilehash: 63839f70fa334fadd961eb173343d1b406268cfd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 845bdd5fff74e24226700b1f233ccf1e29afc27e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136831"
 ---
 # <a name="wctomb_s-_wctomb_s_l"></a>wctomb_s, _wctomb_s_l
 
@@ -73,7 +74,7 @@ Bayt sayısı veya sonucu gösteren bir kod.
 Çok baytlı bir karakterin adresi.
 
 *sizeInBytes*<br/>
-*Mbchar*arabelleğinin boyutu.
+*Mbchar* arabelleğinin boyutu.
 
 *wchar*<br/>
 Geniş bir karakter.
@@ -90,16 +91,16 @@ Hata koşulları
 |*mbchar*|*sizeInBytes*|Döndürülen değer|*pRetValue*|
 |--------------|-------------------|------------------|-----------------|
 |**DEĞER**|>0|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|>**INT_MAX**|**EıNVAL**|değiştirilmedi|
-|kaydedilmemiş|çok küçük|**EıNVAL**|değiştirilmedi|
+|herhangi biri|>**INT_MAX**|**EıNVAL**|değiştirilmedi|
+|herhangi biri|çok küçük|**EıNVAL**|değiştirilmedi|
 
-Yukarıdaki hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **wctomb** , **EINVAL** döndürür ve **errno** değerini **EINVAL**olarak ayarlar.
+Yukarıdaki hata koşullarından herhangi biri oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa **wctomb** , **EINVAL** döndürür ve **errno** değerini **EINVAL** olarak ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wctomb_s** işlevi, *wchar* bağımsız değişkenini karşılık gelen çok baytlı karaktere dönüştürür ve sonucu *mbchar*üzerinde depolar. İşlevi herhangi bir programda herhangi bir noktadan çağırabilirsiniz.
+**Wctomb_s** işlevi, *wchar* bağımsız değişkenini karşılık gelen çok baytlı karaktere dönüştürür ve sonucu *mbchar* üzerinde depolar. İşlevi herhangi bir programda herhangi bir noktadan çağırabilirsiniz.
 
-**Wctomb_s** geniş karakteri çok baytlı bir karaktere dönüştürdüğünde, geniş karakter içindeki bayt sayısını ( **MB_CUR_MAX**olmayan) *pRetValue*tarafından işaret edilen tamsayıya koyar. *Wchar* , geniş karakterli null karakterdir (L ' \ 0 '), **Wctomb_s** *pRetValue değerini* 1 olarak doldurur. Hedef işaretçi *mbchar* değeri **NULL**Ise, **wctomb_s** *pRetValue*içine 0 koyar. Dönüştürme geçerli yerel ayarda mümkün değilse, **Wctomb_s** *pRetValue*'da-1 koyar.
+**Wctomb_s** geniş karakteri çok baytlı bir karaktere dönüştürdüğünde, geniş karakter içindeki bayt sayısını ( **MB_CUR_MAX** olmayan) *pRetValue* tarafından işaret edilen tamsayıya koyar. *Wchar* , geniş karakterli null karakterdir (L ' \ 0 '), **Wctomb_s** *pRetValue değerini* 1 olarak doldurur. Hedef işaretçi *mbchar* değeri **NULL** Ise, **wctomb_s** *pRetValue* içine 0 koyar. Dönüştürme geçerli yerel ayarda mümkün değilse, **Wctomb_s** *pRetValue*'da-1 koyar.
 
 **wctomb_s** , yerel ayara bağımlı bilgiler için geçerli yerel ayarı kullanır; **_wctomb_s_l** , bunun yerine geçirilen yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -109,8 +110,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wctomb_s**|\<Stdlib. h>|
-|**_wctomb_s_l**|\<Stdlib. h>|
+|**wctomb_s**|\<stdlib.h>|
+|**_wctomb_s_l**|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

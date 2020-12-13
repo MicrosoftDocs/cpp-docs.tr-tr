@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __stosq'
 title: __stosq
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - stosq instruction
 - __stosq intrinsic
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
-ms.openlocfilehash: 8b347d595da4cdbf1fefb6244940e262981671e9
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5fce587c163da18679750c20ec697c489ecf5d90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219957"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143708"
 ---
 # <a name="__stosq"></a>__stosq
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-Bir depo dizesi yönergesi (`rep stosq`) oluşturur.
+Bir depo dizesi yönergesi ( `rep stosq` ) oluşturur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,9 +47,9 @@ dışı İşlemin hedefi.
 
 |Alanlarla|Mimari|
 |---------------|------------------|
-|`__stosq`|AMD64|
+|`__stosq`|'TÜR|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

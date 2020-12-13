@@ -1,5 +1,6 @@
 ---
-title: CDefaultElementTraits sınıfı
+description: 'Daha fazla bilgi edinin: Cdefaultelementnitelikler sınıfı'
+title: Cdefaultelementnitelikler sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDefaultElementTraits
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultElementTraits class
 ms.assetid: ac5ee610-7957-4b7c-92b6-38ff72e4118e
-ms.openlocfilehash: 0ee076af5fc4a1c2145162ac510b3a4460e251e0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f4dd1bae67ef626ef793ecee946d88879a07f194
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62245940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141901"
 ---
-# <a name="cdefaultelementtraits-class"></a>CDefaultElementTraits sınıfı
+# <a name="cdefaultelementtraits-class"></a>Cdefaultelementnitelikler sınıfı
 
 Bu sınıf, bir koleksiyon sınıfı için varsayılan yöntemleri ve işlevleri sağlar.
 
@@ -34,14 +35,14 @@ Koleksiyonda depolanacak veri türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf, taşıma, kopyalama, karşılaştırma ve bir koleksiyon sınıfı nesnesinde depolanan karma öğeleri için varsayılan statik işlevler ve yöntemleri sağlar. Bu sınıf, yöntemleri ve işlevleri türetilen [CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md), [CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md), ve [CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)ve tarafından kullanılan [ CElementTraits](../../atl/reference/celementtraits-class.md), [CPrimitiveElementTraits](../../atl/reference/cprimitiveelementtraits-class.md), ve [CHeapPtrElementTraits](../../atl/reference/cheapptrelementtraits-class.md).
+Bu sınıf, bir koleksiyon sınıfı nesnesinde depolanan öğeleri taşımak, kopyalamak, karşılaştırmak ve karma yapmak için varsayılan statik işlevleri ve yöntemleri sağlar. Bu sınıf, [CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md), [CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)ve [cdefaultcomparetkits](../../atl/reference/cdefaultcomparetraits-class.md)'In Işlevlerini ve yöntemlerini türetir ve [celementnitelikler](../../atl/reference/celementtraits-class.md), [Cprimitiveelementnitelikler](../../atl/reference/cprimitiveelementtraits-class.md)ve [cheapptrelementnitelikler](../../atl/reference/cheapptrelementtraits-class.md)tarafından kullanılır.
 
-Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+Daha fazla bilgi için bkz. [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcoll.h
+**Üstbilgi:** atlcoll. h
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComObject Class'
 title: CComObject sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,18 +13,18 @@ f1_keywords:
 helpviewer_keywords:
 - CComObject class
 ms.assetid: e2b6433b-6349-4749-b4bc-acbd7a22c8b0
-ms.openlocfilehash: 81246ad8bd6281d0b7578932cd431609a1ec4ac5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 086383172d5bb239bbac8ed90e9118838aea1254
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224259"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146529"
 ---
 # <a name="ccomobject-class"></a>CComObject sınıfı
 
 Bu sınıf, `IUnknown` toplanmayan bir nesne için uygular.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template<class Base>
@@ -55,7 +56,7 @@ Sınıfınız, [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) vey
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CComObject`toplanmayan bir nesne için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygular. Bununla birlikte,, ve ' a yönelik çağrılar `QueryInterface` `AddRef` `Release` için atanır `CComObjectRootEx` .
+`CComObject` toplanmayan bir nesne için [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygular. Bununla birlikte,, ve ' a yönelik çağrılar `QueryInterface` `AddRef` `Release` için atanır `CComObjectRootEx` .
 
 Kullanma hakkında daha fazla bilgi için `CComObject` , [atl com nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)makalesine bakın.
 
@@ -69,7 +70,7 @@ Kullanma hakkında daha fazla bilgi için `CComObject` , [atl com nesnelerinin t
 
 **Üstbilgi:** atlcom. h
 
-## <a name="ccomobjectaddref"></a><a name="addref"></a>CComObject:: AddRef
+## <a name="ccomobjectaddref"></a><a name="addref"></a> CComObject:: AddRef
 
 Nesnedeki başvuru sayısını artırır.
 
@@ -81,7 +82,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 Bu işlev, nesnedeki yeni artan başvuru sayısını döndürür. Bu değer tanılama veya test için yararlı olabilir.
 
-## <a name="ccomobjectccomobject"></a><a name="ccomobject"></a>CComObject:: CComObject
+## <a name="ccomobjectccomobject"></a><a name="ccomobject"></a> CComObject:: CComObject
 
 Oluşturucu modül kilit sayısını artırır.
 
@@ -100,7 +101,7 @@ Yıkıcı onu azaltır.
 
 Türetilmiş bir `CComObject` nesne işleci kullanılarak başarıyla oluşturulursa **`new`** , ilk başvuru sayısı 0 ' dır. Başvuru sayısını uygun değere (1) ayarlamak için [AddRef](#addref) işlevine bir çağrı yapın.
 
-## <a name="ccomobjectccomobject"></a><a name="dtor"></a>CComObject:: ~ CComObject
+## <a name="ccomobjectccomobject"></a><a name="dtor"></a> CComObject:: ~ CComObject
 
 Yok edicisi.
 
@@ -112,9 +113,9 @@ CComObject();
 
 Ayrılan tüm kaynakları serbest bırakır, [sonlandırmayı](ccomobjectrootex-class.md#finalrelease)çağırır ve modül kilit sayısını azaltır.
 
-## <a name="ccomobjectcreateinstance"></a><a name="createinstance"></a>CComObject:: CreateInstance
+## <a name="ccomobjectcreateinstance"></a><a name="createinstance"></a> CComObject:: CreateInstance
 
-Bu statik işlev **CComObject<** `Base` **>** , [Cocreateınstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)'ın ek yükü olmadan yeni bir CComObject<nesnesi oluşturmanıza olanak sağlar.
+Bu statik işlev  `Base` **>** , [Cocreateınstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)'ın ek yükü olmadan yeni bir CComObject<nesnesi oluşturmanıza olanak sağlar.
 
 ```
 static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
@@ -141,7 +142,7 @@ Nesneye doğrudan erişmeniz gerekmiyorsa ancak ek yükü olmadan yeni bir nesne
 
 [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]
 
-## <a name="ccomobjectqueryinterface"></a><a name="queryinterface"></a>CComObject:: QueryInterface
+## <a name="ccomobjectqueryinterface"></a><a name="queryinterface"></a> CComObject:: QueryInterface
 
 İstenen arabirim için bir işaretçi alır.
 
@@ -157,7 +158,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 'ndaki İstenen arabirimin tanımlayıcısı.
 
 *ppvObject*<br/>
-dışı *IID*tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObject* null olarak ayarlanır.
+dışı *IID* tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi. Nesne bu arabirimi desteklemiyorsa, *ppvObject* null olarak ayarlanır.
 
 *Sy*<br/>
 dışı Tür tarafından tanımlanan arabirim işaretçisine yönelik bir işaretçi `Q` . Nesne bu arabirimi desteklemiyorsa, *PP* değeri null olarak ayarlanır.
@@ -166,7 +167,7 @@ dışı Tür tarafından tanımlanan arabirim işaretçisine yönelik bir işare
 
 Standart bir HRESULT değeri.
 
-## <a name="ccomobjectrelease"></a><a name="release"></a>CComObject:: Release
+## <a name="ccomobjectrelease"></a><a name="release"></a> CComObject:: Release
 
 Nesnedeki başvuru sayısını azaltır.
 

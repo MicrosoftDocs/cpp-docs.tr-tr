@@ -1,4 +1,5 @@
 ---
+description: Hakkında daha fazla bilgi edinin:. CREF
 title: .CREF
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - .CREF directive
 ms.assetid: 5bfb4f95-0a3f-4039-af29-f745039c92c1
-ms.openlocfilehash: 41ec13ad65a1674ecfc2e7de033b28e1c20e1142
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: f184e763c139d55a31a9ec13b4d6fd59905dd824
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75314113"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132229"
 ---
 # <a name="cref"></a>.CREF
 
 Sembol tablosu ve tarayıcı dosyasının sembol bölümünde sembol listesini sunar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **.CREF**
 
