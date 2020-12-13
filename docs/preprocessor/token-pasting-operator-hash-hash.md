@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: belirteç yapıştırma işleci (# #)'
 title: Belirteç yapıştıran işleç (##)
 ms.date: 08/29/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - preprocessor, operators
 - '## preprocessor operator'
 ms.assetid: 4f173503-990f-4bff-aef3-ec4d1f1458ef
-ms.openlocfilehash: 4bf1b8c8f56ab9375503c9e8fb6a906706fc70bb
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 3bad0a615fdf7c0b3e1e54d16c25e37bf495072c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218111"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149675"
 ---
 # <a name="token-pasting-operator-"></a>Belirteç yapıştıran işleç (##)
 
-Bazen *birleştirme* veya *birleştirme* operatörü olarak adlandırılan çift sayı işareti veya *belirteç yapıştırma* işleci ( **##** ), nesne benzeri ve işlev benzeri makrolarda kullanılır. Ayrı belirteçlerin tek bir belirtece katılmasını sağlar ve bu nedenle makro tanımındaki ilk veya son belirteç olamaz.
+Bazen birleştirme veya birleştirme operatörü olarak adlandırılan çift sayı işareti veya *belirteç yapıştırma* işleci ( **##** ), nesne benzeri  ve işlev  benzeri makrolarda kullanılır. Ayrı belirteçlerin tek bir belirtece katılmasını sağlar ve bu nedenle makro tanımındaki ilk veya son belirteç olamaz.
 
 Makro tanımında biçimsel bir parametrenin öncesinde veya sonrasında belirteci yapıştırma işleci gelirse, biçimsel parametre hemen genişletilmeyen gerçek bağımsız değişken ile değiştirilir. Makro genişletme, değiştirme işleminden önce bağımsız değişken üzerinde gerçekleştirilmez.
 
@@ -67,4 +68,4 @@ token9 = 9
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Önişlemci işleçleri](../preprocessor/preprocessor-operators.md)
+[Ön işlemci işleçleri](../preprocessor/preprocessor-operators.md)

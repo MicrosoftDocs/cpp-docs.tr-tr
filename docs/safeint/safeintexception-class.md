@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SafeIntException sınıfı'
 title: SafeIntException Sınıfı
 ms.date: 10/22/2018
 ms.topic: reference
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - SafeIntException class
 - SafeIntException, constructor
 ms.assetid: 88bef958-1f48-4d55-ad4f-d1f9581a293a
-ms.openlocfilehash: 8149a5e1216e26fafc1e0cd4a489cdad0551607c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6a7be21b0dfa42a23ba60eac7eb3f4ebbf1629ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615416"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149584"
 ---
 # <a name="safeintexception-class"></a>SafeIntException Sınıfı
 
@@ -25,7 +26,7 @@ ms.locfileid: "84615416"
 > [!NOTE]
 > Bu kitaplığın en son sürümü konumunda bulunur [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt) .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class SafeIntException;
@@ -35,7 +36,7 @@ class SafeIntException;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-Name                                                    | Açıklama
+Ad                                                    | Açıklama
 ------------------------------------------------------- | ------------------------------------
 [SafeIntException::SafeIntException](#safeintexception) | Bir `SafeIntException` nesnesi oluşturur.
 
@@ -53,7 +54,7 @@ Name                                                    | Açıklama
 
 **Ad alanı:** MSL:: Utilities
 
-## <a name="safeintexceptionsafeintexception"></a><a name="safeintexception"></a>SafeIntException:: SafeIntException
+## <a name="safeintexceptionsafeintexception"></a><a name="safeintexception"></a> SafeIntException:: SafeIntException
 
 Bir `SafeIntException` nesnesi oluşturur.
 

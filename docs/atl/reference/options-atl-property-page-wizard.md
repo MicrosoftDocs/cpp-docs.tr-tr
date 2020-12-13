@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: seçenekler, ATL Özellik sayfası Sihirbazı'
 title: Seçenekler, ATL Özellik sayfası Sihirbazı
 ms.date: 05/09/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-ms.openlocfilehash: 74cf72feedd8dc8e1186d54a8abe840195964620
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: ea7508f49e48c2ef1387fb4b48b816f4e16cdb99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92923664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139002"
 ---
 # <a name="options-atl-property-page-wizard"></a>Seçenekler, ATL Özellik sayfası Sihirbazı
 

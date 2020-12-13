@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları uyarısı LNK4210'
 title: Bağlayıcı Araçları Uyarısı LNK4210
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,38 +7,38 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4210
 ms.assetid: db48cff8-a2be-4a77-8d03-552b42c228fa
-ms.openlocfilehash: 75376129ce0033c717a4da3074cee9de132d357d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7634952df026dc664aed2a2f9625a7380b3a38b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395072"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150611"
 ---
 # <a name="linker-tools-warning-lnk4210"></a>Bağlayıcı Araçları Uyarısı LNK4210
 
-> bölüm *bölümü* var; statik başlatıcılar veya sonlandırıcılar var. işlenmemiş
+> bölüm *bölümü* var; işlenmemiş statik başlatıcılar veya sonlandırıcılar olabilir
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bazı kod statik başlatıcılar veya sonlandırıcılar anlatılmıştır, ancak VCRuntime kitaplık başlatma kodu veya (Bu statik başlatıcılar veya sonlandırıcılar çalıştırması gereken) karşılığını uygulama başladığında çalıştırmak değil. Statik başlatıcılar veya sonlandırıcılar gerektiren kod bazı örnekleri aşağıda verilmiştir:
+Bazı kodlar statik başlatıcılar veya sonlandırıcılar sunmuştur, ancak VCRuntime kitaplığı başlangıç kodu veya eşdeğeri (statik başlatıcıları veya Sonlandırıcıların çalıştırılması gereken) uygulama başladığında çalıştırılmıyor. Statik başlatıcılar veya sonlandırıcılar gerektiren kod örnekleri aşağıda verilmiştir:
 
-- Genel sınıf değişken Oluşturucu, yıkıcı veya sanal işlev tablosu.
+- Oluşturucu, yıkıcı veya sanal işlev tablosu ile genel sınıf değişkeni.
 
-- Küresel değişkeni, bir derleme zamanı sabiti ile başlatılamadı.
+- Bir derleme zamanı sabiti ile başlatılan genel değişken.
 
 Bu sorunu gidermek için aşağıdakilerden birini deneyin:
 
-- Tüm kod ile statik başlatıcılar kaldırın.
+- Statik başlatıcılarla tüm kodu kaldırın.
 
-- Kullanmayın [/NOENTRY](../../build/reference/noentry-no-entry-point.md). / NOENTRY kaldırdıktan sonra da kaldırmak sahip olabilirsiniz [/nodefaultlıb](../../build/reference/nodefaultlib-ignore-libraries.md) bağlayıcı komut satırınızdan.
+- [/NOENTRY](../../build/reference/noentry-no-entry-point.md)kullanmayın. /NOENTRY kaldırıldıktan sonra bağlayıcı komut satırınızdan [/nodefaultlib](../../build/reference/nodefaultlib-ignore-libraries.md) ' i de kaldırmanız gerekebilir.
 
-- Derleme/MT kullanıyorsa, LIBCMT.lib libvcruntime.lib ve libucrt.lib bağlayıcı komut satırına ekleyin. Derleme/mtd kullanıyorsa, lıbcmtd.lib vcruntimed.lib ve libucrtd.lib ekleyin.
+- Derlemeniz/MT kullanıyorsa, bağlayıcı komut satırına Libcmt. lib, libvcruntime. lib ve libucrt. lib ekleyin. Derlemeniz/MTd kullanıyorsa, LIBCMTD. lib, vcruntimed. lib ve libucrtd. lib ekleyin.
 
-- / CLR taşırken: / CLR, saf derlemeye kaldırmak [/Entry](../../build/reference/entry-entry-point-symbol.md) bağlayıcı satırından seçeneği. Bu, CRT başlatma sağlar ve uygulama başlangıcında yürütülecek statik başlatıcılar sağlar. **/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+- /Clr: saf derlemeden/clr 'e geçiş yaparken, [/Entry](../../build/reference/entry-entry-point-symbol.md) seçeneğini bağlayıcı satırından kaldırın. Bu, CRT başlatmayı sağlar ve uygulama başlangıcında statik başlatıcıların yürütülmesini sağlar. **/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-[/GS](../../build/reference/gs-buffer-security-check.md) derleyici seçeneği tarafından başlatma gerektiriyor `__security_init_cookie` işlevi. Varsayılan olarak çalıştığı VCRuntime kitaplığı başlangıç kodunu bu başlatma sağlanan `_DllMainCRTStartup`.
+[/GS](../../build/reference/gs-buffer-security-check.md) derleyici seçeneği, işlevinin başlatılmasını gerektirir `__security_init_cookie` . Bu başlatma, içinde çalışan VCRuntime kitaplığı başlangıç kodunda varsayılan olarak sağlanır `_DllMainCRTStartup` .
 
-- / Entry kullanarak projeniz derlendi ve/Entry dışındaki bir işleve geçirilen `_DllMainCRTStartup`, işlevini çağırmanız gerekir `_CRT_INIT` CRT başlatılamadı. DLL'niz /GS kullanıyorsa, statik başlatıcılar gerektirir ya da MFC veya ATL kodu bağlamında çağrılır, bu çağrı başına yeterli değildir. Bkz: [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) daha fazla bilgi için.
+- Projeniz/ENTRY kullanılarak oluşturulmuş ise ve/ENTRY dışında bir işlev geçirtiyse, `_DllMainCRTStartup` IŞLEVIN `_CRT_INIT` CRT 'yi başlatmak için çağrısı gerekir. DLL 'niz/GS kullanıyorsa, statik başlatıcılar gerektiriyorsa veya MFC veya ATL kodu bağlamında çağrılırsa bu çağrı tek başına yeterli değildir. Daha fazla bilgi için bkz. [DLL 'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

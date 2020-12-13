@@ -1,15 +1,16 @@
 ---
+description: Daha fazla bilgi için bkz. Internet 'te etkin teknoloji
 title: Internet'te Etkin Teknoloji
 ms.date: 09/12/2018
 helpviewer_keywords:
 - Internet applications [MFC], Active technology
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
-ms.openlocfilehash: 2cd087c99c1ebdcaa8b4a44524e7691984877f20
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4f8035e0af233eac55c00a84679f79d214978219
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625149"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150247"
 ---
 # <a name="active-technology-on-the-internet"></a>Internet'te Etkin Teknoloji
 

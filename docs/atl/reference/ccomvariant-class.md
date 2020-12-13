@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CComVariant sınıfı'
 title: CComVariant sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-ms.openlocfilehash: 40315077ceba3d87e12c8ab426560deef4928793
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e618e7e68704d2fd8b69aecd58cbf986bb704c53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833614"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142135"
 ---
 # <a name="ccomvariant-class"></a>CComVariant sınıfı
 
@@ -213,7 +214,7 @@ Standart bir HRESULT değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*PSrc*için bir değer geçirirseniz, `ChangeType` Bu değişkeni dönüştürmenin kaynağı olarak kullanır. Aksi takdirde, `CComVariant` nesne kaynak olur.
+*PSrc* için bir değer geçirirseniz, `ChangeType` Bu değişkeni dönüştürmenin kaynağı olarak kullanır. Aksi takdirde, `CComVariant` nesne kaynak olur.
 
 ## <a name="ccomvariantclear"></a><a name="clear"></a> Ccomvarıant:: Clear
 
@@ -411,7 +412,7 @@ bool operator<(const VARIANT& varSrc) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComVariant`Nesnenin değeri *varSrc*değerinden küçükse true değerini döndürür. Aksi takdirde, FALSE. İşleci, karşılaştırmayı gerçekleştirmek için kullanıcının varsayılan yerel ayarını kullanır.
+`CComVariant`Nesnenin değeri *varSrc* değerinden küçükse true değerini döndürür. Aksi takdirde, FALSE. İşleci, karşılaştırmayı gerçekleştirmek için kullanıcının varsayılan yerel ayarını kullanır.
 
 ## <a name="ccomvariantoperator-gt"></a><a name="operator_gt"></a> CComVariant:: işleci &gt;
 
@@ -423,7 +424,7 @@ bool operator>(const VARIANT& varSrc) const throw();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CComVariant`Nesnenin değeri *varSrc*değerinden büyükse true değerini döndürür. Aksi takdirde, FALSE. İşleci, karşılaştırmayı gerçekleştirmek için kullanıcının varsayılan yerel ayarını kullanır.
+`CComVariant`Nesnenin değeri *varSrc* değerinden büyükse true değerini döndürür. Aksi takdirde, FALSE. İşleci, karşılaştırmayı gerçekleştirmek için kullanıcının varsayılan yerel ayarını kullanır.
 
 ## <a name="ccomvariantreadfromstream"></a><a name="readfromstream"></a> CComVariant:: ReadFromStream
 
@@ -465,7 +466,7 @@ Nesneyi başlatmak için kullanılan işaretçi `CComVariant` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetByRef` , `CComVariant` nesneyi Işaretçi *PT* olarak başlatan ve `vt` üyeyi VT_BYREF olarak ayarlayan bir işlev şablonudur. Örnek:
+`SetByRef` , `CComVariant` nesneyi Işaretçi *PT* olarak başlatan ve `vt` üyeyi VT_BYREF olarak ayarlayan bir işlev şablonudur. Örneğin:
 
 [!code-cpp[NVC_ATL_Utilities#76](../../atl/codesnippet/cpp/ccomvariant-class_1.cpp)]
 

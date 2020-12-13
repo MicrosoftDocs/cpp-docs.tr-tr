@@ -1,4 +1,5 @@
 ---
+description: Seçenekler, ATL Active Server sayfa bileşeni Sihirbazı hakkında daha fazla bilgi edinin
 title: Seçenekler, ATL Active Server sayfa bileşeni Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Active Server Page Component Wizard, options
 ms.assetid: 54f34e26-53c7-4456-9675-cb86e356bde0
-ms.openlocfilehash: c76ab7730256b007b66d54ca6753409926f7ae89
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 6d41b5cb43aa9f0445e73bbe148a2a753e374a15
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69495307"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139028"
 ---
 # <a name="options-atl-active-server-page-component-wizard"></a>Seçenekler, ATL Active Server sayfa bileşeni Sihirbazı
 
@@ -27,9 +28,9 @@ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [atl
 
    |Seçenek|Açıklama|
    |------------|-----------------|
-   |**Sunuculu**|Nesnenin tek iş parçacığı modelini kullandığını belirtir. Tek iş parçacığı modelinde, bir nesne her zaman birincil COM iş parçacığında çalışır. Daha fazla bilgi için bkz. [tek Iş parçacıklı Apartments](/windows/win32/com/single-threaded-apartments) ve [ınprocserver32](/windows/win32/com/inprocserver32) .|
+   |**Tek**|Nesnenin tek iş parçacığı modelini kullandığını belirtir. Tek iş parçacığı modelinde, bir nesne her zaman birincil COM iş parçacığında çalışır. Daha fazla bilgi için bkz. [tek Iş parçacıklı Apartments](/windows/win32/com/single-threaded-apartments) ve [ınprocserver32](/windows/win32/com/inprocserver32) .|
    |**Yapı**|Nesnenin apartman iş parçacığı kullandığını belirtir. Tek iş parçacığı grubu ile eşdeğerdir. Bir apartman iş parçacıklı bileşenin her nesnesine, nesne ömrü boyunca iş parçacığı için bir grup atanır; Ancak birden çok nesne için birden çok iş parçacığı kullanılabilir. Her grup belirli bir iş parçacığına bağlanır ve bir Windows ileti göndericisi (varsayılan) vardır.<br /><br /> Daha fazla bilgi için bkz. [tek Iş parçacıklı apartmanlar](/windows/win32/com/single-threaded-apartments) .|
-   |**İs**|Nesnenin, oluşturduğu iş parçacığı türünden bağımsız olarak Apartment veya Free iş parçacığı kullanıp kullanbileceğini belirtir.|
+   |**Her ikisi**|Nesnenin, oluşturduğu iş parçacığı türünden bağımsız olarak Apartment veya Free iş parçacığı kullanıp kullanbileceğini belirtir.|
    |**Ücretsiz**|Nesnenin serbest iş parçacığı kullandığını belirtir. Ücretsiz iş parçacığı, bir çoklu iş parçacığı grubu modeliyle eşdeğerdir. Daha fazla bilgi için bkz. [Çoklu Iş parçacıklı Apartments](/windows/win32/com/multithreaded-apartments) .|
    |**Kültür**|Nesnenin çok iş parçacıklı apartmanlar için yönergeleri takip eder, ancak her türlü iş parçacığı üzerinde yürütebileceğini belirtir.|
 
@@ -40,7 +41,7 @@ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [atl
    |Seçenek|Açıklama|
    |------------|-----------------|
    |**Evet**|Nesnenin toplanabilecek olduğunu belirtir. Varsayılan.|
-   |**Eşleşen**|Nesnenin toplanmadığını belirtir.|
+   |**Hayır**|Nesnenin toplanmadığını belirtir.|
    |**Yalnızca**|Nesnenin toplanması gerektiğini belirtir.|
 
 - **Destek**

@@ -1,17 +1,18 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: 1. Giriş'
 title: 1. Giriş
 ms.date: 01/16/2019
 ms.assetid: c42e72bc-0e31-4b1c-b670-cd82673c0c5a
-ms.openlocfilehash: e2857565f7838ae45ff88ea53ba714e1418116ff
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: d9b7374668b8a5cfa4b6ab6771362dac8bdfe14c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149727"
 ---
 # <a name="1-introduction"></a>1. Giriş
 
-Bu belge, C ve C++ programlarında paylaşılan bellek paralelliğini belirtmek için kullanabileceğiniz bir derleyici yönergeleri, kitaplık işlevleri ve ortam değişkenlerinin koleksiyonunu belirtir. Bu belgede açıklanan işlevsellik, her topluca *OpenMP C/C++ uygulama programı arabirimi (API)* olarak bilinir. Bu belirtimin amacı, bir programın farklı satıcıların paylaşılan bellek mimarilerine taşınabilmesini sağlayan paralel programlama için bir model sağlamaktır. Birçok satıcının derleyicileri, OpenMP C/C++ API 'sini destekler. OpenMP *FORTRAN uygulama programı arabirimi*de dahil olmak üzere OpenMP hakkında daha fazla bilgi aşağıdaki Web sitesinde bulunabilir:
+Bu belge, C ve C++ programlarında paylaşılan bellek paralelliğini belirtmek için kullanabileceğiniz bir derleyici yönergeleri, kitaplık işlevleri ve ortam değişkenlerinin koleksiyonunu belirtir. Bu belgede açıklanan işlevsellik, her topluca *OpenMP C/C++ uygulama programı arabirimi (API)* olarak bilinir. Bu belirtimin amacı, bir programın farklı satıcıların paylaşılan bellek mimarilerine taşınabilmesini sağlayan paralel programlama için bir model sağlamaktır. Birçok satıcının derleyicileri, OpenMP C/C++ API 'sini destekler. OpenMP *FORTRAN uygulama programı arabirimi* de dahil olmak üzere OpenMP hakkında daha fazla bilgi aşağıdaki Web sitesinde bulunabilir:
 
 [https://www.openmp.org](https://www.openmp.org)
 
@@ -39,11 +40,11 @@ Bu belgede aşağıdaki terimler kullanılır:
 
 - dinamik kapsam
 
-  *Sözcük*temelli olmayan tüm deyimler ve bir işlev içindeki deyimler, sözcük temelli kapsam içindeki deyimlerin yürütülmesi sonucu olarak yürütülür. Bir dinamik kapsam, *bölge*olarak da adlandırılır.
+  *Sözcük* temelli olmayan tüm deyimler ve bir işlev içindeki deyimler, sözcük temelli kapsam içindeki deyimlerin yürütülmesi sonucu olarak yürütülür. Bir dinamik kapsam, *bölge* olarak da adlandırılır.
 
 - sözcük temelli kapsam
 
-  *Yapılandırılmış bir blok*içinde Sözcüksel olarak tutulan deyimler.
+  *Yapılandırılmış bir blok* içinde Sözcüksel olarak tutulan deyimler.
 
 - Ana iş parçacığı
 
@@ -63,7 +64,7 @@ Bu belgede aşağıdaki terimler kullanılır:
 
 - seri bölge
 
-  Yalnızca *ana iş parçacığı* tarafından, herhangi bir *paralel bölgenin*dinamik kapsamı dışında yürütülen deyimler.
+  Yalnızca *ana iş parçacığı* tarafından, herhangi bir *paralel bölgenin* dinamik kapsamı dışında yürütülen deyimler.
 
 - Serialize
 
@@ -99,7 +100,7 @@ Bu belgede aşağıdaki terimler kullanılır:
 
 OpenMP, paralel yürütmenin çatal-JOIN modelini kullanır. Bu çatal ekleme modeli çeşitli sorunları çözmek için yararlı olabilir, ancak büyük dizi tabanlı uygulamalar için tasarlanmıştır. OpenMP, paralel programlar (birçok yürütmenin iş parçacığı ve tam bir OpenMP destek kitaplığı) gibi doğru şekilde yürütülen programları desteklemek için tasarlanmıştır. Ayrıca, sıralı programlar olarak doğru şekilde yürütülen programlar için (yönergeler yok sayılır ve basit bir OpenMP saplamaları kitaplığı). Ancak, sıralı olarak yürütüldüğünde düzgün davranmeyen bir program geliştirmeye izin verilir ve bu mümkündür. Ayrıca, sayısal işlemlerin ilişkilendirmesinde yapılan değişiklikler nedeniyle paralellik derecenin farklı dereceleri farklı sayısal sonuçlara neden olabilir. Örneğin, bir seri ek azaltma, paralel bir azaltmaya göre farklı bir ek ilişkilendirme düzenine sahip olabilir. Bu farklı ilişkilendirmeler kayan nokta ekleme sonuçlarını değiştirebilir.
 
-OpenMP C/C++ API 'SI ile yazılmış bir program yürütmeye, *ana iş parçacığı*adlı tek bir yürütme iş parçacığı olarak başlar. Ana iş parçacığı, ilk paralel yapı ile karşılaşana kadar bir seri bölgede yürütülür. OpenMP C/C++ API 'sinde, `parallel` yönerge paralel bir yapı oluşturur. Paralel bir yapı ile karşılaşıldığında, ana iş parçacığı bir iş parçacığı grubu oluşturur ve ana ekip ekibi ana haline gelir. Ekipteki her iş parçacığı, iş paylaşımı yapıları dışında, bir paralel bölgenin dinamik kapsamı içinde deyimleri yürütür. Ekipteki tüm iş parçacıkları aynı sırada iş paylaşımı yapıları ile karşılaşmalıdır ve bir veya daha fazla iş parçacığı ilişkili yapılandırılmış blok içinde deyimleri yürütür. Bir yan tümce olmadan iş paylaşımı yapısının sonunda örtülü olan engeli, `nowait` ekipteki tüm iş parçacıkları tarafından yürütülür.
+OpenMP C/C++ API 'SI ile yazılmış bir program yürütmeye, *ana iş parçacığı* adlı tek bir yürütme iş parçacığı olarak başlar. Ana iş parçacığı, ilk paralel yapı ile karşılaşana kadar bir seri bölgede yürütülür. OpenMP C/C++ API 'sinde, `parallel` yönerge paralel bir yapı oluşturur. Paralel bir yapı ile karşılaşıldığında, ana iş parçacığı bir iş parçacığı grubu oluşturur ve ana ekip ekibi ana haline gelir. Ekipteki her iş parçacığı, iş paylaşımı yapıları dışında, bir paralel bölgenin dinamik kapsamı içinde deyimleri yürütür. Ekipteki tüm iş parçacıkları aynı sırada iş paylaşımı yapıları ile karşılaşmalıdır ve bir veya daha fazla iş parçacığı ilişkili yapılandırılmış blok içinde deyimleri yürütür. Bir yan tümce olmadan iş paylaşımı yapısının sonunda örtülü olan engeli, `nowait` ekipteki tüm iş parçacıkları tarafından yürütülür.
 
 Bir iş parçacığı paylaşılan bir nesneyi değiştirirse, yalnızca kendi yürütme ortamını değil, programdaki diğer iş parçacıklarını da etkiler. Değişiklik, başka bir iş parçacığının görünüm noktasından, bir sonraki dizi noktasında (temel dilde tanımlandığı şekilde), yalnızca nesnenin geçici olarak bildirildiği durumlarda tamamlanma garantisi vardır. Aksi takdirde, değişikliğin ilk değişiklik parçacığından sonra tamamlanmasını garanti edilir. Diğer iş parçacıkları daha sonra (veya eşzamanlı olarak) `flush` nesneyi belirten bir yönerge (örtük veya açık olarak) görürsünüz. `flush`Diğer OpenMP yönergeleri tarafından kapsanan yönergeler yan etkilerin doğru sıralamasını garanti etmez, bu, ek ve açık yönergeler sağlamak için programcının sorumluluğundadır `flush` .
 

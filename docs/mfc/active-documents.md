@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: etkin belgeler'
 title: Etkin Belgeler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - views [MFC], active documents
 - active documents [MFC], views
 ms.assetid: 1378f18e-aaa6-420b-8501-4b974905baa0
-ms.openlocfilehash: bfe91dcb42b97ddfbb0bf0be36a54b45e6dc0809
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cae0eda775670867d5e36b4f2b9ec895a5dc3eb7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150312"
 ---
 # <a name="active-documents"></a>Etkin Belgeler
 
@@ -45,13 +46,13 @@ Her etkin belge, bu arabirime sahip bir görünüm Çerçevesi sağlayıcısına
 
 Etkin bir belge, verilerinin bir veya daha [fazla türünü (](#requirements_for_view_objects) Örneğin, normal, ana hat, sayfa düzeni vb.) oluşturabilir. Görünümler, verilerin görünebileceği filtreler gibi davranır. Belge yalnızca bir görünüm türüne sahip olsa bile, yeni pencere işlevselliğini destekleme (örneğin, Office uygulamalarındaki **pencere** menüsündeki **yeni pencere** öğesi) gibi birden fazla görünümü desteklemeye devam edebilirsiniz.
 
-## <a name="requirements-for-active-documents"></a><a name="requirements_for_active_documents"></a>Etkin belgeler için gereksinimler
+## <a name="requirements-for-active-documents"></a><a name="requirements_for_active_documents"></a> Etkin belgeler için gereksinimler
 
 Etkin bir belge kapsayıcısında görüntülenebilen etkin bir belge şunları içermelidir:
 
 - Uygulayarak, OLE 'nin bileşik dosyalarını depolama mekanizması olarak kullanın `IPersistStorage` .
 
-- Dosyadan **Oluştur**da dahil olmak üzere OLE belgelerinin temel ekleme özelliklerini destekler. Bu, ve arabirimlerini gerektirir `IPersistFile` `IOleObject` `IDataObject` .
+- Dosyadan **Oluştur** da dahil olmak üzere OLE belgelerinin temel ekleme özelliklerini destekler. Bu, ve arabirimlerini gerektirir `IPersistFile` `IOleObject` `IDataObject` .
 
 - Her biri yerinde etkinleştirme yeteneğine sahip olan bir veya daha fazla görünümü destekler. Diğer bir deyişle, görünümlerin arabirimi `IOleDocumentView` `IOleInPlaceObject` ve arabirimleri ve `IOleInPlaceActiveObject` (kapsayıcının `IOleInPlaceSite` ve `IOleInPlaceFrame` arabirimlerini kullanarak) desteklemesi gerekir.
 
@@ -59,9 +60,9 @@ Etkin bir belge kapsayıcısında görüntülenebilen etkin bir belge şunları 
 
 Kapsayıcı tarafı arabirimlerinin ne zaman ve nasıl kullanılacağı hakkında bilgi, bu gereksinimlerde nasıl ima edilir.
 
-## <a name="requirements-for-view-objects"></a><a name="requirements_for_view_objects"></a>Görüntüleme nesneleri gereksinimleri
+## <a name="requirements-for-view-objects"></a><a name="requirements_for_view_objects"></a> Görüntüleme nesneleri gereksinimleri
 
-Etkin bir belge, verilerinin bir veya daha fazla görünümünü oluşturabilir. İşlevsellik, bu görünümler, verileri görüntülemek için belirli bir yönteme yönelik bağlantı noktaları gibidir. Etkin bir belge yalnızca tek bir görünümü destekliyorsa, etkin belge ve bu tek görünüm tek bir sınıf kullanılarak uygulanabilir. `IOleDocument::CreateView`aynı nesnenin `IOleDocumentView` arabirim işaretçisini döndürür.
+Etkin bir belge, verilerinin bir veya daha fazla görünümünü oluşturabilir. İşlevsellik, bu görünümler, verileri görüntülemek için belirli bir yönteme yönelik bağlantı noktaları gibidir. Etkin bir belge yalnızca tek bir görünümü destekliyorsa, etkin belge ve bu tek görünüm tek bir sınıf kullanılarak uygulanabilir. `IOleDocument::CreateView` aynı nesnenin `IOleDocumentView` arabirim işaretçisini döndürür.
 
 Etkin bir belge kapsayıcısı içinde temsil edilebilmesi için bir görünüm bileşeninin şunları desteklemesi gerekir `IOleInPlaceObject` `IOleInPlaceActiveObject` `IOleDocumentView` :
 
@@ -94,7 +95,7 @@ Her görünüm, görünüm çerçevesini ve Görünüm bağlantı noktasını (H
 
 Genellikle, her bir görünüm türünün farklı bir yazdırılmış temsili vardır. Bu nedenle, görünümler ve ilgili görünüm siteleri sırasıyla yazdırma arabirimlerini uygulamalıdır `IPrint` `IContinueCallback` . Görünüm çerçevesi, yazdırma başladığında görünüm sağlayıcısıyla birlikte anlaşmalıdır `IPrint` , böylece üstbilgiler, altbilgiler, kenar boşlukları ve ilgili öğeler doğru şekilde yazdırılır. Görünüm sağlayıcısı, yazdırmayla ilgili olayların çerçevesini aracılığıyla bilgilendirir `IContinueCallback` . Bu arabirimlerin kullanımı hakkında daha fazla bilgi için bkz. [programlı yazdırma](programmatic-printing.md).
 
-Etkin bir belge yalnızca tek bir görünümü destekliyorsa, etkin belge ve bu tek görünümün tek bir somut sınıf kullanılarak uygulankullanılamayacağını unutmayın. `IOleDocument::CreateView`yalnızca aynı nesnenin `IOleDocumentView` arabirim işaretçisini döndürür. Kısacası, yalnızca bir görünüm gerektiğinde iki ayrı nesne örneği olması gerekmez.
+Etkin bir belge yalnızca tek bir görünümü destekliyorsa, etkin belge ve bu tek görünümün tek bir somut sınıf kullanılarak uygulankullanılamayacağını unutmayın. `IOleDocument::CreateView` yalnızca aynı nesnenin `IOleDocumentView` arabirim işaretçisini döndürür. Kısacası, yalnızca bir görünüm gerektiğinde iki ayrı nesne örneği olması gerekmez.
 
 Bir görünüm nesnesi bir komut hedefi de olabilir. `IOleCommandTarget`Bir görünüm uygulayarak, kapsayıcının kullanıcı arabiriminden ( **Yeni**, **açma**, **farklı kaydet**, **Dosya** menüsünde **Yazdır** ) ve **kopyalama**, **Yapıştırma**, **geri alma** , **düzenleme** menüsünde yer alan komutları alabilir. Daha fazla bilgi için bkz. [Ileti işleme ve komut hedefleri](message-handling-and-command-targets.md).
 

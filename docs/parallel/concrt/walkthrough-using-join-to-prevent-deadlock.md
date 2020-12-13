@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Izlenecek yol: kilitlenmeyi engellemek için birleştirmeyi kullanma'
 title: 'İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma'
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-ms.openlocfilehash: 5bdd6cd81051d224714dd66d4604cbdec4ddb552
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b74a7cd3f5f2326bb73ece13e16be95d6677bdd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217889"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150156"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 
@@ -26,7 +27,7 @@ Bu yönergeyi başlamadan önce aşağıdaki konuları okuyun:
 
 - [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)
 
-- [İzlenecek yol: aracı tabanlı uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
+- [İzlenecek yol: Agent-Based uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
 
 - [Zaman uyumsuz Ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)
 
@@ -34,7 +35,7 @@ Bu yönergeyi başlamadan önce aşağıdaki konuları okuyun:
 
 - [Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 Bu izlenecek yol aşağıdaki bölümleri içerir:
 
@@ -44,7 +45,7 @@ Bu izlenecek yol aşağıdaki bölümleri içerir:
 
 - [Kilitlenmeyi engellemek için birleştirmeyi kullanma](#solution)
 
-## <a name="the-dining-philosophers-problem"></a><a name="problem"></a>Dining filozoflar sorunu
+## <a name="the-dining-philosophers-problem"></a><a name="problem"></a> Dining filozoflar sorunu
 
 Yemek filozoflar sorunu, bir uygulamada kilitlenmenin nasıl oluştuğunu gösterir. Bu sorun, yuvarlak bir tabloda beş filozoflar sıya. Her philosopher, düşünce ve Eating arasında alternatifler. Her philosopher, komşuyla komşu ile bir Chopstick paylaşmalıdır ve sağ komşu ile başka bir Chopstick. Aşağıdaki çizimde bu düzen gösterilmektedir.
 
@@ -54,7 +55,7 @@ Yemek filozoflar sorunu, bir uygulamada kilitlenmenin nasıl oluştuğunu göste
 
 [[Üst](#top)]
 
-## <a name="a-nave-implementation"></a><a name="deadlock"></a>Bir Naïve uygulama
+## <a name="a-nave-implementation"></a><a name="deadlock"></a> Bir Naïve uygulama
 
 Aşağıdaki örnek, Naïve filozoflar sorununun bir uygulamasını gösterir. `philosopher` [Concurrency:: Agent](../../parallel/concrt/reference/agent-class.md)' den türetilen sınıf, her philosopher bağımsız olarak hareket etmesini sağlar. Örnek, her nesneye bir Chopsticks çiftine erişim sağlamak için bir [eşzamanlılık:: critical_section](../../parallel/concrt/reference/critical-section-class.md) nesneleri paylaşılan dizisini kullanır `philosopher` .
 
@@ -76,7 +77,7 @@ Bir `philosopher` nesne, `critical_section` yöntemi çağırmadan önce Chopsti
 
 [[Üst](#top)]
 
-## <a name="using-join-to-prevent-deadlock"></a><a name="solution"></a>Kilitlenmeyi engellemek için birleştirmeyi kullanma
+## <a name="using-join-to-prevent-deadlock"></a><a name="solution"></a> Kilitlenmeyi engellemek için birleştirmeyi kullanma
 
 Bu bölümde, kilitlenme olasılığını ortadan kaldırmak için ileti arabelleklerinin ve ileti geçirme işlevlerinin nasıl kullanılacağı gösterilmektedir.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CColorDialog sınıfı'
 title: CColorDialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-ms.openlocfilehash: 54fd987d683a9236531baee3afbb9ee61be623e2
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: d9af49d4986f0619211ed4fd2dc9174acea27d0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470764"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150143"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog sınıfı
 
@@ -74,13 +75,13 @@ Bir nesne oluşturmak için `CColorDialog` , belirtilen oluşturucuyu kullanın 
 
 İletişim kutusu oluşturulduktan sonra, iletişim kutusu denetimlerinin değerlerini başlatmak için [m_cc](#m_cc) yapısındaki herhangi bir değeri ayarlayabilir veya değiştirebilirsiniz. *M_cc* yapısı [choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1)türündedir.
 
-İletişim kutusunun denetimlerini başlattıktan sonra, `DoModal` iletişim kutusunu göstermek ve kullanıcının bir renk seçmesine izin vermek için üye işlevini çağırın. `DoModal`kullanıcının iletişim kutusunun Tamam (IDOK) veya Cancel (ıDCANCEL) düğmesi seçimini döndürür.
+İletişim kutusunun denetimlerini başlattıktan sonra, `DoModal` iletişim kutusunu göstermek ve kullanıcının bir renk seçmesine izin vermek için üye işlevini çağırın. `DoModal` kullanıcının iletişim kutusunun Tamam (IDOK) veya Cancel (ıDCANCEL) düğmesi seçimini döndürür.
 
 `DoModal`IDOK döndürürse, `CColorDialog` Kullanıcı tarafından bilgi girişi almak için üye işlevlerinden birini kullanabilirsiniz.
 
 İletişim kutusunun başlatılması sırasında oluşan bir hata olup olmadığını ve hata hakkında daha fazla bilgi edinmek için Windows [Commdlextende,](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) işlevini kullanabilirsiniz.
 
-`CColorDialog`, 3,1 ve üzeri Windows sürümleriyle birlikte gelen COMMDLG.DLL dosyasını kullanır.
+`CColorDialog` , 3,1 ve üzeri Windows sürümleriyle birlikte gelen COMMDLG.DLL dosyasını kullanır.
 
 İletişim kutusunu özelleştirmek için, öğesinden bir sınıf türetebilir `CColorDialog` , özel bir iletişim kutusu şablonu sağlayın ve genişletilmiş denetimlerden gelen bildirim iletilerini işlemek için bir ileti eşlemesi ekleyin. İşlenmemiş tüm iletiler taban sınıfına geçirilmelidir.
 
@@ -109,7 +110,7 @@ Kullanma hakkında daha fazla bilgi için `CColorDialog` bkz. [ortak Iletişim k
 
 **Üstbilgi:** afxdlgs. h
 
-## <a name="ccolordialogccolordialog"></a><a name="ccolordialog"></a>CColorDialog:: CColorDialog
+## <a name="ccolordialogccolordialog"></a><a name="ccolordialog"></a> CColorDialog:: CColorDialog
 
 Bir `CColorDialog` nesnesi oluşturur.
 
@@ -135,7 +136,7 @@ Varsayılan renk seçimi. Değer belirtilmemişse, varsayılan RGB 'dir (0, 0, 0
 
 [!code-cpp[NVC_MFCDocView#49](../../mfc/codesnippet/cpp/ccolordialog-class_1.cpp)]
 
-## <a name="ccolordialogdomodal"></a><a name="domodal"></a>CColorDialog::D oModal
+## <a name="ccolordialogdomodal"></a><a name="domodal"></a> CColorDialog::D oModal
 
 Windows ortak renk iletişim kutusunu göstermek ve kullanıcının bir renk seçmesine izin vermek için bu işlevi çağırın.
 
@@ -159,7 +160,7 @@ IDOK ve ıDCANCEL, kullanıcının Tamam veya Iptal düğmesini seçip seçmedi�
 
   [CColorDialog:: CColorDialog](#ccolordialog)örneğine bakın.
 
-## <a name="ccolordialoggetcolor"></a><a name="getcolor"></a>CColorDialog:: GetColor
+## <a name="ccolordialoggetcolor"></a><a name="getcolor"></a> CColorDialog:: GetColor
 
 `DoModal`Kullanıcının seçtiği renkle ilgili bilgileri almak için çağrıldıktan sonra bu işlevi çağırın.
 
@@ -175,9 +176,9 @@ Renk iletişim kutusunda seçilen rengin RGB bilgilerini içeren [colorref](/win
 
 [!code-cpp[NVC_MFCDocView#50](../../mfc/codesnippet/cpp/ccolordialog-class_2.cpp)]
 
-## <a name="ccolordialoggetsavedcustomcolors"></a><a name="getsavedcustomcolors"></a>CColorDialog:: GetSavedCustomColors
+## <a name="ccolordialoggetsavedcustomcolors"></a><a name="getsavedcustomcolors"></a> CColorDialog:: GetSavedCustomColors
 
-`CColorDialog`nesneler kullanıcıya izin verir, renkleri seçmeye ek olarak 16 özel renk tanımlar.
+`CColorDialog` nesneler kullanıcıya izin verir, renkleri seçmeye ek olarak 16 özel renk tanımlar.
 
 ```
 static COLORREF* PASCAL GetSavedCustomColors();
@@ -197,7 +198,7 @@ Döndürülen dizideki her 16 RGB değeri, RGB (255255255) (beyaz) olarak başla
 
 [!code-cpp[NVC_MFCDocView#51](../../mfc/codesnippet/cpp/ccolordialog-class_3.cpp)]
 
-## <a name="ccolordialogm_cc"></a><a name="m_cc"></a>CColorDialog:: m_cc
+## <a name="ccolordialogm_cc"></a><a name="m_cc"></a> CColorDialog:: m_cc
 
 Üyeleri iletişim kutusunun özelliklerini ve değerlerini depolayan [choosecolor](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1)türünde bir yapı.
 
@@ -213,7 +214,7 @@ Bir nesne oluşturduktan sonra `CColorDialog` , [DoModal](#domodal) üye işlevi
 
 [!code-cpp[NVC_MFCDocView#53](../../mfc/codesnippet/cpp/ccolordialog-class_4.cpp)]
 
-## <a name="ccolordialogoncolorok"></a><a name="oncolorok"></a>CColorDialog:: OnColorOK
+## <a name="ccolordialogoncolorok"></a><a name="oncolorok"></a> CColorDialog:: OnColorOK
 
 İletişim kutusuna girilen rengi doğrulamak için geçersiz kılın.
 
@@ -245,7 +246,7 @@ Renk seçimini zorlamak için içinden [SetCurrentColor](#setcurrentcolor) öğe
 
 [!code-cpp[NVC_MFCDocView#52](../../mfc/codesnippet/cpp/ccolordialog-class_5.cpp)]
 
-## <a name="ccolordialogsetcurrentcolor"></a><a name="setcurrentcolor"></a>CColorDialog:: SetCurrentColor
+## <a name="ccolordialogsetcurrentcolor"></a><a name="setcurrentcolor"></a> CColorDialog:: SetCurrentColor
 
 `DoModal`Geçerli renk seçimini *clr*'de belirtilen renk değerine zorlamak için çağrıldıktan sonra bu işlevi çağırın.
 

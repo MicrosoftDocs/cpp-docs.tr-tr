@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Grup'
 title: GROUP
 ms.date: 11/05/2019
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GROUP directive
 ms.assetid: 55dc9548-154e-486d-849a-135e4631eca9
-ms.openlocfilehash: dbf152b85db6d2c492b429190b8a6cd761b8e9d1
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 47946ab37d66a3ee792e974cd509c5fad996a611
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317311"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130241"
 ---
 # <a name="group"></a>GROUP
 
-(yalnızca 32-bit masa.) Belirtilen *kesimleri* *adı*adlı gruba ekleyin.
+(yalnızca 32-bit masa.) Belirtilen *kesimleri* *adı* adlı gruba ekleyin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> *ad* **grubu** *segmenti* ⟦ __,__ *segment* ... ⟧
+> *ad* **grubu** *segmenti* ⟦__,__ *segment* ... ⟧
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

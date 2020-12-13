@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: değişken bağımsız sayıda makro'
 title: Değişen sayıda makro
 ms.date: 10/17/2019
 helpviewer_keywords:
 - variadic macros [C++]
 - __VA_ARGS__ variadic macro specifier
 ms.assetid: 51e757dc-0134-4bb2-bb74-64ea5ad75134
-ms.openlocfilehash: de4d3a7f03f613cb058e564664f01837df23aefb
-ms.sourcegitcommit: 8178d22701047d24f69f10d01ba37490e3d67241
+ms.openlocfilehash: 876e0ca46dd8774796c8a4f9d7572cbff5caa93c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587890"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149662"
 ---
 # <a name="variadic-macros"></a>Değişen sayıda makro
 
@@ -18,9 +19,9 @@ Değişen sayıda bağımsız değişken içeren makrolar, değişken sayıda ba
 
 ## <a name="remarks"></a>Açıklamalar
 
-Değişen sayıda sayıda makro kullanmak için, üç nokta bir makro tanımında son biçimsel bağımsız değişken olarak belirtilebilir ve ek bağımsız değişkenleri eklemek için `__VA_ARGS__` değiştirme tanımlayıcısı tanımda kullanılabilir.  `__VA_ARGS__`, aralarında virgül de dahil olmak üzere üç nokta ile eşleşen tüm bağımsız değişkenlerle değiştirilmiştir.
+Değişen sayıda sayıda makro kullanmak için, üç nokta bir makro tanımında son biçimsel bağımsız değişken olarak belirtilebilir ve `__VA_ARGS__` ek bağımsız değişkenleri eklemek için tanımda değiştirme tanımlayıcısı kullanılabilir.  `__VA_ARGS__` , aralarında virgül de dahil olmak üzere üç nokta ile eşleşen tüm bağımsız değişkenlerle değiştirilmiştir.
 
-C standardı, makronun sondaki virgülden sonra bir ifadeye çözümlenmemesini sağlamak için en az bir bağımsız değişkenin üç noktaya geçirilmesi gerektiğini belirtir. Geleneksel Microsoft C++ uygulama, üç nokta için bir bağımsız değişken geçirilmezse sondaki virgülden geçer. @No__t_0 derleyici seçeneği ayarlandığında, sondaki virgül görüntülenmez.
+C standardı, makronun sondaki virgülden sonra bir ifadeye çözümlenmemesini sağlamak için en az bir bağımsız değişkenin üç noktaya geçirilmesi gerektiğini belirtir. Geleneksel Microsoft C++ uygulamasının, üç nokta işaretine hiçbir bağımsız değişken geçirilmezse sondaki virgül bastırır. `/experimental:preprocessor`Derleyici seçeneği ayarlandığında, sondaki virgül görüntülenmez.
 
 ## <a name="example"></a>Örnek
 

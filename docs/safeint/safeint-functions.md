@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SafeInt Işlevleri'
 title: SafeInt İşlevleri
 ms.date: 06/23/2020
 ms.topic: reference
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - SafeNotEquals function
 - SafeSubtract function
 ms.assetid: fdc208e5-5d8a-41a9-8271-567fd438958d
-ms.openlocfilehash: c968601d95403dd63540a7a8ec2190a199fa1c5a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0dc195742b4f848dd6f05bae1537dc0a4fa5ead5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219345"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149610"
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri
 
@@ -68,7 +69,7 @@ Section                                                  | Açıklama
 [SafeInt](safeint-class.md)                   | `SafeInt`Sınıfı.
 [SafeIntException](safeintexception-class.md) | SafeInt kitaplığına özgü özel durum sınıfı.
 
-## <a name="safeadd"></a><a name="safeadd"></a>SafeAdd
+## <a name="safeadd"></a><a name="safeadd"></a> SafeAdd
 
 Taşmaya karşı koruyan bir şekilde iki sayı ekler.
 
@@ -90,13 +91,13 @@ inline bool SafeAdd (
 'ndaki Eklenecek ikinci sayı. Bu, U türünde olmalıdır.
 
 *kaynaklanan*<br/>
-dışı `SafeAdd`Sonucu depolayan parametre.
+dışı `SafeAdd` Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 **`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
-## <a name="safecast"></a><a name="safecast"></a>SafeCast
+## <a name="safecast"></a><a name="safecast"></a> SafeCast
 
 Bir sayı türünü başka bir türe yayınlar.
 
@@ -120,7 +121,7 @@ dışı Yeni sayı türüne bir başvuru. Bu, türünde olmalıdır `U` .
 
 **`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
-## <a name="safedivide"></a><a name="safedivide"></a>SafeDivide
+## <a name="safedivide"></a><a name="safedivide"></a> SafeDivide
 
 İki sayıyı sıfıra bölmek için koruyan bir şekilde böler.
 
@@ -142,13 +143,13 @@ inline bool SafeDivide (
 'ndaki Bölen. Bu, U türünde olmalıdır.
 
 *kaynaklanan*<br/>
-dışı `SafeDivide`Sonucu depolayan parametre.
+dışı `SafeDivide` Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 **`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
-## <a name="safeequals"></a><a name="safeequals"></a>SafeEquals
+## <a name="safeequals"></a><a name="safeequals"></a> SafeEquals
 
 Eşit olup olmadığını anlamak için iki sayıyı karşılaştırır.
 
@@ -176,7 +177,7 @@ inline bool SafeEquals (
 
 Yöntemi geliştirir, `==` çünkü `SafeEquals` iki farklı sayı türünü karşılaştırmanızı sağlar.
 
-## <a name="safegreaterthan"></a><a name="safegreaterthan"></a>SafeGreaterThan
+## <a name="safegreaterthan"></a><a name="safegreaterthan"></a> SafeGreaterThan
 
 İki sayıyı karşılaştırır.
 
@@ -202,9 +203,9 @@ inline bool SafeGreaterThan (
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SafeGreaterThan`iki farklı sayı türünü karşılaştırmanızı sağlayarak normal karşılaştırma işlecini genişletir.
+`SafeGreaterThan` iki farklı sayı türünü karşılaştırmanızı sağlayarak normal karşılaştırma işlecini genişletir.
 
-## <a name="safegreaterthanequals"></a><a name="safegreaterthanequals"></a>SafeGreaterThanEquals
+## <a name="safegreaterthanequals"></a><a name="safegreaterthanequals"></a> SafeGreaterThanEquals
 
 İki sayıyı karşılaştırır.
 
@@ -230,9 +231,9 @@ inline bool SafeGreaterThanEquals (
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SafeGreaterThanEquals`iki farklı sayı türünü karşılaştırmanızı sağladığından Standart karşılaştırma işlecini geliştirir.
+`SafeGreaterThanEquals` iki farklı sayı türünü karşılaştırmanızı sağladığından Standart karşılaştırma işlecini geliştirir.
 
-## <a name="safelessthan"></a><a name="safelessthan"></a>SafeLessThan
+## <a name="safelessthan"></a><a name="safelessthan"></a> SafeLessThan
 
 Bir sayının diğerinden daha küçük olup olmadığını belirler.
 
@@ -260,7 +261,7 @@ inline bool SafeLessThan (
 
 Bu yöntem, `SafeLessThan` iki farklı türden sayıyı karşılaştırmanızı sağladığından Standart karşılaştırma işlecini geliştirir.
 
-## <a name="safelessthanequals"></a><a name="safelessthanequals"></a>SafeLessThanEquals
+## <a name="safelessthanequals"></a><a name="safelessthanequals"></a> SafeLessThanEquals
 
 İki sayıyı karşılaştırır.
 
@@ -286,9 +287,9 @@ inline bool SafeLessThanEquals (
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SafeLessThanEquals`iki farklı sayı türünü karşılaştırmanızı sağlayarak normal karşılaştırma işlecini genişletir.
+`SafeLessThanEquals` iki farklı sayı türünü karşılaştırmanızı sağlayarak normal karşılaştırma işlecini genişletir.
 
-## <a name="safemodulus"></a><a name="safemodulus"></a>SafeModulus
+## <a name="safemodulus"></a><a name="safemodulus"></a> SafeModulus
 
 İki sayı üzerinde mod işlemini gerçekleştirir.
 
@@ -310,13 +311,13 @@ inline bool SafeModulus (
 'ndaki Bölünen. Bu, türünde olmalıdır `U` .
 
 *kaynaklanan*<br/>
-dışı `SafeModulus`Sonucu depolayan parametre.
+dışı `SafeModulus` Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 **`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
-## <a name="safemultiply"></a><a name="safemultiply"></a>SafeMultiply
+## <a name="safemultiply"></a><a name="safemultiply"></a> SafeMultiply
 
 İki sayıyı taşmayı koruyan bir şekilde birbiriyle çarpar.
 
@@ -338,13 +339,13 @@ inline bool SafeMultiply (
 'ndaki Çarpılacak ikinci sayı. Bu, türünde olmalıdır `U` .
 
 *kaynaklanan*<br/>
-dışı `SafeMultiply`Sonucu depolayan parametre.
+dışı `SafeMultiply` Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 **`true`** bir hata oluşursa; **`false`** bir hata oluşursa.
 
-## <a name="safenotequals"></a><a name="safenotequals"></a>SafeNotEquals
+## <a name="safenotequals"></a><a name="safenotequals"></a> SafeNotEquals
 
 İki sayının eşit olup olmadığını belirler.
 
@@ -372,7 +373,7 @@ inline bool SafeNotEquals (
 
 Yöntemi geliştirir, `!=` çünkü `SafeNotEquals` iki farklı sayı türünü karşılaştırmanızı sağlar.
 
-## <a name="safesubtract"></a><a name="safesubtract"></a>SafeSubtract
+## <a name="safesubtract"></a><a name="safesubtract"></a> SafeSubtract
 
 İki sayıyı taşmayı koruyacak şekilde çıkartır.
 
@@ -394,7 +395,7 @@ inline bool SafeSubtract (
 'ndaki *T*'den çıkarılacak sayı. Bu, türünde olmalıdır `U` .
 
 *kaynaklanan*<br/>
-dışı `SafeSubtract`Sonucu depolayan parametre.
+dışı `SafeSubtract` Sonucu depolayan parametre.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

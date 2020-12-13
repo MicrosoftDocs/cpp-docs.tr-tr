@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE arkaplanı'
 title: OLE Arka Planı
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE, about OLE
 ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
-ms.openlocfilehash: baa2bca8b2e06fd55591c3a4fa2a9752abbb5355
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 89d8e3b6e1a84082fabdf954971e75ab86366622
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150234"
 ---
 # <a name="ole-background"></a>OLE Arka Planı
 
@@ -28,7 +29,7 @@ OLE, uygulamalar arasında sorunsuz etkileşim amacını karşılayan birçok fa
 
    Bağlama ve katıştırma, başka bir uygulamada oluşturulmuş bir OLE belgesi içinde oluşturulan öğeleri depolamanın iki yöntemi vardır. İkisi arasındaki farklılıklar hakkında genel bilgi için [OLE arka planı: bağlama ve ekleme](ole-background-linking-and-embedding.md)makalesine bakın. Daha ayrıntılı bilgi için bkz. Makaleler [kapsayıcılar](containers.md) ve [sunucular](servers.md).
 
-- Yerinde etkinleştirme (görsel düzenlemeler)
+- In-Place etkinleştirme (görsel düzenlemeler)
 
    Kapsayıcı belge bağlamında gömülü bir öğenin etkinleştirilmesi yerinde etkinleştirme veya görsel düzenlemeler olarak adlandırılır. Kapsayıcı uygulamasının arabirimi, katıştırılmış öğeyi oluşturan bileşen uygulamasının özelliklerini içerecek şekilde değişir. Öğenin gerçek verileri, bağlantıyı içeren uygulamanın bağlamı dışında ayrı bir dosyada bulunduğundan bağlantılı öğeler hiçbir yerde etkinleştirilmez. Yerinde etkinleştirme hakkında daha fazla bilgi için [etkinleştirme](activation-cpp.md)makalesine bakın.
 

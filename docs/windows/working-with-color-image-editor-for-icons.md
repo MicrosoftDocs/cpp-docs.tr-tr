@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: renklerle çalışma'
 title: 'Nasıl yapılır: renklerle çalışma'
 ms.date: 02/15/2019
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - images [C++], colors
 - colors [C++], inverting
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
-ms.openlocfilehash: 3c9134fde9053f57f8848a37b1442728f6111c98
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6c7d6ceaf2510d2360b32138735e8f61398da85a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502944"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135843"
 ---
 # <a name="how-to-work-with-color"></a>Nasıl yapılır: renklerle çalışma
 
@@ -95,7 +96,7 @@ True-Color görüntüleri de oluşturulabilir. Ancak, **renkler** penceresinin t
 
 [Görüntü Düzenleyicisi araç çubuğu](./image-editor-for-icons.md)ile **renkler** penceresini kullanabilirsiniz.
 
-- **Renkler** penceresini görüntülemek için, bir **Görüntü Düzenleyicisi** bölmesine sağ tıklayıp **renkleri göster penceresini**seçin ya da menü [görüntüsü](./image-editor-for-icons.md)  >  **renkler göster penceresini**seçin.
+- **Renkler** penceresini görüntülemek için, bir **Görüntü Düzenleyicisi** bölmesine sağ tıklayıp **renkleri göster penceresini** seçin ya da menü [görüntüsü](./image-editor-for-icons.md)  >  **renkler göster penceresini** seçin.
 
 - **Renkler** penceresini gizlemek için pencereyi kaldırın (Bu eylem, kullanımda olmadığında pencerenin otomatik olarak gizlenmesi için) veya **Kapat** düğmesini seçmeyecektir.
 
@@ -107,7 +108,7 @@ True-Color görüntüleri de oluşturulabilir. Ancak, **renkler** penceresinin t
 |--------------------------|--------------------------|
 |**Gradyan rengi görüntüleme**|Seçilen rengin değerlerini değiştirir.<br/><br/>Rengin parlaklığını veya RGB değerlerini değiştirmek için değiştirmek istediğiniz renge çapraz artı işareti kaydırarak kaydırıcıyı yukarı veya aşağı taşıyın.|
 |**Parlaklık çubuğu**|**Degrade rengi görüntü** kutusunda seçtiğiniz rengin parlaklığını belirler.<br/><br/>Daha fazla parlaklık veya küçültme için çubuğa doğru beyaz oku seçin ve sürükleyin. **Renk** kutusu seçtiğiniz rengi ve belirlediğiniz renk parlaklığını etkiler.|
-|**Color**|Tanımladığınız rengin tonunu (renk tekerleği değeri) listeler. Değerler 0 ile 240 arasında değişir; burada 0 kırmızı, 60 sarı, 120 yeşil, 180, 200 siyan ve 240 mavi.|
+|**Renk**|Tanımladığınız rengin tonunu (renk tekerleği değeri) listeler. Değerler 0 ile 240 arasında değişir; burada 0 kırmızı, 60 sarı, 120 yeşil, 180, 200 siyan ve 240 mavi.|
 |**Renk**|Tanımladığınız rengin tonunu (renk tekerleği değeri) listeler. Değerler 0 ile 240 arasında değişir; burada 0 kırmızı, 60 sarı, 120 yeşil, 180, 200 siyan ve 240 mavi.|
 |**Cts**|Tanımladığınız rengin doygunluk değerini belirtir. Doygunluk, belirtilen bir tondaki renk miktarıdır. Değerler 0 ile 240 arasındadır.|
 |**Lum**|Tanımladığınız rengin parlaklığını (parlaklığını) listeler. Değerler 0 ile 240 arasındadır.|
@@ -125,14 +126,14 @@ C++ projenizde aşağıdaki özelliklerle kullanmak üzere özel renk paletleri 
 |Özellik|Açıklama|
 |-----------------|-----------------|
 |**Arama yeri**|Dosya veya klasörü bulmak istediğiniz konumu belirtir.<br/><br/>Başka bir konum seçmek için oku seçin veya araç çubuğundaki klasör simgesini seçerek düzeyleri taşıyın.|
-|**Dosya adı**|Açmak istediğiniz dosyanın adını yazmanız için bir alan sağlar.<br/><br/>Daha önce açtığınız bir dosyayı hızlıca bulmak için, varsa açılan listede dosya adını seçin.<br/><br/>Bir dosya arıyorsanız, joker karakter olarak yıldız işareti (*) kullanabilirsiniz. Örneğin, \* \* tüm dosyaların listesini görmek için. yazabilirsiniz. Bir dosyanın tam yolunu da yazabilirsiniz, örneğin, *C:\belgelerim\mycolorpalette.exe* veya * \\ \Networkserver\myfolder\mycolorpalette.exe*.|
+|**Dosya adı**|Açmak istediğiniz dosyanın adını yazmanız için bir alan sağlar.<br/><br/>Daha önce açtığınız bir dosyayı hızlıca bulmak için, varsa açılan listede dosya adını seçin.<br/><br/>Bir dosya arıyorsanız, joker karakter olarak yıldız işareti (*) kullanabilirsiniz. Örneğin, \* \* tüm dosyaların listesini görmek için. yazabilirsiniz. Bir dosyanın tam yolunu da yazabilirsiniz, örneğin, *C:\belgelerim\mycolorpalette.exe* veya *\\ \Networkserver\myfolder\mycolorpalette.exe*.|
 |**Dosya türü**|Görüntülenecek dosya türlerini listeler.<br/><br/>Palet (*. PAL), renk paletleri için varsayılan dosya türüdür.|
 
 ## <a name="how-to"></a>Nasıl yapılır
 
 ### <a name="to-select-foreground-or-background-colors"></a>Ön plan veya arka plan renklerini seçmek için
 
-**Silgi**haricinde, **Görüntü Düzenleyicisi** araç çubuğundaki Araçlar, sırasıyla sol veya sağ fare düğmesine bastığınızda geçerli ön plan veya arka plan rengiyle çizilir.
+**Silgi** haricinde, **Görüntü Düzenleyicisi** araç çubuğundaki Araçlar, sırasıyla sol veya sağ fare düğmesine bastığınızda geçerli ön plan veya arka plan rengiyle çizilir.
 
 - Bir ön plan rengi seçmek için, sol fare düğmesi ile **renkler** paletinde istediğiniz rengi seçin.
 
@@ -154,7 +155,7 @@ C++ projenizde aşağıdaki özelliklerle kullanmak üzere özel renk paletleri 
 
 ### <a name="to-pick-up-a-color-from-an-image-to-use-elsewhere"></a>Başka bir yerde kullanmak üzere görüntüden renk almak için
 
-**Seçme rengi**veya renk toplama, araç, sol veya sağ fare düğmesine basmanıza bağlı olarak, görüntüde geçerli ön plan rengi veya arka plan rengi üzerinde herhangi bir renk sağlar. **Renk seç** aracını iptal etmek için başka bir araç seçin.
+**Seçme rengi** veya renk toplama, araç, sol veya sağ fare düğmesine basmanıza bağlı olarak, görüntüde geçerli ön plan rengi veya arka plan rengi üzerinde herhangi bir renk sağlar. **Renk seç** aracını iptal etmek için başka bir araç seçin.
 
 1. **Görüntü Düzenleyicisi** araç çubuğunu kullanın veya menü **görüntüsü**  >  **araçları** ' na gidin ve **renk seç** aracını seçin.
 
@@ -213,7 +214,7 @@ Geçerli seçimdeki renkleri ters çevirmek için menü **görüntüsü**  >  **
 
 1. Paleti kaydetmek istediğiniz dizine gidin ve palet için bir ad yazın.
 
-1. **Kaydet**'i seçin.
+1. **Kaydet**’i seçin.
 
 ### <a name="to-load-a-custom-colors-palette"></a>Özel renk paleti yüklemek için
 
@@ -223,7 +224,7 @@ Geçerli seçimdeki renkleri ters çevirmek için menü **görüntüsü**  >  **
 
 ## <a name="requirements"></a>Gereksinimler
 
-Hiçbiri
+Yok
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

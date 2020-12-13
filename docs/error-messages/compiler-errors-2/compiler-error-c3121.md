@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3121'
 title: Derleyici hatası C3121
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3121
 ms.assetid: 1d3c7be4-d42d-4def-8d53-182c0c5cc237
-ms.openlocfilehash: e5d5f85631dbbedcabce89c25d9af7a7a685342c
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 62f12d17d8696e500cc21084645533825e7f25f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151066"
 ---
 # <a name="compiler-error-c3121"></a>Derleyici hatası C3121
 

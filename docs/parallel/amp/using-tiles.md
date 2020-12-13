@@ -1,19 +1,20 @@
 ---
+description: 'Daha fazla bilgi edinin: kutucukları kullanma'
 title: Döşemeleri Kullanma
 ms.date: 11/19/2018
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
-ms.openlocfilehash: edef9154b0c4da6f53c8ac40ee84e55e9b38a9b7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6277faf867cd64e5ea0e4503bb36f8e1d4a8bc74
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150169"
 ---
 # <a name="using-tiles"></a>Döşemeleri Kullanma
 
-Döşeme kullanarak uygulamanızın hızlandırmasını en üst düzeye çıkarabilirsiniz. İş parçacıklarını, eşit dikdörtgen alt kümelerine veya *döşemelere*böler. Uygun bir kutucuk boyutu ve döşeli algoritma kullanıyorsanız, C++ AMP kodunuzda daha da fazla hızlandırma sağlayabilirsiniz. Döşeme temel bileşenleri şunlardır:
+Döşeme kullanarak uygulamanızın hızlandırmasını en üst düzeye çıkarabilirsiniz. İş parçacıklarını, eşit dikdörtgen alt kümelerine veya *döşemelere* böler. Uygun bir kutucuk boyutu ve döşeli algoritma kullanıyorsanız, C++ AMP kodunuzda daha da fazla hızlandırma sağlayabilirsiniz. Döşeme temel bileşenleri şunlardır:
 
-- `tile_static`değişkenlerinin. Döşeme 'nin birincil avantajı, Access 'ten alınan performans kazanımı olur `tile_static` . Bellekteki verilere erişim `tile_static` , genel alanda ( `array` veya nesnelerinde) verilere erişimden önemli ölçüde daha hızlı olabilir `array_view` . `tile_static`Her kutucuk için bir değişken örneği oluşturulur ve kutucuktaki tüm iş parçacıkları değişkene erişebilir. Tipik bir döşeli algoritmada veriler, `tile_static` genel bellekten bir kez belleğe kopyalanır ve sonra bellekten çok sayıda kez erişilir `tile_static` .
+- `tile_static` değişkenlerinin. Döşeme 'nin birincil avantajı, Access 'ten alınan performans kazanımı olur `tile_static` . Bellekteki verilere erişim `tile_static` , genel alanda ( `array` veya nesnelerinde) verilere erişimden önemli ölçüde daha hızlı olabilir `array_view` . `tile_static`Her kutucuk için bir değişken örneği oluşturulur ve kutucuktaki tüm iş parçacıkları değişkene erişebilir. Tipik bir döşeli algoritmada veriler, `tile_static` genel bellekten bir kez belleğe kopyalanır ve sonra bellekten çok sayıda kez erişilir `tile_static` .
 
 - [tile_barrier:: wait yöntemi](reference/tile-barrier-class.md#wait). ' A Çağrı, `tile_barrier::wait` aynı kutucuktaki tüm iş parçacıkları çağrısına ulaşana kadar geçerli iş parçacığının yürütülmesini askıya alır `tile_barrier::wait` . İş parçacıklarının içinde çalışacağı sırayı garanti edemezsiniz; yalnızca kutucukta iş parçacıklarının, `tile_barrier::wait` tüm iş parçacıkları çağrıya ulaşıncaya kadar çağrının yürütülmeyeceği. Bu, yöntemi kullanılarak, iş parçacığı temelinde, bir kutucuk temelinde `tile_barrier::wait` görevleri yerine getirebilirsiniz. Tipik bir döşeme algoritması, `tile_static` Tüm kutucuk için belleği başlatmak üzere bir kod içerir ve sonra öğesine bir çağrı gelir `tile_barrier::wait` . Aşağıdaki kod `tile_barrier::wait` , tüm değerlere erişim gerektiren hesaplamalar içerir `tile_static` .
 

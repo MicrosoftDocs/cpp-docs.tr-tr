@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt kümesi: toplamları ve diğer toplama sonuçlarını alma (ODBC)'
 title: "Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)"
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SQL Server projects, retrieving aggregate values from recordsets
 - SQL aggregate values, retrieving from recordsets
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
-ms.openlocfilehash: b9e70716ad90a14bbed552d47f48d5a3317e5a62
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 10a2ef3b013d9eba0d9733cc321591ae8d6681f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225715"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136493"
 ---
 # <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)
 
@@ -39,7 +40,7 @@ Bu konu başlığı altında, aşağıdaki [SQL](../../data/odbc/sql.md) anahtar
 Veri kaynağındaki kayıtları ayıklamak yerine bir veri kaynağındaki kayıtlar hakkında istatistiksel bilgiler almak için bu SQL işlevlerini kullanırsınız. Oluşturulan kayıt kümesi, genellikle bir değer içeren tek bir kayıttan (tüm sütunlar toplamalarda) oluşur. ( **Group By** yan tümcesi kullandıysanız birden fazla kayıt olabilir.) Bu değer, SQL işlevi tarafından gerçekleştirilen hesaplamanın veya ayıklamanın sonucudur.
 
 > [!TIP]
-> SQL deyiminize bir SQL **Group By** yan tümcesi (ve muhtemelen bir **HAVING** yan tümcesi) eklemek için, sonuna ekleyin `m_strFilter` . Örnek:
+> SQL deyiminize bir SQL **Group By** yan tümcesi (ve muhtemelen bir **HAVING** yan tümcesi) eklemek için, sonuna ekleyin `m_strFilter` . Örneğin:
 
 ```
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";

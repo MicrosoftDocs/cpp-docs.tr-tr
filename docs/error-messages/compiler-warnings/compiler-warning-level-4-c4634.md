@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4634'
 title: Derleyici Uyarısı (düzey 4) C4634
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4634
 ms.assetid: 3e3496ce-2ac7-43d0-a48a-f514c950e81d
-ms.openlocfilehash: 86ac95fbd030ecf35a85eba153a449511ee7a535
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 87144f1a3c95f46159b07dc776707da06a56ff21
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683890"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97134140"
 ---
 # <a name="compiler-warning-level-4-c4634"></a>Derleyici Uyarısı (düzey 4) C4634
 

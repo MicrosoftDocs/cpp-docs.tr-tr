@@ -1,32 +1,33 @@
 ---
-title: 'İzlenecek yol: Bir MFC projesine animasyon ekleme'
+description: 'Daha fazla bilgi edinin: Izlenecek yol: MFC projesine animasyon ekleme'
+title: 'İzlenecek Yol: MFC Projesine Animasyon Ekleme'
 ms.date: 04/25/2019
 helpviewer_keywords:
 - animation [MFC]
 - MFC, animation
 ms.assetid: 004f832c-9fd5-4f88-9ca9-ae65dececdc2
-ms.openlocfilehash: 07b0c5f712cd645246ecfb4e8c93543377a340a3
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: ef6d6fc8e17c8e6dc4c6f0f4e8d7407f2690927f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64558192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143123"
 ---
-# <a name="walkthrough-adding-animation-to-an-mfc-project"></a>İzlenecek yol: Bir MFC projesine animasyon ekleme
+# <a name="walkthrough-adding-animation-to-an-mfc-project"></a>İzlenecek Yol: MFC Projesine Animasyon Ekleme
 
-Bu izlenecek yol, temel bir animasyonlu nesne bir Visual C++ için Microsoft Foundation Class Kitaplığı'nı (MFC) projesi eklemek öğretir.
+Bu izlenecek yol, bir Visual C++, Microsoft Foundation Class Kitaplığı (MFC) projesine temel bir animasyonlu nesnenin nasıl ekleneceğini öğretir.
 
-İzlenecek yol aşağıdaki görevlerin nasıl gerçekleştirileceğini gösterir:
+İzlenecek yol, bu görevlerin nasıl gerçekleştirileceğini gösterir:
 
-- Bir MFC uygulaması oluşturun.
+- MFC uygulaması oluşturun.
 
-- Menü eklemek ve ardından bir animasyon durdurmak ve başlatmak komutları ekleyin.
+- Bir menü ekleyin ve ardından bir animasyonu başlatmak ve durdurmak için komutlar ekleyin.
 
-- Başlatma ve durdurma komutlar için işleyicileri oluşturun.
+- Start ve stop komutları için işleyiciler oluşturun.
 
-- Bir animasyonlu nesne projeye ekleyin.
+- Projeye animasyon eklenmiş bir nesne ekleyin.
 
-- Merkezi penceresinde animasyonlu nesne.
+- Penceredeki animasyonlu nesneyi ortalayın.
 
 - Sonuçları doğrulayın.
 
@@ -34,33 +35,33 @@ Bu izlenecek yol, temel bir animasyonlu nesne bir Visual C++ için Microsoft Fou
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
+Bu yönergeyi tamamlamak için, Visual Studio 'ya sahip olmanız gerekir.
 
-### <a name="to-create-an-mfc-application"></a>Bir MFC uygulaması oluşturmak için
+### <a name="to-create-an-mfc-application"></a>MFC uygulaması oluşturmak için
 
-1. Kullanım **MFC Uygulama Sihirbazı** bir MFC uygulaması oluşturmak için. Bkz: [izlenecek yol: Yeni MFC Kabuk denetimlerini kullanma](walkthrough-using-the-new-mfc-shell-controls.md) Visual Studio sürümünüz için Sihirbazı'nı açmak yönergeler.
+1. MFC uygulaması oluşturmak için **MFC Uygulama Sihirbazı 'nı** kullanın. Visual Studio sürümünüz için sihirbazın nasıl açılacağı hakkında yönergeler için bkz. [Izlenecek yol: yenı MFC kabuk denetimlerini kullanma](walkthrough-using-the-new-mfc-shell-controls.md) .
 
-1. İçinde **adı** kutusuna *MFCAnimationWalkthrough*. **Tamam**'ı tıklatın.
+1. **Ad** kutusuna *MFCAnimationWalkthrough* yazın. **Tamam** düğmesine tıklayın.
 
-1. İçinde **MFC Uygulama Sihirbazı** iletişim kutusunda, doğrulayın **uygulama türü** olduğu **birden çok belge**, **proje stili** olduğu **Visual Studio**ve **belge/görünüm mimarisi desteği** seçeneği belirlenir. **Son**'a tıklayın.
+1. **MFC Uygulama Sihirbazı** iletişim kutusunda, **uygulama türünün** **birden çok belge** olduğunu, **Proje stilinin** **Visual Studio** olduğunu ve **belge/görünüm mimarisi desteği** seçeneğinin seçildiğini doğrulayın. **Finish (Son)** düğmesine tıklayın.
 
-### <a name="to-add-a-menu-and-then-add-commands-to-start-and-stop-an-animation"></a>Menü eklemek ve ardından başlatma ve durdurma animasyon için kullanılabilecek komutlar eklendi
+### <a name="to-add-a-menu-and-then-add-commands-to-start-and-stop-an-animation"></a>Bir menü eklemek ve ardından bir animasyonu başlatmak ve durdurmak için komutlar eklemek
 
-1. Üzerinde **görünümü** menüsünde **diğer Windows** ve ardından **kaynak görünümü**.
+1. **Görünüm** menüsünde **diğer pencereler** ' in üzerine gelin ve **kaynak görünümü**' ye tıklayın.
 
-1. İçinde **kaynak görünümü**, gitmek **menü** klasörü açın. Çift **IDR_MFCAnimationWalkthroughTYPE** değiştirilmek üzere açmak için kaynak.
+1. **Kaynak görünümü** **menüsünde, menü** klasörüne gidin ve açın. **IDR_MFCAnimationWalkthroughTYPE** kaynağına çift tıklayarak değişiklik için açın.
 
-1. Menü çubuğunda, **türü burada** kutusuna *A & Meti* animasyon menü oluşturmak için.
+1. Menü çubuğunda, **buraya yazın** kutusuna bir animasyon menüsü oluşturmak için *bir&nimation* yazın.
 
-1. Altında **animasyon**, **türü burada** kutusuna *başlatın & İleri* İleri Başlat komutu oluşturmak için.
+1. **Animasyon**' ın altında, **buraya yazın** kutusuna *ilet &başla* yazın.
 
-1. Altında **İleri Başlat**, **türü burada** kutusuna *başlangıç & Geri*.
+1. Ileri ' yi **Başlat**' ın altında, **buraya yazın** kutusuna *geriye &başla* yazın.
 
-1. Altında **Başlat geriye dönük**, **türü burada** kutusuna *& Durdur* Durdur komutu oluşturmak için.
+1. **Geri başla**' nın altında, **buraya yazın** kutusuna bir durdur komutu oluşturmak için *S&üst* yazın.
 
-1. MFCAnimationWalkthrough.rc kaydedin ve kapatın.
+1. MFCAnimationWalkthrough. RC ' i kaydedin ve kapatın.
 
-1. İçinde **Çözüm Gezgini**, MainFrm.cpp değiştirilmek üzere açmak için çift tıklayın. İçinde `CMainFrame::OnCreate` yöntemi için çeşitli çağrılar olan bölümünü bulun `lstBasicCommands.AddTail`. Bu bölümde hemen sonra aşağıdaki kodu ekleyin.
+1. **Çözüm Gezgini**, MainFrm. cpp öğesine çift tıklayarak değişiklik için açın. `CMainFrame::OnCreate`Yönteminde, için birkaç çağrıya sahip olan bölümünü bulun `lstBasicCommands.AddTail` . Bu bölümden hemen sonra aşağıdaki kodu ekleyin.
 
     ```cpp
     lstBasicCommands.AddTail(ID_ANIMATION_STARTFORWARD);
@@ -70,31 +71,31 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
 
 1. Dosyayı kaydedin ve kapatın.
 
-### <a name="to-create-handlers-for-the-start-and-stop-commands"></a>Başlangıç işleyicileri ve komutları durdurmak için
+### <a name="to-create-handlers-for-the-start-and-stop-commands"></a>Start ve stop komutlarına yönelik işleyiciler oluşturmak için
 
-1. Üzerinde **proje** menüsünü tıklatın **sınıf Sihirbazı**.
+1. **Proje** menüsünde, **sınıf Sihirbazı**' na tıklayın.
 
-1. İçinde **MFC Sınıf Sihirbazı**altında **sınıf adı**seçin **CMFCAnimationWalkthroughView**.
+1. **MFC sınıfı sihirbazında** **sınıf adı** altında **CMFCAnimationWalkthroughView** öğesini seçin.
 
-1. Üzerinde **komutları** sekmesinde **nesne kimlikleri** kutusunda **ID_ANIMATION_STARTFORWARD**ve ardından **iletileri** kutusunda, seçin **KOMUT**. Tıklayın **işleyici Ekle**.
+1. **Komutlar** sekmesinde, **nesne kimlikleri** kutusunda **ID_ANIMATION_STARTFORWARD**' yi seçin ve sonra **iletiler** kutusunda **komut**' yi seçin. **Işleyici Ekle**' ye tıklayın.
 
-1. İçinde **üye işlevi ekleme** iletişim kutusu, tıklayın **Tamam**.
+1. **Üye Işlevi Ekle** Iletişim kutusunda **Tamam**' a tıklayın.
 
-1. İçinde **nesne kimlikleri** kutusunda **ID_ANIMATION_STARTBACKWARD**ve ardından **iletileri** kutusunda **komut**. Tıklayın **işleyici Ekle**.
+1. **Nesne kimlikleri** kutusunda **ID_ANIMATION_STARTBACKWARD**' yi seçin ve sonra **iletiler** kutusunda **komut**' i seçin. **Işleyici Ekle**' ye tıklayın.
 
-1. İçinde **üye işlevi ekleme** iletişim kutusu, tıklayın **Tamam**.
+1. **Üye Işlevi Ekle** Iletişim kutusunda **Tamam**' a tıklayın.
 
-1. İçinde **nesne kimlikleri** kutusunda **ID_ANIMATION_STOP**ve ardından **iletileri** kutusunda **komut**. Tıklayın **işleyici Ekle** ve ardından **Tamam**.
+1. **Nesne kimlikleri** kutusunda **ID_ANIMATION_STOP**' yi seçin ve sonra **iletiler** kutusunda **komut**' i seçin. **Işleyici Ekle** ' ye tıklayın ve ardından **Tamam**' a tıklayın.
 
-1. İçinde **üye işlevi ekleme** iletişim kutusu, tıklayın **Tamam**.
+1. **Üye Işlevi Ekle** Iletişim kutusunda **Tamam**' a tıklayın.
 
-1. İçinde **MFC Sınıf Sihirbazı**, tıklayın **Tamam**.
+1. **MFC sınıfı sihirbazında**, **Tamam**' a tıklayın.
 
-1. Düzenleyicide açık olan MFCAnimationWalkthroughView.cpp kaydedebilir, ancak bunu kapatmayın.
+1. Düzenleyicide açık olan MFCAnimationWalkthroughView. cpp ' yi kaydedin, ancak kapatmayın.
 
-### <a name="to-add-an-animated-object-to-the-project"></a>Animasyonlu nesne projeye eklemek için
+### <a name="to-add-an-animated-object-to-the-project"></a>Projeye animasyon eklenmiş bir nesne eklemek için
 
-1. İçinde **Çözüm Gezgini**, MFCAnimationWalkthroughView.h değiştirilmek üzere açmak için çift tıklayın. Hemen önce tanımını `CMFCAnimationWalkthroughView` sınıfı, animasyon nesnesi zamanlama çakışıyor işleyecek bir özel animasyon denetleyicisi oluşturmak için aşağıdaki kodu ekleyin.
+1. **Çözüm Gezgini**, MFCAnimationWalkthroughView. h ' ye çift tıklayarak değişiklik için açın. Sınıfın tanımından hemen önce `CMFCAnimationWalkthroughView` , animasyon nesnesiyle zamanlama çakışmalarını işleyecek özel bir animasyon denetleyicisi oluşturmak için aşağıdaki kodu ekleyin.
 
     ```cpp
     class CCustomAnimationController : public CAnimationController
@@ -113,7 +114,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
     };
     ```
 
-1. Sonunda `CMFCAnimationWalkthroughView` sınıfında, aşağıdaki kodu ekleyin.
+1. `CMFCAnimationWalkthroughView`Sınıfının sonuna aşağıdaki kodu ekleyin.
 
     ```cpp
     CCustomAnimationController m_animationController;
@@ -121,7 +122,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
     CAnimationRect m_animationRect;
     ```
 
-1. Sonra `DECLARE_MESSAGE_MAP()` satır, aşağıdaki kodu ekleyin.
+1. Satırdan sonra `DECLARE_MESSAGE_MAP()` aşağıdaki kodu ekleyin.
 
     ```cpp
     void Animate(BOOL bDirection);
@@ -129,14 +130,14 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
 
 1. Dosyayı kaydedin ve kapatın.
 
-1. İçinde sonra dosyayı üst kısmındaki MFCAnimationWalkthroughView.cpp `#include` deyimleri ancak tüm yöntemler, sınıf önce aşağıdaki kodu ekleyin.
+1. MFCAnimationWalkthroughView. cpp içinde, `#include` deyimlerden sonra, ancak herhangi bir sınıf yönteminden önce, aşağıdaki kodu ekleyin.
 
     ```cpp
     static int nAnimationGroup = 0;
     static int nInfoAreaHeight = 40;
     ```
 
-1. Oluşturucusu sonunda `CMFCAnimationWalkthroughView`, aşağıdaki kodu ekleyin.
+1. Oluşturucusunun sonunda `CMFCAnimationWalkthroughView` aşağıdaki kodu ekleyin.
 
     ```cpp
     m_animationController.EnableAnimationTimerEventHandler();
@@ -149,7 +150,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
     m_animationController.AddAnimationObject(&m_animationRect);
     ```
 
-1. Bulun `CAnimationWalthroughView::PreCreateWindow` yöntemini aşağıdaki kodla değiştirin.
+1. Yöntemini bulun `CAnimationWalthroughView::PreCreateWindow` ve aşağıdaki kodla değiştirin.
 
     ```cpp
     BOOL CMFCAnimationWalkthroughView::PreCreateWindow(CREATESTRUCT& cs)
@@ -162,7 +163,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
     }
     ```
 
-1. Bulun `CAnimationWalkthroughView::OnDraw` yöntemini aşağıdaki kodla değiştirin.
+1. Yöntemini bulun `CAnimationWalkthroughView::OnDraw` ve aşağıdaki kodla değiştirin.
 
     ```cpp
     void CMFCAnimationWalkthroughView::OnDraw(CDC* pDC)
@@ -199,7 +200,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
     }
     ```
 
-1. Dosyanın sonunda aşağıdaki kodu ekleyin.
+1. Dosyanın sonuna aşağıdaki kodu ekleyin.
 
     ```cpp
     void CMFCAnimationWalkthroughView::Animate(BOOL bDirection)
@@ -268,13 +269,13 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
     }
     ```
 
-1. Üzerinde **proje** menüsünü tıklatın **sınıf Sihirbazı**.
+1. **Proje** menüsünde, **sınıf Sihirbazı**' na tıklayın.
 
-1. İçinde **MFC Sınıf Sihirbazı**altında **sınıf adı**seçin **CMFCAnimationWalkthroughView**.
+1. **MFC sınıfı sihirbazında** **sınıf adı** altında **CMFCAnimationWalkthroughView** öğesini seçin.
 
-1. Üzerinde **iletileri** sekmesinde **iletileri** kutusunda **WM_ERASEBKGND**, tıklayın **işleyici Ekle**ve ardından **Tamam** .
+1. **İletiler** sekmesindeki **iletiler** kutusunda **WM_ERASEBKGND**' ı seçin, **İşleyici Ekle**' ye ve ardından **Tamam**' a tıklayın.
 
-1. Uygulamasını MFCAnimationWalkthroughView.cpp içinde değiştirin `OnEraseBkgnd` onu yeniden çizildiğinde animasyonlu nesne titremeyi azaltmak için aşağıdaki kod ile.
+1. MFCAnimationWalkthroughView. cpp ' de, `OnEraseBkgnd` yeniden çizilme sırasında animasyon nesnesindeki titreşmeyi azaltmak için uygulamasının uygulamasını aşağıdaki kodla değiştirin.
 
     ```cpp
     BOOL CMFCAnimationWalkthroughView::OnEraseBkgnd(CDC* /*pDC*/)
@@ -283,7 +284,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
     }
     ```
 
-1. Uygulamaları değiştirin `CMFCAnimationWalkthroughView::OnAnimationStartforward`, `CMFCAnimationWalkthroughView::OnAnimationStartbackward`, ve `CMFCAnimationWalkthroughView::OnAnimationStop` aşağıdaki kod ile.
+1. `CMFCAnimationWalkthroughView::OnAnimationStartforward`, `CMFCAnimationWalkthroughView::OnAnimationStartbackward` , Ve uygulamalarını `CMFCAnimationWalkthroughView::OnAnimationStop` aşağıdaki kodla değiştirin.
 
     ```cpp
     void CMFCAnimationWalkthroughView::OnAnimationStartforward()
@@ -309,9 +310,9 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
 
 1. Dosyayı kaydedin ve kapatın.
 
-### <a name="to-center-the-animated-object-in-the-window"></a>Animasyonlu nesne penceresinde ortalamak için
+### <a name="to-center-the-animated-object-in-the-window"></a>Penceredeki hareketli nesneyi ortalamak için
 
-1. İçinde **Çözüm Gezgini**, MFCAnimationWalkthroughView.h değiştirilmek üzere açmak için çift tıklayın. Sonunda `CMFCAnimationWalkthroughView` tanımını hemen ardına bir sınıf `m_animationRect`, aşağıdaki kodu ekleyin.
+1. **Çözüm Gezgini**, MFCAnimationWalkthroughView. h ' ye çift tıklayarak değişiklik için açın. `CMFCAnimationWalkthroughView`Sınıfının sonunda, öğesinin tanımından hemen sonra `m_animationRect` aşağıdaki kodu ekleyin.
 
     ```cpp
     BOOL m_bCurrentDirection;
@@ -319,13 +320,13 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
 
 1. Dosyayı kaydedin ve kapatın.
 
-1. Üzerinde **proje** menüsünü tıklatın **sınıf Sihirbazı**.
+1. **Proje** menüsünde, **sınıf Sihirbazı**' na tıklayın.
 
-1. İçinde **MFC Sınıf Sihirbazı**altında **sınıf adı**seçin **CMFCAnimationWalkthroughView**.
+1. **MFC sınıfı sihirbazında** **sınıf adı** altında **CMFCAnimationWalkthroughView** öğesini seçin.
 
-1. Üzerinde **iletileri** sekmesinde **iletileri** kutusunda **WM_SIZE**, tıklayın **işleyici Ekle**ve ardından **Tamam**.
+1. **İletiler** sekmesindeki **iletiler** kutusunda **WM_SIZE**' ı seçin, **İşleyici Ekle**' ye ve ardından **Tamam**' a tıklayın.
 
-1. MFCAnimationWalkthroughView.cpp içinde için kodu değiştirin `CMFCAnimationWalkthroughView::OnSize` aşağıdaki kod ile.
+1. MFCAnimationWalkthroughView. cpp içinde, kodunu `CMFCAnimationWalkthroughView::OnSize` aşağıdaki kodla değiştirin.
 
     ```cpp
     void CMFCAnimationWalkthroughView::OnSize(UINT nType, int cx, int cy)
@@ -348,13 +349,13 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
     }
     ```
 
-1. Oluşturucusu başındaki `CMFCAnimationWalkthroughView`, aşağıdaki kodu ekleyin.
+1. Oluşturucusunun başlangıcında `CMFCAnimationWalkthroughView` , aşağıdaki kodu ekleyin.
 
     ```cpp
     m_bCurrentDirection = TRUE;
     ```
 
-1. Başında `CMFCAnimationWalkthroughView::Animate` yöntemine aşağıdaki kodu ekleyin.
+1. `CMFCAnimationWalkthroughView::Animate`Yönteminin başlangıcında aşağıdaki kodu ekleyin.
 
     ```cpp
     m_bCurrentDirection = bDirection;
@@ -364,7 +365,7 @@ Bu izlenecek yolu tamamlamak için Visual Studio olması gerekir.
 
 ### <a name="to-verify-the-results"></a>Sonuçları doğrulamak için
 
-1. Derleme ve uygulamayı çalıştırın. Üzerinde **animasyon** menüsünde tıklatın **İleri Başlat**. Bir dikdörtgen, görünür ve daha sonra orta alanı doldurun. Tıkladığınızda **Başlat geriye dönük**animasyon dönmelidir ve tıkladığınızda **Durdur**, durdurmanız gerekir. Dikdörtgenin dolgu rengi Animasyon ilerledikçe değiştirmeniz ve geçerli renk animasyon penceresinin en üstünde görüntülenmesi gerekir.
+1. Uygulamayı derleyin ve çalıştırın. **Animasyon** menüsünde **İleri 'yi Başlat**' a tıklayın. Bir dikdörtgen görünmelidir ve ardından orta alanı doldurur. **Geriye doğru Başlat**' a tıkladığınızda animasyon ters alınmalıdır ve **Durdur**' a tıkladığınızda durdurulmalıdır. Animasyon ilerledikçe dikdörtgenin Fill Color değişiklik göstermelidir ve geçerli renk animasyon penceresinin en üstünde görüntülenmelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

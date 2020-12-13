@@ -1,5 +1,6 @@
 ---
-title: CDynamicChain Sınıfı
+description: 'Daha fazla bilgi edinin: Cdynamiczincirle sınıfı'
+title: Cdynamiczincirine sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CDynamicChain
@@ -13,21 +14,21 @@ helpviewer_keywords:
 - chaining message maps
 - CDynamicChain class
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
-ms.openlocfilehash: 4a72b3b4308ed83dfdc4a2895a04d1fe9a177ce5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5ada99b519900150afa2143fb1527245797fed98
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141823"
 ---
-# <a name="cdynamicchain-class"></a>CDynamicChain Sınıfı
+# <a name="cdynamicchain-class"></a>Cdynamiczincirine sınıfı
 
-Bu sınıf, ileti haritalarının dinamik zincirlemesini destekleyen yöntemler sağlar.
+Bu sınıf, İleti eşlemelerinin dinamik zincirlemesini destekleyen yöntemler sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDynamicChain
@@ -37,50 +38,50 @@ class CDynamicChain
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CdynamicChain::CdynamicChain](#cdynamicchain)|Oluşturucu.|
-|[CdynamicChain::~CdynamicChain](#dtor)|Yıkıcı.|
+|[Cdynamiczincirine:: Cdynamiczinciri](#cdynamicchain)|Oluşturucu.|
+|[Cdynamiczincirine:: ~ Cdynamiczinciri](#dtor)|Yok edicisi.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CdynamicChain::CallChain](#callchain)|Windows iletisini başka bir nesnenin ileti haritasına yönlendirir.|
-|[CdynamicChain::RemoveChainEntry](#removechainentry)|Koleksiyondan bir ileti eşlemi girişini kaldırır.|
-|[CdynamicChain::SetChainEntry](#setchainentry)|Koleksiyona ileti eşlemi girişi ekler veya varolan bir girişi değiştirir.|
+|[Cdynamiczincirine:: Callzincirine](#callchain)|Bir Windows iletisini başka bir nesnenin ileti eşlemesine yönlendirir.|
+|[Cdynamiczincirine:: RemoveChainEntry](#removechainentry)|Koleksiyondan bir ileti eşleme girişini kaldırır.|
+|[Cdynamiczincirine:: SetChainEntry](#setchainentry)|Koleksiyona bir ileti eşleme girişi ekler veya var olan bir girişi değiştirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CDynamicChain`bir Windows iletisinin çalışma zamanında başka bir nesnenin ileti haritasına yönlendirilmesine olanak tanıyan ileti eşlemleri koleksiyonunu yönetir.
+`CDynamicChain` , çalışma zamanında, başka bir nesnenin ileti eşlemesine bir Windows iletisinin yönlendirilmesini sağlayan bir ileti haritaları koleksiyonunu yönetir.
 
-İleti eşlemlerinin dinamik zincirleme desteği eklemek için aşağıdakileri yapın:
+İleti eşlemelerinin dinamik zincirleme desteği eklemek için aşağıdakileri yapın:
 
-- `CDynamicChain`Sınıfınızı. İleti eşlemi'nde, CHAIN_MSG_MAP_DYNAMIC [makroyu](message-map-macros-atl.md#chain_msg_map_dynamic) başka bir nesnenin varsayılan ileti haritasına zincirlemek için belirtin.
+- Sınıfınızı ' dan türet `CDynamicChain` . İleti eşlemesinde, başka bir nesnenin varsayılan ileti eşlemesine zincirlenen [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) makrosunu belirtin.
 
-- [CMessageMap'ten](../../atl/reference/cmessagemap-class.md)zincirlemek istediğiniz her sınıfı türetin. `CMessageMap`bir nesnenin ileti eşlemlerini diğer nesnelere maruz bırakmasını sağlar.
+- [CMessageMap](../../atl/reference/cmessagemap-class.md)'ten içine zincir eklemek istediğiniz her sınıfı türet. `CMessageMap` bir nesnenin ileti eşlemelerini diğer nesnelerle kullanıma almasına izin verir.
 
-- Hangi `CDynamicChain::SetChainEntry` nesneye ve hangi ileti haritasına zincirlemek istediğinizi belirlemek için arayın.
+- `CDynamicChain::SetChainEntry`Hangi nesneye ve hangi ileti eşlemine zincir atamak istediğinizi belirlemek için çağırın.
 
 Örneğin, sınıfınızın aşağıdaki gibi tanımlandığını varsayalım:
 
 [!code-cpp[NVC_ATL_Windowing#88](../../atl/codesnippet/cpp/cdynamicchain-class_1.h)]
 
-İstemci `CMyWindow::SetChainEntry`daha sonra çağırır:
+İstemci daha sonra şunu çağırır `CMyWindow::SetChainEntry` :
 
 [!code-cpp[NVC_ATL_Windowing#89](../../atl/codesnippet/cpp/cdynamicchain-class_2.cpp)]
 
-nerede `chainedObj` zincirlenmiş nesne dir ve bir sınıf `CMessageMap`örneğitilmiştir. Şimdi, `myCtl` tarafından işlenmemiş bir ileti `OnPaint` `OnSetFocus`alıyorsa veya pencere yordamı iletiyi `chainedObj`'varsayılan ileti eşlenine yönlendirir.
+, `chainedObj` zincirleme nesnesidir ve öğesinden türetilen bir sınıfın örneğidir `CMessageMap` . Şimdi, `myCtl` veya tarafından işlenmeyen bir ileti alırsa `OnPaint` `OnSetFocus` , pencere yordamı iletiyi `chainedObj` varsayılan ileti eşlemesine yönlendirir.
 
-İleti eşlem zinciri hakkında daha fazla bilgi için "ATL Pencere Sınıfları" makalesinde [İleti Haritaları'na](../../atl/message-maps-atl.md) bakın.
+İleti eşleme zinciri hakkında daha fazla bilgi için, "ATL pencere sınıfları" makalesindeki [Ileti haritaları](../../atl/message-maps-atl.md) bölümüne bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-## <a name="cdynamicchaincallchain"></a><a name="callchain"></a>CdynamicChain::CallChain
+## <a name="cdynamicchaincallchain"></a><a name="callchain"></a> Cdynamiczincirine:: Callzincirine
 
-Windows iletisini başka bir nesnenin ileti haritasına yönlendirir.
+Windows iletisini başka bir nesnenin ileti eşlemesine yönlendirir.
 
 ```
 BOOL CallChain(
@@ -95,34 +96,34 @@ BOOL CallChain(
 ### <a name="parameters"></a>Parametreler
 
 *dwChainID*<br/>
-[içinde] Zincirlenmiş nesne ve ileti haritasıyla ilişkili benzersiz tanımlayıcı.
+'ndaki Zincirlenmiş nesne ve ileti eşlemesiyle ilişkili benzersiz tanımlayıcı.
 
-*Hwnd*<br/>
-[içinde] İletiyi alan pencerenin tutamacı.
+*lendiği*<br/>
+'ndaki İletiyi alan pencerenin tutamacı.
 
 *uMsg*<br/>
-[içinde] Pencereye gönderilen ileti.
+'ndaki Pencereye gönderilen ileti.
 
-*Wparam*<br/>
-[içinde] İletiye özgü ek bilgiler.
+*wParam*<br/>
+'ndaki İletiye özgü ek bilgiler.
 
-*Lparam*<br/>
-[içinde] İletiye özgü ek bilgiler.
+*lParam*<br/>
+'ndaki İletiye özgü ek bilgiler.
 
 *lResult*<br/>
-[çıkış] İleti işleme sonucu.
+dışı İleti işlemenin sonucu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti tam olarak işlenirse DOĞRU; aksi takdirde, YANLIŞ.
+İleti tam olarak işlendiyse doğru; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pencere yordamı nın `CallChain`çağrıda alabilmesi için, ileti haritanızda [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) makroyu belirtmeniz gerekir. Örneğin, [CDynamicChain](../../atl/reference/cdynamicchain-class.md) genel görünümüne bakın.
+Çağrılacak pencere yordamı için `CallChain` ileti eşlemindeki [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) makrosunu belirtmeniz gerekir. Bir örnek için, [Cdynamiczincirine](../../atl/reference/cdynamicchain-class.md) genel bakış bölümüne bakın.
 
-`CallChain`*dwChainID* değerini bir nesne ve ileti eşlemi ile ilişkilendirmek için [SetChainEntry'e](#setchainentry) önceki bir çağrı gerektirir.
+`CallChain`*dwChainID* değerini bir nesneyle ve ileti eşlemesiyle Ilişkilendirmek Için [SetChainEntry](#setchainentry) öğesine önceki bir çağrı gerektirir.
 
-## <a name="cdynamicchaincdynamicchain"></a><a name="cdynamicchain"></a>CdynamicChain::CdynamicChain
+## <a name="cdynamicchaincdynamicchain"></a><a name="cdynamicchain"></a> Cdynamiczincirine:: Cdynamiczinciri
 
 Oluşturucu.
 
@@ -130,9 +131,9 @@ Oluşturucu.
 CDynamicChain();
 ```
 
-## <a name="cdynamicchaincdynamicchain"></a><a name="dtor"></a>CdynamicChain::~CdynamicChain
+## <a name="cdynamicchaincdynamicchain"></a><a name="dtor"></a> Cdynamiczincirine:: ~ Cdynamiczinciri
 
-Yıkıcı.
+Yok edicisi.
 
 ```
 ~CDynamicChain();
@@ -140,11 +141,11 @@ Yıkıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ayrılan tüm kaynakları serbest sağlar.
+Ayrılan tüm kaynakları serbest bırakır.
 
-## <a name="cdynamicchainremovechainentry"></a><a name="removechainentry"></a>CdynamicChain::RemoveChainEntry
+## <a name="cdynamicchainremovechainentry"></a><a name="removechainentry"></a> Cdynamiczincirine:: RemoveChainEntry
 
-Belirtilen ileti eşlemi koleksiyondan kaldırır.
+Belirtilen ileti eşlemesini koleksiyondan kaldırır.
 
 ```
 BOOL RemoveChainEntry(DWORD dwChainID);
@@ -153,15 +154,15 @@ BOOL RemoveChainEntry(DWORD dwChainID);
 ### <a name="parameters"></a>Parametreler
 
 *dwChainID*<br/>
-[içinde] Zincirlenmiş nesne ve ileti haritasıyla ilişkili benzersiz tanımlayıcı. Bu değeri başlangıçta [SetChainEntry'e](#setchainentry)yapılan bir çağrı yla tanımlarsınız.
+'ndaki Zincirlenmiş nesne ve ileti eşlemesiyle ilişkili benzersiz tanımlayıcı. Bu değeri, ilk olarak [SetChainEntry](#setchainentry)çağrısıyla tanımlarsınız.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti eşlemi koleksiyondan başarıyla kaldırılırsa DOĞRU. Aksi takdirde, YANLIŞ.
+İleti eşlemesi koleksiyondan başarıyla kaldırıldıysa TRUE. Aksi takdirde, FALSE.
 
-## <a name="cdynamicchainsetchainentry"></a><a name="setchainentry"></a>CdynamicChain::SetChainEntry
+## <a name="cdynamicchainsetchainentry"></a><a name="setchainentry"></a> Cdynamiczincirine:: SetChainEntry
 
-Belirtilen ileti eşlemi koleksiyona ekler.
+Belirtilen ileti eşlemesini koleksiyona ekler.
 
 ```
 BOOL SetChainEntry(
@@ -173,23 +174,23 @@ BOOL SetChainEntry(
 ### <a name="parameters"></a>Parametreler
 
 *dwChainID*<br/>
-[içinde] Zincirlenmiş nesne ve ileti haritasıyla ilişkili benzersiz tanımlayıcı.
+'ndaki Zincirlenmiş nesne ve ileti eşlemesiyle ilişkili benzersiz tanımlayıcı.
 
-*Pobject*<br/>
-[içinde] İleti eşlesini bildiren zincirlenmiş nesneye işaretçi. Bu nesne [CMessageMap](../../atl/reference/cmessagemap-class.md)türetilmelidir.
+*Nesnesini*<br/>
+'ndaki İleti eşlemini bildiren zincirleme nesnesine yönelik bir işaretçi. Bu nesne [CMessageMap](../../atl/reference/cmessagemap-class.md)öğesinden türetilmelidir.
 
 *dwMsgMapID*<br/>
-[içinde] Zincirlenmiş nesnedeki ileti haritasının tanımlayıcısı. Varsayılan değer, [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)ile bildirilen varsayılan ileti eşleğini tanımlayan 0'dır. [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)ile bildirilen alternatif bir ileti `msgMapID`haritası belirtmek için , geç .
+'ndaki Zincirleme nesnesindeki ileti eşlemesinin tanımlayıcısı. Varsayılan değer, [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)ile belirtilen varsayılan ileti haritasını belirleyen 0 ' dır. [ALT_MSG_MAP (msgMapID)](message-map-macros-atl.md#alt_msg_map)ile belirtilen alternatif bir ileti eşlemesi belirtmek için pass `msgMapID` .
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti eşlemi koleksiyona başarıyla eklenirse DOĞRU. Aksi takdirde, YANLIŞ.
+İleti eşlemesi koleksiyona başarıyla eklendiyse TRUE. Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*DwChainID* değeri koleksiyonda zaten varsa, ilişkili nesne ve ileti eşlemi sırasıyla *pObject* ve *dwMsgMapID*ile değiştirilir. Aksi takdirde, yeni bir giriş eklenir.
+*DwChainID* değeri koleksiyonda zaten mevcutsa, ilişkili nesne ve ileti eşlemesi sırasıyla *pObject* ve *dwMsgMapID* ile değiştirilmiştir. Aksi takdirde, yeni bir giriş eklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CWindowImpl Sınıfı](../../atl/reference/cwindowimpl-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[CWindowImpl sınıfı](../../atl/reference/cwindowimpl-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

@@ -1,5 +1,6 @@
 ---
-title: CFirePropNotifyEvent Sınıfı
+description: 'Daha fazla bilgi edinin: CFirePropNotifyEvent sınıfı'
+title: CFirePropNotifyEvent sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CFirePropNotifyEvent
@@ -11,21 +12,21 @@ helpviewer_keywords:
 - CFirePropNotifyEvent class
 - connection points [C++], notifying of events
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
-ms.openlocfilehash: 1dfce42176341d74ffc7d9b42f856e71b17bf4f5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 09102e67408195751e083807f444c1b028fd2762
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141732"
 ---
-# <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent Sınıfı
+# <a name="cfirepropnotifyevent-class"></a>CFirePropNotifyEvent sınıfı
 
-Bu sınıf, denetim özelliği değişiklikleri ile ilgili kapsayıcının lavabo bildirmek için yöntemler sağlar.
+Bu sınıf, kapsayıcının havuzuna denetim özelliği değişiklikleriyle ilgili bildirimde bulunmak için yöntemler sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CFirePropNotifyEvent
@@ -35,26 +36,26 @@ class CFirePropNotifyEvent
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CfirepropnotifyOlay::fireonchanged](#fireonchanged)|(Statik) Konteynerin lavabosuna bir denetim özelliğinin değiştiğini haber vetir.|
-|[CFirePropNotifyOlay::FireOnRequestedit](#fireonrequestedit)|(Statik) Konteynerin lavabosuna bir kontrol özelliğinin değişmek üzere olduğunu haber vetir.|
+|[CFirePropNotifyEvent:: FireOnChanged](#fireonchanged)|Se Kapsayıcının havuzuna bir denetim özelliği değiştiğini bildirir.|
+|[CFirePropNotifyEvent:: Fireonrequestedıt](#fireonrequestedit)|Se Kapsayıcının havuzuna bir denetim özelliğinin değiştirmek üzere olduğunu bildirir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CFirePropNotifyEvent`bir denetim özelliğinin değiştiğini veya değişmek üzere olduğunu kapsayıcının lavabosuna bildiren iki yöntem vardır.
+`CFirePropNotifyEvent` , kapsayıcının havuzuna bir denetim özelliğinin değiştiğini veya değiştirmek üzere olduğunu bildiren iki yöntem içerir.
 
-Denetiminizi `IPropertyNotifySink`uygulayan sınıf türetilmişse, `CFirePropNotifyEvent` yöntemleri çağırdığınızda `FireOnRequestEdit` veya `FireOnChanged`. Denetim sınıfınız türetilmiş `IPropertyNotifySink`değilse, bu işlevlere yapılan çağrılar S_OK döndürün.
+Denetiminizi uygulayan sınıf öğesinden türetildiyse `IPropertyNotifySink` , `CFirePropNotifyEvent` veya çağırdığınızda yöntemler çağrılır `FireOnRequestEdit` `FireOnChanged` . Denetim sınıfınız öğesinden türetilmediği takdirde `IPropertyNotifySink` , bu işlevlere yapılan çağrılar s_ok döndürür.
 
-Denetim oluşturma hakkında daha fazla bilgi için [ATL Tutorial'a](../../atl/active-template-library-atl-tutorial.md)bakın.
+Denetim oluşturma hakkında daha fazla bilgi için bkz. [ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlctl.h
+**Üstbilgi:** atlctl. h
 
-## <a name="cfirepropnotifyeventfireonchanged"></a><a name="fireonchanged"></a>CfirepropnotifyOlay::fireonchanged
+## <a name="cfirepropnotifyeventfireonchanged"></a><a name="fireonchanged"></a> CFirePropNotifyEvent:: FireOnChanged
 
-Belirtilen nesne özelliğinin değiştiğini tüm bağlı [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimlerini (nesnenin her bağlantı noktasında) bildirir.
+Belirtilen nesne özelliğinin değiştiği tüm bağlı [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimlerini (nesnenin her bağlantı noktasında) bilgilendirir.
 
 ```
 static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
@@ -62,11 +63,11 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-[içinde] Bildirimi gönderen `IUnknown` nesnenin işaretçisi.
+*pUnk dili*<br/>
+'ndaki `IUnknown` Bildirimi gönderen nesnenin işaretçisi.
 
-*Dıspıd*<br/>
-[içinde] Değiştirilen özelliğin tanımlayıcısı.
+*Dı*<br/>
+'ndaki Değiştirilen özelliğin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -74,11 +75,11 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetiminiz bağlantı noktalarını desteklemese bile bu işlevin çağrılması güvenlidir.
+Denetiminiz bağlantı noktalarını desteklemeseler bile bu işlev güvenli bir şekilde çağrılamaz.
 
-## <a name="cfirepropnotifyeventfireonrequestedit"></a><a name="fireonrequestedit"></a>CFirePropNotifyOlay::FireOnRequestedit
+## <a name="cfirepropnotifyeventfireonrequestedit"></a><a name="fireonrequestedit"></a> CFirePropNotifyEvent:: Fireonrequestedıt
 
-Belirtilen nesne özelliğinin değişmek üzere olduğunu tüm bağlı [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimleri (nesnenin her bağlantı noktasında) bildirir.
+Belirtilen nesne özelliğinin değiştirmek üzere olduğu tüm bağlı [IPropertyNotifySink](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimlerini (nesnesinin her bağlantı noktasında) bilgilendirir.
 
 ```
 static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
@@ -86,11 +87,11 @@ static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Punk*<br/>
-[içinde] Bildirimi gönderen `IUnknown` nesnenin işaretçisi.
+*pUnk dili*<br/>
+'ndaki `IUnknown` Bildirimi gönderen nesnenin işaretçisi.
 
-*Dıspıd*<br/>
-[içinde] Değişmek üzere olan özelliğin tanımlayıcısı.
+*Dı*<br/>
+'ndaki Değiştirilecek özelliğin tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -98,8 +99,8 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetiminiz bağlantı noktalarını desteklemese bile bu işlevin çağrılması güvenlidir.
+Denetiminiz bağlantı noktalarını desteklemeseler bile bu işlev güvenli bir şekilde çağrılamaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

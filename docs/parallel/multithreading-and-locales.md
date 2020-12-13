@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çoklu Iş parçacığı ve yerel ayarlar'
 title: Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - threading [C++], locales
 - per-thread locale
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
-ms.openlocfilehash: 82b410c592e5b68737514dda5a864c7bd15f6dc3
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 246eb6c9be7046a77770de701d15754579b66055
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008585"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149987"
 ---
 # <a name="multithreading-and-locales"></a>Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 

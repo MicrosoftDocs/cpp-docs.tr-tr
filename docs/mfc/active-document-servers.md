@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: etkin belge sunucuları'
 title: Etkin Belge Sunucuları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - servers [MFC], active document
 - active document servers [MFC]
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
-ms.openlocfilehash: 58f2a63a8c640e6ae31640af680894763603e1d0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 37a8e74b0c4b1b37bb031db522bed394c2a9d545
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619149"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150325"
 ---
 # <a name="active-document-servers"></a>Etkin Belge Sunucuları
 
@@ -23,7 +24,7 @@ MFC, belge/görünüm arabirimleri, komut gönderme haritaları, yazdırma, men�
 
 MFC [CDocObjectServer](reference/cdocobjectserver-class.md) sınıfı ile etkin belgeleri destekler, [CCmdTarget](reference/ccmdtarget-class.md)ve [CDocObjectServerItem](reference/cdocobjectserveritem-class.md)öğesinden türetilir, [coleserveröğesinden](reference/coleserveritem-class.md)türetilir. MFC Colet [Clienentidıtem](reference/coleclientitem-class.md)öğesinden türetilmiş [Copadocobjectıtem](reference/coledocobjectitem-class.md) sınıfıyla etkin belge kapsayıcılarını destekler.
 
-`CDocObjectServer`etkin belge arabirimlerini eşleştirir ve etkin bir belgeyi başlatır ve etkinleştirir. MFC Ayrıca, ETKIN belgelerde komut yönlendirmeyi işlemek için makrolar sağlar. Uygulamanızdaki etkin belgeleri kullanmak için Stffx. h dosyanıza AfxDocOb. h ekleyin.
+`CDocObjectServer` etkin belge arabirimlerini eşleştirir ve etkin bir belgeyi başlatır ve etkinleştirir. MFC Ayrıca, ETKIN belgelerde komut yönlendirmeyi işlemek için makrolar sağlar. Uygulamanızdaki etkin belgeleri kullanmak için Stffx. h dosyanıza AfxDocOb. h ekleyin.
 
 Normal MFC sunucusu kendi kendine `COleServerItem` türetilmiş sınıfını takar. Uygulama sunucunuza Birleşik belge desteğini sağlamak için **mini sunucu** veya **tam sunucu** onay kutusunu seçerseniz, MFC Uygulama Sihirbazı sizin için bu sınıfı oluşturur. **Etkin belge sunucusu** onay kutusunu da SEÇERSENIZ, MFC Uygulama Sihirbazı bunun yerine öğesinden türetilmiş bir sınıf oluşturur `CDocObjectServerItem` .
 

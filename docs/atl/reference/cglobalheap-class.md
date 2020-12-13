@@ -1,5 +1,6 @@
 ---
-title: CGlobalHeap Sınıfı
+description: 'Daha fazla bilgi edinin: CGlobalHeap sınıfı'
+title: CGlobalHeap sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CGlobalHeap
@@ -11,21 +12,21 @@ f1_keywords:
 helpviewer_keywords:
 - CGlobalHeap class
 ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
-ms.openlocfilehash: d596fd51c1bf33f606c1f14c9e8dbd2f1926c7f8
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 349dd2155bdc68024171c07e48c648bae2b6aa7e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141694"
 ---
-# <a name="cglobalheap-class"></a>CGlobalHeap Sınıfı
+# <a name="cglobalheap-class"></a>CGlobalHeap sınıfı
 
-Bu sınıf Win32 küresel yığın işlevlerini kullanarak [IAtlMemgr](../../atl/reference/iatlmemmgr-class.md) uygular.
+Bu sınıf, Win32 genel yığın işlevlerini kullanarak [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) uygular.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CGlobalHeap : public IAtlMemMgr
@@ -35,23 +36,23 @@ class CGlobalHeap : public IAtlMemMgr
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CGlobalHeap::Ayırma](#allocate)|Bellek bloğunu ayırmak için bu yöntemi çağırın.|
-|[CGlobalHeap::Ücretsiz](#free)|Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest kaldırmak için bu yöntemi arayın.|
-|[CGlobalHeap::GetSize](#getsize)|Bu bellek yöneticisi tarafından ayrılan bellek bloğu ayrılmış boyutunu almak için bu yöntemi arayın.|
-|[CGlobalHeap::Tahsis](#reallocate)|Bu bellek yöneticisi tarafından ayrılan belleği yeniden tahsis etmek için bu yöntemi arayın.|
+|[CGlobalHeap:: ayır](#allocate)|Bellek bloğunu ayırmak için bu yöntemi çağırın.|
+|[CGlobalHeap:: ücretsiz](#free)|Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunu boşaltmak için bu yöntemi çağırın.|
+|[CGlobalHeap:: GetSize](#getsize)|Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunun ayrılan boyutunu almak için bu yöntemi çağırın.|
+|[CGlobalHeap:: yeniden tahsis](#reallocate)|Bu bellek Yöneticisi tarafından ayrılan belleği yeniden ayırmak için bu yöntemi çağırın.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CGlobalHeap`Win32 genel yığın işlevlerini kullanarak bellek ayırma işlevlerini uygular.
+`CGlobalHeap` Win32 genel yığın işlevlerini kullanarak bellek ayırma işlevlerini uygular.
 
 > [!NOTE]
-> Genel yığın işlevleri diğer bellek yönetimi işlevlerinden daha yavaşve birçok özellik sağlamaz. Bu nedenle, yeni uygulamalar [yığın işlevleri](/windows/win32/Memory/heap-functions)ni kullanmalıdır. Bunlar [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfında mevcuttur. Genel işlevler hala DDE ve pano işlevleri tarafından kullanılır.
+> Genel yığın işlevleri diğer bellek yönetimi işlevlerinden daha yavaştır ve birçok özellik sağlamaz. Bu nedenle, yeni uygulamalar [yığın işlevlerini](/windows/win32/Memory/heap-functions)kullanmalıdır. Bunlar [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfında mevcuttur. Genel işlevler hala DDE ve Pano işlevleri tarafından kullanılmaktadır.
 
 ## <a name="example"></a>Örnek
 
-[IAtlMemmgr](../../atl/reference/iatlmemmgr-class.md)örneğine bakın.
+[IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)örneğine bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -61,9 +62,9 @@ class CGlobalHeap : public IAtlMemMgr
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlmem.h
+**Üstbilgi:** atlmem. h
 
-## <a name="cglobalheapallocate"></a><a name="allocate"></a>CGlobalHeap::Ayırma
+## <a name="cglobalheapallocate"></a><a name="allocate"></a> CGlobalHeap:: ayır
 
 Bellek bloğunu ayırmak için bu yöntemi çağırın.
 
@@ -73,7 +74,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBayt*<br/>
+*nBytes*<br/>
 Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -82,13 +83,13 @@ Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CGlobalHeap'ı Arayın::Ücretsiz](#free) veya [CGlobalHeap::Bu](#reallocate) yöntemle ayrılan belleği serbest etmek için yeniden bulunun.
+Bu yöntem tarafından ayrılan belleği serbest bırakmak için [CGlobalHeap:: Free](#free) veya [CGlobalHeap::](#reallocate) ' i çağırın.
 
-GMEM_FIXED bayrak parametresi ile [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) kullanılarak uygulanır.
+Bir GMEM_FIXED bayrak parametresiyle [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) kullanılarak uygulanır.
 
-## <a name="cglobalheapfree"></a><a name="free"></a>CGlobalHeap::Ücretsiz
+## <a name="cglobalheapfree"></a><a name="free"></a> CGlobalHeap:: ücretsiz
 
-Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest kaldırmak için bu yöntemi arayın.
+Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunu boşaltmak için bu yöntemi çağırın.
 
 ```
 virtual void Free(void* p) throw();
@@ -96,16 +97,16 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*P*<br/>
-Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi. NULL geçerli bir değerdir ve hiçbir şey yapmaz.
+*Lama*<br/>
+Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi. NULL geçerli bir değerdir ve hiçbir şey yapmaz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree)kullanılarak uygulanmaktadır.
+[GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree)kullanılarak uygulanır.
 
-## <a name="cglobalheapgetsize"></a><a name="getsize"></a>CGlobalHeap::GetSize
+## <a name="cglobalheapgetsize"></a><a name="getsize"></a> CGlobalHeap:: GetSize
 
-Bu bellek yöneticisi tarafından ayrılan bellek bloğu ayrılmış boyutunu almak için bu yöntemi arayın.
+Bu bellek Yöneticisi tarafından ayrılan bir bellek bloğunun ayrılan boyutunu almak için bu yöntemi çağırın.
 
 ```
 virtual size_t GetSize(void* p) throw();
@@ -113,20 +114,20 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*P*<br/>
-Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi.
+*Lama*<br/>
+Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Baytlar halinde ayrılan bellek bloğunun boyutunu döndürür.
+Ayrılan bellek bloğunun boyutunu bayt cinsinden döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
 [GlobalSize](/windows/win32/api/winbase/nf-winbase-globalsize)kullanılarak uygulanır.
 
-## <a name="cglobalheapreallocate"></a><a name="reallocate"></a>CGlobalHeap::Tahsis
+## <a name="cglobalheapreallocate"></a><a name="reallocate"></a> CGlobalHeap:: yeniden tahsis
 
-Bu bellek yöneticisi tarafından ayrılan belleği yeniden tahsis etmek için bu yöntemi arayın.
+Bu bellek Yöneticisi tarafından ayrılan belleği yeniden ayırmak için bu yöntemi çağırın.
 
 ```
 virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
@@ -134,10 +135,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*P*<br/>
-Bu bellek yöneticisi tarafından daha önce tahsis edilen belleğe işaretçi.
+*Lama*<br/>
+Bu bellek Yöneticisi tarafından daha önce ayrılan bellek işaretçisi.
 
-*nBayt*<br/>
+*nBytes*<br/>
 Yeni bellek bloğunda istenen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -146,15 +147,15 @@ Yeni ayrılan bellek bloğunun başlangıcına bir işaretçi döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[CGlobalHeap'ı arayın::Bu](#free) yöntemle ayrılan belleği serbest serbest kılmış için ücretsiz.
+Bu yöntem tarafından ayrılan belleği serbest bırakmak için [CGlobalHeap:: Free](#free) çağırın.
 
-[GlobalReAlloc](/windows/win32/api/winbase/nf-winbase-globalrealloc)kullanılarak uygulanmaktadır.
+[GlobalReAlloc](/windows/win32/api/winbase/nf-winbase-globalrealloc)kullanılarak uygulandı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
-[CComHeap Sınıfı](../../atl/reference/ccomheap-class.md)<br/>
-[CWin32Heap Sınıfı](../../atl/reference/cwin32heap-class.md)<br/>
-[CLocalHeap Sınıfı](../../atl/reference/clocalheap-class.md)<br/>
-[CCRTHeap Sınıfı](../../atl/reference/ccrtheap-class.md)<br/>
-[IAtlMemMgr Sınıfı](../../atl/reference/iatlmemmgr-class.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[CComHeap sınıfı](../../atl/reference/ccomheap-class.md)<br/>
+[CWin32Heap sınıfı](../../atl/reference/cwin32heap-class.md)<br/>
+[CLocalHeap sınıfı](../../atl/reference/clocalheap-class.md)<br/>
+[CCRTHeap sınıfı](../../atl/reference/ccrtheap-class.md)<br/>
+[IAtlMemMgr sınıfı](../../atl/reference/iatlmemmgr-class.md)

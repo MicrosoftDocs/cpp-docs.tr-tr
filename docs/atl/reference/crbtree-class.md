@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CRBTree sınıfı'
 title: CRBTree sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -27,18 +28,18 @@ f1_keywords:
 helpviewer_keywords:
 - CRBTree class
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
-ms.openlocfilehash: 7b8e47b5cd0ac278711947abc867956333371be3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3c45c8b05429ba75905912d76f87605a07ff49e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833497"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140978"
 ---
 # <a name="crbtree-class"></a>CRBTree sınıfı
 
-Bu sınıf, kırmızı siyah ağaç oluşturmak ve kullanmak için yöntemler sağlar.
+Bu sınıf Red-Black ağacı oluşturmak ve kullanmak için yöntemler sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <typename K,
@@ -53,7 +54,7 @@ class CRBTree
 *K*<br/>
 Anahtar öğe türü.
 
-*Yönetim*<br/>
+*V*<br/>
 Değer öğesi türü.
 
 *Knitelikler*<br/>
@@ -108,7 +109,7 @@ Değer öğelerini kopyalamak veya taşımak için kullanılan kod.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kırmızı-siyah ağaç, "dengeli" olarak kalmasını sağlamak için düğüm başına fazladan bir bilgi kullanan bir ikili arama ağacıdır, yani ağaç yüksekliği orantısız bir şekilde büyümez ve performansı etkiler.
+Red-Black ağacı, düğüm başına fazladan bir bilgi kullanan bir ikili arama ağacıdır; Yani, ağaç yüksekliği orantısız bir şekilde büyümez ve performansı etkiler.
 
 Bu şablon sınıfı, [CRBMap](../../atl/reference/crbmap-class.md) ve [CRBMultiMap](../../atl/reference/crbmultimap-class.md)tarafından kullanılmak üzere tasarlanmıştır. Bu türetilmiş sınıfları oluşturan yöntemlerin toplu yöntemi tarafından sağlanır `CRBTree` .
 
@@ -188,7 +189,7 @@ Konum değeri.
 *anahtar*<br/>
 Anahtarı alan değişken.
 
-*deeri*<br/>
+*değer*<br/>
 Değeri alan değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -291,7 +292,7 @@ void GetNextAssoc(
 *anahtar*<br/>
 Ağaç anahtarının türünü belirten şablon parametresi.
 
-*deeri*<br/>
+*değer*<br/>
 Ağaç değerinin türünü belirten şablon parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -467,7 +468,7 @@ void SetValueAt(POSITION pos, VINARGTYPE value);
 *'un*<br/>
 [CRBTree:: GetHeadPosition](#getheadposition) veya [CRBTree:: FindFirstKeyAfter](#findfirstkeyafter)gibi yöntemlere yapılan bir çağrı tarafından döndürülen konum sayacı.
 
-*deeri*<br/>
+*değer*<br/>
 Nesneye eklenecek değer `CRBTree` .
 
 ### <a name="remarks"></a>Açıklamalar

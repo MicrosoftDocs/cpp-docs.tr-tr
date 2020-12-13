@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: etkin belge kapsayıcıları'
 title: Etkin Belge Kapsayıcıları
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - containers [MFC], active document
 - MFC COM, active document containment
 ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
-ms.openlocfilehash: dc7017a205bedd716e5c87aa23ac96b257af2e16
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 31cf2739595cb7a48b152dcefb6c21970b95f8bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150416"
 ---
 # <a name="active-document-containers"></a>Etkin Belge Kapsayıcıları
 
@@ -30,13 +31,13 @@ Etkin belge kapsayıcıları hakkında daha fazla bilgi için bkz.:
 
 - [Çerçeve nesnesi](#frame_object)
 
-- [Yardım Menüsü Birleştirme](help-menu-merging.md)
+- [Yardım menüsü birleştirme](help-menu-merging.md)
 
-- [Program Aracılığıyla Yazdırma](programmatic-printing.md)
+- [Programlı yazdırma](programmatic-printing.md)
 
 - [Komut hedefleri](message-handling-and-command-targets.md)
 
-## <a name="container-requirements"></a><a name="container_requirements"></a>Kapsayıcı gereksinimleri
+## <a name="container-requirements"></a><a name="container_requirements"></a> Kapsayıcı gereksinimleri
 
 Etkin belge kapsayıcısında etkin belge desteği, yalnızca arabirim uygulamalarından daha fazlasını gösterir: Ayrıca, kapsanan bir nesnenin arabirimlerini kullanma bilgisi de gerektirir. Aynı zamanda kapsayıcı, etkin belge uzantıları için de geçerlidir. burada kapsayıcı, bu uzantı arabirimlerini etkin belgelerde nasıl kullanacağınızı da bilmelidir.
 
@@ -58,7 +59,7 @@ Aşağıdaki şekilde, bir kapsayıcı ve bileşenleri (solda) ve etkin belge ve
 
 Yalnızca tek bir görünümü destekleyen bir belge, hem görünüm hem de belge bileşenlerini (diğer bir deyişle, bunlara karşılık gelen arabirimleri) tek bir somut sınıfta uygulayabilir. Ayrıca, aynı anda yalnızca bir görünümü destekleyen bir kapsayıcı sitesi belge sitesini ve Görünüm sitesini tek bir somut site sınıfında birleştirebilir. Ancak kapsayıcının çerçeve nesnesi ayrı kalmalıdır ve kapsayıcının belge bileşeni, mimarinin tamamen bir resmini sağlamak için yalnızca buraya eklenir; etkin belge kapsama mimarisinden etkilenmez.
 
-## <a name="document-site-objects"></a><a name="document_site_objects"></a>Belge site nesneleri
+## <a name="document-site-objects"></a><a name="document_site_objects"></a> Belge site nesneleri
 
 Etkin belge kapsama mimarisinde, bir belge sitesi, arabirimi ek olarak OLE belgelerindeki istemci sitesi nesnesiyle aynıdır `IOleDocument` :
 
@@ -71,17 +72,17 @@ interface IOleDocumentSite : IUnknown
 
 Belge sitesi, bir veya daha fazla "görünüm sitesi" nesnesi için kavramsal olarak kapsayıcıdır. Her görünüm sitesi nesnesi, belge sitesi tarafından yönetilen belgenin ayrı görünüm nesneleriyle ilişkilendirilir. Kapsayıcı her belge sitesi için yalnızca tek bir görünümü destekliyorsa, belge sitesini ve Görünüm sitesini tek bir somut sınıfla uygulayabilir.
 
-## <a name="view-site-objects"></a><a name="view_site_objects"></a>Site nesnelerini görüntüle
+## <a name="view-site-objects"></a><a name="view_site_objects"></a> Site nesnelerini görüntüle
 
 Kapsayıcının Görünüm site nesnesi, bir belgenin belirli bir görünümü için görüntüleme alanını yönetir. Standart arabirimi desteklemeye ek olarak `IOleInPlaceSite` , bir görünüm sitesi de genellikle `IContinueCallback` programlı yazdırma denetimi için de uygulanır. (Görünüm nesnesinin, `IContinueCallback` kapsayıcının istediği herhangi bir nesne üzerine gerçekten uygulanabilmesi için hiçbir şekilde sorgu olmadığını unutmayın.)
 
 Birden çok görünümü destekleyen bir kapsayıcının belge sitesinde birden çok görünüm site nesnesi oluşturabiliyor olması gerekir. Bu, her bir görünümü ile sağlandığı şekilde ayrı etkinleştirme ve devre dışı bırakma hizmetleriyle sağlar `IOleInPlaceSite` .
 
-## <a name="frame-object"></a><a name="frame_object"></a>Çerçeve nesnesi
+## <a name="frame-object"></a><a name="frame_object"></a> Çerçeve nesnesi
 
 Kapsayıcının çerçeve nesnesi, çoğu bölüm için, OLE belgelerinde yerinde etkinleştirme için kullanılan çerçeve, diğer bir deyişle, menü ve araç çubuğu anlaşmasını işleyen bir çerçevedir. Bir görünüm nesnesi, bu çerçeve nesnesine erişimi vardır ve `IOleInPlaceSite::GetWindowContext` kapsayıcı belgeyi temsil eden kapsayıcı nesnesine erişim sağlar (Bu, bölme düzeyi araç çubuğu anlaşmasını işleyebilir ve nesne numaralandırması dahil olabilir).
 
-Etkin bir belge kapsayıcısı ekleyerek çerçeveyi artırabilir `IOleCommandTarget` . Bu, bu arabirimin aynı komutları (örneğin, **Yeni**, **açma**, **farklı kaydet**, **Yazdır**gibi) gönderebilmesi için etkin belgenin kullanıcı arabiriminden kaynaklanan komutları almasına izin verir. **Kopyalamayı**, **yapıştırmayı**, **geri al**ve diğerlerini) etkin bir belgeye düzenleyin. Daha fazla bilgi için bkz. [komut hedefleri](message-handling-and-command-targets.md).
+Etkin bir belge kapsayıcısı ekleyerek çerçeveyi artırabilir `IOleCommandTarget` . Bu, bu arabirimin aynı komutları (örneğin, **Yeni**, **açma**, **farklı kaydet**, **Yazdır** gibi) gönderebilmesi için etkin belgenin kullanıcı arabiriminden kaynaklanan komutları almasına izin verir. **Kopyalamayı**, **yapıştırmayı**, **geri al** ve diğerlerini) etkin bir belgeye düzenleyin. Daha fazla bilgi için bkz. [komut hedefleri](message-handling-and-command-targets.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

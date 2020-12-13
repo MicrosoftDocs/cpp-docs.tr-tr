@@ -1,23 +1,24 @@
 ---
+description: 'Daha fazla bilgi edinin: GOTO'
 title: GOTO (MASM)
 ms.date: 12/16/2019
 helpviewer_keywords:
 - GOTO directive
 ms.assetid: 6a5f73e7-6784-4eae-ac52-4fc77a7f369f
-ms.openlocfilehash: 18f286d8634202b57dea788aa6984755a5afb197
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: ab373d77cbfb660d4cc256e39de38b7f066eac27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130266"
 ---
 # <a name="goto"></a>GOTO
 
-Derlemeyi işaretlenen satıra aktarır **:** _makro etiketi_.
+Derlemeyi işaretlenen satıra aktarır **:**_makro etiketi_.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **GOTO** *Makroetiketi* git
+>  *Makroetiketi* git
 
 ## <a name="remarks"></a>Açıklamalar
 

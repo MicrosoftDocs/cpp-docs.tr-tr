@@ -1,5 +1,6 @@
 ---
-title: IPersistStorageImpl Sınıfı
+description: ': IPersistStorageImpl sınıfı hakkında daha fazla bilgi'
+title: IPersistStorageImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - IPersistStorageImpl
@@ -15,19 +16,19 @@ helpviewer_keywords:
 - storage, ATL
 - IPersistStorageImpl class
 ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
-ms.openlocfilehash: b235b190f237293932705e4d290ac963088722f3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1d3d996886b587c25988139eed62e409650b5d4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326478"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139340"
 ---
-# <a name="ipersiststorageimpl-class"></a>IPersistStorageImpl Sınıfı
+# <a name="ipersiststorageimpl-class"></a>IPersistStorageImpl sınıfı
 
-Bu sınıf [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) arabirimini uygular.
+Bu sınıf, [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) arabirimini uygular.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,29 +40,29 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 #### <a name="parameters"></a>Parametreler
 
 *T*<br/>
-Sınıfınızdan `IPersistStorageImpl`türetilmiştir.
+Sınıfınız, öğesinden türetilir `IPersistStorageImpl` .
 
 ## <a name="members"></a>Üyeler
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[IPersistStorageImpl::GetClassID](#getclassid)|Nesnenin CLSID'sini alır.|
-|[IPersistStorageImpl::HandsOffStorage](#handsoffstorage)|Nesneye tüm depolama nesnelerini serbest bırakmasını ve HandsOff moduna girmesini bildirir. ATL uygulaması S_OK döndürür.|
-|[IPersistStorageImpl::InitNew](#initnew)|Yeni bir deponun başlatılmasını sağlar.|
-|[IPersistStorageImpl::IsDirty](#isdirty)|Nesnenin verilerinin son kaydedildiği tarihten bu yana değişip değişmediğini denetler.|
-|[IPersistStorageImpl::Yük](#load)|Nesnenin özelliklerini belirtilen depolamadan yükler.|
-|[IPersistStorageImpl::Kaydet](#save)|Nesnenin özelliklerini belirtilen depolama alanına kaydeder.|
-|[IPersistStorageImpl::SaveCompleted](#savecompleted)|Bir nesneyi depolama nesnesine yazmak için Normal modda dönebileceğini belirtir. ATL uygulaması S_OK döndürür.|
+|[IPersistStorageImpl:: GetClassID](#getclassid)|Nesnenin CLSID 'sini alır.|
+|[IPersistStorageImpl:: HandsOffStorage](#handsoffstorage)|Nesneye tüm depolama nesnelerini serbest bırakmasını ve HandsOff modunu girmelerini söyler. ATL uygulama S_OK döndürür.|
+|[IPersistStorageImpl:: InitNew](#initnew)|Yeni bir depolama alanı başlatır.|
+|[IPersistStorageImpl:: IsDirty](#isdirty)|Nesnenin verilerinin son kaydedilmesinden bu yana değişip değişmediğini denetler.|
+|[IPersistStorageImpl:: Load](#load)|Nesnenin özelliklerini belirtilen depolamadan yükler.|
+|[IPersistStorageImpl:: Save](#save)|Nesnenin özelliklerini belirtilen depolamaya kaydeder.|
+|[IPersistStorageImpl:: SaveCompleted](#savecompleted)|Bir nesneye, kendi depolama nesnesine yazmak için normal moda dönebildii bildirir. ATL uygulama S_OK döndürür.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`IPersistStorageImpl`bir istemcinin nesneyükünüzü yüklemesini ve kalıcı verilerini bir depolama kullanarak kaydetmesini istemesine olanak tanıyan [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) arabirimini uygular.
+`IPersistStorageImpl` bir istemcinin, nesne yükleme ve kalıcı verilerini depolama kullanarak kaydetmesine izin veren [IPersistStorage](/windows/win32/api/objidl/nn-objidl-ipersiststorage) arabirimini uygular.
 
-Bu sınıfın uygulanması, `T` `IPersistStreamInit` sınıfın arabirimin bir uygulamasını `QueryInterface`kullanılabilir hale getirmesini gerektirir. Genellikle bu, sınıfın `T` [IPersistStreamInitImpl'den](../../atl/reference/ipersiststreaminitimpl-class.md)türemesi, `IPersistStreamInit` COM [haritasında](com-map-macros.md)bir giriş sağlaması ve sınıfın kalıcı verilerini açıklamak için bir [özellik eşlemesi](property-map-macros.md) kullanması gerektiği anlamına gelir.
+Bu sınıfın uygulanması, `T` ile kullanılabilir arabirimin bir uygulamasını oluşturmak için sınıfını gerektirir `IPersistStreamInit` `QueryInterface` . Genellikle bu `T` , sınıfın [ıpersiststreaminimpl](../../atl/reference/ipersiststreaminitimpl-class.md)öğesinden türetilmesi, com haritasında için bir giriş sağlamasıdır `IPersistStreamInit` ve [](com-map-macros.md)sınıfın kalıcı verilerini anlatmak için bir [özellik eşlemesi](property-map-macros.md) kullanmanız anlamına gelir.
 
-**İlgili Makaleler** [ATL Tutorial](../../atl/active-template-library-atl-tutorial.md), [ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)
+**Ilgili makaleler** [ATL öğreticisi](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -71,11 +72,11 @@ Bu sınıfın uygulanması, `T` `IPersistStreamInit` sınıfın arabirimin bir u
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** atlcom.h
+**Üstbilgi:** atlcom. h
 
-## <a name="ipersiststorageimplgetclassid"></a><a name="getclassid"></a>IPersistStorageImpl::GetClassID
+## <a name="ipersiststorageimplgetclassid"></a><a name="getclassid"></a> IPersistStorageImpl:: GetClassID
 
-Nesnenin CLSID'sini alır.
+Nesnenin CLSID 'sini alır.
 
 ```
 STDMETHOD(GetClassID)(CLSID* pClassID);
@@ -83,11 +84,11 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. IPersist::Windows SDK'da [ClassID'yi alın.](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid)
+Windows SDK bkz. [IPersist:: GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) .
 
-## <a name="ipersiststorageimplhandsoffstorage"></a><a name="handsoffstorage"></a>IPersistStorageImpl::HandsOffStorage
+## <a name="ipersiststorageimplhandsoffstorage"></a><a name="handsoffstorage"></a> IPersistStorageImpl:: HandsOffStorage
 
-Nesneye tüm depolama nesnelerini serbest bırakmasını ve HandsOff moduna girmesini bildirir.
+Nesneye tüm depolama nesnelerini serbest bırakmasını ve HandsOff modunu girmelerini söyler.
 
 ```
 STDMETHOD(HandsOffStorage)(void);
@@ -99,11 +100,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. [IPersistStorage::HandsOffStorage](/windows/win32/api/objidl/nf-objidl-ipersiststorage-handsoffstorage) Windows SDK içinde.
+Windows SDK bkz. [IPersistStorage:: HandsOffStorage](/windows/win32/api/objidl/nf-objidl-ipersiststorage-handsoffstorage) .
 
-## <a name="ipersiststorageimplinitnew"></a><a name="initnew"></a>IPersistStorageImpl::InitNew
+## <a name="ipersiststorageimplinitnew"></a><a name="initnew"></a> IPersistStorageImpl:: InitNew
 
-Yeni bir deponun başlatılmasını sağlar.
+Yeni bir depolama alanı başlatır.
 
 ```
 STDMETHOD(InitNew)(IStorage*);
@@ -111,13 +112,13 @@ STDMETHOD(InitNew)(IStorage*);
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL uygulama temsilcileri [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimine bağlanır.
+ATL uygulaması [ıpersiststreaminit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimine temsilci seçer.
 
-Bkz. [IPersistStorage:InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) in the Windows SDK.
+Windows SDK [IPersistStorage: InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) öğesine bakın.
 
-## <a name="ipersiststorageimplisdirty"></a><a name="isdirty"></a>IPersistStorageImpl::IsDirty
+## <a name="ipersiststorageimplisdirty"></a><a name="isdirty"></a> IPersistStorageImpl:: IsDirty
 
-Nesnenin verilerinin son kaydedildiği tarihten bu yana değişip değişmediğini denetler.
+Nesnenin verilerinin son kaydedilmesinden bu yana değişip değişmediğini denetler.
 
 ```
 STDMETHOD(IsDirty)(void);
@@ -125,11 +126,11 @@ STDMETHOD(IsDirty)(void);
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL uygulama temsilcileri [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimine bağlanır.
+ATL uygulaması [ıpersiststreaminit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimine temsilci seçer.
 
-Bkz. [IPersistStorage:Windows](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) SDK'da Kirli.
+Bkz. [IPersistStorage: Windows SDK IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) .
 
-## <a name="ipersiststorageimplload"></a><a name="load"></a>IPersistStorageImpl::Yük
+## <a name="ipersiststorageimplload"></a><a name="load"></a> IPersistStorageImpl:: Load
 
 Nesnenin özelliklerini belirtilen depolamadan yükler.
 
@@ -139,13 +140,13 @@ STDMETHOD(Load)(IStorage* pStorage);
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL uygulama temsilcileri [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimine bağlanır. `Load`nesnenin verilerini almak için "İçerik" adlı bir akış kullanır. [Kaydet](#save) yöntemi özgün olarak bu akışı oluşturur.
+ATL uygulaması [ıpersiststreaminit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimine temsilci seçer. `Load` nesnenin verilerini almak için "Contents" adlı bir akış kullanır. [Kaydet](#save) yöntemi başlangıçta bu akışı oluşturur.
 
-Bkz. [IPersistStorage:Windows](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) SDK'da yükleyin.
+Bkz. [IPersistStorage: Windows SDK yükleme](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) .
 
-## <a name="ipersiststorageimplsave"></a><a name="save"></a>IPersistStorageImpl::Kaydet
+## <a name="ipersiststorageimplsave"></a><a name="save"></a> IPersistStorageImpl:: Save
 
-Nesnenin özelliklerini belirtilen depolama alanına kaydeder.
+Nesnenin özelliklerini belirtilen depolamaya kaydeder.
 
 ```
 STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
@@ -153,13 +154,13 @@ STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 
 ### <a name="remarks"></a>Açıklamalar
 
-ATL uygulama temsilcileri [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimine bağlanır. İlk `Save` çağrıldığında, belirtilen depolama üzerinde "İçerik" adlı bir akış oluşturur. Bu akış daha sonra yük `Save` aramalarında ve [Yükleme](#load)aramalarında kullanılır.
+ATL uygulaması [ıpersiststreaminit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimine temsilci seçer. `Save`İlk kez çağrıldığında, belirtilen depolamada "Contents" adlı bir akış oluşturur. Bu akış daha sonra `Save` [yüklemek](#load)için çağrılarında ve çağrılarına daha sonra kullanılır.
 
-Bkz. [IPersistStorage:Windows](/windows/win32/api/objidl/nf-objidl-ipersiststorage-save) SDK'da kaydedin.
+Bkz. [IPersistStorage: Windows SDK kaydetme](/windows/win32/api/objidl/nf-objidl-ipersiststorage-save) .
 
-## <a name="ipersiststorageimplsavecompleted"></a><a name="savecompleted"></a>IPersistStorageImpl::SaveCompleted
+## <a name="ipersiststorageimplsavecompleted"></a><a name="savecompleted"></a> IPersistStorageImpl:: SaveCompleted
 
-Bir nesneyi depolama nesnesine yazmak için Normal modda dönebileceğini belirtir.
+Bir nesneye, kendi depolama nesnesine yazmak için normal moda dönebildii bildirir.
 
 ```
 STDMETHOD(SaveCompleted)(IStorage*);
@@ -171,11 +172,11 @@ S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bkz. [IPersistStorage:Windows](/windows/win32/api/objidl/nf-objidl-ipersiststorage-savecompleted) SDK'da Tamamlandı.
+Windows SDK [IPersistStorage: SaveCompleted](/windows/win32/api/objidl/nf-objidl-ipersiststorage-savecompleted) öğesine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Depolama ve Akışlar](/windows/win32/Stg/storages-and-streams)<br/>
-[IPersistStreamInitImpl Sınıfı](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
-[IPersistPropertyBagImpl Sınıfı](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Storages ve akışlar](/windows/win32/Stg/storages-and-streams)<br/>
+[Ipersiststreaminimpl sınıfı](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
+[Ipersistpropertybagimpl sınıfı](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

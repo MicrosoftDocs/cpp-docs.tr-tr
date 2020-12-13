@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: COM Map genel Işlevleri'
 title: COM eşlemesi genel Işlevleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM map global functions
 ms.assetid: b9612d30-eb23-46ef-8093-d56f237d3cf1
-ms.openlocfilehash: adf4e06eb46aed74d08071dccce1db549ca31226
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ee502a68a0a3b21849d2fabdadcc9ecbbcc1602d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833601"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141342"
 ---
 # <a name="com-map-global-functions"></a>COM eşlemesi genel Işlevleri
 
