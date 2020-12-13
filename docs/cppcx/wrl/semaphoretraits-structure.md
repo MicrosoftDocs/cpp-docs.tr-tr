@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SemaphoreTraits Yapısı'
 title: SemaphoreTraits Yapısı
 ms.date: 09/27/2018
 ms.topic: reference
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits structure
 - Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits::Unlock method
 ms.assetid: eddb8576-d063-409b-9201-cc87ca5d111e
-ms.openlocfilehash: 11719576c9fc7b23f4cd318ee1b3ed9ca3f5edaa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5779a30d22fd2d32e57f96f752bb52e2bf469cd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135232"
 ---
 # <a name="semaphoretraits-structure"></a>SemaphoreTraits Yapısı
 
-Nesnenin `Semaphore` ortak özelliklerini tanımlar.
+Bir nesnenin ortak özelliklerini tanımlar `Semaphore` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct SemaphoreTraits : HANDLENullTraits;
@@ -30,9 +31,9 @@ struct SemaphoreTraits : HANDLENullTraits;
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-Adı                               | Açıklama
+Ad                               | Açıklama
 ---------------------------------- | --------------------------------------
-[SemaphoreÖzellikler::Kilidini açın](#unlock) | Paylaşılan kaynağın denetimini serbest bırakır.
+[SemaphoreTraits:: unlock](#unlock) | Paylaşılan bir kaynağın denetimini yayınlar.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -42,13 +43,13 @@ Adı                               | Açıklama
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** corewrappers.h
+**Üstbilgi:** corewrapper. h
 
-**Ad alanı:** Microsoft::WRL::Sarmalayıcılar::HandleTraits
+**Ad alanı:** Microsoft:: WRL:: sarmalayıcılar:: Handlenitelikler
 
-## <a name="semaphoretraitsunlock"></a><a name="unlock"></a>SemaphoreÖzellikler::Kilidini açın
+## <a name="semaphoretraitsunlock"></a><a name="unlock"></a> SemaphoreTraits:: unlock
 
-Paylaşılan kaynağın denetimini serbest bırakır.
+Paylaşılan bir kaynağın denetimini yayınlar.
 
 ```cpp
 inline static void Unlock(
@@ -58,9 +59,9 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>Parametreler
 
-*H*<br/>
-Bir `Semaphore` nesneye tut.
+*h*<br/>
+Bir nesne için tanıtıcı `Semaphore` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kilit açma işlemi başarısız `Unlock()` olursa, hatanın nedenini gösteren bir hata yayır.
+Kilit açma işlemi başarısız olursa, `Unlock()` hatanın nedenini gösteren bir hata yayar.

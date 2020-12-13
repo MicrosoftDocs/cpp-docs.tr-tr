@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: pencere sınıfı makroları'
 title: Pencere sınıfı makroları
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - atlwin/ATL::DECLARE_WND_SUPERCLASS
 - atlwin/ATL::DECLARE_WND_CLASS_EX
 ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
-ms.openlocfilehash: ca19eba1632ef3754b704c82ad5a872160ae0c91
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: eb1abcdfea2f3f7e3a8859473d3fabe734906afe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138691"
 ---
 # <a name="window-class-macros"></a>Pencere sınıfı makroları
 
@@ -95,7 +96,7 @@ DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
 ### <a name="parameters"></a>Parametreler
 
 *WndClassName*<br/>
-'ndaki Üst sınıf *OrigWndClassName*olacak pencere sınıfının adı. NULL ise, ATL bir pencere sınıfı adı oluşturacaktır.
+'ndaki Üst sınıf *OrigWndClassName* olacak pencere sınıfının adı. NULL ise, ATL bir pencere sınıfı adı oluşturacaktır.
 
 *OrigWndClassName*<br/>
 'ndaki Varolan bir pencere sınıfının adı.

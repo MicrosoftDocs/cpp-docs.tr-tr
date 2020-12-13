@@ -1,34 +1,35 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Izlenecek yollar (MFC)'
 title: İzlenecek Yollar (MFC)
 ms.date: 09/20/2018
 helpviewer_keywords:
 - MFC Feature Pack, walkthroughs
 ms.assetid: 20d5756f-ad58-46f4-8b6c-c7a1020b72eb
-ms.openlocfilehash: 5c4b6d507615d991e950897ea07c19c94a5be559
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0fd386054e64287d5785de6c52622f848ad17a26
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62358270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142850"
 ---
 # <a name="walkthroughs-mfc"></a>İzlenecek Yollar (MFC)
 
-Bu bölüm, yeni MFC kitaplık özellikleri ile ilgili çeşitli görevlerde size yol makaleler içerir.
+Bu bölümde, yeni MFC Kitaplığı özellikleriyle ilişkili çeşitli görevlerde size kılavuzluk eden makaleler yer almaktadır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma](../mfc/walkthrough-using-the-new-mfc-shell-controls.md)<br/>
-Bu kılavuzda, dosya Gezgini'ne benzeyen bir uygulama oluşturacaksınız. İki bölme içeren bir pencere oluşturacaksınız. Sol bölmede sahip bir [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) nesnesini Masaüstü hiyerarşik bir görünümü'nde görüntülenir. Sağ bölmede sahip bir [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) gösteren dosyaları sol bölmede seçili klasörde.
+[İzlenecek yol: yeni MFC kabuk denetimlerini kullanma](../mfc/walkthrough-using-the-new-mfc-shell-controls.md)<br/>
+Bu kılavuzda, dosya Gezgini ile benzer bir uygulama oluşturacaksınız. İki bölme içeren bir pencere oluşturacaksınız. Sol bölmede, masaüstünüzü hiyerarşik bir görünümde görüntüleyen bir [Cmfcshelltreeci](../mfc/reference/cmfcshelltreectrl-class.md) nesnesi vardır. Sağ bölmede, sol bölmede seçilen klasördeki dosyaları gösteren bir [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) vardır.
 
-[İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../mfc/walkthrough-putting-controls-on-toolbars.md)<br/>
-Modern MFC araç çubukları, basit düğmeleri dışında denetimleri barındırabilirsiniz. Bu makalede nasıl yapılacağı açıklanmaktadır.
+[İzlenecek yol: araç çubuklarına denetimler yerleştirme](../mfc/walkthrough-putting-controls-on-toolbars.md)<br/>
+Modern MFC araç çubukları, basit düğmelerden farklı denetimleri barındırabilir. Bu makalede nasıl yapılacağı açıklanır.
 
-[İzlenecek yol: MFC Projesine D2D Nesnesi Ekleme](../mfc/walkthrough-adding-a-d2d-object-to-an-mfc-project.md)<br/>
-Bir projesine D2D nesnesi ekleme yapmayı gösteren ve D2D kullanma işlemini kullanıma sunar.
+[İzlenecek yol: bir MFC projesine D2D nesnesi ekleme](../mfc/walkthrough-adding-a-d2d-object-to-an-mfc-project.md)<br/>
+Bir D2D nesnesinin projeye nasıl ekleneceğini ve D2D 'in nasıl kullanılacağını gösterir.
 
-[İzlenecek yol: MFC Projesine Animasyon Ekleme](../mfc/walkthrough-adding-animation-to-an-mfc-project.md)<br/>
-Bir grafik nesnesi bir projeye ekleme yapmayı gösteren ve canlandırabilirsiniz nasıl tanıtır.
+[İzlenecek yol: MFC projesine animasyon ekleme](../mfc/walkthrough-adding-animation-to-an-mfc-project.md)<br/>
+Bir projeye nasıl grafik nesnesi ekleneceğini ve bunun nasıl hareketlendirileceğini açıklar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)
+[MFC masaüstü uygulamaları](../mfc/mfc-desktop-applications.md)

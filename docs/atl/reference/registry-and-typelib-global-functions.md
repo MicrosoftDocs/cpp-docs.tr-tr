@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt defteri ve TypeLib genel Işlevleri'
 title: Kayıt defteri ve TypeLib genel Işlevleri
 ms.date: 03/27/2019
 f1_keywords:
@@ -17,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-ms.openlocfilehash: 0f29f8cac62a7452781e8fde697cdf992db00b8c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d7420dbbb472f1fc8b01329e9ded4c887e2bd71d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138897"
 ---
 # <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel Işlevleri
 
@@ -60,7 +61,7 @@ Bu işlevler, programın bilgileri depolamak için kullandığı kayıt defterin
 
 Uygulamanın kayıt defteri erişimini **HKEY_CURRENT_USER** (**HKCU**) düğümüne yeniden yönlendirip yönlendirmediğini öğrenmek için bu işlevi kullanın.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
@@ -77,7 +78,7 @@ Yöntem başarılı olursa S_OK, aksi takdirde HRESULT hata kodu bir hata oluşu
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt defteri yönlendirmesi varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimi **HKEY_CURRENT_USER \Software\Classes**'a yönlendirilir.
+Kayıt defteri yönlendirmesi varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimi **HKEY_CURRENT_USER\Software\Classes**'a yönlendirilir.
 
 Yeniden yönlendirme genel değildir. Yalnızca MFC ve ATL çerçeveleri bu kayıt defteri yeniden yönlendirmesinin etkilenmiştir.
 
@@ -89,7 +90,7 @@ Yeniden yönlendirme genel değildir. Yalnızca MFC ve ATL çerçeveleri bu kay�
 
 Belirtilen kayıt defteri anahtarını oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
@@ -121,7 +122,7 @@ Bir nesne işaretçisi `CAtlTransactionManager` .
 
 Belirtilen kayıt defteri anahtarını siler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager* pTM = NULL);
@@ -150,7 +151,7 @@ Bir nesne işaretçisi `CAtlTransactionManager` .
 
 Önizleme işleyicisini kaydetme Yardımcısı.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 BOOL AFXAPI AfxRegisterPreviewHandler(LPCTSTR lpszCLSID, LPCTSTR lpszShortTypeName, LPCTSTR lpszFilterExt);
@@ -203,7 +204,7 @@ Bu yardımcı işlev [AtlComModuleUnregisterServer](server-registration-global-f
 
 Belirtilen kayıt defteri anahtarını açar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
@@ -235,7 +236,7 @@ Bir nesne işaretçisi `CAtlTransactionManager` .
 
 Belirtilen kayıt defteri anahtarını açar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM samDesired, PHKEY phkResult, CAtlTransactionManager* pTM = NULL);
@@ -273,7 +274,7 @@ Bir nesne işaretçisi `CAtlTransactionManager` .
 
 Önizleme işleyicisinin kaydını silme Yardımcısı.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 BOOL AFXAPI AfxUnRegisterPreviewHandler(LPCTSTR lpszCLSID);
@@ -292,7 +293,7 @@ Kaydı Kaldırılacak işleyicinin CLSID değerini belirtir.
 
 Uygulamanın kayıt defteri erişimini **HKEY_CURRENT_USER** (**HKCU**) düğümüne yeniden yönlendirip yönlendirmeyeceğini ayarlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
@@ -309,7 +310,7 @@ Yöntem başarılı olursa S_OK, aksi takdirde HRESULT hata kodu bir hata oluşu
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kayıt defteri yönlendirmesi varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimi **HKEY_CURRENT_USER \Software\Classes**'a yönlendirilir.
+Kayıt defteri yönlendirmesi varsayılan olarak etkin değildir. Bu seçeneği etkinleştirirseniz, kayıt defteri erişimi **HKEY_CURRENT_USER\Software\Classes**'a yönlendirilir.
 
 Yeniden yönlendirme genel değildir. Yalnızca MFC ve ATL çerçeveleri bu kayıt defteri yeniden yönlendirmesinin etkilenmiştir.
 
@@ -321,7 +322,7 @@ Yeniden yönlendirme genel değildir. Yalnızca MFC ve ATL çerçeveleri bu kay�
 
 Tür kitaplığının kaydını silmek için bu işlev çağrılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 ATLAPI AtlUnRegisterTypeLib(
@@ -353,7 +354,7 @@ Bu yardımcı işlevi [CAtlComModule:: UnRegisterTypeLib](../../atl/reference/ca
 
 Tür kitaplığını yüklemek için bu işlev çağrılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 ATLINLINE ATLAPI AtlLoadTypeLib(
@@ -397,7 +398,7 @@ Bu işlev Visual Studio 2013 kullanımdan kaldırılmıştır ve Visual Studio 2
 
 Bu işlev, sistem kayıt defterinden okumak veya ona yazmak için kullanılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 HRESULT RegistryDataExchange(

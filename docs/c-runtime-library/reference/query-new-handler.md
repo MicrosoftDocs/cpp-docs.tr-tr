@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _query_new_handler'
 title: _query_new_handler
 ms.date: 11/04/2016
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - error handling
 - _query_new_handler function
 ms.assetid: 9a84b5c3-fe33-4c01-83a0-be87dc3ec518
-ms.openlocfilehash: 9c87a63a9ed94eb1473230aedb5e9c17fcc6410b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8479ad1ffc6ec03d3cff82df645255fc69b16257
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137156"
 ---
 # <a name="_query_new_handler"></a>_query_new_handler
 
 Geçerli yeni işleyici yordamının adresini döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 _PNH _query_new_handler(
@@ -49,7 +50,7 @@ _PNH _query_new_handler(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_Set_new_handler**tarafından ayarlanan geçerli yeni işleyici yordamının adresini döndürür.
+**_Set_new_handler** tarafından ayarlanan geçerli yeni işleyici yordamının adresini döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 

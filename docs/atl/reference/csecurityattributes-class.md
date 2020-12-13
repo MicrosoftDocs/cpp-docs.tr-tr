@@ -1,5 +1,6 @@
 ---
-title: CSecurityAttributes Sınıfı
+description: 'Daha fazla bilgi edinin: CSecurityAttributes sınıfı'
+title: CSecurityAttributes sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSecurityAttributes
@@ -9,21 +10,21 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityAttributes class
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-ms.openlocfilehash: e0ac813008a028bb233adfb4c7409a0ad62a6b78
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 8cb772e574aef4ad941feef1cb838fb91d937576
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81746497"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140822"
 ---
-# <a name="csecurityattributes-class"></a>CSecurityAttributes Sınıfı
+# <a name="csecurityattributes-class"></a>CSecurityAttributes sınıfı
 
-Bu sınıf, güvenlik öznitelikleri yapısı için ince bir sarıcıdır.
+Bu sınıf, güvenlik öznitelikleri yapısına yönelik ince bir sarmalayıcıdır.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CSecurityAttributes : public SECURITY_ATTRIBUTES
@@ -33,21 +34,21 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSecurityAttributes::csecurityAttributes](#csecurityattributes)|Oluşturucu.|
+|[CSecurityAttributes:: CSecurityAttributes](#csecurityattributes)|Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSecurityAttributes::Set](#set)|Nesnenin özniteliklerini ayarlamak `CSecurityAttributes` için bu yöntemi çağırın.|
+|[CSecurityAttributes:: set](#set)|Nesnesinin özniteliklerini ayarlamak için bu yöntemi çağırın `CSecurityAttributes` .|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yapı, `SECURITY_ATTRIBUTES` bir nesnenin oluşturulması için kullanılan bir [güvenlik tanımlayıcısı](/windows/win32/api/winnt/ns-winnt-security_descriptor) içerir ve bu yapıyı belirterek alınan tutamacın devralınıp alınamayacağını belirtir.
+`SECURITY_ATTRIBUTES`Yapı, bir nesnenin oluşturulması için kullanılan bir [güvenlik tanımlayıcısı](/windows/win32/api/winnt/ns-winnt-security_descriptor) içerir ve bu yapıyı belirterek alınan tanıtıcının devralınıp alınmayacağını belirtir.
 
-Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Denetimi'ne](/windows/win32/SecAuthZ/access-control) bakın.
+Windows 'daki erişim denetim modeline giriş için Windows SDK [Access Control](/windows/win32/SecAuthZ/access-control) bakın.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,9 +58,9 @@ Windows'daki erişim denetimi modeline giriş için Windows SDK'daki [Access Den
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlsecurity.h
+**Üstbilgi:** atlsecurity. h
 
-## <a name="csecurityattributescsecurityattributes"></a><a name="csecurityattributes"></a>CSecurityAttributes::csecurityAttributes
+## <a name="csecurityattributescsecurityattributes"></a><a name="csecurityattributes"></a> CSecurityAttributes:: CSecurityAttributes
 
 Oluşturucu.
 
@@ -71,14 +72,14 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
 ### <a name="parameters"></a>Parametreler
 
 *rSecurityDescriptor*<br/>
-Güvenlik tanımlayıcısına başvuru.
+Bir güvenlik tanımlayıcısına başvuru.
 
 *bInheritsHandle*<br/>
-Yeni bir işlem oluşturulduğunda döndürülen tanıtıcının devralınıp alınmayacağını belirtir. Bu üye doğruysa, yeni işlem tanıtıcıyı devralır.
+Yeni bir işlem oluşturulduğunda döndürülen tanıtıcının devralınıp alınmayacağını belirtir. Bu üye true ise, yeni işlem tanıtıcıyı devralır.
 
-## <a name="csecurityattributesset"></a><a name="set"></a>CSecurityAttributes::Set
+## <a name="csecurityattributesset"></a><a name="set"></a> CSecurityAttributes:: set
 
-Nesnenin özniteliklerini ayarlamak `CSecurityAttributes` için bu yöntemi çağırın.
+Nesnesinin özniteliklerini ayarlamak için bu yöntemi çağırın `CSecurityAttributes` .
 
 ```cpp
 void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) throw(...);
@@ -87,19 +88,19 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 ### <a name="parameters"></a>Parametreler
 
 *rSecurityDescriptor*<br/>
-Güvenlik tanımlayıcısına başvuru.
+Bir güvenlik tanımlayıcısına başvuru.
 
 *bInheritHandle*<br/>
-Yeni bir işlem oluşturulduğunda döndürülen tanıtıcının devralınıp alınmayacağını belirtir. Bu üye doğruysa, yeni işlem tanıtıcıyı devralır.
+Yeni bir işlem oluşturulduğunda döndürülen tanıtıcının devralınıp alınmayacağını belirtir. Bu üye true ise, yeni işlem tanıtıcıyı devralır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu `CSecurityAttributes` yöntem, nesneyi başlatmayı oluşturmak için kurucu tarafından kullanılır.
+Bu yöntem, nesneyi başlatmak için Oluşturucu tarafından kullanılır `CSecurityAttributes` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Güvenlik Örneği](../../overview/visual-cpp-samples.md)<br/>
-[Securıty_attrıbutes](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\))<br/>
-[güvenlik tanımlayıcısı](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)<br/>
-[Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)
+[Güvenlik örneği](../../overview/visual-cpp-samples.md)<br/>
+[SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\))<br/>
+[Güvenlik tanımlayıcısı](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)<br/>
+[Güvenlik Genel Işlevleri](../../atl/reference/security-global-functions.md)

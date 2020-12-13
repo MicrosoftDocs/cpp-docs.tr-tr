@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Hizmet Eşlemesi makrolar'
 title: Hizmet Eşlemesi makrolar
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - atlcom/ATL::SERVICE_ENTRY
 - atlcom/ATL::SERVICE_ENTRY_CHAIN
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-ms.openlocfilehash: 1fa163098d89dd949c17ee7cd5e4ddc46cd2a091
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 08a26ac4043b62f8377ca9b4728eb262494f1aa1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138833"
 ---
 # <a name="service-map-macros"></a>Hizmet Eşlemesi makrolar
 
@@ -68,7 +69,7 @@ END_SERVICE_MAP()
 
 ## <a name="service_entry"></a><a name="service_entry"></a> SERVICE_ENTRY
 
-Nesnenin *SID*tarafından belirtilen hizmet kimliğini desteklediğini belirtir.
+Nesnenin *SID* tarafından belirtilen hizmet kimliğini desteklediğini belirtir.
 
 ```
 SERVICE_ENTRY( SID )
@@ -85,7 +86,7 @@ Hizmet KIMLIĞI.
 
 ## <a name="service_entry_chain"></a><a name="service_entry_chain"></a> SERVICE_ENTRY_CHAIN
 
-[Ivıceproviderımpl:: QueryService](#queryservice) , *punk*tarafından belirtilen nesneye zincirde yönlendirir.
+[Ivıceproviderımpl:: QueryService](#queryservice) , *punk* tarafından belirtilen nesneye zincirde yönlendirir.
 
 ```
 SERVICE_ENTRY_CHAIN( punk )

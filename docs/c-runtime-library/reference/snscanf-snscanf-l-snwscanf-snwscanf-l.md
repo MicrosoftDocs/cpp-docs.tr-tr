@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l'
 title: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 ms.date: 11/04/2016
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - strings [C++], reading
 - _snscanf function
 ms.assetid: da1ac890-f905-4cd7-954b-3c90957b5551
-ms.openlocfilehash: f259eede1b2927b4676467c3450504f7ff7c19de
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0098578a012666a498062a78eb9ae17d362ea466
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137026"
 ---
 # <a name="_snscanf-_snscanf_l-_snwscanf-_snwscanf_l"></a>_snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 
@@ -99,24 +100,24 @@ int __cdecl _snwscanf_l(
 İncelenecek giriş dizesi.
 
 *length*<br/>
-*Girişte*incelenecek karakter sayısı.
+*Girişte* incelenecek karakter sayısı.
 
-*format*<br/>
+*formatını*<br/>
 Bir veya daha fazla biçim belirticisi.
 
 *...*<br/>
 Biçim belirticilerine göre, giriş dizesinden ayıklanan değerleri depolamak için kullanılacak isteğe bağlı *değişkenler.*
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Bu işlevlerin her ikisi de başarıyla dönüştürülen ve atanan alanların sayısını döndürür; dönüş değeri, okunan ancak atanmamış alanları içermez. 0 dönüş değeri hiçbir alan atanmadığını gösterir. Dönüş değeri bir hata **için veya** ilk dönüştürmeden önce dizenin sonuna ulaşılırsa. Daha fazla bilgi için bkz. [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
 
-*Giriş* veya *Biçim* **null** işaretçisiyse veya *uzunluk* sıfıra eşit veya daha küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+*Giriş* veya *Biçim* **null** işaretçisiyse veya *uzunluk* sıfıra eşit veya daha küçükse, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **EOF** döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
-Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -135,8 +136,8 @@ Bu işlev **sscanf** gibidir, ancak giriş dizesinden incelemek için sabit say�
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_snscanf**, **_snscanf_l**|\<stdio. h >|
-|**_snwscanf**, **_snwscanf_l**|\<stdio. h > veya \<wchar. h >|
+|**_snscanf**, **_snscanf_l**|\<stdio.h>|
+|**_snwscanf**, **_snwscanf_l**|\<stdio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -175,4 +176,4 @@ _snwscanf converted 2 fields: 15 and 12.000000
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[scanf Genişlik Belirtimi](../../c-runtime-library/scanf-width-specification.md)<br/>
+[scanf genişlik belirtimi](../../c-runtime-library/scanf-width-specification.md)<br/>

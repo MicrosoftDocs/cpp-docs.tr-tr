@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Windows Masaüstü Sihirbazı'
 title: Windows Masaüstü Sihirbazı
 ms.date: 03/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Windows Desktop Wizard
 - Win32 Project Wizard
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
-ms.openlocfilehash: 47984b4c4416bf129efb226381fe778659aa16ca
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b80a5fb23bd9ce2428bee17b9c4ca6fd9401d1e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135934"
 ---
 # <a name="windows-desktop-wizard"></a>Windows Masaüstü Sihirbazı
 
@@ -25,11 +26,11 @@ Aşağıdaki tabloda her uygulama türü için hangi seçeneklerin kullanılabil
 
 |Destek türü|Konsol uygulaması|Yürütülebilir (Windows) uygulaması|Dinamik bağlantı kitaplığı|Statik kitaplık|
 |---------------------|-------------------------|----------------------------------------|---------------------------|--------------------|
-|**Boş proje**|Yes|Yes|Yes|Hayır|
-|**Sembolleri dışarı aktar**|Hayır|Hayır|Yes|Hayır|
-|**Ön derlenmiş üstbilgi**|Hayır|Hayır|Hayır|Yes|
-|**ATL desteği**|Yes|Hayır|Hayır|Hayır|
-|**MFC desteği**|Yes|Hayır|Hayır|Yes|
+|**Boş proje**|Evet|Evet|Evet|Hayır|
+|**Sembolleri dışarı aktar**|Hayır|Hayır|Evet|Hayır|
+|**Ön derlenmiş üstbilgi**|Hayır|Hayır|Hayır|Evet|
+|**ATL desteği**|Evet|Hayır|Hayır|Hayır|
+|**MFC desteği**|Evet|Hayır|Hayır|Evet|
 
 ## <a name="overview"></a>Genel Bakış
 
@@ -83,7 +84,7 @@ Bir Windows masaüstü uygulaması oluşturduktan sonra [genel](../ide/adding-a-
 > [!NOTE]
 > ATL sınıfları ekleyemez ve yalnızca MFC 'yi destekleyen Windows Masaüstü uygulama türlerine MFC sınıfları ekleyebilirsiniz (önceki tabloya bakın).
 
-Projeniz için sihirbaz tarafından oluşturulan dosyaları **Çözüm Gezgini**görüntüleyebilirsiniz. Sihirbazın projeniz için oluşturduğu dosyalar hakkında daha fazla bilgi için, proje tarafından oluşturulan dosya, bkz `ReadMe.txt` .. Dosya türleri hakkında daha fazla bilgi için, [Visual Studio C++ projeleri Için oluşturulan dosya türleri](../build/reference/file-types-created-for-visual-cpp-projects.md).
+Projeniz için sihirbaz tarafından oluşturulan dosyaları **Çözüm Gezgini** görüntüleyebilirsiniz. Sihirbazın projeniz için oluşturduğu dosyalar hakkında daha fazla bilgi için, proje tarafından oluşturulan dosya, bkz `ReadMe.txt` .. Dosya türleri hakkında daha fazla bilgi için, [Visual Studio C++ projeleri Için oluşturulan dosya türleri](../build/reference/file-types-created-for-visual-cpp-projects.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

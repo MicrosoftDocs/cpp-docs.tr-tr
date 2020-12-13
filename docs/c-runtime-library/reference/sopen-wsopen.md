@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _sopen _wsopen'
 title: _sopen, _wsopen
 ms.date: 4/2/2020
 api_name:
@@ -37,18 +38,18 @@ helpviewer_keywords:
 - files [C++], sharing
 - _wsopen function
 ms.assetid: a9d4cccf-06e9-414d-96fa-453fca88cc1f
-ms.openlocfilehash: b02219ba0afa37fdff02b6848540064d12cd001d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 759cc582ee867a8f29fd9f645e811d1fc05dc17a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136935"
 ---
 # <a name="_sopen-_wsopen"></a>_sopen, _wsopen
 
 Paylaşım için bir dosya açar. Bu işlevlerin daha güvenli sürümleri mevcuttur: bkz. [_sopen_s, _wsopen_s](sopen-s-wsopen-s.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _sopen(
@@ -97,7 +98,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Sopen** işlevi dosya *adı* tarafından belirtilen dosyayı açar ve dosyayı *oflag* ve *shflag*tarafından tanımlanan şekilde paylaşılan okuma veya yazma için hazırlar. **_wsopen** , **_sopen**geniş karakterli bir sürümüdür; _wsopen *dosya adı* bağımsız **_wsopen** değişkeni, geniş karakterli bir dizedir. **_wsopen** ve **_sopen** aynı şekilde davranır.
+**_Sopen** işlevi dosya *adı* tarafından belirtilen dosyayı açar ve dosyayı *oflag* ve *shflag* tarafından tanımlanan şekilde paylaşılan okuma veya yazma için hazırlar. **_wsopen** , **_sopen** geniş karakterli bir sürümüdür; _wsopen *dosya adı* bağımsız  değişkeni, geniş karakterli bir dizedir. **_wsopen** ve **_sopen** aynı şekilde davranır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -107,7 +108,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tsopen**|**_sopen**|**_sopen**|**_wsopen**|
 
-*Gecikme* tamsayı ifadesi, içinde tanımlanan aşağıdaki bildirim sabitlerinden biri veya daha fazlası birleştirilerek oluşturulur \<fcntl.h> . İki veya daha fazla *sabit bağımsız değişkeni*bir şekilde kullandığınızda, BIT düzeyinde OR işleci ( **&#124;** ) ile birleştirilir.
+*Gecikme* tamsayı ifadesi, içinde tanımlanan aşağıdaki bildirim sabitlerinden biri veya daha fazlası birleştirilerek oluşturulur \<fcntl.h> . İki veya daha fazla *sabit bağımsız değişkeni* bir şekilde kullandığınızda, BIT düzeyinde OR işleci ( **&#124;** ) ile birleştirilir.
 
 |*oflag* sabiti|Davranış|
 |-|-|
@@ -116,24 +117,24 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 | **_O_CREAT** | Bir dosya oluşturur ve yazmak için açar. Dosya *adı* tarafından belirtilen dosya varsa herhangi bir etkiye sahip değildir. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
 | **_O_CREAT** &#124; **_O_SHORT_LIVED** | Geçici olarak bir dosya oluşturur ve mümkünse disk boşaltılamaz. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
 | **_O_CREAT** &#124; **_O_TEMPORARY** | Geçici olarak bir dosya oluşturur; Dosya, son dosya tanımlayıcısı kapatıldığında silinir. **_O_CREAT** belirtildiğinde *pmode* bağımsız değişkeni gereklidir. |
-| **_O_CREAT** &#124;`_O_EXCL` | Dosya *adı* tarafından belirtilen bir dosya varsa bir hata değeri döndürür. Yalnızca **_O_CREAT**ile kullanıldığında geçerlidir. |
+| **_O_CREAT** &#124; `_O_EXCL` | Dosya *adı* tarafından belirtilen bir dosya varsa bir hata değeri döndürür. Yalnızca **_O_CREAT** ile kullanıldığında geçerlidir. |
 | **_O_NOINHERIT** | Paylaşılan bir dosya tanımlayıcısının oluşturulmasını engeller. |
 | **_O_RANDOM** | Önbellek için en iyi duruma getirilmiş, ancak sınırlı olmamak üzere, diskten rastgele erişim |
-| **_O_RDONLY** | Yalnızca okuma için bir dosya açar. **_O_RDWR** veya **_O_WRONLY**ile belirtilemez. |
-| **_O_RDWR** | Hem okuma hem de yazma için bir dosya açar. **_O_RDONLY** veya **_O_WRONLY**ile belirtilemez. |
+| **_O_RDONLY** | Yalnızca okuma için bir dosya açar. **_O_RDWR** veya **_O_WRONLY** ile belirtilemez. |
+| **_O_RDWR** | Hem okuma hem de yazma için bir dosya açar. **_O_RDONLY** veya **_O_WRONLY** ile belirtilemez. |
 | **_O_SEQUENTIAL** | Önbellek için en iyi duruma getirilmiş, ancak sınırlı olmamak üzere önbelleğe alınan bir disk erişimi belirtir. |
 | **_O_TEXT** | Metin (çevrilmiş) modunda bir dosya açar. (Daha fazla bilgi için bkz. [metin ve Ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [fopen](fopen-wfopen.md).) |
-| **_O_TRUNC** | Bir dosya açar ve sıfır uzunluğa kırpar; dosya yazma iznine sahip olmalıdır. **_O_RDONLY**ile belirtilemez. **_O_CREAT** **_O_TRUNC** , mevcut bir dosyayı açar veya bir dosya oluşturur. **Note:** **_O_TRUNC** bayrağı belirtilen dosyanın içeriğini yok eder. |
-| **_O_WRONLY** | Yalnızca yazma için bir dosya açar. **_O_RDONLY** veya **_O_RDWR**ile belirtilemez. |
+| **_O_TRUNC** | Bir dosya açar ve sıfır uzunluğa kırpar; dosya yazma iznine sahip olmalıdır. **_O_RDONLY** ile belirtilemez. **_O_CREAT** **_O_TRUNC** , mevcut bir dosyayı açar veya bir dosya oluşturur. **Note:** **_O_TRUNC** bayrağı belirtilen dosyanın içeriğini yok eder. |
+| **_O_WRONLY** | Yalnızca yazma için bir dosya açar. **_O_RDONLY** veya **_O_RDWR** ile belirtilemez. |
 | **_O_U16TEXT** | Unicode UTF-16 modunda bir dosya açar. |
 | **_O_U8TEXT** | Unicode UTF-8 modunda bir dosya açar. |
 | **_O_WTEXT** | Unicode modunda bir dosya açar. |
 
-Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR**veya **_O_WRONLY**belirtmeniz gerekir. Erişim modu için varsayılan değer yoktur.
+Dosya erişim modunu belirtmek için **_O_RDONLY**, **_O_RDWR** veya **_O_WRONLY** belirtmeniz gerekir. Erişim modu için varsayılan değer yoktur.
 
-**_O_WTEXT**, **_O_U8TEXT**veya **_O_U16TEXT**kullanarak Unicode modunda bir dosya açıldığında giriş işlevleri, dosyadaki okunan verileri, tür olarak depolanan UTF-16 verilerine çevirir **`wchar_t`** . Unicode modunda açılan bir dosyaya yazan işlevler, tür olarak depolanan UTF-16 verileri içeren arabellekler bekler **`wchar_t`** . Dosya UTF-8 olarak kodlanmışsa, UTF-16 verileri yazıldığında UTF-8 ' e çevrilir ve dosyanın UTF-8 kodlu içeriği okunarak UTF-16 ' a çevrilir. Unicode modunda tek sayıda bayt okuma veya yazma girişimi bir parametre doğrulama hatasına neden olur. Programınızda depolanan verileri UTF-8 olarak okumak veya yazmak için Unicode modu yerine bir metin veya ikili dosya modu kullanın. Gerekli tüm kodlama çevirilerinden siz sorumlusunuz.
+**_O_WTEXT**, **_O_U8TEXT** veya **_O_U16TEXT** kullanarak Unicode modunda bir dosya açıldığında giriş işlevleri, dosyadaki okunan verileri, tür olarak depolanan UTF-16 verilerine çevirir **`wchar_t`** . Unicode modunda açılan bir dosyaya yazan işlevler, tür olarak depolanan UTF-16 verileri içeren arabellekler bekler **`wchar_t`** . Dosya UTF-8 olarak kodlanmışsa, UTF-16 verileri yazıldığında UTF-8 ' e çevrilir ve dosyanın UTF-8 kodlu içeriği okunarak UTF-16 ' a çevrilir. Unicode modunda tek sayıda bayt okuma veya yazma girişimi bir parametre doğrulama hatasına neden olur. Programınızda depolanan verileri UTF-8 olarak okumak veya yazmak için Unicode modu yerine bir metin veya ikili dosya modu kullanın. Gerekli tüm kodlama çevirilerinden siz sorumlusunuz.
 
-**_Sopen** **_O_WRONLY**  |  **_O_APPEND** (ekleme modu) ve **_O_WTEXT**, **_O_U16TEXT**veya **_O_U8TEXT**ile çağrılırsa, ilk olarak dosyayı okumak ve yazmak için açmaya çalışır, ürün reçetesini okuyabilir ve sonra yalnızca yazmak üzere yeniden açabilirsiniz. Dosyayı okuma ve yazma için açmak başarısız olursa, dosyayı yalnızca yazma için açar ve Unicode modu ayarı için varsayılan değeri kullanır.
+**_Sopen** **_O_WRONLY**  |  **_O_APPEND** (ekleme modu) ve **_O_WTEXT**, **_O_U16TEXT** veya **_O_U8TEXT** ile çağrılırsa, ilk olarak dosyayı okumak ve yazmak için açmaya çalışır, ürün reçetesini okuyabilir ve sonra yalnızca yazmak üzere yeniden açabilirsiniz. Dosyayı okuma ve yazma için açmak başarısız olursa, dosyayı yalnızca yazma için açar ve Unicode modu ayarı için varsayılan değeri kullanır.
 
 *Shflag* bağımsız değişkeni, içinde tanımlanan aşağıdaki bildirim sabitlerinden birini içeren sabit bir ifadedir \<share.h> .
 

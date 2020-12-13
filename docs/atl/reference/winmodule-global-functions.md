@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: WinModule genel Işlevleri'
 title: WinModule genel Işlevleri
 ms.date: 11/04/2016
 f1_keywords:
 - atlbase/ATL::AtlWinModuleAddCreateWndData
 - atlbase/ATL::AtlWinModuleExtractCreateWndData
 ms.assetid: 8ce45a5b-26a7-491f-9096-c09ceca5f2c2
-ms.openlocfilehash: 1f1dcb325f8844a74b3dd831a51050083e7ea552
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1ea232bd3db79f3be3d9dee32b5f9fa40df0eb79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138664"
 ---
 # <a name="winmodule-global-functions"></a>WinModule genel Işlevleri
 

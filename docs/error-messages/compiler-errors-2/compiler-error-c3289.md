@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3289'
 title: Derleyici hatası C3289
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3289
 ms.assetid: 3c1c623b-7fcf-43ab-a89a-8722532a8d29
-ms.openlocfilehash: ee80fb2c917281163156ef148403088cef8e8545
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 12c1f14d1760256f38f225c6215fd41de930d2c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74760172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144787"
 ---
 # <a name="compiler-error-c3289"></a>Derleyici hatası C3289
 

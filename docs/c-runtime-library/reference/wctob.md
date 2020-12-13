@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: wctob'
 title: wctob
 ms.date: 4/2/2020
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - wctob function
 - characters, converting
 ms.assetid: 46aec98b-c2f2-4e9d-9d89-7db99ba8a9a6
-ms.openlocfilehash: 3740e4bebcc63f0f664d40b2e048f19c2aa24c99
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 184c9858aebcdecf3b5d9857980f27be45a5d2d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215094"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136874"
 ---
 # <a name="wctob"></a>wctob
 
 Geniş bir karakterin çok baytlı bir karaktere karşılık geldiğini ve çok baytlı karakter gösterimini döndürüp döndürmeyeceğini belirler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int wctob(
@@ -109,7 +110,7 @@ Determined the corresponding multibyte character to be "A".
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

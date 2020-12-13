@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CWnd nesneleri ne zaman başlatılıyor'
 title: CWnd Nesneleri Ne Zaman Başlatılır?
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - HWND, when attached to CWnd object
 - CWnd objects [MFC], when to initialize
 ms.assetid: 4d31bcb1-73db-4f2f-b71c-89b087569a10
-ms.openlocfilehash: aa396ade2e8ab4e1245e161423de7bd5bfafaaf8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89d40b826507574fddd41364ac6cecc526663519
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405722"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142772"
 ---
 # <a name="when-to-initialize-cwnd-objects"></a>CWnd Nesneleri Ne Zaman Başlatılır?
 
-Kendi alt pencereler oluşturma veya oluşturucusunun içinde herhangi bir Windows API işlevleri çağırmak bir `CWnd`-türetilmiş bir nesneye. Bunun nedeni, `HWND` için `CWnd` nesne henüz oluşturulmadı. Alt öğe pencerelerini ekleme gibi en Windows özel başlatma yapılmalıdır bir [OnCreate](../mfc/reference/cwnd-class.md#oncreate) ileti işleyicisi.
+Kendi alt pencerelerini oluşturamaz veya türetilmiş bir nesne oluşturucusunda herhangi bir Windows API işlevini çağırabilirsiniz `CWnd` . Bunun nedeni `HWND` `CWnd` nesne için henüz oluşturulmamıştır. Alt pencereler ekleme gibi Windows 'a özgü çoğu başlatmanın bir [OnCreate](../mfc/reference/cwnd-class.md#oncreate) ileti işleyicisinde yapılması gerekir.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)
 
@@ -28,4 +29,4 @@ Kendi alt pencereler oluşturma veya oluşturucusunun içinde herhangi bir Windo
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
+[Çerçeve pencerelerini kullanma](../mfc/using-frame-windows.md)

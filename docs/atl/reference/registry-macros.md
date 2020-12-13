@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. kayıt defteri makroları
 title: Kayıt defteri makroları
 ms.date: 08/19/2019
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-ms.openlocfilehash: dac1c187bae0eb55b954fc02cd4fb4c981f272f4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e1f85e43f64dd34455cb9ec453ab3719b07f67f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834524"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138898"
 ---
 # <a name="registry-macros"></a>Kayıt defteri makroları
 
@@ -129,7 +130,7 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 ### <a name="parameters"></a>Parametreler
 
 *RESID*<br/>
-*AppID*ile ilgili bilgileri içeren. rgs dosyasının kaynak kimliği.
+*AppID* ile ilgili bilgileri içeren. rgs dosyasının kaynak kimliği.
 
 *AppID*<br/>
 BIR GUıD.
@@ -159,7 +160,7 @@ DECLARE_REGISTRY_RESOURCE( x )
 
 ATL Proje Sihirbazı 'nı kullanarak bir nesne veya denetim oluşturduğunuzda, sihirbaz otomatik olarak betik tabanlı kayıt defteri desteğini uygular ve DECLARE_REGISTRY_RESOURCE benzer [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) makrosunu dosyalarınıza ekler.
 
-En iyileştirilmiş kayıt defteri erişimi için ATL kayıt defteri bileşeni (kaydedici) ile statik olarak bağlantı oluşturabilirsiniz. Kayıt koduna statik olarak bağlanmak için, *pch. h* dosyanıza aşağıdaki satırı ekleyin (Visual Studio 2017 ve önceki sürümlerde*stdadfx. h* ):
+En iyileştirilmiş kayıt defteri erişimi için ATL kayıt defteri bileşeni (kaydedici) ile statik olarak bağlantı oluşturabilirsiniz. Kayıt koduna statik olarak bağlanmak için, *pch. h* dosyanıza aşağıdaki satırı ekleyin (Visual Studio 2017 ve önceki sürümlerde *stdadfx. h* ):
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 
@@ -184,7 +185,7 @@ DECLARE_REGISTRY_RESOURCEID( x )
 
 ATL Proje Sihirbazı 'nı kullanarak bir nesne veya denetim oluşturduğunuzda, sihirbaz otomatik olarak betik tabanlı kayıt defteri desteğini uygular ve DECLARE_REGISTRY_RESOURCEID makrosunu dosyalarınıza ekler.
 
-En iyileştirilmiş kayıt defteri erişimi için ATL kayıt defteri bileşeni (kaydedici) ile statik olarak bağlantı oluşturabilirsiniz. Kayıt koduna statik olarak bağlanmak için aşağıdaki satırı *stdadfx. h* dosyanıza (Visual Studio 2019 ve üzeri sürümlerde*pch. h* ) ekleyin:
+En iyileştirilmiş kayıt defteri erişimi için ATL kayıt defteri bileşeni (kaydedici) ile statik olarak bağlantı oluşturabilirsiniz. Kayıt koduna statik olarak bağlanmak için aşağıdaki satırı *stdadfx. h* dosyanıza (Visual Studio 2019 ve üzeri sürümlerde *pch. h* ) ekleyin:
 
 [!code-cpp[NVC_ATL_COM#56](../../atl/codesnippet/cpp/registry-macros_2.h)]
 

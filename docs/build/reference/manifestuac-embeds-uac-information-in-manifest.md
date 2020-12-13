@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/BILDIRIESTUAC (UAC bilgilerini bildirimde katıştırır)
 title: /MANIFESTUAC (Bildirimdeki UAC bilgilerini katıştırır)
 ms.date: 06/12/2020
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - MANIFESTUAC linker option
 - -MANIFESTUAC linker option
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-ms.openlocfilehash: 96719c6f6f5359afb03b967524b1f65db6dc664a
-ms.sourcegitcommit: 8645408c7929558b8162f781776d0908d790a41c
+ms.openlocfilehash: 165f543dab087ca32c91002811d99b9048fa392b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85334937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137897"
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC (Bildirimdeki UAC bilgilerini katıştırır)
 
 Kullanıcı hesabı denetimi (UAC) bilgisinin program bildirimine katıştırılmadığını belirtir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 > **`/MANIFESTUAC`**\
 > **`/MANIFESTUAC:NO`**\
@@ -69,7 +70,7 @@ Seçenekleri aşağıdaki gibidir **`/MANIFESTUAC:`** _`level`_ :
 
 1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **bildirim dosyası** özellik sayfasını seçin.
 
-1. **Kullanıcı hesabı denetimini etkinleştir (UAC)**, **UAC yürütme düzeyi**ve **UAC Kullanıcı arabirimi koruma özelliklerini atlayın** .
+1. **Kullanıcı hesabı denetimini etkinleştir (UAC)**, **UAC yürütme düzeyi** ve **UAC Kullanıcı arabirimi koruma özelliklerini atlayın** .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

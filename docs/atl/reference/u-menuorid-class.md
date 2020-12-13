@@ -1,5 +1,6 @@
 ---
-title: _U_MENUorID Sınıfı
+description: 'Hakkında daha fazla bilgi edinin: _U_MENUorID sınıfı'
+title: _U_MENUorID sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - ATL._U_MENUorID
@@ -9,21 +10,21 @@ helpviewer_keywords:
 - U_MENUorID class
 - _U_MENUorID class
 ms.assetid: cfc8032b-61b4-4a68-ba3a-92b82500ccae
-ms.openlocfilehash: 419c9e79178db12efe278838ec8630e04ac3c461
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 4418e9db455e72643c497925c19900b41c9b9f38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81325831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138794"
 ---
-# <a name="_u_menuorid-class"></a>_U_MENUorID Sınıfı
+# <a name="_u_menuorid-class"></a>_U_MENUorID sınıfı
 
-Bu sınıf için `CreateWindow` sarmalayıcıları sağlar ve. `CreateWindowEx`
+Bu sınıf ve için sarmalayıcılar sağlar `CreateWindow` `CreateWindowEx` .
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class _U_MENUorID
@@ -33,39 +34,39 @@ class _U_MENUorID
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[_U_MENUorID:_U_MENUorID](#_u_menuorid___u_menuorid)|Oluşturucu.|
+|[_U_MENUorID:: _U_MENUorID](#_u_menuorid___u_menuorid)|Oluşturucu.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[_U_MENUorID:m_hMenu](#_u_menuorid__m_hmenu)|Menüye bir tutamaç.|
+|[_U_MENUorID:: m_hMenu](#_u_menuorid__m_hmenu)|Bir menüye yönelik bir tanıtıcı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu bağımsız değişken bağdaştırıcı sınıfı, arayan kişi üzerinde açık bir döküm gerektirmeden, adlarının (UINTs) veya menü tutamaçlarının (HMENUs) bir işleve geçirilmesini sağlar.
+Bu bağımsız değişken bağdaştırıcı sınıfı, arayanın bölümünde açık bir tür dönüştürme gerektirmeden, kimlik (ler) veya menü tutamaçları (HMENUs) bir işleve geçirilmesini sağlar.
 
-Bu sınıf, windows API'ye, özellikle CreateWindow ve [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindoww) işlevlerine sarıcılar uygulamak için tasarlanmıştır ve her ikisi de menü tutamacı yerine alt pencere tanımlayıcısı (UINT) olabilecek bir HMENU bağımsız değişkenini kabul eder. [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) Örneğin, bu sınıfı [CWindowImpl](cwindowimpl-class.md#create)için bir parametre olarak kullanmak görebilirsiniz::Oluştur .
+Bu sınıf, bir menü tanıtıcısı yerine bir alt pencere tanımlayıcısı (UINT) olabilecek bir HMENU bağımsız değişkenini kabul eden, özellikle [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) ve [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) işlevleri olan Windows API 'sine sarmalayıcıları uygulamak için tasarlanmıştır. Örneğin, bu sınıfın [CWindowImpl:: Create](cwindowimpl-class.md#create)için bir parametre olarak kullanılacağını görebilirsiniz.
 
-Sınıf iki oluşturucu aşırı yükleri tanımlar: biri UINT bağımsız değişkenini, diğeri ise Bir HMENU bağımsız değişkenini kabul eder. UINT bağımsız değişkeni yalnızca oluşturucudaki bir HMENU'a ve sınıfın tek veri üyesinde depolanan sonuca [m_hMenu.](#_u_menuorid__m_hmenu) HMENU oluşturucuya bağımsız değişken doğrudan dönüştürme olmadan saklanır.
+Sınıf iki Oluşturucu aşırı yüklemesini tanımlar: One bir UINT bağımsız değişkenini kabul eder ve diğeri HMENU bağımsız değişkenini kabul eder. UINT bağımsız değişkeni, kurucudaki bir HMENU 'e ve bu durumda sınıfın tek veri üyesinde saklanan sonuç [m_hMenu](#_u_menuorid__m_hmenu). HMENU oluşturucusunun bağımsız değişkeni dönüştürme olmadan doğrudan saklanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlwin.h
+**Üstbilgi:** atlwin. h
 
-## <a name="_u_menuoridm_hmenu"></a><a name="_u_menuorid__m_hmenu"></a>_U_MENUorID:m_hMenu
+## <a name="_u_menuoridm_hmenu"></a><a name="_u_menuorid__m_hmenu"></a> _U_MENUorID:: m_hMenu
 
-Sınıf, ortak HMENU veri üyesi olarak oluşturucularından herhangi biri için geçirilen değeri tutar.
+Sınıfı, oluşturucularından birine ortak bir HMENU veri üyesi olarak geçirilen değeri barındırır.
 
 ```
 HMENU m_hMenu;
 ```
 
-## <a name="_u_menuorid_u_menuorid"></a><a name="_u_menuorid___u_menuorid"></a>_U_MENUorID:_U_MENUorID
+## <a name="_u_menuorid_u_menuorid"></a><a name="_u_menuorid___u_menuorid"></a> _U_MENUorID:: _U_MENUorID
 
-UINT bağımsız değişkeni yalnızca oluşturucudaki bir HMENU'a ve sınıfın tek veri üyesinde depolanan sonuca [m_hMenu.](#_u_menuorid__m_hmenu)
+UINT bağımsız değişkeni, kurucudaki bir HMENU 'e ve bu durumda sınıfın tek veri üyesinde saklanan sonuç [m_hMenu](#_u_menuorid__m_hmenu).
 
 ```
 _U_MENUorID(UINT nID);
@@ -74,16 +75,16 @@ _U_MENUorID(HMENU hMenu);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-Bir çocuk pencere tanımlayıcısı.
+*NID*<br/>
+Bir alt pencere tanımlayıcısı.
 
-*Hmenu*<br/>
-Menü tutamacı.
+*hMenu*<br/>
+Bir menü tutamacı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-HMENU oluşturucuya bağımsız değişken doğrudan dönüştürme olmadan saklanır.
+HMENU oluşturucusunun bağımsız değişkeni dönüştürme olmadan doğrudan saklanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

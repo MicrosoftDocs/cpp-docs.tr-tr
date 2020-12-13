@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1092'
 title: Önemli hata C1092
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1092
 ms.assetid: bcaa87f0-fbfc-4a33-844b-3b9f5d67f279
-ms.openlocfilehash: af43ddb83e872762f720b156644e0d466957a8a7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b2a16991784b901202e5d51c0d256ad48305f55f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145138"
 ---
 # <a name="fatal-error-c1092"></a>Önemli hata C1092
 
@@ -21,7 +22,7 @@ Son başarılı derlemeden bu yana bir veri türü değiştirdiniz veya ekledini
 
 - Düzenle ve devam et, sınıf, yapı veya Enum tanımları dahil olmak üzere mevcut veri türlerinde yapılan değişiklikleri desteklemez. Hata ayıklamayı durdurmanız ve uygulamayı derlemeniz gerekir.
 
-- VC*x*0. pdb ( *x* , kullanılan görselin C++ ana sürümü) salt okunurdur gibi bir program veritabanı dosyası ise Düzenle ve devam et yeni veri türlerinin eklenmesini desteklemez. Veri türleri eklemek için derleyicinin. pdb dosyasını yazma modunda açması gerekir.
+- VC *x* 0. pdb ( *x* kullanılan Visual C++ ana sürümüdür) gibi bir program veritabanı dosyası salt okunurdur, Düzenle ve devam et, yeni veri türlerinin eklenmesini desteklemez. Veri türleri eklemek için derleyicinin. pdb dosyasını yazma modunda açması gerekir.
 
 ### <a name="to-remove-this-error-without-ending-the-current-debug-session"></a>Geçerli hata ayıklama oturumunu sonlandırmadan bu hatayı kaldırmak için
 
