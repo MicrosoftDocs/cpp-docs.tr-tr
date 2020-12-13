@@ -1,44 +1,45 @@
 ---
+description: 'Daha fazla bilgi edinin: olay Işleme ve ATL'
 title: Olay İşleme ve ATL
 ms.date: 11/04/2016
 helpviewer_keywords:
 - event handling, about event handling
 ms.assetid: e4812b0d-6fdd-4e8c-bdb8-378a25c7bde2
-ms.openlocfilehash: e939c693f3f474cce9d2ca118bc86d163d6146dc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b32477cc738a219895bda82b0d414008955a6d02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152929"
 ---
 # <a name="event-handling-and-atl"></a>Olay İşleme ve ATL
 
-Bu bölümde, ATL kullanarak olayları havuz gösterilmektedir COM olay işlemede, ilkeler ve ATL tarafından sağlanan desteğin kullanarak olayları indirme özelliklerini kapsar
+Bu bölümde, ATL kullanarak olayların nasıl havuza alınacağını gösterilmektedir. Bu, COM olay işleme ilkelerini ve ATL tarafından sunulan desteği kullanarak bir bütün olay özelliklerini kapsar.
 
-Olayları tetiklemesine ve bağlantı noktaları hakkında daha fazla bilgi için okuma [ATL bağlantı noktaları](../atl/atl-connection-points.md).
+Olayları harekete geçirme ve bağlantı noktalarını uygulama hakkında daha fazla bilgi için, [atl bağlantı noktalarını](../atl/atl-connection-points.md)okuyun.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Olay İşleme İlkeleri](../atl/event-handling-principles.md)<br/>
-Tüm olay teslim etme için genel adımlar açıklanmaktadır.
+[Olay Işleme Ilkeleri](../atl/event-handling-principles.md)<br/>
+Tüm olay teslim etme için ortak olan adımları açıklar.
 
-[Olay İşleme Arabirimini Uygulama](../atl/implementing-the-event-handling-interface.md)<br/>
-Olay arabirimini uygulamak için kullanılacak sınıflarını açıklar.
+[Olay Işleme arabirimini uygulama](../atl/implementing-the-event-handling-interface.md)<br/>
+Olay arabirimini uygulamak için kullanılacak sınıfları açıklar.
 
-[IDispEventImpl Kullanma](../atl/using-idispeventimpl.md)<br/>
-Kullanma adımları listeler `IDispEventImpl` ve bir kod örneği gösterir.
+[IDispEventImpl kullanma](../atl/using-idispeventimpl.md)<br/>
+Kullanarak ilgili adımları listeler `IDispEventImpl` ve bir kod örneğini gösterir.
 
-[IDispEventSimpleImpl Kullanma](../atl/using-idispeventsimpleimpl.md)<br/>
-Kullanma adımları listeler `IDispEventSimpleImpl` ve bir kod örneği gösterir.
+[IDispEventSimpleImpl kullanma](../atl/using-idispeventsimpleimpl.md)<br/>
+Kullanarak ilgili adımları listeler `IDispEventSimpleImpl` ve bir kod örneğini gösterir.
 
-[ATL Olay İşleme Özeti](../atl/atl-event-handling-summary.md)<br/>
-Tablolar, bir olay arabirimini uygulayan ve bildiren ve ATL kullanarak olay kaynağı unadvising temel yollarından kullanarak özetler
+[ATL olay Işleme Özeti](../atl/atl-event-handling-summary.md)<br/>
+Tabloları kullanarak, bir olay arabirimini uygulamaya yönelik ana yolları ve ATL kullanarak olay kaynağını geri ve geri izlemeyi ve uygulamayı özetler.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
-Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
+Etkin Şablon kitaplığı 'nı kullanarak programla programlama hakkında kavramsal konuların bağlantılarını sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kavramları](../atl/active-template-library-atl-concepts.md)
+[Kavramlar](../atl/active-template-library-atl-concepts.md)

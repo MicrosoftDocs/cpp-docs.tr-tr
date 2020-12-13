@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: &lt; shared_mutex>'
 title: '&lt;shared_mutex&gt;'
 ms.date: 03/27/2019
 f1_keywords:
@@ -45,12 +46,12 @@ f1_keywords:
 - shared_mutex/std::shared_timed_mutex::try_lock_shared_until
 - shared_mutex/std::shared_timed_mutex::unlock_shared
 ms.assetid: 0b37a97d-ee5d-4050-b29f-09db9f76beb3
-ms.openlocfilehash: f33a9c5fe4c5058d039feff896f7e53fe40cbf31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 97446b3709dd71b49389fa63ac067f7cc9ccf820
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154071"
 ---
 # <a name="ltshared_mutex"></a>&lt;shared_mutex>
 
@@ -68,7 +69,7 @@ ms.locfileid: "87217486"
 |---------------|-----------------|
 |[Kur](#function_swap)|İşlev parametrelerinin başvurduğu paylaşılan mutex nesnelerinin içeriğini değiştirir.|
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace std {
@@ -108,7 +109,7 @@ Paylaşılan bir zaman uyumu türü, ek yöntemleri `try_lock_shared_for` ve `tr
 
 ## <a name="classes"></a>Sınıflar
 
-### <a name="shared_mutex-class"></a><a name="class_shared_mutex"></a>shared_mutex sınıfı
+### <a name="shared_mutex-class"></a><a name="class_shared_mutex"></a> shared_mutex sınıfı
 
 Sınıf `shared_mutex` , paylaşılan sahiplik semantiğinin özyinelemeli olmayan bir mutex 'i uygular.
 
@@ -135,7 +136,7 @@ public:
    };
 ```
 
-### <a name="shared_timed_mutex-class"></a><a name="class_shared_timed_mutex"></a>shared_timed_mutex sınıfı
+### <a name="shared_timed_mutex-class"></a><a name="class_shared_timed_mutex"></a> shared_timed_mutex sınıfı
 
 Sınıfı `shared_timed_mutex` , zaman uyumsuz bir mutex türünün gereksinimlerini karşılayan paylaşılan sahiplik semantiğinin özyinelemeli olmayan bir mutex 'i uygular.
 
@@ -167,7 +168,7 @@ public:
    };
 ```
 
-### <a name="shared_lock-class"></a><a name="class_shared_lock"></a>shared_lock sınıfı
+### <a name="shared_lock-class"></a><a name="class_shared_lock"></a> shared_lock sınıfı
 
 Sınıf şablonu `shared_lock` , bir kapsam içindeki paylaşılan bir mutex nesnesinin paylaşılan sahipliğini denetler. Şablon parametresi, paylaşılan bir mutex türü olmalıdır.
 
@@ -215,7 +216,7 @@ private:
 
 ## <a name="functions"></a>İşlevler
 
-### <a name="swap"></a><a name="function_swap"></a>Kur
+### <a name="swap"></a><a name="function_swap"></a> Kur
 
 Nesneleri değiştirir `shared_lock` .
 

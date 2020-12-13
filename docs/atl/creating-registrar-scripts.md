@@ -1,5 +1,6 @@
 ---
-title: ATL Kaydedicisi betikleri oluşturma
+description: 'Daha fazla bilgi edinin: kaydedici betikleri oluşturma'
+title: ATL Kaydedicisi için betikler oluşturma
 ms.date: 05/14/2014
 helpviewer_keywords:
 - scripting, registry scripting
@@ -8,33 +9,33 @@ helpviewer_keywords:
 - scripts, Registrar scripts
 - scripts, creating
 ms.assetid: cbd5024b-8061-4a71-be65-7fee90374a35
-ms.openlocfilehash: f32606701ea08736985f0b0dd2ed82712040a049
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: a3ce4855460e65eda5ab522bc16f39191da02a71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153193"
 ---
-# <a name="creating-registrar-scripts"></a>Kaydedici betikleri oluşturma
+# <a name="creating-registrar-scripts"></a>Kayıt Şirketi betiklerini oluşturma
 
-Kaydedici betik sistem kayıt defterine API temelli yerine verilere erişim sağlar. Kayıt defterine bir anahtar eklemek için komut yalnızca bir veya iki satır sürdüğünü beri verilere erişim genellikle daha verimli olur.
+Bir kaydedici betiği, API odaklı, sistem kayıt defterine erişim yerine veri odaklı şekilde sağlanır. Veri odaklı erişim, kayıt defterine bir anahtar eklemek için bir betikte yalnızca bir veya iki satır kullandığından, genellikle daha etkilidir.
 
-[ATL denetimi Sihirbazı](../atl/reference/atl-control-wizard.md) COM sunucunuz için bir kaydedici betik otomatik olarak oluşturur. Bu betik, nesneyle ilişkili .rgs dosyasındaki bulabilirsiniz.
+[Atl Denetim Sihirbazı](../atl/reference/atl-control-wizard.md) , com sunucunuz için otomatik olarak bir kaydedici betiği oluşturur. Bu betiği, nesnenizin ilişkili. rgs dosyasında bulabilirsiniz.
 
-ATL kayıt şirketinin komut dosyası altyapısı çalışma zamanında Kaydedici betiğinizi işler. ATL betik altyapısı server kurulumu sırasında otomatik olarak çağırır.
+ATL Kaydedicinizin betik altyapısı, çalışma zamanında kaydedici betiğinizi işler. ATL, sunucu kurulumu sırasında betik altyapısını otomatik olarak çağırır.
 
-Bu makalede Kaydedici betikleri için ilgili aşağıdaki konular ele alınmaktadır:
+Bu makalede, kaydedici betikleri ile ilgili aşağıdaki konular ele alınmaktadır:
 
-- [Backus-Naur form (BNF) söz dizimini anlama](../atl/understanding-backus-naur-form-bnf-syntax.md)
+- [Backus-Naur formu (BNF) söz dizimini anlama](../atl/understanding-backus-naur-form-bnf-syntax.md)
 
-- [Ayrıştırma Ağaçlarını Anlama](../atl/understanding-parse-trees.md)
+- [Ayrıştırma ağaçlarını anlama](../atl/understanding-parse-trees.md)
 
-- [Kayıt Defteri Betik Oluşturma Örnekleri](../atl/registry-scripting-examples.md)
+- [Kayıt defteri komut dosyası örnekleri](../atl/registry-scripting-examples.md)
 
-- [Değiştirilebilir Parametreler Kullanma (Kaydedicinin Ön İşlemcisi)](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)
+- [Değiştirilebilen parametreleri kullanma (kaydedici 'nin ön Işlemcisi)](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)
 
-- [Betikleri Çağırma](../atl/invoking-scripts.md)
+- [Betikleri çağırma](../atl/invoking-scripts.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayıt defteri bileşeni (Kaydedici)](../atl/atl-registry-component-registrar.md)
+[Kayıt defteri bileşeni (kaydedici)](../atl/atl-registry-component-registrar.md)

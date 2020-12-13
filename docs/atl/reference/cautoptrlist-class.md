@@ -1,5 +1,6 @@
 ---
-title: CAutoPtrList Sınıfı
+description: 'Daha fazla bilgi edinin: CAutoPtrList sınıfı'
+title: CAutoPtrList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CAutoPtrList
@@ -8,19 +9,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtrList class
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
-ms.openlocfilehash: 48c7ad6fe13c5f5fbbe5829c25ce1c27896841be
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 51544d464904d0ebfd31b82152088a0dfa638969
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152522"
 ---
-# <a name="cautoptrlist-class"></a>CAutoPtrList Sınıfı
+# <a name="cautoptrlist-class"></a>CAutoPtrList sınıfı
 
-Bu sınıf, akıllı işaretçilerin bir listesini yaparken yararlı yöntemler sağlar.
+Bu sınıf, akıllı işaretçiler listesi oluştururken yararlı yöntemler sağlar.
 
 > [!IMPORTANT]
-> Bu sınıf ve üyeleri, Windows Runtime'da çalıştırılan uygulamalarda kullanılamaz.
+> Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,15 +40,15 @@ class CAutoPtrList :
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CAutoPtrList::CAutoPtrList](#cautoptrlist)|Oluşturucu.|
+|[CAutoPtrList:: CAutoPtrList](#cautoptrlist)|Oluşturucu.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıf bir oluşturucu sağlar ve akıllı işaretçileri depolayan bir liste nesnesinin oluşturulmasına yardımcı olmak için [CAtlList](../../atl/reference/catllist-class.md) ve [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) yöntemleri türetilmiştir. [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) sınıfı bir dizi nesnesi için benzer bir işlev sağlar.
+Bu sınıf, bir oluşturucu sağlar ve akıllı işaretçiler depolayan bir liste nesnesinin oluşturulmasına yardımcı olmak için [CAtlList](../../atl/reference/catllist-class.md) ve [Cautoptrelementnitelikler](../../atl/reference/cautoptrelementtraits-class.md) 'teki yöntemleri türetiliyor. [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) sınıfı, bir dizi nesnesi için benzer bir işlev sağlar.
 
-Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection-classes.md)bakın.
+Daha fazla bilgi için bkz. [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -57,9 +58,9 @@ Daha fazla bilgi için [ATL Koleksiyon Sınıfları'na](../../atl/atl-collection
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** atlcoll.h
+**Üstbilgi:** atlcoll. h
 
-## <a name="cautoptrlistcautoptrlist"></a><a name="cautoptrlist"></a>CAutoPtrList::CAutoPtrList
+## <a name="cautoptrlistcautoptrlist"></a><a name="cautoptrlist"></a> CAutoPtrList:: CAutoPtrList
 
 Oluşturucu.
 
@@ -70,14 +71,14 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 ### <a name="parameters"></a>Parametreler
 
 *nBlockSize*<br/>
-Varsayılan değer 10 olan blok boyutu.
+Blok boyutu, varsayılan olarak 10 ' dur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarının ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
+Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarının bir ölçüsüdür. Daha büyük blok boyutları, bellek ayırma yordamlarına yapılan çağrıları azaltır, ancak daha fazla kaynak kullanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CAtlList Sınıfı](../../atl/reference/catllist-class.md)<br/>
-[CAutoPtrElementTraits Sınıfı](../../atl/reference/cautoptrelementtraits-class.md)<br/>
-[Sınıfa Genel Bakış](../../atl/atl-class-overview.md)
+[CAtlList sınıfı](../../atl/reference/catllist-class.md)<br/>
+[Cautoptrelementnitelikler sınıfı](../../atl/reference/cautoptrelementtraits-class.md)<br/>
+[Sınıfa genel bakış](../../atl/atl-class-overview.md)

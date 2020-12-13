@@ -1,18 +1,19 @@
 ---
-title: '&lt;yardımcı program&gt; numaralandırmalar'
+description: 'Daha fazla bilgi edinin: &lt; yardımcı program &gt; numaralandırmaları'
+title: '&lt;yardımcı program &gt; numaralandırmaları'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - std::chars_format [C++]
-ms.openlocfilehash: 74baff382abcd487eae828c5e8108d8bca82edf7
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 17ad987aa35d5b54182f0fb4e39263ec60632822
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446068"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153531"
 ---
-# <a name="ltutilitygt-enums"></a>&lt;yardımcı program&gt; numaralandırmalar
+# <a name="ltutilitygt-enums"></a>&lt;yardımcı program &gt; numaralandırmaları
 
-## <a name="chars_format"></a>chars_format
+## <a name="chars_format"></a><a name="chars_format"></a> chars_format
 
 ```cpp
 enum class chars_format { scientific = unspecified, fixed = unspecified, hex = unspecified, general = fixed | scientific };

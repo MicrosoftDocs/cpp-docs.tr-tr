@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; yardımcı program&gt;'
 title: '&lt;Utility&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - utility header
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
-ms.openlocfilehash: 1beade28ceec0f1552def4bc70c2e95e6b2aa24d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67472492acdb0ddbc1de957a69c01b1aafaf9367
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153440"
 ---
 # <a name="ltutilitygt"></a>&lt;Utility&gt;
 
@@ -34,7 +35,7 @@ Her iki nesnenin de olduğu gibi ele alınmaları gerektiğinde yararlı olan ne
 
 ### <a name="classes"></a>Sınıflar
 
-|Tür|Description|
+|Tür|Açıklama|
 |-|-|
 |[chars_format](../standard-library/chars-format-class.md)|İlkel sayısal dönüştürme için kayan nokta biçimi.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|Bir öğenin türünü sarmalayan sınıf `pair` .|
@@ -58,7 +59,7 @@ Her iki nesnenin de olduğu gibi ele alınmaları gerektiğinde yararlı olan ne
 |[değişimi](../standard-library/utility-functions.md#exchange)|Nesnesine yeni bir değer atar ve eski değerini döndürür.|
 |[tirler](../standard-library/utility-functions.md#forward)|Bağımsız değişkenin başvuru türünü (ya `lvalue` da `rvalue` ), kusursuz iletme tarafından gizlenmeden korur.|
 |[from_chars](../standard-library/utility-functions.md#from_chars)||
-|[Al](../standard-library/utility-functions.md#get)|Nesnesinden bir öğe alan bir işlev `pair` .|
+|[get](../standard-library/utility-functions.md#get)|Nesnesinden bir öğe alan bir işlev `pair` .|
 |[make_pair](../standard-library/utility-functions.md#make_pair)|Türü nesneleri oluşturmak için kullanılan bir şablon Yardımcısı işlevi `pair` , bileşen türlerinin parametre olarak geçirilen veri türlerini temel alır.|
 |[geçiş](../standard-library/utility-functions.md#move)|Geçirilen bağımsız değişkeni bir başvuru olarak döndürür `rvalue` .|
 |[move_if_noexcept](../standard-library/utility-functions.md#moveif)||
@@ -71,8 +72,8 @@ Her iki nesnenin de olduğu gibi ele alınmaları gerektiğinde yararlı olan ne
 |-|-|
 |[işleç! =](../standard-library/utility-operators.md#op_neq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneye eşit olup olmadığını sınar.|
 |[işleç = =](../standard-library/utility-operators.md#op_eq_eq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneye eşit olup olmadığını sınar.|
-|[işleç\<](../standard-library/utility-operators.md#op_lt)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden daha az olup olmadığını sınar.|
-|[işleç\<=](../standard-library/utility-operators.md#op_gt_eq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden küçük veya ona eşit olup olmadığını sınar.|
+|[işlecinde\<](../standard-library/utility-operators.md#op_lt)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden daha az olup olmadığını sınar.|
+|[işlecinde\<=](../standard-library/utility-operators.md#op_gt_eq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden küçük veya ona eşit olup olmadığını sınar.|
 |[işleç>](../standard-library/utility-operators.md#op_gt)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden büyük olup olmadığını sınar.|
 |[işleç>=](../standard-library/utility-operators.md#op_gt_eq)|İşlecin sol tarafındaki çift nesnenin sağ taraftaki çift nesneden büyük veya ona eşit olup olmadığını sınar.|
 

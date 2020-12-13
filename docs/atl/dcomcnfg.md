@@ -1,46 +1,47 @@
 ---
+description: 'Daha fazla bilgi edinin: DCOMCNFG'
 title: DCOMCNFG
 ms.date: 11/04/2016
 helpviewer_keywords:
 - DCOMCNFG utility
 - DCOM, configuring in ATL
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
-ms.openlocfilehash: a389a46cd02b40cef46d687743fd3416cc4f3154
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d99b0018d63cedbccaf57ec4cadeb649f390dcf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250790"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153167"
 ---
 # <a name="dcomcnfg"></a>DCOMCNFG
 
-DCOMCNFG kayıt defterinde çeşitli DCOM özel ayarları yapılandırmanıza olanak veren bir Windows NT 4.0 aracıdır. DCOMCNFG penceresi üç sayfası vardır: Varsayılan güvenlik, varsayılan özellikleri ve uygulamaları. Dördüncü sayfasında, protokolleri, varsayılan Windows 2000 altında mevcuttur.
+DCOMCNFG, kayıt defterinde DCOM 'a özgü çeşitli ayarları yapılandırmanıza olanak tanıyan bir Windows NT 4,0 yardımcı programıdır. DCOMCNFG penceresinin üç sayfası vardır: varsayılan güvenlik, varsayılan özellikler ve uygulamalar. Windows 2000 ' nin altında, varsayılan protokoller olan dördüncü bir sayfa vardır.
 
 ## <a name="default-security-page"></a>Varsayılan güvenlik sayfası
 
-Varsayılan güvenlik sayfası, sistemde nesneler için varsayılan izinleri belirtmek için kullanabilirsiniz. Varsayılan güvenlik sayfada üç bölüm yer alır: Erişim, başlatma ve yapılandırma. Buna karşılık gelen bir bölümün varsayılanları değiştirmek için tıklayın **Düzenle varsayılan** düğmesi. Bu varsayılan güvenlik ayarları altındaki kayıt defterine depolanır `HKEY_LOCAL_MACHINE\Software\Microsoft\OLE`.
+Sistemdeki nesnelere yönelik varsayılan izinleri belirtmek için varsayılan güvenlik sayfasını kullanabilirsiniz. Varsayılan güvenlik sayfasında üç bölüm vardır: erişim, başlatma ve yapılandırma. Bir bölümün varsayılan değerlerini değiştirmek için, karşılık gelen **Varsayılanı Düzenle** düğmesine tıklayın. Bu varsayılan güvenlik ayarları, altında kayıt defterinde saklanır `HKEY_LOCAL_MACHINE\Software\Microsoft\OLE` .
 
-## <a name="default-protocols-page"></a>Varsayılan protokolleri sayfası
+## <a name="default-protocols-page"></a>Varsayılan protokoller sayfası
 
-Bu sayfada, bu makinede DCOM kullanılabilir ağ protokolleri kümesi listelenir. Sırayı kullanılabilmeleri öncelikli yansıtır; Listedeki ilk en yüksek önceliğe sahip. Protokolleri eklenebilir veya bu sayfadan silindi.
+Bu sayfada, bu makinede DCOM için kullanılabilen ağ protokolleri kümesi listelenir. Sıra, kullanılacağı önceliği yansıtır; Listedeki ilk, en yüksek önceliğe sahiptir. Bu sayfadan protokoller eklenebilir veya silinebilir.
 
 ## <a name="default-properties-page"></a>Varsayılan Özellikler sayfası
 
-Varsayılan Özellikler sayfasında seçmelisiniz **bu bilgisayar üzerinde dağıtılmış COM'u etkinleştir** erişim COM nesneleri bu makinede çalışan diğer makinelere istemcilerde istiyorsanız kutuyu. Bu seçeneği ayarlar seçerek `HKEY_LOCAL_MACHINE\Software\Microsoft\OLE\EnableDCOM` değerini `Y`.
+Diğer makinelerdeki istemcilerin bu makinede çalışan COM nesnelerine erişmesini istiyorsanız Varsayılan Özellikler sayfasında **Bu bilgisayarda Dağıtılmış com 'U etkinleştir** onay kutusunu seçmeniz gerekir. Bu seçeneğin belirlenmesi `HKEY_LOCAL_MACHINE\Software\Microsoft\OLE\EnableDCOM` değerini olarak ayarlar `Y` .
 
 ## <a name="applications-page"></a>Uygulamalar sayfası
 
-Uygulama sayfasını ile belirli bir nesnesi için ayarları değiştirin. Yalnızca uygulamayı listeden seçin ve tıklayın **özellikleri** düğmesi. Özellikler penceresinde beş sayfası vardır:
+Uygulamalar sayfasını kullanarak belirli bir nesnenin ayarlarını değiştirirsiniz. Listeden uygulamayı seçmeniz yeterlidir ve **Özellikler** düğmesine tıklayın. Özellikler penceresi beş sayfa içerir:
 
-- Genel sayfası çalıştığınız uygulama onaylar.
+- Genel sayfası, üzerinde çalıştığınız uygulamayı onaylar.
 
-- Burada bir istemci çağırdığında, uygulamanın çalışması gerektiğini belirtmek konum sayfası verir `CoCreateInstance` ilgili CLSID üzerinde. Seçerseniz **aşağıdaki bilgisayarda uygulamayı çalıştırın** onay kutusunu işaretleyin ve bir bilgisayar adı girin. bir `RemoteServerName` değer, bu uygulamanın AppID altında eklenir. Temizleme **uygulamayı bu bilgisayarda Çalıştır** onay kutusunu yeniden adlandırma `LocalService` değerini `_LocalService` ve böylece, devre dışı bırakır.
+- Konum sayfası, bir istemci ilgili CLSID üzerinde çağrı yapıldığında Uygulamanın çalıştırılacağı yeri belirtmenize olanak tanır `CoCreateInstance` . **Uygulamayı şu bilgisayarda çalıştır** onay kutusunu işaretleyin ve bir bilgisayar adı girerseniz, `RemoteServerName` Bu uygulama için AppID altına bir değer eklenir. **Bu bilgisayarda uygulamayı çalıştır** onay kutusu temizlendiğinde değeri yeniden adlandırır `LocalService` ve bu `_LocalService` nedenle devre dışı bırakır.
 
-- Bu ayarlar yalnızca geçerli uygulama için güvenlik sayfası DCOMCNFG penceredeki varsayılan güvenlik sayfasına benzer olmasıdır. Yeniden ayarları, bu nesne için AppID altında depolanır.
+- Güvenlik sayfası, bu ayarların yalnızca geçerli uygulama için geçerli olması dışında, DCOMCNFG penceresinde bulunan varsayılan güvenlik sayfasına benzerdir. Yine, ayarlar bu nesnenin AppID altında depolanır.
 
-- Hangi kullanıcı uygulamayı çalıştırmak için kullanılan tanımla sayfası tanımlar.
+- Tanımla sayfası, uygulamayı çalıştırmak için hangi kullanıcının kullanıldığını tanımlar.
 
-- Uç noktaları sayfası protokolleri ve seçili DCOM sunucusunun istemciler tarafından kullanılabilir uç noktaları kümesini listeler.
+- Uç noktalar sayfası, seçilen DCOM sunucusunun istemcileri tarafından kullanılabilen protokoller ve uç noktalar kümesini listeler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

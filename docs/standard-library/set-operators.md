@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; set &gt; Operators'
 title: '&lt;&gt;işleç ayarla'
 ms.date: 03/27/2019
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::operator&lt; (set)
 - std::operator&lt;= (set)
 - std::operator== (set)
-ms.openlocfilehash: a3256b7d963feca75e4a975def0f6da77538d278
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5872760bb7f9cd3517ad14ea29fcca495dbaed59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217512"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154129"
 ---
 # <a name="ltsetgt-operators"></a>&lt;&gt;işleç ayarla
 
-## <a name="operator-set"></a><a name="op_neq"></a>işleç! = (küme)
+## <a name="operator-set"></a><a name="op_neq"></a> işleç! = (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesine eşit olup olmadığını sınar.
 
@@ -86,7 +87,7 @@ The sets s1 and s3 are equal.
 */
 ```
 
-## <a name="operatorlt-set"></a><a name="op_lt"></a>işleç &lt; (küme)
+## <a name="operatorlt-set"></a><a name="op_lt"></a> işleç &lt; (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden küçük olup olmadığını sınar.
 
@@ -147,7 +148,7 @@ The set s1 is not less than the set s3.
 */
 ```
 
-## <a name="operatorlt-set"></a><a name="op_lt_eq"></a>operator &lt; = (küme)
+## <a name="operatorlt-set"></a><a name="op_lt_eq"></a> operator &lt; = (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden küçük veya ona eşit olup olmadığını sınar.
 
@@ -216,7 +217,7 @@ The set s1 is greater than the set s3.
 Set s1 is less than or equal to the set s4.
 ```
 
-## <a name="operator-set"></a><a name="op_eq_eq"></a>işleç = = (küme)
+## <a name="operator-set"></a><a name="op_eq_eq"></a> işleç = = (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesine eşit olup olmadığını sınar.
 
@@ -278,7 +279,7 @@ The sets s1 and s2 are not equal.
 The sets s1 and s3 are equal.
 ```
 
-## <a name="operatorgt-set"></a><a name="op_gt"></a>işleç &gt; (küme)
+## <a name="operatorgt-set"></a><a name="op_gt"></a> işleç &gt; (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden büyük olup olmadığını sınar.
 
@@ -339,7 +340,7 @@ The set s1 is greater than the set s3.
 */
 ```
 
-## <a name="operatorgt-set"></a><a name="op_gt_eq"></a>operator &gt; = (küme)
+## <a name="operatorgt-set"></a><a name="op_gt_eq"></a> operator &gt; = (küme)
 
 İşlecin sol tarafındaki küme nesnesinin, sağ taraftaki küme nesnesinden büyük veya ona eşit olup olmadığını sınar.
 
@@ -408,7 +409,7 @@ Set s1 is greater than or equal to set s3.
 Set s1 is greater than or equal to set s4.
 ```
 
-## <a name="operator-multiset"></a><a name="op_neq_multiset"></a>işleç! = (çoklu küme)
+## <a name="operator-multiset"></a><a name="op_neq_multiset"></a> işleç! = (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit olup olmadığını sınar.
 
@@ -470,7 +471,7 @@ The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
 ```
 
-## <a name="operatorlt-multiset"></a><a name="op_lt_multiset"></a>işleç &lt; (çoklu küme)
+## <a name="operatorlt-multiset"></a><a name="op_lt_multiset"></a> işleç &lt; (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden küçük olup olmadığını sınar.
 
@@ -536,7 +537,7 @@ The multiset s1 is less than the multiset s2.
 The multiset s1 is not less than the multiset s3.
 ```
 
-## <a name="operatorlt-multiset"></a><a name="op_lt_eq_multiset"></a>operator &lt; = (çoklu küme)
+## <a name="operatorlt-multiset"></a><a name="op_lt_eq_multiset"></a> operator &lt; = (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit veya ondan küçük olup olmadığını sınar.
 
@@ -611,7 +612,7 @@ The multiset s1 is greater than the multiset s3.
 The multiset s1 is less than or equal to the multiset s4.
 ```
 
-## <a name="operator-multiset"></a><a name="op_eq_eq_multiset"></a>işleç = = (çoklu küme)
+## <a name="operator-multiset"></a><a name="op_eq_eq_multiset"></a> işleç = = (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesine eşit olup olmadığını sınar.
 
@@ -673,7 +674,7 @@ The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
 ```
 
-## <a name="operatorgt-multiset"></a><a name="op_gt_multiset"></a>işleç &gt; (çoklu küme)
+## <a name="operatorgt-multiset"></a><a name="op_gt_multiset"></a> işleç &gt; (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden büyük olup olmadığını sınar.
 
@@ -739,7 +740,7 @@ The multiset s1 is not greater than the multiset s2.
 The multiset s1 is greater than the multiset s3.
 ```
 
-## <a name="operatorgt-multiset"></a><a name="op_gt_eq_multiset"></a>operator &gt; = (çoklu küme)
+## <a name="operatorgt-multiset"></a><a name="op_gt_eq_multiset"></a> operator &gt; = (çoklu küme)
 
 İşlecin sol tarafındaki çok kümeli nesnenin sağ taraftaki çoklu küme nesnesinden büyük veya ona eşit olup olmadığını sınar.
 

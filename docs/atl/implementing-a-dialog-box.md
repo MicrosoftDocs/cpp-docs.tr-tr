@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Iletişim kutusu uygulama'
 title: Iletişim kutusu uygulama
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAxDialogImpl class, implementing dialog boxes in ATL
 - ATL, dialog boxes
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
-ms.openlocfilehash: fa7b4122b513d48194dedeb39daecd1dfd7223eb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 736619b39d06cffc28bc9723c94d0c5367dd51d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152916"
 ---
 # <a name="implementing-a-dialog-box"></a>Iletişim kutusu uygulama
 

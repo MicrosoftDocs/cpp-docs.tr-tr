@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: CWindowImpl ile pencere uygulama'
 title: CWindowImpl ile pencere uygulama
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - subclassing ATL window classes
 - superclassing, ATL
 ms.assetid: 3fc40550-f1d6-4702-8b7c-4cf682b6a855
-ms.openlocfilehash: 7ce1a2ec08e49e047aee5248bda0094d9e392614
-ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
+ms.openlocfilehash: 4010450b21a7cbbb4c4f1e4b7a39f594ce1e466e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92135521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152887"
 ---
 # <a name="implementing-a-window-with-cwindowimpl"></a>CWindowImpl ile pencere uygulama
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: shared_future sınıfı'
 title: shared_future Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,18 +19,18 @@ helpviewer_keywords:
 - std::shared_future [C++], wait
 - std::shared_future [C++], wait_for
 - std::shared_future [C++], wait_until
-ms.openlocfilehash: dcc1f4bf1ce25890945f1d9e207f2363122c0ad2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 169e9c7aa906a788975852ae6a3f90a1b46213c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217499"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154090"
 ---
 # <a name="shared_future-class"></a>shared_future Sınıfı
 
-*Zaman uyumsuz bir dönüş nesnesi*tanımlar. [Gelecekteki](../standard-library/future-class.md) bir nesnenin aksine, *zaman uyumsuz bir sağlayıcı* herhangi bir sayıda `shared_future` nesneyle ilişkilendirilebilir.
+*Zaman uyumsuz bir dönüş nesnesi* tanımlar. [Gelecekteki](../standard-library/future-class.md) bir nesnenin aksine, *zaman uyumsuz bir sağlayıcı* herhangi bir sayıda `shared_future` nesneyle ilişkilendirilebilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Ty>
@@ -38,9 +39,9 @@ class shared_future;
 
 ## <a name="remarks"></a>Açıklamalar
 
-`valid` `operator=` Boş bir nesne üzerindeki,, ve yıkıcının dışında herhangi bir yöntemi çağırmayın `shared_future` . *empty*
+`valid` `operator=` Boş bir nesne üzerindeki,, ve yıkıcının dışında herhangi bir yöntemi çağırmayın `shared_future` . 
 
-`shared_future`nesneler eşitlenmemiş. Birden çok iş parçacığından aynı nesne üzerindeki yöntemlerin çağrılması öngörülemeyen sonuçlara sahip bir veri Race tanıtır.
+`shared_future` nesneler eşitlenmemiş. Birden çok iş parçacığından aynı nesne üzerindeki yöntemlerin çağrılması öngörülemeyen sonuçlara sahip bir veri Race tanıtır.
 
 ## <a name="members"></a>Üyeler
 
@@ -54,7 +55,7 @@ class shared_future;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Al](#get)|*İlişkili zaman uyumsuz durumda*depolanan sonucu alır.|
+|[Al](#get)|*İlişkili zaman uyumsuz durumda* depolanan sonucu alır.|
 |[geçerli](#valid)|Nesnenin boş olup olmadığını belirtir.|
 |[bekleneceğini](#wait)|İlişkili zaman uyumsuz durum hazırlanana kadar geçerli iş parçacığını engeller.|
 |[wait_for](#wait_for)|İlişkili zaman uyumsuz duruma kadar veya belirtilen süre geçene kadar engeller.|
@@ -72,9 +73,9 @@ class shared_future;
 
 **Ad alanı:** std
 
-## <a name="shared_futureget"></a><a name="get"></a>shared_future:: Get
+## <a name="shared_futureget"></a><a name="get"></a> shared_future:: Get
 
-*İlişkili zaman uyumsuz durumda*depolanan sonucu alır.
+*İlişkili zaman uyumsuz durumda* depolanan sonucu alır.
 
 ```cpp
 const Ty& get() const;
@@ -94,7 +95,7 @@ Kısmi `shared_future<Ty&>` özelleşme için, saklı değer, geri dönüş değ
 
 Özelleştirme için depolanan değer olmadığından `shared_future<void>` , yöntemi döndürür **`void`** .
 
-## <a name="shared_futureoperator"></a><a name="op_eq"></a>shared_future:: operator =
+## <a name="shared_futureoperator"></a><a name="op_eq"></a> shared_future:: operator =
 
 Belirtilen bir nesneden *ilişkili bir zaman uyumsuz durumu* aktarır.
 
@@ -118,7 +119,7 @@ Bir `shared_future` nesnesi.
 
 İkinci yöntemde, ilişkili zaman uyumsuz durumunu *sağ* sürdürür.
 
-## <a name="shared_futureshared_future-constructor"></a><a name="shared_future"></a>shared_future:: shared_future Oluşturucusu
+## <a name="shared_futureshared_future-constructor"></a><a name="shared_future"></a> shared_future:: shared_future Oluşturucusu
 
 Bir `shared_future` nesnesi oluşturur.
 
@@ -136,15 +137,15 @@ shared_future(const shared_future& Right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, `shared_future` *ilişkili zaman uyumsuz durumu*olmayan bir nesne oluşturur.
+İlk Oluşturucu, `shared_future` *ilişkili zaman uyumsuz durumu* olmayan bir nesne oluşturur.
 
-İkinci ve üçüncü oluşturucular bir nesne oluşturur `shared_future` ve ilişkili zaman uyumsuz durumu *sağdan*aktarır. *Artık ilişkili* bir zaman uyumsuz duruma sahip değil.
+İkinci ve üçüncü oluşturucular bir nesne oluşturur `shared_future` ve ilişkili zaman uyumsuz durumu *sağdan* aktarır. *Artık ilişkili* bir zaman uyumsuz duruma sahip değil.
 
-Dördüncü Oluşturucu, `shared_future` ilişkili zaman uyumsuz duruma sahip bir nesneyi *sağ*olarak oluşturur.
+Dördüncü Oluşturucu, `shared_future` ilişkili zaman uyumsuz duruma sahip bir nesneyi *sağ* olarak oluşturur.
 
-## <a name="shared_futurevalid"></a><a name="valid"></a>shared_future:: geçerli
+## <a name="shared_futurevalid"></a><a name="valid"></a> shared_future:: geçerli
 
-Nesnenin *ilişkili bir zaman uyumsuz duruma*sahip olup olmadığını belirtir.
+Nesnenin *ilişkili bir zaman uyumsuz duruma* sahip olup olmadığını belirtir.
 
 ```cpp
 bool valid() noexcept;
@@ -154,9 +155,9 @@ bool valid() noexcept;
 
 **`true`** nesnenin ilişkili bir zaman uyumsuz durumu varsa; Aksi takdirde, **`false`** .
 
-## <a name="shared_futurewait"></a><a name="wait"></a>shared_future:: wait
+## <a name="shared_futurewait"></a><a name="wait"></a> shared_future:: wait
 
-*İlişkili zaman uyumsuz durum* *hazırlanana*kadar geçerli iş parçacığını engeller.
+*İlişkili zaman uyumsuz durum* *hazırlanana* kadar geçerli iş parçacığını engeller.
 
 ```cpp
 void wait() const;
@@ -166,7 +167,7 @@ void wait() const;
 
 İlişkili bir zaman uyumsuz durum, yalnızca zaman uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
 
-## <a name="shared_futurewait_for"></a><a name="wait_for"></a>shared_future:: wait_for
+## <a name="shared_futurewait_for"></a><a name="wait_for"></a> shared_future:: wait_for
 
 İlişkili zaman uyumsuz durum *hazırlanana* veya belirli bir süre geçene kadar geçerli iş parçacığını engeller.
 
@@ -189,7 +190,7 @@ Dönme nedeninizi belirten bir [future_status](../standard-library/future-enums.
 
 İlişkili bir zaman uyumsuz durum *, yalnızca zaman* uyumsuz sağlayıcısı bir dönüş değeri depolamışsa veya bir özel durum depolamışsa kullanılabilir.
 
-## <a name="shared_futurewait_until"></a><a name="wait_until"></a>shared_future:: wait_until
+## <a name="shared_futurewait_until"></a><a name="wait_until"></a> shared_future:: wait_until
 
 İlişkili zaman uyumsuz durum *hazırlanana* veya belirtilen bir zaman noktasına gelene kadar geçerli iş parçacığını engeller.
 

@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unsynchronized_pool_resource sınıfı'
 title: unsynchonized_pool_resource sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - memory_resource/std::unsynchronized_pool_resource
 helpviewer_keywords:
 - std::unsynchronized_pool_resource
-ms.openlocfilehash: 3bee36e328bb9342b009c6c021dbfbfa5d189fe9
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fe26a71b39d485fcead966e63ee52b9b6f0d6f86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268068"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153648"
 ---
-# <a name="unsynchronizedpoolresource-class"></a>unsynchronized_pool_resource sınıfı
+# <a name="unsynchronized_pool_resource-class"></a>unsynchronized_pool_resource sınıfı
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class unsynchronized_pool_resource : public memory_resource {

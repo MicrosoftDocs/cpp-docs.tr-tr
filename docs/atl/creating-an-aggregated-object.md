@@ -1,34 +1,35 @@
 ---
-title: Toplanan nesne oluşturma
+description: 'Hakkında daha fazla bilgi edinin: toplanmış nesne oluşturma'
+title: Toplanmış nesne oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - aggregation [C++], creating aggregated objects
 - aggregate objects [C++], creating
 ms.assetid: fc29d7aa-fd53-4276-9c2f-37379f71b179
-ms.openlocfilehash: 4be8d0e852da91b58125dc01d44eed4560b2b8d9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e6efbf63e28d0477730a2d7c31ec91e9b75520e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250764"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153232"
 ---
-# <a name="creating-an-aggregated-object"></a>Toplanan nesne oluşturma
+# <a name="creating-an-aggregated-object"></a>Toplanmış nesne oluşturma
 
-Toplama Temsilciler `IUnknown` çağrıları, dış nesnenin bir işaretçi sağlayan `IUnknown` iç nesne.
+Toplama temsilcileri `IUnknown` , dış nesnenin iç nesnesine bir işaretçi sağlayarak çağırır `IUnknown` .
 
-## <a name="to-create-an-aggregated-object"></a>Toplanan nesne oluşturma
+## <a name="to-create-an-aggregated-object"></a>Toplanmış bir nesne oluşturmak için
 
-1. Ekleme bir `IUnknown` sınıfınıza işaretçi nesnesinin ve oluşturucuda NULL olarak başlatın.
+1. `IUnknown`Sınıf nesneniz için bir işaretçi ekleyin ve oluşturucuda null olarak başlatın.
 
-1. Geçersiz kılma [FinalConstruct](../atl/reference/ccomobjectrootex-class.md#finalconstruct) toplama oluşturmak için.
+1. Toplama oluşturmak için [Finalyapısını](../atl/reference/ccomobjectrootex-class.md#finalconstruct) geçersiz kılın.
 
-1. Kullanım `IUnknown` işaretçisi, ikinci parametre olarak 1. adımda tanımlanan [COM_INTERFACE_ENTRY_AGGREGATE](reference/com-interface-entry-macros.md#com_interface_entry_aggregate) makroları.
+1. `IUnknown` [COM_INTERFACE_ENTRY_AGGREGATE](reference/com-interface-entry-macros.md#com_interface_entry_aggregate) makrolarının Ikinci parametresi olarak adım 1 ' de tanımlanan işaretçiyi kullanın.
 
-1. Geçersiz kılma [FinalRelease](../atl/reference/ccomobjectrootex-class.md#finalrelease) yayımlamayı `IUnknown` işaretçi.
+1. İşaretçiyi serbest bırakmak için [FinalRelease](../atl/reference/ccomobjectrootex-class.md#finalrelease) 'i geçersiz kılın `IUnknown` .
 
 > [!NOTE]
-> Kullanın ve yayın sırasında toplanan nesne bir arabirimden `FinalConstruct`, eklemeniz gerekir [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) Makro tanımında sınıfı nesne.
+> Sırasında toplanmış nesneden bir arabirim kullanırsanız ve serbest bırakırsanız `FinalConstruct` , sınıf nesnenizin tanımına [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) makrosunu eklemeniz gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)
+[ATL COM nesnelerinin temelleri](../atl/fundamentals-of-atl-com-objects.md)

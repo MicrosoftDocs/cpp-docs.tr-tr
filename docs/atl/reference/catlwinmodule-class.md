@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAtlWinModule sınıfı'
 title: CAtlWinModule sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlWinModule class
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
-ms.openlocfilehash: 04dc7e5b8c0c5dd21567f23395b4bafd4ae839dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4ed0c52a59401fa5411fd6d5acbcaf72f31aeb11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229993"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152587"
 ---
 # <a name="catlwinmodule-class"></a>CAtlWinModule sınıfı
 
@@ -24,7 +25,7 @@ Bu sınıf, ATL Pencereleme bileşenleri için destek sağlar.
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class CAtlWinModule : public _ATL_WIN_MODULE
@@ -60,7 +61,7 @@ Bu sınıf, Pencereleme özellikleri gerektiren tüm ATL sınıfları için dest
 
 **Üstbilgi:** atlbase. h
 
-## <a name="catlwinmoduleaddcreatewnddata"></a><a name="addcreatewnddata"></a>CAtlWinModule:: AddCreateWndData
+## <a name="catlwinmoduleaddcreatewnddata"></a><a name="addcreatewnddata"></a> CAtlWinModule:: AddCreateWndData
 
 Bu yöntem başlatır ve bir `_AtlCreateWndData` Yapı ekler.
 
@@ -80,7 +81,7 @@ Nesne **`this`** işaretçisinin işaretçisi.
 
 Bu yöntem, bir [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) yapısını başlatan [AtlWinModuleAddCreateWndData](winmodule-global-functions.md#atlwinmoduleaddcreatewnddata) öğesini çağırır. Bu yapı **`this`** , sınıf örneğini bir pencere yordamlarında elde etmek için kullanılan işaretçiyi depolayacaktır.
 
-## <a name="catlwinmodulecatlwinmodule"></a><a name="catlwinmodule"></a>CAtlWinModule:: CAtlWinModule
+## <a name="catlwinmodulecatlwinmodule"></a><a name="catlwinmodule"></a> CAtlWinModule:: CAtlWinModule
 
 Oluşturucu.
 
@@ -92,7 +93,7 @@ CAtlWinModule();
 
 Başlatma başarısız olursa, bir **EXCEPTION_NONCONTINUABLE** özel durumu oluşturulur.
 
-## <a name="catlwinmodulecatlwinmodule"></a><a name="dtor"></a>CAtlWinModule:: ~ CAtlWinModule
+## <a name="catlwinmodulecatlwinmodule"></a><a name="dtor"></a> CAtlWinModule:: ~ CAtlWinModule
 
 Yok edicisi.
 
@@ -104,7 +105,7 @@ Yok edicisi.
 
 Ayrılan tüm kaynakları serbest bırakır.
 
-## <a name="catlwinmoduleextractcreatewnddata"></a><a name="extractcreatewnddata"></a>CAtlWinModule:: ExtractCreateWndData
+## <a name="catlwinmoduleextractcreatewnddata"></a><a name="extractcreatewnddata"></a> CAtlWinModule:: ExtractCreateWndData
 
 Bu yöntem bir yapıya bir işaretçi döndürür `_AtlCreateWndData` .
 

@@ -1,26 +1,27 @@
 ---
-title: Çift Arayüzler ve Etkinlikler
+description: 'Daha fazla bilgi edinin: çift arabirimler ve olaylar'
+title: Çift arabirimler ve olaylar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - events [C++], dual interfaces
 - dual interfaces, events
 ms.assetid: bb382f7c-e885-4274-bf07-83f3602615d2
-ms.openlocfilehash: 4ce5048c25bd55feb0f1eb20fc04ec6bfeead746
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 231df7a0dfc8376acd6a9a0f9d85d0ed68fdd0b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319614"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153033"
 ---
-# <a name="dual-interfaces-and-events"></a>Çift Arayüzler ve Etkinlikler
+# <a name="dual-interfaces-and-events"></a>Çift arabirimler ve olaylar
 
-Bir olay arabirimini ikili olarak tasarlamak mümkün olsa da, bunu yapmamak için bir dizi iyi tasarım nedeni vardır. Temel nedeni, olayın kaynağı sadece vtable veya üzerinden `Invoke`olay ateş olacak , her ikisi de değil. Olay kaynağı olayı doğrudan vtable yöntemi çağrısı olarak `IDispatch` çalıştırıyorsa, yöntemler asla kullanılmaz ve arabirimin saf bir vtable arabirimi olması gerektiği açıktır. Olay kaynağı olayı bir çağrı olarak `Invoke`çalıştırıyorsa, vtable yöntemleri asla kullanılmaz ve arabirimin bir dispinterface olması gerektiği açıktır. Olay arabirimlerinizi çift olarak tanımlarsanız, istemcilerin asla kullanılmayacak bir arabirimin bir bölümünü uygulamalarını gerekir.
+Bir olay arabirimini çift olarak tasarlamak mümkün olsa da, bunu yapamayan bazı iyi tasarım nedenleri vardır. Temel neden, olayın kaynağının yalnızca vtable veya aracılığıyla olayı tetiklemesi, `Invoke` her ikisiyle değil. Olay kaynağı olayı doğrudan bir vtable Yöntem çağrısı olarak `IDispatch` tetiklediğinde, Yöntemler asla kullanılmaz ve arabirimin saf bir vtable arabirimi olması gerekir. Olay kaynağı olayı öğesine çağrı olarak `Invoke` tetiklediğinde, vtable yöntemleri asla kullanılmaz ve arabirimin bir dispınterface olması gerekir. Olay arabirimlerinizi duals olarak tanımlarsanız, istemcilerin hiçbir daha kullanılamayacak bir arabirimin parçasını uygulamasını zorunlu kılcaksınız.
 
 > [!NOTE]
-> Bu bağımsız değişken, genel olarak çift arabirimler için geçerli değildir. Uygulama açısından bakıldığında, ikililer çok çeşitli istemciler tarafından erişilebilen arabirimleri hızlı, kullanışlı ve iyi desteklenen bir yoldur.
+> Bu bağımsız değişken, genel olarak çift arabirimler için geçerlidir. Uygulama açısından, duals, çok sayıda istemci tarafından erişilebilen arabirimleri uygulamanın hızlı, kolay ve iyi desteklenen bir yoludur.
 
-Çift olay arabirimlerinden kaçınmak için başka nedenler de vardır; ne Visual Basic ne de Internet Explorer bunları desteklemez.
+İkili olay arabirimlerinden kaçınmanın başka nedenleri vardır; Ne Visual Basic ne de Internet Explorer bunları desteklemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çift Arayüzler ve ATL](../atl/dual-interfaces-and-atl.md)
+[Çift arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)

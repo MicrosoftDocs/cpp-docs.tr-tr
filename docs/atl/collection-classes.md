@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: koleksiyon sınıfları'
 title: ATL 'de koleksiyon sınıfları
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-ms.openlocfilehash: a93810b91cefd897b55cae4760ade32374900eb3
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: bf0b8cf1e45673dd64b1b1d60a56ed9889bb6cff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041425"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153323"
 ---
 # <a name="collection-classes"></a>Koleksiyon Sınıfları
 
@@ -60,11 +61,11 @@ Aşağıdaki sınıflar, karşılaştırmalar ve öğe erişimiyle ilgili yardı
 
 - [Cprimitiveelementnitelikler](../atl/reference/cprimitiveelementtraits-class.md) Bu sınıf, temel veri türlerinden oluşan bir koleksiyon sınıfı için varsayılan yöntemleri ve işlevleri sağlar.
 
-- [CRBMap](../atl/reference/crbmap-class.md) Bu sınıf, bir eşleme yapısını, kırmızı siyah bir ikili ağacı kullanarak temsil eder.
+- [CRBMap](../atl/reference/crbmap-class.md) Bu sınıf, Red-Black bir ikili ağaç kullanarak bir eşleme yapısını temsil eder.
 
-- [CRBMultiMap](../atl/reference/crbmultimap-class.md) Bu sınıf, her anahtarın bir kırmızı siyah ikili ağaç kullanılarak birden çok değerle ilişkilendirilmesine izin veren bir eşleme yapısını temsil eder.
+- [CRBMultiMap](../atl/reference/crbmultimap-class.md) Bu sınıf, Red-Black bir ikili ağaç kullanarak her anahtarın birden fazla değerle ilişkilendirilmesine izin veren bir eşleme yapısını temsil eder.
 
-- [CRBTree](../atl/reference/crbtree-class.md) Bu sınıf, kırmızı siyah ağaç oluşturmak ve kullanmak için yöntemler sağlar.
+- [CRBTree](../atl/reference/crbtree-class.md) Bu sınıf Red-Black ağacı oluşturmak ve kullanmak için yöntemler sağlar.
 
 - [CSimpleArray](../atl/reference/csimplearray-class.md) Bu sınıf basit bir diziyi yönetmek için yöntemler sağlar.
 

@@ -1,5 +1,6 @@
 ---
-title: Arabirim işaretçisi sınıfları (ATL)
+description: 'Daha fazla bilgi edinin: arabirim Işaretçileri sınıfları'
+title: Arabirim Işaretçileri sınıfları (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,27 +8,27 @@ helpviewer_keywords:
 - interfaces, pointers classes
 - interface pointers classes
 ms.assetid: 712617a1-17ae-4b5c-a32c-a48b758df7a6
-ms.openlocfilehash: 992d4c7d882cd8837c3dbacbfde4855c9c94817f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 308814c0d2ba180e2cdc2a916e7f4f9e4bc520f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250359"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152756"
 ---
-# <a name="interface-pointers-classes"></a>Arabirim işaretçisi sınıfları
+# <a name="interface-pointers-classes"></a>Arabirim Işaretçileri sınıfları
 
-Aşağıdaki sınıflar, belirtilen arabirim işaretçisini yönetin:
+Aşağıdaki sınıflar belirli bir arabirim işaretçisini yönetir:
 
-- [CComPtr](../atl/reference/ccomptr-class.md) otomatik başvuru sayımı gerçekleştirir.
+- [CComPtr](../atl/reference/ccomptr-class.md) Otomatik başvuru sayımı gerçekleştirir.
 
-- [CComQIPtr](../atl/reference/ccomqiptr-class.md) benzer `CComPtr`, ancak aynı zamanda otomatik arabirimleri sorgulama yapar.
+- [CComQIPtr](../atl/reference/ccomqiptr-class.md) Buna benzer `CComPtr` , ancak arabirimlerin otomatik olarak sorgulanmasını da gerçekleştirir.
 
-- [Cınterfacearray](../atl/reference/cinterfacearray-class.md) sağlar yöntemler COM bir dizi oluştururken kullanışlı arabirim işaretçileri.
+- [CInterfaceArray](../atl/reference/cinterfacearray-class.md) Bir COM arabirim işaretçileri dizisi oluştururken yararlı yöntemler sağlar.
 
-- [Cınterfacelist](../atl/reference/cinterfacelist-class.md) sağlar yöntemler COM listesini oluştururken kullanışlı arabirim işaretçileri.
+- [CInterfaceList](../atl/reference/cinterfacelist-class.md) COM arabirim işaretçilerinin listesini oluştururken yararlı yöntemler sağlar.
 
-- [Ccomgıtptr](../atl/reference/ccomgitptr-class.md) arabirim işaretçileri ve genel arabirim tablosu (GIT) ile ilgilenmek için yöntemler sağlar.
+- [CComGITPtr](../atl/reference/ccomgitptr-class.md) Arabirim işaretçileri ve genel arabirim tablosu (GIT) ile ilgili yöntemler sağlar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sınıfına genel bakış](../atl/atl-class-overview.md)
+[Sınıfa genel bakış](../atl/atl-class-overview.md)

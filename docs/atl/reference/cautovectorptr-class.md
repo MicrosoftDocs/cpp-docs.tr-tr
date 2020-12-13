@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: CAutoVectorPtr sınıfı'
 title: CAutoVectorPtr sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoVectorPtr class
 ms.assetid: 0030362b-6bc4-4a47-9b5b-3c3899dceab4
-ms.openlocfilehash: 65d37396b02d2c11c758915b201eef09cf1935b5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 60e61abb5519043e89266f3f9d9a2f4d9aec138a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226652"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152496"
 ---
 # <a name="cautovectorptr-class"></a>CAutoVectorPtr sınıfı
 
@@ -27,7 +28,7 @@ Bu sınıf, vector New ve DELETE işleçlerini kullanarak bir akıllı işaretç
 > [!IMPORTANT]
 > Bu sınıf ve üyeleri Windows Çalışma Zamanı yürütülen uygulamalarda kullanılamaz.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template<typename T>
@@ -80,7 +81,7 @@ Akıllı işaretçi sınıfı kullanmayla ilgili bir örnek için bkz. [CAutoPtr
 
 **Üstbilgi:** atlbase. h
 
-## <a name="cautovectorptrallocate"></a><a name="allocate"></a>CAutoVectorPtr:: allocate
+## <a name="cautovectorptrallocate"></a><a name="allocate"></a> CAutoVectorPtr:: allocate
 
 Tarafından işaret edilen nesneler dizisinin gerektirdiği belleği ayırmak için bu yöntemi çağırın `CAutoVectorPtr` .
 
@@ -101,7 +102,7 @@ Bellek başarıyla ayrılmışsa true, hatada false döndürür.
 
 Hata ayıklama yapılarında, [CAutoVectorPtr:: m_p](#m_p) üye değişkeni şu anda mevcut bir değere işaret ediyorsa bir onaylama hatası meydana gelir; diğer bir deyişle, NULL değerine eşit değildir.
 
-## <a name="cautovectorptrattach"></a><a name="attach"></a>CAutoVectorPtr:: Attach
+## <a name="cautovectorptrattach"></a><a name="attach"></a> CAutoVectorPtr:: Attach
 
 Varolan bir işaretçinin sahipliğini almak için bu yöntemi çağırın.
 
@@ -120,7 +121,7 @@ Bir `CAutoVectorPtr` nesne bir işaretçinin sahipliğini aldığında, bu işle
 
 Hata ayıklama yapılarında, [CAutoVectorPtr:: m_p](#m_p) üye değişkeni şu anda mevcut bir değere işaret ediyorsa bir onaylama hatası meydana gelir; diğer bir deyişle, NULL değerine eşit değildir.
 
-## <a name="cautovectorptrcautovectorptr"></a><a name="cautovectorptr"></a>CAutoVectorPtr:: CAutoVectorPtr
+## <a name="cautovectorptrcautovectorptr"></a><a name="cautovectorptr"></a> CAutoVectorPtr:: CAutoVectorPtr
 
 Oluşturucu.
 
@@ -139,7 +140,7 @@ Var olan bir işaretçi.
 
 `CAutoVectorPtr`Nesnesi var olan bir işaretçi kullanılarak oluşturulabilir ve bu durumda işaretçinin sahipliğini aktarır.
 
-## <a name="cautovectorptrcautovectorptr"></a><a name="dtor"></a>CAutoVectorPtr:: ~ CAutoVectorPtr
+## <a name="cautovectorptrcautovectorptr"></a><a name="dtor"></a> CAutoVectorPtr:: ~ CAutoVectorPtr
 
 Yok edicisi.
 
@@ -151,7 +152,7 @@ Yok edicisi.
 
 Ayrılan kaynakları serbest bırakır. [CAutoVectorPtr:: Free](#free)çağırır.
 
-## <a name="cautovectorptrdetach"></a><a name="detach"></a>CAutoVectorPtr::D etach
+## <a name="cautovectorptrdetach"></a><a name="detach"></a> CAutoVectorPtr::D etach
 
 Bir işaretçinin sahipliğini serbest bırakmak için bu yöntemi çağırın.
 
@@ -167,7 +168,7 @@ T* Detach() throw();
 
 Bir işaretçinin sahipliğini serbest bırakır, [CAutoVectorPtr:: m_p](#m_p) üye değişkenini null olarak ayarlar ve işaretçinin bir kopyasını döndürür. Çağrıldıktan sonra `Detach` , `CAutoVectorPtr` nesnenin daha önce sorumluluğa sahip olabileceği ayrılmış kaynakların serbest olması için programcıya sahipsiniz.
 
-## <a name="cautovectorptrfree"></a><a name="free"></a>CAutoVectorPtr:: ücretsiz
+## <a name="cautovectorptrfree"></a><a name="free"></a> CAutoVectorPtr:: ücretsiz
 
 Tarafından işaret edilen bir nesneyi silmek için bu yöntemi çağırın `CAutoVectorPtr` .
 
@@ -179,7 +180,7 @@ void Free() throw();
 
 Tarafından işaret edilen nesne `CAutoVectorPtr` serbest bırakılır ve [CAutoVectorPtr:: m_p](#m_p) üye değişkeni null olarak ayarlanır.
 
-## <a name="cautovectorptrm_p"></a><a name="m_p"></a>CAutoVectorPtr:: m_p
+## <a name="cautovectorptrm_p"></a><a name="m_p"></a> CAutoVectorPtr:: m_p
 
 İşaretçi verisi üye değişkeni.
 
@@ -191,7 +192,7 @@ T* m_p;
 
 Bu üye değişkeni işaretçi bilgisini tutar.
 
-## <a name="cautovectorptroperator-"></a><a name="operator_eq"></a>CAutoVectorPtr:: operator =
+## <a name="cautovectorptroperator-"></a><a name="operator_eq"></a> CAutoVectorPtr:: operator =
 
 Atama işleci.
 
@@ -206,13 +207,13 @@ Bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir **CAutoVectorPtr \< T > **öğesine bir başvuru döndürür.
+Bir **CAutoVectorPtr \< T >** öğesine bir başvuru döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Atama işleci, `CAutoVectorPtr` nesneyi herhangi bir geçerli işaretçiden ayırır ve yeni işaretçiyi o yere ekler. *p*
+Atama işleci, `CAutoVectorPtr` nesneyi herhangi bir geçerli işaretçiden ayırır ve yeni işaretçiyi o yere ekler. 
 
-## <a name="cautovectorptroperator-t-"></a><a name="operator_t__star"></a>CAutoVectorPtr:: operator T *
+## <a name="cautovectorptroperator-t-"></a><a name="operator_t__star"></a> CAutoVectorPtr:: operator T *
 
 Atama işleci.
 

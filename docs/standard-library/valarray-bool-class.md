@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: valarray &lt; bool &gt; Class'
 title: valarray &lt; bool &gt; sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - valarray<bool> class
 ms.assetid: fc0e7121-4758-4ea5-86c3-f04448f04acf
-ms.openlocfilehash: 9145a6c75850fec78ca821b236133cc6c38beda9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c646c03b16c2724d61310f75eb48a625530a6712
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215432"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153414"
 ---
 # <a name="valarrayltboolgt-class"></a>valarray &lt; bool &gt; sınıfı
 
-Tür öğelerine **valarray \<Type> ** sınıf şablonunun özelleşmiş bir sürümü **`bool`** .
+Tür öğelerine **valarray \<Type>** sınıf şablonunun özelleşmiş bir sürümü **`bool`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class valarray<bool>

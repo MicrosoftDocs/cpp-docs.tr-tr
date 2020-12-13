@@ -1,20 +1,21 @@
 ---
+description: ': CommandHandler hakkında daha fazla bilgi'
 title: CommandHandler
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - CommandHandler function
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-ms.openlocfilehash: 99a95228f6036e5f391395be367cdef39ca3dc3b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 746048dd83088cac8316cf6e0140644956c21b4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492464"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153292"
 ---
 # <a name="commandhandler"></a>CommandHandler
 
-`CommandHandler`, ileti Haritalarınızın COMMAND_HANDLER makrosunun üçüncü parametresi tarafından tanımlanan işlevdir.
+`CommandHandler` , ileti Haritalarınızın COMMAND_HANDLER makrosunun üçüncü parametresi tarafından tanımlanan işlevdir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -31,14 +32,14 @@ LRESULT CommandHandler(
 *wNotifyCode*<br/>
 Bildirim kodu.
 
-*wID*<br/>
+*WID*<br/>
 Menü öğesinin, denetimin veya hızlandırıcının tanımlayıcısı.
 
 *hWndCtl*<br/>
 Pencere denetimine yönelik bir tanıtıcı.
 
 *Bişlenmiş*<br/>
-Çağrılan ileti eşleme kümeleri çağrılmadan önce `CommandHandler` true olarak ayarlanır. İletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek için bişlenmiş olarak false olarak ayarlanmalıdır. `CommandHandler`
+Çağrılan ileti *eşleme kümeleri* ÇAĞRıLMADAN önce true olarak ayarlanır `CommandHandler` . `CommandHandler`İletiyi tam olarak işlemezse, iletinin daha fazla işleme ihtiyacı olduğunu göstermek Için *BIŞLENMIŞ* olarak false olarak ayarlanmalıdır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -50,6 +51,6 @@ Bu ileti işleyicisini bir ileti eşlemesinde kullanmanın bir örneği için bk
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencere Uygulama](../atl/implementing-a-window.md)<br/>
+[Pencere uygulama](../atl/implementing-a-window.md)<br/>
 [İleti haritaları](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](/windows/win32/controls/wm-notify)

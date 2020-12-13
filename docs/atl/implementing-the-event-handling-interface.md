@@ -1,40 +1,41 @@
 ---
-title: Olay işleme arabirimini uygulama
+description: 'Hakkında daha fazla bilgi edinin: olay Işleme arabirimini uygulama'
+title: Olay Işleme arabirimini uygulama
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, event handling
 - event handling, ATL
 - interfaces, event and event sink
 ms.assetid: eb2a5b33-88dc-4ce3-bee0-c5c38ea050d7
-ms.openlocfilehash: d977b59907266a2e0141defa8c496b1e7bc66a6c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 109fbb1fbdd4f18d0eb4c295fbc08de2b7cc3a35
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262079"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152769"
 ---
-# <a name="implementing-the-event-handling-interface"></a>Olay işleme arabirimini uygulama
+# <a name="implementing-the-event-handling-interface"></a>Olay Işleme arabirimini uygulama
 
-ATL yardımcı olur, olayları işlemek için gerekli tüm üç öğelerle: olay arabirimi uygulayan, olay kaynağı bildiren ve olay kaynağı unadvising. Gerçekleştirilecek ihtiyacınız olacak doğru adımlar olay arabirimini ve uygulamanızın performans gereksinimlerini türüne bağlıdır.
+ATL, olayları işlemek için gerekli olan üç öğe için size yardımcı olur: olay arabirimini uygulama, olay kaynağını Temizleme ve olay kaynağını geri alma. Gerçekleştirmeniz gereken kesin adımlar, olay arabiriminin türüne ve uygulamanızın performans gereksinimlerine göre değişir.
 
-ATL kullanarak arabirimi uygulama ile ilgili en yaygın yöntemler şunlardır:
+ATL kullanarak arabirim kullanmanın en yaygın yolları şunlardır:
 
-- Özel bir arabirimden doğrudan türetme.
+- Özel arabirimden doğrudan türetiliyor.
 
-- Öğesinden türetme [Idispatchımpl](../atl/reference/idispatchimpl-class.md) tür kitaplığında tanımlanan ikili arabirimler için.
+- Bir tür kitaplığında açıklanan çift arabirimler için [IDispatchImpl](../atl/reference/idispatchimpl-class.md) 'den türetiliyor.
 
-- Öğesinden türetme [Idispeventımpl](../atl/reference/idispeventimpl-class.md) tanımlanan bir tür kitaplığındaki görüntü arabirimlerinde için.
+- Bir tür kitaplığında açıklanan dispınterfaces için [IDispEventImpl](../atl/reference/idispeventimpl-class.md) öğesinden türetme.
 
-- Öğesinden türetme [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md) için bir tür kitaplığı veya çalışma zamanında tür bilgilerini yüklenmemesi verimliliğini artırmak istediğiniz zaman açıklanmayan görüntüleme.
+- Bir tür kitaplığında açıklanmayan, görüntüleme arabirimleri için [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) 'den türetiliyor veya çalışma zamanında tür bilgilerini yüklemeerek verimliliği artırmak istediğinizde.
 
-Özel veya çift arabirim uyguluyorsanız çağırarak olay kaynağı öneri [AtlAdvise](reference/connection-point-global-functions.md#atladvise) veya [CComPtrBase::Advise](../atl/reference/ccomptrbase-class.md#advise). Kendiniz çağrı tarafından döndürülen tanımlama bilgisi izlemek gerekir. Çağrı [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) bağlantıyı kesmek için.
+Özel veya çift bir arabirim uyguıyorsanız, [AtlAdvise](reference/connection-point-global-functions.md#atladvise) veya [CComPtrBase:: Advise](../atl/reference/ccomptrbase-class.md#advise)öğesini çağırarak olay kaynağına göre öneri almalısınız. Çağrı tarafından döndürülen tanımlama bilgisini takip etmeniz gerekir. Bağlantıyı kesmek için [AtlUnadvise](reference/connection-point-global-functions.md#atlunadvise) çağrısı yapın.
 
-Bir dispinterface kullanarak uyguluyorsanız `IDispEventImpl` veya `IDispEventSimpleImpl`, olay kaynağı çağırarak öneri [IDispEventSimpleImpl::DispEventAdvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise). Çağrı [IDispEventSimpleImpl::DispEventUnadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise) bağlantıyı kesmek için.
+Veya kullanarak bir dispınterface uyguıyorsanız `IDispEventImpl` `IDispEventSimpleImpl` , [IDispEventSimpleImpl::D Ispeventadmeni](../atl/reference/idispeventsimpleimpl-class.md#dispeventadvise)çağırarak olay kaynağını önermelisiniz. Bağlantıyı kesmek için [IDispEventSimpleImpl::D ıspeventunadvise](../atl/reference/idispeventsimpleimpl-class.md#dispeventunadvise) öğesini çağırın.
 
-Kullanıyorsanız `IDispEventImpl` bileşik denetim temel sınıf olarak listelenen havuz haritada olay kaynakları tavsiye edilir ve unadvised kullanılarak otomatik olarak olacaktır [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).
+`IDispEventImpl`Bileşik bir denetimin temel sınıfı olarak kullanıyorsanız, havuz eşlemesinde listelenen olay kaynakları, [CComCompositeControl:: Advisesınkmap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)kullanılarak otomatik olarak önerilir ve tavsiye edilir.
 
-`IDispEventImpl` Ve `IDispEventSimpleImpl` sınıfları, tanımlama bilgisi yönetin.
+`IDispEventImpl`Ve `IDispEventSimpleImpl` sınıfları tanımlama bilgisini sizin için yönetir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Olay İşleme](../atl/event-handling-and-atl.md)
+[Olay Işleme](../atl/event-handling-and-atl.md)

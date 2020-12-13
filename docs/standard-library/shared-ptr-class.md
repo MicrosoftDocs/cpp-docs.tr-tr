@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: shared_ptr Sınıfı'
 title: shared_ptr sınıfı
 ms.date: 07/29/2019
 f1_keywords:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - std::shared_ptr [C++], unique
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-ms.openlocfilehash: e41c76e7bd3e77b34ad38d3998ee1d38cdc2fee4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 973bda9cb769eff339a02cbc43838e8c94516408
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846218"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154051"
 ---
 # <a name="shared_ptr-class"></a>shared_ptr sınıfı
 
@@ -57,7 +58,7 @@ class shared_ptr;
 
 Şablon bağımsız değişkeni, `T` belirli üye işlevleri için belirtilmedikçe, tamamlanmamış bir tür olabilir.
 
-Bir `shared_ptr<T>` nesne türü veya bir kaynak işaretçisinden oluşturulduğunda `G*` `shared_ptr<G>` , işaretçi türü `G*` öğesine dönüştürülebilir olmalıdır `T*` . Dönüştürülemeyen kod derlenmez. Örnek:
+Bir `shared_ptr<T>` nesne türü veya bir kaynak işaretçisinden oluşturulduğunda `G*` `shared_ptr<G>` , işaretçi türü `G*` öğesine dönüştürülebilir olmalıdır `T*` . Dönüştürülemeyen kod derlenmez. Örneğin:
 
 ```cpp
 #include <memory>
@@ -140,7 +141,7 @@ Birden çok iş parçacığı, aynı anda farklı nesneleri okuyabilir ve yazabi
 |[owner_before](#owner_before)|Bu, `shared_ptr` belirtilen işaretçiden önce (veya ondan küçük) daha önce sipariş alıyorsa true değerini döndürür.|
 |[döndürmek](#reset)|Sahip olunan kaynağı değiştirin.|
 |[Kur](#swap)|İki `shared_ptr` nesneyi değiştirir.|
-|[unique](#unique)|Sahip olunan kaynak benzersiz ise sınar.|
+|[eşi](#unique)|Sahip olunan kaynak benzersiz ise sınar.|
 |[use_count](#use_count)|Kaynak sahiplerinin numaralarını sayar.|
 | **İşleçler** | |
 |[işleç bool](#op_bool)|Sahip olunan bir kaynağın mevcut olup olmadığını sınar.|
@@ -329,7 +330,7 @@ Taşınacak otomatik işaretçi. `auto_ptr`Aşırı yükleme, c++ 11 ' de kullan
 Sahipliğini benimsemek için nesnenin benzersiz işaretçisi. çağrıdan sonra hiç *nesne sahibi yok* .
 
 *Farklı*\
-*SP*, *AP*veya *up*tarafından işaret edilen nesnenin türü.
+*SP*, *AP* veya *up* tarafından işaret edilen nesnenin türü.
 
 *Silici*\
 Nesnenin daha sonra silinmesi için depolanan, sahip olunan nesnenin silici türü.
@@ -737,7 +738,7 @@ void swap(shared_ptr& sp) noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, bundan sonra SP tarafından sahip olunan kaynağı **`*this`** ve bundan *sp*sonra *SP* tarafından sahip olunan kaynak olan kaynağı bırakır **`*this`** . İşlev, iki kaynağın başvuru sayısını değiştirmez ve hiçbir özel durum oluşturmaz.
+Üye işlevi, bundan sonra SP tarafından sahip olunan kaynağı **`*this`** ve bundan sonra *SP* tarafından sahip olunan kaynak olan kaynağı bırakır **`*this`** . İşlev, iki kaynağın başvuru sayısını değiştirmez ve hiçbir özel durum oluşturmaz.
 
 ### <a name="example"></a>Örnek
 
