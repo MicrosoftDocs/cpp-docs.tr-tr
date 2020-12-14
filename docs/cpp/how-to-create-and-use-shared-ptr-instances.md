@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma'
 title: 'Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma'
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: 44d375f72cf409df1e67b72dd76e196051dacf93
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b98a9a349f7f33805bd86c58e854b1d988733da2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187965"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221260"
 ---
 # <a name="how-to-create-and-use-shared_ptr-instances"></a>Nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma
 
@@ -72,7 +73,7 @@ int main()
 
 ## <a name="example-1"></a>Örnek 1
 
-Mümkün olduğunda, [make_shared](../standard-library/memory-functions.md#make_shared) `shared_ptr` bellek kaynağı ilk kez oluşturulduğunda bir oluşturmak için make_shared işlevini kullanın. `make_shared`özel durum güvenlidir. Denetim bloğu ve kaynak için belleği ayırmak için aynı çağrıyı kullanır, bu da oluşturma ek yükünü azaltır. Kullanmıyorsanız `make_shared` , **`new`** oluşturucuyu geçirmeden önce nesneyi oluşturmak için açık bir ifade kullanmanız gerekir `shared_ptr` . Aşağıdaki örnek, yeni bir nesneyle birlikte bildirmek ve başlatmak için çeşitli yollar gösterir `shared_ptr` .
+Mümkün olduğunda, [](../standard-library/memory-functions.md#make_shared) `shared_ptr` bellek kaynağı ilk kez oluşturulduğunda bir oluşturmak için make_shared işlevini kullanın. `make_shared` özel durum güvenlidir. Denetim bloğu ve kaynak için belleği ayırmak için aynı çağrıyı kullanır, bu da oluşturma ek yükünü azaltır. Kullanmıyorsanız `make_shared` , **`new`** oluşturucuyu geçirmeden önce nesneyi oluşturmak için açık bir ifade kullanmanız gerekir `shared_ptr` . Aşağıdaki örnek, yeni bir nesneyle birlikte bildirmek ve başlatmak için çeşitli yollar gösterir `shared_ptr` .
 
 [!code-cpp[stl_smart_pointers#1](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]
 
@@ -84,7 +85,7 @@ Aşağıdaki örnek, `shared_ptr` başka bir tarafından zaten ayrılmış olan 
 
 ## <a name="example-3"></a>Örnek 3
 
-`shared_ptr`, öğeleri kopyalayabileceğiniz algoritmaları kullanırken C++ standart kitaplık kapsayıcılarında da yararlıdır. Öğeleri bir içinde sarabilir `shared_ptr` ve ardından, temel alınan belleğin, ihtiyacınız olduğu sürece geçerli olduğunu ve artık daha fazla kapsayıcıyla, diğer kapsayıcılara kopyalayabilirsiniz. Aşağıdaki örnek, `remove_copy_if` `shared_ptr` bir vektör içindeki örneklerde algoritmanın nasıl kullanılacağını gösterir.
+`shared_ptr` , öğeleri kopyalayabileceğiniz algoritmaları kullanırken C++ standart kitaplık kapsayıcılarında da yararlıdır. Öğeleri bir içinde sarabilir `shared_ptr` ve ardından, temel alınan belleğin, ihtiyacınız olduğu sürece geçerli olduğunu ve artık daha fazla kapsayıcıyla, diğer kapsayıcılara kopyalayabilirsiniz. Aşağıdaki örnek, `remove_copy_if` `shared_ptr` bir vektör içindeki örneklerde algoritmanın nasıl kullanılacağını gösterir.
 
 [!code-cpp[stl_smart_pointers#4](codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]
 

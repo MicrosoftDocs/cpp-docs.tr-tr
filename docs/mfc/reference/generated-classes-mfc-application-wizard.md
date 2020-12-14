@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: oluşturulan sınıflar, MFC Uygulama Sihirbazı'
 title: Oluşturulan Sınıflar, MFC Uygulama Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, generated classes
 ms.assetid: 5f33209c-7f01-4f72-8c1c-6f02f507ba9f
-ms.openlocfilehash: 472ceade4dbb5d99194098d82b7effc40092b5d1
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 38952f2cb186877c58e8e4823dbad31670c79742
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219791"
 ---
 # <a name="generated-classes-mfc-application-wizard"></a>Oluşturulan Sınıflar, MFC Uygulama Sihirbazı
 
-Bu konuda, projenizin oluşturduğu temel sınıfların ve dosyaların adları listelenmektedir. Varsayılan olarak, adlar **Yeni proje Iletişim kutusunda**belirttiğiniz proje adına göre belirlenir. Burada açıklandığı gibi, bu adların çoğunu değiştirebilirsiniz:
+Bu konuda, projenizin oluşturduğu temel sınıfların ve dosyaların adları listelenmektedir. Varsayılan olarak, adlar **Yeni proje Iletişim kutusunda** belirttiğiniz proje adına göre belirlenir. Burada açıklandığı gibi, bu adların çoğunu değiştirebilirsiniz:
 
 - **Oluşturulan sınıflar**
 
-   Proje için oluşturulan sınıfların adları. Varsayılan olarak, adlar proje adına dayalıdır. Varsayılan MFC projesi bir C*ProjName*görünüm sınıfı, bir c*ProjName*uygulama sınıfı, c*ProjName*doc sınıfı, Canabilgisayar sınıfı ve CChildFrame sınıfı oluşturur. Bu sayfadaki diğer tüm değerler, **oluşturulan sınıflar** listesinde şu anda seçili olan sınıfla ilgili bilgiler içerir.
+   Proje için oluşturulan sınıfların adları. Varsayılan olarak, adlar proje adına dayalıdır. Varsayılan MFC projesi bir C *ProjName* görünüm sınıfı, bir c *ProjName* uygulama sınıfı, c *ProjName* doc sınıfı, Canabilgisayar sınıfı ve CChildFrame sınıfı oluşturur. Bu sayfadaki diğer tüm değerler, **oluşturulan sınıflar** listesinde şu anda seçili olan sınıfla ilgili bilgiler içerir.
 
    Sınıf adını değiştirmek için **sınıf adı** metin kutusunu kullanın.
 
@@ -41,5 +42,5 @@ Bu konuda, projenizin oluşturduğu temel sınıfların ve dosyaların adları l
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Gelişmiş Özellikler, MFC Uygulama Sihirbazı](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
+[Gelişmiş özellikler, MFC Uygulama Sihirbazı](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
 [Visual Studio C++ projeleri için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)

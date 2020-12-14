@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: olay havuzu eşlemeleri'
 title: Olay İç Havuz Eşlemeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - event sink maps [MFC]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
-ms.openlocfilehash: 2cbfbc70ae14ccda95c377cb1587bf9d2a1ad3e6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: df18cdbba849ff0c8d7be5b038f997b6cc5df849
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219843"
 ---
 # <a name="event-sink-maps"></a>Olay İç Havuz Eşlemeleri
 
@@ -112,7 +113,7 @@ Olay için parametrelerin türlerini belirten **VTS_** sabitleri dizisi. Bunlar,
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişkeni, **VTS_** sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örnek:
+*VtsParams* bağımsız değişkeni, **VTS_** sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 
@@ -154,7 +155,7 @@ Olay için parametrelerin türlerini belirten **VTS_** sabitleri dizisi. İlk sa
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişkeni, **VTS_** sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örnek:
+*VtsParams* bağımsız değişkeni, **VTS_** sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 
@@ -202,7 +203,7 @@ Olay için parametrelerin türlerini belirten **VTS_** sabitleri dizisi. Bunlar,
 
 *VtsParams* bağımsız değişkeni, **VTS_** sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir.
 
-Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örnek:
+Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 
@@ -241,7 +242,7 @@ Bu özellik için bildirimi işleyen bir üye işlevi işaretçisi `OnChanged` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişkeni, **VTS_** sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örnek:
+*VtsParams* bağımsız değişkeni, **VTS_** sabitlerinden alınan değerlerin boşlukla ayrılmış bir listesidir. Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 

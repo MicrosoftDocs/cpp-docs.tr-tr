@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2009'
 title: Derleyici hatası C2009
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2009
 ms.assetid: fe9d94ed-20a5-4d83-b9c4-60ee69d2f30a
-ms.openlocfilehash: 02780a88552231472c2e16299a6d5e5dfef1bdd2
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: e7cc3078a8e404635dda531533bd3b1c629a0155
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221064"
 ---
 # <a name="compiler-error-c2009"></a>Derleyici hatası C2009
 

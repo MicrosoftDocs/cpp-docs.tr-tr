@@ -1,18 +1,19 @@
 ---
+description: 'Daha fazla bilgi edinin: akıllı işaretçiler (Modern C++)'
 title: Akıllı işaretçiler (Modern C++)
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-ms.openlocfilehash: e511cc513cdb35b06b976ce022c5e4edea35040b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b26b038b040f1bed5197fc1cd9b5518249c0ad95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221221"
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı işaretçiler (Modern C++)
 
-Modern C++ programlamada standart kitaplık, programların bellek ve kaynak sızıntılarını boşaltmasını ve özel durum açısından güvenli olmasını sağlamaya yardımcı olmak için kullanılan *akıllı işaretçiler*içerir.
+Modern C++ programlamada standart kitaplık, programların bellek ve kaynak sızıntılarını boşaltmasını ve özel durum açısından güvenli olmasını sağlamaya yardımcı olmak için kullanılan *akıllı işaretçiler* içerir.
 
 ## <a name="uses-for-smart-pointers"></a>Akıllı işaretçiler için kullanım alanları
 

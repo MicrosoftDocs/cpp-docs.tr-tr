@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CAccessorBase sınıfı'
 title: CAccessorBase Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - IsAutoAccessor method
 - ReleaseAccessors method
 ms.assetid: 389b65be-11ca-4ae0-9290-60c621c4982b
-ms.openlocfilehash: 81b0ecd8ded7acb0c0e376d0869decb2bfcb590e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 43d3f507f8ee003605cf2b3f964b06a3c1088233
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509123"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221182"
 ---
 # <a name="caccessorbase-class"></a>CAccessorBase Sınıfı
 
 OLE DB şablonlarındaki tüm erişimciler bu sınıftan türetilir. `CAccessorBase` bir satır kümesinin birden çok erişimciyi yönetmesine izin verir. Ayrıca, hem parametreler hem de çıkış sütunları için bağlama sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 // Replace with syntax
@@ -62,7 +63,7 @@ OLE DB şablonlarındaki tüm erişimciler bu sınıftan türetilir. `CAccessorB
 
 Erişimcileri kapatır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void Close();
@@ -95,7 +96,7 @@ Erişimci tanıtıcısı.
 
 Sınıfı tarafından oluşturulan erişimcilerinin sayısını alır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 ULONG GetNumAccessors() const;

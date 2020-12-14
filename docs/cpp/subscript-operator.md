@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi: alt IndiS Işleci []'
 title: İndis Işleci []
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - '[] operator'
 - subscript operator [C++], syntax
 ms.assetid: 69c31494-52da-4dd0-8bbe-6ccbfd50f197
-ms.openlocfilehash: a4eb878a18aa38b7047104903d10d96d66cc6720
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e11e94bdf516d830020c4844be2a4c3bfc4a8774
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231097"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221208"
 ---
 # <a name="subscript-operator-"></a>İndis Işleci []
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 postfix-expression [ expression ]
@@ -42,7 +43,7 @@ Yukarıdaki örnekte, ifadesi `nArray[2]` ile aynıdır `2[nArray]` . Bunun nede
 
 `*((e2) + (e1))`
 
-İfadenin başvurduğu adres *E1*adresinden *E2* bayt değil. Bunun yerine, adres dizi *E2*sonraki nesneyi verecek şekilde ölçeklendirilir. Örnek:
+İfadenin başvurduğu adres *E1* adresinden *E2* bayt değil. Bunun yerine, adres dizi *E2* sonraki nesneyi verecek şekilde ölçeklendirilir. Örneğin:
 
 ```cpp
 double aDbl[2];
@@ -104,7 +105,7 @@ int main() {
 
 Son satırdaki negatif alt simge, **`int`** dizinin kaynağından daha düşük bir adres 256 konumuna işaret ettiğinden bir çalışma zamanı hatası oluşturabilir. İşaretçi `midArray` ortasında başlatılır `intArray` ; Bu nedenle, hem pozitif hem de negatif dizi dizinlerini kullanmak mümkündür (ancak tehlikeli). Dizi alt simge hataları derleme zamanı hataları oluşturmaz, ancak öngörülemeyen sonuçlara neden olur.
 
-Alt simge işleci bir işlem olur. Bu nedenle, alt simge işleci aşırı yüklü olmadığı sürece [*Dizin*] ve *Dizin*[*Array*] ifadeleri *dizisi*eşdeğer olarak garanti edilir (bkz. [aşırı yüklenmiş işleçler](../cpp/operator-overloading.md)). İlk form en yaygın kodlama uygulamasıdır, ancak her iki durumda da geçerlidir.
+Alt simge işleci bir işlem olur. Bu nedenle, alt simge işleci aşırı yüklü olmadığı sürece [*Dizin*] ve *Dizin*[*Array*] ifadeleri *dizisi* eşdeğer olarak garanti edilir (bkz. [aşırı yüklenmiş işleçler](../cpp/operator-overloading.md)). İlk form en yaygın kodlama uygulamasıdır, ancak her iki durumda da geçerlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

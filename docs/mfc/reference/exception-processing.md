@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: özel durum Işleme'
 title: Özel Durum İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: 9d6a1c30ca0811085124a5fb5994c5f35d412ae7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: add942991a4792cb88e82dee0bfd033612b68eb2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219830"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 
@@ -48,7 +49,7 @@ Microsoft Foundation Class Kitaplığı eklenen birkaç makro özel durum işley
 |[YARATıR](#throw)|Belirtilen özel durumu oluşturur.|
 |[THROW_LAST](#throw_last)|Şu anda işlenmiş özel durumu sonraki dış işleyiciye atar.|
 
-### <a name="exception-throwing-functions"></a>Özel durum atma Işlevleri
+### <a name="exception-throwing-functions"></a>Exception-Throwing Işlevleri
 
 |Ad|Açıklama|
 |-|-|
@@ -133,7 +134,7 @@ Sınıfı *Exception_class* `CException` , tüm özel durum türleri yakalanacak
 Özel durum nesnesi işaretçisi makro tarafından oluşturulur. Kendiniz bildirmeniz gerekmez.
 
 > [!NOTE]
-> **Catch** bloğu, küme ayraçları tarafından belirlenen bir C++ kapsamı olarak tanımlanır. Bu kapsamda değişkenler bildirirseniz, bunlar yalnızca o kapsam içinde erişilebilir. Bu, *exception_object_pointer_name*için de geçerlidir.
+> **Catch** bloğu, küme ayraçları tarafından belirlenen bir C++ kapsamı olarak tanımlanır. Bu kapsamda değişkenler bildirirseniz, bunlar yalnızca o kapsam içinde erişilebilir. Bu, *exception_object_pointer_name* için de geçerlidir.
 
 Özel durumlar ve CATCH makrosu hakkında daha fazla bilgi için, bkz. Makale [özel durumları](../../mfc/exception-handling-in-mfc.md).
 
@@ -156,7 +157,7 @@ Makro tarafından oluşturulacak özel durum nesnesi işaretçisi için bir ad b
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel durumun özel nedeni hakkında daha fazla bilgi almak için özel durum işleme kodu uygunsa özel durum nesnesini sorgulanamıyor olabilir. İşlemeyi bir `THROW_LAST` sonraki dış özel durum çerçevesine kaydırmak için makroyu çağırın. **CATCH_ALL**kullanıyorsanız, **TRY** bloğunu bir END_CATCH_ALL makrosu ile sonlandırın.
+Özel durumun özel nedeni hakkında daha fazla bilgi almak için özel durum işleme kodu uygunsa özel durum nesnesini sorgulanamıyor olabilir. İşlemeyi bir `THROW_LAST` sonraki dış özel durum çerçevesine kaydırmak için makroyu çağırın. **CATCH_ALL** kullanıyorsanız, **TRY** bloğunu bir END_CATCH_ALL makrosu ile sonlandırın.
 
 > [!NOTE]
 > **CATCH_ALL** bloğu, küme ayraçları tarafından belirlenen bir C++ kapsamı olarak tanımlanır. Bu kapsamda değişkenler bildirirseniz, bunlar yalnızca o kapsam içinde erişilebilir.
@@ -518,7 +519,7 @@ SCODE türünde bir DAO 'dan OLE hata kodu. Bilgi için bkz. [CDaoException:: m_
 
 ### <a name="remarks"></a>Açıklamalar
 
-Framework Ayrıca çağırır `AfxThrowDaoException` . Çağrın içinde, parametrelerden birini veya her ikisini de geçirebilirsiniz. Örneğin, **CDaoException:: nAfxDaoError** içinde tanımlanan hatalardan birini yükseltmek istiyorsanız ancak *SCODE* parametresini ilgilenmezseniz, *nAfxDaoError* parametresinde geçerli bir kod geçirin ve *SCODE*için varsayılan değeri kabul edin.
+Framework Ayrıca çağırır `AfxThrowDaoException` . Çağrın içinde, parametrelerden birini veya her ikisini de geçirebilirsiniz. Örneğin, **CDaoException:: nAfxDaoError** içinde tanımlanan hatalardan birini yükseltmek istiyorsanız ancak *SCODE* parametresini ilgilenmezseniz, *nAfxDaoError* parametresinde geçerli bir kod geçirin ve *SCODE* için varsayılan değeri kabul edin.
 
 MFC DAO sınıflarıyla ilgili özel durumlar hakkında daha fazla bilgi için, `CDaoException` Bu kitapta bulunan sınıf ve makale [özel durumları: veritabanı özel](../../mfc/exceptions-database-exceptions.md)durumları ' nı inceleyin.
 

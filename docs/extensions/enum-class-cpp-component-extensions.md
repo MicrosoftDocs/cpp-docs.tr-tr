@@ -1,14 +1,15 @@
 ---
+description: 'Daha fazla bilgi edinin: enum sınıfı (C++/CLı ve C++/CX)'
 title: enum class (C++/CLI ve C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-ms.openlocfilehash: 9acf93976b2f7751e85bf3ed0ddd2735c29e121c
-ms.sourcegitcommit: 9451db8480992017c46f9d2df23fb17b503bbe74
+ms.openlocfilehash: 309a1defa7288ec13ca058cc366d9cb8deac01ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91590322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220675"
 ---
 # <a name="enum-class--ccli-and-ccx"></a>enum class (C++/CLI ve C++/CX)
 
@@ -48,7 +49,7 @@ Seçim. Yalnızca Windows çalışma zamanı),,,,,,,, veya olabilen numaralandı
 *Numaralandırıcı-liste*<br/>
 Numaralandırıcı adlarının virgülle ayrılmış listesi.
 
-Her bir Numaralandırıcı değeri, derleyici tarafından örtük olarak tanımlanan veya açıkça gösterim, *Numaralandırıcı* `=` *sabit ifadesi*tarafından tanımlanan sabit bir ifadedir. Varsayılan olarak, ilk Numaralandırıcının değeri örtük olarak tanımlanmışsa sıfırdır. Her bir sonraki örtük tanımlanmış Numaralandırıcı değeri, önceki Numaralandırıcı + 1 değeridir.
+Her bir Numaralandırıcı değeri, derleyici tarafından örtük olarak tanımlanan veya açıkça gösterim, *Numaralandırıcı* `=` *sabit ifadesi* tarafından tanımlanan sabit bir ifadedir. Varsayılan olarak, ilk Numaralandırıcının değeri örtük olarak tanımlanmışsa sıfırdır. Her bir sonraki örtük tanımlanmış Numaralandırıcı değeri, önceki Numaralandırıcı + 1 değeridir.
 
 *l*<br/>
 Seçim Sabit listesi türü değişkeninin adı.
@@ -57,7 +58,7 @@ Seçim Sabit listesi türü değişkeninin adı.
 
 Daha fazla bilgi ve örnekler için bkz. [enum](../cppcx/enums-c-cx.md).
 
-Bir Numaralandırıcı değerini tanımlayan sabit ifade *temeldeki türle*temsil edilemez derleyici hata iletileri yayar.  Ancak derleyici, temel alınan tür için uygun olmayan bir değer için hata raporlamaz. Örneğin:
+Bir Numaralandırıcı değerini tanımlayan sabit ifade *temeldeki türle* temsil edilemez derleyici hata iletileri yayar.  Ancak derleyici, temel alınan tür için uygun olmayan bir değer için hata raporlamaz. Örneğin:
 
 - *Temeldeki tür* sayısal ise ve bir Numaralandırıcı bu türün en büyük değerini belirtiyorsa, bir sonraki örtük olarak tanımlanmış numaralandırmanın değeri temsil edilemez.
 
@@ -92,7 +93,7 @@ Numaralandırmadaki tanımlayıcıların (Numaralandırıcılar) virgülle ayrı
 Sabit listesinin adı. Anonim yönetilen numaralandırmalara izin verilmez.
 
 *türüyle*<br/>
-Seçim *Tanımlayıcıların*temel alınan türü. Bu, veya ' nin imzalı veya imzasız sürümleri gibi herhangi bir skalar tür **`int`** olabilir **`short`** **`long`** .  **`bool`** ya **`char`** da izin veriliyor.
+Seçim *Tanımlayıcıların* temel alınan türü. Bu, veya ' nin imzalı veya imzasız sürümleri gibi herhangi bir skalar tür **`int`** olabilir **`short`** **`long`** .  **`bool`** ya **`char`** da izin veriliyor.
 
 *l*<br/>
 Seçim Sabit listesi türü değişkeninin adı.

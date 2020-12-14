@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CControlBar sınıfı'
 title: CControlBar sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -44,18 +45,18 @@ helpviewer_keywords:
 - CControlBar [MFC], m_bAutoDelete
 - CControlBar [MFC], m_pInPlaceOwner
 ms.assetid: 4d668c55-9b42-4838-97ac-cf2b3000b82c
-ms.openlocfilehash: 7a08efb7cbe848ec6d8ccba57671f3ef0dc8e74c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c18e62c20575e5fe8921c9767099e8069fbcb112
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212572"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220480"
 ---
 # <a name="ccontrolbar-class"></a>CControlBar sınıfı
 
 Denetim çubuğu sınıfları [CStatusBar](../../mfc/reference/cstatusbar-class.md), [CToolBar](../../mfc/reference/ctoolbar-class.md), [CDialogBar](../../mfc/reference/cdialogbar-class.md), [CReBar](../../mfc/reference/crebar-class.md)ve [COleResizeBar](../../mfc/reference/coleresizebar-class.md)için temel sınıf.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CControlBar : public CWnd
@@ -123,7 +124,7 @@ Hakkında daha fazla bilgi için `CControlBar` bkz.
 
 **Üstbilgi:** afxext. h
 
-## <a name="ccontrolbarcalcdynamiclayout"></a><a name="calcdynamiclayout"></a>CControlBar:: CalcDynamicLayout
+## <a name="ccontrolbarcalcdynamiclayout"></a><a name="calcdynamiclayout"></a> CControlBar:: CalcDynamicLayout
 
 Framework, dinamik bir araç çubuğunun boyutlarını hesaplamak için bu üye işlevini çağırır.
 
@@ -157,9 +158,9 @@ Aşağıdaki önceden tanımlanmış bayraklar, dinamik denetim çubuğunun yük
 
 ### <a name="remarks"></a>Açıklamalar
 
-' Den türettiğiniz sınıflarda kendi dinamik düzeninizi sağlamak için bu üye işlevini geçersiz kılın `CControlBar` . CToolBar gibi öğesinden türetilmiş MFC sınıfları `CControlBar` , bu üye işlevini geçersiz kılar ve kendi uygulamasını sağlar. [CToolbar](../../mfc/reference/ctoolbar-class.md)
+' Den türettiğiniz sınıflarda kendi dinamik düzeninizi sağlamak için bu üye işlevini geçersiz kılın `CControlBar` . CToolBar gibi öğesinden türetilmiş MFC sınıfları `CControlBar` , bu üye işlevini geçersiz kılar ve kendi uygulamasını sağlar. [](../../mfc/reference/ctoolbar-class.md)
 
-## <a name="ccontrolbarcalcfixedlayout"></a><a name="calcfixedlayout"></a>CControlBar:: CalcFixedLayout
+## <a name="ccontrolbarcalcfixedlayout"></a><a name="calcfixedlayout"></a> CControlBar:: CalcFixedLayout
 
 Bir denetim çubuğunun yatay boyutunu hesaplamak için bu üye işlevini çağırın.
 
@@ -185,7 +186,7 @@ Bir nesnenin piksel cinsinden denetim çubuğu boyutu `CSize` .
 
 Araç çubukları gibi denetim çubukları, Denetim çubuğunda bulunan düğmelere uyum sağlamak için yatay veya dikey olarak uzatılabilirler.
 
-*Besnetme* doğruysa, boyutu *bHorz*tarafından belirtilen yönle birlikte uzatın. Diğer bir deyişle, *bHorz* yanlış ise, denetim çubuğu dikey olarak uzatılır. *Besnetme* yanlışsa, bir Esnetme gerçekleşmez. Aşağıdaki tabloda, *Besnetme* ve *bHorz*gibi olası permütasyon ve ortaya çıkan denetim çubuğu stilleri gösterilmektedir.
+*Besnetme* doğruysa, boyutu *bHorz* tarafından belirtilen yönle birlikte uzatın. Diğer bir deyişle, *bHorz* yanlış ise, denetim çubuğu dikey olarak uzatılır. *Besnetme* yanlışsa, bir Esnetme gerçekleşmez. Aşağıdaki tabloda, *Besnetme* ve *bHorz* gibi olası permütasyon ve ortaya çıkan denetim çubuğu stilleri gösterilmektedir.
 
 |Besnetme|bHorz|Uzatı|Yön|Yerleştirme/yerleştirme yok|
 |--------------|-----------|----------------|-----------------|--------------------------|
@@ -194,7 +195,7 @@ Araç çubukları gibi denetim çubukları, Denetim çubuğunda bulunan düğmel
 |FALSE|TRUE|Hiçbir uzatma yok|Yatay yönelimli|Tanımlaya|
 |FALSE|FALSE|Hiçbir uzatma yok|Dikey yönelimli|Tanımlaya|
 
-## <a name="ccontrolbarcalcinsiderect"></a><a name="calcinsiderect"></a>CControlBar:: CalcInsideRect
+## <a name="ccontrolbarcalcinsiderect"></a><a name="calcinsiderect"></a> CControlBar:: CalcInsideRect
 
 Framework, denetim çubuğunun istemci alanını hesaplamak için bu işlevi çağırır.
 
@@ -218,7 +219,7 @@ Bu işlev, denetim çubuğu boyanmadan önce çağrılır.
 
 Denetim çubuğunun kenarlıkların ve kavrayıcı çubuğunun işlenmesini özelleştirmek için bu işlevi geçersiz kılın.
 
-## <a name="ccontrolbarccontrolbar"></a><a name="ccontrolbar"></a>CControlBar:: CControlBar
+## <a name="ccontrolbarccontrolbar"></a><a name="ccontrolbar"></a> CControlBar:: CControlBar
 
 Bir `CControlBar` nesnesi oluşturur.
 
@@ -226,7 +227,7 @@ Bir `CControlBar` nesnesi oluşturur.
 CControlBar();
 ```
 
-## <a name="ccontrolbardopaint"></a><a name="dopaint"></a>CControlBar::D oPaint
+## <a name="ccontrolbardopaint"></a><a name="dopaint"></a> CControlBar::D oPaint
 
 Denetim çubuğunun kenarlıklarını ve kavrayıcı çubuğunu işlemek için Framework tarafından çağırılır.
 
@@ -245,7 +246,7 @@ Denetim çubuğunun çizim davranışını özelleştirmek için bu işlevi geç
 
 Başka bir özelleştirme yöntemi, `DrawBorders` ve işlevlerini geçersiz kılmak `DrawGripper` ve Kenarlıklar ve kavrayıcı için özel çizim kodu eklemektir. Bu yöntemler varsayılan yöntem tarafından çağrıldığı için `DoPaint` , bir geçersiz kılma `DoPaint` gerekli değildir.
 
-## <a name="ccontrolbardrawborders"></a><a name="drawborders"></a>CControlBar::D Rawkenarlýklar
+## <a name="ccontrolbardrawborders"></a><a name="drawborders"></a> CControlBar::D Rawkenarlýklar
 
 Denetim çubuğunun kenarlıklarını işlemek için Framework tarafından çağırılır.
 
@@ -267,7 +268,7 @@ Denetim çubuğunun kenarlıklarını işlemek için kullanılacak cihaz bağlam
 
 Denetim çubuğu kenarlıklarının görünümünü özelleştirmek için bu işlevi geçersiz kılın.
 
-## <a name="ccontrolbardrawgripper"></a><a name="drawgripper"></a>CControlBar::D Rawkavrayıcı
+## <a name="ccontrolbardrawgripper"></a><a name="drawgripper"></a> CControlBar::D Rawkavrayıcı
 
 Denetim çubuğunun kavrayıcıyı işlemek için Framework tarafından çağırılır.
 
@@ -289,7 +290,7 @@ Denetim çubuğu kavrayıcıyı işlemek için kullanılacak cihaz bağlamına i
 
 Denetim çubuğu kavrayıcı görünümünü özelleştirmek için bu işlevi geçersiz kılın.
 
-## <a name="ccontrolbarenabledocking"></a><a name="enabledocking"></a>CControlBar:: EnableDocking
+## <a name="ccontrolbarenabledocking"></a><a name="enabledocking"></a> CControlBar:: EnableDocking
 
 Bir denetim çubuğunun yerleştirilme özelliğini etkinleştirmek için bu işlevi çağırın.
 
@@ -320,7 +321,7 @@ Denetim çubuğunun yerleştirmeyi ve üst penceresinin, varsa denetim çubuğun
 
 Belirtilen kenarlar, hedef çerçeve penceresinde yerleştirme için etkinleştirilen taraflardan biriyle eşleşmelidir veya denetim çubuğu bu çerçeve penceresine yerleştirilmemelidir.
 
-## <a name="ccontrolbargetbarstyle"></a><a name="getbarstyle"></a>CControlBar:: GetBarStyle
+## <a name="ccontrolbargetbarstyle"></a><a name="getbarstyle"></a> CControlBar:: GetBarStyle
 
 Denetim çubuğu için hangi **cbrs_** (denetim çubuğu stilleri) ayarlarının ayarlandığını öğrenmek için bu işlevi çağırın.
 
@@ -336,7 +337,7 @@ Denetim çubuğu için geçerli **cbrs_** (denetim çubuğu stilleri) ayarları.
 
 **WS_** (pencere stili) stillerini işlemez.
 
-## <a name="ccontrolbargetborders"></a><a name="getborders"></a>CControlBar:: Getkenarlýklar
+## <a name="ccontrolbargetborders"></a><a name="getborders"></a> CControlBar:: Getkenarlýklar
 
 Denetim çubuğu için geçerli sınır değerlerini döndürür.
 
@@ -348,7 +349,7 @@ CRect GetBorders() const;
 
 `CRect`Denetim çubuğu nesnesinin her bir tarafındaki geçerli genişliği (piksel cinsinden) içeren bir nesne. Örneğin, [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesinin *sol* üyesinin değeri, sol kenarlığın genişliğidir.
 
-## <a name="ccontrolbargetcount"></a><a name="getcount"></a>CControlBar:: GetCount
+## <a name="ccontrolbargetcount"></a><a name="getcount"></a> CControlBar:: GetCount
 
 Nesnedeki HWND olmayan öğe sayısını döndürür `CControlBar` .
 
@@ -364,7 +365,7 @@ Nesnedeki HWND olmayan öğe sayısı `CControlBar` . Bu işlev bir [CDialogBar]
 
 Öğenin türü türetilmiş nesneye bağlıdır: [CStatusBar](../../mfc/reference/cstatusbar-class.md) nesneleri için bölmeler, [CToolBar](../../mfc/reference/ctoolbar-class.md) nesneleri için düğmeler ve ayırıcılar.
 
-## <a name="ccontrolbargetdockingframe"></a><a name="getdockingframe"></a>CControlBar:: GetDockingFrame
+## <a name="ccontrolbargetdockingframe"></a><a name="getdockingframe"></a> CControlBar:: GetDockingFrame
 
 Denetim çubuğunuzun yerleştirildiği geçerli çerçeve penceresine bir işaretçi almak için bu üye işlevini çağırın.
 
@@ -382,7 +383,7 @@ Denetim çubuğu bir çerçeve penceresine yerleştirilmemişse (yani, denetim �
 
 Yerleştirilebilir denetim çubukları hakkında daha fazla bilgi için bkz. [CControlBar:: EnableDocking](#enabledocking) ve [CFrameWnd::D ockcontrolbar](../../mfc/reference/cframewnd-class.md#dockcontrolbar).
 
-## <a name="ccontrolbarisfloating"></a><a name="isfloating"></a>CControlBar:: ıskayan
+## <a name="ccontrolbarisfloating"></a><a name="isfloating"></a> CControlBar:: ıskayan
 
 Denetim çubuğunun kayan mı yoksa yerleştirilmiş mi olduğunu anlamak için bu üye işlevi çağırın.
 
@@ -398,7 +399,7 @@ Denetim çubuğu yüzer ise sıfır dışı; Aksi takdirde 0.
 
 Bir denetim çubuğunun durumunu, sabitlenmiş iken kayan olarak değiştirmek için [CFrameWnd:: FloatControlBar](../../mfc/reference/cframewnd-class.md#floatcontrolbar)öğesini çağırın.
 
-## <a name="ccontrolbarm_bautodelete"></a><a name="m_bautodelete"></a>CControlBar:: m_bAutoDelete
+## <a name="ccontrolbarm_bautodelete"></a><a name="m_bautodelete"></a> CControlBar:: m_bAutoDelete
 
 Sıfır değilse, `CControlBar` Windows Denetim çubuğu yok edildiğinde nesne silinir.
 
@@ -414,7 +415,7 @@ Bir denetim çubuğu nesnesi genellikle çerçeve pencere nesnesine katıştır�
 
 Yığında bir nesne ayırırsanız ve çağırmayı planlamıyorsanız, bu değişkeni sıfır dışında bir değere ayarlayın `CControlBar` **`delete`** .
 
-## <a name="ccontrolbarm_pinplaceowner"></a><a name="m_pinplaceowner"></a>CControlBar:: m_pInPlaceOwner
+## <a name="ccontrolbarm_pinplaceowner"></a><a name="m_pinplaceowner"></a> CControlBar:: m_pInPlaceOwner
 
 Denetim çubuğunun yerinde sahibi.
 
@@ -422,7 +423,7 @@ Denetim çubuğunun yerinde sahibi.
 CWnd* m_pInPlaceOwner;
 ```
 
-## <a name="ccontrolbaronupdatecmdui"></a><a name="onupdatecmdui"></a>CControlBar:: OnUpdateCmdUI
+## <a name="ccontrolbaronupdatecmdui"></a><a name="onupdatecmdui"></a> CControlBar:: OnUpdateCmdUI
 
 Bu üye işlevi, araç çubuğunun ya da durum çubuğunun durumunu güncelleştirmek için Framework tarafından çağırılır.
 
@@ -444,9 +445,9 @@ Güncelleştirme işleyicisi olmayan bir denetimin otomatik olarak devre dışı
 
 Tek bir düğmeyi veya bölmeyi güncelleştirmek için ileti haritadaki ON_UPDATE_COMMAND_UI makrosunu kullanarak bir güncelleştirme işleyicisini uygun şekilde ayarlayın. Bu makroyu kullanma hakkında daha fazla bilgi için bkz. [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) .
 
-`OnUpdateCmdUI`, uygulama boştayken Framework tarafından çağırılır. Görüntülenecek çerçeve penceresinin, görünür bir çerçeve penceresinin en azından dolaylı olarak bir alt pencere olması gerekir. `OnUpdateCmdUI`Gelişmiş bir geçersiz kılınabilir.
+`OnUpdateCmdUI` , uygulama boştayken Framework tarafından çağırılır. Görüntülenecek çerçeve penceresinin, görünür bir çerçeve penceresinin en azından dolaylı olarak bir alt pencere olması gerekir. `OnUpdateCmdUI` Gelişmiş bir geçersiz kılınabilir.
 
-## <a name="ccontrolbarsetbarstyle"></a><a name="setbarstyle"></a>CControlBar:: SetBarStyle
+## <a name="ccontrolbarsetbarstyle"></a><a name="setbarstyle"></a> CControlBar:: SetBarStyle
 
 Denetim çubuğu için istenen **cbrs_** stillerini ayarlamak için bu işlevi çağırın.
 
@@ -489,7 +490,7 @@ Denetim çubuğu için istenen stiller. Aşağıdakilerden biri veya daha fazlas
 
 **WS_** (pencere stili) ayarlarını etkilemez.
 
-## <a name="ccontrolbarsetborders"></a><a name="setborders"></a>CControlBar:: Setkenarlýklar
+## <a name="ccontrolbarsetborders"></a><a name="setborders"></a> CControlBar:: Setkenarlýklar
 
 Denetim çubuğu kenarlıklarının boyutunu ayarlamak için bu işlevi çağırın.
 
@@ -526,7 +527,7 @@ Aşağıdaki kod örneği, denetim çubuğunun üst ve alt kenarlıklarını 5 p
 
 [!code-cpp[NVC_MFCControlLadenDialog#61](../../mfc/codesnippet/cpp/ccontrolbar-class_1.cpp)]
 
-## <a name="ccontrolbarsetinplaceowner"></a><a name="setinplaceowner"></a>CControlBar:: Setınplaceowner
+## <a name="ccontrolbarsetinplaceowner"></a><a name="setinplaceowner"></a> CControlBar:: Setınplaceowner
 
 Denetim çubuğunun yerinde sahibini değiştirir.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: catch blokları nasıl değerlendirilir (C++)'
 title: Catch Blokları Nasıl Değerlendirilir (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - exception handling, catching and deleting exceptions
 - types [C++], exception handling
 ms.assetid: 202dbf07-8ace-4b3b-b3ae-4b45c275e0b4
-ms.openlocfilehash: 21d68b25fa3695a9b5637dcace081424f99911d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ec4544bb88eea0ee03b7b5b0ab139e267da0552d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87188108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221299"
 ---
 # <a name="how-catch-blocks-are-evaluated-c"></a>Catch Blokları Nasıl Değerlendirilir (C++)
 
@@ -39,7 +40,7 @@ Bir özel durum oluştuğunda, bu, aşağıdaki işleyici türleri tarafından y
 
 - Oluşturulan bir işaretçi nesnesinin standart işaretçi dönüştürme kurallarıyla dönüştürülebileceği bir işaretçiyi kabul eden bir işleyici.
 
-**`catch`** Belirli bir **`try`** bloğun işleyicileri görünümü sırasıyla incelenmediğinden, işleyicilerin ne kadar önemli olduğunu gösteren sıra. Örneğin, temel sınıfa yönelik bir işleyicisi türetilmiş sınıfa yönelik bir işleyiciden önce yerleştirmek hatadır. Eşleşen bir işleyici bulduktan sonra **`catch`** , sonraki işleyiciler incelenmez. Sonuç olarak, üç nokta **`catch`** işleyicisi bloğunun son işleyicisi olmalıdır **`try`** . Örnek:
+**`catch`** Belirli bir **`try`** bloğun işleyicileri görünümü sırasıyla incelenmediğinden, işleyicilerin ne kadar önemli olduğunu gösteren sıra. Örneğin, temel sınıfa yönelik bir işleyicisi türetilmiş sınıfa yönelik bir işleyiciden önce yerleştirmek hatadır. Eşleşen bir işleyici bulduktan sonra **`catch`** , sonraki işleyiciler incelenmez. Sonuç olarak, üç nokta **`catch`** işleyicisi bloğunun son işleyicisi olmalıdır **`try`** . Örneğin:
 
 ```cpp
 // ...

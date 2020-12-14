@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: olay haritaları'
 title: Olay Eşlemeleri
 ms.date: 09/07/2019
 helpviewer_keywords:
 - event maps [MFC]
 ms.assetid: 1ed53aee-bc53-43cd-834a-6fb935c0d29b
-ms.openlocfilehash: aa11dbe1a0a3dc45893d1a05cda0ef1addb9e665
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f3a6e949a4dc40927fc8946610707fbb404a400b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837352"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219856"
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 
@@ -126,7 +127,7 @@ Olay tetikleme işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* parametresi, sabitlerin değerlerinin boşlukla ayrılmış bir listesidir `VTS_` . Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örnek:
+*VtsParams* parametresi, sabitlerin değerlerinin boşlukla ayrılmış bir listesidir `VTS_` . Boşluklarla (virgüller değil) ayrılmış bir veya daha fazla değer, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 
@@ -143,7 +144,7 @@ bir RGB renk değerini temsil eden 32 bitlik bir tamsayı ve ardından `IFontDis
 |VTS_COLOR|OLE_COLOR|
 |VTS_CY|PARA BİRİMİ|
 |VTS_DATE|DATE|
-|VTS_BSTR|**`const`**__char \* __|
+|VTS_BSTR|**`const`**__char \*__|
 |VTS_DISPATCH|LPDISPATCH|
 |VTS_FONT|`IFontDispatch*`|
 |VTS_HANDLE|TUTAMAÇLARDAN|
@@ -173,7 +174,7 @@ bir RGB renk değerini temsil eden 32 bitlik bir tamsayı ve ardından `IFontDis
 
 ## <a name="event_custom_id"></a><a name="event_custom_id"></a> EVENT_CUSTOM_ID
 
-*DISPID*tarafından BELIRTILEN dağıtım kimliğine ait özel bir olay için olay tetikleme işlevini tanımlar.
+*DISPID* tarafından BELIRTILEN dağıtım kimliğine ait özel bir olay için olay tetikleme işlevini tanımlar.
 
 ```cpp
 EVENT_CUSTOM_ID(
@@ -199,7 +200,7 @@ Olay harekete geçirildiğinde denetim kapsayıcısına geçirilen parametreleri
 
 ### <a name="remarks"></a>Açıklamalar
 
-*VtsParams* bağımsız değişkeni, sabitlerin değerlerinin boşlukla ayrılmış bir listesidir `VTS_` . Bu değerlerden bir veya daha fazla virgül değil, boşluklarla ayrılmış, işlevin parametre listesini belirtir. Örnek:
+*VtsParams* bağımsız değişkeni, sabitlerin değerlerinin boşlukla ayrılmış bir listesidir `VTS_` . Bu değerlerden bir veya daha fazla virgül değil, boşluklarla ayrılmış, işlevin parametre listesini belirtir. Örneğin:
 
 [!code-cpp[NVC_MFCActiveXControl#13](../../mfc/codesnippet/cpp/event-maps_2.cpp)]
 
@@ -240,7 +241,7 @@ BOOL memberFxn(
    LPCRECT  lpRect);
 ```
 
-*LpMsg*, *HWndParent*ve *lpRect* parametrelerinin değerleri, üye işlevinin karşılık gelen parametrelerinden alınır `IOleObject::DoVerb` .
+*LpMsg*, *HWndParent* ve *lpRect* parametrelerinin değerleri, üye işlevinin karşılık gelen parametrelerinden alınır `IOleObject::DoVerb` .
 
 ### <a name="requirements"></a>Gereksinimler
 
