@@ -1,19 +1,18 @@
 ---
 title: 'İzlenecek yol: kendi dinamik bağlantı kitaplığınızı oluşturma ve kullanma (C++)'
 description: Visual Studio 'da bir Windows dinamik bağlantı kitaplığı (DLL) oluşturmak için C++ kullanın.
-ms.custom:
-- walkthrough
-- contperfq2
+ms.custom: contperf-fy21q2
+ms.topic: tutorial
 ms.date: 08/22/2019
 helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
-ms.openlocfilehash: ca9aebd7103d36918940e52638b3c2cb52612c25
-ms.sourcegitcommit: 43a6ff739516dff62fee521d401eb4b1201cea8c
+ms.openlocfilehash: 985d187b88780c8b877f264fe76c1cdcac2a15db
+ms.sourcegitcommit: be469dd87453255b0e35e333712c8207b09b3dd4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94870694"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97412160"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: kendi dinamik bağlantı kitaplığınızı oluşturma ve kullanma (C++)
 
@@ -41,7 +40,7 @@ Bu izlenecek yol bazı yaygın durumları kapsamaz. Kod, C++ dll 'lerinin diğer
 
 Dll 'Ler hakkında daha fazla bilgi için bkz. [Visual Studio 'Da C/C++ dll 'Leri oluşturma](dlls-in-visual-cpp.md). Örtük bağlama ve açık bağlama hakkında daha fazla bilgi için, [Hangi bağlama yönteminin kullanılacağını belirleme](linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)konusuna bakın. C dili bağlantı kurallarını kullanan programlama dilleri ile kullanmak üzere C++ dll 'Leri oluşturma hakkında bilgi için bkz. [c dili Çalıştırılabilirlerinde kullanmak Için c++ Işlevlerini dışarı aktarma](exporting-cpp-functions-for-use-in-c-language-executables.md). .NET dilleri ile kullanmak üzere dll oluşturma hakkında daha fazla bilgi için, bkz. [Visual Basic UYGULAMALARıNDAN dll Işlevleri çağırma](calling-dll-functions-from-visual-basic-applications.md).
 
-## <a name="prerequisites"></a>Ön koşullar
+## <a name="prerequisites"></a>Önkoşullar
 
 - Microsoft Windows 7 veya sonraki sürümlerini çalıştıran bir bilgisayar. En iyi geliştirme deneyimi için Windows 10 ' un kullanılması önerilir.
 
@@ -78,7 +77,7 @@ Bu görev kümesinde, DLL 'niz için bir proje oluşturur, kod ekler ve derler. 
 
 ### <a name="to-create-a-dll-project-in-visual-studio-2019"></a>Visual Studio 2019 ' de bir DLL projesi oluşturmak için
 
-1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
+1.  >  > **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
 
    ![Yeni bir DLL projesi oluştur](media/create-new-dll-project-2019.png "MathLibrary projesi oluşturma")
 
@@ -100,9 +99,9 @@ Bu görev kümesinde, DLL 'niz için bir proje oluşturur, kod ekler ve derler. 
 
 ### <a name="to-create-a-dll-project-in-visual-studio-2017"></a>Visual Studio 2017 ' de bir DLL projesi oluşturmak için
 
-1. **File** > **New** > **Yeni proje** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
+1.  >  > **Yeni proje** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **Installed**  >  **Visual C++**  >  **Windows Masaüstü** Visual C++ yüklü ' i seçin. Orta bölmede, **dinamik bağlantı kitaplığı (dll)** öğesini seçin. Proje için bir ad belirtmek üzere **ad** kutusuna *MathLibrary* girin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde,   >    >  **Windows Masaüstü** Visual C++ yüklü ' i seçin. Orta bölmede, **dinamik bağlantı kitaplığı (dll)** öğesini seçin. Proje için bir ad belirtmek üzere **ad** kutusuna *MathLibrary* girin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
    ![Ad metin kutusunda matematik kitaplığını gösteren Visual Studio 2017 yeni proje iletişim kutusunun ekran görüntüsü.](media/mathlibrary-new-project-name-159.png "MathLibrary projesini adlandırın")
 
@@ -203,7 +202,7 @@ Dosyanın en üstündeki Önişlemci ifadelerine dikkat edin. Bir DLL projesi i�
 
 ::: moniker range=">=msvc-160"
 
-1. **Çözüm Gezgini**, **kaynak dosyalar** düğümüne sağ tıklayın ve **Add**  >  **Yeni öğe** Ekle ' yi seçin. Önceki adımda yeni bir üst bilgi dosyası eklediğiniz şekilde *MathLibrary. cpp* adlı yeni bir. cpp dosyası oluşturun.
+1. **Çözüm Gezgini**, **kaynak dosyalar** düğümüne sağ tıklayın ve   >  **Yeni öğe** Ekle ' yi seçin. Önceki adımda yeni bir üst bilgi dosyası eklediğiniz şekilde *MathLibrary. cpp* adlı yeni bir. cpp dosyası oluşturun.
 
 1. Düzenleyici penceresinde, zaten açıksa **MathLibrary. cpp** sekmesini seçin. Aksi takdirde, **Çözüm Gezgini**, açmak için **MathLibrary** projesinin **kaynak dosyaları** klasöründe **MathLibrary. cpp** öğesine çift tıklayın.
 
@@ -337,7 +336,7 @@ Dosyanın en üstündeki Önişlemci ifadelerine dikkat edin. Bir DLL projesi i�
 
 ::: moniker-end
 
-Her şeyin şu ana kadar çalıştığını doğrulamak için dinamik bağlantı kitaplığını derleyin. Derlemek için, menü çubuğunda derleme çözümü **Oluştur**' u seçin  >  **Build Solution** . DLL ve ilgili derleyici çıkışı, doğrudan çözüm klasörünün altında *hata ayıklama* adlı bir klasöre yerleştirilir. Yayın derlemesi oluşturursanız, çıktı *yayın* adlı bir klasöre yerleştirilir. Çıkış aşağıdakine benzer olmalıdır:
+Her şeyin şu ana kadar çalıştığını doğrulamak için dinamik bağlantı kitaplığını derleyin. Derlemek için, menü çubuğunda derleme çözümü **Oluştur**' u seçin  >   . DLL ve ilgili derleyici çıkışı, doğrudan çözüm klasörünün altında *hata ayıklama* adlı bir klasöre yerleştirilir. Yayın derlemesi oluşturursanız, çıktı *yayın* adlı bir klasöre yerleştirilir. Çıkış aşağıdakine benzer olmalıdır:
 
 ::: moniker range=">=msvc-160"
 
@@ -398,7 +397,7 @@ Eşitleme dışı koddan kaçınmak için, istemci projenizdeki ekleme yolunu dl
 
 ### <a name="to-create-a-client-app-in-visual-studio"></a>Visual Studio 'da bir istemci uygulaması oluşturmak için
 
-1. **File** > **New** > **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
+1.  >  > **Yeni proje oluştur** iletişim kutusunu açmak için menü çubuğunda dosya yeni **Proje** ' yi seçin.
 
 1. İletişim kutusunun üst kısmında,  **dili** **C++** olarak ayarlayın, **platformu** **Windows**'a ayarlayın ve **proje türünü** **konsol** olarak ayarlayın.
 
@@ -420,7 +419,7 @@ Sizin için en az bir konsol uygulama projesi oluşturulur. Ana kaynak dosyanın
 
 1. Oluşturduğunuz DLL 'yi kullanan bir C++ uygulaması oluşturmak için, menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** Visual C++ altında **Windows Masaüstü** ' nü seçin  >  **Visual C++**. Orta bölmede **Windows konsol uygulaması**' nı seçin. *MathClient* adlı projenin adını **ad** düzenleme kutusunda belirtin.  Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** Visual C++ altında **Windows Masaüstü** ' nü seçin  >  . Orta bölmede **Windows konsol uygulaması**' nı seçin. *MathClient* adlı projenin adını **ad** düzenleme kutusunda belirtin.  Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
    ![Yeni proje iletişim kutusunun yüklü > Visual C Plus ve > Windows Masaüstü seçili, Windows konsol uygulaması vurgulanmış ve ad metin kutusuna yazılan matematik Istemcisi ekran görüntüsü.](media/mathclient-new-project-name-159.png "İstemci projesini adlandırın")
 
@@ -436,7 +435,7 @@ Sizin için en az bir konsol uygulama projesi oluşturulur. Ana kaynak dosyanın
 
 1. Oluşturduğunuz DLL 'yi kullanan bir C++ uygulaması oluşturmak için, menü çubuğunda **Dosya** > **Yeni** > **Proje**' yi seçin.
 
-1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** Şablonlar ' ın altında **Win32** ' ı seçin  >  **Templates**  >  **Visual C++**. Orta bölmede **Win32 konsol uygulaması**' nı seçin. *MathClient* adlı projenin adını **ad** düzenleme kutusunda belirtin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
+1. **Yeni proje** iletişim kutusunun sol bölmesinde, **yüklü** Şablonlar ' ın altında **Win32** ' ı seçin  >    >  **Visual C++**. Orta bölmede **Win32 konsol uygulaması**' nı seçin. *MathClient* adlı projenin adını **ad** düzenleme kutusunda belirtin. Varsayılan **konum** ve **çözüm adı** değerlerini bırakın. **Yeni çözüm oluşturmak** için **çözüm** ayarlayın. İşaretlenmezse **çözüm için dizin oluştur** ' a bakın.
 
    ![Yüklü > şablonları olan yeni proje iletişim kutusunun ekran görüntüsü > Visual C Plus Plus > Win32 seçili, Win32 konsol uygulaması Visual C Plus Plus ve ad metin kutusuna yazılan matematik Istemcisi.](media/mathclient-project-name.png "İstemci projesini adlandırın")
 
