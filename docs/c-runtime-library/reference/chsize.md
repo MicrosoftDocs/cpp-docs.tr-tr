@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _chsize'
 title: _chsize
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - files [C++], changing size
 - chsize function
 ms.assetid: b3e881c5-7b27-4837-a3d4-c51591ab10ff
-ms.openlocfilehash: 5b9b58cf3ca4e167b5d54f871ac31c5295adc48b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 16a65c145e33a0fbafcc9d0f2b0fed3b9f2b516f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274898"
 ---
 # <a name="_chsize"></a>_chsize
 
@@ -66,7 +67,7 @@ Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz. [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chsize** işlevi *FD* ile ilişkili dosyayı *boyutuna*göre belirtilen uzunluğa genişletir veya keser. Dosyanın yazmaya izin veren bir modda açık olması gerekir. Dosya genişletilmişse null karakterler (' \ 0 ') eklenir. Dosya kesilmişse, kısaltılmış dosyanın sonundaki tüm veriler dosyanın özgün uzunluğuna kaybedilir.
+**_Chsize** işlevi *FD* ile ilişkili dosyayı *boyutuna* göre belirtilen uzunluğa genişletir veya keser. Dosyanın yazmaya izin veren bir modda açık olması gerekir. Dosya genişletilmişse null karakterler (' \ 0 ') eklenir. Dosya kesilmişse, kısaltılmış dosyanın sonundaki tüm veriler dosyanın özgün uzunluğuna kaybedilir.
 
 Bu işlev, parametrelerini doğrular. *Boyut* sıfırdan küçükse veya *FD* hatalı bir dosya Tanımlayıcıdaysa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır.
 
@@ -76,7 +77,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_chsize**|\<GÇ. h>|\<errno. h>|
+|**_chsize**|\<io.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -122,7 +123,7 @@ File length after:  329678
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_close](close.md)<br/>
 [_sopen, _wsopen](sopen-wsopen.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

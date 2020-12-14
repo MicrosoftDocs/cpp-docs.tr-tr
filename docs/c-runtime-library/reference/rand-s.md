@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: rand_s'
 title: rand_s
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - cryptographically secure random numbers
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: cad1740e64c7bbda553ac1a6c777d7e2295152ba
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8894248bf924ef513dc916e10e47ce8ea7e95137
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274833"
 ---
 # <a name="rand_s"></a>rand_s
 
@@ -56,7 +57,7 @@ errno_t rand_s(unsigned int* randomValue);
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa sıfır, aksi takdirde bir hata kodu. Giriş işaretçisi _rastgele değeri_ null bir işaretçisiyse, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL**olarak ayarlar. İşlev başka bir nedenle başarısız olursa, *_Rasgelevalue_ 0 olarak ayarlanır.
+Başarılı olursa sıfır, aksi takdirde bir hata kodu. Giriş işaretçisi _rastgele değeri_ null bir işaretçisiyse, Işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür ve **errno** 'ı **EINVAL** olarak ayarlar. İşlev başka bir nedenle başarısız olursa, *_Rasgelevalue_ 0 olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -77,7 +78,7 @@ By default, this function's global state is scoped to the application. To change
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**rand_s**|\<Stdlib. h>|
+|**rand_s**|\<stdlib.h>|
 
 Daha fazla bilgi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -159,6 +160,6 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
 [ran](rand.md)<br/>
 [srand](srand.md)<br/>

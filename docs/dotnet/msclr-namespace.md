@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: msclr ad alanı'
 title: msclr ad alanı
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,17 +15,17 @@ helpviewer_keywords:
 - C++ Support Library, namespace
 - msclr
 ms.assetid: 799460e2-9ae2-4b59-a81c-611df356834f
-ms.openlocfilehash: 0054d8086c8492c79723e6b4091f102062aa3c91
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df9a19ea16b37717612cd883c372d79c9568fad2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384822"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274651"
 ---
 # <a name="msclr-namespace"></a>msclr ad alanı
 
-`msclr` Ad alanı, tüm C++ destek kitaplığı sınıflarını içerir. Bu sınıflar hakkında daha fazla bilgi için bkz. [C++ destek kitaplığı](../dotnet/cpp-support-library.md).
+`msclr`Ad alanı, C++ destek kitaplığının tüm sınıflarını içerir. Bu sınıflar hakkında daha fazla bilgi için bkz. [C++ destek kitaplığı](../dotnet/cpp-support-library.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Support Library](../dotnet/cpp-support-library.md)
+[C++ destek kitaplığı](../dotnet/cpp-support-library.md)

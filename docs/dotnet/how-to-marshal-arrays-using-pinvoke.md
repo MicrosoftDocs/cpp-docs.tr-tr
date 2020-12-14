@@ -1,5 +1,6 @@
 ---
-title: 'Nasıl yapılır: PInvoke kullanarak dizileri sıralama hazırlama'
+description: 'Daha fazla bilgi edinin: nasıl yapılır: PInvoke kullanarak dizileri sıralama'
+title: 'Nasıl yapılır: PInvoke Kullanarak Dizileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,26 +9,26 @@ helpviewer_keywords:
 - interop [C++], arrays
 - data marshaling [C++], arrays
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
-ms.openlocfilehash: 60b49135928e3dadffc2a3c7a422646d2f3a768d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 90fd7b2cbefe2fb3621f512d49fbc088240922a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325448"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258232"
 ---
-# <a name="how-to-marshal-arrays-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak dizileri sıralama hazırlama
+# <a name="how-to-marshal-arrays-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Dizileri Sıralama
 
-Bu konuda, C stili dizeler, CLR dize türü kullanılarak çağrılabilir kabul nasıl yerel işlevleri açıklanmaktadır. <xref:System.String> desteği .NET Framework Platform çağırma kullanma. Visual C++ programcıları (uygun olduğunda) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir, çünkü çok az derleme zamanı hata raporlama, tür açısından güvenli değildir ve uygulamak can sıkıcı olabilir, P/Invoke sağlar. Yönetilmeyen API'ın bir DLL olarak paketlenmesi ve kaynak kodu yok, P/Invoke tek seçenektir (Aksi takdirde bkz [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).
+Bu konu, <xref:System.String> .NET Framework platform çağırma desteği KULLANıLARAK CLR dize türü kullanılarak C stili dizelerin kabul edileceği yerel işlevlerin nasıl çağrılacağını açıklar. Visual C++ programcıların C++ birlikte çalışma özelliklerini kullanması önerilir, çünkü P/Invoke çok az sayıda derleme zamanı hatası raporlama sağladığından, tür kullanımı güvenli değildir ve uygulanması sıkıcı olabilir. Yönetilmeyen API bir DLL olarak paketlenmişse ve kaynak kodu kullanılabilir değilse, P/Invoke tek seçenektir (Aksi takdirde, bkz. [C++ birlikte çalışabilirliği (örtük PInvoke) kullanma](../dotnet/using-cpp-interop-implicit-pinvoke.md)).
 
 ## <a name="example"></a>Örnek
 
-Yerel ve yönetilen diziler bellekte farklı şekilde düzenlenmiştir olduğundan, bunları yönetilen veya yönetilmeyen sınırında başarıyla geçirme dönüştürme veya hazırlama gerektirir. Bu konu, yönetilen koddan nasıl basit (taşınabilir) öğelerin bir dizisi yerel işlevlere geçirilebilir gösterir.
+Yerel ve yönetilen diziler bellekte farklı şekilde düzenlendiği için, yönetilen/yönetilmeyen sınır genelinde başarıyla geçirilmesi dönüştürme veya sıralama gerektirir. Bu konu başlığı altında, yönetilen koddan yerel işlevlere bir dizi basit (blitable) öğe geçirilebileceğini gösterir.
 
-Genel olarak, yönetilen ve yönetilmeyen verileri hazırlama true olduğunda <xref:System.Runtime.InteropServices.DllImportAttribute> özniteliği, bir yönetilen giriş noktası için kullanılacak her bir yerel işlev oluşturmak için kullanılır. Dizileri bağımsız değişkenler almayan işlevleri söz konusu olduğunda <xref:System.Runtime.InteropServices.MarshalAsAttribute> özniteliği yanı derleyici için verileri nasıl sıralanacağını belirlemek için kullanılmalıdır. Aşağıdaki örnekte, <xref:System.Runtime.InteropServices.UnmanagedType> numaralandırması yönetilen dizi bir C tarzı dizi olarak sıralanmış olduğunu belirtmek için kullanılır.
+Genel olarak yönetilen/yönetilmeyen veri hazırlamayı doğru olduğu <xref:System.Runtime.InteropServices.DllImportAttribute> için, özniteliği kullanılacak her yerel işlev için bir yönetilen giriş noktası oluşturmak üzere kullanılır. Dizileri bağımsız değişken olarak alan işlevler söz konusu olduğunda, <xref:System.Runtime.InteropServices.MarshalAsAttribute> öznitelik kullanılmalıdır ve derleyicinin verilerin nasıl sıralandığına yönelik olarak belirtilmesi gerekir. Aşağıdaki örnekte, <xref:System.Runtime.InteropServices.UnmanagedType> sıralama yönetilen dizinin C stili dizi olarak sıralandığını göstermek için kullanılır.
 
-Aşağıdaki kod, yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen tamsayı dizisi kabul eden bir işlev tanımlayan bir DLL modülüdür. Bu işlev alır ancak açısından yönetilen bir diziyi tanımlar ve kullanan yönetilen bir komut satırı uygulaması olduğundan ikinci Modülü <xref:System.Runtime.InteropServices.MarshalAsAttribute> dizi çağrıldığında bir yerel dizi dönüştürülmesi gerektiğini belirtmek için özniteliği.
+Aşağıdaki kod, yönetilmeyen ve yönetilen bir modülden oluşur. Yönetilmeyen modül, tamsayılar dizisini kabul eden bir işlevi tanımlayan bir DLL 'dir. İkinci modül, bu işlevi içeri aktaran, ancak yönetilen bir dizi açısından tanımlayan bir yönetilen komut satırı uygulamasıdır ve <xref:System.Runtime.InteropServices.MarshalAsAttribute> dizinin çağrıldığında Yerel bir diziye dönüştürülmesi gerektiğini belirtmek için özniteliğini kullanır.
 
-Yönetilen modül/CLR ile derlenir.
+Yönetilen modül/clrile derlenir.
 
 ```cpp
 // TraditionalDll4.cpp
@@ -77,8 +78,8 @@ int main() {
 }
 ```
 
-Geleneksel aracılığıyla yönetilen koda hiçbir kısmı DLL kullanıma sunulduğunu unutmayın #include yönergesi. DLL yalnızca çalışma zamanında erişilir, aslında, İşlevler ile ilgili sorunlar ile içeri aktarılan <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.
+Geleneksel #include yönergesi aracılığıyla, DLL 'nin hiçbir kısmının yönetilen koda sunulmadığını unutmayın. Aslında, DLL çalışma zamanında erişildiği için, ile içeri aktarılan işlevlerle ilgili sorunlar <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+[C++ ' ta açık PInvoke kullanma (DllImport özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

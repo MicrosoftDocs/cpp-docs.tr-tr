@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: sekme denetimi oluşturma'
 title: Sekme Denetimi Oluşturma
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], creating
 - TCS_EX_FLATSEPARATORS extended style
 ms.assetid: 3a9c2d64-f5f4-41ea-84ab-fceb73c3dbdc
-ms.openlocfilehash: 6d5aa6873966ecb4c845f1c503b24c07b6c0c7a3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 38b50931f6ea922bb1166759a97dc676c604319a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309504"
 ---
 # <a name="creating-the-tab-control"></a>Sekme Denetimi Oluşturma
 
@@ -52,7 +53,7 @@ Bu stiller, Denetim oluşturulduktan sonra, [Getil dedstyle](reference/ctabctrl-
 
 [!code-cpp[NVC_MFCControlLadenDialog#33](codesnippet/cpp/creating-the-tab-control_1.cpp)]
 
-**TCS_EX_FLATSEPARATORS** `CTabCtrl` Aşağıdaki kod satırlarına sahip bir nesneden TCS_EX_FLATSEPARATORS stilini temizleyin:
+ `CTabCtrl` Aşağıdaki kod satırlarına sahip bir nesneden TCS_EX_FLATSEPARATORS stilini temizleyin:
 
 [!code-cpp[NVC_MFCControlLadenDialog#34](codesnippet/cpp/creating-the-tab-control_2.cpp)]
 

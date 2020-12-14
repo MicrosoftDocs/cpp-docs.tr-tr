@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Raise'
 title: tetikle
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-ms.openlocfilehash: 81b92404603820948a384b6ad33421251a27c13c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: eb225e25ef0ff4e04f1ea8877a434c2af240cbfe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274872"
 ---
 # <a name="raise"></a>tetikle
 
@@ -61,7 +62,7 @@ Başarılı olursa, **Raise** 0 döndürür. Aksi takdirde, sıfır dışında b
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Raise** işlevi, çalıştırılan programa *SIG* gönderir. Önceki bir **sinyal** çağrısı *SIG*için bir sinyal işleme işlevi yüklemiştir **, bu** işlevi yürütür. Hiçbir işleyici işlevi yüklenmemişse, *SIG* sinyal değeri ile ilişkili varsayılan eylem aşağıdaki şekilde alınır.
+**Raise** işlevi, çalıştırılan programa *SIG* gönderir. Önceki bir **sinyal** çağrısı *SIG* için bir sinyal işleme işlevi yüklemiştir **, bu** işlevi yürütür. Hiçbir işleyici işlevi yüklenmemişse, *SIG* sinyal değeri ile ilişkili varsayılan eylem aşağıdaki şekilde alınır.
 
 |Sinyalinin|Anlamı|Varsayılan|
 |------------|-------------|-------------|
@@ -80,12 +81,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**yükseltmek**|\<sinyal. h>|
+|**tetikle**|\<signal.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[durdurulmaya](abort.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[durdur](abort.md)<br/>
 [sinyal](signal.md)<br/>

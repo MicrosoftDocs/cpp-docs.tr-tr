@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: nasıl yapılır: C++ birlikte çalışması kullanarak dizileri sıralama'
 title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - C++ Interop, arrays
 - data marshaling [C++], arrays
 ms.assetid: c2b37ab1-8acf-4855-ad3c-7d2864826b14
-ms.openlocfilehash: 0ccf71d40db0bc6989620d2ca126ce74311805da
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 5c91b9f24a801f7bf1bd1ec3132503535f0334d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91413833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258245"
 ---
 # <a name="how-to-marshal-arrays-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Sıralama
 
