@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3711'
 title: Derleyici hatası C3711
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3711
 ms.assetid: 26d581cc-2153-4ee0-b814-a371184be3e1
-ms.openlocfilehash: bf8d1ea745ed96d782fdc95d825e278e894066ef
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5ced0d5e83c149f3634053680aa52821e0d9bbe8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220190"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241696"
 ---
 # <a name="compiler-error-c3711"></a>Derleyici hatası C3711
 

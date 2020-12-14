@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: Önişlemci yönergeleri'
 title: Ön işlemci yönergeleri
 ms.date: 08/29/2019
 helpviewer_keywords:
 - directives, preprocessor
 - preprocessor, directives
 ms.assetid: e0fc4564-b6cf-4a36-bf51-6ccd7abd0a94
-ms.openlocfilehash: ac765d33aec4795e94866c097d6c453dbd0e4a08
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 016021fb21961e71b56a734941d6c495cc6f6741
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845334"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240526"
 ---
 # <a name="preprocessor-directives"></a>Ön işlemci yönergeleri
 

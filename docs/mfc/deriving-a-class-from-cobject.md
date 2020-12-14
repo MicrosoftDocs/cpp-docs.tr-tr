@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: CObject 'ten sınıf türetme"
 title: CObject'ten Sınıf Türetme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CObject class [MFC], deriving serializable classes
 - CObject class [MFC], deriving from
 ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
-ms.openlocfilehash: f4c01538877d8517cf3394d9e0108ce3a9df2900
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c6c2ea75354d783b234bc3f7cac7a08dac4f05da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621935"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240708"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject'ten Sınıf Türetme
 
@@ -40,14 +41,14 @@ Yeniden kullanım için tasarlanan sınıflar (daha sonra temel sınıflar olara
 
 Aşağıdaki tabloda serileştirme ve çalışma zamanı bilgilerini desteklemek için kullanılan makrolar arasındaki ilişki gösterilmektedir.
 
-### <a name="macros-used-for-serialization-and-run-time-information"></a>Serileştirme ve çalışma zamanı bilgileri için kullanılan makrolar
+### <a name="macros-used-for-serialization-and-run-time-information"></a>Serileştirme ve Run-Time bilgi için kullanılan makrolar
 
 |Kullanılan makro|CObject:: IsKindOf|CRuntimeClass::<br /><br /> CreateObject|CArchive:: operator>><br /><br /> CArchive:: operator<<|
 |----------------|-----------------------|--------------------------------------|-------------------------------------------------------|
 |Temel `CObject` işlevsellik|Hayır|Hayır|Hayır|
 |`DECLARE_DYNAMIC`|Evet|Hayır|Hayır|
-|`DECLARE_DYNCREATE`|Yes|Yes|Hayır|
-|`DECLARE_SERIAL`|Yes|Yes|Yes|
+|`DECLARE_DYNCREATE`|Evet|Evet|Hayır|
+|`DECLARE_SERIAL`|Evet|Evet|Evet|
 
 #### <a name="to-use-basic-cobject-functionality"></a>Temel CObject işlevlerini kullanmak için
 

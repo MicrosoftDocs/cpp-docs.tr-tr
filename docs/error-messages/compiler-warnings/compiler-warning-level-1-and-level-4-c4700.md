@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1 ve düzey 4) C4700'
 title: Derleyici Uyarısı (düzey 1 ve düzey 4) C4700
 ms.date: 02/21/2018
 f1_keywords:
@@ -6,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - C4700
 ms.assetid: 2da0deb4-77dd-4b05-98d3-b78d74ac4ca7
-ms.openlocfilehash: fa3326bd5ab495dbc4c54130bb168422eb827dce
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7ba19bdd6d8e25e095f796adc8cdb60b5cc8d325
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300303"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241605"
 ---
 # <a name="compiler-warning-level-1-and-level-4-c4700"></a>Derleyici Uyarısı (düzey 1 ve düzey 4) C4700
 
-> başlatılmamış yerel değişken '*adı*' kullanılır
+> başlatılmamış yerel değişken '*Name*' kullanıldı
 
-Yerel değişken *adı* olmuştur *kullanılan*, diğer bir deyişle, okuma, bir değer var. önce atanmış. C ve C++ içinde varsayılan olarak yerel değişken başlatılmamış. Başlatılmamış değişkenler herhangi bir değer içerebilir ve kullanımları tanımsız davranışa yol. Uyarı C4700 neredeyse her zaman programınızda öngörülemeyen sonuçlara veya kilitlenmelere neden olabilir bir hata gösterir.
+Yerel değişken *adı* *kullanıldı*, diğer bir deyişle, bir değer atanmadan önce, öğesinden okundu. C ve C++ ' da yerel değişkenler varsayılan olarak başlatılmaz. Başlatılmamış değişkenler herhangi bir değer içerebilir ve kullanımları tanımsız davranışa neden olur. Uyarı C4700 neredeyse her zaman, programınızda öngörülemeyen sonuçlara veya kilitlenmelere neden olabilecek bir hatayı gösterir.
 
-Bu sorunu gidermek için bildirildikleri olduğunda yerel değişkenlerini başlatmak veya kullanmadan önce bir değer atayabilirsiniz. Bir işlev başvurusu parametre olarak geçirilen veya ne zaman adresini işaretçi parametre olarak geçirilen bir değişkeni başlatmak için kullanılabilir.
+Bu sorunu onarmak için, yerel değişkenleri bildirildiği sırada başlatabilir veya kullanılmadan önce bunlara bir değer atayabilirsiniz. Bir işlev, başvuru parametresi olarak geçirilen bir değişkeni başlatmak için veya adresi bir işaretçi parametresi olarak geçirildiğinde kullanılabilir.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, başlatılır ve sonuçlanabilir çöp değer türünü gösterir önce değişkenleri t ve u v kullanıldığında C4700 oluşturur. Değişkenleri x, y ve z kullanılmadan önce başlatıldığından uyarı neden değil:
+Bu örnek, t, u ve v değişkenleri başlatılmadan önce kullanıldığında ve sonuç olarak oluşabilecek çöp değer türünü gösteren C4700 oluşturur. X, y ve z değişkenleri, kullanılmadan önce başlatıldıklarından, uyarıya neden olmaz:
 
 ```cpp
 // c4700.cpp
@@ -53,7 +54,7 @@ int main()
 }
 ```
 
-S için çıktıyı tahmin edilemez ve bu kod çalıştırma, t, u ve v olduğunda başlatılmamış verilmiştir:
+Bu kod çalıştırıldığında, t, u ve v başlatılmadığında, s için çıkış öngörülemeyen olur:
 
 ```Output
 Value in s: 37816963

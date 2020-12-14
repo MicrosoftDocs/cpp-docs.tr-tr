@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: memcmp, wmemcmp'
 title: memcmp, wmemcmp
 ms.date: 11/04/2016
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - wmemcmp function
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-ms.openlocfilehash: b18479e50d5b35c8de3dfd11eb34d0d21d45f223
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 65489d99e0c17e4971a4fa7cf849990b860ad361
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232462"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239993"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 
 İki arabelleki karakterleri karşılaştırır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int memcmp(
@@ -63,7 +64,7 @@ int wmemcmp(
 İkinci arabellek.
 
 *biriktirme*<br/>
-Karşılaştırılacak karakter sayısı. ( **Memcmp**için baytları ve **wmemcmp**için geniş karakterleri karşılaştırır).
+Karşılaştırılacak karakter sayısı. ( **Memcmp** için baytları ve **wmemcmp** için geniş karakterleri karşılaştırır).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -77,7 +78,7 @@ Dönüş değeri, arabellekler arasındaki ilişkiyi gösterir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-*Buffer1* ve *buffer2* öğesinin ilk *sayı* karakterlerini karşılaştırır ve ilişkilerini gösteren bir değer döndürür. Sıfır olmayan bir dönüş değeri işareti, arabelleklerindeki ilk farklı değer çifti arasındaki farkın işaret değeridir. Değerler **`unsigned char`** **memcmp**için olarak yorumlanır ve **`wchar_t`** **wmemcmp**için.
+*Buffer1* ve *buffer2* öğesinin ilk *sayı* karakterlerini karşılaştırır ve ilişkilerini gösteren bir değer döndürür. Sıfır olmayan bir dönüş değeri işareti, arabelleklerindeki ilk farklı değer çifti arasındaki farkın işaret değeridir. Değerler **`unsigned char`** **memcmp** için olarak yorumlanır ve **`wchar_t`** **wmemcmp** için.
 
 ## <a name="requirements"></a>Gereksinimler
 

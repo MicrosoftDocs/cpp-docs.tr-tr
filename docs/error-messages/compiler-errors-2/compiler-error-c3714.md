@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3714'
 title: Derleyici hatası C3714
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3714
 ms.assetid: 17718f75-5a37-4e42-912b-487e91008a95
-ms.openlocfilehash: 1078bf8a97f6cb7afeaf7046489fe262c0bb0199
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a01544558a156b746c16e731584e30bab7a77825
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74753334"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241631"
 ---
 # <a name="compiler-error-c3714"></a>Derleyici hatası C3714
 
 ' Method ': olay işleyicisi yöntemi kaynak ' Yöntem ' ile aynı çağırma kuralına sahip olmalıdır
 
-Kaynak olay yöntemiyle aynı çağırma kuralını kullanmayan bir olay işleyicisi yöntemi tanımladınız. Bu hatayı onarmak için, olay işleyicisi yöntemine kaynak olay yöntemi ile aynı çağırma kuralları verin. Örneğin, aşağıdaki kodda `handler1` ve `event1` eşleşmesi ([__cdecl](../../cpp/cdecl.md) ya da [__stdcall](../../cpp/stdcall.md) veya diğerleri) için çağırma kuralları oluşturun. Her iki bildirime çağrı kuralı anahtar sözcüklerini kaldırmak de sorunu çözerek `event1` ve `handler1` varsayılan olarak [thiscall](../../cpp/thiscall.md) çağırma kuralına neden olur. Daha fazla bilgi için bkz. [çağırma kuralları](../../cpp/calling-conventions.md) .
+Kaynak olay yöntemiyle aynı çağırma kuralını kullanmayan bir olay işleyicisi yöntemi tanımladınız. Bu hatayı onarmak için, olay işleyicisi yöntemine kaynak olay yöntemi ile aynı çağırma kuralları verin. Örneğin, aşağıdaki kodda çağırma kurallarını yapın `handler1` ve `event1` eşleştirin ([__cdecl](../../cpp/cdecl.md) veya [__stdcall](../../cpp/stdcall.md) veya diğerleri). Her iki bildirime çağrı kuralı anahtar sözcüklerini kaldırmak, sorunu da çözerek `event1` `handler1` [thiscall](../../cpp/thiscall.md) çağırma kuralına ve varsayılan olarak neden olur. Daha fazla bilgi için bkz. [çağırma kuralları](../../cpp/calling-conventions.md) .
 
 Aşağıdaki örnek C3714 oluşturur:
 

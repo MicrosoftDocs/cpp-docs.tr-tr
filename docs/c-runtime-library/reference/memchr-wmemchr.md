@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: memchr, wmemchr'
 title: memchr, wmemchr
 ms.date: 03/31/2019
 api_name:
@@ -27,18 +28,18 @@ helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-ms.openlocfilehash: b4640004526eda4ff26e9601e15298bcb8ba3c79
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 695973fd9551758de6c0638493057b31e9a74aab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240006"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
 Bir arabellekteki karakterleri bulur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 void *memchr(
@@ -90,7 +91,7 @@ Başarılı olursa, *arabellekteki* *c* 'nin ilk konumuna bir işaretçi döndü
 
 ## <a name="remarks"></a>Açıklamalar
 
-`memchr`ve `wmemchr` *arabelleğin*ilk *sayı* karakterdeki ilk *c* oluşumunu arayın. *C* bulduğunda veya ilk *sayı* karakterini denetlediyseniz, bu yanıt vermez.
+`memchr`ve `wmemchr` *arabelleğin* ilk *sayı* karakterdeki ilk *c* oluşumunu arayın. *C* bulduğunda veya ilk *sayı* karakterini denetlediyseniz, bu yanıt vermez.
 
 C 'de, bu işlevler **`const`** ilk bağımsız değişken için bir işaretçi alır. C++ ' da, iki aşırı yükleme mevcuttur. ' A bir işaretçi döndüren aşırı yükleme, ' a bir işaretçi döndürür; olmayan bir işaretçiyi **`const`** **`const`** alan sürüm olmayan **`const`** bir işaretçi döndürür **`const`** . Makro \_ CRT \_ const \_ doğru \_ aşırı yüklemeleri, bu işlevlerin hem hem de **`const`** **`const`** sürümleriniz varsa tanımlanmıştır. **`const`** C++ ' da her Iki c++ aşırı yüklemesi için davranışa gerek duyuyorsanız \_ const Return simgesini tanımlayın \_ .
 

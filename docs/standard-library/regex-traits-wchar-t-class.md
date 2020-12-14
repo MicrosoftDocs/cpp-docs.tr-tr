@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: regex_traits &lt; wchar_t &gt; sınıfı'
 title: regex_traits &lt; wchar_t &gt; sınıfı
 ms.date: 09/10/2018
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - regex_traits<wchar_t> class
 ms.assetid: 288d6fdb-fb8e-4a4d-904a-53916be7f95b
-ms.openlocfilehash: dd0b54470f026635c1e09829f37d02bbe8b3f0c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d02d0abf5b6ca3f428bc94e153f93e428bec7c56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217564"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240461"
 ---
 # <a name="regex_traitsltwchar_tgt-class"></a>regex_traits &lt; wchar_t &gt; sınıfı
 
 İçin özelleştirmesi `regex_traits` **`wchar_t`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <>
@@ -39,9 +40,9 @@ Sınıfı, türündeki öğeler için [regex_traits](../standard-library/regex-t
 [\<regex>](../standard-library/regex.md)\
 [regex_constants sınıfı](../standard-library/regex-constants-class.md)\
 [regex_error sınıfı](../standard-library/regex-error-class.md)\
-[\<regex>lerdir](../standard-library/regex-functions.md)\
+[\<regex> lerdir](../standard-library/regex-functions.md)\
 [regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)\
-[\<regex>işletmenlerinin](../standard-library/regex-operators.md)\
+[\<regex> işletmenlerinin](../standard-library/regex-operators.md)\
 [regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)\
 [regex_traits Sınıfı](../standard-library/regex-traits-class.md)\
-[\<regex>tür tanımları](../standard-library/regex-typedefs.md)
+[\<regex> tür tanımları](../standard-library/regex-typedefs.md)

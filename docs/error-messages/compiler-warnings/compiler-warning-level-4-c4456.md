@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4456'
 title: Derleyici Uyarısı (düzey 4) C4456
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4456
 ms.assetid: 5ab39fc1-0e19-461b-842b-4da80560b044
-ms.openlocfilehash: 006628721598d838070412c895f64b9a8d3de4e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f066de07b0c6bf7a7b5de3143909e402b0fedde3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391510"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241319"
 ---
 # <a name="compiler-warning-level-4-c4456"></a>Derleyici Uyarısı (düzey 4) C4456
 
-> bildirimi '*tanımlayıcı*' önceki yerel bildirimi gizliyor
+> '*Identifier*' bildirimi önceki yerel bildirimi gizliyor
 
-Bildirimi *tanımlayıcı* yerel kapsama önceki yerel bildirimi aynı adlı bildirimi gizler. Bu uyarı, başvuruları size sağlar *tanımlayıcı* yerel kapsama amacınızla olmayabilir veya değil önceki yerel, yerel olarak bildirilen sürümüne çözün. Bu sorunu çözmek için yerel değişkenler çakışmasını diğer yerel adları adlarla size öneririz.
+Yerel kapsamdaki *tanımlayıcının* bildirimi, aynı ada sahip önceki yerel bildirimin bildirimini gizler. Bu uyarı, yerel kapsamdaki *tanımlayıcıya* yapılan başvuruların, önceki yerel olarak değil, yerel olarak belirtilen sürüme çözümlendiğine, ancak sizin amacınız anlamına gelir. Bu sorunu onarmak için, diğer yerel adlarla çakışmayan yerel değişken adlarına izin vermenizi öneririz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4456 oluşturur, döngüyü denetlemek çünkü değişken `int x` ve yerel değişkeni `double x` içinde `member_fn` aynı ada sahip. Bu sorunu çözmek için yerel değişkenler için farklı adlar kullanın.
+Aşağıdaki örnek, içindeki Loop denetim değişkeni `int x` ve yerel değişkeni `double x` `member_fn` aynı ada sahip olduğundan C4456 oluşturur. Bu sorunu onarmak için yerel değişkenler için farklı adlar kullanın.
 
 ```cpp
 // C4456_hide.cpp

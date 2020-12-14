@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbsnbcpy_s _mbsnbcpy_s_l'
 title: _mbsnbcpy_s, _mbsnbcpy_s_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _mbsnbcpy_s_l function
 - _tcsncpy_s function
 ms.assetid: dfff64ab-fe6f-49c4-99ba-75014e2b0cd6
-ms.openlocfilehash: 670055ca67e8196805851767596f56028350e32a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 12233d0f83094934250a04b18582feff0cb7310e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240292"
 ---
 # <a name="_mbsnbcpy_s-_mbsnbcpy_s_l"></a>_mbsnbcpy_s, _mbsnbcpy_s_l
 
@@ -106,7 +107,7 @@ Başarılıysa sıfır; **EINVAL** hatalı bir parametre geçirilmemişse.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbcpy_s** Işlevi, *strSource* 'dan *strDest*öğesine *sayı* baytlarını kopyalar. *Sayım* , *strDest*boyutunu aşarsa, giriş dizelerinden biri null Işaretçisiyse veya *sizeInBytes* ya da *Count* 0 ise, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL**döndürür. Kaynak ve hedef dizeler çakışırsa **_mbsnbcpy_s** davranışı tanımsızdır.
+**_Mbsnbcpy_s** Işlevi, *strSource* 'dan *strDest* öğesine *sayı* baytlarını kopyalar. *Sayım* , *strDest* boyutunu aşarsa, giriş dizelerinden biri null Işaretçisiyse veya *sizeInBytes* ya da *Count* 0 ise, işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, işlev **EINVAL** döndürür. Kaynak ve hedef dizeler çakışırsa **_mbsnbcpy_s** davranışı tanımsızdır.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale](setlocale-wsetlocale.md) . **_L** soneki olmayan bu işlevlerin sürümleri, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_l** sonekine sahip sürümler, bunun yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -130,8 +131,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbcpy_s**|\<mbstring. h>|
-|**_mbsnbcpy_s_l**|\<mbstring. h>|
+|**_mbsnbcpy_s**|\<mbstring.h>|
+|**_mbsnbcpy_s_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

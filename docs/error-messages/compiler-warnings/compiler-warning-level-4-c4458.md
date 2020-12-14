@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 4) C4458'
 title: Derleyici Uyarısı (düzey 4) C4458
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4458
 ms.assetid: 7bdaa1b1-0caf-4d68-98c4-6bdd441c23fb
-ms.openlocfilehash: 9e5eb8dc44968332abc097bfbd16b48e3240695c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f631fe4086c69732c972161ae7bb6096232b2740
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391458"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241267"
 ---
 # <a name="compiler-warning-level-4-c4458"></a>Derleyici Uyarısı (düzey 4) C4458
 
-> bildirimi '*tanımlayıcı*' sınıf üyesini gizliyor
+> '*Identifier*' bildirimi sınıf üyesini gizliyor
 
-Bildirimi *tanımlayıcı* yerel kapsamda aynı adlı bildirimi gizler *tanımlayıcı* sınıf kapsamında. Bu uyarı, başvuruları size sağlar *tanımlayıcı* bu kapsamda amacınızla olmayabilir veya sınıf üyesi sürümünü değil, yerel olarak bildirilen sürümüne çözün. Bu sorunu çözmek için yerel değişkenler çakışmasını sınıf üye adları adlarla size öneririz.
+Yerel kapsamdaki *tanımlayıcının* bildirimi, sınıf kapsamındaki özdeş olarak adlandırılmış *tanımlayıcının* bildirimini gizler. Bu uyarı, bu kapsamdaki *tanımlayıcıya* yapılan başvuruların, sınıf üyesi sürümü değil, yerel olarak belirtilen sürüme çözümlendiğine, sizin amacınızı etkileyebilecek veya bu olmayabilir. Bu sorunu onarmak için, sınıf üyesi adlarıyla çakışmayan yerel değişken adları vermenizi öneririz.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C4458 oluşturur çünkü parametre `x` ve yerel değişkeni `y` içinde `member_fn` sınıf veri üyeleri olarak aynı ada sahip. Bu sorunu gidermek için yerel değişkenleri ve parametreleri için farklı adlar kullanın.
+`x`İçindeki parametresi ve yerel değişkeni, `y` `member_fn` sınıfındaki veri üyeleriyle aynı adlara sahip olduğundan aşağıdaki örnek C4458 oluşturur. Bu sorunu onarmak için, parametreler ve yerel değişkenler için farklı adlar kullanın.
 
 ```cpp
 // C4458_hide.cpp

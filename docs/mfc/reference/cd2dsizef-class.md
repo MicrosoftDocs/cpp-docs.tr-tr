@@ -1,5 +1,6 @@
 ---
-title: CD2DSizeF Sınıfı
+description: 'Daha fazla bilgi edinin: CD2DSizeF Class'
+title: CD2DSizeF sınıfı
 ms.date: 08/29/2019
 f1_keywords:
 - CD2DSizeF
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - CD2DSizeF [MFC], CD2DSizeF
 - CD2DSizeF [MFC], IsNull
 ms.assetid: f486a1e1-997d-4286-8cb9-26369dc82055
-ms.openlocfilehash: be050f98855e5af794166e1f86962111a23bfa2e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d1416f7cd225be8edf1a7b08f06f611219d7846d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369072"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240565"
 ---
-# <a name="cd2dsizef-class"></a>CD2DSizeF Sınıfı
+# <a name="cd2dsizef-class"></a>CD2DSizeF sınıfı
 
-D2D1_SIZE_F için bir sarmalayıcı.
+D2D1_SIZE_F için sarmalayıcı.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CD2DSizeF : public D2D1_SIZE_F;
@@ -31,21 +32,21 @@ class CD2DSizeF : public D2D1_SIZE_F;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DSizeF::CD2DSizeF](#cd2dsizef)|Fazla Yüklendi. Nesneden `D2D1_SIZE_F` `CD2DSizeF` bir nesne inşa eder.|
+|[CD2DSizeF::CD2DSizeF](#cd2dsizef)|Fazla Yüklendi. Nesnesinden bir `CD2DSizeF` nesne oluşturur `D2D1_SIZE_F` .|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DSizeF::Isnull](#isnull)|İfadenin geçerli veri içermediğini gösteren bir **boolean** değeri döndürür (NULL).|
+|[CD2DSizeF:: IsNull](#isnull)|Bir ifadenin geçerli veri içerip içermediğini gösteren bir **Boole** değeri döndürür (null).|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DSizeF::operatör CSize](#operator_csize)|`CD2DSizeF` Nesneye `CSize` dönüştürür.|
+|[CD2DSizeF:: operator CSize](#operator_csize)|`CD2DSizeF`Nesnesine dönüştürür `CSize` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -55,11 +56,11 @@ class CD2DSizeF : public D2D1_SIZE_F;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget. h
 
-## <a name="cd2dsizefcd2dsizef"></a><a name="cd2dsizef"></a>CD2DSizeF::CD2DSizeF
+## <a name="cd2dsizefcd2dsizef"></a><a name="cd2dsizef"></a> CD2DSizeF::CD2DSizeF
 
-CSize nesnesinden bir CD2DSizeF nesnesi oluşturuyor.
+CSize nesnesinden bir CD2DSizeF nesnesi oluşturur.
 
 ```
 CD2DSizeF(const CSize& size);
@@ -73,18 +74,18 @@ CD2DSizeF(
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*<br/>
-kaynak boyutu
+*boyutla*<br/>
+Kaynak boyutu
 
-*Cx*<br/>
-kaynak genişliği
+*yazmaç*<br/>
+Kaynak genişliği
 
-*Cy*<br/>
-kaynak yüksekliği
+*lı*<br/>
+Kaynak yüksekliği
 
-## <a name="cd2dsizefisnull"></a><a name="isnull"></a>CD2DSizeF::Isnull
+## <a name="cd2dsizefisnull"></a><a name="isnull"></a> CD2DSizeF:: IsNull
 
-Bir ifadenin geçerli veri içermediğini belirten bir Boolean değeri döndürür (Null).
+Bir ifadenin geçerli veri içerip içermediğini gösteren bir Boole değeri döndürür (null).
 
 ```
 BOOL IsNull() const;
@@ -92,11 +93,11 @@ BOOL IsNull() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Genişlik ve yükseklik boşsa DOĞRU; aksi takdirde YANLIŞ.
+Genişlik ve yükseklik boşsa, doğru; Aksi halde yanlış.
 
-## <a name="cd2dsizefoperator-csize"></a><a name="operator_csize"></a>CD2DSizeF::operatör CSize
+## <a name="cd2dsizefoperator-csize"></a><a name="operator_csize"></a> CD2DSizeF:: operator CSize
 
-CD2DSizeF'yi CSize nesnesine dönüştürür.
+CD2DSizeF öğesini CSize nesnesine dönüştürür.
 
 ```
 operator CSize();
@@ -104,7 +105,7 @@ operator CSize();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-D2D boyutunun geçerli değeri.
+Geçerli D2D boyutu değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

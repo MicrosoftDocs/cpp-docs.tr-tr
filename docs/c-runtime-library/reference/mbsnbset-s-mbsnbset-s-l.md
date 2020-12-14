@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbsnbset_s _mbsnbset_s_l'
 title: _mbsnbset_s, _mbsnbset_s_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _tcsnset_s function
 - tcsnset_s_l function
 ms.assetid: 811f92c9-cc31-4bbd-8017-2d1bfc6fb96f
-ms.openlocfilehash: b4880e774d6ad1b07052529461910ceff6897351
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e8500de308d564b9e16ba5de29af67ee65b260e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240201"
 ---
 # <a name="_mbsnbset_s-_mbsnbset_s_l"></a>_mbsnbset_s, _mbsnbset_s_l
 
@@ -106,11 +107,11 @@ Başarılıysa sıfır; Aksi takdirde, bir hata kodu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbset_s** ve **_mbsnbset_s_l** işlevleri, en çok, *Str* 'nin ilk *sayı* baytlarını *c*'ye ayarlar. *Count* değeri *Str*uzunluğundan büyükse, *Str* uzunluğu *sayı*yerine kullanılır. *C* çok baytlı bir karakter ise ve tamamen *sayı*ile belirtilen son bayta ayarlanamaz, son bayt boş bir karakterle doldurulur. **_mbsnbset_s** ve **_mbsnbset_s_l** *Str*sonuna bir Sonlandırıcı null yerleştirmeyin.
+**_Mbsnbset_s** ve **_mbsnbset_s_l** işlevleri, en çok, *Str* 'nin ilk *sayı* baytlarını *c*'ye ayarlar. *Count* değeri *Str* uzunluğundan büyükse, *Str* uzunluğu *sayı* yerine kullanılır. *C* çok baytlı bir karakter ise ve tamamen *sayı* ile belirtilen son bayta ayarlanamaz, son bayt boş bir karakterle doldurulur. **_mbsnbset_s** ve **_mbsnbset_s_l** *Str* sonuna bir Sonlandırıcı null yerleştirmeyin.
 
-**_mbsnbset_s** ve **_mbsnbset_s_l** **_mbsnset**benzer, ancak bu durum, *t* *karakter sayısı yerine* *Count* bytes ayarlanırlar.
+**_mbsnbset_s** ve **_mbsnbset_s_l** **_mbsnset** benzer, ancak bu durum, *t* *karakter sayısı yerine* *Count* bytes ayarlanırlar.
 
-*Str* **null** veya *sayı* sıfırsa, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre özel durumu oluşturur. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null**değerini döndürür. Ayrıca, *c* geçerli bir çok baytlı karakter değilse, **errno** **EINVAL** olarak ayarlanır ve bunun yerine bir boşluk kullanılır.
+*Str* **null** veya *sayı* sıfırsa, bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklanan şekilde geçersiz bir parametre özel durumu oluşturur. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **null** değerini döndürür. Ayrıca, *c* geçerli bir çok baytlı karakter değilse, **errno** **EINVAL** olarak ayarlanır ve bunun yerine bir boşluk kullanılır.
 
 Çıkış değeri yerel ayarın **LC_CTYPE** kategori ayarı ayarından etkilenir; daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md) . Bu işlevin **_mbsnbset_s** sürümü, yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır; **_mbsnbset_s_l** sürüm, bunun yerine geçirilen yerel ayar parametresini kullanması dışında aynıdır. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
@@ -131,8 +132,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbset_s**|\<mbstring. h>|
-|**_mbsnbset_s_l**|\<mbstring. h>|
+|**_mbsnbset_s**|\<mbstring.h>|
+|**_mbsnbset_s_l**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

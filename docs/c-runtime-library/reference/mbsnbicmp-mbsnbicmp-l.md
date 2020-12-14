@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _mbsnbicmp _mbsnbicmp_l'
 title: _mbsnbicmp, _mbsnbicmp_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - mbsnbicmp function
 - _wcsnicmp function
 ms.assetid: ddb44974-8b0c-42f0-90d0-56c9350bae0c
-ms.openlocfilehash: e84e6b367c428dc26a1864db80f6828f7ec9c176
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9cc833061ceca899af78da4c50610ed101dcd2d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911829"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240279"
 ---
 # <a name="_mbsnbicmp-_mbsnbicmp_l"></a>_mbsnbicmp, _mbsnbicmp_l
 
@@ -82,7 +83,7 @@ Dönüş değeri, alt dizeler arasındaki ilişkiyi gösterir.
 |0|*Dize1* substring, *dize2* alt dizesi ile özdeş.|
 |> 0|*Dize1* substring, *dize2* alt dizinden büyük.|
 
-Bir hatada, **_Mbsnbicmp** String. h ve mbstring. h içinde tanımlanan **_NLSCMPERROR**döndürür.
+Bir hatada, **_Mbsnbicmp** String. h ve mbstring. h içinde tanımlanan **_NLSCMPERROR** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -90,11 +91,11 @@ Bir hatada, **_Mbsnbicmp** String. h ve mbstring. h içinde tanımlanan **_NLSCM
 
 **_mbsnbicmp** [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)benzerdir, ancak dizeleri karakter yerine bayt *sayısı* kadar karşılaştırır.
 
-ASCII tablosunda (' [', '\\', '] ', ' ^ ', ' _ ' ve '\`') ' Z ' ve ' a ' arasında karakter içeren iki dize, durumlarına bağlı olarak farklı şekilde karşılaştırın. Örneğin, "ABCDE" ve "ABCD ^" iki dizesi, karşılaştırma küçük harfli ("ABCDE" > "abcd ^") ve diğer yolla ("ABCDE" < "abcd ^") büyük harfli bir şekilde karşılaştırın.
+ASCII tablosunda (' [', ' \\ ', '] ', ' ^ ', ' _ ' ve ' ') ' Z ' ve ' a ' arasında karakter içeren iki dize, \` durumlarına bağlı olarak farklı şekilde karşılaştırın. Örneğin, "ABCDE" ve "ABCD ^" iki dizesi, karşılaştırma küçük harfli ("ABCDE" > "abcd ^") ve diğer yolla ("ABCDE" < "abcd ^") büyük harfli bir şekilde karşılaştırın.
 
 **_mbsnbicmp** , kullanımda olan [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) göre çok baytlı karakter dizilerini tanır. Geçerli yerel ayar ayarından etkilenmez.
 
-*Dize1* veya *dize2* , null Işaretçisiyse, **_mbsnbicmp** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev **_NLSCMPERROR** döndürür ve **errno** ' ı **EINVAL**olarak ayarlar.
+*Dize1* veya *dize2* , null Işaretçisiyse, **_mbsnbicmp** [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa işlev **_NLSCMPERROR** döndürür ve **errno** ' ı **EINVAL** olarak ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -109,7 +110,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbicmp**|\<mbstring. h>|
+|**_mbsnbicmp**|\<mbstring.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3706'
 title: Derleyici hatası C3706
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3706
 ms.assetid: d20a33eb-d625-46c5-ac87-32075a590d07
-ms.openlocfilehash: 461850b2c1686343f23c77274b8fb2ca6fd9071e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e4dcb65d29e24ae40bc311f1d4229edca173e916
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508008"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97241865"
 ---
 # <a name="compiler-error-c3706"></a>Derleyici hatası C3706
 

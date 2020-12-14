@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: proje derleme hatası PRJ0036'
 title: Proje Derleme Hatası PRJ0036
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PRJ0036
 ms.assetid: ee215cd1-2d66-474d-9a63-b9096f1c4923
-ms.openlocfilehash: 67a225f907d06cd240ec2ebef236c0b4e0b849e2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 753c526d7d15a0d90bef71b7923a4353ed02b098
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80192112"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240968"
 ---
 # <a name="project-build-error-prj0036"></a>Proje Derleme Hatası PRJ0036
 
