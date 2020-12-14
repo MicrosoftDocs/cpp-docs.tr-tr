@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unsupported_os sınıfı'
 title: unsupported_os Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_os class
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736
-ms.openlocfilehash: 253cd76182e1b6f85be3701663bd10c86c10e6ba
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1f9ee74db42d2b34c1b4e24a1951d84a442224bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142348"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188098"
 ---
 # <a name="unsupported_os-class"></a>unsupported_os Sınıfı
 
 Bu sınıf, desteklenmeyen bir işletim sistemi kullanıldığında oluşturulan bir özel durumu açıklar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class unsupported_os : public std::exception;
@@ -31,7 +32,7 @@ class unsupported_os : public std::exception;
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[unsupported_os](#ctor)|Fazla Yüklendi. `unsupported_os` nesnesi oluşturur.|
+|[unsupported_os](#ctor)|Fazla Yüklendi. Bir `unsupported_os` nesnesi oluşturur.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -45,9 +46,9 @@ class unsupported_os : public std::exception;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="ctor"></a>unsupported_os
+## <a name="unsupported_os"></a><a name="ctor"></a> unsupported_os
 
-`unsupported_os` nesnesi oluşturur.
+Bir `unsupported_os` nesnesi oluşturur.
 
 ### <a name="syntax"></a>Sözdizimi
 
@@ -64,4 +65,4 @@ Hatanın açıklayıcı bir iletisi.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)
+[Eşzamanlılık ad alanı](concurrency-namespace.md)

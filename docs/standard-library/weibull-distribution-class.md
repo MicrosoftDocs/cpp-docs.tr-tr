@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: weibull_distribution sınıfı'
 title: weibull_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - std::weibull_distribution [C++], param_type
 - std::weibull_distribution [C++], param_type
 ms.assetid: f20b49d3-1b9a-41af-8db4-baf800eaa02b
-ms.openlocfilehash: d16c1f7f864d52222a7fd4e1e2a5e543b8c21809
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d6ab60a4c5442e13a00ff559cbc58e207335e5ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831703"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187799"
 ---
 # <a name="weibull_distribution-class"></a>weibull_distribution Sınıfı
 
 Bir Weibull dağıtımı oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 class weibull_distribution
@@ -80,7 +81,7 @@ Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değ
 [weibull_distribution](#weibull_distribution)\
 [param_type](#param_type)|
 
-Özelliği işlevleri `a()` ve `b()` depolanan dağıtım parametreleri *a* ve *b*için ilgili değerlerini döndürür.
+Özelliği işlevleri `a()` ve `b()` depolanan dağıtım parametreleri *a* ve *b* için ilgili değerlerini döndürür.
 
 Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
@@ -153,7 +154,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 İlk çalıştırma:
 
@@ -233,9 +234,9 @@ explicit weibull_distribution(const param_type& parm);
 
 **Önkoşul:** `0.0 < a` ' `0.0 < b`
 
-İlk Oluşturucu, saklı değeri `a` *a* değerini tutan ve saklı `b` değeri *b*değerini tutan bir nesne oluşturur.
+İlk Oluşturucu, saklı değeri `a` *a* değerini tutan ve saklı `b` değeri *b* değerini tutan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="weibull_distributionparam_type"></a><a name="param_type"></a> weibull_distribution::p aram_type
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Scheduler sınıfı'
 title: Zamanlayıcı Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,18 +22,18 @@ f1_keywords:
 helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-ms.openlocfilehash: 77ad876b8352ab1ae86fde622b05712ec5f2cea9
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: 2a509017c84f7f6c845c153c8c187f5885839035
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274710"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188904"
 ---
 # <a name="scheduler-class"></a>Zamanlayıcı Sınıfı
 
 Eşzamanlılık Çalışma Zamanı Zamanlayıcı için bir soyutlama temsil eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class Scheduler;
@@ -56,14 +57,14 @@ class Scheduler;
 |[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresini alan sürüm, `_Placement` Yeni oluşturulan zamanlama grubundaki görevlerin Bu parametre tarafından belirtilen konumda yürütülmeye yaklaşmasına neden olur.|
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Zamanlayıcı için geçerli sanal işlemci sayısını döndürür.|
 |[GetPolicy](#getpolicy)|Scheduler 'ın ile oluşturulduğu ilkenin bir kopyasını döndürür.|
-|[Id](#id)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
+|[Numarasını](#id)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|
 |[IsAvailableLocation](#isavailablelocation)|Belirli bir konumun Scheduler 'da kullanılabilir olup olmadığını belirler.|
 |[Başvuru](#reference)|Zamanlayıcı başvuru sayısını artırır.|
 |[RegisterShutdownEvent](#registershutdownevent)|`_Event`Zamanlayıcı kapandığında ve kendi kendine yok edildiğinde, parametrede geçirilen Windows olay tanıtıcısına neden olur. Olaya işaret edilen zaman, Scheduler 'a zamanlanan tüm işler tamamlanmıştır. Birden çok kapanmaya yönelik olay, bu yöntem kullanılarak kaydedilebilir.|
 |[Sürüm](#release)|Zamanlayıcı başvuru sayısını azaltır.|
 |[ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy)|Varsayılan zamanlayıcı ilkesini çalışma zamanı varsayılan ayarlarına sıfırlar. Varsayılan bir Zamanlayıcı oluşturulduğunda, çalışma zamanı varsayılan ilke ayarlarını kullanır.|
 |[ScheduleTask](#scheduletask)|Fazla Yüklendi. Zamanlayıcı içinde bir hafif görevi zamanlar. Hafif görev, çalışma zamanı tarafından belirlenen bir zamanlama grubuna yerleştirilir. Parametresini alan sürüm, `_Placement` görevin belirtilen konumda yürütülmeye yaklaşmasına neden olur.|
-|[SetDefaultSchedulerPolicy](#setdefaultschedulerpolicy)|Varsayılan zamanlayıcıyı oluşturmak için Kullanıcı tanımlı bir ilkenin kullanılmasına izin verir. Bu yöntem yalnızca işlem içinde varsayılan Zamanlayıcı yoksa çağrılabilir. Varsayılan bir ilke ayarlandıktan sonra, ya da ResetDefaultSchedulerPolicy yöntemine bir sonraki geçerli çağrıya kadar yürürlükte kalır `SetDefaultSchedulerPolicy` . [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy)|
+|[SetDefaultSchedulerPolicy](#setdefaultschedulerpolicy)|Varsayılan zamanlayıcıyı oluşturmak için Kullanıcı tanımlı bir ilkenin kullanılmasına izin verir. Bu yöntem yalnızca işlem içinde varsayılan Zamanlayıcı yoksa çağrılabilir. Varsayılan bir ilke ayarlandıktan sonra, ya da ResetDefaultSchedulerPolicy yöntemine bir sonraki geçerli çağrıya kadar yürürlükte kalır `SetDefaultSchedulerPolicy` . [](#resetdefaultschedulerpolicy)|
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -222,7 +223,7 @@ Yeni artan başvuru sayısı.
 
 Bu genellikle, oluşturma için Scheduler 'ın ömrünü yönetmek için kullanılır. Bir Scheduler 'ın başvuru sayısı sıfır olduğunda, Scheduler 'daki tüm çalışmalar tamamlandıktan sonra Zamanlayıcı kapanır ve yapısını kaldırır.
 
-Yöntemi çağrılmadan önce başvuru sayısı [improper_scheduler_reference](improper-scheduler-reference-class.md) `Reference` sıfır ise ve Zamanlayıcı tarafından sahip olmayan bir içerikten çağrı yapılırsa Yöntem improper_scheduler_reference bir özel durum oluşturur.
+Yöntemi çağrılmadan önce başvuru sayısı [](improper-scheduler-reference-class.md) `Reference` sıfır ise ve Zamanlayıcı tarafından sahip olmayan bir içerikten çağrı yapılırsa Yöntem improper_scheduler_reference bir özel durum oluşturur.
 
 ## <a name="registershutdownevent"></a><a name="registershutdownevent"></a> RegisterShutdownEvent
 
@@ -315,7 +316,7 @@ Hafif bir görevin, üzerinde yürütülmesi için yüz aşağı olacağı bir k
 
 ## <a name="setdefaultschedulerpolicy"></a><a name="setdefaultschedulerpolicy"></a> SetDefaultSchedulerPolicy
 
-Varsayılan zamanlayıcıyı oluşturmak için Kullanıcı tanımlı bir ilkenin kullanılmasına izin verir. Bu yöntem yalnızca işlem içinde varsayılan Zamanlayıcı yoksa çağrılabilir. Varsayılan bir ilke ayarlandıktan sonra, ya da ResetDefaultSchedulerPolicy yöntemine bir sonraki geçerli çağrıya kadar yürürlükte kalır `SetDefaultSchedulerPolicy` . [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy)
+Varsayılan zamanlayıcıyı oluşturmak için Kullanıcı tanımlı bir ilkenin kullanılmasına izin verir. Bu yöntem yalnızca işlem içinde varsayılan Zamanlayıcı yoksa çağrılabilir. Varsayılan bir ilke ayarlandıktan sonra, ya da ResetDefaultSchedulerPolicy yöntemine bir sonraki geçerli çağrıya kadar yürürlükte kalır `SetDefaultSchedulerPolicy` . [](#resetdefaultschedulerpolicy)
 
 ```cpp
 static void __cdecl SetDefaultSchedulerPolicy(const SchedulerPolicy& _Policy);

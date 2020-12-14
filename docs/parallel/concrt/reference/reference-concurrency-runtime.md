@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: başvuru (Eşzamanlılık Çalışma Zamanı)'
 title: Başvuru (Eşzamanlılık Çalışma Zamanı)
 ms.date: 11/04/2016
 f1_keywords:
@@ -452,24 +453,24 @@ helpviewer_keywords:
 - LPSECURITY_ATTRIBUTES typedef
 - HRESULT typedef
 ms.assetid: a057c776-7caa-4605-8f33-9815cf6f9b27
-ms.openlocfilehash: e1ae4616400069b44e23e30e3df69aae6dec6592
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: f5d07f856c37417da1ceddbbefa772b2e7f11fff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188930"
 ---
 # <a name="reference-concurrency-runtime"></a>Başvuru (Eşzamanlılık Çalışma Zamanı)
 
 Bu bölüm Eşzamanlılık Çalışma Zamanı için başvuru bilgileri içerir.
 
 > [!Note]
-> Dil C++ standardı, kitaplıklar gibi uygulamalar için bir alt çizgi (_) karakteriyle başlayan tanımlayıcıların kullanımını saklı tutar. Bu adları kodunuzda kullanmayın. Adları bu kuralı izleyen kod öğelerinin davranışı garanti edilmez ve gelecek sürümlerde değiştirilebilir. Bu nedenlerden dolayı bu tür kod öğeleri Eşzamanlılık Çalışma Zamanı belgelerinden çıkarılır.
+> C++ dil standardı, kitaplıklar gibi uygulamalar için bir alt çizgi (_) karakteriyle başlayan tanımlayıcıların kullanımını saklı tutar. Bu adları kodunuzda kullanmayın. Adları bu kuralı izleyen kod öğelerinin davranışı garanti edilmez ve gelecek sürümlerde değiştirilebilir. Bu nedenlerden dolayı bu tür kod öğeleri Eşzamanlılık Çalışma Zamanı belgelerinden çıkarılır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-Eşzamanlılık ad alanı, için C++eşzamanlı bir programlama çerçevesi olan eşzamanlılık çalışma zamanı erişim sağlayan sınıfları ve işlevleri sağlar. Daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../concurrency-runtime.md).
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+Eşzamanlılık ad alanı, C++ için eşzamanlı bir programlama çerçevesi olan Eşzamanlılık Çalışma Zamanı erişim sağlayan sınıflar ve işlevler sağlar. Daha fazla bilgi için bkz. [Eşzamanlılık çalışma zamanı](../concurrency-runtime.md).
 
 [std ad alanı](std-namespace.md)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: weak_ptr sınıfı'
 title: weak_ptr Sınıfı
 ms.date: 07/29/2019
 f1_keywords:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - std::weak_ptr [C++], swap
 - std::weak_ptr [C++], use_count
 ms.assetid: 2db4afb2-c7be-46fc-9c20-34ec2f8cc7c2
-ms.openlocfilehash: 5a4989b9ac29e6a35e50479343d6bcf5a39ae1b0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a0434c57a70c40fc1fa1ae6b39837fd6112ba696
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831742"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187812"
 ---
 # <a name="weak_ptr-class"></a>weak_ptr Sınıfı
 
 Zayıf bağlantılı bir işaretçi sarar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class T> class weak_ptr;
@@ -358,7 +359,7 @@ void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir sonrasında `swap` , tarafından tarafından işaret edilen kaynak **`*this`** *WP*tarafından işaret edilir ve başlangıçta *WP* tarafından işaret edilen kaynak tarafından işaret edilir **`*this`** . İşlev, iki kaynağın başvuru sayısını değiştirmez ve hiçbir özel durum oluşturmaz. Şablon özelleşmenin etkisi, ' nin eşdeğeridir `a.swap(b)` .
+Bir sonrasında `swap` , tarafından tarafından işaret edilen kaynak **`*this`** *WP* tarafından işaret edilir ve başlangıçta *WP* tarafından işaret edilen kaynak tarafından işaret edilir **`*this`** . İşlev, iki kaynağın başvuru sayısını değiştirmez ve hiçbir özel durum oluşturmaz. Şablon özelleşmenin etkisi, ' nin eşdeğeridir `a.swap(b)` .
 
 ### <a name="example"></a>Örnek
 
@@ -469,7 +470,7 @@ weak_ptr(const shared_ptr<Other>& sp) noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *Farklı*\
-Paylaşılan/zayıf işaretçi tarafından denetlenen tür. _Diğeri \* _ ile uyumlu olmadığı takdirde bu oluşturucular aşırı yükleme çözümüne katılmaz `element_type*` .
+Paylaşılan/zayıf işaretçi tarafından denetlenen tür. _Diğeri \*_ ile uyumlu olmadığı takdirde bu oluşturucular aşırı yükleme çözümüne katılmaz `element_type*` .
 
 *WB*\
 Kopyalanacak zayıf işaretçi.

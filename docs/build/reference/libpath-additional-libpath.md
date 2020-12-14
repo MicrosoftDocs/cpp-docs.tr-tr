@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/LıBPATH (ek libpath)
 title: /LIBPATH (Ek Libpath)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - -LIBPATH linker option
 - library path linker option
 ms.assetid: 7240af0b-9a3d-4d53-8169-2a92cd6958ba
-ms.openlocfilehash: ab586c788825a854e7d3cb3760da6e4e5558de3a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5db7a0f80cb741a65bac5a4dbb7fd79e28b67459
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269221"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191036"
 ---
 # <a name="libpath-additional-libpath"></a>/LIBPATH (Ek Libpath)
 
@@ -27,22 +28,22 @@ ms.locfileid: "62269221"
 
 ## <a name="parameters"></a>Parametreler
 
-*dizini*<br/>
-Bir yol belirtir LIB ortam seçeneğinde belirtilen yolu arar önce bağlayıcı arar.
+*öğesini*<br/>
+Bağlayıcının LıB Environment seçeneğinde belirtilen yolu aramadan önce arayacağını belirten bir yol belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Libpath seçeneği, kullanıcının ortam kitaplık yolunu geçersiz kılmak için kullanın. Bağlayıcı bu seçeneği tarafından belirtilen yoldaki ilk arama ve LIB ortam değişkeninde belirtilen yolda arayın. Yalnızca bir dizine, girdiğiniz her/Libpath seçeneği belirtebilirsiniz. Birden fazla dizine belirtmek istiyorsanız, birden çok/Libpath seçeneği belirtmeniz gerekir. Bağlayıcı, ardından sırayla belirtilen dizinleri arar.
+Ortam kitaplığı yolunu geçersiz kılmak için/LIBPATH seçeneğini kullanın. Bağlayıcı öncelikle bu seçenekle belirtilen yolda arama yapılır ve sonra LıB ortam değişkeninde belirtilen yolda arama yapılır. Girdiğiniz her/LIBPATH seçeneği için yalnızca bir dizin belirtebilirsiniz. Birden fazla dizin belirtmek istiyorsanız, birden çok/LIBPATH seçeneği belirtmeniz gerekir. Bağlayıcı daha sonra belirtilen dizinlerde sırayla arama yapılır.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **genel** özellik sayfası.
+1. **Genel** Özellik sayfasına tıklayın.
 
-1. Değiştirme **ek kitaplık dizinleri** özelliği.
+1. **Ek kitaplık dizinleri** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -51,4 +52,4 @@ Bir yol belirtir LIB ortam seçeneğinde belirtilen yolu arar önce bağlayıcı
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ScheduleGroup sınıfı'
 title: ScheduleGroup Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - ScheduleGroup class
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a
-ms.openlocfilehash: 8686b5ef0906e3188a1e683d1190bbe6124cd19e
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: ca6678cd8d8c13c5d62b3d98b0a0bb1ab14e29c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79417133"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188917"
 ---
 # <a name="schedulegroup-class"></a>ScheduleGroup Sınıfı
 
-Bir zamanlama grubu için bir soyutlama temsil eder. Zamanlama grupları, farklı bir gruba geçmeden önce aynı grupta başka bir görevi yürüterek veya aynı grupta aynı grup içinde birden çok öğe yürütülerek, zamana bağlı birlikte, aynı grupta daha fazla görev yürütülerek bir ilgili iş kümesini düzenler. NUMA düğümü veya fiziksel yuva.
+Bir zamanlama grubu için bir soyutlama temsil eder. Zamanlama grupları, farklı bir gruba geçmeden önce aynı grupta başka bir görevi yürüterek veya aynı NUMA düğümündeki veya fiziksel yuvada aynı grup içinde birden çok öğe yürütülerek, zamana bağlı birlikte, aynı grupta daha fazla bir görev yürütülerek bir dizi ilgili işi düzenler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class ScheduleGroup;
@@ -32,15 +33,15 @@ class ScheduleGroup;
 
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[~ ScheduleGroup yok edici](#dtor)||
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Name|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[Kimlik](#id)|Grubun ait olduğu Zamanlayıcı dahilinde benzersiz olan zamanlama grubu için bir tanımlayıcı döndürür.|
+|[Numarasını](#id)|Grubun ait olduğu Zamanlayıcı dahilinde benzersiz olan zamanlama grubu için bir tanımlayıcı döndürür.|
 |[Başvuru](#reference)|Zamanlama grubu başvuru sayısını artırır.|
 |[Sürüm](#release)|Zamanlayıcı grubu başvuru sayısını azaltır.|
 |[ScheduleTask](#scheduletask)|Zamanlama grubu içinde bir hafif görevi zamanlar.|
@@ -55,7 +56,7 @@ class ScheduleGroup;
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="id"></a>Numarasını
+## <a name="id"></a><a name="id"></a> Numarasını
 
 Grubun ait olduğu Zamanlayıcı dahilinde benzersiz olan zamanlama grubu için bir tanımlayıcı döndürür.
 
@@ -67,9 +68,9 @@ virtual unsigned int Id() const = 0;
 
 Grubun ait olduğu Zamanlayıcı dahilinde benzersiz olan zamanlama grubu için bir tanımlayıcı.
 
-## <a name="operator_delete"></a>delete işleci
+## <a name="operator-delete"></a><a name="operator_delete"></a> delete işleci
 
-Bir `ScheduleGroup` nesnesi, tüm dış başvuruları serbest bırakıldığında çalışma zamanı tarafından dahili olarak yok edilir. Açıkça silinemez.
+Bir `ScheduleGroup` nesne, tüm dış başvuruları serbest bırakıldığında çalışma zamanı tarafından dahili olarak yok edilir. Açıkça silinemez.
 
 ```cpp
 void operator delete(
@@ -87,7 +88,7 @@ const char *,
 *_PObject*<br/>
 Silinecek nesneye yönelik bir işaretçi.
 
-## <a name="reference"></a>Başvurunun
+## <a name="reference"></a><a name="reference"></a> Başvurunun
 
 Zamanlama grubu başvuru sayısını artırır.
 
@@ -103,7 +104,7 @@ Yeni artan başvuru sayısı.
 
 Bu genellikle, oluşturma için Zamanlama grubunun ömrünü yönetmek için kullanılır. Bir zamanlama grubunun başvuru sayısı sıfır olduğunda, zamanlama grubu çalışma zamanı tarafından silinir. [CurrentScheduler:: CreateScheduleGroup](currentscheduler-class.md#createschedulegroup) yöntemi kullanılarak oluşturulan bir zamanlama grubu ya da [Scheduler:: CreateScheduleGroup](scheduler-class.md#createschedulegroup) yöntemi bir başvuru sayısı ile başlar.
 
-## <a name="release"></a>Yayın
+## <a name="release"></a><a name="release"></a> Yayın
 
 Zamanlayıcı grubu başvuru sayısını azaltır.
 
@@ -117,17 +118,17 @@ Yeni küçültülenen başvuru sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu genellikle, oluşturma için Zamanlama grubunun ömrünü yönetmek için kullanılır. Bir zamanlama grubunun başvuru sayısı sıfır olduğunda, zamanlama grubu çalışma zamanı tarafından silinir. `Release` yöntemini çağırdıktan sonra, oluşturma başvuru sayısını ve `Reference` yöntemi kullanılarak yerleştirilmiş ek başvuruları kaldırmak için belirli sayıda kez, zamanlama grubundan daha fazla yararlanamaz. Bunun yapılması tanımsız davranışa neden olur.
+Bu genellikle, oluşturma için Zamanlama grubunun ömrünü yönetmek için kullanılır. Bir zamanlama grubunun başvuru sayısı sıfır olduğunda, zamanlama grubu çalışma zamanı tarafından silinir. `Release`Yöntemi, oluşturma başvuru sayısını ve yöntemi kullanılarak yerleştirilmiş ek başvuruları kaldırmak için belirli sayıda kez çağırdıktan sonra `Reference` , zamanlama grubunu daha fazla kullanamayabilirsiniz. Bunun yapılması tanımsız davranışa neden olur.
 
 Bir zamanlama grubu, belirli bir zamanlayıcı örneğiyle ilişkilendirilir. İkinci olarak Scheduler 'ın yok edileceği için Zamanlayıcı grubuna yönelik tüm başvuruların serbest bırakılmadan önce serbest bırakıldığından emin olmanız gerekir. Aksi takdirde, tanımsız davranışa neden olur.
 
-## <a name="dtor"></a>~ ScheduleGroup
+## <a name="schedulegroup"></a><a name="dtor"></a> ~ ScheduleGroup
 
 ```cpp
 virtual ~ScheduleGroup();
 ```
 
-## <a name="scheduletask"></a>ScheduleTask
+## <a name="scheduletask"></a><a name="scheduletask"></a> ScheduleTask
 
 Zamanlama grubu içinde bir hafif görevi zamanlar.
 
@@ -147,11 +148,11 @@ Görevin gövdesine parametre olarak geçirilecek verilerin void işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`ScheduleTask` yöntemini çağırmak, görev yürütüldükten sonra uygun bir zamanda çalışma zamanı tarafından kaldırılan zamanlama grubuna bir başvuru sayımı koyar.
+Yöntemi çağırmak, `ScheduleTask` görev yürütüldükten sonra uygun bir zamanda çalışma zamanı tarafından kaldırılan zamanlama grubuna bir başvuru sayımı koyar.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Eşzamanlılık Ad Alanı](concurrency-namespace.md)<br/>
-[CurrentScheduler Sınıfı](currentscheduler-class.md)<br/>
-[Zamanlayıcı Sınıfı](scheduler-class.md)<br/>
+[Eşzamanlılık ad alanı](concurrency-namespace.md)<br/>
+[CurrentScheduler sınıfı](currentscheduler-class.md)<br/>
+[Zamanlayıcı sınıfı](scheduler-class.md)<br/>
 [Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)

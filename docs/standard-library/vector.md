@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; vektör&gt;'
 title: '&lt;vektör&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - vector header
 ms.assetid: c1431ad8-c0b6-4dbb-89c4-5f651e432d7f
-ms.openlocfilehash: 7cecff1e5e0014c4f1a4294a5c6ba25c5d38da67
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1f787afb00a3f94ba6b5148fe064badbc5d373ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840017"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187864"
 ---
 # <a name="ltvectorgt"></a>&lt;vektör&gt;
 
@@ -24,7 +25,7 @@ Kapsayıcı sınıfı şablonu vektörünü ve çeşitli destekleyici şablonlar
 
 Sınıfı hakkında daha fazla bilgi için `vector` bkz. [Vector sınıfı](../standard-library/vector-class.md). Özelleştirme hakkında daha fazla bilgi için `vector<bool>` bkz. [Vector \<bool> sınıfı](../standard-library/vector-bool-class.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 namespace std {

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: SchedulerPolicy Class'
 title: SchedulerPolicy Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,18 +12,18 @@ f1_keywords:
 helpviewer_keywords:
 - SchedulerPolicy class
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
-ms.openlocfilehash: b7b99dae2ffb58123c05a65872e4c71e149ac12c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2bb4c8961f46f077c203d1a49fb352171ad3f318
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219579"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188709"
 ---
 # <a name="schedulerpolicy-class"></a>SchedulerPolicy Sınıfı
 
 Sınıfı, bir `SchedulerPolicy` Zamanlayıcı örneğinin davranışını denetleyen her ilke öğesi için bir olan anahtar/değer çiftleri kümesi içerir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class SchedulerPolicy;
@@ -65,7 +66,7 @@ Sınıfı kullanılarak denetlenebilecek ilkeler hakkında daha fazla bilgi içi
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="getpolicyvalue"></a><a name="getpolicyvalue"></a>GetPolicyValue
+## <a name="getpolicyvalue"></a><a name="getpolicyvalue"></a> GetPolicyValue
 
 Parametre olarak sağlanan ilke anahtarının değerini alır `key` .
 
@@ -86,7 +87,7 @@ Parametresi tarafından belirtilen anahtar `key` destekleniyorsa, anahtar için 
 
 Yöntem geçersiz bir ilke anahtarı için [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) oluşturacak.
 
-## <a name="operator"></a><a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 Zamanlayıcı ilkesini başka bir Zamanlayıcı ilkesinden atar.
 
@@ -107,7 +108,7 @@ Zamanlayıcı ilkesine bir başvuru.
 
 Genellikle, yeni bir Zamanlayıcı İlkesi tanımlamanın en kolay yolu, mevcut bir ilkeyi kopyalamak ve `SetPolicyValue` veya yöntemlerini kullanarak değiştirmektir `SetConcurrencyLimits` .
 
-## <a name="schedulerpolicy"></a><a name="ctor"></a>SchedulerPolicy
+## <a name="schedulerpolicy"></a><a name="ctor"></a> SchedulerPolicy
 
 Yeni bir Zamanlayıcı İlkesi oluşturur ve Eşzamanlılık Çalışma Zamanı zamanlayıcılar ve Kaynak Yöneticisi tarafından desteklenen [ilke anahtarlarının](concurrency-namespace-enums.md) değerleriyle doldurur.
 
@@ -138,7 +139,7 @@ Kopyalanacak kaynak ilkesi.
 
 Üçüncü Oluşturucu bir kopya oluşturucudur. Genellikle, yeni bir Zamanlayıcı İlkesi tanımlamanın en kolay yolu, mevcut bir ilkeyi kopyalamak ve `SetPolicyValue` veya yöntemlerini kullanarak değiştirmektir `SetConcurrencyLimits` .
 
-## <a name="schedulerpolicy"></a><a name="dtor"></a>~ SchedulerPolicy
+## <a name="schedulerpolicy"></a><a name="dtor"></a> ~ SchedulerPolicy
 
 Zamanlayıcı ilkesini yok eder.
 
@@ -146,7 +147,7 @@ Zamanlayıcı ilkesini yok eder.
 ~SchedulerPolicy();
 ```
 
-## <a name="setconcurrencylimits"></a><a name="setconcurrencylimits"></a>SetConcurrencyLimits
+## <a name="setconcurrencylimits"></a><a name="setconcurrencylimits"></a> SetConcurrencyLimits
 
 Aynı anda `MinConcurrency` `MaxConcurrency` nesne üzerindeki ve ilkelerini ayarlar `SchedulerPolicy` .
 
@@ -166,11 +167,11 @@ void SetConcurrencyLimits(
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlke için belirtilen değer [invalid_scheduler_policy_thread_specification](invalid-scheduler-policy-thread-specification-class.md) `MinConcurrency` ilke için belirtilenden daha büyükse Yöntem invalid_scheduler_policy_thread_specification oluşturur `MaxConcurrency` .
+İlke için belirtilen değer [](invalid-scheduler-policy-thread-specification-class.md) `MinConcurrency` ilke için belirtilenden daha büyükse Yöntem invalid_scheduler_policy_thread_specification oluşturur `MaxConcurrency` .
 
 Yöntemi, diğer geçersiz değerler için [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) de oluşturabilir.
 
-## <a name="setpolicyvalue"></a><a name="setpolicyvalue"></a>SetPolicyValue
+## <a name="setpolicyvalue"></a><a name="setpolicyvalue"></a> SetPolicyValue
 
 Parametre olarak sağlanan ilke anahtarının değerini ayarlar `key` ve eski değeri döndürür.
 
@@ -185,7 +186,7 @@ unsigned int SetPolicyValue(
 *anahtar*<br/>
 İçin bir değer ayarlanacak ilke anahtarı.
 
-*deeri*<br/>
+*değer*<br/>
 İlke anahtarının ayarlanacağı değer.
 
 ### <a name="return-value"></a>Dönüş Değeri

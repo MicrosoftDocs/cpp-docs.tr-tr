@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: structured_task_group sınıfı'
 title: structured_task_group Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - structured_task_group class
 ms.assetid: 742afa8c-c7b6-482c-b0ba-04c809927b22
-ms.openlocfilehash: 44fd2a42f4c98a569e985449f0c55102a9cbc3a6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c553f0d0b9b5abeb6e6cbdb12d1d9da5d048a6d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231682"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188462"
 ---
 # <a name="structured_task_group-class"></a>structured_task_group Sınıfı
 
 `structured_task_group`Sınıfı, paralel çalışmanın yüksek yapılandırılmış bir koleksiyonunu temsil eder. Tek tek paralel görevleri bir `structured_task_group` using nesnelerine sıraya alabilir `task_handle` ve bunların tamamlanmasını bekleyebilir ya da yürütmeyi bitirmeden önce görev grubunu iptal edebilirsiniz. Bu, yürütmeye başlamış olmayan tüm görevleri iptal eder.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class structured_task_group;
@@ -73,7 +74,7 @@ Daha fazla bilgi için bkz. [Görev Paralelliği](../../../parallel/concrt/task-
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="cancel"></a><a name="cancel"></a>İptal
+## <a name="cancel"></a><a name="cancel"></a> İptal
 
 Bu görev grubunda kök olarak çalışan çalışmanın alt ağacını iptal etmeye yönelik en iyi çabayı sağlar. Görev grubunda zamanlanan her görev, mümkünse geçişli olarak iptal edilir.
 
@@ -85,7 +86,7 @@ void cancel();
 
 Daha fazla bilgi için bkz. [iptal](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).
 
-## <a name="is_canceling"></a><a name="is_canceling"></a>is_canceling
+## <a name="is_canceling"></a><a name="is_canceling"></a> is_canceling
 
 Görev grubunun şu anda bir iptal etme ortatına bağlı olup olmadığına bakılmaksızın çağrıyı bilgilendirir. Bu, `cancel` yöntemin nesne üzerinde çağrıldığı `structured_task_group` (Bu tür kesinlikle bu yöntemi döndürecek şekilde niteleyen) anlamına gelmez **`true`** . `structured_task_group`Nesnenin satır içi yürütülmesi ve iş ağacında daha fazla görev grubunun iptal edilmesi durumunda olabilir. Bu şekilde, çalışma zamanının, İptalin bu nesne üzerinden akacağı zamandan önce belirleyebildiği durumlar gibi durumlarda da `structured_task_group` **`true`** döndürülür.
 
@@ -101,7 +102,7 @@ bool is_canceling();
 
 Daha fazla bilgi için bkz. [iptal](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).
 
-## <a name="run"></a><a name="run"></a>çalışmaz
+## <a name="run"></a><a name="run"></a> çalışmaz
 
 Nesnesinde bir görevi zamanlar `structured_task_group` . Çağıran, `task_handle` parametre içinde geçirilen nesnenin ömrünü yönetir `_Task_handle` . Parametresini alan sürüm, `_Placement` görevin bu parametre tarafından belirtilen konumda yürütülmeye kaydırılmasına neden olur.
 
@@ -133,9 +134,9 @@ Parametresi tarafından temsil edilen görevin yürütmesi gereken konuma bir ba
 
 `structured_task_group`Serbest yapılar, yığın bir özel durumdan geriye doğru izleme sonucu olarak varsa, ya da yöntemine bir çağrının yapıldığını garanti etmeniz gerekmez `wait` `run_and_wait` . Bu durumda, yıkıcı uygun şekilde iptal edilir ve parametresi tarafından temsil edilen görevin tamamlanmasını bekler `_Task_handle` .
 
-Parametresi tarafından [invalid_multiple_scheduling](invalid-multiple-scheduling-class.md) verilen görev tanıtıcısı, `_Task_handle` yöntemi aracılığıyla bir görev grubu nesnesi üzerinde zamanlanmışsa `run` ve `wait` `run_and_wait` Bu görev grubundaki veya yöntemine hiçbir eklenmemiş çağrı yoksa invalid_multiple_scheduling bir özel durum oluşturur.
+Parametresi tarafından [](invalid-multiple-scheduling-class.md) verilen görev tanıtıcısı, `_Task_handle` yöntemi aracılığıyla bir görev grubu nesnesi üzerinde zamanlanmışsa `run` ve `wait` `run_and_wait` Bu görev grubundaki veya yöntemine hiçbir eklenmemiş çağrı yoksa invalid_multiple_scheduling bir özel durum oluşturur.
 
-## <a name="run_and_wait"></a><a name="run_and_wait"></a>run_and_wait
+## <a name="run_and_wait"></a><a name="run_and_wait"></a> run_and_wait
 
 Bir görevi, `structured_task_group` tam iptal desteği için nesnenin yardımı ile çağırma bağlamında, satır içi olarak çalışacak şekilde zamanlar. Bir `task_handle` nesne öğesine parametresi olarak geçirilirse `run_and_wait` , çağıran nesnenin ömrünü yönetmekten sorumludur `task_handle` . İşlev daha sonra nesne üzerindeki tüm işler tamamlanana ya `structured_task_group` da iptal edilene kadar bekler.
 
@@ -172,7 +173,7 @@ Bu işlev çağrıldıktan sonra, `structured_task_group` nesnesi son durumda de
 
 Yürütmenin olağanüstü olmayan yolunda, bu yöntemi veya yürütme `wait` yıkıcıdan önce yöntemini çağırmak için bir mantarih vardır `structured_task_group` .
 
-## <a name="structured_task_group"></a><a name="ctor"></a>structured_task_group
+## <a name="structured_task_group"></a><a name="ctor"></a> structured_task_group
 
 Yeni bir `structured_task_group` nesne oluşturur.
 
@@ -191,7 +192,7 @@ Bu yapılandırılmış görev grubuyla ilişkilendirilecek iptal belirteci. Yap
 
 İptal belirteci alan Oluşturucu, `structured_task_group` belirteç ile ilişkili kaynak iptal edildiğinde iptal edilecek bir oluşturur. Açık bir iptal belirteci sağlamak, bu yapılandırılmış görev grubunu, farklı bir belirteç olan veya belirteci olmayan bir üst gruptan örtük bir iptal 'e katılmasını de yalıtır.
 
-## <a name="structured_task_group"></a><a name="dtor"></a>~ structured_task_group
+## <a name="structured_task_group"></a><a name="dtor"></a> ~ structured_task_group
 
 Bir nesneyi yok eder `structured_task_group` . `wait` `run_and_wait` Bir özel durum nedeniyle yığın geri sarma sonucu olarak yürütülemediği sürece, yıkıcı yürütmeden önce nesne üzerinde ya da yöntemini çağırmanız beklenmektedir.
 
@@ -203,7 +204,7 @@ Bir nesneyi yok eder `structured_task_group` . `wait` `run_and_wait` Bir özel d
 
 Yıkıcı normal yürütmenin sonucu olarak çalışırsa (örneğin, bir özel durum nedeniyle yığın geriye doğru değil) ve `wait` ne de `run_and_wait` Yöntem çağrılmadıysa, yıkıcı [missing_wait](missing-wait-class.md) bir özel durum oluşturabilir.
 
-## <a name="wait"></a><a name="wait"></a>bekleneceğini
+## <a name="wait"></a><a name="wait"></a> bekleneceğini
 
 Üzerindeki tüm işler tamamlanana veya iptal edilene kadar bekler `structured_task_group` .
 

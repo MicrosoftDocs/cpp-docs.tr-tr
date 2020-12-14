@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/LINENUMBERS
 title: /LINENUMBERS
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -LINENUMBERS dumpbin option
 - /LINENUMBERS dumpbin option
 ms.assetid: 1681d582-2c2f-484e-9920-109959549055
-ms.openlocfilehash: ea4c3ac2ad582e0fe364f2da26511a66e9dc376c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9df3d88476a82466f86ec23147c9f8f35f9b3f1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269247"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191023"
 ---
 # <a name="linenumbers"></a>/LINENUMBERS
 
@@ -24,9 +25,9 @@ ms.locfileid: "62269247"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek COFF satır numaraları görüntüler. Satır numaraları mevcut bir nesne dosyasında Program veritabanı (/Zi) C7 uyumlu derlenmişse (/ Z7), veya satır numaraları yalnızca (/ ZD). İle hata ayıklama bilgisi Oluştur bağlanmışsa COFF satır numaralarını içeren bir yürütülebilir dosya veya DLL (/ DEBUG).
+Bu seçenek, COFF hat numaralarını görüntüler. Program veritabanı (/Zi), C7 uyumlu (/Z7) veya yalnızca satır numaraları (/ZD) ile derlenmişse bir nesne dosyasında satır numaraları bulunur. Yürütülebilir dosya veya DLL, hata ayıklama bilgisi oluştur (/DEBUG) ile bağlanmışsa COFF hat numaralarını içerir.
 
-Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
+[/GL](gl-whole-program-optimization.md) derleyici seçeneği ile oluşturulan dosyalarda yalnızca [/Headers](headers.md) dumpbin seçeneği kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Eşzamanlılık Çalışma Zamanı genel bakış'
 title: Eşzamanlılık Çalışma Zamanına Genel Bakış
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-ms.openlocfilehash: 11035f9e202d964ae91378560b9244cde6d1828b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b6ff531b1961b32056a7232b62eca05d7a8793b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194621"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189164"
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanına Genel Bakış
 
 Bu belgede Eşzamanlılık Çalışma Zamanı bir genel bakış sunulmaktadır. Eşzamanlılık Çalışma Zamanı avantajları, ne zaman kullanılacağı ve bileşenlerinin birbirleriyle ve işletim sistemi ile uygulamalarla nasıl etkileşime gireceğini açıklar.
 
-## <a name="sections"></a><a name="top"></a>Başlıklı
+## <a name="sections"></a><a name="top"></a> Başlıklı
 
 Bu belgede aşağıdaki bölümler yer alır:
 
@@ -32,7 +33,7 @@ Bu belgede aşağıdaki bölümler yer alır:
 
 - [Gereksinimler](#requirements)
 
-## <a name="concurrency-runtime-implementation-history"></a><a name="dlls"></a>Eşzamanlılık Çalışma Zamanı uygulama geçmişi
+## <a name="concurrency-runtime-implementation-history"></a><a name="dlls"></a> Eşzamanlılık Çalışma Zamanı uygulama geçmişi
 
 Visual Studio 2010 ' de 2013 ' de, Eşzamanlılık Çalışma Zamanı msvcr100.dll msvcr120.dll üzerinden eklenmiştir.  Visual Studio 2015 ' de UıCRT yeniden düzenlemesi gerçekleştiği zaman, bu DLL üç parçaya yeniden düzenlenmiş.
 
@@ -44,7 +45,7 @@ Visual Studio 2010 ' de 2013 ' de, Eşzamanlılık Çalışma Zamanı msvcr100.d
 
 Visual Studio 2015 ve sonraki sürümlerde, Eşzamanlılık Çalışma Zamanı Görev Zamanlayıcı artık görev sınıfı için Zamanlayıcı ve ppltasks. h içindeki ilgili türler değildir. Bu türler artık Windows iş parçacığı kullanımını daha iyi performans ve Windows eşitleme temelleri ile birlikte çalışabilirlik için kullanır.
 
-## <a name="why-a-runtime-for-concurrency-is-important"></a><a name="runtime"></a>Eşzamanlılık için çalışma zamanının neden önemli olduğunu
+## <a name="why-a-runtime-for-concurrency-is-important"></a><a name="runtime"></a> Eşzamanlılık için çalışma zamanının neden önemli olduğunu
 
 Eşzamanlılık için bir çalışma zamanı, aynı anda çalışan uygulamalar ve uygulama bileşenlerine ilişkin bir tutarlılık ve öngörülebilirlik sağlar. Eşzamanlılık Çalışma Zamanı avantajlarına yönelik iki örnek *birlikte çalışırken görev zamanlama* ve *işbirliği engelleme*.
 
@@ -54,7 +55,7 @@ Eşzamanlılık Çalışma Zamanı Ayrıca, kaynaklara erişimi eşitlemek için
 
 [[Üst](#top)]
 
-## <a name="architecture"></a><a name="architecture"></a>Mimarisini
+## <a name="architecture"></a><a name="architecture"></a> Mimarisini
 
 Eşzamanlılık Çalışma Zamanı dört bileşene bölünür: paralel Desenler kitaplığı (PPL), zaman uyumsuz aracılar Kitaplığı, Görev Zamanlayıcı ve Kaynak Yöneticisi. Bu bileşenler, işletim sistemi ve uygulamalar arasında bulunur. Aşağıdaki çizim Eşzamanlılık Çalışma Zamanı bileşenlerinin işletim sistemi ve uygulamalar arasında nasıl etkileşime gireceğini göstermektedir:
 
@@ -103,9 +104,9 @@ Kaynak Yöneticisi, bilgi işlem kaynakları üzerinde bir soyutlama görevi gö
 
 [[Üst](#top)]
 
-## <a name="c-lambda-expressions"></a><a name="lambda"></a>C++ lambda Ifadeleri
+## <a name="c-lambda-expressions"></a><a name="lambda"></a> C++ lambda Ifadeleri
 
-Eşzamanlılık Çalışma Zamanı tarafından tanımlanan türlerin ve algoritmaların birçoğu C++ şablonları olarak uygulanır. Bu türlerden ve algoritmalardan bazıları, iş gerçekleştiren bir yordamın parametre olarak ele alır. Bu parametre bir Lambda işlevi, bir işlev nesnesi veya bir işlev işaretçisi olabilir. Bu varlıklar, *çalışma işlevleri* veya *çalışma yordamları*olarak da adlandırılır.
+Eşzamanlılık Çalışma Zamanı tarafından tanımlanan türlerin ve algoritmaların birçoğu C++ şablonları olarak uygulanır. Bu türlerden ve algoritmalardan bazıları, iş gerçekleştiren bir yordamın parametre olarak ele alır. Bu parametre bir Lambda işlevi, bir işlev nesnesi veya bir işlev işaretçisi olabilir. Bu varlıklar, *çalışma işlevleri* veya *çalışma yordamları* olarak da adlandırılır.
 
 Lambda ifadeleri, paralel işleme için çalışma işlevlerini tanımlamaya yönelik bir kısa yolu sağladığından önemli bir yeni Visual C++ dil özelliğidir. İşlev nesneleri ve işlev işaretçileri, Eşzamanlılık Çalışma Zamanı mevcut kodunuzla birlikte kullanmanıza olanak sağlar. Ancak, sağladıkları güvenlik ve üretkenlik avantajları nedeniyle yeni kod yazdığınızda lambda ifadeleri kullanmanızı öneririz.
 
@@ -127,7 +128,7 @@ C++ ' deki lambda işlevleri hakkında daha fazla bilgi için bkz. [lambda ifade
 
 [[Üst](#top)]
 
-## <a name="requirements"></a><a name="requirements"></a>Gereklilik
+## <a name="requirements"></a><a name="requirements"></a> Gereklilik
 
 Aşağıdaki tabloda Eşzamanlılık Çalışma Zamanı her bir bileşeniyle ilişkili üst bilgi dosyaları gösterilmektedir:
 
@@ -138,7 +139,7 @@ Aşağıdaki tabloda Eşzamanlılık Çalışma Zamanı her bir bileşeniyle ili
 |Görev Zamanlayıcısı|concrt. h|
 |Resource Manager|concrtrm. h|
 
-Eşzamanlılık Çalışma Zamanı [eşzamanlılık](../../parallel/concrt/reference/concurrency-namespace.md) ad alanında bildirilmiştir. (Bu ad alanı için bir diğer ad olan [eşzamanlılık](../../parallel/concrt/reference/concurrency-namespace.md)de kullanabilirsiniz.) `concurrency::details`Ad alanı eşzamanlılık çalışma zamanı çerçevesini destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+Eşzamanlılık Çalışma Zamanı [eşzamanlılık](../../parallel/concrt/reference/concurrency-namespace.md) ad alanında bildirilmiştir. (Bu ad alanı için bir diğer ad olan [eşzamanlılık](../../parallel/concrt/reference/concurrency-namespace.md)de kullanabilirsiniz.) `concurrency::details` Ad alanı eşzamanlılık çalışma zamanı çerçevesini destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
 Eşzamanlılık Çalışma Zamanı, C çalışma zamanı kitaplığı 'nın (CRT) bir parçası olarak sağlanır. CRT kullanan bir uygulama oluşturma hakkında daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
 

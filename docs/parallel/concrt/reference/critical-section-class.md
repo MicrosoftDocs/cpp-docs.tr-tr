@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: critical_section sınıfı'
 title: critical_section Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,18 +15,18 @@ f1_keywords:
 helpviewer_keywords:
 - critical_section class
 ms.assetid: fa3c89d6-be5d-4d1b-bddb-8232814e6cf6
-ms.openlocfilehash: f7df639a879bad7af1b4de401460ff298e466c78
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d781ce467123197521bf92dd4d932a665e55c6a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215822"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188943"
 ---
 # <a name="critical_section-class"></a>critical_section Sınıfı
 
 Eşzamanlılık Çalışma Zamanı açıkça farkında olan, yer olmayan bir mutex.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class critical_section;
@@ -76,7 +77,7 @@ Daha fazla bilgi için bkz. [eşitleme veri yapıları](../../../parallel/concrt
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="critical_section"></a><a name="ctor"></a>critical_section
+## <a name="critical_section"></a><a name="ctor"></a> critical_section
 
 Yeni bir kritik bölüm oluşturur.
 
@@ -84,7 +85,7 @@ Yeni bir kritik bölüm oluşturur.
 critical_section();
 ```
 
-## <a name="critical_section"></a><a name="dtor"></a>~ critical_section
+## <a name="critical_section"></a><a name="dtor"></a> ~ critical_section
 
 Kritik bir bölümü yok eder.
 
@@ -96,7 +97,7 @@ Kritik bir bölümü yok eder.
 
 Yok edicinin çalıştırıldığı zaman kilidin artık tutulmuyor olması beklenmektedir. Kritik bölümün kilit ile sınıfların 'a izin verilmesi, yine de tanımsız davranışa neden olur.
 
-## <a name="lock"></a><a name="lock"></a>ine
+## <a name="lock"></a><a name="lock"></a> ine
 
 Bu kritik bölümü elde edin.
 
@@ -106,11 +107,11 @@ void lock();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir [scoped_lock](#critical_section__scoped_lock_class) `critical_section` nesneyi özel durum güvenli bir şekilde almak ve serbest bırakmak için scoped_lock yapısını kullanmak genellikle daha güvenlidir.
+Bir [](#critical_section__scoped_lock_class) `critical_section` nesneyi özel durum güvenli bir şekilde almak ve serbest bırakmak için scoped_lock yapısını kullanmak genellikle daha güvenlidir.
 
 Kilit çağıran bağlam tarafından zaten tutuluyorsa, bir [improper_lock](improper-lock-class.md) özel durumu oluşturulur.
 
-## <a name="native_handle"></a><a name="native_handle"></a>native_handle
+## <a name="native_handle"></a><a name="native_handle"></a> native_handle
 
 Varsa, platforma özgü yerel bir tanıtıcı döndürür.
 
@@ -126,7 +127,7 @@ Kritik bölüme bir başvuru.
 
 Bir `critical_section` nesne, Windows işletim sistemi için platforma özgü yerel tanıtıcı ile ilişkili değildir. Yöntemi yalnızca nesnenin kendisi için bir başvuru döndürür.
 
-## <a name="critical_sectionscoped_lock-class"></a><a name="critical_section__scoped_lock_class"></a>critical_section:: scoped_lock sınıfı
+## <a name="critical_sectionscoped_lock-class"></a><a name="critical_section__scoped_lock_class"></a> critical_section:: scoped_lock sınıfı
 
 Bir nesne için özel durum güvenli Çıı sarmalayıcısı `critical_section` .
 
@@ -134,7 +135,7 @@ Bir nesne için özel durum güvenli Çıı sarmalayıcısı `critical_section` 
 class scoped_lock;
 ```
 
-## <a name="scoped_lockscoped_lock"></a><a name="critical_section__scoped_lock_ctor"></a>scoped_lock:: scoped_lock
+## <a name="scoped_lockscoped_lock"></a><a name="critical_section__scoped_lock_ctor"></a> scoped_lock:: scoped_lock
 
 Bir `scoped_lock` nesnesi oluşturur ve `critical_section` parametre içinde geçirilen nesneyi alır `_Critical_section` . Kritik bölüm başka bir iş parçacığı tarafından tutuluyorsa bu çağrı engellenir.
 
@@ -147,7 +148,7 @@ explicit _CRTIMP scoped_lock(critical_section& _Critical_section);
 *_Critical_section*<br/>
 Kilitlenecek kritik bölüm.
 
-## <a name="scoped_lockscoped_lock"></a><a name="critical_section__scoped_lock_dtor"></a>scoped_lock:: ~ scoped_lock
+## <a name="scoped_lockscoped_lock"></a><a name="critical_section__scoped_lock_dtor"></a> scoped_lock:: ~ scoped_lock
 
 Bir nesneyi yok eder `scoped_lock` ve oluşturucusunda sağlanan kritik bölümü yayınlar.
 
@@ -155,7 +156,7 @@ Bir nesneyi yok eder `scoped_lock` ve oluşturucusunda sağlanan kritik bölüm�
 ~scoped_lock();
 ```
 
-## <a name="try_lock"></a><a name="try_lock"></a>try_lock
+## <a name="try_lock"></a><a name="try_lock"></a> try_lock
 
 Kilidi engellenmeden almaya çalışır.
 
@@ -167,7 +168,7 @@ bool try_lock();
 
 Kilit alınırsa değer **`true`** ; Aksi takdirde değer **`false`** .
 
-## <a name="try_lock_for"></a><a name="try_lock_for"></a>try_lock_for
+## <a name="try_lock_for"></a><a name="try_lock_for"></a> try_lock_for
 
 Kilidi, belirli bir süre boyunca engellenmeksizin almaya çalışır.
 
@@ -184,7 +185,7 @@ Zaman aşımından önce beklenecek milisaniye sayısı.
 
 Kilit alınırsa değer **`true`** ; Aksi takdirde değer **`false`** .
 
-## <a name="unlock"></a><a name="unlock"></a>kaldırın
+## <a name="unlock"></a><a name="unlock"></a> kaldırın
 
 Kritik bölümün kilidini açar.
 

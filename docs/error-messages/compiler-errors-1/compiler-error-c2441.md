@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2441'
 title: Derleyici hatası C2441
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2441
 ms.assetid: ffbd6573-777a-48dd-892f-5cf4a758dcab
-ms.openlocfilehash: aa55392e9f58caa4292cf5f96ef97f65a53bf913
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d7a6073be821fcd2717caae258c5b3f397fb3f87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87207959"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189736"
 ---
 # <a name="compiler-error-c2441"></a>Derleyici hatası C2441
 
@@ -21,9 +22,9 @@ ms.locfileid: "87207959"
 
 **/Clr: Pure** ve **/clr: Safe** derleyici seçenekleri Visual Studio 2015 ' de kullanımdan kaldırılmıştır ve Visual Studio 2017 ' de desteklenmez.
 
-Varsayılan olarak, değişkenler **/clr: Pure**altında uygulama etki alanına göre yapılır. `__declspec(process)` **/Clr: Pure** altında işaretlenen bir değişken, bir uygulama etki alanında değiştirildiyse ve başka bir uygulamada okunduğu hatalara açıktır.
+Varsayılan olarak, değişkenler **/clr: Pure** altında uygulama etki alanına göre yapılır. `__declspec(process)` **/Clr: Pure** altında işaretlenen bir değişken, bir uygulama etki alanında değiştirildiyse ve başka bir uygulamada okunduğu hatalara açıktır.
 
-Bu nedenle, derleyici işlem başına, **`const`** **/clr: Pure**altında olduğundan, yalnızca tüm uygulama etki alanlarında Salt okunabilir hale getirir.
+Bu nedenle, derleyici işlem başına, **`const`** **/clr: Pure** altında olduğundan, yalnızca tüm uygulama etki alanlarında Salt okunabilir hale getirir.
 
 Daha fazla bilgi için bkz. [Process](../../cpp/process.md) and [/clr (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
 

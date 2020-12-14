@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: Zamanlayıcı Ilkeleri'
 title: Zamanlayıcı İlkeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - scheduler policies
 ms.assetid: 58fb68bd-4a57-40a8-807b-6edb6f083cd9
-ms.openlocfilehash: a962c00d23c41d97087e705d395b601afc7b1910
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 42b5fa951c320fcc3bab8fe5abe3bb4988e6c368
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042049"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188020"
 ---
 # <a name="scheduler-policies"></a>Zamanlayıcı İlkeleri
 
@@ -26,7 +27,7 @@ Bir zamanlayıcı örneği oluşturmak için [concurrency:: CurrentScheduler:: C
 
 [Eşzamanlılık::P olicyElementKey](reference/concurrency-namespace-enums.md#policyelementkey) numaralandırması, Görev Zamanlayıcı ilişkili ilke anahtarlarını tanımlar. Aşağıdaki tabloda, ilke anahtarları ve çalışma zamanının her biri için kullandığı varsayılan değer açıklanmaktadır.
 
-| İlke anahtarı | Description | Varsayılan değer |
+| İlke anahtarı | Açıklama | Varsayılan değer |
 |--|--|--|
 | `SchedulerKind` | Görevleri zamanlamak için kullanılacak iş parçacıklarının türünü belirten bir [concurrency:: SchedulerType](reference/concurrency-namespace-enums.md#schedulertype) değeri. | `ThreadScheduler` (normal iş parçacıklarını kullanın). Bu anahtar için geçerli tek değer budur. |
 | `MaxConcurrency` | **`unsigned int`** Scheduler 'ın kullandığı en fazla eşzamanlılık kaynağı sayısını belirten bir değer. | [Eşzamanlılık:: MaxExecutionResources](reference/concurrency-namespace-constants1.md#maxexecutionresources) |

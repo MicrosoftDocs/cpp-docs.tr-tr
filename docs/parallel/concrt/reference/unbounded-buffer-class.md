@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: unbounded_buffer sınıfı'
 title: unbounded_buffer Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -19,18 +20,18 @@ f1_keywords:
 - AGENTS/concurrency::unbounded_buffer::send_message
 - AGENTS/concurrency::unbounded_buffer::supports_anonymous_source
 ms.assetid: 6b1a939a-1819-4385-b1d8-708f83d4ec47
-ms.openlocfilehash: e02fa1ffbf4c3e2c7d17dfe2d6ae66758945d9de
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c9cd31209831dc915ae7a4aacaad5cddc0203176
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219527"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188111"
 ---
 # <a name="unbounded_buffer-class"></a>unbounded_buffer Sınıfı
 
 `unbounded_buffer`İleti bloğu, `propagator_block` sınırsız sayıda iletiyi depolayan çok kaynaklı ve çok kaynaklı, sıralı bir kaynaktır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<
@@ -96,7 +97,7 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../asynchronous-mess
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept_message"></a><a name="accept_message"></a>accept_message
+## <a name="accept_message"></a><a name="accept_message"></a> accept_message
 
 Bu mesajlaşma bloğu tarafından sunulan bir iletiyi kabul eder `unbounded_buffer` ve sahipliği çağırana aktarmakta.
 
@@ -115,7 +116,7 @@ virtual message<_Type> * accept_message(
 
 `message`Çağıranın artık sahipliği olan nesneye yönelik bir işaretçi.
 
-## <a name="consume_message"></a><a name="consume_message"></a>consume_message
+## <a name="consume_message"></a><a name="consume_message"></a> consume_message
 
 İleti bloğu tarafından daha önce sunulan `unbounded_buffer` ve hedef tarafından ayrılmış bir ileti tüketir ve sahipliği çağırana aktarmıştır.
 
@@ -138,7 +139,7 @@ virtual message<_Type> * consume_message(
 
 `accept`,, Ancak, ' a benzer ancak her zaman öğesine yapılan bir çağrıdır `reserve` .
 
-## <a name="dequeue"></a><a name="dequeue"></a>sıradan çıkarma
+## <a name="dequeue"></a><a name="dequeue"></a> sıradan çıkarma
 
 `unbounded_buffer`İleti bloğu bloğundan bir öğeyi kaldırır.
 
@@ -150,7 +151,7 @@ _Type dequeue();
 
 Öğesinden kaldırılan iletinin yükü `unbounded_buffer` .
 
-## <a name="enqueue"></a><a name="enqueue"></a>alma
+## <a name="enqueue"></a><a name="enqueue"></a> alma
 
 Mesajlaşma bloğuna bir öğe ekler `unbounded_buffer` .
 
@@ -169,7 +170,7 @@ Eklenecek öğe.
 
 **`true`** öğe kabul edildiyse, **`false`** tersi durumda.
 
-## <a name="link_target_notification"></a><a name="link_target_notification"></a>link_target_notification
+## <a name="link_target_notification"></a><a name="link_target_notification"></a> link_target_notification
 
 Bu mesajlaşma bloğuna yeni bir hedef bağlandığını bildiren bir geri çağırma `unbounded_buffer` .
 
@@ -184,7 +185,7 @@ virtual void link_target_notification(
 *_PTarget*<br/>
 Yeni bağlantılı hedefe yönelik bir işaretçi.
 
-## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a> propagate_message
 
 Zaman uyumsuz bir iletiyi bir `ISource` bloğundan bu `unbounded_buffer` mesajlaşma bloğuna geçirir. `propagate`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
@@ -207,7 +208,7 @@ Nesneye yönelik bir işaretçi `message` .
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md#message_status) göstergesi.
 
-## <a name="propagate_output_messages"></a><a name="propagate_output_messages"></a>propagate_output_messages
+## <a name="propagate_output_messages"></a><a name="propagate_output_messages"></a> propagate_output_messages
 
 `message` `_PMessage` Bu `unbounded_buffer` mesajlaşma bloğuna girer ve bunu tüm bağlantılı hedeflere sunmaya çalışır.
 
@@ -219,7 +220,7 @@ virtual void propagate_output_messages();
 
 Daha önce başka bir ileti zaten varsa `unbounded_buffer` , daha önceki tüm iletiler kabul edilene veya tüketilene kadar bağlantılı hedeflere yayma gerçekleşmeyecektir. Başarıyla bağlanılan ilk bağlantılı hedef `accept` veya `consume` ileti sahiplik alır ve başka hiçbir hedef daha sonra iletiyi alamaz.
 
-## <a name="process_input_messages"></a><a name="process_input_messages"></a>process_input_messages
+## <a name="process_input_messages"></a><a name="process_input_messages"></a> process_input_messages
 
 `message` `_PMessage` Bu `unbounded_buffer` mesajlaşma bloğuna girer ve bunu tüm bağlantılı hedeflere sunmaya çalışır.
 
@@ -234,7 +235,7 @@ virtual void process_input_messages(
 *_PMessage*<br/>
 İşlenecek ileti için bir işaretçi.
 
-## <a name="release_message"></a><a name="release_message"></a>release_message
+## <a name="release_message"></a><a name="release_message"></a> release_message
 
 Önceki bir ileti ayırmasını yayınlar.
 
@@ -249,7 +250,7 @@ virtual void release_message(
 *_MsgId*<br/>
 `runtime_object_identity` `message` Serbest bırakılmakta olan nesne.
 
-## <a name="reserve_message"></a><a name="reserve_message"></a>reserve_message
+## <a name="reserve_message"></a><a name="reserve_message"></a> reserve_message
 
 Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `unbounded_buffer` .
 
@@ -272,7 +273,7 @@ virtual bool reserve_message(
 
 Çağrıldıktan sonra `reserve` , döndürürse, **`true`** `consume` `release` iletinin sahipliğini almak ya da serbest bırakmak için ya da çağrılması gerekir.
 
-## <a name="resume_propagation"></a><a name="resume_propagation"></a>resume_propagation
+## <a name="resume_propagation"></a><a name="resume_propagation"></a> resume_propagation
 
 Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 
@@ -280,7 +281,7 @@ Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 virtual void resume_propagation();
 ```
 
-## <a name="send_message"></a><a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a> send_message
 
 Zaman uyumlu bir iletiyi bir `ISource` bloktan bu mesajlaşma bloğuna eşzamanlı olarak geçirir `unbounded_buffer` . `send`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
@@ -303,7 +304,7 @@ Nesneye yönelik bir işaretçi `message` .
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md#message_status) göstergesi.
 
-## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a> supports_anonymous_source
 
 `supports_anonymous_source`Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için yöntemini geçersiz kılar.
 
@@ -315,7 +316,7 @@ virtual bool supports_anonymous_source();
 
 **`true`** bloğu sunulan iletileri ertelemez.
 
-## <a name="unbounded_buffer"></a><a name="ctor"></a>unbounded_buffer
+## <a name="unbounded_buffer"></a><a name="ctor"></a> unbounded_buffer
 
 `unbounded_buffer`İleti bloğu oluşturur.
 
@@ -362,7 +363,7 @@ Veya parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıc�
 
 Tür, `filter_method` `bool (_Type const &)` Bu `unbounded_buffer` mesajlaşma bloğu tarafından önerilen bir iletiyi kabul edip etmediğini tespit etmek için çağrılan imzaya sahip bir functor.
 
-## <a name="unbounded_buffer"></a><a name="dtor"></a>~ unbounded_buffer
+## <a name="unbounded_buffer"></a><a name="dtor"></a> ~ unbounded_buffer
 
 `unbounded_buffer`Mesajlaşma bloğunu yok eder.
 

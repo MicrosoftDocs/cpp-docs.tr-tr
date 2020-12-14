@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: grafik nesneleri'
 title: Grafik Nesneler
 ms.date: 11/04/2016
 f1_keywords:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - painting and device context [MFC]
 - CPalette class [MFC], HPALETTE handle type
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-ms.openlocfilehash: a7d038a971fd1d280c100024f8af9a1ec74d8627
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7fbb4b6a4eb7586773eff309daddf60d98c7ec3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618646"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189255"
 ---
 # <a name="graphic-objects"></a>Grafik Nesneler
 

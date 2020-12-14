@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: source_link_manager sınıfı'
 title: source_link_manager Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,18 +18,18 @@ f1_keywords:
 helpviewer_keywords:
 - source_link_manager class
 ms.assetid: 287487cf-e0fe-4c35-aa3c-24f081d1ddae
-ms.openlocfilehash: 98f99bb5aec85a640eaf83a07fae3a1b667f7d91
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 132dc2db07a1c9abeeb04672f97e262761764feb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188514"
 ---
 # <a name="source_link_manager-class"></a>source_link_manager Sınıfı
 
 `source_link_manager`Nesne, ileti bloğu ağ bağlantılarını `ISource` bloklara yönetir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class _LinkRegistry>
@@ -86,7 +87,7 @@ Ağ bağlantısı kayıt defteri.
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="add"></a><a name="add"></a>ekleyemiyorum
+## <a name="add"></a><a name="add"></a> ekleyemiyorum
 
 Nesnesine bir kaynak bağlantısı ekler `source_link_manager` .
 
@@ -99,7 +100,7 @@ void add(_EType _Link);
 *_Link*<br/>
 Eklenecek bloğa yönelik bir işaretçi.
 
-## <a name="begin"></a><a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a> başladı
 
 Nesne içindeki ilk öğeye bir yineleyici döndürür `source_link_manager` .
 
@@ -115,7 +116,7 @@ Nesnedeki ilk öğeyi adresleyen bir yineleyici `source_link_manager` .
 
 Yineleyicinin bitiş durumu bir bağlantı ile belirtilir `NULL` .
 
-## <a name="contains"></a><a name="contains"></a>vardır
+## <a name="contains"></a><a name="contains"></a> vardır
 
 `network_link_registry` `source_link_manager` Belirtilen bir blok için bu nesne içinde arar.
 
@@ -132,7 +133,7 @@ Nesnede aranacak bir blok işaretçisi `source_link_manager` .
 
 **`true`** Belirtilen blok bulunursa, **`false`** tersi durumda.
 
-## <a name="count"></a><a name="count"></a>biriktirme
+## <a name="count"></a><a name="count"></a> biriktirme
 
 Nesnedeki bağlantılı blokların sayısını sayar `source_link_manager` .
 
@@ -144,7 +145,7 @@ size_t count();
 
 Nesnedeki bağlantılı blokların sayısı `source_link_manager` .
 
-## <a name="reference"></a><a name="reference"></a>başvurunun
+## <a name="reference"></a><a name="reference"></a> başvurunun
 
 Nesnesinde bir başvuru alır `source_link_manager` .
 
@@ -152,7 +153,7 @@ Nesnesinde bir başvuru alır `source_link_manager` .
 void reference();
 ```
 
-## <a name="register_target_block"></a><a name="register_target_block"></a>register_target_block
+## <a name="register_target_block"></a><a name="register_target_block"></a> register_target_block
 
 Bu nesneyi tutan hedef bloğu kaydeder `source_link_manager` .
 
@@ -165,7 +166,7 @@ void register_target_block(_Inout_ ITarget<typename _Block::source_type>* _PTarg
 *_PTarget*<br/>
 Bu nesneyi tutan hedef blok `source_link_manager` .
 
-## <a name="release"></a><a name="release"></a>Yayın
+## <a name="release"></a><a name="release"></a> Yayın
 
 Nesnesindeki başvuruyu yayınlar `source_link_manager` .
 
@@ -173,7 +174,7 @@ Nesnesindeki başvuruyu yayınlar `source_link_manager` .
 void release();
 ```
 
-## <a name="remove"></a><a name="remove"></a>temizlenmesine
+## <a name="remove"></a><a name="remove"></a> temizlenmesine
 
 Nesneden bir bağlantıyı kaldırır `source_link_manager` .
 
@@ -190,7 +191,7 @@ Bulunursa, kaldırılacak bloğa yönelik bir işaretçi.
 
 **`true`** bağlantı bulunursa ve kaldırılırsa, **`false`** tersi durumda.
 
-## <a name="set_bound"></a><a name="set_bound"></a>set_bound
+## <a name="set_bound"></a><a name="set_bound"></a> set_bound
 
 Bu nesneye eklenebilecek en fazla kaynak bağlantısı sayısını ayarlar `source_link_manager` .
 
@@ -203,7 +204,7 @@ void set_bound(size_t _MaxLinks);
 *_MaxLinks*<br/>
 En fazla bağlantı sayısı.
 
-## <a name="source_link_manager"></a><a name="ctor"></a>source_link_manager
+## <a name="source_link_manager"></a><a name="ctor"></a> source_link_manager
 
 Bir `source_link_manager` nesnesi oluşturur.
 
@@ -211,7 +212,7 @@ Bir `source_link_manager` nesnesi oluşturur.
 source_link_manager();
 ```
 
-## <a name="source_link_manager"></a><a name="dtor"></a>~ source_link_manager
+## <a name="source_link_manager"></a><a name="dtor"></a> ~ source_link_manager
 
 Nesneyi yok eder `source_link_manager` .
 

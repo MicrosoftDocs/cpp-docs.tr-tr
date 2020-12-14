@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: single_assignment sınıfı'
 title: single_assignment Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -19,18 +20,18 @@ f1_keywords:
 helpviewer_keywords:
 - single_assignment class
 ms.assetid: ccc34728-8de9-4e07-b83d-a36a58d9d2b9
-ms.openlocfilehash: 6b92508c81311774816e804eb36ac8fbfb2aa82b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d01426843f2e9fe1106f7cb68c103c392cdf1ebd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219566"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188670"
 ---
 # <a name="single_assignment-class"></a>single_assignment Sınıfı
 
 Bir `single_assignment` mesajlaşma bloğu, `propagator_block` tek bir kez yazılabilir bir çoklu kaynak olan çok kaynaklı, çok kaynaklı, sıralı bir `message` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class T>
@@ -56,7 +57,7 @@ Arabellek tarafından depolanan ve yayılan iletinin yük türü.
 |Ad|Açıklama|
 |----------|-----------------|
 |[has_value](#has_value)|Bu `single_assignment` mesajlaşma bloğunun henüz bir değer ile başlatılmış olup olmadığını denetler.|
-|[deeri](#value)|Mesajlaşma bloğunda depolanmakta olan iletinin geçerli yüküne bir başvuru alır `single_assignment` .|
+|[değer](#value)|Mesajlaşma bloğunda depolanmakta olan iletinin geçerli yüküne bir başvuru alır `single_assignment` .|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
@@ -96,7 +97,7 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept_message"></a><a name="accept_message"></a>accept_message
+## <a name="accept_message"></a><a name="accept_message"></a> accept_message
 
 Bu mesajlaşma bloğu tarafından sunulan bir iletiyi kabul eder `single_assignment` ve iletinin bir kopyasını çağırana döndürür.
 
@@ -117,7 +118,7 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 
 İleti `single_assignment` bloğu, şu anda tutulan iletinin sahipliğini aktarmak yerine, iletinin kopyalarını hedeflerine döndürür.
 
-## <a name="consume_message"></a><a name="consume_message"></a>consume_message
+## <a name="consume_message"></a><a name="consume_message"></a> consume_message
 
 , Hedef tarafından daha önce sunulan ve ayrılmış bir ileti tüketir `single_assignment` ve bu ileti, çağırana bir kopyasını döndürür.
 
@@ -138,7 +139,7 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 
 `accept`,, Ancak, ' a benzer ancak her zaman öğesine yapılan bir çağrıdır `reserve` .
 
-## <a name="has_value"></a><a name="has_value"></a>has_value
+## <a name="has_value"></a><a name="has_value"></a> has_value
 
 Bu `single_assignment` mesajlaşma bloğunun henüz bir değer ile başlatılmış olup olmadığını denetler.
 
@@ -150,7 +151,7 @@ bool has_value() const;
 
 **`true`** blok bir değer aldıysa, **`false`** tersi durumda.
 
-## <a name="link_target_notification"></a><a name="link_target_notification"></a>link_target_notification
+## <a name="link_target_notification"></a><a name="link_target_notification"></a> link_target_notification
 
 Bu mesajlaşma bloğuna yeni bir hedef bağlandığını bildiren bir geri çağırma `single_assignment` .
 
@@ -163,7 +164,7 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 *_PTarget*<br/>
 Yeni bağlantılı hedefe yönelik bir işaretçi.
 
-## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a> propagate_message
 
 Zaman uyumsuz bir iletiyi bir `ISource` bloğundan bu `single_assignment` mesajlaşma bloğuna geçirir. `propagate`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
@@ -185,7 +186,7 @@ Nesneye yönelik bir işaretçi `message` .
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a>propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 `message` `_PMessage` Bu `single_assignment` mesajlaşma bloğuna koyar ve tüm bağlantılı hedeflere sunar.
 
@@ -198,7 +199,7 @@ virtual void propagate_to_any_targets(_Inout_opt_ message<T>* _PMessage);
 *_PMessage*<br/>
 `message`Bu `single_assignment` mesajlaşma bloğunun sahipliğini aldığı bir işaretçi.
 
-## <a name="release_message"></a><a name="release_message"></a>release_message
+## <a name="release_message"></a><a name="release_message"></a> release_message
 
 Önceki bir ileti ayırmasını yayınlar.
 
@@ -211,7 +212,7 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 `runtime_object_identity` `message` Serbest bırakılmakta olan nesne.
 
-## <a name="reserve_message"></a><a name="reserve_message"></a>reserve_message
+## <a name="reserve_message"></a><a name="reserve_message"></a> reserve_message
 
 Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `single_assignment` .
 
@@ -232,7 +233,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 Çağrıldıktan sonra `reserve` , döndürürse, **`true`** `consume` `release` iletinin sahipliğini almak ya da serbest bırakmak için ya da çağrılması gerekir.
 
-## <a name="resume_propagation"></a><a name="resume_propagation"></a>resume_propagation
+## <a name="resume_propagation"></a><a name="resume_propagation"></a> resume_propagation
 
 Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 
@@ -240,7 +241,7 @@ Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 virtual void resume_propagation();
 ```
 
-## <a name="send_message"></a><a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a> send_message
 
 Zaman uyumlu bir iletiyi bir `ISource` bloktan bu mesajlaşma bloğuna eşzamanlı olarak geçirir `single_assignment` . `send`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
@@ -262,7 +263,7 @@ Nesneye yönelik bir işaretçi `message` .
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-## <a name="single_assignment"></a><a name="ctor"></a>single_assignment
+## <a name="single_assignment"></a><a name="ctor"></a> single_assignment
 
 `single_assignment`İleti bloğu oluşturur.
 
@@ -304,7 +305,7 @@ Veya parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıc�
 
 Tür, `filter_method` `bool (T const &)` Bu `single_assignment` mesajlaşma bloğu tarafından önerilen bir iletiyi kabul edip etmediğini tespit etmek için çağrılan imzaya sahip bir functor.
 
-## <a name="single_assignment"></a><a name="dtor"></a>~ single_assignment
+## <a name="single_assignment"></a><a name="dtor"></a> ~ single_assignment
 
 `single_assignment`Mesajlaşma bloğunu yok eder.
 
@@ -312,7 +313,7 @@ Tür, `filter_method` `bool (T const &)` Bu `single_assignment` mesajlaşma blo�
 ~single_assignment();
 ```
 
-## <a name="value"></a><a name="value"></a>deeri
+## <a name="value"></a><a name="value"></a> deeri
 
 Mesajlaşma bloğunda depolanmakta olan iletinin geçerli yüküne bir başvuru alır `single_assignment` .
 

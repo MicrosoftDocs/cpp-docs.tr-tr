@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: MFC WinInet sınıfları kullanarak Internet Istemci uygulaması yazma'
 title: MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,49 +10,49 @@ helpviewer_keywords:
 - Internet applications [MFC], client applications
 - MFC, Internet applications
 ms.assetid: a2c4a40c-a94e-4b3e-9dbf-f8a8dc8e5428
-ms.openlocfilehash: 6e32210217321e4eb59d7d3e666a4f5494eb3642
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61cfe3e9892f2bde6d233728b7b95ca0edd16ee8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189138"
 ---
 # <a name="writing-an-internet-client-application-using-mfc-wininet-classes"></a>MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma
 
-Her bir Internet istemci uygulaması Internet oturumu temelidir. MFC uygulayan sınıfın nesneleri olarak Internet oturumu [Cınternetsession](../mfc/reference/cinternetsession-class.md). Bu sınıfı kullanarak Internet oturumu bir veya birden çok eşzamanlı oturumlar oluşturabilirsiniz.
+Her Internet istemci uygulamasının temeli Internet oturumundur. MFC, [CInternetSession](../mfc/reference/cinternetsession-class.md)sınıfının nesneleri olarak Internet oturumlarını uygular. Bu sınıfı kullanarak bir Internet oturumu veya birkaç eşzamanlı oturum oluşturabilirsiniz.
 
-Bir sunucu ile iletişim kurmak için gereken bir [Cınternetconnection](../mfc/reference/cinternetconnection-class.md) nesne yanı sıra bir `CInternetSession`. Oluşturabileceğiniz bir `CInternetConnection` kullanarak [CInternetSession::GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection), [CInternetSession::GetHttpConnection](../mfc/reference/cinternetsession-class.md#gethttpconnection), veya [CInternetSession::GetGopherConnection](../mfc/reference/cinternetsession-class.md#getgopherconnection). Protokol türü için bu çağrılardan her özeldir. Bu çağrıları, okuma veya yazma için bir dosya sunucusundaki açmayın. Verileri okuma veya yazma yapmak istiyorsanız, ayrı bir adım olarak dosyasını açmanız gerekir.
+Bir sunucuyla iletişim kurmak için bir [CInternetConnection](../mfc/reference/cinternetconnection-class.md) nesnesi ve de gereklidir `CInternetSession` . `CInternetConnection` [CInternetSession:: GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection), [CInternetSession:: GetHttpConnection](../mfc/reference/cinternetsession-class.md#gethttpconnection)veya [CInternetSession:: GetGopherConnection](../mfc/reference/cinternetsession-class.md#getgopherconnection)kullanarak bir oluşturma oluşturabilirsiniz. Bu çağrıların her biri protokol türüne özeldir. Bu çağrılar, okumak veya yazmak için sunucuda bir dosya açmaz. Veri okumayı veya yazmayı planlıyorsanız, dosyayı ayrı bir adım olarak açmanız gerekir.
 
-Çoğu Internet oturumlar için `CInternetSession` nesne el el ile çalışan bir [Cınternetfile](../mfc/reference/cinternetfile-class.md) nesnesi:
+Çoğu Internet oturumunda, nesne el `CInternetSession` ile bir [Cınternetdosya](../mfc/reference/cinternetfile-class.md) nesnesiyle birlikte çalışmaktadır:
 
-- Bir Internet oturumu için bir örneğini oluşturmanız gerekir [Cınternetsession](../mfc/reference/cinternetsession-class.md).
+- Bir Internet oturumu için bir [CInternetSession](../mfc/reference/cinternetsession-class.md)örneği oluşturmanız gerekir.
 
-- Internet oturumunuz okur ya da verileri yazar örneğini oluşturmalısınız `CInternetFile` (veya alt sınıflara [CHttpFile](../mfc/reference/chttpfile-class.md) veya [CGopherFile](../mfc/reference/cgopherfile-class.md)). Verileri okumak için en kolay yolu çağırmaktır [CInternetSession::OpenURL](../mfc/reference/cinternetsession-class.md#openurl). Bu işlev bir Evrensel Kaynak Konum Belirleyicisi (sizin tarafınızdan sağlanan URL) ayrıştırır, URL ile belirtilen sunucunun bir bağlantı açar ve salt okunur döndürür `CInternetFile` nesne. `CInternetSession::OpenURL` bir protokol türüne özgü değildir — aynı çağrı için FTP, HTTP veya gopher URL çalışır. `CInternetSession::OpenURL` Yerel dosyalarla'da çalışır (döndüren bir `CStdioFile` yerine bir `CInternetFile`).
+- Internet oturumunuz verileri okur veya yazar, `CInternetFile` (veya alt sınıfları, [CHttpFile](../mfc/reference/chttpfile-class.md) veya [CGopherFile](../mfc/reference/cgopherfile-class.md)) örneği oluşturmanız gerekir. Verileri bulmanın en kolay yolu [CInternetSession:: OpenURL](../mfc/reference/cinternetsession-class.md#openurl)' i çağırmalıdır. Bu işlev, sizin tarafınızdan sağlanan bir Evrensel Kaynak Konumlandırıcı 'Sını (URL) ayrıştırır, URL tarafından belirtilen sunucuya bir bağlantı açar ve salt okunurdur bir `CInternetFile` nesne döndürür. `CInternetSession::OpenURL` bir protokol türüne özgü değildir — aynı çağrı tüm FTP, HTTP veya Gopher URL 'SI için de geçerlidir. `CInternetSession::OpenURL` Yerel dosyalarla bile ( `CStdioFile` bir yerine bir olarak döndürülüyor) kullanılır `CInternetFile` .
 
-- Internet oturumu okumaz veya veri yazma ancak gerçekleştiriyorsa bir FTP dizindeki bir dosya silindiğinde gibi diğer görevleri bir örneğini oluşturmak gerekmez `CInternetFile`.
+- Internet oturumunuz verileri okumaz veya yazamaz, ancak FTP dizinindeki bir dosyayı silme gibi diğer görevleri gerçekleştiriyorsa, bir örneği oluşturmanız gerekmez `CInternetFile` .
 
-Oluşturmanın iki yolu vardır. bir `CInternetFile` nesnesi:
+Bir nesne oluşturmanın iki yolu vardır `CInternetFile` :
 
-- Kullanırsanız `CInternetSession::OpenURL` çağrısı, sunucu bağlantısı kurmak için `OpenURL` döndürür bir `CStdioFile`.
+- `CInternetSession::OpenURL`Sunucu bağlantınızı kurmak için kullanırsanız, çağrısı `OpenURL` bir döndürür `CStdioFile` .
 
-- Varsa kullanın `CInternetSession::GetFtpConnection`, `GetGopherConnection`, veya `GetHttpConnection` sunucu bağlantınızı kurmak için çağırmalısınız `CFtpConnection::OpenFile`, `CGopherConnection::OpenFile`, veya `CHttpConnection::OpenRequest`, sırasıyla döndürülecek bir `CInternetFile`, `CGopherFile`, veya `CHttpFile`, sırasıyla.
+- Sunucu bağlantınızı oluşturmak için,, veya kullanıyorsanız, sırasıyla,, veya ' i `CInternetSession::GetFtpConnection` `GetGopherConnection` `GetHttpConnection` `CFtpConnection::OpenFile` `CGopherConnection::OpenFile` `CHttpConnection::OpenRequest` döndürmek için sırasıyla, veya ' `CInternetFile` `CGopherFile` i çağırmanız gerekir `CHttpFile` .
 
-Bir Internet istemci uygulaması gerçekleştirilmesinin adımları, temel, genel bir Internet istemcisi oluşturduğunuz bağlı olarak farklılık `OpenURL` veya birini kullanarak bir protokole özgü istemci `GetConnection` işlevleri.
+Bir Internet istemci uygulaması uygulama adımları, `OpenURL` işlevlerden birini kullanarak bir veya protokolüne özgü bir istemciye dayalı olarak genel bir İnternet istemcisi oluşturup oluşturmadığınıza bağlı olarak farklılık gösterir `GetConnection` .
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Genel FTP, HTTP ve gopher ile çalışan Internet istemci uygulaması nasıl yazılır](../mfc/steps-in-a-typical-internet-client-application.md)
+- [Nasıl yaparım? FTP, HTTP ve gopher ile genel olarak çalışabilen bir Internet istemci uygulaması yazma](../mfc/steps-in-a-typical-internet-client-application.md)
 
-- [Bir dosya açar bir FTP istemci uygulaması nasıl yazılır](../mfc/steps-in-a-typical-ftp-client-application.md)
+- [Dosya açan bir FTP istemci uygulaması Nasıl yaparım? yazma](../mfc/steps-in-a-typical-ftp-client-application.md)
 
-- [Bir dosya açılmaz ancak bir dosya silindiğinde gibi bir dizin işlemi gerçekleştiren bir FTP istemci uygulama nasıl yazılır](../mfc/steps-in-a-typical-ftp-client-application-to-delete-a-file.md)
+- [Nasıl yaparım? dosya açan ancak dosya silme gibi bir dizin işlemi gerçekleştiren bir FTP istemci uygulaması yazın](../mfc/steps-in-a-typical-ftp-client-application-to-delete-a-file.md)
 
-- [Bir gopher istemci uygulamasını nasıl yazılır](../mfc/steps-in-a-typical-gopher-client-application.md)
+- [Nasıl yaparım? Gopher istemci uygulaması yazma](../mfc/steps-in-a-typical-gopher-client-application.md)
 
-- [HTTP istemci uygulamanın nasıl yazılır](../mfc/steps-in-a-typical-http-client-application.md)
+- [HTTP istemci uygulaması Nasıl yaparım? yazma](../mfc/steps-in-a-typical-http-client-application.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
-[Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)
+[Win32 Internet Uzantıları (Winınet)](../mfc/win32-internet-extensions-wininet.md)<br/>
+[Internet Istemci uygulamaları oluşturmak için MFC sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
+[Internet Istemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)

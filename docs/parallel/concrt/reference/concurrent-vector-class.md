@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: concurrent_vector sınıfı'
 title: concurrent_vector Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,18 +34,18 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_vector class
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
-ms.openlocfilehash: 9144fd0870bfb72e923a7271ffdd655e03a9bd57
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c4149fc52d726cc5beea487c8ad24960c3698abd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215848"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189125"
 ---
 # <a name="concurrent_vector-class"></a>concurrent_vector Sınıfı
 
 `concurrent_vector`Sınıfı herhangi bir öğeye rastgele erişime izin veren bir dizi kapsayıcı sınıfıdır. Eşzamanlılık açısından güvenli ekleme, öğe erişimi, yineleyici erişimi ve yineleyici çapraz geçiş işlemlerine izin vermez. Burada eşzamanlılık açısından güvenli, işaretçiler veya yineleyiciler her zaman geçerlidir. Bu, öğe başlatma garantisi veya belirli bir geçiş düzeni değildir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename T, class _Ax>
@@ -121,7 +122,7 @@ Eşzamanlı vektör için bellek ayırma ve ayırmayı kaldırma hakkındaki ayr
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[işleç\[\]](#operator_at)|Fazla Yüklendi. Eşzamanlı vektörde verilen dizindeki öğeye erişim sağlar. Bu yöntem, okuma işlemleri için eşzamanlılık açısından güvenlidir ve aynı zamanda değerin `_Index` eşzamanlı vektörün boyutundan daha az olduğu sürece vektörü büyümekte.|
+|[işlecinde\[\]](#operator_at)|Fazla Yüklendi. Eşzamanlı vektörde verilen dizindeki öğeye erişim sağlar. Bu yöntem, okuma işlemleri için eşzamanlılık açısından güvenlidir ve aynı zamanda değerin `_Index` eşzamanlı vektörün boyutundan daha az olduğu sürece vektörü büyümekte.|
 |[işleç =](#operator_eq)|Fazla Yüklendi. Başka bir `concurrent_vector` nesnenin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.|
 
 ## <a name="remarks"></a>Açıklamalar
@@ -142,7 +143,7 @@ Sınıfıyla ilgili ayrıntılı bilgi için `concurrent_vector` bkz. [paralel k
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="assign"></a><a name="assign"></a>ata
+## <a name="assign"></a><a name="assign"></a> ata
 
 Eş zamanlı vektörün öğelerini siler ve bu ya da ya da `_N` `_Item` yineleyici aralığı [,) tarafından belirtilen değerler veya kopya atar `_Begin` `_End` . Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -175,9 +176,9 @@ Kaynak aralığın son öğesini aşan bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`assign`eşzamanlılık açısından güvenli değildir. Bu yöntemi çağırdığınızda, diğer iş parçacıklarının eşzamanlı vektörde Yöntem çağırkullanılmadığından emin olmanız gerekir.
+`assign` eşzamanlılık açısından güvenli değildir. Bu yöntemi çağırdığınızda, diğer iş parçacıklarının eşzamanlı vektörde Yöntem çağırkullanılmadığından emin olmanız gerekir.
 
-## <a name="at"></a><a name="at"></a>hızı
+## <a name="at"></a><a name="at"></a> hızı
 
 Eşzamanlı vektörde verilen dizindeki öğeye erişim sağlar. Bu yöntem, okuma işlemleri için eşzamanlılık açısından güvenlidir ve aynı zamanda, değerin `_Index` eşzamanlı vektör boyutundan daha az olduğu sürece vektörü büyüyordur.
 
@@ -202,7 +203,7 @@ Verilen dizindeki öğeye başvuru.
 
 Yöntemi, `out_of_range` `_Index` eş zamanlı vektörün boyutundan büyük veya ona eşit ise ve `range_error` Dizin, vector öğesinin bozuk bir bölümü için ise bu oluşur. Vector öğesinin nasıl kopuk hale gelebilmesi hakkındaki ayrıntılar için bkz. [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).
 
-## <a name="back"></a><a name="back"></a>Geri
+## <a name="back"></a><a name="back"></a> Geri
 
 **`const`** Eşzamanlı Vektördeki son öğeye bir başvuru veya başvuru döndürür. Eşzamanlı vektör boşsa, dönüş değeri tanımsızdır. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -216,7 +217,7 @@ const_reference back() const;
 
 **`const`** Eşzamanlı Vektördeki son öğeye başvuru veya başvuru.
 
-## <a name="begin"></a><a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a> başladı
 
 `iterator` `const_iterator` Eş zamanlı vektörün türü veya başına bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -230,7 +231,7 @@ const_iterator begin() const;
 
 `iterator` `const_iterator` Eş zamanlı vektörün türü veya başına bir yineleyici.
 
-## <a name="capacity"></a><a name="capacity"></a>kü
+## <a name="capacity"></a><a name="capacity"></a> kü
 
 Eşzamanlı vektörün daha fazla bellek ayırmaya gerek kalmadan büyüyebileceği maksimum boyutu döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -246,7 +247,7 @@ Eşzamanlı vektörün daha fazla bellek ayırmaya gerek kalmadan büyüyebilece
 
 C++ standart kitaplığının aksine `vector` , bir `concurrent_vector` nesne daha fazla bellek ayırırsa mevcut öğeleri taşımaz.
 
-## <a name="cbegin"></a><a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a> cbegin
 
 `const_iterator`Eş zamanlı vektörün başına türünde bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -258,7 +259,7 @@ const_iterator cbegin() const;
 
 `const_iterator`Eş zamanlı vektörün başına türünde bir yineleyici.
 
-## <a name="cend"></a><a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a> cend
 
 `const_iterator`Eş zamanlı vektörün sonuna türünde bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -270,7 +271,7 @@ const_iterator cend() const;
 
 `const_iterator`Eş zamanlı vektörün sonuna türünde bir yineleyici.
 
-## <a name="clear"></a><a name="clear"></a>lediğiniz
+## <a name="clear"></a><a name="clear"></a> lediğiniz
 
 Eşzamanlı Vektördeki tüm öğeleri siler. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -280,9 +281,9 @@ void clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-`clear`eşzamanlılık açısından güvenli değildir. Bu yöntemi çağırdığınızda, diğer iş parçacıklarının eşzamanlı vektörde Yöntem çağırkullanılmadığından emin olmanız gerekir. `clear`iç dizileri serbest vermez. İç dizileri serbest bırakmak için, `shrink_to_fit` öğesinden sonra işlevini çağırın `clear` .
+`clear` eşzamanlılık açısından güvenli değildir. Bu yöntemi çağırdığınızda, diğer iş parçacıklarının eşzamanlı vektörde Yöntem çağırkullanılmadığından emin olmanız gerekir. `clear` iç dizileri serbest vermez. İç dizileri serbest bırakmak için, `shrink_to_fit` öğesinden sonra işlevini çağırın `clear` .
 
-## <a name="concurrent_vector"></a><a name="ctor"></a>concurrent_vector
+## <a name="concurrent_vector"></a><a name="ctor"></a> concurrent_vector
 
 Eşzamanlı bir vektör oluşturur.
 
@@ -358,7 +359,7 @@ Altıncı Oluşturucu değer () öğelerinin tekrarından oluşan bir `_N` değe
 
 Son Oluşturucu yineleyici aralığı [,) tarafından sağlanan değerleri belirtir `_Begin` `_End` .
 
-## <a name="concurrent_vector"></a><a name="dtor"></a>~ concurrent_vector
+## <a name="concurrent_vector"></a><a name="dtor"></a> ~ concurrent_vector
 
 Tüm öğeleri siler ve bu eşzamanlı vektörü yok eder.
 
@@ -366,7 +367,7 @@ Tüm öğeleri siler ve bu eşzamanlı vektörü yok eder.
 ~concurrent_vector();
 ```
 
-## <a name="crbegin"></a><a name="crbegin"></a>crbegin
+## <a name="crbegin"></a><a name="crbegin"></a> crbegin
 
 `const_reverse_iterator`Eş zamanlı vektörün başına türünde bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -378,7 +379,7 @@ const_reverse_iterator crbegin() const;
 
 `const_reverse_iterator`Eş zamanlı vektörün başına türünde bir yineleyici.
 
-## <a name="crend"></a><a name="crend"></a>crend
+## <a name="crend"></a><a name="crend"></a> crend
 
 `const_reverse_iterator`Eş zamanlı vektörün sonuna türünde bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -390,7 +391,7 @@ const_reverse_iterator crend() const;
 
 `const_reverse_iterator`Eş zamanlı vektörün sonuna türünde bir yineleyici.
 
-## <a name="empty"></a><a name="empty"></a>olmamalıdır
+## <a name="empty"></a><a name="empty"></a> olmamalıdır
 
 Bu yöntemin çağrılışında eşzamanlı vektör boş ise, sınar. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -402,7 +403,7 @@ bool empty() const;
 
 **`true`** vektör, işlevin çağrıldığı anda boşsa, **`false`** tersi durumda.
 
-## <a name="end"></a><a name="end"></a>erer
+## <a name="end"></a><a name="end"></a> erer
 
 `iterator` `const_iterator` Eş zamanlı vektörün türü veya sonuna bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -416,7 +417,7 @@ const_iterator end() const;
 
 `iterator` `const_iterator` Eş zamanlı vektörün türü veya sonuna bir yineleyici.
 
-## <a name="front"></a><a name="front"></a>yapılan
+## <a name="front"></a><a name="front"></a> yapılan
 
 **`const`** Eşzamanlı Vektördeki ilk öğenin başvurusunu veya başvurusunu döndürür. Eşzamanlı vektör boşsa, dönüş değeri tanımsızdır. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -430,7 +431,7 @@ const_reference front() const;
 
 **`const`** Eşzamanlı Vektördeki ilk öğeye başvuru veya başvuru.
 
-## <a name="get_allocator"></a><a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a> get_allocator
 
 Eş zamanlı vektörü oluşturmak için kullanılan ayırıcının bir kopyasını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -442,7 +443,7 @@ allocator_type get_allocator() const;
 
 Nesneyi oluşturmak için kullanılan ayırıcıın bir kopyası `concurrent_vector` .
 
-## <a name="grow_by"></a><a name="grow_by"></a>grow_by
+## <a name="grow_by"></a><a name="grow_by"></a> grow_by
 
 Bu eşzamanlı vektörü öğelere göre büyürken `_Delta` . Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -471,7 +472,7 @@ Yeni öğelerin başlangıç değeri.
 
 `_Item`Belirtilmemişse, yeni öğeler varsayılan olarak oluşturulur.
 
-## <a name="grow_to_at_least"></a><a name="grow_to_at_least"></a>grow_to_at_least
+## <a name="grow_to_at_least"></a><a name="grow_to_at_least"></a> grow_to_at_least
 
 En az öğelere sahip olana kadar bu eşzamanlı vektörü büyürken `_N` . Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -488,7 +489,7 @@ Nesnenin yeni en küçük boyutu `concurrent_vector` .
 
 Eklenen sıranın başlangıcını işaret eden bir yineleyici veya `_N` hiçbir öğe eklenmemiş ise dizindeki öğe.
 
-## <a name="max_size"></a><a name="max_size"></a>max_size
+## <a name="max_size"></a><a name="max_size"></a> max_size
 
 Eşzamanlı vektörde tutabileceğiniz en fazla öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -500,7 +501,7 @@ size_type max_size() const;
 
 Nesnenin tutabileceğiniz en fazla öğe sayısı `concurrent_vector` .
 
-## <a name="operator"></a><a name="operator_eq"></a>işleç =
+## <a name="operator"></a><a name="operator_eq"></a> işleç =
 
 Başka bir `concurrent_vector` nesnenin içeriğini buna atar. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -528,7 +529,7 @@ Kaynak `concurrent_vector` nesne.
 
 Bu nesneye bir başvuru `concurrent_vector` .
 
-## <a name="operator"></a><a name="operator_at"></a>operator []
+## <a name="operator"></a><a name="operator_at"></a> operator []
 
 Eşzamanlı vektörde verilen dizindeki öğeye erişim sağlar. Bu yöntem, okuma işlemleri için eşzamanlılık açısından güvenlidir ve aynı zamanda değerin `_Index` eşzamanlı vektörün boyutundan daha az olduğu sürece vektörü büyümekte.
 
@@ -553,7 +554,7 @@ Bu öğesinin sürümü, `operator []` **`const`** farklı iş parçacıklarınd
 
 `_Index`Yinelenen vektörde geçerli bir dizin olduğundan emin olmak için hiçbir sınır denetimi yapılmaz.
 
-## <a name="push_back"></a><a name="push_back"></a>push_back
+## <a name="push_back"></a><a name="push_back"></a> push_back
 
 Verilen öğeyi, eşzamanlı vektörün sonuna ekler. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -572,7 +573,7 @@ Eklenecek değer.
 
 Öğe için bir yineleyici eklendi.
 
-## <a name="rbegin"></a><a name="rbegin"></a>rbegin
+## <a name="rbegin"></a><a name="rbegin"></a> rbegin
 
 `reverse_iterator` `const_reverse_iterator` Eş zamanlı vektörün türü veya başına bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -586,7 +587,7 @@ const_reverse_iterator rbegin() const;
 
 `reverse_iterator` `const_reverse_iterator` Eş zamanlı vektörün türü veya başına bir yineleyici.
 
-## <a name="rend"></a><a name="rend"></a>rend
+## <a name="rend"></a><a name="rend"></a> rend
 
 `reverse_iterator` `const_reverse_iterator` Eş zamanlı vektörün türü veya sonuna bir yineleyici döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -600,7 +601,7 @@ const_reverse_iterator rend() const;
 
 `reverse_iterator` `const_reverse_iterator` Eş zamanlı vektörün türü veya sonuna bir yineleyici.
 
-## <a name="reserve"></a><a name="reserve"></a>ayırmaya
+## <a name="reserve"></a><a name="reserve"></a> ayırmaya
 
 Daha `_N` sonra daha fazla bellek ayırmaya gerek kalmadan, eşzamanlı vektörün boyutunu büyütmek için yeterli alan ayırır. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -615,9 +616,9 @@ Alan ayrılacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`reserve`eşzamanlılık açısından güvenli değildir. Bu yöntemi çağırdığınızda, diğer iş parçacıklarının eşzamanlı vektörde Yöntem çağırkullanılmadığından emin olmanız gerekir. Yöntem döndürenden sonra eşzamanlı vektör kapasitesi, istenen ayırmayla daha büyük olabilir.
+`reserve` eşzamanlılık açısından güvenli değildir. Bu yöntemi çağırdığınızda, diğer iş parçacıklarının eşzamanlı vektörde Yöntem çağırkullanılmadığından emin olmanız gerekir. Yöntem döndürenden sonra eşzamanlı vektör kapasitesi, istenen ayırmayla daha büyük olabilir.
 
-## <a name="resize"></a><a name="resize"></a>yeniden boyutlandırma
+## <a name="resize"></a><a name="resize"></a> yeniden boyutlandırma
 
 Eşzamanlı vektörün boyutunu istenen boyut olarak değiştirir, öğeleri silin veya gerekli şekilde ekleyin. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -642,9 +643,9 @@ Yeni boyut orijinal boyuttan daha büyükse, vektöre eklenen yeni öğelerin de
 
 Kapsayıcının boyutu istenen boyuttan küçükse, istenen boyuta ulaşıncaya kadar öğeler vektöre eklenir. Kapsayıcının boyutu istenen boyuttan daha büyükse kapsayıcının sonuna en yakın olan öğeler, kapsayıcı boyuta ulaşıncaya kadar silinir `_N` . Kapsayıcının mevcut boyutu istenen boyutla aynıysa, hiçbir eylem yapılmaz.
 
-`resize`Eşzamanlılık güvenli değildir. Bu yöntemi çağırdığınızda, diğer iş parçacıklarının eşzamanlı vektörde Yöntem çağırkullanılmadığından emin olmanız gerekir.
+`resize` Eşzamanlılık güvenli değildir. Bu yöntemi çağırdığınızda, diğer iş parçacıklarının eşzamanlı vektörde Yöntem çağırkullanılmadığından emin olmanız gerekir.
 
-## <a name="shrink_to_fit"></a><a name="shrink_to_fit"></a>shrink_to_fit
+## <a name="shrink_to_fit"></a><a name="shrink_to_fit"></a> shrink_to_fit
 
 Parçalanmayı azaltmak ve bellek kullanımını iyileştirmek için eşzamanlı vektörün iç gösterimini sıkıştırır. Bu yöntem eşzamanlılık açısından güvenli değildir.
 
@@ -654,9 +655,9 @@ void shrink_to_fit();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, tüm yineleyicilerin geçersiz kılınması için bellek taşıma öğelerini dahili olarak yeniden ayırır. `shrink_to_fit`eşzamanlılık açısından güvenli değildir. Bu işlevi çağırdığınızda eşzamanlı vektörde başka iş parçacıklarının Yöntem çağırkullanılmadığından emin olmanız gerekir.
+Bu yöntem, tüm yineleyicilerin geçersiz kılınması için bellek taşıma öğelerini dahili olarak yeniden ayırır. `shrink_to_fit` eşzamanlılık açısından güvenli değildir. Bu işlevi çağırdığınızda eşzamanlı vektörde başka iş parçacıklarının Yöntem çağırkullanılmadığından emin olmanız gerekir.
 
-## <a name="size"></a><a name="size"></a>boyutla
+## <a name="size"></a><a name="size"></a> boyutla
 
 Eşzamanlı Vektördeki öğe sayısını döndürür. Bu yöntem eşzamanlılık açısından güvenlidir.
 
@@ -672,7 +673,7 @@ Bu nesnedeki öğe sayısı `concurrent_vector` .
 
 Döndürülen boyut, işleve yapılan çağrılar tarafından eklenen tüm öğeleri dahil etmek `push_back` veya bu yöntemi çağırmadan önce tamamlanan işlemleri büyütmek için garanti edilir. Ancak, ayrılan öğeleri de içerebilir, ancak yine de büyüme yöntemlerinden herhangi birine eşzamanlı çağrılar tarafından hala yapım aşamasındadır.
 
-## <a name="swap"></a><a name="swap"></a>Kur
+## <a name="swap"></a><a name="swap"></a> Kur
 
 İki eşzamanlı vektör içeriğini değiştirir. Bu yöntem eşzamanlılık açısından güvenli değildir.
 

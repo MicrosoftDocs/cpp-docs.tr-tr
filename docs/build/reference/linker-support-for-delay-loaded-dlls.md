@@ -1,55 +1,56 @@
 ---
+description: "Daha fazla bilgi: Delay-Loaded dll 'Ler için bağlayıcı desteği"
 title: Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği
 ms.date: 11/04/2016
 helpviewer_keywords:
 - delayed loading of DLLs, linker support
 ms.assetid: b2d7e449-2809-42b1-9c90-2c0ca5e31a14
-ms.openlocfilehash: 384ea563853906a76e2c9993cbcedb3b15c354f2
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 6bf4527d14c7313874f162f0597114132b1a81cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65217595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190971"
 ---
 # <a name="linker-support-for-delay-loaded-dlls"></a>Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği
 
-MSVC bağlayıcı artık DLL'lerin Gecikmeli yüklemeyi destekler. Bu Windows SDK'sı işlevleri gerek kalmamasını **LoadLibrary** ve **GetProcAddress** Gecikmeli yükleme DLL uygulamak için.
+MSVC Bağlayıcısı artık dll 'Lerin gecikmeli yüklemesini desteklemektedir. Bu sizi maliyetinden kurtarır, DLL Gecikmeli yükleme uygulamak için **LoadLibrary** ve **GetProcAddress** Windows SDK işlevlerini kullanma gereksinimleridir.
 
-Visual C++ 6.0 önce çalışma zamanında bir DLL'yi tek yolu kullanmaktı **LoadLibrary** ve **GetProcAddress**; işletim sistemi DLL'yi yüklemeye, yürütülebilir veya onu yüklenen DLL kullanarak.
+6,0 Visual C++ önce, çalışma zamanında DLL 'yi çalıştırmanın tek yolu **LoadLibrary** ve **GetProcAddress** kullanılarak yapılır; çalışan çalıştırılabilir veya DLL yüklendiğinde, işletim sistemi DLL 'yi yükler.
 
-Örtük olarak bir DLL ile bağlanırken Visual C++ 6.0 ile başlayarak, programın bu DLL içinde bir işlevi çağırır kadar gecikme seçenekleri DLL'yi sağlar.
+Visual C++ 6,0 ' den başlayarak, bir DLL ile dolaylı olarak bağlandığınızda bağlayıcı, bu DLL 'de bir işlev çağırana kadar DLL yükleme gecikmesi için seçenekler sağlar.
 
-Bir uygulama geciktirip kullanarak bir DLL yükleme [/delayload (gecikme yükleme içeri aktarma)](delayload-delay-load-import.md) yardımcı işlevini (Visual C++ tarafından sağlanan varsayılan uygulaması) ile bağlayıcı seçeneği. Yardımcısı işlevi DLL çalışma zamanında çağırarak yükleyecek **LoadLibrary** ve **GetProcAddress** sizin için.
+Bir uygulama bir yardımcı işlevle [/delayload (Gecikmeli yükleme Içeri aktarma)](delayload-delay-load-import.md) bağlayıcı SEÇENEĞINI kullanarak dll yüklemeyi geciktirebilir (varsayılan uygulama Visual C++ tarafından sağlanmış). Yardımcı işlevi, **LoadLibrary** ve **GETPROCADDRESS** 'i çağırarak dll 'yi çalışma zamanında yükler.
 
-Gecikmeli DLL, yükleme dikkate almanız gerekir:
+Şu durumlarda bir DLL yükleme gecikmesini göz önünde bulundurmanız gerekir:
 
-- Programınız bir işlev DLL'de çağırmamanız.
+- Programınız DLL 'de bir işlev çağırmayabilir.
 
-- Bir DLL sonlarında kadar program yürütme, çağrılan işlev değil.
+- DLL 'deki bir işlev, programınızın yürütülmesine geç kadar çağrılamaz.
 
-Bir DLL için Gecikmeli yüklemeye veya derleme sırasında belirtilebilir bir. EXE veya. DLL projesi. A. Bir veya daha fazla DLL'lerin yüklenmesini geciktirir DLL projesi kendisi bir Gecikmeli yüklenen giriş noktası Dllmain çağırmalıdır değil.
+Bir DLL 'nin geciken yüklemesi, bir öğesinin derlemesi sırasında belirtilebilir. EXE veya. DLL projesi. A. Bir veya daha fazla dll 'nin yüklenmesini geciktirecek DLL projesi, DllMain 'de Gecikmeli yüklenen bir giriş noktasını çağırmalıdır.
 
-Aşağıdaki konular, DLL'leri yüklemede gecikme açıklar:
+Aşağıdaki konular dll 'Leri yükleme gecikmesini anlatmaktadır:
 
-- [Gecikme Yükü DLL'lerini Belirtme](specifying-dlls-to-delay-load.md)
+- [Gecikmeli yük için dll 'Leri belirtme](specifying-dlls-to-delay-load.md)
 
-- [Gecikmeli Yüklenen DLL'i Açıkça Kaldırma](explicitly-unloading-a-delay-loaded-dll.md)
+- [Delay-Loaded DLL 'sini açıkça kaldırma](explicitly-unloading-a-delay-loaded-dll.md)
 
-- [Gecikmeli Yüklenen DLL için Tüm İçe Aktarmaları Yükleme](loading-all-imports-for-a-delay-loaded-dll.md)
+- [Delay-Loaded DLL için tüm Içeri aktarmalar yükleniyor](loading-all-imports-for-a-delay-loaded-dll.md)
 
-- [İçeri Aktarılanları Bağlama](binding-imports.md)
+- [Bağlama Içeri aktarmaları](binding-imports.md)
 
-- [Hata İşleme ve Bildirme](error-handling-and-notification.md)
+- [Hata Işleme ve bildirim](error-handling-and-notification.md)
 
-- [Gecikmeli Yükleme İçe Aktarmalarını Dökme](dumping-delay-loaded-imports.md)
+- [Delay-Loaded Içeri aktarmalar dökümünü alma](dumping-delay-loaded-imports.md)
 
-- [DLL'leri Yüklemede Gecikme Kısıtlamaları](constraints-of-delay-loading-dlls.md)
+- [Dll 'Leri yükleme gecikmesi kısıtlamaları](constraints-of-delay-loading-dlls.md)
 
-- [Yardımcı İşlevini Anlama](understanding-the-helper-function.md)
+- [Yardımcı Işlevini anlama](understanding-the-helper-function.md)
 
-- [Kendi Yardımcı İşlevinizi Geliştirme](developing-your-own-helper-function.md)
+- [Kendi yardımcı Işlevinizi geliştirme](developing-your-own-helper-function.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio'da C/C++ DLL'leri oluşturma](../dlls-in-visual-cpp.md)<br/>
+[Visual Studio 'da C/C++ dll 'Leri oluşturma](../dlls-in-visual-cpp.md)<br/>
 [MSVC bağlayıcı başvurusu](linking.md)

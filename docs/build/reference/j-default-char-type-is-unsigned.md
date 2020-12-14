@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/J (varsayılan karakter türü imzasız)
 title: /J (Varsayılan Karakter Türü İmzasız)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - J compiler option [C++]
 - default char type is unsigned
 ms.assetid: 50973667-6638-491e-9c41-bff73acae19f
-ms.openlocfilehash: d95fed3d9af81d89ac03a52a1e6433786118430e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0e6f09a05925fd0248f1e777d578570cd7b44946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223843"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191231"
 ---
 # <a name="j-default-char-type-is-unsigned"></a>/J (Varsayılan Karakter Türü İmzasız)
 
 Varsayılan **`char`** türü ' dan ' a değiştirir ve tür, **`signed char`** **`unsigned char`** **`char`** iletildiklerinde olduğunda tür sıfır genişletilir **`int`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /J
@@ -45,7 +46,7 @@ ANSI C ve C++, türü için belirli bir uygulama gerektirmez **`char`** . Bu se�
 
 1. **Çözüm Gezgini**' de, proje için kısayol menüsünü açın ve ardından **Özellikler**' i seçin.
 
-1. Proje **Özellik sayfaları** iletişim kutusundaki sol bölmede, **yapılandırma özellikleri**altında **C/C++** öğesini genişletin ve ardından **komut satırı**' nı seçin.
+1. Proje **Özellik sayfaları** iletişim kutusundaki sol bölmede, **yapılandırma özellikleri** altında **C/C++** öğesini genişletin ve ardından **komut satırı**' nı seçin.
 
 1. **Ek seçenekler** bölmesinde **/j** derleyici seçeneğini belirtin.
 
@@ -56,5 +57,5 @@ ANSI C ve C++, türü için belirli bir uygulama gerektirmez **`char`** . Bu se�
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)<br/>
 [Visual Studio’da C++ derleyicisi ve derleme özelliklerini ayarlama](../working-with-project-properties.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: single_link_registry sınıfı'
 title: single_link_registry Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ f1_keywords:
 helpviewer_keywords:
 - single_link_registry class
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3
-ms.openlocfilehash: 24f89a6b2fb998ba5e5a82dbb470accb45d0fd9f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 415dcaf8062eaf47a3e92cf4a949790eb364d0c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219553"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188644"
 ---
 # <a name="single_link_registry-class"></a>single_link_registry Sınıfı
 
 `single_link_registry`Nesnesi `network_link_registry` yalnızca tek bir kaynağı veya hedef bloğu yöneten bir nesnesidir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class _Block>
@@ -67,7 +68,7 @@ Nesnede depolanmakta olan blok veri türü `single_link_registry` .
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="add"></a><a name="add"></a>ekleyemiyorum
+## <a name="add"></a><a name="add"></a> ekleyemiyorum
 
 Nesnesine bir bağlantı ekler `single_link_registry` .
 
@@ -84,7 +85,7 @@ Eklenecek bloğa yönelik bir işaretçi.
 
 Bu kayıt defterinde zaten bir bağlantı varsa Yöntem [invalid_link_target](invalid-link-target-class.md) bir özel durum oluşturur.
 
-## <a name="begin"></a><a name="begin"></a>başladı
+## <a name="begin"></a><a name="begin"></a> başladı
 
 Nesne içindeki ilk öğeye bir yineleyici döndürür `single_link_registry` .
 
@@ -100,7 +101,7 @@ Nesnedeki ilk öğeyi adresleyen bir yineleyici `single_link_registry` .
 
 Bitiş durumu bir bağlantı ile belirtilir `NULL` .
 
-## <a name="contains"></a><a name="contains"></a>vardır
+## <a name="contains"></a><a name="contains"></a> vardır
 
 `single_link_registry`Nesneyi belirtilen bir blok için arar.
 
@@ -117,7 +118,7 @@ Nesnede aranacak bir blok işaretçisi `single_link_registry` .
 
 **`true`** bağlantı bulunursa, **`false`** tersi durumda.
 
-## <a name="count"></a><a name="count"></a>biriktirme
+## <a name="count"></a><a name="count"></a> biriktirme
 
 Nesnedeki öğelerin sayısını sayar `single_link_registry` .
 
@@ -129,7 +130,7 @@ virtual size_t count();
 
 Nesnedeki öğelerin sayısı `single_link_registry` .
 
-## <a name="remove"></a><a name="remove"></a>temizlenmesine
+## <a name="remove"></a><a name="remove"></a> temizlenmesine
 
 Nesneden bir bağlantıyı kaldırır `single_link_registry` .
 
@@ -146,7 +147,7 @@ Bulunursa, kaldırılacak bloğa yönelik bir işaretçi.
 
 **`true`** bağlantı bulunursa ve kaldırılırsa, **`false`** tersi durumda.
 
-## <a name="single_link_registry"></a><a name="ctor"></a>single_link_registry
+## <a name="single_link_registry"></a><a name="ctor"></a> single_link_registry
 
 Bir `single_link_registry` nesnesi oluşturur.
 
@@ -154,7 +155,7 @@ Bir `single_link_registry` nesnesi oluşturur.
 single_link_registry();
 ```
 
-## <a name="single_link_registry"></a><a name="dtor"></a>~ single_link_registry
+## <a name="single_link_registry"></a><a name="dtor"></a> ~ single_link_registry
 
 Nesneyi yok eder `single_link_registry` .
 

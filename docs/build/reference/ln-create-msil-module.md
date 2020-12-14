@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/LN (MSIL Modülü Oluştur)
 title: /LN (MSIL Modülü Oluştur)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - -LN compiler option [C++]
 - /LN compiler option [C++]
 ms.assetid: 4f38f4f4-3176-4caf-8200-5c7585dc1ed3
-ms.openlocfilehash: 2dbd5ae5ddf802185912c49caf37aa61c6a7d4c3
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
+ms.openlocfilehash: 63b6f47fe6bef24341d3c19a6ad96ac3808e486e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190931"
 ---
 # <a name="ln-create-msil-module"></a>/LN (MSIL Modülü Oluştur)
 
-Bir derleme bildirimi çıkış dosyası içine eklenmesi gerektiğini değil belirtir.
+Bir derleme bildiriminin çıkış dosyasına eklenmemelidir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 /LN
@@ -26,29 +27,29 @@ Bir derleme bildirimi çıkış dosyası içine eklenmesi gerektiğini değil be
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, **/LN** (bir derleme bildirimi, çıktı dosyasına eklenir) etkin değil.
+Varsayılan olarak, **/ln** etkin değildir (çıkış dosyasına bir derleme bildirimi eklenir).
 
-Zaman **/LN** kullanılan birini [/CLR (ortak dil çalışma zamanı derlemesi)](clr-common-language-runtime-compilation.md) seçenekleri de kullanılmalıdır.
+**/Ln** kullanıldığında, [/clr (ortak dil çalışma zamanı derleme)](clr-common-language-runtime-compilation.md) seçeneklerinden biri de kullanılmalıdır.
 
-Derleme meta verileri bildiriminde yok. yönetilen bir program, bir modül adı verilir. Derleme yaparsanız [/c (derleme olmadan bağlamayı)](c-compile-without-linking.md) ve **/LN**, belirtin [noassembly (MSIL modülü Oluştur)](noassembly-create-a-msil-module.md) çıkış dosyası oluşturmak için bağlayıcı aşamasındadır.
+Bildirimde derleme meta verilerine sahip olmayan yönetilen bir programa modül denir. [/C (bağlama olmadan Derle)](c-compile-without-linking.md) ve **/ln** ile derlerseniz, çıkış dosyasını oluşturmak için bağlayıcı AŞAMASıNDA [/NOASSEMBLY (MSIL Modülü Oluştur)](noassembly-create-a-msil-module.md) seçeneğini belirtin.
 
-Derlemeleri oluşturmak için bileşen tabanlı bir yaklaşımda göz atmak istiyorsanız modüller oluşturmak isteyebilirsiniz.  Diğer bir deyişle, türleri yazabilir ve bunları modülleri derleyin.  Ardından, bir derleme bir veya daha fazla modüllerden oluşturabilirsiniz.  Derlemeleri modülleri oluşturma hakkında daha fazla bilgi için bkz. [bağlayıcı girişi olarak .netmodule dosyaları](netmodule-files-as-linker-input.md) veya [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
+Derlemeler oluşturmaya yönelik bileşen tabanlı bir yaklaşım almak istiyorsanız modüller oluşturmak isteyebilirsiniz.  Diğer bir deyişle, türleri yazabilir ve bunları modüller halinde derleyebilirsiniz.  Daha sonra, bir veya daha fazla modülden derleme oluşturabilirsiniz.  Modüllerden derlemeler oluşturma hakkında daha fazla bilgi için, bkz [.. netmodule dosyaları bağlayıcı girişi](netmodule-files-as-linker-input.md) veya [Al.exe (derleme Bağlayıcısı)](/dotnet/framework/tools/al-exe-assembly-linker)olarak.
 
-Bir modül için varsayılan dosya uzantısı .netmodule'dür.
+Modül için varsayılan dosya uzantısı. netmodule 'dir.
 
-Visual Studio 2005 önce sürümlerde bir modül oluşturulurken **/clr:noAssembly**.
+Visual Studio 2005 ' den önceki sürümlerde, **/clr: noAssembly** ile bir modül oluşturulmuştur.
 
-MSVC bağlayıcı girişi .netmodule dosyaları kabul eder ve bağlayıcı tarafından üretilen çıkış dosyası bir derleme veya .netmodule herhangi bir bağlayıcıya giriş netmodule'leri hiçbir çalışma zamanı bağımlılığa sahip olacaktır.  Daha fazla bilgi için [bağlayıcı girişi olarak .netmodule dosyaları](netmodule-files-as-linker-input.md).
+MSVC Bağlayıcısı. netmodule dosyalarını girdi olarak kabul eder ve bağlayıcı tarafından üretilen çıkış dosyası, bağlayıcıya giriş yapan. netmodules üzerinde çalışma zamanı bağımlılığı olmayan bir derleme veya. netmodule olur.  Daha fazla bilgi için, bkz [.. netmodule dosyaları bağlayıcı girişi olarak](netmodule-files-as-linker-input.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-- Belirtin [noassembly (MSIL modülü Oluştur)](noassembly-create-a-msil-module.md) çıkış dosyası oluşturmak için bağlayıcı aşamasındadır.
+- Çıkış dosyasını oluşturmak için bağlayıcı aşamasında [/NOASSEMBLY (MSIL Modülü Oluştur)](noassembly-create-a-msil-module.md) belirtin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
-- Bu derleyici seçeneğini program aracılığıyla değiştirilemez.
+- Bu derleyici seçeneği program aracılığıyla değiştirilemez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

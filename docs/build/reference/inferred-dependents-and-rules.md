@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çıkartılan bağımlılıklar ve kurallar'
 title: Çıkarsanan Bağımlılıklar ve Kurallar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,27 +8,27 @@ helpviewer_keywords:
 - inferred rules in NMAKE
 - dependents, inferred
 ms.assetid: 9381e74a-53d9-445c-836d-0ff7ef6112d9
-ms.openlocfilehash: b9c3055db0cc173999e1737986166eb334dcf96c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9f4c1d14d18c9c693a7bd71f9207ff36aede8e22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62269914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191283"
 ---
 # <a name="inferred-dependents-and-rules"></a>Çıkarsanan Bağımlılıklar ve Kurallar
 
-Geçerli çıkarım kuralı varsa, bir hedef için gösterilen bir bağımlı NMAKE varsayar. Bir kural uygular:
+Geçerli bir çıkarım kuralı varsa NMAKE, bir hedef için gösterilen bir bağımlı olduğunu varsayar. Bir kural şu durumlarda geçerlidir:
 
-- *toext* hedefin uzantısı eşleşir.
+- *toext* , hedefin uzantısıyla eşleşiyor.
 
-- *fromext* eşleşen hedef temel ad ve bir dosya uzantısı geçerli ya da belirtilen dizinde bulunmaktadır.
+- *fromext* , hedefin temel adına sahip olan ve geçerli veya belirtilen dizinde bulunan bir dosyanın uzantısıyla eşleşir.
 
-- *fromext* bulunduğu [. SONEKLERİ](dot-directives.md); başka hiçbir *fromext* bir eşleşen kuralı daha yüksek bir sahip **. SONEKLERİ** öncelik.
+- *fromext* içinde [. SON ekler](dot-directives.md); eşleşen kuralda başka bir *fromext* daha yüksektir **. SONEK** önceliği.
 
-- Hiçbir açık bağımlı daha yüksek bir sahip **. SONEKLERİ** öncelik.
+- Açık bağımlı, daha yüksek bir değere sahip değildir **. SONEK** önceliği.
 
-Çıkarsanan bağımlılıklar beklenmeyen etkilere neden olabilir. Hedefin açıklama bloğu komutları içeriyorsa, NMAKE kuralda komutlar yerine bu komutları yürütür.
+Gösterilen bağımlılıklar beklenmedik yan etkilere neden olabilir. Hedefin açıklama bloğu komutlar içeriyorsa, NMAKE kuraldaki komutlar yerine bu komutları yürütür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkarım Kuralları](inference-rules.md)
+[Çıkarım kuralları](inference-rules.md)

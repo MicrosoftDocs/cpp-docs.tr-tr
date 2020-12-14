@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Transformatör sınıfı'
 title: dönüştürücü Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,18 +19,18 @@ f1_keywords:
 helpviewer_keywords:
 - transformer class
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
-ms.openlocfilehash: adc83ab2d8268460b3a35be44f5733c8b6fa1c43
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 34d937d1be1c3907ea75d0345bb52bcf359d4f34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217902"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188137"
 ---
 # <a name="transformer-class"></a>dönüştürücü Sınıfı
 
 Bir `transformer` mesajlaşma bloğu, tek bir `propagator_block` türden iletileri kabul edebilecek ve farklı türde sınırsız sayıda iletiyi depolayan bir tek hedeftir, birden çok kaynaktır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class _Input, class _Output>
@@ -91,7 +92,7 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept_message"></a><a name="accept_message"></a>accept_message
+## <a name="accept_message"></a><a name="accept_message"></a> accept_message
 
 Bu mesajlaşma bloğu tarafından sunulan bir iletiyi kabul eder `transformer` ve sahipliği çağırana aktarmakta.
 
@@ -108,7 +109,7 @@ virtual message<_Output>* accept_message(runtime_object_identity _MsgId);
 
 `message`Çağıranın artık sahipliği olan nesneye yönelik bir işaretçi.
 
-## <a name="consume_message"></a><a name="consume_message"></a>consume_message
+## <a name="consume_message"></a><a name="consume_message"></a> consume_message
 
 , Hedef tarafından daha önce sunulan ve ayrılmış bir ileti tüketir `transformer` ve sahipliği çağırana aktarmıştır.
 
@@ -129,7 +130,7 @@ virtual message<_Output>* consume_message(runtime_object_identity _MsgId);
 
 `accept`,, Ancak, ' a benzer ancak her zaman öğesine yapılan bir çağrıdır `reserve` .
 
-## <a name="link_target_notification"></a><a name="link_target_notification"></a>link_target_notification
+## <a name="link_target_notification"></a><a name="link_target_notification"></a> link_target_notification
 
 Bu mesajlaşma bloğuna yeni bir hedef bağlandığını bildiren bir geri çağırma `transformer` .
 
@@ -137,7 +138,7 @@ Bu mesajlaşma bloğuna yeni bir hedef bağlandığını bildiren bir geri çağ
 virtual void link_target_notification(_Inout_ ITarget<_Output> *);
 ```
 
-## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a> propagate_message
 
 Zaman uyumsuz bir iletiyi bir `ISource` bloğundan bu `transformer` mesajlaşma bloğuna geçirir. `propagate`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
@@ -159,7 +160,7 @@ Nesneye yönelik bir işaretçi `message` .
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a>propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 Giriş iletilerinde transformatör işlevini yürütür.
 
@@ -167,7 +168,7 @@ Giriş iletilerinde transformatör işlevini yürütür.
 virtual void propagate_to_any_targets(_Inout_opt_ message<_Output> *);
 ```
 
-## <a name="release_message"></a><a name="release_message"></a>release_message
+## <a name="release_message"></a><a name="release_message"></a> release_message
 
 Önceki bir ileti ayırmasını yayınlar.
 
@@ -180,7 +181,7 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 `runtime_object_identity` `message` Serbest bırakılmakta olan nesne.
 
-## <a name="reserve_message"></a><a name="reserve_message"></a>reserve_message
+## <a name="reserve_message"></a><a name="reserve_message"></a> reserve_message
 
 Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `transformer` .
 
@@ -201,7 +202,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 Çağrıldıktan sonra `reserve` , döndürürse, **`true`** `consume` `release` iletinin sahipliğini almak ya da serbest bırakmak için ya da çağrılması gerekir.
 
-## <a name="resume_propagation"></a><a name="resume_propagation"></a>resume_propagation
+## <a name="resume_propagation"></a><a name="resume_propagation"></a> resume_propagation
 
 Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 
@@ -209,7 +210,7 @@ Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 virtual void resume_propagation();
 ```
 
-## <a name="send_message"></a><a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a> send_message
 
 Zaman uyumlu bir iletiyi bir `ISource` bloktan bu mesajlaşma bloğuna eşzamanlı olarak geçirir `transformer` . `send`Kaynak bloğu tarafından çağrıldığında yöntemi tarafından çağrılır.
 
@@ -231,7 +232,7 @@ Nesneye yönelik bir işaretçi `message` .
 
 Hedefin iletiyle ne işe karar verdiği [message_status](concurrency-namespace-enums.md) göstergesi.
 
-## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a> supports_anonymous_source
 
 `supports_anonymous_source`Bu bloğun bağlantılı olmayan bir kaynak tarafından kendisine sunulan iletileri kabul edemeyeceğini belirtmek için yöntemini geçersiz kılar.
 
@@ -243,7 +244,7 @@ virtual bool supports_anonymous_source();
 
 **`true`** bloğu sunulan iletileri ertelemez.
 
-## <a name="transformer"></a><a name="ctor"></a>dönüştürücü
+## <a name="transformer"></a><a name="ctor"></a> dönüştürücü
 
 `transformer`İleti bloğu oluşturur.
 
@@ -305,7 +306,7 @@ Tür, `_Transform_method` `_Output (_Input const &)` Bu `transformer` mesajlaşm
 
 Tür, `filter_method` `bool (_Input const &)` Bu `transformer` mesajlaşma bloğu tarafından önerilen bir iletiyi kabul edip etmediğini tespit etmek için çağrılan imzaya sahip bir functor.
 
-## <a name="transformer"></a><a name="dtor"></a>~ Transformatör
+## <a name="transformer"></a><a name="dtor"></a> ~ Transformatör
 
 `transformer`Mesajlaşma bloğunu yok eder.
 

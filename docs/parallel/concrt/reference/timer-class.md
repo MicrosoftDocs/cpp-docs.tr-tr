@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Timer sınıfı'
 title: süreölçer Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,18 +19,18 @@ f1_keywords:
 helpviewer_keywords:
 - timer class
 ms.assetid: 4f4dea51-de9f-40f9-93f5-dd724c567b49
-ms.openlocfilehash: 026aef03bb813585decb206c1691835330a4dd05
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 460185f61be0dd33fe11dfa0f94e2147893089d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188176"
 ---
 # <a name="timer-class"></a>süreölçer Sınıfı
 
 `timer`İleti bloğu, belirli `source_block` bir süre geçtikten sonra veya belirli aralıklarla hedefine bir ileti gönderebilen tek hedeftir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class T>
@@ -55,7 +56,7 @@ Bu bloktaki çıkış iletilerinin yük türü.
 |Ad|Açıklama|
 |----------|-----------------|
 |[tamazsınız](#pause)|`timer`Mesajlaşma bloğunu sonlandırır. Yinelenen `timer` mesajlaşma bloğu ise, sonraki bir çağrıyla yeniden başlatılabilir `start()` . Yinelenmeyen zamanlayıcılar için, çağrı ile aynı etkiye sahiptir `stop` .|
-|[start](#start)|`timer`Mesajlaşma bloğunu başlatır. Bu çağrıldıktan sonra belirtilen milisaniye sayısı, belirtilen değer aşağı akış olarak dağıtılır `message` .|
+|[başından](#start)|`timer`Mesajlaşma bloğunu başlatır. Bu çağrıldıktan sonra belirtilen milisaniye sayısı, belirtilen değer aşağı akış olarak dağıtılır `message` .|
 |[durdurulması](#stop)|`timer`Mesajlaşma bloğunu sonlandırır.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
@@ -88,7 +89,7 @@ Daha fazla bilgi için bkz. [zaman uyumsuz Ileti blokları](../../../parallel/co
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="accept_message"></a><a name="accept_message"></a>accept_message
+## <a name="accept_message"></a><a name="accept_message"></a> accept_message
 
 Bu mesajlaşma bloğu tarafından sunulan bir iletiyi kabul eder `timer` ve sahipliği çağırana aktarmakta.
 
@@ -105,7 +106,7 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 
 `message`Çağıranın artık sahipliği olan nesneye yönelik bir işaretçi.
 
-## <a name="consume_message"></a><a name="consume_message"></a>consume_message
+## <a name="consume_message"></a><a name="consume_message"></a> consume_message
 
 , Hedef tarafından daha önce sunulan ve ayrılmış bir ileti tüketir `timer` ve sahipliği çağırana aktarmıştır.
 
@@ -126,7 +127,7 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 
 `accept`,, Ancak, ' a benzer ancak her zaman öğesine yapılan bir çağrıdır `reserve` .
 
-## <a name="link_target_notification"></a><a name="link_target_notification"></a>link_target_notification
+## <a name="link_target_notification"></a><a name="link_target_notification"></a> link_target_notification
 
 Bu mesajlaşma bloğuna yeni bir hedef bağlandığını bildiren bir geri çağırma `timer` .
 
@@ -139,7 +140,7 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 *_PTarget*<br/>
 Yeni bağlantılı hedefe yönelik bir işaretçi.
 
-## <a name="pause"></a><a name="pause"></a>tamazsınız
+## <a name="pause"></a><a name="pause"></a> tamazsınız
 
 `timer`Mesajlaşma bloğunu sonlandırır. Yinelenen `timer` mesajlaşma bloğu ise, sonraki bir çağrıyla yeniden başlatılabilir `start()` . Yinelenmeyen zamanlayıcılar için, çağrı ile aynı etkiye sahiptir `stop` .
 
@@ -147,7 +148,7 @@ Yeni bağlantılı hedefe yönelik bir işaretçi.
 void pause();
 ```
 
-## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a>propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 , Blok tarafından oluşturulan iletiyi `timer` tüm bağlantılı hedeflere sunmaya çalışır.
 
@@ -155,7 +156,7 @@ void pause();
 virtual void propagate_to_any_targets(_Inout_opt_ message<T> *);
 ```
 
-## <a name="release_message"></a><a name="release_message"></a>release_message
+## <a name="release_message"></a><a name="release_message"></a> release_message
 
 Önceki bir ileti ayırmasını yayınlar.
 
@@ -168,7 +169,7 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 `runtime_object_identity` `message` Serbest bırakılmakta olan nesne.
 
-## <a name="reserve_message"></a><a name="reserve_message"></a>reserve_message
+## <a name="reserve_message"></a><a name="reserve_message"></a> reserve_message
 
 Bu mesajlaşma bloğu tarafından daha önce sunulan bir iletiyi ayırır `timer` .
 
@@ -189,7 +190,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 Çağrıldıktan sonra `reserve` , döndürürse, **`true`** `consume` `release` iletinin sahipliğini almak ya da serbest bırakmak için ya da çağrılması gerekir.
 
-## <a name="resume_propagation"></a><a name="resume_propagation"></a>resume_propagation
+## <a name="resume_propagation"></a><a name="resume_propagation"></a> resume_propagation
 
 Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 
@@ -197,7 +198,7 @@ Bir ayırma yayımlandıktan sonra yayılmaya devam eder.
 virtual void resume_propagation();
 ```
 
-## <a name="start"></a><a name="start"></a>başından
+## <a name="start"></a><a name="start"></a> başından
 
 `timer`Mesajlaşma bloğunu başlatır. Bu çağrıldıktan sonra belirtilen milisaniye sayısı, belirtilen değer aşağı akış olarak dağıtılır `message` .
 
@@ -205,7 +206,7 @@ virtual void resume_propagation();
 void start();
 ```
 
-## <a name="stop"></a><a name="stop"></a>durdurulması
+## <a name="stop"></a><a name="stop"></a> durdurulması
 
 `timer`Mesajlaşma bloğunu sonlandırır.
 
@@ -213,7 +214,7 @@ void start();
 void stop();
 ```
 
-## <a name="timer"></a><a name="ctor"></a>görevine
+## <a name="timer"></a><a name="ctor"></a> görevine
 
 Belirtilen bir `timer` aralıktan sonra belirli bir iletiyi tetikleyen bir mesajlaşma bloğu oluşturur.
 
@@ -244,7 +245,7 @@ timer(
 *_Ms*<br/>
 Belirtilen ileti için başlangıç çağrısının aşağı akış olarak yayılması için geçmesi gereken milisaniye sayısı.
 
-*deeri*<br/>
+*değer*<br/>
 Zamanlayıcı geçtiğinde aşağı akış yayılacağı değer.
 
 *_PTarget*<br/>
@@ -263,7 +264,7 @@ Doğru ise, zamanlayıcının her milisaniyede düzenli olarak tetikleneceği an
 
 Veya parametrelerini belirtmezseniz, çalışma zamanı varsayılan zamanlayıcıyı kullanır `_Scheduler` `_ScheduleGroup` .
 
-## <a name="timer"></a><a name="dtor"></a>~ Zamanlayıcı
+## <a name="timer"></a><a name="dtor"></a> ~ Zamanlayıcı
 
 Bir `timer` mesajlaşma bloğunu yok eder.
 

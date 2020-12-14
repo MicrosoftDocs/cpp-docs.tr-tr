@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: task_completion_event sınıfı'
 title: task_completion_event Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ f1_keywords:
 helpviewer_keywords:
 - task_completion_event class
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
-ms.openlocfilehash: b63e8c6986508806cedc8c094a4e8844491dd2fa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 791b68d6a67ea2f8a9697b69266e8744455f845c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219526"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188371"
 ---
 # <a name="task_completion_event-class"></a>task_completion_event Sınıfı
 
 Sınıfı, bir `task_completion_event` koşul karşılanana kadar bir görevin yürütülmesini ertelemenize veya dış bir olaya yanıt olarak bir görev başlatmanıza olanak sağlar.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename _ResultType>
@@ -57,7 +58,7 @@ Senaryolarınız tamamlanacak bir görev oluşturmanızı gerektirdiğinde ve bu
 
 Görev tamamlama olayı hiçbir zaman sinyal alınmadıysa, bundan sonra oluşturulan tüm görevler, yinelenenleri kaldırma sırasında iptal edilir.
 
-`task_completion_event`akıllı bir işaretçi gibi davranır ve değere göre geçirilmelidir.
+`task_completion_event` akıllı bir işaretçi gibi davranır ve değere göre geçirilmelidir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -69,7 +70,7 @@ Görev tamamlama olayı hiçbir zaman sinyal alınmadıysa, bundan sonra oluştu
 
 **Ad alanı:** eşzamanlılık
 
-## <a name="set"></a><a name="set"></a>kurmak
+## <a name="set"></a><a name="set"></a> kurmak
 
 Görev tamamlama olayını ayarlar.
 
@@ -92,7 +93,7 @@ Yöntemi, **`true`** olay ayarlanırken başarılı olduysa döndürür. **`fals
 
 Birden çok veya eşzamanlı çağrısı `set` olması durumunda, yalnızca ilk çağrı başarılı olur ve sonucu (varsa) görev tamamlanma olayında depolanır. Kalan kümeler yok sayılır ve yöntem false döndürür. Bir görev tamamlama olayı ayarladığınızda, bu olaydan oluşturulan tüm görevler hemen tamamlanır ve varsa devamlılıkları planlanacaktır. Dışındaki görev tamamlama nesneleri `_ResultType` **`void`** değeri devamlılığa geçirir.
 
-## <a name="set_exception"></a><a name="set_exception"></a>set_exception
+## <a name="set_exception"></a><a name="set_exception"></a> set_exception
 
 Bu olayla ilişkili tüm görevlere özel bir durum yayar.
 
@@ -116,7 +117,7 @@ Ayarlanacak özel durum işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-## <a name="task_completion_event"></a><a name="ctor"></a>task_completion_event
+## <a name="task_completion_event"></a><a name="ctor"></a> task_completion_event
 
 Bir `task_completion_event` nesnesi oluşturur.
 
