@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: form içindeki verileri görüntüleme ve düzenleme'
 title: Formdaki Verileri Görüntüleme ve Düzenleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - data [MFC]
 - data [MFC], displaying in a form
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
-ms.openlocfilehash: 6b663fabd0c87d9a2773e6f5a2796bcc8f57ce29
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 151e4036830f4923fbed2e609535edf3beacee5f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213258"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252330"
 ---
 # <a name="displaying-and-manipulating-data-in-a-form"></a>Formdaki Verileri Görüntüleme ve Düzenleme
 

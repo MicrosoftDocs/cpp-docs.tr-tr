@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: deque (STL/CLR)'
 title: sıradan ayır (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -98,12 +99,12 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
-ms.openlocfilehash: 75c83240b9125628fd5121368af547a5266bfb5c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 98ad68c3220424a30b6cc75363e5ff92fbc0f965
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221503"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252213"
 ---
 # <a name="deque-stlclr"></a>sıradan ayır (STL/CLR)
 
@@ -111,7 +112,7 @@ ms.locfileid: "87221503"
 
 Aşağıdaki açıklamada, `GValue` `Value` İkincisi bir başvuru türü olmadığı ve bu durumda olduğu sürece aynıdır `Value^` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value>
@@ -215,7 +216,7 @@ Denetlenen sıradaki öğenin türü.
 
 Nesnesi, öğe bloklarını belirten bir dizi tutamacı aracılığıyla denetlediği sıra için depolamayı ayırır ve boşaltır `Value` . Dizi isteğe bağlı olarak büyür. Büyüme, ön bekleyen ya da yeni bir öğe ekleme maliyetinin sabit zamanlı olduğu ve kalan öğelerin olumsuz olmadığı bir şekilde gerçekleşir. Ayrıca, sabit zamanlı olarak ve kalan öğeleri rahatsız etmeden bir öğeyi da kaldırabilirsiniz. Bu nedenle, bir deque şablon sınıfı [kuyruğu (STL/CLR)](../dotnet/queue-stl-clr.md) veya şablon sınıfı [yığını (STL/CLR)](../dotnet/stack-stl-clr.md)için temel alınan kapsayıcı için iyi bir adaydır.
 
-Bir `deque` nesne Rastgele erişimli yineleyiciler destekler, bu da bir öğeye, ilk (ön) öğesi için sıfırdan saymaya, [deque::size (STL/CLR)](#size) `() - 1` en son (arka) öğe için sıfırdan (önde gelen) kadar olan bir öğeye başvuruda bulunmak üzere doğrudan bir öğe yazabilirsiniz. Ayrıca, bir deque 'ın, [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)şablon sınıfı için temel alınan kapsayıcı için iyi bir aday olduğu anlamına gelir.
+Bir `deque` nesne Rastgele erişimli yineleyiciler destekler, bu da bir öğeye, ilk (ön) öğesi için sıfırdan saymaya, [](#size) `() - 1` en son (arka) öğe için sıfırdan (önde gelen) kadar olan bir öğeye başvuruda bulunmak üzere doğrudan bir öğe yazabilirsiniz. Ayrıca, bir deque 'ın, [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)şablon sınıfı için temel alınan kapsayıcı için iyi bir aday olduğu anlamına gelir.
 
 Bir deque Yineleyici, kendi ilişkili deque nesnesine bir tutamacı depolar ve bu nesnenin, oluşturduğu öğe sapması ile birlikte depolar. Yineleyiciler yalnızca ilişkili kapsayıcı nesneleriyle birlikte kullanabilirsiniz. Bir deque öğesinin sapması, konumuyla aynı *değildir.* Eklenen ilk öğe sapma sıfıra sahip, Next eklenmiş öğenin sapma 1, ancak Next prepelement, sapma-1 ' i içerir.
 
@@ -225,11 +226,11 @@ Bir öğeyi silme veya kaldırma, kendi saklı değeri için yıkıcıyı çağ�
 
 ## <a name="members"></a>Üyeler
 
-## <a name="dequeassign-stlclr"></a><a name="assign"></a>deque:: Assign (STL/CLR)
+## <a name="dequeassign-stlclr"></a><a name="assign"></a> deque:: Assign (STL/CLR)
 
 Tüm öğeleri değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void assign(size_type count, value_type val);
@@ -261,7 +262,7 @@ Eklenecek öğenin değeri.
 
 `InIt`Bir tamsayı türünde ise ikinci üye işlevi ile aynı şekilde davranır `assign((size_type)first, (value_type)last)` . Aksi takdirde, denetlenen diziyi [ `first` ,) sırasıyla değiştirir `last` . Bunu, denetimli diziyi başka bir sıra kopyalamak için kullanırsınız.
 
-Üçüncü üye işlevi, denetlenen diziyi Numaralandırıcı *sağ*tarafından belirlenen sırayla değiştirir. Denetim, bir Numaralandırıcı tarafından tanımlanan bir dizinin bir kopyasını denetimli sıra haline getirmek için kullanılır.
+Üçüncü üye işlevi, denetlenen diziyi Numaralandırıcı *sağ* tarafından belirlenen sırayla değiştirir. Denetim, bir Numaralandırıcı tarafından tanımlanan bir dizinin bir kopyasını denetimli sıra haline getirmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -306,11 +307,11 @@ a b
 a b c
 ```
 
-## <a name="dequeat-stlclr"></a><a name="at"></a>deque:: at (STL/CLR)
+## <a name="dequeat-stlclr"></a><a name="at"></a> deque:: at (STL/CLR)
 
 Belirtilen konumdaki bir öğeye erişir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 reference at(size_type pos);
@@ -323,7 +324,7 @@ Erişim için öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, *POS*konumundaki denetimli sıranın öğesine bir başvuru döndürür. Konumunu bildiğiniz bir öğeyi okumak veya yazmak için bunu kullanırsınız.
+Üye işlevi, *POS* konumundaki denetimli sıranın öğesine bir başvuru döndürür. Konumunu bildiğiniz bir öğeyi okumak veya yazmak için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -358,11 +359,11 @@ a b c
 a x c
 ```
 
-## <a name="dequeback-stlclr"></a><a name="back"></a>deque:: Back (STL/CLR)
+## <a name="dequeback-stlclr"></a><a name="back"></a> deque:: Back (STL/CLR)
 
 Son öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reference back();
@@ -409,11 +410,11 @@ back() = c
 a b x
 ```
 
-## <a name="dequeback_item-stlclr"></a><a name="back_item"></a>deque:: back_item (STL/CLR)
+## <a name="dequeback_item-stlclr"></a><a name="back_item"></a> deque:: back_item (STL/CLR)
 
 Son öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property value_type back_item;
@@ -460,11 +461,11 @@ back_item = c
 a b x
 ```
 
-## <a name="dequebegin-stlclr"></a><a name="begin"></a>deque:: Begin (STL/CLR)
+## <a name="dequebegin-stlclr"></a><a name="begin"></a> deque:: Begin (STL/CLR)
 
 Denetlenen dizinin başlangıcını belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 iterator begin();
@@ -515,11 +516,11 @@ a b c
 x y c
 ```
 
-## <a name="dequeclear-stlclr"></a><a name="clear"></a>deque:: Clear (STL/CLR)
+## <a name="dequeclear-stlclr"></a><a name="clear"></a> deque:: Clear (STL/CLR)
 
 Tüm öğeleri kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void clear();
@@ -572,11 +573,11 @@ a b
 size() = 0
 ```
 
-## <a name="dequeconst_iterator-stlclr"></a><a name="const_iterator"></a>deque:: const_iterator (STL/CLR)
+## <a name="dequeconst_iterator-stlclr"></a><a name="const_iterator"></a> deque:: const_iterator (STL/CLR)
 
 Denetlenen dizi için bir sabit yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T2 const_iterator;
@@ -613,11 +614,11 @@ int main()
 a b c
 ```
 
-## <a name="dequeconst_reference-stlclr"></a><a name="const_reference"></a>deque:: const_reference (STL/CLR)
+## <a name="dequeconst_reference-stlclr"></a><a name="const_reference"></a> deque:: const_reference (STL/CLR)
 
 Bir öğe için sabit bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% const_reference;
@@ -657,11 +658,11 @@ int main()
 a b c
 ```
 
-## <a name="dequeconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>deque:: const_reverse_iterator (STL/CLR)
+## <a name="dequeconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> deque:: const_reverse_iterator (STL/CLR)
 
 Denetlenen sıra için bir sabit ters yineleyicinin türü..
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T4 const_reverse_iterator;
@@ -699,11 +700,11 @@ int main()
 c b a
 ```
 
-## <a name="dequedeque-stlclr"></a><a name="deque"></a>deque::d eque (STL/CLR)
+## <a name="dequedeque-stlclr"></a><a name="deque"></a> deque::d eque (STL/CLR)
 
 Bir kapsayıcı nesnesi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 deque();
@@ -745,13 +746,13 @@ Oluşturucu:
 
 `deque(deque<Value>% right);`
 
-denetlenen sırayı [ `right.begin()` ,) sırasıyla başlatır `right.end()` . Bu işlemi, deque nesnesi *sağa*tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanırsınız. Yineleyiciler hakkında daha fazla bilgi için bkz. [deque:: Begin (STL/CLR)](#begin) ve [deque:: End (STL/CLR)](#end).
+denetlenen sırayı [ `right.begin()` ,) sırasıyla başlatır `right.end()` . Bu işlemi, deque nesnesi *sağa* tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için kullanırsınız. Yineleyiciler hakkında daha fazla bilgi için bkz. [deque:: Begin (STL/CLR)](#begin) ve [deque:: End (STL/CLR)](#end).
 
 Oluşturucu:
 
 `deque(deque<Value>^ right);`
 
-denetlenen sırayı [ `right->begin()` ,) sırasıyla başlatır `right->end()` . Tutamacı *doğru*olan deque nesnesi tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
+denetlenen sırayı [ `right->begin()` ,) sırasıyla başlatır `right->end()` . Tutamacı *doğru* olan deque nesnesi tarafından denetlenen sıranın bir kopyası olan ilk denetimli bir sıra belirtmek için bunu kullanırsınız.
 
 Oluşturucu:
 
@@ -763,7 +764,7 @@ Oluşturucu:
 
 `deque(size_type count, value_type val);`
 
-her biri değer *Val*ile denetlenen diziyi *say* öğesi ile başlatır. Kapsayıcıyı aynı değere sahip olan öğelerle birlikte doldurmanız için kullanabilirsiniz.
+her biri değer *Val* ile denetlenen diziyi *say* öğesi ile başlatır. Kapsayıcıyı aynı değere sahip olan öğelerle birlikte doldurmanız için kullanabilirsiniz.
 
 Oluşturucu:
 
@@ -777,7 +778,7 @@ Oluşturucu:
 
 `deque(System::Collections::Generic::IEnumerable<Value>^ right);`
 
-denetlenen sırayı Numaralandırıcı *hakkı*tarafından belirlenen sırayla başlatır. Denetlenen diziyi, Numaralandırıcı tarafından tanımlanan başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
+denetlenen sırayı Numaralandırıcı *hakkı* tarafından belirlenen sırayla başlatır. Denetlenen diziyi, Numaralandırıcı tarafından tanımlanan başka bir dizinin bir kopyası yapmak için kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -844,11 +845,11 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="dequedifference_type-stlclr"></a><a name="difference_type"></a>deque::d ifference_type (STL/CLR)
+## <a name="dequedifference_type-stlclr"></a><a name="difference_type"></a> deque::d ifference_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int difference_type;
@@ -898,11 +899,11 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="dequeempty-stlclr"></a><a name="empty"></a>deque:: Empty (STL/CLR)
+## <a name="dequeempty-stlclr"></a><a name="empty"></a> deque:: Empty (STL/CLR)
 
 Bir öğe olup olmadığını sınar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 bool empty();
@@ -949,11 +950,11 @@ size() = 0
 empty() = True
 ```
 
-## <a name="dequeend-stlclr"></a><a name="end"></a>deque:: End (STL/CLR)
+## <a name="dequeend-stlclr"></a><a name="end"></a> deque:: End (STL/CLR)
 
 Denetlenen dizinin bitişini belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 iterator end();
@@ -1005,11 +1006,11 @@ a b c
 a x y
 ```
 
-## <a name="dequeerase-stlclr"></a><a name="erase"></a>deque:: Erase (STL/CLR)
+## <a name="dequeerase-stlclr"></a><a name="erase"></a> deque:: Erase (STL/CLR)
 
 Belirtilen konumlardaki öğeleri kaldırır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator erase(iterator where);
@@ -1029,7 +1030,7 @@ Silinecek öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, tarafından işaret edilen kontrollü sıranın öğesini *olduğu*gibi kaldırır. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
+İlk üye işlevi, tarafından işaret edilen kontrollü sıranın öğesini *olduğu* gibi kaldırır. Tek bir öğeyi kaldırmak için bunu kullanırsınız.
 
 İkinci üye işlevi, [,) aralığındaki denetlenen sıranın öğelerini kaldırır `first` `last` . Sıfır veya daha fazla bitişik öğeyi kaldırmak için bunu kullanırsınız.
 
@@ -1084,11 +1085,11 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="dequefront-stlclr"></a><a name="front"></a>deque:: Front (STL/CLR)
+## <a name="dequefront-stlclr"></a><a name="front"></a> deque:: Front (STL/CLR)
 
 İlk öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reference front();
@@ -1135,11 +1136,11 @@ front() = a
 x b c
 ```
 
-## <a name="dequefront_item-stlclr"></a><a name="front_item"></a>deque:: front_item (STL/CLR)
+## <a name="dequefront_item-stlclr"></a><a name="front_item"></a> deque:: front_item (STL/CLR)
 
 İlk öğeye erişir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 property value_type front_item;
@@ -1186,11 +1187,11 @@ front_item = a
 x b c
 ```
 
-## <a name="dequegeneric_container-stlclr"></a><a name="generic_container"></a>deque:: generic_container (STL/CLR)
+## <a name="dequegeneric_container-stlclr"></a><a name="generic_container"></a> deque:: generic_container (STL/CLR)
 
 Kapsayıcının genel arabiriminin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::
@@ -1252,11 +1253,11 @@ a b c d
 a b c d e
 ```
 
-## <a name="dequegeneric_iterator-stlclr"></a><a name="generic_iterator"></a>deque:: generic_iterator (STL/CLR)
+## <a name="dequegeneric_iterator-stlclr"></a><a name="generic_iterator"></a> deque:: generic_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak bir yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::Generic::
@@ -1309,11 +1310,11 @@ a b c
 a a c
 ```
 
-## <a name="dequegeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>deque:: generic_reverse_iterator (STL/CLR)
+## <a name="dequegeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> deque:: generic_reverse_iterator (STL/CLR)
 
 Kapsayıcı için genel arabirimle birlikte kullanılacak ters yineleyicinin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Microsoft::VisualC::StlClr::Generic::
@@ -1366,11 +1367,11 @@ a b c
 a c c
 ```
 
-## <a name="dequegeneric_value-stlclr"></a><a name="generic_value"></a>deque:: generic_value (STL/CLR)
+## <a name="dequegeneric_value-stlclr"></a><a name="generic_value"></a> deque:: generic_value (STL/CLR)
 
 Kapsayıcının genel arabirimiyle kullanılacak öğe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef GValue generic_value;
@@ -1422,11 +1423,11 @@ a b c
 a a c
 ```
 
-## <a name="dequeinsert-stlclr"></a><a name="insert"></a>deque:: insert (STL/CLR)
+## <a name="dequeinsert-stlclr"></a><a name="insert"></a> deque:: insert (STL/CLR)
 
 Belirtilen konumdaki öğeleri ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 iterator insert(iterator where, value_type val);
@@ -1467,9 +1468,9 @@ Kapsayıcının ekleneceği yer.
 
 `InIt`Bir tamsayı türü ise, üçüncü üye işlevi ile aynı şekilde davranır `insert(where, (size_type)first, (value_type)last)` . Aksi takdirde, [ `first` ,) dizisini ekler `last` . Başka bir dizide kopyalanmış sıfır veya daha fazla bitişik öğe eklemek için bunu kullanırsınız.
 
-Dördüncü üye işlevi, *sağ*tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
+Dördüncü üye işlevi, *sağ* tarafından belirlenen diziyi ekler. Bir Numaralandırıcı tarafından tanımlanan bir sıra eklemek için bunu kullanırsınız.
 
-Tek bir öğe eklenirken, öğe kopyalarının sayısı, ekleme noktası ve sıranın bir kapanış ucu arasındaki öğe sayısında doğrusal olur. (Sıranın her iki ucunda bir veya daha fazla öğe eklenirken, hiçbir öğe kopyası gerçekleşmez.) `InIt`Bir giriş yineleyicidir, üçüncü üye işlevi dizideki her öğe için etkin bir şekilde tek bir ekleme gerçekleştirir. Aksi halde, öğe eklerken `N` , öğe kopyalarının sayısı doğrusal `N` ve ekleme noktası ile sıranın bir kapanış ucu arasındaki öğe sayısına eklenir.
+Tek bir öğe eklenirken, öğe kopyalarının sayısı, ekleme noktası ve sıranın bir kapanış ucu arasındaki öğe sayısında doğrusal olur. (Sıranın her iki ucunda bir veya daha fazla öğe eklenirken, hiçbir öğe kopyası gerçekleşmez.) `InIt` Bir giriş yineleyicidir, üçüncü üye işlevi dizideki her öğe için etkin bir şekilde tek bir ekleme gerçekleştirir. Aksi halde, öğe eklerken `N` , öğe kopyalarının sayısı doğrusal `N` ve ekleme noktası ile sıranın bir kapanış ucu arasındaki öğe sayısına eklenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1531,11 +1532,11 @@ y y a x b
 a x b c y y a x b
 ```
 
-## <a name="dequeiterator-stlclr"></a><a name="iterator"></a>deque:: yineleyici (STL/CLR)
+## <a name="dequeiterator-stlclr"></a><a name="iterator"></a> deque:: yineleyici (STL/CLR)
 
 Denetlenen dizi için bir yineleyici türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T1 iterator;
@@ -1580,11 +1581,11 @@ a b c
 x b c
 ```
 
-## <a name="dequeoperator-stlclr"></a><a name="op_neq"></a>deque:: operator! = (STL/CLR)
+## <a name="dequeoperator-stlclr"></a><a name="op_neq"></a> deque:: operator! = (STL/CLR)
 
 Deque eşit değildir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value>
@@ -1602,7 +1603,7 @@ Karşılaştırılacak doğru kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşleç işlevi döndürülür `!(left == right)` . İki deques öğe öğesine göre karşılaştırıldığı zaman *sola* doğru sıralanmadığını test *right* etmek için bunu kullanırsınız.
+İşleç işlevi döndürülür `!(left == right)` . İki deques öğe öğesine göre karşılaştırıldığı zaman *sola* doğru sıralanmadığını test  etmek için bunu kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -1649,11 +1650,11 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="dequeoperatorstlclr"></a><a name="operator"></a>deque:: operator (STL/CLR)
+## <a name="dequeoperatorstlclr"></a><a name="operator"></a> deque:: operator (STL/CLR)
 
 Belirtilen konumdaki bir öğeye erişir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 reference operator[](size_type pos);
@@ -1666,7 +1667,7 @@ Erişim için öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Member işleci, *POS*konumundaki öğesine bir referene döndürür. Bu, konumunu bildiğiniz bir öğeye erişmek için kullanılır.
+Member işleci, *POS* konumundaki öğesine bir referene döndürür. Bu, konumunu bildiğiniz bir öğeye erişmek için kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -1701,11 +1702,11 @@ a b c
 a x c
 ```
 
-## <a name="dequepop_back-stlclr"></a><a name="pop_back"></a>deque::p op_back (STL/CLR)
+## <a name="dequepop_back-stlclr"></a><a name="pop_back"></a> deque::p op_back (STL/CLR)
 
 Son öğeyi kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void pop_back();
@@ -1748,11 +1749,11 @@ a b c
 a b
 ```
 
-## <a name="dequepop_front-stlclr"></a><a name="pop_front"></a>deque::p op_front (STL/CLR)
+## <a name="dequepop_front-stlclr"></a><a name="pop_front"></a> deque::p op_front (STL/CLR)
 
 İlk öğeyi kaldırır.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void pop_front();
@@ -1795,11 +1796,11 @@ a b c
 b c
 ```
 
-## <a name="dequepush_back-stlclr"></a><a name="push_back"></a>deque::p ush_back (STL/CLR)
+## <a name="dequepush_back-stlclr"></a><a name="push_back"></a> deque::p ush_back (STL/CLR)
 
 Yeni bir son öğe ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void push_back(value_type val);
@@ -1835,11 +1836,11 @@ int main()
 a b c
 ```
 
-## <a name="dequepush_front-stlclr"></a><a name="push_front"></a>deque::p ush_front (STL/CLR)
+## <a name="dequepush_front-stlclr"></a><a name="push_front"></a> deque::p ush_front (STL/CLR)
 
 Yeni bir ilk öğe ekler.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 void push_front(value_type val);
@@ -1875,11 +1876,11 @@ int main()
 c b a
 ```
 
-## <a name="dequerbegin-stlclr"></a><a name="rbegin"></a>deque:: rbegin (STL/CLR)
+## <a name="dequerbegin-stlclr"></a><a name="rbegin"></a> deque:: rbegin (STL/CLR)
 
 Ters denetlenen sıranın başlangıcını belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reverse_iterator rbegin();
@@ -1930,11 +1931,11 @@ a b c
 a y x
 ```
 
-## <a name="dequereference-stlclr"></a><a name="reference"></a>deque:: Reference (STL/CLR)
+## <a name="dequereference-stlclr"></a><a name="reference"></a> deque:: Reference (STL/CLR)
 
 Bir öğe için bir başvuru türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef value_type% reference;
@@ -1985,11 +1986,11 @@ a b c
 A B C
 ```
 
-## <a name="dequerend-stlclr"></a><a name="rend"></a>deque:: rend (STL/CLR)
+## <a name="dequerend-stlclr"></a><a name="rend"></a> deque:: rend (STL/CLR)
 
 Ters denetlenen sıranın sonunu belirtir.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 reverse_iterator rend();
@@ -2041,11 +2042,11 @@ a b c
 y x c
 ```
 
-## <a name="dequeresize-stlclr"></a><a name="resize"></a>deque:: Resize (STL/CLR)
+## <a name="dequeresize-stlclr"></a><a name="resize"></a> deque:: Resize (STL/CLR)
 
 Öğe sayısını değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void resize(size_type new_size);
@@ -2062,7 +2063,7 @@ Padding öğesinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri, [deque:: size (STL/CLR)](#size) `()` henceileri 'nin *new_size*döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri olan öğeleri ekler `value_type()` ; İkinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe [deque:: size (STL/CLR)](#size) zamanlarını etkin bir şekilde siler `() -` `new_size` . Kontrol edilen sıranın boyut *new_size*sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre kullanabilirsiniz.
+Üye işlevleri, [deque:: size (STL/CLR)](#size) `()` henceileri 'nin *new_size* döndürdüğünden emin olun. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri olan öğeleri ekler `value_type()` ; İkinci üye işlevi ise değer *Val* ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi son öğe [deque:: size (STL/CLR)](#size) zamanlarını etkin bir şekilde siler `() -` `new_size` . Kontrol edilen sıranın boyut *new_size* sahip olduğundan emin olmak için, geçerli denetimli diziyi kırparak veya doldurmaya göre kullanabilirsiniz.
 
 ### <a name="example"></a>Örnek
 
@@ -2101,11 +2102,11 @@ size() = 0
 x x x x x
 ```
 
-## <a name="dequereverse_iterator-stlclr"></a><a name="reverse_iterator"></a>deque:: reverse_iterator (STL/CLR)
+## <a name="dequereverse_iterator-stlclr"></a><a name="reverse_iterator"></a> deque:: reverse_iterator (STL/CLR)
 
 Denetlenen sıra için ters yineleyicinin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef T3 reverse_iterator;
@@ -2150,11 +2151,11 @@ c b a
 x b a
 ```
 
-## <a name="dequesize-stlclr"></a><a name="size"></a>deque:: size (STL/CLR)
+## <a name="dequesize-stlclr"></a><a name="size"></a> deque:: size (STL/CLR)
 
 Öğe sayısını sayar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 size_type size();
@@ -2203,11 +2204,11 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="dequesize_type-stlclr"></a><a name="size_type"></a>deque:: size_type (STL/CLR)
+## <a name="dequesize_type-stlclr"></a><a name="size_type"></a> deque:: size_type (STL/CLR)
 
 İki öğe arasındaki işaretli bir mesafe türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef int size_type;
@@ -2248,11 +2249,11 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="dequeswap-stlclr"></a><a name="swap"></a>deque:: swap (STL/CLR)
+## <a name="dequeswap-stlclr"></a><a name="swap"></a> deque:: swap (STL/CLR)
 
 İki kapsayıcının içeriğinin yerini değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void swap(deque<Value>% right);
@@ -2265,7 +2266,7 @@ void swap(deque<Value>% right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir . Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz. Bunu iki kapsayıcının içeriğini değiş tokuş etmek için hızlı bir yol olarak kullanırsınız.
 
 ### <a name="example"></a>Örnek
 
@@ -2312,11 +2313,11 @@ x x x x x
 a b c
 ```
 
-## <a name="dequeto_array-stlclr"></a><a name="to_array"></a>deque:: to_array (STL/CLR)
+## <a name="dequeto_array-stlclr"></a><a name="to_array"></a> deque:: to_array (STL/CLR)
 
 Denetimli sırayı yeni bir diziye kopyalar.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 cli::array<Value>^ to_array();
@@ -2361,11 +2362,11 @@ a b c d
 a b c
 ```
 
-## <a name="dequevalue_type-stlclr"></a><a name="value_type"></a>deque:: value_type (STL/CLR)
+## <a name="dequevalue_type-stlclr"></a><a name="value_type"></a> deque:: value_type (STL/CLR)
 
 Öğenin türü.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```cpp
 typedef Value value_type;
@@ -2373,7 +2374,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tür, şablon parametre *değeri*için bir eş anlamlı.
+Tür, şablon parametre *değeri* için bir eş anlamlı.
 
 ### <a name="example"></a>Örnek
 
@@ -2406,11 +2407,11 @@ int main()
 a b c
 ```
 
-## <a name="operatorlt-deque-stlclr"></a><a name="op_lt"></a>işleç &lt; (deque) (STL/CLR)
+## <a name="operatorlt-deque-stlclr"></a><a name="op_lt"></a> işleç &lt; (deque) (STL/CLR)
 
 Karşılaştırmadan daha az.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value>
@@ -2475,11 +2476,11 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-deque-stlclr"></a><a name="op_lteq"></a>operator &lt; = (deque) (STL/CLR)
+## <a name="operatorlt-deque-stlclr"></a><a name="op_lteq"></a> operator &lt; = (deque) (STL/CLR)
 
 Deque küçüktür veya eşittir karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value>
@@ -2544,11 +2545,11 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-deque-stlclr"></a><a name="op_as"></a>operator = (deque) (STL/CLR)
+## <a name="operator-deque-stlclr"></a><a name="op_as"></a> operator = (deque) (STL/CLR)
 
 Denetlenen sırayı değiştirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 deque<Value>% operator=(deque<Value>% right);
@@ -2597,11 +2598,11 @@ a b c
 a b c
 ```
 
-## <a name="operator-deque-stlclr"></a><a name="op_eq"></a>operator = = (deque) (STL/CLR)
+## <a name="operator-deque-stlclr"></a><a name="op_eq"></a> operator = = (deque) (STL/CLR)
 
 Deque eşittir karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value>
@@ -2666,11 +2667,11 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-deque-stlclr"></a><a name="op_gt"></a>işleç &gt; (deque) (STL/CLR)
+## <a name="operatorgt-deque-stlclr"></a><a name="op_gt"></a> işleç &gt; (deque) (STL/CLR)
 
 Karşılaştırmadan daha büyük.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value>
@@ -2735,11 +2736,11 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-deque-stlclr"></a><a name="op_gteq"></a>operator &gt; = (deque) (STL/CLR)
+## <a name="operatorgt-deque-stlclr"></a><a name="op_gteq"></a> operator &gt; = (deque) (STL/CLR)
 
 Deque veya eşittir karşılaştırması.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<typename Value>

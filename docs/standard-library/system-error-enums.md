@@ -1,22 +1,23 @@
 ---
-title: '&lt;system_error&gt; numaralandırmalar'
+description: 'Hakkında daha fazla bilgi edinin: &lt; system_error &gt; numaralandırmalar'
+title: '&lt;system_error &gt; numaralandırmalar'
 ms.date: 11/04/2016
 f1_keywords:
 - system_error/std::errc
 - system_error/std::io_errc
 ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
-ms.openlocfilehash: cff8a58545409c4358cd303e41d27520edd5d552
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 63126c8fde91d44dbecf52cca1240c4f8b44b88a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79422362"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259454"
 ---
-# <a name="ltsystem_errorgt-enums"></a>&lt;system_error&gt; numaralandırmalar
+# <a name="ltsystem_errorgt-enums"></a>&lt;system_error &gt; numaralandırmalar
 
-## <a name="errc"></a>ERRC
+## <a name="errc"></a><a name="errc"></a> ERRC
 
-`<errno.h>`içinde POSIX tarafından tanımlanan tüm hata kodu makroları için simgesel adlar sağlar.
+İçinde POSIX tarafından tanımlanan tüm hata kodu makroları için simgesel adlar sağlar `<errno.h>` .
 
 ```cpp
 class errc {
@@ -103,9 +104,9 @@ class errc {
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="io_errc"></a>io_errc
+## <a name="io_errc"></a><a name="io_errc"></a> io_errc
 
-\<iostream > hata koşulları için simgesel adlar sağlar. [İos_base:: failure](../standard-library/ios-base-class.md#failure)`code()` işlevi tarafından döndürülen değerle karşılaştırılacak [error_condition](../standard-library/error-condition-class.md) nesneleri oluşturmak için kullanılabilir.
+İçindeki hata koşulları için simgesel adlar sağlar \<iostream> . [İos_base:: Failure](../standard-library/ios-base-class.md#failure) işlevi tarafından döndürülen değerle karşılaştırılacak [error_condition](../standard-library/error-condition-class.md) nesneleri oluşturmak için kullanılabilir `code()` .
 
 ```cpp
 class io_errc {
@@ -117,7 +118,7 @@ class io_errc {
 
 Bu sabit listesi için hem [std:: make_error_code ()](../standard-library/system-error-functions.md#make_error_code) hem de [std:: make_error_condition ()](../standard-library/system-error-functions.md#make_error_condition) aşırı yüklendi.
 
-`ios_base::failure`, `error_condition`dışındaki hata kodlarının kategorilerini içerebilir.
+`ios_base::failure` , dışındaki hata kodlarının kategorilerini içerebilir `error_condition` .
 
 ### <a name="example"></a>Örnek
 

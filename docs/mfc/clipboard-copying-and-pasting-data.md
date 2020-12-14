@@ -1,16 +1,17 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: Pano: veri kopyalama ve yapıştırma'
 title: 'Pano: Veri Kopyalama ve Yapıştırma'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-ms.openlocfilehash: ed3056ec4fb3d3098870a03522d3bf17f41fbe34
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: fdc102cf7a92bc78df83419269bb5de828dc9d19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251238"
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>Pano: Veri Kopyalama ve Yapıştırma
 
@@ -18,7 +19,7 @@ Bu konu başlığı altında, OLE uygulamanızda Pano 'Ya kopyalamayı ve yapı�
 
 Kopyalama veya yapıştırmayı uygulayabilmeniz için önce, düzenleme menüsünde kopyalama, kesme ve yapıştırma seçeneklerini işleyecek işlevler sağlamalısınız.
 
-## <a name="copying-or-cutting-data"></a><a name="_core_copying_or_cutting_data"></a>Verileri kopyalama veya kesme
+## <a name="copying-or-cutting-data"></a><a name="_core_copying_or_cutting_data"></a> Verileri kopyalama veya kesme
 
 #### <a name="to-copy-data-to-the-clipboard"></a>Verileri panoya kopyalamak için
 
@@ -34,7 +35,7 @@ Kopyalama veya yapıştırmayı uygulayabilmeniz için önce, düzenleme menüs�
 
 Bu sıranın bir örneğini görmek için `OnEditCut` `OnEditCopy` MFC OLE örnek programlar [Oclient](../overview/visual-cpp-samples.md) ve [hiersvr](../overview/visual-cpp-samples.md)içindeki ve işlevlerine bakın. Bu örneklerin Şu anda seçili olan verilere yönelik bir işaretçi korudığına, 1. adım zaten tamamlanmış olduğunu unutmayın.
 
-## <a name="pasting-data"></a><a name="_core_pasting_data"></a>Verileri yapıştırma
+## <a name="pasting-data"></a><a name="_core_pasting_data"></a> Verileri yapıştırma
 
 Verileri yapıştırmaktan daha karmaşıktır çünkü verileri uygulamanıza yapıştırmada kullanılacak biçimi seçmeniz gerekir.
 
@@ -69,4 +70,4 @@ Düzenle menüsünde Özel Yapıştır seçeneğini işlemek için [OLE 'deki ko
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pano: OLE Pano Mekanizmasını Kullanma](clipboard-using-the-ole-clipboard-mechanism.md)
+[Pano: OLE Pano mekanizmasını kullanma](clipboard-using-the-ole-clipboard-mechanism.md)

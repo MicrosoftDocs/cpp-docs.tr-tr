@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2801'
 title: Derleyici hatası C2801
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2801
 ms.assetid: 35dfc7ea-9e37-4e30-baa1-944dc61302f5
-ms.openlocfilehash: cfb89c79534318ab1fbcaa06667d594bfe2f1157
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ca7e74f99b91b5a6699cdf3361ab64a89b7a7392
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297479"
 ---
 # <a name="compiler-error-c2801"></a>Derleyici hatası C2801
 
@@ -19,13 +20,13 @@ ms.locfileid: "87214600"
 
 Aşağıdaki işleçler yalnızca statik olmayan üyeler olarak aşırı yüklenebilir:
 
-- Atanmış`=`
+- Atanmış `=`
 
-- Sınıf üyesi erişimi`->`
+- Sınıf üyesi erişimi `->`
 
-- Alt simge oluşturma`[]`
+- Alt simge oluşturma `[]`
 
-- İşlev çağrısı`()`
+- İşlev çağrısı `()`
 
 Olası C2801 nedenler:
 

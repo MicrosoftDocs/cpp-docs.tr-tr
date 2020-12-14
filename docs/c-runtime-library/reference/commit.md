@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _commit'
 title: _commit
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - _commit function
 - committing files to disk
 ms.assetid: d0c74d3a-4f2d-4fb0-b140-2d687db3d233
-ms.openlocfilehash: 217bccbc4ebc937b89bca5cc127de72b7118481c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9ec0a6dad2e1dc7531d99e386adf41e4c444b8d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918526"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260689"
 ---
 # <a name="_commit"></a>_commit
 
@@ -63,7 +64,7 @@ Dosya başarıyla diske başarıyla temizleniyorsa **_commit** 0 döndürür. -1
 
 **_Commit** işlevi, işletim sistemini *FD* ile ilişkili dosyayı diske yazmaya zorlar. Bu çağrı, işletim sisteminin kararından değil, belirtilen dosyanın hemen temizlendiğinden emin olmanızı sağlar.
 
-*FD* geçersiz bir dosya tanımlayıcısıdır, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** , **EBADF**olarak ayarlanır.
+*FD* geçersiz bir dosya tanımlayıcısıdır, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev-1 döndürür ve **errno** , **EBADF** olarak ayarlanır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -71,7 +72,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**_commit**|\<GÇ. h>|\<errno. h>|
+|**_commit**|\<io.h>|\<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

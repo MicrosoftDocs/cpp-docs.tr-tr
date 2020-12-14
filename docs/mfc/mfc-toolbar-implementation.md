@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC araç çubuğu uygulama'
 title: MFC Araç Çubuğu Uygulaması
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - toolbars [MFC]
 - toolbars [MFC], implementing MFC toolbars
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
-ms.openlocfilehash: 7876e9403389c19a24e5a482534d0f223eaa4bf5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0e6ecf0536c55163dd63d5f05e4c5c9f24f2c4cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251160"
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC Araç Çubuğu Uygulaması
 
@@ -51,13 +52,13 @@ Aşağıdakiler bu makalede sunulmuştur:
 
 - [Toolbar bit eşlemi](#_core_the_toolbar_bitmap)
 
-## <a name="toolbar-buttons"></a><a name="_core_toolbar_buttons"></a>Araç çubuğu düğmeleri
+## <a name="toolbar-buttons"></a><a name="_core_toolbar_buttons"></a> Araç çubuğu düğmeleri
 
 Bir araç çubuğundaki düğmeler, bir menüdeki öğelerle benzerdir. Her iki tür Kullanıcı arabirimi nesnesi, programınızın işleyici işlevleri sunarak işlediği komutlar oluşturur. Çoğu zaman araç çubuğu düğmeleri menü komutlarının işlevselliğini yineleyen aynı işlevselliğe alternatif bir kullanıcı arabirimi sağlar. Bu tür yineleme yalnızca düğme ve menü öğesi aynı KIMLIĞE vererek düzenlenir.
 
 Bir araç çubuğundaki düğmelerin görünmesini ve bir düğme, onay kutusu ya da radyo düğmesi olarak davranmasını sağlayabilirsiniz. Daha fazla bilgi için bkz. sınıf [CToolBar](reference/ctoolbar-class.md).
 
-## <a name="docking-and-floating-toolbars"></a><a name="_core_docking_and_floating_toolbars"></a>Yerleştirme ve kayan araç çubukları
+## <a name="docking-and-floating-toolbars"></a><a name="_core_docking_and_floating_toolbars"></a> Yerleştirme ve kayan araç çubukları
 
 MFC araç çubuğu şunları yapabilir:
 
@@ -71,11 +72,11 @@ MFC araç çubuğu şunları yapabilir:
 
 Daha fazla bilgi için bkz. [yerleştirme ve kayan araç çubukları](docking-and-floating-toolbars.md).
 
-## <a name="toolbars-and-tool-tips"></a><a name="_core_toolbars_and_tool_tips"></a>Araç çubukları ve araç Ipuçları
+## <a name="toolbars-and-tool-tips"></a><a name="_core_toolbars_and_tool_tips"></a> Araç çubukları ve araç Ipuçları
 
 MFC araç çubukları, bir araç çubuğu düğmesinin amacını kısa bir metin açıklaması içeren küçük bir açılan pencere olan "araç ipuçlarını" göstermek için de yapılabilir. Kullanıcı fareyi bir araç çubuğu düğmesinin üzerine taşırken, araç ipucu penceresi bir ipucu sunmak için açılır. Daha fazla bilgi için [araç çubuğu araç ipuçları](toolbar-tool-tips.md)makalesine bakın.
 
-## <a name="the-ctoolbar-and-ctoolbarctrl-classes"></a><a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a>CToolBar ve CToolBarCtrl sınıfları
+## <a name="the-ctoolbar-and-ctoolbarctrl-classes"></a><a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a> CToolBar ve CToolBarCtrl sınıfları
 
 [CToolBar](reference/ctoolbar-class.md)sınıfı aracılığıyla uygulamanızın araç çubuklarını yönetirsiniz. MFC sürüm 4,0 itibariyle, `CToolBar` windows 95 veya üzeri ve WINDOWS NT sürüm 3,51 veya sonraki sürümlerinde bulunan araç çubuğu ortak denetimini kullanmak için yeniden uygulanmıştır.
 
@@ -86,7 +87,7 @@ MFC işletim sistemi desteğini kullandığından, bu yeniden uygulama, araç ç
 
 Ayrıca bkz. MFC genel örnek [Dockaracı](../overview/visual-cpp-samples.md).
 
-## <a name="the-toolbar-bitmap"></a><a name="_core_the_toolbar_bitmap"></a>Toolbar bit eşlemi
+## <a name="the-toolbar-bitmap"></a><a name="_core_the_toolbar_bitmap"></a> Toolbar bit eşlemi
 
 Bir nesne oluşturulduktan sonra, `CToolBar` her düğme için bir görüntü içeren tek bir bit eşlem yükleyerek araç çubuğu görüntüsünü oluşturur. Uygulama Sihirbazı Visual C++ [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)ile özelleştirebileceğiniz standart bir araç çubuğu bit eşlemi oluşturur.
 

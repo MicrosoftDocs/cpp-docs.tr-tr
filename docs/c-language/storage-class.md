@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. depolama sınıfı
 title: Depolama Sınıfı
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - static storage class specifiers
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
-ms.openlocfilehash: 872a014dfc7c21b46f9af810f1cb3463016c7e09
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 87f53c38b2f71acc15499a496e98b1f9c7173210
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211690"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296738"
 ---
 # <a name="storage-class"></a>Depolama Sınıfı
 
 Bir işlev tanımındaki depolama sınıfı Belirleyicisi, işleve **`extern`** veya **`static`** depolama sınıfına sahip olabilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *işlev tanımı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Bildirim-belirticileri*<sub>opt</sub> *özniteliği-seq*<sub>opt</sub> *bildirimci* *bildirimi-List*<sub>opt</sub> *bileşik-deyimin*
@@ -33,13 +34,13 @@ Bir işlev tanımındaki depolama sınıfı Belirleyicisi, işleve **`extern`** 
 &nbsp;&nbsp;&nbsp;&nbsp;*tür belirleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *bildirimi-tanımlayıcılar*<sub>kabul</sub>
 
-*depolama sınıfı-tanımlayıcı*:/ \* işlev tanımları için\*/<br/>
+*depolama sınıfı-tanımlayıcı*:/ \* işlev tanımları için \*/<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`extern`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**`static`**
 
-Bir işlev tanımı bir *depolama sınıfı belirticisi*içermiyorsa, depolama sınıfı varsayılan olarak olur **`extern`** . Bir işlevi açıkça bildirebilirsiniz **`extern`** , ancak gerekli değildir.
+Bir işlev tanımı bir *depolama sınıfı belirticisi* içermiyorsa, depolama sınıfı varsayılan olarak olur **`extern`** . Bir işlevi açıkça bildirebilirsiniz **`extern`** , ancak gerekli değildir.
 
-Bir işlevin bildirimi *depolama sınıfı belirticisini* içeriyorsa **`extern`** , tanımlayıcı dosya kapsamına sahip olan tanımlayıcının görünür bildirimiyle aynı bağlantıya sahiptir. Dosya kapsamına sahip görünür bir bildirim yoksa, tanımlayıcının dış bağlantısı vardır. Bir tanımlayıcının dosya kapsamı varsa ve *depolama sınıfı Belirleyicisi*yoksa, tanımlayıcının dış bağlantısı vardır. Dış bağlantı, tanımlayıcının her örneğinin aynı nesneyi veya işlevi gösterdiği anlamına gelir. Bağlama ve dosya kapsamı hakkında daha fazla bilgi için bkz. [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) .
+Bir işlevin bildirimi *depolama sınıfı belirticisini* içeriyorsa **`extern`** , tanımlayıcı dosya kapsamına sahip olan tanımlayıcının görünür bildirimiyle aynı bağlantıya sahiptir. Dosya kapsamına sahip görünür bir bildirim yoksa, tanımlayıcının dış bağlantısı vardır. Bir tanımlayıcının dosya kapsamı varsa ve *depolama sınıfı Belirleyicisi* yoksa, tanımlayıcının dış bağlantısı vardır. Dış bağlantı, tanımlayıcının her örneğinin aynı nesneyi veya işlevi gösterdiği anlamına gelir. Bağlama ve dosya kapsamı hakkında daha fazla bilgi için bkz. [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) .
 
 Blok kapsamı işlev bildirimleri, hata oluştur dışında bir depolama sınıfı belirticisine sahiptir **`extern`** .
 

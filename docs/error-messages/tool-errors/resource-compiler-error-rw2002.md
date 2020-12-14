@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kaynak derleyicisi hatası RW2002'
 title: Kaynak Derleyicisi Hatası RW2002
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
-ms.openlocfilehash: 31962e3e7e4af63ec07ad569f7f72782b194032c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ae973b826a42aa844e879c0947af1090f7eaa711
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225182"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259701"
 ---
 # <a name="resource-compiler-error-rw2002"></a>Kaynak Derleyicisi Hatası RW2002
 
@@ -97,7 +98,7 @@ Ayrıştırma hatası
 
 1. **Sayısal iletişim kutusu sabiti bekleniyor**
 
-   Bir **Iletişim kutusu** , *x, y, Genişlik*ve *Yükseklik* alanları için tamsayı değerleri gerektirir. Bu değerlerin, **iletişim** anahtar sözcüğünden sonra eklendiğinden ve olumsuz olmadıklarından emin olun.
+   Bir **Iletişim kutusu** , *x, y, Genişlik* ve *Yükseklik* alanları için tamsayı değerleri gerektirir. Bu değerlerin, **iletişim** anahtar sözcüğünden sonra eklendiğinden ve olumsuz olmadıklarından emin olun.
 
 1. **STRINGTABLE içinde beklenen dize**
 

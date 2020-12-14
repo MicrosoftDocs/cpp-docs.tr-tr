@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Iletişim verileri doğrulama'
 title: İletişim Verisi Doğrulama
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - DDV (dialog data validation) [MFC]
 - data validation [MFC], message boxes
 ms.assetid: f070c309-2044-4ff2-8c92-1ec1ea84af58
-ms.openlocfilehash: 9de2db002d7f06e797531c09af0a021c402eec7d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0e90aa54130a59b48058928f56d9d36644d5142b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261365"
 ---
 # <a name="dialog-data-validation"></a>İletişim Verisi Doğrulama
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _getw'
 title: _getw
 ms.date: 4/2/2020
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - integers, getting from streams
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-ms.openlocfilehash: 786246afbb8ce4f733f733af75af3a70ce33006d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2f951305351b4693b9787b6eac926c719afd3f3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296543"
 ---
 # <a name="_getw"></a>_getw
 
 Akıştan bir tamsayı alır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int _getw(
@@ -54,11 +55,11 @@ int _getw(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_getw** , okunan tamsayı değerini döndürür. **EOF** dönüş değeri bir hata ya da dosya sonunu gösterir. Ancak, **EOF** değeri de yasal bir tamsayı değeri olduğundan, dosya sonu veya hata koşulunu doğrulamak için **feof** veya **ferror** kullanın. *Stream* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EOF**döndürür.
+**_getw** , okunan tamsayı değerini döndürür. **EOF** dönüş değeri bir hata ya da dosya sonunu gösterir. Ancak, **EOF** değeri de yasal bir tamsayı değeri olduğundan, dosya sonu veya hata koşulunu doğrulamak için **feof** veya **ferror** kullanın. *Stream* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev **EOF** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Getw** işlevi, **`int`** *akış* ile ilişkili dosyadaki bir sonraki ikili değerini okur ve sonraki okunmamış karakteri işaret eden ilişkili dosya işaretçisini (varsa) artırır. **_getw** akıştaki öğelerin herhangi bir özel hizalamasını varsaymaz. **_getw** **`int`** Tür boyutu ve tür içindeki bayt sıralaması **`int`** sistemler arasında farklı olduğundan, taşıma ile ilgili sorunlar _getw oluşabilir.
+**_Getw** işlevi, **`int`** *akış* ile ilişkili dosyadaki bir sonraki ikili değerini okur ve sonraki okunmamış karakteri işaret eden ilişkili dosya işaretçisini (varsa) artırır. **_getw** akıştaki öğelerin herhangi bir özel hizalamasını varsaymaz.  **`int`** Tür boyutu ve tür içindeki bayt sıralaması **`int`** sistemler arasında farklı olduğundan, taşıma ile ilgili sorunlar _getw oluşabilir.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 

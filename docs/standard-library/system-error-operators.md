@@ -1,20 +1,21 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; system_error &gt; işleçleri'
 title: '&lt;system_error &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - system_error/std::operator!=
 - system_error/std::operator==
 ms.assetid: c14edefb-bd8a-4e90-88d3-c59c98e6f73c
-ms.openlocfilehash: 5ddd9135749c2dcfd40cd06a9b69cff65b1a8c8d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0ebbb4d9de0ef8bf27aaa276dfee14d94c29eabb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232878"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259428"
 ---
 # <a name="ltsystem_errorgt-operators"></a>&lt;system_error &gt; işleçleri
 
-## <a name="operator"></a><a name="op_eq_eq"></a>işleç = =
+## <a name="operator"></a><a name="op_eq_eq"></a> işleç = =
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -45,7 +46,7 @@ Eşitlik için sınanacak nesne.
 
 Bu işlev döndürür `left.category() == right.category() && left.value() == right.value()` .
 
-## <a name="operator"></a><a name="op_neq"></a>işleç! =
+## <a name="operator"></a><a name="op_neq"></a> işleç! =
 
 İşlecin sol tarafındaki nesnenin sağ taraftaki nesneye eşit olup olmadığını sınar.
 
@@ -66,13 +67,13 @@ Eşitsizlik için test edilecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`***solda* geçirilen nesne, *sağa*geçirilen nesneye eşit değilse; Aksi takdirde **`false`** .
+**`true`***solda* geçirilen nesne, *sağa* geçirilen nesneye eşit değilse; Aksi takdirde **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu işlev döndürür `!(left == right)` .
 
-## <a name="operatorlt"></a><a name="op_lt"></a>işlecinde&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> işlecinde&lt;
 
 Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.
 
@@ -110,13 +111,13 @@ Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`***solda* geçirilen nesne *sağdaki*nesneden küçükse; Aksi takdirde, **`false`** .
+**`true`***solda* geçirilen nesne *sağdaki* nesneden küçükse; Aksi takdirde, **`false`** .
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu işlev hata sıralamasını sınar.
 
-## <a name="operatorltlt"></a><a name="op_ostream"></a>işlecinde&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_ostream"></a> işlecinde&lt;&lt;
 
 ```cpp
 template <class charT, class traits>

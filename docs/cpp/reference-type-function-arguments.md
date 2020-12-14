@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Reference-Type Işlev bağımsız değişkenleri'
 title: Başvuru Türü İşlev Bağımsız Değişkenleri
 ms.date: 08/27/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - function arguments [C++], reference-type
 - passing parameters [C++], reference-type arguments
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
-ms.openlocfilehash: 5a409efbe2908954d394656cb989ad6b80a9ce22
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e290160b1b897eadbf77f0c8a805f927a26c02f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233645"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260338"
 ---
 # <a name="reference-type-function-arguments"></a>Başvuru Türü İşlev Bağımsız Değişkenleri
 

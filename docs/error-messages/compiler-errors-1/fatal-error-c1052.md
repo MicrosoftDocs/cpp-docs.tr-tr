@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: önemli hata C1052'
 title: Önemli hata C1052
 ms.date: 05/08/2017
 f1_keywords:
@@ -6,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - C1052
 ms.assetid: f2c09a2f-d3c1-4420-9501-ffcb65caf87b
-ms.openlocfilehash: b381cc3cfe27d4c4a9d744a6b854a0e43727fe71
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 818210cc4c3658167de30b9e666c600695389330
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62243695"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251745"
 ---
 # <a name="fatal-error-c1052"></a>Önemli hata C1052
 
-> Program veritabanı dosyası, '*filename*', / Debug: fastlink ile; bağlayıcı tarafından oluşturulan derleyici olamaz tür PDB dosyalarını güncelleştiremez; Lütfen silin veya /Fd farklı bir PDB dosya adı belirtmek için kullanın
+> '*filename*' program veritabanı dosyası bağlayıcı tarafından/Debug: fastlink ile oluşturuldu; derleyici bu tür PDB dosyalarını güncelleştiremez; Lütfen bu dosyayı silin veya/fd kullanarak farklı bir PDB dosya adı belirtin
 
-Derleyici, bağlayıcı tarafından oluşturulan aynı program veritabanı (PDB) dosyalarını güncelleştirilemiyor, [/Debug: fastlink](../../build/reference/debug-generate-debug-info.md) seçeneği belirtildi. Normalde derleyici tarafından oluşturulan PDB dosyalarını ve bağlayıcı tarafından oluşturulan PDB dosyalarını farklı adlara sahip. Ancak, aynı adları kullanmanız ayarı geçerliyse, bu hatayı neden olabilir.
+Derleyici [/Debug: fastlink](../../build/reference/debug-generate-debug-info.md) seçeneği belirtildiğinde bağlayıcı tarafından oluşturulan aynı program VERITABANı (pdb) dosyalarını güncelleştiremez. Normalde derleyicinin ürettiği PDB dosyaları ve bağlayıcı tarafından oluşturulan PDB dosyaları farklı adlara sahiptir. Ancak, aynı adları kullanacak şekilde ayarlandıysa, bu hata oluşabilir.
 
-Bu sorunu gidermek için açıkça PDB dosyalarını yeniden derleme veya derleyici tarafından oluşturulan ve bağlayıcı tarafından oluşturulan PDB dosyaları için farklı adlar oluşturabilmeniz için önce silebilirsiniz.
+Bu sorunu onarmak için, yeniden derlemeden önce PDB dosyalarını açıkça silebilir veya derleyicinin ürettiği ve bağlayıcı tarafından oluşturulan PDB dosyaları için farklı adlar oluşturabilirsiniz.
 
-Komut satırında derleyici tarafından oluşturulan PDB dosya adı belirtmek için kullanın [/Fd](../../build/reference/fd-program-database-file-name.md) derleyici seçeneği. IDE'de derleyici tarafından oluşturulan PDB dosya adı belirtmek için açık **özellik sayfaları** iletişim ve projeniz için **yapılandırma özellikleri**, **C/C++**,  **Çıkış dosyalarını** sayfasında **Program veritabanı dosya adı** özelliği. Varsayılan olarak, bu özellik, `$(IntDir)vc$(PlatformToolsetVersion).pdb`.
+Derleyici tarafından oluşturulan PDB dosya adını komut satırında belirtmek için [/FD](../../build/reference/fd-program-database-file-name.md) derleyici seçeneğini kullanın. IDE 'de derleyici tarafından oluşturulan pdb dosya adını belirtmek için, projeniz için **Özellik sayfaları** iletişim kutusunu açın ve **yapılandırma özellikleri**, **C/C++**, **çıkış dosyaları** sayfasında, **Program veritabanı dosya adı** özelliğini ayarlayın. Varsayılan olarak, bu özellik `$(IntDir)vc$(PlatformToolsetVersion).pdb` .
 
-Alternatif olarak, bağlayıcı tarafından oluşturulan PDB dosya adı ayarlayabilirsiniz. Komut satırında bağlayıcı tarafından oluşturulan PDB dosya adı belirtmek için kullanın [/pdb](../../build/reference/pdb-use-program-database.md) bağlayıcı seçeneği. IDE içinde bağlayıcı tarafından oluşturulan PDB dosya adı belirtmek için açık **özellik sayfaları** iletişim ve projeniz için **yapılandırma özellikleri**, **bağlayıcı**,  **Hata ayıklama** sayfasında **Program veritabanı dosyası oluştur** özelliği. Varsayılan olarak, bu özellik kümesine `$(OutDir)$(TargetName).pdb`.
+Alternatif olarak, bağlayıcı tarafından oluşturulan PDB dosya adını da ayarlayabilirsiniz. Komut satırında bağlayıcı tarafından oluşturulan PDB dosya adını belirtmek için [/pdb](../../build/reference/pdb-use-program-database.md) bağlayıcı seçeneğini kullanın. IDE 'de bağlayıcı tarafından oluşturulan PDB dosya adını belirtmek için, projeniz için **Özellik sayfaları** iletişim kutusunu açın ve **yapılandırma özellikleri**, **bağlayıcı**, **hata ayıklama** sayfasında **Program veritabanı dosyası oluştur** özelliğini ayarlayın. Varsayılan olarak, bu özellik olarak ayarlanır `$(OutDir)$(TargetName).pdb` .

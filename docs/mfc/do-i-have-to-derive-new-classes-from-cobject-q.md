@@ -1,16 +1,17 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: CObject 'ten Yeni Sınıflar Türetmem gerekiyor mu?"
 title: CObject'ten Yeni Sınıflar Türetmem Gerekiyor mu?
 ms.date: 11/04/2016
 helpviewer_keywords:
 - derived classes [MFC], from CObject
 - CObject class [MFC], when to use
 ms.assetid: 26021031-feaf-424c-80d1-9547c4409d6a
-ms.openlocfilehash: 371ede0f0921182c066b4cb224e66b18eb6f1208
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d37570cb62f1ee274e4cea85fc95a9221c95fd8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261313"
 ---
 # <a name="do-i-have-to-derive-new-classes-from-cobject"></a>CObject'ten Yeni Sınıflar Türetmem Gerekiyor mu?
 
@@ -20,4 +21,4 @@ Serileştirme veya dinamik uyumluluk gibi, sağladığı tesislere ihtiyacınız
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CObject Sınıfı: Sıkça Sorulan Sorular](cobject-class-frequently-asked-questions.md)
+[CObject sınıfı: sık sorulan sorular](cobject-class-frequently-asked-questions.md)

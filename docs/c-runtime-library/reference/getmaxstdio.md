@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _getmaxstdio'
 title: _getmaxstdio
 ms.date: 11/04/2016
 api_name:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - getmaxstdio function
 - open files, getting number
 ms.assetid: 700ca8ce-4a8c-4e00-9467-dfa9d6b831a0
-ms.openlocfilehash: cf3f55262e54ec4d5205d08dfcb499f2802ded23
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 78c427ef9e5152708870d7ff48d0a123b7ee5213
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955033"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296556"
 ---
 # <a name="_getmaxstdio"></a>_getmaxstdio
 
 Akış g/ç düzeyinde izin verilen aynı anda açık dosya sayısını döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 int _getmaxstdio( void );
@@ -57,7 +58,7 @@ int _getmaxstdio( void );
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_getmaxstdio**|\<stdio. h >|
+|**_getmaxstdio**|\<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -88,4 +89,4 @@ int main()
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>

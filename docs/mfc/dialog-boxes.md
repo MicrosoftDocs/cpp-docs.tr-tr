@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Iletişim kutuları'
 title: İletişim Kutuları
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - CDialog class [MFC], MFC dialog boxes
 - MFC dialog boxes
 ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
-ms.openlocfilehash: da6a2eca7c2366e519b9bf2e809b042dc3ee2e50
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4ae034c1eaf6d0cf1842218ecb09a96cd35e3ffc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261456"
 ---
 # <a name="dialog-boxes"></a>İletişim Kutuları
 
@@ -33,7 +34,7 @@ Sekme iletişim kutuları olarak da bilinen [Özellik sayfaları](property-sheet
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme](example-displaying-a-dialog-box-via-a-menu-command.md)
+- [Örnek: bir menü komutu aracılığıyla bir Iletişim kutusu görüntüleme](example-displaying-a-dialog-box-via-a-menu-command.md)
 
 - [Framework'te iletişim kutusu bileşenleri](dialog-box-components-in-the-framework.md)
 
@@ -41,7 +42,7 @@ Sekme iletişim kutuları olarak da bilinen [Özellik sayfaları](property-sheet
 
 - İletişim kutusunda [Özellik sayfaları ve özellik sayfaları](property-sheets-and-property-pages-mfc.md)
 
-- [İletişim kaynağı oluşturma](creating-the-dialog-resource.md)
+- [İletişim kaynağını oluşturma](creating-the-dialog-resource.md)
 
 - [Kod sihirbazları ile iletişim kutusu sınıfı oluşturma](creating-a-dialog-class-with-code-wizards.md)
 
@@ -49,13 +50,13 @@ Sekme iletişim kutuları olarak da bilinen [Özellik sayfaları](property-sheet
 
 - [İletişim kutusu veri değişimi (DDX) ve doğrulaması (DDV)](dialog-data-exchange-and-validation.md)
 
-- [İletişim kutusundaki denetimlere tür kullanımı uyumlu erişim](type-safe-access-to-controls-in-a-dialog-box.md)
+- [Bir iletişim kutusundaki denetimlere tür kullanımı uyumlu erişim](type-safe-access-to-controls-in-a-dialog-box.md)
 
 - [Windows iletilerini sınıfınıza eşleme](mapping-windows-messages-to-your-class.md)
 
 - [Yaygın olarak geçersiz kılınan üye Işlevleri](commonly-overridden-member-functions.md)
 
-- [Yaygın Olarak Eklenen Üye İşlevleri](commonly-added-member-functions.md)
+- [Yaygın olarak eklenen üye Işlevleri](commonly-added-member-functions.md)
 
 - [Ortak iletişim kutusu sınıfları](common-dialog-classes.md)
 

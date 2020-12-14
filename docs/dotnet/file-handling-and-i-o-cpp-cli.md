@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dosya Işleme ve g/ç (C++/CLı)'
 title: Dosya İşleme ve G-Ç (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - files [C++], text
 - text files, writing in C++
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
-ms.openlocfilehash: a1cfdc4239506f22368753d8c37765e550d9b835
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 30bcec27cf3bc625554ad55bd7657c156e5409d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252174"
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
 

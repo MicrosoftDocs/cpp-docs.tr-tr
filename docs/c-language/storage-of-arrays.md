@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: dizi depolaması'
 title: Dizileri Depolama
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - arrays [C]
 - storing arrays
 ms.assetid: c1331216-cf51-45f6-8072-a3fedc7cb367
-ms.openlocfilehash: 539cfc43f9b3159bea3a876bc37497bec6d1e20e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 972d0c56579dfc5b8113919e5010036203479e8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157909"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296673"
 ---
 # <a name="storage-of-arrays"></a>Dizileri Depolama
 
@@ -20,4 +21,4 @@ Bir dizi türü ile ilişkilendirilmiş olan depolama, tüm alt öğeleri için 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dizi Bildirimleri](../c-language/array-declarations.md)
+[Dizi bildirimleri](../c-language/array-declarations.md)

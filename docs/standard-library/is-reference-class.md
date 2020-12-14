@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_reference sınıfı'
 title: is_reference Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_reference class
 - is_reference
 ms.assetid: 3d9e631f-3092-430c-843e-e914ab58c257
-ms.openlocfilehash: 99aae64bcaef1e17956c3b3001627d128f966352
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 85b824f6abe9800f1b85a6e8e81416551cb72155
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259467"
 ---
-# <a name="isreference-class"></a>is_reference Sınıfı
+# <a name="is_reference-class"></a>is_reference Sınıfı
 
 Tür bir başvuruysa sınar.
 
@@ -71,11 +72,11 @@ is_reference<int(&)()> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_pointer Sınıfı](../standard-library/is-pointer-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_pointer sınıfı](../standard-library/is-pointer-class.md)

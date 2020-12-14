@@ -1,24 +1,25 @@
 ---
-title: -CLR Altında İstisna İşleme Davranışındaki Farklılıklar
+description: Hakkında daha fazla bilgi:/CLR altında özel durum Işleme davranışındaki farklılıklar
+title: -CLR altında özel durum Işleme davranışındaki farklılıklar
 ms.date: 11/04/2016
 helpviewer_keywords:
 - EXCEPTION_CONTINUE_EXECUTION macro
 - set_se_translator function
 ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
-ms.openlocfilehash: 940d297ff77248ba9e9980f7032b5d722d95c7eb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e7e07778e894448fea3d29acb3a32d71884be57c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252200"
 ---
 # <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR Altında Özel Durum İşleme Farkları
 
-[Yönetilen Özel Durumları Kullanmadaki Temel Kavramlar,](../dotnet/basic-concepts-in-using-managed-exceptions.md) yönetilen uygulamalarda özel durum işlemeyi tartışır. Bu konuda, özel durum işlemenin standart davranışından ve bazı kısıtlamalardan farklı olarak ayrıntılı olarak ele alınmıştır. Daha fazla bilgi için [_set_se_translator Fonksiyonu'na](../c-runtime-library/reference/set-se-translator.md)bakın.
+[Yönetilen özel durumları kullanmaya Ilişkin temel kavramlar](../dotnet/basic-concepts-in-using-managed-exceptions.md) yönetilen uygulamalarda özel durum işlemeyi tartışır. Bu konuda, özel durum işlemenin standart davranışından ve bazı kısıtlamaların farkları ayrıntılı bir şekilde ele alınmıştır. Daha fazla bilgi için [_set_se_translator işlevine](../c-runtime-library/reference/set-se-translator.md)bakın.
 
-## <a name="jumping-out-of-a-finally-block"></a><a name="vcconjumpingoutofafinallyblock"></a>Sonunda Bloktan Atlama
+## <a name="jumping-out-of-a-finally-block"></a><a name="vcconjumpingoutofafinallyblock"></a> Finally bloğundan atlama
 
-Yerel C/C++ kodunda, bir uyarı üretse de yapılandırılmış özel durum işleme (SEH) kullanarak bir __**sonunda** bloktan atlamaya izin verilir.  [/clr](../build/reference/clr-common-language-runtime-compilation.md)altında, **son** bir blok tan atlama bir hataya neden olur:
+Yerel C/C++ kodunda, yapılandırılmış özel durum işleme (SEH) kullanarak bir __ **finally** bloğundan atlama, bir uyarı üretse de izin verilir.  [/Clr](../build/reference/clr-common-language-runtime-compilation.md)' ın altında, **finally** bloğunun dışına atlamak hataya neden olur:
 
 ```cpp
 // clr_exception_handling_4.cpp
@@ -31,11 +32,11 @@ int main() {
 }   // C3276
 ```
 
-## <a name="raising-exceptions-within-an-exception-filter"></a><a name="vcconraisingexceptionswithinanexceptionfilter"></a>Özel Durum Filtresi İçindeKi Özel Durumları Yükseltme
+## <a name="raising-exceptions-within-an-exception-filter"></a><a name="vcconraisingexceptionswithinanexceptionfilter"></a> Özel durum filtresi Içinde özel durumlar oluşturma
 
-Yönetilen kod içinde bir özel [durum filtresinin](../cpp/writing-an-exception-filter.md) işlenmesi sırasında bir özel durum yükseltildiğinde, özel durum yakalanır ve filtre 0 döndürür gibi işlem yapılır.
+Yönetilen kod içindeki bir [özel durum filtresinin](../cpp/writing-an-exception-filter.md) işlenmesi sırasında bir özel durum ortaya çıktığında, özel durum yakalanır ve filtrenin 0 döndüğü gibi kabul edilir.
 
-Bu, iç içe geçen bir özel durum yükseltilir, **EXCEPTION_RECORD** yapısında **ExceptionRecord** alanı [(GetExceptionInformation](/windows/win32/Debug/getexceptioninformation)tarafından döndürülür) ayarlanır ve **ExceptionFlags** alanı 0x10 bit ayarlar yerel kod davranışı aksine. Aşağıdaki örnekdavranış bu farkı göstermektedir:
+Bu, iç içe geçmiş bir özel durumun oluşturulduğu yerel koddaki davranışa karşılık gelen bir durumdur. **EXCEPTION_RECORD** yapısındaki **ExceptionRecord** alanı ( [GetExceptionInformation](/windows/win32/Debug/getexceptioninformation)tarafından döndürülen) ayarlanır ve **ExceptionFlags** alanı 0x10 bitini ayarlar. Aşağıdaki örnek, davranıştaki bu farkı göstermektedir:
 
 ```cpp
 // clr_exception_handling_5.cpp
@@ -95,11 +96,11 @@ Caught a nested exception
 We should execute this handler if compiled to native
 ```
 
-## <a name="disassociated-rethrows"></a><a name="vccondisassociatedrethrows"></a>İlişkisi Kesilen Rethrows
+## <a name="disassociated-rethrows"></a><a name="vccondisassociatedrethrows"></a> İlişkilendirilirken yeniden oluşturur
 
-**/clr,** catch işleyicisi dışında bir özel durum (ilgisiz yeniden atma olarak bilinir) dışında bir özel durum yeniden atma desteklemez. Bu tür özel durumlar standart bir C++ rethrow olarak kabul edilir. Etkin yönetilen bir özel durum olduğunda, ilgisiz bir yeniden atma ile karşılaşılırsa, özel durum C++ özel durumu olarak sarılır ve sonra yeniden atılır. Bu tür özel durumlar yalnızca tür <xref:System.Runtime.InteropServices.SEHException>bir istisna olarak yakalanabilir.
+**/clr** , bir catch işleyicisi dışında özel durum yeniden üretilmesini desteklemez (ilişkilendirici yeniden oluşturma olarak bilinir). Bu türün özel durumları standart C++ Rethrow olarak değerlendirilir. Etkin yönetilen bir özel durum olduğunda, ilişkilendirmeden yeniden oluşturma ile karşılaşılırsa, özel durum C++ özel durumu olarak sarmalanır ve yeniden oluşturulur. Bu türün özel durumları yalnızca türünde bir özel durum olarak yakalanalabilir <xref:System.Runtime.InteropServices.SEHException> .
 
-Aşağıdaki örnek, C++ özel durumu olarak yeniden atılan yönetilen bir özel durumu gösterir:
+Aşağıdaki örnek, bir C++ özel durumu olarak yeniden oluşturulan yönetilen özel durumu gösterir:
 
 ```cpp
 // clr_exception_handling_6.cpp
@@ -147,11 +148,11 @@ int main() {
 caught an SEH Exception
 ```
 
-## <a name="exception-filters-and-exception_continue_execution"></a><a name="vcconexceptionfiltersandexception_continue_execution"></a>Özel Durum Filtreleri ve EXCEPTION_CONTINUE_EXECUTION
+## <a name="exception-filters-and-exception_continue_execution"></a><a name="vcconexceptionfiltersandexception_continue_execution"></a> Özel durum filtreleri ve EXCEPTION_CONTINUE_EXECUTION
 
-Yönetilen bir `EXCEPTION_CONTINUE_EXECUTION` uygulamada bir filtre dönerse, filtre döndürülmüş `EXCEPTION_CONTINUE_SEARCH`gibi değerlendirilir. Bu sabitler hakkında daha fazla bilgi için [try-except Bildirimi'ne](../cpp/try-except-statement.md)bakın.
+Bir filtre `EXCEPTION_CONTINUE_EXECUTION` yönetilen bir uygulamada döndürüyorsa, filtre döndürülen gibi değerlendirilir `EXCEPTION_CONTINUE_SEARCH` . Bu sabitler hakkında daha fazla bilgi için bkz. [try-except deyimleri](../cpp/try-except-statement.md).
 
-Aşağıdaki örnekte bu fark gösteriş vardır:
+Aşağıdaki örnek bu farkı göstermektedir:
 
 ```cpp
 // clr_exception_handling_7.cpp
@@ -188,9 +189,9 @@ int main() {
 Counter=-3
 ```
 
-## <a name="the-_set_se_translator-function"></a><a name="vcconthe_set_se_translatorfunction"></a>_set_se_translator Fonksiyonu
+## <a name="the-_set_se_translator-function"></a><a name="vcconthe_set_se_translatorfunction"></a> _Set_se_translator Işlevi
 
-Bir çağrı tarafından ayarlanan `_set_se_translator`çevirmen işlevi, yalnızca yönetilmeyen koddaki yakalamaları etkiler. Aşağıdaki örnekte bu sınırlama gösteriş:
+Bir çağrısıyla ayarlanan Translator işlevi, `_set_se_translator` yalnızca yönetilmeyen koddaki catch 'i etkiler. Aşağıdaki örnekte bu sınırlama gösterilmektedir:
 
 ```cpp
 // clr_exception_handling_8.cpp
@@ -279,4 +280,4 @@ Caught an SEH exception with exception code: e0000101
 
 [Özel Durum İşleme](../extensions/exception-handling-cpp-component-extensions.md)<br/>
 [safe_cast](../extensions/safe-cast-cpp-component-extensions.md)<br/>
-[MSVC'de Özel Durum Taşıma](../cpp/exception-handling-in-visual-cpp.md)
+[MSVC 'de özel durum Işleme](../cpp/exception-handling-in-visual-cpp.md)
