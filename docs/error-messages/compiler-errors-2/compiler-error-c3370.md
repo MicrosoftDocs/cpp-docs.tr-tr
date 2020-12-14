@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3370'
 title: Derleyici hatası C3370
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3370
 ms.assetid: ee6d4c85-78fc-42b2-836e-5cc491a3b2ba
-ms.openlocfilehash: 4200cb7840899ad7b3719e949138010bd478ea3f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9c34636f91035177e7408dfd4b3bdaaed0fe84c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503177"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245271"
 ---
 # <a name="compiler-error-c3370"></a>Derleyici hatası C3370
 

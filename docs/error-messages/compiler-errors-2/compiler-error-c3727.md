@@ -1,20 +1,21 @@
 ---
-title: Derleyici Hatası C3727
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3727'
+title: Derleyici hatası C3727
 ms.date: 11/04/2016
 f1_keywords:
 - C3727
 helpviewer_keywords:
 - C3727
 ms.assetid: 17b9fe7b-ee9e-483f-9c27-1f709255a9e0
-ms.openlocfilehash: b41b2d5df450ded75a52d3a0e76a637026d54690
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8238a197233bd61666d44b5e5fddef8709d23446
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328102"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245115"
 ---
-# <a name="compiler-error-c3727"></a>Derleyici Hatası C3727
+# <a name="compiler-error-c3727"></a>Derleyici hatası C3727
 
-'event': yönetilen bir olay bir temsilci işaretçisidir veri üyesi veya bir üye işlev olmalıdır
+' Event ': yönetilen bir olay, bir temsilci işaretçisi olan bir üye işlev veya bir veri üyesi olmalıdır
 
-.NET olay bir temsilci türü bir işaretçi olması gerekir.
+.NET olayları, temsilci türüne yönelik bir işaretçi olmalıdır.

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3374'
 title: Derleyici hatası C3374
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3374
 ms.assetid: 41431299-bd20-47d4-a0c8-1334dd79018b
-ms.openlocfilehash: 760eb1bafdaab9995d3238c8bc4e3114acd743eb
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: b3ec1a18433c41f8c1e1a4b704b6ab03dae7572d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245180"
 ---
 # <a name="compiler-error-c3374"></a>Derleyici hatası C3374
 

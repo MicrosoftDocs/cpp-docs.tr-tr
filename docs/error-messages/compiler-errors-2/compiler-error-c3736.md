@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3736'
 title: Derleyici hatası C3736
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3736
 ms.assetid: 579b773c-41e7-40ea-8382-2e3ce2667f4c
-ms.openlocfilehash: 9c4626164fe8fe3fb932fba3ae8e87c774f5aeec
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6ec22012efb9de3ec7f0b8911ed45f4f6a724135
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74752853"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244998"
 ---
 # <a name="compiler-error-c3736"></a>Derleyici hatası C3736
 

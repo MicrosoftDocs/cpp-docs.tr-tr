@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3367'
 title: Derleyici hatası C3367
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3367
 ms.assetid: e675d42b-f5b0-4d43-aab1-1f5024233102
-ms.openlocfilehash: bedc94039f8621a93672c0dfa0cad5a54aad796e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cd428bb0472ab9cb621f85ac684cbb4d9bbc12d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245284"
 ---
 # <a name="compiler-error-c3367"></a>Derleyici hatası C3367
 
@@ -19,7 +20,7 @@ ms.locfileid: "80201168"
 
 İlişkisiz bir temsilciyi çağırdığınızda, bir nesnenin örneğini geçirmeniz gerekir. Statik bir üye işlevi sınıf adı aracılığıyla çağrıldığı için, yalnızca bir örnek üye işlevi ile ilişkisiz bir temsilci örnekleyebilirsiniz.
 
-İlişkisiz Temsilciler hakkında daha fazla bilgi için bkz. [nasıl yapılır: tanımlama ve kullanma temsilcileriC++(/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md).
+İlişkisiz Temsilciler hakkında daha fazla bilgi için bkz. [nasıl yapılır: temsilcileri tanımlama ve kullanma (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md).
 
 ## <a name="example"></a>Örnek
 

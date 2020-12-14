@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3797'
 title: Derleyici hatası C3797
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3797
 ms.assetid: ab27ff34-8c1d-4297-b004-9e39bd3a4f25
-ms.openlocfilehash: 7236cb75aef4250440a1e992415df07fb5b7da3f
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 581dae7ba2649d72fc2670b99c9255b3ee9f7838
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757182"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244868"
 ---
 # <a name="compiler-error-c3797"></a>Derleyici hatası C3797
 
