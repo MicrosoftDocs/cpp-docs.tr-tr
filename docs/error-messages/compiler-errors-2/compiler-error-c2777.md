@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2777'
 title: Derleyici hatası C2777
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2777
 ms.assetid: 5fe158c0-2a65-488a-aca2-61d4a8b32d43
-ms.openlocfilehash: 67132f0acbee3614d8032685ae454386d97b8fb1
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 301dadd8a62826455c0cdd7b7d9d8d9d3832d666
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740019"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298129"
 ---
 # <a name="compiler-error-c2777"></a>Derleyici hatası C2777
 
 her özellik için yalnızca bir ' Put ' yöntemi belirtilebilir
 
-[Özellik](../../cpp/property-cpp.md) declspec değiştiricisi birden fazla `put` özelliğine sahip.
+[Property](../../cpp/property-cpp.md) declspec değiştiricisi birden fazla `put` özelliğe sahip.
 
 Aşağıdaki örnek C2777 oluşturur:
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l'
 title: vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -37,16 +38,16 @@ helpviewer_keywords:
 - formatted text [C++]
 - _vftprintf_s function
 ms.assetid: eab6f563-46e2-4806-963f-2b23f339ecdc
-ms.openlocfilehash: d7c3d268689fe8d60b4b3804223d7bba206bbed1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 743bf613cc6e09f396072d6bd00060d6d30e662c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279656"
 ---
 # <a name="vfprintf_s-_vfprintf_s_l-vfwprintf_s-_vfwprintf_s_l"></a>vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l
 
-Bağımsız değişken listesi için bir işaretçi kullanarak biçimli çıktı yazın. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklanan şekilde, güvenlik geliştirmeleriyle [vfprintf, _vfprintf_l, vfwprintf, _vfwprintf_l](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md) sürümleridir.
+Bağımsız değişken listesi için bir işaretçi kullanarak biçimli çıktı yazın. Bunlar, [CRT 'Daki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md)bölümünde açıklandığı gibi, [vfprintf, _vfprintf_l, vfwprintf _vfwprintf_l ve](vfprintf-vfprintf-l-vfwprintf-vfwprintf-l.md) güvenlik geliştirmeleriyle birlikte olan sürümleridir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,30 +81,30 @@ int _vfwprintf_s_l(
 *ka*<br/>
 **Dosya** yapısına yönelik işaretçi.
 
-*format*<br/>
+*formatını*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
 Bağımsız değişken listesi işaretçisi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 Daha fazla bilgi için bkz. [Biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**vfprintf_s** ve **vfwprintf_s** yazılan karakter sayısını, Sonlandırıcı null karakterini veya bir çıkış hatası oluşursa negatif bir değeri geri döndürür. Herhangi bir *Stream* veya *Format* null işaretçisiyse veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL**olarak ayarlanır.
+**vfprintf_s** ve **vfwprintf_s** , sonlandıran null karakteri veya bir çıkış hatası oluşursa negatif bir değer dahil değil, yazılan karakter sayısını döndürür. Herhangi bir *Stream* veya *Format* null işaretçisiyse veya biçim dizesi geçersiz biçimlendirme karakterleri içeriyorsa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlevler-1 döndürür ve **errno** , **EINVAL** olarak ayarlanır.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, sonra verili verileri biçimlendirir ve *akışa*yazar.
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır, sonra verili verileri biçimlendirir ve *akışa* yazar.
 
 Bu işlevler, güvenli olmayan sürümlerden farklıdır ve yalnızca güvenli sürümlerin, *Biçim* dizesinin geçerli biçimlendirme karakterleri içerip içermemesini denetlerdedir.
 
-**vfwprintf_s** , **vfprintf_s**öğesinin geniş karakterli sürümüdür; Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **vfprintf_s** Şu anda UNICODE bir akışa çıktıyı desteklemez.
+**vfwprintf_s** , **vfprintf_s** öğesinin geniş karakterli sürümüdür; Akış ANSI modunda açılırsa iki işlev aynı şekilde davranır. **vfprintf_s** Şu anda UNICODE bir akışa çıktıyı desteklememektedir.
 
 **_L** sonekine sahip bu işlevlerin sürümleri, geçerli iş parçacığı yerel ayarı yerine geçirilen yerel ayar parametresini kullanmaları dışında aynıdır.
 
@@ -112,7 +113,7 @@ Bu işlevler, güvenli olmayan sürümlerden farklıdır ve yalnızca güvenli s
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|_UNıCODE & _MBCS tanımlı değil|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmadı|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_vftprintf_s**|**vfprintf_s**|**vfprintf_s**|**vfwprintf_s**|
 |**_vftprintf_s_l**|**_vfprintf_s_l**|**_vfprintf_s_l**|**_vfwprintf_s_l**|
@@ -121,18 +122,18 @@ Bu işlevler, güvenli olmayan sürümlerden farklıdır ve yalnızca güvenli s
 
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgiler|
 |-------------|---------------------|----------------------|
-|**vfprintf_s**, **_vfprintf_s_l**|\<stdio. h > ve \<stdarg. h >|\<varargs. h > *|
-|**vfwprintf_s**, **_vfwprintf_s_l**|\<stdio. h > veya \<wchar. h > ve \<stdarg. h >|\<varargs. h > *|
+|**vfprintf_s**, **_vfprintf_s_l**|\<stdio.h> ve \<stdarg.h>|\<varargs.h>*|
+|**vfwprintf_s**, **_vfwprintf_s_l**|\<stdio.h> or \<wchar.h> ve \<stdarg.h>|\<varargs.h>*|
 
-\*UNIX V uyumluluğu için gereklidir.
+\* UNIX V uyumluluğu için gereklidir.
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
-[vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
+[Akış G/Ç](../../c-runtime-library/stream-i-o.md)<br/>
+[vprintf Işlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>
