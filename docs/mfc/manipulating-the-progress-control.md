@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Ilerleme denetimini düzenleme'
 title: İlerleme Durumu Denetimini Düzenleme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - controlling progress controls [MFC]
 - CProgressCtrl class [MFC], using
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
-ms.openlocfilehash: 3e3521a82854a85062f9b06bc33eb268d4b9c7a6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cfb89dee0047d910fb983546c71e4a1e4a618f56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622429"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281099"
 ---
 # <a name="manipulating-the-progress-control"></a>İlerleme Durumu Denetimini Düzenleme
 
@@ -32,11 +33,11 @@ ms.locfileid: "84622429"
 1. Konumu artırmak için [Stepit](reference/cprogressctrl-class.md#stepit) üye işlevini kullanın. Bu, denetimin kendisini yeniden çizmesine neden olur.
 
     > [!NOTE]
-    >  `StepIt`, konumun kaydırılmasına neden olur. Örneğin, bir 1 -100 aralığı, bir adım 20 ve 90 konumu verildiğinde, `StepIt` Konum 10 olarak ayarlanır.
+    >  `StepIt` , konumun kaydırılmasına neden olur. Örneğin, bir 1 -100 aralığı, bir adım 20 ve 90 konumu verildiğinde, `StepIt` Konum 10 olarak ayarlanır.
 
 ### <a name="to-change-the-position-by-an-arbitrary-amount"></a>Konumu rastgele bir miktara göre değiştirmek için
 
-1. Konumu değiştirmek için [OffsetPos](reference/cprogressctrl-class.md#offsetpos) member işlevini kullanın. `OffsetPos`negatif değerleri kabul eder.
+1. Konumu değiştirmek için [OffsetPos](reference/cprogressctrl-class.md#offsetpos) member işlevini kullanın. `OffsetPos` negatif değerleri kabul eder.
 
     > [!NOTE]
     >  `OffsetPos`, aksine `StepIt` konumu kaydıramaz. Yeni konum, Aralık içinde kalacak şekilde ayarlanır.

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3246'
 title: Derleyici hatası C3246
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3246
 ms.assetid: ad85224a-e540-479b-a5eb-a3bc3964c30b
-ms.openlocfilehash: e9396b3bc5eea5d15366fc94ffa308d78754c31e
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 5a74b642abe2e184e8e505ec1000433357de2522
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307203"
 ---
 # <a name="compiler-error-c3246"></a>Derleyici hatası C3246
 

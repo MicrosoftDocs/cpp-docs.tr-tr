@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4624'
 title: Derleyici Uyarısı (düzey 1) C4624
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4624
 ms.assetid: 14f61769-d92e-482b-9515-debd87b30a66
-ms.openlocfilehash: 5d6e89efb042b8f757feec3911b160961e51f72a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d5869742b548c4a54efe08e686571123fc570517
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80199699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281463"
 ---
 # <a name="compiler-warning-level-1-c4624"></a>Derleyici Uyarısı (düzey 1) C4624
 

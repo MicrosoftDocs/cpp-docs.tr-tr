@@ -1,31 +1,32 @@
 ---
-title: Derleyici Hatası C2316
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2316'
+title: Derleyici hatası C2316
 ms.date: 07/08/2019
 f1_keywords:
 - C2316
 helpviewer_keywords:
 - C2316
 ms.assetid: 9ad08eb5-060b-4eb0-8d66-0dc134f7bf67
-ms.openlocfilehash: 5a3d9052775a5e1cbedfd58ccaaf0ff039a8475d
-ms.sourcegitcommit: 07b34ca1c1fecced9fadc95de15dc5fee4f31e5a
+ms.openlocfilehash: 0e2f528b3f13964a971b88fca110980947bd7d11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693438"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282217"
 ---
-# <a name="compiler-error-c2316"></a>Derleyici Hatası C2316
+# <a name="compiler-error-c2316"></a>Derleyici hatası C2316
 
-> '*class_type*': yok edici ve/veya kopya oluşturucusu, erişilemez veya silinmiş olarak yakalanamıyor
+> '*class_type*': yıkıcı ve/veya kopya Oluşturucu erişilemez olduğundan veya silindiğinden yakalanamıyor
 
-Değer veya başvuru, ancak atama işleci, kopya Oluşturucu tarafından bir özel durum yakalandı veya her ikisi de erişilemez.
+Bir özel durum değere veya başvuruya göre yakalandı, ancak kopya oluşturucuya, atama işlecine veya her ikisine birden erişilemez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2015'te uyumluluk değişiklikleri yapılan bu hata, hatalı catch deyimleri türetilmiş MFC özel durumları uygulamak `CException`. Çünkü `CException` bir devralınan özel kopya Oluşturucu, sınıfın var ve CIM'in kopyalanabilir değildir ve bunlar kullanılamaz yakalandı değere göre anlamına da gelir değer geçirilemez. MFC özel durumları, daha önce Yakalanmayan Özel durumların zamanında götüren değere göre yakalanan deyimleri yakalayın. Artık derleyici doğru şekilde bu durum tanımlar ve hatası C2316 bildiriyor. Bu sorunu gidermek için MFC TRY/CATCH makroları kullanmak yerine, kendi özel durum işleyicisi yazma öneririz. Bu, kodunuz için uygun değilse, MFC özel durumları yerine başvuruya göre yakalayın.
+Visual Studio 2015 ' deki uygunluk değişiklikleri bu hata, öğesinden türetilmiş MFC özel durumlarının hatalı catch ifadelerine uygulanabilir `CException` . `CException`Devralınmış bir özel kopya oluşturucusuna sahip olduğundan, sınıf ve türetmeleri kopyalanabilir değildir ve değer tarafından yakalanamazlar, bu da değere göre yakalanamazlar. Daha önce çalışma zamanında yakalanamayan özel durumlara bir değere göre MFC özel durumlarını yakalanan catch deyimleri. Artık derleyici bu durumu doğru şekilde tanımlar ve hata C2316 raporlar. Bu sorunu onarmak için, kendi özel durum işleyicilerinizi yazmak yerine MFC TRY/CATCH makrolarını kullanmanızı öneririz. Kodunuz için uygun değilse, bunun yerine MFC özel durumlarını başvuruya göre yakalayın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C2316 oluşturur ve bunu düzeltmek için bir yol gösterir:
+Aşağıdaki örnek C2316 oluşturur ve bunu çözmek için bir yol gösterir:
 
 ```cpp
 // C2316.cpp

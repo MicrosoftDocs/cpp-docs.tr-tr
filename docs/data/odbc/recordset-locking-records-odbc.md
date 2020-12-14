@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: kayıt kümesi: kayıtları kilitleme (ODBC)'
 title: 'Kayıt Kümesi: Kayıtları Kilitleme (ODBC)'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,29 +11,29 @@ helpviewer_keywords:
 - ODBC recordsets [C++], locking records
 - data [C++], locking
 ms.assetid: 8fe8fcfe-b55a-41a8-9136-94a7cd1e4806
-ms.openlocfilehash: abd5f817ad321241df2d8565bd6bf346c0792088
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1833aff2a1a68affe02cdcf5294007802452bbf9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366957"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304486"
 ---
 # <a name="recordset-locking-records-odbc"></a>Kayıt Kümesi: Kayıtları Kilitleme (ODBC)
 
 Bu konu MFC ODBC sınıfları için geçerlidir.
 
-Bu konu açıklar:
+Bu konuda aşağıdakiler açıklanmaktadır:
 
-- [Kullanılabilir kayıt kilitleme türleri.](#_core_record.2d.locking_modes)
+- [Kullanılabilir kayıt kilitleme türleri](#_core_record.2d.locking_modes).
 
-- [Güncelleştirmeler sırasında kayıt setinizdeki kayıtları kilitleme.](#_core_locking_records_in_your_recordset)
+- [Güncelleştirmeler sırasında kayıt kümenizde kayıtları kilitleme](#_core_locking_records_in_your_recordset).
 
-Veri kaynağındaki bir kaydı güncelleştirmek için bir kayıt kümesi kullandığınızda, uygulamanız kaydı kilitleyebilir, böylece başka hiçbir kullanıcı kaydı aynı anda güncelleştiremez. Sistem, iki kullanıcının aynı anda bir kaydı güncelleştiremeyeceğini garanti edemediği sürece, aynı anda iki kullanıcı tarafından güncelleştirilen bir kaydın durumu tanımsızdır.
+Veri kaynağındaki bir kaydı güncellemek için bir kayıt kümesi kullandığınızda, uygulamanız kaydı kilitleyerek başka bir kullanıcının kaydı aynı anda güncelleştiremez. Aynı anda iki kullanıcı tarafından güncelleştirilmiş bir kaydın durumu, sistem iki kullanıcının bir kaydı aynı anda güncelleştiremediği garanti edemediği durumlar için tanımsızdır.
 
 > [!NOTE]
-> Bu konu, toplu satır `CRecordset` alma nın uygulanmadığı türetilen nesneler için geçerlidir. Toplu satır alma uyguladıysanız, bazı bilgiler geçerli değildir. Örneğin, `Edit` ve `Update` üye işlevleri arayamamazsınız. Toplu satır alma hakkında daha fazla bilgi için bkz: [Recordset: Toplu Olarak Kayıtları Alma (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
+> Bu konu, `CRecordset` toplu satır yakalamanın uygulanmadığı, öğesinden türetilmiş nesneler için geçerlidir. Toplu satır getirme uyguladıysanız bazı bilgiler uygulanmaz. Örneğin, `Edit` ve `Update` üye işlevlerini çağrılamaz. Toplu satır getirme hakkında daha fazla bilgi için bkz. [kayıt kümesi: kayıtları toplu yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
-## <a name="record-locking-modes"></a><a name="_core_record.2d.locking_modes"></a>Kayıt Kilitleme Modları
+## <a name="record-locking-modes"></a><a name="_core_record.2d.locking_modes"></a> Record-Locking modları
 
 Veritabanı sınıfları iki [kayıt kilitleme modu](../../mfc/reference/crecordset-class.md#setlockingmode)sağlar:
 
@@ -40,31 +41,31 @@ Veritabanı sınıfları iki [kayıt kilitleme modu](../../mfc/reference/crecord
 
 - Kötümser kilitleme
 
-Bir kaydı niçin güncelleştirme, üç adımda gerçekleşir:
+Bir kaydın güncelleştirilmesi üç adımda gerçekleşir:
 
-1. [İşleme Edit](../../mfc/reference/crecordset-class.md#edit) üye işlevini çağırarak başlarsınız.
+1. Üyeyi [Düzenle](../../mfc/reference/crecordset-class.md#edit) işlevini çağırarak işlemi başlatabilirsiniz.
 
 1. Geçerli kaydın uygun alanlarını değiştirirsiniz.
 
-1. [Güncelleştirme](../../mfc/reference/crecordset-class.md#update) üyesi işlevini arayarak işlemi sonlandırın ve normalde güncelleştirmeyi yaparsınız.
+1. İşlemi sonlandırın — ve [güncelleştirme üyesi işlevini çağırarak genellikle güncelleştirmeyi yürütün](../../mfc/reference/crecordset-class.md#update) .
 
-İyimser kilitleme, yalnızca `Update` arama sırasında veri kaynağındaki kaydı kilitler. Çok kullanıcılı bir ortamda iyimser kilitleme kullanıyorsanız, `Update` uygulama bir hata koşulu işlemek gerekir. Kötümser kilitleme en kısa sürede arama `Edit` ve aramakadar `Update` serbest bırakmaz (hatalar `CDBException` mekanizma üzerinden değil, FALSE bir `Update`değer tarafından döndürülen gösterilir) Kötümser kilitleme, aynı kayda eşzamanlı erişim uygulamanızın `Update` işleminin tamamlanmasına kadar beklemek zorunda kalabilir, çünkü kötümser kilitleme diğer kullanıcılar için potansiyel bir performans cezası vardır.
+İyimser kilitleme, veri kaynağındaki kaydı yalnızca çağrı sırasında kilitler `Update` . Çok kullanıcılı bir ortamda iyimser kilitleme kullanırsanız, uygulamanın bir `Update` hata koşulunu işlemesi gerekir. Kötümser kilitleme, çağrı yapana kadar bir kaydı kilitler `Edit` ve siz çağırana kadar serbest bırakmaz `Update` (arızalar `CDBException` tarafından döndürülen yanlış bir değer tarafından değil, mekanizmaya belirtilir `Update` ). Aynı kayda eşzamanlı erişimin, uygulamanızın işleminin tamamlanmasını beklemek zorunda olabileceğinden, Kötümser kilitleme diğer kullanıcılar için olası bir performans cezasına sahiptir `Update` .
 
-## <a name="locking-records-in-your-recordset"></a><a name="_core_locking_records_in_your_recordset"></a>Kayıt Setinizdeki Kayıtları Kilitleme
+## <a name="locking-records-in-your-recordset"></a><a name="_core_locking_records_in_your_recordset"></a> Kayıt kümenizde kayıt kilitleme
 
-Varsayılan dan bir kayıt kümesi nesnenin [kilitleme modunu](#_core_record.2d.locking_modes) değiştirmek istiyorsanız, aramadan `Edit`önce modu değiştirmeniz gerekir.
+Bir kayıt kümesi nesnesinin [kilitleme modunu](#_core_record.2d.locking_modes) varsayılana değiştirmek istiyorsanız, çağrısından önce modu değiştirmeniz gerekir `Edit` .
 
-#### <a name="to-change-the-current-locking-mode-for-your-recordset"></a>Kayıt setinizin geçerli kilitleme modunu değiştirmek için
+#### <a name="to-change-the-current-locking-mode-for-your-recordset"></a>Kayıt kümenizin geçerli kilitleme modunu değiştirmek için
 
-1. [SetLockingMode](../../mfc/reference/crecordset-class.md#setlockingmode) üye işlevini, ya `CRecordset::pessimistic` da `CRecordset::optimistic`.
+1. Ya da belirterek [SetLockingMode](../../mfc/reference/crecordset-class.md#setlockingmode) üye işlevini çağırın `CRecordset::pessimistic` `CRecordset::optimistic` .
 
-Yeni kilitleme modu, siz yeniden değiştirene veya kayıt kümesi kapanana kadar etkin kalır.
+Yeni kilitleme modu, siz değiştirene veya kayıt kümesi kapatıldıktan kadar yürürlükte kalır.
 
 > [!NOTE]
-> Nispeten az Sayıda ODBC sürücüleri şu anda kötümser kilitleme desteği.
+> Nispeten kilitlemeyi destekleyen nispeten daha az sayıda ODBC sürücüsü şu anda çalışıyor.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)<br/>
-[Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)
+[Kayıt kümesi: JOIN gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)<br/>
+[Kayıt kümesi: kayıtları ekleme, güncelleştirme ve silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)

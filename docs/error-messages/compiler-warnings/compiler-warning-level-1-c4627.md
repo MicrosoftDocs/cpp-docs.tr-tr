@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4627'
 title: Derleyici Uyarısı (düzey 1) C4627
 ms.date: 09/09/2018
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4627
 ms.assetid: 8840f3e6-b496-423a-8635-eb55d5f854a2
-ms.openlocfilehash: 06db3d7e585dfe49b2e0854973f63834648613b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fc4c6c3931775b090dfd4c7c2fd5fd97441d40d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62221384"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281450"
 ---
 # <a name="compiler-warning-level-1-c4627"></a>Derleyici Uyarısı (düzey 1) C4627
 
-> '*header_fıle*': Ön derlenmiş üstbilgi kullanımı aranırken atlandı
+> '*header_file*': ön derlenmiş üstbilgi kullanımı aranırken atlandı
 
-Geçerli kaynak dosyanın varsa [/Yu \(kullanım önceden derlenmiş üst bilgi dosyası)](../../build/reference/yu-use-precompiled-header-file.md) seçenek kümesi, ardından önceden derlenmiş üst bilgi eklenir önce derleyici dosyadaki her şeyi yoksayar. Uyarı **C4627** , Visual Studio 2015 veya önceki sürümlerinde oluşturulan *header_fıle* önce önceden derlenmiş üst bilgi dosyasını dahil ve önceden derlenmiş üst bilgi de içermiyorsa*header_fıle*.
+Geçerli kaynak dosyasında [/yu \( ön derlenmiş üstbilgi dosyası kullan)](../../build/reference/yu-use-precompiled-header-file.md) seçenek ayarlandıysa, ön derlenmiş üstbilgi dahil etmeden önce derleyici dosyadaki her şeyi yoksayar. Uyarı **C4627** , önceden derlenmiş üstbilgi dosyasından önce *header_file* varsa ve önceden derlenmiş üst bilgi de *header_file* içermiyorsa, Visual Studio 2015 ve önceki sürümlerde uyarı oluşturulur.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek nasıl hata ortaya çıkabilir ve nasıl düzeltileceğini gösteren gösterir:
+Bu örnek, hatanın nasıl gerçekleşebileceğini ve nasıl düzeltileceğini gösterir:
 
 ```cpp
 // c4627.cpp

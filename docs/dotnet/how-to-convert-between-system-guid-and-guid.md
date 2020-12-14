@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: System:: Guid ve _GUID dönüştürme'
 title: 'Nasıl yapılır: System::Guid ve GUID Arasında Dönüştürme'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - GUID, converting to System::GUID
 - System::GUID, converting to GUID
 ms.assetid: 022c934c-3395-4f04-b498-85ad9bf8c646
-ms.openlocfilehash: a0150053157d2694788cd50bf64097805a8eda88
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 1f2eb87f23e7f47221b4506c2c9e328803b800e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304395"
 ---
 # <a name="how-to-convert-between-systemguid-and-_guid"></a>Nasıl yapılır: System::Guid ve GUID Arasında Dönüştürme
 
-Aşağıdaki kod örneği, bir <xref:System.Guid> ve `_GUID`arasında nasıl dönüştürme yapılacağını gösterir.
+Aşağıdaki kod örneği, ve arasında nasıl dönüştürme yapılacağını gösterir <xref:System.Guid> `_GUID` .
 
 ## <a name="example"></a>Örnek
 
@@ -67,4 +68,4 @@ int main() {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

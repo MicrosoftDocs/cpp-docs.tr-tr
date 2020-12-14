@@ -1,5 +1,6 @@
 ---
-title: 'Nasıl yapılır: -Clr kullanarak MFC ve ATL kodu derleme'
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır:/clr kullanarak MFC ve ATL kodu derleme'
+title: Nasıl yapılır:-clr kullanarak MFC ve ATL kodu derleme
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,71 +14,71 @@ helpviewer_keywords:
 - interop [C++], /clr compiler option
 - extension DLLs [C++], /clr compiler option
 ms.assetid: 12464bec-33a4-482c-880a-c078de7f6ea5
-ms.openlocfilehash: 9a24e82787eb0fce8ff668843e73de9f2d05e1ad
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 67a861dac3b4c4b454f4fbde4a500c3677ce0e25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62379057"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304499"
 ---
-# <a name="how-to-compile-mfc-and-atl-code-by-using-clr"></a>Nasıl yapılır: MFC ve ATL kodu kullanarak/CLR ile derleyin
+# <a name="how-to-compile-mfc-and-atl-code-by-using-clr"></a>Nasıl yapılır: /clr Kullanarak MFC ve ATL Kodu Derleme
 
-Bu konu, ortak dil çalışma zamanını hedeflemek için mevcut MFC ve ATL programlarının nasıl yapılandırılabileceğini açıklar.
+Bu konuda, var olan MFC ve ATL programlarının ortak dil çalışma zamanını hedeflemek için nasıl derlenmesi anlatılmaktadır.
 
-### <a name="to-compile-an-mfc-executable-or-regular-mfc-dll-by-using-clr"></a>/ CLR kullanarak MFC yürütülebilir veya Normal MFC DLL derlemek için
+### <a name="to-compile-an-mfc-executable-or-regular-mfc-dll-by-using-clr"></a>/Clr kullanarak bir MFC yürütülebilir dosyası veya normal MFC DLL derlemek için
 
-1. Projeye sağ **Çözüm Gezgini** ve ardından **özellikleri**.
+1. **Çözüm Gezgini** ' de projeye sağ tıklayın ve ardından **Özellikler**' e tıklayın.
 
-1. İçinde **proje özellikleri** iletişim kutusunda, yanındaki düğümü genişletin **yapılandırma özellikleri** seçip **genel**. Sağ bölmede altında **Proje Varsayılanları**ayarlayın **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)**.
+1. **Proje özellikleri** Iletişim kutusunda **yapılandırma özellikleri** ' nin yanındaki düğümü genişletin ve **genel**' i seçin. Sağ bölmede, **Proje Varsayılanları** altında ortak dil çalışma **zamanı** desteğini **ortak dil çalışma zamanı desteği (/CLR)** olarak ayarlayın.
 
-   Emin olun aynı bölmede **MFC kullanımı** ayarlanır **MFC'yi bir ortak DLL'de**.
+   Aynı bölmede, **MFC kullanmanın** **paylaşılan BIR DLL 'de MFC kullanacak** şekilde ayarlandığından emin olun.
 
-1. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Emin olun **hata ayıklama bilgi biçimi** ayarlanır **Program veritabanı/zi** (değil **/zi**).
+1. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **genel**' i seçin. **Hata ayıklama bilgi biçiminin** , **Program veritabanı/Zi** ( **/Zi** değil) olarak ayarlandığından emin olun.
 
-1. Seçin **kod oluşturma** düğümü. Ayarlama **en az yeniden derlemeyi etkinleştir** için **Hayır (/ Gm-)**. Ayrıca **temel çalışma zamanı denetimleri** için **varsayılan**.
+1. **Kod oluşturma** düğümünü seçin. **En az yeniden derlemeyi etkinleştir** **(/GM-)** olarak ayarlayın. **Temel çalışma zamanı denetimlerini** de **varsayılan** olarak ayarlayın.
 
-1. Altında **yapılandırma özellikleri**seçin **C/C++** ardından **kod oluşturma**. Emin olun **çalışma zamanı kitaplığı** ayarlandığından **hata ayıklama çok iş parçacıklı DLL (/ MDd)** veya **çok iş parçacıklı DLL (/ MD)**.
+1. **Yapılandırma özellikleri** altında **C/C++** ve sonra **kod oluşturma**' yı seçin. **Çalışma zamanı kitaplığının** **çok Iş PARÇACıKLı hata ayıklama dll (/MDD)** veya **çok iş parçacıklı DLL (/MD)** olarak ayarlandığından emin olun.
 
-1. Stdafx.h içinde şu satırı ekleyin.
+1. Stbafx. h içinde aşağıdaki satırı ekleyin.
 
     ```
     #using <System.Windows.Forms.dll>
     ```
 
-### <a name="to-compile-an-mfc-extension-dll-by-using-clr"></a>Bir MFC uzantılı DLL/CLR'ı kullanarak derlemek için
+### <a name="to-compile-an-mfc-extension-dll-by-using-clr"></a>/Clr kullanarak bir MFC uzantısı DLL derlemek için
 
-1. "Bir MFC yürütülebilir veya Normal MFC DLL/CLR kullanarak derleme" adımları izleyin.
+1. "/Clr kullanarak MFC yürütülebilir dosyası veya normal MFC DLL derlemek Için" bölümündeki adımları izleyin.
 
-1. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **önceden derlenmiş üst bilgiler**. Ayarlama **önceden derlenmiş üst bilgi Oluştur/Kullan** için **önceden derlenmiş üst bilgiler kullanmayan**.
+1. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **önceden derlenmiş üst bilgiler**' i seçin. Önceden derlenmiş **üst bilgileri kullanmadan** **önceden derlenmiş üst bilgi oluştur/kullan** öğesini ayarlayın.
 
-   Alternatif olarak, **Çözüm Gezgini**, Stdafx.cpp sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Ayarlama **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
+   Alternatif olarak, **Çözüm Gezgini**, Stdadfx. cpp öğesine sağ tıklayın ve ardından **Özellikler**' e tıklayın. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **genel**' i seçin. Ortak dil **çalışma zamanı desteği olmayan** **ortak dil çalışma zamanı desteğiyle derlemeyi** ayarlayın.
 
-1. DllMain ve her şeyi içeren bir dosya için buna çağrı **Çözüm Gezgini**, dosyaya sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Sağ bölmede altında **Proje Varsayılanları**ayarlayın **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
+1. DllMain içeren dosya ve çağrı yaptığı her şey için, **Çözüm Gezgini**, dosyaya sağ tıklayın ve ardından **Özellikler**' e tıklayın. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **genel**' i seçin. Sağ bölmede, **Proje Varsayılanları** altında, ortak dil çalışma zamanı desteği **ile derlemeyi ortak** dil **çalışma zamanı desteği olmadan** ayarlayın.
 
-### <a name="to-compile-an-atl-executable-by-using-clr"></a>/ CLR'ı kullanarak bir ATL yürütülebilir dosya derlemek için
+### <a name="to-compile-an-atl-executable-by-using-clr"></a>/Clr kullanarak ATL yürütülebilirini derlemek için
 
-1. İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.
+1. **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **Özellikler**' e tıklayın.
 
-1. İçinde **proje özellikleri** iletişim kutusunda, yanındaki düğümü genişletin **yapılandırma özellikleri** seçip **genel**. Sağ bölmede altında **Proje Varsayılanları**ayarlayın **ortak dil çalışma zamanı desteği** için **ortak dil çalışma zamanı desteği (/ clr)**.
+1. **Proje özellikleri** Iletişim kutusunda **yapılandırma özellikleri** ' nin yanındaki düğümü genişletin ve **genel**' i seçin. Sağ bölmede, **Proje Varsayılanları** altında ortak dil çalışma **zamanı** desteğini **ortak dil çalışma zamanı desteği (/CLR)** olarak ayarlayın.
 
-1. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Emin olun **hata ayıklama bilgi biçimi** ayarlanır **Program veritabanı/zi** (değil **/zi**).
+1. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **genel**' i seçin. **Hata ayıklama bilgi biçiminin** , **Program veritabanı/Zi** ( **/Zi** değil) olarak ayarlandığından emin olun.
 
-1. Seçin **kod oluşturma** düğümü. Ayarlama **en az yeniden derlemeyi etkinleştir** için **Hayır (/ Gm-)**. Ayrıca **temel çalışma zamanı denetimleri** için **varsayılan**.
+1. **Kod oluşturma** düğümünü seçin. **En az yeniden derlemeyi etkinleştir** **(/GM-)** olarak ayarlayın. **Temel çalışma zamanı denetimlerini** de **varsayılan** olarak ayarlayın.
 
-1. Altında **yapılandırma özellikleri**seçin **C/C++** ardından **kod oluşturma**. Emin olun **çalışma zamanı kitaplığı** ayarlandığından **hata ayıklama çok iş parçacıklı DLL (/ MDd)** veya **çok iş parçacıklı DLL (/ MD)**.
+1. **Yapılandırma özellikleri** altında **C/C++** ve sonra **kod oluşturma**' yı seçin. **Çalışma zamanı kitaplığının** **çok Iş PARÇACıKLı hata ayıklama dll (/MDD)** veya **çok iş parçacıklı DLL (/MD)** olarak ayarlandığından emin olun.
 
-1. Her MIDL tarafından oluşturulan dosya için (C dosyaları), dosyaya sağ **Çözüm Gezgini** ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Ayarlama **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
+1. Her MıDL tarafından oluşturulan dosya (C dosyaları) için **Çözüm Gezgini** ' de dosyaya sağ tıklayın ve ardından **Özellikler**' e tıklayın. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **genel**' i seçin. Ortak dil **çalışma zamanı desteği olmayan** **ortak dil çalışma zamanı desteğiyle derlemeyi** ayarlayın.
 
-### <a name="to-compile-an-atl-dll-by-using-clr"></a>ATL DLL/CLR'ı kullanarak derlemek için
+### <a name="to-compile-an-atl-dll-by-using-clr"></a>/Clr kullanarak ATL DLL derlemek için
 
-1. "Yürütülebilir bir ATL/CLR kullanarak derlemek için" bölümündeki adımları izleyin.
+1. "/Clr kullanarak ATL yürütülebilirini derlemek Için" bölümündeki adımları izleyin.
 
-1. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **önceden derlenmiş üst bilgiler**. Ayarlama **önceden derlenmiş üst bilgi Oluştur/Kullan** için **önceden derlenmiş üst bilgiler kullanmayan**.
+1. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **önceden derlenmiş üst bilgiler**' i seçin. Önceden derlenmiş **üst bilgileri kullanmadan** **önceden derlenmiş üst bilgi oluştur/kullan** öğesini ayarlayın.
 
-   Alternatif olarak, **Çözüm Gezgini**, Stdafx.cpp sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Ayarlama **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
+   Alternatif olarak, **Çözüm Gezgini**, Stdadfx. cpp öğesine sağ tıklayın ve ardından **Özellikler**' e tıklayın. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **genel**' i seçin. Ortak dil **çalışma zamanı desteği olmayan** **ortak dil çalışma zamanı desteğiyle derlemeyi** ayarlayın.
 
-1. DllMain ve her şeyi içeren bir dosya için buna çağrı **Çözüm Gezgini**, dosyaya sağ tıklayın ve ardından **özellikleri**. Altında **yapılandırma özellikleri**, yanındaki düğümü genişletin **C/C++** seçip **genel**. Sağ bölmede altında **Proje Varsayılanları**ayarlayın **ortak dil çalışma zamanı desteği ile Derle** için **ortak dil çalışma zamanı desteği yok**.
+1. DllMain içeren dosya ve çağrı yaptığı her şey için, **Çözüm Gezgini**, dosyaya sağ tıklayın ve ardından **Özellikler**' e tıklayın. **Yapılandırma özellikleri** altında **C/C++** ' ın yanındaki düğümü genişletin ve **genel**' i seçin. Sağ bölmede, **Proje Varsayılanları** altında, ortak dil çalışma zamanı desteği **ile derlemeyi ortak** dil **çalışma zamanı desteği olmadan** ayarlayın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)
+[Karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)

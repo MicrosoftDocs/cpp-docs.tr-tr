@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK1112'
 title: Bağlayıcı Araçları Hatası LNK1112
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,29 +7,29 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1112
 ms.assetid: 425793d8-37e6-4072-9b6e-c3d4e9c12562
-ms.openlocfilehash: bc01d56fb8144d23b91c82a7f791a70a5dadb7ef
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ba0a34e07b0806f251c0b1237dc28ab5f8becbf4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62255493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281385"
 ---
 # <a name="linker-tools-error-lnk1112"></a>Bağlayıcı Araçları Hatası LNK1112
 
-> Modül makine türü '*type1*'hedef makine türü ile çakışıyor'*type2*'
+> Modül makine türü '*Type1*', hedef makine türü '*type2*' ile çakışıyor
 
 ## <a name="remarks"></a>Açıklamalar
 
-Girdi olarak belirtilen nesne dosyaları için farklı bir bilgisayara türleri derlendi.
+Giriş olarak belirtilen nesne dosyaları farklı bilgisayar türleri için derlendi.
 
-Bağlantı çalışırsanız, örneğin, bir nesne dosyası ile derlenmiş **/CLR** ve bir nesne dosyası ile derlenmiş **/CLR: pure** (makine türü CEE), bağlayıcı hatası LNK1112 oluşturur. **/CLR: pure** derleyici seçeneğini Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
+Örneğin, **/clr** ile derlenen bir nesne dosyasını ve **/clr: Pure** (makine türü Cee) ile derlenen bir nesne dosyasını BAĞLAMAYı denerseniz, bağlayıcı LNK1112 hatasını oluşturacaktır. **/Clr: Pure** derleyici seçeneği visual Studio 2015 ' de kullanımdan kaldırılmıştır ve visual Studio 2017 ' de desteklenmez.
 
-Benzer şekilde, x64 ile bir modül oluşturursanız, derleyici ve başka bir modül x86 ile derleyici ve bunları bağlamak için try bağlayıcı LNK1112 oluşturur.
+Benzer şekilde, x64 derleyicisi ve x86 derleyicisine sahip başka bir modül ile bir modül oluşturursanız ve bu bağlantıları bağlamayı denerseniz, bağlayıcı LNK1112 oluşturur.
 
-Bu hata için olası neden, 64 bitlik bir uygulama geliştiriyorsanız ancak Visual C++ 64-bit derleyiciler birini yüklemediyseniz ' dir. Bu durumda, 64-bit yapılandırmaları kullanılabilir olmayacak. Bu sorunu düzeltmek için Visual Studio için yükleyiciyi çalıştırın ve eksik C++ bileşenleri yükleyin.
+Bu hatanın olası bir nedeni 64 bitlik bir uygulama geliştirmemekte, ancak Visual C++ 64 bit derleyicilerinin birine yüklememiş olmanız olabilir. Bu durumda, 64 bit yapılandırma kullanılabilir olmayacaktır. Bu sorunu onarmak için, Visual Studio için yükleyiciyi çalıştırın ve eksik C++ bileşenlerini yükleme.
 
-Değiştirirseniz bu hatayı da meydana gelebilir **etkin çözüm yapılandırması** içinde **Configuration Manager** ve Ara proje dosyalarını silmeden önce projeyi oluşturmayı deneyin. Bu hatayı gidermek için seçin **çözümü yeniden derle** gelen **derleme** menüsü. Belirleyebilirsiniz **çözümü Temizle** gelen **derleme** menüsünü ve sonra yapı çözümü.
+Bu hata, **Configuration Manager** **etkin çözüm yapılandırmasını** değiştirirseniz ve sonra ara proje dosyalarını silmeden önce projeyi derlemeyi denerseniz da oluşabilir. Bu hatayı çözmek için **derleme** menüsünden **çözümü yeniden derle** ' yi seçin. Ayrıca **derleme** menüsünden **Çözümü Temizle** ' yi seçip çözümü oluşturabilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Bağlayıcı Araçları Hataları ve Uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)
+- [Bağlayıcı Araçları hataları ve uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)

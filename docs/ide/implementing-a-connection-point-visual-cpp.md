@@ -1,44 +1,45 @@
 ---
-title: Uygulama bağlantı noktası
+description: 'Daha fazla bilgi edinin: bağlantı noktası uygulama'
+title: Bağlantı noktası uygulama
 ms.date: 05/14/2019
 helpviewer_keywords:
 - connection points [C++], implementing
 - implement connection point wizard [C++]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
-ms.openlocfilehash: 8a75a5fbbabd20f4591e3a119c175d68cdfb1f90
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: bee04d28036ca5a2dfb0f4913adf39f1fdcca565
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65708077"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281164"
 ---
-# <a name="implement-a-connection-point"></a>Uygulama bağlantı noktası
+# <a name="implement-a-connection-point"></a>Bağlantı noktası uygulama
 
-Uygulama bağlantı noktası Sihirbazı'nı kullanarak bir bağlantı noktası uygulamak için bir proje ATL desteği içeren bir MFC uygulaması olarak veya bir ATL COM uygulaması oluşturmuş olmanız gerekir. Kullanabileceğiniz [ATL projesi Sihirbazı](../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [MFC uygulamanıza bir ATL nesnesi eklemek](../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.
-
-> [!NOTE]
-> Bağlantı noktaları için bir MFC projesine uygulanması hakkında daha fazla bilgi için bkz: [bağlantı noktaları](../mfc/connection-points.md).
-
-Bir bağlantı noktası uygulamak için projeyi oluşturduktan sonra ATL nesneyi eklemeniz gerekir. Bkz: [bir ATL projesine nesne ve denetim ekleme](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) , ATL projesine nesne eklemek sihirbazları listesi.
+Bağlantı noktası uygulama Sihirbazı 'Nı kullanarak bir bağlantı noktası uygulamak için, ATL COM uygulaması veya ATL desteği içeren bir MFC uygulaması olarak bir proje oluşturmuş olmanız gerekir. Atl uygulaması oluşturmak için ATL [Proje Sihirbazı 'nı](../atl/reference/atl-project-wizard.md) kullanabilir veya bir MFC UYGULAMASı için ATL desteği uygulamak üzere [MFC uygulamanıza ATL nesnesi ekleyebilirsiniz](../mfc/reference/adding-atl-support-to-your-mfc-project.md) .
 
 > [!NOTE]
-> ATL iletişim kutuları, ATL Sunucu, performans nesneleri ve performans sayaçları ile oluşturulan XML Web Hizmetleri Sihirbazı'nı desteklemez.
+> Bir MFC projesine yönelik bağlantı noktalarını uygulama hakkında daha fazla bilgi için bkz. [bağlantı noktaları](../mfc/connection-points.md).
 
-Bağlanılabilirlik bir nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası her giden arabirimlerinden gösterebilirsiniz. Giden her arabirim bir istemcide bir nesnenin (diğer bir deyişle, bir havuz) tarafından uygulanabilir. Daha fazla bilgi için [ATL bağlantı noktaları](../atl/atl-connection-points.md).
+Projeyi oluşturduktan sonra bir bağlantı noktası uygulamak için, önce bir ATL nesnesi eklemeniz gerekir. ATL projenize nesne ekleyen sihirbazların bir listesi için bkz. [ATL projesine nesne ve denetim ekleme](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) .
+
+> [!NOTE]
+> Sihirbaz, atl iletişim kutularını, ATL sunucusu ile oluşturulan XML Web hizmetlerini, performans nesnelerini veya performans sayaçlarını desteklemez.
+
+Bağlanılabilir bir nesne (yani bir kaynak) giden arabirimlerinden her biri için bir bağlantı noktası gösterebilir. Her giden arabirim bir nesne (yani bir havuz) üzerinde bir istemci tarafından uygulanabilir. Daha fazla bilgi için bkz. [atl bağlantı noktaları](../atl/atl-connection-points.md).
 
 **Bir bağlantı noktası uygulamak için:**
 
-1. Sınıf Görünümü'nde, ATL nesneniz için sınıf adına sağ tıklayın.
+1. Sınıf Görünümü, ATL nesneniz için sınıf adına sağ tıklayın.
 
-1. Seçin **Ekle** kısayol menüsünden seçin **bağlantı noktası Ekle** görüntülenecek [uygulama bağlantı noktası Sihirbazı](#implement-connection-point-wizard).
+1. Kısayol menüsünden **Ekle** ' yi ve ardından bağlantı **noktası Ekle** ' yi seçerek [bağlantı noktası uygulama Sihirbazı 'nı](#implement-connection-point-wizard)görüntüleyin.
 
-1. Uygun tür kitaplıklarından uygulamak ve seçmek için bağlantı noktası arabirimleri seçin **son**.
+1. Uygun tür kitaplıklarından uygulanacak bağlantı noktası arabirimlerini seçin ve **son**' u seçin.
 
-1. Sınıf Görünümü'nde, oluşturulan her bağlantı noktası için proxy sınıfları inceleyin. Sınıflar CProxy görünür*InterfaceName*\<T > ve türetilmiş [Iconnectionpointımpl](../atl/reference/iconnectionpointimpl-class.md).
+1. Sınıf Görünümü, her bağlantı noktası için oluşturulan proxy sınıflarını inceleyin. Sınıflar, CProxy *InterfaceName* olarak görünür \<T> ve [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md)'den türetilir.
 
-1. Bağlantı noktası sınıfı bağlantı noktasının sınıfının tanımını görüntülemek için çift tıklayın.
+1. Bağlantı noktası sınıfının tanımını göstermek için bağlantı noktası sınıfına çift tıklayın.
 
-   - Kendi projenin arabirimi için bir bağlantı noktası uygularsanız, aşağıdaki tanımını görünür:
+   - Kendi projenizin arabirimi için bir bağlantı noktası uygularsanız, aşağıdaki tanım görüntülenir:
 
      ```cpp
      template< class T >
@@ -49,39 +50,39 @@ Bağlanılabilirlik bir nesne (diğer bir deyişle, bir kaynak) bir bağlantı n
      };
      ```
 
-   - Bir yerel arabirime uygularsanız, yöntemleri ve özellikleri sınıf gövdesine görünür.
+   - Yerel bir arabirim uygularsanız, sınıf gövdesinde Yöntemler ve özellikler görünür.
 
-   - Başka bir arabirim için bir bağlantı noktası uygularsanız, arabirimin yöntemlerinin tanımı içerir, her önüne `Fire_`.
+   - Başka bir arabirim için bir bağlantı noktası uygularsanız, tanım, her biri tarafından önünde olan arabirimin yöntemlerini içerir `Fire_` .
 
 ## <a name="in-this-section"></a>Bu bölümde
 
-- [Bağlantı noktası Uygulama Sihirbazı](#implement-connection-point-wizard)
+- [Bağlantı noktası uygulama Sihirbazı](#implement-connection-point-wizard)
 
-## <a name="implement-connection-point-wizard"></a>Bağlantı noktası Uygulama Sihirbazı
+## <a name="implement-connection-point-wizard"></a>Bağlantı noktası uygulama Sihirbazı
 
-Bu sihirbaz bir COM nesnesi için bir bağlantı noktası uygular. Bağlanılabilirlik bir nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası kendi arabirimleri veya herhangi bir giden arabirimi gösterebilirsiniz. MSVC hem de Windows giden arabirimlere sahip tür kitaplıkları sağlar. Giden her arabirim bir istemcide bir nesnenin (diğer bir deyişle, bir havuz) tarafından uygulanabilir.
+Bu sihirbaz bir COM nesnesi için bağlantı noktası uygular. Bağlanılabilir bir nesne (yani bir kaynak) kendi arabirimleri veya herhangi bir giden arabirim için bir bağlantı noktası gösterebilir. MSVC ve Windows, her ikisi de giden arabirimleri olan tür kitaplıkları sağlar. Her giden arabirim bir nesne (yani bir havuz) üzerinde bir istemci tarafından uygulanabilir.
 
-Daha fazla bilgi için [ATL bağlantı noktaları](../atl/atl-connection-points.md).
+Daha fazla bilgi için bkz. [atl bağlantı noktaları](../atl/atl-connection-points.md).
 
 - **Kullanılabilir tür kitaplıkları**
 
-  Bağlantı noktaları uygulayabileceğiniz Arabirim tanımları bulunduran kullanılabilir tür kitaplıklarını görüntüler. Tür kitaplığı olan bir dosyayı bulmak için üç nokta düğmesini seçin.
+  Bağlantı noktalarını uygulayabileceğiniz arabirim tanımlarını tutan kullanılabilir tür kitaplıklarını görüntüler. Kullanılacak tür kitaplığını içeren bir dosyayı bulmak için üç nokta düğmesini seçin.
 
 - **Konum**
 
-  Şu anda seçilen tür kitaplığının konumu görüntüler **kullanılabilir tür kitaplıklarını** listesi.
+  **Kullanılabilir tür kitaplıkları** listesinde şu anda seçili olan tür kitaplığının konumunu görüntüler.
 
 - **Arabirimler**
 
-  Görüntüler, tanımları, tür kitaplığındaki şu anda seçili tutulur arabirimleri **kullanılabilir tür kitaplıklarını** kutusu.
+  Tanımları, **kullanılabilir tür kitaplıkları** kutusunda şu anda seçili olan tür kitaplığında tutulmuş olan arabirimleri görüntüler.
 
-  |Aktarım düğmesi|Açıklama|
+  |Aktar düğmesi|Açıklama|
   |---------------------|-----------------|
-  |**>**|Ekler **uygulamak bağlantı noktaları** geçerli seçili arabirim adı listesi **arabirimleri** listesi.|
-  |**>>**|Ekler **uygulamak bağlantı noktaları** bulunan tüm arabirimi adlarını listelemek **arabirimleri** listesi.|
-  |**\<**|Şu anda seçili arabirim adını kaldırır **uygulamak bağlantı noktaları** listesi.|
-  |**\<\<**|Şu anda listelenen adları tüm arabirim kaldırır **uygulamak bağlantı noktaları** listesi.|
+  |**>**|, **Arabirimler** listesinde seçili olan arabirim adını **bağlantı noktalarına uygula** listesine ekler.|
+  |**>>**|**Arabirim listesindeki kullanılabilir** tüm arabirim adlarını, **bağlantı noktalarını Uygula** listesine ekler.|
+  |**\<**|**Bağlantı noktalarını Uygula** listesinde seçili olan arabirim adını kaldırır.|
+  |**\<\<**|**Bağlantı noktalarını Uygula** listesinde şu anda listelenen tüm arabirim adlarını kaldırır.|
 
-- **Uygulama bağlantı noktaları**
+- **Bağlantı noktalarını Uygula**
 
-  Kendisi için uygulamanız bağlantı noktaları seçtiğinizde arabirimleri adlarını görüntüler **son**.
+  **Son**' u seçtiğinizde bağlantı noktalarını uyguladığınız arabirimlerin adlarını görüntüler.

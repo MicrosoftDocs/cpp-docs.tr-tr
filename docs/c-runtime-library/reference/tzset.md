@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _tzset'
 title: _tzset
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - time environment variables
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
-ms.openlocfilehash: 0791fe6002b751906c6bc6f83dafe1ccf202bc8b
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 3841acf0a0fa13b23a8c41dcf955feec76bc82d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304538"
 ---
 # <a name="_tzset"></a>_tzset
 
@@ -50,7 +51,7 @@ void _tzset( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Tzset** işlevi, üç genel değişkene değer atamak için **TZ** ortam değişkeninin geçerli ayarını kullanır: **_daylight**, **_timezone**ve **_tzname**. Bu değişkenler, Eşgüdümlü Evrensel Saat (UTC) ile yerel saate ve UTC 'yi sistem saatinden hesaplamak için [zaman](time-time32-time64.md) işlevine göre düzeltmeler yapmak üzere [_ftime](ftime-ftime32-ftime64.md) ve [localtime](localtime-localtime32-localtime64.md) işlevleri tarafından kullanılır. **TZ** ortam değişkenini ayarlamak için aşağıdaki sözdizimini kullanın:
+**_Tzset** işlevi, üç genel değişkene değer atamak için **TZ** ortam değişkeninin geçerli ayarını kullanır: **_daylight**, **_timezone** ve **_tzname**. Bu değişkenler, Eşgüdümlü Evrensel Saat (UTC) ile yerel saate ve UTC 'yi sistem saatinden hesaplamak için [zaman](time-time32-time64.md) işlevine göre düzeltmeler yapmak üzere [_ftime](ftime-ftime32-ftime64.md) ve [localtime](localtime-localtime32-localtime64.md) işlevleri tarafından kullanılır. **TZ** ortam değişkenini ayarlamak için aşağıdaki sözdizimini kullanın:
 
 > **TZ =**_tzn_ \[ **+**&#124;**-** ]*HH* \[ **:**_mm_ \[ **:**_SS_]] [*dzn*] ayarla
 
@@ -67,7 +68,7 @@ void _tzset( void );
  Saniyeden. Bir iki nokta (**:**) ile *mm* 'den ayrılır.
 
  *dzn* \
- PASIFIK saati gibi üç harfli Yaz Saati dilimi. Gün ışığından yararlanma saati hiçbir zaman konum içinde etkin değilse, bir *dzn*değeri olmadan **TZ** ayarlayın. C çalışma zamanı kitaplığı, gün ışığından yararlanma zamanının (DST) hesaplanmasını uygulamak için Birleşik Devletler ' kurallarını varsayar.
+ PASIFIK saati gibi üç harfli Yaz Saati dilimi. Gün ışığından yararlanma saati hiçbir zaman konum içinde etkin değilse, bir *dzn* değeri olmadan **TZ** ayarlayın. C çalışma zamanı kitaplığı, gün ışığından yararlanma zamanının (DST) hesaplanmasını uygulamak için Birleşik Devletler ' kurallarını varsayar.
 
 > [!NOTE]
 > Zaman farkının işaretini hesaplarken dikkatli olmak. Saat farkı, yerel saatten UTC 'ye (tersi değil) göre farklılık yaptığından, işareti, ne kadar çok beklendiğini tahmin edebileceğinize karşı bir değer olabilir. UTC 'nin önünde geçen saat dilimleri için saat farkı negatif olur; UTC 'nin gerisinde, fark pozitif bir değer.
@@ -80,7 +81,7 @@ Bu komut, Almanya standart saatini göstermek için GST kullanır, UTC 'nin bir 
 
 **TZ** değeri ayarlanmamışsa, **_tzset** işletim sistemi tarafından belirtilen saat dilimi bilgilerini kullanmaya çalışır. Windows işletim sisteminde bu bilgiler Denetim Masası 'ndaki Tarih/Saat uygulamasında belirtilir. **_Tzset** bu bilgileri edinemez, varsayılan olarak Pasifik saati DILIMINI belirten PST8PDT kullanır.
 
-**TZ** ortam değişkeni değerine bağlı olarak, **_tzset** çağrıldığında aşağıdaki değerler **_daylight**, **_timezone**ve **_tzname** genel değişkenlere atanır:
+**TZ** ortam değişkeni değerine bağlı olarak, **_tzset** çağrıldığında aşağıdaki değerler **_daylight**, **_timezone** ve **_tzname** genel değişkenlere atanır:
 
 |Genel değişken|Açıklama|Varsayılan değer|
 |---------------------|-----------------|-------------------|

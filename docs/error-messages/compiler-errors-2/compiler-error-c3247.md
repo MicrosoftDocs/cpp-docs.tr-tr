@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3247'
 title: Derleyici hatası C3247
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3247
 ms.assetid: f9a2bbb5-3fce-40bf-9fd3-835a5f164dbb
-ms.openlocfilehash: c1b8aaddac32af4e0936ce7d45fbc59c3835dda2
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 02e8f20f9804067e0179f3b5583d589d16dae302
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307202"
 ---
 # <a name="compiler-error-c3247"></a>Derleyici hatası C3247
 
