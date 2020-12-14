@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetim bayrakları'
 title: Denetim Bayrakları
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,25 +9,25 @@ helpviewer_keywords:
 - heap allocation, control flags
 - debug heap, control flags
 ms.assetid: 8dbd24a5-0633-42d1-9771-776db338465f
-ms.openlocfilehash: 7ac5f239ea4d242618fb23ba617a3a6539492053
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6b49bfa49e2e231a64af8d88739778964ce8ed21
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344765"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195742"
 ---
 # <a name="control-flags"></a>Denetim Bayrakları
 
-Microsoft C çalışma zamanı kitaplığı hata ayıklama sürümünü aşağıdaki bayraklar denetimi yığın ayırma ve raporlama işlemi kullanır. Daha fazla bilgi için [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
+Microsoft C çalışma zamanı kitaplığı 'nın hata ayıklama sürümü, yığın ayırmayı ve raporlama işlemini denetlemek için aşağıdaki bayrakları kullanır. Daha fazla bilgi için bkz. [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
 
-|Bayrağı|Açıklama|
+|Bayrak|Açıklama|
 |----------|-----------------|
-|[_CRTDBG_MAP_ALLOC](../c-runtime-library/crtdbg-map-alloc.md)|Temel yığın işlevlerin hata ayıklama sürümü karşılıkları eşler.|
-|[_DEBUG](../c-runtime-library/debug.md)|Çalışma zamanı işlevlerin hata ayıklama sürümleri kullanılmasına olanak tanır|
-|[_crtDbgFlag](../c-runtime-library/crtdbgflag.md)|Hata ayıklama yığını Yöneticisi ayırmaları nasıl izlediği denetler|
+|[_CRTDBG_MAP_ALLOC](../c-runtime-library/crtdbg-map-alloc.md)|Taban yığın işlevlerini hata ayıklama sürümü karşılıklarına eşler|
+|[_DEBUG](../c-runtime-library/debug.md)|Çalışma zamanı işlevlerinin hata ayıklama sürümlerinin kullanımını sağlar|
+|[_crtDbgFlag](../c-runtime-library/crtdbgflag.md)|Hata ayıklama yığın yöneticisinin ayırmaları nasıl izlediğini denetler|
 
-Bu bayraklar veya /D komut satırı seçeneği ile tanımlanan bir `#define` yönergesi. Ne zaman bayrağı ile tanımlanan `#define`, üstbilgi dosyasını dahil etmeden önce düzenli bildirimleri deyimi yönergesi yer almalıdır.
+Bu bayraklar,/D komut satırı seçeneğiyle veya bir yönergesi ile tanımlanabilir `#define` . Bayrak ile tanımlandığında `#define` , yönerge, Routine bildirimleri için üstbilgi dosyası include ifadesinden önce gelmelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Global Değişkenler ve Standart Türler](../c-runtime-library/global-variables-and-standard-types.md)
+[Genel değişkenler ve standart türler](../c-runtime-library/global-variables-and-standard-types.md)

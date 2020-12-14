@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Warning pragma'
 title: warning pragması
 ms.date: 08/29/2019
 f1_keywords:
@@ -10,23 +11,23 @@ helpviewer_keywords:
 - pop warning pragma
 - warning pragma
 ms.assetid: 8e9a0dec-e223-4657-b21d-5417ebe29cc8
-ms.openlocfilehash: d8b110d459bba1e0b7e2fd6e2c95e7eed638fc99
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: ac810076d1db0c975d28bc64d0a6d761c9cec608
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77416189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193116"
 ---
 # <a name="warning-pragma"></a>warning pragması
 
 Derleyici uyarı iletilerinin davranışının seçmeli olarak değiştirilmesine izin vermez.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **#pragma Uyarısı (** \
+> **#pragma Uyarısı (**\
 > &nbsp;&nbsp;&nbsp;&nbsp;*Uyarı belirleyicisi* **:** *Uyarı-sayı-liste*\
-> &nbsp;&nbsp;&nbsp;&nbsp;[ **;** *uyarı-tanımlayıcı* **:** *Uyarı-sayı-liste* ...] **)** \
-> **#pragma Uyarısı (gönderim** [ **,** *n* ] **)** \
+> &nbsp;&nbsp;&nbsp;&nbsp;[**;** *uyarı-tanımlayıcı* **:** *Uyarı-sayı-liste* ...] **)**\
+> **#pragma Uyarısı (gönderim** [ **,** *n* ] **)**\
 > **#pragma Uyarısı (pop)**
 
 ## <a name="remarks"></a>Açıklamalar
@@ -36,13 +37,13 @@ Aşağıdaki uyarı belirleyicisi parametreleri kullanılabilir.
 |Uyarı Belirleyicisi|Anlamı|
 |------------------------|-------------|
 |*1, 2, 3, 4*|Verilen düzeyi belirtilen uyarıya Uygula. Ayrıca, varsayılan olarak kapalı olan belirli bir uyarıyı açar.|
-|*default*|Uyarı davranışını varsayılan değerine sıfırlayın. Ayrıca, varsayılan olarak kapalı olan belirli bir uyarıyı açar. Uyarı varsayılan, belgelenmiş, ve düzeyinde oluşturulacaktır.<br /><br /> Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../preprocessor/compiler-warnings-that-are-off-by-default.md).|
+|*varsayılanını*|Uyarı davranışını varsayılan değerine sıfırlayın. Ayrıca, varsayılan olarak kapalı olan belirli bir uyarıyı açar. Uyarı varsayılan, belgelenmiş, ve düzeyinde oluşturulacaktır.<br /><br /> Daha fazla bilgi için bkz. [Varsayılan olarak kapalı olan Derleyici uyarıları](../preprocessor/compiler-warnings-that-are-off-by-default.md).|
 |*dıı*|Belirtilen uyarı iletilerini verme.|
 |*hatayla*|Belirtilen uyarıları hata olarak raporla.|
-|*once*|Belirtilen iletileri yalnızca bir kez görüntüle.|
+|*tek*|Belirtilen iletileri yalnızca bir kez görüntüle.|
 |*Gizle*|Yığında pragma 'ın geçerli durumunu gönderir, sonraki satır için belirtilen uyarıyı devre dışı bırakır ve sonra, pragma durumunun sıfırlanması için uyarı yığınını açılır.|
 
-Aşağıdaki kod bildiriminde, bir `warning-number-list` parametresinin birden çok uyarı numarası içerebileceğini ve aynı pragma yönergesinde birden çok `warning-specifier` parametresi belirtilebildiği gösterilmektedir.
+Aşağıdaki kod bildiriminde, bir `warning-number-list` parametrenin birden çok uyarı numarası içerebileceğini ve `warning-specifier` aynı pragma yönergesinde birden çok parametrenin belirtilebildiği gösterilmektedir.
 
 ```cpp
 #pragma warning( disable : 4507 34; once : 4385; error : 164 )
@@ -91,9 +92,9 @@ Bir işlev gövdesinde, **Uyarı** pragması 'nın son ayarının tüm işlev i�
 
 `#pragma warning( pop )`
 
-Pragma `warning( push )` her uyarı için geçerli uyarı durumunu depolar. Pragma `warning( push, n )` her uyarı için geçerli durumu depolar ve genel uyarı düzeyini *n*olarak ayarlar.
+Pragma, `warning( push )` her uyarı için geçerli uyarı durumunu depolar. Pragma `warning( push, n )` her uyarı için geçerli durumu depolar ve genel uyarı düzeyini *n* olarak ayarlar.
 
-Pragma `warning( pop )`, yığın üzerine gönderilen son uyarı durumunu açılır. Uyarı durumunda *Push* ve *pop* arasında yaptığınız tüm değişiklikler geri alınır. Şu örneği göz önünde bulundurun:
+Pragma, `warning( pop )` yığın üzerine gönderilen son uyarı durumunu yükler. Uyarı durumunda *Push* ve *pop* arasında yaptığınız tüm değişiklikler geri alınır. Bu örneği ele alalım:
 
 ```cpp
 #pragma warning( push )

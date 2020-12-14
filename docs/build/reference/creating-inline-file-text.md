@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: satır Içi dosya metni oluşturma'
 title: Satır İçi Dosya Metni Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - NMAKE program, inline files
 - text, inline file
 ms.assetid: b8a332ed-8244-4ff8-89e6-029d7f659725
-ms.openlocfilehash: a45aa526ca99af93cda86a2a8e0580d4d036ca6d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 849273fff4ca0853e4589a38096cbb067c380aae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196860"
 ---
 # <a name="creating-inline-file-text"></a>Satır İçi Dosya Metni Oluşturma
 
-Satır içi geçici veya kalıcı dosyalarıdır.
+Satır içi dosyalar geçicidir veya kalıcıdır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 inlinetext
@@ -29,10 +30,10 @@ inlinetext
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtin *inlinetext* komuttan sonra ilk satırda. End çift açılı ayraçlar ile İşaretle (<<) ayrı bir satır başında. Tüm dosya içeren *inlinetext* sınırlandırma köşeli ayraçlar önce. *İnlinetext* makro genişletmeleri ve değişimler, ancak yönergeleri veya derleme görevleri dosyası açıklamaları olabilir. Boşluk, sekme ve yeni satır karakterleri tam anlamıyla kabul edilir.
+Komuttan sonraki ilk satırda *ınlinetext* öğesini belirtin. Sonu, ayrı bir satırın başındaki çift açılı ayraçlar (<<) ile işaretleyin. Dosya, sınırlandırma parantezden önceki tüm *ınlinetext* dosyalarını içerir. *Inlinetext* , makro genişletmeleri ve değiştirmeler içerebilir, ancak yönergeleri veya derleme görevleri dosyası açıklamalarını içermez. Boşluklar, sekmeler ve yeni satır karakterleri, tam olarak değerlendirilir.
 
-Geçici bir dosya oturum boyunca var ve diğer komutlar tarafından yeniden kullanılabilir. Belirtin **TUTMAK** NMAKE oturumundan sonra; dosyayı korumak için sağ açılı köşeli sonra isimsiz dosya diskte oluşturulan dosya adı ile korunur. Belirtin **NOKEEP** veya geçici bir dosya için hiçbir şey yok. **TUTUN** ve **NOKEEP** büyük/küçük harfe duyarlı değildir.
+Oturum süresince geçici bir dosya bulunur ve diğer komutlar tarafından yeniden kullanılabilir. Dosyayı NMAKE oturumundan sonra tutmak için kapanış açılı parantezden sonra **tut** ' i belirtin; adlandırılmamış bir dosya disk üzerinde oluşturulan dosya adı ile korunur. Geçici bir dosya için **nokeep** veya Nothing belirtin. **Keep** ve **nokeep** büyük/küçük harfe duyarlı değildir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](inline-files-in-a-makefile.md)
+[Derleme görevleri dosyasındaki satır içi dosyalar](inline-files-in-a-makefile.md)

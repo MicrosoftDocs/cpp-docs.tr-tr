@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Framework (MFC)'
 title: Framework (MFC)
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: b02d5a1862a278f46591895f20f58a97367b5ab2
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 12e5a28e231dfadec867213ebf1cea6fd6ae7300
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618791"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193493"
 ---
 # <a name="framework-mfc"></a>Framework (MFC)
 
@@ -31,24 +32,24 @@ Kapsülleme, örneğin, C++ sınıfının `CWnd` türünde bir üye değişkeni 
 
 [SDI ve MDI](sdi-and-mdi.md)
 
-[Belgeler, Görünümler ve Çerçeve](documents-views-and-the-framework.md)
+[Belgeler, görünümler ve çerçeve](documents-views-and-the-framework.md)
 
 [Sihirbazlar ve kaynak düzenleyicileri](wizards-and-the-resource-editors.md)
 
 ## <a name="in-related-sections"></a>Ilgili bölümlerde
 
-[Framework'te Derleme](building-on-the-framework.md)
+[Çerçevede derleme](building-on-the-framework.md)
 
-[Framework'ün Kodunuzu Çağırması](how-the-framework-calls-your-code.md)
+[Framework kodunuzu nasıl çağırır](how-the-framework-calls-your-code.md)
 
-[CWinApp: Uygulama Sınıfı](cwinapp-the-application-class.md)
+[CWinApp: uygulama sınıfı](cwinapp-the-application-class.md)
 
-[Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi](document-templates-and-the-document-view-creation-process.md)
+[Belge şablonları ve belge/görünüm oluşturma Işlemi](document-templates-and-the-document-view-creation-process.md)
 
-[İleti İşleme ve Eşleme](message-handling-and-mapping.md)
+[İleti Işleme ve eşleme](message-handling-and-mapping.md)
 
 [Pencere nesneleri](window-objects.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Windows Uygulamaları Yazmak için Sınıfları Kullanma](using-the-classes-to-write-applications-for-windows.md)
+[Windows uygulamaları yazmak için sınıfları kullanma](using-the-classes-to-write-applications-for-windows.md)

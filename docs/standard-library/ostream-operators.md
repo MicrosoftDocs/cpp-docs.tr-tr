@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; ostream &gt; işleçleri'
 title: '&lt;ostream &gt; işleçleri'
 ms.date: 11/04/2016
 f1_keywords:
 - ostream/std::operator&lt;&lt;
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
-ms.openlocfilehash: a4dfee6c70f068e5a61294e6b2863a8a12a9c378
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 51422031de786d560b70a8ccaf8a072151630bbe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039774"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193064"
 ---
 # <a name="ltostreamgt-operators"></a>&lt;ostream &gt; işleçleri
 
@@ -113,7 +114,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```
 
-Str 'nin uzunluğu N = `traits_type::` [uzunluğunu](../standard-library/char-traits-struct.md#length)( `str` ) belirler ve diziyi ekler. *str* N < `_Ostr.` [Width](../standard-library/ios-base-class.md#width)ise, işlev bir `_Ostr.width` -N Fill karakter yinelemesi de ekler. Yineleme ( `_Ostr` . [flags](../standard-library/ios-base-class.md#flags)  &  bayraklar `adjustfield` ! = [sol](../standard-library/ios-functions.md#left). Aksi takdirde, yineleme diziyi izler. İşlev *_Ostr*döndürür.
+Str 'nin uzunluğu N = `traits_type::` [uzunluğunu](../standard-library/char-traits-struct.md#length)( `str` ) belirler ve diziyi ekler.  N < `_Ostr.` [Width](../standard-library/ios-base-class.md#width)ise, işlev bir `_Ostr.width` -N Fill karakter yinelemesi de ekler. Yineleme ( `_Ostr` . [](../standard-library/ios-base-class.md#flags)  &  bayraklar `adjustfield` ! = [sol](../standard-library/ios-functions.md#left). Aksi takdirde, yineleme diziyi izler. İşlev *_Ostr* döndürür.
 
 Şablon işlevi
 
@@ -124,7 +125,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     Elem _Ch);
 ```
 
-öğesi ekler `_Ch` . 1 < `_Ostr.width` , işlev bir `_Ostr.width` -1 Fill karakter yinelemesi de ekler. Yineleme, IF dizisinden önce gelir `_Ostr.flags & adjustfield != left` . Aksi takdirde, yineleme diziyi izler. *_Ostr*döndürür.
+öğesi ekler `_Ch` . 1 < `_Ostr.width` , işlev bir `_Ostr.width` -1 Fill karakter yinelemesi de ekler. Yineleme, IF dizisinden önce gelir `_Ostr.flags & adjustfield != left` . Aksi takdirde, yineleme diziyi izler. *_Ostr* döndürür.
 
 Şablon işlevi
 
@@ -144,7 +145,7 @@ basic_ostream<Elem, _Tr>& operator<<(
     const Elem *str);
 ```
 
-her öğe _Ch, *Str* 'de başlayan sıranın *_Ch* , `Elem` `_Ostr.` [PUT](../standard-library/basic-ostream-class.md#put)( `_Ostr.` [Genişlet](../standard-library/basic-ios-class.md#widen)( `_Ch` )) yöntemini çağırarak türü bir nesneye dönüştürülebileceğinden.
+her öğe _Ch, *Str* 'de başlayan sıranın  , `Elem` `_Ostr.` [PUT](../standard-library/basic-ostream-class.md#put)( `_Ostr.` [Genişlet](../standard-library/basic-ios-class.md#widen)( `_Ch` )) yöntemini çağırarak türü bir nesneye dönüştürülebileceğinden.
 
 Şablon işlevi
 
@@ -263,7 +264,7 @@ döndürür `_Ostr << val` (ve bir [rvalue başvurusunu](../cpp/rvalue-reference
 
 ### <a name="example"></a>Örnek
 
-Bkz [flush](../standard-library/ostream-functions.md#flush) . bir örnek için Temizleme `operator<<` .
+Bkz [](../standard-library/ostream-functions.md#flush) . bir örnek için Temizleme `operator<<` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

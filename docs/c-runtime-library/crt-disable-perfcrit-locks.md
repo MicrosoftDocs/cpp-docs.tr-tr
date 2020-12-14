@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CRT_DISABLE_PERFCRIT_LOCKS'
 title: _CRT_DISABLE_PERFCRIT_LOCKS
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - CRT_DISABLE_PERFCRIT_LOCKS constant
 - _CRT_DISABLE_PERFCRIT_LOCKS constant
 ms.assetid: 36cc2d86-cdb1-4b2b-a03c-c0d3818e7c6f
-ms.openlocfilehash: b6f4d8dee5577e88aa59af9bff017aab0c7eef89
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b96e29fad635ac9e7f3d622ace3c43bb26c8805a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195690"
 ---
-# <a name="crtdisableperfcritlocks"></a>_CRT_DISABLE_PERFCRIT_LOCKS
+# <a name="_crt_disable_perfcrit_locks"></a>_CRT_DISABLE_PERFCRIT_LOCKS
 
-Performans açısından kritik g/ç işlemlerinde kilitleme devre dışı bırakır.
+G/ç işlemlerinde performans açısından kritik kilitlemeyi devre dışı bırakır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #define _CRT_DISABLE_PERFCRIT_LOCKS
@@ -27,8 +28,8 @@ Performans açısından kritik g/ç işlemlerinde kilitleme devre dışı bırak
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sembol tanımlama miyim/O-bağlı programlarda tek iş parçacıklı bir tek iş parçacıklı g/ç modeli varsaymak tüm g/ç işlemleri zorlayarak performansını geliştirebilirsiniz. Daha fazla bilgi için [birden çok iş parçacıklı kitaplık performansı](../c-runtime-library/multithreaded-libraries-performance.md).
+Bu sembolün tanımlanması, tüm g/ç işlemlerini tek iş parçacıklı g/ç modelinin kabul etmek üzere zorlayarak, tek iş parçacıklı g/ç ile bağlantılı programlardaki performansı iyileştirebilir. Daha fazla bilgi için bkz. çok [Iş parçacıklı kitaplıklar performansı](../c-runtime-library/multithreaded-libraries-performance.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

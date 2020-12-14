@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: genel özellik sayfası (proje)'
 title: Genel Özellik Sayfası (Proje)
 ms.date: 07/17/2019
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: eaaa2c7428809c05532642b0f9ac53146c6f01a9
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 3bcfcca492ca1b228658c49699e41f31135d0974
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191959"
 ---
 # <a name="general-property-page-project"></a>Genel Özellik Sayfası (Proje)
 
@@ -38,7 +39,7 @@ ms.locfileid: "92924291"
 
 Bu konu, Windows için Visual Studio projelerine yöneliktir. Linux projeleri için bkz. [Linux C++ Özellik sayfası başvurusu](../../linux/prop-pages-linux.md). CMake projeleri için bkz. [Visual Studio 'Da CMake projeleri](../cmake-projects-in-visual-studio.md). Android projeleri için bkz. [genel proje özellikleri (Android C++)](../../cross-platform/general-android-prop-page.md). Android derleme görevleri dosyası projeleri için bkz. [genel proje özellikleri (Android C++ Makefile)](../../cross-platform/general-makefile-android-prop-page.md)
 
-Çözüm Gezgini ' de bir proje düğümüne sağ tıklayıp **Özellikler** ' i seçtiğinizde, sol bölmedeki **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası şu özellikleri görüntüler:
+Çözüm Gezgini ' de bir proje düğümüne sağ tıklayıp **Özellikler**' i seçtiğinizde, sol bölmedeki **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası şu özellikleri görüntüler:
 
 - **Çıkış dizini**
 
@@ -102,7 +103,7 @@ Bu konu, Windows için Visual Studio projelerine yöneliktir. Linux projeleri i�
 
 ::: moniker range="<=msvc-150"
 
-Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini** ' de bir proje düğümüne sağ tıklayıp **Özellikler** ' i seçtiğinizde, sol bölmedeki **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası özelliklerin iki bölümünü görüntüler:
+Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini**' de bir proje düğümüne sağ tıklayıp **Özellikler**' i seçtiğinizde, sol bölmedeki **yapılandırma özellikleri** düğümü altındaki **genel** Özellik sayfası özelliklerin iki bölümünü görüntüler:
 
 - Genel
 
@@ -150,7 +151,7 @@ Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini** ' de bir pro
 
 - **Temizlemede Silinecek Uzantılar**
 
-   **Temizleme** seçeneği ( **derleme** menüsü), bir projenin yapılandırmasının oluşturulduğu ara dizindeki dosyaları siler. Bu özellik ile belirtilen uzantılara sahip dosyalar, **Temizleme** çalıştırıldığında veya yeniden derleme gerçekleştirdiğinizde silinir. Ara dizindeki bu uzantılara ait dosyaların yanı sıra, yapı sistemi, bulunduğu yere bakılmaksızın (. obj dosyaları gibi ara çıktılar dahil olmak üzere) her türlü bilinen çıktıyı da siler. Joker karakterler belirtebilirsiniz.
+   **Temizleme** seçeneği (**derleme** menüsü), bir projenin yapılandırmasının oluşturulduğu ara dizindeki dosyaları siler. Bu özellik ile belirtilen uzantılara sahip dosyalar, **Temizleme** çalıştırıldığında veya yeniden derleme gerçekleştirdiğinizde silinir. Ara dizindeki bu uzantılara ait dosyaların yanı sıra, yapı sistemi, bulunduğu yere bakılmaksızın (. obj dosyaları gibi ara çıktılar dahil olmak üzere) her türlü bilinen çıktıyı da siler. Joker karakterler belirtebilirsiniz.
 
    Bu özelliğe programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A> ..
 
@@ -170,7 +171,7 @@ Visual Studio 2015 ve Visual Studio 2017 ' de, **Çözüm Gezgini** ' de bir pro
 
 ## <a name="project-defaults"></a>Proje Varsayılanları
 
-Proje varsayılan bölümündeki özellikler, değiştirebileceğiniz varsayılan özellikleri temsil eder. Bu özelliklerin tanımı, \Vc\vcprojectdefaults. *yükleme dizinindeki* . props dosyalarında bulunabilir.
+Proje varsayılan bölümündeki özellikler, değiştirebileceğiniz varsayılan özellikleri temsil eder. Bu özelliklerin tanımı, \Vc\vcprojectdefaults. *yükleme dizinindeki*. props dosyalarında bulunabilir.
 
 - **Yapılandırma türü**
 

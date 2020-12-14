@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: konsol ve bağlantı noktası g/ç'
 title: Konsol ve Bağlantı Noktası G/Ç
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - I/O [CRT], port
 - I/O routines, console and port I/O
 ms.assetid: 0eee1c92-9b3d-41e0-a43a-257e546eeec8
-ms.openlocfilehash: 5b4dc2a081ea11bd84d932f55b5b247de81f296a
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 99419db614d4b4493f0fc5de3febb522c8bbb3dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443454"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195794"
 ---
 # <a name="console-and-port-io"></a>Konsol ve Bağlantı Noktası G/Ç
 
@@ -22,7 +23,7 @@ Bu yordamlar, konsolunuza veya belirtilen bağlantı noktasında okur ve yazar. 
 
 ## <a name="console-and-port-io-routines"></a>Konsol ve bağlantı noktası g/ç yordamları
 
-|Yordam|Kullanım|
+|Yordam|Kullanın|
 |-------------|---------|
 |[_cgets, _cgetws](../c-runtime-library/cgets-cgetws.md), [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md)|Konsoldan dize oku|
 |[_cprintf, _cwprintf](../c-runtime-library/reference/cprintf-cprintf-l-cwprintf-cwprintf-l.md), [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](../c-runtime-library/reference/cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)|Biçimli verileri konsola yaz|
@@ -42,5 +43,5 @@ Bu yordamlar, konsolunuza veya belirtilen bağlantı noktasında okur ve yazar. 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Girdi ve Çıktı](../c-runtime-library/input-and-output.md)<br/>
+[Giriş ve çıkış](../c-runtime-library/input-and-output.md)<br/>
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/dışarı aktarmalar
 title: /EXPORTS
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -EXPORTS dumpbin option
 - /EXPORTS dumpbin option
 ms.assetid: 2971ab7e-4ee6-478b-9c85-cda42a4ce1bf
-ms.openlocfilehash: f464a53486fdd5132bceb91d134b908c2aa0ff11
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bd4575b5330ec280367cd4dfe399e82c39eded6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196821"
 ---
 # <a name="exports"></a>/EXPORTS
 
@@ -23,9 +24,9 @@ ms.locfileid: "62272288"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, bir yürütülebilir dosya veya DLL dışarı aktarılan tüm tanımları görüntüler.
+Bu seçenek yürütülebilir bir dosyadan veya DLL 'den aktarılmış tüm tanımları görüntüler.
 
-Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
+[/GL](gl-whole-program-optimization.md) derleyici seçeneği ile oluşturulan dosyalarda yalnızca [/Headers](headers.md) dumpbin seçeneği kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

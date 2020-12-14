@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Işaretçi bildirimleri'
 title: İşaretçi Bildirimleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - const keyword [C]
 - pointers, declarations
 ms.assetid: 8b3b7fc7-f44d-480d-b6f9-cebe4e5462a6
-ms.openlocfilehash: 31d7e30859537fed1b18f6d30302d83248e17e74
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3c1670d1dd86e7df7f164e357ff99f3ed31e7339
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195924"
 ---
 # <a name="pointer-declarations"></a>İşaretçi Bildirimleri
 
 *İşaretçi bildirimi* bir işaretçi değişkenini adlandırır ve değişkenin işaret ettiği nesnenin türünü belirtir. İşaretçi olarak belirtilen bir değişken bir bellek adresini tutar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *bildirimci*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*işaretçi*<sub>opt</sub> *doğrudan bildirimci*
@@ -85,13 +86,13 @@ int volatile *const z = &some_object;
 int *const volatile w = &some_object;
 ```
 
-Bu bildirimlerden *y* değişkeni, bir değere sabit bir işaretçi olarak bildirilmiştir **`int`** . İşaret ettiği değer değiştirilebilir, ancak işaretçinin kendisi her zaman aynı konuma işaret etmelidir: *fixed_object*adresi. Benzer şekilde, *z* sabit bir işaretçidir, ancak aynı zamanda **`int`** değeri program tarafından değiştirilemeyen bir değere işaret etmek için de bildirilmiştir. Ek tanımlayıcı, **`volatile`** *z* tarafından işaret edilen **const int** değerinin program tarafından değiştirilemeyeceğini, meşru bir şekilde programla aynı şekilde çalışan bir işlem tarafından değiştirilmesini gösterir. *W* bildirimi programın işaret ettiği değeri değiştiremez ve programın işaretçiyi değiştiremez.
+Bu bildirimlerden *y* değişkeni, bir değere sabit bir işaretçi olarak bildirilmiştir **`int`** . İşaret ettiği değer değiştirilebilir, ancak işaretçinin kendisi her zaman aynı konuma işaret etmelidir: *fixed_object* adresi. Benzer şekilde, *z* sabit bir işaretçidir, ancak aynı zamanda **`int`** değeri program tarafından değiştirilemeyen bir değere işaret etmek için de bildirilmiştir. Ek tanımlayıcı, **`volatile`** *z* tarafından işaret edilen **const int** değerinin program tarafından değiştirilemeyeceğini, meşru bir şekilde programla aynı şekilde çalışan bir işlem tarafından değiştirilmesini gösterir. *W* bildirimi programın işaret ettiği değeri değiştiremez ve programın işaretçiyi değiştiremez.
 
 ```
 struct list *next, *previous; /* Uses the tag for list */
 ```
 
-Bu örnek, yapı türü *listesini*işaret eden *Next* ve *Previous*olmak üzere iki işaretçi değişkeni bildirir. *Liste türü tanımı* bildirimle aynı görünürlüğe sahip olduğu sürece, bu bildirim *liste* yapı türü tanımından önce görünebilir (sonraki örneğe bakın).
+Bu örnek, yapı türü *listesini* işaret eden *Next* ve *Previous* olmak üzere iki işaretçi değişkeni bildirir. *Liste türü tanımı* bildirimle aynı görünürlüğe sahip olduğu sürece, bu bildirim *liste* yapı türü tanımından önce görünebilir (sonraki örneğe bakın).
 
 ```
 struct list
@@ -102,7 +103,7 @@ struct list
 } line;
 ```
 
-Değişken *çizgisi* , *list*adlı yapı türüne sahiptir. *Liste* yapısı türü üç üyeye sahiptir: ilk üye bir değere işaretçidir, ikincisi ise bir **`char`** **`int`** değerdir ve üçüncüsü ise başka bir *liste* yapısına yönelik bir işaretçidir.
+Değişken *çizgisi* , *list* adlı yapı türüne sahiptir. *Liste* yapısı türü üç üyeye sahiptir: ilk üye bir değere işaretçidir, ikincisi ise bir **`char`** **`int`** değerdir ve üçüncüsü ise başka bir *liste* yapısına yönelik bir işaretçidir.
 
 ```
 struct id
@@ -112,7 +113,7 @@ struct id
 } record;
 ```
 
-Değişken *kaydının* yapı türü *kimliği*vardır. *Pname* 'in *Name*adlı başka bir yapı türünün işaretçisi olarak bildirildiği unutulmamalıdır. Bu bildirim *ad* türü tanımlanmadan önce görünebilir.
+Değişken *kaydının* yapı türü *kimliği* vardır. *Pname* 'in *Name* adlı başka bir yapı türünün işaretçisi olarak bildirildiği unutulmamalıdır. Bu bildirim *ad* türü tanımlanmadan önce görünebilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

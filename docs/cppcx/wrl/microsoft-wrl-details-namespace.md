@@ -1,20 +1,21 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Microsoft:: WRL::D euçlar ad alanı'
 title: Microsoft::WRL::Details Ad Alanı
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-ms.openlocfilehash: 50208242d77d7b54951bcb44608f1a20b5147efc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c82d7389c80d35aa041dccc7c6bc8d202fba9c29
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223479"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195118"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Microsoft::WRL::Details Ad Alanı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 namespace Microsoft::WRL::Details;
@@ -41,7 +42,7 @@ namespace Microsoft::WRL::Details;
 |----------|-----------------|
 |[ArgTraits Yapısı](argtraits-structure.md)|Belirtilen bir temsilci arabirimi ve belirtilen sayıda parametreye sahip anonim bir üye işlevi bildirir.|
 |[ArgTraitsHelper Yapısı](argtraitshelper-structure.md)|Temsilci bağımsız değişkenlerinin ortak özelliklerini tanımlamaya yardımcı olur.|
-|[BoolStruct Yapısı](boolstruct-structure.md)|Bir `ComPtr` arabirimin nesne ömrünü yönetip yönetmediğini tanımlar. `BoolStruct`, [BoolType ()](comptr-class.md#operator-microsoft-wrl-details-booltype) işleci tarafından dahili olarak kullanılır.|
+|[BoolStruct Yapısı](boolstruct-structure.md)|Bir `ComPtr` arabirimin nesne ömrünü yönetip yönetmediğini tanımlar. `BoolStruct` , [BoolType ()](comptr-class.md#operator-microsoft-wrl-details-booltype) işleci tarafından dahili olarak kullanılır.|
 |[CreatorMap Yapısı](creatormap-structure.md)|Nesneleri başlatma, kaydetme ve kaydını silme hakkında bilgiler içerir.|
 |[DerefHelper Yapısı](derefhelper-structure.md)|Şablon parametresine başvuru yapılan bir işaretçiyi temsil eder `T*` .|
 |[EnableIf Yapısı](enableif-structure.md)|İlk şablon parametresi olarak değerlendirilirse ikinci şablon parametresi tarafından belirtilen türün veri üyesini tanımlar **`true`** .|
