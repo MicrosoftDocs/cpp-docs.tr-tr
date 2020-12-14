@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: TN041: MFC/OLE1 geçişi MFC/OLE 2'
 title: "TN041: MFC-OLE1-OLE 2 ' ye geçiş"
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - upgrading Visual C++ applications [MFC], OLE1 to OLE2
 - TN041
 ms.assetid: 67f55552-4b04-4ddf-af0b-4d9eaf5da957
-ms.openlocfilehash: 7d0381983481278b1410ae0ff11463519d4cbb34
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 83bb9869d61ca9d2c92780fc6bed55ce3c3ff798
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215384"
 ---
 # <a name="tn041-mfcole1-migration-to-mfcole-2"></a>TN041: MFC/OLE 2'ye MFC/OLE1 Geçişi
 
@@ -227,7 +228,7 @@ BOOL CRectItem::SetItemRectToServer()
 \oclient\frame.cpp(50) : error C2064: term does not evaluate to a function
 ```
 
-MFC/OLE1 zaman uyumlu API çağrıları, bir kapsayıcıdan sunucuya yönelik olarak zaman uyumsuz olduğundan, çoğu durumda OLE1 *doğal olarak zaman*uyumsuzdur. Kullanıcıdan komutları işlemeden önce, bekleyen bir zaman uyumsuz çağrının denetlenmesi gerekir. MFC/OLE1 bunu `COleClientItem::InWaitForRelease` yapmak için işlevi sağladı. MFC/OLE 2 ' de gerekli değildir, bu nedenle Canabilgisayar 'teki OnCommand 'in hepsini birlikte geçersiz kılmayı kaldırabilirsiniz.
+MFC/OLE1 zaman uyumlu API çağrıları, bir kapsayıcıdan sunucuya yönelik olarak zaman uyumsuz olduğundan, çoğu durumda OLE1 *doğal olarak zaman* uyumsuzdur. Kullanıcıdan komutları işlemeden önce, bekleyen bir zaman uyumsuz çağrının denetlenmesi gerekir. MFC/OLE1 bunu `COleClientItem::InWaitForRelease` yapmak için işlevi sağladı. MFC/OLE 2 ' de gerekli değildir, bu nedenle Canabilgisayar 'teki OnCommand 'in hepsini birlikte geçersiz kılmayı kaldırabilirsiniz.
 
 Bu noktada OCLIENT, derlenir ve bağlanır.
 
@@ -269,7 +270,7 @@ CRectItem::OnChange(OLE_NOTIFICATION wNotification, DWORD dwParam)
 }
 ```
 
-MFC/OLE1 içinde, kapsayıcı uygulamaları belge sınıfının öğesinden türetilir `COleClientDoc` . MFC/OLE 2 ' de bu sınıf tarafından kaldırılmıştır ve değiştirilmiştir `COleDocument` (Bu yeni kuruluş, kapsayıcı/sunucu uygulamaları oluşturmayı kolaylaştırır). **#define** `COleClientDoc` `COleDocument` MFC/OLE1 UYGULAMALARıNıN OCLIENT gibi MFC/OLE 2 ' ye taşıma işlemini basitleştirmek için ile eşleyen bir #define vardır. Tarafından sağlanan özelliklerden biri `COleDocument` `COleClientDoc` , standart komut ileti eşleme girişlarıdır. Bu işlem, `COleDocument` bir kapsayıcı/sunucu uygulaması olmadıkları müddetçe, (dolaylı olarak) da kullanan sunucu uygulamalarının bu komut işleyicilerinin ek yükü ile birlikte kalmaması için yapılır. CMainDoc ileti eşlemesine aşağıdaki girdileri eklemeniz gerekir:
+MFC/OLE1 içinde, kapsayıcı uygulamaları belge sınıfının öğesinden türetilir `COleClientDoc` . MFC/OLE 2 ' de bu sınıf tarafından kaldırılmıştır ve değiştirilmiştir `COleDocument` (Bu yeni kuruluş, kapsayıcı/sunucu uygulamaları oluşturmayı kolaylaştırır).  `COleClientDoc` `COleDocument` MFC/OLE1 UYGULAMALARıNıN OCLIENT gibi MFC/OLE 2 ' ye taşıma işlemini basitleştirmek için ile eşleyen bir #define vardır. Tarafından sağlanan özelliklerden biri `COleDocument` `COleClientDoc` , standart komut ileti eşleme girişlarıdır. Bu işlem, `COleDocument` bir kapsayıcı/sunucu uygulaması olmadıkları müddetçe, (dolaylı olarak) da kullanan sunucu uygulamalarının bu komut işleyicilerinin ek yükü ile birlikte kalmaması için yapılır. CMainDoc ileti eşlemesine aşağıdaki girdileri eklemeniz gerekir:
 
 ```cpp
 ON_UPDATE_COMMAND_UI(ID_EDIT_PASTE, OnUpdatePasteMenu)
@@ -559,7 +560,7 @@ BOOL CServerItem::OnDraw(CDC* pDC, CSize& rSize)
 }
 ```
 
-Yeni parametre ' rSize '. Bu, uygun durumlarda çizimin boyutunu doldurmanıza olanak sağlar. Bu boyut, **Himetrik**içinde olmalıdır. Bu durumda, bu değerin ' de doldurulması uygun değildir, bu nedenle Framework `OnGetExtent` kapsamı almak için çağırır. Bunun çalışması için şunları uygulamanız gerekir `OnGetExtent` :
+Yeni parametre ' rSize '. Bu, uygun durumlarda çizimin boyutunu doldurmanıza olanak sağlar. Bu boyut, **Himetrik** içinde olmalıdır. Bu durumda, bu değerin ' de doldurulması uygun değildir, bu nedenle Framework `OnGetExtent` kapsamı almak için çağırır. Bunun çalışması için şunları uygulamanız gerekir `OnGetExtent` :
 
 ```cpp
 BOOL CServerItem::OnGetExtent(DVASPECT dwDrawAspect, CSize& rSize)
@@ -579,7 +580,7 @@ BOOL CServerItem::OnGetExtent(DVASPECT dwDrawAspect, CSize& rSize)
     int)__far const ' : cannot convert parameter 1 from 'int __far *' to 'struct ::tagPOINT __far *'
 ```
 
-CServerItem:: CalcNodeSize işlevinde, öğe boyutu **Himetrik** 'e dönüştürülüp *m_rectBounds*depolanır. Belgelenmemiş '*m_rectBounds*' üyesi `COleServerItem` yok ( *m_sizeExtent*kısmen değiştirilmiştir, ancak OLE 2 ' de bu üyenin OLE1 içinde *m_rectBounds* çok farklı bir kullanımı vardır). **Himetrik** boyutunu bu üye değişkenine ayarlamak yerine, geri döneceksiniz. Bu dönüş değeri `OnGetExtent` , daha önce uygulanan ' de kullanılır.
+CServerItem:: CalcNodeSize işlevinde, öğe boyutu **Himetrik** 'e dönüştürülüp *m_rectBounds* depolanır. Belgelenmemiş '*m_rectBounds*' üyesi `COleServerItem` yok ( *m_sizeExtent* kısmen değiştirilmiştir, ancak OLE 2 ' de bu üyenin OLE1 içinde *m_rectBounds* çok farklı bir kullanımı vardır). **Himetrik** boyutunu bu üye değişkenine ayarlamak yerine, geri döneceksiniz. Bu dönüş değeri `OnGetExtent` , daha önce uygulanan ' de kullanılır.
 
 ```cpp
 CSize CServerItem::CalcNodeSize()

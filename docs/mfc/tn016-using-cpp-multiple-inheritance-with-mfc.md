@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: TN016: MFC ile C++ birden çok devralmayı kullanma'
 title: "TN016: MFC'de C++ Birden Çok Devralmayı Kullanma"
 ms.date: 06/28/2018
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MI (Multiple Inheritance)
 - multiple inheritance, MFC support for
 ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
-ms.openlocfilehash: c44639e713f6d0b26d5b74e9f645f60c8627e0c8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ac4b082a5dc33e93098453714acd25fbd0c18438
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231773"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215956"
 ---
 # <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016: MFC'de C++ Birden Çok Devralmayı Kullanma
 
@@ -35,7 +36,7 @@ Diğer bir seçenek de işlecini kullanmaktır **`dynamic_cast`** . Bir nesneyi 
 
 ## <a name="cobject---the-root-of-all-classes"></a>CObject-tüm sınıfların kökü
 
-Tüm önemli sınıflar sınıfından doğrudan veya dolaylı olarak türetilir `CObject` . `CObject`, hiçbir üye verisi içermez, ancak bazı varsayılan işlevlere sahiptir. Mı kullandığınızda, genellikle iki veya daha fazla `CObject` türetilmiş sınıftan kalıtımla alırsınız. Aşağıdaki örnek, bir sınıfın bir [CFrameWnd](../mfc/reference/cframewnd-class.md) ve bir [CObList](../mfc/reference/coblist-class.md)öğesinden nasıl devralmasını göstermektedir:
+Tüm önemli sınıflar sınıfından doğrudan veya dolaylı olarak türetilir `CObject` . `CObject` , hiçbir üye verisi içermez, ancak bazı varsayılan işlevlere sahiptir. Mı kullandığınızda, genellikle iki veya daha fazla `CObject` türetilmiş sınıftan kalıtımla alırsınız. Aşağıdaki örnek, bir sınıfın bir [CFrameWnd](../mfc/reference/cframewnd-class.md) ve bir [CObList](../mfc/reference/coblist-class.md)öğesinden nasıl devralmasını göstermektedir:
 
 ```cpp
 class CListWnd : public CFrameWnd, public CObList
@@ -80,7 +81,7 @@ public:
 
 Neredeyse devralma `CObject` işlevi belirsizliğin sorununu çözerek bu durum böyle değildir. ' De üye verisi olmadığından `CObject` , bir temel sınıf üyesi verilerinin birden çok kopyasını önlemek için sanal devralma gerekmez. Daha önce gösterilen ilk örnekte, `Dump` ve ' de farklı şekilde uygulandığından, sanal yöntem hala belirsizdir `CFrameWnd` `CObList` . Belirsizliği kaldırmanın en iyi yolu, önceki bölümde sunulan önerileri izlemelidir.
 
-## <a name="cobjectiskindof-and-run-time-typing"></a>CObject:: IsKindOf ve çalışma zamanı yazma
+## <a name="cobjectiskindof-and-run-time-typing"></a>CObject:: IsKindOf ve Run-Time yazma
 
 İçindeki MFC tarafından desteklenen çalışma zamanı yazma mekanizması `CObject` DECLARE_DYNAMIC, IMPLEMENT_DYNAMIC, DECLARE_DYNCREATE, IMPLEMENT_DYNCREATE, DECLARE_SERIAL ve IMPLEMENT_SERIAL makrolarını kullanır. Bu makrolar, güvenli kayları güvence altına almak için bir çalışma zamanı tür denetimi gerçekleştirebilir.
 
@@ -115,7 +116,7 @@ class CListEdit : public CObList, public CEdit
 
 ## <a name="a-sample-program-using-mi"></a>Mı kullanan örnek program
 
-Aşağıdaki örnek, ve CWinApp sınıfından türetilmiş bir sınıftan oluşan tek başına bir uygulamadır `CFrameWnd` . [CWinApp](../mfc/reference/cwinapp-class.md) Bir uygulamayı bu şekilde yapınızı öneririz, ancak bu bir sınıfa sahip en küçük MFC uygulamasına bir örnektir.
+Aşağıdaki örnek, ve CWinApp sınıfından türetilmiş bir sınıftan oluşan tek başına bir uygulamadır `CFrameWnd` . [](../mfc/reference/cwinapp-class.md) Bir uygulamayı bu şekilde yapınızı öneririz, ancak bu bir sınıfa sahip en küçük MFC uygulamasına bir örnektir.
 
 ```cpp
 #include <afxwin.h>

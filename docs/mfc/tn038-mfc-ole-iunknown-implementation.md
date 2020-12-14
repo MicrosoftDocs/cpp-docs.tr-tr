@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: TN038: MFC/OLE IUnknown uygulama'
 title: 'TN038: MFC-OLE IUnknown uygulama'
 ms.date: 06/28/2018
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - END_INTERFACE_PART macro [MFC]
 - INTERFACE_PART macro
 ms.assetid: 19d946ba-beaf-4881-85c6-0b598d7f6f11
-ms.openlocfilehash: 83166b32a20b8d24f748f85946caa01dbc76d4d0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 64a921fec560c375440f0430d4804aa78e533c6c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230447"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215410"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown Uygulaması
 
@@ -90,7 +91,7 @@ if (pUnk->QueryInterface(IID_IPrintInterface, (void**)&pPrint) == NOERROR)
 }
 ```
 
-Oldukça kolaydır, ancak bu durumda IPrintInterface ve [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) arabirimini destekleyen bir nesne nasıl uygulanır, çünkü IPrintInterface doğrudan [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) 'den türetiliyor çünkü IPrintInterface 'i uygulayarak [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) otomatik olarak desteklenir. Örnek:
+Oldukça kolaydır, ancak bu durumda IPrintInterface ve [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) arabirimini destekleyen bir nesne nasıl uygulanır, çünkü IPrintInterface doğrudan [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) 'den türetiliyor çünkü IPrintInterface 'i uygulayarak [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) otomatik olarak desteklenir. Örneğin:
 
 ```cpp
 class CPrintObj : public CPrintInterface
@@ -102,7 +103,7 @@ class CPrintObj : public CPrintInterface
 };
 ```
 
-[AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) ve [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) uygulamaları, yukarıda uygulananlarla tamamen aynı olacaktır. `CPrintObj::QueryInterface`Şuna benzer:
+[AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) ve [Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) uygulamaları, yukarıda uygulananlarla tamamen aynı olacaktır. `CPrintObj::QueryInterface` Şuna benzer:
 
 ```cpp
 HRESULT CPrintObj::QueryInterface(REFIID iid, void FAR* FAR* ppvObj)
@@ -256,7 +257,7 @@ Ayrıca, arabirim haritaları aşağıdaki gelişmiş özellikleri destekler:
 
 Toplama hakkında daha fazla bilgi için [toplama](/windows/win32/com/aggregation) konusuna bakın.
 
-MFC 'nin arabirim eşleme desteğiyle sınıfında kök olarak yer verilir `CCmdTarget` . `CCmdTarget`"*a*" başvuru sayısı ve [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygulamasıyla ilişkili tüm üye işlevleri (örneğin, başvuru sayısı `CCmdTarget` ). OLE COM destekleyen bir sınıf oluşturmak için, ' dan bir sınıf türetirsiniz `CCmdTarget` ve `CCmdTarget` istenen arabirimleri uygulamak için üye işlevlerinin yanı sıra çeşitli makroları kullanırsınız. MFC 'nin uygulama, yukarıdaki örnekte olduğu gibi her arabirim uygulamasını tanımlamak için iç içe geçmiş sınıfları kullanır. Bu, bir IUnknown standart uygulamasıyla ve yinelenen kodların bazılarını ortadan kaldıran birçok makro ile daha kolay hale getirilir.
+MFC 'nin arabirim eşleme desteğiyle sınıfında kök olarak yer verilir `CCmdTarget` . `CCmdTarget` "*a*" başvuru sayısı ve [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) uygulamasıyla ilişkili tüm üye işlevleri (örneğin, başvuru sayısı `CCmdTarget` ). OLE COM destekleyen bir sınıf oluşturmak için, ' dan bir sınıf türetirsiniz `CCmdTarget` ve `CCmdTarget` istenen arabirimleri uygulamak için üye işlevlerinin yanı sıra çeşitli makroları kullanırsınız. MFC 'nin uygulama, yukarıdaki örnekte olduğu gibi her arabirim uygulamasını tanımlamak için iç içe geçmiş sınıfları kullanır. Bu, bir IUnknown standart uygulamasıyla ve yinelenen kodların bazılarını ortadan kaldıran birçok makro ile daha kolay hale getirilir.
 
 ## <a name="interface-map-basics"></a>Arabirim eşlemesi temelleri
 
@@ -369,7 +370,7 @@ Toplama kullanmanın iki yolu vardır: (1) toplamayı destekleyen bir COM nesnes
 
 ### <a name="using-an-aggregate-object"></a>Toplama nesnesi kullanma
 
-Bir toplama nesnesi kullanmak için, toplama yöntemini bir araya getirmek için bir yol olması gerekir. Diğer bir deyişle, toplama nesnesi, nesnenizin yerel bir parçası olsa da gibi davranmalıdır. Bu nedenle, iç içe geçmiş bir nesnenin IID ile eşlendiği INTERFACE_PART makroya ek olarak MFC 'nin arabirim eşleme mekanizmasına nasıl bir araya geçildiği, türetilmiş sınıfınızın bir parçası olarak bir toplama nesnesi de bildirebilirsiniz `CCmdTarget` . Bunu yapmak için INTERFACE_AGGREGATE makrosu kullanılır. Bu, arabirim eşleme mekanizmasına tümleştirilecek bir üye değişkeni ( [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) veya türetilmiş bir sınıfa yönelik bir işaretçi olması gerekir) belirtmenize olanak tanır. Çağrıldığında işaretçi NULL değilse `CCmdTarget::ExternalQueryInterface` , istenen nesnenin [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) `IID` `IID` kendisi tarafından desteklenen yerel öğeleri yoksa, çerçeve otomatik olarak toplama nesnesinin QueryInterface üye işlevini çağırır `CCmdTarget` .
+Bir toplama nesnesi kullanmak için, toplama yöntemini bir araya getirmek için bir yol olması gerekir. Diğer bir deyişle, toplama nesnesi, nesnenizin yerel bir parçası olsa da gibi davranmalıdır. Bu nedenle, iç içe geçmiş bir nesnenin IID ile eşlendiği INTERFACE_PART makroya ek olarak MFC 'nin arabirim eşleme mekanizmasına nasıl bir araya geçildiği, türetilmiş sınıfınızın bir parçası olarak bir toplama nesnesi de bildirebilirsiniz `CCmdTarget` . Bunu yapmak için INTERFACE_AGGREGATE makrosu kullanılır. Bu, arabirim eşleme mekanizmasına tümleştirilecek bir üye değişkeni ( [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) veya türetilmiş bir sınıfa yönelik bir işaretçi olması gerekir) belirtmenize olanak tanır. Çağrıldığında işaretçi NULL değilse `CCmdTarget::ExternalQueryInterface` , istenen nesnenin [](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) `IID` `IID` kendisi tarafından desteklenen yerel öğeleri yoksa, çerçeve otomatik olarak toplama nesnesinin QueryInterface üye işlevini çağırır `CCmdTarget` .
 
 #### <a name="to-use-the-interface_aggregate-macro"></a>INTERFACE_AGGREGATE makrosunu kullanmak için
 
@@ -379,7 +380,7 @@ Bir toplama nesnesi kullanmak için, toplama yöntemini bir araya getirmek için
 
 3. Bir noktada (genellikle sırasında `CCmdTarget::OnCreateAggregates` ), üye DEĞIŞKENINI null dışında bir şeye başlatın.
 
-Örnek:
+Örneğin:
 
 ```cpp
 class CAggrExample : public CCmdTarget
@@ -419,7 +420,7 @@ BEGIN_INTERFACE_MAP(CAggrExample, CCmdTarget)
 END_INTERFACE_MAP()
 ```
 
-M_lpAggrInner değişkeni oluşturucuda NULL olarak başlatılır. Çerçeve, varsayılan [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))UYGULAMASıNDA bir null üye değişkenini yoksayar. `OnCreateAggregates`Aslında toplama nesnelerinizi oluşturmak için iyi bir yerdir. Nesneyi MFC uygulamasının dışında oluşturuyorsanız, bunu açıkça çağırmanız gerekir `COleObjectFactory` . ' De toplama oluşturma nedeni ve ' `CCmdTarget::OnCreateAggregates` nin kullanımı, `CCmdTarget::GetControllingUnknown` toplanılan nesneleri oluştururken görünür hale gelir.
+M_lpAggrInner değişkeni oluşturucuda NULL olarak başlatılır. Çerçeve, varsayılan [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))UYGULAMASıNDA bir null üye değişkenini yoksayar. `OnCreateAggregates` Aslında toplama nesnelerinizi oluşturmak için iyi bir yerdir. Nesneyi MFC uygulamasının dışında oluşturuyorsanız, bunu açıkça çağırmanız gerekir `COleObjectFactory` . ' De toplama oluşturma nedeni ve ' `CCmdTarget::OnCreateAggregates` nin kullanımı, `CCmdTarget::GetControllingUnknown` toplanılan nesneleri oluştururken görünür hale gelir.
 
 Bu teknik, nesnenizin toplama nesnesinin desteklediği tüm arabirimlerin yanı sıra kendi yerel arabirimlerini sağlayacaktır. Yalnızca toplamanın desteklediği arabirimlerin bir alt kümesini isterseniz, geçersiz kılabilirsiniz `CCmdTarget::GetInterfaceHook` . Bu, [QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q))'e benzer bir çok düşük düzey hookability sağlar. Genellikle, toplamanın desteklediği tüm arabirimlerin olmasını istersiniz.
 
@@ -521,7 +522,7 @@ Sınıfınızın uygulayabileceği her arabirim için bir BEGIN_INTERFACE_PART v
 
 *LocalClass* bağımsız değişkeni, tanımlanacaktır yerel sınıfın adıdır. Ada bir ' X ' otomatik olarak eklenecek. Bu adlandırma kuralı, aynı ada sahip genel sınıflarla çakışmaları önlemek için kullanılır. Ayrıca, gömülü üyenin adı, ' m_x ' tarafından ön eki hariç *localClass* adıyla aynıdır.
 
-Örnek:
+Örneğin:
 
 ```cpp
 BEGIN_INTERFACE_PART(MyAdviseSink, IAdviseSink)
@@ -551,7 +552,7 @@ END_INTERFACE_MAP
 Arabirim eşlemesinin tanımlanması gereken sınıf
 
 *baseClass*<br/>
-Sınıfı 'ın türetildiği *theClass* sınıf.
+Sınıfı 'ın türetildiği  sınıf.
 
 #### <a name="remarks"></a>Açıklamalar
 
@@ -576,7 +577,7 @@ Yerel sınıfın adı (' X ' daha az).
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro, nesnenizin destekleyeceği her arabirim için BEGIN_INTERFACE_MAP makrosu ve END_INTERFACE_MAP makrosu arasında kullanılır. Bir IID *'yi, sınıfsınıfı ve* *localClass*tarafından belirtilen sınıfın bir üyesine eşlemenizi sağlar. ' M_x ', *localClass* 'a otomatik olarak eklenecektir. Birden fazla `IID` üyenin tek bir üyeyle ilişkili olabileceğini unutmayın. Yalnızca bir "en çok türetilmiş" arabirimi uyguladığınızda ve tüm ara arabirimleri sağlamak istediğinizde bu çok yararlı olur. Bu arabirimin iyi bir örneğidir `IOleInPlaceFrameWindow` . Hiyerarşisi şuna benzer:
+Bu makro, nesnenizin destekleyeceği her arabirim için BEGIN_INTERFACE_MAP makrosu ve END_INTERFACE_MAP makrosu arasında kullanılır. Bir IID *'yi, sınıfsınıfı ve* *localClass* tarafından belirtilen sınıfın bir üyesine eşlemenizi sağlar. ' M_x ', *localClass* 'a otomatik olarak eklenecektir. Birden fazla `IID` üyenin tek bir üyeyle ilişkili olabileceğini unutmayın. Yalnızca bir "en çok türetilmiş" arabirimi uyguladığınızda ve tüm ara arabirimleri sağlamak istediğinizde bu çok yararlı olur. Bu arabirimin iyi bir örneğidir `IOleInPlaceFrameWindow` . Hiyerarşisi şuna benzer:
 
 ```Hierarchy
 IUnknown

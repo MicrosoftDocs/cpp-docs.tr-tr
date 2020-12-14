@@ -1,5 +1,6 @@
 ---
-title: 'TN030: Yazdırmayı ve Baskı Önizlemeyi özelleştirme'
+description: 'Hakkında daha fazla bilgi edinin: TN030: yazdırma ve Baskı Önizlemeyi özelleştirme'
+title: 'TN030: Yazdırmayı ve Baskı Önizlemeyi Özelleştirme'
 ms.date: 06/28/2018
 f1_keywords:
 - vc.print
@@ -10,55 +11,55 @@ helpviewer_keywords:
 - printing views [MFC]
 - print preview [MFC], customizing
 ms.assetid: 32744697-c91c-41b6-9a12-b8ec01e0d438
-ms.openlocfilehash: 09938c5cec2812998d5e76e15154754ad3ac3e0b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6fc0571b908f85b24b8a0752a00842077d537dce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305690"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215618"
 ---
-# <a name="tn030-customizing-printing-and-print-preview"></a>TN030: Yazdırmayı ve Baskı Önizlemeyi özelleştirme
+# <a name="tn030-customizing-printing-and-print-preview"></a>TN030: Yazdırmayı ve Baskı Önizlemeyi Özelleştirme
 
 > [!NOTE]
-> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-Bu Not, yazdırmayı ve Baskı Önizlemeyi özelleştirme işlemi açıklanır ve kullanılan geri çağırma rutinleri amaçları açıklanır `CView` geri çağırma yordamları ve üye işlevleri ve `CPreviewView`.
+Bu notta, yazdırma ve Baskı Önizlemeyi özelleştirme ve içinde kullanılan geri çağırma yordamlarının ve `CView` geri çağırma yordamlarının ve üye işlevlerinin amaçları açıklanmaktadır `CPreviewView` .
 
 ## <a name="the-problem"></a>Sorun
 
-MFC çoğu yazdırma için eksiksiz bir çözüm sağlar ve baskı önizlemeyi gerekiyor. Çoğu durumda, yazdırma ve Önizleme görünümü için çok az ek kod gereklidir. Ancak, önemli miktarda çaba Geliştirici tarafında gerektiren yazdırma iyileştirmek için yolu vardır ve bazı uygulamalar belirli kullanıcı arabirimi öğeleri için Yazdırma Önizleme modundan eklemeniz gerekir.
+MFC, en çok yazdırma ve baskı önizleme gereksinimlerine yönelik bir çözüm sunar. Çoğu durumda, bir görünümün yazdırılması ve önizlenmesi için biraz daha fazla kod gereklidir. Ancak, geliştiricinin bölümünde önemli bir çaba gerektiren yazdırmayı en iyi hale getirmeye yönelik yollar vardır ve bazı uygulamaların Baskı Önizleme moduna belirli kullanıcı arabirimi öğelerini eklemesi gerekir.
 
-## <a name="efficient-printing"></a>Verimli yazdırma
+## <a name="efficient-printing"></a>Verimli Yazdırma
 
-Bir MFC uygulaması standart yöntemlerini kullanarak yazdırdığında Windows grafik cihaz arabirimi (GDI) çıkış bir bellek içi meta dosyası alt çağrısına yönlendirir. Zaman `EndPage` olan çağrılır, Windows Meta dosyası için bir kez bir sayfa yazdırmak için yazıcı gerektiren her fiziksel bant yürütülür. Bu işleme sırasında GDI sık durdurma devam edip etmediğini belirlemek için yordamı sorgular. Genellikle kullanıcının bir yazdırma iletişim kutusunu kullanarak yazdırma işi iptal etmek için işlenecek iletilerin iptal yordam sağlar.
+Bir MFC uygulaması standart yöntemleri kullanarak yazdırıldığında, Windows tüm grafik cihaz arabirimi (GDI) çıkış çağrılarını bellek içi meta dosyasına yönlendirir. `EndPage`Çağrıldığında, yazıcı bir sayfa yazdırmak için gereken her fiziksel bant için, Windows meta dosyasını bir kez yürütür. Bu işleme sırasında GDI, devam edip edemediğine yönelik olarak genellikle Abort yordamını sorgular. Genellikle, iptal yordamı, kullanıcının yazdırma işini bir yazdırma iletişim kutusu kullanarak durdurabilmesi için iletilerin işlenmesine izin verir.
 
-Ne yazık ki bu yazdırma işlemi yavaşlatabilir. Uygulamanızdaki yazdırma standart tekniği kullanarak gerçekleştirilebilir çok hızlı olması gerekiyorsa, el ile bant uygulamalıdır.
+Ne yazık ki bu, yazdırma işlemini yavaşlatabilir. Uygulamanızdaki yazdırmanın standart tekniği kullanarak elde edilebileceğinden daha hızlı olması gerekiyorsa, el ile bant uygulamanız gerekir.
 
-## <a name="print-banding"></a>Bant yazdırma
+## <a name="print-banding"></a>Bantyı Yazdır
 
-El ile bant için yeniden yazdırma döngü uygulamanız gereken şekilde `OnPrint` (bir kez başına bant) ile ilgili sayfa başına birden çok kez çağrılır. Yazdırma döngü uygulanan `OnFilePrint` viewprnt.cpp işlevi. İçinde `CView`-türetilmiş sınıf, böylelikle yazdırma komutunu işlemek için ileti eşleme girişi yazdırma işlevinizi çağıran bu işlev aşırı yükleme. Kopyalama `OnFilePrint` yordamı ve değişiklik banding uygulamak için yazdırma döngü. Muhtemelen de çizim yazdırılan sayfanın bölümüne göre iyileştirebilirsiniz. böylece, yazdırma işlevlerinizi Şerit dikdörtgen geçirmek istediğiniz.
+El ile bantlamak için, `OnPrint` sayfa başına birden çok kez çağrılan Yazdırma döngüsünü yeniden uygulamanız gerekir (her bant için bir kez). Print döngüsü `OnFilePrint` viewprnt. cpp işlevine uygulanır. `CView`Türetilmiş sınıfınıza, Print komutunu işlemeye yönelik ileti eşleme girişi Print işlevinizi çağırabilmeniz için bu işlevi aşırı yükleyebilirsiniz. Yordamı kopyalayın `OnFilePrint` ve yazdırma döngüsünü, bantyı uygulayacak şekilde değiştirin. Ayrıca, yazdırılan sayfanın bölümüne göre çizimi iyileştirebilmeniz için, büyük olasılıkla yazdırma işlevlerinizi bant içine geçirmek isteyeceksiniz.
 
-İkinci olarak, sık çağırmalısınız `QueryAbort` bant çizim sırasında. Aksi takdirde iptal yordamı yok adlı ve kullanıcı yazdırmayı iptal etmek mümkün olmayacaktır.
+İkinci olarak, bandı çizerken sıklıkla çağrı yapmanız gerekir `QueryAbort` . Aksi takdirde, Iptal prosedürü çağrılmaz ve Kullanıcı, yazdırma işini iptal edemeyecektir.
 
-## <a name="print-preview-electronic-paper-with-user-interface"></a>Baskı Önizleme: Kullanıcı arabirimi ile elektronik İnceleme
+## <a name="print-preview-electronic-paper-with-user-interface"></a>Baskı Önizleme: Kullanıcı arabirimiyle elektronik kağıt
 
-Baskı Önizleme, esas olarak, bir yazıcı öykünmesini ekranını açmak çalışır. Varsayılan olarak, ana pencerenin istemci alanının penceresi içinde tam olarak bir veya iki sayfa görüntülemek için kullanılır. Kullanıcı bir alanı daha ayrıntılı olarak görmek için sayfayı yakınlaştırır mümkün değil. Ek destek içeren kullanıcı bile önizleme modunda belgeyi düzenlemek için izin verilmiyor olabilir.
+Baskı Önizleme, temelde, görüntüyü bir yazıcı öykünmesine geçirmeye çalışır. Varsayılan olarak, ana pencerenin istemci alanı bir veya iki sayfayı pencere içinde tam olarak göstermek için kullanılır. Kullanıcı, daha ayrıntılı bir şekilde görmek için sayfanın bir alanını yakınlaştırabilir. Ek destek sayesinde, Kullanıcı, önizleme modunda belgeyi düzenlemeye da izin verebilir.
 
 ## <a name="customizing-print-preview"></a>Baskı Önizlemeyi özelleştirme
 
-Bu not yalnızca baskı önizlemeyi değiştirme yönlerinden biri ile ilgilidir: Önizleme modu için kullanıcı Arabirimi ekleme. Diğer değişiklikler mümkündür, ancak bu tür değişiklikler bu tartışma kapsamı dışında.
+Bu durum yalnızca baskı önizlemeyi değiştirmenin bir yönü ile ilgilidir: Önizleme moduna Kullanıcı arabirimi ekleme. Diğer değişiklikler mümkündür, ancak bu değişiklikler bu tartışmanın kapsamında değildir.
 
-## <a name="to-add-ui-to-the-preview-mode"></a>Önizleme modunu için kullanıcı Arabirimi eklemek için
+## <a name="to-add-ui-to-the-preview-mode"></a>Önizleme moduna Kullanıcı arabirimi eklemek için
 
-1. Bir görünümü sınıfından türetilir `CPreviewView`.
+1. Öğesinden bir görünüm sınıfı türet `CPreviewView` .
 
-2. İstediğiniz kullanıcı Arabirimi yönleri için komut işleyicileri ekleyin.
+2. İstediğiniz UI yönleri için komut işleyicileri ekleyin.
 
-3. Görüntülenecek görsel özellikleri ekliyorsanız, geçersiz kılma `OnDraw` ve sonra arama, çizim gerçekleştirmek `CPreviewView::OnDraw`.
+3. Görsele görsel yönleri ekliyorsanız, `OnDraw` çağırdıktan sonra Çiziminizi geçersiz kılın ve gerçekleştirin `CPreviewView::OnDraw` .
 
 ## <a name="onfileprintpreview"></a>OnFilePrintPreview
 
-Baskı Önizleme için komut işleyicisi budur. Kendi varsayılan uygulamasıdır:
+Bu, baskı önizleme için komut işleyicisidir. Varsayılan uygulama:
 
 ```cpp
 void CView::OnFilePrintPreview()
@@ -82,49 +83,49 @@ void CView::OnFilePrintPreview()
 }
 ```
 
-`DoPrintPreview` uygulamanın ana bölmede gizler. Denetim çubukları, durum çubuğu gibi tutulabilir içinde pState belirterek ->*dwStates* üyesi (Bu, bir bit maskesi ve BITS bağımsız denetim çubukları AFX_CONTROLBAR_MASK (AFX_IDW_MYBAR) tarafından tanımlanan için). Pencere pState ->*nIDMainPane* otomatik olarak gizli ve reshown penceredir. `DoPrintPreview` ardından bir düğme çubuğu için standart Önizleme kullanıcı Arabirimi oluşturacaksınız. Özel pencere işleme gerekirse, önce yapılmalıdır diğer windows, göstermek veya gizlemek için gibi `DoPrintPreview` çağrılır.
+`DoPrintPreview` uygulamanın ana bölmesini gizleyecek. Durum çubuğu gibi denetim çubukları, bunları pState->*dwStates* üyesinde belirterek korunabilir (Bu bir bit maskesidir ve bireysel denetim çubuklarının bitleri AFX_CONTROLBAR_MASK (AFX_IDW_MYBAR) tarafından tanımlanır). Pencere pState->*nIDMainPane* , otomatik olarak gizli ve reshown olacak bir penceredir. `DoPrintPreview` sonra standart önizleme Kullanıcı arabirimi için bir düğme çubuğu oluşturur. Özel pencere işleme gerekiyorsa (diğer pencereleri gizleme veya gösterme gibi), çağrılmadan önce yapılması gereken `DoPrintPreview` .
 
-Baskı Önizleme sona erdiğinde, varsayılan olarak, Denetim çubuklarını özgün durumlarını ve ana bölmede görünür için döndürür. Özel işleme gerekirse, bu geçersiz kılma yapılmalıdır `EndPrintPreview`. Varsa `DoPrintPreview` başarısız oldu, özel işlem de sağlar.
+Varsayılan olarak, baskı önizleme tamamlandığında, denetim çubuklarını orijinal durumlarına ve ana bölmeye görünür hale getirir. Özel işleme gerekiyorsa, bir geçersiz kılmada yapılmalıdır `EndPrintPreview` . `DoPrintPreview`Başarısız olursa, özel işlem de sağlar.
 
-DoPrintPreview çağrılır:
+DoPrintPreview şu şekilde çağrılır:
 
-- Önizleme araç çubuğu iletişim şablonu kaynak kimliği.
+- Önizleme araç çubuğunun iletişim şablonunun kaynak KIMLIĞI.
 
-- Yazdırma için yazdırma önizleme gerçekleştirmek için bir görünüm için bir işaretçi.
+- Baskı Önizleme için yazdırmayı gerçekleştirecek görünüme yönelik bir işaretçi.
 
-- Çalışma zamanı sınıf Önizleme Görünüm sınıfı. Bu, içinde DoPrintPreview dinamik olarak oluşturulur.
+- Önizleme görünümü sınıfının çalışma zamanı sınıfı. Bu, DoPrintPreview 'da dinamik olarak oluşturulur.
 
-- CPrintPreviewState işaretçisi. Not CPrintPreviewState yapısını (veya uygulamanın daha fazla durum korunur gerekiyorsa türetilen yapısı) gerektiğini *değil* karesinde oluşturulabilir. Kalıcı olmayan DoPrintPreview ve EndPrintPreview çağrılana kadar bu yapı varlığını sürdürmesini gerekir.
+- CPrintPreviewState işaretçisi. CPrintPreviewState yapısının (ya da uygulamanın daha fazla durum korunmuş olması durumunda türetilmiş yapının) *oluşturulmadığından* emin olun. DoPrintPreview kalıcı değildir ve EndPrintPreview çağrılana kadar bu yapının olması gerekir.
 
   > [!NOTE]
-  > Yazdırma desteği için ayrı bir görünüm veya Görünüm sınıfı gerekiyorsa, bu nesneye bir işaretçi ikinci parametre olarak geçirilmelidir.
+  > Yazdırma desteği için ayrı bir görünüm veya Görünüm sınıfı gerekliyse, bu nesneye yönelik bir işaretçi ikinci parametre olarak geçirilmelidir.
 
 ## <a name="endprintpreview"></a>EndPrintPreview
 
-Baskı Önizleme modunu sonlandırmak için çağrılır. Genellikle, baskı önizlemede son görüntülenen belgedeki sayfayı taşımak için tercih edilir. `EndPrintPreview` Bunu yapmak için uygulamanın şansınızdır. PInfo ->*m_nCurPage* üyesi olan en son (en soldaki iki sayfa görüntülenirse) görüntülenen sayfa ve işaretçi, sayfada kullanıcı ilgileniyor nerede dair bir ipucu verir. Uygulamanın görünümü yapısını framework bilinmeyen olduğundan, seçilen noktaya gitme kod sağlamanız gerekir.
+Bu, Baskı Önizleme modunu sonlandırmak için çağırılır. Son olarak, baskı önizlemede son görüntülenen belgede bulunan sayfaya gitmek tercih edilir. `EndPrintPreview` uygulamanın bunu yapma şansı vardır. PInfo->*m_nCurPage* üyesi, son görüntülenen sayfasıdır (iki sayfa görüntüleniyorsa en solda) ve işaretçi, kullanıcının ilgilendiğiniz sayfada olduğu gibi bir ipucu olur. Uygulama görünümünün yapısı Framework 'e bilinmediği için, seçili noktaya geçmek üzere kodu sağlamalısınız.
 
-Çoğu eylemleri çağırmadan önce gerçekleştirmeniz gereken `CView::EndPrintPreview`. Bu çağrı etkilerini tersine çevirir `DoPrintPreview` ve pView, pDC ve pInfo siler.
+Çağrılmadan önce çoğu eylemi gerçekleştirmeniz gerekir `CView::EndPrintPreview` . Bu çağrı, etkilerini tersine çevirir `DoPrintPreview` ve pView, PDC ve pInfo 'yi siler.
 
 ```cpp
 // Any further cleanup should be done here.
 CView::EndPrintPreview(pDC, pInfo, point, pView);
 ```
 
-## <a name="cwinapponfileprintsetup"></a>CWinApp::OnFilePrintSetup
+## <a name="cwinapponfileprintsetup"></a>CWinApp:: OnFilePrintSetup
 
-Bu, Yazdırma Kurulumu menü öğesi için eşlenmelidir. Çoğu durumda, uygulama geçersiz kılmak gerekli değildir.
+Bu, yazdırma ayarı menü öğesi için eşlenmelidir. Çoğu durumda, uygulamanın geçersiz kılınması gerekli değildir.
 
 ## <a name="page-nomenclature"></a>Sayfa terminolojisi
 
-Başka bir sorun ve sayfa numaralandırma sırasını olmasıdır. Basit bir sözcük işlemcisi türü uygulamalar için bu basit bir sorundur. Baskı Önizleme sistemlerinin çoğu, her sayfada belgedeki bir sayfasına karşılık gelen varsayılır.
+Diğer bir sorun da sayfa numaralandırmasında ve sıralamasında bulunur. Basit sözcük işlemci türü uygulamalar için bu basit bir sorundur. Çoğu Baskı Önizleme sistemi, yazdırılan her sayfanın belgedeki bir sayfaya karşılık geldiğini varsayar.
 
-Genelleştirilmiş bir çözüm sağlamak çalışırken dikkat etmeniz gereken birkaç nokta vardır. CAD sistem düşünün. Kullanıcının birden fazla E-boyutunu sayfaları kapsayan Çizim yok. Bir E-boyutu (veya daha küçük, ölçeği) çizici olduğu gibi basit bir durumda olurdu sayfa numaralandırma. Ancak, sayfa başına 16 bir boyut sayfa yazdırma bir lazer yazıcı üzerinde ne baskı önizlemeyi "page" dikkate almaz
+Genelleştirilmiş bir çözüm sağlamaya çalışırken göz önünde bulundurmanız gereken birkaç nokta vardır. Bir CAD sistemi düşünün. Kullanıcının birkaç E-boyut sayfasını içeren bir çizimi vardır. Bir E-Boyut (veya küçük ölçekli) çizicide, sayfa numaralandırması basit durumda olacaktır. Ancak lazer bir yazıcıda, sayfa başına 16 A boyutunda sayfa yazdırma, baskı önizlemede "sayfa" dikkate alınması gerekenler
 
-Giriş paragrafı durumları gibi yazdırma önizleme yazıcı gibi davranır. Bu nedenle, kullanıcının ne seçili belirli yazıcı dışında gelecektir görürsünüz. Bu görünüm görüntüyü her sayfada yazdırılır belirlemek için en fazla olur.
+Tanıtım paragrafı durumları olarak baskı önizleme bir yazıcı gibi davranır. Bu nedenle, Kullanıcı seçili olan yazıcıda nelerin olacağını görür. Her sayfada hangi görüntünün yazdırıldığını belirlemek için görünüme sahiptir.
 
-Sayfa açıklaması dizesinde `CPrintInfo` yapı sayfa başına bir sayı olarak temsil edilebilir değilse, kullanıcıya sayfa numarası görüntüleme bir yol sağlar ("1. sayfası" olduğu gibi veya "sayfaları 1-2"). Bu dize, varsayılan uygulaması tarafından kullanılan `CPreviewView::OnDisplayPageNumber`. Farklı bir ekrana gerekirse, bir örneğin, "Sayfa1, bölümleri A, B" sağlamak için bu sanal işlevi geçersiz kılabilir.
+Yapıdaki sayfa açıklaması dizesi, sayfa `CPrintInfo` numarasını ("sayfa 1" veya "sayfalar 1-2" içinde olduğu gibi) göstermek için Kullanıcı için bir yol sağlar. Bu dize varsayılan uygulamasının tarafından kullanılır `CPreviewView::OnDisplayPageNumber` . Farklı bir görüntü gerekiyorsa, birisi bu sanal işlevi geçersiz kılabilir, örneğin "Sheet1, Bölüm A, B".
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

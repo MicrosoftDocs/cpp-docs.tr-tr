@@ -1,5 +1,6 @@
 ---
-title: 'TN029: Bölümlendirici Windows'
+description: 'Daha fazla bilgi edinin: TN029: Splitter Windows'
+title: 'TN029: Bölünmüş Pencereler'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.windows.splitter
@@ -7,70 +8,70 @@ helpviewer_keywords:
 - TN029
 - splitter windows [MFC], about splitter windows
 ms.assetid: 2c57ce99-2a3c-4eff-9cea-baccb13af075
-ms.openlocfilehash: 6c2f619d9cd619ca598c66ca657faa1b9dccaaa2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e1079adf403b64aa47f5aae00aa32f7da702ddcf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62305716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215644"
 ---
-# <a name="tn029-splitter-windows"></a>TN029: Bölümlendirici Windows
+# <a name="tn029-splitter-windows"></a>TN029: Bölünmüş Pencereler
 
-Bu Not MFC açıklar [CSplitterWnd sınıfı](../mfc/reference/csplitterwnd-class.md), pencere ayırır ve diğer bölmesinde pencerelerin yeniden boyutlandırmasının yönetir sağlar.
+Bu notta, pencere, diğer bölme pencerelerinin yeniden boyutlandırmasını sağlayan MFC [CSplitterWnd sınıfı](../mfc/reference/csplitterwnd-class.md)açıklanır.
 
-## <a name="splitter-styles"></a>Bölümlendirici stilleri
+## <a name="splitter-styles"></a>Ayırıcı stilleri
 
-A `CSplitterWnd` windows bölme iki farklı stillerini destekler.
+`CSplitterWnd`, Pencereleri bölmek için iki farklı stili destekler.
 
-Oluşturulduğunda "içinde statik ayırıcılar," bölmeleri ayırıcı penceresi oluşturur. Hiçbir zaman bölmeleri sayısını ve sırasını değiştirin. Ayırıcı çubukları farklı bölmeler yeniden boyutlandırmak için kullanılır. Bu stil, farklı bir görünüm sınıfı her bir bölmede görüntülemek için kullanabilirsiniz. Visual C++ grafik Düzenleyicisi'ni ve Windows Dosya Yöneticisi bu bölme stili kullanan programlar örnekleridir. Ayırıcı penceresi bu stilini Bölümlendirici kutuları kullanmaz.
+"Statik ayırıcılar" içinde, ayırıcı penceresi oluşturulduğunda bölmeleri oluşturur. Bölmelerin sırası ve sayısı hiçbir şekilde değişmez. Ayırıcı çubuklar, farklı bölmeleri yeniden boyutlandırmak için kullanılır. Bu stili, her bölmede farklı bir görünüm sınıfı görüntülemek için kullanabilirsiniz. Visual C++ grafik Düzenleyicisi ve Windows Dosya Yöneticisi, bu ayırıcı stili kullanan programların örnekleridir. Bu ayırıcı pencere stili Splitter kutularını kullanmaz.
 
-"İçinde dinamik ayırıcılar," ek bölmeleri oluşturulur ve kullanıcı gruplama ve kaldırma bölmelerini yeni görünüm olarak yok. Bu bölme, tek bir görünümle başlar ve bölme başlatan kullanıcının Bölümlendirici kutularını sağlar. Bir yönde Bölünmüş Görünüm zaman ayırıcı penceresi dinamik olarak yeni bir görünüm nesnesi oluşturur. Bu yeni görünüm nesnesi yeni bölmesini temsil eder. Klavye arabirimini kullanarak iki yönde bölünmüş görünüm ise, üç yeni görünüm nesneler için üç yeni bölme ayırıcı penceresi oluşturur. Bölme etkin durumdayken Windows Bölümlendirici kutu bölmeler arasında bir ayırıcı çubuk olarak görüntüler. Windows kullanıcı bölme kaldırır, ancak özgün görünümü kalır ayırıcı penceresi kadar yok edildiğinde ek görünüm nesnelerini yok eder. Dinamik Bölümlendirici stili kullanan uygulamaların Microsoft Excel ve Microsoft Word örnektir.
+"Dinamik bölümlendiricileri" içinde, Kullanıcı yeni görünümleri bölmeleri ve bölünmeyeceği için ek bölmeler oluşturulur ve yok edilir. Bu Bölümlendirici tek bir görünümle başlatılır ve kullanıcının bölmeyi başlatması için Bölümlendirici kutular sağlar. Görünüm bir yöne bölündüğünde ayırıcı pencere dinamik olarak yeni bir görünüm nesnesi oluşturur. Bu yeni görünüm nesnesi yeni bölmeyi temsil eder. Görünüm, klavye arabirimini kullanarak iki yönde bölündüğünde, ayırıcı penceresi üç yeni bölme için üç yeni görünüm nesnesi oluşturur. Bölünmüş etkin olsa da, pencereler bölme kutusunu bölmeler arasında bir ayırıcı çubuk olarak görüntüler. Kullanıcı bir bölmeyi kaldırdığında Windows ek görünüm nesnelerini yok eder, ancak ayırıcı pencere yok edilinceye kadar özgün görünüm kalır. Microsoft Excel ve Microsoft Word, dinamik ayırıcı stilini kullanan uygulamalara örnektir.
 
-Ayırıcı penceresi ya da türünü oluşturduğunuzda, bölümlendirici yönetecek satır ve sütun sayısı belirtmelisiniz. Statik Bölümlendirici tüm satırları ve sütunları doldurmak için bölmeleri oluşturacaksınız. Dinamik Bölümlendirici yalnızca ilk bölmesinde oluşturacak, `CSplitterWnd` oluşturulur.
+Herhangi bir tür ayırıcı penceresi oluşturduğunuzda, ayırıcının yöneteceği en fazla satır ve sütun sayısını belirtmeniz gerekir. Statik Bölümlendirici, tüm satırları ve sütunları dolduracak bölmeler oluşturur. Dinamik Bölümlendirici, oluşturulduğunda yalnızca ilk bölmeyi oluşturacaktır `CSplitterWnd` .
 
-Statik ayırıcılar için belirttiğiniz bölmeleri sayısı 16 sütunlara göre 16 satırdır. Önerilen yapılandırmalar şunlardır:
+Statik bölümlendiricileri için belirtebileceğiniz en fazla bölme sayısı 16 satırdır. Önerilen konfigürasyonlar şunlardır:
 
-- 1 satır x 2 sütunları: genellikle ile benzer bölmeleri
+- 1 satır x 2 sütun: genellikle benzer bölmelerle
 
-- 2 satır x 1 sütun: genellikle ile benzer bölmeleri
+- 2 satır x 1 sütun: genellikle benzer bölmeler ile
 
-- 2 satır x 2 sütunları: genellikle ile benzer bölmeleri
+- 2 satır x 2 sütun: genellikle benzer bölmelerle
 
-Dinamik ayırıcılar için belirttiğiniz bölmeleri sayısı 2 sütun 2 satırdır. Önerilen yapılandırmalar şunlardır:
+Dinamik bölümlendiricileri için belirtebileceğiniz en fazla bölme sayısı 2 satırdır. Önerilen konfigürasyonlar şunlardır:
 
-- 1 satır x 2 sütunları: sütunlu veri
+- 1 satır x 2 sütun: sütunlu veriler için
 
-- 2 satır x 1 sütun: metinsel veya diğer veriler için
+- 2 satır x 1 sütun: metin veya diğer veriler için
 
-- 2 satır x 2 sütunları: kılavuz veya tablo için veri odaklı
+- 2 satır x 2 sütun: kılavuz veya tablo odaklı veriler için
 
-## <a name="splitter-examples"></a>Bölümlendirici örnekleri
+## <a name="splitter-examples"></a>Splitter örnekleri
 
-MFC örnek programların birçoğu Bölümlendirici pencereler doğrudan veya dolaylı olarak kullanın. MFC genel örnek [VIEWEX](../overview/visual-cpp-samples.md) statik ayırıcılar, içinde bir ayırıcı bir ayırıcı alma dahil olmak üzere çeşitli kullanımlarını gösterir.
+MFC örnek programlarının birçoğu doğrudan veya dolaylı olarak Bölümlendirici pencereler kullanır. MFC genel örnek [Viewex](../overview/visual-cpp-samples.md) , bir ayırıcıyı Bölümlendirici yerleştirme dahil olmak üzere birkaç statik Bölümlendirici kullanımını gösterir.
 
-ClassWizard, yeni bir ayırıcı penceresi içeren birden çok belge arabirimi (MDI) alt çerçeve penceresi sınıfı oluşturmak için de kullanabilirsiniz. Bölümlendirici pencereler hakkında daha fazla bilgi için bkz. [birden çok belge türü, görünümler ve çerçeve Windows](../mfc/multiple-document-types-views-and-frame-windows.md).
+Ayrıca, bir Splitter penceresi içeren yeni bir çoklu belge arabirimi (MDI) alt çerçeve pencere sınıfı oluşturmak için ClassWizard 'ı kullanabilirsiniz. Bölünmüş pencereler hakkında daha fazla bilgi için bkz. [birden fazla belge türü, görünüm ve çerçeve penceresi](../mfc/multiple-document-types-views-and-frame-windows.md).
 
-## <a name="terminology-used-by-implementation"></a>Uygulama tarafından kullanılan terimler
+## <a name="terminology-used-by-implementation"></a>Uygulama tarafından kullanılan terminoloji
 
-Bölümlendirici pencereler için belirli koşullar listesi şu şekildedir:
+Bölünmüş pencereler için özel terimlerin listesi aşağıda verilmiştir:
 
-`CSplitterWnd`: Denetimleri bölmesinde bölme ve bir satır veya sütun tüm bölmeler arasında paylaşılan bir kaydırma çubukları sağlar bir pencere. Satırları ve sütunları ile sıfır tabanlı numaralarını belirtme (satır ilk bölmesidir = 0 ve sütun = 0).
+`CSplitterWnd`: Bir satır veya sütundaki tüm bölmeler arasında paylaşılan bölme denetimleri ve kaydırma çubukları sağlayan bir pencere. Sıfır tabanlı sayılarla satırları ve sütunları belirtirsiniz (ilk bölme satır = 0 ve sütun = 0).
 
-Bölmesi: Bir uygulamaya özgü penceresi, bir `CSplitterWnd` yönetir. Bir bölme genellikle türetilen bir nesnedir [CView sınıfı](../mfc/reference/cview-class.md), ancak herhangi biri [CWnd](../mfc/reference/cwnd-class.md) uygun alt penceresi kimliğe sahip nesne
+Bölmesi: tarafından yönetilen uygulamaya özgü bir pencere `CSplitterWnd` . Bir bölme genellikle [CView sınıfından](../mfc/reference/cview-class.md)türetilmiş bir nesnedir, ancak uygun alt pencere kimliğine sahip herhangi bir [CWnd](../mfc/reference/cwnd-class.md) nesnesi olabilir.
 
-Kullanılacak bir `CWnd`-türetilmiş nesne, nesnenin RUNTIME_CLASS geçirmek `CreateView` işlevini kullandıysanız, olduğu gibi bir `CView`-türetilmiş sınıf. Çalışma zamanında dinamik oluşturma framework kullandığından sınıfınıza DECLARE_DYNCREATE ve IMPLEMENT_DYNCREATE kullanmanız gerekir. Çok fazla kod olsa `CSplitterWnd` özgü olan `CView` sınıfı [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) bu eylemlerin gerçekleştirilmesi önce her zaman kullanılır.
+Türetilmiş bir nesneyi kullanmak için `CWnd` , ' ın `CreateView` türetilmiş bir sınıfı kullanırken olduğu gibi, işlevin RUNTIME_CLASS işleve geçirin `CView` . Çerçeve, çalışma zamanında dinamik oluşturma kullandığından, sınıfınızın DECLARE_DYNCREATE ve IMPLEMENT_DYNCREATE kullanması gerekir. ' De sınıfına özgü birçok kod olsa da `CSplitterWnd` `CView` , bu eylemler gerçekleştirilmeden önce [CObject:: IsKindOf](../mfc/reference/cobject-class.md#iskindof) her zaman kullanılır.
 
-Ayırıcıyı: Satırları ve sütunları bölme yerleştirilen bir denetimdir. Satır boyutunu veya sütunları bölme ayarlamak için kullanılabilir.
+Ayırıcı çubuğu: bölme satırları ve sütunları arasına yerleştirilmiş bir denetim. Bu işlem, bölme satırlarının veya sütunlarının boyutlarını ayarlamak için kullanılabilir.
 
-Bölümlendirici kutusu: Bir denetimi dinamik olarak `CSplitterWnd` yeni satırları veya sütunları bölme oluşturmak için kullanabilirsiniz. Dikey kaydırma çubuklarının veya yatay kaydırma çubuklarını solundaki üstünde bulunur.
+Bölümlendirici kutusu: bir dinamik içinde, `CSplitterWnd` yeni satırlar veya bölme sütunları oluşturmak için kullanabileceğiniz bir denetim. Dikey kaydırma çubuklarının en üstünde veya yatay kaydırma çubuklarının solunda bulunur.
 
-Bölümlendirici kesişimi: Dikey bölme çubuğunu ve yatay bölme çubuğunu kesişimidir. Aynı anda bir satır ve sütunları bölme boyutunu ayarlamak için sürükleyebilirsiniz.
+Ayırıcı kesişimi: Dikey bölümlendirici çubuğun ve yatay Bölümlendirici çubuğun kesişimi. Aynı anda bir satır ve bölme sütununun boyutunu ayarlamak için onu sürükleyebilirsiniz.
 
 ## <a name="shared-scroll-bars"></a>Paylaşılan kaydırma çubukları
 
-`CSplitterWnd` Sınıfı, paylaşılan bir kaydırma çubukları de destekler. Alt öğeleri bu kaydırma çubuğu denetimleri olan `CSplitterWnd` ve farklı bölmeler ile ayırıcı paylaşılır.
+`CSplitterWnd`Sınıfı, paylaşılan kaydırma çubuklarını da destekler. Bu kaydırma çubuğu denetimleri, öğesinin alt öğesi `CSplitterWnd` ve Bölümlendirici içindeki farklı bölmelerle paylaşılır.
 
-Örneğin, 1 satır x 2 sütun penceresinde WS_VSCROLL oluştururken belirtebilirsiniz `CSplitterWnd`. Windows, iki bölme arasındaki paylaşılan özel kaydırma çubuğu denetimi oluşturur.
+Örneğin, 1 satır x 2 sütun penceresinde oluştururken WS_VSCROLL belirtebilirsiniz `CSplitterWnd` . Windows, iki bölme arasında paylaşılan özel bir kaydırma çubuğu denetimi oluşturur.
 
 ```
 [      ][      ][^]
@@ -78,37 +79,37 @@ Bölümlendirici kesişimi: Dikey bölme çubuğunu ve yatay bölme çubuğunu k
 [      ][      ][v]
 ```
 
-Kullanıcı kaydırma çubuğunu hareket ettirdiğinde WM_VSCROLL iletileri için her iki görünümde gönderilir. İki görünüm, kaydırma çubuğu konumu ayarladığında, paylaşılan bir kaydırma çubuğunun ayarlanır.
+Kullanıcı kaydırma çubuğunu taşıdıkça, WM_VSCROLL iletiler her iki görünüme de gönderilir. Her iki görünüm de kaydırma çubuğu konumunu ayarlarsa, paylaşılan kaydırma çubuğu ayarlanır.
 
-Paylaşılan bir kaydırma çubukları ile benzer bir görünüm nesneleri faydalı olduğunu unutmayın. Farklı türde bir ayırıcı görünümlerini karıştırmak, kaydırma konumlarına koordine etmek için özel kod yazmak olabilir. Tüm `CView`-kullanan sınıf türetilmiş `CWnd` kaydırma çubuğu varsa, API'ler paylaşılan bir kaydırma çubuğuna temsilci. `CScrollView` Uygulamasıdır örneği bir `CView` destekleyen sınıfı paylaşılan kaydırma çubukları. Türetilmiş değil sınıfları `CView`, Denetim olmayan kaydırma çubuklarını kullanan sınıf ya da standart Windows uygulamaları kullanan sınıflar (örneğin, `CEditView`) paylaşılan bir kaydırma çubuğu özelliğiyle çalışmaz `CSplitterWnd`.
+Paylaşılan kaydırma çubuklarının, benzer görünüm nesneleriyle en çok yararlı olduğunu unutmayın. Bir Bölümlendiricinin farklı türlerin görünümlerini karıştırırsanız, kaydırma konumlarını koordine etmek için özel kod yazmanız gerekebilir. `CView`Kaydırma çubuğu API 'lerini kullanan herhangi bir türetilmiş sınıf, varsa `CWnd` paylaşılan kaydırma çubuğunu temsil eder. `CScrollView`Uygulama, `CView` paylaşılan kaydırma çubuklarını destekleyen bir sınıfa bir örnektir. Öğesinden türetilmeyen sınıflar `CView` , denetim dışı kaydırma çubuklarına dayanan sınıflar veya standart Windows uygulamaları (örneğin,) kullanan sınıflar, ' `CEditView` nin paylaşılan kaydırma çubuğu özelliğiyle çalışmaz `CSplitterWnd` .
 
-## <a name="minimum-sizes"></a>En düşük boyutları
+## <a name="minimum-sizes"></a>Minimum Boyutlar
 
-Her satır için en küçük satır yüksekliği yoktur ve her sütun için en az sütun genişliğini yoktur. Bu en az bir bölme tam ayrıntılı olarak gösterilecek küçük olduğunu garanti eder.
+Her satır için en az bir satır yüksekliği vardır ve her sütun için en az bir sütun genişliği bulunur. Bu en düşük değer, bir bölmenin tüm ayrıntılarla gösterilemeyecek kadar küçük olmasını garanti eder.
 
-Statik Bölümlendirici pencere için ilk en küçük satır yüksekliğini ve sütun genişliği 0'dır. Dinamik Bölümlendirici pencere için ilk en küçük satır yüksekliğini ve sütun genişliğini ayarlanır *sizeMin* parametresinin `CSplitterWnd::Create` işlevi.
+Statik Bölümlendirici penceresinde, başlangıçtaki en küçük satır yüksekliği ve sütun genişliği 0 ' dır. Dinamik Bölümlendirici penceresinde, başlangıçtaki en küçük satır yüksekliği ve sütun genişliği, işlevin *sizeMin* parametresine göre ayarlanır `CSplitterWnd::Create` .
 
-Bu en düşük boyutları kullanarak değiştirebileceğiniz [CSplitterWnd::SetRowInfo](../mfc/reference/csplitterwnd-class.md#setrowinfo) ve [CSplitterWnd::SetColumnInfo](../mfc/reference/csplitterwnd-class.md#setcolumninfo) işlevleri.
+Bu minimum boyutları [CSplitterWnd:: SetRowInfo](../mfc/reference/csplitterwnd-class.md#setrowinfo) ve [CSplitterWnd:: SetColumnInfo](../mfc/reference/csplitterwnd-class.md#setcolumninfo) işlevlerini kullanarak değiştirebilirsiniz.
 
-## <a name="actual-vs-ideal-sizes"></a>Gerçek vs. İdeal boyutu
+## <a name="actual-vs-ideal-sizes"></a>Gerçek ve Ideal Boyutlar
 
-Bölümlendirici pencere bölmelerinde düzenini bunları içeren çerçeveyi boyutuna bağlıdır. İçeren çerçevenin bir kullanıcı yeniden boyutlandırdığında `CSplitterWnd` bölmeleri bunların yanı sıra mümkün olan en uygun olacak şekilde yeniden boyutlandırır ve yeniden konumlandırır.
+Bölümlendirici penceresindeki bölmelerin yerleşimi, bunları içeren çerçevenin boyutuna bağlıdır. Bir Kullanıcı içerilen çerçeveyi yeniden boyutlandırdığında, `CSplitterWnd` bölmeleri mümkün olduğunca ve sığacak şekilde yeniden boyutlandırır.
 
-Kullanıcı, el ile satır yüksekliğini ve sütun genişliği boyutları ayarlayabilirsiniz veya program ideal boyutu kullanarak ayarlayabilirsiniz `CSplitterWnd` sınıfı. Gerçek boyut, küçük veya bu ideal daha büyük olabilir. İdeal boyutu görüntülemek için yeterli alan yoksa veya sağında veya altında ayırıcı penceresi üzerinde çok fazla boş alan yoksa Windows gerçek boyutu uyum sağlar.
+Kullanıcı, satır yüksekliğini ve sütun genişliği boyutlarını el ile ayarlayabilir veya program, sınıfını kullanarak ideal boyutu ayarlayabilir `CSplitterWnd` . Gerçek Boyut ideal veya daha büyük olabilir. İdeal boyutu göstermek için yeterli alan yoksa veya ayırıcı pencerenin sağ veya altında çok fazla boş alan yoksa, Windows gerçek boyutu ayarlar.
 
 ## <a name="custom-controls"></a>Özel denetimler
 
-Özelleştirilmiş davranışı ve özelleştirilmiş bir arabirim sağlamak için birçok işlev geçersiz kılabilirsiniz. Ayırıcı penceresi çeşitli grafik bileşenleri için alternatif tanımayı sağlamak için bu ilk kümesi geçersiz kılabilirsiniz.
+Özelleştirilmiş davranışı ve özelleştirilmiş bir arabirimi sağlamak için birçok işlevi geçersiz kılabilirsiniz. Bu ilk kümeyi, bir bölücü penceresinin çeşitli grafik bileşenleri için alternatif canlandırın sağlamak üzere geçersiz kılabilirsiniz.
 
 - `virtual void OnDrawSpltter(CDC* pDC, ESplitType nType, const CRect& rect);`
 
 - `virtual void OnInvertTracker(const CRect& rect);`
 
-Paylaşılan bir kaydırma çubuğu denetimi oluşturmak için bu işlevi çağırın. Kaydırma çubuğunun yanındaki ek denetimler oluşturmak için geçersiz kılabilirsiniz.
+Paylaşılan bir kaydırma çubuğu denetimi oluşturmak için bu işlevi çağırın. Kaydırma çubuğunun yanında ek denetimler oluşturmak için bunu geçersiz kılabilirsiniz.
 
 - `virtual BOOL CreateScrollBarCtrl(DWORD dwStyle, UINT nID);`
 
-Bu işlevler, dinamik Bölümlendirici penceresinin mantığını uygular. Daha gelişmiş Bölümlendirici mantığını sağlamak için bunları geçersiz kılabilirsiniz.
+Bu işlevler, dinamik ayırıcı penceresinin mantığını uygular. Daha gelişmiş ayırıcı mantığı sağlamak için bunları geçersiz kılabilirsiniz.
 
 - `virtual void DeleteView(int row, int col);`
 
@@ -120,23 +121,23 @@ Bu işlevler, dinamik Bölümlendirici penceresinin mantığını uygular. Daha 
 
 - `virtual void DeleteColumn(int colDelete);`
 
-## <a name="cview-functionality"></a>CView işlevi
+## <a name="cview-functionality"></a>CView Işlevselliği
 
-`CView` Sınıfı temsilci olarak üst düzey aşağıdaki komutları kullanır `CSplitterWnd` uygulaması. Bu komutları sanal olduğundan standart `CView` uygulama değil tüm gerekli `CSplitterWnd` uygulama bağlı. Kullanan uygulamalar için `CView` ama `CSplitterWnd`, `CSplitterWnd` uygulaması bağlı değil uygulama ile.
+`CView`Sınıfı, uygulamaya temsilci atamak için aşağıdaki üst düzey komutları kullanır `CSplitterWnd` . Bu komutlar sanal olduğundan, standart `CView` uygulama tüm `CSplitterWnd` uygulamanın bağlanmasını gerektirmez. Ancak kullanan uygulamalar için `CView` `CSplitterWnd` `CSplitterWnd` uygulama uygulamayla bağlanmayacak.
 
 - `virtual BOOL CanActivateNext(BOOL bPrev = FALSE);`
 
-   Id_next_pane veya ıd_prev_pane şu anda mümkün olup olmadığını denetler.
+   ID_NEXT_PANE veya ID_PREV_PANE Şu anda mümkün olup olmadığını denetler.
 
 - `virtual void ActivateNext(BOOL bPrev = FALSE);`
 
-   "Sonraki Bölme" veya "Önceki Bölme" komutu yürütür.
+   "Sonraki bölme" veya "önceki bölme" komutunu yürütür.
 
 - `virtual BOOL DoKeyboardSplit();`
 
-   Komutu, genellikle "Window Split" klavye yürütür.
+   Klavye bölme komutunu genellikle "pencere Böl" olarak yürütür.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

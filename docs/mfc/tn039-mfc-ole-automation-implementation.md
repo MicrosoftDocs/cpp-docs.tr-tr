@@ -1,5 +1,6 @@
 ---
-title: 'TN039: MFC-OLE Otomasyon uygulaması'
+description: 'Daha fazla bilgi edinin: TN039: MFC/OLE Otomasyon uygulama'
+title: 'TN039: MFC-OLE Otomasyon uygulama'
 ms.date: 06/28/2018
 helpviewer_keywords:
 - MFC, COM support
@@ -8,37 +9,37 @@ helpviewer_keywords:
 - TN039
 - Automation, MFC COM interface entry points
 ms.assetid: 765fa3e9-dd54-4f08-9ad2-26e0546ff8b6
-ms.openlocfilehash: e71b3795396aa73135e8dac022182d4371bb19ac
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: caabd3719a467e534e47ca61ed8f9a9f1f0d2eb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611247"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215423"
 ---
-# <a name="tn039-mfcole-automation-implementation"></a>TN039: MFC/OLE Otomasyon uygulaması
+# <a name="tn039-mfcole-automation-implementation"></a>TN039: MFC/OLE Otomasyon Uygulaması
 
 > [!NOTE]
-> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
+> Aşağıdaki teknik Not, çevrimiçi belgelere ilk eklenmesinden beri güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konular güncel olmayabilir veya yanlış olabilir. En son bilgiler için çevrimiçi belge dizininde ilgilendiğiniz konuyu aramanız önerilir.
 
-## <a name="overview-of-ole-idispatch-interface"></a>OLE IDispatch arabirimi genel bakış
+## <a name="overview-of-ole-idispatch-interface"></a>OLE IDispatch arabirimine genel bakış
 
-`IDispatch` Arabirimidir uygulamaları tarafından açığa diğer uygulamalar gibi Visual BASIC veya diğer dillerde yapabileceğiniz gibi uygulamanın özelliklerini kullandığınız yöntemleri ve özellikleri anlamına gelir. Bu arabirim, en önemli parçasıdır `IDispatch::Invoke` işlevi. MFC kullanan "gönderme eşlemeleri" uygulamak için `IDispatch::Invoke`. Dağıtım eşlemesi düzenini veya "şeklini" MFC Uygulama bilgileri sağlar, `CCmdTarget`-doğrudan nesnenin özelliklerini değiştirmek veya üye işlevlerini karşılamak için nesne içinde sınıflar türetilmiş `IDispatch::Invoke` istek sayısı.
+`IDispatch`Arabirim, uygulamalar Için VISUAL BASIC veya diğer diller gibi diğer uygulamaların uygulama özelliklerinden yararlanarak Yöntemler ve Özellikler sergileme yöntemidir. Bu arabirimin en önemli bölümü, `IDispatch::Invoke` işlevidir. MFC, uygulamak için "dağıtım haritaları" kullanır `IDispatch::Invoke` . Dağıtım eşlemesi, MFC Uygulama bilgilerini, türetilmiş sınıflarınızın düzen veya "Shape" `CCmdTarget` ' i içinde sağlar. bu şekilde nesnenin özelliklerini doğrudan işleyebilir ya da istekleri karşılamak için nesnenizin içindeki üye işlevlerini çağırabilirsiniz `IDispatch::Invoke` .
 
-Çoğunlukla, ClassWizard ve MFC OLE Otomasyon Uygulaması Programcı ayrıntılarını çoğunu gizlemek üzere işbirliği yapar. Programcı uygulamada göstermek için gerçek işlevlerini yoğunlaşır ve temel alınan tesisat hakkında endişelenmenize gerek yoktur.
+Çoğu bölüm olan ClassWizard ve MFC birlikte çalışması için, Uygulama programcılarından OLE otomasyonunun ayrıntılarının çoğunu gizleyin. Programcı, uygulamada kullanıma sunulacak gerçek işlevselliğe yoğunlaşır ve temel alınan sıhhi tesisat hakkında endişelenmenize gerek kalmaz.
 
-MFC arka planda ne yaptığını anlamak için gerekli olduğu durumlar vardır. Bu Not nasıl framework atar adres **DISPID**s üye işlevleri ve özellikleri. MFC kullanan atamak için algoritma bilgi **DISPID**s olduğunda yalnızca gerekli uygulama nesneleri için bir "tür kitaplığı" oluşturduğunuzda gibi kimlikleri, bilmeniz gerekir.
+Ancak, ne tür bir MFC 'nin arka planda çalıştığını anlamak için gereken durumlar vardır. Bu notta, Framework 'ün, üye işlevlerine ve özelliklerine nasıl **SPID**'leri atayacağı ele alınacaktır. MFC 'nin bir "tür kitaplığı" oluşturma , örneğin, uygulama nesneleri için bir "tür kitaplığı" oluştururken yalnızca kimlikleri bilmeniz gerektiğinde gereklidir.
 
-## <a name="mfc-dispid-assignment"></a>MFC DISPID atama
+## <a name="mfc-dispid-assignment"></a>MFC DISPID ataması
 
-Otomasyon (Visual Basic kullanıcı, örneğin), son kullanıcı görür ancak gerçek adlarını Otomasyon özellikleri ve yöntemleri (örneğin, obj. kendi kodundaki etkin ShowWindow) uygulamasını `IDispatch::Invoke` gerçek adlarını almaz. En iyi duruma getirme nedenlerle aldığı bir **DISPID**, "yöntem veya erişilecek özellik açıklayan bir 32-bit Sihirli tanımlama bilgisi" olduğu. Bunlar **DISPID** sağlayıcıdan döndürülen değerleri `IDispatch` adlı başka bir yöntem aracılığıyla uygulama `IDispatch::GetIDsOfNames`. Bir otomasyon istemci uygulamasını çağıracak `GetIDsOfNames` her üyesi veya özelliği için erişmek ve bunları sonraki çağrılar için önbellek amaçlamaktadır sonra `IDispatch::Invoke`. Bu şekilde, pahalı dize arama yalnızca bir kez nesne kullanımı yerine bir kez başına yapılır `IDispatch::Invoke` çağırın.
+Otomasyon 'un son kullanıcısı (örneğin, bir Visual Basic Kullanıcı), Otomasyon etkin özelliklerinin ve yöntemlerinin (obj gibi) gerçek adlarını görür. ShowWindow), uygulamasının uygulanması `IDispatch::Invoke` gerçek adları almaz. En iyi duruma getirme nedenleriyle, erişilecek yöntemi veya özelliği açıklayan 32 bitlik bir "sihirli tanımlama bilgisi" olan bir **DISPID** alır. Bu **DISPID** değerleri `IDispatch` , uygulamasından, adlı başka bir yöntem aracılığıyla döndürülür `IDispatch::GetIDsOfNames` . Otomasyon istemci uygulaması `GetIDsOfNames` , erişmeyi amaçladığı her üye veya özellik için bir kez çağrı yapılır ve daha sonra çağrıları için önbelleğe alınır `IDispatch::Invoke` . Bu şekilde, pahalı dize arama, her çağrı için bir kez değil, nesne kullanımı başına yalnızca bir kez gerçekleştirilir `IDispatch::Invoke` .
 
-MFC belirler **DISPID**s için her bir yöntem ve özellik tabanlı iki şey üzerinde:
+MFC her bir yöntem ve özellik için her iki şeyi temel alarak bir **SPID**'leri belirler:
 
-- Dağıtım eşlemesi (1 göreli) üst mesafe
+- Dağıtım eşlemesinin en üstünden uzaklık (1 göreli)
 
-- Dağıtım eşlemesi (göreli 0) en çok türetilen sınıftaki uzaklığı
+- Dağıtım haritasının en çok türetilen sınıftan uzaklığı (0 göreli)
 
-**DISPID** iki bölüme ayrılır. **GET_X_LPARAM** , **DISPID** ilk bileşen, dağıtım eşlemesi üstünden uzaklık içerir. **Get_y_lparam kullanın** en çok türetilen sınıf olan uzaklık içerir. Örneğin:
+**DISPID** iki parçaya bölünür. **DISPID** 'Nin **LOWORD** 'i, dağıtım eşlemesinin en üstünden uzaklık olan ilk bileşeni içerir. **Hiword** , en çok türetilen sınıftan uzaklığı içerir. Örneğin:
 
 ```cpp
 class CDispPoint : public CCmdTarget
@@ -69,18 +70,18 @@ BEGIN_DISPATCH_MAP(CDisp3DPoint, CDispPoint)
 END_DISPATCH_MAP()
 ```
 
-Gördüğünüz gibi ikisi için de OLE Otomasyon arabirimleri kullanıma sunar, iki sınıf vardır. Bu sınıflardan biri diğerinden türetilir ve bu nedenle temel sınıfın işlevselliği, OLE Otomasyon dahil yararlanır ("x" ve "y" özellikleri bu durumda).
+Gördüğünüz gibi, her ikisi de OLE Otomasyon arabirimlerini sunan iki sınıf vardır. Bu sınıflardan biri diğerine türetilir ve bu nedenle, OLE Otomasyon Bölümü (Bu durumda "x" ve "y" özellikleri) dahil olmak üzere temel sınıfın işlevselliğinden yararlanır.
 
-MFC oluşturacağını **DISPID**s CDispPoint gibi sınıf:
+MFC, sınıf CDispPoint için aşağıdaki gibi bir **DISPID** üretir:
 
 ```cpp
 property X    (DISPID)0x00000001
 property Y    (DISPID)0x00000002
 ```
 
-Özellikleri bir temel sınıfta olmadığından **get_y_lparam kullanın** , **DISPID** her zaman sıfır (en çok türetilen sınıf için CDispPoint mesafe sıfırsa) olur.
+Özellikler bir temel sınıfta olmadığından, **DISPID** 'nin **hibkelimesi** her zaman sıfırdır (CDispPoint için en fazla türetilen sınıftan uzaklık sıfırdır).
 
-MFC oluşturacağını **DISPID**s CDisp3DPoint gibi sınıf:
+MFC, CDisp3DPoint sınıfı için aşağıdaki şekilde bir **DISPID** üretir:
 
 ```cpp
 property Z    (DISPID)0x00000001
@@ -88,18 +89,18 @@ property X    (DISPID)0x00010001
 property Y    (DISPID)0x00010002
 ```
 
-Z özelliğini verilen bir **DISPID** sıfır **get_y_lparam kullanın** CDisp3DPoint özelliklerini gösterme sınıfında tanımlamış. X ve Y özellikleri bir temel sınıfta tanımlanan beri **get_y_lparam kullanın** , **DISPID** bu özellikleri tanımlandığı sınıfın en çok türetilen sınıftaki bir türetme uzaklıkta olduğundan 1 ' dir.
+Z özelliğine, CDisp3DPoint özelliklerini kullanıma sunan sınıfta tanımlandığından, sıfır **hiıt** Ile bir **DISPID** verilir. X ve Y özellikleri bir temel sınıfta tanımlandığından, bu özelliklerin tanımlandığı sınıf, en türetilmiş sınıftan bir Türetmenin mesafesinde olduğundan, **DISPID** 'nin **hibisi** 1 ' dir.
 
 > [!NOTE]
-> **GET_X_LPARAM** açık ile eşleme girişleri bulunsa bile her zaman harita konumu tarafından belirlenir **DISPID** (bilgi için sonraki bölüme bakın **_kimliği** sürümleri `DISP_PROPERTY` ve `DISP_FUNCTION` makroları).
+> **LOWORD** , haritada açık bir **DISPID** ile var olan girişler olsa bile her zaman eşlemedeki konuma göre belirlenir (ve makroların **_ID** sürümleri hakkında daha fazla bilgi için sonraki bölüme bakın `DISP_PROPERTY` `DISP_FUNCTION` ).
 
-## <a name="advanced-mfc-dispatch-map-features"></a>Gelişmiş MFC gönderme eşleme özellikleri
+## <a name="advanced-mfc-dispatch-map-features"></a>Gelişmiş MFC dağıtım eşleme özellikleri
 
-Visual C++'ın bu sürümüyle ClassWizard desteği olmayan ek özellikler birkaç vardır. ClassWizard destekler `DISP_FUNCTION`, `DISP_PROPERTY`, ve `DISP_PROPERTY_EX` , tanımladığınız bir yöntemi, üye değişkeni özelliğinin ve üye işlev özellik alma/ayarlama, sırasıyla. Bu özellikler genellikle çoğu otomasyon sunucuları oluşturmak için gerekli değildir.
+ClassWizard 'ın bu Visual C++ sürümünde desteklemediği bazı ek özellikler vardır. ClassWizard, `DISP_FUNCTION` `DISP_PROPERTY` `DISP_PROPERTY_EX` sırasıyla bir yöntemi, üye değişkeni özelliğini ve Get/Set üye işlevi özelliğini destekler, ve tanımlar. Bu yetenekler genellikle çoğu Otomasyon sunucusunu oluşturmak için gereklidir.
 
-Aşağıdaki ek makroları ClassWizard desteklenen makrolar yeterli olmadığında kullanılabilir: `DISP_PROPERTY_NOTIFY`, ve `DISP_PROPERTY_PARAM`.
+Aşağıdaki ek makrolar, ClassWizard 'ın desteklediği makrolar yeterli olmadığında kullanılabilir: `DISP_PROPERTY_NOTIFY` , ve `DISP_PROPERTY_PARAM` .
 
-## <a name="disppropertynotify--macro-description"></a>Dısp_property_notıfy — Makro tanımı
+## <a name="disp_property_notify--macro-description"></a>DISP_PROPERTY_NOTIFY — makro açıklaması
 
 ```cpp
 DISP_PROPERTY_NOTIFY(
@@ -112,26 +113,26 @@ DISP_PROPERTY_NOTIFY(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *pszName*<br/>
 Özelliğin dış adı.
 
 *memberName*<br/>
-Özellik depolandığı üye değişkeninin adı.
+Özelliğin depolandığı üye değişkeninin adı.
 
 *pfnAfterSet*<br/>
-Özellik değiştiğinde çağrılacak üye işlevinin adı.
+Özellik değiştirildiğinde çağrılacak üye işlevin adı.
 
 *vtPropType*<br/>
-Özelliğin türü belirten bir değeri.
+Özelliğin türünü belirten bir değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makro çok dısp_property gibi ek bağımsız değişken kabul dışında aynıdır. Ek bağımsız değişken *pfnAfterSet,* nothing döndürür ve hiçbir parametre 'void OnPropertyNotify()' geçen bir üye işlevi olmalıdır. Çağrılacağı **sonra** üye değişkeni değiştirildi.
+Bu makro, DISP_PROPERTY ek bir bağımsız değişken kabul ettiğinden çok benzer. Ek bağımsız değişken olan *pfnAfterSet,* hiçbir şey döndüren ve hiçbir parametre alan (' void OnPropertyNotify () ') bir üye işlev olmalıdır. Üye değişkeni değiştirildikten **sonra** çağrılacaktır.
 
-## <a name="disppropertyparam--macro-description"></a>Dısp_property_param — Makro tanımı
+## <a name="disp_property_param--macro-description"></a>DISP_PROPERTY_PARAM — makro açıklaması
 
 ```cpp
 DISP_PROPERTY_PARAM(
@@ -145,40 +146,40 @@ DISP_PROPERTY_PARAM(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *pszName*<br/>
 Özelliğin dış adı.
 
 *memberGet*<br/>
-Özelliği almak için kullanılan bir üye işlevin adı.
+Özelliği almak için kullanılan üye işlevinin adı.
 
 *memberSet*<br/>
-Özelliği ayarlamak için kullanılan bir üye işlevin adı.
+Özelliği ayarlamak için kullanılan üye işlevinin adı.
 
 *vtPropType*<br/>
-Özelliğin türü belirten bir değeri.
+Özelliğin türünü belirten bir değer.
 
 *vtsParams*<br/>
-Bir dize alanı VTS_ her parametre için ayrılmış.
+Her parametre için boşlukla ayrılmış bir dize VTS_.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çok dısp_property_ex makrosu gibi ayrı Get ve Set üye işlevleri ile erişilen bir özelliği bu makroyu tanımlar. Bu makro ancak özelliğinin bir parametre listesini belirtmenize olanak tanır. Bu, başka bir şekilde dizine veya parametreli özellikleri uygulamak için kullanışlıdır. Parametreleri her zaman ilk olarak, özelliğinin yeni değeri ardında yer alır. Örneğin:
+DISP_PROPERTY_EX makrosuna benzer şekilde, bu makro ayrı Get ve set member işlevleriyle erişilen bir özelliği tanımlar. Ancak, bu makro, özelliği için bir parametre listesi belirtmenize izin verir. Bu, başka bir şekilde dizini oluşturulmuş veya parametreli olan özellikleri uygulamak için yararlıdır. Parametreler her zaman ilk olarak yerleştirilir ve sonra özelliğin yeni değeri gelir. Örneğin:
 
 ```cpp
 DISP_PROPERTY_PARAM(CMyObject, "item", GetItem, SetItem, VT_DISPATCH, VTS_I2 VTS_I2)
 ```
 
-GET ve set üye işlevleri karşılık gelir:
+üye işlevlerini al ve ayarla öğesine karşılık gelir:
 
 ```cpp
 LPDISPATCH CMyObject::GetItem(short row, short col)
 void CMyObject::SetItem(short row, short col, LPDISPATCH newValue)
 ```
 
-## <a name="dispxxxxid--macro-descriptions"></a>DISP_XXXX_ID — Makro tanımları
+## <a name="disp_xxxx_id--macro-descriptions"></a>DISP_XXXX_ID — makro açıklamaları
 
 ```cpp
 DISP_FUNCTION_ID(
@@ -220,33 +221,33 @@ DISP_PROPERTY_PARAM_ID(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sınıfın*<br/>
+*Sınıf*<br/>
 Sınıfın adı.
 
 *pszName*<br/>
 Özelliğin dış adı.
 
-*DISPID*<br/>
+*dı*<br/>
 Özellik veya yöntem için sabit DISPID.
 
 *pfnGet*<br/>
-Özelliği almak için kullanılan bir üye işlevin adı.
+Özelliği almak için kullanılan üye işlevinin adı.
 
 *pfnSet*<br/>
-Özelliği ayarlamak için kullanılan bir üye işlevin adı.
+Özelliği ayarlamak için kullanılan üye işlevinin adı.
 
 *memberName*<br/>
-Özelliğini eşleştirmek için üye değişkeninin adı
+Özelliğe eşlenecek üye değişkeninin adı
 
 *vtPropType*<br/>
-Özelliğin türü belirten bir değeri.
+Özelliğin türünü belirten bir değer.
 
 *vtsParams*<br/>
-Bir dize alanı VTS_ her parametre için ayrılmış.
+Her parametre için boşlukla ayrılmış bir dize VTS_.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu makrolar belirtmenizi sağlar bir **DISPID** MFC otomatik olarak izin vermek yerine atayın. Bu kimliği için makro adı eklenir dışında bu makrolar Gelişmiş aynı ada sahip (örneğin **DISP_PROPERTY_ID**) ve sonra yalnızca belirtilen parametre tarafından kimliği belirlenir *pszName* parametresi. AFXDISP bakın. Bu makrolar hakkında daha fazla bilgi için H. **_Kimliği** girişleri dağıtım eşlemesi sonunda yerleştirilmelidir. Bunlar otomatik etkiler **DISPID** aynı olmayan bir şekilde oluşturma **_kimliği** makro sürümü gerekir ( **DISPID**s konumu tarafından belirlenir). Örneğin:
+Bu makrolar, MFC 'nin otomatik olarak bir tane atamasını sağlamak yerine bir **DISPID** belirtmenize olanak tanır. Bu gelişmiş makrolar, KIMLIğIN makro adına eklendiği (örn. **DISP_PROPERTY_ID**) ve kimlik, yalnızca *pszName* parametresinden hemen sonra belirtilen parametreye göre belirlenir. Bkz. AFXDISP. Bu makrolar hakkında daha fazla bilgi için. **_ID** girdileri, dağıtım haritasının sonuna yerleştirilmelidir. Otomatik **SPID** oluşturmayı, makronun **_ID** olmayan bir sürümüyle aynı şekilde etkiler ( **DISPID**'lar konuma göre belirlenir). Örneğin:
 
 ```cpp
 BEGIN_DISPATCH_MAP(CDisp3DPoint, CCmdTarget)
@@ -256,7 +257,7 @@ BEGIN_DISPATCH_MAP(CDisp3DPoint, CCmdTarget)
 END_DISPATCH_MAP()
 ```
 
-MFC DISPID değeri, şu şekilde CDisp3DPoint sınıfı için'ı oluşturun:
+MFC, CDisp3DPoint sınıfı için aşağıdaki şekilde bir DISPID üretir:
 
 ```cpp
 property X    (DISPID)0x00020003
@@ -264,11 +265,11 @@ property Y    (DISPID)0x00000002
 property Z    (DISPID)0x00000001
 ```
 
-Bir sabit belirtmek **DISPID** önceden var olan bir dağıtım arabirimi için geriye dönük uyumluluk sağlamak ya da belirli bir sistem tanımlı yöntem ya da özellikleri uygulamak için kullanışlıdır (genellikle bir negatif tarafından belirtilen  **DISPID**, gibi **DISPID_NEWENUM** koleksiyonu).
+Sabit bir **DISPID** belirtmek, daha önce varolan bir dağıtım arabirimine geriye dönük uyumluluk sağlamak ya da belirli sistem tanımlı yöntemleri veya özellikleri (genellikle **DISPID_NEWENUM** koleksiyonu gibi bir negatif **DISPID** tarafından belirtilir) uygulamak için yararlıdır.
 
-## <a name="retrieving-the-idispatch-interface-for-a-coleclientitem"></a>Bir Coleclientıtem IDispatch arabirimi alınıyor
+## <a name="retrieving-the-idispatch-interface-for-a-coleclientitem"></a>Colet Clientıtem için IDispatch arabirimini alma
 
-Birçok sunucuya OLE sunucu işlevselliğinin yanı sıra kendi belge nesneleri içinde Otomasyonu destekler. Bu Otomasyon arabirim erişim kazanmak için doğrudan erişim için gerekli olan `COleClientItem::m_lpObject` üye değişkeni. Aşağıdaki kodu alacak `IDispatch` türetilen bir nesne için arabirim `COleClientItem`. Bu işlev gerekli bulursanız, uygulamanızda aşağıdaki kod şunları içerebilir:
+Birçok sunucu, OLE sunucu işlevselliğiyle birlikte belge nesnelerinde Otomasyonu destekleyecektir. Bu Otomasyon arabirimine erişim kazanmak için üye değişkenine doğrudan erişmek gerekir `COleClientItem::m_lpObject` . Aşağıdaki kod, `IDispatch` öğesinden türetilmiş bir nesnenin arabirimini alır `COleClientItem` . Gerekli olan bu işlevselliği bulursanız, aşağıdaki kodu uygulamanıza ekleyebilirsiniz:
 
 ```cpp
 LPDISPATCH CMyClientItem::GetIDispatch()
@@ -307,9 +308,9 @@ LPDISPATCH CMyClientItem::GetIDispatch()
 }
 ```
 
-Dağıtım arabirimi döndürüldüğü bu işlev sonra doğrudan kullanılabilir veya iliştirilmiş bir `COleDispatchDriver` tür kullanımı uyumlu erişim için. Doğrudan kullanmanız durumunda çağırmanızı emin olun, `Release` üye işaretçisi olduğunda aracılığıyla ( `COleDispatchDriver` yok Edicisi bunu varsayılan olarak yapar).
+Bu işlevden döndürülen dağıtım arabirimi daha sonra doğrudan veya `COleDispatchDriver` tür kullanımı uyumlu erişim için bir öğesine iliştirilebilir. Doğrudan kullanıyorsanız, `Release` işaretçisini işaretçiyle ( `COleDispatchDriver` yok edici bunu varsayılan olarak yapar) çağırdığınızdan emin olun.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Sayıya Göre Teknik Notlar](../mfc/technical-notes-by-number.md)<br/>
-[Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
+[Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)<br/>
+[Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)

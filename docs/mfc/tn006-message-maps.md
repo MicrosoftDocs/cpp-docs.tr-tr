@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: TN006: Ileti haritaları'
 title: 'TN006: İleti Eşlemeleri'
 ms.date: 06/25/2018
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - ON_COMMAND_EX macro [MFC]
 - message maps [MFC], Windows messaging
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-ms.openlocfilehash: 6b387b851f5a76cd0d11957a87e57307d624759e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9331e5523015a670a2a874c9e9b3021d41eed09
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216060"
 ---
 # <a name="tn006-message-maps"></a>TN006: İleti Eşlemeleri
 
@@ -44,13 +45,13 @@ MFC, bir pencereye gönderilen iletileri işlemek için geleneksel Windows taban
 
 [DECLARE_MESSAGE_MAP](reference/message-map-macros-mfc.md#declare_message_map) makro, bir sınıf için üç üye bildirir.
 
-- *_MessageEntries*adlı özel bir AFX_MSGMAP_ENTRY girdileri dizisi.
+- *_MessageEntries* adlı özel bir AFX_MSGMAP_ENTRY girdileri dizisi.
 
 - *_MessageEntries* dizisine Işaret eden *messageMap* adlı bir korumalı AFX_MSGMAP yapısı.
 
-- `GetMessageMap` *MessageMap*adresini döndüren adlı korumalı bir sanal işlev.
+- `GetMessageMap` *MessageMap* adresini döndüren adlı korumalı bir sanal işlev.
 
-Bu makro, ileti haritaları kullanılarak herhangi bir sınıfın bildirimine yerleştirilmelidir. Kurala göre, sınıf bildiriminin sonunda bulunur. Örnek:
+Bu makro, ileti haritaları kullanılarak herhangi bir sınıfın bildirimine yerleştirilmelidir. Kurala göre, sınıf bildiriminin sonunda bulunur. Örneğin:
 
 ```cpp
 class CMyWnd : public CMyParentWndClass
@@ -70,14 +71,14 @@ Bu, yeni sınıflar oluştururken AppWizard ve ClassWizard tarafından oluşturu
 
 İleti eşlemesi tablosu, ileti eşleme girişlerine Genişlet bir makro kümesi kullanılarak tanımlanır. Bir tablo, bu ileti eşlemesi tarafından işlenen sınıfı ve işlenmemiş iletilerin geçirildiği ana sınıfı tanımlayan [BEGIN_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_message_map) makro çağrısıyla başlar. Tablo [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map) makro çağrısıyla biter.
 
-Bu iki makro çağrısı arasında, bu ileti eşlemesi tarafından işlenecek her ileti için bir giriştir. Her standart Windows iletisinde, bu ileti için bir giriş üreten ON_WM_*MESSAGE_NAME* form makrosu bulunur.
+Bu iki makro çağrısı arasında, bu ileti eşlemesi tarafından işlenecek her ileti için bir giriştir. Her standart Windows iletisinde, bu ileti için bir giriş üreten ON_WM_ *MESSAGE_NAME* form makrosu bulunur.
 
 Her bir Windows iletisinin parametrelerini açmak ve tür güvenliği sağlamak için standart bir işlev imzası tanımlanmıştır. Bu imzalar, [CWnd](../mfc/reference/cwnd-class.md)bildiriminde Afxwin. h dosyasında bulunabilir. Her biri kolay tanımlama için **afx_msg** anahtar kelimesiyle işaretlenir.
 
 > [!NOTE]
 > ClassWizard, ileti eşleme işleyicisi bildirimlerinde **afx_msg** anahtar sözcüğünü kullanmanızı gerektirir.
 
-Bu işlev imzaları basit bir kural kullanılarak türetilmişdi. İşlevin adı her zaman "ile başlar `"On` . Bu, "WM_" kaldırılan Windows iletisinin adı ve her sözcüğün ilk harfini büyük harfle izler. Parametrelerin sıralaması *wParam* ve sonrasında `LOWORD` (*lParam*), (lParam) `HIWORD` .*lParam* Kullanılmayan parametreler geçirilmiyor. MFC sınıfları tarafından Sarmalanan tüm tutamaçlar uygun MFC nesnelerine işaretçilere dönüştürülür. Aşağıdaki örnek, WM_PAINT iletisinin nasıl işleneceğini ve işlevin çağrılmasına neden olduğunu gösterir `CMyWnd::OnPaint` :
+Bu işlev imzaları basit bir kural kullanılarak türetilmişdi. İşlevin adı her zaman "ile başlar `"On` . Bu, "WM_" kaldırılan Windows iletisinin adı ve her sözcüğün ilk harfini büyük harfle izler. Parametrelerin sıralaması *wParam* ve sonrasında `LOWORD` (*lParam*), (lParam) `HIWORD` . Kullanılmayan parametreler geçirilmiyor. MFC sınıfları tarafından Sarmalanan tüm tutamaçlar uygun MFC nesnelerine işaretçilere dönüştürülür. Aşağıdaki örnek, WM_PAINT iletisinin nasıl işleneceğini ve işlevin çağrılmasına neden olduğunu gösterir `CMyWnd::OnPaint` :
 
 ```cpp
 BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
@@ -166,7 +167,7 @@ Komut güncelleştirme iletileri aynı mekanizmaya yönlendirilir, ancak bunun y
 ON_UPDATE_COMMAND_UI(id, memberFxn)
 ```
 
-Gelişmiş kullanıcılar, komut iletisi işleyicilerinin genişletilmiş biçimi olan ON_COMMAND_EX makrosunu kullanabilir. Makro ON_COMMAND işlevselliğinin bir üst kümesini sağlar. Genişletilmiş komut işleyici üye işlevleri tek bir parametre, komut KIMLIĞINI içeren bir **UINT** alır ve **bool**döndürür. Komutun işlendiğini göstermek için dönüş değeri **true** olmalıdır. Aksi takdirde yönlendirme diğer komut hedef nesnelerine devam eder.
+Gelişmiş kullanıcılar, komut iletisi işleyicilerinin genişletilmiş biçimi olan ON_COMMAND_EX makrosunu kullanabilir. Makro ON_COMMAND işlevselliğinin bir üst kümesini sağlar. Genişletilmiş komut işleyici üye işlevleri tek bir parametre, komut KIMLIĞINI içeren bir **UINT** alır ve **bool** döndürür. Komutun işlendiğini göstermek için dönüş değeri **true** olmalıdır. Aksi takdirde yönlendirme diğer komut hedef nesnelerine devam eder.
 
 Bu formların örnekleri:
 
