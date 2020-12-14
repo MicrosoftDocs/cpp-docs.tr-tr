@@ -1,4 +1,5 @@
 ---
+description: ': Platform:: Collections:: VectorView sınıfı hakkında daha fazla bilgi'
 title: 'Platform:: Collections:: VectorView sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,18 +13,18 @@ f1_keywords:
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-ms.openlocfilehash: 207f5d517eaae475af1c65a284a3d1ebe50621af
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f0d1244ed5331fa9732bdfef1f1b7e2133f99442
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250042"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform:: Collections:: VectorView sınıfı
 
 Dizin tarafından tek tek erişilebilen bir nesne koleksiyonunun salt okunurdur görünümünü temsil eder. Koleksiyondaki her nesnenin türü, şablon parametresi tarafından belirtilir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <typename T, typename E>
@@ -35,8 +36,8 @@ template <typename T, typename E>
 *T*<br/>
 Nesnede bulunan öğelerin türü `VectorView` .
 
-*A*<br/>
-Tür değerleriyle eşitlik testi için bir ikili koşul belirtir `T` . Varsayılan değer: `std::equal_to<T>`.
+*E*<br/>
+Tür değerleriyle eşitlik testi için bir ikili koşul belirtir `T` . `std::equal_to<T>` varsayılan değerdir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -70,11 +71,11 @@ Tür değerleriyle eşitlik testi için bir ikili koşul belirtir `T` . Varsayı
 
 **Ad alanı:** Platform:: Collections
 
-## <a name="vectorviewfirst-method"></a><a name="first"></a>VectorView:: First yöntemi
+## <a name="vectorviewfirst-method"></a><a name="first"></a> VectorView:: First yöntemi
 
 VectorView içindeki ilk öğeyi belirten bir yineleyici döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 
@@ -90,11 +91,11 @@ VectorView içindeki ilk öğeyi belirten bir yineleyici.
 
 Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş değerini **`auto`** tür kesintisi anahtar sözcüğüyle belirtilen bir değişkene atamaktır. Örneğin, `auto x = myVectorView->First();`.
 
-## <a name="vectorviewgetat-method"></a><a name="getat"></a>VectorView:: GetAt yöntemi
+## <a name="vectorviewgetat-method"></a><a name="getat"></a> VectorView:: GetAt yöntemi
 
 Belirtilen dizin tarafından belirtilen geçerli VectorView öğesini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 
@@ -110,13 +111,13 @@ VectorView nesnesinde belirli bir öğeyi belirten sıfır tabanlı, işaretsiz 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parametresi tarafından belirtilen öğe `index` . Öğe türü, VectorView şablon parametresi, *T*ile belirtilir.
+Parametresi tarafından belirtilen öğe `index` . Öğe türü, VectorView şablon parametresi, *T* ile belirtilir.
 
-## <a name="vectorviewgetmany-method"></a><a name="getmany"></a>VectorView:: GetMany yöntemi
+## <a name="vectorviewgetmany-method"></a><a name="getmany"></a> VectorView:: GetMany yöntemi
 
 Belirtilen dizinden başlayarak, geçerli Vektörtorview öğesinden bir öğe dizisi alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 
@@ -138,11 +139,11 @@ Bu işlem tamamlandığında, `startIndex` vektör görünümündeki son öğe t
 
 Alınan öğe sayısı.
 
-## <a name="vectorviewindexof-method"></a><a name="indexof"></a>VectorView:: IndexOf yöntemi
+## <a name="vectorviewindexof-method"></a><a name="indexof"></a> VectorView:: IndexOf yöntemi
 
 Geçerli vektör görünümünde belirtilen öğeyi arar ve bulunursa öğenin dizinini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 
@@ -154,7 +155,7 @@ virtual bool IndexOf(
 
 ### <a name="parameters"></a>Parametreler
 
-*deeri*<br/>
+*değer*<br/>
 Bulunacak öğe.
 
 *indeks*<br/>
@@ -166,11 +167,11 @@ Parametre bulunursa öğenin sıfır tabanlı dizini `value` ; Aksi durumda 0.
 
 **`true`** Belirtilen öğe bulunursa; Aksi takdirde, **`false`** .
 
-## <a name="vectorviewsize-method"></a><a name="size"></a>VectorView:: size yöntemi
+## <a name="vectorviewsize-method"></a><a name="size"></a> VectorView:: size yöntemi
 
 Geçerli VectorView nesnesindeki öğe sayısını döndürür.
 
-### <a name="syntax"></a>Sözdizimi
+### <a name="syntax"></a>Syntax
 
 ```
 
@@ -181,11 +182,11 @@ virtual property unsigned int Size;
 
 Geçerli Vektörtorview içindeki öğe sayısı.
 
-## <a name="vectorviewvectorview-constructor"></a><a name="ctor"></a>VectorView:: VectorView Oluşturucusu
+## <a name="vectorviewvectorview-constructor"></a><a name="ctor"></a> VectorView:: VectorView Oluşturucusu
 
 VectorView sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 VectorView();
@@ -253,7 +254,7 @@ Geçerli vektör görünümünü başlatmak için kullanılan nesne koleksiyonun
 *boyutla*<br/>
 Vektörtorview içindeki öğe sayısı.
 
-*deeri*<br/>
+*değer*<br/>
 Geçerli Vektörtorview içindeki her öğeyi başlatmak için kullanılan bir değer.
 
 *Yönetim*<br/>
@@ -269,10 +270,10 @@ Geçerli Vektörtorview 'ı başlatmak için kullanılan bir [Platform:: Array](
 Geçerli Vektörtorview 'ı başlatmak için kullanılan bir [std:: Array](../standard-library/array-class-stl.md) nesnesi.
 
 *adı*<br/>
-Geçerli vektörleştirme görünümünü başlatmak için kullanılan nesne dizisindeki ilk öğe. Türü, `first` *kusursuz iletme*yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+Geçerli vektörleştirme görünümünü başlatmak için kullanılan nesne dizisindeki ilk öğe. Türü, `first` *kusursuz iletme* yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 *soyadına*<br/>
-Geçerli vektör görünümünü başlatmak için kullanılan nesneler dizisindeki son öğe. Türü, `last` *kusursuz iletme*yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
+Geçerli vektör görünümünü başlatmak için kullanılan nesneler dizisindeki son öğe. Türü, `last` *kusursuz iletme* yoluyla geçirilir. Daha fazla bilgi için bkz. [rvalue başvuru bildirimci:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

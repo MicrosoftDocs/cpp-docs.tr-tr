@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2944'
 title: Derleyici hatası C2944
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2944
 ms.assetid: f209e668-e72f-442a-a438-8c4ff43a404a
-ms.openlocfilehash: 542f7def550632a29fcb7ae28825b32b8c26f17d
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: a25b7da5f2a3a4320b4e85dfc3bd71626795a4d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755388"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249561"
 ---
 # <a name="compiler-error-c2944"></a>Derleyici hatası C2944
 

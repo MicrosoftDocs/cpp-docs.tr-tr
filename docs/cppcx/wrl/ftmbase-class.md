@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: FtmBase Sınıfı'
 title: FtmBase Sınıfı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - Microsoft::WRL::FtmBase::ReleaseMarshalData method
 - Microsoft::WRL::FtmBase::UnmarshalInterface method
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
-ms.openlocfilehash: b28b7ee0038e4f828f43fcc3f0d49a2d9e092315
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: dc7ae3768233dd51d34b48da8c12a2d4b6bed773
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844047"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250094"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 
@@ -98,7 +99,7 @@ static HRESULT CreateGlobalInterfaceTable(
 
 ### <a name="parameters"></a>Parametreler
 
-*Git@@*<br/>
+*git*<br/>
 Bu işlem tamamlandığında, genel arabirim tablosuna yönelik bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -318,7 +319,7 @@ Arabirim işaretçisinin sıralanamadı olduğu akışa yönelik işaretçi.
 Sıralanmayan arabirimin tanımlayıcısına başvuru.
 
 *PPV*<br/>
-Bu işlem tamamlandığında, *riid*içinde istenen arabirim işaretçisini alan bir işaretçi değişkeninin adresi. Bu işlem başarılı olursa, **PPV* , arabirimin istenen arabirim işaretçisini sıralanamadı.
+Bu işlem tamamlandığında, *riid* içinde istenen arabirim işaretçisini alan bir işaretçi değişkeninin adresi. Bu işlem başarılı olursa, **PPV* , arabirimin istenen arabirim işaretçisini sıralanamadı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

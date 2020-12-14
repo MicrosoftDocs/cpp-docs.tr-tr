@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: CDaoRecordset sınıfı'
 title: CDaoRecordset sınıfı
 ms.date: 08/27/2018
 f1_keywords:
@@ -166,12 +167,12 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strFilter
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
-ms.openlocfilehash: 4a1026c6b652bc5141855670db3b1ee34e7974b9
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: cc24894c0efc61ae37d57ff3c01ca43e71beddf3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040281"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248222"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset sınıfı
 
@@ -360,7 +361,7 @@ Veritabanı işlemleri destekliyorsa, `AddNew` bir işlemin çağrı bölümün�
 
 `AddNew` [Açık](#open) üye işlevi çağrılmayan bir kayıt kümesi için çağrı yapmak geçersizdir. `CDaoException` `AddNew` Eklenemedikleri bir kayıt kümesi için çağrı yaparsanız bir oluşturulur. Kayıt kümesinin [CanAppend](#canappend)çağırarak güncelleştirilebilir olup olmadığını belirleyebilirsiniz.
 
-Çerçeve, veri kaynağındaki kayda DAO Kayıt alanı değişimi (DFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, genel olarak [SetFieldDirty](#setfielddirty) çağrısı yapmanız gerekir, ancak bazen, alan veri üyesinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz. DFX mekanizması **sözde null**kullanımını da kullanır. Daha fazla bilgi için bkz. [Cdadofieldexchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
+Çerçeve, veri kaynağındaki kayda DAO Kayıt alanı değişimi (DFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, genel olarak [SetFieldDirty](#setfielddirty) çağrısı yapmanız gerekir, ancak bazen, alan veri üyesinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz. DFX mekanizması **sözde null** kullanımını da kullanır. Daha fazla bilgi için bkz. [Cdadofieldexchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
 
 Çift arabelleğe alma mekanizması kullanılmıyorsa, alanın değerini değiştirmek alanı otomatik olarak kirli olarak ayarlamamaktadır. Bu durumda, alanı kirli olarak ayarlamak gerekli olacaktır. [M_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) bulunan bayrak, bu otomatik alan denetimini denetler.
 
@@ -597,7 +598,7 @@ virtual void Edit();
 
 Bazı durumlarda, null (veri içermeyen) yaparak bir sütunu güncelleştirmek isteyebilirsiniz. Bunu yapmak için, `SetFieldNull` alanı null olarak işaretlemek üzere true parametresiyle çağırın; bu da sütunun güncelleştirilmesine neden olur. Bir alanın değeri değişmemiş olmasına rağmen veri kaynağına yazılmasını istiyorsanız, `SetFieldDirty` doğru parametresiyle çağırın. Bu, alanda null değeri olsa bile işe yarar.
 
-Çerçeve, veri kaynağındaki kayda DAO Kayıt alanı değişimi (DFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, genel olarak [SetFieldDirty](#setfielddirty) çağrısı yapmanız gerekir, ancak bazen, alan veri üyesinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz. DFX mekanizması **sözde null**kullanımını da kullanır. Daha fazla bilgi için bkz. [Cdadofieldexchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
+Çerçeve, veri kaynağındaki kayda DAO Kayıt alanı değişimi (DFX) mekanizması tarafından yazıldıklarından emin olmak için alan veri üyelerini işaretler. Bir alanın değerini değiştirmek genellikle alanı kirli olarak ayarlar. bu nedenle, genel olarak [SetFieldDirty](#setfielddirty) çağrısı yapmanız gerekir, ancak bazen, alan veri üyesinde hangi değerin olduğuna bakılmaksızın sütunların açıkça güncelleştirilmesini veya eklenmesini sağlamak isteyebilirsiniz. DFX mekanizması **sözde null** kullanımını da kullanır. Daha fazla bilgi için bkz. [Cdadofieldexchange:: m_nOperation](../../mfc/reference/cdaofieldexchange-class.md#m_noperation).
 
 Çift arabelleğe alma mekanizması kullanılmıyorsa, alanın değerini değiştirmek alanı otomatik olarak kirli olarak ayarlamamaktadır. Bu durumda, alanı kirli olarak ayarlamak gerekli olacaktır. [M_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields) bulunan bayrak, bu otomatik alan denetimini denetler.
 
@@ -678,7 +679,7 @@ virtual BOOL Find(
 - AFX_DAO_LAST eşleşen bir dizenin son konumunu bulur.
 
 *lpszFilter*<br/>
-Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ). Örneğin:
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE** yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ). Örneğin:
 
 [!code-cpp[NVC_MFCDatabase#3](../../mfc/codesnippet/cpp/cdaorecordset-class_3.cpp)]
 
@@ -708,7 +709,7 @@ BOOL FindFirst(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilter*<br/>
-Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE** yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -762,7 +763,7 @@ BOOL FindLast(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilter*<br/>
-Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE** yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -804,7 +805,7 @@ BOOL FindNext(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilter*<br/>
-Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE** yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -846,7 +847,7 @@ BOOL FindPrev(LPCTSTR lpszFilter);
 ### <a name="parameters"></a>Parametreler
 
 *lpszFilter*<br/>
-Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE**yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
+Kaydı bulmak için kullanılan bir dize ifadesi (WHERE yan tümcesi **WHERE** yan tümcesi olmadan bir SQL **deyiminde olduğu gibi** ).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1141,7 +1142,7 @@ Alanın adı.
 
 İşlevin bir sürümü bir alanı dizine göre arama yapmanızı sağlar. Diğer sürüm, bir alanı adına göre arama yapmanızı sağlar.
 
-Döndürülen bilgilerin açıklaması için bkz. [Cdadofielınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
+Döndürülen bilgilerin açıklaması için bkz. [Cdadofielınfo](../../mfc/reference/cdaofieldinfo-structure.md) yapısı. Bu yapının, *Dwinfooptions* açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
 
 İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
 
@@ -1248,7 +1249,7 @@ Ada göre arama için dizin nesnesinin adına yönelik bir işaretçi.
 
 İşlevin bir sürümü, koleksiyondaki konumuyla bir dizin araması yapmanızı sağlar. Diğer sürüm, dizin adına göre arama yapmanızı sağlar.
 
-Döndürülen bilgilerin açıklaması için, [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions*açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
+Döndürülen bilgilerin açıklaması için, [CDaoIndexInfo](../../mfc/reference/cdaoindexinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions* açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istediğinizde, önceki tüm düzeyler için de bilgi alırsınız.
 
 İlgili bilgiler için, DAO yardımı 'nda "öznitelikler özelliği" konusuna bakın.
 
@@ -1754,7 +1755,7 @@ Microsoft Jet veritabanı altyapısının ABD sürümünü kullanmıyor olsanız
 
 ## <a name="cdaorecordsetm_strsort"></a><a name="m_strsort"></a> CDaoRecordset:: m_strSort
 
-Ayrılmış kelimeleri **OrderBy**olmayan bir SQL deyimi **OrderBy** yan tümcesini içeren bir dize içerir.
+Ayrılmış kelimeleri **OrderBy** olmayan bir SQL deyimi **OrderBy** yan tümcesini içeren bir dize içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2111,9 +2112,9 @@ Eşleşen kayıtlar bulunursa sıfır değilse 0.
 
 `Seek` tablo türü kayıt kümelerinde yüksek performanslı Dizin aramayı mümkün. Çağrılmadan önce çağırarak geçerli dizini ayarlamanız gerekir `SetCurrentIndex` `Seek` . Dizin, benzersiz olmayan bir anahtar alanı veya alanı tanımlarsa, `Seek` ölçütlere uyan ilk kaydı bulur. Bir dizin ayarlanmamışsa, bir özel durum oluşturulur.
 
-UNICODE bir kayıt kümesi oluşturmadıysanız, `COleVariant` nesnelerin AÇıKÇA ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** *vtSrc* `VT_BSTRT`
+UNICODE bir kayıt kümesi oluşturmadıysanız, `COleVariant` nesnelerin AÇıKÇA ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [](../../mfc/reference/colevariant-class.md#setstring)      `VT_BSTRT`
 
-`Seek`' İ çağırdığınızda bir veya daha fazla anahtar değeri ve bir karşılaştırma işleci ("<", " \<=", "=", "> =" veya ">") geçirin. `Seek` Belirtilen anahtar alanlarını arar ve *lpszComparison* ve *pKey1*tarafından belirtilen ölçütlere uyan ilk kaydı bulur. Bulunduğunda, `Seek` sıfır dışında bir değer döndürür ve bu kaydı geçerli hale getirir. `Seek`Bir eşleşme bulamazsa, `Seek` sıfır döndürür ve geçerli kayıt tanımsızdır. Doğrudan DAO kullanırken NoMatch özelliğini açıkça denetlemeniz gerekir.
+`Seek`' İ çağırdığınızda bir veya daha fazla anahtar değeri ve bir karşılaştırma işleci ("<", " \<=", "=", "> =" veya ">") geçirin. `Seek` Belirtilen anahtar alanlarını arar ve *lpszComparison* ve *pKey1* tarafından belirtilen ölçütlere uyan ilk kaydı bulur. Bulunduğunda, `Seek` sıfır dışında bir değer döndürür ve bu kaydı geçerli hale getirir. `Seek`Bir eşleşme bulamazsa, `Seek` sıfır döndürür ve geçerli kayıt tanımsızdır. Doğrudan DAO kullanırken NoMatch özelliğini açıkça denetlemeniz gerekir.
 
 `lpszComparison`"=", ">=" veya ">" ise `Seek` dizinin başlangıcında başlar. *LpszComparison* "<" veya "<=" ise, `Seek` dizinin sonunda başlar ve sonunda yinelenen dizin girişleri olmadıkça geriye doğru arar. Bu durumda, `Seek` dizinin sonundaki yinelenen dizin girişleri arasında rastgele bir girdiyle başlar.
 
@@ -2174,7 +2175,7 @@ Bir kayıt kümesi nesnesi oluşturulduğunda veya açıldığında, kayıtları
 > [!NOTE]
 > [YenidenSorgula](#requery) ÇAĞRıSı, DAO yer imlerini değiştirir.
 
-UNICODE bir kayıt kümesi oluşturmadıysanız, `COleVariant` nesnenin AÇıKÇA ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** *vtSrc* `VT_BSTRT`
+UNICODE bir kayıt kümesi oluşturmadıysanız, `COleVariant` nesnenin AÇıKÇA ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [](../../mfc/reference/colevariant-class.md#setstring)      `VT_BSTRT`
 
 İlgili bilgiler için, DAO yardımı 'nda "yer Işareti özelliği" ve Bookmarkable özelliği "konularına bakın.
 
@@ -2222,7 +2223,7 @@ Microsoft Jet veritabanı altyapısı, önbellekten önbellek aralığı içinde
 
 Önbelleğe alınmış tüm verilerin güncelleştirilmesini zorlamak için, *lSize* parametresini `SetCacheSize` 0 olarak geçirin, `SetCacheSize` ilk olarak istediğiniz önbelleğin boyutuyla yeniden çağırın ve ardından `FillCache` üye işlevini çağırın.
 
-UNICODE bir kayıt kümesi oluşturmadıysanız, `COleVariant` nesnenin AÇıKÇA ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** *vtSrc* `VT_BSTRT`
+UNICODE bir kayıt kümesi oluşturmadıysanız, `COleVariant` nesnenin AÇıKÇA ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [](../../mfc/reference/colevariant-class.md#setstring)      `VT_BSTRT`
 
 İlgili bilgiler için, DAO yardımı 'nda CacheSize, CacheStart özellikleri "konusuna bakın.
 
@@ -2284,7 +2285,7 @@ Alanları değiştirilmemiş olarak işaretlemek alanın güncelleştirilmesini 
 
 yalnızca `outputColumn` ALANLARı null olarak ayarlar; **param** alanları etkilenmeyecektir.
 
-Bir **param**üzerinde çalışmak için, çalışmak istediğiniz bağımsız **param** 'ın gerçek adresini sağlamanız gerekir, örneğin:
+Bir **param** üzerinde çalışmak için, çalışmak istediğiniz bağımsız **param** 'ın gerçek adresini sağlamanız gerekir, örneğin:
 
 [!code-cpp[NVC_MFCDatabase#7](../../mfc/codesnippet/cpp/cdaorecordset-class_7.cpp)]
 
@@ -2371,7 +2372,7 @@ Alan içeriğinin değerini içeren bir dize işaretçisi.
 
 `SetFieldValue` [DoFieldExchange](#dofieldexchange) mekanizmasını kullanarak sütunları statik olarak bağlama yerine çalışma zamanında dinamik olarak bağlamak Için ve [GetFieldValue](#getfieldvalue) kullanın.
 
-UNICODE bir kayıt kümesi oluşturmadıysanız, bir parametre içermeyen bir form kullanmanız gerektiğini `SetFieldValue` `COleVariant` veya `COleVariant` nesne açıkça ANSI olarak bildirilmelidir. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** *vtSrc* `VT_BSTRT`
+UNICODE bir kayıt kümesi oluşturmadıysanız, bir parametre içermeyen bir form kullanmanız gerektiğini `SetFieldValue` `COleVariant` veya `COleVariant` nesne açıkça ANSI olarak bildirilmelidir. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [](../../mfc/reference/colevariant-class.md#setstring)      `VT_BSTRT`
 
 İlgili bilgiler için, DAO yardımı 'nda "alan nesnesi" ve "değer özelliği" konularına bakın.
 
@@ -2442,7 +2443,7 @@ virtual void SetParamValue(
 *nDizin*<br/>
 QueryDef 'in Parameters koleksiyonundaki parametrenin sayısal konumu.
 
-*var*<br/>
+*l*<br/>
 Ayarlanacak değer; bkz. açıklamalar.
 
 *lpszName*<br/>
@@ -2452,7 +2453,7 @@ Değerini ayarlamak istediğiniz parametrenin adı.
 
 Parametrenin, kayıt kümesinin SQL dizesinin parçası olarak zaten oluşturulmuş olması gerekir. Parametreye adına veya koleksiyondaki dizin konumuna göre erişebilirsiniz.
 
-Bir nesne olarak ayarlanacak değeri belirtin `COleVariant` . Nesneniz için istenen değeri ve türü ayarlama hakkında daha fazla bilgi için `COleVariant` bkz. sınıf [Cotavariant](../../mfc/reference/colevariant-class.md). UNICODE bir kayıt kümesi oluşturmadıysanız, `COleVariant` nesnenin AÇıKÇA ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [SetString](../../mfc/reference/colevariant-class.md#setstring)**(** *lpszSrc* **,** *vtSrc* **)** *vtSrc* `VT_BSTRT`
+Bir nesne olarak ayarlanacak değeri belirtin `COleVariant` . Nesneniz için istenen değeri ve türü ayarlama hakkında daha fazla bilgi için `COleVariant` bkz. sınıf [Cotavariant](../../mfc/reference/colevariant-class.md). UNICODE bir kayıt kümesi oluşturmadıysanız, `COleVariant` nesnenin AÇıKÇA ANSI olarak bildirilmesini gerektiğini unutmayın. Bu işlem, *vtSrc* , (ANSI) olarak ayarlanmış bir Oluşturucu [cotavariant:: copavariant](../../mfc/reference/colevariant-class.md#colevariant)**(** *lpszSrc* **,** *vtSrc* **)** formu kullanılarak `VT_BSTRT` veya `COleVariant` [](../../mfc/reference/colevariant-class.md#setstring)      `VT_BSTRT`
 
 ## <a name="cdaorecordsetsetparamvaluenull"></a><a name="setparamvaluenull"></a> CDaoRecordset:: SetParamValueNull
 

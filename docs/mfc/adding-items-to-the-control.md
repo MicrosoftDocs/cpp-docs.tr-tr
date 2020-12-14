@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetime öğe ekleme'
 title: Denetime Öğe Ekleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CListCtrl class [MFC], adding items
 ms.assetid: 715994bd-340d-4ad2-9882-411654137830
-ms.openlocfilehash: 5cc1c7a921cf6d6ba2c0f968012b48bfcaef0658
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 44a553564aa9a98806cd8e4d9551c9474421105f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623372"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249028"
 ---
 # <a name="adding-items-to-the-control"></a>Denetime Öğe Ekleme
 
@@ -21,7 +22,7 @@ Ek Üyeler öğenin metin, simge, durum ve öğe verilerini belirtir. "Öğe ver
 
 Diğer sürümleri, `InsertItem` yapıdaki üyelere karşılık gelen ve `LVITEM` yalnızca desteklemek istediğiniz üyeleri başlatmanıza olanak tanıyan bir veya daha fazla ayrı değer alır. Genellikle liste denetimi, liste öğeleri için depolamayı yönetir, ancak "geri çağırma öğeleri" ni kullanarak uygulamanızdaki bazı bilgileri de saklayabilirsiniz. Daha fazla bilgi için, bu konudaki [geri arama öğeleri ve](callback-items-and-the-callback-mask.md) geri çağırma maskesi ve Windows SDK geri [çağırma maskesini inceleyin](/windows/win32/Controls/using-list-view-controls) .
 
-Daha fazla bilgi için bkz. [liste ve alt öğeleri ekleme](/windows/win32/Controls/using-list-view-controls).
+Daha fazla bilgi için bkz. [List-View öğeleri ve](/windows/win32/Controls/using-list-view-controls)alt öğeleri ekleme.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_signed sınıfı'
 title: is_signed Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_signed class
 - is_signed
 ms.assetid: 20ae44d9-22ad-4fbd-b26a-f18c62689451
-ms.openlocfilehash: 153970412f324f070bb66ae4a1bb6a8c204a5886
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: fefdf5e178bfbb5d2d77220ba51e36b2574606ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457499"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247689"
 ---
-# <a name="issigned-class"></a>is_signed Sınıfı
+# <a name="is_signed-class"></a>is_signed Sınıfı
 
 Tür işaretli bir tamsayı ise test edin.
 
@@ -32,7 +33,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri, işaretli bir integral türü veya imzalı bir `cv-qualified` integral *türü ise true* , aksi takdirde false değerini tutar.
+Tür değeri, işaretli bir integral türü veya imzalı bir integral türü *ise true* , `cv-qualified` Aksi takdirde false değerini tutar.
 
 ## <a name="example"></a>Örnek
 
@@ -71,11 +72,11 @@ is_signed<float> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_unsigned Sınıfı](../standard-library/is-unsigned-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_unsigned sınıfı](../standard-library/is-unsigned-class.md)

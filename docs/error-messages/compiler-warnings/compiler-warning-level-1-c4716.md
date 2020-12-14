@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4716'
 title: Derleyici Uyarısı (düzey 1) C4716
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4716
 ms.assetid: d95ecfe5-870f-461f-a746-7913af98414b
-ms.openlocfilehash: 91e836c9bb606d7759206788d1e3abd63b293fa8
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3ea67c6220cfda97989e4ea095856082608aab0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175317"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249080"
 ---
 # <a name="compiler-warning-level-1-c4716"></a>Derleyici Uyarısı (düzey 1) C4716
 

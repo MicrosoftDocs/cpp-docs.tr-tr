@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: MFC projenize ATL desteği ekleme'
 title: MFC Projenize ATL Desteği Ekleme
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - MFC, ATL support
 - ATL, MFC projects
 ms.assetid: b5fe15d6-7752-4818-b9f9-62482ad35c95
-ms.openlocfilehash: 94303d1dfc7c06171def1224982f5e0aa5716ce4
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 1d02bd6e63a01334fcb9a907dc9ea4fe78ff4a48
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92924468"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248248"
 ---
 # <a name="adding-atl-support-to-your-mfc-project"></a>MFC Projenize ATL Desteği Ekleme
 
@@ -25,7 +26,7 @@ Zaten bir MFC tabanlı uygulama oluşturduysanız, IDE 'yi kullanarak etkin şab
 
 1. Çözüm Gezgini, proje düğümüne sağ tıklayın.
 
-1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Yeni öğe** ' ye tıklayın.
+1. Kısayol menüsünde, **Ekle**' ye ve ardından **Yeni öğe**' ye tıklayın.
 
 1. Sol bölmede **ATL** ' yi seçin ve ardından orta bölmedeki **atl desteği** ' ni seçin.
 
@@ -37,7 +38,7 @@ Zaten bir MFC tabanlı uygulama oluşturduysanız, IDE 'yi kullanarak etkin şab
 
 1. Çözüm Gezgini, proje düğümüne sağ tıklayın.
 
-1. Kısayol menüsünde, **Ekle** ' ye ve ardından **Sınıf Ekle** ' ye tıklayın.
+1. Kısayol menüsünde, **Ekle**' ye ve ardından **Sınıf Ekle**' ye tıklayın.
 
 1. Sol bölmede **ATL** ' yi seçin ve ardından orta bölmedeki **MFC projesine atl desteği ekle** ' yi seçin.
 

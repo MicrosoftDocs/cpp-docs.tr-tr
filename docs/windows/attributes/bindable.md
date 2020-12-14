@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlanabilir'
 title: bağlanabilir (C++ COM özniteliği)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-ms.openlocfilehash: 27f44259401a42dcef7e2add370d95091d10879d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2427becd3353488cc1b62347c04d7ed62e523352
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247494"
 ---
 # <a name="bindable"></a>bağlanabilir
 
@@ -27,9 +28,9 @@ ms.locfileid: "88838977"
 
 **Bağlanabilir** C++ özniteliği, [bağlanabilir](/windows/win32/Midl/bindable) MIDL özniteliğiyle aynı işlevselliğe sahiptir. Bunu [propget](propget.md), [propput](propput.md)veya [propputref](propputref.md) öznitelikleriyle tanımlanan özelliklerde kullanabilir ya da bağlanabilir bir yöntemi el ile tanımlayabilirsiniz.
 
-Aşağıdaki MFC örnekleri, **bağlanabilir**kullanımını gösterir:
+Aşağıdaki MFC örnekleri, **bağlanabilir** kullanımını gösterir:
 
-- [Denetimler örnekleri: MFC tabanlı ActiveX denetimleri](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
+- [Denetim örnekleri: MFC-Based ActiveX denetimleri](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
 - [CIRC örneği: ActiveX denetimi](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/controls)
 
@@ -63,7 +64,7 @@ __interface IPropDemo : IDispatch {
 | Öznitelik bağlamı | Değer |
 |-|-|
 |**Şunlara uygulanır**|Interface yöntemi|
-|**Tekrarlanabilir**|Hayır|
+|**Yinelenebilir**|Hayır|
 |**Gerekli öznitelikler**|Yok|
 |**Geçersiz öznitelikler**|Yok|
 

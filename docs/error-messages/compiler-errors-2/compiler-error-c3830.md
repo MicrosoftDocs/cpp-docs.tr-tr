@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3830'
 title: Derleyici hatası C3830
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3830
 ms.assetid: c9798f88-5001-4067-9fb1-09957ddc6fa8
-ms.openlocfilehash: 14272d2c0b0f8de63f55d2ba3d1c01cf04e0dfbd
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6d5dff2b45a79d3156533caf8020497f422d2474
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74741644"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249236"
 ---
 # <a name="compiler-error-c3830"></a>Derleyici hatası C3830
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: başvurular (C++)'
 title: Başvurular (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - references, declaring
 - referencing objects, declarator syntax
 ms.assetid: 68156f7f-97a0-4b66-b26d-b25ade5e3bd8
-ms.openlocfilehash: 8a771b8bfc067966c3c054700538ebf180a5eb23
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1f49e089d8992a32f30e1a384d5f0c36fa327c0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250055"
 ---
 # <a name="references-c"></a>Başvurular (C++)
 
@@ -52,7 +53,7 @@ Başvurular aşağıdaki sıra kullanılarak bildirilmiştir:
 
 Dizilere ve işlevlere işaretçiler için daha karmaşık bildirimci formları, dizilere ve işlevlere başvurular için de geçerlidir. Daha fazla bilgi için bkz. [işaretçiler](../cpp/pointers-cpp.md).
 
-Birden çok Bildirimciler ve başlatıcılar, tek bir bildirim belirticisini izleyen virgülle ayrılmış bir listede görünebilir. Örnek:
+Birden çok Bildirimciler ve başlatıcılar, tek bir bildirim belirticisini izleyen virgülle ayrılmış bir listede görünebilir. Örneğin:
 
 ```cpp
 int &i;

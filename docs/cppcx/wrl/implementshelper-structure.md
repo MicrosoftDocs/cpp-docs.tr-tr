@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. yapı başına uygutshel
 title: ImplementsHelper Yapısı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -15,18 +16,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ImplementsHelper::FillArrayWithIid method
 - Microsoft::WRL::Details::ImplementsHelper::IidCount constant
 ms.assetid: b857ba80-81bd-4e53-92b6-210991954243
-ms.openlocfilehash: d7908670b67df7dbf7b2b74e98f8b59cf30f8e96
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 142cc532a89758c35c3387c398311acd077b8385
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87184949"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249821"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper Yapısı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <typename RuntimeClassFlagsT, typename ILst, bool IsDelegateToClass>
@@ -42,7 +43,7 @@ Bir veya daha fazla [RuntimeClassType](runtimeclasstype-enumeration.md) numarala
 Arabirim kimliklerinin listesi.
 
 *IsDelegateToClass*<br/>
-**`true`** Geçerli örneğinin `Implements` *ILst*içindeki ilk arabirim kimliğine ait bir temel sınıf olup olmadığını belirtin; Aksi takdirde, **`false`** .
+**`true`** Geçerli örneğinin `Implements` *ILst* içindeki ilk arabirim kimliğine ait bir temel sınıf olup olmadığını belirtin; Aksi takdirde, **`false`** .
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -71,7 +72,7 @@ Ad                                                    | Açıklama
 
 **Ad alanı:** Microsoft:: WRL::D euçlar
 
-## <a name="implementshelpercancastto"></a><a name="cancastto"></a>ImplementsHelper:: Canroto
+## <a name="implementshelpercancastto"></a><a name="cancastto"></a> ImplementsHelper:: Canroto
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -93,7 +94,7 @@ HRESULT CanCastTo(
 Arabirim KIMLIĞINE başvuru.
 
 *PPV*<br/>
-Bu işlem başarılı olursa, *riıd* veya *IID*tarafından belirtilen arabirime yönelik bir işaretçi.
+Bu işlem başarılı olursa, *riıd* veya *IID* tarafından belirtilen arabirime yönelik bir işaretçi.
 
 *'si*<br/>
 Arabirim KIMLIĞINE başvuru.
@@ -106,7 +107,7 @@ Başarılı olursa S_OK; Aksi takdirde, hatayı gösteren bir HRESULT.
 
 Belirtilen arabirim KIMLIĞINE bir işaretçi alır.
 
-## <a name="implementshelpercasttounknown"></a><a name="casttounknown"></a>ImplementsHelper:: Rotounknown
+## <a name="implementshelpercasttounknown"></a><a name="casttounknown"></a> ImplementsHelper:: Rotounknown
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -122,7 +123,7 @@ Temel alınan arabirime yönelik işaretçi `IUnknown` .
 
 Geçerli yapı için temel alınan arabirime yönelik bir işaretçi alır `IUnknown` `Implements` .
 
-## <a name="implementshelperfillarraywithiid"></a><a name="fillarraywithiid"></a>ImplementsHelper:: Fillarraywithııd
+## <a name="implementshelperfillarraywithiid"></a><a name="fillarraywithiid"></a> ImplementsHelper:: Fillarraywithııd
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
@@ -144,7 +145,7 @@ IIDS türünde bir dizi.
 
 Belirtilen dizi öğesine geçerli bir diğer şablon parametresi tarafından belirtilen arabirim KIMLIĞINI ekler.
 
-## <a name="implementshelperiidcount"></a><a name="iidcount"></a>ImplementsHelper:: ııdcount
+## <a name="implementshelperiidcount"></a><a name="iidcount"></a> ImplementsHelper:: ııdcount
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 

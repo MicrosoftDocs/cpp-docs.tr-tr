@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: standart Windows Iletileri için Işleyiciler'
 title: Standart Windows İletileri İşleyicileri
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - functions [MFC], handler
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
-ms.openlocfilehash: d967341cdb0197f1157ab9d253072f3d0d7aa46f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 161e4d85e702972ee178e2fe82aa2371f0560068
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248937"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>Standart Windows İletileri İşleyicileri
 
@@ -32,11 +33,11 @@ Bazı durumlarda işleyiciniz temel sınıfta geçersiz kılınan işleyiciyi ç
 > [!CAUTION]
 > Bir temel sınıf işleyicisine geçirmek istiyorsanız, bir işleyiciye geçirilen bağımsız değişkenlerin değiştirilmesi güvenli değildir. Örneğin, işleyicinin *nchar* bağımsız değişkenini `OnChar` (örneğin, büyük harfe dönüştürülecek şekilde) değiştirmeyi düşünebilirsiniz. Bu davranış oldukça gizdir, ancak bu etkiyi gerçekleştirmeniz gerekiyorsa, `CWnd` bunun yerine Member işlevini kullanın `SendMessage` .
 
-[Sınıf Sihirbazı](reference/mfc-class-wizard.md) belirli bir ileti için işleyici işlevinin iskelet 'i (WM_CREATE için bir işleyici) yazdığında, belirli bir iletiyi geçersiz kılmak için uygun şekilde nasıl belirlenir `OnCreate` , örneğin, önerilen **WM_CREATE**geçersiz kılınan üye işlev biçiminde bir taslak oluşturur. Aşağıdaki örnek, işleyicinin temel sınıf işleyicisini ilk kez çağırmasını ve yalnızca-1 döndürmediğinden önce devam etmesini önerir.
+[Sınıf Sihirbazı](reference/mfc-class-wizard.md) belirli bir ileti için işleyici işlevinin iskelet 'i (WM_CREATE için bir işleyici) yazdığında, belirli bir iletiyi geçersiz kılmak için uygun şekilde nasıl belirlenir `OnCreate` , örneğin, önerilen geçersiz kılınan üye işlev biçiminde bir taslak oluşturur. Aşağıdaki örnek, işleyicinin temel sınıf işleyicisini ilk kez çağırmasını ve yalnızca-1 döndürmediğinden önce devam etmesini önerir.
 
 [!code-cpp[NVC_MFCMessageHandling#3](codesnippet/cpp/handlers-for-standard-windows-messages_1.cpp)]
 
-Kurala göre, bu işleyicilerin adları "açık" önekiyle başlar. Bu işleyicilerden bazıları bağımsız değişken almaz, diğerleri birkaç işlem sürer. Bazıları dışında bir dönüş türüne de sahiptir **`void`** . Tüm **WM_** iletiler için varsayılan Işleyiciler *MFC başvurusunda* `CWnd` adı "on" ile başlayan sınıfın üye işlevleri olarak belgelenmiştir. İçindeki üye işlev bildirimlerine `CWnd` **afx_msg**ön eki eklenir.
+Kurala göre, bu işleyicilerin adları "açık" önekiyle başlar. Bu işleyicilerden bazıları bağımsız değişken almaz, diğerleri birkaç işlem sürer. Bazıları dışında bir dönüş türüne de sahiptir **`void`** . Tüm **WM_** iletiler için varsayılan Işleyiciler *MFC başvurusunda* `CWnd` adı "on" ile başlayan sınıfın üye işlevleri olarak belgelenmiştir. İçindeki üye işlev bildirimlerine `CWnd` **afx_msg** ön eki eklenir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

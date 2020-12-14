@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: InterfaceListHelper yapısı'
 title: InterfaceListHelper Yapısı
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - InterfaceListHelper structure
 ms.assetid: 4297e419-c96b-45df-8a00-7568062125ba
-ms.openlocfilehash: 1a7b4c19bbcdd4161e9078274f18f96a48f9e7d7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ca9e13e66acb6f27fba76a7653388305c57146dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249808"
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper Yapısı
 
@@ -73,9 +74,9 @@ Varsayılan olarak belirtilmemiş olan şablon parametresi 9.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtilen şablon parametresi bağımsız değişkenlerini yinelemeli olarak uygulayarak bir `InterfaceList` türü oluşturur.
+`InterfaceList`Belirtilen şablon parametresi bağımsız değişkenlerini yinelemeli olarak uygulayarak bir tür oluşturur.
 
-**InterfaceListHelper** şablonu, bir `InterfaceList` yapısındaki ilk veri üyesini tanımlamak için *T0* şablon parametresini kullanır ve ardından, geri kalan tüm şablon parametrelerine **InterfaceListHelper** şablonunu yinelemeli olarak uygular. **InterfaceListHelper** , kalan şablon parametreleri olmadığında durduruluyor.
+**InterfaceListHelper** Template, bir yapıdaki ilk veri üyesini tanımlamak için *T0* şablon parametresini kullanır `InterfaceList` ve ardından, yeniden kalan tüm şablon parametrelerine **InterfaceListHelper** şablonunu yinelemeli olarak uygular. **InterfaceListHelper** , kalan şablon parametreleri olmadığında durduruluyor.
 
 ## <a name="members"></a>Üyeler
 
@@ -97,4 +98,4 @@ Belirtilen şablon parametresi bağımsız değişkenlerini yinelemeli olarak uy
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)
