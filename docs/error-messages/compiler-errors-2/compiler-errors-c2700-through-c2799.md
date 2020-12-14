@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C2700 Ile derleyici hataları C2799'
 title: C2700 ile C2799 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - C2796
 - C2799
 ms.assetid: 6ee257bb-94bc-42b9-af2c-3c73926afba4
-ms.openlocfilehash: 174f6a9c8ec9e44deadfca090ba492cb32d53e9f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9093c7cbdc884b23bef77fb8206a80e081dc4f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87197520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238862"
 ---
 # <a name="compiler-errors-c2700-through-c2799"></a>C2700 ile C2799 arasındaki derleyici hataları
 
@@ -71,7 +72,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |[Derleyici hatası C2711](compiler-error-c2711.md)|'*Function*': Bu işlev yönetilen olarak derlenemiyor, #pragma yönetilmeyen kullanmayı düşünün|
 |[Derleyici hatası C2712](compiler-error-c2712.md)|Nesne geriye doğru izleme gerektiren işlevlerde __try kullanılamaz|
 |[Derleyici hatası C2713](compiler-error-c2713.md)|Her işlevde yalnızca bir özel durum işleme izni verilir|
-|[Derleyici hatası C2714](compiler-error-c2714.md)| `alignof(void)`izin verilmiyor|
+|[Derleyici hatası C2714](compiler-error-c2714.md)| `alignof(void)` izin verilmiyor|
 |[Derleyici hatası C2715](compiler-error-c2715.md)|'*Type*': Bu tür throw veya catch yapılamaz|
 |Derleyici hatası C2716|Kullanımdan kalktı.|
 |Derleyici hatası C2717|Kullanımdan kalktı.|

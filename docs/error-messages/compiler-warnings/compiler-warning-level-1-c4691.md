@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4691'
 title: Derleyici Uyarısı (düzey 1) C4691
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4691
 ms.assetid: 722133d9-87f6-46c1-9e86-9825453d6999
-ms.openlocfilehash: 6a4d1de621983794acfae4de7707ba127df9a1b7
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 3235b32a071e6b6a2a0afab122978f9fcb7e112a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685573"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238277"
 ---
 # <a name="compiler-warning-level-1-c4691"></a>Derleyici Uyarısı (düzey 1) C4691
 
@@ -19,7 +20,7 @@ ms.locfileid: "90685573"
 
 Özgün tür tanımını içeren meta veri dosyasına başvurulmuyor ve derleyici yerel bir tür tanımı kullanıyor.
 
-*Dosyayı*yeniden oluşturduğunuz durumda, C4691, pragma [Warning](../../preprocessor/warning.md)ile yoksayılabilir veya kapatılabilir.  Diğer bir deyişle, oluşturmakta olduğunuz dosya derleyicinin tür tanımını bulmayı beklediği dosyayla aynıysa, C4691 'yi yoksayabilirsiniz.
+*Dosyayı* yeniden oluşturduğunuz durumda, C4691, pragma [Warning](../../preprocessor/warning.md)ile yoksayılabilir veya kapatılabilir.  Diğer bir deyişle, oluşturmakta olduğunuz dosya derleyicinin tür tanımını bulmayı beklediği dosyayla aynıysa, C4691 'yi yoksayabilirsiniz.
 
 Ancak, derleyici meta verilerde başvurulan derlemeden aynı derlemeden olmayan bir tanım kullanıyorsa beklenmeyen bir davranış meydana gelebilir; CLR türleri yalnızca türün adı ile değil, derleme tarafından da yazılır.  Diğer bir deyişle, bütünleştirilmiş koddan Z türü z.dll, derleme y.dll tür Z 'den farklıdır.
 

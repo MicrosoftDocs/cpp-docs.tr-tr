@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3224'
 title: Derleyici hatası C3224
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3224
 ms.assetid: 129be22f-8f3e-4fc6-9ccd-d27d8ef91251
-ms.openlocfilehash: 23a83a90c5583a427ffae9a7e69e531981ddd7cc
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c6495a4bdd51115e679d0c9bd68bd370e3aebfd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239304"
 ---
 # <a name="compiler-error-c3224"></a>Derleyici hatası C3224
 

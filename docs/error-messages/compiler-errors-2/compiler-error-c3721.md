@@ -1,22 +1,23 @@
 ---
-title: Derleyici Hatası C3721
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3721'
+title: Derleyici hatası C3721
 ms.date: 11/04/2016
 f1_keywords:
 - C3721
 helpviewer_keywords:
 - C3721
 ms.assetid: c696ca38-3e00-4875-abbe-7bce0f46930e
-ms.openlocfilehash: 429781b21adb3e655b7d17a23f825bcb13d5d8d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c2a28a3f0e231f4289f0bf656fe38058b6da5ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239044"
 ---
-# <a name="compiler-error-c3721"></a>Derleyici Hatası C3721
+# <a name="compiler-error-c3721"></a>Derleyici hatası C3721
 
-'imza': olay için uyumsuz imza
+' Signature ': olay için uyumsuz imza
 
-Bir olayı yanlış bildirildi. Daha fazla bilgi için [__event](../../cpp/event.md).
+Bir olay yanlış bildirildi. Daha fazla bilgi için bkz. [__event](../../cpp/event.md).
 
-C3721 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.
+C3721 yalnızca eski derleyici seçeneği **/clr: oldSyntax** kullanılarak erişilebilir.

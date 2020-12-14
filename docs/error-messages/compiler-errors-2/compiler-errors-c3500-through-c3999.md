@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C3500 ile derleyici hataları C3999'
 title: C3500 ile C3999 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
@@ -246,12 +247,12 @@ f1_keywords:
 - C3998
 - C3999
 ms.assetid: bd6f23ad-b300-4e07-8e35-9661cab1585f
-ms.openlocfilehash: eddadeeeb014c6b64376554f7ff025a06e8935c9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: bf0075e9064b7e03c0b733119300ee90d77884fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79446944"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238576"
 ---
 # <a name="compiler-errors-c3500-through-c3999"></a>C3500 ile C3999 arasındaki derleyici hataları
 
@@ -266,7 +267,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |[Derleyici hatası C3500](compiler-error-c3500.md)|Geçersiz ProgID '*ProgID*'|
 |[Derleyici hatası C3501](compiler-error-c3501.md)|ProgID '*ProgID*' için kayıtlı bir tür kitaplığı yok|
 |Derleyici hatası C3502|ProgID '*ProgID*' IÇIN libıd alınamıyor|
-|Derleyici hatası C3503|' 0x*Value*' karakterine ham dize sabit değerinde izin verilmez|
+|Derleyici hatası C3503|' 0x *Value*' karakterine ham dize sabit değerinde izin verilmez|
 |Derleyici hatası C3504|'*String*' dizesinden GUID oluşturulamıyor|
 |[Derleyici hatası C3505](compiler-error-c3505.md)|'*Library*' tür kitaplığı yüklenemiyor|
 |[Derleyici hatası C3506](compiler-error-c3506.md)|LIBıD '*Library*' için kayıtlı bir tür kitaplığı yok|
@@ -337,8 +338,8 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |Derleyici hatası C3571|'*Type*': geçersiz hesaplama etki alanı bağımsız değişkeni; sınıf türü değil|
 |Derleyici hatası C3572|'*Type*': geçersiz hesaplama etki alanı bağımsız değişkeni; ortak üye eksik: ' static const int Rank ' veya Rank değeri pozitif değil|
 |Derleyici hatası C3573|Eşzamanlılık::p arallel_for_each için geçirilen concurrency:: Graphics:: örnekleyici örneklerinin sayısı *sayıyı* aşamaz|
-|Derleyici hatası C3574|'*Type*': geçersiz kutucuk kapsamları: pozitif olmalı ve (1) Z < = *sayı*; (2) Z*Y*X < = *sayı*|
-|Derleyici hatası C3575|'*Type*': geçersiz hesaplama etki alanı bağımsız değişkeni; eksik ortak üye: ' eşzamanlılık:: Dizin <*numarası*> _map_index (const concurrency:: index <*Number*> &) restrict (amp) '|
+|Derleyici hatası C3574|'*Type*': geçersiz kutucuk kapsamları: pozitif olmalı ve (1) Z <= *sayı*; (2) Z *Y* X <= *sayı*|
+|Derleyici hatası C3575|'*Type*': geçersiz hesaplama etki alanı bağımsız değişkeni; eksik ortak üye: ' eşzamanlılık:: Dizin<*numarası*> _map_index (const concurrency:: index<*sayı*>&) restrict (amp) '|
 |Derleyici hatası C3576|'*Type*': concurrency::d euçlar:: _Parallel_for_each bağımsız değişkeni #*Number* desteklenmeyen türe sahip|
 |Derleyici hatası C3577|Eşzamanlılık::p arallel_for_each çekirdek bağımsız değişkeni geçersiz: ' void operator () (*tür*) restrict (amp) ' üyesine yapılan çağrı çözümlenemiyor|
 |Derleyici hatası C3578|Eşzamanlılık::p arallel_for_each geçirilen işlev nesnesinin boyutu *sayı* baytı aşamaz|
@@ -363,12 +364,12 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |Derleyici hatası C3597|Lambda amp kısıtlamalı ise, '*Parameter*': '*Identifier*' değerinin değere göre yakalanmasına izin verilmez|
 |Derleyici hatası C3598|amp kısıtlı kodunda etiket açıklaması desteklenmiyor|
 |Derleyici hatası C3599|'*operator*': amp kısıtlı kodunda bool 'a işaretçi aritmetik işlemi yapılamaz|
-|Derleyici hatası C3600|'*Function*': kutucuk kullanımı, döşeme olmayan eşzamanlılık::p arallel\_for_each: '*Function*' için çağrı grafı derlenirken algılanan statik bellek\_.|
+|Derleyici hatası C3600|'*Function*': döşeme \_ olmayan eşzamanlılık::p arallel for_each için çağrı grafı derlenirken kutucuk statik bellek kullanımı algılandı \_ : '*Function*'|
 |Derleyici hatası C3601|'*Type*': amp tanılama işlevi '*Function*' için geçersiz bağımsız değişken türü|
 |Derleyici hatası C3602|Şu konumda concurrency::p arallel_for_each için çağrı grafı derlenirken desteklenmeyen denetim akışı algılandı: '*Function*'|
 |[Derleyici hatası C3603](compiler-error-c3603.md)|'*symbol*': tür '*Type*' henüz desteklenmiyor|
 |Derleyici hatası C3604|'*tanımlayıcı*': GC yığınında yalnızca yönetilen bir nesne oluşturulabilir|
-|Derleyici hatası C3605|'*Function*' konumundaki concurrency::p arallel_for_each için çağrı grafı derlenirken toplam örnekleyici*sayısı (yakalanan sayı ve* *önceden tanımlanmış numara)* *sayıyı* aşıyor.|
+|Derleyici hatası C3605|'*Function*' konumundaki concurrency::p arallel_for_each için çağrı grafı derlenirken toplam örnekleyici *sayısı (yakalanan sayı ve* *önceden tanımlanmış numara)* *sayıyı* aşıyor.|
 |Derleyici hatası C3606|Kullanımdan kalktı.|
 |Derleyici hatası C3607|Kullanımdan kalktı.|
 |Derleyici hatası C3608|Kullanımdan kalktı.|
@@ -481,13 +482,13 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |[Derleyici hatası C3715](compiler-error-c3715.md)|'*pointer*': bir '*Type*' işaretçisi olmalıdır|
 |Derleyici hatası C3716|Kullanımdan kalktı.|
 |[Derleyici hatası C3717](compiler-error-c3717.md)|'*üye*': olayları harekete uygulayan bir yöntem tanımlanamaz|
-|[Derleyici hatası C3718](compiler-error-c3718.md)|' __*anahtar sözcüğü*' yalnızca alıcı sınıfın bir üye işlevinin bağlamında çağrılabilir|
+|[Derleyici hatası C3718](compiler-error-c3718.md)|' __ *anahtar sözcüğü*' yalnızca alıcı sınıfın bir üye işlevinin bağlamında çağrılabilir|
 |[Derleyici hatası C3719](compiler-error-c3719.md)|'*üye*': arabirim tabanlı bir olay kaynağı yalnızca com olayları için kullanılabilir|
 |Derleyici hatası C3720|'*Type*': IDispatch yalnızca bir Dual veya dispınterface üzerinde uygulanabilir|
 |[Derleyici hatası C3721](compiler-error-c3721.md)|'*Signature*': olay için uyumsuz imza|
 |[Derleyici hatası C3722](compiler-error-c3722.md)|genel bir olaya izin verilmez|
 |[Derleyici hatası C3723](compiler-error-c3723.md)|'*Function*': olay çözümlenemedi|
-|[Derleyici hatası C3724](compiler-error-c3724.md)|olaylarla çoklu iş parçacığı kullanmak için \<Windows. h > #include gerekir|
+|[Derleyici hatası C3724](compiler-error-c3724.md)|\<windows.h>olaylarla çoklu iş parçacığı kullanmak için #include gerekir|
 |Derleyici hatası C3725|Kullanımdan kalktı.|
 |Derleyici hatası C3726|Kullanımdan kalktı.|
 |[Derleyici hatası C3727](compiler-error-c3727.md)|'*Event*': yönetilen bir olay, bir temsilci işaretçisi olan bir üye işlev veya bir veri üyesi olmalıdır|
@@ -502,9 +503,9 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |[Derleyici hatası C3736](compiler-error-c3736.md)|'*member*': bir yöntem veya yönetilen olaylar söz konusu olduğunda, isteğe bağlı olarak bir veri üyesi olmalıdır|
 |[Derleyici hatası C3737](compiler-error-c3737.md)|'*tanımlayıcı*': bir temsilcinin açık bir çağırma kuralı olmayabilir|
 |[Derleyici hatası C3738](compiler-error-c3738.md)|'*kural*': açık örnek oluşturmanın çağırma kuralı, örneği oluşturulan şablonla eşleşmelidir|
-|[Derleyici hatası C3739](compiler-error-c3739.md)|'*Class*': söz dizimi yalnızca event_receiver ' Layout\_Dependent ' parametresi true olduğunda desteklenir|
+|[Derleyici hatası C3739](compiler-error-c3739.md)|'*Class*': sözdizimi yalnızca event_receiver ' Layout \_ Dependent ' parametresi true olduğunda desteklenir|
 |[Derleyici hatası C3740](compiler-error-c3740.md)|'*şablon*': Şablonlar olay kaynağına veya alamaz|
-|[Derleyici hatası C3741](compiler-error-c3741.md)|'*Class*': ' Layout\_dependent ' event_receiver parametresi true olduğunda bir coclass olmalıdır|
+|[Derleyici hatası C3741](compiler-error-c3741.md)|'*Class*': event_receiver ' Layout \_ Dependent ' parametresi true olduğunda bir coclass olmalıdır|
 |Derleyici hatası C3742|'*token1*': '*Attribute*' öznitelik bağımsız değişkeninde dengesiz belirteç sırası, '*token2*' bekleniyor|
 |[Derleyici hatası C3743](compiler-error-c3743.md)|event_receiver ' layout_dependent ' parametresi true olduğunda, yalnızca bir arabirimin tamamını geri alabilir/kaldırır|
 |[Derleyici hatası C3744](compiler-error-c3744.md)|__unhook yönetilen olaylar için en az 3 bağımsız değişkene sahip olmalıdır|
@@ -622,7 +623,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |[Derleyici hatası C3856](compiler-error-c3856.md)|'*Class*': sınıf bir sınıf şablonu/genel değil|
 |[Derleyici hatası C3857](compiler-error-c3857.md)|'*Template*': birden fazla şablona/genel parametre listesine izin verilmiyor|
 |[Derleyici hatası C3858](compiler-error-c3858.md)|'*tanımlayıcı*': geçerli kapsamda yeniden bildirilemez|
-|[Derleyici hatası C3859](compiler-error-c3859.md)|PCH için sanal bellek aralığı aşıldı; Lütfen '-ZM*Number*' veya daha büyük bir komut satırı seçeneği ile yeniden derleyin|
+|[Derleyici hatası C3859](compiler-error-c3859.md)|PCH için sanal bellek aralığı aşıldı; Lütfen '-ZM *Number*' veya daha büyük bir komut satırı seçeneği ile yeniden derleyin|
 |[Derleyici hatası C3860](compiler-error-c3860.md)|şablon/genel bağımsız değişken listesi aşağıdaki sınıf şablonu/genel ad, parametreleri şablon/genel parametre listesinde kullanılan sırada listemelidir|
 |[Derleyici hatası C3861](compiler-error-c3861.md)|'*tanımlayıcı*': tanımlayıcı bulunamadı|
 |[Derleyici hatası C3862](compiler-error-c3862.md)|'*Function*': yönetilmeyen bir işlev/clr: pure veya/clr: Safe ile derlenemez|
@@ -635,8 +636,8 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |[Derleyici hatası C3869](compiler-error-c3869.md)|gcnew kısıtlamasında boş parametre listesi ' () ' eksik|
 |Derleyici hatası C3870|'*Parameter*': ' __declspec (*belirtici*) ' yalnızca integral türündeki parametrelere uygulanabilir|
 |Derleyici hatası C3871|'*Parameter*': ' __declspec (Guard (overflow)) ' yalnızca bir işlevin ilk 64 parametresinde desteklenir|
-|[Derleyici hatası C3872](compiler-error-c3872.md)|' 0x*Value*': bu karaktere bir tanımlayıcıda izin verilmiyor|
-|[Derleyici hatası C3873](compiler-error-c3873.md)|' 0x*Value*': bu karaktere bir tanımlayıcının ilk karakteri olarak izin verilmiyor|
+|[Derleyici hatası C3872](compiler-error-c3872.md)|' 0x *Value*': bu karaktere bir tanımlayıcıda izin verilmiyor|
+|[Derleyici hatası C3873](compiler-error-c3873.md)|' 0x *Value*': bu karaktere bir tanımlayıcının ilk karakteri olarak izin verilmiyor|
 |[Derleyici hatası C3874](compiler-error-c3874.md)|'*Identifier*' dönüş türü, '*type2*' yerine '*Type1*' olmalıdır|
 |Derleyici hatası C3875|bağımsız değişken listesinde statik olmayan üye işlevi çağrısı yok|
 |Derleyici hatası C3876|Kullanımdan kalktı.|
@@ -651,7 +652,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |Derleyici hatası C3885|'*Type*': boyutu bilinmeyen bir dizi, boş bir başlatıcı listesiyle başlatılamaz|
 |[Derleyici hatası C3886](compiler-error-c3886.md)|'*üye*': sabit değerli bir veri üyesinin başlatılması gerekir|
 |[Derleyici hatası C3887](compiler-error-c3887.md)|'*üye*': sabit değerli bir veri üyesinin başlatıcısı sabit bir ifade olmalıdır|
-|[Derleyici hatası C3888](compiler-error-c3888.md)|'*üye*': Bu sabit değerli veri üyesiyle ilişkili const ifadesi/CLI tarafından C++desteklenmiyor|
+|[Derleyici hatası C3888](compiler-error-c3888.md)|'*üye*': Bu sabit değerli veri üyesiyle ilişkili const ifadesi C++/CLI tarafından desteklenmiyor|
 |Derleyici hatası C3889|Kullanımdan kalktı.|
 |[Derleyici hatası C3890](compiler-error-c3890.md)|'*üye*': sabit değerli bir veri üyesinin adresini alamaz|
 |[Derleyici hatası C3891](compiler-error-c3891.md)|'*üye*': sabit değerli bir veri üyesi bir l-değeri olarak kullanılamaz|
@@ -687,7 +688,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |Derleyici hatası C3921|Kullanımdan kalktı.|
 |Derleyici hatası C3922|Kullanımdan kalktı.|
 |[Derleyici hatası C3923](compiler-error-c3923.md)|'*member*': yönetilen/WinRT sınıfının üye işlevinde yerel sınıf, yapı veya birleşim tanımlarına izin verilmez|
-|Derleyici hatası C3924|bağımsız değişkende hata # '*constructor*' temsilci Oluşturucu çağrısının*numarası* .|
+|Derleyici hatası C3924|bağımsız değişkende hata # '*constructor*' temsilci Oluşturucu çağrısının *numarası* .|
 |Derleyici hatası C3925|'*Directive*' yönergesinden sonra döngü (for, while veya do) bekleniyor|
 |Derleyici hatası C3926|' Parallel ' yönergesinde geçersiz sabit|
 |Derleyici hatası C3927|'-> ': işlev olmayan bildirimciden sonra bitiş dönüş türüne izin verilmez|
@@ -703,7 +704,7 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |Derleyici hatası C3937|boş kısıtlama belirticisine izin verilmiyor|
 |Derleyici hatası C3938|'*tanımlayıcı*': dış \ 042C\042 işlevlerinde çoklu kısıtlama belirticileri desteklenmez|
 |Derleyici hatası C3939|'*tanımlayıcı*': üye işlevlere yönelik işaretçilere, işlev işaretçilerine, ' amp ' kısıtlama tanımlayıcısına sahip işlevlere yönelik başvurulara izin verilmez|
-|Derleyici hatası C3940|'*tanımlayıcı*': tanımlayıcı bulunamadı-derleyici ve kitaplık sürümleri arasında uyumsuzluk olabilir. Lütfen vccorlib. h/. lib, vccorlib120. dll ve c1xx. dll eşleştiğinden emin olun|
+|Derleyici hatası C3940|'*tanımlayıcı*': tanımlayıcı bulunamadı-derleyici ve kitaplık sürümleri arasında uyumsuzluk olabilir. Lütfen vccorlib. h/. lib, vccorlib120.dll ve c1xx.dll eşleştiğinden emin olun|
 |Derleyici hatası C3941|'*koşul*': '/CLR ' komut satırı seçeneğini gerektirir|
 |Derleyici hatası C3942|Kullanımdan kalktı.|
 |Derleyici hatası C3943|Kullanımdan kalktı.|
@@ -715,10 +716,10 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |Derleyici hatası C3949|bir paket genişletmesi, '... ', parantez içine alınmış soyut bildirimci içinde yer alamaz|
 |Derleyici hatası C3950|Kullanımdan kalktı.|
 |Derleyici hatası C3951|'*Type*' öngörülen WinRT türünde üye işaretçisi kullanılamaz. Bunun yerine bir temsilci kullanın.|
-|Derleyici hatası C3952|'*Type*': WinRT ' ın/out ' dizilerini desteklemez. Ortak API 'lerde ' in ' ve ' WriteOnlyArray\<T > ' veya ' Array\<T > ^ * ' için ' const dizi\<T > ^ ' kullanın|
+|Derleyici hatası C3952|'*Type*': WinRT ' ın/out ' dizilerini desteklemez. \<T>Ortak API 'lerde ' in ' ve ' WriteOnlyArray ' için ' const Array ^ ' ve ' \<T> \<T> Out ' için ' Array ^ * ' kullanın|
 |Derleyici hatası C3953|'*Type*' yönetilen sınıfı WinRT modülü içinde kullanılamaz.|
-|Derleyici hatası C3954|'*Type*': bir WinRT türündeki bir yayımlanmış yöntemden döndürülen dizi ' Array\<t > ^ ' biçimini kullanmalıdır|
-|Derleyici hatası C3955|'*Type*': ortak bir Oluşturucu ' Out ' parametresi veya ' WriteOnlyArray\<t > ' içeremez|
+|Derleyici hatası C3954|'*Type*': bir WinRT türündeki bir yayımlanmış yöntemden döndürülen dizi ' array \<T> ^ ' biçimini kullanmalıdır|
+|Derleyici hatası C3955|'*Type*': ortak bir Oluşturucu ' Out ' parametresi veya ' WriteOnlyArray \<T> ' içeremez|
 |Derleyici hatası C3956|'*Type*': tür '*Type*' için özel olarak işaretlendi ve '*derived_type*' tabanı olarak kullanılamaz|
 |Derleyici hatası C3957|'*Type*': bir WinRT türü üzerinde ' New ' kullanılamaz; Bunun yerine ' ref New ' kullanın|
 |Derleyici hatası C3958|'*Type*': bir WinRT türü üzerinde ' gcnew ' kullanılamaz; Bunun yerine ' ref New ' kullanın|
@@ -760,10 +761,10 @@ Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata il
 |Derleyici hatası C3994|'*Type*': bir değer türü arabirimler uygulayamaz veya sanal işlevlere sahip olamaz|
 |Derleyici hatası C3995|'*Type*': bir değer türünün hiçbir olay üyesi '*tanımlayıcısı*' olamaz|
 |Derleyici hatası C3996|Kullanımdan kalktı.|
-|Derleyici hatası C3998|' c++*sürümü*': desteklenmeyen C++ sürüm; ' c++*Version*' olarak ayarlanıyor|
-|Derleyici hatası C3999|BILINMEYEN hata lütfen görsel C++ Yardım menüsünde Teknik destek komutunu seçin veya daha fazla bilgi Için Teknik destek yardım dosyasını açın|
+|Derleyici hatası C3998|' c++*sürümü*': desteklenmeyen c++ sürümü; ' c++*Version*' olarak ayarlanıyor|
+|Derleyici hatası C3999|BILINMEYEN hata lütfen Visual C++ Yardım menüsünde Teknik destek komutunu seçin veya daha fazla bilgi için teknik destek yardım dosyasını açın|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ derleyici ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
-[Derleyici hataları C2000-C3999](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[C/C++ derleyicisi ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C2000 ile C3999 arasındaki derleyici hataları](../compiler-errors-1/compiler-errors-c2000-c3999.md)

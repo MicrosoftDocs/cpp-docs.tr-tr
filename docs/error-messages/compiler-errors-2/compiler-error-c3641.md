@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3641'
 title: Derleyici hatası C3641
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3641
 ms.assetid: e8d3613e-5e8d-46fe-a516-eb7d1de7cd21
-ms.openlocfilehash: 44356fb1a1818a02102d23e6b308457f2f39506b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 391994a5207fe27cea0b33e6d03e5a1fdc30f6c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80200518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239109"
 ---
 # <a name="compiler-error-c3641"></a>Derleyici hatası C3641
 

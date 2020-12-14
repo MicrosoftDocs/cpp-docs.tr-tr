@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: C2900 Ile derleyici hataları C2999'
 title: C2900 ile C2999 arasındaki derleyici hataları
 ms.date: 04/21/2019
 f1_keywords:
@@ -72,125 +73,125 @@ helpviewer_keywords:
 - C2997
 - C2999
 ms.assetid: e3440738-e11b-4878-9ae3-6bc6c53ba461
-ms.openlocfilehash: 5d443153582921775a72e5af647d65b102b80b0b
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 73770588a27bb0f5150f3334f33e0a1c33aa2296
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64857217"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238771"
 ---
 # <a name="compiler-errors-c2900-through-c2999"></a>C2900 ile C2999 arasındaki derleyici hataları
 
-Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından oluşturulan hata iletilerini açıklayın.
+Belgenin bu bölümündeki makaleler, derleyici tarafından oluşturulan hata iletilerinin bir alt kümesini açıklar.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
 ## <a name="error-messages"></a>Hata iletileri
 
-|Hata|`Message`|
+|Hata|İleti|
 |-----------|-------------|
-|Derleyici Hatası C2900|'*bildirimci*': WinRT sınıflarındaki üye işlev Şablonları 'private', 'internal' veya 'protected private' olmalıdır|
-|Derleyici Hatası C2901|'*tanımlayıcı*': Bir genel arabirim veya temsilci ortak olamaz|
-|[Derleyici Hatası C2902](compiler-error-c2902.md)|'*belirteci*': beklenmeyen belirteç aşağıdaki 'şablon/genel', tanımlayıcı bekleniyor|
-|[Derleyici Hatası C2903](compiler-error-c2903.md)|'*tanımlayıcı*': simge ne bir sınıf şablonu/genel ne de bir işlev şablonu/genel olan|
-|[Derleyici Hatası C2904](compiler-error-c2904.md)|'*tanımlayıcı*': bir şablon geçerli kapsamda zaten kullanılan adı|
-|Derleyici Hatası C2905|Kullanımdan kalktı.|
-|[Derleyici Hatası C2906](compiler-error-c2906.md)|'*şablon*': açık özelleştirme 'şablon <>' gerektirir|
-|Derleyici Hatası C2907|YAZMAÇ bağımsız değişkeni '*sayı*' geçerli bir kayıt numarası belirtmiyor|
-|[Derleyici Hatası C2908](compiler-error-c2908.md)|Açık özelleştirme; '*şablon*' zaten başlatıldı|
-|[Derleyici Hatası C2909](compiler-error-c2909.md)|'*tanımlayıcı*': işlev şablonunun açıkça örneğinin oluşturulması dönüş türü gerektirir|
-|[Derleyici Hatası C2910](compiler-error-c2910.md)|'*işlevi*': açıkça özelleştirilemez|
-|[Derleyici Hatası C2911](compiler-error-c2911.md)|'*üye*': bildirilemez veya geçerli kapsamda tanımlı|
-|[Derleyici Hatası C2912](compiler-error-c2912.md)|Açık özelleştirme '*bildirimi*' bir işlev şablonunun bir özelleştirmesi değil|
-|[Derleyici Hatası C2913](compiler-error-c2913.md)|Açık özelleştirme; '*bildirimi*' sınıf şablonunun bir özelleştirmesi değil|
-|[Derleyici Hatası C2914](compiler-error-c2914.md)|'*tanımlayıcı*': işlev bağımsız değişkeni belirsiz olduğundan şablon/genel bağımsız değişkeni anlaşılamıyor|
-|Derleyici Hatası C2915|'*tanımlayıcı*': '*türü*' bir WinRT türünün yayımlanmış yüzeyinde doğrudan kullanılamaz. Kullanım ' Platform::Object ^' bunun yerine bu türü geçirmek için|
-|Derleyici Hatası C2916|'*tanımlayıcı*': [FlagsAttribute] (yalnızca) girilmesi gerekir ortak bir numaralandırma üzerinde 'temel alınan türü bir'unsigned int'|
-|[Derleyici Hatası C2917](compiler-error-c2917.md)|'*tanımlayıcı*': Geçersiz şablon parametresi|
-|[Derleyici Hatası C2918](compiler-error-c2918.md)|'*tanımlayıcı*': Dizinli Özellikler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz|
-|[Derleyici Hatası C2919](compiler-error-c2919.md)|'*türü*': İşleçler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz|
-|[Derleyici Hatası C2920](compiler-error-c2920.md)|yeniden tanımlama: '*türü*': sınıf şablonu/genel zaten bildirildi olarak*bildirimi*'|
-|[Derleyici Hatası C2921](compiler-error-c2921.md)|yeniden tanımlama: '*türü*': sınıf şablonu/genel yeniden tanımlanıyor olarak*bildirimi*'|
-|Derleyici Hatası C2922|'*arabirimi*': Bir WinRT arabirimi statik üye içeremez.|
-|[Derleyici Hatası C2923](compiler-error-c2923.md)|'*türü*': '*tanımlayıcı*'parametresi için geçerli şablonu/genel tür bağımsız değişkeni değil'*parametre*'|
-|Derleyici Hatası C2924|__declspec(interrupt) yordam bağımsız değişkeni R2'de|
-|Derleyici Hatası C2925|__declspec(interrupt) yordamı kayan nokta kullanamaz|
-|Derleyici Hatası C2926|'*tanımlayıcı*': birleşim içindeki anonim yapının bir üyesi için varsayılan üye başlatıcıya izin verilmez|
-|[Derleyici Hatası C2927](compiler-error-c2927.md)|'*tanımlayıcı*': işlev şablonunun en az bir bağımsız değişkeni ile çağrılmalıdır|
-|[Derleyici Hatası C2928](compiler-error-c2928.md)|Açık örnek oluşturma; '*tanımlayıcı*'bir işlev veya şablon sınıfının statik veri üyesi değil'*sınıfı*'|
-|[Derleyici Hatası C2929](compiler-error-c2929.md)|'*bildirimci*': açık örnek oluşturma; açıkça zorlanamıyor ve Şablon sınıfı üyesinin örneğinin Gizle|
-|[Derleyici Hatası C2930](compiler-error-c2930.md)|'*sınıfı*': şablon kimliği/genel kimliği yeniden tanımlandı ' enum *tanımlayıcı*'|
-|[Derleyici Hatası C2931](compiler-error-c2931.md)|'*class1*': şablon kimliği/genel kimliği üyesi işlevi olarak yeniden tanımlandı '*class2*'|
-|[Derleyici Hatası C2932](compiler-error-c2932.md)|'*türü*': şablon kimliği/genel kimliği veri üyesi olarak yeniden tanımlandı '*tanımlayıcı*'|
-|[Derleyici Hatası C2933](compiler-error-c2933.md)|'*türü*': şablon kimliği/genel kimliği typedef üye olarak yeniden tanımlandı '*tanımlayıcı*'|
-|[Derleyici Hatası C2934](compiler-error-c2934.md)|'*türü*': şablon kimliği/genel kimliği yeniden tanımlanmış bir iç içe geçmiş '*öğesi*','*tanımlayıcı*'|
-|[Derleyici Hatası C2935](compiler-error-c2935.md)|'*türü*': şablon kimliği/genel kimliği genel bir işlev yeniden tanımlandı|
-|[Derleyici Hatası C2936](compiler-error-c2936.md)|'*türü*': şablon kimliği/genel kimliği bir genel veri değişken olarak yeniden tanımlandı|
-|[Derleyici Hatası C2937](compiler-error-c2937.md)|'*türü*': şablon kimliği/genel kimliği bir genel tür tanımı yeniden tanımlandı|
-|Derleyici Hatası C2938|'*tanımlayıcı*': Diğer ad şablonu özelleştirilemedi|
-|[Derleyici Hatası C2939](compiler-error-c2939.md)|'*türü*': şablon kimliği/genel kimliği bir yerel veri değişken olarak yeniden tanımlandı|
-|[Derleyici Hatası C2940](compiler-error-c2940.md)|'*türü*': şablon kimliği/genel kimliği yerel bir tür tanımı yeniden tanımlandı|
-|[Derleyici Hatası C2941](compiler-error-c2941.md)|'*türü*': şablon kimliği/genel kimliği yerel yeniden tanımlandı '*öğesi*'|
-|[Derleyici Hatası C2942](compiler-error-c2942.md)|'*türü*': şablon kimliği/genel kimliği bir işlevin biçimsel bağımsız değişken yeniden tanımlandı|
-|[Derleyici Hatası C2943](compiler-error-c2943.md)|'*türü*': şablon kimliği/genel kimliği bir şablon bir tür bağımsız değişkeni yeniden tanımlandı|
-|[Derleyici Hatası C2944](compiler-error-c2944.md)|'*türü*': şablon kimliği/genel kimliği bir şablon bir değeri bağımsız değişken olarak yeniden tanımlandı|
-|[Derleyici Hatası C2945](compiler-error-c2945.md)|Açık örnek oluşturma Şablon sınıfı bir özelleştirmeye başvurmuyor|
-|[Derleyici Hatası C2946](compiler-error-c2946.md)|Açık örnek oluşturma; '*türü*' Şablon sınıfı bir özelleştirmeye değil|
-|[Derleyici Hatası C2947](compiler-error-c2947.md)|bekleniyor ' >' şablon bağımsız değişkenleri sonlandırmak için bulunamadı '*belirteci*'|
-|[Derleyici Hatası C2948](compiler-error-c2948.md)|Açık örnek oluşturma; depolama sınıfı tanımlayıcısı '*belirticisi*' özelleştirmede izin verilmez|
-|Derleyici Hatası C2949|thread_local, / Kernel ile desteklenmiyor.|
-|Derleyici Hatası C2950|Kullanımdan kalktı.|
-|[Derleyici Hatası C2951](compiler-error-c2951.md)|şablonu/genel bildirimlerine yalnızca genel ad alanında izin verilen veya sınıf kapsamında|
-|[Derleyici Hatası C2952](compiler-error-c2952.md)|'*bildirimi*': şablon/genel bildirimi şablonu/genel parametre listesi eksik|
-|[Derleyici Hatası C2953](compiler-error-c2953.md)|'*türü*': sınıf şablonu zaten tanımlanmış|
-|Derleyici Hatası C2954|yönerge sözcük bağımsız değişkeni aralık içinde değil|
-|[Derleyici Hatası C2955](compiler-error-c2955.md)|'*türü*': sınıf şablonu/genel kullanımı şablon/genel bağımsız değişken listesi gerektiriyor|
-|Derleyici Hatası C2956|boyutlandırılmış ayırmayı kaldırma işlevi 'operator delete (void *, size_t)' yerleştirme olan ayırmayı kaldırma işlevi seçilirdi.|
-|[Derleyici Hatası C2957](compiler-error-c2957.md)|'*belirteci*': Geçersiz sol sınırlayıcı: beklenen ' <'|
-|[Derleyici Hatası C2958](compiler-error-c2958.md)|Sol *sınırlayıcı* bulunan '*dosya*(*line_number*)' doğru eşleşmiyor|
-|[Derleyici Hatası C2959](compiler-error-c2959.md)|Genel bir sınıf veya işlev şablonunun bir üyesi olmayabilir|
-|Derleyici Hatası C2960|Kullanımdan kalktı.|
-|Derleyici Hatası C2961|'*işlevi*': tutarsız açık örnek oluşturma işlemleri, bir önceki açık örnek oluşturma belirtmedi '*bağımsız değişken*'|
-|[Derleyici Hatası C2962](compiler-error-c2962.md)|sözdizimi hatası: '*belirteci*': Şablon sınıfı üye işlev tanımının'ile bitmesi bekleniyor '}'|
-|Derleyici Hatası C2963|Kullanımdan kalktı.|
-|Derleyici Hatası C2964|Kullanımdan kalktı.|
-|Derleyici Hatası C2965|__declspec (*belirticisi*) / Kernel ile desteklenmiyor|
-|Derleyici Hatası C2966|'*ıdentifier1*': onun temel sınıfından aynı __declspec(code_seg(...)) özelliğine sahip olmalıdır*identifier2*'|
-|Derleyici Hatası C2967|'*tanımlayıcı*': geçersiz kılan bir sanal işlevi geçersiz kılınan bir sanal işlev aynı __declspec(code_seg(...)) özelliğine sahip olmalıdır|
-|Derleyici Hatası C2968|'*tanımlayıcı*': özyinelemeli diğer ad bildirimi|
-|[Derleyici Hatası C2969](compiler-error-c2969.md)|sözdizimi hatası: '*belirteci*': üye işlev tanımının'ile bitmesi bekleniyor '}'|
-|[Derleyici Hatası C2970](compiler-error-c2970.md)|'*türü*': şablon parametresi '*parametre*': '*bağımsız değişken*': iç bağlaması olan nesneler içeren bir ifade tür olmayan bir bağımsız değişken olarak kullanılamaz|
-|[Derleyici Hatası C2971](compiler-error-c2971.md)|'*türü*': şablon parametresi '*parametre*': '*bağımsız değişken*': statik olmayan depolama süresine sahip bir değişken bir tür olmayan bağımsız değişken olarak kullanılamaz|
-|Derleyici Hatası C2972|'*türü*': şablon parametresi '*parametre*': tür olmayan bağımsız değişkenin türü geçersiz|
-|[Derleyici Hatası C2973](compiler-error-c2973.md)|'*şablon*': Geçersiz şablon bağımsız değişkeni '*sayı*'|
-|[Derleyici Hatası C2974](compiler-error-c2974.md)|'*türü*': Geçersiz şablon/genel bağımsız değişkeni için '*parametre*', tür bekleniyor|
-|[Derleyici Hatası C2975](compiler-error-c2975.md)|'*türü*': Geçersiz şablon bağımsız değişkeni için '*parametre*', derleme zamanı sabit ifadesi bekleniyor|
-|[Derleyici Hatası C2976](compiler-error-c2976.md)|'*türü*': çok az sayıda şablon/genel bağımsız değişkenleri|
-|[Derleyici Hatası C2977](compiler-error-c2977.md)|'*türü*': çok fazla şablon/genel bağımsız değişkenleri|
-|[Derleyici Hatası C2978](compiler-error-c2978.md)|sözdizimi hatası: beklenen '*keyword1*'veya'*keyword2*'; türü bulundu'*türü*'; tür olmayan parametreler, genel türler desteklenmiyor|
-|[Derleyici Hatası C2979](compiler-error-c2979.md)|Açık uzmanlık'nda genel türler için desteklenmez.|
-|Derleyici Hatası C2980|C++ özel durum işleme/Kernel ile desteklenmiyor|
-|Derleyici Hatası C2981|öğesinin dinamik biçimi '*anahtar sözcüğü*' / Kernel ile desteklenmiyor|
-|Derleyici Hatası C2982|'*bildirimi*': farklı __declspec(code_seg(...)) kullanıldı: oldu '*ıdentifier1*'artık'*identifier2*'|
-|Derleyici Hatası C2983|'*bildirimi*': tüm bildirimleri özdeş bir __declspec(code_seg(...)) sahip olmalıdır|
-|Derleyici Hatası C2984|Kullanımdan kalktı.|
-|Derleyici Hatası C2985|'*bağımsız değişken*': __declspec(code_seg(...)) bağımsız değişkeni bir metin bölümüne ait olmalıdır|
-|Derleyici Hatası C2986|'*tanımlayıcı*': __declspec(code_seg(...)) yalnızca bir sınıfa veya işleve uygulanabilir|
-|Derleyici Hatası C2987|bir bildirimi hem __declspec olamaz (code_seg ('*tanımlayıcı*')) ve __declspec (code_seg ('*değer*'))|
-|[Derleyici Hatası C2988](compiler-error-c2988.md)|Tanınmayan şablon bildirimi/tanımı|
-|[Derleyici Hatası C2989](compiler-error-c2989.md)|'*sınıfı*': sınıf şablonu/genel zaten sınıf olmayan şablon/genel bildirildi|
-|[Derleyici Hatası C2990](compiler-error-c2990.md)|'*sınıfı*': sınıf olmayan şablon/genel zaten bir sınıf şablonu/genel bildirildi|
-|[Derleyici Hatası C2991](compiler-error-c2991.md)|şablonu/genel parametrenin yeniden tanımlanması '*parametre*'|
-|[Derleyici Hatası C2992](compiler-error-c2992.md)|'*sınıfı*': geçersiz veya eksik şablon/genel parametre listesi|
-|[Derleyici Hatası C2993](compiler-error-c2993.md)|'*türü*': tür olmayan şablon parametresi için geçersiz tür '*tanımlayıcı*'|
-|[Derleyici Hatası C2994](compiler-error-c2994.md)|Şablon parametre listesinde adsız sınıf|
-|[Derleyici Hatası C2995](compiler-error-c2995.md)|'*bildirimi*': işlev şablon zaten tanımlanmış|
-|[Derleyici Hatası C2996](compiler-error-c2996.md)|'*işlevi*': özyinelemeli işlev şablonu tanımı|
-|Derleyici Hatası C2997|'*işlevi*': dizi varsayılan üye başlatıcıya atanan olamaz|
-|[Derleyici Hatası C2998](compiler-error-c2998.md)|'*bildirimci*': bir şablon tanımı olamaz|
-|Derleyici Hatası c2999 arasındaki|Bilinmeyen hata Lütfen Visual C++ Yardım menüsünde teknik destek komutunu seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|
+|Derleyici hatası C2900|'*bildirimci*': WinRT sınıflarındaki üye işlev şablonları ' Private ', ' internal ' veya ' protected private ' olmalıdır|
+|Derleyici hatası C2901|'*tanımlayıcı*': genel bir arabirim veya temsilci ortak olamaz|
+|[Derleyici hatası C2902](compiler-error-c2902.md)|'*token*': ' Template/Generic ' sonrasında beklenmeyen belirteç, tanımlayıcı bekleniyor|
+|[Derleyici hatası C2903](compiler-error-c2903.md)|'*tanımlayıcı*': simge bir sınıf şablonu/genel ya da bir işlev şablonu/genel değil|
+|[Derleyici hatası C2904](compiler-error-c2904.md)|'*tanımlayıcı*': ad geçerli kapsamda bir şablon için zaten kullanılıyor|
+|Derleyici hatası C2905|Kullanımdan kalktı.|
+|[Derleyici hatası C2906](compiler-error-c2906.md)|'*Template*': açık özelleştirme ' Template <> ' gerektirir|
+|Derleyici hatası C2907|'*Number*' yazmaç bağımsız değişkeni geçerli bir yazmaç numarası belirtmiyor|
+|[Derleyici hatası C2908](compiler-error-c2908.md)|Açık özelleştirme; '*Template*' zaten örneği oluşturulmuş|
+|[Derleyici hatası C2909](compiler-error-c2909.md)|'*tanımlayıcı*': işlev şablonunun açık örneklemesi, dönüş türü gerektiriyor|
+|[Derleyici hatası C2910](compiler-error-c2910.md)|'*Function*': açık olarak özelleştirilemez|
+|[Derleyici hatası C2911](compiler-error-c2911.md)|'*member*': geçerli kapsamda bildirilemez veya tanımlanamaz|
+|[Derleyici hatası C2912](compiler-error-c2912.md)|'*bildirim*' açık özelleştirmesi bir işlev şablonunun özelleştirmesi değil|
+|[Derleyici hatası C2913](compiler-error-c2913.md)|Açık özelleştirme; '*declaration*' bir sınıf şablonunun özelleştirmesi değil|
+|[Derleyici hatası C2914](compiler-error-c2914.md)|'*tanımlayıcı*': işlev bağımsız değişkeni belirsiz olduğundan Template/genel bağımsız değişkeni çıkarılamıyor|
+|Derleyici hatası C2915|'*Identifier*': '*Type*', bir WinRT türünün yayımlanmış yüzeyinde doğrudan kullanılamaz. Bu türü geçirmek yerine ' Platform:: Object ^ ' kullanın|
+|Derleyici hatası C2916|'*Identifier*': [FlagsAttribute], ' unsigned int ' temel alınan türü olan genel bir sabit listesinde belirtilmelidir|
+|[Derleyici hatası C2917](compiler-error-c2917.md)|'*tanımlayıcı*': geçersiz şablon parametresi|
+|[Derleyici hatası C2918](compiler-error-c2918.md)|'*tanımlayıcı*': Dizinli Özellikler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz|
+|[Derleyici hatası C2919](compiler-error-c2919.md)|'*Type*': Işleçler bir WinRT türünün yayımlanmış yüzeyinde kullanılamaz|
+|[Derleyici hatası C2920](compiler-error-c2920.md)|yeniden tanımlama: '*Type*': sınıf şablonu/genel zaten '*bildirim*' olarak tanımlanmış|
+|[Derleyici hatası C2921](compiler-error-c2921.md)|yeniden tanımlama: '*Type*': sınıf şablonu/genel '*bildirim*' olarak yeniden bildiriliyor|
+|Derleyici hatası C2922|'*interface*': WinRT arabirimi statik üye içeremez|
+|[Derleyici hatası C2923](compiler-error-c2923.md)|'*Type*': '*Identifier*', '*Parameter*' parametresi için geçerli bir şablon/genel tür bağımsız değişkeni değil|
+|Derleyici hatası C2924|__declspec (kesme) yordam bağımsız değişkeni R2 'de değil|
+|Derleyici hatası C2925|__declspec (kesme) yordamı kayan nokta kullanamaz|
+|Derleyici hatası C2926|'*tanımlayıcı*': bir Union içindeki anonim yapının üyesi için varsayılan üye başlatıcıya izin verilmez|
+|[Derleyici hatası C2927](compiler-error-c2927.md)|'*tanımlayıcı*': bir işlev şablonunun en az bir bağımsız değişkenle çağrılması gerekir|
+|[Derleyici hatası C2928](compiler-error-c2928.md)|açık örnek oluşturma; '*Identifier*', '*Class*' şablon sınıfının bir işlevi veya statik veri üyesi değil|
+|[Derleyici hatası C2929](compiler-error-c2929.md)|'*bildirimci*': açık örnek oluşturma; Şablon sınıfı üyenin örnek oluşturma, açıkça zorlanamıyor ve bastırılamıyor|
+|[Derleyici hatası C2930](compiler-error-c2930.md)|'*Class*': şablon kimliği/genel kimlik kimliği, ' enum *Identifier*' numaralandırıcısı olarak yeniden tanımlandı|
+|[Derleyici hatası C2931](compiler-error-c2931.md)|'*Class1*': şablon kimliği/genel kimlik kimliği '*Class2*' üye işlevi olarak yeniden tanımlandı|
+|[Derleyici hatası C2932](compiler-error-c2932.md)|'*Type*': şablon kimliği/genel kimlik kimliği, '*Identifier*' veri üyesi olarak yeniden tanımlandı|
+|[Derleyici hatası C2933](compiler-error-c2933.md)|'*Type*': şablon kimliği/genel kimlik kimliği, '*Identifier*' öğesinin typedef üyesi olarak yeniden tanımlandı|
+|[Derleyici hatası C2934](compiler-error-c2934.md)|'*Type*': şablon kimliği/genel kimlik kimliği, '*Identifier*' öğesinin iç içe '*item*' olarak yeniden tanımlandı|
+|[Derleyici hatası C2935](compiler-error-c2935.md)|'*Type*': şablon kimliği/genel kimlik kimliği genel bir işlev olarak yeniden tanımlandı|
+|[Derleyici hatası C2936](compiler-error-c2936.md)|'*Type*': şablon kimliği/genel kimlik kimliği genel veri değişkeni olarak yeniden tanımlandı|
+|[Derleyici hatası C2937](compiler-error-c2937.md)|'*Type*': şablon kimliği/genel kimlik kimliği genel bir typedef olarak yeniden tanımlandı|
+|Derleyici hatası C2938|'*tanımlayıcı*': diğer ad şablonu özelleştirilemedi|
+|[Derleyici hatası C2939](compiler-error-c2939.md)|'*Type*': şablon kimliği/genel kimlik kimliği yerel bir veri değişkeni olarak yeniden tanımlandı|
+|[Derleyici hatası C2940](compiler-error-c2940.md)|'*Type*': şablon kimliği/genel kimlik kimliği yerel bir typedef olarak yeniden tanımlandı|
+|[Derleyici hatası C2941](compiler-error-c2941.md)|'*Type*': şablon kimliği/genel kimlik kimliği yerel bir '*item*' olarak yeniden tanımlandı|
+|[Derleyici hatası C2942](compiler-error-c2942.md)|'*Type*': şablon kimliği/genel kimlik kimliği bir işlevin biçimsel bağımsız değişkeni olarak yeniden tanımlandı|
+|[Derleyici hatası C2943](compiler-error-c2943.md)|'*Type*': şablon kimliği/genel kimlik kimliği bir şablonun tür bağımsız değişkeni olarak yeniden tanımlandı|
+|[Derleyici hatası C2944](compiler-error-c2944.md)|'*Type*': şablon kimliği/genel kimlik kimliği bir şablonun değer bağımsız değişkeni olarak yeniden tanımlandı|
+|[Derleyici hatası C2945](compiler-error-c2945.md)|açık örnek oluşturma şablon sınıfı bir özelleştirmeye başvurmuyor|
+|[Derleyici hatası C2946](compiler-error-c2946.md)|açık örnek oluşturma; '*Type*' şablon sınıfı bir özelleştirme değil|
+|[Derleyici hatası C2947](compiler-error-c2947.md)|şablon bağımsız değişkenlerini sonlandırmak için ' > ' bekleniyor, '*token*' bulundu|
+|[Derleyici hatası C2948](compiler-error-c2948.md)|açık örnek oluşturma; özelleştirmede depolama sınıfı *belirticisine izin* verilmez|
+|Derleyici hatası C2949|thread_local/kernel ile desteklenmiyor|
+|Derleyici hatası C2950|Kullanımdan kalktı.|
+|[Derleyici hatası C2951](compiler-error-c2951.md)|yalnızca genel, ad alanı veya sınıf kapsamında olan şablona/genel bildirimlere izin verilir|
+|[Derleyici hatası C2952](compiler-error-c2952.md)|'*declaration*': şablon/genel bildirimde şablon/genel parametre listesi eksik|
+|[Derleyici hatası C2953](compiler-error-c2953.md)|'*Type*': sınıf şablonu zaten tanımlanmış|
+|Derleyici hatası C2954|yönerge sözcük bağımsız değişkeni Aralık içinde değil|
+|[Derleyici hatası C2955](compiler-error-c2955.md)|'*Type*': sınıf şablonu/genel kullanımı için şablon/genel bağımsız değişken listesi gerekir|
+|Derleyici hatası C2956|boyutlandırılmış ayırmayı kaldırma işlevi ' operator delete (void *, size_t) ', yerleştirme ayırmayı kaldırma işlevi olarak seçilir.|
+|[Derleyici hatası C2957](compiler-error-c2957.md)|'*token*': geçersiz sol sınırlayıcı: ' < ' bekleniyor|
+|[Derleyici hatası C2958](compiler-error-c2958.md)|'*Dosya*(*Line_Number*) ' konumundaki sol *sınırlayıcı* doğru şekilde eşleşmedi|
+|[Derleyici hatası C2959](compiler-error-c2959.md)|genel bir sınıf veya işlev bir şablonun üyesi olamaz|
+|Derleyici hatası C2960|Kullanımdan kalktı.|
+|Derleyici hatası C2961|'*Function*': tutarsız açık örneklemeler, önceki bir açık örnek oluşturma '*Argument*' belirtmedi|
+|[Derleyici hatası C2962](compiler-error-c2962.md)|sözdizimi hatası: '*token*': şablon sınıfı üye işlev tanımının '} ' ile bitmesi bekleniyor|
+|Derleyici hatası C2963|Kullanımdan kalktı.|
+|Derleyici hatası C2964|Kullanımdan kalktı.|
+|Derleyici hatası C2965|__declspec (*tanımlayıcı*)/kernel ile desteklenmiyor|
+|Derleyici hatası C2966|'*Identifier1*': temel sınıfı '*identifier2*' ile aynı __declspec (code_seg (...)) olmalıdır|
+|Derleyici hatası C2967|'*tanımlayıcı*': geçersiz kılan bir sanal işlev geçersiz kılınan bir sanal işlevle aynı __declspec (code_seg (...)) sahip olmalıdır|
+|Derleyici hatası C2968|'*tanımlayıcı*': özyinelemeli diğer ad bildirimi|
+|[Derleyici hatası C2969](compiler-error-c2969.md)|sözdizimi hatası: '*token*': üye işlev tanımının '} ' ile bitmesi bekleniyor|
+|[Derleyici hatası C2970](compiler-error-c2970.md)|'*Type*': şablon parametresi '*Parameter*': '*Argument*': iç bağlantısı olan nesneleri içeren bir ifade, tür olmayan bir bağımsız değişken olarak kullanılamaz|
+|[Derleyici hatası C2971](compiler-error-c2971.md)|'*Type*': şablon parametresi '*Parameter*': '*bağımsız değişken*': statik olmayan depolama süresine sahip bir değişken, tür olmayan bir bağımsız değişken olarak kullanılamaz|
+|Derleyici hatası C2972|'*Type*': şablon parametresi '*Parameter*': tür olmayan bağımsız değişkenin türü geçersiz|
+|[Derleyici hatası C2973](compiler-error-c2973.md)|'*Template*': geçersiz şablon bağımsız değişkeni '*Number*'|
+|[Derleyici hatası C2974](compiler-error-c2974.md)|'*Type*': '*Parameter*' için geçersiz şablon/genel bağımsız değişkeni, tür bekleniyor|
+|[Derleyici hatası C2975](compiler-error-c2975.md)|'*Type*': '*Parameter*' için geçersiz şablon bağımsız değişkeni; derleme zamanı sabit ifadesi bekleniyor|
+|[Derleyici hatası C2976](compiler-error-c2976.md)|'*Type*': çok az sayıda şablon/genel bağımsız değişken|
+|[Derleyici hatası C2977](compiler-error-c2977.md)|'*Type*': çok fazla şablon/genel bağımsız değişken|
+|[Derleyici hatası C2978](compiler-error-c2978.md)|sözdizimi hatası: '*keyword1*' veya '*keyword2*' bekleniyor; '*Type*' türü bulundu; genel türlerde tür olmayan parametreler desteklenmez|
+|[Derleyici hatası C2979](compiler-error-c2979.md)|genel türlerde açık uzmanlık desteklenmez|
+|Derleyici hatası C2980|C++ özel durum işleme/kernel ile desteklenmiyor|
+|Derleyici hatası C2981|'*anahtar sözcük*' dinamik biçimi/kernel ile desteklenmiyor|
+|Derleyici hatası C2982|'*declaration*': farklı __declspec (code_seg (...)) kullanıldı: '*Identifier1*' Şimdi '*identifier2*' idi|
+|Derleyici hatası C2983|'*declaration*': tüm bildirimlerin aynı __declspec (code_seg (...)) olması gerekir|
+|Derleyici hatası C2984|Kullanımdan kalktı.|
+|Derleyici hatası C2985|'*Argument*': __declspec (code_seg (...)) bağımsız değişkeni bir metin bölümü olmalıdır|
+|Derleyici hatası C2986|'*tanımlayıcı*': __declspec (code_seg (...)) yalnızca bir sınıfa veya işleve uygulanabilir|
+|Derleyici hatası C2987|bildirimde hem __declspec (code_seg ('*tanımlayıcı*')) hem de __declspec (code_seg ('*Value*')) olamaz|
+|[Derleyici hatası C2988](compiler-error-c2988.md)|Tanınmayan şablon bildirimi/tanımı|
+|[Derleyici hatası C2989](compiler-error-c2989.md)|'*Class*': sınıf şablonu/genel zaten sınıf olmayan bir şablon/genel olarak tanımlanmış|
+|[Derleyici hatası C2990](compiler-error-c2990.md)|'*Class*': sınıf olmayan şablon/genel zaten bir sınıf şablonu/genel olarak tanımlanmış|
+|[Derleyici hatası C2991](compiler-error-c2991.md)|'*Parameter*' şablonunun/genel parametresinin yeniden tanımlanması|
+|[Derleyici hatası C2992](compiler-error-c2992.md)|'*Class*': geçersiz veya eksik şablon/genel parametre listesi|
+|[Derleyici hatası C2993](compiler-error-c2993.md)|'*Type*': tür olmayan şablon parametresi '*tanımlayıcı*' için geçersiz tür|
+|[Derleyici hatası C2994](compiler-error-c2994.md)|şablon parametre listesinde adlandırılmamış sınıf|
+|[Derleyici hatası C2995](compiler-error-c2995.md)|'*declaration*': işlev şablonu zaten tanımlanmış|
+|[Derleyici hatası C2996](compiler-error-c2996.md)|'*Function*': özyinelemeli işlev şablonu tanımı|
+|Derleyici hatası C2997|'*Function*': dizi sınırı varsayılan üye başlatıcıdan çıkarılamıyor|
+|[Derleyici hatası C2998](compiler-error-c2998.md)|'*bildirimci*': bir şablon tanımı olamaz|
+|Derleyici hatası C2999|BILINMEYEN hata lütfen Visual C++ Yardım menüsünde Teknik destek komutunu seçin veya daha fazla bilgi için teknik destek yardım dosyasını açın|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C /C++ derleyicisi ve derleme araçları hataları ve Uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
-[C3999 arasındaki derleyici hataları C2000-](../compiler-errors-1/compiler-errors-c2000-c3999.md)
+[C/C++ derleyicisi ve derleme araçları hataları ve uyarıları](../compiler-errors-1/c-cpp-build-errors.md) \
+[C2000 ile C3999 arasındaki derleyici hataları](../compiler-errors-1/compiler-errors-c2000-c3999.md)

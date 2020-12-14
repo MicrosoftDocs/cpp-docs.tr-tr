@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2766'
 title: Derleyici hatası C2766
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2766
 ms.assetid: 8032f4ca-6827-4f04-9c61-c44643c85cc4
-ms.openlocfilehash: 48faee02bba18754972954a2ca464417bd552758
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: bace06c6dc4392fa023317d9711005837d156aa2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759808"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239499"
 ---
 # <a name="compiler-error-c2766"></a>Derleyici hatası C2766
 

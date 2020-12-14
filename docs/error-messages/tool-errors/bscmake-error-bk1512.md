@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: BSCMAKE hatası BK1512'
 title: BSCMAKE Hatası BK1512
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - BK1512
 ms.assetid: 0a626ff3-63db-4797-abe4-31545ce2c2c1
-ms.openlocfilehash: d3fed3d0de6a96f49df8bd8fdeed1c0148b1fe24
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f4a261d17ea035080834870e0b8f3708e391763b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80197658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97238108"
 ---
 # <a name="bscmake-error-bk1512"></a>BSCMAKE Hatası BK1512
 
