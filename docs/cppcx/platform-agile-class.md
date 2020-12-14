@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Platform:: çevik sınıf'
 title: 'Platform:: çevik sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,18 +13,18 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-ms.openlocfilehash: d39270b7bf05e820ea376a40310abeb8add2c5ad
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 6407bbfecdc84cdb47024e09f632a6e574439814
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312182"
 ---
 # <a name="platformagile-class"></a>Platform:: çevik sınıfı
 
 Çevik bir nesne olarak MashalingBehavior = standardı olan bir nesneyi temsil eder ve bu da çalışma zamanı iş parçacığı özel durumlarının olasılığını önemli ölçüde azaltır. , `Agile<T>` Çevik olmayan nesnenin aynı veya farklı bir iş parçacığından çağrılması veya çağırılabilmesi için sağlar. Daha fazla bilgi için bkz. [Threading and Marshal](../cppcx/threading-and-marshaling-c-cx.md).
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <typename T>
@@ -39,7 +40,7 @@ class Agile;
 
 Windows Çalışma Zamanı sınıfların çoğu çevik. Çevik bir nesne, aynı veya farklı bir iş parçacığında işlem içi veya proc dışı bir nesne tarafından çağrılabilir veya çağrılabilir. Bir nesne çevik değilse, çevik olmayan nesneyi çevik bir nesne içinde sarın `Agile<T>` . Ardından `Agile<T>` nesne sıralanabilir ve temeldeki çevik olmayan nesne kullanılabilir.
 
-`Agile<T>`Sınıfı, yerel, standart bir C++ sınıfıdır ve gerektirir `agile.h` . Çevik olmayan nesne ve çevik nesne *bağlamını*temsil eder. Bağlam, çevik bir nesnenin iş parçacığı modeli ve sıralama davranışını belirtir. İşletim sistemi, bir nesnenin nasıl hazırlanacağını belirlemede bağlamını kullanır.
+`Agile<T>`Sınıfı, yerel, standart bir C++ sınıfıdır ve gerektirir `agile.h` . Çevik olmayan nesne ve çevik nesne *bağlamını* temsil eder. Bağlam, çevik bir nesnenin iş parçacığı modeli ve sıralama davranışını belirtir. İşletim sistemi, bir nesnenin nasıl hazırlanacağını belirlemede bağlamını kullanır.
 
 ### <a name="members"></a>Üyeler
 
@@ -86,7 +87,7 @@ Windows Çalışma Zamanı sınıfların çoğu çevik. Çevik bir nesne, aynı 
 
 Çevik sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Agile();
@@ -141,7 +142,7 @@ Dönüş değerinin türü aslında açıklanmamıştır bir iç türdür. Dön�
 
 Geçerli çevik nesnesini yeniden başlatır ve ardından türü bir nesneye yapılan tanıtıcının adresini döndürür `T` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 T^* GetAddressOf() throw();
@@ -164,7 +165,7 @@ Bu işlem, türünde bir nesnenin geçerli temsilini serbest bırakır `T` ; çe
 
 Geçerli çevik nesnenin temsil ettiği nesne için bir tanıtıcının adresini döndürür.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 T^* GetAddressOfForInOut()  throw();
@@ -217,7 +218,7 @@ Bu işleç aslında açıklanmaedilmemiş bir iç tür döndürür. Dönüş de�
 
 Belirtilen nesneyi geçerli çevik nesnesine atar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 Agile<T> operator=( T^ object ) throw();

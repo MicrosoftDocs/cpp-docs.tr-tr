@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDaoErrorInfo yapısı'
 title: CDaoErrorInfo Yapısı
 ms.date: 09/17/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - CDaoErrorInfo structure [MFC]
 - DAO (Data Access Objects), Errors collection
 ms.assetid: cd37ef71-b0b3-401d-bc2b-540c9147f532
-ms.openlocfilehash: 8d731c8e8bea1adc850ab3c00c7688b9f8c9b819
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 3d8ae4bd133c96ef1853c8d087904c7c6eba810d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74304232"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250965"
 ---
 # <a name="cdaoerrorinfo-structure"></a>CDaoErrorInfo Yapısı
 
-`CDaoErrorInfo` yapısı, veri erişim nesneleri (DAO) için tanımlanan bir hata nesnesi hakkında bilgi içerir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
+`CDaoErrorInfo`Yapı, veri erişim nesneleri (DAO) için tanımlanan bir hata nesnesi hakkında bilgiler içerir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -50,11 +51,11 @@ Bir Microsoft Windows Yardım dosyasındaki konunun bağlam KIMLIĞI. Ayrıntıl
 
 ## <a name="remarks"></a>Açıklamalar
 
-MFC bir sınıftaki DAO hata nesnelerini kapsüllemez. Bunun yerine, [CDaoException](../../mfc/reference/cdaoexception-class.md) sınıfı, DAO `DBEngine` nesnesinde bulunan hatalar koleksiyonuna erişmek için bir arabirim sağlar. bu nesne, tüm çalışma alanlarını da içerir. Bir MFC DAO işlemi yakalayacak bir `CDaoException` nesnesi oluşturduğunda, MFC bir `CDaoErrorInfo` yapısını doldurur ve özel durum nesnesinin [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) üyesinde depolar. (DAO 'YU doğrudan çağırmayı seçerseniz, `m_pErrorInfo`doldurmanız için özel durum nesnesinin [GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) üye işlevini kendiniz çağırmanız gerekir.)
+MFC bir sınıftaki DAO hata nesnelerini kapsüllemez. Bunun yerine, [CDaoException](../../mfc/reference/cdaoexception-class.md) sınıfı `DBEngine` , tüm çalışma alanlarını IÇEREN nesne olan DAO nesnesinde bulunan Errors koleksiyonuna erişmek için bir arabirim sağlar. Bir MFC DAO işlemi `CDaoException` yakalayacak bir nesne oluşturduğunda, MFC bir `CDaoErrorInfo` yapıyı doldurur ve özel durum nesnesinin [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) üyesinde depolar. (DAO 'YU doğrudan çağırmayı seçerseniz, doldurmanız için özel durum nesnesinin [GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) üye işlevini kendiniz çağırmanız gerekir `m_pErrorInfo` .)
 
 DAO hatalarını işleme hakkında daha fazla bilgi için bkz. [özel durumlar: veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md). İlgili bilgiler için, DAO yardımı 'nda "hata nesnesi" konusuna bakın.
 
-[CDaoException:: GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) üye işlevi tarafından alınan bilgiler `CDaoErrorInfo` bir yapıda depolanıyor. Bir özel durum işleyicide yakalayadığınız bir `CDaoException` nesnesinden [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) veri üyesini ınceleyın veya DAO arabirimlerine doğrudan çağrı sırasında oluşmuş olabilecek hataları denetlemek için açıkça oluşturduğunuz bir `CDaoException` nesnesinden `GetErrorInfo` çağırın. `CDaoErrorInfo` Ayrıca hata ayıklama yapılarında bir `Dump` member işlevi tanımlar. Bir `CDaoErrorInfo` nesnesinin içeriğini dökmek için `Dump` kullanabilirsiniz.
+[CDaoException:: GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) üye işlevi tarafından alınan bilgiler bir `CDaoErrorInfo` yapıda depolanıyor. [](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) `CDaoException` Bir özel durum işleyicide yakalayacak bir nesneden m_pErrorInfo veri ÜYESINI inceleyin veya `GetErrorInfo` `CDaoException` DAO arabirimlerine doğrudan çağrı sırasında oluşmuş olabilecek hataları denetlemek için açıkça oluşturduğunuz bir nesneden çağırın. `CDaoErrorInfo` Ayrıca `Dump` , hata ayıklama yapılarında bir üye işlevi tanımlar. `Dump`Bir nesnenin içeriğini dökmek için kullanabilirsiniz `CDaoErrorInfo` .
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -62,5 +63,5 @@ DAO hatalarını işleme hakkında daha fazla bilgi için bkz. [özel durumlar: 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CDaoException Sınıfı](../../mfc/reference/cdaoexception-class.md)
+[Yapılar, stiller, geri çağrılar ve Ileti haritaları](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
+[CDaoException sınıfı](../../mfc/reference/cdaoexception-class.md)

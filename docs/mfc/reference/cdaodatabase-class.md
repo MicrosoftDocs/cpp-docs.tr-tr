@@ -1,5 +1,6 @@
 ---
-title: CDaoDatabase Sınıfı
+description: 'Daha fazla bilgi edinin: CDaoDatabase sınıfı'
+title: CDaoDatabase sınıfı
 ms.date: 09/17/2019
 f1_keywords:
 - CDaoDatabase
@@ -58,18 +59,18 @@ helpviewer_keywords:
 - CDaoDatabase [MFC], m_pDAODatabase
 - CDaoDatabase [MFC], m_pWorkspace
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
-ms.openlocfilehash: 0fbc4ee3f2033f7507a1ed68493fa7e48bc62c51
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 2044f24c2485071e0fa8930956e8ea15753047ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250978"
 ---
-# <a name="cdaodatabase-class"></a>CDaoDatabase Sınıfı
+# <a name="cdaodatabase-class"></a>CDaoDatabase sınıfı
 
-Veri Erişim Nesneleri (DAO) kullanarak Access veritabanına olan bağlantıyı temsil eder. DAO, Office 2013 aracılığıyla desteklenir. DAO 3.6 son sürümüdür ve eski miş olarak kabul edilir.
+Veri erişim nesneleri (DAO) kullanarak bir Access veritabanı bağlantısını temsil eder. DAO, Office 2013 aracılığıyla desteklenir. DAO 3,6 son sürümdür ve artık kullanılmıyor olarak kabul edilir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CDaoDatabase : public CObject
@@ -79,91 +80,91 @@ class CDaoDatabase : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDaoDatabase::CDaoDatabase](#cdaodatabase)|Bir `CDaoDatabase` nesne inşa eder. Nesneyi veritabanına bağlamak için arayın. `Open`|
+|[CDaoDatabase:: CDaoDatabase](#cdaodatabase)|Bir `CDaoDatabase` nesnesi oluşturur. `Open`Nesneyi bir veritabanına bağlamak için çağırın.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDaoDatabase::CanTransact](#cantransact)|Veritabanı hareketleri destekliyorsa sıfırsız döndürür.|
-|[CDaoDatabase::CanUpdate](#canupdate)|`CDaoDatabase` Nesne güncel değilse sıfırsız döndürür (salt okunur değil).|
-|[CDaoDatabase::Kapat](#close)|Veritabanı bağlantısını kapatır.|
-|[CDaoDatabase::Oluştur](#create)|Altta yatan DAO veritabanı nesnesini oluşturur `CDaoDatabase` ve nesneyi başharfe amer.|
-|[CDaoDatabase::CreateRelation](#createrelation)|Veritabanındaki tablolar arasında yeni bir ilişki tanımlar.|
-|[CDaoDatabase::DeleteQueryDef](#deletequerydef)|Veritabanının QueryDefs koleksiyonunda kaydedilen bir querydef nesnesini siler.|
-|[CDaoDatabase::Deleteİlişki](#deleterelation)|Veritabanındaki tablolar arasındaki varolan ilişkiyi siler.|
-|[CDaoDatabase::DeleteTableDef](#deletetabledef)|Veritabanındaki tablonun tanımını siler. Bu, gerçek tabloyu ve tüm verilerini siler.|
-|[CDaoDatabase::Yürüt](#execute)|Eylem sorgusu yürütür. Sonuçları `Execute` döndüren bir sorgu için çağrı bir özel durum oluşturur.|
-|[CDaoDatabase::GetConnect](#getconnect)|Nesneyi veritabanına bağlamak `CDaoDatabase` için kullanılan bağlantı dizesini döndürür. ODBC için kullanılır.|
-|[CDaoDatabase::GetName](#getname)|Şu anda kullanılmakta olan veritabanının adını döndürür.|
-|[CDaoDatabase::GetQueryDefCount](#getquerydefcount)|Veritabanı için tanımlanan sorgu sayısını döndürür.|
-|[CDaoDatabase::GetQueryDefInfo](#getquerydefinfo)|Veritabanında tanımlanan belirli bir sorgu yla ilgili bilgileri verir.|
-|[CDaoDatabase::GetQueryTimeout](#getquerytimeout)|Veritabanı sorgusu işlemlerinin zaman dolana bakacağı saniye sayısını döndürür. Sonraki tüm açıkları etkiler, yeni ekleme, güncelleştirme ve güncelleştirme işlemleri ve aramalar gibi `Execute` ODBC veri kaynaklarındaki diğer işlemleri (yalnızca) etkiler.|
-|[CDaoDatabase::GetRecordsAffected](#getrecordsaffected)|Son güncelleştirme, düzenleme veya ekleme işleminden veya `Execute`bir çağrıdan etkilenen kayıt sayısını verir.|
-|[CDaoDatabase::GetRelationCount](#getrelationcount)|Veritabanındaki tablolar arasında tanımlanan ilişki sayısını döndürür.|
-|[CDaoDatabase::GetRelationInfo](#getrelationinfo)|Veritabanındaki tablolar arasında tanımlanan belirli bir ilişki yle ilgili bilgileri verir.|
-|[CDaoDatabase::GetTableDefCount](#gettabledefcount)|Veritabanında tanımlanan tablo sayısını döndürür.|
-|[CDaoDatabase::GetTableDefInfo](#gettabledefinfo)|Veritabanında belirtilen bir tablo yla ilgili bilgileri verir.|
-|[CDaoDatabase::GetVersion](#getversion)|Veritabanı yla ilişkili veritabanı altyapısının sürümünü döndürür.|
-|[CDaoDatabase::Açık](#isopen)|Nesne şu anda bir veritabanına `CDaoDatabase` bağlıysa sıfırsız döndürür.|
-|[CDaoDatabase::Aç](#open)|Veritabanına bağlantı kurar.|
-|[CDaoDatabase::SetQueryTimeout](#setquerytimeout)|Veritabanı sorgusu işlemlerinin (yalnızca ODBC veri kaynaklarında) zaman dolandırılacak saniye sayısını ayarlar. Sonraki tüm açık, yeni ekleme, güncelleştirme ve silme işlemlerini etkiler.|
+|[CDaoDatabase:: CanTransact](#cantransact)|Veritabanı işlemleri destekliyorsa sıfır dışında bir değer döndürür.|
+|[CDaoDatabase:: CanUpdate](#canupdate)|`CDaoDatabase`Nesne güncelleştirilebilir ise (salt okunurdur) sıfır dışında bir değer döndürür.|
+|[CDaoDatabase:: Close](#close)|Veritabanı bağlantısını kapatır.|
+|[CDaoDatabase:: Create](#create)|Temel alınan DAO veritabanı nesnesini oluşturur ve nesnesini başlatır `CDaoDatabase` .|
+|[CDaoDatabase:: CreateRelation](#createrelation)|Veritabanındaki tablolar arasında yeni bir ilişki tanımlar.|
+|[CDaoDatabase::D eleteQueryDef](#deletequerydef)|Veritabanının QueryDefs koleksiyonunda kaydedilen bir QueryDef nesnesini siler.|
+|[CDaoDatabase::D eleteRelation](#deleterelation)|Veritabanındaki tablolar arasında varolan bir ilişkiyi siler.|
+|[CDaoDatabase::D eleteTableDef](#deletetabledef)|Veritabanındaki bir tablonun tanımını siler. Bu, gerçek tabloyu ve tüm verilerini siler.|
+|[CDaoDatabase:: Execute](#execute)|Bir eylem sorgusu yürütür. `Execute`Sonuçlar döndüren bir sorgu için çağırmak özel durum oluşturur.|
+|[CDaoDatabase:: GetConnect](#getconnect)|Nesneyi bir veritabanına bağlamak için kullanılan bağlantı dizesini döndürür `CDaoDatabase` . ODBC için kullanılır.|
+|[CDaoDatabase:: GetName](#getname)|Kullanılmakta olan veritabanının adını döndürür.|
+|[CDaoDatabase:: GetQueryDefCount](#getquerydefcount)|Veritabanı için tanımlanan sorguların sayısını döndürür.|
+|[CDaoDatabase:: Getquerydefinınfo](#getquerydefinfo)|Veritabanında tanımlanan belirli bir sorgu hakkında bilgi döndürür.|
+|[CDaoDatabase:: GetQueryTimeout](#getquerytimeout)|Veritabanı sorgusu işlemlerinin zaman aşımına geçmesi için geçmesi gereken saniye sayısını döndürür. Tüm sonraki açık, yeni, güncelleştirme ve düzenleme işlemlerini ve ODBC veri kaynaklarına (yalnızca) çağrı gibi diğer işlemleri etkiler `Execute` .|
+|[CDaoDatabase:: Getrecordsabetkilenen](#getrecordsaffected)|Son güncelleştirme, düzenleme veya ekleme işleminden etkilenen kayıt sayısını ya da öğesine yapılan çağrıyı döndürür `Execute` .|
+|[CDaoDatabase:: GetRelationCount](#getrelationcount)|Veritabanındaki tablolar arasında tanımlanan ilişki sayısını döndürür.|
+|[CDaoDatabase:: GetRelationInfo](#getrelationinfo)|Veritabanındaki tablolar arasında tanımlanan belirli bir ilişki hakkındaki bilgileri döndürür.|
+|[CDaoDatabase:: GetTableDefCount](#gettabledefcount)|Veritabanında tanımlanan tablo sayısını döndürür.|
+|[CDaoDatabase:: Gettabledefinınfo](#gettabledefinfo)|Veritabanında belirtilen tablo hakkındaki bilgileri döndürür.|
+|[CDaoDatabase:: GetVersion](#getversion)|Veritabanıyla ilişkili veritabanı altyapısının sürümünü döndürür.|
+|[CDaoDatabase:: IsOpen](#isopen)|`CDaoDatabase`Nesne şu anda bir veritabanına bağlıysa sıfır olmayan bir değer döndürür.|
+|[CDaoDatabase:: Open](#open)|Bir veritabanına bağlantı kurar.|
+|[CDaoDatabase:: SetQueryTimeout](#setquerytimeout)|Veritabanı sorgusu işlemlerinin (yalnızca ODBC veri kaynaklarında) zaman aşımına uğrar olan saniye sayısını ayarlar. Sonraki açık, yeni, güncelleştirme ve silme işlemlerini etkiler.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CDaoVeritabanı::m_pDAODatabase](#m_pdaodatabase)|Altta yatan DAO veritabanı nesnesine bir işaretçi.|
-|[CDaoVeritabanı::m_pWorkspace](#m_pworkspace)|Veritabanını içeren ve işlem alanını tanımlayan [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesnesine işaretçi.|
+|[CDaoDatabase:: m_pDAODatabase](#m_pdaodatabase)|Temel alınan DAO veritabanı nesnesine yönelik bir işaretçi.|
+|[CDaoDatabase:: m_pWorkspace](#m_pworkspace)|Veritabanını içeren ve işlem alanını tanımlayan [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesnesine yönelik bir işaretçi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Desteklenen veritabanı biçimleri hakkında daha fazla bilgi için [GetName](../../mfc/reference/cdaoworkspace-class.md#getname) üye işlevine bakın. [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) `CDaoDatabase` nesnesi tarafından temsil edilen belirli bir "çalışma alanında" bir anda etkin bir veya daha fazla nesneniz olabilir. Çalışma alanı, Veritabanları koleksiyonu adı verilen açık veritabanı nesneleri koleksiyonunu korur.
+Desteklenen veritabanı biçimleri hakkında daha fazla bilgi için bkz. [GetName](../../mfc/reference/cdaoworkspace-class.md#getname) üye işlevi. Bir bir veya daha fazla `CDaoDatabase` nesneniz, belirli bir "çalışma alanında" bir [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesnesi tarafından temsil edilen bir anda etkin olabilir. Çalışma alanı, veritabanları koleksiyonu olarak adlandırılan açık veritabanı nesnelerinin bir koleksiyonunu tutar.
 
 ## <a name="usage"></a>Kullanım
 
-Kayıt kümesi nesneleri oluşturduğunuzda, veritabanı nesnelerini dolaylı olarak oluşturabilirsiniz. Ancak veritabanı nesnelerini açıkça oluşturabilirsiniz. Varolan bir veritabanını `CDaoDatabase`açıkça kullanmak için aşağıdakilerden birini yapın:
+Kayıt kümesi nesneleri oluştururken örtük olarak veritabanı nesneleri oluşturabilirsiniz. Ancak, açıkça veritabanı nesneleri de oluşturabilirsiniz. Var olan bir veritabanını ile açık olarak kullanmak için `CDaoDatabase` aşağıdakilerden birini yapın:
 
-- Açık `CDaoDatabase` bir [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesnesine işaretçi geçerek bir nesne oluştur.
+- Açık bir `CDaoDatabase` [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesnesine işaretçi geçirerek bir nesne oluşturun.
 
-- Veya çalışma `CDaoDatabase` alanını belirtmeden bir nesne oluşturun (MFC geçici bir çalışma alanı nesnesi oluşturur).
+- Ya da `CDaoDatabase` çalışma alanını belirtmeden bir nesne oluşturun (MFC geçici bir çalışma alanı nesnesi oluşturur).
 
-Yeni bir Microsoft Jet oluşturmak için (. MDB) veritabanı, `CDaoDatabase` bir nesne oluşturmak ve üye [işlev oluştur.](#create) Sonra *aramayın.* `Open` `Create`
+Yeni bir Microsoft Jet (. MDB) veritabanı, bir `CDaoDatabase` nesne oluşturun ve üye [Oluştur](#create) işlevini çağırın. Sonrasında *çağırmayın* `Open` `Create` .
 
-Varolan bir veritabanını `CDaoDatabase` açmak için bir nesne oluşturmak ve [Açık](#open) üye işlevini çağırın.
+Var olan bir veritabanını açmak için bir `CDaoDatabase` nesne oluşturun ve [Açık](#open) üye işlevini çağırın.
 
-Bu tekniklerden herhangi biri, DAO veritabanı nesnesini çalışma alanının Veritabanları koleksiyonuna ekler ve verilere bağlantı açar. Daha sonra [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md)veya [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) nesneleri bağlı veritabanında çalışmak için, bu nesneler için oluşturucular nesnenize `CDaoDatabase` bir işaretçi geçmek oluşturmak. Bağlantıyı kullanmayı bitirdiğinizde, [Kapat](#close) üye işlevini arayın `CDaoDatabase` ve nesneyi yok edin. `Close`daha önce kapatmadığınız kayıt kümelerini kapatır.
+Bu tekniklerin herhangi biri, DAO veritabanı nesnesini çalışma alanının veritabanları koleksiyonuna ekler ve verilere bir bağlantı açar. Daha sonra, bağlantılı veritabanında çalıştırmak üzere [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md)veya [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) nesneleri oluşturduğunuzda, bu nesnelere yönelik oluşturucuları nesneniz için bir işaretçi geçirin `CDaoDatabase` . Bağlantıyı kullanmayı bitirdiğinizde, [Close](#close) üye işlevini çağırın ve nesneyi yok edin `CDaoDatabase` . `Close` daha önce kapatılmayan tüm kayıt kümelerini kapatır.
 
 ## <a name="transactions"></a>İşlemler
 
-Veritabanı işlem işleme çalışma alanı düzeyinde sağlanır - [BeginTrans](../../mfc/reference/cdaoworkspace-class.md#begintrans)bakın , [CommitTrans](../../mfc/reference/cdaoworkspace-class.md#committrans), `CDaoWorkspace`ve sınıfın [Rollback](../../mfc/reference/cdaoworkspace-class.md#rollback) üye işlevleri .
+Veritabanı işlem işleme çalışma alanı düzeyinde sağlanır — sınıfının [BeginTrans](../../mfc/reference/cdaoworkspace-class.md#begintrans), [CommitTrans](../../mfc/reference/cdaoworkspace-class.md#committrans)ve [Rollback](../../mfc/reference/cdaoworkspace-class.md#rollback) üye işlevlerine bakın `CDaoWorkspace` .
 
 ## <a name="odbc-connections"></a>ODBC Bağlantıları
 
-ODBC veri kaynaklarıyla çalışmanın önerilen yolu, bir Microsoft Jet'ine () harici tablolar eklemektir. MDB) veritabanı.
+ODBC veri kaynakları ile çalışmanın önerilen yolu, dış tabloları bir Microsoft Jet 'e eklemektir (. MDB) veritabanı.
 
 ## <a name="collections"></a>Koleksiyonlar
 
-Her veritabanı tabledef, querydef, recordset ve ilişki nesnelerinin kendi koleksiyonlarını tutar. Sınıf, `CDaoDatabase` bu nesneleri işlemek için üye işlevleri sağlar.
+Her veritabanı kendi TableDef, QueryDef, Recordset ve Relation nesneleri koleksiyonlarını korur. Sınıfı, `CDaoDatabase` Bu nesneleri işlemek için üye işlevleri sağlar.
 
 > [!NOTE]
-> Nesneler MFC veritabanı nesnesinde değil, DAO'da depolanır. MFC, tablodef, querydef ve recordset nesneleri için sınıflar sağlar, ancak ilişki nesneleri için değil.
+> Nesneler, MFC veritabanı nesnesinde değil, DAO 'da depolanır. MFC, TableDef, QueryDef ve Recordset nesneleri için sınıflar sağlar ancak ilişki nesneleri için kullanmaz.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 `CDaoDatabase`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxdao.h
+**Üstbilgi:** afxdao. h
 
-## <a name="cdaodatabasecantransact"></a><a name="cantransact"></a>CDaoDatabase::CanTransact
+## <a name="cdaodatabasecantransact"></a><a name="cantransact"></a> CDaoDatabase:: CanTransact
 
-Veritabanının hareketlere izin verip vermeyemeyeceğini belirlemek için bu üye işlevini arayın.
+Veritabanının işlemlere izin verip içermediğini öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL CanTransact();
@@ -171,15 +172,15 @@ BOOL CanTransact();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Veritabanı hareketleri destekliyorsa sıfırolmayan; aksi takdirde 0.
+Veritabanı işlemleri destekliyorsa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hareketler veritabanının çalışma alanında yönetilir.
+İşlemler, veritabanının çalışma alanında yönetilir.
 
-## <a name="cdaodatabasecanupdate"></a><a name="canupdate"></a>CDaoDatabase::CanUpdate
+## <a name="cdaodatabasecanupdate"></a><a name="canupdate"></a> CDaoDatabase:: CanUpdate
 
-Nesnenin `CDaoDatabase` güncelleştirmelere izin verip vermeyemeyeceğini belirlemek için bu üye işlevi arayın.
+Nesnenin güncelleştirmelere izin verip içermediğini öğrenmek için bu üye işlevi çağırın `CDaoDatabase` .
 
 ```
 BOOL CanUpdate();
@@ -187,15 +188,15 @@ BOOL CanUpdate();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne güncelleştirmeleri `CDaoDatabase` izin veriyorsa sıfır olmayan; aksi takdirde 0, `CDaoDatabase` nesneyi açtığınızda *bReadOnly* TRUE geçti ya da veritabanı kendisi okunur olduğunu belirten. [Açık](#open) üye işlevine bakın.
+`CDaoDatabase`Nesne güncelleştirmelere izin veriyorsa sıfır olmayan BIR değer; Aksi takdirde 0, nesneyi açtığınızda *bReadOnly* içinde doğru geçtiğini `CDaoDatabase` veya veritabanının kendisinin salt okunur olduğunu belirtir. [Açık](#open) üye işlevine bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Veritabanı güncellenebilirliği hakkında daha fazla bilgi için DAO Yardım'daki "Güncellenebilir Özellik" konusuna bakın.
+Veritabanı güncellenebilirliği hakkında daha fazla bilgi için, DAO yardımı 'nda "güncelleştirilebilir özellik" konusuna bakın.
 
-## <a name="cdaodatabasecdaodatabase"></a><a name="cdaodatabase"></a>CDaoDatabase::CDaoDatabase
+## <a name="cdaodatabasecdaodatabase"></a><a name="cdaodatabase"></a> CDaoDatabase:: CDaoDatabase
 
-Bir `CDaoDatabase` nesne inşa eder.
+Bir `CDaoDatabase` nesnesi oluşturur.
 
 ```
 CDaoDatabase(CDaoWorkspace* pWorkspace = NULL);
@@ -203,23 +204,23 @@ CDaoDatabase(CDaoWorkspace* pWorkspace = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*pÇalışma alanı*<br/>
-Yeni veritabanı `CDaoWorkspace` nesnesi içerecek nesneye bir işaretçi. NULL varsayılan değerini kabul ederseniz, oluşturucu varsayılan `CDaoWorkspace` DAO çalışma alanı kullanan geçici bir nesne oluşturur. [m_pWorkspace](#m_pworkspace) veri üyesi aracılığıyla çalışma alanı nesnesine bir işaretçi alabilirsiniz.
+*pWorkspace*<br/>
+`CDaoWorkspace`Yeni veritabanı nesnesini içerecek nesneye yönelik bir işaretçi. NULL varsayılan değerini kabul ediyorsanız, Oluşturucu `CDaoWorkspace` varsayılan DAO çalışma alanını kullanan geçici bir nesne oluşturur. [M_pWorkspace](#m_pworkspace) veri üyesi aracılığıyla çalışma alanı nesnesine bir işaretçi alabilirsiniz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneyi oluşturduktan sonra, yeni bir Microsoft Jet oluşturuyorsanız (. MDB) veritabanı, nesnenin [Create](#create) üye işlevini arayın. Bunun yerine varolan bir veritabanını açıyorsanız, nesnenin [Açık](#open) üye işlevini arayın.
+Nesnesi oluşturulduktan sonra, yeni bir Microsoft Jet (. MDB) veritabanı, nesnenin üye [Oluştur](#create) işlevini çağırın. Bunun yerine, var olan bir veritabanını açarak nesnenin [Açık](#open) üye işlevini çağırın.
 
-Nesneyle bitirdiğinizde, [Yakın](#close) üye işlevini aramalı ve `CDaoDatabase` nesneyi yok etmelisiniz.
+Nesnesiyle bitirdiğinizde, [Close](#close) üye işlevini çağırmanız ve sonra nesneyi yok etmeniz gerekir `CDaoDatabase` .
 
-Nesneyi belge sınıfınıza gömmeyi `CDaoDatabase` uygun bulabilirsiniz.
+Nesneyi belge sınıfınıza katıştırmayı kullanışlı bulabilirsiniz `CDaoDatabase` .
 
 > [!NOTE]
-> Bir `CDaoDatabase` [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesini varolan `CDaoDatabase` bir nesneye işaretçi geçmeden açarsanız, nesne de dolaylı olarak oluşturulur. Kayıt kümesi nesnesini kapattığınızda bu veritabanı nesnesi kapatılır.
+> `CDaoDatabase`Varolan bir nesneye işaretçi geçirmeden bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) nesnesi açarsanız, nesne de örtük olarak oluşturulur `CDaoDatabase` . Bu veritabanı nesnesi, kayıt kümesi nesnesini kapattığınızda kapatılır.
 
-## <a name="cdaodatabaseclose"></a><a name="close"></a>CDaoDatabase::Kapat
+## <a name="cdaodatabaseclose"></a><a name="close"></a> CDaoDatabase:: Close
 
-Veritabanının bağlantısını kesmek ve veritabanıyla ilişkili açık kayıt kümelerini, tabledef'leri ve querydefs'i kapatmak için bu üye işlevini arayın.
+Bir veritabanının bağlantısını kesmek ve veritabanıyla ilişkili açık kayıt kümelerini, TableDefs ve QueryDefs 'leri kapatmak için bu üye işlevi çağırın.
 
 ```
 virtual void Close();
@@ -227,19 +228,19 @@ virtual void Close();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi çağırmadan önce bu nesneleri kendiniz kapatmak iyi bir uygulamadır. Nesneyi `CDaoDatabase` kapatma, nesneyi ilişkili [çalışma alanındaki](../../mfc/reference/cdaoworkspace-class.md)Veritabanları koleksiyonundan kaldırır. Nesneyi yok `Close` `CDaoDatabase` etmediğinden, aynı veritabanını veya farklı bir veritabanını açarak nesneyi yeniden kullanabilirsiniz.
+Bu üye işlevini çağırabilmeniz için bu nesneleri kendiniz kapatmak iyi bir uygulamadır. Bir `CDaoDatabase` nesnenin kapatılması, ilişkili [çalışma alanındaki](../../mfc/reference/cdaoworkspace-class.md)veritabanları koleksiyonundan kaldırılır. `Close`Nesneyi yok etmez `CDaoDatabase` , aynı veritabanını veya farklı bir veritabanını açarak nesneyi yeniden kullanabilirsiniz.
 
 > [!CAUTION]
-> Bir veritabanını kapatmadan önce [Tüm](../../mfc/reference/cdaorecordset-class.md#update) açık kayıt `Close` kümesi nesnelerinde Üye işlevin ilerkisini (bekleyen ayarlamalar varsa) ve üye işlevi arayın. [Yığında CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) veya `CDaoDatabase` nesneleri bildiren bir işlevden çıkarsanız, veritabanı kapatılır, kaydedilmemiş değişiklikler kaybolur, bekleyen tüm hareketler geri alınır ve verileriniz için bekleyen tüm değişiklikler kaybolur.
+> [](../../mfc/reference/cdaorecordset-class.md#update) `Close` Bir veritabanını kapatmadan önce açık olan tüm kayıt kümesi nesnelerinde, Update member işlevini (bekleyen düzenlemeler varsa) ve üye işlevini çağırın. Yığın üzerinde [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) veya nesneleri bildiren bir işlevden çıkarsanız, `CDaoDatabase` veritabanı kapatılır, kaydedilmemiş değişiklikler kaybolur, bekleyen tüm işlemler geri alınır ve verilerinizde bekleyen tüm düzenlemeler kaybedilir.
 
 > [!CAUTION]
-> Kayıt kümesi nesneleri açıkken bir veritabanı nesnesini kapatmaya çalışırsanız veya belirli bir çalışma alanına ait veritabanı nesneleri açıkken bir çalışma alanı nesnesini kapatmaya çalışırsanız, bu kayıt kümesi nesneleri kapatılır ve bekleyen güncelleştirmeler veya denetimler geri alınır. Bir çalışma alanı nesnesini, veritabanı nesneleri açıkken kapatmaya çalışırsanız, işlem o belirli çalışma alanı nesnesine ait tüm veritabanı nesnelerini kapatır ve bu da kapalı kayıt kümesi nesnelerinin kapatılmasına neden olabilir. Veritabanı nesnenizi kapatmazsanız, Hata ayıklama yapılığında Bir söz çözüm çağrısını müştürü
+> Herhangi bir kayıt kümesi nesnesi açıkken bir veritabanı nesnesini kapatmaya çalışırsanız veya belirli bir çalışma alanına ait herhangi bir veritabanı nesnesi açıkken bir çalışma alanı nesnesini kapatmaya çalışırsanız, bu kayıt kümesi nesneleri kapatılır ve bekleyen güncelleştirmeler veya düzenlemeler geri alınacaktır. Bir çalışma alanı nesnesini, kendisine ait herhangi bir veritabanı nesnesi açık durumdayken kapatmaya çalışırsanız, işlem söz konusu çalışma alanı nesnesine ait tüm veritabanı nesnelerini kapatır ve bu, kapatılmamış kayıt kümesi nesnelerinin kapatılmasına neden olabilir. Veritabanı nesneniz kapanmaz, MFC hata ayıklama yapılarında bir onaylama hatası bildiriyor.
 
-Veritabanı nesnesi bir işlevin kapsamı dışında tanımlanırsa ve işlevi kapatmadan çıkarsanız, veritabanı nesnesi açıkça kapanana veya tanımlandığı modül kapsam dışında kalana kadar açık kalır.
+Veritabanı nesnesi bir işlevin kapsamı dışında tanımlıysa ve işlevden çıkmadan çıkarsanız, açıkça kapatılana veya tanımlandığı modül kapsam dışına çıkana kadar veritabanı nesnesi açık kalır.
 
-## <a name="cdaodatabasecreate"></a><a name="create"></a>CDaoDatabase::Oluştur
+## <a name="cdaodatabasecreate"></a><a name="create"></a> CDaoDatabase:: Create
 
-Yeni bir Microsoft Jet oluşturmak için (. MDB) veritabanı, bir `CDaoDatabase` nesne inşa ettikten sonra bu üye işlevi arayın.
+Yeni bir Microsoft Jet (. MDB) veritabanı, bir nesnesi oluşturduktan sonra bu üye işlevini çağırın `CDaoDatabase` .
 
 ```
 virtual void Create(
@@ -250,70 +251,70 @@ virtual void Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-Oluşturduğunuz veritabanı dosyasının adı olan dize ifadesi. "C:\\\MYDB" gibi tam yol ve dosya adı olabilir. MDB". Bir isim vermelisin. Dosya adı uzantısı sağlamazsanız, . MDB eklenir. Ağınız tek düzen adlandırma kuralını (UNC) destekliyorsa,\\\\\\"\MYSERVER\\\MYSHARE\\\MYDIR\\\MYDB" gibi bir ağ yolu da belirtebilirsiniz. Yalnızca Microsoft Jet (. MDB) veritabanı dosyaları bu üye işlevi kullanılarak oluşturulabilir. (Çift backslashes dize literals\\gereklidir çünkü " " C++ kaçış karakteridir.)
+*lpszName*<br/>
+Oluşturmakta olduğunuz veritabanı dosyasının adı olan bir dize ifadesi. "C: \Mydb" gibi tam yol ve dosya adı olabilir \\ . MDB ". Bir ad belirtmeniz gerekir. Bir dosya adı uzantısı belirtmezseniz,. MDB eklenir. Ağınız Tekdüzen adlandırma kuralını (UNC) destekliyorsa, " \\ \\ \\ \sunucum \\ \ myshare \\ \mydizinim \\ \mydb" gibi bir ağ yolu da belirtebilirsiniz. Yalnızca Microsoft Jet (. MDB) veritabanı dosyaları, bu üye işlevi kullanılarak oluşturulabilir. ("" C++ kaçış karakteri olduğundan, dize değişmez değerlerinde çift ters eğik çizgiler gereklidir \\ .)
 
-*lpszYerele*<br/>
-Veritabanı oluşturmak için harmanlama sırası belirtmek için kullanılan bir dize ifadesi. Varsayılan değer: `dbLangGeneral`. Olası değerler şunlardır:
+*lpszLocale*<br/>
+Veritabanı oluşturmak için harmanlama sırasını belirtmek için kullanılan bir dize ifadesi. `dbLangGeneral` varsayılan değerdir. Olası değerler şunlardır:
 
-- `dbLangGeneral`İngilizce, Almanca, Fransızca, Portekizce, İtalyanca ve Modern İspanyolca
+- `dbLangGeneral` İngilizce, Almanca, Fransızca, Portekizce, Italyanca ve modern Ispanyolca
 
-- `dbLangArabic`Arapça
+- `dbLangArabic` Arapça
 
-- `dbLangCyrillic`Rusça
+- `dbLangCyrillic` Rusça
 
-- `dbLangCzech`Çekçe
+- `dbLangCzech` Çekçe
 
-- `dbLangDutch`Hollanda dili
+- `dbLangDutch` Hollanda dili
 
-- `dbLangGreek`Yunanca
+- `dbLangGreek` Yunanca
 
-- `dbLangHebrew`İbranice
+- `dbLangHebrew` İbranice
 
-- `dbLangHungarian`Macarca
+- `dbLangHungarian` Macarca
 
-- `dbLangIcelandic`İzlanda dili
+- `dbLangIcelandic` İzlanda dili
 
-- `dbLangNordic`İskandinav dilleri (yalnızca Microsoft Jet veritabanı altyapısı sürümü 1.0)
+- `dbLangNordic` İskandinav dilleri (yalnızca Microsoft Jet veritabanı altyapısı sürüm 1,0)
 
-- `dbLangNorwdan`Norveççe ve Danimarkaca
+- `dbLangNorwdan` Norveççe ve Danca
 
-- `dbLangPolish`Lehçe
+- `dbLangPolish` Lehçe
 
-- `dbLangSpanish`Geleneksel İspanyolca
+- `dbLangSpanish` Geleneksel Ispanyolca
 
-- `dbLangSwedfin`İsveççe ve Fince
+- `dbLangSwedfin` İsveççe ve Fince
 
-- `dbLangTurkish`Türkçe
+- `dbLangTurkish` Türkçe
 
-*Dwoptions*<br/>
-Bir veya daha fazla seçeneği gösteren bir sonsayı. Olası değerler şunlardır:
+*dwOptions*<br/>
+Bir veya daha fazla seçeneği belirten tamsayı. Olası değerler şunlardır:
 
-- `dbEncrypt`Şifreli bir veritabanı oluşturun.
+- `dbEncrypt` Şifrelenmiş bir veritabanı oluşturun.
 
-- `dbVersion10`Microsoft Jet veritabanı sürüm 1.0 ile bir veritabanı oluşturun.
+- `dbVersion10` Microsoft Jet veritabanı sürüm 1,0 ile bir veritabanı oluşturun.
 
-- `dbVersion11`Microsoft Jet veritabanı sürüm 1.1 ile bir veritabanı oluşturun.
+- `dbVersion11` Microsoft Jet veritabanı sürüm 1,1 ile bir veritabanı oluşturun.
 
-- `dbVersion20`Microsoft Jet veritabanı sürüm 2.0 ile bir veritabanı oluşturun.
+- `dbVersion20` Microsoft Jet veritabanı sürüm 2,0 ile bir veritabanı oluşturun.
 
-- `dbVersion30`Microsoft Jet veritabanı sürüm 3.0 ile bir veritabanı oluşturun.
+- `dbVersion30` Microsoft Jet veritabanı sürüm 3,0 ile bir veritabanı oluşturun.
 
-Şifreleme sabitini atlarsanız, şifrelenmemiş bir veritabanı oluşturulur. Yalnızca bir sürüm sabiti belirtebilirsiniz. Bir sürüm sabitini atlarsanız, Microsoft Jet veritabanı sürüm 3.0'ı kullanan bir veritabanı oluşturulur.
+Şifreleme sabitini atlarsanız, şifrelenmemiş bir veritabanı oluşturulur. Yalnızca bir sürüm sabiti belirtebilirsiniz. Bir sürüm sabitini atlarsanız, Microsoft Jet veritabanı sürüm 3,0 ' ı kullanan bir veritabanı oluşturulur.
 
 > [!CAUTION]
-> Bir veritabanı şifrelenmemişse, kullanıcı/parola güvenliğini uygulasanız bile veritabanını oluşturan ikili disk dosyasını doğrudan okumak mümkündür.
+> Bir veritabanı şifrelenmemişse, veritabanını oluşturan ikili disk dosyasını doğrudan okumak için Kullanıcı/parola güvenliği uygulasanız bile mümkündür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Create`veritabanı dosyasını ve altta yatan DAO veritabanı nesnesini oluşturur ve C++ nesnesini açar. Nesne ilişkili çalışma alanının Veritabanları koleksiyonuna eklenir. Veritabanı nesnesi açık durumda; sonra aramayın. `Open*` `Create`
+`Create` veritabanı dosyasını ve temel alınan DAO veritabanı nesnesini oluşturur ve C++ nesnesini başlatır. Nesne, ilişkili çalışma alanının veritabanları koleksiyonuna eklenir. Veritabanı nesnesi açık durumda; sonrasında çağırmayın `Open*` `Create` .
 
 > [!NOTE]
-> Ile, `Create`yalnızca Microsoft Jet oluşturabilirsiniz (. MDB) veritabanları. ISAM veritabanları veya ODBC veritabanları oluşturamazsınız.
+> İle `Create` , yalnızca Microsoft Jet (. MDB) veritabanları. ISAM veritabanları veya ODBC veritabanları oluşturamazsınız.
 
-## <a name="cdaodatabasecreaterelation"></a><a name="createrelation"></a>CDaoDatabase::CreateRelation
+## <a name="cdaodatabasecreaterelation"></a><a name="createrelation"></a> CDaoDatabase:: CreateRelation
 
-Veritabanındaki birincil tablodaki bir veya daha fazla alan la yabancı bir tablodaki (veritabanındaki başka bir tablo) bir veya daha fazla alan arasında ilişki kurmak için bu üye işlevi arayın.
+Veritabanındaki birincil tablodaki bir veya daha fazla alan ile yabancı tablodaki bir veya daha fazla alan arasında bir ilişki oluşturmak için bu üye işlevini çağırın (veritabanındaki başka bir tablo).
 
 ```cpp
 void CreateRelation(
@@ -329,54 +330,54 @@ void CreateRelation(CDaoRelationInfo& relinfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-İlişki nesnesinin benzersiz adı. Ad bir harfle başlamalı ve en fazla 40 karakter içerebilir. Sayıları içerebilir ve karakterleri alt çizebilir, ancak noktalama işareti veya boşluk içeremez.
+*lpszName*<br/>
+İlişki nesnesinin benzersiz adı. Ad bir harfle başlamalı ve en fazla 40 karakter içerebilir. Sayılar ve alt çizgi karakterlerini içerebilir, ancak noktalama veya boşluk içeremez.
 
 *lpszTable*<br/>
-İlişkideki birincil tablonun adı. Tablo yoksa, MFC [cdaoException](../../mfc/reference/cdaoexception-class.md)türübir özel durum atar.
+İlişkide birincil tablonun adı. Tablo yoksa, MFC, [CDaoException](../../mfc/reference/cdaoexception-class.md)türünde bir özel durum oluşturur.
 
 *lpszForeignTable*<br/>
-İlişkideki yabancı tablonun adı. Tablo yoksa, MFC türünden `CDaoException`bir özel durum atar.
+İlişkide yabancı tablonun adı. Tablo yoksa, MFC türünde bir özel durum oluşturur `CDaoException` .
 
 *lAttributes*<br/>
-İlişki türü hakkında bilgi içeren uzun bir değer. Bu değeri, diğer şeylerin yanı sıra başvuru bütünlüğünü zorlamak için kullanabilirsiniz. Aşağıdaki değerlerden herhangi birini birleştirmek için bitwise-OR işleci **(&#124;) **kullanabilirsiniz (kombinasyon mantıklı olduğu sürece):
+İlişki türü hakkında bilgi içeren uzun bir değer. Bu değeri, diğer şeyler arasında başvurusal bütünlüğü zorlamak için kullanabilirsiniz. Aşağıdaki değerlerden herhangi birini birleştirmek için bit düzeyinde OR işlecini ( **&#124;**) kullanabilirsiniz (bileşim anlamlı olduğu sürece):
 
-- `dbRelationUnique`İlişki bire birdir.
+- `dbRelationUnique` İlişki bire bir.
 
-- `dbRelationDontEnforce`İlişki zorlanmaz (başvuru bütünlüğü yoktur).
+- `dbRelationDontEnforce` İlişki zorlanmaz (başvurusal bütünlük yok).
 
-- `dbRelationInherited`İlişki, iki eklenmiş tabloiçeren geçerli olmayan bir veritabanında vardır.
+- `dbRelationInherited` İlişki, iki bağlantılı tabloyu içeren geçerli olmayan bir veritabanında bulunuyor.
 
-- `dbRelationUpdateCascade`Güncelleştirmeler basamakla yıkacak (basamaklı daha fazla bilgi için Açıklamalar'a bakın).
+- `dbRelationUpdateCascade` Güncelleştirmeler basamaklandıralınacaktır (daha fazla bilgi için bkz. açıklamalar).
 
-- `dbRelationDeleteCascade`Silmeler basamaklanacak.
+- `dbRelationDeleteCascade` Silme işlemleri basamaklandıracaktır.
 
 *lpszField*<br/>
-Birincil tablodaki bir alanın adını içeren null-sonlandırılan dize işaretçisi *(lpszTable*tarafından adlandırılır).
+Birincil tablodaki bir alanın adını içeren, null ile sonlandırılmış bir dize işaretçisi ( *lpszTable* tarafından adlandırılır).
 
 *lpszForeignField*<br/>
-Yabancı tablodaki bir alanın adını içeren null-sonlandırılan dize için bir işaretçi *(lpszForeignTable*tarafından adlandırılır).
+Yabancı tablodaki bir alanın adını içeren, null ile sonlandırılmış bir dize işaretçisi ( *lpszForeignTable* tarafından adlandırılır).
 
 *relinfo*<br/>
 Oluşturmak istediğiniz ilişki hakkında bilgi içeren bir [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlişki, dış veritabanından bir sorgu veya eklenmiş bir tablo içeremez.
+İlişki, bir sorgu veya bir dış veritabanından ekli tablo içeremez.
 
-İlişki iki tablonun her birinde bir alan içeriyorsa işlevin ilk sürümünü kullanın. İlişki birden çok alan içeriyorsa ikinci sürümü kullanın. Bir ilişkideki en fazla alan sayısı 14'tür.
+İlişki iki tablonun her birinde bir alan içeriyorsa, işlevin ilk sürümünü kullanın. İlişki birden çok alan içeriyorsa ikinci sürümü kullanın. Bir ilişkide en fazla alan sayısı 14 ' dir.
 
-Bu eylem altta yatan bir DAO ilişki nesnesi oluşturur, ancak MFC'nin ilişki nesnelerinin kapsülletistirimi sınıf `CDaoDatabase`içinde bulunduğundan bu bir MFC uygulama ayrıntısidir. MFC ilişkiler için bir sınıf sağlamaz.
+Bu eylem, temeldeki bir DAO ilişki nesnesi oluşturur, ancak MFC 'nin ilişki nesnelerinin kapsüllenmesi sınıfının içinde bulunduğundan bu bir MFC Uygulama ayrıntısıdır `CDaoDatabase` . MFC, ilişkiler için bir sınıf sağlamaz.
 
-İlişki nesnesinin özniteliklerini basamaklı işlemleri etkinleştirmek için ayarlarsanız, veritabanı altyapısı ilgili birincil anahtar tablolarında değişiklik yapıldığında bir veya daha fazla diğer tablodaki kayıtları otomatik olarak güncelleştirir veya siler.
+Cascade işlemlerini etkinleştirmek için Relation nesnesinin özniteliklerini ayarlarsanız, ilgili birincil anahtar tablolarında değişiklik yapıldığında veritabanı altyapısı bir veya daha fazla tablodaki kayıtları otomatik olarak güncelleştirir veya siler.
 
-Örneğin, Müşteriler tablosu ile Siparişler tablosu arasında basamaklı silme ilişkisi oluşturduğunuzu varsayalım. Müşteriler tablosundaki kayıtları sildiğinizde, bu müşteriyle ilgili Siparişler tablosundaki kayıtlar da silinir. Ayrıca, Siparişler tablosu ile diğer tablolar arasında basamaklı silme ilişkileri kurarsanız, Müşteriler tablosundaki kayıtları sildiğinizde bu tablolardaki kayıtlar otomatik olarak silinir.
+Örneğin, bir müşteriler tablosu ve Siparişler tablosu arasında basamaklı bir silme ilişkisi oluşturduğunuzu varsayalım. Müşteriler tablosundan kayıtları sildiğinizde, bu müşteriyle ilgili Siparişler tablosundaki kayıtlar da silinir. Ayrıca, Siparişler tablosu ve diğer tablolar arasında basamaklı silme ilişkileri oluşturursanız, müşteriler tablosundan kayıtları sildiğinizde bu tablolardan kayıtlar otomatik olarak silinir.
 
-İlgili bilgiler için DAO Yardım'daki "CreateRelation Method" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "CreateRelation Yöntemi" konusuna bakın.
 
-## <a name="cdaodatabasedeletequerydef"></a><a name="deletequerydef"></a>CDaoDatabase::DeleteQueryDef
+## <a name="cdaodatabasedeletequerydef"></a><a name="deletequerydef"></a> CDaoDatabase::D eleteQueryDef
 
-Belirtilen querydef 'i ( kayıtlı sorgu) nesnenin `CDaoDatabase` QueryDefs koleksiyonundan silmek için bu üye işlevini arayın.
+Nesnenin QueryDefs koleksiyonundan belirtilen QueryDef (kaydedilmiş sorgu) öğesini silmek için bu üye işlevi çağırın `CDaoDatabase` .
 
 ```cpp
 void DeleteQueryDef(LPCTSTR lpszName);
@@ -384,18 +385,18 @@ void DeleteQueryDef(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
+*lpszName*<br/>
 Silinecek kaydedilen sorgunun adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha sonra, bu sorgu artık veritabanında tanımlanmaz.
+Daha sonra, bu sorgu artık veritabanında tanımlı değildir.
 
-querydef nesneleri oluşturma hakkında bilgi için [cDaoQueryDef sınıfına](../../mfc/reference/cdaoquerydef-class.md)bakın. Bir querydef `CDaoDatabase` `CDaoQueryDef` nesnesi, nesneyi oluşturarak veritabanı nesnesine bir işaretçi geçirdiğinizde belirli bir nesneyle ilişkilendirilmeye neden olur.
+QueryDef nesneleri oluşturma hakkında daha fazla bilgi için bkz. Class [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md). Nesne oluşturduğunuzda bir QueryDef nesnesi belirli bir nesneyle ilişkili hale gelir `CDaoDatabase` `CDaoQueryDef` .
 
-## <a name="cdaodatabasedeleterelation"></a><a name="deleterelation"></a>CDaoDatabase::Deleteİlişki
+## <a name="cdaodatabasedeleterelation"></a><a name="deleterelation"></a> CDaoDatabase::D eleteRelation
 
-Veritabanı nesnesinin İlişkiler koleksiyonundan varolan bir ilişkiyi silmek için bu üye işlevi arayın.
+Veritabanı nesnesinin Ilişkiler koleksiyonundan varolan bir ilişkiyi silmek için bu üye işlevi çağırın.
 
 ```cpp
 void DeleteRelation(LPCTSTR lpszName);
@@ -403,18 +404,18 @@ void DeleteRelation(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-Silme ilişkisinin adı.
+*lpszName*<br/>
+Silinecek ilişkinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha sonra, ilişki artık yok.
+Daha sonra, ilişki artık mevcut değildir.
 
-İlgili bilgiler için DAO Yardım'daki "Silme Yöntemi" konusuna bakın.
+İlgili bilgiler için, DAO yardımında "Yöntem silme" konusuna bakın.
 
-## <a name="cdaodatabasedeletetabledef"></a><a name="deletetabledef"></a>CDaoDatabase::DeleteTableDef
+## <a name="cdaodatabasedeletetabledef"></a><a name="deletetabledef"></a> CDaoDatabase::D eleteTableDef
 
-Belirtilen tabloyu ve tüm verilerini nesnenin `CDaoDatabase` TableDefs koleksiyonundan silmek için bu üye işlevi arayın.
+Belirtilen tabloyu ve tüm verilerini nesnenin TableDefs koleksiyonundan silmek için bu üye işlevi çağırın `CDaoDatabase` .
 
 ```cpp
 void DeleteTableDef(LPCTSTR lpszName);
@@ -422,23 +423,23 @@ void DeleteTableDef(LPCTSTR lpszName);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-Silmek için tabledef adı.
+*lpszName*<br/>
+Silinecek TableDef 'in adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Daha sonra, bu tablo artık veritabanında tanımlı değildir.
 
 > [!NOTE]
-> Sistem tablolarını silmemeye çok dikkat edin.
+> Sistem tablolarını silmemeye dikkat edin.
 
-tabledef nesneleri oluşturma hakkında bilgi için [cDaoTableDef sınıfına](../../mfc/reference/cdaotabledef-class.md)bakın. Bir tabledef `CDaoDatabase` `CDaoTableDef` nesnesi, nesneyi oluşturarak veritabanı nesnesine bir işaretçi geçirdiğinizde belirli bir nesneyle ilişkilendirilmeye neden olur.
+TableDef nesneleri oluşturma hakkında daha fazla bilgi için bkz. Class [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md). Bir TableDef nesnesi, nesneyi oluşturduğunuzda belirli bir nesneyle ilişkili hale gelir `CDaoDatabase` `CDaoTableDef` ve bunu veritabanı nesnesine bir işaretçi geçirerek.
 
-İlgili bilgiler için DAO Yardım'daki "Silme Yöntemi" konusuna bakın.
+İlgili bilgiler için, DAO yardımında "Yöntem silme" konusuna bakın.
 
-## <a name="cdaodatabaseexecute"></a><a name="execute"></a>CDaoDatabase::Yürüt
+## <a name="cdaodatabaseexecute"></a><a name="execute"></a> CDaoDatabase:: Execute
 
-Eylem sorgusu çalıştırmak veya veritabanında bir SQL deyimi yürütmek için bu üye işlevi arayın.
+Bir eylem sorgusu çalıştırmak veya veritabanında bir SQL ifadesini yürütmek için bu üye işlevi çağırın.
 
 ```cpp
 void Execute(
@@ -448,43 +449,43 @@ void Execute(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszsql*<br/>
-Yürütmek için geçerli bir SQL komutu içeren null-sonlandırılan dize işaretçisi.
+*lpszSQL*<br/>
+Yürütülecek geçerli bir SQL komutu içeren null ile sonlandırılmış bir dize işaretçisi.
 
-*nSeçenekler*<br/>
-Sorgunun bütünlüğüyle ilgili seçenekleri belirten bir sonsyon. Aşağıdaki sabitlerden herhangi birini birleştirmek için bitwise-OR işleci **(&#124;) **kullanabilirsiniz (kombinasyon mantıklı olması `dbInconsistent` `dbConsistent`koşuluyla — örneğin, birleşemezsiniz):
+*Önemli seçenekler*<br/>
+Sorgunun bütünlüğüyle ilgili seçenekleri belirten bir tamsayı. Aşağıdaki sabitlerden herhangi birini birleştirmek için bit düzeyinde OR işlecini ( **&#124;**) kullanabilirsiniz (örneğin, birlikte birleştirmenize gerek kalmadan `dbInconsistent` `dbConsistent` ):
 
-- `dbDenyWrite`Diğer kullanıcılara yazma izni verme.
+- `dbDenyWrite` Diğer kullanıcılara yazma iznini reddetme.
 
-- `dbInconsistent`(Varsayılan) Tutarsız güncelleştirmeler.
+- `dbInconsistent` Varsayılanını Tutarsız güncelleştirmeler.
 
-- `dbConsistent`Tutarlı güncellemeler.
+- `dbConsistent` Tutarlı güncelleştirmeler.
 
-- `dbSQLPassThrough`SQL geçiş. SQL deyiminin işlenmek üzere bir ODBC veri kaynağına geçirilmesine neden olur.
+- `dbSQLPassThrough` SQL geçişli. SQL ifadesinin işlenmek üzere bir ODBC veri kaynağına geçirilmesine neden olur.
 
-- `dbFailOnError`Bir hata oluşursa güncelleştirmeleri geri ala.
+- `dbFailOnError` Bir hata oluşursa güncelleştirmeleri geri alın.
 
-- `dbSeeChanges`Başka bir kullanıcı düzenlediğiniz verileri değiştiriyorsa çalışma zamanı hatası oluşturun.
+- `dbSeeChanges` Düzenlediğiniz verileri başka bir Kullanıcı değiştiriyor ise, bir çalışma zamanı hatası oluşturun.
 
 > [!NOTE]
-> Her `dbInconsistent` ikisi `dbConsistent` de ve dahil veya hiçbiri dahil değilse, sonuç varsayılandır. Bu sabitlerin açıklaması için DAO Help'deki "Yürütme Yöntemi" konusuna bakın.
+> Her ikisi `dbInconsistent` de `dbConsistent` dahil edildiğinde veya belirtilmemişse, sonuç varsayılandır. Bu sabitlerin açıklaması için, DAO yardımı 'nda "yöntemi yürütme" konusuna bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Execute`yalnızca sonuç döndürmeyan eylem sorguları veya SQL geçiş sorguları için çalışır. Kayıtları döndüren belirli sorgular için çalışmaz.
+`Execute` yalnızca eylem sorguları veya sonuç döndürmeyen SQL geçişli sorguları için geçerlidir. Kayıtları döndüren seçme sorguları için çalışmaz.
 
-Eylem sorguları hakkında bir tanım ve bilgi için DAO Yardımı'ndaki "Eylem Sorgusu" ve "Yürütme Yöntemi" konularına bakın.
+Eylem sorgularıyla ilgili bir tanım ve bilgiler için, DAO yardımı 'nda "eylem sorgusu" ve "çalıştırma yöntemi" konularına bakın.
 
 > [!TIP]
-> Sözdizimi olarak doğru bir SQL deyimi `Execute` ve uygun izinler göz önüne alındığında, tek bir satır değiştirilmese veya silinemese bile üye işlev başarısız olmaz. Bu nedenle, `dbFailOnError` bir güncelleştirmeyi `Execute` çalıştırmak veya sorguyu silmek için üye işlevini kullanırken her zaman seçeneği kullanın. Bu seçenek, MFC'nin [CDaoException](../../mfc/reference/cdaoexception-class.md) türünden bir özel durum almasına ve etkilenen kayıtlardan herhangi biri kilitlenirse ve güncelleştirilemiyorsa veya silinemiyorsa tüm başarılı değişiklikleri geri döndürmesine neden olur. Kaç kaydın etkilendiğini `GetRecordsAffected` görmek için her zaman arayabilirsiniz.
+> Sözdizimi doğru SQL bildirisini ve uygun izinleri verildiğinde, `Execute` tek bir satır değiştirilmeyebilir veya silinebilse bile üye işlevi başarısız olmaz. Bu nedenle, `dbFailOnError` `Execute` bir güncelleştirme veya silme sorgusunu çalıştırmak için üye işlevini kullanırken her zaman seçeneğini kullanın. Bu seçenek, MFC 'nin [CDaoException](../../mfc/reference/cdaoexception-class.md) türünde bir özel durum oluşturmasını ve etkilenen kayıtlardan herhangi biri kilitliyse veya silinemediği takdirde tüm başarılı değişiklikleri geri kaydetmesine neden olur. `GetRecordsAffected`Kaç kaydın etkilendiğini görmek için her zaman çağırabileceğinizi unutmayın.
 
-En son `Execute` çağrıdan etkilenen kayıt sayısını belirlemek için veritabanı nesnesinin [GetRecordsAffected](#getrecordsaffected) üye işlevini arayın. Örneğin, `GetRecordsAffected` bir eylem sorgusu yürütürürken silinen, güncelleştirilen veya eklenen kayıt sayısıyla ilgili bilgileri döndürür. Döndürülen sayım, basamaklı güncelleştirmeler veya silmeler etkin olduğunda ilgili tablolardaki değişiklikleri yansıtmaz.
+En son çağrıdan etkilenen kayıt sayısını öğrenmek için veritabanı nesnesinin [Getrecordsaetkilenmember](#getrecordsaffected) işlevini çağırın `Execute` . Örneğin, `GetRecordsAffected` bir eylem sorgusu yürütürken silinen, güncellenen veya yerleştirilen kayıt sayısı hakkında bilgi döndürür. Döndürülen sayı, basamaklı güncelleştirmeler veya silmeler etkin olduğunda ilgili tablolardaki değişiklikleri yansıtmaz.
 
-`Execute`kayıt kümesi döndürmez. Kayıtları `Execute` seçen bir sorguda kullanmak, MFC'nin `CDaoException`bir özel durum almasına neden olur. (Benzer bir `ExecuteSQL` üye işlev `CDatabase::ExecuteSQL`yoktur.)
+`Execute` bir kayıt kümesi döndürmez. `Execute`Kayıtları seçen bir sorgu üzerinde kullanmak, MFC 'nin türünde bir özel durum oluşturmasına neden olur `CDaoException` . ( `ExecuteSQL` Öğesine benzer bir üye işlevi yok `CDatabase::ExecuteSQL` .)
 
-## <a name="cdaodatabasegetconnect"></a><a name="getconnect"></a>CDaoDatabase::GetConnect
+## <a name="cdaodatabasegetconnect"></a><a name="getconnect"></a> CDaoDatabase:: GetConnect
 
-Nesneyi ODBC veya ISAM veritabanına bağlamak için kullanılan bağlantı dizesini `CDaoDatabase` almak için bu üye işlevi arayın.
+`CDaoDatabase`Nesneyi BIR ODBC veya ISAM veritabanına bağlamak için kullanılan bağlantı dizesini almak için bu üye işlevi çağırın.
 
 ```
 CString GetConnect();
@@ -492,23 +493,23 @@ CString GetConnect();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir ODBC veri kaynağında [Open](#open) başarıyla çağrıldıysa bağlantı dizesi; aksi takdirde, boş bir dize. Bir Microsoft Jet için (. MDB) veritabanında, [yürütme](#execute) üyesi işlevi ile kullanılan `dbSQLPassThrough` veya bir kayıt kümesinin açılmasında kullanılan seçenekle kullanıma ayarladığınız sürece dize her zaman boştur.
+ODBC veri kaynağında [açma](#open) başarıyla çağrılırsa bağlantı dizesi. Aksi takdirde, boş bir dize. Bir Microsoft Jet (. MDB) veritabanı, onu `dbSQLPassThrough` [Execute](#execute) veya bir kayıt kümesi açma bölümünde kullanılan seçenekle kullanılmak üzere ayarlamadığınız müddetçe, dize her zaman boştur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dize, açık bir veritabanının veya geçiş sorgusunda kullanılan bir veritabanının kaynağı hakkında bilgi sağlar. Bağlantı dizesi, bir veritabanı türü belirtici ve sıfır veya daha fazla parametre yarım iki nokta ile ayrılmış oluşur.
+Dize, açık bir veritabanının kaynağı veya doğrudan geçiş sorgusunda kullanılan bir veritabanı hakkında bilgi sağlar. Bağlantı dizesi, bir veritabanı türü belirticisinden ve noktalı virgülle ayrılmış sıfır veya daha fazla parametreden oluşur.
 
 > [!NOTE]
-> ODBC üzerinden bir veri kaynağına bağlanmak için MFC DAO sınıflarını kullanmak, ekli bir tablo üzerinden bağlanmaktan daha az verimlidir.
+> ODBC aracılığıyla bir veri kaynağına bağlanmak için MFC DAO sınıflarını kullanmak, ekli tablo aracılığıyla bağlanılarak daha az verimlidir.
 
 > [!NOTE]
-> Bağlantı dizesi, gerektiğinde ODBC'ye ve bazı ISAM sürücülerine ek bilgi aktarmak için kullanılır. Bu için kullanılmaz. MDB veritabanları. Microsoft Jet veritabanı taban tabloları için, bağlantı dizesi, yukarıda İade Değeri altında açıklandığı gibi bir SQL geçiş sorgusu için kullandığınız durumlar dışında boş bir dizedir ("") olur.
+> Bağlantı dizesi, gereken şekilde ODBC ve belirli ISAM sürücülerine ek bilgi geçirmek için kullanılır. İçin kullanılmaz. MDB veritabanları. Microsoft Jet veritabanı temel tabloları için bağlantı dizesi, yukarıdaki dönüş değeri altında açıklandığı gibi bir SQL geçişli sorgu için kullandığınız durumlar haricinde boş bir dizedir ("").
 
-Bağlantı dizesinin nasıl oluşturulduğuna ilişkin bir açıklama için [Açık](#open) üye işlevine bakın. `Open` Bağlantı dizesi çağrıda ayarlandıktan sonra, veritabanının türünü, yolunu, kullanıcı kimliğini, Parolayı veya ODBC veri kaynağını belirlemek için ayarı denetlemek için daha sonra kullanabilirsiniz.
+Bağlantı dizesinin nasıl oluşturulduğuna ilişkin bir açıklama için bkz. [Açık](#open) üye işlevi. Çağrıda bağlantı dizesi ayarlandıktan sonra `Open` , bu ayarı daha sonra kullanarak veritabanının türünü, yolunu, Kullanıcı kimliğini, parolasını veya ODBC veri kaynağını belirleme ayarını denetleyebilirsiniz.
 
-## <a name="cdaodatabasegetname"></a><a name="getname"></a>CDaoDatabase::GetName
+## <a name="cdaodatabasegetname"></a><a name="getname"></a> CDaoDatabase:: GetName
 
-Varolan bir veritabanı dosyasının adı veya kayıtlı bir ODBC veri kaynağının adı olan şu anda açık olan veritabanının adını almak için bu üye işlevini arayın.
+Mevcut bir veritabanı dosyasının adı veya kayıtlı bir ODBC veri kaynağı adı olan açık olan veritabanının adını almak için bu üye işlevi çağırın.
 
 ```
 CString GetName();
@@ -516,32 +517,32 @@ CString GetName();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa veritabanının tam yol ve dosya adı; aksi takdirde, boş bir [CString](../../atl-mfc-shared/reference/cstringt-class.md).
+Başarılı olursa veritabanının tam yolu ve dosya adı; Aksi halde boş bir [CString](../../atl-mfc-shared/reference/cstringt-class.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ağınız tek düzen adlandırma kuralını (UNC) destekliyorsa, bir\\\\\\ağ yolu\\da\\belirtebilirsiniz—örneğin, " \MYSERVER \MYSHARE \MYDIR\\\MYDB. MDB". (Çift backslashes dize literals\\gereklidir çünkü " " C++ kaçış karakteridir.)
+Ağınız Tekdüzen adlandırma kuralını (UNC) destekliyorsa, bir ağ yolu da belirtebilirsiniz — Örneğin, " \\ \\ \\ \sunucum \\ \ myshare \\ \mydizinim \\ \mydb. MDB ". ("" C++ kaçış karakteri olduğundan, dize değişmez değerlerinde çift ters eğik çizgiler gereklidir \\ .)
 
-Örneğin, bu adı bir başlıkta görüntülemek isteyebilirsiniz. Ad alınırken bir hata oluşursa, MFC [CDaoException](../../mfc/reference/cdaoexception-class.md)türünden bir özel durum oluşturur.
+Örneğin, bu adı bir başlıkta göstermek isteyebilirsiniz. Ad alınırken bir hata oluşursa, MFC, [CDaoException](../../mfc/reference/cdaoexception-class.md)türünde bir özel durum oluşturur.
 
 > [!NOTE]
-> Dış veritabanlarına erişildiğinde daha iyi performans için, bir Microsoft Jet veritabanına (. MDB) yerine doğrudan veri kaynağına bağlanma.
+> Dış veritabanlarına erişildiğinde daha iyi performans için, dış veritabanı tablolarını bir Microsoft Jet veritabanına iliştirmenizi öneririz (. MDB) veri kaynağına doğrudan bağlanmak yerine.
 
-Veritabanı türü, yolun işaret ettiği dosya veya dizin tarafından aşağıdaki gibi gösterilir:
+Veritabanı türü, yolun gösterdiği dosya veya dizin tarafından aşağıdaki gibi belirtilir:
 
-|Pathname işaret ...|Veritabanı türü|
+|Yol adı işaret eder..|Veritabanı türü|
 |--------------------------|-------------------|
 |. MDB dosyası|Microsoft Jet veritabanı (Microsoft Access)|
-|' yi içeren dizin. DBF dosya(lar)|dBASE veritabanı|
-|' yi içeren dizin. XLS dosyası|Microsoft Excel veritabanı|
-|' yi içeren dizin. PDX dosya(lar)|Paradoks veritabanı|
-|Uygun biçimlendirilmiş metin veritabanı dosyalarını içeren dizin|Metin biçimi veritabanı|
+|İçeren dizin. DBF dosyaları|dBASE veritabanı|
+|İçeren dizin. XLS dosyası|Microsoft Excel veritabanı|
+|İçeren dizin. PDX dosyası (ler)|Paradox veritabanı|
+|Uygun şekilde biçimlendirilen metin veritabanı dosyalarını içeren dizin|Metin biçimi veritabanı|
 
-SQL Server ve Oracle gibi ODBC veritabanları için veritabanının bağlantı dizesi, ODBC tarafından kayıtlı bir veri kaynağı adını (DSN) tanımlar.
+SQL Server ve Oracle gibi ODBC veritabanlarında, veritabanının bağlantı dizesi ODBC tarafından kaydedilen bir veri kaynağı adı 'nı (DSN) tanımlar.
 
-## <a name="cdaodatabasegetquerydefcount"></a><a name="getquerydefcount"></a>CDaoDatabase::GetQueryDefCount
+## <a name="cdaodatabasegetquerydefcount"></a><a name="getquerydefcount"></a> CDaoDatabase:: GetQueryDefCount
 
-Veritabanının QueryDefs koleksiyonunda tanımlanan sorgu sayısını almak için bu üye işlevini arayın.
+Veritabanının QueryDefs koleksiyonunda tanımlanan sorguların sayısını almak için bu üye işlevi çağırın.
 
 ```
 short GetQueryDefCount();
@@ -553,11 +554,11 @@ Veritabanında tanımlanan sorgu sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetQueryDefCount`QueryDefs koleksiyonundaki tüm querydefs üzerinden döngü gerekiyorsa yararlıdır. Koleksiyondaki belirli bir sorgu hakkında bilgi edinmek için [GetQueryDefInfo'ya](#getquerydefinfo)bakın.
+`GetQueryDefCount` QueryDefs koleksiyonundaki tüm QueryDefs 'ler aracılığıyla döngü uygulamanız gerekiyorsa yararlıdır. Koleksiyonda verilen bir sorgu hakkında bilgi edinmek için bkz. [Getquerydefinınfo](#getquerydefinfo).
 
-## <a name="cdaodatabasegetquerydefinfo"></a><a name="getquerydefinfo"></a>CDaoDatabase::GetQueryDefInfo
+## <a name="cdaodatabasegetquerydefinfo"></a><a name="getquerydefinfo"></a> CDaoDatabase:: Getquerydefinınfo
 
-Veritabanında tanımlanan bir sorgu hakkında çeşitli bilgiler elde etmek için bu üye işlevini arayın.
+Veritabanında tanımlı bir sorgu hakkında çeşitli bilgiler almak için bu üye işlevini çağırın.
 
 ```cpp
 void GetQueryDefInfo(
@@ -573,33 +574,33 @@ void GetQueryDefInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nındex*<br/>
-Dizin tarafından arama için veritabanının QueryDefs koleksiyonunda önceden tanımlanmış sorgu dizini.
+*nDizin*<br/>
+Dizine göre arama için veritabanının QueryDefs koleksiyonundaki önceden tanımlanmış sorgunun dizini.
 
-*querydefinfo*<br/>
-İstenen bilgileri döndüren bir [CDaoQueryDefInfo](../../mfc/reference/cdaoquerydefinfo-structure.md) nesnesine başvuru.
+*querydefinınfo*<br/>
+İstenen bilgileri döndüren bir [Cdaoquerydefinınfo](../../mfc/reference/cdaoquerydefinfo-structure.md) nesnesine başvuru.
 
 *dwInfoOptions*<br/>
-Kayıt kümesi hakkında hangi bilgilerin alınarak alınamasını belirten seçenekler. Kullanılabilir seçenekler, işlevin kayıt kümesi hakkında dönmesine neden olan larla birlikte burada listelenir:
+Alınacak kayıt kümesiyle ilgili bilgileri belirleyen seçenekler. Kullanılabilir seçenekler, işlevin kayıt kümesi hakkında döndürmesine neden olan ile birlikte aşağıda listelenmiştir:
 
-- AFX_DAO_PRIMARY_INFO (Varsayılan) Adı, Türü
+- AFX_DAO_PRIMARY_INFO (varsayılan) ad, tür
 
-- AFX_DAO_SECONDARY_INFO Birincil bilgi artı: Oluşturulan Tarih, Son Güncelleştirme Tarihi, Kayıtları Döndürür, Güncel
+- AFX_DAO_SECONDARY_INFO birincil bilgileri Plus: Oluşturulma tarihi, son güncelleştirme tarihi, kayıtları döndüren kayıtlar, güncelleştirilebilir
 
-- AFX_DAO_ALL_INFO Birincil ve ikincil bilgi artı: SQL, Connect, ODBCTimeout
+- Birincil ve ikincil bilgileri AFX_DAO_ALL_INFO ve: SQL, Connect, ODBCTimeout
 
-*Lpszname*<br/>
-Ada göre arama için veritabanında tanımlanan bir sorgunun adını içeren bir dize.
+*lpszName*<br/>
+Ada göre arama için veritabanında tanımlanmış bir sorgunun adını içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevin iki sürümü sağlanır, böylece veritabanının QueryDefs koleksiyonunda dizin veya sorgunun adıyla bir sorgu seçebilirsiniz.
+İşlevin iki sürümü sağlanır, böylece veritabanının QueryDefs koleksiyonunda veya sorgunun adına göre bir sorgu seçebilirsiniz.
 
-*Querydefinfo*döndürülen bilgilerin açıklaması için [CDaoQueryDefInfo](../../mfc/reference/cdaoquerydefinfo-structure.md) yapısına bakın. Bu yapı, *dwInfoOptions*açıklamasında yukarıda listelenen bilgi öğeleri karşılık gelen üyeleri vardır. Bir bilgi düzeyi talep ederseniz, önceden de bilgi düzeyi alırsınız.
+*Querydefinınfo* içinde döndürülen bilgilerin açıklaması Için, [cdaoquerydefinınfo](../../mfc/reference/cdaoquerydefinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions* açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzey bilgi istemeniz durumunda daha önceki bilgi seviyeleri de alırsınız.
 
-## <a name="cdaodatabasegetquerytimeout"></a><a name="getquerytimeout"></a>CDaoDatabase::GetQueryTimeout
+## <a name="cdaodatabasegetquerytimeout"></a><a name="getquerytimeout"></a> CDaoDatabase:: GetQueryTimeout
 
-Bağlı veritabanında sonraki işlemler zaman dolmadan önce izin vermek için geçerli saniye sayısını almak için bu üye işlevi arayın.
+Bağlı veritabanındaki sonraki işlemler zaman aşımına uğramadan önce izin verilen geçerli saniye sayısını almak için bu üye işlevini çağırın.
 
 ```
 short GetQueryTimeout();
@@ -607,19 +608,19 @@ short GetQueryTimeout();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Saniye cinsinden zaman aşım değerini içeren kısa bir tamsayı.
+Saniye cinsinden zaman aşımı değerini içeren kısa bir tamsayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ağ erişim sorunları, aşırı sorgu işlem süresi ve benzeri nedenler nedeniyle bir işlem zaman alabilir. Ayar etkin ken, bu `CDaoDatabase` nesne ile ilişkili herhangi bir kayıt kümesinde tüm açık, yeni ekleme, güncelleştirme ve silme işlemlerini etkiler. [SetQueryTimeout'u](#setquerytimeout)arayarak geçerli zaman ayarı değiştirebilirsiniz. Açıldıktan sonra bir kayıt kümesinin sorgu zaman anına değerini değiştirmek, kayıt kümesinin değerini değiştirmez. Örneğin, sonraki [Taşı](../../mfc/reference/cdaorecordset-class.md#move) işlemleri yeni değeri kullanmaz. Veritabanı altyapısı başharfe atıldığında varsayılan değer başlangıçta ayarlanır.
+Ağ erişimi sorunları, aşırı sorgu işleme süresi vb. nedeniyle bir işlem zaman aşımına uğrar. Ayar etkin olsa da, bu nesneyle ilişkili tüm kayıt kümelerinde tüm açık, yeni, güncelleştirme ve silme işlemlerini etkiler `CDaoDatabase` . [SetQueryTimeout](#setquerytimeout)öğesini çağırarak geçerli zaman aşımı ayarını değiştirebilirsiniz. Açıldıktan sonra bir kayıt kümesi için sorgu zaman aşımı değerini değiştirme, kayıt kümesinin değerini değiştirmez. Örneğin, sonraki [taşıma](../../mfc/reference/cdaorecordset-class.md#move) işlemleri yeni değeri kullanmaz. Varsayılan değer Başlangıçta veritabanı altyapısı başlatıldığında ayarlanır.
 
-Sorgu zaman zamanları için varsayılan değer Windows kayıt defterinden alınır. Kayıt defteri ayarı yoksa, varsayılan değer 60 saniyedir. Tüm veritabanları sorgu zaman anına değer ayarlama yeteneğini desteklemez. 0 sorgu zaman ödeme değeri ayarlarsanız, zaman ası oluşmaz; ve veritabanı ile iletişim yanıt durdurabilir. Bu davranış geliştirme sırasında yararlı olabilir. Arama başarısız olursa, MFC [cdaoException](../../mfc/reference/cdaoexception-class.md)türübir özel durum atar.
+Sorgu zaman aşımları için varsayılan değer Windows kayıt defterinden alınır. Kayıt defteri ayarı yoksa, varsayılan değer 60 saniyedir. Tüm veritabanları bir sorgu zaman aşımı değeri ayarlama yeteneğini desteklemez. 0 ' ın bir sorgu zaman aşımı değeri ayarlarsanız zaman aşımı oluşmaz; ve veritabanıyla iletişim vermeyi durdurabilir. Bu davranış geliştirme sırasında yararlı olabilir. Çağrı başarısız olursa, MFC, [CDaoException](../../mfc/reference/cdaoexception-class.md)türünde bir özel durum oluşturur.
 
-İlgili bilgiler için DAO Yardım'daki "QueryTimeout Özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "QueryTimeout özelliği" konusuna bakın.
 
-## <a name="cdaodatabasegetrecordsaffected"></a><a name="getrecordsaffected"></a>CDaoDatabase::GetRecordsAffected
+## <a name="cdaodatabasegetrecordsaffected"></a><a name="getrecordsaffected"></a> CDaoDatabase:: Getrecordsabetkilenen
 
-[Yürüt](#execute) üye işlevinin en son çağrısından etkilenen kayıt sayısını belirlemek için bu üye işlevi arayın.
+[Execute](#execute) member işlevinin en son çağrısından etkilenen kayıt sayısını öğrenmek için bu üye işlevi çağırın.
 
 ```
 long GetRecordsAffected();
@@ -631,13 +632,13 @@ Etkilenen kayıt sayısını içeren uzun bir tamsayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen değer, `Execute`'' ile çalıştırılan bir eylem sorgusu tarafından silinen, güncelleştirilen veya eklenen kayıt sayısını içerir. Döndürülen sayım, basamaklı güncelleştirmeler veya silmeler etkin olduğunda ilgili tablolardaki değişiklikleri yansıtmaz.
+Döndürülen değer, ile birlikte çalıştırılan bir eylem sorgusunun silindiği, güncelleştirildiği veya eklediği kayıt sayısını içerir `Execute` . Döndürülen sayı, basamaklı güncelleştirmeler veya silmeler etkin olduğunda ilgili tablolardaki değişiklikleri yansıtmaz.
 
-İlgili bilgiler için DAO Yardım'daki "RecordsAffected Property" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "Recordsaetkilenözelliği" konusuna bakın.
 
-## <a name="cdaodatabasegetrelationcount"></a><a name="getrelationcount"></a>CDaoDatabase::GetRelationCount
+## <a name="cdaodatabasegetrelationcount"></a><a name="getrelationcount"></a> CDaoDatabase:: GetRelationCount
 
-Veritabanındaki tablolar arasında tanımlanan ilişki sayısını elde etmek için bu üye işlevi arayın.
+Veritabanındaki tablolar arasında tanımlanan ilişkilerin sayısını almak için bu üye işlevi çağırın.
 
 ```
 short GetRelationCount();
@@ -649,13 +650,13 @@ Veritabanındaki tablolar arasında tanımlanan ilişki sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetRelationCount`veritabanının İlişkiler koleksiyonundaki tüm tanımlanmış ilişkileri döngüye almanız gerekiyorsa yararlıdır. Koleksiyondaki belirli bir ilişki hakkında bilgi edinmek için [GetRelationInfo'ya](#getrelationinfo)bakın.
+`GetRelationCount` veritabanının Ilişkiler koleksiyonundaki tüm tanımlı ilişkiler aracılığıyla döngü uygulamanız gerekiyorsa yararlıdır. Koleksiyonda belirli bir ilişki hakkında bilgi edinmek için bkz. [GetRelationInfo](#getrelationinfo).
 
-İlişki kavramını göstermek için, bir-çok ilişkisi olabilecek bir Tedarikçiler tablosu ve Ürünler tablosunu düşünün. Bu ilişkide, bir tedarikçi birden fazla ürün tedarik edebilir. Diğer ilişkiler bire bir ve çok-çok.
+Bir ilişki kavramını göstermek için bir Tedarikçiler tablosu ve bir Products tablosu düşünün ve bu, bire çok ilişkisine sahip olabilir. Bu ilişkide bir tedarikçi birden fazla ürün sağlayabilir. Diğer ilişkiler bire bir ve çoktan çoğa.
 
-## <a name="cdaodatabasegetrelationinfo"></a><a name="getrelationinfo"></a>CDaoDatabase::GetRelationInfo
+## <a name="cdaodatabasegetrelationinfo"></a><a name="getrelationinfo"></a> CDaoDatabase:: GetRelationInfo
 
-Veritabanının İlişkiler koleksiyonunda belirtilen bir ilişki hakkında bilgi almak için bu üye işlevini arayın.
+Veritabanının Ilişkiler koleksiyonunda belirtilen ilişki hakkında bilgi edinmek için bu üye işlevini çağırın.
 
 ```cpp
 void GetRelationInfo(
@@ -671,34 +672,34 @@ void GetRelationInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nındex*<br/>
-Veritabanının İlişkiler koleksiyonundaki ilişki nesnesinin dizin, dizin tarafından arama için dizin.
+*nDizin*<br/>
+Dizine göre arama için veritabanının Ilişkiler koleksiyonundaki ilişki nesnesinin dizini.
 
 *relinfo*<br/>
 İstenen bilgileri döndüren bir [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) nesnesine başvuru.
 
 *dwInfoOptions*<br/>
-Almak la ilişkisi hakkında hangi bilgileri belirten seçenekler. Kullanılabilir seçenekler, işlevin ilişki hakkında dönmesine neden olan larla birlikte burada listelenmiştir:
+Alınacak ilişki hakkındaki bilgileri belirten seçenekler. Kullanılabilir seçenekler, işlevin ilişki hakkında döndürmesine neden olan ile birlikte aşağıda listelenmiştir:
 
-- AFX_DAO_PRIMARY_INFO (Varsayılan) Adı, Tablosu, Yabancı Tablo
+- AFX_DAO_PRIMARY_INFO (varsayılan) ad, tablo, yabancı tablo
 
-- AFX_DAO_SECONDARY_INFO Özellikleri, Alan Bilgileri
+- AFX_DAO_SECONDARY_INFO öznitelikleri, alan bilgileri
 
-Alan Bilgileri, ilişkide yer alan birincil tablodaki alanları içeren bir [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) nesnesidir.
+Alan bilgileri, ilişkide yer alan birincil tablodaki alanları içeren bir [CDaoRelationFieldInfo](../../mfc/reference/cdaorelationfieldinfo-structure.md) nesnesidir.
 
-*Lpszname*<br/>
-Ada göre arama için ilişki nesnesinin adını içeren bir dize.
+*lpszName*<br/>
+Ada göre arama için Relation nesnesinin adını içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlevin iki sürümü, dizin veya ada göre erişim sağlar. *Relinfo'da*döndürülen bilgilerin açıklaması için [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) yapısına bakın. Bu yapı, *dwInfoOptions*açıklamasında yukarıda listelenen bilgi öğeleri karşılık gelen üyeleri vardır. Bir düzeyde bilgi talep ederseniz, önceki düzeylerde de bilgi alırsınız.
+Bu işlevin iki sürümü dizin ya da ada göre erişim sağlar. *Relinınfo*'da döndürülen bilgilerin açıklaması Için, [CDaoRelationInfo](../../mfc/reference/cdaorelationinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions* açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bilgileri tek bir düzeyde istemeniz durumunda, önceki düzeylerin de bilgilerini de alabilirsiniz.
 
 > [!NOTE]
-> İlişki nesnesinin özniteliklerini basamaklı işlemleri etkinleştirmek `dbRelationDeleteCascades`için ayarlarsanız (veya),`dbRelationUpdateCascades` Microsoft Jet veritabanı altyapısı, ilgili birincil anahtar tablolarında değişiklik yapıldığında bir veya daha fazla diğer tablodaki kayıtları otomatik olarak güncelleştirir veya siler. Örneğin, Müşteriler tablosu ile Siparişler tablosu arasında basamaklı silme ilişkisi oluşturduğunuzu varsayalım. Müşteriler tablosundaki kayıtları sildiğinizde, bu müşteriyle ilgili Siparişler tablosundaki kayıtlar da silinir. Ayrıca, Siparişler tablosu ile diğer tablolar arasında basamaklı silme ilişkileri kurarsanız, Müşteriler tablosundaki kayıtları sildiğinizde bu tablolardaki kayıtlar otomatik olarak silinir.
+> Cascade işlemlerini etkinleştirmek için Relation nesnesinin özniteliklerini ayarlarsanız ( `dbRelationUpdateCascades` veya `dbRelationDeleteCascades` ), ilgili birincil anahtar tablolarında değişiklik yapıldığında Microsoft Jet veritabanı altyapısı bir veya daha fazla tablodaki kayıtları otomatik olarak güncelleştirir veya siler. Örneğin, bir müşteriler tablosu ve Siparişler tablosu arasında basamaklı bir silme ilişkisi oluşturduğunuzu varsayalım. Müşteriler tablosundan kayıtları sildiğinizde, bu müşteriyle ilgili Siparişler tablosundaki kayıtlar da silinir. Ayrıca, Siparişler tablosu ve diğer tablolar arasında basamaklı silme ilişkileri oluşturursanız, müşteriler tablosundan kayıtları sildiğinizde bu tablolardan kayıtlar otomatik olarak silinir.
 
-## <a name="cdaodatabasegettabledefcount"></a><a name="gettabledefcount"></a>CDaoDatabase::GetTableDefCount
+## <a name="cdaodatabasegettabledefcount"></a><a name="gettabledefcount"></a> CDaoDatabase:: GetTableDefCount
 
-Veritabanında tanımlanan tablo sayısını almak için bu üye işlevi arayın.
+Veritabanında tanımlı tablo sayısını almak için bu üye işlevini çağırın.
 
 ```
 short GetTableDefCount();
@@ -706,15 +707,15 @@ short GetTableDefCount();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Veritabanında tanımlanan tablo sayısı.
+Veritabanında tanımlanan tabledefs sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`GetTableDefCount`veritabanının TableDefs koleksiyonundaki tüm tabledefs üzerinden döngü gerekiyorsa yararlıdır. Koleksiyondaki belirli bir tablo hakkında bilgi edinmek için [GetTableDefInfo'ya](#gettabledefinfo)bakın.
+`GetTableDefCount` veritabanının TableDefs koleksiyonundaki tüm TableDefs aracılığıyla döngü uygulamanız gerekiyorsa yararlıdır. Koleksiyonda verilen bir tablo hakkında bilgi edinmek için bkz. [Gettabledefinınfo](#gettabledefinfo).
 
-## <a name="cdaodatabasegettabledefinfo"></a><a name="gettabledefinfo"></a>CDaoDatabase::GetTableDefInfo
+## <a name="cdaodatabasegettabledefinfo"></a><a name="gettabledefinfo"></a> CDaoDatabase:: Gettabledefinınfo
 
-Veritabanında tanımlanan bir tablo hakkında çeşitli bilgiler elde etmek için bu üye işlevi arayın.
+Veritabanında tanımlı bir tablo hakkında çeşitli bilgi türlerini almak için bu üye işlevini çağırın.
 
 ```cpp
 void GetTableDefInfo(
@@ -730,36 +731,36 @@ void GetTableDefInfo(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nındex*<br/>
-Dizin tarafından arama için veritabanının TableDefs koleksiyonundaki tabledef nesnesinin dizin.
+*nDizin*<br/>
+Dizine göre arama için veritabanının TableDefs koleksiyonunda bulunan TableDef nesnesinin dizini.
 
 *tabledefinfo*<br/>
-İstenen bilgileri döndüren [bir CDaoTableDefInfo](../../mfc/reference/cdaotabledefinfo-structure.md) nesnesine başvuru.
+İstenen bilgileri döndüren bir [Cdaotabledefinınfo](../../mfc/reference/cdaotabledefinfo-structure.md) nesnesine başvuru.
 
 *dwInfoOptions*<br/>
-Tablo hakkında hangi bilgilerin alınaaçık olduğunu belirten seçenekler. Kullanılabilir seçenekler, işlevin ilişki hakkında dönmesine neden olan larla birlikte burada listelenmiştir:
+Alınacak tablo hakkındaki bilgileri belirten seçenekler. Kullanılabilir seçenekler, işlevin ilişki hakkında döndürmesine neden olan ile birlikte aşağıda listelenmiştir:
 
-- AFX_DAO_PRIMARY_INFO (Varsayılan) Adı, Güncel, Öznitelik
+- AFX_DAO_PRIMARY_INFO (varsayılan) ad, güncelleştirilebilir, öznitelikler
 
-- AFX_DAO_SECONDARY_INFO Birincil bilgi artı: Oluşturulan Tarih, Son Güncellenme Tarihi, Kaynak Tablo Adı, Bağlan
+- AFX_DAO_SECONDARY_INFO birincil bilgileri Plus: Oluşturulma tarihi, son tarih güncelleme, kaynak tablo adı, bağlanma
 
-- AFX_DAO_ALL_INFO Temel ve ikincil bilgi artı: Doğrulama Kuralı, Doğrulama Metni, Kayıt Sayısı
+- Birincil ve ikincil bilgileri ve AFX_DAO_ALL_INFO: doğrulama kuralı, doğrulama metni, kayıt sayısı
 
-*Lpszname*<br/>
-Tablodef nesnesinin adı, ada göre arama için.
+*lpszName*<br/>
+Ada göre arama için TableDef nesnesinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşlevin iki sürümü sağlanır, böylece veritabanının TableDefs koleksiyonunda dizin veya tablonun adına bir tablo seçebilirsiniz.
+İşlevin iki sürümü sağlanır, böylece veritabanının TableDefs koleksiyonunda veya tablo adıyla bir tablo seçebilirsiniz.
 
-*Tabledefinfo*döndürülen bilgilerin açıklaması için [CDaoTableDefInfo](../../mfc/reference/cdaotabledefinfo-structure.md) yapısına bakın. Bu yapı, *dwInfoOptions*açıklamasında yukarıda listelenen bilgi öğeleri karşılık gelen üyeleri vardır. Bir düzeyde bilgi talep ederseniz, önceki düzeyler için de bilgi alırsınız.
+*Tabledefinınfo*'da döndürülen bilgilerin açıklaması Için, [cdaotabledefinınfo](../../mfc/reference/cdaotabledefinfo-structure.md) yapısına bakın. Bu yapının, *Dwinfooptions* açıklamasında yukarıda listelenen bilgi öğelerine karşılık gelen üyeleri vardır. Bir düzeyde bilgi istemeniz durumunda, önceki tüm düzeyler için de bilgi alırsınız.
 
 > [!NOTE]
-> AFX_DAO_ALL_INFO seçeneği, elde edilmesi yavaş olabilecek bilgiler sağlar. Bu durumda, tablodaki kayıtları saymak çok zaman alabilir, çok sayıda kayıt varsa.
+> AFX_DAO_ALL_INFO seçeneği elde etmek için yavaş olabilecek bilgiler sağlar. Bu durumda, çok sayıda kayıt varsa tablodaki kayıtların sayımı çok zaman alabilir.
 
-## <a name="cdaodatabasegetversion"></a><a name="getversion"></a>CDaoDatabase::GetVersion
+## <a name="cdaodatabasegetversion"></a><a name="getversion"></a> CDaoDatabase:: GetVersion
 
-Microsoft Jet veritabanı dosyasının sürümünü belirlemek için bu üye işlevini arayın.
+Microsoft Jet veritabanı dosyasının sürümünü öğrenmek için bu üye işlevi çağırın.
 
 ```
 CString GetVersion();
@@ -767,17 +768,17 @@ CString GetVersion();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesneyle ilişkili veritabanı dosyasının sürümünü gösteren bir [CString.](../../atl-mfc-shared/reference/cstringt-class.md)
+Nesnesiyle ilişkili veritabanı dosyasının sürümünü belirten bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Döndürülen değer"major.minor" şeklindeki sürüm numarasını temsil eder; örneğin, "3.0". Ürün sürüm numarası (örneğin, 3.0) sürüm numarası (3), bir dönem ve sürüm numarasından (0) oluşur. Bugüne kadarki sürümler 1.0, 1.1, 2.0 ve 3.0'dır.
+Döndürülen değer "ana. ikincil" biçiminde sürüm numarasını temsil eder; Örneğin, "3,0". Ürün sürüm numarası (örneğin, 3,0) sürüm numarasından (3), bir noktayla ve yayın numarasından (0) oluşur. Güncel sürümler 1,0, 1,1, 2,0 ve 3,0.
 
-İlgili bilgiler için DAO Yardım'daki "Sürüm Özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "sürüm özelliği" konusuna bakın.
 
-## <a name="cdaodatabaseisopen"></a><a name="isopen"></a>CDaoDatabase::Açık
+## <a name="cdaodatabaseisopen"></a><a name="isopen"></a> CDaoDatabase:: IsOpen
 
-Nesnenin `CDaoDatabase` veritabanında şu anda açık olup olmadığını belirlemek için bu üye işlevi arayın.
+`CDaoDatabase`Nesnenin şu anda bir veritabanında açık olup olmadığını anlamak için bu üye işlevi çağırın.
 
 ```
 BOOL IsOpen() const;
@@ -785,31 +786,31 @@ BOOL IsOpen() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Nesne şu `CDaoDatabase` anda açıksa sıfırsız; aksi takdirde 0.
+`CDaoDatabase`Nesne şu anda açıksa sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cdaodatabasem_pdaodatabase"></a><a name="m_pdaodatabase"></a>CDaoVeritabanı::m_pDAODatabase
+## <a name="cdaodatabasem_pdaodatabase"></a><a name="m_pdaodatabase"></a> CDaoDatabase:: m_pDAODatabase
 
-Nesnenin altında yatan DAO veritabanı nesnesi `CDaoDatabase` için OLE arabirimine bir işaretçi içerir.
+Nesneyi temel alan DAO veritabanı nesnesi için OLE arabirimine yönelik bir işaretçi içerir `CDaoDatabase` .
 
 ### <a name="remarks"></a>Açıklamalar
 
 DAO arabirimine doğrudan erişmeniz gerekiyorsa bu işaretçiyi kullanın.
 
-DOĞRUDAN DAO'u arama hakkında bilgi için [Teknik Not 54'e](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)bakın.
+DAO 'YU doğrudan çağırma hakkında daha fazla bilgi için bkz. [teknik notta 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md).
 
-## <a name="cdaodatabasem_pworkspace"></a><a name="m_pworkspace"></a>CDaoVeritabanı::m_pWorkspace
+## <a name="cdaodatabasem_pworkspace"></a><a name="m_pworkspace"></a> CDaoDatabase:: m_pWorkspace
 
-Veritabanı nesnesini içeren [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesnesine bir işaretçi içerir.
+Veritabanı nesnesini içeren [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md) nesnesine yönelik bir işaretçi içerir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çalışma alanına doğrudan erişmeniz gerekiyorsa bu işaretçiyi kullanın ( örneğin, çalışma alanının Veritabanları koleksiyonundaki diğer veritabanı nesnelerine işaretçiler edinin.
+Çalışma alanına doğrudan erişmeniz gerekiyorsa bu işaretçiyi kullanın — örneğin, çalışma alanının veritabanları koleksiyonundaki diğer veritabanı nesnelerine işaretçiler elde etmek için.
 
-## <a name="cdaodatabaseopen"></a><a name="open"></a>CDaoDatabase::Aç
+## <a name="cdaodatabaseopen"></a><a name="open"></a> CDaoDatabase:: Open
 
-Varolan bir veritabanını temsil eden `CDaoDatabase` yeni oluşturulmuş bir nesneyi başlatmak için bu üye işlevi aramalısınız.
+`CDaoDatabase`Var olan bir veritabanını temsil eden yeni oluşturulmuş bir nesneyi başlatmak için bu üye işlevini çağırmanız gerekir.
 
 ```
 virtual void Open(
@@ -821,57 +822,57 @@ virtual void Open(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lpszname*<br/>
-Varolan bir Microsoft Jet'in adı olan dize ifadesi (. MDB) veritabanı dosyası. Dosya adının bir uzantısı varsa, bu gereklidir. Ağınız tek düzen adlandırma kuralını (UNC) destekliyorsa, "\\\\\\\MYSERVER \MYSHARE\\\\\\\MYDIR \MYDB gibi bir ağ yolu da belirtebilirsiniz. MDB". (Çift backslashes dize literals\\gereklidir çünkü " " C++ kaçış karakteridir.)
+*lpszName*<br/>
+Var olan bir Microsoft Jet 'in adı olan bir dize ifadesi (. MDB) veritabanı dosyası. Dosya adının bir uzantısı varsa, bu gereklidir. Ağınız Tekdüzen adlandırma kuralını (UNC) destekliyorsa, " \\ \\ \\ \sunucum \\ \ myshare \\ \ mydizinim \\ \ mydbgibi bir ağ yolu da belirtebilirsiniz. MDB ". ("" C++ kaçış karakteri olduğundan, dize değişmez değerlerinde çift ters eğik çizgiler gereklidir \\ .)
 
-*LpszName*kullanırken bazı hususlar geçerlidir. Eğer:
+*LpszName* kullanılırken bazı konular geçerlidir. Eğer:
 
-- Başka bir kullanıcı tarafından özel erişim için zaten açık olan bir veritabanıanlamına gelir, MFC türü [CDaoException](../../mfc/reference/cdaoexception-class.md)bir özel durum atar. Kullanıcınıza veritabanının kullanılolmadığını bildirmek için bu özel durumu bindirme.
+- Başka bir kullanıcı tarafından özel erişim için zaten açık olan bir veritabanını ifade eder, MFC, [CDaoException](../../mfc/reference/cdaoexception-class.md)türünde bir özel durum oluşturur. Kullanıcının veritabanının kullanılamadığını bilmesini sağlamak için bu özel durumu yakalar.
 
-- Boş bir dize ("") ve *lpszConnect* "ODBC;", kullanıcı bir veritabanı seçebilirsiniz, böylece tüm kayıtlı ODBC veri kaynağı adları listeleyen bir iletişim kutusu. ODBC veri kaynaklarına doğrudan bağlantıyapmaktan kaçınmalısınız; bunun yerine ekli bir tablo kullanın.
+- Boş bir dizedir ("") ve *lpszConnect* "ODBC;" ise, kullanıcının bir veritabanı seçmesini sağlamak için tüm kayıtlı ODBC veri kaynağı adlarını listelerken bir iletişim kutusu görüntülenir. ODBC veri kaynaklarına doğrudan bağlantıları kullanmaktan kaçının; Bunun yerine eklenmiş bir tablo kullanın.
 
-- Aksi takdirde varolan bir veritabanı veya geçerli ODBC veri kaynağı adı `CDaoException`anlamına gelmez, MFC türübir özel durum atar.
+- Aksi halde, var olan bir veritabanına veya geçerli ODBC veri kaynağı adına başvurmaz, MFC türünde bir özel durum oluşturur `CDaoException` .
 
 > [!NOTE]
-> DAO hata kodları hakkında ayrıntılı bilgi için DAOERR'a bakın. H dosyası. İlgili bilgiler için DAO Yardım'daki "Trappable Data Access Errors" konusuna bakın.
+> DAO hata kodları hakkında daha fazla bilgi için bkz. DAOERR. H dosyası. İlgili bilgiler için, DAO yardımı 'nda "Yakalanabilir veri erişim hataları" konusuna bakın.
 
 *bExclusive*<br/>
-Veritabanı özel (paylaşılmayan) erişim için açılacaksa DOĞRU olan Boolean değeri ve veritabanı paylaşılan erişim için açılacaksa FALSE değeri. Bu bağımsız değişkeni atlarsanız, veritabanı paylaşılan erişim için açılır.
+Veritabanı özel (paylaşılmayan) erişim için açılabiliyorsa TRUE, veritabanı paylaşılan erişim için açılacaksa FALSE olan bir Boolean değeri. Bu bağımsız değişkeni atlarsanız, veritabanı paylaşılan erişim için açılır.
 
 *bReadOnly*<br/>
-Veritabanı salt okunur erişim için açılacaksa DOĞRU olan Boolean değeri ve veritabanı okuma/yazma erişimi için açılacaksa FALSE değeri. Bu bağımsız değişkeni atlarsanız, veritabanı okuma/yazma erişimi için açılır. Tüm bağımlı kayıt kümeleri bu özniteliği devralır.
+Veritabanı salt okuma erişimi için açılacaksa TRUE, veritabanı okuma/yazma erişimi için açılacaksa FALSE değeri. Bu bağımsız değişkeni atlarsanız, veritabanı okuma/yazma erişimi için açılır. Tüm bağımlı kayıt kümeleri bu özniteliği devralınır.
 
 *lpszConnect*<br/>
-Veritabanını açmak için kullanılan bir dize ifadesi. Bu dize, ODBC bağlantı bağımsız değişkenlerini oluşturur. Kaynak dizesini sağlamak için özel ve salt okunur bağımsız değişkenleri sağlamanız gerekir. Veritabanı bir Microsoft Jet veritabanıise (. MDB), bu dize boş (""). Varsayılan değeriçin sözdizimi **-_T**("") - Unicode için taşınabilirliğin yanı sıra uygulamanızın ANSI yapılarını da sağlar.
+Veritabanını açmak için kullanılan bir dize ifadesi. Bu dize ODBC bağlantı bağımsız değişkenlerini oluşturur. Kaynak dize sağlamak için özel ve salt okunurdur bağımsız değişkenlerini sağlamalısınız. Veritabanı bir Microsoft Jet veritabanı (. MDB), bu dize boş (""). Varsayılan değerin sözdizimi — **_T**("") — Unicode için taşınabilirlik ve uygulamanızın ANSI derlemeleri sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Open`veritabanını altta yatan DAO nesnesiyle ilişkilendirer. Baş harfe gelene kadar recordset, tabledef veya querydef nesnelerini oluşturmak için veritabanı nesnesini kullanamazsınız. `Open`veritabanı nesnesini ilişkili çalışma alanının Veritabanları koleksiyonuna ekler.
+`Open` veritabanını temel alınan DAO nesnesiyle ilişkilendirir. Veritabanı nesnesini, başlatılana kadar kayıt kümesi, TableDef veya QueryDef nesneleri oluşturmak için kullanamazsınız. `Open` veritabanı nesnesini ilişkili çalışma alanının veritabanları koleksiyonuna ekler.
 
 Parametreleri aşağıdaki gibi kullanın:
 
-- Bir Microsoft Jet açıyorsanız (. MDB) veritabanı, *lpszName* parametresini kullanın ve *lpszConnect* parametresi için boş bir dize geçirin veya formun bir şifre dizesini geçirin "; PWD=password" veritabanı parola korumalı ise (. Yalnızca MDB veritabanları).
+- Bir Microsoft Jet (. MDB) veritabanı, *lpszName* parametresini kullanın ve *lpszConnect* parametresi için boş bir dize geçirin veya formun parola dizesini geçirin "; PWD = Password, veritabanı parola korumalıysa (. Yalnızca MDB veritabanları).
 
-- Bir ODBC veri kaynağı açıyorsanız, *lpszConnect'te* geçerli bir ODBC bağlantı dizesi ve *lpszName'de*boş bir dize geçirin.
+- ODBC veri kaynağını açarsanız, *lpszConnect* içinde GEÇERLI bir ODBC bağlantı dizesi geçirin ve *lpszName*'de boş bir dize geçirin.
 
-İlgili bilgiler için DAO Yardım'daki "OpenDatabase Method" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "OpenDatabase yöntemi" konusuna bakın.
 
 > [!NOTE]
-> ISAM veritabanları ve ODBC veri kaynakları da dahil olmak üzere harici veritabanlarına erişirken daha iyi performans için, bir Microsoft Jet altyapısı veritabanına harici veritabanı tabloları eklemeniz önerilir (. MDB) yerine doğrudan veri kaynağına bağlanma.
+> ISAM veritabanları ve ODBC veri kaynakları dahil olmak üzere dış veritabanlarına erişirken daha iyi performans sağlamak için, dış veritabanı tablolarını bir Microsoft Jet Engine veritabanına (. MDB) veri kaynağına doğrudan bağlanmak yerine.
 
-Örneğin, DBMS ana bilgisayarı kullanılamıyorsa, bir bağlantı denemesinin zaman dışarı çıkması mümkündür. Bağlantı girişimi başarısız `Open` olursa, [cdaoException](../../mfc/reference/cdaoexception-class.md)türü bir özel durum atar.
+Örneğin, DBMS ana bilgisayarı kullanılamadığında bir bağlantı girişimi zaman aşımına uğrar. Bağlantı girişimi başarısız olursa, `Open` [CDaoException](../../mfc/reference/cdaoexception-class.md)türünde bir özel durum oluşturur.
 
 Geri kalan açıklamalar yalnızca ODBC veritabanları için geçerlidir:
 
-Veritabanı bir ODBC veritabanıysa ve aramanızdaki `Open` parametreler bağlantıyı oluşturmak için yeterli bilgi içermiyorsa, ODBC sürücüsü kullanıcıdan gerekli bilgileri almak için bir iletişim kutusu açar. Bağlantı dizeniz `Open` *lpszConnect'i*aradığınızda özel olarak saklanır ve [GetConnect](#getconnect) üye işlevini arayarak kullanılabilir.
+Veritabanı bir ODBC veritabanısa ve `Open` çağrınızdan parametreler bağlantıyı oluşturmak için yeterli bilgi içermiyorsa, ODBC sürücüsü kullanıcıdan gerekli bilgileri almak için bir iletişim kutusu açar. ' İ çağırdığınızda, `Open` bağlantı dizeniz *lpszConnect*, özel olarak depolanır ve [GetConnect](#getconnect) üye işlevi çağırarak kullanılabilir.
 
-İsterseniz, parola gibi kullanıcıdan bilgi almak `Open` için aramadan önce kendi iletişim kutunuzu açabilir, ardından bu bilgileri `Open`geçtiğiniz bağlantı dizesine ekleyebilirsiniz. Veya geçtiğiniz bağlantı dizesini (belki de Windows kayıt defterinde) kaydetmek isteyebilirsiniz, böylece `Open` uygulamanız bir `CDaoDatabase` nesneyi bir sonraki aramada yeniden kullanabilirsiniz.
+İsterseniz, kullanıcıdan bir parola gibi bilgi almak için çağrı yapmadan önce kendi iletişim kutusunu açabilir `Open` ve sonra bu bilgileri geçirdiğiniz bağlantı dizesine ekleyebilirsiniz `Open` . Ya da geçirdiğiniz bağlantı dizesini (Belki de Windows kayıt defterinde) kaydederek uygulamanızın bir dahaki sefer bir nesne aradığında yeniden kullanabilmek isteyebilirsiniz `Open` `CDaoDatabase` .
 
-Bağlantı dizesini birden çok oturum açma yetkilendirme düzeyi (her biri farklı `CDaoDatabase` bir nesne için) veya veritabanına özgü diğer bilgileri iletmek için de kullanabilirsiniz.
+Bağlantı dizesini birden fazla oturum açma yetkilendirmesi (her biri farklı bir `CDaoDatabase` nesne için) veya veritabanına özgü diğer bilgileri iletmek için de kullanabilirsiniz.
 
-## <a name="cdaodatabasesetquerytimeout"></a><a name="setquerytimeout"></a>CDaoDatabase::SetQueryTimeout
+## <a name="cdaodatabasesetquerytimeout"></a><a name="setquerytimeout"></a> CDaoDatabase:: SetQueryTimeout
 
-Bağlı veritabanı zaman önce sonraki işlemlere izin vermek için varsayılan saniye sayısını geçersiz kılmak için bu üye işlevi arayın.
+Bağlı veritabanındaki sonraki işlemlerin süresi geçmeden önce izin verilecek varsayılan saniye sayısını geçersiz kılmak için bu üye işlevi çağırın.
 
 ```cpp
 void SetQueryTimeout(short nSeconds);
@@ -879,24 +880,24 @@ void SetQueryTimeout(short nSeconds);
 
 ### <a name="parameters"></a>Parametreler
 
-*nSeconds*<br/>
-Sorgu denemesi nden önce izin verilebilen saniye sayısı.
+*nSaniye*<br/>
+Sorgu girişiminden zaman aşımına uğramadan önce izin verilen saniye sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ağ erişim sorunları, aşırı sorgu işlem süresi ve benzeri nedenlerden dolayı bir işlem zaman alabilir. Kayıt `SetQueryTimeout` setinizi açmadan önce veya sorgu zaman önceliğini değiştirmek istiyorsanız kayıt setinin [AddNew](../../mfc/reference/cdaorecordset-class.md#addnew), [Update](../../mfc/reference/cdaorecordset-class.md#update)veya [Delete](../../mfc/reference/cdaorecordset-class.md#delete) üye işlevlerini aramadan önce arayın. Ayar sonraki tüm [Open](../../mfc/reference/cdaorecordset-class.md#open)Açık `AddNew` `Update`etkiler `Delete` , , ve bu `CDaoDatabase` nesne ile ilişkili herhangi bir kayıt kümeleri çağırır. Açıldıktan sonra bir kayıt kümesinin sorgu zaman anına değerini değiştirmek, kayıt kümesinin değerini değiştirmez. Örneğin, sonraki [Taşı](../../mfc/reference/cdaorecordset-class.md#move) işlemleri yeni değeri kullanmaz.
+Ağ erişim sorunları, aşırı sorgu işleme süresi vb. nedeniyle bir işlem zaman aşımına uğrar. `SetQueryTimeout`Sorgu zaman aşımı değerini değiştirmek istiyorsanız kayıt kümenizin önüne veya kayıt kümesinin [AddNew](../../mfc/reference/cdaorecordset-class.md#addnew), [Update](../../mfc/reference/cdaorecordset-class.md#update)veya [Delete](../../mfc/reference/cdaorecordset-class.md#delete) üye işlevlerini çağırmadan önce çağırın. Bu ayar sonraki [Açık](../../mfc/reference/cdaorecordset-class.md#open), `AddNew` , `Update` , ve `Delete` Bu nesneyle ilişkili tüm kayıt kümelerine yapılan çağrıları etkiler `CDaoDatabase` . Açıldıktan sonra bir kayıt kümesi için sorgu zaman aşımı değerini değiştirme, kayıt kümesinin değerini değiştirmez. Örneğin, sonraki [taşıma](../../mfc/reference/cdaorecordset-class.md#move) işlemleri yeni değeri kullanmaz.
 
-Sorgu zaman ları için varsayılan değer 60 saniyedir. Tüm veritabanları sorgu zaman anına değer ayarlama yeteneğini desteklemez. 0 sorgu zaman ödeme değeri ayarlarsanız, zaman ası oluşmaz; veritabanı ile iletişim yanıt durdurabilir. Bu davranış geliştirme sırasında yararlı olabilir.
+Sorgu zaman aşımları için varsayılan değer 60 saniyedir. Tüm veritabanları bir sorgu zaman aşımı değeri ayarlama yeteneğini desteklemez. 0 ' ın bir sorgu zaman aşımı değeri ayarlarsanız zaman aşımı oluşmaz; veritabanıyla iletişim yanıt vermeyi durdurabilir. Bu davranış geliştirme sırasında yararlı olabilir.
 
-İlgili bilgiler için DAO Yardım'daki "QueryTimeout Özelliği" konusuna bakın.
+İlgili bilgiler için, DAO yardımı 'nda "QueryTimeout özelliği" konusuna bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CDaoWorkspace Sınıf](../../mfc/reference/cdaoworkspace-class.md)<br/>
-[CDaoRecordset Sınıfı](../../mfc/reference/cdaorecordset-class.md)<br/>
-[CDaoTableDef Sınıfı](../../mfc/reference/cdaotabledef-class.md)<br/>
-[CDaoQueryDef Sınıfı](../../mfc/reference/cdaoquerydef-class.md)<br/>
-[CDatabase Sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
-[CDaoException Sınıfı](../../mfc/reference/cdaoexception-class.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CDaoWorkspace sınıfı](../../mfc/reference/cdaoworkspace-class.md)<br/>
+[CDaoRecordset sınıfı](../../mfc/reference/cdaorecordset-class.md)<br/>
+[CDaoTableDef sınıfı](../../mfc/reference/cdaotabledef-class.md)<br/>
+[CDaoQueryDef sınıfı](../../mfc/reference/cdaoquerydef-class.md)<br/>
+[CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)<br/>
+[CDaoException sınıfı](../../mfc/reference/cdaoexception-class.md)

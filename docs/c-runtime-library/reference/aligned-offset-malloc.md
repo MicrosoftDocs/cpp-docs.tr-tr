@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _aligned_offset_malloc'
 title: _aligned_offset_malloc
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - _aligned_offset_malloc function
 - aligned_offset_malloc function
 ms.assetid: 447681a3-7c95-4655-86ba-fa3a4ca4c521
-ms.openlocfilehash: 0a0dca94ec03286c92b3cbf1a51df59a1ca7af0c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0a94a58abde85046e32ca50245e8b9878aeb9b92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312439"
 ---
 # <a name="_aligned_offset_malloc"></a>_aligned_offset_malloc
 
@@ -70,9 +71,9 @@ Hizalamayı zorlamak için bellek ayırmaya olan fark.
 
 **_aligned_offset_malloc** **malloc**'yi temel alır; daha fazla bilgi için bkz. [malloc](malloc.md).
 
-**_aligned_offset_malloc** , `__declspec(noalias)` ve `__declspec(restrict)`işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer ad olmadığından garanti edilen anlamına gelir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
+**_aligned_offset_malloc** `__declspec(noalias)` `__declspec(restrict)` , ve işlevin genel değişkenleri değiştirmeyeceği ve döndürülen işaretçinin diğer ad olmadığından garanti edilen anlamına gelir. Daha fazla bilgi için bkz. [noalias](../../cpp/noalias.md) ve [Restrict](../../cpp/restrict.md).
 
-Bu işlev, bellek ayırma başarısız olursa veya istenen boyut **_HEAP_MAXREQ**fazlaysa, **errno** 'ı **ENOMEM** olarak ayarlar. **Errno**hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_offset_malloc** parametrelerini doğrular. *Hizalama* 2 ' nin üssü değilse veya Eğer değer *Boyut* ve sıfır dışında bir değere eşit veya *ondan büyükse,* bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **null** değerini döndürür ve **errno** 'ı **EINVAL**olarak ayarlar.
+Bu işlev, bellek ayırma başarısız olursa veya istenen boyut **_HEAP_MAXREQ** fazlaysa, **errno** 'ı **ENOMEM** olarak ayarlar. **Errno** hakkında daha fazla bilgi için bkz. [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Ayrıca, **_aligned_offset_malloc** parametrelerini doğrular. *Hizalama* 2 ' nin üssü değilse veya Eğer değer *Boyut* ve sıfır dışında bir değere eşit veya *ondan büyükse,* bu işlev [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, bu işlev **null** değerini döndürür ve **errno** 'ı **EINVAL** olarak ayarlar.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -80,7 +81,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_aligned_offset_malloc**|\<malloc. h>|
+|**_aligned_offset_malloc**|\<malloc.h>|
 
 ## <a name="example"></a>Örnek
 
@@ -88,4 +89,4 @@ Daha fazla bilgi için bkz. [_aligned_malloc](aligned-malloc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri Hizalama](../../c-runtime-library/data-alignment.md)<br/>
+[Veri hizalaması](../../c-runtime-library/data-alignment.md)<br/>

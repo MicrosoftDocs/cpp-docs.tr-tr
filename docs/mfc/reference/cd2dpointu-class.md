@@ -1,5 +1,6 @@
 ---
-title: CD2DPointU Sınıfı
+description: 'Daha fazla bilgi edinin: CD2DPointU Class'
+title: CD2DPointU sınıfı
 ms.date: 08/29/2019
 f1_keywords:
 - CD2DPointU
@@ -8,18 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DPointU [MFC], CD2DPointU
 ms.assetid: 04733f96-b6de-4a89-82e3-caad1e8087a9
-ms.openlocfilehash: 8c6db55f1dde1fd054a1f75590f5969c097b2f90
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 04c1c366f3026e4a621892fc1c7617707c33d23d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251004"
 ---
-# <a name="cd2dpointu-class"></a>CD2DPointU Sınıfı
+# <a name="cd2dpointu-class"></a>CD2DPointU sınıfı
 
-Bir sarmalayıcı. `D2D1_POINT_2U`
+İçin bir sarmalayıcı `D2D1_POINT_2U` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CD2DPointU : public D2D1_POINT_2U;
@@ -29,15 +30,15 @@ class CD2DPointU : public D2D1_POINT_2U;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DPointU::CD2DPointu](#cd2dpointu)|Fazla Yüklendi. Nesne nesnesinden `CD2DPointU` `D2D1_POINT_2U` bir yapı.|
+|[CD2DPointU::CD2DPointU](#cd2dpointu)|Fazla Yüklendi. Nesnesinden bir nesnesi oluşturur `CD2DPointU` `D2D1_POINT_2U` .|
 
 ### <a name="public-operators"></a>Ortak İşleçler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CD2DPointU::operatör CPoint](#operator_cpoint)|`CD2DPointU` Nesneye `CPoint` dönüştürür.|
+|[CD2DPointU:: operator CPoint](#operator_cpoint)|`CD2DPointU`Nesnesine dönüştürür `CPoint` .|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -47,11 +48,11 @@ class CD2DPointU : public D2D1_POINT_2U;
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxrendertarget.h
+**Üstbilgi:** afxrendertarget. h
 
-## <a name="cd2dpointucd2dpointu"></a><a name="cd2dpointu"></a>CD2DPointU::CD2DPointu
+## <a name="cd2dpointucd2dpointu"></a><a name="cd2dpointu"></a> CD2DPointU::CD2DPointU
 
-CPoint nesnesinden bir CD2DPointU nesnesi oluşturuyor.
+CPoint nesnesinden bir CD2DPointU nesnesi oluşturur.
 
 ```
 CD2DPointU(const CPoint& pt);
@@ -62,18 +63,18 @@ CD2DPointU(UINT32 uX = 0, UINT32 uY = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pt*<br/>
+*yönergelerinin*<br/>
 kaynak noktası
 
-*Ux*<br/>
-kaynak X
+*uX*<br/>
+Kaynak X
 
-*Uslu*<br/>
-kaynak Y
+*uY*<br/>
+Kaynak Y
 
-## <a name="cd2dpointuoperator-cpoint"></a><a name="operator_cpoint"></a>CD2DPointU::operatör CPoint
+## <a name="cd2dpointuoperator-cpoint"></a><a name="operator_cpoint"></a> CD2DPointU:: operator CPoint
 
-CD2DPointU'yi CPoint nesnesine dönüştürür.
+CD2DPointU öğesini CPoint nesnesine dönüştürür.
 
 ```
 operator CPoint();
@@ -81,7 +82,7 @@ operator CPoint();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-D2D noktasının geçerli değeri.
+D2D Point 'in geçerli değeri.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
