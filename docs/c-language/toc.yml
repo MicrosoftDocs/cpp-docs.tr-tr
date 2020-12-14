@@ -270,6 +270,8 @@
                   href: ../c-language/string-literals-in-primary-expressions.md
                 - name: Parantezlerdeki ifadeler
                   href: ../c-language/expressions-in-parentheses.md
+                - name: Genel seçim (C11)
+                  href: ../c-language/generic_selection.md
             - name: L-değeri ve r-değeri ifadeleri
               href: ../c-language/l-value-and-r-value-expressions.md
             - name: C sabit ifadeleri
