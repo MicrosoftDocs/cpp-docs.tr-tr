@@ -1,5 +1,6 @@
 ---
-title: CSocket Sınıfı
+description: 'Daha fazla bilgi edinin: CSocket sınıfı'
+title: CSocket sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CSocket
@@ -20,18 +21,18 @@ helpviewer_keywords:
 - CSocket [MFC], IsBlocking
 - CSocket [MFC], OnMessagePending
 ms.assetid: 7f23c081-d24d-42e3-b511-8053ca53d729
-ms.openlocfilehash: 730bea34354b008d641ecc28e7368f79efad12a7
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: e04fc0b453c4d4172fcd286b142d029bda0eb5dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345114"
 ---
-# <a name="csocket-class"></a>CSocket Sınıfı
+# <a name="csocket-class"></a>CSocket sınıfı
 
-`CAsyncSocket`Windows Soketleri API'sinin kapsüllemesini devralır ve bir `CAsyncSocket` nesneninkinden daha yüksek bir soyutlama düzeyini temsil eder.
+Öğesinden türetilir `CAsyncSocket` , Windows SOCKETS API 'sinin kapsüllemesini devralır ve bir nesneden daha yüksek bir soyutlama düzeyini temsil eder `CAsyncSocket` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CSocket : public CAsyncSocket
@@ -41,62 +42,62 @@ class CSocket : public CAsyncSocket
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSocket::CSocket](#csocket)|Bir `CSocket` nesne inşa eder.|
+|[CSocket:: CSocket](#csocket)|Bir `CSocket` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSocket::Ekle](#attach)|Bir `CSocket` nesneye SOKET tutamacı bağlar.|
-|[CSocket::CancelBlockingCall](#cancelblockingcall)|Şu anda devam etmekte olan engelleme çağrısını iptal eder.|
-|[CSocket::Oluştur](#create)|Bir soket oluşturur.|
-|[CSocket::FromHandle](#fromhandle)|SOCKET tutamacı `CSocket` verilen bir nesneye işaretçi döndürür.|
-|[CSocket::Engelleme](#isblocking)|Engelleme çağrısının devam edip etmediğini belirler.|
+|[CSocket:: Attach](#attach)|Bir nesneye bir yuva tutamacı iliştirir `CSocket` .|
+|[CSocket:: CancelBlockingCall](#cancelblockingcall)|Şu anda devam eden bir engelleme çağrısını iptal eder.|
+|[CSocket:: Create](#create)|Yuva oluşturur.|
+|[CSocket:: FromHandle](#fromhandle)|Bir `CSocket` yuva tutamacı verilen bir nesneye bir işaretçi döndürür.|
+|[CSocket:: ısengelliyor](#isblocking)|Bir engelleme çağrısının devam edilip edilmeyeceğini belirler.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSocket::OnMessagePending](#onmessagepending)|Engelleme çağrısının tamamlanmasını beklerken bekleyen iletileri işlemek için çağrıldı.|
+|[CSocket:: OnMessagePending](#onmessagepending)|Bir engelleme çağrısının tamamlanmasını beklerken bekleyen iletileri işlemek için çağırılır.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-`CSocket`sınıflarla `CSocketFile` çalışır `CArchive` ve veri gönderme ve alma işlerini yönetir.
+`CSocket` sınıflarla birlikte çalışarak `CSocketFile` `CArchive` verilerin gönderilmesini ve alınmasını yönetir.
 
-Bir `CSocket` nesne de senkron işlemi için gerekli olan `CArchive`engelleme sağlar. Engelleme işlevleri, gibi `Receive` `Send`, `ReceiveFrom` `SendTo`, `Accept` , , ve `CAsyncSocket`(tüm devralınan ), bir `WSAEWOULDBLOCK` hata döndürmez `CSocket`. Bunun yerine, bu işlevler işlem tamamlanana kadar bekler. Ayrıca, bu işlevlerden biri engellenirken `CancelBlockingCall` çağrıldığında özgün arama WSAEINTR hatasıyla sonlanır.
+Bir `CSocket` nesne, zaman uyumlu işlemi için gerekli olan engellemeyi de sağlar `CArchive` . ,,, Ve gibi engelleme işlevleri,,, `Receive` `Send` `ReceiveFrom` `SendTo` ve `Accept` (tüm devralınan `CAsyncSocket` ), içinde bir hata döndürmez `WSAEWOULDBLOCK` `CSocket` . Bunun yerine, bu işlevler işlem tamamlanana kadar bekler. Ayrıca, `CancelBlockingCall` Bu işlevlerden biri engellenirken çağrıldığında, özgün çağrı WSAEINTR hatası ile sonlandırılır.
 
-Bir `CSocket` nesneyi kullanmak için oluşturucuyu `Create` çağırın, ardından altta yatan SOCKET tutamacını (TIP SOCKET) oluşturmak için arayın. Bir akış `Create` soketi oluşturmanın varsayılan parametreleri, ancak bir `CArchive` nesne ile soket kullanmıyorsanız, yerine bir veri gramgayı soketi oluşturmak için bir parametre belirtebilir veya bir sunucu yuvası oluşturmak için belirli bir bağlantı noktasına bağlayabilirsiniz. İstemci tarafında `Connect` ve `Accept` sunucu tarafında kullanarak bir istemci soketine bağlanın. Sonra bir `CSocketFile` nesne oluşturun ve `CSocket` `CSocketFile` oluşturucudaki nesneyle ilişkilendirin. Ardından, göndermek `CArchive` için bir nesne ve veri almak için bir nesne `CSocketFile` (gerektiği `CArchive` gibi) oluşturun, ardından bunları oluşturucudaki nesneyle ilişkilendirin. İletişim tamamlandığında, nesneleri `CArchive` `CSocketFile`ve `CSocket` nesneleri yok edin. SOCKET veri türü makalede [Windows Soketleri açıklanmıştır: Arka plan.](../../mfc/windows-sockets-background.md)
+Bir nesne kullanmak için, `CSocket` oluşturucuyu çağırın, sonra `Create` temel yuva tanıtıcısını (tür yuvası) oluşturmak için çağırın. `Create`Bir akış yuvası oluşturma varsayılan parametreleri, ancak bir nesneyle bir yuva kullanmıyorsanız, `CArchive` bunun yerine bir veri birimi yuvası oluşturmak için bir parametre belirtebilir veya bir sunucu yuvası oluşturmak için belirli bir bağlantı noktasına bağlayabilirsiniz. `Connect`İstemci tarafında ve sunucu tarafında kullanarak bir istemci yuvasına bağlanın `Accept` . Sonra bir `CSocketFile` nesne oluşturun ve `CSocket` `CSocketFile` oluşturucudaki nesneyle ilişkilendirin. Daha `CArchive` sonra, göndermek için bir nesne oluşturun (gerektiğinde) ve ardından bunları `CSocketFile` `CArchive` oluşturucudaki nesnesiyle ilişkilendirin. İletişimler tamamlandığında,, `CArchive` ve nesnelerini yok edin `CSocketFile` `CSocket` . YUVA veri türü, [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md)makalesinde açıklanmaktadır.
 
-`CArchive` Kullandığınızda `CSocketFile` ve `CSocket`, istenilen bayt `CSocket::Receive` miktarını bekleyen bir `PumpMessages(FD_READ)`döngü (by) girer bir durumla karşılaşabilirsiniz. Bunun nedeni, `CSocketFile` Windows soketlerinin FD_READ bildirimi başına yalnızca `CSocket` bir recv araması ve FD_READ başına birden çok recv araması izni sağlamasıdır. Okunacak veri olmadığında FD_READ alırsanız, uygulama askıda kalır. Başka bir FD_READ alamazsanız, uygulama soket üzerinden iletişimi durdurur.
+`CArchive`Ve ile kullandığınızda `CSocketFile` `CSocket` , `CSocket::Receive` `PumpMessages(FD_READ)` istenen bayt miktarını bekleyen bir döngüye (by) giren bir durumla karşılaşabilirsiniz. Bunun nedeni, Windows Yuvaları FD_READ bildirimi başına yalnızca bir alma çağrısına izin ver, `CSocketFile` ancak `CSocket` fd_read başına birden çok alınan çağrıya izin verir. Okunacak veri olmadığında bir FD_READ alırsanız uygulama askıda kalır. Daha önce başka bir FD_READ alamazsanız, uygulama yuva üzerinden iletişim kurmasını durduruyor.
 
-Bu sorunu aşağıdaki gibi çözebilirsiniz. Soket `OnReceive` sınıfının yönteminde, `CAsyncSocket::IOCtl(FIONREAD, ...)` soketten `Serialize` okunması beklenen veriler bir TCP paketinin boyutunu aştığında (genellikle en az 1096 bayt olan ağ ortamının maksimum iletim birimi) ileti sınıfının yöntemini aramadan önce arayın. Kullanılabilir verilerin boyutu gerekenden daha azsa, tüm verilerin alınmasını bekleyin ve ancak o zaman okuma işlemini başlatın.
+Bu sorunu aşağıdaki şekilde çözebilirsiniz. `OnReceive`Yuva sınıfınızın yönteminde, `CAsyncSocket::IOCtl(FIONREAD, ...)` `Serialize` yuvadan okunan beklenen veriler bir TCP paketinin boyutunu (genellikle en az 1096 bayt) aştığında, size ileti sınıfınızın yöntemini çağırmadan önce çağırın. Kullanılabilir verilerin boyutu gerekenden küçükse, tüm verilerin alınmasını bekleyin ve sonra okuma işlemini başlatın.
 
-Aşağıdaki örnekte, `m_dwExpected` kullanıcının almayı beklediği yaklaşık bayt sayısıdır. Kodunuzun başka bir yerinde beyan ettiğiniz varsayılır.
+Aşağıdaki örnekte, `m_dwExpected` kullanıcının almayı beklediği yaklaşık bayt sayısıdır. Kodunuzun başka bir yerinde bildirdiğiniz varsayılır.
 
 [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/cpp/csocket-class_1.cpp)]
 
 > [!NOTE]
-> Statik olarak bağlı bir MFC uygulamasında ikincil iş parçacıklarında MFC `AfxSocketInit` soketleri kullanırken, soket kitaplıklarını başlatmak için soket kullanan her iş parçacığı çağırmanız gerekir. Varsayılan olarak, `AfxSocketInit` yalnızca birincil iş parçacığı denir.
+> Statik olarak bağlı bir MFC uygulamasında ikincil iş parçacıklarında MFC Yuvaları kullanırken, `AfxSocketInit` yuva kitaplıklarını başlatmak için yuva kullanan her bir iş parçacığında çağrı yapmanız gerekir. Varsayılan olarak, `AfxSocketInit` yalnızca birincil iş parçacığında çağırılır.
 
-Daha fazla bilgi için, [MFC'deki Windows Soketleri](../../mfc/windows-sockets-in-mfc.md), [Windows Soketleri: Arşivli Soketleri Kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md), [Windows Soketleri: Arşivlerle Soketler Nasıl Çalışır](../../mfc/windows-sockets-how-sockets-with-archives-work.md), Windows [Soketleri: İşlem sırası](../../mfc/windows-sockets-sequence-of-operations.md), Windows [Soketleri: Arşivleri Kullanan Soketler Örneği](../../mfc/windows-sockets-example-of-sockets-using-archives.md).
+Daha fazla bilgi için bkz. [MFC 'de Windows Yuvaları](../../mfc/windows-sockets-in-mfc.md), Windows Yuvaları [: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md), [Windows Yuvaları: Arşivlerle ilgili yuvalar nasıl çalışır](../../mfc/windows-sockets-how-sockets-with-archives-work.md), [Windows Yuvaları: Işlem dizisi](../../mfc/windows-sockets-sequence-of-operations.md), [Windows Yuvaları: arşivleri kullanan yuvalar örneği](../../mfc/windows-sockets-example-of-sockets-using-archives.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Casyncsocket](../../mfc/reference/casyncsocket-class.md)
+[CAsyncSocket 'ini kullanma](../../mfc/reference/casyncsocket-class.md)
 
 `CSocket`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxsock.h
+**Üstbilgi:** afxsock. h
 
-## <a name="csocketattach"></a><a name="attach"></a>CSocket::Ekle
+## <a name="csocketattach"></a><a name="attach"></a> CSocket:: Attach
 
-Tutamacı bir `CSocket` nesneye `hSocket` takmak için bu üye işlevi çağırın.
+Tanıtıcıyı bir nesneye iliştirmek için bu üye işlevini çağırın `hSocket` `CSocket` .
 
 ```
 BOOL Attach(SOCKET hSocket);
@@ -104,18 +105,18 @@ BOOL Attach(SOCKET hSocket);
 
 ### <a name="parameters"></a>Parametreler
 
-*hSoket*<br/>
-Bir soketiçin bir tutamaç içerir.
+*hSocket*<br/>
+Yuva için bir tanıtıcı içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sıfıra inme.
+İşlev başarılı olursa sıfır dışı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-SOCKET tutamacı nesnenin [m_hSocket](../../mfc/reference/casyncsocket-class.md#m_hsocket) veri üyesinde depolanır.
+YUVA tutamacı nesnenin [m_hSocket](../../mfc/reference/casyncsocket-class.md#m_hsocket) veri üyesinde depolanır.
 
-Daha fazla bilgi için [Windows Soketleri: Arşivli Soketleri Kullanma.](../../mfc/windows-sockets-using-sockets-with-archives.md)
+Daha fazla bilgi için bkz. [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
 ### <a name="example"></a>Örnek
 
@@ -125,9 +126,9 @@ Daha fazla bilgi için [Windows Soketleri: Arşivli Soketleri Kullanma.](../../m
 
 [!code-cpp[NVC_MFCSocketThread#3](../../mfc/reference/codesnippet/cpp/csocket-class_4.cpp)]
 
-## <a name="csocketcancelblockingcall"></a><a name="cancelblockingcall"></a>CSocket::CancelBlockingCall
+## <a name="csocketcancelblockingcall"></a><a name="cancelblockingcall"></a> CSocket:: CancelBlockingCall
 
-Şu anda devam etmekte olan engelleme çağrısını iptal etmek için bu üye işlevini arayın.
+Sürmekte olan bir engelleme çağrısını iptal etmek için bu üye işlevi çağırın.
 
 ```cpp
 void CancelBlockingCall();
@@ -135,17 +136,17 @@ void CancelBlockingCall();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, bu soket için bekleyen engelleme işlemini iptal eder. Özgün engelleme çağrısı, WSAEINTR hatasıyla mümkün olan en kısa sürede sonlanır.
+Bu işlev, bu yuva için bekleyen engelleyici işlemleri iptal eder. Özgün engelleme çağrısı, WSAEINTR hatası ile mümkün olan en kısa sürede sona erecek.
 
-Engelleme `Connect` işlemi söz konusu olduğunda, Windows Soketleri uygulaması engelleme çağrısını mümkün olan en kısa sürede sonlandırır, ancak bağlantı tamamlanana (ve sonra zamana kadar sıfırlanana) veya zaman alıyana kadar soket kaynaklarının serbest bırakılması mümkün olmayabilir. Bu durum, yalnızca uygulama hemen yeni bir soket açmaya çalışırsa (soket yoksa) veya aynı eşe bağlanmaya çalışırsa fark edilebilir.
+Engelleyici bir işlem söz konusu olduğunda `Connect` , Windows Yuvaları uygulamasının engelleme çağrısını mümkün olan en kısa sürede sonlandıracağından, ancak bağlantı tamamlanana (ve sonra sıfırlanmadan) veya zaman aşımına uğramadan yuva kaynaklarının serbest bırakılması mümkün olmayabilir. Bu, yalnızca uygulama hemen yeni bir yuva açmaya (yuva yoksa) veya aynı eşe bağlanmayı denediğinde fark edilebilir olması olasıdır.
 
-Yuvayı belirsiz bir `Accept` durumda bırakabilecek başka bir işlemi iptal etmek. Bir uygulama bir soket üzerindeki engelleme işlemini iptal ederse, uygulamanın yuvada gerçekleştirebilmesine bağlı `Close`olabileceği tek işlem, bazı Windows Soketleri uygulamalarında çalışabilir, ancak bir çağrıdır. Uygulamanız için maksimum taşınabilirlik istiyorsanız, iptal edildikten sonra işlemleri gerçekleştirmeye bağlı olmamak için dikkatli olmalısınız.
+Dışında herhangi bir işlemi iptal etmek `Accept` , yuvayı belirsiz bir durumda bırakabilir. Bir uygulama bir yuva üzerinde engelleyici bir işlemi iptal ederse, uygulamanın yuva üzerinde gerçekleştirebilmesinin bağımlı olabileceği tek işlem, `Close` bazı Windows Yuvaları uygulamalarında başka işlemler çalışabilse de ' a bir çağrıdır. Uygulamanız için maksimum taşınabilirlik yaptıysanız, iptal işleminden sonra işlem gerçekleştirmeye bağlı olmadığından dikkatli olmanız gerekir.
 
-Daha fazla bilgi için [Windows Soketleri: Arşivli Soketleri Kullanma.](../../mfc/windows-sockets-using-sockets-with-archives.md)
+Daha fazla bilgi için bkz. [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-## <a name="csocketcreate"></a><a name="create"></a>CSocket::Oluştur
+## <a name="csocketcreate"></a><a name="create"></a> CSocket:: Create
 
-Windows soketi oluşturmak ve takmak için bir soket nesnesi oluşturduktan sonra **Üye Oluştur** işlevini çağırın.
+Windows yuvasını oluşturmak ve eklemek için bir yuva nesnesi oluşturduktan sonra üye **Oluştur** işlevini çağırın.
 
 ```
 BOOL Create(
@@ -157,34 +158,34 @@ BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *nSocketPort*<br/>
-Soketle birlikte kullanılacak belirli bir bağlantı noktası veya MFC'nin bir bağlantı noktası seçmesini istiyorsanız 0.
+Belirli bir bağlantı noktası, yuvada kullanılmak üzere veya MFC 'nin bir bağlantı noktasını seçmesini istiyorsanız 0.
 
 *nSocketType*<br/>
-SOCK_STREAM ya da SOCK_DGRAM.
+SOCK_STREAM veya SOCK_DGRAM.
 
 *lpszSocketAddress*<br/>
-Bağlı soketin ağ adresini içeren bir dize işaretçisi, "128.56.22.8" gibi noktalı bir sayı. Bu parametre için NULL dizesi geçmek, örneğin tüm ağ arabirimlerinde istemci etkinliğini dinlemesi `CSocket` gerektiğini gösterir.
+Bağlı yuvanın ağ adresini içeren bir dize işaretçisi, "128.56.22.8" gibi noktalı bir sayıdır. Bu parametre için NULL dizenin geçirilmesi, `CSocket` Örneğin tüm ağ arabirimlerinde istemci etkinliğini dinlemesi gerektiğini gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlev başarılı olursa sıfırsız; aksi takdirde 0 ve belirli bir hata `GetLastError`kodu arayarak alınabilir.
+İşlev başarılı olursa sıfır dışı; Aksi takdirde 0 ve belirli bir hata kodu çağırarak elde edilebilir `GetLastError` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-`Create`daha `Bind` sonra soketi belirtilen adrese bağlamak için çağırır. Aşağıdaki soket türleri desteklenir:
+`Create` ardından `Bind` , yuvayı belirtilen adrese bağlamak için çağırır. Aşağıdaki yuva türleri desteklenir:
 
-- SOCK_STREAM Sıralı, güvenilir, çift yönlü, bağlantı tabanlı bayt akışları sağlar. Internet adresi ailesi için İletim Denetim Protokolü 'nü (TCP) kullanır.
+- SOCK_STREAM sıralı, güvenilir, iki yönlü, bağlantı tabanlı bayt akışları sağlar. Internet adresi ailesi için Iletim Denetim Protokolü (TCP) kullanır.
 
-- SOCK_DGRAM Sabit (genellikle küçük) maksimum uzunlukta ki bağlantısız, güvenilir olmayan arabellekleri olan veri gramlarını destekler. Internet adresi ailesi için Kullanıcı VeriGram Protokolü 'nü (UDP) kullanır. Bu seçeneği kullanmak için soketi bir `CArchive` nesneyle kullanmamalısınız.
+- SOCK_DGRAM, bağlantısız, güvenilir olmayan (genellikle küçük) bir uzunluk üst sınırı olan datagramları destekler. Internet adresi ailesi için Kullanıcı Datagram Protokolü (UDP) kullanır. Bu seçeneği kullanmak için, yuvasını bir nesnesiyle birlikte kullanamazsınız `CArchive` .
 
     > [!NOTE]
-    >  `Accept` Üye işlev, parametresi olarak `CSocket` yeni, boş bir nesneye başvuru alır. Bu nesneyi aramadan `Accept`önce oluşturmanız gerekir. Bu soket nesnesi kapsam dışına çıkarsa, bağlantının kapandığını unutmayın. Bu yeni `Create` soket nesnesi için aramayın.
+    >  `Accept`Üye işlevi, parametresi olarak yeni, boş bir nesneye başvuru alır `CSocket` . Bu nesneyi, çağrısından önce oluşturmanız gerekir `Accept` . Bu yuva nesnesi kapsam dışına geçtiğinde bağlantının kapandığını aklınızda bulundurun. `Create`Bu yeni yuva nesnesi için çağrı kullanmayın.
 
-Akış ve veri gram soketleri hakkında daha fazla bilgi için [Windows Soketleri: Arka Plan,](../../mfc/windows-sockets-background.md) [Windows Soketleri: Bağlantı Noktaları ve Soket Adresleri](../../mfc/windows-sockets-ports-and-socket-addresses.md)ve Windows [Soketleri: Arşivli Soketleri Kullanma.](../../mfc/windows-sockets-using-sockets-with-archives.md)
+Stream ve datagram yuvaları hakkında daha fazla bilgi için bkz. [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md), [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../../mfc/windows-sockets-ports-and-socket-addresses.md)ve [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-## <a name="csocketcsocket"></a><a name="csocket"></a>CSocket::CSocket
+## <a name="csocketcsocket"></a><a name="csocket"></a> CSocket:: CSocket
 
-Bir `CSocket` nesne inşa eder.
+Bir `CSocket` nesnesi oluşturur.
 
 ```
 CSocket();
@@ -192,13 +193,13 @@ CSocket();
 
 ### <a name="remarks"></a>Açıklamalar
 
-İnşaattan `Create` sonra üye işlevi aramalısınız.
+Oluşturma işleminden sonra üye işlevini çağırmanız gerekir `Create` .
 
-Daha fazla bilgi için [Windows Soketleri: Arşivli Soketleri Kullanma.](../../mfc/windows-sockets-using-sockets-with-archives.md)
+Daha fazla bilgi için bkz. [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-## <a name="csocketfromhandle"></a><a name="fromhandle"></a>CSocket::FromHandle
+## <a name="csocketfromhandle"></a><a name="fromhandle"></a> CSocket:: FromHandle
 
-Bir işaretçiyi `CSocket` nesneye döndürür.
+Nesnesine bir işaretçi döndürür `CSocket` .
 
 ```
 static CSocket* PASCAL FromHandle(SOCKET hSocket);
@@ -206,22 +207,22 @@ static CSocket* PASCAL FromHandle(SOCKET hSocket);
 
 ### <a name="parameters"></a>Parametreler
 
-*hSoket*<br/>
-Bir soketiçin bir tutamaç içerir.
+*hSocket*<br/>
+Yuva için bir tanıtıcı içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir `CSocket` nesneye işaretçi veya `CSocket` *hSocket'e*bağlı bir nesne yoksa NULL .
+Bir nesne işaretçisi `CSocket` veya `CSocket` *hSocket*'e iliştirilmiş nesne yoksa null.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir SOCKET tutamacı verildiğinde, bir `CSocket` nesne işkarasına bağlı değilse, üye işlev NULL döndürür ve geçici bir nesne oluşturmaz.
+Bir yuva tutamacı verildiğinde, bir `CSocket` nesne tutamaya ekli değilse, üye IşLEVI null döndürür ve geçici bir nesne oluşturmaz.
 
-Daha fazla bilgi için [Windows Soketleri: Arşivli Soketleri Kullanma.](../../mfc/windows-sockets-using-sockets-with-archives.md)
+Daha fazla bilgi için bkz. [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-## <a name="csocketisblocking"></a><a name="isblocking"></a>CSocket::Engelleme
+## <a name="csocketisblocking"></a><a name="isblocking"></a> CSocket:: ısengelliyor
 
-Engelleme çağrısının devam edip etmeyolmadığını belirlemek için bu üye işlevini arayın.
+Bir engelleme çağrısının devam ettiğini öğrenmek için bu üye işlevi çağırın.
 
 ```
 BOOL IsBlocking();
@@ -229,15 +230,15 @@ BOOL IsBlocking();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Soket engelliyorsa sıfıra inme; aksi takdirde 0.
+Yuva engellense sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için [Windows Soketleri: Arşivli Soketleri Kullanma.](../../mfc/windows-sockets-using-sockets-with-archives.md)
+Daha fazla bilgi için bkz. [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
-## <a name="csocketonmessagepending"></a><a name="onmessagepending"></a>CSocket::OnMessagePending
+## <a name="csocketonmessagepending"></a><a name="onmessagepending"></a> CSocket:: OnMessagePending
 
-Windows'dan belirli iletileri aramak ve bunları yuvanızda yanıtlamak için bu üye işlevini geçersiz kılın.
+Windows 'dan belirli iletileri aramak ve bu üye işlevini yuvaınızdan yanıtlamak için geçersiz kılın.
 
 ```
 virtual BOOL OnMessagePending();
@@ -245,19 +246,19 @@ virtual BOOL OnMessagePending();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İleti işlenirse sıfır olmayan; aksi takdirde 0.
+İleti işlenirse sıfır dışı; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu gelişmiş bir geçersiz.
+Bu gelişmiş bir geçersiz kılınabilir.
 
-Yuva, `OnMessagePending` uygulamanızın ilgi çekici iletileriyle başa çıkma fırsatı vermek için Windows iletilerini pompalarken çerçeve çağırır. Nasıl kullanabileceğinize `OnMessagePending`örnekler için Windows [Soketleri: Soket Sınıflarından Türeyen](../../mfc/windows-sockets-deriving-from-socket-classes.md)makalesine bakın.
+Çerçeve, `OnMessagePending` size uygulamanıza ilişkin iletilerle ilgilenme fırsatı vermek için yuva Windows iletileri oluştururken çağrılır. Nasıl kullanabileceğinizi gösteren örnekler için `OnMessagePending` , [Windows Yuvaları: yuva sınıflarından türetme](../../mfc/windows-sockets-deriving-from-socket-classes.md)makalesine bakın.
 
-Daha fazla bilgi için [Windows Soketleri: Arşivli Soketleri Kullanma.](../../mfc/windows-sockets-using-sockets-with-archives.md)
+Daha fazla bilgi için bkz. [Windows Yuvaları: Arşivlerle yuvalar kullanma](../../mfc/windows-sockets-using-sockets-with-archives.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CAsyncSocket Sınıfı](../../mfc/reference/casyncsocket-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CAsyncSocket Sınıfı](../../mfc/reference/casyncsocket-class.md)<br/>
-[Csocketfile Sınıfı](../../mfc/reference/csocketfile-class.md)
+[CAsyncSocket sınıfı](../../mfc/reference/casyncsocket-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CAsyncSocket sınıfı](../../mfc/reference/casyncsocket-class.md)<br/>
+[CSocketFile sınıfı](../../mfc/reference/csocketfile-class.md)

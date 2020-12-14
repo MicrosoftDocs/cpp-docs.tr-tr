@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ctreeckclass'
 title: Ctreeckclass sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -162,12 +163,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: 6a824aceae39d5aa6685176354c48a9457a40e9e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e126863bebcc3cb8f878a8ece41ee8d9385c0afe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345023"
 ---
 # <a name="ctreectrl-class"></a>Ctreeckclass sınıfı
 
@@ -361,7 +362,7 @@ Oluşturulmakta olan denetimin genişletilmiş stilini belirtir. Genişletilmiş
 Ağaç görünümü denetiminin stilini belirtir. [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww)' de açıklanan pencere stillerini ve Windows SDK açıklanan [ağaç görünümü Denetim stillerinin](/windows/win32/Controls/tree-view-control-window-styles) birleşimini uygulayın.
 
 *Rect*<br/>
-*PParentWnd*istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
+*PParentWnd* istemci koordinatları içinde oluşturulacak pencerenin boyutunu ve konumunu açıklayan bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına başvuru.
 
 *pParentWnd*<br/>
 Denetimin üst öğesi olan pencerenin işaretçisi.
@@ -398,7 +399,7 @@ Başarılı olursa sürükle bit eşlemin eklendiği görüntü listesine yönel
 
 Bir uygulama, öğe sürüklenirken görüntüyü göstermek için görüntü listesi işlevlerini kullanır.
 
-`CImageList`Nesne kalıcıdır ve tamamlandığında silmeniz gerekir. Örnek:
+`CImageList`Nesne kalıcıdır ve tamamlandığında silmeniz gerekir. Örneğin:
 
 [!code-cpp[NVC_MFC_CTreeCtrl#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_2.cpp)]
 
@@ -591,7 +592,7 @@ Ağaç Denetim öğesi işaretlenirse sıfır dışı; Aksi takdirde 0.
 
 ## <a name="ctreectrlgetchilditem"></a><a name="getchilditem"></a> Ctreeci:: GetChildItem
 
-*Hitem*tarafından belirtilen öğenin alt öğesi olan ağaç görünümü öğesini almak için bu işlevi çağırın.
+*Hitem* tarafından belirtilen öğenin alt öğesi olan ağaç görünümü öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetChildItem(HTREEITEM hItem) const;
@@ -789,7 +790,7 @@ Verileri alınacak olan öğenin tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Hitem*tarafından belirtilen öğeyle ilişkili işaretçiye göre, uygulamaya özgü bir değer.
+*Hitem* tarafından belirtilen öğeyle ilişkili işaretçiye göre, uygulamaya özgü bir değer.
 
 ### <a name="example"></a>Örnek
 
@@ -888,7 +889,7 @@ BOOL GetItemPartRect(
 'ndaki Bölüm için tanımlayıcı. TVGIPR_BUTTON olarak ayarlanmalıdır.
 
 *lpRect*\
-dışı [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına yönelik işaretçi. Bu yöntem başarılı olursa, yapı *Hitem* ve *nPart*tarafından belirtilen parçanın dikdörtgen koordinatlarını alır.
+dışı [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına yönelik işaretçi. Bu yöntem başarılı olursa, yapı *Hitem* ve *nPart* tarafından belirtilen parçanın dikdörtgen koordinatlarını alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -896,7 +897,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her ağaç denetim öğesi bir grafik dikdörtgeniyle sınırlanır. Dikdörtgenin her bir noktasına tıklandığında, öğenin *isabet*ettiği söylenir. Bu yöntem, dikdörtgenin bir noktasına tıklandığı zaman, *Hitem* parametresi tarafından tanımlanan öğe isabet edildiğinde en büyük dikdörtgeni döndürür.
+Her ağaç denetim öğesi bir grafik dikdörtgeniyle sınırlanır. Dikdörtgenin her bir noktasına tıklandığında, öğenin *isabet* ettiği söylenir. Bu yöntem, dikdörtgenin bir noktasına tıklandığı zaman, *Hitem* parametresi tarafından tanımlanan öğe isabet edildiğinde en büyük dikdörtgeni döndürür.
 
 Bu yöntem, Windows SDK açıklanan TVM_GETITEMPARTRECT iletisini gönderir. Daha fazla bilgi için [TreeView_GetItemPartRect](/windows/win32/api/commctrl/nf-commctrl-treeview_getitempartrect) makroya bakın.
 
@@ -936,7 +937,7 @@ Bu parametre sıfır değilse, sınırlayıcı dikdörtgen yalnızca öğenin me
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Öğe görünür ise, sınırlayıcı dikdörtgeni *lpRect*içinde yer alıyorsa sıfır dışında. Aksi halde, *lpRect* ile 0 başlatılmamış.
+Öğe görünür ise, sınırlayıcı dikdörtgeni *lpRect* içinde yer alıyorsa sıfır dışında. Aksi halde, *lpRect* ile 0 başlatılmamış.
 
 ### <a name="example"></a>Örnek
 
@@ -944,7 +945,7 @@ Bu parametre sıfır değilse, sınırlayıcı dikdörtgen yalnızca öğenin me
 
 ## <a name="ctreectrlgetitemstate"></a><a name="getitemstate"></a> Ctreeci:: GetItemState
 
-*Hitem*tarafından belirtilen öğenin durumunu döndürür.
+*Hitem* tarafından belirtilen öğenin durumunu döndürür.
 
 ```
 UINT GetItemState(
@@ -958,7 +959,7 @@ UINT GetItemState(
 Durumu alınacak olan öğenin tanıtıcısı.
 
 *nStateMask*<br/>
-Alınacak bir veya daha fazla durumu gösteren maske. *NStateMask*için olası değerler hakkında daha fazla bilgi için, `state` `stateMask` Windows SDK içindeki [tvidıtem](/windows/win32/api/commctrl/ns-commctrl-tvitemw) yapısının tartışmalarına ve üyelerine bakın.
+Alınacak bir veya daha fazla durumu gösteren maske. *NStateMask* için olası değerler hakkında daha fazla bilgi için, `state` `stateMask` Windows SDK içindeki [tvidıtem](/windows/win32/api/commctrl/ns-commctrl-tvitemw) yapısının tartışmalarına ve üyelerine bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -991,7 +992,7 @@ Bu yöntem, Windows SDK açıklanan [TVM_GETITEM](/windows/win32/Controls/tvm-ge
 
 ## <a name="ctreectrlgetitemtext"></a><a name="getitemtext"></a> Ctreeci:: GetItemText
 
-*Hitem*tarafından belirtilen öğenin metnini döndürür.
+*Hitem* tarafından belirtilen öğenin metnini döndürür.
 
 ```
 CString GetItemText(HTREEITEM hItem) const;
@@ -1070,7 +1071,7 @@ HTREEITEM GetNextItem(
 Ağaç öğesi tutamacı.
 
 *nCode*<br/>
-*HItem*ile ilişki türünü belirten bayrak. Bu bayrak aşağıdaki değerlerden biri olabilir:
+*HItem* ile ilişki türünü belirten bayrak. Bu bayrak aşağıdaki değerlerden biri olabilir:
 
 - TVGN_CARET Şu anda seçili öğeyi alır.
 
@@ -1152,7 +1153,7 @@ Sonraki görünür öğenin tutamacı; Aksi takdirde NULL.
 
 ## <a name="ctreectrlgetparentitem"></a><a name="getparentitem"></a> Ctreecı:: Getparentidıtem
 
-*HItem*öğesinin üst öğesini almak için bu işlevi çağırın.
+*HItem* öğesinin üst öğesini almak için bu işlevi çağırın.
 
 ```
 HTREEITEM GetParentItem(HTREEITEM hItem) const;
@@ -1968,7 +1969,7 @@ BOOL SetItemData(
 Verileri alınacak olan öğenin tanıtıcısı.
 
 *dwData*<br/>
-*Hitem*tarafından belirtilen öğeyle ilişkili işaretçiye göre, uygulamaya özgü bir değer.
+*Hitem* tarafından belirtilen öğeyle ilişkili işaretçiye göre, uygulamaya özgü bir değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2002,7 +2003,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) iletisini gönderir. Bu yöntem, bir TVITEMEX yapısının üyesine *ıexpandedımage* parametresini atar `iExpandedImage` ve [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) sonra bu yapıyı iletide kullanır.
+Bu yöntem, Windows SDK açıklanan [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) iletisini gönderir. Bu yöntem, bir TVITEMEX yapısının üyesine *ıexpandedımage* parametresini atar `iExpandedImage` ve [](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) sonra bu yapıyı iletide kullanır.
 
 ### <a name="example"></a>Örnek
 
@@ -2077,7 +2078,7 @@ Görüntüler hakkında daha fazla bilgi için bkz. [CImageList](../../mfc/refer
 
 ## <a name="ctreectrlsetitemstate"></a><a name="setitemstate"></a> Ctreeci:: SetItemState
 
-*Hitem*tarafından belirtilen öğenin durumunu ayarlar.
+*Hitem* tarafından belirtilen öğenin durumunu ayarlar.
 
 ```
 BOOL SetItemState(
@@ -2133,7 +2134,7 @@ Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, Windows SDK açıklanan [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) iletisini gönderir. Bu yöntem, bir TVITEMEX yapısının üyesine *uStateEx* parametresini atar `uStateEx` ve [TVITEMEX](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) sonra bu yapıyı iletide kullanır.
+Bu yöntem, Windows SDK açıklanan [TVM_SETITEM](/windows/win32/Controls/tvm-setitem) iletisini gönderir. Bu yöntem, bir TVITEMEX yapısının üyesine *uStateEx* parametresini atar `uStateEx` ve [](/windows/win32/api/commctrl/ns-commctrl-tvitemexw) sonra bu yapıyı iletide kullanır.
 
 ### <a name="example"></a>Örnek
 
@@ -2149,7 +2150,7 @@ Aşağıdaki kod örneği, ağaç görünümü öğesini devre dışı durumuna 
 
 ## <a name="ctreectrlsetitemtext"></a><a name="setitemtext"></a> Ctreeci:: Setıtemtext
 
-*Hitem*tarafından belirtilen öğenin metnini ayarlar.
+*Hitem* tarafından belirtilen öğenin metnini ayarlar.
 
 ```
 BOOL SetItemText(

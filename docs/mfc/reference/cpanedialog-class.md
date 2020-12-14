@@ -1,5 +1,6 @@
 ---
-title: CPaneDialog Sınıfı
+description: 'Daha fazla bilgi edinin: CPaneDialog Class'
+title: CPaneDialog sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPaneDialog
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - CPaneDialog [MFC], HandleInitDialog
 - CPaneDialog [MFC], SetOccDialogInfo
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
-ms.openlocfilehash: ad1225034cc5eca8ca53b042ebe3b55db4a2cf09
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6efbbf710f09cf6507853b983a68578a24111a34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364131"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345179"
 ---
-# <a name="cpanedialog-class"></a>CPaneDialog Sınıfı
+# <a name="cpanedialog-class"></a>CPaneDialog sınıfı
 
-Sınıf, `CPaneDialog` modeless, takılabilir iletişim kutusunu destekler.
+`CPaneDialog`Sınıfı, kalıcı olmayan, yerleştirilebilir bir iletişim kutusunu destekler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CPaneDialog : public CDockablePane
@@ -33,53 +34,53 @@ class CPaneDialog : public CDockablePane
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`CPaneDialog::CPaneDialog`|Varsayılan oluşturucu.|
+|`CPaneDialog::CPaneDialog`|Varsayılan Oluşturucu.|
 |`CPaneDialog::~CPaneDialog`|Yıkıcı.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPaneDialog::Oluştur](#create)|Takılabilir bir iletişim kutusu oluşturur ve nesneye `CPaneDialog` bağlar.|
-|`CPaneDialog::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için çerçeve tarafından kullanılır.|
-|`CPaneDialog::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine işaretçi almak için çerçeve tarafından kullanılır.|
-|[CPaneDialog::HandleinitDialog](#handleinitdialog)|[WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) iletiyi işler. (Yeniden `CBasePane::HandleInitDialog`tanımlar.)|
-|`CPaneDialog::OnEraseBkgnd`|[WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd) iletiyi işler. [(CWnd yeniden tanımlar::OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd).)|
-|`CPaneDialog::OnLButtonDblClk`|[WM_LBUTTONDBLCLK](/windows/win32/inputdev/wm-lbuttondblclk) iletisini işler. [(CWnd yeniden tanımlar::OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|
-|`CPaneDialog::OnLButtonDown`|[WM_LBUTTONDOWN](/windows/win32/inputdev/wm-lbuttondown) iletiyi işler. [(CWnd yeniden tanımlar::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown).)|
-|`CPaneDialog::OnUpdateCmdUI`|İletişim kutusu penceresini güncelleştirmek için çerçeve tarafından çağrılır. [(Overrides CDockablePane::OnUpdateCmdUI](cdockablepane-class.md).)|
-|`CPaneDialog::OnWindowPosChanging`|[WM_WINDOWPOSCHANGING](/windows/win32/winmsg/wm-windowposchanging) iletiyi işler. [(CWnd yeniden tanımlar::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|
-|[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|OLE denetim kapsayıcısı olan bir iletişim kutusu şablonu belirtir.|
+|[CPaneDialog:: Create](#create)|Bir yerleştirilebilir iletişim kutusu oluşturur ve onu bir nesneye ekler `CPaneDialog` .|
+|`CPaneDialog::CreateObject`|Framework tarafından bu sınıf türünün dinamik bir örneğini oluşturmak için kullanılır.|
+|`CPaneDialog::GetThisClass`|Bu sınıf türüyle ilişkili [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) nesnesine bir işaretçi almak için Framework tarafından kullanılır.|
+|[CPaneDialog:: HandleInitDialog](#handleinitdialog)|[WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) iletisini işler. (Tekrar tanımlar `CBasePane::HandleInitDialog` .)|
+|`CPaneDialog::OnEraseBkgnd`|[WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd) iletisini işler. ( [CWnd:: Onsilinebilir Sebkplan](../../mfc/reference/cwnd-class.md#onerasebkgnd)' i tanımlar.)|
+|`CPaneDialog::OnLButtonDblClk`|[WM_LBUTTONDBLCLK](/windows/win32/inputdev/wm-lbuttondblclk) iletisini işler. ( [CWnd:: OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|
+|`CPaneDialog::OnLButtonDown`|[WM_LBUTTONDOWN](/windows/win32/inputdev/wm-lbuttondown) iletisini işler. ( [CWnd:: Onlbuttonkey](../../mfc/reference/cwnd-class.md#onlbuttondown)öğesini tekrar tanımlar.)|
+|`CPaneDialog::OnUpdateCmdUI`|İletişim kutusu penceresini güncelleştirmek için Framework tarafından çağırılır. ( [CDockablePane:: OnUpdateCmdUI](cdockablepane-class.md).)|
+|`CPaneDialog::OnWindowPosChanging`|[WM_WINDOWPOSCHANGING](/windows/win32/winmsg/wm-windowposchanging) iletisini işler. ( [CWnd:: OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging)öğesini tekrar tanımlar.)|
+|[CPaneDialog:: Setoccdialogınfo](#setoccdialoginfo)|OLE denetim kapsayıcısı olan bir iletişim kutusunun şablonunu belirtir.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir `CPaneDialog` nesneyi iki adımda oluştur. İlk olarak, kodunuzda nesne oluşturmak. İkinci olarak, [CPaneDialog'u arayın::Oluştur.](#create) Geçerli bir kaynak şablon adı veya şablon kimliği belirtmeniz ve bir işaretçiyi ana pencereye geçirmeniz gerekir. Aksi takdirde, oluşturma işlemi başarısız olur. İletişim kutusu, WS_CHILD ve WS_VISIBLE stilini belirtmelidir. WS_CLIPCHILDREN ve WS_CLIPSIBLINGS stilleri de belirtmenizi öneririz. Daha fazla bilgi için [Bkz. Pencere Stilleri.](styles-used-by-mfc.md#window-styles)
+`CPaneDialog`İki adımda bir nesne oluşturun. İlk olarak, kodunuzda nesnesini oluşturun. İkincisi, [CPaneDialog:: Create](#create)öğesini çağırın. Geçerli bir kaynak şablonu adı veya şablon KIMLIĞI belirtmeniz ve ana pencereye bir işaretçi geçirmeniz gerekir. Aksi takdirde, oluşturma işlemi başarısız olur. İletişim kutusunda WS_CHILD ve WS_VISIBLE stili belirtilmelidir. WS_CLIPCHILDREN ve WS_CLIPSIBLINGS stillerini de belirtmenizi öneririz. Daha fazla bilgi için bkz. [pencere stilleri](styles-used-by-mfc.md#window-styles).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
 [CBasePane](../../mfc/reference/cbasepane-class.md)
 
-[Cpane](../../mfc/reference/cpane-class.md)
+[CPane](../../mfc/reference/cpane-class.md)
 
-[Cdockablepane](../../mfc/reference/cdockablepane-class.md)
+[CDockablePane](../../mfc/reference/cdockablepane-class.md)
 
 [CPaneDialog](../../mfc/reference/cpanedialog-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxpanedialog.h
+**Üstbilgi:** afxpanedialog. h
 
-## <a name="cpanedialogcreate"></a><a name="create"></a>CPaneDialog::Oluştur
+## <a name="cpanedialogcreate"></a><a name="create"></a> CPaneDialog:: Create
 
-Yerleştirme iletişim kutusu oluşturur ve bir `CPaneDialog` nesneye bağlar.
+Bir yerleştirme iletişim kutusu oluşturur ve onu bir nesneye ekler `CPaneDialog` .
 
 ```
 BOOL Create(
@@ -116,48 +117,48 @@ BOOL Create(
 ### <a name="parameters"></a>Parametreler
 
 *lpszWindowName*<br/>
-[içinde] Yerleştirme iletişim kutusunun adı.
+'ndaki Takma iletişim kutusunun adı.
 
 *pParentWnd*<br/>
-[içinde] Üst pencereyi işaret ediyor.
+'ndaki Üst pencereyi işaret eder.
 
-*bHasGripper*<br/>
-[içinde] Bir başlık (kavrayıcı) ile yerleştirme iletişim kutusu oluşturmak için TRUE; aksi takdirde, YANLIŞ.
+*Bhaskavrayıcı*<br/>
+'ndaki Bir açıklamalı alt yazı (kavrayıcı) ile takma iletişim kutusu oluşturmak için TRUE; Aksi takdirde, FALSE.
 
 *lpszTemplateName*<br/>
-[içinde] Kaynak iletişim şablonunun adı.
+'ndaki Kaynak iletişim kutusu şablonunun adı.
 
 *nStyle*<br/>
-[içinde] Windows stili.
+'ndaki Windows stili.
 
-*Nıd*<br/>
-[içinde] Kontrol kimliği.
+*NID*<br/>
+'ndaki Denetim KIMLIĞI.
 
-*nIDTemplate*<br/>
-[içinde] İletişim şablonunun kaynak kimliği.
+*Nıdtemplate*<br/>
+'ndaki İletişim kutusu şablonunun kaynak KIMLIĞI.
 
 *dwTabbedStyle*<br/>
-[içinde] Kullanıcı başka bir denetim bölmesini bu denetim bölmesinin alt yazısına sürüklediğinde oluşan sekmeli pencerenin stili. Varsayılan değer AFX_CBRS_REGULAR_TABS. Daha fazla bilgi için [CBasePane:CreateEx](../../mfc/reference/cbasepane-class.md#createex) yönteminin Açıklamalar bölümüne bakın.
+'ndaki Kullanıcı başka bir denetim bölmesini bu denetim bölmesinin başlık üzerine sürüklediğinde oluşan sekmeli pencerenin stili. Varsayılan değer AFX_CBRS_REGULAR_TABS. Daha fazla bilgi için [CBasePane:: CreateEx](../../mfc/reference/cbasepane-class.md#createex) yönteminin açıklamalar bölümüne bakın.
 
 *dwControlBarStyle*<br/>
-[içinde] Ek stil öznitelikleri. Varsayılan değer AFX_DEFAULT_DOCKING_PANE_STYLE. Daha fazla bilgi için [CBasePane:CreateEx](../../mfc/reference/cbasepane-class.md#createex) yönteminin Açıklamalar bölümüne bakın.
+'ndaki Ek stil öznitelikleri. Varsayılan değer AFX_DEFAULT_DOCKING_PANE_STYLE. Daha fazla bilgi için [CBasePane:: CreateEx](../../mfc/reference/cbasepane-class.md#createex) yönteminin açıklamalar bölümüne bakın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki örnek, yöntemin sınıfta `Create` nasıl `CPaneDialog` kullanılacağını göstermektedir. Bu örnek, [Küme Bölmesi Boyutu örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
+Aşağıdaki örnek, sınıfında yönteminin nasıl kullanılacağını gösterir `Create` `CPaneDialog` . Bu örnek, [küme bölmesi boyut örneğinin](../../overview/visual-cpp-samples.md)bir parçasıdır.
 
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanedialog-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/cpp/cpanedialog-class_2.cpp)]
 
-## <a name="cpanedialoghandleinitdialog"></a><a name="handleinitdialog"></a>CPaneDialog::HandleinitDialog
+## <a name="cpanedialoghandleinitdialog"></a><a name="handleinitdialog"></a> CPaneDialog:: HandleInitDialog
 
-[WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) iletiyi işler.
+[WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) iletisini işler.
 
 ```
 afx_msg LRESULT HandleInitDialog(
@@ -167,23 +168,23 @@ afx_msg LRESULT HandleInitDialog(
 
 ### <a name="parameters"></a>Parametreler
 
-*Wparam*<br/>
-[içinde] Varsayılan klavye odağı almak için denetim için işleme.
+*wParam*<br/>
+'ndaki Varsayılan klavye odağını almak için kullanılan denetime işleyin.
 
-*Lparam*<br/>
-[içinde] Ek başlatma verilerini belirtir.
+*lParam*<br/>
+'ndaki Ek başlatma verilerini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem başarılı olursa DOĞRU; aksi takdirde, YANLIŞ. Buna ek olarak, TRUE *wParam* parametresi tarafından belirtilen kontrol için klavye odak ayarlar; FALSE varsayılan klavye odağının ayarlanmasını engeller.
+Bu yöntem başarılı olursa TRUE; Aksi takdirde, FALSE. Ayrıca, TRUE, klavye odağını *wParam* parametresi tarafından belirtilen denetime ayarlar; FALSE, varsayılan klavye odağını ayarlamayı engeller.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çerçeve, denetimleri ve bir iletişim kutusunun görünümünü başlatmayı sağlamak için bu yöntemi kullanır. Çerçeve, iletişim kutusunu görüntülemeden önce bu yöntemi çağırır.
+Framework, denetimleri ve bir iletişim kutusunun görünümünü başlatmak için bu yöntemi kullanır. Framework, iletişim kutusunu görüntülemeden önce bu yöntemi çağırır.
 
-## <a name="cpanedialogsetoccdialoginfo"></a><a name="setoccdialoginfo"></a>CPaneDialog::SetOccDialogInfo
+## <a name="cpanedialogsetoccdialoginfo"></a><a name="setoccdialoginfo"></a> CPaneDialog:: Setoccdialogınfo
 
-OLE denetim kapsayıcısı olan bir iletişim kutusu şablonu belirtir.
+OLE denetim kapsayıcısı olan bir iletişim kutusunun şablonunu belirtir.
 
 ```
 virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
@@ -191,8 +192,8 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 
 ### <a name="parameters"></a>Parametreler
 
-*pOccDialogInfo*<br/>
-[içinde] İletişim kutusu nesnesini oluşturmak için kullanılan bir iletişim kutusu şablonuna işaretçi. Bu parametrenin değeri daha sonra [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) yöntemine aktarılır.
+*Poccdialogınfo*<br/>
+'ndaki İletişim kutusu nesnesini oluşturmak için kullanılan bir iletişim kutusu şablonuna yönelik işaretçi. Daha sonra bu parametrenin değeri [COccManager:: CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) yöntemine geçirilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -200,11 +201,11 @@ Her zaman TRUE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, OLE kontrol sitelerini ve ActiveX denetimlerini yöneten [COccManager](../../mfc/reference/coccmanager-class.md) sınıfını destekler. _AFX_OCC_DIALOG_INFO yapısı afxocc.h üstbilgi dosyasında tanımlanır.
+Bu yöntem, OLE denetim siteleri ve ActiveX denetimlerini yöneten [COccManager](../../mfc/reference/coccmanager-class.md) sınıfını destekler. _AFX_OCC_DIALOG_INFO yapısı, afxocc. h üstbilgi dosyasında tanımlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
-[Pencere Stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles)
+[CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md)<br/>
+[Pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles)

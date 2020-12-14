@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CToolTipCtrl sınıfı'
 title: CToolTipCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: a4c2644ff7a9b2ae60cc166247d27d7a25305b97
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: bd263d0ada7ad85169eb551dd136f81b480534e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345036"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 
@@ -210,7 +211,7 @@ Aracı içeren pencerenin işaretçisi.
 Aracın metnini içeren dize kaynağının KIMLIĞI.
 
 *lpRectTool*<br/>
-Aracın sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına yönelik işaretçi. Koordinatlar, *pWnd*tarafından tanımlanan pencerenin istemci alanının sol üst köşesine göre belirlenir.
+Aracın sınırlayıcı dikdörtgeninin koordinatlarını içeren bir [Rect](/windows/win32/api/windef/ns-windef-rect) yapısına yönelik işaretçi. Koordinatlar, *pWnd* tarafından tanımlanan pencerenin istemci alanının sol üst köşesine göre belirlenir.
 
 *nIDTool*<br/>
 Aracın KIMLIĞI.

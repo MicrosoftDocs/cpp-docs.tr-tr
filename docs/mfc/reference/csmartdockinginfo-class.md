@@ -1,5 +1,6 @@
 ---
-title: CSmartDockingInfo Sınıfı
+description: 'Daha fazla bilgi edinin: CSmartDockingInfo sınıfı'
+title: CSmartDockingInfo sınıfı
 ms.date: 11/19/2018
 f1_keywords:
 - CSmartDockingInfo
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - CSmartDockingInfo [MFC], m_uiMarkerBmpResID
 - CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-ms.openlocfilehash: ebb5e75b5b298097cfce043bd83ec88ca0ab4030
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 290f9eef208ceed425739ab26e7811c04309e057
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345140"
 ---
-# <a name="csmartdockinginfo-class"></a>CSmartDockingInfo Sınıfı
+# <a name="csmartdockinginfo-class"></a>CSmartDockingInfo sınıfı
 
 Akıllı yerleştirme işaretlerinin görünümünü tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CSmartDockingInfo : public CObject
@@ -47,67 +48,67 @@ class CSmartDockingInfo : public CObject
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|`CSmartDockingInfo::CSmartDockingInfo`|Varsayılan oluşturucu.|
+|`CSmartDockingInfo::CSmartDockingInfo`|Varsayılan Oluşturucu.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSmartDockingInfo::CopyTo](#copyto)|Geçerli akıllı yerleştirme bilgi parametrelerini sağlanan [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) nesnesine kopyalar.|
+|[CSmartDockingInfo:: CopyTo](#copyto)|Geçerli akıllı yerleştirme bilgileri parametrelerini, belirtilen [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) nesnesine kopyalar.|
 
-### <a name="data-members"></a>Veri Üyeleri
+### <a name="data-members"></a>Veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CSmartDockingInfo::m_bUseThemeColorInShading](#m_busethemecolorinshading)|Çerçeve akıllı yerleştirme işaretleri görüntülendiğinde geçerli tema renginin kullanılıp kullanılmayacağını belirtir.|
-|[CSmartDockingInfo::m_clrBaseBackground](#m_clrbasebackground)|Akıllı yerleştirme işaretçilerin temel arka plan rengini belirtir.|
-|[CSmartDockingInfo::m_clrToneDest](#m_clrtonedest)|Akıllı yerleştirme işaretçisi `m_clrToneSrc` bit eşlemlerinde değiştirilen rengi belirtir.|
-|[CSmartDockingInfo::m_clrToneSrc](#m_clrtonesrc)|Akıllı yerleştirme işaretçisi bit eşlemlerinin rengini belirtir.|
-|[CSmartDockingInfo::m_clrTransparent](#m_clrtransparent)|Saydam olduklarında akıllı yerleştirme işaretçisi bit eşlemlerinin rengini belirtir.|
-|[CSmartDockingInfo::m_nCentralGroupOffset](#m_ncentralgroupoffset)|Merkezi grup dikdörtgeninin sınırlarından akıllı yerleştirme işaretçileri merkezi grubun ofset belirtir.|
-|[CSmartDockingInfo::m_sizeTotal](#m_sizetotal)|Bir gruptaki tüm akıllı yerleştirme işaretçilerinin toplam boyutunu belirtir.|
-|[CSmartDockingInfo::m_uiMarkerBmpResID](#m_uimarkerbmpresid)|Çerçevenin vurgulanmamış akıllı yerleştirme işaretçileri için kullandığı bit eşlemlerinin kaynak tanımlarını tanımlar.|
-|[CSmartDockingInfo::m_uiMarkerLightBmpResID](#m_uimarkerlightbmpresid)|Çerçevenin vurgulanan akıllı yerleştirme işaretçileri için kullandığı bit eşlemlerinin kaynak tanımlarını tanımlar.|
+|[CSmartDockingInfo:: m_bUseThemeColorInShading](#m_busethemecolorinshading)|Framework akıllı yerleştirme işaretçilerini görüntülediğinde geçerli Tema renginin kullanılıp kullanılmayacağını belirtir.|
+|[CSmartDockingInfo:: m_clrBaseBackground](#m_clrbasebackground)|Akıllı yerleştirme işaretlerinin temel arka plan rengini belirtir.|
+|[CSmartDockingInfo:: m_clrToneDest](#m_clrtonedest)|`m_clrToneSrc`Akıllı yerleştirme işaretçisi bit eşlemlerinin yerini alan rengi belirtir.|
+|[CSmartDockingInfo:: m_clrToneSrc](#m_clrtonesrc)|Akıllı yerleştirme işaretçisi bit eşlemlerinin rengini belirtir.|
+|[CSmartDockingInfo:: m_clrTransparent](#m_clrtransparent)|Saydam olduklarında akıllı yerleştirme işaretçisi bit eşlemlerinin rengini belirtir.|
+|[CSmartDockingInfo:: m_nCentralGroupOffset](#m_ncentralgroupoffset)|Merkezi grup dikdörtgeninin sınırlarından, akıllı yerleştirme işaretçileri grubunun sapmasını belirtir.|
+|[CSmartDockingInfo:: m_sizeTotal](#m_sizetotal)|Bir gruptaki tüm akıllı yerleştirme işaretlerinin toplam boyutunu belirtir.|
+|[CSmartDockingInfo:: m_uiMarkerBmpResID](#m_uimarkerbmpresid)|Çerçevenin vurgulanmayan akıllı yerleştirme işaretçileri için kullandığı Bit eşlemlerin kaynak kimliklerini tanımlar.|
+|[CSmartDockingInfo:: m_uiMarkerLightBmpResID](#m_uimarkerlightbmpresid)|Çerçevenin vurgulanan akıllı yerleştirme işaretçileri için kullandığı Bit eşlemlerin kaynak kimliklerini tanımlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Çerçeve, akıllı yerleştirme işaretlerini dahili olarak işler. Aşağıdaki resimde standart akıllı yerleştirme işaretleri gösterilmektedir:
+Çerçeve, akıllı yerleştirme işaretleyicilerini dahili olarak işler. Aşağıdaki çizimde standart akıllı yerleştirme işaretçileri gösterilmektedir:
 
-![Akıllı yerleştirme için standart işaretler](../../mfc/reference/media/nextsdmarkers.png "Akıllı yerleştirme için standart işaretler")
+![Akıllı yerleştirme için standart işaretçiler](../../mfc/reference/media/nextsdmarkers.png "Akıllı yerleştirme için standart işaretçiler")
 
-Bu şekilde, soldaki resimde, etkin bir sekmeye yerleştirme olmayan merkezi bir grup akıllı yerleştirme işaretçisi gösterilmektedir. Ortadaki görüntü, sağ kenarlı akıllı yerleştirme işaretçisini gösterir. Sağdaki görüntü, etkin bir sekmeye yerleştirme özelliğine sahip merkezi bir grup akıllı yerleştirme işaretçisini gösterir. Merkezi grup akıllı yerleştirme işaretçisi bir ana bit eşlemi ve beş akıllı yerleştirme işaretçisi bit eşlemi vardır.
+Bu şekilde, sol taraftaki görüntüde, etkin bir sekmeye takma özelliği olmayan bir merkezi grup akıllı yerleştirme işaretleyicisi gösterilmektedir. Ortadaki görüntüde sağ kenar akıllı yerleştirme işaretleyicisi gösterilmektedir. Sağdaki görüntüde, etkin bir sekmeye takma özelliği olan bir merkezi grup akıllı yerleştirme işaretleyicisi gösterilmektedir. Merkezi Grup akıllı yerleştirme işaretleyicisi, ana bit eşlem ve beş akıllı yerleştirme işaretçisi bit eşlemiyle bulunur.
 
-Akıllı yerleştirme işaretçilerinin aşağıdaki parametrelerini özelleştirebilirsiniz:
+Akıllı yerleştirme işaretlerinin aşağıdaki parametrelerini özelleştirebilirsiniz:
 
-- Renk. Örneğin, şekildeki işaretçilerin mavi rengini kullanıcı tanımlı herhangi bir renkle değiştirebilirsiniz.
+- Renk. Örneğin, şekildeki işaretçilerin mavi rengini Kullanıcı tanımlı herhangi bir renkle değiştirebilirsiniz.
 
 - Saydamlık rengi.
 
-- Sınırlayan dikdörtgenin sınırından merkezi gruptaki akıllı yerleştirme işaretinin mahsup uyruşturu.
+- Bir akıllı yerleştirme işaretçisinin, sınırlayıcı dikdörtgenin kenarlarından itibaren merkezi grupta yer aldığı konum.
 
-- Merkezi grubu temsil eden ana bit eşlemi.
+- Merkezi grubu temsil eden ana bit eşlem.
 
-- Normal ve vurgulanan akıllı yerleştirme işaretçilerini temsil eden bit eşlemleri.
+- Normal ve vurgulanmış akıllı yerleştirme işaretleyicilerini temsil eden bit eşlemler.
 
-Aşağıdaki resimde, özelleştirilmiş akıllı yerleştirme işaretlerinin bir örneği gösterilmektedir:
+Aşağıdaki çizimde, özelleştirilmiş bir akıllı yerleştirme işaretçileri örneği gösterilmektedir:
 
-![Akıllı yerleştirme için özel işaretler](../../mfc/reference/media/nextsdmarkerscustom.png "Akıllı yerleştirme için özel işaretler")
+![Akıllı yerleştirme için özel işaretçiler](../../mfc/reference/media/nextsdmarkerscustom.png "Akıllı yerleştirme için özel işaretçiler")
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxDockingManager.h
+**Üstbilgi:** afxDockingManager. h
 
-## <a name="csmartdockinginfocopyto"></a><a name="copyto"></a>CSmartDockingInfo::CopyTo
+## <a name="csmartdockinginfocopyto"></a><a name="copyto"></a> CSmartDockingInfo:: CopyTo
 
-Geçerli akıllı yerleştirme parametrelerini sağlanan [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) nesnesine kopyalar.
+Geçerli akıllı yerleştirme parametrelerini, belirtilen [CSmartDockingInfo](../../mfc/reference/csmartdockinginfo-class.md) nesnesine kopyalar.
 
 ```cpp
 void CopyTo(CSmartDockingInfo& params);
@@ -116,11 +117,11 @@ void CopyTo(CSmartDockingInfo& params);
 ### <a name="parameters"></a>Parametreler
 
 *params*<br/>
-[çıkış] Geçerli akıllı `CSmartDockingInfo` yerleştirme parametreleriyle doldurulan türde bir nesne.
+dışı `CSmartDockingInfo` Geçerli akıllı yerleştirme parametreleriyle doldurulan türünde bir nesne.
 
-## <a name="csmartdockinginfom_busethemecolorinshading"></a><a name="m_busethemecolorinshading"></a>CSmartDockingInfo::m_bUseThemeColorInShading
+## <a name="csmartdockinginfom_busethemecolorinshading"></a><a name="m_busethemecolorinshading"></a> CSmartDockingInfo:: m_bUseThemeColorInShading
 
-Çerçeve akıllı yerleştirme işaretleri görüntülendiğinde geçerli tema renginin kullanılıp kullanılmayacağını belirtir.
+Framework akıllı yerleştirme işaretçilerini görüntülediğinde geçerli Tema renginin kullanılıp kullanılmayacağını belirtir.
 
 ```
 BOOL m_bUseThemeColorInShading;
@@ -128,21 +129,21 @@ BOOL m_bUseThemeColorInShading;
 
 ### <a name="remarks"></a>Açıklamalar
 
-TRUE ise, işaretçiler geçerli tema rengi kullanılarak çizilir; aksi takdirde işaretleri açık mavi bir renk ile çizilir.
+TRUE ise, işaretçiler geçerli Tema rengi kullanılarak çizilir; Aksi halde işaretçiler açık mavi renkle çizilir.
 
-Varsayılan değer FALSE'dur.
+Varsayılan değer FALSE 'dur.
 
-## <a name="csmartdockinginfom_clrbasebackground"></a><a name="m_clrbasebackground"></a>CSmartDockingInfo::m_clrBaseBackground
+## <a name="csmartdockinginfom_clrbasebackground"></a><a name="m_clrbasebackground"></a> CSmartDockingInfo:: m_clrBaseBackground
 
-Akıllı yerleştirme işaretçilerin temel arka plan rengini belirtir.
+Akıllı yerleştirme işaretlerinin temel arka plan rengini belirtir.
 
 ```
 COLORREF m_clrBaseBackground;
 ```
 
-## <a name="csmartdockinginfom_clrtonedest"></a><a name="m_clrtonedest"></a>CSmartDockingInfo::m_clrToneDest
+## <a name="csmartdockinginfom_clrtonedest"></a><a name="m_clrtonedest"></a> CSmartDockingInfo:: m_clrToneDest
 
-Akıllı yerleştirme işaretçisi `m_clrToneSrc` bit eşlemlerinde yerini alacak rengi belirtir.
+`m_clrToneSrc`Akıllı yerleştirme işaretçisi bit eşlemlerinin yerini alacak rengi belirtir.
 
 ```
 COLORREF m_clrToneDest;
@@ -150,11 +151,11 @@ COLORREF m_clrToneDest;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İşaretleyici biteşlerinin rengini programlı olarak değiştirmek için bu değeri ayarlayın. Örneğin, çerçeveyle sağlanan standart işaretçilerin rengini değiştirmek istiyorsanız, bu değeri istenen renge ayarlayın. Varsayılan olarak, [CSmartDockingInfo::m_clrToneSrc](#m_clrtonesrc) RGB (61, 123, 241) (mavimsi bir renk) olarak ayarlanır.
+İşaretçi bit eşlemlerinin rengini programlı olarak değiştirmek için bu değeri ayarlayın. Örneğin, çerçevesiyle birlikte sunulan standart işaretleyicilerin rengini değiştirmek istiyorsanız, bu değeri istenen renge ayarlayın. Varsayılan olarak, [CSmartDockingInfo:: M_CLRTONESRC](#m_clrtonesrc) RGB (61, 123, 241) (mavimsi rengi) olarak ayarlanır.
 
-Özel işaretçilerin rengini değiştirmek için hem `m_clrToneDest` `m_clrToneSrc`de .
+Özel işaretlerin rengini değiştirmek için, hem hem de belirtmeniz gerekir `m_clrToneDest` `m_clrToneSrc` .
 
-## <a name="csmartdockinginfom_clrtonesrc"></a><a name="m_clrtonesrc"></a>CSmartDockingInfo::m_clrToneSrc
+## <a name="csmartdockinginfom_clrtonesrc"></a><a name="m_clrtonesrc"></a> CSmartDockingInfo:: m_clrToneSrc
 
 Akıllı yerleştirme işaretçisi bit eşlemlerinin rengini belirtir.
 
@@ -164,11 +165,11 @@ COLORREF m_clrToneSrc;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu değeri yalnızca özel bir bit eşleminin rengini başka bir renkle değiştirmek istediğinizde ayarlayın. Standart (çerçeve sağlanan) işaretçisinin rengini değiştiriyorsanız, bu değeri ayarlamanız gerekmez.
+Bu değeri yalnızca özel bir bit eşlemin rengini başka bir renkle değiştirmek istediğinizde ayarlayın. Standart (çerçeve tarafından belirtilen) işaretin rengini değiştiriyorsanız, bu değeri ayarlamanız gerekmez.
 
-Akıllı `(COLORREF)-1` yerleştirme grubunun bir üyesini boş bırakmak için kullanın.
+`(COLORREF)-1`Akıllı yerleştirme grubunun bir üyesini boş bırakmak için kullanın.
 
-## <a name="csmartdockinginfom_clrtransparent"></a><a name="m_clrtransparent"></a>CSmartDockingInfo::m_clrTransparent
+## <a name="csmartdockinginfom_clrtransparent"></a><a name="m_clrtransparent"></a> CSmartDockingInfo:: m_clrTransparent
 
 Saydam olduklarında akıllı yerleştirme işaretçisi bit eşlemlerinin rengini belirtir.
 
@@ -178,11 +179,11 @@ COLORREF m_clrTransparent;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yerleştirme grubunda özel işaretçileri ve özel bit eşlemleri görüntülerken bu değeri ayarlamanız gerekir.
+Yerleştirme grubunda özel işaretleyiciler ve özel bit eşlemler görüntülerken bu değeri ayarlamanız gerekir.
 
-## <a name="csmartdockinginfom_ncentralgroupoffset"></a><a name="m_ncentralgroupoffset"></a>CSmartDockingInfo::m_nCentralGroupOffset
+## <a name="csmartdockinginfom_ncentralgroupoffset"></a><a name="m_ncentralgroupoffset"></a> CSmartDockingInfo:: m_nCentralGroupOffset
 
-Akıllı yerleştirme işaretçileri merkezi grup ve merkezi grup dikdörtgen sınırları arasındaki ofset belirtir.
+Akıllı yerleştirme işaretlerinin merkezi grubu ve merkezi grup dikdörtgeninin sınırları arasındaki sapmayı belirtir.
 
 ```
 int m_nCentralGroupOffset;
@@ -190,11 +191,11 @@ int m_nCentralGroupOffset;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özel işaretçiler ve akıllı yerleştirme işaretleri merkezi grubun sınırları arasında varsayılan ofset değiştirmek istiyorsanız bu değeri belirtin. Varsayılan ofset 5 pikseldir.
+Özel işaretleyiciler arasındaki varsayılan sapmayı ve akıllı yerleştirme işaretçileri merkezi grubunun sınırlarını değiştirmek istiyorsanız bu değeri belirtin. Varsayılan konum 5 pikseldir.
 
-## <a name="csmartdockinginfom_sizetotal"></a><a name="m_sizetotal"></a>CSmartDockingInfo::m_sizeTotal
+## <a name="csmartdockinginfom_sizetotal"></a><a name="m_sizetotal"></a> CSmartDockingInfo:: m_sizeTotal
 
-Merkezi gruptaki tüm akıllı yerleştirme işaretlerini içine alan sınırlayıcı bir dikdörtgenin toplam boyutunu belirtir.
+Merkezi grupta tüm akıllı yerleştirme işaretleyicilerini kapsayan bir sınırlayıcı dikdörtgenin toplam boyutunu belirtir.
 
 ```
 CSize m_sizeTotal;
@@ -202,11 +203,11 @@ CSize m_sizeTotal;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Merkezi `m_sizeTotal` grup işaretçisinin sınırlayıcı dikdörtgenboyutuna ayarlayın. İşaretçiler için özel bit eşlemleri kullanıyorsanız, bu değeri belirtmeniz gerekir.
+`m_sizeTotal`Merkezi Grup işaretçisinin sınırlayıcı dikdörtgeninin boyutuna ayarlayın. İşaretçiler için özel bit eşlemler kullanıyorsanız bu değeri belirtmeniz gerekir.
 
-## <a name="csmartdockinginfom_uimarkerbmpresid"></a><a name="m_uimarkerbmpresid"></a>CSmartDockingInfo::m_uiMarkerBmpResID
+## <a name="csmartdockinginfom_uimarkerbmpresid"></a><a name="m_uimarkerbmpresid"></a> CSmartDockingInfo:: m_uiMarkerBmpResID
 
-Vurgusuz özel akıllı yerleştirme işaretleri için kullanılan bit eşlemlerinin kaynak tanımlarını tanımlar.
+Vurgulanmayan özel akıllı yerleştirme işaretçileri için kullanılan bit eşlemlerin kaynak kimliklerini tanımlar.
 
 ```
 UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
@@ -214,7 +215,7 @@ UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu diziyi, akıllı yerleştirme işaretçilerini temsil eden bit eşlemlerinin kaynak işlemileriyle doldurun. AFX_SD_MARKERS_NUM şu anda 5 olarak tanımlanır. Diziyi aşağıdaki gibi doldurursunuz:
+Bu diziyi, akıllı yerleştirme işaretleyicilerini temsil eden bit eşlemlerin kaynak kimlikleriyle doldurur. AFX_SD_MARKERS_NUM Şu anda 5 olarak tanımlanmıştır. Diziyi şu şekilde doldurursunuz:
 
 ```cpp
 params.m_uiMarkerBmpResID[0] = IDB_MARKER_LEFT;
@@ -224,9 +225,9 @@ params.m_uiMarkerBmpResID[3] = IDB_MARKER_BOTTOM;
 params.m_uiMarkerBmpResID[4] = IDB_MARKER_CENTER;
 ```
 
-## <a name="csmartdockinginfom_uimarkerlightbmpresid"></a><a name="m_uimarkerlightbmpresid"></a>CSmartDockingInfo::m_uiMarkerLightBmpResID
+## <a name="csmartdockinginfom_uimarkerlightbmpresid"></a><a name="m_uimarkerlightbmpresid"></a> CSmartDockingInfo:: m_uiMarkerLightBmpResID
 
-Vurgulanan özel akıllı yerleştirme işaretleri için kullanılan bit eşlemlerinin kaynak tanımlarını tanımlar.
+Vurgulanan özel akıllı yerleştirme işaretçileri için kullanılan bit eşlemlerin kaynak kimliklerini tanımlar.
 
 ```
 UINT m_uiMarkerLightBmpResID[AFX_SD_MARKERS_NUM];
@@ -234,7 +235,7 @@ UINT m_uiMarkerLightBmpResID[AFX_SD_MARKERS_NUM];
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu diziyi, vurgulanan akıllı yerleştirme işaretçilerini temsil eden bit eşlemlerinin kaynak işlemileriyle doldurun. AFX_SD_MARKERS_NUM şu anda 5 olarak tanımlanır. Diziyi aşağıdaki gibi doldurursunuz:
+Bu diziyi, vurgulanan akıllı yerleştirme işaretleyicilerini temsil eden bit eşlemlerin kaynak kimlikleriyle doldurur. AFX_SD_MARKERS_NUM Şu anda 5 olarak tanımlanmıştır. Diziyi şu şekilde doldurursunuz:
 
 ```cpp
 params.m_uiMarkerLightBmpResID[0] = IDB_MARKER_LEFT_LIGHT;
@@ -246,6 +247,6 @@ params.m_uiMarkerLightBmpResID[4] = IDB_MARKER_CENTER_LIGHT;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
 [Sınıflar](../../mfc/reference/mfc-classes.md)<br/>
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __RTDynamicCast'
 title: __RTDynamicCast
 ms.date: 11/04/2016
 api_name:
@@ -20,18 +21,18 @@ f1_keywords:
 helpviewer_keywords:
 - __RTDynamicCast
 ms.assetid: 56aa2d7a-aa47-46ef-830d-e37175611239
-ms.openlocfilehash: 238310791baebc941ad23b798adc1ea2e7fffcbb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8e9cb906468c02ac065601e8f093b0e97c1b70bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284492"
 ---
 # <a name="__rtdynamiccast"></a>__RTDynamicCast
 
 [Dynamic_cast](../cpp/dynamic-cast-operator.md) işlecinin çalışma zamanı uygulama.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 PVOID __RTDynamicCast (
@@ -66,11 +67,11 @@ Başarılı olursa uygun alt nesneye yönelik işaretçi. Aksi takdirde, **null*
 
 ## <a name="exceptions"></a>Özel durumlar
 
-`bad_cast()`girişi `dynamic_cast<>` bir başvuru ise ve atama başarısız olursa.
+`bad_cast()` girişi `dynamic_cast<>` bir başvuru ise ve atama başarısız olursa.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`inptr`Türündeki bir nesneye dönüştürür `TargetType` . Türü bir işaretçisiyse `inptr` `TargetType` veya bir başvuru ise l değeri bir işaretçi olmalıdır `TargetType` . `TargetType`bir işaretçi veya önceden tanımlanmış bir sınıf türüne başvuru ya da void işaretçisi olmalıdır.
+`inptr`Türündeki bir nesneye dönüştürür `TargetType` . Türü bir işaretçisiyse `inptr` `TargetType` veya bir başvuru ise l değeri bir işaretçi olmalıdır `TargetType` . `TargetType` bir işaretçi veya önceden tanımlanmış bir sınıf türüne başvuru ya da void işaretçisi olmalıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CSplitButton sınıfı'
 title: CSplitButton sınıfı
 ms.date: 11/19/2018
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-ms.openlocfilehash: 484cef2787c9e5c166a7b20b017251b559d7221c
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: e73273bbeb0d03dc5ca2a3a2e6daa1be05936280
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562551"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345127"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton sınıfı
 

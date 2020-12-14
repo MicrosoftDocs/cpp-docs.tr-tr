@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: signbit'
 title: signbit
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 - math/signbit
 helpviewer_keywords:
 - signbit function
-ms.openlocfilehash: 7f8399c16d2abc70a50740b0629bc5d9b3a1f067
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f6416647db67a49bd6950c011575b72f4c43f10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303472"
 ---
 # <a name="signbit"></a>signbit
 
 Kayan nokta değerinin negatif olup olmadığını belirler.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 int signbit(
@@ -44,7 +45,7 @@ Sınanacak kayan nokta değeri.
 
 ## <a name="return-value"></a>Döndürülen değer
 
-**signbit** **`true`** *x* bağımsız değişkeni negatif veya negatif sonsuzluk ise, signbit sıfır olmayan bir değer (C++ olarak) döndürür. **`false`** Bağımsız değişken negatif olmayan, pozitif sonsuz veya NaN ise 0 döndürür (C++ ' ta).
+ **`true`** *x* bağımsız değişkeni negatif veya negatif sonsuzluk ise, signbit sıfır olmayan bir değer (C++ olarak) döndürür. **`false`** Bağımsız değişken negatif olmayan, pozitif sonsuz veya NaN ise 0 döndürür (C++ ' ta).
 
 ## <a name="remarks"></a>Açıklamalar
 

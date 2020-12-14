@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlantı haritaları'
 title: Bağlantı Eşlemeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - connection maps
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
-ms.openlocfilehash: 517017e9e60b86e96daa24f7822538e91c609fb4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 61d2e7023ab97aa00952aee4786b34e60ba57af7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345257"
 ---
 # <a name="connection-maps"></a>Bağlantı Eşlemeleri
 
@@ -96,7 +97,7 @@ Bağlantı noktası tarafından çağrılan arabirimin arabirim KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-*IID* bağımsız değişkeni, bağlantı noktasının bağlı olan havuzları üzerinde çağıracaksınız arabirimi tanımlamak için kullanılan BIR arabirim kimliğidir. Örnek:
+*IID* bağımsız değişkeni, bağlantı noktasının bağlı olan havuzları üzerinde çağıracaksınız arabirimi tanımlamak için kullanılan BIR arabirim kimliğidir. Örneğin:
 
 [!code-cpp[NVC_MFCConnectionPoints#10](../../mfc/codesnippet/cpp/connection-maps_1.h)]
 
@@ -179,7 +180,7 @@ Bağlantı noktasını uygulayan yerel sınıfın adını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Örnek:
+Örneğin:
 
 [!code-cpp[NVC_MFCConnectionPoints#2](../../mfc/codesnippet/cpp/connection-maps_2.cpp)]
 
@@ -191,7 +192,7 @@ arabirimi çağıran bir bağlantı noktası ile bağlantı haritası uygular `I
 
 ## <a name="afxconnectionadvise"></a><a name="afxconnectionadvise"></a> AfxConnectionAdvise
 
-*Punksrc*tarafından belirtilen bir kaynak ve *pUnkSink*tarafından belirtilen bir havuz arasında bağlantı kurmak için bu işlevi çağırın.
+*Punksrc* tarafından belirtilen bir kaynak ve *pUnkSink* tarafından belirtilen bir havuz arasında bağlantı kurmak için bu işlevi çağırın.
 
 ```
 BOOL AFXAPI AfxConnectionAdvise(
@@ -233,7 +234,7 @@ Bağlantı kurulduysa sıfır dışı; Aksi takdirde 0.
 
 ## <a name="afxconnectionunadvise"></a><a name="afxconnectionunadvise"></a> AfxConnectionUnadvise
 
-*Punksrc*tarafından belirtilen bir kaynak ve *pUnkSink*tarafından belirtilen bir havuz arasındaki bağlantının bağlantısını kesmek için bu işlevi çağırın.
+*Punksrc* tarafından belirtilen bir kaynak ve *pUnkSink* tarafından belirtilen bir havuz arasındaki bağlantının bağlantısını kesmek için bu işlevi çağırın.
 
 ```
 BOOL AFXAPI AfxConnectionUnadvise(

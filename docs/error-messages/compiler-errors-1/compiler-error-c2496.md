@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2496'
 title: Derleyici hatası C2496
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2496
 ms.assetid: 9a25237d-5bbb-4112-98f3-29cd99d3f89f
-ms.openlocfilehash: 9236876e636e88f193d32ef2e33a817fa52e1bd2
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: da03162e5ba674267df25463a27f08f3f6032e70
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74757013"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283711"
 ---
 # <a name="compiler-error-c2496"></a>Derleyici hatası C2496
 

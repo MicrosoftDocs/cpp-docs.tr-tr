@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CPagerCtrl sınıfı'
 title: CPagerCtrl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-ms.openlocfilehash: 9b3af31e7d352e93144cde0c321620693111e145
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: ba01d07ebd6d638a1d505d555e44e9562e4bd27b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345231"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 

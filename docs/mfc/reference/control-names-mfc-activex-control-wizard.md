@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: denetim adları, MFC ActiveX denetimi Sihirbazı'
 title: Denetim Adları, MFC ActiveX Denetim Sihirbazı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control names
 ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
-ms.openlocfilehash: eff7b537e7fe5c19d10cce8766557a3d1ff49342
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 26d329465c13c3988a3e9d4d7ccd06294f3b2be3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80077512"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345244"
 ---
 # <a name="control-names-mfc-activex-control-wizard"></a>Denetim Adları, MFC ActiveX Denetim Sihirbazı
 
-Denetiminiz için denetim sınıfı ve özellik sayfası sınıfı, tür adları ve tür tanımlayıcıları için adlar belirtin. **Kısa ad**hariç olmak üzere, diğer tüm alanlar bağımsız olarak düzenlenebilir. **Kısa ad**için metni değiştirirseniz, değişiklik bu sayfadaki diğer tüm alanların adlarına yansıtılır. Bu adlandırma davranışı, denetiminizi geliştirirken tüm adların sizin için kolayca tanımlanabilir olmasını sağlayacak şekilde tasarlanmıştır.
+Denetiminiz için denetim sınıfı ve özellik sayfası sınıfı, tür adları ve tür tanımlayıcıları için adlar belirtin. **Kısa ad** hariç olmak üzere, diğer tüm alanlar bağımsız olarak düzenlenebilir. **Kısa ad** için metni değiştirirseniz, değişiklik bu sayfadaki diğer tüm alanların adlarına yansıtılır. Bu adlandırma davranışı, denetiminizi geliştirirken tüm adların sizin için kolayca tanımlanabilir olmasını sağlayacak şekilde tasarlanmıştır.
 
 - **Kısa ad**
 
@@ -23,19 +24,19 @@ Denetiminiz için denetim sınıfı ve özellik sayfası sınıfı, tür adları
 
 - **Denetim sınıfı adı**
 
-   Varsayılan olarak, denetim sınıfının adı, ön ek olarak `C` ve sonek olarak `Ctrl`, kısa adı temel alır. Örneğin, denetiminizin kısa adı `Price`ise, denetim sınıfı adı `CPriceCtrl`.
+   Varsayılan olarak, denetim sınıfının adı, önek ve sonek olarak, kısa adı temel alır `C` `Ctrl` . Örneğin, denetiminizin kısa adı ise `Price` , denetim sınıfı adı olur `CPriceCtrl` .
 
 - **Control. h dosyası**
 
-   Varsayılan olarak, üst bilgi dosyasının adı, sonek olarak `Ctrl` ve dosya uzantısı olarak `.h`, kısa adı temel alır. Örneğin, denetiminizin kısa adı `Price`ise, üst bilgi dosya adı `PriceCtrl.h`. Bu alandaki ad, denetim sınıfı adıyla eşleşmelidir.
+   Varsayılan olarak, üst bilgi dosyasının adı, `Ctrl` sonek ve dosya uzantısı gibi kısa adı temel alır `.h` . Örneğin, denetiminizin kısa adı ise `Price` , üst bilgi dosya adı olur `PriceCtrl.h` . Bu alandaki ad, denetim sınıfı adıyla eşleşmelidir.
 
 - **Denetim. cpp dosyası**
 
-   Varsayılan olarak, üst bilgi dosyasının adı, sonek olarak `Ctrl` ve dosya uzantısı olarak `.cpp`, kısa adı temel alır. Örneğin, denetiminizin kısa adı `Price`ise, üst bilgi dosya adı `PriceCtrl.cpp`. Bu alandaki ad üstbilgi adıyla eşleşmelidir.
+   Varsayılan olarak, üst bilgi dosyasının adı, `Ctrl` sonek ve dosya uzantısı gibi kısa adı temel alır `.cpp` . Örneğin, denetiminizin kısa adı ise `Price` , üst bilgi dosya adı olur `PriceCtrl.cpp` . Bu alandaki ad üstbilgi adıyla eşleşmelidir.
 
 - **Denetim türü adı**
 
-   Varsayılan olarak, denetim türünün adı, kısa adı temel alır ve ardından `Control`. Örneğin, denetiminizin kısa adı `Price`ise, denetim sınıfı tür adı `Price Control`. Bu alandaki değeri değiştirirseniz, adın bir devralmayı belirttiğinizden emin olun.
+   Varsayılan olarak, denetim türünün adı, kısa adı temel alır ve öğesinden sonra `Control` . Örneğin, denetiminizin kısa adı ise, `Price` Denetim sınıfı tür adı olur `Price Control` . Bu alandaki değeri değiştirirseniz, adın bir devralmayı belirttiğinizden emin olun.
 
 - **Denetim türü KIMLIĞI**
 
@@ -53,19 +54,19 @@ Denetiminiz için denetim sınıfı ve özellik sayfası sınıfı, tür adları
 
 - **PropPage sınıf adı**
 
-   Varsayılan olarak, özellik sayfası sınıfının adı, ön ek olarak `C` ve sonek olarak `PropPage`, kısa adı temel alır. Örneğin, denetiminizin kısa adı `Price`ise, özellik sayfası sınıf adı `CPricePropPage`. Bu ad, `PropPage`eklenerek denetim sınıfı adıyla eşleşmelidir.
+   Varsayılan olarak, özellik sayfası sınıfının adı, önek ve sonek olarak, kısa adı temel alır `C` `PropPage` . Örneğin, denetiminizin kısa adı ise, `Price` özellik sayfası sınıf adı olur `CPricePropPage` . Bu ad, ile eklenmiş olan denetim sınıfı adıyla eşleşmelidir `PropPage` .
 
 - **PropPage. h dosyası**
 
-   Varsayılan olarak, özellik sayfası üstbilgi dosyasının adı, sonek olarak `PropPage` ve dosya uzantısı olarak `.h` olmak üzere kısa adı temel alır. Örneğin, denetiminizin kısa adı `Price`ise, özellik sayfası üstbilgi dosyası adı `PricePropPage.h`. Bu ad, sınıf adıyla eşleşmelidir.
+   Varsayılan olarak, özellik sayfası üstbilgi dosyasının adı, `PropPage` sonek olarak ve dosya uzantısı olarak, kısa adı temel alır `.h` . Örneğin, denetiminizin kısa adı ise `Price` , özellik sayfası üstbilgi dosyası adı olur `PricePropPage.h` . Bu ad, sınıf adıyla eşleşmelidir.
 
 - **PropPage. cpp dosyası**
 
-   Varsayılan olarak, özellik sayfası uygulama dosyasının adı, sonek olarak `PropPage` ve dosya uzantısı olarak `.cpp` olmak üzere kısa adı temel alır. Örneğin, denetiminizin kısa adı `Price`ise, özellik sayfası üstbilgi dosyası adı `PricePropPage.cpp`. Bu ad, üstbilgi dosyası adıyla eşleşmelidir.
+   Varsayılan olarak, özellik sayfası uygulama dosyasının adı, `PropPage` sonek olarak ve dosya uzantısı olarak, kısa adı temel alır `.cpp` . Örneğin, denetiminizin kısa adı ise `Price` , özellik sayfası üstbilgi dosyası adı olur `PricePropPage.cpp` . Bu ad, üstbilgi dosyası adıyla eşleşmelidir.
 
 - **PropPage tür adı**
 
-   Varsayılan olarak, özellik sayfası tür adı kısa adı temel alır ve ardından `Property Page`. Örneğin, denetiminizin kısa adı `Price`ise, özellik sayfası tür adı `Price Property Page`. Bu alandaki değeri değiştirirseniz, adın denetim sınıfını gösterdiği olduğundan emin olun.
+   Varsayılan olarak, özellik sayfası türü adı, kısa adı temel alır ve öğesinden sonra `Property Page` . Örneğin, denetiminizin kısa adı ise, `Price` özellik sayfası tür adı olur `Price Property Page` . Bu alandaki değeri değiştirirseniz, adın denetim sınıfını gösterdiği olduğundan emin olun.
 
 - **PropPage tür KIMLIĞI**
 
@@ -83,7 +84,7 @@ Denetiminiz için denetim sınıfı ve özellik sayfası sınıfı, tür adları
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC ActiveX Denetim Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[Uygulama Ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
-[Denetim Ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)<br/>
+[MFC ActiveX denetimi Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
+[Uygulama ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
+[Denetim ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)<br/>
 [Visual Studio C++ projeleri için oluşturulan dosya türleri](../../build/reference/file-types-created-for-visual-cpp-projects.md)

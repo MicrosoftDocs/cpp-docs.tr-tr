@@ -1,5 +1,6 @@
 ---
-title: CPaintDC Sınıfı
+description: 'Daha fazla bilgi edinin: CPaintDC Class'
+title: CPaintDC sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CPaintDC
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - CPaintDC [MFC], m_ps
 - CPaintDC [MFC], m_hWnd
 ms.assetid: 7e245baa-bf9b-403e-a637-7218adf28fab
-ms.openlocfilehash: 55342b03454a6dba07bc10ea5f0464c34e0e8db3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cb8f3b81615390ab6af8e9a244a95f91a3b3f96c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345218"
 ---
-# <a name="cpaintdc-class"></a>CPaintDC Sınıfı
+# <a name="cpaintdc-class"></a>CPaintDC sınıfı
 
-[CDC'den](../../mfc/reference/cdc-class.md)türetilen bir aygıt bağlamı sınıfı.
+[CDC](../../mfc/reference/cdc-class.md)'den türetilmiş bir cihaz bağlamı sınıfı.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CPaintDC : public CDC
@@ -33,33 +34,33 @@ class CPaintDC : public CDC
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPaintDC::CPaintDC](#cpaintdc)|Belirtilen `CPaintDC` [CWnd'ye](../../mfc/reference/cwnd-class.md)bağlı bir yapı inşa eder.|
+|[CPaintDC:: CPaintDC](#cpaintdc)|`CPaintDC`Belirtilen [CWnd](../../mfc/reference/cwnd-class.md)'e bağlı bir yapı oluşturur.|
 
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPaintDC::m_ps](#m_ps)|İstemci alanını boyamak için kullanılan [PAINTSTRUCT'u](/windows/win32/api/winuser/ns-winuser-paintstruct) içerir.|
+|[CPaintDC:: m_ps](#m_ps)|İstemci alanını boyamak için kullanılan [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct) içerir.|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CPaintDC::m_hWnd](#m_hwnd)|Bu `CPaintDC` nesnenin bağlı olduğu HWND.|
+|[CPaintDC:: m_hWnd](#m_hwnd)|Bu `CPaintDC` nesnenin EKLENDIĞI HWND.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir [CWnd gerçekleştirir::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint) inşaat zamanda ve [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#endpaint) yıkım zamanda.
+Oluşturma zamanında bir [CWnd:: BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint) ve yok etme sırasında [CWnd:: EndPaint](../../mfc/reference/cwnd-class.md#endpaint) gerçekleştirir.
 
-Bir `CPaintDC` nesne yalnızca [WM_PAINT](/windows/win32/gdi/wm-paint) iletisine yanıt verirken(genellikle ileti işleyicisi üye işlevinizde) `OnPaint` kullanılabilir.
+Bir `CPaintDC` nesne, genellikle [](/windows/win32/gdi/wm-paint) `OnPaint` ileti işleyici üye işlevinizde bir WM_PAINT iletisine yanıt verme sırasında kullanılabilir.
 
-Kullanma `CPaintDC`hakkında daha fazla bilgi için [Aygıt Bağlamları'na](../../mfc/device-contexts.md)bakın.
+Kullanma hakkında daha fazla bilgi için `CPaintDC` bkz. [cihaz bağlamları](../../mfc/device-contexts.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
 [CDC](../../mfc/reference/cdc-class.md)
 
@@ -67,11 +68,11 @@ Kullanma `CPaintDC`hakkında daha fazla bilgi için [Aygıt Bağlamları'na](../
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cpaintdccpaintdc"></a><a name="cpaintdc"></a>CPaintDC::CPaintDC
+## <a name="cpaintdccpaintdc"></a><a name="cpaintdc"></a> CPaintDC:: CPaintDC
 
-Bir `CPaintDC` nesne hazırlar, boyama için uygulama penceresini hazırlar ve [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct) yapısını [m_ps](#m_ps) üye değişkeninde saklar.
+Bir `CPaintDC` nesne oluşturur, boyama için uygulama penceresini hazırlar ve [paıntstruct](/windows/win32/api/winuser/ns-winuser-paintstruct) yapısını [m_ps](#m_ps) üye değişkeninde depolar.
 
 ```
 explicit CPaintDC(CWnd* pWnd);
@@ -79,20 +80,20 @@ explicit CPaintDC(CWnd* pWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pwnd*<br/>
-Nesnenin `CWnd` ait olduğu `CPaintDC` nesneyi işaret eder.
+*pWnd*<br/>
+`CWnd` `CPaintDC` Nesnenin ait olduğu nesnesine işaret eder.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Windows [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) `CResourceException`çağrısı başarısız olursa bir özel durum (tür) atılır. Windows kullanılabilir aygıt bağlamlarının tümünü zaten tahsis etmişse aygıt bağlamı kullanılamayabilir. Uygulamanız, Windows altında herhangi bir zamanda kullanılabilen beş ortak ekran bağlamı için yarışıyor.
+`CResourceException`Windows [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) çağrısı başarısız olursa bir özel durum (tür) oluşturulur. Windows, tüm kullanılabilir cihaz bağlamlarını zaten ayırmışsa bir cihaz bağlamı kullanılamayabilir. Uygulamanız, Windows altında herhangi bir zamanda kullanılabilir olan beş ortak görüntü bağlamına sahiptir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#97](../../mfc/codesnippet/cpp/cpaintdc-class_1.cpp)]
 
-## <a name="cpaintdcm_hwnd"></a><a name="m_hwnd"></a>CPaintDC::m_hWnd
+## <a name="cpaintdcm_hwnd"></a><a name="m_hwnd"></a> CPaintDC:: m_hWnd
 
-Bu `HWND` `CPaintDC` nesnenin bağlı olduğu yer.
+`HWND`Bu `CPaintDC` nesnenin eklendiği yer.
 
 ```
 HWND m_hWnd;
@@ -100,15 +101,15 @@ HWND m_hWnd;
 
 ### <a name="remarks"></a>Açıklamalar
 
-*m_hWnd* HWND tipi korumalı bir değişkendir.
+*m_hWnd* , HWND türünde korunan bir değişkendir.
 
 ### <a name="example"></a>Örnek
 
 [!code-cpp[NVC_MFCDocView#98](../../mfc/codesnippet/cpp/cpaintdc-class_2.cpp)]
 
-## <a name="cpaintdcm_ps"></a><a name="m_ps"></a>CPaintDC::m_ps
+## <a name="cpaintdcm_ps"></a><a name="m_ps"></a> CPaintDC:: m_ps
 
-`m_ps`[paintstruct](/windows/win32/api/winuser/ns-winuser-paintstruct)türünde bir ortak üye değişkendir.
+`m_ps` , [PAINTSTRUCT](/windows/win32/api/winuser/ns-winuser-paintstruct)türünde bir ortak üye değişkenidir.
 
 ```
 PAINTSTRUCT m_ps;
@@ -116,18 +117,18 @@ PAINTSTRUCT m_ps;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu geçer ve [CWnd tarafından doldurulur::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint). `PAINTSTRUCT`
+`PAINTSTRUCT`Bu, [CWnd:: BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint)tarafından geçirilir ve doldurulur.
 
-Uygulamanın `PAINTSTRUCT` bir `CPaintDC` nesneyle ilişkili pencerenin istemci alanını boyamak için kullandığı bilgileri içerir.
+, `PAINTSTRUCT` Uygulamanın bir nesneyle ilişkili pencerenin istemci alanını boyamak için kullandığı bilgileri içerir `CPaintDC` .
 
-Aygıt bağlamı koluna `PAINTSTRUCT`. Ancak, cdc'den `m_hDC` `CPaintDC` devralan üye değişken aracılığıyla işleme daha doğrudan erişebilirsiniz.
+Üzerinden cihaz bağlamı tanıtıcısına erişebileceğinizi unutmayın `PAINTSTRUCT` . Ancak, tanıtıcıya, `m_hDC` CDC 'den devralan üye değişkeni aracılığıyla doğrudan erişebilirsiniz `CPaintDC` .
 
 ### <a name="example"></a>Örnek
 
-  CPaintDC örneğine [bakın:m_hWnd.](#m_hwnd)
+  [CPaintDC:: m_hWnd](#m_hwnd)için örneğe bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek MDI](../../overview/visual-cpp-samples.md)<br/>
-[CDC Sınıfı](../../mfc/reference/cdc-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[MFC örnek MDI](../../overview/visual-cpp-samples.md)<br/>
+[CDC sınıfı](../../mfc/reference/cdc-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)

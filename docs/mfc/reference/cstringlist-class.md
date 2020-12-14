@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CStringList sınıfı'
 title: CStringList sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,18 +51,18 @@ helpviewer_keywords:
 - CStringList [MFC], RemoveTail
 - CStringList [MFC], SetAt
 ms.assetid: 310a7edb-263c-4bd2-ac43-0bfbfddc5a33
-ms.openlocfilehash: 9eb7a713fc02cd3e51135d1985a41688d4c885d9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: c9043ef648f50e880f3b5946c1912deca3de6714
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447554"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345075"
 ---
 # <a name="cstringlist-class"></a>CStringList sınıfı
 
-`CString` nesnelerinin listesini destekler.
+Nesne listelerini destekler `CString` .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CStringList : public CObject
@@ -69,7 +70,7 @@ class CStringList : public CObject
 
 ## <a name="members"></a>Üyeler
 
-`CStringList` üye işlevleri, [CObList](../../mfc/reference/coblist-class.md)sınıfının üye işlevlerine benzerdir. Bu benzerlik nedeniyle, üye işlevi özellikleri için `CObList` başvuru belgelerini kullanabilirsiniz. Dönüş değeri olarak `CObject` bir işaretçi Gördüğünüz her yerde, bir `CString` (`CString` işaretçisi değil) yerine koyun. İşlev parametresi olarak `CObject` bir işaretçi Gördüğünüz her yerde, bir `LPCTSTR`yerine koyun.
+Öğesinin üye işlevleri, `CStringList` sınıf [CObList](../../mfc/reference/coblist-class.md)öğesinin üye işlevlerine benzerdir. Bu benzerlik nedeniyle, `CObList` üye işlevi özellikleri için başvuru belgelerini kullanabilirsiniz. `CObject`Dönüş değeri olarak bir işaretçi Gördüğünüz her yerde, bir `CString` (işaretçi değil) yerine koyun `CString` . `CObject`İşlev parametresi olarak bir işaretçi Gördüğünüz her yerde, yerine bir yazın `LPCTSTR` .
 
 `CObject*& CObList::GetHead() const;`
 
@@ -77,7 +78,7 @@ class CStringList : public CObject
 
 `CString& CStringList::GetHead() const;`
 
-ile
+ve
 
 `POSITION AddHead( CObject* <newElement> );`
 
@@ -87,13 +88,13 @@ ile
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CStringList:: CStringList](../../mfc/reference/coblist-class.md#coblist)|Boş bir liste oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
 |[CStringList:: AddHead](../../mfc/reference/coblist-class.md#addhead)|Listenin baş bir bir öğesini (veya başka bir listedeki tüm öğeleri) ekler (yeni bir baş oluşturur).|
 |[CStringList:: AddTail](../../mfc/reference/coblist-class.md#addtail)|Bir öğeyi (veya başka bir listedeki tüm öğeleri) listenin sonuna ekler (yeni bir kuyruk oluşturur).|
@@ -121,11 +122,11 @@ ile
 
 Tüm karşılaştırmalar değere göre yapılır, bu da dizedeki karakterlerin dizelerin adresleri yerine karşılaştırılacağı anlamına gelir.
 
-`CStringList`, öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu içerir. `CString` nesne listesi, aşırı yüklenmiş bir ekleme işleci veya `Serialize` member işleviyle birlikte bir arşive depolanıyorsa, her `CString` öğesi sırasıyla serileştirilir.
+`CStringList` öğelerinin serileştirilmesi ve dökümünü desteklemek için IMPLEMENT_SERIAL makrosunu ekler. Bir `CString` nesne listesi, aşırı yüklenmiş bir ekleme işleci veya üye işlevi ile bir arşive depolanıyorsa, `Serialize` her `CString` öğe sırayla serileştirilir.
 
-Tek tek `CString` öğelerinin bir dökümünü almanız gerekiyorsa, döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
+Tek tek öğelerin bir dökümünden ihtiyacınız varsa `CString` , döküm bağlamının derinliğini 1 veya daha büyük olarak ayarlamanız gerekir.
 
-`CStringList`kullanma hakkında daha fazla bilgi için bkz. Makale [koleksiyonları](../../mfc/collections.md).
+Kullanma hakkında daha fazla bilgi için `CStringList` bkz. Makale [koleksiyonları](../../mfc/collections.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -140,5 +141,5 @@ Tek tek `CString` öğelerinin bir dökümünü almanız gerekiyorsa, döküm ba
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MFC örnek toplama](../../overview/visual-cpp-samples.md)<br/>
-[CObject Sınıfı](../../mfc/reference/cobject-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
+[CObject sınıfı](../../mfc/reference/cobject-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
