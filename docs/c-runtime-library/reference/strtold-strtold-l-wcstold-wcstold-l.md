@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: strsöyle, _strtold_l, wcstold, _wcstold_l'
 title: strtold, _strtold_l, wcstold, _wcstold_l
 ms.date: 4/2/2020
 api_name:
@@ -35,18 +36,18 @@ f1_keywords:
 - _strtold_l
 - wcstold
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
-ms.openlocfilehash: 14d67153eda851edc543e6eb2ad441ef35132ee5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c20550e93d45838c39e799a2ebf2f2cd368d059c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213495"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288665"
 ---
 # <a name="strtold-_strtold_l-wcstold-_wcstold_l"></a>strtold, _strtold_l, wcstold, _wcstold_l
 
 Dizeleri uzun çift duyarlıklı kayan noktalı değere dönüştürür.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```C
 long double strtold(
@@ -77,12 +78,12 @@ Dönüştürülecek null ile sonlandırılmış dize.
 *endptr*<br/>
 Taramayı durduran karakter işaretçisi.
 
-*ayarlar*<br/>
+*locale*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**strtend** , kayan noktalı sayının değerini olarak döndürür **`long double`** ; Bu durumda, işlevin bir taşmaya neden olacağı durumlar dışında, işlev +/-**HUGE_VALL**döndürür. **HUGE_VALL** işareti, gösterilemeyen değerin işaretiyle eşleşir. Hiçbir dönüştürme gerçekleştirilemiyorsa veya bir yetersiz kalması durumunda **strbildirilir** 0 döndürür.
+**strtend** , kayan noktalı sayının değerini olarak döndürür **`long double`** ; Bu durumda, işlevin bir taşmaya neden olacağı durumlar dışında, işlev +/-**HUGE_VALL** döndürür. **HUGE_VALL** işareti, gösterilemeyen değerin işaretiyle eşleşir. Hiçbir dönüştürme gerçekleştirilemiyorsa veya bir yetersiz kalması durumunda **strbildirilir** 0 döndürür.
 
 **wcstold** , **strıse**'ye bir değer döndürür. Her iki işlev için de **errno** , taşma veya yetersiz kalması durumunda ve [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md)açıklandığı gibi geçersiz parametre işleyicisi çağrıldığında **ERANGE** olarak ayarlanır.
 
@@ -103,13 +104,13 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 Geçerli yerel ayarın **LC_NUMERIC** kategori ayarı, *strSource*'ta taban karakterinin tanınmasını belirler. Daha fazla bilgi için bkz. [setlocale, _wsetlocale](setlocale-wsetlocale.md). **_L** soneki olmayan işlevler geçerli yerel ayarı kullanır; **_strtold_l** ve **_wcstold_l** , **_strtold** ve **_wcstold** aynıdır, bunun yerine geçirilen yerel ayarı kullanmaları dışında. Daha fazla bilgi için bkz. [locale](../../c-runtime-library/locale.md).
 
-*Endptr* **null**değilse, taramayı durduran karaktere yönelik bir işaretçi, *endptr*tarafından işaret edilen konumda depolanır. Hiçbir dönüştürme gerçekleştirilemiyorsa (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), *strSource* değeri *endptr*tarafından işaret edilen konumda depolanır.
+*Endptr* **null** değilse, taramayı durduran karaktere yönelik bir işaretçi, *endptr* tarafından işaret edilen konumda depolanır. Hiçbir dönüştürme gerçekleştirilemiyorsa (geçerli basamak bulunamadı veya geçersiz bir taban belirtilmişse), *strSource* değeri *endptr* tarafından işaret edilen konumda depolanır.
 
 **strbildirilir** , *strSource* 'un aşağıdaki biçimdeki bir dizeyi işaret edilmesini bekler:
 
 [*boşluk*] [*imzala*] [*basamaklar*] [. *basamaklar*] [{**d** &#124; **d** &#124; **e** &#124; **e**} [*oturum açma*]*basamakları*]
 
-Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır; *işareti* artı ( **+** ) ya da eksi ( **-** ); *rakamlar* bir veya daha fazla ondalık basamak. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, giriş harfinden (**d**, **d**, **e**veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
+Boşluk ve sekme karakterlerinden oluşan bir *boşluk* , yok sayılır; *işareti* artı ( **+** ) ya da eksi ( **-** ); *rakamlar* bir veya daha fazla ondalık basamak. Taban karakterinden önce bir basamak görünmezse, en az bir sayı, taban karakterinden sonra görünmelidir. Ondalık basamakların ardından, giriş harfinden (**d**, **d**, **e** veya **e**) ve isteğe bağlı olarak işaretli bir tamsayıdan oluşan bir üs gelebilir. Ne bir üs bölümü ne de bir taban karakteri görünmüyorsa, dizedeki son basamağı izlemek için bir taban karakteri varsayılır. Bu forma uymayan ilk karakter taramayı durduruyor.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -155,8 +156,8 @@ string = 3.1415926535898This stopped it
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[Yerel Ayar](../../c-runtime-library/locale.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Ayarlar](../../c-runtime-library/locale.md)<br/>
 [Sayısal değer Işlevlerine dize](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>
 [strtol, wcstol, _strtol_l, _wcstol_l](strtol-wcstol-strtol-l-wcstol-l.md)<br/>

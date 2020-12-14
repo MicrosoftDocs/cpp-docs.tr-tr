@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l'
 title: strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - _mbstok_s function
 - strtok_s function
 ms.assetid: 7696c972-f83b-4617-8c82-95973e9fdb46
-ms.openlocfilehash: 52c998f14fee080efc1d288abbba012752757632
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: fb02682abac8655964051d780e9e84e644256aa2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288717"
 ---
 # <a name="strtok_s-_strtok_s_l-wcstok_s-_wcstok_s_l-_mbstok_s-_mbstok_s_l"></a>strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l
 
@@ -129,25 +130,25 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*Str*içinde bulunan bir sonraki belirtece bir işaretçi döndürür. Daha fazla belirteç bulunamadığında **null** değerini döndürür. Her çağrı, döndürülen belirteçle sonra oluşan ilk sınırlayıcı için null bir karakter koyarak *Str* 'yi değiştirir.
+*Str* içinde bulunan bir sonraki belirtece bir işaretçi döndürür. Daha fazla belirteç bulunamadığında **null** değerini döndürür. Her çağrı, döndürülen belirteçle sonra oluşan ilk sınırlayıcı için null bir karakter koyarak *Str* 'yi değiştirir.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
 |*üstbilgisine*|*ıcı*|*bağlam*|Döndürülen değer|**errno**|
 |----------------|------------------|---------------|------------------|-------------|
-|**DEĞER**|kaydedilmemiş|null işaretçisine işaretçi|**DEĞER**|**EıNVAL**|
-|kaydedilmemiş|**DEĞER**|kaydedilmemiş|**DEĞER**|**EıNVAL**|
-|kaydedilmemiş|kaydedilmemiş|**DEĞER**|**DEĞER**|**EıNVAL**|
+|**DEĞER**|herhangi biri|null işaretçisine işaretçi|**DEĞER**|**EıNVAL**|
+|herhangi biri|**DEĞER**|herhangi biri|**DEĞER**|**EıNVAL**|
+|herhangi biri|herhangi biri|**DEĞER**|**DEĞER**|**EıNVAL**|
 
 *Str* **null** ise ancak *bağlam* geçerli bir bağlam işaretçisine yönelik işaretçisiyse, hata yoktur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strtok_s** ailesi işlevleri, *Str*içindeki bir sonraki belirteci bulur. *Sınırlayıcıdaki* karakter kümesi, geçerli çağrıda *Str* içinde bulunan belirtecin olası sınırlayıcılarını belirler. **wcstok_s** ve **_mbstok_s** , **strtok_s**geniş karakter ve çok baytlı karakter sürümleridir. **Wcstok_s** ve **_wcstok_s_l** bağımsız değişkenleri ve dönüş değerleri geniş karakterli dizelerdir; **_mbstok_s** ve **_mbstok_s_l** olanlar çok baytlı karakter dizeleridir. Bu işlevler, aynı şekilde davranır.
+**Strtok_s** ailesi işlevleri, *Str* içindeki bir sonraki belirteci bulur. *Sınırlayıcıdaki* karakter kümesi, geçerli çağrıda *Str* içinde bulunan belirtecin olası sınırlayıcılarını belirler. **wcstok_s** ve **_mbstok_s** , **strtok_s** geniş karakter ve çok baytlı karakter sürümleridir. **Wcstok_s** ve **_wcstok_s_l** bağımsız değişkenleri ve dönüş değerleri geniş karakterli dizelerdir; **_mbstok_s** ve **_mbstok_s_l** olanlar çok baytlı karakter dizeleridir. Bu işlevler, aynı şekilde davranır.
 
-Bu işlev, parametrelerini doğrular. Bir hata koşulu oluştuğunda, hata koşulları tablosunda olduğu gibi, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **null**döndürür.
+Bu işlev, parametrelerini doğrular. Bir hata koşulu oluştuğunda, hata koşulları tablosunda olduğu gibi, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, bu işlevler **errno** ' ı **EINVAL** olarak ayarlar ve **null** döndürür.
 
-**Strtok_s**ilk çağrısında, işlev baştaki sınırlayıcıları atlar ve *Str*içindeki ilk belirtece bir işaretçi döndürür ve belirteci null karakterle sonlandırmaz. Daha fazla belirteç, **strtok_s**için bir dizi çağrı tarafından *Str* 'nin geri kalanı bozulabilir. Her **strtok_s** çağrısı, bu çağrı tarafından döndürülen belirteçten sonra bir null karakter ekleyerek *Str* 'yi değiştirir. *Bağlam* işaretçisi, hangi dizenin okunmakta olduğunu ve dizedeki sonraki belirtecin okunacağı yeri izler. *Str*'deki bir sonraki belirteci okumak için, *Str* bağımsız değişkeni olarak **null** bir değer ile **strtok_s** çağırın ve aynı *bağlam* parametresini geçirin. **Null** *Str* bağımsız değişkeni, **strtok_s** değiştirilen *Str*içindeki bir sonraki belirteci aramasına neden olur. Sınırlayıcılar kümesinin değişebilmesi için *sınırlayıcılar* bağımsız değişkeni, bir sonrakine bir çağrıdan herhangi bir değer alabilir.
+**Strtok_s** ilk çağrısında, işlev baştaki sınırlayıcıları atlar ve *Str* içindeki ilk belirtece bir işaretçi döndürür ve belirteci null karakterle sonlandırmaz. Daha fazla belirteç, **strtok_s** için bir dizi çağrı tarafından *Str* 'nin geri kalanı bozulabilir. Her **strtok_s** çağrısı, bu çağrı tarafından döndürülen belirteçten sonra bir null karakter ekleyerek *Str* 'yi değiştirir. *Bağlam* işaretçisi, hangi dizenin okunmakta olduğunu ve dizedeki sonraki belirtecin okunacağı yeri izler. *Str*'deki bir sonraki belirteci okumak için, *Str* bağımsız değişkeni olarak **null** bir değer ile **strtok_s** çağırın ve aynı *bağlam* parametresini geçirin. **Null** *Str* bağımsız değişkeni, **strtok_s** değiştirilen *Str* içindeki bir sonraki belirteci aramasına neden olur. Sınırlayıcılar kümesinin değişebilmesi için *sınırlayıcılar* bağımsız değişkeni, bir sonrakine bir çağrıdan herhangi bir değer alabilir.
 
 *Bağlam* parametresi **strtok** ve **_strtok_l**' de kullanılan statik arabelleklerin yerini aldığı için aynı iş parçacığında iki dizeyi eşzamanlı olarak ayrıştırılabilir.
 
@@ -161,16 +162,16 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strtok_s**|\<String. h>|
-|**_strtok_s_l**|\<String. h>|
-|**wcstok_s**,<br />**_wcstok_s_l**|\<String. h> veya \<wchar. h>|
-|**_mbstok_s**,<br />**_mbstok_s_l**|\<mbstring. h>|
+|**strtok_s**|\<string.h>|
+|**_strtok_s_l**|\<string.h>|
+|**wcstok_s**,<br />**_wcstok_s_l**|\<string.h> veya \<wchar.h>|
+|**_mbstok_s**,<br />**_mbstok_s_l**|\<mbstring.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
-|TCHAR.H yordamı|\_UNICODE & \_MBCS tanımlı değil|\_Tanımlanan MBCS|_UNICODE tanımlanmış|
+|TCHAR.H yordamı|\_UNICODE & \_ MBCS tanımlı değil|\_Tanımlanan MBCS|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcstok_s**|**strtok_s**|**_mbstok_s**|**wcstok_s**|
 |**_tcstok_s_l**|**_strtok_s_l**|**_mbstok_s_l**|**_wcstok_s_l**|
@@ -245,6 +246,6 @@ tokens
 
 [Dize Düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Ayarlar](../../c-runtime-library/locale.md)<br/>
-[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: değer sınıfları ve yapılar (C++/CX)'
 title: Değer Sınıfları ve Yapıları (C++/CX)
 ms.date: 12/30/2016
 helpviewer_keywords:
 - value struct
 - value class
 ms.assetid: 262a0992-9721-4c02-8297-efc07d90e5a4
-ms.openlocfilehash: 15d54d139f086ce5bb025aaeab145c71d33903c0
-ms.sourcegitcommit: 3f0c1dcdcce25865d1a1022bcc5b9eec79f69025
+ms.openlocfilehash: 25551d6215eebbdc328946bf5ba2524c875338ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94381603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288054"
 ---
 # <a name="value-classes-and-structs-ccx"></a>Değer Sınıfları ve Yapıları (C++/CX)
 
@@ -58,7 +59,7 @@ Değer yapısı veya değer sınıfı, alan olarak yalnızca temel sayısal tür
 
 Tüm üyeleri bir **`value class`** veya ortak olduğundan **`value struct`** ve meta veriye yayıldığından, standart C++ türlerine üye olarak izin verilmez. Bu, **`private`** ya da standart C++ türlerini içerebilen başvuru sınıflarından farklıdır **`internal`** .
 
-Aşağıdaki kod parçası, `Coordinates` ve `City` türlerini değer yapıları olarak bildirir. `City`Veri üyelerinden birinin bir tür olduğuna dikkat edin `GeoCoordinates` . **`value struct`** , Diğer değer yapılarını üye olarak içerebilir.
+Aşağıdaki kod parçası, `Coordinates` ve `City` türlerini değer yapıları olarak bildirir. `City`Veri üyelerinden birinin bir tür olduğuna dikkat edin `GeoCoordinates` . **`value struct`**, Diğer değer yapılarını üye olarak içerebilir.
 
 [!code-cpp[cx_classes#07](../cppcx/codesnippet/CPP/classesstructs/class1.h#07)]
 
