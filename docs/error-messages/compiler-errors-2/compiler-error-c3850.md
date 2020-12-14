@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3850'
 title: Derleyici hatası C3850
 ms.date: 09/05/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3850
 ms.assetid: 028f3a37-f3ad-4ebc-9168-3cdea47524d4
-ms.openlocfilehash: 5de7994e8bf46105e94271ab29bf9e27f1da3e76
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9563ee8b4ebb2f8c08b67ff88401ef2e3022a03a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165578"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97255346"
 ---
 # <a name="compiler-error-c3850"></a>Derleyici hatası C3850
 
@@ -21,9 +22,9 @@ ms.locfileid: "80165578"
 
 Evrensel karakter adları olarak temsil edilen karakterler, 0-10FFFF aralığındaki geçerli Unicode kod noktalarını temsil etmelidir. Evrensel karakter adı, Unicode vekil aralığında, D800-DFFF veya kodlanmış bir vekil çiftinde bir değer içeremez. Derleyici, geçerli bir kod noktasından otomatik olarak yedek çift oluşturur.
 
-C olarak derlenen kodda, evrensel bir karakter adı, 0024 (' $ '), 0040 ('\@') ve 0060 (' ' ') özel durumları ile 0000-009F (dahil) aralığında bir karakteri temsil edebilir.
+C olarak derlenen kodda, evrensel bir karakter adı, 0024 (' $ '), 0040 (' \@ ') ve 0060 (' ') özel durumları ile 0000-009F (dahil) aralığında bir karakteri temsil edebilir.
 
-Olarak C++derlenen kodda, bir evrensel karakter adı bir dize veya karakter sabit değerinde herhangi bir geçerli Unicode kod noktasını kullanabilir. Bir sabit değer dışında, bir evrensel karakter adı 0000-001F veya 007F-009F aralıklarında bir denetim karakteri veya temel kaynak karakter kümesinin bir üyesini temsil edebilir.  Daha fazla bilgi için bkz. [karakter kümeleri](../../cpp/character-sets.md).
+C++ olarak derlenen kodda, evrensel bir karakter adı bir dize veya karakter sabit değerinde geçerli herhangi bir Unicode kod noktasını kullanabilir. Bir sabit değer dışında, bir evrensel karakter adı 0000-001F veya 007F-009F aralıklarında bir denetim karakteri veya temel kaynak karakter kümesinin bir üyesini temsil edebilir.  Daha fazla bilgi için bkz. [karakter kümeleri](../../cpp/character-sets.md).
 
 ## <a name="example"></a>Örnek
 

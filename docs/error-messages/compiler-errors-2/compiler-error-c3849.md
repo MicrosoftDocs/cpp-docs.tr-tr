@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3849'
 title: Derleyici hatası C3849
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3849
 ms.assetid: 5347140e-1a81-4841-98c0-b63d98264b64
-ms.openlocfilehash: 8492f108b57fbc63bd171276b1aa601f96a28b24
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 6dbe4656eea2691c1c77c1afa389be80ab76af18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754894"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97255359"
 ---
 # <a name="compiler-error-c3849"></a>Derleyici hatası C3849
 

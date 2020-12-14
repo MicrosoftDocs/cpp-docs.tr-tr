@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3852'
 title: Derleyici hatası C3852
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3852
 ms.assetid: 194e5c5e-0dfb-414e-86db-791c11eb610c
-ms.openlocfilehash: f264333d802967d0350caa8ab4ba4925ffe019af
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f5bfeb5507943dc4f860b81912bfb6880621f290
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74754881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97255242"
 ---
 # <a name="compiler-error-c3852"></a>Derleyici hatası C3852
 

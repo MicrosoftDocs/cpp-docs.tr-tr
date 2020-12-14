@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: __readpmc'
 title: __readpmc
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __readpmc intrinsic
 - rdpmc instruction
 ms.assetid: 14ed45a6-28b6-4635-8437-a597c04b43d4
-ms.openlocfilehash: af0f1874d991771423ddebfedd4624cd0b71760f
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: ceff8522d4895f69a47cf429e59d267c671e3a66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294138"
 ---
 # <a name="__readpmc"></a>__readpmc
 
-**Microsoft 'a özgü**
+**Microsoft'a Özgü**
 
-*Sayaç tarafından*belirtilen performans izleme sayacını okuyan yönergeyi`rdpmc` üretir.
+`rdpmc` *Sayaç* tarafından belirtilen performans izleme sayacını okuyan yönergeyi üretir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -34,7 +35,7 @@ unsigned __int64 __readpmc(
 *sayaç*\
 'ndaki Okunacak performans sayacı.
 
-## <a name="return-value"></a>Dönüş değeri
+## <a name="return-value"></a>Döndürülen değer
 
 Belirtilen performans sayacının değeri.
 
@@ -44,7 +45,7 @@ Belirtilen performans sayacının değeri.
 |---------------|------------------|
 |`__readpmc`|x86, x64|
 
-**Üst bilgi dosyası** \<Intrin. h >
+**Üst bilgi dosyası**\<intrin.h>
 
 ## <a name="remarks"></a>Açıklamalar
 

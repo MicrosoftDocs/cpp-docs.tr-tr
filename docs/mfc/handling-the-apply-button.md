@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Uygula düğmesini Işleme'
 title: Uygula Düğmesini İşleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Apply button in property sheet
 - property sheets, Apply button
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
-ms.openlocfilehash: cd1254a31491e713513f0db0d4cf87baddd9bb23
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a626dcab04d68d19efba79465bfca46545ff6670
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618609"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254943"
 ---
 # <a name="handling-the-apply-button"></a>Uygula Düğmesini İşleme
 
@@ -26,7 +27,7 @@ Kullanıcıya uygulama işlevselliği sunmak istemiyorsanız, Uygula düğmesini
 
 Bir sayfayı değiştirilme olarak bildirmek ve Uygula düğmesini etkinleştirmek için çağırın `CPropertyPage::SetModified( TRUE )` . Sayfaların herhangi biri değiştiriliyorsa, geçerli etkin sayfanın değiştirilip değiştirilmediğini bakılmaksızın Uygula düğmesi etkin kalır.
 
-Kullanıcı sayfadaki herhangi bir ayarı değiştirdiğinde [CPropertyPage:: SetModified](reference/cpropertypage-class.md#setmodified) öğesini çağırmanız gerekir. Bir kullanıcının sayfadaki bir ayarı değiştirdiğini algılamaya yönelik bir yol, özellik sayfasındaki **EN_CHANGE** veya **BN_CLICKED**gibi her bir denetim için değişiklik bildirimi işleyicilerini uygulamadır.
+Kullanıcı sayfadaki herhangi bir ayarı değiştirdiğinde [CPropertyPage:: SetModified](reference/cpropertypage-class.md#setmodified) öğesini çağırmanız gerekir. Bir kullanıcının sayfadaki bir ayarı değiştirdiğini algılamaya yönelik bir yol, özellik sayfasındaki **EN_CHANGE** veya **BN_CLICKED** gibi her bir denetim için değişiklik bildirimi işleyicilerini uygulamadır.
 
 Uygula düğmesinin etkisini uygulamak için özellik sayfası, geçerli ayarları özellik sayfalarında uygulamak üzere, sahibine veya uygulamadaki başka bir dış nesneye sahip olmalıdır. Aynı zamanda, özellik sayfası `CPropertyPage::SetModified( FALSE )` değişikliklerini dış nesneye uygulayan tüm sayfaları çağırarak Uygula düğmesini devre dışı bırakmalıdır.
 

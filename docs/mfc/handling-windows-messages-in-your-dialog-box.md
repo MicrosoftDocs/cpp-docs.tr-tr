@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Iletişim kutusunda Windows Iletilerini Işleme'
 title: İletişim Kutunuzda Windows İletilerini İşleme
 ms.date: 09/05/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Windows messages [MFC], handling
 - message handling [MFC], in dialog boxes
 ms.assetid: 4af0c9cb-09da-4b15-97df-a1cfb89def79
-ms.openlocfilehash: 72ac1bdc84d1e657440e8cc4ee52eca3324167ed
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 05aa68c17e401dad02ab513e13c7ff735761041f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254852"
 ---
 # <a name="handling-windows-messages-in-your-dialog-box"></a>İletişim Kutunuzda Windows İletilerini İşleme
 
