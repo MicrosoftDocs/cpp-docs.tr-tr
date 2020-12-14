@@ -1,37 +1,38 @@
 ---
-title: Derleyici Hatası C3861
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3861'
+title: Derleyici hatası C3861
 ms.date: 03/23/2018
 f1_keywords:
 - C3861
 helpviewer_keywords:
 - C3861
 ms.assetid: 0a1eee30-b3db-41b1-b1e5-35949c3924d7
-ms.openlocfilehash: 4ebfd3b0129e25cf543cac803a3b33fb074f3d70
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bba259496de09e86b59f9cad1ac1bf89a697a1da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62302420"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222911"
 ---
-# <a name="compiler-error-c3861"></a>Derleyici Hatası C3861
+# <a name="compiler-error-c3861"></a>Derleyici hatası C3861
 
 > '*tanımlayıcı*': tanımlayıcı bulunamadı
 
-Derleyici bile bağımsız değişkene bağlı arama kullanılarak bir tanımlayıcı, bir başvuru çözmeniz mümkün değildi.
+Derleyici, bağımsız değişkene bağlı arama kullanarak bile bir tanımlayıcıya başvuruyu çözümleyemedi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu hatayı düzeltmek için kullanımını karşılaştırma *tanımlayıcı* çalışması ve yazım denetimi için tanımlayıcı bildirim için. Doğrulayın [kapsam çözümleme işleçleri](../../cpp/scope-resolution-operator.md) ve ad alanı [yönergeleri kullanarak](../../cpp/namespaces-cpp.md#using_directives) doğru şekilde kullanılır. Tanımlayıcı bir üstbilgi dosyasında bildirirse, tanımlayıcı başvurulan önce üst bilgisi dahil olduğundan emin olun. Tanımlayıcı dışarıdan görünür olmasını geliyorsa, bunu kullanan herhangi bir kaynak dosyada bildirilir emin olun. Ayrıca tanımlayıcı bildirim veya tanımdan tarafından tutulduğunu değil denetleyin [koşullu derleme yönergeleri](../../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md).
+Bu hatayı onarmak için *tanımlayıcı* kullanımını, büyük/küçük harf ve yazım için tanımlayıcı bildirimine karşılaştırın. [Kapsam çözümleme işleçleri](../../cpp/scope-resolution-operator.md) ve [yönergeleri kullanarak](../../cpp/namespaces-cpp.md#using_directives) ad alanı için doğru kullanıldığını doğrulayın. Tanımlayıcı bir başlık dosyasında bildirilirse, tanımlayıcıya başvurulmadan önce üstbilginin dahil edildiğini doğrulayın. Tanımlayıcının dışarıdan görünür olması amaçlıbulunursa, onu kullanan herhangi bir kaynak dosyasında bildirildiği için emin olun. Ayrıca, tanımlayıcı bildiriminin veya tanımın [koşullu derleme yönergeleri](../../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)tarafından dışlanmadığından emin olun.
 
-C çalışma zamanı kitaplığı Visual Studio 2015'te eski işlevleri kaldırmak için değişiklikleri C3861 neden olabilir. Bu hatayı gidermek için bu işlevlere başvuruları kaldırın veya bunları varsa bunların güvenli alternatifler ile değiştirin. Daha fazla bilgi için [artık kullanılmayan işlevleri](../../c-runtime-library/obsolete-functions.md).
+Visual Studio 2015 ' deki C çalışma zamanı kitaplığından kullanılmayan işlevleri kaldırma değişiklikleri C3861 neden olabilir. Bu hatayı çözmek için, bu işlevlere başvuruları kaldırın veya varsa bunları güvenli alternatiflerle değiştirin. Daha fazla bilgi için bkz. [eski işlevler](../../c-runtime-library/obsolete-functions.md).
 
-Hatası C3861 derleyici eski sürümlerinden proje geçişten sonra görünüyorsa, desteklenen Windows sürümleri için ilgili sorunlar olabilir. Visual C++ artık hedefleme Windows 95, Windows 98, Windows ME, Windows NT veya Windows 2000 destekler. Varsa, **WINVER** veya **_WIN32_WINNT** makroları Windows'ın bu sürümlerinin birine atanır, makroları değiştirmeniz gerekir. Daha fazla bilgi için [değiştirme WINVER ve _WIN32_WINNT](../../porting/modifying-winver-and-win32-winnt.md).
+Derleyicinin eski sürümlerinden proje geçişten sonra hata C3861 görüntülenirse, desteklenen Windows sürümleriyle ilgili sorunlarla karşılaşabilirsiniz. Visual C++ artık Windows 95, Windows 98, Windows ME, Windows NT veya Windows 2000 'in hedeflenmesini desteklemiyor. Bu Windows sürümlerinden birine yönelik **WINVER** veya **_WIN32_WINNT** makrolarınız atanırsa, makroları değiştirmelisiniz. Daha fazla bilgi için bkz. [WINVER ve _WIN32_WINNT değiştirme](../../porting/modifying-winver-and-win32-winnt.md).
 
 ## <a name="examples"></a>Örnekler
 
 ### <a name="undefined-identifier"></a>Tanımlanmamış tanımlayıcı
 
-Aşağıdaki örnek, tanımlayıcı tanımlanmadığından C3861 oluşturur.
+Aşağıdaki örnek, tanımlayıcı tanımlanmadığı için C3861 oluşturur.
 
 ```cpp
 // C3861.cpp
@@ -42,9 +43,9 @@ int main() {
 }
 ```
 
-### <a name="identifier-not-in-scope"></a>Tanımlayıcısı kapsamda değil
+### <a name="identifier-not-in-scope"></a>Tanımlayıcı kapsamda değil
 
-Aşağıdaki örnek, bir tanımlayıcı yalnızca kullanan başka kaynak dosyalarında bildirildiği sürece, tanımı dosya kapsamında görünür olduğundan C3861 oluşturur.
+Aşağıdaki örnek, bir tanımlayıcı yalnızca tanımının dosya kapsamında görünmediği, onu kullanan diğer kaynak dosyalarında bildirildiği müddetçe, C3861 oluşturur.
 
 ```cpp
 // C3861_a1.cpp
@@ -64,9 +65,9 @@ int f() {  // declared and defined here
 }
 ```
 
-### <a name="namespace-qualification-required"></a>Namespace nitelik gerekli
+### <a name="namespace-qualification-required"></a>Ad alanı nitelendirme gerekli
 
-C++ Standart Kitaplığı'nda özel durum sınıfları gerektiren `std` ad alanı.
+C++ standart kitaplığı 'ndaki özel durum sınıfları `std` ad alanını gerektirir.
 
 ```cpp
 // C3861_b.cpp
@@ -84,9 +85,9 @@ int main() {
 }
 ```
 
-### <a name="obsolete-function-called"></a>Adlı eski işlevi
+### <a name="obsolete-function-called"></a>Kullanımdan kaldırılmış işlev çağrıldı
 
-Artık kullanılmayan işlevleri CRT Kitaplığı'ndan kaldırıldı.
+Kullanılmayan işlevler CRT kitaplığından kaldırılmıştır.
 
 ```cpp
 // C3861_c.cpp
@@ -101,7 +102,7 @@ int main() {
 
 ### <a name="adl-and-friend-functions"></a>ADL ve arkadaş işlevleri
 
-Aşağıdaki örnek, C3767 oluşturur, derleyici bağımsız değişken bağımlı arama için kullanamazsınız çünkü `FriendFunc`:
+Aşağıdaki örnek C3767 oluşturur, çünkü derleyici bağımsız değişkene bağımlı arama kullanamaz `FriendFunc` :
 
 ```cpp
 namespace N {
@@ -119,7 +120,7 @@ int main() {
 }
 ```
 
-Hatayı düzeltmek için arkadaş sınıf kapsamı içinde bildirme ve ad alanı kapsamında tanımlayın:
+Hatayı düzeltemedi, arkadaşınızı sınıf kapsamında bildirin ve ad alanı kapsamında tanımlayın:
 
 ```cpp
 class MyClass {

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kısıtlama'
 title: restrict
 ms.date: 02/09/2018
 f1_keywords:
@@ -7,20 +8,20 @@ helpviewer_keywords:
 - __declspec keyword [C++], restrict
 - restrict __declspec keyword
 ms.assetid: f39cf632-68d8-4362-a497-2d4c15693689
-ms.openlocfilehash: a0108cff3d6b98fd929b7888d2ad718e7b6b3a64
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e2900e46d3b8e452661800c1c511418f936a5b0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213261"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223717"
 ---
 # <a name="restrict"></a>restrict
 
 **Microsoft'a Özgü**
 
-Bir işaretçi türü döndüren bir işlev bildirimine veya tanımına uygulandığında, **`restrict`** derleyiciye işlevin diğer işaretçilerin başvurduğu bir nesne döndürdüğünü söyler. *aliased* Bu, derleyicinin ek iyileştirmeler gerçekleştirmesini sağlar.
+Bir işaretçi türü döndüren bir işlev bildirimine veya tanımına uygulandığında, **`restrict`** derleyiciye işlevin diğer işaretçilerin başvurduğu bir nesne döndürdüğünü söyler.  Bu, derleyicinin ek iyileştirmeler gerçekleştirmesini sağlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`__declspec(restrict)`***pointer_return_type* *işlevi*();
 

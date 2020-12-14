@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: CDataRecoveryHandler Class'
 title: CDataRecoveryHandler sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-ms.openlocfilehash: 4bb4d4ddf291cb1efc01b887c54a6573c52df8dc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 72189916f4555152ccc8997600d8426e188bb65c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222144"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler sınıfı
 
@@ -201,7 +202,7 @@ Her `CDocument` nesne, son kaydetme işleminden sonra değişip değişmediğini
 
 Bu yöntem, *pDocument* geçerli bir nesne değilse [onaylama](diagnostic-services.md#assert) makrosu ile bir özel durum oluşturur `CDocument` .
 
-Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART veya AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL *m_dwRestartManagerSupportFlags*ayarlanmalıdır.
+Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART veya AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL *m_dwRestartManagerSupportFlags* ayarlanmalıdır.
 
 ## <a name="cdatarecoveryhandlercdatarecoveryhandler"></a><a name="cdatarecoveryhandler"></a> CDataRecoveryHandler::CDataRecoveryHandler
 
@@ -244,9 +245,9 @@ Varsayılan uygulama TRUE değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem, belgeyi eklemeden önce *pDocument* 'ın zaten belge listesinde olup olmadığını denetler. *PDocument* zaten listede ise, bu yöntem *pDocument*ile ilişkili otomatik kaydedilmiş dosyayı siler.
+Bu yöntem, belgeyi eklemeden önce *pDocument* 'ın zaten belge listesinde olup olmadığını denetler. *PDocument* zaten listede ise, bu yöntem *pDocument* ile ilişkili otomatik kaydedilmiş dosyayı siler.
 
-Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART veya AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL *m_dwRestartManagerSupportFlags*ayarlanmalıdır.
+Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART veya AFX_RESTARTMANAGER_AUTOSAVE_AT_INTERVAL *m_dwRestartManagerSupportFlags* ayarlanmalıdır.
 
 ## <a name="cdatarecoveryhandlerdeleteallautosavedfiles"></a><a name="deleteallautosavedfiles"></a> CDataRecoveryHandler::D eleteAllAutosavedFiles
 
@@ -296,7 +297,7 @@ virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*StrDocumentName*öğesinden oluşturulan otomatik kaydetme dosyası adı.
+*StrDocumentName* öğesinden oluşturulan otomatik kaydetme dosyası adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -345,7 +346,7 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-, `CDataRecoveryHandler` *M_mapDocNameToAutosaveName*, *m_mapDocNameToDocumentPtr*ve *m_mapDocNameToRestoreBool*' deki anahtar olarak belge adını kullanır. Bu parametre `CDataRecoveryHandler` `CDocument` nesneleri, otomatik kaydetme dosya adını ve otomatik kaydetme ayarlarını izlemek için etkinleştirir.
+, `CDataRecoveryHandler` *M_mapDocNameToAutosaveName*, *m_mapDocNameToDocumentPtr* ve *m_mapDocNameToRestoreBool*' deki anahtar olarak belge adını kullanır. Bu parametre `CDataRecoveryHandler` `CDocument` nesneleri, otomatik kaydetme dosya adını ve otomatik kaydetme ayarlarını izlemek için etkinleştirir.
 
 ## <a name="cdatarecoveryhandlergetnormaldocumenttitle"></a><a name="getnormaldocumenttitle"></a> CDataRecoveryHandler:: GetNormalDocumentTitle
 
@@ -463,7 +464,7 @@ virtual void QueryRestoreAutosavedDocuments();
 
 Uygulamanız Unicode ise, bu yöntem kullanıcıya bir [CTaskDialog Iletişim kutusu](../../mfc/reference/ctaskdialog-class.md) görüntüler. Aksi halde, çerçeve kullanıcıyı sorgulamak için [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) kullanır.
 
-`QueryRestoreAutosavedDocuments`Kullanıcının tüm yanıtlarını topladıktan sonra, bilgileri *m_mapDocNameToRestoreBool*üye değişkeninde depolar. Bu yöntem, otomatik kaydedilmiş belgeleri geri yüklemez.
+`QueryRestoreAutosavedDocuments`Kullanıcının tüm yanıtlarını topladıktan sonra, bilgileri *m_mapDocNameToRestoreBool* üye değişkeninde depolar. Bu yöntem, otomatik kaydedilmiş belgeleri geri yüklemez.
 
 ## <a name="cdatarecoveryhandlerreadopendocumentlist"></a><a name="readopendocumentlist"></a> CDataRecoveryHandler:: ReadOpenDocumentList
 
@@ -479,7 +480,7 @@ TRUE `ReadOpenDocumentList` , kayıt defterinden en az bir belge için bilgileri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, kayıt defterinden açık belge bilgilerini yükler ve *m_mapDocNameToAutosaveName*üye değişkeninde depolar.
+Bu işlev, kayıt defterinden açık belge bilgilerini yükler ve *m_mapDocNameToAutosaveName* üye değişkeninde depolar.
 
 `ReadOpenDocumentList`Tüm verileri yükledikten sonra, belge bilgilerini kayıt defterinden siler.
 
@@ -506,7 +507,7 @@ Kullanıcı bir belgeyi kapattığında, çerçeve bu yöntemi açık belgeler l
 
 `RemoveDocumentInfo`Açık Belgeler listesinde *pDocument* bulunamıyor, hiçbir şey yapmaz ve true değerini döndürür.
 
-Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags*ayarlanması gerekir.
+Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags* ayarlanması gerekir.
 
 ## <a name="cdatarecoveryhandlerreopenpreviousdocuments"></a><a name="reopenpreviousdocuments"></a> CDataRecoveryHandler:: ReopenPreviousDocuments
 
@@ -524,7 +525,7 @@ En az bir belge açıldıysa doğru; Aksi halde yanlış.
 
 Bu yöntem, önceden açık belgelerin en son kaydedilmesini açar. Bir belge kaydedilmedi veya otomatik kaydedilmişken, `ReopenPreviousDocuments` Bu dosya türü için şablonu temel alan boş bir belge açar.
 
-Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags*ayarlanması gerekir. Bu parametre ayarlanmamışsa, `ReopenPreviousDocuments` hiçbir şey yapmaz ve false döndürür.
+Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags* ayarlanması gerekir. Bu parametre ayarlanmamışsa, `ReopenPreviousDocuments` hiçbir şey yapmaz ve false döndürür.
 
 Daha önce açık belgeler listesinde depolanan belge yoksa, `ReopenPreviousDocuments` hiçbir şey yapmaz ve false döndürür.
 
@@ -662,7 +663,7 @@ Bu yöntem otomatik kaydedilmiş belgeyi sildiyseniz ve belge bilgilerini günce
 
 Bir Kullanıcı bir belgeyi kaydettiğinde, artık gerekli olmadığından, uygulama otomatik kaydedilmiş dosyayı kaldırır. `UpdateDocumentInfo`[CDataRecoveryHandler:: RemoveDocumentInfo](#removedocumentinfo)çağırarak otomatik kaydedilmiş dosyayı siler. `UpdateDocumentInfo` daha sonra bu bilgileri sildiği, ancak kaydedilen belge hala açık olduğundan, *pDocument* bilgilerini şu anda açık olan belgeler listesine ekler `RemoveDocumentInfo` .
 
-Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags*ayarlanması gerekir.
+Bu yöntemi kullanmak için, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES *m_dwRestartManagerSupportFlags* ayarlanması gerekir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

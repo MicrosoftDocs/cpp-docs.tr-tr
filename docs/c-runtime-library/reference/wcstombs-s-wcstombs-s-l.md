@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: wcstombs_s _wcstombs_s_l'
 title: wcstombs_s, _wcstombs_s_l
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 105f2d33-221a-4f6d-864c-23c1865c42af
-ms.openlocfilehash: 7254df673694bf4d91679f1a41837c10f61d28e2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0b30272f87aaed878a294d19e7d64191e6a7400b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224146"
 ---
 # <a name="wcstombs_s-_wcstombs_s_l"></a>wcstombs_s, _wcstombs_s_l
 
@@ -112,13 +113,13 @@ Başarılıysa sıfır, hata durumunda hata kodu.
 |---------------------|------------------------------|
 |*mbstr* **null** ve *sizeInBytes* > 0|**EıNVAL**|
 |*wcstr* **null**|**EıNVAL**|
-|Hedef arabellek dönüştürülmüş dizeyi ( *sayı* **_TRUNCATE**olmadığı müddetçe) çok küçük. aşağıdaki açıklamalara bakın)|**ERANGE**|
+|Hedef arabellek dönüştürülmüş dizeyi ( *sayı* **_TRUNCATE** olmadığı müddetçe) çok küçük. aşağıdaki açıklamalara bakın)|**ERANGE**|
 
 Bu koşullardan herhangi biri gerçekleşirse, geçersiz parametre özel durumu [parametre doğrulamasında](../../c-runtime-library/parameter-validation.md) açıklandığı gibi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, işlev bir hata kodu döndürür ve tabloda belirtilen **errno** değerini ayarlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wcstombs_s** işlevi, *wcstr* tarafından işaret edilen geniş karakter dizesini *mbstr*tarafından işaret edilen arabellekte depolanan çok baytlı karakterlere dönüştürür. Bu koşullardan biri karşılanana kadar dönüştürme her karakter için devam eder:
+**Wcstombs_s** işlevi, *wcstr* tarafından işaret edilen geniş karakter dizesini *mbstr* tarafından işaret edilen arabellekte depolanan çok baytlı karakterlere dönüştürür. Bu koşullardan biri karşılanana kadar dönüştürme her karakter için devam eder:
 
 - Null geniş bir karakterle karşılaşıldı
 
@@ -128,11 +129,11 @@ Bu koşullardan herhangi biri gerçekleşirse, geçersiz parametre özel durumu 
 
 Hedef dize her zaman null ile sonlandırılır (bir hata durumunda bile).
 
-*Count* değeri [_TRUNCATE](../../c-runtime-library/truncate.md)özel değer ise, **wcstombs_s** , dizenin büyük bir kısmını hedef arabelleğe sığdıracak şekilde dönüştürür. Dize kesilmişse, dönüş değeri **Strunde**olur ve dönüştürme başarılı olarak kabul edilir.
+*Count* değeri [_TRUNCATE](../../c-runtime-library/truncate.md)özel değer ise, **wcstombs_s** , dizenin büyük bir kısmını hedef arabelleğe sığdıracak şekilde dönüştürür. Dize kesilmişse, dönüş değeri **Strunde** olur ve dönüştürme başarılı olarak kabul edilir.
 
-**Wcstombs_s** , kaynak dizeyi başarıyla dönüştürdüğünde, null Sonlandırıcı da dahil olmak üzere, dönüştürülmüş dizenin bayt cinsinden boyutunu *&#42;pReturnValue* 'A koyar (belirtilen *pReturnValue* **null**değil). Bu durum *mbstr* bağımsız değişkeni **null** olsa da, gerekli arabellek boyutunu belirlemekte bir yol sağlar. *Mbstr* **null**ise, *sayı* yoksayılıp sayılmadığını unutmayın.
+**Wcstombs_s** , kaynak dizeyi başarıyla dönüştürdüğünde, null Sonlandırıcı da dahil olmak üzere, dönüştürülmüş dizenin bayt cinsinden boyutunu *&#42;pReturnValue* 'A koyar (belirtilen *pReturnValue* **null** değil). Bu durum *mbstr* bağımsız değişkeni **null** olsa da, gerekli arabellek boyutunu belirlemekte bir yol sağlar. *Mbstr* **null** ise, *sayı* yoksayılıp sayılmadığını unutmayın.
 
-**Wcstombs_s** çok baytlı bir karaktere dönüştüremediği geniş bir karakterle karşılaşırsa, 0 ' ı *&#42;pReturnValue*' a koyar, hedef arabelleği boş bir dizeye ayarlar, **errno** ' ı **Eilseq**olarak ayarlar ve **eilseq**' i döndürür.
+**Wcstombs_s** çok baytlı bir karaktere dönüştüremediği geniş bir karakterle karşılaşırsa, 0 ' ı *&#42;pReturnValue*' a koyar, hedef arabelleği boş bir dizeye ayarlar, **errno** ' ı **Eilseq** olarak ayarlar ve **eilseq**' i döndürür.
 
 *Wcstr* ve *mbstr* tarafından işaret edilen diziler çakıştığında, **wcstombs_s** davranışı tanımsızdır.
 
@@ -149,7 +150,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**wcstombs_s**|\<Stdlib. h>|
+|**wcstombs_s**|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

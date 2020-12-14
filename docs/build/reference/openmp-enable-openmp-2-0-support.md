@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/OpenMP (OpenMP desteğini etkinleştir)
 title: /OpenMP (OpenMP desteğini etkinleştir)
 ms.date: 04/15/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /openmp compiler option [C++]
 - -openmp compiler option [C++]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
-ms.openlocfilehash: 6bd1ffcd9b21bfe22ed9424ee77edf43100abf6c
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 818cd6167bf56b9948a3d9f455b0153b4302e8df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221988"
 ---
 # <a name="openmp-enable-openmp-support"></a>/OpenMP (OpenMP desteğini etkinleştir)
 
@@ -23,7 +24,7 @@ Derleyicinin, [`#pragma omp`](../../preprocessor/omp.md) OpenMP desteğiyle yön
 
 ::: moniker range=">= msvc-160"
 
-> **/OpenMP** \[ **:**__deneysel__ ]
+> **/OpenMP** \[ **:**__deneysel__]
 
 ::: moniker-end
 

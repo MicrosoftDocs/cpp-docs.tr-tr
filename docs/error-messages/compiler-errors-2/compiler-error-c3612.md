@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3612'
 title: Derleyici hatası C3612
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3612
 ms.assetid: aa6e3a2b-4afa-481c-98c1-1b6d1f82f869
-ms.openlocfilehash: 499c31b0c02bd72695cd6118612609a70316f0ae
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 332d4bae940a0c98b148fd6ba951a4f51d1bee27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755752"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223106"
 ---
 # <a name="compiler-error-c3612"></a>Derleyici hatası C3612
 
 ' Type ': Sealed bir sınıf abstract olamaz
 
-`value` kullanılarak tanımlanan türler varsayılan olarak korumalıdır ve temel aldığı tüm yöntemleri uygulamadıkça bir sınıf soyuttur. Sealed bir soyut sınıf, temel sınıf olamaz, ya da oluşturulabilir.
+Kullanılarak tanımlanan türler `value` Varsayılan olarak korumalıdır ve temel aldığı tüm yöntemleri uygulamadıkça bir sınıf soyuttur. Sealed bir soyut sınıf, temel sınıf olamaz, ya da oluşturulabilir.
 
 Daha fazla bilgi için bkz. [sınıflar ve yapılar](../../extensions/classes-and-structs-cpp-component-extensions.md).
 

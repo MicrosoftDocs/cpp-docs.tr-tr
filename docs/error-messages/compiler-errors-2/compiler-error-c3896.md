@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3896'
 title: Derleyici hatası C3896
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3896
 ms.assetid: eb8be0f6-5b4e-4d71-8285-8a2a94f8ba29
-ms.openlocfilehash: f15cd73465f4210ed5e5e34bebe2122c0b88f722
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: c08a9af6d10e741b39fa2547cfbc6c04a6dd3a1a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74749275"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222703"
 ---
 # <a name="compiler-error-c3896"></a>Derleyici hatası C3896
 

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: grafik Işlemleri (C++/CLı)'
 title: Grafik İşlemleri (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,26 +19,26 @@ helpviewer_keywords:
 - GDI+ [C++], converting image file formats
 - graphics [C++], converting image file formats
 ms.assetid: bba27228-b9b3-4c9c-b31c-a04b76702a95
-ms.openlocfilehash: c7c6d62eb4059069e6e266544ce6323c63dd15c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84dbc75aa306219b8733848ece5c594ca40a0489
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223548"
 ---
 # <a name="graphics-operations-ccli"></a>Grafik İşlemleri (C++/CLI)
 
-Görüntü işleme Windows SDK'sını kullanarak gösterir.
+Windows SDK kullanarak görüntü işlemesini gösterir.
 
-Aşağıdaki konular kullanımını gösteren <xref:System.Drawing.Image?displayProperty=fullName> görüntü işleme gerçekleştirmek için sınıf.
+Aşağıdaki konularda, <xref:System.Drawing.Image?displayProperty=fullName> görüntü işleme gerçekleştirmek için sınıfının kullanımı gösterilmektedir.
 
-## <a name="display"></a> .NET Framework ile görüntüleri görüntüleme
+## <a name="display-images-with-the-net-framework"></a><a name="display"></a> .NET Framework görüntüleri görüntüleme
 
-OnPaint olay işleyicisi, bir işaretçi almak için aşağıdaki kod örneği değiştirir <xref:System.Drawing.Graphics> ana formu için nesne. <xref:System.Windows.Forms.Form.OnPaint%2A> İşlevi, büyük olasılıkla bir Visual Studio Uygulama Sihirbazı'yla oluşturulmuş bir Windows Forms uygulaması için tasarlanmıştır.
+Aşağıdaki kod örneği, <xref:System.Drawing.Graphics> ana form için nesnesine bir işaretçi almak üzere OnPaint olay işleyicisini değiştirir. <xref:System.Windows.Forms.Form.OnPaint%2A>İşlevi, büyük olasılıkla bir Visual Studio uygulama sihirbazıyla oluşturulmuş bir Windows Forms uygulamasına yöneliktir.
 
-Görüntü tarafından temsil edilen <xref:System.Drawing.Image> sınıfı. Görüntü verilerini kullanarak bir .jpg dosya yüklendikten <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName> yöntemi. Forma resmi çizilmeden önce formun resmi içine alması için yeniden boyutlandırılır. Çizimi görüntü ile gerçekleştirilen <xref:System.Drawing.Graphics.DrawImage%2A?displayProperty=fullName> yöntemi.
+Görüntü sınıfı tarafından temsil edilir <xref:System.Drawing.Image> . Görüntü verileri, yöntemi kullanılarak bir. jpg dosyasından yüklenir <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName> . Görüntü forma çizilmeden önce, form görüntüye sığacak şekilde yeniden boyutlandırılır. Görüntü çizimi <xref:System.Drawing.Graphics.DrawImage%2A?displayProperty=fullName> yöntemiyle gerçekleştirilir.
 
-<xref:System.Drawing.Graphics> Ve <xref:System.Drawing.Image> sınıflardır hem de <xref:System.Drawing?displayProperty=fullName> ad alanı.
+<xref:System.Drawing.Graphics>Ve <xref:System.Drawing.Image> sınıflarının ikisi de <xref:System.Drawing?displayProperty=fullName> ad alanıdır.
 
 ### <a name="example"></a>Örnek
 
@@ -57,9 +58,9 @@ virtual Void Form1::OnPaint(PaintEventArgs^ pe) override
 }
 ```
 
-## <a name="draw"></a> .NET Framework ile şekil çizme
+## <a name="draw-shapes-with-the-net-framework"></a><a name="draw"></a> .NET Framework şekil çizme
 
-Aşağıdaki kod örneğinde <xref:System.Drawing.Graphics> değiştirmek için sınıf <xref:System.Windows.Forms.Form.OnPaint%2A> işaretçisi almak için olay işleyicisini <xref:System.Drawing.Graphics> ana formu için nesne. This işaretçisi ardından form arka plan rengini ayarlamak ve bir satır ve kullanarak bir yay çizmek için kullanılan <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> ve <xref:System.Drawing.Graphics.DrawArc%2A> yöntemleri.
+Aşağıdaki kod örneği, <xref:System.Drawing.Graphics> <xref:System.Windows.Forms.Form.OnPaint%2A> <xref:System.Drawing.Graphics> ana form için nesnesine bir işaretçi almak üzere olay işleyicisini değiştirmek için sınıfını kullanır. Bu işaretçi daha sonra formun arka plan rengini ayarlamak ve ve yöntemlerini kullanarak bir çizgi ve yay çizmek için kullanılır <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> <xref:System.Drawing.Graphics.DrawArc%2A> .
 
 ### <a name="example"></a>Örnek
 
@@ -91,9 +92,9 @@ virtual Void Form1::OnPaint(PaintEventArgs^ pe ) override
 }
 ```
 
-## <a name="rotate"></a> .NET Framework ile görüntüleri döndürme
+## <a name="rotate-images-with-the-net-framework"></a><a name="rotate"></a> .NET Framework görüntüleri döndürme
 
-Aşağıdaki kod örneği, kullanımını gösterir <xref:System.Drawing.Image?displayProperty=fullName> sınıfı bir görüntüyü diskten yükleme, 90 derece döndür ve yeni bir .jpg dosya olarak kaydedin.
+Aşağıdaki kod örneği, <xref:System.Drawing.Image?displayProperty=fullName> bir görüntüyü diskten yüklemek için sınıfının kullanımını gösterir, 90 derece döndürün ve yeni bir. jpg dosyası olarak kaydeder.
 
 ### <a name="example"></a>Örnek
 
@@ -112,9 +113,9 @@ int main()
 }
 ```
 
-## <a name="convert"></a> .NET Framework ile görüntü dosyası biçimlerini dönüştürme
+## <a name="convert-image-file-formats-with-the-net-framework"></a><a name="convert"></a> Resim dosyası biçimlerini .NET Framework Dönüştür
 
-Aşağıdaki kod örneğinde <xref:System.Drawing.Image?displayProperty=fullName> sınıfı ve <xref:System.Drawing.Imaging.ImageFormat?displayProperty=fullName> dönüştürmek ve görüntü dosyaları kaydetmek için kullanılan sabit listesi. Aşağıdaki kod bir .jpg dosyasından görüntüyü yükler ve sonra .gif ve .bmp dosya biçimlerinde kaydeder.
+Aşağıdaki kod örneği, <xref:System.Drawing.Image?displayProperty=fullName> <xref:System.Drawing.Imaging.ImageFormat?displayProperty=fullName> görüntü dosyalarını dönüştürmek ve kaydetmek için kullanılan sınıfı ve sabit listesini gösterir. Aşağıdaki kod bir. jpg dosyasından bir görüntü yükler ve ardından. gif ve. bmp dosya biçimlerinde kaydeder.
 
 ### <a name="example"></a>Örnek
 

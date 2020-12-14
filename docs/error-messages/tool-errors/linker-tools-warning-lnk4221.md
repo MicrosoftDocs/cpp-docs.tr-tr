@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları uyarısı LNK4221'
 title: Bağlayıcı Araçları Uyarısı LNK4221
 ms.date: 08/19/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4221
 ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
-ms.openlocfilehash: f18224150232384adbf8ee7cc31af7bb7678eae5
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: d7aee041536afc1da0c4fd8a6e520ceb5e99e57a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92919208"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222638"
 ---
 # <a name="linker-tools-warning-lnk4221"></a>Bağlayıcı Araçları Uyarısı LNK4221
 
@@ -33,7 +34,7 @@ int function()
 }
 ```
 
-Dosyaları derlemek ve iki nesne dosyası oluşturmak için, komut isteminde **cl/c a. cpp b. cpp** komutunu çalıştırın. Nesne dosyalarını, **/lib/Out: test. lib a. obj b. obj bağlantısını** çalıştırarak BAĞLARSANıZ, LNK4221 uyarısını alırsınız. Nesneleri, **/lib/Out: test. lib b. obj a. obj** ' i çalıştırarak bağlarsanız, bir uyarı almazsınız.
+Dosyaları derlemek ve iki nesne dosyası oluşturmak için, komut isteminde **cl/c a. cpp b. cpp** komutunu çalıştırın. Nesne dosyalarını, **/lib/Out: test. lib a. obj b. obj bağlantısını** çalıştırarak BAĞLARSANıZ, LNK4221 uyarısını alırsınız. Nesneleri, **/lib/Out: test. lib b. obj a. obj**' i çalıştırarak bağlarsanız, bir uyarı almazsınız.
 
 Bağlayıcı en son ilk çıkar (LıFO) şekilde çalıştığından ikinci senaryoda uyarı verilmez. İlk senaryoda, b. obj bir. obj öncesinde işlenir ve bir. obj eklenecek yeni bir sembol içermez. Önce bir. obj öğesini işlemek için bağlayıcıyı inceleyerek, uyarıdan kaçınabilirsiniz.
 

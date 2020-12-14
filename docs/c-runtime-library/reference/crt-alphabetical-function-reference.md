@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: UCRT alfabetik işlev başvurusu'
 title: UCRT alfabetik işlev başvurusu
 ms.date: 01/31/2019
 f1_keywords:
 - vc.tables.runtime
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
-ms.openlocfilehash: 73fd08ffa58aabfd9a40e0296b21d4a5baea8750
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: af75a52dcc6659e80ae1155ffe4de2c8c1dee4bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221611"
 ---
 # <a name="ucrt-alphabetical-function-reference"></a>UCRT alfabetik işlev başvurusu
 
@@ -3385,7 +3386,7 @@ Evrensel C çalışma zamanı (UCRT, genellikle yalnızca CRT) kitaplık başvur
 
 [_write](write.md)
 
-[yazarken](posix-write.md)
+[write](posix-write.md)
 
 [_wrmdir](rmdir-wrmdir.md)
 
@@ -3487,11 +3488,11 @@ Evrensel C çalışma zamanı (UCRT, genellikle yalnızca CRT) kitaplık başvur
 
 ## <a name="x"></a>X
 
-[xor](xor.md)
+[XOR](xor.md)
 
 [xor_eq](xor-eq.md)
 
-## <a name="y"></a>Y
+## <a name="y"></a>E
 
 [_y0](bessel-functions-j0-j1-jn-y0-y1-yn.md)
 

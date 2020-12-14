@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CIatan2'
 title: _CIatan2
 ms.date: 4/2/2020
 api_name:
@@ -25,18 +26,18 @@ helpviewer_keywords:
 - _CIatan2 intrinsic
 - CIatan2 intrinsic
 ms.assetid: 31f8cc78-b79f-4576-b73b-8add18e08680
-ms.openlocfilehash: 62baae97cec3c572f14a01f2f5c0ad189cb4dbfd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5b0c5f495b8bf5d47404cc04a69a8b2f31af39a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221650"
 ---
 # <a name="_ciatan2"></a>_CIatan2
 
-*X* / *y* 'nin ark tanjantını hesaplar ve *x* ve *y* , yığının en üstünde bulunan değerlerdir.
+X y *'nin ark* tanjantını hesaplar  /   ve *x* ve *y* , yığının en üstünde bulunan değerlerdir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 void __cdecl _CIatan2();
@@ -44,7 +45,7 @@ void __cdecl _CIatan2();
 
 ## <a name="remarks"></a>Açıklamalar
 
-`atan2` İşlevin bu sürümünde derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
+İşlevin bu sürümünde `atan2` derleyicinin anladığı özelleştirilmiş bir çağırma kuralı vardır. Kopyaların oluşturulmasını ve YAZMAÇ ayrılmasına yardımcı olmasını önlediği için yürütmeyi hızlandırır.
 
 Elde edilen değer yığının en üstüne gönderilir.
 

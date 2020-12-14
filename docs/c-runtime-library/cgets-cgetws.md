@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _cgets _cgetws'
 title: _cgets, _cgetws
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cgetws function
 - cgets function
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-ms.openlocfilehash: 9ae7baaa01029dcf2c02f6ea80b6e816bb671596
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ac712c7ee51c3f06dfe1dd4e881630768a7e6b20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917438"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221689"
 ---
 # <a name="_cgets-_cgetws"></a>_cgets, _cgetws
 
@@ -76,13 +77,13 @@ Veriler için depolama konumu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`_cgets`ve `_cgetws` ' de dizenin başlangıcına bir işaretçi döndürür `buffer[2]`. NULL `buffer` ise **NULL**, bu işlevler [parametre doğrulama](../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **null** döndürür ve olarak `errno` `EINVAL`ayarlanır.
+`_cgets` ve `_cgetws` ' de dizenin başlangıcına bir işaretçi döndürür `buffer[2]` . `buffer` **Null** ise, bu işlevler [parametre doğrulama](../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisini çağırır. Yürütmenin devam etmesine izin veriliyorsa, **null** döndürür ve `errno` olarak ayarlanır `EINVAL` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler, konsolundan bir karakter dizesini okur ve dizeyi ve uzunluğu tarafından `buffer`işaret edilen konuma depolar. Parametre `buffer` , bir karakter dizisine yönelik bir işaretçi olmalıdır. Dizinin `buffer[0]`ilk öğesi, okunacak dizenin uzunluk üst sınırını (karakter cinsinden) içermelidir. Dizi, dizeyi tutmak için yeterli öğe, bir Sonlandırıcı null karakteri (' \ 0 ') ve 2 ek bayt içermelidir. İşlev, satır başı satır besleme (CR-LF) birleşimi veya belirtilen karakter sayısı okunana kadar karakterleri okur. Dize, tarihinde `buffer[2]`başlayarak depolanır. İşlev bir CR-LF okurlarsa, null karakteri (' \ 0 ') depolar. Daha sonra işlevi, dizenin gerçek uzunluğunu ikinci dizi öğesinde depolar `buffer[1]`.
+Bu işlevler, konsolundan bir karakter dizesini okur ve dizeyi ve uzunluğu tarafından işaret edilen konuma depolar `buffer` . Parametre, bir `buffer` karakter dizisine yönelik bir işaretçi olmalıdır. Dizinin ilk öğesi, `buffer[0]` okunacak dizenin uzunluk üst sınırını (karakter cinsinden) içermelidir. Dizi, dizeyi tutmak için yeterli öğe, bir Sonlandırıcı null karakteri (' \ 0 ') ve 2 ek bayt içermelidir. İşlev, satır başı satır besleme (CR-LF) birleşimi veya belirtilen karakter sayısı okunana kadar karakterleri okur. Dize, tarihinde başlayarak depolanır `buffer[2]` . İşlev bir CR-LF okurlarsa, null karakteri (' \ 0 ') depolar. Daha sonra işlevi, dizenin gerçek uzunluğunu ikinci dizi öğesinde depolar `buffer[1]` .
 
-Bir konsol penceresinde `_cgets` veya `_cgetws` çağrıldığında tüm düzenleyen anahtarlar etkin olduğundan, F3 tuşuna basıldığında son girilen giriş yinelenir.
+`_cgets`Bir konsol penceresinde veya çağrıldığında tüm düzenleyen anahtarlar etkin olduğundan `_cgetws` , F3 tuşuna basıldığında son girilen giriş yinelenir.
 
 C++ ' da, bu işlevlerin, bu işlevlerin daha yeni ve güvenli bir şekilde çağrılmasını sağlayan şablon aşırı yüklemeleri vardır. Daha fazla bilgi için bkz. [Güvenli şablon aşırı yüklemeleri](../c-runtime-library/secure-template-overloads.md).
 
@@ -98,8 +99,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_cgets`|\<conio. h>|
-|`_cgetws`|\<conio. h> veya \<wchar. h>|
+|`_cgets`|\<conio.h>|
+|`_cgetws`|\<conio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
 
@@ -149,5 +150,5 @@ Text = A line of input.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getch, _getwch](../c-runtime-library/reference/getch-getwch.md)
