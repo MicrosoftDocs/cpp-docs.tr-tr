@@ -1,5 +1,6 @@
 ---
-title: 'İzleyiciler: OLE uygulamanızda izleyicileri uygulama'
+description: 'Daha fazla bilgi edinin: Tracranlar: OLE uygulamanızda Izleyicileri uygulama'
+title: 'İzleyiciler: OLE Uygulamanızda İzleyicileri Uygulama'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - trackers [MFC]
@@ -9,22 +10,22 @@ helpviewer_keywords:
 - OLE containers [MFC], trackers
 - CRectTracker class [MFC], implementing trackers
 ms.assetid: 5103a517-65bd-441a-8a53-02915ff3ef08
-ms.openlocfilehash: c1d33327ec3d926d5475f9b4610a212a021cbc17
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4e2d4dc43fdd0147ee05a00af4c0a8172e0a4ddb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62181896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264264"
 ---
-# <a name="trackers-implementing-trackers-in-your-ole-application"></a>İzleyiciler: OLE uygulamanızda izleyicileri uygulama
+# <a name="trackers-implementing-trackers-in-your-ole-application"></a>İzleyiciler: OLE Uygulamanızda İzleyicileri Uygulama
 
-İzleyicileri OLE istemci öğeleri ile etkileşim kurmak kullanıcıları etkinleştirmek için bir grafik arabirim sağlar. Farklı İzleyici stilleri kullanarak, OLE taranmış kenarlıklar, görüntülenebilecek öğe istemci yeniden boyutlandırma tutamaçları veya diğer görsel efektler çeşitli. Bu makalede açıklanır:
+İzleyiciler, kullanıcıların OLE istemci öğeleriyle etkileşime geçmesini sağlayan bir grafik arabirim sağlar. Farklı İzleyici stilleri kullanarak, OLE istemci öğeleri, taranmış kenarlıklar, yeniden boyutlandırma tutamaçları veya diğer çeşitli görsel efektlerle görüntülenebilir. Bu makalede şunları açıklanmaktadır:
 
-- [Kodunuzda izleme uygulama](../mfc/how-to-implement-tracking-in-your-code.md).
+- [Kodunuzda Izleme uygulama](../mfc/how-to-implement-tracking-in-your-code.md).
 
-- [Rubber-Banding ve izleyiciler](../mfc/rubber-banding-and-trackers.md).
+- [Lastik bant oluşturma ve izleyiciler](../mfc/rubber-banding-and-trackers.md).
 
-Makaleyi izleyicileri stillerle kullanımını da kapsar. MFC OLE örnek birkaç başvuruları buna kolaylaştırır [OCLIENT](../overview/visual-cpp-samples.md).
+Makalede ayrıca izleyiciler içeren stillerin kullanımı ele alınmaktadır. Buna ek olarak, MFC OLE örnek [Oistemcisine](../overview/visual-cpp-samples.md)çeşitli başvurular da getirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

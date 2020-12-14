@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: interior_ptr (C++/CLı)'
 title: interior_ptr (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - interior_ptr keyword [C++]
 ms.assetid: 25160f74-569e-492d-9e3c-67ece7486baa
-ms.openlocfilehash: affec6dcd88290b24a92cd9035a131baee38bcf1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1254746b76c5b217c03848d4b55253e40bcfd5a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214275"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265603"
 ---
 # <a name="interior_ptr-ccli"></a>interior_ptr (C++/CLI)
 
@@ -30,13 +31,13 @@ ms.locfileid: "87214275"
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/ZW`
+Derleyici seçeneği: `/ZW`
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 
 Aşağıdaki sözdizimi örneği iç işaretçiyi gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 cli::interior_ptr<cv_qualifier type> var = &initializer;
@@ -48,7 +49,7 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
 **`const`** veya **`volatile`** niteleyicileri.
 
 *türüyle*<br/>
-*Başlatıcı*türü.
+*Başlatıcı* türü.
 
 *l*<br/>
 **İnterior_ptr** değişkeninin adı.
@@ -60,7 +61,7 @@ Bir başvuru türünün üyesi, yönetilen bir dizinin öğesi ya da yerel bir i
 
 Yerel bir işaretçi, yönetilen yığında konum değişiklikleri olarak bir nesneyi takip edemeyebilir, bu da nesnenin çöp toplayıcı hareketli örneklerinin sonucunu elde etmez. Bir işaretçinin örneğe doğru bir şekilde başvurması için, çalışma zamanının işaretçiyi yeni konumlandırılmış nesneye güncelleştirmesi gerekir.
 
-**İnterior_ptr** , yerel işaretçinin işlevselliğinin bir üst kümesini temsil eder.  Bu nedenle, yerel bir işaretçiye atanabilecek her türlü şey bir **interior_ptr**da atanabilir.  İç işaretçiye karşılaştırma ve işaretçi aritmetiği dahil olmak üzere yerel işaretçilerle aynı işlem kümesi gerçekleştirmesine izin verilir.
+**İnterior_ptr** , yerel işaretçinin işlevselliğinin bir üst kümesini temsil eder.  Bu nedenle, yerel bir işaretçiye atanabilecek her türlü şey bir **interior_ptr** da atanabilir.  İç işaretçiye karşılaştırma ve işaretçi aritmetiği dahil olmak üzere yerel işaretçilerle aynı işlem kümesi gerçekleştirmesine izin verilir.
 
 İç işaretçi yalnızca yığında bildirilebilecek.  İç işaretçi bir sınıfın üyesi olarak bildirilemez.
 
@@ -84,7 +85,7 @@ Atık toplanmış yığında taşınamayan bir nesneye işaret eden iç işaret�
 
 ### <a name="requirements"></a>Gereksinimler
 
-Derleyici seçeneği:`/clr`
+Derleyici seçeneği: `/clr`
 
 ### <a name="examples"></a>Örnekler
 

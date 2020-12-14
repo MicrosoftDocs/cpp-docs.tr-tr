@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kaynak derleyicisi önemli hatası RC1015'
 title: Kaynak Derleyicisi Önemli Hatası RC1015
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - RC1015
 ms.assetid: 23f187e1-5538-40b5-9042-edd2888f55c2
-ms.openlocfilehash: f20101c2edc4da132c89dcda451c71af2304a13d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 41afe385189d35e80e5f624d379b45c0dca17441
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62297664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265668"
 ---
 # <a name="resource-compiler-fatal-error-rc1015"></a>Kaynak Derleyicisi Önemli Hatası RC1015
 
-'dosyaadı' dosyası açık içeremez
+içerme dosyası ' filename ' açılamıyor
 
-Verilen içerme dosyası mevcut değil, açılamadı veya bulunamadı.
+Verilen içerme dosyası yok, açılamıyor veya bulunamadı.
 
-Ortam ayarlarının geçerli olduğunu ve dosya için doğru yol belirtildiğinden emin olun. Kaynak derleyicisi için yeterli dosya tanıtıcısı kullanılabildiğinden emin olun. Dosya bir ağ sürücüsündeyse, dosyayı açmak için izinlere sahip olduğunuzdan emin olun.
+Ortam ayarlarının geçerli olduğundan ve dosya için doğru yolun belirtildiğinden emin olun. Kaynak derleyicisi için yeterli dosya tanıtıcılarının kullanılabildiğinden emin olun. Dosya bir ağ sürücüsündeyse, dosyayı açma izinlerinizin olduğundan emin olun.
 
-Ek içeren dizin, yapılandırma özellikleri -> olarak kaynakları belirtilen bir dizinde içerme dosyası mevcut olsa bile RC1015 oluşabilir; genel özellik sayfası -> içerme dosyasının tam yolunu belirtin.
+İçerme dosyası, yapılandırma özellikleri-> Resources-> genel özellik sayfasında bulunan ek bir Içerme dizini olarak belirtilen bir dizinde olsa bile, RC1015 oluşabilir. içerme dosyasının tüm yolunu belirtin.

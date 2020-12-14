@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Izleyiciler'
 title: İzleyiciler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,22 +12,22 @@ helpviewer_keywords:
 - CRectTracker class [MFC], implementing trackers
 - OLE server applications [MFC], trackers
 ms.assetid: dcd09399-6637-4621-80e5-d12670429787
-ms.openlocfilehash: b71eb0e5d46a790b01ec12f12043af783bdfcf27
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e82766ecfabf2b5ebb0147b9f2c462f3b4460869
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62181647"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264262"
 ---
 # <a name="trackers"></a>İzleyiciler
 
-[CRectTracker](../mfc/reference/crecttracker-class.md) sınıfı uygulamanız ve görüntü stilleri çeşitli sağlayarak kullanıcı dikdörtgen öğeleri arasında bir kullanıcı arabirimi sağlar. Bu stiller düz, taranmış veya kesikli kenarlık içerir. öğeyi kapsayan taranmış bir desen; ve yeniden boyutlandırma tutamaçları, dış veya bir sınır içinde bulunabilir. İzleyicileri OLE öğeleri ile birlikte sık kullanılır, öğesinden türetilmiş nesneler `COleClientItem`. Tracker dikdörtgenler öğesinin geçerli durumu üzerinde görsel ipuçları sağlar.
+[CRectTracker](../mfc/reference/crecttracker-class.md) sınıfı, çeşitli görüntü stilleri sağlayarak uygulamanızdaki dikdörtgen öğeler arasında bir kullanıcı arabirimi sağlar. Bu stiller düz, taranmış veya kesik çizgili kenarlıkları içerir; öğeyi içeren taranmış bir model; ve bir kenarlığın dışında veya içinde konumlandırılabilir tutamaçları yeniden boyutlandırın. İzleyiciler genellikle OLE öğeleri, diğer bir deyişle, öğesinden türetilmiş nesneler ile birlikte kullanılır `COleClientItem` . İzleyici dikdörtgenleri, öğenin geçerli durumu hakkında görsel yardımlar sağlar.
 
-MFC OLE örnek [OCLIENT](../overview/visual-cpp-samples.md) izleyicileri ve bir kapsayıcı uygulamasının görüş OLE istemci öğeleri kullanarak ortak arabirimi gösterir. Farklı stillerde tanıtımı ve bir izleyici nesnesi yeteneklerini için MFC genel örnek bkz [İZLEYİCİSİ](../overview/visual-cpp-samples.md).
+MFC OLE örnek [Oclient](../overview/visual-cpp-samples.md) , bir kapsayıcı uygulamasının görüş açısından TRACRANLAR ve OLE istemci öğelerini kullanan ortak bir arabirim gösterir. Bir izleyici nesnesinin farklı stillerinin ve becerileriyle ilgili bir gösterim için bkz. MFC genel örnek [İzleyicisi](../overview/visual-cpp-samples.md).
 
-OLE uygulamanızda izleyicileri uygulama ile ilgili daha fazla bilgi için bkz: [izleyicileri: OLE uygulamanızda izleyicileri uygulama](../mfc/trackers-implementing-trackers-in-your-ole-application.md)
+OLE uygulamanızda izleyicileri uygulama hakkında daha fazla bilgi için bkz [. trackingseçiciler: OLE uygulamanızda Izleyicileri uygulama](../mfc/trackers-implementing-trackers-in-your-ole-application.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
-[COleClientItem Sınıfı](../mfc/reference/coleclientitem-class.md)
+[Colet Clienentidıtem sınıfı](../mfc/reference/coleclientitem-class.md)

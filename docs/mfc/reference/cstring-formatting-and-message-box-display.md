@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: CString Formatting and Message-Box Display'
 title: CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CString objects [MFC], formatting and message boxes
 ms.assetid: d1068cf4-9cc5-4952-b9e7-d612c53cbc28
-ms.openlocfilehash: e346fe6ed5235f98f9e1206e92cb53c2fd5c929f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a3c91a2a8a6f80235a834811433467797d5a37a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831131"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264524"
 ---
 # <a name="cstring-formatting-and-message-box-display"></a>CString Biçimlendirmesi ve İleti Kutusu Görüntüleme
 
@@ -51,7 +52,7 @@ Tek bir alt dize alacak bir [CString](../../atl-mfc-shared/using-cstring.md) nes
 Dizeden Ayıklanacak dizenin tam metnini içeren dize.
 
 *ıubstring*<br/>
-*LpszFullString*öğesinden Ayıklanacak alt dizenin sıfır tabanlı dizini.
+*LpszFullString* öğesinden Ayıklanacak alt dizenin sıfır tabanlı dizini.
 
 *chSep*<br/>
 Alt dizeleri sınırlandırmak için kullanılan ayırıcı karakter.
@@ -76,7 +77,7 @@ Bu işlev, *LPSZFULLSTRING* null olarak ayarlandıysa ya da işlev, belirtilen a
 
 ## <a name="afxformatstring1"></a><a name="afxformatstring1"></a> AfxFormatString1
 
-"%1" karakterlerinin herhangi bir örneği için *lpsz1* tarafından işaret edilen dizeyi, *NIDS*tarafından tanımlanan şablon dizesi kaynağında değiştirir.
+"%1" karakterlerinin herhangi bir örneği için *lpsz1* tarafından işaret edilen dizeyi, *NIDS* tarafından tanımlanan şablon dizesi kaynağında değiştirir.
 
 ```cpp
 void  AfxFormatString1(
@@ -98,7 +99,7 @@ Değiştirme gerçekleştirileceği şablon dizesinin kaynak KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni oluşturulan dize, *rString*içinde depolanır. Örneğin, dize tablosundaki dize "dosya %1 bulunamadı" ise ve *lpsz1* "C:\MYFILE.TXT" değerine eşitse, *rstring* "dosya C:\MYFILE.TXT bulunamadı" dizesini içerir. Bu işlev ileti kutularına ve diğer pencereler için gönderilen dizeleri biçimlendirmek için yararlıdır.
+Yeni oluşturulan dize, *rString* içinde depolanır. Örneğin, dize tablosundaki dize "dosya %1 bulunamadı" ise ve *lpsz1* "C:\MYFILE.TXT" değerine eşitse, *rstring* "dosya C:\MYFILE.TXT bulunamadı" dizesini içerir. Bu işlev ileti kutularına ve diğer pencereler için gönderilen dizeleri biçimlendirmek için yararlıdır.
 
 "%1" biçim karakterleri dizede birden çok kez görünürse, birden çok değiştirme yapılır.
 
@@ -112,7 +113,7 @@ Yeni oluşturulan dize, *rString*içinde depolanır. Örneğin, dize tablosundak
 
 ## <a name="afxformatstring2"></a><a name="afxformatstring2"></a> AfxFormatString2
 
-"%1" karakterlerinin herhangi bir örneği için *lpsz1* tarafından işaret edilen dizeyi ve *NIDS*tarafından tanımlanan şablon dizesi kaynağındaki "%2" karakterlerinin herhangi bir örneği için *lpsz2* tarafından işaret edilen dizeyi değiştirir.
+"%1" karakterlerinin herhangi bir örneği için *lpsz1* tarafından işaret edilen dizeyi ve *NIDS* tarafından tanımlanan şablon dizesi kaynağındaki "%2" karakterlerinin herhangi bir örneği için *lpsz2* tarafından işaret edilen dizeyi değiştirir.
 
 ```cpp
 void AfxFormatString2(
@@ -138,7 +139,7 @@ Değiştirme gerçekleştirileceği şablon dizesinin dize tablo KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Yeni oluşturulan dize, *rString*içinde depolanır. Örneğin, dize tablosundaki dize "%2 dizininde bulunamayan dosya %1", *lpsz1* "MYFILE.TXT" ve *lpsz2* "c:\mydir" olarak Işaret ediyorsa, *rString* "MYFILE.TXT dosya c:\dir dizininde bulunamadı" dizesini içerir.
+Yeni oluşturulan dize, *rString* içinde depolanır. Örneğin, dize tablosundaki dize "%2 dizininde bulunamayan dosya %1", *lpsz1* "MYFILE.TXT" ve *lpsz2* "c:\mydir" olarak Işaret ediyorsa, *rString* "MYFILE.TXT dosya c:\dir dizininde bulunamadı" dizesini içerir.
 
 "%1" veya "%2" biçim karakterleri dizede birden çok kez görünürse, birden çok değişim yapılır. Bunların sayısal sırada olması gerekmez.
 
@@ -206,7 +207,7 @@ Dize tablosundaki bir dizeye başvurmak için kullanılan benzersiz bir KIMLIK.
 
 Bu aşırı yüklenmiş işlevin ilk formu ileti kutusunda *lpszText* tarafından işaret edilen bir metin dizesini görüntüler ve bir yardım bağlamını anlatmak Için *nIDHelp* kullanır. Yardım bağlamı, Kullanıcı Yardım tuşuna bastığında (genellikle F1) ilişkili bir yardım konusuna geçmek için kullanılır.
 
-İşlevin ikinci formu, ileti kutusunda bir ileti göstermek için ID *nIDPrompt* ile dize kaynağını kullanır. İlişkili Yardım sayfası, *nIDHelp*değeri aracılığıyla bulunur. Varsayılan *nIDHelp* değeri kullanılırsa (-1), DIZE kaynak kimliği, *nIDPrompt*, yardım bağlamı için kullanılır. Yardım bağlamlarını tanımlama hakkında daha fazla bilgi için bkz. [teknik notta 28](../../mfc/tn028-context-sensitive-help-support.md).
+İşlevin ikinci formu, ileti kutusunda bir ileti göstermek için ID *nIDPrompt* ile dize kaynağını kullanır. İlişkili Yardım sayfası, *nIDHelp* değeri aracılığıyla bulunur. Varsayılan *nIDHelp* değeri kullanılırsa (-1), DIZE kaynak kimliği, *nIDPrompt*, yardım bağlamı için kullanılır. Yardım bağlamlarını tanımlama hakkında daha fazla bilgi için bkz. [teknik notta 28](../../mfc/tn028-context-sensitive-help-support.md).
 
 ### <a name="example"></a>Örnek
 

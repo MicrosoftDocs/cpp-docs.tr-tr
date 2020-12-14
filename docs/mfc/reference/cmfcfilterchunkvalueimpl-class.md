@@ -1,5 +1,6 @@
 ---
-title: CMFCFilterChunkValueImpl Sınıfı
+description: 'Daha fazla bilgi edinin: CMFCFilterChunkValueImpl sınıfı'
+title: CMFCFilterChunkValueImpl sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCFilterChunkValueImpl
@@ -46,18 +47,18 @@ helpviewer_keywords:
 - CMFCFilterChunkValueImpl [MFC], SetTextValue
 - CMFCFilterChunkValueImpl [MFC], SetChunk
 ms.assetid: 3c833f23-5b88-4d08-9e09-ca6a8aec88bf
-ms.openlocfilehash: c89d41f7db43d9504bfc22cbf35a59fcceb511e2
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: f2db7fdf6d6d24cb906b3190d34310e1f6724194
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265473"
 ---
-# <a name="cmfcfilterchunkvalueimpl-class"></a>CMFCFilterChunkValueImpl Sınıfı
+# <a name="cmfcfilterchunkvalueimpl-class"></a>CMFCFilterChunkValueImpl sınıfı
 
-Bu, hem yığın hem de özellik değeri çifti mantığını basitleştiren bir sınıftır.
+Bu, hem öbek hem de özellik değeri çifti mantığını kolaylaştıran bir sınıftır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
@@ -67,67 +68,67 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCFilterChunkValueImpl::~CMFCFilterChunkValueImpl](#_dtorcmfcfilterchunkvalueimpl)|Nesneyi yok eder.|
-|[CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl](#cmfcfilterchunkvalueimpl)|Nesneyi inşa eder.|
+|[CMFCFilterChunkValueImpl:: ~ CMFCFilterChunkValueImpl](#_dtorcmfcfilterchunkvalueimpl)|Nesne yapıları kaldırır.|
+|[CMFCFilterChunkValueImpl:: CMFCFilterChunkValueImpl](#cmfcfilterchunkvalueimpl)|Nesnesini oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCFilterChunkValueImpl::Temizleyin](#clear)|ChunkValue temizler.|
-|[CMFCFilterChunkValueImpl::CopyChunk](#copychunk)|Bu parçayı bir yığının özelliklerini açıklayan bir yapıya kopyalar.|
-|[CMFCFilterChunkValueImpl::CopyFrom](#copyfrom)|Bu öbek değerini diğer değerden başolarak laştırır.|
-|[CMFCFilterChunkValueImpl::GetChunkGUID](#getchunkguid)|Yığın GUID alır.|
-|[CMFCFilterChunkValueImpl::GetChunkPID](#getchunkpid)|Yığın PID 'yi (özellik kimliği) alır.|
-|[CMFCFilterChunkValueImpl::GetChunkType](#getchunktype)|Yığın türü alır.|
-|[CMFCFilterChunkValueImpl::GetString](#getstring)|Dize değerini alır.|
-|[CMFCFilterChunkValueImpl::GetValue](#getvalue)|Değeri ayrılan bir propvariant olarak alır.|
-|[CMFCFilterChunkValueImpl::GetValueNoAlloc](#getvaluenoalloc)|Tahsis edilmemiş (iç değer) değeri verir.|
-|[CMFCFilterChunkValueImpl::Geçerli](#isvalid)|Bu özellik değerinin geçerli olup olmadığını denetler.|
-|[CMFCFilterChunkValueImpl::SetBoolValue](#setboolvalue)|Fazla Yüklendi. Mülkü bir Boolean'a anahtarla ayarlar.|
-|[CMFCFilterChunkValueImpl::SetDwordValue](#setdwordvalue)|Özelliği bir DWORD'e göre ayarlar.|
-|[CMFCFilterChunkValueImpl::SetFileTimeValue](#setfiletimevalue)|Özelliği dosya zamanına göre ayarlar.|
-|[CMFCFilterChunkValueImpl::SetInt64Value](#setint64value)|Özelliği bir int64'e göre ayarlar.|
-|[CMFCFilterChunkValueImpl::SetIntValue](#setintvalue)|Özelliği bir int'e anahtarla ayarlar.|
-|[CMFCFilterChunkValueImpl::SetLongValue](#setlongvalue)|Özelliği bir UZUN'a göre ayarlar.|
-|[CMFCFilterChunkValueImpl::SetSystemTimeValue](#setsystemtimevalue)|Özelliği bir SystemTime'a göre ayarlar.|
-|[CMFCFilterChunkValueImpl::SetTextValue](#settextvalue)|Özelliği bir Unicode dizesine göre ayarlar.|
+|[CMFCFilterChunkValueImpl:: Clear](#clear)|ChunkValue öğesini temizler.|
+|[CMFCFilterChunkValueImpl:: CopyChunk](#copychunk)|Bu öbeği bir öbekin özelliklerini açıklayan bir yapıya kopyalar.|
+|[CMFCFilterChunkValueImpl:: CopyFrom](#copyfrom)|Bu öbek değerini diğer değerden başlatır.|
+|[CMFCFilterChunkValueImpl:: GetChunkGUID](#getchunkguid)|Öbek GUID 'INI alır.|
+|[CMFCFilterChunkValueImpl:: GetChunkPID](#getchunkpid)|Öbek PID (özellik KIMLIĞI) alır.|
+|[CMFCFilterChunkValueImpl:: GetChunkType](#getchunktype)|Öbek türünü alır.|
+|[CMFCFilterChunkValueImpl:: GetString](#getstring)|Dize değerini alır.|
+|[CMFCFilterChunkValueImpl:: GetValue](#getvalue)|Değeri ayrılmış bir propvariant olarak alır.|
+|[CMFCFilterChunkValueImpl:: Getvaluenoayırma](#getvaluenoalloc)|Ayrılmamış (iç değer) değeri döndürür.|
+|[CMFCFilterChunkValueImpl:: IsValid](#isvalid)|Bu özellik değerinin geçerli olup olmadığını denetler.|
+|[CMFCFilterChunkValueImpl:: SetBoolValue](#setboolvalue)|Fazla Yüklendi. Özelliği anahtara göre bir Boole değerine ayarlar.|
+|[CMFCFilterChunkValueImpl:: SetDwordValue](#setdwordvalue)|Özelliği anahtara göre DWORD olarak ayarlar.|
+|[CMFCFilterChunkValueImpl:: SetFileTimeValue](#setfiletimevalue)|Özelliği anahtar olarak bir filetime olarak ayarlar.|
+|[CMFCFilterChunkValueImpl:: SetInt64Value](#setint64value)|Özelliği anahtara göre bir Int64 olarak ayarlar.|
+|[CMFCFilterChunkValueImpl:: SetIntValue](#setintvalue)|Özelliği anahtar olarak bir int olarak ayarlar.|
+|[CMFCFilterChunkValueImpl:: SetLongValue](#setlongvalue)|Özelliği anahtara göre bir LONG olarak ayarlar.|
+|[CMFCFilterChunkValueImpl:: SetSystemTimeValue](#setsystemtimevalue)|Özelliği anahtara göre bir SystemTime olarak ayarlar.|
+|[CMFCFilterChunkValueImpl:: SetTextValue](#settextvalue)|Özelliği, bir Unicode dizesine anahtar olarak ayarlar.|
 
 ### <a name="protected-methods"></a>Korumalı Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CMFCFilterChunkValueImpl::SetChunk](#setchunk)|Ösyenin ortak özelliklerini ayarlayan bir yardımcı işlevi.|
+|[CMFCFilterChunkValueImpl:: SetChunk](#setchunk)|Öbekin ortak özelliklerini ayarlayan bir yardımcı işlevi.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanmak için, sadece doğru tür bir CMFCFilterChunkValueImpl sınıf oluşturmak
+Kullanmak için doğru türde bir CMFCFilterChunkValueImpl sınıfı oluşturmanız yeterlidir
 
 Örnek:
 
-CMFCFilterChunkValueImpl öbek;
+CMFCFilterChunkValueImpl öbeği;
 
-hr = öbek. SetBoolValue(PKEY_IsAttachment, doğru);
+HR = öbek. SetBoolValue (PKEY_IsAttachment, true);
 
-or
+veya
 
-hr = öbek. SetFileTimeValue(PKEY_ItemDate, ftLastModified);
+HR = öbek. SetFileTimeValue (PKEY_ItemDate, ftLastModified);
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
 `ATL::IFilterChunkValue`
 
-[CMFCFiltreChunkValueImpl](../../mfc/reference/cmfcfilterchunkvalueimpl-class.md)
+[CMFCFilterChunkValueImpl](../../mfc/reference/cmfcfilterchunkvalueimpl-class.md)
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxwin.h
+**Üstbilgi:** Afxwin. h
 
-## <a name="cmfcfilterchunkvalueimplclear"></a><a name="clear"></a>CMFCFilterChunkValueImpl::Temizleyin
+## <a name="cmfcfilterchunkvalueimplclear"></a><a name="clear"></a> CMFCFilterChunkValueImpl:: Clear
 
-ChunkValue temizler.
+ChunkValue öğesini temizler.
 
 ```cpp
 void Clear();
@@ -135,9 +136,9 @@ void Clear();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplcmfcfilterchunkvalueimpl"></a><a name="cmfcfilterchunkvalueimpl"></a>CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl
+## <a name="cmfcfilterchunkvalueimplcmfcfilterchunkvalueimpl"></a><a name="cmfcfilterchunkvalueimpl"></a> CMFCFilterChunkValueImpl:: CMFCFilterChunkValueImpl
 
-Nesneyi inşa eder.
+Nesnesini oluşturur.
 
 ```
 CMFCFilterChunkValueImpl();
@@ -145,9 +146,9 @@ CMFCFilterChunkValueImpl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplcmfcfilterchunkvalueimpl"></a><a name="_dtorcmfcfilterchunkvalueimpl"></a>CMFCFilterChunkValueImpl::~CMFCFilterChunkValueImpl
+## <a name="cmfcfilterchunkvalueimplcmfcfilterchunkvalueimpl"></a><a name="_dtorcmfcfilterchunkvalueimpl"></a> CMFCFilterChunkValueImpl:: ~ CMFCFilterChunkValueImpl
 
-Nesneyi yok eder.
+Nesne yapıları kaldırır.
 
 ```
 virtual ~CMFCFilterChunkValueImpl();
@@ -155,9 +156,9 @@ virtual ~CMFCFilterChunkValueImpl();
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplcopychunk"></a><a name="copychunk"></a>CMFCFilterChunkValueImpl::CopyChunk
+## <a name="cmfcfilterchunkvalueimplcopychunk"></a><a name="copychunk"></a> CMFCFilterChunkValueImpl:: CopyChunk
 
-Bu parçayı bir yığının özelliklerini açıklayan bir yapıya kopyalar.
+Bu öbeği bir öbekin özelliklerini açıklayan bir yapıya kopyalar.
 
 ```
 HRESULT CopyChunk(STAT_CHUNK* pStatChunk);
@@ -166,17 +167,17 @@ HRESULT CopyChunk(STAT_CHUNK* pStatChunk);
 ### <a name="parameters"></a>Parametreler
 
 *pStatChunk*<br/>
-Öskenin özelliklerini açıklayan hedef değerine işaretçi.
+Öbekin özelliklerini açıklayan hedef değer işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplcopyfrom"></a><a name="copyfrom"></a>CMFCFilterChunkValueImpl::CopyFrom
+## <a name="cmfcfilterchunkvalueimplcopyfrom"></a><a name="copyfrom"></a> CMFCFilterChunkValueImpl:: CopyFrom
 
-Bu öbek değerini diğer değerden başolarak laştırır.
+Bu öbek değerini diğer değerden başlatır.
 
 ```cpp
 void CopyFrom (IFilterChunkValue* pValue);
@@ -184,14 +185,14 @@ void CopyFrom (IFilterChunkValue* pValue);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDeğer*<br/>
-Kopyalanması gereken kaynak değerini belirtir.
+*pValue*<br/>
+Kopyalamanın kaynak değerini belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplgetchunkguid"></a><a name="getchunkguid"></a>CMFCFilterChunkValueImpl::GetChunkGUID
+## <a name="cmfcfilterchunkvalueimplgetchunkguid"></a><a name="getchunkguid"></a> CMFCFilterChunkValueImpl:: GetChunkGUID
 
-Yığın GUID alır.
+Öbek GUID 'INI alır.
 
 ```
 REFGUID GetChunkGUID() const;
@@ -199,13 +200,13 @@ REFGUID GetChunkGUID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Parçayı tanımlayan bir GUID'e başvuru.
+Öbeği tanımlayan bir GUID başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplgetchunkpid"></a><a name="getchunkpid"></a>CMFCFilterChunkValueImpl::GetChunkPID
+## <a name="cmfcfilterchunkvalueimplgetchunkpid"></a><a name="getchunkpid"></a> CMFCFilterChunkValueImpl:: GetChunkPID
 
-Yığın PID 'yi (özellik kimliği) alır.
+Öbek PID (özellik KIMLIĞI) alır.
 
 ```
 DWORD GetChunkPID() const;
@@ -213,13 +214,13 @@ DWORD GetChunkPID() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellik kimliğini içeren bir DWORD değeri.
+Özellik KIMLIĞINI içeren bir DWORD değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplgetchunktype"></a><a name="getchunktype"></a>CMFCFilterChunkValueImpl::GetChunkType
+## <a name="cmfcfilterchunkvalueimplgetchunktype"></a><a name="getchunktype"></a> CMFCFilterChunkValueImpl:: GetChunkType
 
-Yığın türünü alır.
+Öbek türünü alır.
 
 ```
 CHUNKSTATE GetChunkType() const;
@@ -227,11 +228,11 @@ CHUNKSTATE GetChunkType() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli öbek metin türü özelliği mi yoksa değer türü bir özellik mi olduğunu belirten bir CHUNKSTATE numaralandırılmış değer.
+Geçerli öbekin bir metin türü özelliği mi yoksa bir değer türü özelliği mi olduğunu belirten bir CHUNKSTATE numaralandırılmış değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplgetstring"></a><a name="getstring"></a>CMFCFilterChunkValueImpl::GetString
+## <a name="cmfcfilterchunkvalueimplgetstring"></a><a name="getstring"></a> CMFCFilterChunkValueImpl:: GetString
 
 Dize değerini alır.
 
@@ -241,13 +242,13 @@ CString &GetString();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Yığın değerini içeren bir dize.
+Öbek değerini içeren bir dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplgetvalue"></a><a name="getvalue"></a>CMFCFilterChunkValueImpl::GetValue
+## <a name="cmfcfilterchunkvalueimplgetvalue"></a><a name="getvalue"></a> CMFCFilterChunkValueImpl:: GetValue
 
-Değeri ayrılan bir propvariant olarak alır.
+Değeri ayrılmış bir propvariant olarak alır.
 
 ```
 HRESULT GetValue(PROPVARIANT** ppPropVariant);
@@ -256,17 +257,17 @@ HRESULT GetValue(PROPVARIANT** ppPropVariant);
 ### <a name="parameters"></a>Parametreler
 
 *ppPropVariant*<br/>
-İşlev döndüğünde, bu parametre yığın değerini içerir.
+İşlev döndüğünde, bu parametre öbek değerini içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK PROPVARIANT başarıyla tahsis edildi ve yığın değeri başarıyla *ppPropVariant*kopyalandı; aksi takdirde bir hata kodu.
+PROPVARıANT başarıyla ayrıldıysa ve öbek değeri *Pppropvarıant*'a başarıyla kopyalanmışsa S_OK. Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplgetvaluenoalloc"></a><a name="getvaluenoalloc"></a>CMFCFilterChunkValueImpl::GetValueNoAlloc
+## <a name="cmfcfilterchunkvalueimplgetvaluenoalloc"></a><a name="getvaluenoalloc"></a> CMFCFilterChunkValueImpl:: Getvaluenoayırma
 
-Tahsis edilmeyen (iç değer) değeri verir.
+Ayrılmayan (iç değer) değeri döndürür.
 
 ```
 PROPVARIANT GetValueNoAlloc ();
@@ -274,11 +275,11 @@ PROPVARIANT GetValueNoAlloc ();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli öbek değerini verir.
+Geçerli öbek değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplisvalid"></a><a name="isvalid"></a>CMFCFilterChunkValueImpl::Geçerli
+## <a name="cmfcfilterchunkvalueimplisvalid"></a><a name="isvalid"></a> CMFCFilterChunkValueImpl:: IsValid
 
 Bu özellik değerinin geçerli olup olmadığını denetler.
 
@@ -288,13 +289,13 @@ BOOL IsValid() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Geçerli öbek değeri geçerliyse DOĞRU; aksi takdirde YANLIŞ.
+Geçerli öbek değeri geçerliyse TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsetboolvalue"></a><a name="setboolvalue"></a>CMFCFilterChunkValueImpl::SetBoolValue
+## <a name="cmfcfilterchunkvalueimplsetboolvalue"></a><a name="setboolvalue"></a> CMFCFilterChunkValueImpl:: SetBoolValue
 
-Fazla Yüklendi. Mülkü bir Boolean'a anahtarla ayarlar.
+Fazla Yüklendi. Özelliği anahtara göre bir Boole değerine ayarlar.
 
 ```
 HRESULT SetBoolValue(
@@ -318,36 +319,36 @@ HRESULT SetBoolValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
 *bVal*<br/>
-Ayarlağacak öbek değerini belirtir.
+Ayarlanacak öbek değerini belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsetchunk"></a><a name="setchunk"></a>CMFCFilterChunkValueImpl::SetChunk
+## <a name="cmfcfilterchunkvalueimplsetchunk"></a><a name="setchunk"></a> CMFCFilterChunkValueImpl:: SetChunk
 
-Ösyenin ortak özelliklerini ayarlayan bir yardımcı işlevi.
+Öbekin ortak özelliklerini ayarlayan bir yardımcı işlevi.
 
 ```
 HRESULT SetChunk(
@@ -361,33 +362,33 @@ HRESULT SetChunk(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsetdwordvalue"></a><a name="setdwordvalue"></a>CMFCFilterChunkValueImpl::SetDwordValue
+## <a name="cmfcfilterchunkvalueimplsetdwordvalue"></a><a name="setdwordvalue"></a> CMFCFilterChunkValueImpl:: SetDwordValue
 
-Özelliği bir DWORD'e göre ayarlayın.
+Özelliği anahtar olarak DWORD olarak ayarlayın.
 
 ```
 HRESULT SetDwordValue(
@@ -402,36 +403,36 @@ HRESULT SetDwordValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
 *dwVal*<br/>
-Ayarlağacak öbek değerini belirtir.
+Ayarlanacak öbek değerini belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsetfiletimevalue"></a><a name="setfiletimevalue"></a>CMFCFilterChunkValueImpl::SetFileTimeValue
+## <a name="cmfcfilterchunkvalueimplsetfiletimevalue"></a><a name="setfiletimevalue"></a> CMFCFilterChunkValueImpl:: SetFileTimeValue
 
-Özelliği bir dosya zamanı için anahtarla ayarlayın.
+Özelliği anahtar olarak bir filetime olarak ayarlayın.
 
 ```
 HRESULT SetFileTimeValue(
@@ -446,36 +447,36 @@ HRESULT SetFileTimeValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
 *dtVal*<br/>
-Ayarlağacak öbek değerini belirtir.
+Ayarlanacak öbek değerini belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsetint64value"></a><a name="setint64value"></a>CMFCFilterChunkValueImpl::SetInt64Value
+## <a name="cmfcfilterchunkvalueimplsetint64value"></a><a name="setint64value"></a> CMFCFilterChunkValueImpl:: SetInt64Value
 
-Özelliği bir int64'e anahtarla ayarlayın.
+Özelliği anahtar olarak bir Int64 olarak ayarlayın.
 
 ```
 HRESULT SetInt64Value(
@@ -490,36 +491,36 @@ HRESULT SetInt64Value(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
 *nVal*<br/>
-Ayarlağacak öbek değerini belirtir.
+Ayarlanacak öbek değerini belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsetintvalue"></a><a name="setintvalue"></a>CMFCFilterChunkValueImpl::SetIntValue
+## <a name="cmfcfilterchunkvalueimplsetintvalue"></a><a name="setintvalue"></a> CMFCFilterChunkValueImpl:: SetIntValue
 
-Özelliği bir int'e anahtarla ayarlayın.
+Özelliği anahtar olarak bir int olarak ayarlayın.
 
 ```
 HRESULT SetIntValue(
@@ -534,36 +535,36 @@ HRESULT SetIntValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
 *nVal*<br/>
-Ayarlağacak öbek değerini belirtir.
+Ayarlanacak öbek değerini belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsetlongvalue"></a><a name="setlongvalue"></a>CMFCFilterChunkValueImpl::SetLongValue
+## <a name="cmfcfilterchunkvalueimplsetlongvalue"></a><a name="setlongvalue"></a> CMFCFilterChunkValueImpl:: SetLongValue
 
-Özelliği bir UZUN'a göre ayarlayın.
+Özelliği anahtara göre bir LONG olarak ayarlayın.
 
 ```
 HRESULT SetLongValue(
@@ -578,36 +579,36 @@ HRESULT SetLongValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
 *lVal*<br/>
-Ayarlağacak öbek değerini belirtir.
+Ayarlanacak öbek değerini belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsetsystemtimevalue"></a><a name="setsystemtimevalue"></a>CMFCFilterChunkValueImpl::SetSystemTimeValue
+## <a name="cmfcfilterchunkvalueimplsetsystemtimevalue"></a><a name="setsystemtimevalue"></a> CMFCFilterChunkValueImpl:: SetSystemTimeValue
 
-Özelliği bir SystemTime'a göre ayarlar.
+Özelliği anahtara göre bir SystemTime olarak ayarlar.
 
 ```
 HRESULT SetSystemTimeValue(
@@ -622,36 +623,36 @@ HRESULT SetSystemTimeValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
-*Systemtıme*<br/>
-Ayarlağacak öbek değerini belirtir.
+*SYSTEMTIME*<br/>
+Ayarlanacak öbek değerini belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 
-## <a name="cmfcfilterchunkvalueimplsettextvalue"></a><a name="settextvalue"></a>CMFCFilterChunkValueImpl::SetTextValue
+## <a name="cmfcfilterchunkvalueimplsettextvalue"></a><a name="settextvalue"></a> CMFCFilterChunkValueImpl:: SetTextValue
 
-Özelliği bir Unicode dizesine göre ayarlar.
+Özelliği, bir Unicode dizesine anahtar olarak ayarlar.
 
 ```
 HRESULT SetTextValue(
@@ -666,30 +667,30 @@ HRESULT SetTextValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*Pkey*<br/>
-Özellik anahtarını belirtir.
+*PKEY*<br/>
+Bir özellik anahtarı belirtir.
 
 *pszValue*<br/>
-Ayarlağacak öbek değerini belirtir.
+Ayarlanacak öbek değerini belirtir.
 
 *chunkType*<br/>
-Bayraklar, bu parçanın bir metin türü mü yoksa değer türü özelliği mi içerdiğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
+Bayraklar, bu öbekte bir metin türü veya değer türü özelliği içerip içermediğini gösterir. Bayrak değerleri CHUNKSTATE numaralandırmasından alınır.
 
-*Yerel ayar*<br/>
-Bir metin yığınıyla ilişkili dil ve alt dil. Yığın yerel durum, belge dizini tarafından metnin düzgün sözcük bölmesini gerçekleştirmek için kullanılır. Öbek ne metin türü ne de veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan bir değer türüyse, bu alan yoksayılır.
+*locale*<br/>
+Metin öbeğiyle ilişkili dil ve alt dil. Öbek yerel ayarı, metnin doğru sözcük bölümünü gerçekleştirmek için belge Dizin oluşturucular tarafından kullanılır. Öbek metin türü veya veri türü VT_LPWSTR, VT_LPSTR veya VT_BSTR olan değer türünde değilse, bu alan yok sayılır.
 
 *cwcLenSource*<br/>
-Geçerli öbektilmiş kaynak metnin karakterleri uzunluk. Sıfır değeri, kaynak metin ve türetilen metin arasındaki karaktere göre yazışmaları belirtir. Sıfır olmayan bir değer, böyle bir doğrudan yazışmanın olmadığı anlamına gelir.
+Geçerli öbekten türetildiği kaynak metnin karakterlerinde uzunluğu. Sıfır değeri, kaynak metin ile türetilmiş metin arasındaki karakterle karakter yazışmaları anlamına gelir. Sıfır dışında bir değer, böyle bir doğrudan yazışın bulunmadığı anlamına gelir.
 
 *cwcStartSource*<br/>
-Türemiş bir öbek için kaynak metnin kaynak öbekte başladığı ofset.
+Türetilmiş bir öbek için kaynak metnin kaynak öbekte başladığı konum.
 
 *chunkBreakType*<br/>
-Önceki parçayı geçerli yığından ayıran kesme türü. Değerler numaralandırma CHUNK_BREAKTYPE.
+Önceki öbeği geçerli öbekten ayıran kesmenin türü. Değerler CHUNK_BREAKTYPE numaralandırmadır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK başarılı olursa; aksi takdirde bir hata kodu.
+Başarılı olursa S_OK; Aksi takdirde hata kodu.
 
 ### <a name="remarks"></a>Açıklamalar
 

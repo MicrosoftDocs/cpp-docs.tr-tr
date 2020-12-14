@@ -1,4 +1,5 @@
 ---
+description: ': TOOLTIPTEXT yapısı hakkında daha fazla bilgi edinin'
 title: TOOLTIPTEXT Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - TOOLTIPTEXT structure [MFC]
 - tool tips [MFC], notifications
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-ms.openlocfilehash: 80b95225a277a7985c30e5ea453597b06e501753
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 077d4c27392b626a0e9665851eadf227245029b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513317"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264303"
 ---
 # <a name="tooltiptext-structure"></a>TOOLTIPTEXT Yapısı
 
@@ -31,7 +32,7 @@ typedef struct {
 ```
 
 *görüntüsünde*<br/>
-Metin gerektiren aracı tanımlar. Bu yapının yalnızca ihtiyaç duyduğunuz tek üyesi, denetimin komut KIMLIĞIDIR. Denetimin komut KIMLIĞI, sözdizimiyle `hdr.idFrom`erişilen, **nmhdr** yapısının *ıdfrom* üyesi içinde olacaktır. **Nmhdr** yapısının üyelerinin tartışılması için bkz. [nmhdr](/windows/win32/api/richedit/ns-richedit-nmhdr) .
+Metin gerektiren aracı tanımlar. Bu yapının yalnızca ihtiyaç duyduğunuz tek üyesi, denetimin komut KIMLIĞIDIR. Denetimin komut KIMLIĞI, sözdizimiyle erişilen, **nmhdr** yapısının *ıdfrom* üyesi içinde olacaktır `hdr.idFrom` . **Nmhdr** yapısının üyelerinin tartışılması için bkz. [nmhdr](/windows/win32/api/richedit/ns-richedit-nmhdr) .
 
 *lpszText*<br/>
 Bir aracın metnini alacak dizenin adresi.
@@ -42,7 +43,7 @@ Araç ipucu metnini alan arabellek. Bir uygulama, bir dize adresi belirtmeye alt
 *hinst*<br/>
 Araç ipucu metni olarak kullanılacak bir dize içeren örneğin tanıtıcısı. *LpszText* , araç ipucu metninin adresidir, bu üye null olur.
 
-`TTN_NEEDTEXT` Bildirim iletisini işlerken, aşağıdaki yollarla görüntülenecek dizeyi belirtin:
+`TTN_NEEDTEXT`Bildirim iletisini işlerken, aşağıdaki yollarla görüntülenecek dizeyi belirtin:
 
 - Metni *szText* üyesi tarafından belirtilen arabelleğe kopyalayın.
 
@@ -52,4 +53,4 @@ Araç ipucu metni olarak kullanılacak bir dize içeren örneğin tanıtıcısı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+[CFrameWnd 'den türetilmemiş pencerelerin araç Ipuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)

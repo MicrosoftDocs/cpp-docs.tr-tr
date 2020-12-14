@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: olay işleyicisi ekleme'
 title: Olay işleyicisi ekleme
 ms.date: 11/12/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - MSBuild, properties
 - event handler wizard [C++]
 ms.assetid: 050bebf0-a9e0-474b-905c-796fe5ac8fc3
-ms.openlocfilehash: b1928de1aacb9c66c9f784f4eee41ce2c444b820
-ms.sourcegitcommit: 6284bca6549e7b4f199d4560c30df6c1278bd4a0
+ms.openlocfilehash: 0e65d25573b4e16d9815db289401251a6bb2d0f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96188945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265538"
 ---
 # <a name="add-an-event-handler"></a>Olay işleyicisi ekleme
 

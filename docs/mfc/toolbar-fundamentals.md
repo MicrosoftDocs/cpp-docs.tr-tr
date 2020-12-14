@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için bkz. araç çubuğu temelleri
 title: Araç Çubuğu Temelleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,77 +21,77 @@ helpviewer_keywords:
 - frame window classes [MFC], toolbar embedded in
 - LoadToolBar method [MFC]
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
-ms.openlocfilehash: d4e8793337beb2eed533fe04daf549ec21efc61d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ed52c5878482f2ff0fa1c31a133fd2948d21a76e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264394"
 ---
 # <a name="toolbar-fundamentals"></a>Araç Çubuğu Temelleri
 
-Bu makalede, Uygulama Sihirbazı'nda bir seçenek seçerek uygulamanız için varsayılan araç çubuğu eklemenize olanak tanıyan temel MFC uygulaması açıklanmaktadır. Ele alınan konular:
+Bu makalede, uygulama sihirbazında bir seçenek belirleyerek uygulamanıza varsayılan bir araç çubuğu eklemenize olanak sağlayan temel MFC uygulaması açıklanmaktadır. Ele alınan konular:
 
 - [Uygulama Sihirbazı araç çubuğu seçeneği](#_core_the_appwizard_toolbar_option)
 
 - [Koddaki araç çubuğu](#_core_the_toolbar_in_code)
 
-- [Araç çubuğu kaynağını düzenleme](#_core_editing_the_toolbar_resource)
+- [Araç çubuğu kaynağını Düzenle](#_core_editing_the_toolbar_resource)
 
 - [Birden çok araç çubuğu](#_core_multiple_toolbars)
 
-## <a name="the-application-wizard-toolbar-option"></a><a name="_core_the_appwizard_toolbar_option"></a>Uygulama Sihirbazı Araç Çubuğu Seçeneği
+## <a name="the-application-wizard-toolbar-option"></a><a name="_core_the_appwizard_toolbar_option"></a> Uygulama Sihirbazı araç çubuğu seçeneği
 
-Varsayılan düğmeleri içeren tek bir araç çubuğu almak için, Kullanıcı Arabirimi Özellikleri etiketli sayfada Standart Yerleştirme araç çubuğu seçeneğini belirleyin. Bu, uygulamanıza şu kodları ekler:
+Varsayılan düğmelerle tek bir araç çubuğu almak için, Kullanıcı arabirimi özellikleri etiketli sayfada Standart yerleştirme araç çubuğu seçeneğini belirleyin. Bu, uygulamanıza kod ekler:
 
 - Araç çubuğu nesnesini oluşturur.
 
-- Araç çubuğunu, kenetlenme veya yüzdürme yeteneği de dahil olmak üzere yönetir.
+- Araç çubuğunu, kayan nokta veya kaydırma özelliği de dahil olmak üzere yönetir.
 
-## <a name="the-toolbar-in-code"></a><a name="_core_the_toolbar_in_code"></a>Koddaki Araç Çubuğu
+## <a name="the-toolbar-in-code"></a><a name="_core_the_toolbar_in_code"></a> Koddaki araç çubuğu
 
-Araç çubuğu, uygulamanızın sınıfının veri üyesi olarak bildirilen `CMainFrame` bir [CToolBar](../mfc/reference/ctoolbar-class.md) nesnesidir. Başka bir deyişle, araç çubuğu nesnesi ana çerçeve penceresi nesnesine katıştırılır. Bu, Çerçeve penceresi oluşturduğunda MFC'nin araç çubuğunu oluşturduğu ve çerçeve penceresini yok ettiğinde araç çubuğunu yok ettiği anlamına gelir. Birden çok belge arabirimi (MDI) uygulaması için aşağıdaki kısmi sınıf bildirimi, gömülü bir araç çubuğu ve katıştırılmış durum çubuğu için veri üyelerini gösterir. Ayrıca `OnCreate` üye işlevin geçersiz kılma gösterir.
+Araç çubuğu, uygulamanızın sınıfının veri üyesi olarak belirtilen bir [CToolBar](../mfc/reference/ctoolbar-class.md) nesnesidir `CMainFrame` . Diğer bir deyişle, araç çubuğu nesnesi ana çerçeve pencere nesnesine katıştırılır. Bu, MFC 'nin çerçeve penceresini oluşturduğunda araç çubuğunu oluşturduğu ve çerçeve penceresini yok etmek için araç çubuğunu yok eden bir anlamına gelir. Birden çok belge arabirimi (MDI) uygulaması için aşağıdaki kısmi sınıf bildirimi, katıştırılmış bir araç çubuğu ve katıştırılmış durum çubuğu için veri üyelerini gösterir. Ayrıca üye işlevin geçersiz kılmasını gösterir `OnCreate` .
 
 [!code-cpp[NVC_MFCListView#6](../atl/reference/codesnippet/cpp/toolbar-fundamentals_1.h)]
 
-Araç çubuğu oluşturma `CMainFrame::OnCreate`. MFC, çerçeve için pencereyi oluşturduktan sonra ancak görünür hale gelmeden önce [OnCreate'i](../mfc/reference/cwnd-class.md#oncreate) çağırır. Uygulama `OnCreate` Sihirbazı'nın oluşturduğu varsayılan, aşağıdaki araç çubuğu görevlerini yapar:
+Araç çubuğu oluşturma içinde oluşur `CMainFrame::OnCreate` . MFC, çerçeve için pencere oluşturduktan sonra, ancak görünür hale gelmeden önce [OnCreate](../mfc/reference/cwnd-class.md#oncreate) yöntemini çağırır. `OnCreate`Uygulama Sihirbazı 'nın oluşturduğu varsayılan değer aşağıdaki araç çubuğu görevlerini yapar:
 
-1. Alttaki `CToolBar` [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesini oluşturmak için nesnenin [Oluştur](../mfc/reference/ctoolbar-class.md#create) üye işlevini çağırır.
+1. `CToolBar`Temel [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesini oluşturmak Için nesnenin üye [Oluştur](../mfc/reference/ctoolbar-class.md#create) işlevini çağırır.
 
-1. Araç çubuğu kaynak bilgilerini yüklemek için [LoadToolBar'ı](../mfc/reference/ctoolbar-class.md#loadtoolbar) çağırır.
+1. Araç çubuğu kaynak bilgilerini yüklemek için [LoadToolBar](../mfc/reference/ctoolbar-class.md#loadtoolbar) 'ı çağırır.
 
-1. Yerleştirme, kayan ve takım uçlarını etkinleştirmek için işlevleri çağırır. Bu aramalar hakkında ayrıntılı bilgi için, [docking ve Kayan Araç Çubukları](../mfc/docking-and-floating-toolbars.md)makalesine bakın.
+1. Yerleştirme, kayan ve araç ipuçlarını etkinleştirmek için işlevleri çağırır. Bu çağrılar hakkında daha fazla bilgi için, bkz. [yerleştirme ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md).
 
 > [!NOTE]
-> MFC Genel örnek [DOCKTOOL](../overview/visual-cpp-samples.md) hem eski hem de yeni MFC araç çubuklarının çizimlerini içerir. Kullanılan `COldToolbar` araç çubukları, adım 2'deki `LoadBitmap` aramaları `LoadToolBar`(yerine) ve `SetButtons`. Yeni araç çubukları için `LoadToolBar`aramalar gerektirir.
+> MFC genel örnek [Dockaracı](../overview/visual-cpp-samples.md) hem eski hem de yeni MFC araç çubuklarının çizimlerini içerir. Kullanan araç çubukları, `COldToolbar` Adım 2 ' de `LoadBitmap` (yerine) ve ile çağrı gerektirir `LoadToolBar` `SetButtons` . Yeni araç çubukları için çağrılar gerektirir `LoadToolBar` .
 
-Yerleştirme, kayan ve araç ipuçları aramaları isteğe bağlıdır. `OnCreate` İsterseniz bu satırları kaldırabilirsiniz. Sonuç, sabit kalan, yüzdürülemeyen veya yeniden sabitleyemeyen ve araç ipuçlarını görüntüleyemeyen bir araç çubuğudur.
+Yerleştirme, kayan ve araç ipuçları çağrıları isteğe bağlıdır. İsterseniz bu satırları kaldırabilirsiniz `OnCreate` . Sonuç düzeltilmeyen, kaydırma yapılamıyor veya yeniden yuvaya yerleştirilemiyor ve araç ipuçları gösterilemiyor.
 
-## <a name="editing-the-toolbar-resource"></a><a name="_core_editing_the_toolbar_resource"></a>Araç Çubuğu Kaynağını Düzenleme
+## <a name="editing-the-toolbar-resource"></a><a name="_core_editing_the_toolbar_resource"></a> Araç çubuğu kaynağını Düzenle
 
-Uygulama Sihirbazı ile elde ettiğiniz varsayılan araç çubuğu, MFC sürüm 4.0'da tanıtılan **RT_TOOLBAR** özel bir kaynağa dayanır. Bu kaynağı araç çubuğu [düzenleyicisi](../windows/toolbar-editor.md)ile birlikte edinebilirsiniz. Düzenleyici, düğmeleri kolayca eklemenizi, silmenizi ve yeniden düzenlemenizi sağlar. Visual C++'daki genel grafik düzenleyicisine çok benzeyen düğmeler için bir grafik düzenleyicisi içerir. Visual C++'ın önceki sürümlerinde araç çubukları düzenlediyseniz, görevi artık çok daha kolay bulacaksınız.
+Uygulama Sihirbazı ile aldığınız varsayılan araç, MFC sürüm 4,0 ' de tanıtılan **rt_toolbar** özel bir kaynağı temel alır. Bu kaynağı [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)ile düzenleyebilirsiniz. Düzenleyici, düğmeleri kolayca eklemenizi, silmenizi ve yeniden düzenlemenizi sağlar. Visual C++, genel grafik düzenleyicisine çok benzer düğmeler için bir grafik düzenleyici içerir. Önceki Visual C++ sürümlerindeki araç çubuklarını düzenlediyseniz, görevi daha kolay bulacaksınız.
 
-Araç çubuğu düğmesini bir komuta bağlamak için düğmeye bir komut `ID_MYCOMMAND`kimliği verirsiniz. Araç çubuğu düzenleyicisinde düğmenin özellik sayfasında komut kimliğini belirtin. Ardından komut için bir işleyici işlevi oluşturun (daha fazla bilgi için [İşlevlere İletileri Eşleme'ye](../mfc/reference/mapping-messages-to-functions.md) bakın).
+Bir araç çubuğu düğmesini komuta bağlamak için, düğme gibi bir komut KIMLIĞI verirsiniz `ID_MYCOMMAND` . Araç çubuğu düzenleyicisindeki düğme Özellik sayfasında komut KIMLIĞINI belirtin. Ardından komut için bir işleyici işlevi oluşturun (daha fazla bilgi için bkz. [Iletileri IŞLEVLERE eşleme](../mfc/reference/mapping-messages-to-functions.md) .).
 
-Yeni [CToolBar](../mfc/reference/ctoolbar-class.md) üye işlevleri **RT_TOOLBAR** kaynağı ile çalışır. [LoadToolBar](../mfc/reference/ctoolbar-class.md#loadtoolbar) artık araç çubuğu düğme görüntülerinin bit haritasını yüklemek için [LoadBitmap'in](../mfc/reference/ctoolbar-class.md#loadbitmap) yerini alır ve düğme stillerini ayarlamak ve bitmap görüntüleriyle düğmeleri bağlamak için [Düğmeleri Ayarlar.](../mfc/reference/ctoolbar-class.md#setbuttons)
+Yeni [CToolBar](../mfc/reference/ctoolbar-class.md) üye işlevleri **rt_toolbar** kaynağıyla çalışır. [LoadToolBar](../mfc/reference/ctoolbar-class.md#loadtoolbar) artık, araç çubuğu düğme görüntülerinin bit eşlemini yüklemek Için [LoadBitmap](../mfc/reference/ctoolbar-class.md#loadbitmap) 'in yerini [alır ve düğme](../mfc/reference/ctoolbar-class.md#setbuttons) stillerini ve bağlama düğmelerini bit eşlem görüntülerle bağlayın.
 
-Araç çubuğu düzenleyicisini kullanma hakkında ayrıntılı bilgi için [Araç Çubuğu Düzenleyicisi'ne](../windows/toolbar-editor.md)bakın.
+Araç çubuğu düzenleyicisini kullanma hakkında ayrıntılı bilgi için bkz. [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md).
 
-## <a name="multiple-toolbars"></a><a name="_core_multiple_toolbars"></a>Birden Çok Araç Çubuğu
+## <a name="multiple-toolbars"></a><a name="_core_multiple_toolbars"></a> Birden çok araç çubuğu
 
-Uygulama Sihirbazı size bir varsayılan araç çubuğu sağlar. Uygulamanızda birden fazla araç çubuğuna ihtiyacınız varsa, varsayılan araç çubuğu için sihirbaz tarafından oluşturulan kodu temel alan ek araç çubukları için kodunuzu modelleyebilirsiniz.
+Uygulama Sihirbazı size bir varsayılan araç çubuğu sağlar. Uygulamanızda birden fazla araç çubuğuna ihtiyacınız varsa, varsayılan araç çubuğunun sihirbaz tarafından oluşturulan koduna bağlı olarak kodunuzu ek araç çubukları için modelleyebilirsiniz.
 
-Bir komutun sonucu olarak bir araç çubuğu görüntülemek istiyorsanız, şunları yapmanız gerekir:
+Bir komut çubuğunu bir komutun sonucu olarak göstermek istiyorsanız şunları yapmanız gerekir:
 
-- Araç çubuğu düzenleyicisi ile yeni bir araç `OnCreate` çubuğu kaynağı oluşturun ve [LoadToolbar](../mfc/reference/ctoolbar-class.md#loadtoolbar) üye işleviile yükleyin.
+- Araç Çubuğu Düzenleyicisi ile yeni bir araç çubuğu kaynağı oluşturun ve bunu `OnCreate` [LoadToolBar](../mfc/reference/ctoolbar-class.md#loadtoolbar) üye işleviyle birlikte yükleyin.
 
-- Ana çerçeve pencere sınıfınıza yeni bir [CToolBar](../mfc/reference/ctoolbar-class.md) nesnesi yerleştirin.
+- Ana çerçeve pencere sınıfınıza yeni bir [CToolBar](../mfc/reference/ctoolbar-class.md) nesnesi ekleyin.
 
-- Araç çubuğunu `OnCreate` sabitlemek veya yüzdürmek, stillerini ayarlamak ve benzeri şekilde uygun işlev çağrıları yapın.
+- `OnCreate`Araç çubuğunu sabitlemek veya kayan hale getirmek, stillerini ayarlamak vb. için, içinde uygun işlevi çağırır.
 
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilmek istiyorum
+### <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
-- [MFC Araç Çubuğu Uygulaması (araç çubuklarına genel bakış bilgileri)](../mfc/mfc-toolbar-implementation.md)
+- [MFC araç çubuğu uygulama (araç çubuklarında genel bakış bilgileri)](../mfc/mfc-toolbar-implementation.md)
 
 - [Yerleşen ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md)
 
@@ -104,4 +105,4 @@ Bir komutun sonucu olarak bir araç çubuğu görüntülemek istiyorsanız, şun
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Araç Çubuğu Uygulaması](../mfc/mfc-toolbar-implementation.md)
+[MFC araç çubuğu uygulama](../mfc/mfc-toolbar-implementation.md)
