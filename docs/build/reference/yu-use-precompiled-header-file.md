@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: `/Yu` (önceden derlenmiş üst bilgi dosyasını kullan)'
 title: /Yu (Önceden derlenmiş başlık dosyasını kullanma)
 ms.date: 07/31/2020
 f1_keywords:
@@ -11,14 +12,14 @@ helpviewer_keywords:
 - .pch files, use existing
 - precompiled header files, use existing
 ms.assetid: 24f1bd0e-b624-4296-a17e-d4b53e374e1f
-ms.openlocfilehash: 8cccce39949f23e4ceb72807ecaef3597ab733c4
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 7076a3a4dd9183a3a0072fa6211acbb0b95a4865
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229970"
 ---
-# <a name="yu-use-precompiled-header-file"></a>`/Yu`(Önceden derlenmiş üst bilgi dosyası kullan)
+# <a name="yu-use-precompiled-header-file"></a>`/Yu` (Önceden derlenmiş üst bilgi dosyası kullan)
 
 Derleyiciye geçerli derlemede varolan önceden derlenmiş üst bilgi ( *`.pch`* ) dosyasını kullanmasını söyler.
 
@@ -39,21 +40,21 @@ Ekleme dosyasının adı, **`/Yc`** ön derlenmiş üstbilgiyi oluşturan ve **`
 
 *`.pch`* Dosyanın kullanılarak oluşturulmuş olması gerekir **`/Yc`** .
 
-Derleyici. h dosyasından önce oluşan tüm kodu önceden derlenmiş olarak değerlendirir. Yalnızca `#include` dosyayla ilişkili yönergenin ötesine atlar *`.h`* , dosyasında bulunan kodu kullanır *`.pch`* ve sonra tüm kodu dosya *adı*sonra derler.
+Derleyici. h dosyasından önce oluşan tüm kodu önceden derlenmiş olarak değerlendirir. Yalnızca `#include` dosyayla ilişkili yönergenin ötesine atlar *`.h`* , dosyasında bulunan kodu kullanır *`.pch`* ve sonra tüm kodu dosya *adı* sonra derler.
 
-Komut satırında, **`/Yu`** ve *dosya adı*arasında boşluk yapılmasına izin verilmez.
+Komut satırında, **`/Yu`** ve *dosya adı* arasında boşluk yapılmasına izin verilmez.
 
 **`/Yu`** Bir dosya adı olmadan seçeneği belirttiğinizde, kaynak programınızın [`#pragma hdrstop`](../../preprocessor/hdrstop.md) ön derlenmiş üstbilginin dosya adını belirten bir pragma içermesi gerekir *`.pch`* . Bu durumda, derleyici tarafından adlandırılan önceden derlenmiş üstbilgiyi ( *`.pch`* dosya) kullanır [`/Fp (Name .pch file)`](fp-name-dot-pch-file.md) . Derleyici, bu pragma 'un konumunu atlar ve derlenen durumu belirtilen ön derlenmiş üstbilgi dosyasından geri yükler. Sonra yalnızca pragma 'u izleyen kodu derler. `#pragma hdrstop`Bir dosya adı belirtmezse, derleyici kaynak dosyanın temel adından türetilmiş bir ada sahip bir dosya arar *`.pch`* . Ayrıca, **`/Fp`** seçeneğini farklı bir dosya belirtmek için de kullanabilirsiniz *`.pch`* .
 
 **`/Yu`** Bir dosya adı olmadan seçeneğini belirtirseniz ve bir pragma belirtmeksizin `hdrstop` , bir hata iletisi oluşturulur ve derleme başarısız olur.
 
-Dosya adı **`/Yc`** _filename_ ve **`/Yu`** _Dosya_ adı seçenekleri aynı komut satırında gerçekleşse ve her ikisi de aynı dosya adına başvuru yaptıysanız, **`/Yc`** _dosya adı_ öncelik kazanır, adlandırılmış dosya dahil olmak üzere tüm kodun ön derlemesini önder. Bu özellik, makefiles 'ın yazılmasını basitleştirir.
+Dosya adı **`/Yc`**  ve **`/Yu`** _Dosya_ adı seçenekleri aynı komut satırında gerçekleşse ve her ikisi de aynı dosya adına başvuru yaptıysanız, **`/Yc`** _dosya adı_ öncelik kazanır, adlandırılmış dosya dahil olmak üzere tüm kodun ön derlemesini önder. Bu özellik, makefiles 'ın yazılmasını basitleştirir.
 
 *`.pch`* Dosyalar makine ortamı ve programla ilgili bellek adres bilgileri hakkında bilgi içerdiğinden, yalnızca *`.pch`* oluşturulduğu makinede bir dosya kullanmanız gerekir.
 
 Önceden derlenmiş üstbilgiler hakkında daha fazla bilgi için bkz.
 
-- [`/Y`(Önceden derlenmiş üst bilgiler)](y-precompiled-headers.md)
+- [`/Y` (Önceden derlenmiş üst bilgiler)](y-precompiled-headers.md)
 
 - [Önceden derlenmiş üst bilgi dosyaları](../creating-precompiled-header-files.md)
 

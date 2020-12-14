@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/ZD (önceden derlenmiş üst bilgi bellek ayırma sınırını belirt)
 title: /Zm (Önceden Derlenmiş Üst Bilgi Bellek Ayırma Sınırını Belirt)
 ms.date: 03/08/2019
 f1_keywords:
@@ -14,43 +15,43 @@ helpviewer_keywords:
 - memory allocation, Memory Allocation Limit compiler option
 - -Zm compiler option [C++]
 ms.assetid: 94c77d5e-6672-46a7-92e0-3f69e277727d
-ms.openlocfilehash: 09df8e1ee9a97289e29e1191e8c1585580435b79
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 624d8926961d9ca3d32ef204b70683c14dc3197f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315280"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224393"
 ---
 # <a name="zm-specify-precompiled-header-memory-allocation-limit"></a>/Zm (Önceden Derlenmiş Üst Bilgi Bellek Ayırma Sınırını Belirt)
 
 Önceden derlenmiş üstbilgileri oluşturmak için derleyicinin ayırdığı bellek miktarını belirler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Söz dizimi
 
 ```
 /Zmfactor
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Bağımsız değişkenler
 
-*faktörü*<br/>
+*çarpan*<br/>
 Önceden derlenmiş üstbilgileri oluşturmak için derleyicinin kullandığı bellek miktarını belirleyen bir ölçekleme faktörü.
 
-*Faktörü* bağımsız değişken derleyici tarafından tanımlanan iş arabelleğinin varsayılan boyutunun yüzdesidir. Varsayılan değer olan *faktörü* 100 (yüzde) olmakla birlikte daha büyük veya daha küçük miktarları belirtebilirsiniz.
+*Factor* bağımsız değişkeni, derleyici tanımlı bir iş arabelleğinin varsayılan boyutunun yüzdesidir. Varsayılan *faktör* değeri 100 ' dir (yüzde), ancak daha büyük veya daha küçük miktarlar belirtebilirsiniz.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio 2015 öncesi sürümlerinde, C++ Derleyici çeşitli ayrı yığınlar kullanıyordu ve her birinin sınırı sonsuzdu. Şu anda, derleyici dinamik olarak yığınları toplam yığın boyutu sınırına kadar gerekli olarak büyür ve oluşturan birden çok adres aralığı önceden derlenmiş üst bilgi sağlar. Sonuç olarak, **/Zm** derleyici seçeneği nadiren gereklidir.
+Visual Studio 2015 ' den önceki sürümlerde, C++ derleyicisi çeşitli ayrı yığınlar kullanıyordu ve her birinin sınırlı bir limiti vardı. Şu anda derleyici, en fazla bir toplam yığın boyutu sınırına kadar gerekli olan yığınların dinamik olarak büyümesi ve önceden derlenmiş üstbilginin birden çok adres aralığını üstlenebilmesi için izin verir. Sonuç olarak, **/zı** derleyici seçeneği nadiren gereklidir.
 
-Derleyicinin yığın alanı kalmadı ve [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) kullanırken bir hata iletisi **/Zm** derleyici seçeneği, çok fazla bellek ayırmış olabilirsiniz. Kaldırmayı düşünün **/Zm** seçeneği.
+Derleyicinin yığın alanı tükeniyor ve **/ZD** derleyici seçeneğini kullandığınızda [C1060](../../error-messages/compiler-errors-1/fatal-error-c1060.md) hata iletisini yayıyorsa, çok fazla bellek ayırmış olabilirsiniz. **/ZD** seçeneğini kaldırmayı düşünün.
 
-Derleyici [C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md) hata iletisini yayarsa, [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md) iletiyi belirtir *faktörü* kullanarakyenidenderlemeyaptığınızdakullanılmakiçinbağımsızdeğişken **/Zm** derleyici seçeneği. Bu ileti yalnızca bir ön derlenmiş üstbilgi kullandığında önemlidir `#pragma hdrstop`. İsteğe bağlı olarak diğer durumlarda, Windows sanal bellek baskısı sorunları ve kullanmak için öneri nedeni sahte bir hata olduğunu **/Zm** seçeneği yoksayıldı. Bunun yerine, kullanırken paralel işlem sayısını azaltmayı göz önünde bulundurun **/maxcpucount** MSBUILD seçeneği. EXE birlikte **/MP** CL seçeneği. EXE. Daha fazla bilgi için [önceden derlenmiş üst bilgi (PCH) sorunları ve önerilerini](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/).
+Derleyici [C1076](../../error-messages/compiler-errors-1/fatal-error-c1076.md) hata iletisini yayıyorsa, bir [C3859](../../error-messages/compiler-errors-2/compiler-error-c3859.md) iletisi, **/ZD** derleyici seçeneğini kullanarak yeniden derleme yaptığınızda kullanılacak *faktör* bağımsız değişkenini belirtir. Bu ileti yalnızca önceden derlenmiş bir üstbilgi kullandığında önemlidir `#pragma hdrstop` . Diğer durumlarda, Windows sanal bellek baskısı sorunlarından kaynaklanan ve **/zı** seçeneğini kullanma önerisi göz ardı edilebilir bir hatadır. Bunun yerine, CL.EXE için **/MP** seçeneği ile birlikte MSBUILD.EXE için **/maxcpucount** seçeneğini kullanırken paralel işlemlerin sayısını azaltmayı göz önünde bulundurun. Daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi (pch) sorunları ve önerileri](https://devblogs.microsoft.com/cppblog/precompiled-header-pch-issues-and-recommendations/).
 
-Aşağıdaki tabloda nasıl *faktörü* bağımsız değişkeni varsayılan Ön derlenmiş üstbilgi arabelleğinin boyut olan 75 MB olduğunu varsayarsanız bellek ayırma sınırını etkiler.
+Aşağıdaki tabloda, varsayılan ön derlenmiş üstbilgi arabelleğinin boyutunun 75 MB olduğunu varsaydıysanız, *faktör* bağımsız değişkeninin bellek ayırma sınırını nasıl etkilediği gösterilmektedir.
 
-|Değeri *faktörü*|Bellek ayırma sınırı|
+|*Faktör* değeri|Bellek ayırma sınırı|
 |-----------------------|-----------------------------|
-|10|7.5 MB|
+|10|7,5 MB|
 |100|75 MB|
 |200|150 MB|
 |1000|750 MB|
@@ -60,11 +61,11 @@ Aşağıdaki tabloda nasıl *faktörü* bağımsız değişkeni varsayılan Ön 
 
 ### <a name="to-set-the-zm-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamında /Zm derleyici seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Gezinti bölmesinde seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı**.
+1. Gezinti bölmesinde, **yapılandırma özellikleri**  >  **C/C++**  >  **komut satırı**' nı seçin.
 
-1. Girin **/Zm** derleyici seçeneğini **ek seçenekler** kutusu.
+1. **Ek seçenekler** kutusuna **/ZD** derleyici seçeneğini girin.
 
 ### <a name="to-set-the-zm-compiler-option-programmatically"></a>/Zm derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -72,5 +73,5 @@ Aşağıdaki tabloda nasıl *faktörü* bağımsız değişkeni varsayılan Ön 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

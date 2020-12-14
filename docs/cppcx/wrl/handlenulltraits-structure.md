@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Handlenullnitelikler yapısı'
 title: HANDLENullTraits Yapısı
 ms.date: 09/27/2018
 ms.topic: reference
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::Close method
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLENullTraits::GetInvalidValue method
 ms.assetid: 88a29a14-c516-40cb-a0ca-ee897a668623
-ms.openlocfilehash: a7ce730b8d723a839c5b509c825cff84111ca613
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 14d5eaab36be24b5450b66c35c9cf5cbba39ea4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226925"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229255"
 ---
 # <a name="handlenulltraits-structure"></a>HANDLENullTraits Yapısı
 
 Başlatılmamış tanıtıcının ortak özelliklerini tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct HANDLENullTraits;
@@ -53,7 +54,7 @@ Ad                                                  | Açıklama
 
 **Ad alanı:** Microsoft:: WRL:: sarmalayıcılar:: Handlenitelikler
 
-## <a name="handlenulltraitsclose"></a><a name="close"></a>Handlenullnitelikler:: Close
+## <a name="handlenulltraitsclose"></a><a name="close"></a> Handlenullnitelikler:: Close
 
 Belirtilen tanıtıcıyı kapatır.
 
@@ -65,14 +66,14 @@ inline static bool Close(
 
 ### <a name="parameters"></a>Parametreler
 
-*olsun*<br/>
+*h*<br/>
 Kapatılacak tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 **`true`** tanıtıcı *h* başarıyla kapatılırsa Aksi takdirde, **`false`** .
 
-## <a name="handlenulltraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>Handlenullnitelikler:: GetInvalidValue
+## <a name="handlenulltraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a> Handlenullnitelikler:: GetInvalidValue
 
 Geçersiz bir tanıtıcıyı temsil eder.
 

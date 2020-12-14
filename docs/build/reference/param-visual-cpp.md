@@ -1,5 +1,6 @@
 ---
-title: '&lt;param > (C++ belgeleri açıklamaları)'
+description: 'Hakkında daha fazla bilgi edinin: &lt; param&gt;'
+title: '&lt;param> (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - param
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - param C++ XML tag
 - <param> C++ XML tag
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb
-ms.openlocfilehash: d8ea4feddbe1ec2d5898f8ef698cc2d69d255933
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c3baabc6aef9a4cabdd7c7a9023fb628bd53793
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320012"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226149"
 ---
-# <a name="ltparamgt"></a>&lt;param&gt;
+# <a name="ltparamgt"></a>&lt;larına&gt;
 
-\<Param > Etiket kullanılmalıdır yöntemi bildirimi için açıklama parametrelerden biri yöntemi tanımlamak için.
+\<param>Yöntemi, yöntemin parametrelerinden birini açıklayacak bir yöntem bildirimine ilişkin açıklamada kullanılmalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,17 +28,17 @@ ms.locfileid: "62320012"
 
 #### <a name="parameters"></a>Parametreler
 
-*Adı*<br/>
-Bir yöntem parametresi adı.  Ad, tek veya çift tırnak içine alın.  Değil bulamazsa, derleyici bir uyarı verir `name`.
+*ada*<br/>
+Bir yöntem parametresinin adı.  Adı tek veya çift tırnak içine alın.  Derleyici bulamazsa bir uyarı verir `name` .
 
-*Açıklaması*<br/>
-Parametre için bir açıklama.
+*açıklaması*<br/>
+Parametresi için bir açıklama.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Metni \<param > etiketi IntelliSense içinde gösterilecek [Nesne Tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code)ve kod açıklaması Web raporu.
+\<param>Etiketin metni IntelliSense, [nesne tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code)ve kod yorumu Web raporunda görüntülenir.
 
-Derleme [/doc](doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.
+Belge açıklamalarını bir dosyaya işlemek için [/doc](doc-process-documentation-comments-c-cpp.md) ile derleyin.
 
 ## <a name="example"></a>Örnek
 

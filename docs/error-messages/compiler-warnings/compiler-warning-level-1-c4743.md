@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4743'
 title: Derleyici Uyarısı (düzey 1) C4743
 ms.date: 05/13/2019
 f1_keywords:
@@ -6,28 +7,28 @@ f1_keywords:
 helpviewer_keywords:
 - C4743
 ms.assetid: 2ee76ea3-77f3-4c2f-9a57-0751823c89fd
-ms.openlocfilehash: 53ead0e34b55eca44399cee09f1947a12e1eadd3
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: a8c8bcd4ef0e4d7084da34e033be4194da11727f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611836"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228488"
 ---
 # <a name="compiler-warning-level-1-c4743"></a>Derleyici Uyarısı (düzey 1) C4743
 
-'*türü*'başka bir boyutu vardır'*dosya1*'ve'*dosya2*': *numarası* ve *numarası* bayt
+'*Type*', '*FILE1*' ve '*dosya2*' içinde farklı boyuta sahip: *sayı* ve *sayı* baytları
 
-İki dosyalarında tanımlanan ya da başvurulan bir dış değişkenine bu dosyaları farklı türleri vardır ve derleyici, belirlenen değişkenin boyutu *dosya1* değişkenin boyutu farklıdır *dosya2*.
+İki dosyada başvurulan veya tanımlanan bir dış değişken bu dosyalarda farklı türlere sahiptir ve derleyici, *FILE1* içindeki değişken boyutunun *dosya2* içindeki değişkenin boyutundan farklı olduğunu belirledi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu uyarı için yayılabilir, önemli bir durumda olduğundan C++. Ardından bu bildirimler sanal işlevler içeriyorsa ve bildirimleri aynı değilse, iki farklı dosyanın aynı adla aynı türlerini bildirirseniz, derleyici sanal işlev tablolar için uyarı C4744 gönderebilir. Uyarı, aynı türe yönelik iki farklı boyutlardaki sanal işlev tablolar bulunur ve bağlayıcı çalıştırılabilir dosyaya birleştirmek için bunlardan birini seçmeniz gerekir çünkü oluşur.  Bu, yanlış sanal işlevinin çağrılması, programınızda sonuçlanabilir mümkündür.
+Bu uyarının C++ için yayınlanamadığına ilişkin önemli bir durum vardır. Aynı ada sahip aynı adı iki farklı dosyada bildirirseniz, bu bildirimler sanal işlevler içeriyorsa ve bildirimler aynı değilse, derleyici sanal işlev tabloları için uyarı C4744 ' i yayabilir. Aynı tür için iki farklı boyutlu sanal işlev tablosu olduğu ve bağlayıcı çalıştırılabilire eklemek için bunlardan birini seçmesi gerektiği için uyarı oluşur.  Programınızın yanlış sanal işlevi aramasını sağlayabilir.
 
-Bu uyarıyı çözmek için aynı tür tanımını kullanabilir veya değişkenleri ve türleri için farklı adlar kullanın.
+Bu uyarıyı çözümlemek için aynı tür tanımını kullanın veya türler ya da değişkenler için farklı adlar kullanın.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, C4743 oluşturur. Bu derleme için hem dosyaları aynı klasöre yerleştirin ve çalıştırın  
+Aşağıdaki örnek C4743 oluşturur. Derlemek için, her iki dosyayı da aynı klasöre yerleştirin ve ardından Çalıştır  
 
 ```cmd
 cl /EHsc /W1 /GL /O2 C4743a.cpp C4743b.cpp

@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Coelcontrol sınıfı'
 title: Coelcontrol sınıfı
 ms.date: 08/27/2018
 f1_keywords:
@@ -334,12 +335,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 074b0e1df5a8d70c8b32ee03dcb073c26c13be9b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6cc5e1896d186f1fa87eee34565819d518f9d4d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841005"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227552"
 ---
 # <a name="colecontrol-class"></a>Coelcontrol sınıfı
 
@@ -918,7 +919,7 @@ Raporlanan hatanın yardım bağlam KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan davranış, *lpszDescription*içinde yer alan hatanın açıklamasını içeren bir ileti kutusu görüntüler.
+Varsayılan davranış, *lpszDescription* içinde yer alan hatanın açıklamasını içeren bir ileti kutusu görüntüler.
 
 Hataların nasıl görüntülendiğini özelleştirmek için bu işlevi geçersiz kılın.
 
@@ -1502,10 +1503,10 @@ BOOL GetAmbientProperty(
 İstenen çevresel özelliğin dağıtım KIMLIĞI.
 
 *vtProp*<br/>
-*PvProp*içinde döndürülecek değerin türünü belirten bir varyant türü etiketi.
+*PvProp* içinde döndürülecek değerin türünü belirten bir varyant türü etiketi.
 
 *pvProp*<br/>
-Özellik değeri veya dönüş değeri alacak değişkenin adresine yönelik bir işaretçi. Bu işaretçinin gerçek türünün, *vtProp*tarafından belirtilen türle eşleşmesi gerekir.
+Özellik değeri veya dönüş değeri alacak değişkenin adresine yönelik bir işaretçi. Bu işaretçinin gerçek türünün, *vtProp* tarafından belirtilen türle eşleşmesi gerekir.
 
 |vtProp|PvProp türü|
 |------------|--------------------|
@@ -1860,7 +1861,7 @@ OLE denetiminin pencere tutamacı varsa; Aksi takdirde NULL.
 
 ## <a name="colecontrolgetmessagestring"></a><a name="getmessagestring"></a> Coelcontrol:: GetMessageString
 
-*NID*tarafından tanımlanan menü öğesinin amacını açıklayan kısa bir dize almak için Framework tarafından çağırılır.
+*NID* tarafından tanımlanan menü öğesinin amacını açıklayan kısa bir dize almak için Framework tarafından çağırılır.
 
 ```
 virtual void GetMessageString(
@@ -1878,7 +1879,7 @@ Bir dizenin döndürüleceği bir [CString](../../atl-mfc-shared/reference/cstri
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu, menü öğesi vurgulandığında durum çubuğunda görüntülenmek üzere bir ileti almak için kullanılabilir. Varsayılan uygulama *NID*tarafından tanımlanan bir dize kaynağını yüklemeye çalışır.
+Bu, menü öğesi vurgulandığında durum çubuğunda görüntülenmek üzere bir ileti almak için kullanılabilir. Varsayılan uygulama *NID* tarafından tanımlanan bir dize kaynağını yüklemeye çalışır.
 
 ## <a name="colecontrolgetnotsupported"></a><a name="getnotsupported"></a> Coelcontrol:: GetNotSupported
 
@@ -1989,7 +1990,7 @@ Nesnenin arabirimine yönelik işaretçi `IDropTarget` . Bir penceresi olmadığ
 
 ### <a name="remarks"></a>Açıklamalar
 
-Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Ancak, denetimin kendi penceresi olmadığından kapsayıcı, kendi penceresini bırakma hedefi olarak kullanacaktır. Denetim, `IDropTarget` kapsayıcının çağrıları uygun zamanda temsil eden arabirimin bir uygulamasını sağlaması gerekir. Örnek:
+Normalde, bu, denetimin penceresinin bırakma hedefi olarak kaydedilmesini gerektirir. Ancak, denetimin kendi penceresi olmadığından kapsayıcı, kendi penceresini bırakma hedefi olarak kullanacaktır. Denetim, `IDropTarget` kapsayıcının çağrıları uygun zamanda temsil eden arabirimin bir uygulamasını sağlaması gerekir. Örneğin:
 
 [!code-cpp[NVC_MFCAxCtl#2](../../mfc/reference/codesnippet/cpp/colecontrol-class_3.cpp)]
 
@@ -2394,7 +2395,7 @@ Denetimin dikdörtgen alanı geçersiz.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`OnDraw` genellikle ekran görüntüleme için çağrılır, ekran cihazı bağlamını *PDC*olarak geçirme. *Rclimitler* parametresi, hedef cihaz bağlamındaki dikdörtgeni tanımlar (geçerli eşleme moduna göre). *Rcgeçersiz* parametresi, geçersiz olan gerçek dikdörtgendir. Bazı durumlarda bu, *Rclimitlerinden*daha küçük bir alan olacaktır.
+`OnDraw` genellikle ekran görüntüleme için çağrılır, ekran cihazı bağlamını *PDC* olarak geçirme. *Rclimitler* parametresi, hedef cihaz bağlamındaki dikdörtgeni tanımlar (geçerli eşleme moduna göre). *Rcgeçersiz* parametresi, geçersiz olan gerçek dikdörtgendir. Bazı durumlarda bu, *Rclimitlerinden* daha küçük bir alan olacaktır.
 
 ## <a name="colecontrolondrawmetafile"></a><a name="ondrawmetafile"></a> Coelcontrol:: OnDrawMetafile
 
@@ -2448,7 +2449,7 @@ Kapsayıcıda denetim tarafından kullanılan dikdörtgene yönelik bir işaret�
 
 Bu, denetimin OLEIVERB_UIACTIVATE fiilini çağırma ile aynı etkiye sahiptir.
 
-Bu işlev genellikle bir ON_OLEVERB ileti eşleme girişi için işleyici işlevi olarak kullanılır. Bu, denetimin "nesne" menüsünde "Düzenle" fiilini kullanılabilir hale getirir. Örnek:
+Bu işlev genellikle bir ON_OLEVERB ileti eşleme girişi için işleyici işlevi olarak kullanılır. Bu, denetimin "nesne" menüsünde "Düzenle" fiilini kullanılabilir hale getirir. Örneğin:
 
 [!code-cpp[NVC_MFCAxCtl#5](../../mfc/reference/codesnippet/cpp/colecontrol-class_6.cpp)]
 
@@ -2568,7 +2569,7 @@ virtual BOOL OnGetColorSet(
 Resmin oluşturulması gereken hedef cihaza işaret eder. Bu değer NULL ise, resmin bir varsayılan hedef cihaz için (genellikle bir görüntü aygıtı) oluşturulması gerekir.
 
 *hicTargetDev*<br/>
-*PTD*tarafından belirtilen hedef cihazdaki bilgi bağlamını belirtir. Bu parametre bir cihaz bağlamı olabilir, ancak tek bir değer değildir. *PTD* null Ise, *hicTargetDev* de null olmalıdır.
+*PTD* tarafından belirtilen hedef cihazdaki bilgi bağlamını belirtir. Bu parametre bir cihaz bağlamı olabilir, ancak tek bir değer değildir. *PTD* null Ise, *hicTargetDev* de null olmalıdır.
 
 *ppColorSet*<br/>
 Kullanılacak renk kümesinin kopyalanacağı konuma yönelik bir işaretçi. İşlev, renk kümesi döndürmezse NULL döndürülür.
@@ -2604,7 +2605,7 @@ Denetiminizin anımsatıcı anahtarlarını işlemesi gerekiyorsa bu işlevi ge�
 
 ## <a name="colecontrolongetdisplaystring"></a><a name="ongetdisplaystring"></a> Coelcontrol:: OnGetDisplayString
 
-*DISPID*tarafından tanımlanan özelliğin geçerli değerini temsil eden bir dize almak için Framework tarafından çağırılır.
+*DISPID* tarafından tanımlanan özelliğin geçerli değerini temsil eden bir dize almak için Framework tarafından çağırılır.
 
 ```
 virtual BOOL OnGetDisplayString(
@@ -2725,11 +2726,11 @@ Dönüş değerleriyle doldurulacak bir DWORD dizisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*PStringArray* ve *Ptanımlama earray*öğesine öğeler eklendiyse sıfır dışında.
+*PStringArray* ve *Ptanımlama earray* öğesine öğeler eklendiyse sıfır dışında.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetiminizin, dizeler tarafından gösterilebilen olası değerler kümesine sahip bir özelliği varsa, bu işlevi geçersiz kılın. *PStringArray*öğesine eklenen her öğe Için, *Pcookie earray* öğesine karşılık gelen "Cookie" öğesini eklemeniz gerekir. Bu "tanımlama bilgisi" değerleri daha sonra Framework tarafından işleve geçirilemeyebilir `COleControl::OnGetPredefinedValue` .
+Denetiminizin, dizeler tarafından gösterilebilen olası değerler kümesine sahip bir özelliği varsa, bu işlevi geçersiz kılın. *PStringArray* öğesine eklenen her öğe Için, *Pcookie earray* öğesine karşılık gelen "Cookie" öğesini eklemeniz gerekir. Bu "tanımlama bilgisi" değerleri daha sonra Framework tarafından işleve geçirilemeyebilir `COleControl::OnGetPredefinedValue` .
 
 ## <a name="colecontrolongetpredefinedvalue"></a><a name="ongetpredefinedvalue"></a> Cotacontrol:: Ongetpredefineddeğeri
 
@@ -2755,7 +2756,7 @@ Daha önce bir geçersiz kılma tarafından döndürülen bir tanımlama bilgisi
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*LpvarOut*içinde bir değer döndürülürse sıfır dışı. Aksi takdirde 0.
+*LpvarOut* içinde bir değer döndürülürse sıfır dışı. Aksi takdirde 0.
 
 ## <a name="colecontrolongetviewextent"></a><a name="ongetviewextent"></a> Coelcontrol:: Ongetviewınfo
 
@@ -3023,7 +3024,7 @@ Belirtilen özellik sayfasının kullanılması gerekip gerekmediğini belirtmek
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Lpclsıd*içinde BIR sınıf kimliği döndürülürse sıfır dışı Aksi takdirde 0.
+*Lpclsıd* içinde BIR sınıf kimliği döndürülürse sıfır dışı Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3188,7 +3189,7 @@ Başarılı olursa sıfır dışı; Aksi takdirde 0.
 
 Belirtilen biçim, Gecikmeli işleme için [DelayRenderData](../../mfc/reference/coledatasource-class.md#delayrenderdata) veya [DelayRenderFileData](../../mfc/reference/coledatasource-class.md#delayrenderfiledata) üye işlevlerini kullanarak daha önce denetim nesnesine yerleştirilmiş bir biçimdir. `OnRenderFileData` `OnRenderGlobalData` Sağlanan depolama ortamı bir dosya veya bellek ise, bu işlevin varsayılan uygulanması sırasıyla veya ' i çağırır. İstenen biçim CF_METAFILEPICT veya kalıcı özellik kümesi biçimindeyse, varsayılan uygulama uygun verileri işler ve sıfır dışında bir değer döndürür. Aksi takdirde, 0 döndürür ve hiçbir şey yapmaz.
 
-*LpStgMedium->tymed* TYMED_NULL, stgmedium 'ın, *lpFormatEtc->TYMED*tarafından belirtilen şekilde ayrılmalı ve doldurulmaları gerekir. TYMED_NULL değilse, STGMEDIUM 'ın verilerle birlikte doldurulması gerekir.
+*LpStgMedium->tymed* TYMED_NULL, stgmedium 'ın, *lpFormatEtc->TYMED* tarafından belirtilen şekilde ayrılmalı ve doldurulmaları gerekir. TYMED_NULL değilse, STGMEDIUM 'ın verilerle birlikte doldurulması gerekir.
 
 Verilerinizi istenen biçimde ve ortamda sağlamak için bu işlevi geçersiz kılın. Verilerinize bağlı olarak, bunun yerine bu işlevin diğer sürümlerinden birini geçersiz kılmak isteyebilirsiniz. Verileriniz küçük ve boyut olarak düzeltildiğinde, geçersiz kılın `OnRenderGlobalData` . Verileriniz bir dosya içinde veya değişken boyutunda ise, geçersiz kılın `OnRenderFileData` .
 
@@ -4003,7 +4004,7 @@ Denetimin değiştirilmiş bayrağının yeni değeri. DOĞRU, denetimin durumun
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetiminizin kalıcı durumunu etkileyebilecek bir değişiklik olduğunda bu işlevi çağırın. Örneğin, kalıcı bir özelliğin değeri değişirse, *bModified* **true**ile bu işlevi çağırın.
+Denetiminizin kalıcı durumunu etkileyebilecek bir değişiklik olduğunda bu işlevi çağırın. Örneğin, kalıcı bir özelliğin değeri değişirse, *bModified* **true** ile bu işlevi çağırın.
 
 ## <a name="colecontrolsetnotpermitted"></a><a name="setnotpermitted"></a> Coelcontrol:: Setnotizin verildi
 

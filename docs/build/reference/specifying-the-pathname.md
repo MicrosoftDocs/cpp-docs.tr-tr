@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: yol adını belirtme'
 title: Yol Adını Belirtme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,31 +7,31 @@ helpviewer_keywords:
 - cl.exe compiler, output files
 - output files, specifying pathnames
 ms.assetid: 7a6595ce-3383-44ae-957a-466bfa29c343
-ms.openlocfilehash: dcff3610255c40f4e06201e52a53eb5dd965a4be
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a8c55822bcb19864955ffa37ef2dd4cb18765ae5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224536"
 ---
 # <a name="specifying-the-pathname"></a>Yol Adını Belirtme
 
-Çıktı dosyası seçeneğin kabul bir *pathname* bağımsız değişkeni bir konum ve çıktı dosyası için bir ad belirtebilirsiniz. Bağımsız değişken, bir sürücü adı, dizin ve dosya adını içerebilir. Boşluk seçenek ve bağımsız değişken arasında izin verilir.
+Her çıkış dosyası seçeneği, çıkış dosyası için bir konum ve ad belirtebileceğiniz bir *PathName* bağımsız değişkeni kabul eder. Bağımsız değişken bir sürücü adı, dizin ve dosya adı içerebilir. Seçeneği ve bağımsız değişkeni arasında boşluk yapılmasına izin verilmez.
 
-Varsa *pathname* dosya adı içeren bir uzantı derleyici çıkışı bir varsayılan uzantı sağlar. Varsa *pathname* bir dizin hiçbir dosya adı içerir derleyici belirtilen dizindeki varsayılan ada sahip bir dosya oluşturur. Varsayılan adı temel kaynak dosyasının adını ve çıkış dosyasının türüne göre varsayılan bir uzantı temel alır. Devre dışı bırakırsanız *pathname* tamamen, derleyici varsayılan bir dizin içinde bir varsayılan ada sahip bir dosya oluşturur.
+*Yol* adı uzantısı olmayan bir dosya adı içeriyorsa, derleyici çıktıyı varsayılan bir uzantı olarak verir. *Yol* adı bir dizin içeriyorsa ancak dosya adı yoksa, derleyici belirtilen dizinde varsayılan ada sahip bir dosya oluşturur. Varsayılan ad, kaynak dosyanın temel adına ve çıkış dosyasının türüne göre varsayılan bir uzantıya göre belirlenir. *Yol adını* tamamen devre dışı bırakırsanız, derleyici varsayılan bir dizinde varsayılan ada sahip bir dosya oluşturur.
 
-Alternatif olarak, *pathname* bağımsız değişkeni, bir cihaz adı (AUX, CON, PRN veya NUL) yerine bir dosya adı olabilir. Seçeneğini ve cihaz adını veya bir virgül arasına bir boşluk, cihaz adı bir parçası olarak kullanmayın.
+Alternatif olarak, *PathName* bağımsız değişkeni bir dosya adı yerine bir cihaz adı (AUX, con, prn veya NUL) olabilir. Seçenek ile cihaz adı arasında bir boşluk ya da cihaz adının bir parçası olarak bir iki nokta üst üste kullanmayın.
 
 |Cihaz adı|Temsil eder|
 |-----------------|----------------|
 |AUX|Yardımcı cihaz|
-|ONAYLA|Konsol|
+|CON|Konsol|
 |PRN|Yazıcı|
-|NUL|Null cihazı (dosyası oluşturuldu)|
+|NUL|Null cihaz (dosya oluşturulmamış)|
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki komut satırını bir eşlem yazıcıya gönderir:
+Aşağıdaki komut satırı, yazıcıya bir eşlem dosyası gönderir:
 
 ```
 CL /FmPRN HELLO.CPP
@@ -38,6 +39,6 @@ CL /FmPRN HELLO.CPP
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıktı Dosyası (/F) Seçenekleri](output-file-f-options.md)<br/>
-[MSVC Derleyicisi Seçenekleri](compiler-options.md)<br/>
-[MSVC Derleyicisi Komut Satırı Söz Dizimi](compiler-command-line-syntax.md)
+[Çıktı dosyası (/F) seçenekleri](output-file-f-options.md)<br/>
+[MSVC derleyici seçenekleri](compiler-options.md)<br/>
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

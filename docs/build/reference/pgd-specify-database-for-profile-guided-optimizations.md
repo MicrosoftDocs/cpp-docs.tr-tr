@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/PGD (Profile-Guided Iyileştirmeler için veritabanını belirt)
 title: /PGD (Profil Temelli İyileştirmeler için Veritabanını Belirt)
 ms.date: 03/14/2018
 f1_keywords:
@@ -7,41 +8,41 @@ helpviewer_keywords:
 - -PGD linker option
 - /PGD linker option
 ms.assetid: 9f312498-493b-461f-886f-92652257e443
-ms.openlocfilehash: e1d7c9fcb94a9351ce94b66e04b4bfc523248f4e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7030ddaef33c6ee794c470df2c42c72d78555369
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225992"
 ---
 # <a name="pgd-specify-database-for-profile-guided-optimizations"></a>/PGD (Profil Temelli İyileştirmeler için Veritabanını Belirt)
 
-**/PGD seçeneği kullanım dışı bırakılmıştır.** Visual Studio 2015'ten başlayarak tercih [/genprofıle veya fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) bağlayıcı seçenekleri yerine. Bu seçenek, profil temelli iyileştirme işlemi tarafından kullanılan bir .pgd dosyası adını belirtmek için kullanılır.
+**/PGD seçeneği kullanım dışıdır.** Visual Studio 2015 ' den başlayarak, bunun yerine [/genprofile veya/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) bağlayıcı seçeneklerini tercih edin. Bu seçenek, profil temelli iyileştirme işlemi tarafından kullanılan. pgd dosyasının adını belirtmek için kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ PGD:**_dosya adı_
+> **/PGD:**_filename_
 
 ## <a name="argument"></a>Bağımsız Değişken
 
-*Dosya adı*<br/>
-Çalışan programa hakkındaki bilgileri tutmak için kullanılan bir .pgd dosyası adını belirtir.
+*filename*<br/>
+Çalışan programla ilgili bilgileri tutmak için kullanılan. pgd dosyasının adını belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım dışı kullanırken [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) seçeneğinde, kullanın **/PGD** varsayılan olmayan ad veya .pgd dosyası için konumu belirtin. Siz belirtmezseniz **/PGD**, .pgd dosyası taban adı çıkış dosyası (.exe veya .dll) taban adı ile aynıdır ve içinden bağlantı çağrıldığı dizininde oluşturulur.
+Kullanım dışı [/LTCG: PGıNSTRUMENT](ltcg-link-time-code-generation.md) seçeneğini kullanırken,. pgd dosyası için varsayılan adı veya konumu belirtmek için **/PGD** kullanın. **/PGD** belirtmezseniz,. pgd dosya taban adı çıkış dosyası (. exe veya. dll) temel adıyla aynıdır ve bağlantının çağrıldığı dizinde oluşturulur.
 
-Kullanım dışı kullanırken **/LTCG:PGOPTIMIZE** seçeneğinde, kullanın **/PGD** iyileştirilmiş görüntü oluşturmak için kullanılacak .pgd dosyası adını belirtmek için seçeneği. *Filename* bağımsız değişken eşleşmelidir *filename* belirtilen **/LTCG:PGINSTRUMENT**.
+Kullanım dışı **/LTCG: PGOPTIMIZE** seçeneği kullanılırken, en iyileştirilmiş görüntüyü oluşturmak için kullanılacak. pgd dosyasının adını belirtmek için **/PGD** seçeneğini kullanın. *Filename* bağımsız değişkeni **/LTCG: PGINSTRUMENT** olarak belirtilen *dosya adıyla* eşleşmelidir.
 
-Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-optimizations.md).
+Daha fazla bilgi için bkz. [Profil temelli iyileştirmeler](../profile-guided-optimizations.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **iyileştirme** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **iyileştirme** özellik sayfasını seçin.
 
-1. Değiştirme **profil destekli veritabanı** özelliği. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+1. **Profil temelli veritabanı** özelliğini değiştirin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -50,4 +51,4 @@ Daha fazla bilgi için [permutasyonları iyileştirmeleri](../profile-guided-opt
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)<br/>
+[MSVC bağlayıcı seçenekleri](linker-options.md)<br/>

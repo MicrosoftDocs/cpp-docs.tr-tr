@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/SYMBOLS
 title: /SYMBOLS
 ms.date: 09/05/2018
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - /SYMBOLS dumpbin option
 - -SYMBOLS dumpbin option
 ms.assetid: 34bcae90-4561-4c77-a80c-065508dec39a
-ms.openlocfilehash: a47b7da9f0b01353ef15e8b5c070c19e7c521c37
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f0cc213a8b37f99e0cb80f6df88967e4eb5204b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317711"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230152"
 ---
 # <a name="symbols"></a>/SYMBOLS
 
@@ -25,11 +26,11 @@ ms.locfileid: "62317711"
 /SYMBOLS
 ```
 
-Bu seçenek COFF sembol tablosu görüntüler. Tüm nesne dosyalarında sembol tablolarını mevcut. COFF sembol tablosu ile/Debug yalnızca bağlı bir görüntü dosyasına görüntülenir.
+Bu seçenek COFF sembol tablosunu görüntüler. Sembol tabloları tüm nesne dosyalarında bulunur. Bir COFF sembol tablosu, yalnızca/DEBUGILE bağlanmışsa bir görüntü dosyasında görünür.
 
-/SYMBOLS çıktısı bir açıklaması verilmiştir. Winnt.h (IMAGE_SYMBOL ve IMAGE_AUX_SYMBOL) veya COFF belgelere bakarak /SYMBOLS çıkış anlamı hakkında daha fazla bilgi bulunabilir.
+Aşağıda/SYMBOLÇıKıŞıNıN açıklaması verilmiştir. /SYMBOLS çıkışının anlamı hakkında daha fazla bilgi için, Winnt. h (IMAGE_SYMBOL ve IMAGE_AUX_SYMBOL) veya COFF belgelerine bakarak bulabilirsiniz.
 
-Aşağıdaki örnek dökümü verilir:
+Aşağıdaki örnek döküm verildiğinde:
 
 ```
 Dump of file main.obj
@@ -56,17 +57,17 @@ String Table Size = 0x10 bytes
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir sembol sayı ile başlayan satırlar için aşağıdaki açıklama, kullanıcılarla ilgili bilgilere sahip sütunların açıklanmaktadır:
+Aşağıdaki açıklama, bir sembol numarasıyla başlayan satırlar için, kullanıcılarla ilgili bilgiler içeren sütunları açıklar:
 
-- İlk üç basamaklı sayı simge dizin/numarasıdır.
+- İlk üç basamaklı sayı, sembol Dizin/sayıdır.
 
-- Üçüncü sütunda bölü içeriyorsa*x*, sembolü nesne dosyasının bu bölümünde tanımlanır. Ancak UNDEF görünürse, o nesnenin tanımlı değil ve başka bir yerde çözümlenmesi gerekir.
+- Üçüncü sütun SECT *x* içeriyorsa, sembol nesne dosyasının bu bölümünde tanımlanır. Ancak UNDEF görünmüyorsa, bu nesnede tanımlı değildir ve başka bir yerde çözülmesi gerekir.
 
-- Beşinci sütun (statik, dış) sembolü yalnızca bu nesne içinde görünür olup veya genel bildirir (görünür harici olarak). _Sym, statik bir simge için bir ortak sembol _sym bağlı mıydı; Bu işlevlerin _sym adlı iki farklı örnekleri olacaktır.
+- Beşinci sütun (statik, dış) sembolün yalnızca bu nesne içinde görünür olup olmadığını veya genel (dışarıdan görünebilir) olup olmadığını söyler. Statik bir sembol _sym, ortak bir sembol _sym bağlanamaz; Bunlar, _sym adlı işlevlerin iki farklı örneği olacaktır.
 
-Numaralı satırdaki son sütun sembol adı, her ikisi de düzenlenmiş ve tamamlanmamış.
+Numaralandırılmış bir satırdaki son sütun, hem düzenlenmiş hem de tasarlanılmamış sembol adıdır.
 
-Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
+[/GL](gl-whole-program-optimization.md) derleyici seçeneği ile oluşturulan dosyalarda yalnızca [/Headers](headers.md) dumpbin seçeneği kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

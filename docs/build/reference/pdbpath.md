@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/PDBPATH
 title: /PDBPATH
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - PDBPATH dumpbin option
 - PDB files, path
 ms.assetid: ccf67dcd-0b23-4250-ad47-06c48acbe82b
-ms.openlocfilehash: f29b8e61fbfbdb0f373e3e7510cb3f1fe0b9cc2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 41207d7cfce3d72ecb9517d9ad3af8bcd3f901d7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226057"
 ---
 # <a name="pdbpath"></a>/PDBPATH
 
@@ -25,31 +26,31 @@ ms.locfileid: "62319856"
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
-Eşleşen .pdb dosyasını bulmak istediğiniz .dll veya .exe dosyasının adı.
+*filename*<br/>
+Eşleşen. pdb dosyasını bulmak istediğiniz. dll veya. exe dosyasının adı.
 
-**: AYRINTILI**<br/>
-(İsteğe bağlı) Tüm dizinler .pdb dosyasını bulmak için denemesi yapıldığı bildirir.
+**: VERBOSE**<br/>
+Seçim . Pdb dosyasını bulmak için bir girişimde bulunuldu tüm dizinleri raporlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ PDBPATH bilgisayarınız varsa, .pdb dosyaları içinde belirtilen dosyaya karşılık gelen, hata ayıklayıcı bir .pdb dosyası için arama ve raporlar aynı yollar boyunca arama yapacağı *filename*.
+/PDBPATH, bilgisayarınızda hata ayıklayıcının bir. pdb dosyasını arayacağından aynı yolların yanı sıra, varsa. pdb dosyalarının dosya *adında* belirtilen dosyaya karşılık geldiğini rapor edecektir.
 
-Hata ayıklayıcı bir .pdb dosyası ayıkladığınız dosyayı farklı bir sürümü kullanıyor. Bunun nedeni, Visual Studio hata ayıklayıcısını kullanırken bir sorunla karşılaşabilirsiniz.
+Visual Studio hata ayıklayıcısını kullanırken, hata ayıklayıcının hata ayıkladığınızda dosyanın farklı bir sürümü için bir. pdb dosyası kullandığı için bir sorunla karşılaşabilirsiniz.
 
-/ PDBPATH aşağıdaki yollarla birlikte .pdb dosyaları arar:
+/PDBPATH,. pdb dosyalarını aşağıdaki yollarla arar:
 
 - Yürütülebilir dosyanın bulunduğu konumu kontrol edin.
 
-- Çalıştırılabilir dosyaya yazılan PDB konumunu denetleyin. Bu genellikle görüntünün bağlı olduğu zaman konumdur.
+- Yürütülebilir dosyanın çalıştırılabilire yazılmış konumunu kontrol edin. Bu genellikle görüntünün bağlandığı zaman konumudur.
 
-- Visual Studio IDE içinde yapılandırılan arama yolu boyunca denetleyin.
+- Visual Studio IDE 'de yapılandırılmış arama yolunu inceleyin.
 
-- _NT_SYMBOL_PATH ve _NT_ALT_SYMBOL_PATH yolları boyunca ortam değişkenlerinizi denetleyin.
+- _NT_SYMBOL_PATH yolları ve _NT_ALT_SYMBOL_PATH ortam değişkenlerini kontrol edin.
 
-- Windows dizinde denetleyin.
+- Windows dizinini iade edin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [DUMPBIN Seçenekleri](dumpbin-options.md)<br/>
-[/PDBALTPATH (Diğer PDB Yolunu Kullan)](pdbaltpath-use-alternate-pdb-path.md)
+[/PDBALTPATH (diğer PDB yolunu kullan)](pdbaltpath-use-alternate-pdb-path.md)

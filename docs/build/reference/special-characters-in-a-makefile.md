@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi için: derleme görevleri dosyasındaki özel karakterler'
 title: Derleme Görevleri Dosyasındaki Özel Karakterler
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,27 +8,27 @@ helpviewer_keywords:
 - special characters, in NMAKE macros
 - macros, special characters
 ms.assetid: 92c34ab5-ca6b-4fc0-bcf4-3172eaeda9f0
-ms.openlocfilehash: d915b182d72b4251f416433642cd8b1832b80e08
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 22b8f6dd82191c88a23eaf1dabb551d468293a42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224679"
 ---
 # <a name="special-characters-in-a-makefile"></a>Derleme Görevleri Dosyasındaki Özel Karakterler
 
-NMAKE özel karakter değişmez değer olarak kullanmak için önündeki bir şapka (^) yerleştirin. NMAKE diğer karakterlerden önce düzeltme işaretleri yok sayar. Özel karakterler şunlardır:
+Bir NMAKE özel karakterini sabit karakter olarak kullanmak için, önüne bir şapka işareti (^) koyun. NMAKE diğer karakterlerden önce gelen yüzleri yoksayar. Özel karakterler şunlardır:
 
 `:  ;  #  (  )  $  ^  \  {  }  !  @  —`
 
-Tırnak işaretli dize içindeki bir şapka (^) bir değişmez değer şapka karakteri kabul edilir. Bir giriş işaretini bir satır sonunda bir değişmez değer yeni satır karakteri bir dize veya makro ekler.
+Tırnak işaretli bir dize içindeki bir şapka (^), sabit bir giriş işareti karakteri olarak değerlendirilir. Satırın sonundaki bir giriş işareti, bir dizeye veya makroya sabit bir yeni satır karakteri ekler.
 
-Makrolardaki ters eğik çizgi (\\) ve ardından tarafından bir yeni satır karakteri bir boşluk ile değiştirilir.
+Makrolar içinde, bir yeni satır karakteri gelen ters eğik çizgi (), bir \\ boşluk ile değiştirilmiştir.
 
-Komutlarda, yüzde işareti (%) bir dosya tanımlayıcısı var. % Gerçek anlamda bir komutu temsil etmek için bir çift yüzde işareti (%) belirtin. tek bir tane yerine. Tek bir % NMAKE diğer durumlarda, tam anlamıyla yorumlar, ancak her zaman bir çift yorumlar %% tek bir %. Bu nedenle, bir sabit değer temsil etmek için %%, ya da üç yüzde işaretleri belirtin %%%, veya dört yüzde işaretleri %%%.
+Komutlarda yüzde simgesi (%) bir dosya belirticisidir. Bir komutta% harfine göstermek için, bir çift yüzde işareti (%%) belirtin tek bir yerde. Diğer durumlarda NMAKE tek bir% harfi yorumlaması, ancak her zaman%% öğesini tek bir% olarak yorumlar. Bu nedenle,%% sabit değerini göstermek için,%%%, veya yüzde dört işareti (%%%%) belirtin.
 
-Değişmez değer komutunda dolar işareti ($) kullanmak için iki dolar işareti ($$) belirtin. Bu yöntem, diğer durumlarda kullanılabilir olduğu ^ $ çalışır.
+Bir komutta bir sabit karakter olarak dolar işareti ($) kullanmak için iki dolar işareti ($ $) belirtin. Bu yöntem, ^ $ çalıştığı diğer durumlarda da kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleme Görevleri Dosyası İçeriği](contents-of-a-makefile.md)
+[Derleme görevleri dosyası içeriği](contents-of-a-makefile.md)

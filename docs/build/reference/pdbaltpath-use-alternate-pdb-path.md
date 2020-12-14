@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/PDBALTPATH (diğer PDB yolunu kullan)
 title: /PDBALTPATH (Diğer PDB Yolunu Kullan)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - /PDBALTPATH dumpbin option
 - PDB files, path
 ms.assetid: 72e200aa-e2c3-4ad8-b687-25528da1aaaf
-ms.openlocfilehash: 660e39a97b9fed0c5a9228fe011e7c0fa2566e68
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f85a39fb4570773f01a98331e746f6b37b76c161
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320038"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226070"
 ---
 # <a name="pdbaltpath-use-alternate-pdb-path"></a>/PDBALTPATH (Diğer PDB Yolunu Kullan)
 
@@ -26,13 +27,13 @@ ms.locfileid: "62320038"
 ## <a name="arguments"></a>Arguments
 
 *pdb_file_name*<br/>
-.Pdb dosyasının yolunu ve dosya adı.
+. Pdb dosyası için yol ve dosya adı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Program veritabanı (.pdb) dosyası, derlenmiş ikili dosyaları için alternatif bir konum sağlamak için bu seçeneği kullanın. Normalde, bağlayıcı .pdb dosyasının konumunu ürettiği içindeki ikili dosyaları kaydeder. Farklı yol ve dosya adı için .pdb dosyasını sağlamak için bu seçeneği kullanabilirsiniz. /PDBALTPATH ile sağlanan bilgiler, gerçek .pdb dosyasının adını ve konumunu değiştirmez. Bu bağlayıcı ikili dosyasına yazar bilgileri değiştirir. Bu, Yapı bilgisayarının dosya yapısı bağımsız bir yol sağlamak üzere sağlar. Bir ağ yolu veya hiçbir yol bilgisi olan bir dosyayı sağlamak için iki ortak kullandığı için bu seçeneği var.
+Derlenmiş bir ikili dosyadaki program veritabanı (. pdb) dosyası için alternatif bir konum sağlamak üzere bu seçeneği kullanın. Normalde, bağlayıcı. pdb dosyasının konumunu, oluşturduğu ikililer olarak kaydeder. . Pdb dosyası için farklı bir yol ve dosya adı sağlamak üzere bu seçeneği kullanabilirsiniz. /PDBALTPATH ile birlikte sunulan bilgiler, gerçek. pdb dosyasının konumunu veya adını değiştirmez; bağlayıcının ikili dosyada yazdığı bilgileri değiştirir. Bu, yapı bilgisayarının dosya yapısından bağımsız bir yol sağlamanıza olanak sağlar. Bu seçeneğin iki yaygın kullanımları, bir ağ yolu veya yol bilgisi olmayan bir dosya sağlamaktır.
 
-Değerini *pdb_file_name* bir ortam değişkeni rastgele bir dize olabilir veya **_PDB %**. Bağlayıcı gibi bir ortam değişkeni genişletir **% SystemRoot %**, kendi değerine. Bağlayıcı ortam değişkenlerini tanımlar **_PDB %** ve **_EXT %**. **_PDB %** herhangi bir yol bilgisi olmadan gerçek .pdb dosyasının dosya adı genişletir ve **_EXT %** oluşturulan yürütülebilir dosya uzantısıdır.
+*Pdb_file_name* değeri rastgele bir dize, ortam değişkeni veya **% _PDB%** olabilir. Bağlayıcı, **% systemroot%** gibi bir ortam değişkenini değerine genişletmenizi sağlar. Bağlayıcı **% _PDB%** ve **% _ext%** ortam değişkenlerini tanımlar. % **_PDB%** , hiçbir yol bilgisi olmadan gerçek. pdb dosyasının dosya adına genişletilir ve **% _ext%** oluşturulan yürütülebilir dosyanın uzantısıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

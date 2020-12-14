@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/Zo (Iyileştirilmiş hata ayıklamayı geliştirme)
 title: /Zo (En İyi Duruma Getirilmiş Hata Ayıklamayı İyileştirme)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - /Zo compiler option [C++]
 - -Zo compiler option [C++]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f
-ms.openlocfilehash: 2fb64b0cc39d5b7ff0c96d3eae47197c455526f5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b2d5fb37205a6cf58492d7e6bc9080867ebacf54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315358"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224354"
 ---
 # <a name="zo-enhance-optimized-debugging"></a>/Zo (En İyi Duruma Getirilmiş Hata Ayıklamayı İyileştirme)
 
-Hata ayıklama olmayan yapılarında iyileştirilmiş kod için Gelişmiş hata ayıklama bilgileri oluşturur.
+Hata ayıklama olmayan derlemelerde iyileştirilmiş kod için gelişmiş hata ayıklama bilgileri oluşturun.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 /Zo[-]
@@ -28,19 +29,19 @@ Hata ayıklama olmayan yapılarında iyileştirilmiş kod için Gelişmiş hata 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Zo** derleyici anahtarı iyileştirilmiş kod için Gelişmiş hata ayıklama bilgileri oluşturur. En iyi duruma getirme yerel değişkenler için kayıt defterlerine, kodu yeniden sıralama, döngüler ve satır içi işlev çağrıları vektör hale getirmeye. Bu iyileştirmeler, kaynak kodu ile derlenen nesne kodu arasındaki ilişkiyi gizlememeniz. **/Zo** yerel değişkenleri ve satır içine alınmış işlevler için ek hata ayıklama bilgisi oluşturmak için derleyicinin anahtar bildirir. Değişkenleri görmek için kullanılmakta **Otolar**, **Yereller**, ve **Watch** adım adım windows kod Visual Studio hata ayıklayıcısında iyileştirilmiş. Ayrıca, satır içine alınmış işlevler WinDBG hata ayıklayıcıda göstermek yığın izlemesi sağlar. Hata ayıklama iyileştirmeleri devre dışı yapıları ([/Od](od-disable-debug.md)) oluşturulduğunda ek hata ayıklama bilgisi gerekmez **/Zo** belirtilir. Kullanım **/Zo** yayın yapılandırmaları iyileştirme açıkken hata ayıklamak için anahtar. En iyi duruma getirme anahtarları hakkında daha fazla bilgi için bkz. [/O seçenekler (kodu İyileştir)](o-options-optimize-code.md). **/Zo** seçeneği etkin olduğunda varsayılan olarak Visual Studio ile hata ayıklama bilgilerini belirttiğinizde **/zi** veya **/z7**. Belirtin **/Zo-** açıkça Bu derleyici seçeneğini devre dışı bırakmak için.
+**/Zo** derleyici anahtarı iyileştirilmiş kod için gelişmiş hata ayıklama bilgileri oluşturur. İyileştirme yerel değişkenler için Yazmaçları, kodu yeniden sıralama, vektörleştirme döngülerini ve satır içi işlev çağrılarını kullanabilir. Bu iyileştirmeler, kaynak kodu ve derlenen nesne kodu arasındaki ilişkiyi gizlebilirler. **/Zo** anahtarı, derleyiciye yerel değişkenler ve satır içi işlevler için ek hata ayıklama bilgileri oluşturmasını söyler. Visual Studio hata ayıklayıcısında en iyi duruma getirilmiş kod ile adımlayın ve sonra, **oto**, **Yereller** ve **izleme** pencerelerinde değişkenleri görmek için bunu kullanın. Ayrıca, yığın izlemelerinin WinDBG hata ayıklayıcısında satır içine alınmış işlevleri göstermesini sağlar. Devre dışı iyileştirmeleri olan hata ayıklama derlemeleri ([/od](od-disable-debug.md)), **/zo** belirtildiğinde oluşturulan ek hata ayıklama bilgileri gerektirmez. İyileştirme açıkken yayın yapılandırmalarının hatalarını ayıklamak için **/zo** anahtarını kullanın. Optimizasyon anahtarları hakkında daha fazla bilgi için bkz. [/O Seçenekler (kodu iyileştirme)](o-options-optimize-code.md). **/Zi** veya **/Z7** ile hata ayıklama bilgilerini belirttiğinizde, **/zo** seçeneği Visual Studio 'da varsayılan olarak etkindir. Bu derleyici seçeneğini açıkça devre dışı bırakmak için **/zo-** belirtin.
 
-**/Zo** anahtarıdır Visual Studio 2013 güncelleştirme 3'te kullanıma ve daha önce belgelenmemiş değiştirir **/d2Zi+** geçin.
+**/Zo** anahtarı Visual Studio 2013 güncelleştirme 3 ' den başlayarak kullanılabilir ve daha önce belgelenmemiş **/D2zi +** anahtarının yerini almıştır.
 
-### <a name="to-set-the-zo-compiler-option-in-visual-studio"></a>/Zo derleyici seçeneğini Visual Studio'da ayarlamak için
+### <a name="to-set-the-zo-compiler-option-in-visual-studio"></a>Visual Studio 'da/Zo derleyici seçeneğini ayarlamak için
 
-1. Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri**, **C/C++** klasör.
+1. **Yapılandırma özellikleri**, **C/C++** klasörünü seçin.
 
-1. Seçin **komut satırı** özellik sayfası.
+1. **Komut satırı** özellik sayfasını seçin.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik `/Zo` seçip **Tamam**.
+1. **Ek seçenekler** özelliğini içerecek şekilde değiştirin `/Zo` ve ardından **Tamam**' ı seçin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -48,6 +49,6 @@ Hata ayıklama olmayan yapılarında iyileştirilmiş kod için Gelişmiş hata 
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/O Seçenekler (Kodu İyileştir)](o-options-optimize-code.md)<br/>
-[/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](z7-zi-zi-debug-information-format.md)<br/>
+[/O seçenekler (kodu Iyileştirme)](o-options-optimize-code.md)<br/>
+[/Z7,/Zi,/ZI (hata ayıklama bilgileri biçimi)](z7-zi-zi-debug-information-format.md)<br/>
 [Düzenle ve Devam Et](/visualstudio/debugger/edit-and-continue)

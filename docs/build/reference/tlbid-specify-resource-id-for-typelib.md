@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/TLDEKLARASYON (TypeLib için kaynak KIMLIĞINI belirt)
 title: /TLBID (TypeLib için Kaynak Kimliğini Belirt)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - TLBID linker option
 - type libraries, specifying resource ID
 ms.assetid: 434b28a2-4656-4d52-ac82-8b18bf486fb2
-ms.openlocfilehash: c52bfb9e4b6d0e94cecb77c766ac9e82b52f1e66
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4958229cbebe988867c5419d7953b6ffd968e45f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230022"
 ---
 # <a name="tlbid-specify-resource-id-for-typelib"></a>/TLBID (TypeLib için Kaynak Kimliğini Belirt)
 
@@ -28,23 +29,23 @@ ms.locfileid: "62317802"
 ## <a name="arguments"></a>Arguments
 
 *id*<br/>
-Kullanıcı tanımlı bir değer için bir bağlayıcı tarafından oluşturulan tür kitaplığı. Bu, 1 varsayılan kaynak kimliği geçersiz kılar.
+Bağlayıcı tarafından oluşturulan tür kitaplığı için Kullanıcı tarafından belirtilen bir değer. Varsayılan kaynak KIMLIĞI olan 1 ' i geçersiz kılar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Öznitelikleri kullanan bir program derlerken, bağlayıcı bir tür kitaplığı oluşturur. Bağlayıcı tür kitaplığı için bir kaynak kimliği 1 atar.
+Öznitelikleri kullanan bir programı derlerken bağlayıcı bir tür kitaplığı oluşturur. Bağlayıcı, tür kitaplığına 1 kaynak KIMLIĞI atayacaktır.
 
-Bu kaynak kimliği, var olan kaynaklardan biri ile çakışırsa, farklı bir kimlik ile /TLBID belirtebilirsiniz. Öğesine iletebileceğiniz değerleri aralığı `id` 1-65535'tir.
+Bu kaynak KIMLIĞI, mevcut kaynaklarınızdan biriyle çakışırsa,/TLBID. ile başka bir KIMLIK belirtebilirsiniz Geçirebilmeniz için değer aralığı `id` 1-65535 ' dir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **katıştırılmış IDL** özellik sayfası.
+1. **KATıŞTıRıLMıŞ IDL** Özellik sayfasına tıklayın.
 
-1. Değiştirme **TypeLib kaynak kimliği** özelliği.
+1. **TypeLib kaynak kimliği** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -53,4 +54,4 @@ Bu kaynak kimliği, var olan kaynaklardan biri ile çakışırsa, farklı bir ki
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

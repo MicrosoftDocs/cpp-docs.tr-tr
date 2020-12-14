@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ImplementsBase yapısı'
 title: ImplementsBase Yapısı
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,18 +8,18 @@ f1_keywords:
 helpviewer_keywords:
 - ImplementsBase structure
 ms.assetid: f898eb17-136d-4c87-b3ea-771319314641
-ms.openlocfilehash: ffc006521d4f5131d7e387c1b2df79a358ad7def
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4269e08c4e96f0dec455c33cdd1372464b7e7de8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213895"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229125"
 ---
 # <a name="implementsbase-structure"></a>ImplementsBase Yapısı
 
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct ImplementsBase;
@@ -42,4 +43,4 @@ struct ImplementsBase;
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Microsoft::WRL::Details Ad Alanı](microsoft-wrl-details-namespace.md)
+[Microsoft:: WRL::D euçlar ad alanı](microsoft-wrl-details-namespace.md)

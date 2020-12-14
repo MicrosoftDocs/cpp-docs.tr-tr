@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ifade değerlendirici hatası CXX0014'
 title: İfade Değerlendirici Hatası CXX0014
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CAN0014
 - CXX0014
 ms.assetid: 3bb0278d-3dd6-4626-9945-3cf29afbbacb
-ms.openlocfilehash: c3aa6df2de3bf3203fb6e5c1ba4aa90a2a07965b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8464ea2fe0461cf64e49b49b66f2434ddabd58fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228384"
 ---
 # <a name="expression-evaluator-error-cxx0014"></a>İfade Değerlendirici Hatası CXX0014
 

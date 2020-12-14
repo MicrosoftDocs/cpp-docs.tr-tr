@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/PDATA
 title: /PDATA
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /PDATA dumpbin option
 - -PDATA dumpbin option
 ms.assetid: 5d41d629-6576-4733-b103-0d61e6b77b50
-ms.openlocfilehash: bd763abf7b2a08e6aa54ba37cb451f1ec0f6cef7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2855e7f33577ca17aa271d953663f858163b94a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226135"
 ---
 # <a name="pdata"></a>/PDATA
 
@@ -23,11 +24,11 @@ ms.locfileid: "62320064"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yalnızca RISC işlemci.
+Yalnızca RıSC işlemcileri.
 
-Bu seçenek, bir resim veya nesne özel durum tablodan (.pdata) dökümünü alır.
+Bu seçenek, özel durum tablolarının (. pdata) bir görüntüden veya nesneden dökümünü yapar.
 
-Yalnızca [OPTIONAL](headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](gl-whole-program-optimization.md) derleyici seçeneği.
+[/GL](gl-whole-program-optimization.md) derleyici seçeneği ile oluşturulan dosyalarda yalnızca [/Headers](headers.md) dumpbin seçeneği kullanılabilir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

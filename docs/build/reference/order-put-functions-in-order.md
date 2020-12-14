@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/ORDER (Işlevleri sırayla yerleştir)
 title: /ORDER (İşlevleri Sırala)
 ms.date: 09/05/2018
 f1_keywords:
@@ -12,35 +13,35 @@ helpviewer_keywords:
 - LINK tool [C++], swap tuning
 - paging, optimizing
 ms.assetid: ecf5eb3e-e404-4e86-9a91-4e5ec157261a
-ms.openlocfilehash: b1927ffd2efc923157fe1956fe905c939bc62719
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 36888cbb24c869d06eaaa5830b95ae76fc42b860
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226356"
 ---
 # <a name="order-put-functions-in-order"></a>/ORDER (İşlevleri Sırala)
 
-Ayrı olarak paketlenmiş (COMDAT) işlevleri için bir bağlantı sırası belirtin.
+Ayrı paketlenmiş (COMDAT) işlevler için bağlantı sırasını belirtin.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ ORDER:\@**<em>dosya adı</em>
+> **/Order: \@** <em>dosya adı</em>
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya adı*<br/>
-COMDAT işlevleri bağlantı sırası belirten bir metin dosyası.
+*filename*<br/>
+COMDAT işlevlerinin bağlantı sırasını belirten bir metin dosyası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Sipariş** derleyici seçeneği, programınızın sayfalama davranışı bir işlevi çağırdığı işlevler birlikte gruplandırarak iyileştirin olanak tanır. Ayrıca sık çağrılan işlevler birlikte gruplayabilirsiniz. Olarak da bilinen bu teknikler, *takas ayarı* veya *disk belleği en iyi duruma getirme*, gereklidir ve disk belleğine gerekmez, çağrılan işlev bellekteki olasılığını artırır.
+**/Order** derleyici seçeneği, çağrı yaptığı işlevlerle birlikte bir işlevi gruplayarak, programınızın sayfalama davranışını iyileştirmenize olanak tanır. Ayrıca, sık sık çağrılan işlevleri de gruplandırabilirsiniz. *Değiştirme ayarlama* veya *sayfalama iyileştirmesi* olarak bilinen bu teknikler, bir çağrılan işlevin gerektiğinde bellek içinde olduğu ve diskten disk belleğine alınamayan bir işlev olasılığını artırır.
 
-Bir nesne dosyasına kaynak kodunuzu derlediğinizde, derleyici her işlevi adı verilen kendi bölüme yerleştirme söyleyebilirsiniz bir *COMDAT*, kullanarak [/Gy (işlev düzeyi bağlamayı etkinleştir)](gy-enable-function-level-linking.md) derleyici seçeneği. **/Sipariş** bağlayıcı seçeneği bağlayıcıya, belirttiğiniz sırada yürütülebilir resmin comdat'ları yerleştirin.
+Kaynak kodunuzu bir nesne dosyasına derlerken, derleyiciye, [/GY (işlev düzeyi bağlamayı etkinleştir)](gy-enable-function-level-linking.md) derleyici seçeneğini kullanarak her Işlevi *COMDAT* olarak adlandırılan kendi bölümüne koymalarını söyleyebilirsiniz. **/Order** bağlayıcı seçeneği, bağlayıcıya, bu bağlayıcıyı, belirttiğiniz sıraya göre yürütülebilir görüntüye yerleştirmesini söyler.
 
-COMDAT sırasını belirlemek için oluşturun bir *yanıt dosyası*, bağlayıcı tarafından yerleştirilecek bunları istediğiniz sırayla satır başına bir ada göre her COMDAT listeleyen bir metin dosyası. Bu dosyanın şu şekilde adını geçirin *filename* parametresinin **/sipariş** seçeneği. C++ işlevleri için işlev adı düzenlenmiş biçiminde COMDAT adıdır. C işlevleri düzenlenmemiş adını kullanmak `main`, ve C++ işlevleri olarak bildirilen `extern "C"`. İşlev adları ve düzenlenmiş adları büyük/küçük harfe duyarlıdır. Düzenlenmiş adlar hakkında daha fazla bilgi için bkz. [düzenlenmiş adlar](decorated-names.md).
+COMDAT sırasını belirtmek için, her bir COMDAT 'ı ada göre ve bağlayıcı tarafından yerleştirilmesini istediğiniz sırayla listeleyen bir *yanıt dosyası* oluşturun. Bu dosyanın adını **/Order** seçeneğinin *filename* parametresi olarak geçirin. C++ işlevleri için, COMDAT adı işlev adının donatılmış biçimidir. C işlevleri için `main` ve olarak belirtilen C++ işlevleri için, tasarlanmadığı adı kullanın `extern "C"` . İşlev adları ve düzenlenmiş adlar büyük/küçük harfe duyarlıdır. Düzenlenmiş adlar hakkında daha fazla bilgi için bkz. [düzenlenmiş adlar](decorated-names.md).
 
-Düzenlenmiş adları, comdat'ları bulmak için kullanın [DUMPBIN](dumpbin-reference.md) Aracı'nın [/SEMBOLLER](symbols.md) nesne dosyası seçeneği. Bağlayıcı otomatik olarak bir alt çizgi ekler (**\_**) işlev adı bir soru işareti ile başlayan sürece dosya adlarını yanıt (**?**) veya at işareti ( **\@**). Örneğin, bir kaynak dosyası ise example.cpp, içeren işlevler `int cpp_func(int)`, `extern "C" int c_func(int)` ve `int main(void)`, komut `DUMPBIN /SYMBOLS example.obj` düzenlenmiş adlar listelenir:
+Comtts 'nizin düzenlenmiş adlarını bulmak için, nesne dosyasında [dumpbin](dumpbin-reference.md) aracının [/Symbols](symbols.md) seçeneğini kullanın. **\_** Ad bir soru işareti (**?**) veya işareti () ile başlıyorsa, bağlayıcı otomatik olarak bir alt çizgi () öğesini yanıt dosyasındaki işlev adlarına ekleyin **\@** . Örneğin, bir kaynak dosyası olan example. cpp, işlevleri içeriyorsa `int cpp_func(int)` `extern "C" int c_func(int)` ve `int main(void)` komut `DUMPBIN /SYMBOLS example.obj` Bu düzenlenmiş adları listeler:
 
 ```Output
 ...
@@ -50,22 +51,22 @@ Düzenlenmiş adları, comdat'ları bulmak için kullanın [DUMPBIN](dumpbin-ref
 ...
 ```
 
-Bu durumda, olarak adlarını belirtin `?cpp_func@@YAHH@Z`, `c_func`, ve `main` yanıt dosyanızda.
+Bu durumda, adları `?cpp_func@@YAHH@Z` , `c_func` , ve olarak `main` yanıt dosyanızda belirtin.
 
-Birden fazla ise **/sipariş** seçeneği görüntülenir bağlayıcı seçenekleri, belirtilen bir devreye girer.
+Bağlayıcı seçeneklerinde birden fazla **/Order** seçeneği görünürse, belirtilen son bir seçenek geçerli olur.
 
-**/Sipariş** seçeneği artımlı bağlamayı devre dışı bırakır. Bağlayıcı uyarı görebileceğiniz [LNK4075](../../error-messages/tool-errors/linker-tools-warning-lnk4075.md) belirtirseniz bu seçeneği artımlı bağlama etkinse veya belirttiyseniz [/zi (artımlı PDB)](z7-zi-zi-debug-information-format.md) derleyici seçeneği. Bu uyarı sessiz için kullanabilirsiniz [/Incremental: No](incremental-link-incrementally.md) artımlı bağlamayı devre dışı bırakın ve kullanmak için bağlayıcı seçeneği [(PDB) oluştur/zi](z7-zi-zi-debug-information-format.md) derleyici seçeneği artımlı bağlama olmadan bir PDB oluşturulacak.
+**/Order** seçeneği artımlı bağlamayı devre dışı bırakır. Artımlı bağlama etkinse veya [/ZI (artımlı pdb)](z7-zi-zi-debug-information-format.md) derleyici seçeneğini belirlediyseniz bu seçeneği belirttiğinizde bağlayıcı Uyarısı [LNK4075](../../error-messages/tool-errors/linker-tools-warning-lnk4075.md) görebilirsiniz. Bu uyarıyı kapatmak için, artımlı bağlamayı devre dışı bırakmak için [/ıncreıncreoff: No](incremental-link-incrementally.md) bağlayıcı seçeneğini kullanabilir ve artımlı bağlama olmadan bir PDB oluşturmak için [/ZI (pdb oluştur)](z7-zi-zi-debug-information-format.md) derleyici seçeneğini kullanabilirsiniz.
 
 > [!NOTE]
-> Ortak sembol adları statik işlev adlarını değil olduğundan bağlantı statik işlevler düzenlenemiyor. Zaman **/sipariş** belirtildiğinde, bağlayıcı uyarı [LNK4037](../../error-messages/tool-errors/linker-tools-warning-lnk4037.md) bulunamadı ya da statik sipariş yanıt dosyasındaki her bir simge oluşturulur.
+> Statik işlev adları ortak sembol adları olmadığından, bağlantı statik işlevleri sıralamadığından bağlantı yapılamıyor. **/Order** belirtildiğinde, bir statik veya bulunmayan sıra yanıt dosyasındaki her bir sembol için bağlayıcı Uyarısı [LNK4037](../../error-messages/tool-errors/linker-tools-warning-lnk4037.md) oluşturulur.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **iyileştirme** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **iyileştirme** özellik sayfasını seçin.
 
-1. Değiştirme **işlev sırası** özelliğini yanıt dosyanızın adını içerecek şekilde.
+1. **Işlev sırası** özelliğini, yanıt dosyanızın adını içerecek şekilde değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -74,4 +75,4 @@ Birden fazla ise **/sipariş** seçeneği görüntülenir bağlayıcı seçenekl
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

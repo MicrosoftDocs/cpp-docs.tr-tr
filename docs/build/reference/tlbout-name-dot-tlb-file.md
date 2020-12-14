@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/TLHAKKıNDA (ad. TLB dosyası)
 title: /TLBOUT (.TLB Dosyası Adlandır)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - .tlb files, renaming
 - -TLBOUT linker option
 ms.assetid: 0df6d078-2e48-46c9-a1a5-02674d85dce8
-ms.openlocfilehash: 62913eaadd0f0a88f05ce347a6778062a1e66f17
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4e99f3b5a036ddbc424732e771f7bab27aeb228d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230009"
 ---
 # <a name="tlbout-name-tlb-file"></a>/TLBOUT (.TLB Dosyası Adlandır)
 
@@ -38,7 +39,7 @@ MıDL derleyicisi tarafından oluşturulan. tlb dosyasının adını belirtir. H
 
 MıDL derleyicisi, [module](../../windows/attributes/module-cpp.md) özniteliği olan projeler bağlanırken MSVC bağlayıcı tarafından çağırılır.
 
-/TLHAKKıNDA belirtilmemişse,. tlb dosyası adı [/IDLOUT](idlout-name-midl-output-files.md) *filename*konumundan alınır. /IDLOUT belirtilmemişse,. tlb dosyası vc70. tlb olarak adlandırılacaktır.
+/TLHAKKıNDA belirtilmemişse,. tlb dosyası adı [/IDLOUT](idlout-name-midl-output-files.md) *filename* konumundan alınır. /IDLOUT belirtilmemişse,. tlb dosyası vc70. tlb olarak adlandırılacaktır.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 

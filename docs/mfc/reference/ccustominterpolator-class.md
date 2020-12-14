@@ -1,5 +1,6 @@
 ---
-title: CCustomInterpolator Sınıfı
+description: 'Daha fazla bilgi edinin: Ccustominterpolatör sınıfı'
+title: Ccustominterpolatör sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - CCustomInterpolator
@@ -36,18 +37,18 @@ helpviewer_keywords:
 - CCustomInterpolator [MFC], m_initialValue
 - CCustomInterpolator [MFC], m_initialVelocity
 ms.assetid: 28d85595-989a-40a3-b003-e0e38437a94d
-ms.openlocfilehash: 00ce0661fa3fbde714a7299ecbbd54df7c9bcc36
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 84fcdc20ce1a90441a508f1469d498095980af83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227760"
 ---
-# <a name="ccustominterpolator-class"></a>CCustomInterpolator Sınıfı
+# <a name="ccustominterpolator-class"></a>Ccustominterpolatör sınıfı
 
 Temel bir enterpolatör uygular.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class CCustomInterpolator;
@@ -57,37 +58,37 @@ class CCustomInterpolator;
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CCustomInterpolator::CCustomInterpolator](#ccustominterpolator)|Fazla Yüklendi. Özel bir enterpolatör nesnesi tasarlar ve süre ve hızı belirtilen değerlere başolarak adlandırır.|
+|[Ccustominterpolatör:: Ccustominterpolatör](#ccustominterpolator)|Fazla Yüklendi. Özel bir enterpolatör nesnesi oluşturur ve belirtilen değerlere süreyi ve hızı başlatır.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CCustomInterpolator::GetDependencies](#getdependencies)|Enterpolatörün bağımlılıklarını alır.|
-|[CCustomInterpolator::GetDuration](#getduration)|Enterpolatörün süresini alır.|
-|[CCustomInterpolator::GetFinalValue](#getfinalvalue)|Enterpolatörün yol açtığı son değeri alır.|
-|[CCustomInterpolator::Init](#init)|Süreyi ve son değeri başolarak karşılar.|
-|[CCustomInterpolator::InterpolateValue](#interpolatevalue)|Değeri belirli bir ofsette interpolates.|
-|[CCustomInterpolator::InterpolateVelocity](#interpolatevelocity)|Hızı belirli bir ofsette interpolates|
-|[CCustomInterpolator::SetDuration](#setduration)|Enterpolatörün süresini ayarlar.|
-|[CCustomInterpolator::SetInitialValueAndVelocity](#setinitialvalueandvelocity)|Enterpolatörün başlangıç değerini ve hızını ayarlar.|
+|[Ccustominterpolatör:: GetDependencies](#getdependencies)|Enterpolatörü 'nin bağımlılıklarını alır.|
+|[Ccustominterpolatör:: GetDuration](#getduration)|Enterpolatör 'ın süresini alır.|
+|[Ccustominterpolatör:: GetFinalValue](#getfinalvalue)|Enterpolatörü 'nin müşteri adaylarına son değeri alır.|
+|[Ccustominterpolatör:: Init](#init)|Süreyi ve son değeri başlatır.|
+|[Ccustominterpolatör:: Enterpolatevalue](#interpolatevalue)|Verilen bir uzaklığında değeri enterpolasyonlar.|
+|[Ccustominterpolatör:: Enterpolatevelocity](#interpolatevelocity)|Verilen bir uzaklığa göre hızı enterpolasyonlar|
+|[Ccustominterpolatör:: SetDuration](#setduration)|Enterpolatör 'ın süresini ayarlar.|
+|[Ccustominterpolatör:: SetInitialValueAndVelocity](#setinitialvalueandvelocity)|Enterpolatör 'un ilk değerini ve hızını ayarlar.|
 
-### <a name="protected-data-members"></a>Korumalı Veri Üyeleri
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[CCustomInterpolator::m_currentValue](#m_currentvalue)|İnterpolated değeri.|
-|[CCustomInterpolator::m_currentVelocity](#m_currentvelocity)|İnterpolasyonlu hız.|
-|[CCustomInterpolator::m_duration](#m_duration)|Geçiş süresi.|
-|[CCustomInterpolator::m_finalValue](#m_finalvalue)|Geçiş sonundaki değişkenin son değeri.|
-|[CCustomInterpolator::m_initialValue](#m_initialvalue)|Geçişin başındaki değişkenin değeri.|
-|[CCustomInterpolator::m_initialVelocity](#m_initialvelocity)|Geçişin başlangıcındaki değişkenin hızı.|
+|[Ccustominterpolatör:: m_currentValue](#m_currentvalue)|Enterpolasyonlu değer.|
+|[Ccustominterpolatör:: m_currentVelocity](#m_currentvelocity)|Enterpolasyonlu hız.|
+|[Ccustominterpolatör:: m_duration](#m_duration)|Geçişin süresi.|
+|[Ccustominterpolatör:: m_finalValue](#m_finalvalue)|Geçişin sonundaki bir değişkenin son değeri.|
+|[Ccustominterpolatör:: m_initialValue](#m_initialvalue)|Geçişin başlangıcında değişkenin değeri.|
+|[Ccustominterpolatör:: m_initialVelocity](#m_initialvelocity)|Geçişin başlangıcında değişkenin hızı.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-CCustomInterpolator bir sınıf türetmek ve özel bir enterpolasyon algoritması uygulamak için gerekli tüm yöntemleri geçersiz kılmak. Bu sınıfa bir işaretçi CCustomTransition için bir parametre olarak geçirilmelidir.
+Ccustominterpolatör öğesinden bir sınıf türetirsiniz ve özel bir ilişkilendirme algoritması uygulamak için tüm gerekli yöntemleri geçersiz kılın. Bu sınıfa yönelik bir işaretçi CCustomTransition parametresi olarak geçirilmelidir.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -95,11 +96,11 @@ CCustomInterpolator bir sınıf türetmek ve özel bir enterpolasyon algoritmas�
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxanimationcontroller.h
+**Üstbilgi:** afxanimationcontroller. h
 
-## <a name="ccustominterpolatorccustominterpolator"></a><a name="ccustominterpolator"></a>CCustomInterpolator::CCustomInterpolator
+## <a name="ccustominterpolatorccustominterpolator"></a><a name="ccustominterpolator"></a> Ccustominterpolatör:: Ccustominterpolatör
 
-Özel bir enterpolatör nesnesi oluşturuyor ve tüm değerleri varsayılan 0 olarak ayarlar.
+Özel bir enterpolatör nesnesi oluşturur ve tüm değerleri varsayılan 0 olarak ayarlar.
 
 ```
 CCustomInterpolator();
@@ -111,18 +112,18 @@ CCustomInterpolator(
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
-Geçiş süresi.
+*süre*<br/>
+Geçişin süresi.
 
-*finalValue*
+*Sonlandırdeğer*
 
 ### <a name="remarks"></a>Açıklamalar
 
-CCustomInterpolator kullanın::Init daha sonra kodda süre ve son değeri başlatma.
+Kodun ilerleyen kısımlarında süreyi ve son değeri başlatmak için Ccustominterpolatör:: Init kullanın.
 
-## <a name="ccustominterpolatorgetdependencies"></a><a name="getdependencies"></a>CCustomInterpolator::GetDependencies
+## <a name="ccustominterpolatorgetdependencies"></a><a name="getdependencies"></a> Ccustominterpolatör:: GetDependencies
 
-Enterpolatörün bağımlılıklarını alır.
+Enterpolatörü 'nin bağımlılıklarını alır.
 
 ```
 virtual BOOL GetDependencies(
@@ -133,22 +134,22 @@ virtual BOOL GetDependencies(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilkDeğer Bağımlılıkları*<br/>
-Çıkış. Enterpolatörün setinitialvalueAndVelocity geçirilen ilk değere bağlı yönleri.
+*ınitialvaluedependencies*<br/>
+Çıktıların. SetInitialValueAndVelocity öğesine geçirilen ilk değere bağlı olan ara değer ayırmanın yönleri.
 
-*ilkVelocityDependencies*<br/>
-Çıkış. İlk hıza bağlı olarak interpolatörün yönleri SetInitialValueAndVelocity'ye geçer.
+*initialVelocityDependencies*<br/>
+Çıktıların. SetInitialValueAndVelocity öğesine geçirilen ilk hıza bağlı olan ara değer ayırmanın yönleri.
 
-*süreBağımlılıklar*<br/>
-Çıkış. İnterpolatörün SetDuration'e geçirilen süreye bağlı yönleri.
+*durationDependencies*<br/>
+Çıktıların. SetDuration 'a geçirilen süreye bağlı olan ara değer ayırmanın yönleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel uygulama her zaman TRUE döndürür. Olay başarısız olmak istiyorsanız geçersiz kılınan uygulamadan FALSE'u döndürün.
+Temel uygulama her zaman TRUE değerini döndürür. Olayı başarısız kılmak istiyorsanız, geçersiz kılınan uygulamadan FALSE döndürün.
 
-## <a name="ccustominterpolatorgetduration"></a><a name="getduration"></a>CCustomInterpolator::GetDuration
+## <a name="ccustominterpolatorgetduration"></a><a name="getduration"></a> Ccustominterpolatör:: GetDuration
 
-Enterpolatörün süresini alır.
+Enterpolatör 'ın süresini alır.
 
 ```
 virtual BOOL GetDuration(UI_ANIMATION_SECONDS* duration);
@@ -156,16 +157,16 @@ virtual BOOL GetDuration(UI_ANIMATION_SECONDS* duration);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
-Çıkış. Geçiş süresi, saniye cinsinden.
+*süre*<br/>
+Çıktıların. Geçişin süresi (saniye cinsinden).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel uygulama her zaman TRUE döndürür. Olay başarısız olmak istiyorsanız geçersiz kılınan uygulamadan FALSE'u döndürün.
+Temel uygulama her zaman TRUE değerini döndürür. Olayı başarısız kılmak istiyorsanız, geçersiz kılınan uygulamadan FALSE döndürün.
 
-## <a name="ccustominterpolatorgetfinalvalue"></a><a name="getfinalvalue"></a>CCustomInterpolator::GetFinalValue
+## <a name="ccustominterpolatorgetfinalvalue"></a><a name="getfinalvalue"></a> Ccustominterpolatör:: GetFinalValue
 
-Enterpolatörün yol açtığı son değeri alır.
+Enterpolatörü 'nin müşteri adaylarına son değeri alır.
 
 ```
 virtual BOOL GetFinalValue(DOUBLE* value);
@@ -173,16 +174,16 @@ virtual BOOL GetFinalValue(DOUBLE* value);
 
 ### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-Çıkış. Geçiş sonundaki değişkenin son değeri.
+*değer*<br/>
+Çıktıların. Geçişin sonundaki bir değişkenin son değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel uygulama her zaman TRUE döndürür. Olay başarısız olmak istiyorsanız geçersiz kılınan uygulamadan FALSE'u döndürün.
+Temel uygulama her zaman TRUE değerini döndürür. Olayı başarısız kılmak istiyorsanız, geçersiz kılınan uygulamadan FALSE döndürün.
 
-## <a name="ccustominterpolatorinit"></a><a name="init"></a>CCustomInterpolator::Init
+## <a name="ccustominterpolatorinit"></a><a name="init"></a> Ccustominterpolatör:: Init
 
-Süreyi ve son değeri başolarak karşılar.
+Süreyi ve son değeri başlatır.
 
 ```cpp
 void Init(
@@ -192,15 +193,15 @@ void Init(
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
-Geçiş süresi.
+*süre*<br/>
+Geçişin süresi.
 
-*finalValue*<br/>
-Geçiş sonundaki değişkenin son değeri.
+*Sonlandırdeğer*<br/>
+Geçişin sonundaki bir değişkenin son değeri.
 
-## <a name="ccustominterpolatorinterpolatevalue"></a><a name="interpolatevalue"></a>CCustomInterpolator::InterpolateValue
+## <a name="ccustominterpolatorinterpolatevalue"></a><a name="interpolatevalue"></a> Ccustominterpolatör:: Enterpolatevalue
 
-Değeri belirli bir ofsette interpolates.
+Verilen bir uzaklığında değeri enterpolasyonlar.
 
 ```
 virtual BOOL InterpolateValue(
@@ -210,16 +211,16 @@ virtual BOOL InterpolateValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*value*<br/>
-Çıkış. İnterpolated değeri.
+*değer*<br/>
+Çıktıların. Enterpolasyonlu değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel uygulama her zaman TRUE döndürür. Olay başarısız olmak istiyorsanız geçersiz kılınan uygulamadan FALSE'u döndürün.
+Temel uygulama her zaman TRUE değerini döndürür. Olayı başarısız kılmak istiyorsanız, geçersiz kılınan uygulamadan FALSE döndürün.
 
-## <a name="ccustominterpolatorinterpolatevelocity"></a><a name="interpolatevelocity"></a>CCustomInterpolator::InterpolateVelocity
+## <a name="ccustominterpolatorinterpolatevelocity"></a><a name="interpolatevelocity"></a> Ccustominterpolatör:: Enterpolatevelocity
 
-Hızı belirli bir ofsette interpolates
+Verilen bir uzaklığa göre hızı enterpolasyonlar
 
 ```
 virtual BOOL InterpolateVelocity(
@@ -229,64 +230,64 @@ virtual BOOL InterpolateVelocity(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hız*<br/>
-Çıkış. Dengedeki değişkenin hızı.
+*hız*<br/>
+Çıktıların. Uzaklığında değişkenin hızı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel uygulama her zaman TRUE döndürür. Olay başarısız olmak istiyorsanız geçersiz kılınan uygulamadan FALSE'u döndürün.
+Temel uygulama her zaman TRUE değerini döndürür. Olayı başarısız kılmak istiyorsanız, geçersiz kılınan uygulamadan FALSE döndürün.
 
-## <a name="ccustominterpolatorm_currentvalue"></a><a name="m_currentvalue"></a>CCustomInterpolator::m_currentValue
+## <a name="ccustominterpolatorm_currentvalue"></a><a name="m_currentvalue"></a> Ccustominterpolatör:: m_currentValue
 
-İnterpolated değeri.
+Enterpolasyonlu değer.
 
 ```
 DOUBLE m_currentValue;
 ```
 
-## <a name="ccustominterpolatorm_currentvelocity"></a><a name="m_currentvelocity"></a>CCustomInterpolator::m_currentVelocity
+## <a name="ccustominterpolatorm_currentvelocity"></a><a name="m_currentvelocity"></a> Ccustominterpolatör:: m_currentVelocity
 
-İnterpolasyonlu hız.
+Enterpolasyonlu hız.
 
 ```
 DOUBLE m_currentVelocity;
 ```
 
-## <a name="ccustominterpolatorm_duration"></a><a name="m_duration"></a>CCustomInterpolator::m_duration
+## <a name="ccustominterpolatorm_duration"></a><a name="m_duration"></a> Ccustominterpolatör:: m_duration
 
-Geçiş süresi.
+Geçişin süresi.
 
 ```
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## <a name="ccustominterpolatorm_finalvalue"></a><a name="m_finalvalue"></a>CCustomInterpolator::m_finalValue
+## <a name="ccustominterpolatorm_finalvalue"></a><a name="m_finalvalue"></a> Ccustominterpolatör:: m_finalValue
 
-Geçiş sonundaki değişkenin son değeri.
+Geçişin sonundaki bir değişkenin son değeri.
 
 ```
 DOUBLE m_finalValue;
 ```
 
-## <a name="ccustominterpolatorm_initialvalue"></a><a name="m_initialvalue"></a>CCustomInterpolator::m_initialValue
+## <a name="ccustominterpolatorm_initialvalue"></a><a name="m_initialvalue"></a> Ccustominterpolatör:: m_initialValue
 
-Geçişin başındaki değişkenin değeri.
+Geçişin başlangıcında değişkenin değeri.
 
 ```
 DOUBLE m_initialValue;
 ```
 
-## <a name="ccustominterpolatorm_initialvelocity"></a><a name="m_initialvelocity"></a>CCustomInterpolator::m_initialVelocity
+## <a name="ccustominterpolatorm_initialvelocity"></a><a name="m_initialvelocity"></a> Ccustominterpolatör:: m_initialVelocity
 
-Geçişin başlangıcındaki değişkenin hızı.
+Geçişin başlangıcında değişkenin hızı.
 
 ```
 DOUBLE m_initialVelocity;
 ```
 
-## <a name="ccustominterpolatorsetduration"></a><a name="setduration"></a>CCustomInterpolator::SetDuration
+## <a name="ccustominterpolatorsetduration"></a><a name="setduration"></a> Ccustominterpolatör:: SetDuration
 
-Enterpolatörün süresini ayarlar.
+Enterpolatör 'ın süresini ayarlar.
 
 ```
 virtual BOOL SetDuration(UI_ANIMATION_SECONDS duration);
@@ -294,16 +295,16 @@ virtual BOOL SetDuration(UI_ANIMATION_SECONDS duration);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre*<br/>
-Geçiş süresi.
+*süre*<br/>
+Geçişin süresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel uygulama her zaman TRUE döndürür. Olay başarısız olmak istiyorsanız geçersiz kılınan uygulamadan FALSE'u döndürün.
+Temel uygulama her zaman TRUE değerini döndürür. Olayı başarısız kılmak istiyorsanız, geçersiz kılınan uygulamadan FALSE döndürün.
 
-## <a name="ccustominterpolatorsetinitialvalueandvelocity"></a><a name="setinitialvalueandvelocity"></a>CCustomInterpolator::SetInitialValueAndVelocity
+## <a name="ccustominterpolatorsetinitialvalueandvelocity"></a><a name="setinitialvalueandvelocity"></a> Ccustominterpolatör:: SetInitialValueAndVelocity
 
-Enterpolatörün başlangıç değerini ve hızını ayarlar.
+Enterpolatör 'un ilk değerini ve hızını ayarlar.
 
 ```
 virtual BOOL SetInitialValueAndVelocity(
@@ -313,15 +314,15 @@ virtual BOOL SetInitialValueAndVelocity(
 
 ### <a name="parameters"></a>Parametreler
 
-*ınitialvalue*<br/>
-Geçişin başındaki değişkenin değeri.
+*InitialValue*<br/>
+Geçişin başlangıcında değişkenin değeri.
 
-*ilkHız*<br/>
-Geçişin başlangıcındaki değişkenin hızı.
+*InitialVelocity*<br/>
+Geçişin başlangıcında değişkenin hızı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Temel uygulama her zaman TRUE döndürür. Olay başarısız olmak istiyorsanız geçersiz kılınan uygulamadan FALSE'u döndürün.
+Temel uygulama her zaman TRUE değerini döndürür. Olayı başarısız kılmak istiyorsanız, geçersiz kılınan uygulamadan FALSE döndürün.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

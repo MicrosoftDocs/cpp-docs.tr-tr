@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4772'
 title: Derleyici Uyarısı (düzey 1) C4772
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4772
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
-ms.openlocfilehash: 89156b2f29fd21160e6abddc3ecb21efaee6dde1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 41fcbf3074cb1e51e06ba21a01a27eaf8ded1b31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80175144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228449"
 ---
 # <a name="compiler-warning-level-1-c4772"></a>Derleyici Uyarısı (düzey 1) C4772
 
-> \#içeri aktarmaya eksik tür kitaplığından bir tür başvuruluyor; '*eksik-tür*' yer tutucu olarak kullanıldı
+> \#İçeri aktarma, eksik bir tür kitaplığından bir türe başvurdu; '*eksik-tür*' yer tutucu olarak kullanıldı
 
-[#İmport](../../preprocessor/hash-import-directive-cpp.md) yönergesiyle bir tür kitaplığına başvuruldu. Ancak, tür kitaplığı `#import`ile başvurulmayan başka bir tür kitaplığına başvuru içeriyordu. Bu diğer. tlb dosyası derleyici tarafından bulunamadı.
+[#İmport](../../preprocessor/hash-import-directive-cpp.md) yönergesiyle bir tür kitaplığına başvuruldu. Ancak tür kitaplığı, ile başvurulmayan başka bir tür kitaplığına başvuru içeriyordu `#import` . Bu diğer. tlb dosyası derleyici tarafından bulunamadı.
 
 Bu dizinleri belirtmek için [/ı (ek Içerme dizinleri)](../../build/reference/i-additional-include-directories.md) derleyici seçeneğini kullanırsanız, derleyicinin farklı dizinlerde tür kitaplıklarını bulamayacağını unutmayın. Derleyicinin farklı dizinlerde tür kitaplıklarını bulmasını istiyorsanız, bu dizinleri PATH ortam değişkenine ekleyin.
 

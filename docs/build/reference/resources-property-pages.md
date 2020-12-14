@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi için: kaynaklar özellik sayfası'
 title: Kaynaklar
 ms.date: 08/28/2019
 ms.topic: article
@@ -14,55 +15,55 @@ f1_keywords:
 - VC.Project.VCResourceCompilerTool.ResourceOutputFileName
 - VC.Project.VCResourceCompilerTool.NullTerminateStrings
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: c4a3048bfa07e9635662534b510fa57caa091f00
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d074cbb6035bd138ca322197e50e9a3f892b325b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225108"
 ---
 # <a name="resources-property-page"></a>Kaynaklar özellik sayfası
 
-Yerel Windows masaüstü programları için yapı, [kaynak derleyicisini (rc.exe)](/windows/win32/menurc/resource-compiler) ikili ye resim, dize tabloları ve *.res* dosyalarını eklemek için çağırır. Bu özellik sayfasında açığa çıkan özellikler Kaynak Derleyicisine aktarılır, C++ derleyicisine veya bağlayıcıya değil. Burada listelenen özellikler ve RC komut satırı seçenekleriyle nasıl eşlendikleri hakkında daha fazla bilgi için [bkz.](/windows/win32/menurc/using-rc-the-rc-command-line-) **Kaynaklar** özellik sayfalarına nasıl erişilisin, [Bkz. C++ derleyicisi ayarla ve Visual Studio'da özellikler oluşturmak.](../working-with-project-properties.md) Bu özelliklere programlı olarak <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool>erişmek için bkz.
+Yerel Windows Masaüstü programlarında, derleme, ikili dosyaya görüntü, dize tabloları ve *. res* dosyaları eklemek Için [kaynak derleyicisini (rc.exe)](/windows/win32/menurc/resource-compiler) çağırır. Bu özellik sayfasında gösterilen özellikler, C++ derleyicisine veya bağlayıcıya değil kaynak derleyiciye geçirilir. Burada listelenen özellikler ve RC komut satırı seçeneklerine nasıl eşlendikleri hakkında daha fazla bilgi için bkz. [RC kullanma (rc komut satırı)](/windows/win32/menurc/using-rc-the-rc-command-line-). **Kaynak** özelliği sayfalarına erişme hakkında daha fazla bilgi için bkz. [Visual Studio 'da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md). Bu özelliklere programlı bir şekilde erişmek için bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCResourceCompilerTool> ..
 
-C++/CLI uygulamalarındaki .NET kaynaklarının özellikleri [Yönetilen Kaynaklar Özelliği Sayfasında](managed-resources-property-page.md)açıklanır.
+C++/CLı uygulamalarında .NET kaynaklarının özellikleri, [yönetilen kaynaklar özellik sayfasında](managed-resources-property-page.md)gösterilir.
 
-## <a name="preprocessor-definitions"></a>Önişlemci Tanımları
+## <a name="preprocessor-definitions"></a>Önişlemci tanımları
 
-Kaynak derleyicisi için bir veya daha fazla tanım belirtir. (/d[makro])
+Kaynak derleyicisi için bir veya daha fazla tanımlar belirtir. (/d [makro])
 
-## <a name="undefine-preprocessor-definitions"></a>Tanımsız Önİşlemci Tanımları
+## <a name="undefine-preprocessor-definitions"></a>Önişlemci tanımlarının tanımı kaldırılıyor
 
-Bir sembolü tanımlamıyor. (/u)
+Bir simgenin tanımlanunnu kaldır. p
 
 ## <a name="culture"></a>Kültür
 
-Kaynaklarda kullanılan kültürü (ABD İngilizcesi veya İtalyanca gibi) listeler. (/l [num])
+Kaynaklarda kullanılan kültürü (ABD Ingilizcesi veya Italyanca gibi) listeler. (/l [sayı])
 
-## <a name="additional-include-directories"></a>Ek Dahil Dizinler
+## <a name="additional-include-directories"></a>Ek Içerme dizinleri
 
-İçle yoluna eklenecek bir veya daha fazla dizin belirtir; birden fazla ise yarı kolon delimiter kullanın. (/I[yol])
+Ekleme yoluna eklenecek bir veya daha fazla dizin belirtir; birden fazlaysa noktalı virgül sınırlayıcısı kullanın. (/I [yol])
 
-## <a name="ignore-standard-include-paths"></a>Standardı Yoksay Yollar
+## <a name="ignore-standard-include-paths"></a>Standart Içerme yollarını yoksay
 
-Kaynak derleyicisinin INCLUDE ortam değişkenlerinde belirtilen dizinlere dahil dosyaları aramasını engeller. (/X)
+Kaynak derleyicisinin ıNCLUDE ortam değişkenlerinde belirtilen dizinlerde bulunan içerme dosyalarını aramasını engeller. /X
 
-## <a name="show-progress"></a>İlerlemeyi Göster
+## <a name="show-progress"></a>Ilerlemeyi göster
 
-Çıkış penceresine ilerleme iletileri gönderin. (/v)
+İlerleme iletilerini çıkış penceresine gönder. çıktıda
 
-## <a name="suppress-startup-banner"></a>Başlangıç Banner'ı bastır
+## <a name="suppress-startup-banner"></a>Başlangıç başlığını gösterme
 
-Başlangıç afişinin ve bilgi iletisinin (/nologo) görüntülenmesini bastırma
+Başlangıç başlığının ve bilgi iletisinin görüntülenmesini engelle (/nologo)
 
-## <a name="resource-file-name"></a>Kaynak Dosya Adı
+## <a name="resource-file-name"></a>Kaynak dosya adı
 
-Kaynak dosyasının adını belirtir (/fo[dosya])
+Kaynak dosyasının adını belirtir (/fo [dosya])
 
-## <a name="null-terminate-strings"></a>Null Sonlandırma Dizeleri
+## <a name="null-terminate-strings"></a>Null sonlandırma dizeleri
 
-Dize tablolarındaki tüm dizeleri için null's ekleme. (/n)
+Dize tablolarındaki tüm dizelere null değeri ekleyin. /n
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ proje özelliği sayfası başvurusu](property-pages-visual-cpp.md)
+[C++ proje özellik sayfası başvurusu](property-pages-visual-cpp.md)

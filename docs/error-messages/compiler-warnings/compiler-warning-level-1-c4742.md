@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Derleyici Uyarısı (düzey 1) C4742'
 title: Derleyici Uyarısı (düzey 1) C4742
 ms.date: 07/22/2020
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4742
 ms.assetid: e520881d-1eeb-48b1-9df0-8017ee8ba076
-ms.openlocfilehash: e6ecd082a9f6d690414761d11d3a0adf101f87c2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 009c8b894b9c53d3a0c802dbb0f5786fc9934b57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233242"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228527"
 ---
 # <a name="compiler-warning-level-1-c4742"></a>Derleyici Uyarısı (düzey 1) C4742
 

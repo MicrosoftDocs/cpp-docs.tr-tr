@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _CRTDBG_MAP_ALLOC'
 title: _CRTDBG_MAP_ALLOC
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,19 +10,19 @@ helpviewer_keywords:
 - memory allocation, in debug builds
 - CRTDBG_MAP_ALLOC macro
 ms.assetid: 435242b8-caea-4063-b765-4a608200312b
-ms.openlocfilehash: 8bcb0f5ea26218b74034eb0a41199a1104ba944d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e2747f6da04c019b551e68c78f6f1448c48093f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62344778"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224276"
 ---
-# <a name="crtdbgmapalloc"></a>_CRTDBG_MAP_ALLOC
+# <a name="_crtdbg_map_alloc"></a>_CRTDBG_MAP_ALLOC
 
-Zaman **_CRTDBG_MAP_ALLOC** bayrağı, bir uygulama hata ayıklama sürümünde tanımlanır, yığın işlevlerinin temel sürümünü doğrudan hata ayıklama sürümlerine eşlendi. Bayrağı, Crtdbg.h eşleme yapmak için kullanılır. Bu bayrağı yalnızca kullanılabilir [_DEBUG](../c-runtime-library/debug.md) bayrağı uygulamada tanımlanmış.
+**_CRTDBG_MAP_ALLOC** bayrağı bir uygulamanın hata ayıklama sürümünde tanımlandığında, yığın işlevlerinin temel sürümü doğrudan hata ayıklama sürümleriyle eşleştirilir. Bayrak, eşleme yapmak için Crtdbg. h içinde kullanılır. Bu bayrak yalnızca uygulamada [_DEBUG](../c-runtime-library/debug.md) bayrağı tanımlandığında kullanılabilir.
 
-Bir yığın işlevi temel sürümünü ve hata ayıklama sürümü kullanma hakkında daha fazla bilgi için bkz. [hata ayıklama sürümü karşı temel sürümünü kullanarak](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Hata ayıklama sürümünü bir yığın işlevinin temel sürümüne karşı kullanma hakkında daha fazla bilgi için, bkz. [temel sürüme karşı hata ayıklama sürümünü kullanma](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Denetim Bayrakları](../c-runtime-library/control-flags.md)
+[Denetim bayrakları](../c-runtime-library/control-flags.md)

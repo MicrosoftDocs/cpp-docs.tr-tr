@@ -1,5 +1,6 @@
 ---
-title: '&lt;açıklamalar > (C++ belge açıklamaları)'
+description: 'Daha fazla bilgi edinin: &lt; açıklamalar&gt;'
+title: '&lt;açıklamalar> (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - remarks
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - <remarks> C++ XML tag
 - remarks C++ XML tag
 ms.assetid: c820083b-3192-40ab-9ec8-1472c55b4247
-ms.openlocfilehash: 096280526b12feff33377a705f7c03548a1f0f13
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 0c919ba3101282fd755450489eacc6c0800fb437
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225225"
 ---
-# <a name="ltremarksgt"></a>&lt;açıklamalar&gt;
+# <a name="ltremarksgt"></a>&lt;açıklamalarının&gt;
 
-\<açıklamalar > etiketi, [\<özet >](summary-visual-cpp.md)ile belirtilen bilgileri kullanarak bir tür hakkında bilgi eklemek için kullanılır. Bu bilgiler [nesne tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code) ve kod açıklaması Web raporunda görüntülenir.
+\<remarks>Etiketi, ile belirtilen bilgileri kullanarak bir tür hakkında bilgi eklemek için kullanılır [\<summary>](summary-visual-cpp.md) . Bu bilgiler [nesne tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code) ve kod açıklaması Web raporunda görüntülenir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,7 +28,7 @@ ms.locfileid: "74988655"
 
 #### <a name="parameters"></a>Parametreler
 
-*description*<br/>
+*açıklaması*<br/>
 Üyenin açıklaması.
 
 ## <a name="remarks"></a>Açıklamalar

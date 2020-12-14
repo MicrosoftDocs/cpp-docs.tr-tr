@@ -1,4 +1,5 @@
 ---
+description: Şu konuda daha fazla bilgi edinin:/STACK (yığın ayırmaları)
 title: /STACK (Yığın Ayırmaları)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - /STACK linker option
 - stack, setting size
 ms.assetid: 73283660-e4bd-47cc-b5ca-04c5d739034c
-ms.openlocfilehash: 27de554e1933b2753f641be358461c8d7ff4fffa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6e74b508d8cdb2340c73360bf35272d9113a0f75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317932"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224475"
 ---
 # <a name="stack-stack-allocations"></a>/STACK (Yığın Ayırmaları)
 
@@ -27,35 +28,35 @@ ms.locfileid: "62317932"
 
 ## <a name="remarks"></a>Açıklamalar
 
-/STACK seçeneği, yığın boyunu bayt cinsinden ayarlar. Bir .exe dosyası oluşturduğunuzda bu seçeneği kullanın.
+/STACK seçeneği, yığının boyutunu bayt cinsinden ayarlar. Bu seçeneği yalnızca bir. exe dosyası oluşturduğunuzda kullanın.
 
-`reserve` Değeri sanal bellekte toplam yığın ayırma belirtir. ARM için x86 ve x64 makineler, varsayılan yığın boyutu 1 MB olan.
+`reserve`Değer, sanal bellekteki toplam yığın ayırmayı belirtir. ARM, x86 ve x64 makineler için varsayılan yığın boyutu 1 MB 'tır.
 
-`commit` işletim sistemi tarafından yorumu tabidir. Windows WindowsRT içinde aynı anda ayrılacak fiziksel bellek miktarını belirtir. Yürütülen sanal bellek disk belleği dosyasında ayrılacak alanı neden olur. Daha yüksek bir `commit` değeri kaydeder zaman zaman uygulama daha fazla yığın alanı gerekiyor, ancak bellek gereksinimleri ve büyük olasılıkla başlangıç süresini artırır. ARM için 4 KB x86 ve x64 makineler, varsayılan işleme değer olur.
+`commit` , işletim sistemi tarafından yorumlamayı tabidir. Windows WindowsRT 'de, aynı anda ayrılacak fiziksel bellek miktarını belirtir. Yürütülen sanal bellek, disk belleği dosyasında ayrılan alanın ayrılmasına neden olur. `commit`Uygulamanın daha fazla yığın alanına ihtiyacı olduğunda daha yüksek bir değer zaman kazandırır, ancak bellek gereksinimlerini ve muhtemelen başlangıç süresini arttırır. ARM, x86 ve x64 makineler için varsayılan tamamlama değeri 4 KB 'tır.
 
-Belirtin `reserve` ve `commit` değerleri ondalık ya da C dili gösterimi.
+`reserve` `commit` Ondalık veya C dili gösteriminde ve değerlerini belirtin.
 
-Yığın boyutunu ayarlamak için başka bir yöntem, [STACKSIZE](stacksize.md) deyiminde bir modül-tanımlama (.def) dosyası. **STACKSIZE** yığın ayırmaları geçersiz kılar. (/ yığın) her ikisi de belirtilirse seçeneği. .Exe dosyasını kullanarak oluşturulduktan sonra yığın boyutu değiştirebilirsiniz [EDITBIN](editbin-reference.md) aracı.
+Yığının boyutunu ayarlamaya yönelik başka bir yöntem de modül tanımı (. def) dosyasındaki [STACKSIZE](stacksize.md) deyimidir. **STACKSIZE** , her ikisi de belirtilmişse yığın ayırmaları (/Stack) seçeneğini geçersiz kılar. . Exe dosyası [editbin](editbin-reference.md) Aracı kullanılarak derlendikten sonra yığın boyutunu değiştirebilirsiniz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörünü seçin.
 
-1. Seçin **sistem** özellik sayfası.
+1. **Sistem** özellik sayfasını seçin.
 
 1. Aşağıdaki özelliklerden birini değiştirin:
 
-   - **Yığın işleme boyutu**
+   - **Yığın kayıt boyutu**
 
    - **Yığın ayırma boyutu**
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
-1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackCommitSize%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackReserveSize%2A> özellikleri.
+1. Bkz <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackCommitSize%2A> <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StackReserveSize%2A> . ve Özellikler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

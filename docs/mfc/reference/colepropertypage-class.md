@@ -1,5 +1,6 @@
 ---
-title: COlePropertyPage Sınıfı
+description: 'Daha fazla bilgi edinin: COlePropertyPage sınıfı'
+title: COlePropertyPage sınıfı
 ms.date: 11/04/2016
 f1_keywords:
 - COlePropertyPage
@@ -38,18 +39,18 @@ helpviewer_keywords:
 - COlePropertyPage [MFC], SetModifiedFlag
 - COlePropertyPage [MFC], SetPageName
 ms.assetid: e9972872-8e6b-4550-905e-d36a274d64dc
-ms.openlocfilehash: 872ade08438e54098da730012f98cdd906483887
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 56d5696e16a347bab5ed154faf9038c6add446dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753796"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226733"
 ---
-# <a name="colepropertypage-class"></a>COlePropertyPage Sınıfı
+# <a name="colepropertypage-class"></a>COlePropertyPage sınıfı
 
-Özel denetimözelliklerini bir iletişim kutusuna benzer bir grafik arabiriminde görüntülemek için kullanılır.
+Bir iletişim kutusuna benzer şekilde bir grafik arabirimde özel bir denetimin özelliklerini göstermek için kullanılır.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 class AFX_NOVTABLE COlePropertyPage : public CDialog
@@ -59,57 +60,57 @@ class AFX_NOVTABLE COlePropertyPage : public CDialog
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COlePropertyPage::COlePropertyPage](#colepropertypage)|Bir `COlePropertyPage` nesne inşa eder.|
+|[COlePropertyPage:: COlePropertyPage](#colepropertypage)|Bir `COlePropertyPage` nesnesi oluşturur.|
 
 ### <a name="public-methods"></a>Ortak Yöntemler
 
-|Adı|Açıklama|
+|Ad|Açıklama|
 |----------|-----------------|
-|[COlePropertyPage::GetControlStatus](#getcontrolstatus)|Kullanıcının denetimdeki değeri değiştirip değiştirmediğini gösterir.|
-|[COlePropertyPage::GetObjectArray](#getobjectarray)|Özellik sayfası tarafından düzenlenen nesne dizisini döndürür.|
-|[COlePropertyPage::GetPageSite](#getpagesite)|Özellik sayfasının `IPropertyPageSite` arabirimine bir işaretçi döndürür.|
-|[COlePropertyPage::IgnoreApply](#ignoreapply)|Hangi denetimlerin Uygula düğmesini etkinleştirmediğini belirler.|
-|[COlePropertyPage::Değiştirilmiştir](#ismodified)|Kullanıcının özellik sayfasını değiştirip değiştirmediğini gösterir.|
-|[COlePropertyPage::OnEditProperty](#oneditproperty)|Kullanıcı bir özelliği düzenlediğinde çerçeve tarafından çağrılır.|
-|[COlePropertyPage::OnHelp](#onhelp)|Kullanıcı yardım çağırdığında çerçeve tarafından çağrılır.|
-|[COlePropertyPage::OnInitDialog](#oninitdialog)|Özellik sayfası başharfe çevrilirken çerçeve tarafından çağrılır.|
-|[COlePropertyPage::OnObjectsChanged](#onobjectschanged)|Yeni özelliklere sahip başka bir OLE denetimi seçildiğinde çerçeve tarafından çağrılır.|
-|[COlePropertyPage::OnSetPageSite](#onsetpagesite)|Özellik çerçevesi sayfanın sitesini sağladığında çerçeve tarafından çağrılır.|
-|[COlePropertyPage::SetControlStatus](#setcontrolstatus)|Kullanıcının denetimdeki değeri değiştirip değiştirmediğini belirten bir bayrak ayarlar.|
-|[COlePropertyPage::SetDialogResource](#setdialogresource)|Özellik sayfasının iletişim kaynağını ayarlar.|
-|[COleEmlakPage::SetHelpInfo](#sethelpinfo)|Özellik sayfasının kısa yardım metnini, yardım dosyasının adını ve yardım bağlamını ayarlar.|
-|[COlePropertyPage::SetModifiedFlag](#setmodifiedflag)|Kullanıcının özellik sayfasını değiştirip değiştirmediğini belirten bir bayrak ayarlar.|
-|[COlePropertyPage::SetPageName](#setpagename)|Özellik sayfasının adını (resim yazısı) ayarlar.|
+|[COlePropertyPage:: GetControlStatus](#getcontrolstatus)|Kullanıcının denetimdeki değeri değiştirilip değiştirilmediğini belirtir.|
+|[COlePropertyPage:: GetObjectArray](#getobjectarray)|Özellik sayfası tarafından düzenlenmekte olan nesnelerin dizisini döndürür.|
+|[COlePropertyPage:: GetPageSite](#getpagesite)|Özellik sayfasının arabirimine bir işaretçi döndürür `IPropertyPageSite` .|
+|[COlePropertyPage:: IgnoreApply](#ignoreapply)|Hangi denetimlerin Uygula düğmesini etkinleştirmeyeceğini belirler.|
+|[COlePropertyPage:: IsModified](#ismodified)|Kullanıcının özellik sayfasını değiştirilip değiştirilmediğini belirtir.|
+|[COlePropertyPage:: OnEditProperty](#oneditproperty)|Kullanıcı bir özelliği düzenlediğinde Framework tarafından çağırılır.|
+|[COlePropertyPage:: OnHelp](#onhelp)|Kullanıcı yardım istediğinde framework tarafından çağırılır.|
+|[COlePropertyPage:: OnInitDialog](#oninitdialog)|Özellik sayfası başlatıldığında Framework tarafından çağırılır.|
+|[COlePropertyPage:: Onnesneler değişti](#onobjectschanged)|Yeni özelliklerle başka bir OLE denetimi seçildiğinde Framework tarafından çağırılır.|
+|[COlePropertyPage:: OnSetPageSite](#onsetpagesite)|Özellik çerçevesi sayfanın sitesini sağladığı zaman Framework tarafından çağırılır.|
+|[COlePropertyPage:: SetControlStatus](#setcontrolstatus)|Kullanıcının denetimdeki değeri değiştirip değiştirilmediğini belirten bir bayrak ayarlar.|
+|[COlePropertyPage:: SetDialogResource](#setdialogresource)|Özellik sayfasının iletişim kaynağını ayarlar.|
+|[COlePropertyPage:: SetHelpInfo](#sethelpinfo)|Özellik sayfasının kısa yardım metnini, yardım dosyasının adını ve yardım bağlamını ayarlar.|
+|[COlePropertyPage:: SetModifiedFlag](#setmodifiedflag)|Kullanıcının özellik sayfasını değiştirmediğini belirten bir bayrak ayarlar.|
+|[COlePropertyPage:: SetPageName](#setpagename)|Özellik sayfasının adını (resim yazısı) ayarlar.|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Örneğin, bir özellik sayfası, kullanıcının denetimin resim yazısı özelliğini görüntülemesine ve değiştirmesine olanak tanıyan bir denetim içerebilir.
+Örneğin, bir özellik sayfası kullanıcının denetimin açıklamalı başlık özelliğini görüntülemesine ve değiştirmesine izin veren bir düzenleme denetimi içerebilir.
 
-Her özel veya stok denetimi özelliği, denetimin kullanıcısının geçerli özellik değerini görüntülemesine ve gerekirse bu değeri değiştirmesine olanak tanıyan bir iletişim denetimine sahip olabilir.
+Her özel veya hisse senedi denetim özelliği, denetimin kullanıcısının geçerli özellik değerini görüntülemesine ve gerekirse bu değeri değiştirmesine izin veren bir iletişim kutusu denetimine sahip olabilir.
 
-Kullanma `COlePropertyPage`hakkında daha fazla bilgi için [ActiveX Denetimleri makalesine bakın: Özellik Sayfaları.](../../mfc/mfc-activex-controls-property-pages.md)
+Kullanma hakkında daha fazla bilgi için `COlePropertyPage` bkz. [ActiveX denetimleri: Özellik sayfaları](../../mfc/mfc-activex-controls-property-pages.md).
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[Cobject](../../mfc/reference/cobject-class.md)
+[CObject](../../mfc/reference/cobject-class.md)
 
-[Ccmdtarget](../../mfc/reference/ccmdtarget-class.md)
+[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)
 
-[Cwnd](../../mfc/reference/cwnd-class.md)
+[CWnd](../../mfc/reference/cwnd-class.md)
 
-[Cdialog](../../mfc/reference/cdialog-class.md)
+[CDialog](../../mfc/reference/cdialog-class.md)
 
 `COlePropertyPage`
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üstbilgi:** afxctl.h
+**Üst bilgi:** afxctl. h
 
-## <a name="colepropertypagecolepropertypage"></a><a name="colepropertypage"></a>COlePropertyPage::COlePropertyPage
+## <a name="colepropertypagecolepropertypage"></a><a name="colepropertypage"></a> COlePropertyPage:: COlePropertyPage
 
-Bir `COlePropertyPage` nesne inşa eder.
+Bir `COlePropertyPage` nesnesi oluşturur.
 
 ```
 COlePropertyPage(
@@ -119,19 +120,19 @@ COlePropertyPage(
 
 ### <a name="parameters"></a>Parametreler
 
-*idDlg*<br/>
-İletişim şablonunun kaynak kimliği.
+*ıddlg*<br/>
+İletişim kutusu şablonunun kaynak KIMLIĞI.
 
-*idCaption*<br/>
-Özellik sayfasının başlığının kaynak kimliği.
+*ıdcaption*<br/>
+Özellik sayfasının başlık başlığının kaynak KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir alt sınıf `COlePropertyPage`uyguladığınızda, alt sınıfının oluşturucusu, özellik sayfasının temel aldığı iletişim şablonu kaynağını ve alt yazı sını içeren dize kaynağını tanımlamak için `COlePropertyPage` oluşturucuyu kullanmalıdır.
+Bir alt sınıfını uyguladığınızda `COlePropertyPage` , alt sınıfınızın Oluşturucusu, `COlePropertyPage` Özellik sayfasının temel aldığı iletişim şablonu kaynağını ve başlığını içeren dize kaynağını belirlemek için oluşturucuyu kullanmalıdır.
 
-## <a name="colepropertypagegetcontrolstatus"></a><a name="getcontrolstatus"></a>COlePropertyPage::GetControlStatus
+## <a name="colepropertypagegetcontrolstatus"></a><a name="getcontrolstatus"></a> COlePropertyPage:: GetControlStatus
 
-Kullanıcının özellik sayfası denetiminin değerini belirtilen kaynak kimliğiyle değiştirip değiştirmediğini belirler.
+Kullanıcının özellik sayfası denetiminin değerini belirtilen kaynak KIMLIĞIYLE değiştirip değiştirilmediğini belirler.
 
 ```
 BOOL GetControlStatus(UINT nID);
@@ -139,16 +140,16 @@ BOOL GetControlStatus(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-Özellik sayfası denetiminin kaynak kimliği.
+*NID*<br/>
+Özellik sayfası denetiminin kaynak KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Denetim değeri değiştirildiyse DOĞRU; aksi takdirde YANLIŞ.
+Denetim değeri değiştirilmişse TRUE; Aksi halde yanlış.
 
-## <a name="colepropertypagegetobjectarray"></a><a name="getobjectarray"></a>COlePropertyPage::GetObjectArray
+## <a name="colepropertypagegetobjectarray"></a><a name="getobjectarray"></a> COlePropertyPage:: GetObjectArray
 
-Özellik sayfası tarafından düzenlenen nesne dizisini döndürür.
+Özellik sayfası tarafından düzenlenmekte olan nesnelerin dizisini döndürür.
 
 ```
 LPDISPATCH* GetObjectArray(ULONG* pnObjects);
@@ -156,20 +157,20 @@ LPDISPATCH* GetObjectArray(ULONG* pnObjects);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnNesneler*<br/>
-Sayfa tarafından düzenlenen nesne sayısını alacak imzasız uzun bir sayama işaretçisi.
+*pnObjects*<br/>
+Sayfa tarafından düzenlenmekte olan nesne sayısını alacak işaretsiz uzun tamsayı işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellik sayfasındaki `IDispatch` her denetimin özelliklerine erişmek için kullanılan bir dizi işaretçiye işaretçi. Arayan bu arabirim işaretçilerini serbest bırakmamalıdır.
+`IDispatch`Özellik sayfasındaki her bir denetimin özelliklerine erişmek için kullanılan işaretçiler dizisine yönelik işaretçi. Çağıranın bu arabirim işaretçilerini serbest bırakmamalıdır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her özellik sayfası nesnesi, sayfa `IDispatch` tarafından düzenlenen nesnelerin arabirimlerine işaretçiler dizisi tutar. Bu *işlev, pnObjects* bağımsız değişkenini bu dizideki öğe sayısına ayarlar ve bir işaretçiyi dizinin ilk öğesine döndürür.
+Her özellik sayfası nesnesi, `IDispatch` sayfa tarafından düzenlenmekte olan nesnelerin arabirimlerine bir dizi işaretçi tutar. Bu işlev, *pnObjects* bağımsız değişkenini bu dizideki öğelerin sayısına ayarlar ve dizinin ilk öğesine bir işaretçi döndürür.
 
-## <a name="colepropertypagegetpagesite"></a><a name="getpagesite"></a>COlePropertyPage::GetPageSite
+## <a name="colepropertypagegetpagesite"></a><a name="getpagesite"></a> COlePropertyPage:: GetPageSite
 
-Özellik sayfasının `IPropertyPageSite` arabirimine bir işaretçi alır.
+Özellik sayfasının arabirimine bir işaretçi alır `IPropertyPageSite` .
 
 ```
 LPPROPERTYPAGESITE GetPageSite();
@@ -177,15 +178,15 @@ LPPROPERTYPAGESITE GetPageSite();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellik sayfasının `IPropertyPageSite` arabirimine işaretçi.
+Özellik sayfasının arabirimine yönelik bir işaretçi `IPropertyPageSite` .
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetimler ve kapsayıcılar, kullanıcıların denetim özelliklerine göz atabilmesi ve düzenlemesi için işbirliği yapar. Denetim, her biri kullanıcının ilgili bir özellik kümesini ayarlamasına olanak tanıyan bir OLE nesnesi olan özellik sayfaları sağlar. Kapsayıcı özellik sayfalarını görüntüleyen bir özellik çerçevesi sağlar. Her sayfa için özellik `IPropertyPageSite` çerçevesi, arabirimi destekleyen bir sayfa sitesi sağlar.
+Denetimler ve kapsayıcılar, kullanıcıların denetim özelliklerine gözatabilmeleri ve düzenleyebilmeleri için birlikte çalışır. Denetim, her biri kullanıcının ilgili özellik kümesini düzenlemesine izin veren bir OLE nesnesi olan özellik sayfaları sağlar. Kapsayıcı, özellik sayfalarını görüntüleyen bir özellik çerçevesi sağlar. Her sayfa için özellik çerçevesi, arabirimi destekleyen bir sayfa sitesi sağlar `IPropertyPageSite` .
 
-## <a name="colepropertypageignoreapply"></a><a name="ignoreapply"></a>COlePropertyPage::IgnoreApply
+## <a name="colepropertypageignoreapply"></a><a name="ignoreapply"></a> COlePropertyPage:: IgnoreApply
 
-Hangi denetimlerin Uygula düğmesini etkinleştirmediğini belirler.
+Hangi denetimlerin Uygula düğmesini etkinleştirmeyeceğini belirler.
 
 ```cpp
 void IgnoreApply(UINT nID);
@@ -193,16 +194,16 @@ void IgnoreApply(UINT nID);
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-Denetimin kimliği yoksayıldı.
+*NID*<br/>
+Yok sayılacak denetimin KIMLIĞI.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik sayfasının Uygula düğmesi yalnızca özellik sayfası denetimlerinin değerleri değiştirildiğinde etkinleştirilir. Değerleri değiştiğinde Uygula düğmesinin etkinleştirilmesine neden olmayan denetimleri belirtmek için bu işlevi kullanın.
+Özellik sayfasının Uygula düğmesi yalnızca özellik sayfası denetimlerinin değerleri değiştirildiğinde etkindir. Değerleri değiştiğinde Uygula düğmesinin etkin olmasına neden olmayan denetimleri belirtmek için bu işlevi kullanın.
 
-## <a name="colepropertypageismodified"></a><a name="ismodified"></a>COlePropertyPage::Değiştirilmiştir
+## <a name="colepropertypageismodified"></a><a name="ismodified"></a> COlePropertyPage:: IsModified
 
-Kullanıcının özellik sayfasındaki değerleri değiştirip değiştirmediğini belirler.
+Kullanıcının özellik sayfasında herhangi bir değeri değiştirip değiştirilmediğini belirler.
 
 ```
 BOOL IsModified();
@@ -210,11 +211,11 @@ BOOL IsModified();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Özellik sayfası değiştirildiyse DOĞRU.
+Özellik sayfası değiştirilmişse TRUE.
 
-## <a name="colepropertypageoneditproperty"></a><a name="oneditproperty"></a>COlePropertyPage::OnEditProperty
+## <a name="colepropertypageoneditproperty"></a><a name="oneditproperty"></a> COlePropertyPage:: OnEditProperty
 
-Çerçeve, belirli bir özellik düzenlenecekse bu işlevi çağırır.
+Belirli bir özellik düzenlenirken Framework bu işlevi çağırır.
 
 ```
 virtual BOOL OnEditProperty(DISPID dispid);
@@ -222,20 +223,20 @@ virtual BOOL OnEditProperty(DISPID dispid);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dıspıd*<br/>
-Düzenlenen özelliğin sevk kimliği.
+*dı*<br/>
+Düzenlenmekte olan özelliğin dağıtım KIMLIĞI.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan uygulama FALSE döndürür. Bu işlevin geçersiz kılar DOĞRU döndürmelidir.
+Varsayılan uygulama yanlış döndürür. Bu işlevin geçersiz kılmaları TRUE döndürmelidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sayfadaki uygun denetime odak ayarlamak için bunu geçersiz kılabilirsiniz. Varsayılan uygulama hiçbir şey yapmaz ve FALSE döndürür.
+Odağı sayfada uygun denetime göre ayarlamak için geçersiz kılabilirsiniz. Varsayılan uygulama hiçbir şey yapmaz ve FALSE döndürür.
 
-## <a name="colepropertypageonhelp"></a><a name="onhelp"></a>COlePropertyPage::OnHelp
+## <a name="colepropertypageonhelp"></a><a name="onhelp"></a> COlePropertyPage:: OnHelp
 
-Kullanıcı çevrimiçi yardım istediğinde çerçeve bu işlevi çağırır.
+Kullanıcı çevrimiçi yardım istediğinde framework bu işlevi çağırır.
 
 ```
 virtual BOOL OnHelp(LPCTSTR lpszHelpDir);
@@ -248,15 +249,15 @@ virtual BOOL OnHelp(LPCTSTR lpszHelpDir);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan uygulama FALSE döndürür.
+Varsayılan uygulama yanlış döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kullanıcı yardıma erişirken özellik sayfanızın herhangi bir özel eylem gerçekleştirmesi gerekiyorsa geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz ve winhelp aramak için çerçeve talimatFALSE döndürür.
+Özellik sayfanız, Kullanıcı yardım 'a eriştiğinde özel bir eylem gerçekleştirmek zorunda ise bunu geçersiz kılın. Varsayılan uygulama hiçbir şey yapmaz ve FALSE döndürür. Bu, çerçeveye WinHelp çağrısını yönlendirir.
 
-## <a name="colepropertypageoninitdialog"></a><a name="oninitdialog"></a>COlePropertyPage::OnInitDialog
+## <a name="colepropertypageoninitdialog"></a><a name="oninitdialog"></a> COlePropertyPage:: OnInitDialog
 
-Özellik sayfasının iletişim kutusu başharfe başlandığında çerçeve bu işlevi çağırır.
+Özellik sayfasının iletişim kutusu başlatıldığında Framework bu işlevi çağırır.
 
 ```
 virtual BOOL OnInitDialog();
@@ -264,15 +265,15 @@ virtual BOOL OnInitDialog();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Varsayılan uygulama FALSE döndürür.
+Varsayılan uygulama yanlış döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İletişim kutusu başolarak başlattığında özel bir eylem gerekiyorsa geçersiz kılın. Varsayılan uygulama `CDialog::OnInitDialog` çağırır ve FALSE döndürür.
+İletişim kutusu başlatıldığında özel bir eylem gerekliyse Bunu geçersiz kılın. Varsayılan uygulama çağırır `CDialog::OnInitDialog` ve false döndürür.
 
-## <a name="colepropertypageonobjectschanged"></a><a name="onobjectschanged"></a>COlePropertyPage::OnObjectsChanged
+## <a name="colepropertypageonobjectschanged"></a><a name="onobjectschanged"></a> COlePropertyPage:: Onnesneler değişti
 
-Yeni özelliklere sahip başka bir OLE denetimi seçildiğinde çerçeve tarafından çağrılır.
+Yeni özelliklerle başka bir OLE denetimi seçildiğinde Framework tarafından çağırılır.
 
 ```
 virtual void OnObjectsChanged();
@@ -280,13 +281,13 @@ virtual void OnObjectsChanged();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geliştirici ortamında bir OLE denetiminin özelliklerini görüntülerken, özellik sayfalarını görüntülemek için modsuz bir iletişim kutusu kullanılır. Başka bir denetim seçilirse, yeni özellik kümesi için farklı bir özellik sayfası kümesinin görüntülenmesi gerekir. Çerçeve, değişikliğin özellik sayfasını bildirmek için bu işlevi çağırır.
+Geliştirici ortamında OLE denetiminin özelliklerini görüntülerken, özellik sayfalarını görüntülemek için kalıcı olmayan bir iletişim kutusu kullanılır. Başka bir denetim seçilirse, yeni özellikler kümesi için farklı bir özellik sayfaları kümesi görüntülenmelidir. Framework, değişikliğin Özellik sayfasına bildirimde bulunan bu işlevi çağırır.
 
 Bu eylemin bildirimini almak ve özel eylemler gerçekleştirmek için bu işlevi geçersiz kılın.
 
-## <a name="colepropertypageonsetpagesite"></a><a name="onsetpagesite"></a>COlePropertyPage::OnSetPageSite
+## <a name="colepropertypageonsetpagesite"></a><a name="onsetpagesite"></a> COlePropertyPage:: OnSetPageSite
 
-Özellik çerçevesi özellik sayfasının sayfa sitesini sağladığında çerçeve bu işlevi çağırır.
+Özellik çerçevesi Özellik sayfasının sayfa sitesini sağladığı zaman Framework bu işlevi çağırır.
 
 ```
 virtual void OnSetPageSite();
@@ -294,9 +295,9 @@ virtual void OnSetPageSite();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama sayfanın alt yazısını yükler ve iletişim kaynağından sayfanın boyutunu belirlemeye çalışır. Özellik sayfanız başka bir işlem gerektiriyorsa bu işlevi geçersiz kılın; geçersiz kılmanız taban sınıf uygulamasını aramalıdır.
+Varsayılan uygulama sayfanın başlığını yükler ve iletişim kaynağından sayfanın boyutunu saptamaya çalışır. Özellik sayfanız başka bir eylem gerektiriyorsa bu işlevi geçersiz kılın; geçersiz kılma, temel sınıf uygulamasını çağırmalıdır.
 
-## <a name="colepropertypagesetcontrolstatus"></a><a name="setcontrolstatus"></a>COlePropertyPage::SetControlStatus
+## <a name="colepropertypagesetcontrolstatus"></a><a name="setcontrolstatus"></a> COlePropertyPage:: SetControlStatus
 
 Özellik sayfası denetiminin durumunu değiştirir.
 
@@ -308,21 +309,21 @@ BOOL SetControlStatus(
 
 ### <a name="parameters"></a>Parametreler
 
-*Nıd*<br/>
-Özellik sayfası denetiminin kimliğini içerir.
+*NID*<br/>
+Özellik sayfası denetiminin KIMLIĞINI içerir.
 
-*bKirli*<br/>
-Özellik sayfasının bir alanı değiştirilmişse belirtir. Alan değiştirildiyse TRUE olarak ayarlayın, değiştirilmemişse FALSE.
+*bDirty*<br/>
+Özellik sayfasının bir alanının değiştirilip değiştirilmediğini belirtir. Alan değiştirildiyse TRUE olarak ayarlayın, bu değer değiştirilmediyse FALSE.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-DOĞRU, belirtilen denetim ayarlanmışsa; aksi takdirde YANLIŞ.
+Belirtilen denetim ayarlandıysa TRUE; Aksi halde yanlış.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Özellik sayfası kapatıldığında veya Uygula düğmesi seçildiğinde özellik sayfası denetiminin durumu kirliyse, denetimin özelliği uygun değerle güncelleştirilir.
+Özellik sayfası kapalıyken veya Uygula düğmesi seçildiğinde bir özellik sayfası denetiminin durumu kirli ise, denetimin özelliği uygun değerle güncelleştirilir.
 
-## <a name="colepropertypagesetdialogresource"></a><a name="setdialogresource"></a>COlePropertyPage::SetDialogResource
+## <a name="colepropertypagesetdialogresource"></a><a name="setdialogresource"></a> COlePropertyPage:: SetDialogResource
 
 Özellik sayfasının iletişim kaynağını ayarlar.
 
@@ -333,11 +334,11 @@ void SetDialogResource(HGLOBAL hDialog);
 ### <a name="parameters"></a>Parametreler
 
 *hDialog*<br/>
-Özellik sayfasının iletişim kaynağına işleyin.
+Özellik sayfasının iletişim kaynağı için tanıtıcı.
 
-## <a name="colepropertypagesethelpinfo"></a><a name="sethelpinfo"></a>COleEmlakPage::SetHelpInfo
+## <a name="colepropertypagesethelpinfo"></a><a name="sethelpinfo"></a> COlePropertyPage:: SetHelpInfo
 
-Araç ipucu bilgilerini, yardım dosya adını ve özellik sayfanızın yardım bağlamını belirtir.
+Araç ipucu bilgilerini, yardım dosya adını ve özellik sayfanız için yardım bağlamını belirtir.
 
 ```cpp
 void SetHelpInfo(
@@ -349,7 +350,7 @@ void SetHelpInfo(
 ### <a name="parameters"></a>Parametreler
 
 *lpszDocString*<br/>
-Durum çubuğunda veya başka bir konumda görüntülenmek için kısa yardım bilgilerini içeren bir dize.
+Bir durum çubuğunda veya başka bir konumda görüntülenmek üzere kısa yardım bilgisi içeren bir dize.
 
 *lpszHelpFile*<br/>
 Özellik sayfasının yardım dosyasının adı.
@@ -357,9 +358,9 @@ Durum çubuğunda veya başka bir konumda görüntülenmek için kısa yardım b
 *dwHelpContext*<br/>
 Özellik sayfası için yardım bağlamı.
 
-## <a name="colepropertypagesetmodifiedflag"></a><a name="setmodifiedflag"></a>COlePropertyPage::SetModifiedFlag
+## <a name="colepropertypagesetmodifiedflag"></a><a name="setmodifiedflag"></a> COlePropertyPage:: SetModifiedFlag
 
-Kullanıcının özellik sayfasını değiştirip değiştirmediğini gösterir.
+Kullanıcının özellik sayfasını değiştirilip değiştirilmediğini belirtir.
 
 ```cpp
 void SetModifiedFlag(BOOL bModified = TRUE);
@@ -367,12 +368,12 @@ void SetModifiedFlag(BOOL bModified = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bModideğişiklik*<br/>
+*bModified*<br/>
 Özellik sayfasının değiştirilmiş bayrağı için yeni değeri belirtir.
 
-## <a name="colepropertypagesetpagename"></a><a name="setpagename"></a>COlePropertyPage::SetPageName
+## <a name="colepropertypagesetpagename"></a><a name="setpagename"></a> COlePropertyPage:: SetPageName
 
-Özellik sayfasının adını ayarlar ve özellik çerçevesi genellikle sayfanın sekmesinde görüntülenir.
+Özellik çerçevesinin, genellikle sayfanın sekmesinde görüntüleyeceği Özellik sayfasının adını ayarlar.
 
 ```cpp
 void SetPageName(LPCTSTR lpszPageName);
@@ -385,8 +386,8 @@ void SetPageName(LPCTSTR lpszPageName);
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Örnek CIRC3](../../overview/visual-cpp-samples.md)<br/>
-[MFC Örnek TESTYARD](../../overview/visual-cpp-samples.md)<br/>
-[CDialog Sınıfı](../../mfc/reference/cdialog-class.md)<br/>
-[Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)<br/>
-[CDialog Sınıfı](../../mfc/reference/cdialog-class.md)
+[MFC örnek CIRC3](../../overview/visual-cpp-samples.md)<br/>
+[MFC örnek TESTHELP](../../overview/visual-cpp-samples.md)<br/>
+[CDialog sınıfı](../../mfc/reference/cdialog-class.md)<br/>
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)<br/>
+[CDialog sınıfı](../../mfc/reference/cdialog-class.md)

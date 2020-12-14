@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/PDBÇıKARıLDı (özel sembolleri çıkar)
 title: /PDBSTRIPPED (Özel Simgeleri Çıkart)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - PDB files, stripping private symbols
 - PDBSTRIPPED linker option
 ms.assetid: 9b9e0070-6a13-4142-8180-19c003fbbd55
-ms.openlocfilehash: 3ed36eca727a15a3c70bc51a07cd3c143d7f66da
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 27e70281ad12f4401ad6557ead9be11a38684472
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320142"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226044"
 ---
 # <a name="pdbstripped-strip-private-symbols"></a>/PDBSTRIPPED (Özel Simgeleri Çıkart)
 
@@ -27,39 +28,39 @@ ms.locfileid: "62320142"
 ## <a name="arguments"></a>Arguments
 
 *pdb_file_name*<br/>
-Bir kullanıcı tarafından belirtilen ad bağlayıcının oluşturduğu kesilmiş program veritabanı (PDB).
+Bağlayıcı tarafından oluşturulan, kesilmiş program veritabanı (PDB) için Kullanıcı tarafından belirtilen bir ad.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bir PDB dosyası üretmek seçenekleri herhangi bir derleyici veya bağlayıcı ile program görüntüsünü oluşturduğunuzda/pdbstrıpped seçeneği, ikinci program veritabanı (PDB) dosyası oluşturur. ([/DEBUG](debug-generate-debug-info.md), [/z7](z7-zi-zi-debug-information-format.md), / ZD, veya /Zi). Bu ikinci PDB dosyası, size gönderilen müşterilerinize istemezsiniz sembolleri atar. İkinci PDB dosyası yalnızca içerir:
+/PDBÇıKARıLDı seçeneği, bir PDB dosyası ([/Debug](debug-generate-debug-info.md), [/Z7](z7-zi-zi-debug-information-format.md),/ZD veya/Zi) oluşturan derleyici veya bağlayıcı seçeneklerinden herhangi biriyle program görüntünüzü oluştururken ıkıncı program veritabanı (pdb) dosyası oluşturur. Bu ikinci PDB dosyası, müşterilerinize göndermek istemediğiniz sembolleri atlar. İkinci PDB dosyası yalnızca şunları içerir:
 
 - Ortak semboller
 
-- Nesne dosyaları ve yürütülebilir katkıda bulundukları kısımları listesi
+- Nesne dosyalarının listesi ve katkıda bulundukları yürütülebilirin bölümleri
 
-- Yığın geçirmek için kullanılan çerçeve işaretçisi iyileştirme (FPO) hata ayıklama kayıtlarını
+- Yığında geçiş yapmak için kullanılan çerçeve işaretçisi iyileştirmesi (!) hata ayıklama kayıtları
 
-Kesilmiş bir PDB dosyası içermez:
+Atılmış PDB dosyası şunları içermez:
 
 - Tür bilgileri
 
-- Satır numarası bilgisi
+- Satır numarası bilgileri
 
-- İşlevleri, Yereller ve statik veriler için olanlar gibi her nesne için dosya CodeView semboller
+- İşlevler, Yereller ve statik veriler gibi nesne başına dosya Kodugörünümü sembolleri
 
-/ Pdbstrıpped kullandığınızda tam PDB dosyası yine de oluşturulur.
+Tam PDB dosyası,/pdbçabappedkullandığınızda yine de oluşturulacaktır.
 
-Bir PDB dosyası oluşturmazsanız/pdbstrıpped göz ardı edilir.
+PDB dosyası oluşturmaması durumunda/PDBÇıKARıLDı yok sayılır.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Tıklayın **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörüne tıklayın.
 
-1. Tıklayın **hata ayıklama** özellik sayfası.
+1. **Hata ayıklama** Özellik sayfasına tıklayın.
 
-1. Değiştirme **özel sembolleri sök** özelliği.
+1. **Strip özel sembolleri** özelliğini değiştirin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -68,4 +69,4 @@ Bir PDB dosyası oluşturmazsanız/pdbstrıpped göz ardı edilir.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

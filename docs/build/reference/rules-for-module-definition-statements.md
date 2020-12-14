@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Module-Definition deyimleri için kurallar'
 title: Modül Tanımlama Deyimleri Kuralları
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,35 +8,35 @@ helpviewer_keywords:
 - module definition files, statement syntax
 - module definition files
 ms.assetid: f65cd3a7-65d7-4d06-939f-a8b1ecd50f2d
-ms.openlocfilehash: f6269ad2d5bf3952e485f2ca5e5d1f411c5f1e0c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bca1f279a9a93690edeaabc2264d1cfe869b3e80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318517"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225004"
 ---
 # <a name="rules-for-module-definition-statements"></a>Modül Tanımlama Deyimleri Kuralları
 
-.Def dosyası içindeki tüm deyimler için aşağıdaki sözdizimi kurallarını uygulayın. Belirli ifadeler için geçerli olan diğer kuralları her deyimiyle açıklanmaktadır.
+Aşağıdaki söz dizimi kuralları bir. def dosyasındaki tüm deyimler için geçerlidir. Belirli deyimler için uygulanan diğer kurallar her bir deyim ile açıklanmıştır.
 
-- Deyimler, öznitelik anahtar sözcükleri ve kullanıcı tarafından belirtilen tanımlayıcıları büyük/küçük harfe duyarlıdır.
+- Deyimler, öznitelik anahtar sözcükleri ve Kullanıcı tarafından belirtilen tanımlayıcılar büyük/küçük harfe duyarlıdır.
 
-- Uzun dosya adları boşluk veya noktalı virgül (;) içeren tırnak işaretleri (") içine alınması gerekir.
+- Boşluk veya noktalı virgül içeren uzun dosya adları (;) tırnak işaretleri (") içine alınmalıdır.
 
-- Bir veya daha fazla boşluk, sekme veya yeni satır karakterleri deyimi anahtar sözcüğü, bağımsız değişkenlerden ayırmak ve ifadeleri birbirinden ayırmak için kullanın. İki nokta üst üste (:) veya belirten bir bağımsız değişken eşittir (=) sıfır veya daha fazla boşluk, sekme veya yeni satır karakteri tarafından çevrelenir.
+- Bir deyim anahtar sözcüğünü bağımsız değişkenlerinden ayırmak ve deyimlerden ayırmak için bir veya daha fazla boşluk, sekme veya yeni satır karakteri kullanın. İki nokta (:) ya da bir bağımsız değişkeni atayan eşittir işareti (=) sıfır veya daha fazla boşluk, sekme veya yeni satır karakteri ile çevrelenmiş.
 
-- A **adı** veya **Kitaplığı** deyimi kullandıysanız gelmelidir diğer deyimler.
+- Bir **ad** veya **kitaplık** deyimi kullanılırsa, diğer tüm deyimlerden önce gelmelidir.
 
-- **Bölümleri** ve **dışarı AKTARMALARI** deyimleri .def dosyasında birden çok kez görüntülenebilir. Her deyim bir veya daha fazla boşluk, sekme veya yeni satır karakteri tarafından ayrılmalıdır birden çok belirtimleri alabilir. Deyimi anahtar sözcüğü ilk belirtimi önce bir kez görünmesi gerekir ve her ek belirtimi önce yinelenebilir.
+- **Bölümler** ve **dışarı aktarmalar** deyimleri. def dosyasında birden çok kez bulunabilir. Her bir ifade, bir veya daha fazla boşluk, sekme veya yeni satır karakteri ile ayrılması gereken birden çok belirtim alabilir. Deyimin anahtar sözcüğü, ilk belirtiden önce bir kez görünmelidir ve her ek belirtiden önce tekrarlanabilir.
 
-- Fazla sayıda deyim eşdeğer bağlantı komut satırı seçeneği sunulur. Ek ayrıntılar için karşılık gelen bağlantı seçeneği açıklamasına bakın.
+- Birçok deyimin karşılık gelen bir bağlantı komut satırı seçeneği vardır. Ek ayrıntılar için karşılık gelen bağlantı seçeneğinin açıklamasına bakın.
 
-- .Def dosyasında açıklamaları noktalı virgül (;) tarafından belirlenmiş her satırının başında. Bir yorum bir satır içeren bir ifade paylaşım yapamazsınız, ancak çok satırlı bir deyimde özellikleri arasında yer alabilir. (**Bölümleri** ve **dışarı AKTARMALARI** çok satırlı deyimleri.)
+- . Def dosyasındaki açıklamalar noktalı virgülle atanır (;) Her yorum satırının başlangıcında. Yorum bir satırı bir ifadesiyle paylaşamaz, ancak bir çok satırlı ifadede belirtimler arasında görünebilir. (**Bölümler** ve **dışarı aktarmalar** çok satırlı deyimlerdir.)
 
-- Belirtilen taban 10 ya da onaltılık sayısal bağımsız değişkenler.
+- Sayısal bağımsız değişkenler taban 10 veya onaltılı olarak belirtilir.
 
-- Bir dize bağımsız değişkeni eşleşmesi durumunda bir [ayrılmış sözcük](reserved-words.md), çift tırnak işaretleri (") içine alınması gerekir.
+- Bir dize bağımsız değişkeni ayrılmış bir [sözcükle](reserved-words.md)eşleşiyorsa, çift tırnak işareti (") içine alınmalıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül-Tanımlama (.Def) Dosyaları](module-definition-dot-def-files.md)
+[Modül tanımı (. Def) dosyaları](module-definition-dot-def-files.md)

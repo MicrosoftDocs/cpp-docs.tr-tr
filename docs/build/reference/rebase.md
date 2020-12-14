@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/yeniden temellendir
 title: /REBASE
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - /REBASE editbin option [C++]
 ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b
-ms.openlocfilehash: 42cbcb911fcd0aa7753d84aae5523d28371b9972
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6cbbf0a21bd9306167fb165b63c22e810518e161
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319206"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225342"
 ---
 # <a name="rebase"></a>/REBASE
 
@@ -26,16 +27,16 @@ ms.locfileid: "62319206"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu seçenek, belirtilen dosyalar için temel adres ayarlar. EDITBIN yakın 64 KB'lık kadar yuvarlanır her dosyasının boyutuna göre bitişik bir adres alanında yeni temel adresleri de atar. Temel adresler hakkında daha fazla ayrıntı için bkz: [temel adres](base-base-address.md) (/ BASE) bağlayıcı seçeneği.
+Bu seçenek, belirtilen dosyaların temel adreslerini ayarlar. EDITBIN, bitişik bir adres alanına, en yakın 64 KB 'ye yuvarlayarak her bir dosyanın boyutuna göre yeni temel adresler atar. Taban adresler hakkında daha fazla bilgi için bkz. [temel adres](base-base-address.md) (/Base) bağlayıcı seçeneği.
 
-Programın yürütülebilir dosyaları ve dll belirtin *dosyaları* oldukları almasını sırada EDITBIN komut satırı bağımsız değişkeni. İsteğe bağlı olarak bir veya daha fazla belirtebilirsiniz *değiştiriciler*her bir virgülle ayrılmış (**,**):
+Programın yürütülebilir dosyalarını ve DLL dosyalarını, EDITBIN komut satırındaki *dosyalar* bağımsız değişkeninde temel bulundukları sırayla belirtin. İsteğe bağlı olarak, her biri virgülle (**,**) ayırarak bir veya daha fazla *değiştirici* belirtebilirsiniz:
 
 |Değiştirici|Eylem|
 |--------------|------------|
-|**TEMEL =**<em>adresi</em>|Başlangıç adresini temel adresler dosyalarının yeniden atama için sağlar. Belirtin *adresi* ondalık ya da C dili gösterimi. TEMEL belirtilmezse, başlangıç temel adresi 0x400000 varsayılandır. AŞAĞI, kullanılan temel belirtilmelidir ve *adresi* temel adresler aralığının sonuna ayarlar.|
-|**BASEFILE**|COFFBASE adlı bir dosya oluşturur. Bir metin dosyasıdır bağlantının tarafından beklenen biçimde/temel seçeneği, TXT.|
-|**AŞAĞI**|Bitiş adresi temel adresleri aşağı doğru atamak EDITBIN söyler. Dosyalar, en yüksek olası adresi adres aralığının sonunu aşağıda bulunan ilk dosyasını belirtilen sırada atanır. Dosyaları alma için yeterli adres alanına emin olmak için temel aşağı ile kullanılması gerekir. Tarafından belirtilen dosyalarını gereken adres alanını belirlemek için EDITBIN /REBASE ile dosyalarda çalıştırmak ve için görüntülenen toplam boyutu 64 KB ekleyin.|
+|**Taban =**<em>Adres</em>|Dosyalara taban adresleri yeniden atamak için bir başlangıç adresi sağlar. *Adresi* ondalık veya C dili gösteriminde belirtin. TABAN belirtilmemişse, varsayılan başlangıç temel adresi 0x400000 ' dır. KAPALıYSA, taban, belirtilmelidir ve *Adres* taban adresleri aralığının sonunu ayarlar.|
+|**BASEFILE**|BAĞLANTıNıN/BASE seçeneği tarafından beklenen biçimdeki bir metin dosyası olan COFFBASE.TXT adlı bir dosya oluşturur.|
+|**KAPATıLıP**|EDITBIN 'e taban adresleri bitiş adresinden aşağı yeniden atamayı söyler. Dosyalar, adres aralığının sonundaki olası en yüksek adreste bulunan ilk dosya ile belirtilen sırada yeniden atanır. Dosyaları dayandırmak için yeterli adres alanı olduğundan emin olmak için temel ile birlikte kullanılmalıdır. Belirtilen dosyalar için gereken adres alanını öğrenmek için, dosyalarda/yeniden temelle EDITBIN komutunu çalıştırın ve görüntülenecek toplam boyutuna 64 KB ekleyin.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](editbin-options.md)
+[EDITBIN seçenekleri](editbin-options.md)

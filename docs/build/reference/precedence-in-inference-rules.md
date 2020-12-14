@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: çıkarım kurallarında öncelik'
 title: Çıkarsama Kurallarında Öncelik
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,23 +7,23 @@ helpviewer_keywords:
 - rules, inference
 - precedence, inference rule
 ms.assetid: 69e3dc02-0815-4c3a-b02b-1cb85fceaf24
-ms.openlocfilehash: ca24134fd1829ad3d97ca67b8c30aae3af4109ee
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b56d01cce63aaaac92e011630e45bcf43e7fe0b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225914"
 ---
 # <a name="precedence-in-inference-rules"></a>Çıkarsama Kurallarında Öncelik
 
-NMAKE çıkarım kuralı birden çok kez tanımlanmış, en yüksek öncelikli tanımı kullanır. Aşağıdaki liste, en yüksek öncelikten en düşüğe sırasını gösterir:
+Bir çıkarım kuralı tanımlanmazsa, NMAKE en yüksek öncelikli tanımı kullanır. Aşağıdaki listede, en yüksekten en düşüğe öncelik sırası gösterilmektedir:
 
-1. Derleme görevleri dosyasında tanımlanan bir çıkarma kuralı; sonraki tanımları önceliğe sahip olur.
+1. Derleme görevleri dosyasında tanımlanan bir çıkarım kuralı; sonraki tanımlarda öncelik vardır.
 
-1. Tools.ini içinde tanımlanan bir çıkarma kuralı; sonraki tanımları önceliğe sahip olur.
+1. Tools.ini tanımlanmış bir çıkarım kuralı sonraki tanımlarda öncelik vardır.
 
-1. Bir önceden tanımlanmış çıkarım kuralı.
+1. Önceden tanımlanmış bir çıkarım kuralı.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Çıkarım Kuralları](inference-rules.md)
+[Çıkarım kuralları](inference-rules.md)

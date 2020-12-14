@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi için:/TLS
 title: /TLS
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - /TLS dumpbin option
 - -TLS dumpbin option
 ms.assetid: 2b3f48f9-cac4-4351-b15c-2833b43bc709
-ms.openlocfilehash: 751c212398f3d309b1d31d204291fe3a0503cf06
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a21ef03210a65bb50899ba3907911272ac52b0db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229967"
 ---
 # <a name="tls"></a>/TLS
 
@@ -20,11 +21,11 @@ Yürütülebilir dosyadan IMAGE_TLS_DIRECTORY yapısını görüntüler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ TLS yanı sıra TLS geri çağırma işlevler adresleri TLS yapının alanları görüntüler.
+/TLS TLS yapısının alanlarını ve TLS geri çağırma işlevlerinin adreslerini görüntüler.
 
-Bir program iş parçacığı yerel depolama kullanmıyorsa görüntüsünü TLS yapısı içermez.  Bkz: [iş parçacığı](../../cpp/thread.md) daha fazla bilgi için.
+Bir program iş parçacığı yerel depolama alanı kullanmıyorsa, görüntüsü bir TLS yapısı içermez.  Daha fazla bilgi için bkz. [iş parçacığı](../../cpp/thread.md) .
 
-IMAGE_TLS_DIRECTORY winnt.h içinde tanımlanır.
+IMAGE_TLS_DIRECTORY, Winnt. h içinde tanımlanır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

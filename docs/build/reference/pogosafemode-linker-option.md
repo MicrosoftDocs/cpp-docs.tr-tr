@@ -1,44 +1,45 @@
 ---
-title: / POGOSAFEMODE (iş parçacığı güvenli modda PGO çalıştırın)
+description: Daha fazla bilgi edinin:/POGOSAFEMODE (iş parçacığı güvenli modunda PGO Çalıştır)
+title: /POGOSAFEMODE (iş parçacığı güvenli modunda PGO Çalıştır)
 ms.date: 03/14/2018
 f1_keywords:
 - POGOSAFEMODE
-ms.openlocfilehash: bbb328bf67d7823305a43f1d61252747cf5ea29e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dfe8d46a3008a1d41156d077e5b87e50ac345e18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319726"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225927"
 ---
-# <a name="pogosafemode-run-pgo-in-thread-safe-mode"></a>/ POGOSAFEMODE (iş parçacığı güvenli modda PGO çalıştırın)
+# <a name="pogosafemode-run-pgo-in-thread-safe-mode"></a>/POGOSAFEMODE (iş parçacığı güvenli modunda PGO Çalıştır)
 
-**Visual Studio 2015'ten başlayarak /POGOSAFEMODE seçeneği kullanım dışı**. Kullanım [/genprofıle: tam](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) ve **/GENPROFILE:NOEXACT** yerine seçenekleri. **/POGOSAFEMODE** bağlayıcı seçeneğini belirtir eğitim çalıştırmaları profil verilerini yakalama için profil temelli iyileştirme (PGO) sırasında iş parçacığı açısından güvenli mod kullanmak üzere işaretlenmiş yapımda oluşturulur.
+**/POGOSAFEMODE seçeneği, Visual Studio 2015 ' den itibaren kullanım dışıdır**. Bunun yerine [/Genprofile: tam](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) ve **/GENPROFILE: NOTAM** seçenekleri kullanın. **/POGOSAFEMODE** bağlayıcı seçeneği, profil temelli iyileştirme (PGO) eğitim çalıştırmaları sırasında profil verileri yakalama için iş parçacığı güvenli modunu kullanmak üzere belgelenmiş derleme oluşturulduğunu belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/POGOSAFEMODE**
 
 ## <a name="remarks"></a>Açıklamalar
 
-Profil temelli iyileştirme (PGO) profil oluşturma aşamasında olası iki modu vardır: *hızlı mod* ve *güvenli mod*. Hızlı modda profil oluşturulduğunda, veri sayısını artırmak için bir artış yönerge kullanır. Artırma yönergesi daha hızlıdır ancak iş parçacığı açısından güvenli değildir. Güvenli modda profil oluşturulduğunda, veri sayısını artırmak için birbirine geçmiş artırma yönerge kullanır. Bu yönerge artırma yönerge sahiptir ve iş parçacığı açısından güvenlidir ancak daha yavaştır gibi aynı işlevlere sahiptir.
+Profil temelli iyileştirme (PGO), profil oluşturma aşamasında iki olası moda sahiptir: *hızlı mod* ve *Güvenli mod*. Profil oluşturma hızlı moddayken, veri sayaçlarını artırmak için bir artış yönergesi kullanır. Artış yönergesi daha hızlıdır, ancak iş parçacığı açısından güvenli değildir. Profil oluşturma güvenli moddayken, veri sayaçlarını artırmak için ınterkilitlenen artırma yönergesini kullanır. Bu yönerge, artırma yönergesi ile aynı işlevselliğe sahiptir ve iş parçacığı açısından güvenlidir, ancak daha yavaştır.
 
-**/POGOSAFEMODE** seçeneği güvenli mod kullanmak için işaretlenmiş yapımda ayarlar. Bu seçenek yalnızca kullanılabilir olduğunda kullanılabilir kullanım dışı [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) PGO izleme bağlayıcı aşaması sırasında belirtilir.
+**/POGOSAFEMODE** seçeneği, belgelenmiş derlemeyi güvenli mod kullanacak şekilde ayarlar. Bu seçenek yalnızca kullanım dışı [/LTCG: PGıNSTRUMI](ltcg-link-time-code-generation.md) belirtildiğinde, PGO izleme bağlayıcı aşaması sırasında kullanılabilir.
 
-Varsayılan olarak, PGO profil oluşturma Hızlı modda çalışır. **/ POGOSAFEMODE** olduğundan yalnızca güvenli mod kullanmak isterseniz gereklidir.
+Varsayılan olarak, PGO profil oluşturma hızlı modda çalışır. **/POGOSAFEMODE** yalnızca güvenli mod kullanmak istiyorsanız gereklidir.
 
-PGO profil oluşturmayı güvenli modda çalıştırmak için ya da kullanmalısınız **/genprofıle: tam** (tercih edilir), veya ortam değişkenini kullanmak [PogoSafeMode](../environment-variables-for-profile-guided-optimizations.md) veya bağlayıcı anahtarını **/POGOSAFEMODE**sistem bağlı olarak. X x64 profil oluşturma işlemi yapıyorsanız bilgisayarı bağlayıcı anahtarını kullanmanız gerekir. X x86 profil oluşturma işlemi yapıyorsanız bilgisayar, bağlayıcı anahtarını kullanarak olabilir veya PGO izleme işlemine başlamadan önce herhangi bir değere ortam değişkenini tanımlar.
+PGO profil oluşturmayı güvenli modda çalıştırmak için **/Genprofile: tam** (tercih edilen) veya [PogoSafeMode](../environment-variables-for-profile-guided-optimizations.md) ortam değişkenini ya da sisteme bağlı olarak **/POGOSAFEMODE** bağlayıcı anahtarını kullanmanız gerekir. Bir x64 bilgisayarda profil oluşturma işlemi yapıyorsanız bağlayıcı anahtarını kullanmanız gerekir. Bir x86 bilgisayarda profil oluşturma işlemi yapıyorsanız, PGO izleme işlemine başlamadan önce, bağlayıcı anahtarını kullanabilir veya ortam değişkenini herhangi bir değere tanımlayabilirsiniz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **iyileştirme** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **iyileştirme** özellik sayfasını seçin.
 
-1. İçinde **bağlama sırasında kod oluşturmayı** özelliği seçin **profil temelli iyileştirme - İzle (/ LTCG: pginstrument)**.
+1. **Bağlama zamanı kodu üretimi** özelliğinde **Profil temelli iyileştirme-araç (/LTCG: PGINSTRUMENT)** öğesini seçin.
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **komut satırı** özellik sayfasını seçin.
 
-1. Girin **/POGOSAFEMODE** içine seçeneği **ek seçenekler** kutusu. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+1. **Ek seçenekler** kutusuna **/POGOSAFEMODE** seçeneğini girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -46,7 +47,7 @@ PGO profil oluşturmayı güvenli modda çalıştırmak için ya da kullanmalıs
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/ GENPROFILE ve fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
+[/GENPROFILE ve/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[Profil Temelli İyileştirmeler](../profile-guided-optimizations.md)<br/>
-[Profil Temelli İyileştirmeler için Ortam Değişkenleri](../environment-variables-for-profile-guided-optimizations.md)<br/>
+[Profil temelli Iyileştirmeler](../profile-guided-optimizations.md)<br/>
+[Profile-Guided Iyileştirmeleri için ortam değişkenleri](../environment-variables-for-profile-guided-optimizations.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/Zp (yapı üyesi hizalama)
 title: /Zp (Yapı Üyesi Hizalama)
 ms.date: 04/04/2019
 f1_keywords:
@@ -11,24 +12,24 @@ helpviewer_keywords:
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-ms.openlocfilehash: c78e670303bde68299725e18c6f588f5e410a971
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b2029ebded53bcae1b44b5cd72bf59494e58ec4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224315"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp (Yapı Üyesi Hizalama)
 
 Bir yapının üyelerinin belleğe nasıl paketlendiğini denetler ve bir modüldeki tüm yapılar için aynı paketleme türünü belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **`/Zp`**[**`1`**|**`2`**|**`4`**|**`8`**|**`16`**]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**`/ZpN`** Seçeneği derleyiciye her bir yapı üyesini nerede depolayacağını söyler. Derleyici, üyeleri üye türünün boyutundan daha küçük olan veya *N*baytlık bir sınır olan bir sınırın üzerinde birinciden sonra depolar.
+**`/ZpN`** Seçeneği derleyiciye her bir yapı üyesini nerede depolayacağını söyler. Derleyici, üyeleri üye türünün boyutundan daha küçük olan veya *N* baytlık bir sınır olan bir sınırın üzerinde birinciden sonra depolar.
 
 Kullanılabilir Paketleme değerleri aşağıdaki tabloda açıklanmıştır:
 
@@ -49,11 +50,11 @@ Belirli hizalama gereksinimleriniz yoksa bu seçeneği kullanmayın.
 
 - [`align`](../../cpp/align-cpp.md)
 
-- [`alignof`İşlecinde](../../cpp/alignof-operator.md)
+- [`alignof` İşlecinde](../../cpp/alignof-operator.md)
 
 - [`__unaligned`](../../cpp/unaligned.md)
 
-- [`/ALIGN`(Bölüm hizalama)](align-section-alignment.md)
+- [`/ALIGN` (Bölüm hizalama)](align-section-alignment.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
@@ -70,4 +71,4 @@ Belirli hizalama gereksinimleriniz yoksa bu seçeneği kullanmayın.
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC derleyici seçenekleri](compiler-options.md) \
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

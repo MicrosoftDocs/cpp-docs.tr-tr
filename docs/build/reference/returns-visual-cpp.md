@@ -1,5 +1,6 @@
 ---
-title: '&lt;> döndürür (C++ belge açıklamaları)'
+description: 'Daha fazla bilgi edinin: &lt; dönüşler&gt;'
+title: '&lt;> döndürür (C++ belgeleri açıklamaları)'
 ms.date: 11/04/2016
 f1_keywords:
 - returns
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - returns C++ XML tag
 - <returns> C++ XML tag
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
-ms.openlocfilehash: 1315ec09271c2c97f7bcaf3fb6f9c75f514b5d2d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: c07439610fa0259a38a4c1993ead7f0f06023e5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988637"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225056"
 ---
-# <a name="ltreturnsgt"></a>&lt;&gt; döndürür
+# <a name="ltreturnsgt"></a>&lt;döndürdüğü&gt;
 
-\<, dönüş değerini açıklayacak bir yöntem bildirimine ilişkin açıklamada > etiketini döndürür.
+\<returns>Etiket, dönüş değerini betimleyen bir yöntem bildirimine ilişkin açıklamada kullanılmalıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -27,7 +28,7 @@ ms.locfileid: "74988637"
 
 #### <a name="parameters"></a>Parametreler
 
-*description*<br/>
+*açıklaması*<br/>
 Dönüş değerinin açıklaması.
 
 ## <a name="remarks"></a>Açıklamalar

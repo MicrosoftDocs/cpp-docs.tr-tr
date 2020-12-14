@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ifade değerlendirici hatası CXX0015'
 title: İfade Değerlendirici Hatası CXX0015
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CXX0015
 - CAN0015
 ms.assetid: 35efaf77-d578-48d8-bfc5-fdeb2a46a8b5
-ms.openlocfilehash: 19cf47d6b7b718eb19b987bcc16854af3266069b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c5d6e0ba5407646b1e3c835053f1f115dabf4fe7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196072"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97228332"
 ---
 # <a name="expression-evaluator-error-cxx0015"></a>İfade Değerlendirici Hatası CXX0015
 

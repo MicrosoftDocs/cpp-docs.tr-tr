@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _heapset'
 title: _heapset
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-ms.openlocfilehash: 5bf27ac8287e785b1c799565781842db54edee4d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 628babf8d49e22d75498aeb9b919283bb7257c1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229879"
 ---
 # <a name="_heapset"></a>_heapset
 
@@ -39,7 +40,7 @@ Yığınlarını en düşük tutarlılık açısından denetler ve ücretsiz gir
 > [!IMPORTANT]
 > Bu işlev artık kullanılmıyor. Visual Studio 2015 ' den başlayarak CRT ' de kullanılamaz.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 int _heapset(

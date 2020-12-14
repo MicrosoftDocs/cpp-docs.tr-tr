@@ -1,4 +1,5 @@
 ---
+description: "Daha fazla bilgi edinin: Gecikmeli yük için dll 'Ler belirtme"
 title: Gecikme Yükü DLL'lerini Belirtme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - delayed loading of DLLs, specifying
 - /DELAYLOAD linker option
 ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
-ms.openlocfilehash: 2b6737abd76c03186881e83bbd2bf286be6ffe2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ece96ea6f818c7e0bc6b6e032ce523e96a9f4ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318153"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224551"
 ---
 # <a name="specifying-dlls-to-delay-load"></a>Gecikme Yükü DLL'lerini Belirtme
 
-Geciktirilecek dll ile yük belirtebilirsiniz [/delayload](delayload-delay-load-import.md):`dllname` bağlayıcı seçeneği. Kendi yardımcı işlevi sürümünüzü kullanmayı planlamıyorsanız, programınızı delayimp.lib (için Masaüstü uygulamalar için) veya dloadhelper.lib (mağaza uygulamaları için) ile de bağlamanız gerekir.
+[/Delayload](delayload-delay-load-import.md): bağlayıcı seçeneğiyle hangi dll 'lerin yük geciktirip gerektiğini belirtebilirsiniz `dllname` . Kendi yardımcı işlevinizin sürümünü kullanmayı planlamıyorsanız, programınızı delayimp. lib (masaüstü uygulamaları için) veya dloadhelper. lib (Mağaza uygulamaları için) ile bağlamanız gerekir.
 
-Gecikmeli DLL yükleme basit bir örneği verilmiştir:
+Aşağıda DLL yükleme gecikmesi için basit bir örnek verilmiştir:
 
 ```
 // cl t.cpp user32.lib delayimp.lib  /link /DELAYLOAD:user32.dll
@@ -33,8 +34,8 @@ int main() {
 }
 ```
 
-Proje hata ayıklama sürümünü oluşturun. Hata ayıklayıcı ve fark edersiniz, user32.dll çağrısı yaptığınızda yüklendiği kullanarak kod aracılığıyla adım `MessageBox`.
+Projenin hata ayıklama sürümünü oluşturun. Hata ayıklayıcıyı kullanarak kodda adım adım ilerleyin ve user32.dll yalnızca çağrısı yaptığınızda yükleneceğini fark edersiniz `MessageBox` .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](linker-support-for-delay-loaded-dlls.md)
+[Delay-Loaded dll 'Ler için bağlayıcı desteği](linker-support-for-delay-loaded-dlls.md)
