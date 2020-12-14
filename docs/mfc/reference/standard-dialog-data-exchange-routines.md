@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: Standart Iletişim kutusu veri değişimi yordamları'
 title: Standart İletişim Kutusu Veri Değişimi Rutinleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data exchange routines
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-ms.openlocfilehash: bed60094b25bcc3b1994aa904a8c20324be2abae
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f1d5cb0726168b90e0ba2a7891ce0ffa55b73f10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844502"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218868"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>Standart İletişim Kutusu Veri Değişimi Rutinleri
 
@@ -58,7 +59,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili Birleşik giriş kutusu denetiminin kaynak KIMLIĞI.
 
-*dizin*<br/>
+*indeks*<br/>
 İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -90,7 +91,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili Birleşik giriş kutusu denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -125,7 +126,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili Birleşik giriş kutusu denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -160,7 +161,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili onay kutusu denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -175,7 +176,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
 ## <a name="ddx_control"></a><a name="ddx_control"></a> DDX_Control
 
-`DDX_Control`İşlevi, iletişim kutusu, form görünümü veya denetim görünümü nesnesinin *nıdc*tarafından belirtilen denetimin alt sınıfları.
+`DDX_Control`İşlevi, iletişim kutusu, form görünümü veya denetim görünümü nesnesinin *nıdc* tarafından belirtilen denetimin alt sınıfları.
 
 ```cpp
 void AFXAPI DDX_Control(
@@ -234,12 +235,12 @@ void AFXAPI DDX_DateTimeCtrl(
 *Nıdc*<br/>
 Üye değişkeniyle ilişkili tarih ve saat seçici denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İlk iki sürümde, `CTime` veri alışverişi yapılan bir veya `COleDateTime` üye değişkenine, iletişim kutusuna, Form görünümüne veya denetim görünümü nesnesine bir başvuru. Üçüncü sürümde, bir `CString` veri üyesi denetim görünümü nesnesine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DDX_DateTimeCtrl`Çağrıldığında, *değer* tarih ve saat seçici denetiminin geçerli durumu olarak ayarlanır veya değişim yönüne bağlı olarak denetim *değer*olarak ayarlanır.
+`DDX_DateTimeCtrl`Çağrıldığında, *değer* tarih ve saat seçici denetiminin geçerli durumu olarak ayarlanır veya değişim yönüne bağlı olarak denetim *değer* olarak ayarlanır.
 
 Yukarıdaki üçüncü sürümde, `DDX_DateTimeCtrl` `CString` veri aktarımını denetim görünümü nesnesinin bir tarih saat denetimi ve [CString](../../atl-mfc-shared/reference/cstringt-class.md) veri üyesi arasında yönetir. Dize, tarihleri ve saatleri biçimlendirmek için geçerli yerel ayarların kuralları kullanılarak biçimlendirilir.
 
@@ -253,7 +254,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
 Denetimin kaynak KIMLIĞIYLE eşleşen bir .NET denetimi oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <typename T>
@@ -303,7 +304,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili IP adresi denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 IP adresi denetiminin dört alan değerini içeren DWORD başvurusu. Alanlar doldurulmuş veya aşağıdaki şekilde okundu.
 
 |Alan|Alan değerini içeren bitler|
@@ -344,7 +345,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili liste kutusu denetiminin kaynak KIMLIĞI.
 
-*dizin*<br/>
+*indeks*<br/>
 İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -376,7 +377,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili liste kutusu denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -413,7 +414,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili liste kutusu denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -455,7 +456,7 @@ void AFXAPI DDX_MonthCalCtrl(
 *Nıdc*<br/>
 Üye değişkeniyle ilişkili aylık takvim denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 `CTime` `COleDateTime` Veri alışverişi yapılan iletişim kutusu, form görünümü veya denetim görünümü nesnesinin veya üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -490,7 +491,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Gruptaki ilk radyo denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya veri alışverişi yapılan denetim görünümü nesnesinin üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -524,7 +525,7 @@ Bir `CDataExchange` nesne işaretçisi. Framework, yönü dahil olmak üzere ver
 *Nıdc*<br/>
 Denetim özelliğiyle ilişkili kaydırma çubuğu denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesinin, verilerin alınıp alındığı bir üye değişkenine başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -556,7 +557,7 @@ void AFXAPI DDX_Slider(
 *Nıdc*<br/>
 Kaydırıcı denetiminin kaynak KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 Değiş tokuş edilecek değere bir başvuru. Bu parametre kaydırıcı denetiminin geçerli konumunu tutar veya ayarlar.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -571,7 +572,7 @@ DDX hakkında daha fazla bilgi için bkz. [Iletişim kutusu veri değişimi ve d
 
 ## <a name="ddx_text"></a><a name="ddx_text"></a> DDX_Text
 
-`DDX_Text`İşlevi **`int`** , **UINT** **`long`** `CString` **`float`** **`double`** bir iletişim kutusu, form görünümü veya denetim görünümü içindeki bir düzenleme denetimi ile iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) veri üyesi arasında, UINT,, DWORD,, veya veri aktarımını yönetir.
+`DDX_Text`İşlevi **`int`** ,  **`long`** `CString` **`float`** **`double`** bir iletişim kutusu, form görünümü veya denetim görünümü içindeki bir düzenleme denetimi ile iletişim kutusu, form görünümü veya denetim görünümü nesnesinin bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) veri üyesi arasında, UINT,, DWORD,, veya veri aktarımını yönetir.
 
 ```cpp
 void AFXAPI DDX_Text(
@@ -638,7 +639,7 @@ void AFXAPI DDX_Text(
 *Nıdc*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesindeki bir düzenleme denetiminin KIMLIĞI.
 
-*deeri*<br/>
+*değer*<br/>
 İletişim kutusu, form görünümü veya denetim görünümü nesnesi içindeki bir veri üyesine başvuru. *Değerin* veri türü, kullandığınız aşırı yüklenmiş sürümlere bağlıdır `DDX_Text` .
 
 ### <a name="remarks"></a>Açıklamalar

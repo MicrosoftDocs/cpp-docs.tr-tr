@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC sınıf Sihirbazı'
 title: MFC Sınıf Sihirbazı
 ms.date: 09/06/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Class Wizard
 ms.assetid: 8b0dd867-5d07-4214-99be-2a1c1995e6d9
-ms.openlocfilehash: be829156d8fea8188a217b2c0a189ac5d6057a7e
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: ba82cabd13fb242f5201243cd9f06c44df8141ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907994"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219193"
 ---
 # <a name="mfc-class-wizard"></a>MFC Sınıf Sihirbazı
 
@@ -20,10 +21,10 @@ Yeni MFC sınıfları oluşturmak veya projenizdeki mevcut sınıflara ileti ve 
 **Sınıf Sihirbazı**'nı açmak için üç yol vardır:
 
 - **Proje** menüsünde **sınıf Sihirbazı**' nı seçin.
-- **CTRL** > SHIFTX > yazın.
+- **CTRL**  >  **SHIFT**  >  **X** yazın.
 - **Sınıf görünümü**' de, bir sınıfa veya proje düğümüne sağ tıklayın ve **sınıf Sihirbazı**' nı seçin.
 
-![Sınıf Sihirbazı](media/class-wizard.png "MFC sınıf Sihirbazı")
+![Sınıf Sihirbazı](media/class-wizard.png "MFC Sınıf Sihirbazı")
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
@@ -45,21 +46,21 @@ Yeni MFC sınıfları oluşturmak veya projenizdeki mevcut sınıflara ileti ve 
 
 - **Temel sınıf**
 
-   **Sınıf adında**görüntülenen sınıfın temel sınıfı.
+   **Sınıf adında** görüntülenen sınıfın temel sınıfı.
 
 - **Sınıf bildirimi**
 
    **Sınıf adı** sınıfının bildirildiği sınıf.
 
-   **Sınıf bildirim** kutusu yalnızca içindeki ad, **sınıf uygulamasındaki**addan farklıysa görüntülenir.
+   **Sınıf bildirim** kutusu yalnızca içindeki ad, **sınıf uygulamasındaki** addan farklıysa görüntülenir.
 
 - **Kaynak**
 
-   Varsa, **sınıf adındaki**kaynağın kimliği. Aksi takdirde, **kaynak** kutusu boştur.
+   Varsa, **sınıf adındaki** kaynağın kimliği. Aksi takdirde, **kaynak** kutusu boştur.
 
 - **Sınıf uygulama**
 
-   Sınıf **adındaki**sınıfın uygulamasını içeren dosyanın adı.
+   Sınıf **adındaki** sınıfın uygulamasını içeren dosyanın adı.
 
    Oka tıklayarak farklı bir uygulama dosyası seçebilirsiniz. Aşağıdaki tabloda kullanılabilir seçenekler listelenmektedir.
 
@@ -69,7 +70,7 @@ Yeni MFC sınıfları oluşturmak veya projenizdeki mevcut sınıflara ileti ve 
    |**Içeren klasörü aç**|Geçerli sınıf uygulama dosyasını içeren klasörü açar.|
    |**Tam yolu panoya kopyala**|Geçerli uygulama dosyasının yolunu panoya kopyalar.|
 
-- **Komut**
+- **Komutlar**
 
    Bir komutu ve ileti işleyicisini eklemenizi, silmenizi, düzenlemenizi veya aramanızı sağlar.
 
@@ -87,7 +88,7 @@ Yeni MFC sınıfları oluşturmak veya projenizdeki mevcut sınıflara ileti ve 
 
    Özel bir ileti eklemek için **özel Ileti Ekle** ' ye tıklayın veya ENTER tuşuna basın ve ardından **özel ileti Ekle** iletişim kutusunda değerleri belirtin. Bu iletişim kutusunda, işletim sistemi genelinde benzersiz olması garanti edilen bir pencere iletisini işlemek için **kayıtlı ileti** ' i de seçebilirsiniz.
 
-- **Sanal İşlevler**
+- **Sanal Işlevler**
 
    Sanal bir işlev veya geçersiz kılınan bir sanal işlev eklemenize, silmenize, düzenlemenize veya aramanıza olanak tanır.
 
@@ -99,7 +100,7 @@ Yeni MFC sınıfları oluşturmak veya projenizdeki mevcut sınıflara ileti ve 
 
    Bir Yöntemi eklemenize, silmenize veya aramanıza izin verir ve ayrıca bir metodun tanımına veya bildirimine gidebilirsiniz.
 
-   Bir yöntem eklemek **için yöntem Ekle ' ye tıklayın ve**ardından **Yöntem Ekle** iletişim kutusunda değerleri belirtin.
+   Bir yöntem eklemek **için yöntem Ekle ' ye tıklayın ve** ardından **Yöntem Ekle** iletişim kutusunda değerleri belirtin.
 
    Bir yöntemi silmek için, **Yöntemler** listesinden bir öğe seçin ve ardından **yöntemi Sil**' e tıklayın.
 

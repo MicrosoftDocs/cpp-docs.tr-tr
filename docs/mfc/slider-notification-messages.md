@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kaydırıcı bildirim Iletileri'
 title: Kaydırıcı Bildirim İletileri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,31 +8,31 @@ helpviewer_keywords:
 - messages, notification
 - notifications [MFC], CSliderCtrl
 ms.assetid: b9121104-3889-4a10-92bf-f3723f1af9d0
-ms.openlocfilehash: bee2d602512ea1a6af39b0bb218ee7333b399c80
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fab8d515e71fd2ca8fd390a41b6d1bf68442c24c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307334"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216892"
 ---
 # <a name="slider-notification-messages"></a>Kaydırıcı Bildirim İletileri
 
-Bir kaydırıcı denetimi, üst kaydırıcı denetiminin yönünü bağlı olarak WM_HSCROLL veya WM_VSCROLL iletiler göndererek kullanıcı eylemlerinin kendi üst penceresine bildirir. Bu iletileri işleyen ana pencerenin WM_HSCROLL ve WM_VSCROLL iletileri için işleyiciler ekleyin. [OnHScroll](../mfc/reference/cwnd-class.md#onhscroll) ve [OnVScroll](../mfc/reference/cwnd-class.md#onvscroll) üye işlevleri, bir bildirim kodu, kaydırıcıyı ve işaretçisi konumunu geçirilir [CSliderCtrl](../mfc/reference/csliderctrl-class.md) nesne. İşaretçi türü olduğuna dikkat edin `CScrollBar *` işaret olsa bile bir `CSliderCtrl` nesne. Kaydırıcı denetimi işlemek gerekiyorsa bu işaretçinin türü atayarak gerekebilir.
+Kaydırıcı denetimi, kaydırıcı denetiminin yönüne bağlı olarak üst WM_HSCROLL veya WM_VSCROLL iletilerini göndererek Kullanıcı eylemlerinin üst penceresine bildirir. Bu iletileri işlemek için, ana pencereye WM_HSCROLL ve WM_VSCROLL iletileri için işleyiciler ekleyin. [OnHScroll](../mfc/reference/cwnd-class.md#onhscroll) ve [OnVScroll](../mfc/reference/cwnd-class.md#onvscroll) üye işlevlerine bir bildirim kodu, Kaydırıcının konumu ve [CSliderCtrl](../mfc/reference/csliderctrl-class.md) nesnesine yönelik bir işaretçi geçirilecek. Bir nesneye işaret etse de işaretçinin tür olduğunu unutmayın `CScrollBar *` `CSliderCtrl` . Kaydırıcı denetimini değiştirmeniz gerekiyorsa, bu işaretçiye tür atama yapmanız gerekebilir.
 
-Kaydırıcı denetimleri kaydırma çubuğu bildirim kodları kullanmak yerine, farklı bir bildirim kodları kümesi gönderin. Yalnızca klavyeyi kullanarak kullanıcı bir kaydırıcı denetimi ile etkileşim kurduğunda bir kaydırıcı denetimi TB_BOTTOM, TB_LINEDOWN TB_LINEUP ve TB_TOP bildirim kodları gönderir. Kullanıcı fare kullanılırken TB_THUMBPOSITION ve TB_THUMBTRACK bildirim iletileri yalnızca gönderilir. Her iki durumda da TB_ENDTRACK TB_PAGEDOWN ve TB_PAGEUP bildirim kodları gönderilir.
+Kaydırma çubuğu bildirim kodlarının kullanılması yerine, kaydırıcı denetimleri farklı bir bildirim kodları kümesi gönderir. Kaydırıcı denetimi, yalnızca Kullanıcı klavyeyi kullanarak bir kaydırıcı denetimiyle etkileşime geçtiğinde TB_BOTTOM, TB_LINEDOWN, TB_LINEUP ve TB_TOP bildirim kodlarını gönderir. TB_THUMBPOSITION ve TB_THUMBTRACK bildirim iletileri yalnızca Kullanıcı fareyi kullanırken gönderilir. TB_ENDTRACK, TB_PAGEDOWN ve TB_PAGEUP bildirim kodları her iki durumda da gönderilir.
 
-Kaydırıcı denetimi bildirim iletileri ve bildirimleri gönderilmesini neden olayları (sanal anahtar kodlarını veya fare olayları) aşağıdaki tabloda listelenmektedir. (Winuser.h standart sanal anahtar kodlarının listesi için bkz.)
+Aşağıdaki tabloda, bildirimlerin gönderilmesine neden olan kaydırıcı denetimi bildirim iletileri ve Olaylar (sanal anahtar kodları veya fare olayları) listelenmektedir. (Standart sanal anahtar kodlarının listesi için bkz. Winuser. h.)
 
-|Bildirim iletisi|Bildirim gönderilecek neden olay|
+|Bildirim iletisi|Bildirimin gönderilmesine neden olan olay|
 |--------------------------|-------------------------------------------|
 |TB_BOTTOM|VK_END|
-|TB_ENDTRACK|WM_KEYUP (kullanıcının ilgili bir sanal anahtar kodu gönderilen bir tuş serbest)|
+|TB_ENDTRACK|WM_KEYUP (Kullanıcı ilgili bir sanal anahtar kodu gönderen bir anahtar yayımlamıştır)|
 |TB_LINEDOWN|VK_RIGHT veya VK_DOWN|
 |TB_LINEUP|VK_LEFT veya VK_UP|
-|TB_PAGEDOWN|VK_NEXT (aşağıda veya kaydırıcının sağa kanalı kullanıcı tıklandığında)|
-|TB_PAGEUP|VK_PRIOR (yukarıda veya sol kaydırıcının kanal kullanıcı tıklandığında)|
-|TB_THUMBPOSITION|TB_THUMBTRACK bildirim sonraki WM_LBUTTONUP|
-|TB_THUMBTRACK|(Kullanıcı, kaydırıcı sürüklenebilir) kaydırıcı taşıma|
+|TB_PAGEDOWN|VK_NEXT (Kullanıcı kaydırıcının sağ veya sağ tarafındaki kanala tıkladı)|
+|TB_PAGEUP|VK_PRIOR (Kullanıcı kaydırıcının solundaki veya solundaki kanala tıkladı)|
+|TB_THUMBPOSITION|TB_THUMBTRACK bildirim iletisini izleyen WM_LBUTTONUP|
+|TB_THUMBTRACK|Kaydırıcı hareketi (Kullanıcı kaydırıcıyı sürüklemiş)|
 |TB_TOP|VK_HOME|
 
 ## <a name="see-also"></a>Ayrıca bkz.

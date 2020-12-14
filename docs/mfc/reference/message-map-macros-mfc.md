@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Ileti eşleme makroları (MFC)'
 title: İleti Eşleme Makroları (MFC)
 ms.date: 03/27/2019
 f1_keywords:
@@ -28,18 +29,18 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 33b5d2eaefa11f9ccf6459aa05b4e24138731e80
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ece09b915da9e6f88191e90056158be82651e9ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840277"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219401"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 
 İleti eşlemelerini desteklemek için MFC aşağıdaki makroları sağlar:
 
-### <a name="message-map-declaration-and-demarcation-macros"></a>İleti eşleme bildirimi ve demarcation makroları
+### <a name="message-map-declaration-and-demarcation-macros"></a>Message-Map bildirimi ve demarcation makroları
 
 |Ad|Açıklama|
 |-|-|
@@ -48,7 +49,7 @@ ms.locfileid: "88840277"
 |[BEGIN_TEMPLATE_MESSAGE_MAP](#begin_template_message_map)|Tek bir şablon bağımsız değişkeni içeren bir sınıf türündeki bir ileti eşlemesinin tanımına başlar. |
 |[END_MESSAGE_MAP](#end_message_map)|İleti eşlemesinin tanımını sonlandırır (sınıf uygulamasında kullanılması gerekir).|
 
-### <a name="message-mapping-macros"></a>İleti eşleme makroları
+### <a name="message-mapping-macros"></a>Message-Mapping makrolar
 
 |Ad|Açıklama|
 |-|-|
@@ -62,7 +63,7 @@ ms.locfileid: "88840277"
 |[ON_THREAD_MESSAGE](#on_thread_message)|Bir sınıfınız olduğunda Kullanıcı tanımlı bir iletiyi hangi işlevin işleyeceğini gösterir `CWinThread` .|
 |[ON_UPDATE_COMMAND_UI](#on_update_command_ui)|Hangi işlevin belirtilen kullanıcı arabirimi güncelleştirme komut iletisini işleyeceğini gösterir.|
 
-### <a name="message-map-range-macros"></a>İleti eşleme aralığı makroları
+### <a name="message-map-range-macros"></a>Message-Map aralığı makroları
 
 |Ad|Açıklama|
 |-|-|
@@ -70,13 +71,13 @@ ms.locfileid: "88840277"
 |[ON_UPDATE_COMMAND_UI_RANGE](#on_update_command_ui_range)|Hangi güncelleştirme işleyicisinin, makroya yönelik ilk iki parametrede belirtilen komut kimliği aralığını işleyeceğini gösterir.|
 |[ON_CONTROL_RANGE](#on_control_range)|Hangi işlevin, ikinci ve üçüncü parametrelerinde belirtilen denetim kimliği aralığından gelen bildirimleri makroya işleyeceğini gösterir. İlk parametre, BN_CLICKED gibi bir denetim bildirim iletisidir.|
 
-İleti haritaları, ileti eşleme bildirimi ve düzenleme makroları ile ileti eşleme makroları hakkında daha fazla bilgi için bkz. [ileti haritaları](../../mfc/reference/message-maps-mfc.md) ve [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md). İleti eşleme aralıkları hakkında daha fazla bilgi için bkz. [Ileti eşleme aralıkları Için işleyiciler](../../mfc/handlers-for-message-map-ranges.md).
+İleti haritaları, ileti eşleme bildirimi ve düzenleme makroları ile ileti eşleme makroları hakkında daha fazla bilgi için bkz. [ileti haritaları](../../mfc/reference/message-maps-mfc.md) ve [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md). İleti eşleme aralıkları hakkında daha fazla bilgi için bkz. [Message-Map aralıklarına yönelik işleyiciler](../../mfc/handlers-for-message-map-ranges.md).
 
 ## <a name="begin_message_map"></a><a name="begin_message_map"></a> BEGIN_MESSAGE_MAP
 
 İleti haritaınızın tanımını başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 BEGIN_MESSAGE_MAP( theClass, baseClass )
@@ -112,7 +113,7 @@ END_MESSAGE_MAP()
 
 Tek bir şablon bağımsız değişkeni içeren bir sınıf türündeki bir ileti eşlemesinin tanımına başlar.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
@@ -196,7 +197,7 @@ END_MESSAGE_MAP( )
 
 Bu makro bir komut iletisini bir üye işlevine eşler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_COMMAND( commandId, memberFxn )
@@ -234,7 +235,7 @@ END_MESSAGE_MAP()
 
 Genişletilmiş komut işleyici üye işlevi.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_COMMAND_EX(commandId, memberFxn);
@@ -262,7 +263,7 @@ Daha fazla bilgi için bkz. Teknik notun [TN006: Ileti haritaları] tm006-Messag
 
 Hangi işlevin özel denetim bildirim iletisini işleyeceğini gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_CONTROL( wNotifyCode, commandId, memberFxn )
@@ -295,7 +296,7 @@ Daha fazla bilgi ve örnek için bkz. [Ileti işleme ve eşleme konuları](../..
 
 Hangi işlevin Kullanıcı tanımlı bir iletiyi işleyeceğini gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_MESSAGE( message, memberFxn )
@@ -353,7 +354,7 @@ LRESULT CMyWnd2::OnMyMessage(WPARAM wParam, LPARAM lParam)
 
 Komutları komut gönderme arabiriminden yönlendirir `IOleCommandTarget` .
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_OLECMD( pguid, olecmdid, commandId )
@@ -482,7 +483,7 @@ Düzenle geri al komutunu dağıtır. Uygulanan:
 
 Windows `RegisterWindowMessage` işlevi, sistem genelinde benzersiz olması garanti edilen yeni bir pencere iletisi tanımlamak için kullanılır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_REGISTERED_MESSAGE( nMessageVariable, memberFxn )
@@ -520,7 +521,7 @@ END_MESSAGE_MAP()
 
 Windows RegisterWindowMessage işlevi tarafından kaydedilen iletiyi hangi işlevin işleyeceğini gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_REGISTERED_THREAD_MESSAGE(nMessageVariable, memberFxn )
@@ -546,7 +547,7 @@ RegisterWindowMessage, sistem genelinde benzersiz olması garanti edilen yeni bi
 
 Hangi işlevin Kullanıcı tanımlı bir iletiyi işleyeceğini gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_THREAD_MESSAGE( message, memberFxn )
@@ -572,7 +573,7 @@ Bir sınıfınız olduğunda ON_THREAD_MESSAGE ON_MESSAGE yerine kullanılmalıd
 
 Bu makro, Kullanıcı arabirimi güncelleştirme komut iletisini hangi işlevin işleyeceğini gösterir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_UPDATE_COMMAND_UI( messageId, memberFxn )
@@ -600,7 +601,7 @@ Daha fazla bilgi ve örnek için bkz. [Ileti işleme ve eşleme konuları](../..
 
 Bitişik bir komut kimliği aralığını tek bir ileti işleyicisi işlevine eşlemek için bu makroyu kullanın.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_COMMAND_RANGE( id1, id2, memberFxn )
@@ -619,9 +620,9 @@ Komutların eşlendiği ileti işleyicisi işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kimlik aralığı *ID1* ile başlar ve *ID2*ile biter.
+Kimlik aralığı *ID1* ile başlar ve *ID2* ile biter.
 
-Bir komut kimliği aralığını tek bir üye işlevine eşlemek için ON_COMMAND_RANGE kullanın. Tek bir komutu bir üye işlevine eşlemek için [ON_COMMAND](#on_command) kullanın. Yalnızca bir ileti eşleme girişi, belirli bir komut KIMLIĞIYLE eşleşir. Diğer bir deyişle, bir komutu birden fazla işleyiciyle eşleyemezsiniz. İleti aralıklarını eşleme hakkında daha fazla bilgi için bkz. [Ileti eşleme aralıkları Için işleyiciler](../../mfc/handlers-for-message-map-ranges.md).
+Bir komut kimliği aralığını tek bir üye işlevine eşlemek için ON_COMMAND_RANGE kullanın. Tek bir komutu bir üye işlevine eşlemek için [ON_COMMAND](#on_command) kullanın. Yalnızca bir ileti eşleme girişi, belirli bir komut KIMLIĞIYLE eşleşir. Diğer bir deyişle, bir komutu birden fazla işleyiciyle eşleyemezsiniz. İleti aralıklarını eşleme hakkında daha fazla bilgi için bkz. [Message-Map aralıklarına yönelik işleyiciler](../../mfc/handlers-for-message-map-ranges.md).
 
 İleti eşleme aralıkları için otomatik destek yoktur, bu nedenle makroyu kendiniz yerleştirmeniz gerekir.
 
@@ -655,7 +656,7 @@ void CChildFrame::OnRangeCmds(UINT nID)
 
 Bitişik bir komut kimliği aralığını tek bir güncelleştirme ileti işleyicisi işlevine eşler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
@@ -674,7 +675,7 @@ Komutların eşlendiği güncelleştirme iletisi işleyici işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İleti işleyicilerini güncelleştirme, komutla ilişkili menü öğelerinin ve araç çubuğu düğmelerinin durumunu güncelleştirir. Kimlik aralığı *ID1* ile başlar ve *ID2*ile biter.
+İleti işleyicilerini güncelleştirme, komutla ilişkili menü öğelerinin ve araç çubuğu düğmelerinin durumunu güncelleştirir. Kimlik aralığı *ID1* ile başlar ve *ID2* ile biter.
 
 İleti eşleme aralıkları için otomatik destek yoktur, bu nedenle makroyu kendiniz yerleştirmeniz gerekir.
 
@@ -686,7 +687,7 @@ Komutların eşlendiği güncelleştirme iletisi işleyici işlevinin adı.
 
 BN_CLICKED gibi belirli bir Windows bildirim iletisi için bir dizi denetim kimliğini tek bir ileti işleyicisi işleviyle eşlemek için bu makroyu kullanın.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
@@ -708,11 +709,11 @@ Denetimlerin eşlendiği ileti işleyicisi işlevinin adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kimlik aralığı *ID1* ile başlar ve *ID2*ile biter. İşleyici, eşlenen denetimlerden herhangi birinden gelen belirtilen bildirim için çağırılır.
+Kimlik aralığı *ID1* ile başlar ve *ID2* ile biter. İşleyici, eşlenen denetimlerden herhangi birinden gelen belirtilen bildirim için çağırılır.
 
 İleti eşleme aralıkları için otomatik destek yoktur, bu nedenle makroyu kendiniz yerleştirmeniz gerekir.
 
-Bir dizi denetim kimliği için işleyici işlevlerini uygulama hakkında daha fazla bilgi için, [Ileti eşleme aralıkları Için işleyiciler](../../mfc/handlers-for-message-map-ranges.md)bölümüne bakın.
+Bir dizi denetim kimliği için işleyici işlevlerini uygulama hakkında daha fazla bilgi için, [Message-Map aralıklarına yönelik Işleyicilere](../../mfc/handlers-for-message-map-ranges.md)bakın.
 
 ### <a name="requirements"></a>Gereksinimler
 

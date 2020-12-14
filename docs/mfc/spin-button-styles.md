@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: döndürme düğmesi stilleri'
 title: Döndür Düğmesi Stilleri
 ms.date: 09/09/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - styles [MFC], spin button control
 - spin button control, styles
 ms.assetid: fb4a7f6f-9182-47be-bccf-0728fdc5332f
-ms.openlocfilehash: 1aae4b7e4c63929ebe03c97d50f05754bc13ec26
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: c08c878843ba68a46727cc2c54034bb42e5e5d41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70907852"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216775"
 ---
 # <a name="spin-button-styles"></a>Döndür Düğmesi Stilleri
 
@@ -29,7 +30,7 @@ Bir döndürme düğmesine ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-c
 - **Binlik yok** Arkadaş penceresinin açıklamalı alt yazısının değerinde binlik ayırıcısını eklemez. UDS_NOTHOUSANDS stiliyle ilişkili.
 
     > [!NOTE]
-    >  Arkadaş denetiminden tamsayı değerini almak için iletişim kutusu veri değişimi 'ni (DDX) kullanmak istiyorsanız bu stili ayarlayın. `DDX_Text`gömülü binlik ayırıcıları kabul etmez.
+    >  Arkadaş denetiminden tamsayı değerini almak için iletişim kutusu veri değişimi 'ni (DDX) kullanmak istiyorsanız bu stili ayarlayın. `DDX_Text` gömülü binlik ayırıcıları kabul etmez.
 
 - **Sarın** Değer, denetimin aralığının ötesinde artılarak veya azaltılacağından, konumun "Wrap" olmasına neden olur. UDS_WRAP stiliyle ilişkili.
 

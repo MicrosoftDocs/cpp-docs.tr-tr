@@ -1,15 +1,16 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: Run-Time nesne modeli Hizmetleri'
 title: Çalışma Süresi Nesne Modeli Hizmetleri
 ms.date: 03/27/2019
 helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-ms.openlocfilehash: 63a82e3b05100f273be04a8718f2ecbb1510f06f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5457b34b13d53a6fbf76a74b893958b03b1d63de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844515"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218894"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 
@@ -23,9 +24,9 @@ Dinamik nesne oluşturma, çalışma zamanında belirtilen sınıfın bir nesnes
 
 Aşağıdaki tabloda, çalışma zamanı sınıf bilgilerini, serileştirme ve dinamik oluşturmayı destekleyen MFC makroları listelenmektedir.
 
-Bu çalışma zamanı nesne Hizmetleri ve serileştirme hakkında daha fazla bilgi için [CObject sınıfı: çalışma zamanı sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md)makalesine bakın.
+Bu çalışma zamanı nesne Hizmetleri ve serileştirme hakkında daha fazla bilgi için [CObject sınıfı: Run-Time sınıf bilgilerine erişme](../../mfc/accessing-run-time-class-information.md)makalesine bakın.
 
-### <a name="run-time-object-model-services-macros"></a>Çalışma zamanı nesne modeli Hizmetleri makroları
+### <a name="run-time-object-model-services-macros"></a>Run-Time nesne modeli Hizmetleri makroları
 
 |Ad|Açıklama|
 |-|-|
@@ -58,7 +59,7 @@ Microsoft Foundation Class Kitaplığı OLE 'e özgü iki makro sağlar.
 
 Ortak denetimler kitaplığının belirtilen API 'YI uygulayıp uygulamadığını belirler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 AFX_COMCTL32_IF_EXISTS(  proc );
@@ -81,7 +82,7 @@ afxcomctl32. h, afxcomctl32. inl
 
 Ortak denetimler kitaplığının belirtilen API 'YI uygulayıp uygulamadığını belirler (Bu, [AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)Unicode sürümüdür).
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 AFX_COMCTL32_IF_EXISTS2( proc );
@@ -169,7 +170,7 @@ DECLARE_DYNCREATE makrosu hakkında daha fazla bilgi için bkz. [CObject Class k
 
 `GetUserTypeNameID` `GetMiscStatus` Denetim sınıfınızın ve üye işlevlerini bildirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 DECLARE_OLECTLTYPE( class_name )
@@ -192,7 +193,7 @@ Denetim sınıfının adı.
 
 OLE denetiminin özelliklerini görüntüleyen özellik sayfalarının bir listesini sağladığını bildirir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 DECLARE_PROPPAGEIDS( class_name )
@@ -322,7 +323,7 @@ Bu makro tanımının sınıfınız için varsayılan oluşturucuyu çağıraca�
 
 Bu makro veya [IMPLEMENT_OLECREATE](#implement_olecreate) , DECLARE_OLECREATE kullanan herhangi bir sınıf için uygulama dosyasında görünmelidir.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
@@ -355,7 +356,7 @@ Aşağıdaki bayraklardan birini veya daha fazlasını içerir:
 
 Dış ad, diğer uygulamalara sunulan tanıtıcıdır. İstemci uygulamaları, bir Otomasyon sunucusundan bu sınıftan bir nesne istemek için dış adı kullanır.
 
-OLE sınıf KIMLIĞI, nesnesi için benzersiz bir 128 bitlik tanımlayıcıdır. **`long`** Söz dizimi açıklamasında *l*, *W1*, *W2*ve *B1* - *B8* ile gösterildiği gibi bir, iki **sözcükten**ve sekiz **bayttan**oluşur. Uygulama Sihirbazı ve kod sihirbazları, gerektiğinde sizin için benzersiz OLE sınıfı kimlikleri oluşturur.
+OLE sınıf KIMLIĞI, nesnesi için benzersiz bir 128 bitlik tanımlayıcıdır. **`long`** Söz dizimi açıklamasında *l*, *W1*, *W2* ve *B1* - *B8* ile gösterildiği gibi bir, iki **sözcükten** ve sekiz **bayttan** oluşur. Uygulama Sihirbazı ve kod sihirbazları, gerektiğinde sizin için benzersiz OLE sınıfı kimlikleri oluşturur.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -365,7 +366,7 @@ OLE sınıf KIMLIĞI, nesnesi için benzersiz bir 128 bitlik tanımlayıcıdır.
 
 `GetUserTypeNameID` `GetMiscStatus` Denetim sınıfınızın ve üye işlevlerini uygular.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 DECLARE_OLECTLTYPE( class_name, idsUserTypeName, dwOleMisc )
@@ -447,7 +448,7 @@ Sınıfın gerçek adı (tırnak işaretleri içine alınmaz).
 
 ### <a name="remarks"></a>Açıklamalar
 
-RUNTIME_CLASS, *class_name*tarafından belirtilen sınıf Için [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısına yönelik bir işaretçi döndürür. Yalnızca `CObject` DECLARE_DYNAMIC, DECLARE_DYNCREATE veya DECLARE_SERIAL ile belirtilen türetilmiş sınıflar bir yapıya işaretçiler döndürür `CRuntimeClass` .
+RUNTIME_CLASS, *class_name* tarafından belirtilen sınıf Için [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) yapısına yönelik bir işaretçi döndürür. Yalnızca `CObject` DECLARE_DYNAMIC, DECLARE_DYNCREATE veya DECLARE_SERIAL ile belirtilen türetilmiş sınıflar bir yapıya işaretçiler döndürür `CRuntimeClass` .
 
 Daha fazla bilgi için bkz. [CObject sınıfı konuları](../../mfc/using-cobject.md).
 
@@ -509,7 +510,7 @@ Diğer uygulamalara sunulan nesne adı (tırnak işaretleri içine alınmıştı
 
 Dış ad, diğer uygulamalara sunulan tanıtıcıdır. İstemci uygulamaları, bir Otomasyon sunucusundan bu sınıftan bir nesne istemek için dış adı kullanır.
 
-OLE sınıf KIMLIĞI, nesnesi için benzersiz bir 128 bitlik tanımlayıcıdır. **`long`** Söz dizimi açıklamasında *l*, *W1*, *W2*ve *B1* - *B8* ile gösterildiği gibi bir, iki **sözcükten**ve sekiz **bayttan**oluşur. Uygulama Sihirbazı ve kod sihirbazları, gerektiğinde sizin için benzersiz OLE sınıfı kimlikleri oluşturur.
+OLE sınıf KIMLIĞI, nesnesi için benzersiz bir 128 bitlik tanımlayıcıdır. **`long`** Söz dizimi açıklamasında *l*, *W1*, *W2* ve *B1* - *B8* ile gösterildiği gibi bir, iki **sözcükten** ve sekiz **bayttan** oluşur. Uygulama Sihirbazı ve kod sihirbazları, gerektiğinde sizin için benzersiz OLE sınıfı kimlikleri oluşturur.
 
 ### <a name="requirements"></a>Gereksinimler
 

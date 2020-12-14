@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: standart komutlar'
 title: Standart Komutlar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,45 +16,45 @@ helpviewer_keywords:
 - Help [MFC], menus
 - programmer-defined IDs [MFC]
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
-ms.openlocfilehash: 987023322e38584d10901c1ab1fe20ac46926bd2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 09c0afecf5b34565c3ab14e276c7c43a20189a0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307165"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216749"
 ---
 # <a name="standard-commands"></a>Standart Komutlar
 
-Framework standart komut ileti sayısını tanımlar. Bu komutlar için kimlikleri genellikle biçiminde:
+Framework birçok standart komut iletisini tanımlar. Bu komutların kimlikleri genellikle şu biçimde olacaktır:
 
-**ID_** *kaynak*_*öğesi*
+**ID_** *Source* _ *öğesi*
 
-Burada *kaynak* genellikle bir menü adıdır ve *öğesi* menü öğesidir. Örneğin, Dosya menüsündeki yeni komutu için komut kimliği ıd_fıle_new olur. Standart komut kimlikleri belgeleri kalın yazıyla gösterilir. Programcı tanımlı kimlikler çevreleyen metni farklı bir yazı tipi gösterilir.
+Burada *kaynak* genellikle bir menü adıdır ve *öğe* bir menü öğesidir. Örneğin, Dosya menüsündeki yeni komut için komut KIMLIĞI ID_FILE_NEW. Standart komut kimlikleri belgelerde kalın tür olarak gösterilir. Programcı tanımlı kimlikler, çevreleyen metinden farklı bir yazı tipinde gösterilir.
 
-Desteklenen en önemli komutların bir listesi verilmiştir:
+Aşağıda, desteklenen en önemli komutların bazıları listelenmiştir:
 
 *Dosya menü komutları*<br/>
-Yeni, açın, Farklı Kaydet, sayfa yapısı, Yazdırma Kurulumu, yazdırma, Baskı Önizleme, çıkış ve en son kullanılan dosyaları kaydedin, kapatın.
+Yeni, açma, kapatma, kaydetme, farklı kaydet, sayfa kurulumu, yazdırma ayarları, yazdırma, baskı önizleme, çıkış ve en son kullanılan dosyalar.
 
 *Menü komutlarını Düzenle*<br/>
-Temizleyin, Clear tüm, kopyalama, kesme, bulma, yapıştırma, tekrarlayın, Değiştir, Tümünü Seç, Geri Al ve Yinele.
+Temizle, tümünü temizle, Kopyala, kes, bul, Yapıştır, Yinele, Değiştir, Tümünü Seç, geri al ve Yinele.
 
-*Görünüm Menü Komutları*<br/>
+*Menü komutlarını görüntüle*<br/>
 Araç çubuğu ve durum çubuğu.
 
-*Pencere Menü Komutları*<br/>
-Yeni, düzenleme, basamaklı, Yatay Döşe, Dikey Döşe ve bölme.
+*Pencere menüsü komutları*<br/>
+Yeni, Düzenle, basamakla, döşeme yatay, döşeme dikey ve bölme.
 
-*Yardım Menü Komutları*<br/>
-Dizin, Yardım, kullanma ve ilgili.
+*Yardım menüsü komutları*<br/>
+Dizin, yardım ve hakkında.
 
-*OLE komutları (Düzenle menüsü)*<br/>
-Yeni nesne, Edit Links, Yapıştır, Özel Yapıştır eklemek ve *typename* nesnesi (komut Fiili).
+*OLE komutları (düzenleme menüsü)*<br/>
+Yeni nesne Ekle, bağlantıları Düzenle, Yapıştır bağlantısı, özel ve *TypeName* nesnesi (fiil komutları).
 
-Framework, bu komutları için farklı düzeylerde destek sağlar. Başkalarının kapsamlı uygulamaları ile desteklendiğinden, bazı komutlar tanımlı komut kimlikleri yalnızca desteklenir. Örneğin, framework Aç komutunu Dosya menüsünden Yeni bir belge nesnesi oluşturma, açık bir iletişim kutusu, görüntüleme ve açma ve dosya okunurken uygular. Buna karşılık, komutları Düzen menüsünden kendiniz uygulamanız gereken, verilerin niteliğine ıd_edıt_copy gibi komutlar bağlı olduğundan kopyalama.
+Framework, bu komutlar için farklı destek düzeyleri sağlar. Bazı komutlar yalnızca tanımlı komut kimlikleri olarak desteklenir, diğerleri ise kapsamlı uygulamalarla desteklenir. Örneğin, çerçeve yeni bir belge nesnesi oluşturarak, bir Aç iletişim kutusu görüntüleyerek ve dosyayı açıp okurken Dosya menüsünde Aç komutunu uygular. Bunun aksine, düzenleme menüsünde komutları uygulamanız gerekir, çünkü ID_EDIT_COPY gibi komutlar kopyaladığınız verilerin yapısına bağlıdır.
 
-Desteklenen komutlar hakkında daha fazla bilgi ve sağlanan uygulama düzeyi için bkz: [Teknik Not 22](../mfc/tn022-standard-commands-implementation.md). Standart komutlar AFXRES dosyasında tanımlanır. H
+Desteklenen komutlar ve belirtilen uygulama düzeyi hakkında daha fazla bilgi için bkz. [Teknik notun 22](../mfc/tn022-standard-commands-implementation.md). Standart komutlar, AFXRES. H dosyasında tanımlanmıştır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri](../mfc/user-interface-objects-and-command-ids.md)
+[Kullanıcı arabirimi nesneleri ve komut kimlikleri](../mfc/user-interface-objects-and-command-ids.md)

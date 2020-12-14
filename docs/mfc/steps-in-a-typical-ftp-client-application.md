@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: tipik bir FTP Istemci uygulamasındaki adımlar'
 title: Tipik Bir FTP İstemci Uygulamasındaki Adımlar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,33 +9,33 @@ helpviewer_keywords:
 - FTP (File Transfer Protocol) [MFC], client applications
 - Internet applications [MFC], FTP client applications
 ms.assetid: 70bed7b5-6040-40d1-bc77-702e63a698f2
-ms.openlocfilehash: d08edf704e748767f3b566252ad328baf40b55ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: caac613adf3ad886c4b36ae567a3b8c5c928ee10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216645"
 ---
 # <a name="steps-in-a-typical-ftp-client-application"></a>Tipik Bir FTP İstemci Uygulamasındaki Adımlar
 
-Tipik bir FTP istemci uygulaması oluşturan bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) ve [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesne. Bu MFC WinINet sınıfları gerçekten proxy türü ayarlarını kontrol olduğunu unutmayın. IIS yapar.
+Tipik bir FTP istemci uygulaması, bir [Cınternetoturumu](../mfc/reference/cinternetsession-class.md) ve bir [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesnesi oluşturur. Bu MFC WinInet sınıflarının proxy türü ayarlarını gerçekten denetlemeyeceğini unutmayın; IIS.
 
-Aşağıdaki tabloda, tipik bir FTP istemci uygulamasında gerçekleştirebileceğiniz adımlar gösterilmektedir.
+Aşağıdaki tabloda tipik bir FTP istemci uygulamasında gerçekleştirebileceğiniz adımlar gösterilmektedir.
 
-|Amacınız|İşlemlerde|Etkiler|
+|Amacınız|Gerçekleştirebileceğiniz eylemler|Etkiler|
 |---------------|----------------------|-------------|
-|Bir FTP oturumunun başlayın.|Oluşturma bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) nesne.|WinINet başlatır ve sunucusuna bağlanır.|
-|Bir FTP sunucusuna bağlanın.|Kullanım [CInternetSession::GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection).|Döndürür bir [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesne.|
-|Sunucuda yeni bir FTP dizinine geçin.|Kullanım [CFtpConnection::SetCurrentDirectory](../mfc/reference/cftpconnection-class.md#setcurrentdirectory).|Şu anda sunucu üzerinde bağlıyken dizinini değiştirir.|
-|FTP dizin ilk dosyayı bulun.|Kullanım [CFtpFileFind::FindFile](../mfc/reference/cftpfilefind-class.md#findfile).|İlk dosya bulur. Dosya bulunamazsa false değerini döndürür.|
-|FTP dizin sonraki dosyasını bulun.|Kullanım [CFtpFileFind::FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile).|Sonraki dosya bulur. Dosya bulunamazsa false değerini döndürür.|
-|Tarafından bulunan dosyayı açmak `FindFile` veya `FindNextFile` okuma veya yazma için.|Kullanım [CFtpConnection::OpenFile](../mfc/reference/cftpconnection-class.md#openfile), tarafından döndürülen dosya adını kullanarak [FindFile](../mfc/reference/cftpfilefind-class.md#findfile) veya ['larını](../mfc/reference/cftpfilefind-class.md#findnextfile).|Dosya sunucusunda okuma veya yazma için açar. Döndürür bir [Cınternetfile](../mfc/reference/cinternetfile-class.md) nesne.|
-|Okuma veya dosyaya yazmak.|Kullanım [CInternetFile::Read](../mfc/reference/cinternetfile-class.md#read) veya [CInternetFile::Write](../mfc/reference/cinternetfile-class.md#write).|Okur veya sağladığınız bir arabelleği kullanarak belirtilen sayıda yazar.|
-|Özel durumları işler.|Kullanım [Cınternetexception](../mfc/reference/cinternetexception-class.md) sınıfı.|Tüm ortak Internet özel durum türlerini işler.|
-|FTP oturumunu sonlandırın.|Elden [Cınternetsession](../mfc/reference/cinternetsession-class.md) nesne.|Dosya tanıtıcılarını Aç ve bağlantıları tarafından otomatik olarak temizlenir.|
+|Bir FTP oturumu başlatın.|[CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi oluşturun.|Winınet 'i başlatır ve sunucuya bağlanır.|
+|Bir FTP sunucusuna bağlanın.|[CInternetSession:: GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection)kullanın.|[CFtpConnection](../mfc/reference/cftpconnection-class.md) nesnesini döndürür.|
+|Sunucusunda yeni bir FTP dizinine geçin.|[CFtpConnection:: SetCurrentDirectory](../mfc/reference/cftpconnection-class.md#setcurrentdirectory)kullanın.|Sunucuda şu anda bağlı olduğunuz dizini değiştirir.|
+|FTP dizinindeki ilk dosyayı bulun.|[CFtpFileFind:: FindFile](../mfc/reference/cftpfilefind-class.md#findfile)kullanın.|İlk dosyayı bulur. Dosya bulunamazsa FALSE döndürür.|
+|FTP dizininde bir sonraki dosyayı bulun.|[CFtpFileFind:: FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile)kullanın.|Sonraki dosyayı bulur. Dosya bulunamazsa FALSE döndürür.|
+|`FindFile`Veya `FindNextFile` okuma ya da yazma için bulunan dosyayı açın.|[FindFile](../mfc/reference/cftpfilefind-class.md#findfile) veya [FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile)tarafından döndürülen dosya adını kullanarak [CFtpConnection:: OpenFile](../mfc/reference/cftpconnection-class.md#openfile)kullanın.|Dosyayı okumak veya yazmak için sunucuda açar. Bir [CInternetFile](../mfc/reference/cinternetfile-class.md) nesnesi döndürür.|
+|Dosyadan okuma veya yazma.|[CInternetFile:: Read](../mfc/reference/cinternetfile-class.md#read) veya [CInternetFile:: Write](../mfc/reference/cinternetfile-class.md#write)kullanın.|Sağladığınız arabelleği kullanarak belirtilen sayıda bayt okur veya yazar.|
+|Özel durumları işleyin.|[CInternetException](../mfc/reference/cinternetexception-class.md) sınıfını kullanın.|Tüm ortak Internet özel durum türlerini işler.|
+|FTP oturumunu sonlandırın.|[CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi atılamadı.|Açık dosya tutamaçlarını ve bağlantıları otomatik olarak temizler.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
-[MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[Win32 Internet Uzantıları (Winınet)](../mfc/win32-internet-extensions-wininet.md)<br/>
+[Internet Istemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
+[MFC WinINet sınıfları kullanarak Internet Istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

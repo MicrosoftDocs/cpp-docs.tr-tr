@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC ODBC Tüketicisi Sihirbazı'
 title: MFC ODBC Tüketici Sihirbazı
 ms.date: 08/29/2019
 helpviewer_keywords:
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-ms.openlocfilehash: c915408eede80c1564dacc88ab7b9354bd72fc11
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: ffc1378f18ab30d77da00da4ce657a5788e04172
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219141"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC Tüketici Sihirbazı
 
@@ -35,10 +36,10 @@ Bu sihirbaz, belirtilen veri kaynağına erişmek için gereken bir ODBC kayıt 
 
      **Içindeki ara** kutusu, veri kaynağı olarak kullanılacak dosyaların seçilecek dizini belirtir. Varsayılan değer \Program Files\Common Files\ODBC\Data kaynaklarıdır. Mevcut dosya veri kaynakları (. DSN dosyaları) ana liste kutusunda görünür. [ODBC veri kaynağı Yöneticisi](/sql/odbc/admin/odbc-data-source-administrator)'NDEKI **dosya DSN** sekmesini kullanarak veri kaynaklarını zaman içinde ayarlayabilir veya bu iletişim kutusunu kullanarak yeni bir tane oluşturabilirsiniz.
 
-     Bu iletişim kutusundan yeni bir dosya veri kaynağı oluşturmak için, `New` BIR DSN adı belirtmek için öğesine tıklayın; **Yeni veri kaynağı oluştur** iletişim kutusu görüntülenir. **Yeni veri kaynağı oluştur** iletişim kutusunda, uygun bir sürücü seçin ve ' a tıklayın `Next` ve veri **Browse** kaynağı olarak kullanılacak dosyanın adını seçin (. xls dosyaları gibi DSN olmayan dosyaları görüntülemek için "tüm dosyalar" ı seçmeniz gerekir) `Next` , ve ardından **son** ' a tıklayın. (DSN olmayan bir dosya seçtiyseniz, dosyayı bir DSN 'e dönüştürecek "ODBC Microsoft Excel kurulumu" gibi sürücüye özgü bir iletişim kutusu alacaksınız.)
+     Bu iletişim kutusundan yeni bir dosya veri kaynağı oluşturmak için, `New` BIR DSN adı belirtmek için öğesine tıklayın; **Yeni veri kaynağı oluştur** iletişim kutusu görüntülenir. **Yeni veri kaynağı oluştur** iletişim kutusunda, uygun bir sürücü seçin ve ' a tıklayın `Next` ve veri kaynağı olarak kullanılacak dosyanın adını seçin (. xls dosyaları gibi DSN olmayan dosyaları görüntülemek için "tüm dosyalar" ı seçmeniz gerekir) `Next` , ve ardından **son**' a tıklayın. (DSN olmayan bir dosya seçtiyseniz, dosyayı bir DSN 'e dönüştürecek "ODBC Microsoft Excel kurulumu" gibi sürücüye özgü bir iletişim kutusu alacaksınız.)
 
      > [!NOTE]
-     > ODBC veri kaynağı Yöneticisi 'ni kullanarak önceden yeni bir dosya veri kaynağı da oluşturabilirsiniz. **Başlat** menüsünde **Ayarlar** , **Denetim Masası** , **Yönetim Araçları** , **veri kaynakları (ODBC)** ve ardından **ODBC veri kaynağı Yöneticisi** ' ni seçin.
+     > ODBC veri kaynağı Yöneticisi 'ni kullanarak önceden yeni bir dosya veri kaynağı da oluşturabilirsiniz. **Başlat** menüsünde **Ayarlar**, **Denetim Masası**, **Yönetim Araçları**, **veri kaynakları (ODBC)** ve ardından **ODBC veri kaynağı Yöneticisi**' ni seçin.
 
      **DSN adı** kutusu, dosya veri kaynağı için bir ad belirtmenizi sağlar. DSN adının, Excel dosyaları için. xls veya erişim dosyaları için. mdb gibi uygun dosya uzantısıyla bitdiğinden emin olmanız gerekir.
 
@@ -50,7 +51,7 @@ Bu sihirbaz, belirtilen veri kaynağına erişmek için gereken bir ODBC kayıt 
 
      ODBC veri kaynakları hakkında daha fazla bilgi için bkz. ODBC SDK 'daki [veri kaynakları](/sql/odbc/reference/data-sources) .
 
-  Ayarlamayı bitirmek için **Tamam** 'a tıklayın. **Veritabanı nesnesi Seç** iletişim kutusu görünür. Bu iletişim kutusunda, tüketicinin kullanacağı tabloyu veya görünümü seçin. Öğeler ' i tıklatırken denetim tuşunu basılı tutarak birden çok görünüm ve tablo seçebilirsiniz. Ayarlamayı bitirmek için **Tamam** 'a tıklayın.
+  Ayarlamayı bitirmek için **Tamam**'a tıklayın. **Veritabanı nesnesi Seç** iletişim kutusu görünür. Bu iletişim kutusunda, tüketicinin kullanacağı tabloyu veya görünümü seçin. Öğeler ' i tıklatırken denetim tuşunu basılı tutarak birden çok görünüm ve tablo seçebilirsiniz. Ayarlamayı bitirmek için **Tamam**'a tıklayın.
 
 - **Sınıf**
 
@@ -68,9 +69,9 @@ Bu sihirbaz, belirtilen veri kaynağına erişmek için gereken bir ODBC kayıt 
 
    Kayıt kümesinin Dynaset (varsayılan) veya anlık görüntü olduğunu belirtir.
 
-  - **Dynaset** : kayıt kümesinin bir Dynaset olduğunu belirtir. DYNASET, sorgulanan veritabanının verilerine dizinli bir görünüm sağlayan sorgunun sonucudur. DYNASET, özgün verilerin yalnızca bir integral dizinini önbelleğe alır ve bu nedenle bir anlık görüntü üzerinde performans kazancı sağlar. Dizin, bir sorgunun sonucu olarak bulunan her bir kayda doğrudan işaret eder ve bir kaydın kaldırılıp kaldırılmadığını gösterir. Ayrıca, sorgulanan kayıtlardaki güncelleştirilmiş bilgilere erişebilirsiniz. Bu varsayılan seçenektir.
+  - **Dynaset**: kayıt kümesinin bir Dynaset olduğunu belirtir. DYNASET, sorgulanan veritabanının verilerine dizinli bir görünüm sağlayan sorgunun sonucudur. DYNASET, özgün verilerin yalnızca bir integral dizinini önbelleğe alır ve bu nedenle bir anlık görüntü üzerinde performans kazancı sağlar. Dizin, bir sorgunun sonucu olarak bulunan her bir kayda doğrudan işaret eder ve bir kaydın kaldırılıp kaldırılmadığını gösterir. Ayrıca, sorgulanan kayıtlardaki güncelleştirilmiş bilgilere erişebilirsiniz. Bu varsayılan seçenektir.
 
-  - **Anlık görüntü** : kayıt kümesinin bir anlık görüntü olduğunu belirtir. Anlık görüntü, bir sorgunun sonucudur ve tek seferde bir veritabanında görüntülenir. Sorgunun bir sonucu olarak bulunan tüm kayıtlar önbelleğe alınır, bu nedenle özgün kayıtlarda herhangi bir değişiklik görmezsiniz.
+  - **Anlık görüntü**: kayıt kümesinin bir anlık görüntü olduğunu belirtir. Anlık görüntü, bir sorgunun sonucudur ve tek seferde bir veritabanında görüntülenir. Sorgunun bir sonucu olarak bulunan tüm kayıtlar önbelleğe alınır, bu nedenle özgün kayıtlarda herhangi bir değişiklik görmezsiniz.
 
 - **Tüm sütunları bağla**
 

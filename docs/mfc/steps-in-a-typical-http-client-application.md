@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: tipik bir HTTP Istemci uygulamasındaki adımlar'
 title: Tipik Bir HTTP İstemci Uygulamasındaki Adımlar
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,29 +10,29 @@ helpviewer_keywords:
 - Internet client applications [MFC], HTTP table
 - WinInet classes [MFC], HTTP
 ms.assetid: f86552e8-8acd-4b23-bdc5-0c3a247ebd74
-ms.openlocfilehash: 59b585d3e6b8c9f13c585f5a712d33abd6123f67
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f08ca7629c389df67b579b8c20acceeb16b0cd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306970"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216606"
 ---
 # <a name="steps-in-a-typical-http-client-application"></a>Tipik Bir HTTP İstemci Uygulamasındaki Adımlar
 
 Aşağıdaki tabloda, tipik bir HTTP istemci uygulamasında gerçekleştirebileceğiniz adımlar gösterilmektedir:
 
-|Amacınız|İşlemlerde|Etkiler|
+|Amacınız|Gerçekleştirebileceğiniz eylemler|Etkiler|
 |---------------|----------------------|-------------|
-|Bir HTTP oturumu başlayın.|Oluşturma bir [Cınternetsession](../mfc/reference/cinternetsession-class.md) nesne.|WinINet başlatır ve sunucusuna bağlanır.|
-|Bir HTTP sunucusuna bağlanın.|Kullanım [CInternetSession::GetHttpConnection](../mfc/reference/cinternetsession-class.md#gethttpconnection).|Döndürür bir [CHttpConnection](../mfc/reference/chttpconnection-class.md) nesne.|
-|Bir HTTP isteği açın.|Kullanım [CHttpConnection::OpenRequest](../mfc/reference/chttpconnection-class.md#openrequest).|Döndürür bir [CHttpFile](../mfc/reference/chttpfile-class.md) nesne.|
-|Bir HTTP isteği gönder.|Kullanım [CHttpFile::AddRequestHeaders](../mfc/reference/chttpfile-class.md#addrequestheaders) ve [CHttpFile::SendRequest](../mfc/reference/chttpfile-class.md#sendrequest).|Dosyayı bulur. Dosya bulunamazsa false değerini döndürür.|
-|Dosyadan okuma.|Kullanım [CHttpFile](../mfc/reference/chttpfile-class.md).|Belirtilen sayıda baytı bir arabellek sağladığınız kullanarak okur.|
-|Özel durumları işler.|Kullanım [Cınternetexception](../mfc/reference/cinternetexception-class.md) sınıfı.|Tüm ortak Internet özel durum türlerini işler.|
-|HTTP oturumunu sonlandırın.|Elden [Cınternetsession](../mfc/reference/cinternetsession-class.md) nesne.|Dosya tanıtıcılarını Aç ve bağlantıları tarafından otomatik olarak temizlenir.|
+|Bir HTTP oturumu başlatın.|[CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi oluşturun.|Winınet 'i başlatır ve sunucuya bağlanır.|
+|Bir HTTP sunucusuna bağlanın.|[CInternetSession:: GetHttpConnection](../mfc/reference/cinternetsession-class.md#gethttpconnection)kullanın.|Bir [CHttpConnection](../mfc/reference/chttpconnection-class.md) nesnesi döndürür.|
+|Bir HTTP isteği açın.|[CHttpConnection:: OpenRequest](../mfc/reference/chttpconnection-class.md#openrequest)kullanın.|Bir [CHttpFile](../mfc/reference/chttpfile-class.md) nesnesi döndürür.|
+|HTTP isteği gönderin.|[CHttpFile:: AddRequestHeaders](../mfc/reference/chttpfile-class.md#addrequestheaders) ve [CHttpFile:: SendRequest](../mfc/reference/chttpfile-class.md#sendrequest)kullanın.|Dosyayı bulur. Dosya bulunamazsa FALSE döndürür.|
+|Dosyadan okuyun.|[CHttpFile](../mfc/reference/chttpfile-class.md)kullanın.|Sağladığınız arabelleği kullanarak belirtilen sayıda bayt okur.|
+|Özel durumları işleyin.|[CInternetException](../mfc/reference/cinternetexception-class.md) sınıfını kullanın.|Tüm ortak Internet özel durum türlerini işler.|
+|HTTP oturumunu sonlandırın.|[CInternetSession](../mfc/reference/cinternetsession-class.md) nesnesi atılamadı.|Açık dosya tutamaçlarını ve bağlantıları otomatik olarak temizler.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
-[MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[Win32 Internet Uzantıları (Winınet)](../mfc/win32-internet-extensions-wininet.md)<br/>
+[Internet Istemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br/>
+[MFC WinINet sınıfları kullanarak Internet Istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

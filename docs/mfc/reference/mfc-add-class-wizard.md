@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: MFC sınıf ekleme Sihirbazı'
 title: MFC Sınıf Ekleme Sihirbazı
 ms.date: 09/06/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - MFC Add Class Wizard
 - wizards [MFC]
 ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
-ms.openlocfilehash: 2c82e084de2123c579299ca6490bdfcfdac5d255
-ms.sourcegitcommit: 3caf5261b3ea80d9cf14038c116ba981d655cd13
+ms.openlocfilehash: 3f405b0f5523a183fd546790e0823e7a5e6bbbea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70908024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219258"
 ---
 # <a name="mfc-add-class-wizard"></a>MFC Sınıf Ekleme Sihirbazı
 
@@ -26,7 +27,7 @@ Bu sayfada, sınıf adını, Taban sınıfını ve yeni sınıf için dosya adla
 
 - **Sınıf adı**
 
-  Yeni sınıfın adını belirtir ve bu sayfadaki kimlik ve dosya adları için varsayılan temeli sağlar. C++sınıflar genellikle "C" ile başlar, örneğin "CMyClass", "MyClass. h" olur ve bu şekilde devam eder.
+  Yeni sınıfın adını belirtir ve bu sayfadaki kimlik ve dosya adları için varsayılan temeli sağlar. C++ sınıfları genellikle "C" ile başlar, örneğin "CMyClass", "MyClass. h" olur ve bu şekilde devam eder.
 
 - **Temel sınıf**
 
@@ -43,13 +44,13 @@ Bu sayfada, sınıf adını, Taban sınıfını ve yeni sınıf için dosya adla
   İletişim kutusu KIMLIĞI gerektiren sınıflar için, [kaynak Düzenleyicisi](../../windows/resource-editors.md) 'ni kullanarak iletişim kaynağı oluşturma, kimliğini [sınıf Sihirbazı](mfc-class-wizard.md)'nda atama ve ardından bu kaynak kimliğiyle ilişkili bir sınıf oluşturma daha verimli bulabilirsiniz. Standart bir Windows iletişim kutusu oluşturma hakkında daha fazla bilgi için bkz. [Yeni Iletişim kutusu oluşturma](../../windows/creating-a-new-dialog-box.md) .
 
   > [!NOTE]
-  > Önce bir iletişim kutusu kaynağı oluşturup yeni sınıfını öğesinden `CDHtmlDialog`türetirsiniz, varsayılan iletişim kutusunda görüntülenen standart Windows **Tamam** ve **iptal** düğmelerini silin. Standart Windows iletişim kutusu, kendi **Tamam** ve **Iptal** düğmelerini içeren DHTML formunu barındırır.
+  > Önce bir iletişim kutusu kaynağı oluşturup yeni sınıfını öğesinden türetirsiniz `CDHtmlDialog` , varsayılan iletişim kutusunda görüntülenen standart Windows **Tamam** ve **iptal** düğmelerini silin. Standart Windows iletişim kutusu, kendi **Tamam** ve **Iptal** düğmelerini içeren DHTML formunu barındırır.
 
   İletişim kutusu hem Windows denetimleri hem de DHTML denetimleri içerdiğinde, önerilmez.
 
 - **İletişim kutusu KIMLIĞI**
 
-  `CDialog`,, Veya `CPropertyPage` `CFormView` öğesini`CDHtmlDialog` **temel sınıf**olarak seçtiyseniz, iletişim kutusunun kimliğini belirtir.
+  ,, `CDialog` `CFormView` Veya öğesini `CPropertyPage` `CDHtmlDialog` **temel sınıf** olarak seçtiyseniz, iletişim kutusunun kimliğini belirtir.
 
 - **. h dosyası**
 
@@ -67,7 +68,7 @@ Bu sayfada, sınıf adını, Taban sınıfını ve yeni sınıf için dosya adla
 
   Oluşturucuda [EnableActiveAccessibility](../../mfc/reference/cwnd-class.md#enableactiveaccessibility) ÇAĞıRARAK, MFC 'Nin Etkin Erişilebilirlik desteğini sunar. Bu seçenek, [CWnd](../../mfc/reference/cwnd-class.md)'den türetilmiş sınıflar için kullanılabilir.
 
-- **Otomatikleştirme**
+- **Otomasyon**
 
   [Otomasyon](../../mfc/automation.md)için destek sınıfı düzeyini ayarlar. Sınıf düzeyinde Otomasyon, otomasyonu destekleyen tüm sınıflar için kullanılabilir. Otomasyon desteğiyle oluşturulmuş projeler için de kullanılabilir. Diğer bir deyişle, [ATL destekleyen](../../atl/reference/mfc-support-in-atl-projects.md)bir MFC projesi ya da MFC Uygulama sihirbazının [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) sayfasında **Otomasyon** onay kutusunu seçtiğiniz bir MFC projesi.
 
@@ -97,5 +98,5 @@ Bu sayfada, sınıf adını, Taban sınıfını ve yeni sınıf için dosya adla
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
+[MFC Sınıfı](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)

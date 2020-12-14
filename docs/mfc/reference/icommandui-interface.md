@@ -1,4 +1,5 @@
 ---
+description: 'Şu konuda daha fazla bilgi edinin: ıommanduı arabirimi'
 title: Iommanduı arabirimi
 ms.date: 09/07/2019
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-ms.openlocfilehash: 0c185e873f526403e86cb5a80f6e0631f8654284
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 26ddd4366994c9e0cecba2b4902a36e1038896c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743444"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219544"
 ---
 # <a name="icommandui-interface"></a>Iommanduı arabirimi
 

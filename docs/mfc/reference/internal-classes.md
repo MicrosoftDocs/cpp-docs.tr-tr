@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Iç sınıflar'
 title: İç Sınıflar
 ms.date: 11/04/2016
 f1_keywords:
@@ -307,108 +308,108 @@ helpviewer_keywords:
 - CMenuImages class [MFC]
 - CleanUp method [MFC]
 ms.assetid: 3e2276aa-b02a-4781-97ba-ea074045e9e2
-ms.openlocfilehash: ae35aefefe548990eeb7fbe637839e475036c2bc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f32eed3d97df5b1e260d834836bf701968466a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322020"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219518"
 ---
 # <a name="internal-classes"></a>İç Sınıflar
 
-Aşağıdaki sınıflar MFC'de dahili olarak kullanılır. Bütünlük için bu bölümde söz konusu iç sınıfları açıklar ancak kodunuzda doğrudan kullanılması amaçlanmamıştır.
+Aşağıdaki sınıflar MFC 'de dahili olarak kullanılır. Bu bölümde, bu bölüm bu iç sınıfları açıklar ancak doğrudan kodunuzda kullanılmaya yönelik değildir.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-|örneği|Açıklama|
+|Sınıf|Açıklama|
 |-----------|-----------------|
-|`CCommandManager Class`|`CCommandManager` Sınıfı, komutlar ve bunların görüntülerle yönetir.|
-|`CDialogImpl Class (MFC)`|İletişim kutusu tabanlı sınıflar için uygulama ayrıntıları gibi sağlar `CDialogEx`.|
-|`CDocumentAdapter Class`|Implements Idocument arabirimi işleyicileri arama ve düzenleme için gereklidir.|
-|`CFrameImpl Class`|`CFrameImpl` Sınıfı aşağıdaki çerçeve penceresi sınıfları için araç çubuğu özelleştirme işler: [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md), [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md), ve [Coleıpframewndex sınıfı](../../mfc/reference/coleipframewndex-class.md).|
-|`CFullScreenImpl Class`|SDI ve MDI uygulamaları için ortak uygulayan tam ekran işlevselliği.|
-|`CMDIClientAreaWnd Class`|`CMDIClientAreaWnd` Uygulaması MDI sekmeleri ve MDI sekmeli grupları basitleştiren bir yardımcı sınıfı.|
-|`CMemDC Class`|Bir bellek cihaz bağlamı için bir yardımcı sınıfı. Bellek cihaz bağlamı ekran dışında çizim destekler.|
-|`CMenuHash Class`|Durumunu okuyan `CMFCToolBar` nesneleri arşivden veya bir arşiv durumu yazar.|
-|`CMenuImages Class`|Kapat düğmeleri gibi önceden tanımlanmış görüntüler, düğmeler, radyo düğmeleri ve okları en üst düzeye çıkarmak için gereken işlevleri sağlar.|
-|`CMFCCaptionButtonEx Class`|Sistemi açıklamalı alt yazı düğme istemci olmayan alan tutar.|
-|`CMFCCaptionMenuButton Class`|Bir görev bölmesi ya da araç çubuğu başlık alanında bulunan bir menü düğmesini temsil eder.|
-|`CMFCColorPropertySheet Class`|Tarafından kullanılan [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md) sekmeli iletişim kutusunun sağlamak.|
-|`CMFCControlBarImpl Class`|Çubuk tabanlı sınıflar gibi denetlemek için uygulama ayrıntılarını sağlar `CMFCReBar` ve `CMFCToolBar`.|
-|`CMFCControlRenderer Class`|Görüntü işleme işleyen bir yardımcı sınıfı.|
-|`CMFCControlRendererInfo Class`|Parametreleri için bir yardımcı sınıfı `CMFCControlRenderer` sınıfı.|
-|`CMFCCustomizeButton Class`|Bir menü komutu veya bir özelleştirme iletişim kutusunu başlatan bir araç çubuğu düğmesini destekler.|
-|`CMFCCustomizeMenuButton Class`|Özelleştirme menüsünde tek bir düğmeyi temsil eder.|
-|`CMFCDropDownListBox Class`|Şerit birleşik giriş kutuları için aşağı açılan liste kutusu işlevlerini sağlar.|
-|`CMFCMousePropertyPage Class`|Fare davranışını özelleştirmek kullanıcının sağlayan bir özellik sayfası.|
+|`CCommandManager Class`|`CCommandManager`Sınıfı komutları ve bunların görüntülerle ilişkilendirmesini yönetir.|
+|`CDialogImpl Class (MFC)`|, Gibi iletişim kutusu tabanlı sınıflara uygulama ayrıntıları sağlar `CDialogEx` .|
+|`CDocumentAdapter Class`|Arama ve düzenleme işleyicileri için gerekli IDocument arabirimini uygular.|
+|`CFrameImpl Class`|`CFrameImpl`Sınıfı, şu çerçeve pencere sınıfları için araç çubuğu özelleştirmesini işler: [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md), [CMDIFrameWndEx sınıfı](../../mfc/reference/cmdiframewndex-class.md)ve [copaipframewndex sınıfı](../../mfc/reference/coleipframewndex-class.md).|
+|`CFullScreenImpl Class`|SDI ve MDI uygulamaları için ortak olan tam ekran işlevselliğini uygular.|
+|`CMDIClientAreaWnd Class`|`CMDIClientAreaWnd`Sınıfı, MDI sekmelerinin ve MDI sekmeli gruplarının uygulanmasını kolaylaştıran bir yardımcı sınıftır.|
+|`CMemDC Class`|Bellek cihaz bağlamı için yardımcı sınıf. Bellek cihaz bağlamı, ekran dışı çizimi destekler.|
+|`CMenuHash Class`|`CMFCToolBar`Bir arşivdeki nesnelerin durumunu okur veya durumu bir arşive yazar.|
+|`CMenuImages Class`|Düğme, düğme, radyo düğmeleri ve okları kapatma gibi önceden tanımlanmış görüntüleri görüntüleyen işlevselliği sağlar.|
+|`CMFCCaptionButtonEx Class`|Sistem açıklamalı alt yazı düğmelerinin istemci olmayan alanını barındırır.|
+|`CMFCCaptionMenuButton Class`|Görev bölmesinin veya araç çubuğunun başlık alanında bulunan bir menü düğmesini temsil eder.|
+|`CMFCColorPropertySheet Class`|Bir sekmeli iletişim kutusu sağlamak için [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md) tarafından kullanılır.|
+|`CMFCControlBarImpl Class`|, Ve gibi çubuk tabanlı sınıfları denetlemek için uygulama ayrıntıları sağlar `CMFCReBar` `CMFCToolBar` .|
+|`CMFCControlRenderer Class`|Görüntü işlemeyi işleyen bir yardımcı sınıfı.|
+|`CMFCControlRendererInfo Class`|Parametreleri sınıfa geçirmek için yardımcı bir sınıf `CMFCControlRenderer` .|
+|`CMFCCustomizeButton Class`|Bir özelleştirme iletişim kutusu Başlatan bir menü komutunu veya bir araç çubuğu düğmesini destekler.|
+|`CMFCCustomizeMenuButton Class`|Özelleştirme menüsündeki tek bir düğmeyi temsil eder.|
+|`CMFCDropDownListBox Class`|Şerit açılan kutularına açılan liste kutusu işlevselliği sağlar.|
+|`CMFCMousePropertyPage Class`|Kullanıcının fare davranışını özelleştirmesini sağlayan bir özellik sayfası.|
 |`CMFCOutlookBarPaneAdapter Class`||
-|`CMFCOutlookBarPaneButton Class`|Framework ekleyen bir düğme uygular bir `CMFCOutlookBarPane` nesne.|
-|`CMFCOutlookBarPaneList Class`|Genişletir `CMFCOutlookBarPane` Outlook görsel stil sağlar sınıfını.|
-|`CMFCOutlookBarScrollButton Class`|Kaydırma işlevlere `CMFCOutlookBarTabCtrl` sınıfı.|
-|`CMFCOutlookBarToolBar Class`|Outlook 2003 görsel stilde bir araç çubuğu uygular.|
+|`CMFCOutlookBarPaneButton Class`|Çerçevenin bir nesneye eklediği bir düğme uygular `CMFCOutlookBarPane` .|
+|`CMFCOutlookBarPaneList Class`|`CMFCOutlookBarPane`Outlook görsel stilini sağlamak için sınıfını genişletir.|
+|`CMFCOutlookBarScrollButton Class`|Sınıfa kaydırma işlevi sağlar `CMFCOutlookBarTabCtrl` .|
+|`CMFCOutlookBarToolBar Class`|Outlook 2003 görsel stiline sahip bir araç çubuğu uygular.|
 |`CMFCPropertySheetCategoryInfo Class`|Ağaç denetimindeki bir düğümü temsil eder.|
-|`CMFCPropertySheetTabCtrl Class`|Genişletir `CMFCTabCtrl` özellik sayfası işlevselliği sağlamak için sınıf.|
-|`CMFCProperySheetListBox Class`|Genişletir `CListBox` özellik sayfası işlevselliği sağlamak için sınıf.|
+|`CMFCPropertySheetTabCtrl Class`|`CMFCTabCtrl`Özellik sayfası işlevselliği sağlamak için sınıfını genişletir.|
+|`CMFCProperySheetListBox Class`|`CListBox`Özellik sayfası işlevselliği sağlamak için sınıfını genişletir.|
 |`CMFCReBarState Class`||
-|`CMFCRibbonCaptionButton Class`|Bir sistem başlık düğmesi uygular.|
-|`CMFCRibbonCmdUI Class`|Güncelleştirmeler, uygulamanın boşta olduğunda gerektiğinde çubuğu nesneleri Şerit.|
+|`CMFCRibbonCaptionButton Class`|Bir sistem açıklamalı alt yazı düğmesi uygular.|
+|`CMFCRibbonCmdUI Class`|Uygulama boşta olduğunda şerit çubuğu nesnelerini gerektiği şekilde güncelleştirir.|
 |`CMFCRibbonCommandsListBox Class`||
 |`CMFCRibbonDefaultPanelButton Class`||
-|`CMFCRibbonGalleryIcon Class`|Bir öğeyi temsil eden bir `CMFCRibbonGallery` nesne.|
-|`CMFCRibbonKeyboardCustomizeDialog Class`|Bir Şerit çubuğu içeren uygulamalar için klavye özelleştirme iletişim kutusu uygular.|
-|`CMFCRibbonKeyTip Class`|Bir Şerit çubuğunun anahtar ipucu görüntüleyen bir pencere uygular.|
+|`CMFCRibbonGalleryIcon Class`|Bir nesne içindeki bir öğeyi temsil eder `CMFCRibbonGallery` .|
+|`CMFCRibbonKeyboardCustomizeDialog Class`|Şerit çubukları içeren uygulamalar için bir klavye özelleştirmesi iletişim kutusu uygular.|
+|`CMFCRibbonKeyTip Class`|Şerit çubuğu için bir anahtar ipucu görüntüleyen bir açılır pencere uygular.|
 |`CMFCRibbonPanelMenu Class`||
-|`CMFCRibbonPanelMenuBar Class`|Bir Şerit çubuğu açılır menü çubuğunda temsil eder.|
-|`CMFCRibbonQuickAccessToolBar Class`|Hızlı Erişim Araç çubuğu için Şerit öğesi uygular.|
-|`CMFCRibbonRichEditCtrl Class`|Bir Şerit çubuğunda bulunan bir düzenleme denetimi uygular.|
-|`CMFCRibbonTab Class`|Bir Şerit çubuğuna sekmesinde temsil eder.|
+|`CMFCRibbonPanelMenuBar Class`|Şerit çubuğundaki bir açılır menü çubuğunu temsil eder.|
+|`CMFCRibbonQuickAccessToolBar Class`|Şerit öğesi için hızlı erişim araç çubuğunu uygular.|
+|`CMFCRibbonRichEditCtrl Class`|Şerit çubuğunda bulunan bir düzenleme denetimi uygular.|
+|`CMFCRibbonTab Class`|Şerit çubuğundaki bir sekmeyi temsil eder.|
 |`CMFCShadowRenderer Class`||
-|`CMFCShowAllButton Class`|Gizli komutlar gösterilecek genişleten bir açılır menü alt kısmında bulunan bir düğmeyi temsil eder.|
-|`CMFCStatusBarPaneInfo Class`|İçeriği ve görünümü, açıklayan bir `CMFCStatusBar` bölmesi.|
-|`CMFCTabButton Class`|Sekme denetimleri için sekmesinde düğme işlevleri sağlar.|
-|`CMFCTabInfo Class`|Bir sekme için sekmesinde denetimleri hakkında bilgi sağlar.|
-|`CMFCTasksPaneFrameWnd Class`|Özel resim yazılı düğmelerini görevler bölmesinin yönetir.|
-|`CMFCTasksPanePropertyPage Class`|Arasındaki ilişkiyi yöneten bir `CMFCTasksPane` nesne ve onun adı.|
-|`CMFCTasksPaneToolBar Class`|Üst kısmında bulunan bir gezinti araç uygulayan bir `CMFCTasksPane` nesne.|
-|`CMFCToolBarButtonsListButton Class`|Kullanıcının özelleştirmesinde sırasında seçebileceği görüntülerin listesini görüntüler **düğme görünümünü** iletişim kutusu.|
-|`CMFCToolBarDateTimeCtrlImpl Class`|Bir bırakma kaynağı için uygulayan `CMFCToolBar` nesneleri.|
-|`CMFCToolBarDropSource Class`|Bir bırakma kaynağı için uygulayan `CMFCToolBar` nesneleri.|
-|`CMFCToolBarDropTarget Class`|Bir bırakma hedefi için uygulayan `CMFCToolBar` nesneleri.|
-|`CMFCToolBarEditCtrl Class`|İçin düzenleme denetimi işlevlerini sağlar `CMFCToolBarEditBoxButton` nesneleri.|
-|`CMFCToolBarMenuButtonsButton Class`|Menü çubuğunun sağında bulunan sistem resim yazılı düğmelerini temsil eder.|
-|`CMFCToolBarNameDialog Class`|Yeni araç çubuğu açıklamalı alt yazı belirtmesini sağlayan bir iletişim kutusu temsil eder.|
-|`CMFCToolBarsCommandsListBox Class`|Araç çubuğunun komutlarının listesini içeren bir liste kutusu temsil eder.|
-|`CMFCToolBarsCommandsPropertyPage Class`|Özellik sayfasında komutları özelleştirme uygular.|
+|`CMFCShowAllButton Class`|Gizli komutları göstermek için genişleyen açılan menünün altında bulunan bir düğmeyi temsil eder.|
+|`CMFCStatusBarPaneInfo Class`|Bir bölmenin içeriğini ve görünümünü açıklar `CMFCStatusBar` .|
+|`CMFCTabButton Class`|Sekme denetimlerine sekme düğmesi işlevselliği sağlar.|
+|`CMFCTabInfo Class`|Sekme denetimlerine bir sekme hakkında bilgi sağlar.|
+|`CMFCTasksPaneFrameWnd Class`|Bir görevler bölmesinin özel açıklamalı alt yazı düğmelerini yönetir.|
+|`CMFCTasksPanePropertyPage Class`|Bir `CMFCTasksPane` nesne ve adı arasındaki ilişkiyi yönetir.|
+|`CMFCTasksPaneToolBar Class`|Bir nesnenin üst kısmında bulunan bir gezinti araç çubuğunu uygular `CMFCTasksPane` .|
+|`CMFCToolBarButtonsListButton Class`|**Düğme görünümü** iletişim kutusunda özelleştirme sırasında kullanıcının seçim yapabilir resimlerin listesini görüntüler.|
+|`CMFCToolBarDateTimeCtrlImpl Class`|Nesneler için bir bırakma kaynağı uygular `CMFCToolBar` .|
+|`CMFCToolBarDropSource Class`|Nesneler için bir bırakma kaynağı uygular `CMFCToolBar` .|
+|`CMFCToolBarDropTarget Class`|Nesneler için bir bırakma hedefi uygular `CMFCToolBar` .|
+|`CMFCToolBarEditCtrl Class`|Nesnelere düzenleme denetimi işlevselliği sağlar `CMFCToolBarEditBoxButton` .|
+|`CMFCToolBarMenuButtonsButton Class`|Bir menü çubuğunun sağında bulunan sistem resim yazısı düğmelerini temsil eder.|
+|`CMFCToolBarNameDialog Class`|Kullanıcının yeni bir araç çubuğu başlığı belirtmesini sağlayan bir iletişim kutusunu temsil eder.|
+|`CMFCToolBarsCommandsListBox Class`|Araç çubuğu komutlarının bir listesini içeren bir liste kutusunu temsil eder.|
+|`CMFCToolBarsCommandsPropertyPage Class`|Özellik sayfasında komutları özelleştirmeyi uygular.|
 |`CMFCToolBarsKeyboardPropertyPage Class`||
-|`CMFCToolBarsListCheckBox Class`|Araç çubukları listesini görüntüler **araç çubukları** sayfasının bir **Özelleştir** iletişim kutusu.|
-|`CMFCToolBarsListPropertyPage Class`|Araç çubuklarında listesini gösteren bir özellik sayfasını temsil eden bir **Özelleştir** iletişim kutusu.|
-|`CMFCToolBarsMenuPropertyPage Class`|Menü özelleştirme seçenekleri içeren bir özellik sayfasını temsil eden bir **Özelleştir** iletişim kutusu.|
-|`CMFCToolBarsOptionsPropertyPage Class`|Temsil eden **seçenekleri** sayfasını bir **Özelleştir** iletişim kutusu.|
-|`CMFCToolBarSpinEditBoxButton Class`|Düzenleme kutusu üzerinde bulunan bir değer değiştirme düğmesi temsil eder.|
-|`CMFCToolBarsToolsPropertyPage Class`|Kullanıcı araçlarını özelleştirmek kullanıcının sağlayan bir özellik sayfasını temsil eder.|
-|`CMFCToolBarSystemMenuButton Class`|Bir kullanıcı bir MDI alt penceresi kapladığında ana menü çubuğuna framework ekleyen bir sistem başlık düğmesi uygular.|
-|`CMFCVisualManagerBitmapCache Class`|Yöneten `CMFCControlRenderer` bit eşlemler işlemlerinin performansını artırmak için nesneleri.|
-|`CMultiDocTemplateEx Class`|Genişletir `CMultiDocTemplate` menü kaynağı kimliğine erişim sağlamak için sınıfı|
+|`CMFCToolBarsListCheckBox Class`|**Özelleştirme** Iletişim kutusunun **araç çubukları** sayfasında araç çubuklarının listesini görüntüler.|
+|`CMFCToolBarsListPropertyPage Class`|Bir **Özelleştirme** iletişim kutusunda araç çubuklarının listesini gösteren bir özellik sayfasını temsil eder.|
+|`CMFCToolBarsMenuPropertyPage Class`|**Özelleştirme** iletişim kutusunda menü özelleştirme seçeneklerini içeren bir özellik sayfasını temsil eder.|
+|`CMFCToolBarsOptionsPropertyPage Class`|**Özelleştirme** Iletişim kutusundaki **Seçenekler** sayfasını temsil eder.|
+|`CMFCToolBarSpinEditBoxButton Class`|Düzenleme kutusunda bulunan bir döndürme düğmesini temsil eder.|
+|`CMFCToolBarsToolsPropertyPage Class`|Kullanıcının kullanıcı araçlarını özelleştirmesine izin veren bir özellik sayfasını temsil eder.|
+|`CMFCToolBarSystemMenuButton Class`|Bir Kullanıcı bir MDI alt penceresini en üst düzeye çıkaran zaman çerçevenin ana menü çubuğuna eklediği bir sistem resim yazısı düğmesi uygular.|
+|`CMFCVisualManagerBitmapCache Class`|`CMFCControlRenderer`Bit eşlemlerdeki işlemlerin performansını geliştirmek için nesneleri yönetir.|
+|`CMultiDocTemplateEx Class`|`CMultiDocTemplate`Menü kaynak kimliğine erişim sağlamak için sınıfını genişletir.|
 |`COleCntrFrameWndEx Class`||
 |`COleDocIPFrameWndEx Class`|OLE desteği sağlar.|
 |`COleServerDocEx Class`|OLE sunucu belgeleri üzerinde işlemler sağlar.|
 |`CPaneContainerGC Class`||
-|`CPngImage Class`|.Png dosyası biçimini kullanmak resim kaynakları erişim sağlar.|
+|`CPngImage Class`|. Png dosya biçimini kullanan görüntü kaynaklarına erişim sağlar.|
 |`CPreviewViewEx Class`||
-|`CRecentPaneContainerInfo Class`|Bir yerleştirme bölmesi önceki durumunu içerir.|
-|`CRibbonCategoryScroll Class`|Belirtilmediğinde tüm öğeleri bir Şerit çubuğuna alanında uygun görünen bir kaydırma düğmesi uygular.|
-|`CSmartDockingGroupGuide Class`|Bir akıllı yerleştirme grubunun Merkezi öğesi temsil eder.|
-|`CSmartDockingGroupGuidesManager Class`|Akıllı Yerleştirme grubu kılavuzları yönetir.|
-|`CSmartDockingGroupGuidesWnd Class`|Akıllı Yerleştirme kılavuzları merkezi grubunu görüntülemek için framework kullanan bir katmanlı, dikdörtgen olmayan pencere uygular.|
-|`CSmartDockingHighlighterWnd Class`|Sabitlenmiş yerleştirilebilir bölmesinde nesne tarafından gerçekleştirilecek alanını kapsayan yarı saydam bir pencere uygular.|
-|`CSmartDockingManager Class`|Akıllı Yerleştirme işlevsellik sağlayan `CDockingManager` nesneleri.|
-|`CSmartDockingStandaloneGuide Class`|Akıllı Yerleştirme Kılavuzu uygular.|
-|`CSmartDockingStandaloneGuideWnd Class`|Akıllı Yerleştirme kılavuzlarını görüntülemek için framework kullanan bir katmanlı, dikdörtgen olmayan pencere uygular.|
-|`CTagManager Class`|`CTagManager` Sınıfı, XML benzeri etiketli biçiminde depolanan değerleri okumak için tasarlanmıştır.|
-|`CVSListBoxBase Class`|İçin temel işlevleri sağlar `CVSListBox` sınıfı.|
-|`CVSListBoxEditCtrl Class`|Bir iletişim kutusu açılır küçük bir düğme görüntüleyerek standart liste kutusu düzenleme denetimini genişletir.|
-|`CVSToolsListBox Class`|Ek düğmeler, ekleme, silme ve liste kutusunda öğeleri Taşı sağlayarak standart liste kutusu denetimini genişletir.|
+|`CRecentPaneContainerInfo Class`|Takma bölmesinin önceki durumunu tutar.|
+|`CRibbonCategoryScroll Class`|Tüm öğelerin şerit çubuğunun alanına sığması durumunda görünen bir kaydırma düğmesi uygular.|
+|`CSmartDockingGroupGuide Class`|Akıllı yerleştirme grubunun Merkezi öğesini temsil eder.|
+|`CSmartDockingGroupGuidesManager Class`|Akıllı yerleşik grup kılavuzlarını yönetir.|
+|`CSmartDockingGroupGuidesWnd Class`|Framework 'ün, akıllı yerleştirme kılavuzlarını merkezi grubunu göstermek için kullandığı katmanlı, dikdörtgen olmayan bir pencere uygular.|
+|`CSmartDockingHighlighterWnd Class`|Yerleştirilmekte olan yerleştirilebilir bölmesi nesnesinin alınacağı alanı içeren yarı saydam bir pencere uygular.|
+|`CSmartDockingManager Class`|Nesnelere akıllı yerleştirme işlevselliği sağlar `CDockingManager` .|
+|`CSmartDockingStandaloneGuide Class`|Akıllı yerleştirme kılavuzunu uygular.|
+|`CSmartDockingStandaloneGuideWnd Class`|Çerçevenin akıllı yerleştirme kılavuzlarını görüntülemesi için kullandığı katmanlı, dikdörtgen olmayan bir pencere uygular.|
+|`CTagManager Class`|`CTagManager`Sınıfı, XML benzeri etiketli biçimde depolanan değerleri okumak için tasarlanmıştır.|
+|`CVSListBoxBase Class`|Sınıfına temel işlevsellik sağlar `CVSListBox` .|
+|`CVSListBoxEditCtrl Class`|İletişim kutusu açan küçük bir düğmeyi görüntüleyerek standart liste kutusu düzenleme denetimini genişletir.|
+|`CVSToolsListBox Class`|Liste kutusuna öğe ekleme, silme ve taşıma için ek düğmeler sunarak standart liste kutusu denetimini genişletir.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Masaüstü Uygulamaları](../../mfc/mfc-desktop-applications.md)
+[MFC masaüstü uygulamaları](../../mfc/mfc-desktop-applications.md)

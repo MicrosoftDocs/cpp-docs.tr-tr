@@ -1,34 +1,35 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: durum çubukları'
 title: Durum Çubukları
 ms.date: 11/04/2016
 helpviewer_keywords:
 - status bars
 - control bars [MFC], status bar
 ms.assetid: fcbc5029-1aab-4e14-adf7-419038a4935e
-ms.openlocfilehash: 399beaf16eed2a3b488abfc14e255759e8dea779
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 534d7adbc8930c9d9c343a17571439c25b895a8d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216697"
 ---
 # <a name="status-bars"></a>Durum Çubukları
 
-Durum çubukları, uygulama kullanıcının iş kesintiye uğratmadan kullanıcıya iletileri ve yararlı bilgileri görüntülemek için bir yer verin. Genellikle, pencerenin alt kısmında görüntülenen, "" göstergeler"ve"ileti satır."içeren bölme," durum çubukları sahip Üzerinde vb. Makro kaydı açık olup göstergeleri SCROLL LOCK gibi şeyler durumunu verir. Durum çubuğundaki ileti satırı kullanıcı fare ile işaret ettiği bir araç çubuğu düğmesini veya menü öğesi veya program durumu hakkındaki bilgileri görüntüleyebilirsiniz.
+Durum çubukları, uygulamanıza, kullanıcının işini kesintiye uğramadan iletileri ve yararlı bilgileri göstermek için bir yer sağlar. Genellikle pencerenin en altında görünen durum çubuklarının "göstergeleri" ve "ileti satırı" içeren "bölmeleri" vardır. Göstergeler, makro kaydının açık olup olmadığı gibi, bu nesnelerin durumunu SCROLL LOCK olarak verir. Durum çubuğundaki ileti satırı, program durumu hakkında bilgiler veya kullanıcının fareyle işaret ettiği bir araç çubuğu düğmesi veya menü öğesi hakkında bilgi görüntüleyebilir.
 
-Durum çubuğu seçerek programınıza oluşturma **ilk durum çubuğu** MFC Uygulama Sihirbazı'nda seçeneği.
+MFC Uygulama Sihirbazı ' nda **Ilk durum çubuğu** seçeneğini belirleyerek programınızda bir durum çubuğu oluşturun.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz
+## <a name="what-do-you-want-to-know-more-about"></a>Hakkında daha fazla bilgi edinmek istiyorsunuz
 
 - [MFC'de durum çubuğu uygulaması](../mfc/status-bar-implementation-in-mfc.md)
 
 - [Durum çubuğu bölmesinin metnini güncelleştirme](../mfc/updating-the-text-of-a-status-bar-pane.md)
 
-- [Yeni bir durum çubuğu bölmesi (durum çubuğu bölmesinin metnini güncelleştirme) oluşturma](../mfc/updating-the-text-of-a-status-bar-pane.md)
+- [Yeni bir durum çubuğu bölmesi oluşturma (durum çubuğu bölmesinin metnini güncelleştirme)](../mfc/updating-the-text-of-a-status-bar-pane.md)
 
-- [Durum çubuğu bölmesinin görüntü metni (durum çubuğu bölmesinin metnini güncelleştirme) yapma](../mfc/updating-the-text-of-a-status-bar-pane.md)
+- [Durum çubuğu bölmesi görüntüleme metni oluşturma (durum çubuğu bölmesinin metnini güncelleştirme)](../mfc/updating-the-text-of-a-status-bar-pane.md)
 
-- [Durum çubuğunda komut bilgilerini görüntüleme](../mfc/how-to-display-command-information-in-the-status-bar.md)
+- [Durum çubuğunda komut bilgilerini görüntüle](../mfc/how-to-display-command-information-in-the-status-bar.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

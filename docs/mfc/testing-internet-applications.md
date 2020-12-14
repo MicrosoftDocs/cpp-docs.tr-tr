@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Internet uygulamalarını test etme'
 title: Internet Uygulamalarını Test Etme
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,22 +9,22 @@ helpviewer_keywords:
 - debugging [MFC], Web applications
 - Internet debugging and testing
 ms.assetid: ac4c74e3-d4ad-4e19-8f6c-e270de067f01
-ms.openlocfilehash: e582fd006a49e672fb21c86b054b8d35f489698f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ed3dd9819524e156af47da4070c517e3761380ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306476"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216268"
 ---
 # <a name="testing-internet-applications"></a>Internet Uygulamalarını Test Etme
 
-Özellikle bir Web sunucusu üzerinde çalışan uygulamalar için Internet üzerindeki bazı test zorluk vardır. İlk sınamanızda büyük olasılıkla yapılmayacak test sunucusuna bağlanan bir tek kullanıcı istemci kullanarak. Bu, kodunuzu hata ayıklama için yararlı olacaktır.
+Özellikle bir Web sunucusunda çalışan uygulamalar için, Internet 'te bazı benzersiz test sorunları vardır. İlk testiniz muhtemelen bir test sunucusuna bağlanan tek kullanıcılı istemci kullanılarak yapılır. Bu, kodunuzun hatalarını ayıklamak için yararlı olacaktır.
 
-Gerçek koşullar altında test etmek istersiniz: düşük hızlı seri satırları yanı sıra yüksek hızlı bağlantılar bağlı birden fazla istemciyle modem bağlantıları dahil olmak üzere. Gerçek koşullarının benzetimini yapmak zor olabilir, ancak kesinlikle tasarlama olası senaryolar zaman harcama ve yürütmeden değerindedir. Mümkünse, kapasite ve stres testi araçları kullanmak ayrıca isteyeceksiniz. Hata, zamanlama hataları gibi belirli sınıfları bulmak ve yeniden oluşturmak için zordur.
+Ayrıca, gerçek koşullarda test etmek isteyeceksiniz: yüksek hızlı bağlantılar ve modem bağlantıları dahil düşük hızlı seri hatlar üzerinde bağlanmış birden fazla istemci ile. Gerçek koşulların benzetimini yapmak zor olabilir, ancak olası senaryolar tasarlamak ve bunları yürütmek oldukça zaman harcamalıdır. Mümkünse, kapasite ve stres testi yapmak için de araçları kullanmak isteyeceksiniz. Zamanlama hataları gibi bazı hata sınıflarının bulunması ve yeniden oluşturulması zordur.
 
-Internet programlamayı zorlukları görünürlüğü biridir. Sitenizde çok sayıda erişim, sunucuyu yavaşlatabilir. Sunucunuzu düzgün bir şekilde kullanmanız gerekir. Uygulamanız (örneğin, veri bozulması kayıt defterine yazarken veya istemcide tanımlama bilgilerini yazılırken) başarısız olursa, bir kullanıcının bilgisayarına zararlı olabilecek herhangi bir şey önlemek isteyebilirsiniz.
+Internet programlama güçlüklerinden biri bunun görünürlüğüne ait. Sitenize birçok erişim, sunucunuzu yavaşlatabilir. Sunucunuzun düzgün bir şekilde düşürmesine istersiniz. Uygulamanız başarısız olursa (örneğin, kayıt defterine yazarken veya istemciye tanımlama bilgileri yazarken verilerin bozulması), bir kullanıcının bilgisayarına bozucu olabilecek herhangi bir şeyi engellemek isteyebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
+[MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)

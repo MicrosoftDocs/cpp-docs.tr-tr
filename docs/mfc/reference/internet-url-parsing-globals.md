@@ -1,16 +1,17 @@
 ---
+description: "Hakkında daha fazla bilgi edinin: Internet URL 'SI genel ve yardımcıları ayrıştırma"
 title: Internet URL 'SI, genel ve yardımcıları ayrıştırma
 ms.date: 04/03/2017
 helpviewer_keywords:
 - parsing, URLs
 - URLs, parsing
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
-ms.openlocfilehash: c7ce6eeee6deb4537d09e102b925a742ada04650
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4dca0946686759a3880c73aa425edcc724d8772d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837170"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219505"
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>Internet URL 'SI, genel ve yardımcıları ayrıştırma
 
@@ -109,7 +110,7 @@ Bir URL dizesini ayrıştırır ve hizmet türünü ve bileşenlerini döndürü
 *Dwservicetype* = = #service
 
 > [!NOTE]
-> Bu işlevi çağırmak için, projenizin AFXıNET içermesi gerekir. Olsun.
+> Bu işlevi çağırmak için projenizin AFXıNET. H içermesi gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -206,7 +207,7 @@ URL başarıyla ayrıştırılırsa sıfır dışı; Aksi takdirde, boş ise vey
 Bir URL dizesini ayrıştırır ve hizmet türünü ve bileşenlerini döndürür ve kullanıcının adını ve parolasını sağlar. Bayraklar, güvenli olmayan karakterlerin nasıl işleneceğini gösterir.
 
 > [!NOTE]
-> Bu işlevi çağırmak için, projenizin AFXıNET içermesi gerekir. Olsun.
+> Bu işlevi çağırmak için projenizin AFXıNET. H içermesi gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -216,7 +217,7 @@ Bir URL dizesini ayrıştırır ve hizmet türünü ve bileşenlerini döndürü
 
 Internet tanıtıcısının türünü öğrenmek için bu genel işlevi kullanın.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
   ```
 DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
@@ -229,7 +230,7 @@ Internet sorgusuna yönelik bir tanıtıcı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-WININET tarafından tanımlanan Internet hizmeti türlerinden herhangi biri. Olsun. Bu Internet hizmetlerinin listesi için açıklamalar bölümüne bakın. Tanıtıcı NULL veya tanınmazsa, işlev AFX_INET_SERVICE_UNK döndürür.
+WININET. H tarafından tanımlanan Internet hizmet türlerinden herhangi biri. Bu Internet hizmetlerinin listesi için açıklamalar bölümüne bakın. Tanıtıcı NULL veya tanınmazsa, işlev AFX_INET_SERVICE_UNK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -262,7 +263,7 @@ Aşağıdaki liste tarafından döndürülen olası Internet türlerini içerir 
 - INTERNET_HANDLE_TYPE_HTTP_REQUEST
 
 > [!NOTE]
-> Bu işlevi çağırmak için projenizin AFXıNET içermesi gerekir. Olsun.
+> Bu işlevi çağırmak için projenizin AFXıNET. H içermesi gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 
@@ -272,7 +273,7 @@ Aşağıdaki liste tarafından döndürülen olası Internet türlerini içerir 
 
 Bir Internet özel durumu oluşturur.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
    void AFXAPI AfxThrowInternetException(  DWORD dwContext,  DWORD dwError = 0 );
@@ -291,7 +292,7 @@ Hataya neden olan işlem için bağlam tanımlayıcısı. *DwContext* 'in varsay
 İşletim sistemi hata koduna göre nedeni belirlemekten siz sorumlusunuz.
 
 > [!NOTE]
-> Bu işlevi çağırmak için, projenizin AFXıNET içermesi gerekir. Olsun.
+> Bu işlevi çağırmak için projenizin AFXıNET. H içermesi gerekir.
 
 ### <a name="requirements"></a>Gereksinimler
 

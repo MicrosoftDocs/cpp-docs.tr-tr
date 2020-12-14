@@ -1,13 +1,14 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: kategoriye göre teknik notlar'
 title: Kategoriye Göre Teknik Notlar
 ms.date: 11/04/2016
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
-ms.openlocfilehash: 4f12946efdb57293038e59c078a68b2614b05ba7
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 4787b73c9a9039336beba709aa7ddb5aaf761f65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041854"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216346"
 ---
 # <a name="technical-notes-by-category"></a>Kategoriye Göre Teknik Notlar
 
@@ -70,20 +71,20 @@ Teknik notlar aşağıdaki kategorilere ayrılmıştır. Teknik notların sayıs
 
 [TN038: MFC/OLE IUnknown uygulama](../mfc/tn038-mfc-ole-iunknown-implementation.md)\
 [TN039: MFC/OLE Otomasyon uygulama](../mfc/tn039-mfc-ole-automation-implementation.md)\
-[TN040: MFC/OLE yerinde yeniden boyutlandırma ve yakınlaştırma](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md)\
+[TN040: MFC/OLE In-Place yeniden boyutlandırma ve yakınlaştırma](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md)\
 [TN041: MFC/OLE1 'ye dönüştürme mfc/OLE2](../mfc/tn041-mfc-ole1-migration-to-mfc-ole-2.md)\
 [TN049: MFC/OLE MBCS 'den Unicode çeviri katmanına (MFCANS32)](../mfc/tn049-mfc-ole-mbcs-to-unicode-translation-layer-mfcans32.md)\
 [TN050: MFC/OLE ortak Iletişim kutuları (Mfcuıx32)](../mfc/tn050-mfc-ole-common-dialogs-mfcuix32.md)\
-[TN064: OLE denetimlerinde apartman modeli Iş parçacığı oluşturma](../mfc/tn064-apartment-model-threading-in-activex-controls.md)\
-[TN065: OLE Otomasyon sunucuları için çift arabirim desteği](../mfc/tn065-dual-interface-support-for-ole-automation-servers.md)\
+[TN064: OLE denetimlerinde Apartment-Model akıtma](../mfc/tn064-apartment-model-threading-in-activex-controls.md)\
+[TN065: OLE Automation sunucuları için Dual-Interface desteği](../mfc/tn065-dual-interface-support-for-ole-automation-servers.md)\
 [TN071: MFC IOleCommandTarget uygulama](../mfc/tn071-mfc-iolecommandtarget-implementation.md)
 
 ### <a name="mfc-resources"></a>MFC kaynakları
 
 [TN020: KIMLIK adlandırma ve numaralandırma kuralları](../mfc/tn020-id-naming-and-numbering-conventions.md)\
 [TN023: Standart MFC kaynakları](../mfc/tn023-standard-mfc-resources.md)\
-[TN024: MFC tanımlı Iletiler ve kaynaklar](../mfc/tn024-mfc-defined-messages-and-resources.md)\
-[TN028: bağlama duyarlı yardım desteği](../mfc/tn028-context-sensitive-help-support.md)\
+[TN024: MFC-Defined Iletileri ve kaynakları](../mfc/tn024-mfc-defined-messages-and-resources.md)\
+[TN028: Context-Sensitive yardım desteği](../mfc/tn028-context-sensitive-help-support.md)\
 [TN035: Visual C++ ile birden fazla kaynak dosyası ve üstbilgi dosyası kullanma](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)\
 [TN036: CFormView ile AppWizard ve ClassWizard kullanma](../mfc/tn036-using-cformview-with-appwizard-and-classwizard.md)\
 [TN070: MFC pencere sınıfı adları](../mfc/tn070-mfc-window-class-names.md)

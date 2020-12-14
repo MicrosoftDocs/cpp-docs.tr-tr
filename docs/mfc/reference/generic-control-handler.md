@@ -1,4 +1,5 @@
 ---
+description: Genel denetim Işleyicisi hakkında daha fazla bilgi edinin
 title: Genel Denetim İşleyicisi
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,21 +8,21 @@ helpviewer_keywords:
 - GenericControl Handler [MFC]
 - ON_CONTROL macro [MFC]
 ms.assetid: 1e25e583-5d5a-4363-8904-839991a8570d
-ms.openlocfilehash: 350c0337b0b43018000c4be318821cc97cdf07c0
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: 2788ef929c7a25031c036718d9c7ff464c220350
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65612176"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219687"
 ---
 # <a name="generic-control-handler"></a>Genel Denetim İşleyicisi
 
-Aşağıdaki eşleme girişi için işlev prototipi karşılık gelir.
+Aşağıdaki eşleme girişi, işlev prototipine karşılık gelir.
 
 |Eşleme girişi|İşlev prototipi|
 |---------------|------------------------|
-|ON_CONTROL ( \<wNotifyCode >, \<kimliği >, \<memberFxn >)|afx_msg void memberFxn ();|
+|ON_CONTROL ( \<wNotifyCode> , \<id> , \<memberFxn> )|afx_msg void memberFxn ();|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)
+[İleti haritaları](../../mfc/reference/message-maps-mfc.md)

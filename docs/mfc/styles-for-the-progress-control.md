@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Ilerleme denetimi için stiller'
 title: İlerleme Denetimi için Stiller
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,40 +8,40 @@ helpviewer_keywords:
 - PBS_VERTICAL style
 - CProgressCtrl class [MFC], styles
 ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
-ms.openlocfilehash: 3adbd32456b1375bd2dc8574220e083ca3d83ee9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: cd6ce1093f8bd2e3271a386e894d1e8dcd1a4fd7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62306827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216502"
 ---
 # <a name="styles-for-the-progress-control"></a>İlerleme Denetimi için Stiller
 
-Başlangıçta oluşturduğunuzda, ilerleme durumu denetimini ([CProgressCtrl::Create](../mfc/reference/cprogressctrl-class.md#create)), kullanın *dwStyle* ilerleme durumunu denetlemek için istenen pencere stilleri belirtmek için parametre. Aşağıdaki listede, geçerli pencere stilleri ayrıntıları. Denetim burada listelenenlerden dışındaki herhangi bir pencere stilini yok sayar. Her zaman denetim iletişim kutusunun üst öğesi, genellikle alt pencere olarak oluşturmanız gerekir.
+İlerleme denetimini ilk oluşturduğunuzda ([CProgressCtrl:: Create](../mfc/reference/cprogressctrl-class.md#create)), ilerleme denetiminiz için istenen pencere stillerini belirtmek üzere *dwStyle* parametresini kullanın. Aşağıdaki listede, ilgili pencere stillerinin ayrıntıları verilmiştir. Denetim, burada listelenenlerden farklı pencere stilini yoksayar. Genellikle bir iletişim kutusu üst öğesi olmak üzere, denetimi her zaman bir alt pencere olarak oluşturmanız gerekir.
 
-|Pencere stili|Efekt|
+|Pencere stili|Etki|
 |------------------|------------|
-|WS_BORDER|Bir pencerenin kenarlık oluşturur.|
-|WS_CHILD|Bir alt pencere oluşturur (her zaman için kullanılması gereken `CProgressCtrl`).|
-|WS_CLIPCHILDREN|Ana pencerede çizerken alt pencerelerin kapladığı alanı dışarıda bırakır. Üst pencere oluşturulurken kullanılır.|
-|WS_CLIPSIBLINGS|Alt pencereleri birbirine kırpar.|
-|WS_DISABLED|Başlangıçta devre dışı olan bir pencere oluşturur.|
-|WS_VISIBLE|Başlangıçta görünen bir pencere oluşturur.|
-|WS_TABSTOP|Kullanıcı için taşımak için TAB tuşuna bastığında denetim odağı alabilecek belirtir.|
+|WS_BORDER|Pencerenin etrafında bir kenarlık oluşturur.|
+|WS_CHILD|Bir alt pencere oluşturur (için her zaman kullanılmalıdır `CProgressCtrl` ).|
+|WS_CLIPCHILDREN|Üst pencere içinde çizim yaparken alt pencerelerin kapladığı alanı dışlar. Üst pencereyi oluşturduğunuzda kullanılır.|
+|WS_CLIPSIBLINGS|Alt pencereleri birbirlerine göre kırpar.|
+|WS_DISABLED|Başlangıçta devre dışı bırakılmış bir pencere oluşturur.|
+|WS_VISIBLE|Başlangıçta görünür olan bir pencere oluşturur.|
+|WS_TABSTOP|Kullanıcı sekmeye geçmek için SEKME tuşuna bastığında denetimin odağı alabileceğini belirtir.|
 
-Ayrıca, yalnızca ilerleme denetimi için geçerli iki stilleri pbs_vertıcal ve PBS_SMOOTH belirtebilirsiniz.
+Ayrıca, yalnızca ilerleme denetimi, PBS_VERTICAL ve PBS_SMOOTH için uygulanan iki stil belirtebilirsiniz.
 
-Pbs_vertıcal denetimin dikey olarak yerine yatay olarak kullanın. PBS_SMOOTH denetim artımlı olarak doldurun ve sonuçları küçük kareler görüntüleme yerine denetimi tamamen doldurmak için kullanın.
+Denetimi yatay yerine dikey olarak yönlendirmek için PBS_VERTICAL kullanın. Denetimi artımlı olarak dolduran küçük bir ayırıcı kare görüntülemek yerine, denetimi tamamen göstermek için PBS_SMOOTH kullanın.
 
-PBS_SMOOTH stili:
+PBS_SMOOTH stili olmadan:
 
-![Standart bir ilerleme çubuğu stili](../mfc/media/vc4ruw1.gif "standart ilerleme çubuğu stili")
+![Standart ilerleme çubuğu stili](../mfc/media/vc4ruw1.gif "Standart ilerleme çubuğu stili")
 
-İle PBS_SMOOTH ve pbs_vertıcal stili:
+PBS_SMOOTH ve PBS_VERTICAL stilleriyle:
 
-![İlerleme stili, sorunsuz ve dikey](../mfc/media/vc4ruw2.gif "ilerleme stili, sorunsuz ve dikey")
+![İlerleme çubuğu stili, düz ve dikey](../mfc/media/vc4ruw2.gif "İlerleme çubuğu stili, düz ve dikey")
 
-Daha fazla bilgi için [pencere stilleri](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) içinde *MFC başvurusu*.
+Daha fazla bilgi için bkz. *MFC başvurusunda* [pencere stilleri](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) .
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

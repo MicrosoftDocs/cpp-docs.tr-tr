@@ -1,38 +1,39 @@
 ---
+description: 'Daha fazla bilgi edinin: kaydırıcı denetimi üye Işlevleri'
 title: Kaydırıcı Denetimi Üye İşlevleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CSliderCtrl class [MFC], methods
 - slider controls [MFC], member functions
 ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
-ms.openlocfilehash: a88dd1a49eb928261393a4473ee7eb53628c607a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57108872a779bc4876be89afd5b81008f69a0837
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307437"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216905"
 ---
 # <a name="slider-control-member-functions"></a>Kaydırıcı Denetimi Üye İşlevleri
 
-Bir uygulama kaydırıcı denetimi üye işlevleri kaydırıcı denetimi ile ilgili bilgi almak için çağırabilir ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) ve özelliklerini değiştirmek için.
+Bir uygulama kaydırıcı denetimi ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) hakkında bilgi almak ve özelliklerini değiştirmek için kaydırıcı denetiminin üye işlevlerini çağırabilir.
 
-(Diğer bir deyişle, kullanıcının seçilen değer) kaydırıcı konumunu almak için kullanın [GetPos](../mfc/reference/csliderctrl-class.md#getpos) üye işlevi. Kaydırıcı konumunu ayarlamak için kullanın [SetPos](../mfc/reference/csliderctrl-class.md#setpos) üye işlevi. Herhangi bir zamanda kullandığınız `VerifyPos` kaydırıcı minimum ve maksimum değerler arasında olduğundan emin olmak için üye işlevi.
+Kaydırıcının konumunu almak için (yani, kullanıcının seçtiği değer) [GetPos](../mfc/reference/csliderctrl-class.md#getpos) üye işlevini kullanın. Kaydırıcının konumunu ayarlamak için [SetPos](../mfc/reference/csliderctrl-class.md#setpos) üye işlevini kullanın. Herhangi bir zamanda, `VerifyPos` Kaydırıcının en düşük ve en yüksek değerler arasında olduğundan emin olmak için üye işlevini kullanabilirsiniz.
 
-Bir kaydırıcı denetimi aralığı kaydırıcı denetimi gösterebilir bitişik değerler kümesidir. Çoğu uygulama kullanır [SetRange](../mfc/reference/csliderctrl-class.md#setrange) ilk oluşturulduğunda bir kaydırıcı denetimi aralığını ayarlamak için üye işlevi. Uygulamalar dinamik olarak alter aralık kaydırıcı denetimi kullanarak oluşturulduktan sonra [SetRangeMax](../mfc/reference/csliderctrl-class.md#setrangemax) ve [SetRangeMin](../mfc/reference/csliderctrl-class.md#setrangemin) üye işlevleri. Kullanıcı kaydırıcı denetimi ile çalışmayı bitirdiğinde dinamik olarak genellikle değiştirilecek aralığı sağlayan bir uygulama son aralığı ayarlarını alır. Bu ayarları almak için kullanın [GetRange](../mfc/reference/csliderctrl-class.md#getrange), [GetRangeMax](../mfc/reference/csliderctrl-class.md#getrangemax), ve [GetRangeMin](../mfc/reference/csliderctrl-class.md#getrangemin) üye işlevleri.
+Kaydırıcı denetiminin aralığı, kaydırıcı denetiminin temsil ettiği bitişik değerler kümesidir. Çoğu uygulama, ilk oluşturulduğunda kaydırıcı denetiminin aralığını ayarlamak için [SetRange](../mfc/reference/csliderctrl-class.md#setrange) member işlevini kullanır. Uygulamalar, [SetRangeMax](../mfc/reference/csliderctrl-class.md#setrangemax) ve [SetRangeMin](../mfc/reference/csliderctrl-class.md#setrangemin) üye işlevleri kullanılarak kaydırıcı denetimi oluşturulduktan sonra aralığı dinamik bir şekilde değiştirebilir. Aralığın dinamik olarak değiştirilmesine izin veren bir uygulama, Kullanıcı kaydırıcı denetimiyle çalışmayı bitirdiğinde son Aralık ayarlarını alır. Bu ayarları almak için [GetRange](../mfc/reference/csliderctrl-class.md#getrange), [GetRangeMax](../mfc/reference/csliderctrl-class.md#getrangemax)ve [GetRangeMin](../mfc/reference/csliderctrl-class.md#getrangemin) üye işlevlerini kullanın.
 
-Bir uygulamayı otomatik olarak görüntülenen bir kaydırıcı denetiminin çizgisi TBS_AUTOTICKS stilini kullanabilirsiniz. Ancak, bir uygulamanın konumuna veya değer çizgilerinin sıklığını denetlemek gerekiyorsa, çok sayıda üye işlev kullanılabilir.
+Bir uygulama, otomatik olarak bir kaydırıcı denetiminin değer çizgilerinin görüntülenmesini sağlamak için TBS_AUTOTICKS stilini kullanabilir. Bununla birlikte, bir uygulamanın değer çizgilerinin konumunu veya sıklığını denetmeleri gerekiyorsa, bir dizi üye işlevi kullanılabilir.
 
-Onay işareti konumunu ayarlamak için bir uygulama kullanabilirsiniz [SetTic](../mfc/reference/csliderctrl-class.md#settic) üye işlevi. [SetTicFreq](../mfc/reference/csliderctrl-class.md#setticfreq) üye işlevi değer çizgisi kaydırıcı denetiminin aralıktaki düzenli aralıklarla görünen işaretleri ayarlamak bir uygulama sağlar. Örneğin, uygulama 1 ile 100 arası bir dizi yalnızca 10 çizgilerini görüntülemek için bu üye işlevi kullanabilirsiniz.
+Bir değer işaretinin konumunu ayarlamak için, bir uygulama [SetTic](../mfc/reference/csliderctrl-class.md#settic) üye işlevini kullanabilir. [SetTicFreq](../mfc/reference/csliderctrl-class.md#setticfreq) üye işlevi, bir uygulamanın kaydırıcı denetiminin aralığında düzenli aralıklarla görünen değer çizgilerini ayarlamasına olanak tanır. Örneğin, uygulama bu üye işlevini, 1 ile 100 arasında yalnızca 10 onay işareti göstermek için kullanabilir.
 
-Karşılık gelen bir değer çizgisi için aralığı dizine almaya [GetTic](../mfc/reference/csliderctrl-class.md#gettic) üye işlevi. [GetTicArray](../mfc/reference/csliderctrl-class.md#getticarray) üye işlevi, bu dizinler dizisini alır. İstemci koordinatları, bir onay işareti konumunu almak için kullanın [GetTicPos](../mfc/reference/csliderctrl-class.md#getticpos) üye işlevi. Bir uygulama kullanarak değer çizgileri sayısı alabilir [GetNumTics](../mfc/reference/csliderctrl-class.md#getnumtics) üye işlevi.
+Bir değer işaretine karşılık gelen aralıktaki dizini almak için [GetTic](../mfc/reference/csliderctrl-class.md#gettic) üye işlevini kullanın. [GetTicArray](../mfc/reference/csliderctrl-class.md#getticarray) üye işlevi bu dizinlerin bir dizisini alır. Değer çizgisinin konumunu almak için, istemci koordinatları ' nde [GetTicPos](../mfc/reference/csliderctrl-class.md#getticpos) üye işlevini kullanın. Bir uygulama, [Getnumtika](../mfc/reference/csliderctrl-class.md#getnumtics) üye işlevini kullanarak değer çizgilerinin sayısını alabilir.
 
-[ClearTics](../mfc/reference/csliderctrl-class.md#cleartics) üye işlevi bir kaydırıcı denetiminin çizgilerinin tümünün kaldırır.
+[Clemakalens](../mfc/reference/csliderctrl-class.md#cleartics) üye işlevi, kaydırıcı denetiminin tüm değer çizgilerini kaldırır.
 
-Ne kadar uygulama TB_LINEDOWN veya TB_LINEUP bir bildirim iletisi aldığında kaydırıcıyı hareket edeceği bir kaydırıcı denetiminin satır boyutunu belirler. Benzer şekilde, yanıt TB_PAGEDOWN ve TB_PAGEUP bildirim iletileri için sayfa boyutunu belirler. Uygulamaları alabilir ve satır ve sayfa boyutu değerleri kullanarak ayarlayın [GetLineSize](../mfc/reference/csliderctrl-class.md#getlinesize), [SetLineSize](../mfc/reference/csliderctrl-class.md#setlinesize), [GetPageSize](../mfc/reference/csliderctrl-class.md#getpagesize), ve [SetPageSize](../mfc/reference/csliderctrl-class.md#setpagesize) üye işlevleri.
+Kaydırıcı denetiminin çizgi boyutu, bir uygulama TB_LINEDOWN veya TB_LINEUP bildirim iletisi aldığında kaydırıcının ne kadar hareket edeceğini belirler. Benzer şekilde, sayfa boyutu, TB_PAGEDOWN ve TB_PAGEUP bildirim iletilerinin yanıtını belirler. Uygulamalar, satır ve sayfa boyut değerlerini [GetLineSize](../mfc/reference/csliderctrl-class.md#getlinesize), [SetLineSize](../mfc/reference/csliderctrl-class.md#setlinesize), [GetPageSize](../mfc/reference/csliderctrl-class.md#getpagesize)ve [SetPageSize](../mfc/reference/csliderctrl-class.md#setpagesize) üye işlevlerini kullanarak alabilir ve ayarlayabilir.
 
-Bir uygulama, üye işlevleri, bir kaydırıcı denetimi boyutlarını almak için kullanabilirsiniz. [GetThumbRect](../mfc/reference/csliderctrl-class.md#getthumbrect) üye işlevi, kaydırıcı için sınırlayıcı dikdörtgeni alır. [GetChannelRect](../mfc/reference/csliderctrl-class.md#getchannelrect) üye işlevi, kaydırıcı denetim kanalı için sınırlayıcı dikdörtgeni alır. (Kanal kaydırıcı taşıyan ve aralığı seçildiğinde vurgulama içeren üzerinden alandır.)
+Bir uygulama, bir kaydırıcı denetiminin boyutlarını almak için üye işlevleri kullanabilir. [GetThumbRect](../mfc/reference/csliderctrl-class.md#getthumbrect) üye işlevi kaydırıcı için sınırlayıcı dikdörtgeni alır. [GetChannelRect](../mfc/reference/csliderctrl-class.md#getchannelrect) üye işlevi kaydırıcı denetiminin kanalının sınırlayıcı dikdörtgenini alır. (Kanal, kaydırıcının hareket edeceği ve bir Aralık seçildiğinde vurguyu içeren alandır.)
 
-Bir kaydırıcı denetimi TBS_ENABLESELRANGE stili varsa, kullanıcı bitişik değer aralığını seçebilirsiniz. Üye işlevleri sayısını dinamik olarak ayarlanacak seçenek aralığındaki izin verin. [SetSelection](../mfc/reference/csliderctrl-class.md#setselection) üye işlevi, başlangıç ve bitiş konumları seçilen ayarlar. Kullanıcı bir seçim aralığını ayarlama tamamlandığında, uygulama ayarlarını kullanarak alabilirsiniz [GetSelection](../mfc/reference/csliderctrl-class.md#getselection) üye işlevi. Bir kullanıcının seçiminin silmek için kullanın [ClearSel](../mfc/reference/csliderctrl-class.md#clearsel) üye işlevi.
+Kaydırıcı denetiminde TBS_ENABLESELRANGE stili varsa, Kullanıcı bundan bir ardışık değer aralığı seçebilir. Bir dizi üye işlevi seçim aralığının dinamik olarak ayarlanmasına izin verir. [SetSelection](../mfc/reference/csliderctrl-class.md#setselection) üye işlevi bir seçimin başlangıç ve bitiş konumlarını ayarlar. Kullanıcı bir seçim aralığı ayarlamayı tamamladığında, bir uygulama [GetSelection](../mfc/reference/csliderctrl-class.md#getselection) üye işlevini kullanarak ayarları alabilir. Bir kullanıcının seçimini temizlemek için [ClearSel](../mfc/reference/csliderctrl-class.md#clearsel) member işlevini kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

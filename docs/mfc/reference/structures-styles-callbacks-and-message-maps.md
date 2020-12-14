@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: yapılar, stiller, geri çağrılar ve Ileti haritaları'
 title: Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - message classes [MFC], MFC
 - structures, MFC
 ms.assetid: 27566602-7d84-4089-880c-8e90fb04fa56
-ms.openlocfilehash: 9f3d5c6d23084f91196c091d9d0d41304d37ce2c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b39f3341106c8f064477adb2b579cf07eb9e3e0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218777"
 ---
 # <a name="structures-styles-callbacks-and-message-maps"></a>Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri
 
@@ -20,13 +21,13 @@ Bu bölüm, Microsoft Foundation Class Kitaplığı ve MFC ileti haritaları tar
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[MFC Tarafından Kullanılan Yapılar](../../mfc/reference/structures-used-by-mfc.md)<br/>
+[MFC tarafından kullanılan yapılar](../../mfc/reference/structures-used-by-mfc.md)<br/>
 Çeşitli üye işlevlerinden çağrılan yapılara bağlantılar sağlar.
 
-[MFC Tarafından Kullanılan Stiller](../../mfc/reference/styles-used-by-mfc.md)<br/>
+[MFC tarafından kullanılan stiller](../../mfc/reference/styles-used-by-mfc.md)<br/>
 MFC nesneleri oluşturulurken kullanılan stillerin bağlantılarını sağlar.
 
-[MFC Tarafından Kullanılan Geri Çağırma İşlevleri](../../mfc/reference/callback-functions-used-by-mfc.md)<br/>
+[MFC tarafından kullanılan geri çağırma Işlevleri](../../mfc/reference/callback-functions-used-by-mfc.md)<br/>
 MFC kitaplığında görüntülenen geri çağırma işlevlerine bağlantılar sağlar.
 
 [İleti haritaları](../../mfc/reference/message-maps-mfc.md)<br/>
@@ -34,7 +35,7 @@ MFC kitaplığında görüntülenen geri çağırma işlevlerine bağlantılar s
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[Sınıf Kitaplığına Genel Bakış](../../mfc/class-library-overview.md)<br/>
+[Sınıf kitaplığına genel bakış](../../mfc/class-library-overview.md)<br/>
 MFC kitaplığındaki sınıfları kategoriye göre listeler.
 
 [MFC örnekleri](../../overview/visual-cpp-samples.md#mfc-samples)<br/>

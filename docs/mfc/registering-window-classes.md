@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: pencere sınıflarını kaydetme'
 title: Pencere Sınıflarını Kaydetme
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,27 +15,27 @@ helpviewer_keywords:
 - WinMain method [MFC]
 - registering window classes [MFC]
 ms.assetid: 30994bc4-a362-43da-bcc5-1bf67a3fc929
-ms.openlocfilehash: 7c459b909a60fff2b7aeded9ea8d79a39ced24e4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e31f83b691ad12d845afca6a3a5f18d9ba64b0e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309089"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218200"
 ---
 # <a name="registering-window-classes"></a>Pencere Sınıflarını Kaydetme
 
-Pencere "sınıfları" Windows için geleneksel programlamada, windows herhangi bir sayıda oluşturulabileceği gelen bir "class" (C++ sınıfı değil) özelliklerini tanımlayın. Bu tür bir sınıf şablonu veya windows oluşturmak için model ' dir.
+Windows için geleneksel programlamada pencere "sınıfları", herhangi bir sayıda Windows 'un oluşturulabilmesi için bir "sınıf" (C++ sınıfı değil) özelliklerini tanımlar. Bu tür bir sınıf, Windows oluşturmak için bir şablon veya modeldir.
 
 ## <a name="window-class-registration-in-traditional-programs-for-windows"></a>Windows için geleneksel programlarda pencere sınıfı kaydı
 
-Windows, MFC, olmadan için geleneksel bir programda bir pencereye, "Pencere yordamını" tüm iletileri işlemek veya "`WndProc`." A `WndProc` "pencere sınıfı kaydı" işlemi yoluyla bir penceresiyle ilişkilidir. Ana pencereyi kaydedilmiştir `WinMain` işlevi, ancak diğer sınıflar Windows kaydedilebilir herhangi bir uygulama. Kayıt için bir işaretçi içeren yapısı bağlıdır `WndProc` imleç, arka plan Fırça özellikleri ile birlikte çalışması ve VS. Yapısı için çağrıda sınıfının dize adı ile birlikte bir parametre olarak geçirilen `RegisterClass` işlevi. Bu nedenle, birden çok windows tarafından kayıt sınıf paylaşılabilir.
+Windows için geleneksel bir programda MFC olmadan, tüm iletileri "pencere yordamında" veya "." içinde bir pencereye işleyebilirsiniz `WndProc` . Bir `WndProc` , "pencere sınıfı kaydı" süreci aracılığıyla bir pencere ile ilişkilendirilir. Ana pencere `WinMain` işleve kaydedilir, ancak diğer Windows sınıfları uygulamanın herhangi bir yerinde kaydedilebilir. Kayıt, `WndProc` imleç, arka plan fırçası vb. belirtimlerle birlikte işlev işaretçisini içeren bir yapıya bağımlıdır. Yapı bir parametre olarak geçirilir ve işlevin dize adı ile birlikte işleve önceki bir çağrıdadır `RegisterClass` . Bu nedenle, bir kayıt sınıfı birden çok pencere tarafından paylaşılabilir.
 
-## <a name="window-class-registration-in-mfc-programs"></a>MFC programlarda pencere sınıfı kaydı
+## <a name="window-class-registration-in-mfc-programs"></a>MFC programlarında pencere sınıfı kaydı
 
-Buna karşılık, çoğu pencere sınıfı kaydı etkinliği bir MFC çerçeve programında otomatik olarak gerçekleştirilir. MFC kullanıyorsanız, genellikle bir C++ pencere sınıfı için sınıf devralma normal C++ söz dizimini kullanarak mevcut bir kitaplık sınıfından türetilir. Çerçeve hala geleneksel kullanır ve "kayıt sınıfları" için gerektiğinde kaydettiğiniz birkaç standart olanları sağlar. Ek kayıt sınıfları çağırarak kaydedebilirsiniz [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) genel işlev ve sınıfa kayıtlı başarılıdan `Create` üye işlevini `CWnd`. Burada, geleneksel açıklandığı şekilde "kayıt class" Windows içinde olan bir C++ sınıfı ile karıştırılmamalıdır.
+Buna karşılık, çoğu pencere sınıfı kayıt etkinliği bir MFC çerçeve programında otomatik olarak yapılır. MFC kullanıyorsanız, genellikle sınıf devralma için normal C++ söz dizimini kullanarak var olan bir kitaplık sınıfından C++ pencere sınıfını türetirsiniz. Framework hala geleneksel "kayıt sınıfları" kullanır ve gerektiğinde sizin için kayıtlı birkaç standart tane sağlar. Diğer kayıt sınıflarını, [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) genel işlevini çağırarak ve sonra kayıtlı sınıfı `Create` öğesinin üye işlevine geçirerek kaydedebilirsiniz `CWnd` . Burada açıklandığı gibi, Windows 'daki geleneksel "kayıt sınıfı" C++ sınıfıyla karıştırılmamalıdır.
 
-Daha fazla bilgi için [Teknik Not 1](../mfc/tn001-window-class-registration.md).
+Daha fazla bilgi için bkz. [teknik notta 1](../mfc/tn001-window-class-registration.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Pencereler Oluşturma](../mfc/creating-windows.md)
+[Windows oluşturma](../mfc/creating-windows.md)

@@ -1,30 +1,31 @@
 ---
+description: 'Daha fazla bilgi edinin: döndürme düğmesi üye Işlevleri'
 title: Döndür Düğmesi Üye İşlevleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - spin button control, methods
 - CSpinButtonCtrl class [MFC], methods
 ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
-ms.openlocfilehash: 5ad6f529762e77e1cf1c00f41eea0add5d196fbb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a03ab33d29634ed85d807eb5b51edfdef310d65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216840"
 ---
 # <a name="spin-button-member-functions"></a>Döndür Düğmesi Üye İşlevleri
 
-Döndürme denetimi için kullanılabilen çeşitli üye işlevleri vardır ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)). Değer değiştirme düğmesi aşağıdaki özniteliklerini değiştirmek için bu işlevleri kullanın.
+Döndürme denetimi için kullanılabilecek birkaç üye işlevi vardır ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)). Bu işlevleri, döndürme düğmesinin aşağıdaki özniteliklerini değiştirmek için kullanın.
 
-- **Hızlandırma** başlangıçtan konumu değiştiren kullanıcı ok düğmesini basılı tuttuğunda oranı ayarlayabilirsiniz. Hızlandırma ile çalışmak üzere kullanma [SetAccel](../mfc/reference/cspinbuttonctrl-class.md#setaccel) ve [GetAccel](../mfc/reference/cspinbuttonctrl-class.md#getaccel) üye işlevleri.
+- **Hızlandırma** Kullanıcı ok düğmesini tuttuğunda konumun değiştiği oranı ayarlayabilirsiniz. Hızlandırma ile çalışmak için [SetAccel](../mfc/reference/cspinbuttonctrl-class.md#setaccel) ve [GetAccel](../mfc/reference/cspinbuttonctrl-class.md#getaccel) üye işlevlerini kullanın.
 
-- **Temel** buddy penceresinin başlık konumda görüntülemek için kullanılan base (10 veya 16) değiştirebilirsiniz. Temel ile çalışmak üzere kullanma [GetBase](../mfc/reference/cspinbuttonctrl-class.md#getbase) ve [SetBase](../mfc/reference/cspinbuttonctrl-class.md#setbase) üye işlevleri.
+- **Taban** Konumu arkadaş penceresinin açıklamalı alt başlığında göstermek için kullanılan temeli (10 veya 16) değiştirebilirsiniz. Taban ile çalışmak için [GetBase](../mfc/reference/cspinbuttonctrl-class.md#getbase) ve [setbase](../mfc/reference/cspinbuttonctrl-class.md#setbase) üye işlevlerini kullanın.
 
-- **Pencere dost** buddy penceresindeki dinamik olarak ayarlayabilirsiniz. Sorgu veya buddy penceresindeki denetleyen değiştirmek için kullanın [GetBuddy](../mfc/reference/cspinbuttonctrl-class.md#getbuddy) ve [SetBuddy](../mfc/reference/cspinbuttonctrl-class.md#setbuddy) üye işlevleri.
+- **Arkadaş penceresi** Arkadaş penceresini dinamik olarak ayarlayabilirsiniz. Arkadaş penceresi olan denetimi sorgulamak veya değiştirmek için [getarkadaş](../mfc/reference/cspinbuttonctrl-class.md#getbuddy) ve [setarkadaş](../mfc/reference/cspinbuttonctrl-class.md#setbuddy) üye işlevlerini kullanın.
 
-- **Konum** sorgulamak ve konumunu değiştirir. Doğrudan konumu ile çalışmak üzere kullanma [GetPos](../mfc/reference/cspinbuttonctrl-class.md#getpos) ve [SetPos](../mfc/reference/cspinbuttonctrl-class.md#setpos) üye işlevleri. Arkadaş denetimi altyazısı (arkadaş bir düzenleme denetimi olduğunu gibi durumlarda) değişmiş olabilir beri `GetPos` geçerli resim yazısını alır ve buna göre konumunu ayarlar.
+- **Konum** Konumu sorgulayabilir ve değiştirebilirsiniz. Doğrudan konum ile çalışmak için [GetPos](../mfc/reference/cspinbuttonctrl-class.md#getpos) ve [SetPos](../mfc/reference/cspinbuttonctrl-class.md#setpos) üye işlevlerini kullanın. Arkadaş denetiminin resim yazısı değişmiş olabileceğinden (örneğin, arkadaş bir düzenleme denetimi olduğu durumda), `GetPos` geçerli başlığı alır ve konumu uygun şekilde ayarlar.
 
-- **Aralık** değer değiştirme düğmesi için maksimum ve minimum konumları değiştirebilirsiniz. Varsayılan olarak, en fazla 0 olarak ayarlanır ve en az 100'e ayarlayın. Varsayılan üst sınır varsayılan en düşük değer daha az olduğundan, ok düğmelerini eylemlerini counter-intuitive değerindedir. Genellikle, aralığı kullanarak ayarlayacak [SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) üye işlevi. Sorgu aralığı kullanımı [GetRange](../mfc/reference/cspinbuttonctrl-class.md#getrange).
+- **Aralık** Döndürme düğmesi için en yüksek ve en düşük pozisyonları değiştirebilirsiniz. Varsayılan olarak, en fazla 0 olarak ayarlanır ve en az 100 olarak ayarlanır. Varsayılan en yüksek değer varsayılan en düşük değerden düşük olduğundan, ok düğmelerinin eylemleri sayaç sezgisel olarak belirlenir. Genellikle, [SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) üye işlevini kullanarak aralığı ayarlayacaksınız. Aralığı sorgulamak için [GetRange](../mfc/reference/cspinbuttonctrl-class.md#getrange)kullanın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

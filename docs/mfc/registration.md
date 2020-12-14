@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kayıt'
 title: Kayıt
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,55 +12,55 @@ helpviewer_keywords:
 - servers [MFC], installing
 - OLE server applications [MFC], registering servers
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-ms.openlocfilehash: 82411e53620e92eff3484f7d3f7955030fd439ac
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8254f4b1ab8a005623650794adc8be0bd06cfdff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372837"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218127"
 ---
 # <a name="registration"></a>Kayıt
 
-Bir kullanıcı bir uygulamaya Bir OLE öğesi eklemek istediğinde, OLE aralarından seçim yapabileceğiniz nesne türlerinin bir listesini sunar. OLE bu listeyi tüm sunucu uygulamaları tarafından sağlanan bilgileri içeren sistem kayıt veritabanından alır. Bir sunucu kendisini kaydettiğinde, sistem kayıt veritabanına (Kayıt Defteri) koyduğu girişler, sağladığı her nesne türünü, dosya uzantılarını ve diğer bilgilerin yanı sıra kendisine giden yolu tanımlar.
+Bir Kullanıcı bir uygulamaya OLE öğesi eklemek istediğinde OLE, aralarından seçim yapabileceğiniz nesne türlerinin bir listesini sunar. OLE bu listeyi tüm sunucu uygulamaları tarafından sunulan bilgileri içeren sistem kayıt veritabanından alır. Bir sunucu kendisini kaydettiğinde, sistem kayıt veritabanına (kayıt defteri) sahip olduğu girişler, diğer bilgiler arasında, sağladığı her nesne türünü, dosya uzantılarını ve onun yolunu anlatmaktadır.
 
-Çerçeve ve OLE sistemi dinamik bağlantı kitaplıkları (DLL), sistemde ne tür OLE öğelerinin kullanılabileceğini belirlemek için bu kayıt defterini kullanır. OLE sistemi DLl'leri, bağlantılı veya katıştırılmış bir nesne etkinleştirildiğinde sunucu uygulamasının nasıl başlatılabildiğini belirlemek için de bu kayıt defterini kullanır.
+Framework ve OLE sistem dinamik bağlantı kitaplıkları (DLL), sistemde hangi tür OLE öğelerinin kullanılabilir olduğunu belirlemek için bu kayıt defterini kullanır. OLE sistem dll 'Leri bu kayıt defterini Ayrıca, bağlantılı veya katıştırılmış bir nesne etkinleştirildiğinde sunucu uygulamasının nasıl başlatılaleceğini tespit etmek için de kullanır.
 
-Bu makalede, her sunucu uygulaması yüklendiğinde ve her yürütüldüğünde ne yapması gerektiği açıklanmaktadır.
+Bu makalede her bir sunucu uygulamasının, yüklendiğinde ve her yürütüldüğünde yapması gerekenler açıklanmaktadır.
 
-Sistem kayıt veritabanı ve güncellemek için kullanılan .reg dosyalarının biçimi hakkında ayrıntılı bilgi için *OLE Programcısının Başvurusu'na*bakın.
+Sistem kayıt veritabanı ve bu dosyayı güncelleştirmek için kullanılan. reg dosyalarının biçimi hakkında ayrıntılı bilgi için bkz. *OLE Programcı başvurusu*.
 
-## <a name="server-installation"></a><a name="_core_server_installation"></a>Sunucu Kurulumu
+## <a name="server-installation"></a><a name="_core_server_installation"></a> Sunucu yüklemesi
 
-Sunucu uygulamanızı ilk yüklediğinizde, desteklediği tüm OLE öğelerini kaydetmelidir. Ayrıca, sunucunun sistem kayıt veritabanını tek başına bir uygulama olarak her çalıştırdığınızda güncelleştirmesini de sağlayabilirsiniz. Bu, sunucunun çalıştırılabilir dosyası taşınırsa kayıt veritabanını güncel tutar.
-
-> [!NOTE]
-> Uygulama sihirbazı tarafından oluşturulan MFC uygulamaları, tek başına uygulamalar olarak çalıştırıldığında kendilerini otomatik olarak kaydeder.
-
-Yükleme sırasında başvurunuzu kaydetmek istiyorsanız, RegEdit.exe programını kullanın. Uygulamanızla birlikte bir kurulum programı eklerseniz, kurulum programının "RegEdit /S *appname*.reg" çalıştırılsın. (/S bayrağı sessiz işlemi gösterir, diğer bir şekilde komutun başarıyla tamamladığını bildiren iletişim kutusunu görüntülemez.) Aksi takdirde, kullanıcıya RegEdit'i el ile çalıştırmasını emredin.
+Sunucu uygulamanızı ilk kez yüklediğinizde, desteklediği tüm OLE öğesi türlerini kaydetmesi gerekir. Ayrıca, sunucunun tek başına bir uygulama olarak her yürütüldüğünde sistem kayıt veritabanını güncelleştirmesini de sağlayabilirsiniz. Bu, sunucunun yürütülebilir dosyası taşındığında kayıt veritabanını güncel tutar.
 
 > [!NOTE]
-> Uygulama sihirbazı tarafından oluşturulan .reg dosyası, yürütülebilir için tam yolu içermez. Yükleme programınız .reg dosyasını yürütülebilir yolun tamamını içerecek şekilde değiştirmeli veya PATH ortamı değişkenini yükleme dizini içerecek şekilde değiştirmelidir.
+> Uygulama Sihirbazı tarafından oluşturulan MFC uygulamaları, tek başına uygulamalar olarak çalıştırıldıklarında otomatik olarak kendilerini kaydeder.
 
-RegEdit,..reg metin dosyasının içeriğini kayıt veritabanında birleştirir. Veritabanını doğrulamak veya onarmak için kayıt defteri düzenleyicisini kullanın. Temel OLE girişlerini silmemeye dikkat edin.
+Uygulamanızı yükleme sırasında kaydetmek istiyorsanız RegEdit.exe programını kullanın. Uygulamanıza sahip bir kurulum programı eklerseniz, Kurulum programının "RegEdit/S *appname*. reg" çalıştırmasını sağlayabilirsiniz. (/S bayrağı sessiz işlemi gösterir, diğer bir deyişle, komutun başarıyla tamamlandığını bildiren iletişim kutusunu göstermez.) Aksi takdirde, kullanıcıdan RegEdit 'i el ile çalıştırmasını isteyin.
 
-## <a name="server-initialization"></a><a name="_core_server_initialization"></a>Sunucu Başlatma
+> [!NOTE]
+> Uygulama Sihirbazı tarafından oluşturulan. reg dosyası yürütülebilir dosyanın tüm yolunu içermez. Yükleme programınız, yürütülebilir dosyanın tüm yolunu içerecek şekilde. reg dosyasını değiştirmeli ya da PATH ortam değişkenini yükleme dizinini içerecek şekilde değiştirecek.
 
-Uygulama sihirbazı yla bir sunucu uygulaması oluşturduğunuzda, sihirbaz sizin için tüm başlatma görevlerini otomatik olarak tamamlar. Bu bölümde, bir sunucu uygulamasını el ile yazarsanız ne yapmanız gerektiği açıklanmaktadır.
+RegEdit,. reg metin dosyasının içeriğini kayıt veritabanıyla birleştirir. Veritabanını doğrulamak veya onarmak için kayıt defteri düzenleyicisini kullanın. Önemli OLE girdilerini silmekten kaçının.
 
-Bir kapsayıcı uygulaması tarafından bir sunucu uygulaması başlatıldığında, OLE sistemi DLL'leri sunucunun komut satırına "/Gömme" seçeneğini ekler. Bir sunucu uygulamasının davranışı bir kapsayıcı tarafından başlatılıp başlatılmadığına bağlı olarak değişir, bu nedenle yürütme başladığında bir uygulamanın yapması gereken ilk şey komut satırında "/Embedding" veya "-Embedding" seçeneğini denetlemektir. Bu anahtar varsa, sunucunun yerinde etkin veya tamamen açık olduğunu gösteren farklı bir kaynak kümesi yükleyin. Daha fazla bilgi için [Menüler ve Kaynaklar: Sunucu Eklemeleri'ne](../mfc/menus-and-resources-server-additions.md)bakın.
+## <a name="server-initialization"></a><a name="_core_server_initialization"></a> Sunucu başlatma
 
-Sunucu uygulamanız komut `CWinApp::RunEmbedded` satırını ayrışdırmak için işlevini de aramalıdır. Sıfır olmayan bir değer döndürürse, tek başına bir uygulama olarak değil, bir kapsayıcı uygulamasından çalıştırıldığı için uygulama penceresini göstermemelidir. Bu işlev, sunucunun sistem kayıt veritabanındaki girişini `RegisterAll` güncelleştirir ve örnek kaydı gerçekleştiren üye işlevini sizin için çağırır.
+Uygulama Sihirbazı ile bir sunucu uygulaması oluşturduğunuzda, sihirbaz tüm başlatma görevlerini sizin için otomatik olarak tamamlar. Bu bölümde, bir sunucu uygulamasını el ile yazarsanız yapmanız gerekenler açıklanmaktadır.
 
-Sunucu uygulamanız başlatılırken, örnek kaydı gerçekleştirebileceğinden emin olmalısınız. Örnek kaydı, OLE sistemi DLs'lerine sunucunun etkin olduğunu ve kapsayıcılardan istek almaya hazır olduğunu bildirir. Kayıt veritabanına giriş eklemez. Sunucunun örnek kaydını, `ConnectTemplate` tanımlanan üye işlevi çağırarak gerçekleştirin. `COleTemplateServer` Bu nesneyi `CDocTemplate` `COleTemplateServer` nesneye bağlar.
+Bir sunucu uygulaması bir kapsayıcı uygulama tarafından başlatıldığında OLE sistem dll 'Leri sunucunun komut satırına "/katıştırma" seçeneğini ekler. Sunucu uygulamasının davranışı bir kapsayıcı tarafından başlatılıp başlatıldığına bağlı olarak farklılık gösterir. bu nedenle, uygulamanın yürütme başladığında yapması gereken ilk şey, komut satırında "/gömme" veya "-gömme" seçeneğini denetler. Bu anahtar varsa, sunucuyu yerinde etkin veya tam açık olarak gösteren farklı bir kaynak kümesi yükleyin. Daha fazla bilgi için bkz. [menüler ve kaynaklar: sunucu eklemeleri](../mfc/menus-and-resources-server-additions.md).
 
-İşlev `ConnectTemplate` üç parametre alır: sunucunun *CLSID'si,* `CDocTemplate` nesneye işaretçi ve sunucunun birden çok örneği destekleyip desteklemediğini belirten bir bayrak. Bir mini sunucu birden çok örneği destekleyebilmeli, diğer bir süre sunucunun birden çok örneğinin aynı anda çalışması mümkün olmalıdır, her kapsayıcı için bir tane. Sonuç olarak, bir mini sunucu başlatırken bu bayrak için **TRUE'yı** geçirin.
+Sunucu uygulamanız `CWinApp::RunEmbedded` , komut satırını ayrıştırmak için işlevini de çağırmalıdır. Sıfır dışında bir değer döndürürse, uygulamanın, tek başına bir uygulama olarak değil bir kapsayıcı uygulamasından çalıştırıldığı için, pencereyi göstermemelidir. Bu işlev, sistem kayıt veritabanındaki sunucu girişini güncelleştirir ve `RegisterAll` örnek kaydı gerçekleştirerek, sizin için üye işlevini çağırır.
 
-Eğer bir miniserver yazıyorsanız, tanımı gereği her zaman bir kapsayıcı tarafından başlatılan olacaktır. "/Embedding" seçeneğini denetlemek için komut satırını ayrıştırmalısınız. Komut satırında bu seçeneğin olmaması, kullanıcının mini sunucuyu tek başına bir uygulama olarak başlatmaya çalıştığı anlamına gelir. Bu durumda, sunucuyu sistem kayıt veritabanına kaydedin ve ardından kullanıcıya bir kapsayıcı uygulamasından mini sunucuyu başlatmasını bildiren bir ileti kutusu görüntüleyin.
+Sunucu uygulamanız başlatıldığında, örnek kayıt işlemini gerçekleştire, emin olmanız gerekir. Örnek kaydı, OLE sistem dll 'Lerine sunucunun etkin olduğunu ve kapsayıcılardan istekleri almaya hazırlı olduğunu bildirir. Kayıt veritabanına giriş eklemez. Tarafından tanımlanan üye işlevini çağırarak sunucunun örnek kaydını gerçekleştirin `ConnectTemplate` `COleTemplateServer` . Bu, `CDocTemplate` nesnesini `COleTemplateServer` nesnesine bağlar.
+
+`ConnectTemplate`İşlev üç parametre alır: sunucunun *CLSID 'si*, `CDocTemplate` nesne işaretçisi ve sunucunun birden çok örneği destekleyip desteklemediğini belirten bir bayrak. Bir minıver, birden çok örneği destekleyebilmelidir, yani her bir kapsayıcı için sunucunun birden çok örneğinin aynı anda çalıştırılması mümkün olmalıdır. Sonuç olarak, bir minıver başlatılırken bu bayrak için **true** geçirin.
+
+Tanım olarak bir minıver yazıyorsanız, her zaman bir kapsayıcı tarafından başlatılır. "/Katıştırma" seçeneğini denetlemek için yine de komut satırını ayrıştırmalısınız. Bu seçeneğin komut satırında yokluğu, kullanıcının minıver 'i tek başına bir uygulama olarak başlatmaya çalıştığı anlamına gelir. Bu durum oluşursa, sunucuyu sistem kayıt veritabanına kaydedin ve sonra kullanıcıya bir kapsayıcı uygulamadan minıver 'i başlatması konusunda bilgilendiren bir ileti kutusu görüntüleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [Sunucular](../mfc/servers.md)<br/>
-[CwinApp::RunAutomated](../mfc/reference/cwinapp-class.md#runautomated)<br/>
-[Cwinapp::RunEmbedded](../mfc/reference/cwinapp-class.md#runembedded)<br/>
-[COleTemplateServer Sınıfı](../mfc/reference/coletemplateserver-class.md)
+[CWinApp:: RunAutomated](../mfc/reference/cwinapp-class.md#runautomated)<br/>
+[CWinApp:: RunEmbedded](../mfc/reference/cwinapp-class.md#runembedded)<br/>
+[Cotatemplateserver sınıfı](../mfc/reference/coletemplateserver-class.md)
