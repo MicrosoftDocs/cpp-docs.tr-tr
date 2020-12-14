@@ -1,24 +1,25 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: özel durum filtresi yazma'
 title: Özel durum filtresi yazma
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exception handling [C++], filters
 ms.assetid: 47fc832b-a707-4422-b60a-aaefe14189e5
-ms.openlocfilehash: 05d3aa79d1293001e80a77b3171b7a4607cd81c7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 580c0f0b339b25137bb2aea0621463a89e99fc33
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369478"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302822"
 ---
 # <a name="writing-an-exception-filter"></a>Özel durum filtresi yazma
 
-Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Özel durum işlemek ve düşme işlemek için özel durum işleyicisi kodunu kullanmak yerine, sorunu temizlemek için *filtre* kullanabilirsiniz ve sonra, -1 döndürerek, yığını temizlemeden normal akışı devam.
+Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Özel durumu işlemek ve üzerinde gezinmek için özel durum işleyici kodu kullanmak yerine, sorunu temizlemek için *filtreyi* kullanabilir ve sonra-1 ' i döndürerek, yığını temizlemeden normal akışı sürdürebilirsiniz.
 
 > [!NOTE]
-> Bazı özel durumlar devam ettirilemez. *Filtre* böyle bir özel durum için -1 olarak değerlendirirse, sistem yeni bir özel durum yükseltir. [Raise Exception'ı](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)aradiğinizde, özel durum devam edip etmeyeceğini belirlersiniz.
+> Bazı özel durumlar devam ettirilemez. Bu tür bir özel durum için *filtre* -1 olarak değerlendirilirse, sistem yeni bir özel durum oluşturur. [RaiseException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raiseexception)çağırdığınızda, özel durumun devam edip etmediğini belirlersiniz.
 
-Örneğin, aşağıdaki kod *filtre* ifadesinde bir işlev çağrısı kullanır: bu işlev sorunu işler ve normal denetim akışını devam ettirmek için -1 döndürür:
+Örneğin, aşağıdaki kod *filtre* ifadesinde bir işlev çağrısı kullanır: Bu işlev sorunu işler ve normal denetim akışını sürdürmeye yönelik-1 döndürür:
 
 ```cpp
 // exceptions_Writing_an_Exception_Filter.cpp
@@ -45,11 +46,11 @@ int Eval_Exception ( int n_except ) {
 }
 ```
 
-*Filtrekarmaşık* bir şey yapması gerektiğinde *filtre* ifadesinde bir işlev çağrısı kullanmak iyi bir fikirdir. İfadenin değerlendirilmesi işlevin, bu durumda `Eval_Exception`'ın yürütülmesine neden olur.
+Filtrenin karmaşık her şeyi *yapması gerektiğinde* *filtre* ifadesinde bir işlev çağrısı kullanmak iyi bir fikirdir. İfadenin değerlendirilmesi işlevin, bu durumda `Eval_Exception`'ın yürütülmesine neden olur.
 
-Özel durumu belirlemek için [GetExceptionCode'un](/windows/win32/Debug/getexceptioncode) kullanımına dikkat edin. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception`arayamaz, `GetExceptionCode`ancak özel durum kodunun ona geçirilmesi gerekir.
+Özel durumu belirleyebilmek için [GetExceptionCode](/windows/win32/Debug/getexceptioncode) kullanımını göz önünde atın. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception` çağrılamıyor `GetExceptionCode` , ancak kendisine geçirilen özel durum kodu olmalıdır.
 
-Bu işleyici, özel durum bir tamsayı veya kayan nokta taşması değilse deneyimi başka bir işleyiciye geçirir. Tamsayı veya kayan nokta taşmasıysa, işleyici bazı genel değişkenleri sıfırlamak için bir işlev çağırır (`ResetVars` yalnızca bir örnektir, API işlevi değildir). Bu örnekte boş olan *deyim-blok-2,* hiçbir `Eval_Exception` zaman yürütülemez, çünkü hiçbir zaman EXCEPTION_EXECUTE_HANDLER (1) dönmez.
+Bu işleyici, özel durum bir tamsayı veya kayan nokta taşması değilse deneyimi başka bir işleyiciye geçirir. Tamsayı veya kayan nokta taşmasıysa, işleyici bazı genel değişkenleri sıfırlamak için bir işlev çağırır (`ResetVars` yalnızca bir örnektir, API işlevi değildir). Bu örnekte boş olan *deyimin blok-2*' i hiçbir durumda `Eval_Exception` EXCEPTION_EXECUTE_HANDLER (1) döndürmediği için hiçbir şekilde yürütülemez.
 
 Bir işlev çağrısı kullanmak, karmaşık filtre ifadeleriyle başa çıkmak için genel anlamda iyi bir yöntemdir. Yararlı olan diğer iki C dili özelliği şunlardır:
 
@@ -57,7 +58,7 @@ Bir işlev çağrısı kullanmak, karmaşık filtre ifadeleriyle başa çıkmak 
 
 - Virgül işleci
 
-Koşullu işleç, belirli bir dönüş kodunu denetlemek ve ardından iki farklı değerden birini döndürmek için kullanılabildiğinden genellikle çok yararlı olur. Örneğin, aşağıdaki koddaki filtre, yalnızca özel durum STATUS_INTEGER_OVERFLOW aşağıdakidurumlarda özel durumu tanır:
+Koşullu işleç, belirli bir dönüş kodunu denetlemek ve ardından iki farklı değerden birini döndürmek için kullanılabildiğinden genellikle çok yararlı olur. Örneğin, aşağıdaki koddaki filtre özel durumu yalnızca özel durum STATUS_INTEGER_OVERFLOW tanır:
 
 ```cpp
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ? 1 : 0 ) {
@@ -69,7 +70,7 @@ Bu durumda koşullu işlecin amacı, temel olarak netlik sağlamaktır, çünkü
 __except( GetExceptionCode() == STATUS_INTEGER_OVERFLOW ) {
 ```
 
-Koşullu işleç, filtrenin -1, EXCEPTION_CONTINUE_EXECUTION olarak değerlendirilmesini isteyebileceğiniz durumlarda daha kullanışlıdır.
+Koşullu operatör, filtrenin-1 ' i değerlendirmek isteyebileceğiniz durumlarda daha yararlı olur EXCEPTION_CONTINUE_EXECUTION.
 
 Virgül işleci, tek bir ifade içerisinde birden fazla bağımsız işlemler gerçekleştirmenizi sağlar. Etkisi, kabaca birden fazla deyim yürütmeye ve ardından son ifadenin değerini döndürmeye benzerdir. Örneğin, aşağıdaki kod özel durum kodunu bir değişkende depolar ve ardından bunu test eder:
 
@@ -79,5 +80,5 @@ __except( nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)<br/>
+[Özel Durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)<br/>
 [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

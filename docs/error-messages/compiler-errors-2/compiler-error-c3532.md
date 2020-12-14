@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3532'
 title: Derleyici hatası C3532
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3532
 ms.assetid: 51067853-eda8-4f59-86e8-8924e16d3a95
-ms.openlocfilehash: b8d516074b79704b10d27dd4638585a5ada08323
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 754f69bd3ee24b94be6725864a5e9cd3993d2148
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91510131"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315315"
 ---
 # <a name="compiler-error-c3532"></a>Derleyici hatası C3532
 

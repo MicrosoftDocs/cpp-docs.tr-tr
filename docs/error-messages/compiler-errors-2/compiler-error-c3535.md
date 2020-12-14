@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C3535'
 title: Derleyici hatası C3535
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3535
 ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
-ms.openlocfilehash: a4bda0825e8b71eb49fe9691755d8e42fd059c06
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: ba5019d623fe6f390051084894e13235c6503cc9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91510100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315354"
 ---
 # <a name="compiler-error-c3535"></a>Derleyici hatası C3535
 

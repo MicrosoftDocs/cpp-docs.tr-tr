@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi: derleyici hatası C2244'
 title: Derleyici hatası C2244
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2244
 ms.assetid: d9911c12-ceb5-4f93-ac47-b44a485215c2
-ms.openlocfilehash: 97ff469c6f3f766bd1b5412133003bae2acaddfc
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 9f541eca155b9d728f0bbf7cb1578a6e3424c49c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302250"
 ---
 # <a name="compiler-error-c2244"></a>Derleyici hatası C2244
 
@@ -19,7 +20,7 @@ ms.locfileid: "74759483"
 
 Birli + işlecinin alışılmadık kullanımı parantez olmayan bir işlev çağrısının önünde kullanıldı.
 
-Bu hata yalnızca C++ projelerde oluşur.
+Bu hata yalnızca C++ projelerinde oluşur.
 
 Aşağıdaki örnek C2244 oluşturur:
 

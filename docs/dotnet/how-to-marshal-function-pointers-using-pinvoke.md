@@ -1,5 +1,6 @@
 ---
-title: 'Nasıl yapılır: PInvoke kullanarak işlev işaretçilerini sıralama hazırlama'
+description: 'Daha fazla bilgi edinin: nasıl yapılır: PInvoke kullanarak Işlev Işaretçilerini sıralama'
+title: 'Nasıl yapılır: PInvoke Kullanarak İşlev İşaretçilerini Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,30 +9,30 @@ helpviewer_keywords:
 - platform invoke [C++], callbacks and delegates
 - marshaling [C++], callbacks and delegates
 ms.assetid: dcf396fd-a91d-49c0-ab0b-1ea160668a89
-ms.openlocfilehash: 031bda0f93d6a95aa3c774553aefca0647d0518c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bfe3f669cf023ed914bdccb3ae15ccafefbb49c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400571"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302588"
 ---
-# <a name="how-to-marshal-function-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak işlev işaretçilerini sıralama hazırlama
+# <a name="how-to-marshal-function-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak İşlev İşaretçilerini Sıralama
 
-Bu konu açıklar nasıl yönetilen temsilciler .NET Framework P/Invoke özellikleri kullanarak işlevleri ile birlikte yönetilmeyen işlev işaretçileri yerine kullanılabilir. Ancak, çok az derleme zamanı hata raporlama, tür açısından güvenli değildir ve uygulamak can sıkıcı olabilir, P/Invoke sağlar çünkü Visual C++ programcıları (uygun olduğunda) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir. Yönetilmeyen API'ın bir DLL olarak paketlenmesi ve kaynak kodu kullanılabilir değilse, P/Invoke tek seçenektir. Aksi takdirde, aşağıdaki konulara bakın:
+Bu konu, yönetilen temsilcilerin .NET Framework P/Invoke özellikleri kullanılarak yönetilmeyen işlevlerle birlikte çalışırken işlev işaretçilerinin yerine nasıl kullanılabileceğini açıklar. Ancak, Visual C++ programcıların C++ birlikte çalışma özelliklerini kullanması önerilir, çünkü P/Invoke çok az sayıda derleme zamanı hatası raporlama sağladığından, tür kullanımı güvenli değildir ve uygulamak sıkıcı olabilir. Yönetilmeyen API bir DLL olarak paketlenmişse ve kaynak kodu kullanılabilir değilse, P/Invoke tek seçenektir. Aksi takdirde, aşağıdaki konulara bakın:
 
-- [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+- [C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
 
-- [Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Hazırlama](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)
+- [Nasıl yapılır: C++ birlikte çalışabilirliği kullanarak geri çağırmaları ve temsilcileri sıralama](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)
 
-Bağımsız değişkenler, yerel işlev işaretçisi yerine yönetilen bir temsilci ile yönetilen koddan çağrılabilir gibi işlevleri işaretçiler yönetilmeyen API'ler. Derleyici, otomatik olarak yönetilmeyen işlevleri için temsilci işlevi işaretçisi olarak sıralar ve gerekli yönetilen veya yönetilmeyen bir geçiş kodu ekler.
+Bağımsız değişken olarak işlev işaretçileri alan yönetilmeyen API 'Ler, yönetilen koddan yerel işlev işaretçisi yerine yönetilen bir temsilci ile çağrılabilir. Derleyici, bir işlev işaretçisi olarak yönetilmeyen işlevlere temsilciyi otomatik olarak sıralar ve gerekli yönetilen/yönetilmeyen geçiş kodunu ekler.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod, yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen bir işlev işaretçisi kabul eden TakesCallback adında bir işlevi tanımlayan bir DLL modülüdür. Bu adres işlevi yürütme için kullanılır.
+Aşağıdaki kod, yönetilmeyen ve yönetilen bir modülden oluşur. Yönetilmeyen modül, bir işlev işaretçisini kabul eden TakesCallback adlı bir işlevi tanımlayan bir DLL 'dir. Bu adres, işlevi yürütmek için kullanılır.
 
-Yönetilen modül kullanır ve yerel koda bir işlev işaretçisi olarak sıralanmış bir temsilci tanımlar <xref:System.Runtime.InteropServices.DllImportAttribute> yönetilen koda yerel TakesCallback işlevi kullanıma sunmak için özniteliği. Main işlevi, temsilci örneği oluşturulur ve TakesCallback işlevine geçirilir. Bu işlev yerel TakesCallback işlevi tarafından yürütülen üzere program çıktısını gösterir.
+Yönetilen modül, yerel koda bir işlev işaretçisi olarak sıralanmış bir temsilciyi tanımlar ve <xref:System.Runtime.InteropServices.DllImportAttribute> Yerel TakesCallback işlevini yönetilen koda göstermek için özniteliğini kullanır. Main işlevinde, temsilcinin bir örneği oluşturulur ve TakesCallback işlevine geçirilir. Program çıktısı, bu işlevin yerel TakesCallback işlevi tarafından yürütüldüğünü gösterir.
 
-Yönetilen işlev çöp toplama işlemi için yerel işlevde yürütürken gelen temsilci yeniden konumlandırma çöp toplama .NET Framework önlemek yönetilen temsilci bastırır.
+Yönetilen işlev, yerel işlev yürütülürken .NET Framework çöp toplamanın temsilciyi yeniden konumlandırmasını engellemek için, yönetilen temsilcinin çöp toplamayı bastırır.
 
 ```cpp
 // TraditionalDll5.cpp
@@ -85,8 +86,8 @@ int main() {
 }
 ```
 
-DLL hiçbir kısmı geleneksel kullanarak yönetilen kod için kullanıma sunulduğunu unutmayın #include yönergesi. Aslında, ile içeri aktarılan işlevlere sahip sorunlar için DLL yalnızca çalışma zamanında erişilir <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.
+Geleneksel #include yönergesini kullanarak, DLL 'nin hiçbir kısmının yönetilen koda sunulmadığını unutmayın. Aslında, DLL 'ye yalnızca çalışma zamanında erişilir. bu nedenle, ile içeri aktarılan işlevlerle ilgili sorunlar <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+[C++ ' ta açık PInvoke kullanma (DllImport özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

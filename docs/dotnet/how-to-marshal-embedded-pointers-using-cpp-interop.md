@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış Işaretçileri sıralama'
 title: 'Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - pointers [C++], marshaling
 - data marshaling [C++], embedded pointers
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
-ms.openlocfilehash: 972d7a9c09100c35cb0bf527efbd0884c909c46d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 74ea5cdec755b7845796d1b61339811adb4f0b28
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988178"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302601"
 ---
 # <a name="how-to-marshal-embedded-pointers-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama
 
@@ -93,4 +94,4 @@ array[9] = 27.370446
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

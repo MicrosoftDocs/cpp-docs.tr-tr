@@ -1,13 +1,14 @@
 ---
+description: ': Array ve WriteOnlyArray hakkında daha fazla bilgi edinin (C++/CX)'
 title: Dizi ve WriteOnlyArray (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-ms.openlocfilehash: 1980fbcd1e2fa8cdaa48e00d2e7de9e45ac96a92
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4c4f9415f401f1180786608288e33691c82fbdfa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231032"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302796"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Dizi ve WriteOnlyArray (C++/CX)
 
@@ -21,7 +22,7 @@ Aşağıdaki dizi türleri ABı arasında geçirilebilir:
 
 1. `Platform::WriteOnlyArray`
 
-1. dönüş değeri`Platform::Array^`
+1. dönüş değeri `Platform::Array^`
 
 Bu dizi türlerini, Windows Çalışma Zamanı tarafından tanımlanan üç dizi deseni uygulamak için kullanırsınız.
 
@@ -36,7 +37,7 @@ ReceiveArray \
 
 ## <a name="passarray-pattern"></a>PassArray düzeni
 
-İstemci kodu bir diziyi C++ yöntemine geçtiğinde ve Yöntem onu değiştirmezse, yöntem diziyi bir olarak kabul eder `const Array^` . Windows Çalışma Zamanı Application binary Interface (ABı) düzeyinde, bu, *Passarray*olarak bilinir. Sonraki örnek, JavaScript 'te ayrılmış bir dizinin bir C++ işlevine nasıl geçirileceğini gösterir.
+İstemci kodu bir diziyi C++ yöntemine geçtiğinde ve Yöntem onu değiştirmezse, yöntem diziyi bir olarak kabul eder `const Array^` . Windows Çalışma Zamanı Application binary Interface (ABı) düzeyinde, bu, *Passarray* olarak bilinir. Sonraki örnek, JavaScript 'te ayrılmış bir dizinin bir C++ işlevine nasıl geçirileceğini gösterir.
 
 [!code-javascript[cx_arrays#101](../cppcx/codesnippet/JavaScript/array-and-writeonlyarray-c-_1.js)]
 

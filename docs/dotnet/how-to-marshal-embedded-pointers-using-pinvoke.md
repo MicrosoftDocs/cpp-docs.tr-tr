@@ -1,5 +1,6 @@
 ---
-title: 'Nasıl yapılır: PInvoke kullanarak katıştırılmış işaretçileri sıralama'
+description: 'Hakkında daha fazla bilgi edinin: nasıl yapılır: PInvoke kullanarak katıştırılmış Işaretçileri sıralama'
+title: 'Nasıl yapılır: PInvoke Kullanarak Katıştırılmış İşaretçileri Sıralama'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,22 +10,22 @@ helpviewer_keywords:
 - marshaling [C++], embedded pointers
 - data marshaling [C++], embedded pointers
 ms.assetid: f12c1b9a-4f82-45f8-83c8-3fc9321dbb98
-ms.openlocfilehash: 943a1a2784a37353157cd38da7ebdc9827006fe5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d31660a9a8ba345b380d442bb4484e332fe9d7cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62325214"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302562"
 ---
-# <a name="how-to-marshal-embedded-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke kullanarak katıştırılmış işaretçileri sıralama
+# <a name="how-to-marshal-embedded-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Katıştırılmış İşaretçileri Sıralama
 
-Platform Çağırma (P/Invoke) işlevini kullanarak yönetilen koddan yönetilmeyen DLL'ler uygulanan işlevler çağrılabilir. DLL kaynak kodunu kullanılabilir durumda değilse, P/Invoke birlikte çalışma için tek seçenektir. Ancak, diğer .NET dilleri farklı olarak, Visual C++ P/Invoke bir alternatif sunar. Daha fazla bilgi için [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) ve [nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).
+Yönetilmeyen DLL 'lerde uygulanan işlevler, platform Invoke (P/Invoke) işlevi kullanılarak yönetilen koddan çağrılabilir. DLL için kaynak kodu kullanılamıyorsa, her çalışma için P/Invoke tek seçenektir. Ancak, diğer .NET dillerinin aksine, Visual C++ P/Invoke için bir alternatif sağlar. Daha fazla bilgi için bkz. [C++ birlikte çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) ve [nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).
 
 ## <a name="example"></a>Örnek
 
-Yerel koda yapıları geçirme yerel yapısı için veri düzeni bakımından eşdeğer olan yönetilen bir yapının oluşturulması gerekir. Ancak, işaretçiler içeren yapılar özel işleme gerektirir. Yerel yapısında katıştırılmış işaretçi için her yönetilen sürüm yapısı örneği içermelidir <xref:System.IntPtr> türü. Ayrıca, bellek Bu örnekler açıkça ayrılması için başlatılmış ve kullanılarak serbest <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A>, <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A>, ve <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> yöntemleri.
+Yapıları yerel koda geçirmek için, yerel yapıya veri düzeni bakımından eşdeğer bir yönetilen yapının oluşturulması gerekir. Ancak, işaretçiler içeren yapılar için özel işleme gerekir. Yerel yapıdaki her katıştırılmış işaretçi için, yapının yönetilen sürümü türünün bir örneğini içermelidir <xref:System.IntPtr> . Ayrıca, bu örneklerin belleği,, ve yöntemleri kullanılarak açıkça ayrılmalıdır, başlatılmalıdır ve serbest <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A> bırakılır <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A> <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> .
 
-Aşağıdaki kod, yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen bir işaretçi içeren ListString adlı bir yapıyı kabul eden bir işlev ve TakesListStruct adlı bir işlevi tanımlayan bir DLL modülüdür. Yönetilen modül TakesListStruct işlevini alır ve çift * ile temsil edilen dışında yerel ListStruct ile eşdeğer olan MListStruct adlı bir yapıyı tanımlayan bir komut satırı uygulamasıdır bir <xref:System.IntPtr> örneği. Main işlevi TakesListStruct öğesini çağırmadan önce ayırır ve bu alana başvuran belleği başlatır.
+Aşağıdaki kod, yönetilmeyen ve yönetilen bir modülden oluşur. Yönetilmeyen modül, bir işaretçi içeren ListString adlı bir yapıyı ve TakesListStruct adlı bir işlevi kabul eden bir işlevi tanımlayan bir DLL 'dir. Yönetilen modül, TakesListStruct işlevini içeri aktaran ve Double * değerinin bir örnekle temsil edildiği hariç, yerel ListStruct öğesine denk gelen MListStruct adlı bir yapıyı tanımlayan bir komut satırı uygulamasıdır <xref:System.IntPtr> . TakesListStruct çağrılmadan önce Main işlevi, bu alanın başvurduğu belleği ayırır ve başlatır.
 
 ```cpp
 // TraditionalDll6.cpp
@@ -98,8 +99,8 @@ int main() {
 }
 ```
 
-DLL hiçbir kısmı geleneksel kullanarak yönetilen kod için kullanıma sunulduğunu unutmayın #include yönergesi. Aslında, ile içeri aktarılan işlevlere sahip sorunlar için DLL yalnızca çalışma zamanında erişilir <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.
+Geleneksel #include yönergesini kullanarak, DLL 'nin hiçbir kısmının yönetilen koda sunulmadığını unutmayın. Aslında, DLL 'ye yalnızca çalışma zamanında erişilir. bu nedenle, ile içeri aktarılan işlevlerle ilgili sorunlar <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+[C++ ' ta açık PInvoke kullanma (DllImport özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
