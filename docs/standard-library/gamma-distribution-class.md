@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: gamma_distribution sınıfı'
 title: gamma_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,18 +27,18 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-ms.openlocfilehash: 37b4661cf14fe4302d50557472ce03c120eb2741
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b010a5fc74f98d27c50377bf6b5f84fb84b7bb75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232102"
 ---
 # <a name="gamma_distribution-class"></a>gamma_distribution Sınıfı
 
 Gama dağılımı üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class RealType = double>
@@ -83,7 +84,7 @@ Sınıf şablonu, Kullanıcı tarafından belirtilen kayan nokta türünün değ
 [gamma_distribution](#gamma_distribution)\
 [param_type](#param_type)
 
-Özelliği, `alpha()` `beta()` saklı dağıtım parametreleri *Alpha* ve *Beta*için ilgili değerlerini işlevler ve döndürür.
+Özelliği, `alpha()` `beta()` saklı dağıtım parametreleri *Alpha* ve *Beta* için ilgili değerlerini işlevler ve döndürür.
 
 Özellik üyesi, `param()` `param_type` depolanan dağıtım parametresi paketini ayarlar veya döndürür.
 
@@ -210,9 +211,9 @@ Dağıtımı oluşturmak için kullanılan parametre yapısı.
 
 **Önkoşul:** `0.0 < alpha` ' `0.0 < beta`
 
-İlk Oluşturucu, saklı değeri `alpha` *Alpha* değerini tutan ve depolanan `beta` değeri *Beta*değeri olan bir nesne oluşturur.
+İlk Oluşturucu, saklı değeri `alpha` *Alpha* değerini tutan ve depolanan `beta` değeri *Beta* değeri olan bir nesne oluşturur.
 
-İkinci Oluşturucu, saklı parametreleri *parmdan*başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
+İkinci Oluşturucu, saklı parametreleri *parmdan* başlatılan bir nesne oluşturur. Üye işlevini çağırarak mevcut bir dağıtımın geçerli parametrelerini alabilir ve ayarlayabilirsiniz `param()` .
 
 ## <a name="gamma_distributionparam_type"></a><a name="param_type"></a> gamma_distribution::p aram_type
 

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: messages_byname sınıfı'
 title: messages_byname Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - messages_byname class
 ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
-ms.openlocfilehash: 56d8931cb404d9c0f3f5113f8b2ca0f1158209f2
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 960db9dd411e4ac42f81a0027e91ae1001b7877d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689337"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230529"
 ---
 # <a name="messages_byname-class"></a>messages_byname Sınıfı
 
@@ -39,22 +40,22 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname* \
+*_Locname*\
 Adlandırılmış bir yerel ayar.
 
-*_Refs* \
+*_Refs*\
 İlk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Davranışı adlandırılmış yerel ayar *_Locname*tarafından belirlenir. Her Oluşturucu kendi temel nesnesini \<CharType > (`_Refs`) [iletileriyle](../standard-library/messages-class.md#messages) başlatır.
+Davranışı, adlandırılmış yerel ayar *_Locname* tarafından belirlenir. Her Oluşturucu kendi temel nesnesini [iletilerle](../standard-library/messages-class.md#messages) \<CharType> () başlatır `_Refs` .
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

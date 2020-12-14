@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/SUBSYSTEM
 title: /SUBSYSTEM
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -SUBSYSTEM editbin option
 - SUBSYSTEM editbin option
 ms.assetid: 515e4cdf-3cc4-4659-8764-1f2757b49215
-ms.openlocfilehash: 708bfcce3e6d6616116bcc08441f374b46914c82
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 24c334099eca93fc0f6e5790e78ed99049c572a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438869"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230243"
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 
@@ -57,13 +58,13 @@ Windows grafik ortamında çalışan bir uygulama. Bu, hem masaüstü uygulamala
 **WıNDOWSCE**<br/>
 WINDOWSCE alt sistemi, uygulamanın Windows CE çekirdek sürümü olan bir cihazda çalıştırmak için tasarlanan olduğunu gösterir. Çekirdek sürümleri şunlardır PocketPC, Windows Mobile, Windows Phone 7, Windows CE V 1.0-6.0 R3 ve Windows Embedded Compact 7.
 
-İsteğe bağlı `major` ve `minor` değerleri, belirtilen alt sistemin gerekli en düşük sürümünü belirtir:
+İsteğe bağlı `major` ve `minor` değerler, belirtilen alt sistemin gerekli en düşük sürümünü belirtir:
 
-- Sürüm numarasının tamamı (ondalık noktanın solundaki bölüm) `major`ile temsil edilir.
+- Sürüm numarasının tamamı (ondalık noktanın solundaki bölüm) tarafından temsil edilir `major` .
 
-- Sürüm numarasının kesirli bölümü — ondalık noktanın sağ tarafında bulunan bölüm, `minor`ile temsil edilir.
+- Sürüm numarasının kesirli bölümü — ondalık noktanın sağ tarafında bulunan bölüm ile temsil edilir `minor` .
 
-- `major` ve `minor` değerleri 0 ile 65.535 arasında olmalıdır.
+- `major`Ve değerleri `minor` 0 ile 65.535 arasında olmalıdır.
 
 Alt sistem seçimi programın varsayılan başlangıç adresini etkiler. Daha fazla bilgi için bkz. [/Entry (giriş noktası simgesi)](entry-entry-point-symbol.md), bağlayıcı/entry:*işlev* seçeneği.
 
@@ -71,4 +72,4 @@ Her alt sistem için birincil ve ikincil sürüm numaraları için en düşük v
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[EDITBIN Seçenekleri](editbin-options.md)
+[EDITBIN seçenekleri](editbin-options.md)

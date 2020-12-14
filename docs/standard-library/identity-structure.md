@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kimlik yapısı'
 title: identity Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - identity class
 - identity structure
 ms.assetid: 990756fd-7969-4b39-ad7e-0878e8dac8fd
-ms.openlocfilehash: 49b2c1eb3ca03f9bf9199bdbca49348866ff0a7e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 753a3b697eb2a77dd102f681403fd23d7062cb36
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231764"
 ---
 # <a name="identity-structure"></a>identity Yapısı
 
-Şablon parametresi olarak bir tür tanımı sağlayan bir yapı.
+Şablon parametresi olarak bir tür tanımı sağlayan bir struct.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -29,11 +30,11 @@ struct identity {
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*\
-Tanımlamak için değeri.
+*tarafta*\
+Tanımlamak için değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı ortak tür tanımını içeren `type`, şablon parametre türü ile aynı olduğu. Şablon işlevi ile birlikte kullanılan [İleri](../standard-library/utility-functions.md#forward) bir işlev parametresi istenen türde olduğundan emin olmak için.
+Sınıfı, `type` şablon parametre türüyle aynı olan ortak tür tanımını içerir. Bir işlev parametresinin istenen türe sahip olduğundan emin olmak için şablon işlevi [İleri](../standard-library/utility-functions.md#forward) ile birlikte kullanılır.
 
-Eski kod ile uyumluluk için sınıf IDENTITY işlevi de tanımlar `operator()` bağımsız değişkenini döndürür *sol*.
+Daha eski kodla uyumluluk için, sınıfı, `operator()` bağımsız değişkenini *sola* döndüren kimlik işlevini de tanımlar.

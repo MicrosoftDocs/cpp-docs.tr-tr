@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_enum sınıfı'
 title: is_enum Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_enum class
 - is_enum
 ms.assetid: df3b00b7-4f98-4b3a-96ce-10ad958ee69c
-ms.openlocfilehash: 4c8ac69bacf72cc9a281e239263a14a42f4a0efe
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6eaffc4258dd7741e177718ed39a3d8c3f75f96f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231153"
 ---
-# <a name="isenum-class"></a>is_enum Sınıfı
+# <a name="is_enum-class"></a>is_enum Sınıfı
 
 Tür bir sabit listesi ise sınar.
 
@@ -32,7 +33,7 @@ Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür değeri bir sabit listesi türü veya `cv-qualified` numaralandırma türünde bir form *ise true* , aksi takdirde false barındırır.
+Tür değeri bir sabit listesi türü veya numaralandırma türünde bir form *ise true* , `cv-qualified` Aksi takdirde false barındırır.
 
 ## <a name="example"></a>Örnek
 
@@ -71,11 +72,11 @@ is_enum<int> == false
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_integral Sınıfı](../standard-library/is-integral-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_integral sınıfı](../standard-library/is-integral-class.md)

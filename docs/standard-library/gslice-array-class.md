@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: gslice_array sınıfı'
 title: gslice_array Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - gslice_array class
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
-ms.openlocfilehash: 68ce774128395e941ff80580a02c4ee28a74a4e4
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 2c3cf29cd80d874265ec86d5c31a10e5c8359b8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689592"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232037"
 ---
 # <a name="gslice_array-class"></a>gslice_array Sınıfı
 
 Bir valarray genel dilimi tarafından tanımlanan alt küme dizileri arasında işlemler sağlayarak genel dilim nesnelerini destekleyen iç, yardımcı sınıf şablonu.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 template <class Type>
@@ -54,15 +55,15 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sınıfı, `valarray<Type>` nesnesinden seçilecek öğelerin dizisini açıklayan [gslice](../standard-library/gslice-class.md) sınıfının bir nesne `gs` birlikte [valarray](../standard-library/valarray-class.md)  **\<Type >** sınıfının bir nesne `va` bir başvurusunu depolayan bir nesne tanımlar.
+Sınıfı, valarray sınıfının bir nesnesine bir başvuru depolayan bir nesneyi tanımlar `va` [](../standard-library/valarray-class.md) **\<Type>** , `gs` Bu, nesneden seçilecek öğelerin dizisini açıklayan [gslice](../standard-library/gslice-class.md) sınıfının bir nesnesidir `valarray<Type>` .
 
-Yalnızca bir `gslice_array<Type>` nesnesi oluşturarak [&#91;&#93;](../standard-library/valarray-class.md#op_at)bir nesne oluşturun. Gslice_array sınıfının üye işlevleri, `valarray<Type>` için tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir.
+`gslice_array<Type>`Yalnızca [VA&#91;GS&#93;](../standard-library/valarray-class.md#op_at)bir ifade yazarak bir nesne oluşturursunuz. Gslice_array sınıfının üye işlevleri, için tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak `valarray<Type>` yalnızca seçili öğelerin sırası etkilenir.
 
 Sınıf şablonu belirli valarray işlemleri tarafından dolaylı olarak oluşturulur ve programda doğrudan kullanılamaz. Bunun yerine iç yardımcı sınıf şablonu, dilim alt simge işleci tarafından kullanılır:
 
-`gslice_array` \< **türü** >  `valarray` \< **Type**>:: `operator[]` ( **constgslice &** ).
+`gslice_array`\< **Type**>`valarray` \< **Type**> :: `operator[]` ( **constgslice&**).
 
-Bir `gslice_array<Type>` nesnesi, valarray `va` Slice `gsl` için form `va[gsl]` bir ifadesi yazarak oluşturursunuz. Gslice_array sınıfının üye işlevleri, `valarray<Type>` için tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak yalnızca seçili öğelerin sırası etkilenir. Gslice_array tarafından denetlenen sıra, dilim oluşturucusunun üç parametresi, ilk dilimdeki ilk öğenin dizini, her bir dilimdeki öğelerin sayısı ve her bir dilimdeki öğeler arasındaki mesafe tarafından tanımlanır.
+Bir `gslice_array<Type>` nesnesi `va[gsl]` , bir valarray dilimi için yalnızca formun bir ifadesini yazarak oluşturursunuz `gsl` `va` . Gslice_array sınıfının üye işlevleri, için tanımlanan karşılık gelen işlev imzaları gibi davranır, ancak `valarray<Type>` yalnızca seçili öğelerin sırası etkilenir. Gslice_array tarafından denetlenen sıra, dilim oluşturucusunun üç parametresi, ilk dilimdeki ilk öğenin dizini, her bir dilimdeki öğelerin sayısı ve her bir dilimdeki öğeler arasındaki mesafe tarafından tanımlanır.
 
 Aşağıdaki örnekte:
 
@@ -79,14 +80,14 @@ Yordamın geçerli olması için dizinlerin geçerli olması gerekir.
 
 ## <a name="example"></a>Örnek
 
-Bir slice_array nasıl bildirilemeyeceğini ve kullanacağınızı gösteren bir örnek için [gslice:: gslice](../standard-library/gslice-class.md#gslice) örneğine bakın.
+Slice_array bildirme ve kullanma hakkında bir örnek için [gslice:: gslice](../standard-library/gslice-class.md#gslice) örneğine bakın.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<valarray >
+**Üst bilgi:**\<valarray>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

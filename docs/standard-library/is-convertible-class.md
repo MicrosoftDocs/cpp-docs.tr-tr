@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_convertible sınıfı'
 title: is_convertible Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_convertible class
 - is_convertible
 ms.assetid: 75614008-1894-42ea-bd57-974399628536
-ms.openlocfilehash: c90fe5687992e4df49e8655387cfdd14b40aa529
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 4f5c9413eb33dd38d68929fe6b92f4581eced521
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454618"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231205"
 ---
-# <a name="isconvertible-class"></a>is_convertible Sınıfı
+# <a name="is_convertible-class"></a>is_convertible Sınıfı
 
 Bir tür diğerine dönüştürülebilir olduğunda sınar.
 
@@ -35,7 +36,7 @@ Dönüştürülecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tür koşulunun bir örneği, ifadesi `To to = from;` `from` türü `From`bir nesne ise doğru bir biçimde olduğunda true olarak tutulur.
+Tür koşulunun bir örneği, ifadesi `To to = from;` `from` türü bir nesne ise doğru bir biçimde olduğunda true olarak tutulur `From` .
 
 ## <a name="example"></a>Örnek
 
@@ -71,11 +72,11 @@ is_convertible<char, int> == true
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<type_traits >
+**Üst bilgi:**\<type_traits>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[< type_traits >](../standard-library/type-traits.md)\
-[is_base_of Sınıfı](../standard-library/is-base-of-class.md)
+[<type_traits>](../standard-library/type-traits.md)\
+[is_base_of sınıfı](../standard-library/is-base-of-class.md)

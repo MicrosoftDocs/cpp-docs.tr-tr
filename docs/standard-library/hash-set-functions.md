@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: &lt; hash_set &gt; işlevleri'
 title: '&lt;hash_set &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - hash_set/std::swap
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
-ms.openlocfilehash: 1774b0b29c7750e716f1f56def5d29ac329abec0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7040325f3af26052306b1ebd90f1919d96dcbf19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845815"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231803"
 ---
 # <a name="lthash_setgt-functions"></a>&lt;hash_set &gt; işlevleri
 
@@ -33,10 +34,10 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *Right*\
-Değiştirilecek öğeleri sağlayan hash_set veya öğeleri hash_set *kalan*değişikliklerle birlikte değiştirilecek olan hash_set.
+Değiştirilecek öğeleri sağlayan hash_set veya öğeleri hash_set *kalan* değişikliklerle birlikte değiştirilecek olan hash_set.
 
 *tarafta*\
-Öğeleri hash_set *sağdakilerle*değiş tokuş edilecek hash_set.
+Öğeleri hash_set *sağdakilerle* değiş tokuş edilecek hash_set.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -64,10 +65,10 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 ### <a name="parameters"></a>Parametreler
 
 *Right*\
-Değiştirilecek öğeleri sağlayan hash_multiset veya öğeleri hash_multiset *kalan*değişikliklerle birlikte değiştirilecek olan hash_multiset.
+Değiştirilecek öğeleri sağlayan hash_multiset veya öğeleri hash_multiset *kalan* değişikliklerle birlikte değiştirilecek olan hash_multiset.
 
 *tarafta*\
-Öğeleri hash_multiset *sağdakilerle*değiş tokuş edilecek hash_multiset.
+Öğeleri hash_multiset *sağdakilerle* değiş tokuş edilecek hash_multiset.
 
 ### <a name="remarks"></a>Açıklamalar
 

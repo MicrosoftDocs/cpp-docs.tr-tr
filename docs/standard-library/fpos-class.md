@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: fpos sınıfı'
 title: fpos Sınıfı
 ms.date: 03/27/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - std::fpos [C++], seekpos
 - std::fpos [C++], state
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
-ms.openlocfilehash: 37536443455ca4ddc40568e15951b814982d4ad9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 22b9a5e69b179ef4206a0664b51b92cc55d4320d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232336"
 ---
 # <a name="fpos-class"></a>fpos Sınıfı
 
@@ -28,7 +29,7 @@ Sınıf şablonu, herhangi bir akışta rastgele bir dosya konumu göstergesini 
 
 Ayrıca, türü [basic_filebuf](../standard-library/basic-filebuf-class.md)bir nesne tarafından kullanılmak üzere rastgele bir dosya konumunu da depolayabilirler `fpos_t` . Ancak, sınırlı dosya boyutu olan bir ortam için `streamoff` ve `fpos_t` bazen birbirlerinin yerine kullanılabilir. Duruma bağlı bir kodlamalı akış içermeyen bir ortam için `mbstate_t` gerçekten kullanılmıyor olabilir. Bu nedenle, depolanan üye nesnelerinin sayısı farklılık gösterebilir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Statetype>
@@ -71,7 +72,7 @@ Durum bilgileri.
 
 **Ad alanı:** std
 
-## <a name="fposfpos"></a><a name="fpos"></a>fpos:: fpos
+## <a name="fposfpos"></a><a name="fpos"></a> fpos:: fpos
 
 Akıştaki bir konum (konum) hakkında bilgi içeren bir nesne oluşturun.
 
@@ -94,11 +95,11 @@ Akışa yönelik konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk Oluşturucu, dosyanın başlangıcına ve ilk dönüştürme durumunda (önemli olursa) göreli *_Off*uzaklıkları depolar. *_Off* -1 ise, elde edilen nesne geçersiz bir akış konumunu temsil eder.
+İlk Oluşturucu, dosyanın başlangıcına ve ilk dönüştürme durumunda (önemli olursa) göreli *_Off* uzaklıkları depolar. *_Off* -1 ise, elde edilen nesne geçersiz bir akış konumunu temsil eder.
 
-İkinci oluşturucu sıfır bir konum ve nesne *_State*depolar.
+İkinci oluşturucu sıfır bir konum ve nesne *_State* depolar.
 
-## <a name="fposoperator"></a><a name="op_neq"></a>fpos:: operator! =
+## <a name="fposoperator"></a><a name="op_neq"></a> fpos:: operator! =
 
 Eşitsizlik için dosya konumu göstergelerini sınar.
 
@@ -171,7 +172,7 @@ int main( )
 }
 ```
 
-## <a name="fposoperator"></a><a name="op_add"></a>fpos:: operator +
+## <a name="fposoperator"></a><a name="op_add"></a> fpos:: operator +
 
 Bir dosya konumu göstergesini arttırır.
 
@@ -196,7 +197,7 @@ Dosyadaki konum.
 
 Bir örneği için bkz. [operator! =](#op_neq) `operator+` .
 
-## <a name="fposoperator"></a><a name="op_add_eq"></a>fpos:: operator + =
+## <a name="fposoperator"></a><a name="op_add_eq"></a> fpos:: operator + =
 
 Bir dosya konumu göstergesini arttırır.
 
@@ -215,13 +216,13 @@ Dosyadaki konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, depolanan fark üye nesnesine *_Off* ekler ve ** \* bunu**döndürür. Bir dosya içinde konumlandırma için, sonuç genellikle yalnızca durum bağımlı kodlamalı olmayan ikili akışlar için geçerlidir.
+Üye işlevi, depolanan fark üye nesnesine *_Off* ekler ve **\* bunu** döndürür. Bir dosya içinde konumlandırma için, sonuç genellikle yalnızca durum bağımlı kodlamalı olmayan ikili akışlar için geçerlidir.
 
 ### <a name="example"></a>Örnek
 
 Bir örneği için bkz. [operator! =](#op_neq) `operator+=` .
 
-## <a name="fposoperator-"></a><a name="operator-"></a>fpos:: operator-
+## <a name="fposoperator-"></a><a name="operator-"></a> fpos:: operator-
 
 Bir dosya konumu göstergesini azaltır.
 
@@ -247,7 +248,7 @@ Akış boşluğu.
 
 Bir örneği için bkz. [operator! =](#op_neq) `operator-` .
 
-## <a name="fposoperator-"></a><a name="operator-_eq"></a>fpos:: operator-=
+## <a name="fposoperator-"></a><a name="operator-_eq"></a> fpos:: operator-=
 
 Bir dosya konumu göstergesini azaltır.
 
@@ -272,7 +273,7 @@ Bir dosya içinde konumlandırma için, sonuç genellikle yalnızca durum bağı
 
 Bir örneği için bkz. [operator! =](#op_neq) `operator-=` .
 
-## <a name="fposoperator"></a><a name="op_eq_eq"></a>fpos:: operator = =
+## <a name="fposoperator"></a><a name="op_eq_eq"></a> fpos:: operator = =
 
 Eşitlik için dosya konumu göstergelerini sınar.
 
@@ -297,7 +298,7 @@ Karşılaştırılacak dosya konumu göstergesi.
 
 Bir örneği için bkz. [operator! =](#op_neq) `operator+=` .
 
-## <a name="fposoperator-streamoff"></a><a name="op_streamoff"></a>fpos:: operator streamoff
+## <a name="fposoperator-streamoff"></a><a name="op_streamoff"></a> fpos:: operator streamoff
 
 Türündeki nesne türü nesne türüne dönüştürüldü `fpos` `streamoff` .
 
@@ -336,7 +337,7 @@ int main( )
 0
 ```
 
-## <a name="fposseekpos"></a><a name="seekpos"></a>fpos:: seekpos
+## <a name="fposseekpos"></a><a name="seekpos"></a> fpos:: seekpos
 
 Bu yöntem yalnızca C++ standart kitaplığı tarafından dahili olarak kullanılır. Bu yöntemi kodınızdan çağırmayın.
 
@@ -344,7 +345,7 @@ Bu yöntem yalnızca C++ standart kitaplığı tarafından dahili olarak kullan�
 fpos_t seekpos() const;
 ```
 
-## <a name="fposstate"></a><a name="state"></a>fpos:: State
+## <a name="fposstate"></a><a name="state"></a> fpos:: State
 
 Dönüştürme durumunu ayarlar veya döndürür.
 

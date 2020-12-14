@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: işlev sınıfı'
 title: function Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,18 +19,18 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-ms.openlocfilehash: 052cbba69aa99d33de963a3e360e6951a6006bec
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 30e81e297791691ba5736b4e116fc08ab4229f0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232180"
 ---
 # <a name="function-class"></a>function Sınıfı
 
 Çağrılabilir bir nesne için sarmalayıcı.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Fty>
@@ -163,7 +164,7 @@ Ayırıcı nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevlerinin her biri `callable object` , tarafından tutulan tarafından **`*this`** , olarak geçirilen çağrılabilir nesne ile değiştirilir `operand` . Her ikisi de, *AX*ayırıcı nesnesi ile depolama ayırır.
+Üye işlevlerinin her biri `callable object` , tarafından tutulan tarafından **`*this`** , olarak geçirilen çağrılabilir nesne ile değiştirilir `operand` . Her ikisi de, *AX* ayırıcı nesnesi ile depolama ayırır.
 
 ## <a name="function"></a><a name="function"></a> işlevi
 
@@ -514,7 +515,7 @@ void swap(function& right);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki hedef nesneleri **`*this`** değiştirir *right*. Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz.
+Üye işlevi, ve sağ arasındaki hedef nesneleri **`*this`** değiştirir . Bu, sabit zamanlı olarak yapar ve özel durum oluşturmaz.
 
 ### <a name="example"></a>Örnek
 

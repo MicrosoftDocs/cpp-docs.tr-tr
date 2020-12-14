@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; işlevsel&gt;'
 title: '&lt;işlevli&gt;'
 ms.date: 02/21/2019
 f1_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - functors
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-ms.openlocfilehash: 9f1eaf69f49a449877b9013dca62ab49cb8a5b48
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a13ddeb7bdb45b02bb8b35052e34a3b9601c6fec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232154"
 ---
 # <a name="ltfunctionalgt"></a>&lt;işlevli&gt;
 
-*İşlev nesnelerinin*ve bunların ciltlerini oluşturmaya yardımcı olan C++ standart kitaplığı işlevlerini tanımlar *functors*. İşlev nesnesi, tanımlayan bir türün nesnesidir `operator()` . Bir işlev nesnesi bir işlev işaretçisi olabilir, ancak genellikle nesne, bir işlev çağrısı sırasında erişilebilen ek bilgileri depolamak için kullanılır.
+*İşlev nesnelerinin* ve bunların ciltlerini oluşturmaya yardımcı olan C++ standart kitaplığı işlevlerini tanımlar . İşlev nesnesi, tanımlayan bir türün nesnesidir `operator()` . Bir işlev nesnesi bir işlev işaretçisi olabilir, ancak genellikle nesne, bir işlev çağrısı sırasında erişilebilen ek bilgileri depolamak için kullanılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -30,7 +31,7 @@ ms.locfileid: "88838054"
 
 Algoritmalar iki tür işlev nesnesi gerektirir: *birli* ve *ikili*. Birli işlev nesneleri bir bağımsız değişken gerektirir ve ikili işlev nesneleri iki bağımsız değişken gerektirir. Bir işlev nesnesi ve işlev işaretçileri bir algoritmaya bir koşul olarak geçirilebilir, ancak işlev nesneleri de uyarlanabilir ve C++ standart kitaplığının kapsamını, esnekliğini ve verimliliğini artırır. Örneğin, bir algoritmaya geçirilmeden önce bir işleve bağlanması gereken bir değer varsa, bir işlev işaretçisi kullanılamadı. İşlev bağdaştırıcıları, işlev işaretçilerini bir değere bağlanabilen, uyarlanamaz işlev nesnelerine dönüştürür. Üst bilgi \<functional> Ayrıca üye işlevlerinin uyarlanabilir tablo işlevi nesneleri olarak çağrılmasına izin veren üye işlev bağdaştırıcılarını içerir. Bağımsız değişkenleri ve dönüş türlerini belirten iç içe tür bildirimlerine sahip olmaları durumunda işlevler uyarlanabilir. İşlev nesneleri ve bağdaştırıcıları, C++ standart kitaplığının mevcut uygulamaları yükseltmesine ve kitaplığı C++ programlama ortamıyla tümleştirmesine yardımcı olur.
 
-İçindeki işlev nesnelerinin uygulanması \<functional> *saydam işleç komik*içerir. Standart işlev nesnelerinin özelleştirilmesi ve hiçbir şablon parametresi almaz ve işlev bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini ve sonucun tam bir döndürmesini gerçekleştirir. Bu şablon Uzmanlıkları aritmetik, karşılaştırma, mantıksal ve bit düzeyinde işleç özelliklerini çağırdığınızda bağımsız değişken türlerini belirtmenizi gerektirmez. Kendi türlerinizin aritmetik, karşılaştırma, mantıksal veya bit düzeyinde operatörlerini aşırı yükleyebilir veya türlerin heterojen bileşimleri için, daha sonra saydam işleç işlevlerini işlev bağımsız değişkeni olarak kullanabilirsiniz. Örneğin, *MyType* türü uygularsa `operator<` , `sort(my_collection.begin(), my_collection.end(), less<>())` türü açıkça belirtmek yerine çağrı yapabilirsiniz `sort(my_collection.begin(), my_collection.end(), less<MyType>())` .
+İçindeki işlev nesnelerinin uygulanması \<functional> *saydam işleç komik* içerir. Standart işlev nesnelerinin özelleştirilmesi ve hiçbir şablon parametresi almaz ve işlev bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini ve sonucun tam bir döndürmesini gerçekleştirir. Bu şablon Uzmanlıkları aritmetik, karşılaştırma, mantıksal ve bit düzeyinde işleç özelliklerini çağırdığınızda bağımsız değişken türlerini belirtmenizi gerektirmez. Kendi türlerinizin aritmetik, karşılaştırma, mantıksal veya bit düzeyinde operatörlerini aşırı yükleyebilir veya türlerin heterojen bileşimleri için, daha sonra saydam işleç işlevlerini işlev bağımsız değişkeni olarak kullanabilirsiniz. Örneğin, *MyType* türü uygularsa `operator<` , `sort(my_collection.begin(), my_collection.end(), less<>())` türü açıkça belirtmek yerine çağrı yapabilirsiniz `sort(my_collection.begin(), my_collection.end(), less<MyType>())` .
 
 Aşağıdaki özellikler C++ 11, C++ 14 ve C++ 17 ' ye eklenmiştir:
 
@@ -60,7 +61,7 @@ Sözde işlev `INVOKE(f, t1, t2, ..., tN)` aşağıdaki işlemlerden birini gös
 
 Sözde işlev `INVOKE(f, t1, t2, ..., tN, R)` `INVOKE(f, t1, t2, ..., tN)` örtük olarak öğesine dönüştürülür anlamına gelir `R` .
 
-Bir çağrı sarmalayıcısı *zayıf bir sonuç türüne*sahipse, üye türünün türü `result_type` `T` sarmalayıcının hedef nesnesinin türünü aşağıdaki gibi temel alır:
+Bir çağrı sarmalayıcısı *zayıf bir sonuç türüne* sahipse, üye türünün türü `result_type` `T` sarmalayıcının hedef nesnesinin türünü aşağıdaki gibi temel alır:
 
 - `T`İşlev işaretçisiyse, `result_type` dönüş türünün bir eşanlamlısıdır `T` .
 
@@ -151,7 +152,7 @@ Her çağrı sarmalayıcısı bir taşıma Oluşturucusu ve bir kopya Oluşturuc
 
 |Ad|Açıklama|
 |-|-|
-|[_1.. _M](../standard-library/1-object.md)|Değiştirilebilen bağımsız değişkenler için yer tutucular.|
+|[_1.._M](../standard-library/1-object.md)|Değiştirilebilen bağımsız değişkenler için yer tutucular.|
 
 ### <a name="operators"></a>İşleçler
 

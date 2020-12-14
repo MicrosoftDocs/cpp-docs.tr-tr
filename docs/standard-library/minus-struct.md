@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: eksi struct'
 title: minus Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - minus struct
 - minus class
 ms.assetid: 7bce784e-2be6-413a-b516-004e9ecb2a39
-ms.openlocfilehash: e57023c78f944a038e94d851abdbf7909545295c
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fe9fb343a49fb8097322b687326d3c986ba25ee5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230503"
 ---
 # <a name="minus-struct"></a>minus Yapısı
 
-Çıkarma işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (ikili `operator-`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde çıkarma işlemini (ikili) gerçekleştiren önceden tanımlanmış bir işlev nesnesi `operator-` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,17 +41,17 @@ struct minus<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Bir ikili destekleyen bir türü `operator-` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator-`Belirtilen veya çıkartılan türlerin işlenenlerini alan ikiliyi destekleyen bir tür.
 
-*Sol*\
-İşlemi sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+İşlemin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-İşlemin sağ işlenen. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+İşlemin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left - Right`. Özelleşmiş şablon türü tarafından döndürülen sonuç iletilmesini mükemmel `operator-`.
+Sonucu `Left - Right` . Özel şablon, sonucu tarafından döndürülen türü içeren kusursuz bir iletme işlemi yapar `operator-` .
 
 ## <a name="example"></a>Örnek
 

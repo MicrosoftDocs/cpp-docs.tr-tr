@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: money_base sınıfı'
 title: money_base Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - money_base class
 ms.assetid: 1a303c15-9272-4f26-ae16-dcf43a0fd38a
-ms.openlocfilehash: c614832b0cbb1cc23e42ecb3a939ccf1334a5cea
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 295984cfed4d6fdd47c772e29765c1484f52d32a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230477"
 ---
 # <a name="money_base-class"></a>money_base Sınıfı
 
 Sınıfı, [moneypunct](../standard-library/moneypunct-class.md)sınıf şablonunun tüm uzmanlıklarıyla ortak bir numaralandırma ve bir yapı tanımlar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 struct pattern
@@ -28,24 +29,24 @@ struct pattern
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sabit Listesi `part` yapı deseninin dizi alanının öğelerinde olası değerleri açıklar. @No__t_0 değerleri şunlardır:
+Sabit listesi `part` Yapı deseninin dizi alanının öğelerinde olası değerleri açıklar. Değerleri `part` şunlardır:
 
-- sıfır veya daha fazla boşlukla eşleşecek veya hiçbir şey oluşturmaya `none`.
+- `none` sıfır veya daha fazla boşluğu eşleştirmek veya hiçbir şey oluşturmak için.
 
-- `sign` pozitif veya negatif bir işaret ile eşleşecek veya oluşturulacak.
+- `sign` pozitif veya negatif bir işareti eşlemek veya oluşturmak için.
 
-- sıfır veya daha fazla boşlukla eşleşecek veya bir boşluk oluşturacak `space`.
+- `space` sıfır veya daha fazla boşluğu eşleştirmek veya bir boşluk oluşturmak için.
 
-- bir para birimi simgesi eşleştirmek veya oluşturmak için `symbol`.
+- `symbol` bir para birimi sembolünü eşleştirmek veya oluşturmak için.
 
-- bir parasal değer eşlemek veya oluşturmak için `value`.
+- `value` bir parasal değeri eşleştirmek veya oluşturmak için.
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Üst bilgi:** \<locale >
+**Üst bilgi:**\<locale>
 
 **Ad alanı:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[C++ standart kitaplığı 'nda iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)

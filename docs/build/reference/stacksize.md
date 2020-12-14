@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: STACKSIZE'
 title: STACKSIZE
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - STACKSIZE .def file statement
 ms.assetid: 4d8c79bd-1cb4-4e4d-90f2-b5a7a4d20e7a
-ms.openlocfilehash: 2d27b4fd596098f4abc5bb0d804d87bd08f70a60
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b5d52bccc09979084b9023d380e86fe90e4def32
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230347"
 ---
 # <a name="stacksize"></a>STACKSIZE
 
-Yığın boyunu bayt cinsinden ayarlar.
+Yığının boyutunu bayt cinsinden ayarlar.
 
 ```
 STACKSIZE reserve[,commit]
@@ -23,10 +24,10 @@ STACKSIZE reserve[,commit]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yığın ayarlamak için eşdeğer bir yöntem, [yığın ayırmaları](stack-stack-allocations.md) (/ yığın) seçeneği. Hakkında ayrıntılar için bu seçeneği belgelerine bakın *rezerve* ve `commit` bağımsız değişkenler.
+Yığını ayarlamak için eşdeğer bir yol, [yığın ayırmaları](stack-stack-allocations.md) (/Stack) seçeneğidir. *Reserve* ve bağımsız değişkenler hakkında daha fazla bilgi için bu seçeneğin belgelerine bakın `commit` .
 
-Bu seçenek DLL'ler üzerinde etkisi yoktur.
+Bu seçeneğin dll 'Ler üzerinde hiçbir etkisi yoktur.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül Tanımlama Deyimleri Kuralları](rules-for-module-definition-statements.md)
+[Module-Definition deyimleri için kurallar](rules-for-module-definition-statements.md)

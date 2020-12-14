@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: forward_list sınıfı'
 title: forward_list Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -79,18 +80,18 @@ helpviewer_keywords:
 - std::forward_list::splice_after
 - std::forward_list::swap
 - std::forward_list::unique
-ms.openlocfilehash: 16471f0986d58e38fed436b2921ce3f8a3e89325
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3d9cb038123b093f81f5eb4fca49db77885ff1d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232414"
 ---
 # <a name="forward_list-class"></a>forward_list Sınıfı
 
 Değişen uzunluklu öğe dizisini denetleyen bir nesne tanımlar. Dizi, her biri türünün bir üyesini içeren, listedir bağlantılı düğümlerin bir listesi olarak depolanır `Type` .
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Type,
@@ -170,7 +171,7 @@ Denetlenen dizi eklemeleri, oluşturucuyu çağıran tek üye işlevi olan [forw
 |[düzenine](#sort)|Öğeleri artan düzende veya bir koşul tarafından belirtilen bir sırayla düzenler.|
 |[splice_after](#splice_after)|Düğümler arasındaki bağlantıları yeniden bağlar.|
 |[Kur](#swap)|İki ileri listenin öğelerini değiş tokuş eder.|
-|[unique](#unique)|Belirtilen testi geçiren bitişik öğeleri kaldırır.|
+|[eşi](#unique)|Belirtilen testi geçiren bitişik öğeleri kaldırır.|
 
 ### <a name="operators"></a>İşleçler
 
@@ -484,7 +485,7 @@ Kaldırılan tüm öğelerin ötesinde kalan ilk öğeyi atayan bir yineleyici v
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi, denetimli dizinin öğesini *nerede*sonra kaldırır.
+İlk üye işlevi, denetimli dizinin öğesini *nerede* sonra kaldırır.
 
 İkinci üye işlevi, aralıktaki denetimli sıranın öğelerini kaldırır `( first,  last)` (bitiş noktası dahil değildir).
 
@@ -538,7 +539,7 @@ Kopyalanacak initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Tüm oluşturucular bir [ayırıcıyı](../standard-library/allocator-class.md) depolar ve denetimli sırayı başlatır. Ayırıcı nesnesi varsa, *Al*bağımsız değişkenidir. Kopya Oluşturucu için, `right.get_allocator()` . Aksi takdirde, `Allocator()` .
+Tüm oluşturucular bir [ayırıcıyı](../standard-library/allocator-class.md) depolar ve denetimli sırayı başlatır. Ayırıcı nesnesi varsa, *Al* bağımsız değişkenidir. Kopya Oluşturucu için, `right.get_allocator()` . Aksi takdirde, `Allocator()` .
 
 İlk iki Oluşturucu boş bir ilk denetimli sıra belirtir.
 
@@ -546,7 +547,7 @@ Tüm oluşturucular bir [ayırıcıyı](../standard-library/allocator-class.md) 
 
 Dördüncü ve beşinci oluşturucular, değer *Val* *Count* öğelerinin bir tekrarını belirtir.
 
-Altıncı Oluşturucu *sağ*tarafından denetlenen sıranın bir kopyasını belirtir. `InputIterator`Bir tamsayı türü ise, sonraki iki Oluşturucu değer öğelerinin tekrarlarını belirtir `(size_type)First` `(Type)Last` . Aksi halde, sonraki iki Oluşturucu sırayı belirtir `[First, Last)` .
+Altıncı Oluşturucu *sağ* tarafından denetlenen sıranın bir kopyasını belirtir. `InputIterator`Bir tamsayı türü ise, sonraki iki Oluşturucu değer öğelerinin tekrarlarını belirtir `(size_type)First` `(Type)Last` . Aksi halde, sonraki iki Oluşturucu sırayı belirtir `[First, Last)` .
 
 Dokuzuncu ve onuncu oluşturucular, altıncı ile aynı, ancak [rvalue](../cpp/rvalue-reference-declarator-amp-amp.md) başvurusuyla aynıdır.
 
@@ -706,7 +707,7 @@ Türü bir dizi öğe gibi davranan, küme ayracı içine alınmış Başlatıc�
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işleci denetimli diziyi, *sağdan*denetlenen sıranın bir kopyasıyla değiştirir.
+İlk üye işleci denetimli diziyi, *sağdan* denetlenen sıranın bir kopyasıyla değiştirir.
 
 İkinci üye işleci, denetlenen sıranın sınıfının bir nesnesinden yerini alır `initializer_list<Type>` .
 
@@ -818,7 +819,7 @@ Doldurma için kullanılacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevleri her ikisi de listedeki öğelerin sayısının *_Newsize*olduğundan emin olur. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri olan öğeleri ekler `Type()` ; İkinci üye işlevi ise değer *Val*ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi etkin şekilde çağrı yapar `erase_after(begin() + _Newsize - 1, end())` .
+Üye işlevleri her ikisi de listedeki öğelerin sayısının *_Newsize* olduğundan emin olur. Denetlenen diziyi daha uzun hale getirmek gerekiyorsa, ilk üye işlevi değeri olan öğeleri ekler `Type()` ; İkinci üye işlevi ise değer *Val* ile öğeleri ekler. Denetimli diziyi daha kısa hale getirmek için, her iki üye işlevi etkin şekilde çağrı yapar `erase_after(begin() + _Newsize - 1, end())` .
 
 ## <a name="reverse"></a><a name="reverse"></a> tersini
 
@@ -909,11 +910,11 @@ Kaynak forward_list eklenecek aralığın ötesindeki ilk konum.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk üye işlevi çifti, kaynağa göre denetlenen sıradaki öğeden hemen sonra *kaynak* tarafından denetlenen sırayı *ekler.* Ayrıca *kaynaktaki*tüm öğeleri kaldırır. ( `&Source` eşit olmamalı **`this`** .)
+İlk üye işlevi çifti, kaynağa göre denetlenen sıradaki öğeden hemen sonra *kaynak* tarafından denetlenen sırayı *ekler.* Ayrıca *kaynaktaki* tüm öğeleri kaldırır. ( `&Source` eşit olmamalı **`this`** .)
 
-Üye işlevlerinin ikinci çifti, *kaynak* tarafından denetlenen sıranın *hemen sonrasında öğesini* kaldırır ve bunu, denetimli dizideki öğeden hemen sonra, *burada*ekler. (Varsa `Where == Iter || Where == ++Iter` , hiçbir değişiklik gerçekleşmez.)
+Üye işlevlerinin ikinci çifti, *kaynak* tarafından denetlenen sıranın *hemen sonrasında öğesini* kaldırır ve bunu, denetimli dizideki öğeden hemen sonra, *burada* ekler. (Varsa `Where == Iter || Where == ++Iter` , hiçbir değişiklik gerçekleşmez.)
 
-Üçüncü üye işlevleri çifti (rantedsplice), `(First, Last)` *kaynak* tarafından denetlenen *sıra tarafından*, denetimli dizideki öğeden hemen sonra gelen alt aralığı içine ekler. Ayrıca özgün alt aralığı *kaynağa*göre denetlenen sıraya göre kaldırır. (IF ise `&Source == this` , Aralık `(First, Last)` tarafından işaret edilen öğeyi içermemelidir.) *Where*
+Üçüncü üye işlevleri çifti (rantedsplice), `(First, Last)` *kaynak* tarafından denetlenen *sıra tarafından*, denetimli dizideki öğeden hemen sonra gelen alt aralığı içine ekler. Ayrıca özgün alt aralığı *kaynağa* göre denetlenen sıraya göre kaldırır. (IF ise `&Source == this` , Aralık `(First, Last)` tarafından işaret edilen öğeyi içermemelidir.) 
 
 Ranşlı splice `N` öğeleri ekler ve `&Source != this` sınıf [Yineleyici](#iterator) bir nesne artırılır `N` .
 
@@ -1007,7 +1008,7 @@ Değiş tokuş edilecek öğeleri sağlayan ileri liste.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir *right*. Bunu `get_allocator() ==  right.get_allocator()` sabit zamanlı olarak yapar, özel durum oluşturmaz ve iki denetimli sırada öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
+Üye işlevi, ve sağ arasındaki denetlenen dizileri **`*this`** değiştirir . Bunu `get_allocator() ==  right.get_allocator()` sabit zamanlı olarak yapar, özel durum oluşturmaz ve iki denetimli sırada öğeleri belirten hiçbir başvuru, işaretçi veya yineleyiciyi geçersiz kılar. Aksi takdirde, bir dizi öğe ataması ve Oluşturucu çağrısı, iki denetimli dizi içindeki öğe sayısıyla orantılı olarak gerçekleştirilir.
 
 ## <a name="unique"></a><a name="unique"></a> eşi
 

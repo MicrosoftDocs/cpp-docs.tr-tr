@@ -1,17 +1,18 @@
 ---
+description: 'Daha fazla bilgi edinin: yapı ve sabit tanımlar'
 title: Yapı ve Sabit Tanımları
 ms.date: 11/04/2016
 ms.assetid: 1df7cf46-b853-4788-a257-100d5c37997f
-ms.openlocfilehash: ea7aa1ec25bcd0e8531ef63848de26da164da668
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5a9e372815e25883cf69497c77388002a7015572
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317867"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230334"
 ---
 # <a name="structure-and-constant-definitions"></a>Yapı ve Sabit Tanımları
 
-Varsayılan Yardımcısı yordamı çeşitli yapılar sırasında özel durumların kanca işlevlerini Raporlama ile iletişim kurmak için kullanır. Bildirim ve hata değerlerini, bilgi yapıları ve kancaları için geçirilen işlevi kanca işaretçi türü şunlardır:
+Varsayılan yardımcı yordam, kanca işlevleriyle ve özel durumlar sırasında iletişim kurmak için çeşitli yapılar kullanır. Bu, kanca 'e geçilen bildirim ve hata değerleri, bilgi yapıları ve kanca-işlev türü olarak verilmiştir:
 
 ```
 //
@@ -71,4 +72,4 @@ typedef struct ImgDelayDescr {
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yardımcı İşlevini Anlama](understanding-the-helper-function.md)
+[Yardımcı Işlevini anlama](understanding-the-helper-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: hash_multiset sınıfı'
 title: hash_multiset Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -86,12 +87,12 @@ helpviewer_keywords:
 - stdext::hash_multiset::upper_bound
 - stdext::hash_multiset::value_comp
 ms.assetid: 0580397a-a76e-40ad-aea2-5c6f3a9d0a21
-ms.openlocfilehash: d4722a9c535207b21098db4e33810340d99e6b6a
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 567eef22098b99cf3a3109bfd911ecbcd518876b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231816"
 ---
 # <a name="hash_multiset-class"></a>hash_multiset Sınıfı
 
@@ -100,7 +101,7 @@ ms.locfileid: "88561446"
 
 Kapsayıcı sınıfı hash_multiset, C++ standart kitaplığı 'nın bir uzantısıdır ve içinde bulunan öğelerin değerlerinin anahtar değerler olarak çalıştığı ve benzersiz olması gerekmediği bir koleksiyondaki verilerin depolanması ve hızlı bir şekilde alınması için kullanılır.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class Key, class Traits =hash_compare<Key, less <Key>>, class Allocator =allocator <Key>>
@@ -189,7 +190,7 @@ Hash_multiset sınıfı tarafından verilen yineleyici çift yönlü bir yineley
 |[erer](#end)|İçindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür `hash_multiset` .|
 |[equal_range](#equal_range)|`hash_multiset`Belirtilen anahtardan daha büyük bir anahtarla ve anahtarından bir anahtarla `hash_multiset` eşit veya ondan daha büyük olan bir anahtarla ilk öğesine kadar yineleyicilerin bir çiftini döndürür.|
 |[silme](#erase)|Belirtilen konumlardan bir öğeyi veya öğe aralığını kaldırır `hash_multiset` veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|
-|[find](#find)|İçindeki bir öğenin `hash_multiset` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
+|[bilgi](#find)|İçindeki bir öğenin `hash_multiset` belirtilen anahtara denk eşdeğeri olan konumunu ele alan bir yineleyici döndürür.|
 |[get_allocator](#get_allocator)|`allocator`Oluşturmak için kullanılan nesnenin bir kopyasını döndürür `hash_multiset` .|
 |[ekleyin](#insert)|İçine bir öğe veya öğe aralığı ekler `hash_multiset` .|
 |[key_comp](#key_compare)|İçindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır `hash_multiset` .|
@@ -848,7 +849,7 @@ iterator insert(
 Zaten bu öğeyi veya daha genel bir öğeyi içermiyorsa, bu öğe için [hash_multiset](../standard-library/hash-multiset-class.md) eklenecek öğenin değeri, `hash_multiset` anahtarı equivalently sıralı bir öğe.
 
 *olmadığı*\
-Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *nerede*olursa, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak bir araya gelebilir.)
+Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *nerede* olursa, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak bir araya gelebilir.)
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -856,7 +857,7 @@ Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *nerede*
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekleme noktası *nerede*olursa, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak ortaya çıkabilir.
+Ekleme noktası *nerede* olursa, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak ortaya çıkabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -1493,7 +1494,7 @@ iterator insert(
 Hash_multiset zaten bu öğeyi veya daha genel bir öğeyi içermiyorsa, bu öğe hash_multiset Eklenecek öğenin değeri.
 
 *olmadığı*\
-Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *nerede*olursa, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak bir araya gelebilir.)
+Doğru ekleme noktasını aramaya başlamak için yer. (Ekleme noktası *nerede* olursa, ekleme noktası, logaritmik bir süre yerine, sabit zamanlı olarak bir araya gelebilir.)
 
 *adı*\
 Hash_multiset kopyalanacak ilk öğenin konumu.
@@ -1514,7 +1515,7 @@ Sonraki üç üye işlevi bir initializer_list kullanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekleme noktası *nerede*olursa, ekleme noktası, Logaritmik süre yerine, ekleme işleminin ipucu sürümü için sabit zamanlı olarak ekleme yapılabilir.
+Ekleme noktası *nerede* olursa, ekleme noktası, Logaritmik süre yerine, ekleme işleminin ipucu sürümü için sabit zamanlı olarak ekleme yapılabilir.
 
 ## <a name="hash_multisetiterator"></a><a name="iterator"></a> hash_multiset:: Yineleyici
 
@@ -1548,7 +1549,7 @@ key_compare key_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karma ve kapsayıcının öğelerini sıralamak için kullanılan işlev nesnelerini içeren hash_multiset şablon parametresi *nitelikleri*döndürür.
+Karma ve kapsayıcının öğelerini sıralamak için kullanılan işlev nesnelerini içeren hash_multiset şablon parametresi *nitelikleri* döndürür.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konusuna bakın.
 
@@ -1560,7 +1561,7 @@ Saklı nesne bir üye işlevi tanımlar:
 
 Bu, **`true`** `_xVal` önceki ve sıralama düzeninde eşit değilse döndürür `_yVal` .
 
-Hem [key_compare](#key_compare) hem de [value_compare](#value_compare) şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_multiset ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem [key_compare](#key_compare) hem de [value_compare](#value_compare) şablon parametresi *nitelikleri* için eş anlamlı olduğunu unutmayın. Her iki tür de hash_multiset ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 
@@ -1624,11 +1625,11 @@ typedef Traits key_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_compare` , şablon parametresi *nitelikleri*için bir eş anlamlı.
+`key_compare` , şablon parametresi *nitelikleri* için bir eş anlamlı.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konusuna bakın.
 
-Hem hem de `key_compare` value_compare şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem hem de `key_compare` value_compare şablon parametresi *nitelikleri* için eş anlamlı olduğunu unutmayın. Her iki tür de hash_set ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 
@@ -1647,11 +1648,11 @@ typedef Key key_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`key_type` , şablon parametre *anahtarı*için bir eş anlamlı.
+`key_type` , şablon parametre *anahtarı* için bir eş anlamlı.
 
-Hem hem de `key_type` [value_type](../standard-library/hash-set-class.md#value_type) şablon parametresi *anahtarı*için eş anlamlı olduğunu unutmayın. Her iki tür de, farklı oldukları, eşleme ve multimap sınıfları ile uyumluluk için, aynı oldukları küme ve çoklu küme sınıfları için sağlanır.
+Hem hem de `key_type` [value_type](../standard-library/hash-set-class.md#value_type) şablon parametresi *anahtarı* için eş anlamlı olduğunu unutmayın. Her iki tür de, farklı oldukları, eşleme ve multimap sınıfları ile uyumluluk için, aynı oldukları küme ve çoklu küme sınıfları için sağlanır.
 
-*Anahtar*hakkında daha fazla bilgi Için [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konusunun açıklamalar bölümüne bakın.
+*Anahtar* hakkında daha fazla bilgi Için [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konusunun açıklamalar bölümüne bakın.
 
 ### <a name="example"></a>Örnek
 
@@ -2306,7 +2307,7 @@ value_compare value_comp() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Karma ve kapsayıcının öğelerini sıralamak için kullanılan işlev nesnelerini içeren hash_multiset şablon parametresi *nitelikleri*döndürür.
+Karma ve kapsayıcının öğelerini sıralamak için kullanılan işlev nesnelerini içeren hash_multiset şablon parametresi *nitelikleri* döndürür.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konusuna bakın.
 
@@ -2318,7 +2319,7 @@ Saklı nesne bir üye işlevi tanımlar:
 
 Bu, **`true`** `_xVal` önceki ve sıralama düzeninde eşit değilse döndürür `_yVal` .
 
-Hem [key_compare](#key_compare) hem de [value_compare](#value_compare) şablon parametresi *nitelikleri*için eş anlamlı olduğunu unutmayın. Her iki tür de hash_multiset ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
+Hem [key_compare](#key_compare) hem de [value_compare](#value_compare) şablon parametresi *nitelikleri* için eş anlamlı olduğunu unutmayın. Her iki tür de hash_multiset ve hash_multiset sınıfları için sağlanır ve bunlar birbirinden farklı oldukları hash_map ve hash_multimap sınıflarıyla uyumluluk içindir.
 
 ### <a name="example"></a>Örnek
 
@@ -2387,11 +2388,11 @@ typedef key_compare value_compare;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_compare` , şablon parametresi *nitelikleri*için bir eş anlamlı.
+`value_compare` , şablon parametresi *nitelikleri* için bir eş anlamlı.
 
 *Nitelikler* hakkında daha fazla bilgi Için [hash_multiset sınıfı](../standard-library/hash-multiset-class.md) konusuna bakın.
 
-Hem [key_compare](#key_compare) hem de `value_compare` şablon parametresi *nitelikleri*için eş anlamlıların olduğunu unutmayın. Her iki tür de, sınıfları ve çoklu küme için, her ikisi de birbirinden farklı oldukları sınıflar haritalarının ve multimap ile uyumluluk için sağlanır.
+Hem [key_compare](#key_compare) hem de `value_compare` şablon parametresi *nitelikleri* için eş anlamlıların olduğunu unutmayın. Her iki tür de, sınıfları ve çoklu küme için, her ikisi de birbirinden farklı oldukları sınıflar haritalarının ve multimap ile uyumluluk için sağlanır.
 
 ### <a name="example"></a>Örnek
 

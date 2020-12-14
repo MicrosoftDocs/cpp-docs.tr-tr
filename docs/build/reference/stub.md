@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: saplama'
 title: STUB
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - STUB .def file statement
 ms.assetid: 0a3b9643-19ed-47e9-8173-ee16bc8ed056
-ms.openlocfilehash: 5224fdaa2a03dc615c9e7e7bb7f7ba822a40807e
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 79a2002c119bf211652e2aab51d9656b36e3d159
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230295"
 ---
 # <a name="stub"></a>STUB
 
-Sanal cihaz sürücüsü (VxD) oluşturan bir modül tanım dosyası içinde kullanıldığında (WINNT içinde tanımlanan. bir IMAGE_DOS_HEADER yapı içeren bir dosya adı belirtmenizi sağlar H) sanal cihaz sürücüsü (VxD) yerine varsayılan başlık kullanılacak.
+Bir sanal cihaz sürücüsü (VxD) oluşturan bir modül tanımı dosyasında kullanıldığında, IMAGE_DOS_HEADER yapısını içeren bir dosya adı belirtmenize olanak tanır (WINNT içinde tanımlanmıştır). H) varsayılan üst bilgi yerine sanal cihaz sürücüsünde (VxD) kullanılacak.
 
 ```
 STUB:filename
@@ -23,10 +24,10 @@ STUB:filename
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirtmek için bir eşdeğer yol *filename* ile [/SAPLAMA](stub-ms-dos-stub-file-name.md) bağlayıcı seçeneği.
+*Dosya adını* belirtmenin eşdeğer bir yolu, [/Stub](stub-ms-dos-stub-file-name.md) bağlayıcı seçeneğidir.
 
-SAPLAMA modül tanım dosyası içinde yalnızca bir VxD derlerken geçerlidir.
+SAPLAMA yalnızca bir VxD oluşturulurken modül tanımı dosyasında geçerlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Modül Tanımlama Deyimleri Kuralları](rules-for-module-definition-statements.md)
+[Module-Definition deyimleri için kurallar](rules-for-module-definition-statements.md)

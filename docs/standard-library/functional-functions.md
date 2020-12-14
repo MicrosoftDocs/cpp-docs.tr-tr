@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; işlevsel &gt; işlevler'
 title: '&lt;işlevsel &gt; işlevler'
 ms.date: 02/21/2019
 f1_keywords:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - std::bit_xor [C++]
 - std::cref [C++]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
-ms.openlocfilehash: 5e3aa35395c8fd5a42d7127d0b6072a3edf4ace5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f3ae9fca75801555c0341923d0fc42db94546cd1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232169"
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;işlevsel &gt; işlevler
 
@@ -171,7 +172,7 @@ Birli işlev nesnesine dönüştürülecek ikili işlev nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İkili işlev nesnesinin ilk bağımsız değişkenini *sol*değere bağlamayı sağlayan birli işlev nesnesi.
+İkili işlev nesnesinin ilk bağımsız değişkenini *sol* değere bağlamayı sağlayan birli işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -265,7 +266,7 @@ Birli işlev nesnesine dönüştürülecek ikili işlev nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Birli işlev nesnesi, ikili işlev nesnesinin ikinci bağımsız değişkenini *sağa*bağlamanın sonucu.
+Birli işlev nesnesi, ikili işlev nesnesinin ikinci bağımsız değişkenini *sağa* bağlamanın sonucu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -368,10 +369,10 @@ struct bit_and<void>
 `operator&`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
 *Tarafta*\
-Bit düzeyinde ve işlemin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
+Bit düzeyinde ve işlemin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 *Right*\
-Bit düzeyinde ve işlemin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U*için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
+Bit düzeyinde ve işlemin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -407,7 +408,7 @@ struct bit_not<void>
 Birli destekleyen bir tür `operator~` .
 
 *Right*\
-Bit düzeyinde tamamlama işleminin işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, Çıkarsanan tür *türünün*bir lvalue veya rvalue başvurusu bağımsız değişkeninin kusursuz bir şekilde iletilmesini yapar.
+Bit düzeyinde tamamlama işleminin işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, Çıkarsanan tür *türünün* bir lvalue veya rvalue başvurusu bağımsız değişkeninin kusursuz bir şekilde iletilmesini yapar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -445,10 +446,10 @@ struct bit_or<void>
 `operator|`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
 *Tarafta*\
-Bit düzeyinde OR işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
+Bit düzeyinde OR işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 *Right*\
-Bit düzeyinde veya işlemin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U*için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
+Bit düzeyinde veya işlemin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -486,10 +487,10 @@ struct bit_xor<void>
 `operator^`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
 *Tarafta*\
-Bit düzeyinde XOR işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
+Bit düzeyinde XOR işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 *Right*\
-Bit düzeyinde XOR işleminin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir*lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U*için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
+Bit düzeyinde XOR işleminin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -584,7 +585,7 @@ invoke_result_t<Callable, Args...>
 
 ### <a name="remarks"></a>Açıklamalar
 
-Parameters *bağımsız değişkenlerini*kullanarak çağrılabilir nesne *FN* çağırır. Etkin olarak, `INVOKE(std::forward<Callable>(fn), std::forward<Args>(args)...)` sözde işlevin aşağıdakilerden `INVOKE(f, t1, t2, ..., tN)` birini anlamı vardır:
+Parameters *bağımsız değişkenlerini* kullanarak çağrılabilir nesne *FN* çağırır. Etkin olarak, `INVOKE(std::forward<Callable>(fn), std::forward<Args>(args)...)` sözde işlevin aşağıdakilerden `INVOKE(f, t1, t2, ..., tN)` birini anlamı vardır:
 
 - `(t1.*f)(t2, ..., tN)``f`, sınıfının üye işlevine yönelik bir işaretçi olduğunda ve türünde bir nesne ya da `T` `t1` ya da `T` `T` öğesinden türetilmiş bir türün `T` nesnesine başvuru olan bir nesnedir. Yani, true olduğunda `std::is_base_of<T, std::decay_t<decltype(t1)>>::value` .
 
@@ -699,7 +700,7 @@ Sarmalanan işlevin dönüş türü.
 
 Döndürülen Çağrı sarmalayıcısı, ' den türetilir `std::unary_function<cv Ty*, RTy>` (ve iç içe geçmiş türü `result_type` *rty* için bir eş anlamlı ve iç içe geçmiş türü `argument_type` ), `cv Ty*` yalnızca tür *Ty* bir `cv` bağımsız değişken alan CV niteleyicisi olan üye işlev işaretçisiyse.
 
-Döndürülen Çağrı sarmalayıcısı, ' den türetilir `std::binary_function<cv Ty*, T2, RTy>` (ve iç içe türü `result_type` *rty*için bir eş anlamlı, iç içe geçmiş türü ve için eş anlamlı tür `first argument_type` ), `cv Ty*` `second argument_type` `T2` yalnızca tür *Ty* bir bağımsız değişken alan CV niteleyicisi olan bir üye işlev işaretçisiyse `cv` `T2` .
+Döndürülen Çağrı sarmalayıcısı, ' den türetilir `std::binary_function<cv Ty*, T2, RTy>` (ve iç içe türü `result_type` *rty* için bir eş anlamlı, iç içe geçmiş türü ve için eş anlamlı tür `first argument_type` ), `cv Ty*` `second argument_type` `T2` yalnızca tür *Ty* bir bağımsız değişken alan CV niteleyicisi olan bir üye işlev işaretçisiyse `cv` `T2` .
 
 ### <a name="example"></a>Örnek
 

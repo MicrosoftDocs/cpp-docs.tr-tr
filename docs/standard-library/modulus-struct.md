@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: mod yapısı'
 title: modulus Yapısı
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - modulus class
 - modulus struct
 ms.assetid: 86d342f7-b7b1-46a4-b0bb-6b7ae827369b
-ms.openlocfilehash: 20f2070c5b835d67e06d64a0a1b05141f08cf373
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: f14edbcdb73a09fb9d44ff8d3dbd29bc0cdd2cdc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246792"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230490"
 ---
 # <a name="modulus-struct"></a>modulus Yapısı
 
-Modulus bölme işlemi gerçekleştiren bir önceden tanımlanmış bir işlev nesnesi (`operator%`) üzerinde bağımsız değişkenleri.
+Bağımsız değişkenlerinde mod bölüm işlemini () gerçekleştiren önceden tanımlanmış bir işlev nesnesi `operator%` .
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -40,21 +41,21 @@ struct modulus<void>
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U*\
-Destekleyen herhangi bir türü bir `operator%` , belirtilen veya çıkarsanan tür işlenen alır.
+`operator%`Belirtilen veya çıkartılan türlerin işlenenlerini destekleyen bir tür.
 
-*Sol*\
-Mod işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Tarafta*\
+Mod işleminin sol işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *T*'nin lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
-*sağ*\
-Mod işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*Right*\
+Mod işleminin sağ işleneni. Özelleştirilmemiş şablon *tür türünde bir* lvalue başvuru bağımsız değişkeni alır. Özel şablon, çıkarılan tür *U* için lvalue ve rvalue başvurusu bağımsız değişkenlerinin kusursuz bir şekilde iletilmesini yapar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonucu `Left % Right`. Özelleşmiş şablon tarafından döndürülen türünde sonuç iletilmesini mükemmel `operator%`.
+Sonucu `Left % Right` . Özel şablon, tarafından döndürülen türüne sahip olan sonucun kusursuz bir şekilde iletilmesini yapar `operator%` .
 
 ## <a name="remarks"></a>Açıklamalar
 
-`modulus` Functor temel veri türleri için tam sayı türleri sınırlı olduğundan veya uygulayan türler için kullanıcı tanımlı `operator%`.
+`modulus`Functor temel veri türleri için tamsayı türleri veya uygulayan kullanıcı tanımlı türler ile kısıtlıdır `operator%` .
 
 ## <a name="example"></a>Örnek
 

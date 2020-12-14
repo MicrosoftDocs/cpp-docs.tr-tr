@@ -1,16 +1,17 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: &lt; hash_map &gt; işlevleri'
 title: '&lt;hash_map &gt; işlevleri'
 ms.date: 11/04/2016
 f1_keywords:
 - hash_map/std::swap
 - hash_map/std::swap (hash_map)
 ms.assetid: 28748cd0-71f7-41b9-b068-579183645fba
-ms.openlocfilehash: a29254d32954556ad3a2fbedb89fb3556533ff1f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 50f9150bc79a3ffdc586ba420d6e3dc280784767
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841200"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231907"
 ---
 # <a name="lthash_mapgt-functions"></a>&lt;hash_map &gt; işlevleri
 
@@ -33,10 +34,10 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *Right*\
-Öğeleri *, eşlemedeki*haritalarla birlikte değiş tokuş edilecek hash_map.
+Öğeleri *, eşlemedeki* haritalarla birlikte değiş tokuş edilecek hash_map.
 
 *tarafta*\
-Öğeleri haritanın *sağına*göre değiştirilecek olan hash_map.
+Öğeleri haritanın *sağına* göre değiştirilecek olan hash_map.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -58,14 +59,14 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *Right*\
-Öğeleri *, eşlemedeki*haritalarla birlikte değiş tokuş edilecek hash_multimap.
+Öğeleri *, eşlemedeki* haritalarla birlikte değiş tokuş edilecek hash_multimap.
 
 *tarafta*\
-Öğeleri haritanın *sağına*göre değiştirilecek olan hash_multimap.
+Öğeleri haritanın *sağına* göre değiştirilecek olan hash_multimap.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Şablon işlevi, değiştirme üye işlevini yürütmek için hash_multimap kapsayıcı sınıfı üzerinde özelleştirilmiş bir algoritmadır `left.` [swap](../standard-library/hash-multimap-class.md#swap)*(sağ* `)` . Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Algoritma üstbilgi dosyasında şablon işlevinin genel sürümü, **şablon \<class T> void swap (t&, t&)**, atama tarafından çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
+Şablon işlevi, değiştirme üye işlevini yürütmek için hash_multimap kapsayıcı sınıfı üzerinde özelleştirilmiş bir algoritmadır `left.` [](../standard-library/hash-multimap-class.md#swap)*(sağ* `)` . Bu, derleyici tarafından işlev şablonlarının kısmi sıralaması örneğidir. Şablon işlevleri, işlev çağrısı ile şablonla eşleşen bir şekilde aşırı yüklendiğinde, derleyici şablon işlevinin en özelleştirilmiş sürümünü seçer. Algoritma üstbilgi dosyasında şablon işlevinin genel sürümü, **şablon \<class T> void swap (t&, t&)**, atama tarafından çalışır ve yavaş bir işlemdir. Kapsayıcı sınıfının iç temsili ile çalışabildiğinden, her kapsayıcıda özelleştirilmiş sürüm çok daha hızlıdır.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

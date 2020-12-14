@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: is_placeholder sınıfı'
 title: is_placeholder Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - is_placeholder class
 ms.assetid: 2b21a792-96d1-4bb8-b911-0db796510835
-ms.openlocfilehash: 9fa7d4aaade6244fe26f89f3a667598d39471a47
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 84d73da6ffe2446a8448b0ff5f30604d259493b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230666"
 ---
-# <a name="isplaceholder-class"></a>is_placeholder Sınıfı
+# <a name="is_placeholder-class"></a>is_placeholder Sınıfı
 
-Bir yer tutucu türü olup olmadığını sınar.
+Tür bir yer tutucu ise sınar.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-Yapı is_placeholder {statik const Int değeri;};
+struct is_placeholder {static const int Value;};
 
 ## <a name="remarks"></a>Açıklamalar
 
-Sabit değer `value` 0 ise türü `Ty` değil yer tutucu; Aksi takdirde, değeri için bağlayan işlev çağrısı bağımsız değişkeni konumudur. Değeri belirlemek için kullandığınız `N` n. yer tutucunun `_N`.
+`value`Tür `Ty` bir yer tutucu değilse, sabit değer 0 ' dır; Aksi takdirde, değeri, bağlandığı işlev çağrısı bağımsız değişkeninin konumudur. `N`N. yer tutucunun değerini öğrenmek için bunu kullanırsınız `_N` .
 
 ## <a name="example"></a>Örnek
 

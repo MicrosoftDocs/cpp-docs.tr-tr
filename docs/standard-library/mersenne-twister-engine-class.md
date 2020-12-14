@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: mersenne_twister_engine sınıfı'
 title: mersenne_twister_engine Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - mersenne_twister_engine class
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
-ms.openlocfilehash: 24663b12efaef66f29c7f755ab45df5ef973755c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7f5a2d74493194cb07bb4dd628cf3e483b1fd99b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846426"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230633"
 ---
 # <a name="mersenne_twister_engine-class"></a>mersenne_twister_engine Sınıfı
 
 Mersenne bükücü algoritmasını temel alarak yüksek kaliteli rastgele tamsayılar dizisi oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <class UIntType,
@@ -73,9 +74,9 @@ Altyapı üyeleri hakkında daha fazla bilgi için bkz [\<random>](../standard-l
 
 Bu sınıf şablonu, [ `0` , `2` <sup>W</sup>  -  ] kapalı aralığındaki değerleri döndüren rastgele bir sayı altyapısını açıklar `1` . Bit ile büyük bir integral değeri tutar `W * (N - 1) + R` . Bu büyük değerden bir anda *W* bit ayıklar ve tüm bitleri kullandığınızda, kümeden Ayıklanacak yeni bir bit kümesine sahip olacak şekilde bitleri değiştirerek ve karıştırarak büyük bir değer elde eder. Altyapının durumu, en `N` `W` `operator()` az *N* kez çağrılmışsa kullanılan son bit değerlerdir; Aksi takdirde, `M` `W` kullanılan-bit değerleri ve `N - M` tohum 'un son değerleri.
 
-Oluşturucu, çift yönlü bir geri bildirim, *N* ve *M*, bir oyundur değeri *R*ve bir koşullu XOR-Mask *a*ile tanımlanan bir çift yönlü geri bildirim kullanarak tuttuğu büyük değeri içerir. Ayrıca, ham kaydırma kaydının bitleri *U*, *D*, *S*, *B*, *T*, *C*ve *L*değerleri tarafından tanımlanan bir bit karıştırma matrisine göre karıştırılırdı (tempırılulmuş).
+Oluşturucu, çift yönlü bir geri bildirim, *N* ve *M*, bir oyundur değeri *R* ve bir koşullu XOR-Mask *a* ile tanımlanan bir çift yönlü geri bildirim kullanarak tuttuğu büyük değeri içerir. Ayrıca, ham kaydırma kaydının bitleri *U*, *D*, *S*, *B*, *T*, *C* ve *L* değerleri tarafından tanımlanan bir bit karıştırma matrisine göre karıştırılırdı (tempırılulmuş).
 
-Şablon bağımsız değişkeni, `UIntType` en fazla W değeri tutabilecek kadar büyük olmalıdır `2` <sup>W</sup>  -  `1` . Diğer şablon bağımsız değişkenlerinin değerlerinin aşağıdaki gereksinimleri karşılaması gerekir: `2u < W, 0 < M, M ≤ N, R ≤ W, U ≤ W, S ≤ W, T ≤ W, L ≤ W, W ≤ numeric_limits<UIntType>::digits, A ≤ (1u<<W) - 1u, B ≤ (1u<<W) - 1u, C ≤ (1u<<W) - 1u, D ≤ (1u<<W) - 1u, and F ≤ (1u<<W) - 1u` .
+Şablon bağımsız değişkeni, `UIntType` en fazla W değeri tutabilecek kadar büyük olmalıdır `2` <sup></sup>  -  `1` . Diğer şablon bağımsız değişkenlerinin değerlerinin aşağıdaki gereksinimleri karşılaması gerekir: `2u < W, 0 < M, M ≤ N, R ≤ W, U ≤ W, S ≤ W, T ≤ W, L ≤ W, W ≤ numeric_limits<UIntType>::digits, A ≤ (1u<<W) - 1u, B ≤ (1u<<W) - 1u, C ≤ (1u<<W) - 1u, D ≤ (1u<<W) - 1u, and F ≤ (1u<<W) - 1u` .
 
 Bu altyapıdan doğrudan bir Oluşturucu oluşturabilseniz de, önceden tanımlanmış aşağıdaki Typedefs değerlerinden birini kullanmanız önerilir:
 

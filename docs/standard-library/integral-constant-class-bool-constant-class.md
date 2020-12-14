@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: integral_constant Class, bool_constant Class'
 title: integral_constant sınıfı, bool_constant sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - std::integral_constant [C++]
 - std::bool_constant [C++]
 ms.assetid: 11c002c6-4d31-4042-9341-f2543f43e108
-ms.openlocfilehash: 30e00fdc166b4a6f2db64a3552a3bb87335c7e32
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a910581af81742c32f4eb32a1f8f625cbc6cd346
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231543"
 ---
 # <a name="integral_constant-class-bool_constant-class"></a>integral_constant sınıfı, bool_constant sınıfı
 
 Bir tür ve değerden tamsayı sabiti oluşturur.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class T, T v>

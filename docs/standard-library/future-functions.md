@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: &lt; gelecek &gt; işlevler'
 title: '&lt;gelecekteki &gt; işlevler'
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::make_error_code [C++]
 - std::make_error_condition [C++]
 - std::swap [C++]
-ms.openlocfilehash: d419984243d3970533f30814fe0ff451199afb34
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 56a43ecec155f580d8f798917ea6e53ce41bdd76
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232115"
 ---
 # <a name="ltfuturegt-functions"></a>&lt;gelecekteki &gt; işlevler
 
@@ -31,7 +32,7 @@ ms.locfileid: "88837976"
 
 ## <a name="async"></a><a name="async"></a> eş
 
-*Zaman uyumsuz sağlayıcıyı*temsil eder.
+*Zaman uyumsuz sağlayıcıyı* temsil eder.
 
 ```cpp
 template <class Fn, class... ArgTypes>
@@ -68,7 +69,7 @@ C++ standardı, ilke başlatma:: Async olduğunda, işlevin yeni bir iş parçac
 
 *İlke* ise `launch::deferred` , işlev, *Ertelenen işlevi* tutarak ilişkili zaman uyumsuz durumunu işaretler ve döndürür. Zaman uyumsuz bir işlevin, ilişkili zaman uyumsuz durumunun etkin olmasını bekleyen ilk çağrısı, değerlendirerek ertelenmiş işlevi çağırır `INVOKE(dfn, dargs..., Ty)` .
 
-Her durumda, nesnenin ilişkili zaman uyumsuz durumu `future` tamamlanana kadar *ready* `INVOKE(dfn, dargs..., Ty)` , bir özel durum oluşturarak ya da normal şekilde dönerek, tamamlanana kadar başlamaya ayarlanır. İlişkili zaman uyumsuz durumun sonucu, oluşturulursa bir özel durumdur veya değerlendirme tarafından döndürülen herhangi bir değerdir.
+Her durumda, nesnenin ilişkili zaman uyumsuz durumu `future` tamamlanana kadar  `INVOKE(dfn, dargs..., Ty)` , bir özel durum oluşturarak ya da normal şekilde dönerek, tamamlanana kadar başlamaya ayarlanır. İlişkili zaman uyumsuz durumun sonucu, oluşturulursa bir özel durumdur veya değerlendirme tarafından döndürülen herhangi bir değerdir.
 
 > [!NOTE]
 > Bir `future` veya ile başlatılan bir göreve eklenen son [shared_future](../standard-library/shared-future-class.md)için `std::async` , yok edicisi, görev tamamlanmazsa engeller; diğer bir deyişle, bu iş parçacığı henüz çağırmadıysa `.get()` veya `.wait()` görev hala çalışıyorsa engeller. `future`Kaynağından alınan bir, `std::async` yerel kapsam dışına taşınırsa, bu dosyayı kullanan diğer kod, yıkıcının paylaşılan durumun hazırlanabileceği şekilde engelleyemeyeceği farkında olmalıdır.
