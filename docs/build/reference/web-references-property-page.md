@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Web başvuruları Özellik sayfası'
 title: Web Başvuruları Özellik Sayfası
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,37 +10,37 @@ f1_keywords:
 helpviewer_keywords:
 - Web references, properties
 ms.assetid: b80f7c77-af88-4551-9943-99748ebacf09
-ms.openlocfilehash: 9e33fc1d53253c3da09e812110015cfdfdbe2d02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 371642cd7ffcac9cccaea980f7790f729c8e74b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316476"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259168"
 ---
 # <a name="web-references-property-page"></a>Web Başvuruları Özellik Sayfası
 
-**Web başvuruları** özellik sayfası XML Web hizmeti proxy sınıfı oluşturulan nasıl belirtir. Bir web başvurusu projenize eklediğiniz bir XML Web hizmeti proxy sınıfı oluşturulur.
+**Web başvuruları** Özellik sayfası, XML Web hizmeti proxy sınıfının nasıl oluşturulacağını belirtir. Projenize bir Web başvurusu eklerseniz bir XML Web hizmeti proxy sınıfı oluşturulacaktır.
 
-**Web başvuruları** özellik sayfası, aşağıdaki özellikleri içerir:
+**Web başvuruları** Özellik sayfası aşağıdaki özellikleri içerir:
 
-- **Çıkış dosyası**
+- **Çıktı dosyası**
 
-   XML Web hizmeti proxy sınıfı içeren dosyanın adı.
+   XML Web hizmeti proxy sınıfının bulunduğu dosyanın adı.
 
 - **Başlangıç başlığını gösterme**
 
-   Web Hizmetleri Açıklama Dili Aracı (Wsdl.exe) için başlığı görüntüleme.
+   Web Hizmetleri Açıklama Dili Aracı (Wsdl.exe) için başlık gösterme.
 
-- **Namespace**
+- **Ad Alanı**
 
-   Oluşturulan web Ara sunucusu adını belirtir.
+   Oluşturulan Web ara sunucusunun adını belirtir.
 
-- **Ek başvurular**
+- **Ek Başvurular**
 
-   DLL proxy tarafından başvurulan ek DLL'leri belirtir.
+   Proxy DLL tarafından başvurulan ek dll 'Leri belirtir.
 
-Erişim hakkında daha fazla bilgi için **Web başvurusu** özellik sayfasında bakın [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+**Web başvurusu** Özellik sayfasına erişme hakkında daha fazla bilgi için bkz. [Visual Studio 'da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C++ projesi özellik Sayfa başvurusu](property-pages-visual-cpp.md)
+[C++ proje özellik sayfası başvurusu](property-pages-visual-cpp.md)

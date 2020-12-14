@@ -1,54 +1,55 @@
 ---
+description: Daha fazla bilgi edinin:/WINMD (Windows meta verileri oluştur)
 title: /WINMD (Windows Meta Verileri Oluşturun)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.GenerateWindowsMetadata
 ms.assetid: bcfb4901-411e-4c9e-9f78-23028b6e5fcc
-ms.openlocfilehash: 45d6492c87b7543a54d031f02dcf09e319150131
-ms.sourcegitcommit: 28eae422049ac3381c6b1206664455dbb56cbfb6
+ms.openlocfilehash: 7cf52a49716e6ec30a29c7e6a96fe7a078b4830c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66449708"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259090"
 ---
 # <a name="winmd-generate-windows-metadata"></a>/WINMD (Windows Meta Verileri Oluşturun)
 
-Bir Windows çalışma zamanı meta veri (.winmd) dosyasının oluşturulmasını etkinleştirir.
+Windows Çalışma Zamanı meta veri (. winmd) dosyasının oluşturulmasını mümkün.
 
-> **/WINMD**\[ **:** {**NO**\|**ONLY**}]
+> **/Winmd** \[ **:**{ \| **yalnızca** Hayır}]
 
 ## <a name="arguments"></a>Arguments
 
-**/WINMD**<br/>
-Evrensel Windows platformu uygulamaları için varsayılan ayar. Bağlayıcı, ikili yürütülebilir dosyasının hem .winmd meta veri dosyası oluşturur.
+**/WıNMD**<br/>
+Evrensel Windows Platformu uygulamalar için varsayılan ayar. Bağlayıcı hem ikili yürütülebilir dosyayı hem de. winmd meta veri dosyasını üretir.
 
-**/WINMD:NO**<br/>
-Bağlayıcı, yalnızca ikili yürütülebilir dosya, ancak bir .winmd dosyası oluşturur.
+**/WINMD: HAYıR**<br/>
+Bağlayıcı, bir. winmd dosyası değil yalnızca ikili yürütülebilir dosyayı oluşturur.
 
-**/WINMD:ONLY**<br/>
-Bağlayıcı, yalnızca .winmd dosyası, ancak değil ikili yürütülebilir dosya oluşturur.
+**/WINMD: YALNıZCA**<br/>
+Bağlayıcı yalnızca. winmd dosyasını oluşturur, ikili yürütülebilir dosyayı değil.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/WINMD** bağlayıcı seçeneği UWP uygulamaları ve Windows çalışma zamanı bileşenleri için bir Windows çalışma zamanı meta veri (.winmd) dosyası oluşturma denetlemek için kullanılır. .Winmd dosyası için Windows çalışma zamanı türlerini ve çalışma zamanı bileşenleri, uygulamaları bu türlerden birini söz konusu olduğunda meta verileri içeren DLL türüdür. Meta veriler aşağıdaki [ECMA-335](https://www.ecma-international.org/publications/standards/Ecma-335.htm) standart.
+**/Winmd** bağlayıcı SEÇENEĞI, UWP uygulamaları ve Windows çalışma zamanı bileşenleri için bir Windows çalışma zamanı meta veri (. WINMD) dosyası oluşturulmasını denetlemek için kullanılır. Bir. winmd dosyası, Windows çalışma zamanı türleri için meta veriler içeren ve çalışma zamanı bileşenleri durumunda bu türlerin uygulamaları içeren bir DLL türüdür. Meta veriler [ECMA-335](https://www.ecma-international.org/publications/standards/Ecma-335.htm) standardını izler.
 
-Varsayılan olarak, çıktı dosyası adını formundadır *binaryname*.winmd. Farklı bir dosya adı belirtmek için kullanın [/wınmdfıle](winmdfile-specify-winmd-file.md) seçeneği.
+Varsayılan olarak, çıkış dosyası adının *binaryname*. winmd biçimi vardır. Farklı bir dosya adı belirtmek için [/WinMDFile](winmdfile-specify-winmd-file.md) seçeneğini kullanın.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **Windows meta verileri** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **Windows meta verileri** özellik sayfasını seçin.
 
-1. İçinde **Windows meta verileri oluşturma** aşağı açılan liste kutusunda, kullanmak istediğiniz seçeneği seçin.
+1. **Windows meta verileri oluştur** aşağı açılan liste kutusunda istediğiniz seçeneği belirleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İzlenecek yol: Basit bir Windows çalışma zamanı bileşeni oluşturma ve JavaScript'ten çağırma](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)<br/>
-[Microsoft arabirim tanım diline 3.0 giriş](/uwp/midl-3/intro)<br/>
-[/WINMDFILE (winmd Dosyası Belirtin)](winmdfile-specify-winmd-file.md)<br/>
-[/WINMDKEYFILE (winmd Anahtar Dosyası Belirtin)](winmdkeyfile-specify-winmd-key-file.md)<br/>
-[/WINMDKEYCONTAINER (Tanımlayıcı Ad Anahtar Kapsayıcısı Belirtin)](winmdkeycontainer-specify-key-container.md)<br/>
-[/WINMDDELAYSIGN (winmd Dosyasını Kısmen İmzalayın)](winmddelaysign-partially-sign-a-winmd.md)<br/>
+[İzlenecek yol: basit bir Windows Çalışma Zamanı bileşeni oluşturma ve JavaScript 'ten çağırma](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)<br/>
+[Microsoft Arabirim Tanımlama Dili 3,0 'ye giriş](/uwp/midl-3/intro)<br/>
+[/WINMDFILE (WinMD dosyası belirtin)](winmdfile-specify-winmd-file.md)<br/>
+[/WINMDKEYFILE (WinMD anahtar dosyası belirtin)](winmdkeyfile-specify-winmd-key-file.md)<br/>
+[/WINMDKEYCONTAINER (anahtar kapsayıcısını belirt)](winmdkeycontainer-specify-key-container.md)<br/>
+[/WINMDDELAYSIGN (bir WinMD 'yi kısmen Imzala)](winmddelaysign-partially-sign-a-winmd.md)<br/>
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

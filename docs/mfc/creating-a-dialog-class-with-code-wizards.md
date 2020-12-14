@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: kod sihirbazları ile Iletişim kutusu sınıfı oluşturma'
 title: Kod Sihirbazları ile İletişim Kutusu Sınıfı Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - code wizards
 - dialog classes [MFC], creating
 ms.assetid: a7157b9d-f1a8-4381-a4cf-180cd2c7f1b2
-ms.openlocfilehash: 5c534219ec656318e2e70a47df8536ddfbe26ab7
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 06015f72e051a8bac9d20fa802378ada0092328e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616332"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310089"
 ---
 # <a name="creating-a-dialog-class-with-code-wizards"></a>Kod Sihirbazları ile İletişim Kutusu Sınıfı Oluşturma
 
 Aşağıdaki tabloda, kod sihirbazları 'nın yönetmenize yardımcı olduğu iletişim kutusuyla ilgili görevler listelenmiştir.
 
-### <a name="dialog-related-tasks"></a>İletişim kutusuyla Ilgili görevler
+### <a name="dialog-related-tasks"></a>Dialog-Related görevler
 
 |Görev|İçin geçerlidir. . .|
 |----------|--------------------|
@@ -32,11 +33,11 @@ Aşağıdaki tabloda, kod sihirbazları 'nın yönetmenize yardımcı olduğu il
 
 - [İletişim sınıfınızı oluşturma](creating-your-dialog-class.md)
 
-- [İletişim kutusunda Windows iletilerini işleme](handling-windows-messages-in-your-dialog-box.md)
+- [İletişim kutunuzda Windows iletilerini işleme](handling-windows-messages-in-your-dialog-box.md)
 
 - [İletişim kutusu veri değişimi ve doğrulaması](dialog-data-exchange-and-validation.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[İletişim Kutuları](dialog-boxes.md)<br/>
+[İletişim kutuları](dialog-boxes.md)<br/>
 [MFC’de İletişim Kutularıyla çalışma](life-cycle-of-a-dialog-box.md)

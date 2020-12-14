@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: birleşim bildirimleri'
 title: Birleşim Bildirimleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - union keyword [C], declarations
 - variant records
 ms.assetid: 978c6165-e0ae-4196-afa7-6d94e24f62f7
-ms.openlocfilehash: 3414a478ec741351f1e1540a214cca38c029749f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c544a4d92f452415fdd03ccef51d49f69e2b5dae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213703"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258830"
 ---
 # <a name="union-declarations"></a>Birleşim Bildirimleri
 
 "UNION bildirimi" bir değişken değerleri kümesini ve isteğe bağlı olarak UNION adını adlandırarak bir etiketi belirtir. Değişken değerleri birleşimin "Üyeler" olarak adlandırılır ve farklı türlere sahip olabilir. Birleşimler, diğer dillerdeki "varyant kayıtları" ile benzerdir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 *struct veya-Union-belirleyicisi*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*struct veya-Union* *tanımlayıcısı*<sub>opt</sub> **{** *struct-declaration-List* **}**<br/>

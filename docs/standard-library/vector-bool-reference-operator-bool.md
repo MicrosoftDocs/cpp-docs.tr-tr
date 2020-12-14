@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: vector &lt; bool &gt; :: Reference:: operator bool'
 title: 'Vector &lt; bool &gt; :: Reference:: operator bool'
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - BOOL operator
 - reference::operator bool
 ms.assetid: b0e57869-18cc-4296-9061-da502f30120d
-ms.openlocfilehash: bb757fee9d6ec824a99557c409b1c4f02f48db5d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9b12df8711664aae80d8ed85340b0852b91969ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259324"
 ---
 # <a name="vectorltboolgtreferenceoperator-bool"></a>Vector &lt; bool &gt; :: Reference:: operator bool
 
 Öğesinden öğesine örtük bir dönüştürme `vector<bool>::reference` sağlar **`bool`** .
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 operator bool() const;

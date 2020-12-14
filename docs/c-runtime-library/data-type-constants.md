@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: veri türü sabitleri'
 title: Veri Türü Sabitleri
 ms.date: 06/25/2018
 f1_keywords:
@@ -139,12 +140,12 @@ helpviewer_keywords:
 - SIZE_MAX constant
 - RSIZE_MAX constant
 ms.assetid: c0f1c405-0465-41d5-b5ff-e81cdb6f1622
-ms.openlocfilehash: d9d053611fb733d55424d01be2bab030fc49e6e0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eb1c16cb730ea40a60a5929867fa8a36b17190ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258843"
 ---
 # <a name="data-type-constants"></a>Veri Türü Sabitleri
 
@@ -163,13 +164,13 @@ Bu sabitler integral veri türleri için aralıklar verir. Bu sabitleri kullanma
 
 |Sabit|Değer|Açıklama|
 |--------------|-----------|-------------|
-|**CHAR_BIT**|8|A içindeki bit sayısı**`char`**|
+|**CHAR_BIT**|8|A içindeki bit sayısı **`char`**|
 |**SCHAR_MIN**|(-128)|En küçük **`signed char`** değer|
 |**SCHAR_MAX**|127|En büyük **`signed char`** değer|
 |**UCHAR_MAX**|255 (0xFF)|En büyük **`unsigned char`** değer|
 |**CHAR_MIN**|(-128) ( **`/J`** seçenek kullanılırsa 0)|En küçük **`char`** değer|
 |**CHAR_MAX**|127 (Bu **`/J`** seçenek kullanılırsa 255)|En büyük **`char`** değer|
-|**MB_LEN_MAX**|5|Çok baytlı en fazla bayt sayısı**`char`**|
+|**MB_LEN_MAX**|5|Çok baytlı en fazla bayt sayısı **`char`**|
 |**SHRT_MIN**|-32768|En küçük **`signed short`** değer|
 |**SHRT_MAX**|32767|En büyük **`signed short`** değer|
 |**USHRT_MAX**|65535 (0xFFFF)|En büyük **`unsigned short`** değer|

@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: discrete_distribution sınıfı'
 title: discrete_distribution Sınıfı
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,18 +24,18 @@ helpviewer_keywords:
 - std::discrete_distribution [C++], param_type
 - std::discrete_distribution [C++], param_type
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-ms.openlocfilehash: 5dcac516da088a55d2ddc176275ec25941ad8949
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b84d174a653efdeba47fb0356c903b8c7dd2a8d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846283"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232765"
 ---
 # <a name="discrete_distribution-class"></a>discrete_distribution Sınıfı
 
 Her aralıkta Tekdüzen olasılığa sahip tek bir tamsayı dağılımı üretir.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template<class IntType = int>
@@ -230,12 +231,12 @@ Varsayılan Oluşturucu, saklı olasılık değeri 1 değeri olan bir öğeye sa
 
 Bir Weight *Tlist* parametresi olan *Başlatıcı listesi Oluşturucusu*, bir dağıtım nesnesi oluşturur ve bu, başlatıcı listesinden ağırlıklardır.
 
-*Count*, *Low*, *High*ve *tartıtfunc* parametrelerine sahip Oluşturucu, bu kurallara göre başlatılan bir dağıtım nesnesi oluşturur:
+*Count*, *Low*, *High* ve *tartıtfunc* parametrelerine sahip Oluşturucu, bu kurallara göre başlatılan bir dağıtım nesnesi oluşturur:
 
 - Eğer *sayı* < 1, **n** = 1 ise ve bu, varsayılan oluşturucuya eşdeğerdir, her zaman sıfır olarak oluşturulur.
 - Eğer *sayım* > 0, **n**  =  *sayısı*. Belirtilen **d** = (*yüksek*  -  *düşük*)/ **n** , sıfırdan büyük **d** biçimli alt aralıklar kullanılarak, her ağırlığa şu şekilde atanır: `weight[k] = weightfunc(x)` , burada **x**  =  *Low*  +  **k**  *  **d**  +  **d** /2, **k** = 0,..., **n** -1.
 
-Bir parametreye sahip Oluşturucu, `param_type` saklı *parm* parametre yapısı olarak *Pard* kullanarak bir dağıtım nesnesi oluşturur.
+Bir parametreye sahip Oluşturucu, `param_type` saklı  parametre yapısı olarak *Pard* kullanarak bir dağıtım nesnesi oluşturur.
 
 ## <a name="discrete_distributionparam_type"></a><a name="param_type"></a> discrete_distribution::p aram_type
 

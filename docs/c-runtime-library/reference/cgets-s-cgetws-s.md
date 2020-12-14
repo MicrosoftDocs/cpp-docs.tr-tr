@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _cgets_s _cgetws_s'
 title: _cgets_s, _cgetws_s
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _cgetws_s function
 - cgetws_s function
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
-ms.openlocfilehash: 6e48602eee3d2135d4624b28d88661ac00f65542
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 827f3c8b155f58fe13396f5dc0c66e8999b5f942
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917092"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275093"
 ---
 # <a name="_cgets_s-_cgetws_s"></a>_cgets_s, _cgetws_s
 
@@ -94,13 +95,13 @@ Başarılı olursa dönüş değeri sıfırdır; Aksi takdirde, bir hata oluşur
 
 |*arabelleğin*|*numberOfElements*|*pSizeRead*|Döndürülmesini|*Arabelleğin* içeriği|
 |--------------|------------------------|-----------------|------------|--------------------------|
-|**DEĞER**|kaydedilmemiş|kaydedilmemiş|**EıNVAL**|yok|
-|**null** değil|sıfır|kaydedilmemiş|**EıNVAL**|değiştirilmedi|
-|**null** değil|kaydedilmemiş|**DEĞER**|**EıNVAL**|sıfır uzunluklu dize|
+|**DEĞER**|herhangi biri|herhangi biri|**EıNVAL**|yok|
+|**null** değil|sıfır|herhangi biri|**EıNVAL**|değiştirilmedi|
+|**null** değil|herhangi biri|**DEĞER**|**EıNVAL**|sıfır uzunluklu dize|
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_cgets_s** ve **_cgetws_s** konsolundan bir dize okur ve dizeyi (null Sonlandırıcı ile) *arabelleğe*kopyalayın. **_cgetws_s** , işlevinin geniş karakter sürümüdür; karakter boyutu dışında, bu iki işlevin davranışı aynıdır. Okunacak dizenin en büyük boyutu *numberOfElements* parametresi olarak geçirilir. Bu boyut, Sonlandırıcı null değeri için fazladan bir karakter içermelidir. Okunan karakterlerin gerçek sayısı *pSizeRead*içine yerleştirilir.
+**_cgets_s** ve **_cgetws_s** konsolundan bir dize okur ve dizeyi (null Sonlandırıcı ile) *arabelleğe* kopyalayın. **_cgetws_s** , işlevinin geniş karakter sürümüdür; karakter boyutu dışında, bu iki işlevin davranışı aynıdır. Okunacak dizenin en büyük boyutu *numberOfElements* parametresi olarak geçirilir. Bu boyut, Sonlandırıcı null değeri için fazladan bir karakter içermelidir. Okunan karakterlerin gerçek sayısı *pSizeRead* içine yerleştirilir.
 
 İşlem sırasında veya parametrelerin doğrulanması sırasında bir hata oluşursa, [parametre doğrulama](../../c-runtime-library/parameter-validation.md) bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve **EINVAL** döndürülür.
 
@@ -120,12 +121,12 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cgets_s**|\<conio. h>|
-|**_cgetws_s**|\<conio. h> veya \<wchar. h>|
+|**_cgets_s**|\<conio.h>|
+|**_cgetws_s**|\<conio.h> veya \<wchar.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

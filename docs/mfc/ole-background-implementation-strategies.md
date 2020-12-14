@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: OLE arka planı: uygulama stratejileri'
 title: 'OLE Arka Planı: Uygulama Stratejileri'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE applications [MFC], implementing OLE
 - applications [OLE], implementing OLE
 ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
-ms.openlocfilehash: 90517f9b37872dd7de0ce1a2d08da94c93e6f8f8
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: fe492adf755f9163586832f5c7aa7dfc5470349f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619893"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275483"
 ---
 # <a name="ole-background-implementation-strategies"></a>OLE Arka Planı: Uygulama Stratejileri
 
@@ -38,6 +39,6 @@ Bir stratejiye karar verdikten sonra [kapsayıcıları](containers.md) veya [sun
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [OLE arka planı](ole-background.md)<br/>
-[Kapsayıcılar: Bir Kapsayıcı Uygulama](containers-implementing-a-container.md)<br/>
-[Sunucular: Sunucu Uygulama](servers-implementing-a-server.md)<br/>
+[Kapsayıcılar: kapsayıcı uygulama](containers-implementing-a-container.md)<br/>
+[Sunucular: sunucu uygulama](servers-implementing-a-server.md)<br/>
 [MFC Uygulama Sihirbazı](reference/mfc-application-wizard.md)

@@ -1,19 +1,20 @@
 ---
+description: Daha fazla bilgi edinin:/WINMDDELAYSIGN (bir WinMD 'yi kısmen Imzala)
 title: /WINMDDELAYSIGN (winmd Dosyasını Kısmen İmzalayın)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.WINMDDelaySign
 ms.assetid: 445cd602-62cb-400a-8e3a-4beb6572724d
-ms.openlocfilehash: 5e6eab3fbc40543b634f03da826d3bd3477b9623
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 801b172f52a9beb9d09617644b3096e460359724
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316606"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259064"
 ---
 # <a name="winmddelaysign-partially-sign-a-winmd"></a>/WINMDDELAYSIGN (winmd Dosyasını Kısmen İmzalayın)
 
-Kısmi bir Windows çalışma zamanı meta veri (.winmd) dosyasını imzalama dosyasında ortak anahtarı yerleştirerek sağlar.
+Ortak anahtarı dosyaya yerleştirerek bir Windows Çalışma Zamanı meta veri (. winmd) dosyasının kısmi imzalanmasını mümkün.
 
 ```
 /WINMDDELAYSIGN[:NO]
@@ -21,19 +22,19 @@ Kısmi bir Windows çalışma zamanı meta veri (.winmd) dosyasını imzalama do
 
 ## <a name="remarks"></a>Açıklamalar
 
-Benzer [/delaysign](delaysign-partially-sign-an-assembly.md) .winmd dosyasına uygulanan bağlayıcı seçeneği. Kullanım **/WINMDDELAYSIGN** .winmd dosyasında yalnızca ortak anahtar yerleştirmek istiyorsanız. Varsayılan olarak, bağlayıcı çalışır gibi **wınmddelaysıgn** belirtildi; diğer bir deyişle, bunun bir winmd dosyası oturum açmasını sağlamayan.
+. Winmd dosyasına uygulanan [/delaysign](delaysign-partially-sign-an-assembly.md) bağlayıcı seçeneğine benzer. . Winmd dosyasına yalnızca ortak anahtar koymak istiyorsanız **/Winmddelaysign** kullanın. Varsayılan olarak, bağlayıcı **/Winmddelaysign: No** belirtilmişse gibi davranır; Yani, winmd dosyasını imzalamaz.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörünü seçin.
 
-1. Seçin **Windows meta verileri** özellik sayfası.
+1. **Windows meta verileri** özellik sayfasını seçin.
 
-1. İçinde **Windows meta verileri gecikmeli imza** aşağı açılan liste kutusunda, kullanmak istediğiniz seçeneği seçin.
+1. **Windows meta verileri gecikmesi oturum açma** aşağı açılan liste kutusunda istediğiniz seçeneği belirleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

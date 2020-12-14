@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: bağlayıcı araçları hata LNK2028'
 title: Bağlayıcı Araçları Hatası LNK2028
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2028
 ms.assetid: e2b03293-6066-464d-a050-ce747bcf7f0e
-ms.openlocfilehash: 29aaed167f750186d956589e9daa0d21c441149e
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 31b20cc572a44b1260f58eb03519b60050c0246c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684203"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275730"
 ---
 # <a name="linker-tools-error-lnk2028"></a>Bağlayıcı Araçları Hatası LNK2028
 

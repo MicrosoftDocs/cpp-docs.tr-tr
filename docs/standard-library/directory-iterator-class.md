@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: directory_iterator sınıfı'
 title: directory_iterator Sınıfı
 ms.date: 09/10/2018
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator*
 - std::experimental::filesystem::directory_iterator::operator-&gt;
 - std::experimental::filesystem::directory_iterator::operator++
-ms.openlocfilehash: a7ccc2a941da079e14092af5b81dc537db4a48c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1bc0ac1d2d7816986bca1f48a41316270e547834
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215783"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232791"
 ---
 # <a name="directory_iterator-class"></a>directory_iterator Sınıfı
 
@@ -46,7 +47,7 @@ Sınıfı, burada adlı bir nesne depolar, `path` `mydir` Bu, sıralanacak dizin
 
 Daha fazla bilgi ve kod örneği için bkz. [dosya sistemi Gezintisi (C++)](../standard-library/file-system-navigation.md).
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```cpp
 class directory_iterator;
@@ -81,7 +82,7 @@ class directory_iterator;
 
 **Ad alanı:** std:: deneysel:: FileSystem
 
-## <a name="directory_iteratordirectory_iterator"></a><a name="directory_iterator"></a>directory_iterator::d irectory_iterator
+## <a name="directory_iteratordirectory_iterator"></a><a name="directory_iterator"></a> directory_iterator::d irectory_iterator
 
 İlk Oluşturucu bir dizi sonu yineleyiciyi üretir. İkinci ve üçüncü oluşturucular içindeki *Pval* 'yi depolar `mydir` , ardından dizin olarak açmayı ve okumayı dener `mydir` . Başarılı olursa, ilk dosya adını içindeki dizininde depolar `myentry` ; Aksi takdirde, bir dizi son yineleyicisi oluşturur.
 
@@ -107,7 +108,7 @@ Durum hata kodu.
 *directory_iterator*\
 Saklı nesne.
 
-## <a name="directory_iteratorincrement"></a><a name="increment"></a>directory_iterator:: Increment
+## <a name="directory_iteratorincrement"></a><a name="increment"></a> directory_iterator:: Increment
 
 İşlev, dizindeki bir sonraki dosya adına ilerle çalışır. Başarılı olursa, bu dosya adını ' de depolar `myentry` ; Aksi takdirde, sıra sonu Yineleyici oluşturur.
 
@@ -115,7 +116,7 @@ Saklı nesne.
 directory_iterator& increment(error_code& ec) noexcept;
 ```
 
-## <a name="directory_iteratoroperator"></a><a name="op_neq"></a>directory_iterator:: operator! =
+## <a name="directory_iteratoroperator"></a><a name="op_neq"></a> directory_iterator:: operator! =
 
 Üye işleci döndürür `!(*this == right)` .
 
@@ -128,7 +129,7 @@ bool operator!=(const directory_iterator& right) const;
 *Right*\
 İle karşılaştırılan [Directory_iterator](../standard-library/directory-iterator-class.md) `directory_iterator` .
 
-## <a name="directory_iteratoroperator"></a><a name="op_as"></a>directory_iterator:: operator =
+## <a name="directory_iteratoroperator"></a><a name="op_as"></a> directory_iterator:: operator =
 
 Varsayılan olarak ayarlanmış üye atama işleçleri beklenen şekilde davranır.
 
@@ -142,7 +143,7 @@ directory_iterator& operator=(directory_iterator&&) noexcept = default;
 *Right*\
 İçine kopyalandığı [Directory_iterator](../standard-library/directory-iterator-class.md) `directory_iterator` .
 
-## <a name="directory_iteratoroperator"></a><a name="op_eq"></a>directory_iterator:: operator = =
+## <a name="directory_iteratoroperator"></a><a name="op_eq"></a> directory_iterator:: operator = =
 
 Üye işleci **`true`** yalnızca **`*this`** ve *sağ* sıralı yineleyiciler ise veya her ikisi de dizi sırası yineleyiciler değilse döndürür.
 
@@ -155,7 +156,7 @@ bool operator==(const directory_iterator& right) const;
 *Right*\
 İle karşılaştırılan [Directory_iterator](../standard-library/directory-iterator-class.md) `directory_iterator` .
 
-## <a name="directory_iteratoroperator"></a><a name="op_star"></a>directory_iterator:: operator *
+## <a name="directory_iteratoroperator"></a><a name="op_star"></a> directory_iterator:: operator *
 
 Üye işleci döndürür `myentry` .
 
@@ -163,7 +164,7 @@ bool operator==(const directory_iterator& right) const;
 const directory_entry& operator*() const;
 ```
 
-## <a name="directory_iteratoroperator-"></a><a name="op_cast"></a>directory_iterator:: operator->
+## <a name="directory_iteratoroperator-"></a><a name="op_cast"></a> directory_iterator:: operator->
 
 Üye işlevi döndürür `&**this` .
 
@@ -171,7 +172,7 @@ const directory_entry& operator*() const;
 const directory_entry * operator->() const;
 ```
 
-## <a name="directory_iteratoroperator"></a><a name="op_increment"></a>directory_iterator:: operator + +
+## <a name="directory_iteratoroperator"></a><a name="op_increment"></a> directory_iterator:: operator + +
 
 İlk üye işlevi çağırır `increment()` ve sonra döndürür **`*this`** . İkinci üye işlevi nesnenin bir kopyasını yapar, çağırır ve `increment()` sonra kopyayı döndürür.
 

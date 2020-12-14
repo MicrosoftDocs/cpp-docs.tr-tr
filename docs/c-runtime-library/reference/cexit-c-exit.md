@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _cexit _c_exit'
 title: _cexit, _c_exit
 ms.date: 4/2/2020
 api_name:
@@ -34,18 +35,18 @@ helpviewer_keywords:
 - _cexit function
 - c_exit function
 ms.assetid: f3072045-9924-4b1a-9fef-b0dcd6d12663
-ms.openlocfilehash: 78675ef91c2ab68e18f6111b4908886017ae1f79
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e901e7d7e37c8702efaae8b3b70e98a400f48ef1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275106"
 ---
 # <a name="_cexit-_c_exit"></a>_cexit, _c_exit
 
 Temizleme işlemlerini gerçekleştirir ve işlemi sonlandırmadan döndürür.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```C
 void _cexit( void );
@@ -54,7 +55,7 @@ void _c_exit( void );
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cexit** işlevi, en son, ilk çıkar (LIFO) sırasına, **atexit** ve **_onexit**tarafından kaydedilen işlevleri çağırır. Sonra tüm g/ç arabelleklerini **_cexit** boşaltır ve döndürmeden önce tüm açık akışları kapatır. **_c_exit** **_exit** aynıdır, ancak **atexit** veya **_onexit** işlemeden ya da akış arabelleğini temizlemeden çağıran işleme geri döner. **Çıkış**, **_exit**, **_cexit**ve **_c_exit** davranışı aşağıdaki tabloda gösterilmiştir.
+**_Cexit** işlevi, en son, ilk çıkar (LIFO) sırasına, **atexit** ve **_onexit** tarafından kaydedilen işlevleri çağırır. Sonra tüm g/ç arabelleklerini **_cexit** boşaltır ve döndürmeden önce tüm açık akışları kapatır. **_c_exit** **_exit** aynıdır, ancak **atexit** veya **_onexit** işlemeden ya da akış arabelleğini temizlemeden çağıran işleme geri döner. **Çıkış**, **_exit**, **_cexit** ve **_c_exit** davranışı aşağıdaki tabloda gösterilmiştir.
 
 |İşlev|Davranış|
 |--------------|--------------|
@@ -63,7 +64,7 @@ void _c_exit( void );
 |**_cexit**|Tüm C Kitaplığı sonlandırma yordamlarını gerçekleştirir ve çağırana döner, ancak işlemi sonlandırmaz.|
 |**_c_exit**|Hızlı C Kitaplığı sonlandırma yordamlarını gerçekleştirir ve çağırana döner, ancak işlemi sonlandırmaz.|
 
-**_Cexit** veya **_c_exit** işlevlerini çağırdığınızda, çağrı sırasında mevcut olan geçici veya otomatik nesnelerin yıkıcıları çağrılmaz. Otomatik nesne, nesnenin statik olduğu bildirilmemiş bir işlevde tanımlanmış bir nesnedir. Geçici bir nesne, derleyici tarafından oluşturulan bir nesnedir. **_Cexit** veya **_c_exit**çağrılmadan önce otomatik bir nesneyi yok etmek için, açıkça nesne için yıkıcıyı aşağıdaki gibi çağırın:
+**_Cexit** veya **_c_exit** işlevlerini çağırdığınızda, çağrı sırasında mevcut olan geçici veya otomatik nesnelerin yıkıcıları çağrılmaz. Otomatik nesne, nesnenin statik olduğu bildirilmemiş bir işlevde tanımlanmış bir nesnedir. Geçici bir nesne, derleyici tarafından oluşturulan bir nesnedir. **_Cexit** veya **_c_exit** çağrılmadan önce otomatik bir nesneyi yok etmek için, açıkça nesne için yıkıcıyı aşağıdaki gibi çağırın:
 
 ```cpp
 myObject.myClass::~myClass( );
@@ -75,18 +76,18 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_cexit**|\<Process. h>|
-|**_c_exit**|\<Process. h>|
+|**_cexit**|\<process.h>|
+|**_c_exit**|\<process.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
-[durdurulmaya](abort.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[durdur](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [_exec, _wexec Işlevleri](../../c-runtime-library/exec-wexec-functions.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, _wspawn Işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

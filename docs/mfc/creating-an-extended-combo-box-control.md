@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Genişletilmiş Birleşik giriş kutusu denetimi oluşturma'
 title: Genişletilmiş Birleşik Giriş Kutusu Denetimi Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CComboBoxEx class [MFC], creating extended combo box controls
 - extended combo boxes [MFC], creating
 ms.assetid: a964267e-97b6-4e77-9f89-55bb5c68913f
-ms.openlocfilehash: 554085304f5330ac9cd99a5b814af26ce3a9c7e6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 93b4a24cfe4bf191e092d2456c5b6a62f79acc78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616279"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309985"
 ---
 # <a name="creating-an-extended-combo-box-control"></a>Genişletilmiş Birleşik Giriş Kutusu Denetimi Oluşturma
 

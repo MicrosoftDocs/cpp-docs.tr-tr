@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: ccos, ccosf, ccosl'
 title: ccos, ccosf, ccosl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - ccosf function
 - ccosl function
 ms.assetid: 4ab936ac-ff85-49ac-9418-2b69cf5d4696
-ms.openlocfilehash: 1d6acddf979b7488be722bd850fe9e16816d1030
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 54036a2ddd3d61bba1d11a4841eaab1bd546c0ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943178"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275145"
 ---
 # <a name="ccos-ccosf-ccosl"></a>ccos, ccosf, ccosl
 
@@ -66,7 +67,7 @@ _Lcomplex ccosl(
 
 ### <a name="parameters"></a>Parametreler
 
-*z*<br/>
+*kadar*<br/>
 Radyan cinsinden açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -75,13 +76,13 @@ Radyan cinsinden açıyı temsil eden karmaşık bir sayı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Aşırı C++ yüklemeye izin verdiğinden, **_Fcomplex** ve **_lcomplex** değerlerini alıp döndüren **ccos** 'un aşırı yüklerini çağırabilirsiniz. C programında **ccos** her zaman **_dcomplex** değeri alır ve döndürür.
+C++ aşırı yüklemeye izin verdiğinden, **_Fcomplex** ve **_Lcomplex** değerleri alıp döndüren **ccos** aşırı yüklerini çağırabilirsiniz. C programında, **ccos** her zaman bir **_Dcomplex** değeri alır ve döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**ccos**, **ccosf**, **ccosl**|\<karmaşık. h >|\<ccomplex >|
+|**ccos**,               **ccosf**, **ccosl**|\<complex.h>|\<ccomplex>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 

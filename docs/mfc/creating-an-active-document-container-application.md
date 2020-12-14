@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: etkin bir belge kapsayıcı uygulaması oluşturma'
 title: Etkin Belge Kapsayıcı Uygulaması Oluşturma
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MFC COM, active document containment
 - applications [MFC], active document container
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-ms.openlocfilehash: 860a8531a96a0671c808dba13523b492026eafe0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9bf00a73e7520cde45d4e43ae79813896d4c1129
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309998"
 ---
 # <a name="creating-an-active-document-container-application"></a>Etkin Belge Kapsayıcı Uygulaması Oluşturma
 
@@ -27,7 +28,7 @@ Etkin bir belge kapsayıcısı uygulaması oluşturmanın en basit ve en kolay y
 
 1. Sağ bölmeden **MFC uygulaması** ' nı seçin.
 
-1. Projeyi *myproj*olarak adlandırın, **Tamam**' a tıklayın.
+1. Projeyi *myproj* olarak adlandırın, **Tamam**' a tıklayın.
 
 1. **Birleşik belge desteği** sayfasını seçin.
 
@@ -35,19 +36,19 @@ Etkin bir belge kapsayıcısı uygulaması oluşturmanın en basit ve en kolay y
 
 1. **Etkin belge kapsayıcısı** onay kutusunu seçin.
 
-1. **Son**'a tıklayın.
+1. **Finish (Son)** düğmesine tıklayın.
 
 1. MFC Uygulama Sihirbazı uygulamayı oluşturmayı bitirdiğinde aşağıdaki dosyaları Çözüm Gezgini kullanarak açın:
 
    - *MyProjview. cpp*
 
-1. *MyProjview. cpp*içinde aşağıdaki değişiklikleri yapın:
+1. *MyProjview. cpp* içinde aşağıdaki değişiklikleri yapın:
 
    - İçinde `CMyProjView::OnPreparePrinting` , işlev içeriğini şu kodla değiştirin:
 
      [!code-cpp[NVC_MFCDocView#56](codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
-   `OnPreparePrinting`yazdırma desteği sağlar. Bu kod `DoPreparePrinting` , varsayılan yazdırma hazırlığı olan ' nin yerini alır.
+   `OnPreparePrinting` yazdırma desteği sağlar. Bu kod `DoPreparePrinting` , varsayılan yazdırma hazırlığı olan ' nin yerini alır.
 
    Etkin belge kapsama, gelişmiş bir yazdırma düzeni sağlar:
 

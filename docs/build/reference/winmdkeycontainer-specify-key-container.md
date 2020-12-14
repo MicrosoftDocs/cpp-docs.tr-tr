@@ -1,19 +1,20 @@
 ---
+description: Daha fazla bilgi edinin:/WINMDKEYCONTAINER (anahtar kapsayıcısını belirt)
 title: /WINMDKEYCONTAINER (Tanımlayıcı Ad Anahtar Kapsayıcısı Belirtin)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.WINMDKEYCONTAINER
 ms.assetid: c2fc44dc-7cb5-42b9-897f-1b124928f2f7
-ms.openlocfilehash: 0b6cb42fc391d94634ae90e5a4cc17e69a14ff09
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 94b203c56b7724c2b2569ba22039da38c4501985
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258999"
 ---
 # <a name="winmdkeycontainer-specify-key-container"></a>/WINMDKEYCONTAINER (Tanımlayıcı Ad Anahtar Kapsayıcısı Belirtin)
 
-Bir Windows meta veri (.winmd) dosyasını imzalamak için bir anahtar kapsayıcı belirtir.
+Bir Windows meta veri (. winmd) dosyasını imzalamak için bir anahtar kapsayıcısı belirtir.
 
 ```
 /WINMDKEYCONTAINER:name
@@ -21,19 +22,19 @@ Bir Windows meta veri (.winmd) dosyasını imzalamak için bir anahtar kapsayıc
 
 ## <a name="remarks"></a>Açıklamalar
 
-Benzer [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md) bağlayıcı seçeneği, bir (.winmd) dosyası için uygulanır.
+Bir (. winmd) dosyasına uygulanan [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md) bağlayıcı seçeneğine benzer.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **bağlayıcı** klasör.
+1. **Bağlayıcı** klasörünü seçin.
 
-1. Seçin **Windows meta verileri** özellik sayfası.
+1. **Windows meta verileri** özellik sayfasını seçin.
 
-1. İçinde **Windows meta verileri anahtar kapsayıcısı** kutusunda, konumu girin.
+1. **Windows meta verileri anahtar kapsayıcısı** kutusuna konumu girin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

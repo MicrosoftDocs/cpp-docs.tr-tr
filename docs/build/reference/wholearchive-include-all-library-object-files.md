@@ -1,26 +1,27 @@
 ---
+description: Hakkında daha fazla bilgi edinin:/WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
 title: /WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
 ms.date: 02/12/2020
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
-ms.openlocfilehash: 95685c9c0dfde45c42449bbcad67228a0e21b36a
-ms.sourcegitcommit: 8414cd91297dea88c480e208c7b5301db9972f19
+ms.openlocfilehash: 1cbc2ad29bab124af90551d2f4a96ee9f08c578c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77257539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259181"
 ---
 # <a name="wholearchive-include-all-library-object-files"></a>/WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
 
 Bağlayıcıyı, bağlı çalıştırılabilirteki statik kitaplığa tüm nesne dosyalarını dahil etmek için zorlayın.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/WHOLEARCHIVE**\
-> **/WHOLEARCHIVE:** _kitaplık_
+> **/WHOLEARCHIVE:**_kitaplık_
 
-### <a name="arguments"></a>Bağımsız Değişkenler
+### <a name="arguments"></a>Arguments
 
-*kitaplık*\
+*Kitaplığı*\
 Statik kitaplık için isteğe bağlı bir yol adı. Bağlayıcı, bu kitaplıktan her nesne dosyasını içerir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -33,13 +34,13 @@ Statik kitaplık için isteğe bağlı bir yol adı. Bağlayıcı, bu kitaplıkt
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio 'da bu bağlayıcı seçeneğini ayarlamak için
 
-1. Proje **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz [. C++ Visual Studio 'da derleyici ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
+1. Proje **Özellik sayfaları** iletişim kutusunu açın. Daha fazla bilgi için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. **Yapılandırma özellikleri**, **bağlayıcı**altında **komut satırı** özellik sayfasını seçin.
+1. **Yapılandırma özellikleri**, **bağlayıcı** altında **komut satırı** özellik sayfasını seçin.
 
 1. **Ek seçenekler** metin kutusuna/WHOLEARCHIVE seçeneğini ekleyin.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [MSVC bağlayıcı başvurusu](linking.md)<br/>
-[MSVC Bağlayıcı Seçenekleri](linker-options.md)
+[MSVC bağlayıcı seçenekleri](linker-options.md)

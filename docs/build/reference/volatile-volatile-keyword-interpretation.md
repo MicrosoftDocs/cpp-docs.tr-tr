@@ -1,4 +1,5 @@
 ---
+description: Daha fazla bilgi edinin:/volatile (volatile anahtar sözcük yorumu)
 title: /volatile (volatile Anahtar Sözcük Yorumu)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,18 +14,18 @@ helpviewer_keywords:
 - volatile compiler option
 - -volatile compiler option [C++]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-ms.openlocfilehash: 7c2c1cd477b424f56e66bd9246e7bde76ad06120
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e75a9932cff59748cf75b89a3a85e89130de84f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223791"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259220"
 ---
 # <a name="volatile-volatile-keyword-interpretation"></a>/volatile (volatile Anahtar Sözcük Yorumu)
 
 [Geçici](../../cpp/volatile-cpp.md) anahtar sözcüğünün nasıl yorumlanacağını belirtir.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 > **/volatile:**{**ISO** | **MS**}
 
@@ -56,4 +57,4 @@ Bir projenin ortasında var olan kodun bağlantı noktası varsa veya bu seçene
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
 [MSVC derleyici seçenekleri](compiler-options.md)<br/>
-[MSVC derleyici komut satırı sözdizimi](compiler-command-line-syntax.md)
+[MSVC derleyici Command-Line sözdizimi](compiler-command-line-syntax.md)

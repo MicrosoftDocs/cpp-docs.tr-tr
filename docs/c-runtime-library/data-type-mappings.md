@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: veri türü eşlemeleri'
 title: Veri Türü Eşlemeleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _TEXT type
 - _T type
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
-ms.openlocfilehash: d77ac4fa9afcd5a6b8f86261c7a3ba466adc64a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d76ecebc9bcb01e86cac2f199534ae2cda518c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258790"
 ---
 # <a name="data-type-mappings"></a>Veri Türü Eşlemeleri
 
@@ -42,7 +43,7 @@ Bu veri türü eşlemeleri TCHAR 'da tanımlanmıştır. H ve sabit `_UNICODE` v
 
 İlgili bilgiler için bkz [. TCHAR kullanma. _MBCS koduna sahip H veri türleri](../text/using-tchar-h-data-types-with-mbcs-code.md).
 
-### <a name="generic-text-data-type-mappings"></a>Genel metin veri türü eşlemeleri
+### <a name="generic-text-data-type-mappings"></a>Generic-Text veri türü eşlemeleri
 
 |Genel metin<br /><br /> veri türü adı|SBCS (_UNICODE,<br /><br /> _MBCS<br /><br /> tanımlı|_MBCS<br /><br /> tanımlanmış|_UNICODE<br /><br /> tanımlanmış|
 |--------------------------------------|----------------------------------------------------|------------------------|---------------------------|
@@ -54,12 +55,12 @@ Bu veri türü eşlemeleri TCHAR 'da tanımlanmıştır. H ve sabit `_UNICODE` v
 |`_TSCHAR`|**`signed char`**|**`signed char`**|**`wchar_t`**|
 |`_TUCHAR`|**`unsigned char`**|**`unsigned char`**|**`wchar_t`**|
 |`_TXCHAR`|**`char`**|**`unsigned char`**|**`wchar_t`**|
-|`_T` veya `_TEXT`|Efekt yok (ön işlemci tarafından kaldırıldı)|Efekt yok (ön işlemci tarafından kaldırıldı)|`L`(aşağıdaki karakter veya dizeyi Unicode karşılığına dönüştürür)|
+|`_T` veya `_TEXT`|Efekt yok (ön işlemci tarafından kaldırıldı)|Efekt yok (ön işlemci tarafından kaldırıldı)|`L` (aşağıdaki karakter veya dizeyi Unicode karşılığına dönüştürür)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md)<br/>
 [Sabit ve global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
 [Rutin eşlemeler](../c-runtime-library/routine-mappings.md)<br/>
-[Örnek bir genel metin programı](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[Genel metin eşlemelerini kullanma](../c-runtime-library/using-generic-text-mappings.md)
+[Örnek bir Generic-Text programı](../c-runtime-library/a-sample-generic-text-program.md)<br/>
+[Generic-Text eşlemelerini kullanma](../c-runtime-library/using-generic-text-mappings.md)
