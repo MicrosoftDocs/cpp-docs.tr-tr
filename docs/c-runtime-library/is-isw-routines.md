@@ -1,4 +1,5 @@
 ---
+description: ': Nedir, isw yordamları hakkında daha fazla bilgi edinin'
 title: is, isw Rutinleri
 ms.date: 11/04/2016
 api_location:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-ms.openlocfilehash: 632bd371f8a6da4b57eeb1ce88e2a37eb6923355
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9229d2437ea7a7e57178acc5fd40ba2afea043b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246760"
 ---
 # <a name="is-isw-routines"></a>is, isw Rutinleri
 
@@ -217,7 +218,7 @@ int main( void )
 }
 ```
 
-## <a name="output"></a>Çıkış
+## <a name="output"></a>Çıktı
 
 ```Output
 00            AS  C                              .
@@ -353,7 +354,7 @@ int main( void )
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Karakter sınıflandırması](../c-runtime-library/character-classification.md)<br/>
-[Yerel Ayar](../c-runtime-library/locale.md)<br/>
+[Ayarlar](../c-runtime-library/locale.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[Çok baytlı karakter dizilerinin yorumu](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Multibyte-Character sıralarının yorumu](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [to Işlevleri](../c-runtime-library/to-functions.md)

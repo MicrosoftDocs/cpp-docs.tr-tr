@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: sonek Ifadeleri'
 title: Sonek İfadeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - postfix expressions
 - expressions [C++], postfix
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
-ms.openlocfilehash: 9a5c99c78623f2192b59a73f270f3ad5d2a34516
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c6c38fee6b2b44ab9ff390eed8d178bf40653df2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231175"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258531"
 ---
 # <a name="postfix-expressions"></a>Sonek İfadeleri
 
@@ -24,7 +25,7 @@ Sonek ifadeleri, birincil ifadelerden veya içindeki son ek işleçlerinin bir b
 |[Alt simge işleci](../cpp/subscript-operator.md)|**[ ]**|
 |[İşlev çağrısı işleci](../cpp/function-call-operator-parens.md)|**( )**|
 |[Açık tür dönüştürme işleci](../cpp/explicit-type-conversion-operator-parens.md)|*tür adı* **()**|
-|[Üye erişim işleci](../cpp/member-access-operators-dot-and.md)|**.** veya**->**|
+|[Üye erişim işleci](../cpp/member-access-operators-dot-and.md)|**.** veya **->**|
 |[Sonek artırma işleci](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**++**|
 |[Sonek azaltma işleci](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|
 

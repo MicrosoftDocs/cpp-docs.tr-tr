@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: matematik hata sabitleri'
 title: Matematik Hatası Sabitleri
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,16 +24,16 @@ helpviewer_keywords:
 - _PLOSS constant
 - math error constants
 ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
-ms.openlocfilehash: 3267a5053cb2cd18cfcb07473bbcc4d6f8295f5d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e5f94f94a28543f0405cce57941a872c416d0c20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62342698"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258752"
 ---
 # <a name="math-error-constants"></a>Matematik Hatası Sabitleri
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
 ```
 #include <math.h>
@@ -40,20 +41,20 @@ ms.locfileid: "62342698"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Matematik hatası sabitleri çalışma zamanı kitaplığının matematik yordamlarını üretebilir.
+Çalışma zamanı kitaplığının matematik yordamları matematik hatası sabitleri oluşturabilir.
 
-Açıklandığı gibi bu hata, MATEMATİK tanımlanan özel durum türlerine karşılık gelir. Tarafından döndürülen H ve bu `_matherr` matematik hata oluştuğunda işlev.
+Aşağıdaki gibi açıklanan bu hatalar, matematık bölümünde tanımlanan özel durum türlerine karşılık gelir. Ve `_matherr` bir matematik hatası oluştuğunda işlev tarafından döndürülür.
 
-|Sabit|Açıklama|
+|Sabit|Anlamı|
 |--------------|-------------|
-|`_DOMAIN`|İşlev bağımsız değişkeni, dışında işlevinin etki alanıdır.|
-|`_OVERFLOW`|Sonuç, işlevin dönüş türü gösterilemeyecek kadar çok büyük.|
-|`_PLOSS`|Anlam kısmi kaybı oluştu.|
-|`_SING`|Bağımsız değişken singularity: işlev bağımsız değişkeni geçersiz bir değere sahip. (Örneğin, değeri 0 sıfır olmayan bir değer gerektiren işleve geçirilir.)|
-|`_TLOSS`|Anlam toplam kaybı oluştu.|
-|`_UNDERFLOW`|Sonuç gösterilemeyecek kadar çok küçüktür.|
+|`_DOMAIN`|İşlevin bağımsız değişkeni işlevin etki alanının dışında.|
+|`_OVERFLOW`|Sonuç işlevin dönüş türünde gösterilemeyecek kadar büyük.|
+|`_PLOSS`|Kısmi anlamlı kaybı oluştu.|
+|`_SING`|Bağımsız değişken Singular: işlevin bağımsız değişkeni geçersiz değere sahip. (Örneğin, 0 değeri sıfır dışında bir değer gerektiren işleve geçirilir.)|
+|`_TLOSS`|Toplam anlam kaybı oluştu.|
+|`_UNDERFLOW`|Sonuç gösterilemeyecek kadar küçük.|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [_matherr](../c-runtime-library/reference/matherr.md)<br/>
-[Global Sabitler](../c-runtime-library/global-constants.md)
+[Global sabitler](../c-runtime-library/global-constants.md)

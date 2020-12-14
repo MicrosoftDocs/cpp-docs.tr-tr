@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: _ismbc yordamları'
 title: _ismbc Rutinleri
 ms.date: 11/04/2016
 api_location:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - ismbc routines
 - _ismbc routines
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
-ms.openlocfilehash: 056cc4bc5344ee8833b3f6e645616657f1958897
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 319e077d839cacb6faf0c9095d403f99a1677975
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839367"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246597"
 ---
 # <a name="_ismbc-routines"></a>_ismbc Rutinleri
 

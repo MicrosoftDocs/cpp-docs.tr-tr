@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: normal Ifadeler (C++/CLı)'
 title: Normal İfadeler (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -28,22 +29,22 @@ helpviewer_keywords:
 - data [C++], formatting
 - regular expressions [C++], validating data formatting
 ms.assetid: 838bab49-0dbc-4089-a604-ef146269ef5a
-ms.openlocfilehash: 24a278e4d5b208c5d8e3b95b9f5a0bd0306dbab3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 429a121ec7acad46437a344b089f5c6a1ce4243b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97245817"
 ---
 # <a name="regular-expressions-ccli"></a>Normal İfadeler (C++/CLI)
 
-.NET Framework'teki normal ifade sınıfları kullanarak çeşitli dize işlemleri gösterilmektedir.
+.NET Framework normal ifade sınıflarını kullanarak çeşitli dize işlemlerini gösterir.
 
-Aşağıdaki konular, .NET Framework kullanımını gösteren <xref:System.Text.RegularExpressions> ad alanı (ve bir durumda <xref:System.String.Split%2A?displayProperty=fullName> yöntemi) aramak için ayrıştırma ve dizeleri değiştirin.
+Aşağıdaki konularda, <xref:System.Text.RegularExpressions> <xref:System.String.Split%2A?displayProperty=fullName> dizeleri aramak, ayrıştırmak ve değiştirmek için .NET Framework ad alanı (ve bir durumda yöntemi) kullanımı gösterilmektedir.
 
-## <a name="parse_regex"></a> Normal ifadeler kullanarak dizeleri ayrıştırma
+## <a name="parse-strings-using-regular-expressions"></a><a name="parse_regex"></a> Normal Ifadeler kullanarak dizeleri ayrıştırma
 
-Aşağıdaki kod örneği basit dize kullanarak ayrıştırmayı gösteren <xref:System.Text.RegularExpressions.Regex> sınıfını <xref:System.Text.RegularExpressions?displayProperty=fullName> ad alanı. Birden çok sözcük ayırıcı türü içeren bir dize oluşturulur. Dize, ardından kullanılarak ayrıştırılır <xref:System.Text.RegularExpressions.Regex> sınıfı ile birlikte <xref:System.Text.RegularExpressions.Match> sınıfı. Ardından, her bir sözcüğün cümlenin ayrı olarak görüntülenir.
+Aşağıdaki kod örneği, <xref:System.Text.RegularExpressions.Regex> ad alanındaki sınıfını kullanarak basit dize ayrıştırmayı gösterir <xref:System.Text.RegularExpressions?displayProperty=fullName> . Birden çok sözcük ayırıcı türü içeren bir dize oluşturulur. Daha sonra dize, sınıfıyla birlikte sınıfı kullanılarak ayrıştırılır <xref:System.Text.RegularExpressions.Regex> <xref:System.Text.RegularExpressions.Match> . Ardından, tümcedeki her sözcük ayrı olarak görüntülenir.
 
 ### <a name="example"></a>Örnek
 
@@ -79,9 +80,9 @@ int main( )
 }
 ```
 
-## <a name="parse_split"></a> Split yöntemini kullanarak dizeleri ayrıştırma
+## <a name="parse-strings-using-the-split-method"></a><a name="parse_split"></a> Split yöntemini kullanarak dizeleri ayrıştırma
 
-Aşağıdaki kod örneği kullanmayı gösterir <xref:System.String.Split%2A?displayProperty=fullName> yöntemi bir dizedeki her sözcüğün ayıklanamadı. Birden çok sözcük ayırıcı türü içeren bir dize oluşturulur ve ardından çağırarak ayrıştırılmış <xref:System.String.Split%2A> ayırıcıların listesiyle. Ardından, her bir sözcüğün cümlenin ayrı olarak görüntülenir.
+Aşağıdaki kod örneği, <xref:System.String.Split%2A?displayProperty=fullName> bir dizeden her bir sözcüğü ayıklamak için yöntemini kullanmayı gösterir. Birden çok sözcük ayırıcı türü içeren bir dize oluşturulur ve ardından <xref:System.String.Split%2A> ayırıcıların bir listesiyle çağırarak ayrıştırılır. Ardından, tümcedeki her sözcük ayrı olarak görüntülenir.
 
 ### <a name="example"></a>Örnek
 
@@ -108,9 +109,9 @@ int main()
 }
 ```
 
-## <a name="regex_simple"></a> Basit Eşleştirme için normal ifadeleri kullanma
+## <a name="use-regular-expressions-for-simple-matching"></a><a name="regex_simple"></a> Basit eşleştirme için normal Ifadeler kullanın
 
-Aşağıdaki kod örneği, tam altdizgi eşleştirmelerin için normal ifadeler kullanır. Arama statik tarafından gerçekleştirilen <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> yöntemi iki dizeyi girdi olarak alır. Birincisi aranacak dize ve ikincisi için aranacak modelidir.
+Aşağıdaki kod örneği, tam alt dize eşleşmelerini aramak için normal ifadeler kullanır. Arama, <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> giriş olarak iki dizeyi alan statik yöntem tarafından gerçekleştirilir. İlki Aranmak üzere dize, ikincisi ise aranacak bir modeldir.
 
 ### <a name="example"></a>Örnek
 
@@ -146,9 +147,9 @@ int main()
 }
 ```
 
-## <a name="regex_extract"></a> Veri alanlarını ayıklamak için normal ifadeleri kullanma
+## <a name="use-regular-expressions-to-extract-data-fields"></a><a name="regex_extract"></a> Veri alanlarını ayıklamak için normal Ifadeleri kullanma
 
-Aşağıdaki kod örneği, veri biçimlendirilmiş çıkartmak için normal ifadeler kullanımını gösterir. Aşağıdaki kod örneğinde <xref:System.Text.RegularExpressions.Regex> sınıfının bir e-posta adresine karşılık gelen bir desen belirtin. Bu desen, ana bilgisayar adı bölümlerini her e-posta adresi ve kullanıcı almak için kullanılan alan tanımlayıcıları içerir. <xref:System.Text.RegularExpressions.Match> Sınıfı gerçek desen eşleştirme işlemi yapmak için kullanılır. Belirtilen e-posta adresi geçerliyse, kullanıcı adı ve ana bilgisayar adları ayıklanır ve görüntülenir.
+Aşağıdaki kod örneği, biçimli bir dizeden veri ayıklamak için normal ifadelerin kullanımını gösterir. Aşağıdaki kod örneği, <xref:System.Text.RegularExpressions.Regex> bir e-posta adresine karşılık gelen bir model belirtmek için sınıfını kullanır. Bu, her bir e-posta adresinin Kullanıcı ve ana bilgisayar adı bölümlerini almak için kullanılabilen alan tanımlayıcılarını içerir. <xref:System.Text.RegularExpressions.Match>Sınıfı, gerçek model eşleştirmeyi gerçekleştirmek için kullanılır. Verilen e-posta adresi geçerliyse, Kullanıcı adı ve ana bilgisayar adları ayıklanır ve görüntülenir.
 
 ### <a name="example"></a>Örnek
 
@@ -193,11 +194,11 @@ int main()
 }
 ```
 
-## <a name="regex_rearrange"></a> Veriyi yeniden düzenlemek için normal ifadeleri kullanma
+## <a name="use-regular-expressions-to-rearrange-data"></a><a name="regex_rearrange"></a> Verileri yeniden düzenlemek için normal Ifadeleri kullanma
 
-Aşağıdaki kod örneği, yeniden düzenleyebilir veya verileri yeniden biçimlendirmek için .NET Framework normal ifade Destek'ın nasıl kullanılabileceğini gösterir. Aşağıdaki kod örneğinde <xref:System.Text.RegularExpressions.Regex> ve <xref:System.Text.RegularExpressions.Match> ad ve Soyadı çıkartmak ve bu adı öğelerini ters sırada görüntülemek için sınıflar.
+Aşağıdaki kod örneği, .NET Framework düzenli ifade desteğinin verileri yeniden düzenlemek veya yeniden biçimlendirmek için nasıl kullanılabileceğini gösterir. Aşağıdaki kod örneği, <xref:System.Text.RegularExpressions.Regex> <xref:System.Text.RegularExpressions.Match> bir dizeden ilk ve son isimleri ayıklamak için ve sınıflarını kullanır ve ardından bu ad öğelerini ters sırada görüntüler.
 
-<xref:System.Text.RegularExpressions.Regex> Sınıfı geçerli veri biçimini tanımlayan bir normal ifade oluşturmak için kullanılır. İki ad virgülle ayrılması kabul edilir ve her miktarda beyaz-boşluk, virgül kullanabilirsiniz. <xref:System.Text.RegularExpressions.Match> Yöntemi ardından her bir dizenin analiz etmek için kullanılır. Başarılı olursa, ad ve Soyadı alınır <xref:System.Text.RegularExpressions.Match> nesne ve görüntülenir.
+<xref:System.Text.RegularExpressions.Regex>Sınıfı, verilerin geçerli biçimini açıklayan bir normal ifade oluşturmak için kullanılır. İki ad, virgülle ayrılmış olarak kabul edilir ve virgül etrafında herhangi bir boşluk içerebilir. <xref:System.Text.RegularExpressions.Match>Yöntemi daha sonra her dizeyi çözümlemek için kullanılır. Başarılı olursa, ilk ve son adlar <xref:System.Text.RegularExpressions.Match> nesneden alınır ve görüntülenir.
 
 ### <a name="example"></a>Örnek
 
@@ -237,11 +238,11 @@ int main()
 }
 ```
 
-## <a name="regex_search"></a> Arama ve değiştirme için normal ifadeleri kullanma
+## <a name="use-regular-expressions-to-search-and-replace"></a><a name="regex_search"></a> Arama ve değiştirme için normal Ifadeleri kullanma
 
-Aşağıdaki kod örneğinde nasıl normal ifade sınıfına <xref:System.Text.RegularExpressions.Regex> arama ve değiştirme yapmak için kullanılabilir. Bunun <xref:System.Text.RegularExpressions.Regex.Replace%2A> yöntemi. Girdi olarak iki dizeyi kullanılan sürümünü alır: değiştirilecek olan dize ve (varsa) yerine bölümleri eklenecek dize için belirtilen desenle eşleşen <xref:System.Text.RegularExpressions.Regex> nesne.
+Aşağıdaki kod örneği, normal ifade sınıfının <xref:System.Text.RegularExpressions.Regex> arama ve değiştirme işlemleri için nasıl kullanılabileceğini gösterir. Bu yöntem ile yapılır <xref:System.Text.RegularExpressions.Regex.Replace%2A> . Kullanılan sürüm, giriş olarak iki dize alır: değiştirilecek dize ve nesneye verilen Düzenle eşleşen bölümlerin (varsa) yerine eklenecek dize <xref:System.Text.RegularExpressions.Regex> .
 
-Bu kod, bir dizedeki tüm basamakları alt çizgi (_) değiştirir ve daha sonra bu etkili bir şekilde kaldırarak boş bir dize ile değiştirir. Tek bir adımda aynı etkiyi gerçekleştirilebilir, ancak iki adımı burada tanıtım amacıyla kullanılır.
+Bu kod, bir dizedeki tüm rakamları alt çizgi (_) ile değiştirir ve ardından bunları boş bir dizeyle değiştirir ve bunları etkin bir şekilde kaldırır. Aynı efekt tek bir adımda gerçekleştirilebilir, ancak burada tanıtım amacıyla iki adım kullanılır.
 
 ### <a name="example"></a>Örnek
 
@@ -269,9 +270,9 @@ int main()
 }
 ```
 
-## <a name="regex_validate"></a> Veri biçimlendirmesini doğrulamak için normal ifadeleri kullanma
+## <a name="use-regular-expressions-to-validate-data-formatting"></a><a name="regex_validate"></a> Veri biçimlendirmesini doğrulamak için normal Ifadeleri kullanma
 
-Aşağıdaki kod örneği, normal ifadeler bir dizeyi formatlamayı doğrulamak için kullanımını gösterir. Aşağıdaki kod örneğinde dize geçerli bir telefon numarası içermelidir. Aşağıdaki kod örneği dizesini kullanır "\d{3}-\d{3}-\d{4}" her bir alan geçerli bir telefon numarası temsil ettiğini göstermek için. Dizesindeki "d" bir basamağı gösterir ve sonra her "d" bağımsız değişkeni bulunması gereken rakam sayısını gösterir. Bu durumda, sayı çizgilerle ayrılmış için gereklidir.
+Aşağıdaki kod örneği, bir dizenin biçimlendirilmesini doğrulamak için normal ifadelerin kullanımını gösterir. Aşağıdaki kod örneğinde, dize geçerli bir telefon numarası içermelidir. Aşağıdaki kod örneği, {3} {3} {4} her alanın geçerli bir telefon numarasını temsil ettiğini göstermek için "\d-\d-\d" dizesini kullanır. Dizedeki "d" bir basamağı gösterir ve her bir "d" öğesinin ardından gelen bağımsız değişken bulunması gereken basamak sayısını gösterir. Bu durumda, sayının tirelere göre ayrılması gerekir.
 
 ### <a name="example"></a>Örnek
 
@@ -314,7 +315,7 @@ int main()
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[.NET framework normal ifadeleri](/dotnet/standard/base-types/regular-expressions)
+[.NET Framework Normal İfadeleri](/dotnet/standard/base-types/regular-expressions)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

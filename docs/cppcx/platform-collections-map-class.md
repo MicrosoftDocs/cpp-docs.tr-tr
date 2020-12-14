@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Platform:: Collections:: Map sınıfı'
 title: 'Platform:: Collections:: Map sınıfı'
 ms.date: 10/01/2019
 ms.topic: reference
@@ -15,18 +16,18 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: 40b7d653b21cdc2b0fab4c852c9809ab1db46a12
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8414328a178e4f9e2cfd7c4d97cca07ce7efcd9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258505"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform:: Collections:: Map sınıfı
 
-Anahtar-değer çiftleri koleksiyonu olan bir *eşlemeyi*temsil eder. XAML [veri bağlamaya](/windows/uwp/data-binding/data-binding-in-depth)yardımcı olmak için [Windows:: Foundation:: Collections:: ıobservablemap](/uwp/api/windows.foundation.collections.iobservablemap-2) uygular.
+Anahtar-değer çiftleri koleksiyonu olan bir *eşlemeyi* temsil eder. XAML [veri bağlamaya](/windows/uwp/data-binding/data-binding-in-depth)yardımcı olmak için [Windows:: Foundation:: Collections:: ıobservablemap](/uwp/api/windows.foundation.collections.iobservablemap-2) uygular.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```cpp
 template <
@@ -41,7 +42,7 @@ ref class Map sealed;
 *K*<br/>
 Anahtar-değer çiftindeki anahtar türü.
 
-*Yönetim*<br/>
+*V*<br/>
 Anahtar-değer çiftindeki değerin türü.
 
 *,*<br/>
@@ -151,7 +152,7 @@ Bir `MapView` nesnesi.
 
 Geçerli haritanın belirtilen anahtarı içerip içermediğini belirler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 bool HasKey(K key);
@@ -170,7 +171,7 @@ Map öğesini bulmak için kullanılan anahtar. *Anahtar* türü TypeName *K*.
 
 Belirtilen anahtar-değer çiftini geçerli harita nesnesine ekler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 virtual bool Insert(K key, V value);
@@ -181,18 +182,18 @@ virtual bool Insert(K key, V value);
 *anahtar*<br/>
 Anahtar-değer çiftinin anahtar bölümü. *Anahtar* türü TypeName *K*.
 
-*deeri*<br/>
+*değer*<br/>
 Anahtar-değer çiftinin değer kısmı. *Değer* türü, TypeName *V*' dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-**`true`** geçerli haritadaki var olan bir *öğenin anahtarı ile eşleşiyorsa ve* bu öğenin değer kısmı *değer*olarak ayarlanmışsa. **`false`** geçerli Haritadaki mevcut bir öğe *anahtarla* eşleşmez ve anahtar ve *değer* *parametreleri anahtar-* değer çiftinde oluşturulur ve ardından geçerli haritaya eklenir.
+**`true`** geçerli haritadaki var olan bir *öğenin anahtarı ile eşleşiyorsa ve* bu öğenin değer kısmı *değer* olarak ayarlanmışsa. **`false`** geçerli Haritadaki mevcut bir öğe *anahtarla* eşleşmez ve anahtar ve *değer* *parametreleri anahtar-* değer çiftinde oluşturulur ve ardından geçerli haritaya eklenir.
 
 ## <a name="maplookup-method"></a><a name="lookup"></a> Map:: Lookup yöntemi
 
 Anahtar varsa, o türü K olan belirtilen anahtarla ilişkili V türü değerini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 V Lookup(K key);
@@ -205,7 +206,7 @@ Haritada bir öğe bulmak için kullanılan anahtar. *Anahtar* türü TypeName *
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-*Anahtarla*eşleştirilmiş değer. Dönüş değerinin türü, TypeName *V*.
+*Anahtarla* eşleştirilmiş değer. Dönüş değerinin türü, TypeName *V*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -215,7 +216,7 @@ Anahtar yoksa, [Platform:: OutOfBoundsException](../cppcx/platform-outofboundsex
 
 Map sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 explicit Map(const C& comp = C());
@@ -237,7 +238,7 @@ Geçerli haritanın TypeName 'i.
 Haritada göreli sıralarını belirleyebilmek için iki öğe değerini sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan bir tür.
 
 *m*<br/>
-[rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) `map Class` Geçerli eşlemeyi başlatmak için kullanılan bir başvurusu veya rvalue.
+[](../cpp/lvalues-and-rvalues-visual-cpp.md) `map Class` Geçerli eşlemeyi başlatmak için kullanılan bir başvurusu veya rvalue.
 
 *adı*<br/>
 Geçerli eşlemeyi başlatmak için kullanılan öğe aralığındaki ilk öğenin giriş yineleyicisi.
@@ -267,7 +268,7 @@ C# veya Visual Basic projesi IMAP 'yi \<K,V> IDictionary olarak kullanan uygulam
 
 Belirtilen anahtar-değer çiftini geçerli harita nesnesinden siler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 virtual void Remove(K key);

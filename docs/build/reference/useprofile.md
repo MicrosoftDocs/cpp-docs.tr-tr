@@ -1,52 +1,53 @@
 ---
-title: / USEPROFILE (LTCG ile kullanım PGO veriler)
+description: Daha fazla bilgi edinin:/USEPROFıLE (iş parçacığı güvenli modunda PGO Çalıştır)
+title: /USEPROFıLE (LTCG ile PGO verileri kullanın)
 ms.date: 03/14/2018
 f1_keywords:
 - USEPROFILE
-ms.openlocfilehash: 7bc0033ae5ef512cbd2e2063c5cb9bd9b061c180
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c6c293b8467ea308dc2f7b4a4cd916cc5d9ac4c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247052"
 ---
-# <a name="useprofile-run-pgo-in-thread-safe-mode"></a>/ USEPROFILE (iş parçacığı güvenli modda PGO çalıştırın)
+# <a name="useprofile-run-pgo-in-thread-safe-mode"></a>/USEPROFıLE (iş parçacığı güvenli modunda PGO Çalıştır)
 
-Bu bağlayıcı seçeneği ile birlikte [/LTCG (bağlama zamanı kod oluşturmayı](ltcg-link-time-code-generation.md) profil temelli iyileştirme (PGO) eğitim verilerini kullanarak yapı söyler.
+Bu bağlayıcı seçeneği [/LTCG ile birlikte (bağlama zamanı kodu oluşturma](ltcg-link-time-code-generation.md) , bağlayıcıya profil temelli iyileştirme (PGO) eğitim verilerini kullanarak derlemeyi söyler.
 
-## <a name="syntax"></a>Sözdizimi
+## <a name="syntax"></a>Syntax
 
-> **/ USEPROFILE**[**:**{**AGRESİF**|**PGD =**_filename_}]
+> **/USEPROFILE**[**:**{**agresif** | **PGD =**_filename_}]
 
 ### <a name="arguments"></a>Arguments
 
-**AGRESİF**<br/>
-Bu isteğe bağlı bağımsız değişken agresif hız iyileştirmelerini en iyi duruma getirilmiş kod oluşturma sırasında kullanılması gerektiğini belirtir.
+**SALDıRGAN**<br/>
+Bu isteğe bağlı bağımsız değişken, en iyileştirilmiş kod oluşturma sırasında agresif hız iyileştirmelerinin kullanılması gerektiğini belirtir.
 
-**PGD**=*dosya adı*<br/>
-.Pgd dosyası için bir temel dosya adı belirtir. Varsayılan olarak bağlayıcı bir .pgd uzantısıyla temel yürütülebilir dosya adını kullanır.
+**PGD** = *dosya adı*<br/>
+. Pgd dosyası için bir taban dosya adı belirtir. Varsayılan olarak, bağlayıcı temel yürütülebilir dosya adını. pgd uzantısıyla kullanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/USEPROFILE** bağlayıcı seçeneği ile birlikte kullanıldığında **/LTCG** PGO eğitim verilerini temel alarak en iyi duruma getirilmiş bir sürüme güncelleştirmek veya oluşturmak için. Kullanım dışı denk olan **/LTCG:PGUPDATE** ve **/LTCG:PGOPTIMIZE** seçenekleri.
+**/Useprofile** bağlayıcı seçeneği, PGO eğitim verilerine dayalı iyileştirilmiş bir derlemeyi oluşturmak veya güncelleştirmek için **/LTCG** ile birlikte kullanılır. Kullanım dışı bırakılan **/LTCG: PGUPDATE** ve **/LTCG: pgoptimize** seçeneklerinin eşdeğeridir.
 
-İsteğe bağlı **AGRESİF** bağımsız değişkeni, hız için İyileştir denemek için buluşsal yöntemler boyutu ile ilgili devre dışı bırakır. Bu, önemli ölçüde yürütülebilir dosyanızın boyutunu artırın ve sonuçta elde edilen hızını artırabilir değil iyileştirmeler neden olabilir. Profil ve ve değil kullanarak sonuçlarını karşılaştırın **AGRESİF**. Bu bağımsız değişken açıkça belirtilmesi gerekir; Varsayılan olarak etkin değildir.
+İsteğe bağlı **agresif** bağımsız değişken hız için optimize etmeye çalışmak üzere boyutla ilgili buluşsal yöntemleri devre dışı bırakır. Bu, yürütülebilir dosyanızın boyutunu önemli ölçüde artıran ve elde edilen hızı artmayan iyileştirmelere neden olabilir. **Agresif** kullanmamalıdır ve kullanarak sonuçları ve karşılaştırmanız gerekir. Bu bağımsız değişken açıkça belirtilmelidir; Varsayılan olarak etkinleştirilmemiştir.
 
-**PGD** bağımsız değişkeni belirtir isteğe bağlı bir ad kullanmak de aynı eğitim veri .pgd dosyası için [/genprofıle veya fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md). Kullanım dışı denk olan **/PGD** geçin. Varsayılan olarak, ya da hiçbir *filename* belirtilen yürütülebilir kullanıldıkça, aynı temel ada sahip bir .pgd dosyası.
+**PGD** bağımsız değişkeni, [/genprofile veya/fastgenprofile](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)gibi kullanılacak eğitim verileri. pgd dosyası için isteğe bağlı bir ad belirtir. Kullanım dışı bırakılan **/PGD** anahtarıyla eşdeğerdir. Varsayılan olarak veya *dosya adı* belirtilmemişse, yürütülebilir dosya ile aynı temel adı taşıyan bir. pgd dosyası kullanılır.
 
-**/USEPROFILE** bağlayıcı seçeneğini Visual Studio 2015'te yenidir.
+**/Useprofile** bağlayıcı seçeneği Visual Studio 2015 ' de yenidir.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual Studio'da ayarlayın C++ derleyicisi ve derleme özellikleri](../working-with-project-properties.md).
+1. Projenin **Özellik sayfaları** iletişim kutusunu açın. Ayrıntılar için bkz. [Visual Studio 'Da C++ derleyicisini ve derleme özelliklerini ayarlama](../working-with-project-properties.md).
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **iyileştirme** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **iyileştirme** özellik sayfasını seçin.
 
-1. İçinde **bağlama sırasında kod oluşturmayı** özelliği seçin **kullanım bağlama sırasında kod oluşturma (/ LTCG)**.
+1. **Bağlama zamanı kodu üretimi** özelliğinde **bağlama zaman kodu oluşturma 'yı (/LTCG) kullanın**.
 
-1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
+1. **Yapılandırma özellikleri**  >  **bağlayıcı**  >  **komut satırı** özellik sayfasını seçin.
 
-1. Girin **/USEPROFILE** seçeneği ve isteğe bağlı bağımsız değişkenler **ek seçenekler** kutusu. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
+1. **Ek seçenekler** kutusuna **/useprofile** seçeneğini ve isteğe bağlı bağımsız değişkenleri girin. Değişikliklerinizi kaydetmek için **Tamam ' ı** seçin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 
@@ -54,7 +55,7 @@ Bu isteğe bağlı bağımsız değişken agresif hız iyileştirmelerini en iyi
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/ GENPROFILE ve fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
+[/GENPROFILE ve/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md)<br/>
 [/LTCG](ltcg-link-time-code-generation.md)<br/>
-[Profil Temelli İyileştirmeler](../profile-guided-optimizations.md)<br/>
-[Profil Temelli İyileştirmeler için Ortam Değişkenleri](../environment-variables-for-profile-guided-optimizations.md)<br/>
+[Profil temelli Iyileştirmeler](../profile-guided-optimizations.md)<br/>
+[Profile-Guided Iyileştirmeleri için ortam değişkenleri](../environment-variables-for-profile-guided-optimizations.md)<br/>

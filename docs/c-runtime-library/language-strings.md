@@ -1,15 +1,16 @@
 ---
+description: 'Daha fazla bilgi edinin: dil dizeleri'
 title: Dil Dizeleri
 ms.date: 11/04/2016
 helpviewer_keywords:
 - language strings
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
-ms.openlocfilehash: dd0c55091d3dff641993fa593e656e2825da7c73
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 077a440981c9e39e87356310c40ae9b249d4662e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839262"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246584"
 ---
 # <a name="language-strings"></a>Dil Dizeleri
 
@@ -21,9 +22,9 @@ Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri de
 
 |Dil dizesi|Eşdeğer yerel ayar adı|
 |---------------------|----------------------------|
-|İngilizcesi|tr-TR|
-|Amerikan İngilizcesi|tr-TR|
-|Amerikan-İngilizce|tr-TR|
+|İngilizcesi|en-US|
+|Amerikan İngilizcesi|en-US|
+|Amerikan-İngilizce|en-US|
 |ticari|En-AU|
 |Belçika|nl-|
 |alı|en-CA|
@@ -35,7 +36,7 @@ Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri de
 |Çince-Singapur|zh-SG|
 |Çince-Geleneksel|zh-TW|
 |Felemenkçe-Belçika|nl-|
-|İngilizce-American|tr-TR|
+|İngilizce-American|en-US|
 |İngilizce-Avustralya|En-AU|
 |İngilizce-Belize|En-BZ|
 |İngilizce-can|en-CA|
@@ -46,8 +47,8 @@ Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri de
 |İngilizce-Güney Afrika|En-ZA|
 |İngilizce-Trinidad y Tobago|En-TT|
 |İngilizce-UK|en-GB|
-|İngilizce-ABD|tr-TR|
-|İngilizce-ABD|tr-TR|
+|İngilizce-ABD|en-US|
+|İngilizce-ABD|en-US|
 |Fransızca-Belçika|fr-of|
 |Fransızca-Kanada|fr-CA|
 |Fransızca-Lüksemburg|fr-LU|
@@ -84,8 +85,8 @@ Microsoft C çalışma zamanı kitaplığı uygulamasında da bu dil dizeleri de
 |İsveççe-Finlandiya|ZF-FI|
 |Alman|devre dışı|
 |tr|en-GB|
-|ABD|tr-TR|
-|ABD|tr-TR|
+|ABD|en-US|
+|ABD|en-US|
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

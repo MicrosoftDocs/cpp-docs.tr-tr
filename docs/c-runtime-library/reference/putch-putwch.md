@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _putch _putwch'
 title: _putch, _putwch
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - putch function
 - console, writing characters to
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
-ms.openlocfilehash: 5d327030f816b4ad4d68e0366225d27fee00a7bf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 242e7c69330cf86c9c369903812f277fe0018d50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916185"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246350"
 ---
 # <a name="_putch-_putwch"></a>_putch, _putwch
 
@@ -68,7 +69,7 @@ wint_t _putwch(
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılıysa *c* döndürür. **_Putch** başarısız olursa, **EOF**döndürür; **_putwch** başarısız olursa, **weof**döndürür.
+Başarılıysa *c* döndürür. **_Putch** başarısız olursa, **EOF** döndürür; **_putwch** başarısız olursa, **weof** döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -88,8 +89,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_putch**|\<conio. h>|
-|**_putwch**|\<conio. h>|
+|**_putch**|\<conio.h>|
+|**_putwch**|\<conio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -103,6 +104,6 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Konsol ve Bağlantı Noktası G/Ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
+[Konsol ve bağlantı noktası g/ç](../../c-runtime-library/console-and-port-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [_getch, _getwch](getch-getwch.md)<br/>

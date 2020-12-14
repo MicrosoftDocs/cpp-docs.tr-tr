@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: Iç CRT genel ve Işlevleri'
 title: İç CRT genel ve Işlevleri
 ms.date: 4/2/2020
 api_name:
@@ -930,12 +931,12 @@ helpviewer_keywords:
 - _Xbad_alloc
 - _Xlength_error
 ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: fe9b466ca839cb09011dc7cc38650b8b85037e86
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0ace61d708744d6d7ef715158d7a4452a3bf5b03
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246774"
 ---
 # <a name="internal-crt-globals-and-functions"></a>İç CRT genel ve Işlevleri
 
@@ -945,7 +946,7 @@ C çalışma zamanı (CRT) kitaplığı yalnızca ortak kitaplık arabirimini de
 
 Bu genel değişkenler ve makro tanımları CRT uygulamak için kullanılır.
 
-|Name|
+|Ad|
 |----------|
 |__badioinfo|
 |[_acmdln](../c-runtime-library/acmdln-tcmdln-wcmdln.md)|
@@ -964,7 +965,7 @@ Bu genel değişkenler ve makro tanımları CRT uygulamak için kullanılır.
 
 Bu işlevler ve işlev makroları, CRT ve C++ standart kitaplığı uygulamak için kullanılır.
 
-|Name|
+|Ad|
 |----------|
 |__acrt_iob_func|
 |__AdjustPointer|
@@ -1169,26 +1170,26 @@ Bu işlevler ve işlev makroları, CRT ve C++ standart kitaplığı uygulamak i�
 |[__p&#95;&#95;_mb_cur_max](../c-runtime-library/mb-cur-max-func-mb-cur-max-l-func-p-mb-cur-max-mb-cur-max.md)|
 |__p&#95;&#95;_wargv|
 |__p&#95;&#95;_winitenv|
-|__p\__acmdln|
-|[__p\__commode](../c-runtime-library/p-commode.md)|
-|__p\__crtAssertBusy|
-|__p\__crtBreakAlloc|
-|__p\__crtDbgFlag|
-|__p\__daylight|
-|__p\__dstbias|
-|__p\__environ|
-|[__p\__fmode](../c-runtime-library/p-fmode.md)|
-|__p\__iob|
-|__p\__mbcasemap|
-|__p\__mbctype|
-|__p\__pctype|
-|__p\__pgmptr|
-|__p\__pwctype|
-|__p\__timezone|
-|__p\__tzname|
-|__p\__wcmdln|
-|__p\__wenviron|
-|__p\__wpgmptr|
+|__p \_ _acmdln|
+|[__p \_ _commode](../c-runtime-library/p-commode.md)|
+|__p \_ _crtAssertBusy|
+|__p \_ _crtBreakAlloc|
+|__p \_ _crtDbgFlag|
+|__p \_ _daylight|
+|__p \_ _dstbias|
+|__p \_ _environ|
+|[__p \_ _fmode](../c-runtime-library/p-fmode.md)|
+|__p \_ _iob|
+|__p \_ _mbcasemap|
+|__p \_ _mbctype|
+|__p \_ _pctype|
+|__p \_ _pgmptr|
+|__p \_ _pwctype|
+|__p \_ _timezone|
+|__p \_ _tzname|
+|__p \_ _wcmdln|
+|__p \_ _wenviron|
+|__p \_ _wpgmptr|
 |_pctype|
 |[__pctype_func](../c-runtime-library/pctype-func.md)|
 |_pwctype|

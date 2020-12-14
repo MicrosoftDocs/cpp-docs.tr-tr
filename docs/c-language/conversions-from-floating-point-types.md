@@ -1,16 +1,17 @@
 ---
+description: 'Daha fazla bilgi edinin: kayan nokta türlerinden dönüşümler'
 title: Kayan nokta türlerinden dönüşümler
 ms.date: 10/02/2019
 helpviewer_keywords:
 - converting floating point
 - floating-point conversion
 ms.assetid: 96804c8e-fa3b-4742-9006-0082ed9e57f2
-ms.openlocfilehash: 72d0f95a6e48dcf0a5e8fea3757e85f9a03bf7e4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e2a78a68b39d9109a2304d78070bddef36e9b52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293241"
 ---
 # <a name="conversions-from-floating-point-types"></a>Kayan nokta türlerinden dönüşümler
 
@@ -28,9 +29,9 @@ Tamsayı türlerine dönüştürürken, ' den küçük bir türe dönüştürmen
 
 Tamsayı türlerine en az büyük ölçüde dönüştürmek için **`long`** , sonuç türünde temsil etmek için çok yüksek veya çok düşük bir değer dönüştürmesi aşağıdaki değerlerden herhangi birini döndürebilir:
 
-- Sonuç, sıfırdan en uzak gösterilemeyen bir değer olan *Sentinel değeri*olabilir. İmzalı türler için en düşük gösterilebilir tablo değeridir (0x800... 0). İmzasız türler için en yüksek gösterilebilir tablo değeridir (0xFF... F).
+- Sonuç, sıfırdan en uzak gösterilemeyen bir değer olan *Sentinel değeri* olabilir. İmzalı türler için en düşük gösterilebilir tablo değeridir (0x800... 0). İmzasız türler için en yüksek gösterilebilir tablo değeridir (0xFF... F).
 
-- Sonuç, değerlerin temsil edildiği çok yüksek değeri en yüksek gösterilemeyen değere dönüştürüldüğü ve temsil etmek için çok düşük değerler en düşük gösterilemeyen değere dönüştürülerek *doygun*olabilir. Bu iki değerden biri Sentinel değeri olarak da kullanılır.
+- Sonuç, değerlerin temsil edildiği çok yüksek değeri en yüksek gösterilemeyen değere dönüştürüldüğü ve temsil etmek için çok düşük değerler en düşük gösterilemeyen değere dönüştürülerek *doygun* olabilir. Bu iki değerden biri Sentinel değeri olarak da kullanılır.
 
 - Veya ' a dönüştürme için **`unsigned long`** **`unsigned long long`** , Aralık dışı bir değeri dönüştürmenin sonucu, en yüksek veya en düşük gösterilemeyen değer dışında bir değer olabilir. Sonucun Sentinel veya doygun bir değer olup olmadığı veya derleyicinin seçeneklerine ve hedef mimarisine bağlı olup olmadığı. Gelecekteki derleyici yayınları, bunun yerine bir doygun veya Sentinel değeri döndürebilir.
 

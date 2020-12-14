@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: işaretsiz integral türlerinden dönüşümler'
 title: İmzasız tam sayı türlerinden dönüştürmeler
 ms.date: 10/02/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - type conversion [C++], signed and unsigned integers
 - integral conversions, from unsigned
 ms.assetid: 60fb7e10-bff9-4a13-8a48-e19f25a36a02
-ms.openlocfilehash: 08b88b1343f56f8d79fc39c53505b26caecfe3c4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bb8f208a323083afeb4b5b88bc8d6514e1f8c99f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226470"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293150"
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>İmzasız tam sayı türlerinden dönüştürmeler
 
@@ -73,7 +74,7 @@ Aşağıdaki tabloda, imzasız integral türlerinden dönüşümler özetlenmekt
 |**`unsigned long`**|**`unsigned short`**|Düşük sıralı kelimeyi koru|
 |**`unsigned long`**|**`unsigned long long`**|Sıfır-uzat|
 |**`unsigned long`**|**`float`**|Dönüştür **`long`** ; Dönüştür **`long`****`float`**|
-|**`unsigned long`**|**`double`**|Doğrudan Dönüştür**`double`**|
+|**`unsigned long`**|**`double`**|Doğrudan Dönüştür **`double`**|
 |**`unsigned long`**|**`long double`**|Dönüştür **`long`** ; Dönüştür **`long`****`double`**|
 |**`unsigned long long`**|**`char`**|Düşük sıra baytını koru|
 |**`unsigned long long`**|**`short`**|Düşük sıralı kelimeyi koru|
@@ -83,7 +84,7 @@ Aşağıdaki tabloda, imzasız integral türlerinden dönüşümler özetlenmekt
 |**`unsigned long long`**|**`unsigned short`**|Düşük sıralı kelimeyi koru|
 |**`unsigned long long`**|**`unsigned long`**|Düşük sıralı DWORD 'yi koru|
 |**`unsigned long long`**|**`float`**|Dönüştür **`long`** ; Dönüştür **`long`****`float`**|
-|**`unsigned long long`**|**`double`**|Doğrudan Dönüştür**`double`**|
+|**`unsigned long long`**|**`double`**|Doğrudan Dönüştür **`double`**|
 |**`unsigned long long`**|**`long double`**|Dönüştür **`long`** ; Dönüştür **`long`****`double`**|
 
 ## <a name="see-also"></a>Ayrıca bkz.

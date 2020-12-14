@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _pclose'
 title: _pclose
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - pclose function
 - pipes, closing
 ms.assetid: e2e31a9e-ba3a-4124-bcbb-c4040110b3d3
-ms.openlocfilehash: 6b35b8e3faa2f1a193dce102a6f8a11b9fcbb82b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 529af8ccdd1c6cc27f9039adef5d75c8b977aa54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910383"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258713"
 ---
 # <a name="_pclose"></a>_pclose
 
@@ -54,17 +55,17 @@ FILE *stream
 ### <a name="parameters"></a>Parametreler
 
 *ka*<br/>
-Önceki **_popen**çağrısından değeri döndürün.
+Önceki **_popen** çağrısından değeri döndürün.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sonlandırıcı komut işlemcisinin çıkış durumunu veya bir hata oluşursa-1 ' i döndürür. Dönüş değerinin biçimi, düşük sıralı ve yüksek sıralı baytlar yerine, **_cwait**ile aynıdır. Stream **null**ise, **_pclose** **errno** 'ı **EINVAL** olarak ayarlar ve-1 döndürür.
+Sonlandırıcı komut işlemcisinin çıkış durumunu veya bir hata oluşursa-1 ' i döndürür. Dönüş değerinin biçimi, düşük sıralı ve yüksek sıralı baytlar yerine, **_cwait** ile aynıdır. Stream **null** ise, **_pclose** **errno** 'ı **EINVAL** olarak ayarlar ve-1 döndürür.
 
 Bu ve diğer hata kodları hakkında bilgi için bkz. [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Pclose** işlevi, ilişkili **_popen** çağrısı tarafından başlatılan komut işlemcisinin (cmd. exe) işlem kimliğini arar, yeni komut işlemcisinde bir [_cwait](cwait.md) çağrısı yürütür ve ilgili kanalda akışı kapatır.
+**_Pclose** işlevi, ilişkili **_popen** çağrısı tarafından BAŞLATıLAN komut işlemcisinin işlem kimliğini (Cmd.exe) arar, yeni komut işlemcisinde bir [_cwait](cwait.md) çağrısı yürütür ve ilişkili kanalda akışı kapatır.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -72,7 +73,7 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_pclose**|\<stdio. h>|
+|**_pclose**|\<stdio.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -82,6 +83,6 @@ Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/comp
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[İşlem ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_pipe](pipe.md)<br/>
 [_popen, _wpopen](popen-wpopen.md)<br/>

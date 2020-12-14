@@ -1,4 +1,5 @@
 ---
+description: 'Daha fazla bilgi edinin: işaretli integral türlerden dönüştürmeler'
 title: İmzalı tam sayı türlerinden dönüştürmeler
 ms.date: 10/02/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - data type conversion [C++], signed and unsigned integers
 - type conversion [C++], signed and unsigned integers
 ms.assetid: 5eea32f8-8b14-413d-acac-c063b3d118d7
-ms.openlocfilehash: d41d2fd205a87f9f2be2179ffd8e38256a96e4f7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 25ee07f0b3bac9cd954bc217a4a71e579e4eacda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293163"
 ---
 # <a name="conversions-from-signed-integral-types"></a>İmzalı tam sayı türlerinden dönüştürmeler
 

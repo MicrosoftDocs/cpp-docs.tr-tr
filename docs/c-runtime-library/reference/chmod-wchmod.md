@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _chmod _wchmod'
 title: _chmod, _wchmod
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - files [C++], changing permissions
 - _wchmod function
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
-ms.openlocfilehash: b1bc89ce51fff44a847111d68cac8e8b3f58a635
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 601510c1f326282d48d2824b055ee3e80d9db0ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917003"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275041"
 ---
 # <a name="_chmod-_wchmod"></a>_chmod, _wchmod
 
@@ -63,23 +64,23 @@ Dosya için izin ayarı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevler, izin ayarı başarıyla değiştiyse 0 döndürür. -1 dönüş değeri hata olduğunu gösterir. Belirtilen dosya bulunamazsa, **errno** , **ENOENT**olarak ayarlanır; bir parametre geçersizse, **errno** **EINVAL**olarak ayarlanır.
+Bu işlevler, izin ayarı başarıyla değiştiyse 0 döndürür. -1 dönüş değeri hata olduğunu gösterir. Belirtilen dosya bulunamazsa, **errno** , **ENOENT** olarak ayarlanır; bir parametre geçersizse, **errno** **EINVAL** olarak ayarlanır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Chmod** işlevi, *filename*tarafından belirtilen dosyanın izin ayarını değiştirir. İzin ayarı, dosyaya okuma ve yazma erişimini denetler. *Pmode* tamsayı ifadesi, Sys\stat.exe içinde tanımlanan aşağıdaki bildirim sabitlerinden birini veya her ikisini içerir.
+**_Chmod** işlevi, *filename* tarafından belirtilen dosyanın izin ayarını değiştirir. İzin ayarı, dosyaya okuma ve yazma erişimini denetler. *Pmode* tamsayı ifadesi, Sys\stat.exe içinde tanımlanan aşağıdaki bildirim sabitlerinden birini veya her ikisini içerir.
 
 | *pmode* | Anlamı |
 |-|-|
-| **\_S\_iread** | Yalnızca okuma izni verilir. |
-| **\_S\_iwrite** | Yazma izni veriliyor. (Aslında, okuma ve yazma izni verir.) |
-| **\_S\_Iread** &#124; ** \_s\_ıwrite** | Okuma ve yazma izni verildi. |
+| **\_S \_ iread** | Yalnızca okuma izni verilir. |
+| **\_S \_ iwrite** | Yazma izni veriliyor. (Aslında, okuma ve yazma izni verir.) |
+| **\_ S \_ Iread** &#124; **\_ s \_ ıwrite** | Okuma ve yazma izni verildi. |
 
-Her iki sabit de verildiğinde, bit düzeyinde OR işleci (**\|**) ile birleştirilir. Yazma izni verilmezse, dosya salt okunurdur. Tüm dosyaların her zaman okunabilir olduğunu unutmayın; salt yazılır izin vermek mümkün değildir. Bu nedenle, **_S_IWRITE** ve **_S_IREAD** \| **_S_IWRITE** modları eşdeğerdir.
+Her iki sabit de verildiğinde, bit düzeyinde OR işleci () ile birleştirilir **\|** . Yazma izni verilmezse, dosya salt okunurdur. Tüm dosyaların her zaman okunabilir olduğunu unutmayın; salt yazılır izin vermek mümkün değildir. Bu nedenle, **_S_IWRITE** ve **_S_IREAD** \| **_S_IWRITE** modları eşdeğerdir.
 
-**_wchmod** , **_chmod**geniş karakterli bir sürümüdür; _wchmod *dosya adı* bağımsız **_wchmod** değişkeni, geniş karakterli bir dizedir. **_wchmod** ve **_chmod** aynı şekilde davranır.
+**_wchmod** , **_chmod** geniş karakterli bir sürümüdür; _wchmod *dosya adı* bağımsız  değişkeni, geniş karakterli bir dizedir. **_wchmod** ve **_chmod** aynı şekilde davranır.
 
-Bu işlev, parametrelerini doğrular. *Pmode* , bildirim sabitlerinden birinin birleşimi değilse veya diğer bir sabitler kümesini içeriyorsa, işlev bunları yoksayar. *Filename* **null**ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
+Bu işlev, parametrelerini doğrular. *Pmode* , bildirim sabitlerinden birinin birleşimi değilse veya diğer bir sabitler kümesini içeriyorsa, işlev bunları yoksayar. *Filename* **null** ise, [parametre doğrulama](../../c-runtime-library/parameter-validation.md)bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır. Yürütmenin devam etmesine izin veriliyorsa, **errno** **EINVAL** olarak ayarlanır ve işlev-1 döndürür.
 
 Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. Bunu değiştirmek için bkz. [CRT Içindeki genel durum](../global-state.md).
 
@@ -93,8 +94,8 @@ Varsayılan olarak, bu işlevin genel durumu uygulamanın kapsamına alınır. B
 
 |Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
-|**_chmod**|\<GÇ. h>|\<sys/Types. h>, \<sys/stat. h>, \<errno. h>|
-|**_wchmod**|\<GÇ. h> veya \<wchar. h>|\<sys/Types. h>, \<sys/stat. h>, \<errno. h>|
+|**_chmod**|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
+|**_wchmod**|\<io.h> veya \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
 
 Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -176,7 +177,7 @@ Mode set to read/write
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya IŞLEME](../../c-runtime-library/file-handling.md)<br/>
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
 [_access, _waccess](access-waccess.md)<br/>
 [_creat, _wcreat](creat-wcreat.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>

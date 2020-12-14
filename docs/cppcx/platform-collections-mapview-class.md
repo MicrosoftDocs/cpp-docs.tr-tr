@@ -1,4 +1,5 @@
 ---
+description: ': Platform:: Collections:: MapView Sınıfı hakkında daha fazla bilgi'
 title: 'Platform:: Collections:: MapView Sınıfı'
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,18 +13,18 @@ f1_keywords:
 helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
-ms.openlocfilehash: 693854499dafd23752337652ef298907fdecbcc2
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: 6011948bb3708329f7dcce0841f2bc34879760a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258492"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform:: Collections:: MapView Sınıfı
 
-Anahtar-değer çiftleri koleksiyonu olan bir *haritada*salt okunurdur görünümü temsil eder.
+Anahtar-değer çiftleri koleksiyonu olan bir *haritada* salt okunurdur görünümü temsil eder.
 
-## <a name="syntax"></a>Söz dizimi
+## <a name="syntax"></a>Sözdizimi
 
 ```
 template <
@@ -38,7 +39,7 @@ ref class MapView sealed;
 *K*<br/>
 Anahtar-değer çiftindeki anahtar türü.
 
-*Yönetim*<br/>
+*V*<br/>
 Anahtar-değer çiftindeki değerin türü.
 
 *,*<br/>
@@ -99,7 +100,7 @@ Ilk () tarafından döndürülen yineleyiciyi tutmanın uygun bir yolu, dönüş
 
 Geçerli MapView 'ın belirtilen anahtarı içerip içermediğini belirler.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 
@@ -119,7 +120,7 @@ MapView öğesini bulmak için kullanılan anahtar. *Anahtar* türü TypeName *K
 
 K türünde belirtilen anahtarla ilişkilendirilen V türü değerini alır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```
 V Lookup(K key);
@@ -138,7 +139,7 @@ MapView içindeki bir öğeyi bulmak için kullanılan anahtar. Türü `key` Typ
 
 MapView sınıfının yeni bir örneğini başlatır.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 explicit MapView(const C& comp = C());
@@ -195,7 +196,7 @@ Geçerli MapView içindeki öğe sayısı.
 
 Geçerli MapView nesnesini iki MapView nesnesine böler. Bu yöntem işlemsel değil.
 
-### <a name="syntax"></a>Söz dizimi
+### <a name="syntax"></a>Sözdizimi
 
 ```cpp
 void Split(

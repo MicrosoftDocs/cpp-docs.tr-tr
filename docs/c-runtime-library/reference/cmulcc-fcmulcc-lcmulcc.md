@@ -1,4 +1,5 @@
 ---
+description: 'Hakkında daha fazla bilgi edinin: _Cmulcc, _FCmulcc, _LCmulcc'
 title: _Cmulcc, _FCmulcc, _LCmulcc
 ms.date: 03/30/2018
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _Cmulcc function
 - _FCmulcc function
 - _LCmulcc function
-ms.openlocfilehash: fc21f8cbd2103993bc2b3e36020c57c8520f04a1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: e18f6ee0ab166cbce04d425ece43ef8ba2708a4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939071"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258739"
 ---
 # <a name="_cmulcc-_fcmulcc-_lcmulcc"></a>_Cmulcc, _FCmulcc, _LCmulcc
 
@@ -61,19 +62,19 @@ _Lcomplex _LCmulcc( _Lcomplex x, _Lcomplex y );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-*X* ve *y*karmaşık sayılarının karmaşık çarpımını temsil eden **_dcomplex**, **_fcomplex**veya **_lcomplex** yapısı.
+*X* ve *y* karmaşık sayılarının karmaşık çarpımını temsil eden bir **_Dcomplex**, **_Fcomplex** veya **_Lcomplex** yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yerleşik aritmetik işleçler karmaşık türlerin Microsoft uygulamasında çalışmadığından, **_Cmulcc**, **_Fcmulcc**ve **_lcmulcc** işlevleri karmaşık türlerin çarptiğini basitleştirir.
+Yerleşik aritmetik işleçler karmaşık türlerin Microsoft uygulamasında çalışmadığından **_Cmulcc**, **_FCmulcc** ve **_LCmulcc** işlevleri karmaşık türlerin çarpmayı basitleştirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|C üstbilgisi|C++üst bilgi|
+|Yordam|C üstbilgisi|C++ üstbilgisi|
 |-------------|--------------|------------------|
-|**_Cmulcc**, **_fcmulcc**, **_lcmulcc**|\<karmaşık. h >|\<karmaşık. h >|
+|**_Cmulcc**, **_FCmulcc**, **_LCmulcc**|\<complex.h>|\<complex.h>|
 
-Bu işlevler, Microsoft 'a özgüdür. **_Dcomplex**, **_Fcomplex**ve **_lcomplex** türleri, uygulanmayan C99 yerel türlerine, sırasıyla **_complex**, **float _complex**ve **Long Double _complex**için Microsoft 'a özgü eşdeğerlerdir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
+Bu işlevler, Microsoft 'a özgüdür. **_Dcomplex**, **_Fcomplex** ve **_Lcomplex** türleri, uygulanmayan C99 yerel türleri için sırasıyla **çift _Complex**, **float _Complex** ve **uzun çift _Complex** için Microsoft 'a özgü eşdeğerlerine sahiptir. Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
